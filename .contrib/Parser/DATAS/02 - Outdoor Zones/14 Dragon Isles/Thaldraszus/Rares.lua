@@ -41,8 +41,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197624),	-- Windborne Velocidrake: Club Tail
 				},
 			}),
-		--	n(193234, {	-- Eldoren the Reborn <Jewel of the Skies>
-		-- 	Time-Based Rare
+		--	n(193234),	-- Eldoren the Reborn // under DF/Timed Based Rare
 			n(193125, {	-- Goremaul the Gluttonous
 				["coord"] = { 53.4, 41.0, THALDRASZUS },
 				["questID"] = 73878,
@@ -97,13 +96,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200185),	-- Grips of the Everflowing Ocean
 				},
 			}),
-			n(193246, {	-- Matriarch Remalla <Temple Menace>
-				["coord"] = { 52.6, 59.2, THALDRASZUS },
-				["questID"] = 74013,
-				["g"] = {
-					i(200257),	-- Decay Infused Branch
-				},
-			}),
+			-- n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
 			n(193688, {	-- Phenran
 				["coord"] = { 60.0, 61.0, THALDRASZUS },
 				["questID"] = 74020,
@@ -135,13 +128,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 				["questID"] = 73892,
 			}),
-			n(193240, {	-- Riverwalker Tamopo <Terror of the Shallows>
-				["coord"] = { 39.8, 70.0, THALDRASZUS },
-				["questID"] = 74024,
-				-- ["g"] = {
-
-				-- },
-			}),
+			-- n(193240),	-- Riverwalker Tamopo // under DF/Timed Based Rare
 			n(193666, {	-- Rokmur
 				["coord"] = { 50.0, 51.8, THALDRASZUS },
 				-- ["questID"] = 69966,
@@ -172,21 +159,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200214),	-- Grasp of the Weeping Widow
 				},
 			}),
-			n(193258, {	-- Tempestrian <Stormbringer>
-				-- ["coord"] = { X, Y, THALDRASZUS },
-				-- ["questID"] = 69886,
-				-- ["g"] = {
-
-				-- },
-			}),
-			n(193146, {	-- Treasure-Mad Trambladd
-				["coord"] = { 35.0, 70.0, THALDRASZUS },
-				["questID"] = 74036,
-				["g"] = {
-					i(200300),	-- Sack of Looted Treasures
-					i(200291),	-- Waterlogged Racing Grips
-				},
-			}),
+			--n(193258),	-- Tempestrian // under DF/Timed Based Rare
+			--n(193146),	-- Treasure-Mad // under DF/Timed Based Rare
 			n(193161, {	-- Woolfang
 				["description"] = "Pet a Wooly Lamb to spawn.",
 				["coord"] = { 47.9, 49.8, THALDRASZUS },

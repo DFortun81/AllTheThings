@@ -168,7 +168,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201272, {	-- Rare Enchanter's Research
-						-- ["questID"] = TODO,
+						["questID"] = 71906,
 						["requireSkill"] = ENCHANTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
@@ -189,7 +189,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201274, {	-- Rare Jeweler's Illustrations
-						-- ["questID"] = TODO,
+						["questID"] = 71910,
 						["requireSkill"] = JEWELCRAFTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
@@ -210,7 +210,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201269, {	-- Rare Scribe's Runic Drawings
-						["questID"] = 201269,
+						["questID"] = 71909,
 						["requireSkill"] = INSCRIPTION,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },

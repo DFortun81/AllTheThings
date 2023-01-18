@@ -868,6 +868,7 @@ for key,value in pairs({
 		[-1140] = "Acuerdo de Valdrakken",							-- Valdrakken Accord
 		[-1142] = "Retos aéreos",									-- Aerial Challenges
 		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
+		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "El gran Odyn y el Señor del Fuego",				-- Great Odyn and the Firelord
 		[-2201] = "El nómada y la serpiente",						-- The Wanderer and the Serpent
@@ -3171,8 +3172,13 @@ for key,value in pairs({
 	[357246] = "Pergamino ajado",	-- Tattered Scroll
 	[357467] = "Tinta prohibida",	-- Forbidden Ink
 	[357487] = "Parasol elegante",	-- Stylish Parasol
+	[357515] = "Saco de avena",	-- Sack of Oats
+	[357526] = "Cubo de agua vacío",	-- Empty Water Bucket
+	[357541] = "Herradura desechada",	-- Discarded Horseshoe
 	[357565] = "Caña de pescador olvidada",	-- Forgotten Angler's Rod
+	[357572] = "Estoque del intrépido",	-- Rapier of the Fearless
 	[357584] = "Gujaterrible de Vyrtha",	-- Vyrtha's Dredglaive
+	[357683] = "Charco mugroso improvisado de desterrado",	-- Outcast's Makeshift Muckpool
 	[357697] = "Tesoro del capataz",	-- Taskmaster's Trove
 	[357726] = "Lanza rota",	-- Broken Spear
 	[357758] = "Barril de peste",	-- Plague Barrel
@@ -3576,7 +3582,6 @@ for key,value in pairs({
 	[385022] = "Fósil erosionado",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
-	[9962198] = "Charco mugroso improvisado de desterrado",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

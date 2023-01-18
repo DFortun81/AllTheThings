@@ -99,12 +99,13 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 				}),
 			})),
 			q(65143, {	-- Antros (WQ)
+				["timeline"] = { REMOVED_SL_S4 },
 				["sym"] = {
 					{"select","encounterID",2468,},{"pop"},	-- Original WB
 				},
 			}),
 			q(66619, {	-- Antros (Fated)
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_SL_S4 },
 				["sym"] = {
 					{"select","encounterID",2468,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -131,12 +132,13 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 				}),
 			})),
 			q(64531, {	-- Mor'geth (WQ)
+				["timeline"] = { REMOVED_SL_S4 },
 				["sym"] = {
 					{"select","encounterID",2456,},{"pop"},	-- Original WB
 				},
 			}),
 			q(66618, {	-- Mor'geth (Fated)
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_SL_S4 },
 				["sym"] = {
 					{"select","encounterID",2456,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -159,12 +161,13 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 				}),
 			}),
 			q(61816, {	-- Mortanis (WQ)
+				["timeline"] = { REMOVED_SL_S4 },
 				["sym"] = {
 					{"select","encounterID",2431,},{"pop"},	-- Original WB
 				},
 			}),
 			q(66617, {	-- Mortanis (Fated)
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_SL_S4 },
 				["sym"] = {
 					{"select","encounterID",2431,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -187,12 +190,13 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 				}),
 			}),
 			q(61814, {	-- Nurgash Muckfromed (WQ)
+				["timeline"] = { REMOVED_SL_S4 },
 				["sym"] = {
 					{"select","encounterID",2433,},{"pop"},	-- Original WB
 				},
 			}),
 			q(66615, {	-- Nurgash Muckfromed (Fated)
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_SL_S4 },
 				["sym"] = {
 					{"select","encounterID",2433,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -215,12 +219,13 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 				}),
 			}),
 			q(61815, {	-- Oranomonos the Everbranching (WQ)
+				["timeline"] = { REMOVED_SL_S4 },
 				["sym"] = {
 					{"select","encounterID",2432,},{"pop"},	-- Original WB
 				},
 			}),
 			q(66616, {	-- Oranomonos the Everbranching (Fated WQ)
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_SL_S4 },
 				["sym"] = {
 					{"select","encounterID",2432,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -243,12 +248,13 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 				}),
 			}),
 			q(61813, {	-- Valinor, the Light of Eons (WQ)
+				["timeline"] = { REMOVED_SL_S4 },
 				["sym"] = {
 					{"select","encounterID",2430,},{"pop"},	-- Original WB
 				},
 			}),
 			q(66614, {	-- Valinor, the Light of Eons (Fated WQ)
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_SL_S4 },
 				["sym"] = {
 					{"select","encounterID",2430,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'

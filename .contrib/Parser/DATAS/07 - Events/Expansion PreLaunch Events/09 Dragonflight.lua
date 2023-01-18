@@ -3,7 +3,8 @@
 -----------------------------------------------------
 local PRIMEVAL_ESSENCE = 199211;
 
-root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {	-- Expansion Prelaunch Events
+root("WorldEvents", n(-520,	-- Expansion Prelaunch Events
+	bubbleDown({ ["timeline"] = { CREATED_DF_PRE, ADDED_DF_PRE2, REMOVED_DF_REL } }, {
 	tier(DF_TIER, {
 		n(ACHIEVEMENTS, {
 			ach(16431, {	-- Against the Elements
@@ -103,13 +104,13 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {	--
 				{ 55.6, 12.4, DUROTAR },
 			},
 			["groups"] = {
+				i(199337, {	-- Bag of Furious Winds (TOY!)
+					["cost"] = {{ "i", PRIMEVAL_ESSENCE, 100 }}
+				}),
+				i(202188, {	-- Storm-Battered Reagent Bag
+					["cost"] = {{ "i", PRIMEVAL_ESSENCE, 5 }}
+				}),
 				n(ARMOR, {
-					i(202188, {	-- Storm-Battered Reagent Bag
-						["cost"] = {{ "i", PRIMEVAL_ESSENCE, 5 }}
-					}),
-					i(199337, {	-- Bag of Furious Winds (TOY!)
-						["cost"] = {{ "i", PRIMEVAL_ESSENCE, 100 }}
-					}),
 					i(199382, {	-- Catastrophe Signet
 						["cost"] = {{ "i", PRIMEVAL_ESSENCE, 25 }}
 					}),

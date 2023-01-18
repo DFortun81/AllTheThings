@@ -29,26 +29,56 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200452),	-- Dragonscale Expedition Insignia
+						i(200453),	-- Iskaara Tuskarr Insignia
+						i(200454),	-- Maruuk Centaur Insignia
+						i(200455),	-- Valdrakken Accord Insignia
+					},
 				}),
 				q(72166, {	-- Proving in Battle
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200452),	-- Dragonscale Expedition Insignia
+						i(200453),	-- Iskaara Tuskarr Insignia
+						i(200454),	-- Maruuk Centaur Insignia
+						i(200455),	-- Valdrakken Accord Insignia
+					},
 				}),
 				q(72167, {	-- Proving in War
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200452),	-- Dragonscale Expedition Insignia
+						i(200453),	-- Iskaara Tuskarr Insignia
+						i(200454),	-- Maruuk Centaur Insignia
+						i(200455),	-- Valdrakken Accord Insignia
+					},
 				}),
 				q(72168, {	-- Proving in Skirmishes
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200452),	-- Dragonscale Expedition Insignia
+						i(200453),	-- Iskaara Tuskarr Insignia
+						i(200454),	-- Maruuk Centaur Insignia
+						i(200455),	-- Valdrakken Accord Insignia
+					},
 				}),
 				q(72171, {	-- Proving Solo
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200452),	-- Dragonscale Expedition Insignia
+						i(200453),	-- Iskaara Tuskarr Insignia
+						i(200454),	-- Maruuk Centaur Insignia
+						i(200455),	-- Valdrakken Accord Insignia
+					},
 				}),
 				q(72647, {	-- Sparks of Life: Ohn'ahran Plains
 					["provider"] = { "n", 199393 },	-- Keenu

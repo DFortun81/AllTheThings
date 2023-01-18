@@ -1005,7 +1005,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71487, { ["name"] = "First Craft: Draconium Encased Samophlange", }),	-- Draconium Encased Samophlange
 			q(71489, { ["name"] = "First Craft: Draconium Fisherfriend", }),	-- Draconium Fisherfriend
 			q(71486, { ["name"] = "First Craft: Khaz'gorite Brainwave Amplifier", }),	-- Khaz'gorite Brainwave Amplifier
-			q(71493, { ["name"] = "First Craft: Khaz'gorite Delver's Helmet", }),	-- Khaz'gorite Delver's Helmet
+			q(71494, { ["name"] = "First Craft: Khaz'gorite Delver's Helmet", }),	-- Khaz'gorite Delver's Helmet
 			q(71488, { ["name"] = "First Craft: Khaz'gorite Encased Samophlange", }),	-- Khaz'gorite Encased Samophlange
 			q(71490, { ["name"] = "First Craft: Khaz'gorite Fisherfriend", }),	-- Khaz'gorite Fisherfriend
 			q(71491, { ["name"] = "First Craft: Lapidary's Draconium Clamps", }),	-- Lapidary's Draconium Clamps
@@ -1350,6 +1350,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71533, { ["name"] = "First Craft: Cliffside Wylderdrake: Triple Head Horns", }),
 			q(72016, { ["name"] = "First Craft: Windborne Velocidrake: Steel and Orange Armor", }),
 			q(71526, { ["name"] = "First Craft: Draconic Treatise on Jewelcrafting", }),
+			q(71528, { ["name"] = "First Craft: Draconic Treatise on Skinning", }),
 			q(72018, { ["name"] = "First Craft: Cliffside Wylderdrake: Steel and Yellow Armor", }),
 			q(72015, { ["name"] = "First Craft: Cliffside Wylderdrake: Silver and Blue Armor", }),
 			q(72017, { ["name"] = "First Craft: Highland Drake: Steel and Yellow Armor", }),
@@ -2288,16 +2289,17 @@ root("HiddenQuestTriggers", {
 			q(71986),	-- First Titan-Touched Bubble Poppy
 			q(71987),	-- First Titan-Touched Saxifrage
 			q(71988),	-- First Decayed Hochenblume
+			q(71989),	-- First Decayed Writhebark
+			-- q(71990),	-- First Decayed Bubble Poppy
 			q(71991),	-- First Decayed Saxifrage
 			q(71992),	-- First Infurious Hochenblume
 			q(71993),	-- First Infurious Writhebark
 			q(71994),	-- First Infurious Bubble Poppy
+			q(72341),	-- First Infurious Saxifrage
 			q(72344),	-- First Overload Titan-Touched Herb
 			q(72348),	-- First Overload Infurious Herb
 			--
 			q(74121),	-- Herbing Enraged Sprout
-			-- Unsorted
-			q(71989),	-- Learning spellID 391508: Decayed Writhebark
 		}),
 		prof(MINING, {
 			q(71951),	-- First Draconium Deposit
@@ -2548,12 +2550,12 @@ root("HiddenQuestTriggers", {
 		prof(LEATHERWORKING, {
 			-- Leather Armor
 			-- q(),	-- Life-Bound Belt
-			-- q(71713),	-- Life-Bound Binding
+			q(71713),	-- Life-Bound Binding
 			-- q(),	-- Life-Bound Boots
 			-- q(),	-- Life-Bound Cap
 			-- q(),	-- Life-Bound Chestpiece
 			-- q(),	-- Life-Bound Gloves
-			-- q(71711),	-- Life-Bound Shoulderpads
+			q(71711),	-- Life-Bound Shoulderpads
 			-- q(),	-- Life-Bound Trousers
 			q(71703),	-- Pioneer's Leather Tunic
 			q(72569),	-- Pioneer's Leather Wristguard
@@ -2713,6 +2715,7 @@ root("HiddenQuestTriggers", {
 			q(74198),	-- Skinning The Weeping Vilomah
 			q(74204),	-- Skinning Acrosoth
 			q(74206),	-- Skinning Corrupted Proto-Dragon
+			q(74208),	-- Skinning Matriarch Remalla
 			q(74213),	-- Skinning Swog'ranka
 			q(74214),	-- Skinning Moth'go Deeploom
 			q(74215),	-- Skinning Skald the Impaler

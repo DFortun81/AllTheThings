@@ -632,25 +632,11 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 8, 20),
 				}),
-				q(60360, {	-- An Urgent Meeting
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60359,	-- Home Is Where the Hearth Is
-					["qg"] = 168771,	-- Shuja Grimaxe
-					["coord"] = { 70.9, 49.6, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
 				q(40976, {	-- Audience with the Warchief
 					["qg"] = 97296,	-- Archmage Khadgar
 					["classes"] = { DEMONHUNTER },
 					["coord"] = { 52.6, 88.2, ORGRIMMAR },
 					["races"] = { BLOODELF },
-				}),
-				q(60361, {	-- Battle for Azeroth: Mission Statement (Shadowlands version)
-					["sourceQuest"] = 60360,	-- An Urgent Meeting
-					["altQuests"] = { 51443 },	-- Mission Statement
-					["qg"] = 168431,	-- Warlord Breka Grimaxe
-					["coord"] = { 48.3, 71.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
 				}),
 				q(29401, {	-- Blown Away
 					["qg"] = 54004,	-- Jaga
@@ -753,13 +739,6 @@ root("Zones", m(KALIMDOR, {
 						i(119327),	-- Durak's Downfall
 					},
 				}),
-				q(60344, {	-- Finding Your Way (H)
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60343,	-- Welcome to Orgrimmar
-					["qg"] = 168441,	-- Cork Fizzlepop
-					["coord"] = { 51.9, 85.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
 				q(26804, {	-- Flight to Razor Hill
 					["sourceQuest"] = 26803,	-- Missing Reports
 					["qg"] = 3310,	-- Doras
@@ -810,23 +789,6 @@ root("Zones", m(KALIMDOR, {
 							["cr"] = 3216,	-- Neeru Fireblade
 						}),
 					},
-				}),
-				q(60359, {	-- Home Is Where the Hearth Is
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuests"] = {
-						60346,	-- What's Your Specialty? (Druid)
-						60347,	-- What's Your Specialty? (Hunter)
-						60348,	-- What's Your Specialty? (Mage)
-						60349,	-- What's Your Specialty? (Monk)
-						60350,	-- What's Your Specialty? (Paladin)
-						60351,	-- What's Your Specialty? (Priest)
-						60352,	-- What's Your Specialty? (Rogue)
-						60353,	-- What's Your Specialty? (Shaman)
-						60355,	-- What's Your Specialty? (Warlock)
-						60357,	-- What's Your Specialty? (Warrior)
-					},
-					["qg"] = 168545,	-- Cork Fizzlepop
-					["races"] = HORDE_ONLY,
 				}),
 				q(53372, {	-- Hour of Reckoning
 				--	TODO: level is obviously incorrect.  whether this quest is still available is disputed.  potential ways to get, per wowhead comments:
@@ -934,16 +896,6 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
-				}),
-				q(60345, {	-- License to Ride
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60344,	-- Finding Your Way (H)
-					["qg"] = 168540,	-- Rohaka Tuskmaul
-					["coord"] = { 61.5, 32.9, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(13331),	-- Red Skeletal Horse (MOUNT!)
-					},
 				}),
 				q(32471, {	-- Light Camera Action
 					["qg"] = 16926,	-- Vivica Starshot
@@ -1474,93 +1426,6 @@ root("Zones", m(KALIMDOR, {
 						i(65648),	-- Headguard of the Order
 						i(25549),	-- Blood Knight Tabard
 					},
-				}),
-				q(60343, {	-- Welcome to Orgrimmar
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 59985,	-- An End to Beginnings (H)
-					["qg"] = 168431,	-- Warlord Breka Grimaxe
-					["coord"] = { 52.5, 88.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60346, {	-- What's Your Specialty? (Druid)
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60345,	-- License to Ride
-					["qg"] = 168545,	-- Cork Fizzlepop
-					["classes"] = { DRUID },
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60347, {	-- What's Your Specialty? (Hunter)
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60345,	-- License to Ride
-					["qg"] = 168545,	-- Cork Fizzlepop
-					["classes"] = { HUNTER },
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60348, {	-- What's Your Specialty? (Mage)
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60345,	-- License to Ride
-					["qg"] = 168545,	-- Cork Fizzlepop
-					["classes"] = { MAGE },
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60349, {	-- What's Your Specialty? (Monk)
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60345,	-- License to Ride
-					["qg"] = 168545,	-- Cork Fizzlepop
-					["classes"] = { MONK },
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60350, {	-- What's Your Specialty? (Paladin)
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60345,	-- License to Ride
-					["qg"] = 168545,	-- Cork Fizzlepop
-					["classes"] = { PALADIN },
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60351, {	-- What's Your Specialty? (Priest)
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60345,	-- License to Ride
-					["qg"] = 168545,	-- Cork Fizzlepop
-					["classes"] = { PRIEST },
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60352, {	-- What's Your Specialty? (Rogue)
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60345,	-- License to Ride
-					["qg"] = 168545,	-- Cork Fizzlepop
-					["classes"] = { ROGUE },
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60353, {	-- What's Your Specialty? (Shaman)
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60345,	-- License to Ride
-					["qg"] = 168545,	-- Cork Fizzlepop
-					["classes"] = { SHAMAN },
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60355, {	-- What's Your Specialty? (Warlock)
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60345,	-- License to Ride
-					["qg"] = 168545,	-- Cork Fizzlepop
-					["classes"] = { WARLOCK },
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60357, {	-- What's Your Specialty? (Warrior)
-					["customCollect"] = "NPE",	-- New Player Experience
-					["sourceQuest"] = 60345,	-- License to Ride
-					["qg"] = 168545,	-- Cork Fizzlepop
-					["classes"] = { WARRIOR },
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
 				}),
 				q(26324, {	-- Where Is My Warfleet?
 					["sourceQuest"] = 26311,	-- Unfamiliar Waters

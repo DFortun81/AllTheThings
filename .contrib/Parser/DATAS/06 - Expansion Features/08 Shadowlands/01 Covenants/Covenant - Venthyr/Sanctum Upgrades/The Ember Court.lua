@@ -1540,14 +1540,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["coord"] = { 39.0, 66.0, REVENDRETH },
 								}),
 								q(61616, {	-- The Ember Court (Week 1)
-								--	got this as my Week 1 quest.  after the weekly rollover, IsQuestFlaggedCompleted is still returning 'true' for this, so possible it changes every week?
 									["sourceQuests"] = {
 										61882,	-- Formal Entertainment
 										61884,	-- Formal Refreshments
 										61880,	-- Honored Attendance
 									},
 									["provider"] = { "n", 164966 },	-- Temel
-									["isDaily"] = true,	-- according to the API, but Ember Court is a weekly event and this quest returns 'true' after the weekly reset
 									["coord"] = { 28.0, 43.1, REVENDRETH },
 									["g"] = {
 										i(181536, {	-- Guest List Page (EC!)

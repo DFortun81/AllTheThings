@@ -4,10 +4,87 @@
 
 root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 	n(ACHIEVEMENTS, {
+		ach(13712, {	-- Explore Nazjatar
+			crit(1),	-- Ashen Strand
+			crit(2),	-- Azsh'ari Terrace
+			crit(3),	-- Coral Forest
+			crit(4),	-- Deepcoil Tunnels
+			crit(5),	-- Dragon's Teeth Basin
+			crit(6),	-- The Drowned Market
+			crit(7),	-- Elun'alor Temple
+			crit(8),	-- The Empress's Approach
+			crit(9),	-- Gate of the Queen
+			crit(10),	-- The Hanging Reef
+			crit(11),	-- Kal'methir
+			crit(12),	-- Shirakess Repository
+			crit(13),	-- Spears of Azshara
+			crit(14),	-- Zanj'ir Terrace
+			crit(15),	-- Zanj'ir Wash
+			crit(16),	-- Zin-Azshari
+		}),
 		petbattle(ach(13715, {	-- From the Belly of the Jelly
 			["filterID"] = BATTLE_PETS,
 		})),
-		ach(13692),		-- Give Me the Biggest Bag You've Got
+		-- TODO: more dataz
+		ach(13692, {	-- Give Me the Biggest Bag You've Got
+			crit(1),	-- Spawn of Nalaada
+			crit(2),	-- Glittering Diamondshell
+			crit(3),	-- Sandclaw Nestseeker
+			crit(4),	-- Daggertooth Frenzy
+			crit(5),	-- Skittering Eel
+			crit(6),	-- Pearlescent Glimmershell
+			crit(7),	-- Scalebrood Hydra
+			crit(8),	-- Caverndark Nightmare
+			crit(9),	-- Chitterspine Needler
+			crit(10),	-- Wriggler
+			crit(11),	-- Amethyst Softshell
+			crit(12),	-- Stormwrath
+			crit(13),	-- Brinestone Algan
+			crit(14),	-- Coral Lashling
+			crit(15),	-- Budding Algan
+			crit(16),	-- Sandkeep
+			crit(17),	-- Seafury
+			crit(18),	-- Necrofin Tadpole
+			crit(19),	-- Murgle
+			crit(20),	-- Underlight Sealamp
+			crit(21),	-- Encrusted Coin
+			crit(22),	-- Flopping Fish
+			crit(23),	-- Seastorm Totem
+			crit(24),	-- Zanj'ir Weapon Rack
+			crit(25),	-- Eternal Palace Dining Set
+			crit(26),	-- Shirakess Warning Sign
+			crit(27),	-- Voidcaster's Supply Bag
+			crit(28),	-- Storm Totem
+			crit(29),	-- Sea Totem
+			crit(30),	-- Mudwrap
+			crit(31),	-- Skeletal Hand
+			crit(32),	-- Mardivas' Bag of Containing
+			crit(33),	-- Blind Eye
+			crit(34),	-- Barnacled Bag of Goods
+			crit(35),	-- Shadescale
+			crit(36),	-- Abyss Pearl
+			crit(37),	-- Intact Naga Skeleton
+			crit(38),	-- Ancient Reefwalker Bark
+			crit(39),	-- Reefwalker Bark
+			crit(40),	-- Voltscale Shield
+			crit(41),	-- Tidal Guard
+			crit(42),	-- Razorshell
+			crit(43),	-- Snapdragon Scent Gland
+			crit(44),	-- Alpha Fin
+			crit(45),	-- Exposed Fish
+			crit(46, {	-- Fathom Ray Wing
+				["_quests"] = { 57247, 56972 },	-- Fathom Ray Wing A/H
+			}),
+			crit(47),	-- Muck Slime
+			crit(48),	-- Brightspine Shell
+			crit(49, {	-- Giant Crab leg
+				["_quests"] = { 57248, 56973 },	-- Giant Crab Leg A/H
+			}),
+			crit(50),	-- Fermented Deviate Fish
+			crit(51, {	-- Eel Filet
+				["_quests"] = { 57246, 56971 },	-- Eel Filet A/H
+			}),
+		}),
 		petbattle(ach(13626, {	-- Nautical Nuisances of Nazjatar
 			["filterID"] = BATTLE_PETS,
 			["g"] = {
@@ -66,12 +143,197 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 		pvp(ach(13568)),	-- For Nazjatar!
 		pvp(ach(13720)),	-- Supplying the Assassins
 		pvp(ach(13569)),	-- Tour of Duty: Nazjatar
+		-- TODO: meta achieve
 		ach(13638, {	-- Undersea Usurper
 			i(169194),		-- Snapback Scuttler (MOUNT!)
 			title(405),		-- of the Deeps
-			ach(13635),		-- Tour of the Depths
-			ach(13690),		-- Nazjatarget Elminated
-			ach(13691),		-- I Thought You Said They'd Be Rare?
+			ach(13635, {	-- Tour of the Depths
+				crit(1),	-- Complete an Emissary for your ally in Nazjatar
+				crit(2),	-- Defeat one of the World Bosses of Nazjatar
+				crit(3),	-- Learn about the Scrying Stones of Nazjatar
+				crit(4, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
+						55893,	-- Azanz, the Slitherblade
+						55891,	-- Champion Aldrantiss, Defender of Her Kingdom
+						55887,	-- Champion Alzana, Arrow of Thunder
+						55892,	-- Champion Eldanar, Shield of Her Glory
+						55889,	-- Champion Kyx'zhul the Deepspeaker
+						55888,	-- Champion Qalina, Spear of Ice
+						55890,	-- Champion Vyz'olgo the Mind-Taker
+						55895,	-- Frozen Winds of Zhiela
+						55900,	-- Kassar, Wielder of Dark Blades
+						55899,	-- Starseeker of the Shirakess
+						55897,	-- Szun, Breaker of Slaves
+						55898,	-- Tempest-Speaker Shalan'ali
+						55886,	-- The Zanj'ir Brutalizer
+						55896,	-- Undana, Chilling Assassin
+						55894,	-- Zoko, Her Iron Defender
+					},
+				}),
+				crit(5),	-- Level a Nazjatar Ally to Level 5
+				crit(6),	-- Defeat one of Mardivas's Laboratory Creations
+				crit(7),	-- Find and Assist Mrrl
+			}),
+			ach(13690, {	-- Nazjatarget Eliminated
+				crit(1, {	-- Szun, Breaker of Slaves
+					["_quests"] = { 55897 },
+				}),
+				crit(2, {	-- Frozen Winds of Zhiela
+					["_quests"] = { 55895 },
+				}),
+				crit(3, {	-- Zoko, Her Iron Defender
+					["_quests"] = { 55894 },
+				}),
+				crit(4, {	-- Tempest-Speaker Shalan'ali
+					["_quests"] = { 55898 },
+				}),
+				crit(5, {	-- Starseeker of the Shirakess
+					["_quests"] = { 55899 },
+				}),
+				crit(6, {	-- Azanz, the Slitherblade
+					["_quests"] = { 55893 },
+				}),
+				crit(7, {	-- Undana, Chilling Assassin
+					["_quests"] = { 55896 },
+				}),
+				crit(8, {	-- Kassar, Wielder of Dark Blades
+					["_quests"] = { 55900 },
+				}),
+				crit(9, {	-- The Zanj'ir Brutalizer
+					["_quests"] = { 55886 },
+				}),
+				crit(10, {	-- Champion Aldrantiss, Defender of Her Kingdom
+					["_quests"] = { 55891 },
+				}),
+				crit(11, {	-- Champion Alzana, Arrow of Thunder
+					["_quests"] = { 55887 },
+				}),
+				crit(12, {	-- Champion Eldanar, Shield of Her Glory
+					["_quests"] = { 55892 },
+				}),
+				crit(13, {	-- Champion Kyx'zhul the Deepspeaker
+					["_quests"] = { 55889 },
+				}),
+				crit(14, {	-- Champion Qalina, Spear of Ice
+					["_quests"] = { 55888 },
+				}),
+				crit(15, {	-- Champion Vyz'olgo the Mind-Taker
+					["_quests"] = { 55890 },
+				}),
+			}),
+			ach(13691, {	-- I Thought You Said They'd Be Rare?
+				crit(1, {	-- Alga the Eyeless
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(2, {	-- Allseer Oma'kil
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(3, {	-- Amethyst Spireshell
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(4, {	-- Anemonar
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(5, {	-- Banescale the Packfather
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(6, {	-- Blindlight
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(7, {	-- Caverndark Terror
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(8, {	-- Chasm-Haunter
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(9, {	-- Daggertooth Terror
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(10, {	-- Deepglider
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(11, {	-- Elder Unu
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(12, {	-- Elderspawn Nalaada
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(13, {	-- Garnetscale
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(14, {	-- Iridescent Glimmershell
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(15, {	-- Kelpwillow
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(16, {	-- King Gakula
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(17, {	-- Mirecrawler
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(18, {	-- Needlespine
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(19, {	-- Oronu
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(20, {	-- Prince Typhonus
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(21, {	-- Prince Vortran
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(22, {	-- Rockweed Shambler
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(23, {	-- Sandcastle
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(24, {	-- Sandclaw Stoneshell
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(25, {	-- Scale Matriarch Gratinax
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(26, {	-- Scale Matriarch Vynara
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(27, {	-- Scale Matriarch Zodia
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(28, {	-- Shassera
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(29, {	-- Shiz'narasz the Consumer
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(30, {	-- Siltstalker the Packmother
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(31, {	-- Soundless
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(32, {	-- Tidelord Aquatus
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(33, {	-- Tidelord Dispersius
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(34, {	-- Tidemistress Leth'sindra
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(35, {	-- Toxigore the Alpha
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(36, {	-- Urduu
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(37, {	-- Voice in the Deeps
+					-- ["_npcs"] = { NPCID },
+				}),
+			}),
 			ach(13762, bubbleDownSelf({["races"] = ALLIANCE_ONLY},{	-- Aqua Team Murder Force (A)
 				ach(13744),	-- Seasoned: Bladesman Inowari
 				ach(13745),	-- Seasoned: Farseer Ori
@@ -100,8 +362,11 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				ach(13756),	-- Battle-Scarred: Poen Gillbrack
 				ach(13757),	-- Battle-Scarred: Vim Brineheart
 			})),
-			ach(13549),		-- Trove Tracker
-			ach(13711),		-- A Fistful of Manapearls
+			ach(13549, {	-- Trove Tracker
+				crit(1),	-- 20 Arcane Chests
+				crit(2),	-- 7 Glowing Arcane Trunks
+			}),
+			ach(13711),	-- A Fistful of Manapearls
 			ach(13722, {	-- Terror of the Tadpoles
 				["coord"] = { 28.5, 31.2, NAZJATAR },
 				["description"] = "Tadpoles are easily found in and around Bloodfin Village.",
@@ -118,7 +383,71 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			ach(13763, {	-- Back to the Depths!
 				["description"] = "This event takes place every 3 hours (3:00, 6:00, 9:00, and 12:00, based on realm time).  A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
 			}),
-			ach(13764),		-- Puzzle Performer
+			ach(13764, {	-- Puzzle Performer
+				crit(1, {	-- Easy Leylocked Chest
+					["_quests"] = { 56025 },
+				}),
+				crit(2, {	-- Medium Leylocked Chest
+					["_quests"] = { 56024 },
+				}),
+				crit(3, {	-- Hard Leylocked Chest
+					["_quests"] = { 56023 },
+				}),
+				crit(4, {	-- Hard Runelocked Chest: Yellow
+					["_quests"] = { 56022 },
+				}),
+				crit(5, {	-- Hard Runelocked Chest: Red
+					["_quests"] = { 56021 },
+				}),
+				crit(6, {	-- Hard Runelocked Chest: Purple
+					["_quests"] = { 56020 },
+				}),
+				crit(7, {	-- Hard Runelocked Chest: Orange
+					["_quests"] = { 56019 },
+				}),
+				crit(8, {	-- Hard Runelocked Chest: Green
+					["_quests"] = { 56018 },
+				}),
+				crit(9, {	-- Hard Runelocked Chest: Blue
+					["_quests"] = { 56017 },
+				}),
+				crit(10, {	-- Medium Runelocked Chest: Yellow
+					["_quests"] = { 56016 },
+				}),
+				crit(11, {	-- Medium Runelocked Chest: Red
+					["_quests"] = { 56015 },
+				}),
+				crit(12, {	-- Medium Runelocked Chest: Purple
+					["_quests"] = { 56014 },
+				}),
+				crit(13, {	-- Medium Runelocked Chest: Orange
+					["_quests"] = { 56013 },
+				}),
+				crit(14, {	-- Medium Runelocked Chest: Green
+					["_quests"] = { 56012 },
+				}),
+				crit(15, {	-- Medium Runelocked Chest: Blue
+					["_quests"] = { 56011 },
+				}),
+				crit(16, {	-- Easy Runelocked Chest: Blue
+					["_quests"] = { 56010 },
+				}),
+				crit(17, {	-- Easy Runelocked Chest: Purple
+					["_quests"] = { 56009 },
+				}),
+				crit(18, {	-- Easy Runelocked Chest: Yellow
+					["_quests"] = { 56008 },
+				}),
+				crit(19, {	-- Easy Runelocked Chest: Red
+					["_quests"] = { 56007 },
+				}),
+				crit(20, {	-- Easy Runelocked Chest: Orange
+					["_quests"] = { 56006 },
+				}),
+				crit(21, {	-- Easy Runelocked Chest: Green
+					["_quests"] = { 56003 },
+				}),
+			}),
 			ach(13712, {	-- Explore Nazjatar
 				crit(1, {	-- Ashen Strand
 					["coord"] = { 28.6, 40.7, NAZJATAR },

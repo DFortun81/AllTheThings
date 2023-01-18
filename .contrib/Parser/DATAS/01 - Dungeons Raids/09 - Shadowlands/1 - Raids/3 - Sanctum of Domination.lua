@@ -457,10 +457,10 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 			n(WORLD_QUESTS, {
 				q(66694, {	-- Tempting Fate: Sanctum of Domination
 					["isWorldQuest"] = true,
-					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 			}),
-			d(LFR_RAID, {
+			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_DF_REL }, {
 				n(ZONE_DROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
 					i(186362),	-- Bindings of the Subjugated
@@ -666,7 +666,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 						},
 					}),
 				}),
-			}),
+			})),
 			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(64597, {	-- Sanctum of Domination - Damned If You Don't [N]

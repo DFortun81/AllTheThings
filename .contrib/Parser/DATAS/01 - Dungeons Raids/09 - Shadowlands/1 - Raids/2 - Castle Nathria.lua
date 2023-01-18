@@ -608,13 +608,13 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 			n(WORLD_QUESTS, {
 				q(66693, {	-- Tempting Fate: Castle Nathria
 					["isWorldQuest"] = true,
-					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(180453),	-- She Had a Stone Heart
 			}),
-			d(LFR_RAID, {
+			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_DF_REL }, {
 				n(ZONE_DROPS, {
 					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
@@ -807,7 +807,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 						i(184031),	-- Sanguine Vintage
 					},
 				}),
-			}),
+			})),
 			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(62054, {	-- Castle Nathria: Getting a Head [Normal]

@@ -672,7 +672,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(197921),		-- Primal Infusion
 					spell(388978),	-- Ally of Dragons
-					title(735),		-- %s, Ally of Dragons (TITLE!)
+					title(474),		-- %s, Ally of Dragons (TITLE!)
+				},
+			}),
+				-- PARAGON
+			q(71023, {	-- Renowned with the Valdrakken Accord
+				["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
+				["repeatable"] = true,
+				["g"] = {
+					i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 				},
 			}),
 

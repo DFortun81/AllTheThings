@@ -389,6 +389,7 @@ FunctionRunner.SetPerFrame = function(count, instant)
 		FunctionRunner.Run(SetPerFrame, count);
 	end
 end
+FunctionRunner.Reset = Reset; -- for testing
 
 app.FunctionRunner = FunctionRunner;
 end
@@ -4024,12 +4025,9 @@ ResolveSymbolicLink = function(o)
 			-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",o.hash,"with:",unpack(sym))
 		end
 
-		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
-		if #searchResults > 0 then
-			for _,s in ipairs(searchResults) do
-				tinsert(finalized, s);
-			end
-		end
+		-- Verify the final result is finalized
+		cmdFunc = ResolveFunctions.finalize;
+		cmdFunc(finalized, searchResults);
 		-- if app.DEBUG_PRINT then print("Forced Finalize",o.key,o.key and o[o.key],#finalized) end
 
 		-- If we had any finalized search results, then clone all the records, store the results, and return them
@@ -5263,22 +5261,17 @@ local function DetermineCraftedGroups(group)
 end
 local function DetermineSymlinkGroups(group)
 	if group.sym then
-		-- groups which are being filled in a Window can be done async
-		if isInWindow then
-			-- app.PrintDebug("DSG-Async",group.hash);
-			app.FillSymlinkAsync(group);
-		else
-			-- app.PrintDebug("DSG-Now",group.hash);
-			local groups = ResolveSymbolicLink(group);
-			-- make sure this group doesn't waste time getting resolved again somehow
-			group.sym = nil;
-			-- app.PrintDebug("DetermineSymlinkGroups",group.hash,groups and #groups);
-			return groups;
-		end
+		-- app.PrintDebug("DSG-Now",group.hash);
+		local groups = ResolveSymbolicLink(group);
+		-- make sure this group doesn't waste time getting resolved again somehow
+		group.sym = nil;
+		-- app.PrintDebug("DetermineSymlinkGroups",group.hash,groups and #groups);
+		return groups;
 	end
 end
 local NPCExpandHeaders = {
 	[-1] = true,	-- COMMON_BOSS_DROPS
+	[-26] = true,	-- DROPS
 };
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 local function DetermineNPCDrops(group)
@@ -5296,26 +5289,30 @@ local function DetermineNPCDrops(group)
 				-- can only fill npc groups for the npc which match the difficultyID
 				local headerID, groups;
 				for _,npcGroup in pairs(npcGroups) do
-					headerID = npcGroup.headerID;
-					-- where headerID is allowed and the nested difficultyID matches
-					if headerID and NPCExpandHeaders[headerID] and app.RecursiveFirstParentWithFieldValue(npcGroup, "difficultyID", difficultyID) then
-						-- copy the header under the NPC groups
-						-- app.PrintDebug("Fill under",headerID)
-						if groups then tinsert(groups, CreateObject(npcGroup))
-						else groups = { CreateObject(npcGroup) }; end
+					if npcGroup.hash ~= group.hash then
+						headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
+						-- where headerID is allowed and the nested difficultyID matches
+						if headerID and NPCExpandHeaders[headerID] and app.RecursiveFirstParentWithFieldValue(npcGroup, "difficultyID", difficultyID) then
+							-- copy the header under the NPC groups
+							-- app.PrintDebug("NPCDrops Diff",difficultyID,group.hash,"<==",npcGroup.hash)
+							if groups then tinsert(groups, CreateObject(npcGroup))
+							else groups = { CreateObject(npcGroup) }; end
+						end
 					end
 				end
 				return groups;
 			else
 				local headerID, groups;
 				for _,npcGroup in pairs(npcGroups) do
-					headerID = npcGroup.headerID;
-					-- where headerID is allowed
-					if headerID and NPCExpandHeaders[headerID] then
-						-- copy the header under the NPC groups
-						-- app.PrintDebug("Fill under",group.hash)
-						if groups then tinsert(groups, CreateObject(npcGroup))
-						else groups = { CreateObject(npcGroup) }; end
+					if npcGroup.hash ~= group.hash then
+						headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
+						-- where headerID is allowed
+						if headerID and NPCExpandHeaders[headerID] then
+							-- copy the header under the NPC groups
+							-- app.PrintDebug("NPCDrops",group.hash,"<==",npcGroup.hash)
+							if groups then tinsert(groups, CreateObject(npcGroup))
+							else groups = { CreateObject(npcGroup) }; end
+						end
 					end
 				end
 				return groups;
@@ -5323,10 +5320,45 @@ local function DetermineNPCDrops(group)
 		end
 	end
 end
+-- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
 local function FillGroupsRecursive(group, depth)
+	-- app.PrintDebug("FillGroups",group.hash,depth)
+	-- increment depth if things are being nested
+	depth = (depth or 0) + 1;
+	local groups;
+	-- Determine Cost/Crafted/Symlink groups
+	groups = app.ArrayAppend(groups,
+		DeterminePurchaseGroups(group, depth),
+		DetermineCraftedGroups(group),
+		DetermineSymlinkGroups(group),
+		DetermineNPCDrops(group));
+
+	-- if groups and #groups > 0 then
+	-- 	app.PrintDebug("FillGroups-MergeResults",group.hash,groups and #groups)
+	-- end
+	-- Adding the groups normally based on available-source priority
+	PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
+
+	if group.g then
+		-- app.PrintDebug(".g",group.hash,#group.g)
+		-- local hash = group.hash;
+		-- Then nest anything further
+		for _,o in ipairs(group.g) do
+			-- never nest the same Thing under itself
+			-- (prospecting recipes list the input as the output)
+			-- if o.hash ~= hash then
+				FillGroupsRecursive(o, depth);
+			-- end
+		end
+	end
+end
+-- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FunctionRunner to recursively follow the next layer of groups
+-- over multiple frames to reduce stutter
+local function FillGroupsRecursiveAsync(group, depth)
+	-- app.PrintDebug("FillGroupsAsync",group.hash,depth)
 	-- do not fill 'saved' groups in ATT windows
 	-- or groups directly under saved groups unless in Acct or Debug mode
-	if isInWindow and not app.MODE_DEBUG_OR_ACCOUNT then
+	if not app.MODE_DEBUG_OR_ACCOUNT then
 		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
 		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then return; end
 		local parent = group.parent;
@@ -5344,9 +5376,15 @@ local function FillGroupsRecursive(group, depth)
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group));
 
-	-- app.PrintDebug("MergeResults",group.hash,groups and #groups)
+	-- if groups and #groups > 0 then
+	-- 	app.PrintDebug("FillGroupsAsync-MergeResults",group.hash,groups and #groups)
+	-- end
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
+	if #groups > 0 then
+		BuildGroups(group);
+		app.DirectGroupUpdate(group);
+	end
 
 	if group.g then
 		-- app.PrintDebug(".g",group.hash,#group.g)
@@ -5356,7 +5394,7 @@ local function FillGroupsRecursive(group, depth)
 			-- never nest the same Thing under itself
 			-- (prospecting recipes list the input as the output)
 			-- if o.hash ~= hash then
-				FillGroupsRecursive(o, depth);
+			app.FunctionRunner.Run(FillGroupsRecursiveAsync, o, depth);
 			-- end
 		end
 	end
@@ -5373,7 +5411,13 @@ app.FillGroups = function(group)
 	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
 
 	-- Fill the group with all nestable content
-	FillGroupsRecursive(group);
+	if isInWindow then
+		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
+		app.FunctionRunner.SetPerFrame(25);
+		app.FunctionRunner.Run(FillGroupsRecursiveAsync, group);
+	else
+		FillGroupsRecursive(group);
+	end
 
 	-- if app.DEBUG_PRINT then app.PrintTable(included) end
 	-- app.PrintDebug("FillGroups Complete",group.hash,group.__type)

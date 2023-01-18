@@ -31,7 +31,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["_quests"] = { 70509 },	-- Third Challenge of Tyr: Persistence
 				}),
 				crit(5, {	-- Fourth Challenge: Resourcefulness
-					-- ["_quests"] = { QUEST },	-- Name
+					["_quests"] = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
 				}),
 				crit(6, {	-- Fifth Challenge: Ingenuity
 					-- ["_quests"] = { QUEST },	-- Name
@@ -331,6 +331,49 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(370714),	-- Transmute: Decay to Elements
 				},
 			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74108, {	-- Inscription Order: Alchemy
+					["name"] = "Inscription Order: Alchemy",
+					["description"] = "Requires a crafting order from Inscription.",
+					["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66373, {	-- Weekly Alchemy Knowledgepoint #1
+					["name"] = "Alchemy Treasure #1",
+					["provider"] = { "i", 193891 },		-- Experimental Substance
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66374, {	-- Weekly Alchemy Knowledgepoint #2
+					["name"] = "Alchemy Treasure #2",
+					["provider"] = { "i", 193897 },		-- Reawakened Catalyst
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70504, {	-- Weekly Alchemy Knowledgepoint #3
+					["name"] = "Alchemy Drop #1: Decayed",
+					["description"] = "Drops from any Decayed Mob.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 186361 },	-- Rotting Treant
+					["coord"] = { 18.6, 38.4, THE_AZURE_SPAN },
+					["provider"] = { "i", 198963 },		-- Decaying Phlegm
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70511, {	-- Weekly Alchemy Knowledgepoint #4
+					["name"] = "Alchemy Drop #2: Elemental",
+					["description"] = "Drops from any Elemental.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 195092 },	-- Hydraulic Eroder
+					["coord"] = { 50.2, 59.6, THALDRASZUS },
+					["provider"] = { "i", 198964 },		-- Elementious Splinter
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+			}),
 			q(70355, {	-- Dragon Isles Alchemy [A]
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -371,6 +414,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66938, {	-- Mammoth Marrow
@@ -378,6 +422,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72427, {	-- Animated Infusion
@@ -385,6 +430,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66937, {	-- Decaying News
@@ -392,6 +438,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70533, {	-- Decaying News
@@ -399,6 +446,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
 				["provider"] = { "n", 185545 },	-- Conflago
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70532, {	-- Aiding the Raiding
@@ -406,6 +454,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
 				["provider"] = { "n", 185545 },	-- Conflago
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70531, {	-- Mana Markets
@@ -413,6 +462,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
 				["provider"] = { "n", 185545 },	-- Conflago
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70530, {	-- Examination Week
@@ -420,6 +470,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
 				["provider"] = { "n", 185545 },	-- Conflago
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			o(380590, {	-- Well Insulated Mug
@@ -451,6 +502,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			o(380611, {	-- Canteen of Suspicious Water
+				["description"] = "Inside cave.",
 				["questID"] = 70305,
 				["coord"] = { 79.2, 83.8, OHNAHRAN_PLAINS },
 				["g"] = {
@@ -462,6 +514,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Grab and drop a Docile Cub in each of these, then you can collect the treasure.",
 				["questID"] = 70278,
 				["coord"] = { 55.2, 30.5, THALDRASZUS },
+				["crs"] = 194855,	-- Docile Cub
 				["g"] = {
 					i(201003),	-- Furry Gloop
 				},
@@ -478,41 +531,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Alchemy",
 				["provider"] = { "n", 194829 },	-- Grigori Vialtry
 				["coord"] = { 60.9, 75.8, THE_WAKING_SHORES },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(74108, {	-- Inscription Order: Alchemy
-				["name"] = "Inscription Order: Alchemy",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66373, {	-- Weekly Alchemy Knowledgepoint #1
-				["name"] = "Weekly Alchemy Knowledgepoint #1",
-				["provider"] = { "i", 193891 },		-- Experimental Substance
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70511, {	-- Weekly Alchemy Knowledgepoint #2
-				["name"] = "Weekly Alchemy Knowledgepoint #2",
-				["provider"] = { "i", 198964 },		-- Elementious Splinter
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70504, {	-- Weekly Alchemy Knowledgepoint #3
-				["name"] = "Weekly Alchemy Knowledgepoint #3",
-				["provider"] = { "i", 198963 },		-- Decaying Phlegm
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66374, {	-- Weekly Alchemy Knowledgepoint #4
-				["name"] = "Weekly Alchemy Knowledgepoint #4",
-				["provider"] = { "i", 193897 },		-- Reawakened Catalyst
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),
@@ -544,6 +562,49 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(365729),	-- Primal Molten Warglaive
 				},
 			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74109, {	-- Inscription Order: Blacksmith
+					["name"] = "Inscription Order: Blacksmith",
+					["description"] = "Requires a crafting order from Inscription.",
+					["provider"] = { "i", 198454 },	-- Draconic Treatise on Blacksmith
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66381, {	-- Weekly Blacksmithing Knowledgepoint #1
+					["name"] = "Blacksmithing Treasure #1",
+					["provider"] = { "i", 192131 },	-- Valdrakken Weapon Chain
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66382, {	-- Weekly Blacksmithing Knowledgepoint #2
+					["name"] = "Blacksmithing Treasure #2",
+					["provider"] = { "i", 192132 },	-- Draconium Blade Sharpener
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
+					["name"] = "Blacksmithing Drop #1: Fire Elemental",
+					["description"] = "Drops from any Fire Elemental.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 
+						196168, -- Springs Heater
+						196171, -- Flame Boiler
+					},	
+					["coord"] = { 39.0, 48.8, THALDRASZUS },
+					["provider"] = { "i", 198966 },	-- Molten Globule
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70512, {	-- Weekly Blacksmithing Knowledgepoint #4
+					["name"] = "Blacksmithing Drop #2: Earth Elemental",
+					["description"] = "Drops from any Earth Elemental.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 194212 },	-- Unleashed Rubble
+					["coord"] = { 50.6, 59.4, THALDRASZUS },
+					["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+			}),
 			q(70358, {	-- Dragon Isles Blacksmithing
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -574,6 +635,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66941, {	-- Tremendous Tools
@@ -581,6 +643,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72398, {	-- Rock and Stone
@@ -588,6 +651,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70235, {	-- Repair Bill
@@ -595,6 +659,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70234, {	-- All this Hammering
@@ -602,6 +667,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70233, {	-- Axe Shortage
@@ -609,6 +675,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70211, {	-- Stomping Explorers
@@ -616,6 +683,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66517, { -- A New Source of Weapons
@@ -623,6 +691,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70589, {	-- Blacksmithing Services Requested
@@ -630,6 +699,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70184, { -- Specialized Secrets: Blacksmithing
@@ -716,38 +786,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 43.2, 66.6, THE_WAKING_SHORES },
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(74109, {	-- Inscription Order: Blacksmith
-				["name"] = "Inscription Order: Blacksmith",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 198454 },	-- Draconic Treatise on Blacksmith
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66381, {	-- Weekly Blacksmithing Knowledgepoint #1
-				["name"] = "Weekly Blacksmithing Knowledgepoint #1",
-				["provider"] = { "i", 192131 },	-- Valdrakken Weapon Chain
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66382, {	-- Weekly Blacksmithing Knowledgepoint #2
-				["name"] = "Weekly Blacksmithing Knowledgepoint #2",
-				["provider"] = { "i", 192132 },	-- Draconium Blade Sharpener
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
-				["name"] = "Weekly Blacksmithing Knowledgepoint #3",
-				["provider"] = { "i", 198966 },	-- Molten Globule
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70512, {	-- Weekly Blacksmithing Knowledgepoint #4
-				["name"] = "Weekly Blacksmithing Knowledgepoint #4",
-				["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
 		})),
 		prof(COOKING, sharedData({
 			["requireSkill"] = COOKING,
@@ -798,6 +836,45 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(389410),	-- Waking Stats
 				},
 			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74110, {	-- Inscription Order: Enchanting
+					["name"] = "Inscription Order: Enchanting",
+					["description"] = "Requires a crafting order from Inscription.",
+					["provider"] = { "i", 194702 },	-- Draconic Treatise on Enchanting
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66377, {	-- Weekly Enchanting Knowledgepoint #1
+					["name"] = "Enchanting Treasure #1",
+					["provider"] = { "i", 193900 },	-- Prismatic Focusing Shard
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66378, {	-- Weekly Enchanting Knowledgepoint #2
+					["name"] = "Enchanting Treasure #2",
+					["provider"] = { "i", 193901 },	-- Primal Dust
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70515, {	-- Weekly Enchanting Knowledgepoint #3
+					["name"] = "Enchanting Drop #1: Primalist",
+					["description"] = "Drops from any mob with Primalist in the name.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 194656 },	-- Primalist Surgecrusher
+					["coord"] = { 53.4, 56.2, THALDRASZUS },
+					["provider"] = { "i", 198968 },	-- Primalist Charm
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70514, {	-- Weekly Enchanting Knowledgepoint #4
+					["name"] = "Enchanting Drop #2: Arcane Elemental",
+					["description"] = "Drops from any Arcane Elemental.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 181536 },	-- Destabilized Elemental
+					["coord"] = { 40.6, 60.8, THE_AZURE_SPAN },
+					["provider"] = { "i", 198967 },	-- Primordial Aether
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+			}),
 			q(70360, {	-- Dragon Isles Enchanting
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -835,6 +912,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72423, {	-- Weathering the Storm
@@ -842,6 +920,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 				["groups"] = {
 					i(198610),	-- Enchanter's Script
@@ -852,6 +931,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66935, {	-- Crystal Quill Pens
@@ -859,6 +939,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72175, {	-- A Scept-acular Time
@@ -866,6 +947,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 30.8, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72172, {	-- Essence, Shards, and Chromatic Dust
@@ -873,6 +955,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 30.8, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72155, {	-- Spread the Enchantment
@@ -880,6 +963,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 30.8, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72173, {	-- Braced for Enchantment
@@ -887,6 +971,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 30.8, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			o(380558, {	-- Enchanted Debris
@@ -898,6 +983,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			o(380643, {	-- Flashfrozen Scroll
+				["description"] = "Currently non-interactible. Requires enabling 'Enable Interact Key' and keybinding 'Interact with Mouseover' to loot this.",
 				["questID"] = 70320,
 				["coord"] = { 57.5, 83.6, THE_WAKING_SHORES },
 				["g"] = {
@@ -913,7 +999,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380600, {	-- Enriched Earthen Shard
 				["questID"] = 70298,
-				["coord"] = { 21.0, 45.0, THE_AZURE_SPAN },
+				["coord"] = { 21.6, 45.5, THE_AZURE_SPAN },
 				["g"] = {
 					i(198694),	-- Enriched Earthen Shard
 				},
@@ -928,6 +1014,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			o(380589, {	-- Faintly Enchanted Remains
 				["questID"] = 70290,
 				["coord"] = { 45.1, 61.2, THE_AZURE_SPAN },
+				["crs"] = { 194882 },	-- Enchanted Crystaline Construct
 				["g"] = {
 					i(201013),	-- Faintly Enchanted Remains
 				},
@@ -950,37 +1037,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Enchanting",
 				["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
 				["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(74110, {	-- Inscription Order: Enchanting
-				["name"] = "Inscription Order: Enchanting",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 194702 },	-- Draconic Treatise on Enchanting
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70515, {	-- Weekly Enchanting Knowledgepoint #1
-				["name"] = "Weekly Enchanting Knowledgepoint #1",
-				["provider"] = { "i", 198968 },	-- Primalist Charm
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66377, {	-- Weekly Enchanting Knowledgepoint #2
-				["name"] = "Weekly Enchanting Knowledgepoint #2",
-				["provider"] = { "i", 193900 },	-- Prismatic Focusing Shard
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66378, {	-- Weekly Enchanting Knowledgepoint #3
-				["name"] = "Weekly Enchanting Knowledgepoint #3",
-				["provider"] = { "i", 193901 },	-- Primal Dust
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70514, {	-- Weekly Enchanting Knowledgepoint #4
-				["name"] = "Weekly Enchanting Knowledgepoint #4",
-				["provider"] = { "i", 198967 },	-- Primordial Aether
-				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),
@@ -1011,6 +1067,47 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(382367),	-- Wyrmhole Generator
 					r(387246),	-- Zapthrottle Soul Inhaler
 				},
+			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74111, {	-- Inscription Order: Engineering
+					["name"] = "Inscription Order: Engineering",
+					["description"] = "Requires a crafting order from Inscription.",
+					["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66379, {	-- Weekly Engineering Knowledgepoint #1
+					["name"] = "Engineering Treasure #1",
+					["provider"] = { "i", 193902 },	-- Eroded Titan Gizmo
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66380, {	-- Weekly Engineering Knowledgepoint #2
+					["name"] = "Engineering Treasure #2",
+					["provider"] = { "i", 193903 },	-- Watcher Power Core
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70517, {	-- Weekly Engineering Knowledgepoint #3
+					["name"] = "Engineering Drop #1: Dragon-esque",
+					["description"] = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the mobs closest to Valdrakken.",
+					["crs"] = { 194656 },	-- Reservoir Dapple
+					["coord"] = { 49.4, 62.6, THALDRASZUS },
+					["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70516, {	-- Weekly Engineering Knowledgepoint #4
+					["name"] = "Engineering Drop #2: Tyrhold Ancient",
+					["description"] = "Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",
+					["crs"] = { 193244 },	-- Titan Defense Matrix
+					["coord"] = { 57.2, 60.4, THALDRASZUS },
+					["provider"] = { "i", 198969 },		-- Keeper's Mark
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
 			}),
 			q(72242, {	-- Dragon Isles Engineering
 				["sourceQuests"] = {
@@ -1052,6 +1149,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66942, {	-- Enemy Engineering
@@ -1059,6 +1157,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66890, {	-- Stolen Tools
@@ -1066,6 +1165,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72396, {	-- Horns of Plenty
@@ -1073,6 +1173,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70540, {	-- An Engineer's Best Friend
@@ -1080,6 +1181,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70557, {	-- No Scopes
@@ -1087,6 +1189,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70545, {	-- Blingtron 8000...?
@@ -1094,6 +1197,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70539, {	-- And You Thought They Did Nothing
@@ -1101,6 +1205,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70591, {	-- Engineering Services Requested
@@ -1108,6 +1213,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			o(380560, {	-- Disabled Tesla Coil
@@ -1130,39 +1236,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Engineering",
 				["provider"] = { "n", 194838 },	-- Frizz Buzzcrank
 				["coord"] = { 17.7, 21.6, THE_AZURE_SPAN },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(74111, {	-- Inscription Order: Engineering
-				["name"] = "Inscription Order: Engineering",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66379, {	-- Weekly Engineering Knowledgepoint #1
-				["name"] = "Weekly Engineering Knowledgepoint #1",
-				["provider"] = { "i", 193902 },	-- Eroded Titan Gizmo
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66380, {	-- Weekly Engineering Knowledgepoint #2
-				["name"] = "Weekly Engineering Knowledgepoint #2",
-				["provider"] = { "i", 193903 },	-- Watcher Power Core
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70517, {	-- Weekly Engineering Knowledgepoint #3
-				["name"] = "Weekly Engineering Knowledgepoint #3",
-				["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70516, {	-- Weekly Engineering Knowledgepoint #4
-				["name"] = "Weekly Engineering Knowledgepoint #4",
-				["provider"] = { "i", 198969 },		-- Keeper's Mark
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),
@@ -1241,6 +1314,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 38.2, 68.6, VALDRAKKEN },
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70614, {	-- Bubble Craze
@@ -1248,6 +1322,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 38.2, 68.6, VALDRAKKEN },
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70615, {	-- The Case of the Missing Herbs
@@ -1255,6 +1330,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 38.2, 68.6, VALDRAKKEN },
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70616, {	-- How Many??
@@ -1262,6 +1338,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 38.2, 68.6, VALDRAKKEN },
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(74107, {	-- Inscription Order: Herbalism
@@ -1336,6 +1413,55 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(383548),	-- Scribe's Resplendent Quill
 				},
 			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74105, {	-- Inscription Order: Inscription
+					["name"] = "Inscription Order: Inscription",
+					["provider"] = { "i", 194699 },	-- Draconic Treatise on Inscription
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66375, {	-- Weekly Inscription Knowledgepoint #1
+					["name"] = "Inscription Treasure #1",
+					["provider"] = { "i", 193904 },		-- Phoenix Feather Quill
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66376, {	-- Weekly Inscription Knowledgepoint #2
+					["name"] = "Inscription Treasure #2",
+					["provider"] = { "i", 193905 },		-- Iskaaran Trading Ledger
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70518, {	-- Weekly Inscription Knowledgepoint #3
+					["name"] = "Inscription Drop #1: Qalashi Djaradin",
+					["description"] = "Drops from any Qalashi Djaradin.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 186109 },	-- Qalashi Necksnapper
+					["coords"] = { 
+						{ 39.6, 51.4, THE_WAKING_SHORES },
+						{ 34.8, 68.6, THE_WAKING_SHORES },
+						{ 39.6, 51.4, THE_WAKING_SHORES },
+					},
+					["provider"] = { "i", 198971 },		-- Curious Djaradin Rune
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70519, {	-- Weekly Inscription Knowledgepoint #4
+					["name"] = "Inscription Drop #2: Dragon-kin/Proto Drakes",
+					["description"] = "Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the mobs closest to Valdrakken.",
+					["crs"] = { 
+						193973,	-- Mistyvale Splashcaster
+						193969,	-- Mistyvale Firestarter
+					},
+					["coord"] = { 44.0, 81.8, THALDRASZUS },
+					["provider"] = { "i", 198972 },		-- Draconic Glamour
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+			}),
 			q(70361, {	-- Dragon Isles Inscription
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -1377,6 +1503,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66944, {	-- Peacock Pigments
@@ -1384,6 +1511,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66945, {	-- Icy Ink
@@ -1391,6 +1519,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72438, {	-- Tarasek Intentions
@@ -1398,6 +1527,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70560, {	-- The Most Powerful Tool: Good Documentation
@@ -1405,6 +1535,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
 				["provider"] = { "n", 185540 },	-- Talendara
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70559, {	-- Quill You Help?
@@ -1412,6 +1543,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
 				["provider"] = { "n", 185540 },	-- Talendara
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70558, {	-- Disillusioned Illusions
@@ -1419,6 +1551,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
 				["provider"] = { "n", 185540 },	-- Talendara
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70561, {	-- A Scribe's Tragedy
@@ -1426,6 +1559,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
 				["provider"] = { "n", 185540 },	-- Talendara
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70592, {	-- Inscription Services Requested
@@ -1434,6 +1568,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			o(380610, {	-- Pulsing Earth Rune
 				["questID"] = 70306,
@@ -1501,40 +1636,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(74105, {	-- Inscription Order: Inscription
-				["name"] = "Inscription Order: Inscription",
-				["provider"] = { "i", 194699 },	-- Draconic Treatise on Inscription
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70519, {	-- Weekly Inscription Knowledgepoint #1
-				["name"] = "Weekly Inscription Knowledgepoint #1",
-				["provider"] = { "i", 198972 },		-- Draconic Glamour
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66375, {	-- Weekly Inscription Knowledgepoint #2
-				["name"] = "Weekly Inscription Knowledgepoint #2",
-				["provider"] = { "i", 193904 },		-- Phoenix Feather Quill
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70518, {	-- Weekly Inscription Knowledgepoint #3
-				["name"] = "Weekly Inscription Knowledgepoint #3",
-				["provider"] = { "i", 198971 },		-- Curious Djaradin Rune
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66376, {	-- Weekly Inscription Knowledgepoint #4
-				["name"] = "Weekly Inscription Knowledgepoint #4",
-				["provider"] = { "i", 193905 },		-- Iskaaran Trading Ledger
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
 		})),
 		prof(JEWELCRAFTING, sharedData({
 			["requireSkill"] = JEWELCRAFTING,
@@ -1572,6 +1673,59 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(374448),	-- Zen Malygite
 					r(374458),	-- Zen Neltharite
 				},
+			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74112, {	-- Inscription Order: Jewelcrafting
+					["name"] = "Inscription Order: Jewelcrafting",
+					["description"] = "Requires a crafting order from Inscription.",
+					["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66388, {	-- Weekly Jewelcrafting Knowledgepoint #1
+					["name"] = "Jewelcrafting Treasure #1",
+					["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66389, {	-- Weekly Jewelcrafting Knowledgepoint #2
+					["name"] = "Jewelcrafting Treasure #2",
+					["provider"] = { "i", 193907 },		-- Chipped Tyrstone
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #3
+					["name"] = "Jewelcrafting Drop #1: Well Dressed",
+					["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the mobs closest to Valdrakken.",
+					["crs"] = { 
+						195215,	-- Rebel Bruiser
+					},
+					["coords"] = { 
+						{ 46.8, 59.6, THALDRASZUS },
+						{ 45.8 ,58.2, THALDRASZUS },
+					},
+					["provider"] = { "i", 198973 },		-- Incandescent Curio
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #4
+					["name"] = "Jewelcrafting Drop #2: Corporeal Elemental",
+					["description"] = "Drops from any Corporeal Elemental.\nCoordinates link to the mobs closest to Valdrakken.",
+					["crs"] = { 
+						194212,	-- Unleashed Rubble
+					},
+					["coords"] = { 
+						{ 50.6, 57.6, THALDRASZUS },
+						{ 48.8, 60.6, THALDRASZUS },
+					},
+					["provider"] = { "i", 198974 },		-- Elegantly Engraved Embellishment
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
 			}),
 			q(70365, {	-- To the Dragon Isles: Jewelcrafting
 				["sourceQuests"] = {
@@ -1614,6 +1768,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66516, {	-- Mundane Gems, I Think not!
@@ -1621,6 +1776,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66950, {	-- Heart of a Giant
@@ -1628,6 +1784,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66949, {	-- Trinket Bandits
@@ -1635,6 +1792,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70565, {	-- Separation by Saturation
@@ -1642,6 +1800,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 40.6, 61.2, VALDRAKKEN },
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70564, {	-- Spectacular
@@ -1649,6 +1808,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 40.6, 61.2, VALDRAKKEN },
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70563, {	-- The Exhibition
@@ -1656,6 +1816,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 40.6, 61.2, VALDRAKKEN },
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70562, {	-- The Plumbers, Mason
@@ -1663,6 +1824,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 40.6, 61.2, VALDRAKKEN },
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70593, {	-- Jewelcrafting Services Requested
@@ -1670,6 +1832,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			o(380822, {	-- Igneous Gem
@@ -1736,41 +1899,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Jewelcrafting",
 				["provider"] = { "n", 194841 },	-- Pluutar
 				["coord"] = { 46.2, 40.8, THE_AZURE_SPAN },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(74112, {	-- Inscription Order: Jewelcrafting
-				["name"] = "Inscription Order: Jewelcrafting",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #1
-				["name"] = "Weekly Jewelcrafting Knowledgepoint #1",
-				["provider"] = { "i", 198973 },		-- Incandescent Curio
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #2
-				["name"] = "Weekly Jewelcrafting Knowledgepoint #2",
-				["provider"] = { "i", 198974 },		-- Elegantly Engraved Embellishment
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66388, {	-- Weekly Jewelcrafting Knowledgepoint #3
-				["name"] = "Weekly Jewelcrafting Knowledgepoint #3",
-				["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66389, {	-- Weekly Jewelcrafting Knowledgepoint #4
-				["name"] = "Weekly Jewelcrafting Knowledgepoint #4",
-				["provider"] = { "i", 193907 },		-- Chipped Tyrstone
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),
@@ -1847,6 +1975,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66364, {	-- To Fly a Kite
@@ -1854,6 +1983,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66951, {	-- Population Control
@@ -1861,6 +1991,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72407, {	-- Soaked in Success
@@ -1868,6 +1999,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70569, {	-- For Trisket, a Task Kit
@@ -1875,6 +2007,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70567, {	-- When You Give Bakar a Bone
@@ -1882,6 +2015,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70571, {	-- Drums Here!
@@ -1889,6 +2023,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70568, {	-- Tipping the Scales
@@ -1896,6 +2031,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70594, {	-- Leatherworking Services Requested
@@ -1903,6 +2039,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			o(380615, {	-- Poacher's Pack
@@ -2046,6 +2183,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.0, 51.2, VALDRAKKEN },
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70618, {	-- The Call of the Forge
@@ -2053,6 +2191,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.0, 51.2, VALDRAKKEN },
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70617, {	-- All Mine, Mine, Mine
@@ -2060,6 +2199,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.0, 51.2, VALDRAKKEN },
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72156, {	-- A Fiery Flight
@@ -2067,6 +2207,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.0, 51.2, VALDRAKKEN },
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(74106, {		-- Inscription Order: Mining
@@ -2174,6 +2315,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.8, 60.4, VALDRAKKEN },
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70620, {	-- Scaling Up
@@ -2181,6 +2323,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.8, 60.4, VALDRAKKEN },
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70619, {	-- A Study of Leather
@@ -2188,6 +2331,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.8, 60.4, VALDRAKKEN },
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72158, {	-- A Dense Delivery
@@ -2195,6 +2339,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.8, 60.4, VALDRAKKEN },
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(74114, {	-- Inscription Order: Skinning
@@ -2295,6 +2440,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72410, {	-- Pincers and Needles
@@ -2302,6 +2448,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 				["groups"] = {
 					i(198609),	-- Tailoring Examples
@@ -2312,6 +2459,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66953, {	-- All Things Fluffy
@@ -2319,6 +2467,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70587, {	-- A Knapsack Problem
@@ -2326,6 +2475,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 31.8, 67.6, VALDRAKKEN },
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70586, {	-- Sew Many Cooks
@@ -2333,6 +2483,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 31.8, 67.6, VALDRAKKEN },
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70582, {	-- Weave Well Enough Alone
@@ -2340,6 +2491,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 31.8, 67.6, VALDRAKKEN },
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70572, {	-- The Cold Does Bother Them, Actually
@@ -2347,6 +2499,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 31.8, 67.6, VALDRAKKEN },
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70595, {	-- Tailoring Services Requested
@@ -2354,6 +2507,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			o(380607, {	-- Itinerant Singed Fabric
@@ -2379,7 +2533,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380549, {	-- Intriguing Bolt of Blue Cloth
 				["questID"] = 70267,
-				["coord"] = { 40.7, 54.5, THE_AZURE_SPAN },
+				["coord"] = { 40.7, 54.9, THE_AZURE_SPAN },
 				["g"] = {
 					i(198662),	-- Intriguing Bolt of Blue Cloth
 				},
@@ -2395,6 +2549,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Interact with the Catnip Frond, gather 5 Catnip Leaves and throw them at the Playful Prowler. Then the treasure will appear.",
 				["questID"] = 70303,
 				["coord"] = { 66.1, 52.9, OHNAHRAN_PLAINS },
+				["crs"] = { 194873 },	-- Playful Prowler
 				["g"] = {
 					i(201020),	-- Silky Surprise
 				},

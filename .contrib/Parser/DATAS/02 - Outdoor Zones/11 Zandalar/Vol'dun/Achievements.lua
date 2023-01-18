@@ -5,7 +5,92 @@
 root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(VOLDUN, {
 		n(ACHIEVEMENTS, {
-			ach(12943),		-- Adventurer of Vol'dun
+			ach(12943, {	-- Adventurer of Vol'dun
+				crit(1, {	-- Ak'tar
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(2, {	-- Ashmane
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(3, {	-- Azer'tor
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(4, {	-- Bajiani the Slick
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(5, {	-- Bloated Krolusk
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(6, {	-- Bloodwing Bonepicker
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(7, {	-- Captain Stef "Marrow" Quin
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(8, {	-- Commodore Calhoun
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(9, {	-- Enraged Krolusk
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(10, {	-- Gut-Gut the Glutton
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(11, {	-- Hivemother Kraxi
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(12, {	-- Jumbo Sandsnapper
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(13, {	-- Jungleweb Hunter
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(14, {	-- Kamid the Trapper
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(15, {	-- King Clickyclack
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(16, {	-- Nez'ara
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(17, {	-- Relic Hunter Hazaak
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(18, {	-- Scaleclaw Broodmother
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(19, {	-- Scorpox
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(20, {	-- Sirokar
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(21, {	-- Skycaller Teskris
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(22, {	-- Skycarver Krakit
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(23, {	-- Songstress Nahjeen
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(24, {	-- Vathikur
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(25, {	-- Warbringer Hozzik
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(26, {	-- Warlord Zothix
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(27, {	-- Warmother Captive
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(28, {	-- Zunashi the Exile
+					-- ["_npcs"] = { NPCID },
+				}),
+			}),
 			ach(13036, {	-- A Loa of a Tale
 				["collectible"] = false,
 				["g"] = {
@@ -72,6 +157,21 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						},
 					}),
 				},
+			}),
+			ach(12560, {	-- Explore Vol'dun
+				crit(1),		-- Atul'Aman
+				crit(2),		-- Darkwood Shoal
+				crit(3),		-- Port of Zem'lan
+				crit(4),		-- Redrock Harbor
+				crit(5),		-- Shatterstone Harbor
+				crit(6),		-- Slithering Gulch
+				crit(7),		-- Temple of Akunda
+				crit(8),		-- Terrace of the Devoted
+				crit(9),		-- The Bone Pit
+				crit(10),		-- The Brine Basin
+				crit(11),		-- The Cracked Coast
+				crit(12),		-- Tortaka Refuge
+				crit(13),		-- Whistlebloom Oasis
 			}),
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,

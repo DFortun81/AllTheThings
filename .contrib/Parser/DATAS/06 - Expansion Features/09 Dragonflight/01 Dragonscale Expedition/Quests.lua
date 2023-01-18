@@ -480,6 +480,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192967 },	-- Toddy Whiskers
 				["coord"] = { 54.4, 55.5, THALDRASZUS },
 			}),
+			q(69888, {	-- Unusual Suspects
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 66547 },	-- It Belongs in a Museum... Eventually
+				["provider"] = { "n", 187276 },	-- Toddy Whiskers
+				["coord"] = { 47.2, 82.7, THE_WAKING_SHORES },
+				["description"] = "This quest will become available on the next weekly reset after completing |cffffff00It Belongs in a Museum... Eventually|r.",
+				["g"] = {
+					i(201782),	-- Tyr's Blessing
+				},
+			}),
 				-- RENOWN 25 --
 			q(70834, {	-- Titled Story
 				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
@@ -487,7 +497,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
 					spell(388278),	-- Intrepid Explorer cast
-					title(736),	-- Intrepid Explorer %s (title!)
+					title(475),	-- Intrepid Explorer %s (title!)
 					i(197921),	-- Primal Infusion
 				},
 			}),
@@ -495,6 +505,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
 				["provider"] = { "n", 187408 },	-- Granpap Whiskers
 				["coord"] = { 47.7, 83.2, THE_WAKING_SHORES },
+				["lockCriteria"] = { 2,
+					"spellID", 374032,	-- Tamed Skitterfly
+					"spellID", 374034,	-- Azure Skitterfly
+				},
 				["g"] = {
 					i(192761),	-- Tamed Skitterfly (Mount!)
 					i(192762),	-- Azure Skitterfly (Mount!)

@@ -42,6 +42,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(202171),	-- Dragon Purse
 					},
 				}),
+				i(201921, {	-- Dragonscale Expedition Insignia
+					["minReputation"] = { 2507, 25 },	-- Dragonflight Expedition renown 25
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				}),
+				i(201922, {	-- Iskaara Tuskarr Insignia
+					["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				}),
 				i(201923, {	-- Maruuk Centaur Insignia
 					["minReputation"] = { 2503, 25 },	-- Maruuk Centaur renown 25
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",

@@ -5,7 +5,107 @@
 root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(DRUSTVAR, {
 		n(ACHIEVEMENTS, {
-			ach(12941),		-- Adventurer of Drustvar
+			ach(12941, {	-- Adventurer of Drustvar
+				crit(1, {	-- Betsy
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(2, {	-- Quillrat Matriarch
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(3, {	-- Barbthorn Queen
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(4, {	-- Vicemaul
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(5, {	-- Bonesquall
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(6, {	-- Gluttonous Yeti
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(7, {	-- Longfang
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(8, {	-- Ancient Sarcophagus
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(9, {	-- Beastly Ritual Skull
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(10, {	-- Rimestone
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(11, {	-- Whargarble the Ill-Tempered
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(12, {	-- Seething Cache
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(13, {	-- Grozgore
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(14, {	-- Gorehorn
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(15, {	-- Beshol
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(16, {	-- Talon
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(17, {	-- Emily Mayville
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(18, {	-- Nevermore
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(19, {	-- Balethorn
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(20, {	-- Bilefang Mother
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(21, {	-- Executioner Blackwell
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(22, {	-- Deathcap
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(23, {	-- Hyo'gi
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(24, {	-- Captain Leadfist
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(25, {	-- Arvon the Betrayed
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(26, {	-- Arclight
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(27, {	-- Avalanche
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(28, {	-- Haywire Golem
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(29, {	-- Gorged Boar
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(30, {	-- Sister Martha
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(31, {	-- Fungi Trio
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(32, {	-- Braedan Whitewall
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(33, {	-- Hexed Hunter
+					-- ["_npcs"] = { NPCID },
+				}),
+			}),
 			ach(13083, {	-- Better, Faster, Stronger
 				["description"] = "Collect and have active Witch's Boons: Excellence, Extra Pep, Rage, and Fortitude which are on a 5 minute timer and the debuff Witch's Curse: Newt. Debuffs can remove one of your buffs. Coords are possible brew spawn points.",
 				["coords"] = {
@@ -179,6 +279,20 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["coord"] = { 44.6, 45.7, DRUSTVAR },
 					["objectID"] = 297632,
 				}),
+			}),
+			ach(12557, {	-- Explore Drustvar
+				crit(1),		-- Arom's Stand
+				crit(2),		-- Barrowknoll Cemetery
+				crit(3),		-- Carver's Harbor
+				crit(4),		-- Corlain
+				crit(5),		-- Crimson Forest
+				crit(6),		-- Fallhaven
+				crit(7),		-- Fletcher's Hollow
+				crit(8),		-- Gol Koval
+				crit(9),		-- Highroad Pass
+				crit(10),		-- Western Watch
+				crit(11),		-- Iceveil Glacier
+				crit(12),		-- Waycrest Manor
 			}),
 			ach(13082, {	-- Everything Old Is New Again
 				["races"] = ALLIANCE_ONLY,
@@ -417,6 +531,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			ach(13087, {	-- Sausage Sampler
 				["description"] = "Can be completed as Horde by purchasing items on the AH.",
 				["g"] = {
+					-- TODO: use provider instead for crits
 					i(163110, {	-- Fried Boar Sausage
 						["coord"] = { 26.7, 72.5, DRUSTVAR },
 						["criteriaID"] = 1,
@@ -460,6 +575,38 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			pvp(ach(12579)),	-- Tour of Duty: Drustvar
 			ach(12995, {	-- Treasures of Drustvar
+				-- TODO: move the objects to /Treasures.lua
+				-- put the criteria with _objects or _quests
+				-- crit(1, {	-- Web-Covered Chest
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(2, {	-- Merchant's Chest
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(3, {	-- Runebound Cache
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(4, {	-- Runebound Chest
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(5, {	-- Runebound Coffer
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(6, {	-- Hexed Chest
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(7, {	-- Bespelled Chest
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(8, {	-- Ensorcelled Chest
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(9, {	-- Enchanted Chest
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(10, {	-- Stolen Thornspeaker Cache
+				-- 	["_quests"] = { QUESTID },
+				-- }),
 				o(297879, {	-- Bespelled Chest
 					["description"] = "Click the inactive torches.",
 					["questID"] = 53472,

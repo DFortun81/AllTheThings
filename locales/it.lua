@@ -856,6 +856,7 @@ for key,value in pairs({
 		[-1140] = "Accordo di Valdrakken",							-- Valdrakken Accord
 		[-1142] = "Sfide Aeree",									-- Aerial Challenges
 		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
+		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -3159,8 +3160,13 @@ for key,value in pairs({
 	[357246] = "Pergamena Lacera",	-- Tattered Scroll
 	[357467] = "Inchiostro Proibito",	-- Forbidden Ink
 	[357487] = "Parasole Stiloso",	-- Stylish Parasol
+	[357515] = "Sacca di Avena",	-- Sack of Oats
+	[357526] = "Secchio d'Acqua Vuoto",	-- Empty Water Bucket
+	[357541] = "Ferro di Cavallo Scartato",	-- Discarded Horseshoe
 	[357565] = "Canna da Pesca Dimenticata",	-- Forgotten Angler's Rod
+	[357572] = "Stocco dell'Impavido",	-- Rapier of the Fearless
 	[357584] = "Lama da Guerra di Vyrtha",	-- Vyrtha's Dredglaive
+	[357683] = "Pozza di Fango Improvvisata dell'Esiliato",	-- Outcast's Makeshift Muckpool
 	[357697] = "Manufatto del Coordinatore",	-- Taskmaster's Trove
 	[357726] = "Lancia Spezzata",	-- Broken Spear
 	[357758] = "Barile di Piaga",	-- Plague Barrel
@@ -3564,7 +3570,6 @@ for key,value in pairs({
 	[385022] = "Fossile Eroso",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
-	[9962198] = "Pozza di Fango Improvvisata dell'Esiliato",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

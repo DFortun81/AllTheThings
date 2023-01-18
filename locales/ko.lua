@@ -864,6 +864,7 @@ for key,value in pairs({
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
 		[-1142] = "비행 도전",											-- Aerial Challenges
 		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
+		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -3167,8 +3168,13 @@ for key,value in pairs({
 	[357246] = "너덜너덜한 두루마리",	-- Tattered Scroll
 	[357467] = "금단의 잉크",	-- Forbidden Ink
 	[357487] = "멋들어진 양산",	-- Stylish Parasol
+	[357515] = "귀리 부대",	-- Sack of Oats
+	[357526] = "텅 빈 물동이",	-- Empty Water Bucket
+	[357541] = "버려진 편자",	-- Discarded Horseshoe
 	[357565] = "잊힌 강태공의 낚싯대",	-- Forgotten Angler's Rod
+	[357572] = "담대한 자의 레이피어",	-- Rapier of the Fearless
 	[357584] = "비르타의 공포전투검",	-- Vyrtha's Dredglaive
+	[357683] = "추방자의 급조한 진흙 웅덩이",	-- Outcast's Makeshift Muckpool
 	[357697] = "작업반장의 보물",	-- Taskmaster's Trove
 	[357726] = "부러진 창",	-- Broken Spear
 	--TODO: [357758] = "Plague Barrel",	-- Plague Barrel
@@ -3572,7 +3578,6 @@ for key,value in pairs({
 	[385022] = "부식된 화석",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
-	[9962198] = "추방자의 급조한 진흙 웅덩이",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

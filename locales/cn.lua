@@ -873,6 +873,7 @@ for key,value in pairs({
 		[-1140] = "瓦德拉肯联军",											-- Valdrakken Accord
 		[-1142] = "天际挑战",											-- Aerial Challenges
 		[-1143] = "每2小时稀有",											-- Every 2 Hours Rare
+		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
@@ -3181,8 +3182,13 @@ for key, value in pairs({
 	[357246] = "破烂的卷轴",	-- Tattered Scroll
 	[357467] = "禁忌墨水",	-- Forbidden Ink
 	[357487] = "时髦的遮阳伞",	-- Stylish Parasol
+	[357515] = "一袋燕麦",	-- Sack of Oats
+	[357526] = "空水桶",	-- Empty Water Bucket
+	[357541] = "丢弃的马蹄铁",	-- Discarded Horseshoe
 	[357565] = "被遗忘的渔翁之竿",	-- Forgotten Angler's Rod
+	[357572] = "无畏者的利剑",	-- Rapier of the Fearless
 	[357584] = "弗莱莎的恐惧战刃",	-- Vyrtha's Dredglaive
+	[357683] = "流亡者的简易泥池",	-- Outcast's Makeshift Muckpool
 	[357697] = "工头的宝藏",	-- Taskmaster's Trove
 	[357726] = "断裂之矛",	-- Broken Spear
 	[357758] = "魔药桶",	-- Plague Barrel
@@ -3586,7 +3592,6 @@ for key, value in pairs({
 	[385022] = "被侵蚀的化石",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
-	[9962198] = "流亡者的简易泥池",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

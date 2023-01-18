@@ -235,8 +235,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(195475),	-- Flame Marshal's Bulwark
 							i(195479),	-- Flametender's Legwraps
 							i(195477),	-- Scaldrons of Molten Might
-							i(195481),	-- Scepter of Final Authority
 							i(195480),	-- Seal of Diurna's Chosen
+							i(195490),	-- Searing Blazecaster
 							i(195478),	-- Valdrakken Protector's Turncoat
 						},
 					}),
@@ -252,7 +252,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(195485),	-- Councilor's Terrormask
 							i(195487),	-- Embar's Ashen Hauberk
 							i(195484),	-- Icewrath's Channeling Conduit
-							i(195483),	-- Imbued Qalashi Poleaxe
+							i(195518),	-- Imbued Qalashi Crusher
 							i(195489),	-- Maul of the Earthshaper
 							i(195488),	-- Opalfang's Earthbound Legguards
 							i(195486),	-- Twisted Loam Spaulders
@@ -289,7 +289,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(195494),	-- Dathea's Cyclonic Cage
 							i(195496),	-- Eye of the Vengeful Hurricane
 							i(195491),	-- Infused Stormglaives
-							i(195490),	-- Shearing Windcaster
+							i(195481),	-- Scepter of Drastic Measures
 							i(194302),	-- Storm-Eater's Boon
 							i(195492),	-- Windborne Hatsuburi
 						},
@@ -369,7 +369,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								i(200423),	-- Husk of the Walking Mountain
 							}),
 							i(194306),	-- All-Totem of the Master
-							i(195518),	-- Awak'mani, Grimtotem's Legacy
+							i(195483),	-- Awak'mani, Grimtotem's Legacy
 							i(194305),	-- Controlled Current Technique
 							i(195512),	-- Fist of the Grand Summoner
 							i(195517),	-- Kurog's Thunderhooves
@@ -485,8 +485,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195475),	-- Flame Marshal's Bulwark
 						i(195479),	-- Flametender's Legwraps
 						i(195477),	-- Scaldrons of Molten Might
-						i(195481),	-- Scepter of Final Authority
 						i(195480),	-- Seal of Diurna's Chosen
+						i(195490),	-- Searing Blazecaster
 						i(195478),	-- Valdrakken Protector's Turncoat
 					},
 				}),
@@ -518,7 +518,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195485),	-- Councilor's Terrormask
 						i(195487),	-- Embar's Ashen Hauberk
 						i(195484),	-- Icewrath's Channeling Conduit
-						i(195483),	-- Imbued Qalashi Poleaxe
+						i(195518),	-- Imbued Qalashi Crusher
 						i(195489),	-- Maul of the Earthshaper
 						i(195488),	-- Opalfang's Earthbound Legguards
 						i(195486),	-- Twisted Loam Spaulders
@@ -591,7 +591,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195494),	-- Dathea's Cyclonic Cage
 						i(195496),	-- Eye of the Vengeful Hurricane
 						i(195491),	-- Infused Stormglaives
-						i(195490),	-- Shearing Windcaster
+						i(195481),	-- Scepter of Drastic Measures
 						i(194302),	-- Storm-Eater's Boon
 						i(195492),	-- Windborne Hatsuburi
 					},
@@ -622,7 +622,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(200423),	-- Husk of the Walking Mountain
 						}),
 						i(194306),	-- All-Totem of the Master
-						i(195518),	-- Awak'mani, Grimtotem's Legacy
+						i(195483),	-- Awak'mani, Grimtotem's Legacy
 						i(194305),	-- Controlled Current Technique
 						i(195512),	-- Fist of the Grand Summoner
 						i(195517),	-- Kurog's Thunderhooves
@@ -758,8 +758,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195475),	-- Flame Marshal's Bulwark
 						i(195479),	-- Flametender's Legwraps
 						i(195477),	-- Scaldrons of Molten Might
-						i(195481),	-- Scepter of Final Authority
 						i(195480),	-- Seal of Diurna's Chosen
+						i(195490),	-- Searing Blazecaster
 						i(195478),	-- Valdrakken Protector's Turncoat
 					},
 				}),
@@ -789,7 +789,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195485),	-- Councilor's Terrormask
 						i(195487),	-- Embar's Ashen Hauberk
 						i(195484),	-- Icewrath's Channeling Conduit
-						i(195483),	-- Imbued Qalashi Poleaxe
+						i(195518),	-- Imbued Qalashi Crusher
 						i(195489),	-- Maul of the Earthshaper
 						i(195488),	-- Opalfang's Earthbound Legguards
 						i(195486),	-- Twisted Loam Spaulders
@@ -860,7 +860,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195494),	-- Dathea's Cyclonic Cage
 						i(195496),	-- Eye of the Vengeful Hurricane
 						i(195491),	-- Infused Stormglaives
-						i(195490),	-- Shearing Windcaster
+						i(195481),	-- Scepter of Drastic Measures
 						i(194302),	-- Storm-Eater's Boon
 						i(195492),	-- Windborne Hatsuburi
 					},
@@ -890,7 +890,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(200423),	-- Husk of the Walking Mountain
 						}),
 						i(194306),	-- All-Totem of the Master
-						i(195518),	-- Awak'mani, Grimtotem's Legacy
+						i(195483),	-- Awak'mani, Grimtotem's Legacy
 						i(194305),	-- Controlled Current Technique
 						i(195512),	-- Fist of the Grand Summoner
 						i(195517),	-- Kurog's Thunderhooves
@@ -1014,8 +1014,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195475),	-- Flame Marshal's Bulwark
 						i(195479),	-- Flametender's Legwraps
 						i(195477),	-- Scaldrons of Molten Might
-						i(195481),	-- Scepter of Final Authority
 						i(195480),	-- Seal of Diurna's Chosen
+						i(195490),	-- Searing Blazecaster
 						i(195478),	-- Valdrakken Protector's Turncoat
 					},
 				}),
@@ -1047,7 +1047,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195485),	-- Councilor's Terrormask
 						i(195487),	-- Embar's Ashen Hauberk
 						i(195484),	-- Icewrath's Channeling Conduit
-						i(195483),	-- Imbued Qalashi Poleaxe
+						i(195518),	-- Imbued Qalashi Crusher
 						i(195489),	-- Maul of the Earthshaper
 						i(195488),	-- Opalfang's Earthbound Legguards
 						i(195486),	-- Twisted Loam Spaulders
@@ -1120,7 +1120,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195494),	-- Dathea's Cyclonic Cage
 						i(195496),	-- Eye of the Vengeful Hurricane
 						i(195491),	-- Infused Stormglaives
-						i(195490),	-- Shearing Windcaster
+						i(195481),	-- Scepter of Drastic Measures
 						i(194302),	-- Storm-Eater's Boon
 						i(195492),	-- Windborne Hatsuburi
 					},
@@ -1151,7 +1151,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(200423),	-- Husk of the Walking Mountain
 						}),
 						i(194306),	-- All-Totem of the Master
-						i(195518),	-- Awak'mani, Grimtotem's Legacy
+						i(195483),	-- Awak'mani, Grimtotem's Legacy
 						i(194305),	-- Controlled Current Technique
 						i(195512),	-- Fist of the Grand Summoner
 						i(195517),	-- Kurog's Thunderhooves

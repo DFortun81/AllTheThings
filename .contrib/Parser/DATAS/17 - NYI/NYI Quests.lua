@@ -6977,13 +6977,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66986),	--
 			q(67000),	--
 			q(67001),	--
-			q(67010),	--
 			q(67016),	--
 			q(67019),	--
 			q(67020),	--
 			q(67022),	--
 			q(67023),	--
-			q(67024),	--
 			q(67025),	--
 			q(67028),	--
 			q(67029),	--
@@ -7056,7 +7054,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69917),	--
 			q(69920),	--
 			q(69941),	--
-			q(69942),	--
 			q(69945),	--
 			q(69947),	--
 			q(69948),	--
@@ -7185,7 +7182,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70782),	--
 			q(70787),	--
 			q(70795),	--
-			q(70797),	--
 			q(70799),	--
 			q(70800),	--
 			q(70801),	--
@@ -7226,6 +7222,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(71214),	--
 			q(71236),	--
 			q(71237),	--
+			q(71240),	--
 			q(71262),	--
 			q(71273),	--
 			q(71311),	--
@@ -7247,7 +7244,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(71473),	--
 			q(71475),	--
 			q(71477),	--
-			q(71494),	--
 			q(71499),	--
 			q(71500),	--
 			q(71513),	--
@@ -7262,7 +7258,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(71524),	--
 			q(71525),	--
 			q(71527),	--
-			q(71528),	--
 			q(71529),	--
 			q(71530),	--
 			q(71531),	--
@@ -7359,9 +7354,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(71702),	--
 			q(71708),	--
 			q(71709),	--
-			q(71711),	--
 			q(71712),	--
-			q(71713),	--
 			q(71714),	--
 			q(71715),	--
 			q(71717),	--
@@ -7394,9 +7387,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(71865),	--
 			q(71867),	--
 			q(71892),	--
-			q(71906),	--
-			q(71909),	--
-			q(71910),	--
 			q(71915),	--
 			q(71916),	--
 			q(71917),	--
@@ -7451,7 +7441,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 10.0.2.45779
 			q(72339),	--
 			q(72340),	--
-			q(72341),	--
 			q(72342),	--
 			q(72343),	--
 			q(72345),	--
@@ -7494,13 +7483,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72632),	--
 			q(72633),	-- Dragon Isles Supplies The Azure Span
 			q(72634),	--
-			q(72635),	--
-			q(72636),	--
+			q(72635),	-- Dragon Isles Supplies renown 20 tuskarr (2nd time)
+			q(72636),	-- Dragon Isles Supplies renown 21 tuskarr (2nd time)
 			q(72643),	-- Dragon Isles Supplies
 			q(72683),	--
 			q(72684),	--
 			q(72687),	-- Renown Supplies
-			q(72697),	--
+			q(72697),	-- Renown Supplies Valdrakken 24 bonus supplies
 			q(72719),	--
 			q(72725),	--
 			q(72726),	--
@@ -7516,7 +7505,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72780),	--
 			q(72804),	--
 			q(72810),	--
-			q(72815),	--
 			-- 10.0.2.46420
 			q(72817),	--
 			q(72819),	--

@@ -3001,14 +3001,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 8.3.0.33062" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(58912, {	-- An Urgent Meeting
-					["qg"] = 163211,	-- Henry Garrick
-					["sourceQuest"] = 58911,	-- Home Is Where the Hearth Is
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(5676, {	-- Arcane Feedback [Stormwind City]
 					["qgs"] = {
 						11406,	-- High Priest Rohan <Priest Trainer>
@@ -3147,19 +3139,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
-				q(58983, {	-- Battle for Azeroth: Tides of War (Shadowlands version)
-					["qg"] = 163219,	-- Captain Garrick
-					["sourceQuest"] = 58912,	-- An Urgent Meeting
-					["altQuests"] = { 46727 },	-- Tides of War
-					["coord"] = { 85.2, 32.1, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(178941, {	-- Alliance Dog Tags
-							["timeline"] = { "added 9.0.1.36228" },
-						}),
-					}
-				}),
 				q(1640, {	-- Beat Bartleby
 					["qg"] = 6090,	-- Bartleby
 					["sourceQuest"] = 1639,	-- Bartleby the Drunk
@@ -3474,14 +3453,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = COOKING_AWARD_GROUPS,
-				}),
-				q(58908, {	-- Finding Your Way
-					["qg"] = 163095,	-- Lindie Springstock
-					["sourceQuest"] = 59583,	-- Welcome to Stormwind
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 70.1, 85.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1701, {	-- Fire Hardened Mail
 					["providers"] = {
@@ -3816,25 +3787,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["groups"] = FISHING_AWARD_GROUPS,
 				}),
-				q(58911, {	-- Home Is Where the Hearth Is
-					["qg"] = 163097,	-- Lindle Springstock
-					["sourceQuests"] = {
-						58910,	-- What's Your Specialty? (Druid)
-						59586,	-- What's Your Specialty? (Hunter)
-						59587,	-- What's Your Specialty? (Mage)
-						59588,	-- What's Your Specialty? (Monk)
-						59589,	-- What's Your Specialty? (Paladin)
-						59590,	-- What's Your Specialty? (Priest)
-						59591,	-- What's Your Specialty? (Rogue)
-						59592,	-- What's Your Specialty? (Shaman)
-						59593,	-- What's Your Specialty? (Warlock)
-						59594,	-- What's Your Specialty? (Warrior)
-					},
-					["coord"] = { 79.0, 69.8, STORMWIND_CITY },
-					["customCollect"] = "NPE",	-- New Player Experience
-					["timeline"] = { "added 9.0.1" },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(6183, {	-- Honor the Dead
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["sourceQuest"] = 6182,	-- The First and the Last
@@ -4098,19 +4050,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.2, 57.0, STORMWIND_CITY },
 					["timeline"] = { "added 10.0.2" },
 					["races"] = { DRACTHYR_ALLIANCE },
-				}),
-				q(58909, {	-- License to Ride
-					["qg"] = 163007,	-- Curly
-					["sourceQuest"] = 58908,	-- Finding Your Way (A)
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 77.3, 67.0, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						-- Crieve NOTE: The reward from this quest appears to be race specific, might not be a bad idea to utilize a smart SYMLINK at some point. (logic for switching content based on race is not yet a thing)
-						-- Reins of the Striped Nightsaber (Night Elves)
-						i(2411),	-- Black Stallion (MOUNT!)
-					},
 				}),
 				q(32470, {	-- Light Camera Action
 					["qg"] = 16908,	-- Arielle Snapflash
@@ -5007,14 +4946,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 8.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(59641, {	-- The Nation of Kul Tiras
-					["qg"] = 165395,	-- Anduin Wrynn
-					["sourceQuest"] = 58983,	-- Tides of War
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 85.8, 31.6, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(27072, {	-- The Old Barracks
 					["qg"] = 50049,	-- Jack Bauden <SI:7 Agent>
 					["sourceQuest"] = 28807,	-- Expert Opinion
@@ -5589,14 +5520,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
-				q(59583, {	-- Welcome to Stormwind
-					["qg"] = 154169,	-- Captain Garrick
-					["sourceQuest"] = 55991,	-- An End to Beginnings
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 73.6, 91.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-				}),
+
 				-- #if ANYCLASSIC
 				q(65602, {	-- What Is Love?
 					["qg"] = 6122,	-- Gakin the Darkbinder
@@ -5618,96 +5542,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
-				q(58910, {	-- What's Your Specialty? (Druid)
-					["qg"] = 163097,	-- Lindle Springstock
-					["sourceQuest"] = 58909,	-- License to Ride
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { DRUID },
-				}),
-				q(59586, {	-- What's Your Specialty? (Hunter)
-					["qg"] = 163097,	-- Lindle Springstock
-					["sourceQuest"] = 58909,	-- License to Ride
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { HUNTER },
-				}),
-				q(59587, {	-- What's Your Specialty? (Mage)
-					["qg"] = 163097,	-- Lindle Springstock
-					["sourceQuest"] = 58909,	-- License to Ride
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { MAGE },
-				}),
-				q(59588, {	-- What's Your Specialty? (Monk)
-					["qg"] = 163097,	-- Lindle Springstock
-					["sourceQuest"] = 58909,	-- License to Ride
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { MONK },
-				}),
-				q(59589, {	-- What's Your Specialty? (Paladin)
-					["qg"] = 163097,	-- Lindle Springstock
-					["sourceQuest"] = 58909,	-- License to Ride
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PALADIN },
-				}),
-				q(59590, {	-- What's Your Specialty? (Priest)
-					["qg"] = 163097,	-- Lindle Springstock
-					["sourceQuest"] = 58909,	-- License to Ride
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PRIEST },
-				}),
-				q(59591, {	-- What's Your Specialty? (Rogue)
-					["qg"] = 163097,	-- Lindle Springstock
-					["sourceQuest"] = 58909,	-- License to Ride
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { ROGUE },
-				}),
-				q(59592, {	-- What's Your Specialty? (Shaman)
-					["qg"] = 163097,	-- Lindle Springstock
-					["sourceQuest"] = 58909,	-- License to Ride
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { SHAMAN },
-				}),
-				q(59593, {	-- What's Your Specialty? (Warlock)
-					["qg"] = 163097,	-- Lindle Springstock
-					["sourceQuest"] = 58909,	-- License to Ride
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARLOCK },
-				}),
-				q(59594, {	-- What's Your Specialty? (Warrior)
-					["qg"] = 163097,	-- Lindle Springstock
-					["sourceQuest"] = 58909,	-- License to Ride
-					["customCollect"] = "NPE",	-- New Player Experience
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARRIOR },
-				}),
+
 				q(58502, {	-- Where the Heart Is
 					["qg"] = 154532,	-- Magni Bronzebeard <The Speaker>
 					["sourceQuest"] = 58498,	-- Return of the Warrior King

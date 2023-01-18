@@ -141,16 +141,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197121),	-- Highland Drake: Tan Horns (DM!)
 				},
 			}),
-			-- n(193251, {	-- Gruffy
-			-- Timed Based Rare
-			n(193269, {	-- Grumbletrunk
-				["coord"] = { 19.3, 43.1, THE_AZURE_SPAN },
-				["questID"] = 74002,
-				["isDaily"] = true,
-				["g"] = {
-					i(200206),	-- Behemoth Slayer Greatbow
-				},
-			}),
+			-- n(193251),	-- Gruffy // under DF/Timed Based Rare
+			-- n(193269),	-- Grumbletrunk // under DF/Timed Based Rare
 			n(197356, {	-- High Shaman Rotknuckle
 				["coord"] = { 16.2, 33.6, THE_AZURE_SPAN },
 				["questID"] = 74004,
@@ -158,7 +150,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 					i(197150),	-- Highland Drake: Spiked Club Tail (DM!)
 					i(200178),	-- Infested Ichor (TOY!)
-					i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
 				},
 			}),
 			n(190244, {	-- Mahg the Trampler
@@ -212,13 +203,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200266),	-- Gnollish Chewtoy Launcher
 				},
 			}),
-			n(193149, {	-- Skag the Thrower
-				["coord"] = { 26.7, 49.0, THE_AZURE_SPAN },
-				["questID"] = 74030,
-				["g"] = {
-					i(200279),	-- Competitive Throwing Gauntlets
-				},
-			}),
+			-- n(193149),	-- Skag the Thrower // under DF/Timed Based Rare
 			n(197344, {	-- Snarglebone
 				["coord"] = { 11.1, 32.2, THE_AZURE_SPAN },
 				["questID"] = 74032,
