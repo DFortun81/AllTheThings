@@ -3562,6 +3562,9 @@ for key,value in pairs({
 	[382193] = "Cassa degli Elementi",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Cassa di Pescilume Freschi",	-- Case of Fresh Gleamfish
+	[383733] = "Terra Smossa",	-- Disturbed Dirt
+	[383734] = "Terra Smossa",	-- Disturbed Dirt
+	[383735] = "Terra Smossa",	-- Disturbed Dirt
 	[384318] = "Segnalibro Incospicuo",	-- Inconspicuous Bookmark
 	[384370] = "Appunti Deliberatamente Negligenti",	-- Deliberately Delinquent Notes
 	[384405] = "Pesce Semibollito",	-- Half-Boiled Fish

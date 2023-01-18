@@ -3570,6 +3570,9 @@ for key,value in pairs({
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caixa de Peixe-brilho Fresco",	-- Case of Fresh Gleamfish
+	[383733] = "Poeira Revolvida",	-- Disturbed Dirt
+	[383734] = "Poeira Revolvida",	-- Disturbed Dirt
+	[383735] = "Poeira Revolvida",	-- Disturbed Dirt
 	[384318] = "Marcador de Páginas Inconspícuo",	-- Inconspicuous Bookmark
 	--TODO: [384370] = "Deliberately Delinquent Notes",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish

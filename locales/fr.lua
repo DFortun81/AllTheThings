@@ -3569,6 +3569,9 @@ for key,value in pairs({
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caisse de loupiotes fraîches",	-- Case of Fresh Gleamfish
+	[383733] = "Terre retournée",	-- Disturbed Dirt
+	[383734] = "Terre retournée",	-- Disturbed Dirt
+	[383735] = "Terre retournée",	-- Disturbed Dirt
 	[384318] = "Marque-page discret",	-- Inconspicuous Bookmark
 	[384370] = "Notes délibérément en souffrance",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish

@@ -3561,6 +3561,9 @@ for key,value in pairs({
 	[382193] = "Сундук стихий",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
+	[383733] = "Потревоженная почва",	-- Disturbed Dirt
+	[383734] = "Потревоженная почва",	-- Disturbed Dirt
+	[383735] = "Потревоженная почва",	-- Disturbed Dirt
 	[384318] = "Непримечательная закладка",	-- Inconspicuous Bookmark
 	[384370] = "Нарочито непристойные записи",	-- Deliberately Delinquent Notes
 	[384405] = "Наполовину сваренная рыба",	-- Half-Boiled Fish

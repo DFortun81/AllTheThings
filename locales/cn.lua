@@ -3584,6 +3584,9 @@ for key, value in pairs({
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
+	[383733] = "翻动过的泥土",	-- Disturbed Dirt
+	[383734] = "翻动过的泥土",	-- Disturbed Dirt
+	--TODO: [383735] = "Disturbed Dirt",	-- Disturbed Dirt
 	[384318] = "不起眼的书签",	-- Inconspicuous Bookmark
 	[384370] = "故意拖欠票据",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
