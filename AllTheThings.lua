@@ -5131,8 +5131,7 @@ end
 
 -- Auto-Expansion logic
 do
-local included = {};
-local knownSkills, isInWindow;
+local knownSkills;
 -- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
 local SkipPurchases = {
 	[-1] = 0,	-- Whether to skip certain cost items
@@ -5151,7 +5150,7 @@ app.SetSkipPurchases = function(level)
 	end
 end
 -- Determines searches required for costs using this group
-local function DeterminePurchaseGroups(group, depth)
+local function DeterminePurchaseGroups(group, FillData)
 	-- do not fill purchases on certain items, can skip the skip though based on a level
 	local itemID = group.itemID;
 	local reqSkipLevel = itemID and SkipPurchases[itemID];
@@ -5165,21 +5164,21 @@ local function DeterminePurchaseGroups(group, depth)
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-collectibles",collectibles and #collectibles);
 		local groups = {};
 		local groupHash = group.hash;
-		local clone, hash, includeDepth;
+		local depth, included = FillData.Depth, FillData.Included;
+		local clone, hash;
 		for _,o in ipairs(collectibles) do
 			hash = o.hash;
 			-- don't add copies of this group if it matches the 'cost' group, or has already been added at a lower depth
 			-- technically this allows something to become nested at a high depth, and then multiple times at lower depths...
 			-- but hopefully that's ok and is a bit better for visibility than to exclude things
-			if hash ~= groupHash then
-				includeDepth = included[hash];
-				if not includeDepth or includeDepth >= depth then
-					included[hash] = depth;
-					clone = CreateObject(o);
-					-- this logic shows the previous 'currency' icon next to Things which are nested as a cost... maybe too cluttered
-					-- clone.indicatorIcon = "Interface_Vendor";
-					tinsert(groups, clone);
-				end
+			if hash ~= groupHash and not included[hash] then
+				-- once something is filled, don't fill under it regardless of depth
+				included[hash] = depth;
+				-- app.PrintDebug("Purchase @",depth,groupHash,"=>",hash)
+				clone = CreateObject(o);
+				-- this logic shows the previous 'currency' icon next to Things which are nested as a cost... maybe too cluttered
+				-- clone.indicatorIcon = "Interface_Vendor";
+				tinsert(groups, clone);
 			end
 		end
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
@@ -5191,7 +5190,7 @@ local function DeterminePurchaseGroups(group, depth)
 		return groups;
 	end
 end
-local function DetermineCraftedGroups(group)
+local function DetermineCraftedGroups(group, FillData)
 	local itemID = group.itemID;
 	if not itemID then return; end
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
@@ -5201,6 +5200,7 @@ local function DetermineCraftedGroups(group)
 	local filterSkill = not app.MODE_DEBUG and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
 
 	local craftableItemIDs = {};
+	local included = FillData.Included;
 	-- item is BoP
 	if filterSkill then
 		local craftedItemID, searchRecipes, recipe, skillID;
@@ -5324,15 +5324,15 @@ local function DetermineNPCDrops(group)
 	end
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
-local function FillGroupsRecursive(group, depth)
+local function FillGroupsRecursive(group, FillData)
 	-- app.PrintDebug("FillGroups",group.hash,depth)
 	-- increment depth if things are being nested
-	depth = (depth or 0) + 1;
+	FillData.Depth = FillData.Depth + 1;
 	local groups;
 	-- Determine Cost/Crafted/Symlink groups
 	groups = app.ArrayAppend(groups,
-		DeterminePurchaseGroups(group, depth),
-		DetermineCraftedGroups(group),
+		DeterminePurchaseGroups(group, FillData),
+		DetermineCraftedGroups(group, FillData),
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group));
 
@@ -5350,14 +5350,14 @@ local function FillGroupsRecursive(group, depth)
 			-- never nest the same Thing under itself
 			-- (prospecting recipes list the input as the output)
 			-- if o.hash ~= hash then
-				FillGroupsRecursive(o, depth);
+				FillGroupsRecursive(o, FillData);
 			-- end
 		end
 	end
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FunctionRunner to recursively follow the next layer of groups
 -- over multiple frames to reduce stutter
-local function FillGroupsRecursiveAsync(group, depth)
+local function FillGroupsRecursiveAsync(group, FillData)
 	-- app.PrintDebug("FillGroupsAsync",group.hash,depth)
 	-- do not fill 'saved' groups in ATT windows
 	-- or groups directly under saved groups unless in Acct or Debug mode
@@ -5370,12 +5370,12 @@ local function FillGroupsRecursiveAsync(group, depth)
 	end
 
 	-- increment depth if things are being nested
-	depth = (depth or 0) + 1;
+	FillData.Depth = FillData.Depth + 1;
 	local groups;
 	-- Determine Cost/Crafted/Symlink groups
 	groups = app.ArrayAppend(groups,
-		DeterminePurchaseGroups(group, depth),
-		DetermineCraftedGroups(group),
+		DeterminePurchaseGroups(group, FillData),
+		DetermineCraftedGroups(group, FillData),
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group));
 
@@ -5397,19 +5397,23 @@ local function FillGroupsRecursiveAsync(group, depth)
 			-- never nest the same Thing under itself
 			-- (prospecting recipes list the input as the output)
 			-- if o.hash ~= hash then
-			app.FunctionRunner.Run(FillGroupsRecursiveAsync, o, depth);
+			app.FunctionRunner.Run(FillGroupsRecursiveAsync, o, FillData);
 			-- end
 		end
 	end
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
-	-- Clear search history -- never re-list the starting Thing
-	included = { [group.hash or ""] = 0, [group.itemID or 0] = 0 };
+	-- Check if this group is inside a Window or not
+	local isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
+	-- Setup the FillData for this fill operation
+	local FillData = {
+		Included = { [group.hash or ""] = 0, [group.itemID or 0] = 0 },
+		Depth = 0,
+		IsInWindow = isInWindow,
+	};
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
-	-- Check if this group is inside a Window or not
-	isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
 
 	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
 
@@ -5417,9 +5421,9 @@ app.FillGroups = function(group)
 	if isInWindow then
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
 		app.FunctionRunner.SetPerFrame(25);
-		app.FunctionRunner.Run(FillGroupsRecursiveAsync, group);
+		app.FunctionRunner.Run(FillGroupsRecursiveAsync, group, FillData);
 	else
-		FillGroupsRecursive(group);
+		FillGroupsRecursive(group, FillData);
 	end
 
 	-- if app.DEBUG_PRINT then app.PrintTable(included) end
@@ -11523,9 +11527,11 @@ local function default_link(t)
 		modID = t.modID or modID;
 		if not bonusID or bonusID < 1 then
 			bonusID = nil;
+			t.bonusID = nil;
 		end
 		if not modID or modID < 1 then
 			modID = nil;
+			t.modID = nil;
 		end
 		-- app.PrintDebug("default_link",itemLink,modID,bonusID)
 		if bonusID and modID then
