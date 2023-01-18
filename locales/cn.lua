@@ -872,7 +872,7 @@ for key,value in pairs({
 		[-1131] = "伊斯卡拉渔具",										-- Iskaara Fishing
 		[-1140] = "瓦德拉肯联军",											-- Valdrakken Accord
 		[-1142] = "天际挑战",											-- Aerial Challenges
-		[-1143] = "每2小时稀有",											-- Every 2 Hours Rare
+		--TODO: [-1143] = "Every 30 min Rare",						-- Every 30 min Rare
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
