@@ -2425,9 +2425,9 @@ local function GetItemIDAndModID(modItemID)
 	if modItemID and tonumber(modItemID) then
 		-- print("GetItemIDAndModID",modItemID)
 		local itemID = math.floor(modItemID);
-		modItemID = (modItemID - itemID) * 100;
+		modItemID = (modItemID - itemID) * 100.0 + 0.0000005;
 		local modID = math.floor(modItemID);
-		modItemID = (modItemID - modID) * 10000;
+		modItemID = (modItemID - modID) * 10000.0 + 0.0000005;
 		local bonusID = math.floor(modItemID);
 		-- print(itemID,modID,bonusID)
 		return itemID, modID, bonusID;
