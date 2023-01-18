@@ -2,10 +2,10 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
+root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
 	n(-363, {	-- The Argent Tournament
 		["maps"] = { ICECROWN },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(3676, { -- A Silver Confidant (Alliance)
 					-- #if ANYCLASSIC
@@ -15,13 +15,14 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				}),
+				ach(2756, {	-- Argent Aspiration
+					["sourceQuests"] = {
+						13667,	-- The Argent Tournament (A)
+						13668,	-- The Argent Tournament (H)
+					},
+				}),
 				ach(2758, {	-- Argent Valor
-					ach(2756, {	-- Argent Aspiration
-						["sourceQuests"] = {
-							13667,	-- The Argent Tournament (A)
-							13668,	-- The Argent Tournament (H)
-						},
-					}),
+					
 				}),
 				a(ach(2817, {	-- Exalted Argent Champion of the Alliance
 					title(123),	-- Crusader
@@ -200,7 +201,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						{ "i", 50380, 1 },	-- Battered Hilt (H)
 					},
 					["lvl"] = 67,	-- Requirement for the Battered Hilt itself.
-					["g"] = {
+					["groups"] = {
 						a(q(14443, {	-- The Battered Hilt [Alliance]
 							["provider"] = { "i", 50379 },	-- Battered Hilt
 						})),
@@ -394,7 +395,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 								24800,	-- A Victory For The Sunreavers [Blood Elves]
 								24798,	-- A Victory For The Sunreavers [Blood Elves - Maces]
 							},
-							["g"] = {
+							["groups"] = {
 								i(50050),	-- Cudgel of Furious Justice
 								i(50051),	-- Hammer of Purified Flame
 								i(50052),	-- Lightborn Spire
@@ -408,6 +409,11 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				}),
 				ach(2772),	-- Tilted!
 			}),
+			-- #if ANYCLASSIC
+			n(EXPLORATION, {
+				exploration(4658),	-- Argent Tournament Grounds
+			}),
+			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(340, {	-- Argent Tournament Grounds, Icecrown
 					["cr"] = 33849,	-- Helidan Lightwing <Flight Master>
@@ -415,16 +421,12 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				}),
 			}),
 			n(QUESTS, {
-				i(45724, {	-- Champion's Purse
-					["description"] = "You get 1 Champion's Seal from these bags.",
-					["sym"] = {{"select","currencyID",241}},	-- Champion's Seal
-				}),
 				q(13741, {	-- A Blade Fit For A Champion (A)
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33312 },	-- Lana Stouthammer
-					["g"] = {
+					["groups"] = {
 						n(33224, {	-- Maiden of Ashwood Lake
 							["description"] = "KISS THIS FROG.",
 						}),
@@ -435,7 +437,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
-					["g"] = {
+					["groups"] = {
 						n(33224, {	-- Maiden of Ashwood Lake
 							["description"] = "KISS THIS FROG.",
 						}),
@@ -446,7 +448,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33335 },	-- Ambrose Boltspark
-					["g"] = {
+					["groups"] = {
 						n(33224, {	-- Maiden of Ashwood Lake
 							["description"] = "KISS THIS FROG.",
 						}),
@@ -457,7 +459,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
-					["g"] = {
+					["groups"] = {
 						n(33224, {	-- Maiden of Ashwood Lake
 							["description"] = "KISS THIS FROG.",
 						}),
@@ -468,7 +470,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33593 },	-- Colosos
-					["g"] = {
+					["groups"] = {
 						n(33224, {	-- Maiden of Ashwood Lake
 							["description"] = "KISS THIS FROG.",
 						}),
@@ -479,7 +481,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33592 },	-- Jaelyne Evensong
-					["g"] = {
+					["groups"] = {
 						n(33224, {	-- Maiden of Ashwood Lake
 							["description"] = "KISS THIS FROG.",
 						}),
@@ -490,7 +492,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33403 },	-- Runok Wildmane
-					["g"] = {
+					["groups"] = {
 						n(33224, {	-- Maiden of Ashwood Lake
 							["description"] = "KISS THIS FROG.",
 						}),
@@ -501,7 +503,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33373 },	-- Deathstalker Visceri
-					["g"] = {
+					["groups"] = {
 						n(33224, {	-- Maiden of Ashwood Lake
 							["description"] = "KISS THIS FROG.",
 						}),
@@ -512,7 +514,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33372 },	-- Zul'tore
-					["g"] = {
+					["groups"] = {
 						n(33224, {	-- Maiden of Ashwood Lake
 							["description"] = "KISS THIS FROG.",
 						}),
@@ -523,7 +525,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
-					["g"] = {
+					["groups"] = {
 						n(33224, {	-- Maiden of Ashwood Lake
 							["description"] = "KISS THIS FROG.",
 						}),
@@ -565,7 +567,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
-					["g"] = {
+					["groups"] = {
 						i(44998),	-- Argent Squire
 					},
 				}),
@@ -593,7 +595,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
-					["g"] = {
+					["groups"] = {
 						i(45022),	-- Argent Gruntling
 					},
 				}),
@@ -807,7 +809,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						33743,	-- Ironforge Champion
 						33747,	-- Stormwind Champion
 					},
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 						i(45500),	-- Mark of the Champion
@@ -826,7 +828,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						33748,	-- Thunder Bluff Champion
 						33749,	-- Undercity Champion
 					},
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 						i(45500),	-- Mark of the Champion
@@ -845,7 +847,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						33743,	-- Ironforge Champion
 						33747,	-- Stormwind Champion
 					},
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 						i(45500),	-- Mark of the Champion
@@ -864,7 +866,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						33748,	-- Thunder Bluff Champion
 						33749,	-- Undercity Champion
 					},
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 						i(45500),	-- Mark of the Champion
@@ -936,7 +938,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["isDaily"] = true,
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -947,7 +949,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["isDaily"] = true,
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -958,7 +960,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["isDaily"] = true,
 					["coord"] = { 73.8, 20.0, ICECROWN },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -969,7 +971,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["isDaily"] = true,
 					["coord"] = { 73.8, 20.0, ICECROWN },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -1124,7 +1126,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["isDaily"] = true,
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["provider"] = { "n", 33763 },	-- Cellian Daybreak <Master of Arms>
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -1135,7 +1137,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["isDaily"] = true,
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["provider"] = { "n", 33763 },	-- Cellian Daybreak <Master of Arms>
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -1146,7 +1148,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["isDaily"] = true,
 					["coord"] = { 73.8, 19.6, ICECROWN },
 					["provider"] = { "n", 33769 },	-- Zor'be the Bloodletter <Master of Arms>
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -1157,7 +1159,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["isDaily"] = true,
 					["coord"] = { 73.8, 19.6, ICECROWN },
 					["provider"] = { "n", 33769 },	-- Zor'be the Bloodletter <Master of Arms>
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -1201,7 +1203,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["coord"] = { 69.4, 23.0, ICECROWN },
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					["sourceQuest"] = 13663,	-- The Black Knight's Orders
-					["g"] = {
+					["groups"] = {
 						ach(2773),	-- It's Just a Flesh Wound
 					},
 				}),
@@ -1508,7 +1510,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -1519,7 +1521,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = HORDE_ONLY,
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -1530,7 +1532,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 73.8, 20.0, ICECROWN },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -1541,7 +1543,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = HORDE_ONLY,
 					["coord"] = { 73.8, 20.0, ICECROWN },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
-					["g"] = {
+					["groups"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -1655,13 +1657,17 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				}),
 			}),
 			n(REWARDS, {
-				["description"] = "These are rewarded by completing the daily quests and heroic dungeon.",
+				["description"] = "These are rewarded by completing the daily quests and the heroic dungeon.",
 				["groups"] = {
+					i(45724, {	-- Champion's Purse
+						["description"] = "You get 1 Champion's Seal from these bags.",
+						["sym"] = {{"select","currencyID",241}},	-- Champion's Seal
+					}),
 					currency(241),	-- Champion's Seal
 				},
 			}),
 			n(VENDORS, {
-				n(COMMON_VENDOR_ITEMS, {
+				applyclassicphase(WRATH_PHASE_THREE, n(COMMON_VENDOR_ITEMS, {
 					i(45725, {	-- Argent Hippogryph (MOUNT!)
 						["cost"] = { { "c", 241, 150 }, },	-- 150x Champion's Seal
 						["crs"] = {
@@ -1678,6 +1684,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(122232, {	-- Music Roll: The Argent Tournament
+						["timeline"] = { "added 6.1.0.19480" },
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
@@ -1694,8 +1701,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					}),
 				-- Alliance Only Items
 					i(45130, {	-- Blunderbuss of Khaz Modan
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1705,8 +1712,9 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(164932, {	-- Grapeshotter of Khaz Modan
-						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1714,15 +1722,16 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
-						["g"] = {
+						["groups"] = {
 							i(164933, {	-- Sen'jin Beakblade Longrifle
-								["description"] = "This Horde item will be automatically learned after buying the Alliance version."
+								["description"] = "This Horde item will be automatically learned after buying the Alliance version.",
+								["timeline"] = { "added 8.1.0.28724" },
 							}),
 						},
 					}),
 					i(45074, {	-- Claymore of the Prophet
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1732,8 +1741,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45078, {	-- Dagger of Lunar Purity
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1743,8 +1752,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45077, {	-- Dagger of the Rising Moon
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1754,8 +1763,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45129, {	-- Gnomeragan Bonechopper
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1765,8 +1774,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45075, {	-- Ironforge Smasher
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1776,8 +1785,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45128, {	-- Silvery Sylvan Stave
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1787,8 +1796,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45076, {	-- Teldrassil Protector
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1798,8 +1807,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45155, {	-- Choker of Spiral Focus
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1809,8 +1818,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45154, {	-- Necklace of Valiant Blood
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1820,8 +1829,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45152, {	-- Pendant of Azure Dreams
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1831,8 +1840,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45153, {	-- Susurrating Shell Necklace
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1842,8 +1851,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45182, {	-- Gauntlets of Shattered Pride
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1853,8 +1862,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45184, {	-- Cinch of Bonded Servitude
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1864,8 +1873,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45160, {	-- Girdle of Valorous Defeat
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1875,8 +1884,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45156, {	-- Sash of Shattering Hearts
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1886,8 +1895,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45181, {	-- Wrap of the Everliving Tree
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1897,8 +1906,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45163, {	-- Stanchions of Unseatable Furor
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1908,8 +1917,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45159, {	-- Treads of Nimble Evasion
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1919,8 +1928,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45183, {	-- Treads of the Glorious Spirit
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1929,8 +1938,9 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
-					i(45131, {	-- Jouster's Fury
+					i(45131, {	-- Jouster's Fury [A]
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
@@ -1941,8 +1951,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					}),
 				-- Horde Only Items
 					i(45204, {	-- Axe of the Sen'jin Protector
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -1952,8 +1962,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45208, {	-- Blade of the Keening Banshee
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -1963,8 +1973,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45205, {	-- Greatsword of the Sin'dorei
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -1974,8 +1984,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45203, {	-- Grimhorn Crusher
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -1985,8 +1995,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45214, {	-- Scalpel of the Royal Apothecary
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -1996,8 +2006,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45210, {	-- Sen'jin Beakblade Longrifle
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2007,8 +2017,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45222, {	-- Spinal Destroyer
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2018,8 +2028,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45212, {	-- Staff of Feral Furies
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2029,8 +2039,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45206, {	-- Choker of Feral Fury
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2040,8 +2050,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45207, {	-- Necklace of Stolen Skulls
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2051,8 +2061,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45213, {	-- Pendant of Emerald Crusader
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2062,8 +2072,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45223, {	-- Razor's Edge Pendant
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2073,8 +2083,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45216, {	-- Gauntlets of Mending Touch
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2084,8 +2094,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45217, {	-- Clinch of Savage Fury
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2095,8 +2105,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45215, {	-- Links of Unquenched Savagery
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2106,8 +2116,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45209, {	-- Sash of Trumpeted Pride
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2117,8 +2127,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45211, {	-- Waistguard of Equine Fury
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2128,8 +2138,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45218, {	-- Blood-Caked Stompers
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2139,8 +2149,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45220, {	-- Treads of the Earnest Squire
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2150,8 +2160,8 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						},
 					}),
 					i(45221, {	-- Treads of Whispering Dreams
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2160,9 +2170,9 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
-					i(45219, {	-- Jouster's Fury
-						["races"] = HORDE_ONLY,
+					i(45219, {	-- Jouster's Fury [H]
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 							33555,	-- Eliza Killian <Undercity Quartermaster>
@@ -2171,17 +2181,17 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
-				}),
+				})),
 				n(33602, {	-- Anuur <Jewelcrafting Supplies>
 					["coord"] = { 71.4, 20.8, ICECROWN },
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 28721}, -- Tiffany Cartier <Jewelcrafting Supplies>
 					},
 				}),
-				n(35573, {	-- Arcanist Asarina <Legacy Justice Quartermaster>
+				applyclassicphase(WRATH_PHASE_THREE, n(35573, {	-- Arcanist Asarina <Legacy Justice Quartermaster>
 					["coord"] = { 75.2, 21.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 					-- Normal items here
 						i(47732),	-- Band of the Invoker
 						i(47729),	-- Bloodshed Band
@@ -2221,10 +2231,10 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},
-				}),
+				})),
 				n(33853, {	-- Broxel Goldgrasp <Souvenirs>
 					["coord"] = { 73.0, 23.0, ICECROWN },
-					["g"] = {
+					["groups"] = {
 						i(45670),	-- Darnassus Doublet
 						i(45668),	-- Exodar Doublet
 						i(45671),	-- Gnomeregan Doublet
@@ -2240,8 +2250,12 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				n(33307, {	-- Corporal Arthur Flew <Stormwind Quartermaster>
 					["coord"] = { 76.4, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(45574),	-- Stormwind Tabard
+					["groups"] = {
+						i(45574, {	-- Stormwind Tabard
+							-- #if BEFORE 4.0.1
+							["cost"] = { { "c", 241, 50 }, },	-- 50 Champion's Seal
+							-- #endif
+						}),
 						i(45125, {	-- Stormwind Steed (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100 Champion's Seal
 						}),
@@ -2263,7 +2277,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["coord"] = { 69.4, 23.3, ICECROWN },
 					["description"] = "Sells gear from the Shadowlands Pre-Launch event but you must have leftover tokens from the event to buy them.",
 					["timeline"] = { "added 9.0.1.36228" },
-					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["cost"] = { { "c", 1754, 15 } }}, {
+					["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["cost"] = { { "c", 1754, 15 } }}, {
 					-- Alliance items
 						i(183524, {	-- Argent Conscript's Drape
 							["classes"] = { MAGE, PRIEST, WARLOCK },
@@ -2363,7 +2377,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				}),
 				n(34885, {	-- Dame Evniki Kapsalis <Crusader's Quartermaster>
 					["coord"] = { 69.4, 23.1, ICECROWN },
-					["g"] = {
+					["groups"] = {
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
 								{ "g", 5000000 },	-- 500g
@@ -2400,7 +2414,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						}),
 						i(47541,  {	-- Argent Pony Bridle
 							["cost"] = { { "c", 241, 150 }, },	-- 150x Champion's Seal
-							["g"] = {
+							["groups"] = {
 								ach(3736),	-- Pony Up!
 							},
 						}),
@@ -2586,7 +2600,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				n(33310, {	-- Derrick Brindlebeard <Ironforge Quartermaster>
 					["coord"] = { 76.4, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(44970, {	-- Dun Morogh Cub (PET!)
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
@@ -2599,7 +2613,11 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45586, {	-- Ironforge Ram (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
-						i(45577),	-- Ironforge Tabard
+						i(45577, {	-- Ironforge Tabard
+							-- #if BEFORE 4.0.1
+							["cost"] = { { "c", 241, 50 }, },	-- 50 Champion's Seal
+							-- #endif
+						}),
 						i(46748, {	-- Swift Violet Ram (MOUNT!)
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
@@ -2608,7 +2626,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				n(33556, {	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
 					["coord"] = { 76.2, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(46750, {	-- Great Golden Kodo (MOUNT!)
 							["cost"] = { { "c", 241, 5 } },	-- 5x Champion's Seal
 						}),
@@ -2624,13 +2642,17 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45592, {	-- Thunder Bluff Kodo (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
-						i(45584),	-- Thunder Bluff Tabard
+						i(45584, {	-- Thunder Bluff Tabard
+							-- #if BEFORE 4.0.1
+							["cost"] = { { "c", 241, 50 }, },	-- 50 Champion's Seal
+							-- #endif
+						}),
 					},
 				}),
 				n(33555, {	-- Eliza Killian <Undercity Quartermaster>
 					["coord"] = { 76.4, 24.0, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(45597, {	-- Forsaken Warhorse (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
@@ -2643,7 +2665,11 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45723, {	-- Undercity Commendation Badge
 							["cost"] = { { "i", 46114, 1 }, },	-- 1x Champion's Writ
 						}),
-						i(45583),	-- Undercity Tabard
+						i(45583, {	-- Undercity Tabard
+							-- #if BEFORE 4.0.1
+							["cost"] = { { "c", 241, 50 }, },	-- 50 Champion's Seal
+							-- #endif
+						}),
 						i(46746, {	-- White Skeletal Warhorse (MOUNT!)
 							["cost"] = { { "c", 241, 5 } },	-- 5x Champion's Seal
 						}),
@@ -2651,7 +2677,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				}),
 				n(33594, {	-- Fizzix Blastbolt <Engineering Supplies>
 					["coord"] = { 72.2, 20.8, ICECROWN },
-					["g"] = {
+					["groups"] = {
 						i(23817, {	-- Schematic: Titanium Toolbox
 							["isLimited"] = true,
 						}),
@@ -2660,7 +2686,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				n(33553, {	-- Freka Bloodaxe <Orgrimmar Quartermaster>
 					["coord"] = { 76.4, 24.2, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(44973, {	-- Durotar Scorpion (PET!)
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
@@ -2670,7 +2696,11 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45719, {	-- Orgrimmar Commendation Badge
 							["cost"] = { { "i", 46114, 1 }, },	-- 1x Champion's Writ
 						}),
-						i(45581),	-- Orgrimmar Tabard
+						i(45581, {	-- Orgrimmar Tabard
+							-- #if BEFORE 4.0.1
+							["cost"] = { { "c", 241, 50 }, },	-- 50 Champion's Seal
+							-- #endif
+						}),
 						i(45595, {	-- Orgrimmar Wolf (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
@@ -2682,7 +2712,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				n(34881, {	-- Hiren Loresong <Silver Covenant Quartermaster>
 					["coord"] = { 76.2, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(46815, {	-- Quel'dorei Steed (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
@@ -2700,7 +2730,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				n(33657, {	-- Irisee <Exodar Quartermaster>
 					["coord"] = { 76.2, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(44984, {	-- Ammen Vale Lashling (PET!)
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
@@ -2713,14 +2743,18 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45590, {	-- Exodar Elekk (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
-						i(45580),	-- Exodar Tabard
+						i(45580, {	-- Exodar Tabard
+							-- #if BEFORE 4.0.1
+							["cost"] = { { "c", 241, 50 }, },	-- 50 Champion's Seal
+							-- #endif
+						}),
 						i(46745)	-- Great Red Elekk (MOUNT!)
 					},
 				}),
 				n(35574, {	-- Magistrix Iruvia <Legacy Justice Quartermaster>
 					["coord"] = { 75.2, 22.0, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 					-- Normal Items here
 						i(47732),	-- Band of the Invoker
 						i(47729),	-- Bloodshed Band
@@ -2762,7 +2796,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				}),
 				n(33595, {	-- Mera Mistrunner <Cooking Supplies>
 					["coord"] = { 72.4, 20.8, ICECROWN },
-					["g"] = {
+					["groups"] = {
 						i(134020, {	-- Chef's Hat (TOY!)
 							["timeline"] = { "added 7.0.3.22248" },
 							["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
@@ -2847,7 +2881,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				n(33650, {	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 					["coord"] = { 76.4, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(45019, {	-- Gnomeregan Banner (TOY!)
 							["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
 						}),
@@ -2857,7 +2891,11 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45589, {	-- Gnomeregan Mechanostrider (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
-						i(45578),	-- Gnomeragan Tabard
+						i(45578, {	-- Gnomeragan Tabard
+							-- #if BEFORE 4.0.1
+							["cost"] = { { "c", 241, 50 }, },	-- 50 Champion's Seal
+							-- #endif
+						}),
 						i(45002, {	-- Mechanopeep (PET!)
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
@@ -2869,7 +2907,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				n(33653, {	-- Rook Hawkfist <Darnassus Quartermaster>
 					["coord"] = { 76.2, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(45591, {	-- Darnassian Nightsaber (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
@@ -2879,7 +2917,11 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45714, {	-- Darnassus Commendation Badge
 							["cost"] = { { "i", 46114, 1 }, },	-- 1x Champion's Writ
 						}),
-						i(45579),	-- Darnassus Tabard
+						i(45579, {	-- Darnassus Tabard
+							-- #if BEFORE 4.0.1
+							["cost"] = { { "c", 241, 50 }, },	-- 50 Champion's Seal
+							-- #endif
+						}),
 						i(46744, {	-- Swift Moonsaber (MOUNT!)
 							["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 						}),
@@ -2891,11 +2933,15 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				n(33554, {	-- Samamba <Sen'jin Quartermaster>
 					["coord"] = { 76.0, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(45593, {	-- Darkspear Raptor (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 						}),
-						i(45582),	-- Darkspear Tabard
+						i(45582, {	-- Darkspear Tabard
+							-- #if BEFORE 4.0.1
+							["cost"] = { { "c", 241, 50 }, },	-- 50 Champion's Seal
+							-- #endif
+						}),
 						i(45015, {	-- Sen'jin Banner (TOY!)
 							["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
 						}),
@@ -2913,14 +2959,18 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				n(33557, {	-- Trellis Morningsun <Silvermoon Quartermaster>
 					["coord"] = { 76.2, 23.8, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(44982, {	-- Enchanted Broom (PET!)
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
 						i(45017, {	-- Silvermoon City Banner (TOY!)
 							["cost"] = { { "c", 241, 15 }, },	-- 15x Champion's Seal
 						}),
-						i(45585),	-- Silvermoon City Tabard
+						i(45585, {	-- Silvermoon City Tabard
+							-- #if BEFORE 4.0.1
+							["cost"] = { { "c", 241, 50 }, },	-- 50 Champion's Seal
+							-- #endif
+						}),
 						i(45721, {	-- Silvermoon Commendation Badge
 							["cost"] = { { "i", 46114, 1 }, },	-- 1x Champion's Writ
 						}),
@@ -2935,7 +2985,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				n(34772, {	-- Vasarin Redmorn <Sunreavers Quartermaster>
 					["coord"] = { 76.2, 24.0, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(46821, {	-- Shimmering Wyrmling
 							["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 						}),
