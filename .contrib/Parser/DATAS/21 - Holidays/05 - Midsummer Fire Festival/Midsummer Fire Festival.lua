@@ -105,6 +105,31 @@ local FLAME_STEAL_REWARDS = {
 };
 
 local MERCHANT_GROUPS = {
+	i(122338, {	-- Ancient Heirloom Armor Casing
+		["timeline"] = { "added 6.1.0.19445" },
+		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["sym"] = { { "fill" } },	-- simply fill this item
+	}),
+	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
+		["timeline"] = { "added 8.1.5.29701" },
+		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
+		["sym"] = { { "fill" } },	-- simply fill this item
+	}),
+	i(187997, {	-- Eternal Heirloom Armor Casing
+		["timeline"] = { "added 9.1.5.40871" },
+		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
+		["sym"] = { { "fill" } },	-- simply fill this item
+	}),
+	i(122340, {	-- Timeworn Heirloom Armor Casing
+		["timeline"] = { "added 6.1.0.19445" },
+		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
+		["sym"] = { { "fill" } },	-- simply fill this item
+	}),
+	i(151614, {	-- Weathered Heirloom Armor Casing
+		["timeline"] = { "added 7.2.5.24076" },
+		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
+		["sym"] = { { "fill" } },	-- simply fill this item
+	}),
 	i(116439, {	-- Blazing Cindercrawler (Pet)
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { "added 6.0.1.18594" },

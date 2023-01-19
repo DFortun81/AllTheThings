@@ -1095,6 +1095,31 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 			n(15909, {	-- Fariel Starsong <Coin of Ancestry Collector>
 				["coord"] = { 53.8, 35.3, MOONGLADE },
 				["groups"] = {
+					i(122338, {	-- Ancient Heirloom Armor Casing
+						["timeline"] = { "added 6.1.0.19445" },
+						["cost"] = { { "i", 21100, 40 } },	-- 40x Coin of Ancestry
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(167731, {	-- Battle-Hardened Heirloom Armor Casing
+						["timeline"] = { "added 8.1.5.29701" },
+						["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(187997, {	-- Eternal Heirloom Armor Casing
+						["timeline"] = { "added 9.1.5.40871" },
+						["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(122340, {	-- Timeworn Heirloom Armor Casing
+						["timeline"] = { "added 6.1.0.19445" },
+						["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(151614, {	-- Weathered Heirloom Armor Casing
+						["timeline"] = { "added 7.2.5.24076" },
+						["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
 					i(44916, {	-- Pattern: Festival Dress
 						["timeline"] = { "added 3.0.8.9464" },
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry

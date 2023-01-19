@@ -112,46 +112,6 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					i(168017, {	-- Commendation of Vol'jin's Headhunters
 						["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
 					}),
-					i(122338, {	-- Ancient Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 750 }, },		-- 750x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(122339, {	-- Ancient Heirloom Scabbard
-						["cost"] = { { "c", 1166, 900 }, },		-- 900x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(167732, {	-- Battle-Hardened Heirloom Scabbard
-						["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(187997, {	-- Eternal Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(187998, {	-- Eternal Heirloom Scabbard
-						["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(122340, {	-- Timeworn Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(122341, {	-- Timeworn Heirloom Scabbard
-						["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(151614, {	-- Weathered Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(151615, {	-- Weathered Heirloom Scabbard
-						["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
 				},
 			}),
 			n(151955, {	-- Tempra <Timewalking Vendor> [Alliance Side]
@@ -250,46 +210,6 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					}),
 					i(168018, {	-- Commendation of the Hand of the Prophet
 						["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
-					}),
-					i(122338, {	-- Ancient Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 750 }, },		-- 750x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(122339, {	-- Ancient Heirloom Scabbard
-						["cost"] = { { "c", 1166, 900 }, },		-- 900x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(167732, {	-- Battle-Hardened Heirloom Scabbard
-						["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(187997, {	-- Eternal Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(187998, {	-- Eternal Heirloom Scabbard
-						["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(122340, {	-- Timeworn Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(122341, {	-- Timeworn Heirloom Scabbard
-						["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(151614, {	-- Weathered Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(151615, {	-- Weathered Heirloom Scabbard
-						["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 				},
 			}),

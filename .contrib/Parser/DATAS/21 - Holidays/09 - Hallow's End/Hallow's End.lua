@@ -2,6 +2,32 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 local CANDY_AND_TOY_VENDOR_GROUPS = {
+	i(122338, {	-- Ancient Heirloom Armor Casing
+		["timeline"] = { "added 6.1.0.19445" },
+		["cost"] = { { "i", 33226, 250 } },	-- 250x Tricky Treat
+		["sym"] = { { "fill" } },	-- simply fill this item
+	}),
+	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
+		["timeline"] = { "added 8.1.5.29701" },
+		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
+		["sym"] = { { "fill" } },	-- simply fill this item
+	}),
+	-- This wasn't showing on WoWHead, might not be there yet?
+	i(187997, {	-- Eternal Heirloom Armor Casing
+		["timeline"] = { "added 9.1.5.40871" },
+		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
+		["sym"] = { { "fill" } },	-- simply fill this item
+	}),
+	i(122340, {	-- Timeworn Heirloom Armor Casing
+		["timeline"] = { "added 6.1.0.19445" },
+		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
+		["sym"] = { { "select", "itemID", 122340 } },	-- Fake select for whatever is cached for itself
+	}),
+	i(151614, {	-- Weathered Heirloom Armor Casing
+		["timeline"] = { "added 7.2.5.24076" },
+		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
+		["sym"] = { { "fill" } },	-- simply fill this item
+	}),
 	-- #if BEFORE 7.0.1
 	i(116811, {	-- "Lil' Starlet" Costume
 		["timeline"] = { "added 6.0.1.18594" },
@@ -10,11 +36,6 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(116810, {	-- "Mad Alchemist" Costume
 		["timeline"] = { "added 6.0.1.18594" },
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
-	}),
-	i(122338, {	-- Ancient Heirloom Armor Casing
-		["timeline"] = { "added 6.1.0.19445" },
-		["cost"] = { { "i", 33226, 250 } },	-- 250x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
 	i(37585, {	-- Chewy Fel Taffy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -47,11 +68,6 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(37584, {	-- Soothing Spearmint Candy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
-	i(122340, {	-- Timeworn Heirloom Armor Casing
-		["timeline"] = { "added 6.1.0.19445" },
-		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "select", "itemID", 122340 } },	-- Fake select for whatever is cached for itself
-	}),
 	i(37604, {	-- Tooth Pick
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
@@ -60,16 +76,6 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	-- #else
-	i(122338, {	-- Ancient Heirloom Armor Casing
-		["timeline"] = { "added 6.1.0.19445" },
-		["cost"] = { { "i", 33226, 250 } },	-- 250x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
-	}),
-	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-		["timeline"] = { "added 8.1.5.29701" },
-		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
-	}),
 	i(37585, {	-- Chewy Fel Taffy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
@@ -121,18 +127,8 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(37584, {	-- Soothing Spearmint Candy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
-	i(122340, {	-- Timeworn Heirloom Armor Casing
-		["timeline"] = { "added 6.1.0.19445" },
-		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
-	}),
 	i(37604, {	-- Tooth Pick
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-	}),
-	i(151614, {	-- Weathered Heirloom Armor Casing
-		["timeline"] = { "added 7.2.5.24076" },
-		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
 	-- #endif
 };
