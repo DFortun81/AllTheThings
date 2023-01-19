@@ -93,6 +93,9 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(107951, {	-- Iron Skyreaver (MOUNT!)
 			["timeline"] = { "added 5.4.2.17585" },
 		}),
+		mount(369451, {	-- Jade, Bright Foreseer (MOUNT!)
+			["timeline"] = { "added 10.0.2.47631" },
+		}),
 		mount(308087, {	-- Lucky Yun (MOUNT!)
 			["timeline"] = { "added 9.0.2.37176" },
 		}),
