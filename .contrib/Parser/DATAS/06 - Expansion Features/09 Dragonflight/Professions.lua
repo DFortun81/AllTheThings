@@ -1871,6 +1871,59 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(375199),	-- Witherrot Tome
 				},
 			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74113, {	-- Inscription Order: Leatherworking
+					["name"] = "Inscription Order: Leatherworking",
+					["description"] = "Requires a crafting order from Inscription.",
+					["provider"] = { "i", 194700 },	-- Draconic Treatise on Leatherworking
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66384, {	-- Weekly Leatherworking Knowledgepoint #1
+					["name"] = "Leatherworking Treasure #1",
+					["provider"] = { "i", 193910 },		-- Molten Dragon Scales
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66385, {	-- Weekly Leatherworking Knowledgepoint #2
+					["name"] = "Leatherworking Treasure #2",
+					["provider"] = { "i", 193913 },		-- Preserved Animal Parts
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70523, {	-- Weekly Leatherworking Knowledgepoint #3
+					["name"] = "Leatherworking Drop #1: Proto Drake",
+					["description"] = "Drops from any Proto Drake.\nCoordinates link to the mobs closest to Valdrakken.",
+					["crs"] = { 
+						196420,	-- Cavern Hunter
+					},
+					["coords"] = { 
+						{ 58.2, 36.6, THALDRASZUS },
+						{ 59.0, 33.4, THALDRASZUS },
+					},
+					["provider"] = { "i", 198975 },		-- Ossified Hide
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70522, {	-- Weekly Leatherworking Knowledgepoint #4
+					["name"] = "Leatherworking Drop #2: Sylvern&Vorquin",
+					["description"] = "Drops from any Sylvern or Vorquin.\nCoordinates link to the mobs closest to Valdrakken.",
+					["crs"] = { 
+						188277,	-- Garden Herdmare
+					},
+					["coords"] = { 
+						{ 36.6, 72.8, THALDRASZUS },
+						{ 35.4, 72.8, THALDRASZUS },
+					},
+					["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+			}),
 			q(70362, {	-- Dragon Isles Leatherworking
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -2027,41 +2080,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Leatherworking",
 				["provider"] = { "n", 194842 },	-- Erden
 				["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(74113, {	-- Inscription Order: Leatherworking
-				["name"] = "Inscription Order: Leatherworking",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 194700 },	-- Draconic Treatise on Leatherworking
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70523, {	-- Weekly Leatherworking Knowledgepoint #1
-				["name"] = "Weekly Leatherworking Knowledgepoint #1",
-				["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70522, {	-- Weekly Leatherworking Knowledgepoint #2
-				["name"] = "Weekly Leatherworking Knowledgepoint #2",
-				["provider"] = { "i", 198975 },		-- Ossified Hide
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66384, {	-- Weekly Leatherworking Knowledgepoint #3
-				["name"] = "Weekly Leatherworking Knowledgepoint #3",
-				["provider"] = { "i", 193910 },		-- Molten Dragon Scales
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66385, {	-- Weekly Leatherworking Knowledgepoint #4
-				["name"] = "Weekly Leatherworking Knowledgepoint #4",
-				["provider"] = { "i", 193913 },		-- Preserved Animal Parts
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),
@@ -2334,6 +2352,56 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(376518),	-- Vibrant Wildercloth Wristwraps
 				},
 			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74115, {	-- Inscription Order: Tailoring
+					["name"] = "Inscription Order: Tailoring",
+					["description"] = "Requires a crafting order from Inscription.",
+					["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66386, {	-- Weekly Tailoring Knowledgepoint #1
+					["name"] = "Tailoring Treasure #1",
+					["provider"] = { "i", 193898 },	-- Umbral Bone Needle
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66387, {	-- Weekly Tailoring Knowledgepoint #2
+					["name"] = "Tailoring Treasure #2",
+					["provider"] = { "i", 193899 },	-- Primalweave Spindle
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70525, {	-- Weekly Tailoring Knowledgepoint #3
+					["name"] = "Tailoring Drop #1: Beast Humanoid",
+					["description"] = "Drops from any beastlike Humanoid.\nCoordinates link to the mobs closest to Valdrakken.",
+					["crs"] = { 
+						192500,	-- Fetid Slogger
+						192506,	-- Hyena Tender
+					},
+					["coords"] = { 
+						{ 56.6, 29.2, THALDRASZUS },
+						{ 57.0, 30.6, THALDRASZUS },
+					},
+					["provider"] = { "i", 198978  },	-- Stupidly Effective Stitchery
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70524, {	-- Weekly Tailoring Knowledgepoint #4
+					["name"] = "Tailoring Drop #2: Ohn'ahran Humanoid",
+					["description"] = "Drops from any Ohn'ahran Humanoid.\nCoordinates link to the mobs closest to Valdrakken.",
+					["crs"] = { 
+						193840,	-- Nokhud Raider
+					},
+					["coords"] = { 
+						{ 87.0, 51.4, OHNAHRAN_PLAINS },
+						{ 85.0, 55.8, OHNAHRAN_PLAINS },
+					},
+					["provider"] = { "i", 198977 },	-- Ohn'arhan Weave
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+			}),
 			q(72249, {	-- Dragon Isles Tailoring
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -2489,38 +2557,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Above the Rostrum of Transformation, on a ledge.",
 				["provider"] = { "n", 194845 },	-- Elysa Raywinder
 				["coord"] = { 27.9,45.6, VALDRAKKEN },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			-- Weeklies
-			q(74115, {	-- Inscription Order: Tailoring
-				["name"] = "Inscription Order: Tailoring",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70525, {	-- Weekly Tailoring Knowledgepoint #1
-				["name"] = "Weekly Tailoring Knowledgepoint #1",
-				["provider"] = { "i", 198978  },	-- Stupidly Effective Stitchery
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70524, {	-- Weekly Tailoring Knowledgepoint #2
-				["name"] = "Weekly Tailoring Knowledgepoint #2",
-				["provider"] = { "i", 198977 },	-- Ohn'arhan Weave
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66386, {	-- Weekly Tailoring Knowledgepoint #3
-				["name"] = "Weekly Tailoring Knowledgepoint #3",
-				["provider"] = { "i", 193898 },	-- Umbral Bone Needle
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66387, {	-- Weekly Tailoring Knowledgepoint #4
-				["name"] = "Weekly Tailoring Knowledgepoint #4",
-				["provider"] = { "i", 193899 },	-- Primalweave Spindle
-				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),
