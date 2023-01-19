@@ -141,8 +141,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(191305, {	-- The Great Shellkhan
-				["description"] = "Needs fresh fish from Azure Span.",
-				["coord"] = { 38.5, 68.2, THALDRASZUS },
+				["description"] = "Needs a Case of Fresh Gleamfish fish from Azure Span.",
+				["coords"] = { 
+					{ 38.5, 68.2, THALDRASZUS },	-- Rare
+					{ 45.63, 54.82, THE_AZURE_SPAN },	-- Fish
+				},
 				["questID"] = 74085,
 				["isDaily"] = true,
 				["cost"] = { { "i", 200949, 1 }, },	-- 1x Case of Fresh Gleamfish

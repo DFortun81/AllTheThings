@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	n(ACHIEVEMENTS, {
-		ach(15684, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fates of the Shadowlands Raids
+		ach(15684, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL } }, {	-- Fates of the Shadowlands Raids
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				15663, 	-- Fate of Nathria
@@ -14,7 +14,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 				i(190170),	-- Jigglesworth Sr. (MOUNT!)
 			},
 		})),
-		ach(15685, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fates of the Shadowlands Raids
+		ach(15685, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL } }, {	-- Heroic: Fates of the Shadowlands Raids
 			["sym"] = {{"meta_achievement",
 				15664, 	-- Heroic: Fate of Nathria
 				15668, 	-- Heroic: Fate of Domination
@@ -24,7 +24,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 				title(464),	-- <Name>, Hero of Fate (TITLE!)
 			},
 		})),
-		ach(15687, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fates of the Shadowlands Raids
+		ach(15687, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL } }, {	-- Mythic: Fates of the Shadowlands Raids
 			["sym"] = {{"meta_achievement",
 				15665, 	-- Mythic: Fate of Nathria
 				15669, 	-- Mythic: Fate of Domination
