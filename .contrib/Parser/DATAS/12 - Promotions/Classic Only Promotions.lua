@@ -119,7 +119,7 @@ root("Promotions", {
 				q(72522, {	-- Festering Emerald Drake
 					["qg"] = 28687,	-- Amisi Azuregaze <Innkeeper>
 					["altQuests"] = { 72523 },	-- Imp in a Ball (Cities)
-					["coord"] = { 50.0 39.6, DALARAN },
+					["coord"] = { 50.0, 39.6, DALARAN },
 					["maps"] = {
 						THE_EXODAR,
 						IRONFORGE,
@@ -159,7 +159,7 @@ root("Promotions", {
 				-- 2023 17th January until 31st July 2023
 				q(70862, {	-- Hoplet
 					["qg"] = 28687,	-- Amisi Azuregaze <Innkeeper>
-					["coord"] = { 50.0 39.6, DALARAN },
+					["coord"] = { 50.0, 39.6, DALARAN },
 					["maps"] = {
 						THE_EXODAR,
 						IRONFORGE,
