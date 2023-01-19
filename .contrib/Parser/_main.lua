@@ -2157,6 +2157,19 @@ npc = function(id, t)									-- Create an NPC Object (negative indicates that i
 			return nil;
 		end
 	end
+	-- #IF NOT ANYCLASSIC
+	-- Retail Cleanliness checks
+	if id == COMMON_BOSS_DROPS or
+		id == COMMON_VENDOR_ITEMS or
+		id == DROPS
+	then
+		-- Items contained under these Header values will automatically list under the respective NPCs in minilists
+		if t.crs or t.cr then
+			t.maps = nil;
+			t.map = nil;
+		end
+	end
+	-- #ENDIF
 	return struct("npcID", id, t);
 end
 n = npc;												-- Create an NPC Object (alternative shortcut)
