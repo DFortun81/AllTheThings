@@ -88,6 +88,8 @@ root("GearSets", n(HEIRLOOMS, {
 			["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
 		}),
 		un(REMOVED_FROM_GAME, i(93843)),	-- Hardened Arcanite Reaper
+		--[[
+		-- This has been sorted into Siege of Orgrimmar
 		un(REMOVED_FROM_GAME, i(105687)),	-- Hellscream's Barrier
 		un(REMOVED_FROM_GAME, i(105674)),	-- Hellscream's Barrier
 		un(REMOVED_FROM_GAME, i(104409)),	-- Hellscream's Barrier
@@ -121,6 +123,7 @@ root("GearSets", n(HEIRLOOMS, {
 		un(REMOVED_FROM_GAME, i(105688)),	-- Hellscream's Warmace
 		un(REMOVED_FROM_GAME, i(105675)),	-- Hellscream's Warmace
 		un(REMOVED_FROM_GAME, i(104402)),	-- Hellscream's Warmace
+		--]]
 		un(REMOVED_FROM_GAME, i(93904)),	-- Musty Tome of the Lost
 		i(122390, {	-- Musty Tome of the Lost
 			["cost"] = {
