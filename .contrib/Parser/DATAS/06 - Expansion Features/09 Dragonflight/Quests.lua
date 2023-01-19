@@ -192,9 +192,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16789),	-- Lucky Penny
 			},
 		}),
-		q(72751, {	-- Weekly Trigger?
-			["name"] = "Weekly Trigger?",
-		}),
 		q(72746, {	-- A Piece of Silver
 			["description"] = "Available on the next reset after \"A Piece of Copper\", from the adventure guide.",
 			["sourceQuests"] = { 72743 },	-- A Piece of Copper
@@ -249,3 +246,9 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 }));
+
+root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
+	n(QUESTS, {
+		q(72751),	-- Triggers whenever you collect one of the Coin quests from your Adventurer's Journal.
+	}),
+})));
