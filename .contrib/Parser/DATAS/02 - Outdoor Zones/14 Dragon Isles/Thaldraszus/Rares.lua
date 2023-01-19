@@ -29,6 +29,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 74060,
 				["g"] = {
 					i(200166),	-- Corrupted Drake Horn
+					i(197125),	-- Highland Drake: Coiled Horns
 				},
 			}),
 			n(193663, {	-- Craggravated Elemental
@@ -127,6 +128,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ 53.6, 42.8, THALDRASZUS },
 				},
 				["questID"] = 73892,
+				["g"] = {
+					i(196992),	-- Cliffside Wylderdrake: Heavy Horns
+				},
 			}),
 			-- n(193240),	-- Riverwalker Tamopo // under DF/Timed Based Rare
 			n(193666, {	-- Rokmur
