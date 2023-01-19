@@ -40,6 +40,7 @@ root("Promotions", {
 							["description"] = "Obtained if you set up a 6 Month WoW Subscription between 5th May 2021 until 5th Nov 2022.",
 						}),
 					},
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				-- 2022 13th Feb until 13th Aug 2022 
 				q(65285, {	-- Goblin Gumbo Kettle
@@ -72,6 +73,7 @@ root("Promotions", {
 							["description"] = "Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022.",
 						}),
 					},
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				-- 2022 14th July until 15th January 2023
 				q(65562, {	-- Tabard of Flame
@@ -104,6 +106,7 @@ root("Promotions", {
 							["description"] = "Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022 or a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",
 						}),
 					},
+					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		},
@@ -151,9 +154,8 @@ root("Promotions", {
 							["description"] = "Obtained if you set up a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023 or a 6 Month WoW Subscription between 17th January 2023 until 31st July 2023.",
 						}),
 					},
+					["u"] = REMOVED_FROM_GAME,
 				}),
-			}),
-			n(QUESTS, {
 				-- 2023 17th January until 31st July 2023
 				q(70862, {	-- Hoplet
 					["qg"] = 28687,	-- Amisi Azuregaze <Innkeeper>
