@@ -7822,7 +7822,7 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 		else
 			-- this quest name cannot be populated by the server
 			-- app.PrintDebug("No Server QuestData",questID)
-			rawset(QuestTitleFromID, questID, "Quest #"..questID.."*");
+			rawset(QuestTitleFromID, questID, L["QUEST_NAMES"][questID] or "Quest #"..questID.."*");
 		end
 	end
 	-- see if this Quest is awaiting Reward population & Updates
@@ -11474,7 +11474,7 @@ local function HandleItemRetries(t)
 	local retries = rawget(_t, "retries");
 	if retries then
 		if retries > app.MaximumItemInfoRetries then
-			local itemName = "Item #" .. tostring(id) .. "*";
+			local itemName = L["ITEM_NAMES"][id] or "Item #" .. tostring(id) .. "*";
 			rawset(_t, "title", L["FAILED_ITEM_INFO"]);
 			rawset(_t, "link", nil);
 			rawset(_t, "s", nil);

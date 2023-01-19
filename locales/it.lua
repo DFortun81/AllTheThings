@@ -924,6 +924,20 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+-- Fall-back 'name' values for Quests based on QuestID
+local a = L.QUEST_NAMES;
+for key,value in pairs({
+	-- [QuestID] = "Name",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Items based on ItemID
+local a = L.ITEM_NAMES;
+for key,value in pairs({
+	-- [ItemID] = "Name",
+})
+do a[key] = value; end
+
 local a = app.ObjectNames;
 for key,value in pairs({
 	[31] = "Vecchia Statua di Leone",	-- Old Lion Statue

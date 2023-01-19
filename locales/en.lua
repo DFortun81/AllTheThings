@@ -1949,7 +1949,7 @@ app.L = {
 		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 		-- 9.2
-	[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
+		[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 	-- Temp Sets for Creation Catalyst
@@ -2099,6 +2099,19 @@ app.L = {
 		[-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
 		[-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
 		[-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
+	};
+
+	-- Fall-back 'name' values for Quests based on QuestID
+	["QUEST_NAMES"] = {
+		[61296] = "Anima Crystal Shard",
+		[61297] = "Anima Crystal Shard",
+		[61298] = "Anima Crystal Shard",
+		[61299] = "Anima Crystal Shard",
+		[61300] = "Anima Crystal Shard",
+	};
+
+	-- Fall-back 'name' values for Items based on ItemID
+	["ITEM_NAMES"] = {
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter

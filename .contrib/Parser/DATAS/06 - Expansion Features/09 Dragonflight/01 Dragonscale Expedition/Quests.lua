@@ -533,6 +533,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "This quest will become available on the next weekly reset after completing |cffffff00It Belongs in a Museum... Eventually|r.",
 				["g"] = {
 					i(201782),	-- Tyr's Blessing
+					i(197805),	-- Suspicious Persons Scanner
 				},
 			}),
 				-- RENOWN 25 --
