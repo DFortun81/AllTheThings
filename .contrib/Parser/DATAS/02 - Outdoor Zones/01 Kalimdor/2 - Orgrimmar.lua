@@ -2100,19 +2100,13 @@ root("Zones", m(KALIMDOR, {
 						moh(8, i(122375, {	-- Aged Pauldrons of The Five Thunders
 							["timeline"] = { "added 6.1.0.19445" },
 						})),
-						moh(14, i(122338, {	-- Ancient Heirloom Armor Casing
-							["timeline"] = { "added 6.1.0.19445" },
-							["sym"] = {{ "fill" }},	-- simply fill this item
-						})),
-						moh(14, i(122339, {	-- Ancient Heirloom Scabbard
-							["timeline"] = { "added 6.1.0.19445" },
-							["sym"] = {{ "fill" }},	-- simply fill this item
-						})),
 						moh(12, i(122338, {	-- Ancient Heirloom Armor Casing
 							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = {{ "fill" }},	-- simply fill this item
 						})),
 						moh(14, i(122339, {	-- Ancient Heirloom Scabbard
 							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = {{ "fill" }},	-- simply fill this item
 						})),
 						moh(10, i(122369, {	-- Battleworn Thrash Blade
 							["timeline"] = { "added 6.1.0.19445" },

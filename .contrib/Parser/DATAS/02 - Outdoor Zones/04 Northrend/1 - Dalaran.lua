@@ -5715,6 +5715,18 @@ root("Zones", {
 							emoh(65, i(42943, {	-- Bloodied Arcanite Reaper
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
+							i(69893, {	-- Bloodsoaked Skullforge Reaver
+								["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+							}),
+							i(69889, {	-- Burnished Breastplate of Might
+								["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+							}),
+							i(69890, {	-- Burnished Pauldrons of Might
+								["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+							}),
+							i(79131, {	-- Burnished Warden Staff
+								["timeline"] = { "added 5.0.1.15464", "removed 6.1.0.19445" },
+							}),
 							emoh(40, i(42950, {	-- Champion Herod's Shoulder
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
@@ -5733,6 +5745,12 @@ root("Zones", {
 							emoh(50, i(42992, {	-- Discerning Eye of the Beast
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
+							i(93902, {	-- Flamescarred Draconian Deflector
+								["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+							}),
+							i(93904, {	-- Musty Tome of the Lost
+								["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+							}),
 							emoh(40, i(42951, {	-- Mystical Pauldrons of Elements
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
@@ -5775,6 +5793,9 @@ root("Zones", {
 							emoh(40, i(48716, {	-- Venerable Mass of McGowan
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
+							i(93903, {	-- Weathered Observer's Shield
+								["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+							}),
 						},
 					}),
 					n(28951, {	-- Breanni <Pet Supplies>

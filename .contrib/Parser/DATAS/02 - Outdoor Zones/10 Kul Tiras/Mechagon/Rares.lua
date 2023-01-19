@@ -124,7 +124,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
 				["coord"] = { 55.4, 25.9, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					i(169688),	-- Vinyl: Gnomeragan Forever
+					i(169688),	-- Vinyl: Gnomeregan Forever
 				},
 			}),
 			n(152001, {	-- Bonepicker
@@ -257,7 +257,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
 				["isDaily"] = true,
 				["g"] = {
 					i(168490),	-- Blueprint: Protocol Transference Device
-					i(169688),	-- Vinyl: Gnomeragan Forever
+					i(169688),	-- Vinyl: Gnomeregan Forever
 				},
 			}),
 			n(151672, {	-- Mecharantula

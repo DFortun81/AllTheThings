@@ -546,7 +546,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 					["cost"] = {
 						{ "g", 5000000 },		-- 500g
 						{ "i", 23247, 350 },	-- 350x Burning Blossom
-						{ "c", 241, 55 },		-- 55x  Champion's Seal
 						{ "i", 21100, 40 },		-- 40x  Coin of Ancestry
 						{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
 						{ "i", 137642, 12 },	-- 12x  Mark of Honor
@@ -559,7 +558,6 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 					["cost"] = {
 						{ "g", 7500000 },		-- 750g
 						{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
-						{ "c", 241, 65 },		-- 65x  Champion's Seal
 						{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
 						{ "i", 49927, 200 },	-- 200x Love Token
 						{ "i", 137642, 14 },	-- 14x  Mark of Honor
@@ -569,175 +567,146 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				}),
 				i(122350, {	-- Balanced Heartseeker
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122349, {	-- Bloodied Arcanite Reaper
 					["cost"] = {
-						{ "c", 241, 40 },	-- 40x Champion's Seal
 						{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
 					},
 				}),
 				i(122389, {	-- Bloodsoaked Skullforge Reaver
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122387, {	-- Burnished Breastplate of Might
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122388, {	-- Burnished Pauldrons of Might
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122363, {	-- Burnished Warden Staff
 					["cost"] = {
-						{ "c", 241, 40 },	-- 40x Champion's Seal
 						{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
 					},
 				}),
 				i(122356, {	-- Champion Herod's Shoulders
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122379, {	-- Champion's Deathdealer Breastplate
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122352, {	-- Charmed Ancient Bone Bow
 					["cost"] = {
-						{ "c", 241, 40 },	-- 40x Champion's Seal
 						{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
 					},
 				}),
 				i(122354, {	-- Devout Aurastone Hammer
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122353, {	-- Dignified Headmaster's Charge
 					["cost"] = {
-						{ "c", 241, 40 },	-- 40x Champion's Seal
 						{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
 					},
 				}),
 				i(122362, {	-- Discerning Eye of the Beast
 					["cost"] = {
-						{ "c", 241, 35 },	-- 35x Champion's Seal
 						{ "c", 515, 70 },	-- 70x Darkmoon Prize Ticket
 					},
 				}),
 				i(122391, {	-- Flamescarred Draconian Deflector
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122390, {	-- Musty Tome of the Lost
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122357, {	-- Mystical Pauldrons of Elements
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122380, {	-- Mystical Vest of Elements
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122381, {	-- Polished Breastplate of Valor
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122355, {	-- Polished Spaulders of Valor
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122382, {	-- Preened Ironfeather Breastplate
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122359, {	-- Preened Ironfeather Shoulders
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122386, {	-- Repurposed Lava Dredger
 					["cost"] = {
-						{ "c", 241, 40 },	-- 40x Champion's Seal
 						{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
 					},
 				}),
 				i(122358, {	-- Stained Shadowcraft Spaulders
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122383, {	-- Stained Shadowcraft Tunic
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122361, {	-- Swift Hand of Justice
 					["cost"] = {
-						{ "c", 241, 35 },	-- 35x Champion's Seal
 						{ "c", 515, 70 },	-- 70x Darkmoon Prize Ticket
 					},
 				}),
 				i(122360, {	-- Tattered Dreadmist Mantle
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122384, {	-- Tattered Dreadmist Robe
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122351, {	-- Venerable Dal'Rend's Sacred Charge
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122385, {	-- Venerable Mass of McGowan
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
 				i(122392, {	-- Weathered Observer's Shield
 					["cost"] = {
-						{ "c", 241, 25 },	-- 25x Champion's Seal
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),

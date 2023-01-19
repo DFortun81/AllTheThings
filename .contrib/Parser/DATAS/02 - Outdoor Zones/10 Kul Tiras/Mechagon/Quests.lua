@@ -1140,8 +1140,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 			q(56517, {	-- Vinyl: Battle of Gnomeregan
 				["provider"] = { "i", 169690 },	-- Vinyl: Battle of Gnomeregan
 			}),
-			q(56515, {	-- Vinyl: Gnomeragan Forever
-				["provider"] = { "i", 169688 },	-- Vinyl: Gnomeragan Forever
+			q(56515, {	-- Vinyl: Gnomeregan Forever
+				["provider"] = { "i", 169688 },	-- Vinyl: Gnomeregan Forever
 			}),
 			q(56518, {	-- Vinyl: Depths of Ulduar
 				["provider"] = { "i", 169691 },	-- Vinyl: Depths of Ulduar

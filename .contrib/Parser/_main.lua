@@ -1848,6 +1848,10 @@ applycost = function(item, ...)
 	end
 	return item;
 end
+champ = function(cost, item)							-- Assign a Champion's Seal cost to an item with proper timeline & phase requirements.
+	applycost(item, { "c", 241, cost });	-- Champion's Seal
+	return applyclassicphase(WRATH_PHASE_THREE, item);
+end
 emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 221, cost });	-- Emblem of Conquest
@@ -1877,6 +1881,10 @@ emov = function(cost, item)								-- Assign a Emblem of Valor cost to an item w
 	applycost(item, { "c", 102, cost });	-- Emblem of Valor
 	-- #endif
 	return applyclassicphase(WRATH_PHASE_ONE, item);
+end
+gold = function(cost, item)								-- Assign a Gold cost to an item.
+	applycost(item, { "g", cost * 10000 });	-- Gold
+	return item;
 end
 honor = function(cost, item)							-- Assign a Honor cost to an item with proper timeline requirements.
 	-- #if BEFORE CATA
@@ -1911,6 +1919,10 @@ venture = function(cost, item)							-- Assign a Venture Coin cost to an item wi
 	applycost(item, { "c", 201, cost });	-- Venture Coin
 	-- #endif
 	return item;
+end
+writ = function(item)									-- Assign a Champion's Writ cost to an item with proper timeline & phase requirements.
+	applycost(item, { "i", 46114, 1 });	-- 1x Champion's Writ
+	return applyclassicphase(WRATH_PHASE_THREE, item);
 end
 
 -- SHORTCUTS for Object Class Types

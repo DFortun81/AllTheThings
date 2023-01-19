@@ -18,7 +18,6 @@ root("GearSets", n(HEIRLOOMS, {
 		un(REMOVED_FROM_GAME, i(42944)),	-- Balanced Heartseeker
 		i(122350, {	-- Balanced Heartseeker
 			["cost"] = {
-				{ "c", 241, 25 },	-- 25x Champion's Seal
 				{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 			},
 		}),
@@ -31,14 +30,12 @@ root("GearSets", n(HEIRLOOMS, {
 		un(REMOVED_FROM_GAME, i(42943)),	-- Bloodied Arcanite Reaper
 		i(122349, {	-- Bloodied Arcanite Reaper
 			["cost"] = {
-				{ "c", 241, 40 },	-- 40x Champion's Seal
 				{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
 			},
 		}),
 		un(REMOVED_FROM_GAME, i(69893)),	-- Bloodsoaked Skullforge Reaver
 		i(122389, {	-- Bloodsoaked Skullforge Reaver
 			["cost"] = {
-				{ "c", 241, 25 },	-- 25x Champion's Seal
 				{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 			},
 		}),
@@ -54,14 +51,12 @@ root("GearSets", n(HEIRLOOMS, {
 		un(REMOVED_FROM_GAME, i(79131)),	-- Burnished Warden Staff
 		i(122363, {	-- Burnished Warden Staff
 			["cost"] = {
-				{ "c", 241, 40 },	-- 40x Champion's Seal
 				{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
 			},
 		}),
 		un(REMOVED_FROM_GAME, i(42946)),	-- Charmed Ancient Bone Bow
 		i(122352, {	-- Charmed Ancient Bone Bow
 			["cost"] = {
-				{ "c", 241, 40 },	-- 40x Champion's Seal
 				{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
 			},
 		}),
@@ -70,14 +65,12 @@ root("GearSets", n(HEIRLOOMS, {
 		un(REMOVED_FROM_GAME, i(42948)),	-- Devout Aurastone Hammer
 		i(122354, {	-- Devout Aurastone Hammer
 			["cost"] = {
-				{ "c", 241, 25 },	-- 25x Champion's Seal
 				{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 			},
 		}),
 		un(REMOVED_FROM_GAME, i(42947)),	-- Dignified Headmaster's Charge
 		i(122353, {	-- Dignified Headmaster's Charge
 			["cost"] = {
-				{ "c", 241, 40 },	-- 40x Champion's Seal
 				{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
 			},
 		}),
@@ -86,7 +79,6 @@ root("GearSets", n(HEIRLOOMS, {
 		un(REMOVED_FROM_GAME, i(93902)),	-- Flamescarred Draconian Deflector
 		i(122391, {	-- Flamescarred Draconian Deflector
 			["cost"] = {
-				{ "c", 241, 25 },	-- 25x Champion's Seal
 				{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 			},
 		}),
@@ -132,7 +124,6 @@ root("GearSets", n(HEIRLOOMS, {
 		un(REMOVED_FROM_GAME, i(93904)),	-- Musty Tome of the Lost
 		i(122390, {	-- Musty Tome of the Lost
 			["cost"] = {
-				{ "c", 241, 25 },	-- 25x Champion's Seal
 				{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 			},
 		}),
@@ -147,7 +138,6 @@ root("GearSets", n(HEIRLOOMS, {
 		un(REMOVED_FROM_GAME, i(48718)),	-- Repurposed Lava Dredger
 		i(122386, {	-- Repurposed Lava Dredger
 			["cost"] = {
-				{ "c", 241, 40 },	-- 40x Champion's Seal
 				{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
 			},
 		}),
@@ -170,14 +160,12 @@ root("GearSets", n(HEIRLOOMS, {
 		un(REMOVED_FROM_GAME, i(42945)),	-- Venerable Dal'Rend's Sacred Charge
 		i(122351, {	-- Venerable Dal'Rend's Sacred Charge
 			["cost"] = {
-				{ "c", 241, 25 },	-- 25x Champion's Seal
 				{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 			},
 		}),
 		un(REMOVED_FROM_GAME, i(48716)),	-- Venerable Mass of McGowan
 		i(122385, {	-- Venerable Mass of McGowan
 			["cost"] = {
-				{ "c", 241, 25 },	-- 25x Champion's Seal
 				{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 			},
 		}),
@@ -186,7 +174,6 @@ root("GearSets", n(HEIRLOOMS, {
 		un(REMOVED_FROM_GAME, i(93903)),	-- Weathered Observer's Shield
 		i(122392, {	-- Weathered Observer's Shield
 			["cost"] = {
-				{ "c", 241, 25 },	-- 25x Champion's Seal
 				{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 			},
 		}),
@@ -217,7 +204,6 @@ root("GearSets", n(HEIRLOOMS, {
 			un(REMOVED_FROM_GAME, i(42985)),	-- Tattered Dreadmist Mantle
 			i(122360, {	-- Tattered Dreadmist Mantle
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
@@ -226,7 +212,6 @@ root("GearSets", n(HEIRLOOMS, {
 			un(REMOVED_FROM_GAME, i(48691)),	-- Tattered Dreadmist Robe
 			i(122384, {	-- Tattered Dreadmist Robe
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
@@ -245,14 +230,12 @@ root("GearSets", n(HEIRLOOMS, {
 			un(REMOVED_FROM_GAME, i(48687)),	-- Preened Ironfeather Breastplate
 			i(122382, {	-- Preened Ironfeather Breastplate
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
 			un(REMOVED_FROM_GAME, i(42984)),	-- Preened Ironfeather Shoulders
 			i(122359, {	-- Preened Ironfeather Shoulders
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
@@ -267,14 +250,12 @@ root("GearSets", n(HEIRLOOMS, {
 			un(REMOVED_FROM_GAME, i(42952)),	-- Stained Shadowcraft Spaulders
 			i(122358, {	-- Stained Shadowcraft Spaulders
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
 			un(REMOVED_FROM_GAME, i(48689)),	-- Stained Shadowcraft Tunic
 			i(122383, {	-- Stained Shadowcraft Tunic
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
@@ -294,14 +275,12 @@ root("GearSets", n(HEIRLOOMS, {
 			un(REMOVED_FROM_GAME, i(42950)),	-- Champion Herod's Shoulder
 			i(122356, {	-- Champion Herod's Shoulders
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
 			un(REMOVED_FROM_GAME, i(48677)),	-- Champion's Deathdealer Breastplate
 			i(122379, {	-- Champion's Deathdealer Breastplate
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
@@ -314,14 +293,12 @@ root("GearSets", n(HEIRLOOMS, {
 			un(REMOVED_FROM_GAME, i(42951)),	-- Mystical Pauldrons of Elements
 			i(122357, {	-- Mystical Pauldrons of Elements
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
 			un(REMOVED_FROM_GAME, i(48683)),	-- Mystical Vest of Elements
 			i(122380, {	-- Mystical Vest of Elements
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
@@ -341,7 +318,6 @@ root("GearSets", n(HEIRLOOMS, {
 			un(REMOVED_FROM_GAME, i(69889)),	-- Burnished Breastplate of Might
 			i(122387, {	-- Burnished Breastplate of Might
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
@@ -352,7 +328,6 @@ root("GearSets", n(HEIRLOOMS, {
 			un(REMOVED_FROM_GAME, i(69890)),	-- Burnished Pauldrons of Might
 			i(122388, {	-- Burnished Pauldrons of Might
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
@@ -362,7 +337,6 @@ root("GearSets", n(HEIRLOOMS, {
 			un(REMOVED_FROM_GAME, i(48685)),	-- Polished Breastplate of Valor
 			i(122381, {	-- Polished Breastplate of Valor
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
@@ -373,7 +347,6 @@ root("GearSets", n(HEIRLOOMS, {
 			un(REMOVED_FROM_GAME, i(42949)),	-- Polished Spaulders of Valor
 			i(122355, {	-- Polished Spaulders of Valor
 				["cost"] = {
-					{ "c", 241, 25 },	-- 25x Champion's Seal
 					{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 				},
 			}),
@@ -415,7 +388,6 @@ root("GearSets", n(HEIRLOOMS, {
 			un(REMOVED_FROM_GAME, i(42992)),	-- Discerning Eye of the Beast
 			i(122362, {	-- Discerning Eye of the Beast
 				["cost"] = {
-					{ "c", 241, 35 },	-- 35x Champion's Seal
 					{ "c", 515, 70 },	-- 70x Darkmoon Prize Ticket
 				},
 			}),
@@ -444,7 +416,6 @@ root("GearSets", n(HEIRLOOMS, {
 			un(REMOVED_FROM_GAME, i(42991)),	-- Swift Hand of Justice
 			i(122361, {	-- Swift Hand of Justice
 				["cost"] = {
-					{ "c", 241, 35 },	-- 35x Champion's Seal
 					{ "c", 515, 70 },	-- 70x Darkmoon Prize Ticket
 				},
 			}),
