@@ -30,6 +30,8 @@ local InfiniteTimereaver =
 				180899,	-- Aridormi <Timewalking Vendor>
 				-- #endif
 			},
+			-- #IF ANYCLASSIC
+			-- COMMON_VENDOR_ITEMS fills automatically under referenced NPCs in minilists
 			["maps"] = {
 				-- #if AFTER 6.2.2.20395
 				SHATTRATH_CITY,
@@ -50,6 +52,7 @@ local InfiniteTimereaver =
 				LEGION_DALARAN,
 				-- #endif
 			},
+			-- #ENDIF
 			["groups"] = {
 				i(122338, {	-- Ancient Heirloom Armor Casing
 					["cost"] = { { "c", 1166, 750 }, },		-- 750x Timewarped Badge

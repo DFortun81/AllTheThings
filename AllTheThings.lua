@@ -5274,6 +5274,7 @@ local function DetermineSymlinkGroups(group)
 end
 local NPCExpandHeaders = {
 	[-1] = true,	-- COMMON_BOSS_DROPS
+	[-20] = true,	-- COMMON_VENDOR_ITEMS
 	[-26] = true,	-- DROPS
 };
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
@@ -5500,6 +5501,8 @@ app.ThingKeys = {
 local SpecificSources = {
 	["headerID"] = {
 		[-1] = true,	-- COMMON_BOSS_DROPS
+		[-20] = true,	-- COMMON_VENDOR_ITEMS
+		[-26] = true,	-- DROPS
 	},
 };
 local tremove = tremove;
