@@ -1850,7 +1850,7 @@ applycost = function(item, ...)
 end
 champ = function(cost, item)							-- Assign a Champion's Seal cost to an item with proper timeline & phase requirements.
 	applycost(item, { "c", 241, cost });	-- Champion's Seal
-	return applyclassicphase(WRATH_PHASE_THREE, item);
+	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
 emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
@@ -1922,7 +1922,7 @@ venture = function(cost, item)							-- Assign a Venture Coin cost to an item wi
 end
 writ = function(item)									-- Assign a Champion's Writ cost to an item with proper timeline & phase requirements.
 	applycost(item, { "i", 46114, 1 });	-- 1x Champion's Writ
-	return applyclassicphase(WRATH_PHASE_THREE, item);
+	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
 
 -- SHORTCUTS for Object Class Types

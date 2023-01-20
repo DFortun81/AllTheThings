@@ -2399,6 +2399,12 @@ root("Zones", {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					applyclassicphase(WRATH_PHASE_TWO, i(44978, {	-- Blade of Drak'Mar
+						["provider"] = { "o", 194238 },	-- Blade of Drak'Mar
+						["coord"] = { 93, 26, DRAGONBLIGHT },
+						["cost"] = {{ "i", 45000, 4 }},	-- Winter Hyacinth
+						["cr"] = 33273,	-- Maiden of Drak'Mar
+					})),
 					i(50406, {	-- Formula: Enchant Gloves - Angler (RECIPE!)
 						["crs"] = {
 							26343,	-- Indu'le Fisherman

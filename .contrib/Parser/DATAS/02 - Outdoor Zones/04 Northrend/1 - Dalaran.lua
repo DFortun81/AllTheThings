@@ -4310,10 +4310,12 @@ root("Zones", {
 					}),
 					faction(1094, {	-- The Silver Covenant
 						["icon"] = "Interface\\Icons\\inv_banner_02",
+						["maps"] = { ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					faction(1124, {	-- The Sunreavers
 						["icon"] = "Interface\\Icons\\inv_elemental_primal_nether",
+						["maps"] = { ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 				}),

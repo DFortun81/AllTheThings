@@ -76,6 +76,20 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
+				n(ZONE_DROPS, {
+					applyclassicphase(WRATH_PHASE_TWO, i(45005, {	-- Everburning Ember
+						["coord"] = { 55.6, 75.0, CRYSTALSONG_FOREST },
+						["cr"] = 33289,	-- Lord Everblaze
+					})),
+					applyclassicphase(WRATH_PHASE_TWO, i(45080, {	-- Large Femur
+						["coord"] = { 37.6, 57.8, CRYSTALSONG_FOREST },
+						["cr"] = 33499,	-- Skeletal Woodcutter
+					})),
+					applyclassicphase(WRATH_PHASE_TWO, i(45000, {	-- Winter Hyacinth
+						["provider"] = { "o", 194213 },	-- Winter Hyacinth
+						["coord"] = { 18.5, 15.7, CRYSTALSONG_FOREST },
+					})),
+				}),
 			},
 		}),
 	})),
