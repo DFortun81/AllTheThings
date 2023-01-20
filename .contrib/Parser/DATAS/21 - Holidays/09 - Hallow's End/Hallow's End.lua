@@ -21,7 +21,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(122340, {	-- Timeworn Heirloom Armor Casing
 		["timeline"] = { "added 6.1.0.19445" },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "select", "itemID", 122340 } },	-- Fake select for whatever is cached for itself
+		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
 	i(151614, {	-- Weathered Heirloom Armor Casing
 		["timeline"] = { "added 7.2.5.24076" },
