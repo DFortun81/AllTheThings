@@ -1020,7 +1020,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			q(71027, {	-- WANTED: Mara'nar the Thunderous
-				["sourceQuests"] = { 66201 },	-- Hooves of War
+				["sourceQuests"] = {
+					66201, 	-- Hooves of War
+					72366,	-- Account Dragonflight Campaign Completed
+				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "o", 381701 },	-- WANTED: Mara'nar the Thunderous
 				["coord"] = { 39.6, 56.4, OHNAHRAN_PLAINS },
 			}),
