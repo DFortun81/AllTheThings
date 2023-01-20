@@ -1014,7 +1014,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71498, { ["name"] = "First Craft: Spring-Loaded Khaz'gorite Fabric Cutters", }),	-- Spring-Loaded Khaz'gorite Fabric Cutters
 			-- Robotics
 			q(71458, { ["name"] = "First Craft: D.U.C.K.O.Y", }),	-- D.U.C.K.O.Y
-			--q(, { ["name"] = "First Craft: Quack-E", }),	-- Quack-E
+			q(71892, { ["name"] = "First Craft: Quack-E", }),	-- Quack-E
 		})),
 		filter(MISC, {
 			i(198549),	-- Black Fireflight
@@ -2411,23 +2411,23 @@ root("HiddenQuestTriggers", {
 			-- q(),	-- Extraction: Awakened Fire
 			-- q(),	-- Extraction: Awakened Frost
 			-- Contracts
-			-- q(),	-- Contract: Artisan's Consortium
+			q(71579),	-- Contract: Artisan's Consortium
 			-- q(),	-- Contract: Dragonscale Expedition
 			-- q(),	-- Contract: Iskaara Tuskarr
 			-- q(),	-- Contract: Maruuk Centaur
 			-- q(),	-- Contract: Valdrakken Accord
 			-- Profession Specialization
-			-- q(),	-- Draconic Treatise on Alchemy
-			-- q(),	-- Draconic Treatise on Blacksmithing
-			-- q(),	-- Draconic Treatise on Enchanting
-			-- q(),	-- Draconic Treatise on Engineering
-			-- q(),	-- Draconic Treatise on Herbalism
-			-- q(),	-- Draconic Treatise on Inscription
-			-- q(),	-- Draconic Treatise on Jewelcrafting
-			-- q(),	-- Draconic Treatise on Leatherworking
-			-- q(),	-- Draconic Treatise on Mining
+			q(71519),	-- Draconic Treatise on Alchemy
+			q(71520),	-- Draconic Treatise on Blacksmithing
+			q(71522),	-- Draconic Treatise on Enchanting
+			q(71523),	-- Draconic Treatise on Engineering
+			q(71524),	-- Draconic Treatise on Herbalism
+			q(71525),	-- Draconic Treatise on Inscription
+			q(71526),	-- Draconic Treatise on Jewelcrafting
+			q(71527),	-- Draconic Treatise on Leatherworking
+			q(71528),	-- Draconic Treatise on Mining
 			-- q(),	-- Draconic Treatise on Skinning
-			-- q(),	-- Draconic Treatise on Tailoring
+			q(71530),	-- Draconic Treatise on Tailoring
 			-- Dragonriding - Renewed Proto-Drake
 			-- q(),	-- Renewed Proto-Drake: Bovine Horns
 			-- q(),	-- Renewed Proto-Drake: Predator Pattern
@@ -2475,10 +2475,10 @@ root("HiddenQuestTriggers", {
 			-- q(),	-- Quick Ysemerald
 			-- Earth Gems
 			-- q(),	-- Fractured Neltharite
-			-- q(),	-- Keen Ysemerald
+			q(71632),	-- Keen Ysemerald
 			q(71628),	-- Puissant Nozdorite
-			-- q(),	-- Sensei's Alexstraszite
-			-- q(),	-- Zen Malygite
+			q(71640),	-- Sensei's Alexstraszite
+			q(71644),	-- Zen Malygite
 			-- Fire Gems
 			-- q(),	-- Crafty Ysemerald
 			-- q(),	-- Deadly Alexstraszite
@@ -2486,8 +2486,8 @@ root("HiddenQuestTriggers", {
 			-- q(),	-- Radiant Malygite
 			-- q(),	-- Sensei's Neltharite
 			-- Frost Gems
-			-- q(),	-- Energized Ysemerald
-			-- q(),	-- Radiant Alexstraszite
+			q(71634),	-- Energized Ysemerald
+			q(71642),	-- Radiant Alexstraszite
 			q(71630),	-- Steady Nozdorite
 			-- q(),	-- Stormy Malygite
 			-- q(),	-- Zen Neltharite
@@ -2522,8 +2522,8 @@ root("HiddenQuestTriggers", {
 			-- Battle Pets
 			-- q(),	-- Jeweled Amber Whelpling
 			-- q(),	-- Jeweled Emerald Whelpling
-			-- q(),	-- Jeweled Onyx Whelpling
-			-- q(),	-- Jeweled Ruby Whelpling
+			q(71669),	-- Jeweled Onyx Whelpling
+			q(71670),	-- Jeweled Ruby Whelpling
 			-- q(),	-- Jeweled Sapphire Whelpling
 			-- Noevelties
 			-- q(),	-- "Rhinestone" Sunglasses
@@ -2601,7 +2601,7 @@ root("HiddenQuestTriggers", {
 			q(71777),	-- Bonewrought Crossbow
 			-- Elemental Patterns
 			-- q(),	-- Ancestor's Dew Drippers
-			-- q(),	-- Flaring Cowl
+			q(71702),	-- Flaring Cowl
 			-- q(),	-- Old Spirit's Wristwraps
 			-- q(),	-- Scale Rein Grips
 			-- q(),	-- Snowball Makers
@@ -2659,7 +2659,7 @@ root("HiddenQuestTriggers", {
 			q(71746),	-- Feral Hide Drums
 			-- Toys
 			-- q(),	-- Artisan's Sign
-			-- q(),	-- Gnoll Tent
+			q(71772),	-- Gnoll Tent
 			-- q(71773),	-- Tuskarr Bean Bag
 		}),
 		prof(SKINNING, {
@@ -2713,6 +2713,7 @@ root("HiddenQuestTriggers", {
 			q(74196),	-- Skinning Rokmur
 			q(74197),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
 			q(74198),	-- Skinning The Weeping Vilomah
+			q(74200),	-- Skinning Eldoren the Reborn
 			q(74204),	-- Skinning Acrosoth
 			q(74206),	-- Skinning Corrupted Proto-Dragon
 			q(74208),	-- Skinning Matriarch Remalla
@@ -2720,6 +2721,7 @@ root("HiddenQuestTriggers", {
 			q(74214),	-- Skinning Moth'go Deeploom
 			q(74215),	-- Skinning Skald the Impaler
 			q(74216),	-- Skinning Snufflegust
+			q(74219),	-- Skinning Ancient Hornswog
 			q(74220),	-- Skinning Mamonth (War Party Event)
 			q(74223),	-- Skinning Skewersnout
 			q(74224),	-- Skinning Enkine the Voracious
