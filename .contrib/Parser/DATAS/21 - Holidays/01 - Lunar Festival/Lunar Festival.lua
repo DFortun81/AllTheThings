@@ -566,6 +566,8 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["qg"] = 15566,	-- Elder Snowcrown
 				-- #if AFTER CATA
 				["coord"] = { 75.7, 54.4, EASTERN_PLAGUELANDS },
+				-- #elseif AFTER WRATH
+				["coord"] = { 75.7, 54.6, EASTERN_PLAGUELANDS },
 				-- #else
 				["coord"] = { 81.5, 60.5, EASTERN_PLAGUELANDS },
 				-- #endif
@@ -589,6 +591,8 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["qg"] = 15592,	-- Elder Windrun
 				-- #if AFTER CATA
 				["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
+				-- #elseif AFTER WRATH
+				["coord"] = { 35.6, 68.8, EASTERN_PLAGUELANDS },
 				-- #else
 				["coord"] = { 39.7, 75.4, EASTERN_PLAGUELANDS },
 				-- #endif
@@ -598,6 +602,8 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["qg"] = 15576,	-- Elder Winterhoof
 				-- #if AFTER CATA
 				["coord"] = { 40.0, 72.4, THE_CAPE_OF_STRANGLETHORN },
+				-- #elseif AFTER TBC
+				["coord"] = { 26.4, 76.6, STRANGLETHORN_VALE },
 				-- #else
 				["coord"] = { 27.6, 74.2, STRANGLETHORN_VALE },
 				-- #endif
@@ -1049,8 +1055,10 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["qg"] = 15562,	-- Elder Hammershout
 				-- #if AFTER CATA
 				["coord"] = { 34.5, 50.3, ELWYNN_FOREST },
+				-- #elseif AFTER WRATH
+				["coord"] = { 36.3, 66.1, STORMWIND_CITY },
 				-- #else
-				["coord"] = { 21.40, 53.87, STORMWIND_CITY },
+				["coord"] = { 21.6, 54, STORMWIND_CITY },
 				-- #endif
 				["isYearly"] = true,
 			}),
