@@ -100,7 +100,15 @@ root("Instances", tier(CLASSIC_TIER, {
 						6805,	-- Stormers and Rumblers
 					},
 					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = { BLACKROCK_SPIRE },
+					["maps"] = {
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Eye of the Emberseer

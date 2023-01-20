@@ -1036,7 +1036,15 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				-- #else
 				["description"] = "Located in Lower Blackrock Spire in Hordemar City. He can be found on the left as you cross the first wooden bridge.",
 				-- #endif
-				["maps"] = { BLACKROCK_SPIRE },
+				["maps"] = {
+					BLACKROCK_SPIRE,
+					LBRS_TAZZALOR,
+					LBRS_SKITTERWEB_TUNNELS,
+					LBRS_HORDEMAR_CITY,
+					LBRS_HALL_OF_BLACKHAND,
+					LBRS_HALYCONS_LAIR,
+					LBRS_CHAMBER_OF_BATTLE,
+				},
 				["isYearly"] = true,
 			}),
 			q(8676, {	-- Wildmane the Elder

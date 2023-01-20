@@ -297,6 +297,12 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["maps"] = {
 						236,	-- Capital Gardens
 						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
 					},
 					["timeline"] = { "removed 4.0.3" },
 					["cost"] = {
@@ -347,7 +353,14 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					-- #endif
 					["maps"] = {
 						236,	-- Capital Gardens
-						BLACKROCK_SPIRE, STRATHOLME
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+						STRATHOLME
 					},
 					["timeline"] = { "removed 4.0.3" },
 					["cost"] = {
