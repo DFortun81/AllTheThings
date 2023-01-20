@@ -145,13 +145,10 @@ root("Promotions", {
 						i(201699, {	-- Festering Emerald Drake
 							["description"] = "Obtained if you set up a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",
 						}),
-						i(23705, {	-- Tabard of Flame
-						-- Description is under the previous 6 Months Promo (2022 14th July until 15th January 2023)
-						-- ["description"] = "Obtained if you set up a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",
-						}),
-						i(200060, {	-- Hopling
-							["description"] = "Obtained if you set up a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023 or a 6 Month WoW Subscription between 17th January 2023 until 31st July 2023.",
-						}),
+						-- Also part of 12 Month Sub. For Historys Sake
+						-- i(23705),	-- Tabard of Flame
+						-- i(200060),	-- Hopling
+						
 					},
 					["u"] = REMOVED_FROM_GAME,
 				}),
