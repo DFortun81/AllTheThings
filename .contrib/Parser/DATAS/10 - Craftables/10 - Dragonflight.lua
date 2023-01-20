@@ -96,7 +96,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71278, { ["name"] = "First Craft: Phial of Elemental Chaos", }),	-- Phial of Elemental Chaos
 			-- Air Phials
 			q(71274, { ["name"] = "First Craft: Aerated Phial of Deftness", }),	-- Aerated Phial of Deftness
-			--q(, { ["name"] = "First Craft: Aerated Phial of Quick Hands", }),	-- Aerated Phial of Quick Hands
+			q(71273, { ["name"] = "First Craft: Aerated Phial of Quick Hands", }),	-- Aerated Phial of Quick Hands
 			q(71272, { ["name"] = "First Craft: Charged Phial of Alacrity", }),	-- Charged Phial of Alacrity
 			q(71268, { ["name"] = "First Craft: Phial of Charged Isolation", }),	-- Phial of Charged Isolation
 			q(71270, { ["name"] = "First Craft: Phial of Static Empowerment", }),	-- Phial of Static Empowerment
