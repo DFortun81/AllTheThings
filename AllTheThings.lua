@@ -5360,6 +5360,7 @@ end
 -- over multiple frames to reduce stutter
 local function FillGroupsRecursiveAsync(group, FillData)
 	-- app.PrintDebug("FillGroupsAsync",group.hash,depth)
+	if group.skipFilling then return; end
 	-- do not fill 'saved' groups in ATT windows
 	-- or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT then
@@ -5444,6 +5445,7 @@ app.BuildCost = function(group)
 				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
 				["sourceIgnored"] = true,
 				["OnUpdate"] = app.AlwaysShowUpdate,
+				["skipFilling"] = true,
 				["g"] = {},
 			};
 		local costItem;
@@ -5635,6 +5637,7 @@ app.BuildSourceParent = function(group)
 				["description"] = L["SOURCES_DESC"],
 				["icon"] = "Interface\\Icons\\inv_misc_spyglass_02",
 				["OnUpdate"] = app.AlwaysShowUpdate,
+				["skipFilling"] = true,
 				["g"] = {},
 			};
 			local clonedParent, keepSource;
@@ -15329,6 +15332,7 @@ function app:CreateMiniListForGroup(group)
 						["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
 						["g"] = g,
 						["OnUpdate"] = app.AlwaysShowUpdate,
+						["skipFilling"] = true,
 						["sourceIgnored"] = true,
 					};
 				else
@@ -15337,6 +15341,7 @@ function app:CreateMiniListForGroup(group)
 						["description"] = L["UNIQUE_APPEARANCE_LABEL_DESC"],
 						["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
 						["OnUpdate"] = app.AlwaysShowUpdate,
+						["skipFilling"] = true,
 						["sourceIgnored"] = true,
 					};
 				end
@@ -15402,8 +15407,16 @@ function app:CreateMiniListForGroup(group)
 						end
 					end
 					-- add the group showing the related Set information for this popout
-					if not group.g then group.g = { app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["sourceIgnored"] = true, ["g"] = g }) }
-					else tinsert(group.g, app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["sourceIgnored"] = true, ["g"] = g })) end
+					if not group.g then group.g = { app.CreateGearSet(setID, {
+						["OnUpdate"] = app.AlwaysShowUpdate,
+						["sourceIgnored"] = true,
+						["skipFilling"] = true,
+						["g"] = g }) }
+					else tinsert(group.g, app.CreateGearSet(setID, {
+						["OnUpdate"] = app.AlwaysShowUpdate,
+						["sourceIgnored"] = true,
+						["skipFilling"] = true,
+						["g"] = g })) end
 				end
 			end
 		end
@@ -15584,6 +15597,7 @@ function app:CreateMiniListForGroup(group)
 					["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 					["OnUpdate"] = app.AlwaysShowUpdate,
 					["sourceIgnored"] = true,
+					["skipFilling"] = true,
 					-- copy any sourceQuests into the header incase the root is not actually a quest
 					["sourceQuests"] = root.sourceQuests,
 				};

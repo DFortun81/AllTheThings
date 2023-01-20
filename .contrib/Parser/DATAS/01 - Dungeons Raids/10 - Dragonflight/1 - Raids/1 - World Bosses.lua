@@ -23,6 +23,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			q(69929, {	-- Strunraan (WQ)
+				["coord"] = { 82.0, 76.0, OHNAHRAN_PLAINS },
 				["sym"] = {
 					{"select","encounterID",2515,},{"pop"},	-- Original WB
 				},
@@ -42,6 +43,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			q(69930, {	-- Basrikron (WQ)
+				["coord"] = { 55.0, 77.7, THE_WAKING_SHORES },
 				["sym"] = {
 					{"select","encounterID",2506,},{"pop"},	-- Original WB
 				},
@@ -61,6 +63,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			q(69927, {	-- Bazual (WQ)
+				["coord"] = { 77.7, 35.8, THE_AZURE_SPAN },
 				["sym"] = {
 					{"select","encounterID",2517,},{"pop"},	-- Original WB
 				},
@@ -80,6 +83,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			q(69928, {	-- Liskanoth (WQ)
+				["coord"] = { 53.7, 64.5, 2085 },
 				["sym"] = {
 					{"select","encounterID",2518,},{"pop"},	-- Original WB
 				},
