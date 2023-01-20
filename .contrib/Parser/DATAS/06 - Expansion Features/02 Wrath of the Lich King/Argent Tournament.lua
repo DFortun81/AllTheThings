@@ -13,7 +13,7 @@ local VALIANTS_SEAL = i(44987);	-- Valiant's Seal
 -- The dailies are locked until they're unlocked by completing A Silver Confidant for Alliance or The Sunreavers for Horde
 local CRUSADER_DAILY_OnClick = [[function(row, button)
 	if button == "RightButton" and row.ref.ach then
-		_.CreateMiniListForGroup(row.ref.ach);
+		_:CreateMiniListForGroup(row.ref.ach);
 		return true;
 	end
 end]];
@@ -35,7 +35,7 @@ local CRUSADER_DAILY_OnUpdate = [[function(t)
 end]];
 local SILVER_COVENTANT_DAILY_OnClick = [[function(row, button)
 	if button == "RightButton" and row.ref.ach then
-		_.CreateMiniListForGroup(row.ref.ach);
+		_:CreateMiniListForGroup(row.ref.ach);
 		return true;
 	end
 end]];
@@ -57,7 +57,7 @@ local SILVER_COVENTANT_DAILY_OnUpdate = [[function(t)
 end]];
 local SUNREAVERS_DAILY_OnClick = [[function(row, button)
 	if button == "RightButton" and row.ref.ach then
-		_.CreateMiniListForGroup(row.ref.ach);
+		_:CreateMiniListForGroup(row.ref.ach);
 		return true;
 	end
 end]];
@@ -425,45 +425,75 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 							crit(5328, { -- Exalted with Darnassus
 								["_factions"] = { 69 },
 							}),
+							-- #if ANYCLASSIC
 							crit(9773, { -- Champion of Darnassus
 								["_achievements"] = { 2777 },
 							}),
+							-- #else
+							crit(11320, { -- Champion of Darnassus
+								["_achievements"] = { 2777 },
+							}),
+							-- #endif
 							title(114),	-- of Darnassus
 						}),
 						ach(2761, {	-- Exalted Champion of the Exodar
 							crit(5332, { -- Exalted with Exodar
 								["_factions"] = { 930 },
 							}),
+							-- #if ANYCLASSIC
 							crit(9774, { -- Champion of Exodar
 								["_achievements"] = { 2778 },
 							}),
+							-- #else
+							crit(11321, { -- Champion of Exodar
+								["_achievements"] = { 2778 },
+							}),
+							-- #endif
 							title(113),	-- of the Exodar
 						}),
 						ach(2762, {	-- Exalted Champion of Gnomeregan
 							crit(5329, { -- Exalted with Gnomeregan
 								["_factions"] = { 54 },
 							}),
+							-- #if ANYCLASSIC
 							crit(9775, { -- Champion of Gnomeregan
 								["_achievements"] = { 2779 },
 							}),
+							-- #else
+							crit(11322, { -- Champion of Gnomeregan
+								["_achievements"] = { 2779 },
+							}),
+							-- #endif
 							title(81),	-- of Gnomeregan
 						}),
 						ach(2764, {	-- Exalted Champion of Stormwind
 							crit(5331, { -- Exalted with Stormwind
 								["_factions"] = { 72 },
 							}),
+							-- #if ANYCLASSIC
 							crit(9777, { -- Champion of Stormwind
 								["_achievements"] = { 2781 },
 							}),
+							-- #else
+							crit(11324, { -- Champion of Stormwind
+								["_achievements"] = { 2781 },
+							}),
+							-- #endif
 							title(116),	-- of Stormwind
 						}),
 						ach(2763, {	-- Exalted Champion of Ironforge
 							crit(5330, { -- Exalted with Ironforge
 								["_factions"] = { 47 },
 							}),
+							-- #if ANYCLASSIC
 							crit(9776, { -- Champion of Ironforge
 								["_achievements"] = { 2780 },
 							}),
+							-- #else
+							crit(11323, { -- Champion of Ironforge
+								["_achievements"] = { 2780 },
+							}),
+							-- #endif
 							title(115),	-- of Ironforge
 						}),
 					},
@@ -521,21 +551,27 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 							["sourceQuest"] = 13738,	-- A Champion Rises (H) (Thunder Bluff)
 						}),
 						ach(2765, {	-- Exalted Champion of Orgrimmar
-							title(117),	-- of Orgrimmar
 							crit(5314, { -- Exalted with Orgrimmar
 								["_factions"] = { 76 },
 							}),
 							crit(9783, { -- Champion of Orgrimmar
 								["_achievements"] = { 2783 },
 							}),
+							title(117),	-- of Orgrimmar
 						}),
 						ach(2766, {	-- Exalted Champion of Sen'jin
 							crit(5313, { -- Exalted with Darkspear Trolls
 								["_factions"] = { 530 },
 							}),
+							-- #if ANYCLASSIC
 							crit(9784, { -- Champion of Sen'jin
 								["_achievements"] = { 2784 },
 							}),
+							-- #else
+							crit(11326, { -- Champion of Sen'jin
+								["_achievements"] = { 2784 },
+							}),
+							-- #endif
 							title(118),	-- of Sen'jin
 						}),
 						ach(2767, {	-- Exalted Champion of Silvermoon City
@@ -551,19 +587,31 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 							crit(5316, { -- Exalted with Undercity
 								["_factions"] = { 68 },
 							}),
+							-- #if ANYCLASSIC
 							crit(9787, { -- Champion of the Undercity
 								["_achievements"] = { 2787 },
 							}),
+							-- #else
+							crit(11329, { -- Champion of the Undercity
+								["_achievements"] = { 2787 },
+							}),
+							-- #endif
 							title(121),	-- of the Undercity
 						}),
 						ach(2768, {	-- Exalted Champion of Thunder Bluff
-							title(120),	-- of Thunder Bluff
 							crit(5315, { -- Exalted with Thunder Bluff
 								["_factions"] = { 81 },
 							}),
+							-- #if ANYCLASSIC
 							crit(9786, { -- Champion of Thunder Bluff
 								["_achievements"] = { 2786 },
 							}),
+							-- #else
+							crit(11328, { -- Champion of Thunder Bluff
+								["_achievements"] = { 2786 },
+							}),
+							-- #endif
+							title(120),	-- of Thunder Bluff
 						}),
 					},
 				}),
