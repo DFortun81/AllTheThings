@@ -2399,6 +2399,11 @@ root("Zones", {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					i(37659, { -- Enti's Quenched Sword
+						["crs"] = {
+							27105,	-- Kreug Oathbreaker <Ymirjar Giant Lord>
+						},
+					}),	
 					i(50406, {	-- Formula: Enchant Gloves - Angler (RECIPE!)
 						["crs"] = {
 							26343,	-- Indu'le Fisherman
@@ -2421,6 +2426,17 @@ root("Zones", {
 						["crs"] = { 26482 },	-- Arctic Grizzly
 						["f"] = RECIPES,
 					}),
+					i(38268, {	-- Spare Hand
+						["crs"] = {
+							27224,	-- Forgotten Knight
+							27401,	-- Risen Wintergarde Miner
+						},
+					}),	
+					i(38262, { -- Well-Worn Bat
+						["crs"] = {
+							27238,	-- Foreman Kaleiki
+						},
+					}),	
 				}),
 			},
 		}),

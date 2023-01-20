@@ -677,6 +677,24 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 						}),
 						-- #endif
+						i(39202, { -- Rusted Pitchfork
+							["crs"] = {
+								28576,	-- Citizen of Havenshire
+								28577,	-- Citizen of Havenshire
+								28819,	-- Scarlet Miner
+								28822,	-- Scarlet Miner
+								28557,	-- Scarlet Peasant
+							},
+						}),
+						i(39205, { -- Sole-Less Boots
+							["crs"] = {
+								28576,	-- Citizen of Havenshire
+								28577,	-- Citizen of Havenshire
+								28819,	-- Scarlet Miner
+								28822,	-- Scarlet Miner
+								28557,	-- Scarlet Peasant
+							},
+						}),
 					}),
 				},
 			}),

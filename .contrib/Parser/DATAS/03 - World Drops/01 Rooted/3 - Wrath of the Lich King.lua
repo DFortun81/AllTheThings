@@ -86,6 +86,14 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(35984),	-- Foothold Pants
 		i(35981),	-- Foothold Robe
 		i(35985),	-- Foothold Shoulderpads
+		i(33365),	-- Frost-Rimed Cloth Belt
+		i(33366),	-- Frost-Rimed Cloth Boots
+		i(33367),	-- Frost-Rimed Cloth Bracers
+		i(33368),	-- Frost-Rimed Cloth Gloves
+		i(33436),	-- Frost-Rimed Cloth Hat
+		i(33369),	-- Frost-Rimed Cloth Pants
+		i(33370),	-- Frost-Rimed Cloth Shoulderpads
+		i(33371),	-- Frost-Rimed Cloth Vest
 		i(36010),	-- Icemist Bracelets
 		i(36007),	-- Icemist Circlet
 		i(36006),	-- Icemist Gloves
@@ -118,6 +126,14 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(36013),	-- Tethys Robe
 		i(36011),	-- Tethys Sash
 		i(36012),	-- Tethys Slippers
+		i(33358),	-- Thread-Bare Cloth Belt
+		i(33359),	-- Thread-Bare Cloth Boots
+		i(33360),	-- Thread-Bare Cloth Bracers
+		i(33361),	-- Thread-Bare Cloth Gloves
+		i(33362),	-- Thread-Bare Cloth Pants
+		i(33363),	-- Thread-Bare Cloth Shoulderpads
+		i(33364),	-- Thread-Bare Cloth Vest
+		i(33438),	-- Thread-Bare Hat
 		i(36058),	-- Vizier Bracelets
 		i(36054),	-- Vizier Gloves
 		i(36055),	-- Vizier Hood
@@ -152,6 +168,22 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(36073),	-- Daggercap Spaulders
 		i(36072),	-- Daggercap Trousers
 		i(36067),	-- Daggercap Waistband
+		i(33379),	-- Frozen Armor
+		i(33380),	-- Frozen Belt
+		i(33381),	-- Frozen Boots
+		i(33382),	-- Frozen Bracers
+		i(33383),	-- Frozen Gloves
+		i(33434),	-- Frozen Leather Helmet
+		i(33384),	-- Frozen Pants
+		i(33385),	-- Frozen Shoulderpads
+		i(33372),	-- Fur-Lined Armor
+		i(33373),	-- Fur-Lined Belt
+		i(33374),	-- Fur-Lined Boots
+		i(33375),	-- Fur-Lined Bracers
+		i(33376),	-- Fur-Lined Gloves
+		i(33439),	-- Fur-Lined Leather Helmet
+		i(33377),	-- Fur-Lined Pants
+		i(33378),	-- Fur-Lined Shoulderpads
 		i(36171),	-- Geist Belt
 		i(36172),	-- Geist Boots
 		i(36174),	-- Geist Gloves
@@ -266,6 +298,14 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(36264),	-- Cormorant Leggings
 		i(36265),	-- Cormorant Mantle
 		i(36259),	-- Cormorant Waistband
+		i(33397),	-- Frigid Mail Armor
+		i(33398),	-- Frigid Mail Belt
+		i(33399),	-- Frigid Mail Boots
+		i(33400),	-- Frigid Mail Bracers
+		i(33433),	-- Frigid Mail Circlet
+		i(33401),	-- Frigid Mail Gloves
+		i(33402),	-- Frigid Mail Pants
+		i(33403),	-- Frigid Mail Shoulderpads
 		i(36186),	-- Garmaul Bracers
 		i(36181),	-- Garmaul Chestpiece
 		i(36182),	-- Garmaul Fists
@@ -274,6 +314,14 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(36184),	-- Garmaul Legguards
 		i(36185),	-- Garmaul Shoulderguards
 		i(36179),	-- Garmaul Waistband
+		i(33390),	-- Icy Mail Armor
+		i(33391),	-- Icy Mail Belt
+		i(33392),	-- Icy Mail Boots
+		i(33393),	-- Icy Mail Bracers
+		i(33437),	-- Icy Mail Circlet
+		i(33394),	-- Icy Mail Gloves
+		i(33395),	-- Icy Mail Pants
+		i(33396),	-- Icy Mail Shoulderpads
 		i(36250),	-- Mammoth Bindings
 		i(36244),	-- Mammoth Boots
 		i(36245),	-- Mammoth Chestpiece
@@ -396,6 +444,14 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(36359),	-- Frostpaw Helmet
 		i(36360),	-- Frostpaw Legguards
 		i(36362),	-- Frostpaw Vambraces
+		i(33412),	-- Frost-Worn Plate Belt
+		i(33413),	-- Frost-Worn Plate Boots
+		i(33414),	-- Frost-Worn Plate Bracers
+		i(33415),	-- Frost-Worn Plate Chestpiece
+		i(33416),	-- Frost-Worn Plate Gloves
+		i(33435),	-- Frost-Worn Plate Helmet
+		i(33417),	-- Frost-Worn Plate Pants
+		i(33419),	-- Frost-Worn Plate Shoulderpads
 		i(36381),	-- Golem Breastplate
 		i(36382),	-- Golem Gauntlets
 		i(36379),	-- Golem Girdle
@@ -420,6 +476,14 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(36324),	-- Halgrind Greaves
 		i(36327),	-- Halgrind Helmet
 		i(36328),	-- Halgrind Legplates
+		i(33404),	-- Ice-Bound Plate Belt
+		i(33405),	-- Ice-Bound Plate Boots
+		i(33406),	-- Ice-Bound Plate Bracers
+		i(33407),	-- Ice-Bound Plate Chestpiece
+		i(33408),	-- Ice-Bound Plate Gloves
+		i(33440),	-- Ice-Bound Plate Helmet
+		i(33409),	-- Ice-Bound Plate Pants
+		i(33410),	-- Ice-Bound Plate Shoulderpads
 		i(36354),	-- Jormungar Bracers
 		i(36349),	-- Jormungar Breastplate
 		i(36350),	-- Jormungar Gauntlets
@@ -539,6 +603,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 	}),
 	category(227, {	-- Weapons
 		filter(ONE_HANDED_AXES, {
+			i(33426),	-- Chipped Timber Axe
 			i(36571),	-- Splicing Axe
 			i(36572),	-- Dinged Cleaver
 			i(36573),	-- Primeval Adze
@@ -560,6 +625,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36584),	-- Snowy Edge
 		}),
 		filter(TWO_HANDED_AXES, {
+			i(33429),	-- Ice Cleaver
 			i(36585),	-- Finned Battleaxe
 			i(36586),	-- Wreaking Battleaxe
 			i(36587),	-- Taunka Axe
@@ -577,6 +643,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(37811),	-- Captain Carver's Persuader
 		}),
 		filter(BOWS, {
+			i(33422),	-- Shattered Bow
 			i(36613),	-- Honorable Longbow
 			i(36614),	-- Yew Bow
 			i(36615),	-- Expert's Longbow
@@ -608,6 +675,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36640),	-- Scourge Crossbow
 		}),
 		filter(DAGGERS, {
+			i(33428),	-- Dulled Shiv
 			i(36473),	-- Pioneer's Dagger
 			i(36474),	-- Engraved Dagger
 			i(36475),	-- Seal Shortblade
@@ -658,6 +726,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(37749),	-- Shocking Claws
 		}),
 		filter(GUNS, {
+			i(33427),	-- Frost-Encrusted Rifle
 			i(36641),	-- Bound Musket
 			i(36642),	-- Flintlock Gun
 			i(36643),	-- Tracker's Musket
@@ -673,6 +742,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36654),	-- Harsh-Winter Rifle
 		}),
 		filter(ONE_HANDED_MACES, {
+			i(33423),	-- Rime-Covered Mace
 			i(36487),	-- Stone-Headed Gavel
 			i(36488),	-- Conifer Club
 			i(36489),	-- Iron Flanged Scepter
@@ -705,6 +775,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(37808),	-- Dragonjaw Mauler
 		}),
 		filter(TWO_HANDED_MACES, {
+			i(33431),	-- Icesmashing Mace
 			i(36501),	-- Granite Maul
 			i(36502),	-- Ungainly Mace
 			i(36503),	-- Toothless Bludgeon
@@ -737,6 +808,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(37813),	-- Banner Slicer
 		}),
 		filter(STAVES, {
+			i(33424),	-- Cracked Iron Staff
 			i(36543),	-- Survival Stick
 			i(36544),	-- Journeyed Staff
 			i(36545),	-- Branched Stick
@@ -769,6 +841,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(37806),	-- Zabra's Misplaced Staff
 		}),
 		filter(ONE_HANDED_SWORDS, {
+			i(33425),	-- Ice-Pitted Blade
 			i(36515),	-- Raider's Cutlass
 			i(36516),	-- Tribal Blade
 			i(36517),	-- Iron-Grip Shortsword
@@ -788,6 +861,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(44311),	-- Avool's Sword of Jin
 		}),
 		filter(TWO_HANDED_SWORDS, {
+			i(33430),	-- Abandoned Greatsword
 			i(36529),	-- Unearthed Broadsword
 			i(36530),	-- Whetted Ironblade
 			i(36531),	-- Sawtooth Greatsword
@@ -933,6 +1007,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(36427),	-- Engraved Ring
 		i(36422),	-- Filigree Ring
 		i(36418),	-- Floral Loop
+		i(40687),	-- Flores' Lost Seal of Approval
 		i(36420),	-- Gemstone Ring
 		i(36425),	-- Gold Twisted Ring
 		i(36419),	-- Glass Ring
