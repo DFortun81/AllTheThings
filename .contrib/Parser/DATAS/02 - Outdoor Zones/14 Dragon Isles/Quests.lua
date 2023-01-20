@@ -43,6 +43,27 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			["provider"] = { "n", 199119 },	-- Celormu
 			["coord"] = { 63.1, 13.6, THE_AZURE_SPAN },
 		}),
+		q(72972, {	-- The Waking Shores Reverse Tour
+			["sourceQuests"] = { 72488 },	-- The Thaldraszus Advanced Tour
+			["provider"] = { "n", 199119 },	-- Celormu
+			["coord"] = { 46.0, 63.0, THALDRASZUS },
+		}),
+		q(72982, {	-- The Ohn'ahran Plains Reverse Tour
+			["sourceQuests"] = { 72972 },	-- The Waking Shores Reverse Tour
+			["provider"] = { "n", 193411 },	-- Celormu
+			["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
+		}),
+		q(72984, {	-- The Azure Span Reverse Tour
+			["sourceQuests"] = { 72982 },	-- The Ohn'ahran Plains Reverse Tour
+			["provider"] = { "n", 199118 },	-- Celormu
+			["coord"] = { 88.0, 36.2, OHNAHRAN_PLAINS },
+		}),
+		q(72985, {	-- The Thaldraszus Reverse Tour
+			["sourceQuests"] = { 72984 },	-- The Azure Span Reverse Tour
+			["provider"] = { "n", 199119 },	-- Celormu
+			["coord"] = { 63.1, 13.6, THE_AZURE_SPAN },
+		}),
+
 		q(66858),
 		q(66925),
 		q(66959),
@@ -61,23 +82,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		q(72133),
 		q(72384),
 		q(72681),
-		q(72700),
-		q(72705),
-		q(72706),
-		q(72707),
-		q(72734),
 		q(72735),
 		q(72736),
-		q(72739),
-		q(72740),
 		q(72811),
 		q(72812),
 		q(72829),
 		q(72830),
-		q(72972),
-		q(72982),
-		q(72984),
-		q(72985),
 		q(73064),
 		q(73162),
 		q(73169),
