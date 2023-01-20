@@ -1077,6 +1077,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69856, {	-- Fulgurb
 					["provider"] = { "n", 193170 },	-- Fulgurb
 					["coord"] = { 74.9, 47.1, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
 				}),
 				q(66356, {	-- Irontree
 					["provider"] = { "n", 193128 },	-- Irontree
