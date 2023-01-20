@@ -46,15 +46,44 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 			ach(914, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of the Horde
 			ach(915, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of the Alliance
 			ach(1396, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of Northrend
-			ach(605),	-- A Coin of Ancestry
-			ach(606),	-- 5 Coins of Ancestry
-			ach(607),	-- 10 Coins of Ancestry
-			ach(608),	-- 25 Coins of Ancestry
-			ach(609),	-- 50 Coins of Ancestry
-			ach(626),	-- Lunar Festival Finery
-			ach(1281),	-- The Rocket's Red Glare
-			ach(1552),	-- Frenzied Firecracker
-			ach(937),	-- Elune's Blessing
+			ach(605, {	-- A Coin of Ancestry
+				["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			}),
+			ach(606, {	-- 5 Coins of Ancestry
+				["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			}),
+			ach(607, {	-- 10 Coins of Ancestry
+				["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			}),
+			ach(608, {	-- 25 Coins of Ancestry
+				["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			}),
+			ach(609, {	-- 50 Coins of Ancestry
+				["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			}),
+			ach(626, {	-- Lunar Festival Finery
+				["providers"] = {
+					{ "i", 21157 },	-- Festive Green Dress
+					{ "i", 21538 },	-- Festive Pink Dress
+					{ "i", 21539 },	-- Festive Purple Dress
+					{ "i", 21541 },	-- Festive Black Pant Suit
+					{ "i", 21544 },	-- Festive Blue Pant Suit
+					{ "i", 21543 },	-- Festive Teal Pant Suit
+				},
+			}),
+			ach(1281, {	-- The Rocket's Red Glare
+				["providers"] = {
+					{ "i", 21571 },	-- Blue Rocket Cluster
+					{ "i", 21574 },	-- Green Rocket Cluster
+					{ "i", 21576 },	-- Red Rocket Cluster
+				},
+			}),
+			ach(1552, {	-- Frenzied Firecracker
+				["provider"] = { "i", 21747 },	-- Festival Firecracker
+			}),
+			ach(937, {	-- Elune's Blessing
+				["sourceQuest"] = 8868,	-- Elune's Blessing
+			}),
 		}),
 		n(MAILBOX, {
 			i(21746, {	-- Lucky Red Envelope
@@ -1236,6 +1265,33 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "i", 21100, 30 } },	-- 30x Coin of Ancestry
 					}),
+				},
+			}),
+			n(15898, {	-- Lunar Festival Vendor
+				["coords"] = {
+					{ 34.6, 12.6, DARNASSUS },
+					{ 29.6, 14.6, IRONFORGE },
+					{ 36.6, 58.6, MOONGLADE },
+					-- #if AFTER CATA
+					{ 52.8, 56.2, ORGRIMMAR },
+					-- #else
+					{ 41.6, 32.6, ORGRIMMAR },
+					-- #endif
+					{ 70.6, 28.0, THUNDER_BLUFF },
+					{ 66.2, 35.8, UNDERCITY },
+				},
+				-- #if AFTER 4.0.3.13329
+				["crs"] = { 47897 },	-- Lunar Festival Vendor
+				-- #endif
+				["groups"] = {
+					i(21557),	-- Small Red Rocket
+					i(21558),	-- Small Blue Rocket
+					i(21559),	-- Small Green Rocket
+					i(21571),	-- Blue Rocket Cluster
+					i(21574),	-- Green Rocket Cluster
+					i(21576),	-- Red Rocket Cluster
+					i(21721),	-- Moonglow
+					i(21747),	-- Festival Firecracker
 				},
 			}),
 			n(15864, {	-- Valadar Starsong <Coin of Ancestry Collector>
