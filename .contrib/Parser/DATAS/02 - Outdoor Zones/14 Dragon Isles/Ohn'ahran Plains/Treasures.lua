@@ -87,6 +87,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			o(381575, {	-- Duck Trap Kit
+				["coord"] = { 70.0, 64.0, OHNAHRAN_PLAINS },
+				["description"] = "Found only when the Aylaag Camp is in this location. Used to summon Quackers the Terrible.",
+				["g"] = {
+					i(194740, {	-- Duck Trap Kit
+						i(194712, {	-- Empty Duck Trap
+							i(194739),	-- Trapped Duck
+						}),
+					}),
+				},
+			}),
 			-- objectID is mentioned here https://www.wowhead.com/item=195041/everliving-wooden-key#comments:id=5485045
 			-- but still missing from wowhead
 			o(378047, {	-- Emerald Chest
