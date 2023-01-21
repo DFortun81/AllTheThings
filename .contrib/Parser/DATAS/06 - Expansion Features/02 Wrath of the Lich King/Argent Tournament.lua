@@ -616,11 +616,6 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 				}),
 			}),
-			-- #if ANYCLASSIC
-			n(EXPLORATION, {
-				exploration(4658),	-- Argent Tournament Grounds
-			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(340, {	-- Argent Tournament Grounds, Icecrown
 					["cr"] = 33849,	-- Helidan Lightwing <Flight Master>

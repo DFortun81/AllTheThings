@@ -143,6 +143,7 @@ root("Zones", {
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4510),	-- Aldur'thar: The Desolation Gate
+					applyclassicphase(WRATH_PHASE_TWO, exploration(4658)),	-- Argent Tournament Grounds
 					exploration(4527),	-- Balargarde Fortress
 					exploration(4521),	-- Cathedral of Darkness
 					exploration(4518),	-- Corp'rethar: The Horror Gate
