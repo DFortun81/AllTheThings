@@ -834,7 +834,6 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9565,	-- Search Stillpine Hold
 					["coord"] = { 50.5, 11.6, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["model"] = 191579,
 					["lvl"] = lvlsquish(9, 1, 9),
 				}),
 				q(9462, {	-- Call of Fire (1/7)
