@@ -951,12 +951,12 @@ namespace ATT
                     }
                     names[id] = name;
 
-                    // Keep the name field for quests, so long as they don't have an item.
-                    // They are generally manually assigned in the database.
-                    //if (!data.ContainsKey("questID") || data.ContainsKey("itemID"))
-                    //{
-                    //    data.Remove("name");
-                    //}
+                    // certain object types should move their 'name' into the locale files
+                    if (objectData.ObjectType == "questID" ||
+                        objectData.ObjectType == "itemID")
+                    {
+                        LogDebug($"[{id}] = \"{name}\", -- move to en.lua ({objectData.ObjectType})");
+                    }
                 }
             }
 
