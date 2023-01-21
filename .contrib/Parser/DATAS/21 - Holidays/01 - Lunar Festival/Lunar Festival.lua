@@ -948,7 +948,11 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["coord"] = { 27.66, 11.64, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
 				["description"] = "Enter Stratholme through the main gate.  The Elder is in the northeast corner, east of The Unforgiven.",
 				-- #else
-				["coord"] = { 30.9, 16.6, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
+				-- #if AFTER WRATH
+				["coord"] = { 43.7, 17.5, EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
+				-- #else
+				["coord"] = { 48.1, 21.9, EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
+				-- #endif
 				["description"] = "Located inside of Stratholme in Festival Lane. Fastest route to him is from the Service Entrance and then head towards The Unforgiven on Live side.",
 				-- #endif
 				["maps"] = { STRATHOLME },
