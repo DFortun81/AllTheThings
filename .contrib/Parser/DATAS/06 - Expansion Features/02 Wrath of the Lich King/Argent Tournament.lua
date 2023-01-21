@@ -124,34 +124,74 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 				}),
 				ach(2836, {	-- Lance a Lot
 					crit(9918, {	-- Darnassus
-						["crs"] = { 33738, 35332 },	-- Darnassus Champion
+						["crs"] = {
+							33559,	-- Darnassus Valiant
+							33738,	-- Darnassus Champion
+							35332,	-- Darnassus Champion
+						},
 					}),
 					crit(10225, {	-- Gnomeregan
-						["crs"] = { 33740, 35331 },	-- Gnomeregan Champion
+						["crs"] = {
+							33558,	-- Gnomeregan Valiant
+							33740,	-- Gnomeregan Champion
+							35331,	-- Gnomeregan Champion
+						},
 					}),
 					crit(10226, {	-- Ironforge
-						["crs"] = { 33743, 35329 },	-- Ironforge Champion
+						["crs"] = {
+							33564,	-- Ironforge Valiant
+							33743,	-- Ironforge Champion
+							35329,	-- Ironforge Champion
+						},
 					}),
 					crit(10227, {	-- Orgrimmar
-						["crs"] = { 33744, 35314 }, -- Orgrimmar Champion
+						["crs"] = {
+							33306,	-- Orgrimmar Valiant
+							33744, -- Orgrimmar Champion
+							35314, -- Orgrimmar Champion
+						},
 					}),
 					crit(9919, {	-- Sen'jin
-						["crs"] = { 33745, 35323 },	-- Sen'jin Champion
+						["crs"] = {
+							33285,	-- Sen'jin Valiant
+							33745,	-- Sen'jin Champion
+							35323,	-- Sen'jin Champion
+						},
 					}),
 					crit(9920, {	-- Silvermoon City
-						["crs"] = { 33746, 35326 },	-- Silvermoon Champion
+						["crs"] = {
+							33382,	-- Silvermoon Valiant
+							33746,	-- Silvermoon Champion
+							35326,	-- Silvermoon Champion
+						},
 					}),
 					crit(10228, {	-- Stormwind
-						["crs"] = { 33747, 35328 },	-- Stormwind Champion
+						["crs"] = {
+							33561,	-- Stormwind Valiant
+							33747,	-- Stormwind Champion
+							35328,	-- Stormwind Champion
+						},
 					}),
 					crit(10224, {	-- The Exodar
-						["crs"] = { 33739, 35330 },	-- Exodar Champion
+						["crs"] = {
+							33562,	-- Exodar Valiant
+							33739,	-- Exodar Champion
+							35330,	-- Exodar Champion
+						},
 					}),
 					crit(9922, {	-- The Undercity
-						["crs"] = { 33749, 35327 },	-- Undercity Champion
+						["crs"] = {
+							33384,	-- Undercity Valiant
+							33749,	-- Undercity Champion
+							35327,	-- Undercity Champion
+						},
 					}),
 					crit(9921, {	-- Thunder Bluff
-						["crs"] = { 33748, 35325 },	-- Thunder Bluff Champion
+						["crs"] = {
+							33383,	-- Thunder Bluff Valiant
+							33748,	-- Thunder Bluff Champion
+							35325,	-- Thunder Bluff Champion
+						},
 					}),
 				}),
 				ach(3736, {	-- Pony Up!
