@@ -4052,9 +4052,10 @@ ResolveSymbolicLink = function(o)
 					if PruneFinalized then
 						s.g = nil;
 					end
-					-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
+					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 					if s.hash and s.hash == o.hash then
 						print("Symlink group pulled itself into finalized results!",o.hash)
+						s.sym = nil;
 					else
 						FillSymLinks(s);
 					end
@@ -4067,9 +4068,10 @@ ResolveSymbolicLink = function(o)
 					if PruneFinalized then
 						s.g = nil;
 					end
-					-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
+					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 					if s.hash and s.hash == o.hash then
 						print("Symlink group pulled itself into finalized results!",o.hash)
+						s.sym = nil;
 					else
 						FillSymLinks(s);
 					end
