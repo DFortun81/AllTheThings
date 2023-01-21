@@ -21,7 +21,7 @@ root("Instances", tier(SL_TIER, {
 				}),
 			})),
 			header(HEADERS.Achievement, SEASON_TORMENTED, bubbleDownSelf({
-				["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 },
+				["timeline"] = { "added 9.1.0", "removed 9.2.0" },
 			},{
 				ach(15073),		-- Shadowlands Keystone Explorer: Season Two
 				ach(15077, {	-- Shadowlands Keystone Conqueror: Season Two

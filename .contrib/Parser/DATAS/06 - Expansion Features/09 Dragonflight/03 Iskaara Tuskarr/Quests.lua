@@ -422,6 +422,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["minReputation"] = { 2511, 23 },	-- Iskaara Tuskarr Renown 23
 				["provider"] = { "n", 196016 },	-- Lontupit
 				["coord"] = { 14.0, 49.4, THE_AZURE_SPAN },
+				["altQuests"] = { 72637 },	-- 'A Comfy Seat'
+			}),
+			q(72637, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 23 },	-- Iskaara Tuskarr Renown 23
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["altQuests"] = { 70962 },	-- 'A Comfy Seat'
 			}),
 				-- RENOWN 24 --
 			q(70971, {	-- Arms for Every Arm
@@ -574,7 +581,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72400),	-- Triggered when hitting Renown 11
 		q(72782),	-- Triggered with 'A Lost Tribe' (68863)
 		q(72395),	-- Triggered with 'Trading Made Easier' (70966)
-		q(72637),	-- Triggered with 'A Comfy Seat' (70962)
 		q(72638),	-- Triggered with 'Arms for Every Arm'  (70971)
 		q(72639),	-- Triggered with 'Our Loyal, Lanky Steeds' (70972)
 		q(72281),	-- Triggered with 'Slacking and Sledding' (70976)

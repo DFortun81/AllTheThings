@@ -62,6 +62,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["isDaily"] = true,
 				["g"] = {
 					i(200448),	-- Abyssal Ward
+					i(197022),	-- Cliffside-wylderdrake-finned-neck
 					i(200151),	-- Seamist Blade
 				},
 			}),
