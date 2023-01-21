@@ -1260,5 +1260,6 @@ pet(191929, 0);	-- zzOld - [PH] White Flying Squirrel (REUSE)
 -----------------
 -- #if AFTER WRATH
 pet(198665, 384796);	-- Pebble's Pebble
+pet(200060, 388541);	-- Hoplet
 -- #endif
 -- #endif

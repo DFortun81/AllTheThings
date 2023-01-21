@@ -1598,5 +1598,6 @@ i(184865, 348459);	-- Reawakened Phase-Hunter
 -- #endif
 -- #if AFTER WRATH
 i(192455, 372677);	-- Kalu'ak Whalebone Glider
+i(201699, 394209);	-- Festering Emerald Drake
 -- #endif
 -- #endif
