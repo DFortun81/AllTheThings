@@ -301,6 +301,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(199872),	-- Tuskarr Trader's Cloak
 				},
+				["altQuests"] = { 72393 },	-- Dragon Isles Supplies
+			}),
+			q(72393 , {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 11 },	-- Iskaara Tuskarr Renown 12
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
+				},
+				["altQuests"] = { 70960 },	-- Trader's Apparel
 			}),
 				-- RENOWN 13 --
 			q(70955, {	-- Fascinating Fliers
@@ -428,6 +438,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["minReputation"] = { 2511, 23 },	-- Iskaara Tuskarr Renown 23
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
+				},
 				["altQuests"] = { 70962 },	-- 'A Comfy Seat'
 			}),
 				-- RENOWN 24 --
@@ -577,7 +590,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72781),	-- Triggered with 'Tuskarr Fishing Gear' (71230)
 		q(71184),	-- Triggered with 'While the Iron Is Hot' (66444)
 		q(72753),	-- Triggered with 'While the Iron Is Hot' (66444)
-		q(72393),	-- Triggered with 'Trader's Apparel' (70960)
 		q(72400),	-- Triggered when hitting Renown 11
 		q(72782),	-- Triggered with 'A Lost Tribe' (68863)
 		q(72395),	-- Triggered with 'Trading Made Easier' (70966)
