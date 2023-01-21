@@ -155,7 +155,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(193256, {	-- Nulltheria the Void Gazer
-				["coord"] = { 50.00, 45.87, THE_WAKING_SHORES },
+				["coord"] = { 56.00, 45.87, THE_WAKING_SHORES },
 				["description"] = "At the top of the Tower. Nearby ghostly telescopes will indicate her spawn timer:\n\n2 telescopes means roughly 2h30min till respawn.\n\n3 telescopes indicate 2h respawn till respawn.\n\n4 telescopes indicate 1h till respawn.",
 				["questID"] = 73888,
 				["g"] = {

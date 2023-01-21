@@ -28,6 +28,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 44.8, 69.0, THALDRASZUS },
 				["questID"] = 74060,
 				["g"] = {
+					i(196893),	-- Cliffside Wyylderdrake: Maned Jaw
 					i(200166),	-- Corrupted Drake Horn
 					i(197125),	-- Highland Drake: Coiled Horns
 				},
