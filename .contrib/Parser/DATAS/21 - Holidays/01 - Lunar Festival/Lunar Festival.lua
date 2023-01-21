@@ -72,11 +72,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				},
 			}),
 			ach(1281, {	-- The Rocket's Red Glare
-				["providers"] = {
-					{ "i", 21571 },	-- Blue Rocket Cluster
-					{ "i", 21574 },	-- Green Rocket Cluster
-					{ "i", 21576 },	-- Red Rocket Cluster
-				},
+				["provider"] = { "i", 21576 },	-- Red Rocket Cluster
 			}),
 			ach(1552, {	-- Frenzied Firecracker
 				["provider"] = { "i", 21747 },	-- Festival Firecracker

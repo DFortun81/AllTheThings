@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root("Promotions", {
+root("Promotions", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	-- #if ANYCLASSIC
 	tier(TBC_TIER, {
 		["timeline"] = { "added 2.5.1" },
@@ -188,4 +188,4 @@ root("Promotions", {
 		},
 	}),
 	-- #endif
-});
+}));
