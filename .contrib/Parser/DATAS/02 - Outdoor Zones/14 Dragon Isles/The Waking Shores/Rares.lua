@@ -248,5 +248,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 	m(THE_WAKING_SHORES, {
 		q(74000),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
 		q(74033),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
+		q(74037),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
 	}),
 })));

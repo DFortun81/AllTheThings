@@ -224,6 +224,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(69954, {	-- Infernum
 					["qg"] = 193648,	-- Infernum
 				}),
+				q(69975, {	-- Neela Firebane
+					["qg"] = 193686,	-- Neela Firebane
+				}),
 				q(69974, {	-- Pipspark Thundersnap
 					["qg"] = 193684,	-- Pipspark Thundersnap
 				}),

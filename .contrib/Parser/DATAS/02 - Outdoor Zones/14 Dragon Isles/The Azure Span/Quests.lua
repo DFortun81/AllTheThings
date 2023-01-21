@@ -1588,7 +1588,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["repeatable"] = true,
 				}),
 				q(65841, {	-- Stop the Spread
-					["sourceQuests"] = { 66026 },	-- Urgent Action Required
+					["sourceQuests"] = {
+						66026,	-- Urgent Action Required
+						72366,	-- Account Dragonflight Campaign Completed
+					},
+					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 19.1, 36.2, THE_AZURE_SPAN },
 				}),
 				q(69895, {	-- Summoned Destroyer
