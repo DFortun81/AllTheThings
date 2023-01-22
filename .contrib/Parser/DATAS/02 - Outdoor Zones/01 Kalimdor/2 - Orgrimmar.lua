@@ -113,6 +113,7 @@ root("Zones", m(KALIMDOR, {
 							},
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = HORDE_ONLY,
+							["description"] = "Requires skill 140 in Vanilla Blacksmithing.",
 							["cost"] = {
 								{ "i", 2868, 2 },	-- Patterned Bronze Bracers
 								{ "i", 7957, 2 },	-- Bronze Greatsword
