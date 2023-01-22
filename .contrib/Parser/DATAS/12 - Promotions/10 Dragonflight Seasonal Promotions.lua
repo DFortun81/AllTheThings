@@ -9,13 +9,13 @@ root("Promotions", {
 			-- "Pre" Season
 			mount(315132, {	-- Gargantuan Grrloc (MOUNT!)
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",
-				["u"] = BLIZZARD_BALANCE,
 				["timeline"] = { "added 10.0.0.46366" },
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			mount(381529, {	-- Telix the Stormhorn (MOUNT!)
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",
-				["u"] = BLIZZARD_BALANCE,
 				["timeline"] = { "added 10.0.0.46366" },
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(34493, {	-- Dragon Kite (PET!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 15th, 03:00 p.m. & November 18th, 11:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",

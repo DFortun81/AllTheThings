@@ -137,6 +137,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ 68.2, 79.2, OHNAHRAN_PLAINS },
 					{ 70.43, 63.49, OHNAHRAN_PLAINS },
 				},
+				["cost"] = {{"i",194739,1}},	-- Trapped Duck
 				["questID"] = 73972,
 				-- ["g"] = {
 

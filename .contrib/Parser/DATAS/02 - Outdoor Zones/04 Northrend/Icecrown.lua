@@ -143,6 +143,7 @@ root("Zones", {
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4510),	-- Aldur'thar: The Desolation Gate
+					applyclassicphase(WRATH_PHASE_TWO, exploration(4658)),	-- Argent Tournament Grounds
 					exploration(4527),	-- Balargarde Fortress
 					exploration(4521),	-- Cathedral of Darkness
 					exploration(4518),	-- Corp'rethar: The Horror Gate
@@ -2275,8 +2276,13 @@ root("Zones", {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					-- #if AFTER SHADOWLANDS
 					i(50379),	-- Battered Hilt (Alliance) - These are dropping zone-wide during Shadowlands Prepatch Event; remains to be seen whether they will permanently drop from here.
 					i(50380),	-- Battered Hilt (Horde)
+					-- #endif
+					applyclassicphase(WRATH_PHASE_TWO, i(47035, {	-- Discarded Soul Crystal
+						["provider"] = { "o", 195344 },	-- Discarded Soul Crystal
+					})),
 					i(37330, {	-- Formula: Enchant Cloak - Superior Arcane Resistance (RECIPE!)
 						["crs"] = {
 							32297,	-- Cult Researcher

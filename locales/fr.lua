@@ -931,6 +931,20 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+-- Fall-back 'name' values for Quests based on QuestID
+local a = L.QUEST_NAMES;
+for key,value in pairs({
+	-- [QuestID] = "Name",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Items based on ItemID
+local a = L.ITEM_NAMES;
+for key,value in pairs({
+	-- [ItemID] = "Name",
+})
+do a[key] = value; end
+
 local a = app.ObjectNames;
 for key,value in pairs({
 	[31] = "Statue du vieux lion",	-- Old Lion Statue
@@ -1491,18 +1505,35 @@ for key,value in pairs({
 	[194049] = "Feu de joie de l'Alliance",	-- Alliance Bonfire
 	[194105] = "Bigobox 413",	-- Buzzbox 413
 	[194122] = "Bigobox 723",	-- Buzzbox 723
+	[194213] = "Jacinthe d'hiver",	-- Winter Hyacinth
+	[194238] = "Lame de Drak'Mar",	-- Blade of Drak'Mar
+	[194341] = "Journal poussiéreux",	-- Dusty Journal
 	[194378] = "Document volé de la Ligue des explorateurs",	-- Stolen Explorers' League Document
 	[194387] = "Document volé de la Ligue des explorateurs",	-- Stolen Explorers' League Document
 	[194388] = "Document volé de la Ligue des explorateurs",	-- Stolen Explorers' League Document
 	[194389] = "Document volé de la Ligue des explorateurs",	-- Stolen Explorers' League Document
 	[194390] = "Document volé de la Ligue des explorateurs",	-- Stolen Explorers' League Document
 	[194391] = "Document volé de la Ligue des explorateurs",	-- Stolen Explorers' League Document
+	[194423] = "Invitation au tournoi volée",	-- Stolen Tournament Invitation
+	[194424] = "Ordres du Chevalier noir",	-- Black Knight's Orders
+	--TODO: [194461] = "Stone Block",	-- Stone Block
+	[194463] = "Petit bloc de pierre",	-- Small Stone Block	--TODO: This was taken from wotlk Wowhead
 	[194479] = "Flaque de sang",	-- Pool of Blood
+	[194537] = "Tombe de sire Wendell",	-- Sir Wendell's Grave
+	[194538] = "Tombe de Connall",	-- Connall's Grave
+	[194539] = "Tombe de Lorien",	-- Lorien's Grave
 	[194555] = "Console de l'Archivum",	-- Archivum Console
+	[194618] = "Râtelier de lances",	-- Lance Rack
+	[194622] = "Râtelier de lances",	-- Lance Rack
 	[194714] = "Etabli dégoûtant",	-- Disgusting Workbench
+	[194908] = "Râtelier de lances",	-- Lance Rack
+	[194909] = "Râtelier de lances",	-- Lance Rack
 	[195022] = "Œuf de peau-de-venin",	-- Venomhide Ravasaur Egg
 	[195037] = "Œuf de silithide",	-- Silithid Egg
 	[195134] = "La bombe",	-- The Bomb
+	[195274] = "Pilon de haut-trotteur volé",	-- Stolen Tallstrider Leg
+	--TODO: [195308] = "Mysterious Snow Mound",	-- Mysterious Snow Mound
+	[195344] = "Cristal d'âme abandonné",	-- Discarded Soul Crystal
 	[195431] = "Radio du quartier-général",	-- Headquarters Radio
 	[195433] = "Tablettes antiques",	-- Ancient Tablets
 	[195435] = "Râtelier d'armes",	-- Weapons Cabinet
@@ -1517,6 +1548,7 @@ for key,value in pairs({
 	[196393] = "Relique cassée",	-- Broken Relic
 	[196832] = "Pierre de vision supérieure",	-- Upper Scrying Stone
 	[196833] = "Pierre de vision inférieure",	-- Lower Scrying Stone
+	[201367] = "Cœur des brumes",	-- Heart of the Mists
 	[201578] = "Poster de recrutement des Disjoncteurs",	-- Wrenchmen Recruitment Poster
 	[202080] = "Œuf de Flèche",	-- Dart's Nest
 	[202081] = "Œuf de Takk",	-- Takk's Nest
@@ -3546,6 +3578,7 @@ for key,value in pairs({
 	[381511] = "Tête de harpon",	-- Harpoon Head
 	[381513] = "Vieille pioche",	-- Old Pickaxe
 	[381514] = "Basalte poli par la mer",	-- Sea-Polished Basalt
+	[381575] = "Nécessaire pour piège à canard",	-- Duck Trap Kit
 	[381579] = "Requête des archives",	-- Archivists' Request
 	[381650] = "Requête des archives",	-- Archivists' Request
 	[381653] = "Inscriptions à Croc-claque-crame",	-- Fang Flap Fire Signups
@@ -3555,7 +3588,7 @@ for key,value in pairs({
 	[381664] = "Requête des archives",	-- Archivists' Request
 	[381667] = "Requête des archives",	-- Archivists' Request
 	[381668] = "Requête des archives",	-- Archivists' Request
-	[381669] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
+	[381669] = "Requête des archives",	-- Archivists' Request
 	[381670] = "Requête des archives",	-- Archivists' Request
 	[381671] = "Requête des archives",	-- Archivists' Request
 	[381672] = "Requête des archives",	-- Archivists' Request
@@ -3569,6 +3602,9 @@ for key,value in pairs({
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caisse de loupiotes fraîches",	-- Case of Fresh Gleamfish
+	[383733] = "Terre retournée",	-- Disturbed Dirt
+	[383734] = "Terre retournée",	-- Disturbed Dirt
+	[383735] = "Terre retournée",	-- Disturbed Dirt
 	[384318] = "Marque-page discret",	-- Inconspicuous Bookmark
 	[384370] = "Notes délibérément en souffrance",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish

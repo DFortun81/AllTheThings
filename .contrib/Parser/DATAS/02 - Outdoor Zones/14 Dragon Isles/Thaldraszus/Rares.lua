@@ -28,7 +28,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 44.8, 69.0, THALDRASZUS },
 				["questID"] = 74060,
 				["g"] = {
+					i(196893),	-- Cliffside Wyylderdrake: Maned Jaw
 					i(200166),	-- Corrupted Drake Horn
+					i(197125),	-- Highland Drake: Coiled Horns
 				},
 			}),
 			n(193663, {	-- Craggravated Elemental
@@ -127,6 +129,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ 53.6, 42.8, THALDRASZUS },
 				},
 				["questID"] = 73892,
+				["g"] = {
+					i(196992),	-- Cliffside Wylderdrake: Heavy Horns
+				},
 			}),
 			-- n(193240),	-- Riverwalker Tamopo // under DF/Timed Based Rare
 			n(193666, {	-- Rokmur
@@ -137,8 +142,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(191305, {	-- The Great Shellkhan
-				["description"] = "Needs fresh fish from Azure Span.",
-				["coord"] = { 38.5, 68.2, THALDRASZUS },
+				["description"] = "Needs a Case of Fresh Gleamfish fish from Azure Span.",
+				["coords"] = { 
+					{ 38.5, 68.2, THALDRASZUS },	-- Rare
+					{ 45.63, 54.82, THE_AZURE_SPAN },	-- Fish
+				},
 				["questID"] = 74085,
 				["isDaily"] = true,
 				["cost"] = { { "i", 200949, 1 }, },	-- 1x Case of Fresh Gleamfish

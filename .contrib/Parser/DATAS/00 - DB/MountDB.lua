@@ -1586,6 +1586,7 @@ i(191114, 369476);	-- Amalgam of Rage
 i(199412, 387231);	-- Hailstorm Armoredon
 i(201789, 394737);	-- Vicious Sabertooth [A]
 i(201788, 394738);	-- Vicious Sabertooth [H]
+i(0, 369451);		-- Jade Foreseer
 
 ------------------
 -- PATCH 10.0.5 --
@@ -1622,5 +1623,6 @@ i(184865, 348459);	-- Reawakened Phase-Hunter
 -- #endif
 -- #if AFTER WRATH
 i(192455, 372677);	-- Kalu'ak Whalebone Glider
+i(201699, 394209);	-- Festering Emerald Drake
 -- #endif
 -- #endif

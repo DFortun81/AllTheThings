@@ -73,6 +73,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				petbattle(q(66551, {	-- The Terrible Three
 					["coord"] = { 39.0, 83.5, THE_WAKING_SHORES }
 				})),
+				q(66203, {	-- Wash Over Them
+					["coord"] = { 39.5, 75.1, THE_WAKING_SHORES }
+				}),
 				q(67012, {	-- When Riverbeasts Fly
 					["coord"] = { 77.4, 48.4, THE_WAKING_SHORES },
 				}),

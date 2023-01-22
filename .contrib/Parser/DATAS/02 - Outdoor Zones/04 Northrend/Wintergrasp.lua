@@ -244,6 +244,9 @@ local WINTERGRASP_HEIRLOOMS = pvp({
 	moh(8, i(122378, {	-- Exquisite Sunderseer Mantle
 		["timeline"] = { "added 6.1.0.19445" },
 	})),
+	moh(4, i(122371, {	-- Inherited Insignia of the Alliance
+		["timeline"] = { "added 6.1.0.19445" },
+	})),
 	moh(4, i(122370, {	-- Inherited Insignia of the Horde
 		["timeline"] = { "added 6.1.0.19445" },
 	})),
@@ -274,7 +277,7 @@ local WINTERGRASP_HEIRLOOMS = pvp({
 	moh(10, i(122367, {	-- The Blessed Hammer of Grace
 		["timeline"] = { "added 6.1.0.19445" },
 	})),
-	moh(10, i(122366, {	-- Unpgraded Dwarven Hand Cannon
+	moh(10, i(122366, {	-- Upgraded Dwarven Hand Cannon
 		["timeline"] = { "added 6.1.0.19445" },
 	})),
 	

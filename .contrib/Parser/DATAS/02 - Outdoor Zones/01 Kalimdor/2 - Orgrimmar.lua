@@ -745,16 +745,6 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 49.4, 59.2, ORGRIMMAR },
 					["races"] = { GOBLIN },
 				}),
-				q(8367, {	-- For Great Honor
-					["qg"] = 15350,	-- Horde Warbringer
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(13476, {	-- For Great Honor
-					["qg"] = 15350,	-- Horde Warbringer
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(31014, {	-- Hellscream's Gift
 					["qg"] = 62092,	-- Garrosh Hellscream
 					["coord"] = { 70.6, 30.8, ORGRIMMAR },
@@ -2100,19 +2090,13 @@ root("Zones", m(KALIMDOR, {
 						moh(8, i(122375, {	-- Aged Pauldrons of The Five Thunders
 							["timeline"] = { "added 6.1.0.19445" },
 						})),
-						moh(14, i(122338, {	-- Ancient Heirloom Armor Casing
-							["timeline"] = { "added 6.1.0.19445" },
-							["sym"] = {{ "fill" }},	-- simply fill this item
-						})),
-						moh(14, i(122339, {	-- Ancient Heirloom Scabbard
-							["timeline"] = { "added 6.1.0.19445" },
-							["sym"] = {{ "fill" }},	-- simply fill this item
-						})),
 						moh(12, i(122338, {	-- Ancient Heirloom Armor Casing
 							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = {{ "fill" }},	-- simply fill this item
 						})),
 						moh(14, i(122339, {	-- Ancient Heirloom Scabbard
 							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = {{ "fill" }},	-- simply fill this item
 						})),
 						moh(10, i(122369, {	-- Battleworn Thrash Blade
 							["timeline"] = { "added 6.1.0.19445" },

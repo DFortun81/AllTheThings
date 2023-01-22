@@ -1012,6 +1012,7 @@ app.L = {
 		[-27] = "Interface\\Icons\\Achievement_Boss_Overlord_Wyrmthalak",					-- Lower (Blackrock Spire)
 		[-28] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",								-- Upper (Blackrock Spire)
 		[-31] = app.asset("Category_Promo"),												-- Promotions
+		[-32] = "Interface\\Icons\\inv_sword_48",											-- Honor Titles
 		[-34] = app.asset("Interface_WorldQuest"),							            	-- World Quests
 		[-36] = app.asset("Category_InGameShop"),											-- In-Game Shop
 		[-37] = "Interface\\Icons\\Garrison_Building_MageTower",							-- Discovery
@@ -1259,6 +1260,7 @@ app.L = {
 		[-582] = app.asset("Expansion_WOTLK"),												-- Northrend Heroic Upgrade ("Cheap")
 		[-583] = app.asset("Expansion_WOTLK"),												-- Northrend Epic Upgrade
 		[-584] = app.asset("Expansion_DF"),													-- Dragonflight Seasonal Promotions
+		[-585] = "Interface\\Icons\\DiabloAnniversary_HoradricCube",						-- Diablo IV
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
@@ -1554,6 +1556,7 @@ app.L = {
 		[-27] = "Lower",														-- Lower (Blackrock Spire)
 		[-28] = "Upper",														-- Upper (Blackrock Spire)
 		[-31] = select(1,GetCategoryInfo(15268)),								-- Promotions
+		[-32] = HONOR .. " " .. PAPERDOLL_SIDEBAR_TITLES,						-- Honor Titles
 		[-34] = TRACKER_HEADER_WORLD_QUESTS,									-- World Quests
 		[-36] = BATTLE_PET_SOURCE_10,											-- In-Game Shop
 		[-37] = BATTLE_PET_SOURCE_11,											-- Discovery
@@ -1952,7 +1955,7 @@ app.L = {
 		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 		-- 9.2
-	[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
+		[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 	-- Temp Sets for Creation Catalyst
@@ -2105,6 +2108,19 @@ app.L = {
 		[-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
 		[-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
 		[-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
+	};
+
+	-- Fall-back 'name' values for Quests based on QuestID
+	["QUEST_NAMES"] = {
+		[61296] = "Anima Crystal Shard",
+		[61297] = "Anima Crystal Shard",
+		[61298] = "Anima Crystal Shard",
+		[61299] = "Anima Crystal Shard",
+		[61300] = "Anima Crystal Shard",
+	};
+
+	-- Fall-back 'name' values for Items based on ItemID
+	["ITEM_NAMES"] = {
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter

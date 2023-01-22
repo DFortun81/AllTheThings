@@ -1588,6 +1588,31 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				},
 				["timeline"] = { "added 3.3.2.11403" },
 				["groups"] = {
+					i(122339, {	-- Ancient Heirloom Scabbard
+						["cost"] = { { "i", 49927, 200 } },	-- 200x Love Token
+						["timeline"] = { "added 6.1.0.19445" },
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(167732, {	-- Battle-Hardened Heirloom Scabbard
+						["cost"] = { { "i", 49927, 450 } },	-- 450x Love Token
+						["timeline"] = { "added 8.1.5.29701" },
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(187998, {	-- Eternal Heirloom Scabbard
+						["cost"] = { { "i", 49927, 450 } },	-- 450x Love Token
+						["timeline"] = { "added 9.1.5.40871" },
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(122341, {	-- Timeworn Heirloom Scabbard
+						["cost"] = { { "i", 49927, 450 } },	-- 450x Love Token
+						["timeline"] = { "added 6.1.0.19445" },
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(151615, {	-- Weathered Heirloom Scabbard
+						["cost"] = { { "i", 49927, 450 } },	-- 450x Love Token
+						["timeline"] = { "added 7.2.5.24076" },
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
 					i(50161, {	-- Dinner Suit Box
 						["timeline"] = { "added 3.3.2.11403" },
 						["cost"] = { { "i", 49927, 20 } },	-- 20x Love Token

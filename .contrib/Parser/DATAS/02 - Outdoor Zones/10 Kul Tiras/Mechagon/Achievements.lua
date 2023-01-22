@@ -202,7 +202,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
 					["_quests"] = { 55534 },	-- Rustbolt Gramophone
 				}),
 				crit(2, {	-- Gnomeregan Forever
-					["_quests"] = { 56515 },	-- Vinyl: Gnomeragan Forever
+					["_quests"] = { 56515 },	-- Vinyl: Gnomeregan Forever
 				}),
 				crit(3, {	-- Mimiron's Brainstorm
 					["_quests"] = { 56516 },	-- Vinyl: Mimiron's Brainstorm

@@ -47,6 +47,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(192007),	-- Wyrmforged Sabatons
 		}),
 		filter(TRINKET_F, {
+			i(197934),	-- Ancestral Protector's Stone
 			i(198407),	-- Azure Arcanic Amplifier
 			i(193477),	-- Battle Scarred Scale
 			i(198627),	-- Blood of the Khansguard

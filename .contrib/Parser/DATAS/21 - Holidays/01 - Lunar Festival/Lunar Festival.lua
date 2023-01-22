@@ -72,15 +72,40 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 			ach(914, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of the Horde
 			ach(915, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of the Alliance
 			ach(1396, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of Northrend
-			ach(605),	-- A Coin of Ancestry
-			ach(606),	-- 5 Coins of Ancestry
-			ach(607),	-- 10 Coins of Ancestry
-			ach(608),	-- 25 Coins of Ancestry
-			ach(609),	-- 50 Coins of Ancestry
-			ach(626),	-- Lunar Festival Finery
-			ach(1281),	-- The Rocket's Red Glare
-			ach(1552),	-- Frenzied Firecracker
-			ach(937),	-- Elune's Blessing
+			ach(605, {	-- A Coin of Ancestry
+				["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			}),
+			ach(606, {	-- 5 Coins of Ancestry
+				["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			}),
+			ach(607, {	-- 10 Coins of Ancestry
+				["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			}),
+			ach(608, {	-- 25 Coins of Ancestry
+				["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			}),
+			ach(609, {	-- 50 Coins of Ancestry
+				["provider"] = { "i", 21100 },	-- Coin of Ancestry
+			}),
+			ach(626, {	-- Lunar Festival Finery
+				["providers"] = {
+					{ "i", 21157 },	-- Festive Green Dress
+					{ "i", 21538 },	-- Festive Pink Dress
+					{ "i", 21539 },	-- Festive Purple Dress
+					{ "i", 21541 },	-- Festive Black Pant Suit
+					{ "i", 21544 },	-- Festive Blue Pant Suit
+					{ "i", 21543 },	-- Festive Teal Pant Suit
+				},
+			}),
+			ach(1281, {	-- The Rocket's Red Glare
+				["provider"] = { "i", 21576 },	-- Red Rocket Cluster
+			}),
+			ach(1552, {	-- Frenzied Firecracker
+				["provider"] = { "i", 21747 },	-- Festival Firecracker
+			}),
+			ach(937, {	-- Elune's Blessing
+				["sourceQuest"] = 8868,	-- Elune's Blessing
+			}),
 		}),
 		n(MAILBOX, {
 			i(21746, {	-- Lucky Red Envelope
@@ -643,6 +668,8 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["qg"] = 15566,	-- Elder Snowcrown
 				-- #if AFTER CATA
 				["coord"] = { 75.7, 54.4, EASTERN_PLAGUELANDS },
+				-- #elseif AFTER WRATH
+				["coord"] = { 75.7, 54.6, EASTERN_PLAGUELANDS },
 				-- #else
 				["coord"] = { 81.5, 60.5, EASTERN_PLAGUELANDS },
 				-- #endif
@@ -666,6 +693,8 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["qg"] = 15592,	-- Elder Windrun
 				-- #if AFTER CATA
 				["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
+				-- #elseif AFTER WRATH
+				["coord"] = { 35.6, 68.8, EASTERN_PLAGUELANDS },
 				-- #else
 				["coord"] = { 39.7, 75.4, EASTERN_PLAGUELANDS },
 				-- #endif
@@ -675,6 +704,8 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["qg"] = 15576,	-- Elder Winterhoof
 				-- #if AFTER CATA
 				["coord"] = { 40.0, 72.4, THE_CAPE_OF_STRANGLETHORN },
+				-- #elseif AFTER TBC
+				["coord"] = { 26.4, 76.6, STRANGLETHORN_VALE },
 				-- #else
 				["coord"] = { 27.6, 74.2, STRANGLETHORN_VALE },
 				-- #endif
@@ -760,7 +791,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				-- #if AFTER CATA
 				["coord"] = { 48.5, 59.2, NORTHERN_BARRENS },
 				-- #else
-				["coord"] = { 51.2, 31.2, THE_BARRENS },
+				["coord"] = { 51.4, 30.7, THE_BARRENS },
 				-- #endif
 				["isYearly"] = true,
 			}),
@@ -866,7 +897,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				-- #if AFTER CATA
 				["coord"] = { 68.4, 69.9, NORTHERN_BARRENS },
 				-- #else
-				["coord"] = { 62.5, 37.2, THE_BARRENS },
+				["coord"] = { 62.7, 36.7, THE_BARRENS },
 				-- #endif
 				["isYearly"] = true,
 			}),
@@ -994,7 +1025,11 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["coord"] = { 27.66, 11.64, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
 				["description"] = "Enter Stratholme through the main gate.  The Elder is in the northeast corner, east of The Unforgiven.",
 				-- #else
-				["coord"] = { 30.9, 16.6, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
+				-- #if AFTER WRATH
+				["coord"] = { 43.7, 17.5, EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
+				-- #else
+				["coord"] = { 48.1, 21.9, EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
+				-- #endif
 				["description"] = "Located inside of Stratholme in Festival Lane. Fastest route to him is from the Service Entrance and then head towards The Unforgiven on Live side.",
 				-- #endif
 				["maps"] = { STRATHOLME },
@@ -1078,7 +1113,15 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				-- #else
 				["description"] = "Located in Lower Blackrock Spire in Hordemar City. He can be found on the left as you cross the first wooden bridge.",
 				-- #endif
-				["maps"] = { BLACKROCK_SPIRE },
+				["maps"] = {
+					BLACKROCK_SPIRE,
+					LBRS_TAZZALOR,
+					LBRS_SKITTERWEB_TUNNELS,
+					LBRS_HORDEMAR_CITY,
+					LBRS_HALL_OF_BLACKHAND,
+					LBRS_HALYCONS_LAIR,
+					LBRS_CHAMBER_OF_BATTLE,
+				},
 				["isYearly"] = true,
 			}),
 			q(8676, {	-- Wildmane the Elder
@@ -1126,8 +1169,10 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				["qg"] = 15562,	-- Elder Hammershout
 				-- #if AFTER CATA
 				["coord"] = { 34.5, 50.3, ELWYNN_FOREST },
+				-- #elseif AFTER WRATH
+				["coord"] = { 36.3, 66.1, STORMWIND_CITY },
 				-- #else
-				["coord"] = { 21.40, 53.87, STORMWIND_CITY },
+				["coord"] = { 21.6, 54, STORMWIND_CITY },
 				-- #endif
 				["isYearly"] = true,
 			}),
@@ -1172,6 +1217,31 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 			n(15909, {	-- Fariel Starsong <Coin of Ancestry Collector>
 				["coord"] = { 53.8, 35.3, MOONGLADE },
 				["groups"] = {
+					i(122338, {	-- Ancient Heirloom Armor Casing
+						["timeline"] = { "added 6.1.0.19445" },
+						["cost"] = { { "i", 21100, 40 } },	-- 40x Coin of Ancestry
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(167731, {	-- Battle-Hardened Heirloom Armor Casing
+						["timeline"] = { "added 8.1.5.29701" },
+						["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(187997, {	-- Eternal Heirloom Armor Casing
+						["timeline"] = { "added 9.1.5.40871" },
+						["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(122340, {	-- Timeworn Heirloom Armor Casing
+						["timeline"] = { "added 6.1.0.19445" },
+						["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
+					i(151614, {	-- Weathered Heirloom Armor Casing
+						["timeline"] = { "added 7.2.5.24076" },
+						["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
+						["sym"] = { { "fill" } },	-- simply fill this item
+					}),
 					i(44916, {	-- Pattern: Festival Dress
 						["timeline"] = { "added 3.0.8.9464" },
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
@@ -1280,6 +1350,33 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 						["timeline"] = { "added 8.1.0.28724" },
 						["cost"] = { { "i", 21100, 30 } },	-- 30x Coin of Ancestry
 					}),
+				},
+			}),
+			n(15898, {	-- Lunar Festival Vendor
+				["coords"] = {
+					{ 34.6, 12.6, DARNASSUS },
+					{ 29.6, 14.6, IRONFORGE },
+					{ 36.6, 58.6, MOONGLADE },
+					-- #if AFTER CATA
+					{ 52.8, 56.2, ORGRIMMAR },
+					-- #else
+					{ 41.6, 32.6, ORGRIMMAR },
+					-- #endif
+					{ 70.6, 28.0, THUNDER_BLUFF },
+					{ 66.2, 35.8, UNDERCITY },
+				},
+				-- #if AFTER 4.0.3.13329
+				["crs"] = { 47897 },	-- Lunar Festival Vendor
+				-- #endif
+				["groups"] = {
+					i(21557),	-- Small Red Rocket
+					i(21558),	-- Small Blue Rocket
+					i(21559),	-- Small Green Rocket
+					i(21571),	-- Blue Rocket Cluster
+					i(21574),	-- Green Rocket Cluster
+					i(21576),	-- Red Rocket Cluster
+					i(21721),	-- Moonglow
+					i(21747),	-- Festival Firecracker
 				},
 			}),
 			n(15864, {	-- Valadar Starsong <Coin of Ancestry Collector>

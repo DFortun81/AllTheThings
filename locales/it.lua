@@ -924,6 +924,20 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+-- Fall-back 'name' values for Quests based on QuestID
+local a = L.QUEST_NAMES;
+for key,value in pairs({
+	-- [QuestID] = "Name",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Items based on ItemID
+local a = L.ITEM_NAMES;
+for key,value in pairs({
+	-- [ItemID] = "Name",
+})
+do a[key] = value; end
+
 local a = app.ObjectNames;
 for key,value in pairs({
 	[31] = "Vecchia Statua di Leone",	-- Old Lion Statue
@@ -1484,18 +1498,35 @@ for key,value in pairs({
 	[194049] = "Falò dell'Alleanza",	-- Alliance Bonfire
 	[194105] = "Transanalizzatore 413",	-- Buzzbox 413
 	[194122] = "Transanalizzatore 723",	-- Buzzbox 723
+	[194213] = "Giacinto Invernale",	-- Winter Hyacinth
+	[194238] = "Lama di Drak'Mar",	-- Blade of Drak'Mar
+	[194341] = "Diario Impolverato",	-- Dusty Journal
 	[194378] = "Documento Rubato della Lega degli Esploratori",	-- Stolen Explorers' League Document
 	[194387] = "Documento Rubato della Lega degli Esploratori",	-- Stolen Explorers' League Document
 	[194388] = "Documento Rubato della Lega degli Esploratori",	-- Stolen Explorers' League Document
 	[194389] = "Documento Rubato della Lega degli Esploratori",	-- Stolen Explorers' League Document
 	[194390] = "Documento Rubato della Lega degli Esploratori",	-- Stolen Explorers' League Document
 	[194391] = "Documento Rubato della Lega degli Esploratori",	-- Stolen Explorers' League Document
+	[194423] = "Invito al Torneo Rubato",	-- Stolen Tournament Invitation
+	[194424] = "Ordini del Cavaliere Nero",	-- Black Knight's Orders
+	--TODO: [194461] = "Stone Block",	-- Stone Block
+	--TODO: [194463] = "Small Stone Block",	-- Small Stone Block
 	[194479] = "Pozza di Sangue",	-- Pool of Blood
+	[194537] = "Tomba di Ser Wendell",	-- Sir Wendell's Grave
+	[194538] = "Tomba di Connall",	-- Connall's Grave
+	[194539] = "Tomba di Lorien",	-- Lorien's Grave
 	[194555] = "Console dell'Archivum",	-- Archivum Console
+	[194618] = "Rastrelliera delle Lance",	-- Lance Rack
+	[194622] = "Rastrelliera delle Lance",	-- Lance Rack
 	[194714] = "Tavolo da Lavoro Disgustoso",	-- Disgusting Workbench
+	[194908] = "Rastrelliera delle Lance",	-- Lance Rack
+	[194909] = "Rastrelliera delle Lance",	-- Lance Rack
 	[195022] = "Uova di Malapelle",	-- Venomhide Ravasaur Egg
 	[195037] = "Uovo di Silitide",	-- Silithid Egg
 	[195134] = "La Bomba",	-- The Bomb
+	[195274] = "Zampa di Zampalunga Rubata",	-- Stolen Tallstrider Leg
+	--TODO: [195308] = "Mysterious Snow Mound",	-- Mysterious Snow Mound
+	[195344] = "Cristallo d'Anima Scartato",	-- Discarded Soul Crystal
 	[195431] = "Radio del Quartier Generale",	-- Headquarters Radio
 	[195433] = "Antiche Tavolette",	-- Ancient Tablets
 	[195435] = "Armadietto delle Armi",	-- Weapons Cabinet
@@ -1510,6 +1541,7 @@ for key,value in pairs({
 	[196393] = "Reliquia Danneggiata",	-- Broken Relic
 	[196832] = "Remotovisore Superiore",	-- Upper Scrying Stone
 	[196833] = "Remotovisore Inferiore",	-- Lower Scrying Stone
+	[201367] = "Cuore delle Nebbie",	-- Heart of the Mists
 	[201578] = "Cartello di Reclutamento dei Forzatori",	-- Wrenchmen Recruitment Poster
 	[202080] = "Nido di Dart",	-- Dart's Nest
 	[202081] = "Nido di Takk",	-- Takk's Nest
@@ -3509,7 +3541,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "La Gran Banca",	-- The Great Vault
 	[381045] = "Calice del Drago Dorato",	-- Golden Dragon Goblet
-	[381069] = "Rete da Pesca Piena",	-- Full Fishing Net	--TODO: this was manually translated
+	[381069] = "Rete da Pesca Piena",	-- Full Fishing Net
 	[381094] = "Spazzola Elegante",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "Mappa di Yennu",	-- Yennu's Map
@@ -3539,6 +3571,7 @@ for key,value in pairs({
 	[381511] = "Punta d'Arpione",	-- Harpoon Head
 	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
+	[381575] = "Kit per Trappola per Anatre",	-- Duck Trap Kit
 	[381579] = "Richiesta degli Archivisti",	-- Archivists' Request
 	[381650] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Iscrizioni a Zanne Ali Fuoco.",	-- Fang Flap Fire Signups
@@ -3562,6 +3595,9 @@ for key,value in pairs({
 	[382193] = "Cassa degli Elementi",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Cassa di Pescilume Freschi",	-- Case of Fresh Gleamfish
+	[383733] = "Terra Smossa",	-- Disturbed Dirt
+	[383734] = "Terra Smossa",	-- Disturbed Dirt
+	[383735] = "Terra Smossa",	-- Disturbed Dirt
 	[384318] = "Segnalibro Incospicuo",	-- Inconspicuous Bookmark
 	[384370] = "Appunti Deliberatamente Negligenti",	-- Deliberately Delinquent Notes
 	[384405] = "Pesce Semibollito",	-- Half-Boiled Fish

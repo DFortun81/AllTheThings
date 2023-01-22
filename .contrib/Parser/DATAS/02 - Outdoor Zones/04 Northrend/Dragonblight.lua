@@ -2404,7 +2404,13 @@ root("Zones", {
 						["crs"] = {
 							27105,	-- Kreug Oathbreaker <Ymirjar Giant Lord>
 						},
-					}),	
+					}),
+					applyclassicphase(WRATH_PHASE_TWO, i(44978, {	-- Blade of Drak'Mar
+						["provider"] = { "o", 194238 },	-- Blade of Drak'Mar
+						["coord"] = { 93, 26, DRAGONBLIGHT },
+						["cost"] = {{ "i", 45000, 4 }},	-- Winter Hyacinth
+						["cr"] = 33273,	-- Maiden of Drak'Mar
+					})),
 					i(50406, {	-- Formula: Enchant Gloves - Angler (RECIPE!)
 						["crs"] = {
 							26343,	-- Indu'le Fisherman
@@ -2431,18 +2437,18 @@ root("Zones", {
 						["coords"] = {
 							{ 81.0, 42.8, DRAGONBLIGHT },
 							{ 82.6, 68.6, DRAGONBLIGHT },
-						},	
+						},
 						["crs"] = {
 							27224,	-- Forgotten Knight
 							27401,	-- Risen Wintergarde Miner
 						},
-					}),	
+					}),
 					i(38262, { -- Well-Worn Bat
 						["coord"] = { 68.2, 74.2, DRAGONBLIGHT },
 						["crs"] = {
 							27238,	-- Foreman Kaleiki
 						},
-					}),	
+					}),
 				}),
 			},
 		}),

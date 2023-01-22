@@ -2355,7 +2355,7 @@ root("Zones", m(KALIMDOR, {
 					},
 				}),
 				n(12246, {	-- Super-Seller 680
-					["coord"] = { 60.0, 38.8, DESOLACE },
+					["coord"] = { 40.6, 79.2, DESOLACE },
 					["timeline"] = { "removed 5.0.4" },
 					["groups"] = {
 						i(7087, {	-- Pattern: Crimson Silk Cloak
@@ -2391,7 +2391,7 @@ root("Zones", m(KALIMDOR, {
 					},
 				}),
 				n(12245, {	-- Vendor-Tron 1000
-					["coord"] = { 60.2, 38.2, DESOLACE },
+					["coord"] = { 60.2, 38.0, DESOLACE },
 					["timeline"] = { "removed 5.0.4" },
 					["groups"] = {
 						i(5973, {	-- Pattern: Barbaric Leggings

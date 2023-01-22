@@ -90,6 +90,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			-- Jewelcrafting
 			o(384318, {	-- Inconspicuous Bookmark
 				["coord"] = { 58.5, 36.7, THALDRASZUS },
+				["questID"] = 72356,
+				["requireSkill"] = JEWELCRAFTING,
 				["g"] = {
 					i(194654),	-- Design: Convergent Prism (RECIPE!)
 				}

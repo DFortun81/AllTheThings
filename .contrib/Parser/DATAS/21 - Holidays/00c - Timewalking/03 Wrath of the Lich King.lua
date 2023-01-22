@@ -117,39 +117,7 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					i(129869, {	-- Xintor's Expeditioary Boots
 						["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
 					}),
-					-- Heirloom / Reputation Items
-					i(122338, {	-- Ancient Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 750 }, },		-- 750x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(122339, {	-- Ancient Heirloom Scabbard
-						["cost"] = { { "c", 1166, 900 }, },		-- 900x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(167732, {	-- Battle-Hardened Heirloom Scabbard
-						["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(122340, {	-- Timeworn Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(122341, {	-- Timeworn Heirloom Scabbard
-						["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(151614, {	-- Weathered Heirloom Armor Casing
-						["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(151615, {	-- Weathered Heirloom Scabbard
-						["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
+					-- Reputation Items
 					i(129955, {	-- Commendation of the Alliance Vanguard
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1166, 50 }, },	-- 50x Timewarped Badge

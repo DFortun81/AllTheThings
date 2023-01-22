@@ -261,7 +261,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			ach(15889, {	-- River Rapids Wrangler
-				i(198428),	-- Tuskarr Dinghy (TOY!)
+				["coord"] = { 45.0, 54.0, THE_AZURE_SPAN },
+				["g"] = {
+					i(198428),	-- Tuskarr Dinghy (TOY!)
+				},
 			}),
 			ach(16581, {	-- Seeing Blue
 				["coords"] = {

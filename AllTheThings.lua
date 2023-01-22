@@ -2422,9 +2422,9 @@ local function GetItemIDAndModID(modItemID)
 	if modItemID and tonumber(modItemID) then
 		-- print("GetItemIDAndModID",modItemID)
 		local itemID = math.floor(modItemID);
-		modItemID = (modItemID - itemID) * 100;
+		modItemID = (modItemID - itemID) * 100.0 + 0.0000005;
 		local modID = math.floor(modItemID);
-		modItemID = (modItemID - modID) * 10000;
+		modItemID = (modItemID - modID) * 10000.0 + 0.0000005;
 		local bonusID = math.floor(modItemID);
 		-- print(itemID,modID,bonusID)
 		return itemID, modID, bonusID;
@@ -3568,6 +3568,7 @@ local ResolveFunctions = {
 					criteriaObject.providers = {{ "i", assetID }};
 				elseif criteriaType == 110	-- Casting spells on specific target
 					or criteriaType == 29 or criteriaType == 69	-- Buff Gained
+					or criteriaType == 52 or criteriaType == 53	-- Class/Race (TODO?)
 					or criteriaType == 43 then	-- Exploration
 					-- Ignored
 				else
@@ -4049,9 +4050,10 @@ ResolveSymbolicLink = function(o)
 					if PruneFinalized then
 						s.g = nil;
 					end
-					-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
+					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 					if s.hash and s.hash == o.hash then
 						print("Symlink group pulled itself into finalized results!",o.hash)
+						s.sym = nil;
 					else
 						FillSymLinks(s);
 					end
@@ -4064,9 +4066,10 @@ ResolveSymbolicLink = function(o)
 					if PruneFinalized then
 						s.g = nil;
 					end
-					-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
+					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 					if s.hash and s.hash == o.hash then
 						print("Symlink group pulled itself into finalized results!",o.hash)
+						s.sym = nil;
 					else
 						FillSymLinks(s);
 					end
@@ -5128,8 +5131,7 @@ end
 
 -- Auto-Expansion logic
 do
-local included = {};
-local knownSkills, isInWindow;
+local knownSkills;
 -- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
 local SkipPurchases = {
 	[-1] = 0,	-- Whether to skip certain cost items
@@ -5148,7 +5150,7 @@ app.SetSkipPurchases = function(level)
 	end
 end
 -- Determines searches required for costs using this group
-local function DeterminePurchaseGroups(group, depth)
+local function DeterminePurchaseGroups(group, FillData)
 	-- do not fill purchases on certain items, can skip the skip though based on a level
 	local itemID = group.itemID;
 	local reqSkipLevel = itemID and SkipPurchases[itemID];
@@ -5162,21 +5164,21 @@ local function DeterminePurchaseGroups(group, depth)
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-collectibles",collectibles and #collectibles);
 		local groups = {};
 		local groupHash = group.hash;
-		local clone, hash, includeDepth;
+		local depth, included = FillData.Depth, FillData.Included;
+		local clone, hash;
 		for _,o in ipairs(collectibles) do
 			hash = o.hash;
 			-- don't add copies of this group if it matches the 'cost' group, or has already been added at a lower depth
 			-- technically this allows something to become nested at a high depth, and then multiple times at lower depths...
 			-- but hopefully that's ok and is a bit better for visibility than to exclude things
-			if hash ~= groupHash then
-				includeDepth = included[hash];
-				if not includeDepth or includeDepth >= depth then
-					included[hash] = depth;
-					clone = CreateObject(o);
-					-- this logic shows the previous 'currency' icon next to Things which are nested as a cost... maybe too cluttered
-					-- clone.indicatorIcon = "Interface_Vendor";
-					tinsert(groups, clone);
-				end
+			if hash ~= groupHash and not included[hash] then
+				-- once something is filled, don't fill under it regardless of depth
+				included[hash] = depth;
+				-- app.PrintDebug("Purchase @",depth,groupHash,"=>",hash)
+				clone = CreateObject(o);
+				-- this logic shows the previous 'currency' icon next to Things which are nested as a cost... maybe too cluttered
+				-- clone.indicatorIcon = "Interface_Vendor";
+				tinsert(groups, clone);
 			end
 		end
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
@@ -5188,7 +5190,7 @@ local function DeterminePurchaseGroups(group, depth)
 		return groups;
 	end
 end
-local function DetermineCraftedGroups(group)
+local function DetermineCraftedGroups(group, FillData)
 	local itemID = group.itemID;
 	if not itemID then return; end
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
@@ -5198,6 +5200,7 @@ local function DetermineCraftedGroups(group)
 	local filterSkill = not app.MODE_DEBUG and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
 
 	local craftableItemIDs = {};
+	local included = FillData.Included;
 	-- item is BoP
 	if filterSkill then
 		local craftedItemID, searchRecipes, recipe, skillID;
@@ -5271,6 +5274,7 @@ local function DetermineSymlinkGroups(group)
 end
 local NPCExpandHeaders = {
 	[-1] = true,	-- COMMON_BOSS_DROPS
+	[-20] = true,	-- COMMON_VENDOR_ITEMS
 	[-26] = true,	-- DROPS
 };
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
@@ -5321,15 +5325,15 @@ local function DetermineNPCDrops(group)
 	end
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
-local function FillGroupsRecursive(group, depth)
+local function FillGroupsRecursive(group, FillData)
 	-- app.PrintDebug("FillGroups",group.hash,depth)
 	-- increment depth if things are being nested
-	depth = (depth or 0) + 1;
+	FillData.Depth = FillData.Depth + 1;
 	local groups;
 	-- Determine Cost/Crafted/Symlink groups
 	groups = app.ArrayAppend(groups,
-		DeterminePurchaseGroups(group, depth),
-		DetermineCraftedGroups(group),
+		DeterminePurchaseGroups(group, FillData),
+		DetermineCraftedGroups(group, FillData),
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group));
 
@@ -5347,15 +5351,16 @@ local function FillGroupsRecursive(group, depth)
 			-- never nest the same Thing under itself
 			-- (prospecting recipes list the input as the output)
 			-- if o.hash ~= hash then
-				FillGroupsRecursive(o, depth);
+				FillGroupsRecursive(o, FillData);
 			-- end
 		end
 	end
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FunctionRunner to recursively follow the next layer of groups
 -- over multiple frames to reduce stutter
-local function FillGroupsRecursiveAsync(group, depth)
+local function FillGroupsRecursiveAsync(group, FillData)
 	-- app.PrintDebug("FillGroupsAsync",group.hash,depth)
+	if group.skipFilling then return; end
 	-- do not fill 'saved' groups in ATT windows
 	-- or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT then
@@ -5367,12 +5372,12 @@ local function FillGroupsRecursiveAsync(group, depth)
 	end
 
 	-- increment depth if things are being nested
-	depth = (depth or 0) + 1;
+	FillData.Depth = FillData.Depth + 1;
 	local groups;
 	-- Determine Cost/Crafted/Symlink groups
 	groups = app.ArrayAppend(groups,
-		DeterminePurchaseGroups(group, depth),
-		DetermineCraftedGroups(group),
+		DeterminePurchaseGroups(group, FillData),
+		DetermineCraftedGroups(group, FillData),
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group));
 
@@ -5394,19 +5399,23 @@ local function FillGroupsRecursiveAsync(group, depth)
 			-- never nest the same Thing under itself
 			-- (prospecting recipes list the input as the output)
 			-- if o.hash ~= hash then
-			app.FunctionRunner.Run(FillGroupsRecursiveAsync, o, depth);
+			app.FunctionRunner.Run(FillGroupsRecursiveAsync, o, FillData);
 			-- end
 		end
 	end
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
-	-- Clear search history -- never re-list the starting Thing
-	included = { [group.hash or ""] = 0, [group.itemID or 0] = 0 };
+	-- Check if this group is inside a Window or not
+	local isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
+	-- Setup the FillData for this fill operation
+	local FillData = {
+		Included = { [group.hash or ""] = 0, [group.itemID or 0] = 0 },
+		Depth = 0,
+		IsInWindow = isInWindow,
+	};
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
-	-- Check if this group is inside a Window or not
-	isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
 
 	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
 
@@ -5414,9 +5423,9 @@ app.FillGroups = function(group)
 	if isInWindow then
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
 		app.FunctionRunner.SetPerFrame(25);
-		app.FunctionRunner.Run(FillGroupsRecursiveAsync, group);
+		app.FunctionRunner.Run(FillGroupsRecursiveAsync, group, FillData);
 	else
-		FillGroupsRecursive(group);
+		FillGroupsRecursive(group, FillData);
 	end
 
 	-- if app.DEBUG_PRINT then app.PrintTable(included) end
@@ -5436,6 +5445,7 @@ app.BuildCost = function(group)
 				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
 				["sourceIgnored"] = true,
 				["OnUpdate"] = app.AlwaysShowUpdate,
+				["skipFilling"] = true,
 				["g"] = {},
 			};
 		local costItem;
@@ -5493,6 +5503,8 @@ app.ThingKeys = {
 local SpecificSources = {
 	["headerID"] = {
 		[-1] = true,	-- COMMON_BOSS_DROPS
+		[-20] = true,	-- COMMON_VENDOR_ITEMS
+		[-26] = true,	-- DROPS
 	},
 };
 local tremove = tremove;
@@ -5625,6 +5637,7 @@ app.BuildSourceParent = function(group)
 				["description"] = L["SOURCES_DESC"],
 				["icon"] = "Interface\\Icons\\inv_misc_spyglass_02",
 				["OnUpdate"] = app.AlwaysShowUpdate,
+				["skipFilling"] = true,
 				["g"] = {},
 			};
 			local clonedParent, keepSource;
@@ -7815,7 +7828,7 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 		else
 			-- this quest name cannot be populated by the server
 			-- app.PrintDebug("No Server QuestData",questID)
-			rawset(QuestTitleFromID, questID, "Quest #"..questID.."*");
+			rawset(QuestTitleFromID, questID, L["QUEST_NAMES"][questID] or "Quest #"..questID.."*");
 		end
 	end
 	-- see if this Quest is awaiting Reward population & Updates
@@ -11467,7 +11480,7 @@ local function HandleItemRetries(t)
 	local retries = rawget(_t, "retries");
 	if retries then
 		if retries > app.MaximumItemInfoRetries then
-			local itemName = "Item #" .. tostring(id) .. "*";
+			local itemName = L["ITEM_NAMES"][id] or "Item #" .. tostring(id) .. "*";
 			rawset(_t, "title", L["FAILED_ITEM_INFO"]);
 			rawset(_t, "link", nil);
 			rawset(_t, "s", nil);
@@ -11520,9 +11533,11 @@ local function default_link(t)
 		modID = t.modID or modID;
 		if not bonusID or bonusID < 1 then
 			bonusID = nil;
+			t.bonusID = nil;
 		end
 		if not modID or modID < 1 then
 			modID = nil;
+			t.modID = nil;
 		end
 		-- app.PrintDebug("default_link",itemLink,modID,bonusID)
 		if bonusID and modID then
@@ -13455,11 +13470,14 @@ local fields = {
 		return t.r == Enum.FlightPathFaction.Alliance and 1 or 0;
 	end,
 	["lifetimeRank"] = function(t)
-		return select(3, GetPVPLifetimeStats());
+		return select(3, GetPVPLifetimeStats()) or 0;
 	end,
-	["collectible"] = app.ReturnFalse,
+	["collectible"] = app.ReturnTrue,
 	["collected"] = function(t)
-		return t.lifetimeRank >= t.pvpRankID;
+		return t.lifetimeRank >= (t.pvpRankID + 4);
+	end,
+	["u"] = function(t)
+		return 2;
 	end,
 	["OnTooltip"] = function(t)
 		GameTooltip:AddDoubleLine("Your lifetime highest rank: ", _G["PVP_RANK_" .. (t.lifetimeRank) .. "_" .. (app.FactionID == 2 and 1 or 0)], 1, 1, 1, 1, 1, 1);
@@ -15314,6 +15332,7 @@ function app:CreateMiniListForGroup(group)
 						["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
 						["g"] = g,
 						["OnUpdate"] = app.AlwaysShowUpdate,
+						["skipFilling"] = true,
 						["sourceIgnored"] = true,
 					};
 				else
@@ -15322,6 +15341,7 @@ function app:CreateMiniListForGroup(group)
 						["description"] = L["UNIQUE_APPEARANCE_LABEL_DESC"],
 						["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
 						["OnUpdate"] = app.AlwaysShowUpdate,
+						["skipFilling"] = true,
 						["sourceIgnored"] = true,
 					};
 				end
@@ -15387,8 +15407,16 @@ function app:CreateMiniListForGroup(group)
 						end
 					end
 					-- add the group showing the related Set information for this popout
-					if not group.g then group.g = { app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["sourceIgnored"] = true, ["g"] = g }) }
-					else tinsert(group.g, app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["sourceIgnored"] = true, ["g"] = g })) end
+					if not group.g then group.g = { app.CreateGearSet(setID, {
+						["OnUpdate"] = app.AlwaysShowUpdate,
+						["sourceIgnored"] = true,
+						["skipFilling"] = true,
+						["g"] = g }) }
+					else tinsert(group.g, app.CreateGearSet(setID, {
+						["OnUpdate"] = app.AlwaysShowUpdate,
+						["sourceIgnored"] = true,
+						["skipFilling"] = true,
+						["g"] = g })) end
 				end
 			end
 		end
@@ -15569,6 +15597,7 @@ function app:CreateMiniListForGroup(group)
 					["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 					["OnUpdate"] = app.AlwaysShowUpdate,
 					["sourceIgnored"] = true,
+					["skipFilling"] = true,
 					-- copy any sourceQuests into the header incase the root is not actually a quest
 					["sourceQuests"] = root.sourceQuests,
 				};

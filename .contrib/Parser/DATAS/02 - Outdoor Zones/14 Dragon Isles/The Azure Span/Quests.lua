@@ -1558,6 +1558,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69858, {	-- Blightfur
 					["provider"] = { "n", 193178 },	-- Blightfur
 					["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
+					["isDaily"] = true,
 				}),
 				q(72358, {	-- Cascade
 					["provider"] = { "n", 186962 },	-- Cascade
@@ -1566,11 +1567,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69892, {	-- Grumbletrunk
 					["provider"] = { "n", 193269 },	-- Grumbletrunk
 					["coord"] = { 19.1, 43.6, THE_AZURE_SPAN },
+					["isDaily"] = true,
 				}),
 				q(72254, {	-- Fisherman Tinnak's Ghost
 					["provider"] = { "n", 193691 },	-- Fisherman Tinnak <Angered Ghost>
 					["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
-					["repeatable"] = true,
+					["repeatable"] = true,	-- Might not be true. Recheck some day #Jan 2023
 				}),
 				q(69864, {	-- Forgotten Creation
 					["provider"] = { "n", 193214 },	-- Forgotten Creation
@@ -1583,9 +1585,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72154, {	-- Skag the Thrower
 					["provider"] = { "n", 193149 },	-- Skag the Thrower
 					["coord"] = { 26.7, 49.0, THE_AZURE_SPAN },
+					["isDaily"] = true,
 				}),
 				q(65841, {	-- Stop the Spread
-					["sourceQuests"] = { 66026 },	-- Urgent Action Required
+					["sourceQuests"] = {
+						66026,	-- Urgent Action Required
+						72366,	-- Account Dragonflight Campaign Completed
+					},
+					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 19.1, 36.2, THE_AZURE_SPAN },
 				}),
 				q(69895, {	-- Summoned Destroyer

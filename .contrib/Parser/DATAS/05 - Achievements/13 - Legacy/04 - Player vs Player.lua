@@ -5,10 +5,6 @@
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP_LEGACY, {
 		un(REMOVED_FROM_GAME, ach(11468)),		-- Alive for Five
-		ach(611, {	-- Bleeding Bloodhoof
-			["races"] = ALLIANCE_ONLY,
-			["u"] = REMOVED_FROM_GAME,
-		}),
 		un(REMOVED_FROM_GAME, h(ach(449, {		-- Blood Guard
 			un(REMOVED_FROM_GAME, h(title(21))),	-- Blood Guard
 		}))),
@@ -36,10 +32,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		un(REMOVED_FROM_GAME, ach(11687)),		-- Demonic Dozen
 		un(REMOVED_FROM_GAME, ach(11471)),		-- Don't Hate, Grind to Eight
 		un(REMOVED_FROM_GAME, ach(12108)),		-- Double Decade of Dominance
-		ach(612, {	-- Downing the Dark Lady
-			["races"] = ALLIANCE_ONLY,
-			["u"] = REMOVED_FROM_GAME,
-		}),
 		un(REMOVED_FROM_GAME, ach(11693)),		-- Eighteen and Over
 		un(REMOVED_FROM_GAME, a(ach(434, {		-- Field Marshal
 			un(REMOVED_FROM_GAME, a(title(13))),	-- Field Marshal
@@ -51,8 +43,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		un(REMOVED_FROM_GAME, ach(11688)),		-- Floor Thirteen
 		un(REMOVED_FROM_GAME, ach(10995)),		-- For Prestige
 		un(REMOVED_FROM_GAME, ach(11689)),		-- Fourteen for the Team
-		un(REMOVED_FROM_GAME, a(ach(701))),		-- Freedom of the Alliance
-		un(REMOVED_FROM_GAME, h(ach(700))),		-- Freedom of the Horde
 		un(REMOVED_FROM_GAME, h(ach(446, {		-- General
 			un(REMOVED_FROM_GAME, h(title(26))),	-- General
 		}))),
@@ -73,7 +63,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		un(REMOVED_FROM_GAME, h(ach(443, {		-- High Warlord
 			un(REMOVED_FROM_GAME, h(title(28))),	-- High Warlord
 		}))),
-		un(REMOVED_FROM_GAME, h(ach(617))),		-- Immortal No More
 		un(REMOVED_FROM_GAME, a(ach(439, {		-- Knight
 			un(REMOVED_FROM_GAME, a(title(6))),	-- Knight
 		}))),
@@ -118,7 +107,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		un(REMOVED_FROM_GAME, a(ach(441, {		-- Master Sergeant
 			un(REMOVED_FROM_GAME, a(title(4))),	-- Master Sergeant
 		}))),
-		un(REMOVED_FROM_GAME, a(ach(610))),		-- Orgrimmar Offensive
 		un(REMOVED_FROM_GAME, ach(12183)),		-- Prestige Quartermaster
 		un(REMOVED_FROM_GAME, a(ach(8451))),	-- Prideful Conquest (Alliance)
 		un(REMOVED_FROM_GAME, h(ach(8450))),	-- Prideful Conquest (Horde)
@@ -147,10 +135,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		un(REMOVED_FROM_GAME, h(ach(451, {		-- Stone Guard
 			un(REMOVED_FROM_GAME, h(title(20))),	-- Stone Guard
 		}))),
-		ach(615, {								-- Storming Stormwind
-			["races"] = HORDE_ONLY,
-			["u"] = REMOVED_FROM_GAME,
-		}),
 		un(REMOVED_FROM_GAME, ach(1174, {		-- The Arena Master
 			un(REMOVED_FROM_GAME, title(50)),	-- Arena Master
 		})),

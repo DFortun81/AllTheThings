@@ -224,6 +224,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(69954, {	-- Infernum
 					["qg"] = 193648,	-- Infernum
 				}),
+				q(69975, {	-- Neela Firebane
+					["qg"] = 193686,	-- Neela Firebane
+				}),
 				q(69974, {	-- Pipspark Thundersnap
 					["qg"] = 193684,	-- Pipspark Thundersnap
 				}),
@@ -264,10 +267,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200294),	-- Primal Chain Hauberk
 					i(200198),	-- Primalist Prison (TOY!)
 					-- Enchanting knowledge drops (one-time)
-					i(201356), -- Glimmer of Fire
-					i(201357), -- Glimmer of Frost
-					i(201358), -- Glimmer of Air
-					i(201359), -- Glimmer of Earth
+					i(201356),	-- Glimmer of Fire
+					i(201357),	-- Glimmer of Frost
+					i(201358),	-- Glimmer of Air
+					i(201359),	-- Glimmer of Earth
+					i(199839),	-- Dimmed Primeval Water
+					i(199836),	-- Dimmed Primeval Fire
+					i(199837),	-- Dimmed Primeval Earth
+					i(199838),	-- Dimmed Primeval Storm
 				},
 			}),
 			n(HEIRLOOMS, {

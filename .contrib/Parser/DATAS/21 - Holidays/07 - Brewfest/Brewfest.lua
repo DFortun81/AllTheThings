@@ -1804,6 +1804,31 @@ root("Holidays", applyholiday(BREWFEST, {
 					["timeline"] = { "added 2.2.2" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(BREWFEST_REGALIA, {
+						i(122339, {	-- Ancient Heirloom Scabbard
+							["cost"] = BREWFEST_TOKEN_COST(300),
+							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
+						i(167732, {	-- Battle-Hardened Heirloom Scabbard
+							["cost"] = BREWFEST_TOKEN_COST(500),
+							["timeline"] = { "added 8.1.5.29701" },
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
+						i(187998, {	-- Eternal Heirloom Scabbard
+							["cost"] = BREWFEST_TOKEN_COST(500),
+							["timeline"] = { "added 9.1.5.40871" },
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
+						i(122341, {	-- Timeworn Heirloom Scabbard
+							["cost"] = BREWFEST_TOKEN_COST(500),
+							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
+						i(151615, {	-- Weathered Heirloom Scabbard
+							["timeline"] = { "added 7.2.5.24076" },
+							["cost"] = BREWFEST_TOKEN_COST(500),
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
 						i(37571, {	-- "Brew of the Month" Club Membership Form (current)
 							["timeline"] = { "created 2.2.2", "added 3.0.0" },	-- NOTE: Not used in 2007
 							["cost"] = BREWFEST_TOKEN_COST(200),
@@ -1899,16 +1924,6 @@ root("Holidays", applyholiday(BREWFEST, {
 							["timeline"] = { "added 8.2.0.30918" },
 							["cost"] = BREWFEST_TOKEN_COST(200),
 						}),
-						i(122341, {	-- Timeworn Heirloom Scabbard
-							["cost"] = BREWFEST_TOKEN_COST(500),
-							["timeline"] = { "added 6.1.0.19445" },
-							["sym"] = { { "fill" } },	-- simply fill this item
-						}),
-						i(151615, {	-- Weathered Heirloom Scabbard
-							["timeline"] = { "added 7.2.5.24076" },
-							["cost"] = BREWFEST_TOKEN_COST(500),
-							["sym"] = { { "fill" } },	-- simply fill this item
-						}),
 						i(32233, {	-- Wolpertinger's Tankard
 							["cost"] = BREWFEST_TOKEN_COST(200),
 							["timeline"] = { "added 2.2.2" },
@@ -1960,6 +1975,31 @@ root("Holidays", applyholiday(BREWFEST, {
 					["timeline"] = { "added 2.2.2" },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(BREWFEST_REGALIA, {
+						i(122339, {	-- Ancient Heirloom Scabbard
+							["cost"] = BREWFEST_TOKEN_COST(300),
+							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
+						i(167732, {	-- Battle-Hardened Heirloom Scabbard
+							["cost"] = BREWFEST_TOKEN_COST(500),
+							["timeline"] = { "added 8.1.5.29701" },
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
+						i(187998, {	-- Eternal Heirloom Scabbard
+							["cost"] = BREWFEST_TOKEN_COST(500),
+							["timeline"] = { "added 9.1.5.40871" },
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
+						i(122341, {	-- Timeworn Heirloom Scabbard
+							["cost"] = BREWFEST_TOKEN_COST(500),
+							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
+						i(151615, {	-- Weathered Heirloom Scabbard
+							["timeline"] = { "added 7.2.5.24076" },
+							["cost"] = BREWFEST_TOKEN_COST(500),
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
 						i(37599, {	-- "Brew of the Month" Club Membership Form (current)
 							["timeline"] = { "created 2.2.2", "added 3.0.0" },	-- NOTE: Not used in 2007
 							["cost"] = BREWFEST_TOKEN_COST(200),
@@ -2054,16 +2094,6 @@ root("Holidays", applyholiday(BREWFEST, {
 						i(168915, {	-- Tabard of Brew
 							["timeline"] = { "added 8.2.0.30918" },
 							["cost"] = BREWFEST_TOKEN_COST(200),
-						}),
-						i(122341, {	-- Timeworn Heirloom Scabbard
-							["timeline"] = { "added 6.1.0.19445" },
-							["cost"] = BREWFEST_TOKEN_COST(500),
-							["sym"] = { { "fill" } },	-- simply fill this item
-						}),
-						i(151615, {	-- Weathered Heirloom Scabbard
-							["timeline"] = { "added 7.2.5.24076" },
-							["cost"] = BREWFEST_TOKEN_COST(500),
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(32233, {	-- Wolpertinger's Tankard
 							["cost"] = BREWFEST_TOKEN_COST(200),

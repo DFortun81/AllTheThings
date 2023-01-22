@@ -1313,6 +1313,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69668, {	-- Smogswog the Firebreather
 					["provider"] = { "n", 193120 },	-- Smogswog the Firebreather
 					["coord"] = { 68.4, 65.3, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(70751, {	-- Terillod the Devout
 					["provider"] = { "n", 193171 },	-- Terillod the Devout

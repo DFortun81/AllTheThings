@@ -7292,19 +7292,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						moh(8, i(122375, {	-- Aged Pauldrons of The Five Thunders
 							["timeline"] = { "added 6.1.0.19445" },
 						})),
-						moh(14, i(122338, {	-- Ancient Heirloom Armor Casing
-							["timeline"] = { "added 6.1.0.19445" },
-							["sym"] = {{ "fill" }},	-- simply fill this item
-						})),
-						moh(14, i(122339, {	-- Ancient Heirloom Scabbard
-							["timeline"] = { "added 6.1.0.19445" },
-							["sym"] = {{ "fill" }},	-- simply fill this item
-						})),
 						moh(12, i(122338, {	-- Ancient Heirloom Armor Casing
 							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = {{ "fill" }},	-- simply fill this item
 						})),
 						moh(14, i(122339, {	-- Ancient Heirloom Scabbard
 							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = {{ "fill" }},	-- simply fill this item
 						})),
 						moh(10, i(122369, {	-- Battleworn Thrash Blade
 							["timeline"] = { "added 6.1.0.19445" },
@@ -7313,6 +7307,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 6.1.0.19445" },
 						})),
 						moh(8, i(122378, {	-- Exquisite Sunderseer Mantle
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(4, i(122371, {	-- Inherited Insignia of the Alliance
 							["timeline"] = { "added 6.1.0.19445" },
 						})),
 						moh(4, i(122530, {	-- Inherited Mark of Tyranny

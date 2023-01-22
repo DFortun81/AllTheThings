@@ -531,14 +531,87 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 26.0, 92.4, THE_WAKING_SHORES },
 			}),
 		})),
-		-- TODO: NOT COMPLETED YET!!
 		ach(16446, {	-- That's Pretty Neat!
-			-- will implement this at some point as it is progressed in game, but if anyone else does part of it beforehand, please
-			-- use this format for each criteria, some may need 'coords' instead
-			-- crit(1,	-- NAME
-				-- ["cr"] = NPCID,
-				-- ["coord"] = { COORD, MAP },
-			-- ),
+			crit(1, {	-- Apex Blazewing
+				["cr"] = 193291,
+				["maps"] = { 2080 },	-- Neltharus
+			}),
+			crit(2, {	-- Avis Gryphonheart
+				["cr"] = 193356,
+				["coord"] = { 51.4, 18.4, THE_WAKING_SHORES },
+			}),
+			crit(3, {	-- Blue Terror
+				["cr"] = 193259,
+				["coord"] = { 16.4, 27.8, THE_AZURE_SPAN },
+			}),
+			crit(4, {	-- Chef Fry-Aerie
+				["cr"] = 187280,
+				["coord"] = { 43.6, 72.0, THALDRASZUS },
+			}),
+			crit(5, {	-- Drakewing
+				["cr"] = 193217,
+				["coord"] = { 49.8, 69.6, THE_WAKING_SHORES },
+			}),
+			crit(6, {	-- Eldoren The Reborn
+				["cr"] = 193234,
+				["coord"] = { 47.6, 51.1, THALDRASZUS },
+			}),
+			crit(7, {	-- Feasting Buzzard
+				["cr"] = 190960,
+				["coord"] = { 75.8, 40.6, OHNAHRAN_PLAINS },
+			}),
+			crit(8, {	-- Forgotten Gryphon
+				["cr"] = 193154,
+				["coord"] = { 33.1, 76.3, THE_WAKING_SHORES },
+			}),
+			crit(9, {	-- Glade Ohuna
+				["cr"] = 187496,
+				["coord"] = { 62.6, 55.0, OHNAHRAN_PLAINS },
+			}),
+			crit(10, {	-- Halia Cloudfeather
+				["cr"] = 193354,
+				["coord"] = { 51.4, 18.2, THE_WAKING_SHORES },
+			}),
+			crit(11, {	-- Horned Filcher
+				["cr"] = 190218,
+				["coord"] = { 36.8, 36.6, THE_AZURE_SPAN },
+			}),
+			crit(12, {	-- Iridescent Peafowl
+				["cr"] = 192383,
+				["coord"] = { 53.2, 53.4, THALDRASZUS },
+			}),
+			crit(13, {	-- Liskron the Dazzling
+				["cr"] = 193273,
+				["coord"] = { 36.6, 73.0, THALDRASZUS },
+			}),
+			crit(14, {	-- Nergazurai
+				["cr"] = 195895,
+				["coord"] = { 59.0, 75.2, OHNAHRAN_PLAINS },
+			}),
+			crit(15, {	-- Ohn'ahra
+				["cr"] = 194796,
+				["coord"] = { 57.7, 31.9, OHNAHRAN_PLAINS },
+			}),
+			crit(16, {	-- Palla of the Wing
+				["cr"] = 193357,
+				["coord"] = { 51.4, 18.4, THE_WAKING_SHORES },
+			}),
+			crit(17, {	-- Pine Flicker
+				["cr"] = 190221,
+				["coord"] = { 66.6, 13.4, THE_AZURE_SPAN },
+			}),
+			crit(18, {	-- Quackers the Terrible
+				["cr"] = 192557,
+				["coord"] = { 68.1, 79.0, OHNAHRAN_PLAINS },
+			}),
+			crit(19, {	-- Territorial Axebeak
+				["cr"] = 192186,
+				["coord"] = { 42.6, 69.4, THE_WAKING_SHORES },
+			}),
+			crit(20, {	-- Zenet Avis
+				["cr"] = 193209,
+				["coord"] = { 31.5, 63.9, OHNAHRAN_PLAINS },
+			}),
 		}),
 		ach(16519),	-- Dragon Isles Safari
 	}),

@@ -229,12 +229,14 @@ root("Zones", {
 					exploration(4111),	-- Farshire
 					exploration(4108),	-- Fizzcrank Airstrip
 					exploration(4138),	-- Frozen Reach
+					exploration(4022),	-- Gammoth
 					exploration(4106),	-- Garrosh's Landing
 					exploration(4041),	-- Kaskala
 					exploration(4109),	-- Lake Kum'uya
 					exploration(4123),	-- Magmoth
 					exploration(4020),	-- Mightstone Quarry
 					exploration(4031),	-- Pal'ea
+					exploration(4130),	-- Plains of Nasam
 					exploration(4029),	-- Riplash Ruins
 					exploration(4028),	-- Riplash Strand
 					exploration(4101),	-- Sands of Nasam
@@ -249,10 +251,13 @@ root("Zones", {
 					exploration(4120),	-- The Nexus
 					exploration(4026),	-- The Transitus Stair
 					exploration(4126),	-- The Wailing Ziggurat
+					exploration(4141),	-- Torp's Farm
 					exploration(4042),	-- Transborea
 					exploration(4121),	-- Transitus Shield
 					exploration(4113),	-- Unu'pe
 					exploration(4032),	-- Valiance Keep
+					exploration(4144),	-- Warsong Farms
+					exploration(4142),	-- Warsong Granary
 					exploration(4129),	-- Warsong Hold
 				}),
 				-- #endif

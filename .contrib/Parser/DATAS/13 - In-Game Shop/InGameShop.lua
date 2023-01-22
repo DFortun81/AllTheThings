@@ -93,6 +93,9 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(107951, {	-- Iron Skyreaver (MOUNT!)
 			["timeline"] = { "added 5.4.2.17585" },
 		}),
+		mount(369451, {	-- Jade, Bright Foreseer (MOUNT!)
+			["timeline"] = { "added 10.0.2.47631" },
+		}),
 		mount(308087, {	-- Lucky Yun (MOUNT!)
 			["timeline"] = { "added 9.0.2.37176" },
 		}),
@@ -139,6 +142,9 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		i(76755, {	-- Tyrael's Charger (MOUNT!)
 			["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" },	-- removed from the store again on Jan 2 2023
+		}),
+		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)
+			["timeline"] = { "added 10.0.2" },	-- Not sure when exactly it got added to the shop.
 		}),
 		i(166775, {	-- Vulpine Familiar (MOUNT!)
 			["timeline"] = { "added 8.1.0.28724" },

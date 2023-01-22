@@ -1020,7 +1020,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			q(71027, {	-- WANTED: Mara'nar the Thunderous
-				["sourceQuests"] = { 66201 },	-- Hooves of War
+				["sourceQuests"] = {
+					66201, 	-- Hooves of War
+					72366,	-- Account Dragonflight Campaign Completed
+				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "o", 381701 },	-- WANTED: Mara'nar the Thunderous
 				["coord"] = { 39.6, 56.4, OHNAHRAN_PLAINS },
 			}),
@@ -1073,6 +1077,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69856, {	-- Fulgurb
 					["provider"] = { "n", 193170 },	-- Fulgurb
 					["coord"] = { 74.9, 47.1, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
 				}),
 				q(66356, {	-- Irontree
 					["provider"] = { "n", 193128 },	-- Irontree
@@ -1159,6 +1164,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(66889),	-- Choose Eagle Feather (Renewal of Vows 66783)
 		q(69867),	-- Stay and Listen Merithra 18.7,51.6 (LQ 70928)
 		q(66512),	-- triggered when talking to Hunter Zaya and giving her Sarnai's Collar
+		q(74168),	-- After killing Skaara (during leveling)
 		-- Achievement Honor Our Ancestors
 		q(71167),	-- Maruukai Ancestor
 		q(71168),	-- Timberstep Outpost Ancestor

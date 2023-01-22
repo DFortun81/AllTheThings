@@ -4310,10 +4310,12 @@ root("Zones", {
 					}),
 					faction(1094, {	-- The Silver Covenant
 						["icon"] = "Interface\\Icons\\inv_banner_02",
+						["maps"] = { ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					faction(1124, {	-- The Sunreavers
 						["icon"] = "Interface\\Icons\\inv_elemental_primal_nether",
+						["maps"] = { ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 				}),
@@ -4621,7 +4623,7 @@ root("Zones", {
 							12791,	-- The Magical Kingdom of Dalaran (Horde only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
 							12794,	-- The Magical Kingdom of Dalaran (Alliance only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
 							12796,	-- The Magical Kingdom of Dalaran (Zul'Drak)
-							39210,	-- The Magical Kingdom of Dalaran (Crystalsong Forest)
+							39210,	-- The Magical Kingdom of Dalaran (Adventure Guide)
 						},
 						["coord"] = { 56.3, 46.7, NORTHREND_DALARAN },
 						["maps"] = { CRYSTALSONG_FOREST },
@@ -5148,9 +5150,9 @@ root("Zones", {
 						["coord"] = { 40.6, 66.9, ZULDRAK },
 						["isBreadcrumb"] = true,
 					}),
-					q(39210, {	-- The Magical Kingdom of Dalaran
-						["timeline"] = { "added 6.2.0.19934", "removed 7.0.1" },	-- TODO: Find out the patch this was removed, if at all.
-						["maps"] = { CRYSTALSONG_FOREST },
+					q(39210, {	-- The Magical Kingdom of Dalaran (Adventure Guide)
+						["description"] = "Can be acquired through the Adventure Guide.",
+						["timeline"] = { "added 6.2.0.19934" },
 						["isBreadcrumb"] = true,
 					}),
 					q(13240, {	-- Timear Foresees Centrifuge Constructs in your Future!
@@ -5715,6 +5717,18 @@ root("Zones", {
 							emoh(65, i(42943, {	-- Bloodied Arcanite Reaper
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
+							i(69893, {	-- Bloodsoaked Skullforge Reaver
+								["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+							}),
+							i(69889, {	-- Burnished Breastplate of Might
+								["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+							}),
+							i(69890, {	-- Burnished Pauldrons of Might
+								["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+							}),
+							i(79131, {	-- Burnished Warden Staff
+								["timeline"] = { "added 5.0.1.15464", "removed 6.1.0.19445" },
+							}),
 							emoh(40, i(42950, {	-- Champion Herod's Shoulder
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
@@ -5733,6 +5747,12 @@ root("Zones", {
 							emoh(50, i(42992, {	-- Discerning Eye of the Beast
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
+							i(93902, {	-- Flamescarred Draconian Deflector
+								["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+							}),
+							i(93904, {	-- Musty Tome of the Lost
+								["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+							}),
 							emoh(40, i(42951, {	-- Mystical Pauldrons of Elements
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
@@ -5775,6 +5795,9 @@ root("Zones", {
 							emoh(40, i(48716, {	-- Venerable Mass of McGowan
 								["timeline"] = { "removed 6.1.0.19445" },
 							})),
+							i(93903, {	-- Weathered Observer's Shield
+								["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
+							}),
 						},
 					}),
 					n(28951, {	-- Breanni <Pet Supplies>

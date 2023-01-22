@@ -870,10 +870,10 @@ for key,value in pairs({
 		[-1126] = "西部",												-- West
 		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
 		[-1131] = "伊斯卡拉渔具",										-- Iskaara Fishing
-		[-1140] = "瓦德拉肯联军",											-- Valdrakken Accord
+		[-1140] = "瓦德拉肯联军",										-- Valdrakken Accord
 		[-1142] = "天际挑战",											-- Aerial Challenges
-		--TODO: [-1143] = "Every 30 min Rare",						-- Every 30 min Rare
-		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
+		[-1143] = "每2小时稀有",										-- Every 2 Hours Rare
+		[-1144] = "每周专业知识",										-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
@@ -943,6 +943,20 @@ for key,value in pairs({
 	[-169] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",
 	[-799] = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
 	[-903] = "这些物品可以从可重复的宝箱、祈愿蟋蟀、世界任务或桌面任务中掉落。",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Quests based on QuestID
+local a = L.QUEST_NAMES;
+for key,value in pairs({
+	-- [QuestID] = "Name",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Items based on ItemID
+local a = L.ITEM_NAMES;
+for key,value in pairs({
+	-- [ItemID] = "Name",
 })
 do a[key] = value; end
 
@@ -1506,18 +1520,35 @@ for key, value in pairs({
 	[194049] = "联盟篝火",	-- Alliance Bonfire
 	[194105] = "传声盒413号",	-- Buzzbox 413
 	[194122] = "传声盒723号",	-- Buzzbox 723
+	[194213] = "冬水仙",	-- Winter Hyacinth
+	[194238] = "达克玛尔之剑",	-- Blade of Drak'Mar
+	[194341] = "积满灰尘的日记",	-- Dusty Journal
 	[194378] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194387] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194388] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194389] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194390] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194391] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
+	[194423] = "被偷走的锦标赛邀请函",	-- Stolen Tournament Invitation
+	[194424] = "黑骑士的命令",	-- Black Knight's Orders
+	--TODO: [194461] = "Stone Block",	-- Stone Block
+	--TODO: [194463] = "Small Stone Block",	-- Small Stone Block
 	[194479] = "血池",	-- Pool of Blood	--TODO: This was taken from wotlk Wowhead
+	[194537] = "温德尔·巴尔弗爵士的坟墓",	-- Sir Wendell's Grave
+	[194538] = "康纳尔·铁拳的坟墓",	-- Connall's Grave
+	[194539] = "洛林·阳焰的坟墓",	-- Lorien's Grave
 	[194555] = "档案馆控制台",	-- Archivum Console
+	[194618] = "长枪架",	-- Lance Rack
+	[194622] = "长枪架",	-- Lance Rack
 	[194714] = "恶心的工作台",	-- Disgusting Workbench
+	[194908] = "长枪架",	-- Lance Rack
+	[194909] = "长枪架",	-- Lance Rack
 	[195022] = "毒皮暴掠龙蛋",	-- Venomhide Ravasaur Egg
 	[195037] = "异种蝎卵",	-- Silithid Egg
 	[195134] = "大炸弹",	-- The Bomb	--TODO: This was manually translated
+	[195274] = "被偷走的陆行鸟腿",	-- Stolen Tallstrider Leg
+	--TODO: [195308] = "Mysterious Snow Mound",	-- Mysterious Snow Mound
+	[195344] = "被丢弃的灵魂水晶",	-- Discarded Soul Crystal
 	[195431] = "总部无线电",	-- Headquarters Radio
 	[195433] = "上古石板碎片",	-- Ancient Tablets
 	[195435] = "武器柜",	-- Weapons Cabinet
@@ -1532,6 +1563,7 @@ for key, value in pairs({
 	[196393] = "损坏的圣物",	-- Broken Relic
 	[196832] = "上层占卜石",	-- Upper Scrying Stone	--TODO: This was manually translated
 	[196833] = "下层占卜石",	-- Lower Scrying Stone	--TODO: This was manually translated
+	[201367] = "迷雾之心",	-- Heart of the Mists
 	[201578] = "技师招募海报",	-- Wrenchmen Recruitment Poster	--TODO: This was manually translated
 	[202080] = "达尔特的卵",	-- Dart's Nest
 	[202081] = "塔克的卵",	-- Takk's Nest
@@ -3514,7 +3546,7 @@ for key, value in pairs({
 	[380643] = "速冻卷轴",	-- Flashfrozen Scroll
 	[380647] = "被遗忘的奥术宝典",	-- Forgotten Arcane Tomne
 	--TODO: [380648] = "Odd Book",	-- Odd Book
-	--TODO: [380652] = "Fractured Titanic Sphere",	-- Fractured Titanic Sphere
+	[380652] = "有裂痕的泰坦之球",	-- Fractured Titanic Sphere
 	[380653] = "耶努的风筝",	-- Yennu's Kite
 	[380654] = "亡者胸甲",	-- Dead Man's Chestplate
 	[380709] = "驯鹰者护手设计图",	-- Falconer Gauntlet Drawings
@@ -3561,6 +3593,7 @@ for key, value in pairs({
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
 	[381513] = "旧镐",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
+	[381575] = "鸭子陷阱工具",	-- Duck Trap Kit
 	[381579] = "档案员的请求",	-- Archivists' Request
 	[381650] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "“炽齿翅”报名处",	-- Fang Flap Fire Signups
@@ -3581,9 +3614,12 @@ for key, value in pairs({
 	[382071] = "完整的渔网",	-- Full Fishing Net
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
-	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
-	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	[382193] = "元素宝箱",	-- Chest of the Elements
+	[382325] = "玛瑙宝石簇",	-- Onyx Gem Cluster
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
+	[383733] = "翻动过的泥土",	-- Disturbed Dirt
+	[383734] = "翻动过的泥土",	-- Disturbed Dirt
+	[383735] = "翻动过的泥土",	-- Disturbed Dirt	--TODO: this was manually translated
 	[384318] = "不起眼的书签",	-- Inconspicuous Bookmark
 	[384370] = "故意拖欠票据",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish

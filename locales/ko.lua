@@ -932,6 +932,20 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
+-- Fall-back 'name' values for Quests based on QuestID
+local a = L.QUEST_NAMES;
+for key,value in pairs({
+	-- [QuestID] = "Name",
+})
+do a[key] = value; end
+
+-- Fall-back 'name' values for Items based on ItemID
+local a = L.ITEM_NAMES;
+for key,value in pairs({
+	-- [ItemID] = "Name",
+})
+do a[key] = value; end
+
 local a = app.ObjectNames;
 for key,value in pairs({
 	[31] = "오래된 사자상",	-- Old Lion Statue
@@ -1492,18 +1506,35 @@ for key,value in pairs({
 	[194049] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[194105] = "윙윙상자 413",	-- Buzzbox 413
 	[194122] = "윙윙상자 723",	-- Buzzbox 723
+	[194213] = "겨울 히아신스",	-- Winter Hyacinth
+	--TODO: [194238] = "Blade of Drak'Mar",	-- Blade of Drak'Mar
+	[194341] = "먼지투성이 일지",	-- Dusty Journal
 	[194378] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
 	[194387] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
 	[194388] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
 	[194389] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
 	[194390] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
 	[194391] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
+	--TODO: [194423] = "Stolen Tournament Invitation",	-- Stolen Tournament Invitation
+	--TODO: [194424] = "Black Knight's Orders",	-- Black Knight's Orders
+	--TODO: [194461] = "Stone Block",	-- Stone Block
+	--TODO: [194463] = "Small Stone Block",	-- Small Stone Block
 	[194479] = "피 웅덩이",	-- Pool of Blood
+	[194537] = "웬델 경의 무덤",	-- Sir Wendell's Grave
+	[194538] = "코날의 무덤",	-- Connall's Grave
+	[194539] = "로리엔의 무덤",	-- Lorien's Grave
 	[194555] = "고대 기록관 조작대",	-- Archivum Console
+	[194618] = "창 선반",	-- Lance Rack
+	[194622] = "창 선반",	-- Lance Rack
 	[194714] = "구역질나는 작업대",	-- Disgusting Workbench
+	[194908] = "창 선반",	-- Lance Rack
+	[194909] = "창 선반",	-- Lance Rack
 	[195022] = "맹독가죽 알",	-- Venomhide Ravasaur Egg
 	[195037] = "실리시드 알",	-- Silithid Egg
 	[195134] = "폭탄",	-- The Bomb
+	[195274] = "도난당한 타조 다리",	-- Stolen Tallstrider Leg
+	--TODO: [195308] = "Mysterious Snow Mound",	-- Mysterious Snow Mound
+	[195344] = "버려진 영혼의 수정",	-- Discarded Soul Crystal
 	[195431] = "본부 무전기",	-- Headquarters Radio
 	[195433] = "고대 서판",	-- Ancient Tablets
 	[195435] = "무기함",	-- Weapons Cabinet
@@ -1518,6 +1549,7 @@ for key,value in pairs({
 	[196393] = "부서진 유물",	-- Broken Relic
 	[196832] = "위쪽 수정점 구슬",	-- Upper Scrying Stone
 	[196833] = "아래쪽 수정점 구슬",	-- Lower Scrying Stone
+	[201367] = "안개의 심장",	-- Heart of the Mists
 	[201578] = "정비공 모집 전단",	-- Wrenchmen Recruitment Poster
 	[202080] = "바람뿔의 둥지",	-- Dart's Nest
 	[202081] = "타크의 둥지",	-- Takk's Nest
@@ -1961,7 +1993,7 @@ for key,value in pairs({
 	[233649] = "도박꾼의 주머니",	-- Gambler's Purse
 	[233650] = "모험가 철퇴",	-- Adventurer's Mace
 	[233651] = "잃어버린 펜던트",	-- Lost Pendant
-	--TODO: [233658] = "Adventurer's Pouch",	-- Adventurer's Pouch
+	[233658] = "모험가 주머니",	-- Adventurer's Pouch
 	[233696] = "탐사용 주요 보급품",	-- Important Exploration Supplies
 	[233697] = "서슬니 보관함",	-- Saberon Stash
 	--TODO: [233715] = "Goldtoe's Plunder",	-- Goldtoe's Plunder
@@ -3547,6 +3579,7 @@ for key,value in pairs({
 	[381511] = "작살 머리",	-- Harpoon Head
 	[381513] = "오래된 곡괭이",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
+	--TODO: [381575] = "Duck Trap Kit",	-- Duck Trap Kit
 	[381579] = "기록관의 요청",	-- Archivists' Request
 	[381650] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "송곳니, 날개, 불 등록",	-- Fang Flap Fire Signups
@@ -3570,6 +3603,9 @@ for key,value in pairs({
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "신선한 미명어 보관함",	-- Case of Fresh Gleamfish
+	[383733] = "흐트러진 흙",	-- Disturbed Dirt
+	[383734] = "흐트러진 흙",	-- Disturbed Dirt
+	[383735] = "흐트러진 흙",	-- Disturbed Dirt
 	[384318] = "눈에 띄지 않는 서표",	-- Inconspicuous Bookmark
 	[384370] = "섬세한 방황의 기록",	-- Deliberately Delinquent Notes
 	[384405] = "반쯤 삶은 생선",	-- Half-Boiled Fish

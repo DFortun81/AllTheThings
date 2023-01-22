@@ -1257,11 +1257,10 @@ REMOVED_SL_PRE = "removed 9.0.1";						-- Shadowlands Pre-Patch on October 13th,
 ADDED_SL_REL = "added 9.0.2";							-- Shadowlands Launch on November 23rd, 2020
 ADDED_SL_0_5 = "added 9.0.5";							-- Shadowlands 9.0.5 Start on March 9th, 2021
 ADDED_SL_S2 = "added 9.1.0.39185";						-- Shadowlands Season 2 Start on June 29th, 2021
-REMOVED_SL_S2 = "removed 9.1.0";						-- Shadowlands Season 2 Start on June 29th, 2021
+REMOVED_SL_S2 = "removed 9.1.0.39185";					-- Shadowlands Season 2 End on February 21st, 2022
 ADDED_SL_1_5 = "added 9.1.5";							-- Shadowlands 9.1.5 Start on November 2nd, 2021
 REMOVED_SL_1_5 = "removed 9.1.5";						-- Shadowlands 9.1.5 Start on November 2nd, 2021
-ADDED_SL_S3 = "added 9.2.0";							-- Shadowlands Season 3 Start on February 22nd, 2022
-ADDED_SL_2_0 = "added 9.2.0";
+ADDED_SL_S3 = "added 9.2.0.42423";						-- Shadowlands Season 3 Start on February 22nd, 2022
 REMOVED_SL_S3 = "added 9.2.0.42488";					-- Shadowlands Season 3 Start on February 22nd, 2022
 ADDED_SL_S4 = "added 9.2.5.44908";						-- Shadowlands Season 4 Start on May 31, 2022
 REMOVED_SL_S4 = "removed 9.2.5.44908";					-- Shadowlands Season 4 Start on May 31, 2022
@@ -1878,6 +1877,10 @@ applycost = function(item, ...)
 	end
 	return item;
 end
+champ = function(cost, item)							-- Assign a Champion's Seal cost to an item with proper timeline & phase requirements.
+	applycost(item, { "c", 241, cost });	-- Champion's Seal
+	return applyclassicphase(WRATH_PHASE_TWO, item);
+end
 emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 221, cost });	-- Emblem of Conquest
@@ -1907,6 +1910,10 @@ emov = function(cost, item)								-- Assign a Emblem of Valor cost to an item w
 	applycost(item, { "c", 102, cost });	-- Emblem of Valor
 	-- #endif
 	return applyclassicphase(WRATH_PHASE_ONE, item);
+end
+gold = function(cost, item)								-- Assign a Gold cost to an item.
+	applycost(item, { "g", cost * 10000 });	-- Gold
+	return item;
 end
 honor = function(cost, item)							-- Assign a Honor cost to an item with proper timeline requirements.
 	-- #if BEFORE CATA
@@ -1941,6 +1948,10 @@ venture = function(cost, item)							-- Assign a Venture Coin cost to an item wi
 	applycost(item, { "c", 201, cost });	-- Venture Coin
 	-- #endif
 	return item;
+end
+writ = function(item)									-- Assign a Champion's Writ cost to an item with proper timeline & phase requirements.
+	applycost(item, { "i", 46114, 1 });	-- 1x Champion's Writ
+	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
 
 -- SHORTCUTS for Object Class Types
@@ -2175,6 +2186,19 @@ npc = function(id, t)									-- Create an NPC Object (negative indicates that i
 			return nil;
 		end
 	end
+	-- #IF NOT ANYCLASSIC
+	-- Retail Cleanliness checks
+	if id == COMMON_BOSS_DROPS or
+		id == COMMON_VENDOR_ITEMS or
+		id == DROPS
+	then
+		-- Items contained under these Header values will automatically list under the respective NPCs in minilists
+		if t.crs or t.cr then
+			t.maps = nil;
+			t.map = nil;
+		end
+	end
+	-- #ENDIF
 	return struct("npcID", id, t);
 end
 n = npc;												-- Create an NPC Object (alternative shortcut)

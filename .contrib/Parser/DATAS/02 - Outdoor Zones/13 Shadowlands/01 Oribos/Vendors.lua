@@ -264,7 +264,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					i(199112, {	-- Fated Matter Fractalizer
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
-						["timeline"] = { ADDED_SL_S4 },
+						["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 					}),
 					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", REMOVED_DF_REL } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit

@@ -2341,6 +2341,13 @@ root("Zones", {
 						},
 					}),
 				}),
+				n(ZONE_DROPS, {
+					applyclassicphase(WRATH_PHASE_TWO, i(45003, {	-- Winter's Edge
+						["coord"] = { 42.2, 19.6, HOWLING_FJORD },
+						["cost"] = {{ "i", 45005, 1 }},	-- Everburning Ember
+						["cr"] = 33303,	-- Maiden of Winter's Breath Lake
+					})),
+				}),
 			},
 		}),
 	})),

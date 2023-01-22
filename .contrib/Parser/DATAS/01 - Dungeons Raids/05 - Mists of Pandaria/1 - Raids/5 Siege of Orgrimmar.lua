@@ -612,6 +612,19 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						un(REMOVED_FROM_GAME, i(104885)),	-- Skeer's Bloodsoaked Talisman Normal
 					}),
 					n(71865, {	-- Garrosh Hellscream
+						-- Heirlooms
+						un(REMOVED_FROM_GAME, i(105674)),	-- Hellscream's Barrier
+						un(REMOVED_FROM_GAME, i(105672)),	-- Hellscream's Cleaver
+						un(REMOVED_FROM_GAME, i(105679)),	-- Hellscream's Decapitator
+						un(REMOVED_FROM_GAME, i(105678)),	-- Hellscream's Doomblade
+						un(REMOVED_FROM_GAME, i(105673)),	-- Hellscream's Pig Sticker
+						un(REMOVED_FROM_GAME, i(105671)),	-- Hellscream's Razor
+						un(REMOVED_FROM_GAME, i(105680)),	-- Hellscream's Shield Wall
+						un(REMOVED_FROM_GAME, i(105676)),	-- Hellscream's Tome of Destruction
+						un(REMOVED_FROM_GAME, i(105677)),	-- Hellscream's War Staff
+						un(REMOVED_FROM_GAME, i(105670)),	-- Hellscream's Warbow
+						un(REMOVED_FROM_GAME, i(105675)),	-- Hellscream's Warmace
+						
 						un(REMOVED_FROM_GAME, i(104899)),	-- Belt of the Broken Pact Normal
 						un(REMOVED_FROM_GAME, i(104901)),	-- Black Blood of Y'Shaarj Normal
 						un(REMOVED_FROM_GAME, i(104890)),	-- Chestguard of Relentless Tyranny Normal
@@ -1138,6 +1151,19 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						un(REMOVED_FROM_GAME, i(105383)),	-- Skeer's Bloodsoaked Talisman Heroic WF
 					}),
 					n(71865, {	-- Garrosh Hellscream
+						-- Heirlooms
+						un(REMOVED_FROM_GAME, i(104409)),	-- Hellscream's Barrier
+						un(REMOVED_FROM_GAME, i(104404)),	-- Hellscream's Cleaver
+						un(REMOVED_FROM_GAME, i(104405)),	-- Hellscream's Decapitator
+						un(REMOVED_FROM_GAME, i(104401)),	-- Hellscream's Doomblade
+						un(REMOVED_FROM_GAME, i(104403)),	-- Hellscream's Pig Sticker
+						un(REMOVED_FROM_GAME, i(104400)),	-- Hellscream's Razor
+						un(REMOVED_FROM_GAME, i(104407)),	-- Hellscream's Shield Wall
+						un(REMOVED_FROM_GAME, i(104408)),	-- Hellscream's Tome of Destruction
+						un(REMOVED_FROM_GAME, i(104406)),	-- Hellscream's War Staff
+						un(REMOVED_FROM_GAME, i(104399)),	-- Hellscream's Warbow
+						un(REMOVED_FROM_GAME, i(104402)),	-- Hellscream's Warmace
+						
 						un(REMOVED_FROM_GAME, i(103856)),	-- Belt of the Broken Pact Heroic
 						un(REMOVED_FROM_GAME, i(105397)),	-- Belt of the Broken Pact Heroic WF
 						un(REMOVED_FROM_GAME, i(102310)),	-- Black Blood of Y'Shaarj Heroic
@@ -1687,6 +1713,19 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						un(REMOVED_FROM_GAME, i(105632)),	-- Skeer's Bloodsoaked Talisman Mythic WF
 					}),
 					n(71865, {	-- Garrosh Hellscream
+						-- Heirlooms
+						un(REMOVED_FROM_GAME, i(105687)),	-- Hellscream's Barrier
+						un(REMOVED_FROM_GAME, i(105685)),	-- Hellscream's Cleaver
+						un(REMOVED_FROM_GAME, i(105692)),	-- Hellscream's Decapitator
+						un(REMOVED_FROM_GAME, i(105691)),	-- Hellscream's Doomblade
+						un(REMOVED_FROM_GAME, i(105686)),	-- Hellscream's Pig Sticker
+						un(REMOVED_FROM_GAME, i(105684)),	-- Hellscream's Razor
+						un(REMOVED_FROM_GAME, i(105693)),	-- Hellscream's Shield Wall
+						un(REMOVED_FROM_GAME, i(105689)),	-- Hellscream's Tome of Destruction
+						un(REMOVED_FROM_GAME, i(105690)),	-- Hellscream's War Staff
+						un(REMOVED_FROM_GAME, i(105683)),	-- Hellscream's Warbow
+						un(REMOVED_FROM_GAME, i(105688)),	-- Hellscream's Warmace
+						
 						un(REMOVED_FROM_GAME, i(104650)),	-- Belt of the Broken Pact Mythic
 						un(REMOVED_FROM_GAME, i(105646)),	-- Belt of the Broken Pact Mythic WF
 						un(REMOVED_FROM_GAME, i(104652)),	-- Black Blood of Y'Shaarj Mythic
