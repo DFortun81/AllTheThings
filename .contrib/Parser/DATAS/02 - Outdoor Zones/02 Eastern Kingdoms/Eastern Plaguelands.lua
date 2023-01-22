@@ -678,6 +678,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(39202, { -- Rusted Pitchfork
+							["coords"] = {
+								{ 56.8, 49.8, EASTERN_PLAGUELANDS },
+								{ 59.6, 31.2, EASTERN_PLAGUELANDS },
+								{ 54.6, 42.8, EASTERN_PLAGUELANDS },
+							},
 							["crs"] = {
 								28576,	-- Citizen of Havenshire
 								28577,	-- Citizen of Havenshire
@@ -687,6 +692,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(39205, { -- Sole-Less Boots
+							["coords"] = {
+								{ 56.8, 49.8, EASTERN_PLAGUELANDS },
+								{ 59.6, 31.2, EASTERN_PLAGUELANDS },
+								{ 54.6, 42.8, EASTERN_PLAGUELANDS },
+							},
 							["crs"] = {
 								28576,	-- Citizen of Havenshire
 								28577,	-- Citizen of Havenshire
