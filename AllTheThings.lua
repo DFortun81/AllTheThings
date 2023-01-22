@@ -9212,7 +9212,7 @@ harvesterFields.text = function(t)
 								crit.assetID = nil;
 								if crit.rank and crit.rank == 1 then
 									crit.rank = nil;
-									break;
+									-- break;
 								end
 							elseif criteriaType == 36 or criteriaType == 41 or criteriaType == 42 then
 								-- 36: Items (Generic)
@@ -9286,12 +9286,12 @@ harvesterFields.text = function(t)
 								-- https://wowwiki-archive.fandom.com/wiki/API_GetAchievementCriteriaInfo
 								if crit.rank and totalCriteria == 1 then
 									info.rank = crit.rank;
-									break;
+									-- break;
 								end
 							elseif criteriaType == 29 or criteriaType == 69 then	-- Cast X Spell Y Times
 								if crit.rank and totalCriteria == 1 then
 									info.rank = crit.rank;
-									break;
+									-- break;
 								else
 									crit.spellID = crit.assetID;
 									crit.criteriaType = nil;
@@ -9352,7 +9352,7 @@ harvesterFields.text = function(t)
 							-- https://wowwiki-archive.fandom.com/wiki/API_GetAchievementCriteriaInfo
 							if crit.rank and totalCriteria == 1 then
 								info.rank = crit.rank;
-								break;
+								-- break;
 							end
 						elseif criteriaType == 38 or criteriaType == 39 or criteriaType == 58 or criteriaType == 63 or criteriaType == 65 or criteriaType == 66 or criteriaType == 76 or criteriaType == 77 or criteriaType == 82 or criteriaType == 83 or criteriaType == 84 or criteriaType == 85 or criteriaType == 86 or criteriaType == 107 or criteriaType == 128 or criteriaType == 152 or criteriaType == 153 or criteriaType == 163 then	-- Ignored
 							-- 38: Team Rating, which is irrelevant.
@@ -9383,7 +9383,7 @@ harvesterFields.text = function(t)
 								if totalCriteria == 1 then
 									-- Generic, such as the Bread Winner
 									info.rank = crit.rank;
-									break;
+									-- break;
 								else
 									crit.cost = { { "g", crit.assetID, crit.rank } };
 									crit.criteriaType = nil;
@@ -9391,7 +9391,7 @@ harvesterFields.text = function(t)
 									info.rank = nil;
 								end
 							else
-								break;
+								-- break;
 							end
 						end
 						-- 155: Collect Battle Pets from a Raid, no assetID though RIP
