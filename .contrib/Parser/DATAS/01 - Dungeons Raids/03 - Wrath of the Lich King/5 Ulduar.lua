@@ -639,6 +639,19 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					e(1650, {	-- Algalon the Observer
 						["creatureID"] = 32871,	-- Algalon the Observer
 						["groups"] = {
+							-- #if ANYCLASSIC
+							ach(17341, {	-- Cutting Edge: Ulduar
+								["OnUpdate"] = [[function(t)
+									if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+										t.u = ]] .. REMOVED_FROM_GAME .. [[;
+										t.rwp = nil;
+									else
+										t.u = ]] .. WRATH_PHASE_TWO .. [[;
+										t.rwp = 30200;
+									end
+								end]],
+							}),
+							-- #endif
 							ach(3004, {	-- He Feeds On Your Tears (10 player)
 								["timeline"] = { "removed 4.0.3" },
 							}),
@@ -924,6 +937,19 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					e(1649, {	-- Yogg-Saron
 						["creatureID"] = 33288,	-- Yogg-Saron
 						["groups"] = {
+							-- #if ANYCLASSIC
+							ach(17340, {	-- Ahead of the Curve: Yogg-Saron
+								["OnUpdate"] = [[function(t)
+									if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+										t.u = ]] .. REMOVED_FROM_GAME .. [[;
+										t.rwp = nil;
+									else
+										t.u = ]] .. WRATH_PHASE_TWO .. [[;
+										t.rwp = 30200;
+									end
+								end]],
+							}),
+							-- #endif
 							revampAch(3159, {	-- Alone in the Darkness (10 player)
 								i(46312),	-- Vanquished Clutches of Yogg-Saron
 							}),
@@ -1518,6 +1544,19 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					e(1650, {	-- Algalon the Observer
 						["creatureID"] = 32871,	-- Algalon the Observer
 						["groups"] = {
+							-- #if ANYCLASSIC
+							ach(17341, {	-- Cutting Edge: Ulduar
+								["OnUpdate"] = [[function(t)
+									if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+										t.u = ]] .. REMOVED_FROM_GAME .. [[;
+										t.rwp = nil;
+									else
+										t.u = ]] .. WRATH_PHASE_TWO .. [[;
+										t.rwp = 30200;
+									end
+								end]],
+							}),
+							-- #endif
 							ach(3005, {	-- He Feeds On Your Tears (25 player)
 								["timeline"] = { "removed 4.0.3" },
 							}),
@@ -1825,6 +1864,19 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					e(1649, {	-- Yogg-Saron
 						["creatureID"] = 33288,	-- Yogg-Saron
 						["groups"] = {
+							-- #if ANYCLASSIC
+							ach(17340, {	-- Ahead of the Curve: Yogg-Saron
+								["OnUpdate"] = [[function(t)
+									if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+										t.u = ]] .. REMOVED_FROM_GAME .. [[;
+										t.rwp = nil;
+									else
+										t.u = ]] .. WRATH_PHASE_TWO .. [[;
+										t.rwp = 30200;
+									end
+								end]],
+							}),
+							-- #endif
 							revampAch(3164, {	-- Alone in the Darkness (25 player)
 								ach(4626, {	-- And I'll Form the Head!
 									["provider"] = { "i", 45693 },	-- Mimiron's Head
@@ -2311,6 +2363,19 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				e(1650, {	-- Algalon the Observer
 					["creatureID"] = 32871,	-- Algalon the Observer
 					["groups"] = {
+						-- #if ANYCLASSIC
+						ach(17341, {	-- Cutting Edge: Ulduar
+							["OnUpdate"] = [[function(t)
+								if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+									t.u = ]] .. REMOVED_FROM_GAME .. [[;
+									t.rwp = nil;
+								else
+									t.u = ]] .. WRATH_PHASE_TWO .. [[;
+									t.rwp = 30200;
+								end
+							end]],
+						}),
+						-- #endif
 						ach(12399, {	-- Observed
 							title(129),	-- Starcaller
 							title(130),	-- the Astral Walker
@@ -2746,6 +2811,19 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				e(1649, {	-- Yogg-Saron
 					["creatureID"] = 33288,	-- Yogg-Saron
 					["groups"] = {
+						-- #if ANYCLASSIC
+						ach(17340, {	-- Ahead of the Curve: Yogg-Saron
+							["OnUpdate"] = [[function(t)
+								if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+									t.u = ]] .. REMOVED_FROM_GAME .. [[;
+									t.rwp = nil;
+								else
+									t.u = ]] .. WRATH_PHASE_TWO .. [[;
+									t.rwp = 30200;
+								end
+							end]],
+						}),
+						-- #endif
 						ach(12388, {	-- Alone in the Darkness
 							ach(4626, {	-- And I'll Form the Head!
 								["provider"] = { "i", 45693 },	-- Mimiron's Head
