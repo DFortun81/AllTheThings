@@ -260,5 +260,138 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			})),
 		}),
+		header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
+			n(ACHIEVEMENTS, {
+				ach(17195, {	-- Waking Shores Reverse: Bronze
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						17129,	-- Apex Canopy River Run Reverse: Bronze
+						17126,	-- Emberflow Flight Reverse: Bronze
+						17138,	-- Flashfrost Flyover Reverse: Bronze
+						17120,	-- Ruby Lifeshrine Loop Reverse: Bronze
+						17132,	-- Uktulut Coaster Reverse: Bronze
+						17141,	-- Wild Preserve Circuit Reverse: Bronze
+						17123,	-- Wild Preserve Slalom Reverse: Bronze
+						17135,	-- Wingrest Roundabout Reverse: Bronze
+					}},
+				}),
+				ach(17196, {	-- Waking Shores Reverse: Silver
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						17130,	-- Apex Canopy River Run Reverse: Silver
+						17127,	-- Emberflow Flight Reverse: Silver
+						17139,	-- Flashfrost Flyover Reverse: Silver
+						17121,	-- Ruby Lifeshrine Loop Reverse: Silver
+						17133,	-- Uktulut Coaster Reverse: Silver
+						17142,	-- Wild Preserve Circuit Reverse: Silver
+						17124,	-- Wild Preserve Slalom Reverse: Silver
+						17136,	-- Wingrest Roundabout Reverse: Silver
+					}},
+				}),
+				ach(17197, {	-- Waking Shores Reverse: Gold
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						17131,	-- Apex Canopy River Run Reverse: Gold
+						17128,	-- Emberflow Flight Reverse: Gold
+						17140,	-- Flashfrost Flyover Reverse: Gold
+						17122,	-- Ruby Lifeshrine Loop Reverse: Gold
+						17134,	-- Uktulut Coaster Reverse: Gold
+						17143,	-- Wild Preserve Circuit Reverse: Gold
+						17125,	-- Wild Preserve Slalom Reverse: Gold
+						17137,	-- Wingrest Roundabout Reverse: Gold
+					}},
+				}),
+			}),
+			n(QUESTS, sharedData({
+				["repeatable"] = true,
+				["sourceQuestNumRequired"] = 1,
+				["sourceQuests"] = {
+					68795,	-- Dragonriding
+					72366,	-- Account Dragonflight Campaign Completed
+				},
+			},{
+				q(72734, {	-- Apex Canopy River Run - Reverse
+					["provider"] = { "n", 190551 },	-- Bronze Timekeeper
+					["coord"] = { 23.3, 84.3, THE_WAKING_SHORES },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17129),	-- Apex Canopy River Run Reverse: Bronze
+						ach(17130),	-- Apex Canopy River Run Reverse: Silver
+						ach(17131),	-- Apex Canopy River Run Reverse: Gold
+					},
+				}),
+				q(72707, {	-- Emberflow Flight - Reverse
+					["provider"] = { "n", 190519 },	-- Bronze Timekeeper
+					["coord"] = { 41.8, 67.2, THE_WAKING_SHORES },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17126),	-- Emberflow Flight Reverse: Bronze
+						ach(17127),	-- Emberflow Flight Reverse: Silver
+						ach(17128),	-- Emberflow Flight Reverse: Gold
+					},
+				}),
+				q(72700, {	-- Flashfrost Flyover - Reverse
+					["provider"] = { "n", 190326 },	-- Bronze Timekeeper
+					["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17138),	-- Flashfrost Flyover Reverse: Bronze
+						ach(17139),	-- Flashfrost Flyover Reverse: Silver
+						ach(17140),	-- Flashfrost Flyover Reverse: Gold
+					},
+				}),
+				-- TODO: Missing quest id, rest is verified
+				-- q(?????, {	-- Ruby Lifeshrine Loop - Reverse
+				-- 	["provider"] = { "n", 190123 },	-- Bronze Timekeeper
+				-- 	["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
+				-- 	["g"] = {
+				-- 		i(191140),	-- Bronze Timepiece
+				-- 		ach(17120),	-- Ruby Lifeshrine Loop Reverse: Bronze
+				-- 		ach(17121),	-- Ruby Lifeshrine Loop Reverse: Silver
+				-- 		ach(17122),	-- Ruby Lifeshrine Loop Reverse: Gold
+				-- 	},
+				-- }),
+				q(72739, {	-- Uktulut Coaster - Reverse
+					["provider"] = { "n", 190667 },	-- Bronze Timekeeper
+					["coord"] = { 55.4, 41.1, THE_WAKING_SHORES },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17132),	-- Uktulut Coaster Reverse: Bronze
+						ach(17133),	-- Uktulut Coaster Reverse: Silver
+						ach(17134),	-- Uktulut Coaster Reverse: Gold
+					},
+				}),
+				q(72706, {	-- Wild Preserve Circuit - Reverse
+					["provider"] = { "n", 190503 },	-- Bronze Timekeeper
+					["coord"] = { 42.6, 94.5, THE_WAKING_SHORES },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17141),	-- Wild Preserve Circuit Reverse: Bronze
+						ach(17142),	-- Wild Preserve Circuit Reverse: Silver
+						ach(17143),	-- Wild Preserve Circuit Reverse: Gold
+					},
+				}),
+				q(72705, {	-- Wild Preserve Slalom - Reverse
+					["provider"] = { "n", 190473 },	-- Bronze Timekeeper
+					["coord"] = { 47.0, 85.6, THE_WAKING_SHORES },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17123),	-- Wild Preserve Slalom Reverse: Bronze
+						ach(17124),	-- Wild Preserve Slalom Reverse: Silver
+						ach(17125),	-- Wild Preserve Slalom Reverse: Gold
+					},
+				}),
+				q(72740, {	-- Wingrest Roundabout - Reverse
+					["provider"] = { "n", 190753 },	-- Bronze Timekeeper
+					["coord"] = { 73.2, 33.9, THE_WAKING_SHORES },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17135),	-- Wingrest Roundabout Reverse: Bronze
+						ach(17136),	-- Wingrest Roundabout Reverse: Silver
+						ach(17137),	-- Wingrest Roundabout Reverse: Gold
+					},
+				}),
+			})),
+		})),
 	}),
 })));

@@ -23,6 +23,7 @@ ROOTS = {
 	["Promotions"] = "Promotions",
 	["BlackMarket"] = "BlackMarket",
 	["InGameShop"] = "InGameShop",
+	["TradingPost"] = "TradingPost",
 	["PetBattles"] = "PetBattles",
 	["HiddenQuestTriggers"] = "HiddenQuestTriggers",
 	["HiddenAchievementTriggers"] = "HiddenAchievementTriggers",
@@ -415,10 +416,10 @@ ZERETH_MORTIS = 1970;
 -- Dragon Isles
 DRAGON_ISLES = 1978;
 OHNAHRAN_PLAINS = 2023;
-PRIMALIST_TOMORROW = 2085;
 THALDRASZUS = 2025;
 THE_AZURE_SPAN = 2024;
 THE_FORBIDDEN_REACH = 2118;
+THE_PRIMALIST_FUTURE = 2085;
 THE_WAKING_SHORES = 2022;
 VALDRAKKEN = 2112;
 
@@ -531,12 +532,33 @@ TANKS = {
 	WARRIOR,
 };
 HEALERS = {
+	EVOKER,
 	DRUID,
 	MONK,
 	PALADIN,
 	PRIEST,
 	SHAMAN,
+};
+CLOTH_CLASSES = {
+	MAGE,
+	PRIEST,
+	WARLOCK,
+};
+LEATHER_CLASSES = {
+	DEMONHUNTER,
+	DRUID,
+	MONK,
+	ROGUE,
+};
+MAIL_CLASSES = {
 	EVOKER,
+	HUNTER,
+	SHAMAN,
+};
+PLATE_CLASSES = {
+	DEATHKNIGHT,
+	PALADIN,
+	WARRIOR,
 };
 CLOTH_CLASSES = {
 	MAGE,
@@ -756,6 +778,7 @@ ACHIEVEMENT_CATEGORY_COLLECTIONS = 15246;
 	ACHIEVEMENT_CATEGORY_TOY_BOX = 15247;
 	ACHIEVEMENT_CATEGORY_MOUNTS = 15248;
 	ACHIEVEMENT_CATEGORY_APPEARANCES = 15259;
+	ACHIEVEMENT_CATEGORY_DRAGON_ISLES_DRAKE_COSMETICS = 15478;
 ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES = 15301;
 	ACHIEVEMENT_CATEGORY_ARGENT_TOURNAMENT = 14941;
 	ACHIEVEMENT_CATEGORY_TOL_BARAD = 15075;
@@ -1141,6 +1164,9 @@ TCG = 10;
 TRAINING = 15;
 ELITE_PVP_REQUIREMENT = 4;
 
+-- Holidays
+TRIAL_OF_STYLE = 1671631;
+
 -- #if ANYCLASSIC
 -- Classic Phases
 PHASE_ONE = 11;
@@ -1233,6 +1259,7 @@ ADDED_SL_0_5 = "added 9.0.5";							-- Shadowlands 9.0.5 Start on March 9th, 202
 ADDED_SL_S2 = "added 9.1.0.39185";						-- Shadowlands Season 2 Start on June 29th, 2021
 REMOVED_SL_S2 = "removed 9.1.0.39185";					-- Shadowlands Season 2 End on February 21st, 2022
 ADDED_SL_1_5 = "added 9.1.5";							-- Shadowlands 9.1.5 Start on November 2nd, 2021
+REMOVED_SL_1_5 = "removed 9.1.5";						-- Shadowlands 9.1.5 Start on November 2nd, 2021
 ADDED_SL_S3 = "added 9.2.0.42423";						-- Shadowlands Season 3 Start on February 22nd, 2022
 REMOVED_SL_S3 = "added 9.2.0.42488";					-- Shadowlands Season 3 Start on February 22nd, 2022
 ADDED_SL_S4 = "added 9.2.5.44908";						-- Shadowlands Season 4 Start on May 31, 2022
@@ -1248,6 +1275,8 @@ REMOVED_DF_PRE2 = "removed 10.0.2";						-- Second phase of Dragonflight pre-pat
 ADDED_DF_REL = "added 10.0.2.46801";					-- Dragonflight Launch on November 28th, 2022
 TIMELINE_DF_REL = { CREATED_DF_PRE, ADDED_DF_REL };		-- Dragonflight Launch on November 28th, 2022
 REMOVED_DF_REL = "removed 10.0.2.46801";				-- Dragonflight Launch on November 28th, 2022
+ADDED_10_0_5 = "added 10.0.5";							-- Dragonflight 10.0.5 Launch on January 24th, 2023
+ADDED_DF_0_5 = "added 10.0.5";
 ADDED_DF_S2 = "added 10.1.0";							-- Dragonflight Season 2 Start on
 REMOVED_DF_S2 = "removed 10.1.0";						-- Dragonflight Season 2 Start on
 

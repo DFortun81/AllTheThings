@@ -205,5 +205,111 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			})),
 		}),
+		header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
+			n(ACHIEVEMENTS, {
+				ach(17201, {	-- Azure Span Reverse: Bronze
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						17174,	-- Archive Ambit Reverse: Bronze
+						17171,	-- Frostland Flyover Reverse: Bronze
+						17168,	-- Iskaara Tour Reverse: Bronze
+						17162,	-- The Azure Span Slalom Reverse: Bronze
+						17159,	-- The Azure Span Sprint Reverse: Bronze
+						17165,	-- The Vakthros Ascent Reverse: Bronze
+					}},
+				}),
+				ach(17202, {	-- Azure Span Reverse: Silver
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						17175,	-- Archive Ambit Reverse: Silver
+						17172,	-- Frostland Flyover Reverse: Silver
+						17169,	-- Iskaara Tour Reverse: Silver
+						17163,	-- The Azure Span Slalom Reverse: Silver
+						17160,	-- The Azure Span Sprint Reverse: Silver
+						17166,	-- The Vakthros Ascent Reverse: Silver
+					}},
+				}),
+				ach(17203, {	-- Azure Span Reverse: Gold
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						17176,	-- Archive Ambit Reverse: Gold
+						17173,	-- Frostland Flyover Reverse: Gold
+						17170,	-- Iskaara Tour Reverse: Gold
+						17164,	-- The Azure Span Slalom Reverse: Gold
+						17161,	-- The Azure Span Sprint Reverse: Gold
+						17167,	-- The Vakthros Ascent Reverse: Gold
+					}},
+				}),
+			}),
+			n(QUESTS, sharedData({
+				["repeatable"] = true,
+				["sourceQuestNumRequired"] = 1,
+				["sourceQuests"] = {
+					68795,	-- Dragonriding
+					72366,	-- Account Dragonflight Campaign Completed
+				},
+			},{
+				q(72797, {	-- Archive Ambit - Reverse
+					["provider"] = { "n", 193027 },	-- Bronze Timekeeper
+					["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17174),	-- Archive Ambit Reverse: Bronze
+						ach(17175),	-- Archive Ambit Reverse: Silver
+						ach(17176),	-- Archive Ambit Reverse: Gold
+					},
+				}),
+				q(72799, {	-- Azure Span Slalom - Reverse
+					["provider"] = { "n", 191947 },	-- Bronze Timekeeper
+					["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17162),	-- The Azure Span Slalom Reverse: Bronze
+						ach(17163),	-- The Azure Span Slalom Reverse: Silver
+						ach(17164),	-- The Azure Span Slalom Reverse: Gold
+					},
+				}),
+				q(72796, {	-- Azure Span Sprint - Reverse
+					["provider"] = { "n", 191572 },	-- Bronze Timekeeper
+					["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17159),	-- The Azure Span Sprint Reverse: Bronze
+						ach(17160),	-- The Azure Span Sprint Reverse: Silver
+						ach(17161),	-- The Azure Span Sprint Reverse: Gold
+					},
+				}),
+				q(72795, {	-- Frostland Flyover - Reverse
+					["provider"] = { "n", 192945 },	-- Bronze Timekeeper
+					["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17171),	-- Frostland Flyover Reverse: Bronze
+						ach(17172),	-- Frostland Flyover Reverse: Silver
+						ach(17173),	-- Frostland Flyover Reverse: Gold
+					},
+				}),
+				q(72800, {	-- Iskaara Tour - Reverse
+					["provider"] = { "n", 192886 },	-- Bronze Timekeeper
+					["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17168),	-- Iskaara Tour Reverse: Bronze
+						ach(17169),	-- Iskaara Tour Reverse: Silver
+						ach(17170),	-- Iskaara Tour Reverse: Gold
+					},
+				}),
+				q(72794, {	-- Vakthros Ascent - Reverse
+					["provider"] = { "n", 192115 },	-- Bronze Timekeeper
+					["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17165),	-- The Vakthros Ascent Reverse: Bronze
+						ach(17166),	-- The Vakthros Ascent Reverse: Silver
+						ach(17167),	-- The Vakthros Ascent Reverse: Gold
+					},
+				}),
+			})),
+		})),
 	}),
 })));

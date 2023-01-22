@@ -478,7 +478,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					--},
 				}),
 				n(193684, {	-- Pipspark Thundersnap
-					["coord"] = { 53.4, 26.2, PRIMALIST_TOMORROW },
+					["coord"] = { 53.4, 26.2, THE_PRIMALIST_FUTURE },
 					["questID"] = 74022,
 					["g"] = {
 						i(199337),	-- Bag of Furious Winds (TOY!)

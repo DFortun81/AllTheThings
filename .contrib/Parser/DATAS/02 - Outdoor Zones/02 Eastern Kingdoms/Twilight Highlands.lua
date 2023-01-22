@@ -2370,6 +2370,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(62416),	-- Yellow Smoke Pendant
 					},
 				}),
+				n(49549, {	-- Jodan <Dragonmaw Armorsmith>
+					["coord"] = { 77.2, 52.8, TWILIGHT_HIGHLANDS },
+					["races"] = HORDE_ONLY,
+					["sym"] = { { "sub", "common_vendor", 46512 } },	-- Naros <Plate Armor Merchant>
+				}),
 				n(50375, {	-- Kuldar Steeltooth <Metal Trader>
 					["coord"] = { 77.2, 53.0, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,

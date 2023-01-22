@@ -79,7 +79,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			-- The Primalist Future
 			o(382193, {	-- Chest of the Elements
-				["coord"] = { 28.0, 25.9, PRIMALIST_TOMORROW },
+				["coord"] = { 28.0, 25.9, THE_PRIMALIST_FUTURE },
 				["g"]= {
 					i(194640),	-- Design: Ring-Bound Hourglass (RECIPE!)
 					i(201447),	-- Primal Revenant's Breezeblade

@@ -1541,7 +1541,6 @@ i(194106, 0);	-- Highland Drake
 i(192770, 349935);	-- Noble Elderhorn				/	[PH] Moose Bull Black
 i(192804, 374263);	-- Restless Hornstrider			/	Restless Hornstrider
 i(192779, 374138);	-- Scorchpath					/	Scorchpath
-i(192800, 352926);	-- Skyskin Hornstrider			/	Skyskin Hornstrider
 i(0, 372995);	-- Swift Spectral Drake
 i(0, 368893);	-- Winding Slitherdrake
 i(0, 376898);	-- [PH] Black Armored River Otter
@@ -1588,6 +1587,32 @@ i(199412, 387231);	-- Hailstorm Armoredon
 i(201789, 394737);	-- Vicious Sabertooth [A]
 i(201788, 394738);	-- Vicious Sabertooth [H]
 i(0, 369451);		-- Jade Foreseer
+
+------------------
+-- PATCH 10.0.5 --
+------------------
+i(190231, 366962);	-- Ash'adar, Harbinger of Dawn
+i(192800, 352926);	-- Skyskin Hornstrider
+-- NYI --
+i(0, 400733);	-- [PH] Goblin Shredder Rocket
+i(0, 397406);	-- [PH] Magical Fish Mount
+i(203226, 399708);	-- Stormfused Salamanther
+i(0, 395095);	-- Whelpling
+-- Trading Post (According To Data)
+i(190767, 368126);	-- Armored Golden Pterrordax
+i(0, 367875);	-- Armored Siege Kodo
+i(0, 369480);	-- Cerulean Marsh Hopper
+i(190539, 367620);	-- Coral-Stalker Waveray
+i(190168, 366789);	-- Crusty Crawler
+i(0, 366647);	-- Magenta Cloud Serpent
+i(190169, 366790);	-- Quawks
+i(190613, 367826);	-- Savage Green Battle Turtle
+
+
+
+
+
+
 
 -- #if ANYCLASSIC
 -----------------

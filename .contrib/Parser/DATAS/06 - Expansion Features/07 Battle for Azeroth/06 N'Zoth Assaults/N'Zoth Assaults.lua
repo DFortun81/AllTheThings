@@ -676,6 +676,20 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					-- Possibly acquired if you don't have Heart of Azeroth
 					i(184601),	-- Malignant Leviathan's Spaulders
 				}),
+				i(173936, {	-- Dookin' Ookin' Quarterstaff
+					["coord"] = { 80.4, 63.6, 1530 },
+					["crs"] = {
+						154451,	-- Squidtail Screamer
+						154467,	-- Chief Mek-mek
+					}
+				}),
+				i(173935, {	-- Nik-Nik's Slicky Sticker
+					["coord"] = { 80.4, 63.6, 1530 },
+					["crs"] = {
+						154451,	-- Squidtail Screamer
+						154467,	-- Chief Mek-mek
+					}
+				}),
 			}),
 		},
 	}),

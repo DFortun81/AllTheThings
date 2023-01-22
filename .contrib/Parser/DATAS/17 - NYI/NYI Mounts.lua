@@ -543,9 +543,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(192779, {	-- Scorchpath / Scorchpath(MOUNT!)
 					--["modelID"] = ,
 				}),
-				i(192800, {	-- Skyskin Hornstrider / Skyskin Hornstrider (MOUNT!)
-					--["modelID"] = ,
-				}),
 				mount(372995, {	-- Swift Spectral Drake (MOUNT!)
 					--["modelID"] = ,
 				}),

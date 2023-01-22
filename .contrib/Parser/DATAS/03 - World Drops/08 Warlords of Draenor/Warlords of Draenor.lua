@@ -391,12 +391,20 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 	}),
 	n(ARMOR, {
 		n(HEAD, {
+			i(106305),	-- Acid Scarred Plate Helmet
 			i(118857),	-- Casque of Defiance
+			i(106344),	-- Grime-Fouled Mail Circlet
+			i(106347),	-- Gronncloth Suncover
 			i(118896),	-- Helmet of Vile Indignation
 			i(118893),	-- Lylirra's Shining Circlet
 			i(118821),	-- Mystical Cap of Skill
+			i(106345),	-- Overstretched Leather Helmet
 			i(118895),	-- Plume Adorned Headdress
+			i(106346),	-- Punctured Plate Helmet
 			i(118836),	-- Rellwyn's Crimson Cowl
+			i(106308),	-- Ripped Mail Circlet
+			i(106306),	-- Scraggly Hat
+			i(106307),	-- Sun-Baked Leather Helmet
 			i(118894),	-- Toria's Perseverance
 			i(118829),	-- Treasure Hunter's Bandana
 		}),
@@ -415,14 +423,22 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(116681),	-- Zangarra Amulet
 		}),
 		n(SHOULDER, {
+			i(106298),	-- Acid Scarred Plate Shoulderpads
 			i(118831),	-- Arentios' Amice of Alacrity
 			i(118892),	-- Botani-Barbed Pauldrons
 			i(118891),	-- Dunestalker's Mantle
 			i(118889),	-- Ephew's Enlightened Mantle
+			i(106337),	-- Grime-Fouled Mail Shoulderpads
+			i(106339),	-- Gronncloth Shoulderpads
 			i(118838),	-- J'kaey's Shining Spaulders
 			i(118823),	-- Mantle of Moera
 			i(118859),	-- Mantle of Moriccalas
+			i(106338),	-- Overstretched Leather Shoulderpads
+			i(106336),	-- Punctured Plate Pauldrons
+			i(106283),	-- Ripped Mail Shoulderpads
+			i(106284),	-- Scraggly Cloth Shoulderpads
 			i(118890),	-- Studded Frostboar Leather Spaulders
+			i(106297),	-- Sun-Baked Shoulderpads
 		}),
 		n(BACK, {
 			i(116720),	-- Ancestral Cloak
@@ -448,45 +464,93 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(116705),	-- Zangarra Cloak
 		}),
 		n(CHEST, {
+			i(106310),	-- Acid Scarred Plate Chestpiece
 			i(118819),	-- Ariya's Auspicious Robe
 			i(118855),	-- Chyler's Charming Chestguard
+			i(106349),	-- Grime-Fouled Mail Armor
+			i(106351),	-- Gronncloth Vest
+			i(106352),	-- Overstretched Leather Armor
+			i(106350),	-- Punctured Plate Chestpiece
+			i(106311),	-- Ripped Mail Armor
+			i(106312),	-- Scraggly Cloth Vest
+			i(106309),	-- Sun-Baked Armor
 			i(118827),	-- Thrice-Tanned Tunic
 		}),
 		n(WRIST, {
+			i(106292),	-- Acid Scarred Plate Bracers
 			i(118860),	-- Bolt-Bound Bracers
 			i(118839),	-- Bonechain Bracers
+			i(106330),	-- Grime-Fouled Mail Bracers
+			i(106331),	-- Gronncloth Bracers
 			i(118824),	-- Noxiia's Shackles
+			i(106332),	-- Overstretched Leather Bracers
+			i(106329),	-- Punctured Plate Bracers
+			i(106291),	-- Ripped Mail Bracers
+			i(106290),	-- Scraggly Cloth Bracers
+			i(106289),	-- Sun-Baked Bracers
 			i(118832),	-- Wodin's Weary Wristguards
 		}),
 		n(HANDS, {
+			i(106302),	-- Acid Scarred Plate Gloves
 			i(118828),	-- Amienne's Velvety Touch
 			i(118820),	-- Anruin's Grips of Agony
 			i(118856),	-- Cydil's Coiled Grasp
+			i(106340),	-- Grime-Fouled Mail Gloves
+			i(106341),	-- Gronncloth Gloves
 			i(118835),	-- Kiraser's Gloves of Precision
+			i(106342),	-- Overstretched Leather Gloves
+			i(106343),	-- Punctured Plate Gloves
+			i(106303),	-- Ripped Mail Gloves
+			i(106304),	-- Scraggly Cloth Gloves
+			i(106301),	-- Sun-Baked Gloves
 		}),
 		n(WAIST, {
+			i(106285),	-- Acid Scarred Plate Belt
 			i(118888),	-- Ashelia's Adorned Waistguard
 			i(118833),	-- Chain Links of Pea'dexx
 			i(118887),	-- Cloudcaller's Linked Belt
 			i(118885),	-- Gem-Inlaid Velvet Cinch
 			i(118817),	-- Girthbinder of N'karas
+			i(106325),	-- Grime-Fouled Mail Belt
+			i(106327),	-- Gronncloth Belt
 			i(118853),	-- Iron Beltguard of Fuufuu
+			i(106328),	-- Overstretched Leather Belt
+			i(106326),	-- Punctured Plate Belt
+			i(106288),	-- Ripped Mail Belt
+			i(106287),	-- Scraggly Cloth Belt
+			i(106286),	-- Sun-Baked Belt
 			i(118886),	-- Waistgirdle of the Mountain
 			i(118825),	-- Windswept Leather Waistguard
 		}),
 		n(LEGS, {
+			i(106294),	-- Acid Scarred Plate Pants
 			i(118858),	-- Fobbly's Fabulous Legplates
 			i(118830),	-- Fur-Padded Driftwaders
+			i(106333),	-- Grime-Fouled Mail Pants
+			i(106334),	-- Gronncloth Loinwrap
 			i(118822),	-- Kitsy's Knickers
+			i(106335),	-- Overstretched Leather Pants
+			i(106348),	-- Punctured Plate Pants
 			i(118837),	-- Puu'sey's Pantaloons
+			i(106295),	-- Ripped Mail Pants
+			i(106296),	-- Scraggly Cloth Pants
+			i(106293),	-- Sun-Baked Pants
 		}),
 		n(FEET, {
+			i(106300),	-- Acid Scarred Plate Boots
 			i(118826),	-- Cadi's Grass Stained Slippers
 			i(122240, {	-- Footwraps of the Frostweaver
 				["description"] = "Yes, they're a world drop, and yes, they're BoP.  We're as perplexed as you are.",
 			}),
+			i(106354),	-- Grime-Fouled Mail Boots
+			i(106355),	-- Gronncloth Boots
 			i(118818),	-- Kymi's Stylish Slippers
+			i(106356),	-- Overstretched Leather Boots
+			i(106353),	-- Punctured Plate Boots
+			i(106299),	-- Ripped Mail Boots
+			i(106314),	-- Scraggly Cloth Boots
 			i(118834),	-- Spiffy Chainmail Boots
+			i(106313),	-- Sun-Baked Boots
 			i(118854),	-- Zor's Taboo Treads
 		}),
 		filter(FINGER_F, {
@@ -513,6 +577,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 	}),
 	n(WEAPONS, {
 		filter(ONE_HANDED_AXES, {
+			i(106318),	-- Blunt Logging Axe
 			i(116457),	-- Frostbitten Axe
 			i(116474),	-- Lunarglow Axe
 			i(116491),	-- Vinewrapped Axe
@@ -528,6 +593,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(118782),	-- Ivory-Hilted Cleaver
 		}),
 		filter(TWO_HANDED_AXES, {
+			i(106321),	-- Cracked-Haft Cleaver
 			i(116458),	-- Frostbitten Broadaxe
 			i(116475),	-- Lunarglow Broadaxe
 			i(116492),	-- Vinewrapped Broadaxe
@@ -542,6 +608,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(118802),	-- Tayger's Sword-On-A-Stick
 		}),
 		filter(BOWS, {
+			i(106319),	-- Knog's Bow of Surrender
 			i(116459),	-- Frostbitten Bow
 			i(116476),	-- Lunarglow Bow
 			i(116493),	-- Vinewrapped Bow
@@ -570,6 +637,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(118797),	-- Auto-Loading Crossbow of the Sand Emperor
 		}),
 		filter(DAGGERS, {
+			i(106315),	-- Jammed Pocketknife
 			i(116461),	-- Frostbitten Dagger
 			i(116462),	-- Coldsinger Spellblade
 			i(116478),	-- Lunarglow Dagger
@@ -611,6 +679,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(118786),	-- Chade's Kidneythumper
 		}),
 		filter(GUNS, {
+			i(106320),	-- Narrcho's Rifle of Unreadiness
 			i(116464),	-- Frostbitten Gun
 			i(116481),	-- Lunarglow Gun
 			i(116498),	-- Vinewrapped Gun
@@ -642,6 +711,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(118852),	-- Erorus' Ledger of Trade
 		}),
 		filter(ONE_HANDED_MACES, {
+			i(106316),	-- Half-Handle Mace
 			i(116465),	-- Frostbitten Mace
 			i(116466),	-- Coldsinger Scepter
 			i(116482),	-- Lunarglow Mace
@@ -669,6 +739,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(118789),	-- Firecrystal Mace
 		}),
 		filter(TWO_HANDED_MACES, {
+			i(106323),	-- Poorly Balanced Warhammer
 			i(116467),	-- Frostbitten Hammer
 			i(116484),	-- Lunarglow Hammer
 			i(116501),	-- Vinewrapped Hammer
@@ -718,6 +789,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(118874),	-- Blackrock Bulwark
 		}),
 		filter(STAVES, {
+			i(106324),	-- Robble's Staff of Herding
 			i(116469),	-- Frostbitten Staff
 			i(116470),	-- Frostbitten Staff
 			i(116486),	-- Lunarglow Staff
@@ -746,6 +818,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			un(REMOVED_FROM_GAME, i(25173)),	-- Master's Bo Staff
 		}),
 		filter(ONE_HANDED_SWORDS, {
+			i(106317),	-- Brittle Blade
 			i(116471),	-- Frostbitten Sword
 			i(116488),	-- Lunarglow Sword
 			i(116505),	-- Vinewrapped Sword
@@ -762,6 +835,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(118792),	-- Reinforced Tuskblade
 		}),
 		filter(TWO_HANDED_SWORDS, {
+			i(106322),	-- Brittle Greatsword
 			i(116472),	-- Frostbitten Greatsword
 			i(116489),	-- Lunarglow Greatsword
 			i(116506),	-- Vinewrapped Greatsword

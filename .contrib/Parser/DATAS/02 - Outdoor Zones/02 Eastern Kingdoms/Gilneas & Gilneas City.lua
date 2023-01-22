@@ -25,9 +25,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["coord"] = { 59.81, 22.17, 202 },
 							["races"] = { WORGEN },
 							["groups"] = {
-								i(55004, {	-- Wolf Fur Coat
-									["ignoreSource"] = true,	-- White Item
-								}),
+								i(55004),	-- Wolf Fur Coat
 							},
 						}),
 						q(14277, {	-- Arcane Inquiries
@@ -49,14 +47,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["coord"] = { 40.46, 39.37, 202 },
 							["races"] = { WORGEN },
 							["groups"] = {
-								i(55010, {	-- Cannoneer's Leggings
-									["ignoreSource"] = true,	-- White Item
-								}),
-								i(55009, {	-- Steadfast Boots
-									["ignoreSource"] = true,	-- White Item
-								}),
+								i(55010),	-- Cannoneer's Leggings
+								i(55009),	-- Steadfast Boots
 								i(131866, {	-- Steadfast Greaves
-									["ignoreSource"] = true,	-- White Item
+									["timeline"] = { "added 7.0.3.22248" },
 								}),
 							},
 						}),
@@ -66,18 +60,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["coord"] = { 55.20, 62.93, 202 },
 							["races"] = { WORGEN },
 							["groups"] = {
-								i(54976, {	-- Bracers of the Queen's Gate
-									["ignoreSource"] = true,	-- White Item
-								}),
+								i(54976),	-- Bracers of the Queen's Gate
 								i(131865, {	-- Darius' Handguards
-									["ignoreSource"] = true,	-- White Item
+									["timeline"] = { "added 7.0.3.22248" },
 								}),
-								i(55005, {	-- Darius' Sash
-									["ignoreSource"] = true,	-- White Item
-								}),
-								i(55006, {	-- Dempsey's Gloves
-									["ignoreSource"] = true,	-- White Item
-								}),
+								i(55005),	-- Darius' Sash
+								i(55006),	-- Dempsey's Gloves
 							},
 						}),
 						q(14266, {	-- Charge
@@ -116,18 +104,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["coord"] = { 56.87, 81.41, 202 },
 							["races"] = { WORGEN },
 							["groups"] = {
-								i(54985, {	-- Alarmbringer's Mace
-									["ignoreSource"] = true,	-- White Item
-								}),
-								i(54986, {	-- Houndmaster's Crossbow
-									["ignoreSource"] = true,	-- White Item
-								}),
-								i(58217, {	-- Mastiff Trainer's Wand
-									["ignoreSource"] = true,	-- White Item
-								}),
-								i(66247, {	-- Timeworn Staff
-									["ignoreSource"] = true,	-- White Item
-								}),
+								i(54985),	-- Alarmbringer's Mace
+								i(54986),	-- Houndmaster's Crossbow
+								i(58217),	-- Mastiff Trainer's Wand
+								i(66247),	-- Timeworn Staff
 							},
 						}),
 						q(14281, {	-- Frost Nova
@@ -401,13 +381,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 							["groups"] = {
 								i(131864, {	-- Armstead Bindings
-									["ignoreSource"] = true,	-- White Item
+									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(54975, {	-- Armstead Bracers
-									["ignoreSource"] = true,	-- White Item
+									["timeline"] = { "added 4.0.3.13287" },
 								}),
 								i(54978, {	-- Merchant's Chestguard
-									["ignoreSource"] = true,	-- White Item
+									["timeline"] = { "added 4.0.3.13287" },
 								}),
 							},
 						}),
@@ -454,10 +434,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(55003),	-- Greymane Cloak
 						i(55002),	-- Blue-Bloodied Boots
-						i(131378),	-- Blue-Bloodied Treads
-						i(58255, {	-- Lord Walden's Top Hat
-							["ignoreSource"] = true,	-- White Item
+						i(131378, {	-- Blue-Bloodied Treads
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
+						i(58255),	-- Lord Walden's Top Hat
 					},
 				}),
 				q(26706, {	-- Endgame
@@ -512,12 +492,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 32.52, 75.48, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
-						i(55016, {	-- Granny's Mallet
-							["ignoreSource"] = true,	-- White Item
-						}),
-						i(55017, {	-- Orange Blanket
-							["ignoreSource"] = true,	-- White Item
-						}),
+						i(55016),	-- Granny's Mallet
+						i(55017),	-- Orange Blanket
 					},
 				}),
 				q(14399, {	-- Grandma's Lost It Alright
@@ -532,12 +508,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.75, 66.29, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
-						i(54984, {	-- Gilnean Soldier's Waistband
-							["ignoreSource"] = true,	-- White Item
-						}),
-						i(54983, {	-- Repeller's Bracers
-							["ignoreSource"] = true,	-- White Item
-						}),
+						i(54984),	-- Gilnean Soldier's Waistband
+						i(54983),	-- Repeller's Bracers
 					},
 				}),
 				q(14366, {	-- Holding Steady
@@ -621,14 +593,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(131355, {	-- Dark Ranger's Hauberk
-							["ignoreSource"] = true,	-- White Item
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(55007, {	-- Dark Ranger's Vest
-							["ignoreSource"] = true,	-- White Item
-						}),
-						i(55008, {	-- Leader's Boots
-							["ignoreSource"] = true,	-- White Item
-						}),
+						i(55007),	-- Dark Ranger's Vest
+						i(55008),	-- Leader's Boots
 					},
 				}),
 				q(24575, {	-- Liberation Day
@@ -749,14 +717,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.93, 64.04, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
-						i(54981, {	-- Caregiver's Leggings
-							["ignoreSource"] = true,	-- White Item
-						}),
-						i(54982, {	-- Gloves of Protection
-							["ignoreSource"] = true,	-- White Item
-						}),
+						i(54981),	-- Caregiver's Leggings
+						i(54982),	-- Gloves of Protection
 						i(131351, {	-- Protector's Legguards
-							["ignoreSource"] = true,	-- White Item
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 					},
 				}),
@@ -850,12 +814,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 37.68, 72.75, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
-						i(55021, {	-- Crowley's Belt
-							["ignoreSource"] = true,	-- White Item
-						}),
-						i(55020, {	-- Lorna's Gloves
-							["ignoreSource"] = true,	-- White Item
-						}),
+						i(55021),	-- Crowley's Belt
+						i(55020),	-- Lorna's Gloves
 					},
 				}),
 				q(14466, {	-- The King's Observatory
@@ -894,14 +854,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.97, 63.93, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
-						i(58216, {	-- "Flying" Worgen Robes
-							["ignoreSource"] = true,	-- White Item
-						}),
-						i(55015, {	-- Gloves of the Two Birds
-							["ignoreSource"] = true,	-- White Item
-						}),
+						i(58216),	-- "Flying" Worgen Robes
+						i(55015),	-- Gloves of the Two Birds
 						i(131354, {	-- The Stone's Gauntlets
-							["ignoreSource"] = true,	-- White Item
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 					},
 				}),
@@ -911,12 +867,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.97, 63.93, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
-						i(54979, {	-- Godfrey's Dagger
-							["ignoreSource"] = true,	-- White Item
-						}),
-						i(54980, {	-- Gilded Leggings
-							["ignoreSource"] = true,	-- White Item
-						}),
+						i(54979),	-- Godfrey's Dagger
+						i(54980),	-- Gilded Leggings
 					},
 				}),
 				q(14412, {	-- Washed Up
@@ -925,14 +877,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.88, 84.18, 179 },
 					["races"] = { WORGEN },
 					["groups"] = {
-						i(55018, {	-- Boatwork Boots
-							["ignoreSource"] = true,	-- White Item
-						}),
-						i(55019, {	-- Repair Belt
-							["ignoreSource"] = true,	-- White Item
-						}),
+						i(55018),	-- Boatwork Boots
+						i(55019),	-- Repair Belt
 						i(131356, {	-- Repairman's Cinch
-							["ignoreSource"] = true,	-- White Item
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 					},
 				}),

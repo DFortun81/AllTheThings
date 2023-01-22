@@ -326,6 +326,14 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											i(181027),	-- Dread Sentinel's Burnished Spaulders
 											i(181029),	-- Dread Sentinel's Burnished Vambraces
 										}),
+										filter(FINGER_F, {
+											i(180351),	-- Worn Ring of Piety
+										}),
+										filter(WEAPONS, {
+											i(180336),	-- Faintly Smoldering Torch
+											i(180335),	-- Sturdy Pitch Fork
+											i(180337),	-- Sturdy Pitch Fork
+										}),
 									},
 								}),
 							},

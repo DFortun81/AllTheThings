@@ -5,27 +5,86 @@
 root("WorldDrops", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(ARMOR, {
 		filter(CLOTH, {
+			i(121390),	-- Anund's Bandages
+			i(121386),	-- Cord of Mandibles
+			i(121410),	-- Crumbling Ceremonial Vestments
 			i(141567),	-- Cyno's Mantle of Sin
 			i(141565),	-- Mir's Enthralling Grasp
+			i(121398),	-- Realm of Companions
 			i(141566),	-- Serrinne's Maleficent Habit
+			i(121400),	-- Shandris's Fingerless Gloves
+			i(121356),	-- Sunbleached Armice
+			i(121344),	-- Sunbleached Cord
+			i(121364),	-- Sunbleached Cowl
+			i(121358),	-- Sunbleached Handwraps
+			i(121351),	-- Sunbleached Pants
+			i(121372),	-- Sunbleached Sandals
+			i(121368),	-- Sunbleached Shirt
+			i(121348),	-- Sunbleached Wristwraps
 			i(141564),	-- Telubis' Binding of Patience
+			i(121414),	-- The Dreamweaver's Ignorance
+			i(121393),	-- Vexing Armada
 		}),
 		filter(LEATHER, {
 			i(141568),	-- Boughs of Archdruid Van-Yali
 			i(141570),	-- Cainen's Preeminent Chestguard
+			i(121401),	-- Gloves of the Transient
+			i(121397),	-- Heavily Weighted Shoulderpads
+			i(121415),	-- Hecate's Folly
+			i(121387),	-- Leather Pistol Holster
+			i(121392),	-- Many-Pocketed Leather Pants
 			i(141571),	-- Mavanah's Shifting Wristguards
+			i(121391),	-- Poison-Soaked Cuffs
 			i(141569),	-- Samnoh's Exceptional Leggings
+			i(121406),	-- Tattered Explorer's Hat
+			i(121399),	-- Unbalanced Glaive Tossers
+			i(121411),	-- Waterlogged Leather Jerkin
+			i(121345),	-- Weatherworn Belt
+			i(121373),	-- Weatherworn Boots
+			i(121359),	-- Weatherworn Gloves
+			i(121362),	-- Weatherworn Hood
+			i(121352),	-- Weatherworn Pants
+			i(121355),	-- Weatherworn Shoulders
+			i(121369),	-- Weatherworn Vest
+			i(121349),	-- Weatherworn Wristguards
 		}),
 		filter(MAIL, {
+			i(121396),	-- Brittle Chitinous Shoulderpads
+			i(121384),	-- Elemental Bindings
 			i(141572),	-- Geta of Tay'Shute
 			i(141575),	-- Gorrog's Serene Gaze
+			i(121342),	-- Rust-Encrusted Chain Belt
+			i(121361),	-- Rust-Encrusted Coif
+			i(121357),	-- Rust-Encrusted Gloves
+			i(121366),	-- Rust-Encrusted Hauberk
+			i(121350),	-- Rust-Encrusted Leggings
+			i(121371),	-- Rust-Encrusted Sabatons
+			i(121354),	-- Rust-Encrusted Spaulders
+			i(121347),	-- Rust-Encrusted Wristguards
 			i(141573),	-- Shokell's Grim Cinch
+			i(121413),	-- Two-Toed Warboots
 			i(141574),	-- Ulfgor's Greaves of Bravery
+			i(121403),	-- Unintended Lightning Rod
 		}),
 		filter(PLATE, {
 			i(141576),	-- Aethrynn's Everwarm Chestplate
+			i(121404),	-- Badly Rolled Helmet
 			i(141578),	-- Claud's War-Ravaged Boots
+			i(121405),	-- Damaged Berserker's Plate Helm
+			i(121407),	-- Empty Rocket-Propelled Legplates
 			i(141577),	-- Fists of Thane Kray-Tan
+			i(121412),	-- Light Plate Travelers
+			i(121402),	-- Old Bloodsoaked Gauntlets
+			i(121409),	-- Time-Corroded Breastplate
+			i(121388),	-- Unseen Bindings
+			i(121343),	-- Warped-Plate Belt
+			i(121367),	-- Warped-Plate Breastplate
+			i(121360),	-- Warped-Plate Gauntlets
+			i(121363),	-- Warped-Plate Helmet
+			i(121365),	-- Warped-Plate Leggings
+			i(121353),	-- Warped-Plate Pauldrons
+			i(121370),	-- Warped-Plate Stompers
+			i(121346),	-- Warped-Plate Vambraces
 			i(141579),	-- Welded Hardskin Helmet
 		}),
 		filter(CLOAKS, {
@@ -57,7 +116,26 @@ root("WorldDrops", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3"
 		}),
 	}),
 	n(WEAPONS, {
+		i(121382),	-- Arthropod Leg Club
 		i(132921),	-- Athrog's Dethamma
+		i(121376),	-- Azsharan Queensguard Blade
+		i(121377),	-- Beastmaster's Discarded Axe
+		i(121338),	-- Bent-Blade Axe
+		i(121381),	-- Chipped Colossus Blade
+		i(121383),	-- Curious Nar'thalas Student's Staff
+		i(121335),	-- Fixing Axe
+		i(121339),	-- Kvaldir Skinning Knife
+		i(121340),	-- Lightning-Struck Hammer
+		i(121380),	-- Magnificent Cleaver
+		i(121379),	-- Mechanized Musket
+		i(121334),	-- Mining Sword
+		i(121336),	-- Mossy Longbow
+		i(121332),	-- Over-Sharpened Shank
+		i(121337),	-- Permanently Jammed Blunderbuss
+		i(121333),	-- Poorly Weighted Blackjack
+		i(121341),	-- Robble's Staff of Discourse
+		i(121378),	-- Saga of Elandrul
+		i(121375),	-- Voo's Juicer
 	}),
 	filter(RECIPES, {
 		prof(ALCHEMY, {

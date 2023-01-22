@@ -208,5 +208,98 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			})),
 		}),
+		header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
+			n(ACHIEVEMENTS, {
+				ach(17198, {	-- Ohn'ahran Plains Reverse: Bronze
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						17153,	-- Emerald Garden Ascent Reverse: Bronze
+						17147,	-- Fen Flythrough Reverse: Bronze
+						17150,	-- Ravine River Run Reverse: Bronze
+						17156,	-- River Rapids Route Reverse: Bronze
+						17144,	-- Sundapple Copse Circuit Reverse: Bronze
+					}},
+				}),
+				ach(17199, {	-- Ohn'ahran Plains Reverse: Silver
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						17154,	-- Emerald Garden Ascent Reverse: Silver
+						17148,	-- Fen Flythrough Reverse: Silver
+						17151,	-- Ravine River Run Reverse: Silver
+						17157,	-- River Rapids Route Reverse: Silver
+						17145,	-- Sundapple Copse Circuit Reverse: Silver
+					}},
+				}),
+				ach(17200, {	-- Ohn'ahran Plains Reverse: Gold
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						17155,	-- Emerald Garden Ascent Reverse: Gold
+						17149,	-- Fen Flythrough Reverse: Gold
+						17152,	-- Ravine River Run Reverse: Gold
+						17158,	-- River Rapids Route Reverse: Gold
+						17146,	-- Sundapple Copse Circuit Reverse: Gold
+					}},
+				}),
+			}),
+			n(QUESTS, sharedData({
+				["repeatable"] = true,
+				["sourceQuestNumRequired"] = 1,
+				["sourceQuests"] = {
+					68795,	-- Dragonriding
+					72366,	-- Account Dragonflight Campaign Completed
+				},
+			},{
+				q(72805, {	-- Emerald Garden Ascent - Reverse
+					["provider"] = { "n", 191247 },	-- Bronze Timekeeper
+					["coord"] = { 25.7, 55.1, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17153),	-- Emerald Garden Ascent Reverse: Bronze
+						ach(17154),	-- Emerald Garden Ascent Reverse: Silver
+						ach(17155),	-- Emerald Garden Ascent Reverse: Gold
+					},
+				}),
+				q(72802, {	-- Fen Flythrough - Reverse
+					["provider"] = { "n", 191121 },	-- Bronze Timekeeper
+					["coord"] = { 86.3, 35.8, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17147),	-- Fen Flythrough Reverse: Gold
+						ach(17148),	-- Fen Flythrough Reverse: Silver
+						ach(17149),	-- Fen Flythrough Reverse: Gold
+					},
+				}),
+				q(72803, {	-- Ravine River Run - Reverse
+					["provider"] = { "n", 191165 },	-- Bronze Timekeeper
+					["coord"] = { 80.9, 72.2, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17150),	-- Ravine River Run Reverse: Bronze
+						ach(17151),	-- Ravine River Run Reverse: Silver
+						ach(17152),	-- Ravine River Run Reverse: Gold
+					},
+				}),
+				q(72807, {	-- River Rapids Route - Reverse
+					["provider"] = { "n", 196092 },	-- Bronze Timekeeper
+					["coord"] = { 43.8, 66.8, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17156),	-- River Rapids Route Reverse: Bronze
+						ach(17157),	-- River Rapids Route Reverse: Silver
+						ach(17158),	-- River Rapids Route Reverse: Gold
+					},
+				}),
+				q(72801, {	-- Sundapple Copse Circuit - Reverse
+					["provider"] = { "n", 190928 },	-- Bronze Timekeeper
+					["coord"] = { 63.7, 30.5, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17144),	-- Sundapple Copse Circuit Reverse: Bronze
+						ach(17145),	-- Sundapple Copse Circuit Reverse: Silver
+						ach(17146),	-- Sundapple Copse Circuit Reverse: Gold
+					},
+				}),
+			})),
+		})),
 	}),
 })));

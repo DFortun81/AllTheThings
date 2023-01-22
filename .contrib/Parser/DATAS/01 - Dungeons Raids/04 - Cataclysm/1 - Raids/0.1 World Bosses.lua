@@ -79,7 +79,9 @@ _.Instances = { tier(CATA_TIER, {
 				},
 				["g"] = {
 					i(69843),	-- Mobus's Dripping Halberd
-					un(REMOVED_FROM_GAME, i(67153)),	-- Mobus's Vile Halberd [Replaced with 69843]
+					i(67153, {	-- Mobus's Vile Halberd
+						["timeline"] = { "added 4.0.3", "removed 4.1.0" },
+					}),
 				},
 			}),
 			n(50061, {	-- Xariona

@@ -1425,7 +1425,7 @@ app.L = {
 		[-1140] = "Interface\\Icons\\ui_majorfaction_valdrakken",									-- Valdrakken Accord
 		[-1141] = "Interface\\Icons\\inv_artifact_dragonscales",									-- Siege on Dragonbane Keep
 		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Aerial Challenges
-		[-1143] = 237274,																			-- Every 2 Hours Rare
+		[-1143] = 237274,																			-- Every 30 min Rare
 		[-1144] = "Interface\\Icons\\inv_scroll_11",												-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1524,6 +1524,9 @@ app.L = {
 		[-2186] = app.asset("Expansion_LEGION"),								-- Patch 7.x.x
 		[-2187] = app.asset("Expansion_BFA"),									-- Patch 8.x.x
 		[-2188] = app.asset("Expansion_SL"),									-- Patch 9.x.x
+	-- Temporary headers for unsorted poor and common items
+		[-123456] = "Interface\\Icons\\Inv_chest_cloth_46",						-- Poor Quality Items
+		[-123457] = "Interface\\Icons\\Inv_gauntlets_16",						-- Common Quality Items
 	};
 	["HEADER_NAMES"] = {
 	-- Commonly used
@@ -1985,7 +1988,7 @@ app.L = {
 		[-1140] = "Valdrakken Accord",												-- Valdrakken Accord
 		[-1141] = GetSpellInfo(388945),												-- Siege on Dragonbane Keep
 		[-1142] = "Aerial Challenges",												-- Aerial Challenges
-		[-1143] = "Every 2 Hours Rare",												-- Every 2 Hours Rare
+		[-1143] = "Every 30 min Rare",												-- Every 30 min Rare
 		[-1144] = "Weekly Profession Knowledge",									-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
@@ -2094,6 +2097,9 @@ app.L = {
 		[-2186] = "7.x.x",														-- Patch 7.x.x
 		[-2187] = "8.x.x",														-- Patch 8.x.x
 		[-2188] = "9.x.x",														-- Patch 9.x.x
+	-- Temporary headers for unsorted poor and common items
+		[-123456] = BATTLE_PET_BREED_QUALITY1,									-- Poor
+		[-123457] = BATTLE_PET_BREED_QUALITY2,									-- Common
 	};
 	["HEADER_DESCRIPTIONS"] = {
 		[-18] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",

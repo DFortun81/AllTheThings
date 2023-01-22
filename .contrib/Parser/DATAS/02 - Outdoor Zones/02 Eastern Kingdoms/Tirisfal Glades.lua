@@ -203,7 +203,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 4.0.3.13287" },
 								}),
 								i(131387, {	-- Abandoned Miner's Pants
-									["timeline"] = { "added 4.0.3.13287" },
+									["timeline"] = { "added 7.0.3.22248" },
 								}),
 							},
 						}),

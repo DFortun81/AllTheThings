@@ -45,6 +45,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				i(151252),	-- Leather-Lined Cage Helm
 				i(151254),	-- Chain-Linked Cage Helm
 				i(151251),	-- Steel-Reinforced Cage Helm
+				i(151397),	-- Sweaty Wristbands
 			},
 		}),
 		n(71992, {	-- Moonfang

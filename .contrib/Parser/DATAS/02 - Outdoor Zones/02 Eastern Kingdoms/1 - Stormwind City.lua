@@ -5697,6 +5697,75 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					}),
 				}),
+				-- #if AFTER 10.0.5
+				n(1294, {	-- Aldric Moore <Mail Armor Merchant>
+					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						-- Now any class and race can buy this
+						-- HUNTER --
+						i(129, {	-- Rugged Trapper's Boots
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(147, {	-- Rugged Trapper's Pants
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(58232, {	-- Rugged Trapper's Vest
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(23348, {	-- Scout's Boots
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(23344, {	-- Scout's Pants
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(58240, {	-- Scout's Vest
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(6137, {	-- Thug Pants
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(6138, {	-- Trapper's Boots
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(58247, {	-- Trapper's Vest
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(20900, {	-- Warder's Boots
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(20899, {	-- Warder's Pants
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(58235, {	-- Warder's Vest
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+
+						-- SHAMAN --
+						i(52540, {	-- Primal Boots
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(52539, {	-- Primal Pants
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(52535, {	-- Primal Pants
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(52545, {	-- Primal Pants
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(52538, {	-- Primal Robe
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(52534, {	-- Primal Robe
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(52544, {	-- Primal Robe
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+					},
+				}),
+				-- #endif
 				n(175051, {	-- Alice Fischer <Corrupted Aspirant Vendor>
 					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
 					["timeline"] = { "added 9.0.1.36228" },
@@ -5903,6 +5972,96 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if AFTER 10.0.5
+				n(53641, {	-- Allison Potts <Heavy Armor Merchant>
+					["coord"] = { 64.8, 48.0, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						-- Now any class and race can buy this
+						-- PALADIN --
+						i(24146, {	-- Initiate's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(52549, {	-- Initiate's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(24145, {	-- Initiate's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(58248, {	-- Initiate's Vest
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(58237, {	-- Initiate's Vest
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(43, {	-- Squire's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(52533, {	-- Squire's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(44, {	-- Squire's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(23477, {	-- Squire's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(58233, {	-- Squire's Vest
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(58242, {	-- Squire's Vest
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+
+						-- WARRIOR --
+						i(140, {	-- Brawler's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(139, {	-- Brawler's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(58245, {	-- Brawler's Vest
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(40, {	-- Recruit's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(6122, {	-- Recruit's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(23475, {	-- Recruit's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(20903, {	-- Recruit's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(39, {	-- Recruit's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(6121, {	-- Recruit's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(23474, {	-- Recruit's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(20902, {	-- Recruit's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(20904, {	-- Recruit's Tunic
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(58231, {	-- Recruit's Vest
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(58244, {	-- Recruit's Vest
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(58243, {	-- Recruit's Vest
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+					},
+				}),
+				-- #endif
 				-- #if AFTER 8.0.1
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["description"] = "Appears in Stormwind after War of Thorns.",
@@ -6086,6 +6245,104 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(16059),	-- Common Brown Shirt
 						i(3428),	-- Common Grey Shirt
 						i(16060),	-- Common White Shirt
+						-- #if AFTER 10.0.5
+						-- Now any class and race can buy this
+						-- MAGE --
+						i(55, {	-- Apprentice's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(52554, {	-- Apprentice's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(20895, {	-- Apprentice's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(1395, {	-- Apprentice's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(52681, {	-- Apprentice's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(20894, {	-- Apprentice's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(56, {	-- Apprentice's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(52553, {	-- Apprentice's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(52546, {	-- Apprentice's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(6140, {	-- Apprentice's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(20893, {	-- Apprentice's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(23478, {	-- Recruit's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(23479, {	-- Recruit's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+
+						-- PRIEST --
+						i(1396, {	-- Acolyte's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(23322, {	-- Acolyte's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(51, {	-- Neophyte's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(52, {	-- Neophyte's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(52680, {	-- Neophyte's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(6098, {	-- Neophyte's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(6119, {	-- Neophyte's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(6144, {	-- Neophyte's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(52547, {	-- Neophyte's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(20891, {	-- Neophyte's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+
+						-- WARLOCK --
+						i(1396, {	-- Acolyte's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(52679, {	-- Acolyte's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(57, {	-- Acolyte's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(52543, {	-- Acolyte's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(6129, {	-- Acolyte's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(20892, {	-- Acolyte's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(59, {	-- Acolyte's Shoes
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						-- #endif
 					},
 				}),
 				-- #if AFTER 7.0.3
@@ -6819,6 +7076,54 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
+					},
+				}),
+				-- #endif
+				-- #if AFTER 10.0.5
+				n(1295, {	-- Lara Moore <Leather Armor Merchant>
+					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						-- Now any class and race can buy this
+						-- DRUID --
+						i(6124, {	-- Novice's Pants
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(6123, {	-- Novice's Robe
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(6139, {	-- Novice's Robe
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+
+						-- ROGUE --
+						i(48, {	-- Footpad's Pants
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(47, {	-- Footpad's Shoes
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(58234, {	-- Footpad's Vest
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(20896, {	-- Lookout's Pants
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(20898, {	-- Lookout's Shoes
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(58238, {	-- Lookout's Vest
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(121, {	-- Thug Boots
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(120, {	-- Thug Pants
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
+						i(58246, {	-- Thug Vest
+							["timeline"] = { ADDED_DF_0_5 },
+						}),
 					},
 				}),
 				-- #endif

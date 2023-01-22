@@ -292,7 +292,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 	})),
 	tier(DF_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["description"] = "These rewards are available to anyone who purchases Dragonflight Heroic Edition.",
-		["timeline"] = { "added 9.2.5" },
+		["timeline"] = { ADDED_SL_S4 },
 		["groups"] = {
 			p(3177, {	-- Drakks (PET!)
 				["description"] = "This is a pre-order bonus only available before the launch of Dragonflight.",
@@ -300,6 +300,9 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			p(3175),	-- Murkastrasza (PET!)
 			mount(359843),	-- Tangled Dreamweaver (MOUNT!)
 			ach(17314),	-- Heroic Edition: Tangled Dreamweaver
+			ach(17305, {	-- Trading Post: Dragonflight
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
 			n(REWARDS, {
 				["description"] = "The following additional rewards were only available if you purchased Dragonflight Epic Edition.",
 				["groups"] = {

@@ -62,6 +62,10 @@ _.Zones =
 					["coord"] = { 45.3, 65.2, 174 },
 					["provider"] = { "n", 38120 },	-- Hobart Grapplehammer
 					["sourceQuests"] = { 27139 },	-- Hobart Needs You
+					["g"] = {
+						i(52904),	-- Broken Plunger
+						i(52950),	-- Whamo Kablamo
+					},
 				}),
 				q(14239, {	-- Don't Go Into the Light!
 					["coord"] = { 24.6, 77.9, 174 },
@@ -117,6 +121,14 @@ _.Zones =
 					["coord"] = { 25.2, 59.8, 174 },
 					["provider"] = { "n", 36112 },	-- Scout Brax
 					["sourceQuests"] = { 14240 },	-- Get to the Gyrochoppa
+					["g"] = {
+						i(52949),	-- Gyrochoppa Seat Belt
+						i(52932),	-- Parachute Wrist Straps
+						i(52903),	-- Pilot's Gloves
+						i(131841, {	-- Rotor Chain
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(14001, {	-- Goblin Escape Pods
 					["coord"] = { 24.6, 77.9, 174 },
@@ -151,6 +163,11 @@ _.Zones =
 					["coord"] = { 34.6, 66.8, 174 },
 					["provider"] = { "n", 35917 },	-- Kilag Gorefang
 					["sourceQuests"] = { 14237 },	-- Forward Movement
+					["g"] = {
+						i(52900),	-- Spy Choker Cord
+						i(52930),	-- Spy Poker
+						i(52946),	-- Spy Strangler Gloves
+					},
 				}),
 				q(24856, {	-- Invasion Imminent!
 					["coord"] = { 45.3, 65.2, 174 },
@@ -204,11 +221,26 @@ _.Zones =
 					["coord"] = { 31.2, 79.2, 174 },
 					["provider"] = { "n", 35769 },	-- Foreman Dampwick
 					["sourceQuests"] = { 14248 },	-- Help Wanted
+					["g"] = {
+						i(55885),	-- Dampwick's "Best" Robes
+						i(131838, {	-- Miner's Overcoat
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(52944),	-- Miner's Vest
+					},
 				}),
 				q(14019, {	-- Monkey Business
 					["coord"] = { 27.9, 74.4, 174 },
 					["provider"] = { "n", 35758 },	-- Bamm Megabomb
 					["sourceQuests"] = { 14001 },	-- Goblin Escape Pods
+					["g"] = {
+						i(52928),	-- Banana Holder
+						i(52898),	-- Banana Peel Slippers
+						i(131837, {	-- Monkey Handler Fists
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(52943),	-- Monkey Handler Gloves
+					},
 				}),
 				q(25122, {	-- Morale Boost
 					["coord"] = { 53.1, 36.5, 174 },
@@ -327,6 +359,14 @@ _.Zones =
 						14021,	-- Miner Troubles
 						14031,	-- Capturing the Unknown
 						14233,	-- The Enemy of My Enemy
+					},
+					["g"] = {
+						i(52931),	-- Orcish Scout Boots
+						i(52948),	-- Sailor's Leggings
+						i(131840, {	-- Sailor's Legguards
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(52902),	-- Salvaged Bracers
 					},
 				}),
 				q(25202, {	-- The Fastest Way to His Heart [Female Version]
@@ -481,11 +521,23 @@ _.Zones =
 					["coord"] = { 12.4, 63.1, 174 },
 					["provider"] = { "n", 36161 },	-- Thrall
 					["sourceQuests"] = { 14326 },	-- Meet Me Up Top
+					["g"] = {
+						i(52947),	-- Cyclone Staff
+						i(52901),	-- Whirling Axe
+					},
 				}),
 				q(14236, {	-- Weed Whacker
 					["coord"] = { 35.4, 75.7, 174 },
 					["provider"] = { "n", 35893 },	-- Kilag Gorefang
 					["sourceQuests"] = { 14235 },	-- The Vicious Vale
+					["g"] = {
+						i(52929),	-- Kilag's Vest
+						i(52899),	-- Weed Fiber Pants
+						i(52945),	-- Weed Stompers
+						i(131839, {	-- Weed-Flattening Greatboots
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(25244, {	-- What Kind of Name is Candy, Anyway? [Female Version]
 					["coord"] = { 43.6, 25.3, 174 },

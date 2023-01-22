@@ -1806,6 +1806,9 @@ root("Zones", m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(45044, {	-- Cloak of Cenarius
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 						i(56630, {	-- Delgren's Leggings
 							["timeline"] = { "added 4.0.3.13277" },
 						}),

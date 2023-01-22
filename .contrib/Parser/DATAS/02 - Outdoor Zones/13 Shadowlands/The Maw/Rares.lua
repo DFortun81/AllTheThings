@@ -41,6 +41,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					},
 					["g"] = {
 						i(183409),	-- Decaying Mawrat (PET!)
+						i(184368),	-- Sputtering Hilt
 						i(183408),	-- Undying Deathroach (PET!)
 					},
 				}),

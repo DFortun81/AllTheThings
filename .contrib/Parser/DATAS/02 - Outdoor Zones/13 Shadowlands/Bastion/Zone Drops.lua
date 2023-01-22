@@ -22,6 +22,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 			i(179008),	-- Depleted Goliath Core
 			i(179009),	-- Tampered Anima Charger
 			i(180533),	-- Solenium Lockbox
+			i(174021),	-- Age-Worn Shortblade
 			i(176788),	-- Darkfeather Belt
 			i(176792),	-- Darkfeather Bindings
 			i(176780),	-- Darkfeather Breeches

@@ -7,6 +7,14 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 },
 		i(199019),	-- Aerodynamic Cape
 		i(199018),	-- Bejeweled Stonewatcher's Pendant
 		i(199017),	-- Claw-Marked Signet
+		i(188718),	-- Corroded Plate Chestpiece
+		i(188716),	-- Corroded Plate Faceguard
+		i(188717),	-- Corroded Plate Gloves
+		i(188719),	-- Corroded Plate Greatbelt
+		i(188715),	-- Corroded Plate Legguards
+		i(188714),	-- Corroded Plate Shoulderguards
+		i(188712),	-- Corroded Plate Vambraces
+		i(188713),	-- Corroded Plate Warboots
 		i(198990),	-- Drakewatcher's Cord
 		i(198987),	-- Drakewatcher's Handwraps
 		i(198988),	-- Drakewatcher's Hood
@@ -31,6 +39,14 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 },
 		i(198994),	-- Isle Trapper's Helm
 		i(198992),	-- Isle Trapper's Treads
 		i(199014),	-- Isle Trapper's Tunic
+		i(188711),	-- Rotten Leather Bracers
+		i(188704),	-- Rotten Leather Cinch
+		i(188705),	-- Rotten Leather Footwraps
+		i(188707),	-- Rotten Leather Guise
+		i(188706),	-- Rotten Leather Handwraps
+		i(188710),	-- Rotten Leather Jerkin
+		i(188708),	-- Rotten Leather Leggings
+		i(188709),	-- Rotten Leather Shoulderpads
 		i(199013),	-- Shorebreaker's Armplates
 		i(199007),	-- Shorebreaker's Breastplate
 		i(199012),	-- Shorebreaker's Cincture
@@ -39,9 +55,25 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 },
 		i(199006),	-- Shorebreaker's Helm
 		i(199010),	-- Shorebreaker's Legguards
 		i(199011),	-- Shorebreaker's Pauldrons
+		i(188720),	-- Singed Cloth Armbands
+		i(188726),	-- Singed Cloth Cincture
+		i(188722),	-- Singed Cloth Footpads
+		i(188724),	-- Singed Cloth Grips
+		i(188725),	-- Singed Cloth Hood
+		i(188723),	-- Singed Cloth Legwraps
+		i(188727),	-- Singed Cloth Mantle
+		i(188721),	-- Singed Cloth Vestments
 		i(199031),	-- Stonewatcher's Eye
 		i(199030),	-- Stonewatcher's Thumb
 		i(199029),	-- Stonewatcher's Toe
+		i(188728),	-- Timeworn Chain Armguards
+		i(188731),	-- Timeworn Chain Breeches
+		i(188735),	-- Timeworn Chain Clasp
+		i(188730),	-- Timeworn Chain Footguards
+		i(188733),	-- Timeworn Chain Gauntlets
+		i(188734),	-- Timeworn Chain Helm
+		i(188729),	-- Timeworn Chain Spaulders
+		i(188732),	-- Timeworn Chain Vest
 	}),
 	n(PROFESSIONS, {
 		prof(ALCHEMY, sharedData({ ["requireSkill"] = ALCHEMY, },{

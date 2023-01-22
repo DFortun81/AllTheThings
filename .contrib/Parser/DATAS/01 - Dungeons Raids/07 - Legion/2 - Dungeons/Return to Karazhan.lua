@@ -160,6 +160,26 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 			}),
+			n(ZONE_DROPS, sharedData({ ["crs"] = {
+				115401,	-- Bishop
+				115402,	-- Bishop
+				115388,	-- King
+				115406,	-- Knight
+				115407,	-- Rook
+				115395,	-- Queen
+			}, }), {
+				i(143665),	-- Broken Girdle of Treachery
+				i(143674),	-- Creaking Legplates of the Innocent
+				i(143672),	-- Dented Triptych Shield
+				i(143673),	-- Heart-Snuffed Leggings
+				i(143669),	-- Overgrown Forestlord Striders
+				i(143675),	-- Potentate's Threadbare Headdress
+				i(143671),	-- Sagging Shoulderpads of the Merciless
+				i(143666),	-- Shattered King's Defender
+				i(143668),	-- Tarnished Mithril Chain of Heroism
+				i(143670),	-- Thin-Soled Fiend Slayer Boots
+				i(143667),	-- Worn Battlescar Boots
+			}),
 			d(HEROIC_DUNGEON, {
 				e(1820, {	-- Opera Hall: Wikket
 					["crs"] = {

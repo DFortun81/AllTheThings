@@ -573,6 +573,9 @@ root("Zones", m(KALIMDOR, {
 					["qg"] = 40578,	-- Farden Talonshrike
 					["coord"] = { 44.1, 45.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25810,	-- The Hatchery Must Burn
+					["groups"] = {
+						i(52716),	-- Twilight Firelance
+					},
 				}),
 				q(29182, {	-- Flight of the Storm Crows
 					["sourceQuest"] = 29181,	-- Druids of the Talon

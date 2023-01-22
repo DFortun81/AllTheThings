@@ -9,14 +9,38 @@ root("WorldDrops", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } 
 			i(163941),	-- Hauer's Gloves of Strategy
 			i(163938),	-- Kalieve's Kickers
 			i(163939),	-- Mallusof's Pantaloons of Stability
+			i(154793),	-- Unraveling Cloth Amice
+			i(154792),	-- Unraveling Cloth Cord
+			i(154791),	-- Unraveling Cloth Cowl
+			i(154790),	-- Unraveling Cloth Handwraps
+			i(154789),	-- Unraveling Cloth Pants
+			i(154788),	-- Unraveling Cloth Sandals
+			i(154787),	-- Unraveling Cloth Shirt
+			i(154786),	-- Unraveling Cloth Wristwraps
 		}),
 		filter(LEATHER, {
+			i(154770),	-- Cracked Hide Belt
+			i(154771),	-- Cracked Hide Boots
+			i(154772),	-- Cracked Hide Gloves
+			i(154773),	-- Cracked Hide Hood
+			i(154774),	-- Cracked Hide Pants
+			i(154776),	-- Cracked Hide Vest
+			i(154775),	-- Cracked Hide Shoulders
+			i(154777),	-- Cracked Hide Wristguards
 			i(163945),	-- Mystra's Magnificient Mitts
 			i(163943),	-- Neleimour's Patterned Leggings
 			i(163942),	-- Slippers of the Unruly Fairies
 			i(163944),	-- Waatah's Double-Knotted Cord
 		}),
 		filter(MAIL, {
+			i(154801),	-- Crumbling Chain Belt
+			i(154800),	-- Crumbling Chain Coif
+			i(154799),	-- Crumbling Chain Gloves
+			i(154798),	-- Crumbling Chain Hauberk
+			i(154796),	-- Crumbling Chain Sabatons
+			i(154797),	-- Crumbling Chain Leggings
+			i(154795),	-- Crumbling Chain Spaulders
+			i(154794),	-- Crumbling Chain Wristguards
 			i(163931),	-- Chain Links of Fraying Awe
 			i(163946),	-- Gayeong's Gentle Step
 			i(163948),	-- Moarse's Coarse-Chain Gauntlets
@@ -27,6 +51,14 @@ root("WorldDrops", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } 
 			i(163951),	-- Cinch of the Sainted General
 			i(163950),	-- Edla's Embellished Legguards
 			i(163952),	-- Oprescu's Gilded Touch
+			i(154785),	-- Ruptured Plate Belt
+			i(154784),	-- Ruptured Plate Breastplate
+			i(154783),	-- Ruptured Plate Gauntlets
+			i(154782),	-- Ruptured Plate Helmet
+			i(154781),	-- Ruptured Plate Leggings
+			i(154780),	-- Ruptured Plate Pauldrons
+			i(154779),	-- Ruptured Plate Stompers
+			i(154778),	-- Ruptured Plate Vambraces
 		}),
 		filter(CLOAKS, {
 			i(160161),	-- Faithless Skycloak
@@ -186,6 +218,28 @@ root("WorldDrops", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } 
 		i(159494),	-- Wintersail Repeater
 		i(159568),	-- Wintersail Staff
 	})),
+	n(WEAPONS, {	-- [Poor]
+		i(160937),	-- Arrow-Pocked Aegis
+		i(160935),	-- Backfiring Blunderbuss
+		i(160930),	-- Barnacled Greataxe
+		i(154803),	-- Battered Greatmaul
+		i(160938),	-- Bent Punching Blade
+		i(160926),	-- Broken Mooring Post
+		i(160927),	-- Chipped Stone Hatchet
+		i(154804),	-- Chipped-Blade Scimitar
+		i(160929),	-- Cracked Cannon Ram
+		i(158078),	-- Cracked Overlord's Scepter
+		i(160925),	-- Crusty Cutlass
+		i(160936),	-- Depleted Arcane Scepter
+		i(160934),	-- Mud-Soaked Crossbow
+		i(154802),	-- Notched Handaxe
+		i(154805),	-- Rottingwood Quarterstaff
+		i(160931),	-- Rough Cooking Spit
+		i(160924),	-- Scored Antique Blade
+		i(160933),	-- Splintered Longbow
+		i(160932),	-- Termite-Addled Staff
+		i(160928),	-- Weathered Greatsword
+	}),
 	filter(RECIPES, {
 		prof(BLACKSMITHING, {
 			i(166260),	-- Recipe: Monel-Hardened Hoofplates (Rank 3)

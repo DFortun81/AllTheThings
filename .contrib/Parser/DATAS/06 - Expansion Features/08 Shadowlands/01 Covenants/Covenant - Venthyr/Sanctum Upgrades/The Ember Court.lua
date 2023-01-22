@@ -870,6 +870,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 											["questID"] = 61456,
 										}),
 										i(178128),	-- Pouch of Shinies
+										i(179301),	-- Large Muck Stained Blade
+										i(179302),	-- Muck-Encrusted Dagger
 									}),
 								}),
 								o(356741, {	-- The Countess' Extravagant Tribute

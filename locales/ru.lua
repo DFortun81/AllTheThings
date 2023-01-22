@@ -851,7 +851,7 @@ for key,value in pairs({
 		[-1131] = "Искарское рыболовство",							-- Iskaara Fishing
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
 		[-1142] = "Воздушные испытания",							-- Aerial Challenges
-		[-1143] = "Редкие каждые 2 часа",							-- Every 2 Hours Rare
+		[-1143] = "Редкие каждые 30 минут",							-- Every 30 min Rare
 		[-1144] = "Еженедельные Очки Знаний Профессий",				-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",

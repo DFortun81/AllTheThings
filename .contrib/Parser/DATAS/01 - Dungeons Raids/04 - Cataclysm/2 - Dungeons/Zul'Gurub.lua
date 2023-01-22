@@ -239,16 +239,13 @@ _.Instances = { tier(CATA_TIER, {
 								{ "n", 53151 },	-- Overseer Blingbang
 							},
 							["g"] = {
+								i(69262, {	-- Black Ice
+									["timeline"] = { "removed 7.0.3" },
+								}),
 								i(133997),	-- Black Ice (TOY!)
-								i(69863, {	-- Golden Necklace
-									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
-								}),
-								i(69865, {	-- Gem-Studded Bracelets
-									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
-								}),
-								i(69864, {	-- Tarnished Crown
-									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
-								}),
+								i(69863),	-- Golden Necklace
+								i(69865),	-- Gem-Studded Bracelets
+								i(69864),	-- Tarnished Crown
 							},
 						}),
 						q(29253, {	-- A Shiny Reward
@@ -262,16 +259,13 @@ _.Instances = { tier(CATA_TIER, {
 								{ "n", 53151 },	-- Overseer Blingbang
 							},
 							["g"] = {
+								i(69262, {	-- Black Ice
+									["timeline"] = { "removed 7.0.3" },
+								}),
 								i(133997),	-- Black Ice (TOY!)
-								i(69863, {	-- Golden Necklace
-									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
-								}),
-								i(69865, {	-- Gem-Studded Bracelets
-									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
-								}),
-								i(69864, {	-- Tarnished Crown
-									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
-								}),
+								i(69863),	-- Golden Necklace
+								i(69865),	-- Gem-Studded Bracelets
+								i(69864),	-- Tarnished Crown
 							},
 						}),
 						q(29208,  {	-- An Old Friend

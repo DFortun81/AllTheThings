@@ -17,6 +17,7 @@ root("Zones", {
 							crit(13, {	-- Ancient Legion War Cache
 								["achievementID"] = 12074,	-- Shoot First, Loot Later
 							}),
+							i(152857),	-- Chipped Man'ari Blade
 							i(153308),	-- Unyielding Peacekeeper's Cudgel
 						},
 					}),
@@ -51,6 +52,7 @@ root("Zones", {
 							crit(15, {	-- Legion Treasure Hoard
 								["achievementID"] = 12074,	-- Shoot First, Loot Later
 							}),
+							i(152857),	-- Chipped Man'ari Blade
 							i(153291),	-- Spectral Censorite's Staff
 						},
 					}),

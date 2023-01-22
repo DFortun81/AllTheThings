@@ -15,6 +15,7 @@ _.WorldDrops =
 				i(55286),	-- Mardenholde Axe
 				i(55284),	-- Nethergarde Axe
 				i(55281),	-- Razorwind Axe
+				i(62070),	-- Rusted Timber Axe
 				i(55285),	-- Splinterspear Axe
 				i(55282),	-- Steelspark Axe
 			}),
@@ -23,6 +24,7 @@ _.WorldDrops =
 				i(55296),	-- Bladefist Broadaxe
 				i(55297),	-- Irontree Broadaxe
 				i(55295),	-- Mardenholde Broadaxe
+				i(62065),	-- Melted Cleaver
 				i(55293),	-- Nethergarde Broadaxe
 				i(55290),	-- Razorwind Broadaxe
 				i(55294),	-- Splinterspear Broadaxe
@@ -33,6 +35,7 @@ _.WorldDrops =
 				i(55301),	-- Angerfang Bow
 				i(55305),	-- Bladefist Bow
 				i(55306),	-- Irontree Bow
+				i(62068),	-- Knog's Bow of Ineptitude
 				i(55304),	-- Mardenholde Bow
 				i(55302),	-- Nethergarde Bow
 				i(66973),	-- Ravenheart Longbow
@@ -70,6 +73,7 @@ _.WorldDrops =
 				i(55435),	-- Swamplight Spellblade
 				i(55440),	-- Thondroril Spellblade
 				i(66956),	-- Trek's Shiv
+				i(62066),	-- Wolk's Blunted Shiv
 			}),
 			filter(FIST_WEAPONS, {
 				i(55346),	-- Angerfang Knuckles
@@ -89,6 +93,7 @@ _.WorldDrops =
 				i(55360),	-- Irontree Gun
 				i(55358),	-- Mardenholde Gun
 				i(55356),	-- Nethergarde Gun
+				i(62069),	-- Plugged Rifle
 				i(55353),	-- Razorwind Gun
 				i(55357),	-- Splinterspear Gun
 				i(55354),	-- Steelspark Gun
@@ -113,6 +118,7 @@ _.WorldDrops =
 				i(55386),	-- Bladefist Mace
 				i(67029),	-- Death Pyre Mace
 				i(66990),	-- Downfall Hammer
+				i(62067),	-- Flamewashed Mace
 				i(55387),	-- Irontree Mace
 				i(67120),	-- Mace of Apotheosis
 				i(55385),	-- Mardenholde Mace
@@ -135,6 +141,7 @@ _.WorldDrops =
 				i(55394),	-- Mardenholde Hammer
 				i(55392),	-- Nethergarde Hammer
 				i(55389),	-- Razorwind Hammer
+				i(62063),	-- Shattered War Mace
 				i(55393),	-- Splinterspear Hammer
 				i(55390),	-- Steelspark Hammer
 				i(66993),	-- Sorrow's End
@@ -203,6 +210,7 @@ _.WorldDrops =
 			filter(TWO_HANDED_SWORDS, {
 				i(55463),	-- Angerfang Greatsword
 				i(55467),	-- Bladefist Greatsword
+				i(62071),	-- Corroded Blade
 				i(55468),	-- Irontree Greatsword
 				i(55466),	-- Mardenholde Greatsword
 				i(55464),	-- Nethergarde Greatsword
@@ -210,6 +218,7 @@ _.WorldDrops =
 				i(55461),	-- Razorwind Greatsword
 				i(55465),	-- Splinterspear Greatsword
 				i(55462),	-- Steelspark Greatsword
+				i(62064),	-- Warped Greatsword
 			}),
 			filter(WANDS, {
 				i(55486),	-- Blackwolf Wand

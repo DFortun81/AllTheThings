@@ -106,6 +106,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						ach(15902),	-- Academy Ascent Advanced: Gold
 					},
 				}),
+				q(72754, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Academy Ascent - Reverse
+					["provider"] = { "n", 193951 },	-- Bronze Timekeeper
+					["coord"] = { 60.3, 41.6, THALDRASZUS },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17186),	-- Academy Ascent Reverse: Bronze
+						ach(17187),	-- Academy Ascent Reverse: Silver
+						ach(17188),	-- Academy Ascent Reverse: Gold
+					},
+				})),
 				q(70161, {	-- Caverns Criss-Cross
 					["provider"] = { "n", 194372 },	-- Bronze Timekeeper
 					["coord"] = { 58.1, 33.6, THALDRASZUS },
@@ -208,5 +218,111 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			})),
 		}),
+		header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
+			n(ACHIEVEMENTS, {
+				ach(17204, {	-- Thaldraszus Reverse: Bronze
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						15909,	-- Academy Ascent Reverse: Bronze
+						17192,	-- Caverns Criss-Cross Reverse: Bronze
+						17183,	-- Cliffside Circuit Reverse: Bronze
+						17189,	-- Garden Gallivant Reverse: Bronze
+						17177,	-- The Flowing Forest Flight Reverse: Bronze
+						17180,	-- Tyrhold Trial Reverse: Bronze
+					}},
+				}),
+				ach(17205, {	-- Thaldraszus Reverse: Silver
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						17187,	-- Academy Ascent Reverse: Silver
+						17193,	-- Caverns Criss-Cross Reverse: Silver
+						17184,	-- Cliffside Circuit Reverse: Silver
+						17190,	-- Garden Gallivant Reverse: Silver
+						17178,	-- The Flowing Forest Flight Reverse: Silver
+						17181,	-- Tyrhold Trial Reverse: Silver
+					}},
+				}),
+				ach(17206, {	-- Thaldraszus Reverse: Gold
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						17188,	-- Academy Ascent Reverse: Gold
+						17194,	-- Caverns Criss-Cross Reverse: Gold
+						17185,	-- Cliffside Circuit Reverse: Gold
+						17191,	-- Garden Gallivant Reverse: Gold
+						17179,	-- The Flowing Forest Flight Reverse: Gold
+						17182,	-- Tyrhold Trial Reverse: Gold
+					}},
+				}),
+			}),
+			n(QUESTS, sharedData({
+				["repeatable"] = true,
+				["sourceQuestNumRequired"] = 1,
+				["sourceQuests"] = {
+					68795,	-- Dragonriding
+					72366,	-- Account Dragonflight Campaign Completed
+				},
+			},{
+				q(72754, {	-- Academy Ascent - Reverse
+					["provider"] = { "n", 193951 },	-- Bronze Timekeeper
+					["coord"] = { 60.3, 41.6, THALDRASZUS },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17186),	-- Academy Ascent Reverse: Bronze
+						ach(17187),	-- Academy Ascent Reverse: Silver
+						ach(17188),	-- Academy Ascent Reverse: Gold
+					},
+				}),
+				q(72750, {	-- Caverns Criss-Cross - Reverse
+					["provider"] = { "n", 194372 },	-- Bronze Timekeeper
+					["coord"] = { 58.1, 33.6, THALDRASZUS },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17192),	-- Caverns Criss-Cross Reverse: Bronze
+						ach(17193),	-- Caverns Criss-Cross Reverse: Silver
+						ach(17194),	-- Caverns Criss-Cross Reverse: Gold
+					},
+				}),
+				q(72760, {	-- Cliffside Circuit - Reverse
+					["provider"] = { "n", 193911 },	-- Bronze Timekeeper
+					["coord"] = { 37.7, 48.9, THALDRASZUS },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17183),	-- Cliffside Circuit Reverse: Bronze
+						ach(17184),	-- Cliffside Circuit Reverse: Silver
+						ach(17185),	-- Cliffside Circuit Reverse: Gold
+					},
+				}),
+				q(72793, {	-- Flowing Forest Flight - Reverse
+					["provider"] = { "n", 192555 },	-- Bronze Timekeeper
+					["coord"] = { 57.8, 75.0, THALDRASZUS },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17177),	-- The Flowing Forest Flight Reverse: Bronze
+						ach(17178),	-- The Flowing Forest Flight Reverse: Silver
+						ach(17179),	-- The Flowing Forest Flight Reverse: Gold
+					},
+				}),
+				q(72769, {	-- Garden Gallivant - Reverse
+					["provider"] = { "n", 194348 },	-- Bronze Timekeeper
+					["coord"] = { 39.5, 76.2, THALDRASZUS },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17189),	-- Garden Gallivant Reverse: Bronze
+						ach(17190),	-- Garden Gallivant Reverse: Silver
+						ach(17191),	-- Garden Gallivant Reverse: Gold
+					},
+				}),
+				q(72792, {	-- Tyrhold Trial - Reverse
+					["provider"] = { "n", 193651 },	-- Bronze Timekeeper
+					["coord"] = { 57.2, 66.9, THALDRASZUS },
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(17180),	-- Tyrhold Trial Reverse: Bronze
+						ach(17181),	-- Tyrhold Trial Reverse: Silver
+						ach(17182),	-- Tyrhold Trial Reverse: Gold
+					},
+				}),
+			})),
+		})),
 	}),
 })));

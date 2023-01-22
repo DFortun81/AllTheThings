@@ -458,6 +458,12 @@ root("Zones", m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 154327 },	-- Austin Huxworth
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuestNumRequired"] = 1,
+					["g"] = {
+						i(174789),	-- Dented Plate Mitts
+						i(174788),	-- Linked Mail Gloves
+						i(174786),	-- Stitched Cloth Gloves
+						i(174787),	-- Thick Leather Gauntlets
+					},
 				}),
 				q(59939, {	-- Forbidden Quilboar Necromancy [H]
 					["sourceQuests"] = {
@@ -468,6 +474,12 @@ root("Zones", m(EXILES_REACH, bubbleDownSelf({
 					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
 					["races"] = HORDE_ONLY,
 					["sourceQuestNumRequired"] = 1,
+					["g"] = {
+						i(174789),	-- Dented Plate Mitts
+						i(174788),	-- Linked Mail Gloves
+						i(174786),	-- Stitched Cloth Gloves
+						i(174787),	-- Thick Leather Gauntlets
+					},
 				}),
 				q(55193, {	-- The Scout-o-Matic 5000
 					["sourceQuests"] = {
@@ -1150,10 +1162,22 @@ root("Zones", m(EXILES_REACH, bubbleDownSelf({
 			o(339770, {	-- Abandoned Treasure Chest
 				["coord"] = { 57.1, 68.4, EXILES_REACH },
 				["questID"] = 58380,
+				["g"] = {
+					i(174810),	-- Dented Plate Waistguard
+					i(174809),	-- Linked Mail Chain
+					i(174807),	-- Stitched Cloth Belt
+					i(174808),	-- Stitched Leather Cinch
+				},
 			}),
 			o(329918, {	-- Quilboar Treasures
 				["coord"] = { 58.5, 59.3, EXILES_REACH },
 				["questID"] = 56579,
+				["g"] = {
+					i(174806),	-- Dented Plate Bracers
+					i(174805),	-- Linked Mail Bracers
+					i(174803),	-- Stitched Cloth Bracers
+					i(174804),	-- Stitched Leather Bracers
+				},
 			}),
 			o(329919, {	-- Stolen Supplies
 				["coord"] = { 59.3, 37.6, EXILES_REACH },
@@ -1164,12 +1188,121 @@ root("Zones", m(EXILES_REACH, bubbleDownSelf({
 				["questID"] = 56088,
 			}),
 		})),
+		n(VENDORS, sharedData({
+			["customCollect"] = "NPE",
+			["altQuests"] = {
+				55991,	-- An End to Beginnings [A]
+				59985,	-- An End to Beginnings [H]
+			},
+		}, {
+			n(167213, {	-- Provisioner Jin'hake
+				["coord"] = { 52.4, 55.6, 1409 },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(178120, {	-- Horde Tabard
+						["cost"] = 25,	-- 25c
+					}),
+				},
+			}),
+			n(156800, {	-- Quartermaster Richter <Supplies>
+				["coord"] = { 52.2, 55.2, 1409 },
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(168100, {	-- Alliance Tabard
+						["cost"] = 25,	-- 25c
+					}),
+				},
+			}),
+		})),
 		n(ZONE_DROPS, {
+			i(174814, {	-- Dented Chestplate
+				["crs"] = {
+					150238,	-- Quilboar Geomancer
+					150237,	-- Quilboar Warrior
+				},
+			}),
+			i(174818, {	-- Dented Legplates
+				["crs"] = {
+					152843,	-- Harpy Boltcaller
+					152571,	-- Harpy Snatcher
+				},
+			}),
+			i(174794, {	-- Dented Plate Boots
+				["crs"] = {
+					150228,	-- Murloc Spearhunter
+					150229,	-- Murloc Watershaper
+				},
+			}),
+			i(174793, {	-- Linked Mail Boots
+				["crs"] = {
+					150228,	-- Murloc Spearhunter
+					150229,	-- Murloc Watershaper
+				},
+			}),
+			i(174813, {	-- Linked Mail Hauberk
+				["crs"] = {
+					150238,	-- Quilboar Geomancer
+					150237,	-- Quilboar Warrior
+				},
+			}),
+			i(174817, {	-- Linked Mail Leggings
+				["crs"] = {
+					152843,	-- Harpy Boltcaller
+					152571,	-- Harpy Snatcher
+				},
+			}),
+			i(175245, {	-- Runetusk Necklace
+				["crs"] = {
+					156825,	-- Darkmaul Centurion
+					157328,	-- Darkmaul Channeler
+					156821,	-- Darkmaul Shadowcaller
+					153581,	-- Grunk
+					153583,	-- Jugnug
+					153239,	-- Ogre Brute
+					154103,	-- Ogre Chef
+					153242,	-- Ogre Shadowcaster
+					162817,	-- Torgok <Binder of Souls>
+					153582,	-- Wug
+				},
+			}),
 			i(175244, {	-- Spider-Eye Ring
 				["crs"] = { 160394 },	-- Barrow Spider
 			}),
-			i(175245, {	-- Runetusk Necklace
-				["crs"] = { 156821 },	-- Darkmaul Shadowcaller
+			i(174815, {	-- Stitched Cloth Leggings
+				["crs"] = {
+					152843,	-- Harpy Boltcaller
+					152571,	-- Harpy Snatcher
+				},
+			}),
+			i(174791, {	-- Stitched Cloth Shoes
+				["crs"] = {
+					150228,	-- Murloc Spearhunter
+					150229,	-- Murloc Watershaper
+				},
+			}),
+			i(174811, {	-- Stitched Cloth Tunic
+				["crs"] = {
+					150238,	-- Quilboar Geomancer
+					150237,	-- Quilboar Warrior
+				},
+			}),
+			i(174792, {	-- Stitched Leather Boots
+				["crs"] = {
+					150228,	-- Murloc Spearhunter
+					150229,	-- Murloc Watershaper
+				},
+			}),
+			i(174816, {	-- Stitched Leather Pants
+				["crs"] = {
+					152843,	-- Harpy Boltcaller
+					152571,	-- Harpy Snatcher
+				},
+			}),
+			i(174812, {	-- Stitched Leather Tunic
+				["crs"] = {
+					150238,	-- Quilboar Geomancer
+					150237,	-- Quilboar Warrior
+				},
 			}),
 		}),
 	},

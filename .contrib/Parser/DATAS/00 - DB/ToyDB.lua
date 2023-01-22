@@ -1137,6 +1137,17 @@ i(199926);	-- Portable J.A.M.
 i(200636);	-- Primal Invocation Quintessence
 i(197961);	-- Whelps on Strings
 
+
+------------------
+-- PATCH 10.0.5 --
+------------------
+i(202020);	-- Chasing Storm
+i(202207);	-- Reusable Oversized Bobber
+i(203716);	-- Thundering Banner of the Aspects
+-- NYI --
+i(202309);	-- Defective Doomsday Device
+
+
 -- #if ANYCLASSIC
 -----------------
 -- CLASSIC WOW --

@@ -125,7 +125,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(193620),	-- Time-Lost Slyvern (PET!)
 				i(193850),	-- Time-Lost Timbertooth (PET!)
 				i(193068),	-- Time-Lost Treeflitter (PET!)
-				i(193855),	-- Time-Lost Vorquin Foal (PET!)
 				p(3393),	-- Anubisath Idol (PET!)
 				p(3401),	-- Arcantus (PET!)
 				p(3339),	-- Black Dragon Whelp (PET!)

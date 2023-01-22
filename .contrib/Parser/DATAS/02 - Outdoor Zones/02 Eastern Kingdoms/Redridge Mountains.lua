@@ -1123,6 +1123,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(60734, {	-- Keeshan's Bandana
+							["timeline"] = { "added 4.0.3" },
+						}),
 						i(60727, {	-- Keeshan's Bow
 							["timeline"] = { "added 4.0.3" },
 						}),

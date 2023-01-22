@@ -931,6 +931,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
 				["provider"] = { "o", 351885 },	-- Wanted: Aggregate of Doom
 				["coord"] = { 59.1, 69.2, REVENDRETH },
+				["g"] = {
+					i(180288),	-- Silver-Bladed Excavator
+				},
 			}),
 			q(60278, {	-- WANTED: Duke Anton
 				["sourceQuests"] = { 57025 },	-- A Plea to Revendreth

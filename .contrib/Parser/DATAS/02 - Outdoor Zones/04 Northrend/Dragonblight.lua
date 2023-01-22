@@ -2399,6 +2399,12 @@ root("Zones", {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					i(37659, { -- Enti's Quenched Sword
+						["coord"] = { 90.6, 52.6, DRAGONBLIGHT },
+						["crs"] = {
+							27105,	-- Kreug Oathbreaker <Ymirjar Giant Lord>
+						},
+					}),
 					applyclassicphase(WRATH_PHASE_TWO, i(44978, {	-- Blade of Drak'Mar
 						["provider"] = { "o", 194238 },	-- Blade of Drak'Mar
 						["coord"] = { 93, 26, DRAGONBLIGHT },
@@ -2426,6 +2432,22 @@ root("Zones", {
 						["classes"] = { MAGE },
 						["crs"] = { 26482 },	-- Arctic Grizzly
 						["f"] = RECIPES,
+					}),
+					i(38268, {	-- Spare Hand
+						["coords"] = {
+							{ 81.0, 42.8, DRAGONBLIGHT },
+							{ 82.6, 68.6, DRAGONBLIGHT },
+						},
+						["crs"] = {
+							27224,	-- Forgotten Knight
+							27401,	-- Risen Wintergarde Miner
+						},
+					}),
+					i(38262, { -- Well-Worn Bat
+						["coord"] = { 68.2, 74.2, DRAGONBLIGHT },
+						["crs"] = {
+							27238,	-- Foreman Kaleiki
+						},
 					}),
 				}),
 			},

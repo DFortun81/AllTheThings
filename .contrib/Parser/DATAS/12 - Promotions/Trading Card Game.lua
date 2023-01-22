@@ -213,6 +213,13 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 			["timeline"] = { "added 2.2.0.7091" },
 		}),
 		i(45063, {	-- Foam Sword Rack (TOY!)
+			["groups"] = {
+				i(45061),	-- Foam Sword
+				i(45176),	-- Foam Sword
+				i(45177),	-- Foam Sword
+				i(45178),	-- Foam Sword
+				i(45179),	-- Foam Sword
+			},
 			["model"] = 253206,
 			["timeline"] = { "added 3.1.0.9626" },
 		}),

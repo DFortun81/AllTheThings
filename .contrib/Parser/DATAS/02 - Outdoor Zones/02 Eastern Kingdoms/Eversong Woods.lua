@@ -1224,6 +1224,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["provider"] = { "i", 21808 },	-- Arcane Core
 							["cr"] = 15638,	-- Arcane Patroller
 						}),
+						i(131237, {	-- Padded Chainmail
+							["timeline"] = { "added 7.0.1" },
+						}),
 					},
 				}),
 				q(9119, {	-- Malfunction at the West Sanctum

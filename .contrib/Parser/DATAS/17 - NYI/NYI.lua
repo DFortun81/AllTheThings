@@ -165,6 +165,31 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		},
 	}),
+	tier(DF_TIER, 0.5, {
+		i(202309),	-- Defective Doomsday Device (TOY!)
+		mount(400733),	-- [PH] Goblin Shredder Rocket (MOUNT!)
+		mount(397406),	-- [PH] Magical Fish Mount (MOUNT!)
+		i(203226),	-- Stormfused Salamanther (MOUNT!)
+		mount(395095),	-- Whelpling (MOUNT!)
+
+		i(190767),	-- Armored Golden Pterrordax (MOUNT!)
+		mount(367875),	-- Armored Siege Kodo (MOUNT!)
+		mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
+		i(190539),	-- Coral-Stalker Waveray (MOUNT!)
+		i(190168),	-- Crusty Crawler (MOUNT!)
+		mount(366647),	-- Magenta Cloud Serpent (MOUNT!)
+		i(190169),	-- Quawks (MOUNT!)
+		i(190613),	-- Savage Green Battle Turtle (MOUNT!)
+
+		pet(03255),	-- Buttercup (PET!)
+		i(190604),	-- Buzzworth (PET!)
+		pet(3253),	-- Crushhoof (PET!)
+		i(190176),	-- Drazka'zet the Wrathful (PET!)
+		i(190603),	-- Egbob (PET!)
+		i(190173),	-- Lil' Maka'jin (PET!)
+		i(190175),	-- Pippin (PET!)
+		pet(3254),	-- Watcher of the Huntress (PET!)
+	}),
 	tier(DF_TIER, {
 		n(ARMOR, {
 				-- Evoker Set --
@@ -309,10 +334,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190781),	-- Slumbering Caldera Bracers
 				i(190782),	-- Slumbering Caldera Hauberk
 				-- Buccaneer Sets
-				i(190783),	-- Swashbuckling Buccaneer's Tunic
-				i(190784),	-- Swashbuckling Buccaneer's Sash
-				i(190785),	-- Swashbuckling Buccaneer's Breeches
-				i(190786),	-- Swashbuckling Buccaneer's Boots
 				i(190904),	-- Dashing Buccaneer's Tunic
 				i(190905),	-- Dashing Buccaneer's Sash
 				i(190906),	-- Dashing Buccaneer's Breeches
@@ -339,29 +360,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- Non Set Cosmetics
 				i(190093),	-- Elune's Fury
 				i(190094),	-- Elune's Wrath
-				i(190149),	-- Wanderer's Midnight Cloak
-				i(190150),	-- Vagabond's Midnight Hood
-				i(190151),	-- Wanderer's Midnight Scarf
-				i(190376),	-- Vagabond's Midnight Cape
-				i(190423),	-- Wanderer's Violet Cloak
-				i(190424),	-- Vagabond's Violet Cape
-				i(190425),	-- Vagabond's Violet Hood
-				i(190426),	-- Wanderer's Violet Scarf
-				i(190541),	-- Vagabond's Azure Cape
-				i(190542),	-- Wanderer's Azure Scarf
-				i(190572),	-- Vagabond's Azure Hood
-				i(190573),	-- Wanderer's Azure Cloak
 				i(190448),	-- Olive Huntsman's Shot Pouch
 				i(190449),	-- Olive Huntsman's Quiver
 				i(190674),	-- Leaky Bucket
-				i(190825),	-- Wanderer's Crimson Cloak
-				i(190826),	-- Wanderer's Crimson Scarf
-				i(190827),	-- Vagabond's Crimson Cape
-				i(190828),	-- Vagabond's Crimson Hood
-				i(190882),	-- Vagabond's Snowy Cape
-				i(190883),	-- Wanderer's Snowy Cloak
-				i(190884),	-- Vagabond's Snowy Hood
-				i(190885),	-- Wanderer's Snowy Scarf
 				i(190909),	-- Ruby Felfire Splitblade
 				i(190910),	-- Ruby Felfire Bulwark
 			}),
@@ -802,50 +803,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198724),	-- Expedition Telescope (NYI)
 			i(198733),	-- Wayfinderr's Compass (NYI)
 		}),
-		n(SOURCELESS, {
-			-- Grey Darkal?
-			i(192556),	-- 10.0.0 Armor Cloak - Cape_Cloth_Sindragosa_D_01
-			i(192567),	-- 10.0 Poor Item Template - <Descriptor> Leather Cinch
-			i(192568),	-- 10.0 Poor Item Template - <Descriptor> Leather Footwraps
-			i(192569),	-- 10.0 Poor Item Template - <Descriptor> Leather Handwraps
-			i(192570),	-- 10.0 Poor Item Template - <Descriptor> Leather Guise
-			i(192571),	-- 10.0 Poor Item Template - <Descriptor> Leather Leggings
-			i(192572),	-- 10.0 Poor Item Template - <Descriptor> Leather Shoulderpads
-			i(192573),	-- 10.0 Poor Item Template - <Descriptor> Leather Jerkin
-			i(192574),	-- 10.0 Poor Item Template - <Descriptor> Leather Bracers
-			i(192575),	-- 10.0 Poor Item Template - <Descriptor> Plate Vambraces
-			i(192576),	-- 10.0 Poor Item Template - <Descriptor> Plate Warboots
-			i(192577),	-- 10.0 Poor Item Template - <Descriptor> Plate Shoulderguards
-			i(192578),	-- 10.0 Poor Item Template - <Descriptor> Plate Legguards
-			i(192579),	-- 10.0 Poor Item Template - <Descriptor> Plate Faceguard
-			i(192580),	-- 10.0 Poor Item Template - <Descriptor> Plate Gloves
-			i(192581),	-- 10.0 Poor Item Template - <Descriptor> Plate Chestpiece
-			i(192582),	-- 10.0 Poor Item Template - <Descriptor> Plate Greatbelt
-			i(192583),	-- 10.0 Poor Item Template - <Descriptor> Cloth Armbands
-			i(192584),	-- 10.0 Poor Item Template - <Descriptor> Cloth Vestments
-			i(192585),	-- 10.0 Poor Item Template - <Descriptor> Cloth Footpads
-			i(192586),	-- 10.0 Poor Item Template - <Descriptor> Cloth Legwraps
-			i(192587),	-- 10.0 Poor Item Template - <Descriptor> Cloth Grips
-			i(192588),	-- 10.0 Poor Item Template - <Descriptor> Cloth Hood
-			i(192589),	-- 10.0 Poor Item Template - <Descriptor> Cloth Cincture
-			i(192590),	-- 10.0 Poor Item Template - <Descriptor> Cloth Mantle
-			i(192591),	-- 10.0 Poor Item Template - <Descriptor> Chain Armguards
-			i(192592),	-- 10.0 Poor Item Template - <Descriptor> Chain Spaulders
-			i(192593),	-- 10.0 Poor Item Template - <Descriptor> Chain Footguards
-			i(192594),	-- 10.0 Poor Item Template - <Descriptor> Chain Breeches
-			i(192595),	-- 10.0 Poor Item Template - <Descriptor> Chain Vest
-			i(192596),	-- 10.0 Poor Item Template - <Descriptor> Chain Gauntlets
-			i(192597),	-- 10.0 Poor Item Template - <Descriptor> Chain Helm
-			i(192598),	-- 10.0 Poor Item Template - <Descriptor> Chain Clasp
-
-			i(189555),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Brown
-			i(189556),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Green
-			i(189557),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Gray
-			i(189558),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Dark
-			i(189559),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Light
-
-			i(201934),	-- Nokuhd Whittling Knife
-		}),
 		n(PROFESSIONS, {
 			i(198483),	-- jrz 10.0 enchanting test [DNT]
 			i(198518),	-- Professor Instructaur's Top Secret Guide to Blacksmithing
@@ -885,7 +842,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201090),	-- Bivigosa's Blood Sausages
 			i(201045),	-- Icecrown Bleu
 			i(201046),	-- Dreamwarding Dripbrew
-			i(201047),	-- Arcanostabilized Provisions
 			i(201398),	-- Mogu Mozzarella
 			i(201413),	-- Eternity-Infused Burrata
 			i(201415),	-- Temporal Parmesan
