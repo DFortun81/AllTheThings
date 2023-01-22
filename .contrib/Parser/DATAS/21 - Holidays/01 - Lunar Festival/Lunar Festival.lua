@@ -35,32 +35,9 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 					title(43),				-- Elder
 				},
 			}),
-			-- NOTE: This style is temporary! I'm not sure if it'll be necessary in the future, so making the format consistent for easy Find and Replace to remove them all in one felswoop!
 			ach(17321, {	-- Elders of the Dragon Isles
-				crit(1, {
-					["_quests"] = { 73848 },	-- Iskaara Elder Shomkol
-				}),
-				crit(2, {
-					["_quests"] = { 73716 },	-- Aylaag Elder
-				}),
-				crit(3, {
-					["_quests"] = { 73172 },	-- Shikaar Elder
-				}),
-				crit(4, {
-					["_quests"] = { 73717 },	-- Ohn'ir Elder
-				}),
-				crit(5, {
-					["_quests"] = { 73858 },	-- Iskaara Elder Nemaglek
-				}),
-				crit(6, {
-					["_quests"] = { 73860 },	-- Elder Dekidig
-				}),
-				crit(7, {
-					["_quests"] = { 73859 },	-- Iskaara Elder Sik'ek
-				}),
-				crit(8, {
-					["_quests"] = { 73861 },	-- Elder Stormdrifter
-				}),
+				["timeline"] = { ADDED_DF_0_5 },
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(6006, {	-- Elders of Cataclysm
 				["timeline"] = { "added 4.2.0" },
