@@ -5333,10 +5333,12 @@ root("Zones", {
 						["requireSkill"] = FISHING,
 						["groups"] = {
 							applyclassicphase(WRATH_PHASE_TWO, i(45862)),	-- Bold Stormjewel
+							applyclassicphase(WRATH_PHASE_TWO, i(45882)),	-- Brilliant Stormjewel
 							applyclassicphase(WRATH_PHASE_TWO, i(45879)),	-- Delicate Stormjewel
 							applyclassicphase(WRATH_PHASE_TWO, i(45987)),	-- Rigid Stormjewel
 							applyclassicphase(WRATH_PHASE_TWO, i(45883)),	-- Runed Stormjewel
 							applyclassicphase(WRATH_PHASE_TWO, i(45880)),	-- Solid Stormjewel
+							applyclassicphase(WRATH_PHASE_TWO, i(45881)),	-- Sparkling Stormjewel
 							i(45998),	-- Battered Jungle Hat
 							i(45991, {	-- Bone Fishing Pole
 								["timeline"] = { "added 3.1.0.9658" },
