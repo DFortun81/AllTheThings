@@ -1548,6 +1548,9 @@ struct = function(field, id, t)
 	elseif t.groups then
 		t.groups = bubbleUp(t.groups);
 	end
+	if not id then
+		print("Missing ID for",field,"group");
+	end
 	t[field] = id;
 	return t;
 end
@@ -2180,7 +2183,7 @@ mount = function(id, t)									-- Create a MOUNT Object, which is just a spellI
 end
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
 	if not id then
-		--error("NPC ID Missing");
+		-- error("NPC ID Missing");
 		if t then
 			return unpack(t);
 		else

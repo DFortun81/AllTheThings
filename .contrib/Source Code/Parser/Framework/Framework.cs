@@ -231,6 +231,11 @@ namespace ATT
         private static KeyValuePair<string, object>? CurrentParentGroup { get; set; }
 
         /// <summary>
+        /// Represents the file currently being processed
+        /// </summary>
+        public static string CurrentFileName { get; set; }
+
+        /// <summary>
         /// Represents the group which set the NestedDifficultyID
         /// </summary>
         private static object DifficultyRoot { get; set; }
@@ -485,7 +490,7 @@ namespace ATT
                 {
                     data.Remove("g");
                     //Trace.Write("Excluding ");
-                    //Trace.WriteLine(MiniJSON.Json.Serialize(data));
+                    //Trace.WriteLine(ToJSON(data));
                     return false;
                 }
             }
@@ -606,11 +611,11 @@ namespace ATT
                 try
                 {
                     if (classes.Any(c => !Valid_Classes.Contains(Convert.ToInt64(c))))
-                        Trace.WriteLine($"Invalid 'classes' value: {MiniJSON.Json.Serialize(data)}");
+                        Framework.Log($"Invalid 'classes' value: {ToJSON(data)}");
                 }
                 catch
                 {
-                    Trace.WriteLine($"Invalid 'classes' value: {MiniJSON.Json.Serialize(data)}");
+                    Framework.Log($"Invalid 'classes' value: {ToJSON(data)}");
                 }
             }
 
@@ -633,7 +638,7 @@ namespace ATT
                         if (achInfo.TryGetValue("parentCategoryID", out object achCatID))
                         {
                             DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
-                            LogDebug($"Duplicated Achievement {achID} into Achievement Category");
+                            //LogDebug($"Duplicated Achievement {achID} into Achievement Category");
                         }
                     }
                 }
@@ -691,7 +696,7 @@ namespace ATT
                 // don't duplicate achievements in this way
                 if (data.TryGetValue("achID", out achID))
                 {
-                    Trace.WriteLine($"Do not use '_quests' on Achievements ({achID}). Source within the Quest group, or use 'maps' & 'altQuests' if there are multiple related Locations / Quests.");
+                    Log($"Do not use '_quests' on Achievements ({achID}). Source within the Quest group, or use 'maps' & 'altQuests' if there are multiple related Locations / Quests.");
                 }
                 else
                 {
@@ -705,7 +710,7 @@ namespace ATT
                 if (data.TryGetValue("criteriaID", out long criteriaID))
                 {
                     data.TryGetValue("achID", out achID);
-                    Trace.WriteLine($"Do not use '_items' on Criteria ({achID}:{criteriaID}). Use 'provider' instead when an Item grants credit for an Achievement Criteria.");
+                    Log($"Do not use '_items' on Criteria ({achID}:{criteriaID}). Use 'provider' instead when an Item grants credit for an Achievement Criteria.");
                 }
                 else
                 {
@@ -837,7 +842,7 @@ namespace ATT
                             case "g": break;
 
                             default:
-                                Trace.WriteLine($"Warning: Unknown 'cost' type: {c[0]}{Environment.NewLine}-- {MiniJSON.Json.Serialize(data)}");
+                                Log($"Warning: Unknown 'cost' type: {c[0]}{Environment.NewLine}-- {ToJSON(data)}");
                                 break;
                         }
                     }
@@ -853,7 +858,7 @@ namespace ATT
                 {
                     if (coord is List<object> coordList && coordList.Count != 3)
                     {
-                        Trace.WriteLine($"Warning: 'coord/s' value is not fully qualified: {MiniJSON.Json.Serialize(coord)}{Environment.NewLine}-- {MiniJSON.Json.Serialize(data)}");
+                        Log($"Warning: 'coord/s' value is not fully qualified: {ToJSON(coord)}{Environment.NewLine}-- {ToJSON(data)}");
                     }
                 }
             }
@@ -880,12 +885,12 @@ namespace ATT
                         data.Remove("maps");
 
                     if (redundant)
-                        Trace.WriteLine($"Redundant 'maps' removed from: {MiniJSON.Json.Serialize(data)}{Environment.NewLine}-- {MiniJSON.Json.Serialize(data)}");
+                        Log($"Redundant 'maps' removed from: {ToJSON(data)}{Environment.NewLine}-- {ToJSON(data)}");
                 }
 
                 // single 'maps' for Achievements Sourced under 'Achievements', should be sourced in that specific map directly instead
                 if (ProcessingAchievementCategory && mapsList.Count == 1 && data.TryGetValue("achID", out achID))
-                    Trace.WriteLine($"Single 'maps' value used within Achievement: {achID}. It can be Sourced directly in the Location.");
+                    Log($"Single 'maps' value used within Achievement: {achID}. It can be Sourced directly in the Location.");
             }
 
 
@@ -915,10 +920,7 @@ namespace ATT
                             }
                         default:
                             {
-                                Trace.Write("Missing Skill ID in Conversion Table: ");
-                                Trace.WriteLine(requiredSkill);
-                                Trace.WriteLine(ToJSON(data));
-                                //Console.ReadLine();
+                                Log($"Missing Skill ID in Conversion Table: {requiredSkill}{Environment.NewLine}{ToJSON(data)}");
                                 break;
                             }
                     }
@@ -981,7 +983,8 @@ namespace ATT
                     if (objectData.ObjectType == "questID" ||
                         objectData.ObjectType == "itemID")
                     {
-                        LogDebug($"[{id}] = \"{name}\", -- move to en.lua ({objectData.ObjectType})");
+                        // TODO: new thing
+                        //LogDebug($"[{id}] = \"{name}\", -- move to en.lua ({objectData.ObjectType})");
                     }
                 }
             }
@@ -1458,7 +1461,7 @@ namespace ATT
                 {
                     // this can always be reported because it should always be actual, available in-game recipes which have no associated RecipeID
                     Items.TryGetName(data, out string name);
-                    Trace.WriteLine($"Failed to find RecipeID for '{name}' with data: {MiniJSON.Json.Serialize(data)}");
+                    Log($"Failed to find RecipeID for '{name}' with data: {ToJSON(data)}");
                 }
             }
         }
@@ -1490,9 +1493,7 @@ namespace ATT
                             data.Remove("requireSkill");
                             break;
                         default:
-                            Trace.Write("Missing Skill ID in Conversion Table: ");
-                            Trace.WriteLine(requiredSkill);
-                            Trace.WriteLine(ToJSON(data));
+                            Log($"Missing Skill ID in Conversion Table: {requiredSkill}{Environment.NewLine}{ToJSON(data)}");
                             break;
                     }
                 }
@@ -1536,12 +1537,12 @@ namespace ATT
                     data["heirloomID"] = itemID;
                     if (data.ContainsKey("ignoreSource"))
                     {
-                        Trace.WriteLine($"WTF WHY IS THIS HEIRLOOM {itemID} IGNORING SOURCE IDS?!");
+                        Log($"WTF WHY IS THIS HEIRLOOM {itemID} IGNORING SOURCE IDS?!");
                         Console.ReadLine();
                     }
                     else if (data.ContainsKey("ignoreBonus"))
                     {
-                        Trace.WriteLine($"WTF WHY IS THIS HEIRLOOM {itemID} IGNORING BONUS IDS?!");
+                        Log($"WTF WHY IS THIS HEIRLOOM {itemID} IGNORING BONUS IDS?!");
                         Console.ReadLine();
                     }
                 }
@@ -1639,7 +1640,7 @@ namespace ATT
                         }
                         else
                         {
-                            Trace.WriteLine("Failed to duplicate criteria object due to missing 'achID': " + MiniJSON.Json.Serialize(data));
+                            Log("Failed to duplicate criteria object due to missing 'achID': " + ToJSON(data));
                         }
                         break;
                     case "achID":
@@ -1689,7 +1690,7 @@ namespace ATT
                         }
                         else
                         {
-                            Trace.WriteLine("Failed to duplicate criteria object due to missing 'questID': " + MiniJSON.Json.Serialize(data));
+                            Log("Failed to duplicate criteria object due to missing 'questID': " + ToJSON(data));
                         }
                         break;
                         // handle other types of duplication sources if necessary
@@ -1752,7 +1753,7 @@ namespace ATT
             }
 
             // Merge the Item Data into the Containers.
-            Trace.WriteLine("Data Validation...");
+            Log("Data Validation...");
             foreach (var container in Objects.AllContainers)
             {
                 ProcessingAchievementCategory = container.Key.Contains("Achievement");
@@ -1760,7 +1761,7 @@ namespace ATT
             }
 
             // Merge the Item Data into the Containers again, this time syncing Item data into nested Item groups
-            Trace.WriteLine("Data Consolidation...");
+            Log("Data Consolidation...");
             MergeItemData = false;
             AdditionalProcessing();
             foreach (var container in Objects.AllContainers)
@@ -1774,7 +1775,7 @@ namespace ATT
             if (worldDrops != null) SortByName(worldDrops);
 
             // Build the Unsorted Container.
-            Trace.WriteLine("Building Unsorted...");
+            Log("Building Unsorted...");
             List<object> listing;
             long requireSkill;
             var unsorted = new List<object>();
@@ -2111,7 +2112,7 @@ namespace ATT
                 sortedOrphanedBreadcrumbs.Add(q, q);
             }
             var sortedList = new List<long>(sortedOrphanedBreadcrumbs.Values);
-            Trace.WriteLine($"Orphaned Breadcrumb Quests:{Environment.NewLine}{MiniJSON.Json.Serialize(sortedList)}");
+            Log($"Orphaned Breadcrumb Quests:{Environment.NewLine}{ToJSON(sortedList)}");
 
             if (QUESTS.Any())
             {
@@ -2168,7 +2169,7 @@ namespace ATT
                 }
             }
 
-            Trace.WriteLine("Processing Complete");
+            Log("Processing Complete");
         }
 
         /// <summary>
@@ -2904,7 +2905,7 @@ namespace ATT
                                     else
                                     {
                                         Console.WriteLine("ItemDB not in the correct format!");
-                                        Console.WriteLine(MiniJSON.Json.Serialize(itemValuePair.Value));
+                                        Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
                                 }
@@ -2920,7 +2921,7 @@ namespace ATT
                                     else
                                     {
                                         Console.WriteLine("ItemDB not in the correct format!");
-                                        Console.WriteLine(MiniJSON.Json.Serialize(o));
+                                        Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
                                 }
@@ -2949,7 +2950,7 @@ namespace ATT
                                     else
                                     {
                                         Console.WriteLine("ItemDB not in the correct format!");
-                                        Console.WriteLine(MiniJSON.Json.Serialize(itemValuePair.Value));
+                                        Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
                                 }
@@ -2965,7 +2966,7 @@ namespace ATT
                                     else
                                     {
                                         Console.WriteLine("ItemDB not in the correct format!");
-                                        Console.WriteLine(MiniJSON.Json.Serialize(o));
+                                        Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
                                 }
@@ -2992,7 +2993,7 @@ namespace ATT
                                     else
                                     {
                                         Console.WriteLine("RecipeDB not in the correct format!");
-                                        Console.WriteLine(MiniJSON.Json.Serialize(recipeValuePair.Value));
+                                        Console.WriteLine(ToJSON(recipeValuePair.Value));
                                         Console.ReadLine();
                                     }
                                 }
@@ -3008,7 +3009,7 @@ namespace ATT
                                     else
                                     {
                                         Console.WriteLine("ItemDB not in the correct format!");
-                                        Console.WriteLine(MiniJSON.Json.Serialize(o));
+                                        Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
                                 }
@@ -3035,7 +3036,7 @@ namespace ATT
                                     else
                                     {
                                         Console.WriteLine("ItemMountDB not in the correct format!");
-                                        Console.WriteLine(MiniJSON.Json.Serialize(itemValuePair.Value));
+                                        Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
                                 }
@@ -3063,7 +3064,7 @@ namespace ATT
                                     else
                                     {
                                         Console.WriteLine("ItemSpeciesDB not in the correct format!");
-                                        Console.WriteLine(MiniJSON.Json.Serialize(itemValuePair.Value));
+                                        Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
                                 }
@@ -3090,7 +3091,7 @@ namespace ATT
                                     else
                                     {
                                         Console.WriteLine("ItemToyDB not in the correct format!");
-                                        Console.WriteLine(MiniJSON.Json.Serialize(itemValuePair.Value));
+                                        Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
                                 }
@@ -3260,7 +3261,7 @@ namespace ATT
                                 Console.Write("Invalid Container format: ");
                                 Console.WriteLine(pair.Key);
                                 Console.ReadLine();
-                                Console.WriteLine(MiniJSON.Json.Serialize(pair.Value));
+                                Console.WriteLine(ToJSON(pair.Value));
                                 Console.ReadLine();
                                 throw new Exception("Invalid Container format!");
                             }
@@ -3592,7 +3593,7 @@ namespace ATT
                         // Export custom Debug DB data to the Debugging folder. (as JSON for simplicity)
                         foreach (KeyValuePair<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> dbKeyDatas in DebugDBs)
                         {
-                            File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), MiniJSON.Json.Serialize(dbKeyDatas.Value));
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), ToJSON(dbKeyDatas.Value));
                         }
 
                         // Export the Category DB file.

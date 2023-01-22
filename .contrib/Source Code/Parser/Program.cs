@@ -48,7 +48,7 @@ namespace ATT
                     Errored = false;
                     // Load all of the RAW JSON Data into the database.
                     var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
-                    Trace.WriteLine("Parsing JSON files...");
+                    Framework.Log("Parsing JSON files...");
 #if ANYCLASSIC
                     foreach (var f in files) ParseJSONFile(f);
 #else
@@ -130,8 +130,6 @@ namespace ATT
                 Trace.WriteLine("Parsing LUA files...");
                 foreach (var fileName in luaFiles)
                 {
-                    if (Framework.DebugMode)
-                        Trace.WriteLine("Parsing: " + fileName);
                     ParseLUAFile(lua, fileName);
 
                 }
@@ -469,7 +467,7 @@ namespace ATT
 
         private static void LuaPrintAsTrace(params object[] args)
         {
-            Trace.WriteLine(string.Join(" ", args));
+            Framework.Log(string.Join(" ", args));
         }
 
         private static void ParseJSONFile(string fileName)
@@ -494,6 +492,8 @@ namespace ATT
         {
             // copy the base LUA state for use on this file due to shared access issues
             //Lua lua = new Lua(mainLua.State);
+            Framework.LogDebug("Parsing: " + fileName);
+            Framework.CurrentFileName = fileName;
             string content = string.Empty;
             do
             {
@@ -508,8 +508,7 @@ namespace ATT
                 // Invalid data are thrown on purpose when ATT-specific formatting issues are encountered in LUA files
                 catch (InvalidDataException e)
                 {
-                    Trace.WriteLine(fileName);
-                    Trace.WriteLine(e.Message);
+                    Framework.Log(e.Message);
 #if CRIEVE
                     File.WriteAllText("D://ATT-ERROR-FILE.txt", content);
 #endif
@@ -518,8 +517,7 @@ namespace ATT
                 }
                 catch (NLua.Exceptions.LuaScriptException e)
                 {
-                    Trace.WriteLine(fileName);
-                    Trace.WriteLine(e.Message);
+                    Framework.Log(e.Message);
                     if (e.Data != null)
                     {
                         foreach (var key in e.Data.Keys)
@@ -551,8 +549,7 @@ namespace ATT
                 }
                 catch (Exception e)
                 {
-                    Trace.WriteLine(fileName);
-                    Trace.WriteLine(e.Message);
+                    Framework.Log(e.Message);
                     var line = GetLineNumber(e);
                     if (line > -1)
                     {
@@ -572,6 +569,7 @@ namespace ATT
                 }
             }
             while (true);
+            Framework.CurrentFileName = null;
         }
     }
 }

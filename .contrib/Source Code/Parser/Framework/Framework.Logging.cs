@@ -34,6 +34,8 @@ namespace ATT
         /// <param name="message"></param>
         public static void Log(string message)
         {
+            if (!DebugMode && !string.IsNullOrEmpty(CurrentFileName))
+                Trace.WriteLine("FILE: " + CurrentFileName);
             Trace.WriteLine(message);
         }
 
@@ -43,7 +45,7 @@ namespace ATT
         /// <param name="message"></param>
         public static void LogError(string message)
         {
-            Trace.WriteLine("ERROR: " + message);
+            Log("ERROR: " + message);
         }
     }
 }

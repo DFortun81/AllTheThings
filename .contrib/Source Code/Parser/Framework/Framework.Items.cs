@@ -589,9 +589,7 @@ namespace ATT
                         // any 0 value should simply be removed for cleanliness
                         if (longval == 0)
                         {
-                            if (DebugMode)
-                                Trace.WriteLine($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
-
+                            LogDebug($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
                             item.Remove(field);
                         }
                         else
@@ -739,32 +737,6 @@ namespace ATT
                     case "OnTooltip":
                         item[field] = value;
                         break;
-
-                        // Not everything has to merge into the Item dictionary that may be required on a specific Source of an Item. Don't need to report them.
-                        // They will report during the Object merging if the Parser doesn't understand the field.
-                        // Report all other fields.
-                        //default:
-                        //    {
-                        //        // ignore fields starting with _ since those will be used for metadata in some scenarios
-                        //        if (field.StartsWith("_"))
-                        //            break;
-
-                        //        // ignore the 'hash' field which is generated during recipe automation and is dynamic in-game anyway
-                        //        if (field == "hash")
-                        //            break;
-
-                        //        // Only warn the programmer once per field per session.
-                        //        if (WARNED_FIELDS.ContainsKey(field)) return;
-                        //        WARNED_FIELDS[field] = true;
-                        //        Trace.Write("Parser is ignoring field '");
-                        //        Trace.Write(field);
-                        //        Trace.WriteLine("' for items.");
-                        //        Trace.Write("  [");
-                        //        Trace.Write(MiniJSON.Json.Serialize(value));
-                        //        Trace.WriteLine("]");
-                        //        Trace.WriteLine(MiniJSON.Json.Serialize(item));
-                        //        break;
-                        //    }
                 }
             }
 
@@ -790,14 +762,9 @@ namespace ATT
                 if (data.ContainsKey("itemID") ||
                     data.ContainsKey("toyID"))
                 {
-                    //long itemID = Convert.ToInt64(itemIDRef);
-                    //if (itemID < 1) return;
                     var item = conditionalMerge ? GetNull(data) : Get(data);
-                    //decimal specificItemID = decimal.Truncate(GetSpecificItemID(data));
-                    //if (specificItemID == 143643) { Trace.WriteLine("Before:" + MiniJSON.Json.Serialize(item)); Trace.WriteLine("Merge:" + MiniJSON.Json.Serialize(data)); }
                     if (item != null)
                         foreach (var pair in data) Merge(item, pair.Key, pair.Value);
-                    //if (specificItemID == 143643) Trace.WriteLine("After:" + MiniJSON.Json.Serialize(item));
                 }
             }
             #endregion
@@ -954,10 +921,7 @@ namespace ATT
                     if (decimal.Truncate(specificItemID) != specificItemID)
                     {
                         // Report that the specific item is missing.
-                        Trace.Write("Could not find item #");
-                        Trace.Write(specificItemID);
-                        Trace.WriteLine(" in the database.");
-                        Trace.WriteLine(ToJSON(data));
+                        Log($"Could not find item #{specificItemID} in the database.{Environment.NewLine}{ToJSON(data)}");
                     }
                     return;
                 }

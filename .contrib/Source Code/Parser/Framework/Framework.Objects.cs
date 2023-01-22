@@ -457,7 +457,7 @@ namespace ATT
                         }
 
                         //if (DebugMode)
-                        //    Trace.WriteLine($"Merge>{key}:{keyValue} = {MiniJSON.Json.Serialize(data)}");
+                        //    Trace.WriteLine($"Merge>{key}:{keyValue} = {ToJSON(data)}");
 
                         // merge the allowed fields by the key into the merged object
                         foreach (string field in MergeObjectFields[key])
@@ -688,7 +688,7 @@ namespace ATT
 
                 // This may happen a lot and is kind of expected... maybe re-designed in future
                 //if (DebugMode && f == 0)
-                //    Trace.WriteLine("Invalid filter for: " + MiniJSON.Json.Serialize(data));
+                //    Trace.WriteLine("Invalid filter for: " + ToJSON(data));
 
                 // Don't set invalid filter values
                 if (f > 0)
@@ -946,7 +946,7 @@ namespace ATT
                     // No races?
                     if (!races.Any())
                     {
-                        throw new InvalidDataException("Invalid 'races' value in data:" + Environment.NewLine + MiniJSON.Json.Serialize(data));
+                        throw new InvalidDataException("Invalid 'races' value in data:" + Environment.NewLine + ToJSON(data));
                     }
                     // Alliance Only?
                     else if (ALLIANCE_ONLY.Matches(races))
@@ -996,7 +996,7 @@ namespace ATT
                 File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportRawLua(AllContainers).ToString());
 
                 // Export as JSON!
-                File.WriteAllText(Path.Combine(directory, "Categories.json"), MiniJSON.Json.Serialize(AllContainers));
+                File.WriteAllText(Path.Combine(directory, "Categories.json"), ToJSON(AllContainers));
 
                 // Cache the "Unsorted" list.
                 if (AllContainers.TryGetValue("Unsorted", out List<object> unsorted))
@@ -1109,9 +1109,7 @@ namespace ATT
                     foreach (int sortedHeaderID in sortedHeaderIDs)
                     {
                         if (NPCS_WITH_REFERENCES.ContainsKey(sortedHeaderID)) continue;
-                        Trace.Write("Header [");
-                        Trace.Write(sortedHeaderID);
-                        Trace.WriteLine("] has no reference and should be removed.");
+                        Log($"Header [{sortedHeaderID}] has no reference and should be removed.");
                     }
 
                     var missingHeaderLocalization = new List<long>();
@@ -1416,7 +1414,7 @@ namespace ATT
                     {
                         // TODO: tons of spam due to 'lvl' right now... maybe re-introduce at a later time when all 'lvl is cleaned up
                         //item[field] = oldList = new List<object>() { oldData };
-                        //Trace.WriteLine("Warning: Non-Standard format for '" + field + "' used:" + MiniJSON.Json.Serialize(item));
+                        //Log("Warning: Non-Standard format for '" + field + "' used:" + ToJSON(item));
 
                         // Create a new list since the incoming data is bad
                         item[field] = oldList = new List<object>();
@@ -1471,9 +1469,7 @@ namespace ATT
                     }
                     catch (Exception e)
                     {
-                        Trace.WriteLine("WHAT IS THIS");
-                        Trace.WriteLine(field);
-                        Trace.WriteLine(MiniJSON.Json.Serialize(newList));
+                        Log($"WHAT IS THIS: {field}{Environment.NewLine}{ToJSON(newList)}");
                         Console.ReadLine();
                         throw e;
                     }
@@ -1485,8 +1481,7 @@ namespace ATT
 
                 if (oldList.Count == 0)
                 {
-                    Trace.WriteLine("int-array field: '" + field + "' contained no data after merge.");
-                    Trace.WriteLine(MiniJSON.Json.Serialize(item));
+                    Log($"int-array field: '{field}' contained no data after merge.{Environment.NewLine}{ToJSON(item)}");
                 }
             }
 
@@ -1531,8 +1526,7 @@ namespace ATT
 
                 if (oldList.Count == 0)
                 {
-                    Trace.WriteLine("string-array field: '" + field + "' contained no data after merge.");
-                    Trace.WriteLine(MiniJSON.Json.Serialize(item));
+                    Log($"string-array field: '{field}' contained no data after merge.{Environment.NewLine}{ToJSON(item)}");
                 }
             }
 
@@ -1574,7 +1568,7 @@ namespace ATT
                             }
                             else
                             {
-                                Trace.WriteLine(ToJSON(value));
+                                Log($"Weird 'g' value?? {Environment.NewLine}{ToJSON(value)}");
                                 Console.ReadLine();
                             }
                             break;
@@ -1690,7 +1684,7 @@ namespace ATT
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value) + " within object: " + MiniJSON.Json.Serialize(item));
+                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
                             }
                             break;
                         }
@@ -1705,7 +1699,7 @@ namespace ATT
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value) + " within object: " + MiniJSON.Json.Serialize(item));
+                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
                             }
                             break;
                         }
@@ -1718,7 +1712,7 @@ namespace ATT
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value) + " within object: " + MiniJSON.Json.Serialize(item));
+                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
                             }
                             break;
                         }
@@ -1731,7 +1725,7 @@ namespace ATT
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value) + " within object: " + MiniJSON.Json.Serialize(item));
+                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
                             }
                             break;
                         }
@@ -1744,7 +1738,7 @@ namespace ATT
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value) + " within object: " + MiniJSON.Json.Serialize(item));
+                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
                             }
                             break;
                         }
@@ -1813,13 +1807,13 @@ namespace ATT
                             if (newListOfLists == null)
                             {
                                 Console.WriteLine("Ignoring 'sym' with improper format.");
-                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.WriteLine(ToJSON(value));
                                 Console.ReadLine();
                                 foreach (var sublist in newListOfLists)
                                 {
                                     if (sublist is List<object>) continue;
                                     Console.WriteLine("Ignoring 'sym' with improper format.");
-                                    Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                    Console.WriteLine(ToJSON(value));
                                     Console.ReadLine();
                                 }
                             }
@@ -1836,7 +1830,7 @@ namespace ATT
                             if (!(value is List<object> newList))
                             {
                                 Console.WriteLine($"Ignoring '{field}' with improper format.");
-                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.WriteLine(ToJSON(value));
                                 Console.ReadLine();
                                 return;
                             }
@@ -1864,7 +1858,7 @@ namespace ATT
                             if (!(value is List<object> newList))
                             {
                                 Console.WriteLine("Ignoring 'coord' with improper format.");
-                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.WriteLine(ToJSON(value));
                                 Console.ReadLine();
                                 return;
                             }
@@ -1878,7 +1872,7 @@ namespace ATT
                             catch
                             {
                                 Console.WriteLine("Ignoring 'coord' with improper format.");
-                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.WriteLine(ToJSON(value));
                                 Console.ReadLine();
                                 return;
                             }
@@ -1931,7 +1925,7 @@ namespace ATT
                             else
                             {
                                 Console.WriteLine("Ignoring 'coords' with improper format.");
-                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.WriteLine(ToJSON(value));
                                 Console.ReadLine();
                             }
                             break;
@@ -1967,13 +1961,7 @@ namespace ATT
                         }
                         else
                         {
-                            Trace.Write("Parser is ignoring field '");
-                            Trace.Write(field);
-                            Trace.WriteLine("' for objects.");
-                            Trace.Write("  [");
-                            Trace.Write(MiniJSON.Json.Serialize(value));
-                            Trace.WriteLine("]");
-                            Trace.WriteLine(MiniJSON.Json.Serialize(item));
+                            Log($"Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
                         }
                         break;
                     case "_drop":
@@ -2001,13 +1989,7 @@ namespace ATT
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
                             WARNED_FIELDS[field] = true;
-                            Trace.Write("Parser is ignoring field '");
-                            Trace.Write(field);
-                            Trace.WriteLine("' for objects.");
-                            Trace.Write("  [");
-                            Trace.Write(MiniJSON.Json.Serialize(value));
-                            Trace.WriteLine("]");
-                            Trace.WriteLine(MiniJSON.Json.Serialize(item));
+                            Log($"Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
                             break;
                         }
                 }
@@ -2029,7 +2011,7 @@ namespace ATT
                         return;
                     }
                     catch { }
-                    throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value));
+                    throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value));
                 }
 
                 // verify each generic object is itself a list of generic objects so we have nice typed values to work with
@@ -2049,7 +2031,7 @@ namespace ATT
 
                 if (nonNested)
                 {
-                    Trace.WriteLine("Warning: Non-Standard format for '" + field + "' used:" + MiniJSON.Json.Serialize(costsObjs));
+                    Log($"Warning: Non-Standard format for '{field}' used: {ToJSON(costsObjs)}");
                     costsList.Add(costsObjs);
                 }
 
@@ -2066,12 +2048,15 @@ namespace ATT
                             if (phase > MAX_PHASE_ID && !(phase >= 1000 && (phase < (MAX_PHASE_ID + 1) * 100)))
                             {
                                 costsList.RemoveAt(i);
-                                //Trace.Write("Excluding Cost ");
-                                //Trace.WriteLine(MiniJSON.Json.Serialize(cost));
+                                //Log($"Excluding Cost {ToJSON(cost)}");
                                 continue;
                             }
                         }
-                        else if (cost.Count != 3) Trace.WriteLine("Warning: Non-Standard format for '" + field + "' used:" + MiniJSON.Json.Serialize(costsObjs));
+                        else if (cost.Count != 3)
+                        {
+                            Log($"Warning: Non-Standard format for '{field}' used: {ToJSON(costsObjs)}");
+                        }
+
                     }
 
                     // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
@@ -2091,7 +2076,7 @@ namespace ATT
 
                 if (!(value is List<object> newList))
                 {
-                    throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value));
+                    throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value));
                 }
                 var newProvider = new List<object>()
                 {
@@ -2151,7 +2136,7 @@ namespace ATT
                     }
                     catch
                     {
-                        throw new InvalidDataException("Failed parsing value '" + mergeProvider?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
+                        throw new InvalidDataException("Failed parsing value '" + mergeProvider?.ToString() + "' for field '" + field + "' merging into: " + ToJSON(item));
                     }
                 }
             }
@@ -2164,18 +2149,18 @@ namespace ATT
 
                 // validate that the lock criteria is the expected format
                 if (lockCriteria == null || (lockCriteria.Count % 2) != 1)
-                    throw new InvalidDataException($"Failed parsing '{field}' : {MiniJSON.Json.Serialize(value)} => into: {MiniJSON.Json.Serialize(item)}{Environment.NewLine}Expected an odd number of elements in an array of values.");
+                    throw new InvalidDataException($"Failed parsing '{field}' : {ToJSON(value)} => into: {ToJSON(item)}{Environment.NewLine}Expected an odd number of elements in an array of values.");
 
                 // first item is a number > 0
                 try
                 {
                     int criteriaCount = Convert.ToInt32(lockCriteria[0]);
                     if (criteriaCount < 1)
-                        throw new InvalidDataException($"Failed parsing '{field}' : {MiniJSON.Json.Serialize(value)} => into: {MiniJSON.Json.Serialize(item)}{Environment.NewLine}First value must be a number > 0.");
+                        throw new InvalidDataException($"Failed parsing '{field}' : {ToJSON(value)} => into: {ToJSON(item)}{Environment.NewLine}First value must be a number > 0.");
                 }
                 catch (Exception)
                 {
-                    throw new InvalidDataException($"Failed parsing '{field}' : {MiniJSON.Json.Serialize(value)} => into: {MiniJSON.Json.Serialize(item)}{Environment.NewLine}First value must be a number > 0.");
+                    throw new InvalidDataException($"Failed parsing '{field}' : {ToJSON(value)} => into: {ToJSON(item)}{Environment.NewLine}First value must be a number > 0.");
                 }
 
                 // following sequence should be pairs of string-number values
@@ -2187,11 +2172,11 @@ namespace ATT
                         int critVal = Convert.ToInt32(lockCriteria[i + 1]);
 
                         if (string.IsNullOrWhiteSpace(critKey) || critVal < 1)
-                            throw new InvalidDataException($"Failed parsing '{field}' : {MiniJSON.Json.Serialize(value)} => into: {MiniJSON.Json.Serialize(item)}{Environment.NewLine}Must consist of a flat sequence of [string,number] pairs of values.");
+                            throw new InvalidDataException($"Failed parsing '{field}' : {ToJSON(value)} => into: {ToJSON(item)}{Environment.NewLine}Must consist of a flat sequence of [string,number] pairs of values.");
                     }
                     catch (Exception)
                     {
-                        throw new InvalidDataException($"Failed parsing '{field}' : {MiniJSON.Json.Serialize(value)} => into: {MiniJSON.Json.Serialize(item)}{Environment.NewLine}Must consist of a flat sequence of [string,number] pairs of values.");
+                        throw new InvalidDataException($"Failed parsing '{field}' : {ToJSON(value)} => into: {ToJSON(item)}{Environment.NewLine}Must consist of a flat sequence of [string,number] pairs of values.");
                     }
                 }
 
@@ -2219,7 +2204,7 @@ namespace ATT
                     {
                         if (existing.TryGetValue(goodKvp.Key, out object existingValue) && !Equals(existingValue, goodKvp.Value))
                         {
-                            Log($"WARNING: Data Changed => {MiniJSON.Json.Serialize(data)}");
+                            Log($"WARNING: Data Changed => {ToJSON(data)}");
                             Log($"-- Field Value Overwrite: {field}:{goodKvp.Key}={existingValue} => {goodKvp.Value}");
                         }
                         existing[goodKvp.Key] = goodKvp.Value;
@@ -2270,15 +2255,15 @@ namespace ATT
                 {
                     foreach (var dropObj in dropStrs)
                     {
-                        data.Remove(dropObj.ToString());
-                        //if (data.Remove(dropObj.ToString()))
-                        //Trace.WriteLine("Removed key: " + dropObj.ToString() + " from: " + MiniJSON.Json.Serialize(data));
+                        if (data.Remove(dropObj.ToString()))
+                        {
+                            LogDebug($"Removed key: '{dropObj}'{Environment.NewLine}{ToJSON(data)}");
+                        }
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Invalid format for '_drop':");
-                    Console.WriteLine(MiniJSON.Json.Serialize(drops));
+                    LogError($"Invalid format for '_drop'{Environment.NewLine}{ToJSON(drops)}");
                     Console.ReadLine();
                 }
             }
@@ -2346,7 +2331,7 @@ namespace ATT
                         }
                     }
 
-                    LogDebug($"Converted AQD type into single Quest for Retail. {MiniJSON.Json.Serialize(data2)}");
+                    LogDebug($"Converted AQD type into single Quest for Retail. {ToJSON(data2)}");
                 }
 #endif
 
@@ -2367,8 +2352,7 @@ namespace ATT
                 if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out object objKeyValue))
                 {
                     // If there is no most significant ID field, then complain.
-                    Trace.WriteLine("No Most Significant ID for:");
-                    Trace.WriteLine(ToJSON(data2));
+                    LogError($"No Most Significant ID!{Environment.NewLine}{ToJSON(data2)}");
                 }
                 else
                 {
@@ -2687,8 +2671,7 @@ namespace ATT
                     if (data is Dictionary<string, object> sDict) Merge(container, sDict);
                     else
                     {
-                        Trace.Write("MERGE CONFUSION: ");
-                        Trace.WriteLine(ToJSON(data));
+                        LogError($"MERGE CONFUSION: {Environment.NewLine}{ToJSON(data)}");
                     }
                 }
             }
@@ -2741,16 +2724,16 @@ namespace ATT
 
                 if (found)
                 {
-                    //LogDebug("Non-Array '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
+                    //LogDebug("Non-Array '" + value?.ToString() + "' for field '" + field + "' merging into: " + ToJSON(item));
                     return list;
                 }
 
                 Console.Write(field);
                 Console.Write(": ");
-                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                Console.WriteLine(ToJSON(value));
 
                 // no hope
-                throw new InvalidDataException("Failed parsing value '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
+                throw new InvalidDataException("Failed parsing value '" + value?.ToString() + "' for field '" + field + "' merging into: " + ToJSON(item));
             }
 
             /// <summary>
