@@ -77,7 +77,9 @@ local SUNREAVERS_DAILY_OnUpdate = [[function(t)
 		end
 	end
 end]];
-
+local VALIANT_DAILY_OnUpdate = function(valiantQuestID)
+	return [[function(t) if not C_QuestLog.IsOnQuest(]] .. valiantQuestID .. [[) then t.visible = false; return true; end end]];
+end
 
 root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
 	n(-363, {	-- The Argent Tournament
@@ -691,6 +693,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
@@ -709,6 +712,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
@@ -727,6 +731,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
@@ -745,6 +750,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
@@ -763,6 +769,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
@@ -800,6 +807,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
@@ -818,6 +826,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
@@ -836,6 +845,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
@@ -854,6 +864,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
@@ -872,6 +883,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
@@ -1106,6 +1118,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
@@ -1122,6 +1135,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.6, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
@@ -1134,6 +1148,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["qg"] = 33315,	-- Rollo Sureshot
 					["coord"] = { 76.7, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
@@ -1150,6 +1165,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.5, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
@@ -1166,6 +1182,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.1, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
@@ -1178,6 +1195,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["qg"] = 33540,	-- Shadow Hunter Mezil-kree
 					["coord"] = { 76.0, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
@@ -1194,6 +1212,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.5, 24.5, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
@@ -1210,6 +1229,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.4, 23.8, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
@@ -1226,6 +1246,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.3, 24.7, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
@@ -1242,6 +1263,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.6, 24.1, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
@@ -1278,6 +1300,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
@@ -1295,6 +1318,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.5, 19.8, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
@@ -1312,6 +1336,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
@@ -1329,6 +1354,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
@@ -1346,6 +1372,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
@@ -1381,6 +1408,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
@@ -1398,6 +1426,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
@@ -1415,6 +1444,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
@@ -1432,6 +1462,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
@@ -1449,6 +1480,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
@@ -1583,6 +1615,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.4, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
@@ -1609,6 +1642,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.5, 19.9, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
@@ -1635,6 +1669,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.6, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
@@ -1661,6 +1696,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.6, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
@@ -1687,6 +1723,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
@@ -1713,6 +1750,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 75.9, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
@@ -1739,6 +1777,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.4, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
@@ -1765,6 +1804,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
@@ -1791,6 +1831,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.1, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
@@ -1817,6 +1858,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.5, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
@@ -2603,6 +2645,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
@@ -2620,6 +2663,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.5, 19.8, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
@@ -2637,6 +2681,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
@@ -2654,6 +2699,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
@@ -2671,6 +2717,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
@@ -2706,6 +2753,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
@@ -2723,6 +2771,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
@@ -2740,6 +2789,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
@@ -2757,6 +2807,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
@@ -2774,6 +2825,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
@@ -2807,6 +2859,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.4, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
@@ -2835,6 +2888,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.5, 19.9, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
@@ -2863,6 +2917,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.6, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
@@ -2891,6 +2946,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.6, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
@@ -2919,6 +2975,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
@@ -2947,6 +3004,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 75.9, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
@@ -2975,6 +3033,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.4, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
@@ -3003,6 +3062,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
@@ -3031,6 +3091,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.1, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
@@ -3059,6 +3120,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					},
 					["coord"] = { 76.5, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
