@@ -3589,7 +3589,7 @@ for key,value in pairs({
 	[381663] = "Manastürmen für Anfänger",	-- Manastorming For Beginners
 	[381664] = "Anfrage des Archivars",	-- Archivists' Request
 	[381667] = "Anfrage des Archivars",	-- Archivists' Request
-	[381668] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
+	[381668] = "Anfrage des Archivars",	-- Archivists' Request
 	[381669] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
 	[381670] = "Anfrage des Archivars",	-- Archivists' Request
 	[381671] = "Anfrage des Archivars",	-- Archivists' Request

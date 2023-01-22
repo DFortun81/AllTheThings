@@ -3579,8 +3579,8 @@ for key,value in pairs({
 	[381663] = "\"Манаштормы для новичков\"",	-- Manastorming For Beginners
 	[381664] = "Просьба архивариуса",	-- Archivists' Request
 	[381667] = "Просьба архивариуса",	-- Archivists' Request
-	[381668] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
-	[381669] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
+	[381668] = "Просьба архивариуса",	-- Archivists' Request
+	[381669] = "Просьба архивариуса",	-- Archivists' Request
 	[381670] = "Просьба архивариуса",	-- Archivists' Request
 	[381671] = "Просьба архивариуса",	-- Archivists' Request
 	[381672] = "Просьба архивариуса",	-- Archivists' Request

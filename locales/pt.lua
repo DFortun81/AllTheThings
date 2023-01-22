@@ -3588,7 +3588,7 @@ for key,value in pairs({
 	[381663] = "Manavento para Iniciantes",	-- Manastorming For Beginners
 	[381664] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381667] = "Pedido dos Arquivistas",	-- Archivists' Request
-	[381668] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381668] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381669] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381670] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381671] = "Pedido dos Arquivistas",	-- Archivists' Request
