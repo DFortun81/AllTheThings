@@ -933,6 +933,32 @@ namespace ATT
                 }
             }
 
+            // Certain automatic header types may be converted from raw Lua data
+            if (data.TryGetValue("headerID", out decimal headerID) && data.TryGetValue("type", out string type))
+            {
+                switch (type)
+                {
+                    // Criteria can be parsed as AchievementID.CrtieriaID to make it easier for contributor to reference
+                    // Parser can lookup the CriteriaUID from AchievementDB in that case for actual addon data
+                    case "crit":
+                        if (decimal.Truncate(headerID) != headerID)
+                        {
+                            Tuple<long, long> achCrit = GetAchCritIDs(headerID);
+                            // WoW Criteria API requires AchievementID always even with CriteriaUID... so this is pointless to get the UID
+                            //long critUID = GetAchievementCrtieriaUID(achCrit);
+                            //if (critUID == 0)
+                            //{
+                            //    throw new InvalidDataException($"Could not resolve CriteriaUID from Achievement/Criteria combination {achCrit.Item1}.{achCrit.Item2}");
+                            //}
+                            //data["headerID"] = critUID;
+
+                            // just save the shifted criteriaID for in-game to shift back for info
+                            data["headerID"] = achCrit.Item1 + (decimal)achCrit.Item2 / 100;
+                        }
+                        break;
+                }
+            }
+
             // Merge all relevant Item Data into the global dictionaries after being validated
             Items.Merge(data);
             Objects.Merge(data);
@@ -961,6 +987,52 @@ namespace ATT
             }
 
             return true;
+        }
+
+        private static long GetAchievementCrtieriaUID(Tuple<long, long> achCrit)
+        {
+            long achID = achCrit.Item1;
+            long crit = achCrit.Item2;
+            if (!ACHIEVEMENTS.TryGetValue(achID, out var achData))
+            {
+                LogError($"Failed to find AchievementDB data for Achievement {achID}");
+                return 0;
+            }
+
+            if (!achData.TryGetValue("g", out List<object> criterias))
+            {
+                LogError($"Failed to find AchievementDB 'criteria' for Achievement {achID}");
+                return 0;
+            }
+
+            foreach (var critObj in criterias)
+            {
+                if (critObj is Dictionary<string, object> critDict)
+                {
+                    if (!critDict.TryGetValue("criteriaID", out long critVal))
+                        continue;
+
+                    if (crit == critVal && critDict.TryGetValue("criteriaUID", out long critUID) && critUID != 0)
+                        return critUID;
+                }
+            }
+
+            LogError($"Could not determine CriteriaUID from Achievement {achID} Criteria {crit}.");
+            return 0;
+        }
+
+        private static Tuple<long, long> GetAchCritIDs(decimal headerID)
+        {
+            long achID = (long)headerID;
+
+            long crit = 0;
+            while ((headerID -= decimal.Truncate(headerID)) != 0)
+            {
+                crit *= 10;
+                crit += (long)(headerID *= 10);
+            }
+
+            return new Tuple<long, long>(achID, crit);
         }
 
         /// <summary>

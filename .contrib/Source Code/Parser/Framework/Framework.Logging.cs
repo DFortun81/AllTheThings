@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 
 namespace ATT
 {
@@ -34,6 +35,15 @@ namespace ATT
         public static void Log(string message)
         {
             Trace.WriteLine(message);
+        }
+
+        /// <summary>
+        /// Outputs the message to the Trace which requires User intervention
+        /// </summary>
+        /// <param name="message"></param>
+        public static void LogError(string message)
+        {
+            Trace.WriteLine("ERROR: " + message);
         }
     }
 }

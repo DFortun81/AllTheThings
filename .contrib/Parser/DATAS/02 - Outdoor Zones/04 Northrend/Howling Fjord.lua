@@ -300,7 +300,7 @@ root("Zones", {
 					exploration(3982),	-- Wyrmskull Village
 				}),
 				-- #endif
-				n(FACTION, {
+				n(FACTIONS, {
 					faction(1068, {	-- Explorer's League
 						["maps"] = { THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,

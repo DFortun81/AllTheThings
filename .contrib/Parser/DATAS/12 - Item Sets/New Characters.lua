@@ -847,7 +847,7 @@ _.GearSets =
 						["coord"] = { 79.5, 69.8, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { WARLOCK },
-						["timeline"] = { ADDED_SL_2_0 }
+						["timeline"] = { ADDED_SL_S3 }
 					}),
 					q(65424, {	-- Whatever You Sayaad (H)
 						["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
@@ -855,7 +855,7 @@ _.GearSets =
 						["coord"] = { 74.6, 47.4, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["classes"] = { WARLOCK },
-						["timeline"] = { ADDED_SL_2_0 }
+						["timeline"] = { ADDED_SL_S3 }
 					}),
 				}),
 				n(ARMOR, {
@@ -1164,7 +1164,7 @@ _.GearSets =
 				}),
 				i(37, {	-- Worn Axe
 					["timeline"] = { "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
-				}),			
+				}),
 			}),
 		},
 	}),

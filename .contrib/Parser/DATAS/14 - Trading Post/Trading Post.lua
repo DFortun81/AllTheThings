@@ -23,7 +23,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["description"] = "This is rewarded for earning 1000 Trader's Tender in a month.",
 		}),
 	}),
-	n(VENDOR, {
+	n(VENDORS, {
 		filter(BATTLE_PETS, {
 			i(190607, {	-- Garrlok (PET!)
 				["cost"] = { { "c", TRADERS_TENDER, 750 }, },
@@ -114,7 +114,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 root(ROOTS.NeverImplemented, {
 	tier(DF_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { ADDED_10_0_5 }, }, {
-		n(VENDOR, {
+		n(VENDORS, {
 			filter(COSMETIC, {
 				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },

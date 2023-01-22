@@ -1644,6 +1644,7 @@ namespace ATT
                     //case "dr":
                     case "modelRotation":
                     case "modelScale":
+                    case "headerID":
                         {
                             item[field] = Convert.ToSingle(value);
                             break;
@@ -1668,7 +1669,6 @@ namespace ATT
                     case "runeforgePowerID":
                     case "raceID":
                     case "conduitID":
-                    case "headerID":
                     case "f":
                     case "u":
                     case "b":

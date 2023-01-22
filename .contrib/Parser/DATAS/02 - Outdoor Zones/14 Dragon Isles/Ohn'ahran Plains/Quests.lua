@@ -385,69 +385,65 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			crit(1, {	-- Taivan's Purpose
-				["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-				["collectible"] = false,
-				["g"] = {
-					q(67772, {	-- The Trouble with Taivan
-						["sourceQuests"] = { 66783 },	-- Renewal of Vows
-						["provider"] = { "n", 192621 },	-- Healer Selbekh
-						["coord"] = { 61.2, 40.0, OHNAHRAN_PLAINS },
-					}),
-					q(67921, {	-- The Hunting Hound
-						["sourceQuests"] = { 67772 },	-- The Trouble with Taivan
-						["provider"] = { "n", 192629 },	-- Hunter Jadar
-						["coord"] = { 71.4, 49.6, OHNAHRAN_PLAINS },
-					}),
-					q(70989, {	-- Part of a Pack
-						["sourceQuests"] = { 67921 },	-- The Hunting Hound
-						["provider"] = { "n", 192629 },	-- Hunter Jadar
-						["coord"] = { 71.4, 49.6, OHNAHRAN_PLAINS },
-					}),
-					q(68083, {	-- Try Again, Taivan!
-						["sourceQuests"] = { 70989 },	-- Part of a Pack
-						["provider"] = { "n", 192629 },	-- Hunter Jadar
-						["coord"] = { 71.4, 49.6, OHNAHRAN_PLAINS },
-					}),
-					q(68084, {	-- The Gentle Giant
-						["sourceQuests"] = { 68083 },	-- Try Again, Taivan!
-						["provider"] = { "n", 192621 },	-- Healer Selbekh
-						["coord"] = { 61.2, 40.0, OHNAHRAN_PLAINS },
-					}),
-					q(68085, {	-- Shaping a Shepherd
-						["sourceQuests"] = { 68084 },	-- The Gentle Giant
-						["provider"] = { "n", 192633 },	-- Shepherd Tevatei
-						["coord"] = { 49.1, 41.1, OHNAHRAN_PLAINS },
-					}),
-					q(71022, {	-- Reign of the Ram
-						["sourceQuests"] = { 68085 },	-- Shaping a Shepherd
-						["provider"] = { "n", 192633 },	-- Shepherd Tevatei
-						["coord"] = { 49.1, 41.1, OHNAHRAN_PLAINS },
-					}),
-					q(68087, {	-- Danger in Daruukhan
-						["sourceQuests"] = { 71022 },	-- Reign of the Ram
-						["provider"] = { "n", 192633 },	-- Shepherd Tevatei
-						["coord"] = { 49.1, 41.1, OHNAHRAN_PLAINS },
-					}),
-					q(69094, {	-- Saving Centaurs
-						["sourceQuests"] = { 68087 },	-- Danger in Daruukhan
-						["provider"] = { "n", 192621 },	-- Healer Selbekh
-						["coord"] = { 52.8, 29.8, OHNAHRAN_PLAINS },
-					}),
-					q(69095, {	-- Homeward Hound
-						["sourceQuests"] = { 69094 },	-- Saving Centaurs
-						["provider"] = { "n", 192621 },	-- Healer Selbekh
-						["coord"] = { 52.8, 29.8, OHNAHRAN_PLAINS },
-					}),
-					q(69096, {	-- Taivan's Purpose
-						["sourceQuests"] = { 69095 },	-- Homeward Hound
-						["provider"] = { "n", 192621 },	-- Healer Selbekh
-						["coord"] = { 61.2, 40.0, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(198537),	-- Taivan's Trumpet (TOY!)
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16405.1, {	-- Taivan's Purpose
+				q(67772, {	-- The Trouble with Taivan
+					["sourceQuests"] = { 66783 },	-- Renewal of Vows
+					["provider"] = { "n", 192621 },	-- Healer Selbekh
+					["coord"] = { 61.2, 40.0, OHNAHRAN_PLAINS },
+				}),
+				q(67921, {	-- The Hunting Hound
+					["sourceQuests"] = { 67772 },	-- The Trouble with Taivan
+					["provider"] = { "n", 192629 },	-- Hunter Jadar
+					["coord"] = { 71.4, 49.6, OHNAHRAN_PLAINS },
+				}),
+				q(70989, {	-- Part of a Pack
+					["sourceQuests"] = { 67921 },	-- The Hunting Hound
+					["provider"] = { "n", 192629 },	-- Hunter Jadar
+					["coord"] = { 71.4, 49.6, OHNAHRAN_PLAINS },
+				}),
+				q(68083, {	-- Try Again, Taivan!
+					["sourceQuests"] = { 70989 },	-- Part of a Pack
+					["provider"] = { "n", 192629 },	-- Hunter Jadar
+					["coord"] = { 71.4, 49.6, OHNAHRAN_PLAINS },
+				}),
+				q(68084, {	-- The Gentle Giant
+					["sourceQuests"] = { 68083 },	-- Try Again, Taivan!
+					["provider"] = { "n", 192621 },	-- Healer Selbekh
+					["coord"] = { 61.2, 40.0, OHNAHRAN_PLAINS },
+				}),
+				q(68085, {	-- Shaping a Shepherd
+					["sourceQuests"] = { 68084 },	-- The Gentle Giant
+					["provider"] = { "n", 192633 },	-- Shepherd Tevatei
+					["coord"] = { 49.1, 41.1, OHNAHRAN_PLAINS },
+				}),
+				q(71022, {	-- Reign of the Ram
+					["sourceQuests"] = { 68085 },	-- Shaping a Shepherd
+					["provider"] = { "n", 192633 },	-- Shepherd Tevatei
+					["coord"] = { 49.1, 41.1, OHNAHRAN_PLAINS },
+				}),
+				q(68087, {	-- Danger in Daruukhan
+					["sourceQuests"] = { 71022 },	-- Reign of the Ram
+					["provider"] = { "n", 192633 },	-- Shepherd Tevatei
+					["coord"] = { 49.1, 41.1, OHNAHRAN_PLAINS },
+				}),
+				q(69094, {	-- Saving Centaurs
+					["sourceQuests"] = { 68087 },	-- Danger in Daruukhan
+					["provider"] = { "n", 192621 },	-- Healer Selbekh
+					["coord"] = { 52.8, 29.8, OHNAHRAN_PLAINS },
+				}),
+				q(69095, {	-- Homeward Hound
+					["sourceQuests"] = { 69094 },	-- Saving Centaurs
+					["provider"] = { "n", 192621 },	-- Healer Selbekh
+					["coord"] = { 52.8, 29.8, OHNAHRAN_PLAINS },
+				}),
+				q(69096, {	-- Taivan's Purpose
+					["sourceQuests"] = { 69095 },	-- Homeward Hound
+					["provider"] = { "n", 192621 },	-- Healer Selbekh
+					["coord"] = { 61.2, 40.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(198537),	-- Taivan's Trumpet (TOY!)
+					},
+				}),
 			}),
 			crit(2, {	-- Initiate's Day Out
 				["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains

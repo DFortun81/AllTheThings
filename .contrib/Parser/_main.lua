@@ -41,6 +41,7 @@ HEADERS = {
 	Quest = "q",
 	Spell = "s",
 	AchCategory = "ac",
+	AchCriteria = "crit",
 };
 
 -- Map Constants for quick and easy replacement when we can get mapIDs on live!
@@ -1261,7 +1262,7 @@ REMOVED_SL_S2 = "removed 9.1.0.39185";					-- Shadowlands Season 2 End on Februa
 ADDED_SL_1_5 = "added 9.1.5";							-- Shadowlands 9.1.5 Start on November 2nd, 2021
 REMOVED_SL_1_5 = "removed 9.1.5";						-- Shadowlands 9.1.5 Start on November 2nd, 2021
 ADDED_SL_S3 = "added 9.2.0.42423";						-- Shadowlands Season 3 Start on February 22nd, 2022
-REMOVED_SL_S3 = "added 9.2.0.42488";					-- Shadowlands Season 3 Start on February 22nd, 2022
+REMOVED_SL_S3 = "removed 9.2.0.42488";					-- Shadowlands Season 3 Start on February 22nd, 2022
 ADDED_SL_S4 = "added 9.2.5.44908";						-- Shadowlands Season 4 Start on May 31, 2022
 REMOVED_SL_S4 = "removed 9.2.5.44908";					-- Shadowlands Season 4 Start on May 31, 2022
 ADDED_SL_2_7 = "added 9.2.7";							-- Shadowlands 9.2.7 Start on August 16, 2022

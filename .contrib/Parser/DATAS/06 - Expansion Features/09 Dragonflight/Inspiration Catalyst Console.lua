@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-local TierList, SymLink, SymLinKPvP;
+local TierList, SymLink;
 local SymRaid = function(ClassID, ModID)
 	if ClassID == DEATHKNIGHT or ClassID == WARLOCK or ClassID == DEMONHUNTER then
 		TierList = {"select", "itemID",
@@ -46,6 +46,7 @@ local SymRaid = function(ClassID, ModID)
 	return SymLink
 end
 --[[
+local SymLinKPvP;
 local SymPvP = function(ClassID, HeaderID)
 	SymLinKPvP = {
 		{"select", "tierID", SL_TIER},			-- Select Shadowlands

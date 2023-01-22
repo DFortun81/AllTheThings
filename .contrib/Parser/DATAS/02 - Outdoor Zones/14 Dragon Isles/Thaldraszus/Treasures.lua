@@ -29,7 +29,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380618, {	-- Draconic Flux
 				["coord"] = { 52.2, 80.5, THALDRASZUS },
-				["requireSkill"] = BLACKSMITH,
+				["requireSkill"] = BLACKSMITHING,
 				["g"] = {
 					i(201006),	-- Draconic Flux
 				},

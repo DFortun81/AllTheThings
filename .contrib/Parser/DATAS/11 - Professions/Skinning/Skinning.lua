@@ -168,7 +168,7 @@ profession(SKINNING, {
 			q(40153, {	-- Return to Karazhan: Scales of Legend
 				["sourceQuest"] = 40152,	-- Scales for Ske'rit
 				["provider"] = { "n", 98720 },	-- Ske'rit <Skinning Trainer>
-				["maps"] = { KARAZHAN, HEART_OF_FEAR, THE_OBSIDIAN_SANCTUM },
+				["maps"] = { KARAZHAN, 474, THE_OBSIDIAN_SANCTUM },
 			}),
 			q(40154, {	-- Eye of Azshara: The Scales of Serpentrix
 				["sourceQuest"] = 40152,	-- Scales for Ske'rit

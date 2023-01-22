@@ -13051,6 +13051,12 @@ local AlternateDataTypes = {
 		local name = GetCategoryInfo(id);
 		t.name = name;
 	end,
+	["crit"] = function(t, id)
+		local ach = math.floor(id);
+		local crit = math.floor(100 * (id - ach) + 0.005);
+		local name = GetAchievementCriteriaInfo(ach, crit);
+		t.name = name;
+	end,
 };
 local cache = app.CreateCache("headerCode");
 local function CacheInfo(t, field)

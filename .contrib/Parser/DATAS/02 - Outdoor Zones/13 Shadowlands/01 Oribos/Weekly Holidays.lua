@@ -7,7 +7,7 @@ root("Zones", m(SHADOWLANDS, {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
 				i(184869, {	-- Cache of Nathrian Treasures (N)
-					["timeline"] = { ADDED_SL_S1, REMOVED_SL_S2 },
+					["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 },
 					["sym"] = {
 						{"select", "instanceID", 1190},			-- Castle Nathria
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -22,7 +22,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(184868, {	-- Cache of Nathrian Treasures (HC)
-					["timeline"] = { ADDED_SL_S1, REMOVED_SL_S2 },
+					["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 },
 					["sym"] = {
 						{"select", "instanceID", 1190},			-- Castle Nathria
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
