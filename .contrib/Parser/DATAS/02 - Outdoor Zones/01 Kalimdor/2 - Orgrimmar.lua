@@ -745,16 +745,6 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 49.4, 59.2, ORGRIMMAR },
 					["races"] = { GOBLIN },
 				}),
-				q(8367, {	-- For Great Honor
-					["qg"] = 15350,	-- Horde Warbringer
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(13476, {	-- For Great Honor
-					["qg"] = 15350,	-- Horde Warbringer
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(31014, {	-- Hellscream's Gift
 					["qg"] = 62092,	-- Garrosh Hellscream
 					["coord"] = { 70.6, 30.8, ORGRIMMAR },

@@ -35,24 +35,44 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(1169, {	-- Master of Arathi Basin
+				ach(1169, {	-- Master of Arathi Basin (Alliance - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {
-						{"meta_achievement",
-							155,	-- Arathi Basin Veteran
-							165,	-- Arathi Basin Perfection
-							158,	-- Me and the Cappin' Makin' it Happen
-							73,	-- Disgracin' The Basin
-							1153,	-- Overly Defensive
-							157,	-- To The Rescue!
-							161,	-- Resilient Victory
-							156,	-- Territorial Dominance
-							159,	-- Let's Get This Done
-							162,	-- We Had It All Along *cough*
-							583,	-- Arathi Basin All-Star
-							584,	-- Arathi Basin Assassin
-						},
-					},
+					["sym"] = {{"meta_achievement",
+						155,	-- Arathi Basin Veteran
+						165,	-- Arathi Basin Perfection
+						158,	-- Me and the Cappin' Makin' it Happen
+						73,	-- Disgracin' The Basin
+						1153,	-- Overly Defensive
+						157,	-- To The Rescue!
+						161,	-- Resilient Victory
+						156,	-- Territorial Dominance
+						159,	-- Let's Get This Done
+						162,	-- We Had It All Along *cough*
+						583,	-- Arathi Basin All-Star
+						584,	-- Arathi Basin Assassin
+					}},
+					-- #if BEFORE 4.3.0
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
+				}),
+				ach(1170, {	-- Master of Arathi Basin (Horde - before 4.3.0)
+					-- Meta Achievement should symlink the contained Achievements from Source
+					["sym"] = {{"meta_achievement",
+						155,	-- Arathi Basin Veteran
+						165,	-- Arathi Basin Perfection
+						158,	-- Me and the Cappin' Makin' it Happen
+						73,	-- Disgracin' The Basin
+						1153,	-- Overly Defensive
+						157,	-- To The Rescue!
+						161,	-- Resilient Victory
+						156,	-- Territorial Dominance
+						159,	-- Let's Get This Done
+						162,	-- We Had It All Along *cough*
+						583,	-- Arathi Basin All-Star
+						584,	-- Arathi Basin Assassin
+					}},
+					["timeline"] = { "added 3.0.1", "removed 4.3.0" },
+					["races"] = HORDE_ONLY,
 				}),
 				ach(154, {	-- Arathi Basin Victory
 					["rank"] = 1,

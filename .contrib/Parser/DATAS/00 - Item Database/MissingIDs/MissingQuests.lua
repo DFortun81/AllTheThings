@@ -328,7 +328,6 @@ q(8337),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(8339),	-- Royalty of the Council <NYI> <TXT> UNUSED,		TBC: Royalty of the Council <NYI> <TXT> UNUSED,		CLASSIC: Royalty of the Council <NYI> <TXT> UNUSED
 q(8340),	-- Twilight Signet Ring <NYI> <TXT>,		CLASSIC: Twilight Signet Ring <NYI> <TXT>
 q(8344),	-- Windows to the Source,		TBC: Windows to the Source,		CLASSIC: Windows to the Source
-q(8371),	-- Concerted Efforts,		TBC: Concerted Efforts,		CLASSIC: Concerted Efforts
 q(8410),	-- Elemental Mastery,		TBC: Elemental Mastery,		CLASSIC: Elemental Mastery
 q(8411),	-- [DEPRECATED] Mastering the Elements,		TBC: Mastering the Elements,		CLASSIC: Mastering the Elements
 q(8444),	-- <NYI> <TXT> gossip shade of ambermoon,		TBC: <NYI> <TXT> gossip shade of ambermoon,		CLASSIC: <NYI> <TXT> gossip shade of ambermoon

@@ -62,24 +62,57 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 			n(ACHIEVEMENTS, {
 				ach(1172, {	-- Master of Warsong Gulch
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {
-						{"meta_achievement",
-							167,	-- Warsong Gulch Veteran
-							199,	-- Capture the Flag
-							200,	-- Persistent Defender
-							872,	-- Frenzied Defender
-							168,	-- Warsong Gulch Perfection
-							201,	-- Warsong Expedience
-							204,	-- Ironman
-							203,	-- Not in My House (A)
-							1251,	-- Not in My House (H)
-							202,	-- Quick Cap (A)
-							1502,	-- Quick Cap (H)
-							206,	-- Supreme Defender (A)
-							1252,	-- Supreme Defender (H)
-							207,	-- Save the Day
-						},
-					},
+					-- #if AFTER 4.3.0
+					["sym"] = {{"meta_achievement",
+						167,	-- Warsong Gulch Veteran
+						199,	-- Capture the Flag
+						200,	-- Persistent Defender
+						872,	-- Frenzied Defender
+						168,	-- Warsong Gulch Perfection
+						201,	-- Warsong Expedience
+						204,	-- Ironman
+						203,	-- Not in My House (A)
+						1251,	-- Not in My House (H)
+						202,	-- Quick Cap (A)
+						1502,	-- Quick Cap (H)
+						206,	-- Supreme Defender (A)
+						1252,	-- Supreme Defender (H)
+						207,	-- Save the Day
+					}},
+					-- #else
+					["sym"] = {{"meta_achievement",
+						167,	-- Warsong Gulch Veteran
+						199,	-- Capture the Flag
+						200,	-- Persistent Defender
+						872,	-- Frenzied Defender
+						168,	-- Warsong Gulch Perfection
+						201,	-- Warsong Expedience
+						204,	-- Ironman
+						203,	-- Not in My House (A)
+						202,	-- Quick Cap (A)
+						206,	-- Supreme Defender (A)
+						207,	-- Save the Day
+					}},
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
+				}),
+				ach(1173, {	-- Master of Warsong Gulch (Horde - before 4.3.0)
+					-- Meta Achievement should symlink the contained Achievements from Source
+					["sym"] = {{"meta_achievement",
+						167,	-- Warsong Gulch Veteran
+						199,	-- Capture the Flag
+						200,	-- Persistent Defender
+						872,	-- Frenzied Defender
+						168,	-- Warsong Gulch Perfection
+						201,	-- Warsong Expedience
+						204,	-- Ironman
+						1251,	-- Not in My House (H)
+						1502,	-- Quick Cap (H)
+						1252,	-- Supreme Defender (H)
+						207,	-- Save the Day
+					}},
+					["timeline"] = { "added 3.0.1", "removed 4.3.0" },
+					["races"] = HORDE_ONLY,
 				}),
 				ach(166, {	-- Warsong Gulch Victory
 					["rank"] = 1,
