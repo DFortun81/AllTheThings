@@ -3588,7 +3588,7 @@ for key,value in pairs({
 	[381664] = "Requête des archives",	-- Archivists' Request
 	[381667] = "Requête des archives",	-- Archivists' Request
 	[381668] = "Requête des archives",	-- Archivists' Request
-	[381669] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
+	[381669] = "Requête des archives",	-- Archivists' Request
 	[381670] = "Requête des archives",	-- Archivists' Request
 	[381671] = "Requête des archives",	-- Archivists' Request
 	[381672] = "Requête des archives",	-- Archivists' Request

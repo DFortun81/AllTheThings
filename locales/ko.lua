@@ -1993,7 +1993,7 @@ for key,value in pairs({
 	[233649] = "도박꾼의 주머니",	-- Gambler's Purse
 	[233650] = "모험가 철퇴",	-- Adventurer's Mace
 	[233651] = "잃어버린 펜던트",	-- Lost Pendant
-	--TODO: [233658] = "Adventurer's Pouch",	-- Adventurer's Pouch
+	[233658] = "모험가 주머니",	-- Adventurer's Pouch
 	[233696] = "탐사용 주요 보급품",	-- Important Exploration Supplies
 	[233697] = "서슬니 보관함",	-- Saberon Stash
 	--TODO: [233715] = "Goldtoe's Plunder",	-- Goldtoe's Plunder

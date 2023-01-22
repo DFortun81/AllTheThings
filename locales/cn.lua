@@ -3546,7 +3546,7 @@ for key, value in pairs({
 	[380643] = "速冻卷轴",	-- Flashfrozen Scroll
 	[380647] = "被遗忘的奥术宝典",	-- Forgotten Arcane Tomne
 	--TODO: [380648] = "Odd Book",	-- Odd Book
-	--TODO: [380652] = "Fractured Titanic Sphere",	-- Fractured Titanic Sphere
+	[380652] = "有裂痕的泰坦之球",	-- Fractured Titanic Sphere
 	[380653] = "耶努的风筝",	-- Yennu's Kite
 	[380654] = "亡者胸甲",	-- Dead Man's Chestplate
 	[380709] = "驯鹰者护手设计图",	-- Falconer Gauntlet Drawings
@@ -3614,8 +3614,8 @@ for key, value in pairs({
 	[382071] = "完整的渔网",	-- Full Fishing Net
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
-	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
-	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	[382193] = "元素宝箱",	-- Chest of the Elements
+	[382325] = "玛瑙宝石簇",	-- Onyx Gem Cluster
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
 	[383733] = "翻动过的泥土",	-- Disturbed Dirt
 	[383734] = "翻动过的泥土",	-- Disturbed Dirt
