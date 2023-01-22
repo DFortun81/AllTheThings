@@ -1640,12 +1640,14 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			i(192861),	-- Ysemerald+++
 		}),
 		-- Unclear
+		i(192880),	-- Crumbled Stone
 		i(192889),	-- Dreamer's Vision
 		i(202049),	-- Dreamer's Vision
 		i(202055),	-- Dreamer's Vision
 		i(192891),	-- Earthwarden's Prize
 		i(202051),	-- Earthwarden's Prize
 		i(202057),	-- Earthwarden's Prize
+		i(192872),	-- Fractured Glass
 		i(194723),	-- Kalu'ak Figurine
 		i(194724),	-- Kalu'ak Figurine
 		i(194725),	-- Kalu'ak Figurine
@@ -1713,6 +1715,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71677, { ["name"] = "First Craft: Jeweled Offering", }),
 			q(71678, { ["name"] = "First Craft: Convergent Prism", }),
 			q(71625, { ["name"] = "First Craft: Crafty Queen's Ruby", }),
+			q(71650, { ["name"] = "First Craft: Projection Prism", }),
 			q(71665, { ["name"] = "First Craft: Sundered Onyx Loupe", }),
 			q(71675, { ["name"] = "First Craft: Frameless Lens", }),
 			q(71602, { ["name"] = "First Craft: Pendant of Impending Perils", }),
@@ -2701,6 +2704,7 @@ root("HiddenQuestTriggers", {
 			q(74172),	-- Skinning Zarizz
 			q(74173),	-- Skinning Steamgill
 			q(74174),	-- Skinning Biryuk
+			q(74175),	-- Skinning Territorial Coastling
 			q(74179),	-- Skinning Hunter of the Deep
 			q(74180),	-- Skinning Hamett
 			q(74181),	-- Skinning Zarimek
@@ -2714,7 +2718,9 @@ root("HiddenQuestTriggers", {
 			q(74197),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
 			q(74198),	-- Skinning The Weeping Vilomah
 			q(74200),	-- Skinning Eldoren the Reborn
+			q(74203),	-- Skinning Henlare
 			q(74204),	-- Skinning Acrosoth
+			q(74205),	-- Skinning Razk'vex the Untamed
 			q(74206),	-- Skinning Corrupted Proto-Dragon
 			q(74208),	-- Skinning Matriarch Remalla
 			q(74213),	-- Skinning Swog'ranka

@@ -457,10 +457,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(191918),	-- Suspiciously Fuzzy Drink++
 				i(191919),	-- Suspiciously Fuzzy Drink+++
 			}),
-			prof(JEWELCRAFTING, {
-				i(192872),	-- Fractured Glass
-				i(192880),	-- Crumbled Stone
-			}),
 			prof(LEATHERWORKING, {
 				i(193209),	-- Quality Bone
 			}),
