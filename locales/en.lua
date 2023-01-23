@@ -1443,7 +1443,7 @@ app.L = {
 	-- T3
 		[-3179] = "Interface\\Icons\\achievement_dungeon_naxxramas",						-- Tier 3 Sets
 	-- Island Expeditions
-		[-3338] = app.asset("Category_Zones"),											-- Island Expeditions
+		[-3338] = "Interface\\Icons\\achievement_zone_darkshore_01",						-- Island Expeditions
 	-- Tournament
 		[-4191] = "Interface\\Icons\\Achievement_PVP_Legion08",								-- Tournament
 	-- Class Trial
