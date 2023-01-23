@@ -53,6 +53,14 @@ _.ExpansionFeatures =
 								i(118607, {	-- Technique: Etched-Blade Warstaff
 									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
 								}),
+								i(202236, {	-- Technique: Impressive Weapon Crystal
+									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
+								i(202237, {	-- Technique: Remarkable Weapon Crystal
+									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
 								i(118613, {	-- Technique: Shadowtome
 									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
 								}),
@@ -66,6 +74,7 @@ _.ExpansionFeatures =
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
+									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 								un(NEVER_IMPLEMENTED, i(118608)),	-- Technique: Greater Weapon Crystal
 								un(NEVER_IMPLEMENTED, i(120266)),	-- Technique: Greater Ensorcelled Tarot
@@ -107,6 +116,14 @@ _.ExpansionFeatures =
 								i(118607, {	-- Technique: Etched-Blade Warstaff
 									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
 								}),
+								i(202236, {	-- Technique: Impressive Weapon Crystal
+									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
+								i(202237, {	-- Technique: Remarkable Weapon Crystal
+									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
 								i(118613, {	-- Technique: Shadowtome
 									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
 								}),
@@ -120,6 +137,7 @@ _.ExpansionFeatures =
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
+									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 								un(NEVER_IMPLEMENTED, i(118608)),	-- Technique: Greater Weapon Crystal
 								un(NEVER_IMPLEMENTED, i(120266)),	-- Technique: Greater Ensorcelled Tarot

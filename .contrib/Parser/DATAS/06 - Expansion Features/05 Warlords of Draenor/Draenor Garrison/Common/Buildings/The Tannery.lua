@@ -42,6 +42,7 @@ _.ExpansionFeatures =
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
+									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 								i(116349, {	-- Recipe: Burnished Inscription Bag
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
@@ -55,6 +56,10 @@ _.ExpansionFeatures =
 								i(120258, {	-- Recipe: Drums of Fury
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
+								i(202232, {	-- Recipe: Impressive Burnished Essence
+									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
 								i(116325, {	-- Recipe: Leather Refurbishing Kit
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
@@ -63,6 +68,10 @@ _.ExpansionFeatures =
 								}),
 								i(116326, {	-- Recipe: Powerful Burnished Cloak
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+								}),
+								i(202233, {	-- Recipe: Remarkable Burnished Essence
+									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
+									["timeline"] = { ADDED_DF_0_5 },
 								}),
 								i(116350, {	-- Recipe: Riding Harness
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
@@ -144,6 +153,7 @@ _.ExpansionFeatures =
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
+									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 								i(116349, {	-- Recipe: Burnished Inscription Bag
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
@@ -157,6 +167,10 @@ _.ExpansionFeatures =
 								i(120258, {	-- Recipe: Drums of Fury
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
+								i(202232, {	-- Recipe: Impressive Burnished Essence
+									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
 								i(116325, {	-- Recipe: Leather Refurbishing Kit
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
@@ -165,6 +179,10 @@ _.ExpansionFeatures =
 								}),
 								i(116326, {	-- Recipe: Powerful Burnished Cloak
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+								}),
+								i(202233, {	-- Recipe: Remarkable Burnished Essence
+									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
+									["timeline"] = { ADDED_DF_0_5 },
 								}),
 								i(116350, {	-- Recipe: Riding Harness
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking

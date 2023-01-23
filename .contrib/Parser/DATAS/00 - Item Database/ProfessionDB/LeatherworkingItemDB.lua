@@ -158,3 +158,9 @@ i(0, 382585);	-- Opening
 i(0, 375198);	-- Savage Bow
 i(197984, 375165);	-- Wisp of Tyr
 i(197985, 0);	-- Illustrious Insight
+
+------------------
+-- PATCH 10.0.5 --
+------------------
+i(202232, 397862);	-- Impressive Burnished Essence
+i(202233, 397863);	-- Remarkable Burnished Essence

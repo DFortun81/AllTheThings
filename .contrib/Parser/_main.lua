@@ -1278,6 +1278,7 @@ TIMELINE_DF_REL = { CREATED_DF_PRE, ADDED_DF_REL };		-- Dragonflight Launch on N
 REMOVED_DF_REL = "removed 10.0.2.46801";				-- Dragonflight Launch on November 28th, 2022
 ADDED_10_0_5 = "added 10.0.5";							-- Dragonflight 10.0.5 Launch on January 24th, 2023
 ADDED_DF_0_5 = "added 10.0.5";
+REMOVED_DF_0_5 = "removed 10.0.5";						-- Dragonflight 10.0.5 Launch on January 24th, 2023
 ADDED_DF_S2 = "added 10.1.0";							-- Dragonflight Season 2 Start on
 REMOVED_DF_S2 = "removed 10.1.0";						-- Dragonflight Season 2 Start on
 

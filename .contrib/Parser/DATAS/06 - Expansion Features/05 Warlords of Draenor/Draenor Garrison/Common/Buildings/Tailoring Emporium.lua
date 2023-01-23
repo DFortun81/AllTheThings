@@ -101,16 +101,25 @@ _.ExpansionFeatures =
 								i(114859, {	-- Pattern: Hexweave Slippers
 									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
 								}),
+								i(202234, {	-- Pattern: Impressive Hexweave Essence
+									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
 								i(114862, {	-- Pattern: Nimble Hexweave Cloak
 									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
 								}),
 								i(114861, {	-- Pattern: Powerful Hexweave Cloak
 									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
 								}),
+								i(202235, {	-- Pattern: Remarkable Hexweave Essence
+									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
 								i(114871, {	-- Recipe: Hexweave Essence
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
+									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 							},
 						}),
@@ -183,16 +192,25 @@ _.ExpansionFeatures =
 								i(114859, {	-- Pattern: Hexweave Slippers
 									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
 								}),
+								i(202234, {	-- Pattern: Impressive Hexweave Essence
+									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
 								i(114862, {	-- Pattern: Nimble Hexweave Cloak
 									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
 								}),
 								i(114861, {	-- Pattern: Powerful Hexweave Cloak
 									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
 								}),
+								i(202235, {	-- Pattern: Remarkable Hexweave Essence
+									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
 								i(114871, {	-- Recipe: Hexweave Essence
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
+									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 							},
 						}),

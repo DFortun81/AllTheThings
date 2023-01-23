@@ -739,6 +739,12 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(166366, {	-- Weapon Crystal
 				["timeline"] = { "removed 9.0.1" },
 			}),
+			r(397866, {	-- Impressive Weapon Crystal
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
+			r(397867, {	-- Remarkable Weapon Crystal
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
 			r(166432),	-- Volatile Crystal
 		}),
 		cat(412, {	-- Card

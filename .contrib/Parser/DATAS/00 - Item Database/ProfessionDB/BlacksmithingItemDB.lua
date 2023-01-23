@@ -2040,3 +2040,11 @@ i(194473, 0);	-- Primal Molten Warglaive
 i(194505, 0);	-- Primal Weightstone
 i(194504, 0);	-- Primal Whetstone
 i(194494, 0);	-- Reinforced Plating
+
+------------------
+-- PATCH 10.0.5 --
+------------------
+i(202223, 397853);	-- Impressive Steelforged Essence
+i(202224, 397855);	-- Remarkable Steelforged Essence
+i(202226, 397856);	-- Impressive Truesteel Essence
+i(202227, 397857);	-- Remarkable Truesteel Essence

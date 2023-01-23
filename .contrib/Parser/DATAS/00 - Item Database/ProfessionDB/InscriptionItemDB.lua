@@ -1524,3 +1524,9 @@ i(198916, 0);	-- Serene Fortune
 i(198936, 0);	-- Serene Ink
 i(198956, 0);	-- Vantus Rune: Vault of the Incarnates
 i(198786, 0);	-- Wrathion Darkmoon Deckbox
+
+------------------
+-- PATCH 10.0.5 --
+------------------
+i(202236, 397866);	-- Impressive Weapon Crystal
+i(202237, 397867);	-- Remarkable Weapon Crystal

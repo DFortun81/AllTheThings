@@ -136,3 +136,9 @@ i(194264, 376499);	-- Bronze Dragon Rider's Wraps
 i(194296, 376563);	-- Fiddle with Draconium Fabric Cutters
 i(194297, 376564);	-- Fiddle with Khaz'gorite Fabric Cutters
 i(194284, 376571);	-- Wildercloth Weapon Upholstery
+
+------------------
+-- PATCH 10.0.5 --
+------------------
+i(202234, 397864);	-- Impressive Hexweave Essence
+i(202235, 397865);	-- Remarkable Hexweave Essence

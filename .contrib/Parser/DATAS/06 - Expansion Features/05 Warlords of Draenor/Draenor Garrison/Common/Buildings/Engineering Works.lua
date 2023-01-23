@@ -65,6 +65,14 @@ _.ExpansionFeatures =
 								i(118495, {	-- Schematic: Hemet's Heartseeker
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
+								i(202228, {	-- Schematic: Impressive Linkgrease Locksprocket
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
+								i(202230, {	-- Schematic: Impressive True Iron Trigger
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
 								i(118485, {	-- Schematic: Lifelike Mechanical Frostboar
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
@@ -72,6 +80,7 @@ _.ExpansionFeatures =
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 								i(118484, {	-- Schematic: Mechanical Axebeak
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
@@ -97,6 +106,14 @@ _.ExpansionFeatures =
 								i(118500, {	-- Schematic: Razorguard Mechshades
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
+								i(202229, {	-- Schematic: Remarkable Linkgrease Locksprocket
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
+								i(202231, {	-- Schematic: Remarkable True Iron Trigger
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
 								i(118476, {	-- Schematic: Shrediron's Shredder
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
@@ -107,6 +124,7 @@ _.ExpansionFeatures =
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 								i(118481, {	-- Schematic: World Shrinker
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
@@ -152,6 +170,14 @@ _.ExpansionFeatures =
 								i(118495, {	-- Schematic: Hemet's Heartseeker
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
+								i(202228, {	-- Schematic: Impressive Linkgrease Locksprocket
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
+								i(202230, {	-- Schematic: Impressive True Iron Trigger
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
 								i(118485, {	-- Schematic: Lifelike Mechanical Frostboar
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
@@ -159,6 +185,7 @@ _.ExpansionFeatures =
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 								i(118484, {	-- Schematic: Mechanical Axebeak
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
@@ -184,6 +211,14 @@ _.ExpansionFeatures =
 								i(118500, {	-- Schematic: Razorguard Mechshades
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
+								i(202229, {	-- Schematic: Remarkable Linkgrease Locksprocket
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
+								i(202231, {	-- Schematic: Remarkable True Iron Trigger
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
 								i(118476, {	-- Schematic: Shrediron's Shredder
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
@@ -194,6 +229,7 @@ _.ExpansionFeatures =
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 								i(118481, {	-- Schematic: World Shrinker
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering

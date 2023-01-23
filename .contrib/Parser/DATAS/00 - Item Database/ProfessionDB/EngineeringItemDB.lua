@@ -208,3 +208,11 @@ i(199287, 0);	-- Tinker: Plane Displacer
 i(199258, 0);	-- Tinker: Supercollide-O-Tron
 i(199265, 0);	-- Wyrmhole Generator
 i(199415, 0);	-- Zapthrottle Soul Inhaler
+
+------------------
+-- PATCH 10.0.5 --
+------------------
+i(202228, 397858);	-- Impressive Linkgrease Locksprocket
+i(202229, 397859);	-- Remarkable Linkgrease Locksprocket
+i(202230, 397860);	-- Impressive True Iron Trigger
+i(202231, 397861);	-- Remarkable True Iron Trigger

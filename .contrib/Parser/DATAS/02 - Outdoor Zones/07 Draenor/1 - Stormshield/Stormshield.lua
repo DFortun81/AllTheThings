@@ -3679,6 +3679,7 @@ _.Zones =
 								i(118610, {	-- Technique: Weapon Crystal
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 								un(NEVER_IMPLEMENTED, i(118608)),	-- Technique: Greater Weapon Crystal
 								un(NEVER_IMPLEMENTED, i(120266)),	-- Technique: Greater Ensorcelled Tarot

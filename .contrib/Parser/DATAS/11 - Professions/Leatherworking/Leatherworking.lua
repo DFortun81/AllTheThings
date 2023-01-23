@@ -4862,6 +4862,11 @@ profession(LEATHERWORKING, {
 			["categoryID"] = 1501,
 			["groups"] = {
 				{
+					["name"] = "Impressive Burnished Essence",
+					["recipeID"] = 397862,
+					["timeline"] = { ADDED_DF_0_5 },
+				},
+				{
 					["name"] = "Relic of the Past I",
 					["recipeID"] = 330206,
 				},
@@ -4880,6 +4885,11 @@ profession(LEATHERWORKING, {
 				{
 					["name"] = "Relic of the Past V",
 					["recipeID"] = 330210,
+				},
+				{
+					["name"] = "Remarkable Burnished Essence",
+					["recipeID"] = 397863,
+					["timeline"] = { ADDED_DF_0_5 },
 				},
 			},
 		},

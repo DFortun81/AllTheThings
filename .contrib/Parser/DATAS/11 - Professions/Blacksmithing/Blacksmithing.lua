@@ -4017,6 +4017,16 @@ profession(BLACKSMITHING, {
 			["categoryID"] = 1493,
 			["groups"] = {
 				{
+					["name"] = "Impressive Steelforged Essence",
+					["recipeID"] = 397853,
+					["timeline"] = { ADDED_DF_0_5 },
+				},
+				{
+					["name"] = "Impressive Truesteel Essence",
+					["recipeID"] = 397856,
+					["timeline"] = { ADDED_DF_0_5 },
+				},
+				{
 					["name"] = "Relic of the Past I",
 					["recipeID"] = 330164,
 				},
@@ -4035,6 +4045,16 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Relic of the Past V",
 					["recipeID"] = 330168,
+				},
+				{
+					["name"] = "Remarkable Steelforged Essence",
+					["recipeID"] = 397855,
+					["timeline"] = { ADDED_DF_0_5 },
+				},
+				{
+					["name"] = "Remarkable Truesteel Essence",
+					["recipeID"] = 397857,
+					["timeline"] = { ADDED_DF_0_5 },
 				},
 			},
 		},

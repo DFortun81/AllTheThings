@@ -3273,6 +3273,11 @@ profession(TAILORING, {
 			["categoryID"] = 1509,
 			["groups"] = {
 				{
+					["name"] = "Impressive Hexweave Essence",
+					["recipeID"] = 397864,
+					["timeline"] = { ADDED_DF_0_5 },
+				},
+				{
 					["name"] = "Relic of the Past I",
 					["recipeID"] = 330247
 				},
@@ -3291,7 +3296,12 @@ profession(TAILORING, {
 				{
 					["name"] = "Relic of the Past V",
 					["recipeID"] = 330251
-				}
+				},
+				{
+					["name"] = "Remarkable Hexweave Essence",
+					["recipeID"] = 397865,
+					["timeline"] = { ADDED_DF_0_5 },
+				},
 			}
 		},
 		-- #endif
