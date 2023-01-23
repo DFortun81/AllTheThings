@@ -20,7 +20,7 @@ namespace ATT
             /// <param name="builder">The builder.</param>
             /// <param name="data">The data.</param>
             /// <param name="fields">The fields.</param>
-            public override void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+            public override void Constructor(StringBuilder builder, IDictionary<string, object> data, IList<string> fields)
             {
                 // Remove the identification fields.
                 fields.Remove("isToy");
@@ -30,7 +30,7 @@ namespace ATT
                 // Write the Item ID as the primary field.
                 if (data.TryGetValue("itemID", out object itemIDRef) || data.TryGetValue("toyID", out itemIDRef))
                 {
-                    ATT.Export.ExportCompressedLua(builder, itemIDRef);
+                    ExportCompressedLua(builder, itemIDRef);
                 }
                 else throw new Exception("TOY DOES KNOW ID?");
             }

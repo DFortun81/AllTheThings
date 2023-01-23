@@ -1148,7 +1148,47 @@ namespace ATT
                 var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString().Replace("\r\n", "\n").Trim();
                 if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
             }
+
+            public static void ExportAutoLocale(string directory)
+            {
+                var AllLocaleTypes = new SortedDictionary<string, SortedDictionary<long, object>>();
+
+                foreach (var localeKey in NAMES_BY_TYPE)
+                {
+                    switch (localeKey.Key)
+                    {
+                        // only certain types we will auto-localize
+                        case "questID":
+                            AllLocaleTypes.Add("QUEST_NAMES", new SortedDictionary<long, object>(localeKey.Value));
+                            break;
+                        case "itemID":
+                            AllLocaleTypes.Add("ITEM_NAMES", new SortedDictionary<long, object>(localeKey.Value));
+                            break;
+                    }
+                }
+
+                var filename = Path.Combine(directory, "../locales", "en_auto.lua");
+                StringBuilder locale = new StringBuilder(10000);
+                locale.AppendLine("--   WARNING: This file is dynamically generated   --");
+                locale.AppendLine("local _, app = ...;");
+                locale.Append("local keys = ");
+                locale.AppendLine(ATT.Export.ExportRawLua(AllLocaleTypes).ToString());
+                locale.AppendLine(@"
+local L;
+for k,t in pairs(keys) do
+    L = app.L[k] or {};
+    for id,name in pairs(t) do
+        L[tonumber(id)] = name;
+    end
+    app.L[k] = L;
+end
+");
+
+                string content = locale.ToString();
+                if (!File.Exists(filename) || File.ReadAllText(filename) != content) File.WriteAllText(filename, content);
+            }
             #endregion
+
             #region Export DB
             private static Dictionary<long, bool> BLACKLISTED_NPC_IDS = new Dictionary<long, bool>
             {

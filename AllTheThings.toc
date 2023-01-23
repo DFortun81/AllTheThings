@@ -18,6 +18,7 @@ db\FlightPathDB.lua
 db\ObjectDB.lua
 db\RaceDB.lua
 locales\en.lua
+locales\en_auto.lua
 locales\es.lua
 locales\de.lua
 locales\fr.lua

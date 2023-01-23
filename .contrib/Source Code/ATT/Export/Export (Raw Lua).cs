@@ -24,13 +24,13 @@ namespace ATT
         {
             // Firstly, we need to know the type of object we're working with.
             if (data is bool b) builder.Append(b ? "1" : "false");  // NOTE: 0 in lua is evaluated as true, not false. So we can't shorten it. (rip)
-            else if (data is List<object> list) ExportRawLua(builder, list, indent);
-            else if (data is Dictionary<string, object> dict) ExportRawLua(builder, dict, indent);
             else if (data is string str) builder.Append('"').Append(str.Replace("\"", "\\\"")).Append('"');
-            else if (data is Dictionary<long, object> longdict) ExportRawLua(builder, longdict, indent);
-            else if (data is Dictionary<long, long> longlongdict) ExportRawLua(builder, longlongdict, indent);
-            else if (data is Dictionary<string, List<object>> listdict) ExportRawLua(builder, listdict, indent);
-            else if (data is List<List<object>> listOLists) ExportRawLua(builder, listOLists);
+            else if (data is IDictionary<string, List<object>> listdict) ExportRawLua(builder, listdict, indent);
+            else if (data is IDictionary<long, long> longlongdict) ExportRawLua(builder, longlongdict, indent);
+            else if (data is IDictionary<long, object> longdict) ExportRawLua(builder, longdict, indent);
+            else if (data is IDictionary<string, object> dict) ExportRawLua(builder, dict, indent);
+            else if (data is IList<List<object>> listOLists) ExportRawLua(builder, listOLists);
+            else if (data is IList<object> list) ExportRawLua(builder, list, indent);
             else
             {
                 // Default: Write it as a String. Best of luck.
@@ -47,7 +47,7 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="data">The data dictionary.</param>
         /// <param name="indent">The string to prefix before each line. (indenting)</param>
-        private static void ExportRawLua<KEY, VALUE>(StringBuilder builder, Dictionary<KEY, VALUE> data, string indent = "")
+        private static void ExportRawLua<KEY, VALUE>(StringBuilder builder, IDictionary<KEY, VALUE> data, string indent = "")
         {
             // If the dictionary doesn't have any content, then return immediately.
             if (data.Count == 0)
@@ -75,6 +75,7 @@ namespace ATT
                 }
             }
             keys.Sort();
+            // TODO: is converting everything to string really necessary??
             foreach (var key in keys) data2[key.ToString()] = data[key];
 
 
@@ -197,7 +198,7 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="list">The list of data.</param>
         /// <param name="indent">The string to prefix before each line. (indenting)</param>
-        private static void ExportRawLua<VALUE>(StringBuilder builder, List<VALUE> list, string indent = "")
+        private static void ExportRawLua<VALUE>(StringBuilder builder, IList<VALUE> list, string indent = "")
         {
             // If the list doesn't have any content, then return immediately.
             var count = list.Count;
@@ -261,7 +262,7 @@ namespace ATT
         /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
         /// <param name="data">The data dictionary.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportRawLua<KEY, VALUE>(Dictionary<KEY, VALUE> data)
+        public static StringBuilder ExportRawLua<KEY, VALUE>(IDictionary<KEY, VALUE> data)
         {
             var builder = new StringBuilder();
             ExportRawLua(builder, data);
@@ -274,7 +275,7 @@ namespace ATT
         /// </summary>
         /// <param name="list">The list of data.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportRawLua<T>(List<T> list)
+        public static StringBuilder ExportRawLua<T>(IList<T> list)
         {
             var builder = new StringBuilder();
             ExportRawLua(builder, list);

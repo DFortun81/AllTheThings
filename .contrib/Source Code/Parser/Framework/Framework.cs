@@ -936,30 +936,30 @@ namespace ATT
             }
 
             // Certain automatic header types may be converted from raw Lua data
-            if (data.TryGetValue("headerID", out decimal headerID) && data.TryGetValue("type", out string type))
-            {
-                switch (type)
-                {
-                    // Criteria can be parsed as AchievementID.CrtieriaID to make it easier for contributor to reference
-                    // Parser can lookup the CriteriaUID from AchievementDB in that case for actual addon data
-                    case "crit":
-                        if (decimal.Truncate(headerID) != headerID)
-                        {
-                            Tuple<long, long> achCrit = GetAchCritIDs(headerID);
-                            // WoW Criteria API requires AchievementID always even with CriteriaUID... so this is pointless to get the UID
-                            //long critUID = GetAchievementCrtieriaUID(achCrit);
-                            //if (critUID == 0)
-                            //{
-                            //    throw new InvalidDataException($"Could not resolve CriteriaUID from Achievement/Criteria combination {achCrit.Item1}.{achCrit.Item2}");
-                            //}
-                            //data["headerID"] = critUID;
+            //if (data.TryGetValue("headerID", out decimal headerID) && data.TryGetValue("type", out string type))
+            //{
+            //    switch (type)
+            //    {
+            //        // Criteria can be parsed as AchievementID.CrtieriaID to make it easier for contributor to reference
+            //        // Parser can lookup the CriteriaUID from AchievementDB in that case for actual addon data
+            //        case "crit":
+            //            if (decimal.Truncate(headerID) != headerID)
+            //            {
+            //                Tuple<long, long> achCrit = GetAchCritIDs(headerID);
+            //                // WoW Criteria API requires AchievementID always even with CriteriaUID... so this is pointless to get the UID
+            //                //long critUID = GetAchievementCrtieriaUID(achCrit);
+            //                //if (critUID == 0)
+            //                //{
+            //                //    throw new InvalidDataException($"Could not resolve CriteriaUID from Achievement/Criteria combination {achCrit.Item1}.{achCrit.Item2}");
+            //                //}
+            //                //data["headerID"] = critUID;
 
-                            // just save the shifted criteriaID for in-game to shift back for info
-                            data["headerID"] = achCrit.Item1 + (decimal)achCrit.Item2 / 100;
-                        }
-                        break;
-                }
-            }
+            //                // just save the shifted criteriaID for in-game to shift back for info
+            //                data["headerID"] = achCrit.Item1 + (decimal)achCrit.Item2 / 100;
+            //            }
+            //            break;
+            //    }
+            //}
 
             // Merge all relevant Item Data into the global dictionaries after being validated
             Items.Merge(data);
@@ -979,12 +979,13 @@ namespace ATT
                     }
                     names[id] = name;
 
-                    // certain object types should move their 'name' into the locale files
-                    if (objectData.ObjectType == "questID" ||
-                        objectData.ObjectType == "itemID")
+                    switch (objectData.ObjectType)
                     {
-                        // TODO: new thing
-                        //LogDebug($"[{id}] = \"{name}\", -- move to en.lua ({objectData.ObjectType})");
+                        // only certain types we will auto-localize, so remove the raw 'name' field
+                        case "questID":
+                        case "itemID":
+                            data.Remove("name");
+                            break;
                     }
                 }
             }
@@ -3816,6 +3817,8 @@ namespace ATT
                 ATT.Export.IncludeRawNewlines = false;
                 Objects.Export(outputFolder.FullName);
                 ATT.Export.IncludeRawNewlines = true;
+
+                Objects.ExportAutoLocale(outputFolder.FullName);
             }
         }
     }

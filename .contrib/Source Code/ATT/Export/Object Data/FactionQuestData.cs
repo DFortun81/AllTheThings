@@ -25,7 +25,7 @@ namespace ATT
             /// <param name="builder">The builder.</param>
             /// <param name="data">The data.</param>
             /// <param name="fields">The fields.</param>
-            public override void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+            public override void Build(StringBuilder builder, IDictionary<string, object> data, IList<string> fields)
             {
                 WriteShortcut(builder, "aqd", "_.CreateQuestWithFactionData");
             }

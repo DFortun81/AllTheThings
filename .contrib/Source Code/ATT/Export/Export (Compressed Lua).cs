@@ -17,13 +17,13 @@ namespace ATT
         {
             // Firstly, we need to know the type of object we're working with.
             if (data is bool b) builder.Append(b ? "1" : "false");  // NOTE: 0 in lua is evaluated as true, not false. So we can't shorten it. (rip)
-            else if (data is List<object> list) ExportCompressedLua(builder, list);
-            else if (data is Dictionary<string, object> dict) ExportCompressedLua(builder, dict);
             else if (data is string str) builder.Append('"').Append(str.Replace("\"", "\\\"")).Append('"');
-            else if (data is Dictionary<long, object> longdict) ExportCompressedLua(builder, longdict);
-            else if (data is Dictionary<long, long> longLongDict) ExportCompressedLua(builder, longLongDict);
-            else if (data is Dictionary<string, List<object>> listdict) ExportCompressedLua(builder, listdict);
-            else if (data is List<List<object>> listObjects) ExportCompressedLua(builder, listObjects);
+            else if (data is IDictionary<string, List<object>> listdict) ExportCompressedLua(builder, listdict);
+            else if (data is IDictionary<long, long> longLongDict) ExportCompressedLua(builder, longLongDict);
+            else if (data is IDictionary<long, object> longdict) ExportCompressedLua(builder, longdict);
+            else if (data is IDictionary<string, object> dict) ExportCompressedLua(builder, dict);
+            else if (data is IList<List<object>> listObjects) ExportCompressedLua(builder, listObjects);
+            else if (data is IList<object> list) ExportCompressedLua(builder, list);
             else
             {
                 // Default: Write it as a String. Best of luck.
@@ -39,7 +39,7 @@ namespace ATT
         /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
         /// <param name="builder">The builder.</param>
         /// <param name="data">The data dictionary.</param>
-        private static void ExportCompressedLua<KEY, VALUE>(StringBuilder builder, Dictionary<KEY, VALUE> data)
+        private static void ExportCompressedLua<KEY, VALUE>(StringBuilder builder, IDictionary<KEY, VALUE> data)
         {
             // If the dictionary doesn't have any content, then return immediately.
             if (data.Any())
@@ -78,7 +78,7 @@ namespace ATT
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="data">The data dictionary.</param>
-        private static void ExportCompressedLua(StringBuilder builder, Dictionary<string, object> data)
+        private static void ExportCompressedLua(StringBuilder builder, IDictionary<string, object> data)
         {
             // If the dictionary doesn't have any content, then return immediately.
             if (!data.Any())
@@ -200,7 +200,7 @@ namespace ATT
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="list">The list of data.</param>
-        private static void ExportCompressedLua<VALUE>(StringBuilder builder, List<VALUE> list)
+        private static void ExportCompressedLua<VALUE>(StringBuilder builder, IList<VALUE> list)
         {
             // If the list doesn't have any content, then return immediately.
             if (list.Any())
@@ -288,7 +288,7 @@ namespace ATT
         /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
         /// <param name="data">The data dictionary.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportCompressedLua<KEY, VALUE>(Dictionary<KEY, VALUE> data)
+        public static StringBuilder ExportCompressedLua<KEY, VALUE>(IDictionary<KEY, VALUE> data)
         {
             var builder = new StringBuilder();
             ExportCompressedLua(builder, data);
@@ -303,7 +303,7 @@ namespace ATT
         /// </summary>
         /// <param name="list">The list of data.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportCompressedLua<T>(List<T> list)
+        public static StringBuilder ExportCompressedLua<T>(IList<T> list)
         {
             var builder = new StringBuilder();
             ExportCompressedLua(builder, list);

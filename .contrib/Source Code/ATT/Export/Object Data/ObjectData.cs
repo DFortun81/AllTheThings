@@ -85,7 +85,7 @@ namespace ATT
             /// <param name="data">The data.</param>
             /// <param name="objectData">The object data container.</param>
             /// <returns>Whether or not the most signficant object type was found.</returns>
-            public static bool TryGetMostSignificantObjectType(Dictionary<string, object> data, out ObjectData objectData, out object objKeyValue)
+            public static bool TryGetMostSignificantObjectType(IDictionary<string, object> data, out ObjectData objectData, out object objKeyValue)
             {
                 ObjectData defaultValue = null;
                 objKeyValue = null;
@@ -142,7 +142,7 @@ namespace ATT
             /// <param name="builder">The builder.</param>
             /// <param name="data">The data.</param>
             /// <param name="fields">The fields.</param>
-            public virtual void Build(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+            public virtual void Build(StringBuilder builder, IDictionary<string, object> data, IList<string> fields)
             {
                 WriteShortcut(builder, ConstructorShortcut, Function);
                 Constructor(builder, data, fields);
@@ -154,7 +154,7 @@ namespace ATT
             /// <param name="builder">The builder.</param>
             /// <param name="data">The data.</param>
             /// <param name="fields">The fields.</param>
-            public virtual void Clean(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+            public virtual void Clean(StringBuilder builder, IDictionary<string, object> data, IList<string> fields)
             {
                 // Remove globally blacklisted fields.
                 bool ignoreBonus = fields.Remove("ignoreBonus");
@@ -212,7 +212,7 @@ namespace ATT
             /// <param name="builder">The builder.</param>
             /// <param name="data">The data.</param>
             /// <param name="fields">The fields.</param>
-            public virtual void Constructor(StringBuilder builder, Dictionary<string, object> data, List<string> fields)
+            public virtual void Constructor(StringBuilder builder, IDictionary<string, object> data, IList<string> fields)
             {
                 // Write the default data field to the builder.
                 ExportField(builder, data, fields, ObjectType);
@@ -225,7 +225,7 @@ namespace ATT
             /// <param name="data">The data.</param>
             /// <param name="fields">The fields.</param>
             /// <param name="field">The field.</param>
-            public void ExportField(StringBuilder builder, Dictionary<string, object> data, List<string> fields, string field)
+            public void ExportField(StringBuilder builder, IDictionary<string, object> data, IList<string> fields, string field)
             {
                 ExportCompressedLua(builder, data[field]);
                 fields.Remove(field);
