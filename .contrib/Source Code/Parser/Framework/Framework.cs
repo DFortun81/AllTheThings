@@ -979,6 +979,7 @@ namespace ATT
                     }
                     names[id] = name;
 
+#if RETAIL
                     switch (objectData.ObjectType)
                     {
                         // only certain types we will auto-localize, so remove the raw 'name' field
@@ -987,6 +988,7 @@ namespace ATT
                             data.Remove("name");
                             break;
                     }
+#endif
                 }
             }
 
@@ -3818,7 +3820,9 @@ namespace ATT
                 Objects.Export(outputFolder.FullName);
                 ATT.Export.IncludeRawNewlines = true;
 
+#if RETAIL
                 Objects.ExportAutoLocale(outputFolder.FullName);
+#endif
             }
         }
     }
