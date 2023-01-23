@@ -2110,19 +2110,6 @@ app.L = {
 		[-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
 	};
 
-	-- Fall-back 'name' values for Quests based on QuestID
-	["QUEST_NAMES"] = {
-		[61296] = "Anima Crystal Shard",
-		[61297] = "Anima Crystal Shard",
-		[61298] = "Anima Crystal Shard",
-		[61299] = "Anima Crystal Shard",
-		[61300] = "Anima Crystal Shard",
-	};
-
-	-- Fall-back 'name' values for Items based on ItemID
-	["ITEM_NAMES"] = {
-	};
-
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
 	-- If your saves aren't lining up, it's probably because Blizzard
 	-- didn't use the same localization for the instance. Sorry.
