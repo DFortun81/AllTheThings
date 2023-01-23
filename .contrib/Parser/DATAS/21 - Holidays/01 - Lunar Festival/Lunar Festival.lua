@@ -547,7 +547,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				-- #if AFTER CATA
 				["coord"] = { 54.2, 49.4, BLASTED_LANDS },
 				-- #else
-				["coord"] = { 58.8, 51.7, BLASTED_LANDS },
+				["coord"] = { 57.9, 54.9, BLASTED_LANDS },
 				-- #endif
 				["isYearly"] = true,
 			}),
