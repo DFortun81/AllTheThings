@@ -7859,8 +7859,14 @@ app.CollectibleAsQuest = function(t)
 	return
 	-- must have a questID associated
 	questID
-	-- must not be repeatable, unless considering repeatable quests as collectible
-	and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+	-- must not be repeatable
+	and (not t.repeatable or
+		-- unless considering repeatable quests as collectible
+		(app.Settings:GetTooltipSetting("Repeatable")
+			-- and the quest is actually able to remain in a 'completed' state
+			and (not rawget(t, "repeatable")
+				-- or is only being collected on first completion
+				or app.Settings:GetTooltipSetting("RepeatableFirstTime"))))
 	and
 	(
 		(	-- Regular Quests
