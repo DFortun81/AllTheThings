@@ -1146,7 +1146,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
+				["groups"] = {
+					objective(1, {	-- 0/20 Springy Horns
+						["provider"] = { "i", 201816 },	-- Springy Horn
+						["crs"] = {
+							191624,	-- Tranquil Vorquin
+						},
+						["coord"] = { 62.0, 43.8, WAKING_SHORES },
+					}),
+				},
 			}),
 			q(70540, {	-- An Engineer's Best Friend
 				["description"] = "Requires 45 Skill.",
@@ -1905,30 +1913,35 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
-				q(70523, {	-- Weekly Leatherworking Knowledgepoint #3
+				q(70522, {	-- Weekly Leatherworking Knowledgepoint #3
 					["name"] = "Leatherworking Drop #1: Proto Drake",
-					["description"] = "Drops from any Proto Drake.\nCoordinates link to the mobs closest to Valdrakken.",
+					["description"] = "Drops from any Proto Drake.\nCoordinates link to the mobs we found best.",
 					["crs"] = { 
-						196420,	-- Cavern Hunter
+						196420,	-- Cavern Hunter (Thaldraszus)
+						190056,	-- Primal Proto-Drake
 					},
 					["coords"] = { 
-						{ 58.2, 36.6, THALDRASZUS },
-						{ 59.0, 33.4, THALDRASZUS },
+						{ 80.6, 33.8, WAKING_SHORE },
+						{ 79.4, 32.5, WAKING_SHORE },
 					},
 					["provider"] = { "i", 198975 },		-- Ossified Hide
 					["timeline"] = { ADDED_DF_REL },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
-				q(70522, {	-- Weekly Leatherworking Knowledgepoint #4
+				q(70523, {	-- Weekly Leatherworking Knowledgepoint #4
 					["name"] = "Leatherworking Drop #2: Sylvern&Vorquin",
 					["description"] = "Drops from any Sylvern or Vorquin.\nCoordinates link to the mobs closest to Valdrakken.",
 					["crs"] = { 
 						188277,	-- Garden Herdmare
+						191317,	-- Creekside Grazer
+						191203,	-- Pleasant Hart
 					},
 					["coords"] = { 
 						{ 36.6, 72.8, THALDRASZUS },
 						{ 35.4, 72.8, THALDRASZUS },
+						{ 32.4, 73.5, THALDRASZUS },
+						{ 31.3, 76.5, THALDRASZUS },
 					},
 					["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
 					["timeline"] = { ADDED_DF_REL },
