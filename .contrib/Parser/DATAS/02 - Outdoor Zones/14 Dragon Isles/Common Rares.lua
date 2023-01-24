@@ -99,11 +99,40 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		-- This will automatically cause these Items to list themselves under any matching Creature of their ["crs"] list when that Creature is loaded in a ATT list
 		-- Technically, further Header organization under the 'Drops' Header should still work properly for automatic filling of the raw Items
 		n(DROPS, {	-- Items which can drop from multiple, specifically-tagged Creatures
-			i(196973, {	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
-				["crs"] = {
-					193128,	-- Blightpaw the Depraved
-					197356,	-- High Shaman Rotknuckle
-				},
+			n(DRAKEWATCHER_MANUSCRIPTS, {
+				i(196973, {	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
+					["crs"] = {
+						193178,	-- Blightfur
+						193128,	-- Blightpaw the Depraved
+						197356,	-- High Shaman Rotknuckle
+					},
+				}),
+				i(197016, {	-- Cliffside Wylderdrake: Maned Tail
+					["crs"] = {
+						189652,	-- Deadwaker Ghendish
+						192020,	-- Eaglemaster Niraak
+						193227,	-- Ronsak the Decimator
+						192045,	-- Windseeker Avash
+					},
+				}),
+				i(197130, {	-- Highland Drake: Stag Horns
+					["crs"] = {
+						193126,	-- Innumerable Ruination
+						193241,	-- Lord Epochbrgl
+						193210,	-- Phleep
+						193176,	-- Sandana the Tempest
+					},
+				}),
+			}),
+			n(ARMOR, {
+				i(200441, {	-- Jhakan's Horned Cowl
+					["crs"] = {
+						189652,	-- Deadwaker Ghendish
+						192020,	-- Eaglemaster Niraak
+						193227,	-- Ronsak the Decimator
+						192045,	-- Windseeker Avash
+					}
+				}),
 			}),
 		}),
 	}),

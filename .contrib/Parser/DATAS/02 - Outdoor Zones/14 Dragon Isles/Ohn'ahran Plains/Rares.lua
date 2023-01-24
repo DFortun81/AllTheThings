@@ -36,7 +36,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["isDaily"] = true,
 				["g"] = {
 					i(189055),	-- Ghendish's Backup Talisman
-					i(200441),	-- Jhakan's Horned Cowl
 				},
 			}),
 			n(192020, {	-- Eaglemaster Niraak

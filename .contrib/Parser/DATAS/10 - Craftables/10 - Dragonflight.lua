@@ -2293,13 +2293,16 @@ root("HiddenQuestTriggers", {
 			q(71987),	-- First Titan-Touched Saxifrage
 			q(71988),	-- First Decayed Hochenblume
 			q(71989),	-- First Decayed Writhebark
-			-- q(71990),	-- First Decayed Bubble Poppy
+			q(71990),	-- First Decayed Bubble Poppy
 			q(71991),	-- First Decayed Saxifrage
 			q(71992),	-- First Infurious Hochenblume
 			q(71993),	-- First Infurious Writhebark
 			q(71994),	-- First Infurious Bubble Poppy
 			q(72341),	-- First Infurious Saxifrage
+			q(72342),	-- First Overload Windswept Herb
+			q(72343),	-- First Overload Frigid Herb
 			q(72344),	-- First Overload Titan-Touched Herb
+			q(72345),	-- First Overload Decayed Herb
 			q(72348),	-- First Overload Infurious Herb
 			--
 			q(74121),	-- Herbing Enraged Sprout

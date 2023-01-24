@@ -70,7 +70,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73881,
 				["g"] = {
 					i(200760),	-- Unstable Arcane Cell
-					i(197130),	-- Highland Drake: Stag Horns
 				},
 			}),
 			n(193273, {	-- Liskron the Dazzling
@@ -143,7 +142,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(191305, {	-- The Great Shellkhan
 				["description"] = "Needs a Case of Fresh Gleamfish fish from Azure Span.",
-				["coords"] = { 
+				["coords"] = {
 					{ 38.5, 68.2, THALDRASZUS },	-- Rare
 					{ 45.63, 54.82, THE_AZURE_SPAN },	-- Fish
 				},

@@ -27,7 +27,7 @@ local function iterator()
       if sourceInfo then
 	 lasthit = i
 	 if not att.SearchForSourceID(i) then
-	    if sourceInfo.quality and (sourceInfo.quality > 1 and sourceInfo.quality ~= 6) then -- Apparently things below the transmog quality threshold has source ids. As do artifacts, we want to skip those for now.
+	    if sourceInfo.quality and sourceInfo.quality ~= 6 then -- Apparently things below the transmog quality threshold has source ids. As do artifacts, we want to skip those for now.
 	       ATTMissingSources[i] = sourceInfo
 	       missing = missing + 1
 	    end

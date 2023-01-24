@@ -575,7 +575,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 				["isRepeatable"] = true,
 				["g"] = {
-					i(199473),	-- Overflowing Iskaaran Supply Pack
+					i(199473, {	-- Overflowing Iskaaran Supply Pack
+						i(191850),	-- Broken Serevite Blade Tip
+					}),
 				},
 			}),
 		}),

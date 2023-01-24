@@ -624,7 +624,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197006),	-- Cliffside Wylderdrake: Plated Nose
 			i(197014),	-- Cliffside Wylderdrake: White Scales
 			i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
-			i(197016),	-- Cliffside Wylderdrake: Maned Tail
 			i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail
 			i(197022),	-- Cliffside Wylderdrake: Finned Neck
 			i(197095),	-- Highland Drake: Gold and White Armor
@@ -714,8 +713,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198868),	-- Small Valdrakken Accord Supply Pack
 			i(198869),	-- Large Valdrakken Accord Supply Pack
 			i(199472),	-- Overflowing Dragon Expedition Supply Pack
-			i(199473),	-- Overflowing Iskaaran Supply Pack
-			i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 			i(200609),	-- Dragon Racing Purse - First Place
 			i(200610),	-- Dragon Racing Purse - Second Place
 			i(200611),	-- Dragon Racing Purse - Third Place

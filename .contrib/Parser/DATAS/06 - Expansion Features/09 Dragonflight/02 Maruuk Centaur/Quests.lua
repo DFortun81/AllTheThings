@@ -456,7 +456,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["isRepeatable"] = true,
 				["g"] = {
-					i(199474),	-- Overflowing Maruuk Centaur Supply Satchel
+					i(199474, {	-- Overflowing Maruuk Centaur Supply Satchel
+						i(191850),	-- Broken Serevite Blade Tip
+					}),
 				},
 			}),
 		}),
