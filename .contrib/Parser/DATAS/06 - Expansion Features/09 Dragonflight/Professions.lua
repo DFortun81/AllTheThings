@@ -1151,6 +1151,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["provider"] = { "i", 201816 },	-- Springy Horn
 						["crs"] = {
 							191624,	-- Tranquil Vorquin
+							191625,	-- Vorguin Foal
 						},
 						["coord"] = { 62.0, 43.8, WAKING_SHORES },
 					}),
