@@ -2145,7 +2145,7 @@ local function GetSourceID(itemLink)
 		local sourceID = select(2, C_TransmogCollection_GetItemInfo(itemLink));
 		if sourceID then return sourceID, true; end
 
-		-- if app.DEBUG_PRINT then print("Failed to directly retrieve SourceID",itemLink) end
+		-- app.PrintDebug("Failed to directly retrieve SourceID",itemLink)
 		local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
 		if slotName then
 			local slots = inventorySlotsMap[slotName];
@@ -2161,7 +2161,7 @@ local function GetSourceID(itemLink)
 					if sourceID and sourceID ~= 0 then
 						-- Added 5/4/2018 - Account for DressUpModel lag... sigh
 						local sourceItemLink = select(6, C_TransmogCollection_GetAppearanceSourceInfo(sourceID));
-						-- print("SourceID from DressUpModel",sourceID,sourceItemLink)
+						-- app.PrintDebug("SourceID from DressUpModel",sourceID,sourceItemLink)
 						if sourceItemLink and tonumber(sourceItemLink:match("item:(%d+)")) == itemID then
 							return sourceID, true;
 						end
@@ -17495,7 +17495,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 		scrollbar:SetValue(1);
 		container:Show();
 		window:Update();
-		app.ResetCustomWindowParam(suffix);
 	end
 	return window;
 end
@@ -18815,18 +18814,21 @@ function app:CustomWindowUpdate(suffix)
 end
 -- Retrieves the value of the specific attribute for the given window suffix
 app.GetCustomWindowParam = function(suffix, name)
-	local params = customWindowUpdates.params;
-	if params[suffix] then return params[suffix][name] end
+	local params = customWindowUpdates.params[suffix];
+	-- app.PrintDebug("GetCustomWindowParam",suffix,name,params and params[name])
+	return params and params[name];
 end
 -- Defines the value of the specific attribute for the given window suffix
 app.SetCustomWindowParam = function(suffix, name, value)
 	local params = customWindowUpdates.params;
 	if params[suffix] then params[suffix][name] = value;
 	else params[suffix] = { [name] = value } end
+	-- app.PrintDebug("SetCustomWindowParam",suffix,name,params[suffix][name])
 end
 -- Removes the custom attributes for a given window suffix
 app.ResetCustomWindowParam = function(suffix)
 	customWindowUpdates.params[suffix] = nil;
+	-- app.PrintDebug("ResetCustomWindowParam",suffix)
 end
 customWindowUpdates["AchievementHarvester"] = function(self, ...)
 	-- /run AllTheThings:GetWindow("AchievementHarvester"):Toggle();
@@ -24214,6 +24216,7 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		cmd = args[1];
 		-- app.print(args)
 		-- first arg is always the window/command to execute
+		app.ResetCustomWindowParam(cmd);
 		for k=2,#args do
 			local customArg, customValue = args[k];
 			customArg, customValue = strsplit("=",customArg);
@@ -24789,17 +24792,17 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 end
 -- Seems to be some sort of hidden tracking for HQTs and other sorts of things...
 app.events.CRITERIA_UPDATE = function(...)
-	-- print("CRITERIA_UPDATE",...)
+	-- app.PrintDebug("CRITERIA_UPDATE",...)
 	-- sometimes triggers many times at once but RefreshQuestInfo unhooks CRITERIA_UPDATE until quest refresh completes
 	app.RefreshQuestInfo();
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	-- print("QUEST_TURNED_IN")
+	-- app.PrintDebug("QUEST_TURNED_IN")
 	app.LastQuestTurnedIn = questID;
 	app.RefreshQuestInfo(questID);
 end
 app.events.QUEST_LOG_UPDATE = function()
-	-- print("QUEST_LOG_UPDATE")
+	-- app.PrintDebug("QUEST_LOG_UPDATE")
 	app.RefreshQuestInfo();
 end
 -- app.events.QUEST_FINISHED = function()
@@ -24812,7 +24815,7 @@ app.events.QUEST_REMOVED = function(questID)
 	app:RefreshWindows();
 end
 app.events.QUEST_ACCEPTED = function(questID)
-	-- print("QUEST_ACCEPTED",questID)
+	-- app.PrintDebug("QUEST_ACCEPTED",questID)
 	if questID then
 		local logIndex = C_QuestLog.GetLogIndexForQuestID(questID);
 		local freq, title;
