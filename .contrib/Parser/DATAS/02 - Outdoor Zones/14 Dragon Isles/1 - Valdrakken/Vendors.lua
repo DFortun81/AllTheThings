@@ -239,7 +239,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201279, {	-- Ancient Blacksmith's Diagrams
-						-- ["questID"] = TODO,
+						["questID"] = 71916,
 						["requireSkill"] = BLACKSMITHING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
@@ -274,14 +274,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201286, {	-- Ancient Leatherworker's Diagrams
-						-- ["questID"] = TODO,
+						["questID"] = 71922,
 						["requireSkill"] = LEATHERWORKING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
 						},
 					}),
 					i(201288, {	-- Ancient Miner's Notes
-						-- ["questID"] = TODO,
+						["questID"] = 71923,
 						["requireSkill"] = MINING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },

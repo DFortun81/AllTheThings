@@ -2395,7 +2395,7 @@ root("HiddenQuestTriggers", {
 			q(71586),	-- Chef's Smooth Rolling Pin
 			-- q(),	-- Chef's Splendid Rolling Pin
 			q(71588),	-- Scribe's Fastened Quill
-			-- q(),	-- Scribe's Resplendent Quill
+			q(71589),	-- Scribe's Resplendent Quill
 			-- Scrolls
 			-- q(),	-- Illusion Parchment: Aqua Torrent
 			-- q(),	-- Illusion Parchment: Arcane Burst
@@ -2415,7 +2415,7 @@ root("HiddenQuestTriggers", {
 			-- q(),	-- Extraction: Awakened Frost
 			-- Contracts
 			q(71579),	-- Contract: Artisan's Consortium
-			-- q(),	-- Contract: Dragonscale Expedition
+			q(71580),	-- Contract: Dragonscale Expedition
 			-- q(),	-- Contract: Iskaara Tuskarr
 			-- q(),	-- Contract: Maruuk Centaur
 			-- q(),	-- Contract: Valdrakken Accord
@@ -2435,10 +2435,10 @@ root("HiddenQuestTriggers", {
 			-- q(),	-- Renewed Proto-Drake: Bovine Horns
 			-- q(),	-- Renewed Proto-Drake: Predator Pattern
 			-- q(),	-- Renewed Proto-Drake: Silver and Blue Armor
-			-- q(),	-- Renewed Proto-Drake: Spined Crest
+			q(71540),	-- Renewed Proto-Drake: Spined Crest
 			-- q(),	-- Renewed Proto-Drake: Steel and Yellow Armor
 			-- Dragonriding - Windborne Velocidrake
-			-- q(),	-- Windborne Velocidrake: Black Fur
+			q(71542),	-- Windborne Velocidrake: Black Fur
 			-- q(),	-- Windborne Velocidrake: Silver and Blue Armor
 			-- q(),	-- Windborne Velocidrake: Spined Head
 			-- q(),	-- Windborne Velocidrake: Steel and Orange Armor
@@ -2451,7 +2451,7 @@ root("HiddenQuestTriggers", {
 			-- q(),	-- Highland Drake: Steel and Yellow Armor
 			-- Dragonriding - Cliffside Wylderdrake
 			-- q(),	-- Cliffside Wylderdrake: Conical Head
-			-- q(),	-- Cliffside Wylderdrake: Red Hair
+			q(71532),	-- Cliffside Wylderdrake: Red Hair
 			-- q(),	-- Cliffside Wylderdrake: Silver and Blue Armor
 			-- q(),	-- Cliffside Wylderdrake: Steel and Yellow Armor
 			-- q(),	-- Cliffside Wylderdrake: Triple Head Horns
@@ -2514,10 +2514,10 @@ root("HiddenQuestTriggers", {
 			-- q(),	-- Elemental Lariat
 			q(71602),	-- Pendant of Impending Perils
 			-- q(),	-- Ring-Bound Hourglass
-			-- q(),	-- Signet of Titanic Insight
-			-- q(),	-- Torc of Passed Time
+			q(71605),	-- Signet of Titanic Insight
+			q(72349),	-- Torc of Passed Time
 			-- Statues & Carvings
-			-- q(),	-- Djaradin's "Pinata"
+			q(71614),	-- Djaradin's "Pinata"
 			-- q(),	-- Kalu'ak Figurine
 			-- q(),	-- Narcissist's Sculpture
 			q(71612),	-- Revitalizing Red Carving
@@ -2637,11 +2637,11 @@ root("HiddenQuestTriggers", {
 			-- Decayed Patter
 			-- q(),	-- Acidic Hailstone Treads
 			-- q(),	-- Silmy Expulsion Boots
-			-- q(),	-- Toxic Thorn Footwraps
+			q(71687),	-- Toxic Thorn Footwraps
 			-- q(),	-- Venom-Steeped Stompers
 			-- q(),	-- Witherrot Tome
 			-- Reagents
-			-- q(),	-- Finished Prototype Explorer's Barding
+			q(71748),	-- Finished Prototype Explorer's Barding
 			-- q(),	-- Finished Prototype Regal Barding
 			q(71764),	-- Earthshine Scales
 			q(71765),	-- Frostbite Scales
@@ -2815,7 +2815,7 @@ root("HiddenQuestTriggers", {
 			q(71846),	-- Simply Stitched Reagent Bag
 			q(71814),	-- Wildercloth Bag
 				-- Assorted Embroidery --
-			--q(),	-- Explorer's Banner of Geology
+			q(71818),	-- Explorer's Banner of Geology
 			q(71817),	-- Explorer's Banner of Herbology
 			q(71853),	-- Cold Cushion
 			q(71852),	-- Cushion of Time Travel
