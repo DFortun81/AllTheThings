@@ -20,126 +20,150 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 						-- RENOWN 5 --
 					i(198719, {	-- Plans: Sturdy Expedition Shovel (RECIPE!)
+						["minReputation"] = { 2507, 5 },	-- Dragonscale Expedition Renown 5
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 15 },
 						},
 					}),
 						-- RENOWN 9 --
 					i(199812, {	-- Formula: Enchant Boots - Rider's Assurance (RECIPE!)
+						["minReputation"] = { 2507, 9 },	-- Dragonscale Expedition Renown 9
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(199811, {	-- Formula: Enchant Cloak - Graceful Avoidance (RECIPE!)
+						["minReputation"] = { 2507, 9 },	-- Dragonscale Expedition Renown 9
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(194606, {	-- Design: Energized Malygite (RECIPE!)
+						["minReputation"] = { 2507, 9 },	-- Dragonscale Expedition Renown 9
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(194614, {	-- Design: Keen Neltharite (RECIPE!)
+						["minReputation"] = { 2507, 9 },	-- Dragonscale Expedition Renown 9
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(194605, {	-- Design: Radiant Malygite (RECIPE!)
+						["minReputation"] = { 2507, 9 },	-- Dragonscale Expedition Renown 9
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(194613, {	-- Design: Sensei's Neltharite (RECIPE!)
+						["minReputation"] = { 2507, 9 },	-- Dragonscale Expedition Renown 9
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(198781, {	-- Schematic: Gravitational Displacer (RECIPE!)
+						["minReputation"] = { 2507, 9 },	-- Dragonscale Expedition Renown 9
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(198784, {	-- Schematic: Primal Deconstruction Charge (RECIPE!)
+						["minReputation"] = { 2507, 9 },	-- Dragonscale Expedition Renown 9
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 						-- RENOWN 13 --
 					i(194635, {	-- Design: Idol of the Earth Warder (RECIPE!)
+						["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(194632, {	-- Design: Idol of the Lifebinder (RECIPE!)
+						["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(198101, {	-- Recipe: Salad on the Side (RECIPE!)
+						["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 						-- RENOWN 15 --
 					i(194661, {	-- Design: Magnificent Margin Magnifier (RECIPE!)
+						["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(194294, {	-- Pattern: Explorer's Banner of Herbology (RECIPE!)
+						["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},
 					}),
 					i(194295, {	-- Pattern: Explorer's Banner of Geology (RECIPE!)
+						["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},
 					}),
 					i(194289, {	-- Pattern: Master's Wildercloth Chef's Hat (RECIPE!)
+						["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(194291, {	-- Pattern: Master's Wildercloth Fishing Cap (RECIPE!)
+						["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(198782, {	-- Schematic: Bottomless Mireslush Ore Satchel (RECIPE!)
+						["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(198783, {	-- Schematic: Spring-Loaded Khaz'gorite Fabric Cutters (RECIPE!)
+						["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(198901, {	-- Technique: Renewed Proto-Drake Manuscript: Spined Crest (RECIPE!)
+						["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 25 },
 						},
 					}),
 						-- RENOWN 17 --
 					i(194281, {	-- Pattern: Cold Cushion (RECIPE!)
+						["minReputation"] = { 2507, 17 },	-- Dragonscale Expedition Renown 17
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},
 					}),
 					i(194268, {	-- Pattern: Dragonscale Expedition's Expedition Tent (RECIPE!)
+						["minReputation"] = { 2507, 17 },	-- Dragonscale Expedition Renown 17
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},
 					}),
 						-- RENOWN 19 --
 					i(194285, {	-- Pattern: Azureweave Expedition Pack (RECIPE!)
+						["minReputation"] = { 2507, 19 },	-- Dragonscale Expedition Renown 19
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},
 					}),
 					i(198788, {	-- Technique: Contract: Dragonscale Expedition (RECIPE!)
+						["minReputation"] = { 2507, 19 },	-- Dragonscale Expedition Renown 19
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 200 },
 						},
@@ -153,16 +177,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 					i(194283, {	-- Pattern: Duck Stuffed Duck Lovie (RECIPE!)
+						["minReputation"] = { 2507, 21 },	-- Dragonscale Expedition Renown 21
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},
 					}),
 					i(198785, {	-- Schematic: Quack-E (RECIPE!)
+						["minReputation"] = { 2507, 21 },	-- Dragonscale Expedition Renown 21
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},
 					}),
 					i(198909, {	-- Technique: Illusion Parchment: Magma Missile (RECIPE!)
+						["minReputation"] = { 2507, 21 },	-- Dragonscale Expedition Renown 21
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},

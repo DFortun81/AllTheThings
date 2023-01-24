@@ -452,36 +452,43 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 						-- RENOWN 10 --
 					i(194611, {	-- Design: Energized Ysemerald (RECIPE!)
+						["minReputation"] = { 2511, 10 },	-- Iskaara Tuskarr Renown 10
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(194726, {	-- Design: Kalu'ak Figurine (RECIPE!)
+						["minReputation"] = { 2511, 10 },	-- Iskaara Tuskarr Renown 10
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(194610, {	-- Design: Keen Ysemerald (RECIPE!)
+						["minReputation"] = { 2511, 10 },	-- Iskaara Tuskarr Renown 10
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(194603, {	-- Design: Radiant Alexstraszite (RECIPE!)
+						["minReputation"] = { 2511, 10 },	-- Iskaara Tuskarr Renown 10
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(194602, {	-- Design: Sensei's Alexstraszite (RECIPE!)
+						["minReputation"] = { 2511, 10 },	-- Iskaara Tuskarr Renown 10
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(199816, {	-- Formula: Enchant Chest - Accelerated Agility (RECIPE!)
+						["minReputation"] = { 2511, 10 },	-- Iskaara Tuskarr Renown 10
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(199815, {	-- Formula: Enchant Cloak - Regenerative Leech (RECIPE!)
+						["minReputation"] = { 2511, 10 },	-- Iskaara Tuskarr Renown 10
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
@@ -494,75 +501,89 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 						-- RENOWN 15 --
 					i(194634, {	-- Design: Idol of the Dreamer (RECIPE!)
+						["minReputation"] = { 2511, 15 },	-- Iskaara Tuskarr Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(194633, {	-- Design: Idol of the Spell-Weaver (RECIPE!)
+						["minReputation"] = { 2511, 15 },	-- Iskaara Tuskarr Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(193875, {	-- Pattern: Allied Heartwarming Fur Coat (RECIPE!)
+						["minReputation"] = { 2511, 15 },	-- Iskaara Tuskarr Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(193876, {	-- Pattern: Snowball Makers (RECIPE!)
+						["minReputation"] = { 2511, 15 },	-- Iskaara Tuskarr Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(198102, {	-- Recipe: Impossibly Sharp Cutting Knife (RECIPE!)
+						["minReputation"] = { 2511, 15 },	-- Iskaara Tuskarr Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 						-- RENOWN 18 --
 					i(194660, {	-- Design: Fine-Print Trifocals (RECIPE!)
+						["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(194663, {	-- Design: Resonant Focus (RECIPE!)
+						["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(198465, {	-- Pattern: Expert Skinner's Cap (RECIPE!)
+						["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(198459, {	-- Pattern: Lavish Floral Pack (RECIPE!)
+						["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(198458, {	-- Pattern: Resplendent Cover (RECIPE!)
+						["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(198461, {	-- Pattern: Shockproof Gloves (RECIPE!)
+						["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 						-- RENOWN 23 --
 					i(194311, {	-- Pattern: Tuskarr Bean Bag (RECIPE!)
+						["minReputation"] = { 2511, 23 },	-- Iskaara Tuskarr Renown 23
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},
 					}),
 						-- RENOWN 25 --
 					i(198940, {	-- Technique: Contract: Iskaara Tuskarr (RECIPE!)
+						["minReputation"] = { 2511, 25 },	-- Iskaara Tuskarr Renown 25
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 200 },
 						},
 					}),
 						-- RENOWN 29 --
 					i(197981, {	-- Pattern: Finished Prototype Regal Barding (RECIPE!)
+						["minReputation"] = { 2511, 29 },	-- Iskaara Tuskarr Renown 29
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},

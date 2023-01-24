@@ -249,11 +249,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 						-- RENOWN 8 --
 					i(199814, {	-- Formula: Enchant Boots - Plainsrunner's Breeze (RECIPE!)
+						["minReputation"] = { 2503, 8 },	-- Maruuk Centaur Renown 8
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(199813, {	-- Formula: Enchant Chest - Sustained Strength (RECIPE!)
+						["minReputation"] = { 2503, 8 },	-- Maruuk Centaur Renown 8
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
@@ -288,37 +290,44 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 						-- RENOWN 13 --
 					i(193870, {	-- Pattern: Allied Legguards of Sansok Khan (RECIPE!)
+						["minReputation"] = { 2503, 13 },	-- Maruuk Centaur Renown 13
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(193878, {	-- Pattern: Ancestor's Dew Drippers (RECIPE!)
+						["minReputation"] = { 2503, 13 },	-- Maruuk Centaur Renown 13
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(194480, {	-- Plans: Obsidian Halberd (RECIPE!)
+						["minReputation"] = { 2503, 13 },	-- Maruuk Centaur Renown 13
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(194478, {	-- Plans: Obsidian Seared Facesmasher (RECIPE!)
+						["minReputation"] = { 2503, 13 },	-- Maruuk Centaur Renown 13
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(194477, {	-- Plans: Obsidian Seared Runeaxe (RECIPE!)
+						["minReputation"] = { 2503, 13 },	-- Maruuk Centaur Renown 13
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(191547, {	-- Recipe: Alacritous Alchemist Stone (RECIPE!)
+						["minReputation"] = { 2503, 13 },	-- Maruuk Centaur Renown 13
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
-						-- RENOWN  15 ---
+						-- RENOWN 15 ---
 					i(198902, {	-- Technique: Windborne Velocidrake: Black Fur (RECIPE!)
+						["minReputation"] = { 2503, 15 },	-- Maruuk Centaur Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 25 },
 						},
@@ -335,23 +344,29 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 						-- RENOWN 18 --
 					i(198463, {	-- Pattern: Expert Alchemist's Hat (RECIPE!)
+						["minReputation"] = { 2503, 18 },	-- Maruuk Centaur Renown 18
 						["cost"] = 2000000,	-- 200g
 					}),
 					i(198462, {	-- Pattern: Flameproof Apron (RECIPE!)
+						["minReputation"] = { 2503, 18 },	-- Maruuk Centaur Renown 18
 						["cost"] = 2000000,	-- 200g
 					}),
 					i(198457, {	-- Pattern: Masterwork Smock (RECIPE!)
+						["minReputation"] = { 2503, 18 },	-- Maruuk Centaur Renown 18
 						["cost"] = 2000000,	-- 200g
 					}),
 					i(198464, {	-- Pattern: Reinforced Pack (RECIPE!)
+						["minReputation"] = { 2503, 18 },	-- Maruuk Centaur Renown 18
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(194499, {	-- Plans: Khaz'gorite Leatherworker's Knife (RECIPE!)
+						["minReputation"] = { 2503, 18 },	-- Maruuk Centaur Renown 18
 						["cost"] = 2000000,	-- 200g
 					}),
 					i(194497, {	-- Plans: Khaz'gorite Skinning Knife (RECIPE!)
+						["minReputation"] = { 2503, 18 },	-- Maruuk Centaur Renown 18
 						["cost"] = 2000000,	-- 200g
 					}),
 						-- RENOWN 19 --
@@ -376,15 +391,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 						-- RENOWN 22 --
 					i(197982, {	-- Pattern: Finished Prototype Explorer's Barding (RECIPE!)
+						["minReputation"] = { 2503, 22 },	-- Maruuk Centaur Renown 22
 						["cost"] = 2000000,	-- 200g
 					}),
 					i(198713, {	-- Plans: Prototype Explorer's Barding Framework (RECIPE!)
+						["minReputation"] = { 2503, 22 },	-- Maruuk Centaur Renown 22
 						["cost"] = 2000000,	-- 200g
 					}),
 					i(191588, {	-- Recipe: Exultant Incense (RECIPE!)
+						["minReputation"] = { 2503, 22 },	-- Maruuk Centaur Renown 22
 						["cost"] = 2000000,	-- 200g
 					}),
 					i(198937, {	-- Technique: Contract: Maruuk Centaur (RECIPE!)
+						["minReputation"] = { 2503, 22 },	-- Maruuk Centaur Renown 22
 						["cost"] = 2000000,	-- 200g
 					}),
 						-- RENOWN 24 --
@@ -399,7 +418,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 					i(200467, {	-- Maruuk Spiritual Vestments
-						["cost"] = { 
+						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 150 },
 						},
 					}),

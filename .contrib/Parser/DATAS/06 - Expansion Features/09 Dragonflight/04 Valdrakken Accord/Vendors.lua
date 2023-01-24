@@ -167,111 +167,132 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 						-- RENOWN 11 --
 					i(199818, {	-- Formula: Enchant Boots - Watcher's Loam (RECIPE!)
+						["minReputation"] = { 2510, 11 },	-- Valdrakken Renown 11
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(199817, {	-- Formula: Enchant Cloak - Homebound Speed (RECIPE!)
+						["minReputation"] = { 2510, 11 },	-- Valdrakken Renown 11
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 					i(199246, {	-- Schematic: Tinker: Grounded Circuitry (RECIPE!)
+						["minReputation"] = { 2510, 11 },	-- Valdrakken Renown 11
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
 						-- RENOWN 14 --
 					i(191545, {	-- Recipe: Sustaining Alchemist's Stone (RECIPE!)
+						["minReputation"] = { 2510, 14 },	-- Valdrakken Renown 14
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(194482, {	-- Plans: Obsidian Seared Invoker (RECIPE!)
+						["minReputation"] = { 2510, 14 },	-- Valdrakken Renown 14
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(194479, {	-- Plans: Obsidian Seared Claymore (RECIPE!)
+						["minReputation"] = { 2510, 14 },	-- Valdrakken Renown 14
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(194280, {	-- Pattern: Chronocloth Sash (RECIPE!)
+						["minReputation"] = { 2510, 14 },	-- Valdrakken Renown 14
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 					i(194279, {	-- Pattern: Azureweave Slippers (RECIPE!)
+						["minReputation"] = { 2510, 14 },	-- Valdrakken Renown 14
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
 						-- RENOWN 15 --
 					i(198892, {	-- Technique: Cliffside Wylderdrake: Red Hair (RECIPE!)
+						["minReputation"] = { 2510, 15 },	-- Valdrakken Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 25 },
 						},
 					}),
 						-- RENOWN 19 --
 					i(194500, {	-- Plans: Khaz'gorite Leatherworker's Toolset (RECIPE!)
+						["minReputation"] = { 2510, 19 },	-- Valdrakken Renown 19
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(194498, {	-- Plans: Khaz'gorite Needle Set (RECIPE!)
+						["minReputation"] = { 2510, 19 },	-- Valdrakken Renown 19
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(194495, {	-- Plans: Khaz'gorite Sickle (RECIPE!)
+						["minReputation"] = { 2510, 19 },	-- Valdrakken Renown 19
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(199244, {	-- Schematic: Khaz'gorite Delver's Helmet  (RECIPE!)
+						["minReputation"] = { 2510, 19 },	-- Valdrakken Renown 19
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(199245, {	-- Schematic: Lapidary's Khaz'gorite Clamps  (RECIPE!)
+						["minReputation"] = { 2510, 19 },	-- Valdrakken Renown 19
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(194288, {	-- Pattern: Master's Wildercloth Alchemist's Robe (RECIPE!)
+						["minReputation"] = { 2510, 19 },	-- Valdrakken Renown 19
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(194290, {	-- Pattern: Master's Wildercloth Enchanter's Hat (RECIPE!)
+						["minReputation"] = { 2510, 19 },	-- Valdrakken Renown 19
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 					i(194292, {	-- Pattern: Master's Wildercloth Gradening Hat (RECIPE!)
+						["minReputation"] = { 2510, 19 },	-- Valdrakken Renown 19
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
 						-- RENOWN 23 --
 					i(194287, {	-- Pattern: Chronocloth Reagent Bag (RECIPE!)
+						["minReputation"] = { 2510, 23 },	-- Valdrakken Renown 23
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},
 					}),
 					i(198941, {	-- Technique: Contract: Valdrakken Accord (RECIPE!)
+						["minReputation"] = { 2510, 23 },	-- Valdrakken Renown 23
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 200 },
 						},
 					}),
 						-- RENOWN 28 --
 					i(194282, {	-- Pattern: Cushion of Time Travel (RECIPE!)
+						["minReputation"] = { 2510, 28 },	-- Valdrakken Renown 28
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},
 					}),
 					i(198912, {	-- Technique: Illusion Parchment: Whirling Breeze (RECIPE!)
+						["minReputation"] = { 2510, 28 },	-- Valdrakken Renown 28
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
 						},

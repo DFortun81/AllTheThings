@@ -310,7 +310,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198864),	-- Large Maruuk Centaur Supply Satchel
 				},
 			}),
-				-- RENOWN 17	--
+				-- RENOWN 17 --
 			q(71079, {	-- Getting to the Point
 				["minReputation"] = { 2503, 17 },	-- Maruuk Centaur Renown 17
 				["provider"] = { "n", 195529 },	-- Weaponmaster Aloom
@@ -353,7 +353,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198864),	-- Large Maruuk Centaur Supply Satchel
 				},
 			}),
-				-- RENOWN 21	--
+				-- RENOWN 21 --
 			q(71085, {	-- Representation Matters
 				["minReputation"] = { 2503, 21 },	-- Maruuk Centaur Renown 21
 				["provider"] = { "n", 195547 },	-- Farrier Rondare
