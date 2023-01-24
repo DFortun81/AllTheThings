@@ -2188,7 +2188,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				i(15081, {	-- Heavy Scorpid Shoulders
-					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2" },
+					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", "added 10.0.5" },
 				}),
 				i(8207),	-- Tough Scorpid Shoulders
 			}),
