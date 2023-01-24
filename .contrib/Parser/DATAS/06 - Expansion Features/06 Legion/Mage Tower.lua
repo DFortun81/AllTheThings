@@ -14,6 +14,7 @@ local MageTowerFilter92 =
 {["timeline"] = {
 	"added 9.2",
 	"removed 10.0.0",
+	ADDED_10_0_5,
 }};
 -- #endif
 
