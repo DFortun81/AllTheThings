@@ -80,7 +80,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(71138, {	-- Waygate: Rusza'thar Reach
 					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						70702,	-- Continued Waygate Exploration
 						71146,	-- Continued Waygate Exploration
 						71148,	-- Continued Waygate Exploration
@@ -102,7 +102,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(71157, {	-- Waygate: Skytop Observatory
 					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						70702,	-- Continued Waygate Exploration
 						71146,	-- Continued Waygate Exploration
 						71148,	-- Continued Waygate Exploration
@@ -124,7 +124,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(71161, {	-- Waygate: Vakthros
 					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						70702,	-- Continued Waygate Exploration
 						71146,	-- Continued Waygate Exploration
 						71148,	-- Continued Waygate Exploration
@@ -146,7 +146,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(71162, {	-- Waygate: Algeth'era
 					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						70702,	-- Continued Waygate Exploration
 						71146,	-- Continued Waygate Exploration
 						71148,	-- Continued Waygate Exploration
@@ -168,7 +168,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(71165, {	-- Waygate: Eon's Fringe
 					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						70702,	-- Continued Waygate Exploration
 						71146,	-- Continued Waygate Exploration
 						71148,	-- Continued Waygate Exploration
@@ -190,7 +190,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(71178, {	-- Waygate: Shady Sanctuary
 					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						70702,	-- Continued Waygate Exploration
 						71146,	-- Continued Waygate Exploration
 						71148,	-- Continued Waygate Exploration

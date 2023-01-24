@@ -76,7 +76,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
-					i(198101),	-- Recipe: Salad on the Side (RECIPE!)
+					i(198101, {	-- Recipe: Salad on the Side (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 400 },
+						},
+					}),
 						-- RENOWN 15 --
 					i(194661, {	-- Design: Magnificent Margin Magnifier (RECIPE!)
 						["cost"] = {
