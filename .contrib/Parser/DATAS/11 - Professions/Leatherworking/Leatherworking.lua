@@ -431,7 +431,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scorpid Shoulders",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", "added 10.0.5" },
 					["recipeID"] = 19100,
 				},
 				{
