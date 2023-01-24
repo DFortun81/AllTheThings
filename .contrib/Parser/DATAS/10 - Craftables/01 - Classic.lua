@@ -2248,7 +2248,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 				i(20296),	-- Green Dragonscale Gauntlets
 				-- #endif
 				i(15078, {	-- Heavy Scorpid Gauntlets
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 				}),
 				applyclassicphase(PHASE_SIX, i(22666, {	-- Icy Scale Gauntlets
 					["timeline"] = { "removed 3.0.1" },
@@ -2268,7 +2268,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 				i(15046),	-- Green Dragonscale Leggings
 				-- #endif
 				i(15079, {	-- Heavy Scorpid Leggings
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 				}),
 				i(8206),	-- Tough Scorpid Leggings
 				i(8185),	-- Turtle Scale Leggings

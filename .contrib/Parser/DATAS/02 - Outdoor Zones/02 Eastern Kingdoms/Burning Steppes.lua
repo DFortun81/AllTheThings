@@ -1799,11 +1799,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["cr"] = 7037,	-- Thaurissan Firewalker
 				}),
 				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 					["cr"] = 7025,	-- Blackrock Soldier
 				}),
 				i(15748, {	-- Pattern: Heavy Scorpid Leggings
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 					["cr"] = 7027,	-- Blackrock Slayer
 				}),
 				-- #if BEFORE 5.0.4
