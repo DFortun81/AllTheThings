@@ -1807,7 +1807,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(13288, {	-- Pattern: Raptor Hide Belt
 							["races"] = ALLIANCE_ONLY,
 							["isLimited"] = true,
+							-- #if BEFORE 10.0.5
 							["description"] = "Horde Players Beware: even if you buy this item off the Auction House, it is currently unlearnable. Only Alliance players are able to properly learn this pattern. Fire up your bug reports.",
+							-- #endif
 						}),
 					},
 				}),
