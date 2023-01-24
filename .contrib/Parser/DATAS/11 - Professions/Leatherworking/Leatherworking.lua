@@ -603,7 +603,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scorpid Vest",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.5" },
 					["recipeID"] = 19051,
 				},
 				{

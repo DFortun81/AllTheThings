@@ -1918,7 +1918,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["description"] = "A rare zone drop from any mob in the zone.",
 				}),
 				i(15727, {	-- Pattern: Heavy Scorpid Vest
-					["timeline"] = { "removed 4.0.3" },
+					["coord"] = { 63.0, 28.2, BLASTED_LANDS },
+					["timeline"] = { "removed 4.0.3", "added 10.0.5" },
 					-- #if AFTER TBC
 					["crs"] = {
 						5981,	-- Portal Seeker
