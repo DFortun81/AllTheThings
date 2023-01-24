@@ -1401,7 +1401,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70518, {	-- Weekly Inscription Knowledgepoint #3
 					["name"] = "Inscription Drop #1: Qalashi Djaradin",
 					["description"] = "Drops from any Qalashi Djaradin.\nCoordinates link to the mobs we found best.",
-					["crs"] = { 186109 },	-- Qalashi Necksnapper
+					["crs"] = { 
+						186109,	-- Qalashi Necksnapper
+						186110,	-- Djaradin Crustshaper
+					},
 					["coords"] = { 
 						{ 39.6, 51.4, THE_WAKING_SHORES },
 						{ 34.8, 68.6, THE_WAKING_SHORES },
