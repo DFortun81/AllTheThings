@@ -97,3 +97,8 @@ i(198096, 0);	-- Sweet and Sour Clam Chowder
 i(198121, 0);	-- Thousandbone Tongueslicer
 i(198092, 0);	-- Twice-Baked Potato
 i(198107, 0);	-- Zesty Water
+------------------
+-- PATCH 10.0.5 --
+------------------
+-- ITEM --
+i(202249, 13028);	-- Goldthorn Tea
