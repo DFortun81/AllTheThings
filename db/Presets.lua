@@ -2,6 +2,7 @@
 --   P R E S E T S   M O D U L E   --
 -------------------------------------
 
+-- You can find all filterIDs in the FILTER_ID_TYPES table in locales/en.lua
 select(2, ...).Presets = {
 	["ALL"] = setmetatable({}, { __index = function() return true; end}),
 	["DEATHKNIGHT"] = {
