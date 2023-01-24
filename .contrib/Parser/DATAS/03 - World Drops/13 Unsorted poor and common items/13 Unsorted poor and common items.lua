@@ -7,7 +7,7 @@
 -- DO NOT REMOVE OR I WILL FIND YOU! -Darkal
 
 -- #if NOT ANYCLASSIC
-root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = "added 10.0.5", ["description"] = "This is a temporary group of unsorted items.\n\nThey will be sorted soon™.\n\nYou don't need to report any of them." }, {
+root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = "added 10.0.5", ["description"] = "This item is currently in a temporary group of unsorted items under World Drops. It will be sorted soon.\nYou don't need to report this." }, {
 	n(-123456, {	-- Poor
 		n(ARMOR, {
 			filter(CLOTH, {
