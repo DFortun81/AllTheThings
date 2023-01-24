@@ -4357,7 +4357,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if topLevelSearch then
 				if sourceID then
 					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo and sourceInfo.quality then
+					if sourceInfo then
 						local allVisualSources = C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable;
 						if #allVisualSources < 1 then
 							-- Items with SourceInfo which don't register as having any visual data...
@@ -4497,7 +4497,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
 										else
 											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-											if otherSource and otherSource.quality then
+											if otherSource then
 												local link = select(2, GetItemInfo(otherSource.itemID));
 												if not link then
 													link = RETRIEVING_DATA;
@@ -15329,7 +15329,7 @@ function app:CreateMiniListForGroup(group)
 							if otherSourceInfo then
 								-- TODO: this can create an item link whose appearance is actually different than the SourceID's Visual
 								local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
-								newItem.collectible = otherSourceInfo.quality ~= nil;
+								-- newItem.collectible = otherSourceInfo.quality ~= nil;
 								if otherSourceInfo.isCollected then
 									ATTAccountWideData.Sources[otherSourceID] = 1;
 									newItem.collected = true;
@@ -15410,7 +15410,7 @@ function app:CreateMiniListForGroup(group)
 							tinsert(g, search);
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSourceInfo and otherSourceInfo.quality then
+							if otherSourceInfo then
 								-- TODO: this can create an item link whose appearance is actually different than the SourceID's Visual
 								local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
 								if otherSourceInfo.isCollected then
