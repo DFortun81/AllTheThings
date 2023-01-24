@@ -1,10 +1,10 @@
-﻿using System;
+﻿using NLua;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
-using NLua;
 
 namespace ATT
 {
@@ -611,11 +611,11 @@ namespace ATT
                 try
                 {
                     if (classes.Any(c => !Valid_Classes.Contains(Convert.ToInt64(c))))
-                        Framework.Log($"Invalid 'classes' value: {ToJSON(data)}");
+                        Log($"Invalid 'classes' value: {ToJSON(data)}");
                 }
                 catch
                 {
-                    Framework.Log($"Invalid 'classes' value: {ToJSON(data)}");
+                    Log($"Invalid 'classes' value: {ToJSON(data)}");
                 }
             }
 
@@ -624,22 +624,28 @@ namespace ATT
             // Mark the achievement as referenced
             if (data.TryGetValue("achID", out long achID))
             {
+                // Grab AchievementDB info
+                ACHIEVEMENTS.TryGetValue(achID, out Dictionary<string, object> achInfo);
+
                 // Remove itself from the list of altAchievements
                 if (data.TryGetValue("altAchievements", out List<object> altAchievements) && altAchievements != null && altAchievements.Count > 0)
                 {
                     altAchievements.Remove(achID);
                 }
 
+                // Guild Achievements are not collectible
+                if (achInfo.TryGetValue("isGuild", out bool isGuild) && isGuild)
+                {
+                    data["collectible"] = false;
+                }
+
                 // If not processing the Main Achievement Category, then any encountered Achievements (which are not Criteria) should be duplicated into the Main Achievement Category
                 if (!ProcessingAchievementCategory && !data.ContainsKey("criteriaID"))
                 {
-                    if (ACHIEVEMENTS.TryGetValue(achID, out Dictionary<string, object> achInfo))
+                    if (achInfo.TryGetValue("parentCategoryID", out long achCatID))
                     {
-                        if (achInfo.TryGetValue("parentCategoryID", out object achCatID))
-                        {
-                            DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
-                            //LogDebug($"Duplicated Achievement {achID} into Achievement Category");
-                        }
+                        DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
+                        //LogDebug($"Duplicated Achievement {achID} into Achievement Category");
                     }
                 }
             }

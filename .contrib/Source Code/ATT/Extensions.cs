@@ -109,7 +109,7 @@ namespace ATT
         /// <returns>Whether or not a value was found for the key.</returns>
         public static bool TryGetValue(this IDictionary<string, object> dict, string key, out bool value)
         {
-            if (dict.TryGetValue(key, out object o))
+            if (dict != null && dict.TryGetValue(key, out object o))
             {
                 value = Convert.ToBoolean(o);
                 return true;
@@ -127,7 +127,7 @@ namespace ATT
         /// <returns>Whether or not a value was found for the key.</returns>
         public static bool TryGetValue(this IDictionary<string, object> dict, string key, out long value)
         {
-            if (dict.TryGetValue(key, out object o))
+            if (dict != null && dict.TryGetValue(key, out object o))
             {
                 value = Convert.ToInt64(o);
                 return true;
@@ -145,7 +145,7 @@ namespace ATT
         /// <returns>Whether or not a value was found for the key.</returns>
         public static bool TryGetValue(this IDictionary<string, object> dict, string key, out decimal value)
         {
-            if (dict.TryGetValue(key, out object o))
+            if (dict != null && dict.TryGetValue(key, out object o))
             {
                 value = Convert.ToDecimal(o);
                 return true;
@@ -174,7 +174,7 @@ namespace ATT
         /// <returns>Whether or not a value was found for the key.</returns>
         public static bool TryGetValue(this IDictionary<string, object> dict, string key, out string value)
         {
-            if (dict.TryGetValue(key, out object o))
+            if (dict != null && dict.TryGetValue(key, out object o))
             {
                 value = Convert.ToString(o);
                 return true;
@@ -203,7 +203,7 @@ namespace ATT
         /// <returns>Whether or not a value was found for the key.</returns>
         public static bool TryGetValue(this IDictionary<string, object> dict, string key, out List<object> value)
         {
-            if (dict.TryGetValue(key, out object o) && o is List<object> value2)
+            if (dict != null && dict.TryGetValue(key, out object o) && o is List<object> value2)
             {
                 value = value2;
                 return true;
@@ -221,7 +221,7 @@ namespace ATT
         /// <returns>Whether or not a value was found for the key.</returns>
         public static bool TryGetValue<T>(this IDictionary<string, object> dict, string key, out List<T> value)
         {
-            if (dict.TryGetValue(key, out object o) && o is List<T> value2)
+            if (dict != null && dict.TryGetValue(key, out object o) && o is List<T> value2)
             {
                 value = value2;
                 return true;
@@ -310,7 +310,7 @@ namespace ATT
         /// <returns>Whether or not a value was found for the key.</returns>
         public static bool TryGetValue(this IDictionary<string, object> dict, string key, out Dictionary<string, object> value)
         {
-            if (dict.TryGetValue(key, out object o) && o is Dictionary<string, object> value2)
+            if (dict != null && dict.TryGetValue(key, out object o) && o is Dictionary<string, object> value2)
             {
                 value = value2;
                 return true;

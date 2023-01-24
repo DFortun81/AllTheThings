@@ -9186,6 +9186,7 @@ harvesterFields.text = function(t)
 				["achievementID"] = IDNumber,
 				["parentCategoryID"] = GetAchievementCategory(achievementID) or -1,
 				["icon"] = Image,
+				["isGuild"] = isGuildAch and true or nil,
 			};
 			if Description ~= nil and Description ~= "" then
 				info.description = Description;
@@ -9413,6 +9414,8 @@ harvesterFields.text = function(t)
 			rawset(t, "collected", true);
 			return Name;
 		end
+		-- Save an empty value just so the Saved Variable table is always in order for easier partial-replacements if needed
+		HarvestedAchievementDatabase[achievementID] = 0;
 	end
 
 	AllTheThingsHarvestItems = HarvestedAchievementDatabase;
@@ -18874,7 +18877,7 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 				end
 			end;
 			-- add a bunch of raw, delay-loaded items in order into the window
-			local groupCount = math.ceil(self.Limit / self.PartitionSize);
+			local groupCount = math.floor(self.Limit / self.PartitionSize);
 			local g, overrides = {}, {visible=true};
 			local partition, partitionStart, partitionGroups;
 			local dlo, obj = app.DelayLoadedObject, app.CreateAchievementHarvester;
