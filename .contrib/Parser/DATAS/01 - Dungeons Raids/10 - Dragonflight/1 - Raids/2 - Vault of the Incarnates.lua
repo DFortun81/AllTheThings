@@ -212,6 +212,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(ZONE_DROPS, {
 				i(201412),	-- Ancient Vault Artifact (Quest)
 				i(201411),	-- Ancient Vault Artifact (Repeatable)
+				i(201790, {	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
+					["crs"] = { 193909 },	-- Raszageth the Storm-Eater
+				}),
 			}),
 			d(LFR_RAID, {
 				n(ZONE_DROPS, {
@@ -704,7 +707,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195533),	-- Shackles of Titanic Failure
 						i(194309),	-- Spiteful Storm
 						i(195529),	-- Stormlash's Last Resort
-						i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 					},
 				}),
 			}),
@@ -971,7 +973,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195533),	-- Shackles of Titanic Failure
 						i(194309),	-- Spiteful Storm
 						i(195529),	-- Stormlash's Last Resort
-						i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 					},
 				}),
 			}),
@@ -1248,7 +1249,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195533),	-- Shackles of Titanic Failure
 						i(194309),	-- Spiteful Storm
 						i(195529),	-- Stormlash's Last Resort
-						i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 					},
 				}),
 			}),
