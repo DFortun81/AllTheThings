@@ -7412,7 +7412,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72492),	--
 			q(72493),	--
 			q(72499),	--
-			q(72528),	--
+			q(72528),	-- Revival Catalyst
 			q(72539),	--
 			q(72544),	--
 			q(72550),	--
