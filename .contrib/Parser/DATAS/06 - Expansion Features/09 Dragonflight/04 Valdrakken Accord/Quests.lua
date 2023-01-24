@@ -656,12 +656,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 195769 },	-- Weaponsmith Koref
 				["coord"] = { 36.4, 51.7, VALDRAKKEN },
 				["g"] = {
-					i(199702),	-- Valdrakken Guard's Barrier
-					i(199705),	-- Valdrakken Guard's Spear
-					i(199726),	-- Valdrakken Spellweaver's Scepter
+					i(199825),	-- Valdrakken Belt Knife
 					i(199730),	-- Valdrakken Bladewing Staff
+					i(201796),	-- Valdrakken Drakonid's Claw
+					i(199702),	-- Valdrakken Guard's Barrier
 					i(199820),	-- Valdrakken Guard's Skullsplitter
+					i(199705),	-- Valdrakken Guard's Spear
 					i(199821),	-- Valdrakken Serrated Shortsword
+					i(199726),	-- Valdrakken Spellweaver's Scepter
+					i(199732),	-- Valdrakken Wing Glaive
 				},
 			}),
 				-- RENOWN 30 --

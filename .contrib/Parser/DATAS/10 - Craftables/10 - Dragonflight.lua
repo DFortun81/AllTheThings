@@ -2358,14 +2358,14 @@ root("HiddenQuestTriggers", {
 			q(71567),	-- Draconic Missive of the Peerless
 			q(71568),	-- Draconic Missive of the Quickblade
 			-- Crafting Tool Missives
-			-- q(),	-- Draconic Missive of Crafting Speed
-			-- q(),	-- Draconic Missive of Inspiration
-			-- q(),	-- Draconic Missive of Multicraft
-			-- q(),	-- Draconic Missive of Resourcefulness
+			q(71571),	-- Draconic Missive of Crafting Speed
+			q(71572),	-- Draconic Missive of Inspiration
+			q(71573),	-- Draconic Missive of Multicraft
+			q(71574),	-- Draconic Missive of Resourcefulness
 			-- Gathering Tool Missives
-			-- q(),	-- Draconic Missive of Deftness
-			-- q(),	-- Draconic Missive of Finesse
-			-- q(),	-- Draconic Missive of Perception
+			q(71575),	-- Draconic Missive of Deftness
+			q(71576),	-- Draconic Missive of Finesse
+			q(71577),	-- Draconic Missive of Perception
 			-- Trinkets
 			-- q(),	-- Darkmoon Deck Box: Dance
 			-- q(),	-- Darkmoon Deck Box: Inferno
@@ -2380,14 +2380,14 @@ root("HiddenQuestTriggers", {
 			q(71517),	-- Pioneer's Writhebark Stave
 			-- q(),	-- Weathered Explorer's Stave
 			-- Runes and Sigil
-			-- q(),	-- Azurescale Sigil
-			-- q(),	-- Bronzescale Sigil
+			q(71559),	-- Azurescale Sigil
+			q(71560),	-- Bronzescale Sigil
 			q(71555),	-- Buzzing Rune
 			q(71556),	-- Chirping Rune
-			-- q(),	-- Emberscale Sigil
+			q(71561),	-- Emberscale Sigil
 			q(71557),	-- Howling Rune
-			-- q(),	-- Jetscale Sigil
-			-- q(),	-- Sagescale Sigil
+			q(71562),	-- Jetscale Sigil+
+			q(71563),	-- Sagescale Sigil
 			q(71594),	-- Vantus Rune: Vault of the Incarnates
 			-- Profession Equipment
 			-- q(),	-- Alchemist's Brilliant Mixing Rod
@@ -2397,12 +2397,12 @@ root("HiddenQuestTriggers", {
 			q(71588),	-- Scribe's Fastened Quill
 			q(71589),	-- Scribe's Resplendent Quill
 			-- Scrolls
-			-- q(),	-- Illusion Parchment: Aqua Torrent
-			-- q(),	-- Illusion Parchment: Arcane Burst
-			-- q(),	-- Illusion Parchment: Chilling Wind
-			-- q(),	-- Illusion Parchment: Love Charm
+			q(71546),	-- Illusion Parchment: Aqua Torrent
+			q(71547),	-- Illusion Parchment: Arcane Burst
+			q(71548),	-- Illusion Parchment: Chilling Wind
+			q(71549),	-- Illusion Parchment: Love Charm
 			-- q(),	-- Illusion Parchment: Magma Missile
-			-- q(),	-- Illusion Parchment: Shadow Orb
+			q(71551),	-- Illusion Parchment: Shadow Orb
 			q(71552),	-- Illusion Parchment: Spell Shield
 			-- q(),	-- Illusion Parchment: Whirling Breeze
 			-- q(),	-- Scroll of Sales
