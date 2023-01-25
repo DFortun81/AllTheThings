@@ -45,8 +45,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 		}),
 		q(72972, {	-- The Waking Shores Reverse Tour
 			["sourceQuests"] = { 72488 },	-- The Thaldraszus Advanced Tour
-			["provider"] = { "n", 199119 },	-- Celormu
-			["coord"] = { 46.0, 63.0, THALDRASZUS },
+			["provider"] = { "n", 193411 },	-- Celormu
+			["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
 			["timeline"] = { ADDED_DF_0_5 },
 		}),
 		q(72982, {	-- The Ohn'ahran Plains Reverse Tour
