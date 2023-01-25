@@ -12487,7 +12487,7 @@ app.SaveHarvestSource = function(data)
 			AllTheThingsHarvestItems[itemID] = item;
 		end
 		local bonusID = data.bonusID;
-		if bonusID then
+		if bonusID and bonusID > 0 then
 			local bonuses = item.bonuses;
 			if not bonuses then
 				bonuses = {};
