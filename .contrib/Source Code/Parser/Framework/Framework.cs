@@ -216,7 +216,7 @@ namespace ATT
         /// <summary>
         /// All of the achievements that have been parsed sorted by Achievement ID.
         /// </summary>
-        private static IDictionary<long, Dictionary<string, object>> ACHIEVEMENTS = new Dictionary<long, Dictionary<string, object>>();
+        private static IDictionary<long, IDictionary<string, object>> ACHIEVEMENTS = new Dictionary<long, IDictionary<string, object>>();
 
         private static IDictionary<long, bool> QUESTS_WITH_REFERENCES = new Dictionary<long, bool>();
 
@@ -625,7 +625,7 @@ namespace ATT
             if (data.TryGetValue("achID", out long achID))
             {
                 // Grab AchievementDB info
-                ACHIEVEMENTS.TryGetValue(achID, out Dictionary<string, object> achInfo);
+                ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
 
                 // Remove itself from the list of altAchievements
                 if (data.TryGetValue("altAchievements", out List<object> altAchievements) && altAchievements != null && altAchievements.Count > 0)
@@ -3233,14 +3233,19 @@ namespace ATT
                         }
                     case "AchievementDB":
                         // The format of the Achievement DB is a dictionary of Achievement ID <-> Name pairs.
-                        if (pair.Value is Dictionary<long, object> AchievementDB)
+                        var dataList = Objects.CompressToList<object>(pair.Value);
+                        if (dataList == null)
                         {
-                            foreach (var categoryPair in AchievementDB)
+                            LogError("Failed to Parse AchievementDB");
+                        }
+                        else
+                        {
+                            foreach (var achieveInfo in dataList)
                             {
                                 // KEY: Achievement ID, VALUE: Dictionary
-                                if (categoryPair.Value is Dictionary<string, object> info)
+                                if (achieveInfo is IDictionary<string, object> info && info.TryGetValue("achID", out long achID))
                                 {
-                                    ACHIEVEMENTS[categoryPair.Key] = info;
+                                    ACHIEVEMENTS[achID] = info;
                                 }
                             }
                         }
