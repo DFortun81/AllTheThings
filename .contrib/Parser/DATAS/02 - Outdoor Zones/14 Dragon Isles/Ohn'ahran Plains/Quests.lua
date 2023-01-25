@@ -1102,6 +1102,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69878, {	-- Ronsak the Decimator
 					["provider"] = { "n", 193227 },	-- Ronsak the Decimator
 					["coord"] = { 43.3, 55.2, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
 				}),
 				q(70783, {	-- Skaara
 					["provider"] = { "n", 192949 },	-- Skaara
