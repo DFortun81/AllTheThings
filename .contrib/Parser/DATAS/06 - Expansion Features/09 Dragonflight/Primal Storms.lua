@@ -508,6 +508,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 38.2, 37, VALDRAKKEN },
 					["isWeekly"] = true,
 				}),
+				q(74436, {	-- Storm Warning
+					--["provider"] = { "m", },	-- Figure out this guy's name
+					--["coord"] = { X, Y, VALDRAKKEN },
+				}),
+				q(74437, {	-- Resisting the Storm
+					["provider"] = { "n", 183860 },	-- Soridormi
+					["coord"] = { 61.1, 50.9, 2085 },
+					--["isWeekly"] = true,
+				}),
 				q(71242, {	-- Supporting the Storm Researchers
 					["provider"] = {"i",200675},	-- Elemental Overflow Cluster
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
