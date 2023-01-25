@@ -2525,7 +2525,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 					},
 				}),
-				q(14016, {	-- The Black Knight's Curse
+				applyclassicphase(WRATH_PHASE_THREE, q(14016, {	-- The Black Knight's Curse
 					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 13664,	-- The Black Knight's Fall
 					["coord"] = { 69.4, 23.0, ICECROWN },
@@ -2535,7 +2535,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 							["coord"] = { 79.4, 23.2, ICECROWN },
 						}),
 					},
-				}),
+				})),
 				q(13664, {	-- The Black Knight's Fall
 					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuests"] = {
@@ -2563,7 +2563,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 					},
 				}),
-				q(14017, {	-- The Black Knight's Fate
+				applyclassicphase(WRATH_PHASE_THREE, q(14017, {	-- The Black Knight's Fate
 					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 14016,	-- The Black Knight's Curse
 					["coord"] = { 69.4, 23.0, ICECROWN },
@@ -2574,7 +2574,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 							["cr"] = 35113,	-- Doctor Kohler
 						}),
 					},
-				}),
+				})),
 				q(13663, {	-- The Black Knight's Orders
 					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 13654,	-- There's Something About the Squire
