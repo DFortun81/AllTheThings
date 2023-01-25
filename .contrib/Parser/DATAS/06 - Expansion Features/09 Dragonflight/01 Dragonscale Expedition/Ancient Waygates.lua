@@ -6,7 +6,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		n(ANCIENT_WAYGATES, {
 			n(ACHIEVEMENTS, {
 				ach(16292, {	-- Mastering the Waygates
-					["description"] = "ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 				}),
 			}),
 			n(FLIGHT_PATHS, {
@@ -71,7 +71,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					-- RENOWN 8 --
 				q(70702, {	-- Continued Waygate Exploration
 					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "Spawns Anywhere on Dragon Isles. \n\n|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 					["sourceQuests"] = { 70156 },	-- An Ancient Awakening
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["DisablePartySync"] = true,
@@ -92,7 +92,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["DisablePartySync"] = true,
-					["description"] = "ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 					["g"] = {
 						i(200527),	-- Enchanted Arcana Vessel
 						crit(7, {	-- Rusza'thar Reach
@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["DisablePartySync"] = true,
-					["description"] = "ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 					["g"] = {
 						i(200556),	-- Enchanted Arcana Vessel
 						crit(8, {	-- Skytop Observatory
@@ -136,7 +136,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["DisablePartySync"] = true,
-					["description"] = "ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 					["g"] = {
 						i(200557),	-- Enchanted Arcana Vessel
 						crit(6, {	-- Vakthros
@@ -158,7 +158,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["DisablePartySync"] = true,
-					["description"] = "ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 					["g"] = {
 						i(200558),	-- Enchanted Arcana Vessel
 						crit(1, {	-- Algeth'era
@@ -180,7 +180,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["DisablePartySync"] = true,
-					["description"] = "ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 					["g"] = {
 						i(200560),	-- Enchanted Arcana Vessel
 						crit(5, {	-- Eon's Fringe
@@ -202,7 +202,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["DisablePartySync"] = true,
-					["description"] = "ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 					["g"] = {
 						i(199556),	-- Enchanted Arcana Vessel
 						crit(4, {	-- Shady Sanctuary
@@ -213,7 +213,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					-- RENOWN 10 --
 				q(71146, {	-- Continued Waygate Exploration
 					["minReputation"] = { 2507, 10 },	-- Dragonscale Expedition Renown 10
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "Spawns Anywhere on Dragon Isles. \n\n|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 					["sourceQuest"] = 70702,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["DisablePartySync"] = true,
@@ -223,7 +223,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					-- RENOWN 15 --
 				q(71148, {	-- Continued Waygate Exploration
 					["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "Spawns Anywhere on Dragon Isles. \n\n|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 					["sourceQuest"] = 71146,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["DisablePartySync"] = true,
@@ -233,7 +233,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					-- RENOWN 17 --
 				q(71149, {	-- Continued Waygate Exploration
 					["minReputation"] = { 2507, 17 },	-- Dragonscale Expedition Renown 17
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "Spawns Anywhere on Dragon Isles. \n\n|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 					["sourceQuest"] = 71148,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["DisablePartySync"] = true,
@@ -243,7 +243,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					-- RENOWN 20 --
 				q(71150, {	-- Continued Waygate Exploration
 					["minReputation"] = { 2507, 20 },	-- Dragonscale Expedition Renown 20
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "Spawns Anywhere on Dragon Isles. \n\n|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 					["sourceQuest"] = 71149,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["DisablePartySync"] = true,
@@ -253,7 +253,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					-- RENOWN 23 --
 				q(71151, {	-- Continued Waygate Exploration
 					["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
-					["description"] = "Spawns Anywhere on Dragon Isles. \n\nALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.",
+					["description"] = "Spawns Anywhere on Dragon Isles. \n\n|cffff0000ALTOHOLICS BEWARE: In order to get the achievement |cffffff00Mastering the Waygates|r, as well as complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. These are ONCE PER ACCOUNT QUESTS. The achievement is currently a Character based achievement, not an Account based achievement, meaning Alt completion DOES NOT COUNT, and you will lock yourself out.|r",
 					["sourceQuest"] = 71150,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["DisablePartySync"] = true,
