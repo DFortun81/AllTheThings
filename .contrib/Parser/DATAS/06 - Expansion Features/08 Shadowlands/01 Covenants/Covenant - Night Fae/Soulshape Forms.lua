@@ -87,9 +87,8 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "i", 182171 },	-- Hippogryph Soul
 			}),
 			q(64650, {	-- Hyena Soul
-				["description"] = "Drops from M+.",
+				["description"] = "Drops from Mythic Dungeons.",
 				["provider"] = { "i", 182173 },	-- Hyena Soul
-				["timeline"] = { ADDED_SL_REL, REMOVED_DF_REL },
 			}),
 			q(65023, {	-- Jormungar Soul
 				["provider"] = { "i", 187903 },	-- Jormungar Soul
