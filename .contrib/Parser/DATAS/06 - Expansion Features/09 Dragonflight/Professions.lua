@@ -315,6 +315,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199197),	-- Bottled Essence
 				},
 			}),
+			-- In Tyr's Footsteps chapter 6 --
+			q(70899, {	-- Fifth Challenge of Tyr: Ingenuity
+				["sourceQuests"] = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 83.9, 53.2, VALDRAKKEN },
+				["g"] = {
+					i(199197),	-- Bottled Essence
+				},
+			}),
 		}),
 		prof(ALCHEMY, sharedData({
 			["requireSkill"] = ALCHEMY,

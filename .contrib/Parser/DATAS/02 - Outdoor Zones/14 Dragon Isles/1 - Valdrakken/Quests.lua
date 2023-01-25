@@ -177,6 +177,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 49.9, 56, VALDRAKKEN },
 				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
+			q(72360, {	-- Reviving the Machine
+				["provider"] = { "n", 191369 },	-- Watcher Koranos
+				["coord"] = { 54.6, 41.3, VALDRAKKEN },
+			}),
 		}),
 	}),	
 })));		

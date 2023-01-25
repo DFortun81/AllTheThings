@@ -55,6 +55,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72722),					-- Emissary of War
 				q(72728),					-- The World Awaits
 				q(72724),					-- A Savage Path Through Time
+				q(72719),					-- A Fel Path Through Time
 				pvp(q(72720)),				-- The Arena Calls
 				petbattle(pvp(q(72721))),	-- The Very Best
 			})),

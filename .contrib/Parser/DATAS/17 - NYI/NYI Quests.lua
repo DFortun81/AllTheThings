@@ -7398,7 +7398,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72350),	--
 			q(72357),	--
 			q(72359),	--
-			q(72360),	--
 			q(72361),	--
 			q(72368),	--
 			q(72370),	--
@@ -7436,7 +7435,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72684),	--
 			q(72687),	-- Renown Supplies
 			q(72697),	-- Renown Supplies Valdrakken 24 bonus supplies
-			q(72719),	--
 			q(72725),	--
 			q(72726),	--
 			q(72727),	--
