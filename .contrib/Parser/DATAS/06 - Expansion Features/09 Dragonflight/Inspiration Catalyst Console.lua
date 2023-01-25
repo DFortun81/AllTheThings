@@ -789,7 +789,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72360, {	-- Reviving the Machine
 					["provider"] = { "n", 191369 },	-- Watcher Koranos
 					["coord"] = { 54.6, 41.3, VALDRAKKEN },
-					["maps"] = { THALDRASZUS },
 				}),
 				q(72528, {	-- Revival Catalyst
 					["sourceQuests"] = { 72360 },	-- Reviving the Machine

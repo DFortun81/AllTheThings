@@ -8584,7 +8584,11 @@ app.CheckForBreadcrumbPrevention = function(title, questID)
 		local warning;
 		for _,group in pairs(nextQuests) do
 			if not group.collected and app.RecursiveGroupRequirementsFilter(group) then
-				app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID), group.text or RETRIEVING_DATA, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)));
+				app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
+					title,
+					app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
+					group.text or RETRIEVING_DATA,
+					app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)));
 				warning = true;
 			end
 		end
@@ -15775,9 +15779,9 @@ local function SetRowData(self, row, data)
 			-- If it doesn't, the source ID will need to be harvested.
 			local s, success = GetSourceID(text) or (data.artifactID and data.s);
 			if s and s > 0 then
-				-- only save the source if it is different than what we already have
-				if not data.s or data.s < 1 or data.s ~= s or (data.artifactID and data.s) then
-					print("SourceID Update",data.text,data.s,"=>",s);
+				-- only save the source if it is different than what we already have, or being forced
+				if not data.s or data.s < 1 or data.s ~= s or data.artifactID then
+					print("SourceID Update",text,data.modItemID,data.s,"=>",s);
 					-- print(GetItemInfo(text))
 					data.s = s;
 					if data.collected then
@@ -15793,6 +15797,8 @@ local function SetRowData(self, row, data)
 					else
 						app.SaveHarvestSource(data);
 					end
+				elseif data.forceSource then
+					app.SaveHarvestSource(data);
 				end
 			elseif success then
 				print("Success without a SourceID", text);
@@ -19925,58 +19931,41 @@ customWindowUpdates["Harvester"] = function(self, force)
 			db.back = 1;
 
 			local harvested = {};
-			local minID,maxID,oldRetries = app.customHarvestMin or self.min,app.customHarvestMax or self.max,app.MaximumItemInfoRetries;
-			self.min = minID;
-			self.max = maxID;
+			local oldRetries = app.MaximumItemInfoRetries;
+			app.PrintDebug(self.Suffix, app.GetCustomWindowParam(self.Suffix, "min"))
+			local min = app.GetCustomWindowParam(self.Suffix, "min") or 0;
+			local max = app.GetCustomWindowParam(self.Suffix, "max") or 999999;
+			local force = app.GetCustomWindowParam(self.Suffix, "force");
+			app.print("Set Harvest ItemID Bounds:",min,max);
 			app.MaximumItemInfoRetries = 10;
+			local g = {};
+			local i,m,b;
+			local modItemID;
 			-- Put all known Items which do not have a valid SourceID into the Window to be Harvested
 			for itemID,groups in pairs(fieldCache["itemID"]) do
 				-- ignore items that dont meet the customHarvest range if specified
-				if (not minID or minID <= itemID) and (not maxID or itemID <= maxID) then
+				if min <= itemID and itemID <= max then
 					-- clean any cached modID from the itemID
-					itemID = GetItemIDAndModID(itemID);
-					-- print("Checking for Source",itemID)
-					for i,group in ipairs(groups) do
+					-- app.PrintDebug("Check",itemID)
+					-- clone the Item for this item cache
+					for _,item in ipairs(groups) do
 						-- only use the matching cached Item
-						if group.itemID == itemID and not harvested[group.modItemID or itemID] then
-							harvested[group.modItemID or itemID] = true;
-							-- print("sourceID harvest",group.modItemID)
-							if group.bonusID then
-								-- Harvest using a BonusID?
-								-- print("Check w/ Bonus",itemID,group.bonusID)
-								if (not VerifySourceID(group)) then
-									-- print("Harvest w/ Bonus",itemID,group.bonusID)
-									tinsert(db.g, app.CreateItem(tonumber(itemID), {visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = group.modID, bonusID = group.bonusID}));
-								end
-							elseif group.modID then
-								-- Harvest using a ModID?
-								-- print("Check w/ Mod",itemID,group.modID)
-								if (not VerifySourceID(group)) then
-									-- print("Harvest w/ Mod",itemID,group.modID)
-									tinsert(db.g, app.CreateItem(tonumber(itemID), {visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = group.modID}));
-								end
-							else
-								-- Harvest with no special ID?
-								-- print("Check Base",itemID)
-								if (not VerifySourceID(group)) then
-									-- print("Harvest",itemID)
-									tinsert(db.g, app.CreateItem(tonumber(itemID), {visible = true, reSource = true, s = group.s, itemID = tonumber(itemID)}));
-								end
-							end
-						-- else print("Cached skip",group.key,group[group.key]);
+						modItemID = item.modItemID or item.itemID;
+						if not harvested[modItemID] then
+							harvested[modItemID] = true;
+							i,m,b = GetItemIDAndModID(modItemID);
+							-- app.PrintDebug("Harvest",modItemID,i,m,b)
+							tinsert(g, app.CreateItem(tonumber(i), {visible = true, reSource = true, forceSource = force, s = item.s, modID = m, bonusID = b}));
 						end
 					end
 				end
 			end
 			wipe(harvested);
-			-- remove the custom harvest flags
-			app.customHarvestMin = nil;
-			app.customHarvestMax = nil;
 			-- add artifacts
 			for artifactID,groups in pairs(fieldCache["artifactID"]) do
 				for _,group in pairs(groups) do
 					if not rawget(group, "s") then
-						tinsert(db.g, setmetatable({
+						tinsert(g, setmetatable({
 							visible = true,
 							artifactID = tonumber(artifactID),
 							silentItemID = group.silentItemID,
@@ -19987,9 +19976,10 @@ customWindowUpdates["Harvester"] = function(self, force)
 				end
 			end
 			-- total doesnt change
-			local total = #db.g;
+			local total = #g;
 			db.total = total;
 			db.progress = 0;
+			db.g = g;
 			self:SetData(db);
 			self:BuildData();
 			self.ScrollBar:SetValue(1);
@@ -20021,14 +20011,15 @@ customWindowUpdates["Harvester"] = function(self, force)
 						app.Settings:ToggleDebugMode();
 						self.forcedDebug = nil;
 					end
-					app.print("Source Harvest Complete! ItemIDs:",self.min,"->",self.max);
+					app.print("Source Harvest Complete! ItemIDs:",min,"->",max);
 					-- revert the number of retries to retrieve item information
 					app.MaximumItemInfoRetries = oldRetries or 400;
-					-- TODO: reset the window so it can be used to harvest again without reloading, only via the command, not another update
+					-- reset the window so it can be used to harvest again without reloading, only via the command, not another update
 					self.UpdateDone = nil;
-					-- self.initialized = nil;
-					-- self:SetData(nil);
+					self:SetData(nil);
 					self:BaseUpdate();
+					self.initialized = nil;
+					self:Toggle();
 					return;
 				end
 				if not rowSourced then
@@ -24376,10 +24367,10 @@ SLASH_AllTheThingsHARVESTER1 = "/attharvest";
 SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
 	if cmd then
-		local min,max,reset = strsplit(",",cmd);
-		app.customHarvestMin = tonumber(min) or 1;
-		app.customHarvestMax = tonumber(max) or 210000;
-		app.print("Set Harvest ItemID Bounds:",app.customHarvestMin,app.customHarvestMax);
+		local min,max,reset,force = strsplit(",",cmd);
+		app.SetCustomWindowParam("Harvester", "min", tonumber(min));
+		app.SetCustomWindowParam("Harvester", "max", tonumber(max));
+		app.SetCustomWindowParam("Harvester", "force", force and true);
 		AllTheThingsHarvestItems = reset and {} or AllTheThingsHarvestItems or {};
 		AllTheThingsArtifactsItems = reset and {} or AllTheThingsArtifactsItems or {};
 		if reset then app.print("Harvest Data Reset!"); end
