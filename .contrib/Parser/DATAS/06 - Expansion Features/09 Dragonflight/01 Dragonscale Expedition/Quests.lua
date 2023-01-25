@@ -560,6 +560,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(192762),	-- Azure Skitterfly (Mount!)
 				},
 			}),
+				-- PARAGON --
+			q(66156, {	-- Renowned with the Dragonscale Expedition
+				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["isRepeatable"] = true,
+				["g"] = {
+					i(199472),	-- Overflowing Dragon Expedition Supply Pack
+				},
+			}),
 
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
