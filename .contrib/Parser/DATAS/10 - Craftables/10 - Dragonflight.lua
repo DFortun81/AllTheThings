@@ -2703,6 +2703,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74163),	-- Skinning Molkeej (Grand Hunt)
 			q(74164),	-- Skinning Diluu (Grand Hunt)
 			q(74167),	-- Skinning Sunscale Behemoth
+			q(74169),	-- Skinning Liskheszaera
 			q(74170),	-- Skinning Zenet Avis
 			q(74171),	-- Skinning Malsegan
 			q(74172),	-- Skinning Zarizz
