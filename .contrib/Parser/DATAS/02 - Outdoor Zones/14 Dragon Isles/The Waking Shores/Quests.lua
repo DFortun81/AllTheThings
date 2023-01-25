@@ -1290,6 +1290,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(70983, {	-- O'nank Shorescour
 					["provider"] = { "n", 184853 },	-- O'nank Shorescour
 					["coord"] = { 80.1, 53.9, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(66074, {	-- Primal Scythid Queen
 					["provider"] = { "n", 184853 },	-- Primal Scythid Queen
