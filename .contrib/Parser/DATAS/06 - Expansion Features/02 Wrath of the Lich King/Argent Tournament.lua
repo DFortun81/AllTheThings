@@ -1015,7 +1015,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 					},
 				}),
-				{	-- A Leg Up
+				applyclassicphase(WRATH_PHASE_THREE, {	-- A Leg Up
 					["allianceQuestData"] = q(14074, {	-- A Leg Up (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
@@ -1047,7 +1047,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				},
+				}),
 
 				q(13689, {	-- A Valiant Of Darnassus
 					["qg"] = 33625,	-- Arcanist Taelis
@@ -1951,7 +1951,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					},
 				}),
 
-				q(24442, {	-- Battle Plans Of The Kvaldir
+				applyclassicphase(WRATH_PHASE_THREE, q(24442, {	-- Battle Plans Of The Kvaldir
 					["provider"] = { "i", 49676 },	-- Kvaldir Attack Plans
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
@@ -1969,9 +1969,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 							["coord"] = { 43.9, 24.5, 170 },
 						}),
 					},
-				}),
+				})),
 
-				{	-- Breakfast Of Champions
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Breakfast Of Champions
 					["allianceQuestData"] = q(14076, {	-- Breakfast Of Champions (A)
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
@@ -2002,7 +2002,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				},
+				}),
 
 				q(13846, {	-- Contributin' To The Cause
 					["qg"] = 34210,	-- Squire Artie
@@ -2022,7 +2022,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
 					["isDaily"] = true,
 				}),
-				q(14105, {	-- Deathspeaker Kharos
+				applyclassicphase(WRATH_PHASE_THREE, q(14105, {	-- Deathspeaker Kharos
 					["qg"] = 34882,	-- High Crusader Adelard
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -2036,8 +2036,8 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				}),
-				q(14101, {	-- Drottinn Hrothgar
+				})),
+				applyclassicphase(WRATH_PHASE_THREE, q(14101, {	-- Drottinn Hrothgar
 					["qg"] = 34882,	-- High Crusader Adelard
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -2054,7 +2054,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				}),
+				})),
 				q(13794, {	-- Eadric the Pure
 					["qg"] = 33817,	-- Justicar Mariel Trueheart
 					["sourceQuests"] = {
@@ -2072,7 +2072,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 69.6, 22.8, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 				}),
-				q(14108, {	-- Get Kraken!
+				applyclassicphase(WRATH_PHASE_THREE, q(14108, {	-- Get Kraken!
 					["qg"] = 35094,	-- Crusader Silverdawn
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -2091,9 +2091,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				}),
+				})),
 
-				{	-- Gormok Wants His Snobolds
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Gormok Wants His Snobolds
 					["allianceQuestData"] = q(14090, {	-- Gormok Wants His Snobolds (A)
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
@@ -2122,9 +2122,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				},
+				}),
 
-				q(14095, {	-- Identifying the Remains
+				applyclassicphase(WRATH_PHASE_THREE, q(14095, {	-- Identifying the Remains
 					["provider"] = { "i", 46955 },	-- Kraken Tooth
 					["description"] = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -2132,7 +2132,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["OnTooltip"] = CRUSADER_DAILY_OnTooltip,
 					["cr"] = 34925,	-- North Sea Kraken
 					["isDaily"] = true,
-				}),
+				})),
 
 				q(13627, {	-- Jack Me Some Lumber
 					["qg"] = 33434,	-- Bezzle Blastbolt
@@ -2282,7 +2282,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 					},
 				},
-				q(14102, {	-- Mistcaller Yngvar
+				applyclassicphase(WRATH_PHASE_THREE, q(14102, {	-- Mistcaller Yngvar
 					["qg"] = 34882,	-- High Crusader Adelard
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -2299,8 +2299,8 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				}),
-				q(14104, {	-- Ornolf The Scarred
+				})),
+				applyclassicphase(WRATH_PHASE_THREE, q(14104, {	-- Ornolf The Scarred
 					["qg"] = 34882,	-- High Crusader Adelard
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -2317,8 +2317,8 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				}),
-				{	-- Rescue at Sea
+				})),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Rescue at Sea
 					["allianceQuestData"] = q(14152, {	-- Rescue at Sea (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
@@ -2345,8 +2345,8 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				},
-				{	-- Stop The Aggressors
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Stop The Aggressors
 					["allianceQuestData"] = q(14080, {	-- Stop The Aggressors (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
@@ -2373,7 +2373,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				},
+				}),
 				q(13789, {	-- Taking Battle To The Enemy (A, non-DK)
 					["qg"] = 33763,	-- Cellian Daybreak <Master of Arms>
 					["sourceQuest"] = 13794,	-- Eadric the Pure
@@ -2834,7 +2834,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						VALIANTS_SEAL,
 					},
 				}),
-				q(14107, {	-- The Fate of the Fallen
+				applyclassicphase(WRATH_PHASE_THREE, q(14107, {	-- The Fate of the Fallen
 					["qg"] = 35094,	-- Crusader Silverdawn
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -2850,7 +2850,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 							["cost"] = {{ "i", 47035, 1 }},	-- Discarded Soul Crystal
 						}),
 					},
-				}),
+				})),
 				q(13761, {	-- The Grand Melee (A) (Darnassus, Valiant)
 					["qg"] = 33654,	-- Airae Starseeker
 					["sourceQuests"] = {
@@ -3141,7 +3141,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						VALIANTS_SEAL,
 					},
 				}),
-				{	-- The Light's Mercy
+				applyclassicphase(WRATH_PHASE_THREE, {	-- The Light's Mercy
 					["allianceQuestData"] = q(14077, {	-- The Light's Mercy (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
@@ -3168,7 +3168,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				},
+				}),
 				q(13795, {	-- The Scourgebane
 					["qg"] = 33817,	-- Justicar Mariel Trueheart
 					["sourceQuests"] = {
@@ -3764,7 +3764,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = exclude(UNDEAD, HORDE_ONLY),
 				}),
-				{	-- What Do You Feed a Yeti, Anyway?
+				applyclassicphase(WRATH_PHASE_THREE, {	-- What Do You Feed a Yeti, Anyway?
 					["allianceQuestData"] = q(14112, {	-- What Do You Feed a Yeti, Anyway? (A)
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
@@ -3793,8 +3793,8 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				},
-				{	-- You've Really Done It This Time, Kul
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- You've Really Done It This Time, Kul
 					["allianceQuestData"] = q(14096, {	-- You've Really Done It This Time, Kul (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
@@ -3822,7 +3822,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				},
+				}),
 			}),
 			applyclassicphase(WRATH_PHASE_FOUR, n(REWARDS, {
 				["description"] = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
