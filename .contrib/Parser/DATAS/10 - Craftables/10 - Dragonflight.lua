@@ -2306,6 +2306,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(72348),	-- First Overload Infurious Herb
 			--
 			q(74121),	-- Herbing Enraged Sprout
+			q(74230),	-- Herbing Azra's Prized Peony
 		}),
 		prof(MINING, {
 			q(71951),	-- First Draconium Deposit
