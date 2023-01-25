@@ -208,7 +208,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["isRepeatable"] = true,
 				}),
 					-- Fishing Gear Repeatables --
-				q(72787, {	-- Contribute Supplies: Battered Imbu-made network.canDetectNetworkStatusChanges
+				q(72787, {	-- Contribute Supplies: Battered Imbu-made Net 
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
+					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
+					["isRepeatable"] = true,
+				}),
+				q(72789, {	-- Contribue Supplies: Salinated Serevite
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
 					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
@@ -419,6 +425,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(72640),	-- Triggered with 'Abandoned... or Hidden Caches' (70952)
 		--
 		q(74370),	-- Triggered with 'Contribute Supplies: Battered Imbu-made Net'
+		q(74369),	-- Triggered with 'Contribute Supplies: Salinated Serevite'
 		--
 		q(67140),	-- Triggered after crafting 'Polished Basalt Bracelet'
 		q(67139),	-- Triggered after crafting 'Flying Fish Bone Charm'
