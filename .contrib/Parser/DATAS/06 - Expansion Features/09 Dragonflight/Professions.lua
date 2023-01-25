@@ -34,10 +34,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["_quests"] = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
 				}),
 				crit(6, {	-- Fifth Challenge: Ingenuity
-					-- ["_quests"] = { QUEST },	-- Name
+					["_quests"] = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
 				}),
 				crit(7, {	-- Innovation Complete
-					-- ["_quests"] = { QUEST },	-- Name
+					["_quests"] = { 70900 },	-- Innovating the Engine
 				}),
 			}),
 		}),
@@ -324,6 +324,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199197),	-- Bottled Essence
 					i(200120),	-- Irideus' Power Core
 				},
+			}),
+			q(70900, {	-- Innovating the Engine
+				["sourceQuests"] = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 83.9, 53.2, VALDRAKKEN },
 			}),
 		}),
 		prof(ALCHEMY, sharedData({
