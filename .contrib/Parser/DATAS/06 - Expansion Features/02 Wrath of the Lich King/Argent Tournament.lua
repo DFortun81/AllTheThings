@@ -4138,7 +4138,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 					}),
 				}),
-				n(34885, {	-- Dame Evniki Kapsalis <Crusader's Quartermaster>
+				applyclassicphase(WRATH_PHASE_THREE, n(34885, {	-- Dame Evniki Kapsalis <Crusader's Quartermaster>
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["groups"] = {
 						champ(55, i(122338, {	-- Ancient Heirloom Armor Casing
@@ -4334,7 +4334,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 							["timeline"] = { "added 6.1.0.19445" },
 						})),
 					},
-				}),
+				})),
 				n(33310, {	-- Derrick Brindlebeard <Ironforge Quartermaster>
 					["coord"] = { 76.4, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
@@ -4407,7 +4407,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						champ(15, i(45014)),	-- Orgrimmar Banner (TOY!)
 					},
 				}),
-				n(34881, {	-- Hiren Loresong <Silver Covenant Quartermaster>
+				applyclassicphase(WRATH_PHASE_THREE, n(34881, {	-- Hiren Loresong <Silver Covenant Quartermaster>
 					["coord"] = { 76.2, 19.6, ICECROWN },
 					["minReputation"] = { 1094, EXALTED },	-- Silver Covenant, Exalted.
 					["races"] = ALLIANCE_ONLY,
@@ -4417,7 +4417,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						champ(100, i(46815)),	-- Quel'dorei Steed (MOUNT!)
 						champ(40, i(46820)),	-- Shimmering Wyrmling
 					},
-				}),
+				})),
 				n(33657, {	-- Irisee <Exodar Quartermaster>
 					["coord"] = { 76.2, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
@@ -4629,7 +4629,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						champ(15, i(45017)),	-- Silvermoon City Banner (TOY!)
 					},
 				}),
-				n(34772, {	-- Vasarin Redmorn <Sunreavers Quartermaster>
+				applyclassicphase(WRATH_PHASE_THREE, n(34772, {	-- Vasarin Redmorn <Sunreavers Quartermaster>
 					["coord"] = { 76.2, 24.0, ICECROWN },
 					["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
 					["races"] = HORDE_ONLY,
@@ -4639,7 +4639,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						champ(100, i(46816)),	-- Sunreaver Hawkstrider (MOUNT!)
 						champ(40, i(46821)),	-- Shimmering Wyrmling
 					},
-				}),
+				})),
 			}),
 			n(ZONE_DROPS, {
 				i(46069, {	-- Alliance Lance
