@@ -65,7 +65,7 @@ end
 --]]
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 	o(500000, {	-- Revival Catalyst Console
-		["description"] = "Help us gather information of what is/isnt available via doing reports in ATT discord. Especially the alternative sets and if the pvp transmog is available somewhere else",
+		["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
 		["coord"] = { 60.6, 53.8, THALDRASZUS },
 		-- ["modelScale"] = 3,
 		["g"] = {
@@ -796,7 +796,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["isWeekly"] = true,
 					["g"] = {
-						currency(2166),	-- Inspiration Catalyst Account-Wide Currency
+						currency(2166),	-- Revival Catalyst Account-Wide Currency
 					},
 				}),
 			}),
