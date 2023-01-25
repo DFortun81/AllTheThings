@@ -18014,9 +18014,9 @@ function app:GetDataCache()
 		db = {};
 		db.g = app.Categories.TradingPost;
 		db.expanded = false;
-		db.text = "Trading Post";	-- Probably Some String Later
+		db.text = L["TRADING_POST"];	-- Probably some global string Later
 		db.name = db.text;
-		--db.icon = app.asset("Category_InGameShop");	Ask for New Icon
+		db.icon = app.asset("Category_TradingPost");
 		tinsert(g, db);
 	end
 

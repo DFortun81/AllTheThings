@@ -224,6 +224,7 @@ local L = app.L;
 	L.FORCE_REFRESH_REQUIRED = "这可能需要强制刷新（"..SHIFT_KEY_TEXT.."-点击）正确已收集。";
 	L.FUTURE_UNOBTAINABLE = "未来不可获取！";
 	L.FUTURE_UNOBTAINABLE_TOOLTIP = "这是已经确认或极有可能在已知的未来补丁中无法获取的内容。";
+	L.TRADING_POST = "商栈";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";

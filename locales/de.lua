@@ -222,6 +222,7 @@ local L = app.L;
 	L.FORCE_REFRESH_REQUIRED = "Dies benötigt möglicherweise eine erzwungene Aktualisierung ("..SHIFT_KEY_TEXT.."-Click) um ordnungsgemäß als gesammelt zu zählen.";
 	--TODO: L.FUTURE_UNOBTAINABLE = "Future Unobtainable!";
 	--TODO: L.FUTURE_UNOBTAINABLE_TOOLTIP = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
+	L.TRADING_POST = "Handelsposten";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Gegenstandsfilter";

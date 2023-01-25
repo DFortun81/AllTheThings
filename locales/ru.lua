@@ -224,6 +224,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 	L.FORCE_REFRESH_REQUIRED = "Может потребоваться Полное Обновление коллекции ("..SHIFT_KEY_TEXT.."+Клик).";
 	L.FUTURE_UNOBTAINABLE = "Будущие Недоступные!";
 	L.FUTURE_UNOBTAINABLE_TOOLTIP = "Это контент, который точно или очень вероятно будет недоступен в будущем патче.";
+	L.TRADING_POST = "Торговая лавка";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";

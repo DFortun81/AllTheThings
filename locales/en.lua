@@ -240,6 +240,7 @@ app.L = {
 	["FORCE_REFRESH_REQUIRED"] = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.."-Click) to properly be collected.";
 	["FUTURE_UNOBTAINABLE"] = "Future Unobtainable!";
 	["FUTURE_UNOBTAINABLE_TOOLTIP"] = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
+	["TRADING_POST"] = "Trading Post";
 
 	["TIER_DATA"] = {
 		{	-- Classic
