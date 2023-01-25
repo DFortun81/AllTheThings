@@ -155,3 +155,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 		})),
 	}),
 })));
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	header(HEADERS.Map, THE_PRIMALIST_FUTURE, bubbleDown({ ["timeline"] = { "created 10.0.5" } }, {
+		n(QUESTS, {
+			q(74436),	-- Storm Warning
+			q(74437),	-- Resisting the Storm
+		}),
+	})),
+}));

@@ -320,3 +320,37 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 		})),
 	}),
 })));
+root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
+	m(OHNAHRAN_PLAINS, {
+		n(RARES, sharedData({["isDaily"] = true}, {
+			n(201535, {	-- Bloodbeak the Ravenous
+				-- ["coord"] = { , , OHNAHRAN_PLAINS },
+				["questID"] = 74467,
+			}),
+			n(192020, {	-- Eaglemaster Niraak
+				["coord"] = { 49.6, 66.6, OHNAHRAN_PLAINS },
+				["questID"] = 74441,
+			}),
+			n(201537, {	-- Groffnar
+				-- ["coord"] = { , , OHNAHRAN_PLAINS },
+				["questID"] = 74463,
+			}),
+			n(201538, {	-- Huntmaster Yrgena
+				-- ["coord"] = { , , OHNAHRAN_PLAINS },
+				["questID"] = 74466,
+			}),
+			n(201540, {	-- Lurgan
+				-- ["coord"] = { , , OHNAHRAN_PLAINS },
+				["questID"] = 74464,
+			}),
+			n(201539, {	-- Stormcaller Narkena
+				-- ["coord"] = { , , OHNAHRAN_PLAINS },
+				["questID"] = 74465,
+			}),
+			n(192045, {	-- Windseeker Avash
+				["coord"] = { 58.8, 67.4, OHNAHRAN_PLAINS },
+				["questID"] = 74440,
+			}),
+		})),
+	}),
+})));

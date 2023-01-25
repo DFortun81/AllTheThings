@@ -4,7 +4,6 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THALDRASZUS, {
 		n(RARES, sharedData({["isDaily"] = true},{
-	--	n(RARES, {
 			n(193243, {	-- Acrosoth
 				["coord"] = { 40.5, 78.3, THALDRASZUS },
 				["questID"] = 72834,
@@ -178,7 +177,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 		})),
-	--	}),
 	}),
 })));
 
@@ -187,5 +185,28 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		n(RARES, {
 			q(72050),	-- first kill of Ancient Protector...? maybe. Quest name is Balgar.
 		}),
+	}),
+})));
+
+root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
+	m(THALDRASZUS, {
+		n(RARES, sharedData({["isDaily"] = true}, {
+			n(201549, {	-- Morlash
+				-- ["coord"] = { , , THALDRASZUS },
+				["questID"] = 74450,
+			}),
+			n(201550, {	-- Overloading Defense Matrix
+				-- ["coord"] = { , , THALDRASZUS },
+				["questID"] = 74449,
+			}),
+			n(201552, {	-- Overseer Stonetongue
+				-- ["coord"] = { , , THALDRASZUS },
+				["questID"] = 74448,
+			}),
+			n(193238, {	-- Spellwrought Snowman
+				["coord"] = { 55.0, 34.0, THALDRASZUS },
+				["questID"] = 73064,
+			}),
+		})),
 	}),
 })));

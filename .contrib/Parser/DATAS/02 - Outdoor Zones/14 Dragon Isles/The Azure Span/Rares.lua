@@ -4,7 +4,6 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
 		n(RARES, sharedData({["isDaily"] = true},{
-	--	n(RARES, {
 			n(194270, {	-- Arcane Devourer
 				["coord"] = { 53.0, 35.6, THE_AZURE_SPAN },
 				["questID"] = 73866,
@@ -271,7 +270,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- },
 			}),
 		})),
-	--	}),
 	}),
 })));
 
@@ -280,3 +278,41 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(73886),	-- Killing both Mucklings for Mucka the Raker
 	}),
 }));
+root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
+	m(THE_AZURE_SPAN, {
+		n(RARES, sharedData({["isDaily"] = true}, {
+			n(201553, {	-- Grand Artificer Zeerak
+				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["questID"] = 74457,
+			}),
+			n(201557, {	-- Graniteclaw
+				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["questID"] = 74459,
+			}),
+			n(201558, {	-- Malgain Rockknell
+				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["questID"] = 74461,
+			}),
+			n(201561, {	-- Motivator Krathos
+				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["questID"] = 74456,
+			}),
+			n(201559, {	-- Shiobhan Waterborn
+				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["questID"] = 74462,
+			}),
+			n(201555, {	-- Srivantor
+				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["questID"] = 74458,
+			}),
+			n(201554, {	-- Unstable Arcanogolem
+				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["questID"] = 74455,
+			}),
+			n(201556, {	-- Waterpots
+				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["questID"] = 74460,
+			}),
+		})),
+	}),
+})));

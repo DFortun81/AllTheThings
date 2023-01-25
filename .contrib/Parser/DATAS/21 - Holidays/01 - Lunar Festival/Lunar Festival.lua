@@ -1418,3 +1418,13 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 		-- #endif
 	},
 }));
+root(ROOTS.NeverImplemented, applyholiday(LUNAR_FESTIVAL, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
+	n(QUESTS, {
+		q(73169, {	-- The Lunar Festival (A)
+			["races"] = ALLIANCE_ONLY,
+		}),
+		q(73170, {	-- The Lunar Festival (H)
+			["races"] = HORDE_ONLY,
+		}),
+	}),
+})));

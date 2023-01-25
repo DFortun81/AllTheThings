@@ -539,5 +539,14 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(235477, {	-- Noblegarden
 		-- Classic Stuff
 		i(6834),	-- Black Tuxedo
+		n(QUESTS, {
+			q(73192, {	-- PH [DNT]
+				["timeline"] = { "created 10.0.5" },
+			}),
+			q(74120, {	-- A Spring Awakening
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "created 10.0.5" },
+			}),
+		}),
 	}),
 }));
