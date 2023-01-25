@@ -340,17 +340,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						ach(17140),	-- Flashfrost Flyover Reverse: Gold
 					},
 				}),
-				-- TODO: Missing quest id, rest is verified
-				-- q(?????, {	-- Ruby Lifeshrine Loop - Reverse
-				-- 	["provider"] = { "n", 190123 },	-- Bronze Timekeeper
-				-- 	["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
-				-- 	["g"] = {
-				-- 		i(191140),	-- Bronze Timepiece
-				-- 		ach(17120),	-- Ruby Lifeshrine Loop Reverse: Bronze
-				-- 		ach(17121),	-- Ruby Lifeshrine Loop Reverse: Silver
-				-- 		ach(17122),	-- Ruby Lifeshrine Loop Reverse: Gold
-				-- 	},
-				-- }),
+				q(72052, {	-- Ruby Lifeshrine Loop - Reverse
+				 	["provider"] = { "n", 190123 },	-- Bronze Timekeeper
+				 	["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
+				 	["g"] = {
+				 		i(191140),	-- Bronze Timepiece
+				 		ach(17120),	-- Ruby Lifeshrine Loop Reverse: Bronze
+				 		ach(17121),	-- Ruby Lifeshrine Loop Reverse: Silver
+				 		ach(17122),	-- Ruby Lifeshrine Loop Reverse: Gold
+				 	},
+				}),
 				q(72739, {	-- Uktulut Coaster - Reverse
 					["provider"] = { "n", 190667 },	-- Bronze Timekeeper
 					["coord"] = { 55.4, 41.1, THE_WAKING_SHORES },
