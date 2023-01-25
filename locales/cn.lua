@@ -786,6 +786,7 @@ for key,value in pairs({
 		[-582] = "巫妖王之怒经典怀旧服诺森德英雄礼包",			-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		[-583] = "巫妖王之怒经典怀旧服诺森德史诗礼包",			-- WotLK Classic Northrend Epic Upgrade
 		[-584] = "巨龙时代季节性促销",			-- Dragonflight Seasonal Promotions
+		[-585] = "暗黑破坏神IV",													-- Diablo IV
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
@@ -873,7 +874,7 @@ for key,value in pairs({
 		[-1131] = "伊斯卡拉渔具",										-- Iskaara Fishing
 		[-1140] = "瓦德拉肯联军",										-- Valdrakken Accord
 		[-1142] = "天际挑战",											-- Aerial Challenges
-		[-1143] = "每2小时稀有",										-- Every 2 Hours Rare
+		[-1143] = "每30分钟稀有",										-- Every 30 min Rare
 		[-1144] = "每周专业知识",										-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
