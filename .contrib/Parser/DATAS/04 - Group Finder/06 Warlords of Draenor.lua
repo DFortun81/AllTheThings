@@ -2,7 +2,7 @@
 --    G R O U P   F I N D E R   M O D U L E     --
 --------------------------------------------------
 
-root("GroupFinder", tier(WOD_TIER, {
+root(ROOTS.GroupFinder, tier(WOD_TIER, {
 	i(120334, {	-- Satchel of Cosmic Mysteries
 		["timeline"] = { "added 5.4.0", "removed 6.0.3" },
 		["sym"] = {

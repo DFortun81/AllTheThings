@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldEvents", n(TENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+root(ROOTS.WorldEvents, n(TENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(8820, {	-- 10th Anniversary
 		i(115301),	-- Molten Corgi (PET!)
 	}),

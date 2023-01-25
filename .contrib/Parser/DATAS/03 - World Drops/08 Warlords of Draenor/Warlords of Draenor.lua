@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } }, {
+root(ROOTS.WorldDrops, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } }, {
 	n(SETS, {
 		i(106390),	-- Bladespire Breastplate
 		i(106391),	-- Bladespire Gauntlets

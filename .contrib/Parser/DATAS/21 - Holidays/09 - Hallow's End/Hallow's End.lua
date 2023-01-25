@@ -376,7 +376,7 @@ local SPECTRAL_GROG = i(104316, {	-- Spectral Grog
 	},
 });
 
-root("Holidays", applyholiday(HALLOWS_END, {
+root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 	-- #if ANYCLASSIC
 	["npcID"] = -58,
 	-- #else
@@ -409,7 +409,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						-- #else
 						970,				-- Tricks and Treats of Azeroth (A)
 						-- #endif
-						
+
 					},
 				},
 				-- #if BEFORE MOP
@@ -4478,7 +4478,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 -- Remove the holiday flag.
 SPECTRAL_GROG.u = nil;
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 	-- #if ANYCLASSIC
 	["npcID"] = -58,
 	-- #else

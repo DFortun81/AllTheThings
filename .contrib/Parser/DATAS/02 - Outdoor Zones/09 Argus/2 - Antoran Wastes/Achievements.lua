@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", {
+root(ROOTS.Zones, {
 	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
 			n(ACHIEVEMENTS, {

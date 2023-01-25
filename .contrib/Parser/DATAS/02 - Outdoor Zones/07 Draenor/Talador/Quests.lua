@@ -1662,7 +1662,7 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34935),	-- After Wall Greeting - triggers during "Dropping In" after taking the portal (questID 34913 & 34879)
 		q(34560),	-- Armory

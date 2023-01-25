@@ -1,6 +1,6 @@
 
 -- TODO: this file is dumb. move this information to EngineeringItemDB.lua once it exists
-local Items = root("ItemDBConditional");
+local Items = root(ROOTS.ItemDBConditional);
 local i = function(itemID, skillID)
 	Items[itemID] = { ["requireSkill"] = skillID };
 end

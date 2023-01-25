@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\Inv_misc_sigil_revendreth01",
@@ -345,7 +345,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 		q(62034),	-- unlocking Soulbreaker's Burnished Vestments set (TransmogSetID 2064, Soulbreaker's Burnished items)
 		q(62030),	-- unlocking Burnished Death Shroud Armor set (TransmogSetID 2069, Burnished Death Shroud items)
 		q(62025),	-- unlocking Fearstalker's Burnished Battlegear set (TransmogSetID 2073, Fearstalker's Burnished items)

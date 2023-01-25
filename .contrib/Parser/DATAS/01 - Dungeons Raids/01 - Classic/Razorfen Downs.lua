@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(CLASSIC_TIER, {
+root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(233, {	-- Razorfen Downs
 		-- #if BEFORE MOP
 		["lore"] = "Crafted from the same mighty vines as Razorfen Kraul, Razorfen Downs is the traditional capital city of the quillboar race. The sprawling, thorn-ridden labyrinth houses a veritable army of loyal quillboar as well as their high priests - the Death's Head tribe. Recently, however, a looming shadow has fallen over the crude den. Agents of the undead Scourge - led by the lich, Amnennar the Coldbringer - have taken control over the quillboar race and turned the maze of thorns into a bastion of undead might. Now the quillboar fight a desperate battle to reclaim their beloved city before Amnennar spreads his control across the Barrens.",
@@ -416,7 +416,7 @@ root("Instances", tier(CLASSIC_TIER, {
 	}),
 }));
 -- #if AFTER 6.0.1
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35598),	-- Razorfen Downs Reward Quest - Normal completion
 	}),

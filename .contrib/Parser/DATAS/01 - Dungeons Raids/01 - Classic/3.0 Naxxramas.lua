@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(CLASSIC_TIER,
+root(ROOTS.Instances, tier(CLASSIC_TIER,
 -- #if BEFORE WRATH
 applyclassicphase(PHASE_SIX,
 -- #endif

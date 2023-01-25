@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 	achcat(ACHIEVEMENT_CATEGORY_CATACLYSM_QUESTS, {
 		a(ach(5318)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance)
 		h(ach(5319)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Horde)

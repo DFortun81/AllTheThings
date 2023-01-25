@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
+root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 	m(BLOODMYST_ISLE, {
 		["lore"] = "Bloodmyst Isle is a low-level zone covering the struggles of the Draenei to rebuild their civilization. It gets its distinctive red look from the corrupting red crystals found on the Exodar, the Draenei's spaceship that crashed.",
 		-- #if AFTER WRATH
@@ -1312,7 +1312,7 @@ root(ROOTS.HiddenQuestTriggers, m(KALIMDOR, m(BLOODMYST_ISLE, {
 	q(9750),	-- UNUSED Urgent Delivery
 })));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(9695),	-- The Sun King's Command
 	}),

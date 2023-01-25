@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(EXILES_REACH, bubbleDownSelf({
+root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 		-- Not really any reason to do this. Evokers/Dracthyr will never see this Zone unless enabling Account Mode
 		-- ["classes"] = exclude({ DEMONHUNTER, DEATHKNIGHT, EVOKER }, ALL_CLASSES),
 		-- ["races"] = exclude({ DRACTHYR_ALLIANCE, DRACTHYR_HORDE }, ALL_RACES),

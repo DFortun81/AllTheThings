@@ -5761,7 +5761,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 }));
 
 -- Jewelcrafting Item Database
-local itemDB = root("ItemDB", {});
+local itemDB = root(ROOTS.ItemDB, {});
 
 -- Recipe Cache (for Validation)
 local recipeCache = {
@@ -6133,7 +6133,7 @@ itemrecipe({"Design: Glowing Shadow Draenite [TBC]", "Design: Timeless Shadow Dr
 
 
 -- Never Implemented Recipe and Crafted Item Database
-local nyi_ = root("NeverImplemented", {});
+local nyi_ = root(ROOTS.NeverImplemented, {});
 local neverimplemented = function(thing)
 	table.insert(nyi_, prof(JEWELCRAFTING, { thing }));
 end
@@ -6142,7 +6142,7 @@ recipeCache = nil;	-- Disable the cache validation.
 bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, nyi_);
 
 -- #if AFTER BFA
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(55631),	-- Jewelcrafting Diode shrine. harvesting gems from them triggered this quest. Nazmir location
 });
 -- #endif

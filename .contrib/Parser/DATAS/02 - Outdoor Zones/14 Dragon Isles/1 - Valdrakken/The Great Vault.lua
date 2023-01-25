@@ -50,7 +50,7 @@ local SymRaid = function(InstanceID, Remove)
 	end
 	return SymLink
 end
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(VALDRAKKEN, {
 		o(381035, {	-- The Great Vault
 			["coord"] = { 58.8, 57.9, VALDRAKKEN },

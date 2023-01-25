@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root("PVP", pvp(n(BATTLEGROUNDS, {
+root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3.22248" } }, {
 		filter(CONSUMABLES, {
 			["description"] = "These are commonly sold by PVP Vendors and can also be acquired from reward crates.",

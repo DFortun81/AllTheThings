@@ -2,7 +2,7 @@
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
 
-root("GearSets", n(CLASS_TRIAL, {
+root(ROOTS.GearSets, n(CLASS_TRIAL, {
 	tier(LEGION_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_HUNDRED_TEN, {
 			-- Note: [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]

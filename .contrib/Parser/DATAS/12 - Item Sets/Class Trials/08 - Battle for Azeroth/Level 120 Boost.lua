@@ -2,7 +2,7 @@
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
 
-root("GearSets", n(CLASS_TRIAL, {
+root(ROOTS.GearSets, n(CLASS_TRIAL, {
 	tier(BFA_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_HUNDRED_TWENTY, {
 			-- Note: [As of October 13th, 2020 These became lvl 50 Boost]

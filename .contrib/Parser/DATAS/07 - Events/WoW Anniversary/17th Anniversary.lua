@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 -- One-Time Anniversary Content
-root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
+root(ROOTS.WorldEvents, n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	ach(14942),	-- WoW's 17th Anniversary
 	n(MAILBOX, {
 		i(185906, {	-- Anniversary Gift
@@ -15,7 +15,7 @@ root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM
 })));
 
 -- Yearly Anniversary Content -- also used for 18th anniversary
-root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, n(SEVENTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(QUESTS, {
 		q(60215, {	-- Doomwalkin' Has Come Knockin'
 			["provider"] = { "n", 157113 },	-- Chromie

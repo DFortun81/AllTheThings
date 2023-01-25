@@ -48,7 +48,7 @@ local LFR_WEAPON_GROUP = {
 	i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 };
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(QUESTS, {
 			q(63211, {	-- Report to Adrestes
@@ -914,7 +914,7 @@ for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 	end
 end
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
 	q(59728),	-- Triggered when adding red petals to Moonberry's soap during quest 58816 'Getting Backstage'
 	q(59729),	-- Triggered when adding green petals to Moonberry's soap during quest 58816 'Getting Backstage'

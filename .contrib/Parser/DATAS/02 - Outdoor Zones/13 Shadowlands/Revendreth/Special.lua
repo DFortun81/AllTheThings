@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(REVENDRETH, {
 		n(SPECIAL, {
 			n(181660, bubbleDownSelf({ ["timeline"] = { ADDED_SL_1_5 } }, {	-- Lost Soul (Chicken)

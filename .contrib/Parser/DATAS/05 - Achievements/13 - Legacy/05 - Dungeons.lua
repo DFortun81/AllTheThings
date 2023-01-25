@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_LEGACY, {
 		un(REMOVED_FROM_GAME, ach(8882, {	-- Auchindoun: Gold
 			un(REMOVED_FROM_GAME, ach(8881)),		-- Auchindoun: Silver

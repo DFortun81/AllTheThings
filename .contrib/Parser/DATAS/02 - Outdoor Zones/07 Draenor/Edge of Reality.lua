@@ -53,7 +53,7 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(37864),	-- Voidtalon of the Dark Star - triggers after the player leaves the scenario
 	}),

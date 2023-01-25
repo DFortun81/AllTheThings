@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(CLASSIC_TIER, {
+root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(63, {	-- Deadmines
 		-- #if BEFORE MOP
 		["lore"] = "Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",
@@ -783,7 +783,7 @@ root("Instances", tier(CLASSIC_TIER, {
 	}),
 }));
 -- #if AFTER 6.0.1
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		inst(63, {	-- Deadmines
 			q(35586),	-- Deadmines Reward Quest - Normal completion
@@ -798,7 +798,7 @@ root("HiddenQuestTriggers", {
 });
 -- #endif
 --[[
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		q(28004),	-- Adventurers Wanted: The Deadmines [Horde]
 		q(28005),	-- Adventurers Wanted: The Deadmines [Alliance]

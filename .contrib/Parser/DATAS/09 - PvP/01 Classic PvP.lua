@@ -1,6 +1,6 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
------------------------------------------------             
+-----------------------------------------------
 local function MarkOfWHOOOWHATNow(t)
 	-- #if BEFORE 7.0.3.22248
 	-- Programmatically remove all references to Mark of Honor.
@@ -23,7 +23,7 @@ local function MarkOfWHOOOWHATNow(t)
 	-- #endif
 	return t;
 end
-root("PVP", run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
+root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
 	["description"] = "In order to collect these, you need to have the original title associated with the gear.",
 	["groups"] = {
 		n(-32, {	-- Honor Titles
@@ -705,7 +705,7 @@ root("PVP", run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
 				i(18435),	-- First Sergeant's Leather Armguards
 				i(18436),	-- First Sergeant's Dragonhide Armguards
 				i(18437),	-- First Sergeant's Silk Cuffs
-				
+
 				-- Back
 				i(18461),	-- Sergeant's Cloak (58)
 				i(16341),	-- Sergeant's Cloak (45)
@@ -902,7 +902,7 @@ root("PVP", run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
 	},
 }))));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CLASSIC_TIER, {
 		n(WEAPONS, {
 			i(77559),	-- Replica Grand Marshal's left Hand Blade

@@ -6,7 +6,7 @@
 -- been encountered, and it really causes the Dynamic population to take forever since every one of these Factions is added into the Main list
 
 --[[
-root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(FACTIONS, {
 		tier(CLASSIC_TIER, {
 			-- 0.5.3.3368

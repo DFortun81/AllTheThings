@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 		}),
 	}),
 }));
-root("HiddenQuestTriggers",{
+root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(32260),	-- Alliance Quest Choice: PvE
 		q(32261),	-- Alliance Quest Choice: PvP

@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\Inv_misc_sigil_ardenweald01",
@@ -189,7 +189,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	}),
 })));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(62958),	-- triggered during Marasmius dailies
 	q(62962),	-- triggered when turning in 'Into the Unknown' (62296)
 	q(62963),	-- triggered when turning in 'Go Beyond' (??)

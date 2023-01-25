@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(KALIMDOR, {
+root(ROOTS.Zones, m(KALIMDOR, {
 	m(NORTHERN_BARRENS, {
 		["lore"] = "Northern Barrens is a dry grassy zone, dotted with farms and few lush oasis. It is primarily a low-level zone for Horde players, but Alliance players can travel to the Steamwheedle Cartel city of Ratchet.",
 		["maps"] = { 11 },	-- Wailing Caverns (Outside instance)
@@ -1501,13 +1501,13 @@ root("Zones", m(KALIMDOR, {
 	}),
 }));
 
-root("HiddenQuestTriggers", m(KALIMDOR, {
+root(ROOTS.HiddenQuestTriggers, m(KALIMDOR, {
 	m(NORTHERN_BARRENS, {
 		q(26879),	-- Disciples of Naralex (completed with 26878)
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(29091),	-- Freedom Movement
 		q(29096),	-- Mor'shan Caravan Pick-Up

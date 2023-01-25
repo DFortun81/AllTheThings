@@ -1462,7 +1462,7 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTriggers",{
+root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(30453),	-- Binan Village Intro Event Tracking Event - triggeres when flying into Binan village through the Ancient Passage on mount
 		q(31310),	-- Interrogation Tracking - triggers during "Revelations" (questID 30946)

@@ -1562,7 +1562,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46328),	-- Triggers when the port to Elisande is activated
 	}),
 });
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		inst(786, {	-- The Nighthold
 			i(157764),	-- Claw of the Crystalline Scorpid

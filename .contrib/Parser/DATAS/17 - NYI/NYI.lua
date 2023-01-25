@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(SOURCELESS, {
 		["description"] = "This Category contains Things that probably exist in the game but no known source.",
 		["g"] = {
@@ -1966,7 +1966,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	}),
 }));
 -- NYI Content which should NOT be filtered in game since it is 'technically' there
-root("NeverImplemented", {
+root(ROOTS.NeverImplemented, {
 	-- Maps that don't have any data but still exist in game
 	n(-24, {	-- Maps
 		m(843),		-- Shado-Pan Showdown

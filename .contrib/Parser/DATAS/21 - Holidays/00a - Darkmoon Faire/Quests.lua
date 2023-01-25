@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Island
+root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Island
 	n(QUESTS, {
 		i(71083, {	-- Darkmoon Game Token
 			i(93724, {	-- Darkmoon Game Prize
@@ -1113,7 +1113,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 		}),
 	}),
 })));
-root("HiddenQuestTriggers",{
+root(ROOTS.HiddenQuestTriggers,{
 	tier(CATA_TIER, {
 		q(30562),	-- [DNT] A Fizzy Fusion TRACKER - triggers after completing A Fizzy Fusion (questID 29506)
 		q(30561),	-- [DNT] Fun for the Little Ones TRACKER - triggers after completing Fun For the Little Ones (questID 29507)
@@ -1161,7 +1161,7 @@ root("HiddenQuestTriggers",{
 		q(57776),	-- unknown tracking quest that appeared after speaking to Selina Dourman
 	}),
 });
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(7906),	-- Darkmoon Cards - Beast
 		q(11334),	-- He Shoots, He Scores!

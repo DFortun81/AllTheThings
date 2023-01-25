@@ -5,7 +5,7 @@ local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
 	["description"] = "Rewarded at 52, 67 and 76 Renown.",
 });
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
@@ -67,7 +67,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 
 WISPS_OF_MEMORY.customCollect = nil;
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(64074),	-- hitting Renown 45 - received mount, Ardenweald Wilderling
 	q(64406),	-- hitting Renown 48 [Death Knight] (received Memory of Rampant Transference)
 	q(64385),	-- hitting Renown 48 [Demon Hunter] (received Memory of Blazing Slaughter)

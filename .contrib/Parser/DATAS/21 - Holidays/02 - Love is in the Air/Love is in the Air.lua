@@ -5,7 +5,7 @@ local BOUQUET_RED = i(22206);
 local BOUQUET_EBON = i(44731, {
 	["timeline"] = { "added 3.0.3.9138" },
 });
-root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
+root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 	-- #if ANYCLASSIC
 	["npcID"] = -50,
 	-- #else
@@ -2157,7 +2157,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 	},
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- #if ANYCLASSIC
 	["npcID"] = -50,
 	-- #else

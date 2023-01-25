@@ -62,7 +62,7 @@ local WRATHFUL_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 40001; end
 end]];
 -- #endif
-root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, pvp(tier(WOTLK_TIER, {
+root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, pvp(tier(WOTLK_TIER, {
 	n(SEASON_DEADLY, {
 		bubbleDown({
 			["timeline"] = { "added 3.0.1", "removed 3.1.0" },
@@ -1866,7 +1866,7 @@ root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDow
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, 
+		},
 		n(PVP_ELITE, {
 			-- Exclusive to classic reward... BLIZZARD.
 			i(201993, {	-- Deadly Gladiator's Tabard
@@ -2582,7 +2582,7 @@ root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDow
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, 
+		},
 		n(PVP_ELITE, {
 			-- Original Sources are:
 			-- n34087 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
@@ -4215,7 +4215,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOTLK_TIER, {
 		n(SEASON_DEADLY, {
 			n(WEAPONS, {

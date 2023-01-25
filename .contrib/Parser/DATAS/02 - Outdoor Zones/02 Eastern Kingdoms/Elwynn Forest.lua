@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(EASTERN_KINGDOMS, {
+root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(ELWYNN_FOREST, {
 		["lore"] = "Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center. The mines are infested by kobolds and the farmlands have been taken over by the Defias.",
 		-- #if AFTER WRATH
@@ -2568,7 +2568,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(7962),	-- Wabbit Pelts
 		q(7961),	-- Waskily Wabbits!

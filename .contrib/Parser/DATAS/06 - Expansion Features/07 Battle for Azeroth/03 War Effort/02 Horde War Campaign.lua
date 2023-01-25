@@ -1587,7 +1587,7 @@ _.ExpansionFeatures =
 	}),
 };
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(54316),	-- 7500/12000 Honored with Honorbound. unlock for storyline quests
 	q(54319),	-- triggered when reaching Revered with Honorbound. unlock for storyline quests
 	q(55029),	-- tracking quest in Sylvanas Loyalist questline

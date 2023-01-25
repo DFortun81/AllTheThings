@@ -1329,7 +1329,7 @@ _.Zones =
 	}),
 };
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
 			q(42083),	-- on turn-in of (42081)

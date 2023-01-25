@@ -48,7 +48,7 @@ local HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK = {	-- Smokywood Pastures Gift Pack
 	}),
 	-- #endif
 };
-root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
+root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -61,
 	-- #else
@@ -2441,7 +2441,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 	},
 }));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	holiday(235485, {	-- Winter's Veil
 		q(45766, {["isYearly"]=true}),	-- finding Greatfather Winter in Highmountain (npc ID 104710)
 		q(64628, {	-- Triggered when learning the additional things for the Rockin' Rollin' Toy.
@@ -2450,7 +2450,7 @@ root("HiddenQuestTriggers", {
 	}),
 });
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(235485, {	-- Feast of Winter Veil
 		i(146305, {	-- Green Winter Hat	{STUCK ON RETRIEVING DATA)
 			["timeline"] = { "created 7.2.0.23436" },

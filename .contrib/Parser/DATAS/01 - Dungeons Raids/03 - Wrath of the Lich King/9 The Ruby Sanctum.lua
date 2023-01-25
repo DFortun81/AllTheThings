@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FIVE, {
+root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FIVE, {
 	inst(761, {	-- The Ruby Sanctum
 		["mapID"] = THE_RUBY_SANCTUM,
 		["coord"] = { 61.2, 52.7, DRAGONBLIGHT },

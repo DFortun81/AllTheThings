@@ -2,7 +2,7 @@
 --        T O Y S       M O D U L E        --
 ---------------------------------------------
 
-root("Secrets", n(86470, {	-- Pepe
+root(ROOTS.Secrets, n(86470, {	-- Pepe
 	-- some unlocks are referenced within different sections, so link them here for popouts
 	["sym"] = {{"select","itemID",
 		128874,	-- A Tiny Scarecrow Costume (Hallow's End)

@@ -980,7 +980,7 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTriggers",{
+root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(31123),	-- Chose Arms Warrior
 		q(31124),	-- Chose Brewmaster

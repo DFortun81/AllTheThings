@@ -1003,7 +1003,7 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35626),	-- Apprentice Artificer Andren - Apprentice Artificer Andren selected during "Friend of the Exarchs" (questID 34788)
 		q(36797),	-- Founded Garrison - triggers after building Alliance Garrison
@@ -1032,7 +1032,7 @@ root("HiddenQuestTriggers", {
 		q(49544),	-- triggers after handing in "Hero's Call: Shadowmoon Valley!" (questID 49562)
 	}),
 });
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(WEAPONS, {
 			i(117994),	-- RENAME Karabor Honor Guard Axe

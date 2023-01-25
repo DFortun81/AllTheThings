@@ -228,7 +228,7 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34536),	-- Iron Docks Challenge Mode - Bronze Addition (Nth)
 		q(34526),	-- Iron Docks Challenge Mode - Consolation (Nth)

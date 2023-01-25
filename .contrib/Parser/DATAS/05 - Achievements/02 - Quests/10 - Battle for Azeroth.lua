@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 	achcat(ACHIEVEMENT_CATEGORY_BATTLE_FOR_AZEROTH_QUESTS, {
 		h(ach(13009, {	-- Adept Sandfisher
 			crit(1, {		-- Cobalt Sandworm Scale

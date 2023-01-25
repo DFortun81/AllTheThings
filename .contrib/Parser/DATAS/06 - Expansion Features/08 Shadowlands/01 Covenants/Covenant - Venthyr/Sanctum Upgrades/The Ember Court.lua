@@ -136,7 +136,7 @@ local SILVERTIP_DREDWING = i(181316, {	-- -- Silvertip Dredwing (MOUNT!)
 	["cost"] = { { "c", ANIMA, 5000 } },
 });
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }, ["customCollect"] = "SL_COV_VEN" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }, ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\Inv_misc_sigil_revendreth01",
@@ -2265,7 +2265,7 @@ for _,g in ipairs({ALEXANDROS_GROUP, VASHJ_GROUP, CHOOFA_GROUP, KASSIR_GROUP, DO
 	end
 end
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	-- Dredger Butler Appearance
 		q(61581),	-- Choosing Purple during 'Shades of Muck' (61851)
 		q(61584),	-- Choosing Blue during 'Shades of Muck' (61851)
@@ -2447,7 +2447,7 @@ root("HiddenQuestTriggers", {
 		q(62018),	-- unlocking Dread Sentinel's Court Battleplate set (TransmogSetID 2077, Dread Sentinel's Court items)
 });
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(59539),	-- For Your Consideration: Baroness Vashj
 		q(59548),	-- For Your Consideration: Lady Moonberry

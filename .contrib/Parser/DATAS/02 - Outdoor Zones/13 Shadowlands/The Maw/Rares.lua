@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(THE_MAW, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(COMMON_BOSS_DROPS, {
@@ -516,7 +516,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(61136),	-- Agonix bonus objective
 	q(60920),	-- Akros bonus objective
 	q(59230),	-- Dartanos bonus objective

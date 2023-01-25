@@ -13,7 +13,7 @@ local function FatedItem(modItemID, modID)
 	item.timeline = { ADDED_SL_S4 };
 	return item;
 end
-root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	inst(1190, {	-- Castle Nathria
 		["isRaid"] = true,
 		["coord"] = { 46.1, 41.5, REVENDRETH },
@@ -1520,7 +1520,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(SL_TIER, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(SL_TIER, {
 	inst(1190, {	-- Castle Nathria
 		i(184873),	-- Soul Igniter (Test)
 	}),

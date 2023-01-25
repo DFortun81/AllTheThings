@@ -81,7 +81,7 @@ local VALIANT_DAILY_OnUpdate = function(valiantQuestID)
 	return [[function(t) if not C_QuestLog.IsOnQuest(]] .. valiantQuestID .. [[) then t.visible = false; return true; end end]];
 end
 
-root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
+root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
 	n(-363, {	-- The Argent Tournament
 		["maps"] = { ICECROWN, 170 },
 		["groups"] = {
@@ -408,7 +408,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 							["_drop"] = { "g" },
 						}),
-						
+
 					},
 				})),
 				ach(2772),	-- Tilted!
@@ -892,7 +892,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						VALIANTS_SEAL,
 					},
 				}),
-				
+
 				q(13735, {	-- A Champion Rises (A) (Darnassus)
 					["qg"] = 33592,	-- Jaelyne Evensong
 					["sourceQuest"] = 13725,	-- The Valiant's Challenge (A) (Darnassus)
@@ -993,7 +993,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						CHAMPIONS_SEAL,
 					},
 				}),
-				
+
 				q(13681, {	-- A Chip Off the Ulduar Block
 					["qg"] = 33435,	-- Bozzle Blastbolt
 					["sourceQuest"] = 13820,	-- The Blastbolt Brothers
@@ -1048,7 +1048,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						CHAMPIONS_SEAL,
 					},
 				},
-				
+
 				q(13689, {	-- A Valiant Of Darnassus
 					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuest"] = 13679,	-- The Aspirant's Challenge (A)
@@ -1109,7 +1109,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = { UNDEAD },
 				}),
-				
+
 				q(13760, {	-- A Valiant's Field Training (A) (Darnassus, Valiant)
 					["qg"] = 33652,	-- Illestria Bladesinger
 					["sourceQuests"] = {
@@ -1272,7 +1272,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						VALIANTS_SEAL,
 					},
 				}),
-				
+
 				q(13669, {	-- A Worthy Weapon (A) (The Silver Covenant, Aspirant)
 					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuests"] = {
@@ -1489,7 +1489,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						VALIANTS_SEAL,
 					},
 				}),
-				
+
 				q(13790, {	-- Among the Champions (A, non-DK)
 					["qg"] = 33771,	-- Luuri
 					["sourceQuest"] = 13794,	-- Eadric the Pure
@@ -1602,7 +1602,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						CHAMPIONS_PURSE,
 					},
 				}),
-				
+
 				q(13855, {	-- At The Enemy's Gates (A) (Darnassus, Valiant)
 					["providers"] = {
 						{ "n", 33654 },	-- Airae Starseeker
@@ -1873,7 +1873,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						VALIANTS_SEAL,
 					},
 				}),
-				
+
 				q(13861, {	-- Battle Before the Citadel (A, non-DK)
 					["providers"] = {
 						{ "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
@@ -1950,7 +1950,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						CHAMPIONS_PURSE,
 					},
 				}),
-				
+
 				q(24442, {	-- Battle Plans Of The Kvaldir
 					["provider"] = { "i", 49676 },	-- Kvaldir Attack Plans
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -1970,7 +1970,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						}),
 					},
 				}),
-				
+
 				{	-- Breakfast Of Champions
 					["allianceQuestData"] = q(14076, {	-- Breakfast Of Champions (A)
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
@@ -2003,7 +2003,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						CHAMPIONS_SEAL,
 					},
 				},
-				
+
 				q(13846, {	-- Contributin' To The Cause
 					["qg"] = 34210,	-- Squire Artie
 					["sourceQuests"] = {
@@ -2092,7 +2092,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						CHAMPIONS_SEAL,
 					},
 				}),
-				
+
 				{	-- Gormok Wants His Snobolds
 					["allianceQuestData"] = q(14090, {	-- Gormok Wants His Snobolds (A)
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
@@ -2123,7 +2123,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						CHAMPIONS_SEAL,
 					},
 				},
-				
+
 				q(14095, {	-- Identifying the Remains
 					["provider"] = { "i", 46955 },	-- Kraken Tooth
 					["description"] = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
@@ -2133,7 +2133,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 					["cr"] = 34925,	-- North Sea Kraken
 					["isDaily"] = true,
 				}),
-				
+
 				q(13627, {	-- Jack Me Some Lumber
 					["qg"] = 33434,	-- Bezzle Blastbolt
 					["sourceQuest"] = 13820,	-- The Blastbolt Brothers
@@ -4154,7 +4154,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						champ(50, i(46874)),	-- Argent Crusader's Tabard
 						champ(150, i(47541)),	-- Argent Pony Bridle
 						champ(100, i(47180)),	-- Argent Warhorse (MOUNT!)
-						
+
 						-- Old Heirlooms
 						-- NOTE: The champion seal costs might be different prior to 6.2, double check when the vendor becomes available
 						champ(25, i(42944, {	-- Balanced Heartseeker
@@ -4244,7 +4244,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bu
 						champ(25, i(93903, {	-- Weathered Observer's Shield
 							["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
 						})),
-						
+
 						-- New Heirlooms
 						champ(25, i(122350, {	-- Balanced Heartseeker
 							["timeline"] = { "added 6.1.0.19445" },

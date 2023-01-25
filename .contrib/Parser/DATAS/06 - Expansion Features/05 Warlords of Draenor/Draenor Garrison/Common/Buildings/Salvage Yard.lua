@@ -246,7 +246,7 @@ _.ExpansionFeatures =
 		})),
 	}),
 };
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		garrisonBuilding(141, {
 			cl(DEATHKNIGHT, {

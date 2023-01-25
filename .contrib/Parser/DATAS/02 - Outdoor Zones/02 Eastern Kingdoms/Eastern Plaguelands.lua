@@ -20,7 +20,7 @@ local CRAFTSMANS_WRIT_QUEST = function(id, itemID, cost)
 		-- #endif
 	}));
 end
-root("Zones", m(EASTERN_KINGDOMS, {
+root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(EASTERN_PLAGUELANDS, {
 		-- #if AFTER CATA
 		["lore"] = "The Eastern Plaguelands is the more heavily devastated half of the Plaguelands, the remnants of the Kingdom of Lordaeron. They are located east of the Western Plaguelands and north of the Hinterlands.\n\nThe Scourge's rule here is supreme. Their southern capital of Stratholme is here, under the command of the lich, Kel'Thuzad. The ground is brown, ugly, and sick, the trees corrupted into giant mushrooms and the air polluted with orange mist. Undead, necromancers, and Damned cultists prowl the land. The Scarlet Crusade boasts a large army and battles fervently and vainly against the Scourge; outsiders are also unwelcome. Amani forest trolls strike from the north, attempting to reclaim their ancestral empire.",
@@ -3691,7 +3691,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 }));
 
 -- #if AFTER 4.0.3
-root("HiddenQuestTriggers", bubbleDown({ ["timeline"] = { "added 4.0.3" } }, m(EASTERN_KINGDOMS, {
+root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { "added 4.0.3" } }, m(EASTERN_KINGDOMS, {
 	m(EASTERN_PLAGUELANDS, {
 		q(27552),	-- Triggers on changing buffs at Fiona's Caravan
 		q(27553),	-- Triggers on changing buffs at Fiona's Caravan

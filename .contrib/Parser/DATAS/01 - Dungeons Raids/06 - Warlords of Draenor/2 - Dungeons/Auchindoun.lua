@@ -195,7 +195,7 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35960),	-- Auchindoun Reward Quest
 		q(34539),	-- Draenor Challenge Mode - Bronze Addition (Nth)

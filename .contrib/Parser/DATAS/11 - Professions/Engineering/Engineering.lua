@@ -3386,7 +3386,7 @@ profession(ENGINEERING, {
 });
 
 -- Engineering Item Database,
-local itemDB = root("ItemDB", {});
+local itemDB = root(ROOTS.ItemDB, {});
 
 -- Recipe Cache (for Validation),
 local recipeCache, recipeCacheU = {}, {};
@@ -3599,7 +3599,7 @@ itemrecipe("Schematic: Flintlocke's Woodchucker", 70177, 100587, CATA_PHASE_TWO)
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	filter(RECIPES, {
 		-- #if CLASSIC
 		i(22729),	-- Schematic: Steam Tonk Controller [This doesn't get added until TBC]

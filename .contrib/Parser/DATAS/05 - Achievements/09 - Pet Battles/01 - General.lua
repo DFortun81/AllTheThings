@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 	achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 		petbattle(ach(8080)),		-- Fabled Pandaren Tamer*
 		petbattle(ach(7908, {		-- I Choose You*

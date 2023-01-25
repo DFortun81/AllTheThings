@@ -85,7 +85,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["f"] = RECIPES,
 	}),
 };
-root("Holidays", applyholiday(NOBLEGARDEN, {
+root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 	-- #if ANYCLASSIC
 	["npcID"] = -51,
 	-- #else
@@ -535,7 +535,7 @@ root("Holidays", applyholiday(NOBLEGARDEN, {
 	},
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(235477, {	-- Noblegarden
 		-- Classic Stuff
 		i(6834),	-- Black Tuxedo

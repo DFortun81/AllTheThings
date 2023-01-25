@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "removed 7.0.3.22810" } }, {	-- Expansion Prelaunch Events
+root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "removed 7.0.3.22810" } }, {	-- Expansion Prelaunch Events
 	tier(LEGION_TIER, {
 		["lvl"] = 98,
 		["groups"] = {
@@ -209,7 +209,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				q(43242, { ["isRepeatable"] = true, }),	-- Demon Commander (Westfall)
 				q(44184, {	-- In the Blink of an Eye
 					["provider"] = { "n", 114562 },	-- Khadgar's Upgraded Servant
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						44500,	-- Author! Author!
 						43926,	-- Legion: The Legion Returns
 					},
@@ -343,7 +343,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 	}),
 })));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		n(WEAPONS, {
 			i(150611),	-- Guardian's Oaken Spear

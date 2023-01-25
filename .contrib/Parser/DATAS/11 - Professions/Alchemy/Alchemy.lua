@@ -10,7 +10,7 @@ local applytraining = function(g)
 end
 
 -- Alchemy - Skill ID 171 / Spell ID 2259
-root("Professions", prof(ALCHEMY, {
+root(ROOTS.Professions, prof(ALCHEMY, {
 	tier(CLASSIC_TIER, {
 		-- #if AFTER 4.3.0.14732
 		n(QUESTS, {
@@ -3507,7 +3507,7 @@ root("Professions", prof(ALCHEMY, {
 }));
 
 -- Alchemy Item Database
-local itemDB = root("ItemDB", {});
+local itemDB = root(ROOTS.ItemDB, {});
 
 -- Recipe Cache (for Validation)
 local recipeCache, recipeCacheU = {}, {};
@@ -3716,7 +3716,7 @@ itemrecipe("Recipe: Mighty Shadow Protection Potion", 44568, 53938, WRATH_PHASE_
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	filter(RECIPES, {
 		itemrecipe("Recipe: Elixir of Tongues", 2556, 2336);
 		itemrecipe("Deprecated Recipe: Elixir of Fortitude", 2554);

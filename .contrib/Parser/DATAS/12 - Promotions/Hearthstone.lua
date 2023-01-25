@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root("Promotions", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	n(-533, { 	-- Hearthstone Promotion
 		n(-533, { 	-- Hearthstone Promotion
 			["description"] = "All you need to do is win 3 games in Hearthstone to qualify for these rewards.\n\nThe game is free, go get it!\n\nNOTE: You can thank IceQ1337 for this!",

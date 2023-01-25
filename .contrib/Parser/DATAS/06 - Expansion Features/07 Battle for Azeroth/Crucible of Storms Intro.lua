@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", {
+root(ROOTS.ExpansionFeatures, {
 	tier(BFA_TIER, {
 		-- TODO: probably give this a better name/header
 		o(311218, {	-- Xal'atath, Blade of the Black Empire

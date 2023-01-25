@@ -5,7 +5,7 @@ local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
 	["cost"] = { { "c", ANIMA, 250 } },	-- 250x Reservoir Anima
 });
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(REWARDS, {
 			i(183702, {	-- Nature's Splendor
@@ -1388,7 +1388,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 
 MEMORY_OF_A_VITAL_SACRIFICE.customCollect = nil;
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(61908),	-- Ensemble: Conservator's Warbark
 	q(61909),	-- Ensemble: Conservator's Guise
 	q(61910),	-- Ensemble: Conservator's Raiment
@@ -1409,7 +1409,7 @@ root("HiddenQuestTriggers", {
 	q(62412),	-- unlocking Night Courtier's Pack
 });
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		n(NIGHT_FAE, {
 			n(ARMOR, {

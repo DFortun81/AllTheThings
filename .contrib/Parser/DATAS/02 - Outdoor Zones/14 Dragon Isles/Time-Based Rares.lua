@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(RARES, {
 		n(-1143, {	-- Every 30 min
 			["description"] = "Every 30 minutes only 1 of those rares spawn & they will be marked with a skull on the map if you are in the respective zone.\n\nEU: 6am CET 6:30am CET and so on\n\nNA: 7am PST 7:30am PST and so on.",

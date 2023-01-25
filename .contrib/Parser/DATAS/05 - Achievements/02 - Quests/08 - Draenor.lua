@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 	achcat(ACHIEVEMENT_CATEGORY_DRAENOR_QUESTS, {
 		ach(9437),		-- A Demidos of Reality (Socrethar's Rise)
 		ach(9433),		-- A-VOID-ance (Shadowmoon Enclave)

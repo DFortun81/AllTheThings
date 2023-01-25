@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(271, {	-- Ahn'kahet: The Old Kingdom
 		["mapID"] = AHNKAHET_THE_OLD_KINGDOM,
 		["coord"] = { 28.3, 51.6, DRAGONBLIGHT },
@@ -332,7 +332,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 })));
 
 -- #if AFTER WOD
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35489),	-- Ahn'kahet: The Old Kingdom Reward Quest - Normal completion
 		q(35490),	-- Ahn'kahet: The Old Kingdom Reward Quest - Heroic completion
@@ -342,7 +342,7 @@ root("HiddenQuestTriggers", {
 -- #endif
 
 -- #if AFTER 4.3.0.14732
-root("NeverImplemented", {
+root(ROOTS.NeverImplemented, {
 	-- #if BEFORE 6.2.0
 	i(44191, {	-- Ice-Rimed Chopper
 		["timeline"] = { "created 3.0.1", "added 6.2.0" },

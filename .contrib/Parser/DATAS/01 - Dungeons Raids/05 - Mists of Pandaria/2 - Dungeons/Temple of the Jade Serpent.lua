@@ -179,7 +179,7 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(MOP_TIER, {
 		q(31499),	-- Jade Serpent Challenge Mode - Bronze Addition (Nth)
 		q(31498),	-- Jade Serpent Challenge Mode - Consolation (Nth)

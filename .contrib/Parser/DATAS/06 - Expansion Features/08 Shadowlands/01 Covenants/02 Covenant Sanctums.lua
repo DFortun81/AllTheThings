@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("ExpansionFeatures", tier(SL_TIER, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 	n(COVENANT_SANCTUMS, {
 		["description"] = "These rewards are shared across Covenants.",
 		["g"] = {
@@ -341,7 +341,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(61326),	-- [[Deprecated]]
 		q(61327),	-- [[Deprecated]]
@@ -370,7 +370,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	-- Misson Table
 	q(60635),	-- Night Fae Mission Table / Unknown Venthyr
 

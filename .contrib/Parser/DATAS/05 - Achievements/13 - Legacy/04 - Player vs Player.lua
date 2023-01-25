@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP_LEGACY, {
 		un(REMOVED_FROM_GAME, ach(11468)),		-- Alive for Five
 		un(REMOVED_FROM_GAME, h(ach(449, {		-- Blood Guard

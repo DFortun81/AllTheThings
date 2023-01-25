@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.27101", "removed 8.0.1.28153" }, ["lvl"] = 110 }, {	-- Expansion Prelaunch Events
+root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.27101", "removed 8.0.1.28153" }, ["lvl"] = 110 }, {	-- Expansion Prelaunch Events
 	tier(BFA_TIER, {
 		n(QUESTS, {
 			-- Attaching the quests to each zone that is involved in the "War of the Thorns" Campaign.  Excluding Undercity, Stomrwind and Northern Barrens due to only one quest taking place in these zones and it's not relevant to link for just the one.
@@ -540,7 +540,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.27101", "
 	}),
 })));
 
-root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED},{
+root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED},{
 	tier(BFA_TIER, {	-- Battle For Azeroth
 		n(-520, {	-- Expansion Prelaunch Events
 			n(QUESTS, {

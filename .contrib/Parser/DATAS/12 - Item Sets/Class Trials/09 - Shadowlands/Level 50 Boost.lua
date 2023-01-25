@@ -2,7 +2,7 @@
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
 
-root("GearSets", n(CLASS_TRIAL, {
+root(ROOTS.GearSets, n(CLASS_TRIAL, {
 	tier(SL_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_FIFTY_BOOST, {
 			-- Note: [As of October 13th, 2020 Level 120 Boost became Level 50 Boost]
@@ -403,7 +403,7 @@ root("GearSets", n(CLASS_TRIAL, {
 		}),
 	})),
 }));
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(CLASS_TRIAL, {
 		tier(BFA_TIER, {
 			cl(DEATHKNIGHT, {

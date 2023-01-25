@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	n(ACHIEVEMENTS, {
 		ach(15684, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL } }, {	-- Fates of the Shadowlands Raids
 			-- Meta Achievement

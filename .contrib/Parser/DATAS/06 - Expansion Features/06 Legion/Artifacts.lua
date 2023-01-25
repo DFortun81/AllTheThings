@@ -2572,7 +2572,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- Fill certain Artifacts into the Arch Achievement which is needed to earn them
 -- TODO: note about what is necessary to unlock the Artifacts once achievement is gained
-root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(PROFESSIONS, {
 		prof(ARCHAEOLOGY, {
 			ach(10603, {	-- A Keen Eye

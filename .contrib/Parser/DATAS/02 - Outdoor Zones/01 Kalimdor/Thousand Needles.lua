@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(KALIMDOR, {
+root(ROOTS.Zones, m(KALIMDOR, {
 	m(THOUSAND_NEEDLES, {
 		-- #if AFTER CATA
 		["lore"] = "Thousand Needles is a flooded zone post-Shattering, dotted with mesa islands. The Shimmering Flats, formerly a racetrack, is completely flooded--the NPCs have made the best of a bad situation and opened up Fizzle and Pozzik's Speedbarge. The Southsea Pirates and Twilight Cultists have also settled this zone.",
@@ -2546,7 +2546,7 @@ root("Zones", m(KALIMDOR, {
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(1174, {	-- Gnomes Win!
 			i(5857),	-- Gnome Prize Box

@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 	petbattle(achcat(ACHIEVEMENT_CATEGORY_LEVEL, {
 		ach(6570, {	-- All Growns Up! (Lvl 25)
 			ach(6569),	-- Old Timer (Lvl 20)

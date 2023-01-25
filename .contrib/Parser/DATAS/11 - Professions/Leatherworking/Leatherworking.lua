@@ -7709,7 +7709,7 @@ profession(LEATHERWORKING, {
 });
 
 -- Leatherworking Item Database
-local itemDB = root("ItemDB", {});
+local itemDB = root(ROOTS.ItemDB, {});
 
 -- Recipe Cache (for Validation)
 local recipeCache, recipeCacheU = {}, {};
@@ -8177,7 +8177,7 @@ itemrecipe("Pattern: Windripper Leggings", 44933, 62177, WRATH_PHASE_ONE);
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	filter(RECIPES, {
 		itemrecipe("Deprecated Pattern: Light Winter Cloak", 2404),
 		itemrecipe("Deprecated Pattern: Light Winter Boots", 2405),

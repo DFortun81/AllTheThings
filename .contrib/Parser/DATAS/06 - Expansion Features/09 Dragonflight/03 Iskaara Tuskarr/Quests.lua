@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(ISKAARA_TUSKARR, {
 		n(QUESTS, {
 				-- RENOWN 1 --
@@ -587,7 +587,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 	}),
 })));
 
-root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
 		q(72781),	-- Triggered with 'Tuskarr Fishing Gear' (71230)
 		q(71184),	-- Triggered with 'While the Iron Is Hot' (66444)

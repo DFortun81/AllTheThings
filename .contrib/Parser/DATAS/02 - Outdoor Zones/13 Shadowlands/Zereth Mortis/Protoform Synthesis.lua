@@ -19,7 +19,7 @@ local UNFORMED_LATTICE = 189153;
 local VESPOID_LATTICE = 189154;
 local VIPERID_LATTICE = 189155;
 local VOMBATA_LATTICE = 189156;
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	m(ZERETH_MORTIS, {
 		prof(PROTOFORM_SYNTHESIS, {
 			n(ACHIEVEMENTS, {
@@ -934,7 +934,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	}),
 })));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		prof(PROTOFORM_SYNTHESIS, {
 			q(65392, {	-- Schematic Reassimilation: Patient Bufonid (Mount moved to Quest)

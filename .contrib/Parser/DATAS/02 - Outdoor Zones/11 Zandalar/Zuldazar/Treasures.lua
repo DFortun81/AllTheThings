@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(ZULDAZAR, {
 		n(TREASURES, {
 			o(288596, {	-- Cache of Secrets
@@ -74,7 +74,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", m(ZANDALAR, {
+root(ROOTS.HiddenQuestTriggers, m(ZANDALAR, {
 	m(ZULDAZAR, {
 		n(TREASURES, {
 			q(50950),	-- for using the Incense prior to opening Gift of the Brokenhearted for achievement Treasures of Zuldaza

@@ -1219,7 +1219,7 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers",{
+root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(33226),	-- Short-Supply Reward - Celestials bonus roll
 		q(32923),	-- Short-Supply Reward - Galleon bonus roll

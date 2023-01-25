@@ -198,7 +198,7 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35961),	-- Skyreach Reward Quest
 		q(34542),	-- Spires of Arak Challenge Mode - Bronze Addition (Nth)

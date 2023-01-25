@@ -96,7 +96,7 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35439),	-- Hour of Twilight Quest Reward - Heroic completion
 	}),

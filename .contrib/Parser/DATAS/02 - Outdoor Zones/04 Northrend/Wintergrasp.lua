@@ -9,7 +9,7 @@ local sks = function(cost, item)
 end
 local wmoh = function(cost, item)
 	-- #if BEFORE 4.0.1
-	applycost(item, { "c", 126, cost });	-- Wintergrasp Mark of Honor 
+	applycost(item, { "c", 126, cost });	-- Wintergrasp Mark of Honor
 	-- #endif
 	return item;
 end
@@ -280,7 +280,7 @@ local WINTERGRASP_HEIRLOOMS = pvp({
 	moh(10, i(122366, {	-- Upgraded Dwarven Hand Cannon
 		["timeline"] = { "added 6.1.0.19445" },
 	})),
-	
+
 	-- Old Heirlooms before they became learnable
 	sks(200, i(44102, {	-- Aged Pauldrons of The Five Thunders
 		["timeline"] = { "removed 6.1.0.19445" },
@@ -409,7 +409,7 @@ appendGroups(WINTERGRASP_HEIRLOOMS, KNIGHT_DAMERON_GROUPS);
 appendGroups(WINTERGRASP_HEIRLOOMS, STONE_GUARD_GROUPS);
 appendGroups(WINTERGRASP_HEIRLOOMS, TRAVIS_DAY_GROUPS);
 
-root("Zones", {
+root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(WINTERGRASP, {
 			["lore"] = "Wintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns.",

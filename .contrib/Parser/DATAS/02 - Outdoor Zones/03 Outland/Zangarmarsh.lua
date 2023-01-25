@@ -66,7 +66,7 @@ local OnTooltipForSporeggar = [[function(t)
 		end
 	end
 end]];
-root("Zones", {
+root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(ZANGARMARSH, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 			["lore"] = "Zangarmarsh is a leveling zone intended to be completed after Hellfire Peninsula. It is a surreal swamp, with neon giant mushrooms and hostile naga. The Cenarion Circle is investigating why wildlife has been dying, discovering that Lady Vashj is draining Coilfang Reservoir for her nefarious purposes. Players can also gain reputation with Sporeggar, a group of sporelings at war with ogres. Alliance players also further learn about lost ones--Draenei heavily corrupted by shadow magic--and begin gaining reputation with the Kurenai.",
@@ -1768,13 +1768,13 @@ root("Zones", {
 
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(9734),	-- Return to the Marsh (NYI) - completed with quest 9732
 	q(9733),	-- Warning the Cenarion Circle (NYI) - completed with quest 9724
 });
 
 -- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(10459),	-- Revered Among the Cenarion Expedition
 	}),

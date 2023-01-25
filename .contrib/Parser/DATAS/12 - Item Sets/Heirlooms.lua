@@ -2,7 +2,7 @@
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
 
-root("GearSets", n(HEIRLOOMS, {
+root(ROOTS.GearSets, n(HEIRLOOMS, {
 	n(ACHIEVEMENTS, {
 		ach(9909, {	-- Heirloom Hoarder (35)
 			i(122718, {	-- Clinking Present
@@ -427,7 +427,7 @@ root("GearSets", n(HEIRLOOMS, {
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		n(HEIRLOOMS, {
 			tier(CATA_TIER, 0.3, {

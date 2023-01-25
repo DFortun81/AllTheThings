@@ -8,28 +8,35 @@ HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -4200
 -- Root constants
 -- Usage: ROOTS.[Constant]
 ROOTS = {
-	["ExpansionFeatures"] = "ExpansionFeatures",
-	["Instances"] = "Instances",
-	["Zones"] = "Zones",
-	["WorldDrops"] = "WorldDrops",
-	["GroupFinder"] = "GroupFinder",
+	["AchievementDB"] = "AchievementDB",
 	["Achievements"] = "Achievements",
-	["WorldEvents"] = "WorldEvents",
-	["PVP"] = "PVP",
-	["Craftables"] = "Craftables",
-	["Professions"] = "Professions",
-	["Secrets"] = "Secrets",
-	["GearSets"] = "GearSets",
-	["Promotions"] = "Promotions",
 	["BlackMarket"] = "BlackMarket",
-	["InGameShop"] = "InGameShop",
-	["TradingPost"] = "TradingPost",
-	["PetBattles"] = "PetBattles",
-	["HiddenQuestTriggers"] = "HiddenQuestTriggers",
-	["HiddenAchievementTriggers"] = "HiddenAchievementTriggers",
-	["NeverImplemented"] = "NeverImplemented",
+	["CommonQualityItems"] = "CommonQualityItems",
+	["Craftables"] = "Craftables",
+	["ExpansionFeatures"] = "ExpansionFeatures",
 	["Factions"] = "Factions",
+	["GearSets"] = "GearSets",
+	["GroupFinder"] = "GroupFinder",
+	["HiddenAchievementTriggers"] = "HiddenAchievementTriggers",
+	["HiddenQuestTriggers"] = "HiddenQuestTriggers",
 	["Holidays"] = "Holidays",
+	["InGameShop"] = "InGameShop",
+	["Instances"] = "Instances",
+	["ItemDB"] = "ItemDB",
+	["ItemDBConditional"] = "ItemDBConditional",
+	["NeverImplemented"] = "NeverImplemented",
+	["PVP"] = "PVP",
+	["PetBattles"] = "PetBattles",
+	["PoorQualityItems"] = "PoorQualityItems",
+	["Professions"] = "Professions",
+	["Promotions"] = "Promotions",
+	["RecipeDB"] = "RecipeDB",
+	["Secrets"] = "Secrets",
+	["TradingPost"] = "TradingPost",
+	["Uncollectable"] = "Uncollectable",
+	["WorldDrops"] = "WorldDrops",
+	["WorldEvents"] = "WorldEvents",
+	["Zones"] = "Zones",
 };
 
 -- Automatic Header Constants (verify if supported against AllTheThings.lua::HeaderTypeAbbreviations)
@@ -2240,7 +2247,6 @@ profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: 
 	-- be associated to the required Profession!
 	root(ROOTS.Professions, bubbleDown({ ["requireSkill"] = skillID }, p));
 	-- print("Don't use profession(). It's pointless now that it no longer applies the 'requireSkill' to its content. It will be removed soon.")
-	-- root("Professions", p);
 	return p;
 end
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
@@ -2447,7 +2453,7 @@ end
 
 -- Used by the Harvester (Parser)
 function Harvest(things)
-	local itemDB = root("ItemDBConditional", {});
+	local itemDB = root(ROOTS.ItemDBConditional, {});
 	local thing;
 	for i,j in pairs(things) do
 		thing = itemDB[i];

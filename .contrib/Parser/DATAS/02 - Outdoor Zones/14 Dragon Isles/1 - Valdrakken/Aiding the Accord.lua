@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(VALDRAKKEN, {
 		header(HEADERS.Quest, 70750, {	-- Aiding the Accord
 			-- Weekly
@@ -63,7 +63,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
 		q(71243),	-- Weekly Quest?
 		q(72892),	-- After "Aiding the Accord" series

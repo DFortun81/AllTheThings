@@ -2,7 +2,7 @@
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
 
-root("GearSets", n(CLASS_TRIAL, {
+root(ROOTS.GearSets, n(CLASS_TRIAL, {
 	tier(SL_TIER, bubbleDown({["u"] = BLIZZARD_BALANCE}, {
 		n(LEVEL_SIXTY, {
 			-- Note: [As of October 13th, 2020 Level 120 Boost became Level 50 Boost]

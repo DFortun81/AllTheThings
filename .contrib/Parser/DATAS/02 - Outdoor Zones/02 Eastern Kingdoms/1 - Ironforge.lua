@@ -28,7 +28,7 @@ local FISHING_AWARD_GROUPS = {
 		["timeline"] = { "added 4.0.1.12984" },
 	}),
 };
-root("Zones", m(EASTERN_KINGDOMS, {
+root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(IRONFORGE, {
 		-- #if AFTER CATA
 		["lore"] = "Ironforge is the capital city of the dwarves, proud members of the Alliance. It is the ancestral home of the Bronzebeard dwarves. The Council of Three Hammers rules the kingdom of Khaz Modan from the throne room within the city.",

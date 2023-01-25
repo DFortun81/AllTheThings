@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root("Craftables", tier(CLASSIC_TIER, {
+root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 	prof(ALCHEMY, {
 		category(644, {	-- Materials
 			i(9210),	-- Ghost Dye
@@ -2741,7 +2741,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 		}),
 	}),
 }));
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(PROFESSIONS, {
 		prof(BLACKSMITHING, {
 			tier(CLASSIC_TIER, {

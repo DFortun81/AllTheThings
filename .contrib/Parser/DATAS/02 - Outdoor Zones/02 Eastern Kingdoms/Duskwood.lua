@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(EASTERN_KINGDOMS, {
+root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(DUSKWOOD, {
 		["lore"] = "Duskwood is a zone in Southern Eastern Kingdoms, warped and cursed due to the Scythe of Elune. Beneath the eternal blanket of darkness which gave Duskwood its current name, the Scythe's effects have transformed what was once a beautiful part of Elwynn Forest into a land covered in gnarled trees and inhabited by the hideous undead and extradimensional Worgen, brought along with the black fog hanging over the woods. Ogres moving in from Deadwind Pass have brought up even more problems.",
 		-- #if AFTER WRATH
@@ -2134,7 +2134,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 }));
 
 -- #if AFTER 4.0.3
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(CATA_TIER, {
 		q(26673),	-- REUSE - BREADCRUMB (completed when turning in "Roland's Doom" (26670)
 	}),
@@ -2148,7 +2148,7 @@ root("HiddenQuestTriggers", {
 -- #endif
 
 -- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(402),	-- Sirra is Busy
 	}),

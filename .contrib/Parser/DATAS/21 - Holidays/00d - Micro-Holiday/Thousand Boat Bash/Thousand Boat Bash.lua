@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-root("Holidays", holiday(1572478, {	-- Thousand Boat Bash
+root(ROOTS.Holidays, holiday(1572478, {	-- Thousand Boat Bash
 	["u"] = MICRO_HOLIDAY,
 	["groups"] = bubbleDown({ ["u"] = MICRO_HOLIDAY }, {
 		n(WORLD_QUESTS, bubbleDown({

@@ -1,5 +1,5 @@
-local Items = root("ItemDBConditional");
-local Recipes = root("RecipeDB");
+local Items = root(ROOTS.ItemDBConditional);
+local Recipes = root(ROOTS.RecipeDB);
 local ProfessionID = BLACKSMITHING;
 local ARMORSMITIH = 9788;
 local WEAPONSMITH = 9787;

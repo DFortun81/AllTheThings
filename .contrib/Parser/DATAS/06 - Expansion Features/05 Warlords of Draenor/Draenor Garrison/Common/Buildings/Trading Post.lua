@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(WOD_TIER, {
+root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 	n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 		n(BUILDINGS, {
 			garrisonBuilding(145, {	-- Trading Post (rank 1: 111, rank 2: 144, rank 3: 145)
@@ -214,7 +214,7 @@ root("ExpansionFeatures", tier(WOD_TIER, {
 	})),
 }));
 
-root("HiddenQuestTriggers", tier(WOD_TIER, {
+root(ROOTS.HiddenQuestTriggers, tier(WOD_TIER, {
 	n(GARRISONS, {
 		q(50681),	-- learning Ensemble: Sha'tari Defender's Plate
 	}),

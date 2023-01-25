@@ -28,7 +28,7 @@ local SABRIEL = n(168147, { -- Sabriel the Bonecleaver
 	},
 });
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\Inv_misc_sigil_maldraxxus01",
@@ -159,7 +159,7 @@ for _,t in ipairs({GIEGER,SABRIEL,GRATEFUL,AMALGAMTED_FORWORNS_JOURNAL,TEMPERED_
 	t.customCollect = nil;
 end
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(61187),	-- Rank 3 Buff - Skeleton Command
 	q(61185),	-- Rank 3 Buff - Arctic Flesh
 	q(61186),	-- Rank 3 Buff - Primed Maldracite

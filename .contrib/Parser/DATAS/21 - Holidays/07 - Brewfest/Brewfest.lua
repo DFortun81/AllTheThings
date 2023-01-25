@@ -89,7 +89,7 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	GameTooltip:AddLine("One-Time Quests:");
 	local coren = C_QuestLog.IsQuestFlaggedCompleted(12491);
 	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Direbrew's Dire Brew", _.L[coren and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
-	
+
 	-- #if AFTER WRATH
 	local pink = C_QuestLog.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 11120 or 11118);
 	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Pink Elekks On Parade", _.L[pink and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
@@ -139,7 +139,7 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	end
 end]];
 
-root("Holidays", applyholiday(BREWFEST, {
+root(ROOTS.Holidays, applyholiday(BREWFEST, {
 	-- #if ANYCLASSIC
 	["npcID"] = -56,
 	-- #else
@@ -2313,14 +2313,14 @@ root("Holidays", applyholiday(BREWFEST, {
 		}),
 	},
 }));
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(37247, {	-- Angry Brewfest Letter - triggers when using "Angry Brewfest Letter" to cancel Brew of the Month subscription
 			["timeline"] = { "added 6.0.1" },
 		}),
 	}),
 });
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- #if ANYCLASSIC
 	["npcID"] = -56,
 	-- #else

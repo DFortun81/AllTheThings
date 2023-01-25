@@ -62,7 +62,7 @@ local SymPvP = function(ClassID, HeaderID)
 	return SymLinKPvP
 end
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	o(375368, {	-- Creation Catalyst Console
 		["description"] = "Help us gather information of what is/isnt available via doing reports in ATT discord. Especially the alternative sets and if the pvp transmog is available somewhere else",
 		--["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
@@ -752,7 +752,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 	}),
 })));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		n(ARMOR, {
 			n(-1006, {	-- LFR (Alt)

@@ -1259,7 +1259,7 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35874),	-- Apparatus - triggers after finishing "The Ebon Hunter" (questID 35835 & 35797)
 		q(35290),	-- Inn - Inn selected (A)

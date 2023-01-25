@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 	achcat(ACHIEVEMENT_CATEGORY_LEGION_EXP, {
 		ach(11261, {	-- Adventurer of Azsuna
 			crit(1),		-- Valiyaka the Stormbringer

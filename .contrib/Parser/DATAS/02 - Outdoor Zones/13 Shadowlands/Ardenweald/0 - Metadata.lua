@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, {
+root(ROOTS.Zones, m(SHADOWLANDS, {
 	m(ARDENWEALD, {
 		["icon"] = 3551336,
 		["lore"] = "A vibrant afterlife for those closely connected to the wild, Ardenweald is a domain of endless restoration tended by the mystic night fae. Within this eternal forest, massive dream trees draw in precious anima —soul essence— to feed the spirits of nature awaiting rebirth.",

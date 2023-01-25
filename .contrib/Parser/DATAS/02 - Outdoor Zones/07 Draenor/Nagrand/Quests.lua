@@ -1356,7 +1356,7 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34679),	-- Alliance Stables Tracking Event
 		q(34680),	-- Alliance Workshop Tracking Event

@@ -50,7 +50,7 @@ local SymRaid = function(InstanceID, Remove)
 	end
 	return SymLink
 end
-root("Zones", m(SHADOWLANDS, {
+root(ROOTS.Zones, m(SHADOWLANDS, {
 	m(ORIBOS, {
 		o(353484, bubbleDownSelf({ ["timeline"] = { "added 9.0.2", REMOVED_DF_REL } }, {	-- The Great Vault
 			["coord"] = { 64.3, 32.1, ORIBOS },

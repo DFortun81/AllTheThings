@@ -21,7 +21,7 @@ local ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate = [[function(t)
 		t.description = "|cffaa0000You deleted the item needed to complete the previous quest. As such, you'll be unable to complete this one. Sorry!|r";
 	end
 end]];
-root("Instances", tier(CLASSIC_TIER, {
+root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(237, {	-- The Temple of Atal'hakkar
 		-- #if BEFORE MOP
 		["lore"] = "Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",
@@ -777,13 +777,13 @@ root("Instances", tier(CLASSIC_TIER, {
 	}),
 }));
 -- #if AFTER 6.0.1
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35582),	-- Sunken Temple Reward Quest - Normal completion
 	}),
 });
 -- #endif
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(27634, {	-- The God Hakkar
 			["timeline"] = { "created 4.0.3" },

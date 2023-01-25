@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(MARUUK_CENTAUR, {
 		n(GRAND_HUNTS, {
 			n(ACHIEVEMENTS, {
@@ -550,7 +550,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 	}),
 })));
 
-root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(70004),	-- First time?
 	q(70003),	-- First time Epic Grand Hunt
 	q(70002),	-- First time Rare Grand Hunt

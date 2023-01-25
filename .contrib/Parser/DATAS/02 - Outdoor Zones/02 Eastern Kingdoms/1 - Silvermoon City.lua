@@ -30,7 +30,7 @@ local OnTooltipForCityFactionReputation = [[function(t)
 	end
 end]];
 -- #endif
-root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
+root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 	m(SILVERMOON_CITY, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 		["lore"] = "Silvermoon City is the capital city of the blood elves. It is located in Eversong Woods, next to the tainted Dead Scar.",
 		-- #if AFTER WRATH

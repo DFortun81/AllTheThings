@@ -188,7 +188,7 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34545),	-- Shadowmoon Burial Grounds Challenge Mode - Bronze Addition (Nth)
 		q(34528),	-- Shadowmoon Burial Grounds Challenge Mode - Consolation (Nth)

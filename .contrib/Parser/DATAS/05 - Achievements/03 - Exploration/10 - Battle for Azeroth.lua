@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 	achcat(ACHIEVEMENT_CATEGORY_BATTLE_FOR_AZEROTH_EXP, {
 		ach(13036, {	-- A Loa of a Tale
 			crit(1),		-- Tales of de Loa: Akunda

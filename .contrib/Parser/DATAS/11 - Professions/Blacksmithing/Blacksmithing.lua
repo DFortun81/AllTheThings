@@ -6262,7 +6262,7 @@ profession(BLACKSMITHING, {
 });
 
 -- Blacksmithing Item Database
-local itemDB = root("ItemDB", {});
+local itemDB = root(ROOTS.ItemDB, {});
 
 -- Recipe Cache (for Validation)
 local recipeCache, recipeCacheU = {}, {};
@@ -6608,7 +6608,7 @@ itemrecipe("Plans: Treads of Destiny", 45091, 63190, WRATH_PHASE_TWO);
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	filter(RECIPES, {
 		itemrecipe("Plans: Bleakwood Hew", 12817, 16965);
 		itemrecipe("Plans: Blood Talon", 12831, 16986);

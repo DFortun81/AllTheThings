@@ -4,7 +4,7 @@
 
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 
-root("Instances", tier(LEGION_TIER, {
+root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(946, {	-- Antorus, the Burning Throne
 		["isRaid"] = true,
 		["coord"] = { 54.9, 62.3, 885 },
@@ -1730,7 +1730,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(48570),	-- Tracking Quest - triggers when the door opens to Kin'garoth
 	}),
 });
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		inst(946, {	-- Antorus, the Burning Throne
 			-- Added in 9.1 Why? Noone knows

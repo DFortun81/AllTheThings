@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(277, {	-- Halls of Stone
 		["mapID"] = HALLS_OF_STONE,
 		["coord"] = { 44.8, 14.5, THE_STORM_PEAKS },
@@ -262,7 +262,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 })));
 
 -- #if AFTER WOD
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35465),	-- Halls of Stone Reward Quest - Normal completion
 		q(35468),	-- Halls of Stone Reward Quest - Heroic completion

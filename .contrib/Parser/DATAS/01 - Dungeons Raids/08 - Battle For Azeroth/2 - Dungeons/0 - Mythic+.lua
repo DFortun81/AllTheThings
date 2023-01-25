@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(BFA_TIER, {
+root(ROOTS.Instances, tier(BFA_TIER, {
 	n(MYTHIC_PLUS, {
 		n(AZERITE_ESSENCES, bubbleDownSelf({ ["timeline"] = { "added 8.2.0.30918", "removed 9.0.0" } }, {
 			i(169491),	-- Focused Life Anima

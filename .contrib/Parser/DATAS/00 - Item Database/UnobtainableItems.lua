@@ -15,7 +15,7 @@
 -- 15 This item has a Source ID, but apparently cannot be used for transmog and will likely be unlearnable. (This probably needs to be moved to another file, not technically unobtainable, more unlearnable)
 -- 16 These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.
 
-local Items = root("ItemDBConditional");
+local Items = root(ROOTS.ItemDBConditional);
 local u = function(itemID, unobtainable)
 	local item = { ["itemID"] = itemID, ["u"] = unobtainable };
 	Items[itemID] = item;

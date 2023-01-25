@@ -2,7 +2,7 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
-root("Secrets", bubbleDown({["timeline"] = { "added 9.1.5" } },{
+root(ROOTS.Secrets, bubbleDown({["timeline"] = { "added 9.1.5" } },{
 	-- TODO: feels weird to have just a basic quest chain in 'Secrets', so maybe these random Pet quest chains will just move into the Battle Pets category eventually
 	n(179140, {	-- Gurgl
 		q(64167,{	-- Pets Detective

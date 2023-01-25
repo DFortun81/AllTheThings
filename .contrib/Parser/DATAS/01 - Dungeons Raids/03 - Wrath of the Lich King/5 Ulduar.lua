@@ -7,7 +7,7 @@ local revampAch = function(id, t)
 	t.timeline = { "added 3.1.0", "removed 7.3.5.25727" };
 	return t;
 end
-root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
+root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 	inst(759, bubbleDownSelf({ ["timeline"] = { "added 3.1.0" } }, {	-- Ulduar
 		["mapID"] = ULDUAR,
 		["maps"] = { 148, 149, 150, 151, 152 },
@@ -2904,7 +2904,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 })));
 
 -- #if AFTER 4.0.1
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOTLK_TIER, {
 		inst(759, {
 			-- Most sets was added 4.0.1

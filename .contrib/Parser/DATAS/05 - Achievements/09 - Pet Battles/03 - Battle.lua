@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 	petbattle(achcat(ACHIEVEMENT_CATEGORY_BATTLE, {
 		ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 			i(184512),	-- Winterleaf Spriggan

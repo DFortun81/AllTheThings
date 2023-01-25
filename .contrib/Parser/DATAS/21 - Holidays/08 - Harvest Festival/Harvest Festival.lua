@@ -4,7 +4,7 @@
 local BLUE_FIREWORK = i(9312);	-- Blue Firework
 local GREEN_FIREWORK = i(9313);	-- Green Firework
 local RED_FIREWORK = i(9318);	-- Red Firework
-root("Holidays", applyholiday(HARVEST_FESTIVAL, {
+root(ROOTS.Holidays, applyholiday(HARVEST_FESTIVAL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -57,
 	-- #else

@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root("Promotions", n(-537, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Diablo 20th Anniversary
+root(ROOTS.Promotions, n(-537, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Diablo 20th Anniversary
 	["timeline"] = { "added 7.1.0.22908" },
 	["maps"] = { DUSKWOOD },
 	["groups"] = {

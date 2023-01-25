@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldDrops", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.WorldDrops, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	n(ARMOR, {
 		filter(CLOTH, {
 			i(163940),	-- Extra-Light Light Emitting Cord

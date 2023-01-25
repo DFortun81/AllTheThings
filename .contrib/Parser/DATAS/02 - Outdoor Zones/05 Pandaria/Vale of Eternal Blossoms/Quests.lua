@@ -1072,7 +1072,7 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTriggers",{
+root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(31652),	-- Roll Club: Serpent's Spine Tracking Quest
 	}),

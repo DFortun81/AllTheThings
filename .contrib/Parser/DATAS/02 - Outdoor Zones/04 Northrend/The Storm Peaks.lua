@@ -123,7 +123,7 @@ local OnTooltipForSonsOfHodir = [[function(t)
 		GameTooltip:AddDoubleLine(" ", (x * 10) .. " Relics to go!", 1, 1, 1);
 	end
 end]];
-root("Zones", {
+root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(THE_STORM_PEAKS, {
 			["lore"] = "The Storm Peaks is a leveling zone in central Northrend intended for level 25+ players. it is a frigid mountainous region that used to be the home of the titans, with Ulduar as their city. Currently, the storm giants live in the Storm Peaks. Players questing in this zone will learn about the lore behind the titans, the Hyldnir, Brann Bronzebeard, and the Sons of Hodir.",
@@ -1715,7 +1715,7 @@ root("Zones", {
 	})),
 });
 
-root("HiddenQuestTriggers", m(NORTHREND, {
+root(ROOTS.HiddenQuestTriggers, m(NORTHREND, {
 	m(THE_STORM_PEAKS, {
 		a(q(13417)),	-- The Brothers Bronzebeard	-- scrapped version? no qg on wowhead, and this isn't the version of the quest i received (i got the next quest, 12973)
 	}),

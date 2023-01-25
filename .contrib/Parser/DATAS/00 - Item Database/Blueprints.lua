@@ -1,7 +1,7 @@
 --Note!! This is needed because Blizzard keeps removing recipeID's from the itemDB
 --So this serves to preserve the ID's so they are always collectible
 
-local Items = root("ItemDBConditional");
+local Items = root(ROOTS.ItemDBConditional);
 local i = function(itemID, spellID)
 	Items[itemID] = { ["spellID"] = spellID };
 end

@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root("Promotions", n(-553, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- iCoke (China Only)
+root(ROOTS.Promotions, n(-553, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- iCoke (China Only)
 	["description"] = "These were only available through the 2006 iCoke Promotion (China Only)",
 	["timeline"] = { "added 1.12.1.11159" },
 	["groups"] = {

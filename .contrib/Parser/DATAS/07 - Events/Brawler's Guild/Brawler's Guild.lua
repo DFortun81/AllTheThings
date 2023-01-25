@@ -6,7 +6,7 @@
 -- Add to enUS.lus
 --         [-78] = SPLASH_BATTLEFORAZEROTH_8_1_5_FEATURE2_TITLE,                    -- Brawler's Guild
 --[[
-root("WorldEvents", n(-78,	-- Brawler's Guild
+root(ROOTS.WorldEvents, n(-78,	-- Brawler's Guild
 	-- bubbleDown({ ["u"] = REMOVED_FROM_GAME },
 	{
 	["description"] = "Fight queueing currently only available to Horde.\n2022-11-14",

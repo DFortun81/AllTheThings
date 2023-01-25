@@ -1,7 +1,7 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
-root("WorldEvents", n(-542,	-- The Opening of the Dark Portal
+root(ROOTS.WorldEvents, n(-542,	-- The Opening of the Dark Portal
 	applyclassicphase(TBC_PHASE_ONE_DARKPORTAL, bubbleDown({
 		-- #if AFTER 2.5.1
 		["timeline"] = { "removed 2.0.1" },

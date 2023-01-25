@@ -48,7 +48,7 @@ local OnTooltipForWarsongGulch = [[function(t)
 		GameTooltip:AddLine(" Each capture is worth " .. repPerFlagCapture .. " rep, +10 on WSG Weekend.", 1, 1, 1);
 	end
 end]];
-root("PVP", pvp(n(BATTLEGROUNDS, {
+root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(WARSONG_GULCH, {
 		["lore"] = "Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",
 		-- #if AFTER WRATH

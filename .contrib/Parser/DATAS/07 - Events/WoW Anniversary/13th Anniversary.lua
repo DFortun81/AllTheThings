@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 -- One-Time Anniversary Content
-root("WorldEvents", n(THIRTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(11848),	-- 13th Anniversary
 	n(MAILBOX, {
 		i(147876, {	-- Anniversary Gift
@@ -31,7 +31,7 @@ root("WorldEvents", n(THIRTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 })));
 
 -- Yearly Anniversary Content
-root("WorldEvents", n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(QUESTS, {
 		q(47253, {	-- The Originals [Alliance]
 			["provider"] = { "n", 110034 },		-- Historian Llore

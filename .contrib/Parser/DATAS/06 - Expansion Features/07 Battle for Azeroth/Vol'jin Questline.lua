@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	n(-863, bubbleDownSelf({ ["lvl"] = lvlsquish(120, 50, 120), ["races"] = HORDE_ONLY }, {
 		ach(12719),	-- Spirits Be With You
 		q(51513, {	-- Zalazane Returns

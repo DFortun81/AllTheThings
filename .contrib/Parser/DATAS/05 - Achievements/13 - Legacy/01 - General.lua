@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 	achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 		un(REMOVED_FROM_GAME, ach(7944)),		-- Bottle Service (Season 2) **Comments on wowhead indicate this might still available in Legion, this needs to be tested.**
 		un(REMOVED_FROM_GAME, a(ach(7941))),	-- Brawlin' and Shot Callin' (Season 1) (Alliance)

@@ -1,4 +1,4 @@
-local Items = root("ItemDBConditional");
+local Items = root(ROOTS.ItemDBConditional);
 local i = function(itemID, modID, s)
 	Items[itemID] = { ["mods"] = { [modID] = s }, ["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.", };
 end

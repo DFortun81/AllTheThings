@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(WOD_TIER, {
+root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 	n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	bubbleDownSelf({ ["timeline"] = { "added 6.0.2"} }, {
 		n(BUILDINGS, {
 			garrisonBuilding(126,  {	-- Enchanter's Study (rank 1: 93, rank 2: 125, rank 3: 126)

@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 	achcat(ACHIEVEMENT_CATEGORY_APPEARANCES, {
 		ach(11715),	-- (Ruth)less is More (PvP Season 10)
 		ach(11743),	-- Accessor-Eyes (Temple of Ahn'Qiraj)
@@ -87,6 +87,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(11759),	-- Yaass'shaarj (Siege of Orgrimmar)
 	}),
 }));
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(72248),	-- triggers when using Gleaming Incarnate Thunderstone 202047
 });

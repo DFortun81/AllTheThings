@@ -1,7 +1,7 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
-root("WorldEvents", applyclassicphase(WRATH_PHASE_SIX, n(-523, -- Elemental Unrest
+root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(-523, -- Elemental Unrest
 	bubbleDown({
 		["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 		-- #if ANYCLASSIC
@@ -337,7 +337,7 @@ root("WorldEvents", applyclassicphase(WRATH_PHASE_SIX, n(-523, -- Elemental Unre
 					["coord"] = { 75.9, 44.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				
+
 				-- Phase Two Quests
 				q(25055, {	-- Subduing the Elements (A)
 					["qg"] = 45712,	-- Stormcaller Mylra
@@ -422,7 +422,7 @@ root("WorldEvents", applyclassicphase(WRATH_PHASE_SIX, n(-523, -- Elemental Unre
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				
+
 				-- Phase Three Quests
 				q(27566, {	-- A Gathering in Outland (A)
 					["qg"] = 45341,	-- Earthen Ring Emissary
@@ -624,21 +624,21 @@ root("WorldEvents", applyclassicphase(WRATH_PHASE_SIX, n(-523, -- Elemental Unre
 					i(53497),	-- Zaetar's Deathshroud
 					i(53498),	-- Earth Bride's Gown
 					i(53500),	-- Tectonic Plate
-					
+
 					-- Grand Ambassador Flamelash
 					i(53502),	-- Flamelash Amulet
 					i(53503),	-- Pendant of Burning Spirits
 					i(53505),	-- Salamander Skin
 					i(53504),	-- Flamewaker's Treads
 					i(53501),	-- Sulfuron's Favor
-					
+
 					-- Kai'ju Gahz'rilla
 					i(53491),	-- Twilight Offering Bands
 					i(53494),	-- Girdle of Oblation
 					i(53493),	-- Sacrificial Mail
 					i(53495),	-- Old Gods' Blessing
 					i(53492),	-- Ring of the Three-Headed Beast
-					
+
 					-- Prince Sarsarun <Herald of Al'Akir>
 					i(53509),	-- Amulet of Evil Winds
 					i(53506),	-- Cloak of Mocking Winds

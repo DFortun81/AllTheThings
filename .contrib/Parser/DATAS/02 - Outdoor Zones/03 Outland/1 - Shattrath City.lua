@@ -598,7 +598,7 @@ local EPIC_GEM_COSTS = { { "c", 42, 15 } };	-- 15x Badge of Justice
 -- #else
 local EPIC_GEM_COSTS = { { "i", 29434, 15 } };	-- 15x Badge of Justice
 -- #endif
-root("Zones", {
+root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHATTRATH_CITY, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 			["lore"] = "Shattrath City is a major hub in Outland situated in the northwestern portion of Terokkar Forest. It is a capital-sized sanctuary city populated by ancient heroes and naaru. It is the first capital available to both sides.",
@@ -2132,7 +2132,7 @@ root("Zones", {
 						i(27940),	-- Marvelous Madstone of Immortality
 						i(27976),	-- Polished Pendant of Edible Energy
 						i(74918, {
-							
+
 						}),	-- Problem Solving Pendant
 						i(27945),	-- Shark's Tooth of Bona Fide Fluidic Mobility
 						i(27978),	-- Soap on a Rope
@@ -3334,7 +3334,7 @@ end
 -- #endif
 
 -- #if AFTER TBC
-root("HiddenQuestTriggers", m(OUTLAND, {
+root(ROOTS.HiddenQuestTriggers, m(OUTLAND, {
 	m(SHATTRATH_CITY, {
 		q(9989, {	-- BETA Alien Spirits [triggers when completing 10917 "The Outcasts Plight"]
 			i(28499),	-- Arakkoa Hunter's Supplies
@@ -3342,7 +3342,7 @@ root("HiddenQuestTriggers", m(OUTLAND, {
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(10560),	-- Revered Among the Sha'tar
 		q(12479),	-- Wrath of the Lich King: Onwards to Northrend!

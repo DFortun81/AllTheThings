@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root("Instances", tier(LEGION_TIER, {
+root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(900, {	-- Cathedral of Eternal Night
 		["coord"] = { 64.7, 16.6, BROKEN_SHORE },
 		["maps"] = { 845, 846, 847, 848, 849 },
@@ -175,7 +175,7 @@ root("Instances", tier(LEGION_TIER, {
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		inst(900, {	-- Cathedral of Eternal Night
 			d(HEROIC_DUNGEON, {

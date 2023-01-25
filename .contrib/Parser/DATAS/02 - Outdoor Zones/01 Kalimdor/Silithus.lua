@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(KALIMDOR, {
+root(ROOTS.Zones, m(KALIMDOR, {
 	m(SILITHUS, {
 		["lore"] = "Silithus used to be the seat of the Aqiri insect empire and has colossal structures and underground insect lairs. The night elves sealed the silithids in Ahn'Qiraj during the War of the Shifting Sands, to prevent further invasions. The zone used to be a major quest and reputation hub in vanilla--it had an intricate system of reputation-increasing quests. summonable mini-bosses, and numerous rewards.",
 		["maps"] = {

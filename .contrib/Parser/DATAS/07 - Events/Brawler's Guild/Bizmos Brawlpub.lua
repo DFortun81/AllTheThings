@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldEvents", m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bizmo's Brawlpub
+root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bizmo's Brawlpub
 	["races"] = ALLIANCE_ONLY,
 	["lvl"] = 120,
 	["maps"] = { DEEPRUN_TRAM },

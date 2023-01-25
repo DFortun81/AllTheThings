@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["requireSkill"] = COOKING },{
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["requireSkill"] = COOKING },{
 	achcat(ACHIEVEMENT_CATEGORY_COOKING, {
 		ach(2002,  {	-- 100 Cooking Awards
 			ach(2001),		-- 50 Cooking Awards

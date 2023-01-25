@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(KALIMDOR, {
+root(ROOTS.Zones, m(KALIMDOR, {
 	m(DARKSHORE, {
 		-- #if AFTER CATA
 		["lore"] = "Darkshore, a shadowy forest punctuated by waterfalls, is one of the saddest zones in the game. It underwent many changes and heavy losses in the Cataclysm--invasions by the trolls, Twilight Cultist infiltrations in the south, and most notably, the destruction of Auberdine, viewed by many as one of the most atmospheric towns. Alliance players help rescue and comfort dying NPCs, aid the refugees of Auberdine, and assist Malfurion Stormrage in driving back the threat of the cultists.",
@@ -2638,14 +2638,14 @@ root("Zones", m(KALIMDOR, {
 }));
 
 -- #if AFTER 8.0.1.27404
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(52759, {	-- Talked to Zom in Darkshore, which normally has 1 option. But this time had 2 "see past" options.
 		["timeline"] = { "added 8.0.1.27404" },
 	}),
 });
 -- #endif
 
-root("NeverImplemented", {
+root(ROOTS.NeverImplemented, {
 	n(QUESTS, {
 		q(26759, {	-- Return to Nessa
 			["timeline"] = { "created 4.0.3.13329" },

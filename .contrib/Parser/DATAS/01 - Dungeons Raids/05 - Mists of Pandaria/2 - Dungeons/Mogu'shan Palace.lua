@@ -189,7 +189,7 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(MOP_TIER, {
 		q(31634),	-- Mogu'shan Palace Challenge Mode - Bronze Addition (Nth)
 		q(31627),	-- Mogu'shan Palace Challenge Mode - Consolation (Nth)

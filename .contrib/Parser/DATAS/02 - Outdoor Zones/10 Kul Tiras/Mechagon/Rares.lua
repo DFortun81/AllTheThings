@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
 	m(MECHAGON, {
 		n(RARES, {
 			--[[
@@ -436,7 +436,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
 })));
 
 -- TODO: someone go out to mechagon and test stuff :P
--- root("HiddenQuestTriggers", {
+-- root(ROOTS.HiddenQuestTriggers, {
 -- 	m(KUL_TIRAS, {
 -- 		m(MECHAGON, {
 -- 			n(RARES, {

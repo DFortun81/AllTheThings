@@ -2,7 +2,7 @@
 --   P E T    B A T T L E    M O D U L E    --
 ----------------------------------------------
 
-root("PetBattles", {
+root(ROOTS.PetBattles, {
 	n(REWARDS, {
 		i(86143),	-- Battle Pet Bandage
 		i(116415),	-- Shiny Pet Charm

@@ -28,7 +28,7 @@ local OnTooltipForThoriumBrotherhood = [[function(t)
 		GameTooltip:AddDoubleLine("Turn In Dark Iron Ore (10x each)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 	end
 end]];
-root("Instances", tier(CLASSIC_TIER, {
+root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(228, {	-- Blackrock Depths
 		-- #if BEFORE MOP
 		["lore"] = "Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",
@@ -2503,7 +2503,7 @@ root("Instances", tier(CLASSIC_TIER, {
 	}),
 }));
 -- #if AFTER 6.0.1
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35899),	-- Blackrock Depths (Detention Block) Reward Quest - Normal completion
 		q(35901),	-- Blackrock Depths (Detention Bonus) Reward Quest
@@ -2513,7 +2513,7 @@ root("HiddenQuestTriggers", {
 	}),
 });
 -- #endif
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(3911),	-- The Last Element
 	}),

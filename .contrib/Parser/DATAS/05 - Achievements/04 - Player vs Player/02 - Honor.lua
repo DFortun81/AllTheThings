@@ -3,6 +3,6 @@
 --------------------------------------------------
 
 -- Leave empty, Parser Fills
-root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
+root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 	achcat(ACHIEVEMENT_CATEGORY_HONOR),
 })));

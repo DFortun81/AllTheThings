@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	inst(1031, {	-- Uldir
 		["isRaid"] = true,
 		["lvl"] = { 50 },
@@ -856,7 +856,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 		},
 	}),
 })));
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		inst(1031, {	-- Uldir
 			i(166406),	-- Flaskzertauren's Cloth Robes

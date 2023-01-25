@@ -1,5 +1,5 @@
 
-local ItemDB = root("ItemDBConditional");
+local ItemDB = root(ROOTS.ItemDBConditional);
 local i = function(itemID, spellID)
 	-- This is necessary because Blizzard sometimes tells us that things are Mounts when they are not Mounts.
 	-- So we cannot trust them and have to do it ourselves.

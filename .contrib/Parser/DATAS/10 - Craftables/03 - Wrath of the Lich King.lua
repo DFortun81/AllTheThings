@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
+root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
 	prof(ALCHEMY, {
 		filter(TRINKET_F, {
 			i(44323),	-- Indestructible Alchemist Stone
@@ -408,7 +408,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 				i(44282),    -- 6 of Chaos
 				i(44284),    -- 7 of Chaos
 				i(44285),    -- 8 of Chaos
-				
+
 				i(44268),    -- Ace of Nobles
 				i(44269),    -- 2 of Nobles
 				i(44270),    -- 3 of Nobles
@@ -417,7 +417,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 				i(44273),    -- 6 of Nobles
 				i(44274),    -- 7 of Nobles
 				i(44275),    -- 8 of Nobles
-				
+
 				i(44260),    -- Ace of Prisms
 				i(44261),    -- 2 of Prisms
 				i(44262),    -- 3 of Prisms
@@ -426,7 +426,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 				i(44265),    -- 6 of Prisms
 				i(44266),    -- 7 of Prisms
 				i(44267),    -- 8 of Prisms
-				
+
 				i(44286),    -- Ace of Undeath
 				i(44287),    -- 2 of Undeath
 				i(44288),    -- 3 of Undeath
@@ -858,7 +858,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 		}),
 	}),
 }))));
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(PROFESSIONS, {
 		prof(ENCHANTING, {
 			tier(WOTLK_TIER, {

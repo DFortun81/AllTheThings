@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(286, {	-- Utgarde Pinnacle
 		["mapID"] = UTGARDE_PINNACLE,
 		["coord"] = { 57, 47, HOWLING_FJORD },
@@ -328,7 +328,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 })));
 
 -- #if AFTER WOD
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35452),	-- Utgarde Pinnacle - Bonus Objective Reward
 		q(35454),	-- Utgarde Pinnacle - Bonus Objective Reward

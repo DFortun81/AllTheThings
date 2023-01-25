@@ -1153,7 +1153,7 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTriggers",{
+root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(31666),	-- FLAG - Wind-Reaver's Dagger - second trigger for Wind-Reaver's Dagger of Quick Strikes treasure
 		q(31282),	-- Kaz'tik Tracking Quest - triggers after freeing Kaz'tik from amber

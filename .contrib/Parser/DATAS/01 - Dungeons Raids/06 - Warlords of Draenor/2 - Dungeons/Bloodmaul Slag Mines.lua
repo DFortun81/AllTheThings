@@ -205,7 +205,7 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34533),	-- Bloodmaul Slag Mines Challenge Mode - Bronze Addition (Nth)
 		q(34525),	-- Bloodmaul Slag Mines Challenge Mode - Consolation (Nth)

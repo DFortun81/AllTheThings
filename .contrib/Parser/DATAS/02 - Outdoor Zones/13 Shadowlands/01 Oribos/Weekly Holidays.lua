@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(SHADOWLANDS, {
+root(ROOTS.Zones, m(SHADOWLANDS, {
 	m(ORIBOS, {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {

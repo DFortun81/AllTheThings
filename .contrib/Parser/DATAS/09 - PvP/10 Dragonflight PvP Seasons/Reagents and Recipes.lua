@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root("PVP", pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	filter(REAGENTS, {
 		i(190450),	-- Awakened Ire
 		i(190451),	-- Rousing Ire

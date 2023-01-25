@@ -14,7 +14,7 @@ local SHINY_PET_CHARM =
 i(116415, {	-- Shiny Pet Charm
 	["sym"] = {{ "fill" }},
 });
-root("PetBattles", petbattle({
+root(ROOTS.PetBattles, petbattle({
 	n(QUESTS, {
 		q(44767, {	-- A Celestial Invitation
 			["provider"] = { "i", 142210 },	-- Celestial Invitation

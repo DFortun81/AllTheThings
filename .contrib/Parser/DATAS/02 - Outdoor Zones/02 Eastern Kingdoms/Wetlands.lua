@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(EASTERN_KINGDOMS, {
+root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(WETLANDS, {
 		-- #if AFTER CATA
 		["lore"] = "Wetlands is a large swamp and primarily-Alliance area that is partially flooded after the Shattering. Quests involve trying to rebuild the flooded Menethil Harbor, assist the night elves in Greenwarden's Grove, and discover dwarven dig sites.",
@@ -1956,7 +1956,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 }));
 
 -- #if AFTER CATA
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(38843),	-- Smashing Eggs
 		q(26138, {	-- Ferilon Leafborn

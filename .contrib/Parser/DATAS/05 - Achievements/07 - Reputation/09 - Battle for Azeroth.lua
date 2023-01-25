@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 	achcat(ACHIEVEMENT_CATEGORY_BATTLE_FOR_AZEROTH_REP, {
 		ach(12947, {	-- Azerothian Diplomat
 			crit(1),		-- Proudmoore (A) / Zandalari Empire (H)

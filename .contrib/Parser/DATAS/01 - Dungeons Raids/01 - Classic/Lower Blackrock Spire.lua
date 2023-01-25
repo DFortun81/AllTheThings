@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(CLASSIC_TIER, {
+root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(229, {	-- Blackrock Spire
 		-- #if BEFORE MOP
 		["lore"] = "The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",
@@ -1995,7 +1995,7 @@ root("Instances", tier(CLASSIC_TIER, {
 	}),
 }));
 -- #if AFTER WOD
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(36866),	-- Lower Blackrock Spires Reward Quest - Normal completion
 		q(36867),	-- Lower Blackrock Spires Bonus Reward Quest — kill Urok Doomhowl
@@ -2004,7 +2004,7 @@ root("HiddenQuestTriggers", {
 -- #endif
 -- #if AFTER CATA
 --[[
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		q(28070),	-- Adventurers Wanted: Blackrock Spire [Horde]
 		q(28071),	-- Adventurers Wanted: Blackrock Spire [Alliance]

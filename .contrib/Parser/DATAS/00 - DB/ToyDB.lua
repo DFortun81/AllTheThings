@@ -1,5 +1,5 @@
 
-local ItemDB = root("ItemDBConditional");
+local ItemDB = root(ROOTS.ItemDBConditional);
 local i = function(itemID)
 	-- This is necessary because Blizzard sometimes tells us that things are Toys when they are not Toys.
 	-- So we cannot trust them and have to do it ourselves.

@@ -1,6 +1,6 @@
 -- Build NYI
 
-root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(SOURCELESS),
 	tier(DF_TIER, 0.5, {}),
 	tier(DF_TIER),
@@ -14,7 +14,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(BFA_TIER),
 	tier(SL_TIER),
 }));
-root("HiddenAchievementTriggers", {
+root(ROOTS.HiddenAchievementTriggers, {
 	tier(WOTLK_TIER),
 	tier(CATA_TIER),
 	tier(MOP_TIER),
@@ -23,7 +23,7 @@ root("HiddenAchievementTriggers", {
 	tier(BFA_TIER),
 	tier(SL_TIER),
 });
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(CLASSIC_TIER),
 	tier(TBC_TIER),
 	tier(WOTLK_TIER),

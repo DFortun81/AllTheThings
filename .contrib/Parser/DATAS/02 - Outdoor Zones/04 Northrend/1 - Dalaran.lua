@@ -3764,7 +3764,7 @@ for key,g in pairs(TIER_SEVEN_GROUPS) do
 	applyclassicphase(WRATH_PHASE_ONE, g);
 end
 
-root("Zones", {
+root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(NORTHREND_DALARAN, {
 			["lore"] = "Dalaran is a magocratic city-state and was once located within the Alterac Mountains in the Eastern Kingdoms. Now, the city, including the Violet Citadel, resides above the Crystalsong Forest in Northrend. The top part of the city is sparkling and airy, while the sewers underground show the darker side of magic addiction and luxury.",
@@ -7644,7 +7644,7 @@ root("Zones", {
 	})),
 });
 
-root("NeverImplemented", {
+root(ROOTS.NeverImplemented, {
 	n(QUESTS, {
 		q(13692, {	-- The Sword and the Sea
 			["timeline"] = { "created 3.3.0.10772" },

@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 	achcat(ACHIEVEMENT_CATEGORY_TOY_BOX, {
 		ach(15781, bubbleDownSelf({ ["timeline"] = { ADDED_DF_PRE } }, {	-- The Joy of Toy (500)
 			i(197986),	-- Murglasses (TOY!)

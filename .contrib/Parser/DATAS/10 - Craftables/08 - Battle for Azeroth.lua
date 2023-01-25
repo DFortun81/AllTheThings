@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
 	prof(ALCHEMY, {
 		filter(BATTLE_PETS, {
 			i(160324, {	-- Grumbling Sac
@@ -1106,7 +1106,7 @@ root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSel
 		}),
 	}),
 }))));
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(PROFESSIONS, {
 		prof(ENGINEERING, {
 			tier(BFA_TIER, {

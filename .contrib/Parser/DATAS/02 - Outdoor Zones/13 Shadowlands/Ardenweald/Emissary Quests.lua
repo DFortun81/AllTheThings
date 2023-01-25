@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(ARDENWEALD, {
 		n(EMISSARY_QUESTS, {
 			q(61098, bubbleDownSelf({ ["minReputation"] = { THE_WILD_HUNT, EXALTED } }, {	-- Supplies from The Wild Hunt

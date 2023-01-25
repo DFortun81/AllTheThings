@@ -73,7 +73,7 @@ local OnTooltipForSteamweedle = [[function(t)
 	end
 end]];
 -- #endif
-root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
+root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 	inst(230, {	-- Dire Maul
 		-- #if BEFORE MOP
 		["lore"] = "Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",
@@ -1669,7 +1669,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 	}),
 })));
 -- #if AFTER 6.0.1
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35890),	-- Dire Maul (Warpwood Quarter) Reward Quest - Normal completion
 		q(35891),	-- Dire Maul (Capital Gardens) Reward Quest - Normal completion
@@ -1679,7 +1679,7 @@ root("HiddenQuestTriggers", {
 	}),
 });
 -- #endif
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(7479),	-- Libram of Focus
 		q(7480),	-- Libram of Protection

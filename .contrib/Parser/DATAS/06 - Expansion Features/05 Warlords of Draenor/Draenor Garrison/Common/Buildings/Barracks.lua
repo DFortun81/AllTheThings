@@ -113,7 +113,7 @@ _.ExpansionFeatures =
 	}),
 };
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		n(GARRISONS, {
 			n(BUILDINGS, {	-- Buildings

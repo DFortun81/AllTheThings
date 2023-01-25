@@ -11,7 +11,7 @@ local OnTooltipForGadgetzhan = [[function(t)
 			local repPerKill = isHuman and 2.75 or 2.5;
 			local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(84000 / repPerKill);
 			GameTooltip:AddDoubleLine("Kill Pirates near Ratchet", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			
+
 			local repPerKill = isHuman and 5.5 or 5;
 			local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(84000 / repPerKill);
 			GameTooltip:AddDoubleLine("Kill Southsea Pirates in Tanaris", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
@@ -19,7 +19,7 @@ local OnTooltipForGadgetzhan = [[function(t)
 			local repPerKill = isHuman and 2.75 or 2.5;
 			local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(42000 / repPerKill);
 			GameTooltip:AddDoubleLine("Kill Pirates near Ratchet", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			
+
 			if reputation < 20999 then
 				local repPerKill = isHuman and 5.5 or 5;
 				local x, n = math.ceil((20999 - t.reputation) / repPerKill), math.ceil(20999 / repPerKill);
@@ -29,7 +29,7 @@ local OnTooltipForGadgetzhan = [[function(t)
 	end
 end]];
 -- #endif
-root("Zones", m(KALIMDOR, {
+root(ROOTS.Zones, m(KALIMDOR, {
 	m(TANARIS, {
 		["lore"] = "The Tanaris Desert is vast and unexplored. It is a land of endless sands and cloudless skies. The southern Tanaris Desert is more mountainous than the north, boasting canyons and high bluffs. Numerous tunnels run beneath the sands, purportedly infested with the mysterious silithid. Other creatures in the desert include tallstriders, lions, kodo beasts, drakes and dragons — many the offspring of mighty Nozdormu, who is said to make this land his home.\n\nThe only bit of civilization is Gadgetzhan, a goblin trading post. Many Ironforge prospectors stock up on supplies here before heading out in search of the lost Titan city of Uldum.",
 		-- #if AFTER WRATH

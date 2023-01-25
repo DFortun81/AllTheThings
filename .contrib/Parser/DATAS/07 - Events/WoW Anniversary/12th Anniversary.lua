@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 -- One-Time Anniversary Content
-root("WorldEvents", n(TWELFTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+root(ROOTS.WorldEvents, n(TWELFTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(10741),	-- 12th Anniversary
 	n(MAILBOX, {
 		i(139284, {	-- Anniversary Gift
@@ -29,7 +29,7 @@ root("WorldEvents", n(TWELFTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAM
 })));
 
 -- Yearly Anniversary Content
-root("WorldEvents", n(TWELFTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, n(TWELFTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(QUESTS, {
 		-- Correct answers is in the bottom
 		q(43461, {	-- A Time to Reflect

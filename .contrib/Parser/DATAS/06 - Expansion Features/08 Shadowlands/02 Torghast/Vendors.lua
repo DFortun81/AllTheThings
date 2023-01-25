@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local PHANTASMA = 1728;
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 	m(TORGHAST, {
 		n(VENDORS, {
 			n(-979, {	-- Broker Ve'ken & Broker Ve'nott

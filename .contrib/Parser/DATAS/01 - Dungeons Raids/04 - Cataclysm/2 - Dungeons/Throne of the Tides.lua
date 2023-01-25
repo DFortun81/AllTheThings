@@ -190,7 +190,7 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35363),	-- Throne of the Tides Reward Quest - Normal completion
 		q(35365),	-- Throne of the Tides Reward Quest - Heroic completion / Timewalking completion

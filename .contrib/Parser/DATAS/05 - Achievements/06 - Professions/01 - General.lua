@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 	achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 		ach(9454, {		-- Draenic Seed Collector
 			i(111997),		-- Herb Garden, Level 3 [Blueprints]

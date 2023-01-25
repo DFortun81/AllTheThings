@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 	achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 		ach(12866, {	-- 100 Exalted Reputations
 			i(163982),		-- Pureheart Courser (MOUNT!)

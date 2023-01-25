@@ -1998,7 +1998,7 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(36249),	-- Active Choice: Lumbermill - triggers if the Lumbermill is currently active
 		q(36250),	-- Active Choice: Lumbermill - triggers if the Lumbermill is currently active
@@ -2021,7 +2021,7 @@ root("HiddenQuestTriggers", {
 		q(35149),	-- Sparring Arena - triggers if you choose to build the Sparring Arena for the first time
 	}),
 });
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOD_TIER, {
 		n(WEAPONS, {
 			i(119408),	-- Foereaver Polearm [This version wasn't added]

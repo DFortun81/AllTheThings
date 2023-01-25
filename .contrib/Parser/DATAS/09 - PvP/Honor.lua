@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root("PVP", pvp(n(PVP_HONOR, {
+root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 	ach(12893, {	-- Honor Level 5
 		i(142380, {	-- Dutiful Gruntling
 			["races"] = HORDE_ONLY,

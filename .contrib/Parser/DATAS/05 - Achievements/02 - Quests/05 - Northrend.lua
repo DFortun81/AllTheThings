@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 	achcat(ACHIEVEMENT_CATEGORY_NORTHREND_QUESTS, {
 		ach(41, {		-- Loremaster of Northrend
 			a(ach(33, {		-- Nothing Boring About Borean (Alliance)

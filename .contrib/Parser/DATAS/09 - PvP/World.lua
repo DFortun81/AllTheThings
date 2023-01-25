@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root("PVP", pvp(n(-10058, {	-- World
+root(ROOTS.PVP, pvp(n(-10058, {	-- World
 	tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 		n(-243,	{	-- Bounty (for later). Contains every aspirant gear as well
 			i(163825),	-- Plundered Supplies
@@ -172,7 +172,7 @@ root("PVP", pvp(n(-10058, {	-- World
 	})),
 })));
 
-root("PVP", pvp(n(-10058, {	-- World
+root(ROOTS.PVP, pvp(n(-10058, {	-- World
 	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		q(72376),	-- looting first War Crate of the day
 		q(72377),	-- looting first War Crate of the day

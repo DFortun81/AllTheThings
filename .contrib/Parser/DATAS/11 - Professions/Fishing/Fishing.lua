@@ -142,7 +142,7 @@ profession(FISHING, {
 });
 
 -- Fishing Recipes
-local itemDB = root("ItemDB", {});
+local itemDB = root(ROOTS.ItemDB, {});
 local itemrecipe = function(itemID, spellID, timeline, classicphase)
 	local o = { ["itemID"] = itemID };
 	if spellID and spellID > 0 then

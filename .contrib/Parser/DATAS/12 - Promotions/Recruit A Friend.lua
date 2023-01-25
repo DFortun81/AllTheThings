@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root("Promotions", {
+root(ROOTS.Promotions, {
 	n(-546, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Recruit A Friend
 		ach(1436, {	-- Friends In High Places
 			["timeline"] = { "added 3.0.1" },
@@ -106,7 +106,7 @@ root("Promotions", {
 		}),
 	})),
 });
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(57850),	-- Storied Partnerships
 		q(57852),	-- Dungeon Adventure

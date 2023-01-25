@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldEvents", m(503,
+root(ROOTS.WorldEvents, m(503,
 	-- bubbleDown({ ["u"] = REMOVED_FROM_GAME },
 	{	-- Brawlgar Arena
 	["races"] = HORDE_ONLY,

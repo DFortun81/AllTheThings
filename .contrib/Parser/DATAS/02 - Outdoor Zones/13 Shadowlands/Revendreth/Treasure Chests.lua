@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(REVENDRETH, {
 		n(TREASURES, {
 			i(180866),	-- Gilded Wader (looks like this may just be an overall shared drop from treasures.  i got it from the Bleakwood Chest, there is drop data for it from Stoneborn Satchel, someone says they got it from the Venthyr Greed's Desire... so far only history from Revendreth/Bastion but it may come from other zones as well.  TODO: check back to see if this needs to be put in other zones)
@@ -811,7 +811,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", m(SHADOWLANDS, {
+root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, {
 	m(REVENDRETH, {
 		n(TREASURES, {
 			q(60896),	-- triggers sometimes when looting stoneborne satchels. perhaps for receiving 'Sinvyr Ore' or 'Stone Heart' quest turn in items

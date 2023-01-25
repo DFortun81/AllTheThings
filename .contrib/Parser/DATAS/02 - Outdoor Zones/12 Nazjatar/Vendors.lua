@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
+root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 	n(VENDORS, {
 		n(153510, {	-- Artisan Itanu <Vaultkeeper of the Ankoan>
 			["coord"] = { 37.8, 55.7, NAZJATAR },

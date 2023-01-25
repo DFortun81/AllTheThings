@@ -68,7 +68,7 @@ local SHOULDER_VANQ = i(71674, {	-- Mantle of the Fiery Vanquisher
 	},
 });
 
-root("Instances", tier(CATA_TIER, {
+root(ROOTS.Instances, tier(CATA_TIER, {
 	inst(78, {	-- Firelands
 		["isRaid"] = true,
 		["coord"] = { 47.3, 78.1, MOUNT_HYJAL },

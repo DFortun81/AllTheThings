@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldDrops", applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
+root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
 	filter(RECIPES, {
 		prof(ENCHANTING, {
 			i(68787),	-- Formula: Enchant Bracer - Agility (RECIPE!)

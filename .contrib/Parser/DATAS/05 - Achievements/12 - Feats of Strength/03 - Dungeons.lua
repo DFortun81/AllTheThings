@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 	achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_FOS, {
 		un(REMOVED_FROM_GAME, ach(13079, {		-- Battle for Azeroth Keystone Conqueror: Season One
 			crit(1),	-- Atal'Dazar

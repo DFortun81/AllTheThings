@@ -54,7 +54,7 @@ local BRUTAL_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 30001; end
 end]];
 -- #endif
-root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, pvp(tier(TBC_TIER, {
+root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, pvp(tier(TBC_TIER, {
 	n(PVP_HONOR, {
 		-- Players have said that the Alliance versions were available through Wrath.
 		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 4.0.1" } }, function(t) return t.itemID; end, {
@@ -3686,7 +3686,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 -- #if AFTER TBC
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(TBC_TIER, {
 		-- #if BEFORE 4.0.1.12941
 		i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]

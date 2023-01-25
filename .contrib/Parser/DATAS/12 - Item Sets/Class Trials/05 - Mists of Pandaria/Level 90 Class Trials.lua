@@ -2,7 +2,7 @@
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
 
-root("GearSets", n(CLASS_TRIAL, {
+root(ROOTS.GearSets, n(CLASS_TRIAL, {
 	tier(MOP_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_NINETY, {
 			-- Note: [As of patch 6.0.1 Level 90 Boost does not reward this gear anymore]

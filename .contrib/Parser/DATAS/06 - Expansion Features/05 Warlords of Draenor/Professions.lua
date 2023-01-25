@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.2" } }, {
+root(ROOTS.ExpansionFeatures, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.2" } }, {
 	n(PROFESSIONS, {
 		prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
 			ach(9409),	-- Draenor Archaeologist

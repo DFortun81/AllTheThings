@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(SL_TIER, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 	n(NECROLORD, {
 		["customCollect"] = "SL_COV_NEC",
 		["maps"] = { SEAT_OF_THE_PRIMUS },

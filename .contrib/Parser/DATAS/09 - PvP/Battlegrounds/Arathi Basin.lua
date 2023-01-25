@@ -17,7 +17,7 @@ local OnTooltipForArathiBasin = [[function(t)
 		GameTooltip:AddLine(" Every 200 or 150 Resources during AB Weekend.", 1, 1, 1);
 	end
 end]];
-root("PVP", pvp(n(BATTLEGROUNDS, {
+root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(ARATHI_BASIN, {
 		-- #if AFTER 3.2.0
 		["lore"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",

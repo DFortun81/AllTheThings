@@ -2,7 +2,7 @@
 --       C O M M O N   Q U A L I T Y   I T E M S   M O D U L E       --
 -----------------------------------------------------------------------
 
-local f = root("CommonQualityItems", {
+local f = root(ROOTS.CommonQualityItems, {
 
 });
 
@@ -25,7 +25,7 @@ end
 
 -- Never Implemented Common Items --
 -- Do not move this elsewhere, please leave it here for now. -Darkal
-root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(CATA_TIER, {
 		-- NYI Cataclysm Common Items
 		n(ARMOR, {

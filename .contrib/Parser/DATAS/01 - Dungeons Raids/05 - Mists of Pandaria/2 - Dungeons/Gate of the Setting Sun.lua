@@ -151,7 +151,7 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(MOP_TIER, {
 		q(31631),	-- Gate of the Setting Sun Challenge Mode - Bronze Addition (Nth)
 		q(31624),	-- Gate of the Setting Sun Challenge Mode - Consolation (Nth)

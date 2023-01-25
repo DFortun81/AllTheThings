@@ -22,7 +22,7 @@ local HORDE_PILGRIM_MAPS = {
 	TIRISFAL_GLADES,
 };
 local ALL_PILGIM_MAPS = appendGroups(ALLIANCE_PILGRIM_MAPS, appendGroups(HORDE_PILGRIM_MAPS, {}));
-root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
+root(ROOTS.Holidays, applyholiday(PILGRIMS_BOUNTY, {
 	-- #if ANYCLASSIC
 	["npcID"] = -60,
 	-- #else

@@ -2215,7 +2215,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
-root("HiddenQuestTriggers",{
+root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(32752),	-- Dark Animus Dead - triggers on the first kill of the week
 		q(32750),	-- Durumu Dead - triggers on the first kill of the week

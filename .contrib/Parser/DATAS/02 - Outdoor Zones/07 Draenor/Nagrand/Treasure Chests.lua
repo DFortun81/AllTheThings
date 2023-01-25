@@ -71,7 +71,7 @@ local COMMON_TREASURE_SYM = {
 	{"select","itemID",116920},	-- True Steel Lockbox
 };
 
-root("Zones", {
+root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(DRAENOR_NAGRAND, {
 			n(TREASURES, {

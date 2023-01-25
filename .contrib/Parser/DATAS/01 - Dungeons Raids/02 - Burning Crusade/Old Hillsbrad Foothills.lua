@@ -4,7 +4,7 @@
 local THOMAS_YANCE_GROUPS = {
 	i(25725),	-- Pattern: Riding Crop
 };
-root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(251, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Old Hillsbrad Foothills
 		["lore"] = "Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",
 		["coord"] = { 26.8, 36.8, CAVERNS_OF_TIME },
@@ -355,7 +355,7 @@ for i,o in ipairs({
 }) do table.insert(THOMAS_YANCE_GROUPS, o); end
 
 -- #if AFTER WOD
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35542),	-- Old Hillsbrad Foothills Reward Quest - Normal completion
 		q(35543),	-- Old Hillsbrad Foothills Reward Quest - Heroic completion

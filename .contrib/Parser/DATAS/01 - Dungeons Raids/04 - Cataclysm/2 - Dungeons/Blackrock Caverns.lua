@@ -245,7 +245,7 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35348),	-- Blackrock Caverns Reward Quest
 		q(35351),	-- Blackrock Caverns Reward Quest

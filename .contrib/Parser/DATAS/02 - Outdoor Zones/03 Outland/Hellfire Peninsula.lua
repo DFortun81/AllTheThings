@@ -72,7 +72,7 @@ local FELANNIA_JOHAN_GROUPS = {};
 -- All of these were removed and the associated recipes are now available through trainers now.
 bubbleDown({ ["spellID"] = 0, ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
 -- #endif
-root("Zones", {
+root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 			["lore"] = "Hellfire Peninsula is intended to be the first questing zone players hit after passing through The Dark Portal. It is a scorched zone, the site of many former battles and the massacre of the Draenei. Players are introduced early on to the threat of the Burning Legion at The Legion Front, further learning about Magtheridon's creation of the corrupted Fel Orcs and the sacrifices made in past battles on Draenor. Players also begin to learn about Draenic and Orcish culture in quest hubs in the western peninsula.",
@@ -3482,7 +3482,7 @@ appendGroups({
 
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(10061),	-- The Unyielding - completed with 10050 "Unyielding Souls"
 	q(10062, { ["_drop"] = { "g" }, }),	-- Looking to the Leadership - completed with 10057 "Looking to the Leadership"
 	q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
@@ -3493,7 +3493,7 @@ root("HiddenQuestTriggers", {
 });
 
 -- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(9344),	-- BETA A Hasty Departure
 		q(10084, {	-- BETA Assault on Mageddon

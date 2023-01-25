@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(EASTERN_KINGDOMS, {
+root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(RUINS_OF_GILNEAS, {
 		n(FLIGHT_PATHS, {
 			fp(646, {	-- Forsaken Forward Command, Gilneas

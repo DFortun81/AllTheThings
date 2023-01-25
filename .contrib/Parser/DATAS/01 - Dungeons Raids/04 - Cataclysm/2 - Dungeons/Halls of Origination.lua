@@ -212,7 +212,7 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35415),	-- Halls of Origination Reward Quest
 		q(35424),	-- Halls of Origination Reward Quest

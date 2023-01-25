@@ -5,7 +5,7 @@ local CATALOGED_RESEARCH = 1931;
 local STYGIA = 1767;
 local SOUL_ASH = 1828;
 local SOUL_CINDERS = 1906;
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	m(KORTHIA, {
 		n(VENDORS, {
 			n(178257, {	-- Archivist Roh-Suir
@@ -552,7 +552,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(63599),	-- learning Ensemble: Battlefield Messenger's Regalia
 	q(63626),	-- learning Ensemble: Frontline Necromancer's Vestments
 	q(63597),	-- learning Ensemble: Garb of Fall's Promise
@@ -560,7 +560,7 @@ root("HiddenQuestTriggers", {
 	q(63635),	-- learning Ensemble: Renathal's Field Inquisitor's Vestments
 });
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		filter(MISC, {
 			i(187137),	-- Research Report: Relic Finding Techniques (this effect is now granted from a spell learned from quest 64368)

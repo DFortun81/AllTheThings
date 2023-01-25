@@ -8,7 +8,7 @@ local COSTUME_PROVIDERS = {
 	{ "i", 116890 },	-- "Santo's Sun" Contender's Costume
 	{ "i", 116891 },	-- "Snowy Owl" Contender's Costume
 };
-root("Holidays", applyholiday(DAY_OF_THE_DEAD, {
+root(ROOTS.Holidays, applyholiday(DAY_OF_THE_DEAD, {
 	-- #if ANYCLASSIC
 	["npcID"] = -59,
 	-- #else

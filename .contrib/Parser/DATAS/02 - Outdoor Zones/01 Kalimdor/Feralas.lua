@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(KALIMDOR, {
+root(ROOTS.Zones, m(KALIMDOR, {
 	m(FERALAS, {
 		["lore"] = "Feralas is a rainforest surrounded by arid zones in southern Kalimdor. It is known for the mystery surrounding Dire Maul--a former city of the Highborne that remained hermetic and drew upon demonic energy to stay immortal. There is a strong Night Elf presence--both in Feathermoon Stronghold, the base of operations for the Sentinels, and in the numerous ruins scattered around the zones.",
 		-- #if AFTER WRATH
@@ -987,7 +987,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 						i(131411, {-- Green Whelp Spaulders
 							["timeline"] = { "added 7.0.3.22248" },
-						}),	
+						}),
 						i(54916, {	-- Konu's Platemail
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2222,7 +2222,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 						i(157023, {	-- Power of the Forest
 							["timeline"] = { "added 7.3.5.25716" },
-						}),	
+						}),
 						i(54969, {	-- Power of the Hippogryph
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2972,7 +2972,7 @@ root("Zones", m(KALIMDOR, {
 	}),
 }));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(42078),	-- Ysondre's Seal - if you are druid and done the "Sealing the Dream" (questID 25398) you can reopen the Feralas portal
 	}),

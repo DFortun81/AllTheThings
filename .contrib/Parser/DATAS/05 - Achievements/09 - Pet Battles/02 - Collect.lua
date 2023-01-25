@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 	achcat(ACHIEVEMENT_CATEGORY_COLLECT, {
 		petbattle(ach(7465)),		-- An Uncommon Find*
 		petbattle(ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)

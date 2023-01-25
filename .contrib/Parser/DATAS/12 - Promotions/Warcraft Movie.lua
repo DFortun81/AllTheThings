@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root("Promotions", n(-577, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Warcraft Movie
+root(ROOTS.Promotions, n(-577, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Warcraft Movie
 	["description"] = "These were rewarded for logging in at least once per faction while the Warcraft movie was still in theaters.",
 	["timeline"] = { "added 7.0.3.22248" },
 	["groups"] = {

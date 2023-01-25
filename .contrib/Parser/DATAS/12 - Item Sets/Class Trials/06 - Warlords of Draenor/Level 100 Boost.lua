@@ -2,7 +2,7 @@
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
 
-root("GearSets", n(CLASS_TRIAL, {
+root(ROOTS.GearSets, n(CLASS_TRIAL, {
 	tier(WOD_TIER, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		n(LEVEL_HUNDRED, {
 			-- Note: [As of August 16, 2018 Level 100 Boost became Level 100 Class Trial]
@@ -455,7 +455,7 @@ root("GearSets", n(CLASS_TRIAL, {
 		}),
 	})),
 }));
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(CLASS_TRIAL, {
 		tier(WOD_TIER, {
 			cl(DEATHKNIGHT, {

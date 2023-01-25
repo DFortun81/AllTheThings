@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 	achcat(ACHIEVEMENT_CATEGORY_CHARACTER_LEGACY, {
 		un(REMOVED_FROM_GAME, ach(10765, {	-- Brokenly Epic (ilvl 840)
 			un(REMOVED_FROM_GAME, ach(9708)),	-- Savagely Epic (ilvl 640)

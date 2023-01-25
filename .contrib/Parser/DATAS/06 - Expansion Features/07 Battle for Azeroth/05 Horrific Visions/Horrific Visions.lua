@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(BFA_TIER, {
+root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	n(-10080, {	-- Horrific Visions
 		["lvl"] = 120,
 		["maps"] = {
@@ -327,7 +327,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(BFA_TIER, {
 		n(-10080, {	-- Horrific Visions
 			ach(14116),	-- All Bridges Burned

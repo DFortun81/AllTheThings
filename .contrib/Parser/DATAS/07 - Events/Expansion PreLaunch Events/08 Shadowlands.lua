@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.36216", "removed 8.0.1.36577" } }, {	-- Expansion Prelaunch Events
+root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.36216", "removed 8.0.1.36577" } }, {	-- Expansion Prelaunch Events
 	tier(SL_TIER, {
 		n(ACHIEVEMENTS, {
 			ach(14750, {	-- Death Rising

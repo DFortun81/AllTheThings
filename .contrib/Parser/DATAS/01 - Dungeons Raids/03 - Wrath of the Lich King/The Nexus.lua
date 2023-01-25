@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(281, {	-- The Nexus
 		["mapID"] = THE_NEXUS,
 		["coord"] = { 28.1, 28.1, BOREAN_TUNDRA },
@@ -356,7 +356,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 })));
 
 -- #if AFTER WOD
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35513),	-- The Nexus - Reward Quest - Normal completion
 		q(35514),	-- The Nexus - Reward Quest - Heroic completion

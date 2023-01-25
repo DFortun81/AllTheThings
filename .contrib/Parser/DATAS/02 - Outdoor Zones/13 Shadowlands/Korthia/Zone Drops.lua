@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	m(KORTHIA, {
 		n(ZONE_DROPS, {
 			n(QUESTS, sharedData({ ["isDaily"] = true }, {
@@ -192,7 +192,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(64534),	-- triggered when looting Korthian Relic - i(187311), "Azgoth's Tattered Maps"
 	q(64535),	-- triggered when looting Korthian Relic - i(187333), "Core of an Unknown Titan"
 });

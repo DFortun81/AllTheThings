@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-root("Holidays", applyholiday(LUNAR_FESTIVAL, {
+root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -47,
 	["description"] = "Start: 01/20 at 10:00 AM\nEnd: 02/03 at 10:00 AM",

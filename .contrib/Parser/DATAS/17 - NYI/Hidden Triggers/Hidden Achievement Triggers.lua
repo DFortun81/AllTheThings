@@ -2,7 +2,7 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 
-root("HiddenAchievementTriggers", {
+root(ROOTS.HiddenAchievementTriggers, {
 	-- Note!! Here is where we can put all the hidden Achievement triggers in the game that don't exactly fit anywhere.
 	-- When adding a Achievement trigger be sure to put a description of how it triggered
 	tier(WOTLK_TIER, {
@@ -1717,7 +1717,7 @@ root("HiddenAchievementTriggers", {
 		ach(14264),	-- Azerite Essence - Rank 3 on any character - Spark of Inspiration <DND>
 		ach(14265),	-- Azerite Essence - Rank 3 on any character - Formless Void <DND>
 	}),
-	tier(SL_TIER, {		
+	tier(SL_TIER, {
 		-- 9.0.1
 		tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
 			ach(14340),	-- The Path Towards Ascension 1

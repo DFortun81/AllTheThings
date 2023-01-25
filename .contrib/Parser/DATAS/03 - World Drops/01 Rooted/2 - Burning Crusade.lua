@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root("WorldDrops", applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
+root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 	filter(CLOAKS, {
 		i(25043),	-- Amber Cape
 		i(25041),	-- Ambusher's Cloak

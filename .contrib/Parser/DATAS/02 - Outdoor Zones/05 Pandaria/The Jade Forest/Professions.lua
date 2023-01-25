@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(PANDARIA, {
+root(ROOTS.Zones, m(PANDARIA, {
 	applyclassicphase(MOP_PHASE_ONE, m(THE_JADE_FOREST, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {

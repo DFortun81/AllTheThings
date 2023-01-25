@@ -5481,7 +5481,7 @@ for i,o in ipairs({
 }) do table.insert(TIME_LOST_TRADER_GROUPS, o); end
 
 -- Tailoring Item Database
-local itemDB = root("ItemDB", {});
+local itemDB = root(ROOTS.ItemDB, {});
 
 -- Recipe Cache (for Validation)
 local recipeCache, recipeCacheU = {}, {};
@@ -5877,7 +5877,7 @@ itemrecipe("Pattern: World Mender's Pants", 72000, 101920, CATA_PHASE_THREE);
 -- #endif
 
 -- Never Implemented Recipe and Crafted Item Database
-local nyi_ = root("NeverImplemented", {});
+local nyi_ = root(ROOTS.NeverImplemented, {});
 local neverimplemented = function(thing)
 	table.insert(nyi_, prof(TAILORING, { thing }));
 end

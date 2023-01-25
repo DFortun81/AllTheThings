@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 -- One-Time Anniversary Content
-root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(13917),	-- 15th Anniversary
 	n(157113, {	-- Chromie
 		--	inst(2235, {	-- doesn't show up in-game
@@ -576,7 +576,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 })));
 
 -- Yearly Anniversary Content
-root("WorldEvents", n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	m(1537, {	-- Alterac Valley
 		["icon"] = 236711,	-- Alterac Valley
 		["maps"] = { HILLSBRAD_FOOTHILLS },

@@ -4,7 +4,7 @@
 local BLOODY_TOKENS = 2123;
 local ROUSING_IRE = 190451;
 local MOH = 137642;
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(VALDRAKKEN, {
 		pvp(n(PVP, {
 			n(QUESTS, {

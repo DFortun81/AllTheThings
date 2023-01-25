@@ -1,4 +1,4 @@
-local Items = root("Uncollectable");
+local Items = root(ROOTS.Uncollectable);
 local i = function(itemID)
 	-- need the ID within the group even though it's saved via ID
 	local item = { ["itemID"] = itemID };

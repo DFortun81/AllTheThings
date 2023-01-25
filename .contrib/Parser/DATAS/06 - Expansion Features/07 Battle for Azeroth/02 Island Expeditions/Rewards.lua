@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(BFA_TIER, {
+root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	n(ISLAND_EXPEDITIONS, {
 		n(REWARDS, {
 			["description"] = "These are the random rewards you can receive by completing an Island Expedition.  It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord.",
@@ -483,7 +483,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 		}),
 	}),
 }));
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(ISLAND_EXPEDITIONS, {
 			filter(TOYS, {

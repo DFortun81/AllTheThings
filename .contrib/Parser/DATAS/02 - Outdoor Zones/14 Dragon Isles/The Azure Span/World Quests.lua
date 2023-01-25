@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
 		n(WORLD_QUESTS, {
 			["sourceQuests"] = {
@@ -75,7 +75,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70625, {	-- Spellforged Creations
 					["coord"] = { 49.1, 18.6, THE_AZURE_SPAN },
 					["g"] = {
-						i(197400),	-- Renewed proto drake: shark snout 
+						i(197400),	-- Renewed proto drake: shark snout
 					},
 				}),
 				petbattle(q(71202, {	-- Mini Manafiend Melee

@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root("Promotions", {
+root(ROOTS.Promotions, {
 	n(-580, {	-- Shadowlands Seasonal Promotions
 		["timeline"] = { "added 9.0.5" },
 		["description"] = "These promotions happened during the time Shadowlands was the most recent content between 13th October 2020 & 25th October 2022.\n\nThey are listed in the order of their first appearance.",

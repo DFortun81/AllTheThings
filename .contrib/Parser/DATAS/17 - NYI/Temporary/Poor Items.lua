@@ -2,7 +2,7 @@
 --       P O O R   Q U A L I T Y   I T E M S   M O D U L E       --
 -------------------------------------------------------------------
 
-local f = root("PoorQualityItems", {
+local f = root(ROOTS.PoorQualityItems, {
 
 });
 
@@ -25,7 +25,7 @@ end
 
 -- Never Implemented Poor Items --
 -- Do not move this elsewhere, please leave it here for now. -Darkal
-root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(MOP_TIER, {
 		-- NYI Mists of Pandaria Poor Items
 		n(WEAPONS, {

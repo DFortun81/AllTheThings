@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root("Promotions", n(TCG_HEADER, bubbleDown({
+root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
 	-- #if ANYCLASSIC
 	["u"] = REMOVED_FROM_GAME,
 	-- #else

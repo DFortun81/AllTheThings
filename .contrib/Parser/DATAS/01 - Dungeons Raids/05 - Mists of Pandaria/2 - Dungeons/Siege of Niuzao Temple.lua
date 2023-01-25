@@ -156,7 +156,7 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(MOP_TIER, {
 		q(31633),	-- Siege of Niuzao Temple Challenge Mode - Bronze Addition (Nth)
 		q(31626),	-- Siege of Niuzao Temple Challenge Mode - Consolation (Nth)

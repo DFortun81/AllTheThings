@@ -602,7 +602,7 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(38836),	-- Aktar's Post - Aktar's Post visited
 		q(39306),	-- Call to Arms - chosen during "Bring the Reinforcements"

@@ -2,7 +2,7 @@
 --    G R O U P   F I N D E R   M O D U L E     --
 --------------------------------------------------
 
-root("GroupFinder", n(-10, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, {	-- Party Sync
+root(ROOTS.GroupFinder, n(-10, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, {	-- Party Sync
 	["description"] = "Rewarded from Quest while in Party Sync",
 	["g"] = {
 		i(171305, {	-- Salvaged Cache of Goods
@@ -192,7 +192,7 @@ root("GroupFinder", n(-10, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, {	--
 	},
 })));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10, { -- Party Sync
 		cl(DEATHKNIGHT, {
 			i(140714),	-- Bloodcaked Runeblade

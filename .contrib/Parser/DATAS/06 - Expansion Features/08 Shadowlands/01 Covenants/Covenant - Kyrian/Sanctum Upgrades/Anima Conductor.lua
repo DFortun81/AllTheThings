@@ -27,7 +27,7 @@ local ORSTUS_AND_SOTIROS = n(156340, { -- Larionrider Orstus
 	},
 });
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\Inv_misc_sigil_bastion01",
@@ -142,7 +142,7 @@ for _,t in ipairs({WINGFLAYTER_THE_CRUEL,ORSTUS_AND_SOTIROS,GRATEFUL,REGURGITATE
 	t.customCollect = nil;
 end
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(61268),	-- Triggered from buff received from Kyrian Conductor Tier 3
 	q(61267),	-- Triggered from buff received from Kyrian Conductor Tier 3
 	q(61266),	-- Triggered from buff received from Kyrian Conductor Tier 3

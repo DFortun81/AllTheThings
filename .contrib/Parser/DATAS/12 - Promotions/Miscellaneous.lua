@@ -2,7 +2,7 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 
-root("Promotions", filter(MISC, {
+root(ROOTS.Promotions, filter(MISC, {
 	["description"] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
 	["groups"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 		i(19160, {	-- Contest Winner's Tabard [TODO: Move to PVP?]

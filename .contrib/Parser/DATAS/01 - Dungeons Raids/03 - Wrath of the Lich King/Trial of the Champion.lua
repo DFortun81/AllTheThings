@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
+root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 	inst(284, {	-- Trial of the Champion
 		["mapID"] = TRIAL_OF_THE_CHAMPION,
 		["coord"] = { 74.0, 20.9, ICECROWN },
@@ -572,7 +572,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 })));
 
 -- #if AFTER WOD
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35950),	-- Trial of the Champion Reward Quest - Normal / Heroic completion
 	}),

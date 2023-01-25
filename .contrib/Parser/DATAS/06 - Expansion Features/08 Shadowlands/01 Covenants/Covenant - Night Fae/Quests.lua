@@ -48,7 +48,7 @@ local LFR_WEAPON_GROUP = {
 	i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 };
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(QUESTS, {
 			q(63214, {	-- Report to Moonberry
@@ -900,7 +900,7 @@ for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 	end
 end
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(62886),	-- A Call to Service
 		q(60888),	-- Ceremony of Awakening
@@ -944,6 +944,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(62961),	-- Completed after doing Go Beyond! by Marasmius
 });

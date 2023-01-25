@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
+root(ROOTS.Holidays, d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(WOTLK_TIER, {
 		q(50316, {	-- Disturbance Detected: Ulduar
 			["provider"] = { "n", 130654 },	-- Vormu

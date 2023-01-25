@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(755, {	-- The Obsidian Sanctum
 		["mapID"] = THE_OBSIDIAN_SANCTUM,
 		["coord"] = { 60.0, 56.7, DRAGONBLIGHT },

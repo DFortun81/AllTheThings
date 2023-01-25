@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root("PVP", pvp(n(-240, {	-- Rated
+root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 	filter(RECIPES, bubbleDown(
 	{
 		["u"] = REMOVED_FROM_GAME,

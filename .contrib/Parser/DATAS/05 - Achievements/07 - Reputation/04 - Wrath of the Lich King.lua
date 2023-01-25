@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 	achcat(ACHIEVEMENT_CATEGORY_WRATH_OF_THE_LICH_KING_REP, {
 		ach(1010, {	-- Northrend Vanguard
 			crit(1),	-- The Argent Crusade
@@ -10,8 +10,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 			crit(3),	-- The Kirin Tor
 			crit(4),	-- Knights of the Ebon Blade
 		}),
-		
-		
+
+
 		ach(1012, {	-- The Winds of the North
 			["races"] = ALLIANCE_ONLY,
 		}),

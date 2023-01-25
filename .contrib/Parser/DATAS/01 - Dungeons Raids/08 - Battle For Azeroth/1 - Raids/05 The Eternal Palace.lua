@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
+root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
 	inst(1179, {	-- The Eternal Palace
 		["isRaid"] = true,
 		["coord"] = { 50.5, 11.9, NAZJATAR },
@@ -884,7 +884,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 	}),
 })));
 
-root("HiddenQuestTriggers", tier(BFA_TIER, {
+root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
 	inst(1179, {	-- The Eternal Palace
 		q(56948),	-- creating rank 1 Condensed Life-Force from Aqueous Reliquaries
 		q(56949),	-- creating rank 2 Condensed Life-Force from Aqueous Reliquaries
@@ -905,7 +905,7 @@ root("HiddenQuestTriggers", tier(BFA_TIER, {
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(56836),	-- The Eternal Palace: Master's Call
 		q(56837),	-- The Eternal Palace: Master's Call

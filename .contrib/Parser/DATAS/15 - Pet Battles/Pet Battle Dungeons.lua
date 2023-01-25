@@ -2,7 +2,7 @@
 --   P E T    B A T T L E    M O D U L E    --
 ----------------------------------------------
 
-root("PetBattles", petbattle({
+root(ROOTS.PetBattles, petbattle({
 	n(-795, {	-- Pet Battle Dungeons
 		q(33137, {	-- The Celestial Tournament
 			["provider"] = { "n", 73082 },	-- Master Li

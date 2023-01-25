@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.4.3" } }, {
+root(ROOTS.ExpansionFeatures, tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.4.3" } }, {
 	n(ACHIEVEMENTS, {
 		ach(1312, {	-- Bloody Rare
 			crit(4504, {	-- Ambassador Jerrikar (Shadowmoon Valley)

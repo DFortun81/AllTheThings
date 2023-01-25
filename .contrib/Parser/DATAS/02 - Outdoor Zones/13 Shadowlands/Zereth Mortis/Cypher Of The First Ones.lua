@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local CYPHER = 1979;
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	m(ZERETH_MORTIS, {
 		header(HEADERS.Achievement, 15402, {	-- Cypher of the First Ones
 			n(ACHIEVEMENTS, {
@@ -693,7 +693,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(65027),	-- eligible for Firim's Spare Forge-tap
 	q(65028),	-- eligible for Unstable Containment Trap
 	q(65017, {["repeatable"]=true}),	-- Looting 187891, {	-- Empyrean Essence

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
 	m(MECHAGON, {
 		prof(JUNKYARD_TINKERING, bubbleDownSelf({ ["requireSkill"] = JUNKYARD_TINKERING }, {
 			["cr"] = 150359,	-- Pascal-K1N6

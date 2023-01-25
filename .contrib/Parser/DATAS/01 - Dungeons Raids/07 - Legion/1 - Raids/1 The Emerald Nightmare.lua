@@ -996,7 +996,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44148),	-- Xavius
 	}),
 });
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		inst(768, {	-- The Emerald Nightmare
 			i(138229),	-- Nightmare Boss 3 Relic Storm

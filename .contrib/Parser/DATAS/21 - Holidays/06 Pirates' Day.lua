@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-root("Holidays", applyholiday(PIRATES_DAY, {
+root(ROOTS.Holidays, applyholiday(PIRATES_DAY, {
 	-- #if ANYCLASSIC
 	["npcID"] = -55,
 	-- #else

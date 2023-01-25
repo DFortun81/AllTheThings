@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 -- One-Time Anniversary Content
-root("WorldEvents", n(SIXTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
+root(ROOTS.WorldEvents, n(SIXTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(14271),	-- 16th Anniversary
 	n(MAILBOX, {
 		i(178513, {	-- Anniversary Gift
@@ -15,7 +15,7 @@ root("WorldEvents", n(SIXTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_G
 })));
 
 -- Yearly Anniversary Content
-root("WorldEvents", n(SIXTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
+root(ROOTS.WorldEvents, n(SIXTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(VENDORS, {
 		n(158061, {	-- Historian Ma'di
 			["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },

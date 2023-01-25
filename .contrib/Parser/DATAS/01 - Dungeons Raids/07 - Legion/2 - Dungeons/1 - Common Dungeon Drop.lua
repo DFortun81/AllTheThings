@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root("Instances", tier(LEGION_TIER, {
+root(ROOTS.Instances, tier(LEGION_TIER, {
 	n(-23, {	-- WoD Common Dungeon Drop
 		i(141591, {	-- Technique: Codex of the Tranquil Mind [Rank 2] (RECIPE!)
 			["crs"] = {

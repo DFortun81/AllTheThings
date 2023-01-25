@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 -- #if AFTER 8.3.0.33062
-root("Zones", {
+root(ROOTS.Zones, {
 	m(NORTHREND, {
 		m(1602, {	-- Icecrown (DK starting zone)
 			n(QUESTS, {

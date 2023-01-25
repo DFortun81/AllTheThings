@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 	achcat(ACHIEVEMENT_CATEGORY_OUTLAND_QUESTS, {
 		ach(1276),		-- Blade's Edge Bomberman (Blade's Edge Mountains)
 		ach(1275),		-- Bombs Away (Terokkar Forest)

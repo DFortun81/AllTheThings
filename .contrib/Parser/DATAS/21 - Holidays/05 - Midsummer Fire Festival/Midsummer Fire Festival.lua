@@ -230,7 +230,7 @@ local MERCHANT_GROUPS = {
 
 local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
 
-root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
+root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -53,
 	-- #else
@@ -3506,7 +3506,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 	},
 }));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	m(COILFANG_RESERVOIR_SLAVE_PENS, {
 		q(11976),	-- Cross completes on completion of Shards of Ahune
 	}),

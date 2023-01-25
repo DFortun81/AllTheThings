@@ -163,7 +163,7 @@ _.Instances = { tier(MOP_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(MOP_TIER, {
 		q(31621),	-- Stormstout Brewery Challenge Mode - Bronze Addition (Nth)
 		q(31620),	-- Stormstout Brewery Challenge Mode - Consolation (Nth)

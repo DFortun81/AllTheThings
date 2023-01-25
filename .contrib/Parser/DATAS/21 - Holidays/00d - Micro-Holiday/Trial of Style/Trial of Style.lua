@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 local TRIAL_OF_STYLE_TOKEN = 151134;
-root("Holidays", applyholiday(MICRO_HOLIDAY, holiday(TRIAL_OF_STYLE, bubbleDown({ ["timeline"] = { "added 7.2.5" } }, {
+root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(TRIAL_OF_STYLE, bubbleDown({ ["timeline"] = { "added 7.2.5" } }, {
 	n(REWARDS, {
 		i(TRIAL_OF_STYLE_TOKEN),
 	}),
@@ -360,7 +360,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(TRIAL_OF_STYLE, {
 		i(188240),	-- Augur's Walkers
 		i(188246),	-- Bloodbathed Slippers

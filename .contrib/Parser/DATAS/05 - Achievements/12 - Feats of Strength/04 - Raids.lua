@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 	achcat(ACHIEVEMENT_CATEGORY_RAIDS_FOS, {
 		un(REMOVED_FROM_GAME, ach(8398, {	-- Ahead of the Curve: Garrosh Hellscream (10 player)
 			un(REMOVED_FROM_GAME, i(104246)),	-- Reins of the Kor'kron War Wolf (MOUNT!)

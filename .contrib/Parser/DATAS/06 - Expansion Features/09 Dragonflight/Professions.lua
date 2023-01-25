@@ -5,7 +5,7 @@
 -- TODO: determine if the 'intro' per-profession quests are actually locked by learning the profession or by completion of the alternate quest...
 -- i.e. Blacksmithing 70357/70358
 
-root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(PROFESSIONS, {
 		n(ACHIEVEMENTS, {
 			ach(17316, {	-- Dragon Isles Crafting Order Apprentice
@@ -586,10 +586,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
 					["name"] = "Blacksmithing Drop #1: Fire Elemental",
 					["description"] = "Drops from any Fire Elemental.\nCoordinates link to the mobs we found best.",
-					["crs"] = { 
+					["crs"] = {
 						196168, -- Springs Heater
 						196171, -- Flame Boiler
-					},	
+					},
 					["coord"] = { 39.0, 48.8, THALDRASZUS },
 					["provider"] = { "i", 198966 },	-- Molten Globule
 					["isWeekly"] = true,
@@ -1419,11 +1419,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70518, {	-- Weekly Inscription Knowledgepoint #3
 					["name"] = "Inscription Drop #1: Qalashi Djaradin",
 					["description"] = "Drops from any Qalashi Djaradin.\nCoordinates link to the mobs we found best.",
-					["crs"] = { 
+					["crs"] = {
 						186109,	-- Qalashi Necksnapper
 						186110,	-- Djaradin Crustshaper
 					},
-					["coords"] = { 
+					["coords"] = {
 						{ 39.6, 51.4, THE_WAKING_SHORES },
 						{ 34.8, 68.6, THE_WAKING_SHORES },
 						{ 39.6, 51.4, THE_WAKING_SHORES },
@@ -1436,7 +1436,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70519, {	-- Weekly Inscription Knowledgepoint #4
 					["name"] = "Inscription Drop #2: Dragon-kin/Proto Drakes",
 					["description"] = "Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the mobs closest to Valdrakken.",
-					["crs"] = { 
+					["crs"] = {
 						193973,	-- Mistyvale Splashcaster
 						193969,	-- Mistyvale Firestarter
 					},
@@ -1676,10 +1676,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #3
 					["name"] = "Jewelcrafting Drop #1: Well Dressed",
 					["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the mobs closest to Valdrakken.",
-					["crs"] = { 
+					["crs"] = {
 						195215,	-- Rebel Bruiser
 					},
-					["coords"] = { 
+					["coords"] = {
 						{ 46.8, 59.6, THALDRASZUS },
 						{ 45.8 ,58.2, THALDRASZUS },
 					},
@@ -1691,10 +1691,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #4
 					["name"] = "Jewelcrafting Drop #2: Corporeal Elemental",
 					["description"] = "Drops from any Corporeal Elemental.\nCoordinates link to the mobs closest to Valdrakken.",
-					["crs"] = { 
+					["crs"] = {
 						194212,	-- Unleashed Rubble
 					},
-					["coords"] = { 
+					["coords"] = {
 						{ 50.6, 57.6, THALDRASZUS },
 						{ 48.8, 60.6, THALDRASZUS },
 					},
@@ -1926,11 +1926,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70522, {	-- Weekly Leatherworking Knowledgepoint #3
 					["name"] = "Leatherworking Drop #1: Proto Drake",
 					["description"] = "Drops from any Proto Drake.\nCoordinates link to the mobs we found best.",
-					["crs"] = { 
+					["crs"] = {
 						196420,	-- Cavern Hunter (Thaldraszus)
 						190056,	-- Primal Proto-Drake
 					},
-					["coords"] = { 
+					["coords"] = {
 						{ 80.6, 33.8, WAKING_SHORE },
 						{ 79.4, 32.5, WAKING_SHORE },
 					},
@@ -1942,12 +1942,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70523, {	-- Weekly Leatherworking Knowledgepoint #4
 					["name"] = "Leatherworking Drop #2: Sylvern&Vorquin",
 					["description"] = "Drops from any Sylvern or Vorquin.\nCoordinates link to the mobs closest to Valdrakken.",
-					["crs"] = { 
+					["crs"] = {
 						188277,	-- Garden Herdmare
 						191317,	-- Creekside Grazer
 						191203,	-- Pleasant Hart
 					},
-					["coords"] = { 
+					["coords"] = {
 						{ 36.6, 72.8, THALDRASZUS },
 						{ 35.4, 72.8, THALDRASZUS },
 						{ 32.4, 73.5, THALDRASZUS },
@@ -2410,11 +2410,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70525, {	-- Weekly Tailoring Knowledgepoint #3
 					["name"] = "Tailoring Drop #1: Beast Humanoid",
 					["description"] = "Drops from any beastlike Humanoid.\nCoordinates link to the mobs closest to Valdrakken.",
-					["crs"] = { 
+					["crs"] = {
 						192500,	-- Fetid Slogger
 						192506,	-- Hyena Tender
 					},
-					["coords"] = { 
+					["coords"] = {
 						{ 56.6, 29.2, THALDRASZUS },
 						{ 57.0, 30.6, THALDRASZUS },
 					},
@@ -2425,10 +2425,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70524, {	-- Weekly Tailoring Knowledgepoint #4
 					["name"] = "Tailoring Drop #2: Ohn'ahran Humanoid",
 					["description"] = "Drops from any Ohn'ahran Humanoid.\nCoordinates link to the mobs closest to Valdrakken.",
-					["crs"] = { 
+					["crs"] = {
 						193840,	-- Nokhud Raider
 					},
-					["coords"] = { 
+					["coords"] = {
 						{ 87.0, 51.4, OHNAHRAN_PLAINS },
 						{ 85.0, 55.8, OHNAHRAN_PLAINS },
 					},

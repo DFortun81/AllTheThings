@@ -88,7 +88,7 @@ local THE_JUSTICAR_AND_THE_CONQUEROR_OnTooltip = [[function(t)
 		GameTooltip:AddDoubleLine(" |T" .. t.av.icon .. ":0|t " .. t.av.text, _.L[t.av.standing == 8 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
 	end
 end]];
-root("PVP", pvp(n(ACHIEVEMENTS, {
+root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(238, applyclassicphase(PHASE_TWO, {	-- An Honorable Kill
 			["rank"] = 1,
 			-- #if BEFORE WRATH
@@ -319,7 +319,7 @@ root("PVP", pvp(n(ACHIEVEMENTS, {
 			611,	-- Bleeding Bloodhoof
 			-- #endif
 			-- #if BEFORE 8.3.0
-			-- Patch 8.3.0 (2020-01-14): [Downing the Dark Lady] removed from the requirements. 
+			-- Patch 8.3.0 (2020-01-14): [Downing the Dark Lady] removed from the requirements.
 			612,	-- Downing the Dark Lady
 			-- #endif
 			-- #if BEFORE 8.0.1
@@ -342,13 +342,13 @@ root("PVP", pvp(n(ACHIEVEMENTS, {
 	ach(619, {	-- For The Horde!
 		["sym"] = {{"meta_achievement",
 			-- #if AFTER 9.0.1
-			-- Patch 9.0.1 (2020-10-13): [Storming Stormwind] removed and replaced with [Executing the Exarch]. 
+			-- Patch 9.0.1 (2020-10-13): [Storming Stormwind] removed and replaced with [Executing the Exarch].
 			14815,	-- Executing the Exarch
 			-- #else
 			615,	-- Storming Stormwind
 			-- #endif
 			-- #if BEFORE 8.0.1
-			-- Patch 8.0.1 (2018-07-17): [Immortal No More] removed from requirements. 
+			-- Patch 8.0.1 (2018-07-17): [Immortal No More] removed from requirements.
 			617,	-- Immortal No More
 			-- #endif
 			616,	-- Death to the King! [WRATH] / Overthrow the Council [CATA+]

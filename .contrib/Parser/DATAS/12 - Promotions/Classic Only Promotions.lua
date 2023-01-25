@@ -1,13 +1,13 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root("Promotions", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	-- #if ANYCLASSIC
 	tier(TBC_TIER, {
 		["timeline"] = { "added 2.5.1" },
 		["groups"] = {
 			n(QUESTS, {
-				-- 2021 5th May until 5th Nov 2021 
+				-- 2021 5th May until 5th Nov 2021
 				q(63768, {	-- Imp in a Ball
 					["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 					["altQuests"] = { 63767 },	-- Imp in a Ball (Cities)
@@ -42,7 +42,7 @@ root("Promotions", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 					},
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				-- 2022 13th Feb until 13th Aug 2022 
+				-- 2022 13th Feb until 13th Aug 2022
 				q(65285, {	-- Goblin Gumbo Kettle
 					["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 					["altQuests"] = { 65284 },	-- Goblin Gumbo Kettle (Cities)
@@ -148,7 +148,7 @@ root("Promotions", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 						-- Also part of 12 Month Sub. For Historys Sake
 						-- i(23705),	-- Tabard of Flame
 						-- i(200060),	-- Hopling
-						
+
 					},
 					["u"] = REMOVED_FROM_GAME,
 				}),

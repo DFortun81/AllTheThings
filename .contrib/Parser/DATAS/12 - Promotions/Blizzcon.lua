@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root("Promotions", n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Blizzcon
+root(ROOTS.Promotions, n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Blizzcon
 	ach(411),	-- Blizzcon 2005 - Murky
 	i(20371, {	-- Blue Murloc Egg
 		["timeline"] = { "added 1.11.1.6692" },

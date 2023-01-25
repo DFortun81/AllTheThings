@@ -2,7 +2,7 @@
 --     I N - G A M E   S H O P     --
 -------------------------------------
 -- #if AFTER 2.0.1
-root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	-- #if AFTER 5.0.1.15662
 	n(ACHIEVEMENTS, {
 		ach(8917, {	-- Collector's Edition: Dread Hatchling

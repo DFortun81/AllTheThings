@@ -48,7 +48,7 @@ local LFR_WEAPON_GROUP = {
 	i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
 };
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(QUESTS, {
 			q(63212, {	-- Report to Mevix
@@ -960,7 +960,7 @@ for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 	end
 end
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 --	Campaign quests
 	q(62982),	-- triggers when searching the storeroom on "Gharmal's Tower" (#57530)
 	q(62983),	-- triggers when searching the alchemical laboratory on "Gharmal's Tower" (#57530)
@@ -976,7 +976,7 @@ root("HiddenQuestTriggers", {
 	--q(60773),	-- Renown 30/Channeling anima
 	--q(60873),	-- Flying around in necrolord base
 });
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(62696),	-- A Call to Service
 		q(59598),	-- Good for the Soul

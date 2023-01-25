@@ -1,7 +1,7 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
-root("WorldEvents", applyclassicphase(WRATH_PHASE_SIX, n(-524, -- Operation Gnomeregan
+root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(-524, -- Operation Gnomeregan
 	bubbleDown({
 		["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 		["races"] = ALLIANCE_ONLY,

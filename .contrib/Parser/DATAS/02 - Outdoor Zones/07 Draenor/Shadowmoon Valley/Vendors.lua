@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(DRAENOR, {
+root(ROOTS.Zones, m(DRAENOR, {
 	m(DRAENOR_SHADOWMOON_VALLEY, {
 		n(VENDORS, {
 			n(84074, {	-- Merchant Derrook

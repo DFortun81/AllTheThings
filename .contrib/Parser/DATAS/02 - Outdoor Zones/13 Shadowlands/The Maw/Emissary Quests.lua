@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	m(THE_MAW, {
 		n(EMISSARY_QUESTS, {
 			q(64267, {	-- Mysterious Gifts from Ve'nari
@@ -18,7 +18,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", m(SHADOWLANDS, {
+root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, {
 	m(THE_MAW, {
 		q(64288),	-- Paragon of Ve'nari
 	}),

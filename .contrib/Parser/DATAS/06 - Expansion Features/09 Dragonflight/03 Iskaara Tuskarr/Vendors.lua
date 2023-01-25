@@ -19,7 +19,7 @@ local TEMPORAL_DRAGONHEAD = 194969;
 local THOUSANDBITE_PIRANHA = 194966;
 local TUFT_OF_PRIMAL_WOOL = 201405;
 local WILDERCLOTH = 193050;
-root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(ISKAARA_TUSKARR, {
 		n(VENDORS, {
 			n(186449, {	-- Arvik

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local ATTENDANTS_TOKEN_OF_MERIT = 199202;	-- Shadowlands Season 4
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(ORIBOS, {
 		n(VENDORS, {
 			n(169524, {	-- Acquirer Ta'gosh <Curiosity Vendor>

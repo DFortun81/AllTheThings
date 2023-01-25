@@ -29,7 +29,7 @@ local OnTooltipForCityFactionReputation = [[function(t)
 	end
 end]];
 -- #endif
-root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
+root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 	m(THE_EXODAR, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 		["lore"] = "The Exodar is the capital city of the Draenei. It is located in the westernmost part of Azuremyst Isle. The Exodar's faction leader is Prophet Velen, who is located near the battlemasters in the Vault of Lights.",
 		-- #if AFTER WRATH

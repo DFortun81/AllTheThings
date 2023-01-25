@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_CHARACTER, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_CHARACTER, {
 	ach(5180, {		-- Breaking The Sound Barrier (Master)
 		ach(891),		-- Giddy Up! (Apprentice)
 		ach(889),		-- Fast and Furious (Journeyman)

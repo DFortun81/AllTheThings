@@ -171,7 +171,7 @@ _.Instances = { tier(WOD_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(34548),	-- Iron Depot Challenge Mode - Bronze Addition (Nth)
 		q(34529),	-- Iron Depot Challenge Mode - Consolation (Nth)

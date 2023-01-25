@@ -16,7 +16,7 @@ local PVP_MOUNT_COST = {
 	-- #endif
 };
 
-root("Zones", m(KALIMDOR, {
+root(ROOTS.Zones, m(KALIMDOR, {
 	m(ORGRIMMAR, {
 		["lore"] = "Orgrimmar is the capital city of the Horde, with large settlements of trolls, orcs, tauren, and goblins.",
 		["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_orc",
@@ -5758,7 +5758,7 @@ root("Zones", m(KALIMDOR, {
 	}),
 }));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	m(KALIMDOR, {
 		m(ORGRIMMAR, {
 			q(54948),	-- something in orgrimmar on lvl 60 necrolord goblin warlock
@@ -5767,7 +5767,7 @@ root("HiddenQuestTriggers", {
 	}),
 });
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		n(ARMOR, {
 			filter(NECK_F, {

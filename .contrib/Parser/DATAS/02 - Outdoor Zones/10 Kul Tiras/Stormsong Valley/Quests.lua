@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(STORMSONG_VALLEY, {
 		n(QUESTS, {
 			q(50616, {	-- A Bit of a Bind
@@ -1704,7 +1704,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", m(KUL_TIRAS, {
+root(ROOTS.HiddenQuestTriggers, m(KUL_TIRAS, {
 	m(STORMSONG_VALLEY, {
 		n(QUESTS, {
 			q(51354),	-- Anger in a Bottle (seems to just be a duplicate version)
@@ -1722,7 +1722,7 @@ root("HiddenQuestTriggers", m(KUL_TIRAS, {
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {

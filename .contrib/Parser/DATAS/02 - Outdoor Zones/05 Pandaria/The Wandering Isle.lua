@@ -206,7 +206,7 @@ _.Zones =
 							i(74594),	-- Gloves of Wisdom
 							i(131913, {	-- Handgrips of Verity
 								["timeline"] = { "added 7.0.3.22248" },
-							}),	
+							}),
 							i(74596),	-- Unvarnished Vambraces
 						},
 					}),
@@ -244,7 +244,7 @@ _.Zones =
 							["g"] = {
 								i(157020, {	-- Humble Cudgel
 									["timeline"] = { "added 7.0.3.22248" },
-								}),	
+								}),
 								i(74588),	-- Jade Crossbow
 								i(74590),	-- Jade Hilted Dagger
 								i(74589),	-- Jade Hilted Sword
@@ -564,7 +564,7 @@ _.Zones =
 		}),
 	}),
 };
-root("HiddenQuestTriggers",{
+root(ROOTS.HiddenQuestTriggers,{
 	tier(MOP_TIER, {
 		q(30454),	-- Pandaren Alliance Tracking Quest - triggers after choosing Alliance faction
 		q(30455),	-- Pandaren Horde Tracking Quest - triggers after choosing Horde faction

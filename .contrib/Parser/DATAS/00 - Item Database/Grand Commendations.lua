@@ -1,5 +1,5 @@
 
-local Items = root("ItemDBConditional");
+local Items = root(ROOTS.ItemDBConditional);
 local i = function(itemID, factionID, unlock)
 	local o = {
 		["factionID"] = factionID,

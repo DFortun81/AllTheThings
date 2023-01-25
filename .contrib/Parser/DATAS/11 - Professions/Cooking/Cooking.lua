@@ -2422,7 +2422,7 @@ profession(COOKING, {
 });
 
 -- Cooking Item Database
-local itemDB = root("ItemDB", {});
+local itemDB = root(ROOTS.ItemDB, {});
 
 -- Recipe Cache (for Validation)
 local recipeCache, recipeCacheU = {}, {};
@@ -2689,7 +2689,7 @@ itemrecipe("Recipe: Whitecrest Gumbo", 65406, 88047, CATA_PHASE_ONE);
 -- #endif
 
 recipeCache = nil;	-- Invalidate the cache.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	filter(RECIPES, {
 		-- #if AFTER WRATH
 		itemrecipe("Recipe: Shoveltusk Soup", 34126, 44438);	-- NYI, never implemented

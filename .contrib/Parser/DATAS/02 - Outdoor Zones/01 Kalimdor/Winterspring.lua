@@ -108,7 +108,7 @@ local OnTooltipForWintersaberTrainers = [[function(t)
 	end
 end]];
 -- #endif
-root("Zones", m(KALIMDOR, {
+root(ROOTS.Zones, m(KALIMDOR, {
 	m(WINTERSPRING, {
 		["lore"] = "Winterspring is a frosty valley in northern Kalimdor. This frigid zone is littered with night elven ruins, and serves as the primary home of the Blue Dragonflight in Kalimdor. The only settlement in Winterspring is Everlook, a Steamwheedle Cartel town that is neutral to both Horde and Alliance.",
 		-- #if AFTER WRATH
@@ -2590,7 +2590,7 @@ root("Zones", m(KALIMDOR, {
 	}),
 }));
 
-root("NeverImplemented", {
+root(ROOTS.NeverImplemented, {
 	n(QUESTS, {
 		q(29033, {	-- [PH] Bridle Buy-In
 			["timeline"] = { "created 4.1.0.13726" },

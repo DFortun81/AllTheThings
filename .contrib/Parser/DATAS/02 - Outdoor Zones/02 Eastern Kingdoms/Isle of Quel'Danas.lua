@@ -1324,7 +1324,7 @@ local EPIC_GEM_COSTS = { { "c", 42, 15 } };	-- 15x Badge of Justice
 -- #else
 local EPIC_GEM_COSTS = { { "i", 29434, 15 } };	-- 15x Badge of Justice
 -- #endif
-root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
+root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 	m(ISLE_OF_QUELDANAS, bubbleDownSelf({ ["timeline"] = { "added 2.4.0" } }, {
 		["lore"] = "The Isle of Quel'Danas is an island located north of Eversong Woods. It is most commonly reached by the direct portal from Shattrath City. It is the major daily quest hub for the Shattered Sun Offensive, a group of Aldor and Scryers working together to reclaim the island from Kael'thas, who reactivated the Sunwell.",
 		-- #if AFTER WRATH
@@ -2450,7 +2450,7 @@ for i,o in ipairs(OLUS_GROUPS) do o.u = nil; end
 for i,o in ipairs(SORYN_GROUPS) do o.u = nil; end
 
 -- #if AFTER TBC
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(11551),	-- BETA Agamath, the First Gate
 		q(11553),	-- BETA Archonisus, the Final Gate

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 -- currently all covenant assault quests show up in /attwq.  because each 'world quest' is used as a header, this makes the entirety of possible covenant assault contents show up in /attwq - this is good AND bad, in the sense that it shows you "hey, there is stuff you are missing here" but it's not necessarily clear that we do not know whether or not the stuff is up.  you can't see which quests are available in the assault until after you start it, which means there's no way to get the actually active assault quests *only* to show up in /attwq.  the choice is basically "show everything" or "show only that the assault is up and no other information."  my preference is to show everything.  perhaps a compromise would be to add a description on each header explaining this but my brain is not functional enough atm to figure out what that description should say
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	m(THE_MAW, {
 		n(-10083, {	-- Covenant Assaults
 			n(ACHIEVEMENTS, {
@@ -827,7 +827,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 --	TODO: Stolen Anima Vessels probably need to be added at some point, but i'm not really sure how they work (example: NF ones are all the fuck over, in and out of the rift, some have multiple coords, can't tell when/how they reset, etc.) so i am just throwing them here for now
 --	Kyrian
 

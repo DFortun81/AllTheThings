@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(BROKEN_ISLES, {
+root(ROOTS.Zones, m(BROKEN_ISLES, {
 	m(LEGION_DALARAN, {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {

@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root("PVP", pvp(n(BATTLEGROUNDS, {
+root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	applyclassicphase(TBC_PHASE_ONE, m(EYE_OF_THE_STORM, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\Achievement_bg_wineos",

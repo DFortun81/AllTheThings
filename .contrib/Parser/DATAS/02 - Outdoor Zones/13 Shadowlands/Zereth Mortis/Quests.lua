@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	m(ZERETH_MORTIS, {
 		n(QUESTS, {
 			n(REWARDS, {
@@ -1236,7 +1236,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", m(SHADOWLANDS, {
+root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		-- Misc
 		q(65531),	-- Starts pocopoc fashion

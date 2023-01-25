@@ -18,7 +18,7 @@ local OnTooltipForFrenzyheart = [[function(t)
 			if f and #f > 0 then t.chicken = f[1]; end
 		end
 		GameTooltip:AddDoubleLine(t.chicken.text or RETRIEVING_DATA, _.L[t.chicken.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. chickenRep .. " Rep");
-		
+
 		local rejekRep = isHuman and 550 or 500;
 		if not t.rejek then
 			local rejek = {};
@@ -36,7 +36,7 @@ local OnTooltipForFrenzyheart = [[function(t)
 		for i,quest in ipairs(t.rejek) do if quest.saved then completedAny = true; break; end end
 		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Rejek:", _.L[completedAny and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. rejekRep .. " Rep");
 		for i,quest in ipairs(t.rejek) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
-		
+
 		local vekgarRep = isHuman and 770 or 700;
 		if not t.vekgar then
 			local vekgar = {};
@@ -50,7 +50,7 @@ local OnTooltipForFrenzyheart = [[function(t)
 		end
 		GameTooltip:AddDoubleLine("Complete 1 of 3 quests offered by Vekgar:", _.L[t.vekgar[1].saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. vekgarRep .. " Rep");
 		for i,quest in ipairs(t.vekgar) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
-		
+
 		local repPerDay = chickenRep + rejekRep + vekgarRep;
 		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
 		GameTooltip:AddDoubleLine("Complete Dailies Everyday", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
@@ -73,7 +73,7 @@ local OnTooltipForOracles = [[function(t)
 			if f and #f > 0 then t.appeasing = f[1]; end
 		end
 		GameTooltip:AddDoubleLine(t.appeasing.text or RETRIEVING_DATA, _.L[t.appeasing.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. appeasingRep .. " Rep");
-		
+
 		local soodowRep = isHuman and 770 or 700;
 		if not t.soodow then
 			local soodow = {};
@@ -87,7 +87,7 @@ local OnTooltipForOracles = [[function(t)
 		end
 		GameTooltip:AddDoubleLine("Complete 1 of 3 quests offered by Oracle Soo-dow:", _.L[t.soodow[1].saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. soodowRep .. " Rep");
 		for i,quest in ipairs(t.soodow) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
-		
+
 		local sooneeRep = isHuman and 550 or 500;
 		if not t.soonee then
 			local soonee = {};
@@ -105,13 +105,13 @@ local OnTooltipForOracles = [[function(t)
 		for i,quest in ipairs(t.soonee) do if quest.saved then completedAny = true; break; end end
 		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Oracle Soo-nee:", _.L[completedAny and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. sooneeRep .. " Rep");
 		for i,quest in ipairs(t.soonee) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
-		
+
 		local repPerDay = appeasingRep + soodowRep + sooneeRep;
 		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
 		GameTooltip:AddDoubleLine("Complete Dailies Everyday", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 	end
 end]];
-root("Zones", {
+root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(SHOLAZAR_BASIN, {
 			["lore"] = "Sholazar Basin is a lush tropical forest in western Northrend. It owes its warm climate to the pylons around the zone, which are maintained by the Titans and also ward off the Scourge. It is a great zone for gathering max-Northrend level items like herbs and ore. There's also some rare beasts hunters like taming for pets, like Loque'nahak. Players will revisit Hemet Nesingwary and prove their hunting prowess for him, become an unwitting ambassador in a faction war between the Oracles and the Frenzyheart tribes, and learn about the power of the pylons.",
@@ -1324,7 +1324,7 @@ root("Zones", {
 	})),
 });
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOTLK_TIER, {
 		n(ARMOR, {
 			filter(TRINKET_F, {

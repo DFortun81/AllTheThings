@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(SL_TIER, {
+root(ROOTS.Instances, tier(SL_TIER, {
 	n(MYTHIC_PLUS, {
 		n(ACHIEVEMENTS, {
 			header(HEADERS.Achievement, SEASON_PROUD, bubbleDownSelf({

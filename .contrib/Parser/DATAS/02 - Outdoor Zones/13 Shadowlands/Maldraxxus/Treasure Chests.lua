@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(MALDRAXXUS, {
 		n(TREASURES, {
 			o(353627, {		-- Battlefront Rations
@@ -400,7 +400,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 --	Treasures of Maldraxxus achievement
 	q(58709),	-- Forgotten Mementos - clicking the chain
 	q(59245),	-- Misplaced Supplies (daily trigger)

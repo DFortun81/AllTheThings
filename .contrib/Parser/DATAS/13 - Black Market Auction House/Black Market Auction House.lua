@@ -2,7 +2,7 @@
 --     B L A C K   M A R K E T   M O D U L E       --
 -----------------------------------------------------
 
-root("BlackMarket", {
+root(ROOTS.BlackMarket, {
 	n(VENDORS, bubbleDown({
 			["sym"] = {
 				{"select", "headerID", -94},		-- Select BMAH header
@@ -39,7 +39,7 @@ root("BlackMarket", {
 		-- }),
 	})),
 });
-root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
+root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 	filter(BAGS, {
 		i(183634),	-- Papa's Mint Condition Bag (9.1)
 	}),

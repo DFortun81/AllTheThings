@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(BROKEN_ISLES, {
+root(ROOTS.Zones, m(BROKEN_ISLES, {
 	m(STORMHEIM, {
 		n(VENDORS, {
 			n(98367, {	-- Tigrid the Charmer <Enchantress>

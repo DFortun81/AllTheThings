@@ -30,7 +30,7 @@ local REMOVED_AFTER_WRATH_PREPATCH = "removed 3.0.2";
 local BUBBLE_DOWN_FILTER = function(t) return true; end;
 -- #endif
 
-root("WorldEvents", applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, -- The Scourge Invasion
+root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, -- The Scourge Invasion
 	bubbleDownFiltered({
 		["timeline"] = { REMOVED_AFTER_WRATH_PREPATCH },
 		-- #if ANYCLASSIC

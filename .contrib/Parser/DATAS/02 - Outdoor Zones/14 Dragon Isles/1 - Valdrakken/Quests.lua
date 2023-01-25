@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(VALDRAKKEN, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 16556, {	-- Great Gourmand of The Ruby Feast
@@ -182,10 +182,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 54.6, 41.3, VALDRAKKEN },
 			}),
 		}),
-	}),	
-})));		
-		
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	}),
+})));
+
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(VALDRAKKEN, {
 		n(REWARDS, {
 			i(200452, {	-- Dragonscale Expedition Insignia
@@ -277,7 +277,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
 		q(72596),	-- After Open Orientation
 		q(69935),	-- triggered with 'A Dryadic Remedy' (67606)
@@ -296,7 +296,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	q(70846, {	-- Dragonscale Expedition: Help Needed!
 		["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
 		["coord"] = { 40.8, 48.3, VALDRAKKEN },

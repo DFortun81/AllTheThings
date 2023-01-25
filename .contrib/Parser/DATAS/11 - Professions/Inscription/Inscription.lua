@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 -- Inscription - Skill ID  / SPELL ID
-root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRIPTION }, {
+root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRIPTION }, {
 	applyclassicphase(WRATH_PHASE_ONE, tier(CLASSIC_TIER, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
 		r(51005, {	-- Milling
 			["collectible"] = false,
@@ -1745,7 +1745,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 
 -- #if AFTER WRATH
 -- Inscription Item Database
-local itemDB = root("ItemDB", {});
+local itemDB = root(ROOTS.ItemDB, {});
 
 -- Recipe Cache (for Validation)
 local recipeCache, recipeCacheU = {}, {};

@@ -2,7 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
+root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP_FOS, {
 		un(REMOVED_FROM_GAME, ach(1161, {		-- High Five: 2200
 			un(REMOVED_FROM_GAME, ach(404)),		-- High Five: 2000

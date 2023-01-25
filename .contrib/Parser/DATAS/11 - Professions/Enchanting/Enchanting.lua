@@ -1078,7 +1078,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 }));
 
 -- Enchanting Item Database
-local itemDB = root("ItemDB", {});
+local itemDB = root(ROOTS.ItemDB, {});
 
 -- Recipe Cache (for Validation)
 local recipeCache, recipeCacheU = {}, {};
@@ -1364,7 +1364,7 @@ itemrecipe("Formula: Smoking Heart of the Mountain", 45050, 15596);
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	filter(RECIPES, {
 		itemrecipe("Formula: Imbue Chest - Minor Spirit", 6222);
 		itemrecipe("Formula: Imbue Chest - Spirit", 6343);

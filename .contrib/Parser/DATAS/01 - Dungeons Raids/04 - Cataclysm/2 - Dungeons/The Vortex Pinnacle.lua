@@ -196,7 +196,7 @@ _.Instances = { tier(CATA_TIER, {
 		},
 	}),
 })};
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35401),	-- The Vortex Pinnacle Reward Quest
 		q(35403),	-- The Vortex Pinnacle Reward Quest

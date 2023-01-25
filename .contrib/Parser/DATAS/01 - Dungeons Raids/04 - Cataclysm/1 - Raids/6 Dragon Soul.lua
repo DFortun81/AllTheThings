@@ -890,7 +890,7 @@ _.Instances = { tier(CATA_TIER, {
 	}),
 })};
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		inst(187, {	-- Dragon Soul
 			i(78499),	-- Bones of the Damned

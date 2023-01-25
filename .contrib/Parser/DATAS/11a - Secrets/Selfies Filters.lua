@@ -2,7 +2,7 @@
 --        S E C R E T S       M O D U L E  --
 ---------------------------------------------
 
-root("Secrets", n(-798,  {	-- Selfie Filter
+root(ROOTS.Secrets, n(-798,  {	-- Selfie Filter
 	["cost"] = { { "i", 122674, 1 } },	-- S.E.L.F.I.E. Camera MkII
 	["g"] = {
 		spell(258803, {	-- Argus Filter

@@ -14,7 +14,7 @@ local OnTooltipForCentaurs = [[function(t)
 	end
 end]];
 -- #endif
-root("Zones", m(KALIMDOR, {
+root(ROOTS.Zones, m(KALIMDOR, {
 	m(DESOLACE, {
 		-- #if AFTER CATA
 		["lore"] = "Desolace used to be a barren zone, primarily populated by centaur tribes. Post-Shattering, the Cenarion Circle has begun to heal the land, leading to regrowth in the center of Desolace.",
@@ -1095,7 +1095,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(1380, {	-- Khan Hratha (Gelkis) 
+				q(1380, {	-- Khan Hratha (Gelkis)
 					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1374,	-- Khan Jehn
 					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.1" } }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.1" } }, {
 	m(TORGHAST, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14754, {	-- The Forgotten One
@@ -762,7 +762,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 	}),
 })));
 
-root("HiddenQuestTriggers", tier(SL_TIER, {
+root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 	m(1627, {	-- Torghast
 	-- Various Triggers
 		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)

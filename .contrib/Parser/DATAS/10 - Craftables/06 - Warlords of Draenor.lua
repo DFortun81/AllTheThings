@@ -65,7 +65,7 @@ local WOD_CRAFTED_IDENTICAL_ITEM = function(id, upgradeItem)
 	});
 end
 
-root("Craftables", tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
 	prof(ALCHEMY, {
 		filter(TRINKET_F, {
 			i(109262),	-- Draenic Philosopher's Stone
@@ -337,7 +337,7 @@ root("Craftables", tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSel
 		}),
 	}),
 }))));
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(PROFESSIONS, {
 		prof(BLACKSMITHING, {
 			tier(WOD_TIER, {

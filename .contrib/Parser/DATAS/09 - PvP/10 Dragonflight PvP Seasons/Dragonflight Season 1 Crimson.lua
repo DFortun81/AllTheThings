@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root("PVP", pvp(tier(DF_TIER, {
+root(ROOTS.PVP, pvp(tier(DF_TIER, {
 	header(HEADERS.Achievement, SEASON_CRIMSON, bubbleDownSelf({
 		["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 },
 	},{
