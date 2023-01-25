@@ -1228,6 +1228,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69839, {	-- Azra's Prized Peony
 					["provider"] = { "n", 193135 },	-- Azra's Prized Peony
 					["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(72127, {	-- Captain Lancer
 					["provider"] = { "n", 193198 },	-- Captain Lancer
