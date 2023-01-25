@@ -274,12 +274,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					["achievementID"] = 13691,
 				}),
 				i(170180, {	-- Razorshell
-				--	["description"] = "Only drops when War Mode is enabled.", (i guess they changed this?)
-					["g"] = {
-						crit(42, {	-- Razorshell
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
+					crit(42, {	-- Razorshell
+						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+					}),
 				}),
 			},
 		}),

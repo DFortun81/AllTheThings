@@ -125,7 +125,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 			},
 		}),
 		q(66696, {	-- Tempting Fate: Fate of the Shadowlands
-			["timeline"] = { "created 9.2.7", ADDED_DF_PRE, REMOVED_DF_REL },
+			["timeline"] = { "created 9.2.7", ADDED_DF_PRE, "removed 10.0.2.47213" },
 			["isWorldQuest"] = true,
 			["maps"] = {
 				-- Castle Nathria

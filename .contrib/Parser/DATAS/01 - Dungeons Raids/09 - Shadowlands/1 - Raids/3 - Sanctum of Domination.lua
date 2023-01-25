@@ -158,7 +158,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 				}),
 				ach(15110),		-- Dominating the Catwalk
 				-- Fated
-				ach(15667, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fate of Domination
+				ach(15667, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Fate of Domination
 					crit(1, { -- The Tarragrue
 						["_encounter"] = { 2435, LFR_RAID },
 					}),
@@ -190,7 +190,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 						["_encounter"] = { 2441, LFR_RAID },
 					}),
 				})),
-				ach(15668, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fate of Domination
+				ach(15668, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of Domination
 					crit(1, { -- The Tarragrue
 						["_encounter"] = { 2435, HEROIC_RAID },
 					}),
@@ -222,7 +222,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 						["_encounter"] = { 2441, HEROIC_RAID },
 					}),
 				})),
-				ach(15669, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fate of Domination
+				ach(15669, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of Domination
 					crit(1, { -- The Tarragrue
 						["_encounter"] = { 2435, MYTHIC_RAID },
 					}),

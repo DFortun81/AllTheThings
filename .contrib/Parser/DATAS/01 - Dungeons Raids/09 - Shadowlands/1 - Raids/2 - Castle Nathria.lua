@@ -128,7 +128,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 				}),
 				ach(14614),		-- Castle Vain
 				-- Fated
-				ach(15663, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fate of Nathria
+				ach(15663, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Fate of Nathria
 					crit(1, { -- Shriekwing
 						["_encounter"] = { 2393, LFR_RAID },
 					}),
@@ -160,7 +160,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 						["_encounter"] = { 2424, LFR_RAID },
 					}),
 				})),
-				ach(15664, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fate of Nathria
+				ach(15664, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of Nathria
 					crit(1, { -- Shriekwing
 						["_encounter"] = { 2393, HEROIC_RAID },
 					}),
@@ -192,7 +192,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 						["_encounter"] = { 2424, HEROIC_RAID },
 					}),
 				})),
-				ach(15665, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fate of Nathria
+				ach(15665, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of Nathria
 					crit(1, { -- Shriekwing
 						["_encounter"] = { 2393, MYTHIC_RAID },
 					}),

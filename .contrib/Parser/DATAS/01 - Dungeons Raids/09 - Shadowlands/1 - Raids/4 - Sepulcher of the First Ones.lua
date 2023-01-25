@@ -165,7 +165,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 				}),
 				ach(15409),	-- First Wonders
 				-- Fated
-				ach(15681, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fate of the Sepulcher
+				ach(15681, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Fate of the Sepulcher
 					crit(1, { -- Vigilant Guardian
 						["_encounter"] = { 2458, LFR_RAID },
 					}),
@@ -200,7 +200,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 						["_encounter"] = { 2464, LFR_RAID },
 					}),
 				})),
-				ach(15682, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fate of the Sepulcher
+				ach(15682, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of the Sepulcher
 					crit(1, { -- Vigilant Guardian
 						["_encounter"] = { 2458, HEROIC_RAID },
 					}),
@@ -235,7 +235,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 						["_encounter"] = { 2464, HEROIC_RAID },
 					}),
 				})),
-				ach(15683, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fate of the Sepulcher
+				ach(15683, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of the Sepulcher
 					crit(1, { -- Vigilant Guardian
 						["_encounter"] = { 2458, MYTHIC_RAID },
 					}),

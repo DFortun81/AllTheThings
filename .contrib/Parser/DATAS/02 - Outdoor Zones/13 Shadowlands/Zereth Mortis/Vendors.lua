@@ -6,7 +6,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, 
 	m(ZERETH_MORTIS, {
 		n(VENDORS, {
 			o(375368, {	-- Creation Catalyst Console
-			--	["description"] = "Help us gather information of what is/isnt available via doing reports in ATT discord. Especially the alternative sets and if the pvp transmog is available somewhere else",
 				["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 				["modelScale"] = 3,
 				["sym"] = {{"fill"}},
