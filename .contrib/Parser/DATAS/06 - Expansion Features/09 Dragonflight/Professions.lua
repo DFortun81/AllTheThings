@@ -322,6 +322,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 83.9, 53.2, VALDRAKKEN },
 				["g"] = {
 					i(199197),	-- Bottled Essence
+					i(200120),	-- Irideus' Power Core
 				},
 			}),
 		}),

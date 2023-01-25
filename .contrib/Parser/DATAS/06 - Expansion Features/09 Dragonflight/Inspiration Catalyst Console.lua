@@ -63,10 +63,10 @@ local SymPvP = function(ClassID, HeaderID)
 	return SymLinKPvP
 end
 --]]
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
-	o(500000, {	-- Inspiration Catalyst Console
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
+	o(500000, {	-- Revival Catalyst Console
 		["description"] = "Help us gather information of what is/isnt available via doing reports in ATT discord. Especially the alternative sets and if the pvp transmog is available somewhere else",
-		-- ["coord"] = { X, Y, MAP },
+		["coord"] = { 60.6, 53.8, THALDRASZUS },
 		-- ["modelScale"] = 3,
 		["g"] = {
 			d(LFR_RAID, {
@@ -785,6 +785,22 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 			})),
 			--]]
+			n(QUESTS, {
+				q(72360, {	-- Reviving the Machine
+					["provider"] = { "n", 191369 },	-- Watcher Koranos
+					["coord"] = { 54.6, 41.3, VALDRAKKEN },
+					["maps"] = { THALDRASZUS },
+				}),
+				q(72528, {	-- Revival Catalyst
+					["sourceQuests"] = { 72360 },	-- Reviving the Machine
+					["provider"] = { "n", 198695 },	-- Antuka
+					["coord"] = { 60.6, 53.8, THALDRASZUS },
+					["isWeekly"] = true,
+					["g"] = {
+						currency(2166),	-- Inspiration Catalyst Account-Wide Currency
+					},
+				}),
+			}),
 		},
 	}),
 })));
