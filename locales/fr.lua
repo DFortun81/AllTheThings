@@ -19,7 +19,7 @@ local L = app.L;
 	L.FACTIONS = "Factions";
 	L.COORDINATES_STRING = "Coordonnées";
 	L.NO_COORDINATES_FORMAT = "Aucune coordonnée connue pour %s";
-    L.TOM_TOM_NOT_FOUND = "Vous devez avoir installé TomTom pour pouvoir ajouter des coordonnées.";
+	L.TOM_TOM_NOT_FOUND = "Vous devez avoir installé TomTom pour pouvoir ajouter des coordonnées.";
 	L.FLIGHT_PATHS = "Trajets Aériens";
 	L.KNOWN_BY = "Connu par ";
 	L.REQUIRES = "Requiert";
@@ -231,12 +231,12 @@ local L = app.L;
 
 -- Instructional Text
 	L.MINIMAP_MOUSEOVER_TEXT = "Clic droit pour ouvrir le menu des options\nClic gauche pour afficher la liste principale\n"..CTRL_KEY_TEXT.." + Clic gauche pour afficher la liste de zone\n"..SHIFT_KEY_TEXT.." + Clic gauche pour rafraîchir les collections.";
-    L.TOP_ROW_INSTRUCTIONS = "|cff3399ffClic gauche et faites glisser pour déplacer la fenêtre\nClic droit pour ouvrir le menu des options\n"..SHIFT_KEY_TEXT.." + Clic pour rafraîchir les collections\n"..CTRL_KEY_TEXT.." + Clic pour afficher / masquer toutes les listes\n"..SHIFT_KEY_TEXT.." + Clic droit pour trier les listes de A à Z|r";
+	L.TOP_ROW_INSTRUCTIONS = "|cff3399ffClic gauche et faites glisser pour déplacer la fenêtre\nClic droit pour ouvrir le menu des options\n"..SHIFT_KEY_TEXT.." + Clic pour rafraîchir les collections\n"..CTRL_KEY_TEXT.." + Clic pour afficher / masquer toutes les listes\n"..SHIFT_KEY_TEXT.." + Clic droit pour trier les listes de A à Z|r";
 	L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffClic gauche pour afficher / masquer\nClic droit pour afficher la mini-liste\n"..SHIFT_KEY_TEXT.." + Clic pour rafraîchir les collections\n"..CTRL_KEY_TEXT.." + Clic pour afficher / masquer toutes les listes\n"..SHIFT_KEY_TEXT.." + Clic droit pour trier les listes de A à Z\n"..ALT_KEY_TEXT.." + Clic droit pour tracer des points de repère|r";
 	L.TOP_ROW_INSTRUCTIONS_AH = "|cff3399ffClic gauche et faites glisser pour déplacer la fenêtre\nClic droit pour ouvrir le menu des options\n"..SHIFT_KEY_TEXT.." + Clic pour rechercher dans l’hôtel des ventes|r";
-    L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffClic gauche pour afficher / masquer\nClic droit pour afficher la mini-liste\n"..SHIFT_KEY_TEXT.." + Clic pour rechercher dans l’hôtel des ventes|r";
-    --TODO: L.RECENTLY_MADE_OBTAINABLE = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
-    L.RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000La meilleure source d’information ! Merci =)|r";
+	L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffClic gauche pour afficher / masquer\nClic droit pour afficher la mini-liste\n"..SHIFT_KEY_TEXT.." + Clic pour rechercher dans l’hôtel des ventes|r";
+	--TODO: L.RECENTLY_MADE_OBTAINABLE = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
+	L.RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000La meilleure source d’information ! Merci =)|r";
 	L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." + Clic pour bloquer cette fenêtre";
 	L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." + Clic pour débloquer cette fenêtre";
 	--TODO: L.QUEST_ROW_INSTRUCTIONS = "Right Click to see any Quest Chain Requirements";
