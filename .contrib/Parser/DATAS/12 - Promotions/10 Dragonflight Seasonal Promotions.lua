@@ -60,9 +60,11 @@ root(ROOTS.Promotions, {
 				},
 			}),
 			-- Season 1
-			i(203716, {	-- Thundering Banner of the Aspects (TOY!)
-				["description"] = "Mythic Dungeon International: DF Season 1\n\nThe Mythic Dungeon International (MDI)......",
-				["timeline"] = { ADDED_DF_0_5 },
+			i(203716, {	-- Thundering Banner of the Aspects
+				["description"] = "Mythic Dungeon International: DF Season 1\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 7th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Thundering Banner of the Aspects to use in-game!\nSign-ups close 27 January 2022 1PM PDT and The Proving Grounds are on 1 February 1PM PDT - 8 February (US) 1PM PDT.",
+				["timeline"] = {
+					"added 10.0.5.47481",
+				},
 			}),
 		},
 	}),
