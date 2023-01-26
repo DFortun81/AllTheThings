@@ -88,6 +88,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
 				["questID"] = 74466,
 				["isDaily"] = true,
+				["g"] = {
+					i(203672),	-- Master Huntmaster's Wristguards
+				},
 			}),
 			n(188124, {	-- Irontree
 				["description"] = "Cave Entrance: 79.2, 36.6.",

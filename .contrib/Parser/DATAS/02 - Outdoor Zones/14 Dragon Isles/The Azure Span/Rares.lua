@@ -141,6 +141,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(197121),	-- Highland Drake: Tan Horns (DM!)
 				},
 			}),
+			n(201557, {	-- Graniteclaw
+				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["questID"] = 74459,
+				["isDaily"] = true,
+				["g"] = {
+					i(203658),	-- Graniteclaw's Vest
+				},
+			}),
 			-- n(193251),	-- Gruffy // under DF/Timed Based Rare
 			-- n(193269),	-- Grumbletrunk // under DF/Timed Based Rare
 			n(197356, {	-- High Shaman Rotknuckle
@@ -161,12 +169,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200157),	-- Pathmaker
 				},
 			}),
+			n(201558, {	-- Malgain Rockknell
+				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["questID"] = 74461,
+				["isDaily"] = true,
+				["g"] = {
+					i(203660),	-- Rockknell's Groundpounders
+				},
+			}),
 			n(198004, {	-- Mange the Outcast
 				["coord"] = { 40.4, 48.4, THE_AZURE_SPAN },
 				["questID"] = 73884,
 				["g"] = {
 					i(200283),	-- Gnoll-Gnawed Breeches
 					i(200266),	-- Gnollish Chewtoy Launcher
+				},
+			}),
+			n(201561, {	-- Motivator Krathos
+				["coord"] = { 43.9, 30.9, THE_AZURE_SPAN },
+				["questID"] = 74456,
+				["isDaily"] = true,
+				["g"] = {
+					i(203675),	-- Legplates of the Brutal Motivator
 				},
 			}),
 			n(193201, {	-- Mucka the Raker
@@ -292,18 +316,6 @@ root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "crea
 			n(201553, {	-- Grand Artificer Zeerak
 				-- ["coord"] = { , , THE_AZURE_SPAN },
 				["questID"] = 74457,
-			}),
-			n(201557, {	-- Graniteclaw
-				-- ["coord"] = { , , THE_AZURE_SPAN },
-				["questID"] = 74459,
-			}),
-			n(201558, {	-- Malgain Rockknell
-				-- ["coord"] = { , , THE_AZURE_SPAN },
-				["questID"] = 74461,
-			}),
-			n(201561, {	-- Motivator Krathos
-				-- ["coord"] = { , , THE_AZURE_SPAN },
-				["questID"] = 74456,
 			}),
 			n(201559, {	-- Shiobhan Waterborn
 				-- ["coord"] = { , , THE_AZURE_SPAN },
