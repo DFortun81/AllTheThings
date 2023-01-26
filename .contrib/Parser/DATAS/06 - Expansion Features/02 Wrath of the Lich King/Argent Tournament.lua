@@ -3793,7 +3793,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				}),
+				}, true),
 				applyclassicphase(WRATH_PHASE_THREE, {	-- You've Really Done It This Time, Kul
 					["allianceQuestData"] = q(14096, {	-- You've Really Done It This Time, Kul (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
@@ -3822,7 +3822,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 						CHAMPIONS_SEAL,
 					},
-				}),
+				}, true),
 			}),
 			applyclassicphase(WRATH_PHASE_FOUR, n(REWARDS, {
 				["description"] = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
@@ -4334,7 +4334,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 							["timeline"] = { "added 6.1.0.19445" },
 						})),
 					},
-				})),
+				}), true),
 				n(33310, {	-- Derrick Brindlebeard <Ironforge Quartermaster>
 					["coord"] = { 76.4, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
@@ -4417,7 +4417,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						champ(100, i(46815)),	-- Quel'dorei Steed (MOUNT!)
 						champ(40, i(46820)),	-- Shimmering Wyrmling
 					},
-				})),
+				}), true),
 				n(33657, {	-- Irisee <Exodar Quartermaster>
 					["coord"] = { 76.2, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
@@ -4639,7 +4639,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						champ(100, i(46816)),	-- Sunreaver Hawkstrider (MOUNT!)
 						champ(40, i(46821)),	-- Shimmering Wyrmling
 					},
-				})),
+				}), true),
 			}),
 			n(ZONE_DROPS, {
 				i(46069, {	-- Alliance Lance

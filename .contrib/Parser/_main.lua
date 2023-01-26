@@ -1695,11 +1695,11 @@ bubbleDownAndReplace = function(data, t)
 			for key, value in pairs(data) do
 				t[key] = value;
 			end
-			bubbleDown(data, t.groups);
-			bubbleDown(data, t.g);
+			bubbleDownAndReplace(data, t.groups);
+			bubbleDownAndReplace(data, t.g);
 		elseif isarray(t) then
 			for i,group in ipairs(t) do
-				bubbleDown(data, group);
+				bubbleDownAndReplace(data, group);
 			end
 		else
 			for key, value in pairs(data) do
