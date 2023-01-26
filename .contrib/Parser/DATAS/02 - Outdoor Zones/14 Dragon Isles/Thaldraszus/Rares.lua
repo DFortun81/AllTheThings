@@ -105,6 +105,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200146),	-- Phenran's Discordant Smasher
 				},
 			}),
+			n(201552, {	-- Overseer Stonetongue
+				["coord"] = { 59.0, 56.0, THALDRASZUS },
+				["questID"] = 74448,
+				["g"] = {
+					i(203665),	-- Stonetongues Hood
+				},
+			}),
 			n(193130, {	-- Pleasant Alpha
 				["coord"] = { 37.7, 78.7, THALDRASZUS },
 				["questID"] = 73889,
@@ -198,10 +205,6 @@ root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "crea
 			n(201550, {	-- Overloading Defense Matrix
 				-- ["coord"] = { , , THALDRASZUS },
 				["questID"] = 74449,
-			}),
-			n(201552, {	-- Overseer Stonetongue
-				-- ["coord"] = { , , THALDRASZUS },
-				["questID"] = 74448,
 			}),
 			n(193238, {	-- Spellwrought Snowman
 				["coord"] = { 55.0, 34.0, THALDRASZUS },

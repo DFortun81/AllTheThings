@@ -722,7 +722,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201757),	-- Plundered Supplies
 			-- Fishing
 			i(199696),	-- Iskaaran Ice Axe
-			i(200077),	-- Wooden Pole
 		}),
 		------------- PROBABLY NYI ---------------------
 

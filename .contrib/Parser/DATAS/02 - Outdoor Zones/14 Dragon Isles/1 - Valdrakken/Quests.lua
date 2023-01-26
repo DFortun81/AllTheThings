@@ -287,12 +287,3 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
-	q(70846, {	-- Dragonscale Expedition: Help Needed!
-		["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
-		["coord"] = { 40.8, 48.3, VALDRAKKEN },
-		-- existed in Beta, marked obsolete by Blizzard
-		["timeline"] = { CREATED_DF_PRE },
-		["isBreadcrumb"] = true,
-	}),
-}));

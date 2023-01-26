@@ -2613,7 +2613,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(),	-- Scale Rein Grips
 			-- q(),	-- Snowball Makers
 			-- q(),	-- String of Spiritual Knick-Knacks
-			-- q(),	-- Wind Spirit's Lasso
+			q(71719),	-- Wind Spirit's Lasso
 			-- Bestial Patterns
 			-- q(),	-- Allied Heartwarming Fur Coat
 			-- q(),	-- Allied Legguards of Sansok Khan

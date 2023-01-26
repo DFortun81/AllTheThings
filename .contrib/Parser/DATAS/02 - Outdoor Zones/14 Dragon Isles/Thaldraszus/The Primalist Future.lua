@@ -167,5 +167,6 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THE_PRIMALIST_FUTURE, {
 		q(71995),	-- Looting the Elemental Chest event
+		q(73162),	-- Killing Nimbulatus 
 	}),
 }));

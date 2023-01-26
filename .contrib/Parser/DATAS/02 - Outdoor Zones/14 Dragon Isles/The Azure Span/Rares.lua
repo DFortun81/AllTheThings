@@ -301,10 +301,6 @@ root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "crea
 				-- ["coord"] = { , , THE_AZURE_SPAN },
 				["questID"] = 74462,
 			}),
-			n(201555, {	-- Srivantor
-				-- ["coord"] = { , , THE_AZURE_SPAN },
-				["questID"] = 74458,
-			}),
 			n(201554, {	-- Unstable Arcanogolem
 				-- ["coord"] = { , , THE_AZURE_SPAN },
 				["questID"] = 74455,

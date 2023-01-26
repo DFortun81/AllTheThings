@@ -404,6 +404,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(200079),	-- Sea-Polished Basalt
 					},
 				}),
+				o(381512, {	-- Wooden Pole
+					["description"] = "Used to craft Iskaaran Harpoon.",
+					["coord"] = { 15.6, 44.5, THE_AZURE_SPAN },
+					["g"] = {
+						i(200077),	-- Wooden Pole
+					},
+				}),
 			}),
 			--[[ -- To Do: Add Tuskarr Tackleboxes. Can be looted from Tuskarr Tackleboxes (requires renown 27 to see)
 				-- we probably dont need coords of every tuskarr tacklebox location, there's about a billion of them and they respawn so fast you can't even escape one area

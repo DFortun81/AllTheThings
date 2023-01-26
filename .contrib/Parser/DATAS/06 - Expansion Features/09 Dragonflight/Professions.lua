@@ -330,6 +330,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 				["coord"] = { 83.9, 53.2, VALDRAKKEN },
 			}),
+			-- Alt Skip --
+			q(72339, {	-- Engine of Innovation
+				--["sourceQuests"] = { },
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 83.9, 53.2, VALDRAKKEN },
+				["g"] = {
+					i(199197),	-- Bottled Essence x5
+				},
+			}),
 		}),
 		prof(ALCHEMY, sharedData({
 			["requireSkill"] = ALCHEMY,
@@ -2603,3 +2612,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		})),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
+	m(VALDRAKKEN, {
+		q(70846, {	-- Dragonscale Expedition: Help Needed!
+			["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
+			["coord"] = { 40.8, 48.3, VALDRAKKEN },
+			-- existed in Beta, marked obsolete by Blizzard, pops on unlocking alt spark skip
+			["timeline"] = { CREATED_DF_PRE },
+			["isBreadcrumb"] = true,
+		}),
+		q(72340),	-- Triggered on unlocking alt spark skip
+	}),
+}));

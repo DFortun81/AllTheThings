@@ -51,6 +51,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 49.0, 23.1, THE_AZURE_SPAN },
 				}),
 			}),
+			n(RARES, {
+				n(201555, {	-- Srivantor
+					["coord"] = { 47.0, 22.0, THE_AZURE_SPAN },
+					["questID"] = 74458,
+					["g"] = {
+						i(203663),	-- Cinch of the Sundered Flame
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(194832, {	-- Steiz <Quartermaster>
 					["coord"] = { 49.4, 22.6, THE_AZURE_SPAN },
