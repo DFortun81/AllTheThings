@@ -40,6 +40,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 					["g"] = {
 						i(202171),	-- Dragon Purse
+						i(202172),	-- Overflowing Satchel of Coins
 					},
 				}),
 				i(201921, {	-- Dragonscale Expedition Insignia

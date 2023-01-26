@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- The Azure Spawn
 				n(193251, {	-- Gruffy
 					["coord"] = { 32.7, 29.2, THE_AZURE_SPAN },
-					-- ["questID"] = 69885,
+					["questID"] = 69885,
 					["g"] = {
 						i(200755),	-- Gruffy's Dented Horn
 					},
@@ -211,6 +211,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						i(200435),	-- Brackish Breeches
 						i(200203),	-- Repurposed Giant's Thimble
 						i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
+						i(197022),	-- Cliffside Wylderdrake: Finned Neck (DM!)
 					},
 				}),
 				n(193120, {	-- Smogswog the Firebreather

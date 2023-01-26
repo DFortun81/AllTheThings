@@ -853,7 +853,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201820),	-- Silithus Swiss
 			i(201989),	-- Twisted Heart
 			i(202062),	-- Ash Feather
-			i(202172),	-- Overflowing Satchel of Coins
 		}),
 		-- Use this in a Cost.. Must find the source
 		i(194690),	-- Horn o' Mead

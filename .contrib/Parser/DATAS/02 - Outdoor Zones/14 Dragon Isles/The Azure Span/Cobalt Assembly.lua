@@ -55,8 +55,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				n(201555, {	-- Srivantor
 					["coord"] = { 47.0, 22.0, THE_AZURE_SPAN },
 					["questID"] = 74458,
+					["isDaily"] = true,
 					["g"] = {
 						i(203663),	-- Cinch of the Sundered Flame
+					},
+				}),
+				n(201554, {	-- Unstable Arcanogolem
+					--["coord"] = { , , THE_AZURE_SPAN },
+					["questID"] = 74455,
+					["isDaily"] = true,
+					["g"] = {
+						i(203662),	-- Arcanogolem Crystalblade
 					},
 				}),
 			}),

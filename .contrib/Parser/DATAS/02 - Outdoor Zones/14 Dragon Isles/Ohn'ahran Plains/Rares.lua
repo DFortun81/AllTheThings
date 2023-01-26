@@ -26,6 +26,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200432),	-- Rotguard Cowl
 				},
 			}),
+			n(201535, {	-- Bloodbeak the Ravenous
+				["coord"] = { 37.3, 38.5, OHNAHRAN_PLAINS },
+				["questID"] = 74467,
+				["isDaily"] = true,
+			}),
 			n(195186, {	-- Cinta the Forgotten
 				["coord"] = { 31.3, 76.0, OHNAHRAN_PLAINS },
 				["questID"] = 73950,
@@ -55,6 +60,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 		--	n(193170, {	-- Fulgurb // under DF/Timed Based Rare
+			n(201537, {	-- Groffnar
+				["coord"] = { 35.0, 41.1, OHNAHRAN_PLAINS },
+				["questID"] = 74463,
+				["isDaily"] = true,
+				["g"] = {
+					i(203671),	-- Pack Leader's Pelt
+				},
+			}),
 			n(187781, {	-- Hamett <Rockfang Matriarch>
 				["description"] = "Chance to spawn upon killing Sutaan.",
 				["coord"] = { 85.4, 15.8, OHNAHRAN_PLAINS },
@@ -70,6 +83,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- ["g"] = {
 
 				-- },
+			}),
+			n(201538, {	-- Huntmaster Yrgena
+				["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
+				["questID"] = 74466,
+				["isDaily"] = true,
 			}),
 			n(188124, {	-- Irontree
 				["description"] = "Cave Entrance: 79.2, 36.6.",
@@ -88,6 +106,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200446),	-- Crystalized Sigil
 					i(197106),	-- Highland Drake: Finned Head (DM!)
 				},
+			}),
+			n(201540, {	-- Lurgan
+				["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
+				["questID"] = 74464,
+				["isDaily"] = true,
 			}),
 			n(195409, {	-- Makhra the Ashtouched <Corrupted Child of Ohn'ahra>
 				["coord"] = { 32.7, 38.1, OHNAHRAN_PLAINS },
@@ -213,6 +236,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			-- n(193123, {	-- Steamgill // under DF/Timed Based Rare
+			n(201539, {	-- Stormcaller Narkena
+				["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
+				["questID"] = 74465,
+				["isDaily"] = true,
+			}),
 			n(191842, {	-- Sulfurion
 				["coord"] = { 78.3, 83.0, OHNAHRAN_PLAINS },
 				["questID"] = 73974,
@@ -323,29 +351,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
 	m(OHNAHRAN_PLAINS, {
 		n(RARES, sharedData({["isDaily"] = true}, {
-			n(201535, {	-- Bloodbeak the Ravenous
-				-- ["coord"] = { , , OHNAHRAN_PLAINS },
-				["questID"] = 74467,
-			}),
 			n(192020, {	-- Eaglemaster Niraak
 				["coord"] = { 49.6, 66.6, OHNAHRAN_PLAINS },
 				["questID"] = 74441,
-			}),
-			n(201537, {	-- Groffnar
-				-- ["coord"] = { , , OHNAHRAN_PLAINS },
-				["questID"] = 74463,
-			}),
-			n(201538, {	-- Huntmaster Yrgena
-				-- ["coord"] = { , , OHNAHRAN_PLAINS },
-				["questID"] = 74466,
-			}),
-			n(201540, {	-- Lurgan
-				-- ["coord"] = { , , OHNAHRAN_PLAINS },
-				["questID"] = 74464,
-			}),
-			n(201539, {	-- Stormcaller Narkena
-				-- ["coord"] = { , , OHNAHRAN_PLAINS },
-				["questID"] = 74465,
 			}),
 			n(192045, {	-- Windseeker Avash
 				["coord"] = { 58.8, 67.4, OHNAHRAN_PLAINS },

@@ -220,6 +220,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
 					["isRepeatable"] = true,
 				}),
+				q(72790, {	-- Contribute Supplies: Khaz'gorite-infused Resin
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
+					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
+					["isRepeatable"] = true,
+				}),
 			}),
 			prof(TUSKARR_FISHING_GEAR, {
 				["crs"] = { 195935 },
@@ -433,6 +439,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--
 		q(74370),	-- Triggered with 'Contribute Supplies: Battered Imbu-made Net'
 		q(74369),	-- Triggered with 'Contribute Supplies: Salinated Serevite'
+		q(74368),	-- Triggered with 'Contribute Supplies: Khaz'gorite-infused Resin'
 		--
 		q(67140),	-- Triggered after crafting 'Polished Basalt Bracelet'
 		q(67139),	-- Triggered after crafting 'Flying Fish Bone Charm'
@@ -444,6 +451,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(70803),	-- Triggered after crafting 'Double Imbu Knot'
 		q(70800),	-- Triggered after crafting 'Draconium Net Weights'
 		q(70797),	-- Triggered after crafting 'Jagged Serevite Harpoon Head'
+		q(70801),	-- Triggered after crafting 'Dense Draconium Net Weights'
+		q(70799),	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
+		q(70795),	-- Triggered after crafting 'Reinforced Irontree Harpoon Handle'
 		--
 		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
 		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)

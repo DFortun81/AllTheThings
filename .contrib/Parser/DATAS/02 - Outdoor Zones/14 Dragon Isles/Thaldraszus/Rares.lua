@@ -97,6 +97,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			-- n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
+			n(201549, {	-- Morlash
+				-- ["coord"] = { , , THALDRASZUS },
+				["questID"] = 74450,
+				["isDaily"] = true,
+				["g"] = {
+					i(203666),	-- Vinelashed Bracers
+				},
+			}),
 			n(193688, {	-- Phenran
 				["coord"] = { 60.0, 61.0, THALDRASZUS },
 				["questID"] = 74020,
@@ -198,10 +206,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
 	m(THALDRASZUS, {
 		n(RARES, sharedData({["isDaily"] = true}, {
-			n(201549, {	-- Morlash
-				-- ["coord"] = { , , THALDRASZUS },
-				["questID"] = 74450,
-			}),
 			n(201550, {	-- Overloading Defense Matrix
 				-- ["coord"] = { , , THALDRASZUS },
 				["questID"] = 74449,

@@ -28,6 +28,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						i(ESSENCE_OF_THE_STORM),
 					}
 				}),
+				q(74436, {	-- Storm Warning
+					--["provider"] = { "m", },	-- Figure out this guy's name
+					["coord"] = { 63.4, 47.7, VALDRAKKEN },
+				}),
+				q(74437, {	-- Resisting the Storm
+					["provider"] = { "n", 183860 },	-- Soridormi
+					["coord"] = { 61.1, 50.9, 2085 },
+					--["isWeekly"] = true,
+				}),
 				n(BONUS_OBJECTIVES, {
 					q(74452, {	-- Avalantus
 						["provider"] = { "n", 201543 },	-- Avalantus
@@ -93,7 +102,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						i(201047),	-- Arcanostabilized Provisions
 					},
 				})),
-				n(198831, {	-- Brendormi <Field Primal Researcher>
+				n(199425, {	-- Brendormi <Field Primal Researcher>
 					["coord"] = { 59.9, 48.4, THE_PRIMALIST_FUTURE },
 					["g"] = {
 						-- Gear?
@@ -155,14 +164,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 		})),
 	}),
 })));
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	header(HEADERS.Map, THE_PRIMALIST_FUTURE, bubbleDown({ ["timeline"] = { "created 10.0.5" } }, {
-		n(QUESTS, {
-			q(74436),	-- Storm Warning
-			q(74437),	-- Resisting the Storm
-		}),
-	})),
-}));
+
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THE_PRIMALIST_FUTURE, {

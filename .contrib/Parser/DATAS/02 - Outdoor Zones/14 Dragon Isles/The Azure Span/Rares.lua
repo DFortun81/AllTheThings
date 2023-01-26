@@ -261,6 +261,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					}),
 				},
 			}),
+			n(201556, {	-- Waterpots
+				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["questID"] = 74460,
+				["isDaily"] = true,
+				["g"] = {
+					i(203659),	-- Waterpot's Halfpot Deflector
+				},
+			}),
 			n(193632, {	-- Wilrive
 				["coord"] = { 59.4, 55.2, THE_AZURE_SPAN },
 				["questID"] = 73900,
@@ -300,14 +308,6 @@ root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "crea
 			n(201559, {	-- Shiobhan Waterborn
 				-- ["coord"] = { , , THE_AZURE_SPAN },
 				["questID"] = 74462,
-			}),
-			n(201554, {	-- Unstable Arcanogolem
-				-- ["coord"] = { , , THE_AZURE_SPAN },
-				["questID"] = 74455,
-			}),
-			n(201556, {	-- Waterpots
-				-- ["coord"] = { , , THE_AZURE_SPAN },
-				["questID"] = 74460,
 			}),
 		})),
 	}),

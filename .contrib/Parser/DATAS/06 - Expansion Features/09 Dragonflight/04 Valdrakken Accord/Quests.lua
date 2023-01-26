@@ -201,6 +201,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(201781),	-- Memory of Tyr
 				},
 			}),
+			q(72687, {	-- Renown Supplies
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack
+				},
+			}),
 				-- RENOWN 13 --
 			q(70903, {	-- Wielding Titanic Might
 				["minReputation"] = { 2510, 13 },	-- Valdrakken Accord Renown 13

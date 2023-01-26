@@ -2718,6 +2718,7 @@ _.ObjectNames = {
 	[381485] = "Adventurer's Lost Soap Bar",
 	[381510] = "Flying Fish Bones",
 	[381511] = "Harpoon Head",
+	[381512] = "Wooden Pole",
 	[381513] = "Old Pickaxe",
 	[381514] = "Sea-Polished Basalt",
 	[381575] = "Duck Trap Kit",

@@ -669,6 +669,7 @@ _.Zones =
 					q(40556, {	-- Jabrul Needs You
 						["provider"] = { "o", 246250 },	-- Letter From Jabrul
 						["coord"] = { 40.0, 35.3, LEGION_DALARAN },
+						["isBreadcrumb"] = true,
 						["sourceQuests"] = {
 							40542,	-- Eyes of Nashal
 							40543,	-- Eyes of Nashal

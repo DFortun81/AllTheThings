@@ -7043,7 +7043,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69877),	--
 			q(69879),	--
 			q(69881),	--
-			q(69885),	--
 			q(69887),	--
 			q(69905),	--
 			q(69906),	--
@@ -7180,10 +7179,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 10.0.0.45141
 			q(70782),	--
 			q(70787),	--
-			q(70795),	--
-			q(70799),	--
 			q(70800),	--
-			q(70801),	--
 			q(70804),	--
 			q(70898),	--
 			q(70923),	--
@@ -7420,7 +7416,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72623),	--
 			q(72628),	--
 			q(72631),	--
-			q(72632),	--
 			q(72633),	-- Dragon Isles Supplies The Azure Span
 			q(72634),	--
 			q(72635),	-- Dragon Isles Supplies renown 20 tuskarr (2nd time)
@@ -7428,7 +7423,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72643),	-- Dragon Isles Supplies
 			q(72683),	--
 			q(72684),	--
-			q(72687),	-- Renown Supplies
 			q(72697),	-- Renown Supplies Valdrakken 24 bonus supplies
 			q(72725),	--
 			q(72726),	--
