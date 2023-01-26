@@ -95,7 +95,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = "added 10.0.5", ["description
 					i(3797),	-- Interlaced Pants
 					i(25338),	-- Loosely Threaded Pants
 					i(1431),	-- Patchwork Pants
-					i(15794),	-- Ripped Ogre Loincloth
 					i(3949),	-- Twill Pants
 					i(21006),	-- Unkempt Pants
 				}),
@@ -704,7 +703,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = "added 10.0.5", ["description
 					i(2615),	-- Chromatic Robe
 					i(795),		-- Knitted Tunic
 					i(20990),	-- Light Cloth Armor
-					i(2110),	-- Light Magesmith Robe
 					i(23367),	-- Light Silk Robe
 					i(2160),	-- Padded Armor
 					i(2612),	-- Plain Robe
@@ -712,10 +710,8 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = "added 10.0.5", ["description
 					i(23321),	-- Recruit's Robe
 					i(2614),	-- Robe of Apprenticeship
 					i(2429),	-- Russet Vest
-					i(3260),	-- Scarlet Initiate Robes
 					i(2616),	-- Shimmering Silk Robes
 					i(2618),	-- Silver Dress Robes
-					i(2114),	-- Snowy Robe
 					i(4916),	-- Soft Wool Vest
 					i(3328),	-- Spider Web Robe
 					i(5109),	-- Stonesplinter Rags
@@ -769,7 +765,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = "added 10.0.5", ["description
 					i(14089),	-- Beaded Gloves
 					i(6515),	-- Disciple's Gloves
 					i(2440),	-- Embroidered Gloves
-					i(6202),	-- Fingerless Gloves
 					i(3275),	-- Flax Gloves
 					i(5606),	-- Gardening Gloves
 					i(839),		-- Heavy Weave Gloves
@@ -837,7 +832,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = "added 10.0.5", ["description
 					i(2431),	-- Russet Pants
 					i(10655),	-- Sedgeweed Britches
 					i(10045),	-- Simple Linen Pants
-					i(4261),	-- Solliden's Trousers
 					i(6118),	-- Squire's Pants
 					i(21001),	-- Striding Pants
 					i(3834),	-- Sturdy Cloth Trousers
@@ -847,14 +841,12 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = "added 10.0.5", ["description
 					i(2120),	-- Thin Cloth Pants
 					i(6126),	-- Trapper's Pants
 					i(10035),	-- Tuxedo Pants
-					i(3263),	-- Webbed Pants
 					i(2366),	-- Woven Pants
 				}),
 				n(FEET, {
 					i(3289),	-- Ancestral Boots
 					i(14086),	-- Beaded Sandals
 					i(22744),	-- Bloodsail Boots
-					i(7095),	-- Bog Boots
 					i(860),		-- Cavalier's Boots
 					i(4936),	-- Dirt-Trodden Boots
 					i(7351),	-- Disciple's Boots
@@ -1365,7 +1357,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = "added 10.0.5", ["description
 				i(15483),	-- War Torn Cape
 				i(4772),	-- Warm Cloak
 				i(4658),	-- Warrior's Cloak
-				i(3261),	-- Webbed Cloak
 				i(3008),	-- Wendigo Fur Cloak
 				i(11475),	-- Wine-Stained Cloak
 				i(3322),	-- Wispy Cloak
@@ -1888,5 +1879,19 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = "added 10.0.5", ["description
 			}),
 		}),
 	}),
+}));
+-- All these cloth armor items are white/greys that are removed from the game.
+-- Listed them here for now ~~Gold
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	i(7095),	-- Bog Boots
+	i(3320),	-- Bonecaster Sash
+	i(6202),	-- Fingerless Gloves
+	i(2110),	-- Light Magesmith Robe
+	i(15794),	-- Ripped Ogre Loincloth
+	i(3260),	-- Scarlet Initiate Robes
+	i(2114),	-- Snowy Robe
+	i(4261),	-- Solliden's Trousers
+	i(3263),	-- Webbed Pants
+	i(3261),	-- Webbed Cloak
 }));
 -- #endif
