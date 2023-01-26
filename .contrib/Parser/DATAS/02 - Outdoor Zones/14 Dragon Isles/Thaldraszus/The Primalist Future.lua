@@ -59,17 +59,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(RARES, {
 				n(201543, {	-- Avalantus
 					["coord"] = { 51.8, 68.5, THE_PRIMALIST_FUTURE },
-					-- ["questID"] = ,
-					-- ["g"] = {
-					--
-					-- },
+					["questID"] = 74554,
+					["g"] = {
+						i(203670),	-- Prismatic Diamond Loop
+					},
 				}),
 				n(201545, {	-- Shapemaster Za'lani
 					["coord"] = { 46.9, 42.6, THE_PRIMALIST_FUTURE },
 					["questID"] = 74553,
-					-- ["g"] = {
-					--
-					-- },
+					["g"] = {
+						i(203668),	-- Earthshaping Grips
+					},
 				}),
 				n(201562, {	-- Shardwing
 					["coord"] = { 48.3, 16.9, THE_PRIMALIST_FUTURE },
