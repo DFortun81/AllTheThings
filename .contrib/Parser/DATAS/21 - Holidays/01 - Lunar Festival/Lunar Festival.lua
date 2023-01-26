@@ -414,6 +414,20 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
 			}),
+			q(73169, {	-- The Lunar Festival (A)
+				["qg"] = 199261,	-- Holiday Enthusiast
+				["maps"] = { VALDRAKKEN },
+				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
+				["isYearly"] = true,
+			}),
+			q(73170, {	-- The Lunar Festival (H)
+				["qg"] = 199261,	-- Holiday Enthusiast
+				["maps"] = { VALDRAKKEN },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+				["isYearly"] = true,
+			}),
 			q(8883, {	-- Valadar Starsong
 				["qg"] = 15895,	-- Lunar Festival Harbinger
 				["sourceQuest"] = 8867,	-- Lunar Fireworks
@@ -1426,13 +1440,5 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 		-- #endif
 	},
 }));
-root(ROOTS.NeverImplemented, applyholiday(LUNAR_FESTIVAL, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
-	n(QUESTS, {
-		q(73169, {	-- The Lunar Festival (A)
-			["races"] = ALLIANCE_ONLY,
-		}),
-		q(73170, {	-- The Lunar Festival (H)
-			["races"] = HORDE_ONLY,
-		}),
-	}),
-})));
+
+

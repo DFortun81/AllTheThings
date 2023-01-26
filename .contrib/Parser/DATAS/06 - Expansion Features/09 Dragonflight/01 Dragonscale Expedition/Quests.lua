@@ -180,6 +180,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197386),	-- Renewed Proto-Drake: Spiked Jaw (DM!)
 				},
 			}),
+			q(72035, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 9 },	-- Dragonscale Expedition Renown 9
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
+				-- RENOWN 10 --
+			q(72036, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 10 },	-- Dragonscale Expedition Renown 10
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
 				-- RENOWN 11 --
 			q(70820, {	-- The Basecamp 'Pets'
 				["minReputation"] = { 2507, 11 },	-- Dragonscale Expedition Renown 11
