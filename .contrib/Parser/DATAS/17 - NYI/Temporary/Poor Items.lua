@@ -968,9 +968,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		n(WEAPONS, {
-			filter(DAGGERS, {
-				i(201934),	-- Nokuhd Whittling Knife	-- removed/bugged/NYI?
-			}),
 			filter(FIST_WEAPONS, {
 				i(187518),	-- Monster - Fist Weapon, Main Hand, Invisible
 			}),

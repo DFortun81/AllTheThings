@@ -18,6 +18,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					{"i",200194,1},	-- 1x Nokhud Battle Tunic
 				},
 			}),
+			i(201934),	-- Nokuhd Whittling Knife
 			i(201439, {	-- Renewed Dream
 				["cost"] = {{"i",201437,5}},	-- 5x Slumbering Dream Fragment
 				["g"] = {

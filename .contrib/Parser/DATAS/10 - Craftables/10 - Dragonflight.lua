@@ -1205,6 +1205,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		i(199340),	-- Gold Coin of the Isles
 		i(194970),	-- Islefin Dorado
 		i(199344),	-- Magma Thresher
+		i(201934),	-- Nokuhd Whittling Knife
 		i(194701),	-- Ominous Conch
 		i(200061),	-- Prismatic Leaper
 		i(198397),	-- Rainbow Pearl
