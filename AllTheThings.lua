@@ -7574,6 +7574,18 @@ local ObjectFunctions = {
 	["costProgress"] = function(t)
 		return 0;
 	end,
+	-- whether something is considered 'missing' by seeing if it can search for itself
+	["_missing"] = function(t)
+		local key = t.key;
+		local o = app.SearchForObject(key, t[key]);
+		local missing = true;
+		while o do
+			missing = rawget(o, "_missing");
+			o = not missing and (o.sourceParent or o.parent) or nil;
+		end
+		rawset(t, "_missing", missing);
+		return missing;
+	end,
 };
 local objFunc;
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
@@ -21297,7 +21309,7 @@ customWindowUpdates["list"] = function(self, force, got)
 		self.initialized = true;
 		force = true;
 		local HaveQuestData = HaveQuestData;
-		local DGU, Run = app.DirectGroupUpdate, app.FunctionRunner.Run;
+		local DGU, Run, SearchObject = app.DirectGroupUpdate, app.FunctionRunner.Run, app.SearchForObject;
 
 		-- custom params for initialization
 		local dataType = (app.GetCustomWindowParam("list", "type") or "quest").."ID";
@@ -21322,8 +21334,8 @@ customWindowUpdates["list"] = function(self, force, got)
 			if func then
 				return func(id);
 			end
-			-- allow arbitrary type object constructors
-			return CreateObject({[type]=id});
+			-- allow arbitrary type object constructors by searching for the field and cloning the found data
+			return CreateObject(SearchObject(type, id) or {[type]=id});
 		end
 
 		-- info about the Window
@@ -21347,7 +21359,7 @@ customWindowUpdates["list"] = function(self, force, got)
 			text = function(o, key)
 				local text, key = o.text, o.key;
 				if text and text ~= RETRIEVING_DATA then
-					return "#"..(o[key or 0] or "?")..": "..text;
+					return "#"..(o[dataType] or o[key or 0] or "?")..": "..text;
 				end
 			end,
 			OnLoad = function(self)
