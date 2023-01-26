@@ -11802,11 +11802,20 @@ end
 app.BaseCommonItem = app.BaseObjectFields(fields, "BaseCommonItem");
 
 -- Appearance Lib (Item Source)
-local fields = RawCloneData(itemFields);
-fields.key = function(t) return "s"; end;
 -- TODO: if PL filter is ever a thing investigate https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.PlayerCanCollectSource
-fields.collectible = itemFields.collectibleAsTransmog;
-fields.collected = itemFields.collectedAsTransmog;
+local fields = RawCloneData(itemFields, {
+	["key"] = function(t) return "s"; end,
+	["collectible"] = itemFields.collectibleAsTransmog;
+	["collected"] = itemFields.collectedAsTransmog;
+	-- directly-created source objects can attempt to determine their providing ItemID to benefit from the attached Item fields
+	["itemID"] = function(t)
+		local sourceInfo = C_TransmogCollection_GetSourceInfo(t.s);
+		if sourceInfo then
+			rawset(t, "itemID", sourceInfo.itemID);
+		end
+		return rawget(t, "itemID");
+	end,
+});
 app.BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
 
 app.CreateItemSource = function(sourceID, itemID, t)
