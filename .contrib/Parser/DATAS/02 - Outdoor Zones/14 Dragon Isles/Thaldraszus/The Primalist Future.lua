@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				n(201542, {	-- Tikar Frostclaw
 					["coord"] = { 61.7, 31.7, THE_PRIMALIST_FUTURE },
-					-- ["questID"] = ,
+					["questID"] = 74558,
 					-- ["g"] = {
 					--
 					-- },
