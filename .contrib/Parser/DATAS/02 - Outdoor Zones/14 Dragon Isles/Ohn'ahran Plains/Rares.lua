@@ -114,6 +114,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
 				["questID"] = 74464,
 				["isDaily"] = true,
+				["g"] = {
+					i(203674),	-- Brutal Tramplers
+				},
 			}),
 			n(195409, {	-- Makhra the Ashtouched <Corrupted Child of Ohn'ahra>
 				["coord"] = { 32.7, 38.1, OHNAHRAN_PLAINS },
