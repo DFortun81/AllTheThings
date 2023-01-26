@@ -73,10 +73,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				n(201562, {	-- Shardwing
 					["coord"] = { 48.3, 16.9, THE_PRIMALIST_FUTURE },
-					-- ["questID"] = ,
-					-- ["g"] = {
-					--
-					-- },
+					["questID"] = 74556,
+					["g"] = {
+						i(203669),	-- Chillwing Leggings
+					},
 				}),
 				n(201542, {	-- Tikar Frostclaw
 					["coord"] = { 61.7, 31.7, THE_PRIMALIST_FUTURE },
