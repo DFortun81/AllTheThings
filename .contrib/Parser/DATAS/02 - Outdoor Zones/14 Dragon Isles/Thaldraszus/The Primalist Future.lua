@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				n(201545, {	-- Shapemaster Za'lani
 					["coord"] = { 46.9, 42.6, THE_PRIMALIST_FUTURE },
-					-- ["questID"] = ,
+					["questID"] = 74553,
 					-- ["g"] = {
 					--
 					-- },
@@ -162,4 +162,10 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			q(74437),	-- Resisting the Storm
 		}),
 	})),
+}));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
+	m(THE_PRIMALIST_FUTURE, {
+		q(71995),	-- Looting the Elemental Chest event
+	}),
 }));
