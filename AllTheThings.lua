@@ -2252,7 +2252,7 @@ app.IsComplete = function(o)
 	return true;
 end
 app.GetSourceID = GetSourceID;
-app.MaximumItemInfoRetries = 400;
+app.MaximumItemInfoRetries = 40;
 local function GetUnobtainableTexture(groupORu)
 	-- old reasons are set to 0, so use 1 instead
 	-- if unobtainable stuff changes again, this logic may need to adjust
@@ -9892,12 +9892,16 @@ local function CacheInfo(t, field)
 	local specc = math_floor(specc_decimal + 0.00001);
 	if specc > 0 then
 		local _, text, _, icon = GetSpecializationInfoForSpecID(specc);
-		text = "|c" .. t.classColors.colorStr .. text .. "|r";
+		if text then
+			text = "|c" .. t.classColorCode .. text .. "|r";
+		end
 		_t.text = text;
 		_t.icon = icon;
 	else
 		local text = GetClassInfo(t.classID);
-		text = "|c" .. t.classColors.colorStr .. text .. "|r";
+		if text then
+			text = "|c" .. t.classColorCode .. text .. "|r";
+		end
 		_t.text = text;
 		_t.icon = classIcons[t.classID]
 	end
@@ -9914,7 +9918,7 @@ local fields = {
 		elseif t.maps then
 			text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
 		end
-		text = "|c" .. t.classColors.colorStr .. text .. "|r";
+		text = "|c" .. t.classColorCode .. text .. "|r";
 		rawset(t, "text", text);
 		return text;
 	end,
@@ -9932,6 +9936,10 @@ local fields = {
 	end,
 	["classColors"] = function(t)
 		return RAID_CLASS_COLORS[select(2, GetClassInfo(math_floor(t.classID)))];
+	end,
+	["classColorCode"] = function(t)
+		local colors = t.classColors;
+		return colors and colors.colorStr or app.Colors.SourceIgnored;
 	end,
 };
 app.BaseCharacterClass = app.BaseObjectFields(fields, "BaseCharacterClass");
@@ -21282,34 +21290,54 @@ customWindowUpdates["Sync"] = function(self)
 		self:BaseUpdate(true);
 	end
 end;
-customWindowUpdates["quests"] = function(self, force, got)
+customWindowUpdates["list"] = function(self, force, got)
 	if not self.initialized then
 		-- temporarily prevent a force refresh from exploding the game if this window is open
 		self.doesOwnUpdate = true;
 		self.initialized = true;
-		self.PartitionSize = 1000;
-		self.Limit = 80000;
 		force = true;
 		local HaveQuestData = HaveQuestData;
 		local DGU, Run = app.DirectGroupUpdate, app.FunctionRunner.Run;
 
 		-- custom params for initialization
-		local onlyMissing = app.GetCustomWindowParam("quests", "missing");
-		local onlyCached = app.GetCustomWindowParam("quests", "cached");
+		local dataType = (app.GetCustomWindowParam("list", "type") or "quest").."ID";
+		local onlyMissing = app.GetCustomWindowParam("list", "missing");
+		local onlyCached = app.GetCustomWindowParam("list", "cached");
+		self.PartitionSize = app.GetCustomWindowParam("list", "part") or 1000;
+		self.Limit = app.GetCustomWindowParam("list", "limit") or 1000;
 		-- print("Quests - onlyMissing",onlyMissing)
+
+		-- manual type adjustments to match internal use
+		if dataType == "sourceID" or dataType == "sID" then
+			dataType = "s";
+		end
+
+		local ObjectTypeFuncs = {
+			["questID"] = GetPopulatedQuestObject,
+			-- TODO: need a smart object creation for Items since multiple Base Types
+		};
+
+		local function CreateTypeObject(type, id)
+			local func = ObjectTypeFuncs[type];
+			if func then
+				return func(id);
+			end
+			-- allow arbitrary type object constructors
+			return CreateObject({[type]=id});
+		end
 
 		-- info about the Window
 		self:SetData({
-			["text"] = L["QUESTS_CHECKBOX"],
+			["text"] = "Full Data List - "..(dataType or "None"),
 			["icon"] = app.asset("Interface_Quest_header"),
-			["description"] = L["QUESTS_DESC"].."\n\n1 - "..self.Limit,
+			["description"] = "1 - "..self.Limit,
 			["visible"] = true,
 			["expanded"] = true,
 			["indent"] = 0,
 		});
 
 		-- add a bunch of raw, delay-loaded quests in order into the window
-		local groupCount = self.Limit / self.PartitionSize - 1;
+		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
 		local g, overrides = {}, {
 			visible = true,
 			indent = 2,
@@ -21317,8 +21345,9 @@ customWindowUpdates["quests"] = function(self, force, got)
 				return o._missing and 1 or 0;
 			end,
 			text = function(o, key)
-				if o.text and o.text ~= RETRIEVING_DATA then
-					return "#"..o.questID..": "..o.text;
+				local text, key = o.text, o.key;
+				if text and text ~= RETRIEVING_DATA then
+					return "#"..(o[key or 0] or "?")..": "..text;
 				end
 			end,
 			OnLoad = function(self)
@@ -21329,7 +21358,7 @@ customWindowUpdates["quests"] = function(self, force, got)
 		if onlyMissing then
 			if onlyCached then
 				overrides.visible = function(o, key)
-					return o._missing and HaveQuestData(o.questID);
+					return o._missing and (o.questID and HaveQuestData(o.questID));
 				end
 			else
 				overrides.visible = function(o, key)
@@ -21342,7 +21371,7 @@ customWindowUpdates["quests"] = function(self, force, got)
 		for j=0,groupCount,1 do
 			partitionStart = j * self.PartitionSize;
 			partitionGroups = {};
-			-- define a sub-group for a range of quests
+			-- define a sub-group for a range of things
 			partition = {
 				["text"] = tostring(partitionStart + 1).."+",
 				["icon"] = app.asset("Interface_Quest_header"),
@@ -21350,7 +21379,7 @@ customWindowUpdates["quests"] = function(self, force, got)
 				["g"] = partitionGroups,
 			};
 			for i=1,self.PartitionSize,1 do
-				tinsert(partitionGroups, dlo(GetPopulatedQuestObject, "text", overrides, partitionStart + i));
+				tinsert(partitionGroups, dlo(CreateTypeObject, "text", overrides, dataType, partitionStart + i));
 			end
 			tinsert(g, partition);
 		end
@@ -24238,8 +24267,8 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
 			app:GetWindow("Random"):Toggle();
 			return true;
-		elseif cmd == "quests" then
-			app:GetWindow("quests"):Toggle();
+		elseif cmd == "list" then
+			app:GetWindow("list"):Toggle();
 			return true;
 		elseif cmd == "rwp" then
 			app:GetWindow("RWP"):Toggle();
