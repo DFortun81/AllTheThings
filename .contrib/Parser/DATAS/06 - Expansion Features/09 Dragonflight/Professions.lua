@@ -1231,6 +1231,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 56.0, 44.9, THE_WAKING_SHORES },
 				["g"] = {
 					i(201014),	-- Boomthyr Rocket
+					i(198816),	-- Aerospace Grace Draconium
+					i(198815),	-- Ash
+					i(198814),	-- Boom Fumes
+					i(198817),	-- Durable Crystal
 				},
 			}),
 			q(70252, {	-- Hidden Profession Master Engineering

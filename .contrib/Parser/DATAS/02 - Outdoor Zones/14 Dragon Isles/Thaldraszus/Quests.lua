@@ -1078,6 +1078,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 55.6, 77.4, THALDRASZUS },
 					["isDaily"] = true,
 				}),
+				q(74450, {	-- Morlash
+					["provider"] = { "n", 201549 },	-- Morlash
+					["coord"] = { 62.1, 60.1, THALDRASZUS },
+					["isDaily"] = true,
+				}),
 				q(72116, {	-- Liskron the Dazzling
 					["provider"] = { "n", 193273 },	-- Liskron the Dazzling
 					["coord"] = { 36.4, 72.8, THALDRASZUS },

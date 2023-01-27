@@ -15,6 +15,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(ACHIEVEMENTS, {
 				ach(16569),	-- Cobalt Enthusiast
 			}),
+			n(BONUS_OBJECTIVES, sharedData({
+				["isDaily"] = true,
+			},{
+				q(74457, {	-- Grand Artificer Zeerak
+					["coord"] = { 47.5, 23.6, THE_AZURE_SPAN },
+					["provider"] = { "n", 201553 },	-- Grand Artificer Zeerak
+				}),
+			})),
 			n(QUESTS, {
 				q(71094, {	-- Help Is Our Way!
 					["sourceQuests"] = { 72435 },	-- Welcome to the Assembly
@@ -52,6 +60,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 			}),
 			n(RARES, {
+				n(201553, {	-- Grand Artificer Zeerak
+					["coord"] = { 47.5, 23.6, THE_AZURE_SPAN },
+					["questID"] = 74545,
+					["g"] = {
+						i(203664),	-- Wild Magic Insulating Bands
+					},
+				}),
 				n(201555, {	-- Srivantor
 					["coord"] = { 47.0, 22.0, THE_AZURE_SPAN },
 					["questID"] = 74458,

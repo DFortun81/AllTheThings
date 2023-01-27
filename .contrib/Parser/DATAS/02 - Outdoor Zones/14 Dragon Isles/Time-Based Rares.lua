@@ -33,6 +33,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						i(200257),	-- Decay Infused Branch
 					},
 				}),
+				n(201549, {	-- Morlash
+					["coord"] = { 62.1, 60.1, THALDRASZUS },
+					["questID"] = 74561,
+					["g"] = {
+						i(203666),	-- Vinelashed Bracers
+					},
+				}),
 				n(193210, {	-- Phleep <Time-Lost, Mind-Lost>
 					["coord"] = { 57.2, 84.2, THALDRASZUS },
 					["questID"] = 74021,

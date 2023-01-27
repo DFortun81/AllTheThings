@@ -202,6 +202,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				q(69959, {	-- Gaelzion
 					["qg"] = 193653,	-- Gaelzion
 				}),
+				q(74459, {	-- Graniteclaw
+					["qg"] = 201557,	-- Graniteclaw
+				}),
 				q(69960, {	-- Gravlion
 					["qg"] = 193654,	-- Gravlion
 				}),
@@ -232,6 +235,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(69973, {	-- Rouen Icewind
 					["qg"] = 193682,	-- Rouen Icewind
+				}),
+				q(74462, {	-- Shiobhan Waterborn
+					["qg"] = 201559,	-- Shiobhan Waterborn
 				}),
 				q(69969, {	-- Voraazka
 					["qg"] = 193674,	-- Voraazka
@@ -413,6 +419,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(200180),	-- Crystallized Lightning Staff
 					},
 				}),
+				n(201557, {	-- Graniteclaw
+					["coord"] = { 58.3, 69.0, THE_AZURE_SPAN },
+					["questID"] = 74532,
+					["g"] = {
+						i(203658),	-- Graniteclaw's Vest
+					},
+				}),
 				n(193654, {	-- Gravlion <Progeny of Earth>
 					["coord"] = { 60.7, 56.3, THALDRASZUS },
 					["questID"] = 73998,
@@ -476,6 +489,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					-- ["g"] = {
 
 					--},
+				}),
+				n(201559, {	-- Shiobhan Waterborn
+					["coord"] = { 59.9, 67.5, THE_AZURE_SPAN },
+					["questID"] = 74533,
 				}),
 				n(193684, {	-- Pipspark Thundersnap
 					["coord"] = { 53.4, 26.2, THE_PRIMALIST_FUTURE },

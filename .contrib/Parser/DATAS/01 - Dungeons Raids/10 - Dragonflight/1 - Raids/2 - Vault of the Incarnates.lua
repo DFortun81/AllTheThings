@@ -1289,7 +1289,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(70089),	-- Sennarth (N)
 		q(72274),	-- Sennarth (N)
 		q(70097),	-- Sennarth (H)
-		-- q(TODO),	-- Sennarth (M)
+		q(70106),	-- Sennarth (M)
 		q(70082),	-- Kurog Grimtotem (N)
 		q(70090),	-- Kurog Grimtotem (N)
 		q(72275),	-- Kurog Grimtotem (N)

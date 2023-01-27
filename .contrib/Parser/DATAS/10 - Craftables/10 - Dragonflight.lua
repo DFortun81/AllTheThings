@@ -908,6 +908,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		filter(BATTLE_PETS, {
 			i(193572),	-- Quack-E (PET!)
 		}),
+		filter(MISC, {
+			i(198651),	-- Piece of Scrap
+		}),
 		n(HIDDEN_QUESTS, sharedData({
 			["requireSkill"] = ENGINEERING,
 		},{
@@ -1724,6 +1727,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71611, { ["name"] = "First Craft: Kalu'ak Figurine", }),
 			q(71666, { ["name"] = "First Craft: Alexstraszite Loupes", }),
 			q(71663, { ["name"] = "First Craft: Fine-Print Trifocals", }),
+			q(71616, { ["name"] = "First Craft: Split-Lens Specs", }),
 		})),
 		filter(BATTLE_PETS, {
 			i(193885),	-- Jeweled Amber Whelpling (PET!)

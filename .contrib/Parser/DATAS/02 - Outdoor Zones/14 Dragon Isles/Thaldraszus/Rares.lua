@@ -97,14 +97,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			-- n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
-			n(201549, {	-- Morlash
-				-- ["coord"] = { , , THALDRASZUS },
-				["questID"] = 74450,
-				["isDaily"] = true,
-				["g"] = {
-					i(203666),	-- Vinelashed Bracers
-				},
-			}),
 			n(193688, {	-- Phenran
 				["coord"] = { 60.0, 61.0, THALDRASZUS },
 				["questID"] = 74020,

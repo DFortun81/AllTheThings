@@ -106,16 +106,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						ach(15902),	-- Academy Ascent Advanced: Gold
 					},
 				}),
-				q(72754, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Academy Ascent - Reverse
-					["provider"] = { "n", 193951 },	-- Bronze Timekeeper
-					["coord"] = { 60.3, 41.6, THALDRASZUS },
-					["g"] = {
-						i(191140),	-- Bronze Timepiece
-						ach(17186),	-- Academy Ascent Reverse: Bronze
-						ach(17187),	-- Academy Ascent Reverse: Silver
-						ach(17188),	-- Academy Ascent Reverse: Gold
-					},
-				})),
 				q(70161, {	-- Caverns Criss-Cross
 					["provider"] = { "n", 194372 },	-- Bronze Timekeeper
 					["coord"] = { 58.1, 33.6, THALDRASZUS },

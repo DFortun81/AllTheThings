@@ -141,14 +141,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(197121),	-- Highland Drake: Tan Horns (DM!)
 				},
 			}),
-			n(201557, {	-- Graniteclaw
-				-- ["coord"] = { , , THE_AZURE_SPAN },
-				["questID"] = 74459,
-				["isDaily"] = true,
-				["g"] = {
-					i(203658),	-- Graniteclaw's Vest
-				},
-			}),
 			-- n(193251),	-- Gruffy // under DF/Timed Based Rare
 			-- n(193269),	-- Grumbletrunk // under DF/Timed Based Rare
 			n(197356, {	-- High Shaman Rotknuckle
@@ -313,14 +305,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
 	m(THE_AZURE_SPAN, {
 		n(RARES, sharedData({["isDaily"] = true}, {
-			n(201553, {	-- Grand Artificer Zeerak
-				-- ["coord"] = { , , THE_AZURE_SPAN },
-				["questID"] = 74457,
-			}),
-			n(201559, {	-- Shiobhan Waterborn
-				-- ["coord"] = { , , THE_AZURE_SPAN },
-				["questID"] = 74462,
-			}),
 		})),
 	}),
 })));
