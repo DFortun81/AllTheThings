@@ -3509,7 +3509,10 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 				}),
 				q(13682, {	-- Threat From Above (A, non-DK)
 					["qg"] = 33759,	-- Eadric the Pure <Grand Champion of the Argent Crusade>
-					["sourceQuest"] = 13794,	-- Eadric the Pure
+					["sourceQuests"] = {
+						13794,	-- Eadric the Pure
+						13664,	-- The Black Knight's Fall
+					},
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = ALLIANCE_ONLY,
@@ -3527,7 +3530,10 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 				}),
 				q(13809, {	-- Threat From Above (H, non-DK)
 					["qg"] = 33759,	-- Eadric the Pure <Grand Champion of the Argent Crusade>
-					["sourceQuest"] = 13794,	-- Eadric the Pure
+					["sourceQuests"] = {
+						13794,	-- Eadric the Pure
+						13664,	-- The Black Knight's Fall
+					},
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = HORDE_ONLY,
@@ -3545,7 +3551,10 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 				}),
 				q(13788, {	-- Threat From Above (A, DK)
 					["qg"] = 33762,	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
-					["sourceQuest"] = 13795,	-- The Scourgebane
+					["sourceQuests"] = {
+						13795,	-- The Scourgebane
+						13664,	-- The Black Knight's Fall
+					},
 					["coord"] = { 73.8, 20.0, ICECROWN },
 					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
@@ -3563,7 +3572,10 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 				}),
 				q(13812, {	-- Threat From Above (H, DK)
 					["qg"] = 33762,	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
-					["sourceQuest"] = 13795,	-- The Scourgebane
+					["sourceQuests"] = {
+						13795,	-- The Scourgebane
+						13664,	-- The Black Knight's Fall
+					},
 					["coord"] = { 73.8, 20.0, ICECROWN },
 					["classes"] = { DEATHKNIGHT },
 					["races"] = HORDE_ONLY,
