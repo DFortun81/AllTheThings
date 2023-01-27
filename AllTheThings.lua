@@ -11586,7 +11586,13 @@ local function default_link(t)
 		-- save this link so it doesn't need to be built again
 		rawset(t, "rawlink", itemLink);
 		return RawSetItemInfoFromLink(t, itemLink);
+	-- elseif t.s then
+		-- local s = t.s;
+		-- This is supposed to be an Item but instead is a raw Source... likely doesn't exist
+		-- local link = "|cffff80ff|Htransmogappearance:" .. s .. "|h[Source " .. s .. "]|h|r";
+		-- This is weird...
 	end
+	return UNKNOWN;
 end
 local function default_icon(t)
 	return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
@@ -11807,11 +11813,15 @@ local fields = RawCloneData(itemFields, {
 	["key"] = function(t) return "s"; end,
 	["collectible"] = itemFields.collectibleAsTransmog;
 	["collected"] = itemFields.collectedAsTransmog;
-	-- directly-created source objects can attempt to determine their providing ItemID to benefit from the attached Item fields
+	-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
 	["itemID"] = function(t)
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(t.s);
 		if sourceInfo then
 			rawset(t, "itemID", sourceInfo.itemID);
+			-- since no good translation for itemModID to our modID/bonusID system only save for basic Item sources
+			if sourceInfo.itemModID == 0 then
+				app.SaveHarvestSource(t);
+			end
 		end
 		return rawget(t, "itemID");
 	end,
@@ -14825,8 +14835,13 @@ local function TopLevelUpdateGroup(group)
 end
 app.TopLevelUpdateGroup = TopLevelUpdateGroup;
 -- For directly applying the full Update operation at the specified group, and propagating the difference upwards in the parent hierarchy,
--- then triggering a 1/2 second delayed soft-update of the Window containing the group if any. 'got' indicates that this group was 'gotten'
+-- then triggering a delayed soft-update of the Window containing the group if any. 'got' indicates that this group was 'gotten'
 -- and was the cause for the update
+local DGUDelay = 0.5;
+-- Allows changing the Delayed group update frequency between 0.1 - 2 seconds, mainly for testing
+app.SetDGUDelay = function(delay)
+	DGUDelay = math.min(2, math.max(0.1, tonumber(delay)));
+end
 local function DirectGroupUpdate(group, got)
 	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
 	if not app.RecursiveDirectGroupRequirementsFilter(group) then
@@ -14868,7 +14883,7 @@ local function DirectGroupUpdate(group, got)
 	local window = app.RecursiveFirstDirectParentWithField(group, "window");
 	if window then
 		-- app.PrintDebug("DGU:Callback Update",group.hash,">",window.Suffix,window.Update,window.isQuestChain)
-		DelayedCallback(window.Update, 0.5, window, window.isQuestChain, got);
+		DelayedCallback(window.Update, DGUDelay, window, window.isQuestChain, got);
 	end
 end
 app.DirectGroupUpdate = DirectGroupUpdate;
@@ -21318,12 +21333,13 @@ customWindowUpdates["list"] = function(self, force, got)
 		self.initialized = true;
 		force = true;
 		local HaveQuestData = HaveQuestData;
-		local DGU, Run, SearchObject = app.DirectGroupUpdate, app.FunctionRunner.Run, app.SearchForObject;
+		local DGU, SearchObject = app.DirectGroupUpdate, app.SearchForObject;
 
 		-- custom params for initialization
 		local dataType = (app.GetCustomWindowParam("list", "type") or "quest").."ID";
 		local onlyMissing = app.GetCustomWindowParam("list", "missing");
 		local onlyCached = app.GetCustomWindowParam("list", "cached");
+		local harvesting = app.GetCustomWindowParam("list", "harvesting");
 		self.PartitionSize = app.GetCustomWindowParam("list", "part") or 1000;
 		self.Limit = app.GetCustomWindowParam("list", "limit") or 1000;
 		-- print("Quests - onlyMissing",onlyMissing)
@@ -21335,7 +21351,6 @@ customWindowUpdates["list"] = function(self, force, got)
 
 		local ObjectTypeFuncs = {
 			["questID"] = GetPopulatedQuestObject,
-			-- TODO: need a smart object creation for Items since multiple Base Types
 		};
 
 		local function CreateTypeObject(type, id)
@@ -21373,7 +21388,7 @@ customWindowUpdates["list"] = function(self, force, got)
 			end,
 			OnLoad = function(self)
 				-- app.PrintDebug("DGU-OnLoad:",self.hash)
-				Run(DGU, self);
+				DGU(self);
 			end,
 		};
 		if onlyMissing then
@@ -21385,6 +21400,15 @@ customWindowUpdates["list"] = function(self, force, got)
 				overrides.visible = function(o, key)
 					return o._missing;
 				end
+			end
+		end
+		if harvesting then
+			-- allows the group to be removed from the window if it has been properly loaded
+			overrides.visible = function(o)
+				-- __o is set in the DLO when the object is built
+				-- app.PrintDebug(o.hash,o.text)
+				if o.text == RETRIEVING_DATA then return true; end
+				return;
 			end
 		end
 		local partition, partitionStart, partitionGroups;
