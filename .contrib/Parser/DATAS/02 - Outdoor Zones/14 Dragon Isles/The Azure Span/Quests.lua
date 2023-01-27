@@ -1564,6 +1564,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 186962 },	-- Cascade
 					["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
 				}),
+				q(74001, {	-- Gruffy
+					["provider"] = { "n", 193251 },	-- Gruffy
+					["coord"] = { 32.5, 29.2, THE_AZURE_SPAN },
+					["isDaily"] = true,
+				}),
 				q(69892, {	-- Grumbletrunk
 					["provider"] = { "n", 193269 },	-- Grumbletrunk
 					["coord"] = { 19.1, 43.6, THE_AZURE_SPAN },
