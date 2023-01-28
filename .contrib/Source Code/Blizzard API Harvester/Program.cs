@@ -722,9 +722,6 @@ namespace ATT
                 if (d.TryGetValue("type", out o) && TryParseQuality(o.ToString(), out int qualityID))
                 {
                     dict["quality"] = qualityID;
-                    // less than UNCOMMON cannot be collected sources
-                    if (qualityID < 2)
-                        dict["ignoreSource"] = true;
                 }
             }
             if (subData.TryGetValue("item_class", out d))
