@@ -864,7 +864,7 @@ for key,value in pairs({
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
 		[-1142] = "비행 도전",											-- Aerial Challenges
-		--TODO: [-1143] = "Every 30 min Rare",						-- Every 30 min Rare
+		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
