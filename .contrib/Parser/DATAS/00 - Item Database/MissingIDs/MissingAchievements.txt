@@ -257,8 +257,6 @@ ach(1155),	-- Steamroller
 ach(1156),	-- Test Pets Chared Criteria <NYI>
 ach(1158),	-- Duel Identity <NYI>
 ach(1163),	-- Hot Hot Hot Streak <NYI>
-ach(1170),	-- Master of Arathi Basin
-ach(1173),	-- Master of Warsong Gulch
 3.0.1.8874
 ach(1187),	-- The Keymaster
 ach(1202),	-- Weapon skills at maximum skill \\ Weapon skills at maximum NYI
@@ -875,6 +873,8 @@ ach(14757),	-- Rainy Day Fund \\ Stygian Supply
 ach(14838),	-- Champion of Connection
 9.1.0.38511
 ach(15074),	-- <Hidden> Razorwing Eggs Returned
+9.1.0.38709
+ach(15135),	-- Cutting Edge: Sylvanas Windrunner
 9.1.0.38950
 ach(15185),	-- Mythic: Tazavesh, the Veiled Market Guild Run
 9.1.5.40622
@@ -895,7 +895,6 @@ ach(16546),	-- What's Down There? \\ That's not a fish...
 ach(16547),	-- Pulled!
 ach(16548),	-- It Takes a Tuskarr Buddy \\ It takes a (Tuskarr) village.
 10.0.0.45570
-ach(16621),	-- One of Everything, Please
 ach(16622),	-- Three Minutes or It's Free
 ach(16626),	-- Working with Wyrms
 ach(16627),	-- Professional Draconic Master
@@ -924,4 +923,14 @@ ach(17100),	-- Mythic: Ruby Life Pools Guild Run
 ach(17101),	-- Mythic: The Azure Vault Guild Run
 ach(17102),	-- Mythic: The Nokhud Offensive Guild Run
 ach(17103),	-- Mythic: Uldaman: Legacy of Tyr Guild Run
-ach(17119),	-- Deep Cuts From the Vault
+10.0.2.47631
+ach(17365),	-- <Hidden> 10.0 Professions Onboarding Skip Completed [DNT]
+10.0.5.47871
+ach(16735),	-- 10.0.5 Trading Post - Tutorial Quest - Objective: Tenders Claimed - JZB <DND>
+ach(16737),	-- 10.0.5 Trading Post - Tutorial Quest - Completed (Reward for Player) - JZB <DND>
+ach(17310),	-- 10.0 Prologue - Storms - Dimmed Primeval Water
+ach(17311),	-- 10.0 Prologue - Storms - Dimmed Primeval Fire
+ach(17312),	-- 10.0 Prologue - Storms - Dimmed Primeval Earth
+ach(17313),	-- 10.0 Prologue - Storms - Dimmed Primeval Storm
+ach(17338),	-- <Hidden> ACCOUNT: Veritistrasz Q2 Completed
+ach(17420),	-- Trial of Tyr Ineligible For Spark Skip [DNT]

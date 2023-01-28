@@ -35,3 +35,5 @@ title(484),	-- %s, Agent of the Black Prince
 10.0.2.46259
 title(485),	-- Merchant Artisan %s
 title(486),	-- Personal Crafter %s
+10.0.5.47799
+title(492),	-- Skyscourge %s

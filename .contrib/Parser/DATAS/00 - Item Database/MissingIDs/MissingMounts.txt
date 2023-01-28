@@ -99,26 +99,7 @@ mount(276112),	-- Darkforge Ram
 9.1.5.40622
 mount(363608),	-- Lightforged Ruinstrider
 10.0.0.44649
-mount(351404),	-- PH Mammoth V2 Lava
-mount(368893),	-- Winding Slitherdrake
-mount(371571),	-- Dragon Isles Drake Model Test
-mount(372995),	-- Swift Spectral Drake
-mount(373646),	-- Dracthyr Flight Test
-mount(374071),	-- [PH] Dragonfly Yellow
-mount(376898),	-- [PH] Black Armored River Otter
-mount(376909),	-- [PH] Blue Armored River Otter
-10.0.0.44795
-mount(385253),	-- [PH] Brown Wind Eagle
-mount(385260),	-- [PH] Sepia Wind Eagle
-mount(385262),	-- [PH] Dark Wind Eagle
-mount(385767),	-- PH White Slyvern
-mount(385771),	-- PH Yellow Slyvern
-10.0.0.44999
-mount(387948),	-- [PH] Wind Proto-Drake
-10.0.0.45661
-mount(369536),	-- Soar
-10.0.2.46091
-mount(395644),	-- Divine Kiss of Ohn'ahra
+mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
 
 
 
@@ -227,5 +208,8 @@ mount(276112),	-- Darkforge Ram
 mount(363608),	-- Lightforged Ruinstrider
 9.2.5.43022
 mount(370770),	-- Tuskarr Shoreglider
-10.0.2.46091
-mount(395644),	-- Divine Kiss of Ohn'ahra
+10.0.0.44649
+mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
+mount(373646),	-- Dracthyr Flight Test
+10.0.0.45661
+mount(369536),	-- Soar
