@@ -2732,6 +2732,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74204),	-- Skinning Acrosoth
 			q(74205),	-- Skinning Razk'vex the Untamed
 			q(74206),	-- Skinning Corrupted Proto-Dragon
+			q(74207),	-- Skinning Tempestrian
 			q(74208),	-- Skinning Matriarch Remalla
 			q(74213),	-- Skinning Swog'ranka
 			q(74214),	-- Skinning Moth'go Deeploom
