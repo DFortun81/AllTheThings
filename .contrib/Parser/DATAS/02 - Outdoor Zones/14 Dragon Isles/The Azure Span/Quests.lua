@@ -1587,6 +1587,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["sourceQuests"] = { 66709 },	-- Field Medic 101
 					["coord"] = { 58.1, 42.3, THE_AZURE_SPAN },
 				}),
+				q(74461, {	-- Malgain Rockknell
+					["provider"] = { "n", 201558 },	-- Malgain Rockknell
+					["coord"] = { 56.0, 67.4, THE_AZURE_SPAN },
+					["isDaily"] = true,
+				}),
 				q(72154, {	-- Skag the Thrower
 					["provider"] = { "n", 193149 },	-- Skag the Thrower
 					["coord"] = { 26.7, 49.0, THE_AZURE_SPAN },
@@ -1615,6 +1620,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69872, {	-- Vakril, the Strongest Tuskarr
 					["provider"] = { "n", 193223 },	-- Vakril
 					["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },
+				}),
+				q(74460, {	-- Waterpots
+					["provider"] = { "n", 201556 },	-- Waterpots
+					["coord"] = { 57.3, 64.3, THE_AZURE_SPAN },
+					["isDaily"] = true,
 				}),
 			}),
 			n(HIDDEN_QUESTS, {

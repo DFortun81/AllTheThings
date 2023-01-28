@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			n(201558, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Malgain Rockknell
 				-- ["coord"] = { , , THE_AZURE_SPAN },
-				["questID"] = 74461,
+				["questID"] = 74531,
 				["isDaily"] = true,
 				["g"] = {
 					i(203660),	-- Rockknell's Groundpounders
@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			n(201556, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Waterpots
 				-- ["coord"] = { , , THE_AZURE_SPAN },
-				["questID"] = 74460,
+				["questID"] = 74535,
 				["isDaily"] = true,
 				["g"] = {
 					i(203659),	-- Waterpot's Halfpot Deflector
