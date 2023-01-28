@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(RARES, {
 		n(-1143, {	-- DF Rare Rotation
-			["description"] = "Every 30 minutes 1 rare will spawn, based on a fixed 14h rotation, & they will be marked with a skull on the map if you are in the respective zone.\n\nRotation: Pheelp>Magmaton>Gruffy>Ronsak the Decimator>Phleep>Magmaton>Gruffy>Ronsak the Decimator>Riverwalker Tamopo>Amethyzar the Glittering>Eldoren the Reborn>Phenran>Skag the Thrower>Mikrin of the Raging Winds>Rokmur>Smogswog the Firebreather>Matriarch Remalla>O'nank Shorescour>Researcher Sneakwing>Treasure-Mad Trambladd>Harkyn Grymstone>Fulgurb>Sandana the Tempest>Gorjo the Crab Shackler>Steamgill>Tempestrian>Massive Magmashell>Grumbletrunk>Oshigol>Broodweaver Araznae>Azra's Prized Peony>Malsegan\n\nExample: Phleep spawned at 8am. Phenran would spawn at 11:30. Pheep's next spawn would be at 10pm.",
+			["description"] = "Every 30 minutes 1 rare will spawn, based on a fixed 14h rotation, & they will be marked with a skull on the map if you are in the respective zone.\n\nRotation: Phleep - Magmaton - Gruffy - Ronsak the Decimator - Riverwalker Tamopo - Amethyzar the Glittering - Eldoren the Reborn - Phenran - Skag the Thrower - Mikrin of the Raging Winds - Rokmur - Smogswog the Firebreather - Matriarch Remalla\nO'nank Shorescour - Researcher Sneakwing - Treasure-Mad Trambladd - Harkyn Grymstone - Fulgurb - Sandana the Tempest - Gorjo the Crab Shackler - Steamgill - Tempestrian - Massive Magmashell - Grumbletrunk - Oshigol - Broodweaver Araznae - Azra's Prized Peony - Malsegan\n\nExample: Phleep spawned at 8am. Phenran would spawn at 11:30. Pheep's next spawn would be at 10pm.",
 			["g"] = sharedData({
 				["isDaily"] = true,
 			},{
