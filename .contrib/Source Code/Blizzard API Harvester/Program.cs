@@ -271,11 +271,17 @@ namespace ATT
             {
                 if (APIResults.TryDequeue(out Tuple<int, Task<HttpResponseMessage>> responseData))
                 {
-                    // get the actual response message from the task
+                    // get the actual response message from the task if it is completed
+                    Task<HttpResponseMessage> responseTask = responseData.Item2;
+                    if (!TaskStopped(responseTask))
+                    {
+                        //Console.WriteLine("[" + responseData.Item1.ToString() + "]: WAITING...");
+                        APIResults.Enqueue(responseData);
+                        continue;
+                    }
                     try
                     {
-                        Task<HttpResponseMessage> responseTask = responseData.Item2;
-                        HttpResponseMessage response = responseTask.Result;
+                        HttpResponseMessage response = responseTask.GetAwaiter().GetResult();
                         if (response.IsSuccessStatusCode)
                         {
                             string data = response.Content.ReadAsStringAsync().Result;
@@ -311,13 +317,13 @@ namespace ATT
                         }
                         else
                         {
-                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: " + response.StatusCode.ToString());
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: Retry - " + response.StatusCode.ToString());
                             QueueAPIRequestForID(responseData.Item1, true);
                         }
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine("[" + responseData.Item1.ToString() + "]: API EXPLODE! " + ex.Message);
+                        Console.WriteLine("[" + responseData.Item1.ToString() + "]: Retry - " + GetExceptionMessage(ex));
                         QueueAPIRequestForID(responseData.Item1, true);
                     }
                 }
@@ -329,6 +335,13 @@ namespace ATT
             }
 
             WaitForData = false;
+        }
+
+        private static bool TaskStopped(Task<HttpResponseMessage> task)
+        {
+            return task.IsCompleted ||
+                    task.IsFaulted ||
+                    task.IsCanceled;
         }
 
         /// <summary>
@@ -1349,6 +1362,22 @@ namespace ATT
         private static bool NonEmptyRawData(Dictionary<string, object> dict)
         {
             return dict.TryGetValue("id", out _) && dict.Count > 1;
+        }
+
+        private static string GetExceptionMessage(Exception ex)
+        {
+            if (ex is AggregateException aggEx)
+            {
+                return string.Join(" / ", aggEx.InnerExceptions.Select(e => GetExceptionMessage(e)));
+            }
+            else if (ex.InnerException != null)
+            {
+                return GetExceptionMessage(ex.InnerException);
+            }
+            else
+            {
+                return ex.Message;
+            }
         }
     }
 }
