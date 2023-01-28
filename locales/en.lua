@@ -1989,7 +1989,7 @@ app.L = {
 		[-1140] = "Valdrakken Accord",												-- Valdrakken Accord
 		[-1141] = GetSpellInfo(388945),												-- Siege on Dragonbane Keep
 		[-1142] = "Aerial Challenges",												-- Aerial Challenges
-		[-1143] = "Every 30 min Rare",												-- Every 30 min Rare
+		[-1143] = "DF Rare Rotation",												-- DF Rare Rotation (Every 30 min Rare)
 		[-1144] = "Weekly Profession Knowledge",									-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",

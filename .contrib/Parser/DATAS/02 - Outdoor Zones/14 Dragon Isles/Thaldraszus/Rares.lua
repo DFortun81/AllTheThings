@@ -97,6 +97,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			-- n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
+			n(201549, {	-- Morlash
+				["coord"] = { 62.1, 60.1, THALDRASZUS },
+				["questID"] = 74561,
+				["g"] = {
+					i(203666),	-- Vinelashed Bracers
+				},
+			}),
 			n(193688, {	-- Phenran
 				["coord"] = { 60.0, 61.0, THALDRASZUS },
 				["questID"] = 74020,
@@ -139,13 +146,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			-- n(193240),	-- Riverwalker Tamopo // under DF/Timed Based Rare
-			n(193666, {	-- Rokmur
-				["coord"] = { 50.0, 51.8, THALDRASZUS },
-				-- ["questID"] = 69966,
-				-- ["g"] = {
-
-				-- },
-			}),
+			--	n(193666, 	-- Rokmur // under DF/Timed Based Rare
 			n(191305, {	-- The Great Shellkhan
 				["description"] = "Needs a Case of Fresh Gleamfish fish from Azure Span.",
 				["coords"] = {

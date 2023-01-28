@@ -3,8 +3,8 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(RARES, {
-		n(-1143, {	-- Every 30 min
-			["description"] = "Every 30 minutes only 1 of those rares spawn & they will be marked with a skull on the map if you are in the respective zone.\n\nEU: 6am CET 6:30am CET and so on\n\nNA: 7am PST 7:30am PST and so on.",
+		n(-1143, {	-- DF Rare Rotation
+			["description"] = "Every 30 minutes 1 rare will spawn, based on a fixed 14h rotation, & they will be marked with a skull on the map if you are in the respective zone.\n\nRotation: Pheelp>Magmaton>Gruffy>Ronsak the Decimator>Phleep>Magmaton>Gruffy>Ronsak the Decimator>Riverwalker Tamopo>Amethyzar the Glittering>Eldoren the Reborn>Phenran>Skag the Thrower>Mikrin of the Raging Winds>Rokmur>Smogswog the Firebreather>Matriarch Remalla>O'nank Shorescour>Researcher Sneakwing>Treasure-Mad Trambladd>Harkyn Grymstone>Fulgurb>Sandana the Tempest>Gorjo the Crab Shackler>Steamgill>Tempestrian>Massive Magmashell>Grumbletrunk>Oshigol>Broodweaver Araznae>Azra's Prized Peony>Malsegan\n\nExample: Phleep spawned at 8am. Phenran would spawn at 11:30. Pheep's next spawn would be at 10pm.",
 			["g"] = sharedData({
 				["isDaily"] = true,
 			},{
@@ -33,13 +33,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						i(200257),	-- Decay Infused Branch
 					},
 				}),
-				n(201549, {	-- Morlash
-					["coord"] = { 62.1, 60.1, THALDRASZUS },
-					["questID"] = 74561,
-					["g"] = {
-						i(203666),	-- Vinelashed Bracers
-					},
-				}),
 				n(193210, {	-- Phleep <Time-Lost, Mind-Lost>
 					["coord"] = { 57.2, 84.2, THALDRASZUS },
 					["questID"] = 74021,
@@ -53,6 +46,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				n(193240, {	-- Riverwalker Tamopo <Terror of the Shallows>
 					["coord"] = { 39.8, 70.0, THALDRASZUS },
 					["questID"] = 74024,
+					-- ["g"] = {
+
+					-- },
+				}),
+				n(193666, {	-- Rokmur
+					["coord"] = { 50.0, 51.8, THALDRASZUS },
+					-- ["questID"] = 69966,
 					-- ["g"] = {
 
 					-- },
