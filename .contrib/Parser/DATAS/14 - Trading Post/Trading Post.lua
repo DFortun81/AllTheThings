@@ -200,6 +200,11 @@ root(ROOTS.NeverImplemented, {
 						i(190425),	-- Vagabond's Violet Hood
 				-- 	},
 				-- }),
+				i(190672),	-- Deathguard Acolyte's Cloak
+				i(189869),	-- Distinguished Warcloak
+				i(190068),	-- Emerald Drape
+				i(190696),	-- Magister's Jeweled Drape
+				i(190201),	-- Sin'dorei Assassin's Shroud
 			}),
 		})
 	})),

@@ -1440,5 +1440,3 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 		-- #endif
 	},
 }));
-
-
