@@ -606,3 +606,9 @@
 10.0.2.46420
 487@@@%s, Famed Slayer of Raszageth
 488@@@%s the Storm-Eater
+10.0.2.47213
+491@@@Legend %s
+10.0.5.47799
+482@@@Crimson Legend %s
+490@@@Reverse Racer %s
+492@@@Skyscourge %s

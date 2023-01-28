@@ -1000,3 +1000,5 @@
 2524@@@Obsidian Warders
 10.0.2.46259
 6@@@PLAYER, Tauren
+10.0.2.47187
+6@@@PLAYER, Tauren 

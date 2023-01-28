@@ -10793,3 +10793,5 @@
 6696@@@Weighted: +$k1 Attack Power |A:Professions-Icon-Quality-Tier1-Small:20:20|a
 6697@@@Weighted: +$k1 Attack Power |A:Professions-Icon-Quality-Tier2-Small:20:20|a
 6698@@@Weighted: +$k1 Attack Power |A:Professions-Icon-Quality-Tier3-Small:20:20|a
+10.0.5.47871
+6721@@@10.0.5 - Generic - Storm - Weapon Enchant - High - SK

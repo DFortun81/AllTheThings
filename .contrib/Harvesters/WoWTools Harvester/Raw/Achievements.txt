@@ -11193,3 +11193,152 @@
 16493@@@Petty Theft Mammoth
 10.0.2.47067
 15640@@@Return to Darkness
+10.0.2.47213
+17339@@@Legend: Dragonflight Season 1
+10.0.2.47631
+17365@@@<Hidden> 10.0 Professions Onboarding Skip Completed [DNT]
+10.0.5.47871
+15657@@@Dragon Isles Blacksmithing 75 (DNT)
+15660@@@Dragon Isles Alchemy 75 (DNT)
+15863@@@Dragon Isles Enchanting 75 (DNT)
+15866@@@Dragon Isles Engineering 75 (DNT)
+15869@@@Dragon Isles Herbalism 75 (DNT)
+15872@@@Dragon Isles Inscription 75 (DNT)
+15875@@@Dragon Isles Jewelcrafting 75 (DNT)
+15878@@@Dragon Isles Leatherworking 60 (DNT)
+15881@@@Dragon Isles Mining 75 (DNT)
+15884@@@Dragon Isles Skinning 75 (DNT)
+15887@@@Dragon Isles Tailoring 75 (DNT)
+16109@@@Dragon Isles Leatherworking 75 (DNT)
+16662@@@Dragon Isles Blacksmithing 60 (DNT)
+16663@@@Dragon Isles Tailoring 60 (DNT)
+16664@@@Dragon Isles Jewelcrafting 60 (DNT)
+16665@@@Dragon Isles Engineering 60 (DNT)
+16696@@@Renewed Proto-Drake Armor
+16697@@@Renewed Proto-Drake Head Features
+16698@@@Renewed Proto-Drake Tail Features
+16699@@@Renewed Proto-Drake Scales and Patterns
+16700@@@Renewed Proto-Drake Horns and Hair
+16701@@@Windborne Velocidrake Scales and Patterns
+16702@@@Windborne Velocidrake Armor
+16704@@@Windborne Velocidrake Horns and Fur
+16705@@@Windborne Velocidrake Head Features
+16706@@@Windborne Velocidrake Back and Tail
+16707@@@Highland Drake Scales and Patterns
+16708@@@Highland Drake Armor
+16710@@@Highland Drake Horns and Hair
+16711@@@Highland Drake Back and Tail
+16712@@@Highland Drake Head Features
+16723@@@Cliffside Wylderdrake Scales and Patterns
+16724@@@Cliffside Wylderdrake Armor
+16725@@@Cliffside Wylderdrake Horns and Manes
+16726@@@Cliffside Wylderdrake Back and Tail
+16727@@@Cliffside Wylderdrake Head Features
+16734@@@Crimson Legend: Dragonflight Season 1
+16735@@@10.0.5 Trading Post - Tutorial Quest - Objective: Tenders Claimed - JZB <DND>
+16737@@@10.0.5 Trading Post - Tutorial Quest - Completed (Reward for Player) - JZB <DND>
+17120@@@Ruby Lifeshrine Loop Reverse: Bronze
+17121@@@Ruby Lifeshrine Loop Reverse: Silver
+17122@@@Ruby Lifeshrine Loop Reverse: Gold
+17123@@@Wild Preserve Slalom Reverse: Bronze
+17124@@@Wild Preserve Slalom Reverse: Silver
+17125@@@Wild Preserve Slalom Reverse: Gold
+17126@@@Emberflow Flight Reverse: Bronze
+17127@@@Emberflow Flight Reverse: Silver
+17128@@@Emberflow Flight Reverse: Gold
+17129@@@Apex Canopy River Run Reverse: Bronze
+17130@@@Apex Canopy River Run Reverse: Silver
+17131@@@Apex Canopy River Run Reverse: Gold
+17132@@@Uktulut Coaster Reverse: Bronze
+17133@@@Uktulut Coaster Reverse: Silver
+17134@@@Uktulut Coaster Reverse: Gold
+17135@@@Wingrest Roundabout Reverse: Bronze
+17136@@@Wingrest Roundabout Reverse: Silver
+17137@@@Wingrest Roundabout Reverse: Gold
+17138@@@Flashfrost Flyover Reverse: Bronze
+17139@@@Flashfrost Flyover Reverse: Silver
+17140@@@Flashfrost Flyover Reverse: Gold
+17141@@@Wild Preserve Circuit Reverse: Bronze
+17142@@@Wild Preserve Circuit Reverse: Silver
+17143@@@Wild Preserve Circuit Reverse: Gold
+17144@@@Sundapple Copse Circuit Reverse: Bronze
+17145@@@Sundapple Copse Circuit Reverse: Silver
+17146@@@Sundapple Copse Circuit Reverse: Gold
+17147@@@Fen Flythrough Reverse: Bronze
+17148@@@Fen Flythrough Reverse: Silver
+17149@@@Fen Flythrough Reverse: Gold
+17150@@@Ravine River Run Reverse: Bronze
+17151@@@Ravine River Run Reverse: Silver
+17152@@@Ravine River Run Reverse: Gold
+17153@@@Emerald Garden Ascent Reverse: Bronze
+17154@@@Emerald Garden Ascent Reverse: Silver
+17155@@@Emerald Garden Ascent Reverse: Gold
+17156@@@River Rapids Route Reverse: Bronze
+17157@@@River Rapids Route Reverse: Silver
+17158@@@River Rapids Route Reverse: Gold
+17159@@@The Azure Span Sprint Reverse: Bronze
+17160@@@The Azure Span Sprint Reverse: Silver
+17161@@@The Azure Span Sprint Reverse: Gold
+17162@@@The Azure Span Slalom Reverse: Bronze
+17163@@@The Azure Span Slalom Reverse: Silver
+17164@@@The Azure Span Slalom Reverse: Gold
+17165@@@The Vakthros Ascent Reverse: Bronze
+17166@@@The Vakthros Ascent Reverse: Silver
+17167@@@The Vakthros Ascent Reverse: Gold
+17168@@@Iskaara Tour Reverse: Bronze
+17169@@@Iskaara Tour Reverse: Silver
+17170@@@Iskaara Tour Reverse: Gold
+17171@@@Frostland Flyover Reverse: Bronze
+17172@@@Frostland Flyover Reverse: Silver
+17173@@@Frostland Flyover Reverse: Gold
+17174@@@Archive Ambit Reverse: Bronze
+17175@@@Archive Ambit Reverse: Silver
+17176@@@Archive Ambit Reverse: Gold
+17177@@@The Flowing Forest Flight Reverse: Bronze
+17178@@@The Flowing Forest Flight Reverse: Silver
+17179@@@The Flowing Forest Flight Reverse: Gold
+17180@@@Tyrhold Trial Reverse: Bronze
+17181@@@Tyrhold Trial Reverse: Silver
+17182@@@Tyrhold Trial Reverse: Gold
+17183@@@Cliffside Circuit Reverse: Bronze
+17184@@@Cliffside Circuit Reverse: Silver
+17185@@@Cliffside Circuit Reverse: Gold
+17186@@@Academy Ascent Reverse: Bronze
+17187@@@Academy Ascent Reverse: Silver
+17188@@@Academy Ascent Reverse: Gold
+17189@@@Garden Gallivant Reverse: Bronze
+17190@@@Garden Gallivant Reverse: Silver
+17191@@@Garden Gallivant Reverse: Gold
+17192@@@Caverns Criss-Cross Reverse: Bronze
+17193@@@Caverns Criss-Cross Reverse: Silver
+17194@@@Caverns Criss-Cross Reverse: Gold
+17195@@@Waking Shores Reverse: Bronze
+17196@@@Waking Shores Reverse: Silver
+17197@@@Waking Shores Reverse: Gold
+17198@@@Ohn'ahran Plains Reverse: Bronze
+17199@@@Ohn'ahran Plains Reverse: Silver
+17200@@@Ohn'ahran Plains Reverse: Gold
+17201@@@Azure Span Reverse: Bronze
+17202@@@Azure Span Reverse: Silver
+17203@@@Azure Span Reverse: Gold
+17204@@@Thaldraszus Reverse: Bronze
+17205@@@Thaldraszus Reverse: Silver
+17206@@@Thaldraszus Reverse: Gold
+17207@@@Discombobberlated
+17305@@@Trading Post: Dragonflight
+17310@@@10.0 Prologue - Storms - Dimmed Primeval Water
+17311@@@10.0 Prologue - Storms - Dimmed Primeval Fire
+17312@@@10.0 Prologue - Storms - Dimmed Primeval Earth
+17313@@@10.0 Prologue - Storms - Dimmed Primeval Storm
+17321@@@Elders of the Dragon Isles
+17330@@@Reverse Racer: Bronze
+17331@@@Reverse Racer: Silver
+17332@@@Reverse Racer: Gold
+17334@@@Trading Post Enthusiast
+17335@@@Airborne Tumbler
+17336@@@Airborne Tumbler
+17338@@@<Hidden> ACCOUNT: Veritistrasz Q2 Completed
+17342@@@The Future We Make
+17343@@@Drop It Like It's Hot
+17345@@@Airborne Tumbler
+17420@@@Trial of Tyr Ineligible For Spark Skip [DNT]
