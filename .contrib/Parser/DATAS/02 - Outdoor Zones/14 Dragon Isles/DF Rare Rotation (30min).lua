@@ -123,6 +123,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 74015,
 					["g"] = {
 						i(200542),	-- Breezy Companion
+						i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
 					},
 				}),
 				n(193235, {	-- Oshigol

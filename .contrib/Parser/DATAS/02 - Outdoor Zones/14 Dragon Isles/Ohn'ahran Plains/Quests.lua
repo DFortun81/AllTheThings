@@ -1145,6 +1145,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69857, {	-- Mikrin of the Raging Winds
 					["provider"] = { "n", 193173 },	-- Mikrin of the Raging Winds
 					["coord"] = { 62.8, 79.8, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
 				}),
 				q(69865, {	-- Scaleseeker Mezeri
 					["provider"] = { "n", 193215 },	-- Scaleseeker Mezeri
