@@ -16,7 +16,7 @@ root(ROOTS.Zones, {
 					i(152945),	-- World-Defiler's Tuille
 					i(152948),	-- World-Defiler's Sabatons
 				}),
-				filter(WEAPONS, {
+				n(WEAPONS, {
 					i(152857),	-- Chipped Man'ari Blade
 				})
 			}),

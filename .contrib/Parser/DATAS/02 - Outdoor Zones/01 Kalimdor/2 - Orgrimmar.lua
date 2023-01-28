@@ -4013,13 +4013,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- Now any class and race can buy this
 						-- DRUID --
 						i(6124),	-- Novice's Pants
-						i(6123),	-- Novice's Robe
 						i(6139),	-- Novice's Robe
 
 						-- ROGUE --
-						i(48),	-- Footpad's Pants
-						i(47),	-- Footpad's Shoes
-						i(58234),	-- Footpad's Vest
 						i(20896),	-- Lookout's Pants
 						i(20898),	-- Lookout's Shoes
 						i(58238),	-- Lookout's Vest
@@ -4066,24 +4062,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(58237, {	-- Initiate's Vest
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
-						i(43, {	-- Squire's Boots
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(52533, {	-- Squire's Boots
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(44, {	-- Squire's Pants
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(23477, {	-- Squire's Pants
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(58233, {	-- Squire's Vest
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(58242, {	-- Squire's Vest
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
 
 						-- WARRIOR --
 						i(140, {	-- Brawler's Boots
@@ -4098,22 +4076,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(40, {	-- Recruit's Boots
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
-						i(6122, {	-- Recruit's Boots
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(23475, {	-- Recruit's Boots
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
 						i(20903, {	-- Recruit's Boots
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						i(39, {	-- Recruit's Pants
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(6121, {	-- Recruit's Pants
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(23474, {	-- Recruit's Pants
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						i(20902, {	-- Recruit's Pants
@@ -4123,12 +4089,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						i(58231, {	-- Recruit's Vest
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(58244, {	-- Recruit's Vest
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(58243, {	-- Recruit's Vest
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						-- #endif
@@ -4179,9 +4139,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(55, {	-- Apprentice's Boots
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
-						i(52554, {	-- Apprentice's Boots
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
 						i(20895, {	-- Apprentice's Boots
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
@@ -4194,12 +4151,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20894, {	-- Apprentice's Pants
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
-						i(56, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(52553, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
 						i(52546, {	-- Apprentice's Robe
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
@@ -4209,18 +4160,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20893, {	-- Apprentice's Robe
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
-						i(23478, {	-- Recruit's Pants
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(23479, {	-- Recruit's Robe
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
 
 						-- PRIEST --
 						i(1396, {	-- Acolyte's Pants
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(23322, {	-- Acolyte's Robe
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						i(51, {	-- Neophyte's Boots
@@ -4233,9 +4175,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						i(6098, {	-- Neophyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(6119, {	-- Neophyte's Robe
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						i(6144, {	-- Neophyte's Robe
@@ -4253,9 +4192,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						i(52679, {	-- Acolyte's Pants
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(57, {	-- Acolyte's Robe
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						i(52543, {	-- Acolyte's Robe
@@ -5053,9 +4989,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(129),	-- Rugged Trapper's Boots
 						i(147),	-- Rugged Trapper's Pants
 						i(58232),	-- Rugged Trapper's Vest
-						i(23348),	-- Scout's Boots
-						i(23344),	-- Scout's Pants
-						i(58240),	-- Scout's Vest
 						i(6137),	-- Thug Pants
 						i(6138),	-- Trapper's Boots
 						i(58247),	-- Trapper's Vest
@@ -5064,12 +4997,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(58235),	-- Warder's Vest
 
 						-- SHAMAN --
-						i(52540),	-- Primal Boots
-						i(52539),	-- Primal Pants
-						i(52535),	-- Primal Pants
 						i(52545),	-- Primal Pants
-						i(52538),	-- Primal Robe
-						i(52534),	-- Primal Robe
 						i(52544),	-- Primal Robe
 					}),
 				}),

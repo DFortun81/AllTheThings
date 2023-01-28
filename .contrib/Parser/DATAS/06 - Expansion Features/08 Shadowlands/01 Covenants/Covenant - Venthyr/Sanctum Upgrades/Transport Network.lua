@@ -329,7 +329,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										filter(FINGER_F, {
 											i(180351),	-- Worn Ring of Piety
 										}),
-										filter(WEAPONS, {
+										n(WEAPONS, {
 											i(180336),	-- Faintly Smoldering Torch
 											i(180335),	-- Sturdy Pitch Fork
 											i(180337),	-- Sturdy Pitch Fork

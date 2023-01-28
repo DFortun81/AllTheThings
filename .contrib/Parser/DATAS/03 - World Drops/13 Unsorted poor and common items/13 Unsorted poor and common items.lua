@@ -690,7 +690,8 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(6566),	-- Shimmering Amice
 				}),
 				n(CHEST, {
-					i(6116),	-- Apprentice's Robe
+					i(6116),	-- Apprentice's Robe	-- was not added to vendor in 10.0.5
+					i(52553),	-- Apprentice's Robe	-- was not added to vendor in 10.0.5
 					i(22742),	-- Bloodsail Shirt
 					i(2568),	-- Brown Linen Vest
 					i(2617),	-- Burning Robes
@@ -845,6 +846,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				}),
 				n(FEET, {
 					i(3289),	-- Ancestral Boots
+					i(52554),	-- Apprentice's Boots	-- was not added to vendor in 10.0.5
 					i(14086),	-- Beaded Sandals
 					i(22744),	-- Bloodsail Boots
 					i(860),		-- Cavalier's Boots
@@ -1307,7 +1309,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(4671),	-- Ancestral Cloak
 				i(4686),	-- Barbaric Cloth Cloak
 				i(6555),	-- Bard's Cloak
-				i(11847),	-- Battered Cloak
 				i(4668),	-- Battle Chain Cloak
 				i(4920),	-- Battleworn Cape
 				i(14088),	-- Beaded Cloak
