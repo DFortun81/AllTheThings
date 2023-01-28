@@ -1950,8 +1950,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						190056,	-- Primal Proto-Drake
 					},
 					["coords"] = {
-						{ 80.6, 33.8, WAKING_SHORE },
-						{ 79.4, 32.5, WAKING_SHORE },
+						{ 80.6, 33.8, THE_WAKING_SHORES },
+						{ 79.4, 32.5, THE_WAKING_SHORES },
 					},
 					["provider"] = { "i", 198975 },		-- Ossified Hide
 					["timeline"] = { ADDED_DF_REL },
