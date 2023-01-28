@@ -530,6 +530,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(198872),	-- Brown Scouting Ottuk (MOUNT!)
 					i(200118),	-- Yellow Scouting Ottuk (MOUNT!)
 				},
+				["altQuests"] = { 72639 },	-- Dragon Isles Supplies (25)
+			}),
+			q(72639, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 25 },	-- Iskaara Tuskarr Renown 23
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
+				},
+				["altQuests"] = { 70972 },	-- Our Loyal, Lanky Steeds
 			}),
 				-- RENOWN 26 --
 			q(70976, {	-- Slacking and Sledding
@@ -612,7 +622,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(72782),	-- Triggered with 'A Lost Tribe' (68863)
 		q(72395),	-- Triggered with 'Trading Made Easier' (70966)
 		q(72638),	-- Triggered with 'Arms for Every Arm'  (70971)
-		q(72639),	-- Triggered with 'Our Loyal, Lanky Steeds' (70972)
 		q(72281),	-- Triggered with 'Slacking and Sledding' (70976)
 		q(72641),	-- Triggered with 'Shouldering the Needed Armor' (70961)
 		q(72642),	-- Triggered with 'Scaps Packs' (70977)
