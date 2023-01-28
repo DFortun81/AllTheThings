@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				17204,	-- Thaldraszus Reverse: Bronze
 				17195,	-- Waking Shores Reverse: Bronze
 			}},
-			["timeline"] = { ADDED_10_0_5 },
+			["timeline"] = { ADDED_DF_0_5 },
 		}),
 		ach(17331, {	-- Reverse Racer: Silver
 			-- Meta Achievement
@@ -104,9 +104,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				17205,	-- Thaldraszus Reverse: Silver
 				17196,	-- Waking Shores Reverse: Silver
 			}},
-			["timeline"] = { ADDED_10_0_5 },
+			["timeline"] = { ADDED_DF_0_5 },
 		}),
-		ach(17332, {	-- Reverse Racer: Gold
+		ach(17332, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Reverse Racer: Gold
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				17203,	-- Azure Span Reverse: Gold
@@ -114,11 +114,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				17206,	-- Thaldraszus Reverse: Gold
 				17197,	-- Waking Shores Reverse: Gold
 			}},
-			["timeline"] = { ADDED_10_0_5 },
 			["g"] = {
 				title(490),	-- Reverse Racer <Name>
 			}
-		}),
+		})),
 		ach(16585, {	-- Loremaster of the Dragon Isles
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

@@ -2,7 +2,7 @@
 --     T R A D I N G   P O S T     --
 -------------------------------------
 local TRADERS_TENDER = 2032;
-root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
+root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 	n(ACHIEVEMENTS, {
 		ach(17334, {	-- Trading Post Enthusiast
 			i(203431),	-- Ensemble: Burden of Unrelenting Justice
@@ -95,12 +95,12 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, }, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 }, }, {
 		q(65720),	-- Ensemble: Swashbuckling Buccaneer's Slops
 		q(65737),	-- Ensemble: Vagabond's Rosy Threads
 		q(65677),	-- Ensemble: Wanderer's Rosy Trappings
 	})),
-	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {
 		-- q(65677),	-- Ensemble: Wanderer's Azure/Snowy Trappings	-- Wowhead has same id as Rosy Trappings
 		q(65721),	-- Ensemble: Wanderer's Crimson Trappings
 		q(65648),	-- Ensemble: Wanderer's Midnight Trappings
@@ -113,7 +113,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	})),
 });
 root(ROOTS.NeverImplemented, {
-	tier(DF_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { ADDED_10_0_5 }, }, {
+	tier(DF_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { ADDED_DF_0_5 }, }, {
 		n(VENDORS, {
 			filter(COSMETIC, {
 				i(190577, {	-- Ensemble: Wanderer's Azure Trappings

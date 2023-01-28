@@ -64,7 +64,7 @@ local SymPvP = function(ClassID, HeaderID)
 end
 --]]
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
-	o(500000, {	-- Revival Catalyst Console
+	o(382621, {	-- Revival Catalyst Console
 		["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
 		["coord"] = { 60.6, 53.8, THALDRASZUS },
 		-- ["modelScale"] = 3,

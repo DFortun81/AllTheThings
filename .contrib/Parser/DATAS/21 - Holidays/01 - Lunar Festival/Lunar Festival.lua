@@ -36,10 +36,32 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 					title(43),				-- Elder
 				},
 			}),
-			ach(17321, {	-- Elders of the Dragon Isles
-				["timeline"] = { ADDED_DF_0_5 },
-				["sym"] = {{ "achievement_criteria" }},
-			}),
+			ach(17321, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Elders of the Dragon Isles
+				crit(1, {
+					["_quests"] = { 73848 },	-- Iskaara Elder Shomkol
+				}),
+				crit(2, {
+					["_quests"] = { 73716 },	-- Aylaag Elder
+				}),
+				crit(3, {
+					["_quests"] = { 73172 },	-- Shikaar Elder
+				}),
+				crit(4, {
+					["_quests"] = { 73717 },	-- Ohn'ir Elder
+				}),
+				crit(5, {
+					["_quests"] = { 73858 },	-- Iskaara Elder Nemaglek
+				}),
+				crit(6, {
+					["_quests"] = { 73860 },	-- Elder Dekidig
+				}),
+				crit(7, {
+					["_quests"] = { 73859 },	-- Iskaara Elder Sik'ek
+				}),
+				crit(8, {
+					["_quests"] = { 73861 },	-- Elder Stormdrifter
+				}),
+			})),
 			ach(6006, {	-- Elders of Cataclysm
 				["timeline"] = { "added 4.2.0" },
 				["sym"] = {{ "achievement_criteria" }},
@@ -415,18 +437,20 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 				["isYearly"] = true,
 			}),
 			q(73169, {	-- The Lunar Festival (A)
-				["qg"] = 199261,	-- Holiday Enthusiast
+				["provider"] = { "n", 199261 },	-- Holiday Enthusiast
 				["maps"] = { VALDRAKKEN },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
+				["timeline"] = { ADDED_DF_0_5 },
 			}),
 			q(73170, {	-- The Lunar Festival (H)
-				["qg"] = 199261,	-- Holiday Enthusiast
+				["provider"] = { "n", 199261},	-- Holiday Enthusiast
 				["maps"] = { VALDRAKKEN },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
+				["timeline"] = { ADDED_DF_0_5 },
 			}),
 			q(8883, {	-- Valadar Starsong
 				["qg"] = 15895,	-- Lunar Festival Harbinger
@@ -450,57 +474,49 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 
 			-- Elders of the Dragon Isles
 			q(73716, {	-- Aylaag Elder
-				-- ["provider"] = { "n", xxxxx },
-				["qg"] = 201129,
+				["provider"] = { "n", 201129 },	-- Aylaag Elder
 				["coord"] = { 44.3, 63.7, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_DF_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73860, {	-- Elder Dekidig
-				-- ["provider"] = { "n", xxxxx },
-				["qg"] = 201141,
+				["provider"] = { "n", 201141 },	-- Elder Dekidig
 				["coord"] = { 67.4, 49.4, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_DF_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73861, {	-- Elder Razlok
-				-- ["provider"] = { "n", xxxxx },
-				["qg"] = 201143,
+				["provider"] = { "n", 201143 },	-- Elder Razlok
 				["coord"] = { 50, 66.5, THALDRASZUS },
 				["timeline"] = { ADDED_DF_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73858, {	-- Iskaara Elder Nemaglek
-				-- ["provider"] = { "n", xxxxx },
-				["qg"] = 201139,
+				["provider"] = { "n", 201139 },	-- Iskaara Elder Nemaglek
 				["coord"] = { 12.8, 49, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_DF_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73859, {	-- Iskaara Elder Sik'ek
-				-- ["provider"] = { "n", xxxxx },
-				["qg"] = 201140,
+				["provider"] = { "n", 201140 },	-- Iskaara Elder Sik'ek
 				["coord"] = { 54.8, 43.4, THALDRASZUS },
 				["timeline"] = { ADDED_DF_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73848, {	-- Iskaara Elder Shomkol
-				-- ["provider"] = { "n", xxxxx },
-				["qg"] = 201137,
+				["provider"] = { "n", 201137 },	-- Iskaara Elder Shomkol
 				["coord"] = { 46.6, 31.3, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_DF_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73717, {	-- Ohn'ir Elder
-				-- ["provider"] = { "n", xxxxx },
-				["qg"] = 201132,
+				["provider"] = { "n", 201132 },	-- Ohn'ir Elder
 				["coord"] = { 58.4, 31.4, OHNAHRAN_PLAINS },
 				["timeline"] = { ADDED_DF_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73172, {	-- Shikaar Elder
-				-- ["provider"] = { "n", xxxxx },
-				["qg"] = 200747,
+				["provider"] = { "n", 200747 },	-- Shikaar Elder
 				["coord"] = { 83.8, 48.0, OHNAHRAN_PLAINS },
 				["timeline"] = { ADDED_DF_0_5 },
 				["isYearly"] = true,

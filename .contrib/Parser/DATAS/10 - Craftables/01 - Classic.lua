@@ -2188,7 +2188,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				i(15081, {	-- Heavy Scorpid Shoulders
-					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", "added 10.0.5" },
+					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_DF_0_5 },
 				}),
 				i(8207),	-- Tough Scorpid Shoulders
 			}),
@@ -2248,7 +2248,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(20296),	-- Green Dragonscale Gauntlets
 				-- #endif
 				i(15078, {	-- Heavy Scorpid Gauntlets
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { "removed 4.0.3", ADDED_DF_0_5 },
 				}),
 				applyclassicphase(PHASE_SIX, i(22666, {	-- Icy Scale Gauntlets
 					["timeline"] = { "removed 3.0.1" },
@@ -2268,7 +2268,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15046),	-- Green Dragonscale Leggings
 				-- #endif
 				i(15079, {	-- Heavy Scorpid Leggings
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { "removed 4.0.3", ADDED_DF_0_5 },
 				}),
 				i(8206),	-- Tough Scorpid Leggings
 				i(8185),	-- Turtle Scale Leggings

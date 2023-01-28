@@ -35,9 +35,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				crit(6, {	-- Fifth Challenge: Ingenuity
 					["_quests"] = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
+					["timeline"] = { ADDED_DF_0_5 },
 				}),
 				crit(7, {	-- Innovation Complete
 					["_quests"] = { 70900 },	-- Innovating the Engine
+					["timeline"] = { ADDED_DF_0_5 }
 				}),
 			}),
 		}),
@@ -316,7 +318,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				},
 			}),
 			-- In Tyr's Footsteps chapter 6 --
-			q(70899, {	-- Fifth Challenge of Tyr: Ingenuity
+			q(70899, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Fifth Challenge of Tyr: Ingenuity
 				["sourceQuests"] = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 				["coord"] = { 83.9, 53.2, VALDRAKKEN },
@@ -324,21 +326,22 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199197),	-- Bottled Essence
 					i(200120),	-- Irideus' Power Core
 				},
-			}),
+			})),
 			q(70900, {	-- Innovating the Engine
 				["sourceQuests"] = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 				["coord"] = { 83.9, 53.2, VALDRAKKEN },
+				["timeline"] = { ADDED_DF_0_5 },
 			}),
 			-- Alt Skip --
-			q(72339, {	-- Engine of Innovation
+			q(72339, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Engine of Innovation
 				--["sourceQuests"] = { },
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 				["coord"] = { 83.9, 53.2, VALDRAKKEN },
 				["g"] = {
 					i(199197),	-- Bottled Essence x5
 				},
-			}),
+			})),
 		}),
 		prof(ALCHEMY, sharedData({
 			["requireSkill"] = ALCHEMY,

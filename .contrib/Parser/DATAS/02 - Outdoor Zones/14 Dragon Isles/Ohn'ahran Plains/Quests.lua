@@ -1121,6 +1121,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 201539 },
 					["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
+					["timeline"] = { ADDED_DF_0_5 },
 				}),
 				q(69837, {	-- Sunscale Behemoth
 					["provider"] = { "n", 193133 },	-- Sunscale Behemoth

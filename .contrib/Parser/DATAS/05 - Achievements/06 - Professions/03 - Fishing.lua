@@ -44,7 +44,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ [
 		ach(9458),		-- Blind Lake Sturgeon Angler
 		ach(4917),		-- Cataclysmic Fisherman
 		ach(12990),		-- Catchin' Some Rays
-		ach(17207, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Discombobberlated
+		ach(17207, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Discombobberlated
 			i(202207),	-- Reusable Oversized Bobber (TOY!)
 		})),
 		ach(9462,  {	-- Draenor Angler

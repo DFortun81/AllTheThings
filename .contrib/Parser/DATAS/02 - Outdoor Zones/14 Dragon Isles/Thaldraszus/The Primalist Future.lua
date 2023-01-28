@@ -29,12 +29,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					}
 				}),
 				q(74436, {	-- Storm Warning
-					--["provider"] = { "m", },	-- Figure out this guy's name
+					["provider"] = { "n", 201492 },	-- Zawarudu <Timewalker Envoy>
 					["coord"] = { 63.4, 47.7, VALDRAKKEN },
 				}),
 				q(74437, {	-- Resisting the Storm
 					["provider"] = { "n", 183860 },	-- Soridormi
-					["coord"] = { 61.1, 50.9, 2085 },
+					["coord"] = { 61.1, 50.9, THE_PRIMALIST_FUTURE },
 					--["isWeekly"] = true,
 				}),
 				n(BONUS_OBJECTIVES, {

@@ -97,13 +97,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			-- n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
-			n(201549, {	-- Morlash
+			n(201549, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Morlash
 				["coord"] = { 62.1, 60.1, THALDRASZUS },
 				["questID"] = 74561,
 				["g"] = {
 					i(203666),	-- Vinelashed Bracers
 				},
-			}),
+			})),
 			n(193688, {	-- Phenran
 				["coord"] = { 60.0, 61.0, THALDRASZUS },
 				["questID"] = 74020,
@@ -112,13 +112,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200146),	-- Phenran's Discordant Smasher
 				},
 			}),
-			n(201552, {	-- Overseer Stonetongue
+			n(201552, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Overseer Stonetongue
 				["coord"] = { 59.0, 56.0, THALDRASZUS },
 				["questID"] = 74448,
 				["g"] = {
 					i(203665),	-- Stonetongues Hood
 				},
-			}),
+			})),
 			n(193130, {	-- Pleasant Alpha
 				["coord"] = { 37.7, 78.7, THALDRASZUS },
 				["questID"] = 73889,

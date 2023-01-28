@@ -4009,48 +4009,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3321, {	-- Morgum <Leather Armor Merchant>
 					["coord"] = { 60.0, 55.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
 						-- Now any class and race can buy this
 						-- DRUID --
-						i(6124, {	-- Novice's Pants
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(6123, {	-- Novice's Robe
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(6139, {	-- Novice's Robe
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
+						i(6124),	-- Novice's Pants
+						i(6123),	-- Novice's Robe
+						i(6139),	-- Novice's Robe
 
 						-- ROGUE --
-						i(48, {	-- Footpad's Pants
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(47, {	-- Footpad's Shoes
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(58234, {	-- Footpad's Vest
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(20896, {	-- Lookout's Pants
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(20898, {	-- Lookout's Shoes
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(58238, {	-- Lookout's Vest
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(121, {	-- Thug Boots
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(120, {	-- Thug Pants
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(58246, {	-- Thug Vest
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-					},
+						i(48),	-- Footpad's Pants
+						i(47),	-- Footpad's Shoes
+						i(58234),	-- Footpad's Vest
+						i(20896),	-- Lookout's Pants
+						i(20898),	-- Lookout's Shoes
+						i(58238),	-- Lookout's Vest
+						i(121),	-- Thug Boots
+						i(120),	-- Thug Pants
+						i(58246),	-- Thug Vest
+					}),
 				}),
 				-- #endif
 				n(46512, {	-- Naros <Plate Armor Merchant>
@@ -5071,69 +5047,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3319, {	-- Sana <Mail Armor Merchant>
 					["coord"] = { 45.6, 77.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
 						-- Now any class and race can buy this
 						-- HUNTER --
-						i(129, {	-- Rugged Trapper's Boots
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(147, {	-- Rugged Trapper's Pants
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(58232, {	-- Rugged Trapper's Vest
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(23348, {	-- Scout's Boots
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(23344, {	-- Scout's Pants
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(58240, {	-- Scout's Vest
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(6137, {	-- Thug Pants
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(6138, {	-- Trapper's Boots
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(58247, {	-- Trapper's Vest
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(20900, {	-- Warder's Boots
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(20899, {	-- Warder's Pants
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(58235, {	-- Warder's Vest
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
+						i(129),	-- Rugged Trapper's Boots
+						i(147),	-- Rugged Trapper's Pants
+						i(58232),	-- Rugged Trapper's Vest
+						i(23348),	-- Scout's Boots
+						i(23344),	-- Scout's Pants
+						i(58240),	-- Scout's Vest
+						i(6137),	-- Thug Pants
+						i(6138),	-- Trapper's Boots
+						i(58247),	-- Trapper's Vest
+						i(20900),	-- Warder's Boots
+						i(20899),	-- Warder's Pants
+						i(58235),	-- Warder's Vest
 
 						-- SHAMAN --
-						i(52540, {	-- Primal Boots
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(52539, {	-- Primal Pants
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(52535, {	-- Primal Pants
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(52545, {	-- Primal Pants
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(52538, {	-- Primal Robe
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(52534, {	-- Primal Robe
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-						i(52544, {	-- Primal Robe
-							["timeline"] = { ADDED_DF_0_5 },
-						}),
-					},
+						i(52540),	-- Primal Boots
+						i(52539),	-- Primal Pants
+						i(52535),	-- Primal Pants
+						i(52545),	-- Primal Pants
+						i(52538),	-- Primal Robe
+						i(52534),	-- Primal Robe
+						i(52544),	-- Primal Robe
+					}),
 				}),
 				-- #endif
 				n(26396, {	-- Sergeant Thunderhorn Warlord Vendor Edition

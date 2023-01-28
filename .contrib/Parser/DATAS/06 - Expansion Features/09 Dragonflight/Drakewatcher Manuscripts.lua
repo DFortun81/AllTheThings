@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAKEWATCHER_MANUSCRIPTS, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 			ach(16699, {	-- Renewed Proto-Drake Scales and Patterns
 				crit(56246,	{	-- Green Scales
 					["provider"] = { "i", 197389 }, -- Renewed Proto-Drake: Green Scales (DM!)

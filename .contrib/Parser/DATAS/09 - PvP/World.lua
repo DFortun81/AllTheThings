@@ -82,13 +82,13 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 			}),
 			ach(17335, {	-- Airborne Tumbler (x1)
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-				["timeline"] = { ADDED_10_0_5 },
+				["timeline"] = { ADDED_DF_0_5 },
 			}),
 			ach(17336, {	-- Airborne Tumbler (x10)
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-				["timeline"] = { ADDED_10_0_5 },
+				["timeline"] = { ADDED_DF_0_5 },
 			}),
-			ach(17345, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 }, }, {	-- Airborne Tumbler (x50)
+			ach(17345, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 }, }, {	-- Airborne Tumbler (x50)
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["g"] =	{
 					title(753),	-- Skyscourge <Name>

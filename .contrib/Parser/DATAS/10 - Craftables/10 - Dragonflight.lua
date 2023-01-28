@@ -2746,7 +2746,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74228),	-- Skinning Worldcarver A'tir
 			q(74229),	-- Skinning Death's Shadow
 			q(74550),	-- Skinning Groffnar
-			q(74555),	-- Skinning Shardwing
+			q(74555, {["timeline"] = { ADDED_DF_0_5 }}),	-- Skinning Shardwing
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--

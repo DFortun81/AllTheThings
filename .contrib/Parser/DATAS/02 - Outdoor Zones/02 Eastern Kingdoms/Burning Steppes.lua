@@ -1799,16 +1799,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 7037,	-- Thaurissan Firewalker
 				}),
 				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { "removed 4.0.3", ADDED_DF_0_5 },
 					["cr"] = 7025,	-- Blackrock Soldier
 				}),
 				i(15748, {	-- Pattern: Heavy Scorpid Leggings
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { "removed 4.0.3", ADDED_DF_0_5 },
 					["cr"] = 7027,	-- Blackrock Slayer
 				}),
 				-- #if BEFORE 5.0.4
 				i(15774, {	-- Pattern: Heavy Scorpid Shoulders
-					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", "added 10.0.5" },
+					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_DF_0_5 },
 					-- #if BEFORE 4.0.3
 					["coord"] = { 41.8, 37.0, BURNING_STEPPES },
 					["cr"] = 7029,	-- Blackrock Battlemaster
@@ -1816,7 +1816,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #elseif AFTER 10.0.5
 				i(15774, {	-- Pattern: Heavy Scorpid Shoulders
-					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", "added 10.0.5" },
+					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_DF_0_5 },
 				}),
 				-- #endif
 				i(15732, {	-- Pattern: Volcanic Leggings

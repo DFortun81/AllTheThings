@@ -204,6 +204,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(74459, {	-- Graniteclaw
 					["qg"] = 201557,	-- Graniteclaw
+					["timeline"] = { ADDED_DF_0_5 },
 				}),
 				q(69960, {	-- Gravlion
 					["qg"] = 193654,	-- Gravlion
@@ -419,13 +420,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(200180),	-- Crystallized Lightning Staff
 					},
 				}),
-				n(201557, {	-- Graniteclaw
+				n(201557, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Graniteclaw
 					["coord"] = { 58.3, 69.0, THE_AZURE_SPAN },
 					["questID"] = 74532,
 					["g"] = {
 						i(203658),	-- Graniteclaw's Vest
 					},
-				}),
+				})),
 				n(193654, {	-- Gravlion <Progeny of Earth>
 					["coord"] = { 60.7, 56.3, THALDRASZUS },
 					["questID"] = 73998,
@@ -493,6 +494,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				n(201559, {	-- Shiobhan Waterborn
 					["coord"] = { 59.9, 67.5, THE_AZURE_SPAN },
 					["questID"] = 74533,
+					["timeline"] = { ADDED_DF_0_5 },
 				}),
 				n(193684, {	-- Pipspark Thundersnap
 					["coord"] = { 53.4, 26.2, THE_PRIMALIST_FUTURE },

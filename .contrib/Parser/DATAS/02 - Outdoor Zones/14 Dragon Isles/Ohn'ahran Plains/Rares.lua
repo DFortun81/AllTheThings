@@ -30,6 +30,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 37.3, 38.5, OHNAHRAN_PLAINS },
 				["questID"] = 74467,
 				["isDaily"] = true,
+				["timeline"] = { ADDED_DF_0_5 }
 			}),
 			n(195186, {	-- Cinta the Forgotten
 				["coord"] = { 31.3, 76.0, OHNAHRAN_PLAINS },
@@ -60,14 +61,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 		--	n(193170, {	-- Fulgurb // under DF/Timed Based Rare
-			n(201537, {	-- Groffnar
+			n(201537, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Groffnar
 				["coord"] = { 35.0, 41.1, OHNAHRAN_PLAINS },
 				["questID"] = 74549,
 				["isDaily"] = true,
 				["g"] = {
 					i(203671),	-- Pack Leader's Pelt
 				},
-			}),
+			})),
 			n(187781, {	-- Hamett <Rockfang Matriarch>
 				["description"] = "Chance to spawn upon killing Sutaan.",
 				["coord"] = { 85.4, 15.8, OHNAHRAN_PLAINS },
@@ -84,14 +85,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 
 				-- },
 			}),
-			n(201538, {	-- Huntmaster Yrgena
+			n(201538, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Huntmaster Yrgena
 				["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
 				["questID"] = 74466,
 				["isDaily"] = true,
 				["g"] = {
 					i(203672),	-- Master Huntmaster's Wristguards
 				},
-			}),
+			})),
 			n(188124, {	-- Irontree
 				["description"] = "Cave Entrance: 79.2, 36.6.",
 				["coord"] = { 80.5, 37.8, OHNAHRAN_PLAINS },
@@ -110,14 +111,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(197106),	-- Highland Drake: Finned Head (DM!)
 				},
 			}),
-			n(201540, {	-- Lurgan
+			n(201540, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Lurgan
 				["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
 				["questID"] = 74464,
 				["isDaily"] = true,
 				["g"] = {
 					i(203674),	-- Brutal Tramplers
 				},
-			}),
+			})),
 			n(195409, {	-- Makhra the Ashtouched <Corrupted Child of Ohn'ahra>
 				["coord"] = { 32.7, 38.1, OHNAHRAN_PLAINS },
 				["questID"] = 73968,
@@ -246,6 +247,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
 				["questID"] = 74547,
 				["isDaily"] = true,
+				["timeline"] = { ADDED_DF_0_5 },
 			}),
 			n(191842, {	-- Sulfurion
 				["coord"] = { 78.3, 83.0, OHNAHRAN_PLAINS },

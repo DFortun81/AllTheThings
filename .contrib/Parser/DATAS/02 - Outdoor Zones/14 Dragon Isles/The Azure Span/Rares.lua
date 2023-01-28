@@ -160,14 +160,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200157),	-- Pathmaker
 				},
 			}),
-			n(201558, {	-- Malgain Rockknell
+			n(201558, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Malgain Rockknell
 				-- ["coord"] = { , , THE_AZURE_SPAN },
 				["questID"] = 74461,
 				["isDaily"] = true,
 				["g"] = {
 					i(203660),	-- Rockknell's Groundpounders
 				},
-			}),
+			})),
 			n(198004, {	-- Mange the Outcast
 				["coord"] = { 40.4, 48.4, THE_AZURE_SPAN },
 				["questID"] = 73884,
@@ -176,14 +176,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200266),	-- Gnollish Chewtoy Launcher
 				},
 			}),
-			n(201561, {	-- Motivator Krathos
+			n(201561, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Motivator Krathos
 				["coord"] = { 43.9, 30.9, THE_AZURE_SPAN },
 				["questID"] = 74456,
 				["isDaily"] = true,
 				["g"] = {
 					i(203675),	-- Legplates of the Brutal Motivator
 				},
-			}),
+			})),
 			n(193201, {	-- Mucka the Raker
 				["coord"] = { 57.2, 53.6, THE_AZURE_SPAN },
 				["questID"] = 73885,
@@ -276,14 +276,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					}),
 				},
 			}),
-			n(201556, {	-- Waterpots
+			n(201556, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Waterpots
 				-- ["coord"] = { , , THE_AZURE_SPAN },
 				["questID"] = 74460,
 				["isDaily"] = true,
 				["g"] = {
 					i(203659),	-- Waterpot's Halfpot Deflector
 				},
-			}),
+			})),
 			n(193632, {	-- Wilrive
 				["coord"] = { 59.4, 55.2, THE_AZURE_SPAN },
 				["questID"] = 73900,

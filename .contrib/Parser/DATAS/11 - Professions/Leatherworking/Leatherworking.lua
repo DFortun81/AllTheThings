@@ -431,7 +431,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scorpid Shoulders",
-					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", "added 10.0.5" },
+					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_DF_0_5 },
 					["recipeID"] = 19100,
 				},
 				{
@@ -941,7 +941,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scorpid Gauntlets",
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { "removed 4.0.3", ADDED_DF_0_5 },
 					["recipeID"] = 19064,
 				},
 				{
@@ -1251,7 +1251,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scorpid Leggings",
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { "removed 4.0.3", ADDED_DF_0_5 },
 					["recipeID"] = 19075,
 				},
 				{

@@ -21,6 +21,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74457, {	-- Grand Artificer Zeerak
 					["coord"] = { 47.5, 23.6, THE_AZURE_SPAN },
 					["provider"] = { "n", 201553 },	-- Grand Artificer Zeerak
+					["timeline"] = { ADDED_DF_0_5 },
 				}),
 			})),
 			n(QUESTS, {
@@ -60,29 +61,29 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 			}),
 			n(RARES, {
-				n(201553, {	-- Grand Artificer Zeerak
+				n(201553, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Grand Artificer Zeerak
 					["coord"] = { 47.5, 23.6, THE_AZURE_SPAN },
 					["questID"] = 74545,
 					["g"] = {
 						i(203664),	-- Wild Magic Insulating Bands
 					},
-				}),
-				n(201555, {	-- Srivantor
+				})),
+				n(201555, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Srivantor
 					["coord"] = { 47.0, 22.0, THE_AZURE_SPAN },
 					["questID"] = 74458,
 					["isDaily"] = true,
 					["g"] = {
 						i(203663),	-- Cinch of the Sundered Flame
 					},
-				}),
-				n(201554, {	-- Unstable Arcanogolem
+				})),
+				n(201554, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Unstable Arcanogolem
 					--["coord"] = { , , THE_AZURE_SPAN },
 					["questID"] = 74455,
 					["isDaily"] = true,
 					["g"] = {
 						i(203662),	-- Arcanogolem Crystalblade
 					},
-				}),
+				})),
 			}),
 			n(VENDORS, {
 				n(194832, {	-- Steiz <Quartermaster>
