@@ -1839,9 +1839,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(4940, {	-- Veiled Grips
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(131626, {	-- Shrouded Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
-						}),
 					},
 				}),
 				q(840, {	-- Conscript of the Horde

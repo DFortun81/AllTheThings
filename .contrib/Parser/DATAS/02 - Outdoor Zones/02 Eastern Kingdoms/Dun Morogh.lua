@@ -1472,9 +1472,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(57557, {	-- Warm Winter Wristguards
 							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
 						}),
-						i(131203, {	-- Chain Link Winter Bracers
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
-						}),
 					},
 				}),
 				q(5625, {	-- Garments of the Light

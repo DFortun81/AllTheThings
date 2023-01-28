@@ -694,10 +694,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(4970, {	-- Rough-hewn Kodo Leggings
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(131213, {	-- Chain Kodo-Rider's Pants
-							-- CRIEVE NOTE: This is a funny one, Blizzard created this item and added it to this removed from game quest... [reynolds] But Why? [/reynolds]
-							["timeline"] = { "added 7.0.3.22248" },
-						}),
 					},
 				}),
 				q(746, {	-- Dwarven Digging

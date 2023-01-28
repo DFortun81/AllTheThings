@@ -989,15 +989,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(147204),	-- Black Apron - TEST
 				}),
 			}),
-			filter(SHIRTS, {
-				tier(LEGION_TIER, 0.3, {
-					i(129294),	-- Bonespeaker Tatoos
-					i(137118),	-- The Crone's Shirt
-				}),
-				tier(LEGION_TIER, 2.5, {
-					i(137552),	-- Purple Shirt
-				}),
-			}),
 			filter(NECK_F, {
 				tier(LEGION_TIER, 3.5, {
 					i(157750),	-- Pendant of Good Fortune

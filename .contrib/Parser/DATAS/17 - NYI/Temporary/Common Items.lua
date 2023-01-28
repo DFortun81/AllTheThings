@@ -32,7 +32,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			n(ARMOR, {
 				filter(CLOTH, {
 					n(WRIST, {
-						i(57537),	-- Frosthammer Bracer
 						i(57156),	-- Prodigal Lich Bracer
 					}),
 					n(HANDS, {
@@ -43,7 +42,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						i(49530),	-- Goblin Acolyte's Belt
 						i(49509),	-- Goblin Apprentice's Belt
 						i(49513),	-- Goblin Neophyte's Belt
-						i(57553),	-- Ragged Belt
 					}),
 					n(FEET, {
 						i(57529),	-- Fur-Lined Slippers
@@ -51,9 +49,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					}),
 				}),
 				filter(LEATHER, {
-					n(WRIST, {
-						i(57557),	-- Warm Winter Wristguards
-					}),
 					n(HANDS, {
 						i(53385),	-- Rockbitten Gloves
 					}),
@@ -67,9 +62,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					}),
 					n(HANDS, {
 						i(57392),	-- Willem's Mitts
-					}),
-					n(FEET, {
-						i(57539),	-- Snow Stomping Boots
 					}),
 				}),
 				filter(PLATE, {
@@ -88,11 +80,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				filter(CLOTH, {
 					n(FEET, {
 						i(72021),	-- Trainee's Boots
-					}),
-				}),
-				filter(LEATHER, {
-					n(HANDS, {
-						i(87265),	-- Tiger Palm Wraps
 					}),
 				}),
 			}),
@@ -226,7 +213,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(160247),	-- Cutwater Hat
 					i(160223),	-- Cutwater Pants
 					i(160220),	-- Cutwater Shirt
-					i(168004),	-- Gift of N'Zoth
 					i(153355),	-- Irontide Hat
 					i(160248),	-- Irontide Hat
 					i(160229),	-- Irontide Pants
