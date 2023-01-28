@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 		--	n(193170, {	-- Fulgurb // under DF/Timed Based Rare
 			n(201537, {	-- Groffnar
 				["coord"] = { 35.0, 41.1, OHNAHRAN_PLAINS },
-				["questID"] = 74463,
+				["questID"] = 74549,
 				["isDaily"] = true,
 				["g"] = {
 					i(203671),	-- Pack Leader's Pelt

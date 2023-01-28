@@ -2744,6 +2744,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74225),	-- Skinning Battlehorn Pyrhus
 			q(74228),	-- Skinning Worldcarver A'tir
 			q(74229),	-- Skinning Death's Shadow
+			q(74550),	-- Skinning Groffnar
 			q(74555),	-- Skinning Shardwing
 		}),
 		prof(TAILORING, {

@@ -1075,6 +1075,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 74.9, 47.1, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
 				}),
+				q(74463, {	-- Groffnar
+					["provider"] = { "n", 201537 },	-- Groffnar
+					["coord"] = { 35.1, 40.8, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+				}),
 				q(66356, {	-- Irontree
 					["provider"] = { "n", 193128 },	-- Irontree
 					["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
