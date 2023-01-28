@@ -15,7 +15,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["g"] = {
 						-- is part of the DF>Global Rare Loottable
 						-- specfic drops
-						i(200758),	-- Breastplate of Storied Antiquity (needs to move to a CBD somehow sometime for certain Rares)
 						i(200147),	-- Web-Woven Robe
 					},
 				}),
@@ -52,7 +51,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				n(193666, {	-- Rokmur
 					["coord"] = { 50.0, 51.8, THALDRASZUS },
-					-- ["questID"] = 69966,
+					["questID"] = 74025,
 					-- ["g"] = {
 
 					-- },

@@ -617,7 +617,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196994),	-- Cliffside Wylderdrake: Short Horns
 			i(196995),	-- Cliffside Wylderdrake: Spiked Horns
 			i(196997),	-- Cliffside Wylderdrake: Split Horns
-			i(196999),	-- Cliffside Wylderdrake: Swept Horns
 			i(197000),	-- Cliffside Wylderdrake: Coiled Horns
 			i(197002),	-- Cliffside Wylderdrake: Flared Cheek
 			i(197004),	-- Cliffside Wylderdrake: Spiked Legs

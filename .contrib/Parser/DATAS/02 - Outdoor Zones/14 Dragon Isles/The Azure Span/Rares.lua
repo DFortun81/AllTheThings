@@ -111,7 +111,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200210),	-- Amnesia
-					i(200758),	-- Breastplate of Storied Antiquity
 					i(197138),	-- [Highland Drake: Striped Pattern]
 				},
 			}),

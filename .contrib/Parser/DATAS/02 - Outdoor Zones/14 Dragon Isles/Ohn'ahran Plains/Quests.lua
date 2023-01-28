@@ -1112,6 +1112,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 193123 },	-- Steamgill
 					["coord"] = { 53.2, 72.5, OHNAHRAN_PLAINS },
 				}),
+				q(74465, {	-- Stormcaller Narkena
+					["provider"] = { "n", 201539 },
+					["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+				}),
 				q(69837, {	-- Sunscale Behemoth
 					["provider"] = { "n", 193133 },	-- Sunscale Behemoth
 					["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },

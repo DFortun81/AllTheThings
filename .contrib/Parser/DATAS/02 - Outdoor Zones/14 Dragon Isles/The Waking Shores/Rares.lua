@@ -44,7 +44,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200138),	-- Ancient Dancer's Longspear
 					i(197586),	-- Windborne Velocidrake: Spiked Back
-					i(200758),	-- Breastplate of Storied Antiquity
 					i(200303),	-- Dreamweaver Acolyte's Staff
 				},
 			}),
@@ -202,6 +201,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200152),	-- Gleaming Blade of Insight
 					i(197116),	-- Highland Drake: Ears
+					i(196999),	-- Cliffside Wylderdrake: Swept Horns (DM!)
 				},
 			}),
 			n(193181, {	-- Skewersnout <Raypier of the Deep>

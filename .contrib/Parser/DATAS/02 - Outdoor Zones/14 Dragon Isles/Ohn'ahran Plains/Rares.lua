@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			-- n(193123, {	-- Steamgill // under DF/Timed Based Rare
 			n(201539, {	-- Stormcaller Narkena
 				["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
-				["questID"] = 74465,
+				["questID"] = 74547,
 				["isDaily"] = true,
 			}),
 			n(191842, {	-- Sulfurion

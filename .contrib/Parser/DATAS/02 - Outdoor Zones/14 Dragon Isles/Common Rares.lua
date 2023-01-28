@@ -125,6 +125,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 			}),
 			n(ARMOR, {
+				i(200758, {	-- Breastplate of Storied Antiquity
+					["crs"] = {
+						193664,	-- Ancient Protector
+						193220,	-- Broodweaver Araznae
+						187745,	-- Disoriented Watcher
+						193214,	-- Forgotten Creation
+						196165,	-- Gethdazr
+						193688,	-- Phenran
+						193188,	-- Seeker Teryk
+						201555,	-- Srivantor
+						201554,	-- Unstable Arcanogolem
+					}
+				}),
 				i(200441, {	-- Jhakan's Horned Cowl
 					["crs"] = {
 						189652,	-- Deadwaker Ghendish
@@ -132,6 +145,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						193227,	-- Ronsak the Decimator
 						192045,	-- Windseeker Avash
 					}
+				}),
+			}),
+			n(WEAPONS, {
+				i(200137, {	-- Chitin Dreadbringer
+					["crs"] = {
+						193153,	-- Ripsaw the Stalker (non-repeatable)
+						193666,	-- Rokmur (looted)
+						-- 5+ Drops on WH
+						189822,	-- Shas'ith
+						193234,	-- Eldoren the Reborn
+					},
 				}),
 			}),
 		}),

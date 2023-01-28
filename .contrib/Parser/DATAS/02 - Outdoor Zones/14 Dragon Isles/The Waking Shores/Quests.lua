@@ -1216,28 +1216,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["lockCriteria"] = { 1, "questID", 66244 },	-- To Valdrakken
 				["isBreadcrumb"] = true,
 			}),
-			n(BONUS_OBJECTIVES, {
+			n(BONUS_OBJECTIVES, sharedData({
+				["isDaily"] = true,
+			},{
 				q(69838, {	-- Amethyzar the Glittering
 					["provider"] = { "n", 193132 },	-- Amethyzar the Glittering
 					["coord"] = { 63.4, 54.8, THE_WAKING_SHORES },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
 				q(66076, {	-- Ancient Hornswog
 					["provider"] = { "n", 187111 },	-- Ancient Hornswog
 					["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
 				q(69839, {	-- Azra's Prized Peony
 					["provider"] = { "n", 193135 },	-- Azra's Prized Peony
 					["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(72127, {	-- Captain Lancer
 					["provider"] = { "n", 193198 },	-- Captain Lancer
 					["coord"] = { 27.3, 76.5, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(66117, {	-- Clear the Battlefield
 					["sourceQuests"] = { 66116 },	-- The Primary Threat
 					["coord"] = { 58.9, 76.6, THE_WAKING_SHORES },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
 				q(65994, {	-- Djaradin Djustice
 					["sourceQuests"] = {
@@ -1245,56 +1248,56 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						65989,	-- Invader Djaradin
 					},
 					["coord"] = { 67.6, 38.5, THE_WAKING_SHORES },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
 				q(66956, {	-- Dragonhunter Igordan
 					["provider"] = { "n", 191611 },	-- Dragonhunter Igordan
 					["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(72128, {	-- Enkine the Voracious
 					["provider"] = { "n", 193134 },	-- Enkine the Voracious
 					["coord"] = { 40.3, 64.9, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(70648, {	-- Firava the Rekindler
 					["provider"] = { "n", 195915 },	-- Firava the Rekindler
 					["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
 				q(72130, {	-- Forgotten Gryphon
 					["provider"] = { "n", 193154 },	-- Forgotten Gryphon
 					["coord"] = { 32.8, 75.9, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(69874, {	-- Gorjo the Crab Shackler
 					["provider"] = { "n", 187209 },	-- Gorjo the Crab Shackler
 					["coord"] = { 78.6, 50.0, THE_WAKING_SHORES },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
 				q(66960, {	-- Klozicc the Ascended
 					["provider"] = { "n", 187209 },	-- Klozicc the Ascended
 					["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
 				q(69891, {	-- Lepidoralia the Resplendent
 					["provider"] = { "n", 193266 },	-- Lepidoralia the Resplendent
 					["coord"] = { 34.1, 85.7, THE_WAKING_SHORES },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
 				q(70979, {	-- Magmaton
 					["provider"] = { "n", 186827 },	-- Magmaton
 					["coord"] = { 40.0, 64.5, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(69848, {	-- Massive Magmashell
 					["provider"] = { "n", 193152 },	-- Massive Magmashell
 					["coord"] = { 21.7, 76.2, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(70983, {	-- O'nank Shorescour
 					["provider"] = { "n", 184853 },	-- O'nank Shorescour
 					["coord"] = { 80.1, 53.9, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(66074, {	-- Primal Scythid Queen
 					["provider"] = { "n", 184853 },	-- Primal Scythid Queen
 					["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
 				q(70196, {	-- Pruning the Preserve
 					["sourceQuestNumRequired"] = 1,
@@ -1303,6 +1306,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						72366,	-- Account Dragonflight Campaign Completed
 					},
 					["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
 				q(70719, {	-- Shadeslash Trakken
 					["provider"] = { "n", 193271 },	-- Shadeslash Trakken
@@ -1311,17 +1315,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(72126, {	-- Slurpo, the Incredible Snail
 					["provider"] = { "n", 193175 },	-- Slurpo, the Incredible Snail
 					["coord"] = { 34.5, 89.7, THE_WAKING_SHORES },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
 				q(69668, {	-- Smogswog the Firebreather
 					["provider"] = { "n", 193120 },	-- Smogswog the Firebreather
 					["coord"] = { 68.4, 65.3, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(70751, {	-- Terillod the Devout
 					["provider"] = { "n", 193171 },	-- Terillod the Devout
 					["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
-			}),
+			})),
 			n(HIDDEN_QUESTS, {
 				q(72101, {	-- Release Kite: Apex Canopy
 					["name"] = "Release Kite: Apex Canopy",

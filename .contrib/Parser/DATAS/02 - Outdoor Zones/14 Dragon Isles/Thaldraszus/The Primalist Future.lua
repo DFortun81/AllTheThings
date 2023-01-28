@@ -165,10 +165,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 	}),
 })));
 
-
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THE_PRIMALIST_FUTURE, {
 		q(71995),	-- Looting the Elemental Chest event
-		q(73162),	-- Killing Nimbulatus 
+		q(73162),	-- Killing Nimbulatus
+		q(74552),	-- flagged when 74378 "The Storm's Fury" unflagged first time
 	}),
 }));

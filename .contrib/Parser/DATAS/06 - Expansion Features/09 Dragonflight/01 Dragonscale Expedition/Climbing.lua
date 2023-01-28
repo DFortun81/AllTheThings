@@ -74,9 +74,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				q(70654, {	-- Are You Kitten Me?
 					["coord"] = { 59, 76.8, THALDRASZUS },
 				}),
-				--q(70656, {	-- Not Mushroom For Error
-				--	["coord"] = { 44.6, 50.1, THALDRASZUS },
-				--}),
+				q(70656, {	-- Not Mushroom For Error
+					["coord"] = { 56.7, 35.3, THALDRASZUS },
+				}),
 
 				--[[
 				WS
@@ -96,14 +96,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		q(72560),	-- Triggered after completing Climb Every Mountain (questID 65421)
-		q(72002),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (???)
 		q(71997),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (66070)
 		q(71998),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (64768)
 		q(71999),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70652)
 		q(72001),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70655)
+		q(72002),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (???)
 		q(72003),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70658)
-		q(72006),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70661)
 		q(72005),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70654)
+		q(72006),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70661)
+		q(72007),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70656)
 		q(66478),	-- Rescuing the Marmot (188912) during Brightblade's Bones (66070) (requires Lost Banana 191951)
 	}),
 })));

@@ -60,8 +60,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(70064, {	-- For Imbu!
 					-- ["coord"] = { XX, YY, THE_AZURE_SPAN },
 				}),
+				q(69941, {	-- Frozen Victims
+					["coord"] = { 50.9, 60.5, THE_AZURE_SPAN },
+				}),
 				q(70112, {	-- Furbolg Threat
 					["coord"] = { 60.2, 52.8, THE_AZURE_SPAN }
+				}),
+				q(70011, {	-- Furry Friends
+					["coord"] = { 58.2, 52.7, THE_AZURE_SPAN },
 				}),
 				q(70047, {	-- Icy Prisons
 					["coord"] = { 58.6, 43.7, THE_AZURE_SPAN }
