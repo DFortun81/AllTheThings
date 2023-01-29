@@ -1667,11 +1667,11 @@ for key, value in pairs({
 	[209673] = "玉虎立柱",	-- Jade Tiger Pillar
 	[209845] = "极品美酒",	-- Mouthwatering Brew
 	[210005] = "武器架",	-- Weapon Rack
-	[210015] = "武器架",	-- Weapon Rack--TODO: this was manually translated
-	[210016] = "武器架",	-- Weapon Rack--TODO: this was manually translated
-	[210017] = "武器架",	-- Weapon Rack--TODO: this was manually translated
-	[210018] = "武器架",	-- Weapon Rack--TODO: this was manually translated
-	[210019] = "武器架",	-- Weapon Rack--TODO: this was manually translated
+	[210015] = "武器架",	-- Weapon Rack	--TODO: this was manually translated
+	[210016] = "武器架",	-- Weapon Rack	--TODO: this was manually translated
+	[210017] = "武器架",	-- Weapon Rack	--TODO: this was manually translated
+	[210018] = "武器架",	-- Weapon Rack	--TODO: this was manually translated
+	[210019] = "武器架",	-- Weapon Rack	--TODO: this was manually translated
 	[210020] = "武器架",	-- Weapon Rack
 	[210565] = "黑色泥土",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
