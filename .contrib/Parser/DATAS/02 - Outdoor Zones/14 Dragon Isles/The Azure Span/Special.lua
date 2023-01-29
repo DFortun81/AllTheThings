@@ -11,6 +11,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(201440),	-- Liberated Slyvern (MOUNT!)
 				},
 			}),
+			n(196165, {	-- Gethdazr
+				["description"] = "Spawns as part of an event involving The Blubberwall that starts by blowing the Great Horn of Imbu at the northern waypoint. The horn will become clickable after killing the Enraged Air Elemental attacking it & you have to support the NPC's otherwise they will die & the event fails.",
+				["coords"] = {
+					{ 58.9, 66.9, THE_AZURE_SPAN },	-- Event Start
+					{ 56.6, 70.8, THE_AZURE_SPAN },	-- Rare
+				},
+			--	["questID"] = 72278,
+				["isDaily"] = true,
+				["g"] = {
+					i(200138), -- ancient dancers longspear
+					i(200758), -- breastplate of storied antiquity
+					i(200237), -- burnished lifewarders targe
+					i(196970), -- cliffside wylderdrake spiked back
+					i(197105), -- highland drake spined chin
+					i(197138), -- highland drake striped pattern
+					i(200086), -- khazgorite infused resin
+					i(200154), -- rubyscale band
+					i(197586), -- windborne velocidrake spiked back
+				},
+			}),
 			n(196768, {	-- Primal Bear Cub
 				["description"] = "Give 3x Hornswog Hunk and a Honey Snack to Primal Bear Cub while wearing the title Honoary Dryad will give you this pet.",
 				["sourceQuests"] = { 67606 },	-- A Dryadic Remedy

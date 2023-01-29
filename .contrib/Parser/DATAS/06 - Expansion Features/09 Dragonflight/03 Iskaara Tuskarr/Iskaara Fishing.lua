@@ -268,11 +268,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				},
 			}),
 			n(RARES, sharedData({
-				["description"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.",
+				["description"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.\nWhich Lunker Sighting is up changes every week & if there is no fish icon, the pool is not up and you cannot spawn a Lunker at that location.",
 				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
 				["isDaily"] = true,
 			},{
-				-- For all we know, the available Lunkers could also be related to the user's tuskarr fishing unlock progress as well...
 				n(197411, {	-- Astray Splasher <Lunker>
 					["coords"] = {
 						{ 57.2, 65.6, THALDRASZUS },
@@ -280,22 +279,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 					["questID"] = 74057,
 					-- ["g"] = {
-
+						i(200086),	-- Khaz'gorite Infused Resin
 					-- },
 				}),
 				n(193735, {	-- Moth'go Deeploom <Lunker>
 					["coord"] = { 65.6, 73.8, THE_WAKING_SHORES },
 					["questID"] = 74068,
-					-- ["g"] = {
-
-					-- },
+					["g"] = {
+						i(200086),	-- Khaz'gorite Infused Resin
+					},
 				}),
 				n(197371, {	-- Ravenous Tundra Bear <Lunker>
 					["coord"] = { 58.8, 32.6, THE_AZURE_SPAN },
 					-- ["questID"] = ,
-					-- ["g"] = {
+					["g"] = {
+						i(200086),	-- Khaz'gorite Infused Resin
 
-					-- },
+					},
 				}),
 				n(193710, {	-- Seereel, the Spring <Lunker>
 					["coord"] = { 65.6, 73.8, THE_WAKING_SHORES },
@@ -315,6 +315,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 58.6, 32.4, THE_AZURE_SPAN },
 					["questID"] = 74080,
 					["g"] = {
+						i(200086),	-- Khaz'gorite Infused Resin
 						i(200187),	-- Rod of Glacial Force
 					},
 				}),
@@ -322,6 +323,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 33.8, 64.4, THE_WAKING_SHORES },
 					["questID"] = 74078,
 					["g"] = {
+						i(200086),	-- Khaz'gorite Infused Resin
 						i(200218),	-- Charred Fishing Pole
 					},
 				}),
