@@ -144,8 +144,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			-- n(193235, {	-- Oshigol // under DF/Timed Based Rare
 			n(191950, {	-- Porta the Overgrown
-				["description"] = "Requires 5 Enriched Soil used on the mushroom in the cave at 59.71, 68.10 to spawn this rare. The Enriched Soil can be looted from piles of dirt scattered around the bottom of the lake in Mirror of the Sky and underwater in the surrounding area.",
-				["coord"] = { 59.6, 68.0, OHNAHRAN_PLAINS },
+				["description"] = "Requires 5 Enriched Soil used on the mushroom in the cave at 59.71, 68.10 to spawn this rare. The Enriched Soil can be looted from piles of dirt scattered around the bottom of the lake in Mirror of the Sky and underwater in the surrounding area. The coordinates indicate possible spots for the Dirt Piles.",
+				["coord"] = { 
+					{ 59.6, 68.0, OHNAHRAN_PLAINS },	-- Boss
+					{ 50.5, 70.2, OHNAHRAN_PLAINS },	-- Soil Spawn posibility
+					{ 52.7, 65.8, OHNAHRAN_PLAINS },	-- Soil Spawn posibility
+					{ 54.6, 69.4, OHNAHRAN_PLAINS },	-- Soil Spawn posibility
+					{ 52.1, 70.5, OHNAHRAN_PLAINS },	-- Soil Spawn posibility
+					{ 53.1, 72.0, OHNAHRAN_PLAINS },	-- Soil Spawn posibility
+					{ 49.7, 68.7, OHNAHRAN_PLAINS },	-- Soil Spawn posibility
+					{ 54.1, 66.9, OHNAHRAN_PLAINS },	-- Soil Spawn posibility
+					{ 53.77, 67.45, OHNAHRAN_PLAINS },	-- Soil Spawn posibility
+				},
 				-- ["questID"] = ,
 			}),
 			n(193669, {	-- Prozela Galeshot
