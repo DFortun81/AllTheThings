@@ -1642,6 +1642,13 @@ for key,value in pairs({
 	[209620] = "Сундук с сокровищами Новолуния",	-- Darkmoon Treasure Chest
 	[209673] = "Пьедестал нефритового тигра",	-- Jade Tiger Pillar
 	[209845] = "Соблазнительный напиток",	-- Mouthwatering Brew
+	[210005] = "Оружейная стойка",	-- Weapon Rack
+	[210015] = "Оружейная стойка",	-- Weapon Rack
+	[210016] = "Оружейная стойка",	-- Weapon Rack
+	[210017] = "Оружейная стойка",	-- Weapon Rack
+	[210018] = "Оружейная стойка",	-- Weapon Rack
+	[210019] = "Оружейная стойка",	-- Weapon Rack
+	[210020] = "Оружейная стойка",	-- Weapon Rack
 	[210565] = "Темная земля",	-- Dark Soil
 	[211424] = "Алхимический свиток",	-- Alchemy Scroll
 	[211754] = "Любопытный текст",	-- Curious Text
@@ -2627,8 +2634,10 @@ for key,value in pairs({
 	[277344] = "Бесценные сувениры авгари",	-- Precious Augari Keepsakes
 	[277346] = "Пропавший сундук авгари",	-- Missing Augari Chest
 	[277373] = "Поблескивающие водоросли",	-- Glimmering Seaweed
+	[277384] = "Брошенное сокровище",	-- Abandoned Treasure
 	[277459] = "Свиной фетиш",	-- Pig Effigy
 	[277561] = "Тайник военачальника",	-- Warlord's Cache
+	[277637] = "Тронутый Бездной тайник",	-- Void-Seeped Cache
 	[277715] = "Проклятый назманийский сундук",	-- Cursed Nazmani Chest
 	[277885] = "Схрон Вунджи",	-- Wunja's Trove
 	[277897] = "Дымящийся тайник",	-- Seething Cache
@@ -3569,6 +3578,7 @@ for key,value in pairs({
 	[381485] = "Потерянное мыло путешественника",	-- Adventurer's Lost Soap Bar
 	[381510] = "Кости летающей рыбы",	-- Flying Fish Bones
 	[381511] = "Наконечник гарпуна",	-- Harpoon Head
+	[381512] = "Деревянный шест",	-- Wooden Pole
 	[381513] = "Старая кирка",	-- Old Pickaxe
 	[381514] = "Отшлифованный волнами базальт",	-- Sea-Polished Basalt
 	[381575] = "Набор для ловли уток",	-- Duck Trap Kit
@@ -3594,6 +3604,7 @@ for key,value in pairs({
 	[382180] = "Перегретый пруд лавазубов",	-- Overheated Magma Thresher Pool
 	[382193] = "Сундук стихий",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	[382621] = "Консоль катализатора возрождения",	-- Revival Catalyst Console
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
 	[383733] = "Потревоженная почва",	-- Disturbed Dirt
 	[383734] = "Потревоженная почва",	-- Disturbed Dirt
@@ -3604,7 +3615,6 @@ for key,value in pairs({
 	[385001] = "Пустой бочонок для рыбы",	-- Empty Fish Barrel
 	[385021] = "Окаменевшее яйцо дракона",	-- Petrified Dragon Egg
 	[385022] = "Размытая окаменелость",	-- Eroded Fossil
-	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only

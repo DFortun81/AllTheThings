@@ -1651,6 +1651,13 @@ for key,value in pairs({
 	[209620] = "다크문 보물 상자",	-- Darkmoon Treasure Chest
 	[209673] = "비취 호랑이 기둥",	-- Jade Tiger Pillar
 	[209845] = "군침도는 맥주",	-- Mouthwatering Brew
+	[210005] = "무기 선반",	-- Weapon Rack
+	[210015] = "무기 선반",	-- Weapon Rack	--TODO: this was manually translated
+	[210016] = "무기 선반",	-- Weapon Rack
+	[210017] = "무기 선반",	-- Weapon Rack	--TODO: this was manually translated
+	[210018] = "무기 선반",	-- Weapon Rack	--TODO: this was manually translated
+	[210019] = "무기 선반",	-- Weapon Rack	--TODO: this was manually translated
+	[210020] = "무기 선반",	-- Weapon Rack	--TODO: this was manually translated
 	[210565] = "검은 토양",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
 	[211754] = "수수께끼의 문서",	-- Curious Text
@@ -2636,8 +2643,10 @@ for key,value in pairs({
 	[277344] = "귀중한 아우가리 유품",	-- Precious Augari Keepsakes
 	[277346] = "사라진 아우가리 상자",	-- Missing Augari Chest
 	[277373] = "반짝이는 해초",	-- Glimmering Seaweed
+	--TODO: [277384] = "Abandoned Treasure",	-- Abandoned Treasure
 	[277459] = "돼지 입상",	-- Pig Effigy
 	[277561] = "전쟁군주의 보관함",	-- Warlord's Cache
+	[277637] = "공허가 스민 보관함",	-- Void-Seeped Cache
 	[277715] = "저주받은 나즈마니 상자",	-- Cursed Nazmani Chest
 	[277885] = "운자의 보물",	-- Wunja's Trove
 	--TODO: [277897] = "Seething Cache",	-- Seething Cache
@@ -3578,6 +3587,7 @@ for key,value in pairs({
 	[381485] = "모험가의 잃어버린 비누",	-- Adventurer's Lost Soap Bar
 	[381510] = "날치 뼈",	-- Flying Fish Bones
 	[381511] = "작살 머리",	-- Harpoon Head
+	[381512] = "목재 장대",	-- Wooden Pole
 	[381513] = "오래된 곡괭이",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	--TODO: [381575] = "Duck Trap Kit",	-- Duck Trap Kit
@@ -3603,6 +3613,7 @@ for key,value in pairs({
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	--TODO: [382621] = "Revival Catalyst Console",	-- Revival Catalyst Console
 	[383625] = "신선한 미명어 보관함",	-- Case of Fresh Gleamfish
 	[383733] = "흐트러진 흙",	-- Disturbed Dirt
 	[383734] = "흐트러진 흙",	-- Disturbed Dirt
@@ -3613,7 +3624,6 @@ for key,value in pairs({
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "석화된 용의 알",	-- Petrified Dragon Egg
 	[385022] = "부식된 화석",	-- Eroded Fossil
-	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
