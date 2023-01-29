@@ -1227,7 +1227,7 @@ for key,value in pairs({
 	[176196] = "Tartaruga Marinha Encalhada",	-- Beached Sea Turtle
 	[176197] = "Tartaruga Marinha Encalhada",	-- Beached Sea Turtle	--TODO: This was taken from wotlk Wowhead
 	[176198] = "Tartaruga Marinha Encalhada",	-- Beached Sea Turtle	--TODO: This was taken from wotlk Wowhead
-	[176344] = "Baú de Documentos",	-- Document Chest #1	--TODO: This was taken from wotlk Wowhead
+	[176344] = "Baú de Documentos nº 1",	-- Document Chest #1	--TODO: This was taken from wotlk Wowhead
 	[176361] = "Caldeirão do Flagelo",	-- Scourge Cauldron	--TODO: This was taken from wotlk Wowhead
 	[176392] = "Caldeirão do Flagelo",	-- Scourge Cauldron
 	[176393] = "Caldeirão do Flagelo",	-- Scourge Cauldron	--TODO: This was taken from wotlk Wowhead
@@ -1519,7 +1519,7 @@ for key,value in pairs({
 	[194423] = "Convite do Torneio Roubado",	-- Stolen Tournament Invitation
 	[194424] = "Ordens do Cavaleiro Negro",	-- Black Knight's Orders
 	--TODO: [194461] = "Stone Block",	-- Stone Block
-	--TODO: [194463] = "Small Stone Block",	-- Small Stone Block
+	[194463] = "Pequeno Bloco de Pedra",	-- Small Stone Block	--TODO: This was taken from wotlk Wowhead
 	[194479] = "Piscina de Sangue",	-- Pool of Blood
 	[194537] = "Túmulo de Sir Wendell",	-- Sir Wendell's Grave
 	[194538] = "Túmulo de Conall",	-- Connall's Grave
@@ -3592,7 +3592,7 @@ for key,value in pairs({
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381575] = "Kit de Armadilha de Pato",	-- Duck Trap Kit
 	[381579] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
-	[381650] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381650] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381653] = "Inscrições Fogo, Asa, Presa",	-- Fang Flap Fire Signups
 	[381661] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381662] = "Pedido dos Arquivistas",	-- Archivists' Request
@@ -3600,7 +3600,7 @@ for key,value in pairs({
 	[381664] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381667] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381668] = "Pedido dos Arquivistas",	-- Archivists' Request
-	[381669] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381669] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381670] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381671] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381672] = "Pedido dos Arquivistas",	-- Archivists' Request
@@ -3620,7 +3620,7 @@ for key,value in pairs({
 	[383735] = "Poeira Revolvida",	-- Disturbed Dirt
 	[384318] = "Marcador de Páginas Inconspícuo",	-- Inconspicuous Bookmark
 	--TODO: [384370] = "Deliberately Delinquent Notes",	-- Deliberately Delinquent Notes
-	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
+	[384405] = "Peixe Meio Cozido",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Ovo de Dragão Petrificado",	-- Petrified Dragon Egg
 	[385022] = "Fóssil Corroído",	-- Eroded Fossil

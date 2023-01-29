@@ -1511,7 +1511,7 @@ for key,value in pairs({
 	[194423] = "Invito al Torneo Rubato",	-- Stolen Tournament Invitation
 	[194424] = "Ordini del Cavaliere Nero",	-- Black Knight's Orders
 	--TODO: [194461] = "Stone Block",	-- Stone Block
-	--TODO: [194463] = "Small Stone Block",	-- Small Stone Block
+	[194463] = "Small Stone Block",	-- Small Stone Block	--TODO: This was taken from wotlk Wowhead
 	[194479] = "Pozza di Sangue",	-- Pool of Blood
 	[194537] = "Tomba di Ser Wendell",	-- Sir Wendell's Grave
 	[194538] = "Tomba di Connall",	-- Connall's Grave
@@ -3464,7 +3464,7 @@ for key,value in pairs({
 	[377534] = "Scrigno Consegnato",	-- Delivered Vault
 	[377899] = "Ostaggio dei Drospi Cornuti Nascosto",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
-	--TODO: [377938] = "Prismatic Leaper School",	-- Prismatic Leaper School
+	[377938] = "Banco di Saltatori Prismatici",	-- Prismatic Leaper School
 	[378010] = "Tesoro dei Draghi Dimenticato",	-- Forgotten Dragon Treasure
 	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Birra di Marea",	-- Riptide Brew
