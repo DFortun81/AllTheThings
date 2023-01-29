@@ -196,9 +196,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						},
 					}),
 				}),
-				ach(3736, {	-- Pony Up!
+				applyclassicphase(WRATH_PHASE_THREE, ach(3736, {	-- Pony Up!
 					["provider"] = { "i", 47541 },	-- Argent Pony Bridle
-				}),
+				})),
 				ach(3677, { -- The Sunreavers
 					["sourceQuests"] = {
 						13737,	-- A Champion Rises (H) (Darkspear Trolls)
