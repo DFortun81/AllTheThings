@@ -12518,7 +12518,7 @@ app.ImportRawLink = function(group, rawlink)
 			if (tonumber(bonusCount) or 0) > 0 then
 				-- Don't use bonusID 3524 as an actual bonusID
 				local b = bonusID1 and tonumber(bonusID1) or nil;
-				if b ~= 3524 then
+				if b ~= 3524 and b ~= 0 then
 					group.bonusID = b;
 				end
 			end

@@ -1964,9 +1964,7 @@ end
                             }
                             else
                             {
-                                Console.WriteLine("Ignoring 'coords' with improper format.");
-                                Console.WriteLine(ToJSON(value));
-                                Console.ReadLine();
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
                             }
                             break;
                         }
@@ -1995,15 +1993,18 @@ end
                     case "_achievements":
                     case "_factions":
                     case "_encounter":
-                        if (value is List<object> idList)
                         {
-                            item[field] = idList;
+                            List<long> list = CompressToList<long>(value);
+                            if (list != null)
+                            {
+                                item[field] = list;
+                            }
+                            else
+                            {
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
+                            }
+                            break;
                         }
-                        else
-                        {
-                            Log($"Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
-                        }
-                        break;
                     case "_drop":
                         item[field] = value;
                         break;
@@ -2029,7 +2030,7 @@ end
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
                             WARNED_FIELDS[field] = true;
-                            Log($"Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
+                            Log($"WARN: Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
                             break;
                         }
                 }
@@ -2802,6 +2803,15 @@ end
 
                 if (value is IDictionary<string, T> sdict)
                     return sdict.Values.ToList();
+
+                if (value is IEnumerable<object> enObj)
+                    return enObj.AsDataList<T>().ToList();
+
+                if (value is IEnumerable<long> enLong)
+                    return enLong.AsDataList<T>().ToList();
+
+                if (value is IEnumerable<decimal> enDec)
+                    return enDec.AsDataList<T>().ToList();
 
                 // something that doesn't make sense as a List
                 return null;

@@ -941,6 +941,15 @@ namespace ATT
                     return;
                 }
 
+                // Any filter types which should specifically not have a SourceID attached even if Blizzard wants them to
+                if (data.TryGetValue("f", out long f))
+                {
+                    if (!((f > 0 && f < 38) || f == 57))
+                    {
+                        LogDebug($"SourceID for Item {itemID} skipped due to Item Filter {(Objects.Filters)f}");
+                    }
+                }
+
                 // Attempt to get the variants from the item DB
                 if (variants == null)
                 {

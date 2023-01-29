@@ -611,149 +611,20 @@ namespace ATT
                 try
                 {
                     if (classes.Any(c => !Valid_Classes.Contains(Convert.ToInt64(c))))
-                        Log($"Invalid 'classes' value: {ToJSON(data)}");
+                        LogError($"Invalid 'classes' value: {ToJSON(data)}");
                 }
                 catch
                 {
-                    Log($"Invalid 'classes' value: {ToJSON(data)}");
+                    LogError($"Invalid 'classes' value: {ToJSON(data)}");
                 }
             }
 
             Objects.AssignFactionID(data);
 
-            // Mark the achievement as referenced
-            if (data.TryGetValue("achID", out long achID))
-            {
-                // Grab AchievementDB info
-                ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
-
-                // Remove itself from the list of altAchievements
-                if (data.TryGetValue("altAchievements", out List<object> altAchievements) && altAchievements != null && altAchievements.Count > 0)
-                {
-                    altAchievements.Remove(achID);
-                }
-
-                // Guild Achievements are not collectible
-                if (achInfo.TryGetValue("isGuild", out bool isGuild) && isGuild)
-                {
-                    data["collectible"] = false;
-                }
-
-                // If not processing the Main Achievement Category, then any encountered Achievements (which are not Criteria) should be duplicated into the Main Achievement Category
-                if (!ProcessingAchievementCategory && !data.ContainsKey("criteriaID"))
-                {
-                    if (achInfo.TryGetValue("parentCategoryID", out long achCatID))
-                    {
-                        DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
-                        //LogDebug($"Duplicated Achievement {achID} into Achievement Category");
-                    }
-                }
-            }
-
-            bool cloned = false;
-            // Mark the quest as referenced
-            if (data.TryGetValue("questID", out long questID))
-            {
-                QUESTS_WITH_REFERENCES[questID] = true;
-
-                // Remove itself from the list of altQuests
-                if (data.TryGetValue("altQuests", out List<object> altQuests) && altQuests != null && altQuests.Count > 0)
-                {
-                    altQuests.Remove(questID);
-                }
-
-                // Convert any 'n' providers into 'qgs' for simplicity
-                if (data.TryGetValue("providers", out List<object> providers))
-                {
-                    List<object> quest_qgs = new List<object>(providers.Count);
-                    for (int p = providers.Count - 1; p >= 0; p--)
-                    {
-                        object provider = providers[p];
-                        // { "n", ### }
-                        if (provider is List<object> providerItems && providerItems.Count == 2 && providerItems[0].ToString() == "n")
-                        {
-                            quest_qgs.Add(providerItems[1]);
-                            providers.RemoveAt(p);
-                            LogDebug($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
-                        }
-                    }
-
-                    // remove 'providers' if it is now empty
-                    if (providers.Count == 0)
-                        data.Remove("providers");
-
-                    // merge the 'qgs' back into the data if anything was converted
-                    if (quest_qgs.Count > 0)
-                        Objects.Merge(data, "qgs", quest_qgs);
-                }
-            }
-            // Alliance-Only QuestID
-            if (data.TryGetValue("questIDA", out questID))
-            {
-                QUESTS_WITH_REFERENCES[questID] = true;
-            }
-            // Horde-Only QuestID
-            if (data.TryGetValue("questIDH", out questID))
-            {
-                QUESTS_WITH_REFERENCES[questID] = true;
-            }
-            if (data.TryGetValue("_quests", out object quests))
-            {
-                // don't duplicate achievements in this way
-                if (data.TryGetValue("achID", out achID))
-                {
-                    Log($"Do not use '_quests' on Achievements ({achID}). Source within the Quest group, or use 'maps' & 'altQuests' if there are multiple related Locations / Quests.");
-                }
-                else
-                {
-                    DuplicateDataIntoGroups(data, quests, "questID");
-                    cloned = true;
-                }
-            }
-            if (data.TryGetValue("_items", out object items))
-            {
-                // don't duplicate achievements in this way
-                if (data.TryGetValue("criteriaID", out long criteriaID))
-                {
-                    data.TryGetValue("achID", out achID);
-                    Log($"Do not use '_items' on Criteria ({achID}:{criteriaID}). Use 'provider' instead when an Item grants credit for an Achievement Criteria.");
-                }
-                else
-                {
-                    DuplicateDataIntoGroups(data, items, "itemID");
-                    cloned = true;
-                }
-            }
-            if (data.TryGetValue("_npcs", out object npcs))
-            {
-                // TODO: consolidate when creature/npc are the same... if that ever happens
-                DuplicateDataIntoGroups(data, npcs, "creatureID");
-                DuplicateDataIntoGroups(data, npcs, "npcID");
-                cloned = true;
-            }
-            if (data.TryGetValue("_objects", out object objects))
-            {
-                DuplicateDataIntoGroups(data, objects, "objectID");
-                cloned = true;
-            }
-            if (data.TryGetValue("_achievements", out object achievements))
-            {
-                DuplicateDataIntoGroups(data, achievements, "achID");
-                cloned = true;
-            }
-            if (data.TryGetValue("_factions", out object factions))
-            {
-                DuplicateDataIntoGroups(data, factions, "factionID");
-                cloned = true;
-            }
-            if (data.TryGetValue("_encounter", out object encounterData))
-            {
-                var encounterListData = Objects.CompressToList(encounterData);
-                decimal encounterHash = Convert.ToDecimal(encounterListData[0])
-                    + (encounterListData.Count > 1 ? Convert.ToDecimal(encounterListData[1]) : 0M) / 100M;
-                DuplicateDataIntoGroups(data, encounterHash, "_encounterHash");
-                cloned = true;
-            }
+            Validate_Achievement(data);
+            Validate_Criteria(data);
+            Validate_Quest(data);
+            bool cloned = Validate_DataCloning(data);
 
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
             if (cloned && data.ContainsKey("criteriaID"))
@@ -864,7 +735,7 @@ namespace ATT
                 {
                     if (coord is List<object> coordList && coordList.Count != 3)
                     {
-                        Log($"Warning: 'coord/s' value is not fully qualified: {ToJSON(coord)}{Environment.NewLine}-- {ToJSON(data)}");
+                        Log($"WARN: 'coord/s' value is not fully qualified: {ToJSON(coord)}{Environment.NewLine}-- {ToJSON(data)}");
                     }
                 }
             }
@@ -895,7 +766,7 @@ namespace ATT
                 }
 
                 // single 'maps' for Achievements Sourced under 'Achievements', should be sourced in that specific map directly instead
-                if (ProcessingAchievementCategory && mapsList.Count == 1 && data.TryGetValue("achID", out achID))
+                if (ProcessingAchievementCategory && mapsList.Count == 1 && data.TryGetValue("achID", out long achID))
                     Log($"Single 'maps' value used within Achievement: {achID}. It can be Sourced directly in the Location.");
             }
 
@@ -999,6 +870,224 @@ namespace ATT
             }
 
             return true;
+        }
+
+        private static void Validate_Criteria(Dictionary<string, object> data)
+        {
+            if (!data.TryGetValue("criteriaID", out long criteriaID))
+                return;
+
+            if (CurrentParentGroup == null)
+                return;
+
+            var parent = CurrentParentGroup.Value;
+            long achID = 0;
+
+            // use parent group to find AchID
+            if (parent.Key == "achID")
+            {
+                parent.Value.TryConvert(out achID);
+            }
+
+            // Grab AchievementDB info
+            if (!ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo))
+                return;
+
+            // Look for matching Criteria data
+            if (!(achInfo.TryGetValue("g", out object criteriaObject) && criteriaObject is IList<object> criteriaList))
+                return;
+
+            // Grab matching Criteria data
+            var criteriaData = criteriaList.AsDataList<IDictionary<string, object>>().FirstOrDefault(c => c.TryGetValue("criteriaID", out long criteriaInfoID) && criteriaInfoID == criteriaID);
+            if (criteriaData == null)
+                return;
+
+            // Check for criteria DB data that is useful for parsing
+            // SourceQuest can convert to _quests for criteria cloning
+            if (criteriaData.TryGetValue("sourceQuest", out long questID))
+            {
+                if (data.TryGetValue("_quests", out object quests))
+                {
+                    LogDebug($"INFO: Remove _quests from Criteria {achID}:{criteriaID}. AchievementDB contains sourceQuest: {questID}");
+                }
+                else
+                {
+                    LogDebug($"INFO: Added _quests to Criteria {achID}:{criteriaID} with sourceQuest: {questID}");
+                }
+                data["_quests"] = new List<long> { questID };
+            }
+
+            // TODO: can do this later when adding some way to verify that the criteria WAS actually moved under the NPC
+            // currently it will try to move under certain NPCs which are not sourced and basically disappear
+            // n-provider can convert to _npcs for criteria cloning
+            //if (criteriaData.TryGetValue("provider", out object providerObject) && providerObject is IList<object> objectList)
+            //{
+            //    var type = objectList[0] as string;
+            //    objectList[1].TryConvert(out long id);
+            //    if (id > 0)
+            //    {
+            //        if (type == "n")
+            //        {
+            //            if (data.TryGetValue("_npcs", out object quests))
+            //            {
+            //                LogDebug($"INFO: Remove _npcs from Criteria {achID}:{criteriaID}. AchievementDB contains n-provider: {id}");
+            //            }
+            //            else
+            //            {
+            //                LogDebug($"INFO: Added _npcs to Criteria {achID}:{criteriaID} with NPCID: {id}");
+            //            }
+            //            data["_npcs"] = new List<long> { id };
+            //        }
+            //    }
+            //}
+        }
+
+        private static void Validate_Quest(Dictionary<string, object> data)
+        {
+
+            // Mark the quest as referenced
+            if (data.TryGetValue("questID", out long questID))
+            {
+                QUESTS_WITH_REFERENCES[questID] = true;
+
+                // Remove itself from the list of altQuests
+                if (data.TryGetValue("altQuests", out List<object> altQuests) && altQuests != null && altQuests.Count > 0)
+                {
+                    altQuests.Remove(questID);
+                }
+
+                // Convert any 'n' providers into 'qgs' for simplicity
+                if (data.TryGetValue("providers", out List<object> providers))
+                {
+                    List<object> quest_qgs = new List<object>(providers.Count);
+                    for (int p = providers.Count - 1; p >= 0; p--)
+                    {
+                        object provider = providers[p];
+                        // { "n", ### }
+                        if (provider is List<object> providerItems && providerItems.Count == 2 && providerItems[0].ToString() == "n")
+                        {
+                            quest_qgs.Add(providerItems[1]);
+                            providers.RemoveAt(p);
+                            //LogDebug($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
+                        }
+                    }
+
+                    // remove 'providers' if it is now empty
+                    if (providers.Count == 0)
+                        data.Remove("providers");
+
+                    // merge the 'qgs' back into the data if anything was converted
+                    if (quest_qgs.Count > 0)
+                        Objects.Merge(data, "qgs", quest_qgs);
+                }
+            }
+            // Alliance-Only QuestID
+            if (data.TryGetValue("questIDA", out questID))
+            {
+                QUESTS_WITH_REFERENCES[questID] = true;
+            }
+            // Horde-Only QuestID
+            if (data.TryGetValue("questIDH", out questID))
+            {
+                QUESTS_WITH_REFERENCES[questID] = true;
+            }
+        }
+
+        private static bool Validate_DataCloning(Dictionary<string, object> data)
+        {
+            bool cloned = false;
+
+            if (data.TryGetValue("_quests", out object quests))
+            {
+                // don't duplicate achievements in this way
+                if (data.TryGetValue("achID", out long achID))
+                {
+                    Log($"Do not use '_quests' on Achievements ({achID}). Source within the Quest group, or use 'maps' & 'altQuests' if there are multiple related Locations / Quests.");
+                }
+                else
+                {
+                    DuplicateDataIntoGroups(data, quests, "questID");
+                    cloned = true;
+                }
+            }
+            if (data.TryGetValue("_items", out object items))
+            {
+                // don't duplicate achievements in this way
+                if (data.TryGetValue("criteriaID", out long criteriaID))
+                {
+                    data.TryGetValue("achID", out long achID);
+                    Log($"Do not use '_items' on Criteria ({achID}:{criteriaID}). Use 'provider' instead when an Item grants credit for an Achievement Criteria.");
+                }
+                else
+                {
+                    DuplicateDataIntoGroups(data, items, "itemID");
+                    cloned = true;
+                }
+            }
+            if (data.TryGetValue("_npcs", out object npcs))
+            {
+                // TODO: consolidate when creature/npc are the same... if that ever happens
+                DuplicateDataIntoGroups(data, npcs, "creatureID");
+                DuplicateDataIntoGroups(data, npcs, "npcID");
+                cloned = true;
+            }
+            if (data.TryGetValue("_objects", out object objects))
+            {
+                DuplicateDataIntoGroups(data, objects, "objectID");
+                cloned = true;
+            }
+            if (data.TryGetValue("_achievements", out object achievements))
+            {
+                DuplicateDataIntoGroups(data, achievements, "achID");
+                cloned = true;
+            }
+            if (data.TryGetValue("_factions", out object factions))
+            {
+                DuplicateDataIntoGroups(data, factions, "factionID");
+                cloned = true;
+            }
+            if (data.TryGetValue("_encounter", out object encounterData))
+            {
+                var encounterListData = Objects.CompressToList<long>(encounterData);
+                decimal encounterHash = Convert.ToDecimal(encounterListData[0])
+                    + (encounterListData.Count > 1 ? Convert.ToDecimal(encounterListData[1]) : 0M) / 100M;
+                DuplicateDataIntoGroups(data, encounterHash, "_encounterHash");
+                cloned = true;
+            }
+
+            return cloned;
+        }
+
+        private static void Validate_Achievement(Dictionary<string, object> data)
+        {
+            // Mark the achievement as referenced
+            if (data.TryGetValue("achID", out long achID))
+            {
+                // Grab AchievementDB info
+                ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
+
+                // Remove itself from the list of altAchievements
+                if (data.TryGetValue("altAchievements", out List<object> altAchievements) && altAchievements != null && altAchievements.Count > 0)
+                {
+                    altAchievements.Remove(achID);
+                }
+
+                // Guild Achievements are not collectible
+                if (achInfo.TryGetValue("isGuild", out bool isGuild) && isGuild)
+                {
+                    data["collectible"] = false;
+                }
+
+                // If not processing the Main Achievement Category, then any encountered Achievements (which are not Criteria) should be duplicated into the Main Achievement Category
+                if (!ProcessingAchievementCategory && !data.ContainsKey("criteriaID"))
+                {
+                    if (achInfo.TryGetValue("parentCategoryID", out long achCatID))
+                    {
+                        DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
+                        //LogDebug($"Duplicated Achievement {achID} into Achievement Category");
+                    }
+                }
+            }
         }
 
         private static long GetAchievementCrtieriaUID(Tuple<long, long> achCrit)

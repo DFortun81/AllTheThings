@@ -1,8 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace ATT
 {
@@ -322,10 +322,6 @@ namespace ATT
         /// <summary>
         /// Try to convert the object to a specific Type
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="obj"></param>
-        /// <param name="value"></param>
-        /// <returns></returns>
         public static bool TryConvert<T>(this object obj, out T value)
         {
             if (obj is T val)
@@ -344,6 +340,27 @@ namespace ATT
                 value = default;
                 return false;
             }
+        }
+
+        /// <summary>
+        /// Converts a set of raw objects into a set of strongly-typed elements
+        /// </summary>
+        public static IEnumerable<T> AsDataList<T>(this IEnumerable objs)
+        {
+            if (objs == null)
+                yield break;
+
+            IEnumerator e = objs.GetEnumerator();
+            while (e.MoveNext())
+            {
+                var c = e.Current;
+                if (c.TryConvert(out T t))
+                {
+                    yield return t;
+                }
+            }
+
+            yield break;
         }
 
         // https://stackoverflow.com/questions/1749966/c-sharp-how-to-determine-whether-a-type-is-a-number
