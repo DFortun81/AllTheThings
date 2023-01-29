@@ -208,7 +208,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["isRepeatable"] = true,
 				}),
 					-- Fishing Gear Repeatables --
-				q(72787, {	-- Contribute Supplies: Battered Imbu-made Net 
+				q(72787, {	-- Contribute Supplies: Battered Imbu-made Net
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
 					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
@@ -278,9 +278,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ 81.0, 77.8, OHNAHRAN_PLAINS },
 					},
 					["questID"] = 74057,
-					-- ["g"] = {
+					["g"] = {
 						i(200086),	-- Khaz'gorite Infused Resin
-					-- },
+					},
 				}),
 				n(193735, {	-- Moth'go Deeploom <Lunker>
 					["coord"] = { 65.6, 73.8, THE_WAKING_SHORES },

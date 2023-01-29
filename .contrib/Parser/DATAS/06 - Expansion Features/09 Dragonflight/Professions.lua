@@ -337,7 +337,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 				["coord"] = { 83.9, 53.2, VALDRAKKEN },
 				["g"] = {
-					i(199197),	-- Bottled Essence x5
+					i(199197, {	-- Bottled Essence x5
+						i(190453),	-- Spark of Ingenuity
+					}),
 				},
 			})),
 		}),

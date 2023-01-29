@@ -22,43 +22,65 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 	i(191526),	-- Lesser Illustrious Insight
 	prof(ALCHEMY, {
 		spell(370747, {	-- Advanced Phial Experimentation
-			r(370472),	-- Aerated Phial of Deftness
-			r(370476),	-- Charged Phial of Alacrity
-			r(370483),	-- Crystaline Phial of Perception
-			r(370460),	-- Phial of Charged Isolation
-			r(370504),	-- Phial of Elemental Chaos
-			r(370462),	-- Phial of Glacial Fury
-			r(370463),	-- Phial of Static Empowerment
-			r(370453),	-- Phial of Still Air
-			r(370438),	-- Phial of the Eye in the Storm
-			r(370473),	-- Steaming Phial of Finesse
-			-- Decay
-			r(370457, {	-- Iced Phial of Corrupting Rage
-				["description"] = "Requires Decayology."
-			}),
-			r(370456, {	-- Phial of Icy Preservation
-				["description"] = "Requires Decayology."
-			}),
+			["sym"] = {{"select","spellID",370746},{"extract","recipeID"}},	-- Basic Phial Experimentation -> Recipes
+			["g"] = {
+				i(193366, {	-- Advanced Phial Experimentation*
+					-- Move to Basic Phial Experimentation if possible discovery
+					r(370483),	-- Crystaline Phial of Perception
+					r(370460),	-- Phial of Charged Isolation
+					r(370504),	-- Phial of Elemental Chaos
+					r(370462),	-- Phial of Glacial Fury
+					r(370463),	-- Phial of Static Empowerment
+					r(370453),	-- Phial of Still Air
+					r(370438),	-- Phial of the Eye in the Storm
+					r(370473),	-- Steaming Phial of Finesse
+					-- Decay
+					r(370457, {	-- Iced Phial of Corrupting Rage
+						["description"] = "Requires Decayology."
+					}),
+					r(370456, {	-- Phial of Icy Preservation
+						["description"] = "Requires Decayology."
+					}),
+				}),
+			},
 		}),
 		spell(370745, {	-- Advanced Potion Experimentation
-			r(370478),	-- Potion of Frozen Fatality
-			r(370524),	-- Potion of Frozen Focus
-			r(370558),	-- Potion of Gusts
-			r(370561),	-- Potion of Shocking Disclosure
-			r(370556),	-- Potion of the Hushed Zephyr
-			r(370533),	-- Residual Neural Channeling Agent
-			-- Decay
-			r(370521, {	-- Bottled Putrescence
-				["description"] = "Requires Decayology."
+			["sym"] = {{"select","spellID",370743},{"extract","recipeID"}},	-- Basic Potion Experimentation -> Recipes
+			["g"] = {
+				i(193367, {	-- Advanced Potion Experimentation*
+					-- Move to Basic Potion Experimentation if possible discovery
+					r(370478),	-- Potion of Frozen Fatality
+					r(370524),	-- Potion of Frozen Focus
+					r(370558),	-- Potion of Gusts
+					r(370561),	-- Potion of Shocking Disclosure
+					r(370556),	-- Potion of the Hushed Zephyr
+					r(370533),	-- Residual Neural Channeling Agent
+					-- Decay
+					r(370521, {	-- Bottled Putrescence
+						["description"] = "Requires Decayology."
+					}),
+					r(370536, {	-- Delicate Suspension of Spores
+						["description"] = "Requires Decayology."
+					}),
+					r(370525, {	-- Potion of Chilled Clarity
+						["description"] = "Requires Decayology."
+					}),
+					r(370528, {	-- Potion of Withering Vitality
+						["description"] = "Requires Decayology."
+					}),
+				}),
+			},
+		}),
+		spell(370746, {	-- Basic Phial Experimentation
+			i(192180,{	-- Basic Phial Experimentation*
+				-- Recipes Discoverable
+				r(370472),	-- Aerated Phial of Deftness
+				r(370476),	-- Charged Phial of Alacrity
 			}),
-			r(370536, {	-- Delicate Suspension of Spores
-				["description"] = "Requires Decayology."
-			}),
-			r(370525, {	-- Potion of Chilled Clarity
-				["description"] = "Requires Decayology."
-			}),
-			r(370528, {	-- Potion of Withering Vitality
-				["description"] = "Requires Decayology."
+		}),
+		spell(370743, {	-- Basic Potion Experimentation
+			i(193365,{	-- Basic Potion Experimentation*
+				-- Recipes Discoverable
 			}),
 		}),
 		n(HIDDEN_QUESTS, sharedData({
