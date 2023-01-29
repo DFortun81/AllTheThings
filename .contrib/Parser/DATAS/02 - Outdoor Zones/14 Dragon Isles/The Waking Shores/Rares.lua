@@ -140,7 +140,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193266, {	-- Lepidoralia the Resplendent
 				["coord"] = { 33.8, 85.8, THE_WAKING_SHORES },
 				["questID"] = 74065,
-				["description"] = "Talk to Collector Zik at the entrance to the cave and get a net. Start catching butterflies- no really, like, hundreds of butterflies. You'll be here a while.",
+				["description"] = "Talk to Collector Zik at the entrance to the cave and get a net. Start catching butterflies- no really, like, 200-400 butterflies. You'll be here a while.\n\nYou can talk to Collector Zik and select chat option 3: 'How many shimmerwings have you collected so far?' to get a hint toward your progress:\n0-33% I've only just started.\n34-66%We're making good progress.\n67-99%We're close to a discovery.",
 				-- ["g"] = {
 
 				-- },
