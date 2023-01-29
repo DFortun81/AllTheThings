@@ -239,6 +239,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(74462, {	-- Shiobhan Waterborn
 					["qg"] = 201559,	-- Shiobhan Waterborn
+					["timeline"] = { ADDED_DF_0_5 }
 				}),
 				q(69969, {	-- Voraazka
 					["qg"] = 193674,	-- Voraazka

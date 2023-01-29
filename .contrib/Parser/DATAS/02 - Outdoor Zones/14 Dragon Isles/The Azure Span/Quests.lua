@@ -1591,6 +1591,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 201558 },	-- Malgain Rockknell
 					["coord"] = { 56.0, 67.4, THE_AZURE_SPAN },
 					["isDaily"] = true,
+					["timeline"] = { ADDED_DF_0_5 },
 				}),
 				q(72154, {	-- Skag the Thrower
 					["provider"] = { "n", 193149 },	-- Skag the Thrower
@@ -1625,6 +1626,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 201556 },	-- Waterpots
 					["coord"] = { 57.3, 64.3, THE_AZURE_SPAN },
 					["isDaily"] = true,
+					["timeline"] = { ADDED_DF_0_5 },
 				}),
 			}),
 			n(HIDDEN_QUESTS, {

@@ -189,6 +189,313 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(190173),	-- Lil' Maka'jin (PET!)
 		i(190175),	-- Pippin (PET!)
 		pet(3254),	-- Watcher of the Huntress (PET!)
+
+		-- Items
+		i(137295),	-- Bottle of Arcwine
+		i(151974),	-- Eye of Shatug
+		i(189792),	-- Glorious Dragonrider's Grips
+		i(189869),	-- Distinguished Warcloak
+		i(189870),	-- Arcanofire Wrap
+		i(189871),	-- Squire's Warhammer
+		i(189872),	-- Shattered Krokul Edge
+		i(189873),	-- Sylvan Stalker's Boots
+		i(189874),	-- Glorious Dragonrider's Wristguards
+		i(189875),	-- Corrupted Runelord's Sash
+		i(189876),	-- Corrupted Runelord's Handguards
+		i(189877),	-- Glorious Dragonrider's Spaulders
+		i(189878),	-- Glorious Dragonrider's Runeward
+		i(189879),	-- Corrupted Runelord's Leggings
+		i(189880),	-- Corrupted Runelord's Mantle
+		i(189881),	-- Val'sharah Protector's Greaves
+		i(189883),	-- Lordaeron Sentry's Bulwark
+		i(189884),	-- Vengeful Nemesis Warblades
+		i(189886),	-- Might of the Titanforged
+		i(189897),	-- Infiltrator's Bandolier
+		i(189898),	-- Fury of the Firelord
+		i(190064),	-- Ymirjar Berserker's Girdle
+		i(190066),	-- Primeval Maul
+		i(190067),	-- Tidecaller's Grips
+		i(190068),	-- Emerald Drape
+		i(190069),	-- Val'sharah Protector's Sabatons
+		i(190070),	-- Highborne Scholar's Gloves
+		i(190071),	-- Azure Scalesworn Longbow
+		i(190072),	-- Tidecaller's Hauberk
+		i(190073),	-- Sylvan Stalker's Hood
+		i(190074),	-- Val'sharah Protector's Spaulders
+		i(190075),	-- Mantle of the Scholarly Raven
+		i(190076),	-- Granny's Old Hat
+		i(190078),	-- Blade of Brutal Sacrifice
+		i(190079),	-- Smoldering Forgeblade
+		i(190080),	-- Catastrophe's Edge
+		i(190131),	-- Brick-on-a-Stick
+		i(190132),	-- Krokul Battlescythe
+		i(190134),	-- Helarjar Berserker Warboots
+		i(190135),	-- Helarjar Berserker Gauntlets
+		i(190136),	-- Kvaldir Scout Treads
+		i(190137),	-- Kvaldir Scout Grips
+		i(190138),	-- Helarjar Berserker Horns
+		i(190139),	-- Helarjar Berserker Greaves
+		i(190140),	-- Kvaldir Scout Trousers
+		i(190141),	-- Kvaldir Scout Chestguard
+		i(190142),	-- Sylvan Stalker's Legguards
+		i(190143),	-- Shard of Frozen Secrets
+		i(190144),	-- Irontide Raider's Bicorne
+		i(190146),	-- Antoran Felspire
+		i(190147),	-- Longbow of the Twisted Grove
+		i(190148),	-- Ravencrest's Razor
+		i(190152),	-- Solemn Watchman's Gauntlets
+		i(190165),	-- Ensemble: Twisted Arcanum Regalia
+		i(190167),	-- Vault Stalker's Greaves
+		i(190168),	-- Crusty Crawler
+		i(190173),	-- Lil' Maka'jin
+		i(190176),	-- Drazka'zet the Wrathful
+		i(190201),	-- Sin'dorei Assassin's Shroud
+		i(190202),	-- Scoundrel's Missing Boots
+		i(190203),	-- Woodsman's Timber Mallet
+		i(190206),	-- Corrupted Runelord's Glyphbands
+		i(190207),	-- Corrupted Runelord's Slippers
+		i(190208),	-- Glorious Dragonrider's Sabatons
+		i(190209),	-- Glorious Dragonrider's Chains
+		i(190210),	-- Corrupted Runelord's Cowl
+		i(190211),	-- Corrupted Runelord's Robe
+		i(190212),	-- Glorious Dragonrider's Hood
+		i(190213),	-- Val'sharah Protector's Cuirass
+		i(190218),	-- Jeweled Ripper
+		i(190219),	-- Virulent Gavel
+		i(190230),	-- Glorious Dragonrider's Cuisses
+		i(190231),	-- Ash'adar, Harbinger of Dawn
+		i(190428),	-- Regal Warcloak
+		i(190429),	-- Clasp of Ursine Rage
+		i(190430),	-- Chipped Gladius
+		i(190432),	-- Tidecaller's Bracers
+		i(190434),	-- Iridescent Warcloak
+		i(190435),	-- Highborne Scholar's Belt
+		i(190436),	-- Sylvan Stalker's Baldric
+		i(190437),	-- Highborne Scholar's Collar
+		i(190440),	-- Tidecaller's Crown
+		i(190442),	-- Illidari Bladeward
+		i(190445),	-- Envenomed Gutripper
+		i(190446),	-- Blazing Forgehammer
+		i(190539),	-- Coral-Stalker Waveray
+		i(190544),	-- Ultramafic Girdle
+		i(190547),	-- Val'Sharah Protector's Bracers
+		i(190548),	-- Kvaldir Scout Belt
+		i(190549),	-- Kvaldir Scout Wristguard
+		i(190550),	-- Helarjar Berserker Girdle
+		i(190551),	-- Helarjar Berserker Bracers
+		i(190552),	-- Kvaldir Scout Shoulderpads
+		i(190553),	-- Helarjar Berserker Cuirass
+		i(190554),	-- Helarjar Berserker Pauldrons
+		i(190555),	-- Highborne Scholar's Robe
+		i(190556),	-- Tidecaller's Legguards
+		i(190574),	-- Kvaldir Scout Hood
+		i(190575),	-- Ensemble: Chains of the Honored Valarjar
+		i(190599),	-- Operative's Bandolier
+		i(190604),	-- Buzzworth
+		i(190607),	-- Garrlok
+		i(190672),	-- Deathguard Acolyte's Cloak
+		i(190673),	-- Waistguard of the Infernal Eye
+		i(190675),	-- Arborcidal Peon's Chopper
+		i(190676),	-- Val'Sharah Protector's Gauntlets
+		i(190677),	-- Void-Bound Boots
+		i(190678),	-- Void-Bound Chain
+		i(190679),	-- Void-Bound Cord
+		i(190680),	-- Void-Bound Gloves
+		i(190681),	-- Void-Bound Tassets
+		i(190682),	-- Void-Bound Circlet
+		i(190683),	-- Void-Bound Mantle
+		i(190684),	-- Void-Bound Trousers
+		i(190685),	-- Lost Crusader's Azure Battleaxe
+		i(190686),	-- Anetheron's Edge
+		i(190687),	-- Painted Warblade
+		i(190689),	-- Corrupted Bladefist
+		i(190691),	-- Twisted Guardian's Profane Barrier
+		i(190696),	-- Magister's Jeweled Drape
+		i(190697),	-- Boots of a Broken World
+		i(190698),	-- Gently-Used Cleaver
+		i(190699),	-- Gorian Mining Pick
+		i(190700),	-- Tidecaller's Boots
+		i(190701),	-- Void-Bound Girdle
+		i(190702),	-- Void-Bound Vambraces
+		i(190703),	-- Void-Bound Striders
+		i(190704),	-- Void-Bound Handguards
+		i(190705),	-- Void-Bound Greaves
+		i(190706),	-- Void-Bound Greathelm
+		i(190707),	-- Void-Bound Vest
+		i(190708),	-- Void-Bound Shoulderguards
+		i(190709),	-- Tidecaller's Pauldrons
+		i(190710),	-- Caged Eye of the Watcher
+		i(190711),	-- Arcanist's Barbed Baton
+		i(190713),	-- Imperator's Command
+		i(190714),	-- Gorian Pulverizer
+		i(190715),	-- Anodized Sniper Rifle
+		i(190718),	-- Drape of the Honored Valarjar
+		i(190767),	-- Armored Golden Pterrordax
+		i(190772),	-- Ensemble: Vestments of the Nightmare Forest
+		i(190787),	-- Highborne Scholar's Cuffs
+		i(190788),	-- Sylvan Stalker's Wristguards
+		i(190799),	-- Ensemble: Swashbuckling Buccaneer's Slops
+		i(190803),	-- Lost Acolyte's Boots
+		i(190806),	-- Tidecaller's Cinch
+		i(190809),	-- Highborne Scholar's Slippers
+		i(190810),	-- Sylvan Stalker's Handguards
+		i(190811),	-- Sylvan Stalker's Vest
+		i(190815),	-- Highborne Scholar's Leggings
+		i(190830),	-- Mad Thief's Boots
+		i(190834),	-- Void-Bound Cuffs
+		i(190835),	-- Void-Bound Slippers
+		i(190836),	-- Void-Bound Wristguards
+		i(190837),	-- Void-Bound Grips
+		i(190838),	-- Void-Bound Robe
+		i(190839),	-- Void-Bound Crown
+		i(190840),	-- Void-Bound Hauberk
+		i(190841),	-- Void-Bound Spaulders
+		i(190846),	-- Shattered Voidspire
+		i(190855),	-- Rosy Corsage
+		i(190856),	-- Fetid Bouquet
+		i(190858),	-- Girdle of Chilled Embers
+		i(190861),	-- Val'Sharah Protector's Girdle
+		i(190862),	-- Void-Bound Bracers
+		i(190863),	-- Void-Bound Belt
+		i(190864),	-- Void-Bound Sabatons
+		i(190865),	-- Void-Bound Gauntlets
+		i(190866),	-- Void-Bound Breastplate
+		i(190867),	-- Void-Bound Pauldrons
+		i(190868),	-- Highborne Scholar's Scrollmantle
+		i(190879),	-- Void-Bound Mask
+		i(190888),	-- Embrace of the Great Dark Beyond
+		i(190894),	-- Sylvan Stalker's Mantle
+		i(190897),	-- Val'Sharah Protector's Crown
+		i(191143),	-- Mudfin Totem
+		i(191539),	-- Sarnai's Collar
+		i(191540),	-- Batu's Collar
+		i(191541),	-- Shikaar Supplies
+		i(193257),	-- Clump of Sacred Soil
+		i(193879),	-- Pattern: Infurious Footwraps of Indemnity
+		i(193915),	-- Flag of the Black Dragonflight
+		i(194632),	-- Design: Idol of the Life-Binder
+		i(194635),	-- Design: Idol of the Earth-Warder
+		i(199704),	-- Artifact Fragment
+		i(200842),	-- Power-Depleted Staff
+		i(200919),	-- Void-Bound Leggings
+		i(200920),	-- Void-Bound Cloak
+		i(200921),	-- Void-Bound Greatcloak
+		i(200922),	-- Void-Bound Shroud
+		i(200923),	-- Void-Bound Drape
+		i(201960),	-- Chronologically Unstable Loop
+		i(201961),	-- Bronze Band of Destinies
+		i(201962),	-- Heat of Primal Winter
+		i(201990),	-- Primal Mote
+		i(202015),	-- Sands of Temporal Perfection
+		i(202020),	-- Chasing Storm
+		i(202035),	-- Self-Heating Rations
+		i(202039),	-- Essence of the Storm
+		i(202096),	-- Armaments of the Scale
+		i(202112),	-- Crystal Shattering Armaments
+		i(202165),	-- Wanderer's Rosy Scarf
+		i(202166),	-- Wanderer's Rosy Cloak
+		i(202167),	-- Ensemble: Wanderer's Rosy Trappings
+		i(202168),	-- Vagabond's Rosy Cape
+		i(202169),	-- Vagabond's Rosy Hood
+		i(202170),	-- Ensemble: Vagabond's Rosy Threads
+		i(202207),	-- Reusable Oversized Bobber
+		i(202208),	-- Impressive Steelforged Essence
+		i(202209),	-- Remarkable Steelforged Essence
+		i(202210),	-- Impressive Truesteel Essence
+		i(202211),	-- Remarkable Truesteel Essence
+		i(202212),	-- Impressive Linkgrease Locksprocket
+		i(202213),	-- Remarkable Linkgrease Locksprocket
+		i(202214),	-- Impressive True Iron Trigger
+		i(202215),	-- Remarkable True Iron Trigger
+		i(202216),	-- Impressive Burnished Essence
+		i(202217),	-- Remarkable Burnished Essence
+		i(202218),	-- Impressive Hexweave Essence
+		i(202219),	-- Remarkable Hexweave Essence
+		i(202220),	-- Impressive Weapon Crystal
+		i(202221),	-- Remarkable Weapon Crystal
+		i(202223),	-- Plans: Impressive Steelforged Essence
+		i(202224),	-- Plans: Remarkable Steelforged Essence
+		i(202226),	-- Plans: Impressive Truesteel Essence
+		i(202227),	-- Plans: Remarkable Truesteel Essence
+		i(202228),	-- Schematic: Impressive Linkgrease Locksprocket
+		i(202229),	-- Schematic: Remarkable Linkgrease Locksprocket
+		i(202230),	-- Schematic: Impressive True Iron Trigger
+		i(202231),	-- Schematic: Remarkable True Iron Trigger
+		i(202232),	-- Pattern: Impressive Burnished Essence
+		i(202233),	-- Pattern: Remarkable Burnished Essence
+		i(202234),	-- Pattern: Impressive Hexweave Essence
+		i(202235),	-- Pattern: Remarkable Hexweave Essence
+		i(202236),	-- Technique: Impressive Weapon Crystal
+		i(202237),	-- Technique: Remarkable Weapon Crystal
+		i(202249),	-- Recipe: Goldthorn Tea
+		i(202252),	-- Relic of the Future (prototype)
+		i(202295),	-- Anointed Crusader's Claymore
+		i(202296),	-- Deathmantle Ripper
+		i(202297),	-- Jade Arcus
+		i(202298),	-- Trader's Bicorne
+		i(202300),	-- Zealot's Prayer Staff
+		i(202301),	-- Focalized Mana Accelerator
+		i(202303),	-- Crimson Beanie
+		i(202304),	-- Green Beanie
+		i(202305),	-- Stevedore's Skullcap
+		i(202306),	-- Dread Captain's Chapeau
+		i(202307),	-- Well-Worn Tricorne
+		i(202308),	-- Alley Skulker's Bandana
+		i(202309),	-- Defective Doomsday Device
+		i(202310),	-- Defective Doomsday Device
+		i(202371),	-- Glowing Primalist Cache
+		i(202691),	-- Henry's Handbag
+		i(203226),	-- Stormfused Salamanther
+		i(203382),	-- Peripheral Vision Projectors
+		i(203461),	-- Chronologically Reallocated Rations
+		i(203469),	-- Coalesced Storm Remnants
+		i(203471),	-- Tasty Candy
+		i(203476),	-- Primalist Cache
+		i(203478),	-- Field Deployable Heat Source
+		i(203598),	-- Makko's Journal Cover
+		i(203658),	-- Graniteclaw's Vest
+		i(203659),	-- Waterpot's Halfpot Deflector
+		i(203660),	-- Rockknell's Groundpounders
+		i(203661),	-- Watercaller's Mantle
+		i(203662),	-- Arcanogolem Crystalblade
+		i(203663),	-- Cinch of the Sundered Flame
+		i(203664),	-- Wild Magic Insulating Bands
+		i(203665),	-- Stonetongues Hood
+		i(203666),	-- Vinelashed Bracers
+		i(203667),	-- Frostclaw's Spellfingers
+		i(203668),	-- Earhshaping Grips
+		i(203669),	-- Chillwing Leggings
+		i(203670),	-- Prismatic Diamond Loop
+		i(203671),	-- Pack Leader's Pelt
+		i(203672),	-- Master Huntmaster's Wristguards
+		i(203673),	-- Bloodbeak's Ravenor
+		i(203674),	-- Brutal Tramplers
+		i(203675),	-- Legplates of the Brutal Motivator
+		i(203676),	-- Stormcaller's Grounding Shoes
+		i(203677),	-- Watcher's 'Neck' Ring
+		i(203681),	-- Stormed Primalist Cache
+		i(203716),	-- Thundering Banner of the Aspects
+		i(190065),	-- Gnomish Liquid Transfer Apparatus
+		i(190204),	-- Huntsman's Recurve Bow
+		i(190448),	-- Trapper's Shot Pouch
+		i(190449),	-- Trapper's Fur-Lined Quiver
+		i(190540),	-- Ensemble: Trapper's Munitions
+		i(190725),	-- Ensemble: Battlewraps of the Honored Valarjar
+		i(192631),	-- Scale-Piercing Fang
+		i(193003),	-- Idol of the Life-Binder
+		i(193006),	-- Idol of the Earth-Warder
+		i(201094),	-- Crimson Aspirant's Silk Robe
+		i(201126),	-- Crimson Aspirant's Silk Vestments
+		i(201229),	-- Ensemble: Kvaldir Scout Leathers
+		i(201650),	-- Crimson Gladiator's Chain Vestments
+		i(201651),	-- Crimson Gladiator's Chain Robe
+		i(202000),	-- Minor Renascence
+		i(202002),	-- Enlightened Renascence
+		i(202089),	-- Crimson Gladiator's Prestigious Cloak
+		i(202090),	-- Crimson Gladiator's Tabard
+		i(204236),	-- Sack of Stolen Dragon Glyphs
+		i(204277),	-- Ruby Whelp Treat
+
 	}),
 	tier(DF_TIER, {
 		n(ARMOR, {
@@ -855,6 +1162,507 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		-- Use this in a Cost.. Must find the source
 		i(194690),	-- Horn o' Mead
+
+		-- New Stuff?
+		i(195481),	-- Scepter of Drastic Measures
+		i(195490),	-- Searing Blazecaster
+		i(198695),	-- Bottomless Reliquary Satchel
+		i(201035),	-- Citadel Crusher's Pauldrons
+		i(201041),	-- Citadel Crusher's Cloak
+		i(133589),	-- Dalapeño Pepper
+		i(190583),	-- Ichabod
+		i(193717),	-- Mystakria's Harvester
+		i(198083),	-- Expedition Supply Kit
+		i(198808),	-- Guardian Vorquin
+		i(199648),	-- Dragon Dinner Fork
+		i(199651),	-- Dragon Garden Hoe
+		i(199652),	-- Dragon Garden Rake
+		i(199653),	-- Dragon Garden Hand Shovel
+		i(199654),	-- Dragon Garden Shovel
+		i(200750),	-- Dragon Dinner Knife
+		i(201159),	-- Aloom's Token
+		i(201373),	-- Imbu Net Cutter
+		i(201470),	-- Story of a Memorable Victory
+		i(201471),	-- Story of a Spectacular Victory
+		i(201724),	-- Dracthyr Token of Cavalry Excellence
+		i(201836),	-- Aspects' Token of Merit
+		i(202139),	-- Crimson Gladiator's Scepter
+		i(202197),	-- Emboldened Dracthyr's Tabard
+		i(202712),	-- Rubber Fish
+		i(54629),	-- Prickly Thorn
+		i(56054),	-- Gleaming Flipper
+		i(56055),	-- Small Parasitic Fish
+		i(60390),	-- Reticulated Tissue
+		i(60405),	-- Stubby Bear Tail
+		i(60406),	-- Blood-Caked Incisors
+		i(62370),	-- Bear Whisker
+		i(62452),	-- Velvet Ear
+		i(62770),	-- Infested Feather
+		i(123865),	-- Relic of Ursol
+		i(133755),	-- Underlight Angler
+		i(136605),	-- Solendra's Compassion
+		i(178149),	-- Centurion Anima Core
+		i(191309),	-- Crystal Flakes
+		i(192604),	-- Ancient Lantern
+		i(192605),	-- Reptilian Fang
+		i(192608),	-- Ancient Resin
+		i(192609),	-- Swim Bladder
+		i(192610),	-- Beady Woodland Eye
+		i(192611),	-- Bottled Torrent
+		i(192613),	-- Dragon Tooth
+		i(192614),	-- Elemental Ooze
+		i(192615),	-- Fluorescent Fluid
+		i(192616),	-- Fung Eye
+		i(192617),	-- Hound Paw
+		i(192618),	-- Ice Chunks
+		i(192619),	-- Impressive Tail Fin
+		i(192620),	-- Large Tail Spikes
+		i(192621),	-- Long-Toed Talon
+		i(192622),	-- Massive Beast Eye
+		i(192623),	-- Massive Proto-Dragon Claw
+		i(192624),	-- Cracked Scales
+		i(192625),	-- Motionless Stone
+		i(192626),	-- Mound of Dust
+		i(192627),	-- Obsidian Clump
+		i(192628),	-- Phoenix Ash
+		i(192629),	-- Primal Beast Claw
+		i(192630),	-- Reef Carapace
+		i(192631),	-- Scale Piercing Fang
+		i(192632),	-- Sharp Bird Talon
+		i(192633),	-- Slit-Shaped Pupil
+		i(192634),	-- Smashed Metal Scraps
+		i(192635),	-- Warped Metal
+		i(192636),	-- Woolly Mountain Pelt
+		i(192644),	-- Aeriform Speck
+		i(192645),	-- Obsidian Nugget
+		i(192647),	-- Terrene Speck
+		i(192648),	-- Pristine Beast Fur
+		i(192650),	-- Roomy Shell
+		i(192651),	-- Damaged Core
+		i(192652),	-- Discharged Thunderscale
+		i(192653),	-- Floppy Molten Ear
+		i(192654),	-- Giant Stone Eye
+		i(192655),	-- Chilling Spider Leg
+		i(192656),	-- Half-Digested Fish
+		i(192657),	-- Hardy Cloven Hoof
+		i(192658),	-- High-Fiber Leaf
+		i(192659),	-- Impressive Mandible
+		i(192660),	-- Massive Hydra Claw
+		i(192661),	-- Prehistoric Fin
+		i(192662),	-- Pyretic Speck
+		i(192663),	-- Scaly Wing
+		i(192664),	-- Serrated Pincer
+		i(192665),	-- Torn Dragon Wing
+		i(192666),	-- Severed Roots
+		i(192668),	-- Short Rib
+		i(192669),	-- Sizeable Feather
+		i(192670),	-- Splendid Feather
+		i(192671),	-- Sublime Flower
+		i(192672),	-- Tattered Proto-Wing
+		i(192673),	-- Torn Ear
+		i(192674),	-- Unknown Titan Mechanism
+		i(192675),	-- Winglet
+		i(192683),	-- Slimy Frog Eggs
+		i(192684),	-- Ancient War Tusk
+		i(192685),	-- Battle-Hardened Fang
+		i(192686),	-- Charred Carapace
+		i(192687),	-- Duck Bill
+		i(192688),	-- Cracked Stone Bracers
+		i(192689),	-- Eagle Eye
+		i(192690),	-- Serrated Limb
+		i(192691),	-- Eternal Ice Stalactite
+		i(192692),	-- Faerie Dust
+		i(192693),	-- First Heads Horn
+		i(192694),	-- Second Head's Fang
+		i(192695),	-- Molten Mandible
+		i(192696),	-- Third Head's Eye
+		i(192697),	-- Fluffy Ear
+		i(192698),	-- Depleted Titan Training Matrix
+		i(192700),	-- Frozen Dorsal Spike
+		i(192701),	-- Frozen Eye
+		i(192702),	-- Giant's Heart
+		i(192703),	-- Hide-Piercing Horn
+		i(192704),	-- Huge Flat Tooth
+		i(192705),	-- Imposing Tusk
+		i(192706),	-- Razor Quill
+		i(192707),	-- Gnawing Incisors
+		i(192708),	-- Magnificent Antler
+		i(192709),	-- Membranous Wing
+		i(192710),	-- Nearly Unbreakable Horn
+		i(192711),	-- Oily Liver
+		i(192712),	-- Otherworldly Essence
+		i(192713),	-- Pharyngeal Jaw
+		i(192714),	-- Mgrrrl
+		i(192715),	-- Phoenix Stone
+		i(192716),	-- Prehistoric Sediment
+		i(192717),	-- Flickering Primeval Element
+		i(192718),	-- Rock-Hard Eggshell
+		i(192719),	-- Scaled Toes
+		i(192720),	-- Slender Twisting Horn
+		i(192721),	-- Splendid Horn
+		i(192722),	-- Splendid Whiskers
+		i(192723),	-- Springy Tongue
+		i(192724),	-- Terrifying Teeth
+		i(192725),	-- Thin Blubber
+		i(192726),	-- Thunderhorn
+		i(192727),	-- Timeless Horns
+		i(192728),	-- Undamaged Silk Gland
+		i(192729),	-- Unhinged Mandible
+		i(192730),	-- Unstable Arcane Essence
+		i(192731),	-- Venomous Fang
+		i(192746),	-- Curio of Yore
+		i(192747),	-- Broken Branch
+		i(192786),	-- Slumbering Worldsnail Shell
+		i(192806),	-- Raging Magmammoth
+		i(193375),	-- Nelthazan Artifact Fragments
+		i(193384),	-- Crumbling Bone
+		i(193385),	-- Decaying Resin
+		i(193387),	-- Solar Battery
+		i(193389),	-- Adamantine Core
+		i(193391),	-- Time-Worn Fang
+		i(193410),	-- Nauseating Stinger
+		i(193420),	-- Depleted Mana Stone
+		i(193438),	-- Harrowing Osteal
+		i(193447),	-- Thunder Thigh
+		i(193448),	-- Arcane Cell
+		i(193450),	-- Arakkoa Doll
+		i(194421),	-- Teera's Bow
+		i(194423),	-- Maruuk's Spear
+		i(198073),	-- Karha, the Serene Wind
+		i(198074),	-- Josanak, the Certain Victory
+		i(198075),	-- Tsegzaya, the Brambled Bow
+		i(198173),	-- Atomic Recalibrator
+		i(198335),	-- Ol' Smoky
+		i(198672),	-- Decryption Key
+		i(198814),	-- Boom Fumes
+		i(198815),	-- Ash
+		i(198816),	-- Aerospace Grade Draconium
+		i(198817),	-- Durable Crystal
+		i(198848),	-- Flyspawn Thorax
+		i(198859),	-- Revealing Dragon's Eye
+		i(198982),	-- Broken Part: Head
+		i(198983),	-- Broken Part: Arm
+		i(198984),	-- Broken Part: Shattered Orb
+		i(199197),	-- Bottled Essence
+		i(199215),	-- Worldbreaker Membership
+		i(199227),	-- Schematic: Ol' Smoky
+		i(199294),	-- Schematic: Atomic Recalibrator
+		i(199900),	-- Secondhand Survey Tools
+		i(200105),	-- Muck Covered Flotsam
+		i(200106),	-- Slimy Old Boot
+		i(200107),	-- Tarnished Engagement Ring
+		i(200108),	-- Irideus' Power Core
+		i(200120),	-- Irideus' Power Core
+		i(200451),	-- Deep Sea Star
+		i(200531),	-- Worn Chitin Fragment
+		i(200532),	-- Damaged Qiraji Ring
+		i(200533),	-- Bygone Idol
+		i(200675),	-- Elemental Overflow Cluster
+		i(200933),	-- Mushy Vegtable
+		i(200937),	-- Flavorful Soup Bone
+		i(201162),	-- Shiny Metal Scraps
+		i(201163),	-- Piece of Dragonkin Eggshell
+		i(201164),	-- Titan Runestone
+		i(201165),	-- Burnished Bauble
+		i(201166),	-- Guilded Hilt
+		i(201167),	-- Stone Calendar
+		i(201168),	-- Untainted Scales
+		i(201170),	-- Knucklebones
+		i(201171),	-- Perfectly Round Stone
+		i(201173),	-- Handful of Teeth
+		i(201174),	-- Fantastic Jewel
+		i(201175),	-- Arakkoa Ritual Feather
+		i(201176),	-- Ornate Bracelet
+		i(201177),	-- Wooden Eagle Statue
+		i(201178),	-- Cracked Skull
+		i(201179),	-- Snapped Tusk Tip
+		i(201180),	-- Bone Necklace
+		i(201182),	-- Serrated Stone
+		i(201183),	-- Pouch of Salt
+		i(201184),	-- Spare Bow String
+		i(201185),	-- Hidden Blade
+		i(201186),	-- Rope Bonds
+		i(201187),	-- Bent Lockpicks
+		i(201188),	-- Deceased Critter
+		i(201190),	-- Goo Filled Flask
+		i(201191),	-- Back Scratcher
+		i(201192),	-- Large Dragonbone Dice
+		i(201193),	-- Dragon Tooth Shank
+		i(201194),	-- Pumice Hand Chalk
+		i(201195),	-- Empty Herb Pouch
+		i(201196),	-- Pretty Flower
+		i(201197),	-- Dream Journal
+		i(201198),	-- Beaded Bracelet
+		i(201199),	-- Splendid Feather Necklace
+		i(201200),	-- Makeshift Totem
+		i(201201),	-- Skull Pendant
+		i(201202),	-- Squirrel Tail
+		i(201203),	-- Painted Gnoll Band
+		i(201204),	-- Tooth Bracelet
+		i(201205),	-- Bone Toothpick
+		i(201206),	-- Fresh Meat Lump
+		i(201207),	-- Shells in a Conch
+		i(201208),	-- Seer's Crystal
+		i(201209),	-- Nibbled Fish Head
+		i(201210),	-- Albino Feather
+		i(201211),	-- Bottled Ear Wax
+		i(201213),	-- Sparkling Stone
+		i(201214),	-- Olfactory Truffle
+		i(201216),	-- Crumbled Elemental Spark
+		i(201219),	-- Parchment Cards
+		i(201220),	-- Ancient Tool
+		i(201221),	-- Small Titan Mechanism
+		i(201222),	-- Smooth Seashell
+		i(201223),	-- Thorn Bracelet
+		i(201224),	-- Tauren Horn
+		i(201226),	-- Big Rock
+		i(201227),	-- Half-Eaten Stone
+		i(201228),	-- Handful of Gravel
+		i(201381),	-- Nokhud Battle-Knife
+		i(201420),	-- Gnolan's House Special
+		i(201421),	-- Tuskarr Jerky
+		i(201723),	-- Indecipherable Pages
+		i(201823),	-- Arcane-Infused Webbing
+		i(201824),	-- Arcane Fluid
+		i(201927),	-- Gleaming Arcanocrystal
+		i(201928),	-- Ohn'ir Windprayer Talisman
+		i(201929),	-- Stolen Breath of Ohn'ahra
+		i(202070),	-- Exceptional Pelt
+		i(202071),	-- Elemental Mote
+		i(202082),	-- Petrified Dragon Egg
+		i(202084),	-- Eroded Fossil
+		i(202692),	-- Gnoll Fiend Flail
+		i(202711),	-- Lost Compass
+		i(203206),	-- Elegant Canvas Brush
+		i(203366),	-- Blue Winglord's Staff
+		i(203367),	-- Blue Winglord's Hauberk
+		i(203368),	-- Blue Winglord's Chain
+		i(203369),	-- Blue Winglord's Boots
+		i(203370),	-- Blue Winglord's Bracers
+		i(203371),	-- Blue Winglord's Grips
+		i(203372),	-- Blue Winglord's Coif
+		i(203373),	-- Blue Winglord's Greaves
+		i(203374),	-- Blue Winglord's Shoulders
+		i(56056),	-- Trophy Jaws
+		i(102463),	-- Fire-Watcher's Oath
+		i(123869),	-- Relic of Elune
+		i(191855),	-- Qalashi Trophy
+		i(191858),	-- Succulent Snapper Meat
+		i(191859),	-- Half-Boiled Fish
+		i(191862),	-- Whalebone Fragment
+		i(191863),	-- Waterlogged Wood
+		i(195359),	-- Dry Snapper Meat
+		i(195360),	-- Scorched Snapper Meat
+		i(197845),	-- Silver Scale
+		i(197862),	-- Primary Security Disc
+		i(197863),	-- Secondary Security Disc
+		i(198038),	-- Ancient Titansteel Ingot
+		i(198355),	-- Tyrhold Conduit
+		i(199830),	-- Tuskarr Training Dummy
+		i(200188),	-- Broken Fishing Pole
+		i(200190),	-- Stuffed Duckling Toy
+		i(200191),	-- Ottuk Lure
+		i(202001),	-- Passing Renascence
+		i(123868),	-- Relic of Shakama
+		i(191114),	-- Reins of the Amalgam of Rage
+		i(192555),	-- Borrowed Breath
+		i(192744),	-- Rymek's Gift
+		i(192768),	-- Titan Disc
+		i(199178),	-- Bronze Horn Flower
+		i(199179),	-- Dragon Foil
+		i(199180),	-- Dragon's Blood Berry
+		i(199790),	-- Makko's Journal Cover
+		i(199792),	-- Makko's Journal - Page One
+		i(199793),	-- Makko's Journal - Page Two
+		i(199794),	-- Makko's Journal - Page Three
+		i(199795),	-- Makko's Journal - Page Four
+		i(199796),	-- Makko's Journal - Page Five
+		i(199797),	-- Makko's Journal - Page Six
+		i(199798),	-- Makko's Journal - Page Seven
+		i(200100),	-- Batubar the Relentless
+		i(200115),	-- Sarantuya the Ever-True
+		i(200617),	-- Shattering Totem
+		i(201044),	-- Cirrus Flowers
+		i(201091),	-- Sharp Tooth
+		i(198855),	-- Throw Net
+		i(202037),	-- Expedition Shovel or Expedition Multi-Toolbox
+		i(203375),	-- Crimson Combatant's Medallion
+		i(203376),	-- Crimson Combatant's Insignia of Alacrity
+		i(203377),	-- Crimson Combatant's Emblem
+		i(203378),	-- Technique: Crimson Combatant's Medallion
+		i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity
+		i(203380),	-- Technique: Crimson Combatant's Emblem
+		i(203434),	-- Bottomless Bag of Blacksmithing Goods
+		i(203435),	-- Bottomless Bag of Alchemy Goods
+		i(203436),	-- Bottomless Bag of Enchanting Goods
+		i(203437),	-- Bottomless Bag of Engineering Goods
+		i(203438),	-- Bottomless Bag of Inscription Goods
+		i(203439),	-- Bottomless Bag of Jewelcrafting Goods
+		i(203440),	-- Bottomless Bag of Leatherworking Goods
+		i(203441),	-- Bottomless Bag of Tailoring Goods
+		i(203444),	-- Bottomless Bag of General Goods
+		i(203447),	-- Bottomless Bag of Optional Goods
+		i(203448),	-- Bottomless Bag of Ore
+		i(203449),	-- Bottomless Bag of Herbs
+		i(203450),	-- Bottomless Bag of Skins
+		i(191042),	-- Flask of Dwarven Antifreeze
+		i(191135),	-- Nai'jin's Runestone
+		i(191136),	-- Sin'tia's Runestone
+		i(191137),	-- Julh'ek's Runestone
+		i(191909),	-- R.A.D.
+		i(192110),	-- R.A.D.D.E.R.
+		i(192471),	-- Arch Instructor's Wand
+		i(192473),	-- Hornswog Hide Scraps
+		i(192474),	-- Frozen Core
+		i(192475),	-- R.A.D.D.E.R.E.R.
+		i(192776),	-- Dormant Embercone
+		i(194432),	-- Old Stonetusk's Tusk
+		i(198661),	-- Partially Destroyed Diary
+		i(201033),	-- Magical Salt Crystal
+		i(203652),	-- Griftah's All-Purpose Embellishing Powder
+		i(62528),	-- Sharp Crocolisk Tooth
+		i(168522),	-- Ub3r Module: Ub3r-Coil
+		i(191616),	-- Fireplume Crest
+		i(191617),	-- Fireplume Vestments
+		i(191618),	-- Fireplume Coverts
+		i(191619),	-- Fireplume Flarewraps
+		i(191620),	-- Fireplume Plumage
+		i(191621),	-- Fireplume Insignia
+		i(191622),	-- Fireplume Talons
+		i(191627),	-- Fireplume Blouse
+		i(191628),	-- Fireplume Tailwinds
+		i(191774),	-- Fireplume Claws
+		i(191775),	-- Fireplume Shorts and Stockings
+		i(191776),	-- Fireplume Coverts
+		i(191779),	-- Fireplume Halter
+		i(193070),	-- The Insight of Tyr
+		i(193072),	-- The Judgment of Tyr
+		i(193355),	-- Map of Nelthazan Ruins
+		i(193357),	-- Shattered Ornament
+		i(193372),	-- Wood
+		i(193617),	-- Snowhide Totem
+		i(194433),	-- Bloodhorn's Horn
+		i(194439),	-- Frostfist's Eye
+		i(197958),	-- Watcher Log
+		i(198078),	-- Recruitment Roster
+		i(198079),	-- Orders from Sarkareth
+		i(203489),	-- Virtuous Silver Breastplate
+		i(203490),	-- Virtuous Silver Greatboots
+		i(203491),	-- Virtuous Silver Gauntlets
+		i(203492),	-- Virtuous Silver Heaume
+		i(203493),	-- Virtuous Silver Cuisses
+		i(203494),	-- Virtuous Silver Pauldrons
+		i(203495),	-- Virtuous Silver Faulds
+		i(203496),	-- Virtuous Silver Bracers
+		i(203497),	-- Virtuous Silver Cloak
+		i(203498),	-- Husk of the Walking Mountain
+		i(203499),	-- Boots of the Walking Mountain
+		i(203500),	-- Gauntlets of the Walking Mountain
+		i(203501),	-- Casque of the Walking Mountain
+		i(203502),	-- Poleyns of the Walking Mountain
+		i(203503),	-- Peaks of the Walking Mountain
+		i(203504),	-- Core of the Walking Mountain
+		i(203505),	-- Bracers of the Walking Mountain
+		i(203506),	-- Drape of the Walking Mountain
+		i(203507),	-- Breastplate of the Haunted Frostbrood
+		i(203508),	-- Sabatons of the Haunted Frostbrood
+		i(203509),	-- Grasps of the Haunted Frostbrood
+		i(203510),	-- Maw of the Haunted Frostbrood
+		i(203511),	-- Greaves of the Haunted Frostbrood
+		i(203512),	-- Jaws of the Haunted Frostbrood
+		i(203513),	-- Girdle of the Haunted Frostbrood
+		i(203514),	-- Vambraces of the Haunted Frostbrood
+		i(203515),	-- Drape of the Haunted Frostbrood
+		i(203516),	-- Lost Landcaller's Robes
+		i(203517),	-- Lost Landcaller's Moccasins
+		i(203518),	-- Lost Landcaller's Claws
+		i(203519),	-- Lost Landcaller's Antlers
+		i(203520),	-- Lost Landcaller's Leggings
+		i(203521),	-- Lost Landcaller's Mantle
+		i(203522),	-- Lost Landcaller's Sash
+		i(203523),	-- Lost Landcaller's Bindings
+		i(203524),	-- Lost Landcaller's Laena
+		i(203525),	-- Skybound Avenger's Harness
+		i(203526),	-- Skybound Avenger's Boots
+		i(203527),	-- Skybound Avenger's Grips
+		i(203528),	-- Skybound Avenger's Visor
+		i(203529),	-- Skybound Avenger's Legguards
+		i(203530),	-- Skybound Avenger's Ailerons
+		i(203531),	-- Skybound Avenger's Waistwrap
+		i(203532),	-- Skybound Avenger's Wristbands
+		i(203533),	-- Skybound Avenger's Cape
+		i(203534),	-- Chestwrap of the Waking Fist
+		i(203535),	-- Gaiters of the Waking Fist
+		i(203536),	-- Palms of the Waking Fist
+		i(203537),	-- Gaze of the Waking Fist
+		i(203538),	-- Legguards of the Waking Fist
+		i(203539),	-- Mantle of the Waking Fist
+		i(203540),	-- Girdle of the Waking Fist
+		i(203541),	-- Cuffs of the Waking Fist
+		i(203542),	-- Drape of the Waking Fist
+		i(203543),	-- Vault Delver's Brigandine
+		i(203544),	-- Vault Delver's Shinguards
+		i(203545),	-- Vault Delver's Lockbreakers
+		i(203546),	-- Vault Delver's Vizard
+		i(203547),	-- Vault Delver's Pantaloons
+		i(203548),	-- Vault Delver's Epaulets
+		i(203549),	-- Vault Delver's Utility Belt
+		i(203550),	-- Vault Delver's Sweatbands
+		i(203551),	-- Vault Delver's Camouflage
+		i(203552),	-- Hauberk of the Awakened
+		i(203553),	-- Treads of the Awakened
+		i(203554),	-- Gauntlets of the Awakened
+		i(203555),	-- Crown of the Awakened
+		i(203556),	-- Legguards of the Awakened
+		i(203557),	-- Talons of the Awakened
+		i(203558),	-- Chain of the Awakened
+		i(203559),	-- Bracers of the Awakened
+		i(203560),	-- Shroud of the Awakened
+		i(203561),	-- Stormwing Harrier's Cuirass
+		i(203562),	-- Stormwing Harrier's Sabatons
+		i(203563),	-- Stormwing Harrier's Handguards
+		i(203564),	-- Stormwing Harrier's Skullmask
+		i(203565),	-- Stormwing Harrier's Greaves
+		i(203566),	-- Stormwing Harrier's Pinions
+		i(203567),	-- Stormwing Harrier's Belt
+		i(203568),	-- Stormwing Harrier's Wristguards
+		i(203569),	-- Stormwing Harrier's Plumage
+		i(203570),	-- Robe of Infused Earth
+		i(203571),	-- Treads of Infused Earth
+		i(203572),	-- Gauntlets of Infused Earth
+		i(203573),	-- Faceguard of Infused Earth
+		i(203574),	-- Leggings of Infused Earth
+		i(203575),	-- Calderas of Infused Earth
+		i(203576),	-- Faulds of Infused Earth
+		i(203577),	-- Cuffs of Infused Earth
+		i(203578),	-- Greatcloak of Infused Earth
+		i(203579),	-- Scalesworn Cultist's Frock
+		i(203580),	-- Scalesworn Cultist's Sandals
+		i(203581),	-- Scalesworn Cultist's Gloves
+		i(203582),	-- Scalesworn Cultist's Scorn
+		i(203583),	-- Scalesworn Cultist's Culottes
+		i(203584),	-- Scalesworn Cultist's Effigy
+		i(203585),	-- Scalesworn Cultist's Girdle
+		i(203586),	-- Scalesworn Cultist's Wristwraps
+		i(203587),	-- Scalesworn Cultist's Runedrape
+		i(203588),	-- Crystal Scholar's Tunic
+		i(203589),	-- Crystal Scholar's Footwraps
+		i(203590),	-- Crystal Scholar's Pageturners
+		i(203591),	-- Crystal Scholar's Cowl
+		i(203592),	-- Crystal Scholar's Britches
+		i(203593),	-- Crystal Scholar's Beacons
+		i(203594),	-- Crystal Scholar's Cinch
+		i(203595),	-- Crystal Scholar's Cuffs
+		i(203596),	-- Crystal Scholar's Cape
+		i(203597),	-- Draconic Hierophant's Vestment
+		i(203599),	-- Draconic Hierophant's Slippers
+		i(203600),	-- Draconic Hierophant's Grips
+		i(203601),	-- Draconic Hierophant's Archcowl
+		i(203602),	-- Draconic Hierophant's Britches
+		i(203603),	-- Draconic Hierophant's Wisdom
+		i(203604),	-- Draconic Hierophant's Sash
+		i(203605),	-- Draconic Hierophant's Wristbands
+		i(203606),	-- Draconic Hierophant's Drape
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
 				r(371635),	-- Demonstration Item Recipe
