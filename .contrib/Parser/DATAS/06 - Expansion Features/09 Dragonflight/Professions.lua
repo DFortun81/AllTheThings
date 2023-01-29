@@ -1491,8 +1491,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					72244,	-- Dragon Isles Inscription
 				},
 				["sourceQuestNumRequired"] = 1,
-				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
-				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
+				["provider"] = { "n", 198125 },	-- Isarian Shadowplume
+				["coord"] = { 57.1, 58.2, THE_WAKING_SHORES },
 				["cost"] = { { "i", 191233, 1 }, },	-- 2xChef's Smooth Rolling Pin
 			}),
 			q(70188, { -- Specialized Secrets: Inscription
