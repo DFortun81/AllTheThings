@@ -1651,6 +1651,13 @@ for key,value in pairs({
 	[209620] = "Baú do Tesouro de Negraluna",	-- Darkmoon Treasure Chest
 	[209673] = "Pilar do Tigre de Jade",	-- Jade Tiger Pillar
 	[209845] = "Cerveja Água na Boca",	-- Mouthwatering Brew
+	[210005] = "Cavalete de Armas",	-- Weapon Rack
+	[210015] = "Cavalete de Armas",	-- Weapon Rack
+	[210016] = "Cavalete de Armas",	-- Weapon Rack
+	[210017] = "Bastidor de Armas",	-- Weapon Rack
+	[210018] = "Cavalete de Armas",	-- Weapon Rack
+	[210019] = "Bastidor de Armas",	-- Weapon Rack
+	[210020] = "Bastidor de Armas",	-- Weapon Rack
 	[210565] = "Solo Negro",	-- Dark Soil
 	[211424] = "Pergaminho de Alquimia",	-- Alchemy Scroll
 	[211754] = "Texto Curioso",	-- Curious Text
@@ -2636,8 +2643,10 @@ for key,value in pairs({
 	[277344] = "Lembranças Augari Preciosas",	-- Precious Augari Keepsakes
 	[277346] = "Baú Augari Perdido",	-- Missing Augari Chest
 	[277373] = "Algas Marinhas Luzentes",	-- Glimmering Seaweed
+	[277384] = "Tesouro Abandonado",	-- Abandoned Treasure
 	[277459] = "Efígie do Porco",	-- Pig Effigy
 	[277561] = "Baú do Senhor da Guerra",	-- Warlord's Cache
+	[277637] = "Baú Infectado pelo Caos",	-- Void-Seeped Cache
 	[277715] = "Baú Nazmani Amaldiçoado",	-- Cursed Nazmani Chest
 	[277885] = "Tesouro de Wunja",	-- Wunja's Trove
 	[277897] = "Baú Fervilhante",	-- Seething Cache
@@ -3578,6 +3587,7 @@ for key,value in pairs({
 	[381485] = "Sabonete Perdido do Aventureiro",	-- Adventurer's Lost Soap Bar
 	[381510] = "Ossos de Peixe Voador",	-- Flying Fish Bones
 	[381511] = "Cabeça de Arpão",	-- Harpoon Head
+	[381512] = "Vara de Madeira",	-- Wooden Pole
 	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381575] = "Kit de Armadilha de Pato",	-- Duck Trap Kit
@@ -3603,6 +3613,7 @@ for key,value in pairs({
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	[382621] = "Console de Catalisador de Revivescência",	-- Revival Catalyst Console
 	[383625] = "Caixa de Peixe-brilho Fresco",	-- Case of Fresh Gleamfish
 	[383733] = "Poeira Revolvida",	-- Disturbed Dirt
 	[383734] = "Poeira Revolvida",	-- Disturbed Dirt
@@ -3613,7 +3624,6 @@ for key,value in pairs({
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Ovo de Dragão Petrificado",	-- Petrified Dragon Egg
 	[385022] = "Fóssil Corroído",	-- Eroded Fossil
-	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

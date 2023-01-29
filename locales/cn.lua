@@ -1666,6 +1666,13 @@ for key, value in pairs({
 	[209620] = "暗月宝箱",	-- Darkmoon Treasure Chest
 	[209673] = "玉虎立柱",	-- Jade Tiger Pillar
 	[209845] = "极品美酒",	-- Mouthwatering Brew
+	[210005] = "武器架",	-- Weapon Rack
+	--TODO: [210015] = "Weapon Rack",	-- Weapon Rack
+	--TODO: [210016] = "Weapon Rack",	-- Weapon Rack
+	--TODO: [210017] = "Weapon Rack",	-- Weapon Rack
+	--TODO: [210018] = "Weapon Rack",	-- Weapon Rack
+	--TODO: [210019] = "Weapon Rack",	-- Weapon Rack
+	[210020] = "武器架",	-- Weapon Rack
 	[210565] = "黑色泥土",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
 	[211754] = "奇怪的文字",	-- Curious Text
@@ -2651,8 +2658,10 @@ for key, value in pairs({
 	[277344] = "珍贵的奥古雷信物",	-- Precious Augari Keepsakes
 	[277346] = "丢失的奥古雷宝箱",	-- Missing Augari Chest
 	[277373] = "微光海草",	-- Glimmering Seaweed
+	[277384] = "被遗弃的宝藏",	-- Abandoned Treasure
 	[277459] = "猪塑像",	-- Pig Effigy
 	[277561] = "督军的宝箱",	-- Warlord's Cache
+	[277637] = "浸透虚空的宝箱",	-- Void-Seeped Cache
 	[277715] = "纳兹曼尼诅咒宝箱",	-- Cursed Nazmani Chest
 	[277885] = "温加的宝藏",	-- Wunja's Trove
 	--TODO: [277897] = "Seething Cache",	-- Seething Cache
@@ -3593,6 +3602,7 @@ for key, value in pairs({
 	[381485] = "冒险者丢失的肥皂块",	-- Adventurer's Lost Soap Bar
 	--TODO: [381510] = "Flying Fish Bones",	-- Flying Fish Bones
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
+	--TODO: [381512] = "Wooden Pole",	-- Wooden Pole
 	[381513] = "旧镐",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381575] = "鸭子陷阱工具",	-- Duck Trap Kit
@@ -3618,6 +3628,7 @@ for key, value in pairs({
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	[382193] = "元素宝箱",	-- Chest of the Elements
 	[382325] = "玛瑙宝石簇",	-- Onyx Gem Cluster
+	--TODO: [382621] = "Revival Catalyst Console",	-- Revival Catalyst Console
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
 	[383733] = "翻动过的泥土",	-- Disturbed Dirt
 	[383734] = "翻动过的泥土",	-- Disturbed Dirt
@@ -3628,7 +3639,6 @@ for key, value in pairs({
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	--TODO: [385021] = "Petrified Dragon Egg",	-- Petrified Dragon Egg
 	[385022] = "被侵蚀的化石",	-- Eroded Fossil
-	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

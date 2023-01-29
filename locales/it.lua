@@ -1643,6 +1643,13 @@ for key,value in pairs({
 	[209620] = "Baule del Tesoro di Lunacupa",	-- Darkmoon Treasure Chest
 	[209673] = "Statua di Tigre di Giada",	-- Jade Tiger Pillar
 	[209845] = "Birra Ghiotta",	-- Mouthwatering Brew
+	[210005] = "Rastrelliera delle Armi",	-- Weapon Rack
+	--TODO: [210015] = "Weapon Rack",	-- Weapon Rack
+	[210016] = "Rastrelliera delle Armi",	-- Weapon Rack
+	[210017] = "Rastrelliera delle Armi",	-- Weapon Rack
+	--TODO: [210018] = "Weapon Rack",	-- Weapon Rack
+	[210019] = "Rastrelliera delle Armi",	-- Weapon Rack
+	[210020] = "Rastrelliera delle Armi",	-- Weapon Rack
 	[210565] = "Terreno Smosso",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
 	[211754] = "Testo Bizzarro",	-- Curious Text
@@ -2628,8 +2635,10 @@ for key,value in pairs({
 	[277344] = "Ricordi Preziosi degli Augari",	-- Precious Augari Keepsakes
 	[277346] = "Cassa Perduta degli Augari",	-- Missing Augari Chest
 	[277373] = "Alga Marina Luccicante",	-- Glimmering Seaweed
+	[277384] = "Tesoro Abbandonato",	-- Abandoned Treasure
 	[277459] = "Effige del Maiale",	-- Pig Effigy
 	[277561] = "Cassa del Signore della Guerra",	-- Warlord's Cache
+	[277637] = "Cassa con Infiltrazioni di Vuoto",	-- Void-Seeped Cache
 	[277715] = "Cassa Maledetta dei Nazmani",	-- Cursed Nazmani Chest
 	[277885] = "Collezione di Wunja",	-- Wunja's Trove
 	[277897] = "Cassa Ribollente",	-- Seething Cache
@@ -3570,6 +3579,7 @@ for key,value in pairs({
 	[381485] = "Saponetta Perduta dell'Avventuriero",	-- Adventurer's Lost Soap Bar
 	[381510] = "Lische di Pesce Volanti",	-- Flying Fish Bones
 	[381511] = "Punta d'Arpione",	-- Harpoon Head
+	[381512] = "Palo di Legno",	-- Wooden Pole
 	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381575] = "Kit per Trappola per Anatre",	-- Duck Trap Kit
@@ -3595,6 +3605,7 @@ for key,value in pairs({
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	[382193] = "Cassa degli Elementi",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	--TODO: [382621] = "Revival Catalyst Console",	-- Revival Catalyst Console
 	[383625] = "Cassa di Pescilume Freschi",	-- Case of Fresh Gleamfish
 	[383733] = "Terra Smossa",	-- Disturbed Dirt
 	[383734] = "Terra Smossa",	-- Disturbed Dirt
@@ -3605,7 +3616,6 @@ for key,value in pairs({
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Uovo di Drago Pietrificato",	-- Petrified Dragon Egg
 	[385022] = "Fossile Eroso",	-- Eroded Fossil
-	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
