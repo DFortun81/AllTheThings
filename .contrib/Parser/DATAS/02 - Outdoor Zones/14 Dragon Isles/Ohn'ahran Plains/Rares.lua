@@ -195,8 +195,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73973,
 			}),
 			n(193215, {	-- Scaleseeker Mezeri
-				["coord"] = { 20.3, 43.5, OHNAHRAN_PLAINS },
+				["crs"] = { 193224 },	-- Dawnbell
+				["description"] = "Feed Dawnbell at the southern waypoint a Sugarwing Cupcake & then follow her to the rare.",
+				["coords"] = { 
+					{ 16.6, 51.2, OHNAHRAN_PLAINS },	-- Dawnbell
+					{ 20.3, 43.7, OHNAHRAN_PLAINS },	-- Rare
+				},
 				["questID"] = 74073,
+				["cost"] = {{"i", 194681, 1}},	-- Sugarwing Cupcake
 				["g"] = {
 					i(200735),	-- Magically Magical Faerie Flower
 				},
