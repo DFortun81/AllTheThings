@@ -34,9 +34,8 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
-				header(HEADERS.NPC, 36430, {	-- Sally "Salvager" Sandscrew <Slightly Damp Salvage>
-					["crs"] = { 
-						36430,	-- Sally "Salvager" Sandscrew <Slightly Damp Salvage>
+				n(36430, {	-- Sally "Salvager" Sandscrew <Slightly Damp Salvage>
+					["crs"] = {
 						36467,	-- Sally "Salvager" Sandscrew <Slightly Damp Salvage>
 						38511,	-- Sally "Salvager" Sandscrew <Slightly Damp Salvage>
 					},
