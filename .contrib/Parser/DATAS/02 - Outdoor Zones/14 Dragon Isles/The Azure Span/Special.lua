@@ -12,12 +12,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(196165, {	-- Gethdazr
-				["description"] = "Spawns as part of an event involving The Blubberwall that starts by blowing the Great Horn of Imbu at the northern waypoint. The horn will become clickable after killing the Enraged Air Elemental attacking it & you have to support the NPC's otherwise they will die & the event fails.",
+				["description"] = "Spawns as part of an event involving The Blubberwall that starts by blowing the Great Horn of Imbu at the northern waypoint. The horn will become clickable after killing the Enraged Air Elemental & you have to support the NPC's, spawning east of the horn, otherwise they will die & the event fails.",
+				-- check wording
 				["coords"] = {
 					{ 58.9, 66.9, THE_AZURE_SPAN },	-- Event Start
 					{ 56.6, 70.8, THE_AZURE_SPAN },	-- Rare
 				},
-			--	["questID"] = 72278,
+				["questID"] = 74446,
 				["isDaily"] = true,
 				["g"] = {
 					i(200138), -- ancient dancers longspear
