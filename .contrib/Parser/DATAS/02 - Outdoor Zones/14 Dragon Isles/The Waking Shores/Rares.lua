@@ -110,11 +110,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			-- n(193226, {	-- Gorjo the Crab Shackler // under DF/Timed Based Rare
 			n(196056, {	-- Gushgut the Beaksinker
-				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = 70718,
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 52.6, 58.6, THE_WAKING_SHORES },
+				["questID"] = 73879,
+				["g"] = {
+					i(197098),	-- Highland Drake: Finned Back
+					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
+				},
 			}),
 			-- n(186200, {	-- Harkyn Grymstone // under DF/Timed Based Rare
 			n(193263, {	-- Helmet Missingway
@@ -205,9 +206,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(193181, {	-- Skewersnout <Raypier of the Deep>
-				["coord"] = { 39.6, 41.2, THE_WAKING_SHORES },
+				["description"] = "Swims between these 2 coordinates.",
+				["coords"] = { 
+					{ 38.8, 41.6, THE_WAKING_SHORES },
+					{ 48.6, 16.4, THE_WAKING_SHORES },
+				},
 				["questID"] = 73895,
 				["g"] = {
+					i(197022),	-- Cliffside Wylderdrake: Finned Neck
 					i(200132),	-- Skewer's Snout
 					i(200552),	-- Torrent Caller's Shell
 					i(197589),	-- Windborne Velocidrake: Large Head Fin (DM!)

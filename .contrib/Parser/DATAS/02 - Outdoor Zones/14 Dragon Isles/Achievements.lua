@@ -588,7 +588,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 59.0, 75.2, OHNAHRAN_PLAINS },
 			}),
 			crit(15, {	-- Ohn'ahra
-				["cr"] = 194796,
+				["cr"] = 191248,
 				["coord"] = { 57.7, 31.9, OHNAHRAN_PLAINS },
 			}),
 			crit(16, {	-- Palla of the Wing
