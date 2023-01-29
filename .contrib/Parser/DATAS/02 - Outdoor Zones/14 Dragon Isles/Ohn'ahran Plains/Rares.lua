@@ -144,11 +144,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			-- n(193235, {	-- Oshigol // under DF/Timed Based Rare
 			n(191950, {	-- Porta the Overgrown
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
+				["description"] = "Requires 5 Enriched Soil used on the mushroom in the cave at 59.71, 68.10 to spawn this rare. The Enriched Soil can be looted from piles of dirt scattered around the bottom of the lake in Mirror of the Sky and underwater in the surrounding area.",
+				["coord"] = { 59.6, 68.0, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
 			}),
 			n(193669, {	-- Prozela Galeshot
 				["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
@@ -338,11 +336,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(188451, {	-- Zerimek <The Darkened Cloud>
+				["description"] = "Only spawns if the Aylaag Camp is stationed at the north.",
 				["coord"] = { 72.2, 23.2, OHNAHRAN_PLAINS },
 				["questID"] = 73980,
-				-- ["g"] = {
-
-				-- },
 			}),
 			n(193140, {	-- Zarizz
 				["description"] = "Use /hiss on 4 nearby Juvenile Wind Serpents to spawn.",
