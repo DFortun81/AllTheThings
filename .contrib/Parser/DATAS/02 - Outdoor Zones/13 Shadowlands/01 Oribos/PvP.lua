@@ -229,6 +229,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 						i(201875, {	-- Arsenal: Cosmic Aspirant's Weapons
 							["questID"] = 74274,
 							["cost"] = { { "i", MOH, 80 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = {
 								{"select", "tierID", SL_TIER},			-- Select Shadowlands
 								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
@@ -257,29 +258,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 							["questID"] = 74272,
 							["classes"] = CLOTH_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilterDouble(PVP_ASPIRANT, CLOTH),
 						}),
 						i(201843, {	-- Ensemble: Cosmic Aspirant's Leather Armor
 							["questID"] = 74271,
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilterDouble(PVP_ASPIRANT, CLOTH, {192319, 186873}),
 						}),
 						i(201842, {	-- Ensemble: Cosmic Aspirant's Mail Armor
 							["questID"] = 74270,
 							["classes"] = MAIL_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilterDouble(PVP_ASPIRANT, MAIL, {192355, 186909}),
 						}),
 						i(201841, {	-- Ensemble: Cosmic Aspirant's Plate Armor
 							["questID"] = 74269,
 							["classes"] = PLATE_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilterDouble(PVP_ASPIRANT, PLATE, {192390, 186944}),
 						}),
 						i(201877, {	-- Arsenal: Unchained Aspirant's Weapons
 							["questID"] = 74276,
 							["cost"] = { { "i", MOH, 80 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = {
 								{"select", "tierID", SL_TIER},			-- Select Shadowlands
 								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
@@ -295,29 +301,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 							["questID"] = 74255,
 							["classes"] = CLOTH_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, CLOTH),
 						}),
 						i(201859, {	-- Ensemble: Unchained Aspirant's Leather Armor
 							["questID"] = 74253,
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, CLOTH, 185128),
 						}),
 						i(201858, {	-- Ensemble: Unchained Aspirant's Mail Armor
 							["questID"] = 74251,
 							["classes"] = MAIL_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, MAIL, 185205),
 						}),
 						i(201857, {	-- Ensemble: Unchained Aspirant's Plate Armor
 							["questID"] = 74249,
 							["classes"] = PLATE_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, PLATE, 185240),
 						}),
 						i(201878, {	-- Arsenal: Sinful Aspirant's Weapons
 							["questID"] = 74281,
 							["cost"] = { { "i", MOH, 80 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = {
 								{"select", "tierID", SL_TIER},			-- Select Shadowlands
 								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
@@ -333,31 +344,35 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 							["questID"] = 74248,
 							["classes"] = CLOTH_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, CLOTH),
 						}),
 						i(201867, {	-- Ensemble: Sinful Aspirant's Leather Armor
 							["questID"] = 74246,
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, CLOTH, 175851),
 						}),
 						i(201866, {	-- Ensemble: Sinful Aspirant's Mail Armor
 							["questID"] = 74244,
 							["classes"] = MAIL_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, MAIL, 178265),
 						}),
 						i(201865, {	-- Ensemble: Sinful Aspirant's Plate Armor
 							["questID"] = 74242,
 							["classes"] = PLATE_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, PLATE, 178301),
 						}),
-						filter(TRINKET_F, {
+						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_SL_S4 } }, {
 							i(192388),	-- Eternal Aspirant's Insignia of Alacrity
 							i(192412),	-- Eternal Aspirant's Medallion
 							i(192414),	-- Eternal Aspirant's Sigil of Adaptation
-						}),
+						})),
 						header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
 							["g"] = {
@@ -1575,7 +1590,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 							i(182465),	-- Truth's Wake
 							i(182681),	-- Vengeful Shock
 						})),
-						i(201873, {	-- Arsenal: Cosmic Gladiator's Weapons
+						i(201873, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Arsenal: Cosmic Gladiator's Weapons
 							["questID"] = 74273,
 							["cost"] = { { "i", MOH, 80 } },
 							["sym"] = {
@@ -1601,8 +1616,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 
 								{"merge"},								-- Merge the Queue
 							},
-						}),
-						i(201856, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor
+						})),
+						i(201856, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor
 							["questID"] = 74268,
 							["classes"] = { DEATHKNIGHT },
 							["cost"] = { { "i", MOH, 12 } },
@@ -1624,8 +1639,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								186846,
 								186852,
 							}),
-						}),
-						i(201855, {	-- Ensemble: Cosmic Gladiator's Demon Hunter Armor
+							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+								i(188864),	-- Carapace of the First Eidolon
+								i(188866),	-- Chausses of the First Eidolon
+								i(188873),	-- Cloak of the First Eidolon
+								i(188863),	-- Gauntlets of the First Eidolon
+								i(188870),	-- Girdle of the First Eidolon
+								i(188865),	-- Greaves of the First Eidolon
+								i(188867),	-- Shoulderplates of the First
+								i(188869),	-- Vambraces of the First Eidolon
+								i(188868),	-- Visage of the First Eidolon
+							}),
+						})),
+						i(201855, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Ensemble: Cosmic Gladiator's Demon Hunter Armor
 							["questID"] = 74267,
 							["classes"] = { DEMONHUNTER },
 							["cost"] = { { "i", MOH, 12 } },
@@ -1642,8 +1668,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								186813,
 								186821,
 							}),
-						}),
-						i(201854, {	-- Ensemble: Cosmic Gladiator's Druid Armor
+							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+								i(188897),	-- Mercurial Punisher's Belt
+								i(188899),	-- Mercurial Punisher's Boots
+								i(188893),	-- Mercurial Punisher's Breeches
+								i(188898),	-- Mercurial Punisher's Grips
+								i(188892),	-- Mercurial Punisher's Hood
+								i(188894),	-- Mercurial Punisher's Jerkin
+								i(188900),	-- Mercurial Punisher's Mantle
+								i(188896),	-- Mercurial Punisher's Shoulderpads
+								i(188895),	-- Mercurial Punisher's Wristguards
+							}),
+						})),
+						i(201854, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Ensemble: Cosmic Gladiator's Druid Armor
 							["questID"] = 74266,
 							["classes"] = { DRUID },
 							["cost"] = { { "i", MOH, 12 } },
@@ -1658,8 +1695,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								186809,
 								186821,
 							}),
-						}),
-						i(201853, {	-- Ensemble: Cosmic Gladiator's Hunter Armor
+							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+								i(188850),	-- Bracers of the Fixed Stars
+								i(188849),	-- Chestguard of the Fixed Stars
+								i(188852),	-- Cincture of the Fixed Stars
+								i(188854),	-- Footwraps of the Fixed Stars
+								i(188853),	-- Handwraps of the Fixed Stars
+								i(188847),	-- Headpiece of the Fixed Stars
+								i(188848),	-- Leggings of the Fixed Stars
+								i(188851),	-- Shoulderpads of the Fixed Stars
+								i(188871),	-- Wrap of the Fixed Stars
+							}),
+						})),
+						i(201853, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Ensemble: Cosmic Gladiator's Hunter Armor
 							["questID"] = 74265,
 							["classes"] = { HUNTER },
 							["cost"] = { { "i", MOH, 12 } },
@@ -1684,8 +1732,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								186822,
 								186836,
 							}),
-						}),
-						i(201852, {	-- Ensemble: Cosmic Gladiator's Mage Armor
+							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+								i(188872),	-- Godstalker's Camouflage
+								i(188857),	-- Godstalker's Fauld
+								i(188861),	-- Godstalker's Gauntlets
+								i(188858),	-- Godstalker's Hauberk
+								i(188856),	-- Godstalker's Pauldrons
+								i(188862),	-- Godstalker's Sabatons
+								i(188859),	-- Godstalker's Sallet
+								i(188860),	-- Godstalker's Tassets
+								i(188855),	-- Godstalker's Wristwraps
+							}),
+						})),
+						i(201852, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Ensemble: Cosmic Gladiator's Mage Armor
 							["questID"] = 74264,
 							["classes"] = { MAGE },
 							["cost"] = { { "i", MOH, 12 } },
@@ -1700,8 +1759,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								186792,
 								186799,
 							}),
-						}),
-						i(201851, {	-- Ensemble: Cosmic Gladiator's Monk Armor
+							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+								i(188840),	-- Erudite Occultist's Bracers
+								i(188841),	-- Erudite Occultist's Cord
+								i(188845),	-- Erudite Occultist's Handwraps
+								i(188844),	-- Erudite Occultist's Hood
+								i(188842),	-- Erudite Occultist's Leggings
+								i(188843),	-- Erudite Occultist's Mantle
+								i(188839),	-- Erudite Occultist's Robes
+								i(188846),	-- Erudite Occultist's Shroud
+								i(188838),	-- Erudite Occultist's Treads
+							}),
+						})),
+						i(201851, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Ensemble: Cosmic Gladiator's Monk Armor
 							["questID"] = 74263,
 							["classes"] = { MONK },
 							["cost"] = { { "i", MOH, 12 } },
@@ -1715,8 +1785,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								186816,
 								186819,
 							}),
-						}),
-						i(201850, {	-- Ensemble: Cosmic Gladiator's Paladin Armor
+							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+								i(188910),	-- Crown of the Grand Upwelling
+								i(188912),	-- Cuirass of the Grand Upwelling
+								i(188913),	-- Demigaunts of the Grand Upwelling
+								i(188918),	-- Drape of the Grand Upwelling
+								i(188917),	-- Footwraps of the Grand Upwelling
+								i(188916),	-- Grips of the Grand Upwelling
+								i(188911),	-- Legguards of the Grand Upwelling
+								i(188914),	-- Tassets of the Grand Upwelling
+								i(188915),	-- Waistwrap of the Grand Upwelling
+							}),
+						})),
+						i(201850, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Ensemble: Cosmic Gladiator's Paladin Armor
 							["questID"] = 74262,
 							["classes"] = { PALADIN },
 							["cost"] = { { "i", MOH, 12 } },
@@ -1733,8 +1814,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								186841,
 								186853,
 							}),
-						}),
-						i(201849, {	-- Ensemble: Cosmic Gladiator's Priest Armor
+							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+								i(188933),	-- Luminous Chevalier's Casque
+								i(188936),	-- Luminous Chevalier's Drape
+								i(188932),	-- Luminous Chevalier's Epaulettes
+								i(188928),	-- Luminous Chevalier's Gauntlets
+								i(188935),	-- Luminous Chevalier's Girdle
+								i(188929),	-- Luminous Chevalier's Plackart
+								i(188931),	-- Luminous Chevalier's Robes
+								i(188930),	-- Luminous Chevalier's Spurs
+								i(188934),	-- Luminous Chevalier's Vambraces
+							}),
+						})),
+						i(201849, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Ensemble: Cosmic Gladiator's Priest Armor
 							["questID"] = 74261,
 							["classes"] = { PRIEST },
 							["cost"] = { { "i", MOH, 12 } },
@@ -1754,8 +1846,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								186791,
 								186804,
 							}),
-						}),
-						i(201848, {	-- Ensemble: Cosmic Gladiator's Rogue Armor
+							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+								i(188880),	-- Amice of the Empyrean
+								i(188876),	-- Bracelets of the Empyrean
+								i(188879),	-- Capelet of the Empyrean
+								i(188881),	-- Caress of the Empyrean
+								i(188882),	-- Drape of the Empyrean
+								i(188875),	-- Habit of the Empyrean
+								i(188878),	-- Leggings of the Empyrean
+								i(188877),	-- Sash of the Empyrean
+								i(188874),	-- Slippers of the Empyrean
+							}),
+						})),
+						i(201848, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Ensemble: Cosmic Gladiator's Rogue Armor
 							["questID"] = 74260,
 							["classes"] = { ROGUE },
 							["cost"] = { { "i", MOH, 12 } },
@@ -1770,8 +1873,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								186817,
 								186806,
 							}),
-						}),
-						i(201847, {	-- Ensemble: Cosmic Gladiator's Shaman Armor
+							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+								i(188906),	-- Soulblade Baldric
+								i(188909),	-- Soulblade Cloak
+								i(188908),	-- Soulblade Footpads
+								i(188907),	-- Soulblade Grasps
+								i(188901),	-- Soulblade Guise
+								i(188903),	-- Soulblade Leathers
+								i(188902),	-- Soulblade Leggings
+								i(188905),	-- Soulblade Nightwings
+								i(188904),	-- Soulblade Wristguard
+							}),
+						})),
+						i(201847, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Ensemble: Cosmic Gladiator's Shaman Armor
 							["questID"] = 74259,
 							["classes"] = { SHAMAN },
 							["cost"] = { { "i", MOH, 12 } },
@@ -1794,8 +1908,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								186833,
 								186823,
 							}),
-						}),
-						i(201846, {	-- Ensemble: Cosmic Gladiator's Warlock Armor
+							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+								i(188920),	-- Theurgic Starspeaker's Adornment
+								i(188921),	-- Theurgic Starspeaker's Belt
+								i(188919),	-- Theurgic Starspeaker's Bracers
+								i(188923),	-- Theurgic Starspeaker's Howl
+								i(188922),	-- Theurgic Starspeaker's Ringmail
+								i(188925),	-- Theurgic Starspeaker's Runebindings
+								i(188926),	-- Theurgic Starspeaker's Sabatons
+								i(188927),	-- Theurgic Starspeaker's Shawl
+								i(188924),	-- Theurgic Starspeaker's Tassets
+							}),
+						})),
+						i(201846, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Ensemble: Cosmic Gladiator's Warlock Armor
 							["questID"] = 74258,
 							["classes"] = { WARLOCK },
 							["cost"] = { { "i", MOH, 12 } },
@@ -1815,8 +1940,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								186790,
 								186793,
 							}),
-						}),
-						i(201845, {	-- Ensemble: Cosmic Gladiator's Warrior Armor
+							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+								i(188885),	-- Bangles of the Demon Star
+								i(188883),	-- Boots of the Demon Star
+								i(188891),	-- Cape of the Demon Star
+								i(188890),	-- Grasps of the Demon Star
+								i(188889),	-- Horns of the Demon Star
+								i(188887),	-- Leggings of the Demon Star
+								i(188888),	-- Mantle of the Demon Star
+								i(188884),	-- Robes of the Demon Star
+								i(188886),	-- Waistwrap of the Demon Star
+							}),
+						})),
+						i(201845, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL } }, {	-- Ensemble: Cosmic Gladiator's Warrior Armor
 							["questID"] = 74257,
 							["classes"] = { WARRIOR },
 							["cost"] = { { "i", MOH, 12 } },
@@ -1832,10 +1968,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								186840,
 								186847,
 							}),
-						}),
+							["g"] = sharedData({ ["bonusID"] = 6894 }, {
+								i(188938),	-- Breastplate of the Infinite Infantry
+								i(188945),	-- Favor of the Infinite Infantry
+								i(188942),	-- Gaze of the Infinite Infantry
+								i(188937),	-- Grasps of the Infinite Infantry
+								i(188944),	-- Greatbelt of the Infinite Infantry
+								i(188940),	-- Legplates of the Infinite Infantry
+								i(188939),	-- March of the Infinite Infantry
+								i(188941),	-- Pauldrons of the Infinite Infantry
+								i(188943),	-- Vambraces of the Infinite Infantry
+							}),
+						})),
 						i(201876, {	-- Arsenal: Unchained Gladiator's Weapons
 							["questID"] = 74275,
 							["cost"] = { { "i", MOH, 80 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = {
 								{"select", "tierID", SL_TIER},			-- Select Shadowlands
 								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
@@ -1851,29 +1999,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 							["questID"] = 74256,
 							["classes"] = CLOTH_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_GLADIATOR, CLOTH, 185164),
 						}),
 						i(201863, {	-- Ensemble: Unchained Gladiator's Leather Armor
 							["questID"] = 74254,
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_GLADIATOR, CLOTH, 185245),
 						}),
 						i(201862, {	-- Ensemble: Unchained Gladiator's Mail Armor
 							["questID"] = 74252,
 							["classes"] = MAIL_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_GLADIATOR, MAIL, 185280),
 						}),
 						i(201861, {	-- Ensemble: Unchained Gladiator's Plate Armor
 							["questID"] = 74250,
 							["classes"] = PLATE_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_GLADIATOR, PLATE, 185313),
 						}),
 						i(201882, {	-- Arsenal: Sinful Gladiator's Ardenweald Weapons
 							["questID"] = 74280,
 							["cost"] = { { "i", MOH, 80 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = {
 								{"select", "tierID", SL_TIER},			-- Select Shadowlands
 								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
@@ -1890,6 +2043,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 						i(201881, {	-- Arsenal: Sinful Gladiator's Bastion Weapons
 							["questID"] = 74279,
 							["cost"] = { { "i", MOH, 80 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = {
 								{"select", "tierID", SL_TIER},			-- Select Shadowlands
 								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
@@ -1906,6 +2060,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 						i(201880, {	-- Arsenal: Sinful Gladiator's Maldraxxus Weapons
 							["questID"] = 74278,
 							["cost"] = { { "i", MOH, 80 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = {
 								{"select", "tierID", SL_TIER},			-- Select Shadowlands
 								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
@@ -1922,6 +2077,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 						i(201879, {	-- Arsenal: Sinful Gladiator's Revendreth Weapons
 							["questID"] = 74277,
 							["cost"] = { { "i", MOH, 80 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = {
 								{"select", "tierID", SL_TIER},			-- Select Shadowlands
 								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
@@ -1939,24 +2095,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 							["questID"] = 74241,
 							["classes"] = CLOTH_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_GLADIATOR, CLOTH, 175888),
 						}),
 						i(201871, {	-- Ensemble: Sinful Gladiator's Leather Armor
 							["questID"] = 74247,
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_GLADIATOR, CLOTH, 178353),
 						}),
 						i(201870, {	-- Ensemble: Sinful Gladiator's Mail Armor
 							["questID"] = 74245,
 							["classes"] = MAIL_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_GLADIATOR, MAIL, 178414),
 						}),
 						i(201869, {	-- Ensemble: Sinful Gladiator's Plate Armor
 							["questID"] = 74243,
 							["classes"] = PLATE_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
+							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_GLADIATOR, PLATE, 184311),
 						}),
 						header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDown({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {

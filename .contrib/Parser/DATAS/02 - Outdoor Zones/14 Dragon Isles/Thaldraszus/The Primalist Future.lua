@@ -5,7 +5,7 @@ local ESSENCE_OF_THE_STORM = 202039;
 local ELEMENTAL_OVERFLOW = 2118;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THALDRASZUS, {
-		header(HEADERS.Map, THE_PRIMALIST_FUTURE, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
+		m(THE_PRIMALIST_FUTURE, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 			n(ACHIEVEMENTS, {
 				ach(17343),	-- Drop It Like It's Hot
 				ach(17342, {	-- The Future We Make
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 								{ "c", ELEMENTAL_OVERFLOW, 750 },
 							},
 						}),
-						i(202915, {	-- Sands of Temporal Perfection
+						i(202015, {	-- Sands of Temporal Perfection
 							["cost"] = {
 								{ "i", ESSENCE_OF_THE_STORM, 45 },
 								{ "c", ELEMENTAL_OVERFLOW, 1000 },

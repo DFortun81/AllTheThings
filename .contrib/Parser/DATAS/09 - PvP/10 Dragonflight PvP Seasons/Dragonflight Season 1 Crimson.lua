@@ -22,8 +22,12 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, {
 				ach(15956),		-- Challenger II: Dragonflight Season 1
 				ach(15952),		-- Rival I: Dragonflight Season 1
 				ach(15953),		-- Rival II: Dragonflight Season 1
-				ach(15954),		-- Duelist: Dragonflight Season 1
-				ach(15984),		-- Elite: Dragonflight Season 1
+				ach(15954, {	-- Duelist: Dragonflight Season 1
+					i(202089, {["timeline"] = { ADDED_DF_0_5 }}),	-- Crimson Gladiator's Prestigious Cloak
+				}),
+				ach(15984, {	-- Elite: Dragonflight Season 1
+					i(202090, {["timeline"] = { ADDED_DF_0_5 }}),	-- Crimson Gladiator's Tabard
+				}),
 				ach(15957, {	-- Gladiator: Dragonflight Season 1
 					i(202086),	-- Crimson Gladiator's Drake (MOUNT!)
 					i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)

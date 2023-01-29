@@ -20,7 +20,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 	}),
 	n(SPECIAL, {
 		i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
-			["description"] = "This is rewarded for earning 1000 Trader's Tender in a month.",
+			["description"] = "This is rewarded for earning 1000 Trader's Tender in the first month.",
 		}),
 	}),
 	n(VENDORS, {
