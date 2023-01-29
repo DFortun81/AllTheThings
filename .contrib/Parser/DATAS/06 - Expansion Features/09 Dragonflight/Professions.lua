@@ -118,14 +118,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			}),
 			q(70126, {	-- A Finishing Touch
 				["sourceQuests"] = {
-					67143,	-- To Give One's Heart
-					67137,	-- Professionally Equipped
+					69979,	-- A Worthy Hunt
+					67298,	-- The Wonders of the World
 				},
 				["provider"] = { "n", 192539 },	-- Miguel Bright
-				["coords"] = {
-					{ 60.2, 72.2, THE_WAKING_SHORES },
-					{ 71.7, 81.2, OHNAHRAN_PLAINS },
-				},
+				["coord"] = { 39.4, 69.8, VALDRAKKEN },
+				["description"] = "Even though Miguel can be found in numerous places around the Dragon Isles, this quest is only offered in Valdrakken once the Dragon Shard of Knowledge chain has been completed.",
 				["g"] = {
 					i(197765),	-- Impossibly Sharp Cutting Knife
 					i(191516),	-- Brood Salt
@@ -1133,6 +1131,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					72242,	-- Dragon Isles Engineering
 					70359,	-- Dragon Isles Engineering
 				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
 				["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
 				["cost"] = { { "i", 198328, 1 }, },	-- 2xQuality-Assured Optics
