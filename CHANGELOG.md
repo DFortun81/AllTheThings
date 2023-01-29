@@ -1,7 +1,7 @@
 # AllTheThings
 
-## [DF-3.1.17](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.17) (2023-01-29)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.16a...DF-3.1.17) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.2.0](https://github.com/DFortun81/AllTheThings/tree/DF-3.2.0) (2023-01-29)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.16a...DF-3.2.0) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
 ### Poor/common transmog appearances
