@@ -1652,12 +1652,12 @@ for key,value in pairs({
 	[209673] = "비취 호랑이 기둥",	-- Jade Tiger Pillar
 	[209845] = "군침도는 맥주",	-- Mouthwatering Brew
 	[210005] = "무기 선반",	-- Weapon Rack
-	--TODO: [210015] = "Weapon Rack",	-- Weapon Rack
+	[210015] = "무기 선반",	-- Weapon Rack--TODO: this was manually translated
 	[210016] = "무기 선반",	-- Weapon Rack
-	--TODO: [210017] = "Weapon Rack",	-- Weapon Rack
-	--TODO: [210018] = "Weapon Rack",	-- Weapon Rack
-	--TODO: [210019] = "Weapon Rack",	-- Weapon Rack
-	--TODO: [210020] = "Weapon Rack",	-- Weapon Rack
+	[210017] = "무기 선반",	-- Weapon Rack--TODO: this was manually translated
+	[210018] = "무기 선반",	-- Weapon Rack--TODO: this was manually translated
+	[210019] = "무기 선반",	-- Weapon Rack--TODO: this was manually translated
+	[210020] = "무기 선반",	-- Weapon Rack--TODO: this was manually translated
 	[210565] = "검은 토양",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
 	[211754] = "수수께끼의 문서",	-- Curious Text

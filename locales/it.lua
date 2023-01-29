@@ -1644,10 +1644,10 @@ for key,value in pairs({
 	[209673] = "Statua di Tigre di Giada",	-- Jade Tiger Pillar
 	[209845] = "Birra Ghiotta",	-- Mouthwatering Brew
 	[210005] = "Rastrelliera delle Armi",	-- Weapon Rack
-	--TODO: [210015] = "Weapon Rack",	-- Weapon Rack
+	[210015] = "Rastrelliera delle Armi",	-- Weapon Rack--TODO: this was manually translated
 	[210016] = "Rastrelliera delle Armi",	-- Weapon Rack
 	[210017] = "Rastrelliera delle Armi",	-- Weapon Rack
-	--TODO: [210018] = "Weapon Rack",	-- Weapon Rack
+	[210018] = "Rastrelliera delle Armi",	-- Weapon Rack--TODO: this was manually translated
 	[210019] = "Rastrelliera delle Armi",	-- Weapon Rack
 	[210020] = "Rastrelliera delle Armi",	-- Weapon Rack
 	[210565] = "Terreno Smosso",	-- Dark Soil
