@@ -1520,7 +1520,7 @@ for key,value in pairs({
 	[194423] = "Gestohlene Einladung zum Turnier",	-- Stolen Tournament Invitation
 	[194424] = "Befehle des Schwarzen Ritters",	-- Black Knight's Orders
 	--TODO: [194461] = "Stone Block",	-- Stone Block
-	--TODO: [194463] = "Small Stone Block",	-- Small Stone Block
+	[194463] = "Kleiner Steinblock",	-- Small Stone Block	--TODO: This was taken from wotlk Wowhead
 	[194479] = "Blut im Wasser",	-- Pool of Blood
 	[194537] = "Sir Wendells Grab",	-- Sir Wendell's Grave
 	[194538] = "Conalls Grab",	-- Connall's Grave
@@ -3601,7 +3601,7 @@ for key,value in pairs({
 	[381664] = "Anfrage des Archivars",	-- Archivists' Request
 	[381667] = "Anfrage des Archivars",	-- Archivists' Request
 	[381668] = "Anfrage des Archivars",	-- Archivists' Request
-	[381669] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
+	[381669] = "Anfrage des Archivars",	-- Archivists' Request
 	[381670] = "Anfrage des Archivars",	-- Archivists' Request
 	[381671] = "Anfrage des Archivars",	-- Archivists' Request
 	[381672] = "Anfrage des Archivars",	-- Archivists' Request

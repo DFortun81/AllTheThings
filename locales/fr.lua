@@ -3454,7 +3454,7 @@ for key,value in pairs({
 	[376175] = "Coffre de fournitures des Gréements",	-- Fullsails Supply Chest
 	[376213] = "Baguette mystérieuse",	-- Mysterious Wand
 	[376386] = "Terre retournée",	-- Disturbed Dirt
-	--TODO: [376426] = "Magic-Bound Chest",	-- Magic-Bound Chest
+	[376426] = "Coffre lié par magie",	-- Magic-Bound Chest
 	[376451] = "Chronomètre de bronze",	-- Bronze Stopwatch
 	[376580] = "Cache djaradine",	-- Djaradin Cache
 	[376581] = "Coffre clanique",	-- Clan Chest
@@ -3513,7 +3513,7 @@ for key,value in pairs({
 	[380586] = "Chaudrons mystérieux",	-- Mysterious Cauldrons
 	[380587] = "Caisse de peaux traitées",	-- Crate of Treated Hides
 	[380588] = "Bannière du Vol de bronze miniature",	-- Miniature Bronze Dragonflight Banner
-	--TODO: [380589] = "Faintly Enchanted Remains",	-- Faintly Enchanted Remains
+	[380589] = "Restes légèrement enchantés",	-- Faintly Enchanted Remains
 	[380590] = "Tasse bien isolée",	-- Well Insulated Mug
 	[380591] = "Trésor jalousement gardé",	-- Closely Guarded Shiny
 	[380592] = "Corne tempétueuse",	-- Stormbound Horn
@@ -3607,11 +3607,11 @@ for key,value in pairs({
 	[381701] = "ON RECHERCHE : Mara’nar l’Orageux",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "Coffre du déluge",	-- Chest of the Flood
 	[382029] = "Terre retournée",	-- Disturbed Dirt
-	[382071] = "Filet de pêche plein",	-- Full Fishing Net	--TODO: this was manually translated
+	[382071] = "Filet de pêche plein",	-- Full Fishing Net
 	[382166] = "Au Festin rubis !",	-- The Ruby Feast!
 	[382180] = "Banc de requins-renards magmatiques surchauffé",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
-	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	[382325] = "Amas de gemmes d’onyx",	-- Onyx Gem Cluster
 	[382621] = "Console de catalyseur de rétablissement",	-- Revival Catalyst Console
 	[383625] = "Caisse de loupiotes fraîches",	-- Case of Fresh Gleamfish
 	[383733] = "Terre retournée",	-- Disturbed Dirt
