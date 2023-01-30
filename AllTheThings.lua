@@ -5324,19 +5324,22 @@ local function DetermineNPCDrops(group)
 		end
 	end
 end
--- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
-local function FillGroupsRecursive(group, FillData)
-	-- app.PrintDebug("FillGroups",group.hash,depth)
-	if group.skipFilling then return; end
+local function SkipFillingGroup(group)
+	if group.skipFilling then return true; end
 	-- do not fill 'saved' groups in ATT tooltips
 	-- or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT then
 		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
-		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then return; end
+		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID or group.encounterID) then return true; end
 		local parent = group.parent;
 		-- parent is a saved quest, then do not fill with stuff
-		if parent and parent.questID and parent.saved then return; end
+		if parent and parent.questID and parent.saved then return true; end
 	end
+end
+-- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
+local function FillGroupsRecursive(group, FillData)
+	-- app.PrintDebug("FillGroups",group.hash,depth)
+	if SkipFillingGroup(group) then return; end
 
 	-- app.PrintDebug("FillGroups",group.hash,depth)
 	-- increment depth if things are being nested
@@ -5372,16 +5375,7 @@ end
 -- over multiple frames to reduce stutter
 local function FillGroupsRecursiveAsync(group, FillData)
 	-- app.PrintDebug("FillGroupsAsync",group.hash,depth)
-	if group.skipFilling then return; end
-	-- do not fill 'saved' groups in ATT windows
-	-- or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT then
-		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
-		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then return; end
-		local parent = group.parent;
-		-- parent is a saved quest, then do not fill with stuff
-		if parent and parent.questID and parent.saved then return; end
-	end
+	if SkipFillingGroup(group) then return; end
 
 	-- increment depth if things are being nested
 	FillData.Depth = FillData.Depth + 1;
