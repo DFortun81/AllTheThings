@@ -221,41 +221,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			})),
 
-			-- 3.1.2
-			tier(WOTLK_TIER, 1.2, bubbleDownSelf({ ["timeline"] = {"created 3.1.2"} }, {
-				i(46755, {	-- Great Golden Kodo / Great Golden Kodo (MOUNT!)
-					["modelID"] = 28556,
-				}),
-				i(46756, {	-- Great Red Elekk / Great Red Elekk (MOUNT!)
-					["modelID"] = 28606,
-				}),
-				i(46749, {	-- Swift Burgundy Wolf / Swift Burgundy Wolf (MOUNT!)
-					["modelID"] = 14335,
-				}),
-				i(46758, {	-- Swift Gray Steed / Swift Gray Steed (MOUNT!)
-					["modelID"] = 29043,
-					["_drop"] = { "spellID", "mountID" },
-				}),
-				i(46759, {	-- Swift Moonsaber / Swift Moonsaber (MOUNT!)
-					["modelID"] = 14333,
-				}),
-				i(46760, {	-- Swift Purple Raptor / Swift Purple Raptor (MOUNT!)
-					["modelID"] = 14343,
-				}),
-				i(46761, {	-- Swift Red Hawkstrider / Swift Red Hawkstrider (MOUNT!)
-					["modelID"] = 28607,
-				}),
-				i(46762, {	-- Swift Violet Ram / Swift Violet Ram (MOUNT!)
-					["modelID"] = 28612,
-				}),
-				i(46763, {	-- Turbostride / Turbostrider (MOUNT!)
-					["modelID"] = 14375,
-				}),
-				i(46764, {	-- White Skeletal Warhorse / White Skeletal Warhorse (MOUNT!)
-					["modelID"] = 28605
-				}),
-			})),
-
 			-- 3.1.3
 			tier(WOTLK_TIER, 1.3, bubbleDownSelf({ ["timeline"] = {"created 3.1.3"} }, {
 				mount(66122, {	-- Magic Rooster (MOUNT!)

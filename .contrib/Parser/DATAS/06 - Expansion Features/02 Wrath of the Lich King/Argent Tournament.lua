@@ -4039,7 +4039,18 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						i(45574),	-- Stormwind Tabard
 						-- #endif
 						champ(100, i(45125)),	-- Stormwind Steed (MOUNT!)
-						champ(5, gold(500, i(46752))),	-- Swift Gray Steed (MOUNT!)
+						champ(5, gold(500, i(46752, {	-- Swift Gray Steed (MOUNT!)
+							-- #if BEFORE 7.3.5
+							["_drop"] = { "races" },
+							["races"] = { HUMAN },
+							-- #endif
+						}))),
+						champ(5, gold(500, i(46758, {	-- Swift Gray Steed (MOUNT!)
+							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							-- #if BEFORE 7.3.5
+							["races"] = exclude(HUMAN, ALLIANCE_ONLY),
+							-- #endif
+						}))),
 						champ(40, i(44974)),	-- Elwynn Lamb Pet (PET!)
 						champ(15, i(45011)),	-- Stormwind Banner (TOY!)
 					},
@@ -4358,7 +4369,18 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						i(45577),	-- Ironforge Tabard
 						-- #endif
 						champ(100, i(45586)),	-- Ironforge Ram (MOUNT!)
-						champ(5, gold(500, i(46748))),	-- Swift Violet Ram (MOUNT!)
+						champ(5, gold(500, i(46748, {	-- Swift Violet Ram (MOUNT!)
+							-- #if BEFORE 7.3.5
+							["_drop"] = { "races" },
+							["races"] = { DWARF },
+							-- #endif
+						}))),
+						champ(5, gold(500, i(46762, {	-- Swift Violet Ram (MOUNT!)
+							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							-- #if BEFORE 7.3.5
+							["races"] = exclude(DWARF, ALLIANCE_ONLY),
+							-- #endif
+						}))),
 						champ(40, i(44970)),	-- Dun Morogh Cub (PET!)
 						champ(15, i(45018)),	-- Ironforge Banner (TOY!)
 					},
@@ -4374,7 +4396,18 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						i(45584),	-- Thunder Bluff Tabard
 						-- #endif
 						champ(100, i(45592)),	-- Thunder Bluff Kodo (MOUNT!)
-						champ(5, gold(500, i(46750))),	-- Great Golden Kodo (MOUNT!)
+						champ(5, gold(500, i(46750, {	-- Great Golden Kodo (MOUNT!)
+							-- #if BEFORE 7.3.5
+							["_drop"] = { "races" },
+							["races"] = { TAUREN },
+							-- #endif
+						}))),
+						champ(5, gold(500, i(46755, {	-- Great Golden Kodo (MOUNT!)
+							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							-- #if BEFORE 7.3.5
+							["races"] = exclude(TAUREN, HORDE_ONLY),
+							-- #endif
+						}))),
 						champ(40, i(44980)),	-- Mulgore Hatchling (PET!)
 						champ(15, i(45013)),	-- Thunder Bluff Banner (TOY!)
 					},
@@ -4390,7 +4423,18 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						i(45583),	-- Undercity Tabard
 						-- #endif
 						champ(100, i(45597)),	-- Forsaken Warhorse (MOUNT!)
-						champ(5, gold(500, i(46746))),	-- White Skeletal Warhorse (MOUNT!)
+						champ(5, gold(500, i(46746, {	-- White Skeletal Warhorse (MOUNT!)
+							-- #if BEFORE 7.3.5
+							["_drop"] = { "races" },
+							["races"] = { UNDEAD },
+							-- #endif
+						}))),
+						champ(5, gold(500, i(46764, {	-- White Skeletal Warhorse (MOUNT!)
+							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							-- #if BEFORE 7.3.5
+							["races"] = exclude(UNDEAD, HORDE_ONLY),
+							-- #endif
+						}))),
 						champ(40, i(44971)),	-- Tirisfal Batling (PET!)
 						champ(15, i(45016)),	-- Undercity Banner (TOY!)
 					},
@@ -4414,7 +4458,18 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						i(45581),	-- Orgrimmar Tabard
 						-- #endif
 						champ(100, i(45595)),	-- Orgrimmar Wolf (MOUNT!)
-						champ(5, gold(500, i(46757))),	-- Swift Burgundy Wolf (MOUNT!)
+						champ(5, gold(500, i(46757, {	-- Swift Burgundy Wolf (MOUNT!)
+							-- #if BEFORE 7.3.5
+							["_drop"] = { "races" },
+							["races"] = { ORC },
+							-- #endif
+						}))),
+						champ(5, gold(500, i(46749, {	-- Swift Burgundy Wolf (MOUNT!)
+							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							-- #if BEFORE 7.3.5
+							["races"] = exclude(ORC, HORDE_ONLY),
+							-- #endif
+						}))),
 						champ(40, i(44973)),	-- Durotar Scorpion (PET!)
 						champ(15, i(45014)),	-- Orgrimmar Banner (TOY!)
 					},
@@ -4441,7 +4496,18 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						i(45580),	-- Exodar Tabard
 						-- #endif
 						champ(100, i(45590)),	-- Exodar Elekk (MOUNT!)
-						champ(5, gold(500, i(46745))),	-- Great Red Elekk (MOUNT!)
+						champ(5, gold(500, i(46745, {	-- Great Red Elekk (MOUNT!)
+							-- #if BEFORE 7.3.5
+							["_drop"] = { "races" },
+							["races"] = { DRAENEI },
+							-- #endif
+						}))),
+						champ(5, gold(500, i(46756, {	-- Great Red Elekk (MOUNT!)
+							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							-- #if BEFORE 7.3.5
+							["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
+							-- #endif
+						}))),
 						champ(40, i(44984)),	-- Ammen Vale Lashling (PET!)
 						champ(15, i(45020)),	-- Exodar Banner (TOY!)
 					},
@@ -4588,7 +4654,18 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						i(45578),	-- Gnomeregan Tabard
 						-- #endif
 						champ(100, i(45589)),	-- Gnomeregan Mechanostrider (MOUNT!)
-						champ(5, gold(500, i(46747))),	-- Turbostrider (MOUNT!)
+						champ(5, gold(500, i(46747, {	-- Turbostrider (MOUNT!)
+							-- #if BEFORE 7.3.5
+							["_drop"] = { "races" },
+							["races"] = { GNOME },
+							-- #endif
+						}))),
+						champ(5, gold(500, i(46763, {	-- Turbostrider (MOUNT!)
+							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							-- #if BEFORE 7.3.5
+							["races"] = exclude(GNOME, ALLIANCE_ONLY),
+							-- #endif
+						}))),
 						champ(40, i(45002)),	-- Mechanopeep (PET!)
 						champ(15, i(45019)),	-- Gnomeregan Banner (TOY!)
 					},
@@ -4604,7 +4681,18 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						i(45579),	-- Darnassus Tabard
 						-- #endif
 						champ(100, i(45591)),	-- Darnassian Nightsaber (MOUNT!)
-						champ(5, gold(500, i(46744))),	-- Swift Moonsaber (MOUNT!)
+						champ(5, gold(500, i(46744, {	-- Swift Moonsaber (MOUNT!)
+							-- #if BEFORE 7.3.5
+							["_drop"] = { "races" },
+							["races"] = { NIGHTELF },
+							-- #endif
+						}))),
+						champ(5, gold(500, i(46759, {	-- Swift Moonsaber (MOUNT!)
+							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							-- #if BEFORE 7.3.5
+							["races"] = exclude(NIGHTELF, ALLIANCE_ONLY),
+							-- #endif
+						}))),
 						champ(40, i(44965)),	-- Teldrassil Sproutling (PET!)
 						champ(15, i(45021)),	-- Darnassus Banner (TOY!)
 					},
@@ -4620,7 +4708,18 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						i(45582),	-- Darkspear Tabard
 						-- #endif
 						champ(100, i(45593)),	-- Darkspear Raptor (MOUNT!)
-						champ(5, gold(500, i(46743))),	-- Swift Purple Raptor (MOUNT!)
+						champ(5, gold(500, i(46743, {	-- Swift Purple Raptor (MOUNT!)
+							-- #if BEFORE 7.3.5
+							["_drop"] = { "races" },
+							["races"] = { TROLL },
+							-- #endif
+						}))),
+						champ(5, gold(500, i(46760, {	-- Swift Purple Raptor (MOUNT!)
+							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							-- #if BEFORE 7.3.5
+							["races"] = exclude(TROLL, HORDE_ONLY),
+							-- #endif
+						}))),
 						champ(40, i(45606)),	-- Sen'jin Fetish (PET!)
 						champ(15, i(45015)),	-- Sen'jin Banner (TOY!)
 					},
@@ -4636,7 +4735,18 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						i(45585),	-- Silvermoon City Tabard
 						-- #endif
 						champ(100, i(45596)),	-- Silvermoon Hawkstrider (MOUNT!)
-						champ(5, gold(500, i(46751))),	-- Swift Red Hawkstrider (MOUNT!)
+						champ(5, gold(500, i(46751, {	-- Swift Red Hawkstrider (MOUNT!)
+							-- #if BEFORE 7.3.5
+							["_drop"] = { "races" },
+							["races"] = { BLOODELF },
+							-- #endif
+						}))),
+						champ(5, gold(500, i(46761, {	-- Swift Red Hawkstrider (MOUNT!)
+							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							-- #if BEFORE 7.3.5
+							["races"] = exclude(BLOODELF, HORDE_ONLY),
+							-- #endif
+						}))),
 						champ(40, i(44982)),	-- Enchanted Broom (PET!)
 						champ(15, i(45017)),	-- Silvermoon City Banner (TOY!)
 					},
