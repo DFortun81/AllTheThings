@@ -62,14 +62,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 		--	n(193170, {	-- Fulgurb // under DF/Timed Based Rare
-			n(201537, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Groffnar
+			n(201537, {	-- Groffnar
 				["coord"] = { 35.0, 41.1, OHNAHRAN_PLAINS },
 				["questID"] = 74549,
 				["isDaily"] = true,
 				["g"] = {
 					i(203671),	-- Pack Leader's Pelt
 				},
-			})),
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
 			n(187781, {	-- Hamett <Rockfang Matriarch>
 				["description"] = "Only available if the Aylaag Camp is stationed north.\nChance to spawn upon killing Sutaan.",
 				["coord"] = { 85.4, 15.8, OHNAHRAN_PLAINS },
@@ -85,14 +86,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 
 				-- },
 			}),
-			n(201538, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Huntmaster Yrgena
+			n(201538, {	-- Huntmaster Yrgena
 				["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
 				["questID"] = 74466,
 				["isDaily"] = true,
 				["g"] = {
 					i(203672),	-- Master Huntmaster's Wristguards
 				},
-			})),
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
 			n(188124, {	-- Irontree
 				["description"] = "Only spawns if the Aylaag Camp is stationed north.\nCave Entrance: 79.2, 36.6.",
 				["coords"] = { 
@@ -114,14 +116,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(197106),	-- Highland Drake: Finned Head (DM!)
 				},
 			}),
-			n(201540, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Lurgan
+			n(201540, { -- Lurgan
 				["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
 				["questID"] = 74464,
 				["isDaily"] = true,
 				["g"] = {
 					i(203674),	-- Brutal Tramplers
 				},
-			})),
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
 			n(195409, {	-- Makhra the Ashtouched <Corrupted Child of Ohn'ahra>
 				["description"] = "Only spawns if the Aylaag Camp is stationed west.",
 				["coord"] = { 32.7, 38.1, OHNAHRAN_PLAINS },
