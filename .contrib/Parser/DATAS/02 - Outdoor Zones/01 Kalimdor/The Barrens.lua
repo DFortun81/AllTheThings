@@ -11,6 +11,11 @@ _.Zones = {
 					["sourceQuest"] = 893,	-- Weapons of Choice
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						i(6741, {	-- Orcish War Sword
+							["timeline"] = { "removed 4.0.3.2000" },
+						}),
+					},
 				}),
 				q(879,   {	-- Betrayal from Within
 					["u"] = REMOVED_FROM_GAME,

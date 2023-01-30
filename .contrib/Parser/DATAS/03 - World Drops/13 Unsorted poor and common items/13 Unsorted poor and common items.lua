@@ -1366,8 +1366,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			}),
 			filter(MISC, {
 				i(34828),	-- Antique Silver Cufflinks
-				i(92894),	-- Art Template Generic Head - Helm_Misc_StarPartyHat_A_01
-				i(81862),	-- Art Template Robe Dress_B_03 - Blue
 				i(33047),	-- Belbi's Eyesight Enhancing Romance Goggles
 				i(6835),	-- Black Tuxedo Pants
 				i(34008),	-- Blix's Eyesight Enhancing Romance Goggles
@@ -1398,11 +1396,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(44648),	-- Purple Turban
 				i(156725),	-- Red Crystal Monocle
 				i(22277),	-- Red Dinner Suit
-				i(13899),	-- Red Traditional Hanbok
 				i(34085),	-- Red Winter Clothes
-				i(13898),	-- Royal Dangui
-				i(10053),	-- Simple Black Dress
-				i(6786),	-- Simple Dress
 				i(38160),	-- Soul-Trader's Bindings
 				i(38162),	-- Soul-Trader's Boots
 				i(38161),	-- Soul-Trader's Gloves
@@ -1413,10 +1407,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(30721),	-- Spectrecles
 				i(46735),	-- Synthebrew Goggles
 				i(44647),	-- Violet Hat
-				i(13897),	-- White Traditional Hanbok
-				i(6787),	-- White Woolen Dress
 				i(34086),	-- Winter Boots
-				i(156726),	-- Yellow Crystal Monocle
 			}),
 			filter(NECK_F, {
 				i(16787),	-- Amulet of Draconic Subversion
@@ -1464,7 +1455,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(3293),	-- Deadman Cleaver
 				i(927),		-- Double Axe
 				i(2530),	-- Francisca
-				i(2260),	-- Frostmane Hand Axe
 				i(2134),	-- Hand Axe
 				i(853),		-- Hatchet
 				i(778),		-- Kobold Excavation Pick
@@ -1472,9 +1462,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(30751),	-- Mag'hari Light Axe
 				i(4923),	-- Primitive Hatchet
 				i(1011),	-- Sharp Axe
-				i(2066),	-- Skull Hatchet
 				i(1383),	-- Stone Tomahawk
-				i(3071),	-- Striking Hatchet
 				i(20837),	-- Sunstrider Axe
 				i(2490),	-- Tomahawk
 				i(2054),	-- Trogg Hand Axe
@@ -1488,9 +1476,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2531),	-- Great Axe
 				i(2491),	-- Large Axe
 				i(30752),	-- Mag'hari Battleaxe
-				i(6206),	-- Rock Chipper
 				i(1196),	-- Tabar
-				i(3325),	-- Vile Fin Battle Axe
 				i(3189),	-- Wood Chopper
 				i(52532),	-- Worn Wood Chopper	-- TODO Cataclysm
 			}),
@@ -1527,10 +1513,8 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(20852),	-- Arcane Forged Dirk
 				i(3225),	-- Bloodstained Knife
 				i(10547),	-- Camping Knife
-				i(3445),	-- Ceremonial Knife
 				i(7166),	-- Copper Dagger
 				i(44652),	-- Dalaran Dagger
-				i(3296),	-- Deadman Dagger
 				i(2139),	-- Dirk
 				i(23391),	-- Exodar Dagger
 				i(40005),	-- Forsaken Blade
@@ -1739,13 +1723,11 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(4938),	-- Blemished Wooden Staff
 				i(1388),	-- Crooked Staff
 				i(44655),	-- Dalaran Stave
-				i(4961),	-- Dreamwatcher Staff
 				i(7094),	-- Driftwood Branch
 				i(5776),	-- Elder's Cane
 				i(3277),	-- Executor Staff
 				i(25553),	-- Exodar Staff
 				i(3335),	-- Farmer's Broom
-				i(2067),	-- Frostbit Staff
 				i(2257),	-- Frostmane Staff
 				i(1010),	-- Gnarled Short Staff
 				i(2030),	-- Gnarled Staff
@@ -1764,7 +1746,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(24434),	-- The Discipline Stick
 				i(5393),	-- Thistlewood Staff
 				i(23371),	-- Velania's Walking Stick
-				i(3327),	-- Vile Fin Oracle Staff
 				i(2495),	-- Walking Stick
 				i(2535),	-- War Staff
 			}),
@@ -1777,7 +1758,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(851),		-- Cutlass
 				i(44638),	-- Dalaran Sword
 				i(3295),	-- Deadman Blade
-				i(3455),	-- Deathstalker Shortsword
 				i(30749),	-- Draenic Sparring Blade
 				i(1384),	-- Dull Blade
 				i(23393),	-- Exodar Shortsword
@@ -1795,8 +1775,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(923),		-- Longsword
 				i(1161),	-- Militia Shortsword
 				i(2057),	-- Pitted Defias Shortsword
-				i(2065),	-- Rockjaw Blade
-				i(2282),	-- Rodentia Shortsword
 				i(22957),	-- Rusty Sin'dorei Sword
 				i(2027),	-- Scimitar
 				i(57146),	-- Scythe Blade
@@ -1806,7 +1784,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(3935),	-- Smotts' Cutlass
 				i(20835),	-- Sunstrider Sword
 				i(5586),	-- Thistlewood Blade
-				i(1008),	-- Well-Used Sword
 			}),
 			filter(TWO_HANDED_SWORDS, {
 				i(1194),	-- Bastard Sword
@@ -1823,10 +1800,8 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(5779),	-- Forsaken Bastard Sword
 				i(40004),	-- Forsaken Greatsword
 				i(142274),	-- Keleseth's Persuader	-- TODO Legion
-				i(6741),	-- Orcish War Sword
 				i(8177),	-- Practice Sword
 				i(24430),	-- Seafarer's Blade
-				i(2754),	-- Tarnished Bastard Sword
 				i(2489),	-- Two-Handed Sword
 				i(2529),	-- Zweihander
 			}),
@@ -1849,9 +1824,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 		}),
 	}),
 }));
--- All these cloth armor items are white/greys that are removed from the game.
--- Listed them here for now ~~Gold
+-- All these Items are white/greys that are removed from the game & are sourced too
+-- Listed them here for now. I want an easy unobtainable view ~~Gold
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	--cloth
 	i(7095),	-- Bog Boots
 	i(3320),	-- Bonecaster Sash
 	i(6202),	-- Fingerless Gloves
@@ -1860,7 +1836,29 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(3260),	-- Scarlet Initiate Robes
 	i(2114),	-- Snowy Robe
 	i(4261),	-- Solliden's Trousers
-	i(3263),	-- Webbed Pants
+	i(3263),	-- Webbed 
 	i(3261),	-- Webbed Cloak
+	--Dagger
+	i(3445),	-- Ceremonial Knife
+	i(3296),	-- Deadman Dagger
+	--Staff
+	i(4961),	-- Dreamwatcher Staff
+	i(2067),	-- Frostbit Staff
+	i(3327),	-- Vile Fin Oracle Staff
+	--One Handed Axes
+	i(2260),	-- Frostmane Hand Axe
+	i(2066),	-- Skull Hatchet
+	i(3071),	-- Striking Hatchet
+	--One Handed Sword
+	i(3455),	-- Deathstalker Shortsword
+	i(2065),	-- Rockjaw Blade
+	i(2282),	-- Rodentia Shortsword
+	i(1008),	-- Well-Used Sword
+	--Two Handed Axes
+	i(6206),	-- Rock Chipper
+	i(3325),	-- Vile Fin Battle Axe
+	--Two Handed Sword
+	i(6741),	-- Orcish War Sword
+	i(2754),	-- Tarnished Bastard Sword
 }));
 -- #endif

@@ -977,6 +977,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(134111),	-- Hidden Cloak
 					i(134112),	-- Hidden Shoulder
 					i(134013),	-- Chef's Hat [Likely the cosmetic effect from when you use the toy]
+					i(92894),	-- Art Template Generic Head - Helm_Misc_StarPartyHat_A_01
+					i(81862),	-- Art Template Robe Dress_B_03 - Blue
 				}),
 				tier(LEGION_TIER, 1.0, {
 					i(142504),	-- Hidden Tabard
