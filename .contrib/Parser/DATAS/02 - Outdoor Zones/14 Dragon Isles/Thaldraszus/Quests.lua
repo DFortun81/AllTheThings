@@ -1102,6 +1102,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 52.8, 59.2, THALDRASZUS },
 					["isDaily"] = true,
 				}),
+				q(74448, {	-- Overseer Stonetongue
+					["provider"] = { "n", 201552 },	-- Overseer Stonetongue
+					["coord"] = { 59.0, 56.0, THALDRASZUS },
+					["isDaily"] = true,
+				}),
 				qNYI(69976, {	-- Phenran
 					["provider"] = { "n", 193688 },	-- Phenran
 					["coord"] = { 59.8, 61.0, THALDRASZUS },

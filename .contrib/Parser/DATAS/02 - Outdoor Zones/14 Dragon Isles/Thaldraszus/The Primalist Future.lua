@@ -40,7 +40,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 61.1, 50.9, THE_PRIMALIST_FUTURE },
 					--["isWeekly"] = true,
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, sharedData({
+					["isDaily"] = true,
+				},{
 					q(74452, {	-- Avalantus
 						["provider"] = { "n", 201543 },	-- Avalantus
 						["coord"] = { 51.8, 68.5, THE_PRIMALIST_FUTURE },
@@ -57,18 +59,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["provider"] = { "n", 201542 },	-- Tikar Frostclaw
 						["coord"] = { 61.7, 31.7, THE_PRIMALIST_FUTURE },
 					}),
-				}),
-				n(WORLD_QUESTS, {
+				})),
+				n(WORLD_QUESTS, sharedData({
+					["isWorldQuest"] = true,
+				},{
 					q(74378, {	-- The Storm's Fury
 						i(202371, {	-- Glowing Primalist Cache
-							currency(ELEMENTAL_OVERFLOW),
 							i(ESSENCE_OF_THE_STORM),
+							currency(ELEMENTAL_OVERFLOW),
 							currency(2122),	-- Storm Sigil
 						}),
+						i(203476),	-- Primalist Cache
 					}),
-				}),
+				})),
 			}),
-			n(RARES, {
+			n(RARES, sharedData({
+				["isDaily"] = true,
+			},{
 				n(201543, {	-- Avalantus
 					["coord"] = { 51.8, 68.5, THE_PRIMALIST_FUTURE },
 					["questID"] = 74554,
@@ -97,7 +104,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						i(203667),	-- Frostclaw's Spellfingers
 					},
 				}),
-			}),
+			})),
 			n(TREASURES, {
 				o(382193, {	-- Chest of the Elements
 					["questID"] = 71995,

@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			n(201538, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Huntmaster Yrgena
 				["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
-				["questID"] = 74466,
+				["questID"] = 74548,
 				["isDaily"] = true,
 				["g"] = {
 					i(203672),	-- Master Huntmaster's Wristguards
@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			})),
 			n(188124, {	-- Irontree
 				["description"] = "Only spawns if the Aylaag Camp is stationed north.\nCave Entrance: 79.2, 36.6.",
-				["coords"] = { 
+				["coords"] = {
 					{ 79.2, 36.6, OHNAHRAN_PLAINS },	-- Cave Entrance
 					{ 80.5, 37.8, OHNAHRAN_PLAINS },	-- Boss
 				},
@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			n(201540, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Lurgan
 				["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
-				["questID"] = 74464,
+				["questID"] = 74546,
 				["isDaily"] = true,
 				["g"] = {
 					i(203674),	-- Brutal Tramplers
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			-- n(193235, {	-- Oshigol // under DF/Timed Based Rare
 			n(191950, {	-- Porta the Overgrown
 				["description"] = "Only available if the Aylaag Camp is stationed at the south east.\nRequires 5 Enriched Soil used on the mushroom in the cave at 59.71, 68.10 to spawn this rare. The Enriched Soil can be looted from piles of dirt scattered around the bottom of the lake in Mirror of the Sky and underwater in the surrounding area. The coordinates indicate possible spots for the Dirt Piles.",
-				["coords"] = { 
+				["coords"] = {
 					{ 59.6, 68.0, OHNAHRAN_PLAINS },	-- Boss
 					{ 50.5, 70.2, OHNAHRAN_PLAINS },	-- Soil Spawn posibility
 					{ 52.7, 65.8, OHNAHRAN_PLAINS },	-- Soil Spawn posibility
@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193215, {	-- Scaleseeker Mezeri
 				["crs"] = { 193224 },	-- Dawnbell
 				["description"] = "Feed Dawnbell at the southern waypoint a Sugarwing Cupcake & then follow her to the rare.",
-				["coords"] = { 
+				["coords"] = {
 					{ 16.6, 51.2, OHNAHRAN_PLAINS },	-- Dawnbell
 					{ 20.3, 43.7, OHNAHRAN_PLAINS },	-- Rare
 				},

@@ -1075,6 +1075,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 74.9, 47.1, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
 				}),
+				q(74466, {	-- Huntmaster Yrgena
+					["provider"] = { "n", 201538 },	-- Huntmaster Yrgena
+					["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+				}),
 				q(74463, {	-- Groffnar
 					["provider"] = { "n", 201537 },	-- Groffnar
 					["coord"] = { 35.1, 40.8, OHNAHRAN_PLAINS },
@@ -1083,6 +1088,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(66356, {	-- Irontree
 					["provider"] = { "n", 193128 },	-- Irontree
 					["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
+				}),
+				q(74464, {	-- Lurgan
+					["provider"] = { "n", 201540 },	-- Lurgan
+					["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
 				}),
 				q(69871, {	-- Malsegan
 					["provider"] = { "n", 193212 },	-- Malsegan

@@ -406,7 +406,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(203382),	-- Peripheral Vision Projectors
 		i(203461),	-- Chronologically Reallocated Rations
 		i(203471),	-- Tasty Candy
-		i(203476),	-- Primalist Cache
 		i(203478),	-- Field Deployable Heat Source
 		i(203598),	-- Makko's Journal Cover
 		-- Rare Drop?

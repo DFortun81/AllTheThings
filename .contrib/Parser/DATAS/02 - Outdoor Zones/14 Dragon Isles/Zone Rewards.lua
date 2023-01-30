@@ -2,6 +2,12 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	n(ZONE_DROPS, {	-- Drops available from pretty much anywhere in Dragon Isles
+		["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+		["g"] = {
+			i(202070),	-- Exceptional Pelt
+		},
+	}),
 	n(ZONE_REWARDS, {
 		i(191784),	-- Dragon Shard of Knowledge
 		i(198058),	-- Titan Training Matrix III
