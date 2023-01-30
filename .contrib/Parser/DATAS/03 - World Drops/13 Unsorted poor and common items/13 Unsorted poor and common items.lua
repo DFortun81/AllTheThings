@@ -1588,30 +1588,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2510),	-- Solid Blunderbuss
 			}),
 			filter(HELD_IN_OFF_HAND, {
-				i(6292),	-- 10 Pound Mud Snapper
-				i(6294),	-- 12 Pound Mud Snapper
-				i(6295),	-- 15 Pound Mud Snapper
-				i(13901),	-- 15 Pound Salmon
-				i(6309),	-- 17 Pound Catfish
-				i(13902),	-- 18 Pound Salmon
-				i(6310),	-- 19 Pound Catfish
-				i(6311),	-- 22 Pound Catfish
-				i(13903),	-- 22 Pound Salmon
-				i(13904),	-- 25 Pound Salmon
-				i(6363),	-- 26 Pound Catfish
-				i(13905),	-- 29 Pound Salmon
-				i(6364),	-- 32 Pound Catfish
-				i(13906),	-- 32 Pound Salmon
-				i(13885),	-- 34 Pound Redgill
-				i(13886),	-- 37 Pound Redgill
-				i(13882),	-- 42 Pound Redgill
-				i(13883),	-- 45 Pound Redgill
-				i(13884),	-- 49 Pound Redgill
-				i(13887),	-- 52 Pound Redgill
-				i(13914),	-- 70 Pound Mightfish
-				i(13915),	-- 85 Pound Mightfish
-				i(13916),	-- 92 Pound Mightfish
-				i(13917),	-- 103 Pound Mightfish
 				i(3422),	-- Beautiful Wildflowers
 				i(3420),	-- Black Rose
 				i(8626),	-- Blue Sparkler
