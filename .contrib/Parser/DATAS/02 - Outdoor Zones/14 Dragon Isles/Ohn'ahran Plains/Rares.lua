@@ -33,6 +33,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["timeline"] = { ADDED_DF_0_5 }
 			}),
 			n(195186, {	-- Cinta the Forgotten
+				["description"] = "Only spawns if the Aylaag Camp is stationed west.",
 				["coord"] = { 31.3, 76.0, OHNAHRAN_PLAINS },
 				["questID"] = 73950,
 			}),
@@ -70,15 +71,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			})),
 			n(187781, {	-- Hamett <Rockfang Matriarch>
-				["description"] = "Chance to spawn upon killing Sutaan.",
+				["description"] = "Only available if the Aylaag Camp is stationed north.\nChance to spawn upon killing Sutaan.",
 				["coord"] = { 85.4, 15.8, OHNAHRAN_PLAINS },
 				["questID"] = 73951,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(188095, {	-- Hunter of the Deep
-				["description"] = "There will be some glowing fish in the water when he is summonable. Click on the weapon rack, shoot the fish. When all fish are eliminated, the boss will spawn.",
+				["description"] = "Only spawns if the Aylaag Camp is stationed north.\nThere will be some glowing fish in the water when he is summonable. Click on the weapon rack, shoot the fish. When all fish are eliminated, the boss will spawn.",
 				["coord"] = { 80.5, 42.2, OHNAHRAN_PLAINS },
 				["questID"] = 73966,
 				-- ["g"] = {
@@ -94,8 +94,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			})),
 			n(188124, {	-- Irontree
-				["description"] = "Cave Entrance: 79.2, 36.6.",
-				["coord"] = { 80.5, 37.8, OHNAHRAN_PLAINS },
+				["description"] = "Only spawns if the Aylaag Camp is stationed north.\nCave Entrance: 79.2, 36.6.",
+				["coords"] = { 
+					{ 79.2, 36.6, OHNAHRAN_PLAINS },	-- Cave Entrance
+					{ 80.5, 37.8, OHNAHRAN_PLAINS },	-- Boss
+				},
 				["questID"] = 73967,
 				-- ["g"] = {
 
@@ -120,6 +123,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			})),
 			n(195409, {	-- Makhra the Ashtouched <Corrupted Child of Ohn'ahra>
+				["description"] = "Only spawns if the Aylaag Camp is stationed west.",
 				["coord"] = { 32.7, 38.1, OHNAHRAN_PLAINS },
 				["questID"] = 73968,
 				-- ["g"] = {
@@ -144,7 +148,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			-- n(193235, {	-- Oshigol // under DF/Timed Based Rare
 			n(191950, {	-- Porta the Overgrown
-				["description"] = "Requires 5 Enriched Soil used on the mushroom in the cave at 59.71, 68.10 to spawn this rare. The Enriched Soil can be looted from piles of dirt scattered around the bottom of the lake in Mirror of the Sky and underwater in the surrounding area. The coordinates indicate possible spots for the Dirt Piles.",
+				["description"] = "Only available if the Aylaag Camp is stationed at the south east.\nRequires 5 Enriched Soil used on the mushroom in the cave at 59.71, 68.10 to spawn this rare. The Enriched Soil can be looted from piles of dirt scattered around the bottom of the lake in Mirror of the Sky and underwater in the surrounding area. The coordinates indicate possible spots for the Dirt Piles.",
 				["coords"] = { 
 					{ 59.6, 68.0, OHNAHRAN_PLAINS },	-- Boss
 					{ 50.5, 70.2, OHNAHRAN_PLAINS },	-- Soil Spawn posibility
@@ -191,6 +195,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(195223, {	-- Rustlily <Nimblewing Matriarch>
+				["description"] = "Only spawns if the Aylaag Camp is stationed west.",
 				["coord"] = { 42.6, 44.6, OHNAHRAN_PLAINS },
 				["questID"] = 73973,
 			}),
@@ -264,6 +269,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["timeline"] = { ADDED_DF_0_5 },
 			}),
 			n(191842, {	-- Sulfurion
+				["description"] = "Only spawns if the Aylaag Camp is stationed at the south east.",
 				["coord"] = { 78.3, 83.0, OHNAHRAN_PLAINS },
 				["questID"] = 73974,
 				["isDaily"] = true,
@@ -295,6 +301,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- },
 			}),
 			n(195204, {	-- The Jolly Giant
+				["description"] = "Only spawns if the Aylaag Camp is stationed west.",
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				["questID"] = 73976,
 				-- ["g"] = {
@@ -313,6 +320,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(192453, {	-- Vaniik the Stormtouched <Corrupted Child of Ohn'ahra>
+				["description"] = "Only spawns if the Aylaag Camp is stationed at the south east.",
 				["coord"] = { 82.0, 63.0, OHNAHRAN_PLAINS },
 				["questID"] = 73978,
 				["isDaily"] = true,
@@ -321,7 +329,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- },
 			}),
 			n(192364, {	-- Windscale the Stormborn
-				["description"] = "Spawns from the egg after killing 5 nearby egg channelers.",
+				["description"] = "Only available if the Aylaag Camp is stationed at the south east.\nSpawns from the egg after killing 5 nearby egg channelers.",
 				-- TODO: add crs for kill npcs
 				["coord"] = { 84.2, 47.8, OHNAHRAN_PLAINS },
 				["questID"] = 73979,
@@ -352,7 +360,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(188451, {	-- Zerimek <The Darkened Cloud>
-				["description"] = "Only spawns if the Aylaag Camp is stationed at the north.",
+				["description"] = "Only spawns if the Aylaag Camp is stationed north.",
 				["coord"] = { 72.2, 23.2, OHNAHRAN_PLAINS },
 				["questID"] = 73980,
 			}),
