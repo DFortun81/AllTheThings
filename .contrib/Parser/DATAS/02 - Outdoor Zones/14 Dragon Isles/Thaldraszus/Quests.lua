@@ -1136,7 +1136,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 37.6, 77.8, THALDRASZUS },
 					["isDaily"] = true,
 				}),
-				qNYI(69886, {	-- Tempestrian
+				q(69886, {	-- Tempestrian
 					["provider"] = { "n", 193258 },	-- Tempestrian
 					["coord"] = { 49.2, 79.8, THALDRASZUS },
 					["isDaily"] = true,
