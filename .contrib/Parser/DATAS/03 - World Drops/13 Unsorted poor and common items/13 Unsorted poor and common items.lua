@@ -1482,7 +1482,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			filter(TWO_HANDED_AXES, {
 				i(926),	-- Battle Axe
 				i(2025),	-- Bearded Axe
-				i(5777),	-- Brave's Axe
 				i(2479),	-- Broad Axe
 				i(2523),	-- Bullova
 				i(44640),	-- Dalaran Great Axe
