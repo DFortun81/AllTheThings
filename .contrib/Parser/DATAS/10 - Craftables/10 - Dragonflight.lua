@@ -819,11 +819,21 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(201321),	-- Illusory Adornment: Order+
 			i(201320),	-- Illusory Adornment: Order++
 			i(201319),	-- Illusory Adornment: Order+++
-			i(201161),	-- Scepter of Spectacle: Air
-			i(201160),	-- Scepter of Spectacle: Earth
-			i(200472),	-- Scepter of Spectacle: Fire
-			i(200535),	-- Scepter of Spectacle: Frost
-			i(201158),	-- Scepter of Spectacle: Order
+			i(201161, {	-- Scepter of Spectacle: Air
+				["collectible"] = false,
+			}),
+			i(201160, {	-- Scepter of Spectacle: Earth
+				["collectible"] = false,
+			}),
+			i(200472, {	-- Scepter of Spectacle: Fire
+				["collectible"] = false,
+			}),
+			i(200535, {	-- Scepter of Spectacle: Frost
+				["collectible"] = false,
+			}),
+			i(201158, {	-- Scepter of Spectacle: Order
+				["collectible"] = false,
+			}),
 		}),
 		filter(REAGENTS, {
 			i(200618),	-- Primal Invocation Extract+

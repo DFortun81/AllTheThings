@@ -817,7 +817,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(20998),	-- Wyrm Sash
 				}),
 				n(LEGS, {
-					i(22745),	-- Bloodsail Pants
 					i(79),		-- Dwarven Cloth Britches
 					i(2437),	-- Embroidered Pants
 					i(23377),	-- Guard's Leggings
@@ -848,7 +847,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(3289),	-- Ancestral Boots
 					i(52554),	-- Apprentice's Boots	-- was not added to vendor in 10.0.5
 					i(14086),	-- Beaded Sandals
-					i(22744),	-- Bloodsail Boots
 					i(860),		-- Cavalier's Boots
 					i(4936),	-- Dirt-Trodden Boots
 					i(7351),	-- Disciple's Boots
@@ -1370,7 +1368,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(34828),	-- Antique Silver Cufflinks
 				i(92894),	-- Art Template Generic Head - Helm_Misc_StarPartyHat_A_01
 				i(81862),	-- Art Template Robe Dress_B_03 - Blue
-				i(45998),	-- Battered Jungle Hat
 				i(33047),	-- Belbi's Eyesight Enhancing Romance Goggles
 				i(6835),	-- Black Tuxedo Pants
 				i(34008),	-- Blix's Eyesight Enhancing Romance Goggles
@@ -1385,9 +1382,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(19028),	-- Elegant Dress
 				i(21154),	-- Festival Dress
 				i(21542),	-- Festival Suit
-				i(13895),	-- Formal Dangui
 				i(156727),	-- Green Crystal Monocle
-				i(13900),	-- Green Wedding Hanbok
 				i(34087),	-- Green Winter Clothes
 				i(22279),	-- Lovely Black Dress
 				i(22278),	-- Lovely Blue Dress
@@ -1711,7 +1706,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2901),	-- Mining Pick
 				i(4616),	-- Ryedol's Lucky Pick
 				i(7005),	-- Skinning Knife
-				i(45073),	-- Spring Flowers
 				i(37708),	-- Stick
 			}),
 			filter(POLEARMS, {
@@ -1835,7 +1829,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2131),	-- Shortsword
 				i(23396),	-- Slightly Used Ranger's Blade
 				i(3935),	-- Smotts' Cutlass
-				i(2268),	-- Stonesplinter Blade
 				i(20835),	-- Sunstrider Sword
 				i(5586),	-- Thistlewood Blade
 				i(1008),	-- Well-Used Sword

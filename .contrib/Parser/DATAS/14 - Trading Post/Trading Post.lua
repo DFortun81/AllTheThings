@@ -200,6 +200,9 @@ root(ROOTS.NeverImplemented, {
 						i(190425),	-- Vagabond's Violet Hood
 				-- 	},
 				-- }),
+				
+				-- Possible future vendor items, do we clarify that?
+				i(67108),	-- Lord Crowley's Old Spectacles
 				i(190672),	-- Deathguard Acolyte's Cloak
 				i(189869),	-- Distinguished Warcloak
 				i(190068),	-- Emerald Drape
