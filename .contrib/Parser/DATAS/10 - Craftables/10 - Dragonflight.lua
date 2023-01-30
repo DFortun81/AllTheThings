@@ -26,7 +26,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			["g"] = {
 				i(193366, {	-- Advanced Phial Experimentation*
 					-- Move to Basic Phial Experimentation if possible discovery
-					r(370483),	-- Crystaline Phial of Perception
 					r(370460),	-- Phial of Charged Isolation
 					r(370504),	-- Phial of Elemental Chaos
 					r(370462),	-- Phial of Glacial Fury
@@ -35,9 +34,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 					r(370438),	-- Phial of the Eye in the Storm
 					r(370473),	-- Steaming Phial of Finesse
 					-- Decay
-					r(370457, {	-- Iced Phial of Corrupting Rage
-						["description"] = "Requires Decayology."
-					}),
 					r(370456, {	-- Phial of Icy Preservation
 						["description"] = "Requires Decayology."
 					}),
@@ -76,6 +72,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 				-- Recipes Discoverable
 				r(370472),	-- Aerated Phial of Deftness
 				r(370476),	-- Charged Phial of Alacrity
+				r(370483),	-- Crystalline Phial of Perception
+				-- Decay
+				r(370457, {	-- Iced Phial of Corrupting Rage
+					["description"] = "Requires Decayology."
+				}),
 			}),
 		}),
 		spell(370743, {	-- Basic Potion Experimentation
@@ -1760,6 +1761,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71666, { ["name"] = "First Craft: Alexstraszite Loupes", }),
 			q(71663, { ["name"] = "First Craft: Fine-Print Trifocals", }),
 			q(71616, { ["name"] = "First Craft: Split-Lens Specs", }),
+			q(71605, { ["name"] = "First Craft: Signet of Titanic Insight", }),
+			q(71606, { ["name"] = "First Craft: Ring-Bound Hourglass", }),
 		})),
 		filter(BATTLE_PETS, {
 			i(193885),	-- Jeweled Amber Whelpling (PET!)
@@ -2555,7 +2558,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(),	-- Elemental Lariat
 			q(71602),	-- Pendant of Impending Perils
 			-- q(),	-- Ring-Bound Hourglass
-			q(71605),	-- Signet of Titanic Insight
 			q(72349),	-- Torc of Passed Time
 			-- Statues & Carvings
 			q(71614),	-- Djaradin's "Pinata"

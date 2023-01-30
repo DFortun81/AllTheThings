@@ -10,13 +10,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				ach(17343),	-- Drop It Like It's Hot
 				ach(17342, {	-- The Future We Make
 					crit(1, {
-						["_npcs"] = { 199502 },	-- Glakis, Winter's Wrath
+						-- ["_npcs"] = { 199502 },	-- Glakis, Winter's Wrath
+						["crs"] = { 199502 },	-- Glakis, Winter's Wrath
 					}),
 					crit(2, {
-						["_npcs"] = { 199667 },	-- Nimbulatus, Storm's Wrath
+						-- ["_npcs"] = { 199667 },	-- Nimbulatus, Storm's Wrath
+						["crs"] = { 199667 },	-- Nimbulatus, Storm's Wrath
 					}),
 					crit(3, {
-						["_npcs"] = { 200439 },	-- Seismodor, Earth's Wrath
+						-- ["_npcs"] = { 200439 },	-- Seismodor, Earth's Wrath
+						["crs"] = { 200439 },	-- Seismodor, Earth's Wrath
 					}),
 				}),
 			}),
@@ -95,6 +98,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 				}),
 			}),
+			n(TREASURES, {
+				o(382193, {	-- Chest of the Elements
+					["questID"] = 71995,
+					["coord"] = { 28.0, 25.9, THE_PRIMALIST_FUTURE },
+					["timeline"] = TIMELINE_DF_REL,
+					["g"]= {
+						i(194640),	-- Design: Ring-Bound Hourglass (RECIPE!)
+						i(201447),	-- Primal Revenant's Breezeblade
+						i(201444),	-- Primal Revenant's Earthblade
+						i(201446),	-- Primal Revenant's Firewall
+					}
+				});
+			}),
 			n(VENDORS, {
 				n(198831, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {	-- Bivogosa <Head Chef>
 					["coord"] = { 61.5, 53.3, THE_PRIMALIST_FUTURE },
@@ -167,7 +183,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THE_PRIMALIST_FUTURE, {
-		q(71995),	-- Looting the Elemental Chest event
 		q(73162),	-- Killing Nimbulatus
 		q(74552),	-- flagged when 74378 "The Storm's Fury" unflagged first time
 	}),

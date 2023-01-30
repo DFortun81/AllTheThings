@@ -44,6 +44,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(198540),	-- Golden Claw
 				},
 			}),
+			o(384318, {	-- Inconspicuous Bookmark
+				["coord"] = { 58.5, 36.7, THALDRASZUS },
+				["questID"] = 72356,
+				["requireSkill"] = JEWELCRAFTING,
+				["g"] = {
+					i(194654),	-- Design: Convergent Prism (RECIPE!)
+				}
+			}),
 			o(381361, {	-- Precious Stone Fragment
 				["coord"] = { 57.1, 64.6, THALDRASZUS },
 				["g"] = {
@@ -76,25 +84,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["questID"] = 70538,
 					}),
 				},
-			}),
-			-- The Primalist Future
-			o(382193, {	-- Chest of the Elements
-				["coord"] = { 28.0, 25.9, THE_PRIMALIST_FUTURE },
-				["g"]= {
-					i(194640),	-- Design: Ring-Bound Hourglass (RECIPE!)
-					i(201447),	-- Primal Revenant's Breezeblade
-					i(201444),	-- Primal Revenant's Earthblade
-					i(201446),	-- Primal Revenant's Firewall
-				}
-			});
-			-- Jewelcrafting
-			o(384318, {	-- Inconspicuous Bookmark
-				["coord"] = { 58.5, 36.7, THALDRASZUS },
-				["questID"] = 72356,
-				["requireSkill"] = JEWELCRAFTING,
-				["g"] = {
-					i(194654),	-- Design: Convergent Prism (RECIPE!)
-				}
 			}),
 		}),
 	}),

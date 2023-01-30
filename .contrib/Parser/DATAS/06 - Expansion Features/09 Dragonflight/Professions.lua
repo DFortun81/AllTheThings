@@ -1175,13 +1175,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
 				["groups"] = {
+					-- objectives don't exist in Retail because game has quest tracking by default
 					objective(1, {	-- 0/20 Springy Horns
 						["provider"] = { "i", 201816 },	-- Springy Horn
 						["crs"] = {
 							191624,	-- Tranquil Vorquin
 							191625,	-- Vorguin Foal
 						},
-						["coord"] = { 62.0, 43.8, WAKING_SHORES },
+						["coord"] = { 62.0, 43.8, THE_WAKING_SHORES },
 					}),
 				},
 			}),
@@ -1706,7 +1707,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ 46.8, 59.6, THALDRASZUS },
 						{ 45.8 ,58.2, THALDRASZUS },
 					},
-					["provider"] = { "i", 198973 },		-- Incandescent Curio
+					["provider"] = { "i", 198974 },	-- Elegantly Engraved Embellishment
 					["timeline"] = { ADDED_DF_REL },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
@@ -1721,7 +1722,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ 50.6, 57.6, THALDRASZUS },
 						{ 48.8, 60.6, THALDRASZUS },
 					},
-					["provider"] = { "i", 198974 },		-- Elegantly Engraved Embellishment
+					["provider"] = { "i", 198973 },	-- Incandescent Curio
 					["timeline"] = { ADDED_DF_REL },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
