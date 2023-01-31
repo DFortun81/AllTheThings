@@ -2754,6 +2754,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74181),	-- Skinning Zarimek
 			q(74182),	-- Skinning Makhra the Ashtouched
 			q(74183),	-- Skinning Vaniik the Stormtouched
+			q(74184),	-- Skinning Windscale the Stormborn
 			q(74186),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
 			q(74193),	-- Skinning Goremaul the Gluttonous
 			q(74194),	-- Skinning Pleasant Alpha
