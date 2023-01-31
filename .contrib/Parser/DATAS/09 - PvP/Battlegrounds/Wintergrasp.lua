@@ -9,13 +9,36 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, applyclassicphase(WRATH_PHASE_ONE, {
 		["maps"] = { WINTERGRASP },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(1752, {	-- Master of Wintergrasp
+				ach(1752, {	-- Master of Wintergrasp (Alliance - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {{"meta_achievement",
 						1722,	-- Archavon the Stone Watcher (10 player)
 						1721,	-- Archavon the Stone Watcher (25 player)
 						2080,	-- Black War Mammoth
 						1737,	-- Destruction Derby (A)
+						-- #if AFTER 4.3.0
+						2476,	-- Destruction Derby (H)
+						-- #endif
+						1751,	-- Didn't Stand a Chance
+						1727,	-- Leaning Tower
+						1723,	-- Vehicular Gnomeslaughter
+						2199,	-- Wintergrasp Ranger
+						1718,	-- Wintergrasp Veteran
+						1755,	-- Within Our Grasp
+						-- #if BEFORE 4.0.1
+						2089,	-- 1000 Stone Keeper's Shards
+						-- #endif
+					}},
+					-- #if BEFORE 4.3.0
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
+				}),
+				ach(2776, {	-- Master of Wintergrasp (Horde - before 4.3.0)
+					-- Meta Achievement should symlink the contained Achievements from Source
+					["sym"] = {{"meta_achievement",
+						1722,	-- Archavon the Stone Watcher (10 player)
+						1721,	-- Archavon the Stone Watcher (25 player)
+						2080,	-- Black War Mammoth
 						2476,	-- Destruction Derby (H)
 						1751,	-- Didn't Stand a Chance
 						1727,	-- Leaning Tower
@@ -27,6 +50,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, applyclassicphase(WRATH_PHASE_ONE, {
 						2089,	-- 1000 Stone Keeper's Shards
 						-- #endif
 					}},
+					["timeline"] = { "added 3.0.1", "deleted 4.3.0" },
+					["races"] = HORDE_ONLY,
 				}),
 				ach(1717, {	-- Wintergrasp Victory
 					["rank"] = 1,
