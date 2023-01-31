@@ -28,8 +28,8 @@ namespace ATT
                 if (data.ContainsKey("creatureID") || data.ContainsKey("crs")) return;
 
                 // If the id is whitelisted, don't say anything.
-                var id = data[ObjectType];
-                switch (data[ObjectType])
+                var id = Convert.ToInt32(data[ObjectType]);
+                switch (id)
                 {
                     case 1547:  // Silithid Royalty (AQ40)
                     case 1549:  // Twin Emperors (AQ40)
@@ -39,7 +39,7 @@ namespace ATT
                 }
 
                 System.Diagnostics.Trace.Write("ERROR: Encounter ");
-                System.Diagnostics.Trace.Write(data[ObjectType]);
+                System.Diagnostics.Trace.Write(id);
                 System.Diagnostics.Trace.WriteLine(" is missing a creature assignment!");
             }
         }

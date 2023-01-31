@@ -276,49 +276,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				title(47),	-- the Explorer
 			},
 		})),
-		ach(1244, {	-- Well Read
-			crit(1),	-- Aegwynn and the Dragon Hunt (Stormwind City, Westfall, Tirisfal Glades)
-			crit(2),	-- Aftermath of the Second War (Stormwind City, Blasted Lands, Darnassus)
-			crit(3),	-- Arathor and the Troll Wars (Hillsbrad Foothills, Ironforge)
-			crit(4),	-- Archimonde's Return and the Flight to Kalimdor (Stormwind City, Northern Barrens, Desolace)
-			crit(5),	-- Beyond the Dark Portal (Stormwind City, Blasted Lands, Stranglethorn Vale, The Cape of Stranglethorn)
-			crit(6),	-- Charge of the Dragonflights (Ironforge, Tirisfal Glades, Ashenvale, Northern Barrens)
-			crit(7),	-- Civil War in the Plaguelands (Hillsbrad Foothills, Stormwind City, Undercity, Ironforge, Elwynn Forest, Northshire, Stratholme)
-			crit(8),	-- Empires' Fall (Tanaris, Stranglethorn Vale, The Cape of Stranglethorn)
-			crit(9),	-- Exile of the High Elves (Undercity, Darnassus, Northern Barrens)
-			crit(10),	-- Icecrown and the Frozen Throne (Stratholme, Undercity, Elwynn Forest)
-			crit(11),	-- Ironforge - the Awakening of the Dwarves (Mulgore, Blackrock Depths, Ironforge, Loch Modan, Southern Barrens, Tanaris)
-			crit(12),	-- Kel'Thuzad and the Forming of the Scourge (Stratholme, Hillsbrad Foothills, Undercity)
-			crit(13),	-- Kil'jaeden and the Shadow Pact (Stratholme, Duskwood, Stormwind City)
-			crit(14),	-- Lethargy of the Orcs (Elwynn Forest, Southern Barrens)
-			crit(15),	-- Mount Hyjal and Illidan's Gift (Duskwood, Stormwind City, Northern Barrens)
-			crit(16),	-- Old Hatreds - The Colonization of Kalimdor (Tanaris)
-			crit(17),	-- Rise of the Blood Elves (Darnassus, Elwynn Forest, Arathi Highlands)
-			crit(18),	-- Rise of the Horde (Swamp of Sorrows, Ironforge, Durotar)
-			crit(19),	-- Sargeras and the Betrayal (Arathi Highlands, Ashenvale, Northern Barrens, Stormwind City)
-			crit(20),	-- Sunwell - The Fall of Quel'Thalas (The Cape of Stranglethorn, Ashenvale, Stranglethorn Vale)
-			crit(21),	-- The Alliance of Lordaeron (Hills Foothills, Ironforge, Stormwind City, Dun Morogh, Duskwood, Silvermoon City)
-			crit(22),	-- The Battle of Grim Batol (Ironforge, Mulgore, Stormwind City)
-			crit(23),	-- The Betrayer Ascendant (Darnassus, Silvermoon City)
-			crit(24),	-- The Birth of the Lich King (Stratholme, Duskwood, Hillsbrad Foothills)
-			crit(25),	-- The Dark Portal and the Fall of Stormwind (Swamp of Sorrows, Blasted Lands, Stormwind City, Redridge Mountains)
-			crit(26),	-- The Founding of Quel'Thalas (Duskwood)
-			crit(27),	-- The Guardians of Tirisfal (Stormwind City, Dalaran - NR)
-			crit(28),	-- The Invasion of Draenor (Scholomance)
-			crit(29),	-- The Kaldorei and the Well of Eternity (Stormwind City, Tanaris)
-			crit(30),	-- The Last Guardian (Loch Modan, Stormwind City, Westfall)
-			crit(31),	-- The Lich King Triumphant (Stratholme)
-			crit(32),	-- The New Horde (Swamp of Sorrows, Stormwind City, Southern Barrens)
-			crit(33),	-- The Old Gods and the Ordering of Azeroth (Ironforge, Blackrock Depths, Darnassus, Undercity)
-			crit(34),	-- The Scourge of Lordaeron
-			crit(35),	-- The Sentinels and the Long Vigil (Feralas, Stranglethorn Vale, The Cape of Stranglethorn)
-			crit(36),	-- The Seven Kingdoms (Stratholme)
-			crit(37),	-- The Twin Empires (Tanaris, Stranglethorn Vale, The Cape of Stranglethorn)
-			crit(38),	-- The War of the Ancients (Stormwind City, Darnassus)
-			crit(39),	-- The World Tree and the Emerald Dream (Stormwind City, Darnassus)
-			crit(40),	-- War of the Spider (Stratholme, Stormwind City)
-			crit(41),	-- War of the Three Hammers (Mulgore, Stormwind City, Blackrock Depths, Ironforge, Redridge Mountains, Southern Barrens)
-			crit(42),	-- Wrath of Soulflayer (Tanaris, Stranglethorn Vale, The Cape of Stranglethorn)
-		}),
+
 	}),
 }));
