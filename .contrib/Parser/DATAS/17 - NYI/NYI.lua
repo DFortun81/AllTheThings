@@ -415,8 +415,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(203677),	-- Watcher's 'Neck' Ring
 		--
 		i(192631),	-- Scale-Piercing Fang
-		i(202000),	-- Minor Renascence
-		i(202002),	-- Enlightened Renascence
 		i(204236),	-- Sack of Stolen Dragon Glyphs
 		i(204277),	-- Ruby Whelp Treat
 
@@ -1129,7 +1127,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200188),	-- Broken Fishing Pole
 		i(200190),	-- Stuffed Duckling Toy
 		i(200191),	-- Ottuk Lure
-		i(202001),	-- Passing Renascence
 		i(123868),	-- Relic of Shakama
 		i(192744),	-- Rymek's Gift
 		i(192768),	-- Titan Disc
