@@ -594,7 +594,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["coord"] = { 65.8, 25.3, THE_AZURE_SPAN },
 						["isBreadcrumb"] = true,
 					}),
-
 					q(68641, {	-- Mossing the Mark
 						["sourceQuests"] = { 71235 },	-- Field Mages
 						["provider"] = { "n", 192830 },	-- Steria Duskgrove
@@ -1382,7 +1381,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["provider"] = { "n", 191741 },	-- Mysterious Apparition
 						["coord"] = { 18.8, 24.4, THE_AZURE_SPAN },
 					}),
-
 				},
 			}),
 			cl(MAGE, {
@@ -1418,7 +1416,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
 				}),
 			}),
-
 				-- Hemet Nesingwary --
 			q(66972, {	-- Old Stonetusk
 				["sourceQuests"] = { 65686 },	-- To the Azure Span
@@ -1502,7 +1499,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(202200),	-- Solemn Seashell String
 				},
 			}),
-
 				-- MISC --
 			q(67174, {	-- Arcane Detection
 				["sourceQuests"] = { 65686 },	-- To the Azure Span
@@ -1554,49 +1550,49 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["provider"] = { "n", 186755 },	-- Tyrnokos Sunstrike
 				["coord"] = { 65.6, 16.2, THE_AZURE_SPAN },
 			}),
-			n(BONUS_OBJECTIVES, {
+			n(BONUS_OBJECTIVES, sharedData({
+				["isDaily"] = true,
+			},{
 				q(69858, {	-- Blightfur
 					["provider"] = { "n", 193178 },	-- Blightfur
 					["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
-					["isDaily"] = true,
 				}),
 				q(72358, {	-- Cascade
 					["provider"] = { "n", 186962 },	-- Cascade
 					["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
+					["isDaily"] = false,
 				}),
 				q(74001, {	-- Gruffy
 					["provider"] = { "n", 193251 },	-- Gruffy
 					["coord"] = { 32.5, 29.2, THE_AZURE_SPAN },
-					["isDaily"] = true,
 				}),
 				q(69892, {	-- Grumbletrunk
 					["provider"] = { "n", 193269 },	-- Grumbletrunk
 					["coord"] = { 19.1, 43.6, THE_AZURE_SPAN },
-					["isDaily"] = true,
 				}),
 				q(72254, {	-- Fisherman Tinnak's Ghost
 					["provider"] = { "n", 193691 },	-- Fisherman Tinnak <Angered Ghost>
 					["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
-					["repeatable"] = true,	-- Might not be true. Recheck some day #Jan 2023
+					["isDaily"] = false,
 				}),
 				q(69864, {	-- Forgotten Creation
 					["provider"] = { "n", 193214 },	-- Forgotten Creation
 					["coord"] = { 38.2, 59.0, THE_AZURE_SPAN },
+					["isDaily"] = false,
 				}),
 				q(66718, {	-- Gnolls Must Die
 					["sourceQuests"] = { 66709 },	-- Field Medic 101
 					["coord"] = { 58.1, 42.3, THE_AZURE_SPAN },
+					["isDaily"] = false,
 				}),
 				q(74461, {	-- Malgain Rockknell
 					["provider"] = { "n", 201558 },	-- Malgain Rockknell
 					["coord"] = { 56.0, 67.4, THE_AZURE_SPAN },
-					["isDaily"] = true,
 					["timeline"] = { ADDED_DF_0_5 },
 				}),
 				q(72154, {	-- Skag the Thrower
 					["provider"] = { "n", 193149 },	-- Skag the Thrower
 					["coord"] = { 26.7, 49.0, THE_AZURE_SPAN },
-					["isDaily"] = true,
 				}),
 				q(65841, {	-- Stop the Spread
 					["sourceQuests"] = {
@@ -1605,37 +1601,40 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 19.1, 36.2, THE_AZURE_SPAN },
+					["isDaily"] = false,
 				}),
 				q(69895, {	-- Summoned Destroyer
 					["provider"] = { "n", 193288 },	-- Summoned Destroyer
 					["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
+					["isDaily"] = false,
 				}),
 				q(67173, {	-- Thieving Gnolls
 					["provider"] = { "n", 192749 },	-- Sharpfang
 					["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
+					["isDaily"] = false,
 				}),
 				q(69861, {	-- Trilvarus Loreweaver
 					["provider"] = { "n", 193196 },	-- Trilvarus Loreweaver
 					["coord"] = { 70.4, 25.0, THE_AZURE_SPAN },
+					["isDaily"] = false,	-- remove if inaccurate
 				}),
 				q(69872, {	-- Vakril, the Strongest Tuskarr
 					["provider"] = { "n", 193223 },	-- Vakril
 					["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },
+					["isDaily"] = false,
 				}),
 				q(74460, {	-- Waterpots
 					["provider"] = { "n", 201556 },	-- Waterpots
 					["coord"] = { 57.3, 64.3, THE_AZURE_SPAN },
-					["isDaily"] = true,
 					["timeline"] = { ADDED_DF_0_5 },
 				}),
-			}),
+			})),
 			n(HIDDEN_QUESTS, {
 				-- Moved temporarily to HQTs
 			}),
 		}),
 	}),
 })));
-
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {

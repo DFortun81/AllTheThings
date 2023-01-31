@@ -96,6 +96,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 		-- Any Items listed here should meet the following criteria:
 		-- 1) Dropped from Multiple, specific Creatures which are likely themselves Sourced in ATT somewhere (i.e. Rares)
 		-- 2) Marked with appropriate ["crs"] tag to indicate the available Creatures per Item
+		-- 3) Ignore creatures which are 'really random' such as one could not target them for drops, i.e. Primal Storms Rares
 		-- This will automatically cause these Items to list themselves under any matching Creature of their ["crs"] list when that Creature is loaded in a ATT list
 		-- Technically, further Header organization under the 'Drops' Header should still work properly for automatic filling of the raw Items
 		n(DROPS, {	-- Items which can drop from multiple, specifically-tagged Creatures
@@ -123,6 +124,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						193176,	-- Sandana the Tempest
 					},
 				}),
+				i(197138, {	-- Highland Drake: Striped Pattern
+					["crs"] = {
+						193664,	-- Ancient Protector
+						193220,	-- Broodweaver Araznae
+						187745,	-- Disoriented Watcher
+						193214,	-- Forgotten Creation
+						196165,	-- Gathdazr
+						193688,	-- Phenran
+						193188,	-- Seeker Teryk
+						201555,	-- Srivantor
+						201554,	-- Unstable Arcanogolem
+					},
+				}),
 			}),
 			n(ARMOR, {
 				i(200758, {	-- Breastplate of Storied Antiquity
@@ -146,15 +160,70 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						192045,	-- Windseeker Avash
 					}
 				}),
+				i(200164, {	-- Iceloop
+					["crs"] = {
+						187945,	-- Anhydros the Tidetaker
+						197411,	-- Astray Splasher
+						193896,	-- Borzgas
+						186962,	-- Cascade
+						193691,	-- Fisherman Tinnak
+						196056,	-- Gushgut the Beaksinker
+						195286,	-- Mantai
+						193710,	-- Seereel, the Spring
+						193175,	-- Slurpo, the Incredible Snail
+						193706,	-- Snufflegust
+						193238,	-- Spellwrought Snowman
+						193724,	-- Uurtus
+					}
+				}),
 			}),
 			n(WEAPONS, {
 				i(200137, {	-- Chitin Dreadbringer
 					["crs"] = {
-						193153,	-- Ripsaw the Stalker (non-repeatable)
-						193666,	-- Rokmur (looted)
-						-- 5+ Drops on WH
-						189822,	-- Shas'ith
+						190986,	-- Battlehorn Pyrhus
+						197353,	-- Blisterhide
+						193259,	-- Blue Terror
+						194392,	-- Brackle
+						190985,	-- Death's Shadow
 						193234,	-- Eldoren the Reborn
+						193154,	-- Forgotten Gryphon
+						193269,	-- Grumbletrunk
+						194608,	-- Kholdeg
+						194438,	-- Khomuur
+						197009,	-- Liskheszaera
+						193273,	-- Liskron the Dazzling
+						193201,	-- Mucka the Raker
+						190968,	-- Norbett
+						192737,	-- Qalashi War Mammoth
+						193153,	-- Ripsaw the Stalker
+						193666,	-- Rokmur
+						189822,	-- Shas'ith
+						192949,	-- Skaara
+						193634,	-- Swog'ranka
+						191305,	-- The Great Shellkhan
+						193161,	-- Wollfang
+					},
+				}),
+				i(200252, {	-- Molten Flak Cannon
+					["crs"] = {
+						190986,	-- Battlehorn Pyrhus
+						197557,	-- Bisquius
+						190985,	-- Death's Shadow
+						193234,	-- Eldoren the Reborn
+						193134,	-- Enkine the Voracious
+						195915,	-- Firava the Rekindler
+						193853,	-- Galnmor
+						194240,	-- Gamgus
+						193126,	-- Innumerable Ruination
+						193668,	-- Lookout Mordren
+						186827,	-- Magmaton
+						193152,	-- Massive Magmashell
+						195093,	-- Moskhoi
+						192737,	-- Qalashi War Mammoth
+						193708,	-- Skald the Impaler
+						193120,	-- Smogswog the Destroyer
+						193288,	-- Summoned Destroyer
+						186859,	-- Worldcarver A'tir
 					},
 				}),
 			}),

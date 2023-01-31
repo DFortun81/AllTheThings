@@ -7423,7 +7423,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(74014),	--
 				q(74026),	--
 				q(74028),	--
-				q(74035),	--
 				q(74041),	--
 				q(74044),	--
 				q(74045),	--
@@ -7546,7 +7545,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(74551),	--
 				q(74559),	--
 				q(74565),	--
-				q(74566),	--
 				-- 10.0.5.47871
 				q(71213),	--
 				q(74897),	--

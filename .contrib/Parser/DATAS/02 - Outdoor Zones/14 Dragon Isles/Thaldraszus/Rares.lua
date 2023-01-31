@@ -16,10 +16,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193664, {	-- Ancient Protector
 				["coord"] = { 59.5, 59.2, THALDRASZUS },
 				["questID"] = 74055,
-				["isDaily"] = true,
 				["cost"] = {{"i",197733,4}},	-- 4x Unsustainable Containment Core
 				["g"] = {
-					i(197138),	-- Highland Drake: Striped Pattern
 					i(200299),	-- Strange Clockwork Gladius
 				},
 			}),
@@ -35,7 +33,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193663, {	-- Craggravated Elemental
 				["coord"] = { 45.4, 85.2, THALDRASZUS },
 				["questID"] = 74061,
-				["isDaily"] = true,
 				["g"] = {
 					i(200298),	-- Stoneshaped Greatbelt
 					i(196991),	-- Cliffside Wylderdrake: Black Horns
@@ -97,7 +94,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			-- n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
-			n(201549, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Morlash
+			n(201549,	-- Morlash
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 62.1, 60.1, THALDRASZUS },
 				["questID"] = 74561,
 				["g"] = {
@@ -107,12 +105,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193688, {	-- Phenran
 				["coord"] = { 60.0, 61.0, THALDRASZUS },
 				["questID"] = 74020,
-				["isDaily"] = true,
 				["g"] = {
 					i(200146),	-- Phenran's Discordant Smasher
 				},
 			}),
-			n(201552, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Overseer Stonetongue
+			n(201552,	-- Overseer Stonetongue
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 59.0, 56.0, THALDRASZUS },
 				["questID"] = 74566,
 				["g"] = {
@@ -123,13 +121,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 37.7, 78.7, THALDRASZUS },
 				["questID"] = 73889,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(193127, {	-- Private Shikzar
 				["coord"] = { 37.6, 84.7, THALDRASZUS },
 				["questID"] = 72844,
-				["isDaily"] = true,
 				["g"] = {
 					i(200438),	-- Surcoat of the Chastigator
 				},
@@ -154,7 +150,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					{ 45.63, 54.82, THE_AZURE_SPAN },	-- Fish
 				},
 				["questID"] = 74085,
-				["isDaily"] = true,
 				["cost"] = { { "i", 200949, 1 }, },	-- 1x Case of Fresh Gleamfish
 				["g"] = {
 					i(200999),	-- The Super Shellkhan Gang (TOY!)

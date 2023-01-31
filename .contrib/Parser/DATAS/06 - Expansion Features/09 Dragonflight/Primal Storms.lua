@@ -421,7 +421,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(200180),	-- Crystallized Lightning Staff
 					},
 				}),
-				n(201557, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Graniteclaw
+				n(201557,	-- Graniteclaw
+				bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 					["coord"] = { 58.3, 69.0, THE_AZURE_SPAN },
 					["questID"] = 74532,
 					["g"] = {
@@ -492,11 +493,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 
 					--},
 				}),
-				n(201559, {	-- Shiobhan Waterborn
+				n(201559,	-- Shiobhan Waterborn
+				bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 					["coord"] = { 59.9, 67.5, THE_AZURE_SPAN },
 					["questID"] = 74533,
-					["timeline"] = { ADDED_DF_0_5 },
-				}),
+					["g"] = {
+						i(203661),	-- Watercaller's Mantle
+					},
+				})),
 				n(193684, {	-- Pipspark Thundersnap
 					["coord"] = { 53.4, 26.2, THE_PRIMALIST_FUTURE },
 					["questID"] = 74022,

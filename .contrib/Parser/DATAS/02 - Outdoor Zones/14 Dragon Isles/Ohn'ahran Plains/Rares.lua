@@ -3,18 +3,16 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
-		n(RARES, sharedData({["isDaily"] = true},{
+		n(RARES, sharedData({ ["isDaily"] = true },{
 			n(193168, {	-- Biryuk
 				["coord"] = { 72.5, 56.2, OHNAHRAN_PLAINS },
 				["questID"] = 73903,
-				["isDaily"] = true,
 			}),
 			n(193128, {	-- Blightpaw the Depraved
 				["description"] = "Speak to nearby NPC to spawn.",
 				["cr"] = 193222,	-- Archaeologist Koranir
 				["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
 				["questID"] = 74096,
-				["isDaily"] = true,
 				["g"] = {
 					i(196986),	-- Cliffside Wylderdrake: Black Hair (DM!)
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
@@ -26,12 +24,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200432),	-- Rotguard Cowl
 				},
 			}),
-			n(201535, {	-- Bloodbeak the Ravenous
+			n(201535,	-- Bloodbeak the Ravenous
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 37.3, 38.5, OHNAHRAN_PLAINS },
 				["questID"] = 74467,
-				["isDaily"] = true,
-				["timeline"] = { ADDED_DF_0_5 }
-			}),
+				["g"] = {
+					i(203673),	-- Bloodbeak's Ravenor
+				},
+			})),
 			n(195186, {	-- Cinta the Forgotten
 				["description"] = "Only spawns if the Aylaag Camp is stationed west.",
 				["coord"] = { 31.3, 76.0, OHNAHRAN_PLAINS },
@@ -40,7 +40,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(189652, {	-- Deadwaker Ghendish
 				["coord"] = { 30.8, 66.6, OHNAHRAN_PLAINS },
 				["questID"] = 73872,
-				["isDaily"] = true,
 				["g"] = {
 					i(189055),	-- Ghendish's Backup Talisman
 				},
@@ -62,10 +61,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 		--	n(193170, {	-- Fulgurb // under DF/Timed Based Rare
-			n(201537, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Groffnar
+			n(201537, -- Groffnar
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 35.0, 41.1, OHNAHRAN_PLAINS },
 				["questID"] = 74549,
-				["isDaily"] = true,
 				["g"] = {
 					i(203671),	-- Pack Leader's Pelt
 				},
@@ -82,13 +81,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 80.5, 42.2, OHNAHRAN_PLAINS },
 				["questID"] = 73966,
 				-- ["g"] = {
-
 				-- },
 			}),
-			n(201538, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Huntmaster Yrgena
+			n(201538, -- Huntmaster Yrgena
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
 				["questID"] = 74548,
-				["isDaily"] = true,
 				["g"] = {
 					i(203672),	-- Master Huntmaster's Wristguards
 				},
@@ -101,23 +99,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 				["questID"] = 73967,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(197009, {	-- Liskheszaera
 				["coord"] = { 87.4, 61.4, OHNAHRAN_PLAINS },
 				["questID"] = 73882,
-				["isDaily"] = true,
 				["g"] = {
 					i(200434),	-- Anund's Mana-Singed Amice
 					i(200446),	-- Crystalized Sigil
 					i(197106),	-- Highland Drake: Finned Head (DM!)
 				},
 			}),
-			n(201540, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Lurgan
+			n(201540, -- Lurgan
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
 				["questID"] = 74546,
-				["isDaily"] = true,
 				["g"] = {
 					i(203674),	-- Brutal Tramplers
 				},
@@ -127,7 +123,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 32.7, 38.1, OHNAHRAN_PLAINS },
 				["questID"] = 73968,
 				-- ["g"] = {
-
 				-- },
 			}),
 			-- n(193212, {	-- Malsegan // under DF/Timed Based Rare
@@ -136,14 +131,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(196350, {	-- Old Stormhide
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
 				-- ["g"] = {
-
 				-- },
 			}),
 			-- n(193235, {	-- Oshigol // under DF/Timed Based Rare
@@ -181,7 +174,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["cost"] = {{"i",194739,1}},	-- Trapped Duck
 				["questID"] = 73972,
 				-- ["g"] = {
-
 				-- },
 			}),
 			-- n(196010, {	-- Researcher Sneakwing // under DF/Timed Based Rare
@@ -215,7 +207,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193136, {	-- Scav Notail
 				["coord"] = { 50.1, 75.2, OHNAHRAN_PLAINS },
 				["questID"] = 73893,
-				["isDaily"] = true,
 				["g"] = {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 					i(200168),	-- Gnoll Hide Belt
@@ -225,7 +216,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193188, {	-- Seeker Teryx
 				["coord"] = { 61.0, 13.6, OHNAHRAN_PLAINS },
 				["questID"] = 73894,
-				["isDaily"] = true,
 				["g"] = {
 					i(196970),	-- Cliffside Wylderdrake: Spiked Back (DM!)
 					i(200154),	-- Rubyscale Band
@@ -236,7 +226,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["crs"] = { 193166 },	-- Solethus's Gravestone
 				["coord"] = { 29.9, 41.1, OHNAHRAN_PLAINS },
 				["questID"] = 74075,
-				["isDaily"] = true,
 				["g"] = {
 					i(196996),	-- Cliffside Wylderdrake: Branched Horns (DM!)
 					i(200437),	-- Dreamsong Censer
@@ -254,7 +243,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193165, {	-- Sparkspitter Vrak
 				["coord"] = { 22.1, 38.8, OHNAHRAN_PLAINS },
 				["questID"] = 73896,
-				["isDaily"] = true,
 				["g"] = {
 					i(200297),	-- Hastily Cobbled Maul
 					i(200689),	-- Rimetalon Band
@@ -262,19 +250,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			-- n(193123, {	-- Steamgill // under DF/Timed Based Rare
-			n(201539, {	-- Stormcaller Narkena
+			n(201539,	-- Stormcaller Narkena
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
 				["questID"] = 74547,
-				["isDaily"] = true,
-				["timeline"] = { ADDED_DF_0_5 },
-			}),
+				["g"] = {
+					i(203676),	-- Stormcaller's Grounding Shoes
+				},
+			})),
 			n(191842, {	-- Sulfurion
 				["description"] = "Only spawns if the Aylaag Camp is stationed at the south east.",
 				["coord"] = { 78.3, 83.0, OHNAHRAN_PLAINS },
 				["questID"] = 73974,
-				["isDaily"] = true,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(193133, {	-- Sunscale Behemoth
@@ -297,7 +285,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(195204, {	-- The Jolly Giant
@@ -305,7 +292,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				["questID"] = 73976,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(191354, {	-- Ty'foon the Ascended
@@ -323,9 +309,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["description"] = "Only spawns if the Aylaag Camp is stationed at the south east.",
 				["coord"] = { 82.0, 63.0, OHNAHRAN_PLAINS },
 				["questID"] = 73978,
-				["isDaily"] = true,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(192364, {	-- Windscale the Stormborn
@@ -333,9 +317,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- TODO: add crs for kill npcs
 				["coord"] = { 84.2, 47.8, OHNAHRAN_PLAINS },
 				["questID"] = 73979,
-				["isDaily"] = true,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(192045, {	-- Windseeker Avash
@@ -348,7 +330,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193209, {	-- Zenet Avis <The Hard Wind>
 				["coord"] = { 31.5, 64.0, OHNAHRAN_PLAINS },
 				["questID"] = 73901,
-				["isDaily"] = true,
 				["g"] = {
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 					i(200314),	-- Skyspeaker's Envelope
@@ -368,7 +349,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["description"] = "Use /hiss on 4 nearby Juvenile Wind Serpents to spawn.",
 				["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
 				["questID"] = 74091,
-				["isDaily"] = true,
 				["g"] = {
 					i(200215),	-- Plumed Shoulderguards of the Hunt
 				},
@@ -376,9 +356,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 		})),
 	}),
 })));
+
 root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
 	m(OHNAHRAN_PLAINS, {
-		n(RARES, sharedData({["isDaily"] = true}, {
+		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(192020, {	-- Eaglemaster Niraak
 				["coord"] = { 49.6, 66.6, OHNAHRAN_PLAINS },
 				["questID"] = 74441,

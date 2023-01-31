@@ -116,7 +116,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 190562 },	-- Guardian Velomir
 					["coord"] = { 40.2, 85.1, THALDRASZUS },
 				}),
-
 					-- Chapter 2 --
 				q(66320, {	-- The Flow of Time
 					["sourceQuests"] = { 66252 },	-- Reporting In
@@ -235,7 +234,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						i(195200),	-- Chronomental Gloves
 						i(195199),	-- Chronomental Grips
 						i(195198),	-- Chronomental Halfgloves
-
 					},
 				}),
 				q(65962, {	-- The Never-Final Countdown
@@ -243,7 +241,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 186711 },	-- Chromie
 					["coord"] = { 59.6, 81.7, THALDRASZUS },
 				}),
-
 					-- Chapter 3 --
 				q(70040, {	-- Tumbling Through Time
 					["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
@@ -388,7 +385,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 72.5, 56.2, THALDRASZUS },
 				}),
-
 					-- Chapter 4 --
 				q(70437, {	-- To Tyrhold
 					["sourceQuestNumRequired"] = 1,
@@ -972,7 +968,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["sourceQuests"] = { 70377 },	-- Derelict Fashion
 					["provider"] = { "n", 198062 },	-- Zeldis
 					["coord"] = { 39.6, 48.4, THALDRASZUS },
-
 				}),
 				q(72351, {	-- HQT for talking to Zeldis again (70377)
 					["name"] = "Talk to Zeldis again",
@@ -1043,133 +1038,118 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["provider"] = { "n", 192733 },	-- Professor Dromokdormi
 				["coord"] = { 58.1, 40.4, THALDRASZUS },
 			}),
-			n(BONUS_OBJECTIVES, {
+			n(BONUS_OBJECTIVES, sharedData({
+				["isDaily"] = true,
+			},{
 				q(72114, {	-- Acrosoth
 					["provider"] = { "n", 193243 },	-- Acrosoth
 					["coord"] = { 39.0, 78.0, THALDRASZUS },
+					["isDaily"] = false,
 				}),
 				q(69963, {	-- Ancient Protector
 					["provider"] = { "n", 193664 },	-- Ancient Protector
 					["coord"] = { 59.0, 58.6, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(69868, {	-- Broodweaver Araznae
 					["provider"] = { "n", 193220 },	-- Broodweaver Araznae
 					["coord"] = { 59.6, 70.1, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(69962, {	-- Corrupted Proto-Dragon
 					["provider"] = { "n", 193658 },	-- Corrupted Proto-Dragon
 					["coord"] = { 44.8, 69.0, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(69964, {	-- Craggravated Elemental
 					["provider"] = { "n", 193663 },	-- Craggravated Elemental
 					["coord"] = { 45.4, 85.2, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(69875, {	-- Eldoren the Reborn
 					["provider"] = { "n", 193234 },	-- Eldoren the Reborn
 					["coord"] = { 49.0, 51.0, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(69873, {	-- Henlare
 					["provider"] = { "n", 193229 },	-- Henlare
 					["coord"] = { 55.6, 77.4, THALDRASZUS },
-					["isDaily"] = true,
+					["isDaily"] = false,
 				}),
 				q(74450, {	-- Morlash
 					["provider"] = { "n", 201549 },	-- Morlash
 					["coord"] = { 62.1, 60.1, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(72116, {	-- Liskron the Dazzling
 					["provider"] = { "n", 193273 },	-- Liskron the Dazzling
 					["coord"] = { 36.4, 72.8, THALDRASZUS },
-					["isDaily"] = true,
+					["isDaily"] = false,
 				}),
 				q(69967, {	-- Lookout Mordren
 					["provider"] = { "n", 193668 },	-- Lookout Mordren
 					["coord"] = { 36.8, 85.6, THALDRASZUS },
+					["isDaily"] = false,
 				}),
 				q(69882, {	-- Lord Epochbrgl
 					["provider"] = { "n", 193241 },	-- Lord Epochbrgl
 					["coord"] = { 62.2, 81.8, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(69883, {	-- Matriarch Remalla
 					["provider"] = { "n", 193246 },	-- Matriarch Remalla
 					["coord"] = { 52.8, 59.2, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(74448, {	-- Overseer Stonetongue
 					["provider"] = { "n", 201552 },	-- Overseer Stonetongue
 					["coord"] = { 59.0, 56.0, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				qNYI(69976, {	-- Phenran
 					["provider"] = { "n", 193688 },	-- Phenran
 					["coord"] = { 59.8, 61.0, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(69866, {	-- Phleep
 					["provider"] = { "n", 193210 },	-- Phleep
 					["coord"] = { 57.2, 84.2, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(70986, {	-- Private Shikzar
 					["provider"] = { "n", 193127 },	-- Private Shikzar
 					["coord"] = { 37.6, 84.7, THALDRASZUS },
+					["isDaily"] = false,
 				}),
 				q(69880, {	-- Riverwalker Tamopo
 					["provider"] = { "n", 193240 },	-- Riverwalker Tamopo
 					["coord"] = { 39.8, 70.0, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				qNYI(72806, {	-- Pleasant Alpha
 					["provider"] = { "n", 193130 },	-- Pleasant Alpha
 					["coord"] = { 37.8, 79.2, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(69966, {	-- Rokmur
 					["provider"] = { "n", 193666 },	-- Rokmur
 					["coord"] = { 49.8, 51.4, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(69859, {	-- Sandana the Tempest
 					["provider"] = { "n", 193176 },	-- Sandana the Tempest
 					["coord"] = { 37.6, 77.8, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(69886, {	-- Tempestrian
 					["provider"] = { "n", 193258 },	-- Tempestrian
 					["coord"] = { 49.2, 79.8, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(72121, {	-- The Great Shellkhan
 					["provider"] = { "n", 191305 },	-- The Great Shellkhan
 					["coord"] = { 38.4, 68.2, THALDRASZUS },
-					["isDaily"] = true,
+					["isDaily"] = false,
 				}),
 				q(70947, {	-- Treasure-Mad Trambladd
 					["provider"] = { "n", 193146 },	-- Treasure-Mad Trambladd
 					["coord"] = { 35.0, 69.8, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(69850, {	-- Woolfang
 					["provider"] = { "n", 193161 },	-- Woolfang
 					["coord"] = { 47.8, 49.8, THALDRASZUS },
-					["isDaily"] = true,
 				}),
-
 				-- NO BONUS OBJECTIVE?
 				-- Enraged Sprout
 				-- Goremaul the Gluttonous
 				-- Innumerable Ruination
 				-- Razk'vex the Untamed
 				-- The Weeping Vilomah
-
-			}),
+			})),
 		}),
 	}),
 })));
@@ -1183,7 +1163,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan'
 		q(72125),	-- Triggers during 'Tying Things Together' (66248)
 		-- q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?
-
 		-- Achievement Framing a New Perspective
 		q(72142),	-- The Seat of the Aspects
 		q(72143),	-- The Cascades

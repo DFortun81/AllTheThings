@@ -111,7 +111,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 181217 },	-- Sansok Khan
 					["coord"] = { 70.0, 38.0, OHNAHRAN_PLAINS },
 				}),
-
 					-- Chapter 2 --
 				q(66018, {	-- Clan Nokhud
 					["sourceQuests"] = { 65806 },	-- Maruukai
@@ -205,7 +204,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 181198 },	-- Khanam Matra Sarest
 					["coord"] = { 60.3,38.0, OHNAHRAN_PLAINS },
 				}),
-
 					-- Chapter 3 --
 				q(66201, {	-- Hooves of War
 					["sourceQuests"] = { 66025 },	-- The Nokhud Threat
@@ -294,7 +292,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						i(197846),	-- Ohn'ahra's Carving
 					},
 				}),
-
 					-- Chapter 4 --
 				q(66327, {	-- Chasing the Wind
 					["sourceQuests"] = { 66259 },	-- A Storm of Ill Tidings
@@ -939,7 +936,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 				}),
 			}),
-
 				-- Fields of Ferocity --
 			q(70444, {	-- The Fields of Ferocity
 				-- TODO: add magic alt-unlock quest
@@ -990,7 +986,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(197903),	-- Waterback Culling Axe
 				},
 			}),
-
 				-- MISC --
 			q(70155, {	-- Look, Listen, and Breathe
 				["provider"] = { "n", 194282 },	-- Threshrak
@@ -1061,7 +1056,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200295),	-- Makko's Complete Journal
 				},
 			}),
-			n(BONUS_OBJECTIVES, {
+			n(BONUS_OBJECTIVES, sharedData({
+				["isDaily"] = true,
+			},{
 				-- q(quest, {	-- npc
 				-- 	["provider"] = { "n", npcid },	-- npc
 				-- 	["coord"] = { XX, YY, OHNAHRAN_PLAINS },
@@ -1073,17 +1070,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69856, {	-- Fulgurb
 					["provider"] = { "n", 193170 },	-- Fulgurb
 					["coord"] = { 74.9, 47.1, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
 				}),
 				q(74466, {	-- Huntmaster Yrgena
 					["provider"] = { "n", 201538 },	-- Huntmaster Yrgena
 					["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
 				}),
 				q(74463, {	-- Groffnar
 					["provider"] = { "n", 201537 },	-- Groffnar
 					["coord"] = { 35.1, 40.8, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
 				}),
 				q(66356, {	-- Irontree
 					["provider"] = { "n", 193128 },	-- Irontree
@@ -1092,7 +1086,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74464, {	-- Lurgan
 					["provider"] = { "n", 201540 },	-- Lurgan
 					["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
 				}),
 				q(69871, {	-- Malsegan
 					["provider"] = { "n", 193212 },	-- Malsegan
@@ -1105,6 +1098,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69968, {	-- Prozela Galeshot
 					["provider"] = { "n", 193669 },	-- Prozela Galeshot
 					["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
+					["isDaily"] = false,
 				}),
 				q(70698, {	-- Researcher Sneakwing
 					["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
@@ -1113,15 +1107,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69851, {	-- Ripsaw the Stalker
 					["provider"] = { "n", 193153 },	-- Ripsaw the Stalker
 					["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
+					["isDaily"] = false,
 				}),
 				q(69878, {	-- Ronsak the Decimator
 					["provider"] = { "n", 193227 },	-- Ronsak the Decimator
 					["coord"] = { 43.3, 55.2, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
 				}),
 				q(70783, {	-- Skaara
 					["provider"] = { "n", 192949 },	-- Skaara
 					["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
+					["isDaily"] = false,
 				}),
 				q(69667, {	-- Steamgill
 					["provider"] = { "n", 193123 },	-- Steamgill
@@ -1130,43 +1125,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74465, {	-- Stormcaller Narkena
 					["provider"] = { "n", 201539 },
 					["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
 					["timeline"] = { ADDED_DF_0_5 },
 				}),
 				q(69837, {	-- Sunscale Behemoth
 					["provider"] = { "n", 193133 },	-- Sunscale Behemoth
 					["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
+					["isDaily"] = false,
 				}),
 				q(69852, {	-- Territorial Coastling
 					["provider"] = { "n", 193163 },	-- Territorial Coastling
 					["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
+					["isDaily"] = false,
 				}),
 				q(65892, {	-- The Sundered Asunder
 					-- ["sourceQuests"] = {  },	--
 					["coord"] = { 64.0, 17.8, OHNAHRAN_PLAINS },
+					["isDaily"] = false,
 				}),
 				q(66421, {	-- The Storm Scar
 					["sourceQuests"] = { 66331 },	-- The Primalist Front
 					["coord"] = { 25.7, 40.5, OHNAHRAN_PLAINS },
+					["isDaily"] = false,
 				}),
 				q(66970, {	-- Ty'foon the Ascended
 					["provider"] = { "n", 191354 },	-- Ty'foon the Ascended
 					["coord"] = { 26.1, 34.2, OHNAHRAN_PLAINS },
+					["isDaily"] = false,
 				}),
 				q(69857, {	-- Mikrin of the Raging Winds
 					["provider"] = { "n", 193173 },	-- Mikrin of the Raging Winds
 					["coord"] = { 62.8, 79.8, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
 				}),
 				q(69865, {	-- Scaleseeker Mezeri
 					["provider"] = { "n", 193215 },	-- Scaleseeker Mezeri
 					["coord"] = { 20.1, 44.3, OHNAHRAN_PLAINS },
+					["isDaily"] = false,
 				}),
 				q(72364, {	-- Zarizz
 					["provider"] = { "n", 193140 },	-- Zarizz
 					["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
+					["isDaily"] = false,
 				}),
-			}),
+			})),
 		}),
 	}),
 })));

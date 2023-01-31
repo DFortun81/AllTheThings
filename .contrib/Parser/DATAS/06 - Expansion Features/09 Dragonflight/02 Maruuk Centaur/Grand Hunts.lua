@@ -372,7 +372,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["isDaily"] = true,
 						["g"] = {
 							i(197098),	-- Highland Drake: Finned Back (DM!)
-							i(200164),	-- Iceloop
 							i(200187),	-- Rod of Glacial Force
 							i(200552),	-- Torrent Caller's Shell
 							-- is part of the DF>Global Rare Loottable
@@ -418,7 +417,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["g"] = {
 							i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
 							i(197098),	-- Highland Drake: Finned Back (DM!)
-							i(200164),	-- Iceloop
 							i(200187),	-- Rod of Glacial Force
 							i(200552),	-- Torrent Caller's Shell
 						},

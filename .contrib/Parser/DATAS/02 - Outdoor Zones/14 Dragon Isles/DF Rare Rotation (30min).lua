@@ -75,6 +75,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 35.0, 70.0, THALDRASZUS },
 					["questID"] = 74036,
 					["g"] = {
+						i(196994),	-- Cliffside Wylderdrake: Short Horns
 						i(200300),	-- Sack of Looted Treasures
 						i(200291),	-- Waterlogged Racing Grips
 					},

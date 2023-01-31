@@ -26,7 +26,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200237), -- burnished lifewarders targe
 					i(196970), -- cliffside wylderdrake spiked back
 					i(197105), -- highland drake spined chin
-					i(197138), -- highland drake striped pattern
 					i(200086), -- khazgorite infused resin
 					i(200154), -- rubyscale band
 					i(197586), -- windborne velocidrake spiked back

@@ -7,30 +7,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(194270, {	-- Arcane Devourer
 				["coord"] = { 53.0, 35.6, THE_AZURE_SPAN },
 				["questID"] = 73866,
-				["isDaily"] = true,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(193255, {	-- Archmage Cleary
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
 				-- ["questID"] = ,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(194210, {	-- Azure Pathfinder
 				["coord"] = { 60.7, 31.7, THE_AZURE_SPAN },
 				["questID"] = 73867,
-				["isDaily"] = true,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(193116, {	-- Beogoka
 				["coord"] = { 73.0, 26.6, THE_AZURE_SPAN },
 				["questID"] = 73868,
-				["isDaily"] = true,
 				["g"] = {
 					i(200673),	-- Beogoka's Tooth and Claw
 					i(200253),	-- Snowspring Incanter's Knife
@@ -58,7 +52,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(194392, {	-- Brackle
 				["coord"] = { 8.7, 48.6, THE_AZURE_SPAN },
 				["questID"] = 73871,
-				["isDaily"] = true,
 				["g"] = {
 					i(200448),	-- Abyssal Ward
 					i(197022),	-- Cliffside-wylderdrake-finned-neck
@@ -78,7 +71,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193157, {	-- Dragonhunter Gorund
 				["coord"] = { 27.8, 45.8, THE_AZURE_SPAN },
 				["questID"] = 73873,
-				["isDaily"] = true,
 				["g"] = {
 					i(200302),	-- Magmaforged Scimitar
 					i(200169),	-- Protector's Molten Cudgel
@@ -96,7 +88,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200256),	-- Darkmaul Soul Horn
 					i(200158),	-- Eerie Spectral Ring
 					i(197098),	-- Highland Drake: Finned Back (DM!)
-					i(200164),	-- Iceloop
 					i(200245),	-- Leviathan Lure
 					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 					i(200187),	-- Rod of Glacial Force
@@ -111,23 +102,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200210),	-- Amnesia
-					i(197138),	-- [Highland Drake: Striped Pattern]
 				},
 			}),
 			n(193698, {	-- Frigidpelt Den Mother
 				["coord"] = { 64.7, 29.9, THE_AZURE_SPAN },
 				["questID"] = 73876,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(191356, {	-- Frostpaw
 				["coord"] = { 58.2, 43.7, THE_AZURE_SPAN },
 				["questID"] = 73877,
-				["isDaily"] = true,
 				["description"] = "Can be spawned when the three toys are present on the stump nearby- use the hammer at 58.6, 43.4.",
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(197354, {	-- Gnarls
@@ -160,10 +147,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200157),	-- Pathmaker
 				},
 			}),
-			n(201558, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Malgain Rockknell
+			n(201558,	-- Malgain Rockknell
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				-- ["coord"] = { , , THE_AZURE_SPAN },
 				["questID"] = 74531,
-				["isDaily"] = true,
 				["g"] = {
 					i(203660),	-- Rockknell's Groundpounders
 				},
@@ -176,10 +163,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200266),	-- Gnollish Chewtoy Launcher
 				},
 			}),
-			n(201561, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Motivator Krathos
+			n(201561,	-- Motivator Krathos
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 43.9, 30.9, THE_AZURE_SPAN },
 				["questID"] = 74456,
-				["isDaily"] = true,
 				["g"] = {
 					i(203675),	-- Legplates of the Brutal Motivator
 				},
@@ -204,7 +191,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
 				-- ["questID"] = ,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(192749, {	-- Sharpfang
@@ -231,7 +217,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 55.0, 34.0, THE_AZURE_SPAN },
 				["cr"] = 193242,	-- Arcane Pedestal
 				["questID"] = 74082,
-				["isDaily"] = true,
 				["g"] = {
 					i(200211),	-- Snowman's Icy Gaze
 				},
@@ -249,7 +234,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
 				-- ["questID"] = ,
 				-- ["g"] = {
-
 				-- },
 			}),
 			n(193196, {	-- Trilvarus Loreweaver
@@ -270,16 +254,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(201728, {	-- Vakril's Strongbox
-						i(200164),	-- Iceloop
 						i(200245),	-- Leviathan Lure
 						i(200187),	-- Rod of Glacial Force
 					}),
 				},
 			}),
-			n(201556, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Waterpots
+			n(201556,	-- Waterpots
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				-- ["coord"] = { , , THE_AZURE_SPAN },
 				["questID"] = 74535,
-				["isDaily"] = true,
 				["g"] = {
 					i(203659),	-- Waterpot's Halfpot Deflector
 				},
@@ -287,9 +270,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193632, {	-- Wilrive
 				["coord"] = { 59.4, 55.2, THE_AZURE_SPAN },
 				["questID"] = 73900,
-				["isDaily"] = true,
 				-- ["g"] = {
-
 				-- },
 			}),
 		})),
@@ -301,6 +282,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(73886),	-- Killing both Mucklings for Mucka the Raker
 	}),
 }));
+
 root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
 	m(THE_AZURE_SPAN, {
 		n(RARES, sharedData({["isDaily"] = true}, {

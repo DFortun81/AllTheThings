@@ -26,6 +26,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			i(197733, {	-- Unsustainable Containment Core
 				["cost"] = {{"i",197708,5}},	-- 5x Unstable Matrix Core
 			}),
+			i(203677, {	-- Watcher's 'Neck' Ring
+				["cr"] = 201550,	-- Overloading Defense Matrix
+			}),
 		}),
 	}),
 })));

@@ -303,7 +303,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						i(197001),	-- Cliffside Wylderdrake: Finned Cheek
 						i(197098),	-- Highland Drake: Finned Back (DM!)
-						i(200164),	-- Iceloop
 						i(200086),	-- Khaz'gorite Infused Resin
 						i(200245),	-- Leviathan Lure
 						i(200563),	-- Primal Ritual Shell

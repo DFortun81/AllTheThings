@@ -392,13 +392,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(203471),	-- Tasty Candy
 		i(203478),	-- Field Deployable Heat Source
 		i(203598),	-- Makko's Journal Cover
-		-- Rare Drop?
-		i(203661),	-- Watercaller's Mantle
-		i(203673),	-- Bloodbeak's Ravenor
-		i(203676),	-- Stormcaller's Grounding Shoes
-		i(203677),	-- Watcher's 'Neck' Ring
 		--
-		i(192631),	-- Scale-Piercing Fang
 		i(204236),	-- Sack of Stolen Dragon Glyphs
 		i(204277),	-- Ruby Whelp Treat
 
@@ -827,7 +821,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
 			i(196990),	-- Cliffside Wylderdrake: Helm
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
-			i(196994),	-- Cliffside Wylderdrake: Short Horns
 			i(196995),	-- Cliffside Wylderdrake: Spiked Horns
 			i(196997),	-- Cliffside Wylderdrake: Split Horns
 			i(197000),	-- Cliffside Wylderdrake: Coiled Horns
@@ -1066,8 +1059,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201989),	-- Twisted Heart
 			i(202062),	-- Ash Feather
 		}),
-		-- Use this in a Cost.. Must find the source
-		i(194690),	-- Horn o' Mead
 
 		-- New Stuff?
 		i(201724),	-- Dracthyr Token of Cavalry Excellence
@@ -1080,9 +1071,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198984),	-- Broken Part: Shattered Orb
 		i(200108),	-- Irideus' Power Core
 		i(201420),	-- Gnolan's House Special
-		i(201421),	-- Tuskarr Jerky
 		i(201928),	-- Ohn'ir Windprayer Talisman
-		i(202070),	-- Exceptional Pelt
 		i(202071),	-- Elemental Mote
 		i(203206),	-- Elegant Canvas Brush
 		i(203366),	-- Blue Winglord's Staff
