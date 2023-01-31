@@ -392,8 +392,8 @@ local L = app.L;
 		L.HIGH_CHANCE_ALL = "|cffECBC21Afficher tous les \"Grande Chance\"";
 
 	-- Interface tab
-		L.TOOLTIP_LABEL = "Info-bulles";
-		L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Intégrations des info-bulles";
+		L.TOOLTIP_LABEL = "Infobulles";
+		L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Intégrations des infobulles";
 		--TODO: L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
 		L.DISPLAY_IN_COMBAT_CHECKBOX = "En combat";
 		--TODO: L.DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.";
