@@ -1591,7 +1591,6 @@ i(0, 369451);		-- Jade Foreseer
 ------------------
 -- PATCH 10.0.5 --
 ------------------
-i(190231, 366962);	-- Ash'adar, Harbinger of Dawn
 i(192800, 352926);	-- Skyskin Hornstrider
 -- NYI --
 i(0, 400733);	-- [PH] Goblin Shredder Rocket
@@ -1599,6 +1598,7 @@ i(0, 397406);	-- [PH] Magical Fish Mount
 i(203226, 399708);	-- Stormfused Salamanther
 i(0, 395095);	-- Whelpling
 -- Trading Post (According To Data)
+i(190231, 366962);	-- Ash'adar, Harbinger of Dawn
 i(190767, 368126);	-- Armored Golden Pterrordax
 i(0, 367875);	-- Armored Siege Kodo
 i(0, 369480);	-- Cerulean Marsh Hopper

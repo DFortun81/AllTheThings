@@ -1697,11 +1697,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
-				q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #3
+				q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #3
 					["name"] = "Jewelcrafting Drop #1: Well Dressed",
-					["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the mobs closest to Valdrakken.",
+					["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot we found best.",
 					["crs"] = {
 						195215,	-- Rebel Bruiser
+						195062,	-- Rebel Incinerator
+						195063,	-- Rebel Conjurer
+						195060,	-- Rebel Mender
 					},
 					["coords"] = {
 						{ 46.8, 59.6, THALDRASZUS },
@@ -1712,7 +1715,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
-				q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #4
+				q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #4
 					["name"] = "Jewelcrafting Drop #2: Corporeal Elemental",
 					["description"] = "Drops from any Corporeal Elemental.\nCoordinates link to the mobs closest to Valdrakken.",
 					["crs"] = {

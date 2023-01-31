@@ -85,12 +85,33 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 			}),
 		}),
 		filter(MOUNTS, {
-			i(54811, {	-- Celestial Steed (MOUNT!)
+			i(190767, {	-- Armored Golden Pterrordax (MOUNT!) (Unknown 2023)
+			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+			}),
+			mount(367875, {	-- Armored Siege Kodo (MOUNT!) (Unknown 2023) Horde only?
+			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+			}),
+			i(54811, {	-- Celestial Steed (MOUNT!) (FEB 2023)
 				["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 			}),
-			-- i(TODO, {	-- Cerulean Marsh Hopper (MOUNT!)
+			mount(369480, {	-- Cerulean Marsh Hopper (MOUNT!)
 			-- 	["cost"] = { { "c", TRADERS_TENDER, TODO }, },
-			-- }),
+			}),
+			i(190539, {	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
+			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+			}),
+			i(190168, {	-- Crusty Crawler (MOUNT!) (Unknown 2023)
+			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+			}),
+			mount(366647, {	-- Magenta Cloud Serpent (MOUNT!) (Unknown 2023)
+			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+			}),
+			i(190169, {	-- Quawks (MOUNT!) (Unknown 2023)
+			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+			}),
+			i(190613, {	-- Savage Green Battle Turtle (MOUNT!) (Unknown 2023) Alliance only?
+			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+			}),
 		}),
 	}),
 }));
