@@ -383,22 +383,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(202035),	-- Self-Heating Rations
 		i(202096),	-- Armaments of the Scale
 		i(202112),	-- Crystal Shattering Armaments
-
-		-- Profession?
-		i(202208),	-- Impressive Steelforged Essence
-		i(202209),	-- Remarkable Steelforged Essence
-		i(202210),	-- Impressive Truesteel Essence
-		i(202211),	-- Remarkable Truesteel Essence
-		i(202212),	-- Impressive Linkgrease Locksprocket
-		i(202213),	-- Remarkable Linkgrease Locksprocket
-		i(202214),	-- Impressive True Iron Trigger
-		i(202215),	-- Remarkable True Iron Trigger
-		i(202216),	-- Impressive Burnished Essence
-		i(202217),	-- Remarkable Burnished Essence
-		i(202218),	-- Impressive Hexweave Essence
-		i(202219),	-- Remarkable Hexweave Essence
-		i(202220),	-- Impressive Weapon Crystal
-		i(202221),	-- Remarkable Weapon Crystal
 		--
 		i(202252),	-- Relic of the Future (prototype)
 		i(202310),	-- Defective Doomsday Device
