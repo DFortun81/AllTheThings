@@ -46,12 +46,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					q(70417, {	-- Dragonrider Racing - Wingrest Roundabout
 						["coord"] = { 73.2, 34.0, THE_WAKING_SHORES }
 					}),
-					-- Unconfirmed
-					--[[
 					q(70410, {	-- Dragonrider Racing - Flashfrost Flyover
 						["coord"] = { 62.8, 74.0, THE_WAKING_SHORES }
 					}),
-					--]]
 
 						-- Ohn'ahran Plains --
 					q(70422, {	-- Dragonrider Racing - Emerald Garden Ascent
