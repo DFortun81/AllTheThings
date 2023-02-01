@@ -4,62 +4,50 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(RARES, {
 		n(COMMON_BOSS_DROPS, {
-			["description"] = "These items can drop from any Lv70 Elite Rare.",
+			["description"] = "These items can drop from any Lv70 Elite Rare or named Elite from any The Hunt Stage.",
 			["crs"] = {
-				193691, -- Fisherman Tinnak <Angered Ghost>
-				184853,	-- Primal Scythid Queen
-				187111,	-- Ancient Hornswog
-				190986,	-- Battlehorn Pyrhus
-				191103,	-- Uranto the Swift
-				191305,	-- The Great Shellkhan
-				192737,	-- Qalashi War Mammoth
-				192949,	-- Skaara
-				193133,	-- Sunscale Behemoth
-				193143,	-- Razk'vex the Untamed
-				193148,	-- Thunderous Matriarch
-				193153,	-- Ripsaw the Stalker
-				193154,	-- Forgotten Gryphon
-				193161,	-- Woolfang
 				193163,	-- Territorial Coastling
-				193181,	-- Skewersnout
 				193201,	-- Mucka the Raker
-				193209,	-- Zenet Avis
-				193217,	-- Drakewing
 				193229,	-- Henlare
 				193240,	-- Riverwalker Tamopo
 				193259,	-- Blue Terror
 				193273,	-- Liskron the Dazzling
 				193341,	-- Angen
-				193632,	-- Wilrive
 				193666,	-- Rokmur
 				193735,	-- Moth'go Deeploom
-				193885,	-- Salkii
-				194251,	-- Degmakh
 				194392,	-- Brackle
 				194401,	-- Spellforged Horror
-				194438,	-- Khomuur
-				194608,	-- Kholdeg
 				197009,	-- Liskheszaera
+				
+				-- Ohn'ahran Plains 
 				197353,	-- Blisterhide
-				-- The Waking Shores
-				190986,	-- Battlehorn Pyrhus
-				190985,	-- Death's Shadow
-				189822,	-- Shas'ith
-				190971, -- Shas'ith (Pre Combat Version?)
-				-- Lunker (Fishing)
-				193634,	-- Swog'ranka <Lunker>
-				-- The Hunt Mobs -- Ohn'ahran Plains
+				193153,	-- Ripsaw the Stalker
+				192949,	-- Skaara
+				193133,	-- Sunscale Behemoth
+				193209,	-- Zenet Avis
+				-- Ohn'ahran Plains (The Hunt)
 				191450,	-- Boolk
 				194409,	-- Ergburk
 				194608,	-- Kholdeg
+				194438,	-- Khomuur
 				190968,	-- Norbett
 				190161,	-- Sarana
+				191103,	-- Uranto the Swift
 				194601,	-- Zagdech
 				194624,	-- Zumakh
-				-- The Hunt Mobs -- Thaldraszus
+				
+				-- Thaldraszus 
+				193143,	-- Razk'vex the Untamed
+				193161,	-- Woolfang
+				191305,	-- The Great Shellkhan
+				-- Thaldraszus (The Hunt)
 				193311,	-- Melkhop
 				195417,	-- Tsokorg
-				-- The Hunt Mobs -- The Azure Span
+				
+				-- The Azure Span 
+				193691, -- Fisherman Tinnak <Angered Ghost>
+				193632,	-- Wilrive
+				-- The Azure Span (The Hunt)
 				194761,	-- Khuumog
 				195093,	-- Moskhoi
 				194763,	-- Tenmod
@@ -67,10 +55,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				194760,	-- Uurhilt
 				195101,	-- Yaankhi
 				195283,	-- Yamakh
-				-- The Hunt Mobs - The Waking Shores
+				
+				-- The Waking Shores
+				187111,	-- Ancient Hornswog
+				190986,	-- Battlehorn Pyrhus
+				190985,	-- Death's Shadow
+				193217,	-- Drakewing
+				194251,	-- Degmakh
+				193154,	-- Forgotten Gryphon
+				193266,	-- Lepidoralia
+				194225,	-- Muugurv
+				184853,	-- Primal Scythid Queen
+				192737,	-- Qalashi War Mammoth
+				193885,	-- Salkii
+				189822,	-- Shas'ith
+				190971, -- Shas'ith (Pre Combat Version?)
+				193181,	-- Skewersnout
+				193148,	-- Thunderous Matriarch
+				-- The Waking Shores (The Hunt)
 				194251,	-- Degmakh
 				194240,	-- Gamgus
 				194225,	-- Muugurv
+				
+				-- Lunker (Fishing)
+				193634,	-- Swog'ranka <Lunker>
 			},
 			["g"] = {
 				i(200186),	-- Amberquill Shroud
