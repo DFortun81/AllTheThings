@@ -231,39 +231,50 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["crs"] = { 195935 },
 				["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				["g"] = {
-					-- TODO: maybe link these to the HQT they trigger so that the components can be considered collectible for the unlocks?
-					r(387594),	-- Reinforced Irontree Harpoon Handle
-					r(387827),	-- Flying Fish Bone Charm
-					r(387828),	-- Iskaaran Fishing Net
-					r(387831),	-- Iskaaran Harpoon
-					r(387832),	-- Iskaaran Ice Axe
-					r(387833),	-- Polished Basalt Bracelet
-					r(387836),	-- Irontree Harpoon Handle
-					r(387375),	-- Serevite Harpoon Head
-					r(388249),	-- Jagged Serevite Harpoon Head
-					r(388250),	-- Seavine Harpoon Rope
-					r(388251),	-- Braided Seavine Harpoon Rope
-					r(388252),	-- Draconium Net Weights
-					r(388253),	-- Dense Draconium Net Weights
-					r(388254),	-- Imbu Knot
-					r(388255),	-- Double Imbu Knot
-					-- Not 100% decided on this structure...
-					n(CRAFTABLES, {
-						-- TODO: these shouldn't need cost if the Tuskaar Fishing profession is scanned by ATT
-						i(194510),	-- Iskaaran Harpoon
-						i(199694),	-- Flying Fish Bone Charm
-						i(199697),	-- Polished Basalt Bracelet
-						i(199695),	-- Iskaaran Fishing Net
-						i(199850),	-- Imbu Knot
-						i(199851),	-- Double Imbu Knot
-						i(199846),	-- Seavine Harpoon Rope
-						i(199847),	-- Braided Seavine Harpoon Rope
-						i(199844),	-- Serevite Harpoon Head
-						i(199845),	-- Jagged Serevite Harpoon Head
-						i(199848),	-- Draconium Net Weights
-						i(199849),	-- Dense Draconium Net Weight
-						i(199698),	-- Irontree Harpoon Handle
-						i(199641),	-- Reinforced Irontree Harpoon Handle
+					r(387594, {	-- Reinforced Irontree Harpoon Handle
+						q(70795),	-- Triggered after crafting 'Reinforced Irontree Harpoon Handle'
+					}),
+					r(387827, {	-- Flying Fish Bone Charm
+						q(67139),	-- Triggered after crafting 'Flying Fish Bone Charm'
+					}),
+					r(387828, {	-- Iskaaran Fishing Net
+						q(70793),	-- Triggered after crafting Iskaaran Fishing Net during Iskaaran Fishing Net (questID 70871)
+					}),
+					r(387831, {	-- Iskaaran Harpoon
+						q(70792),	-- Triggered after crafting Iskaaran Harpoon
+					}),
+					r(387832, {	-- Iskaaran Ice Axe
+						q(67141),	-- Triggered after crafting 'Iskaaran Ice Axe'
+					}),
+					r(387833, {	-- Polished Basalt Bracelet
+						q(67140),	-- Triggered after crafting 'Polished Basalt Bracelet'
+					}),
+					r(387836, {	-- Irontree Harpoon Handle
+						q(70794),	-- Triggered after crafting 'Irontree Harpoon Handle'
+					}),
+					r(387375, {	-- Serevite Harpoon Head
+						q(70796),	-- Triggered after crafting 'Serevite Harpoon Head'
+					}),
+					r(388249, {	-- Jagged Serevite Harpoon Head
+						q(70797),	-- Triggered after crafting 'Jagged Serevite Harpoon Head'
+					}),
+					r(388250, {	-- Seavine Harpoon Rope
+						q(70798),	-- Triggered after crafting 'Seavine Harpoon Rope'
+					}),
+					r(388251, {	-- Braided Seavine Harpoon Rope
+						q(70799),	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
+					}),
+					r(388252, {	-- Draconium Net Weights
+						q(70800),	-- Triggered after crafting 'Draconium Net Weights'
+					}),
+					r(388253, {	-- Dense Draconium Net Weights
+						q(70801),	-- Triggered after crafting 'Dense Draconium Net Weights'
+					}),
+					r(388254, {	-- Imbu Knot
+						q(70802),	-- Triggered after crafting 'Imbu Knot'
+					}),
+					r(388255, {	-- Double Imbu Knot
+						q(70803),	-- Triggered after crafting 'Double Imbu Knot'
 					}),
 				},
 			}),
@@ -478,8 +489,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
-		q(70793),	-- Triggered after crafting Iskaaran Fishing Net during Iskaaran Fishing Net (questID 70871)
-		q(70792),	-- Triggered after crafting Iskaaran Harpoon
 		q(72394),	-- Triggered with 'Fascinating Fliers' (70955)
 		q(72280),	-- Triggered with 'Hook, Line, and Swelter!' (70948)
 		q(72640),	-- Triggered with 'Abandoned... or Hidden Caches' (70952)
@@ -487,20 +496,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(74370),	-- Triggered with 'Contribute Supplies: Battered Imbu-made Net'
 		q(74369),	-- Triggered with 'Contribute Supplies: Salinated Serevite'
 		q(74368),	-- Triggered with 'Contribute Supplies: Khaz'gorite-infused Resin'
-		--
-		q(67140),	-- Triggered after crafting 'Polished Basalt Bracelet'
-		q(67139),	-- Triggered after crafting 'Flying Fish Bone Charm'
-		q(67141),	-- Triggered after crafting 'Iskaaran Ice Axe'
-		q(70802),	-- Triggered after crafting 'Imbu Knot'
-		q(70798),	-- Triggered after crafting 'Seavine Harpoon Rope'
-		q(70796),	-- Triggered after crafting 'Serevite Harpoon Head'
-		q(70794),	-- Triggered after crafting 'Irontree Harpoon Handle'
-		q(70803),	-- Triggered after crafting 'Double Imbu Knot'
-		q(70800),	-- Triggered after crafting 'Draconium Net Weights'
-		q(70797),	-- Triggered after crafting 'Jagged Serevite Harpoon Head'
-		q(70801),	-- Triggered after crafting 'Dense Draconium Net Weights'
-		q(70799),	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
-		q(70795),	-- Triggered after crafting 'Reinforced Irontree Harpoon Handle'
 		--
 		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
 		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)
