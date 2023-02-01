@@ -276,6 +276,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					r(388255, {	-- Double Imbu Knot
 						q(70803),	-- Triggered after crafting 'Double Imbu Knot'
 					}),
+					n(CRAFTABLES, {
+						-- TODO: these shouldn't need cost if the Tuskaar Fishing profession is scanned by ATT
+						i(194510),	-- Iskaaran Harpoon
+						i(199694),	-- Flying Fish Bone Charm
+						i(199697),	-- Polished Basalt Bracelet
+						i(199695),	-- Iskaaran Fishing Net
+						i(199850),	-- Imbu Knot
+						i(199851),	-- Double Imbu Knot
+						i(199846),	-- Seavine Harpoon Rope
+						i(199847),	-- Braided Seavine Harpoon Rope
+						i(199844),	-- Serevite Harpoon Head
+						i(199845),	-- Jagged Serevite Harpoon Head
+						i(199848),	-- Draconium Net Weights
+						i(199849),	-- Dense Draconium Net Weight
+						i(199698),	-- Irontree Harpoon Handle
+						i(199641),	-- Reinforced Irontree Harpoon Handle
+					}),
 				},
 			}),
 			n(RARES, sharedData({
