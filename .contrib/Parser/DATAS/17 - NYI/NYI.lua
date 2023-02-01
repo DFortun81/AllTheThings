@@ -781,7 +781,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194442),	-- Activity Map: Apex Canopy
 		}),
 		n(WEAPONS, {
-			i(197693),	-- Shikaar Hunter's Crossbow
 			i(200130),	-- Corpse Ripper
 			i(200139),	-- Tempest Arc
 			i(200176),	-- Missingway Hand Canno

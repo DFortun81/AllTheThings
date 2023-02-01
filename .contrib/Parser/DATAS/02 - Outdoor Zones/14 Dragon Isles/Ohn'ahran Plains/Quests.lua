@@ -982,6 +982,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(197677),	-- Plainswalking Stick
 					i(197679),	-- Rockfang Uppercut
 					i(197904),	-- Shikaar Hunting Knife
+					i(197693),	-- Shikaar Hunter's Crossbow
 					i(197690),	-- Staff of the Windsage
 					i(197903),	-- Waterback Culling Axe
 				},
