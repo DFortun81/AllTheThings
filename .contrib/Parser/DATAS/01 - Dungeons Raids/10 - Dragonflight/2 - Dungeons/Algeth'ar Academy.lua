@@ -9,6 +9,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 			2098,	-- The Pitch
 		},
 		["g"] = {
+			-- Last Boss (any difficulty)
+			n(DROPS, sharedData({
+				["crs"] = { 190609 },	-- Echo of Doragosa
+			},{
+				i(197147),	-- Highland Drake: Heavy Scales (DM!)
+				i(197112),	-- Highland Drake: Single Horned Head (DM!)
+				i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
+			})),
 			n(QUESTS, {
 				q(72193, {	-- The Algeth'ar Academy
 					-- ["sourceQuests"] = {  },	--
@@ -76,9 +84,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(193703),	-- Organized Pontificator's Cap
 						i(193704),	-- Scaled Commencement Spaulders
 						i(193706),	-- Venerated Professor's Greaves
-						i(197147),	-- Highland Drake: Heavy Scales (DM!)
-						i(197112),	-- Highland Drake: Single Horned Head (DM!)
-						i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
 					},
 				}),
 			}),
@@ -128,9 +133,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(193703),	-- Organized Pontificator's Cap
 						i(193704),	-- Scaled Commencement Spaulders
 						i(193706),	-- Venerated Professor's Greaves
-						i(197147),	-- Highland Drake: Heavy Scales (DM!)
-						i(197112),	-- Highland Drake: Single Horned Head (DM!)
-						i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
 					},
 				}),
 			}),
@@ -183,9 +185,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(193703),	-- Organized Pontificator's Cap
 						i(193704),	-- Scaled Commencement Spaulders
 						i(193706),	-- Venerated Professor's Greaves
-						i(197147),	-- Highland Drake: Heavy Scales (DM!)
-						i(197112),	-- Highland Drake: Single Horned Head (DM!)
-						i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
 					},
 				}),
 			}),

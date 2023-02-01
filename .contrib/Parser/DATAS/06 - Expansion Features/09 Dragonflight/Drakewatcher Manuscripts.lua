@@ -910,12 +910,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197610),	-- Windborne Velocidrake: Yellow Horns (DM!)
 	}),
 })));
+
 root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
-	i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (NYI TAG)
 	i(197155),	-- Highland Drake: Finned Neck ("quest reward but not found in 2months")
 	i(197591),	-- Windborne Velocidrake: Hairy Head ("centaur renown" but not on vendor)
 	i(197628),	-- Windborne Velocidrake: Plated Neck ("world drop" but not found in 2months")
 	i(197604),	-- Windborne Velocidrake: Ox Horns ("centaur renown" but not on vendor)
 	i(197636),	-- Windborne Velocidrake: Shrieker Pattern ("centaur renown" but not on vendor)
-	i(197609),	-- Windborne Velocidrake: White Horns ("world drop" but not found in 2months")	
+	i(197609),	-- Windborne Velocidrake: White Horns ("world drop" but not found in 2months")
 })));

@@ -1209,28 +1209,35 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			["sym"] = {{"select","itemID",
 				-- available from Bottle but has another Source
 				194298,	-- Pattern: Forlorn Funeral Pall (RECIPE!)
+				194267,	-- Pattern: Shimmering Embroidery Thread (RECIPE!)
+				194507,	-- Plans: Serevite Skeleton Key (RECIPE!)
+				194486,	-- Plans: Shield of the Hearth (RECIPE!)
+				198908,	-- Technique: Illusion Parchment: Love Charm (RECIPE!)
+				201741,	-- Technique: Renewed Proto-Drake: Bovine Horns (RECIPE!)
+				201738,	-- Technique: Renewed Proto-Drake: Steel and Yellow Armor (RECIPE!)
+				198904,	-- Technique: Windborne Velocidrake: Windswept Pattern (RECIPE!)
 			}},
 			["g"] = {
 				-- only known source is the Bottle
 				i(194671),	-- Design: "Rhinestone" Sunglasses (RECIPE!)
 				i(198714),	-- Plans: Prototype Regal Barding Framework (RECIPE!)
 				i(191544),	-- Recipe: Cauldron of the Pooka (RECIPE!)
-				i(191589),	-- Recipe: Fervid Incense (RECIPE!)
-				i(191587),	-- Recipe: Somniferous Incense (RECIPE!)
-				i(199232),	-- Schematic: Bundle of Fireworks (RECIPE!)
-				i(199236),	-- Schematic: D.U.C.K.O.Y. (RECIPE!)
-				i(199228),	-- Schematic: Grease Grenade (RECIPE!)
-				i(198905),	-- Technique: Illusion Parchment: Aqua Torrent (RECIPE!)
-				i(198899),	-- Technique: Renewed Proto-Drake: Predator Pattern (RECIPE!)
-				i(201738),	-- Technique: Renewed Proto-Drake: Steel and Yellow Armor (RECIPE!)
-				i(198903),	-- Technique: Windborne Velocidrake: Spined Head (RECIPE!)
-				i(198896),	-- Technique: Highland Drake: Spined Throat (RECIPE!)
-				i(198891),	-- Technique: Cliffside Wylderdrake: Conical Head (RECIPE!)
 				i(198109),	-- Recipe: Churnbelly Tea (RECIPE!)
+				i(191589),	-- Recipe: Fervid Incense (RECIPE!)
 				i(198114),	-- Recipe: Filet of Fangs (RECIPE!)
 				i(198116),	-- Recipe: Salt-Baked Fishcake (RECIPE!)
 				i(198115),	-- Recipe: Seamoth Surprise (RECIPE!)
+				i(191587),	-- Recipe: Somniferous Incense (RECIPE!)
 				i(198113),	-- Recipe: Timely Demise (RECIPE!)
+				i(199232),	-- Schematic: Bundle of Fireworks (RECIPE!)
+				i(199236),	-- Schematic: D.U.C.K.O.Y. (RECIPE!)
+				i(199228),	-- Schematic: Grease Grenade (RECIPE!)
+				i(198891),	-- Technique: Cliffside Wylderdrake: Conical Head (RECIPE!)
+				i(198896),	-- Technique: Highland Drake: Spined Neck (RECIPE!)
+				i(198905),	-- Technique: Illusion Parchment: Aqua Torrent (RECIPE!)
+				i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
+				i(198899),	-- Technique: Renewed Proto-Drake: Predator Pattern (RECIPE!)
+				i(198903),	-- Technique: Windborne Velocidrake: Spined Head (RECIPE!)
 			},
 		}),
 		i(194967),	-- Aileron Seamoth

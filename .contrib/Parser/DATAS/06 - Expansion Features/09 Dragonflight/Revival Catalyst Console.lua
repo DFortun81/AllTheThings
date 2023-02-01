@@ -792,8 +792,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(72528, {	-- Revival Catalyst
 					["sourceQuests"] = { 72360 },	-- Reviving the Machine
-					["provider"] = { "n", 198695 },	-- Antuka
-					["coord"] = { 60.6, 53.8, THALDRASZUS },
+					["providers"] = {
+						{ "n", 198695 },	-- Antuka
+						{ "n", 199373 },	-- Antuka
+					},
+					["coords"] = {
+						{ 60.6, 53.8, THALDRASZUS },
+						{ 58.5, 57.6, VALDRAKKEN },
+					},
 					["isWeekly"] = true,
 					["g"] = {
 						currency(2166),	-- Revival Catalyst Account-Wide Currency

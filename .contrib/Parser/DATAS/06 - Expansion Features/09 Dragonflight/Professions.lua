@@ -1272,33 +1272,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "i", 202105 },	-- Rusted Coin of the Isles
 				["requireSkill"] = FISHING,
 			}),
-			i(198438, {	-- Draconic Recipe in a Bottle
-					i(194298),	-- pattern forlorn funeral pall
-					i(194267),	-- pattern shimmering embroidery thread
-					i(198714),	-- plans prototype regal barding framework
-					i(194486),	-- plans shield of the hearth
-					i(194507),	-- plans serevite skeleton key
-					i(191544),	-- recipe cauldron of the pooka
-					i(191589),	-- recipe fervid incense
-					i(198109),	-- recipe churnbelly tea
-					i(198114),	-- recipe filet of fangs
-					i(198115),	-- recipe seamoth surprise
-					i(198116),	-- recipe salt baked fishcake
-					i(191587),	-- recipe somniferous incense
-					i(198113),	-- recipe timely demise
-					i(199232),	-- schematic bundle of fireworks
-					i(199236),	-- schematic d u c k o y
-					i(199228),	-- schematic grease grenade
-					i(198891),	-- technique cliffside wylderdrake conical head
-					i(198896),	-- technique highland drake spined neck
-					i(201741),	-- Technique: Renewed Proto-Drake: Bovine Horns
-					i(198899),	-- technique renewed proto drake predator pattern
-					i(198903),	-- technique windborne velocidrake spined head
-					i(198904),	-- technique windborne velocidrake windswept pattern
-					i(198905),	-- technique illusion parchment aqua torrent
-					i(198908),	-- technique illusion parchment love charm
-					i(198910),	-- technique illusion parchment shadow orb
-			}),
 		})),
 		prof(HERBALISM, sharedData({
 			["requireSkill"] = HERBALISM,
