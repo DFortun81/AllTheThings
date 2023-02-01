@@ -91,7 +91,7 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 			ach(17345, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 }, }, {	-- Airborne Tumbler (x50)
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["g"] =	{
-					title(753),	-- Skyscourge <Name>
+					title(492),	-- Skyscourge <Name>
 				},
 			})),
 			ach(16615, {	-- Blood Bank

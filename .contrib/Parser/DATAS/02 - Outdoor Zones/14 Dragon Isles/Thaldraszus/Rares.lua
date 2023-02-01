@@ -109,6 +109,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200146),	-- Phenran's Discordant Smasher
 				},
 			}),
+			n(201550,	-- Overloading Defense Matrix
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+				["coord"] = { 59.6, 61.8, THALDRASZUS },
+			--	["questID"] = 74566,
+				["group"] = {
+					i(200303),	-- Dreamweaver Acolyte's Staff
+					i(200299),	-- Strange Clockwork Gladius
+					i(203677),	-- Watcher's 'Neck' Ring
+				},
+			})),
 			n(201552,	-- Overseer Stonetongue
 			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 59.0, 56.0, THALDRASZUS },
