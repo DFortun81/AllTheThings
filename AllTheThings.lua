@@ -2532,7 +2532,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 		for _,factionID in ipairs(DFmajorFactionIDs) do
 			info = C_MajorFactions.GetMajorFactionData(factionID);
 			tinsert(majorFactionInfo, "|");
-			tinsert(majorFactionInfo, info.name:sub(1,3));
+			tinsert(majorFactionInfo, info.name:sub(1,4));
 			tinsert(majorFactionInfo, ":");
 			tinsert(majorFactionInfo, info.renownLevel);
 		end
