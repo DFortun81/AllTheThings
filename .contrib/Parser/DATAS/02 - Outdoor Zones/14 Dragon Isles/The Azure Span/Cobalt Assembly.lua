@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				})),
 				n(201555, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Srivantor
 					["coord"] = { 47.0, 22.0, THE_AZURE_SPAN },
-					["questID"] = 74458,
+					["questID"] = 74543,
 					["isDaily"] = true,
 					["g"] = {
 						i(203663),	-- Cinch of the Sundered Flame
