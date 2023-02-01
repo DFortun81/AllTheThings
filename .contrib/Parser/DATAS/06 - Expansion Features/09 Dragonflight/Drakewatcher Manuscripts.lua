@@ -742,7 +742,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197116),	-- Highland Drake: Ears
 		i(197098),	-- Highland Drake: Finned Back (DM!)
 		i(197106),	-- Highland Drake: Finned Head
-		i(197155),	-- Highland Drake: Finned Neck
 		i(197090),	-- Highland Drake: Gold and Black Armor (DM!)
 		i(197156),	-- Highland Drake: Gold and Green Armor
 		i(197094),	-- Highland Drake: Gold and Red Armor (DM!)
@@ -912,7 +911,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 	}),
 })));
 root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
-	i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
+	i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (NYI TAG)
+	i(197155),	-- Highland Drake: Finned Neck ("quest reward but not found in 2months")
 	i(197591),	-- Windborne Velocidrake: Hairy Head ("centaur renown" but not on vendor)
 	i(197628),	-- Windborne Velocidrake: Plated Neck ("world drop" but not found in 2months")
 	i(197604),	-- Windborne Velocidrake: Ox Horns ("centaur renown" but not on vendor)

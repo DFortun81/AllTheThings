@@ -394,11 +394,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 				}),
 				i(200084, {	-- Salinated Serevite
-					["description"] = "Obtained from Full Tuskarr Fishing Nets.",
+					["description"] = "Obtained from Rare fishing pools.",
 					["providers"] = {
+						{ "o", 377938 },	-- Prismatic Leaper School
+						{ "o", 382180 },	-- Overheated Magma Thresher Pool
+						{ "n", 197596 },	-- Deep Ice Fishing Hole
+						--[[ Never got one from it and wowhead doesnt have data either. If confirmed, readd them ~Gold Jan 2023
 						{ "o", 382071 },	-- Full Fishing Net
 						{ "o", 379314 },	-- Full Fishing Net
 						{ "o", 381069 },	-- Full Fishing Net
+						--]]
 					},
 				}),
 				o(381514, {	-- Sea-Polished Basalt
@@ -419,12 +424,53 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 				}),
 			}),
+			n(SPECIAL, sharedData({
+				["description"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.\nWhich Lunker Sighting is up changes every week & if there is no fish icon, the pool is not up and you cannot spawn a Thresher at that location.",
+				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
+			},{
+				n(192919, {	-- Gigantic Thresher <Lunker>
+					["coords"] = {
+						{ 65.8, 74.8, THE_WAKING_SHORES },
+						{ 57.2, 65.4, THALDRASZUS },
+					},
+					["groups"] = {
+						i(198438, {	-- Draconic Recipe in a Bottle
+						--[[	["sym"] = {
+								{"select","itemID", 198438},{"pop"},	-- Draconic Recipe in a Bottle
+							},
+						--]]	-- Requires Symlink from the Recipe under df>ef>fishing
+						}),
+					},
+				}),
+				n(191951, {	-- Massive Thresher <Lunker>
+					["coords"] = {
+						{ 65.8, 74.8, THE_WAKING_SHORES },
+						{ 57.2, 65.4, THALDRASZUS },
+						{ 13.6, 48.6, THE_AZURE_SPAN },
+					},
+					["groups"] = {
+						i(198438, {	-- Draconic Recipe in a Bottle
+						--[[	["sym"] = {
+								{"select","itemID", 198438},{"pop"},	-- Draconic Recipe in a Bottle
+							},
+						--]]	-- Requires Symlink from the Recipe under df>ef>fishing
+						}),
+					},
+				}),
+			})),
 			--[[ -- To Do: Add Tuskarr Tackleboxes. Can be looted from Tuskarr Tackleboxes (requires renown 27 to see)
 				-- we probably dont need coords of every tuskarr tacklebox location, there's about a billion of them and they respawn so fast you can't even escape one area
 				i(199338),	-- Copper Coin of the Isles
+				["groups"] = {
+					i(198438, {	-- Draconic Recipe in a Bottle
+						["sym"] = {
+							{"select","itemID", 198438},{"pop"},	-- Draconic Recipe in a Bottle
+							},
+							-- Requires Symlink from the Recipe under df>ef>fishing
+					}),
+				},
 				i(199340),	-- Gold Coin of the Isles
 				i(199339),	-- Silver Coin of the Isles
-			}),
 			--]]
 		})
 	}),
