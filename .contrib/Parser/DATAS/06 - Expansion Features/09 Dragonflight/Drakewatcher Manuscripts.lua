@@ -679,7 +679,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(196981),	-- Cliffside Wylderdrake: Conical Head (DM!)
 		i(196979),	-- Cliffside Wylderdrake: Curled Head Horns
 		i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
-		i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
 		i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 		i(196969),	-- Cliffside Wylderdrake: Finned Back (DM!)
 		i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
@@ -883,7 +882,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197580),	-- Windborne Velocidrake: Gold and Red Armor (DM!)
 		i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 		i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
-		i(197591),	-- Windborne Velocidrake: Hairy Head
 		i(197617),	-- Windborne Velocidrake: Heavy Scales
 		i(197600),	-- Windborne Velocidrake: Helm
 		i(197619),	-- Windborne Velocidrake: Hooked Snout
@@ -891,12 +889,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197589),	-- Windborne Velocidrake: Large Head Fin (DM!)
 		i(197618),	-- Windborne Velocidrake: Long Snout (DM!)
 		i(197585),	-- Windborne Velocidrake: Maned Back
-		i(197604),	-- Windborne Velocidrake: Ox Horns
-		i(197628),	-- Windborne Velocidrake: Plated Neck
 		i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
 		i(197599),	-- Windborne Velocidrake: Red Fur (DM!)
 		i(197614),	-- Windborne Velocidrake: Red Scales (DM!)
-		i(197636),	-- Windborne Velocidrake: Shrieker Pattern
 		i(197578),	-- Windborne Velocidrake: Silver and Blue Armor (DM!)
 		i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
 		i(197594),	-- Windborne Velocidrake: Small Ears
@@ -910,10 +905,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197606),	-- Windborne Velocidrake: Swept Horns
 		i(197615),	-- Windborne Velocidrake: Teal Scales
 		i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
-		i(197609),	-- Windborne Velocidrake: White Horns
 		i(197616),	-- Windborne Velocidrake: White Scales
 		i(197582),	-- Windborne Velocidrake: White and Pink Armor
 		i(197634),	-- Windborne Velocidrake: Windswept Pattern (DM!)
 		i(197610),	-- Windborne Velocidrake: Yellow Horns (DM!)
 	}),
+})));
+root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
+	i(197591),	-- Windborne Velocidrake: Hairy Head ("centaur renown" but not on vendor)
+	i(197628),	-- Windborne Velocidrake: Plated Neck ("world drop" but not found in 2months")
+	i(197604),	-- Windborne Velocidrake: Ox Horns ("centaur renown" but not on vendor)
+	i(197636),	-- Windborne Velocidrake: Shrieker Pattern ("centaur renown" but not on vendor)
+	i(197609),	-- Windborne Velocidrake: White Horns ("world drop" but not found in 2months")	
 })));

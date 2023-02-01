@@ -81,6 +81,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["g"] = {
 					i(200749),	-- Tuskarr Clobbering Board
 					i(200748),	-- Tuskarr Ulu Knife
+					i(199892),	-- Tuskarr Traveling Soup Pot
 				},
 			}),
 			q(72386, {	-- Dragon Isles Supplies

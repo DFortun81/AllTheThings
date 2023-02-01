@@ -9,7 +9,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				193163,	-- Territorial Coastling
 				193201,	-- Mucka the Raker
 				193229,	-- Henlare
-				193240,	-- Riverwalker Tamopo
 				193259,	-- Blue Terror
 				193273,	-- Liskron the Dazzling
 				193341,	-- Angen
@@ -42,6 +41,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				191305,	-- The Great Shellkhan
 				-- Thaldraszus (The Hunt)
 				193311,	-- Melkhop
+				193240,	-- Riverwalker Tamopo
 				195417,	-- Tsokorg
 				
 				-- The Azure Span 

@@ -64,8 +64,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				n(201553, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Grand Artificer Zeerak
 					["coord"] = { 47.5, 23.6, THE_AZURE_SPAN },
 					["questID"] = 74545,
-					["g"] = {
+					["groups"] = {
 						i(203664),	-- Wild Magic Insulating Bands
+						i(197400),	-- Renewed Proto-Drake: Shark Snout
 					},
 				})),
 				n(201555, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Srivantor

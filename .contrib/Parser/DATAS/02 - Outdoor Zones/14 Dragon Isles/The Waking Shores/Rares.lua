@@ -43,8 +43,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74092,
 				["g"] = {
 					i(200138),	-- Ancient Dancer's Longspear
-					i(197586),	-- Windborne Velocidrake: Spiked Back
 					i(200303),	-- Dreamweaver Acolyte's Staff
+					i(197100),	-- Highland Drake: Crested Brow
+					i(197586),	-- Windborne Velocidrake: Spiked Back
 				},
 			}),
 			n(191611, {	-- Dragonhunter Igordan

@@ -53,6 +53,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 							i(199234),	-- Schematic: Khaz'gorite Fisherfriend (RECIPE!)
 							i(201736),	-- Technique: Cliffside Wylderdrake: Steel and Yellow Armor (RECIPE!)
 							i(201737),	-- Technique: Highland Drake: Steel and Yellow Armor (RECIPE!)
+							i(201738),	-- Technique: Renewed Proto-Drake: Steel and Yellow Armor
 							i(201739),	-- Technique: Windborne Velocidrake: Steel and Orange Armor (RECIPE!)
 							i(202042),	-- Aquatic Shades (TOY!)
 						},
