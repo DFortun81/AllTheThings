@@ -2718,6 +2718,7 @@ _.ObjectNames = {
 	[382325] = "Onyx Gem Cluster",
 	[382621] = "Revival Catalyst Console",
 	[383625] = "Case of Fresh Gleamfish",
+	[383732] = "Tuskarr Tacklebox",
 	[383733] = "Disturbed Dirt",
 	[383734] = "Disturbed Dirt",
 	[383735] = "Disturbed Dirt",

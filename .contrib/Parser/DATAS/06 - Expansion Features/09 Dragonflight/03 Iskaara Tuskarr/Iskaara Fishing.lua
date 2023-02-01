@@ -274,7 +274,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						q(70802),	-- Triggered after crafting 'Imbu Knot'
 					}),
 					r(388255, {	-- Double Imbu Knot
-						q(70803),	-- Triggered after crafting 'Double Imbu Knot'
+						i(199851, {	-- Double Imbu Knot
+							["cost"] = { 
+								{ "i", 200082, 6 }, -- 6x Battered Imbu-made Net
+								{ "i", 200085, 1 }, -- 1x Khaz'gorite Wire
+							},
+							["groups"] = {
+								q(70803),	-- Triggered after crafting 'Double Imbu Knot'
+							},
+						}),
 					}),
 					n(CRAFTABLES, {
 						-- TODO: these shouldn't need cost if the Tuskaar Fishing profession is scanned by ATT
@@ -283,7 +291,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(199697),	-- Polished Basalt Bracelet
 						i(199695),	-- Iskaaran Fishing Net
 						i(199850),	-- Imbu Knot
-						i(199851),	-- Double Imbu Knot
 						i(199846),	-- Seavine Harpoon Rope
 						i(199847),	-- Braided Seavine Harpoon Rope
 						i(199844),	-- Serevite Harpoon Head
@@ -463,10 +470,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 					["groups"] = {
 						i(198438, {	-- Draconic Recipe in a Bottle
-						--[[	["sym"] = {
-								{"select","itemID", 198438},{"pop"},	-- Draconic Recipe in a Bottle
-							},
-						--]]	-- Requires Symlink from the Recipe under df>ef>fishing
+							["sym"] = {{ "fill" }},	-- simply fill this item						
 						}),
 					},
 				}),
@@ -478,28 +482,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 					["groups"] = {
 						i(198438, {	-- Draconic Recipe in a Bottle
-						--[[	["sym"] = {
-								{"select","itemID", 198438},{"pop"},	-- Draconic Recipe in a Bottle
-							},
-						--]]	-- Requires Symlink from the Recipe under df>ef>fishing
+							["sym"] = {{ "fill" }},	-- simply fill this item						
 						}),
 					},
 				}),
 			})),
-			--[[ -- To Do: Add Tuskarr Tackleboxes. Can be looted from Tuskarr Tackleboxes (requires renown 27 to see)
-				-- we probably dont need coords of every tuskarr tacklebox location, there's about a billion of them and they respawn so fast you can't even escape one area
-				i(199338),	-- Copper Coin of the Isles
+			o(383732, {	-- Tuskarr Tacklebox
+				["minReputation"] = { 2511, 27 },	-- Iskaara Tuskarr Renown 27
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["groups"] = {
+					i(199338),	-- Copper Coin of the Isles
 					i(198438, {	-- Draconic Recipe in a Bottle
-						["sym"] = {
-							{"select","itemID", 198438},{"pop"},	-- Draconic Recipe in a Bottle
-							},
-							-- Requires Symlink from the Recipe under df>ef>fishing
+						["sym"] = {{ "fill" }},	-- simply fill this item						
 					}),
+					i(199340),	-- Gold Coin of the Isles
+					i(199339),	-- Silver Coin of the Isles
 				},
-				i(199340),	-- Gold Coin of the Isles
-				i(199339),	-- Silver Coin of the Isles
-			--]]
+			}),
 		})
 	}),
 })));
