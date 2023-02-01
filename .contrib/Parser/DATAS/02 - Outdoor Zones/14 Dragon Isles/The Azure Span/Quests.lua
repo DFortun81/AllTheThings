@@ -1597,6 +1597,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74458, {	-- Srivantor
 					["provider"] = { "n", 201555 },	-- Srivantor
 					["coord"] = { 46.7, 21.9, THE_AZURE_SPAN },
+					["isDaily"] = true,
 				}),
 				q(65841, {	-- Stop the Spread
 					["sourceQuests"] = {

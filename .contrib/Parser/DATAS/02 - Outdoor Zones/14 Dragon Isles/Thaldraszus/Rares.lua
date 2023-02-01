@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(201550,	-- Overloading Defense Matrix
 			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 59.6, 61.8, THALDRASZUS },
-			--	["questID"] = 74566,
+				["questID"] = 74565,
 				["group"] = {
 					i(200303),	-- Dreamweaver Acolyte's Staff
 					i(200299),	-- Strange Clockwork Gladius
@@ -204,10 +204,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
 	m(THALDRASZUS, {
 		n(RARES, sharedData({["isDaily"] = true}, {
-			n(201550, {	-- Overloading Defense Matrix
-				-- ["coord"] = { , , THALDRASZUS },
-				["questID"] = 74449,
-			}),
 			n(193238, {	-- Spellwrought Snowman
 				["coord"] = { 55.0, 34.0, THALDRASZUS },
 				["questID"] = 73064,

@@ -2789,6 +2789,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74229),	-- Skinning Death's Shadow
 			q(74550),	-- Skinning Groffnar
 			q(74555, {["timeline"] = { ADDED_DF_0_5 }}),	-- Skinning Shardwing
+			q(74559, {["timeline"] = { ADDED_DF_0_5 }}),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--

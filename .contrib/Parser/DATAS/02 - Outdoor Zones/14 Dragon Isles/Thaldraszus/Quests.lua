@@ -1093,6 +1093,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 193246 },	-- Matriarch Remalla
 					["coord"] = { 52.8, 59.2, THALDRASZUS },
 				}),
+				q(74449,	-- Overloading Defense Matrix
+				bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+					["provider"] = { "n", 201550 },	-- Overloading Defense Matrix
+					["coord"] = { 59.8, 61.6, THALDRASZUS },
+					["isDaily"] = true,
+				})),
 				q(74448, {	-- Overseer Stonetongue
 					["provider"] = { "n", 201552 },	-- Overseer Stonetongue
 					["coord"] = { 59.0, 56.0, THALDRASZUS },
