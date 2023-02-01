@@ -120,6 +120,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(65720),	-- Ensemble: Swashbuckling Buccaneer's Slops
 		q(65737),	-- Ensemble: Vagabond's Rosy Threads
 		q(65677),	-- Ensemble: Wanderer's Rosy Trappings
+		q(72681),	-- Triggered after completing 66959 (and cross complete 66858)
 	})),
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {
 		-- q(65677),	-- Ensemble: Wanderer's Azure/Snowy Trappings	-- Wowhead has same id as Rosy Trappings

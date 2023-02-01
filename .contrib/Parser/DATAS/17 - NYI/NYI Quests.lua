@@ -7532,7 +7532,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(72132),	--
 				q(72133),	--
 				q(72384),	-- Valdrakken Tour
-				q(72681),	--
 				q(72735),	--
 				q(72736),	--
 				q(72811),	--
