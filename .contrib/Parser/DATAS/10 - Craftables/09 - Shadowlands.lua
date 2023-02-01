@@ -451,7 +451,7 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 		}),
 		n(HANDS, {
 			filter(LEATHER, {
-				i(172322),	-- Umbrahide Gauntlets
+				i(172316),	-- Umbrahide Gauntlets
 				i(172252),	-- Shadebound Gauntlets
 				i(172236),	-- Desolate Leather Gauntlets
 			}),
