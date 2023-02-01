@@ -488,7 +488,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 			})),
 			o(383732, {	-- Tuskarr Tacklebox
-				["minReputation"] = { 2511, 27 },	-- Iskaara Tuskarr Renown 27
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["groups"] = {
 					i(199338),	-- Copper Coin of the Isles
