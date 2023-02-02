@@ -10,12 +10,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- ["g"] = {
 				-- },
 			}),
-			n(193255, {	-- Archmage Cleary
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = ,
-				-- ["g"] = {
-				-- },
-			}),
 			n(194210, {	-- Azure Pathfinder
 				["coord"] = { 60.7, 31.7, THE_AZURE_SPAN },
 				["questID"] = 73867,
@@ -150,7 +144,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			n(201558,	-- Malgain Rockknell
 			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
-				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["coord"] = { 56.0, 67.6, THE_AZURE_SPAN },
 				["questID"] = 74531,
 				["g"] = {
 					i(203660),	-- Rockknell's Groundpounders
@@ -214,9 +208,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(193238, {	-- Spellwrought Snowman
-				["description"] = "Click the Arcane Pedestal.",
-				["coord"] = { 55.0, 34.0, THE_AZURE_SPAN },
-				["cr"] = 193242,	-- Arcane Pedestal
+				["description"] = "Collect 10 arcane energy around the small mountain & after turning them in, click the Arcane Pedestal to summon the mob.",
+				["coords"] = {
+					{ 55.0, 34.0, THE_AZURE_SPAN },	-- Rare
+					{ 53.9, 35.6, THE_AZURE_SPAN },	-- Arcane Pedestal
+				},
+				["crs"] = {
+					193242,	-- Arcane Pedestal
+					193255,	-- Archmage Cleary
+				},
 				["questID"] = 74082,
 				["g"] = {
 					i(200211),	-- Snowman's Icy Gaze
@@ -238,10 +238,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- },
 			}),
 			n(193196, {	-- Trilvarus Loreweaver
-				["description"] = "Collect a little blue crystal called Singing Fragment & bring it to the NPC to summon him.",
-				-- add npc crs
+				["description"] = "Collect a little blue crystal called Singing Fragment north of Olias & bring it to him to summon Trilvarus.",
+				["crs"] = {
+					193782,	-- Olias Rivershaw
+				},
 				["coords"] = {
-					{ 70.2, 25.2, THE_AZURE_SPAN },
+					{ 70.2, 25.2, THE_AZURE_SPAN },	-- Rare
 					{ 70.2, 26.2, THE_AZURE_SPAN },	-- Crystal Spot
 				},
 				["questID"] = 74087,
@@ -262,7 +264,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			n(201556,	-- Waterpots
 			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
-				-- ["coord"] = { , , THE_AZURE_SPAN },
+				["coord"] = { 57.2, 64.6, THE_AZURE_SPAN },
 				["questID"] = 74535,
 				["g"] = {
 					i(203659),	-- Waterpot's Halfpot Deflector
@@ -271,8 +273,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193632, {	-- Wilrive
 				["coord"] = { 59.4, 55.2, THE_AZURE_SPAN },
 				["questID"] = 73900,
-				-- ["g"] = {
-				-- },
 			}),
 		})),
 	}),
