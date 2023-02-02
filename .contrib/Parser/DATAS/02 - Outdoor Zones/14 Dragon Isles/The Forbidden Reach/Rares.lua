@@ -1,59 +1,78 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
-	m(THE_FORBIDDEN_REACH, bubbleDownSelf({ ["classes"] = { EVOKER }, ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+	m(THE_FORBIDDEN_REACH, {
 		n(RARES, {
-			n(191729, {	-- Deathrip
-				["coord"] = { 32.9, 41.2, THE_FORBIDDEN_REACH },
-				["questID"] = 66966,
-				["g"] = {
-					i(197725),	-- Deathrip's Curled Claw
-				},
+			n(200681, {	-- Bonesifter Marwak
+				["coord"] = { 41.9, 57.1, THE_FORBIDDEN_REACH },
+				-- ["questID"] = ,
+				-- ["g"] = {
+				-- },
 			}),
-			n(191746, {	-- Ketess the Pilager
-				["coord"] = { 56.7, 65.6, THE_FORBIDDEN_REACH },
-				["questID"] = 66975,
-				["g"] = {
-					i(194741),	-- Earthbound Tome
-				},
+			n(200610, {	-- Duzalgor <Guardian of the Noxious Brood>
+				["description"] = "Inside The Support Creche.",
+				["coord"] = { 41.1, 43.9, THE_FORBIDDEN_REACH },
+				["questID"] = 73118,
+				-- ["g"] = {
+				-- },
 			}),
-			n(191713, {	-- Scytherin
-				["coord"] = { 28.9, 36.6, THE_FORBIDDEN_REACH },
-				["questID"] = 66967,
-				["g"] = {
-					i(196435),	-- Scytherin's Barbed Necklace
-				},
+			n(200537, {	-- Gahz'raxes
+				["coord"] = { 24.6, 30.4, THE_FORBIDDEN_REACH },
+				["questID"] = 73095,
+				-- ["g"] = {
+				-- },
 			}),
-			n(181833, {	-- Shimmermaw
-				["coord"] = { 71.0, 37.4, THE_FORBIDDEN_REACH },
-				["questID"] = 64971,
-				["g"] = {
-					i(194074),	-- Gilded Key
-				},
+			n(200956, {	-- Ookbeard <Irontide "Captain">
+				["coord"] = { 26.6, 41.5, THE_FORBIDDEN_REACH },
+				["questID"] = 73366,
+				-- ["g"] = {
+				-- },
 			}),
-			n(181427, {	-- Stormspine
-				["coord"] = { 54.9, 43.1, THE_FORBIDDEN_REACH },
-				["questID"] = 64859,
-				["g"] = {
-					i(194084),	-- Charged Storm Crystal
-				},
+			n(200904, {	-- Veltrax
+				["coord"] = { 76.4, 64.6, THE_FORBIDDEN_REACH },
+				["questID"] = 74345,
+				-- ["g"] = {
+				-- },
 			}),
-			n(182280, {	-- Tazenrath
-				["coord"] = { 79.7, 74.3, THE_FORBIDDEN_REACH },
-				["questID"] = 66973,
-				["g"] = {
-					i(194883),	-- Runic Wing
-				},
+			n(200584, {	-- Vraken The Hunter
+				["coord"] = { 59.9, 42.9, THE_FORBIDDEN_REACH },
+				["questID"] = 73111,
+				-- ["g"] = {
+				-- },
 			}),
-			n(186355, {	-- Tripletath the Lost
-				["description"] = "Cave entrance is at 59.9, 59.0.",
-				["coord"] = { 57.4, 60.2, THE_FORBIDDEN_REACH },
-				["questID"] = 65910,
-				["g"] = {
-					i(197727),	-- Mystical Water Vial
-				},
+
+
+			n(111111, {	--
+				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				-- ["questID"] = ,
+				-- ["g"] = {
+				-- },
+			}),
+			n(111111, {	--
+				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				-- ["questID"] = ,
+				-- ["g"] = {
+				-- },
+			}),
+			n(111111, {	--
+				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				-- ["questID"] = ,
+				-- ["g"] = {
+				-- },
+			}),
+			n(111111, {	--
+				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				-- ["questID"] = ,
+				-- ["g"] = {
+				-- },
+			}),
+			n(111111, {	--
+				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				-- ["questID"] = ,
+				-- ["g"] = {
+				-- },
 			}),
 		}),
-	})),
+	}),
 })));

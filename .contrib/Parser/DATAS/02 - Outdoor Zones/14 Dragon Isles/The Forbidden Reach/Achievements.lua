@@ -1,67 +1,33 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
-	m(THE_FORBIDDEN_REACH, bubbleDownSelf({ ["classes"] = { EVOKER }, ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+	m(THE_FORBIDDEN_REACH, {
 		n(ACHIEVEMENTS, {
-			ach(15325, {	-- Dracthyr, Awaken [A]
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					crit(1, {	-- The War Creche [A]
-						["sourceQuests"] = { 64871 },	-- The Dragon at the Door
-					}),
-					crit(2, {	-- Old Weyrn Grounds [A]
-						["sourceQuests"] = { 65036 },	-- Train Like We Fight
-					}),
-					crit(3, {	-- The Healing Wings [A]
-						["sourceQuests"] = { 65075 },	-- The Healing Wings
-					}),
-					crit(4, {	-- The Ebon Scales [A]
-						["sourceQuests"] = { 65057 },	-- Rally to Emberthal
-					}),
-					crit(5, {	-- Froststone Vault [A]
-						["sourceQuests"] = { 65087 },	-- The Prize Inside
-					}),
-					crit(6, {	-- Wrath of the Storm-Eater [A]
-						["sourceQuests"] = { 65100 },	-- Final Orders
-					}),
-					crit(7, {	-- All Along the Watchtowers
-						["sourceQuests"] = { 65101 },	-- An Iconic, Draconic, Look [A]
-					}),
-				},
+			ach(17405, {	-- Dragon Glyphs: Caldera of the Menders
+				["coord"] = { 35.7, 21.9, THE_FORBIDDEN_REACH },
 			}),
-			ach(15638, {	-- Dracthyr, Awaken [H]
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					crit(1, {	-- The War Creche [H]
-						["sourceQuests"] = { 64871 },	-- The Dragon at the Door
-					}),
-					crit(2, {	-- Old Weyrn Grounds [H]
-						["sourceQuests"] = { 65036 },	-- Train Like We Fight
-					}),
-					crit(3, {	-- The Healing Wings [H]
-						["sourceQuests"] = { 65075 },	-- The Healing Wings
-					}),
-					crit(4, {	-- The Ebon Scales [H]
-						["sourceQuests"] = { 65057 },	-- Rally to Emberthal
-					}),
-					crit(5, {	-- Froststone Vault [H]
-						["sourceQuests"] = { 65087 },	-- The Prize Inside
-					}),
-					crit(6, {	-- Wrath of the Storm-Eater [H]
-						["sourceQuests"] = { 65100 },	-- Final Orders
-					}),
-					crit(7, {	-- The Dark Talons
-						["sourceQuests"] = { 65613 },	-- An Iconic, Draconic, Look [H]
-					}),
-				},
+			ach(17401, {	-- Dragon Glyphs: Dragonskull Island
+				["coord"] = { 81.6, 50.2, THE_FORBIDDEN_REACH },
 			}),
-			ach(16452, {	-- Famliar Skies
-				crit(1),	-- The Old Weyrn Grounds
-				crit(2),	-- Caldera of the Menders
-				crit(3),	-- Stormsunder Crater
-				crit(4),	-- Froststone Vault
+			ach(17400, {	-- Dragon Glyphs: Fragstone Vault
+				["coord"] = { 64.6, 23.9, THE_FORBIDDEN_REACH },
+			}),
+			ach(17398, {	-- Dragon Glyphs: Northwind Point
+				["coord"] = { 13.3, 1.6, THE_FORBIDDEN_REACH },
+			}),
+			ach(17402, {	-- Dragon Glyphs: Stormsunder Mountain
+				["coord"] = { 81.6, 50.2, THE_FORBIDDEN_REACH },
+			}),
+			ach(17404, {	-- Dragon Glyphs: Talonlord's Perch
+				["coord"] = { 60.5, 61.8, THE_FORBIDDEN_REACH },
+			}),
+			ach(17399, {	-- Dragon Glyphs: Talon's Watch
+				["coord"] = { 15.9, 92.3, THE_FORBIDDEN_REACH },
+			}),
+			ach(17403, {	-- Dragon Glyphs: War Creche
+				["coord"] = { 48.3, 66.3, THE_FORBIDDEN_REACH },
 			}),
 		}),
-	}));
+	}),
 })));

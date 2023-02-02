@@ -3,8 +3,8 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
-		n(VENDORS, {
-
+		n(ZONE_REWARDS, {
+			i(202196),	-- Zskera Vault Key
 		}),
 	}),
 })));

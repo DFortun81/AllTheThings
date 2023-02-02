@@ -106,6 +106,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 42.2, 40.7, VALDRAKKEN },
 					["isWeekly"] = true,
 				}),
+				q(74871, {	-- Sparks of Life: The Forbidden Reach
+					["provider"] = { "n", 202662 },	-- Kazure
+					["coord"] = { 42.2, 40.7, VALDRAKKEN },
+					["isWeekly"] = true,
+					["timeline"] = { ADDED_DF_0_7 },
+				}),
 				q(72646, {	-- Sparks of Life: The Waking Shores
 					["provider"] = { "n", 199376 },	-- Ailith Stonebreeze
 					["coord"] = { 41.9, 40.6, VALDRAKKEN },
