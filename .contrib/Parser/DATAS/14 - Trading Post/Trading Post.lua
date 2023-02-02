@@ -129,7 +129,13 @@ root(ROOTS.NeverImplemented, {
 				i(190603, {	-- Egbob (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
+				i(49693, {	-- Lil' K.T. (PET!) Blizz promised this when removing from store in Jan 2023
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
 				i(190173, {	-- Lil' Maka'jin (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(49665, {	-- Pandaren Monk (PET!) Blizz promised this when removing from store in Jan 2023
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
 				i(190175, {	-- Pippin (PET!)
@@ -254,6 +260,9 @@ root(ROOTS.NeverImplemented, {
 					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 				}),
 				i(190613, {	-- Savage Green Battle Turtle (MOUNT!) (Unknown 2023) Alliance only?
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+				}),
+				i(69846, {	-- Winged Guardian (MOUNT!) Blizz promised this when removing from store in Jan 2023
 					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 				}),
 			}),
