@@ -350,8 +350,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, {
 								i(39262),	-- Gauntlets of Combined Strength
 								i(39261),	-- Tainted Girdle of Mending
 								i(39263, {	-- Dissevered Leggings
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[function(t) if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then t.u = nil; else t.u = ]] .. WRATH_PHASE_TWO .. [[; end end]],
 									-- #if BEFORE 8.0.1
-									["description"] = "This item was originally unavailable until Patch 8.0.1, but if you get it to drop in Wrath Classic please send Crieve a screenshot!",
+									["description"] = "This item was originally unavailable until Patch 8.0.1, but after H+ was introduced to Wrath Classic, it was added as a boss drop from Old Kingdom.",
+									-- #endif
+									-- #elseif BEFORE 8.0.1
+									["description"] = "This item was originally unavailable until Patch 8.0.1 after the AllTheThings Discord reported it missing from the Patchwerk loot table. Interestingly enough, its absense triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
 									-- #endif
 									["timeline"] = { "created 3.0.2.8905", "added 8.0.1" },
 								}),
@@ -521,8 +526,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, {
 								i(39217),	-- Avenging Combat Leggings
 								i(39293),	-- Blackened Legplates of Feugen
 								i(39263, {	-- Dissevered Leggings
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[function(t) if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then t.u = nil; else t.u = ]] .. WRATH_PHASE_TWO .. [[; end end]],
 									-- #if BEFORE 8.0.1
-									["description"] = "This item was originally unavailable until Patch 8.0.1, but if you get it to drop in Wrath Classic please send Crieve a screenshot!",
+									["description"] = "This item was originally unavailable until Patch 8.0.1, but after H+ was introduced to Wrath Classic, it was added as a boss drop from Old Kingdom.",
+									-- #endif
+									-- #elseif BEFORE 8.0.1
+									["description"] = "This item was originally unavailable until Patch 8.0.1 after the AllTheThings Discord reported it missing from the Patchwerk loot table. Interestingly enough, its absense triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
 									-- #endif
 									["timeline"] = { "created 3.0.2.8905", "added 8.0.1" },
 								}),
