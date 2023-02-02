@@ -629,7 +629,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 					-- #else
 					{ 76.0, 32.0, STORMWIND_CITY },
 					-- #endif
-					{ 66.9, 36.1, DALARAN },
+					{ 66.9, 36.1, NORTHREND_DALARAN },
 				},
 				["maps"] = { KARAZHAN },
 			}),

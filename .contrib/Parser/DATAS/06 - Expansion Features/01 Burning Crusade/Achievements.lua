@@ -328,7 +328,7 @@ root(ROOTS.ExpansionFeatures, tier(TBC_TIER, bubbleDown({ ["timeline"] = { "adde
 				["crs"] = { 17467 },	-- Skunk
 			}),
 			crit(17, {	-- Squirrel (Tol Barad Peninsula, Dalaran, Darkshore, Darnassus)
-				["maps"] = { DALARAN, DARKSHORE, DARNASSUS },
+				["maps"] = { NORTHREND_DALARAN, DARKSHORE, DARNASSUS },
 				["crs"] = {
 					1412,	-- Squirrel
 					-- #if AFTER 7.0.3.22290
