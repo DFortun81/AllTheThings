@@ -18,7 +18,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 			["races"] = HORDE_ONLY,
 		}),
 	}),
-	n(SPECIAL, bubbleDown({ ["description"] = "This is rewarded for earning 1000 Trader's Tender in the month." }, {
+	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Trader's Tender in the month." }, {
 		i(190231),	-- Ash'adar, Harbinger of Dawn (MOUNT!)
 	})),
 	n(VENDORS, {
@@ -91,12 +91,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 }));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 }, }, {
-		q(65720),	-- Ensemble: Swashbuckling Buccaneer's Slops
-		q(65737),	-- Ensemble: Vagabond's Rosy Threads
-		q(65677),	-- Ensemble: Wanderer's Rosy Trappings
 		q(72681),	-- Triggered after completing 66959 (and cross complete 66858)
 	})),
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {
+		-- These don't trigger when using ensembles, but they are listed on Wowhead
+		q(65720),	-- Ensemble: Swashbuckling Buccaneer's Slops
+		q(65737),	-- Ensemble: Vagabond's Rosy Threads
+		q(65677),	-- Ensemble: Wanderer's Rosy Trappings
+		-- Future ensembles
 		-- q(65677),	-- Ensemble: Wanderer's Azure/Snowy Trappings	-- Wowhead has same id as Rosy Trappings
 		q(65721),	-- Ensemble: Wanderer's Crimson Trappings
 		q(65648),	-- Ensemble: Wanderer's Midnight Trappings
