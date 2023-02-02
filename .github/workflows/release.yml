@@ -6,7 +6,7 @@ name: Release
 on:
   # Package alpha version at midnight UTC every Friday
   schedule:
-    - cron: '0 6 * * SAT'
+    - cron: '0 18 * * TUE'
   # Triggers the workflow on tag events
   push:
     tags: '*'
