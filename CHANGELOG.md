@@ -6,7 +6,7 @@
 
 ### Goblin Weather Machine Twitch Drop
 
-select Twitch Streamers with Drops enabled for at least 4 hours between February 1st, 10:00 a.m. & February 5th, 11:59 p.m. PST. More details [here](https://worldofwarcraft.com/en-us/news/23896794/dragonflight-twitch-drops-get-your-goblin-weather-machine-now).
+Select Twitch Streamers with Drops enabled for at least 4 hours between February 1st, 10:00 a.m. & February 5th, 11:59 p.m. PST. More details [here](https://worldofwarcraft.com/en-us/news/23896794/dragonflight-twitch-drops-get-your-goblin-weather-machine-now).
 
 
 ### Trading Post is live!
