@@ -6137,6 +6137,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3428),	-- Common Grey Shirt
 						i(16060),	-- Common White Shirt
 						-- #if AFTER 10.0.5
+						i(23349, {	-- Battleworn Shoes
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
 						-- Now any class and race can buy this
 						-- MAGE --
 						i(55, {	-- Apprentice's Boots
