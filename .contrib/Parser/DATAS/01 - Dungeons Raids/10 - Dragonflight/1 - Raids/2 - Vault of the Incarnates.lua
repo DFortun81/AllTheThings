@@ -1294,7 +1294,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(70090),	-- Kurog Grimtotem (N)
 		q(72275),	-- Kurog Grimtotem (N)
 		q(70098),	-- Kurog Grimtotem (H)
-		-- q(TODO),	-- Kurog Grimtotem (M)
+		q(70107),	-- Kurog Grimtotem (M)
 		q(72618),	-- Broodguardian Ziruss (trash)
 		q(70083),	-- Broodkeeper Diurna (N)
 		q(70091),	-- Broodkeeper Diurna (N)
