@@ -648,21 +648,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 			}),
 		})),
-		--[[
-		-- These might be NYI? Two Versions exists
-		i(194839),	-- Cliffside Wylderdrake Manuscript: Conical Head
-		i(194840),	-- Cliffside Wylderdrake Manuscript: Triple Head Horns
-		i(194841),	-- Cliffside Wylderdrake Manuscript: Red Mane
-		i(194837),	-- Highland Drake Manuscript: Black Hair
-		i(194838),	-- Highland Drake Manuscript: Spined Head
-		i(194836),	-- Highland Drake Manuscript: Spined Throat
-		i(194831),	-- Renewed Proto Drake Manuscript: Predator Pattern
-		i(194830),	-- Renewed Proto Drake Manuscript: Red Hair
-		i(194832),	-- Renewed Proto Drake Manuscript: Spined Crest
-		i(194833),	-- Windborne Velocidrake Manuscript: Black Fur
-		i(194835),	-- Windborne Velocidrake Manuscript: Spined Crest
-		i(194834),	-- Windborne Velocidrake Manuscript: Windswept
-		--]]
 		pvp(i(201792)),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
 		i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 		-- Obtainable?
@@ -678,7 +663,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197000),	-- Cliffside Wylderdrake: Coiled Horns
 		i(196981),	-- Cliffside Wylderdrake: Conical Head (DM!)
 		i(196979),	-- Cliffside Wylderdrake: Curled Head Horns
-		i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
 		i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 		i(196969),	-- Cliffside Wylderdrake: Finned Back (DM!)
 		i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
@@ -686,7 +670,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197022),	-- Cliffside Wylderdrake: Finned Neck
 		i(197018),	-- Cliffside Wylderdrake: Finned Tail (DM!)
 		i(197002),	-- Cliffside Wylderdrake: Flared Cheek
-		i(196974),	-- Cliffside Wylderdrake: Four Horned Chin
 		i(196964),	-- Cliffside Wylderdrake: Gold and Black Armor (DM!)
 		i(196966),	-- Cliffside Wylderdrake: Gold and Orange Armor (DM!)
 		i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
@@ -719,7 +702,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197003),	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
 		i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail
 		i(196995),	-- Cliffside Wylderdrake: Spiked Horns
-		i(197004),	-- Cliffside Wylderdrake: Spiked Legs
 		i(196977),	-- Cliffside Wylderdrake: Split Head Horns (DM!)
 		i(196997),	-- Cliffside Wylderdrake: Split Horns
 		i(196968),	-- Cliffside Wylderdrake: Steel and Yellow Armor (DM!)
@@ -806,7 +788,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 		i(197375),	-- Renewed Proto-Drake: Curled Horns (DM!)
 		i(197380),	-- Renewed Proto-Drake: Curved Horns (DM!)
-		i(197358),	-- Renewed Proto-Drake: Curved Spiked Brow
 		i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
 		i(197376),	-- Renewed Proto-Drake: Ears (DM!)
 		i(197355),	-- Renewed Proto-Drake: Finned Back (DM!)
@@ -868,10 +849,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197603),	-- Windborne Velocidrake: Curved Horns (DM!)
 		i(197583),	-- Windborne Velocidrake: Exposed Finned Back
 		i(197626),	-- Windborne Velocidrake: Exposed Finned Neck
-		i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
-		i(197587),	-- Windborne Velocidrake: Feathered Back
 		i(197630),	-- Windborne Velocidrake: Feathered Neck
-		i(197593),	-- Windborne Velocidrake: Feathery Head
 		i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
 		i(197584),	-- Windborne Velocidrake: Finned Back (DM!)
 		i(197595),	-- Windborne Velocidrake: Finned Ears (DM!)
@@ -881,7 +859,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197580),	-- Windborne Velocidrake: Gold and Red Armor (DM!)
 		i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 		i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
-		i(197617),	-- Windborne Velocidrake: Heavy Scales
 		i(197600),	-- Windborne Velocidrake: Helm
 		i(197619),	-- Windborne Velocidrake: Hooked Snout
 		i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
@@ -912,10 +889,33 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 })));
 
 root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
+	i(196974),	-- Cliffside Wylderdrake: Four Horned Chin
+	i(197004),	-- Cliffside Wylderdrake: Spiked Legs
 	i(197155),	-- Highland Drake: Finned Neck ("quest reward but not found in 2months")
-	i(197591),	-- Windborne Velocidrake: Hairy Head ("centaur renown" but not on vendor)
+	i(197358),	-- Renewed Proto-Drake: Curved Spiked Brow
+	i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
+	i(197593),	-- Windborne Velocidrake: Feathery Head
+	i(197587),	-- Windborne Velocidrake: Feathered Back
+	i(197591),	-- Windborne Velocidrake: Hairy Head ("centaur renown" but not on vendor) Claimed to be from Brackenhide, but no confirmation
+	i(197617),	-- Windborne Velocidrake: Heavy Scales
 	i(197628),	-- Windborne Velocidrake: Plated Neck ("world drop" but not found in 2months")
 	i(197604),	-- Windborne Velocidrake: Ox Horns ("centaur renown" but not on vendor)
 	i(197636),	-- Windborne Velocidrake: Shrieker Pattern ("centaur renown" but not on vendor)
 	i(197609),	-- Windborne Velocidrake: White Horns ("world drop" but not found in 2months")
+	--[[
+		-- These might be NYI? Two Versions exists
+		i(194839),	-- Cliffside Wylderdrake Manuscript: Conical Head
+		i(194840),	-- Cliffside Wylderdrake Manuscript: Triple Head Horns
+		i(194841),	-- Cliffside Wylderdrake Manuscript: Red Mane
+		i(194837),	-- Highland Drake Manuscript: Black Hair
+		i(194838),	-- Highland Drake Manuscript: Spined Head
+		i(194836),	-- Highland Drake Manuscript: Spined Throat
+		i(194831),	-- Renewed Proto Drake Manuscript: Predator Pattern
+		i(194830),	-- Renewed Proto Drake Manuscript: Red Hair
+		i(194832),	-- Renewed Proto Drake Manuscript: Spined Crest
+		i(194833),	-- Windborne Velocidrake Manuscript: Black Fur
+		i(194835),	-- Windborne Velocidrake Manuscript: Spined Crest
+		i(194834),	-- Windborne Velocidrake Manuscript: Windswept
+	--]]
 })));
