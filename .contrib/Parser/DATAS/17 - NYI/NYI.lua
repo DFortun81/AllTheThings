@@ -195,8 +195,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 		-- Probably Trading Post?
 		i(189792),	-- Glorious Dragonrider's Grips
-		i(189869),	-- Distinguished Warcloak
-		i(189871),	-- Squire's Warhammer
 		i(189872),	-- Shattered Krokul Edge
 		i(189873),	-- Sylvan Stalker's Boots
 		i(189874),	-- Glorious Dragonrider's Wristguards
@@ -210,14 +208,10 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(189883),	-- Lordaeron Sentry's Bulwark
 		i(189884),	-- Vengeful Nemesis Warblades
 		i(189886),	-- Might of the Titanforged
-		i(189897),	-- Infiltrator's Bandolier
-		i(189898),	-- Fury of the Firelord
 		i(190066),	-- Primeval Maul
 		i(190067),	-- Tidecaller's Grips
-		i(190068),	-- Emerald Drape
 		i(190069),	-- Val'sharah Protector's Sabatons
 		i(190070),	-- Highborne Scholar's Gloves
-		i(190071),	-- Azure Scalesworn Longbow
 		i(190072),	-- Tidecaller's Hauberk
 		i(190073),	-- Sylvan Stalker's Hood
 		i(190074),	-- Val'sharah Protector's Spaulders
@@ -237,14 +231,12 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(190140),	-- Kvaldir Scout Trousers
 		i(190141),	-- Kvaldir Scout Chestguard
 		i(190142),	-- Sylvan Stalker's Legguards
-		i(190143),	-- Shard of Frozen Secrets
 		i(190144),	-- Irontide Raider's Bicorne
 		i(190146),	-- Antoran Felspire
 		i(190147),	-- Longbow of the Twisted Grove
 		i(190148),	-- Ravencrest's Razor
 		i(190152),	-- Solemn Watchman's Gauntlets
 		i(190165),	-- Ensemble: Twisted Arcanum Regalia
-		i(190201),	-- Sin'dorei Assassin's Shroud
 		i(190203),	-- Woodsman's Timber Mallet
 		i(190206),	-- Corrupted Runelord's Glyphbands
 		i(190207),	-- Corrupted Runelord's Slippers
@@ -260,7 +252,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(190428),	-- Regal Warcloak
 		i(190430),	-- Chipped Gladius
 		i(190432),	-- Tidecaller's Bracers
-		i(190434),	-- Iridescent Warcloak
 		i(190435),	-- Highborne Scholar's Belt
 		i(190436),	-- Sylvan Stalker's Baldric
 		i(190437),	-- Highborne Scholar's Collar
@@ -280,8 +271,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(190556),	-- Tidecaller's Legguards
 		i(190574),	-- Kvaldir Scout Hood
 		i(190575),	-- Ensemble: Chains of the Honored Valarjar
-		i(190599),	-- Operative's Bandolier
-		i(190672),	-- Deathguard Acolyte's Cloak
 		i(190675),	-- Arborcidal Peon's Chopper
 		i(190676),	-- Val'Sharah Protector's Gauntlets
 		i(190677),	-- Void-Bound Boots
@@ -296,7 +285,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(190687),	-- Painted Warblade
 		i(190689),	-- Corrupted Bladefist
 		i(190691),	-- Twisted Guardian's Profane Barrier
-		i(190696),	-- Magister's Jeweled Drape
 		i(190698),	-- Gently-Used Cleaver
 		i(190699),	-- Gorian Mining Pick
 		i(190700),	-- Tidecaller's Boots
@@ -318,7 +306,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(190772),	-- Ensemble: Vestments of the Nightmare Forest
 		i(190787),	-- Highborne Scholar's Cuffs
 		i(190788),	-- Sylvan Stalker's Wristguards
-		i(190799),	-- Ensemble: Swashbuckling Buccaneer's Slops
 		i(190806),	-- Tidecaller's Cinch
 		i(190809),	-- Highborne Scholar's Slippers
 		i(190810),	-- Sylvan Stalker's Handguards
@@ -332,9 +319,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(190839),	-- Void-Bound Crown
 		i(190840),	-- Void-Bound Hauberk
 		i(190841),	-- Void-Bound Spaulders
-		i(190846),	-- Shattered Voidspire
-		i(190855),	-- Rosy Corsage
-		i(190856),	-- Fetid Bouquet
 		i(190861),	-- Val'Sharah Protector's Girdle
 		i(190862),	-- Void-Bound Bracers
 		i(190863),	-- Void-Bound Belt
@@ -351,12 +335,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200921),	-- Void-Bound Greatcloak
 		i(200922),	-- Void-Bound Shroud
 		i(200923),	-- Void-Bound Drape
-		i(202165),	-- Wanderer's Rosy Scarf
-		i(202166),	-- Wanderer's Rosy Cloak
-		i(202167),	-- Ensemble: Wanderer's Rosy Trappings
-		i(202168),	-- Vagabond's Rosy Cape
-		i(202169),	-- Vagabond's Rosy Hood
-		i(202170),	-- Ensemble: Vagabond's Rosy Threads
 		i(190065),	-- Gnomish Liquid Transfer Apparatus
 		i(190204),	-- Huntsman's Recurve Bow
 		i(190448),	-- Trapper's Shot Pouch

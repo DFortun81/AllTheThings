@@ -18,11 +18,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 			["races"] = HORDE_ONLY,
 		}),
 	}),
-	n(SPECIAL, {
-		i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
-			["description"] = "This is rewarded for earning 1000 Trader's Tender in the first month.",
-		}),
-	}),
+	n(SPECIAL, bubbleDown({ ["description"] = "This is rewarded for earning 1000 Trader's Tender in the month." }, {
+		i(190231),	-- Ash'adar, Harbinger of Dawn (MOUNT!)
+	})),
 	n(VENDORS, {
 		filter(BATTLE_PETS, {
 			i(190607, {	-- Garrlok (PET!)
@@ -85,32 +83,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 			}),
 		}),
 		filter(MOUNTS, {
-			i(190767, {	-- Armored Golden Pterrordax (MOUNT!) (Unknown 2023)
-			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-			}),
-			mount(367875, {	-- Armored Siege Kodo (MOUNT!) (Unknown 2023) Horde only?
-			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-			}),
 			i(54811, {	-- Celestial Steed (MOUNT!) (FEB 2023)
 				["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-			}),
-			mount(369480, {	-- Cerulean Marsh Hopper (MOUNT!)
-			-- 	["cost"] = { { "c", TRADERS_TENDER, TODO }, },
-			}),
-			i(190539, {	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
-			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-			}),
-			i(190168, {	-- Crusty Crawler (MOUNT!) (Unknown 2023)
-			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-			}),
-			mount(366647, {	-- Magenta Cloud Serpent (MOUNT!) (Unknown 2023)
-			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-			}),
-			i(190169, {	-- Quawks (MOUNT!) (Unknown 2023)
-			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-			}),
-			i(190613, {	-- Savage Green Battle Turtle (MOUNT!) (Unknown 2023) Alliance only?
-			--	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 			}),
 		}),
 	}),
@@ -137,6 +111,32 @@ root(ROOTS.HiddenQuestTriggers, {
 root(ROOTS.NeverImplemented, {
 	tier(DF_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { ADDED_DF_0_5 }, }, {
 		n(VENDORS, {
+			filter(BATTLE_PETS, {
+				pet(3255, {	-- Buttercup (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(190604, {	-- Buzzworth (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				pet(3253, {	-- Crushhoof (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(190176, {	-- Drazka'zet the Wrathful (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(190603, {	-- Egbob (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(190173, {	-- Lil' Maka'jin (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(190175, {	-- Pippin (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				pet(3254, {	-- Watcher of the Huntress (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+			}),
 			filter(COSMETIC, {
 				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
@@ -222,13 +222,38 @@ root(ROOTS.NeverImplemented, {
 						i(190425),	-- Vagabond's Violet Hood
 				-- 	},
 				-- }),
-				-- Possible future vendor items, do we clarify that?
 				i(67108),	-- Lord Crowley's Old Spectacles
 				i(190672),	-- Deathguard Acolyte's Cloak
 				i(189869),	-- Distinguished Warcloak
 				i(190068),	-- Emerald Drape
 				i(190696),	-- Magister's Jeweled Drape
 				i(190201),	-- Sin'dorei Assassin's Shroud
+			}),
+			filter(MOUNTS, {
+				i(190767, {	-- Armored Golden Pterrordax (MOUNT!) (Unknown 2023)
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+				}),
+				mount(367875, {	-- Armored Siege Kodo (MOUNT!) (Unknown 2023) Horde only?
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+				}),
+				mount(369480, {	-- Cerulean Marsh Hopper (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+				}),
+				i(190539, {	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+				}),
+				i(190168, {	-- Crusty Crawler (MOUNT!) (Unknown 2023)
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+				}),
+				mount(366647, {	-- Magenta Cloud Serpent (MOUNT!) (Unknown 2023)
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+				}),
+				i(190169, {	-- Quawks (MOUNT!) (Unknown 2023)
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+				}),
+				i(190613, {	-- Savage Green Battle Turtle (MOUNT!) (Unknown 2023) Alliance only?
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+				}),
 			}),
 		})
 	})),
