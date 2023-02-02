@@ -43,7 +43,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				},
 			}),
 			i(190846, {	-- Shattered Voidspire
-				["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+				["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 			}),
 			i(190599, {	-- Operative's Bandolier
 				["cost"] = { { "c", TRADERS_TENDER, 250 }, },
@@ -67,7 +67,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 					i(202169),	-- Vagabond's Rosy Hood
 				},
 			}),
-			i(189871, {	-- Squire's Warhammer
+			i(189871, {	-- Squire's Etched Warhammer
 				["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 			}),
 			i(202167, {	-- Ensemble: Wanderer's Rosy Trappings
@@ -81,7 +81,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 			}),
 			i(190434, {	-- Iridescent Warcloak
-				["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				["cost"] = { { "c", TRADERS_TENDER, 75 }, },
 			}),
 		}),
 		filter(MOUNTS, {
@@ -222,7 +222,6 @@ root(ROOTS.NeverImplemented, {
 						i(190425),	-- Vagabond's Violet Hood
 				-- 	},
 				-- }),
-				
 				-- Possible future vendor items, do we clarify that?
 				i(67108),	-- Lord Crowley's Old Spectacles
 				i(190672),	-- Deathguard Acolyte's Cloak
