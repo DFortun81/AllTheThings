@@ -3611,7 +3611,7 @@ for key,value in pairs({
 	[381108] = "Mapa de Yennu",	-- Yennu's Map
 	[381110] = "Joyero olvidado",	-- Forgotten Jewel Box
 	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
-	--TODO: [381157] = "Sapphire Gem Cluster",	-- Sapphire Gem Cluster
+	[381157] = "Montón de zafiros",	-- Sapphire Gem Cluster
 	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
 	[381160] = "Brújula perdida",	-- Lost Compass
 	[381216] = "Lupa de perito",	-- Surveyor's Magnifying Glass
@@ -3637,7 +3637,7 @@ for key,value in pairs({
 	[381513] = "Piqueta vieja",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381575] = "Equipo de trampa para patos",	-- Duck Trap Kit
-	[381579] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381579] = "Petición de los archivistas",	-- Archivists' Request
 	[381650] = "Petición de los archivistas",	-- Archivists' Request
 	[381653] = "Inscripción a colmillo, ala o fuego",	-- Fang Flap Fire Signups
 	[381661] = "Petición de los archivistas",	-- Archivists' Request
