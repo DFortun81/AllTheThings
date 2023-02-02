@@ -267,6 +267,10 @@ root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(TRIAL_OF_STYLE, bubbleD
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 50 }, },
 				["timeline"] = { ADDED_DF_0_5 },
 			}),
+			i(189870, {	-- Arcanofire Wrap
+				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
 			i(190697, {	-- Boots of a Broken World
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
 				["timeline"] = { ADDED_DF_0_5 },
@@ -315,6 +319,10 @@ root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(TRIAL_OF_STYLE, bubbleD
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
 				["timeline"] = { ADDED_DF_0_5 },
 			}),
+			i(190202, {	-- Scoundrel's Missing Boots
+				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
 			i(202305, {	-- Stevedore's Skullcap
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 }, },
 				["timeline"] = { ADDED_DF_0_5 },
@@ -327,12 +335,20 @@ root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(TRIAL_OF_STYLE, bubbleD
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
 				["timeline"] = { ADDED_DF_0_5 },
 			}),
+			i(190167, {	-- Vault Stalker's Greaves
+				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
 			i(190673, {	-- Waistguard of the Infernal Eye
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
 				["timeline"] = { ADDED_DF_0_5 },
 			}),
 			i(202307, {	-- Well-Worn Tricorne
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 }, },
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
+			i(190064, {	-- Ymirjar Berserker's Girdle
+				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
 				["timeline"] = { ADDED_DF_0_5 },
 			}),
 			i(202300, {	-- Zealot's Prayer Staff

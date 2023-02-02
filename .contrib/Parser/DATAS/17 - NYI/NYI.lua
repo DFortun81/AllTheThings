@@ -196,7 +196,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		-- Probably Trading Post?
 		i(189792),	-- Glorious Dragonrider's Grips
 		i(189869),	-- Distinguished Warcloak
-		i(189870),	-- Arcanofire Wrap
 		i(189871),	-- Squire's Warhammer
 		i(189872),	-- Shattered Krokul Edge
 		i(189873),	-- Sylvan Stalker's Boots
@@ -213,7 +212,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(189886),	-- Might of the Titanforged
 		i(189897),	-- Infiltrator's Bandolier
 		i(189898),	-- Fury of the Firelord
-		i(190064),	-- Ymirjar Berserker's Girdle
 		i(190066),	-- Primeval Maul
 		i(190067),	-- Tidecaller's Grips
 		i(190068),	-- Emerald Drape
@@ -246,9 +244,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(190148),	-- Ravencrest's Razor
 		i(190152),	-- Solemn Watchman's Gauntlets
 		i(190165),	-- Ensemble: Twisted Arcanum Regalia
-		i(190167),	-- Vault Stalker's Greaves
 		i(190201),	-- Sin'dorei Assassin's Shroud
-		i(190202),	-- Scoundrel's Missing Boots
 		i(190203),	-- Woodsman's Timber Mallet
 		i(190206),	-- Corrupted Runelord's Glyphbands
 		i(190207),	-- Corrupted Runelord's Slippers
