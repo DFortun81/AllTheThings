@@ -691,7 +691,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				}),
 				n(CHEST, {
 					i(6116),	-- Apprentice's Robe	-- was not added to vendor in 10.0.5
-					i(52553),	-- Apprentice's Robe	-- was not added to vendor in 10.0.5
 					i(22742),	-- Bloodsail Shirt
 					i(2568),	-- Brown Linen Vest
 					i(2617),	-- Burning Robes
@@ -845,7 +844,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				}),
 				n(FEET, {
 					i(3289),	-- Ancestral Boots
-					i(52554),	-- Apprentice's Boots	-- was not added to vendor in 10.0.5
 					i(14086),	-- Beaded Sandals
 					i(860),		-- Cavalier's Boots
 					i(4936),	-- Dirt-Trodden Boots
@@ -1836,7 +1834,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(3260),	-- Scarlet Initiate Robes
 	i(2114),	-- Snowy Robe
 	i(4261),	-- Solliden's Trousers
-	i(3263),	-- Webbed 
+	i(3263),	-- Webbed
 	i(3261),	-- Webbed Cloak
 	--Dagger
 	i(3445),	-- Ceremonial Knife

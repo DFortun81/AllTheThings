@@ -6142,6 +6142,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(55, {	-- Apprentice's Boots
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
+						i(52554, {	-- Apprentice's Boots
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
 						i(1395, {	-- Apprentice's Pants
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
@@ -6149,6 +6152,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						i(6140, {	-- Apprentice's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(52553, {	-- Apprentice's Robe
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						i(23478, {	-- Recruit's Pants
