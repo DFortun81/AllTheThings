@@ -573,9 +573,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 				["coords"] = {
 					{ 72.1, 46.4, DUSKWOOD },
 					-- #if AFTER CATA
-					{ 52.1, 58.5, HILLSBRAD_FOOTHILLS },
-					-- #else
 					{ 58.0, 46.1, HILLSBRAD_FOOTHILLS },
+					-- #else
+					{ 52.1, 58.5, HILLSBRAD_FOOTHILLS },
 					-- #endif
 				},
 				["maps"] = {
