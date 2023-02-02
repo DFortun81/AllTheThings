@@ -227,81 +227,80 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["isRepeatable"] = true,
 				}),
 			}),
-			prof(TUSKARR_FISHING_GEAR, {
+			prof(TUSKARR_FISHING_GEAR, sharedData({
+				["requireSkill"] = FISHING,	-- Minimum 25, but it shows in the tooltip
+			},{
 				["crs"] = { 195935 },
 				["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				["g"] = {
-					r(387594, {	-- Reinforced Irontree Harpoon Handle
-						q(70795),	-- Triggered after crafting 'Reinforced Irontree Harpoon Handle'
+					-- These "Recipes" show as learned, but when you have learned them, they dissapear causing ATT to think you no longer have them learned.
+					-- ToDo: Cost
+					i(199847, {	-- Braided Seavine Harpoon Rope
+						["spellID"] = 388251,	-- Braided Seavine Harpoon Rope
+						["questID"] = 70799,	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
 					}),
-					r(387827, {	-- Flying Fish Bone Charm
-						q(67139),	-- Triggered after crafting 'Flying Fish Bone Charm'
+					i(199849, {	-- Dense Draconium Net Weight
+						["spellID"] = 388253,	-- Dense Draconium Net Weights
+						["questID"] = 70801,	-- Triggered after crafting 'Dense Draconium Net Weights'
 					}),
-					r(387828, {	-- Iskaaran Fishing Net
-						q(70793),	-- Triggered after crafting Iskaaran Fishing Net during Iskaaran Fishing Net (questID 70871)
+					i(199848, {	-- Draconium Net Weights
+						["spellID"] = 388252,	-- Draconium Net Weights
+						["questID"] = 70800,	-- Triggered after crafting 'Draconium Net Weights'
 					}),
-					r(387831, {	-- Iskaaran Harpoon
-						q(70792),	-- Triggered after crafting Iskaaran Harpoon
+					i(199851, {	-- Double Imbu Knot
+						["spellID"] = 388255,	-- Double Imbu Knot
+						["questID"] = 70803,	-- Triggered after crafting 'Double Imbu Knot'
+						["cost"] = { 
+							{ "i", 200082, 6 }, -- 6x Battered Imbu-made Net
+							{ "i", 200085, 1 }, -- 1x Khaz'gorite Wire
+						},
 					}),
-					r(387832, {	-- Iskaaran Ice Axe
-						q(67141),	-- Triggered after crafting 'Iskaaran Ice Axe'
+					i(199694, {	-- Flying Fish Bone Charm
+						["spellID"] = 387827,	-- Flying Fish Bone Charm
+						["questID"] = 67139,	-- Triggered after crafting 'Flying Fish Bone Charm'
 					}),
-					r(387833, {	-- Polished Basalt Bracelet
-						q(67140),	-- Triggered after crafting 'Polished Basalt Bracelet'
+					i(199850, {	-- Imbu Knot
+						["spellID"] = 388254,	-- Imbu Knot
+						["questID"] = 70802,	-- Triggered after crafting 'Imbu Knot'
 					}),
-					r(387836, {	-- Irontree Harpoon Handle
-						q(70794),	-- Triggered after crafting 'Irontree Harpoon Handle'
+					i(199698, {	-- Irontree Harpoon Handle
+						["spellID"] = 387836,	-- Irontree Harpoon Handle
+						["questID"] = 70794,	-- Triggered after crafting 'Irontree Harpoon Handle'
 					}),
-					r(387375, {	-- Serevite Harpoon Head
-						q(70796),	-- Triggered after crafting 'Serevite Harpoon Head'
+					i(199695, {	-- Iskaaran Fishing Net
+						["spellID"] = 387828,	-- Iskaaran Fishing Net
+						["questID"] = 70793,	-- Triggered after crafting Iskaaran Fishing Net during Iskaaran Fishing Net (questID 70871)
 					}),
-					r(388249, {	-- Jagged Serevite Harpoon Head
-						q(70797),	-- Triggered after crafting 'Jagged Serevite Harpoon Head'
+					i(194510, {	-- Iskaaran Harpoon
+						["spellID"] = 387831,	-- Iskaaran Harpoon
+						["questID"] = 70792,	-- Triggered after crafting Iskaaran Harpoon
 					}),
-					r(388250, {	-- Seavine Harpoon Rope
-						q(70798),	-- Triggered after crafting 'Seavine Harpoon Rope'
+					i(199696, {	-- Iskaaran Ice Axe
+						["spellID"] = 387832,	-- Iskaaran Ice Axe
+						["questID"] = 67141,	-- Triggered after crafting 'Iskaaran Ice Axe'
 					}),
-					r(388251, {	-- Braided Seavine Harpoon Rope
-						q(70799),	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
+					i(199845, {	-- Jagged Serevite Harpoon Head
+						["spellID"] = 388249,	-- Jagged Serevite Harpoon Head
+						["questID"] = 70797,	-- Triggered after crafting 'Jagged Serevite Harpoon Head'
 					}),
-					r(388252, {	-- Draconium Net Weights
-						q(70800),	-- Triggered after crafting 'Draconium Net Weights'
+					i(199697, {	-- Polished Basalt Bracelet
+						["spellID"] = 387833,	-- Polished Basalt Bracelet
+						["questID"] = 67140,	-- Triggered after crafting 'Polished Basalt Bracelet'
 					}),
-					r(388253, {	-- Dense Draconium Net Weights
-						q(70801),	-- Triggered after crafting 'Dense Draconium Net Weights'
+					i(199641, {	-- Reinforced Irontree Harpoon Handle
+						["spellID"] = 387594,	-- Reinforced Irontree Harpoon Handle
+						["questID"] = 70795,	-- Triggered after crafting 'Reinforced Irontree Harpoon Handle'
 					}),
-					r(388254, {	-- Imbu Knot
-						q(70802),	-- Triggered after crafting 'Imbu Knot'
+					i(199844, {	-- Serevite Harpoon Head
+						["spellID"] = 387375,	-- Serevite Harpoon Head
+						["questID"] = 70796,	-- Triggered after crafting 'Serevite Harpoon Head'
 					}),
-					r(388255, {	-- Double Imbu Knot
-						i(199851, {	-- Double Imbu Knot
-							["cost"] = { 
-								{ "i", 200082, 6 }, -- 6x Battered Imbu-made Net
-								{ "i", 200085, 1 }, -- 1x Khaz'gorite Wire
-							},
-							["groups"] = {
-								q(70803),	-- Triggered after crafting 'Double Imbu Knot'
-							},
-						}),
-					}),
-					n(CRAFTABLES, {
-						-- TODO: these shouldn't need cost if the Tuskaar Fishing profession is scanned by ATT
-						i(194510),	-- Iskaaran Harpoon
-						i(199694),	-- Flying Fish Bone Charm
-						i(199697),	-- Polished Basalt Bracelet
-						i(199695),	-- Iskaaran Fishing Net
-						i(199850),	-- Imbu Knot
-						i(199846),	-- Seavine Harpoon Rope
-						i(199847),	-- Braided Seavine Harpoon Rope
-						i(199844),	-- Serevite Harpoon Head
-						i(199845),	-- Jagged Serevite Harpoon Head
-						i(199848),	-- Draconium Net Weights
-						i(199849),	-- Dense Draconium Net Weight
-						i(199698),	-- Irontree Harpoon Handle
-						i(199641),	-- Reinforced Irontree Harpoon Handle
+					i(199846, {	-- Seavine Harpoon Rope
+						["spellID"] = 388250,	-- Seavine Harpoon Rope
+						["questID"] = 70798,	-- Triggered after crafting 'Seavine Harpoon Rope'
 					}),
 				},
-			}),
+			})),
 			n(RARES, sharedData({
 				["description"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.\nWhich Lunker Sighting is up changes every week & if there is no fish icon, the pool is not up and you cannot spawn a Lunker at that location.",
 				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
