@@ -190,7 +190,6 @@ _.Secrets =
 				["description"] = "|cFFFFFFFFSTEP 13a:|r Backtrack down the ramp to the now opened gate. DO NOT JUMP OFF. Enter the room and on a pillar on the right will be a Tarnished Plaque.  Click on it.\n\nThe Tarnished Plaque reads:\n\n\"The greatest of achievments begins\nwith the smallest leap of the mind.\"\n\n|cFFFFFFFFSTEP 13b:|r After reading the Tarnished Plaque, click off at least one buff and use the Scroll of Intellect.",
 			}),
 			o(272487, {	-- Step 14: Oddly-Colored Egg
-				["model"] = 1405664,
 				["modelScale"] = 2,
 				["questID"] = 48022,
 				["isWeekly"] = true,

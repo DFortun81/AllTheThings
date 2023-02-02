@@ -286,7 +286,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			o(282666, {	-- Urn of Agussu
 				["questID"] = 50888,
 				["coord"] = { 38.1, 57.6, NAZMIR },
-				["model"] = 1672878,
 				["icon"] = "Interface\\Icons\\INV_Misc_Urn_01",
 				--["crs"] = { 135565 },	-- Guardian of Agussu
 				["g"] = {

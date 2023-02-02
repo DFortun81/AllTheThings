@@ -619,11 +619,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12034,	-- Victory Nears...
 					}),
 					q(12032, {	-- Conversing With the Depths
-						["coord"] = { 36.6, 65.1, DRAGONBLIGHT },
-						["model"] = 194335,
-						["modelScale"] = 9.8,
 						["provider"] = { "o", 188419 },	--	Elder Mana'loa
 						["sourceQuest"] = 12031,	-- Freedom for the Lingering
+						["coord"] = { 36.6, 65.1, DRAGONBLIGHT },
+						["modelScale"] = 9.8,
 						["groups"] = {
 							i(38148),	-- Chilled Headsmasher
 							i(38150),	-- Imported Ironshod Crossbow
@@ -741,11 +740,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12235,	-- Naxxramas and the Fall of Wintergarde
 					}),
 					q(12031, {	-- Freedom for the Lingering
-						["coord"] = { 36.6, 65.1, DRAGONBLIGHT },
-						["model"] = 194335,
-						["modelScale"] = 9.8,
 						["provider"] = { "o", 188419 },	--	Elder Mana'loa
 						["sourceQuest"] = 12030,	-- Elder Mana'loa
+						["coord"] = { 36.6, 65.1, DRAGONBLIGHT },
+						["modelScale"] = 9.8,
 					}),
 					q(12214, {	-- Fresh Remounts
 						["coord"] = { 75.9, 61.8, DRAGONBLIGHT },
@@ -1382,11 +1380,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12084,	-- Atop the Woodlands
 					}),
 					q(12312, {	-- Secrets of the Scourge
-						["coord"] = { 78.6, 52.2, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
-						["model"] = 200922,
 						["provider"] = { "o", 189311 },	--	Flesh-bound Tome
 						["sourceQuest"] = 12309,	-- Find Durkon!
+						["coord"] = { 78.6, 52.2, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12458, {	-- Seeds of the Lashers
 						["coord"] = { 59.5, 54.4, DRAGONBLIGHT },
@@ -1397,9 +1394,8 @@ root(ROOTS.Zones, {
 						["qg"] = 26661,	-- Zivlix
 					}),
 					q(12011, {	-- Signs of Big Watery Trouble
-						["coord"] = { 47.7, 79.9, DRAGONBLIGHT },
-						["model"] = 195350,
 						["provider"] = { "o", 188364 },	-- Wrecked Crab Trap
+						["coord"] = { 47.7, 79.9, DRAGONBLIGHT },
 					}),
 					q(11959, {	-- Slay Loguhn
 						["coord"] = { 48.0, 74.8, DRAGONBLIGHT },
@@ -2110,10 +2106,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12008,	-- Agmar's Hammer
 					}),
 					q(12091, {	-- Wanted: Dreadtalon
+						["provider"] = { "o", 188418 },	-- Wanted!
 						["coord"] = { 37.6, 46.5, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["model"] = 199476,
-						["provider"] = { "o", 188418 },	-- Wanted!
 						["groups"] = {
 							i(37970),	-- Feathers of the Dragon Wastes
 							i(38013),	-- Lothalar Woodwalker Shoulders
@@ -2122,10 +2117,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12090, {	-- Wanted: Gigantaur
+						["provider"] = { "o", 188418 },	-- Wanted!
 						["coord"] = { 37.6, 46.5, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["model"] = 199476,
-						["provider"] = { "o", 188418 },	-- Wanted!
 						["groups"] = {
 							i(37969),	-- Chaos Mender Cloak
 							i(38012),	-- Lothalar Woodwalker Bracers
@@ -2134,11 +2128,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12441, {	-- Wanted: High Shaman Bloodpaw
-						["coord"] = { 77.3, 51.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
-						["model"] = 199476,
 						["provider"] = { "o", 190020 },	-- Wanted!
 						["sourceQuest"] = 12251,	-- Return to the High Commander
+						["coord"] = { 77.3, 51.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(38171),	-- Battleworn Magnataur Crusher
 							i(38172),	-- Crossbow of the Hardened Ranger
@@ -2149,11 +2142,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12438, {	-- Wanted: Krueg Oathbreaker
-						["coord"] = { 77.3, 51.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
-						["model"] = 199476,
 						["provider"] = { "o", 190020 },	-- Wanted!
 						["sourceQuest"] = 12251,	-- Return to the High Commander
+						["coord"] = { 77.3, 51.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(37957),	-- Wastewind Bracers
 							i(37999),	-- Glade Wanderer Bracers
@@ -2162,10 +2154,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12089, {	-- Wanted: Magister Keldonus
+						["provider"] = { "o", 188418 },	-- Wanted!
 						["coord"] = { 37.6, 46.5, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["model"] = 199476,
-						["provider"] = { "o", 188418 },	-- Wanted!
 						["groups"] = {
 							i(38195),	-- Magister's Bane
 							i(38194),	-- Mageslayer Rifle
@@ -2176,11 +2167,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12442, {	-- Wanted: Onslaught Commander Iustus
-						["coord"] = { 77.3, 51.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
-						["model"] = 199476,
 						["provider"] = { "o", 190020 },	-- Wanted!
 						["sourceQuest"] = 12251,	-- Return to the High Commander
+						["coord"] = { 77.3, 51.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(38115),	-- Sabatons of the Enforcer
 							i(38054),	-- Paingiver Wristguards

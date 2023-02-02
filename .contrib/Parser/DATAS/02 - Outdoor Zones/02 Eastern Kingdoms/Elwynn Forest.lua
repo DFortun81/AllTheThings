@@ -2374,7 +2374,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 8.1.0.28724
 			n(TREASURES, {
 				o(310709, {	-- Waterlogged Chest
-					["model"] = 196989,
 					["questID"] = 54131,
 					["coord"] = { 32.3, 63.6, ELWYNN_FOREST },
 					["timeline"] = { "added 8.1.0.28724" },

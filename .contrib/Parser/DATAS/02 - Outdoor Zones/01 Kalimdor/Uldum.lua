@@ -119,22 +119,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				prof(FISHING, {
 					o(202779, {	-- Blackbelly Mudfish School
-						["model"] = 219405,
-						["groups"] = {
-							i(22739, {	-- Tome of Polymorph: Turtle
-								["classes"] = { MAGE },
-								["f"] = RECIPES,
-							}),
-						},
+						i(22739, {	-- Tome of Polymorph: Turtle
+							["classes"] = { MAGE },
+							["f"] = RECIPES,
+						}),
 					}),
 					o(202780, {	-- Fathom Eel Swarm
-						["model"] = 219405,
-						["groups"] = {
-							i(22739, {	-- Tome of Polymorph: Turtle
-								["classes"] = { MAGE },
-								["f"] = RECIPES,
-							}),
-						},
+						i(22739, {	-- Tome of Polymorph: Turtle
+							["classes"] = { MAGE },
+							["f"] = RECIPES,
+						}),
 					}),
 				}),
 				prof(MINING, {
@@ -147,7 +141,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(QUESTS, {
 				q(27761, {	-- A Disarming Distraction
 					["coord"] = { 74.1, 64.4, ULDUM },
-					["model"] = 201023,
 					["provider"] = { "o", 206293 },	-- A.I.D.A. Terminal
 					["sourceQuest"] = 27760,	-- Artificial Intelligence
 					["groups"] = {
@@ -219,7 +212,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27517, {	-- Be Prepared
 					["coord"] = { 65.1, 33.8, ULDUM },
 					["provider"] = { "o", 205540 },	-- Decrepit Skeleton
-					["model"] = 200066,
 					["sourceQuest"] = 27196,	-- On to Something
 					["description"] = "This quest can be accepted from a Decrepit Skeleton or from a Piece of Rope, looted from a Tormented Tomb-Robber. This version of the quest can be picked up as soon as you enter the Chamber of the Stars.",
 					["groups"] = {
@@ -269,13 +261,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(27623, {	-- Colossal Guardians
 					["coord"] = { 39.6, 45.4, ULDUM },
-					["model"] = 199989,
 					["provider"] = { "o", 205874 },	-- Sand-Covered Hieroglyphs
 					["sourceQuest"] = 27602,	-- The Prophet's Dying Words
 				}),
 				q(27777, {	-- Core Access Codes
 					["coord"] = { 74.1, 64.4, ULDUM },
-					["model"] = 201023,
 					["provider"] = { "o", 206293 },	-- A.I.D.A. Terminal
 					["sourceQuest"] = 27760,	-- Artificial Intelligence
 				}),
@@ -421,7 +411,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(27778, {	-- Hacking the Wibson
 					["coord"] = { 74.1, 64.4, ULDUM },
-					["model"] = 201023,
 					["provider"] = { "o", 206293 },	-- A.I.D.A. Terminal
 					["sourceQuests"] = {
 						27761,	-- A Disarming Distraction
@@ -496,7 +485,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(27176, {	-- A Strange Disc
 					["coord"] = { 64.8, 29.5, ULDUM },
-					["model"] = 243678,
 					["modelScale"] = 30,
 					["provider"] = { "o", 205266 },	-- Elaborate Disc
 					["sourceQuests"] = {
@@ -932,10 +920,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(27706, {	-- The Scepter of Orsis
-					["coord"] = { 39.6, 45.4, ULDUM },
-					["model"] = 199989,
 					["provider"] = { "o", 205874 },	-- Sand-Covered Hieroglyphs
 					["sourceQuest"] = 27623,	-- Colossal Guardians
+					["coord"] = { 39.6, 45.4, ULDUM },
 					["groups"] = {
 						i(65807),	-- Hood of the Scorpion
 						i(65806),	-- Sunwatcher's Legplates

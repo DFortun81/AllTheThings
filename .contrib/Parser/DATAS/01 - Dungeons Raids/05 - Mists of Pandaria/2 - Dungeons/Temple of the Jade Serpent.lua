@@ -43,7 +43,6 @@ _.Instances = { tier(MOP_TIER, {
 						["sourceQuests"] = { 33020 },	-- The Lost Secret of the Secret Ingredient
 						["modelScale"] = 2,
 						["provider"] = { "o", 221413 },	-- Lin Family Scroll
-						["model"] = 534984,
 					}),
 				}),
 				n(ZONE_DROPS, {

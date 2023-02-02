@@ -1482,8 +1482,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				o(207496, {	-- Dark Iron Treasure Chest
-					["model"] = 446673,
-					["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 					["coords"] = {
 						{ 36.6, 61.2, LOCH_MODAN },
 						{ 61.9, 75.0, LOCH_MODAN },

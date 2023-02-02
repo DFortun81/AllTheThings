@@ -533,7 +533,6 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 185165 },	-- Legion Communicator
 						["sourceQuest"] = 10819,	-- Felsworn Gas Mask
 						["coord"] = { 73.23, 40.1, BLADES_EDGE_MOUNTAINS },
-						["model"] = 192342,
 						["lvl"] = lvlsquish(65, 20, 65),
 					}),
 					q(10719, {	-- Did You Get The Note?
@@ -594,7 +593,6 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 184660 },	-- Wanted Poster
 						["coord"] = { 51.9, 57.8, BLADES_EDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,
-						["model"] = 191094,
 						["lvl"] = lvlsquish(65, 20, 65),
 						["groups"] = {
 							i(31486),	-- Bear-Strength Harness
@@ -1105,7 +1103,6 @@ root(ROOTS.Zones, {
 							{ 35.4, 79.0, BLADES_EDGE_MOUNTAINS },
 						},
 						["races"] = ALLIANCE_ONLY,
-						["model"] = 198020,
 						["lvl"] = lvlsquish(65, 20, 65),
 					}),
 					q(10675, {	-- Show Them Gnome Mercy!
@@ -1319,7 +1316,6 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 185035 },	-- Wanted Poster
 						["coord"] = { 36.6, 67.3, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
-						["model"] = 199473,
 						["lvl"] = lvlsquish(65, 20, 65),
 						["groups"] = {
 							i(31424),	-- Arcane Wand of Sylvanaar
@@ -1652,7 +1648,6 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 185165 },	-- Legion Communicator
 						["sourceQuest"] = 10820,	-- Deceive thy Enemy
 						["coord"] = { 73.23, 40.1, BLADES_EDGE_MOUNTAINS },
-						["model"] = 192342,
 						["lvl"] = lvlsquish(65, 20, 65),
 						["groups"] = {
 							i(31793),	-- Ruuan Weald Wristguards

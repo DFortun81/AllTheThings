@@ -78,7 +78,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 258978 },	-- Waterlogged Tome
 					["coord"] = { 39.1, 73.7, 45 },
 					["timeline"] = { "added 7.0.3.21796" },
-					["model"] = 191946,
 					["lvl"] = 110,
 					["groups"] = {
 						crit(1, {	-- Waterlogged Tome

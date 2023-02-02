@@ -571,7 +571,6 @@ _.Zones =
 				o(234054, {	-- Warm Goren Egg
 					["modelScale"] = 2,
 					["questID"] = 36203,
-					["model"] = 974969,
 					["coord"] = { 48.9, 47.3, GORGROND },
 					["g"] = {
 						i(118705, {	-- Warm Goren Egg

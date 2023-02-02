@@ -44,7 +44,6 @@ _.Zones =
 			["g"] = {
 				o(239901, {	-- Voidtalon Egg
 					["modelScale"] = 2,
-					["model"] = 984888,
 					["g"] = {
 						i(121815),	-- Voidtalon of the Dark Star (MOUNT!)
 					},

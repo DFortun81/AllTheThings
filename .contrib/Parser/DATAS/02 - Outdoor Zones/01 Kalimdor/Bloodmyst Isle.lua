@@ -452,11 +452,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9557, {	-- Deciphering the Book
-					["provider"] = { "o", 181756 },	-- Battered Ancient Book
+					["providers"] = {
+						{ "o", 181756 },	-- Battered Ancient Book
+						{ "i",  23851 },	-- Battered Journal
+					},
 					["sourceQuest"] = 9550,	-- A Map to Where?
 					["coord"] = { 61.1, 41.8, BLOODMYST_ISLE },
-					["cost"] = { { "i", 23851, 1 } },	-- Battered Journal
-					["model"] = 198027,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(13, 1, 13),
 				}),
@@ -581,15 +582,16 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9706, {	-- Galaen's Journal - The Fate of Vindicator Saruan
-					["provider"] = { "o", 182032 },	-- Galaen's Journal
+					["providers"] = {
+						{ "o", 182032 },	-- Galaen's Journal
+						{ "i",  24237 },	-- Galaen's Journal
+					},
 					-- #if BEFORE CATA
 					["sourceQuest"] = 9694,	-- Blood Watch
 					-- #else
 					["sourceQuest"] = 9779,	-- Intercepting the Message
 					-- #endif
 					["coord"] = { 37.5, 61.2, BLOODMYST_ISLE },
-					["cost"] = { { "i", 24237, 1 } },	-- Galaen's Journal
-					["model"] = 198028,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 1, 15),
 				}),
@@ -1201,7 +1203,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9646, {	-- WANTED: Deathclaw
 					["provider"] = { "o", 181889 },	-- Wanted Poster
 					["coord"] = { 55.2, 59.1, BLOODMYST_ISLE },
-					["model"] = 192468,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(9, 1, 9),
 					["groups"] = {

@@ -311,7 +311,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 20.3, 27.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["model"] = 189528,
 				}),
 				q(26685, {	-- Classy Glass
 					["qg"] = 276,	-- Viktori Prism'Antras
@@ -1156,7 +1155,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 23.4, 35.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["model"] = 189528,
 				}),
 				q(165, {	-- The Hermit
 					["qg"] = 633,	-- Elaine Carevin

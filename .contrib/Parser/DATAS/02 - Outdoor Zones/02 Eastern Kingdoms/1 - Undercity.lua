@@ -1215,7 +1215,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 6.1.0.19508" },
 					["modelRotation"] = 270,
 					["modelScale"] = 1.3,
-					["model"] = 195121,
 					["icon"] = "Interface\\Icons\\Battleground_Strongbox_Skirmish_Horde",
 					["groups"] = {
 						i(122233, {	-- Music Roll: Lament of the Highborne

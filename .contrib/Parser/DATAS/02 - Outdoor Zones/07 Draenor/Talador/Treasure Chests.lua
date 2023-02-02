@@ -213,7 +213,6 @@ _.Zones =
 						{ 53.3, 25.7, TALADOR },	-- Cave Entrance
 						{ 54.0, 27.6, TALADOR },	-- Ketya's Stash
 					},
-					["model"] = 446673,
 					["g"] = {
 						i(116121),	-- A Steamy Romance Novel: I'm In Love With a Robot
 						i(116402),	-- Stonegrinder
@@ -300,7 +299,6 @@ _.Zones =
 				o(227868, {	-- Sparkling Pool
 					["questID"] = 34207,
 					["description"] = "Requires Fishing.",
-					["model"] = 219404,
 					["modelScale"] = 2,
 					["coord"] = { 39.2, 41.7, TALADOR },
 					["g"] = {
@@ -316,7 +314,6 @@ _.Zones =
 				o(230643, {	-- Teroclaw Nest
 					["description"] = "Can be found at the base of trees near Aruuna, the Tomb of Lights and Vol'jin's Pride.",
 					["questID"] = 35162,
-					["model"] = 191835,
 					["modelScale"] = 2,
 					["g"] = {
 						i(112699),	-- Teroclaw Hatchling (PET!)

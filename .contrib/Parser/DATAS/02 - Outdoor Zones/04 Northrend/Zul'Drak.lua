@@ -1073,9 +1073,8 @@ root(ROOTS.Zones, {
 						["timeline"] = { "added 4.3.0.14732" },
 					}),
 					q(12857, {	-- Wanted: Ragemane's Flipper
-						["coord"] = { 32.2, 75.6, ZULDRAK },
-						["model"] = 199475,
 						["provider"] = { "o", 191728 },	-- Wanted!
+						["coord"] = { 32.2, 75.6, ZULDRAK },
 						["groups"] = {
 							i(41987),	-- Staff of the Sorrowful Chieftain
 							i(44734),	-- Hammer of Quiet Mourning

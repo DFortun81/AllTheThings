@@ -1165,10 +1165,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				o(207496, {	-- Dark Iron Treasure Chest
-					["modelScale"] = 1.5,
-					["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 					["timeline"] = { "added 4.0.3.13277" },
-					["model"] = 446673,
+					["modelScale"] = 1.5,
 					["coords"] = {
 						{ 73.6, 82.2, SEARING_GORGE },
 						{ 63.6, 60.5, SEARING_GORGE },

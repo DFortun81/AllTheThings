@@ -324,13 +324,10 @@ root(ROOTS.Zones, {
 					}),
 					-- #endif
 					o(182952, {	-- Steam Pump Flotsam
-						["model"] = 219411,
-						["groups"] = {
-							i(27481),	-- Heavy Supply Crate
-							i(34469, {	-- Strange Engine Part
-								["description"] = "\"Don't pay anybody in advance. And don't ride in anything with a Capissen 38 engine, they fall right out of the sky.\" - Kaylee Fry",
-							}),
-						},
+						i(27481),	-- Heavy Supply Crate
+						i(34469, {	-- Strange Engine Part
+							["description"] = "\"Don't pay anybody in advance. And don't ride in anything with a Capissen 38 engine, they fall right out of the sky.\" - Kaylee Fry",
+						}),
 					}),
 					-- #if ANYCLASSIC
 					ach(1225, {	-- Outland Angler

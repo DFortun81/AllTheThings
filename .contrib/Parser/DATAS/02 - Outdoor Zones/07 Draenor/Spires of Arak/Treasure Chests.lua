@@ -206,7 +206,6 @@ _.Zones =
 					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36381,
 					["coord"] = { 61.1, 55.3, SPIRES_OF_ARAK },
-					["model"] = 145256,
 					["modelScale"] = 0.4,
 					["g"] = {
 						i(118240),	-- Anzu's Scything Talon
@@ -353,13 +352,11 @@ _.Zones =
 				o(234147, {	-- Outcast's Belongings
 					["questID"] = 36243,
 					["coord"] = { 36.8, 17.2, SPIRES_OF_ARAK },
-					["model"] = 974207,
 					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(235172, {	-- Outcast's Belongings
 					["questID"] = 36447,
 					["coord"] = { 42.1, 21.7, SPIRES_OF_ARAK },
-					["model"] = 974207,
 					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(235168, {	-- Outcast's Pouch

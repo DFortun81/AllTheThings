@@ -602,11 +602,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
 					}),
 					q(10013, {	-- An Unseen Hand
-						["coord"] = { 63.4, 42.7, TEROKKAR_FOREST },
-						["races"] = HORDE_ONLY,
-						["model"] = 198457,
 						["provider"] = { "o", 182549 },	-- Fel Orc Plans
 						["sourceQuest"] = 10000,	-- An Unwelcome Presence
+						["coord"] = { 63.4, 42.7, TEROKKAR_FOREST },
+						["races"] = HORDE_ONLY,
 					}),
 					q(10000, {	-- An Unwelcome Presence
 						["qg"] = 18383,	-- Kurgatok
@@ -706,15 +705,14 @@ root(ROOTS.Zones, {
 					}),
 					q(10228, {	-- Ezekiel
 						["qg"] = 19417,	-- Ramdor the Mad
-						["coord"] = { 35.2, 66.2, TEROKKAR_FOREST },
 						["sourceQuest"] = 10227,	-- I See Dead Draenei
+						["coord"] = { 35.2, 66.2, TEROKKAR_FOREST },
 					}),
 					q(10012, {	-- Fel Orc Plans
-						["coord"] = { 67.9, 53.5, TEROKKAR_FOREST },
-						["races"] = ALLIANCE_ONLY,
-						["model"] = 198457,
 						["provider"] = { "o", 182549 },	-- Fel Orc Plans
 						["sourceQuest"] = 9998,	-- Unruly Neighbors
+						["coord"] = { 67.9, 53.5, TEROKKAR_FOREST },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10920, {	-- For the Fallen
 						["qg"] = 22462,	-- Vindicator Haylen
@@ -1185,15 +1183,13 @@ root(ROOTS.Zones, {
 					}),
 					q(10033, {	-- WANTED: Bonelashers Dead! (A)
 						["provider"] = { "o", 182587 },	-- Wanted Poster
-						["model"] = 199473,
 						["coord"] = { 57.6, 54.7, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10034, {	-- WANTED: Bonelashers Dead! (H)
+						["provider"] = { "o", 182588 },	-- Wanted Poster
 						["coord"] = { 49.8, 45.3, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
-						["model"] = 199475,
-						["provider"] = { "o", 182588 },	-- Wanted Poster
 					}),
 					q(10791, {	-- Welcoming the Wolf Spirit
 						["qg"] = 18384,	-- Malukaz

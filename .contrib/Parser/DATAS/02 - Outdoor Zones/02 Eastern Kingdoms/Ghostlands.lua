@@ -265,7 +265,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["provider"] = { "o", 181153 },	-- Wanted Poster: Kel'gash the Wicked
 					["sourceQuest"] = 9276,	-- Attack on Zeb'tela
 					["coord"] = { 72.2, 31.1, GHOSTLANDS },
-					["model"] = 192133,
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 1, 9),
 					["groups"] = {
@@ -597,7 +596,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["sourceQuest"] = 9161,	-- The Traitor's Shadow
 					["coord"] = { 79.6, 17.5, GHOSTLANDS },
-					["model"] = 198020,
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 1, 15),
 				}),
@@ -1110,7 +1108,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9138,	-- Suncrown Village
 					-- #endif
 					["coord"] = { 48.3, 31.6, GHOSTLANDS },
-					["model"] = 192133,
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 1, 9),
 					["groups"] = {

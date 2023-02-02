@@ -76,12 +76,10 @@ _.Zones =
 							},
 						}),
 						o(213751, {	-- Sprite's Cloth Chest
-							["description"] = "Cave entrance is at 73.2, 73.6.  This chest is personal loot and based on your current Spec, NOT your Loot Spec.",
-							["modelScale"] = 1.5,
 							["questID"] = 31412,
-							["model"] = 446675,
+							["description"] = "Cave entrance is at 73.2, 73.6.  This chest is personal loot and based on your current Spec, NOT your Loot Spec.",
 							["coord"] = { 74.6, 74.8, 381 },
-							["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
+							["modelScale"] = 1.5,
 							["g"] = {
 								i(86223, {	-- Agile Sprite Cloak
 									["description"] = "Only lootable while in an Agility DPS Spec (Hunter/Rogue).", -- verified 2021-10-21 Hunter(Surv)
@@ -107,8 +105,6 @@ _.Zones =
 								{ 70.1, 63.9, KUN_LAI_SUMMIT },
 								{ 71.1, 62.6, KUN_LAI_SUMMIT },
 							},
-							["model"] = 593274,
-							["icon"] = "Interface\\Icons\\inv_misc_ornatebox",
 							["g"] = {
 								i(88723),	-- Sturdy Yaungol Spear
 							},

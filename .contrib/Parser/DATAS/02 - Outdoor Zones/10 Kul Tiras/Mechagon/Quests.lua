@@ -622,7 +622,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 			}),
 			q(56117),	-- Recyclable Parts
 			o(326027, {	-- Recyclerizer DX-82
-				["model"] = 2929684,
 				["modelScale"] = 3,
 				["g"] = {
 					i(168946, {	-- Bundle of Recyclable Parts

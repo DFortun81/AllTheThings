@@ -2207,7 +2207,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.3, 47.1, SHADOWMOON_VALLEY },
 						["timeline"] = { "added 6.1.0.19508" },
 						["modelScale"] = .5,
-						["model"] = 521201,
 						["g"] = {
 							i(122228),	-- Music Roll: The Black Temple
 						},

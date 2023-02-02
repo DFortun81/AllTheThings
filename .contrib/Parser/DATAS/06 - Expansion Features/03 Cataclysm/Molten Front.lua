@@ -538,9 +538,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 			}),
 			n(RARES, {
 				o(207496, {	-- Dark Iron Treasure Chest
-					["model"] = 446673,
 					--["modelScale"] = 1.5,
-					["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 					["coords"] = {
 						{ 34.3, 48.3, 338 },
 						{ 33.9, 53.8, 338 },

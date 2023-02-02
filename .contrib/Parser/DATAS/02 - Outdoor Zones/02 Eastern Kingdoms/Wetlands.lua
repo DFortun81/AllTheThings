@@ -1441,9 +1441,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				o(207496, {	-- Dark Iron Treasure Chest
-					["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 					["timeline"] = { "added 4.0.3.13277" },
-					["model"] = 446673,
 					["modelScale"] = 1.5,
 					["coords"] = {
 						{ 63.9, 78.2, WETLANDS },

@@ -172,10 +172,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["provider"] = { "n", 105081 },	-- Archmage Kalec
 						}),
 						q(42007, {	-- A Forgotten Enemy
-							["sourceQuest"] = 42006,	-- A New Threat
 							["provider"] = { "o", 248398 },	-- Ethereal Communication Device
+							["sourceQuest"] = 42006,	-- A New Threat
 							["coord"] = { 56.7, 69.1, DRAGONBLIGHT },
-							["model"] = 192568,
 						}),
 						q(42008, {	-- Eyes of the Dragon
 							["sourceQuest"] = 42007,	-- A Forgotten Enemy

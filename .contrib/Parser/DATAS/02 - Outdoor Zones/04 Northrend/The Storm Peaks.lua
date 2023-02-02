@@ -464,11 +464,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12967,	-- Battling the Elements
 					}),
 					q(12956, {	-- A Spark of Hope
-						["coord"] = { 77.1, 62.9, THE_STORM_PEAKS },
-						["model"] = 195374,
-						["maxReputation"] = { 1119, EXALTED },	-- Sons of Hodir, Exalted
 						["provider"] = { "o", 192060 },	-- Fjorn's Anvil
 						["sourceQuest"] = 12922,	-- The Refiner's Fire
+						["coord"] = { 77.1, 62.9, THE_STORM_PEAKS },
+						["maxReputation"] = { 1119, EXALTED },	-- Sons of Hodir, Exalted
 					}),
 					q(12925, {	-- Aberrations
 						["qg"] = 30041,	-- Thyra Kvinnshal
@@ -911,11 +910,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12827,	-- Reclaimed Rations
 					}),
 					q(12872, {	-- Norgannon's Shell (A)
-						["coord"] = { 37.4, 46.7, THE_STORM_PEAKS },
-						["model"] = 243957,
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "o", 191760 },	-- Inventor's Library Console
 						["sourceQuest"] = 13415,	-- The Library Console
+						["coord"] = { 37.4, 46.7, THE_STORM_PEAKS },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(42794),	-- Hardened Vine of the Mauler
 							i(42824),	-- Maker's Edge
@@ -925,11 +923,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12928, {	-- Norgannon's Shell (H)
-						["coord"] = { 37.4, 46.8, THE_STORM_PEAKS },
-						["model"] = 243957,
-						["races"] = HORDE_ONLY,
 						["provider"] = { "o", 191760 },	-- Inventor's Library Console
 						["sourceQuest"] = 13416,	-- The Library Console
+						["coord"] = { 37.4, 46.8, THE_STORM_PEAKS },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(42794),	-- Hardened Vine of the Mauler
 							i(42824),	-- Maker's Edge
@@ -1361,14 +1358,13 @@ root(ROOTS.Zones, {
 						["description"] = "The giants that drop this quest item spawn on and around the ice patch east of Dun Niffelem.",
 					}),
 					q(13843, {	-- The Scrapbot Construction Kit
-						["coord"] = { 37.6, 46.8, THE_STORM_PEAKS },
-						["model"] = 243957,
 						["provider"] = { "o", 191761 },	-- Prototype Console
-						["repeatable"] = true,
-						["requireSkill"] = ENGINEERING,
 						["sourceQuest"] = 12889,	-- The Prototype Console
 						-- wh says this ALSO teaches Scrapbot Construction Kit, spell 55252
 						-- not sure how to list reward/what quest it comes from, or if the questline has changed, so i guess an engineer needs to check it out
+						["coord"] = { 37.6, 46.8, THE_STORM_PEAKS },
+						["requireSkill"] = ENGINEERING,
+						["repeatable"] = true,
 					}),
 					q(12989, {	-- The Slithering Darkness
 						["qg"] = 29839,	-- Astrid Bjornrittar
@@ -1439,10 +1435,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12874,	-- Fervor of the Frostborn
 					}),
 					q(12953, {	-- Valkyrion Must Burn
-						["coord"] = { 24.0, 61.7, THE_STORM_PEAKS },
-						["model"] = 195533,
 						["provider"] = { "o", 192072 },	-- Harpoon Crate
 						["sourceQuest"] = 12841,	-- The Crone's Bargain
+						["coord"] = { 24.0, 61.7, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42850),	-- Flamebringer's Crown
 							i(42884),	-- Steel-Tipped Snowboots

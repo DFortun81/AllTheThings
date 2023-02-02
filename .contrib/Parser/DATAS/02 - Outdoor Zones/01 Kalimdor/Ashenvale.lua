@@ -2539,7 +2539,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.3, 61.8, ASHENVALE },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["model"] = 254419,
 				}),
 				q(13913, {	-- They Took Our Gnomes
 					["qg"] = 34354,	-- Huntress Jalin

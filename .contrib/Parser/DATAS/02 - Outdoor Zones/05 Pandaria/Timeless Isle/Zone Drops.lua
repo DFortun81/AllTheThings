@@ -74,8 +74,6 @@ _.Zones =
 				}),
 				o(222685, {	-- Crane Nest
 					["modelScale"] = 2.3,
-					["model"] = 191835,
-					["icon"] = "Interface\\Icons\\INV_Egg_07",
 					["g"] = {
 						crit(3, {	-- Crane Nest
 							["achievementID"] = 8725,	-- Eyes on the Ground

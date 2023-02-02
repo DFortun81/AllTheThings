@@ -9,8 +9,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["modelScale"] = 2,
 				["questID"] = 49137,
 				["coord"] = { 43.3, 36.3, DRUSTVAR },	-- cave entrance
-				["model"] = 446679,
-				["icon"] = "Interface\\Icons\\inv_misc_treasurechest01c",
 				["crs"] = { 128181 },	-- Vengeful Dead
 				["g"] = {
 					crit(8, {	-- Ancient Sarcophagus
@@ -327,9 +325,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			o(277897, {	-- Seething Cache
 				["modelScale"] = 2,
 				["questID"] = 49341,
-				["model"] = 1721089,
 				["coord"] = { 68.6, 64.3, DRUSTVAR },
-				["icon"] = "Interface\\Icons\\INV_Eng_Crate",
 				["g"] = {
 					crit(12, {	-- Seething Cache
 						["achievementID"] = 12941,	-- Adventurer of Drustvar

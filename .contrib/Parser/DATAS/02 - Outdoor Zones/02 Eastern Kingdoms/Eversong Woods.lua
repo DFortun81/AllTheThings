@@ -879,7 +879,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["provider"] = { "o", 181011 },	-- Magister Duskwither's Journal
 					["coord"] = { 69.2, 52.1, EVERSONG_WOODS },
 					["cost"] = { { "i", 21783, 1 } },	-- Magister Duskwither's Journal
-					["model"] = 191948,
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 1, 8),
 				}),
@@ -1641,7 +1640,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["provider"] = { "o", 180918 },	-- Wanted: Thaelis the Hungerer
 					["coord"] = { 48.1, 46.3, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
-					["model"] = 192133,
 					["lvl"] = lvlsquish(4, 1, 4),
 					["groups"] = {
 						objective(1, {	-- 0/1 Thaelis's Head

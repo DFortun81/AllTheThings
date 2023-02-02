@@ -1218,8 +1218,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 
 				}),
 				o(202081, {	-- Takk's Nest
-					["model"] = 199226,
-					["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
 					["coords"] = {
 						{ 61.0, 19.8, NORTHERN_BARRENS },
 						{ 62.8, 20.2, NORTHERN_BARRENS },

@@ -844,7 +844,6 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 188667 },	-- Amberseed
 						["coord"] = { 31.8, 59.5, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
-						["model"] = 202297,
 					}),
 					q(12414, {	-- Mounting Up
 						["qg"] = 26377,	-- Squire Percy
@@ -879,7 +878,6 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 188365 },	-- Heart of the Ancients
 						["sourceQuest"] = 12042,	-- Heart of the Ancients
 						["coord"] = { 36.9, 32.3, GRIZZLY_HILLS },
-						["model"] = 192714,
 					}),
 					q(12113, {	-- Nice to Meat You
 						["qg"] = 26884,	-- Harkor
@@ -1272,7 +1270,6 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 188261 },	-- Battered Journal
 						["coord"] = { 64.2, 19.7, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
-						["model"] = 200908,
 					}),
 					q(12026, {	-- The Damaged Journal (H)
 						["provider"] = { "o", 188261 },	-- Battered Journal

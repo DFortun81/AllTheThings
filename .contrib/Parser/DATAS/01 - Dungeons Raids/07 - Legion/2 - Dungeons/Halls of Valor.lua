@@ -9,7 +9,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["g"] = {
 			n(QUESTS, {
 				o(251991, {	-- The Aegis of Aggramar
-					["model"] = 1361813,
 					["modelScale"] = 3,
 					["g"] = {
 						q(43349, {	-- The Aegis of Aggramar
