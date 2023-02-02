@@ -213,7 +213,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 			crit(3762, {	-- Aegwynn and the Dragon Hunt
 				["provider"] = { "o", 175738 },
 				["coords"] = {
-					-- #if AFTER LEGION
+					-- #if AFTER CATA
 					{ 85.7, 23.7, STORMWIND_CITY },
 					-- #else
 					{ 76.4, 29.6, STORMWIND_CITY },
@@ -225,174 +225,638 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 			}),
 			crit(3763, {	-- Aftermath of the Second War
 				["provider"] = { "o", 21581 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 85.2, 26.1, STORMWIND_CITY },
+					-- #else
+					{ 76.1, 32.0, STORMWIND_CITY },
+					-- #endif
+					-- #if AFTER CATA
+					{ 60.1, 13.6, BLASTED_LANDS },
+					-- #else
+					{ 64.3, 15.5, BLASTED_LANDS },
+					-- #endif
+					{ 54.2, 31.0, DARNASSUS },
+				},
+				["maps"] = { SCARLET_MONASTERY },
 			}),
 			crit(3764, {	-- Arathor and the Troll Wars
 				["provider"] = { "o", 175734 },
+				["coords"] = {
+					{ 62.6, 20.4, HILLSBRAD_FOOTHILLS },
+					{ 48.3, 58.6, HILLSBRAD_FOOTHILLS },
+					{ 77.1, 9.1, IRONFORGE },
+				},
+				["maps"] = { SCARLET_MONASTERY },
 			}),
 			crit(3765, {	-- Archimonde's Return and the Flight to Kalimdor
 				["provider"] = { "o", 175758 },
+				["coords"] = {
+					-- #if AFTER LEGION
+					{ 29.5, 24.1, STORMWIND_CITY },
+					-- #endif
+					{ 51.8, 74.5, STORMWIND_CITY },
+					-- #if AFTER CATA
+					{ 68.0, 74.5, NORTHERN_BARRENS },
+					-- #else
+					{ 62.4, 38.8, THE_BARRENS },
+					-- #endif
+					{ 66.4, 7.7, DESOLACE },
+				},
+				["maps"] = { SCARLET_MONASTERY },
 			}),
 			crit(3766, {	-- Beyond the Dark Portal
 				["provider"] = { "o", 21582 },
+				["coords"] = {
+					-- #if AFTER LEGION
+					{ 44.0, 71.7, STORMWIND_CITY },
+					-- #endif
+					-- #if AFTER CATA
+					{ 84.6, 24.3, STORMWIND_CITY },
+					-- #else
+					{ 76.3, 29.0, STORMWIND_CITY },
+					-- #endif
+					-- #if AFTER CATA
+					{ 60.9, 20.2, BLASTED_LANDS },
+					-- #else
+					{ 65.2, 22.9, BLASTED_LANDS },
+					-- #endif
+					-- #if AFTER CATA
+					{ 40.7, 73.8, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 26.9, 77.3, STRANGLETHORN_VALE },
+					-- #endif
+				},
+				["maps"] = { SCARLET_MONASTERY },
 			}),
 			crit(3767, {	-- Charge of the Dragonflights
 				["provider"] = { "o", 175726 },
+				["coords"] = {
+					{ 76.1, 10.5, IRONFORGE },
+					{ 9.9, 56.9, WETLANDS },
+					-- #if AFTER CATA
+					{ 68.4, 69.1, NORTHERN_BARRENS },
+					-- #else
+					{ 62.7, 36.2, THE_BARRENS },
+					-- #endif
+					{ 60.8, 50.6, TIRISFAL_GLADES },
+					{ 34.8, 49.7, ASHENVALE },
+				},
 			}),
 			crit(3768, {	-- Civil War in the Plaguelands
 				["provider"] = { "o", 175761 },
+				["coords"] = {
+					-- #if AFTER LEGION
+					{ 44.0, 71.6, STORMWIND_CITY },
+					-- #endif
+					-- #if AFTER CATA
+					{ 85.0, 23.4, STORMWIND_CITY },
+					-- #else
+					{ 76.4, 32.4, STORMWIND_CITY },
+					-- #endif
+					-- #if AFTER CATA
+					{ 38.8, 44.1, NORTHSHIRE_VALLEY },
+					{ 57.4, 45.4, HILLSBRAD_FOOTHILLS },
+					-- #else
+					{ 49.5, 39.6, ELWYNN_FOREST },
+					{ 51.3, 58.5, HILLSBRAD_FOOTHILLS },
+					-- #endif
+					{ 76.8, 12.8, IRONFORGE },
+					{ 67.6, 37.3, UNDERCITY },
+				},
+				["maps"] = {
+					SCARLET_MONASTERY,
+					-- #if BEFORE CATA
+					NORTHSHIRE_VALLEY,
+					-- #endif
+					STRATHOLME,
+				},
 			}),
 			crit(3769, {	-- Empires' Fall
 				["provider"] = { "o", 175855 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 41.1, 73.7, THE_CAPE_OF_STRANGLETHORN },
+					{ 52.5, 26.9, TANARIS },
+					-- #else
+					{ 27.8, 77.3, STRANGLETHORN_VALE },
+					{ 52.6, 27.8, TANARIS },
+					-- #endif
+				},
 			}),
 			crit(3770, {	-- Exile of the High Elves
 				["provider"] = { "o", 175731 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 67.1, 73.4, NORTHERN_BARRENS },
+					-- #else
+					{ 61.9, 38.7, THE_BARRENS },
+					-- #endif
+					-- #if AFTER CATA
+					{ 34.1, 26.0, DARNASSUS },
+					-- #else
+					{ 39.7, 39.8, DARNASSUS },
+					-- #endif
+					{ 61.9, 57.8, UNDERCITY },
+				},
+				-- #if BEFORE MOP
+				["maps"] = { SCHOLOMANCE },
+				-- #endif
 			}),
 			crit(3771, {	-- Icecrown and the Frozen Throne
 				["provider"] = { "o", 175749 },
+				["coords"] = {
+					{ 43.8, 65.7, ELWYNN_FOREST },
+					{ 56.1, 50.8, UNDERCITY },
+				},
+				["maps"] = {
+					SCARLET_MONASTERY,
+					-- #if BEFORE MOP
+					SCHOLOMANCE,
+					-- #endif
+					STRATHOLME,
+				},
 			}),
 			crit(3772, {	-- Ironforge - the Awakening of the Dwarves
 				["provider"] = { "o", 175736 },
+				["coords"] = {
+					{ 35.5, 49.0, LOCH_MODAN },
+					{ 74.8, 9.1, IRONFORGE },
+					-- #if AFTER CATA
+					{ 50.5, 86.9, SOUTHERN_BARRENS },
+					{ 40.0, 76.8, TANARIS },
+					-- #else
+					{ 49.4, 84.4, THE_BARRENS },
+					{ 36.9, 76.9, TANARIS },
+					-- #endif
+					{ 31.6, 49.5, MULGORE },
+				},
+				["maps"] = { BLACKROCK_DEPTHS },
 			}),
 			crit(3773, {	-- Kel'Thuzad and the Forming of the Scourge
 				["provider"] = { "o", 175754 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 56.7, 47.5, HILLSBRAD_FOOTHILLS },
+					-- #else
+					{ 51.6, 58.6, HILLSBRAD_FOOTHILLS },
+					-- #endif
+					{ 56.2, 51.0, UNDERCITY },
+				},
+				["maps"] = {
+					SCARLET_MONASTERY,
+					-- #if BEFORE MOP
+					SCHOLOMANCE,
+					-- #endif
+					STRATHOLME,
+				},
 			}),
 			crit(3774, {	-- Kil'jaeden and the Shadow Pact
 				["provider"] = { "o", 175741 },
+				["coords"] = {
+					-- #if AFTER LEGION
+					{ 29.4, 23.9, STORMWIND_CITY },
+					-- #endif
+					{ 74.1, 45.4, DUSKWOOD },
+				},
+				["maps"] = {
+					-- #if BEFORE MOP
+					SCHOLOMANCE,
+					-- #endif
+					STRATHOLME,
+				},
 			}),
 			crit(3775, {	-- Lethargy of the Orcs
 				["provider"] = { "o", 175751 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 65.5, 46.7, SOUTHERN_BARRENS },
+					-- #else
+					{ 61.8, 55.2, THE_BARRENS },
+					-- #endif
+					{ 85.3, 69.8, ELWYNN_FOREST },
+				},
 			}),
 			crit(3776, {	-- Mount Hyjal and Illidan's Gift
 				["provider"] = { "o", 175729 },
+				["coords"] = {
+					{ 51.9, 74.7, STORMWIND_CITY },
+					-- #if AFTER CATA
+					{ 66.9, 74.6, NORTHERN_BARRENS },
+					-- #else
+					{ 61.8, 39.4, THE_BARRENS },
+					{ 36.6, 44.0, DARKSHORE },
+					-- #endif
+					{ 73.7, 44.5, DUSKWOOD },
+				},
 			}),
 			crit(3777, {	-- Old Hatreds - The Colonization of Kalimdor
 				["provider"] = { "o", 175763 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 51.0, 30.2, TANARIS },
+					-- #else
+					{ 51.0, 29.4, TANARIS },
+					-- #endif
+				},
+				-- #if BEFORE MOP
+				["maps"] = { SCHOLOMANCE },
+				-- #endif
 			}),
 			crit(3778, {	-- Rise of the Blood Elves
 				["provider"] = { "o", 175760 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 69.2, 33.1, ARATHI_HIGHLANDS },
+					{ 50.0, 33.5, DARNASSUS },
+					-- #else
+					{ 74.1, 32.4, ARATHI_HIGHLANDS },
+					{ 49.1, 16.7, DARNASSUS },
+					-- #endif
+					{ 64.6, 69.4, ELWYNN_FOREST },
+				},
+				-- #if BEFORE MOP
+				["maps"] = { SCHOLOMANCE },
+				-- #endif
 			}),
 			crit(3779, {	-- Rise of the Horde
 				["provider"] = { "o", 175742 },
+				["coords"] = {
+					{ 59.6, 58.1, DUROTAR },
+					{ 77.0, 12.8, IRONFORGE },
+					-- #if AFTER CATA
+					{ 49.5, 55.3, SWAMP_OF_SORROWS },
+					-- #else
+					{ 47.8, 54.7, SWAMP_OF_SORROWS },
+					-- #endif
+				},
 			}),
 			crit(3780, {	-- Sargeras and the Betrayal
 				["provider"] = { "o", 175724 },
+				["coords"] = {
+					-- #if AFTER LEGION
+					{ 29.5, 24.1, STORMWIND_CITY },
+					-- #endif
+					-- #if AFTER CATA
+					{ 69.4, 32.8, ARATHI_HIGHLANDS },
+					{ 34.6, 49.5, ASHENVALE },
+					{ 67.0, 74.9, NORTHERN_BARRENS },
+					-- #else
+					{ 74.2, 32.1, ARATHI_HIGHLANDS },
+					{ 34.5, 49.5, ASHENVALE },
+					{ 61.9, 39.6, THE_BARRENS },
+					-- #endif
+				},
+				-- #if BEFORE MOP
+				["maps"] = { SCHOLOMANCE },
+				-- #endif
 			}),
 			crit(3781, {	-- Sunwell - The Fall of Quel'Thalas
 				["provider"] = { "o", 175757 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 41.1, 74.5, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.1, 77.7, STRANGLETHORN_VALE },
+					-- #endif
+					{ 34.5, 50.0, ASHENVALE },
+				},
 			}),
 			crit(3782, {	-- The Alliance of Lordaeron
 				["provider"] = { "o", 175746 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 85.2, 26.3, STORMWIND_CITY },
+					-- #else
+					{ 76.1, 32.0, STORMWIND_CITY },
+					-- #endif
+					{ 72.1, 48.0, DUSKWOOD },
+					{ 47.6, 52.0, DUN_MOROGH },
+					{ 77.0, 12.4, IRONFORGE },
+					-- #if AFTER CATA
+					{ 57.2, 45.5, HILLSBRAD_FOOTHILLS },
+					-- #else
+					{ 63.7, 20.7, HILLSBRAD_FOOTHILLS },
+					-- #endif
+				},
 			}),
 			crit(3783, {	-- The Battle of Grim Batol
 				["provider"] = { "o", 175750 },
+				["coords"] = {
+					-- #if AFTER LEGION
+					{ 86.6, 36.5, STORMWIND_CITY },
+					-- #elseif AFTER CATA
+					{ 86.5, 36.1, STORMWIND_CITY },
+					-- #else
+					{ 84.1, 35.0, STORMWIND_CITY },
+					-- #endif
+					{ 75.7, 10.9, IRONFORGE },
+					{ 31.5, 49.4, MULGORE },
+					-- #if BEFORE CATA
+					{ 10.8, 60.8, WETLANDS },
+					-- #endif
+				},
 			}),
 			crit(3784, {	-- The Betrayer Ascendant
 				["provider"] = { "o", 175759 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 62.0, 74.6, DARNASSUS },
+					-- #else
+					{ 66.5, 76.6, DARNASSUS },
+					-- #endif
+					{ 68.6, 64.1, SILVERMOON_CITY },
+				},
 			}),
 			crit(3785, {	-- The Birth of the Lich King
 				["provider"] = { "o", 175748 },
+				["coords"] = {
+					{ 72.1, 46.4, DUSKWOOD },
+					-- #if AFTER CATA
+					{ 52.1, 58.5, HILLSBRAD_FOOTHILLS },
+					-- #else
+					{ 58.0, 46.1, HILLSBRAD_FOOTHILLS },
+					-- #endif
+				},
+				["maps"] = {
+					-- #if BEFORE MOP
+					SCHOLOMANCE,
+					-- #endif
+					STRATHOLME,
+				},
 			}),
 			crit(3786, {	-- The Dark Portal and the Fall of Stormwind
 				["provider"] = { "o", 175745 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 87.1, 35.9, STORMWIND_CITY },
+					-- #else
+					{ 83.0, 36.3, STORMWIND_CITY },
+					-- #endif
+					-- #if AFTER CATA
+					{ 62.5, 16.1, BLASTED_LANDS },
+					{ 26.2, 42.2, REDRIDGE_MOUNTAINS },
+					{ 49.5, 55.4, SWAMP_OF_SORROWS },
+					-- #else
+					{ 66.8, 18.3, BLASTED_LANDS },
+					{ 26.8, 45.8, REDRIDGE_MOUNTAINS },
+					{ 47.7, 55.0, SWAMP_OF_SORROWS },
+					-- #endif
+				},
+				-- #if BEFORE MOP
+				["maps"] = { SCHOLOMANCE },
+				-- #endif
 			}),
 			crit(3787, {	-- The Founding of Quel'Thalas
 				["provider"] = { "o", 175733 },
+				["coords"] = {
+					-- #if BEFORE CATA
+					{ 36.6, 43.8, DARKSHORE },
+					-- #endif
+					{ 73.6, 45.1, DUSKWOOD },
+				},
+				-- #if BEFORE MOP
+				["maps"] = { SCHOLOMANCE },
+				-- #endif
 			}),
 			crit(3788, {	-- The Guardians of Tirisfal
 				["provider"] = { "o", 175735 },
+				["coords"] = {
+					-- #if AFTER LEGION
+					{ 85.0, 26.7, STORMWIND_CITY },
+					-- #elseif AFTER CATA
+					{ 85.1, 26.2, STORMWIND_CITY },
+					-- #else
+					{ 76.0, 32.0, STORMWIND_CITY },
+					-- #endif
+					{ 66.9, 36.1, DALARAN },
+				},
+				["maps"] = { KARAZHAN },
 			}),
 			crit(3789, {	-- The Invasion of Draenor
 				["provider"] = { "o", 175747 },
+				["maps"] = { SCHOLOMANCE },
 			}),
 			crit(3790, {	-- The Kaldorei and the Well of Eternity
 				["provider"] = { "o", 21583 },
+				["coords"] = {
+					-- #if AFTER LEGION
+					{ 29.5, 24.1, STORMWIND_CITY },
+					-- #endif
+					-- #if AFTER CATA
+					{ 84.6, 25.9, STORMWIND_CITY },
+					-- #else
+					{ 75.3, 29.8, STORMWIND_CITY },
+					-- #endif
+					{ 67.3, 49.8, TANARIS },
+					-- #if BEFORE CATA
+					{ 10.4, 60.6, WETLANDS },
+					-- #endif
+				},
 			}),
 			crit(3791, {	-- The Last Guardian
 				["provider"] = { "o", 175740 },
+				["coords"] = {
+					-- #if AFTER LEGION
+					{ 29.9, 24.7, STORMWIND_CITY },
+					-- #endif
+					{ 37.2, 46.9, LOCH_MODAN },
+					{ 52.6, 53.0, WESTFALL },
+				},
+				["maps"] = { KARAZHAN },
 			}),
 			crit(3792, {	-- The Lich King Triumphant
 				["provider"] = { "o", 175762 },
+				["maps"] = {
+					-- #if BEFORE MOP
+					SCHOLOMANCE,
+					-- #endif
+					STRATHOLME,
+				},
 			}),
 			crit(3793, {	-- The New Horde
 				["provider"] = { "o", 175752 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 86.1, 25.5, STORMWIND_CITY },
+					-- #else
+					{ 75.7, 32.0, STORMWIND_CITY },
+					-- #endif
+					-- #if AFTER CATA
+					{ 65.5, 46.7, SOUTHERN_BARRENS },
+					{ 49.2, 55.4, SWAMP_OF_SORROWS },
+					-- #else
+					{ 47.6, 55.0, SWAMP_OF_SORROWS },
+					{ 61.9, 54.9, THE_BARRENS },
+					-- #endif
+				},
 			}),
 			crit(3794, {	-- The Old Gods and the Ordering of Azeroth
 				["provider"] = { "o", 175725 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 54.2, 38.7, DARNASSUS },
+					-- #else
+					{ 55.3, 24.2, DARNASSUS },
+					-- #endif
+					{ 76.1, 10.8, IRONFORGE },
+					{ 56.1, 50.6, UNDERCITY },
+					-- #if BEFORE CATA
+					{ 9.8, 57.6, WETLANDS },
+					-- #endif
+				},
+				["maps"] = {
+					BLACKROCK_DEPTHS,
+					-- #if BEFORE MOP
+					SCHOLOMANCE,
+					-- #endif
+				},
 			}),
 			crit(3795, {	-- The Scourge of Lordaeron
 				["provider"] = { "o", 175756 },
+				["coords"] = {
+					{ 34.8, 49.8, ASHENVALE },
+					-- #if AFTER CATA
+					{ 41.9, 73.4, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.6, 77.1, STRANGLETHORN_VALE },
+					-- #endif
+					{ 56.9, 47.5, WESTFALL },
+				},
+				["maps"] = {
+					SCARLET_MONASTERY,
+					-- #if BEFORE MOP
+					SCHOLOMANCE,
+					-- #endif
+					STRATHOLME,
+				},
 			}),
 			crit(3796, {	-- The Sentinels and the Long Vigil
 				["provider"] = { "o", 175732 },
+				["coords"] = {
+					{ 30.9, 42.8, FERALAS },
+					-- #if AFTER CATA
+					{ 42.1, 73.6, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.9, 77.2, STRANGLETHORN_VALE },
+					-- #endif
+				},
 			}),
 			crit(3797, {	-- The Seven Kingdoms
 				["provider"] = { "o", 175737 },
+				["maps"] = {
+					-- #if BEFORE MOP
+					SCHOLOMANCE,
+					-- #endif
+					STRATHOLME,
+				},
 			}),
 			crit(3798, {	-- The Twin Empires
 				["provider"] = { "o", 175854 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 52.5, 26.9, TANARIS },
+					{ 42.1, 73.8, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.8, 77.3, STRANGLETHORN_VALE },
+					{ 52.6, 27.8, TANARIS },
+					-- #endif
+				},
 			}),
 			crit(3799, {	-- The War of the Ancients
 				["provider"] = { "o", 175727 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 49.9, 33.1, DARNASSUS },
+					-- #else
+					{ 49.1, 16.1, DARNASSUS },
+					-- #endif
+					-- #if AFTER LEGION
+					{ 85.5, 23.5, STORMWIND_CITY },
+					{ 29.5, 24.1, STORMWIND_CITY },
+					-- #elseif AFTER CATA
+					{ 85.3, 23.3, STORMWIND_CITY },
+					-- #else
+					{ 36.5, 72.2, STORMWIND_CITY },
+					-- #endif
+				},
+				["maps"] = { SCARLET_MONASTERY },
 			}),
 			crit(3800, {	-- The World Tree and the Emerald Dream
 				["provider"] = { "o", 175730 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 54.8, 24.8, DARNASSUS },
+					-- #else
+					{ 56.2, 4.0, DARNASSUS },
+					-- #endif
+					-- #if AFTER LEGION
+					{ 85.5, 23.5, STORMWIND_CITY },
+					-- #elseif AFTER CATA
+					{ 85.3, 23.3, STORMWIND_CITY },
+					-- #else
+					{ 35.4, 63.3, STORMWIND_CITY },
+					-- #endif
+				},
+				["maps"] = { SCARLET_MONASTERY },
 			}),
 			crit(3801, {	-- War of the Spider
 				["provider"] = { "o", 175753 },
+				["coords"] = {
+					-- #if AFTER LEGION
+					{ 86.7, 35.8, STORMWIND_CITY },
+					{ 44.1, 72.1, STORMWIND_CITY },
+					-- #elseif AFTER CATA
+					{ 86.7, 35.9, STORMWIND_CITY },
+					-- #else
+					{ 83.2, 33.2, STORMWIND_CITY },
+					-- #endif
+				},
+				["maps"] = {
+					SCARLET_MONASTERY,
+					-- #if BEFORE MOP
+					SCHOLOMANCE,
+					-- #endif
+					STRATHOLME,
+				},
 			}),
 			crit(3802, {	-- War of the Three Hammers
 				["provider"] = { "o", 175739 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 32.6, 49.5, MULGORE },
+					-- #else
+					{ 31.6, 49.4, MULGORE },
+					-- #endif
+					{ 75.0, 9.0, IRONFORGE },
+					-- #if AFTER CATA
+					{ 28.9, 41.3, REDRIDGE_MOUNTAINS },
+					{ 50.1, 86.5, SOUTHERN_BARRENS },
+					{ 66.5, 43.5, STORMWIND_CITY },
+					-- #else
+					{ 30.0, 44.7, REDRIDGE_MOUNTAINS },
+					{ 69.6, 41.1, STORMWIND_CITY },
+					{ 49.1, 84.1, THE_BARRENS },
+					-- #endif
+					{ 14.1, 44.1, THE_HINTERLANDS },
+				},
+				["maps"] = {
+					BLACKROCK_DEPTHS,
+					SCARLET_MONASTERY,
+				},
 			}),
 			crit(3803, {	-- Wrath of Soulflayer
 				["provider"] = { "o", 175856 },
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 52.5, 26.9, TANARIS },
+					{ 42.1, 73.8, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 27.8, 77.3, STRANGLETHORN_VALE },
+					{ 52.6, 27.8, TANARIS },
+					-- #endif
+				},
 			}),
 		}),
-		--[[
-		-- Old Format: (for reference)
-		ach(1244, {	-- Well Read
-			crit(1),	-- Aegwynn and the Dragon Hunt (Stormwind City, Westfall, Tirisfal Glades)
-			crit(2),	-- Aftermath of the Second War (Stormwind City, Blasted Lands, Darnassus)
-			crit(3),	-- Arathor and the Troll Wars (Hillsbrad Foothills, Ironforge)
-			crit(4),	-- Archimonde's Return and the Flight to Kalimdor (Stormwind City, Northern Barrens, Desolace)
-			crit(5),	-- Beyond the Dark Portal (Stormwind City, Blasted Lands, Stranglethorn Vale, The Cape of Stranglethorn)
-			crit(6),	-- Charge of the Dragonflights (Ironforge, Tirisfal Glades, Ashenvale, Northern Barrens)
-			crit(7),	-- Civil War in the Plaguelands (Hillsbrad Foothills, Stormwind City, Undercity, Ironforge, Elwynn Forest, Northshire, Stratholme)
-			crit(8),	-- Empires' Fall (Tanaris, Stranglethorn Vale, The Cape of Stranglethorn)
-			crit(9),	-- Exile of the High Elves (Undercity, Darnassus, Northern Barrens)
-			crit(10),	-- Icecrown and the Frozen Throne (Stratholme, Undercity, Elwynn Forest)
-			crit(11),	-- Ironforge - the Awakening of the Dwarves (Mulgore, Blackrock Depths, Ironforge, Loch Modan, Southern Barrens, Tanaris)
-			crit(12),	-- Kel'Thuzad and the Forming of the Scourge (Stratholme, Hillsbrad Foothills, Undercity)
-			crit(13),	-- Kil'jaeden and the Shadow Pact (Stratholme, Duskwood, Stormwind City)
-			crit(14),	-- Lethargy of the Orcs (Elwynn Forest, Southern Barrens)
-			crit(15),	-- Mount Hyjal and Illidan's Gift (Duskwood, Stormwind City, Northern Barrens)
-			crit(16),	-- Old Hatreds - The Colonization of Kalimdor (Tanaris)
-			crit(17),	-- Rise of the Blood Elves (Darnassus, Elwynn Forest, Arathi Highlands)
-			crit(18),	-- Rise of the Horde (Swamp of Sorrows, Ironforge, Durotar)
-			crit(19),	-- Sargeras and the Betrayal (Arathi Highlands, Ashenvale, Northern Barrens, Stormwind City)
-			crit(20),	-- Sunwell - The Fall of Quel'Thalas (The Cape of Stranglethorn, Ashenvale, Stranglethorn Vale)
-			crit(21),	-- The Alliance of Lordaeron (Hills Foothills, Ironforge, Stormwind City, Dun Morogh, Duskwood, Silvermoon City)
-			crit(22),	-- The Battle of Grim Batol (Ironforge, Mulgore, Stormwind City)
-			crit(23),	-- The Betrayer Ascendant (Darnassus, Silvermoon City)
-			crit(24),	-- The Birth of the Lich King (Stratholme, Duskwood, Hillsbrad Foothills)
-			crit(25),	-- The Dark Portal and the Fall of Stormwind (Swamp of Sorrows, Blasted Lands, Stormwind City, Redridge Mountains)
-			crit(26),	-- The Founding of Quel'Thalas (Duskwood)
-			crit(27),	-- The Guardians of Tirisfal (Stormwind City, Dalaran - NR)
-			crit(28),	-- The Invasion of Draenor (Scholomance)
-			crit(29),	-- The Kaldorei and the Well of Eternity (Stormwind City, Tanaris)
-			crit(30),	-- The Last Guardian (Loch Modan, Stormwind City, Westfall)
-			crit(31),	-- The Lich King Triumphant (Stratholme)
-			crit(32),	-- The New Horde (Swamp of Sorrows, Stormwind City, Southern Barrens)
-			crit(33),	-- The Old Gods and the Ordering of Azeroth (Ironforge, Blackrock Depths, Darnassus, Undercity)
-			crit(34),	-- The Scourge of Lordaeron
-			crit(35),	-- The Sentinels and the Long Vigil (Feralas, Stranglethorn Vale, The Cape of Stranglethorn)
-			crit(36),	-- The Seven Kingdoms (Stratholme)
-			crit(37),	-- The Twin Empires (Tanaris, Stranglethorn Vale, The Cape of Stranglethorn)
-			crit(38),	-- The War of the Ancients (Stormwind City, Darnassus)
-			crit(39),	-- The World Tree and the Emerald Dream (Stormwind City, Darnassus)
-			crit(40),	-- War of the Spider (Stratholme, Stormwind City)
-			crit(41),	-- War of the Three Hammers (Mulgore, Stormwind City, Blackrock Depths, Ironforge, Redridge Mountains, Southern Barrens)
-			crit(42),	-- Wrath of Soulflayer (Tanaris, Stranglethorn Vale, The Cape of Stranglethorn)
-		}),
-		]]--
 	}),
 })));
