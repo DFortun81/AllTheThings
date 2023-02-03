@@ -456,7 +456,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(4018),	-- Whetted Claymore
 			}),
 			filter(THROWN, {
-				-- #if NOT ANYCLASIC
+				-- #if NOT ANYCLASSIC
 				-- The Burning Crusade
 				i(28535),	-- Amani Throwing Axe
 				i(28540),	-- Arakkoa Talon-Axe
