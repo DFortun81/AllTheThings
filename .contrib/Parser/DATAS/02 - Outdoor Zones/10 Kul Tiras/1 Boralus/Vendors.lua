@@ -5,6 +5,15 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(BORALUS, {
 		n(VENDORS, {
+			n(142190, {	-- Alchemist Hart <Amateur Potions>
+				["coord"] = { 66.8, 41.0, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(9144, {	-- Wildvine Potion
+						["timeline"] = { "added 8.0.1" },
+					}),
+				},
+			}),
 			n(161565, {	-- Bragni <Profession Liason>
 				["coord"] = { 56.3, 27.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,

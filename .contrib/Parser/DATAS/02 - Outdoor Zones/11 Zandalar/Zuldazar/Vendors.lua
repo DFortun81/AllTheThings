@@ -116,6 +116,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
+			n(138099, {	-- Isabel Marigan <Alchemy Supplies>
+				["coord"] = { 76.4, 49.0, ZULDAZAR },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(9144, {	-- Wildvine Potion
+						["timeline"] = { "added 8.0.1" },
+					}),
+				},
+			}),
 			n(161590, {	-- Jinxy Blastwheel <Profession Liason>
 				["coord"] = { 52.7, 58.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,

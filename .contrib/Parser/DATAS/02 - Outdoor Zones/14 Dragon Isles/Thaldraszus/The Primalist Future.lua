@@ -146,6 +146,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 								{ "i", ESSENCE_OF_THE_STORM, 30 },
 								{ "c", ELEMENTAL_OVERFLOW, 750 },
 							},
+							["collectible"] = false,	-- Its a Neck. Blizzard begs to differ.
 						}),
 						i(202015, {	-- Sands of Temporal Perfection
 							["cost"] = {
