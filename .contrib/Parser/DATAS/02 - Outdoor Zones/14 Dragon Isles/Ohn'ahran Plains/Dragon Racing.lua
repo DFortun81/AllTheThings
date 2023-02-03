@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
-		n(DRAGON_RACING, {
+		n(DRAGONRIDING_RACING, {
 			header(HEADERS.Achievement, 15941, {	-- Dragon Racing Completionist: Gold
 				n(ACHIEVEMENTS, {
 					ach(15918, {	-- Ohn'ahran Plains: Bronze

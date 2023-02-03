@@ -867,7 +867,6 @@ for key,value in pairs({
 		[-1130] = "Colmillarr de Iskaara",							-- Iskaara Tuskarr
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Acuerdo de Valdrakken",							-- Valdrakken Accord
-		[-1142] = "Retos aéreos",									-- Aerial Challenges
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 	-- Warrior order hall lore items
