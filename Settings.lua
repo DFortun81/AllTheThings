@@ -4294,7 +4294,7 @@ ScreenshotCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnRemovedThingsCheckBox,
 
 local ReportingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ReportingLabel:SetPoint("TOP", MinimapLabel, "TOP", 0, 0);
-ReportingLabel:SetPoint("LEFT", settings, "RIGHT", -290, 0);
+ReportingLabel:SetPoint("LEFT", settings, "RIGHT", -300, 0);
 ReportingLabel:SetJustifyH("LEFT");
 ReportingLabel:SetText(L["REPORTING_LABEL"]);
 ReportingLabel:Show();
