@@ -202,6 +202,7 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 				["coord"] = { 53.6, 35.3, MOONGLADE },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(40, 40, 1),
+				["_drop"] = { "g" },
 				["groups"] = {
 					objective(1, {	-- 0/1 Receive Elune's Blessing
 						["provider"] = { "n", 15467 },	-- Omen
