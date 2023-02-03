@@ -49,6 +49,14 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(24655),	-- Consortium Robe
 		i(24653),	-- Consortium Sash
 		i(31272),	-- Crown of Endless Knowledge
+		i(25341),	-- Dilapidated Cloth Belt
+		i(25342),	-- Dilapidated Cloth Boots
+		i(25343),	-- Dilapidated Cloth Bracers
+		i(25344),	-- Dilapidated Cloth Gloves
+		i(25345),	-- Dilapidated Cloth Hat
+		i(25346),	-- Dilapidated Cloth Pants
+		i(25347),	-- Dilapidated Cloth Shoulderpads
+		i(25348),	-- Dilapidated Cloth Vest
 		i(24669),	-- Eldr'naan Belt
 		i(24670),	-- Eldr'naan Boots
 		i(24676),	-- Eldr'naan Bracelets
@@ -94,6 +102,14 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(24605),	-- Laughing Skull Waistguard
 		i(31133),	-- Leggings of Concentrated Darkness
 		i(31306),	-- Leggings of the Sacred Crest
+		i(24576),	-- Loosely Threaded Belt
+		i(24577),	-- Loosely Threaded Boots
+		i(24578),	-- Loosely Threaded Bracers
+		i(24782),	-- Loosely Threaded Gloves
+		i(24580),	-- Loosely Threaded Hat
+		i(25338),	-- Loosely Threaded Pants
+		i(25339),	-- Loosely Threaded Shoulderpads
+		i(25340),	-- Loosely Threaded Vest
 		i(24637),	-- Mistyreed Belt
 		i(24638),	-- Mistyreed Boots
 		i(24644),	-- Mistyreed Bracers
@@ -183,6 +199,14 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(24752),	-- Daggerfen Gloves
 		i(24755),	-- Daggerfen Pauldrons
 		i(24754),	-- Daggerfen Stitchpants
+		i(25357),	-- Decaying Leather Armor
+		i(25358),	-- Decaying Leather Belt
+		i(25359),	-- Decaying Leather Boots
+		i(25360),	-- Decaying Leather Bracers
+		i(25361),	-- Decaying Leather Gloves
+		i(25362),	-- Decaying Leather Helmet
+		i(25363),	-- Decaying Leather Pants
+		i(25364),	-- Decaying Leather Shoulderpads
 		i(24732),	-- Dementia Armguards
 		i(24726),	-- Dementia Boots
 		i(24725),	-- Dementia Cord
@@ -232,6 +256,14 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		-- #endif
 		i(31226),	-- Leggings of the Sly
 		i(31281),	-- Mask of Veiled Death
+		i(25349),	-- Moldy Leather Armor
+		i(25350),	-- Moldy Leather Belt
+		i(25351),	-- Moldy Leather Boots
+		i(25352),	-- Moldy Leather Bracers
+		i(25353),	-- Moldy Leather Gloves
+		i(25354),	-- Moldy Leather Helmet
+		i(25355),	-- Moldy Leather Pants
+		i(25356),	-- Moldy Leather Shoulderpads
 		i(24781),	-- Murkblood Belt
 		i(24783),	-- Murkblood Boots
 		i(24789),	-- Murkblood Bracers
@@ -292,6 +324,14 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(24866),	-- Blood Knight Helm
 		i(24868),	-- Blood Knight Pauldrons
 		i(31286),	-- Breastplate of Rapid Striking
+		i(25373),	-- Corroded Mail Armor
+		i(25374),	-- Corroded Mail Belt
+		i(25375),	-- Corroded Mail Boots
+		i(25376),	-- Corroded Mail Bracers
+		i(25377),	-- Corroded Mail Circlet
+		i(25378),	-- Corroded Mail Gloves
+		i(25379),	-- Corroded Mail Pants
+		i(25380),	-- Corroded Mail Shoulderpads
 		i(24878),	-- Der'izu Belt
 		i(24885),	-- Der'izu Bracer
 		i(24880),	-- Der'izu Chestpiece
@@ -300,6 +340,14 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(24882),	-- Der'izu Helm
 		i(24883),	-- Der'izu Legguards
 		i(24884),	-- Der'izu Spaulders
+		i(25365),	-- Eroded Mail Armor
+		i(25366),	-- Eroded Mail Belt
+		i(25367),	-- Eroded Mail Boots
+		i(25368),	-- Eroded Mail Bracers
+		i(25369),	-- Eroded Mail Circlet
+		i(25370),	-- Eroded Mail Gloves
+		i(25371),	-- Eroded Mail Pants
+		i(25372),	-- Eroded Mail Shoulderpads
 		i(24821),	-- Felstone Bindings
 		i(24816),	-- Felstone Chain Vest
 		i(24817),	-- Felstone Gauntlets
@@ -469,6 +517,14 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(24939),	-- Darkcrest Legguards
 		i(24940),	-- Darkcrest Pauldrons
 		i(24935),	-- Darkcrest Sabatons
+		i(25389),	-- Deteriorating Plate Belt
+		i(25390),	-- Deteriorating Plate Boots
+		i(25391),	-- Deteriorating Plate Bracers
+		i(25393),	-- Deteriorating Plate Gloves
+		i(25394),	-- Deteriorating Plate Helmet
+		i(25392),	-- Deteriorating Plate Chestpiece
+		i(25395),	-- Deteriorating Plate Pants
+		i(25396),	-- Deteriorating Plate Shoulderpads
 		i(31137),	-- Gauntlets of Purification
 		i(31180),	-- Gauntlets of the Skullsplitter
 		i(31202),	-- Girdle of Divine Blessing
@@ -514,6 +570,14 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(24967),	-- Talonguard Greaves
 		i(24970),	-- Talonguard Helmet
 		i(24971),	-- Talonguard Legplates
+		i(25381),	-- Tarnished Plate Belt
+		i(25382),	-- Tarnished Plate Boots
+		i(25383),	-- Tarnished Plate Bracers
+		i(25385),	-- Tarnished Plate Gloves
+		i(25386),	-- Tarnished Plate Helmet
+		i(25384),	-- Tarnished Plate Chestpiece
+		i(25387),	-- Tarnished Plate Pants
+		i(25388),	-- Tarnished Plate Shoulderpads
 		i(25024),	-- Warlord's Iron-Breastplate
 		i(25028),	-- Warlord's Iron-Epaulets
 		i(25025),	-- Warlord's Iron-Gauntlets
@@ -540,6 +604,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			i(25203),	-- Chipped Woodchopper
 			i(25204),	-- Colossal War Axe
 			i(25210),	-- Double-Bladed Axe
+			i(25397),	-- Eroded Axe
 			i(25200),	-- Jagged Broadaxe
 			i(25198),	-- Karaborian Battle Axe
 			i(25202),	-- Kingly Axe
@@ -564,6 +629,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			i(31318),	-- Singing Crystal Axe
 			i(25224),	-- Slavemaster Axe
 			i(25215),	-- Spiked Battle Axe
+			i(25398),	-- Stone Reaper
 			i(25217),	-- Sundering Axe
 			i(25223),	-- Windcaller Hatchet
 		}),
@@ -575,6 +641,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			i(25123),	-- Boneshredder Mace
 			i(25314),	-- Ceremonial Hammer
 			i(25313),	-- Cold-Iron Scepter
+			i(25401),	-- Corroded Mace
 			i(25321),	-- Divine Hammer
 			i(25114),	-- Doomsayer's Mace
 			i(25121),	-- Dreaded Mace
@@ -627,6 +694,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			i(25154),	-- Blood Groove Blade
 			i(25148),	-- Bone Collector Sword
 			i(31234),	-- Crystalblade of the Draenei
+			i(25399),	-- Deteriorating Blade
 			i(25153),	-- Gladiator Greatblade
 			i(25150),	-- Honor Hold Saber
 			i(25152),	-- Howling Sword
@@ -657,6 +725,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			i(25157),	-- Serpentlord Claymore
 			i(25168),	-- Sha'tari Longsword
 			i(25158),	-- Skeletal Broadsword
+			i(25400),	-- Tarnished Claymore
 			i(25159, {	-- Thunderstrike Falchion
 				-- #if AFTER 6.0.1
 				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
@@ -668,6 +737,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		filter(BOWS, {
 			i(25241),	-- Ashenvale Longbow
 			i(25240),	-- Azerothian Longbow
+			i(25406),	-- Broken Longbow
 			i(25252),	-- Dream Catcher Bow
 			i(25247),	-- Expert's Bow
 			i(25251),	-- Orc Flatbow
@@ -724,6 +794,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			i(25113),	-- Phantom Dagger
 			i(25307),	-- Shadow Dagger
 			i(25110),	-- Sharp Bowie Knife
+			i(25403),	-- Sharpened Stilleto
 			i(25301),	-- Shattering Dagger
 			i(25299),	-- Siphoning Dagger
 			i(25302),	-- Soul-Drain Dagger
@@ -760,6 +831,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			i(25269),	-- Longbeard Rifle
 			i(25278),	-- Nesingwary Longrifle
 			i(25272),	-- PC-54 Shotgun
+			i(25405),	-- Rusted Musket
 			i(25273),	-- Sawed-Off Shotgun
 			i(25279),	-- Sen'jin Longrifle
 			i(25277),	-- Sporting Rifle
@@ -790,6 +862,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			i(25180),	-- Calenda Fighting Stick
 			i(25182),	-- Crystal-Etched Warstaff
 			i(25175),	-- Demoniac Longstaff
+			i(25404),	-- Dense War Staff
 			i(25328),	-- Faerie-Kind Staff
 			i(25335),	-- Feral Warp-Staff
 			i(25327),	-- Frenzied Staff

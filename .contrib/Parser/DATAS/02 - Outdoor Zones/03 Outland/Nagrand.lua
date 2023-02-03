@@ -1662,6 +1662,7 @@ root(ROOTS.Zones, {
 									{ "i", 26044, 20 },		-- 20x Halaa Research Token
 								},
 							}),
+							i(30569),	-- Proximo's Rudius
 						}),
 					}),
 					-- #if BEFORE CATA
@@ -1721,6 +1722,7 @@ root(ROOTS.Zones, {
 									{ "i", 26044, 20 },		-- 20x Halaa Research Token
 								},
 							}),
+							i(30569),	-- Proximo's Rudius
 						}),
 					}),
 					n(18072, {	-- Elementalist Sharvak <The Earthen Ring>

@@ -769,9 +769,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 					}),
 					n(ZONE_DROPS, {
+						i(21021),	-- Battered Shield
 						i(20483, {	-- Tainted Arcane Sliver
 							["cr"] = 15298,	-- Tainted Arcane Wraith
 						}),
+						i(21002),	-- Unkempt Belt
+						i(21003),	-- Unkempt Bracers
+						i(21004),	-- Unkempt Cloak
+						i(21005),	-- Unkempt Gloves
+						i(21006),	-- Unkempt Pants
+						i(21007),	-- Unkempt Robe
+						i(21008),	-- Unkempt Shoes
+						i(21009),	-- Scraggy Leather Belt
+						i(21010),	-- Scraggy Leather Boots
+						i(21011),	-- Scraggy Leather Bracers
+						i(21012),	-- Scraggy Leather Gloves
+						i(21013),	-- Scraggy Leather Pants
+						i(21014),	-- Scraggy Leather Vest
+						i(21015),	-- Shoddy Chain Belt
+						i(21020),	-- Shoddy Chain Boots
+						i(21019),	-- Shoddy Chain Bracers
+						i(21018),	-- Shoddy Chain Gloves
+						i(21017),	-- Shoddy Chain Pants
+						i(21016),	-- Shoddy Chain Vest
+						i(21022),	-- Weather Beaten Buckler
 					}),
 				},
 			}),
@@ -1819,6 +1840,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 62.5, 79.7, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 				}),
+				i(21021),	-- Battered Shield
 				i(21776, {	-- Captain Kelisendra's Lost Rutters
 					["races"] = HORDE_ONLY,
 					["crs"] = {
@@ -1852,6 +1874,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["races"] = HORDE_ONLY,
 				}),
+				i(21002),	-- Unkempt Belt
+				i(21003),	-- Unkempt Bracers
+				i(21004),	-- Unkempt Cloak
+				i(21005),	-- Unkempt Gloves
+				i(21006),	-- Unkempt Pants
+				i(21007),	-- Unkempt Robe
+				i(21008),	-- Unkempt Shoes
+				i(21009),	-- Scraggy Leather Belt
+				i(21010),	-- Scraggy Leather Boots
+				i(21011),	-- Scraggy Leather Bracers
+				i(21012),	-- Scraggy Leather Gloves
+				i(21013),	-- Scraggy Leather Pants
+				i(21014),	-- Scraggy Leather Vest
+				i(21015),	-- Shoddy Chain Belt
+				i(21020),	-- Shoddy Chain Boots
+				i(21019),	-- Shoddy Chain Bracers
+				i(21018),	-- Shoddy Chain Gloves
+				i(21017),	-- Shoddy Chain Pants
+				i(21016),	-- Shoddy Chain Vest
+				i(21022),	-- Weather Beaten Buckler
 			}),
 		},
 	}),

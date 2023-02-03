@@ -1670,6 +1670,7 @@ root(ROOTS.Zones, {
 							i(33875),	-- Recipe: Kibler's Bits
 							i(33873),	-- Recipe: Spicy Hot Talbuk
 							i(33871),	-- Recipe: Stormchops
+							i(33855),	-- Tarnished Silver Ring
 						}),
 					},
 				}),

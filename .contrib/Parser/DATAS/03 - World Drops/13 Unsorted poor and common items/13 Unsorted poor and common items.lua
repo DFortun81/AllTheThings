@@ -13,9 +13,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			filter(CLOTH, {
 				n(HEAD, {
 					i(8749),	-- Crochet Hat
-					i(25345),	-- Dilapidated Cloth Hat
 					i(8746),	-- Interlaced Cowl
-					i(24580),	-- Loosely Threaded Hat
 					i(8754),	-- Twill Cover
 				}),
 				n(SHOULDER, {
@@ -23,9 +21,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1769),	-- Canvas Shoulderpads
 					i(3942),	-- Crochet Shoulderpads
 					i(1785),	-- Cross-Stitched Shoulderpads
-					i(25347),	-- Dilapidated Cloth Shoulderpads
 					i(3798),	-- Interlaced Shoulderpads
-					i(25339),	-- Loosely Threaded Shoulderpads
 					i(3950),	-- Twill Shoulderpads
 				}),
 				n(CHEST, {
@@ -34,13 +30,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1770),	-- Canvas Vest
 					i(3943),	-- Crochet Vest
 					i(1786),	-- Cross-Stitched Vest
-					i(25348),	-- Dilapidated Cloth Vest
 					i(1380),	-- Frayed Robe
 					i(3799),	-- Interlaced Vest
-					i(25340),	-- Loosely Threaded Vest
 					i(1433),	-- Patchwork Armor
 					i(3951),	-- Twill Vest
-					i(21007),	-- Unkempt Robe
 				}),
 				n(WRIST, {
 					i(3379),	-- Brocade Bracers
@@ -48,13 +41,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(3377),	-- Canvas Bracers
 					i(3938),	-- Crochet Bracers
 					i(3381),	-- Cross-Stitched Bracers
-					i(25343),	-- Dilapidated Cloth Bracers
 					i(3365),	-- Frayed Bracers
 					i(3794),	-- Interlaced Bracers
-					i(24578),	-- Loosely Threaded Bracers
 					i(3373),	-- Patchwork Bracers
 					i(3946),	-- Twill Bracers
-					i(21003),	-- Unkempt Bracers
 				}),
 				n(HANDS, {
 					i(1775),	-- Brocade Gloves
@@ -62,13 +52,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1767),	-- Canvas Gloves
 					i(3940),	-- Crochet Gloves
 					i(1783),	-- Cross-Stitched Gloves
-					i(25344),	-- Dilapidated Cloth Gloves
 					i(1377),	-- Frayed Gloves
 					i(3796),	-- Interlaced Gloves
-					i(24782),	-- Loosely Threaded Gloves
 					i(1430),	-- Patchwork Gloves
 					i(3948),	-- Twill Gloves
-					i(21005),	-- Unkempt Gloves
 				}),
 				n(WAIST, {
 					i(3378),	-- Brocade Belt
@@ -76,13 +63,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(3376),	-- Canvas Belt
 					i(3936),	-- Crochet Belt
 					i(3380),	-- Cross-Stitched Belt
-					i(25341),	-- Dilapidated Cloth Belt
 					i(3363),	-- Frayed Belt
 					i(3792),	-- Interlaced Belt
-					i(24576),	-- Loosely Threaded Belt
 					i(3370),	-- Patchwork Belt
 					i(3944),	-- Twill Belt
-					i(21002),	-- Unkempt Belt
 				}),
 				n(LEGS, {
 					i(1776),	-- Brocade Pants
@@ -90,13 +74,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1768),	-- Canvas Pants
 					i(3941),	-- Crochet Pants
 					i(1784),	-- Cross-Stitched Pants
-					i(25346),	-- Dilapidated Cloth Pants
 					i(1378),	-- Frayed Pants
 					i(3797),	-- Interlaced Pants
-					i(25338),	-- Loosely Threaded Pants
 					i(1431),	-- Patchwork Pants
 					i(3949),	-- Twill Pants
-					i(21006),	-- Unkempt Pants
 				}),
 				n(FEET, {
 					i(1772),	-- Brocade Shoes
@@ -104,27 +85,20 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1764),	-- Canvas Shoes
 					i(3937),	-- Crochet Boots
 					i(1780),	-- Cross-Stitched Sandals
-					i(25342),	-- Dilapidated Cloth Boots
 					i(1374),	-- Frayed Shoes
 					i(3793),	-- Interlaced Boots
-					i(24577),	-- Loosely Threaded Boots
 					i(1427),	-- Patchwork Shoes
 					i(3945),	-- Twill Boots
-					i(21008),	-- Unkempt Shoes
 				}),
 			}),
 			filter(LEATHER, {
 				n(HEAD, {
-					i(25362),	-- Decaying Leather Helmet
 					i(8747),	-- Hardened Leather Helm
-					i(25354),	-- Moldy Leather Helmet
 					i(8753),	-- Smooth Leather Helmet
 					i(8750),	-- Thick Leather Hat
 				}),
 				n(SHOULDER, {
-					i(25364),	-- Decaying Leather Shoulderpads
 					i(3806),	-- Hardened Leather Shoulderpads
-					i(25356),	-- Moldy Leather Shoulderpads
 					i(1793),	-- Patched Leather Shoulderpads
 					i(1801),	-- Rawhide Shoulderpads
 					i(3975),	-- Smooth Leather Shoulderpads
@@ -132,13 +106,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1809),	-- Tough Leather Shoulderpads
 				}),
 				n(CHEST, {
-					i(25357),	-- Decaying Leather Armor
 					i(3807),	-- Hardened Leather Tunic
-					i(25349),	-- Moldy Leather Armor
 					i(1794),	-- Patched Leather Jerkin
 					i(1364),	-- Ragged Leather Vest
 					i(1802),	-- Rawhide Tunic
-					i(21014),	-- Scraggy Leather Vest
 					i(3976),	-- Smooth Leather Armor
 					i(3968),	-- Thick Leather Tunic
 					i(1810),	-- Tough Leather Armor
@@ -146,13 +117,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1425),	-- Worn Leather Vest
 				}),
 				n(WRIST, {
-					i(25360),	-- Decaying Leather Bracers
 					i(3802),	-- Hardened Leather Bracers
-					i(25352),	-- Moldy Leather Bracers
 					i(1789),	-- Patched Leather Bracers
 					i(1370),	-- Ragged Leather Bracers
 					i(1797),	-- Rawhide Bracers
-					i(21011),	-- Scraggy Leather Bracers
 					i(3971),	-- Smooth Leather Bracers
 					i(3963),	-- Thick Leather Bracers
 					i(1805),	-- Tough Leather Bracers
@@ -160,13 +128,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1420),	-- Worn Leather Bracers
 				}),
 				n(HANDS, {
-					i(25361),	-- Decaying Leather Gloves
 					i(3804),	-- Hardened Leather Gloves
-					i(25353),	-- Moldy Leather Gloves
 					i(1791),	-- Patched Leather Gloves
 					i(1368),	-- Ragged Leather Gloves
 					i(1799),	-- Rawhide Gloves
-					i(21012),	-- Scraggy Leather Gloves
 					i(3973),	-- Smooth Leather Gloves
 					i(3965),	-- Thick Leather Gloves
 					i(1807),	-- Tough Leather Gloves
@@ -174,14 +139,11 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1422),	-- Worn Leather Gloves
 				}),
 				n(WAIST, {
-					i(25358),	-- Decaying Leather Belt
 					i(3800),	-- Hardened Leather Belt
-					i(25350),	-- Moldy Leather Belt
 					i(1787),	-- Patched Leather Belt
 					i(1369),	-- Ragged Leather Belt
 					i(1795),	-- Rawhide Belt
 					i(4982),	-- Ripped Prospector Belt
-					i(21009),	-- Scraggy Leather Belt
 					i(3969),	-- Smooth Leather Belt
 					i(3961),	-- Thick Leather Belt
 					i(1803),	-- Tough Leather Belt
@@ -189,13 +151,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1418),	-- Worn Leather Belt
 				}),
 				n(LEGS, {
-					i(25363),	-- Decaying Leather Pants
 					i(3805),	-- Hardened Leather Pants
-					i(25355),	-- Moldy Leather Pants
 					i(1792),	-- Patched Leather Pants
 					i(1366),	-- Ragged Leather Pants
 					i(1800),	-- Rawhide Pants
-					i(21013),	-- Scraggy Leather Pants
 					i(3974),	-- Smooth Leather Pants
 					i(3966),	-- Thick Leather Pants
 					i(1808),	-- Tough Leather Pants
@@ -203,13 +162,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1423),	-- Worn Leather Pants
 				}),
 				n(FEET, {
-					i(25359),	-- Decaying Leather Boots
 					i(3801),	-- Hardened Leather Boots
-					i(25351),	-- Moldy Leather Boots
 					i(1788),	-- Patched Leather Boots
 					i(1367),	-- Ragged Leather Boots
 					i(1796),	-- Rawhide Boots
-					i(21010),	-- Scraggy Leather Boots
 					i(3970),	-- Smooth Leather Boots
 					i(3962),	-- Thick Leather Boots
 					i(1804),	-- Tough Leather Boots
@@ -219,16 +175,12 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			}),
 			filter(MAIL, {
 				n(HEAD, {
-					i(25377),	-- Corroded Mail Circlet
 					i(8748),	-- Double Mail Coif
-					i(25369),	-- Eroded Mail Circlet
 					i(8752),	-- Laminated Scale Circlet
 					i(8751),	-- Overlinked Coif
 				}),
 				n(SHOULDER, {
-					i(25380),	-- Corroded Mail Shoulderpads
 					i(3814),	-- Double Mail Shoulderpads
-					i(25372),	-- Eroded Mail Shoulderpads
 					i(1744),	-- Laced Mail Shoulderpads
 					i(3998),	-- Laminated Scale Shoulderpads
 					i(1752),	-- Linked Chain Shoulderpads
@@ -236,9 +188,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1760),	-- Reinforced Chain Shoulderpads
 				}),
 				n(CHEST, {
-					i(25373),	-- Corroded Mail Armor
 					i(3815),	-- Double Mail Vest
-					i(25365),	-- Eroded Mail Armor
 					i(2656),	-- Flimsy Chain Vest
 					i(1745),	-- Laced Mail Vest
 					i(3999),	-- Laminated Scale Armor
@@ -246,13 +196,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2648),	-- Loose Chain Vest
 					i(4007),	-- Overlinked Chain Armor
 					i(1761),	-- Reinforced Chain Vest
-					i(21016),	-- Shoddy Chain Vest
 					i(1737),	-- Worn Mail Vest
 				}),
 				n(WRIST, {
-					i(25376),	-- Corroded Mail Bracers
 					i(3810),	-- Double Mail Bracers
-					i(25368),	-- Eroded Mail Bracers
 					i(2651),	-- Flimsy Chain Bracers
 					i(1740),	-- Laced Mail Bracers
 					i(3994),	-- Laminated Scale Bracers
@@ -260,13 +207,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2643),	-- Loose Chain Bracers
 					i(4002),	-- Overlinked Chain Bracers
 					i(1756),	-- Reinforced Chain Bracers
-					i(21019),	-- Shoddy Chain Bracers
 					i(1732),	-- Worn Mail Bracers
 				}),
 				n(HANDS, {
-					i(25378),	-- Corroded Mail Gloves
 					i(3812),	-- Double Mail Gloves
-					i(25370),	-- Eroded Mail Gloves
 					i(2653),	-- Flimsy Chain Gloves
 					i(1742),	-- Laced Mail Gloves
 					i(3996),	-- Laminated Scale Gloves
@@ -274,13 +218,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2645),	-- Loose Chain Gloves
 					i(4004),	-- Overlinked Chain Gloves
 					i(1758),	-- Reinforced Chain Gloves
-					i(21018),	-- Shoddy Chain Gloves
 					i(1734),	-- Worn Mail Gloves
 				}),
 				n(WAIST, {
-					i(25374),	-- Corroded Mail Belt
 					i(3808),	-- Double Mail Belt
-					i(25366),	-- Eroded Mail Belt
 					i(2649),	-- Flimsy Chain Belt
 					i(1738),	-- Laced Mail Belt
 					i(3992),	-- Laminated Scale Belt
@@ -288,13 +229,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2635),	-- Loose Chain Belt
 					i(4000),	-- Overlinked Chain Belt
 					i(1754),	-- Reinforced Chain Belt
-					i(21015),	-- Shoddy Chain Belt
 					i(1730),	-- Worn Mail Belt
 				}),
 				n(LEGS, {
-					i(25379),	-- Corroded Mail Pants
 					i(3813),	-- Double Mail Pants
-					i(25371),	-- Eroded Mail Pants
 					i(2654),	-- Flimsy Chain Pants
 					i(1743),	-- Laced Mail Pants
 					i(3997),	-- Laminated Scale Pants
@@ -302,13 +240,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2646),	-- Loose Chain Pants
 					i(4005),	-- Overlinked Chain Pants
 					i(1759),	-- Reinforced Chain Pants
-					i(21017),	-- Shoddy Chain Pants
 					i(1735),	-- Worn Mail Pants
 				}),
 				n(FEET, {
-					i(25375),	-- Corroded Mail Boots
 					i(3809),	-- Double Mail Boots
-					i(25367),	-- Eroded Mail Boots
 					i(2650),	-- Flimsy Chain Boots
 					i(1739),	-- Laced Mail Boots
 					i(3993),	-- Laminated Scale Boots
@@ -316,50 +251,33 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2642),	-- Loose Chain Boots
 					i(4001),	-- Overlinked Chain Boots
 					i(1755),	-- Reinforced Chain Boots
-					i(21020),	-- Shoddy Chain Boots
 					i(1731),	-- Worn Mail Boots
 				}),
 			}),
 			filter(PLATE, {
 				n(HEAD, {
-					i(25394),	-- Deteriorating Plate Helmet
 					i(8755),	-- Light Plate Helmet
-					i(25386),	-- Tarnished Plate Helmet
 				}),
 				n(SHOULDER, {
-					i(25396),	-- Deteriorating Plate Shoulderpads
 					i(8086),	-- Light Plate Shoulderpads
-					i(25388),	-- Tarnished Plate Shoulderpads
 				}),
 				n(CHEST, {
-					i(25392),	-- Deteriorating Plate Chestpiece
 					i(8080),	-- Light Plate Chestpiece
-					i(25384),	-- Tarnished Plate Chestpiece
 				}),
 				n(WRIST, {
-					i(25391),	-- Deteriorating Plate Bracers
 					i(8083),	-- Light Plate Bracers
-					i(25383),	-- Tarnished Plate Bracers
 				}),
 				n(HANDS, {
-					i(25393),	-- Deteriorating Plate Gloves
 					i(8084),	-- Light Plate Gloves
-					i(25385),	-- Tarnished Plate Gloves
 				}),
 				n(WAIST, {
-					i(25389),	-- Deteriorating Plate Belt
 					i(8081),	-- Light Plate Belt
-					i(25381),	-- Tarnished Plate Belt
 				}),
 				n(LEGS, {
-					i(25395),	-- Deteriorating Plate Pants
 					i(8085),	-- Light Plate Pants
-					i(25387),	-- Tarnished Plate Pants
 				}),
 				n(FEET, {
-					i(25390),	-- Deteriorating Plate Boots
 					i(8082),	-- Light Plate Boots
-					i(25382),	-- Tarnished Plate Boots
 				}),
 			}),
 			filter(CLOAKS, {
@@ -387,7 +305,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(3964),	-- Thick Cloak
 				i(1806),	-- Tough Cloak
 				i(3947),	-- Twill Cloak
-				i(21004),	-- Unkempt Cloak
 				i(1505),	-- Warped Cloak
 				i(1733),	-- Worn Cloak
 				i(1421),	-- Worn Hide Cloak
@@ -405,13 +322,11 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			filter(FINGER_F, {
 				i(180352),	-- Cracked Inquisitor's Band	-- TODO Shadowlands
 				i(180350),	-- Simple Stone Loop	-- TODO Shadowlands
-				i(33855),	-- Tarnished Silver Ring
 				i(20451),	-- Twilight Cultist Ring of Lordship
 			}),
 		}),
 		n(WEAPONS, {
 			filter(ONE_HANDED_AXES, {
-				i(25397),	-- Eroded Axe
 				i(1819),	-- Gouging Pick
 				i(4019),	-- Heavy Flint Axe
 				i(13818),	-- Jagged Axe
@@ -429,12 +344,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(1824),	-- Shiny War Axe
 				i(1812),	-- Short-Handled Battle Axe
 				i(4020),	-- Splintering Battle Axe
-				i(25398),	-- Stone Reaper
 				i(1828),	-- Stone War Axe
 			}),
 			filter(BOWS, {
 				i(4025),	-- Balanced Long Bow
-				i(25406),	-- Broken Longbow
 				i(2773),	-- Cracked Shortbow
 				i(2777),	-- Feeble Shortbow
 				i(2780),	-- Light Hunting Bow
@@ -449,7 +362,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2763),	-- Fisherman Knife
 				i(2765),	-- Hunting Knife
 				i(2138),	-- Sharpened Letter Opener
-				i(25403),	-- Sharpened Stilleto
 				i(3786),	-- Shiny Dirk
 				i(2764),	-- Small Dagger
 				i(13822),	-- Spiked Dagger
@@ -462,7 +374,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2786),	-- Oiled Blunderbuss
 				i(13825),	-- Primed Musket
 				i(2774),	-- Rust-Covered Blunderbuss
-				i(25405),	-- Rusted Musket
 				i(4026),	-- Sentinel Musket
 				i(2783),	-- Shoddy Blunderbuss
 			}),
@@ -472,7 +383,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(1825),	-- Bulky Bludgeon
 				i(1415),	-- Carpenter's Mallet
 				i(13820),	-- Clout Mace
-				i(25401),	-- Corroded Mace
 				i(1510),	-- Heavy Hammer
 				i(11411),	-- Large Bear Bone
 				i(6196),	-- Noboru's Cudgel
@@ -487,7 +397,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(3782),	-- Large War Club
 				i(1826),	-- Rock Maul
 				i(1514),	-- Rusty Warhammer
-				i(25402),	-- The Stoppable Force
 				i(1820),	-- Wooden Maul
 			}),
 			filter(POLEARMS, {
@@ -497,7 +406,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			}),
 			filter(SHIELDS, {
 				i(2210),	-- Battered Buckler
-				i(21021),	-- Battered Shield
 				i(2211),	-- Bent Large Shield
 				i(3989),	-- Blocking Targe
 				i(2220),	-- Box Shield
@@ -513,14 +421,12 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2221),	-- Targe Shield
 				i(128824),	-- Tome of the Silver Hand	-- TODO Legion
 				i(2222),	-- Tower Shield
-				i(21022),	-- Weather Beaten Buckler
 				i(2214),	-- Wooden Buckler
 				i(2215),	-- Wooden Shield
 				i(2213),	-- Worn Large Shield
 			}),
 			filter(STAVES, {
 				i(1822),	-- Cedar Walking Stick
-				i(25404),	-- Dense War Staff
 				i(4024),	-- Heavy War Staff
 				i(1813),	-- Chipped Quarterstaff
 				i(3784),	-- Metal Stave
@@ -531,11 +437,9 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			}),
 			filter(ONE_HANDED_SWORDS, {
 				i(1511),	-- Commoner's Sword
-				i(25399),	-- Deteriorating Blade
 				i(1413),	-- Feeble Sword
 				i(13816),	-- Fine Longsword
 				i(3783),	-- Light Scimitar
-				i(30569),	-- Proximo's Rudius
 				i(4017),	-- Sharp Shortsword
 				i(1829),	-- Short Cutlass
 				i(1817),	-- Stock Shortsword
@@ -549,11 +453,73 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(1513),	-- Old Greatsword
 				i(1818),	-- Standard Claymore
 				i(13817),	-- Tapered Greatsword
-				i(25400),	-- Tarnished Claymore
 				i(4018),	-- Whetted Claymore
 			}),
 			filter(THROWN, {
-				-- #if AFTER WRATH
+				-- #if NOT ANYCLASIC
+				-- The Burning Crusade
+				i(28535),	-- Amani Throwing Axe
+				i(28540),	-- Arakkoa Talon-Axe
+				i(28544),	-- Assassin's Shuriken
+				i(30599),	-- Avenging Blades
+				i(29212),	-- Balanced Stone Dirk
+				i(25872),	-- Balanced Throwing Dagger
+				i(28531),	-- Barbed Shrike
+				i(29014),	-- Blacksteel Throwing Dagger
+				i(34349),	-- Blade of Life's Inevitability
+				i(28408),	-- Broken Silver Star
+				i(35108),	-- Brutal Gladiator's War Edge
+				i(25861),	-- Crude Throwing Axe
+				i(25875),	-- Deadly Throwing Axe
+				i(34603),	-- Distracting Blades
+				i(28543),	-- Dreghood Throwing Axe
+				i(25878),	-- Dusksteel Throwing Knife
+				i(29203),	-- Enchanted Thorium Blades
+				i(28534),	-- Fel Tipped Dart
+				i(29204),	-- Felsteel Whisper Knives
+				i(29211),	-- Fitz's Throwing Axe
+				i(28972),	-- Flightblade Throwing Axe
+				i(28538),	-- Forked Shuriken
+				i(28319),	-- Gladiator's War Edge
+				i(25876),	-- Gleaming Throwing Axe
+				i(28542),	-- Heartseeker Knives
+				i(29009),	-- Heavy Throwing Dagger
+				i(28536),	-- Jagged Guillotine
+				i(29013),	-- Jagged Throwing Axe
+				i(25873),	-- Keen Throwing Knife
+				i(25874),	-- Large Throwing Knife
+				i(28979),	-- Light Throwing Knife
+				i(30227),	-- Mark V's Throwing Star
+				i(32054),	-- Merciless Gladiator's War Edge
+				i(27631),	-- Needle Shrike
+				i(28258),	-- Nethershrike
+				i(34783),	-- Nightstrike
+				i(28539),	-- Razor-Edged Boomerang
+				i(28541),	-- Sawshrike
+				i(32832),	-- Scout's Throwing Knives
+				i(30025),	-- Serpentshrine Shuriken
+				i(27916),	-- Sethekk Feather-Darts
+				i(29008),	-- Sharp Throwing Axe
+				i(28826),	-- Shuriken of Negation
+				i(32378),	-- Silver Star
+				i(28532),	-- Silver Throwing Knives
+				i(34622),	-- Spinesever
+				i(27928),	-- Terminal Edge
+				i(27929),	-- Terminal Edge
+				i(30568),	-- The Sharp Cookie
+				i(29201),	-- Thick Bronze Darts
+				i(34419),	-- Thorium Flight Blade
+				i(29584),	-- Throat Piercers
+				i(32326),	-- Twisted Blades of Zarak
+				i(33765),	-- Vengeful Gladiator's War Edge
+				i(29007),	-- Weighted Throwing Axe
+				i(29202),	-- Whirling Steel Axes
+				i(29010),	-- Wicked Throwing Dagger
+				i(28537),	-- Wildhammer Throwing Axe
+				i(28533),	-- Wooden Boomerang
+				i(28659),	-- Xavian Stiletto
+
+				-- Wrath of the Lich King
 				i(44644),	-- Dalaran Dart
 				i(39490),	-- Dorian's Prybar
 				i(51880),	-- Gluth's Fetching Knife
@@ -600,8 +566,8 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(41245),	-- Deadly Saronite Dirk
 				i(50169),	-- Papa's Brand New Knife
 				i(36981),	-- Hardened Vrykul Throwing Axe
-				-- #endif
-				-- #if AFTER CATA
+
+				-- Cataclysm
 				i(67467),	-- Vicious Gladiator's War Edge
 				i(63798),	-- Winged Axe
 				i(78369),	-- Razor Saronite Chip
@@ -675,9 +641,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			filter(CLOTH, {
 				n(HEAD, {
 					i(3892),	-- Embroidered Hat
-					i(38276),	-- Haliscan Brimmed Hat
-					i(3732),	-- Hooded Cowl
-					i(38089),	-- Ruby Shades
 					i(3889),	-- Russet Hat
 				}),
 				n(SHOULDER, {
@@ -694,10 +657,8 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(22742),	-- Bloodsail Shirt
 					i(2568),	-- Brown Linen Vest
 					i(2617),	-- Burning Robes
-					i(5110),	-- Dalaran Wizard's Robe
 					i(2613),	-- Double-Stitched Robes
 					i(2435),	-- Embroidered Armor
-					i(3270),	-- Flax Vest
 					i(38277),	-- Haliscan Jacket
 					i(837),		-- Heavy Weave Armor
 					i(2615),	-- Chromatic Robe
@@ -712,18 +673,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2429),	-- Russet Vest
 					i(2616),	-- Shimmering Silk Robes
 					i(2618),	-- Silver Dress Robes
-					i(4916),	-- Soft Wool Vest
-					i(3328),	-- Spider Web Robe
-					i(5109),	-- Stonesplinter Rags
 					i(193),		-- Tattered Cloth Vest
 					i(200),		-- Thick Cloth Vest
 					i(2121),	-- Thin Cloth Armor
-					i(10036),	-- Tuxedo Jacket
-					i(5767),	-- Violet Robes
-					i(3216),	-- Warm Winter Robe
-					i(24135),	-- Weathered Cloth Armor
 					i(10040),	-- White Wedding Dress
-					i(11189),	-- Woodland Robes
 					i(2364),	-- Woven Vest
 				}),
 				n(WRIST, {
@@ -925,7 +878,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(20925),	-- Sun Cured Vest
 					i(846),		-- Tanned Leather Jerkin
 					i(3444),	-- Tiller's Vest
-					i(24134),	-- Weathered Leather Vest
 					i(4907),	-- Woodland Tunic
 				}),
 				n(WRIST, {
@@ -1246,7 +1198,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(8094),	-- Platemail Armor
 					i(10421),	-- Rough Copper Vest
 					i(3273),	-- Rugged Plate Vest
-					i(24133),	-- Weathered Plate Tunic
 				}),
 				n(WRIST, {
 					i(38648),	-- Bone-Plated Bracers
