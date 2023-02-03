@@ -23,9 +23,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9929),	-- Brigade Cloak
 		i(6381),	-- Bright Cloak
 		i(14571),	-- Bristlebark Cape
+		i(1774),	-- Brocade Cloak
 		i(14167),	-- Buccaneer's Cape
 		i(4695),	-- Burnished Cloak
 		i(7533),	-- Cabalist Cloak
+		i(1497),	-- Calico Cloak
+		i(1766),	-- Canvas Cloak
 		i(7492),	-- Captain's Cloak
 		i(14313),	-- Celestial Cape
 		i(7544),	-- Champion's Cape
@@ -35,6 +38,8 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(4716),	-- Combat Cloak
 		i(9847),	-- Conjurer's Cloak
 		i(10098),	-- Councillor's Cloak
+		i(3939),	-- Crochet Cloak
+		i(1782),	-- Cross-Stitched Cloak
 		i(10194),	-- Crusader's Cloak
 		i(15135),	-- Cutthroat's Cape
 		i(13122),	-- Dark Phantom Cape
@@ -42,6 +47,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(6575),	-- Defender Cloak
 		i(6604),	-- Dervish Cape
 		i(14582),	-- Dokebi Cape
+		i(3811),	-- Double-Stitched Cloak
 		i(9822),	-- Durable Cape
 		i(10060),	-- Duskwoven Cape
 		i(8266),	-- Ebonhold Cloak
@@ -55,9 +61,11 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14331),	-- Eternal Cloak
 		i(15309),	-- Feral Cloak
 		i(12979),	-- Firebane Cloak
+		i(2652),	-- Flimsy Chain Cloak
 		i(4710),	-- Forest Cloak
 		i(15632),	-- Formidable Cape
 		i(9812),	-- Fortified Cloak
+		i(1376),	-- Frayed Cloak
 		i(14270),	-- Gaea's Cloak
 		i(14219),	-- Geomancer's Cloak
 		i(15147),	-- Ghostwalker Cloak
@@ -68,6 +76,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9770),	-- Greenweave Cloak
 		i(15508),	-- Grunt's Cape
 		i(15624),	-- Gryphon Cloak
+		i(3803),	-- Hardened Cloak
 		i(14593),	-- Hawkeye's Cloak
 		i(15354),	-- Headhunter's Cloak
 		i(8120),	-- Heraldic Cloak
@@ -106,6 +115,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(7411),	-- Infiltrator Cloak
 		i(4701),	-- Inscribed Cloak
 		i(4722),	-- Insignia Cloak
+		i(3795),	-- Interlaced Cloak
 		i(15643),	-- Ironhide Cloak
 		i(9794),	-- Ivycloth Cloak
 		i(15392),	-- Jadefire Cloak
@@ -113,7 +123,11 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14665),	-- Keeper's Cloak
 		i(14781),	-- Khan's Cloak
 		i(7460),	-- Knight's Cloak
+		i(1741),	-- Laced Cloak
 		i(4706),	-- Lambent Scale Cloak
+		i(3995),	-- Laminated Scale Cloak
+		i(1749),	-- Linked Chain Cloak
+		i(2644),	-- Loose Chain Cloak
 		i(10079),	-- Lord's Cape
 		i(14251),	-- Lunar Cloak
 		i(13007),	-- Mageflame Cloak
@@ -134,7 +148,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14280),	-- Opulent Cape
 		i(10120),	-- Ornate Cloak
 		i(15501),	-- Outrunner's Cloak
+		i(4003),	-- Overlinked Chain Cloak
 		i(14161),	-- Pagan Cape
+		i(1790),	-- Patched Cloak
+		i(1429),	-- Patchwork Cloak
 		i(15340),	-- Pathfinder Cloak
 		i(15427),	-- Peerless Cloak
 		i(7419),	-- Phalanx Cloak
@@ -145,11 +162,14 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14563),	-- Prospector's Cloak
 		i(14791),	-- Protector Cape
 		i(15382),	-- Rageclaw Cloak
+		i(1372),	-- Ragged Cloak
 		i(9786),	-- Raider's Cloak
 		i(14188),	-- Raincaller Cloak
 		i(7483),	-- Ranger Cloak
 		i(14771),	-- Ravager's Cloak
+		i(1798),	-- Rawhide Cloak
 		i(7474),	-- Regal Cloak
+		i(1757),	-- Reinforced Chain Cloak
 		i(9867),	-- Renegade Cloak
 		i(14400),	-- Resilient Cape
 		i(14321),	-- Resplendent Cloak
@@ -178,6 +198,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			["timeline"] = { "created 4.0.1.12941", "added 6.0.1", "removed 7.0.1" },
 		}),
 		i(14752),	-- Slayer's Cape
+		i(3972),	-- Smooth Cloak
 		i(9877),	-- Sorcerer Cloak
 		i(15579),	-- Sparkleshell Cloak
 		i(15519),	-- Spiked Chain Cloak
@@ -186,20 +207,24 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9805),	-- Superior Cloak
 		i(15437),	-- Supreme Cape
 		i(10185),	-- Swashbuckler's Cape
+		i(3964),	-- Thick Cloak
 		i(15547),	-- Thick Scale Cloak
 		i(14198),	-- Thistlefur Cloak
 		i(13108),	-- Tigerstrike Mantle
+		i(1806),	-- Tough Cloak
 		i(9919),	-- Tracker's Cloak
 		i(8297),	-- Traveler's Cloak
 		i(15364),	-- Trickster's Cloak
 		i(15681),	-- Triumphant Cloak
 		i(7436),	-- Twilight Cape
+		i(3947),	-- Twill Cloak
 		i(14440),	-- Venomshroud Cape
 		i(14210),	-- Vital Cape
 		i(10108),	-- Wanderer's Cloak
 		i(14724),	-- War Paint Cloak
 		i(14602),	-- Warden's Cloak
 		i(9959),	-- Warmonger's Cloak
+		i(1505),	-- Warped Cloak
 		i(14813),	-- Warstrike Cape
 		i(14179),	-- Watcher's Cape
 		i(15537),	-- Wicked Chain Cloak
@@ -207,6 +232,8 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14430),	-- Windchaser Cloak
 		i(13121),	-- Wing of the Whelpling
 		i(15371),	-- Wolf Rider's Cloak
+		i(1733),	-- Worn Cloak
+		i(1421),	-- Worn Hide Cloak
 		i(15333),	-- Wrangler's Cloak
 	}),
 	filter(CLOTH, {
@@ -290,6 +317,13 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(4661),	-- Bright Mantle
 		i(3067),	-- Bright Pants
 		i(3069),	-- Bright Robe
+		i(3378),	-- Brocade Belt
+		i(3379),	-- Brocade Bracers
+		i(1775),	-- Brocade Gloves
+		i(1776),	-- Brocade Pants
+		i(1772),	-- Brocade Shoes
+		i(1777),	-- Brocade Shoulderpads
+		i(1778),	-- Brocade Vest
 		i(14174),	-- Buccaneer's Boots
 		i(14166),	-- Buccaneer's Bracers
 		i(14173),	-- Buccaneer's Cord
@@ -297,6 +331,19 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14171),	-- Buccaneer's Pants
 		i(14172),	-- Buccaneer's Robes
 		i(14175),	-- Buccaneer's Vest
+		i(3374),	-- Calico Belt
+		i(3375),	-- Calico Bracers
+		i(1498),	-- Calico Gloves
+		i(1499),	-- Calico Pants
+		i(1495),	-- Calico Shoes
+		i(1501),	-- Calico Tunic
+		i(3376),	-- Canvas Belt
+		i(3377),	-- Canvas Bracers
+		i(1767),	-- Canvas Gloves
+		i(1768),	-- Canvas Pants
+		i(1764),	-- Canvas Shoes
+		i(1769),	-- Canvas Shoulderpads
+		i(1770),	-- Canvas Vest
 		i(13102),	-- Cassandra's Grace
 		i(14309),	-- Celestial Belt
 		i(14311),	-- Celestial Bindings
@@ -325,6 +372,21 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(10103),	-- Councillor's Sash
 		i(10100),	-- Councillor's Shoulders
 		i(10104),	-- Councillor's Tunic
+		i(3936),	-- Crochet Belt
+		i(3937),	-- Crochet Boots
+		i(3938),	-- Crochet Bracers
+		i(3940),	-- Crochet Gloves
+		i(8749),	-- Crochet Hat
+		i(3941),	-- Crochet Pants
+		i(3942),	-- Crochet Shoulderpads
+		i(3943),	-- Crochet Vest
+		i(3380),	-- Cross-Stitched Belt
+		i(3381),	-- Cross-Stitched Bracers
+		i(1783),	-- Cross-Stitched Gloves
+		i(1784),	-- Cross-Stitched Pants
+		i(1780),	-- Cross-Stitched Sandals
+		i(1785),	-- Cross-Stitched Shoulderpads
+		i(1786),	-- Cross-Stitched Vest
 		i(13008),	-- Dalewind Trousers
 		i(14237),	-- Darkmist Armor
 		i(14240),	-- Darkmist Bands
@@ -406,6 +468,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14336),	-- Eternal Wraps
 		i(3075),	-- Eye of Flame
 		i(9433),	-- Forgotten Wraps
+		i(3363),	-- Frayed Belt
+		i(3365),	-- Frayed Bracers
+		i(1377),	-- Frayed Gloves
+		i(1378),	-- Frayed Pants
+		i(1380),	-- Frayed Robe
+		i(1374),	-- Frayed Shoes
 		i(13100),	-- Furen's Boots
 		i(14273),	-- Gaea's Amice
 		i(14276),	-- Gaea's Belt
@@ -472,6 +540,14 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14452),	-- Highborne Pauldrons
 		i(14453),	-- Highborne Robes
 		i(2721),	-- Holy Shroud
+		i(3792),	-- Interlaced Belt
+		i(3793),	-- Interlaced Boots
+		i(3794),	-- Interlaced Bracers
+		i(8746),	-- Interlaced Cowl
+		i(3796),	-- Interlaced Gloves
+		i(3797),	-- Interlaced Pants
+		i(3798),	-- Interlaced Shoulderpads
+		i(3799),	-- Interlaced Vest
 		i(68754, {	-- Imbued Disciple's Boots
 			["timeline"] = { "added 4.0.6.13596" },
 		}),
@@ -582,6 +658,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14159),	-- Pagan Shoes
 		i(14158),	-- Pagan Vest
 		i(14163),	-- Pagan Wraps
+		i(1433),	-- Patchwork Armor
+		i(3370),	-- Patchwork Belt
+		i(3373),	-- Patchwork Bracers
+		i(1430),	-- Patchwork Gloves
+		i(1431),	-- Patchwork Pants
+		i(1427),	-- Patchwork Shoes
 		i(14195),	-- Raincaller Boots
 		i(14189),	-- Raincaller Cap
 		i(14194),	-- Raincaller Cord
@@ -728,6 +810,14 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(7435),	-- Twilight Mantle
 		i(7431),	-- Twilight Pants
 		i(7430),	-- Twilight Robe
+		i(3944),	-- Twill Belt
+		i(3945),	-- Twill Boots
+		i(3946),	-- Twill Bracers
+		i(8754),	-- Twill Cover
+		i(3948),	-- Twill Gloves
+		i(3949),	-- Twill Pants
+		i(3950),	-- Twill Shoulderpads
+		i(3951),	-- Twill Vest
 		i(14439),	-- Venomshroud Armguards
 		i(14446),	-- Venomshroud Belt
 		i(14438),	-- Venomshroud Boots
@@ -915,6 +1005,14 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15303),	-- Grizzly Pants
 		i(9756),	-- Gypsy Trousers
 		i(9757),	-- Gypsy Tunic
+		i(3800),	-- Hardened Leather Belt
+		i(3801),	-- Hardened Leather Boots
+		i(3802),	-- Hardened Leather Bracers
+		i(3804),	-- Hardened Leather Gloves
+		i(8747),	-- Hardened Leather Helm
+		i(3805),	-- Hardened Leather Pants
+		i(3806),	-- Hardened Leather Shoulderpads
+		i(3807),	-- Hardened Leather Tunic
 		i(14590),	-- Hawkeye's Bracers
 		i(14595),	-- Hawkeye's Breeches
 		i(14588),	-- Hawkeye's Cord
@@ -1057,6 +1155,13 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15159),	-- Nocturnal Tunic
 		i(15160),	-- Nocturnal Wristbands
 		i(13117),	-- Ogron's Sash
+		i(1787),	-- Patched Leather Belt
+		i(1788),	-- Patched Leather Boots
+		i(1789),	-- Patched Leather Bracers
+		i(1791),	-- Patched Leather Gloves
+		i(1794),	-- Patched Leather Jerkin
+		i(1792),	-- Patched Leather Pants
+		i(1793),	-- Patched Leather Shoulderpads
 		i(15347),	-- Pathfinder Belt
 		i(15348),	-- Pathfinder Bracers
 		i(15341),	-- Pathfinder Footpads
@@ -1116,6 +1221,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15384),	-- Rageclaw Helm
 		i(15385),	-- Rageclaw Leggings
 		i(15386),	-- Rageclaw Shoulder Pads
+		i(1369),	-- Ragged Leather Belt
+		i(1367),	-- Ragged Leather Boots
+		i(1370),	-- Ragged Leather Bracers
+		i(1368),	-- Ragged Leather Gloves
+		i(1366),	-- Ragged Leather Pants
+		i(1364),	-- Ragged Leather Vest
 		i(7481),	-- Ranger Boots
 		i(7485),	-- Ranger Cord
 		i(7480),	-- Ranger Gloves
@@ -1124,6 +1235,13 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(7482),	-- Ranger Shoulders
 		i(7477),	-- Ranger Tunic
 		i(7484),	-- Ranger Wristguards
+		i(1795),	-- Rawhide Belt
+		i(1796),	-- Rawhide Boots
+		i(1797),	-- Rawhide Bracers
+		i(1799),	-- Rawhide Gloves
+		i(1800),	-- Rawhide Pants
+		i(1801),	-- Rawhide Shoulderpads
+		i(1802),	-- Rawhide Tunic
 		i(10070),	-- Righteous Armor
 		i(10068),	-- Righteous Boots
 		i(10069),	-- Righteous Bracers
@@ -1196,6 +1314,14 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(8263),	-- Serpentskin Spaulders
 		i(13115),	-- Sheepshear Mantle
 		i(13011),	-- Silver-Lined Belt [CATA+] / Silver-lined Belt
+		i(3976),	-- Smooth Leather Armor
+		i(3969),	-- Smooth Leather Belt
+		i(3970),	-- Smooth Leather Boots
+		i(3971),	-- Smooth Leather Bracers
+		i(3973),	-- Smooth Leather Gloves
+		i(8753),	-- Smooth Leather Helmet
+		i(3974),	-- Smooth Leather Pants
+		i(3975),	-- Smooth Leather Shoulderpads
 		i(13116),	-- Spaulders of the Unseen
 		i(12988),	-- Starsight Tunic
 		i(9801),	-- Superior Belt
@@ -1222,6 +1348,21 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(10186),	-- Swashbuckler's Gloves
 		i(10188),	-- Swashbuckler's Leggings
 		i(10189),	-- Swashbuckler's Shoulderpads
+		i(3961),	-- Thick Leather Belt
+		i(3962),	-- Thick Leather Boots
+		i(3963),	-- Thick Leather Bracers
+		i(3965),	-- Thick Leather Gloves
+		i(8750),	-- Thick Leather Hat
+		i(3966),	-- Thick Leather Pants
+		i(3967),	-- Thick Leather Shoulderpads
+		i(3968),	-- Thick Leather Tunic
+		i(1810),	-- Tough Leather Armor
+		i(1803),	-- Tough Leather Belt
+		i(1804),	-- Tough Leather Boots
+		i(1805),	-- Tough Leather Bracers
+		i(1807),	-- Tough Leather Gloves
+		i(1808),	-- Tough Leather Pants
+		i(1809),	-- Tough Leather Shoulderpads
 		i(9916),	-- Tracker's Belt
 		i(9917),	-- Tracker's Boots
 		i(9920),	-- Tracker's Gloves
@@ -1265,6 +1406,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14605),	-- Warden's Woolies
 		i(14601),	-- Warden's Wraps
 		i(14600),	-- Warden's Wristbands
+		i(1502),	-- Warped Leather Belt
+		i(1503),	-- Warped Leather Boots
+		i(1504),	-- Warped Leather Bracers
+		i(1506),	-- Warped Leather Gloves
+		i(1507),	-- Warped Leather Pants
+		i(1509),	-- Warped Leather Vest
 		i(13112),	-- Winged Helm
 		i(15369),	-- Wolf Rider's Belt
 		i(15370),	-- Wolf Rider's Boots
@@ -1275,6 +1422,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15375),	-- Wolf Rider's Shoulder Pads
 		i(15377),	-- Wolf Rider's Wristbands
 		i(13110),	-- Wolffear Harness
+		i(1418),	-- Worn Leather Belt
+		i(1419),	-- Worn Leather Boots
+		i(1420),	-- Worn Leather Bracers
+		i(1422),	-- Worn Leather Gloves
+		i(1423),	-- Worn Leather Pants
+		i(1425),	-- Worn Leather Vest
 		i(15329),	-- Wrangler's Belt
 		i(15330),	-- Wrangler's Boots
 		i(15334),	-- Wrangler's Gloves
@@ -1417,6 +1570,14 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(6576),	-- Defender Girdle
 		i(6578),	-- Defender Leggings
 		i(6580),	-- Defender Tunic
+		i(3808),	-- Double Mail Belt
+		i(3809),	-- Double Mail Boots
+		i(3810),	-- Double Mail Bracers
+		i(8748),	-- Double Mail Coif
+		i(3812),	-- Double Mail Gloves
+		i(3813),	-- Double Mail Pants
+		i(3814),	-- Double Mail Shoulderpads
+		i(3815),	-- Double Mail Vest
 		i(1717),	-- Double Link Tunic
 		i(13133),	-- Drakesfire Epaulets
 		i(13010),	-- Dreamsinger Legguards
@@ -1427,6 +1588,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			-- #endif
 			["timeline"] = { "created 1.12.1.12941", "added 6.0.1", "removed 7.0.1" },
 		}),
+		i(2649),	-- Flimsy Chain Belt
+		i(2650),	-- Flimsy Chain Boots
+		i(2651),	-- Flimsy Chain Bracers
+		i(2653),	-- Flimsy Chain Gloves
+		i(2654),	-- Flimsy Chain Pants
+		i(2656),	-- Flimsy Chain Vest
 		i(8265),	-- Ebonhold Armor
 		i(8269),	-- Ebonhold Boots
 		i(8267),	-- Ebonhold Gauntlets
@@ -1572,6 +1739,13 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(7456),	-- Knight's Headguard
 		i(7455),	-- Knight's Legguards
 		i(7459),	-- Knight's Pauldrons
+		i(1738),	-- Laced Mail Belt
+		i(1739),	-- Laced Mail Boots
+		i(1740),	-- Laced Mail Bracers
+		i(1742),	-- Laced Mail Gloves
+		i(1743),	-- Laced Mail Pants
+		i(1744),	-- Laced Mail Shoulderpads
+		i(1745),	-- Laced Mail Vest
 		i(3045),	-- Lambent Scale Boots
 		i(3212),	-- Lambent Scale Bracers
 		i(3049),	-- Lambent Scale Breastplate
@@ -1579,6 +1753,27 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(3047),	-- Lambent Scale Gloves
 		i(3048),	-- Lambent Scale Legguards
 		i(4705),	-- Lambent Scale Pauldrons
+		i(3999),	-- Laminated Scale Armor
+		i(3992),	-- Laminated Scale Belt
+		i(3993),	-- Laminated Scale Boots
+		i(3994),	-- Laminated Scale Bracers
+		i(8752),	-- Laminated Scale Circlet
+		i(3996),	-- Laminated Scale Gloves
+		i(3997),	-- Laminated Scale Pants
+		i(3998),	-- Laminated Scale Shoulderpads
+		i(1746),	-- Linked Chain Belt
+		i(1747),	-- Linked Chain Boots
+		i(1748),	-- Linked Chain Bracers
+		i(1750),	-- Linked Chain Gloves
+		i(1751),	-- Linked Chain Pants
+		i(1752),	-- Linked Chain Shoulderpads
+		i(1753),	-- Linked Chain Vest
+		i(2635),	-- Loose Chain Belt
+		i(2642),	-- Loose Chain Boots
+		i(2643),	-- Loose Chain Bracers
+		i(2645),	-- Loose Chain Gloves
+		i(2646),	-- Loose Chain Pants
+		i(2648),	-- Loose Chain Vest
 		i(13135),	-- Lordly Armguards
 		i(10076),	-- Lord's Armguards
 		i(10082),	-- Lord's Boots
@@ -1658,6 +1853,14 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15502),	-- Outrunner's Gloves
 		i(15503),	-- Outrunner's Legguards
 		i(15498),	-- Outrunner's Slippers
+		i(4007),	-- Overlinked Chain Armor
+		i(4000),	-- Overlinked Chain Belt
+		i(4001),	-- Overlinked Chain Boots
+		i(4002),	-- Overlinked Chain Bracers
+		i(4004),	-- Overlinked Chain Gloves
+		i(4005),	-- Overlinked Chain Pants
+		i(4006),	-- Overlinked Chain Shoulderpads
+		i(8751),	-- Overlinked Coif
 		i(7417),	-- Phalanx Boots
 		i(7416),	-- Phalanx Bracers
 		i(7418),	-- Phalanx Breastplate
@@ -1698,6 +1901,13 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14769),	-- Ravager's Sandals
 		i(14775),	-- Ravager's Woolies
 		i(13124),	-- Ravasaur Scale Boots
+		i(1754),	-- Reinforced Chain Belt
+		i(1755),	-- Reinforced Chain Boots
+		i(1756),	-- Reinforced Chain Bracers
+		i(1758),	-- Reinforced Chain Gloves
+		i(1759),	-- Reinforced Chain Pants
+		i(1760),	-- Reinforced Chain Shoulderpads
+		i(1761),	-- Reinforced Chain Vest
 		i(9869),	-- Renegade Belt
 		i(9864),	-- Renegade Boots
 		i(9865),	-- Renegade Bracers
@@ -1819,6 +2029,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15542),	-- Wicked Chain Shoulder Pads
 		i(15539),	-- Wicked Chain Waistband
 		i(13130),	-- Windrunner Legguards
+		i(1730),	-- Worn Mail Belt
+		i(1731),	-- Worn Mail Boots
+		i(1732),	-- Worn Mail Bracers
+		i(1734),	-- Worn Mail Gloves
+		i(1735),	-- Worn Mail Pants
+		i(1737),	-- Worn Mail Vest
 		i(13012),	-- Yorgen Bracers
 	}),
 	filter(PLATE, {
@@ -1974,6 +2190,14 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(8163),	-- Jouster's Pauldrons
 		i(8161),	-- Jouster's Visor
 		i(8156),	-- Jouster's Wristguards
+		i(8081),	-- Light Plate Belt
+		i(8082),	-- Light Plate Boots
+		i(8083),	-- Light Plate Bracers
+		i(8080),	-- Light Plate Chestpiece
+		i(8084),	-- Light Plate Gloves
+		i(8755),	-- Light Plate Helmet
+		i(8085),	-- Light Plate Pants
+		i(8086),	-- Light Plate Shoulderpads
 		i(14923),	-- Lofty Armguards
 		i(14927),	-- Lofty Belt
 		i(14924),	-- Lofty Breastplate
@@ -2096,30 +2320,41 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(15234),	-- Greater Scythe
 			i(4568),	-- Grunt Axe
 			i(15232),	-- Hacking Cleaver
+			i(4019),	-- Heavy Flint Axe
 			i(2080),	-- Hillborne Axe
+			i(13818),	-- Jagged Axe
+			i(3785),	-- Keen Axe
+			i(1827),	-- Meat Cleaver
 			i(15236),	-- Moon Cleaver
 			i(12990),	-- Razor's Edge
 			i(15230),	-- Ridge Cleaver
+			i(1416),	-- Rusty Hatchet
 			i(15233),	-- Savage Axe
 			i(4561),	-- Scalping Tomahawk
 			i(13015),	-- Serathil
 			i(15231),	-- Splitting Hatchet
 			i(934),		-- Stalvan's Reaper
+			i(1816),	-- Unbalanced Axe
 			i(15238),	-- Warlord's Axe
+			i(1516),	-- Worn Hatchet
 		}),
 		filter(TWO_HANDED_AXES, {
+			i(13819),	-- Balanced War Axe
 			i(3201),	-- Barbarian War Axe
 			i(3195),	-- Barbaric Battle Axe
 			i(3199),	-- Battle Slayer
+			i(1417),	-- Beaten Battle Axe
 			i(1263),	-- Brain Hacker
 			i(3210),	-- Brutal War Axe
 			i(2299),	-- Burning War Axe
 			i(15271),	-- Colossal Great Axe
+			i(1512),	-- Crude Battle Axe
 			i(15273),	-- Death Striker
 			i(13018),	-- Executioner's Cleaver
 			i(870),		-- Fiery War Axe
 			i(15270),	-- Gigantic War Axe
 			i(1639),	-- Grinning Axe
+			i(3779),	-- Hefty War Axe
 			i(13017),	-- Hellslayer Battle Axe
 			i(2291),	-- Kang the Decapitator
 			i(13016),	-- Killmaim
@@ -2129,6 +2364,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(12975),	-- Prospector Axe
 			i(15272),	-- Razor Axe
 			i(4562),	-- Severing Axe
+			i(1824),	-- Shiny War Axe
+			i(1812),	-- Short-Handled Battle Axe
+			i(4020),	-- Splintering Battle Axe
+			i(1828),	-- Stone War Axe
 			i(15268),	-- Twin-Bladed Axe [CATA+] / Twin-bladed Axe
 		}),
 		filter(ONE_HANDED_MACES, {
@@ -2137,8 +2376,13 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(15224),	-- Battlesmasher
 			i(13024),	-- Beazel's Basher
 			i(15229),	-- Blesswind Hammer
+			i(1823),	-- Bludgeoning Cudgel
 			i(13028),	-- Bludstone Hammer
+			i(4021),	-- Blunting Mace
 			i(13027),	-- Bonesnapper
+			i(1825),	-- Bulky Bludgeon
+			i(1415),	-- Carpenter's Mallet
+			i(13820),	-- Clout Mace
 			i(13025),	-- Deadwood Sledge
 			i(15227),	-- Diamond-Tip Bludgeon
 			i(2194),	-- Diamond Hammer
@@ -2147,16 +2391,19 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(810),		-- Hammer of the Northern Wind
 			i(2243),	-- Hand of Edward the Odd
 			i(13026),	-- Heaven's Light
+			i(1510),	-- Heavy Hammer
 			-- #if AFTER CATA
 			i(2075),	-- Heavy Mace [CATA+] / Priest's Mace
 			-- #endif
 			i(15223),	-- Jagged Star
+			i(11411),	-- Large Bear Bone
 			i(865),		-- Leaden Mace
 			i(13048),	-- Looming Gavel
 			i(13006),	-- Mass of McGowan
 			i(936),		-- Midnight Mace
 			i(4090),	-- Mug O' Hurt
 			i(1207),	-- Murphstar
+			i(1815),	-- Ornamental Mace
 			-- #if BEFORE CATA
 			i(2075),	-- Priest's Mace / Heavy Mace [CATA+]
 			-- #endif
@@ -2166,25 +2413,33 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(1608),	-- Skullcrusher Mace
 			i(15228),	-- Smashing Star
 			i(4569),	-- Staunch Hammer
+			i(3787),	-- Stone Club
 			i(789),		-- Stout Battlehammer
 			i(1721),	-- Viking Warhammer
 		}),
 		filter(TWO_HANDED_MACES, {
 			i(15264),	-- Backbreaker
 			i(1990),	-- Ballast Maul
+			i(1814),	-- Battered Mallet
 			i(3198),	-- Battering Hammer
 			i(4570),	-- Birchwood Maul
 			i(13046),	-- Blanchard's Stout
 			i(15267),	-- Brutehammer
+			i(13821),	-- Bulky Maul
 			i(3208),	-- Conk Hammer
+			i(1414),	-- Cracked Sledge
+			i(4022),	-- Crushing Maul
 			i(3203),	-- Dense Triangle Mace
 			i(15266),	-- Fierce Mauler
 			i(15262),	-- Greater Maul
 			i(15259),	-- Hefty Battlehammer
+			i(3782),	-- Large War Club
 			i(3193),	-- Oak Mallet
 			i(15265),	-- Painbringer
 			i(12983),	-- Rakzur Club
+			i(1826),	-- Rock Maul
 			i(15263),	-- Royal Mallet
+			i(1514),	-- Rusty Warhammer
 			i(15261),	-- Sequoia Branch
 			i(4564),	-- Spiked Club
 			i(15260),	-- Stone Hammer
@@ -2192,24 +2447,29 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(1722),	-- Thornstone Sledgehammer
 			i(13047),	-- Twig of the World Tree
 			i(13045),	-- Viscous Hammer
+			i(1820),	-- Wooden Maul
 		}),
 		filter(ONE_HANDED_SWORDS, {
 			i(13036),	-- Assassination Blade
 			i(15220),	-- Battlefell Sabre
 			i(809),		-- Bloodrazor
 			i(9719),	-- Broken Blade of Heroes
+			i(1511),	-- Commoner's Sword
 			i(15218),	-- Crystal Sword
 			i(869),		-- Dazzling Longsword
 			i(3740),	-- Decapitating Sword
 			i(15219),	-- Dimensional Blade
 			i(8196),	-- Ebon Scimitar
+			i(1413),	-- Feeble Sword
 			i(15212),	-- Fighter Broadsword
+			i(13816),	-- Fine Longsword
 			i(15215),	-- Furious Falchion
 			i(8190),	-- Hanzo Sword
 			i(15221),	-- Holy War Sword
 			i(12976),	-- Ironpatch Blade
 			i(864),		-- Knightly Longsword
 			i(2244),	-- Krol Blade
+			i(3783),	-- Light Scimitar
 			i(15213),	-- Mercenary Blade
 			i(15211),	-- Militant Shortsword
 			i(935),		-- Night Watch Shortsword
@@ -2220,14 +2480,18 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(15216),	-- Rune Sword
 			i(1265),	-- Scorpion Sting
 			i(13035),	-- Serpent Slicer
+			i(4017),	-- Sharp Shortsword
+			i(1829),	-- Short Cutlass
 			i(754),		-- Shortsword of Vengeance
 			i(13034),	-- Speedsteel Rapier
+			i(1817),	-- Stock Shortsword
 			i(13032),	-- Sword of Corruption
 			i(6622),	-- Sword of Zeal
 			i(1728),	-- Teebu's Blazing Longsword
 			i(12974),	-- The Black Knight
 			i(2011),	-- Twisted Sabre
 			i(3186),	-- Viking Sword
+			i(1821),	-- Warped Blade
 			i(15217),	-- Widow Blade
 			i(13033),	-- Zealot Blade
 		}),
@@ -2237,8 +2501,11 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(15253),	-- Beheading Blade
 			i(2801),	-- Blade of Hanna
 			i(13043),	-- Blade of the Titans
+			i(1811),	-- Blunt Claymore
+			i(3781),	-- Broad Claymore
 			i(3206),	-- Cavalier Two-Hander [CATA+] / Cavalier Two-hander
 			i(2877),	-- Combatant Claymore
+			i(1412),	-- Crude Bastard Sword
 			i(15254),	-- Dark Espadon
 			i(13049),	-- Deanship Claymore
 			i(13044),	-- Demonslayer
@@ -2252,27 +2519,35 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(15250),	-- Glimmering Flamberge
 			i(13041),	-- Guardian Blade
 			i(15251),	-- Headstriker Sword
+			i(1830),	-- Long Bastard Sword
 			i(15256),	-- Massacre Sword
 			i(4567),	-- Merc Sword
 			i(1982),	-- Nightblade
+			i(1513),	-- Old Greatsword
 			i(15249),	-- Polished Zweihander
 			i(12992),	-- Searing Blade
 			i(15257),	-- Shin Blade
 			i(3192),	-- Short Bastard Sword
+			i(1818),	-- Standard Claymore
 			i(3197),	-- Stonecutter Claymore
 			i(13042),	-- Sword of the Magistrate
+			i(13817),	-- Tapered Greatsword
 			i(8178),	-- Training Sword
 			i(15252),	-- Tusker Sword
 			i(13052),	-- Warmonger
+			i(4018),	-- Whetted Claymore
 			i(13051),	-- Witchfury
 		}),
 		filter(BOWS, {
 			i(15285),	-- Archer's Longbow
 			i(15289),	-- Archstrike Bow
+			i(4025),	-- Balanced Long Bow
 			i(15288),	-- Blasthorn Bow
 			i(2825),	-- Bow of Searing Arrows
+			i(2773),	-- Cracked Shortbow
 			i(15287),	-- Crusader Bow
 			i(13023),	-- Eaglehorn Long Bow
+			i(2777),	-- Feeble Shortbow
 			i(13022),	-- Gryphonwing Long Bow
 			i(15291),	-- Harpy Needler
 			i(13019),	-- Harpyclaw Short Bow
@@ -2281,15 +2556,20 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(8180),	-- Hunting Bow
 			i(2824),	-- Hurricane
 			i(4576),	-- Light Bow
+			i(2780),	-- Light Hunting Bow
 			i(15284),	-- Long Battle Bow
 			i(15286),	-- Long Redwood Bow
+			i(2782),	-- Mishandled Recurve Bow
 			i(13021),	-- Needle Threader
 			i(8183),	-- Precision Bow
 			i(15295),	-- Quillfire Bow
 			i(3021),	-- Ranger Bow
+			i(13824),	-- Recurve Long Bow
 			i(3039),	-- Short Ash Bow
 			i(15294),	-- Siege Bow
 			i(13020),	-- Skystriker Bow
+			i(2785),	-- Stiff Recurve Bow
+			i(3778),	-- Taut Compound Bow
 			i(4087),	-- Trueshot Bow
 			i(3037),	-- Whipwood Recurve Bow
 		}),
@@ -2309,19 +2589,28 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(2819),	-- Cross Dagger
 			i(2632),	-- Curved Dagger
 			i(15243),	-- Deadly Kris
+			i(2766),	-- Deft Stiletto
 			i(15246),	-- Demon Blade
 			i(4088),	-- Dreadblade
+			i(4023),	-- Fine Pointed Dagger
+			i(2763),	-- Fisherman Knife
 			i(2164),	-- Gut Ripper
 			i(15242),	-- Honed Stiletto
 			i(3184),	-- Hook Dagger
+			i(2765),	-- Hunting Knife
 			i(6660),	-- Julie's Dagger
 			i(15244),	-- Razor Blade
 			i(3187),	-- Sacrificial Kris
 			i(5267),	-- Scarlet Kris
 			i(2163),	-- Shadowblade
+			i(2138),	-- Sharpened Letter Opener
+			i(3786),	-- Shiny Dirk
+			i(2764),	-- Small Dagger
+			i(13822),	-- Spiked Dagger
 			i(24222),	-- The Shadowfoot Stabber
 			i(8006),	-- The Ziggler
 			i(1465),	-- Tigerbane
+			i(5516),	-- Threshadon Fang
 			i(15245),	-- Vorpal Dagger
 			i(4571),	-- War Knife
 			i(4091),	-- Widowmaker
@@ -2330,7 +2619,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(3041),	-- "Mage-Eye" Blunderbuss
 			i(3042),	-- BKP "Sparrow" Smallbore
 			i(15324),	-- Burnside Rifle
+			i(2778),	-- Cheap Blunderbuss
 			i(4577),	-- Compact Shotgun
+			i(2781),	-- Dirty Blunderbuss
 			i(2098),	-- Double-Barreled Shotgun [CATA+] / Double-barreled Shotgun
 			i(2099),	-- Dwarven Hand Cannon
 			i(8188),	-- Explosive Shotgun
@@ -2338,11 +2629,17 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(3040),	-- Hunter's Muzzle Loader
 			i(13137),	-- Ironweaver
 			i(13136),	-- Lil Timmy's Peashooter
+			i(3780),	-- Long-Barreled Musket
+			i(2786),	-- Oiled Blunderbuss
 			i(15323),	-- Percussion Shotgun
 			i(2100),	-- Precisely Calibrated Boomstick
+			i(13825),	-- Primed Musket
 			i(4089),	-- Ricochet Blunderbuss
+			i(2774),	-- Rust-Covered Blunderbuss
+			i(4026),	-- Sentinel Musket
 			i(15325),	-- Sharpshooter Harquebus
 			i(13146),	-- Shell Launcher Shotgun
+			i(2783),	-- Shoddy Blunderbuss
 			i(15322),	-- Smoothbore Gun
 			i(3430),	-- Sniper Rifle
 			i(13138),	-- The Silencer
@@ -2361,25 +2658,33 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		filter(STAVES, {
 			i(3185),	-- Acrobatic Staff
 			i(937),		-- Black Duskwood Staff
+			i(1822),	-- Cedar Walking Stick
+			i(1813),	-- Chipped Quarterstaff
 			i(15274),	-- Diviner Long Staff
 			i(2072),	-- Dwarven Magestaff
 			i(944),		-- Elemental Mage Staff
 			i(812),		-- Glowing Brightwood Staff
 			i(791),		-- Gnarled Ash Staff
+			i(4024),	-- Heavy War Staff
 			i(2077),	-- Magician Staff
 			i(15276),	-- Magus Long Staff
 			i(4575),	-- Medicine Staff
+			i(3784),	-- Metal Stave
 			i(866),		-- Monk's Staff
+			i(1831),	-- Oaken War Staff
+			i(1515),	-- Rough Wooden Staff
 			i(15278),	-- Solstice Staff
 			i(1607),	-- Soulkeeper
 			i(1613),	-- Spiritchaser Staff
 			i(13000),	-- Staff of Hale Magefire
 			i(873),		-- Staff of Jordan
+			i(13823),	-- Stout War Staff
 			i(4566),	-- Sturdy Quarterstaff
 			i(1720),	-- Tanglewood Staff
 			i(15275),	-- Thaumaturgist Staff
 			i(890),		-- Twisted Chanter's Staff
 			i(943),		-- Warden Staff
+			i(1411),	-- Withered Staff
 		}),
 		filter(WANDS, {
 			i(5212),	-- Blazing Wand
@@ -2413,13 +2718,17 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9843),	-- Banded Shield
 		i(9778),	-- Bandit Buckler
 		i(6559),	-- Bard's Buckler
+		i(2210),	-- Battered Buckler
 		i(6599),	-- Battleforge Shield
+		i(2211),	-- Bent Large Shield
 		i(4069),	-- Blackforge Buckler
 		i(1169),	-- Blackskull Shield
+		i(3989),	-- Blocking Targe
 		i(14954),	-- Bloodforged Shield
 		i(14800),	-- Bloodlust Buckler
 		i(15494),	-- Bloodspattered Shield
 		i(15618),	-- Bonelink Wall Shield
+		i(2220),	-- Box Shield
 		i(3654),	-- Brackwater Shield
 		i(9918),	-- Brigade Defender
 		i(15894),	-- Bristlebark Buckler
@@ -2432,9 +2741,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(4068),	-- Chief Brigadier Shield
 		i(8135),	-- Chromite Shield
 		i(4065),	-- Combat Shield
+		i(2212),	-- Cracked Buckler
+		i(3990),	-- Crested Buckler
 		i(10195),	-- Crusader's Shield
 		i(15133),	-- Cutthroat's Buckler
 		i(6572),	-- Defender Shield
+		i(3987),	-- Deflecting Tower
 		i(10366),	-- Demon Guard
 		i(6598),	-- Dervish Buckler
 		i(14608),	-- Dokebi Buckler
@@ -2499,10 +2811,14 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(7331),	-- Phalanx Shield
 		i(15563),	-- Pillager's Shield
 		i(15893),	-- Prospector's Buckler
+		i(3986),	-- Protective Pavise
 		i(14790),	-- Protector Buckler
 		i(9790),	-- Raider's Shield
 		i(14777),	-- Ravager's Shield
+		i(2217),	-- Rectangular Shield
 		i(12997),	-- Redbeard Crest
+		i(3816),	-- Reflective Heater
+		i(3817),	-- Reinforced Buckler
 		i(9873),	-- Renegade Shield
 		i(10093),	-- Revenant Deflector
 		i(15113),	-- Rigid Buckler
@@ -2513,9 +2829,11 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(7463),	-- Sentinel Buckler
 		i(15530),	-- Sentry's Shield
 		i(13079),	-- Shield of Thorsen
+		i(2216),	-- Simple Buckler
 		i(13081),	-- Skullance Shield
 		i(1168),	-- Skullflame Shield
 		i(15892),	-- Slayer's Shield
+		i(2219),	-- Small Round Shield
 		i(6560),	-- Soldier's Shield
 		i(15584),	-- Sparkleshell Shield
 		i(15522),	-- Spiked Chain Shield
@@ -2528,9 +2846,11 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14852),	-- Sunscale Shield
 		i(9804),	-- Superior Buckler
 		i(14825),	-- Symbolic Crest
+		i(2221),	-- Targe Shield
 		i(10364),	-- Templar Shield
 		i(1204),	-- The Green Tower
 		i(15552),	-- Thick Scale Shield
+		i(2222),	-- Tower Shield
 		i(15367),	-- Trickster's Protector
 		i(15687),	-- Triumphant Shield
 		i(14842),	-- Tyrant's Shield
@@ -2545,6 +2865,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9958),	-- Warmonger's Buckler
 		i(14812),	-- Warstrike Buckler
 		i(15543),	-- Wicked Chain Shield
+		i(2214),	-- Wooden Buckler
+		i(2215),	-- Wooden Shield
+		i(2213),	-- Worn Large Shield
 		i(15332),	-- Wrangler's Buckler
 	}),
 	filter(HELD_IN_OFF_HAND, {

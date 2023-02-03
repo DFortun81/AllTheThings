@@ -27,6 +27,14 @@ end
 -- Do not move this elsewhere, please leave it here for now. -Darkal
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(-123456, {	-- Poor
+		tier(CLASSIC_TIER, {
+			-- NYI Classic Poor Items
+			n(ARMOR, {
+				filter(SHIRTS, {
+					i(17),		-- Martin Fury
+				}),
+			}),
+		}),
 		tier(MOP_TIER, {
 			-- NYI Mists of Pandaria Poor Items
 			n(WEAPONS, {
@@ -754,6 +762,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(176029),	-- Ardenweald Quest Polearm
 					i(176030),	-- Ardenweald Quest Polearm
 					i(176031),	-- Ardenweald Quest Polearm
+					i(176904),	-- Bonegrafted Spear
 					i(179726),	-- Maw 2H Polearm
 					i(179727),	-- Maw 2H Polearm
 					i(179728),	-- Maw 2H Polearm

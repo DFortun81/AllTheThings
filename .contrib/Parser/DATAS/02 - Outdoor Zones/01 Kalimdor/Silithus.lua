@@ -276,9 +276,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["lvl"] = 40,
 				}),
-				q(8332, {	-- Dukes of the COuncil
+				q(8332, {	-- Dukes of the Council
 					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 8331,	-- Aurel Goldleaf
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(20422)),	-- Twilight Cultist Medallion of Station
+					},
+				}),
+				q(8333, {	-- Medallion of Station
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(20422)),	-- Twilight Cultist Medallion of Station
+					},
 				}),
 				q(8319, {	-- Encrypted Twilight Texts
 					["qg"] = 15306,	-- Bor Wildmane
@@ -583,6 +592,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(8320, {	-- Twilight Geolords
 					["qg"] = 15270,	-- Huum Wildmane
 					["coord"] = { 53.2, 35.1, SILITHUS },
+				}),
+				q(8342, {	-- Twilight Ring of Lordship
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(20422)),	-- Twilight Cultist Ring of Lordship
+					},
 				}),
 				q(6844, {	-- Umber, Archivist
 					["u"] = REMOVED_FROM_GAME,
@@ -1179,6 +1194,56 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(15762, {	-- Pattern: Heavy Scorpid Helm
 							["isLimited"] = true,
 						}),
+					},
+				}),
+			}),
+			n(ZONE_DROPS, {
+				i(20408, {	-- Twilight Cultist Cowl
+					["timeline"] = { "removed 7.1.5"},
+					["crs"] = {
+						11880,	-- Twilight Avenger
+						15201,	-- Twilight Flamereaver
+						11881,	-- Twilight Geolord
+						14479,	-- Twilight Lord Everun
+						15542,	-- Twilight Marauder
+						15541,	-- Twilight Marauder Morna
+						11883,	-- Twilight Master
+						15213,	-- Twilight Overlord
+						11882,	-- Twilight Stonecaller
+					},
+				}),
+				i(20406, {	-- Twilight Cultist Mantle
+					["timeline"] = { "removed 7.1.5"},
+					["crs"] = {
+						11880,	-- Twilight Avenger
+						15201,	-- Twilight Flamereaver
+						11881,	-- Twilight Geolord
+						14479,	-- Twilight Lord Everun
+						15542,	-- Twilight Marauder
+						15541,	-- Twilight Marauder Morna
+						11883,	-- Twilight Master
+						15213,	-- Twilight Overlord
+						11882,	-- Twilight Stonecaller
+					},
+				}),
+				i(20451, {	-- Twilight Cultist Ring of Lordship
+					["timeline"] = { "removed 7.1.5"},
+					["crs"] = {
+						14479,	-- Twilight Lord Everun
+					},
+				}),
+				i(20407, {	-- Twilight Cultist Robe
+					["timeline"] = { "removed 7.1.5"},
+					["crs"] = {
+						11880,	-- Twilight Avenger
+						15201,	-- Twilight Flamereaver
+						11881,	-- Twilight Geolord
+						14479,	-- Twilight Lord Everun
+						15542,	-- Twilight Marauder
+						15541,	-- Twilight Marauder Morna
+						11883,	-- Twilight Master
+						15213,	-- Twilight Overlord
+						11882,	-- Twilight Stonecaller
 					},
 				}),
 			}),

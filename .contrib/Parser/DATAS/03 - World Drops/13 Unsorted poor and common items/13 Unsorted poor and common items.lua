@@ -8,454 +8,20 @@
 
 -- #if NOT ANYCLASSIC
 root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"] = "This item is currently in a temporary group of unsorted items under World Drops. It will be sorted soon.\nYou don't need to report this." }, {
+	-- I AM HIDING THIS FOR NOW -Darkal
+	--[[
 	n(-123456, {	-- Poor
 		n(ARMOR, {
-			filter(CLOTH, {
-				n(HEAD, {
-					i(8749),	-- Crochet Hat
-					i(8746),	-- Interlaced Cowl
-					i(8754),	-- Twill Cover
-				}),
-				n(SHOULDER, {
-					i(1777),	-- Brocade Shoulderpads
-					i(1769),	-- Canvas Shoulderpads
-					i(3942),	-- Crochet Shoulderpads
-					i(1785),	-- Cross-Stitched Shoulderpads
-					i(3798),	-- Interlaced Shoulderpads
-					i(3950),	-- Twill Shoulderpads
-				}),
-				n(CHEST, {
-					i(1778),	-- Brocade Vest
-					i(1501),	-- Calico Tunic
-					i(1770),	-- Canvas Vest
-					i(3943),	-- Crochet Vest
-					i(1786),	-- Cross-Stitched Vest
-					i(1380),	-- Frayed Robe
-					i(3799),	-- Interlaced Vest
-					i(1433),	-- Patchwork Armor
-					i(3951),	-- Twill Vest
-				}),
-				n(WRIST, {
-					i(3379),	-- Brocade Bracers
-					i(3375),	-- Calico Bracers
-					i(3377),	-- Canvas Bracers
-					i(3938),	-- Crochet Bracers
-					i(3381),	-- Cross-Stitched Bracers
-					i(3365),	-- Frayed Bracers
-					i(3794),	-- Interlaced Bracers
-					i(3373),	-- Patchwork Bracers
-					i(3946),	-- Twill Bracers
-				}),
-				n(HANDS, {
-					i(1775),	-- Brocade Gloves
-					i(1498),	-- Calico Gloves
-					i(1767),	-- Canvas Gloves
-					i(3940),	-- Crochet Gloves
-					i(1783),	-- Cross-Stitched Gloves
-					i(1377),	-- Frayed Gloves
-					i(3796),	-- Interlaced Gloves
-					i(1430),	-- Patchwork Gloves
-					i(3948),	-- Twill Gloves
-				}),
-				n(WAIST, {
-					i(3378),	-- Brocade Belt
-					i(3374),	-- Calico Belt
-					i(3376),	-- Canvas Belt
-					i(3936),	-- Crochet Belt
-					i(3380),	-- Cross-Stitched Belt
-					i(3363),	-- Frayed Belt
-					i(3792),	-- Interlaced Belt
-					i(3370),	-- Patchwork Belt
-					i(3944),	-- Twill Belt
-				}),
-				n(LEGS, {
-					i(1776),	-- Brocade Pants
-					i(1499),	-- Calico Pants
-					i(1768),	-- Canvas Pants
-					i(3941),	-- Crochet Pants
-					i(1784),	-- Cross-Stitched Pants
-					i(1378),	-- Frayed Pants
-					i(3797),	-- Interlaced Pants
-					i(1431),	-- Patchwork Pants
-					i(3949),	-- Twill Pants
-				}),
-				n(FEET, {
-					i(1772),	-- Brocade Shoes
-					i(1495),	-- Calico Shoes
-					i(1764),	-- Canvas Shoes
-					i(3937),	-- Crochet Boots
-					i(1780),	-- Cross-Stitched Sandals
-					i(1374),	-- Frayed Shoes
-					i(3793),	-- Interlaced Boots
-					i(1427),	-- Patchwork Shoes
-					i(3945),	-- Twill Boots
-				}),
-			}),
-			filter(LEATHER, {
-				n(HEAD, {
-					i(8747),	-- Hardened Leather Helm
-					i(8753),	-- Smooth Leather Helmet
-					i(8750),	-- Thick Leather Hat
-				}),
-				n(SHOULDER, {
-					i(3806),	-- Hardened Leather Shoulderpads
-					i(1793),	-- Patched Leather Shoulderpads
-					i(1801),	-- Rawhide Shoulderpads
-					i(3975),	-- Smooth Leather Shoulderpads
-					i(3967),	-- Thick Leather Shoulderpads
-					i(1809),	-- Tough Leather Shoulderpads
-				}),
-				n(CHEST, {
-					i(3807),	-- Hardened Leather Tunic
-					i(1794),	-- Patched Leather Jerkin
-					i(1364),	-- Ragged Leather Vest
-					i(1802),	-- Rawhide Tunic
-					i(3976),	-- Smooth Leather Armor
-					i(3968),	-- Thick Leather Tunic
-					i(1810),	-- Tough Leather Armor
-					i(1509),	-- Warped Leather Vest
-					i(1425),	-- Worn Leather Vest
-				}),
-				n(WRIST, {
-					i(3802),	-- Hardened Leather Bracers
-					i(1789),	-- Patched Leather Bracers
-					i(1370),	-- Ragged Leather Bracers
-					i(1797),	-- Rawhide Bracers
-					i(3971),	-- Smooth Leather Bracers
-					i(3963),	-- Thick Leather Bracers
-					i(1805),	-- Tough Leather Bracers
-					i(1504),	-- Warped Leather Bracers
-					i(1420),	-- Worn Leather Bracers
-				}),
-				n(HANDS, {
-					i(3804),	-- Hardened Leather Gloves
-					i(1791),	-- Patched Leather Gloves
-					i(1368),	-- Ragged Leather Gloves
-					i(1799),	-- Rawhide Gloves
-					i(3973),	-- Smooth Leather Gloves
-					i(3965),	-- Thick Leather Gloves
-					i(1807),	-- Tough Leather Gloves
-					i(1506),	-- Warped Leather Gloves
-					i(1422),	-- Worn Leather Gloves
-				}),
-				n(WAIST, {
-					i(3800),	-- Hardened Leather Belt
-					i(1787),	-- Patched Leather Belt
-					i(1369),	-- Ragged Leather Belt
-					i(1795),	-- Rawhide Belt
-					i(4982),	-- Ripped Prospector Belt
-					i(3969),	-- Smooth Leather Belt
-					i(3961),	-- Thick Leather Belt
-					i(1803),	-- Tough Leather Belt
-					i(1502),	-- Warped Leather Belt
-					i(1418),	-- Worn Leather Belt
-				}),
-				n(LEGS, {
-					i(3805),	-- Hardened Leather Pants
-					i(1792),	-- Patched Leather Pants
-					i(1366),	-- Ragged Leather Pants
-					i(1800),	-- Rawhide Pants
-					i(3974),	-- Smooth Leather Pants
-					i(3966),	-- Thick Leather Pants
-					i(1808),	-- Tough Leather Pants
-					i(1507),	-- Warped Leather Pants
-					i(1423),	-- Worn Leather Pants
-				}),
-				n(FEET, {
-					i(3801),	-- Hardened Leather Boots
-					i(1788),	-- Patched Leather Boots
-					i(1367),	-- Ragged Leather Boots
-					i(1796),	-- Rawhide Boots
-					i(3970),	-- Smooth Leather Boots
-					i(3962),	-- Thick Leather Boots
-					i(1804),	-- Tough Leather Boots
-					i(1503),	-- Warped Leather Boots
-					i(1419),	-- Worn Leather Boots
-				}),
-			}),
-			filter(MAIL, {
-				n(HEAD, {
-					i(8748),	-- Double Mail Coif
-					i(8752),	-- Laminated Scale Circlet
-					i(8751),	-- Overlinked Coif
-				}),
-				n(SHOULDER, {
-					i(3814),	-- Double Mail Shoulderpads
-					i(1744),	-- Laced Mail Shoulderpads
-					i(3998),	-- Laminated Scale Shoulderpads
-					i(1752),	-- Linked Chain Shoulderpads
-					i(4006),	-- Overlinked Chain Shoulderpads
-					i(1760),	-- Reinforced Chain Shoulderpads
-				}),
-				n(CHEST, {
-					i(3815),	-- Double Mail Vest
-					i(2656),	-- Flimsy Chain Vest
-					i(1745),	-- Laced Mail Vest
-					i(3999),	-- Laminated Scale Armor
-					i(1753),	-- Linked Chain Vest
-					i(2648),	-- Loose Chain Vest
-					i(4007),	-- Overlinked Chain Armor
-					i(1761),	-- Reinforced Chain Vest
-					i(1737),	-- Worn Mail Vest
-				}),
-				n(WRIST, {
-					i(3810),	-- Double Mail Bracers
-					i(2651),	-- Flimsy Chain Bracers
-					i(1740),	-- Laced Mail Bracers
-					i(3994),	-- Laminated Scale Bracers
-					i(1748),	-- Linked Chain Bracers
-					i(2643),	-- Loose Chain Bracers
-					i(4002),	-- Overlinked Chain Bracers
-					i(1756),	-- Reinforced Chain Bracers
-					i(1732),	-- Worn Mail Bracers
-				}),
-				n(HANDS, {
-					i(3812),	-- Double Mail Gloves
-					i(2653),	-- Flimsy Chain Gloves
-					i(1742),	-- Laced Mail Gloves
-					i(3996),	-- Laminated Scale Gloves
-					i(1750),	-- Linked Chain Gloves
-					i(2645),	-- Loose Chain Gloves
-					i(4004),	-- Overlinked Chain Gloves
-					i(1758),	-- Reinforced Chain Gloves
-					i(1734),	-- Worn Mail Gloves
-				}),
-				n(WAIST, {
-					i(3808),	-- Double Mail Belt
-					i(2649),	-- Flimsy Chain Belt
-					i(1738),	-- Laced Mail Belt
-					i(3992),	-- Laminated Scale Belt
-					i(1746),	-- Linked Chain Belt
-					i(2635),	-- Loose Chain Belt
-					i(4000),	-- Overlinked Chain Belt
-					i(1754),	-- Reinforced Chain Belt
-					i(1730),	-- Worn Mail Belt
-				}),
-				n(LEGS, {
-					i(3813),	-- Double Mail Pants
-					i(2654),	-- Flimsy Chain Pants
-					i(1743),	-- Laced Mail Pants
-					i(3997),	-- Laminated Scale Pants
-					i(1751),	-- Linked Chain Pants
-					i(2646),	-- Loose Chain Pants
-					i(4005),	-- Overlinked Chain Pants
-					i(1759),	-- Reinforced Chain Pants
-					i(1735),	-- Worn Mail Pants
-				}),
-				n(FEET, {
-					i(3809),	-- Double Mail Boots
-					i(2650),	-- Flimsy Chain Boots
-					i(1739),	-- Laced Mail Boots
-					i(3993),	-- Laminated Scale Boots
-					i(1747),	-- Linked Chain Boots
-					i(2642),	-- Loose Chain Boots
-					i(4001),	-- Overlinked Chain Boots
-					i(1755),	-- Reinforced Chain Boots
-					i(1731),	-- Worn Mail Boots
-				}),
-			}),
-			filter(PLATE, {
-				n(HEAD, {
-					i(8755),	-- Light Plate Helmet
-				}),
-				n(SHOULDER, {
-					i(8086),	-- Light Plate Shoulderpads
-				}),
-				n(CHEST, {
-					i(8080),	-- Light Plate Chestpiece
-				}),
-				n(WRIST, {
-					i(8083),	-- Light Plate Bracers
-				}),
-				n(HANDS, {
-					i(8084),	-- Light Plate Gloves
-				}),
-				n(WAIST, {
-					i(8081),	-- Light Plate Belt
-				}),
-				n(LEGS, {
-					i(8085),	-- Light Plate Pants
-				}),
-				n(FEET, {
-					i(8082),	-- Light Plate Boots
-				}),
-			}),
-			filter(CLOAKS, {
-				i(1774),	-- Brocade Cloak
-				i(1497),	-- Calico Cloak
-				i(1766),	-- Canvas Cloak
-				i(3939),	-- Crochet Cloak
-				i(1782),	-- Cross-Stitched Cloak
-				i(3811),	-- Double-Stitched Cloak
-				i(2652),	-- Flimsy Chain Cloak
-				i(1376),	-- Frayed Cloak
-				i(3803),	-- Hardened Cloak
-				i(3795),	-- Interlaced Cloak
-				i(1741),	-- Laced Cloak
-				i(3995),	-- Laminated Scale Cloak
-				i(1749),	-- Linked Chain Cloak
-				i(2644),	-- Loose Chain Cloak
-				i(4003),	-- Overlinked Chain Cloak
-				i(1790),	-- Patched Cloak
-				i(1429),	-- Patchwork Cloak
-				i(1372),	-- Ragged Cloak
-				i(1798),	-- Rawhide Cloak
-				i(1757),	-- Reinforced Chain Cloak
-				i(3972),	-- Smooth Cloak
-				i(3964),	-- Thick Cloak
-				i(1806),	-- Tough Cloak
-				i(3947),	-- Twill Cloak
-				i(1505),	-- Warped Cloak
-				i(1733),	-- Worn Cloak
-				i(1421),	-- Worn Hide Cloak
-			}),
-			filter(SHIRTS, {
-				i(17),		-- Martin Fury
-			}),
-			filter(MISC, {
-				i(7997),	-- Red Defias Mask
-			}),
-			filter(NECK_F, {
-				i(67388),	-- String of Alligator Teeth	-- TODO Cataclysm
-				i(20422),	-- Twilight Cultist Medallion of Station
-			}),
 			filter(FINGER_F, {
 				i(180352),	-- Cracked Inquisitor's Band	-- TODO Shadowlands
 				i(180350),	-- Simple Stone Loop	-- TODO Shadowlands
-				i(20451),	-- Twilight Cultist Ring of Lordship
 			}),
 		}),
 		n(WEAPONS, {
-			filter(ONE_HANDED_AXES, {
-				i(1819),	-- Gouging Pick
-				i(4019),	-- Heavy Flint Axe
-				i(13818),	-- Jagged Axe
-				i(3785),	-- Keen Axe
-				i(1827),	-- Meat Cleaver
-				i(1416),	-- Rusty Hatchet
-				i(1816),	-- Unbalanced Axe
-				i(1516),	-- Worn Hatchet
-			}),
-			filter(TWO_HANDED_AXES, {
-				i(13819),	-- Balanced War Axe
-				i(1417),	-- Beaten Battle Axe
-				i(1512),	-- Crude Battle Axe
-				i(3779),	-- Hefty War Axe
-				i(1824),	-- Shiny War Axe
-				i(1812),	-- Short-Handled Battle Axe
-				i(4020),	-- Splintering Battle Axe
-				i(1828),	-- Stone War Axe
-			}),
-			filter(BOWS, {
-				i(4025),	-- Balanced Long Bow
-				i(2773),	-- Cracked Shortbow
-				i(2777),	-- Feeble Shortbow
-				i(2780),	-- Light Hunting Bow
-				i(2782),	-- Mishandled Recurve Bow
-				i(13824),	-- Recurve Long Bow
-				i(2785),	-- Stiff Recurve Bow
-				i(3778),	-- Taut Compound Bow
-			}),
-			filter(DAGGERS, {
-				i(2766),	-- Deft Stiletto
-				i(4023),	-- Fine Pointed Dagger
-				i(2763),	-- Fisherman Knife
-				i(2765),	-- Hunting Knife
-				i(2138),	-- Sharpened Letter Opener
-				i(3786),	-- Shiny Dirk
-				i(2764),	-- Small Dagger
-				i(13822),	-- Spiked Dagger
-				i(5516),	-- Threshadon Fang
-			}),
-			filter(GUNS, {
-				i(2781),	-- Dirty Blunderbuss
-				i(2778),	-- Cheap Blunderbuss
-				i(3780),	-- Long-Barreled Musket
-				i(2786),	-- Oiled Blunderbuss
-				i(13825),	-- Primed Musket
-				i(2774),	-- Rust-Covered Blunderbuss
-				i(4026),	-- Sentinel Musket
-				i(2783),	-- Shoddy Blunderbuss
-			}),
-			filter(ONE_HANDED_MACES, {
-				i(1823),	-- Bludgeoning Cudgel
-				i(4021),	-- Blunting Mace
-				i(1825),	-- Bulky Bludgeon
-				i(1415),	-- Carpenter's Mallet
-				i(13820),	-- Clout Mace
-				i(1510),	-- Heavy Hammer
-				i(11411),	-- Large Bear Bone
-				i(6196),	-- Noboru's Cudgel
-				i(1815),	-- Ornamental Mace
-				i(3787),	-- Stone Club
-			}),
-			filter(TWO_HANDED_MACES, {
-				i(1814),	-- Battered Mallet
-				i(13821),	-- Bulky Maul
-				i(1414),	-- Cracked Sledge
-				i(4022),	-- Crushing Maul
-				i(3782),	-- Large War Club
-				i(1826),	-- Rock Maul
-				i(1514),	-- Rusty Warhammer
-				i(1820),	-- Wooden Maul
-			}),
-			filter(POLEARMS, {
-				i(176904),	-- Bonegrafted Spear	-- TODO Shadowlands
-				i(67153),	-- Mobus's Vile Halberd
-				i(1485),	-- Pitchfork
-			}),
 			filter(SHIELDS, {
-				i(2210),	-- Battered Buckler
-				i(2211),	-- Bent Large Shield
-				i(3989),	-- Blocking Targe
-				i(2220),	-- Box Shield
-				i(2212),	-- Cracked Buckler
-				i(3990),	-- Crested Buckler
-				i(3987),	-- Deflecting Tower
-				i(3986),	-- Protective Pavise
-				i(2217),	-- Rectangular Shield
-				i(3816),	-- Reflective Heater
-				i(3817),	-- Reinforced Buckler
-				i(2216),	-- Simple Buckler
-				i(2219),	-- Small Round Shield
-				i(2221),	-- Targe Shield
 				i(128824),	-- Tome of the Silver Hand	-- TODO Legion
-				i(2222),	-- Tower Shield
-				i(2214),	-- Wooden Buckler
-				i(2215),	-- Wooden Shield
-				i(2213),	-- Worn Large Shield
 			}),
-			filter(STAVES, {
-				i(1822),	-- Cedar Walking Stick
-				i(4024),	-- Heavy War Staff
-				i(1813),	-- Chipped Quarterstaff
-				i(3784),	-- Metal Stave
-				i(1831),	-- Oaken War Staff
-				i(1515),	-- Rough Wooden Staff
-				i(13823),	-- Stout War Staff
-				i(1411),	-- Withered Staff
-			}),
-			filter(ONE_HANDED_SWORDS, {
-				i(1511),	-- Commoner's Sword
-				i(1413),	-- Feeble Sword
-				i(13816),	-- Fine Longsword
-				i(3783),	-- Light Scimitar
-				i(4017),	-- Sharp Shortsword
-				i(1829),	-- Short Cutlass
-				i(1817),	-- Stock Shortsword
-				i(1821),	-- Warped Blade
-			}),
-			filter(TWO_HANDED_SWORDS, {
-				i(1811),	-- Blunt Claymore
-				i(3781),	-- Broad Claymore
-				i(1412),	-- Crude Bastard Sword
-				i(1830),	-- Long Bastard Sword
-				i(1513),	-- Old Greatsword
-				i(1818),	-- Standard Claymore
-				i(13817),	-- Tapered Greatsword
-				i(4018),	-- Whetted Claymore
-			}),
-			filter(THROWN, {
+			filter(THROWN, {	-- TODO
 				-- #if NOT ANYCLASSIC
 				-- The Burning Crusade
 				i(28535),	-- Amani Throwing Axe
@@ -636,6 +202,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			})
 		}),
 	}),
+	--]]
 	n(-123457, {	-- Common
 		n(ARMOR, {
 			filter(CLOTH, {
@@ -1776,7 +1343,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 -- All these Items are white/greys that are removed from the game & are sourced too
 -- Listed them here for now. I want an easy unobtainable view ~~Gold
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	--cloth
+	-- Cloth
 	i(7095),	-- Bog Boots
 	i(3320),	-- Bonecaster Sash
 	i(6202),	-- Fingerless Gloves
@@ -1787,26 +1354,32 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(4261),	-- Solliden's Trousers
 	i(3263),	-- Webbed
 	i(3261),	-- Webbed Cloak
-	--Dagger
+	
+	-- Dagger
 	i(3445),	-- Ceremonial Knife
 	i(3296),	-- Deadman Dagger
-	--Staff
+	
+	-- Staff
 	i(4961),	-- Dreamwatcher Staff
 	i(2067),	-- Frostbit Staff
 	i(3327),	-- Vile Fin Oracle Staff
-	--One Handed Axes
+	
+	-- One Handed Axes
 	i(2260),	-- Frostmane Hand Axe
 	i(2066),	-- Skull Hatchet
 	i(3071),	-- Striking Hatchet
-	--One Handed Sword
+	
+	-- One Handed Sword
 	i(3455),	-- Deathstalker Shortsword
 	i(2065),	-- Rockjaw Blade
 	i(2282),	-- Rodentia Shortsword
 	i(1008),	-- Well-Used Sword
-	--Two Handed Axes
+	
+	-- Two Handed Axes
 	i(6206),	-- Rock Chipper
 	i(3325),	-- Vile Fin Battle Axe
-	--Two Handed Sword
+	
+	-- Two Handed Sword
 	i(6741),	-- Orcish War Sword
 	i(2754),	-- Tarnished Bastard Sword
 }));

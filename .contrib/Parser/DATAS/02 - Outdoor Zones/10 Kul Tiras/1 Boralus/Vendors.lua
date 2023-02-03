@@ -14,6 +14,26 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
+			n(142165, {	-- Arwin Blakemore <Thrift Goods>
+				["coord"] = { 66.5, 40.9, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(3363),	-- Frayed Belt
+					i(3365),	-- Frayed Bracers
+					i(1376),	-- Frayed Cloak
+					i(1377),	-- Frayed Gloves
+					i(1378),	-- Frayed Pants
+					i(1380),	-- Frayed Robe
+					i(1374),	-- Frayed Shoes
+					i(1372),	-- Ragged Cloak
+					i(1369),	-- Ragged Leather Belt
+					i(1367),	-- Ragged Leather Boots
+					i(1370),	-- Ragged Leather Bracers
+					i(1368),	-- Ragged Leather Gloves
+					i(1366),	-- Ragged Leather Pants
+					i(1364),	-- Ragged Leather Vest
+				},
+			}),
 			n(161565, {	-- Bragni <Profession Liason>
 				["coord"] = { 56.3, 27.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,

@@ -864,6 +864,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(45991),	-- Bone Fishing Pole
 						i(45992),	-- Jeweled Fishing Pole
 						i(67410),	-- Very Unlucky Rock
+						i(67388),	-- String of Alligator Teeth
 					},
 				}),
 			}),

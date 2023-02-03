@@ -722,6 +722,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9660, {	-- Stargazer Cloak
 							["timeline"] = { "removed 4.0.3" },
 						}),
+						o(144064, {	-- Gordunni Dirt Mound
+							i(15794, {	-- Ripped Ogre Loincloth
+								["timeline"] = { "removed 4.0.3" },
+							}),
+						}),
 					},
 				}),
 				q(25399, {	-- Hatecrest Forces

@@ -2722,6 +2722,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(67410, {	-- Very Unlucky Rock
 								["timeline"] = { "added 4.0.1.12984" },
 							}),
+							i(67388, {	-- String of Alligator Teeth
+								["timeline"] = { "added 4.0.1.12984" },
+							}),
 						},
 					}),
 				}),

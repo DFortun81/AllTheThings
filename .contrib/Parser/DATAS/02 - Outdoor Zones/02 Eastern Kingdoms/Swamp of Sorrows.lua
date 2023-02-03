@@ -1529,6 +1529,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						766,	-- Tangled Horror
 					},
 				}),
+				-- #endif
+				i(6196, {	-- Noboru's Cudgel
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 5477,	-- Noboru the Cudgel
+				}),
+				-- #if BEFORE CATA
 				i(8498, {	-- Tiny Emerald Whelpling
 					["cr"] = 741,	-- Dreaming Whelp
 				}),
