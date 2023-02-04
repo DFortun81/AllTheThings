@@ -3983,6 +3983,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
 					},
+					["description"] = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
 					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
 							["isLimited"] = true,

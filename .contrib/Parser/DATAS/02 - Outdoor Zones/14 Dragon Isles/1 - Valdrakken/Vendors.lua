@@ -267,7 +267,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						},
 					}),
 					i(201285, {	-- Ancient Jeweler's Illustrations
-						-- ["questID"] = TODO,
+						["questID"] = 71921,
 						["requireSkill"] = JEWELCRAFTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },

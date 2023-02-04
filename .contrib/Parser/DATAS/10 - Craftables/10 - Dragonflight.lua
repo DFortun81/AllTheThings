@@ -2425,8 +2425,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- Weapons
 			q(71596),	-- Core Explorer's Compendium
 			-- q(),	-- Cracking Codex of the Isles
-			-- q(),	-- Illuminating Pillar of the Isles
-			-- q(),	-- Kinetic Pillar of the Isles
+			q(71515),	-- Illuminating Pillar of the Isles
+			q(71514),	-- Kinetic Pillar of the Isles
 			q(71518),	-- Overseer's Writhebark Stave
 			q(71517),	-- Pioneer's Writhebark Stave
 			-- q(),	-- Weathered Explorer's Stave
@@ -2528,7 +2528,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(),	-- Keen Neltharite
 			-- q(),	-- Quick Ysemerald
 			-- Earth Gems
-			-- q(),	-- Fractured Neltharite
+			q(71636),	-- Fractured Neltharite
 			q(71632),	-- Keen Ysemerald
 			q(71628),	-- Puissant Nozdorite
 			q(71640),	-- Sensei's Alexstraszite
@@ -2549,7 +2549,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(),	-- Fierce Illimited Diamond
 			-- q(71619),	-- Inscribed Illimited Diamond
 			-- q(),	-- Resplendent Illimited Diamond
-			-- q(),	-- Skillful Illimited Diamond
+			q(71618),	-- Skillful Illimited Diamond
 			-- Misc
 			-- q(71657),	-- Tiered Medallion Setting
 			-- Trinkets
@@ -2562,7 +2562,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(),	-- Choker of Shielding
 			-- q(),	-- Crimson Combatant's Jeweled Amulet
 			-- q(),	-- Crimson Combatant's Jeweled Signet
-			-- q(),	-- Elemental Lariat
+			q(71603),	-- Elemental Lariat
 			q(71602),	-- Pendant of Impending Perils
 			-- q(),	-- Ring-Bound Hourglass
 			q(72349),	-- Torc of Passed Time
@@ -2578,7 +2578,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71669),	-- Jeweled Onyx Whelpling
 			q(71670),	-- Jeweled Ruby Whelpling
 			-- q(),	-- Jeweled Sapphire Whelpling
-			-- Noevelties
+			-- Novelties
 			-- q(),	-- "Rhinestone" Sunglasses
 			-- q(),	-- Covergent Prism
 			-- q(),	-- Jeweled Offering
@@ -2590,19 +2590,19 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71659),	-- Chromatic Focus
 			-- q(),	-- Fine-Print Trifocals
 			q(71662),	-- Left-Handed Magnifying Glass
-			-- q(),	-- Magnificent Margin Magnifier
+			q(71664),	-- Magnificent Margin Magnifier
 			-- q(),	-- Resonant Focus
 			-- Extravagant Glasswares
 			q(71655),	-- Dreamer's Vision
 			q(71651),	-- Earthwarden's Prize
 			-- q(71654),	-- Jeweled Dragon's Heart
 			-- q(),	-- Keeper's Glory
-			-- q(),	-- Queen's Gift
+			q(71656),	-- Queen's Gift
 			q(71653),	-- Timewatcher's Patience
 		}),
 		prof(LEATHERWORKING, {
 			-- Leather Armor
-			-- q(),	-- Life-Bound Belt
+			q(71712),	-- Life-Bound Belt
 			q(71713),	-- Life-Bound Binding
 			-- q(),	-- Life-Bound Boots
 			-- q(),	-- Life-Bound Cap
@@ -2618,7 +2618,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(72497),	-- Pioneer's Practiced Leggings
 			q(72498),	-- Pioneer's Practiced Shoulderpads
 			-- Mail Armor
-			-- q(),	-- Flame-Touched Chain
+			q(71738),	-- Flame-Touched Chain
 			-- q(),	-- Flame-Touched Chainmail
 			-- q(),	-- Flame-Touched Cuffs
 			-- q(),	-- Flame-Touched Handguards
@@ -2656,9 +2656,9 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(),	-- Ancestor's Dew Drippers
 			q(71702),	-- Flaring Cowl
 			-- q(),	-- Old Spirit's Wristwraps
-			-- q(),	-- Scale Rein Grips
+			q(71718),	-- Scale Rein Grips
 			-- q(),	-- Snowball Makers
-			-- q(),	-- String of Spiritual Knick-Knacks
+			q(71690),	-- String of Spiritual Knick-Knacks
 			q(71719),	-- Wind Spirit's Lasso
 			-- Bestial Patterns
 			-- q(),	-- Allied Heartwarming Fur Coat
@@ -2683,12 +2683,12 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71716),	-- Infurious Boots of Reprieve
 			-- q(),	-- Infurious Chainhelm Protector
 			-- q(),	-- Infurious Footwraps of Indemnity
-			-- q(),	-- Infurious Spirit's Hood
+			q(71689),	-- Infurious Spirit's Hood
 			-- Decayed Patter
 			-- q(),	-- Acidic Hailstone Treads
 			-- q(),	-- Silmy Expulsion Boots
 			q(71687),	-- Toxic Thorn Footwraps
-			-- q(),	-- Venom-Steeped Stompers
+			q(71714),	-- Venom-Steeped Stompers
 			-- q(),	-- Witherrot Tome
 			-- Reagents
 			q(71748),	-- Finished Prototype Explorer's Barding
@@ -2701,7 +2701,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71759),	-- Stonecrust Hide
 			-- Optional Reagents
 			-- q(),	-- Fang Adornments
-			-- q(),	-- Toxified Armor Patch
+			q(71757),	-- Toxified Armor Patch
 			-- Finishing Reagents
 			-- q(),	-- Illustrious Insight
 			-- Armor Kits
@@ -2711,7 +2711,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- Drums
 			q(71746),	-- Feral Hide Drums
 			-- Toys
-			-- q(),	-- Artisan's Sign
+			q(71771),	-- Artisan's Sign
 			q(71772),	-- Gnoll Tent
 			-- q(71773),	-- Tuskarr Bean Bag
 		}),
@@ -2756,6 +2756,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74173),	-- Skinning Steamgill
 			q(74174),	-- Skinning Biryuk
 			q(74175),	-- Skinning Territorial Coastling
+			q(74176),	-- Skinning Rustlily
 			q(74179),	-- Skinning Hunter of the Deep
 			q(74180),	-- Skinning Hamett
 			q(74181),	-- Skinning Zarimek
@@ -2769,6 +2770,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74196),	-- Skinning Rokmur
 			q(74197),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
 			q(74198),	-- Skinning The Weeping Vilomah
+			q(74199),	-- Skinning Riverwalker Tamopo
 			q(74200),	-- Skinning Eldoren the Reborn
 			q(74203),	-- Skinning Henlare
 			q(74204),	-- Skinning Acrosoth
@@ -2782,6 +2784,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74216),	-- Skinning Snufflegust
 			q(74219),	-- Skinning Ancient Hornswog
 			q(74220),	-- Skinning Mamonth (War Party Event)
+			q(74222),	-- Skinning Smogswog the Firebreather
 			q(74223),	-- Skinning Skewersnout
 			q(74224),	-- Skinning Enkine the Voracious
 			q(74225),	-- Skinning Battlehorn Pyrhus
@@ -2883,7 +2886,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71816),	-- Wildercloth Bandage
 				-- Experiments --
 			q(71848),	-- Fiddle with Draconium Fabric Cutters
-			--q(),	-- Fiddle with Khaz'gorite Fabric Cutters
+			q(71849),	-- Fiddle with Khaz'gorite Fabric Cutters
 				-- Specc --
 			q(71946),	-- Timeweaving unlocked
 			q(71947),	-- Timeweaving Full maxed out

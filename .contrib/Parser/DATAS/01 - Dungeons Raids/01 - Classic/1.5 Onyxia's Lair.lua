@@ -274,7 +274,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						24428,	-- A Most Puzzling Circumstance (A)
 						-- #endif
 					},
-					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
+					["coord"] = { 67.0, 85.0, STORMWIND_CITY },
 					["requireSkill"] = LEATHERWORKING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(60, 30, 60),
