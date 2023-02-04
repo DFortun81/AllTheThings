@@ -2208,7 +2208,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15045),	-- Green Dragonscale Breastplate
 				-- #endif
 				i(15076, {	-- Heavy Scorpid Vest
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_DF_0_5 },
 				}),
 				applyclassicphase(PHASE_SIX, i(22664, {	-- Icy Scale Breastplate
 					["timeline"] = { "removed 3.0.1" },

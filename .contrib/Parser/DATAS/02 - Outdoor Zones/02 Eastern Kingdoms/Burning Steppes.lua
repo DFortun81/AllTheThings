@@ -1819,6 +1819,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_DF_0_5 },
 				}),
 				-- #endif
+				i(15727, {	-- Pattern: Heavy Scorpid Vest
+					["timeline"] = { ADDED_DF_0_5 },
+					["cr"] = 7025,	-- Blackrock Soldier
+				}),
 				i(15732, {	-- Pattern: Volcanic Leggings
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7035,	-- Firegut Brute
