@@ -3,7 +3,6 @@ import csv
 import re
 from pathlib import Path
 
-import requests
 from ThingTypes import (
     DATAS_FOLDER,
     DELIMITER,
@@ -16,8 +15,6 @@ from ThingTypes import (
     Pets,
     Quests,
     Recipes,
-    SkillLines,
-    SpellNames,
     Thing,
     Titles,
     Toys,
@@ -129,23 +126,16 @@ def sort_raw_file_recipes() -> None:
 
 def extract_nth_column(csv_path: Path, n: int) -> list[str]:
     """Extract nth column from CSV file."""
-    #csv_list: list[str] = []
-    #with open(csv_path) as csv_file:
-    #    for line in csv_file:
-    #        try:
-    #            if n != 1:
-    #                element: str = line.split(DELIMITER)[n].strip() + "\n"
-    #                csv_list.append(element)
-    #            else:
-    #                elements: list[str] = line.split(DELIMITER)[1:]
-    #                joined_elements: str = DELIMITER.join(elements)
-    #                csv_list.append(joined_elements)
-    #        except IndexError:
-    #            empty_line: str = ""
-    #            csv_list.append(empty_line)
-    #return csv_list
+    csv_list: list[str] = []
     with open(csv_path) as csv_file:
-        return [line.split(DELIMITER)[n].strip() + "\n" for line in csv_file]
+        for line in csv_file:
+            try:
+                element: str = line.split(DELIMITER)[n].strip() + "\n"
+                csv_list.append(element)
+            except IndexError:
+                empty_line: str = ""
+                csv_list.append(empty_line)
+    return csv_list
 
 
 def remove_empty_builds(lines: list[str]) -> list[str]:
@@ -311,24 +301,15 @@ def post_process(thing: type[Thing]) -> None:
         # TODO:
         # Recipe names are in the SpellName db and Profession names are in SkillLine db
         raise NotImplementedError("Recipes are not implemented yet.")
-    elif thing == SpellNames:
-        # TODO:
-        # thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-        raise NotImplementedError("SpellNames are not implemented yet.")
-    elif thing == SkillLines:
-        # TODO:
-        # thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
-        raise NotImplementedError("SkillLines are not implemented yet.")
     elif thing == Toys:
         with open(raw_path) as raw_file:
             raw_ids_and_nameids = raw_file.readlines()
         name_ids = extract_nth_column(Path("Raw", "Items.txt"), 0)
         names = extract_nth_column(Path("Raw", "Items.txt"), 1)
     elif thing == Transmog:
-        raw_ids_and_nameids = extract_nth_column(raw_path, 1)
-        name_ids = extract_nth_column(Path("Raw", "Item.txt"), 0)
-        names = extract_nth_column(Path("Raw", "Item.txt"), 1)
-        # TODO: this should use itemID instead... have to rework
+        # TODO:
+        # Transmog names are in the Item db
+        raise NotImplementedError("Recipes are not implemented yet.")
     # TODO: I guess you want to set names, raw_id_to_nameid and name_ids for all Thing types above for this loop to work
 
     # first recover raw_id to name_id ... they remove the lind about db..
@@ -363,6 +344,7 @@ def post_process(thing: type[Thing]) -> None:
 
 
 def add_latest_data(build: str) -> None:
+    """Adds latest builds to build files and add latests data to raw files"""
     add_latest_build(build)
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
@@ -382,17 +364,28 @@ def add_latest_data(build: str) -> None:
 
 
 def create_missing_files() -> None:
-    things: list[type[Thing]] = Thing.__subclasses__()
-    for thing in things:
-        create_missing_file(thing)
-
-
-def ask_post_process() -> None:
+    """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
         print(thing)
-        answer = input("Yes or No?")
-        if answer == "Yes":
+        create_missing_file(thing)
+
+
+def available_post_process() -> None:
+    """This iterates over Things (that are available) to process missing files"""
+    things: list[type[Thing]] = Thing.__subclasses__()
+    for thing in things:
+        print(thing)
+        if thing in (
+            Achievements,
+            Factions,
+            FlightPaths,
+            Illusions,
+            Mounts,
+            Pets,
+            Titles,
+            Toys,
+        ):
             post_process(thing)
         else:
             continue
@@ -470,5 +463,5 @@ def give_name_quest() -> None:
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run create_missing_files() (you have to uncomment it)"""
 # create_missing_files()
-"""Step 5: Run ask_post_process() (you have to uncomment it) This is still underwork and currently only Achievements, Factions, Flight Paths, Illusions, Mounts, Pets, Titles and Toys can be Post Processed"""
-# ask_post_process()
+"""Step 5: Run available_post_process() (you have to uncomment it) This is still underwork and currently only Achievements, Factions, Flight Paths, Illusions, Mounts, Pets, Titles and Toys can be Post Processed"""
+# available_post_process()
