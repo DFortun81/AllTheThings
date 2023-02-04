@@ -37,7 +37,7 @@ _.Zones =
 				i(153108),	-- Krokul Drudge Pickaxe
 				i(153095),	-- Netherworn Armice
 				i(153094),	-- Netherworn Cord
-				i(153073),	-- Netherworn Cowl
+				i(153093),	-- Netherworn Cowl
 				i(153092),	-- Netherworn Handwraps
 				i(153091),	-- Netherworn Pants
 				i(153090),	-- Netherworn Sandals
