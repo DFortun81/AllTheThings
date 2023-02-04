@@ -599,6 +599,49 @@ p(3156),	-- Hornswoggle
 p(3158),	-- Missing1
 9.1.5.39977
 p(3188),	-- Trub'ul \\ Trouble
+10.0.7.47910
+p(3422),	-- [DNT] Storm Pet Boss - Legendary
+p(3423),	-- [DNT] Storm Pet Fodder
+p(3424),	-- [DNT] Storm Pet Boss - Epic
+p(3425),	-- [DNT] Storm Pet Boss - Rare
+p(3427),	-- Driftling
+p(3429),	-- Vortex
+p(3430),	-- Tremblor
+p(3431),	-- Wildfire
+p(3432),	-- Flow
+p(3433),	-- Vortex
+p(3434),	-- Tremblor
+p(3435),	-- Wildfire
+p(3436),	-- Flow
+p(3437),	-- Vortex
+p(3438),	-- Tremblor
+p(3439),	-- Wildfire
+p(3440),	-- Flow
+p(3441),	-- Storm-Touched Ohuna
+p(3442),	-- Storm-Touched Skitterer
+p(3443),	-- Storm-Touched Slyvern
+p(3444),	-- Storm-Touched Swoglet
+p(3446),	-- Vortex
+p(3447),	-- Tremblor
+p(3448),	-- Wildfire
+p(3449),	-- Flow
+p(3450),	-- Feral Frogduck
+p(3451),	-- Lord Flappinsby
+p(3452),	-- Enchanted Tuskling
+p(3453),	-- Adinakon
+p(3454),	-- Lyver
+p(3455),	-- Yu'shor
+p(3456),	-- Drakeula
+p(3457),	-- Arctichnid
+p(3458),	-- Kazzquack
+p(3459),	-- Mothoroth
+p(3460),	-- Blu'jaeden
+p(3465),	-- Enok the Stinky
+p(3466),	-- Malfunctioning Matrix
+p(3471),	-- Gilded Mechafrog
+p(3472),	-- Lil' Algalon
+p(3473),	-- Cozmos
+p(3474),	-- Celastro
 
 
 
@@ -1848,3 +1891,46 @@ p(3219),	-- Predatory Helicid \\ Predatory Gastropod
 p(3246),	-- Tezpet
 10.0.5.47871
 p(3250),	-- Egbob
+10.0.7.47910
+p(3422),	-- [DNT] Storm Pet Boss - Legendary
+p(3423),	-- [DNT] Storm Pet Fodder
+p(3424),	-- [DNT] Storm Pet Boss - Epic
+p(3425),	-- [DNT] Storm Pet Boss - Rare
+p(3427),	-- Driftling
+p(3429),	-- Vortex
+p(3430),	-- Tremblor
+p(3431),	-- Wildfire
+p(3432),	-- Flow
+p(3433),	-- Vortex
+p(3434),	-- Tremblor
+p(3435),	-- Wildfire
+p(3436),	-- Flow
+p(3437),	-- Vortex
+p(3438),	-- Tremblor
+p(3439),	-- Wildfire
+p(3440),	-- Flow
+p(3441),	-- Storm-Touched Ohuna
+p(3442),	-- Storm-Touched Skitterer
+p(3443),	-- Storm-Touched Slyvern
+p(3444),	-- Storm-Touched Swoglet
+p(3446),	-- Vortex
+p(3447),	-- Tremblor
+p(3448),	-- Wildfire
+p(3449),	-- Flow
+p(3450),	-- Feral Frogduck
+p(3451),	-- Lord Flappinsby
+p(3452),	-- Enchanted Tuskling
+p(3453),	-- Adinakon
+p(3454),	-- Lyver
+p(3455),	-- Yu'shor
+p(3456),	-- Drakeula
+p(3457),	-- Arctichnid
+p(3458),	-- Kazzquack
+p(3459),	-- Mothoroth
+p(3460),	-- Blu'jaeden
+p(3465),	-- Enok the Stinky
+p(3466),	-- Malfunctioning Matrix
+p(3471),	-- Gilded Mechafrog
+p(3472),	-- Lil' Algalon
+p(3473),	-- Cozmos
+p(3474),	-- Celastro

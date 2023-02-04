@@ -45,7 +45,7 @@ def get_thing_table(thing: type[Thing], build: str) -> list[str]:
 def get_thing_data(thing: type[Thing], build: str) -> list[str]:
     """Get the IDs (and some thing specific data) of a thing from a build."""
     thing_list = list[str]()
-    with open(Path("Latest", f"{thing.table()}.csv")) as csv_file:
+    with open(Path("Latest", "dbfilesclient", f"{thing.table()}.csv")) as csv_file:
         reader = csv.DictReader(csv_file)
         for row in reader:
             try:
@@ -102,13 +102,14 @@ def get_other_skilllines() -> list[int]:
 def sort_raw_file_recipes() -> None:
     """Sort raw files for recipes."""
     profession_dict = build_profession_dict()
-    print(profession_dict)
+    profession_dict["Other"] = 0
     raw_path_dict = {
         profession: Path("Raw", "Professions", f"{profession}.txt")
         for profession in profession_dict
     }
     other_skilllines = get_other_skilllines()
     raw_path_dict["Other"] = Path("Raw", "Professions", "Other.txt")
+    print(profession_dict)
     with (
         open(Path("Raw", "Recipes.txt")) as raw_file,
         open(Path("Builds", "Recipes.txt")) as builds_file,
@@ -156,18 +157,20 @@ def create_raw_file(thing: type[Thing]) -> None:
 
 def extract_nth_column(csv_path: Path, n: int) -> list[str]:
     """Extract nth column from CSV file."""
-    csv_list = []
+    csv_list: list[str] = []
     with open(csv_path) as csv_file:
         for line in csv_file:
             try:
                 if n != 1:
-                    line = line.split(DELIMITER)[n].strip() + "\n"
+                    element: str = line.split(DELIMITER)[n].strip() + "\n"
+                    csv_list.append(element)
                 else:
-                    line = line.split(DELIMITER)[1:]
-                    line = DELIMITER.join(line)
+                    elements: list[str] = line.split(DELIMITER)[1:]
+                    joined_elements: str = DELIMITER.join(elements)
+                    csv_list.append(joined_elements)
             except IndexError:
-                line = ""
-            csv_list.append(line)
+                empty_line: str = ""
+                csv_list.append(empty_line)
     return csv_list
     # with open(csv_path) as csv_file:
     #    return [line.split(DELIMITER)[n].strip() + "\n" for line in csv_file]
@@ -358,14 +361,13 @@ def post_process(thing: type[Thing]) -> None:
 
     # first recover raw_id to name_id ... they remove the lind about db..
     for n in range(len(missing_lines)):
-        id_list = []
+        id_list: list[str] = []
         name_list = []
-        missing_line = missing_lines[n].strip()
-        missing_line = re.sub("[^\\d^.]", "", missing_line)
+        missing_line: str = re.sub("[^\\d^.]", "", missing_lines[n].strip())
         if missing_line.isdigit():
             missing_lines[n] = f"{thing.new_prefix()}{missing_line}),\t-- "
             for m in range(len(raw_ids_and_nameids)):
-                raw_id = raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
+                raw_id: str = raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
                 if missing_line == raw_id:
                     if thing == Pets:
                         id_list.append(
@@ -407,61 +409,94 @@ def add_latest_data(build: str) -> None:
                 raw_file.writelines(difference)
 
 
-def fast():
-    fast_path: Path = Path("Builds", "00Fast.txt")
-    spell_path: Path = Path("Raw", "SpellNames.txt")
-    new_path: Path = Path("Builds", "00Cool.txt")
-    fast_lines = extract_nth_column(fast_path, 0)
+def create_missing_files() -> None:
+    things: list[type[Thing]] = Thing.__subclasses__()
+    for thing in things:
+        create_missing_file(thing)
+
+
+def ask_post_process() -> None:
+    things: list[type[Thing]] = Thing.__subclasses__()
+    for thing in things:
+        print(thing)
+        answer = input("Yes or No?")
+        if answer == "ja":
+            post_process(thing)
+        else:
+            continue
+
+
+def give_name_recipes() -> None:
+    """Ugly Function Helped me during Beta to get names to recipes... Need to add to PostProcess Properly Soon"""
+    fast_path: Path = Path("Fast.txt")
+    new_path: Path = Path("Fast_Processed.txt")
+    fast_lines: list[str] = extract_nth_column(fast_path, 0)
     with open(fast_path) as raw_file:
-        raw_ids_and_nameids = raw_file.readlines()
-        name_ids = extract_nth_column(Path("Raw", "SpellNames.txt"), 0)
-        names = extract_nth_column(Path("Raw", "SpellNames.txt"), 1)
-    with open(fast_path, "r") as fast_file, open(spell_path, "r") as spell_file:
-       for n in range(len(fast_lines)):
-        id_list = []
-        name_list = []
-        missing_line = fast_lines[n].strip()
-        missing_line = re.sub("[^\\d^.]", "", missing_line)
-        if missing_line.isdigit():
-            fast_lines[n] = f"r({missing_line}),\t-- "
-            for m in range(len(raw_ids_and_nameids)):
-                raw_id = raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
-                if missing_line == raw_id:
+        raw_ids_and_nameids: list[str] = raw_file.readlines()
+        name_ids: list[str] = extract_nth_column(Path("Raw", "SpellNames.txt"), 0)
+        names: list[str] = extract_nth_column(Path("Raw", "SpellNames.txt"), 1)
+        for n in range(len(fast_lines)):
+            id_list: list[str] = []
+            name_list: list[str] = []
+            missing_line: str = re.sub("[^\\d^.]", "", fast_lines[n].strip())
+            if missing_line.isdigit():
+                fast_lines[n] = f"r({missing_line}),\t-- "
+                for m in range(len(raw_ids_and_nameids)):
+                    raw_id: str = raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
+                    if missing_line == raw_id:
                         id_list.append(
                             raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
                         )
-            for index, name_id in enumerate(name_ids):
-                name_id = re.sub("[^\\d^.]", "", name_id.strip())
-                for element in id_list:
-                    if name_id.strip() == element.strip():
-                        name_list.append(names[index].strip())
-        else:
-            fast_lines[n] = missing_line
-        name_list.reverse()
-        fast_lines[n] += " \\\\ ".join(name_list) + "\n"
-        print(fast_lines[n])
-    with open(new_path, "w") as missing_file:
-        missing_file.writelines(fast_lines)
+                for index, name_id in enumerate(name_ids):
+                    name_id = re.sub("[^\\d^.]", "", name_id.strip())
+                    for element in id_list:
+                        if name_id.strip() == element.strip():
+                            name_list.append(names[index].strip())
+            else:
+                fast_lines[n] = missing_line
+            name_list.reverse()
+            fast_lines[n] += " \\\\ ".join(name_list) + "\n"
+            print(fast_lines[n])
+        with open(new_path, "w") as missing_file:
+            missing_file.writelines(fast_lines)
 
 
-def kek():
-    path = Path("Builds", "00Quest.txt")
-    lines = extract_nth_column(path, 0)
-    for index, missing_line in enumerate(lines):
-        missing_line = missing_line.strip()
-        missing_line = re.sub("[^\\d^.]", "", missing_line)
-        if missing_line.isdigit():
-            lines[index] = f"q({missing_line}),\t--\n"
-        else:
-            lines[index] = lines[index]
+def give_name_item() -> None:
+    """Ugly Function Helped me during Beta to get names to item... Need to add to PostProcess Properly Soon"""
+    path: Path = Path("Fast.txt")
+    with open(path) as raw_file:
+        lines: list[str] = raw_file.readlines()
+        for index, missing_line in enumerate(lines):
+            print(missing_line)
+            id: str = re.sub("[^\\d^.]", "", missing_line.split(DELIMITER)[0].strip())
+            try:
+                name: str = missing_line.split(DELIMITER)[1].strip()
+            except KeyError:
+                continue
+            if id.isdigit():
+                lines[index] = f"i({id}),\t-- {name}\n"
+            else:
+                lines[index] = lines[index]
     with open(path, "w") as missing_file:
         missing_file.writelines(lines)
 
-things: list[type[Thing]] = Thing.__subclasses__()
-for thing in things:
-    print(thing)
-    kek = input("janej")
-    if kek == "ja":
-         post_process(thing)
-    else:
-        continue
+
+def give_name_quest() -> None:
+    """Ugly Function Helped me during Beta to get names to item... Need to add to PostProcess Properly Soon"""
+    path: Path = Path("Fast.txt")
+    csv_list: list[str] = []
+    with open(path, "r+") as csv_file:
+        for line in csv_file:
+            q_line: str = "q("+line.split("\t")[0].strip() + "),\n"
+            csv_list.append(q_line)
+        csv_file.writelines(csv_list)
+
+
+"""Step 1: Load New CSVs inside of Latests/dbfilesclient. """
+"""Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
+# add_latest_data("10.0.747910")
+"""Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
+"""Step 4: Run create_missing_files() (you have to uncomment it)"""
+# create_missing_files()
+"""Step 5: Run ask_post_process() (you have to uncomment it) This is still underwork and currently only Achievements, Factions, Flight Paths, Illusions, Mounts, Pets, Titles and Toys can be Post Processed"""
+# ask_post_process()

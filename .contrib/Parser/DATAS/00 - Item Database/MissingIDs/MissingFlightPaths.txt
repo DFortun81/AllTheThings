@@ -693,6 +693,10 @@ fp(2848),	-- The Nokhud Approach, The Nokhud Offensive \\ Ohn'iri Springs, The N
 fp(2849),	-- The Battle of Spears, The Nokhud Offensive
 fp(2850),	-- Teerakai, The Nokhud Offensive \\ The Eternal Kurgans, The Nokhud Offensive
 fp(2851),	-- Ohn'iri Springs, The Nokhud Offensive
+10.0.7.47910
+fp(2855),	-- Morqut Village, The Forbidden Reach
+fp(2856),	-- Quest Path 9315: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Up - EJC
+fp(2857),	-- Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC
 
 
 
@@ -1391,3 +1395,7 @@ fp(2848),	-- The Nokhud Approach, The Nokhud Offensive \\ Ohn'iri Springs, The N
 fp(2849),	-- The Battle of Spears, The Nokhud Offensive
 fp(2850),	-- Teerakai, The Nokhud Offensive \\ The Eternal Kurgans, The Nokhud Offensive
 fp(2851),	-- Ohn'iri Springs, The Nokhud Offensive
+10.0.7.47910
+fp(2855),	-- Morqut Village, The Forbidden Reach
+fp(2856),	-- Quest Path 9315: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Up - EJC
+fp(2857),	-- Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC

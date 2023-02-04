@@ -19284,3 +19284,146 @@
 199021@@@Patch
 200676@@@Firefly
 200746@@@Primalist Tomorrow Trigger Bunny
+10.0.7.47910
+186743@@@Elynae Dawnbreaker
+186747@@@Lialyn Summersong
+186753@@@Valandrus Shadowstar
+186754@@@Tyre Coppercog
+186760@@@Fizzle Swiftsprocket
+188709@@@Shaggy
+188821@@@Wakyn
+189106@@@Luvvy
+189113@@@Bunbo
+189115@@@Scruffles
+189118@@@Ashenwing
+189661@@@Buckie
+189694@@@Emmah
+189696@@@Patos
+191287@@@Berylmane
+191435@@@Kobaldt
+198770@@@Beetle
+198797@@@Windscourge Dragon
+198799@@@Baby Thunder Lizard
+198804@@@Dark Widow
+198805@@@Invasive Salamanther
+198808@@@Windscourge Drake
+198810@@@Windscourge Drake
+199134@@@Adamanthia
+199266@@@Garz
+199267@@@Radza Thunderclaw
+199271@@@Elder Mhaz
+199272@@@Matron Fherg
+199299@@@Jhagaza the Wordkeeper
+199315@@@Little Toz
+199534@@@Opportunistic Tarasek
+199556@@@Bovan Windtotem
+199742@@@Winglord Dezran
+199782@@@Dark Widow
+199938@@@[DNT] Storm Pet Boss - Legendary
+199940@@@[DNT] Storm Pet Fodder
+200001@@@[DNT] Kill Credit
+200003@@@[DNT] Storm Pet Boss - Epic
+200004@@@[DNT] Storm Pet Boss - Rare
+200010@@@Atrenosh Hailstone
+200206@@@Jyrra "Fuzzy Feet" Coldsoar
+200207@@@Glohza Brightfur
+200252@@@Flying Squirrel
+200259@@@Driftling
+200272@@@Awakening Tarasek
+200284@@@Drakonid Crechebound
+200303@@@Spellsworn Crechebound
+200338@@@Tarasek Scavenger
+200539@@@Ebyssian
+200549@@@Scalecommander Emberthal
+200554@@@Obsidian Warder
+200555@@@Invisible Stalker
+200556@@@Dark Talon
+200587@@@Spellsworn Crechebound
+200677@@@Storm-Touched Swoglet
+200678@@@Storm-Touched Slyvern
+200679@@@Storm-Touched Skitterer
+200680@@@Storm-Touched Ohuna
+200682@@@Vortex
+200683@@@[DNT] Kill Credit
+200684@@@Vortex
+200685@@@Vortex
+200686@@@Wildfire
+200687@@@[DNT] Kill Credit
+200688@@@Wildfire
+200689@@@Wildfire
+200690@@@Tremblor
+200691@@@[DNT] Kill Credit
+200692@@@Tremblor
+200693@@@Tremblor
+200694@@@Flow
+200695@@@[DNT] Kill Credit
+200696@@@Flow
+200697@@@Flow
+200727@@@Volethi
+200769@@@Vortex
+200770@@@Tremblor
+200771@@@Wildfire
+200772@@@Flow
+201039@@@Injured Dracthyr
+201065@@@Sonova Snowden
+201083@@@Spellsworn Crechebound
+201105@@@Kazzi
+201160@@@Morqut Fisher
+201173@@@Ebyssian
+201213@@@[DNT] Kill Credit
+201240@@@Volethi
+201490@@@Vengeful Research
+201517@@@Voraxian
+201564@@@Voraxian
+201789@@@Narn
+201840@@@Feral Frogduck
+201842@@@Lord Flappinsby
+201845@@@Enchanted Tuskling
+201849@@@Adinakon
+201858@@@Lyver
+201884@@@Yu'shor
+201888@@@Drakeula
+201889@@@Arctichnid
+201900@@@Kazzquack
+201901@@@Mothoroth
+201904@@@Blu'jaeden
+202123@@@Vengeful Research
+202398@@@Irontide Coin Counter
+202405@@@[DND] Kill Credit - Stormsunder Crater Circuit
+202406@@@[DND] Kill Credit - Morqut Ascent
+202407@@@[DND] Kill Credit - Aerie Chasm Cruise
+202408@@@[DND] Kill Credit - Southern Reach Route
+202409@@@[DND] Kill Credit - Caldera Coaster
+202410@@@[DND] Kill Credit - Forbidden Reach Ramble
+202440@@@Enok the Stinky
+202452@@@Malfunctioning Matrix
+202459@@@Kill Credit
+202484@@@Gilded Mechafrog
+202492@@@Lil' Algalon
+202493@@@Cozmos
+202494@@@Celastro
+202495@@@[DND] Kill Credit - Caldera of Menders
+202496@@@[DND] Kill Credit - Skyfox Den
+202497@@@[DND] Kill Credit - Fishing Hole
+202498@@@[DND] Kill Credit - The War Creche
+202499@@@[DND] Kill Credit - Stormsunder Crater
+202500@@@[DND] Kill Credit - Tempest Coast
+202560@@@Dragon Glyph
+202561@@@Dragon Glyph
+202562@@@Dragon Glyph
+202563@@@Dragon Glyph
+202564@@@Dragon Glyph
+202565@@@Dragon Glyph
+202566@@@Dragon Glyph
+202567@@@Dragon Glyph
+202585@@@Tracker Dragon Glyph
+202611@@@Tracker Dragon Glyph
+202614@@@Tracker Dragon Glyph
+202615@@@Tracker Dragon Glyph
+202616@@@Tracker Dragon Glyph
+202617@@@Tracker Dragon Glyph
+202619@@@Tracker Dragon Glyph
+202620@@@Tracker Dragon Glyph
+202725@@@Paper Zepplin
+202752@@@Emberthal
+202837@@@[DNT] Kill Credit

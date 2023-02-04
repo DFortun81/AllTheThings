@@ -2,6 +2,7 @@
 
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(SOURCELESS),
+	tier(DF_TIER, 0.7, {}),
 	tier(DF_TIER, 0.5, {}),
 	tier(DF_TIER),
 	tier(CLASSIC_TIER),

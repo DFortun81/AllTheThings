@@ -309,14 +309,12 @@ ach(1830),	-- 500 Emblems of Valor
 ach(1831),	-- 1000 Emblems of Valor
 ach(1861),	-- The Party's Over
 ach(2145),	-- What A Long, Strange Trip It's Been
-ach(2195),	-- Master of Strand of the Ancients
 ach(2216),	-- Most deadly Lich King dungeon boss
 ach(2217),	-- Most deadly Lich King 10-player raid boss
 ach(2218),	-- Most deadly Lich King 25-player raid boss
 ach(2219),	-- Total deaths in 5-player Heroic dungeons \\ Total deaths in 5-player heroic dungeons
 ach(2396),	-- Battleground played the most
 ach(2397),	-- Battleground won the most
-ach(2776),	-- Master of Wintergrasp
 ach(2797),	-- Noble Gardener
 ach(2896),	-- Emblem of Conquest
 ach(2897),	-- 25 Emblems of Conquest
@@ -886,7 +884,7 @@ ach(16425),	-- I'm a Template Character [DNT]
 10.0.0.45454
 ach(16520),	-- 10.0 Dragonflight - Expansion Quest Launch (Meet Wrathion/Ebyssian) \\ 10.0 Dragonflight - Expansion Quest Launch
 ach(16531),	-- A Whole Heap of Lunkers \\ A Whole Lot of Lunkers
-ach(16532),	-- Friends with Sabellian
+ach(16532),	-- True Friends with Sabellian \\ Friends with Sabellian
 ach(16533),	-- Lots of Lunkers \\ A Whole Lot of Lunkers
 ach(16536),	-- True Friends with Wrathion
 ach(16537),	-- Maximum Power!
@@ -934,3 +932,99 @@ ach(17312),	-- 10.0 Prologue - Storms - Dimmed Primeval Earth
 ach(17313),	-- 10.0 Prologue - Storms - Dimmed Primeval Storm
 ach(17338),	-- <Hidden> ACCOUNT: Veritistrasz Q2 Completed
 ach(17420),	-- Trial of Tyr Ineligible For Spark Skip [DNT]
+10.0.7.47910
+ach(17214),	-- Stormsunder Crater Circuit: Bronze
+ach(17215),	-- Stormsunder Crater Circuit: Silver
+ach(17216),	-- Stormsunder Crater Circuit: Gold
+ach(17217),	-- Stormsunder Crater Circuit Advanced: Bronze
+ach(17218),	-- Stormsunder Crater Circuit Advanced: Silver
+ach(17219),	-- Stormsunder Crater Circuit Advanced: Gold
+ach(17220),	-- Stormsunder Crater Circuit Reverse: Bronze
+ach(17221),	-- Stormsunder Crater Circuit Reverse: Silver
+ach(17222),	-- Stormsunder Crater Circuit Reverse: Gold
+ach(17223),	-- Morqut Ascent: Bronze
+ach(17224),	-- Morqut Ascent: Silver
+ach(17225),	-- Morqut Ascent: Gold
+ach(17237),	-- Morqut Ascent Advanced: Bronze
+ach(17238),	-- Morqut Ascent Advanced: Silver
+ach(17239),	-- Morqut Ascent Advanced: Gold
+ach(17240),	-- Morqut Ascent Reverse: Bronze
+ach(17241),	-- Morqut Ascent Reverse: Silver
+ach(17242),	-- Morqut Ascent Reverse: Gold
+ach(17243),	-- Aerie Chasm Cruise: Bronze
+ach(17244),	-- Aerie Chasm Cruise: Silver
+ach(17245),	-- Aerie Chasm Cruise: Gold
+ach(17246),	-- Aerie Chasm Cruise Advanced: Bronze
+ach(17247),	-- Aerie Chasm Cruise Advanced: Silver
+ach(17248),	-- Aerie Chasm Cruise Advanced: Gold
+ach(17249),	-- Aerie Chasm Cruise Reverse: Bronze
+ach(17250),	-- Aerie Chasm Cruise Reverse: Silver
+ach(17251),	-- Aerie Chasm Cruise Reverse: Gold
+ach(17252),	-- Southern Reach Route: Bronze
+ach(17253),	-- Southern Reach Route: Silver
+ach(17254),	-- Southern Reach Route: Gold
+ach(17255),	-- Southern Reach Route Advanced: Bronze
+ach(17256),	-- Southern Reach Route Advanced: Silver
+ach(17257),	-- Southern Reach Route Advanced: Gold
+ach(17258),	-- Southern Reach Route Reverse: Bronze
+ach(17259),	-- Southern Reach Route Reverse: Silver
+ach(17260),	-- Southern Reach Route Reverse: Gold
+ach(17261),	-- Caldera Coaster: Bronze
+ach(17262),	-- Caldera Coaster: Silver
+ach(17263),	-- Caldera Coaster: Gold
+ach(17264),	-- Caldera Coaster Advanced: Bronze
+ach(17265),	-- Caldera Coaster Advanced: Silver
+ach(17266),	-- Caldera Coaster Advanced: Gold
+ach(17267),	-- Caldera Coaster Reverse: Bronze
+ach(17268),	-- Caldera Coaster Reverse: Silver
+ach(17269),	-- Caldera Coaster Reverse: Gold
+ach(17270),	-- Forbidden Reach Ramble: Bronze
+ach(17271),	-- Forbidden Reach Ramble: Silver
+ach(17272),	-- Forbidden Reach Ramble: Gold
+ach(17273),	-- Forbidden Reach Ramble Advanced: Bronze
+ach(17274),	-- Forbidden Reach Ramble Advanced: Silver
+ach(17275),	-- Forbidden Reach Ramble Advanced: Gold
+ach(17276),	-- Forbidden Reach Ramble Reverse: Bronze
+ach(17277),	-- Forbidden Reach Ramble Reverse: Silver
+ach(17278),	-- Forbidden Reach Ramble Reverse: Gold
+ach(17279),	-- Forbidden Reach: Bronze
+ach(17280),	-- Forbidden Reach: Silver
+ach(17281),	-- Forbidden Reach: Gold
+ach(17284),	-- Forbidden Reach Advanced: Bronze
+ach(17286),	-- Forbidden Reach Advanced: Silver
+ach(17287),	-- Forbidden Reach Advanced: Gold
+ach(17288),	-- Forbidden Reach Reverse: Bronze
+ach(17289),	-- Forbidden Reach Reverse: Silver
+ach(17290),	-- Forbidden Reach Reverse: Gold
+ach(17294),	-- Forbidden Reach Racing Completionist
+ach(17296),	-- Forbidden Reach Racing Completionist: Silver
+ach(17298),	-- Forbidden Reach Racing Completionist: Gold
+ach(17306),	-- <DNT> Winterpelt Furbolg - 1 - Friendly
+ach(17307),	-- <DNT> Winterpelt Furbolg - 1 - Honored
+ach(17308),	-- <DNT> Winterpelt Furbolg - 1 - Revered
+ach(17309),	-- <DNT> Winterpelt Furbolg - 1 - Exalted
+ach(17315),	-- While We Were Sleeping
+ach(17322),	-- <DNT> Hearthfire Fellowship Rank 1
+ach(17323),	-- <DNT> Hearthfire Fellowship Rank 2
+ach(17324),	-- <DNT> Hearthfire Fellowship Rank 3
+ach(17325),	-- <DNT> Hearthfire Fellowship Rank 4
+ach(17366),	-- Relics of a Fallen Empire
+ach(17367),	-- Deadliest Cache
+ach(17397),	-- Door To Door
+ach(17398),	-- Dragon Glyphs: Northwind Point
+ach(17399),	-- Dragon Glyphs: Talon's Watch
+ach(17400),	-- Dragon Glyphs: Fragstone Vault
+ach(17401),	-- Dragon Glyphs: Dragonskull Island
+ach(17402),	-- Dragon Glyphs: Stormsunder Mountain
+ach(17403),	-- Dragon Glyphs: War Creche
+ach(17404),	-- Dragon Glyphs: Talonlord's Perch
+ach(17405),	-- Dragon Glyphs: Caldera of the Menders
+ach(17406),	-- Battle on the Dragon Isles II
+ach(17409),	-- <Hidden> ACCOUNT: Treasure Room Local Quest Completed
+ach(17410),	-- Craftsman of the Zandalar Tribe
+ach(17411),	-- Forbidden Reach Glyph Hunter
+ach(17412),	-- Craftsman of the Argent Dawn
+ach(17413),	-- Door Buster
+ach(17422),	-- <DNT> Artisan's Consortium Reputation is Preferred (Rank 1)
+ach(17423),	-- <DNT> Artisan's Consortium Reputation is Respected (Rank 2)
+ach(17424),	-- <DNT> Artisan's Consortium Reputation is Valued (Rank 3)

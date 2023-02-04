@@ -612,3 +612,6 @@
 482@@@Crimson Legend %s
 490@@@Reverse Racer %s
 492@@@Skyscourge %s
+10.0.7.47910
+489@@@Forbidden Reach Racer %s
+494@@@%s the Key Master

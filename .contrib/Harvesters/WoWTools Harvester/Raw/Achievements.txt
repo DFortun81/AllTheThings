@@ -11342,3 +11342,100 @@
 17343@@@Drop It Like It's Hot
 17345@@@Airborne Tumbler
 17420@@@Trial of Tyr Ineligible For Spark Skip [DNT]
+10.0.7.47910
+16532@@@True Friends with Sabellian
+17214@@@Stormsunder Crater Circuit: Bronze
+17215@@@Stormsunder Crater Circuit: Silver
+17216@@@Stormsunder Crater Circuit: Gold
+17217@@@Stormsunder Crater Circuit Advanced: Bronze
+17218@@@Stormsunder Crater Circuit Advanced: Silver
+17219@@@Stormsunder Crater Circuit Advanced: Gold
+17220@@@Stormsunder Crater Circuit Reverse: Bronze
+17221@@@Stormsunder Crater Circuit Reverse: Silver
+17222@@@Stormsunder Crater Circuit Reverse: Gold
+17223@@@Morqut Ascent: Bronze
+17224@@@Morqut Ascent: Silver
+17225@@@Morqut Ascent: Gold
+17237@@@Morqut Ascent Advanced: Bronze
+17238@@@Morqut Ascent Advanced: Silver
+17239@@@Morqut Ascent Advanced: Gold
+17240@@@Morqut Ascent Reverse: Bronze
+17241@@@Morqut Ascent Reverse: Silver
+17242@@@Morqut Ascent Reverse: Gold
+17243@@@Aerie Chasm Cruise: Bronze
+17244@@@Aerie Chasm Cruise: Silver
+17245@@@Aerie Chasm Cruise: Gold
+17246@@@Aerie Chasm Cruise Advanced: Bronze
+17247@@@Aerie Chasm Cruise Advanced: Silver
+17248@@@Aerie Chasm Cruise Advanced: Gold
+17249@@@Aerie Chasm Cruise Reverse: Bronze
+17250@@@Aerie Chasm Cruise Reverse: Silver
+17251@@@Aerie Chasm Cruise Reverse: Gold
+17252@@@Southern Reach Route: Bronze
+17253@@@Southern Reach Route: Silver
+17254@@@Southern Reach Route: Gold
+17255@@@Southern Reach Route Advanced: Bronze
+17256@@@Southern Reach Route Advanced: Silver
+17257@@@Southern Reach Route Advanced: Gold
+17258@@@Southern Reach Route Reverse: Bronze
+17259@@@Southern Reach Route Reverse: Silver
+17260@@@Southern Reach Route Reverse: Gold
+17261@@@Caldera Coaster: Bronze
+17262@@@Caldera Coaster: Silver
+17263@@@Caldera Coaster: Gold
+17264@@@Caldera Coaster Advanced: Bronze
+17265@@@Caldera Coaster Advanced: Silver
+17266@@@Caldera Coaster Advanced: Gold
+17267@@@Caldera Coaster Reverse: Bronze
+17268@@@Caldera Coaster Reverse: Silver
+17269@@@Caldera Coaster Reverse: Gold
+17270@@@Forbidden Reach Ramble: Bronze
+17271@@@Forbidden Reach Ramble: Silver
+17272@@@Forbidden Reach Ramble: Gold
+17273@@@Forbidden Reach Ramble Advanced: Bronze
+17274@@@Forbidden Reach Ramble Advanced: Silver
+17275@@@Forbidden Reach Ramble Advanced: Gold
+17276@@@Forbidden Reach Ramble Reverse: Bronze
+17277@@@Forbidden Reach Ramble Reverse: Silver
+17278@@@Forbidden Reach Ramble Reverse: Gold
+17279@@@Forbidden Reach: Bronze
+17280@@@Forbidden Reach: Silver
+17281@@@Forbidden Reach: Gold
+17284@@@Forbidden Reach Advanced: Bronze
+17286@@@Forbidden Reach Advanced: Silver
+17287@@@Forbidden Reach Advanced: Gold
+17288@@@Forbidden Reach Reverse: Bronze
+17289@@@Forbidden Reach Reverse: Silver
+17290@@@Forbidden Reach Reverse: Gold
+17294@@@Forbidden Reach Racing Completionist
+17296@@@Forbidden Reach Racing Completionist: Silver
+17298@@@Forbidden Reach Racing Completionist: Gold
+17306@@@<DNT> Winterpelt Furbolg - 1 - Friendly
+17307@@@<DNT> Winterpelt Furbolg - 1 - Honored
+17308@@@<DNT> Winterpelt Furbolg - 1 - Revered
+17309@@@<DNT> Winterpelt Furbolg - 1 - Exalted
+17315@@@While We Were Sleeping
+17322@@@<DNT> Hearthfire Fellowship Rank 1
+17323@@@<DNT> Hearthfire Fellowship Rank 2
+17324@@@<DNT> Hearthfire Fellowship Rank 3
+17325@@@<DNT> Hearthfire Fellowship Rank 4
+17366@@@Relics of a Fallen Empire
+17367@@@Deadliest Cache
+17397@@@Door To Door
+17398@@@Dragon Glyphs: Northwind Point
+17399@@@Dragon Glyphs: Talon's Watch
+17400@@@Dragon Glyphs: Fragstone Vault
+17401@@@Dragon Glyphs: Dragonskull Island
+17402@@@Dragon Glyphs: Stormsunder Mountain
+17403@@@Dragon Glyphs: War Creche
+17404@@@Dragon Glyphs: Talonlord's Perch
+17405@@@Dragon Glyphs: Caldera of the Menders
+17406@@@Battle on the Dragon Isles II
+17409@@@<Hidden> ACCOUNT: Treasure Room Local Quest Completed
+17410@@@Craftsman of the Zandalar Tribe
+17411@@@Forbidden Reach Glyph Hunter
+17412@@@Craftsman of the Argent Dawn
+17413@@@Door Buster
+17422@@@<DNT> Artisan's Consortium Reputation is Preferred (Rank 1)
+17423@@@<DNT> Artisan's Consortium Reputation is Respected (Rank 2)
+17424@@@<DNT> Artisan's Consortium Reputation is Valued (Rank 3)

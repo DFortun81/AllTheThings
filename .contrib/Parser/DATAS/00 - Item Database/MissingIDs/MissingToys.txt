@@ -3,6 +3,19 @@ i(163017),	-- Pitch-Soaked Torch
 i(163073),	-- Conch of Wa'mundi
 9.0.1.35679
 i(177665),	-- Spectral Handkerchief \\ Spectral Hankerchief
+10.0.7.47910
+i(199900),	-- Secondhand Survey Tools
+i(202253),	-- Primal Stave of Claw and Fur
+i(202283),	-- Reading Glasses
+i(202360),	-- Dented Can
+i(203725),	-- 
+i(203734),	-- Snow Blanket
+i(203757),	-- Brazier of Madness
+i(204170),	-- 
+i(204220),	-- Hraxian's Unbreakable Will
+i(204256),	-- Holoviewer: The Scarlet Queen
+i(204257),	-- Holoviewer: The Lady of Dreams
+i(204262),	-- Holoviewer: The Timeless One
 
 
 
@@ -14,3 +27,16 @@ i(163213),	-- Ghostly Explorer's Skull
 8.0.1.26788
 i(163017),	-- Pitch-Soaked Torch
 i(163073),	-- Conch of Wa'mundi
+10.0.7.47910
+i(199900),	-- Secondhand Survey Tools
+i(202253),	-- Primal Stave of Claw and Fur
+i(202283),	-- Reading Glasses
+i(202360),	-- Dented Can
+i(203725),	-- 
+i(203734),	-- Snow Blanket
+i(203757),	-- Brazier of Madness
+i(204170),	-- 
+i(204220),	-- Hraxian's Unbreakable Will
+i(204256),	-- Holoviewer: The Scarlet Queen
+i(204257),	-- Holoviewer: The Lady of Dreams
+i(204262),	-- Holoviewer: The Timeless One

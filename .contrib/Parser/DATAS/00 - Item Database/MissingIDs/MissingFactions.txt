@@ -630,3 +630,5 @@ faction(2553),	-- Timewalkers
 10.0.0.45141
 faction(2554),	-- Clan Toghus
 faction(2555),	-- Clan Kaighan
+10.0.7.47910
+faction(2557),	-- Hearthfire Fellowship

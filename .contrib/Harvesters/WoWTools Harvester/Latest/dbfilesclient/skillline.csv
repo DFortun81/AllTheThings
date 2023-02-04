@@ -1,0 +1,359 @@
+DisplayName_lang,AlternateVerb_lang,Description_lang,HordeDisplayName_lang,NeutralDisplayName,ID,CategoryID,SpellIconFileID,CanLink,ParentSkillLineID,ParentTierIndex,Flags,SpellBookSpellID,ExpansionNameSharedStringID,HordeExpansionNameSharedStringID
+Swords,,Higher weapon skill increases your chance to hit.,,,43,6,136243,0,0,0,128,0,0,0
+Axes,,Higher weapon skill increases your chance to hit.,,,44,6,136243,0,0,0,128,0,0,0
+Bows,,Higher weapon skill increases your chance to hit.,,,45,6,136243,0,0,0,128,0,0,0
+Guns,,Higher weapon skill increases your chance to hit.,,,46,6,136243,0,0,0,128,0,0,0
+Maces,,Higher weapon skill increases your chance to hit.,,,54,6,136243,0,0,0,128,0,0,0
+Two-Handed Swords,,Higher weapon skill increases your chance to hit.,,,55,6,136243,0,0,0,128,0,0,0
+Defense,,"Higher defense improves your chance to dodge, parry, and block attacks, makes you harder to hit,  and makes monsters less likely to land a critical strike against you.",,,95,6,136243,0,0,0,640,0,0,0
+Language: Common,,,,,98,10,136243,0,0,0,128,0,0,0
+Racial - Dwarf,,Racial - Dwarf,,,101,9,136243,0,0,0,33938,0,0,0
+Language: Orcish,,,,,109,10,136243,0,0,0,128,0,0,0
+Language: Dwarven,,,,,111,10,136243,0,0,0,128,0,0,0
+Language: Darnassian,,,,,113,10,136243,0,0,0,128,0,0,0
+Language: Taurahe,,,,,115,10,136243,0,0,0,128,0,0,0
+Dual Wield,,Dual Wield,,,118,6,136243,0,0,0,146,0,0,0
+Racial - Tauren,,Racial - Tauren,,,124,9,136243,0,0,0,33938,0,0,0
+Racial - Orc,,Racial - Orc,,,125,9,136243,0,0,0,32914,0,0,0
+Racial - Night Elf,,Racial - Night Elf,,,126,9,136243,0,0,0,33938,0,0,0
+Staves,,Higher weapon skill increases your chance to hit.,,,136,6,136243,0,0,0,128,0,0,0
+Language: Thalassian,,,,,137,10,136243,0,0,0,128,0,0,0
+Language: Draconic,,,,,138,10,136243,0,0,0,128,0,0,0
+Language: Demon Tongue,,The twisted language of demons.,,,139,10,236293,0,0,0,128,0,0,0
+Language: Titan,,,,,140,10,136243,0,0,0,128,0,0,0
+Language: Old Tongue,,,,,141,10,136243,0,0,0,128,0,0,0
+Survival,,,,,142,9,136243,0,0,0,0,0,0,0
+Horse Riding,,,,,148,9,136243,0,0,0,1170,0,0,0
+Wolf Riding,,,,,149,9,136243,0,0,0,1170,0,0,0
+Tiger Riding,,,,,150,9,136243,0,0,0,1170,0,0,0
+Ram Riding,,,,,152,9,136243,0,0,0,1170,0,0,0
+Swimming,,,,,155,9,136243,0,0,0,0,0,0,0
+Two-Handed Maces,,Higher weapon skill increases your chance to hit.,,,160,6,136243,0,0,0,128,0,0,0
+Unarmed,,Higher skill increases your chance to hit.,,,162,6,136243,0,0,0,128,0,0,0
+Blacksmithing,Modify,Higher smithing skill allows you to learn higher level smithing plans.  Blacksmithing plans can be found on trainers around the world as well as from quests and monsters.,,,164,11,4620670,1,0,0,4224,2018,0,0
+Leatherworking,Emboss,Higher leatherworking skill allows you to learn higher level leatherworking patterns.  Leatherworking patterns can be found on trainers around the world as well as from quests and monsters.,,,165,11,4620678,1,0,0,4224,2108,0,0
+Alchemy,Refill,Higher alchemy skill allows you to learn higher level alchemy recipes.  Alchemy recipes can be found on trainers around the world as well as from quests and monsters.,,,171,11,4620669,1,0,0,4224,2259,0,0
+Two-Handed Axes,,Higher weapon skill increases your chance to hit.,,,172,6,136243,0,0,0,128,0,0,0
+Daggers,,Higher weapon skill increases your chance to hit.,,,173,6,136243,0,0,0,128,0,0,0
+Herbalism,,"Higher herbalism skill allows you to harvest more difficult herbs around the world.  If you cannot harvest a specific herb, then increase your skill by harvesting easier to gather herbs in lower level areas.",,,182,11,4620675,0,0,0,4224,2366,0,0
+GENERIC (DND),,General skills.,,,183,12,136243,0,0,0,1170,0,0,0
+Cooking,,Higher cooking skill allows you to learn higher level cooking recipes.  Recipes can be found on trainers around the world as well as from quests and as drops from monsters.,,,185,9,4620671,1,0,0,128,2550,0,0
+Mining,,"Higher mining skill allows you to harvest more difficult minerals nodes around the world.  If you cannot harvest a specific mineral, then increase your skill by mining easier to mine minerals in lower level areas.",,,186,11,4620679,0,0,0,4224,2575,0,0
+Pet - Imp,,,,,188,7,136243,0,0,0,0,0,0,0
+Pet - Felhunter,,,,,189,7,136243,0,0,0,0,0,0,0
+Tailoring,Embroider,Higher tailoring skill allows you to learn higher level tailoring patterns.  Tailoring patterns can be found on trainers around the world as well as from quests and monsters.,,,197,11,4620681,1,0,0,4224,3908,0,0
+Engineering,Tinker,Higher engineering skill allows you to learn higher level engineering schematics.  Schematics can be found on trainers around the world as well as from quests and monsters.,,,202,11,4620673,1,0,0,4224,4036,0,0
+Pet - Spider,,,,,203,7,136243,0,0,0,0,0,0,0
+Pet - Voidwalker,,,,,204,7,136221,0,0,0,0,0,0,0
+Pet - Succubus,,,,,205,7,136243,0,0,0,0,0,0,0
+Pet - Infernal,,,,,206,7,136243,0,0,0,0,0,0,0
+Pet - Doomguard,,Doomguard,,,207,7,136243,0,0,0,0,0,0,0
+Pet - Wolf,,,,,208,7,136243,0,0,0,0,0,0,0
+Pet - Cat,,,,,209,7,136243,0,0,0,0,0,0,0
+Pet - Bear,,,,,210,7,136243,0,0,0,0,0,0,0
+Pet - Boar,,,,,211,7,136243,0,0,0,0,0,0,0
+Pet - Crocolisk,,,,,212,7,136243,0,0,0,0,0,0,0
+Pet - Carrion Bird,,,,,213,7,136243,0,0,0,0,0,0,0
+Pet - Crab,,,,,214,7,136243,0,0,0,0,0,0,0
+Pet - Gorilla,,,,,215,7,136243,0,0,0,0,0,0,0
+Pet - Raptor,,,,,217,7,136243,0,0,0,0,0,0,0
+Pet - Tallstrider,,,,,218,7,136243,0,0,0,0,0,0,0
+Racial - Undead,,Racial - Undead,,,220,9,136243,0,0,0,33938,0,0,0
+Crossbows,,Higher weapon skill increases your chance to hit.,,,226,6,136243,0,0,0,128,0,0,0
+Wands,,Higher weapon skill increases your chance to hit.,,,228,6,136243,0,0,0,146,0,0,0
+Polearms,,Higher weapon skill increases your chance to hit.,,,229,6,136243,0,0,0,128,0,0,0
+Pet - Scorpid,,,,,236,7,136243,0,0,0,0,0,0,0
+Pet - Turtle,,,,,251,7,136243,0,0,0,0,0,0,0
+Pet - Generic Hunter,,,,,270,7,136243,0,0,0,0,0,0,0
+Plate Mail,,Allows the wearing of plate armor.,,,293,8,136243,0,0,0,128,0,0,0
+Language: Gnomish,,,,,313,10,136243,0,0,0,128,0,0,0
+Language: Troll,,,,,315,10,136243,0,0,0,128,0,0,0
+Enchanting,Enchant,Higher enchanting skill allows you to learn more powerful formulae.  Formulae can be found on trainers around the world as well as from quests and monsters.,,,333,11,4620672,1,0,0,4224,7411,0,0
+Fishing,,"Higher fishing skill increases your chance of catching fish in bodies of water around the world.  If you are having trouble catching fish in a given area, move to a lower level area or purchase a fishing lure and try again.",,,356,9,4620674,0,0,0,16512,271616,0,0
+Skinning,,Higher skinning skill allows you to skin hides from higher level monsters around the world.,,,393,11,4620680,0,0,0,4224,8613,0,0
+Mail,,Allows the wearing of mail armor.,,,413,8,136243,0,0,0,128,0,0,0
+Leather,,Allows the wearing of leather armor.,,,414,8,136243,0,0,0,128,0,0,0
+Cloth,,Allows the wearing of cloth armor.,,,415,8,136243,0,0,0,128,0,0,0
+Shield,,Allows the use of shields.,,,433,8,136243,0,0,0,128,0,0,0
+Fist Weapons,,Allows for the use of fist weapons.  Chance to hit is determined by the Unarmed skill.,,,473,6,136243,0,0,0,130,0,0,0
+Raptor Riding,,,,,533,9,136243,0,0,0,1170,0,0,0
+Mechanostrider Piloting,,,,,553,9,136243,0,0,0,1170,0,0,0
+Undead Horsemanship,,,,,554,9,136243,0,0,0,1170,0,0,0
+Pet - Bat,,,,,653,7,136243,0,0,0,0,0,0,0
+Pet - Hyena,,,,,654,7,136243,0,0,0,0,0,0,0
+Pet - Bird of Prey,,,,,655,7,136243,0,0,0,0,0,0,0
+Pet - Wind Serpent,,,,,656,7,136243,0,0,0,0,0,0,0
+Language: Forsaken,,,,,673,10,136243,0,0,0,128,0,0,0
+Kodo Riding,,,,,713,9,135997,0,0,0,1170,0,0,0
+Racial - Troll,,Racial - Troll,,,733,9,0,0,0,0,33938,0,0,0
+Racial - Gnome,,Racial - Gnome,,,753,9,0,0,0,0,33938,0,0,0
+Racial - Human,,Racial - Human,,,754,9,0,0,0,0,33938,0,0,0
+Jewelcrafting,Modify,Higher jewelcrafting skill allows you to learn higher level jewelcrafting plans.  Jewelcrafting plans can be found on trainers around the world as well as from quests and monsters.,,,755,11,4620677,1,0,0,4224,25229,0,0
+Racial - Blood Elf,,Racial - Blood Elf,,,756,9,0,0,0,0,32914,0,0,0
+Pet - Event - Remote Control,,,,,758,12,0,0,0,0,0,0,0,0
+Language: Draenei,,,,,759,10,0,0,0,0,128,0,0,0
+Racial - Draenei,,Racial - Draenei,,,760,9,0,0,0,0,32914,0,0,0
+Pet - Felguard,,,,,761,7,0,0,0,0,0,0,0,0
+Riding,,Higher riding skill allows you to ride faster and more exotic beasts.,,,762,9,132164,0,0,0,16,0,0,0
+Pet - Dragonhawk,,,,,763,7,132172,0,0,0,0,0,0,0
+Pet - Nether Ray,,,,,764,7,132182,0,0,0,0,0,0,0
+Pet - Sporebat,,,,,765,7,134523,0,0,0,0,0,0,0
+Pet - Warp Stalker,,,,,766,7,135731,0,0,0,0,0,0,0
+Pet - Ravager,,,,,767,7,132195,0,0,0,0,0,0,0
+Pet - Serpent,,,,,768,7,135461,0,0,0,0,0,0,0
+Internal,,Hi,,,769,7,135724,0,0,0,1040,0,0,0
+Inscription,Inscribe,Higher inscription skill allows you to learn more advanced inscriptions.  Inscriptions are acquired from learned scribes throughout the world.,,,773,11,4620676,1,0,0,4224,45357,0,0
+Pet - Moth,,,,,775,7,0,0,0,0,0,0,0,0
+Mounts,,Your mounts.,,,777,7,132167,0,0,0,2,0,0,0
+Companions,,Your companions.,,,778,7,0,0,0,0,2,0,0,0
+Pet - Exotic Chimaera,,,,,780,7,0,0,0,0,0,0,0,0
+Pet - Exotic Devilsaur,,,,,781,7,0,0,0,0,0,0,0,0
+Pet - Ghoul,,,,,782,7,136119,0,0,0,0,0,0,0
+Pet - Exotic Aqiri,,,,,783,7,0,0,0,0,0,0,0,0
+Pet - Exotic Worm,,,,,784,7,0,0,0,0,0,0,0,0
+Pet - Wasp,,Pet - Wasp,,,785,7,0,0,0,0,0,0,0,0
+Pet - Exotic Clefthoof,,,,,786,7,1044794,0,0,0,0,0,0,0
+Pet - Exotic Core Hound,,,,,787,7,0,0,0,0,0,0,0,0
+Pet - Exotic Spirit Beast,,,,,788,7,0,0,0,0,0,0,0,0
+Racial - Worgen,,Racial - Worgen,,,789,9,136243,0,0,0,42130,0,0,0
+Racial - Goblin,,Racial - Goblin,,,790,9,0,0,0,0,42130,0,0,0
+Language: Gilnean,,,,,791,10,136243,0,0,0,128,0,0,0
+Language: Goblin,,,,,792,10,136243,0,0,0,128,0,0,0
+Archaeology,,Higher archaeology skill allows you to complete more valuable artifacts and collect more artifact fragments. Fragments can be found in ruins and dig sites.,,,794,9,441139,0,0,0,128,0,0,0
+Hunter,,Hunter skills.,,,795,7,626000,0,0,0,1048,0,0,0
+Death Knight,,Death Knight skills.,,,796,7,625998,0,0,0,1048,0,0,0
+Druid,,Druid skills.,,,798,7,625999,0,0,0,1048,0,0,0
+Paladin,,Paladin skills.,,,800,7,626003,0,0,0,1048,0,0,0
+Priest,,Priest skills.,,,804,7,626004,0,0,0,1048,0,0,0
+Pet - Water Elemental,,,,,805,7,0,0,0,0,0,0,0,0
+Pet - Fox,,,,,808,7,0,0,0,0,0,0,0,0
+All - Glyphs,,Glyphs go here!,,,810,12,254290,0,0,0,130,0,0,0
+Pet - Hound,,,,,811,7,0,0,0,0,0,0,0,0
+Pet - Monkey,,,,,815,5,0,0,0,0,0,0,0,0
+Pet - Exotic Shale Beast,,,,,817,7,877478,0,0,0,0,0,0,0
+Beetle,,,,,818,7,0,0,0,0,0,0,0,0
+All - Guild Perks,,,,,821,5,0,0,0,0,2,0,0,0
+Pet - Hydra,,,,,824,7,463493,0,0,0,0,0,0,0
+Monk,,Monk skills.,,,829,7,626002,0,0,0,1048,0,0,0
+Warrior,,Warrior skills.,,,840,7,626008,0,0,0,1048,0,0,0
+Warlock,,Warlock skills.,,,849,7,626007,0,0,0,1052,0,0,0
+Racial - Pandaren,,Racial - Pandaren,,,899,5,0,0,0,0,32914,0,0,0
+Mage,,Mage skills.,,,904,7,626001,0,0,0,1048,0,0,0
+Language: Pandaren Neutral,,,,,905,10,136243,0,0,0,0,0,0,0
+Rogue,,Rogue skills.,,,921,7,626005,0,0,0,1048,0,0,0
+Shaman,,Shaman skills.,,,924,7,626006,0,0,0,1048,0,0,0
+Fel Imp,,,,,927,7,460856,0,0,0,0,0,0,0
+Voidlord,,,,,928,5,538447,0,0,0,0,0,0,0
+Shivarra,,,,,929,5,574999,0,0,0,0,0,0,0
+Observer,,,,,930,5,538445,0,0,0,0,0,0,0
+Wrathguard,,,,,931,5,462730,0,0,0,0,0,0,0
+All - Specializations,,Misc specialization handling spells go here.,,,934,12,0,0,0,0,0,0,0,0
+Runeforging,Engrave,,,,960,7,237523,0,0,0,128,0,0,0
+Pet - Primal Fire Elemental,,,,,962,7,0,0,0,0,0,0,0,0
+Pet - Primal Earth Elemental,,,,,963,7,0,0,0,0,0,0,0,0
+Way of the Grill,,,,,975,9,0,1,2544,0,32,0,0,0
+Way of the Wok,,,,,976,9,0,1,2544,0,32,0,0,0
+Way of the Pot,,,,,977,9,0,1,2544,0,32,0,0,0
+Way of the Steamer,,,,,978,9,0,1,2544,0,32,0,0,0
+Way of the Oven,,,,,979,9,0,1,2544,0,32,0,0,0
+Way of the Brew,,,,,980,9,0,1,2544,0,32,0,0,0
+Apprentice Cooking,,,,,981,12,0,1,185,0,0,0,0,0
+Journeyman Cookbook,,,,,982,27,0,1,185,0,0,0,0,0
+Pet - Rodent,,Pet - Rodent,,,983,7,134172,0,0,0,0,0,0,0
+Pet - Crane,,,,,984,7,606543,0,0,0,0,0,0,0
+Pet - Water Strider,,,,,985,7,132844,0,0,0,0,0,0,0
+Pet - Exotic Stone Hound,,,,,986,7,625905,0,0,0,0,0,0,0
+Pet - Gruffhorn,,,,,987,7,132248,0,0,0,0,0,0,0
+Pet - Basilisk,,,,,988,7,0,0,0,0,0,0,0,0
+NO PLAYERS,,,,,999,12,0,0,0,0,0,0,0,0
+Pet - Direhorn,,,,,1305,7,791593,0,0,0,0,0,0,0
+Pet - Primal Storm Elemental,,Pet - Primal Storm Elemental,,,1748,7,0,0,0,0,0,0,0,0
+Pet - Water Elemental Minor Talent Version,,Minor Talent Water Elemental,,,1777,7,0,0,0,0,0,0,0,0
+Pet - Riverbeast,,,,,1819,7,294471,0,0,0,0,0,0,0
+Unused,Enchant,Enchanting from the garrison.,,,1830,12,132853,0,0,0,6,0,0,0
+Demon Hunter,,Demon Hunter skills.,,,1848,7,1260827,0,0,0,1048,0,0,0
+Logging,,"Higher logging skill allows you to harvest more difficult timber around the Draenor. If you cannot harvest specific timber, then increase your skill by upgrading your Lumber Mill.",,,1945,9,975739,0,0,0,128,0,0,0
+Pet - Terrorguard,,Terrorguard,,,1981,7,136243,0,0,0,0,0,0,0
+Pet - Abyssal,,Abyssal,,,1982,7,136243,0,0,0,0,0,0,0
+Pet - Stag,,,,,1993,7,1044501,0,0,0,0,0,0,0
+Trading Post,,Progress towards having a full set.,,,2000,12,975746,0,0,0,2,0,0,0
+Warglaives,,Allows the use of warglaives.,,,2152,6,135561,0,0,0,128,0,0,0
+Pet - Mechanical,,Mechanical Hunter Pet,,,2189,7,136243,0,0,0,0,0,0,0
+Pet - Abomination,,Death Knight Unholy Talent Pet,,,2216,7,298667,0,0,0,0,0,0,0
+Pet - Oxen,,Oxen,,,2279,7,132248,0,0,0,0,0,0,0
+Pet - Scalehide,,Scalehide,,,2280,7,132248,0,0,0,0,0,0,0
+Pet - Feathermane,,Pet - Feathermane,,,2361,7,929300,0,0,0,0,0,0,0
+Racial - Nightborne,,Racial - Nightborne,,,2419,9,136243,0,0,0,33938,0,0,0
+Racial - Highmountain Tauren,,Racial - Highmountain Tauren,,,2420,9,136243,0,0,0,33938,0,0,0
+Racial - Lightforged Draenei,,Racial - Lightforged Draenei,,,2421,9,0,0,0,0,32914,0,0,0
+Racial - Void Elf,,Racial - Void Elf,,,2423,9,136243,0,0,0,33938,0,0,0
+Kul Tiran Blacksmithing,,,Zandalari Blacksmithing,Battle for Azeroth Blacksmithing,2437,11,4620670,0,164,11,0,0,960,963
+Legion Blacksmithing,,,,,2454,11,4620670,0,164,10,0,0,959,0
+Language: Shalassian,,,,,2464,10,136243,0,0,0,128,0,0,0
+Language: Thalassian,,,,,2465,10,136243,0,0,0,128,0,0,0
+Draenor Blacksmithing,,,,,2472,11,4620670,0,164,9,0,0,958,0
+Pandaria Blacksmithing,,,,,2473,11,4620670,0,164,8,0,0,957,0
+Cataclysm Blacksmithing,,,,,2474,11,4620670,0,164,7,0,0,956,0
+Northrend Blacksmithing,,,,,2475,11,4620670,0,164,6,0,0,955,0
+Outland Blacksmithing,,,,,2476,11,4620670,0,164,5,0,0,954,0
+Classic Blacksmithing,,,,,2477,11,4620670,0,164,4,0,0,953,0
+Kul Tiran Alchemy,,,Zandalari Alchemy,Battle for Azeroth Alchemy,2478,11,4620669,0,171,11,0,0,960,963
+Legion Alchemy,,,,,2479,11,4620669,0,171,10,0,0,959,0
+Draenor Alchemy,,,,,2480,11,4620669,0,171,9,0,0,958,0
+Pandaria Alchemy,,,,,2481,11,4620669,0,171,8,0,0,957,0
+Cataclysm Alchemy,,,,,2482,11,4620669,0,171,7,0,0,956,0
+Northrend Alchemy,,,,,2483,11,4620669,0,171,6,0,0,955,0
+Outland Alchemy,,,,,2484,11,4620669,0,171,5,0,0,954,0
+Classic Alchemy,,,,,2485,11,4620669,0,171,4,0,0,953,0
+Kul Tiran Enchanting,,,Zandalari Enchanting,Battle for Azeroth Enchanting,2486,11,4620672,0,333,11,0,0,960,963
+Legion Enchanting,,,,,2487,11,4620672,0,333,10,0,0,959,0
+Draenor Enchanting,,,,,2488,11,4620672,0,333,9,0,0,958,0
+Pandaria Enchanting,,,,,2489,11,4620672,0,333,8,0,0,957,0
+Cataclysm Enchanting,,,,,2491,11,4620672,0,333,7,0,0,956,0
+Northrend Enchanting,,,,,2492,11,4620672,0,333,6,0,0,955,0
+Outland Enchanting,,,,,2493,11,4620672,0,333,5,0,0,954,0
+Classic Enchanting,,,,,2494,11,4620672,0,333,4,0,0,953,0
+Kul Tiran Engineering,,,Zandalari Engineering,Battle for Azeroth Engineering,2499,11,4620673,0,202,11,0,0,960,963
+Legion Engineering,,,,,2500,11,4620673,0,202,10,0,0,959,0
+Draenor Engineering,,,,,2501,11,4620673,0,202,9,0,0,958,0
+Pandaria Engineering,,,,,2502,11,4620673,0,202,8,0,0,957,0
+Cataclysm Engineering,,,,,2503,11,4620673,0,202,7,0,0,956,0
+Northrend Engineering,,,,,2504,11,4620673,0,202,6,0,0,955,0
+Outland Engineering,,,,,2505,11,4620673,0,202,5,0,0,954,0
+Classic Engineering,,,,,2506,11,4620673,0,202,4,0,0,953,0
+Kul Tiran Inscription,,,Zandalari Inscription,Battle for Azeroth Inscription,2507,11,4620676,0,773,11,0,0,960,963
+Legion Inscription,,,,,2508,11,4620676,0,773,10,0,0,959,0
+Draenor Inscription,,,,,2509,11,4620676,0,773,9,0,0,958,0
+Pandaria Inscription,,,,,2510,11,4620676,0,773,8,0,0,957,0
+Cataclysm Inscription,,,,,2511,11,4620676,0,773,7,0,0,956,0
+Northrend Inscription,,,,,2512,11,4620676,0,773,6,0,0,955,0
+Outland Inscription,,,,,2513,11,4620676,0,773,5,0,0,954,0
+Classic Inscription,,,,,2514,11,4620676,0,773,4,0,0,953,0
+Kul Tiran Jewelcrafting,,,Zandalari Jewelcrafting,Battle for Azeroth Jewelcrafting,2517,11,4620677,0,755,11,0,0,960,963
+Legion Jewelcrafting,,,,,2518,11,4620677,0,755,10,0,0,959,0
+Draenor Jewelcrafting,,,,,2519,11,4620677,0,755,9,0,0,958,0
+Pandaria Jewelcrafting,,,,,2520,11,4620677,0,755,8,0,0,957,0
+Cataclysm Jewelcrafting,,,,,2521,11,4620677,0,755,7,0,0,956,0
+Northrend Jewelcrafting,,,,,2522,11,4620677,0,755,6,0,0,955,0
+Outland Jewelcrafting,,,,,2523,11,4620677,0,755,5,0,0,954,0
+Classic Jewelcrafting,,,,,2524,11,4620677,0,755,4,0,0,953,0
+Kul Tiran Leatherworking,,,Zandalari Leatherworking,Battle for Azeroth Leatherworking,2525,11,4620678,0,165,11,0,0,960,963
+Legion Leatherworking,,,,,2526,11,4620678,0,165,10,0,0,959,0
+Draenor Leatherworking,,,,,2527,11,4620678,0,165,9,0,0,958,0
+Pandaria Leatherworking,,,,,2528,11,4620678,0,165,8,0,0,957,0
+Cataclysm Leatherworking,,,,,2529,11,4620678,0,165,7,0,0,956,0
+Northrend Leatherworking,,,,,2530,11,4620678,0,165,6,0,0,955,0
+Outland Leatherworking,,,,,2531,11,4620678,0,165,5,0,0,954,0
+Classic Leatherworking,,,,,2532,11,4620678,0,165,4,0,0,953,0
+Kul Tiran Tailoring,,,Zandalari Tailoring,Battle for Azeroth Tailoring,2533,11,4620681,0,197,11,0,0,960,963
+Legion Tailoring,,,,,2534,11,4620681,0,197,10,0,0,959,0
+Draenor Tailoring,,,,,2535,11,4620681,0,197,9,0,0,958,0
+Pandaria Tailoring,,,,,2536,11,4620681,0,197,8,0,0,957,0
+Cataclysm Tailoring,,,,,2537,11,4620681,0,197,7,0,0,956,0
+Northrend Tailoring,,,,,2538,11,4620681,0,197,6,0,0,955,0
+Outland Tailoring,,,,,2539,11,4620681,0,197,5,0,0,954,0
+Classic Tailoring,,,,,2540,11,4620681,0,197,4,0,0,953,0
+Kul Tiran Cooking,,,Zandalari Cooking,Battle for Azeroth Cooking,2541,9,4620671,0,185,11,0,0,960,963
+Legion Cooking,,,,,2542,9,4620671,0,185,10,0,0,959,0
+Draenor Cooking,,,,,2543,9,4620671,0,185,9,0,0,958,0
+Pandaria Cooking,,,,,2544,9,4620671,0,185,8,0,0,957,0
+Cataclysm Cooking,,,,,2545,9,4620671,0,185,7,0,0,956,0
+Northrend Cooking,,,,,2546,9,4620671,0,185,6,0,0,955,0
+Outland Cooking,,,,,2547,9,4620671,0,185,5,0,0,954,0
+Classic Cooking,,,,,2548,9,4620671,0,185,4,0,0,953,0
+Kul Tiran Herbalism,,,Zandalari Herbalism,Battle for Azeroth Herbalism,2549,11,4620675,0,182,11,0,0,960,963
+Legion Herbalism,,,,,2550,11,4620675,0,182,10,0,0,959,0
+Draenor Herbalism,,,,,2551,11,4620675,0,182,9,0,0,958,0
+Pandaria Herbalism,,,,,2552,11,4620675,0,182,8,0,0,957,0
+Cataclysm Herbalism,,,,,2553,11,4620675,0,182,7,0,0,956,0
+Northrend Herbalism,,,,,2554,11,4620675,0,182,6,0,0,955,0
+Outland Herbalism,,,,,2555,11,4620675,0,182,5,0,0,954,0
+Classic Herbalism,,,,,2556,11,4620675,0,182,4,0,0,953,0
+Kul Tiran Skinning,,,Zandalari Skinning,Battle for Azeroth Skinning,2557,11,4620680,0,393,11,0,0,960,963
+Legion Skinning,,,,,2558,11,4620680,0,393,10,0,0,959,0
+Draenor Skinning,,,,,2559,11,4620680,0,393,9,0,0,958,0
+Pandaria Skinning,,,,,2560,11,4620680,0,393,8,0,0,957,0
+Cataclysm Skinning,,,,,2561,11,4620680,0,393,7,0,0,956,0
+Northrend Skinning,,,,,2562,11,4620680,0,393,6,0,0,955,0
+Outland Skinning,,,,,2563,11,4620680,0,393,5,0,0,954,0
+Classic Skinning,,,,,2564,11,4620680,0,393,4,0,0,953,0
+Kul Tiran Mining,,,Zandalari Mining,Battle for Azeroth Mining,2565,11,4620679,0,186,11,0,0,960,963
+Legion Mining,,,,,2566,11,4620679,0,186,10,0,0,959,0
+Draenor Mining,,,,,2567,11,4620679,0,186,9,0,0,958,0
+Pandaria Mining,,,,,2568,11,4620679,0,186,8,0,0,957,0
+Cataclysm Mining,,,,,2569,11,4620679,0,186,7,0,0,956,0
+Northrend Mining,,,,,2570,11,4620679,0,186,6,0,0,955,0
+Outland Mining,,,,,2571,11,4620679,0,186,5,0,0,954,0
+Classic Mining,,,,,2572,11,4620679,0,186,4,0,0,953,0
+Kul Tiran Fishing,,,Zandalari Fishing,Battle for Azeroth Fishing,2585,9,4620674,0,356,11,16384,0,960,963
+Legion Fishing,,,,,2586,9,4620674,0,356,10,16384,0,959,0
+Draenor Fishing,,,,,2587,9,4620674,0,356,9,16384,0,958,0
+Pandaria Fishing,,,,,2588,9,4620674,0,356,8,16384,0,957,0
+Cataclysm Fishing,,,,,2589,9,4620674,0,356,7,16384,0,956,0
+Northrend Fishing,,,,,2590,9,4620674,0,356,6,16384,0,955,0
+Outland Fishing,,,,,2591,9,4620674,0,356,5,16384,0,954,0
+Classic Fishing,,,,,2592,9,4620674,0,356,4,16384,0,953,0
+Racial - Dark Iron Dwarf,,Racial - Dark Iron Dwarf,,,2597,9,136243,0,0,0,33938,0,0,0
+Racial - Mag'har Orc,,Racial - Mag'har Orc,,,2598,9,136243,0,0,0,33938,0,0,0
+Pet - Lizard,,Pet - Lizard,,,2703,7,136243,0,0,0,0,0,0,0
+Pet - Horse,,,,,2704,7,0,0,0,0,0,0,0,0
+Pet - Exotic Pterrordax,,,,,2705,7,1624590,0,0,0,0,0,0,0
+Pet - Toad,,,,,2706,7,804969,0,0,0,0,0,0,0
+Pet - Exotic Carapid,,,,,2707,7,2011146,0,0,0,0,0,0,0
+Second Pet - Hunter,,,,,2716,7,0,0,0,0,0,0,0,0
+Pet - Blood Beast,,,,,2719,7,1687702,0,0,0,0,0,0,0
+Junkyard Tinkering,Tinker,"Schematics can be found on monsters in Mechagon, and from quests.",,,2720,11,2915722,1,0,0,0,0,0,0
+Racial - Zandalari Troll,,Racial - Zandalari Troll,,,2721,9,0,0,0,0,33938,0,0,0
+Racial - Kul Tiran,,Racial - Kul Tiran,,,2723,9,0,0,0,0,33938,0,0,0
+All Classes,,Azerite Powers,,,2727,9,0,0,0,0,0,0,0,0
+Kyrian,,Kyrian Covenant,,,2730,7,3641395,0,0,0,1040,0,0,0
+Venthyr,,Venthyr Covenant,,,2731,7,3641397,0,0,0,1040,0,0,0
+Night Fae,,Night Fae Covenant,,,2732,7,3641394,0,0,0,1040,0,0,0
+Necrolord,,Necrolord Covenant,,,2733,7,3641396,0,0,0,1040,0,0,0
+Mount Equipment,,,,,2734,12,0,0,0,0,2,0,0,0
+Shadowlands Alchemy,,,,,2750,11,4620669,0,171,12,0,0,961,0
+Shadowlands Blacksmithing,,,,,2751,11,4620670,0,164,12,0,0,961,0
+Shadowlands Cooking,,,,,2752,9,4620671,0,185,12,0,0,961,0
+Shadowlands Enchanting,,,,,2753,11,4620672,0,333,12,0,0,961,0
+Shadowlands Fishing,,,,,2754,9,4620674,0,356,12,16384,0,961,0
+Shadowlands Engineering,,,,,2755,11,4620673,0,202,12,0,0,961,0
+Shadowlands Inscription,,,,,2756,11,4620676,0,773,12,0,0,961,0
+Shadowlands Jewelcrafting,,,,,2757,11,4620677,0,755,12,0,0,961,0
+Shadowlands Leatherworking,,,,,2758,11,4620678,0,165,12,0,0,961,0
+Shadowlands Tailoring,,,,,2759,11,4620681,0,197,12,0,0,961,0
+Shadowlands Herbalism,,,,,2760,11,4620675,0,182,12,0,0,961,0
+Shadowlands Mining,,,,,2761,11,4620679,0,186,12,0,0,961,0
+Shadowlands Skinning,,,,,2762,11,4620680,0,393,12,0,0,961,0
+Racial - Dark Iron Dwarf,,Racial - Dark Iron Dwarf,,,2773,9,136243,0,0,0,33938,0,0,0
+Racial - Mechgnome,,Racial - Mechagnome,,,2774,9,0,0,0,0,33938,0,0,0
+Racial - Vulpera,,Racial - Vulpera,,,2775,9,0,0,0,0,33938,0,0,0
+Language: Vulpera,,,,,2776,10,136243,0,0,0,128,0,0,0
+Soul Cyphering,Imbue,New soul cyphers can be found within the Maw.,,,2777,11,895888,1,0,0,0,0,0,0
+Abominable Stitching,Stitcher,"Parts can be found on monsters in the Shadowlands, and from quests.",,,2787,11,3675492,0,0,0,0,0,0,0
+Ascension Crafting,Crafting,Recipes can be obtained through the Path of Ascension feature.,,,2791,11,3054888,0,0,0,0,0,0,0
+Pet - Mammoth,,,,,2805,7,136243,0,0,0,0,0,0,0
+Pet - Courser,,,,,2806,7,132248,0,0,0,0,0,0,0
+Pet - Camel,,,,,2807,7,132248,0,0,0,0,0,0,0
+Racial - Dracthyr,,Racial - Dracthyr,,,2808,9,0,0,0,0,33810,0,0,0
+Evoker,,Evoker skills.,,,2810,7,4574311,0,0,0,1048,0,0,0
+Stygia Crafting,Crafting,Must be in possession of Soulforger's Tools.,,,2811,11,2578727,0,0,0,0,0,0,0
+Language: Cypher,,,,,2817,12,136243,0,0,0,144,0,0,0
+Protoform Synthesis,Synthesize,"Combine components via schematics, all found in Zereth Mortis, to instantiate new pets and mounts for your collection.",,,2819,11,4287471,1,0,0,0,0,0,0
+Arcana Manipulation,Arcanist,Description here,,,2821,11,1041232,1,0,0,0,0,0,0
+Dragon Isles Blacksmithing,,,,,2822,11,4620670,0,164,13,0,0,962,0
+Dragon Isles Alchemy,,,,,2823,11,4620669,0,171,13,0,0,962,0
+Dragon Isles Cooking,,,,,2824,9,4620671,0,185,13,0,0,962,0
+Dragon Isles Enchanting,,,,,2825,11,4620672,0,333,13,0,0,962,0
+Dragon Isles Fishing,,,,,2826,9,4620674,0,356,13,16384,0,962,0
+Dragon Isles Engineering,,,,,2827,11,4620673,0,202,13,0,0,962,0
+Dragon Isles Inscription,,,,,2828,11,4620676,0,773,13,0,0,962,0
+Dragon Isles Jewelcrafting,,,,,2829,11,4620677,0,755,13,0,0,962,0
+Dragon Isles Leatherworking,,,,,2830,11,4620678,0,165,13,0,0,962,0
+Dragon Isles Tailoring,,,,,2831,11,4620681,0,197,13,0,0,962,0
+Dragon Isles Herbalism,,,,,2832,11,4620675,0,182,13,0,0,962,0
+Dragon Isles Mining,,,,,2833,11,4620679,0,186,13,0,0,962,0
+Dragon Isles Skinning,,,,,2834,11,4620680,0,393,13,0,0,962,0
+Crafting,,,,,2846,11,643416,0,98,0,0,0,0,0
+Tuskarr Fishing Gear,Crafting,Obtain and improve Iskaaran Fishing Gear and get access to new fishing spots and activities across Dragon Isles.,,,2847,11,4638460,0,0,0,0,0,0,0
+Pet - Lesser Dragonkin,,Lesser Dragonkin,,,2850,7,797547,0,0,0,0,0,0,0
+Language: Furbolg,,,,,2855,10,136243,0,0,0,128,0,0,0
