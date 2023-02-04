@@ -420,7 +420,7 @@ def ask_post_process() -> None:
     for thing in things:
         print(thing)
         answer = input("Yes or No?")
-        if answer == "ja":
+        if answer == "Yes":
             post_process(thing)
         else:
             continue
