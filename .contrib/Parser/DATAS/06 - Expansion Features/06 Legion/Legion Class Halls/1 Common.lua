@@ -491,6 +491,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				}),
 				-- Rep Insignias
 				i(152960),	-- Argussian Reach Insignia
+				i(152959),	-- Argussian Reach Insignia
 				i(152957),	-- Army of the Light Insignia
 				i(141340),	-- Court of Farondis Insignia
 				i(146943),	-- Court of Farondis Insignia
@@ -538,6 +539,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				i(139808),	-- Cuiro of Abundant Happiness
 				i(139809),	-- Elixir of Plenty
 				i(152444),	-- Exalted Xenedar Hammer
+				i(139792),	-- Fruitful Bauble
+				i(139419),	-- Golden Banana
 				i(152447),	-- Lightburst Charge
 				i(152929),	-- Pronged Ridgestalker Spear
 				i(152441),	-- Satchel of Lucidity

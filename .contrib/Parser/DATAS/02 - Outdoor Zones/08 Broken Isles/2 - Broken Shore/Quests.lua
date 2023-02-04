@@ -352,7 +352,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				},
 			}),
 			q(47017, {	-- Only the Best
-				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 121081 },	-- Merris Townsend
 				["coord"] = { 43.6, 64.0, BROKEN_SHORE },
 			}),
