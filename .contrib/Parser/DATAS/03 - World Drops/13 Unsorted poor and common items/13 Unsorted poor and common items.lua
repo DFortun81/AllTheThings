@@ -221,7 +221,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				}),
 				n(CHEST, {
 					i(6116),	-- Apprentice's Robe	-- was not added to vendor in 10.0.5
-					i(22742),	-- Bloodsail Shirt
 					i(2568),	-- Brown Linen Vest
 					i(2617),	-- Burning Robes
 					i(2613),	-- Double-Stitched Robes
@@ -231,7 +230,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2615),	-- Chromatic Robe
 					i(795),		-- Knitted Tunic
 					i(20990),	-- Light Cloth Armor
-					i(23367),	-- Light Silk Robe
 					i(2160),	-- Padded Armor
 					i(2612),	-- Plain Robe
 					i(52729),	-- Recruit's Robe	-- TODO Cataclysm
@@ -243,7 +241,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(193),		-- Tattered Cloth Vest
 					i(200),		-- Thick Cloth Vest
 					i(2121),	-- Thin Cloth Armor
-					i(10040),	-- White Wedding Dress
 					i(2364),	-- Woven Vest
 				}),
 				n(WRIST, {
@@ -251,29 +248,17 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(3642),	-- Ancestral Bracers
 					i(3644),	-- Barbaric Cloth Bracers
 					i(14087),	-- Beaded Cuffs
-					i(710),		-- Bracers of the People's Militia
 					i(7350),	-- Disciple's Bracers
 					i(3588),	-- Embroidered Bracers
-					i(6060),	-- Flax Bracers
-					i(3323),	-- Ghostly Bracers
-					i(6062),	-- Heavy Cord Bracers
 					i(3590),	-- Heavy Weave Bracers
-					i(2326),	-- Ivy-Weave Bracers
 					i(3641),	-- Journeyman's Bracers
 					i(3603),	-- Knitted Bracers
 					i(20988),	-- Light Cloth Bracers
 					i(14095),	-- Native Bands
 					i(3592),	-- Padded Bracers
-					i(3453),	-- Quilted Bracers
 					i(3594),	-- Russet Bracers
-					i(22966),	-- Silk Wristbands
-					i(3224),	-- Silver-Lined Bracers
-					i(57145),	-- Simmer's Bracers		-- TODO Cataclysm
 					i(9744),	-- Simple Bands
-					i(24437),	-- Slightly Worn Bracer
 					i(3643),	-- Spellbinder Bracers
-					i(11187),	-- Stemleaf Bracers
-					i(20992),	-- Sunrise Bracers
 					i(3596),	-- Tattered Cloth Bracers
 					i(3598),	-- Thick Cloth Bracers
 					i(3600),	-- Thin Cloth Bracers
@@ -281,120 +266,77 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				}),
 				n(HANDS, {
 					i(3290),	-- Ancestral Gloves
-					i(24144),	-- Battle Worn Handguards
 					i(14089),	-- Beaded Gloves
 					i(6515),	-- Disciple's Gloves
 					i(2440),	-- Embroidered Gloves
-					i(3275),	-- Flax Gloves
-					i(5606),	-- Gardening Gloves
 					i(839),		-- Heavy Weave Gloves
 					i(2960),	-- Journeyman's Gloves
 					i(793),		-- Knitted Gloves
 					i(20987),	-- Light Cloth Gloves
 					i(14102),	-- Native Handwraps
-					i(12299),	-- Netted Gloves
-					i(11192),	-- Outfitter Gloves
 					i(2158),	-- Padded Gloves
-					i(719),		-- Rabbit Handler Gloves
 					i(2434),	-- Russet Gloves
-					i(1479),	-- Salma's Oven Mitts
-					i(23397),	-- Satin Lined Gloves
 					i(9746),	-- Simple Gloves
 					i(2972),	-- Spellbinder Gloves
 					i(711),		-- Tattered Cloth Gloves
 					i(203),		-- Thick Cloth Gloves
 					i(2119),	-- Thin Cloth Gloves
-					i(11190),	-- Viny Gloves
-					i(20995),	-- Well Watcher Gloves
-					i(15401),	-- Welldrip Gloves
-					i(10550),	-- Wooly Mittens
 					i(2369),	-- Woven Gloves
 				}),
 				n(WAIST, {
 					i(4672),	-- Ancestral Belt
-					i(3442),	-- Apprentice Sash
 					i(4687),	-- Barbaric Cloth Belt
 					i(14093),	-- Beaded Cord
 					i(6513),	-- Disciple's Sash
 					i(3587),	-- Embroidered Belt
-					i(11848),	-- Flax Belt
 					i(3589),	-- Heavy Weave Belt
 					i(4663),	-- Journeyman's Belt
 					i(3602),	-- Knitted Belt
 					i(20989),	-- Light Cloth Belt
-					i(7026),	-- Linen Belt
 					i(14099),	-- Native Sash
 					i(3591),	-- Padded Belt
 					i(3593),	-- Russet Belt
 					i(9742),	-- Simple Cord
-					i(4919),	-- Soft Wool Belt
 					i(4684),	-- Spellbinder Belt
 					i(3595),	-- Tattered Cloth Belt
 					i(3597),	-- Thick Cloth Belt
 					i(3599),	-- Thin Cloth Belt
 					i(3606),	-- Woven Belt
-					i(20998),	-- Wyrm Sash
 				}),
 				n(LEGS, {
-					i(79),		-- Dwarven Cloth Britches
 					i(2437),	-- Embroidered Pants
-					i(23377),	-- Guard's Leggings
 					i(38278),	-- Haliscan Pantaloons
-					i(24425),	-- Hand Sewn Pants
 					i(838),		-- Heavy Weave Pants
 					i(794),		-- Knitted Pants
-					i(9600),	-- Lace Pants
 					i(20986),	-- Light Cloth Pants
 					i(2159),	-- Padded Pants
-					i(10549),	-- Rancher's Trousers
-					i(6713),	-- Ripped Pants
 					i(2431),	-- Russet Pants
-					i(10655),	-- Sedgeweed Britches
-					i(10045),	-- Simple Linen Pants
 					i(6118),	-- Squire's Pants
-					i(21001),	-- Striding Pants
-					i(3834),	-- Sturdy Cloth Trousers
-					i(6076),	-- Tapered Pants
 					i(194),		-- Tattered Cloth Pants
 					i(201),		-- Thick Cloth Pants
 					i(2120),	-- Thin Cloth Pants
 					i(6126),	-- Trapper's Pants
-					i(10035),	-- Tuxedo Pants
 					i(2366),	-- Woven Pants
 				}),
 				n(FEET, {
 					i(3289),	-- Ancestral Boots
 					i(14086),	-- Beaded Sandals
-					i(860),		-- Cavalier's Boots
-					i(4936),	-- Dirt-Trodden Boots
 					i(7351),	-- Disciple's Boots
 					i(6836),	-- Dress Shoes
 					i(2438),	-- Embroidered Boots
-					i(11191),	-- Farmer's Boots
-					i(3274),	-- Flax Boots
 					i(840),		-- Heavy Weave Shoes
 					i(2959),	-- Journeyman's Boots
 					i(792),		-- Knitted Sandals
 					i(20985),	-- Light Cloth Shoes
 					i(14110),	-- Native Sandals
 					i(2156),	-- Padded Boots
-					i(3454),	-- Reconnaissance Boots
 					i(2432),	-- Russet Boots
-					i(15398),	-- Sandcomber Boots
-					i(23267),	-- Satin Lined Boots
-					i(10046),	-- Simple Linen Boots
 					i(9743),	-- Simple Shoes
-					i(6173),	-- Snow Boots
-					i(80),		-- Soft Fur-Lined Shoes
-					i(4915),	-- Soft Wool Boots
 					i(2971),	-- Spellbinder Boots
 					i(195),		-- Tattered Cloth Boots
 					i(202),		-- Thick Cloth Shoes
 					i(2117),	-- Thin Cloth Shoes
 					i(6127),	-- Trapper's Boots
-					i(2571),	-- Viny Wrappings
-					i(6148),	-- Web-Covered Boots
-					i(24130),	-- Worn Slippers
 					i(2367),	-- Woven Boots
 				}),
 			}),
@@ -406,7 +348,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				}),
 				n(SHOULDER, {
 					i(10405),	-- Bandit Shoulders
-					i(5319),	-- Bashing Pauldrons
 					i(15313),	-- Feral Shoulder Pads
 					i(4700),	-- Inscribed Leather Spaulders
 					i(15019),	-- Lupine Mantle
@@ -415,9 +356,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				n(CHEST, {
 					i(2370),	-- Battered Leather Harness
 					i(6526),	-- Battle Harness
-					i(2069),	-- Black Bear Hide Vest
-					i(23375),	-- Black Leather Vest
-					i(4968),	-- Bound Harness
 					i(6523),	-- Buckled Harness
 					i(2127),	-- Cracked Leather Vest
 					i(2141),	-- Cuirboulli Vest
@@ -425,104 +363,61 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(5108),	-- Dark Iron Leather
 					i(57157),	-- Dark Lady's Vest	-- TODO Cataclysm
 					i(85),		-- Dirty Leather Vest
-					i(2108),	-- Frostmane Leather Vest
 					i(49517),	-- Goblin Primitive's Mantle	-- TODO Cataclysm
 					i(6525),	-- Grunt's Harness
-					i(5957),	-- Handstitched Leather Vest
-					i(2817),	-- Hard Leather Tunic
-					i(60),		-- Layered Tunic
-					i(4929),	-- Light Scorpid Armor
-					i(2112),	-- Lumberjack Jerkin
-					i(6059),	-- Nomadic Vest
-					i(23266),	-- Ranger's Vest
 					i(2470),	-- Reinforced Leather Vest
 					i(799),		-- Rough Leather Vest
-					i(11851),	-- Scavenger Tunic
 					i(42099),	-- Snowhide Vest
-					i(27552),	-- Soft Leather Vest
 					i(2463),	-- Studded Doublet
 					i(6524),	-- Studded Leather Harness
 					i(20925),	-- Sun Cured Vest
 					i(846),		-- Tanned Leather Jerkin
-					i(3444),	-- Tiller's Vest
-					i(4907),	-- Woodland Tunic
 				}),
 				n(WRIST, {
 					i(2374),	-- Battered Leather Bracers
 					i(53356),	-- Beast Tracker's Bracers	-- TODO Cataclysm
-					i(3158),	-- Burnt Hide Bracers
 					i(3200),	-- Burnt Leather Bracers
 					i(3312),	-- Ceremonial Leather Bracers
 					i(2124),	-- Cracked Leather Bracers
 					i(2144),	-- Cuirboulli Bracers
 					i(1850),	-- Cured Leather Bracers
 					i(1836),	-- Dirty Leather Bracers
-					i(5419),	-- Feral Bracers
-					i(1213),	-- Gnoll Kindred Bracers
 					i(15297),	-- Grizzly Bracers
-					i(7277),	-- Handstitched Leather Bracers
 					i(3207),	-- Hunting Bracers
-					i(24436),	-- Huntsman's Bracers
-					i(763),		-- Ice-Covered Bracers
-					i(5612),	-- Ivy Cuffs
-					i(22965),	-- Longshoreman's Bindings
 					i(15013),	-- Lupine Cuffs
 					i(9752),	-- Nomad Bands
-					i(4908),	-- Nomadic Bracers
 					i(6519),	-- Pioneer Bracers
-					i(4973),	-- Plains Hunter Wristguards
 					i(15005),	-- Primal Bands
 					i(2474),	-- Reinforced Leather Bracers
 					i(1840),	-- Rough Leather Bracers
-					i(4928),	-- Sandrunner Wristguards
 					i(42092),	-- Snowhide Bracers
 					i(2468),	-- Studded Bracers
-					i(2327),	-- Sturdy Leather Bracers
 					i(20922),	-- Sun Cured Bracers
 					i(1844),	-- Tanned Leather Bracers
 					i(3285),	-- Tribal Bracers
-					i(21000),	-- Vigorous Bracers
-					i(6070),	-- Wolfskin Bracers
-					i(3435),	-- Zombie Skin Bracers
 				}),
 				n(HANDS, {
-					i(5394),	-- Archery Training Gloves
 					i(2375),	-- Battered Leather Gloves
-					i(24142),	-- Battle Worn Gloves
-					i(4914),	-- Battleworn Leather Gloves
 					i(2964),	-- Burnt Leather Gloves
 					i(2125),	-- Cracked Leather Gloves
 					i(2145),	-- Cuirboulli Gloves
 					i(239),		-- Cured Leather Gloves
 					i(714),		-- Dirty Leather Gloves
-					i(4962),	-- Double-Layered Gloves
-					i(3152),	-- Driving Gloves
 					i(15300),	-- Grizzly Gloves
-					i(57396),	-- Innkeeper's Gloves
-					i(1359),	-- Lion-Stamped Gloves
 					i(53376),	-- Lockpicker's Glovelettes	-- TODO Cataclysm
-					i(20993),	-- Lynxskin Gloves
 					i(9755),	-- Nomad Gloves
-					i(10636),	-- Nomadic Gloves
-					i(2186),	-- Outfitter Gloves
 					i(6521),	-- Pioneer Gloves
 					i(15008),	-- Primal Mitts
 					i(2475),	-- Reinforced Leather Gloves
 					i(797),		-- Rough Leather Gloves
-					i(5939),	-- Sewing Gloves
 					i(42097),	-- Snowhide Mitts
 					i(2469),	-- Studded Gloves
 					i(20923),	-- Sun Cured Gloves
 					i(844),		-- Tanned Leather Gloves
 					i(3286),	-- Tribal Gloves
-					i(4940),	-- Veiled Grips
-					i(1965),	-- White Wolf Gloves
-					i(6171),	-- Wolf Handler Gloves
 				}),
 				n(WAIST, {
-					i(5936),	-- Animal Skin Belt
 					i(2371),	-- Battered Leather Belt
-					i(6058),	-- Blackened Leather Belt
 					i(4666),	-- Burnt Leather Belt
 					i(4693),	-- Ceremonial Leather Belt
 					i(2122),	-- Cracked Leather Belt
@@ -530,51 +425,32 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(1849),	-- Cured Leather Belt
 					i(1835),	-- Dirty Leather Belt
 					i(15302),	-- Grizzly Belt
-					i(4237),	-- Handstitched Leather Belt
 					i(4690),	-- Hunting Belt
-					i(57538),	-- Kharanos Belt	-- TODO Cataclysm
 					i(9750),	-- Nomad Sash
-					i(4954),	-- Nomadic Belt
-					i(2173),	-- Old Leather Belt
 					i(6517),	-- Pioneer Belt
 					i(15003),	-- Primal Belt
-					i(6147),	-- Ratty Old Belt
 					i(2471),	-- Reinforced Leather Belt
 					i(1839),	-- Rough Leather Belt
-					i(24129),	-- Salvaged Leather Belt
 					i(42084),	-- Snowhide Belt
-					i(4951),	-- Squealer's Belt
 					i(2464),	-- Studded Belt
-					i(24446),	-- Sturdy Leather Belt
 					i(20920),	-- Sun Cured Belt
-					i(20996),	-- Sunspire Cord
 					i(1843),	-- Tanned Leather Belt
 					i(4675),	-- Tribal Belt
-					i(3583),	-- Weathered Belt
 				}),
 				n(LEGS, {
 					i(2372),	-- Battered Leather Pants
-					i(5398),	-- Canopy Leggings
 					i(2126),	-- Cracked Leather Pants
 					i(2146),	-- Cuirboulli Pants
 					i(237),		-- Cured Leather Pants
 					i(209),		-- Dirty Leather Pants
-					i(4921),	-- Dust-Covered Leggings
-					i(61),		-- Dwarven Leather Pants
-					i(18611),	-- Gnarlpine Leggings
-					i(2303),	-- Handstitched Leather Pants
 					i(6135),	-- Primitive Kilt
 					i(153),		-- Primitive Kilt
 					i(2472),	-- Reinforced Leather Pants
-					i(24424),	-- Rough Leather Leggings
 					i(798),		-- Rough Leather Pants
-					i(4970),	-- Rough-Hewn Kodo Leggings
 					i(42098),	-- Snowhide Pants
-					i(22951),	-- Springpaw Hide Leggings
 					i(2465),	-- Studded Pants
 					i(20924),	-- Sun Cured Pants
 					i(845),		-- Tanned Leather Pants
-					i(3272),	-- Zombie Skin Leggings
 				}),
 				n(FEET, {
 					i(2373),	-- Battered Leather Boots
@@ -583,18 +459,12 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2123),	-- Cracked Leather Boots
 					i(2143),	-- Cuirboulli Boots
 					i(238),		-- Cured Leather Boots
-					i(9601),	-- Cushioned Boots
 					i(210),		-- Dirty Leather Boots
-					i(3321),	-- Gray Fur Booties
 					i(15301),	-- Grizzly Slippers
-					i(2302),	-- Handstitched Leather Boots
 					i(2975),	-- Hunting Boots
-					i(6201),	-- Lithe Boots
-					i(24103),	-- Moongraze Hide Boots
 					i(9751),	-- Nomad Sandals
 					i(6518),	-- Pioneer Boots
 					i(15004),	-- Primal Boots
-					i(4906),	-- Rainwalker Boots
 					i(2473),	-- Reinforced Leather Boots
 					i(796),		-- Rough Leather Boots
 					i(57254),	-- Runner's Boots	-- TODO Cataclysm
@@ -602,10 +472,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2467),	-- Studded Boots
 					i(20921),	-- Sun Cured Boots
 					i(843),		-- Tanned Leather Boots
-					i(4942),	-- Tiger Hide Boots
 					i(3284),	-- Tribal Boots
-					i(1173),	-- Weather-Worn Boots
-					i(3439),	-- Zombie Skin Boots
 				}),
 			}),
 			filter(MAIL, {
@@ -614,11 +481,9 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(3894),	-- Brigandine Helm
 				}),
 				n(SHOULDER, {
-					i(1445),	-- Blackrock Pauldrons
 					i(15496),	-- Bloodspattered Shoulder Pads
 					i(4694),	-- Burnished Pauldrons
 					i(6579),	-- Defender Spaulders
-					i(6189),	-- Durable Chain Shoulders
 					i(15505),	-- Outrunner's Pauldrons
 					i(10407),	-- Raider's Shoulderpads
 					i(14728),	-- War Paint Shoulder Pads
@@ -626,17 +491,13 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				n(CHEST, {
 					i(2417),	-- Augmented Chain Vest
 					i(2423),	-- Brigandine Vest
-					i(2109),	-- Frostmane Chain Vest
 					i(847),		-- Chainmail Armor
-					i(4922),	-- Jagged Chain Vest
 					i(2398),	-- Light Chain Armor
 					i(2392),	-- Light Mail Armor
 					i(30781),	-- Mag'hari Chain Vest
-					i(2898),	-- Mountaineer Chestpiece
 					i(2153),	-- Polished Scale Vest
 					i(2386),	-- Rusted Chain Vest
 					i(285),		-- Scalemail Vest
-					i(3151),	-- Siege Brigade Vest
 					i(2379),	-- Tarnished Chain Vest
 					i(20919),	-- Unadorned Chain Vest
 				}),
@@ -646,7 +507,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(3303),	-- Brackwater Bracers
 					i(2427),	-- Brigandine Bracers
 					i(9760),	-- Cadet Bracers
-					i(15400),	-- Clamshell Bracers
 					i(1846),	-- Chainmail Bracers
 					i(15474),	-- Charger's Bindings
 					i(6507),	-- Infantry Bracers
@@ -664,7 +524,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				n(HANDS, {
 					i(2422),	-- Augmented Chain Gloves
 					i(3281),	-- Battle Chain Gloves
-					i(2547),	-- Boar Handler Gloves
 					i(3304),	-- Brackwater Gauntlets
 					i(2428),	-- Brigandine Gloves
 					i(9762),	-- Cadet Gauntlets
@@ -673,12 +532,9 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(6510),	-- Infantry Gauntlets
 					i(2403),	-- Light Chain Gloves
 					i(2397),	-- Light Mail Gloves
-					i(15402),	-- Noosegrip Gauntlets
-					i(4910),	-- Painted Chain Gloves
 					i(2151),	-- Polished Scale Gloves
 					i(2391),	-- Rusted Chain Gloves
 					i(718),		-- Scalemail Gloves
-					i(131715),	-- Smith's Chain Gloves	-- TODO Legion
 					i(2385),	-- Tarnished Chain Gloves
 					i(20917),	-- Unadorned Chain Gloves
 					i(15484),	-- War Torn Handgrips
@@ -688,35 +544,25 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				n(WAIST, {
 					i(2419),	-- Augmented Chain Belt
 					i(4669),	-- Battle Chain Girdle
-					i(1154),	-- Belt of the People's Militia
 					i(4681),	-- Brackwater Girdle
 					i(2424),	-- Brigandine Belt
 					i(9758),	-- Cadet Belt
-					i(3437),	-- Clasped Belt
 					i(1845),	-- Chainmail Belt
 					i(15472),	-- Charger's Belt
 					i(6509),	-- Infantry Belt
-					i(2690),	-- Latched Belt
 					i(2399),	-- Light Chain Belt
 					i(2393),	-- Light Mail Belt
-					i(4913),	-- Painted Chain Belt
 					i(2148),	-- Polished Scale Belt
-					i(2546),	-- Royal Frostmane Girdle
 					i(2387),	-- Rusted Chain Belt
-					i(2172),	-- Rustic Belt
 					i(1853),	-- Scalemail Belt
-					i(5592),	-- Shackled Girdle
 					i(2380),	-- Tarnished Chain Belt
 					i(20914),	-- Unadorned Chain Belt
 					i(4678),	-- Veteran Girdle
 					i(15480),	-- War Torn Girdle
 					i(4659),	-- Warrior's Girdle
-					i(4935),	-- Wide Metal Girdle
 				}),
 				n(LEGS, {
 					i(2418),	-- Augmented Chain Leggings
-					i(4917),	-- Battleworn Chain Leggings
-					i(5941),	-- Brass Scale Pants
 					i(2425),	-- Brigandine Leggings
 					i(848),		-- Chainmail Pants
 					i(2400),	-- Light Chain Leggings
@@ -730,17 +576,13 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				n(FEET, {
 					i(2420),	-- Augmented Chain Boots
 					i(3279),	-- Battle Chain Boots
-					i(18612),	-- Bloody Chain Boots
 					i(2426),	-- Brigandine Boots
 					i(9759),	-- Cadet Boots
-					i(4972),	-- Cliff Runner Boots
-					i(3447),	-- Cryptwalker Boots
 					i(849),		-- Chainmail Boots
 					i(15473),	-- Charger's Boots
 					i(6506),	-- Infantry Boots
 					i(2401),	-- Light Chain Boots
 					i(2395),	-- Light Mail Boots
-					i(3332),	-- Perrine's Boots
 					i(2149),	-- Polished Scale Boots
 					i(2389),	-- Rusted Chain Boots
 					i(287),		-- Scalemail Boots
@@ -757,161 +599,82 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(8092),	-- Platemail Helm
 				}),
 				n(CHEST, {
-					i(10656),	-- Barkplate Vest
 					i(38645),	-- Bone-Plated Armor
-					i(22953),	-- Fur Lined Breastplate
-					i(20994),	-- Green Plate Vest
 					i(30765),	-- Heavy Draenic Breastplate
 					i(8094),	-- Platemail Armor
-					i(10421),	-- Rough Copper Vest
-					i(3273),	-- Rugged Plate Vest
 				}),
 				n(WRIST, {
 					i(38648),	-- Bone-Plated Bracers
-					i(1182),	-- Brass-Studded Bracers
-					i(2853),	-- Copper Bracers
-					i(4969),	-- Fortified Bindings
-					i(24445),	-- Fortified Wristguards
-					i(6061),	-- Graystone Bracers
 					i(30771),	-- Heavy Draenic Bracers
-					i(6177),	-- Ironwrought Bracers
 					i(8090),	-- Platemail Bracers
-					i(11849),	-- Rustmetal Bracers
-					i(24131),	-- Slightly Rusted Bracers
-					i(22964),	-- Sunsail Bracers
 				}),
 				n(HANDS, {
-					i(24141),	-- Battle Worn Gauntlets
 					i(38649),	-- Bone-Plated Gloves
-					i(6063),	-- Cold Steel Gauntlets
-					i(23376),	-- Gatewatcher's Plate Gloves
-					i(20999),	-- Green Plate Gauntlets
 					i(8091),	-- Platemail Gloves
 				}),
 				n(WAIST, {
 					i(30777),	-- Aldor Heavy Belt
-					i(23265),	-- Blackened Plate Girdle
 					i(38646),	-- Bone-Plated Belt
-					i(2851),	-- Copper Plate Belt
-					i(24241),	-- Green Plate Belt
 					i(8088),	-- Platemail Belt
 				}),
 				n(LEGS, {
-					i(9599),	-- Barkplate Leggings
-					i(24423),	-- Beaten Plate Leggings
 					i(38651),	-- Bone-Plated Leggings
-					i(2852),	-- Copper Plate Pants
-					i(10635),	-- Painted Plate Leggings
 					i(8093),	-- Platemail Leggings
-					i(11852),	-- Roamer's Leggings
 				}),
 				n(FEET, {
 					i(38647),	-- Bone-Plated Boots
-					i(3469),	-- Copper Plate Boots
-					i(20997),	-- Green Plate Boots
-					i(4946),	-- Lightweight Boots
-					i(24447),	-- Naga Plate Boots
-					i(2691),	-- Outfitter Boots
 					i(8089),	-- Platemail Boots
-					i(24435),	-- Reinforced Plate Boots
-					i(5399),	-- Tracking Boots
 				}),
 			}),
 			filter(CLOAKS, {
 				i(14116),	-- Aboriginal Cape
-				i(3833),	-- Adept's Cloak
 				i(4671),	-- Ancestral Cloak
 				i(4686),	-- Barbaric Cloth Cloak
 				i(6555),	-- Bard's Cloak
 				i(4668),	-- Battle Chain Cloak
-				i(4920),	-- Battleworn Cape
 				i(14088),	-- Beaded Cloak
-				i(6185),	-- Bear Shawl
 				i(15490),	-- Bloodspattered Cloak
 				i(4680),	-- Brackwater Cloak
 				i(4665),	-- Burnt Cloak
 				i(9761),	-- Cadet Cloak
 				i(4692),	-- Ceremonial Cloak
-				i(20991),	-- Daylight Cloak
 				i(4854),	-- Demon Scarred Cloak
 				i(6514),	-- Disciple's Cloak
 				i(53048),	-- Doomsday Message	-- TODO Cataclysm
-				i(5405),	-- Draped Cloak
-				i(3070),	-- Ensign Cloak
-				i(2905),	-- Goat Fur Cloak
 				i(15299),	-- Grizzly Cape
-				i(4944),	-- Handsewn Cloak
-				i(7276),	-- Handstitched Leather Cloak
 				i(4689),	-- Hunting Cloak
 				i(15475),	-- Charger's Cloak
 				i(34782),	-- Imbued Scourge Shroud
 				i(6508),	-- Infantry Cloak
 				i(4662),	-- Journeyman's Cloak
-				i(2570),	-- Linen Cloak
 				i(15015),	-- Lupine Cloak
-				i(3331),	-- Melrache's Cape
-				i(24104),	-- Moongraze Fur Cloak
 				i(14098),	-- Native Cloak
 				i(9754),	-- Nomad Cloak
-				i(3153),	-- Oil-Stained Cloak
-				i(2165),	-- Old Blanchy's Blanket
 				i(6520),	-- Pioneer Cloak
 				i(15007),	-- Primal Cape
-				i(2240),	-- Rugged Cape
-				i(5618),	-- Scout's Cloak
-				i(4933),	-- Seasoned Fighter's Cloak
-				i(11850),	-- Short Duskbat Cape
 				i(9745),	-- Simple Cape
 				i(6549),	-- Soldier's Cloak
 				i(4683),	-- Spellbinder Cloak
-				i(22952),	-- Springpaw Hide Cloak
-				i(4958),	-- Sun-Beaten Cloak
-				i(4963),	-- Thunderhorn Cloak
 				i(4674),	-- Tribal Cloak
 				i(4677),	-- Veteran Cloak
 				i(15483),	-- War Torn Cape
-				i(4772),	-- Warm Cloak
 				i(4658),	-- Warrior's Cloak
-				i(3008),	-- Wendigo Fur Cloak
-				i(11475),	-- Wine-Stained Cloak
-				i(3322),	-- Wispy Cloak
-				i(2584),	-- Woolen Cape
 			}),
 			filter(COSMETIC, {
 				i(168004),	-- Gift of N'Zoth	-- TODO Battle for Azeroth
 			}),
 			filter(MISC, {
 				i(34828),	-- Antique Silver Cufflinks
-				i(33047),	-- Belbi's Eyesight Enhancing Romance Goggles
-				i(6835),	-- Black Tuxedo Pants
-				i(34008),	-- Blix's Eyesight Enhancing Romance Goggles
-				i(23909),	-- Blood Elf Bandit Mask
-				i(156724),	-- Blue Crystal Monocle
-				i(22281),	-- Blue Dinner Suit
-				i(19697),	-- Bounty of the Harvest
 				i(33105),	-- Budd's Guise of Zul'aman
 				i(44692),	-- Dalaran Nurse's Gown
 				i(13896),	-- Dark Green Wedding Hanbok
 				i(44737),	-- Draenic Silk Robes
-				i(19028),	-- Elegant Dress
-				i(21154),	-- Festival Dress
-				i(21542),	-- Festival Suit
-				i(156727),	-- Green Crystal Monocle
 				i(34087),	-- Green Winter Clothes
-				i(22279),	-- Lovely Black Dress
-				i(22278),	-- Lovely Blue Dress
 				i(49916),	-- Lovely Charm Bracelet
-				i(22280),	-- Lovely Purple Dress
-				i(22276),	-- Lovely Red Dress
 				i(5514),	-- Mana Agate
 				i(43486),	-- Mohawk Mask
-				i(21040),	-- Narain's Robe
-				i(21039),	-- Narain's Turban
 				i(34827),	-- Noble's Monocle
-				i(22282),	-- Purple Dinner Suit
 				i(44648),	-- Purple Turban
-				i(156725),	-- Red Crystal Monocle
-				i(22277),	-- Red Dinner Suit
 				i(34085),	-- Red Winter Clothes
 				i(38160),	-- Soul-Trader's Bindings
 				i(38162),	-- Soul-Trader's Boots
@@ -927,36 +690,16 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			}),
 			filter(NECK_F, {
 				i(16787),	-- Amulet of Draconic Subversion
-				i(27941),	-- Compassionate Critter's Friend
-				i(34249),	-- Hula Girl Doll
-				i(27982),	-- Charm of Potent and Powerful Passions
-				i(27992),	-- Infallible Tikbalang Ward
-				i(27940),	-- Marvelous Madstone of Immortality
-				i(27976),	-- Polished Pendant of Edible Energy
-				i(27945),	-- Shark's Tooth of Bona Fide Fluidic Mobility
-				i(27978),	-- Soap on a Rope
-				i(27979),	-- Stone of Stupendous Springing Strides
-				i(27944),	-- Talisman of True Treasure Tracking
 			}),
 			filter(FINGER_F, {
 				i(7341),	-- Cubic Zirconia Ring
 				i(7340),	-- Flawless Diamond Solitaire
-				i(38091),	-- Gold Eternium Band
 				i(34826),	-- Gold Wedding Band
 				i(7339),	-- Miniscule Diamond Ring
 				i(7338),	-- Mood Ring
-				i(37934),	-- Noble's Elementium Signet
 				i(23717),	-- Pitted Gold Band
-				i(38090),	-- Sapphire Pinky Ring
 				i(7342),	-- Silver Piffeny Band
 				i(7337),	-- The Rock
-			}),
-			filter(TRINKET_F, {
-				i(12846),	-- Argent Dawn Commission
-				i(10725),	-- Gnomish Battle Chicken
-				i(10645),	-- Gnomish Death Ray
-				i(10587),	-- Goblin Bomb Dispenser
-				i(10727),	-- Goblin Dragon Gun
 			}),
 		}),
 		n(WEAPONS, {
@@ -1118,7 +861,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			}),
 			filter(ONE_HANDED_MACES, {
 				i(30754),	-- Ancient Bone Mace
-				i(2048),	-- Anvilmar Hammer
 				i(20851),	-- Arcane Forged Mace
 				i(4563),	-- Billy Club
 				i(6651),	-- Broken Wine Bottle
