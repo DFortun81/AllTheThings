@@ -33,18 +33,9 @@ def add_latest_build(build: str) -> None:
             build_list.write(build + "\n")
 
 
-def get_thing_table(thing: type[Thing], build: str) -> list[str]:
-    """Get the table of a thing from a build."""
-    url = f"https://wow.tools/dbc/api/export/?name={thing.table()}&build={build}"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Linux; Android 9; G3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
-    }
-    return requests.get(url, headers=headers).content.decode("utf-8").splitlines()
-
-
 def get_thing_data(thing: type[Thing], build: str) -> list[str]:
     """Get the IDs (and some thing specific data) of a thing from a build."""
-    thing_list = list[str]()
+    thing_list: list[str] = list[str]()
     with open(Path("Latest", "dbfilesclient", f"{thing.table()}.csv")) as csv_file:
         reader = csv.DictReader(csv_file)
         for row in reader:
@@ -136,44 +127,25 @@ def sort_raw_file_recipes() -> None:
                 sorted_file.writelines(recipe_list)
 
 
-def create_raw_file(thing: type[Thing]) -> None:
-    """Create a raw file for a thing."""
-    raw_path = Path("Raw", f"{thing.__name__}.txt")
-    builds_path = Path("Builds", f"{thing.__name__}.txt")
-    with open(builds_path) as builds_file:
-        for build in builds_file:
-            thing_list = get_thing_data(thing, build.strip())
-            with open(raw_path, "r+") as raw_file:
-                old_lines = raw_file.readlines()
-                # TODO: this only finds new Things, not removed Things
-                difference = sorted(
-                    set(thing_list) - set(old_lines),
-                    key=lambda x: (float(x.split(DELIMITER)[0])),
-                )
-                if difference:
-                    raw_file.write(build)
-                    raw_file.writelines(difference)
-
-
 def extract_nth_column(csv_path: Path, n: int) -> list[str]:
     """Extract nth column from CSV file."""
-    csv_list: list[str] = []
+    #csv_list: list[str] = []
+    #with open(csv_path) as csv_file:
+    #    for line in csv_file:
+    #        try:
+    #            if n != 1:
+    #                element: str = line.split(DELIMITER)[n].strip() + "\n"
+    #                csv_list.append(element)
+    #            else:
+    #                elements: list[str] = line.split(DELIMITER)[1:]
+    #                joined_elements: str = DELIMITER.join(elements)
+    #                csv_list.append(joined_elements)
+    #        except IndexError:
+    #            empty_line: str = ""
+    #            csv_list.append(empty_line)
+    #return csv_list
     with open(csv_path) as csv_file:
-        for line in csv_file:
-            try:
-                if n != 1:
-                    element: str = line.split(DELIMITER)[n].strip() + "\n"
-                    csv_list.append(element)
-                else:
-                    elements: list[str] = line.split(DELIMITER)[1:]
-                    joined_elements: str = DELIMITER.join(elements)
-                    csv_list.append(joined_elements)
-            except IndexError:
-                empty_line: str = ""
-                csv_list.append(empty_line)
-    return csv_list
-    # with open(csv_path) as csv_file:
-    #    return [line.split(DELIMITER)[n].strip() + "\n" for line in csv_file]
+        return [line.split(DELIMITER)[n].strip() + "\n" for line in csv_file]
 
 
 def remove_empty_builds(lines: list[str]) -> list[str]:
