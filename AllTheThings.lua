@@ -22800,7 +22800,7 @@ local HookableTooltips = {
 	["ItemRefTooltip"]=1,
 	["ShoppingTooltip1"]=1,
 	["ShoppingTooltip2"]=1,
-	-- ["EncounterJournalTooltipItem1Tooltip"]=1,	-- various tooltips in Adventure Guide, not sure any are actually useful to attach ATT data
+	["EncounterJournalTooltipItem1Tooltip"]=1,	-- various tooltips in Adventure Guide, some are actually useful to attach ATT data
 	-- other addons which create user-visible tooltips that ATT should attach into
 	["SilverDragonLootTooltip"]=1,
 };
