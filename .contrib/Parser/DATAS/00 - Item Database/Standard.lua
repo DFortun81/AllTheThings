@@ -95,6 +95,7 @@ q(questID, {	-- Quest Name
 	["maps"] = { mapID },	-- Map Name
 	["races"] = { raceID },
 	["classes"] = { classID },
+	["customCollect"] = { customID },
 	["cost"] = { { "i", itemID, number }, },	-- numberxItem Name
 	["isDaily"] = true,
 	["isWeekly"] = true,
