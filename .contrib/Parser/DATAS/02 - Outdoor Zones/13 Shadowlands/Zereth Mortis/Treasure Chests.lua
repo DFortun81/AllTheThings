@@ -681,7 +681,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, 
 				["coord"] = { 42, 51.9, ZERETH_MORTIS },
 				["questID"] = 65183,
 				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
-				["isWeekly"] = true,
 				["g"] = {
 					i(189710, {	-- Pocopoc's Ruby and Platinum Body
 						["questID"] = 65474,
