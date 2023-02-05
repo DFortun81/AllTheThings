@@ -261,7 +261,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199851, {	-- Double Imbu Knot
 						["spellID"] = 388255,	-- Double Imbu Knot
 						["questID"] = 70803,	-- Triggered after crafting 'Double Imbu Knot'
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 200082, 6 }, -- 6x Battered Imbu-made Net
 							{ "i", 200085, 1 }, -- 1x Khaz'gorite Wire
 						},
@@ -350,7 +350,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 65.6, 73.8, THE_WAKING_SHORES },
 					["questID"] = 74074,
 					["g"] = {
-						i(197001),	-- Cliffside Wylderdrake: Finned Cheek
 						i(197098),	-- Highland Drake: Finned Back (DM!)
 						i(200086),	-- Khaz'gorite Infused Resin
 						i(200245),	-- Leviathan Lure
@@ -379,7 +378,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 65.6, 73.8, THE_WAKING_SHORES },
 					["questID"] = 74084,
 					["g"] = {
-						i(197001),	-- Cliffside Wylderdrake: Finned Cheek
 						i(200086),	-- Khaz'gorite-infused Resin
 						i(200552),	-- Torrent Caller's Shell
 						i(200448),	-- Abyssal Ward
@@ -484,7 +482,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 					["groups"] = {
 						i(198438, {	-- Draconic Recipe in a Bottle
-							["sym"] = {{ "fill" }},	-- simply fill this item						
+							["sym"] = {{ "fill" }},	-- simply fill this item
 						}),
 					},
 				}),
@@ -496,7 +494,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 					["groups"] = {
 						i(198438, {	-- Draconic Recipe in a Bottle
-							["sym"] = {{ "fill" }},	-- simply fill this item						
+							["sym"] = {{ "fill" }},	-- simply fill this item
 						}),
 					},
 				}),
@@ -506,7 +504,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["groups"] = {
 					i(199338),	-- Copper Coin of the Isles
 					i(198438, {	-- Draconic Recipe in a Bottle
-						["sym"] = {{ "fill" }},	-- simply fill this item						
+						["sym"] = {{ "fill" }},	-- simply fill this item
 					}),
 					i(199340),	-- Gold Coin of the Isles
 					i(199339),	-- Silver Coin of the Isles

@@ -50,7 +50,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 74023,
 					["g"] = {
 						i(200682), -- Hardened Scale Shoulderguards
-						i(196992), -- Cliffside Wylderdrake: Heavy Horns
 						i(197403), -- Renewed Proto-Drake: Club Tail
 					},
 				}),
@@ -59,8 +58,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					-- ["questID"] = ,
 					["g"] = {
 						i(200308),	-- Rellen's Legacy
-						i(197016), -- Cliffside Wylderdrake: Maned Tail
-						i(197367), -- Renewed Proto-Drake: Gray Hair
+						i(197367),	-- Renewed Proto-Drake: Gray Hair
 					},
 				}),
 				n(193123, {	-- Steamgill
@@ -68,7 +66,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 74034,
 					["g"] = {
 						i(200216),	-- Water Heating Cord
-						i(196976), -- Cliffside Wylderdrake: Head Mane
 					},
 				}),
 				-- Thaldraszus
@@ -102,7 +99,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						i(200148),	-- A Collection of Me (TOY!)
 						i(200126),	-- Mantle of Copious Chronologies
 						i(200202),	-- Tomorrow's Chains
-						i(197008),	-- Cliffside Wylderdrake: Narrow Stripes Pattern (DM!)
 					},
 				}),
 				n(193240, {	-- Riverwalker Tamopo <Terror of the Shallows>
@@ -138,7 +134,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 35.0, 70.0, THALDRASZUS },
 					["questID"] = 74036,
 					["g"] = {
-						i(196994),	-- Cliffside Wylderdrake: Short Horns
+						i(196994),	-- Cliffside Wylderdrake: Short Horns (DM!)
 						i(200300),	-- Sack of Looted Treasures
 						i(200291),	-- Waterlogged Racing Grips
 					},
@@ -230,7 +226,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						i(200435),	-- Brackish Breeches
 						i(200203),	-- Repurposed Giant's Thimble
 						i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
-						i(197022),	-- Cliffside Wylderdrake: Finned Neck (DM!)
 					},
 				}),
 				n(193120, {	-- Smogswog the Firebreather

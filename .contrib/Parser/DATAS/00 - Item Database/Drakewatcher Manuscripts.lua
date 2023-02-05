@@ -19,7 +19,6 @@ i(196996, 69196);	-- Cliffside Wylderdrake: Branched Horns
 i(196965, 69165);	-- Cliffside Wylderdrake: Bronze and Teal Armor
 i(197000, 69200);	-- Cliffside Wylderdrake: Coiled Horns
 i(196981, 69181);	-- Cliffside Wylderdrake: Conical Head
-i(196962, 69162);	-- Cliffside Wylderdrake: Silver and Purple Armor
 i(196979, 69179);	-- Cliffside Wylderdrake: Curled Head Horns
 i(197015, 69215);	-- Cliffside Wylderdrake: Dark Skin Variation
 i(196973, 69173);	-- Cliffside Wylderdrake: Dual Horned Chin
@@ -48,11 +47,12 @@ i(197023, 69223);	-- Cliffside Wylderdrake: Maned Neck
 i(197016, 69216);	-- Cliffside Wylderdrake: Maned Tail
 i(197008, 69208);	-- Cliffside Wylderdrake: Narrow Stripes Pattern
 i(196972, 69172);	-- Cliffside Wylderdrake: Plated Brow
-i(197006, 69206);	-- Cliffside Wylderdrake: Plated Nose
-i(196988, 69188);	-- Cliffside Wylderdrake: Red Mane
+i(196988, 69188);	-- Cliffside Wylderdrake: Red Hair
+i(197010, 69210);	-- Cliffside Wylderdrake: Red Scales
 i(197009, 69209);	-- Cliffside Wylderdrake: Scaled Pattern
 i(196994, 69194);	-- Cliffside Wylderdrake: Short Horns
 i(196963, 69163);	-- Cliffside Wylderdrake: Silver and Blue Armor
+i(196962, 69162);	-- Cliffside Wylderdrake: Silver and Purple Armor
 i(196993, 69193);	-- Cliffside Wylderdrake: Sleek Horns
 i(196978, 69178);	-- Cliffside Wylderdrake: Small Head Spikes
 i(197020, 69220);	-- Cliffside Wylderdrake: Spear Tail
@@ -60,7 +60,6 @@ i(196970, 69170);	-- Cliffside Wylderdrake: Spiked Back
 i(196971, 69171);	-- Cliffside Wylderdrake: Spiked Brow
 i(197003, 69203);	-- Cliffside Wylderdrake: Spiked Cheek
 i(197021, 69221);	-- Cliffside Wylderdrake: Spiked Club Tail
-i(196995, 69195);	-- Cliffside Wylderdrake: Spiked Horns
 i(197004, 69204);	-- Cliffside Wylderdrake: Spiked Legs
 i(196977, 69177);	-- Cliffside Wylderdrake: Split Head Horns
 i(196997, 69197);	-- Cliffside Wylderdrake: Split Horns
@@ -70,7 +69,6 @@ i(196980, 69180);	-- Cliffside Wylderdrake: Triple Head Horns
 i(196989, 69189);	-- Cliffside Wylderdrake: White Hair
 i(197014, 69214);	-- Cliffside Wylderdrake: White Scales
 i(197007, 69207);	-- Cliffside Wylderdrake: Wide Stripes Pattern
-i(197010, 69210);	-- Cliffside Wylderdrake: Red Scales
 i(197099, 69300);	-- Highland Drake: Armor
 i(197117, 69318);	-- Highland Drake: Black Hair
 i(197142, 69343);	-- Highland Drake: Black Scales
@@ -277,3 +275,5 @@ i(194834, 0);		-- Windborne Velocidrake Manuscript: Windswept
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+i(197006, 69206);	-- Cliffside Wylderdrake: Plated Nose
+i(196995, 69195);	-- Cliffside Wylderdrake: Spiked Horns

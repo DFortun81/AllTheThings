@@ -48,7 +48,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73871,
 				["g"] = {
 					i(200448),	-- Abyssal Ward
-					i(197022),	-- Cliffside-wylderdrake-finned-neck
 					i(200151),	-- Seamist Blade
 					i(197589),	-- Windborne Velocidrake: Large Head Fin
 				},
@@ -78,8 +77,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 72730,
 				["isDaily"] = false,
 				["g"] = {
-					i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
-					i(196985),	-- Cliffside Wylderdrake: Horned Jaw (DM!)
 					i(200256),	-- Darkmaul Soul Horn
 					i(200158),	-- Eerie Spectral Ring
 					i(197098),	-- Highland Drake: Finned Back (DM!)
@@ -128,7 +125,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 16.2, 33.6, THE_AZURE_SPAN },
 				["questID"] = 74004,
 				["g"] = {
-					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 					i(197150),	-- Highland Drake: Spiked Club Tail (DM!)
 					i(200178),	-- Infested Ichor (TOY!)
 				},
@@ -175,11 +171,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(193225, {	-- Notfar the Unbearable
+				["crs"] = { 198703 },	-- Gutrot Slime
 				["coord"] = { 20.6, 49.4, THE_AZURE_SPAN },
 				["questID"] = 73887,
 				["g"] = {
 					i(200160),	-- Notfar's Favorite Food (TOY!)
-					i(197023),	-- Cliffside Wylderdrake: Maned Neck
 				},
 			}),
 			n(193693, {	-- Rusthide
@@ -193,7 +189,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 72846,
 				["isDaily"] = false,
 				["g"] = {
-					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 					i(197150),	-- Highland Drake: Spiked Club Tail (DM!)
 					i(200283),	-- Gnoll-Gnawed Breeches
 					i(200266),	-- Gnollish Chewtoy Launcher
@@ -203,9 +198,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(197344, {	-- Snarglebone
 				["coord"] = { 11.1, 32.2, THE_AZURE_SPAN },
 				["questID"] = 74032,
-				["g"] = {
-					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
-				},
 			}),
 			n(193238, {	-- Spellwrought Snowman
 				["description"] = "Collect 10 arcane energy around the small mountain & after turning them in, click the Arcane Pedestal to summon the mob.",

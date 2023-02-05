@@ -191,7 +191,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["questID"] = 73912,
 						["isDaily"] = true,
 						["g"] = {
-							i(196983),	-- Cliffside Wylderdrake: Maned Jaw (DM!)
 							i(197125),	-- Highland Drake: Coiled Horns (DM!)
 							i(200233),	-- Paradox Saber
 							i(200204),	-- Sandshine Chestplate
@@ -333,7 +332,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["questID"] = 73910,
 						["isDaily"] = true,
 						["g"] = {
-							i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
 							i(197098),	-- Highland Drake: Finned Back (DM!)
 							i(200187),	-- Rod of Glacial Force
 							i(200552),	-- Torrent Caller's Shell
@@ -393,7 +391,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["questID"] = 73918,
 						["isDaily"] = true,
 						["g"] = {
-							i(196991),	-- Cliffside Wylderdrake: Black Horns (DM!)
 							i(200684),	-- Emerald Tailbone
 							i(200246),	-- Lost Delving Lamp
 							i(197149),	-- Highland Drake: Club Tail (DM!)
@@ -415,7 +412,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["questID"] = 73945,
 						["isDaily"] = true,
 						["g"] = {
-							i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
 							i(197098),	-- Highland Drake: Finned Back (DM!)
 							i(200187),	-- Rod of Glacial Force
 							i(200552),	-- Torrent Caller's Shell

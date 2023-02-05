@@ -11,7 +11,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200165),	-- Aegis of Scales
-					i(196992),	-- Cliffside Wylderdrake: Heavy Horns (DM!)
 					i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 				},
 			}),
@@ -53,8 +52,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 72838,
 				["isDaily"] = false,
 				["g"] = {
-					i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
-					i(197005),	-- Cliffside Wylderdrake: Horned Nose (DM!)
 					i(200757),	-- Qalashi War-Helm
 				},
 			}),
@@ -114,7 +111,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73879,
 				["g"] = {
 					i(197098),	-- Highland Drake: Finned Back
-					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
 				},
 			}),
 			-- n(186200, {	-- Harkyn Grymstone // under DF/Timed Based Rare
@@ -130,7 +126,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 72841,
 				["isDaily"] = false,
 				["g"] = {
-					i(197023),	-- Cliffside Wylderdrake: Maned Neck (DM!)
 					i(200313),	-- Earthen Protoscale Drape
 					i(200246),	-- Lost Delving Lamp
 					i(200253),	-- Snowspring Incanter's Knife
@@ -202,7 +197,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200152),	-- Gleaming Blade of Insight
 					i(197116),	-- Highland Drake: Ears
-					i(196999),	-- Cliffside Wylderdrake: Swept Horns (DM!)
 				},
 			}),
 			n(193181, {	-- Skewersnout <Raypier of the Deep>
@@ -213,7 +207,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 				["questID"] = 73895,
 				["g"] = {
-					i(197022),	-- Cliffside Wylderdrake: Finned Neck
+
 					i(200132),	-- Skewer's Snout
 					i(200552),	-- Torrent Caller's Shell
 					i(197589),	-- Windborne Velocidrake: Large Head Fin (DM!)

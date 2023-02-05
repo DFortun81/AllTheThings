@@ -410,10 +410,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 31.1, 56.2, THE_WAKING_SHORES },
 					["questID"] = 74042,
 					["isDaily"] = true,
-					["g"] = {
-						i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
-						i(197005),	-- Cliffside Wylderdrake: Horned Nose (DM!)
-					},
 				}),
 				n(190985, {	-- Death's Shadow
 					["description"] = "Restore 20 Obsidian Keys to Sabellian.",

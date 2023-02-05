@@ -1224,25 +1224,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192111),	-- Renewed Proto-Drake: Red Scales
 			i(192523),	-- Renewed Proto-Drake: Green Scales
 
-			i(196961),	-- Cliffside Wylderdrake: Armor
-			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor
-			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
-			i(196974),	-- Cliffside Wylderdrake: Four Horned Chin
-			i(196975),	-- Cliffside Wylderdrake: Head Fin
-			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes
-			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
-			i(196990),	-- Cliffside Wylderdrake: Helm
-			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
-			i(196995),	-- Cliffside Wylderdrake: Spiked Horns
-			i(196997),	-- Cliffside Wylderdrake: Split Horns
-			i(197000),	-- Cliffside Wylderdrake: Coiled Horns
-			i(197002),	-- Cliffside Wylderdrake: Flared Cheek
-			i(197004),	-- Cliffside Wylderdrake: Spiked Legs
-			i(197006),	-- Cliffside Wylderdrake: Plated Nose
-			i(197014),	-- Cliffside Wylderdrake: White Scales
-			i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
-			i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail
-			i(197022),	-- Cliffside Wylderdrake: Finned Neck
+
+
 			i(197095),	-- Highland Drake: Gold and White Armor
 			i(197099),	-- Highland Drake: Armor
 			i(197102),	-- Highland Drake: Horned Chin
@@ -1300,20 +1283,21 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197629),	-- Windborne Velocidrake: Spiked Neck
 			i(197630),	-- Windborne Velocidrake: Feathered Neck
 			i(197636),	-- Windborne Velocidrake: Shrieker Pattern
-
-			--
-			i(194837),	-- Highland Drake Manuscript: Black Hair (DM!)
-			i(194838),	-- Highland Drake Manuscript: Spined Head (DM!)
-			i(194836),	-- Highland Drake Manuscript: Spined Throat (DM!)
-			i(194839),	-- Cliffside Wylderdrake Manuscript: Conical Head (DM!)
-			i(194841),	-- Cliffside Wylderdrake Manuscript: Red Mane (DM!)
-			i(194840),	-- Cliffside Wylderdrake Manuscript: Triple Head Horns (DM!)
-			i(194831),	-- Renewed Proto Drake Manuscript: Predator Pattern (DM!)
-			i(194830),	-- Renewed Proto Drake Manuscript: Red Hair (DM!)
-			i(194832),	-- Renewed Proto Drake Manuscript: Spined Crest (DM!)
-			i(194833),	-- Windborne Velocidrake Manuscript: Black Fur (DM!)
-			i(194835),	-- Windborne Velocidrake Manuscript: Spined Crest (DM!)
-			i(194834),	-- Windborne Velocidrake Manuscript: Windswept (DM!)
+		}),
+		n(DRAKEWATCHER_MANUSCRIPTS, {
+			-- These are Sure to be NYI
+				i(194837),	-- Highland Drake Manuscript: Black Hair (DM!)
+				i(194838),	-- Highland Drake Manuscript: Spined Head (DM!)
+				i(194836),	-- Highland Drake Manuscript: Spined Throat (DM!)
+				i(194839),	-- Cliffside Wylderdrake Manuscript: Conical Head (DM!)
+				i(194841),	-- Cliffside Wylderdrake Manuscript: Red Mane (DM!)
+				i(194840),	-- Cliffside Wylderdrake Manuscript: Triple Head Horns (DM!)
+				i(194831),	-- Renewed Proto Drake Manuscript: Predator Pattern (DM!)
+				i(194830),	-- Renewed Proto Drake Manuscript: Red Hair (DM!)
+				i(194832),	-- Renewed Proto Drake Manuscript: Spined Crest (DM!)
+				i(194833),	-- Windborne Velocidrake Manuscript: Black Fur (DM!)
+				i(194835),	-- Windborne Velocidrake Manuscript: Spined Crest (DM!)
+				i(194834),	-- Windborne Velocidrake Manuscript: Windswept (DM!)
 		}),
 		n(SPECIAL, {
 			-- Cobolt Assembly

@@ -17,8 +17,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				194392,	-- Brackle
 				194401,	-- Spellforged Horror
 				197009,	-- Liskheszaera
-				
-				-- Ohn'ahran Plains 
+
+				-- Ohn'ahran Plains
 				197353,	-- Blisterhide
 				193153,	-- Ripsaw the Stalker
 				192949,	-- Skaara
@@ -34,8 +34,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				191103,	-- Uranto the Swift
 				194601,	-- Zagdech
 				194624,	-- Zumakh
-				
-				-- Thaldraszus 
+
+				-- Thaldraszus
 				193143,	-- Razk'vex the Untamed
 				193161,	-- Woolfang
 				191305,	-- The Great Shellkhan
@@ -43,8 +43,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				193311,	-- Melkhop
 				193240,	-- Riverwalker Tamopo
 				195417,	-- Tsokorg
-				
-				-- The Azure Span 
+
+				-- The Azure Span
 				193691, -- Fisherman Tinnak <Angered Ghost>
 				193632,	-- Wilrive
 				-- The Azure Span (The Hunt)
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				194760,	-- Uurhilt
 				195101,	-- Yaankhi
 				195283,	-- Yamakh
-				
+
 				-- The Waking Shores
 				187111,	-- Ancient Hornswog
 				190986,	-- Battlehorn Pyrhus
@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				194251,	-- Degmakh
 				194240,	-- Gamgus
 				194225,	-- Muugurv
-				
+
 				-- Lunker (Fishing)
 				193634,	-- Swog'ranka <Lunker>
 			},
@@ -109,6 +109,41 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 		-- Technically, further Header organization under the 'Drops' Header should still work properly for automatic filling of the raw Items
 		n(DROPS, {	-- Items which can drop from multiple, specifically-tagged Creatures
 			n(DRAKEWATCHER_MANUSCRIPTS, {
+				i(196991, {	-- Cliffside Wylderdrake: Black Horns (DM!)
+					["crs"] = {
+						193132,	-- Amethyzar the Glittering
+						190991,	-- Char
+						193663,	-- Craggravated Elemental
+						193142,	-- Enraged Sapphire
+						193704,	-- Honmor
+						187209,	-- Klozicc the Ascended
+						187306,	-- Morchok <Harbinger of Twilight>
+						189289,	-- Penumbrus
+						194458,	-- Rokzul
+						201545,	-- Shapemaster Za'lani
+						193149,	-- Skag the Thrower
+						194763,	-- Tenmod
+						187886,	-- Turboris
+					},
+				}),
+				i(196986, {	-- Cliffside Wylderdrake: Black Hair (DM!)
+					["crs"] = {
+						193178,	-- Blightfur
+						193128,	-- Blightpaw the Depraved
+						197356,	-- High Shaman Rotknuckle
+					},
+				}),
+				i(197019, {	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
+					["crs"] = {
+						193198,	-- Captain Lancer
+						186783,	-- Cauldronbearer Blakor
+						193157,	-- Dragonhunter Gorund
+						191611,	-- Dragonhunter Igordan
+						186200,	-- Harkyn Grymstone
+						193232,	-- Rasnar the War Ender
+						187598,	-- Rohzor Forgesmash <Djaradin Smithmaster>
+					},
+				}),
 				i(196973, {	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
 					["crs"] = {
 						193178,	-- Blightfur
@@ -116,12 +151,119 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						197356,	-- High Shaman Rotknuckle
 					},
 				}),
-				i(197016, {	-- Cliffside Wylderdrake: Maned Tail
+				i(196982, {	-- Cliffside Wylderdrake: Ears (DM!)
+					["crs"] = {
+						193178,	-- Blightfur
+						193128,	-- Blightpaw the Depraved
+						197356,	-- High Shaman Rotknuckle
+						198004,	-- Mange the Outcast
+						193136,	-- Scav Notail
+						192749,	-- Sharpfang
+						197344,	-- Snarglebone
+					},
+				}),
+				i(197001, {	-- Cliffside Wylderdrake: Finned Cheek (DM!)
+					["crs"] = {
+						187945,	-- Anhydros the Tidetaker
+						197411,	-- Astray Splasher <Lunker>
+						193896,	-- Borzgas
+						186962,	-- Cascade
+						193691,	-- Fisherman Tinnak <Angered Ghost>
+						196056,	-- Gushgut the Beaksinker
+						193710,	-- Seereel, the Spring <Lunker>
+						193706,	-- Snufflegust <Lunker>
+						193238,	-- Spellwrought Snowman
+						193634,	-- Swog'ranka <Lunker>
+						193724,	-- Uurtus
+					},
+				}),
+				i(197022, {	-- Cliffside Wylderdrake: Finned Neck (DM!)
+					["crs"] = {
+						194392,	-- Brackle
+						193226,	-- Gorjo the Crab Shackler
+						193241,	-- Lord Epochbrgl <Time-Lost>
+						193152,	-- Massive Magmashell
+						193118,	-- O'nank Shorescour
+						193181,	-- Skewersnout <Raypier of the Deep>
+						193634,	-- Swog'ranka <Lunker>
+					},
+				}),
+				i(196992, {	-- Cliffside Wylderdrake: Heavy Horns (DM!)
+					["crs"] = {
+						193243,	-- Acrosoth
+						187111,	-- Ancient Hornswog
+						193256,	-- Nulltheria the Void Gazer
+						193143,	-- Razk'vex the Untamed
+						196010,	-- Researcher Sneakwing <The Sundered Flame>
+						193722,	-- Tomnu
+					},
+				}),
+				i(196985, {	-- Cliffside Wylderdrake: Horned Jaw (DM!)
+					["crs"] = {
+						193178,	-- Blightfur
+						193691,	-- Fisherman Tinnak <Angered Ghost>
+						193154,	-- Forgotten Gryphon
+						193256,	-- Nulltheria the Void Gazer
+						187559,	-- Shade of Grief
+					},
+				}),
+				i(197005, {	-- Cliffside Wylderdrake: Horned Nose (DM!)
+					["crs"] = {
+						193198,	-- Captain Lancer
+						186783,	-- Cauldronbearer Blakor
+						193157,	-- Dragonhunter Gorund
+						191611,	-- Dragonhunter Igordan
+						186200,	-- Harkyn Grymstone
+						193232,	-- Rasnar the War Ender
+						187598,	-- Rohzor Forgesmash <Djaradin Smithmaster>
+					},
+				}),
+				i(196983, {	-- Cliffside Wylderdrake: Maned Jaw (DM!)
+					["crs"] = {
+						193658,	-- Corrupted Proto-Dragon
+						195431,	-- Diluu
+					},
+				}),
+				i(197023, {	-- Cliffside Wylderdrake: Maned Neck (DM!)
+					["crs"] = {
+						193116,	-- Beogoka
+						193225,	-- Notfar the Unbearable
+						187209,	-- Klozicc the Ascended
+					},
+				}),
+				i(197016, {	-- Cliffside Wylderdrake: Maned Tail (DM!)
 					["crs"] = {
 						189652,	-- Deadwaker Ghendish
 						192020,	-- Eaglemaster Niraak
+						201537,	-- Groffnar
+						201538,	-- Huntmaster Yrgena
+						201540,	-- Lurgan <The Trampler>
 						193227,	-- Ronsak the Decimator
+						201539,	-- Stormcaller Narkena
+						192364,	-- Windscale the Stormborn
 						192045,	-- Windseeker Avash
+					},
+				}),
+				i(197008, {	-- Cliffside Wylderdrake: Narrow Stripes Pattern (DM!)
+					["crs"] = {
+						193126,	-- Innumerable Ruination
+						193241,	-- Lord Epochbrgl <Time-Lost>
+						193210,	-- Phleep <Time-Lost, Mind-Lost>
+						193176,	-- Sandana the Tempest <Timesand Thief>
+					},
+				}),
+				i(196970, {	-- Cliffside Wylderdrake: Spiked Back (DM!)
+					["crs"] = {
+						196165,	-- Gethdazr
+						193885,	-- Salkii
+						193188,	-- Seeker Teryx
+					},
+				}),
+				i(196999, {	-- Cliffside Wylderdrake: Swept Horns (DM!)
+					["crs"] = {
+						193271,	-- Shadeslash Trakken
+						193165,	-- Sparkspitter Vrak
+						201542,	-- Tikarr Frostclaw <<The Lazy>>
 					},
 				}),
 				i(197130, {	-- Highland Drake: Stag Horns
