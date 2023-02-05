@@ -456,7 +456,6 @@ local L = app.L;
 		--TODO: L.PERCENTAGES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
 		L.MORE_COLORS_CHECKBOX = "Afficher les couleurs";
 		--TODO: L.MORE_COLORS_CHECKBOX_TOOLTIP = "Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)";
-		--TODO: L.TOOLTIP_HELP_CHECKBOX = "Show Tooltip Help";
 		L.TOOLTIP_HELP_CHECKBOX = "Afficher l'infobulle d'aide";
 		L.TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez afficher les informations d'aide dans les infobulles des fenêtres ATT qui indiquent les différentes combinaisons de touches / clics pour les fonctionnalités des fenêtres ATT. Si vous connaissez déjà toutes les combinaisons de touches / clics, vous pouvez économiser de l'espace dans les infobulles et désactiver cette option.";
 		--TODO: L.MAIN_LIST_SLIDER_LABEL = "Main List Scale";
