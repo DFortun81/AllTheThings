@@ -42,6 +42,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73872,
 				["g"] = {
 					i(189055),	-- Ghendish's Backup Talisman
+					i(197367), -- Renewed Proto-Drake: Gray Hair
 				},
 			}),
 			n(192020, {	-- Eaglemaster Niraak
@@ -50,7 +51,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74063,
 				["g"] = {
 					i(200536),	-- Tamed Eagle
-					i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
+					i(197016), -- Cliffside Wylderdrake: Maned Tail
+					i(197367), -- Renewed Proto-Drake: Gray Hair
 				},
 			}),
 			n(193142, {	-- Enraged Sapphire
@@ -58,6 +60,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73875,
 				["g"] = {
 					i(200309),	-- Rock Encrusted Chestguard
+					i(196991), -- Cliffside Wylderdrake: Black Horns
+					i(197624), -- Windborne Velocidrake: Club Tail
 				},
 			}),
 		--	n(193170, {	-- Fulgurb // under DF/Timed Based Rare
@@ -107,7 +111,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200434),	-- Anund's Mana-Singed Amice
 					i(200446),	-- Crystalized Sigil
-					i(197106),	-- Highland Drake: Finned Head (DM!)
+					i(197106), -- Highland Drake: Finned Head
+					i(197400), -- Renewed Proto-Drake: Shark Snout
 				},
 			}),
 			n(201540, -- Lurgan
@@ -161,7 +166,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200292),	-- Cragforge Pauldrons
-					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
+					i(197372), -- Renewed Proto-Drake: Purple Hair
+					i(197383), -- Renewed Proto-Drake: Heavy Horns
+					i(197602), -- Windborne Velocidrake: Cluster Horns
+					i(197606), -- Windborne Velocidrake: Swept Horns
 					i(200172),	-- Zephyrdance Signet
 				},
 			}),
@@ -184,6 +192,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200137),	-- Chitin Dreadbringer
+					i(196976), -- Cliffside Wylderdrake: Head Mane
+					i(197111), -- Highland Drake: Maned Head
 				},
 			}),
 			n(195223, {	-- Rustlily <Nimblewing Matriarch>
@@ -202,6 +212,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["cost"] = {{"i", 194681, 1}},	-- Sugarwing Cupcake
 				["g"] = {
 					i(200735),	-- Magically Magical Faerie Flower
+					i(197383), -- Renewed Proto-Drake: Heavy Horns
 				},
 			}),
 			n(193136, {	-- Scav Notail
@@ -209,6 +220,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73893,
 				["g"] = {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
+					i(197150),  -- Highland Drake: Spiked Club Tail
 					i(200168),	-- Gnoll Hide Belt
 					i(200266),	-- Gnollish Chewtoy Launcher
 				},
@@ -218,6 +230,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73894,
 				["g"] = {
 					i(196970),	-- Cliffside Wylderdrake: Spiked Back (DM!)
+					i(196970), -- Cliffside Wylderdrake: Spiked Back
+					i(197105), -- Highland Drake: Spined Chin
+					i(197138), -- Highland Drake: Striped Pattern
+					i(197586), -- Windborne Velocidrake: Spiked Back
 					i(200154),	-- Rubyscale Band
 					i(200875),	-- Seeker's Bands
 				},
@@ -228,6 +244,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74075,
 				["g"] = {
 					i(196996),	-- Cliffside Wylderdrake: Branched Horns (DM!)
+					i(196985), -- Cliffside Wylderdrake: Horned Jaw
 					i(200437),	-- Dreamsong Censer
 					i(197115),	-- Highland Drake: Thorned Jaw (DM!)
 					i(200444),	-- Mantle of the Gatekeeper
@@ -239,6 +256,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
 				["questID"] = 72847,
 				["isDaily"] = false,
+				["groups"] = {
+					i(196976), -- Cliffside Wylderdrake: Head Mane
+					i(197111), -- Highland Drake: Maned Head
+				},
 			}),
 			n(193165, {	-- Sparkspitter Vrak
 				["coord"] = { 22.1, 38.8, OHNAHRAN_PLAINS },
@@ -247,6 +268,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200297),	-- Hastily Cobbled Maul
 					i(200689),	-- Rimetalon Band
 					i(200234),	-- Vrak's Embossed Aegis
+					i(196999), -- Cliffside Wylderdrake: Swept Horns
+					i(197116), -- Highland Drake: Ears
+					i(197372), -- Renewed Proto-Drake: Purple Hair
+					i(197383), -- Renewed Proto-Drake: Heavy Horns
 				},
 			}),
 			-- n(193123, {	-- Steamgill // under DF/Timed Based Rare
@@ -271,6 +296,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(198409),	-- Personal Shell (TOY!)
+					i(197111), -- Highland Drake: Maned Head
 				},
 			}),
 			n(193163, {	-- Territorial Coastling
@@ -279,6 +305,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200212),	-- Sand-Encrusted Graves
+					i(196976), -- Cliffside Wylderdrake: Head Mane
+					i(197111), -- Highland Drake: Maned Head
 				},
 			}),
 			n(196334, {	-- The Great Enla <Scourge of the Plains>
@@ -300,7 +328,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200293),	-- Primal Scion's Twinblade
-					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
+					i(197372), -- Renewed Proto-Drake: Purple Hair
+					i(197383), -- Renewed Proto-Drake: Heavy Horns
+					i(197602), -- Windborne Velocidrake: Cluster Horns
+					i(197606), -- Windborne Velocidrake: Swept Horns
 					i(198429),	-- Typhoon Bringer
 					i(200172),	-- Zephyrdance Signet
 				},
@@ -317,8 +348,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- TODO: add crs for kill npcs
 				["coord"] = { 84.2, 47.8, OHNAHRAN_PLAINS },
 				["questID"] = 73979,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(197016), -- Cliffside Wylderdrake: Maned Tail
+					i(197367), -- Renewed Proto-Drake: Gray Hair
+				},
 			}),
 			n(192045, {	-- Windseeker Avash
 				["coord"] = { 58.6, 68.2, OHNAHRAN_PLAINS },
@@ -332,6 +365,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73901,
 				["g"] = {
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
+					i(196976), -- Cliffside Wylderdrake: Head Mane
+					i(197111), -- Highland Drake: Maned Head
+					i(197372), -- Renewed Proto-Drake: Purple Hair
+					i(197606), -- Windborne Velocidrake: Swept Horns
 					i(200314),	-- Skyspeaker's Envelope
 					i(200306),	-- Tempest Shawl
 					i(200879, {	-- Zenet Egg
