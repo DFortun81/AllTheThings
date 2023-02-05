@@ -5,10 +5,25 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 	n(ISKAARA_TUSKARR, {
 		n(ISKAARA_FISHING, {
 			n(ACHIEVEMENTS, {
-				ach(16322),	-- Best in Slot
+				ach(16322, {	-- Best in Slot
+					crit(1, {	-- Harpoon handle
+						["_quests"] = { 70795 },	-- Reinforced Irontree Harpoon Handle
+					}),
+					crit(2, {	-- Harpoon head
+						["_quests"] = { 70797 },	-- Jagged Serevite Harpoon Head
+					}),
+					crit(3, {	-- harpoon rope
+						["_quests"] = { 70799 },	-- Braided Seavine Harpoon Rope
+					}),
+					crit(4, {	-- Fishing net weights
+						["_quests"] = { 70801 },	-- Dense Draconium Net Weights
+					}),
+					crit(5, {	-- fishing net nots
+						["_quests"] = { 70803 },	-- Double Imbu Knot
+					}),
+				}),
 				ach(16321),	-- Cutting Tusk Equipment
 				ach(16317),	-- Secret Fishing Spots
-
 				ach(16561),	-- Lunkers, Lunkers Everywhere
 				ach(16562),	-- That's not a Fish...
 				ach(16563),	-- We're Going to Need a Bigger Harpoon
@@ -243,10 +258,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["spellID"] = 388253,	-- Dense Draconium Net Weights
 						["questID"] = 70801,	-- Triggered after crafting 'Dense Draconium Net Weights'
 					}),
-					i(199848, {	-- Draconium Net Weights
-						["spellID"] = 388252,	-- Draconium Net Weights
-						["questID"] = 70800,	-- Triggered after crafting 'Draconium Net Weights'
-					}),
 					i(199851, {	-- Double Imbu Knot
 						["spellID"] = 388255,	-- Double Imbu Knot
 						["questID"] = 70803,	-- Triggered after crafting 'Double Imbu Knot'
@@ -254,6 +265,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 							{ "i", 200082, 6 }, -- 6x Battered Imbu-made Net
 							{ "i", 200085, 1 }, -- 1x Khaz'gorite Wire
 						},
+					}),
+					i(199848, {	-- Draconium Net Weights
+						["spellID"] = 388252,	-- Draconium Net Weights
+						["questID"] = 70800,	-- Triggered after crafting 'Draconium Net Weights'
 					}),
 					i(199694, {	-- Flying Fish Bone Charm
 						["spellID"] = 387827,	-- Flying Fish Bone Charm
@@ -291,13 +306,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["spellID"] = 387594,	-- Reinforced Irontree Harpoon Handle
 						["questID"] = 70795,	-- Triggered after crafting 'Reinforced Irontree Harpoon Handle'
 					}),
-					i(199844, {	-- Serevite Harpoon Head
-						["spellID"] = 387375,	-- Serevite Harpoon Head
-						["questID"] = 70796,	-- Triggered after crafting 'Serevite Harpoon Head'
-					}),
 					i(199846, {	-- Seavine Harpoon Rope
 						["spellID"] = 388250,	-- Seavine Harpoon Rope
 						["questID"] = 70798,	-- Triggered after crafting 'Seavine Harpoon Rope'
+					}),
+					i(199844, {	-- Serevite Harpoon Head
+						["spellID"] = 387375,	-- Serevite Harpoon Head
+						["questID"] = 70796,	-- Triggered after crafting 'Serevite Harpoon Head'
 					}),
 				},
 			})),
