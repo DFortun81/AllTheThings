@@ -325,7 +325,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 							{ "c", DRAGON_SUPPLIES, 400 },
 						},
 					}),
-						-- RENOWN 15 ---
+						-- RENOWN 15 --
 					i(198902, {	-- Technique: Windborne Velocidrake: Black Fur (RECIPE!)
 						["minReputation"] = { 2503, 15 },	-- Maruuk Centaur Renown 15
 						["cost"] = {

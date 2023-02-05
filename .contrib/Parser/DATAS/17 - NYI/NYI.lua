@@ -49,7 +49,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 5.3.0
 				q(32832),	-- Taran Zhu and Dezco Scene
 				-- 6.0.1
-				q(33957, { -- A Gift for Raa'la
+				q(33957, {	-- A Gift for Raa'la
 					["description"] = "Area: |cFFf09f26Frostfire Ridge|r",
 					["lvl"] = 10,
 				}),
@@ -186,7 +186,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(193853),	-- Emmah
 		i(193854),	-- Berylmane
 		i(193908),	-- Kobaldt
-		i(197136),	-- Highland Drake: Tapered Nose
+		i(197136),	-- Highland Drake: Tapered Nose (DM!)
 		i(197989),	-- Water-Ordained Signet
 		i(198138),	-- Lightning-Infused Rock
 		i(198156),	-- Wyrmhole Generator: Dragon Isles
@@ -1226,23 +1226,23 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 
 
-			i(197095),	-- Highland Drake: Gold and White Armor
-			i(197099),	-- Highland Drake: Armor
-			i(197102),	-- Highland Drake: Horned Chin
-			i(197104),	-- Highland Drake: Tapered Chin
-			i(197109),	-- Highland Drake: Spiked Head
-			i(197116),	-- Highland Drake: Ears
-			i(197118),	-- Highland Drake: Brown Hair
-			i(197119),	-- Highland Drake: Helm
-			i(197120),	-- Highland Drake: Ornate Helm
-			i(197124),	-- Highland Drake: Swept Horns
-			i(197129),	-- Highland Drake: Sleek Horns
-			i(197131),	-- Highland Drake: Hairy Cheek
-			i(197134),	-- Highland Drake: Spiked Legs
-			i(197136),	-- Highland Drake: Taperered Nose
-			i(197146),	-- Highland Drake: White Scales
-			i(197155),	-- Highland Drake: Finned Neck
-			i(197156),	-- Highland Drake: Bronze and Green Armor
+			i(197095),	-- Highland Drake: Gold and White Armor (DM!)
+			i(197099),	-- Highland Drake: Armor (DM!)
+			i(197102),	-- Highland Drake: Horned Chin (DM!)
+			i(197104),	-- Highland Drake: Tapered Chin (DM!)
+			i(197109),	-- Highland Drake: Spiked Head (DM!)
+			i(197116),	-- Highland Drake: Ears (DM!)
+			i(197118),	-- Highland Drake: Brown Hair (DM!)
+			i(197119),	-- Highland Drake: Helm (DM!)
+			i(197120),	-- Highland Drake: Ornate Helm (DM!)
+			i(197124),	-- Highland Drake: Swept Horns (DM!)
+			i(197129),	-- Highland Drake: Sleek Horns (DM!)
+			i(197131),	-- Highland Drake: Hairy Cheek (DM!)
+			i(197134),	-- Highland Drake: Spiked Legs (DM!)
+			i(197136),	-- Highland Drake: Taperered Nose (DM!)
+			i(197146),	-- Highland Drake: White Scales (DM!)
+			i(197155),	-- Highland Drake: Finned Neck (DM!)
+			i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
 			i(197348),	-- Renewed Proto-Drake: Black and Red Armor
 			i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 			i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor
@@ -2324,7 +2324,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(137279),	-- Nightfallen Vendor List
 				i(134008),	-- Simple Rosary of Light
 				i(137282),	-- Valarjar Vendor List
-				i(139603, { -- Vault Patroller's Warboots
+				i(139603, {	-- Vault Patroller's Warboots
 					["bonusID"] = 1,
 				}),
 				i(137278),	-- Wardens Vendor List

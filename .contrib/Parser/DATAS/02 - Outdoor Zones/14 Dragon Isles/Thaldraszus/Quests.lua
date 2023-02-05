@@ -814,7 +814,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["coord"] = { 50.3, 67.7, THALDRASZUS },
 					}),
 					q(69932, {	-- Every Life Counts
-						["sourceQuests"] = { 72399 }, -- The Hermit's Garden
+						["sourceQuests"] = { 72399 },	-- The Hermit's Garden
 						["provider"] = { "n", 193538 },	-- Szareth
 						["coord"] = { 50.3, 67.7, THALDRASZUS },
 					}),

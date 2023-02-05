@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 36.8, 35.8, THE_AZURE_SPAN },
 				["questID"] = 73883,
 				["g"] = {
-					i(200684),  -- Emerald tailbone
+					i(200684),	-- Emerald tailbone
 					i(197149),	-- Highland Drake: Club Tail (DM!)
 					i(200157),	-- Pathmaker
 				},

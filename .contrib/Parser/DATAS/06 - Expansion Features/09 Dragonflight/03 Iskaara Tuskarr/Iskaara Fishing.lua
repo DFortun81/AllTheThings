@@ -262,8 +262,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["spellID"] = 388255,	-- Double Imbu Knot
 						["questID"] = 70803,	-- Triggered after crafting 'Double Imbu Knot'
 						["cost"] = {
-							{ "i", 200082, 6 }, -- 6x Battered Imbu-made Net
-							{ "i", 200085, 1 }, -- 1x Khaz'gorite Wire
+							{ "i", 200082, 6 },	-- 6x Battered Imbu-made Net
+							{ "i", 200085, 1 },	-- 1x Khaz'gorite Wire
 						},
 					}),
 					i(199848, {	-- Draconium Net Weights

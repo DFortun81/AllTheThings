@@ -494,7 +494,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						},
 					}),
 						-- RENOWN 13 --
-					i(198894, {	-- Technique: Highland Drake: Black Hair
+					i(198894, {	-- Technique: Highland Drake: Black Hair (RECIPE!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 25 },
 						},

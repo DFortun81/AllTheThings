@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 			ach(16699, {	-- Renewed Proto-Drake Scales and Patterns
 				crit(56246,	{	-- Green Scales
-					["provider"] = { "i", 197389 }, -- Renewed Proto-Drake: Green Scales (DM!)
+					["provider"] = { "i", 197389 },	-- Renewed Proto-Drake: Green Scales (DM!)
 				}),
 				crit(56261, {	-- Blue Scales
 					["provider"] = { "i", 197390 },	-- Renewed Proto-Drake: Blue Scales (DM!)
@@ -333,7 +333,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197147 },	-- Highland Drake: Heavy Scales (DM!)
 				}),
 				crit(56358, {	-- Striped Pattern
-					["provider"] = { "i", 197138 },	-- Highland Drake: Striped Pattern
+					["provider"] = { "i", 197138 },	-- Highland Drake: Striped Pattern (DM!)
 				}),
 				crit(56359, {	-- Large Spotted Pattern
 					["provider"] = { "i", 197139 },	-- Highland Drake: Large Spotted Pattern (DM!)

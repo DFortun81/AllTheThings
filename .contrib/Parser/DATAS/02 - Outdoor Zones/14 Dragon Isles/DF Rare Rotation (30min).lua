@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["isDaily"] = true,
 					["g"] = {
 						i(200433),	-- Footwraps of Subjugation
-						i(197111), -- Highland Drake: Maned Head
+						i(197111),	-- Highland Drake: Maned Head (DM!)
 					},
 				}),
 				n(193212, {	-- Malsegan
@@ -29,28 +29,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 62.8, 79.8, OHNAHRAN_PLAINS },
 					["questID"] = 74015,
 					["g"] = {
-						i(200542), -- Breezy Companion
-						i(197372), -- Renewed Proto-Drake: Purple Hair
-						i(197602), -- Windborne Velocidrake: Cluster Horns
-						i(197606), -- Windborne Velocidrake: Swept Horns
+						i(200542),	-- Breezy Companion
+						i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
+						i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
+						i(197606),	-- Windborne Velocidrake: Swept Horns (DM!)
 					},
 				}),
 				n(193235, {	-- Oshigol
 					["coord"] = { 60.8, 26.8, OHNAHRAN_PLAINS },
 					["questID"] = 74018,
 					["g"] = {
-						i(200684), -- Emerald Tailbone
-						i(197149), -- Highland Drake: Club Tail
-						i(200203), -- Repurposed Giant's Thimble
-						i(197608), -- Windborne Velocidrake: Gray Horns
+						i(200684),	-- Emerald Tailbone
+						i(197149),	-- Highland Drake: Club Tail (DM!)
+						i(200203),	-- Repurposed Giant's Thimble
+						i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
 					},
 				}),
 				n(196010, {	-- Researcher Sneakwing <The Sundered Flame>
 					["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
 					["questID"] = 74023,
 					["g"] = {
-						i(200682), -- Hardened Scale Shoulderguards
-						i(197403), -- Renewed Proto-Drake: Club Tail
+						i(200682),	-- Hardened Scale Shoulderguards
+						i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 					},
 				}),
 				n(193227, {	-- Ronsak the Decimator
@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					-- ["questID"] = ,
 					["g"] = {
 						i(200308),	-- Rellen's Legacy
-						i(197367),	-- Renewed Proto-Drake: Gray Hair
+						i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
 					},
 				}),
 				n(193123, {	-- Steamgill
@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				n(186200, {	-- Harkyn Grymstone
 					["crs"] = {
-						186201, -- Groth
+						186201,	-- Groth
 						186203,	-- Snee
 						186202,	-- Voll
 					},

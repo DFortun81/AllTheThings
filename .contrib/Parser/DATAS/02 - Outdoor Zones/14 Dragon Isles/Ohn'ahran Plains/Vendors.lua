@@ -48,16 +48,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["cost"] = { { "i", 199339, 1}, },	-- 1xSilver Coin of the Isles
 						["groups"] = {
 							i(198438, {	-- Draconic Recipe in a Bottle
-								["sym"] = {{ "fill" }},	-- simply fill this item						
-							}),	
+								["sym"] = {{ "fill" }},	-- simply fill this item
+							}),
 						},
 					}),
 					i(202102, {	-- Immaculate Sac of Swog Treasures
 						["cost"] = { { "i", 199340, 1}, },	-- 1x Gold Coin of the Isles
 						["groups"] = {
 							i(198438, {	-- Draconic Recipe in a Bottle
-								["sym"] = {{ "fill" }},	-- simply fill this item						
-							}),							
+								["sym"] = {{ "fill" }},	-- simply fill this item
+							}),
 							i(199234),	-- Schematic: Khaz'gorite Fisherfriend (RECIPE!)
 							i(201736),	-- Technique: Cliffside Wylderdrake: Steel and Yellow Armor (RECIPE!)
 							i(201737),	-- Technique: Highland Drake: Steel and Yellow Armor (RECIPE!)

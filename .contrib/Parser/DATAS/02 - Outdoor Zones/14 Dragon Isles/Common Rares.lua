@@ -45,13 +45,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				195417,	-- Tsokorg
 
 				-- The Azure Span
-				193691, -- Fisherman Tinnak <Angered Ghost>
+				193691,	-- Fisherman Tinnak <Angered Ghost>
 				193632,	-- Wilrive
 				-- The Azure Span (The Hunt)
 				194761,	-- Khuumog
 				195093,	-- Moskhoi
 				194763,	-- Tenmod
-				195132, -- Tevgai
+				195132,	-- Tevgai
 				194760,	-- Uurhilt
 				195101,	-- Yaankhi
 				195283,	-- Yamakh
@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				192737,	-- Qalashi War Mammoth
 				193885,	-- Salkii
 				189822,	-- Shas'ith
-				190971, -- Shas'ith (Pre Combat Version?)
+				190971,	-- Shas'ith (Pre Combat Version?)
 				193181,	-- Skewersnout
 				193148,	-- Thunderous Matriarch
 				-- The Waking Shores (The Hunt)
@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						201542,	-- Tikarr Frostclaw <<The Lazy>>
 					},
 				}),
-				i(197130, {	-- Highland Drake: Stag Horns
+				i(197130, {	-- Highland Drake: Stag Horns (DM!)
 					["crs"] = {
 						193126,	-- Innumerable Ruination
 						193241,	-- Lord Epochbrgl
@@ -274,7 +274,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						193176,	-- Sandana the Tempest
 					},
 				}),
-				i(197138, {	-- Highland Drake: Striped Pattern
+				i(197138, {	-- Highland Drake: Striped Pattern (DM!)
 					["crs"] = {
 						193664,	-- Ancient Protector
 						193220,	-- Broodweaver Araznae

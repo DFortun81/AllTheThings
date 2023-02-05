@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 195543 },	-- Sansok Khan
 				["coord"] = { 63.3, 41.3, OHNAHRAN_PLAINS },
 			}),
-				-- RENOWN 2	--
+				-- RENOWN 2 --
 			q(72762, {	-- Sharing the Bounty
 				["minReputation"] = { 2503, 2 },	-- Maruuk Centaur Renown 2
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng

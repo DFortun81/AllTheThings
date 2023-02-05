@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 58.7, 40.3, THE_WAKING_SHORES },
 				["questID"] = 73865,
 				["g"] = {
-					i(200245), -- Leviathan Lure
+					i(200245),	-- Leviathan Lure
 				},
 			}),
 		--	n(193135, {	-- Azra's Prized Peony // under DF/Timed Based Rare
@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200138),	-- Ancient Dancer's Longspear
 					i(200303),	-- Dreamweaver Acolyte's Staff
-					i(197100),	-- Highland Drake: Crested Brow
+					i(197100),	-- Highland Drake: Crested Brow (DM!)
 					i(197586),	-- Windborne Velocidrake: Spiked Back
 				},
 			}),
@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 52.6, 58.6, THE_WAKING_SHORES },
 				["questID"] = 73879,
 				["g"] = {
-					i(197098),	-- Highland Drake: Finned Back
+					i(197098),	-- Highland Drake: Finned Back (DM!)
 				},
 			}),
 			-- n(186200, {	-- Harkyn Grymstone // under DF/Timed Based Rare
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74076,
 				["g"] = {
 					i(200152),	-- Gleaming Blade of Insight
-					i(197116),	-- Highland Drake: Ears
+					i(197116),	-- Highland Drake: Ears (DM!)
 				},
 			}),
 			n(193181, {	-- Skewersnout <Raypier of the Deep>
