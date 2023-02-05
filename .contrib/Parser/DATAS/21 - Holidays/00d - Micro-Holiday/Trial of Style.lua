@@ -330,6 +330,7 @@ root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(TRIAL_OF_STYLE, bubbleD
 			i(202298, {	-- Trader's Bicorne
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 }, },
 				["timeline"] = { ADDED_DF_0_5 },
+				["description"] = "You will get this hat for free if you participate in the Trial of Style between March 20th and March 24th 2023.",	--TODO: remove this line after the event is over
 			}),
 			i(190544, {	-- Ultramafic Girdle
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
