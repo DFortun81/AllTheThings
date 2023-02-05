@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THE_PRIMALIST_FUTURE, {
-		q(73162),	-- Killing Nimbulatus
+		q(73162),	-- Killing Nimbulatus/Seismodor
 		q(74552),	-- flagged when 74378 "The Storm's Fury" unflagged first time
 	}),
 }));
