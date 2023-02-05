@@ -633,7 +633,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 706 },	-- Frostmane Troll Whelp
 								}),
 								i(2047),	-- Anvilmar Hand Axe
-								i(2048),	-- Anvilmar Hammer
+								i(2048, {	-- Anvilmar Hammer
+									["timeline"] = { "removed 4.0.3" },
+								}),
 								i(2195),	-- Anvilmar Knife
 								i(5761),	-- Anvilmar Sledge
 								i(961),	-- Healing Herb

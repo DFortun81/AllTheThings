@@ -1057,7 +1057,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2521),	-- Flamberge
 				i(5779),	-- Forsaken Bastard Sword
 				i(40004),	-- Forsaken Greatsword
-				i(142274),	-- Keleseth's Persuader	-- TODO Legion
 				i(8177),	-- Practice Sword
 				i(24430),	-- Seafarer's Blade
 				i(2489),	-- Two-Handed Sword

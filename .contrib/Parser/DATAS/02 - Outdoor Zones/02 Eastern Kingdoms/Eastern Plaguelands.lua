@@ -328,7 +328,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							q(12697, {	-- Gothik the Harvester
 								["qg"] = 28377,	-- Prince Valanar
-								["sourceQuest"] = 12678,	-- If Chaos Drives, Let Suffering Hold the Reins (possibly more requirements)
+								["sourceQuests"] = {
+									12678,	-- If Chaos Drives, Let Suffering Hold the Reins
+									12679,	-- Tonight We Dine In Havenshire
+									12733,	-- Death's Challenge
+									12687,	-- Into the Realm of Shadows
+								},
 								["coord"] = { 52.2, 33.9, THE_SCARLET_ENCLAVE },
 							}),
 							q(12680, {	-- Grand Theft Palomino
@@ -352,6 +357,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									}),
 									i(39418, {	-- Ornately Jeweled Box
 										i(39371),	-- Keleseth's Persuader
+										i(142274, {	-- Keleseth's Persuader
+											["timeline"] = { "added 7.0.3.22248" },
+										}),
 									}),
 									i(38672),	-- Keleseth's Signet Ring
 								},
