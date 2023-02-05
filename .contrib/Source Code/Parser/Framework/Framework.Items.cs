@@ -947,6 +947,7 @@ namespace ATT
                     if (!((f > 0 && f < 38) || f == 57))
                     {
                         LogDebug($"SourceID for Item {itemID} skipped due to Item Filter {(Objects.Filters)f}");
+                        return;
                     }
                 }
 
