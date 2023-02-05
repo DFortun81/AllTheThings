@@ -3,6 +3,7 @@
 -----------------------------------------------------
 -- Blizzard removed the 10 man Quest / Quest Item, but not the necks themselves in Wrath Classic.
 -- They were instead moved to Heroic+ dungeon bosses.
+-- #if ANYCLASSIC
 local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
@@ -12,7 +13,8 @@ local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 		t.rwp = 30100;
 	end
 end]];
-root(ROOTS.Instances, tier(WOTLK_TIER, {
+-- #endif
+root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(754, {	-- Naxxramas
 		["mapID"] = NAXXRAMAS,
 		["maps"] = { 163, 164, 165, 166, 167 },
@@ -21,7 +23,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, {
 		["sharedLockout"] = 1,
 		-- #endif
 		["isRaid"] = true,
-		["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
+		["groups"] = {
 			d(3, {	-- 10-Man
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
@@ -1518,6 +1520,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, {
 					}),
 				},
 			}),
-		}),
+		},
 	}),
-}));
+})));

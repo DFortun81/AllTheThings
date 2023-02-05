@@ -1565,6 +1565,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74001, {	-- Gruffy
 					["provider"] = { "n", 193251 },	-- Gruffy
 					["coord"] = { 32.5, 29.2, THE_AZURE_SPAN },
+					["timeline"] = { ADDED_DF_0_5 },
 				}),
 				q(69892, {	-- Grumbletrunk
 					["provider"] = { "n", 193269 },	-- Grumbletrunk
@@ -1598,6 +1599,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 201555 },	-- Srivantor
 					["coord"] = { 46.7, 21.9, THE_AZURE_SPAN },
 					["isDaily"] = true,
+					["timeline"] = { ADDED_DF_0_5 },
 				}),
 				q(65841, {	-- Stop the Spread
 					["sourceQuests"] = {

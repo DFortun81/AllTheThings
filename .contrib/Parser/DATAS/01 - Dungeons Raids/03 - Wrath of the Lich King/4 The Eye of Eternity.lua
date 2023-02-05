@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- #if ANYCLASSIC
 local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
@@ -10,6 +11,7 @@ local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 		t.rwp = 30100;
 	end
 end]];
+-- #endif
 root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(756, {	-- The Eye of Eternity
 		["mapID"] = THE_EYE_OF_ETERNITY,

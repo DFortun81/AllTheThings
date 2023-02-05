@@ -2790,7 +2790,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74225),	-- Skinning Battlehorn Pyrhus
 			q(74228),	-- Skinning Worldcarver A'tir
 			q(74229),	-- Skinning Death's Shadow
-			q(74550),	-- Skinning Groffnar
+			q(74550, {["timeline"] = { ADDED_DF_0_5 }}),	-- Skinning Groffnar
 			q(74551, {["timeline"] = { ADDED_DF_0_5 }}),	-- Skinning Bloodbeak the Ravenous
 			q(74555, {["timeline"] = { ADDED_DF_0_5 }}),	-- Skinning Shardwing
 			q(74559, {["timeline"] = { ADDED_DF_0_5 }}),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)

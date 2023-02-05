@@ -5,25 +5,9 @@ local i = function(itemID, questID)
 	Items[itemID] = { ["questID"] = questID };
 end
 
--- Special
-i(201792, 72371);	-- Highland Drake: Embodiment of the Crimson Gladiator
-i(201790, 72367);	-- Renewed Proto-Drake: Embodiment of the Storm-Eater
-
--- These might be NYI? Two Versions exists
-i(194839, 0);	-- Cliffside Wylderdrake Manuscript: Conical Head
-i(194840, 0);	-- Cliffside Wylderdrake Manuscript: Triple Head Horns
-i(194841, 0);	-- Cliffside Wylderdrake Manuscript: Red Mane
-i(194837, 0);	-- Highland Drake Manuscript: Black Hair
-i(194838, 0);	-- Highland Drake Manuscript: Spined Head
-i(194836, 0);	-- Highland Drake Manuscript: Spined Throat
-i(194831, 0);	-- Renewed Proto Drake Manuscript: Predator Pattern
-i(194830, 0);	-- Renewed Proto Drake Manuscript: Red Hair
-i(194832, 0);	-- Renewed Proto Drake Manuscript: Spined Crest
-i(194833, 0);	-- Windborne Velocidrake Manuscript: Black Fur
-i(194835, 0);	-- Windborne Velocidrake Manuscript: Spined Crest
-i(194834, 0);	-- Windborne Velocidrake Manuscript: Windswept
-
--- Obtainable?
+------------------
+-- PATCH 10.0.2 --
+------------------
 i(196961, 69161);	-- Cliffside Wylderdrake: Armor
 i(196991, 69191);	-- Cliffside Wylderdrake: Black Horns
 i(196986, 69186);	-- Cliffside Wylderdrake: Black Hair
@@ -273,3 +257,23 @@ i(197616, 69820);	-- Windborne Velocidrake: White Scales
 i(197582, 69786);	-- Windborne Velocidrake: White and Pink Armor
 i(197634, 69845);	-- Windborne Velocidrake: Windswept Pattern
 i(197610, 69814);	-- Windborne Velocidrake: Yellow Horns
+-- Special --
+i(201792, 72371);	-- Highland Drake: Embodiment of the Crimson Gladiator
+i(201790, 72367);	-- Renewed Proto-Drake: Embodiment of the Storm-Eater
+-- NYI --
+i(194837, 0);		-- Highland Drake Manuscript: Black Hair
+i(194838, 0);		-- Highland Drake Manuscript: Spined Head
+i(194836, 0);		-- Highland Drake Manuscript: Spined Throat
+i(194839, 0);		-- Cliffside Wylderdrake Manuscript: Conical Head
+i(194841, 0);		-- Cliffside Wylderdrake Manuscript: Red Mane
+i(194840, 0);		-- Cliffside Wylderdrake Manuscript: Triple Head Horns
+i(194831, 0);		-- Renewed Proto Drake Manuscript: Predator Pattern
+i(194830, 0);		-- Renewed Proto Drake Manuscript: Red Hair
+i(194832, 0);		-- Renewed Proto Drake Manuscript: Spined Crest
+i(194833, 0);		-- Windborne Velocidrake Manuscript: Black Fur
+i(194835, 0);		-- Windborne Velocidrake Manuscript: Spined Crest
+i(194834, 0);		-- Windborne Velocidrake Manuscript: Windswept
+
+------------------
+-- PATCH 10.0.7 --
+------------------

@@ -151,18 +151,10 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 			}),
 			n(PVP_GLADIATOR, {
 				filter(CLOAKS, {
-					i(175888, {	-- Sinful Gladiator's Cloak
-						["description"] = "Unlocked after buying the Sinful Gladiator's Cloth Ensemble.",
-					}),
-					i(178353, {	-- Sinful Gladiator's Drape
-						["description"] = "Unlocked after buying the Sinful Gladiator's Leather Ensemble.",
-					}),
-					i(184311, {	-- Sinful Gladiator's Greatcloak
-						["description"] = "Unlocked after buying the Sinful Gladiator's Plate Ensemble.",
-					}),
-					i(178414, {	-- Sinful Gladiator's Shawl
-						["description"] = "Unlocked after buying the Sinful Gladiator's Mail Ensemble.",
-					}),
+					i(175888),	-- Sinful Gladiator's Cloak
+					i(178353),	-- Sinful Gladiator's Drape
+					i(184311),	-- Sinful Gladiator's Greatcloak
+					i(178414),	-- Sinful Gladiator's Shawl
 				}),
 				filter(CLOTH, {
 					i(178375),	-- Sinful Gladiator's Silk Amice

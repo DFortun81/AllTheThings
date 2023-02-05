@@ -648,9 +648,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 			}),
 		})),
-		pvp(i(201792)),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
-		i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
-		-- Obtainable?
 		i(196961),	-- Cliffside Wylderdrake: Armor
 		i(196991),	-- Cliffside Wylderdrake: Black Horns (DM!)
 		i(196986),	-- Cliffside Wylderdrake: Black Hair (DM!)
@@ -885,6 +882,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197582),	-- Windborne Velocidrake: White and Pink Armor
 		i(197634),	-- Windborne Velocidrake: Windswept Pattern (DM!)
 		i(197610),	-- Windborne Velocidrake: Yellow Horns (DM!)
+		-- Special --
+		pvp(i(201792)),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
+		i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 	}),
 })));
 
@@ -903,19 +903,4 @@ root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_
 	i(197604),	-- Windborne Velocidrake: Ox Horns ("centaur renown" but not on vendor)
 	i(197636),	-- Windborne Velocidrake: Shrieker Pattern ("centaur renown" but not on vendor)
 	i(197609),	-- Windborne Velocidrake: White Horns ("world drop" but not found in 2months")
-	--[[
-		-- These might be NYI? Two Versions exists
-		i(194839),	-- Cliffside Wylderdrake Manuscript: Conical Head
-		i(194840),	-- Cliffside Wylderdrake Manuscript: Triple Head Horns
-		i(194841),	-- Cliffside Wylderdrake Manuscript: Red Mane
-		i(194837),	-- Highland Drake Manuscript: Black Hair
-		i(194838),	-- Highland Drake Manuscript: Spined Head
-		i(194836),	-- Highland Drake Manuscript: Spined Throat
-		i(194831),	-- Renewed Proto Drake Manuscript: Predator Pattern
-		i(194830),	-- Renewed Proto Drake Manuscript: Red Hair
-		i(194832),	-- Renewed Proto Drake Manuscript: Spined Crest
-		i(194833),	-- Windborne Velocidrake Manuscript: Black Fur
-		i(194835),	-- Windborne Velocidrake Manuscript: Spined Crest
-		i(194834),	-- Windborne Velocidrake Manuscript: Windswept
-	--]]
 })));
