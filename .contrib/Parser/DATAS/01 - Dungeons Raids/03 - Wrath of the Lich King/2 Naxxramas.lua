@@ -1,6 +1,17 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- Blizzard removed the 10 man Quest / Quest Item, but not the necks themselves in Wrath Classic.
+-- They were instead moved to Heroic+ dungeon bosses.
+local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
+	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then
+		t.u = ]] .. REMOVED_FROM_GAME .. [[;
+		t.rwp = nil;
+	else
+		t.u = ]] .. WRATH_PHASE_ONE .. [[;
+		t.rwp = 30100;
+	end
+end]];
 root(ROOTS.Instances, tier(WOTLK_TIER, {
 	inst(754, {	-- Naxxramas
 		["mapID"] = NAXXRAMAS,
@@ -43,6 +54,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, {
 					n(QUESTS, {
 						q(13372, {	-- The Key to the Focusing Iris (Quest)
 							["provider"] = { "i", 44569 },	-- Key to the Focusing Iris (Item)
+							-- #if ANYCLASSIC
+							["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
+							-- #endif
 							["lvl"] = lvlsquish(78, 78, 30),
 						}),
 					}),
@@ -603,7 +617,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, {
 									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
 									-- #endif
 								}),
-								i(44569),	-- Key to the Focusing Iris (Item)
+								i(44569, {	-- Key to the Focusing Iris (Item)
+									-- #if ANYCLASSIC
+									["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
+									-- #endif
+								}),
 								i(39409),	-- Cowl of Winged Fear
 								i(39403),	-- Helm of the Unsubmissive
 								i(39399),	-- Helm of the Vast Legions

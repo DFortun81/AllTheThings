@@ -1,6 +1,15 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
+	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then
+		t.u = ]] .. REMOVED_FROM_GAME .. [[;
+		t.rwp = nil;
+	else
+		t.u = ]] .. WRATH_PHASE_ONE .. [[;
+		t.rwp = 30100;
+	end
+end]];
 root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(756, {	-- The Eye of Eternity
 		["mapID"] = THE_EYE_OF_ETERNITY,
@@ -17,6 +26,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						["qg"] = 27990,	-- Krasus <Consort of the Queen>
 						["sourceQuest"] = 13372,	-- The Key to the Focusing Iris
 						["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
+						-- #if ANYCLASSIC
+						["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Heart of Magic
 								["provider"] = { "i", 44650 },	-- Heart of Magic
