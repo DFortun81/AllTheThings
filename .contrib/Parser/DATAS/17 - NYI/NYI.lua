@@ -165,7 +165,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		},
 	}),
-	tier(DF_TIER, 0.7, bubbleDown({ ["timelined"] = { "created 10.0.7" } }, {
+	tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {
 		i(20748),	-- Expired Mana Oil
 		i(20749),	-- Expired Wizard Oil
 		i(29942),	-- Battle-Scarred Leggings
@@ -604,7 +604,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(204330),	-- Inert Promordal Fragments
 
 	})),
-	tier(DF_TIER, 0.5, bubbleDown({ ["timelined"] = { "created 10.0.5" } }, {
+	tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 10.0.5" } }, {
 		i(202309),	-- Defective Doomsday Device (TOY!)
 		mount(400733),	-- [PH] Goblin Shredder Rocket (MOUNT!)
 		mount(397406),	-- [PH] Magical Fish Mount (MOUNT!)
@@ -810,7 +810,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(204277),	-- Ruby Whelp Treat
 
 	})),
-	tier(DF_TIER, bubbleDown({ ["timelined"] = { "created 10.0.2" } }, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = { "created 10.0.2" } }, {
 		n(ARMOR, {
 				-- Evoker Set --
 			i(187651),	-- Evoker Tunic
