@@ -651,8 +651,9 @@ for key,value in pairs({
 	[59] = "Livres de classe";							-- Class Books (Classic Spells, Ashran Books, etc)
 
 	-- "Non-Equipment Types"
-	[103] = "Illusions";								-- Illusions
-	[107] = "Vignettes";								-- Vignettes
+		[103] = "Illusions";								-- Illusions
+		[107] = "Vignettes";								-- Vignettes
+
 	[999] = "Objet d'événements";						-- Event Item
 })
 do a[key] = value; end
