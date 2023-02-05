@@ -76,7 +76,7 @@ local WOD_CRAFTED_ITEM_DF_IMPRESSIVE = function(id, upgradeItem)
 	return
 	i(id, {
 		["bonusID"] = 9145,
-		["cost"] = { "i", upgradeItem, 1 },
+		["cost"] = { { "i", upgradeItem, 1 } },
 	});
 end
 
@@ -84,7 +84,7 @@ local WOD_CRAFTED_ITEM_DF_REMARKABLE = function(id, upgradeItem)
 	return
 	i(id, {
 		["bonusID"] = 9146,
-		["cost"] = { "i", upgradeItem, 1 },
+		["cost"] = { { "i", upgradeItem, 1 } },
 	});
 end
 
