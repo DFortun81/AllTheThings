@@ -33,25 +33,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					crit(3),	-- Stormsong and Dance
 				},
 			}),
-			ach(13057, {	-- Shanty Raid
-				["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-				["g"] = {
-					o(297905, {	-- Jay's Songbook
-						["questID"] = 53407,	-- Shanty of Inebriation [Criteria]
-						["coord"] = { 53.01, 17.60, BORALUS },
-						["g"] = {
-							i(163716),	-- Forbidden Sea Shanty of Inebriation
-						},
-					}),
-					o(297906, {	-- Russel's Songbook
-						["questID"] = 53408,	-- Shanty of the Lively Men [Criteria]
-						["coord"] = { 72.48, 69.24, BORALUS },
-						["g"] = {
-							i(163714),	-- Forbidden Sea Shanty of the Lively Men
-						},
-					}),
-				},
-			}),
 			ach(12852, {	-- Treasures of Tiragarde Sound
 				["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 				["g"] = {

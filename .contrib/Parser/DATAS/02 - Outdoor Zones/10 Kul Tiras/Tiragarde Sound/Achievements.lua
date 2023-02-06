@@ -332,25 +332,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			ach(13058, {	-- Kul Tiran Up the Dance Floor
 				["coord"] = { 50.27, 25.11, TIRAGARDE_SOUND },
 			}),
-			ach(13057, {	-- Shanty Raid
-				["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-				["g"] = {
-					o(297933, {	-- Dusty Songbook
-						["questID"] = 53410,	-- Shanty of Fruit Counting [Criteria]
-						["coord"] = { 43.50, 25.59, TIRAGARDE_SOUND },
-						["g"] = {
-							i(163715),	-- Forbidden Sea Shanty of Fruit Counting
-						},
-					}),
-					o(297934, {	-- Scoundrel's Songbook
-						["questID"] = 53411,	-- Shanty of the Horse [Criteria]
-						["coord"] = { 73.20, 84.13, TIRAGARDE_SOUND },
-						["g"] = {
-							i(163719),	-- Forbidden Sea Shanty of the Horse
-						},
-					}),
-				},
-			}),
 			pvp(ach(12577)),	-- Tour of Duty: Tiragarde Sound
 			ach(12852, {	-- Treasures of Tiragarde Sound
 				-- TODO: use _quests and move objects to /Treasures.lua

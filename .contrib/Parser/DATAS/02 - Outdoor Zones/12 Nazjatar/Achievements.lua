@@ -148,7 +148,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			i(169194),		-- Snapback Scuttler (MOUNT!)
 			title(405),		-- of the Deeps
 			ach(13635, {	-- Tour of the Depths
-				crit(1),	-- Complete an Emissary for your ally in Nazjatar
+				crit(1, {	-- Complete an Emissary for your ally in Nazjatar
+					["_quests"] = { 56119, 56120 },	-- The Ankoan / The Unshackled
+				}),
 				crit(2),	-- Defeat one of the World Bosses of Nazjatar
 				crit(3),	-- Learn about the Scrying Stones of Nazjatar
 				crit(4, {	-- Defeat one of Azshara's Champions
@@ -377,6 +379,47 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			ach(13699, {	-- Periodic Destruction
 				["coord"] = { 60.7, 32.1, NAZJATAR },
 				["description"] = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob.  Look at the minilist section dedicated to The Laboratory of Mardivas for more information!",
+				["g"] = {
+					crit(1, {	-- Arcane Amalgamation
+						-- ["_npcs"] = { NPCID },
+					}),
+					crit(2, {	-- Watery Amalgamation
+						-- ["_npcs"] = { NPCID },
+					}),
+					crit(3, {	-- Burning Amalgamation
+						-- ["_npcs"] = { NPCID },
+					}),
+					crit(4, {	-- Dusty Amalgamation
+						-- ["_npcs"] = { NPCID },
+					}),
+					crit(5, {	-- Zomera
+						-- ["_npcs"] = { NPCID },
+					}),
+					crit(6, {	-- Omus
+						-- ["_npcs"] = { NPCID },
+					}),
+					crit(7, {	-- Osgen
+						-- ["_npcs"] = { NPCID },
+					}),
+					crit(8, {	-- Moghiea
+						-- ["_npcs"] = { NPCID },
+					}),
+					crit(9, {	-- Xue
+						-- ["_npcs"] = { NPCID },
+					}),
+					crit(10, {	-- Ungormath
+						-- ["_npcs"] = { NPCID },
+					}),
+					crit(11, {	-- Spawn of Salgos
+						-- ["_npcs"] = { NPCID },
+					}),
+					crit(12, {	-- Herald of Salgos
+						-- ["_npcs"] = { NPCID },
+					}),
+					crit(13, {	-- Salgos the Eternal
+						-- ["_npcs"] = { NPCID },
+					}),
+				},
 			}),
 			ach(13713),		-- Nothing to Scry About
 			ach(13707),		-- Mrrl's Secret Stash

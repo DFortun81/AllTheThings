@@ -117,27 +117,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				}
 			}),
-			ach(13036, {	-- A Loa of a Tale
-				["collectible"] = false,
-				["g"] = {
-					crit(2,  {	-- Tales of de Loa: Bwonsamdi
-						["itemID"] = 163330,	-- Tales of de Loa: Bwonsamdi
-						["coord"] = { 39.1, 38.6, NAZMIR },
-					}),
-					crit(5,  {	-- Tales of de Loa: Hir'eek
-						["itemID"] = 163199,	-- Tales of de Loa: Hir'eek
-						["coord"] = { 39.5, 54.6, NAZMIR },
-					}),
-					crit(8,  {	-- Tales of de Loa: Krag'wa
-						["itemID"] = 163331,	-- Tales of de Loa: Krag'wa
-						["coord"] = { 58.9, 48.6, NAZMIR },
-					}),
-					crit(14, {	-- Tales of de Loa: Torga
-						["itemID"] = 163197,	-- Tales of de Loa: Torga
-						["coord"] = { 72.8, 7.60, NAZMIR },
-					}),
-				},
-			}),
 			ach(13024, {	-- Carved in Stone, Written in Blood
 				crit(1, {	-- Ancient Nazmani Tablet
 					["objectID"] = 298921,	-- Ancient Nazmani Tablet
@@ -213,22 +192,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					},
 					["icon"] = "Interface\\Icons\\INV_Misc_SpineLeaf _01",
 				}),
-			}),
-			ach(13029, {	-- Eating Out of the Palm of My Tiny Hand
-				["collectible"] = false,
-				["g"] = {
-					crit(1, {	-- Brutosaur of Nazmir Fed
-						["description"] = "Buy Primitive Watermelon from Blind Wunja inside the cave at 34.6, 54.9 and feed it to Goramor.",
-						["coords"] = {
-							{ 34.6, 54.9, NAZMIR },	-- Blind Wunja
-							{ 32.3, 35.3, NAZMIR },	-- Goramor
-						},
-						["crs"] = {
-							126833,	-- Blind Wunja
-							143644,	-- Goramor
-						},
-					}),
-				},
 			}),
 			ach(12561, {	-- Explore Nazmir
 				crit(1),		-- Primal Wetlands

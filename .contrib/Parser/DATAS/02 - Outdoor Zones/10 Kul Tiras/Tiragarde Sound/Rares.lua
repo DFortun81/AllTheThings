@@ -22,10 +22,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					crit(2, {	-- Barman Bill
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
-					i(163717, {	-- Forbidden Sea Shanty of Josephus
-						["achievementID"] = 13057,	-- Shanty Raid [Achievement]
-						["criteriaID"] = 4,	-- Shanty of Josephus [Criteria]
-					}),
+					i(163717),	-- Forbidden Sea Shanty of Josephus
 				},
 			}),
 			n(132068, {	-- Bashmu
@@ -46,10 +43,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					crit(4, {	-- Black-Eyed Bart
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),
-					i(163718, {	-- Forbidden Sea Shanty of the Black Sphere
-						["achievementID"] = 13057,	-- Shanty Raid [Achievement]
-						["criteriaID"] = 5,	-- Shanty of the Black Sphere [Criteria]
-					}),
+					i(163718),	-- Forbidden Sea Shanty of the Black Sphere
 				},
 			}),
 			n(139145, {	-- Blackthorne

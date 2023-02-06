@@ -56,7 +56,6 @@ _.Factions =
 			faction(2161),	-- Order of Embers
 			faction(2160),	-- Proudmoore Admiralty
 			faction(2162),	-- Storm's Wake
-			faction(2400),	-- Waveblade Ankoan
 		})),
 	}),
 	n(FACTION_HEADER_HORDE, {
@@ -105,7 +104,6 @@ _.Factions =
 			faction(2157),	-- The Honorbound
 			faction(2158),	-- Voldunai
 			faction(2103),	-- Zandalari Empire
-			faction(2373),	-- The Unshackled
 		})),
 	}),
 	tier(CLASSIC_TIER, {

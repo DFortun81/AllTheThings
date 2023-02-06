@@ -35,39 +35,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["sourceQuests"] = { 47229 },	-- Bulwark of Torcali
 				["races"] = HORDE_ONLY,
 			}),
-			ach(13036, {	-- A Loa of a Tale
-				["collectible"] = false,
-				["g"] = {
-					crit(3,  {	-- Tales of de Loa: Gonk
-						["itemID"] = 162657,	-- Tales of de Loa: Gonk
-						["coord"] = { 51.7, 28.3, ZULDAZAR },
-					}),
-					crit(4,  {	-- Tales of de Loa: Gral
-						["itemID"] = 163170,	-- Tales of de Loa: Gral
-						["coord"] = { 75.5, 67.6, ZULDAZAR },
-					}),
-					crit(6,  {	-- Tales of de Loa: Jani
-						["itemID"] = 162656,	-- Tales of de Loa: Jani
-						["coord"] = { 48.5, 54.6, ZULDAZAR },
-					}),
-					crit(9,  {	-- Tales of de Loa: Pa'ku
-						["itemID"] = 162658,	-- Tales of de Loa: Pa'ku
-						["coord"] = { 49.0, 41.3, ZULDAZAR },
-					}),
-					crit(10, {	-- Tales of de Loa: Rezan
-						["itemID"] = 163332,	-- Tales of de Loa: Rezan
-						["coord"] = { 43.8, 76.7, ZULDAZAR },
-					}),
-					crit(12, {	-- Tales of de Loa: Shadra
-						["itemID"] = 163221,	-- Tales of de Loa: Shadra
-						["coord"] = { 47.7, 28.9, ZULDAZAR },
-					}),
-					crit(13, {	-- Tales of de Loa: Torcali
-						["itemID"] = 163739,	-- Tales of de Loa: Torcali
-						["coord"] = { 67.3, 17.6, ZULDAZAR },
-					}),
-				},
-			}),
 			ach(12944, {	-- Adventurer of Zuldazar
 				crit(1, {	-- Atal'zul Gotaka
 					-- ["_npcs"] = { NPCID },
@@ -138,22 +105,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				crit(23, {	-- Tambano
 					-- ["_npcs"] = { NPCID },
 				}),
-			}),
-			ach(13029, {	-- Eating Out of the Palm of My Tiny Hand
-				["collectible"] = false,
-				["g"] = {
-					crit(3, {	-- Brutosaur of Zuldazar Fed
-						["description"] = "Buy Extra-Dry Fruitcake from Golkada at 71.2, 29.6 and feed it to Irritable Maka'fon.",
-						["coords"] = {
-							{ 71.2, 29.6, ZULDAZAR },	-- Golkada
-							{ 64.0, 39.2, ZULDAZAR },	-- Irritable Maka'fon
-						},
-						["crs"] = {
-							124034,	-- Golkada <Tasty Morsels>
-							130922,	-- Irritable Maka'fon
-						},
-					}),
-				},
 			}),
 			ach(12559, {	-- Explore Zuldazar
 				crit(1),		-- Atal'Dazar

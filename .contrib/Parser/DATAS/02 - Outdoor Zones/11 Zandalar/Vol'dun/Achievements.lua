@@ -91,23 +91,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					-- ["_npcs"] = { NPCID },
 				}),
 			}),
-			ach(13036, {	-- A Loa of a Tale
-				["collectible"] = false,
-				["g"] = {
-					crit(1, {	-- Tales of de Loa: Akunda
-						["itemID"] = 162628,	-- Tales of de Loa: Akunda
-						["coord"] = { 42.2, 62.1, VOLDUN },
-					}),
-					crit(7, {	-- Tales of de Loa: Kimbul
-						["itemID"] = 163198,	-- Tales of de Loa: Kimbul
-						["coord"] = { 27.7, 62.1, VOLDUN },
-					}),
-					crit(11, {	-- Tales of de Loa: Sethraliss
-						["itemID"] = 163333,	-- Tales of de Loa: Sethraliss
-						["coord"] = { 49.5, 24.4, VOLDUN },
-					}),
-				},
-			}),
 			ach(13020, {	-- Bow to Your Masters
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
@@ -141,22 +124,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["npcID"] = 143256
 				["npcID"] = 143255
 				]]--
-			}),
-			ach(13029, {	-- Eating Out of the Palm of My Tiny Hand
-				["collectible"] = false,
-				["g"] = {
-					crit(2, {	-- Brutosaur of Vol'dun Fed
-						["description"] = "Buy Snake on a Stick from Rikati at 40.4, 55.4 and feed it to Ol' Stompy.",
-						["coords"] = {
-							{ 40.4, 55.4, VOLDUN },	-- Rikati
-							{ 62.0, 9.20, VOLDUN },	-- Ol' Stompy
-						},
-						["crs"] = {
-							133833,	-- Rikati
-							143332,	-- Ol' Stompy
-						},
-					}),
-				},
 			}),
 			ach(12560, {	-- Explore Vol'dun
 				crit(1),		-- Atul'Aman
