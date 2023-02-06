@@ -63,7 +63,7 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between February 1st, 10:00 a.m. & February 5th, 11:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = {
 					"added 10.0.5.47884",
-					"removed 10.0.5.99999",
+					"removed 10.0.5.47936",
 				},
 			}),
 			-- Season 1
