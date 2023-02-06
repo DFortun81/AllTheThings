@@ -2072,7 +2072,7 @@ end
 
                 if (nonNested)
                 {
-                    Log($"Warning: Non-Standard format for '{field}' used: {ToJSON(costsObjs)}");
+                    Log($"WARN: Non-Standard format for '{field}' used: {ToJSON(costsObjs)}");
                     costsList.Add(costsObjs);
                 }
 
@@ -2095,7 +2095,7 @@ end
                         }
                         else if (cost.Count != 3)
                         {
-                            Log($"Warning: Non-Standard format for '{field}' used: {ToJSON(costsObjs)}");
+                            Log($"WARN: Non-Standard format for '{field}' used: {ToJSON(costsObjs)}");
                         }
 
                     }
@@ -2245,7 +2245,7 @@ end
                     {
                         if (existing.TryGetValue(goodKvp.Key, out object existingValue) && !Equals(existingValue, goodKvp.Value))
                         {
-                            Log($"WARNING: Data Changed => {ToJSON(data)}");
+                            Log($"WARN: Data Changed => {ToJSON(data)}");
                             Log($"-- Field Value Overwrite: {field}:{goodKvp.Key}={existingValue} => {goodKvp.Value}");
                         }
                         existing[goodKvp.Key] = goodKvp.Value;

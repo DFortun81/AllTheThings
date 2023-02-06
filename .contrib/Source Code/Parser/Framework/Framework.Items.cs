@@ -569,7 +569,7 @@ namespace ATT
                             // setting a spellID on an Item with a recipeID should do nothing
                             if (field == "spellID" && item.TryGetValue("recipeID", out long recipeID) && recipeID > 0)
                             {
-                                Log($"WARNING: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' : {MiniJSON.Json.Serialize(item)}");
+                                Log($"WARN: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' : {MiniJSON.Json.Serialize(item)}");
                                 break;
                             }
 
@@ -971,8 +971,7 @@ namespace ATT
                 else if (!variantObj.TryConvert(out id))
                 {
                     // variant field not valid data type
-                    Log($"WARNING: Data Type Conversion Failed (expected: number [long]): {variantObj}");
-                    Log($"Data: {MiniJSON.Json.Serialize(data)}");
+                    Log($"WARN: Data Type Conversion Failed (expected: number [long]): {variantObj}{Environment.NewLine}-- {ToJSON(data)}");
                 }
 
                 // BonusID of 0 should never be used... bad harvest data
