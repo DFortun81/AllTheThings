@@ -115,7 +115,38 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["provider"] = { "i", 49661 },	-- Lovely Charm Collector's Kit
 				["cost"] = {{ "i", 49916, 12 }},	-- Lovely Charm Bracelet
 			}),
-			ach(1695),	-- Dangerous Love
+			ach(1695, {	-- Dangerous Love
+				["sourceQuests"] = {
+					-- #if AFTER LEGION
+					44558,	-- Crushing the Crown (A) [Legion+]
+					-- #endif
+					24658,	-- Crushing the Crown (A) [Elwynn Forest]
+					24659,	-- Crushing the Crown (A) [Darkshore]
+					24660,	-- Crushing the Crown (A) [Duskwood]
+					24662,	-- Crushing the Crown (A) [Dustwallow Marsh]
+					24663,	-- Crushing the Crown (A) [The Hinterlands]
+					24664,	-- Crushing the Crown (A) [Winterspring]
+					24665,	-- Crushing the Crown (A) [Terokkar Forest]
+					24666,	-- Crushing the Crown (A) [Crystalsong Forest]
+					-- #if AFTER CATA
+					28934,	-- Crushing the Crown (A) [Uldum]
+					-- #endif
+					-- #if AFTER LEGION
+					44546,	-- Crushing the Crown (H) [Legion+]
+					-- #endif
+					24638,	-- Crushing the Crown (H) [Durotar]
+					24645,	-- Crushing the Crown (H) [Silverpine Forest]
+					24647,	-- Crushing the Crown (H) [Hillsbrad Foothills]
+					24648,	-- Crushing the Crown (H) [Dustwallow Marsh]
+					24649,	-- Crushing the Crown (H) [The Hinterlands]
+					24650,	-- Crushing the Crown (H) [Winterspring]
+					24651,	-- Crushing the Crown (H) [Terokkar Forest]
+					24652,	-- Crushing the Crown (H) [Crystalsong Forest]
+					-- #if AFTER CATA
+					28935,	-- Crushing the Crown (H) [Uldum]
+					-- #endif
+				},
+			}),
 			ach(1699, {	-- Fistful of Love
 				["cost"] = { { "i", 22218, 11 } },	-- 11x Handful of Rose Petals (minimum)
 				["sym"] = {{ "achievement_criteria" }},
