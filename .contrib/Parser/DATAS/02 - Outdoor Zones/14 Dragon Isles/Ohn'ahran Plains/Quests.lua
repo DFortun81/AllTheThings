@@ -1186,6 +1186,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(66888),	-- Choose Blood (Renewal of Vows 66783)
 		q(66889),	-- Choose Eagle Feather (Renewal of Vows 66783)
 		q(69867),	-- Stay and Listen Merithra 18.7,51.6 (LQ 70928)
+		q(66505),	-- triggered when talking to Ranger Bolor and giving them Batu's Collar
 		q(66512),	-- triggered when talking to Hunter Zaya and giving her Sarnai's Collar
 		q(74168),	-- After killing Skaara (during leveling)
 		-- Achievement Honor Our Ancestors

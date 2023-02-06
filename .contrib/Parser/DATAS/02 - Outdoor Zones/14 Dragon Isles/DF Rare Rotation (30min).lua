@@ -121,6 +121,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["g"] = {
 						i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 						i(200161),	-- Razorwind Talisman
+						i(200148),	-- A Collection of Me (TOY!)
 					},
 				}),
 				n(193258, {	-- Tempestrian <Stormbringer>

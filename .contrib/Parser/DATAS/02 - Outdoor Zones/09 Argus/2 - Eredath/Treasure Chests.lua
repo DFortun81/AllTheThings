@@ -197,6 +197,7 @@ root(ROOTS.Zones, m(905, {	-- Argus
 				},
 				["g"] = {
 					i(152854),	-- Nethershorn Lantern
+					i(152862),	-- Shredded Felbroken Shawl
 				},
 			}),
 			o(277637, {	-- Void-Seeped Cache
@@ -228,6 +229,7 @@ root(ROOTS.Zones, m(905, {	-- Argus
 				},
 				["g"] = {
 					i(152854),	-- Nethershorn Lantern
+					i(152862),	-- Shredded Felbroken Shawl
 				},
 			}),
 		}),

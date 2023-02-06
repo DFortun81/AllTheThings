@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					}),
 					-- Ancient
 					i(201281, {	-- Ancient Alchemist's Research
-						-- ["questID"] = TODO,
+						["questID"] = 71915,
 						["requireSkill"] = ALCHEMY,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
@@ -288,7 +288,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						},
 					}),
 					i(201280, {	-- Ancient Scribe's Runic Drawings
-						-- ["questID"] = TODO,
+						["questID"] = 71920,
 						["requireSkill"] = INSCRIPTION,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },

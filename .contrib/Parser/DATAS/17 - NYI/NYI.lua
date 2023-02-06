@@ -1268,7 +1268,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197588),	-- Windborne Velocidrake: Armor
 			i(197590),	-- Windborne Velocidrake: Small Head Fin
 			i(197591),	-- Windborne Velocidrake: Hairy Head
-			i(197593),	-- Windborne Velocidrake: Feathery Head
 			i(197594),	-- Windborne Velocidrake: Small Ears
 			i(197600),	-- Windborne Velocidrake: Helm
 			i(197604),	-- Windborne Velocidrake: Ox Horns

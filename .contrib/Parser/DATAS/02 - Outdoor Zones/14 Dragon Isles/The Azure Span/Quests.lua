@@ -1595,6 +1595,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 193149 },	-- Skag the Thrower
 					["coord"] = { 26.7, 49.0, THE_AZURE_SPAN },
 				}),
+				q(73064, {	-- Spellwrought Snowman
+					["provider"] = { "n", 193238 },	-- Spellwrought Snowman
+					["coord"] = { 54.8, 33.8, THE_AZURE_SPAN },
+					["isDaily"] = true,
+				}),
 				q(74458, {	-- Srivantor
 					["provider"] = { "n", 201555 },	-- Srivantor
 					["coord"] = { 46.7, 21.9, THE_AZURE_SPAN },

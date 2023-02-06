@@ -196,13 +196,3 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 	}),
 })));
 
-root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
-	m(THALDRASZUS, {
-		n(RARES, sharedData({["isDaily"] = true}, {
-			n(193238, {	-- Spellwrought Snowman
-				["coord"] = { 55.0, 34.0, THALDRASZUS },
-				["questID"] = 73064,
-			}),
-		})),
-	}),
-})));

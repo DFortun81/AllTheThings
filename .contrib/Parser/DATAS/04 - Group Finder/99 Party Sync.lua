@@ -133,6 +133,7 @@ root(ROOTS.GroupFinder, n(-10, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, 
 				i(173640),	-- Lightdrinker Waistband
 			}),
 			cl(SHAMAN,  {
+				--i(),	-- Blue Winglord's Bracers
 				i(173576),	-- Earthmender's Shield
 				i(173560),	-- Earthmender's Talons
 				i(173575),	-- Stormshaper's Bulwark

@@ -2511,7 +2511,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		prof(JEWELCRAFTING, {
 			-- Reagents
 			q(71647),	-- Blotting Sand
-			-- q(),	-- Elemental Harmony
+			q(71674),	-- Elemental Harmony
 			q(71862),	-- Empty Soul Cage
 			q(71676),	-- Glossy Stone
 			-- q(),	-- Illustrious Insight

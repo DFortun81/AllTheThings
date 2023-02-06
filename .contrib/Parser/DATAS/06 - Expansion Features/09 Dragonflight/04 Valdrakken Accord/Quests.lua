@@ -551,6 +551,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(198732),	-- Valdrakken Accord Tabard
 				},
 			}),
+			q(72372, {	-- Taming the Dragon...kin
+				["qg"] = 185561,	-- Kaestrasz
+				["coord"] = { 46.8, 78.8, VALDRAKKEN },
+				["classes"] = { HUNTER },
+				["g"] = {
+					i(201791, {	-- How to Train a Dragonkin
+						["questID"] = 72094,
+					}),
+				},
+			}),
 				-- RENOWN 24 --
 			q(70889, {	-- Crafting for Expertise
 				["minReputation"] = { 2510, 24 },	-- Valdrakken Accord Renown 24

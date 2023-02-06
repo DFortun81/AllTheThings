@@ -887,6 +887,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197622),	-- Windborne Velocidrake: Finned Tail (DM!)
 		i(197577),	-- Windborne Velocidrake: Gold and Brown Armor
 		i(197580),	-- Windborne Velocidrake: Gold and Red Armor (DM!)
+		i(197593),	-- Windborne Velocidrake: Feathery Head (DM!)
 		i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 		i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
 		i(197600),	-- Windborne Velocidrake: Helm
@@ -928,7 +929,6 @@ root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_
 	i(197155),	-- Highland Drake: Finned Neck ("quest reward but not found in 2months")
 	i(197358),	-- Renewed Proto-Drake: Curved Spiked Brow
 	i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
-	i(197593),	-- Windborne Velocidrake: Feathery Head
 	i(197587),	-- Windborne Velocidrake: Feathered Back
 	i(197591),	-- Windborne Velocidrake: Hairy Head ("centaur renown" but not on vendor) Claimed to be from Brackenhide, but no confirmation
 	i(197617),	-- Windborne Velocidrake: Heavy Scales

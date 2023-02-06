@@ -421,6 +421,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197012),	-- Cliffside Wylderdrake: Blue Scales (DM!)
 				},
 			}),
+			q(72633, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 19 },	-- Iskaara Tuskarr Renown 17
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198867),	-- Large Iskaaran Supply Pack
+				},
+			}),
 				-- RENOWN 21 --
 			q(70968, {	-- Of the Cloth, of the Community
 				["minReputation"] = { 2511, 21 },	-- Iskaara Tuskarr Renown 21
