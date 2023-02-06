@@ -410,6 +410,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(198867),	-- Large Iskaaran Supply Pack
 				},
 			}),
+				-- Renown 18 --
+			q(72633, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198867),	-- Large Iskaaran Supply Pack
+				},
+			}),
 				-- RENOWN 19 --
 			q(70956, {	-- Of Azure Scales
 				["minReputation"] = { 2511, 19 },	-- Iskaara Tuskarr Renown 19
@@ -421,8 +430,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197012),	-- Cliffside Wylderdrake: Blue Scales (DM!)
 				},
 			}),
-			q(72633, {	-- Dragon Isles Supplies
-				["minReputation"] = { 2511, 19 },	-- Iskaara Tuskarr Renown 17
+			q(72634, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 19 },	-- Iskaara Tuskarr Renown 19
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 				["g"] = {

@@ -49,6 +49,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
 					["questID"] = 74023,
 					["g"] = {
+						i(200438),	-- Surcoat of the Chastigator
 						i(200682),	-- Hardened Scale Shoulderguards
 						i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 					},
@@ -122,14 +123,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 						i(200161),	-- Razorwind Talisman
 						i(200148),	-- A Collection of Me (TOY!)
+						i(200306),	-- Tempest Shawl
 					},
 				}),
 				n(193258, {	-- Tempestrian <Stormbringer>
 					["coord"] = { 48.8, 79.4, THALDRASZUS },
 					["questID"] = 74035,
-					-- ["g"] = {
-
-					-- },
+					["g"] = {
+						i(200139),	-- Tempest Arc
+					},
 				}),
 				n(193146, {	-- Treasure-Mad Trambladd
 					["coord"] = { 35.0, 70.0, THALDRASZUS },
@@ -187,6 +189,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 73997,
 					["g"] = {
 						i(200281),	-- Gorjo's Riding Crop
+						i(200435),	-- Brackish Breeches
 					},
 				}),
 				n(186200, {	-- Harkyn Grymstone
@@ -200,7 +203,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["g"] = {
 						i(200171),	-- Grymheart Blade
 						i(182361),	-- Protector's Molten Cudgel
-						i(183061),	-- Qalashi War-Helm
+						i(200757),	-- Qalashi War-Helm
 						i(200175),	-- Repurposed Anvil
 						i(200243),	-- Titanic Scholar's Finery
 					},

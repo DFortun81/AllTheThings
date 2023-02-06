@@ -926,7 +926,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9573, {	-- Chieftain Oomooroo
 					["qg"] = 17445,	-- Stillpine the Younger
-					["sourceQuest"] = 9562,	-- Murlocs... Why Here? Why Now?
+					["sourceQuests"] = {
+						9560,	-- Beasts of the Apocalypse
+						9562,	-- Murlocs... Why Here? Why Now?
+					},	
 					["coord"] = { 46.8, 21.2, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 1, 7),

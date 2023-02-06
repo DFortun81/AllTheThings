@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(201561,	-- Motivator Krathos
 			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 43.9, 30.9, THE_AZURE_SPAN },
-				["questID"] = 74456,
+				["questID"] = 74544,
 				["g"] = {
 					i(203675),	-- Legplates of the Brutal Motivator
 				},

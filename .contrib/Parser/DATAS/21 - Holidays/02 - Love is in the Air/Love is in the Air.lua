@@ -2288,6 +2288,10 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 	},
 }));
 
+root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
+	q(74957),	-- daily tracker for Bad Luck Protection on Love Rocket drop
+}));
+
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- #if ANYCLASSIC
 	["npcID"] = -50,

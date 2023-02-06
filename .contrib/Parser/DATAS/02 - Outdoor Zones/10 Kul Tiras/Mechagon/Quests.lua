@@ -1155,7 +1155,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 root(ROOTS.HiddenQuestTriggers, m(KUL_TIRAS, {
 	m(MECHAGON, {
 		n(QUESTS, {
-			-- q(56426),	-- learning Azeroth Mini Collection: Mechagon (?)
+			q(56426),	-- after killing Data Anomaly while doing Discs of Norgannon
 			q(55480),	-- After charging very first Energy Cell during quest Your First Charge is Free!(56320)
 			q(56333),	-- triggered after turning in 'Your First Charge is Free!' (56320)
 			q(56427),	-- Popped up when looting and accepting Cracked Numeric Cylinder for the Discs of Norgannon summoning function

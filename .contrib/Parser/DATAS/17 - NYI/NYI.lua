@@ -1195,10 +1195,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		n(WEAPONS, {
 			i(200130),	-- Corpse Ripper
-			i(200139),	-- Tempest Arc
 			i(200176),	-- Missingway Hand Canno
 			i(200241),	-- Stormcaller's Ritual Hatchet
-			i(200242),	-- Watcher's Lightning Rod
 			-- Green Dragon Stuff?
 			i(201231),	-- Bident of Hallucinations
 			i(201232),	-- Bonedust Spreader
@@ -1435,21 +1433,13 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200964),	-- Alliance Dueling Flag
 			i(200965),	-- Horde Dueling Flag
 			i(201090),	-- Bivigosa's Blood Sausages
-			i(201045),	-- Icecrown Bleu
 			i(201046),	-- Dreamwarding Dripbrew
-			i(201398),	-- Mogu Mozzarella
-			i(201413),	-- Eternity-Infused Burrata
-			i(201415),	-- Temporal Parmesan
-			i(201416),	-- Black Empire Brunost
-			i(201417),	-- Curding of Stratholme
 			i(201418),	-- Orb of the Obsidian Scale
-			i(201419),	-- Apexis Asiago
 			i(201423),	-- Hallowed Helm
 			i(201697),	-- Coldarra Coldbrew
 			i(201698),	-- Black Dragon Red Eye
 			i(201721),	-- Life Fire Latte
 			i(201725),	-- Flappuccino
-			i(201820),	-- Silithus Swiss
 			i(201989),	-- Twisted Heart
 			i(202062),	-- Ash Feather
 		}),
@@ -1466,7 +1456,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200108),	-- Irideus' Power Core
 		i(201420),	-- Gnolan's House Special
 		i(201928),	-- Ohn'ir Windprayer Talisman
-		i(202071),	-- Elemental Mote
 		i(203206),	-- Elegant Canvas Brush
 		i(203366),	-- Blue Winglord's Staff
 		i(203367),	-- Blue Winglord's Hauberk

@@ -67,6 +67,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74549,
 				["g"] = {
 					i(203671),	-- Pack Leader's Pelt
+					i(200441),	-- Jhakan's Horned Cowl
 				},
 			})),
 			n(187781, {	-- Hamett <Rockfang Matriarch>
@@ -261,6 +262,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(197116),	-- Highland Drake: Ears (DM!)
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 					i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
+					i(196999),	-- Cliffside Wylderdrake: Swept Horns (DM!)
 				},
 			}),
 			-- n(193123, {	-- Steamgill // under DF/Timed Based Rare
@@ -331,6 +333,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- ["g"] = {
 				-- },
 			}),
+			n(192983, {	-- Web-Queen Ashkaz
+				["coord"] = {43.3, 47.2, OHNAHRAN_PLAINS },
+				["questID"] = 74095,
+			}),
 			n(192364, {	-- Windscale the Stormborn
 				["description"] = "Only available if the Aylaag Camp is stationed at the south east.\nSpawns from the egg after killing 5 nearby egg channelers.",
 				-- TODO: add crs for kill npcs
@@ -386,10 +392,6 @@ root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "crea
 			n(192020, {	-- Eaglemaster Niraak
 				["coord"] = { 49.6, 66.6, OHNAHRAN_PLAINS },
 				["questID"] = 74441,
-			}),
-			n(192045, {	-- Windseeker Avash
-				["coord"] = { 58.8, 67.4, OHNAHRAN_PLAINS },
-				["questID"] = 74440,
 			}),
 		})),
 	}),

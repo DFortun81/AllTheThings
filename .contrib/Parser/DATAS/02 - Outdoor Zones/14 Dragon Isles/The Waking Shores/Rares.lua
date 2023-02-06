@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			n(193148, {	-- Thunderous Matriarch
 				["coord"] = { 45.4, 35.6, THE_WAKING_SHORES },
-				-- ["questID"] = , -- confirm
+				["questID"] = 73899,
 				["g"] = {
 					-- is part of the DF>Global Rare Loottable
 				},

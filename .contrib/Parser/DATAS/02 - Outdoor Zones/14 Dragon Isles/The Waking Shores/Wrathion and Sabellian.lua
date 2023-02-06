@@ -188,6 +188,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 26.6, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
 				}),
+				q(67051, {	-- Dragon Eyes
+					["sourceQuest"] = 66419,	-- Allegiance To One
+					["provider"] = { "n", 191193 },	-- Exadria
+					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+				}),
 				q(67099, {	-- Dragon Eyes
 					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 191193 },	-- Exadria
@@ -909,6 +915,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 			q(66808),	-- Triggered when choosing Seballian in Allegiance To One (66419) -- triggered for Seballian only
 			q(66802),	-- Triggered when choosing Wrathion in Allegiance To One (66419) -- triggered for Wrathion only
 			q(72284),	-- Triggered when reaching max rank friendship with Sabellian after also being max rank with Wrathion (also popped with four Drake Armor triggers)
+			q(67168),	-- Triggered with completion of 67051 'Dragon Eyes' (alternate version???)
 		}),
 	}),
 })));

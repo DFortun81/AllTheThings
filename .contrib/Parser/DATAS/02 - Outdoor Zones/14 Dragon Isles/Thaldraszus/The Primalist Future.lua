@@ -96,6 +96,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["g"] = {
 						i(203669),	-- Chillwing Leggings
 						i(197593),	-- Windborne Velocidrake: Feathery Head (DM!)
+						i(200242),	-- Watcher's Lightning Rod
 					},
 				}),
 				n(201542, {	-- Tikar Frostclaw

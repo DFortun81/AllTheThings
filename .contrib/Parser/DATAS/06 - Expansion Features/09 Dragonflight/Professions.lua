@@ -2011,7 +2011,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				},
 			}),
 			q(70033, {	-- Artisan's Supply: Pioneer's Leather Boots
-				["sourceQuests"] = 70362,	-- Dragon Isles Leatherworking
+				["sourceQuests"] = {
+					70362,	-- Dragon Isles Leatherworking
+					72293,	-- Adventuring in the Dragon Isles
+				},
+				["sourceQuestNumRequired"] = 1,
 				["providers"] = {
 					{ "n", 192027 },	-- Dokhusek
 					{ "n", 192048 },	-- Deirdre Flemmin

@@ -381,7 +381,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 				}),
 				q(71232, {	-- Renown of the Dragon Isles
-					["sourceQuests"] = { 66221 },	-- Moving On
+					["sourceQuests"] = { 
+						66221,	-- Moving On
+						72293,	-- Adventuring in the Dragon Isles
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 72.5, 56.2, THALDRASZUS },
 				}),

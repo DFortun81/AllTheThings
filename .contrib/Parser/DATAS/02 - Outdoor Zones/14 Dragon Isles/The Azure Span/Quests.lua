@@ -1591,6 +1591,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 56.0, 67.4, THE_AZURE_SPAN },
 					["timeline"] = { ADDED_DF_0_5 },
 				}),
+				q(74456, {	-- Motivator Krathos
+					["provider"] = { "n", 201561 },	-- Motivator Krathos
+					["coord"] = { 44.0, 30.8, THE_AZURE_SPAN },
+					["timeline"] = { ADDED_DF_0_5 },
+				}),
 				q(72154, {	-- Skag the Thrower
 					["provider"] = { "n", 193149 },	-- Skag the Thrower
 					["coord"] = { 26.7, 49.0, THE_AZURE_SPAN },

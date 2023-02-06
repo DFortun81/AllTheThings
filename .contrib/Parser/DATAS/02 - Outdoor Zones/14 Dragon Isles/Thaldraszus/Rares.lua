@@ -145,6 +145,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					{ 53.6, 42.8, THALDRASZUS },
 				},
 				["questID"] = 73892,
+				["g"] = {
+					i(198409),	-- Personal Shell (TOY!)
+				},
 			}),
 			-- n(193240),	-- Riverwalker Tamopo // under DF/Timed Based Rare
 			--	n(193666, 	-- Rokmur // under DF/Timed Based Rare

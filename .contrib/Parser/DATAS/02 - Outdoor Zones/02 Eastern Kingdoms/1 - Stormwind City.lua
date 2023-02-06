@@ -6157,9 +6157,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(56, {	-- Apprentice's Robe
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
-						i(6140, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
 						i(52553, {	-- Apprentice's Robe
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
