@@ -8,6 +8,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["achievementID"] = 750,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(750, {	-- Explore Northern Barrens
+					crit(1),	-- Boulder Lode Mine
+					crit(2),	-- Lushwater Oasis
+					crit(3),	-- The Mor'shan Rampart
+					crit(4),	-- The Sludge Fen
+					crit(5),	-- Dreadmist Peak
+					crit(6),	-- The Dry Hills
+					crit(7),	-- The Forgotten Pools
+					crit(8),	-- Grol'dom Farm
+					crit(9),	-- Far Watch Post
+					crit(10),	-- Thorn Hill
+					crit(11),	-- The Crossroads
+					crit(12),	-- The Stagnant Oasis
+					crit(13),	-- Ratchet
+					crit(14),	-- The Merchant Coast
+				}),
 				ach(4933, {	-- Northern Barrens Quests
 					["races"] = HORDE_ONLY,
 					["groups"] = {

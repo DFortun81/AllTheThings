@@ -7,6 +7,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["achievementID"] = 4996,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(4996, {	-- Explore Southern Barrens
+					crit(1),	-- Bael Modan
+					crit(2),	-- Battlescar
+					crit(3),	-- Forward Command
+					crit(4),	-- Frazzlecraz Motherlode
+					crit(5),	-- Honor's Stand
+					crit(6),	-- Hunter's Hill
+					crit(7),	-- Northwatch Hold
+					crit(8),	-- Razorfen Kraul
+					crit(9),	-- Ruins of Taurajo
+					crit(10),	-- The Overgrowth
+					crit(11),	-- Vendetta Point
+				}),
 				ach(4937, {	-- Southern Barrens Quests
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

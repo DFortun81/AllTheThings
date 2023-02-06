@@ -35,6 +35,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
+				ach(856, {	-- Explore Silithus
+					crit(1),	-- The Crystal Vale
+					crit(2),	-- Southwind Village
+					crit(3),	-- Cenarion Hold
+					crit(4),	-- Hive'Zora
+					crit(5),	-- Hive'Regal
+					crit(6),	-- The Scarab Wall
+					crit(7),	-- Hive'Ashi
+					crit(8),	-- Valor's Rest
+				}),
 				ach(4934, {	-- Silithus Quests
 					crit(1, {	-- Twilight's Run
 						["sourceQuest"] = 8321,	-- Vyral the Vile
