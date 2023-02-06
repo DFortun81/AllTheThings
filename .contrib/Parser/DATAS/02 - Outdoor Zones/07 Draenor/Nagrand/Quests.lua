@@ -828,6 +828,7 @@ _.Zones =
 					["coord"] = { 82.8, 45.0, DRAENOR_NAGRAND },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34899,	-- A Choice to Make
+					["isBreadcrumb"] = true,
 				}),
 				q(34869, {	-- Tastes Like Chicken
 					["provider"] = { "n", 81955 },	-- Digrem Orebar
