@@ -256,16 +256,16 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 			}),
 			ach(1702, {	-- Sweet Tooth
 				crit(8705, {	-- Buttermilk Delight
-					["cost"] = { { "i", 22236, 1 } },	-- 1x Buttermilk Delight
+					["provider"] = { "i", 22236 },	-- 1x Buttermilk Delight
 				}),
 				crit(8706, {	-- Dark Desire
-					["cost"] = { { "i", 22237, 1 } },	-- 1x Dark Desire
+					["provider"] = { "i", 22237 },	-- 1x Dark Desire
 				}),
 				crit(8708, {	-- Sweet Surprise
-					["cost"] = { { "i", 22239, 1 } },	-- 1x Sweet Surprise
+					["provider"] = { "i", 22239 },	-- 1x Sweet Surprise
 				}),
 				crit(8707, {	-- Very Berry Cream
-					["cost"] = { { "i", 22238, 1 } },	-- 1x Very Berry Cream
+					["provider"] = { "i", 22238 },	-- 1x Very Berry Cream
 				}),
 			}),
 			ach(1696, {	-- The Rocket's Pink Glare
