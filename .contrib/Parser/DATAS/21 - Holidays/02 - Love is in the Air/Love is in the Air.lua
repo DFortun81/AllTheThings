@@ -1,8 +1,8 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-local BOUQUET_RED = i(22206);
-local BOUQUET_EBON = i(44731, {
+local BOUQUET_RED = i(22206);	-- Bouquet of Red Roses
+local BOUQUET_EBON = i(44731, {	-- Bouquet of Ebon Roses
 	["timeline"] = { "added 3.0.3.9138" },
 });
 root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
@@ -33,163 +33,230 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 		}),
 		-- #else
 		n(ACHIEVEMENTS, {
-			ach(1693, {	-- Fool For Love
+			-- #if BEFORE MOP
+			ach(1707, {	-- Fool For Love (A)
 				-- Meta Achievement should symlink the contained Achievements from Source
-				["sym"] = {
-					{"meta_achievement",
-						260,	-- Charming
-						1188,	-- Shafted!
-						1279,	-- Flirt With Disaster [Alliance]
-						1280,	-- Flirt With Disaster [Horde]
-						1291,	-- Lonely?
-						1695,	-- Dangerous Love
-						1696,	-- The Rocket's Pink Glare
-						1697,	-- Nation of Adoration [Alliance]
-						1698,	-- Nation of Adoration [Horde]
-						1699,	-- Fistful of Love
-						1702,	-- Sweet Tooth
-						1701,	-- Be Mine!
-						1703,	-- My Love is Like a Red, Red Rose
-						1704,	-- I Pitied The Fool
-					},
+				["sym"] = {{"meta_achievement",
+					260,	-- Charming
+					1188,	-- Shafted!
+					1279,	-- Flirt With Disaster [Alliance]
+					1291,	-- Lonely?
+					1695,	-- Dangerous Love
+					1696,	-- The Rocket's Pink Glare
+					1697,	-- Nation of Adoration [Alliance]
+					1699,	-- Fistful of Love
+					1702,	-- Sweet Tooth
+					1701,	-- Be Mine!
+					1703,	-- My Love is Like a Red, Red Rose
+					1704,	-- I Pitied The Fool
+				}},
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					title(103),	-- the Love Fool
 				},
+			}),
+			-- #endif
+			ach(1693, {	-- Fool For Love (H) / Fool For Love [MOP+]
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {{"meta_achievement",
+					260,	-- Charming
+					1188,	-- Shafted!
+					-- #if AFTER MOP
+					1279,	-- Flirt With Disaster [Alliance]
+					-- #endif
+					1280,	-- Flirt With Disaster [Horde]
+					1291,	-- Lonely?
+					1695,	-- Dangerous Love
+					1696,	-- The Rocket's Pink Glare
+					-- #if AFTER MOP
+					1697,	-- Nation of Adoration [Alliance]
+					-- #endif
+					1698,	-- Nation of Adoration [Horde]
+					1699,	-- Fistful of Love
+					1702,	-- Sweet Tooth
+					1701,	-- Be Mine!
+					1703,	-- My Love is Like a Red, Red Rose
+					1704,	-- I Pitied The Fool
+				}},
+				-- #if BEFORE MOP
+				["races"] = HORDE_ONLY,
+				-- #endif
 				["groups"] = {
 					title(103),	-- the Love Fool
 				},
 			}),
 			ach(1701, {	-- Be Mine!
-				crit(1, {	-- Be Mine!
-					["cost"] = { { "i", 21816, 1 } },	-- 1x Heart Candy (Be Mine!)
+				crit(6324, {	-- Be Mine!
+					["provider"] = { "i", 21816 },	-- Heart Candy (Be Mine!)
 				}),
-				crit(2, {	-- I'll follow you all around Azeroth.
-					["cost"] = { { "i", 21818, 1 } },	-- 1x Heart Candy (I'll follow you all around Azeroth.)
+				crit(6325, {	-- I'll follow you all around Azeroth.
+					["provider"] = { "i", 21818 },	-- Heart Candy (I'll follow you all around Azeroth.)
 				}),
-				crit(3, {	-- All yours.
-					["cost"] = { { "i", 21819, 1 } },	-- 1x Heart Candy (All yours.)
+				crit(6326, {	-- All yours.
+					["provider"] = { "i", 21819 },	-- Heart Candy (All yours.)
 				}),
-				crit(4, {	-- I'm all yours!
-					["cost"] = { { "i", 21821, 1 } },	-- 1x Heart Candy (I'm all yours!)
+				crit(6327, {	-- I'm all yours!
+					["provider"] = { "i", 21821 },	-- Heart Candy (I'm all yours!)
 				}),
-				crit(5, {	-- Hot Lips.
-					["cost"] = { { "i", 21823, 1 } },	-- 1x Heart Candy (Hot Lips.)
+				crit(6328, {	-- Hot Lips.
+					["provider"] = { "i", 21823 },	-- Heart Candy (Hot Lips.)
 				}),
-				crit(6, {	-- You're Mine!
-					["cost"] = { { "i", 21822, 1 } },	-- 1x Heart Candy (You're Mine!)
+				crit(6329, {	-- You're Mine!
+					["provider"] = { "i", 21822 },	-- Heart Candy (You're Mine!)
 				}),
-				crit(7, {	-- You're the best!
-					["cost"] = { { "i", 21820, 1 } },	-- 1x Heart Candy (You're the best!)
+				crit(6330, {	-- You're the best!
+					["provider"] = { "i", 21820 },	-- Heart Candy (You're the best!)
 				}),
-				crit(8, {	-- I LOVE YOU
-					["cost"] = { { "i", 21817, 1 } },	-- 1x Heart Candy (I LOVE YOU)
+				crit(6331, {	-- I LOVE YOU
+					["provider"] = { "i", 21817 },	-- Heart Candy (I LOVE YOU)
 				}),
 			}),
-			ach(260),	-- Charming
+			ach(260, {	-- Charming
+				["provider"] = { "i", 49661 },	-- Lovely Charm Collector's Kit
+				["cost"] = {{ "i", 49916, 12 }},	-- Lovely Charm Bracelet
+			}),
 			ach(1695),	-- Dangerous Love
 			ach(1699, {	-- Fistful of Love
 				["cost"] = { { "i", 22218, 11 } },	-- 11x Handful of Rose Petals (minimum)
-				["groups"] = {
-					crit(1),	-- Gnome Warlock
-					crit(2),	-- Orc Death Knight
-					crit(3),	-- Human Death Knight
-					crit(4),	-- Night Elf Priest
-					crit(5),	-- Orc Shaman
-					crit(6),	-- Tauren Druid
-					crit(7),	-- Undead Warrior
-					crit(8),	-- Troll Rogue
-					crit(9),	-- Blood Elf Mage
-					crit(10),	-- Draenei Paladin
-					crit(11),	-- Dwarf Hunter
-				},
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(1279, {	-- Flirt With Disaster [Alliance]
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					crit(1),	-- Kissed Sraaz
-					crit(2),	-- Handful of Rose Petals on Sraaz
+				["providers"] = {
+					{ "n", 9099 },	-- Sraaz <Pie Vendor>
+					{ "i", 22218 },	-- Handful of Rose Petals
 				},
+				["coord"] = { 46.6, 48.4, IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(1280, {	-- Flirt With Disaster [Horde]
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					crit(1),	-- Handful of Rose Petals on Jeremiah Payson
-					crit(2),	-- Kissed Jeremiah Payson
+				["providers"] = {
+					{ "n", 8403 },	-- Jeremiah Payson <Cockroach Vendor>
+					{ "i", 22218 },	-- Handful of Rose Petals
 				},
+				["coord"] = { 67.6, 43.8, UNDERCITY },
+				["races"] = HORDE_ONLY,
 			}),
 			ach(1704, {	-- I Pitied The Fool
-				crit(1),	-- Wintergrasp
-				crit(2),	-- Battle Ring of Gurubashi Arena
-				crit(3),	-- Arathi Basin Blacksmith
-				crit(4),	-- The Culling of Stratholme
-				crit(5),	-- Naxxramas
+				["sym"] = {{ "achievement_criteria" }},
+				["cost"] = { { "i", 22261, 5 } },	-- 5x Love Fool
+				["maps"] = {
+					ARATHI_BASIN,
+					NAXXRAMAS,
+					WINTERGRASP,
+					-- #if AFTER CATA
+					THE_CAPE_OF_STRANGLETHORN,
+					-- #else
+					STRANGLETHORN_VALE,
+					-- #endif
+					THE_CULLING_OF_STRATHOLME,
+				},
 			}),
-			ach(9389),	-- It Might Just Save Your Life
+			ach(9389, {	-- It Might Just Save Your Life
+				["providers"] = {
+					-- #if AFTER 7.0.1
+					{ "i", 143908 },	-- Choker of the Pure Heart [Level 110]
+					{ "i", 143906 },	-- Heartbreak Charm [Level 110]
+					{ "i", 143907 },	-- Shard of Pirouetting Happiness [Level 110]
+					{ "i", 143909 },	-- Sweet Perfume Brooch [Level 110]
+					{ "i", 143905 },	-- Winking Eye of Love [Level 110]
+					-- #endif
+					-- #if AFTER 6.0.1
+					{ "i", 117369 },	-- Choker of the Pure Heart [Level 100]
+					{ "i", 117366 },	-- Heartbreak Charm [Level 100]
+					{ "i", 117370 },	-- Shard of Pirouetting Happiness [Level 100]
+					{ "i", 117368 },	-- Sweet Perfume Brooch [Level 100]
+					{ "i", 117367 },	-- Winking Eye of Love [Level 100]
+					-- #endif
+				},
+				["timeline"] = { "added 6.0.1.18594" },
+			}),
 			ach(1291, {	-- Lonely?
-				["cost"] = { { "i", 22236, 1 } },	-- 1x Buttermilk Delight
+				["providers"] = {
+					{ "i", 34480 },	-- Romantic Picnic Basket
+					{ "i", 22236 },	-- Buttermilk Delight
+				},
+				["maps"] = { NORTHREND_DALARAN },
 			}),
-			ach(1694, {	-- Lovely Luck Is On Your Side
-				["provider"] = { "i", 151770 },	-- 1x Lovely Black Dress
+			ach(1703, {	-- My Love is Like a Red, Red Rose
+				["providers"] = {
+					{ "i", 22206 },	-- Bouquet of Red Roses
+					{ "i", 44731 },	-- Bouquet of Ebon Roses
+				},
 			}),
-			ach(1703),	-- My Love is Like a Red, Red Rose
 			ach(1697, {	-- Nation of Adoration [Alliance]
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					crit(1),	-- A Gift for the High Priestess of Elune
-					crit(2),	-- A Gift for the Prophet
-					crit(3),	-- A Gift for the Lord of Ironforge
-					crit(4),	-- A Gift for the King of Stormwind
+				["groups"] = {
+					crit(12838, {	-- A Gift for the High Priestess of Elune
+						["_quests"] = { 24610 },	-- A Gift for the High Priestess of Elune
+					}),
+					crit(12841, {	-- A Gift for the King of Stormwind
+						["_quests"] = { 24597 },	-- A Gift for the King of Stormwind
+					}),
+					crit(12840, {	-- A Gift for the Lord of Ironforge / A Gift for a Lord of Ironforge
+						["_quests"] = { 24609 },	-- A Gift for the Lord of Ironforge / A Gift for a Lord of Ironforge
+					}),
+					crit(12839, {	-- A Gift for the Prophet
+						["_quests"] = { 24611 },	-- A Gift for the Prophet
+					}),
 				},
 			}),
 			ach(1698, {	-- Nation of Adoration [Horde]
 				["races"] = HORDE_ONLY,
-				["g"] = {
-					crit(1),	-- A Gift for the High Overlord
-					crit(2),	-- A Gift for the Regent Lord of Quel'Thalas
-					crit(3),	-- A Gift for the High Chieftain
-					crit(4),	-- A Gift for the Banshee Queen
+				["groups"] = {
+					crit(12842, {	-- A Gift for the Warchief / A Gift for the High Overlord/ A Gift for the Warchief's Advisor
+						["_quests"] = { 24612 },	-- A Gift for the Warchief / A Gift for High Overlord Saurfang / A Gift for the Warchief's Advisor
+					}),
+					crit(12843, {	-- A Gift for the Regent Lord of Quel'Thalas
+						["_quests"] = { 24615 },	-- A Gift for the Regent Lord of Quel'Thalas
+					}),
+					crit(12844, {	-- A Gift for the High Chieftain
+						["_quests"] = { 24614 },	-- A Gift for the High Chieftain
+					}),
+					crit(12845, {	-- A Gift for the Banshee Queen
+						["_quests"] = { 24613 },	-- A Gift for the Banshee Queen
+					}),
 				},
 			}),
 			ach(1700, {	-- Perma-Peddle
-				["provider"] = { "i", 22235 },	-- 1x Truesilver Shafted Arrow
+				["provider"] = { "i", 22235 },	-- Truesilver Shafted Arrow
 			}),
 			ach(1188, {	-- Shafted!
-				crit(1, {	-- 10x Silver Shafted Arrow
-					["cost"] = { { "i", 22200, 10 } },	-- 10x Silver Shafted Arrow
-				}),
+				["cost"] = { { "i", 22200, 10 } },	-- 10x Silver Shafted Arrow
 			}),
 			ach(1702, {	-- Sweet Tooth
-				crit(1, {	-- Buttermilk Delight
+				crit(8705, {	-- Buttermilk Delight
 					["cost"] = { { "i", 22236, 1 } },	-- 1x Buttermilk Delight
 				}),
-				crit(2, {	-- Dark Desire
+				crit(8706, {	-- Dark Desire
 					["cost"] = { { "i", 22237, 1 } },	-- 1x Dark Desire
 				}),
-				crit(3, {	-- Sweet Surprise
+				crit(8708, {	-- Sweet Surprise
 					["cost"] = { { "i", 22239, 1 } },	-- 1x Sweet Surprise
 				}),
-				crit(4, {	-- Very Berry Cream
+				crit(8707, {	-- Very Berry Cream
 					["cost"] = { { "i", 22238, 1 } },	-- 1x Very Berry Cream
 				}),
 			}),
 			ach(1696, {	-- The Rocket's Pink Glare
-				crit(1, {	-- Shoot off 10 Love Rockets in 20 seconds or less
-					["cost"] = { { "i", 34258, 10 } },	-- 10x Love Rocket
-				}),
+				["cost"] = { { "i", 34258, 10 } },	-- 10x Love Rocket
 			}),
 			ach(9394, {	-- They Really Love Me! (50)
+				["provider"] = { "i", 116648 },	-- Manufactured Love Prism
 				["timeline"] = { "added 6.0.1.18594" },
 				["groups"] = {
 					i(116651, {	-- True Love Prism (TOY!)
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
-					ach(9393, {	-- Beacon of Love (25)
-						["timeline"] = { "added 6.0.1.18594" },
-					}),
-					ach(9392, {	-- Love Magnet (10)
-						["timeline"] = { "added 6.0.1.18594" },
-					}),
 				},
 			}),
-			ach(4624),	-- Tough Love (Shadowfang Keep)
+			ach(9393, {	-- Beacon of Love (25)
+				["provider"] = { "i", 116648 },	-- Manufactured Love Prism
+				["timeline"] = { "added 6.0.1.18594" },
+			}),
+			ach(9392, {	-- Love Magnet (10)
+				["provider"] = { "i", 116648 },	-- Manufactured Love Prism
+				["timeline"] = { "added 6.0.1.18594" },
+			}),
 		}),
 		n(BOSSES, {
 			n(36296, {	-- Apothecary Hummel <Crown Chemical Co.>
@@ -215,6 +282,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				},
 				-- #endif
 				["groups"] = {
+					ach(4624),	-- Tough Love (Shadowfang Keep)
 					i(50320, {	-- Faded Lovely Greeting Card [A]
 						["timeline"] = { "added 3.3.2.11403" },
 					}),
@@ -397,13 +465,17 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 						d(NORMAL_DUNGEON, {
 							n(39679, {	-- Corla, Herald of Twilight
 								BOUQUET_RED,
-								i(188693),	-- Pouch of Red Rose Petals
+								i(188693, {	-- Pouch of Red Rose Petals
+									["timeline"] = { "added 9.1.5.40871" },
+								}),
 							}),
 						}),
 						d(HEROIC_DUNGEON, {
 							n(39679, {	-- Corla, Herald of Twilight
 								BOUQUET_RED,
-								i(188693),	-- Pouch of Red Rose Petals
+								i(188693, {	-- Pouch of Red Rose Petals
+									["timeline"] = { "added 9.1.5.40871" },
+								}),
 							}),
 						}),
 					},
@@ -518,7 +590,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					d(HEROIC_DUNGEON, {
 						e(2455, {	-- So'leah
 							["crs"] = { 177269 },	-- So'leah
-							["g"] = {
+							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
 									["timeline"] = { "added 9.1.5" },
 								}),
@@ -528,7 +600,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					d(MYTHIC_DUNGEON, {
 						e(2455, {	-- So'leah
 							["crs"] = { 177269 },	-- So'leah
-							["g"] = {
+							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
 									["timeline"] = { "added 9.1.5" },
 								}),
@@ -540,7 +612,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					d(NORMAL_DUNGEON, {
 						e(2423, {	-- Domina Venomblade
 							["crs"] = { 164266 },	-- Domina Venomblade
-							["g"] = {
+							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
 									["timeline"] = { "added 9.1.5" },
 								}),
@@ -550,7 +622,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					d(HEROIC_DUNGEON, {
 						e(2423, {	-- Domina Venomblade
 							["crs"] = { 164266 },	-- Domina Venomblade
-							["g"] = {
+							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
 									["timeline"] = { "added 9.1.5" },
 								}),
@@ -560,7 +632,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					d(MYTHIC_DUNGEON, {
 						e(2423, {	-- Domina Venomblade
 							["crs"] = { 164266 },	-- Domina Venomblade
-							["g"] = {
+							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
 									["timeline"] = { "added 9.1.5" },
 								}),
@@ -647,13 +719,15 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 33.4, 65.8, IRONFORGE },
 				["timeline"] = { "added 3.3.0" },
+				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
-			q(24612, {	-- A Gift for High Overlord Saurfang
+			q(24612, {	-- A Gift for the Warchief / A Gift for High Overlord Saurfang / A Gift for the Warchief's Advisor
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 52.8, 76.8, ORGRIMMAR },
 				["timeline"] = { "added 3.3.0" },
+				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -661,6 +735,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 66.4, 38.2,  UNDERCITY },
 				["timeline"] = { "added 3.3.0" },
+				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -668,6 +743,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 44.0, 52.8, THUNDER_BLUFF },
 				["timeline"] = { "added 3.3.0" },
+				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -675,6 +751,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 45.2, 57.4, DARNASSUS },
 				["timeline"] = { "added 3.3.0" },
+				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -682,6 +759,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 62.4, 75.0, STORMWIND_CITY },
 				["timeline"] = { "added 3.3.0" },
+				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -689,6 +767,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 73.8, 56.8, THE_EXODAR },
 				["timeline"] = { "added 3.3.0" },
+				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -696,6 +775,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["qg"] = 37887,	-- Kwee Q. Peddlefeet
 				["coord"] = { 64.2, 66.4, SILVERMOON_CITY },
 				["timeline"] = { "added 3.3.0" },
+				["cost"] = {{ "i", 49916, 1 }},	-- Lovely Charm Bracelet
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -1641,6 +1721,13 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 						["timeline"] = { "added 3.3.2.11403" },
 						["cost"] = { { "i", 49927, 20 } },	-- 20x Love Token
 						["groups"] = {
+							ach(1694, {	-- Lovely Luck Is On Your Side
+								-- #if AFTER 7.2.5.24116
+								["provider"] = { "i", 151770 },	-- Lovely Black Dress
+								-- #else
+								["provider"] = { "i", 22279 },	-- Lovely Black Dress
+								-- #endif
+							}),
 							i(151770, {	-- Lovely Black Dress
 								["timeline"] = { "added 7.2.5.24116" },
 							}),
@@ -1738,14 +1825,26 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 		}),
 		-- #endif
 		n(ZONE_DROPS, {
+			-- #if BEFORE 3.3.2.11403
 			["description"] = "Apply a perfume or cologne buff to your character and speak to a guard in a major city to receive one of these items. Items exclusively found within each container will be listed within.",
-			["timeline"] = { "added 3.3.2.11403" },
+			["timeline"] = { "removed 3.3.2.11403" },
 			["cost"] = {
 				{ "i", 21833, 1 },	-- Cologne Bottle
 				{ "i", 21829, 1 },	-- Perfume Bottle
 				{ "i", 21815, 1 },	-- Love Token
 			},
+			-- #endif
 			["groups"] = {
+				i(49655, {	-- Lovely Charm
+					["provider"] = { "i", 49661 },	-- Lovely Charm Collector's Kit
+					["description"] = "With a Lovely Charm Collector's Kit in your inventory, go out and kill mobs near your character's level.",
+					["timeline"] = { "added 3.3.2.11403" },
+				}),
+				i(49916, {	-- Lovely Charm Bracelet
+					["cost"] = { { "i", 49655, 10 } },	-- 10x Lovely Charm
+					["timeline"] = { "added 3.3.2.11403" },
+				}),
+				-- #if BEFORE 3.3.2.11403
 				i(22262, {	-- Alliance Gift Collection
 					["cost"] = {
 						{ "i", 22133, 1 },	-- Darnassus Gift Collection
@@ -2152,6 +2251,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					["_drop"] = { "f", "spellID" },
 					["races"] = HORDE_ONLY,
 				}),
+				-- #endif
 			},
 		}),
 	},

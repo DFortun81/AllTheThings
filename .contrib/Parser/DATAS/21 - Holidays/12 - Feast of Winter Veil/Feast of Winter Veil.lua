@@ -73,6 +73,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					1689,			-- He Knows If You've Been Naughty
 					1690,			-- A Frosty Shake
 				}},
+				["timeline"] = { "added 3.0.2", "deleted 5.0.1" },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					title(102),				-- Merrymaker

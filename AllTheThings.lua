@@ -3569,6 +3569,7 @@ local ResolveFunctions = {
 				elseif criteriaType == 110	-- Casting spells on specific target
 					or criteriaType == 29 or criteriaType == 69	-- Buff Gained
 					or criteriaType == 52 or criteriaType == 53	-- Class/Race (TODO?)
+					or criteriaType == 54 -- Spell, by means of a personal buff?
 					or criteriaType == 43 then	-- Exploration
 					-- Ignored
 				else
