@@ -186,7 +186,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(193853),	-- Emmah
 		i(193854),	-- Berylmane
 		i(193908),	-- Kobaldt
-		i(197136),	-- Highland Drake: Tapered Nose (DM!)
 		i(197989),	-- Water-Ordained Signet
 		i(198138),	-- Lightning-Infused Rock
 		i(198156),	-- Wyrmhole Generator: Dragon Isles
@@ -1221,26 +1220,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		n(DRAKEWATCHER_MANUSCRIPTS, {
 			i(192111),	-- Renewed Proto-Drake: Red Scales
 			i(192523),	-- Renewed Proto-Drake: Green Scales
-
-
-
-			i(197095),	-- Highland Drake: Gold and White Armor (DM!)
-			i(197099),	-- Highland Drake: Armor (DM!)
-			i(197102),	-- Highland Drake: Horned Chin (DM!)
-			i(197104),	-- Highland Drake: Tapered Chin (DM!)
-			i(197109),	-- Highland Drake: Spiked Head (DM!)
-			i(197116),	-- Highland Drake: Ears (DM!)
-			i(197118),	-- Highland Drake: Brown Hair (DM!)
-			i(197119),	-- Highland Drake: Helm (DM!)
-			i(197120),	-- Highland Drake: Ornate Helm (DM!)
-			i(197124),	-- Highland Drake: Swept Horns (DM!)
-			i(197129),	-- Highland Drake: Sleek Horns (DM!)
-			i(197131),	-- Highland Drake: Hairy Cheek (DM!)
-			i(197134),	-- Highland Drake: Spiked Legs (DM!)
-			i(197136),	-- Highland Drake: Taperered Nose (DM!)
-			i(197146),	-- Highland Drake: White Scales (DM!)
-			i(197155),	-- Highland Drake: Finned Neck (DM!)
-			i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
 			i(197348),	-- Renewed Proto-Drake: Black and Red Armor
 			i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 			i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor

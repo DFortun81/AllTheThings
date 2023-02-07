@@ -536,6 +536,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2510, 21 },	-- Valdrakken Accord Renown 21
 				["qg"] = 185561,	-- Kaestrasz
 				["coord"] = { 46.8, 78.8, VALDRAKKEN },
+				["g"] = {
+					i(197145),	-- Highland Drake: Bronze Scales (DM!)
+					i(197391),	-- Renewed Proto-Drake: Bronze Scales (DM!)
+					i(197613),	-- Windborne Velocidrake: Bronze Scales (DM!)
+				},
 			}),
 				-- RENOWN 22 --
 			q(70915, {	-- Crowning Achievement

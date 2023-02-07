@@ -350,7 +350,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 65.6, 73.8, THE_WAKING_SHORES },
 					["questID"] = 74074,
 					["g"] = {
-						i(197098),	-- Highland Drake: Finned Back (DM!)
 						i(200086),	-- Khaz'gorite Infused Resin
 						i(200245),	-- Leviathan Lure
 						i(200563),	-- Primal Ritual Shell

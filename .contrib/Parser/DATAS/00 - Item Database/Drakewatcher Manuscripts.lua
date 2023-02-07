@@ -96,21 +96,18 @@ i(197147, 69348);	-- Highland Drake: Heavy Scales
 i(197119, 69320);	-- Highland Drake: Helm
 i(197126, 69327);	-- Highland Drake: Hooked Horns
 i(197152, 69353);	-- Highland Drake: Hooked Tail
-i(197102, 69303);	-- Highland Drake: Horned Chin
+i(197139, 69340);	-- Highland Drake: Large Spotted Pattern
 i(197103, 69304);	-- Highland Drake: Maned Chin
 i(197111, 69312);	-- Highland Drake: Maned Head
 i(197114, 69315);	-- Highland Drake: Multi-Horned Head
 i(197120, 69321);	-- Highland Drake: Ornate Helm
-i(197138, 69339);	-- Highland Drake: Pattern 1
-i(197139, 69340);	-- Highland Drake: Pattern 2
-i(197140, 69341);	-- Highland Drake: Pattern 3
 i(197110, 69311);	-- Highland Drake: Plated Head
 i(197144, 69345);	-- Highland Drake: Red Scales
 i(197141, 69342);	-- Highland Drake: Scaled Pattern
 i(197091, 69291);	-- Highland Drake: Silver and Blue Armor
 i(197093, 69294);	-- Highland Drake: Silver and Purple Armor
 i(197112, 69313);	-- Highland Drake: Single Horned Head
-i(197129, 69330);	-- Highland Drake: Sleek Horns
+i(197140, 69341);	-- Highland Drake: Small Spotted Pattern
 i(197109, 69310);	-- Highland Drake: Spiked Head
 i(197132, 69333);	-- Highland Drake: Spiked Cheek
 i(197150, 69351);	-- Highland Drake: Spiked Club Tail
@@ -124,15 +121,16 @@ i(197154, 69355);	-- Highland Drake: Spined Neck
 i(197137, 69338);	-- Highland Drake: Spined Nose
 i(197130, 69331);	-- Highland Drake: Stag Horns
 i(197096, 69297);	-- Highland Drake: Steel and Yellow Armor
+i(197138, 69339);	-- Highland Drake: Striped Pattern
 i(197124, 69325);	-- Highland Drake: Swept Horns
 i(197113, 69314);	-- Highland Drake: Swept Spiked Head
 i(197121, 69322);	-- Highland Drake: Tan Horns
 i(197104, 69305);	-- Highland Drake: Tapered Chin
 i(197123, 69324);	-- Highland Drake: Thorn Horns
 i(197115, 69316);	-- Highland Drake: Thorned Jaw
-i(197107, 69308);	-- Highland Drake: Triple Finned Head
 i(197135, 69336);	-- Highland Drake: Toothy Mouth
-i(197136, 69337);	-- Highland Drake: Taperered Nose
+i(197107, 69308);	-- Highland Drake: Triple Finned Head
+i(197136, 69337);	-- Highland Drake: Tapered Nose
 i(197148, 69349);	-- Highland Drake: Vertical Finned Tail
 i(197146, 69347);	-- Highland Drake: White Scales
 i(197357, 69558);	-- Renewed Proto-Drake: Armor
@@ -277,3 +275,5 @@ i(194834, 0);		-- Windborne Velocidrake Manuscript: Windswept
 ------------------
 i(197006, 69206);	-- Cliffside Wylderdrake: Plated Nose
 i(196995, 69195);	-- Cliffside Wylderdrake: Spiked Horns
+i(197102, 69303);	-- Highland Drake: Horned Chin
+i(197129, 69330);	-- Highland Drake: Sleek Horns

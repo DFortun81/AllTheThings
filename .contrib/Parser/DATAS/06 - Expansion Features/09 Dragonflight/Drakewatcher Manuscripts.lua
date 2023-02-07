@@ -370,7 +370,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197117 },	-- Highland Drake: Black Hair (DM!)
 				}),
 				crit(56370, {	-- Brown Hair
-					["provider"] = { "i", 197118 },	-- Highland Drake: Brown Hair
+					["provider"] = { "i", 197118 },	-- Highland Drake: Brown Hair (DM!)
 				}),
 				crit(56371, {	-- Tan Horns
 					["provider"] = { "i", 197121 },	-- Highland Drake: Tan Horns (DM!)
@@ -391,10 +391,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197127 },	-- Highland Drake: Grand Thorn Horns (DM!)
 				}),
 				crit(56378, {	-- Curled Back Horns
-					["provider"] = { "i", 197128 },	-- Highland Drake: Curled Back Horns
+					["provider"] = { "i", 197128 },	-- Highland Drake: Curled Back Horns (DM!)
 				}),
 				crit(56380, {	-- Stag Horns
-					["provider"] = { "i", 197130 },	-- Highland Drake: Stag Horns
+					["provider"] = { "i", 197130 },	-- Highland Drake: Stag Horns (DM!)
 				}),
 			}),
 			ach(16712, {	-- Highland Drake Head Features
@@ -411,7 +411,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197105 },	-- Highland Drake: Spined Chin (DM!)
 				}),
 				crit(56397, {	-- Finned Head
-					["provider"] = { "i", 197106 },	-- Highland Drake: Finned Head
+					["provider"] = { "i", 197106 },	-- Highland Drake: Finned Head (DM!)
 				}),
 				crit(56398, {	-- Triple Finned Head
 					["provider"] = { "i", 197107 },	-- Highland Drake: Triple Finned Head (DM!)
@@ -438,10 +438,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197115 },	-- Highland Drake: Thorned Jaw (DM!)
 				}),
 				crit(56407, {	-- Ears
-					["provider"] = { "i", 197116 },	-- Highland Drake: Ears
+					["provider"] = { "i", 197116 },	-- Highland Drake: Ears (DM!)
 				}),
 				crit(56410, {	-- Hairy Cheek
-					["provider"] = { "i", 197131 },	-- Highland Drake: Hairy Cheek
+					["provider"] = { "i", 197131 },	-- Highland Drake: Hairy Cheek (DM!)
 				}),
 				crit(56411, {	-- Spiked Cheek
 					["provider"] = { "i", 197132 },	-- Highland Drake: Spiked Cheek (DM!)
@@ -482,7 +482,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197151 },	-- Highland Drake: Spiked Tail (DM!)
 				}),
 				crit(56387, {	-- Hooked Tail
-					["provider"] = { "i", 197152 },	-- Highland Drake: Hooked Tail
+					["provider"] = { "i", 197152 },	-- Highland Drake: Hooked Tail (DM!)
 				}),
 				crit(56388, {	-- Bladed Tail
 					["provider"] = { "i", 197153 },	-- Highland Drake: Bladed Tail (DM!)
@@ -740,50 +740,65 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["description"] = DM_TEXT,
 		}),
 		i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
-		i(197099),	-- Highland Drake: Armor
+		i(197099, {	-- Highland Drake: Armor
+			["description"] = DM_TEXT,
+		}),
 		i(197117),	-- Highland Drake: Black Hair (DM!)
 		i(197142),	-- Highland Drake: Black Scales (DM!)
 		i(197153),	-- Highland Drake: Bladed Tail (DM!)
 		i(197145),	-- Highland Drake: Bronze Scales (DM!)
-		i(197118),	-- Highland Drake: Brown Hair
+		i(197118),	-- Highland Drake: Brown Hair (DM!)
 		i(197101),	-- Highland Drake: Bushy Brow (DM!)
 		i(197149),	-- Highland Drake: Club Tail (DM!)
 		i(197125),	-- Highland Drake: Coiled Horns (DM!)
 		i(197100),	-- Highland Drake: Crested Brow (DM!)
-		i(197128),	-- Highland Drake: Curled Back Horns
-		i(197116),	-- Highland Drake: Ears
+		i(197128),	-- Highland Drake: Curled Back Horns (DM!)
+		i(197116),	-- Highland Drake: Ears (DM!)
 		i(197098),	-- Highland Drake: Finned Back (DM!)
-		i(197106),	-- Highland Drake: Finned Head
+		i(197106),	-- Highland Drake: Finned Head (DM!)
+		i(197155, {	-- Highland Drake: Finned Neck [States: Quest Reward at Rostrum]
+			["description"] = DM_TEXT,
+		}),
 		i(197090),	-- Highland Drake: Gold and Black Armor (DM!)
-		i(197156),	-- Highland Drake: Gold and Green Armor
+		i(197156, {	-- Highland Drake: Gold and Green Armor
+			["description"] = DM_TEXT,
+		}),
 		i(197094),	-- Highland Drake: Gold and Red Armor (DM!)
-		i(197095),	-- Highland Drake: Gold and White Armor
+		i(197095, {	-- Highland Drake: Gold and White Armor
+			["description"] = DM_TEXT,
+		}),
 		i(197127),	-- Highland Drake: Grand Thorn Horns (DM!)
 		i(197143),	-- Highland Drake: Green Scales (DM!)
-		i(197131),	-- Highland Drake: Hairy Cheek
+		i(197131),	-- Highland Drake: Hairy Cheek (DM!)
 		i(197122),	-- Highland Drake: Heavy Horns (DM!)
 		i(197147),	-- Highland Drake: Heavy Scales (DM!)
-		i(197119),	-- Highland Drake: Helm
+		i(197119, {	-- Highland Drake: Helm
+			["description"] = DM_TEXT,
+		}),
 		i(197126),	-- Highland Drake: Hooked Horns (DM!)
-		i(197152),	-- Highland Drake: Hooked Tail
-		i(197102),	-- Highland Drake: Horned Chin
+		i(197152),	-- Highland Drake: Hooked Tail (DM!)
 		i(197139),	-- Highland Drake: Large Spotted Pattern (DM!)
 		i(197103),	-- Highland Drake: Maned Chin (DM!)
 		i(197111),	-- Highland Drake: Maned Head (DM!)
 		i(197114),	-- Highland Drake: Multi-Horned Head (DM!)
-		i(197120),	-- Highland Drake: Ornate Helm
+		i(197120, {	-- Highland Drake: Ornate Helm
+			["description"] = DM_TEXT,
+		}),
 		i(197110),	-- Highland Drake: Plated Head (DM!)
 		i(197144),	-- Highland Drake: Red Scales (DM!)
 		i(197141),	-- Highland Drake: Scaled Pattern (DM!)
 		i(197091),	-- Highland Drake: Silver and Blue Armor (DM!)
 		i(197093),	-- Highland Drake: Silver and Purple Armor (DM!)
 		i(197112),	-- Highland Drake: Single Horned Head (DM!)
-		i(197129),	-- Highland Drake: Sleek Horns
 		i(197140),	-- Highland Drake: Small Spotted Pattern (DM!)
-		i(197109),	-- Highland Drake: Spiked Head
+		i(197109, {	-- Highland Drake: Spiked Head
+			["description"] = DM_TEXT,
+		}),
 		i(197132),	-- Highland Drake: Spiked Cheek (DM!)
 		i(197150),	-- Highland Drake: Spiked Club Tail (DM!)
-		i(197134),	-- Highland Drake: Spiked Legs
+		i(197134, {	-- Highland Drake: Spiked Legs
+			["description"] = DM_TEXT,
+		}),
 		i(197151),	-- Highland Drake: Spiked Tail (DM!)
 		i(197097),	-- Highland Drake: Spined Back (DM!)
 		i(197133),	-- Highland Drake: Spined Cheek (DM!)
@@ -791,20 +806,28 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197108),	-- Highland Drake: Spined Head (DM!)
 		i(197154),	-- Highland Drake: Spined Neck (DM!)
 		i(197137),	-- Highland Drake: Spined Nose (DM!)
-		i(197130),	-- Highland Drake: Stag Horns
+		i(197130),	-- Highland Drake: Stag Horns (DM!)
 		i(197096),	-- Highland Drake: Steel and Yellow Armor (DM!)
-		i(197138),	-- Highland Drake: Striped Pattern
-		i(197124),	-- Highland Drake: Swept Horns
+		i(197138),	-- Highland Drake: Striped Pattern (DM!)
+		i(197124, {	-- Highland Drake: Swept Horns
+			["description"] = DM_TEXT,
+		}),
 		i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
 		i(197121),	-- Highland Drake: Tan Horns (DM!)
-		i(197104),	-- Highland Drake: Tapered Chin
+		i(197104, {	-- Highland Drake: Tapered Chin
+			["description"] = DM_TEXT,
+		}),
 		i(197123),	-- Highland Drake: Thorn Horns (DM!)
 		i(197115),	-- Highland Drake: Thorned Jaw (DM!)
-		i(197107),	-- Highland Drake: Triple Finned Head (DM!)
 		i(197135),	-- Highland Drake: Toothy Mouth (DM!)
-		i(197136),	-- Highland Drake: Taperered Nose
+		i(197107),	-- Highland Drake: Triple Finned Head (DM!)
+		i(197136, {	-- Highland Drake: Tapered Nose
+			["description"] = DM_TEXT,
+		}),
 		i(197148),	-- Highland Drake: Vertical Finned Tail (DM!)
-		i(197146),	-- Highland Drake: White Scales
+		i(197146, {	-- Highland Drake: White Scales
+			["description"] = DM_TEXT,
+		}),
 		i(197357),	-- Renewed Proto-Drake: Armor
 		i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
 		i(197348),	-- Renewed Proto-Drake: Black and Red Armor
@@ -925,8 +948,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	i(197006),	-- Cliffside Wylderdrake: Plated Nose [Datamined Winterfurbolg Rep?]
 	i(196995),	-- Cliffside Wylderdrake: Spiked Horns [Datamined Winterfurbolg Rep?]
+	i(197102),	-- Highland Drake: Horned Chin [Datamined Winterfurbolg Rep?]
+	i(197129),	-- Highland Drake: Sleek Horns [Datamined Winterfurbolg Rep?]
 
-	i(197155),	-- Highland Drake: Finned Neck ("quest reward but not found in 2months")
+
 	i(197358),	-- Renewed Proto-Drake: Curved Spiked Brow
 	i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
 	i(197587),	-- Windborne Velocidrake: Feathered Back

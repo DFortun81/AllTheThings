@@ -15,7 +15,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["isDaily"] = true,
 					["g"] = {
 						i(200433),	-- Footwraps of Subjugation
-						i(197111),	-- Highland Drake: Maned Head (DM!)
 					},
 				}),
 				n(193212, {	-- Malsegan
@@ -40,7 +39,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 74018,
 					["g"] = {
 						i(200684),	-- Emerald Tailbone
-						i(197149),	-- Highland Drake: Club Tail (DM!)
 						i(200203),	-- Repurposed Giant's Thimble
 						i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
 					},
@@ -179,7 +177,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["g"] = {
 						i(200259),	-- Forest Dweller's Shield
 						i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
-						i(197121),	-- Highland Drake: Tan Horns (DM!)
 						i(200229),	-- Slightly Digested Leggings
 					},
 				}),
@@ -202,6 +199,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 74003,
 					["g"] = {
 						i(200171),	-- Grymheart Blade
+						i(197131),	-- Highland Drake: Hairy Cheek (DM!)
 						i(182361),	-- Protector's Molten Cudgel
 						i(200757),	-- Qalashi War-Helm
 						i(200175),	-- Repurposed Anvil
@@ -212,7 +210,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 40.0, 64.5, THE_WAKING_SHORES },
 					["questID"] = 74010,
 					["g"] = {
-						i(197149),	-- Highland Drake: Club Tail (DM!)
 						i(200684),	-- Emerald Tailbone
 					},
 				}),

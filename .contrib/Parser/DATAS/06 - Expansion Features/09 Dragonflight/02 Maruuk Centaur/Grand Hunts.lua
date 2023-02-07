@@ -191,7 +191,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["questID"] = 73912,
 						["isDaily"] = true,
 						["g"] = {
-							i(197125),	-- Highland Drake: Coiled Horns (DM!)
 							i(200233),	-- Paradox Saber
 							i(200204),	-- Sandshine Chestplate
 						},
@@ -200,9 +199,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 51.1, 49.3, THALDRASZUS },
 						["questID"] = 73925,
 						["isDaily"] = true,
-						["g"] = {
-							i(197125),	-- Highland Drake: Coiled Horns (DM!)
-						},
 					}),
 					n(195417, {	-- Tsokorg
 						["coord"] = { 50.0, 47.8, THALDRASZUS },
@@ -274,7 +270,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["isDaily"] = true,
 						["g"] = {
 							i(200303),	-- Dreamweaver Acolytes Staff
-							i(197100),	-- Highland Drake: Crested Brow (DM!)
 							i(200299),	-- Strange Clockwork Gladius
 
 						},
@@ -332,7 +327,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["questID"] = 73910,
 						["isDaily"] = true,
 						["g"] = {
-							i(197098),	-- Highland Drake: Finned Back (DM!)
 							i(200187),	-- Rod of Glacial Force
 							i(200552),	-- Torrent Caller's Shell
 						},
@@ -369,7 +363,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["questID"] = 73927,
 						["isDaily"] = true,
 						["g"] = {
-							i(197098),	-- Highland Drake: Finned Back (DM!)
 							i(200187),	-- Rod of Glacial Force
 							i(200552),	-- Torrent Caller's Shell
 							-- is part of the DF>Global Rare Loottable
@@ -381,7 +374,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["isDaily"] = true,
 						["g"] = {
 							i(200237),	-- Burnished Lifewarder's Targe
-							i(197105),	-- Highland Drake: Spined Chin (DM!)
 						},
 					}),
 				}),
@@ -393,7 +385,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["g"] = {
 							i(200684),	-- Emerald Tailbone
 							i(200246),	-- Lost Delving Lamp
-							i(197149),	-- Highland Drake: Club Tail (DM!)
 							i(197624),	-- Windborne Velocidrake: Club Tail (DM!)
 							i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
 						},
@@ -412,7 +403,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["questID"] = 73945,
 						["isDaily"] = true,
 						["g"] = {
-							i(197098),	-- Highland Drake: Finned Back (DM!)
 							i(200187),	-- Rod of Glacial Force
 							i(200552),	-- Torrent Caller's Shell
 						},

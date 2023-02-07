@@ -43,7 +43,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200138),	-- Ancient Dancer's Longspear
 					i(200303),	-- Dreamweaver Acolyte's Staff
-					i(197100),	-- Highland Drake: Crested Brow (DM!)
 					i(197586),	-- Windborne Velocidrake: Spiked Back
 				},
 			}),
@@ -92,7 +91,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200217),	-- Blazing Essence
-					i(197135),	-- Highland Drake: Toothy Mouth (DM!)
 					i(200247),	-- Inextinguishable Gavel
 					i(200133),	-- Volcanic Chakram
 				},
@@ -109,9 +107,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(196056, {	-- Gushgut the Beaksinker
 				["coord"] = { 52.6, 58.6, THE_WAKING_SHORES },
 				["questID"] = 73879,
-				["g"] = {
-					i(197098),	-- Highland Drake: Finned Back (DM!)
-				},
 			}),
 			-- n(186200, {	-- Harkyn Grymstone // under DF/Timed Based Rare
 			n(193263, {	-- Helmet Missingway
@@ -196,7 +191,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74076,
 				["g"] = {
 					i(200152),	-- Gleaming Blade of Insight
-					i(197116),	-- Highland Drake: Ears (DM!)
 				},
 			}),
 			n(193181, {	-- Skewersnout <Raypier of the Deep>

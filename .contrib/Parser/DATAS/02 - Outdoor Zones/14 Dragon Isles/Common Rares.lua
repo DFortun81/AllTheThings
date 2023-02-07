@@ -266,6 +266,88 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						201542,	-- Tikarr Frostclaw <<The Lazy>>
 					},
 				}),
+				i(197149, {	-- Highland Drake: Club Tail (DM!)
+					["crs"] = {
+						193704,	-- Honmor
+						186827,	-- Magmaton
+						190244,	-- Mahg the Trampler
+						193118,	-- O'nank Shorescour
+						193235,	-- Oshigol
+						193149,	-- Skag the Thrower
+						184456,	-- Spellforged Brute
+						194763,	-- Tenmod
+					},
+				}),
+				i(197125, {	-- Highland Drake: Coiled Horns (DM!)
+					["crs"] = {
+						193658,	-- Corrupted Proto-Dragon
+						195431,	-- Diluu
+						195430,	-- Molkeej
+					},
+				}),
+				i(197100, {	-- Highland Drake: Crested Brow (DM!)
+					["crs"] = {
+						193664,	-- Ancient Protector
+						195300,	-- Arkhuu
+						187745,	-- Disoriented Watcher
+						201550,	-- Overloading Defense Matrix
+						201552,	-- Overseer Stonetongue
+						193688,	-- Phenran
+						194402,	-- Spellforged Destroyer
+					},
+				}),
+				i(197116, {	-- Highland Drake: Ears (DM!)
+					["crs"] = {
+						193271,	-- Shadeslash Trakken
+						193165,	-- Sparkspitter Vrak
+						201542,	-- Tikarr Frostclaw <<The Lazy>>
+					},
+				}),
+				i(197098, {	-- Highland Drake: Finned Back (DM!)
+					["crs"] = {
+						187945,	-- Anhydros the Tidetaker
+						197411,	-- Astray Splasher <Lunker>
+						193896,	-- Borzgas
+						186962,	-- Cascade
+						193691,	-- Fisherman Tinnak <Angered Ghost>
+						196056,	-- Gushgut the Beaksinker
+						195286,	-- Mantai
+						194225,	-- Muugurv
+						193710,	-- Seereel, the Spring <Lunker>
+						193706,	-- Snufflegust <Lunker>
+						193238,	-- Spellwrought Snowman
+						193634,	-- Swog'ranka <Lunker>
+						193724,	-- Uurtus
+						201556,	-- Waterpots <The Splasher>
+					},
+				}),
+				i(197106, {	-- Highland Drake: Finned Head (DM!)
+					["crs"] = {
+						201553,	-- Grand Artificer Zeerak <The Sundered Flame>
+						197009,	-- Liskheszaera
+						201561,	-- Movtivator Krathos <The Sundered Flame>
+						201555,	-- Srivantor <The Sundered Flame>
+						193196,	-- Trilvarus Loreweaver
+					},
+				}),
+				i(197150, {	-- Highland Drake: Spiked Club Tail (DM!)
+					["crs"] = {
+						193178,	-- Blightfur
+						193128,	-- Blightpaw the Depraved
+						197356,	-- High Shaman Rotknuckle
+						198004,	-- Mange the Outcast
+						193136,	-- Scav Notail
+						192749,	-- Sharpfang
+						197344,	-- Snarglebone
+					},
+				}),
+				i(197105, {	-- Highland Drake: Spined Chin (DM!)
+					["crs"] = {
+						196165,	-- Gethdazr
+						193885,	-- Salkii
+						193188,	-- Seeker Teryx
+					},
+				}),
 				i(197130, {	-- Highland Drake: Stag Horns (DM!)
 					["crs"] = {
 						193126,	-- Innumerable Ruination
@@ -285,6 +367,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						193188,	-- Seeker Teryk
 						201555,	-- Srivantor
 						201554,	-- Unstable Arcanogolem
+					},
+				}),
+				i(197121, {	-- Highland Drake: Tan Horns (DM!)
+					["crs"] = {
+						193135,	-- Azra's Prized Peony
+						197354,	-- Gnarls
+						201549,	-- Morlash <The Unquenchable>
+					},
+				}),
+				i(197135, {	-- Highland Drake: Toothy Mouth (DM!)
+					["crs"] = {
+						190986,	-- Battlehorn Pyrhus
+						197557,	-- Bisquius <The Feast Beast>
+						190985,	-- Death's Shadow
+						193234,	-- Eldoren the Reborn <Jewel of the Skies>
+						195915,	-- Firava the Rekindler
+						193853,	-- Galnmor
+						194240,	-- Gamgus
+						193126,	-- Innumerable Ruination
+						193668,	-- Lookout Mordren
+						186827,	-- Magmaton
+						195093,	-- Moskhoi
+						192737,	-- Qalashi War Mammoth <Qalashi War Party>
+						193288,	-- Summoned Destroyer
+						186859,	-- Worldcarver A'tir
 					},
 				}),
 			}),

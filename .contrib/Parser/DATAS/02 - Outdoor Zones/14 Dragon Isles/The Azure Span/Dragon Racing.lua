@@ -27,6 +27,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 							15836,	-- Iskaara Tour: Silver
 							15819,	-- The Vakthros Ascent: Silver
 						}},
+						["g"] = {
+							i(197118),	-- Highland Drake: Brown Hair (DM!)
+						},
 					}),
 					ach(15923, {	-- Azure Span: Gold
 						-- Meta Achievement

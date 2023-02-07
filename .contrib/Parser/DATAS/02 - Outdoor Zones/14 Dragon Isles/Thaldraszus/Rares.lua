@@ -26,7 +26,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74060,
 				["g"] = {
 					i(200166),	-- Corrupted Drake Horn
-					i(197125),	-- Highland Drake: Coiled Horns (DM!)
 				},
 			}),
 			n(193663, {	-- Craggravated Elemental

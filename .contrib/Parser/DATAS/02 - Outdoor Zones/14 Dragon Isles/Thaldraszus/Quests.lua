@@ -381,7 +381,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 				}),
 				q(71232, {	-- Renown of the Dragon Isles
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						66221,	-- Moving On
 						72293,	-- Adventuring in the Dragon Isles
 					},
@@ -440,8 +440,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["provider"] = { "n", 189174 },	-- Commander Thadezus
 						["coord"] = { 52.7, 67.3, THALDRASZUS },
 						["g"] ={
-							i(192795),	-- Rejuvenating Draught
 							i(197097),	-- Highland Drake: Spined Back (DM!)
+							i(192795),	-- Rejuvenating Draught
 						},
 					}),
 					q(66471, {	-- Prime Planning
