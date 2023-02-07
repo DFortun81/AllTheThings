@@ -713,7 +713,8 @@ namespace ATT
                                 if (data.TryGetValue("achID", out long _) ||
                                     data.TryGetValue("criteriaID", out long _))
                                 {
-                                    if (cost.Count == 1 &&
+                                    if (!data.TryGetValue("providers", out object _) &&
+                                        cost.Count == 1 &&
                                         c.Count > 2 &&
                                         c[2].TryConvert(out long count) &&
                                         count == 1)
