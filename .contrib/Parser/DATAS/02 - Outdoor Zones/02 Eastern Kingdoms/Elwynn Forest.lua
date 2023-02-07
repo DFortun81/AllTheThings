@@ -1988,7 +1988,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
 						i(132094, {	-- Proprietor's Mitts
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(57397, {	-- Goldshire Iron Bracer
 							["timeline"] = { "added 4.0.3.13287" },
