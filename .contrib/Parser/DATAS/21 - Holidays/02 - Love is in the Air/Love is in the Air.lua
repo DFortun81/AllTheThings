@@ -1359,14 +1359,14 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 			q(44560, {	-- Follow the Recipe (A)
 				["provider"] = { "o", 259806 },	-- Love Potion Recipe
 				["coord"] = { 45.2, 73.8, SILVERPINE_FOREST },
-				["timeline"] = { "added 3.3.0" },
+				["timeline"] = { "added 7.1.5.23194" },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 			}),
 			q(44559, {	-- Follow the Recipe (H)
 				["provider"] = { "o", 259806 },	-- Love Potion Recipe
 				["coord"] = { 45.2, 73.8, SILVERPINE_FOREST },
-				["timeline"] = { "added 3.3.0" },
+				["timeline"] = { "added 7.1.5.23194" },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
