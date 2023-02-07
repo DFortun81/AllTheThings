@@ -1,7 +1,10 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-local DM_TEXT = "If you find this item. Please report to ATT-Discord. This item have yet to be found.";
+local function unknown(i)
+	i.description = "If you find this item. Please report to ATT-Discord. This item has yet to be found.";
+	i.u = NEVER_IMPLEMENTED;
+end
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAKEWATCHER_MANUSCRIPTS, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
@@ -649,9 +652,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 			}),
 		})),
-		i(196961, {	-- Cliffside Wylderdrake: Armor
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(196961)),	-- Cliffside Wylderdrake: Armor
 		i(196991),	-- Cliffside Wylderdrake: Black Horns (DM!)
 		i(196986),	-- Cliffside Wylderdrake: Black Hair (DM!)
 		i(197013),	-- Cliffside Wylderdrake: Black Scales (DM!)
@@ -659,44 +660,28 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197012),	-- Cliffside Wylderdrake: Blue Scales (DM!)
 		i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
 		i(196996),	-- Cliffside Wylderdrake: Branched Horns (DM!)
-		i(196965, {	-- Cliffside Wylderdrake: Bronze and Teal Armor
-			["description"] = DM_TEXT,
-		}),
-		i(197000, {	-- Cliffside Wylderdrake: Coiled Horns
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(196965)),	-- Cliffside Wylderdrake: Bronze and Teal Armor
+		unknown(i(197000)),	-- Cliffside Wylderdrake: Coiled Horns
 		i(196981),	-- Cliffside Wylderdrake: Conical Head (DM!)
 		i(196979),	-- Cliffside Wylderdrake: Curled Head Horns (DM!)
-		i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197015)),	-- Cliffside Wylderdrake: Dark Skin Variation
 		i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
 		i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 		i(196969),	-- Cliffside Wylderdrake: Finned Back (DM!)
 		i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
-		i(196984, {	-- Cliffside Wylderdrake: Finned Jaw
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(196984)),	-- Cliffside Wylderdrake: Finned Jaw
 		i(197022),	-- Cliffside Wylderdrake: Finned Neck (DM!)
 		i(197018),	-- Cliffside Wylderdrake: Finned Tail (DM!)
-		i(197002, {	-- Cliffside Wylderdrake: Flared Cheek
-			["description"] = DM_TEXT,
-		}),
-		i(196974, {	-- Cliffside Wylderdrake: Four Horned Chin
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197002)),	-- Cliffside Wylderdrake: Flared Cheek
+		unknown(i(196974)),	-- Cliffside Wylderdrake: Four Horned Chin
 		i(196964),	-- Cliffside Wylderdrake: Gold and Black Armor (DM!)
 		i(196966),	-- Cliffside Wylderdrake: Gold and Orange Armor (DM!)
-		i(196967, {	-- Cliffside Wylderdrake: Gold and White Armor
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(196967)),	-- Cliffside Wylderdrake: Gold and White Armor
 		i(197011),	-- Cliffside Wylderdrake: Green Scales (DM!)
 		i(196975),	-- Cliffside Wylderdrake: Head Fin (DM!)
 		i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
 		i(196992),	-- Cliffside Wylderdrake: Heavy Horns (DM!)
-		i(196990, {	-- Cliffside Wylderdrake: Helm
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(196990)),	-- Cliffside Wylderdrake: Helm
 		i(196998),	-- Cliffside Wylderdrake: Hook Horns (DM!)
 		i(196985),	-- Cliffside Wylderdrake: Horned Jaw (DM!)
 		i(197005),	-- Cliffside Wylderdrake: Horned Nose (DM!)
@@ -712,37 +697,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(196994),	-- Cliffside Wylderdrake: Short Horns (DM!)
 		i(196963),	-- Cliffside Wylderdrake: Silver and Blue Armor (DM!)
 		i(196962),	-- Cliffside Wylderdrake: Silver and Purple Armor (DM!)
-		i(196993, {	-- Cliffside Wylderdrake: Sleek Horns
-			["description"] = DM_TEXT,
-		}),
-		i(196978, {	-- Cliffside Wylderdrake: Small Head Spikes
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(196993)),	-- Cliffside Wylderdrake: Sleek Horns
+		unknown(i(196978)),	-- Cliffside Wylderdrake: Small Head Spikes
 		i(197020),	-- Cliffside Wylderdrake: Spear Tail (DM!)
 		i(196970),	-- Cliffside Wylderdrake: Spiked Back (DM!)
 		i(196971),	-- Cliffside Wylderdrake: Spiked Brow (DM!)
 		i(197003),	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
-		i(197021, {	-- Cliffside Wylderdrake: Spiked Club Tail
-			["description"] = DM_TEXT,
-		}),
-		i(197004, {	-- Cliffside Wylderdrake: Spiked Legs
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197021)),	-- Cliffside Wylderdrake: Spiked Club Tail
+		unknown(i(197004)),	-- Cliffside Wylderdrake: Spiked Legs
 		i(196977),	-- Cliffside Wylderdrake: Split Head Horns (DM!)
-		i(196997, {	-- Cliffside Wylderdrake: Split Horns
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(196997)),	-- Cliffside Wylderdrake: Split Horns
 		i(196968),	-- Cliffside Wylderdrake: Steel and Yellow Armor (DM!)
 		i(196999),	-- Cliffside Wylderdrake: Swept Horns (DM!)
 		i(196980),	-- Cliffside Wylderdrake: Triple Head Horns (DM!)
 		i(196989),	-- Cliffside Wylderdrake: White Hair (DM!)
-		i(197014, {	-- Cliffside Wylderdrake: White Scales
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197014)),	-- Cliffside Wylderdrake: White Scales
 		i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
-		i(197099, {	-- Highland Drake: Armor
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197099)),	-- Highland Drake: Armor
 		i(197117),	-- Highland Drake: Black Hair (DM!)
 		i(197142),	-- Highland Drake: Black Scales (DM!)
 		i(197153),	-- Highland Drake: Bladed Tail (DM!)
@@ -756,34 +727,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197116),	-- Highland Drake: Ears (DM!)
 		i(197098),	-- Highland Drake: Finned Back (DM!)
 		i(197106),	-- Highland Drake: Finned Head (DM!)
-		i(197155, {	-- Highland Drake: Finned Neck [States: Quest Reward at Rostrum]
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197155)),	-- Highland Drake: Finned Neck [States: Quest Reward at Rostrum]
 		i(197090),	-- Highland Drake: Gold and Black Armor (DM!)
-		i(197156, {	-- Highland Drake: Gold and Green Armor
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197156)),	-- Highland Drake: Gold and Green Armor
 		i(197094),	-- Highland Drake: Gold and Red Armor (DM!)
-		i(197095, {	-- Highland Drake: Gold and White Armor
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197095)),	-- Highland Drake: Gold and White Armor
 		i(197127),	-- Highland Drake: Grand Thorn Horns (DM!)
 		i(197143),	-- Highland Drake: Green Scales (DM!)
 		i(197131),	-- Highland Drake: Hairy Cheek (DM!)
 		i(197122),	-- Highland Drake: Heavy Horns (DM!)
 		i(197147),	-- Highland Drake: Heavy Scales (DM!)
-		i(197119, {	-- Highland Drake: Helm
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197119)),	-- Highland Drake: Helm
 		i(197126),	-- Highland Drake: Hooked Horns (DM!)
 		i(197152),	-- Highland Drake: Hooked Tail (DM!)
 		i(197139),	-- Highland Drake: Large Spotted Pattern (DM!)
 		i(197103),	-- Highland Drake: Maned Chin (DM!)
 		i(197111),	-- Highland Drake: Maned Head (DM!)
 		i(197114),	-- Highland Drake: Multi-Horned Head (DM!)
-		i(197120, {	-- Highland Drake: Ornate Helm
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197120)),	-- Highland Drake: Ornate Helm
 		i(197110),	-- Highland Drake: Plated Head (DM!)
 		i(197144),	-- Highland Drake: Red Scales (DM!)
 		i(197141),	-- Highland Drake: Scaled Pattern (DM!)
@@ -791,14 +752,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197093),	-- Highland Drake: Silver and Purple Armor (DM!)
 		i(197112),	-- Highland Drake: Single Horned Head (DM!)
 		i(197140),	-- Highland Drake: Small Spotted Pattern (DM!)
-		i(197109, {	-- Highland Drake: Spiked Head
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197109)),	-- Highland Drake: Spiked Head
 		i(197132),	-- Highland Drake: Spiked Cheek (DM!)
 		i(197150),	-- Highland Drake: Spiked Club Tail (DM!)
-		i(197134, {	-- Highland Drake: Spiked Legs
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197134)),	-- Highland Drake: Spiked Legs
 		i(197151),	-- Highland Drake: Spiked Tail (DM!)
 		i(197097),	-- Highland Drake: Spined Back (DM!)
 		i(197133),	-- Highland Drake: Spined Cheek (DM!)
@@ -809,25 +766,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197130),	-- Highland Drake: Stag Horns (DM!)
 		i(197096),	-- Highland Drake: Steel and Yellow Armor (DM!)
 		i(197138),	-- Highland Drake: Striped Pattern (DM!)
-		i(197124, {	-- Highland Drake: Swept Horns
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197124)),	-- Highland Drake: Swept Horns
 		i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
 		i(197121),	-- Highland Drake: Tan Horns (DM!)
-		i(197104, {	-- Highland Drake: Tapered Chin
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197104)),	-- Highland Drake: Tapered Chin
 		i(197123),	-- Highland Drake: Thorn Horns (DM!)
 		i(197115),	-- Highland Drake: Thorned Jaw (DM!)
 		i(197135),	-- Highland Drake: Toothy Mouth (DM!)
 		i(197107),	-- Highland Drake: Triple Finned Head (DM!)
-		i(197136, {	-- Highland Drake: Tapered Nose
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197136)),	-- Highland Drake: Tapered Nose
 		i(197148),	-- Highland Drake: Vertical Finned Tail (DM!)
-		i(197146, {	-- Highland Drake: White Scales
-			["description"] = DM_TEXT,
-		}),
+		unknown(i(197146)),	-- Highland Drake: White Scales
 		i(197357),	-- Renewed Proto-Drake: Armor
 		i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
 		i(197348),	-- Renewed Proto-Drake: Black and Red Armor
