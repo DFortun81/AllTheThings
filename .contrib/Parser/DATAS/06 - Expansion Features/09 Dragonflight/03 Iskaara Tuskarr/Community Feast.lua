@@ -4,6 +4,7 @@
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(ISKAARA_TUSKARR, {
 		q(70893, {	-- Community Feast
+			["provider"] = { "n", 196620 },	-- Pleeqi
 			["isWeekly"] = true,
 			["g"] = {
 				i(200095, {	-- Supply-Laden Soup Pot
