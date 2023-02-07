@@ -4,6 +4,7 @@
 local function unknown(i)
 	i.description = "If you find this item. Please report to ATT-Discord. This item has yet to be found.";
 	i.u = NEVER_IMPLEMENTED;
+	return i;
 end
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAKEWATCHER_MANUSCRIPTS, {
