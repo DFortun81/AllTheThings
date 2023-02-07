@@ -205,7 +205,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["description"] = "The Faintly Glowing Seeds can be found scattered around the zone, but the closest ones to the encounter are up the hill in Heartwood Grove.  Look around the bases of trees for sparkling bluish-purple plants.",
 				["crs"] = { 171690 },	-- Gwyncierw
 				["coord"] = { 65.6, 24.6, ARDENWEALD },
-				["cost"] = { { "i", 183902, 1 } },	-- 1x A Faintly Glowing Seed
+				["provider"] = { "i", 183902 },	-- 1x A Faintly Glowing Seed
 			}),
 			ach(14511, {	-- Tour of Duty: Ardenweald
 				["pvp"] = true,

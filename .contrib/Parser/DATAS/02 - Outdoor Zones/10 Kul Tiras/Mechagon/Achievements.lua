@@ -687,10 +687,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				["crs"] = { 150497 },	-- Scrappy
 				["g"] = {
 					crit(1, {	-- Revive Scrappy
-						["cost"] = { { "i", 166970, 1 } },	-- 1x Energy Cell
+						["provider"] = { "i", 166970 },	-- 1x Energy Cell
 					}),
 					crit(2, {	-- Feed Scrappy
-						["cost"] = { { "i", 167071, 1 } },	-- 1x Mechano-Treat
+						["provider"] = { "i", 167071 },	-- 1x Mechano-Treat
 					}),
 				},
 			}),

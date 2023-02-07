@@ -113,7 +113,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ [
 		ach(9461),		-- Sea Scorpion Angler
 		ach(13502, {	-- Secret Fish and Where to Find Them
 			["description"] = "First, acquire the Secret Fish Goggles from Danielle Anglers in Mechagon.\n\nWhen you use the goggles, you gain a 1-hour buff that allows you to see Secret Fish, which appear in bubbles around your character. When you see one, approach it and click on it, and you'll get a fish. That fish will be a BfA, or zone-relevant common fish, or one of the requirements for this achievement (assuming you fulfill the requirements for each fish).",
-			["cost"] = { { "i", 167698, 1 } },	-- Secret Fish Goggles
+			["provider"] = { "i", 167698 },	-- Secret Fish Goggles
 			["g"] = {
 				crit(1, {	-- Ancient Mana Fin
 					["itemID"] = 167708,	-- Ancient Mana Fin

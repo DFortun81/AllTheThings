@@ -75,16 +75,16 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		})),
 		petbattle(ach(8519, {	-- Celestial Family
 			crit(1, {	-- Xu-Fu, Cub of Xuen
-				["cost"] = { { "i", 101771, 1} },
+				["provider"] = { "i", 101771 },
 			}),
 			crit(2, {	-- Chi-Chi, Hatchling of Chi-Ji
-				["cost"] = { { "i", 102145, 1} },
+				["provider"] = { "i", 102145 },
 			}),
 			crit(3, {	-- Yu'la, Broodling of Yu'lon
-				["cost"] = { { "i", 102147, 1} },
+				["provider"] = { "i", 102147 },
 			}),
 			crit(4, {	-- Zao, Calfling of Niuzao
-				["cost"] = { { "i", 102146, 1} },
+				["provider"] = { "i", 102146 },
 			}),
 		})),
 		petbattle(ach(6611, {		-- Continental Tamer*

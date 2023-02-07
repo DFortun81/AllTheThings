@@ -12,16 +12,16 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 		n(ACHIEVEMENTS, {
 			ach(10053, {	-- I Found Pepe! (Various Draenor see criteria)
 				crit(1, {	-- Pirate Pepe
-					["cost"] = { { "i", 127870, 1 } },	-- A Tiny Pirate Hat
+					["provider"] = { "i", 127870 },	-- A Tiny Pirate Hat
 				}),
 				crit(2, {	-- Viking Pepe
-					["cost"] = { { "i", 127865, 1 } },	-- A Tiny Viking Helmet
+					["provider"] = { "i", 127865 },	-- A Tiny Viking Helmet
 				}),
 				crit(3, {	-- Knight Pepe
-					["cost"] = { { "i", 127869, 1 } },	-- A Tiny Plated Helm
+					["provider"] = { "i", 127869 },	-- A Tiny Plated Helm
 				}),
 				crit(4, {	-- Ninja Pepe
-					["cost"] = { { "i", 127867, 1 } },	-- A Tiny Ninja Shroud
+					["provider"] = { "i", 127867 },	-- A Tiny Ninja Shroud
 				}),
 			}),
 			ach(10770),		-- The Tangerine Traveler (Dalaran - NR / See murphymurph's post on wowhead for coords)

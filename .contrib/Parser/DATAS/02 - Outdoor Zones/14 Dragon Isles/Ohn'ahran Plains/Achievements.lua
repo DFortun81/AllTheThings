@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				crit(12),	-- Windsong Rise
 			}),
 			ach(16423, {	-- Honor Our Ancestors
-				["cost"] = { { "i", 201323, 1 }, }, 	-- 1x Essence of Awakening
+				["provider"] = { "i", 201323 }, 	-- 1x Essence of Awakening
 				["g"] = {
 					i(200630),	-- Ohn'ir Windsage's Hearthstone (TOY!)
 					crit(1, {	-- Maruukai Ancestor
@@ -219,7 +219,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			ach(16583, {	-- Knew You Nokhud Do It!
 				["crs"] = { 197884 },	-- Training Master Turasa
-				["cost"] = {{"i",200201,1}},	-- Nokhud Battlegear
+				["provider"] = { "i", 200201 },	-- Nokhud Battlegear
 				["coord"] = { 34.6, 34.6, OHNAHRAN_PLAINS },
 			}),
 			ach(16576, {	-- Ohn'ahran Plains Glyph Hunter
