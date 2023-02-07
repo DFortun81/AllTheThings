@@ -438,22 +438,26 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				},
 			}),
 			ach(1255, {	-- Scrooge (A)
-				-- #if AFTER 4.0.3
-				["provider"] = { "n", 42928 },	-- Muradin Bronzebeard
-				-- #else
-				["provider"] = { "n", 2784 },	-- King Magni Bronzebeard
-				-- #endif
-				["cost"] = {{ "i", 17202, 1 }},	-- Snowball
+				["providers"] = {
+					{ "i", 17202 },	-- Snowball
+					-- #if AFTER 4.0.3
+					{ "n", 42928 },	-- Muradin Bronzebeard
+					-- #else
+					{ "n", 2784 },	-- King Magni Bronzebeard
+					-- #endif
+				},
 				["maps"] = { IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(259, {	-- Scrooge (H)
-				-- #if AFTER 4.0.3
-				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
-				-- #else
-				["provider"] = { "n", 3057 },	-- Cairne Bloodhoof <High Chieftain>
-				-- #endif
-				["cost"] = {{ "i", 17202, 1 }},	-- Snowball
+				["providers"] = {
+					{ "i", 17202 },	-- Snowball
+					-- #if AFTER 4.0.3
+					{ "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
+					-- #else
+					{ "n", 3057 },	-- Cairne Bloodhoof <High Chieftain>
+					-- #endif
+				},
 				["maps"] = {
 					-- #if AFTER 9.0.1
 					ORIBOS,

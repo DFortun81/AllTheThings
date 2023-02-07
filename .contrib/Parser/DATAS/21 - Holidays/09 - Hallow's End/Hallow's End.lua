@@ -528,42 +528,42 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 			}),
 			ach(291, {	-- Check Your Head
 				crit(5774, {	-- Blood Elf
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+					["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 				}),
 				crit(5775, {	-- Draenei
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+					["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 				}),
 				crit(5776, {	-- Dwarf
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+					["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 				}),
 				crit(5772, {	-- Gnome
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+					["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 				}),
 				crit(17855, {	-- Goblin
 					["timeline"] = { "added 4.0.1" },
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+					["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 				}),
 				crit(5777, {	-- Human
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+					["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 				}),
 				crit(5778, {	-- Night Elf
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+					["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 				}),
 				crit(5779, {	-- Orc
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+					["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 				}),
 				crit(5780, {	-- Tauren
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+					["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 				}),
 				crit(5781, {	-- Troll
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+					["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 				}),
 				crit(5782, {	-- Undead
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+					["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 				}),
 				crit(17854, {	-- Worgen
 					["timeline"] = { "added 4.0.1" },
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+					["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 				}),
 			}),
 			ach(1261, {	-- G.N.E.R.D. Rage

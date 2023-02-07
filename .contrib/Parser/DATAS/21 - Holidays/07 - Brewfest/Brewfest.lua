@@ -349,53 +349,53 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 			ach(1185, {	-- The Brewfest Diet
 				-- #if ANYCLASSIC
 				crit(3542, {	-- Dried Sausage
-					["cost"] = { { "i", 34063, 1 } },	-- Dried Sausage
+					["provider"] = { "i", 34063 }	-- Dried Sausage
 				}),
 				crit(3543, {	-- Pickled Sausage
-					["cost"] = { { "i", 33024, 1 } },	-- Pickled Sausage
+					["provider"] = { "i", 33024 }	-- Pickled Sausage
 				}),
 				-- #else
 				crit(18619, {	-- Dried Sausage
-					["cost"] = { { "i", 34063, 1 } },	-- Dried Sausage
+					["provider"] = { "i", 34063 }	-- Dried Sausage
 				}),
 				crit(18622, {	-- Pickled Sausage
-					["cost"] = { { "i", 33024, 1 } },	-- Pickled Sausage
+					["provider"] = { "i", 33024 }	-- Pickled Sausage
 				}),
 				-- #endif
 				crit(3544, {	-- Savory Sausage
-					["cost"] = { { "i", 33023, 1 } },	-- Savory Sausage
+					["provider"] = { "i", 33023 }	-- Savory Sausage
 				}),
 				-- #if ANYCLASSIC
 				crit(3545, {	-- Spiced Onion Cheese
-					["cost"] = { { "i", 34065, 1 } },	-- Spiced Onion Cheese
+					["provider"] = { "i", 34065 }	-- Spiced Onion Cheese
 				}),
 				crit(3546, {	-- Spicy Smoked Sausage
-					["cost"] = { { "i", 33025, 1 } },	-- Spicy Smoked Sausage
+					["provider"] = { "i", 33025 }	-- Spicy Smoked Sausage
 				}),
 				crit(3547, {	-- Succulent Sausage
-					["cost"] = { { "i", 34064, 1 } },	-- Succulent Sausage
+					["provider"] = { "i", 34064 }	-- Succulent Sausage
 				}),
 				-- #else
 				crit(18621, {	-- Spiced Onion Cheese
-					["cost"] = { { "i", 34065, 1 } },	-- Spiced Onion Cheese
+					["provider"] = { "i", 34065 }	-- Spiced Onion Cheese
 				}),
 				crit(18623, {	-- Spicy Smoked Sausage
-					["cost"] = { { "i", 33025, 1 } },	-- Spicy Smoked Sausage
+					["provider"] = { "i", 33025 }	-- Spicy Smoked Sausage
 				}),
 				crit(18620, {	-- Succulent Sausage
-					["cost"] = { { "i", 34064, 1 } },	-- Succulent Sausage
+					["provider"] = { "i", 34064 }	-- Succulent Sausage
 				}),
 				-- #endif
 				crit(7987, {	-- The Essential Brewfest Pretzel
-					["cost"] = { { "i", 33043, 1 } },	-- The Essential Brewfest Pretzel
+					["provider"] = { "i", 33043 }	-- The Essential Brewfest Pretzel
 				}),
 				-- #if ANYCLASSIC
 				crit(3549, {	-- The Golden Link
-					["cost"] = { { "i", 33026, 1 } },	-- The Golden Link
+					["provider"] = { "i", 33026 }	-- The Golden Link
 				}),
 				-- #else
 				crit(18624, {	-- The Golden Link
-					["cost"] = { { "i", 33026, 1 } },	-- The Golden Link
+					["provider"] = { "i", 33026 }	-- The Golden Link
 				}),
 				-- #endif
 			}),
