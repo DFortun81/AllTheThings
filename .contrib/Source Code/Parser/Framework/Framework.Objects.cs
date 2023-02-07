@@ -83,6 +83,11 @@ namespace ATT
             public static IDictionary<string, Dictionary<object, List<Dictionary<string, object>>>> PostProcessMergeIntos { get; } = new Dictionary<string, Dictionary<object, List<Dictionary<string, object>>>>();
 
             /// <summary>
+            /// Used to track what actual key/keyValues were used to merge data
+            /// </summary>
+            private static IDictionary<string, HashSet<object>> PostProcessMergedKeyValues { get; } = new Dictionary<string, HashSet<object>>();
+
+            /// <summary>
             /// All of the SourceID's harvested for Legion Artifacts
             /// </summary>
             public static IDictionary<long, Dictionary<string, long>> ArtifactSources { get; } = new Dictionary<long, Dictionary<string, long>>();
@@ -540,12 +545,48 @@ namespace ATT
                             // get the container for objects of this key
                             if (PostProcessMergeIntos.TryGetValue(key, out Dictionary<object, List<Dictionary<string, object>>> typeObjects) && typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
                             {
+                                // track the data which is actually being merged into another group
+                                TrackPostProcessMergeKey(key, keyValue);
+
                                 // merge the objects into the data object
                                 foreach (Dictionary<string, object> mergeObject in mergeObjects)
                                     // copy the actual object when merging under another Source, since it may merge into multiple Sources
                                     Merge(data, "g", mergeObject);
                             }
                         }
+                    }
+                }
+            }
+
+            private static void TrackPostProcessMergeKey(string key, object value)
+            {
+                if (!PostProcessMergedKeyValues.TryGetValue(key, out HashSet<object> keyValues))
+                {
+                    PostProcessMergedKeyValues[key] = keyValues = new HashSet<object>();
+                }
+
+                keyValues.Add(value);
+            }
+
+            internal static void NotifyPostProcessMergeFailures()
+            {
+                foreach (var keyGroup in PostProcessMergedKeyValues)
+                {
+                    if (PostProcessMergeIntos.TryGetValue(keyGroup.Key, out Dictionary<object, List<Dictionary<string, object>>> keyValueDatas))
+                    {
+                        foreach (var keyGroupValue in keyGroup.Value)
+                        {
+                            keyValueDatas.Remove(keyGroupValue);
+                        }
+                    }
+                }
+
+                // report any remaining objects by key/keyValue
+                foreach (var keyGroup in PostProcessMergeIntos)
+                {
+                    foreach (var keyValueMergeSet in keyGroup.Value)
+                    {
+                        LogDebug($"Failed to merge data which requires a Source: [{keyGroup.Key}]:[{keyValueMergeSet.Key}]");
                     }
                 }
             }
