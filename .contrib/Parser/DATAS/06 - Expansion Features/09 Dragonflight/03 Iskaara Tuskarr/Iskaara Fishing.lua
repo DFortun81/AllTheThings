@@ -340,7 +340,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				n(197371, {	-- Ravenous Tundra Bear <Lunker>
 					["coord"] = { 58.8, 32.6, THE_AZURE_SPAN },
-					-- ["questID"] = ,
+					["questID"] = 73891,
 					["g"] = {
 						i(200086),	-- Khaz'gorite Infused Resin
 

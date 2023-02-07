@@ -2736,6 +2736,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74127),	-- Skinning Karantun
 			q(74130),	-- Skinning Frigidpelt Den Mother
 			q(74131),	-- Skinning Mucka the Raker
+			q(74132),	-- Skinning Ravenous Tundra Bear
 			q(74134),	-- Skinning Grumbletrunk
 			q(74135),	-- Skinning Gruffy
 			q(74140),	-- Skinning Norbett (Grand Hunt)
