@@ -610,7 +610,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 						["_quests"] = { 29377 },	-- A Time to Break Down
 					}),
 					crit(3219, {	-- Clean Up in Undercity
-						["_quests"] = { 3219 },	-- Clean Up in Undercity
+						["_quests"] = { 29375 },	-- Clean Up in Undercity
 					}),
 					crit(3218, {	-- Stink Bombs Away!
 						["_quests"] = { 29374 },	-- Stink Bombs Away!
