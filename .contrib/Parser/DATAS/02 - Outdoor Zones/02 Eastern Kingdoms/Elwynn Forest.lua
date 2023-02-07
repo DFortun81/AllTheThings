@@ -1988,7 +1988,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
 						i(132094, {	-- Proprietor's Mitts
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { "added 4.0.3.13287" },
 						}),
 						i(57397, {	-- Goldshire Iron Bracer
 							["timeline"] = { "added 4.0.3.13287" },
@@ -2007,7 +2007,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(57396, {	-- Innkeeper's Gloves
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
-						i(132094, {	-- Proprietor's Mitts
+						i(131715, {	-- Smith's Chain Gloves
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(57397, {	-- Goldshire Iron Bracer
@@ -2552,6 +2552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1972, {	-- Westfall Deed
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						116,	-- Defias Bandit
