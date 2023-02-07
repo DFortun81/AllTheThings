@@ -476,7 +476,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							}),
 							ach(14764, {	-- The Great Luckydo
 								["description"] = "Possible to find the Great Luckydo when Chordy finds treasure.",
-								["cost"] = { { "i", 178554, 1 } },	-- Call Chordy
+								["provider"] = { "i", 178554 },	-- Call Chordy
 								["crs"] = {
 									--158259,	-- Chordy (as pet) - All summonable pets from Abomination Factory use same ID, don't use this.
 									161270,	-- Chordy (in world)

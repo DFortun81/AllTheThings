@@ -132,7 +132,7 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["provider"] = { "n", 14844 },	-- Sylvannia
 			["coord"] = { 50.5, 69.5, 407 },
 			["cost"] = {
-				{ "i", 19299, 5 },	-- x5 Fizzy faire Drink
+				{ "i", 19299, 5 },	-- x5 Fizzy Faire Drink
 				{ "i", 1645, 5 },	-- x5 Moonberry Juice
 			},
 		}),

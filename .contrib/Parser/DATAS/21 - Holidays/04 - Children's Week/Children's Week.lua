@@ -116,28 +116,28 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 			ach(1792),	-- Aw, Isn't It Cute?
 			ach(1788, {	-- Bad Example
 				crit(6, {	-- Dalaran Brownie
-					["cost"] = { { "i", 42431, 1 } },	-- Dalaran Brownie
+					["provider"] = { "i", 42431 },	-- Dalaran Brownie
 					["maps"] = {
 						NORTHREND_DALARAN,
 						LEGION_DALARAN,
 					},
 				}),
 				crit(7, {	-- Dalaran Doughnut
-					["cost"] = { { "i", 42430, 1 } },	-- Dalaran Doughnut
+					["provider"] = { "i", 42430 },	-- Dalaran Doughnut
 					["maps"] = {
 						NORTHREND_DALARAN,
 						LEGION_DALARAN,
 					},
 				}),
 				crit(4, {	-- Delicious Chocolate Cake
-					["cost"] = { { "i", 33924, 1 } },	-- Delicious Chocolate Cake
+					["provider"] = { "i", 33924 },	-- Delicious Chocolate Cake
 					["maps"] = {
 						NORTHREND_DALARAN,
 						LEGION_DALARAN,
 					},
 				}),
 				crit(5, {	-- Lovely Cake Slice
-					["cost"] = { { "i", 42438, 1 } },	-- Lovely Cake
+					["provider"] = { "i", 42438 },	-- Lovely Cake
 					["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
 					["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
 					["maps"] = {
@@ -146,7 +146,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 					},
 				}),
 				crit(3, {	-- Red Velvet Cupcake
-					["cost"] = { { "i", 42429, 1 } },	-- Red Velvet Cupcake
+					["provider"] = { "i", 42429 },	-- Red Velvet Cupcake
 					["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
 					["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
 					["maps"] = {
@@ -155,10 +155,10 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 					},
 				}),
 				crit(2, {	-- Tasty Cupcake
-					["cost"] = { { "i", 43490, 1 } },	-- Tasty Cupcake
+					["provider"] = { "i", 43490 },	-- Tasty Cupcake
 				}),
 				crit(1, {	-- Tigule's Strawberry Ice Cream
-					["cost"] = { { "i", 7228, 1 } },	-- Tigule's Strawberry Ice Cream
+					["provider"] = { "i", 7228 },	-- Tigule's Strawberry Ice Cream
 					["crs"] = { -- TODO: Remove, add vendors to zones
 						-- Katrina Shimmerstar & Rachelle Gothena are listed on WoWHead, but only appear during Hallow's End.
 						14480,	-- Alowicious Czervik

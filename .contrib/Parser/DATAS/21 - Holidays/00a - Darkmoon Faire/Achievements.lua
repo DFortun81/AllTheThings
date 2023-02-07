@@ -132,58 +132,58 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 		}),
 		ach(6026, {	-- Fairegoer's Feast
 			crit(1, {	-- Corn-Breaded Sausage
-				["cost"] = { { "i", 44940, 1 } },
+				["provider"] = { "i", 44940 },
 			}),
 			crit(2, {	-- Crunchy Frog
-				["cost"] = { { "i", 19306, 1 } },
+				["provider"] = { "i", 19306 },
 			}),
 			crit(3, {	-- Darkmoon Dog
-				["cost"] = { { "i", 19223, 1 } },
+				["provider"] = { "i", 19223 },
 			}),
 			crit(4, {	-- Deep Fried Candybar
-				["cost"] = { { "i", 19225, 1 } },
+				["provider"] = { "i", 19225 },
 			}),
 			crit(5, {	-- Forest Strider Drumstick
-				["cost"] = { { "i", 33254, 1 } },
+				["provider"] = { "i", 33254 },
 			}),
 			crit(6, {	-- Funnel Cake
-				["cost"] = { { "i", 33246, 1 } },
+				["provider"] = { "i", 33246 },
 			}),
 			crit(7, {	-- Pickled Kodo Foot
-				["cost"] = { { "i", 19305, 1 } },
+				["provider"] = { "i", 19305 },
 			}),
 			crit(8, {	-- Red Hot Wings
-				["cost"] = { { "i", 19224, 1 } },
+				["provider"] = { "i", 19224 },
 			}),
 			crit(9, {	-- Salty Sea Dog
-				["cost"] = { { "i", 73260, 1 } },
+				["provider"] = { "i", 73260 },
 			}),
 			crit(10, {	-- Spiced Beef Jerky
-				["cost"] = { { "i", 19304, 1 } },
+				["provider"] = { "i", 19304 },
 			}),
 			crit(11, {	-- Bottled Winterspring Water
-				["cost"] = { { "i", 19300, 1 } },
+				["provider"] = { "i", 19300 },
 			}),
 			crit(12, {	-- Cheap Beer
-				["cost"] = { { "i", 19222, 1 } },
+				["provider"] = { "i", 19222 },
 			}),
 			crit(13, {	-- Darkmoon Special Reserve
-				["cost"] = { { "i", 19221, 1 } },
+				["provider"] = { "i", 19221 },
 			}),
 			crit(14, {	-- Fizzy Faire Drink
-				["cost"] = { { "i", 19299, 1 } },
+				["provider"] = { "i", 19299 },
 			}),
 			crit(15, {	-- Fizzy Faire Drink "Classic"
-				["cost"] = { { "i", 33236, 1 } },
+				["provider"] = { "i", 33236 },
 			}),
 			crit(16, {	-- Fresh-Squeezed Limeade
-				["cost"] = { { "i", 44941, 1 } },
+				["provider"] = { "i", 44941 },
 			}),
 			crit(17, {	-- Iced Berry Slush
-				["cost"] = { { "i", 33234, 1 } },
+				["provider"] = { "i", 33234 },
 			}),
 			crit(18, {	-- Sasparilla Sinker
-				["cost"] = { { "i", 74822, 1 } },
+				["provider"] = { "i", 74822 },
 			}),
 		}),
 		ach(15223, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Feeling It
