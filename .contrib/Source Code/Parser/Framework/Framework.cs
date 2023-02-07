@@ -709,15 +709,17 @@ namespace ATT
                                     }
                                 }
 
-                                // Single Cost Item on a non-Item group should be represented as a Provider instead
-                                if (!data.TryGetValue("itemID", out long _) &&
-                                    !data.TryGetValue("questID", out long _) &&
-                                    cost.Count == 1 &&
-                                    c.Count > 2 &&
-                                    c[2].TryConvert(out long count) &&
-                                    count == 1)
+                                // Single Cost Item on a Achieve/Criteria group should be represented as a Provider instead
+                                if (data.TryGetValue("achID", out long _) ||
+                                    data.TryGetValue("criteriaID", out long _))
                                 {
-                                    Log($"WARN: 'cost' = {ToJSON(c)} should be 'provider'{Environment.NewLine}-- {ToJSON(data)}");
+                                    if (cost.Count == 1 &&
+                                        c.Count > 2 &&
+                                        c[2].TryConvert(out long count) &&
+                                        count == 1)
+                                    {
+                                        Log($"WARN: 'cost' = {ToJSON(c)} should be 'provider'{Environment.NewLine}-- {ToJSON(data)}");
+                                    }
                                 }
                                 break;
                             case "c":
