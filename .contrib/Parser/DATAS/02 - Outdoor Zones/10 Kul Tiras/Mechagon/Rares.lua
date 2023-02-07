@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				},
 			}),
 			n(150394, {	-- Armored Vaultbot
-				["creatureID"] = 154968,	-- future ID
+				["cr"] = 154968,	-- future ID
 				["questID"] = 55546,
 				["isDaily"] = true,
 				["description"] = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it, or use the |cFFFFD700Armored Vaultbot Key|r to unlock it BEFORE it is engaged in combat.  If you've time-traveled to the future, you must use a key to unlock it.",
@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				},
 			}),
 			n(151569, {	-- Deepwater Maw
-				["creatureID"] = 151558,	-- Hundred-Fathom Lure
+				["cr"] = 151558,	-- Hundred-Fathom Lure
 				["questID"] = 55514,
 				["coord"] = { 35.3, 43.0, MECHAGON },
 				["isDaily"] = true,
@@ -311,7 +311,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 			--	if recycling requisitions are separate based on whether you get the items from the scrapyard or the reclamation rig, we should probably move the quests to the NYI file or something so that one doesn't check off the other!  (or mark them repeatable or whatever)
 			--	possibly attach just the 'box of assorted parts' questID to the overall header instead of the box itself?
 				["modelScale"] = 4.2,
-				["creatureID"] = 150451,	-- Reclamation Rig (before being built)
+				["cr"] = 150451,	-- Reclamation Rig (before being built)
 				["questID"] = 57132,	-- normal
 			--	["altQuests"] = { 55848 },	-- hardmode
 				["isDaily"] = true,	-- for some reason with the quests attached it won't reset after dailies
