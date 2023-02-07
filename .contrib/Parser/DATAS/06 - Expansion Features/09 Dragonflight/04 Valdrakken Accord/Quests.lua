@@ -217,6 +217,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["g"] = {
 					i(199772),	-- Titan Gatekeeper's Shield
 					i(199773),	-- Titan Watcher's Scepter
+					i(199774),	-- Ancient Titan Blunderbuss
 				},
 			}),
 				-- RENOWN 14 --
