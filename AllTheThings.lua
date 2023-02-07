@@ -4614,8 +4614,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if parent and not parent.hideText and parent.parent
 				and (showCompleted or not app.IsComplete(j))
 				and not app.HasCost(j, paramA, paramB)
-				then
-				text = BuildSourceText(paramA ~= "itemID" and parent or j, paramA ~= "itemID" and 1 or 0);
+			then
+				text = BuildSourceText(parent, 1);
 				if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
 					for source,replacement in pairs(abbrevs) do
 						text = string.gsub(text, source, replacement);
@@ -4647,20 +4647,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if #temp > 0 then
 			local listing = {};
 			local maximum = app.Settings:GetTooltipSetting("Locations");
+			local count = 0;
 			app.Sort(temp, app.SortDefaults.Text);
-			for i,j in ipairs(temp) do
+			for _,j in ipairs(temp) do
 				if not contains(listing, j) then
-					tinsert(listing, 1, j);
+					count = count + 1;
+					if count <= maximum then
+						tinsert(listing, 1, j);
+					end
 				end
 			end
-			local count = #listing;
-			if count > maximum + 1 then
-				for i=count,maximum + 1,-1 do
-					table.remove(listing, 1);
-				end
+			if count > maximum then
 				tinsert(listing, 1, L["AND_"] .. (count - maximum) .. L["_OTHER_SOURCES"] .. "...");
 			end
-			for i,text in ipairs(listing) do
+			for _,text in ipairs(listing) do
 				if not working and text:find(RETRIEVING_DATA) then working = true; end
 				local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
 				tinsert(info, 1, { left = left, right = right, wrap = wrap });
