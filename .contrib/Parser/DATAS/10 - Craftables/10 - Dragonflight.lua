@@ -947,6 +947,19 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		n(HIDDEN_QUESTS, sharedData({
 			["requireSkill"] = ENGINEERING,
 		},{
+			-- Wormhole Locations --
+			q(70573),
+			q(70574),
+			q(70575),
+			q(70576),
+			q(70577),
+			q(70578),
+			q(70579),
+			q(70580),
+			q(70581),
+			q(70583),
+			q(70584),
+			q(70585),
 			-- Parts --
 			q(71482, { ["name"] = "First Craft: Arclight Capacitor", }),	-- Arclight Capacitor
 			q(71484, { ["name"] = "First Craft: Assorted Safety Fuses", }),	-- Assorted Safety Fuses
