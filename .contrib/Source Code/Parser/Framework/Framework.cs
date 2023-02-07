@@ -564,6 +564,11 @@ namespace ATT
             if (data.TryGetValue("categoryID", out long categoryID)) ProcessCategoryObject(data, categoryID);
             if (data.TryGetValue("creatureID", out long creatureID))
             {
+                if (data.TryGetValue("npcID", out object dupeNpcID))
+                {
+                    LogError($"Both CreatureID {creatureID} and NPCID {dupeNpcID}?{Environment.NewLine}-- {ToJSON(data)}");
+                }
+                data["npcID"] = creatureID;
                 NPCS_WITH_REFERENCES[creatureID] = true;
             }
             if (data.TryGetValue("npcID", out creatureID))
@@ -1041,7 +1046,7 @@ namespace ATT
             if (data.TryGetValue("_npcs", out object npcs))
             {
                 // TODO: consolidate when creature/npc are the same... if that ever happens
-                DuplicateDataIntoGroups(data, npcs, "creatureID");
+                //DuplicateDataIntoGroups(data, npcs, "creatureID");
                 DuplicateDataIntoGroups(data, npcs, "npcID");
                 cloned = true;
             }
@@ -2280,6 +2285,9 @@ namespace ATT
                     });
                 }
             }
+
+            // Notify of Post-Process Merge data which failed to merge...
+            Objects.NotifyPostProcessMergeFailures();
 
             Log("Processing Complete");
         }

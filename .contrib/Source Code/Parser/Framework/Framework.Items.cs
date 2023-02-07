@@ -984,7 +984,8 @@ namespace ATT
                 // Attempt to get the Source ID for this variant of the item.
                 if (variants.TryGetValue(id, out object sourceObj) && sourceObj.TryConvert(out long sourceID))
                 {
-                    LogDebug($"Item:{itemID}:{variantType}:{id} ==> SourceID:{sourceID}");
+                    // quite spammmmmy, only enable if needed
+                    //LogDebug($"Item:{itemID}:{variantType}:{id} ==> SourceID:{sourceID}");
                     data["s"] = sourceID;
                     return;
                 }
