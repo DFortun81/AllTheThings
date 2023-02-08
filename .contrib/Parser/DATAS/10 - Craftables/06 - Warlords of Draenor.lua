@@ -491,14 +491,27 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			i(114821),	-- Hexweave Bag
 		}),
 		n(BACK, {
+			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(114819, 128012),	-- Brilliant Hexweave Cloak + Hexweave Essence
 			WOD_CRAFTED_ITEM(114818, 128012),	-- Nimble Hexweave Cloak + Hexweave Essence
 			WOD_CRAFTED_ITEM(114817, 128012),	-- Powerful Hexweave Cloak + Hexweave Essence
+			-- #ELSE
+			WOD_CRAFTED_ITEM_DF_BASE(114819),	-- Brilliant Hexweave Cloak
+			WOD_CRAFTED_ITEM_DF_BASE(114818),	-- Nimble Hexweave Cloak
+			WOD_CRAFTED_ITEM_DF_BASE(114817),	-- Powerful Hexweave Cloak
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114819, 202218),	-- Brilliant Hexweave Cloak + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114818, 202218),	-- Nimble Hexweave Cloak + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114817, 202218),	-- Powerful Hexweave Cloak + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114819, 202219),	-- Brilliant Hexweave Cloak + Remarkable Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114818, 202219),	-- Nimble Hexweave Cloak + Remarkable Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114817, 202219),	-- Powerful Hexweave Cloak + Remarkable Hexweave Essence
+			-- #ENDIF
 		}),
 		filter(CLOTH, {
 			i(114828),	-- Sumptuous Cowl
 			i(114829),	-- Sumptuous Robes
 			i(114831),	-- Sumptuous Leggings
+			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(114816, 128012),	-- Hexweave Belt + Hexweave Essence
 			WOD_CRAFTED_ITEM(114814, 128012),	-- Hexweave Bracers + Hexweave Essence
 			WOD_CRAFTED_ITEM(114810, 128012),	-- Hexweave Cowl + Hexweave Essence
@@ -507,6 +520,32 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			WOD_CRAFTED_ITEM(114809, 128012),	-- Hexweave Mantle + Hexweave Essence
 			WOD_CRAFTED_ITEM(114813, 128012),	-- Hexweave Robe + Hexweave Essence
 			WOD_CRAFTED_ITEM(114815, 128012),	-- Hexweave Slippers + Hexweave Essence
+			-- #ELSE
+			WOD_CRAFTED_ITEM_DF_BASE(114816),	-- Hexweave Belt
+			WOD_CRAFTED_ITEM_DF_BASE(114814),	-- Hexweave Bracers
+			WOD_CRAFTED_ITEM_DF_BASE(114810),	-- Hexweave Cowl
+			WOD_CRAFTED_ITEM_DF_BASE(114812),	-- Hexweave Gloves
+			WOD_CRAFTED_ITEM_DF_BASE(114811),	-- Hexweave Leggings
+			WOD_CRAFTED_ITEM_DF_BASE(114809),	-- Hexweave Mantle
+			WOD_CRAFTED_ITEM_DF_BASE(114813),	-- Hexweave Robe
+			WOD_CRAFTED_ITEM_DF_BASE(114815),	-- Hexweave Slippers
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114816, 202218),	-- Hexweave Belt + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114814, 202218),	-- Hexweave Bracers + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114810, 202218),	-- Hexweave Cowl + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114812, 202218),	-- Hexweave Gloves + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114811, 202218),	-- Hexweave Leggings + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114809, 202218),	-- Hexweave Mantle + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114813, 202218),	-- Hexweave Robe + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114815, 202218),	-- Hexweave Slippers + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114816, 202219),	-- Hexweave Belt + Remarkable Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114814, 202219),	-- Hexweave Bracers + Remarkable Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114810, 202219),	-- Hexweave Cowl + Remarkable Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114812, 202219),	-- Hexweave Gloves + Remarkable Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114811, 202219),	-- Hexweave Leggings + Remarkable Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114809, 202219),	-- Hexweave Mantle + Remarkable Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114813, 202219),	-- Hexweave Robe + Remarkable Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114815, 202219),	-- Hexweave Slippers + Remarkable Hexweave Essence
+			-- #ENDIF
 		}),
 		filter(MOUNTS, {
 			i(115363),	-- Creeping Carpet (MOUNT!)
