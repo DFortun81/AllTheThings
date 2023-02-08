@@ -66,7 +66,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74549,
 				["g"] = {
 					i(203671),	-- Pack Leader's Pelt
-					i(200441),	-- Jhakan's Horned Cowl
 				},
 			})),
 			n(187781, {	-- Hamett <Rockfang Matriarch>
@@ -252,7 +251,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200234),	-- Vrak's Embossed Aegis
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 					i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
-					i(196999),	-- Cliffside Wylderdrake: Swept Horns (DM!)
 				},
 			}),
 			-- n(193123, {	-- Steamgill // under DF/Timed Based Rare
@@ -334,13 +332,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
 				},
 			}),
-			n(192045, {	-- Windseeker Avash
+			n(192045,	-- Windseeker Avash
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 58.6, 68.2, OHNAHRAN_PLAINS },
 				["questID"] = 74088,
 				["g"] = {
 					i(200141),	-- Wind Generating Band
 				},
-			}),
+			})),
 			n(193209, {	-- Zenet Avis <The Hard Wind>
 				["coord"] = { 31.5, 64.0, OHNAHRAN_PLAINS },
 				["questID"] = 73901,

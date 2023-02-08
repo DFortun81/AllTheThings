@@ -57,6 +57,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					}),
 				},
 			}),
+			n(196729, {	-- Gorgonzormu <Cheesemonger>
+				["coord"] = { 30.8, 60.8, VALDRAKKEN },
+				["g"] = {
+					i(201419),	-- Apexis Asiago
+					i(201416),	-- Black Empire Brunost
+					i(201417),	-- Curding of Stratholme
+					i(201413),	-- Eternity-Infused Burrata
+					i(201045),	-- Icecrown Bleu
+					i(201398),	-- Mogu Mozzarella
+					i(201820),	-- Silithus Swiss
+				},
+			}),
 			n(187783, {	-- Pakak
 				["coord"] = { 43.8, 75.0, VALDRAKKEN },
 				["g"] = {

@@ -413,6 +413,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["crs"] = {
 						189652,	-- Deadwaker Ghendish
 						192020,	-- Eaglemaster Niraak
+						201537,	-- Groffnar
 						193227,	-- Ronsak the Decimator
 						192045,	-- Windseeker Avash
 					}

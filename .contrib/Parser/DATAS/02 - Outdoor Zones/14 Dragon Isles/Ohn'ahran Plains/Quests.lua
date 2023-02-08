@@ -1173,6 +1173,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74440, {	-- Windseeker Avash
 					["provider"] = { "n", 192045 },	-- Windseeker Avash
 					["coord"] = { 58.9, 67.5, OHNAHRAN_PLAINS },
+					["timeline"] = { ADDED_DF_0_5 },
 				}),
 				q(72364, {	-- Zarizz
 					["provider"] = { "n", 193140 },	-- Zarizz
