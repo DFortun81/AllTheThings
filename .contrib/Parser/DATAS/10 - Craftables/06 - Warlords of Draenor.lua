@@ -110,6 +110,7 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 		i(116426),	-- Smoldering Helm
 		i(116427),	-- Smoldering Breastplate
 		i(116425),	-- Smoldering Greaves
+		-- #IF BEFORE 10.0.5
 		WOD_CRAFTED_ITEM(120261, 128016),	-- Steelforged Aegis + Steelforged Essence
 		WOD_CRAFTED_ITEM(120259, 128016),	-- Steelforged Axe + Steelforged Essence
 		WOD_CRAFTED_ITEM(116644, 128016),	-- Steelforged Dagger + Steelforged Essence
@@ -125,6 +126,53 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 		WOD_CRAFTED_ITEM(114233, 128015),	-- Truesteel Waistguard + Truesteel Essence
 		WOD_CRAFTED_ITEM(114234, 128015),	-- Truesteel Greaves + Truesteel Essence
 		WOD_CRAFTED_ITEM(114235, 128015),	-- Truesteel Boots + Truesteel Essence
+		-- #ELSE
+		WOD_CRAFTED_ITEM_DF_BASE(120261),	-- Steelforged Aegis
+		WOD_CRAFTED_ITEM_DF_BASE(120259),	-- Steelforged Axe
+		WOD_CRAFTED_ITEM_DF_BASE(116644),	-- Steelforged Dagger
+		WOD_CRAFTED_ITEM_DF_BASE(116453),	-- Steelforged Greataxe
+		WOD_CRAFTED_ITEM_DF_BASE(116646),	-- Steelforged Hammer
+		WOD_CRAFTED_ITEM_DF_BASE(116454),	-- Steelforged Saber
+		WOD_CRAFTED_ITEM_DF_BASE(116647),	-- Steelforged Shield
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(120261, 202208),	-- Steelforged Aegis + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(120259, 202208),	-- Steelforged Axe + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116644, 202208),	-- Steelforged Dagger + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116453, 202208),	-- Steelforged Greataxe + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116646, 202208),	-- Steelforged Hammer + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116454, 202208),	-- Steelforged Saber + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116647, 202208),	-- Steelforged Shield + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(120261, 202209),	-- Steelforged Aegis + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(120259, 202209),	-- Steelforged Axe + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(116644, 202209),	-- Steelforged Dagger + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(116453, 202209),	-- Steelforged Greataxe + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(116646, 202209),	-- Steelforged Hammer + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(116454, 202209),	-- Steelforged Saber + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(116647, 202209),	-- Steelforged Shield + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_BASE(114230),	-- Truesteel Helm
+		WOD_CRAFTED_ITEM_DF_BASE(114231),	-- Truesteel Pauldrons
+		WOD_CRAFTED_ITEM_DF_BASE(114232),	-- Truesteel Breastplate
+		WOD_CRAFTED_ITEM_DF_BASE(114236),	-- Truesteel Armguards
+		WOD_CRAFTED_ITEM_DF_BASE(114237),	-- Truesteel Gauntlets
+		WOD_CRAFTED_ITEM_DF_BASE(114233),	-- Truesteel Waistguard
+		WOD_CRAFTED_ITEM_DF_BASE(114234),	-- Truesteel Greaves
+		WOD_CRAFTED_ITEM_DF_BASE(114235),	-- Truesteel Boots
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114230, 202208),	-- Truesteel Helm + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114231, 202208),	-- Truesteel Pauldrons + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114232, 202208),	-- Truesteel Breastplate + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114236, 202208),	-- Truesteel Armguards + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114237, 202208),	-- Truesteel Gauntlets + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114233, 202208),	-- Truesteel Waistguard + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114234, 202208),	-- Truesteel Greaves + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114235, 202208),	-- Truesteel Boots + Impressive Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(114230, 202209),	-- Truesteel Helm + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(114231, 202209),	-- Truesteel Pauldrons + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(114232, 202209),	-- Truesteel Breastplate + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(114236, 202209),	-- Truesteel Armguards + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(114237, 202209),	-- Truesteel Gauntlets + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(114233, 202209),	-- Truesteel Waistguard + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(114234, 202209),	-- Truesteel Greaves + Remarkable Essence
+		WOD_CRAFTED_ITEM_DF_REMARKABLE(114235, 202209),	-- Truesteel Boots + Remarkable Essence
+		-- #ENDIF
 	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
