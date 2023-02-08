@@ -254,16 +254,37 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			i(112059),	-- Wormhole Centrifuge (TOY!)
 		}),
 		n(WEAPONS, {
+			-- #IF BEFORE 10.0.5
 			i(109168, {	-- Shrediron's Shredder
 				["timeline"] = { "created 9.0" },
 			}),
 			WOD_CRAFTED_ITEM(109168, 128017),	-- Shrediron's Shredder* + True Iron Trigger*
+			-- #ELSE
+			WOD_CRAFTED_ITEM_DF_BASE(109168),	-- Shrediron's Shredder
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109168, 202214),	-- Shrediron's Shredder + Impressive True Iron Trigger
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(109168, 202215),	-- Shrediron's Shredder + Remarkable True Iron Trigger
+			-- #ENDIF
 		}),
 		n(ARMOR, {
+			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_IDENTICAL_ITEM(109173, 128011),	-- Cybergenetic Mechshades* + Linkgrease Locksprocket
 			WOD_CRAFTED_IDENTICAL_ITEM(109171, 128011),	-- Night-Vision Mechshades* + Linkgrease Locksprocket
 			WOD_CRAFTED_IDENTICAL_ITEM(109172, 128011),	-- Plasma Mechshades* + Linkgrease Locksprocket
 			WOD_CRAFTED_IDENTICAL_ITEM(109174, 128011),	-- Razorguard Mechshades* + Linkgrease Locksprocket
+			-- #ELSE
+			WOD_CRAFTED_ITEM_DF_BASE(109173),	-- Cybergenetic Mechshades
+			WOD_CRAFTED_ITEM_DF_BASE(109171),	-- Night-Vision Mechshades
+			WOD_CRAFTED_ITEM_DF_BASE(109172),	-- Plasma Mechshades
+			WOD_CRAFTED_ITEM_DF_BASE(109174),	-- Razorguard Mechshades
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109173, 202212),	-- Cybergenetic Mechshades + Impressive Linkgrease Locksprocket
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109171, 202212),	-- Night-Vision Mechshades + Impressive Linkgrease Locksprocket
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109172, 202212),	-- Plasma Mechshades + Impressive Linkgrease Locksprocket
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109174, 202212),	-- Razorguard Mechshades + Impressive Linkgrease Locksprocket
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(109173, 202213),	-- Cybergenetic Mechshades + Remarkable Linkgrease Locksprocket
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(109171, 202213),	-- Night-Vision Mechshades + Remarkable Linkgrease Locksprocket
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(109172, 202213),	-- Plasma Mechshades + Remarkable Linkgrease Locksprocket
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(109174, 202213),	-- Razorguard Mechshades + Remarkable Linkgrease Locksprocket
+			-- #ENDIF
 		}),
 	}),
 	prof(INSCRIPTION, {
