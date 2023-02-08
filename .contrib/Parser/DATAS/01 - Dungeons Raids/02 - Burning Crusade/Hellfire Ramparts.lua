@@ -293,7 +293,17 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				-- #endif
 				["lvl"] = lvlsquish(70, 30, 70),
 				["groups"] = {
-					ach(667),	-- Heroic: Hellfire Ramparts
+					ach(667, {	-- Heroic: Hellfire Ramparts
+						crit(1, {	-- Omor the Unscarred
+							["_encounter"] = { 528, HEROIC_DUNGEON },
+						}),
+						crit(2, {	-- Nazan
+							["_encounter"] = { 529, HEROIC_DUNGEON },
+						}),
+						crit(3, {	-- Vazruden
+							["_encounter"] = { 529, HEROIC_DUNGEON },
+						}),
+					}),
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							17306,	-- Watchkeeper Gargolmar

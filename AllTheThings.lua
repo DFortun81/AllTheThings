@@ -2443,10 +2443,17 @@ local function GroupMatchesParams(group, key, value, ignoreModID)
 			return itemID == value;
 		end
 	end
-	-- exact specific match for other keys
+	-- check exact specific match for other keys
 	if group[key] == value then return true; end
+	-- Other fields can require further verification
 	-- Some objects also need to check altquestID for questID
-	if key == "questID" and group.otherFactionQuestID == value then return true; end
+	if key == "questID" then
+		if group.otherFactionQuestID == value then return true; end
+	-- NPCID can be contained in other fields as well (for now)
+	elseif key == "npcID" or key == "creatureID" then
+		if group.creatureID == value then return true; end
+		if group.npcID == value then return true; end
+	end
 end
 -- Filters a specs table to only those which the current Character class can choose
 local function FilterSpecs(specs)
@@ -8615,21 +8622,6 @@ app.CheckForBreadcrumbPrevention = function(title, questID)
 	end
 end
 
-app.CreateQuest = function(id, t)
-	if t then
-		-- extract specific faction data
-		local aqd = rawget(t, "aqd");
-		if aqd then
-			-- Apply the faction specific quest data to this object.
-			if app.FactionID == Enum.FlightPathFaction.Horde then
-				for key,value in pairs(t.hqd) do t[key] = value; end
-			else
-				for key,value in pairs(aqd) do t[key] = value; end
-			end
-		end
-	end
-	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
-end
 --[[ Not used in Retail anymore
 app.CreateQuestWithFactionData = function(t)
 	local questData, otherQuestData, otherFaction;
@@ -8930,6 +8922,34 @@ local fields = RawCloneData(questFields, {
 app.BaseVignette = app.BaseObjectFields(fields, "BaseVignette");
 app.CreateVignette = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseVignette);
+end
+
+local TypeQuests = {
+	["v"] = app.BaseVignette,
+};
+app.CreateQuest = function(id, t)
+	if t then
+		-- extract specific faction data
+		local aqd = rawget(t, "aqd");
+		if aqd then
+			-- Apply the faction specific quest data to this object.
+			if app.FactionID == Enum.FlightPathFaction.Horde then
+				for key,value in pairs(t.hqd) do t[key] = value; end
+			else
+				for key,value in pairs(aqd) do t[key] = value; end
+			end
+		end
+		-- special type
+		local type = rawget(t, "type");
+		if type then
+			local q = TypeQuests[type];
+			if q then
+				app.PrintDebug("quest-type",type,id)
+				return setmetatable(constructor(id, t, "questID"), q);
+			end
+		end
+	end
+	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
 end)();
 

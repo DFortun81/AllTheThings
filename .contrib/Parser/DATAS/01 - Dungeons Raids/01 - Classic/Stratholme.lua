@@ -19,6 +19,20 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 5263,	-- Above and Beyond
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
+					["groups"] = {
+						crit(1, {	-- Balnazzar
+							["_npcs"] = { 10813 },
+						}),
+						crit(2, {	-- Lord Aurius Rivendare
+							["_npcs"] = {
+								-- #if AFTER 4.0.3
+								45412,	-- Lord Aurius Rivendare
+								-- #else
+								10440,	-- Baron Rivendare
+								-- #endif
+							},
+						}),
+					},
 				}),
 			}),
 			n(QUESTS, {
@@ -786,9 +800,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						},
 					}),
 					e(449, {	-- Balnazzar
+						["creatureID"] = 10813,	-- Balnazzar
 						["crs"] = {
 							10812,	-- Grand Crusader Dathrohan
-							10813,	-- Balnazzar
 						},
 						["groups"] = {
 							i(13250),	-- Head of Balnazzar

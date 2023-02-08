@@ -849,7 +849,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(175114),	-- Renny (PET!)
 				},
 			}),
-			q(62246, {	-- Satchel of Culexwood
+			q(62187, {	-- Satchel of Culexwood
 				["provider"] = { "i", 182731 },	-- Satchel of Culexwood
 				["coord"] = { 48.2, 20.3, ARDENWEALD },
 			}),

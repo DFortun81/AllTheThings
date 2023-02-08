@@ -1084,7 +1084,6 @@ q(39755),	--
 q(39760),	--
 q(39778),	--
 q(39779),	--
-q(39784),	-- Beastmaster Pao'lek
 q(39797),	-- Aponi Brightmane Slotted
 q(39838),	-- Fire!
 q(39839),	-- Mysterious Dust
@@ -1139,10 +1138,8 @@ q(40318),	--
 q(40335),	-- Sashj'tar Accord DISABLED
 q(40387),	--
 q(40398),	-- Shaman Shrine - Stormheim Water 01 - DGK
-q(40413),	-- Amateur Hunters
 q(40420),	-- Felsoul Hold
 q(40421),	--
-q(40423),	-- Unethical Adventurers
 q(40501),	-- REUSEME_40501
 q(40548),	--
 q(40549),	--
