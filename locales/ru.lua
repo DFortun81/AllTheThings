@@ -853,6 +853,7 @@ for key,value in pairs({
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
 		[-1143] = "Редкие DF по расписанию",						-- DF Rare Rotation
 		[-1144] = "Еженедельные Очки Знаний Профессий",				-- Weekly Profession Header
+		--TODO: [-1150]	= "Winterpelt Furbolg",						-- Winterpelt Furbolg
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",

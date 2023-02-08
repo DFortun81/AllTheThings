@@ -554,7 +554,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(204239),	-- Shadowy Mojo Crystal
 		i(204244),	-- Breathing Mojo Crystal
 		i(204245),	-- Hateful Mojo Crystal
-		i(204254),	-- Sonova's Request
 		i(204256),	-- Holoviewer: The Scarlet Queen
 		i(204257),	-- Holoviewer: The Lady of Dreams
 		i(204258),	-- Goblin Trainee's Wristwraps
