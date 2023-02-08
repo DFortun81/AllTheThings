@@ -353,9 +353,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 					{ 61.9, 38.7, THE_BARRENS },
 					-- #endif
 					-- #if AFTER CATA
-					{ 34.1, 26.0, DARNASSUS },
-					-- #else
 					{ 39.7, 39.8, DARNASSUS },
+					-- #else
+					{ 34.1, 26.0, DARNASSUS },
 					-- #endif
 					{ 61.9, 57.8, UNDERCITY },
 				},
