@@ -1759,6 +1759,25 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		-- Treasures of Korthia achievement
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
+
+
+
+		------------------
+		--      DF      --
+		------------------
+		-- Wormhole Locations --
+		q(70573),	-- The Waking Shores 74.6, 25.5
+		q(70574),	-- The Waking Shores 62.1, 78.9
+		q(70575),	-- The Waking Shores 23.4, 43.8
+		q(70576),	-- Ohn'ahran Plains 28.0, 35.5
+		q(70577),	-- Ohn'ahran Plains 56.8, 28.8
+		q(70578),	-- Ohn'ahran Plains 67.6, 84.9
+		q(70579),	-- The Azure Span 27.5, 26.4
+		q(70580),	-- The Azure Span 45.7, 65.2
+		q(70581),	-- The Azure Span 71.0, 47.8
+		q(70583),	-- Thaldraszus 50.6, 55.5
+		q(70584),	-- Thaldraszus 70.3, 44.3
+		q(70585),	-- Thaldraszus 63.6, 77.1
 	}),
 
 	--------------------
