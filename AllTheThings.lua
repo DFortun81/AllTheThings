@@ -2214,14 +2214,16 @@ app.DetermineItemLink = function(sourceID)
 	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 	local itemID = sourceInfo and sourceInfo.itemID;
 	if not itemID then
-		-- app.print("Could not generate Item Link for",sourceID,"(No Source Info from Blizzard)");
+		-- app.PrintDebug("Could not generate Item Link for",sourceID,"(No Source Info from Blizzard)");
 		return;
 	end
-	local checkID, found;
 	local itemFormat = "item:"..itemID;
 	-- Check Raw Item
 	link = itemFormat;
-	checkID, found = GetSourceID(link);
+	if sourceInfo.itemModID == 0 then
+		return link;
+	end
+	local checkID, found = GetSourceID(link);
 	if found and checkID == sourceID then return link; end
 
 	-- Check ModIDs
@@ -2231,7 +2233,7 @@ app.DetermineItemLink = function(sourceID)
 	for m=1,99,1 do
 		link = sformat(itemFormat, m);
 		checkID, found = GetSourceID(link);
-		-- print(link,checkID,found)
+		-- app.PrintDebug(link,checkID,found)
 		if found and checkID == sourceID then return link; end
 	end
 
@@ -2240,10 +2242,10 @@ app.DetermineItemLink = function(sourceID)
 	for b=1,9999,1 do
 		link = sformat(itemFormat, b);
 		checkID, found = GetSourceID(link);
-		-- print(link,checkID,found)
+		-- app.PrintDebug(link,checkID,found)
 		if found and checkID == sourceID then return link; end
 	end
-	-- app.print("Could not generate Item Link for",sourceID,"(No ModID or BonusID match)");
+	-- app.PrintDebug("Could not generate Item Link for",sourceID,"(No ModID or BonusID match)");
 end
 app.IsComplete = function(o)
 	if o.total and o.total > 0 then return o.total == o.progress; end
@@ -11842,15 +11844,12 @@ local fields = RawCloneData(itemFields, {
 	["collected"] = itemFields.collectedAsTransmog;
 	-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
 	["itemID"] = function(t)
-		local sourceInfo = C_TransmogCollection_GetSourceInfo(t.s);
-		if sourceInfo then
-			rawset(t, "itemID", sourceInfo.itemID);
-			-- since no good translation for itemModID to our modID/bonusID system only save for basic Item sources
-			if sourceInfo.itemModID == 0 then
-				app.SaveHarvestSource(t);
-			end
-		end
-		return rawget(t, "itemID");
+		if t.__autolink then return; end
+		-- async generation of the proper Item Link
+		-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
+		rawset(t, "__autolink", true);
+		app.FunctionRunner.SetPerFrame(5);
+		app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
 	end,
 });
 app.BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
@@ -12545,6 +12544,16 @@ app.ImportRawLink = function(group, rawlink)
 			-- if app.DEBUG_PRINT then app.PrintTable(group) end
 		end
 	end
+end
+-- Allows generating and capturing the specific ItemString which represents the SourceID of a group, if possible
+app.GenerateGroupLinkUsingSourceID = function(group)
+	local s = group and group.s;
+	if not s then return; end
+
+	local link = app.DetermineItemLink(s);
+	if not link then return; end
+
+	app.ImportRawLink(group, link);
 end
 -- Adds necessary SourceID information for Item data into the Harvest variable
 app.SaveHarvestSource = function(data)
@@ -15402,12 +15411,9 @@ function app:CreateMiniListForGroup(group)
 							-- print("Missing Appearance")
 							-- app.PrintTable(otherSourceInfo)
 							if otherSourceInfo then
-								-- TODO: this can create an item link whose appearance is actually different than the SourceID's Visual
-								local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
-								-- newItem.collectible = otherSourceInfo.quality ~= nil;
+								local newItem = app.CreateItemSource(otherSourceID);
 								if otherSourceInfo.isCollected then
 									ATTAccountWideData.Sources[otherSourceID] = 1;
-									newItem.collected = true;
 								end
 								tinsert(g, newItem);
 							end
@@ -15486,11 +15492,9 @@ function app:CreateMiniListForGroup(group)
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSourceInfo then
-								-- TODO: this can create an item link whose appearance is actually different than the SourceID's Visual
-								local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
+								local newItem = app.CreateItemSource(sourceID);
 								if otherSourceInfo.isCollected then
 									ATTAccountWideData.Sources[sourceID] = 1;
-									newItem.collected = true;
 								end
 								tinsert(g, newItem);
 							end
