@@ -9,18 +9,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
 				["questID"] = 72835,
 				["isDaily"] = false,
-				["g"] = {
-					i(200165),	-- Aegis of Scales
-				},
 			}),
 			n(187945, {	-- Anhydros the Tidetaker
 				["coord"] = { 58.7, 40.3, THE_WAKING_SHORES },
 				["questID"] = 73865,
-				["g"] = {
-					i(200245),	-- Leviathan Lure
-				},
 			}),
-		--	n(193135, {	-- Azra's Prized Peony // under DF/Timed Based Rare
+		--	n(193135),	-- Azra's Prized Peony // under DF/Timed Based Rare
 			n(193177, {	-- Beakers
 				["questID"] = 73902,
 				["coords"] = {
@@ -33,24 +27,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73075,
 				["g"] = {
 					i(200286),	-- Dragonbane Lance
-					i(200757),	-- Qalashi War-Helm
 				},
 			}),
 			n(187745, {	-- Disoriented Watcher
 				["coord"] = { 67.8, 55.4, THE_WAKING_SHORES },
 				["questID"] = 74092,
-				["g"] = {
-					i(200138),	-- Ancient Dancer's Longspear
-					i(200303),	-- Dreamweaver Acolyte's Staff
-				},
 			}),
 			n(191611, {	-- Dragonhunter Igordan
 				["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
 				["questID"] = 72838,
 				["isDaily"] = false,
-				["g"] = {
-					i(200757),	-- Qalashi War-Helm
-				},
 			}),
 			n(193217, {	-- Drakewing
 				["description"] = "Spawns at the top right of the river & follows it all the way down to the Dragonscale Basecamp. Once there, he cycles back to his spawnpoint, again following the river. Coordinates roughly show his path.",
@@ -67,31 +53,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(193134, {	-- Enkine the Voracious
+				["description"] = "Can only be summoned by fishing with the Lava Spices buff active at 22 65 in the Waking Shores. Lava Spices can be obtained by killing Restless Lava, Lavaslurpers and Basalt Shells along the lava river leading to the rare.",
 				["coords"] = {
 					{ 40.3, 64.9, THE_WAKING_SHORES },	-- The Rare
 					{ 22.0, 64.9, THE_WAKING_SHORES },	-- Fishing Spot
 				},
-				["description"] = "Can only be summoned by fishing with the Lava Spices buff active at 22 65 in the Waking Shores. Lava Spices can be obtained by killing Restless Lava, Lavaslurpers and Basalt Shells along the lava river leading to the rare.",
 				["cost"] = {{"i",201092,1}},	-- Lava Spices
 				["questID"] = 73072,
 				["g"] = {
-					i(200217),	-- Blazing Essence
-					i(200247),	-- Inextinguishable Gavel
-					i(200563),	-- Primal Ritual Shell
 					i(200167),	-- Regurgitated Stone Handaxe
-					i(200163),	-- Ring of Embers
-					i(200133),	-- Volcanic Chakram
 				},
 			}),
 			n(195915, {	-- Firava the Rekindler
 				["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
 				["questID"] = 72839,
 				["isDaily"] = false,
-				["g"] = {
-					i(200217),	-- Blazing Essence
-					i(200247),	-- Inextinguishable Gavel
-					i(200133),	-- Volcanic Chakram
-				},
 			}),
 			n(193154, {	-- Forgotten Gryphon
 				["coord"] = { 33.1, 76.3, THE_WAKING_SHORES },
@@ -100,64 +76,45 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200858),	-- Plume of the Forgotten
 				},
 			}),
-			-- n(193226, {	-- Gorjo the Crab Shackler // under DF/Timed Based Rare
+		--	n(193226),	-- Gorjo the Crab Shackler // under DF/Timed Based Rare
 			n(196056, {	-- Gushgut the Beaksinker
 				["coord"] = { 52.6, 58.6, THE_WAKING_SHORES },
 				["questID"] = 73879,
 			}),
-			-- n(186200, {	-- Harkyn Grymstone // under DF/Timed Based Rare
+		--	n(186200),	-- Harkyn Grymstone // under DF/Timed Based Rare
 			n(193263, {	-- Helmet Missingway
 				["coord"] = { 43.4, 73.6, THE_WAKING_SHORES },
 				["questID"] = 73880,
-				-- ["g"] = {
-
-				-- },
 			}),
 			n(187209, {	-- Klozicc the Ascended
 				["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
 				["questID"] = 72841,
 				["isDaily"] = false,
-				["g"] = {
-					i(200313),	-- Earthen Protoscale Drape
-					i(200246),	-- Lost Delving Lamp
-					i(200253),	-- Snowspring Incanter's Knife
-					i(200254),	-- Totemic Cinch
-				},
 			}),
 			n(193266, {	-- Lepidoralia the Resplendent
+				["description"] = "Talk to Collector Zik at the entrance to the cave and get a net. Start catching butterflies- no really, like, 200-400 butterflies. You'll be here a while.\n\nYou can talk to Collector Zik and select chat option 3: 'How many shimmerwings have you collected so far?' to get a hint toward your progress:\n0-33% I've only just started.\n34-66%We're making good progress.\n67-99%We're close to a discovery.",
 				["coord"] = { 33.8, 85.8, THE_WAKING_SHORES },
 				["questID"] = 74065,
-				["description"] = "Talk to Collector Zik at the entrance to the cave and get a net. Start catching butterflies- no really, like, 200-400 butterflies. You'll be here a while.\n\nYou can talk to Collector Zik and select chat option 3: 'How many shimmerwings have you collected so far?' to get a hint toward your progress:\n0-33% I've only just started.\n34-66%We're making good progress.\n67-99%We're close to a discovery.",
-				-- ["g"] = {
-
-				-- },
 			}),
-			-- n(186827, {	-- Magmaton // under DF/Timed Based Rare
-			-- n(193152, {	-- Massive Magmashell // under DF/Timed Based Rare
+		--	n(186827),	-- Magmaton // under DF/Timed Based Rare
+		--	n(193152),	-- Massive Magmashell // under DF/Timed Based Rare
 			n(190718, {	-- Monsoo, The Boiling Rage
 				["coord"] = { 46.8, 57.3, THE_WAKING_SHORES },
 				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
 			}),
 			n(193256, {	-- Nulltheria the Void Gazer
-				["coord"] = { 56.00, 45.87, THE_WAKING_SHORES },
 				["description"] = "At the top of the Tower. Nearby ghostly telescopes will indicate her spawn timer:\n\n2 telescopes means roughly 2h30min till respawn.\n\n3 telescopes indicate 2h respawn till respawn.\n\n4 telescopes indicate 1h till respawn.",
+				["coord"] = { 56.00, 45.87, THE_WAKING_SHORES },
 				["questID"] = 73888,
 				["g"] = {
 					i(200236),	-- Memory of Nulltheria
-					i(200310),	-- Stole of the Iron Phantom
 				},
 			}),
-			-- n(193118, {	-- O'nank Shorescour // under DF/Timed Based Rare
+		--	n(193118),	-- O'nank Shorescour // under DF/Timed Based Rare
 			n(184853, {	-- Primal Scythid Queen
 				["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
 				["questID"] = 72843,
 				["isDaily"] = false,
-				["g"] = {
-					-- is part of the DF>Global Rare Loottable
-				},
 			}),
 			n(192737, {	-- Qalashi War Mammoth
 				["description"] = "Marked with an icon on the map if they are up.",
@@ -169,16 +126,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					{ 53.0, 66.4, THE_WAKING_SHORES },
 				},
 				["questID"] = 73890,
-				-- He "drops" 4 rare npcs upon dieing, but they have no drops. CRS doesnt seem useful
-				["g"] = {
-					n(192738, {	-- Brundin the Dragonbane
-					}),
-					n(192741, {	-- Flamebreaker Grella
-					}),
-					n(192744, {	-- Scalemelter Dorbane
-					}),
-					n(192743, {	-- Stonefist Rejara
-					}),
+				["g"] = {	-- He "drops" 4 rare npcs upon dieing, but they have no drops. CRS doesnt seem useful
+					n(192738),	-- Brundin the Dragonbane
+					n(192741),	-- Flamebreaker Grella
+					n(192744),	-- Scalemelter Dorbane
+					n(192743),	-- Stonefist Rejara
 				},
 			}),
 			n(193271, {	-- Shadeslash Trakken
@@ -198,34 +150,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73895,
 				["g"] = {
 					i(200132),	-- Skewer's Snout
-					i(200552),	-- Torrent Caller's Shell
 				},
 			}),
 			n(193175, {	-- Slurpo, the Incredible Snail
+				["description"] = "Bring a Magical Salt Crystal from the Azure Span into the cave. If the pool is full of Unsalted Water Snails, use the Extra Action Button to summon the rare.",
 				["coord"] = { 34.5, 89.7, THE_WAKING_SHORES },
 				["questID"] = 74079,
 				["cost"] = {{"i",201033,1}},	-- 1x Magical Salt Crystal
-				["description"] = "Bring a Magical Salt Crystal from the Azure Span into the cave. If the pool is full of Unsalted Water Snails, use the Extra Action Button to summon the rare.",
 				["g"] = {
 					i(200189),	-- Hydroforged Shell Helm
 				},
 			}),
-			-- n(193120, {	-- Smogswog the Firebreather // under DF/Timed Based Rare
+		--	n(193120),	-- Smogswog the Firebreather // under DF/Timed Based Rare
 			n(193171, {	-- Terillod the Devout
 				["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
 				["questID"] = 72850,
 				["isDaily"] = false,
-				["g"] = {
-					i(200208),	-- Cloud Coalescing Handwraps
-					i(200172),	-- Zephyrdance Signet
-				},
 			}),
 			n(193148, {	-- Thunderous Matriarch
 				["coord"] = { 45.4, 35.6, THE_WAKING_SHORES },
 				["questID"] = 73899,
-				["g"] = {
-					-- is part of the DF>Global Rare Loottable
-				},
 			}),
 		})),
 	}),

@@ -194,7 +194,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						i(200171),	-- Grymheart Blade
 						i(197131),	-- Highland Drake: Hairy Cheek (DM!)
 						i(182361),	-- Protector's Molten Cudgel
-						i(200757),	-- Qalashi War-Helm
 						i(200175),	-- Repurposed Anvil
 						i(200243),	-- Titanic Scholar's Finery
 					},

@@ -400,9 +400,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 28.6, 58.8, THE_WAKING_SHORES },
 					["questID"] = 74040,
 					["isDaily"] = true,
-					["g"] = {
-						i(200252),	-- Molten Flak Cannon
-					},
 				}),
 				n(190991, {	-- Char
 					["coord"] = { 29.3, 52.5, THE_WAKING_SHORES },
@@ -422,7 +419,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["cost"] = { { "i", 191264, 20 }, },	-- 20x Restored Obsidian Key
 					["g"] = {
 						i(200159),	-- Blaze Ring
-						i(200252),	-- Molten Flak Cannon
 					},
 				}),
 				n(187306, {	-- Morchok <Harbinger of Twilight>
@@ -442,17 +438,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["isDaily"] = true,
 					["g"] = {
 						i(200144),	-- Band of the Unscalable
-						i(200683),	-- Legguards of the Deep Strata
-						i(200141),	-- Wind Generating Band
 					},
 				}),
 				n(193232, {	-- Rasnar the War Ender
 					["coord"] = { 30.2, 60.4, THE_WAKING_SHORES },
 					["questID"] = 74051,
 					["isDaily"] = true,
-					["g"] = {
-						i(200757),	-- Qalashi War-Helm
-					},
 				}),
 				n(187598, {	-- Rohzor Forgesmash <Djaradin Smithmaster>
 					["coord"] = { 25.3, 60.3, THE_WAKING_SHORES },
@@ -460,8 +451,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["isDaily"] = true,
 					["g"] = {
 						i(194503),	-- Plans: Black Dragon Touched Hammer (RECIPE!)
-						i(200169),	-- Protector's Molten Cudgel
-						i(200757),	-- Qalashi War-Helm
 					},
 				}),
 				n(190971, {	-- Shas'ith
@@ -470,18 +459,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 74077,
 					["isDaily"] = true,
 					["cost"] = { { "i", 191264, 20 }, },	-- 20xRestored Obsidian Key
-					["g"] = {
-						-- Rest is under shared Lv70 Elite Rare Drops
-					},
 				}),
 				n(187886, {	-- Turboris
 					["coord"] = { 33.6, 55.7, THE_WAKING_SHORES },
 					["questID"] = 74054,
 					["isDaily"] = true,
-					["g"] = {
-						i(200244),	-- Enchanted Muckstompers
-						i(200246),	-- Lost Delving Lamp
-					},
 				}),
 				n(186859, {	-- Worldcarver A'tir
 					["coord"] = { 30.0, 55.6, THE_WAKING_SHORES },

@@ -42,7 +42,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 							ach(16444, {	-- Leftovers' Revenge
 								i(200882),	-- Big Kinook's Spare Ladle
 							}),
-							i(200163),	-- Ring of Embers
 						},
 					}),
 				}),

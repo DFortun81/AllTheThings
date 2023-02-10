@@ -351,10 +351,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74074,
 					["g"] = {
 						i(200086),	-- Khaz'gorite Infused Resin
-						i(200245),	-- Leviathan Lure
-						i(200563),	-- Primal Ritual Shell
 						i(200187),	-- Rod of Glacial Force
-						i(200552),	-- Torrent Caller's Shell
 					},
 				}),
 				n(193706, {	-- Snufflegust <Lunker>
@@ -378,7 +375,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74084,
 					["g"] = {
 						i(200086),	-- Khaz'gorite-infused Resin
-						i(200552),	-- Torrent Caller's Shell
 						i(200448),	-- Abyssal Ward
 						i(200151),	-- Seamist Blade
 					},

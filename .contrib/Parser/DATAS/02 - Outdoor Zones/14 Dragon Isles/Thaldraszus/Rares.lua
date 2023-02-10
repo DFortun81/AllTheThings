@@ -108,7 +108,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 59.6, 61.8, THALDRASZUS },
 				["questID"] = 74565,
 				["group"] = {
-					i(200303),	-- Dreamweaver Acolyte's Staff
 					i(200299),	-- Strange Clockwork Gladius
 					i(203677),	-- Watcher's 'Neck' Ring
 				},

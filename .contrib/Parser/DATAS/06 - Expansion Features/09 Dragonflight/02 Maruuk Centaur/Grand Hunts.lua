@@ -123,10 +123,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						},
 						["questID"] = 73943,
 						["isDaily"] = true,
-						["g"] = {
-							i(200246),	-- Lost Delving Lamp
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 				}),
 				n(-1124, {	-- East
@@ -170,8 +166,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["isDaily"] = true,
 						["g"] = {
 							i(200693),	-- Legguards of the Deep Strata
-							i(200246),	-- Lost Delving Lamp
-							-- is part of the DF>Global Rare Loottable
 						},
 					}),
 					n(194624, {	-- Zumakh
@@ -269,7 +263,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["questID"] = 73907,
 						["isDaily"] = true,
 						["g"] = {
-							i(200303),	-- Dreamweaver Acolytes Staff
 							i(200299),	-- Strange Clockwork Gladius
 
 						},
@@ -328,17 +321,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["isDaily"] = true,
 						["g"] = {
 							i(200187),	-- Rod of Glacial Force
-							i(200552),	-- Torrent Caller's Shell
 						},
 					}),
 					n(193853, {	-- Galnmor
 						["coord"] = { 69.6, 64.8, THE_WAKING_SHORES },
 						["questID"] = 73915,
 						["isDaily"] = true,
-						["g"] = {
-							i(200252),	-- Molten Flak Cannon
-							i(200163),	-- Ring of Embers
-						},
 					}),
 				}),
 				n(-1123, {	-- North
@@ -364,8 +352,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["isDaily"] = true,
 						["g"] = {
 							i(200187),	-- Rod of Glacial Force
-							i(200552),	-- Torrent Caller's Shell
-							-- is part of the DF>Global Rare Loottable
 						},
 					}),
 					n(193885, {	-- Salkii
@@ -384,7 +370,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["isDaily"] = true,
 						["g"] = {
 							i(200684),	-- Emerald Tailbone
-							i(200246),	-- Lost Delving Lamp
 						},
 					}),
 					n(193722, {	-- Tomnu
@@ -401,7 +386,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["isDaily"] = true,
 						["g"] = {
 							i(200187),	-- Rod of Glacial Force
-							i(200552),	-- Torrent Caller's Shell
 						},
 					}),
 				}),

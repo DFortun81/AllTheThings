@@ -156,7 +156,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200292),	-- Cragforge Pauldrons
-					i(200172),	-- Zephyrdance Signet
 				},
 			}),
 			n(192557, {	-- Quackers the Terrible
@@ -176,9 +175,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
 				["questID"] = 72845,
 				["isDaily"] = false,
-				["g"] = {
-					i(200137),	-- Chitin Dreadbringer
-				},
 			}),
 			n(195223, {	-- Rustlily <Nimblewing Matriarch>
 				["description"] = "Only spawns if the Aylaag Camp is stationed west.",
@@ -223,7 +219,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200437),	-- Dreamsong Censer
 					i(197115),	-- Highland Drake: Thorned Jaw (DM!)
 					i(200444),	-- Mantle of the Gatekeeper
-					i(200310),	-- Stole of the Iron Phantom
 				},
 			}),
 			n(192949, {	-- Skaara
@@ -292,7 +287,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200293),	-- Primal Scion's Twinblade
 					i(198429),	-- Typhoon Bringer
-					i(200172),	-- Zephyrdance Signet
 				},
 			}),
 			n(192453, {	-- Vaniik the Stormtouched <Corrupted Child of Ohn'ahra>
@@ -329,7 +323,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200879, {	-- Zenet Egg
 						i(198825),	-- Zenet Hatchling (MOUNT!)
 					}),
-					i(200172),	-- Zephyrdance Signet
 				},
 			}),
 			n(188451, {	-- Zerimek <The Darkened Cloud>

@@ -21,7 +21,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73868,
 				["g"] = {
 					i(200673),	-- Beogoka's Tooth and Claw
-					i(200253),	-- Snowspring Incanter's Knife
 				},
 			}),
 			n(193178, {	-- Blightfur
@@ -64,7 +63,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73873,
 				["g"] = {
 					i(200302),	-- Magmaforged Scimitar
-					i(200169),	-- Protector's Molten Cudgel
 				},
 			}),
 			n(193691, {	-- Fisherman Tinnak <Angered Ghost>
@@ -76,11 +74,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200256),	-- Darkmaul Soul Horn
 					i(200158),	-- Eerie Spectral Ring
-					i(200245),	-- Leviathan Lure
 					i(200187),	-- Rod of Glacial Force
-					i(200310),	-- Stole of the Iron Phantom
 					i(198070),	-- Tattered Seavine (IF!)
-					i(200552),	-- Torrent Callers-shell
 				},
 			}),
 			n(193214, {	-- Forgotten Creation
@@ -210,7 +205,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200868),	-- Integrated Primal Fire
-					i(200133),	-- Volcanic Chakram
 				},
 			}),
 			n(193167, {	-- Swagraal the Swollen
@@ -239,7 +233,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(201728, {	-- Vakril's Strongbox
-						i(200245),	-- Leviathan Lure
 						i(200187),	-- Rod of Glacial Force
 					}),
 				},
