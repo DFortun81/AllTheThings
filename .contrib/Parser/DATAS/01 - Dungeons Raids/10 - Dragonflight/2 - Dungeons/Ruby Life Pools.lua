@@ -9,6 +9,17 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 			2094,	-- Ruby Overlook
 		},
 		["g"] = {
+			-- Last Boss (any difficulty)
+			n(DROPS, sharedData({
+				["crs"] = {
+					190484,	-- Kyrakka
+					190485,	-- Erkhart Stormvein
+				},
+			},{
+				i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
+				i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
+				i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
+			})),
 			n(MYTHIC_PLUS, {
 				i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
 			}),
@@ -57,8 +68,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(193691),	-- Sky Saddle Cord
 						i(193756),	-- Skyferno Rondel
 						i(193750),	-- Wind Soarer's Breeches
-						i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
-						i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
 					},
 				}),
 			}),
@@ -100,9 +109,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(193691),	-- Sky Saddle Cord
 						i(193756),	-- Skyferno Rondel
 						i(193750),	-- Wind Soarer's Breeches
-						i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
-						i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
-						i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
 					},
 				}),
 			}),
@@ -147,9 +153,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(193691),	-- Sky Saddle Cord
 						i(193756),	-- Skyferno Rondel
 						i(193750),	-- Wind Soarer's Breeches
-						i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
-						i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
-						i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
 					},
 				}),
 			}),

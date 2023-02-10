@@ -28,7 +28,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
 				["questID"] = 74058,
 				["g"] = {
-					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 					i(197404),	-- Renewed Proto-Drake: Finned Tail (DM!)
 				},
 			}),
@@ -49,7 +48,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200448),	-- Abyssal Ward
 					i(200151),	-- Seamist Blade
-					i(197589),	-- Windborne Velocidrake: Large Head Fin
 				},
 			}),
 			n(186962, {	-- Cascade
@@ -79,7 +77,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200256),	-- Darkmaul Soul Horn
 					i(200158),	-- Eerie Spectral Ring
 					i(200245),	-- Leviathan Lure
-					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 					i(200187),	-- Rod of Glacial Force
 					i(200310),	-- Stole of the Iron Phantom
 					i(198070),	-- Tattered Seavine (IF!)
@@ -113,7 +110,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200259),	-- Forest Dweller's Shield
 					i(200267),	-- Reinforced Garden Tenders
-					i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
 				},
 			}),
 			-- n(193251),	-- Gruffy // under DF/Timed Based Rare

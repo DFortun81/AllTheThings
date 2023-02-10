@@ -7025,7 +7025,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(67749),	--
 				q(68086),	--
 				q(69292),	--
-				q(69590),	-- This was attached to Renewed Proto-Drake: Green Scales 197389 but it triggers different ID now
 				q(69669),	--
 				q(69840),	--
 				q(69841),	--

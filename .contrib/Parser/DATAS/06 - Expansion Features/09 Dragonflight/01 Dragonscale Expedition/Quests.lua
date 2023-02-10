@@ -176,8 +176,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
 				["g"] = {
 					i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)
-					i(197360),	-- Renewed Proto-Drake: Spined Brow (DM!)
 					i(197386),	-- Renewed Proto-Drake: Spiked Jaw (DM!)
+					i(197360),	-- Renewed Proto-Drake: Spined Brow (DM!)
 				},
 			}),
 			q(72035, {	-- Dragon Isles Supplies

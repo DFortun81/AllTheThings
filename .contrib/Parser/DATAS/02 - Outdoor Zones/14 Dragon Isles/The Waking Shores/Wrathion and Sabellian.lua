@@ -408,9 +408,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 29.3, 52.5, THE_WAKING_SHORES },
 					["questID"] = 74043,
 					["isDaily"] = true,
-					["g"] = {
-						i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
-					},
 				}),
 				n(186783, {	-- Cauldronbearer Blakor
 					["coord"] = { 31.1, 56.2, THE_WAKING_SHORES },

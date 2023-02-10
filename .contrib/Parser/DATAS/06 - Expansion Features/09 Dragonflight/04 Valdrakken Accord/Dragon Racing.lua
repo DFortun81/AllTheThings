@@ -15,7 +15,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
 					i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
 					i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
-					i(197619),	-- Windborne Velocidrake: Hooked Snout
+					i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
 				}),
 			}),
 			n(WORLD_QUESTS, {

@@ -80,9 +80,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				q(70625, {	-- Spellforged Creations
 					["coord"] = { 49.1, 18.6, THE_AZURE_SPAN },
-					["g"] = {
-						i(197400),	-- Renewed proto drake: shark snout
-					},
 				}),
 				petbattle(q(71202, {	-- Mini Manafiend Melee
 					["coord"] = { 40.6, 59.1, THE_AZURE_SPAN }

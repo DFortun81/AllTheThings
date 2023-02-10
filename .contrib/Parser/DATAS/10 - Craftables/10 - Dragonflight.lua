@@ -1363,8 +1363,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(197362),	-- Renewed Proto-Drake: Spined Crest (DM!)
 			i(197352),	-- Renewed Proto-Drake: Steel and Yellow Armor (DM!)
 			i(197597),	-- Windborne Velocidrake: Black Fur (DM!)
-			i(197592),	-- Windborne Velocidrake: Spined Head (DM!)
 			i(197578),	-- Windborne Velocidrake: Silver and Blue Armor (DM!)
+			i(197592),	-- Windborne Velocidrake: Spined Head (DM!)
 			i(197579),	-- Windborne Velocidrake: Steel and Orange Armor (DM!)
 			i(197634),	-- Windborne Velocidrake: Windswept Pattern (DM!)
 		}),

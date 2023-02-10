@@ -9,7 +9,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 72834,
 				["isDaily"] = false,
 				["g"] = {
-					i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 					i(200228),	-- Protoscale Pauldrons
 				},
 			}),
@@ -33,7 +32,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74061,
 				["g"] = {
 					i(200298),	-- Stoneshaped Greatbelt
-					i(197624),	-- Windborne Velocidrake: Club Tail
 				},
 			}),
 		--	n(193234),	-- Eldoren the Reborn // under DF/Timed Based Rare
@@ -79,7 +77,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200182),	-- Riveted Drape
-					i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
 				},
 			}),
 			n(193241, {	-- Lord Epochbrgl <Time-Lost>

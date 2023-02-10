@@ -11,7 +11,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200165),	-- Aegis of Scales
-					i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 				},
 			}),
 			n(187945, {	-- Anhydros the Tidetaker
@@ -43,7 +42,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200138),	-- Ancient Dancer's Longspear
 					i(200303),	-- Dreamweaver Acolyte's Staff
-					i(197586),	-- Windborne Velocidrake: Spiked Back
 				},
 			}),
 			n(191611, {	-- Dragonhunter Igordan
@@ -100,7 +98,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73073,
 				["g"] = {
 					i(200858),	-- Plume of the Forgotten
-					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 				},
 			}),
 			-- n(193226, {	-- Gorjo the Crab Shackler // under DF/Timed Based Rare
@@ -151,7 +148,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200236),	-- Memory of Nulltheria
 					i(200310),	-- Stole of the Iron Phantom
-					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 				},
 			}),
 			-- n(193118, {	-- O'nank Shorescour // under DF/Timed Based Rare
@@ -201,10 +197,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 				["questID"] = 73895,
 				["g"] = {
-
 					i(200132),	-- Skewer's Snout
 					i(200552),	-- Torrent Caller's Shell
-					i(197589),	-- Windborne Velocidrake: Large Head Fin (DM!)
 				},
 			}),
 			n(193175, {	-- Slurpo, the Incredible Snail

@@ -39,7 +39,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73872,
 				["g"] = {
 					i(189055),	-- Ghendish's Backup Talisman
-					i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
 				},
 			}),
 			n(192020, {	-- Eaglemaster Niraak
@@ -48,7 +47,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74063,
 				["g"] = {
 					i(200536),	-- Tamed Eagle
-					i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
 				},
 			}),
 			n(193142, {	-- Enraged Sapphire
@@ -56,7 +54,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73875,
 				["g"] = {
 					i(200309),	-- Rock Encrusted Chestguard
-					i(197624),	-- Windborne Velocidrake: Club Tail
 				},
 			}),
 		--	n(193170, {	-- Fulgurb // under DF/Timed Based Rare
@@ -106,7 +103,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(200434),	-- Anund's Mana-Singed Amice
 					i(200446),	-- Crystalized Sigil
-					i(197400),	-- Renewed Proto-Drake: Shark Snout (DM!)
 				},
 			}),
 			n(201540,	-- Lurgan
@@ -160,10 +156,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200292),	-- Cragforge Pauldrons
-					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
-					i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
-					i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
-					i(197606),	-- Windborne Velocidrake: Swept Horns (DM!)
 					i(200172),	-- Zephyrdance Signet
 				},
 			}),
@@ -204,7 +196,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["cost"] = {{"i", 194681, 1}},	-- Sugarwing Cupcake
 				["g"] = {
 					i(200735),	-- Magically Magical Faerie Flower
-					i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
 				},
 			}),
 			n(193136, {	-- Scav Notail
@@ -219,7 +210,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 61.0, 13.6, OHNAHRAN_PLAINS },
 				["questID"] = 73894,
 				["g"] = {
-					i(197586),	-- Windborne Velocidrake: Spiked Back (DM!)
 					i(200154),	-- Rubyscale Band
 					i(200875),	-- Seeker's Bands
 				},
@@ -234,7 +224,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(197115),	-- Highland Drake: Thorned Jaw (DM!)
 					i(200444),	-- Mantle of the Gatekeeper
 					i(200310),	-- Stole of the Iron Phantom
-					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 				},
 			}),
 			n(192949, {	-- Skaara
@@ -249,8 +238,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200297),	-- Hastily Cobbled Maul
 					i(200689),	-- Rimetalon Band
 					i(200234),	-- Vrak's Embossed Aegis
-					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
-					i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
 				},
 			}),
 			-- n(193123, {	-- Steamgill // under DF/Timed Based Rare
@@ -304,10 +291,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = false,
 				["g"] = {
 					i(200293),	-- Primal Scion's Twinblade
-					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
-					i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
-					i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
-					i(197606),	-- Windborne Velocidrake: Swept Horns (DM!)
 					i(198429),	-- Typhoon Bringer
 					i(200172),	-- Zephyrdance Signet
 				},
@@ -328,9 +311,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- TODO: add crs for kill npcs
 				["coord"] = { 84.2, 47.8, OHNAHRAN_PLAINS },
 				["questID"] = 73979,
-				["g"] = {
-					i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
-				},
 			}),
 			n(192045,	-- Windseeker Avash
 			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
@@ -344,9 +324,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 31.5, 64.0, OHNAHRAN_PLAINS },
 				["questID"] = 73901,
 				["g"] = {
-					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
-					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
-					i(197606),	-- Windborne Velocidrake: Swept Horns (DM!)
 					i(200314),	-- Skyspeaker's Envelope
 					i(200306),	-- Tempest Shawl
 					i(200879, {	-- Zenet Egg

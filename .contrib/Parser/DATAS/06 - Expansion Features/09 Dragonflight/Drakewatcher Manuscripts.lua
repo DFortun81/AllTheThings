@@ -84,7 +84,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197377 },	-- Renewed Proto-Drake: Bovine Horns (DM!)
 				}),
 				crit(56740, {	-- Impaler Horns
-					["provider"] = { "i", 197379 },	-- Renewed Proto-Drake: Impaler Horns
+					["provider"] = { "i", 197379 },	-- Renewed Proto-Drake: Impaler Horns (DM!)
 				}),
 				crit(56741, {	-- Curved Horns
 					["provider"] = { "i", 197380 },	-- Renewed Proto-Drake: Curved Horns (DM!)
@@ -113,7 +113,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197362 },	-- Renewed Proto-Drake: Spined Crest (DM!)
 				}),
 				crit(56279, {	-- Maned Crest
-					["provider"] = { "i", 97363 },	-- Renewed Proto-Drake: Maned Crest (DM!)
+					["provider"] = { "i", 197363 },	-- Renewed Proto-Drake: Maned Crest (DM!)
 				}),
 				crit(56281, {	-- Finned Crest
 					["provider"] = { "i", 197365 },	-- Renewed Proto-Drake: Finned Crest (DM!)
@@ -140,7 +140,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197399 },	-- Renewed Proto-Drake: Razor Snout (DM!)
 				}),
 				crit(56290, {	-- Shark Snout
-					["provider"] = { "i", 197400 },	-- Renewed Proto-Drake: Shark Snout
+					["provider"] = { "i", 197400 },	-- Renewed Proto-Drake: Shark Snout (DM!)
 				}),
 				crit(56291, {	-- Beaked Snout
 					["provider"] = { "i", 197401 },	-- Renewed Proto-Drake: Beaked Snout (DM!)
@@ -160,7 +160,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197403 },	-- Renewed Proto-Drake: Club Tail (DM!)
 				}),
 				crit(56271, {	-- Finned Tail
-					["provider"] = { "i", 197404 },	-- Renewed Proto-Drake: Finned Tail
+					["provider"] = { "i", 197404 },	-- Renewed Proto-Drake: Finned Tail (DM!)
 				}),
 				crit(56272, {	-- Maned Tail
 					["provider"] = { "i", 197405 },	-- Renewed Proto-Drake: Maned Tail (DM!)
@@ -183,7 +183,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197614 },	-- Windborne Velocidrake: Red Scales (DM!)
 				}),
 				crit(56300, {	-- Heavy Scales
-					["provider"] = { "i", 197397 },	-- Renewed Proto-Drake: Heavy Scales (DM!)
+					["provider"] = { "i", 197617 },	-- Windborne Velocidrake: Heavy Scales (DM!)
 				}),
 				crit(56301, {	-- Windswept Pattern
 					["provider"] = { "i", 197634 },	-- Windborne Velocidrake: Windswept Pattern (DM!)
@@ -229,7 +229,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197605 },	-- Windborne Velocidrake: Curled Horns (DM!)
 				}),
 				crit(56316, {	-- Swept Horns
-					["provider"] = { "i", 197606 },	-- Windborne Velocidrake: Swept Horns
+					["provider"] = { "i", 197606 },	-- Windborne Velocidrake: Swept Horns (DM!)
 				}),
 				crit(56317, {	-- Split Horns
 					["provider"] = { "i", 197607 },	-- Windborne Velocidrake: Split Horns (DM!)
@@ -250,7 +250,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197598 },	-- Windborne Velocidrake: Gray Hair (DM!)
 				}),
 				crit(56324, {	-- Red Fur
-					["provider"] = { "i", 197599 },	-- Windborne Velocidrake: Red Fur (DM!)
+					["provider"] = { "i", 197599 },	-- Windborne Velocidrake: Red Hair (DM!)
 				}),
 			}),
 			ach(16705, {	-- Windborne Velocidrake Head Features
@@ -267,7 +267,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197592 },	-- Windborne Velocidrake: Spined Head (DM!)
 				}),
 				crit(56330, {	-- Feathery Head
-					["provider"] = { "i", 197593 },	-- Windborne Velocidrake: Feathery Head
+					["provider"] = { "i", 197593 },	-- Windborne Velocidrake: Feathery Head (DM!)
 				}),
 				crit(56332, {	-- Finned Ears
 					["provider"] = { "i", 197595 },	-- Windborne Velocidrake: Finned Ears (DM!)
@@ -279,7 +279,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197618 },	-- Windborne Velocidrake: Long Snout (DM!)
 				}),
 				crit(56335, {	-- Hooked Snout
-					["provider"] = { "i", 197619 },	-- Windborne Velocidrake: Hooked Snout
+					["provider"] = { "i", 197619 },	-- Windborne Velocidrake: Hooked Snout (DM!)
 				}),
 				crit(56336, {	-- Beaked Snout
 					["provider"] = { "i", 197620 },	-- Windborne Velocidrake: Beaked Snout (DM!)
@@ -299,10 +299,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "i", 197584 },	-- Windborne Velocidrake: Finned Back (DM!)
 				}),
 				crit(56343, {	-- Maned Back
-					["provider"] = { "i", 197585 },	-- Windborne Velocidrake: Maned Back
+					["provider"] = { "i", 197585 },	-- Windborne Velocidrake: Maned Back (DM!)
 				}),
 				crit(56344, {	-- Spiked Back
-					["provider"] = { "i", 197586 },	-- Windborne Velocidrake: Spiked Back
+					["provider"] = { "i", 197586 },	-- Windborne Velocidrake: Spiked Back (DM!)
 				}),
 				crit(56345, {	-- Feathered Back
 					["provider"] = { "i", 197587 },	-- Windborne Velocidrake: Feathered Back
@@ -778,50 +778,50 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		unknown(i(197136)),	-- Highland Drake: Tapered Nose
 		i(197148),	-- Highland Drake: Vertical Finned Tail (DM!)
 		unknown(i(197146)),	-- Highland Drake: White Scales
-		i(197357),	-- Renewed Proto-Drake: Armor
+		unknown(i(197357)),	-- Renewed Proto-Drake: Armor
 		i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
-		i(197348),	-- Renewed Proto-Drake: Black and Red Armor
+		unknown(i(197348)),	-- Renewed Proto-Drake: Black and Red Armor
 		i(197392),	-- Renewed Proto-Drake: Black Scales (DM!)
 		i(197368),	-- Renewed Proto-Drake: Blue Hair (DM!)
 		i(197390),	-- Renewed Proto-Drake: Blue Scales (DM!)
 		i(197377),	-- Renewed Proto-Drake: Bovine Horns (DM!)
 		i(197391),	-- Renewed Proto-Drake: Bronze Scales (DM!)
-		i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor
-		i(197369),	-- Renewed Proto-Drake: Brown Hair
+		unknown(i(197353)),	-- Renewed Proto-Drake: Bronze and Pink Armor
+		unknown(i(197369)),	-- Renewed Proto-Drake: Brown Hair
 		i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 		i(197375),	-- Renewed Proto-Drake: Curled Horns (DM!)
 		i(197380),	-- Renewed Proto-Drake: Curved Horns (DM!)
+		unknown(i(197358)),	-- Renewed Proto-Drake: Curved Spiked Brow
 		i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
 		i(197376),	-- Renewed Proto-Drake: Ears (DM!)
-		i(197355),	-- Renewed Proto-Drake: Finned Back (DM!)
 		i(197365),	-- Renewed Proto-Drake: Finned Crest (DM!)
 		i(197388),	-- Renewed Proto-Drake: Finned Jaw (DM!)
-		i(197404),	-- Renewed Proto-Drake: Finned Tail
+		i(197404),	-- Renewed Proto-Drake: Finned Tail (DM!)
 		i(197408),	-- Renewed Proto-Drake: Finned Throat (DM!)
 		i(197346),	-- Renewed Proto-Drake: Gold and Black Armor (DM!)
 		i(197351),	-- Renewed Proto-Drake: Gold and Red Armor (DM!)
-		i(197349),	-- Renewed Proto-Drake: Gold and White Armor
+		unknown(i(197349)),	-- Renewed Proto-Drake: Gold and White Armor
 		i(197381),	-- Renewed Proto-Drake: Gradient Horns (DM!)
 		i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
-		i(197371),	-- Renewed Proto-Drake: Green Hair
-		i(197389),	-- Renewed Proto-Drake: Green Scales
-		i(197356),	-- Renewed Proto-Drake: Hairy Back
-		i(197359),	-- Renewed Proto-Drake: Hairy Brow
+		unknown(i(197371)),	-- Renewed Proto-Drake: Green Hair
+		i(197389),	-- Renewed Proto-Drake: Green Scales (DM!)
+		unknown(i(197356)),	-- Renewed Proto-Drake: Hairy Back
+		i(197359),	-- Renewed Proto-Drake: Hairy Brow (DM!)
 		i(197395),	-- Renewed Proto-Drake: Harrier Pattern (DM!)
 		i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
 		i(197397),	-- Renewed Proto-Drake: Heavy Scales (DM!)
-		i(197373),	-- Renewed Proto-Drake: Helm
-		i(197354),	-- Renewed Proto-Drake: Horned Back
+		unknown(i(197373)),	-- Renewed Proto-Drake: Helm
+		unknown(i(197354)),	-- Renewed Proto-Drake: Horned Back
 		i(197385),	-- Renewed Proto-Drake: Horned Jaw (DM!)
-		i(197379),	-- Renewed Proto-Drake: Impaler Horns
+		i(197379),	-- Renewed Proto-Drake: Impaler Horns (DM!)
 		i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)
 		i(197405),	-- Renewed Proto-Drake: Maned Tail (DM!)
 		i(197394),	-- Renewed Proto-Drake: Predator Pattern (DM!)
 		i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 		i(197399),	-- Renewed Proto-Drake: Razor Snout (DM!)
 		i(197370),	-- Renewed Proto-Drake: Red Hair (DM!)
-		i(197400),	-- Renewed Proto-Drake: Shark Snout
-		i(197364),	-- Renewed Proto-Drake: Short Spiked Crest
+		i(197400),	-- Renewed Proto-Drake: Shark Snout (DM!)
+		unknown(i(197364)),	-- Renewed Proto-Drake: Short Spiked Crest
 		i(197347),	-- Renewed Proto-Drake: Silver and Blue Armor (DM!)
 		i(197350),	-- Renewed Proto-Drake: Silver and Purple Armor (DM!)
 		i(197396),	-- Renewed Proto-Drake: Skyterror Pattern (DM!)
@@ -836,57 +836,63 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197352),	-- Renewed Proto-Drake: Steel and Yellow Armor (DM!)
 		i(197378),	-- Renewed Proto-Drake: Subtle Horns (DM!)
 		i(197374),	-- Renewed Proto-Drake: Swept Horns (DM!)
-		i(197384),	-- Renewed Proto-Drake: Thick Spined Jaw
-		i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw
+		i(197355),	-- Renewed Proto-Drake: Thick Spined Jaw (DM!)
+		i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
 		i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
-		i(197393),	-- Renewed Proto-Drake: White Scales
-		i(197588),	-- Windborne Velocidrake: Armor
+		unknown(i(197393)),	-- Renewed Proto-Drake: White Scales
+		unknown(i(197588)),	-- Windborne Velocidrake: Armor
 		i(197620),	-- Windborne Velocidrake: Beaked Snout (DM!)
 		i(197597),	-- Windborne Velocidrake: Black Fur (DM!)
 		i(197611),	-- Windborne Velocidrake: Black Scales (DM!)
 		i(197612),	-- Windborne Velocidrake: Blue Scales (DM!)
+		unknown(i(197577)),	-- Windborne Velocidrake: Bronze and Green Armor
 		i(197613),	-- Windborne Velocidrake: Bronze Scales (DM!)
 		i(197624),	-- Windborne Velocidrake: Club Tail (DM!)
 		i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
 		i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
 		i(197603),	-- Windborne Velocidrake: Curved Horns (DM!)
-		i(197583),	-- Windborne Velocidrake: Exposed Finned Back
-		i(197626),	-- Windborne Velocidrake: Exposed Finned Neck
-		i(197630),	-- Windborne Velocidrake: Feathered Neck
+		unknown(i(197626)),	-- Windborne Velocidrake: Exposed Finned Neck
+		unknown(i(197621)),	-- Windborne Velocidrake: Exposed Finned Tail
+		unknown(i(197587)),	-- Windborne Velocidrake: Feathered Back
+		unknown(i(197630)),	-- Windborne Velocidrake: Feathered Neck
+		i(197593),	-- Windborne Velocidrake: Feathery Head (DM!)
 		i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
 		i(197584),	-- Windborne Velocidrake: Finned Back (DM!)
 		i(197595),	-- Windborne Velocidrake: Finned Ears (DM!)
 		i(197627),	-- Windborne Velocidrake: Finned Neck (DM!)
 		i(197622),	-- Windborne Velocidrake: Finned Tail (DM!)
-		i(197577),	-- Windborne Velocidrake: Gold and Brown Armor
 		i(197580),	-- Windborne Velocidrake: Gold and Red Armor (DM!)
-		i(197593),	-- Windborne Velocidrake: Feathery Head (DM!)
 		i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 		i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
+		unknown(i(197591)),	-- Windborne Velocidrake: Hairy Head [Brackenhide? Or Centaur Rep?]
+		unknown(i(197617)),	-- Windborne Velocidrake: Heavy Scales
 		i(197600),	-- Windborne Velocidrake: Helm
-		i(197619),	-- Windborne Velocidrake: Hooked Snout
+		i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
 		i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
 		i(197589),	-- Windborne Velocidrake: Large Head Fin (DM!)
 		i(197618),	-- Windborne Velocidrake: Long Snout (DM!)
-		i(197585),	-- Windborne Velocidrake: Maned Back
+		i(197585),	-- Windborne Velocidrake: Maned Back (DM!)
+		unknown(i(197604)),	-- Windborne Velocidrake: Ox Horns [centaur renown but not on vendor]
+		unknown(i(197628)),	-- Windborne Velocidrake: Plated Neck [world drop?]
 		i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
-		i(197599),	-- Windborne Velocidrake: Red Fur (DM!)
+		i(197599),	-- Windborne Velocidrake: Red Hair (DM!)
 		i(197614),	-- Windborne Velocidrake: Red Scales (DM!)
+		unknown(i(197636)),	-- Windborne Velocidrake: Shrieker Pattern ["centaur renown but not on vendor]
 		i(197578),	-- Windborne Velocidrake: Silver and Blue Armor (DM!)
 		i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
-		i(197594),	-- Windborne Velocidrake: Small Ears
-		i(197590),	-- Windborne Velocidrake: Small Head Fin
-		i(197586),	-- Windborne Velocidrake: Spiked Back
-		i(197629),	-- Windborne Velocidrake: Spiked Neck
+		unknown(i(197594)),	-- Windborne Velocidrake: Small Ears
+		unknown(i(197590)),	-- Windborne Velocidrake: Small Head Fin
+		i(197586),	-- Windborne Velocidrake: Spiked Back (DM!)
 		i(197623),	-- Windborne Velocidrake: Spiked Tail (DM!)
 		i(197592),	-- Windborne Velocidrake: Spined Head (DM!)
 		i(197607),	-- Windborne Velocidrake: Split Horns (DM!)
 		i(197579),	-- Windborne Velocidrake: Steel and Orange Armor (DM!)
-		i(197606),	-- Windborne Velocidrake: Swept Horns
-		i(197615),	-- Windborne Velocidrake: Teal Scales
+		i(197606),	-- Windborne Velocidrake: Swept Horns (DM!)
+		unknown(i(197615)),	-- Windborne Velocidrake: Teal Scales
 		i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
-		i(197616),	-- Windborne Velocidrake: White Scales
-		i(197582),	-- Windborne Velocidrake: White and Pink Armor
+		unknown(i(197609)),	-- Windborne Velocidrake: White Horns [world drop?]
+		unknown(i(197616)),	-- Windborne Velocidrake: White Scales
+		unknown(i(197582)),	-- Windborne Velocidrake: White and Pink Armor
 		i(197634),	-- Windborne Velocidrake: Windswept Pattern (DM!)
 		i(197610),	-- Windborne Velocidrake: Yellow Horns (DM!)
 		-- Special --
@@ -896,19 +902,28 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 })));
 
 root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
-	i(197006),	-- Cliffside Wylderdrake: Plated Nose [Datamined Winterfurbolg Rep?]
-	i(196995),	-- Cliffside Wylderdrake: Spiked Horns [Datamined Winterfurbolg Rep?]
-	i(197102),	-- Highland Drake: Horned Chin [Datamined Winterfurbolg Rep?]
-	i(197129),	-- Highland Drake: Sleek Horns [Datamined Winterfurbolg Rep?]
-
-
-	i(197358),	-- Renewed Proto-Drake: Curved Spiked Brow
-	i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
-	i(197587),	-- Windborne Velocidrake: Feathered Back
-	i(197591),	-- Windborne Velocidrake: Hairy Head ("centaur renown" but not on vendor) Claimed to be from Brackenhide, but no confirmation
-	i(197617),	-- Windborne Velocidrake: Heavy Scales
-	i(197628),	-- Windborne Velocidrake: Plated Neck ("world drop" but not found in 2months")
-	i(197604),	-- Windborne Velocidrake: Ox Horns ("centaur renown" but not on vendor)
-	i(197636),	-- Windborne Velocidrake: Shrieker Pattern ("centaur renown" but not on vendor)
-	i(197609),	-- Windborne Velocidrake: White Horns ("world drop" but not found in 2months")
+	n(DRAKEWATCHER_MANUSCRIPTS, {
+		i(197006),	-- Cliffside Wylderdrake: Plated Nose [Datamined Winterfurbolg Rep?]
+		i(196995),	-- Cliffside Wylderdrake: Spiked Horns [Datamined Winterfurbolg Rep?]
+		i(197102),	-- Highland Drake: Horned Chin [Datamined Winterfurbolg Rep?]
+		i(197129),	-- Highland Drake: Sleek Horns [Datamined Winterfurbolg Rep?]
+		i(197583),	-- Windborne Velocidrake: Exposed Finned Back [Datamined Winterfurbolg Rep?]
+		i(197629),	-- Windborne Velocidrake: Spiked Neck [Datamined Winterfurbolg Rep?]
+		--
+		i(194837),	-- Highland Drake Manuscript: Black Hair (DM!)
+		i(194838),	-- Highland Drake Manuscript: Spined Head (DM!)
+		i(194836),	-- Highland Drake Manuscript: Spined Throat (DM!)
+		i(194839),	-- Cliffside Wylderdrake Manuscript: Conical Head (DM!)
+		i(194841),	-- Cliffside Wylderdrake Manuscript: Red Mane (DM!)
+		i(194840),	-- Cliffside Wylderdrake Manuscript: Triple Head Horns (DM!)
+		i(192523),	-- Renewed Proto-Drake: Green Scales (DM!)
+		i(194831),	-- Renewed Proto Drake Manuscript: Predator Pattern (DM!)
+		i(194830),	-- Renewed Proto Drake Manuscript: Red Hair (DM!)
+		i(192111),	-- Renewed Proto-Drake: Red Scales (DM!)
+		i(194832),	-- Renewed Proto Drake Manuscript: Spined Crest (DM!)
+		i(197384),	-- Renewed Proto-Drake: Thick Spined Jaw (DM!)
+		i(194833),	-- Windborne Velocidrake Manuscript: Black Fur (DM!)
+		i(194835),	-- Windborne Velocidrake Manuscript: Spined Crest (DM!)
+		i(194834),	-- Windborne Velocidrake Manuscript: Windswept (DM!)
+	}),
 })));

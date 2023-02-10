@@ -149,7 +149,6 @@ i(197380, 69581);	-- Renewed Proto-Drake: Curved Horns
 i(197358, 69559);	-- Renewed Proto-Drake: Curved Spiked Brow
 i(197366, 69567);	-- Renewed Proto-Drake: Dual Horned Crest
 i(197376, 69577);	-- Renewed Proto-Drake: Ears
-i(197355, 69556);	-- Renewed Proto-Drake: Finned Back
 i(197365, 69566);	-- Renewed Proto-Drake: Finned Crest
 i(197388, 69589);	-- Renewed Proto-Drake: Finned Jaw
 i(197404, 69605);	-- Renewed Proto-Drake: Finned Tail
@@ -157,7 +156,7 @@ i(197408, 69609);	-- Renewed Proto-Drake: Finned Throat
 i(197346, 69547);	-- Renewed Proto-Drake: Gold and Black Armor
 i(197351, 69552);	-- Renewed Proto-Drake: Gold and Red Armor
 i(197349, 69550);	-- Renewed Proto-Drake: Gold and White Armor
-i(197381, 69582);	-- Renewed Proto-Drake: Gradiant Horns
+i(197381, 69582);	-- Renewed Proto-Drake: Gradient Horns
 i(197367, 69568);	-- Renewed Proto-Drake: Gray Hair
 i(197371, 69572);	-- Renewed Proto-Drake: Green Hair
 i(197389, 66720);	-- Renewed Proto-Drake: Green Scales
@@ -192,7 +191,7 @@ i(197406, 69607);	-- Renewed Proto-Drake: Spined Tail
 i(197352, 69553);	-- Renewed Proto-Drake: Steel and Yellow Armor
 i(197378, 69579);	-- Renewed Proto-Drake: Subtle Horns
 i(197374, 69575);	-- Renewed Proto-Drake: Swept Horns
-i(197384, 69585);	-- Renewed Proto-Drake: Thick Spined Jaw
+i(197355, 69585);	-- Renewed Proto-Drake: Thick Spined Jaw
 i(197387, 69588);	-- Renewed Proto-Drake: Thin Spined Jaw
 i(197382, 69583);	-- Renewed Proto-Drake: White Horns
 i(197393, 69594);	-- Renewed Proto-Drake: White Scales
@@ -201,12 +200,12 @@ i(197620, 69824);	-- Windborne Velocidrake: Beaked Snout
 i(197597, 69801);	-- Windborne Velocidrake: Black Fur
 i(197611, 69815);	-- Windborne Velocidrake: Black Scales
 i(197612, 69816);	-- Windborne Velocidrake: Blue Scales
+i(197577, 69781);	-- Windborne Velocidrake: Bronze and Green Armor
 i(197613, 69817);	-- Windborne Velocidrake: Bronze Scales
 i(197624, 69828);	-- Windborne Velocidrake: Club Tail
 i(197602, 69806);	-- Windborne Velocidrake: Cluster Horns
 i(197605, 69809);	-- Windborne Velocidrake: Curled Horns
 i(197603, 69807);	-- Windborne Velocidrake: Curved Horns
-i(197583, 69787);	-- Windborne Velocidrake: Exposed Finned Back
 i(197626, 69831);	-- Windborne Velocidrake: Exposed Finned Neck
 i(197621, 69825);	-- Windborne Velocidrake: Exposed Finned Tail
 i(197587, 69791);	-- Windborne Velocidrake: Feathered Back
@@ -217,9 +216,8 @@ i(197584, 69788);	-- Windborne Velocidrake: Finned Back
 i(197595, 69799);	-- Windborne Velocidrake: Finned Ears
 i(197627, 69832);	-- Windborne Velocidrake: Finned Neck
 i(197622, 69826);	-- Windborne Velocidrake: Finned Tail
-i(197577, 69781);	-- Windborne Velocidrake: Gold and Brown Armor
 i(197580, 69784);	-- Windborne Velocidrake: Gold and Red Armor
-i(197598, 69802);	-- Windborne Velocidrake: Gray Fur
+i(197598, 69802);	-- Windborne Velocidrake: Gray Hair
 i(197608, 69812);	-- Windborne Velocidrake: Gray Horns
 i(197591, 69795);	-- Windborne Velocidrake: Hairy Head
 i(197617, 69821);	-- Windborne Velocidrake: Heavy Scales
@@ -232,7 +230,7 @@ i(197585, 69789);	-- Windborne Velocidrake: Maned Back
 i(197604, 69808);	-- Windborne Velocidrake: Ox Horns
 i(197628, 69834);	-- Windborne Velocidrake: Plated Neck
 i(197635, 69846);	-- Windborne Velocidrake: Reaver Pattern
-i(197599, 69803);	-- Windborne Velocidrake: Red Fur
+i(197599, 69803);	-- Windborne Velocidrake: Red Hair
 i(197614, 69818);	-- Windborne Velocidrake: Red Scales
 i(197636, 69847);	-- Windborne Velocidrake: Shrieker Pattern
 i(197578, 69782);	-- Windborne Velocidrake: Silver and Blue Armor
@@ -240,7 +238,6 @@ i(197581, 69785);	-- Windborne Velocidrake: Silver and Purple Armor
 i(197594, 69798);	-- Windborne Velocidrake: Small Ears
 i(197590, 69794);	-- Windborne Velocidrake: Small Head Fin
 i(197586, 69790);	-- Windborne Velocidrake: Spiked Back
-i(197629, 69835);	-- Windborne Velocidrake: Spiked Neck
 i(197623, 69827);	-- Windborne Velocidrake: Spiked Tail
 i(197592, 69796);	-- Windborne Velocidrake: Spined Head
 i(197607, 69811);	-- Windborne Velocidrake: Split Horns
@@ -269,6 +266,9 @@ i(194832, 0);		-- Renewed Proto Drake Manuscript: Spined Crest
 i(194833, 0);		-- Windborne Velocidrake Manuscript: Black Fur
 i(194835, 0);		-- Windborne Velocidrake Manuscript: Spined Crest
 i(194834, 0);		-- Windborne Velocidrake Manuscript: Windswept
+-- i(197355, 69556);	-- Renewed Proto-Drake: Finned Back [Changed questID and name on live]
+i(192523, 69590);	-- Renewed Proto-Drake: Green Scales	[Item doesnt seem to exist anymore?]
+i(197384, 69585);	-- Renewed Proto-Drake: Thick Spined Jaw [Item doesnt seem to exist anymore]
 
 ------------------
 -- PATCH 10.0.7 --
@@ -277,3 +277,5 @@ i(197006, 69206);	-- Cliffside Wylderdrake: Plated Nose
 i(196995, 69195);	-- Cliffside Wylderdrake: Spiked Horns
 i(197102, 69303);	-- Highland Drake: Horned Chin
 i(197129, 69330);	-- Highland Drake: Sleek Horns
+i(197583, 69787);	-- Windborne Velocidrake: Exposed Finned Back
+i(197629, 69835);	-- Windborne Velocidrake: Spiked Neck

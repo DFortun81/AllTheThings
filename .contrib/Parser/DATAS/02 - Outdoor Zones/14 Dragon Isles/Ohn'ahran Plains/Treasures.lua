@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 53.3, 68.9, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 195041, 1 }, },	-- 1x Everliving Wooden Key
 				["g"] = {
-					i(197585),	-- Windborne Velocidrake: Maned Back
+					i(197585),	-- Windborne Velocidrake: Maned Back (DM!)
 				}
 			}),
 			o(380842, {	-- Gold Coin

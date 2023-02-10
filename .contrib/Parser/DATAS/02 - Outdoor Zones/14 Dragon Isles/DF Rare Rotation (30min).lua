@@ -29,9 +29,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 74015,
 					["g"] = {
 						i(200542),	-- Breezy Companion
-						i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
-						i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
-						i(197606),	-- Windborne Velocidrake: Swept Horns (DM!)
 					},
 				}),
 				n(193235, {	-- Oshigol
@@ -40,7 +37,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["g"] = {
 						i(200684),	-- Emerald Tailbone
 						i(200203),	-- Repurposed Giant's Thimble
-						i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
 					},
 				}),
 				n(196010, {	-- Researcher Sneakwing <The Sundered Flame>
@@ -49,7 +45,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["g"] = {
 						i(200438),	-- Surcoat of the Chastigator
 						i(200682),	-- Hardened Scale Shoulderguards
-						i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 					},
 				}),
 				n(193227, {	-- Ronsak the Decimator
@@ -57,7 +52,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					-- ["questID"] = ,
 					["g"] = {
 						i(200308),	-- Rellen's Legacy
-						i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
 					},
 				}),
 				n(193123, {	-- Steamgill
@@ -118,7 +112,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 37.4, 77.9, THALDRASZUS },
 					["questID"] = 74029,
 					["g"] = {
-						i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 						i(200161),	-- Razorwind Talisman
 						i(200148),	-- A Collection of Me (TOY!)
 						i(200306),	-- Tempest Shawl
@@ -129,6 +122,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 74035,
 					["g"] = {
 						i(200139),	-- Tempest Arc
+						i(197593),	-- Windborne Velocidrake: Feathery Head (DM!)
 					},
 				}),
 				n(193146, {	-- Treasure-Mad Trambladd
@@ -176,7 +170,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 73984,
 					["g"] = {
 						i(200259),	-- Forest Dweller's Shield
-						i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
 						i(200229),	-- Slightly Digested Leggings
 					},
 				}),
@@ -226,7 +219,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["g"] = {
 						i(200435),	-- Brackish Breeches
 						i(200203),	-- Repurposed Giant's Thimble
-						i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
 					},
 				}),
 				n(193120, {	-- Smogswog the Firebreather

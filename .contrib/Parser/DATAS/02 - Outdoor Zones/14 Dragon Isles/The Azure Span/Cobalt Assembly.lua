@@ -66,7 +66,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 74545,
 					["groups"] = {
 						i(203664),	-- Wild Magic Insulating Bands
-						i(197400),	-- Renewed Proto-Drake: Shark Snout
 					},
 				})),
 				n(201555, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Srivantor

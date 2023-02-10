@@ -9,6 +9,13 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 			2081,	-- Chamber of Flames
 		},
 		["g"] = {
+			-- Last Boss (any difficulty)
+			n(DROPS, sharedData({
+				["crs"] = { 189901 },	-- Warlord Sargha
+			},{
+				i(197376),	-- Renewed Proto-Drake: Ears (DM!)
+				i(197397),	-- Renewed Proto-Drake: Heavy Scales (DM!)
+			})),
 			n(QUESTS, {
 				q(72135, {	-- Neltharus: Secrets Wihtin
 					["provider"] = { "n", 193456 },	-- Archivist Edress
@@ -68,7 +75,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(193779),	-- Sargha's Smasher
 						i(193773),	-- Spoils of Neltharus
 						i(193775),	-- Warlord's Cindermitts
-						ig(197376),	-- Renewed Proto-Drake: Ears (DM!)
 					},
 				}),
 			}),
@@ -114,7 +120,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(193779),	-- Sargha's Smasher
 						i(193773),	-- Spoils of Neltharus
 						i(193775),	-- Warlord's Cindermitts
-						ig(197376),	-- Renewed Proto-Drake: Ears (DM!)
 					},
 				}),
 			}),
@@ -163,8 +168,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(193779),	-- Sargha's Smasher
 						i(193773),	-- Spoils of Neltharus
 						i(193775),	-- Warlord's Cindermitts
-						ig(197376),	-- Renewed Proto-Drake: Ears (DM!)
-						ig(197397),	-- Renewed Proto-Drake: Heavy Scales (DM!)
 					},
 				}),
 			}),

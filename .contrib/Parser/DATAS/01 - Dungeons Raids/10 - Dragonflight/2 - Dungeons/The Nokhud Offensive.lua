@@ -6,6 +6,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 		["coord"] = { 60.9, 39.1, OHNAHRAN_PLAINS },
 		["maps"] = { 2093 },	-- The Nokhud Offensive
 		["g"] = {
+			-- Last Boss (any difficulty)
+			n(DROPS, sharedData({
+				["crs"] = { 186151 },	-- Balakar Khan
+			},{
+				i(201929),	-- Stolen Breath of Ohn'ahra
+				i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
+				i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
+			})),
 			n(MYTHIC_PLUS, {
 				i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
 			}),
@@ -30,7 +38,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(197889),	-- Geyserwalker Visage
 						i(197897),	-- Keratin-Reinforced Coif
 						i(197899),	-- Speakbreaker Barbuta
-						i(197356),	-- Renewed Proto-Drake: Hairy Back
+						i(197359),	-- Renewed Proto-Drake: Hairy Brow (DM!)
 					},
 				}),
 				q(66339, {	-- The Wind Belongs to the Sky
@@ -89,7 +97,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(193685),	-- Lightning-Charged Striders
 						i(193686),	-- Nokhud Traditionalist's Pauldrons
 						i(193688),	-- Stormslash
-						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
 					},
 				}),
 			}),
@@ -139,9 +146,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(193685),	-- Lightning-Charged Striders
 						i(193686),	-- Nokhud Traditionalist's Pauldrons
 						i(193688),	-- Stormslash
-						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
-						i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
-						i(201929),	-- Stolen Breath of Ohn'ahra
 					},
 				}),
 			}),
@@ -197,8 +201,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						i(193685),	-- Lightning-Charged Striders
 						i(193686),	-- Nokhud Traditionalist's Pauldrons
 						i(193688),	-- Stormslash
-						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
-						i(201929),	-- Stolen Breath of Ohn'ahra
 					},
 				}),
 			}),

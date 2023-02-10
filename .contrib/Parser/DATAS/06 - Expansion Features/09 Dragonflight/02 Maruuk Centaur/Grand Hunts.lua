@@ -385,8 +385,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["g"] = {
 							i(200684),	-- Emerald Tailbone
 							i(200246),	-- Lost Delving Lamp
-							i(197624),	-- Windborne Velocidrake: Club Tail (DM!)
-							i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
 						},
 					}),
 					n(193722, {	-- Tomnu
@@ -395,7 +393,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["isDaily"] = true,
 						["g"] = {
 							i(200682),	-- Hardened Scale Shoulderguards
-							i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 						},
 					}),
 					n(193724, {	-- Uurtus

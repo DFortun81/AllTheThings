@@ -26,7 +26,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200237), -- burnished lifewarders targe
 					i(200086), -- khazgorite infused resin
 					i(200154), -- rubyscale band
-					i(197586), -- windborne velocidrake spiked back
 				},
 			}),
 			n(196768, {	-- Primal Bear Cub

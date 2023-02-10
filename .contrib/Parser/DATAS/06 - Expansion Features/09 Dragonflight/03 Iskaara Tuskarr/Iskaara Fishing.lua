@@ -381,8 +381,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(200552),	-- Torrent Caller's Shell
 						i(200448),	-- Abyssal Ward
 						i(200151),	-- Seamist Blade
-						i(197589),	-- Windborne Velocidrake: Large Head Fin
-						-- is part of the DF>Global Rare Loottable
 					},
 				}),
 			})),

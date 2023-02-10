@@ -394,6 +394,184 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						186859,	-- Worldcarver A'tir
 					},
 				}),
+				i(197403, {	-- Renewed Proto-Drake: Club Tail (DM!)
+					["crs"] = {
+						193243,	-- Acrosoth
+						187111,	-- Ancient Hornswog
+						193256,	-- Nulltheria the Void Gazer
+						193143,	-- Razk'vex the Untamed
+						196010,	-- Researcher Sneakwing <The Sundered Flame>
+						193722,	-- Tomnu
+					},
+				}),
+				i(197367, {	-- Renewed Proto-Drake: Gray Hair (DM!)
+					["crs"] = {
+						189652,	-- Deadwaker Ghendish
+						192020,	-- Eaglemaster Niraak
+						201537,	-- Groffnar
+						201538,	-- Huntmaster Yrgena
+						201540,	-- Lurgan <The Trampler>
+						193227,	-- Ronsak the Decimator
+						201539,	-- Stormcaller Narkena
+						192364,	-- Windscale the Stormborn
+						192045,	-- Windseeker Avash
+					},
+				}),
+				i(197383, {	-- Renewed Proto-Drake: Heavy Horns (DM!)
+					["crs"] = {
+						190991,	-- Char
+						193658,	-- Corrupted Proto-Dragon
+						187209,	-- Klozicc the Ascended
+						193668,	-- Lookout Mordren
+						193173,	-- Mikrin of the Raging Winds
+						193669,	-- Prozela Galeshot <Stormcaller Headmaster>
+						193215,	-- Scaleseeker Mezeri
+						201545,	-- Shapemaster Za'lani
+						193165,	-- Sparkspitter Vrak
+						193171,	-- Terillod the Devout
+						191354,	-- Ty'foon the Ascended
+						201556,	-- Waterpots <The Splasher>
+					},
+				}),
+				i(197379, {	-- Renewed Proto-Drake: Impaler Horns (DM!)
+					["crs"] = {
+						190986,	-- Battlehorn Pyrhus
+						197557,	-- Bisquius <The Feast Beast>
+						190985,	-- Death's Shadow
+						193234,	-- Eldoren the Reborn <Jewel of the Skies>
+						195915,	-- Firava the Rekindler
+						193853,	-- Galnmor
+						194240,	-- Gamgus
+						193126,	-- Innumerable Ruination
+						193668,	-- Lookout Mordren
+						186827,	-- Magmaton
+						193152,	-- Massive Magmashell
+						195093,	-- Moskhoi
+						192737,	-- Qalashi War Mammoth <Qalashi War Party>
+						193120,	-- Smogswog the Firebreather
+						193288,	-- Summoned Destroyer
+						186859,	-- Worldcarver A'tir
+					},
+				}),
+				i(197372, {	-- Renewed Proto-Drake: Purple Hair (DM!)
+					["crs"] = {
+						193173,	-- Mikrin of the Raging Winds
+						193669,	-- Prozela Galeshot <Stormcaller Headmaster>
+						193176,	-- Sandana the Tempest <Timesand Thief>
+						193165,	-- Sparkspitter Vrak
+						193171,	-- Terillod the Devout
+						191354,	-- Ty'foon the Ascended
+						193209,	-- Zenet Avis <The Hard Wind>
+					},
+				}),
+				i(197400, {	-- Renewed Proto-Drake: Shark Snout (DM!)
+					["crs"] = {
+						201553,	-- Grand Artificer Zeerak <The Sundered Flame>
+						197009,	-- Liskheszaera
+						201561,	-- Movtivator Krathos <The Sundered Flame>
+						201555,	-- Srivantor <The Sundered Flame>
+						193196,	-- Trilvarus Loreweaver
+					},
+				}),
+				i(197398, {	-- Renewed Proto-Drake: Snub Snout (DM!)
+					["crs"] = {
+						193135,	-- Azra's Prized Peony
+						197354,	-- Gnarls
+						201549,	-- Morlash <The Unquenchable>
+					},
+				}),
+				i(197382, {	-- Renewed Proto-Drake: White Horns (DM!)
+					["crs"] = {
+						193178,	-- Blightfur
+						193691,	-- Fisherman Tinnak <Angered Ghost>
+						193154,	-- Forgotten Gryphon
+						193256,	-- Nulltheria the Void Gazer
+						187559,	-- Shade of Grief
+					},
+				}),
+				i(197624, {	-- Windborne Velocidrake: Club Tail (DM!)
+					["crs"] = {
+						193132,	-- Amethyzar the Glittering
+						190991,	-- Char
+						193663,	-- Craggravated Elemental
+						193142,	-- Enraged Sapphire
+						201557,	-- Graniteclaw
+						193704,	-- Honmor
+						187209,	-- Klozicc the Ascended
+						201558,	-- Malgain Rockknell
+						187306,	-- Morchok <Harbinger of Twilight>
+						189289,	-- Penumbrus
+						194458,	-- Rokzul
+						201545,	-- Shapemaster Za'lani
+						193149,	-- Skag the Thrower
+						194763,	-- Tenmod
+						187886,	-- Turboris
+					},
+				}),
+				i(197602, {	-- Windborne Velocidrake: Cluster Horns (DM!)
+					["crs"] = {
+						190991,	-- Char
+						193658,	-- Corrupted Proto-Dragon
+						201557,	-- Graniteclaw
+						187209,	-- Klozicc the Ascended
+						193668,	-- Lookout Mordren
+						193173,	-- Mikrin of the Raging Winds
+						193669,	-- Prozela Galeshot <Stormcaller Headmaster>
+						193215,	-- Scaleseeker Mezeri
+						201545,	-- Shapemaster Za'lani
+						193165,	-- Sparkspitter Vrak
+						193171,	-- Terillod the Devout
+						191354,	-- Ty'foon the Ascended
+						201556,	-- Waterpots <The Splasher>
+					},
+				}),
+				i(197608, {	-- Windborne Velocidrake: Gray Horns (DM!)
+					["crs"] = {
+						193704,	-- Honmor
+						186827,	-- Magmaton
+						190244,	-- Mahg the Trampler
+						193118,	-- O'nank Shorescour
+						193235,	-- Oshigol
+						193149,	-- Skag the Thrower
+						184456,	-- Spellforged Brute
+						194763,	-- Tenmod
+					},
+				}),
+				i(197589, {	-- Windborne Velocidrake: Large Head Fin (DM!)
+					["crs"] = {
+						194392,	-- Brackle
+						193226,	-- Gorjo the Crab Shackler
+						193241,	-- Lord Epochbrgl <Time-Lost>
+						193152,	-- Massive Magmashell
+						193118,	-- O'nank Shorescour
+						193181,	-- Skewersnout <Raypier of the Deep>
+						193634,	-- Swog'ranka <Lunker>
+					},
+				}),
+				i(197586, {	-- Windborne Velocidrake: Spiked Back (DM!)
+					["crs"] = {
+						193664,	-- Ancient Protector
+						193220,	-- Broodweaver Araznae
+						187745,	-- Disoriented Watcher
+						193214,	-- Forgotten Creation
+						196165,	-- Gethdazr
+						193688,	-- Phenran
+						193188,	-- Seeker Teryk
+						201555,	-- Srivantor
+						201554,	-- Unstable Arcanogolem
+					}
+				}),
+				i(197606, {	-- Windborne Velocidrake: Swept Horns (DM!)
+					["crs"] = {
+						193173,	-- Mikrin of the Raging Winds
+						193669,	-- Prozela Galeshot <Stormcaller Headmaster>
+						193176,	-- Sandana the Tempest <Timesand Thief>
+						193165,	-- Sparkspitter Vrak
+						193171,	-- Terillod the Devout
+						191354,	-- Ty'foon the Ascended
+						193209,	-- Zenet Avis <The Hard Wind>
+					},
+				}),
 			}),
 			n(ARMOR, {
 				i(200758, {	-- Breastplate of Storied Antiquity
