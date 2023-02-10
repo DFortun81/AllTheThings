@@ -2046,6 +2046,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateAchievement(t.achID or t.achievementID, t);
 		elseif t.recipeID then
 			t = app.CreateRecipe(t.recipeID, t);
+		elseif t.factionID then
+			t = app.CreateFaction(t.factionID, t);
 		elseif t.itemID then
 			if t.isToy then
 				t = app.CreateToy(t.itemID, t);
