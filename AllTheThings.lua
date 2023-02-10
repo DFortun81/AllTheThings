@@ -13136,14 +13136,26 @@ local HeaderTypeAbbreviations = {
 -- Alternate functions to attach data into a table based on an id for a given type code
 local AlternateDataTypes = {
 	["ac"] = function(t, id)
-		local name = GetCategoryInfo(id);
-		t.name = name;
+		t.name = GetCategoryInfo(id);
 	end,
 	["crit"] = function(t, id)
 		local ach = math.floor(id);
 		local crit = math.floor(100 * (id - ach) + 0.005);
 		local name = GetAchievementCriteriaInfo(ach, crit);
 		t.name = name;
+	end,
+	["d"] = function(t, id)
+		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
+		t.name = name;
+		t.icon = textureFilename;
+	end,
+	["df"] = function(t, id)
+		local aid = math.floor(id);
+		local hid = math.floor(10000 * (id - aid) + 0.005);
+		id = app.FactionID == Enum.FlightPathFaction.Alliance and tonumber(aid) or tonumber(hid);
+		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
+		t.name = name;
+		t.icon = textureFilename;
 	end,
 };
 local cache = app.CreateCache("headerCode");
