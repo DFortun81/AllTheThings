@@ -357,6 +357,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["qg"] = 17071,	-- Technician Zhanaa
 							["sourceQuest"] = 10302,	-- Volatile Mutations
 							-- #if AFTER WOD
+							["timeline"] = { "removed 6.0.2.18833" },
 							["altQuests"] = { 37445 },	-- Spare Parts [New one that exists for no reason]
 							-- #endif
 							-- #if AFTER MOP
