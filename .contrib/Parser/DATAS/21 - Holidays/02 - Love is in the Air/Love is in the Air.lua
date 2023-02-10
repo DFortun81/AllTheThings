@@ -292,7 +292,11 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 		n(BOSSES, {
 			n(36296, {	-- Apothecary Hummel <Crown Chemical Co.>
 				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
+				-- #if AFTER 4.0.3
 				--["questID"] = 25485, -- NOTE: This is what it should be, but it's not checking off correctly.
+				-- #else
+				["questID"] = 14488,	-- You've Been Served
+				-- #endif
 				["timeline"] = { "added 3.3.0" },
 				["maps"] = {
 					SHADOWFANG_KEEP,
