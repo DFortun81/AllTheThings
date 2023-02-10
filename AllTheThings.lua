@@ -5018,8 +5018,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if entry.criteriaID and entry.achievementID then
 						local rawParent = rawget(entry, "parent");
 						if not rawParent or rawParent.achievementID ~= entry.achievementID then
-							local critAch = SearchForObject("achievementID", entry.achievementID);
-							left = left .. " > " .. critAch.text;
+							local critAch = SearchForObject("achievementID", entry.achievementID, "key");
+							left = left .. " > " .. (critAch and critAch.text or "???");
 						end
 					end
 
@@ -9101,17 +9101,13 @@ end
 local function GetParentAchievementInfo(t, key)
 	local achievement = app.SearchForObject("achievementID", t.achievementID, "key");
 	if achievement then
-		-- sourced criteria of an un-sourced achievement... tsk tsk
-		if achievement.criteriaID then
-			DelayedCallback(app.report, 1, "Missing Referenced Achievement!",t.achievementID);
-			return;
-		end
 		rawset(t, "c", achievement["c"]);
 		rawset(t, "classID", achievement["classID"]);
 		rawset(t, "races", achievement["races"]);
 		rawset(t, "r", achievement["r"]);
 		return rawget(t, key);
 	end
+	DelayedCallback(app.report, 1, "Missing Referenced Achievement!",t.achievementID);
 end
 local criteriaFields = {
 	["key"] = function(t)
@@ -17767,7 +17763,7 @@ function app:GetDataCache()
 		local cache = fieldCache[field];
 		for id,_ in pairs(cache) do
 			-- create a cloned version of the cached object, or create a new object from the Creator
-			cat = CreateObject(SearchForObject(field, id, "field") or { [field] = id }, true);
+			cat = CreateObject(SearchForObject(field, id, "key") or { [field] = id }, true);
 			cat.parent = dynamicCategory;
 			cat.dynamic_withsubgroups = keepSubGroups;
 			-- don't copy maps into dynamic headers, since when the dynamic content is cached it can be weird
