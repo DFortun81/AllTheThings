@@ -324,6 +324,34 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					i(49641, {	-- Faded Lovely Greeting Card [H]
 						["timeline"] = { "added 3.3.2.11403" },
 					}),
+					
+					-- #if ANYCLASSIC
+					i(54537, {	-- Heart-Shaped Box
+						["description"] = "This box doesn't actually exist without RDF. The loot normally contained within drop directly from the boss this year.",
+						["sym"] = {{ "select", "itemID", 50250, 49715, 50446, 50741, 50471 }},
+						["timeline"] = { "created 3.3.0" },
+					}),
+					ach(4627, {	-- X-45 Heartbreaker
+						["provider"] = { "i", 50250 },	-- X-45 Heartbreaker
+						["timeline"] = { "added 3.3.0" },
+						["filterID"] = MOUNTS,
+					}),
+					i(50250, {	-- X-45 Heartbreaker (MOUNT!)
+						["timeline"] = { "added 3.3.0" },
+					}),
+					i(49715, {	-- Forever-Lovely Rose
+						["timeline"] = { "added 3.3.0" },
+					}),
+					i(50446, {	-- Toxic Wasteling
+						["timeline"] = { "added 3.3.0" },
+					}),
+					i(50741, {	-- Vile Fumigator's Mask
+						["timeline"] = { "added 3.3.0" },
+					}),
+					i(50471, {	-- The Heartbreaker (TOY!)
+						["timeline"] = { "added 3.3.0" },
+					}),
+					-- #else
 					i(54537, {	-- Heart-Shaped Box
 						["timeline"] = { "added 3.3.0" },
 						-- Minimum level this box drops (not 100% sure)
@@ -357,6 +385,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							}),
 						},
 					}),
+					-- #endif
 					i(147907, {	-- Heart-Shaped Carton
 						["timeline"] = { "added 7.2.5.23910" },
 						["groups"] = {
