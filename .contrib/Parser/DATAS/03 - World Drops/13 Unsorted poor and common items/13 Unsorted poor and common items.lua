@@ -800,7 +800,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2787),	-- Trogg Dagger
 				i(2137),	-- Whittling Knife
 			}),
-			filter(FISHING_POLES, {	-- Fishing Poles
+			filter(PROF_EQUIP, {	-- Fishing Poles
 				i(6367),	-- Big Iron Fishing Pole
 				i(12225),	-- Blump Family Fishing Pole
 				i(6366),	-- Darkwood Fishing Pole
@@ -1095,31 +1095,31 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(4261),	-- Solliden's Trousers
 	i(3263),	-- Webbed
 	i(3261),	-- Webbed Cloak
-	
+
 	-- Dagger
 	i(3445),	-- Ceremonial Knife
 	i(3296),	-- Deadman Dagger
-	
+
 	-- Staff
 	i(4961),	-- Dreamwatcher Staff
 	i(2067),	-- Frostbit Staff
 	i(3327),	-- Vile Fin Oracle Staff
-	
+
 	-- One Handed Axes
 	i(2260),	-- Frostmane Hand Axe
 	i(2066),	-- Skull Hatchet
 	i(3071),	-- Striking Hatchet
-	
+
 	-- One Handed Sword
 	i(3455),	-- Deathstalker Shortsword
 	i(2065),	-- Rockjaw Blade
 	i(2282),	-- Rodentia Shortsword
 	i(1008),	-- Well-Used Sword
-	
+
 	-- Two Handed Axes
 	i(6206),	-- Rock Chipper
 	i(3325),	-- Vile Fin Battle Axe
-	
+
 	-- Two Handed Sword
 	i(6741),	-- Orcish War Sword
 	i(2754),	-- Tarnished Bastard Sword

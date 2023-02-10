@@ -312,7 +312,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(168119),	-- Parrying Dagger
 					i(168118),	-- Swift Dagger
 				}),
-				filter(FISHING_POLES, {
+				filter(PROF_EQUIP, {
 					i(177030),	-- Aquatic Extractor
 				}),
 				filter(GUNS, {

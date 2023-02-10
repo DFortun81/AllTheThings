@@ -143,7 +143,7 @@ namespace ATT
                 Relic = 54,
                 Consumable = 55,    // AP
                 Reagent = 56,
-                FishingPole = 57,
+                ProfessionEquipment = 57,
                 Containers = 58,
                 ClassBooks = 59,
 
@@ -193,6 +193,8 @@ namespace ATT
                     case 19: return Filters.Tabard;
                     case 22: return Filters.HeldInOffHand;
                     case 23: return Filters.HeldInOffHand;
+                    case 29: return Filters.ProfessionEquipment;
+                    case 30: return Filters.ProfessionEquipment;
                     default: break;
                 }
 
@@ -256,7 +258,7 @@ namespace ATT
                             case 17: return Filters.Polearm;            // Spear (not seeing anything in this filter, so converting to Polearm instead?)
                             case 18: return Filters.Crossbow;
                             case 19: return Filters.Wand;
-                            case 20: return Filters.FishingPole;      // Fishing Poles / Miscellaneous
+                            case 20: return Filters.ProfessionEquipment;      // Fishing Poles / Miscellaneous
                             default: return Filters.Invalid;
                         }
 
