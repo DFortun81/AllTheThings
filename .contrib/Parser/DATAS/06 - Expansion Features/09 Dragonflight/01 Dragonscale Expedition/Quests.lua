@@ -373,6 +373,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					sp(388264),	-- Magical Chests of the Dragon Isles
 				},
 			}),
+			q(72041, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 16 },	-- Dragonscale Expedition Renown 16
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198865),	-- Large Dragon Expedition Supply Pack
+				},
+			}),
 				-- RENOWN 17 --
 			q(70831, {	-- Researching in Comfort
 				["minReputation"] = { 2507, 17 },	-- Dragonscale Expedition Renown 17
@@ -397,6 +405,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
 					i(198730),	-- Dragonscale Expedition Tabard
+				},
+			}),
+			q(72044, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 19 },	-- Dragonscale Expedition Renown 19
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198865),	-- Large Dragon Expedition Supply Pack
 				},
 			}),
 				-- RENOWN 20 --
@@ -663,9 +679,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TI
 		q(72756),	-- Triggered with 'Next Steps' (66128)
 		q(72039),	-- Triggered with 'Renowned Explorer's Armor' (70819)
 		q(72040),	-- Triggered with 'Deeper Mysteries of the Dragon Isles Drakes' (70809)
-		q(72041),	-- Triggered with 'Unlocking Magical Treasures' (70814)
 		q(72042),	-- Triggered with 'Researching in Comfort' (70831)
-		q(72044),	-- Triggered with 'One of Us Now' (70832)
 		q(72045),	-- Triggered with 'Demolitions Access' (70815)
 		q(72046),	-- Triggered with 'Rumors of the Jeweled Whelplings' (70833)
 		q(72047),	-- Triggered with 'Broader Mysteries of the Dragon Isles Drakes' (70810)

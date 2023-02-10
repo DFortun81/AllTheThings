@@ -1284,7 +1284,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198657),	-- Forgotten Jewelry Box
 			i(199110),	-- Mechanical Maestro Duck
 			i(198863),	-- Small Dragon Expedition Supply Pack
-			i(198865),	-- Large Dragon Expedition Supply Pack
 			i(198867),	-- Large Iskaaran Supply Pack
 			i(198868),	-- Small Valdrakken Accord Supply Pack
 			i(198869),	-- Large Valdrakken Accord Supply Pack
