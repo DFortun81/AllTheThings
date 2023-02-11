@@ -27,7 +27,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 				i(193366, {	-- Advanced Phial Experimentation*
 					-- Move to Basic Phial Experimentation if possible discovery
 					r(370460),	-- Phial of Charged Isolation
-					r(370504),	-- Phial of Elemental Chaos
 					r(370462),	-- Phial of Glacial Fury
 					r(370463),	-- Phial of Static Empowerment
 					r(370453),	-- Phial of Still Air
@@ -73,6 +72,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 				r(370472),	-- Aerated Phial of Deftness
 				r(370476),	-- Charged Phial of Alacrity
 				r(370483),	-- Crystalline Phial of Perception
+				r(370504),	-- Phial of Elemental Chaos
 				-- Decay
 				r(370457, {	-- Iced Phial of Corrupting Rage
 					["description"] = "Requires Decayology."
