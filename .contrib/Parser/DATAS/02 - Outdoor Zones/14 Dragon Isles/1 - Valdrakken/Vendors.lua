@@ -258,14 +258,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						},
 					}),
 					i(201283, {	-- Ancient Enchanter's Research
-						-- ["questID"] = TODO,
+						["questID"] = 71917,
 						["requireSkill"] = ENCHANTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
 						},
 					}),
 					i(201284, {	-- Ancient Engineer's Scribblings
-						-- ["questID"] = TODO,
+						["questID"] = 71918,
 						["requireSkill"] = ENGINEERING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						},
 					}),
 					i(201282, {	-- Ancient Tailor's Diagrams
-						-- ["questID"] = TODO,
+						["questID"] = 71925,
 						["requireSkill"] = TAILORING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },

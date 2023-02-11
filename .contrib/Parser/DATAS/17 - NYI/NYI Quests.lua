@@ -7284,9 +7284,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(71863),	--
 				q(71865),	--
 				q(71867),	--
-				q(71917),	--
-				q(71918),	--
-				q(71925),	--
 				q(71926),	--
 				q(71927),	--
 				q(71928),	--
