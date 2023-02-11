@@ -31,14 +31,18 @@ namespace ATT
                 }
             }
 
+
             try
             {
+                Framework.InitConfigSettings();
+
                 // Prepare console output to a file.
 #if ANYCLASSIC
-                var databaseRootFolder = "../.db";
+                string databaseRootFolder = "../.db";
 #else
-                var databaseRootFolder = ".";
+                string databaseRootFolder = Framework.Config["root"] ?? ".";
 #endif
+
 
                 Directory.CreateDirectory("../Debugging");
 
@@ -123,15 +127,12 @@ namespace ATT
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }
-                //string content = "";
+
                 Framework.ProcessingSourceData = true;
-                //Trace.WriteLine("Parsing LUA files in Parallel: Start");
-                //luaFiles.AsParallel().ForAll(f => ParseLUAFile(lua, f));
                 Trace.WriteLine("Parsing LUA files...");
                 foreach (var fileName in luaFiles)
                 {
                     ParseLUAFile(lua, fileName);
-
                 }
                 Framework.ProcessingSourceData = false;
 
@@ -153,27 +154,6 @@ namespace ATT
                 }
                 while (true);
                 lua.Close();
-
-                // If Debug Mode, then check if additional data should be captured for Debugging
-                if (Framework.DebugMode)
-                {
-                    string debugDBKeys = null;
-                    try
-                    {
-                        debugDBKeys = File.ReadAllText("debugDBs");
-                    }
-                    catch { }
-
-                    if (!string.IsNullOrWhiteSpace(debugDBKeys))
-                    {
-                        string[] dbKeys = debugDBKeys.Split(new char[] { '\n', '\r', ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-                        foreach (string dbKey in dbKeys)
-                        {
-                            Framework.DebugDBs.Add(dbKey, new SortedDictionary<decimal, List<Dictionary<string, object>>>());
-                        }
-                    }
-                }
 
                 // Now that all of the data and items have been loaded into the Database, let's Process it!
                 Framework.Process();
@@ -199,7 +179,7 @@ namespace ATT
                     }
 
                     if (dupeIDs.Length > 0)
-                        Trace.Write($"Duplicate {key} Usage: " + dupeIDs.ToString());
+                        Trace.WriteLine($"Duplicate {key} Usage: " + dupeIDs.ToString());
                 }
 
                 // Update the .TOC with the Parser Run Date
@@ -213,6 +193,7 @@ namespace ATT
             catch (Exception e)
             {
                 Trace.WriteLine(e);
+                Console.ReadLine();
             }
         }
 

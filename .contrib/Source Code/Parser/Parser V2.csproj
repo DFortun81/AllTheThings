@@ -123,6 +123,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomConfiguration.cs" />
     <Compile Include="Framework\Framework.Objects.cs" />
     <Compile Include="Framework\Framework.Items.cs" />
     <Compile Include="Framework\Framework.cs" />
