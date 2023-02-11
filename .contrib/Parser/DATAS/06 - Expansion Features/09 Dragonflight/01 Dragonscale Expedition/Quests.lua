@@ -721,3 +721,12 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TI
 		q(70570),	-- triggered when speaking with Watcher Koranos during 'Speak with Koranos' (66673)
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+	n(DRAGONSCALE_EXPEDITION, {
+		q(73696),	-- Flag at 24.4, 55.6, THE_FORBIDDEN_REACH
+		q(73699),	-- Flag at 55.3, 26.4, THE_FORBIDDEN_REACH
+		q(73702),	-- Flag at 80.5, 48.1, THE_FORBIDDEN_REACH
+		q(73700),	-- Flag at 34.8, 30.2, THE_FORBIDDEN_REACH
+	}),
+})));
