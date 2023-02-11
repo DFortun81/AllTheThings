@@ -46,7 +46,7 @@ namespace ATT
             ObjectData.Create("classID",            "cl",           "_.CreateCharacterClass", "f");
             ObjectData.Create("criteriaID",         "crit",         "_.CreateAchievementCriteria", "f");
             ObjectData.Create("difficultyID",       "d",            "_.CreateDifficulty", "f");
-            ObjectData.Create<EncounterData>("encounterID", "e",    "_.CreateEncounter", "f");
+            ObjectData.Create("encounterID",        "e",            "_.CreateEncounter", "f");
             ObjectData.Create("explorationID",      "exp",          "_.CreateExploration", "f");
             ObjectData.Create("flightPathID",       "fp",           "_.CreateFlightPath", "f");
             ObjectData.Create<NPCData>("npcID",     "n",            "_.CreateNPC", "f");

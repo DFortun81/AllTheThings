@@ -551,15 +551,7 @@ namespace ATT
                 modID = Convert.ToInt64(objModID);
             }
 
-            // Clean up Encounters which only have a single creatureID assigned via 'crs'
-            if (data.ContainsKey("encounterID") && !data.ContainsKey("creatureID") && data.TryGetValue("crs", out List<object> crs))
-            {
-                if (crs.Count == 1)
-                {
-                    data["creatureID"] = Convert.ToInt64(crs[0]);
-                    data.Remove("crs");
-                }
-            }
+            Validate_Encounter(data);
 
             if (data.TryGetValue("categoryID", out long categoryID)) ProcessCategoryObject(data, categoryID);
             if (data.TryGetValue("creatureID", out long creatureID))
@@ -680,10 +672,6 @@ namespace ATT
             if (data.TryGetValue("s", out f))
             {
                 if (f < 1 || CURRENT_RELEASE_VERSION < ADDED_TRANSMOG_VERSION) data.Remove("s");
-            }
-            if (data.TryGetValue("encounterID", out f))
-            {
-                data["_encounterHash"] = f + NestedDifficultyID / 100M;
             }
 
             minLevel = LevelConsolidation(data, minLevel);
@@ -891,6 +879,38 @@ namespace ATT
             return true;
         }
 
+        private static void Validate_Encounter(Dictionary<string, object> data)
+        {
+            if (data.TryGetValue("encounterID", out long encounterID))
+            {
+                // Hash the Encounter for MergeIntos if needed
+                data["_encounterHash"] = encounterID + NestedDifficultyID / 100M;
+
+                // Clean up Encounters which only have a single creatureID assigned via 'crs'
+                if (!data.ContainsKey("creatureID") && data.TryGetValue("crs", out List<object> crs) && crs.Count == 1 && crs[0].TryConvert(out long creatureID))
+                {
+                    data["creatureID"] = creatureID;
+                    data.Remove("crs");
+                }
+
+                // Warn about Encounters with no NPCID assignment
+                if (!data.ContainsKey("creatureID") && !data.ContainsKey("crs"))
+                {
+                    switch (encounterID)
+                    {
+                        // weird encounters that are one encounter but drops are organized by NPCs in the encounter
+                        case 1547:  // Silithid Royalty (AQ40)
+                        case 1549:  // Twin Emperors (AQ40)
+                        case 1552:  // Servant's Quarters (Kara)
+                            break;
+                        default:
+                            LogError($"Encounter {encounterID} is missing an NPC assignment! (Could lead to unassigned Achievement data)");
+                            break;
+                    }
+                }
+            }
+        }
+
         private static void Validate_Criteria(Dictionary<string, object> data)
         {
             if (!data.TryGetValue("criteriaID", out long criteriaID))
@@ -927,7 +947,7 @@ namespace ATT
             {
                 if (data.TryGetValue("_quests", out object quests))
                 {
-                    LogDebug($"INFO: Remove _quests from Criteria {achID}:{criteriaID}. AchievementDB contains sourceQuest: {questID}");
+                    LogDebug($"INFO: Remove _quests {ToJSON(quests)} from Criteria {achID}:{criteriaID}. AchievementDB contains sourceQuest: {questID}");
                 }
                 else
                 {
@@ -943,7 +963,7 @@ namespace ATT
             //{
             //    var type = objectList[0] as string;
             //    objectList[1].TryConvert(out long id);
-            //    if (id > 0)
+            //    if (id > 0 && NPCS_WITH_REFERENCES[id])
             //    {
             //        if (type == "n")
             //        {
@@ -955,6 +975,7 @@ namespace ATT
             //            {
             //                LogDebug($"INFO: Added _npcs to Criteria {achID}:{criteriaID} with NPCID: {id}");
             //            }
+
             //            data["_npcs"] = new List<long> { id };
             //        }
             //    }
@@ -963,7 +984,6 @@ namespace ATT
 
         private static void Validate_Quest(Dictionary<string, object> data)
         {
-
             // Mark the quest as referenced
             if (data.TryGetValue("questID", out long questID))
             {

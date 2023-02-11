@@ -48,7 +48,6 @@
     <Compile Include="Export\Export %28Structures%29.cs" />
     <Compile Include="Export\Export %28Compressed Lua%29.cs" />
     <Compile Include="Export\Export.cs" />
-    <Compile Include="Export\Object Data\EncounterData.cs" />
     <Compile Include="Export\Object Data\HeirloomData.cs" />
     <Compile Include="Export\Object Data\ItemData.cs" />
     <Compile Include="Export\Object Data\ItemSourceData.cs" />
