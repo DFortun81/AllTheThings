@@ -466,6 +466,7 @@ faction(1920),	-- Moon Guard
 faction(1947),	-- Illidari
 faction(1953),	-- Nightmare
 faction(1962),	-- Nightborne Civilian
+faction(1975),	-- Conjurer Margoss
 faction(1984),	-- The First Responders
 faction(1989),	-- Moon Guard
 faction(2010),	-- Brawl'gar Arena (Season 3) \\ Brawl'gar Arena
@@ -480,6 +481,12 @@ faction(2088),	-- Dreamweavers (Paragon)
 faction(2089),	-- The Nightfallen (Paragon)
 faction(2090),	-- The Wardens (Paragon)
 faction(2091),	-- Armies of Legionfall (Paragon)
+faction(2097),	-- Ilyssia of the Waters
+faction(2098),	-- Keeper Raynae
+faction(2099),	-- Akule Riverhorn
+faction(2100),	-- Corbyn
+faction(2101),	-- Sha'leth
+faction(2102),	-- Impus
 faction(2135),	-- Chromie
 7.3.0.24608
 faction(2166),	-- Army of the Light (Paragon)

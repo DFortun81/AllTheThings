@@ -969,24 +969,24 @@ ach(17257),	-- Southern Reach Route Advanced: Gold
 ach(17258),	-- Southern Reach Route Reverse: Bronze
 ach(17259),	-- Southern Reach Route Reverse: Silver
 ach(17260),	-- Southern Reach Route Reverse: Gold
-ach(17261),	-- Caldera Coaster: Bronze
-ach(17262),	-- Caldera Coaster: Silver
-ach(17263),	-- Caldera Coaster: Gold
-ach(17264),	-- Caldera Coaster Advanced: Bronze
-ach(17265),	-- Caldera Coaster Advanced: Silver
-ach(17266),	-- Caldera Coaster Advanced: Gold
-ach(17267),	-- Caldera Coaster Reverse: Bronze
-ach(17268),	-- Caldera Coaster Reverse: Silver
-ach(17269),	-- Caldera Coaster Reverse: Gold
-ach(17270),	-- Forbidden Reach Ramble: Bronze
-ach(17271),	-- Forbidden Reach Ramble: Silver
-ach(17272),	-- Forbidden Reach Ramble: Gold
-ach(17273),	-- Forbidden Reach Ramble Advanced: Bronze
-ach(17274),	-- Forbidden Reach Ramble Advanced: Silver
-ach(17275),	-- Forbidden Reach Ramble Advanced: Gold
-ach(17276),	-- Forbidden Reach Ramble Reverse: Bronze
-ach(17277),	-- Forbidden Reach Ramble Reverse: Silver
-ach(17278),	-- Forbidden Reach Ramble Reverse: Gold
+ach(17261),	-- Caldera Climb: Bronze \\ Caldera Coaster: Bronze
+ach(17262),	-- Caldera Climb: Silver \\ Caldera Coaster: Silver
+ach(17263),	-- Caldera Climb: Gold \\ Caldera Coaster: Gold
+ach(17264),	-- Caldera Climb Advanced: Bronze \\ Caldera Coaster Advanced: Bronze
+ach(17265),	-- Caldera Climb Advanced: Silver \\ Caldera Coaster Advanced: Silver
+ach(17266),	-- Caldera Climb Advanced: Gold \\ Caldera Coaster Advanced: Gold
+ach(17267),	-- Caldera Climb Reverse: Bronze \\ Caldera Coaster Reverse: Bronze
+ach(17268),	-- Caldera Climb Reverse: Silver \\ Caldera Coaster Reverse: Silver
+ach(17269),	-- Caldera Climb Reverse: Gold \\ Caldera Coaster Reverse: Gold
+ach(17270),	-- Forbidden Reach Rush: Bronze \\ Forbidden Reach Ramble: Bronze
+ach(17271),	-- Forbidden Reach Rush: Silver \\ Forbidden Reach Ramble: Silver
+ach(17272),	-- Forbidden Reach Rush: Gold \\ Forbidden Reach Ramble: Gold
+ach(17273),	-- Forbidden Reach Rush Advanced: Bronze \\ Forbidden Reach Ramble Advanced: Bronze
+ach(17274),	-- Forbidden Reach Rush Advanced: Silver \\ Forbidden Reach Ramble Advanced: Silver
+ach(17275),	-- Forbidden Reach Rush Advanced: Gold \\ Forbidden Reach Ramble Advanced: Gold
+ach(17276),	-- Forbidden Reach Rush Reverse: Bronze \\ Forbidden Reach Ramble Reverse: Bronze
+ach(17277),	-- Forbidden Reach Rush Reverse: Silver \\ Forbidden Reach Ramble Reverse: Silver
+ach(17278),	-- Forbidden Reach Rush Reverse: Gold \\ Forbidden Reach Ramble Reverse: Gold
 ach(17279),	-- Forbidden Reach: Bronze
 ach(17280),	-- Forbidden Reach: Silver
 ach(17281),	-- Forbidden Reach: Gold
@@ -1028,3 +1028,25 @@ ach(17413),	-- Door Buster
 ach(17422),	-- <DNT> Artisan's Consortium Reputation is Preferred (Rank 1)
 ach(17423),	-- <DNT> Artisan's Consortium Reputation is Respected (Rank 2)
 ach(17424),	-- <DNT> Artisan's Consortium Reputation is Valued (Rank 3)
+10.0.7.47983
+ach(17427),	-- Winterpelt Conversationalist
+ach(17428),	-- <Hidden> Winterpelt Language - Send Mailer from Sonova
+ach(17495),	-- <Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
+ach(17496),	-- Renowned Weaponsmith
+ach(17497),	-- Renowned Armorsmith
+ach(17498),	-- Renowned Dragonscale Leatherworker
+ach(17499),	-- Renowned Elemental Leatherworker
+ach(17500),	-- Renowned Tribal Leatherworker
+ach(17501),	-- Renowned Mooncloth Tailor
+ach(17502),	-- Renowned Spellfire Tailor
+ach(17503),	-- Renowned Shadoweave Tailor
+ach(17509),	-- Every Door, Everywhere, All At Once
+ach(17524),	-- Adventurer of the Forbidden Reach
+ach(17525),	-- Champion of the Forbidden Reach
+ach(17526),	-- Treasures of the Forbidden Reach
+ach(17527),	-- Scavenger of the Forbidden Reach
+ach(17528),	-- Hoarder of the Forbidden Reach
+ach(17529),	-- Forbidden Spoils
+ach(17530),	-- Librarian of the Reach
+ach(17531),	-- X Marks the Spot
+ach(17532),	-- Scroll Hunter

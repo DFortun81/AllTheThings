@@ -11439,3 +11439,43 @@
 17422@@@<DNT> Artisan's Consortium Reputation is Preferred (Rank 1)
 17423@@@<DNT> Artisan's Consortium Reputation is Respected (Rank 2)
 17424@@@<DNT> Artisan's Consortium Reputation is Valued (Rank 3)
+10.0.7.47983
+17261@@@Caldera Climb: Bronze
+17262@@@Caldera Climb: Silver
+17263@@@Caldera Climb: Gold
+17264@@@Caldera Climb Advanced: Bronze
+17265@@@Caldera Climb Advanced: Silver
+17266@@@Caldera Climb Advanced: Gold
+17267@@@Caldera Climb Reverse: Bronze
+17268@@@Caldera Climb Reverse: Silver
+17269@@@Caldera Climb Reverse: Gold
+17270@@@Forbidden Reach Rush: Bronze
+17271@@@Forbidden Reach Rush: Silver
+17272@@@Forbidden Reach Rush: Gold
+17273@@@Forbidden Reach Rush Advanced: Bronze
+17274@@@Forbidden Reach Rush Advanced: Silver
+17275@@@Forbidden Reach Rush Advanced: Gold
+17276@@@Forbidden Reach Rush Reverse: Bronze
+17277@@@Forbidden Reach Rush Reverse: Silver
+17278@@@Forbidden Reach Rush Reverse: Gold
+17427@@@Winterpelt Conversationalist
+17428@@@<Hidden> Winterpelt Language - Send Mailer from Sonova
+17495@@@<Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
+17496@@@Renowned Weaponsmith
+17497@@@Renowned Armorsmith
+17498@@@Renowned Dragonscale Leatherworker
+17499@@@Renowned Elemental Leatherworker
+17500@@@Renowned Tribal Leatherworker
+17501@@@Renowned Mooncloth Tailor
+17502@@@Renowned Spellfire Tailor
+17503@@@Renowned Shadoweave Tailor
+17509@@@Every Door, Everywhere, All At Once
+17524@@@Adventurer of the Forbidden Reach
+17525@@@Champion of the Forbidden Reach
+17526@@@Treasures of the Forbidden Reach
+17527@@@Scavenger of the Forbidden Reach
+17528@@@Hoarder of the Forbidden Reach
+17529@@@Forbidden Spoils
+17530@@@Librarian of the Reach
+17531@@@X Marks the Spot
+17532@@@Scroll Hunter

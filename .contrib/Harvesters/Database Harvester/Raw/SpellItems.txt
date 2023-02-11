@@ -11086,3 +11086,35 @@
 6783@@@You recieve new mail every day.
 6784@@@Damaging effects from your Primordial Stones trigger your healing effects, and vice versa.
 6786@@@Primal Storm
+10.0.7.47983
+6722@@@|C0040C040Wind Sculpted Stone
+6755@@@|C0040C040Storm Infused Stone
+6756@@@|C0040C040Echoing Thunder Stone
+6757@@@|C00FF5100Flame-Licked Stone
+6758@@@|C00FF5100Raging Magma Stone
+6759@@@|C00FF5100Searing Smokey Stone
+6760@@@|C00FF5100Entropic Fel Stone
+6761@@@|C00FFAB00Indomitable Earth Stone
+6762@@@|C00FFAB00Shining Obsidian Stone
+6763@@@
+6764@@@|C00FFAB00Gleaming Iron Stone
+6765@@@|C0000D1FFDeluging Water Stone
+6766@@@|C0000D1FFFreezing Ice Stone
+6767@@@|C0000D1FFCold Frost Stone
+6768@@@|C0000D1FFExuding Steam Stone
+6769@@@|C00C942FDSparkling Mana Stone
+6770@@@|C00B84EFFSwirling Mojo Stone
+6771@@@
+6772@@@
+6773@@@|C00C942FDHumming Arcane Stone
+6774@@@|C00C942FDHarmonic Music Stone
+6775@@@|C0040C040Wild Spirit Stone
+6776@@@|C00CC0000Necromantic Death Stone
+6777@@@|C0040C040Pestilent Plague Stone
+6778@@@
+6779@@@
+6780@@@|C00C942FDObscure Pastel Stone
+6781@@@
+6782@@@|C00CC0000Desirous Blood Stone
+6783@@@
+6784@@@|C00B84EFFProphetic Twilight Stone

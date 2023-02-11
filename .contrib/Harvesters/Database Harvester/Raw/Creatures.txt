@@ -19427,3 +19427,9 @@
 202725@@@Paper Zepplin
 202752@@@Emberthal
 202837@@@[DNT] Kill Credit
+10.0.7.47983
+202409@@@[DND] Kill Credit - Caldera Climb
+202410@@@[DND] Kill Credit - Forbidden Reach Rush
+202985@@@[DNT] Kill Credit
+202986@@@[DNT] Kill Credit
+202987@@@[DNT] Kill Credit

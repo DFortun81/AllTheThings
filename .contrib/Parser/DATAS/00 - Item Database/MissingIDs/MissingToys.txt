@@ -16,6 +16,8 @@ i(204220),	-- Hraxian's Unbreakable Will
 i(204256),	-- Holoviewer: The Scarlet Queen
 i(204257),	-- Holoviewer: The Lady of Dreams
 i(204262),	-- Holoviewer: The Timeless One
+10.0.7.47983
+i(203852),	-- Spore-Bound Essence \\ Vial of Spore-Bound Essence
 
 
 
@@ -40,3 +42,5 @@ i(204220),	-- Hraxian's Unbreakable Will
 i(204256),	-- Holoviewer: The Scarlet Queen
 i(204257),	-- Holoviewer: The Lady of Dreams
 i(204262),	-- Holoviewer: The Timeless One
+10.0.7.47983
+i(203852),	-- Spore-Bound Essence \\ Vial of Spore-Bound Essence

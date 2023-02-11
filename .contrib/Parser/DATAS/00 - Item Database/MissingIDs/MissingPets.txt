@@ -642,6 +642,8 @@ p(3471),	-- Gilded Mechafrog
 p(3472),	-- Lil' Algalon
 p(3473),	-- Cozmos
 p(3474),	-- Celastro
+10.0.7.47983
+p(3476),	-- Gilded Mechafrog
 
 
 
@@ -1934,3 +1936,5 @@ p(3471),	-- Gilded Mechafrog
 p(3472),	-- Lil' Algalon
 p(3473),	-- Cozmos
 p(3474),	-- Celastro
+10.0.7.47983
+p(3476),	-- Gilded Mechafrog
