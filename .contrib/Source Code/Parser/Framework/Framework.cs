@@ -20,6 +20,11 @@ namespace ATT
         public static bool DebugMode = false;
 
         /// <summary>
+        /// The CustomConfiguration for the Parser
+        /// </summary>
+        internal static CustomConfiguration Config { get; set; } = new CustomConfiguration("parser.config");
+
+        /// <summary>
         /// The very first Phase ID as indicated in _main.lua.
         /// </summary>
         public static readonly Dictionary<string, int> FIRST_EXPANSION_PHASE = new Dictionary<string, int>
@@ -100,7 +105,7 @@ namespace ATT
             { "DF", new int[] { 10, 0, 5, 48001 } },
         };
 
-        public static readonly string CURRENT_RELEASE_PHASE_NAME =
+        public static string CURRENT_RELEASE_PHASE_NAME =
 #if DF
                 "DF"
 #elif SHADOWLANDS
@@ -248,7 +253,7 @@ namespace ATT
         /// <summary>
         /// Represents fields which can be consolidated upwards in heirarchy if all children groups have the same value for the field
         /// </summary>
-        private static readonly string[] HeirarchicalConsolidationFields = new string[]
+        private static string[] HeirarchicalConsolidationFields = new string[]
         {
             "sourceIgnored",
         };
@@ -308,6 +313,36 @@ namespace ATT
         /// the Item is Sourced elsewhere for the specific ATT Build
         /// </summary>
         internal static List<Dictionary<string, object>> ConditionalItemData { get; } = new List<Dictionary<string, object>>();
+
+        /// <summary>
+        /// Allows the optional Parser Config file to overwrite some built-in values for non-compile required manipulation of the Parser
+        /// </summary>
+        public static void InitConfigSettings()
+        {
+            CURRENT_RELEASE_PHASE_NAME = Config["CURRENT_RELEASE_PHASE_NAME"] ?? CURRENT_RELEASE_PHASE_NAME;
+            var configPatch = Config["LAST_EXPANSION_PATCH"];
+            if (configPatch != null)
+            {
+                LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME] = configPatch;
+            }
+            var configUseCounts = Config["TrackUseCounts"];
+            if (configUseCounts != null)
+            {
+                foreach (string type in (string[])configUseCounts)
+                {
+                    TypeUseCounts[type] = new Dictionary<decimal, int>();
+                }
+            }
+            HeirarchicalConsolidationFields = Config["HeirarchicalConsolidationFields"] ?? HeirarchicalConsolidationFields;
+            var configDebugDBs = Config["DebugDB"];
+            if (configDebugDBs != null)
+            {
+                foreach (string key in (string[])configDebugDBs)
+                {
+                    DebugDBs[key] = new SortedDictionary<decimal, List<Dictionary<string, object>>>();
+                }
+            }
+        }
 
         /// <summary>
         /// Merge the data into the database.
