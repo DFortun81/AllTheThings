@@ -1365,7 +1365,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 
 		-- New Stuff?
-		i(201724),	-- Dracthyr Token of Cavalry Excellence
 		i(194421),	-- Teera's Bow
 		i(194423),	-- Maruuk's Spear
 		i(198672),	-- Decryption Key

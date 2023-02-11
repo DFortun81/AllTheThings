@@ -134,6 +134,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 						i(201702),	-- Crimson Vorquin (MOUINT!)
 						i(201719),	-- Obsidian Vorquin (MOUINT!)
 						i(201704),	-- Sapphire Vorquin (MOUINT!)
+						i(201724),	-- Dracthyr Token of Cavalry Excellence
 					},
 				}),
 				q(65045, {	-- Stormsunder Crater
