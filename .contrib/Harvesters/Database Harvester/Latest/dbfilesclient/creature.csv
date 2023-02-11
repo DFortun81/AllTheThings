@@ -18349,7 +18349,7 @@ ID,Name_lang,NameAlt_lang,Title_lang,TitleAlt_lang,Classification,CreatureType,C
 200206,"Jyrra ""Fuzzy Feet"" Coldsoar",,,,0,7,0,0,101446,0,0,0,1,1,1,1,0,0,0
 200207,Glohza Brightfur,,,,0,7,0,0,106893,0,0,0,1,1,1,1,0,0,0
 200252,Flying Squirrel,,,,6,8,0,0,100353,0,0,0,1,1,1,1,0,0,0
-200259,Driftling,,,,0,12,0,0,103241,0,0,0,1,1,1,1,0,0,0
+200259,Driftling,,,,0,12,0,0,111824,0,0,0,1,1,1,1,0,0,0
 200272,Awakening Tarasek,,,,0,2,0,0,109404,0,0,0,1,1,1,1,0,0,0
 200284,Drakonid Crechebound,,,,0,2,0,0,105787,105788,0,0,1,1,1,1,192514,0,0
 200303,Spellsworn Crechebound,,T1 Melee (1.5/1),,0,2,0,0,105787,106358,105788,106359,1,1,1,1,192514,0,0
@@ -18418,8 +18418,8 @@ ID,Name_lang,NameAlt_lang,Title_lang,TitleAlt_lang,Classification,CreatureType,C
 202406,[DND] Kill Credit - Morqut Ascent,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 202407,[DND] Kill Credit - Aerie Chasm Cruise,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 202408,[DND] Kill Credit - Southern Reach Route,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
-202409,[DND] Kill Credit - Caldera Coaster,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
-202410,[DND] Kill Credit - Forbidden Reach Ramble,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
+202409,[DND] Kill Credit - Caldera Climb,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
+202410,[DND] Kill Credit - Forbidden Reach Rush,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 202440,Enok the Stinky,,,,0,14,0,0,111660,0,0,0,1,1,1,1,0,0,0
 202452,Malfunctioning Matrix,,,,0,14,0,2,111662,0,0,0,1,1,1,1,0,0,0
 202459,Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
@@ -18452,3 +18452,6 @@ ID,Name_lang,NameAlt_lang,Title_lang,TitleAlt_lang,Classification,CreatureType,C
 202725,Paper Zepplin,,,,0,10,0,3,79541,0,0,0,1,1,1,1,0,0,0
 202752,Emberthal,,,,1,7,0,0,102031,0,0,0,1,1,1,1,0,0,0
 202837,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
+202985,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
+202986,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
+202987,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
