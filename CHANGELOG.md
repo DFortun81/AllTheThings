@@ -21,4 +21,5 @@
 - Added/fixed Warlords of Draenor readded profession items.
 - Continued clean up of Achievements (Exploration category/Dragonflight Raids specifically).
 - Clarifications to readded Classic recipes.
+- Updated French translation by Machou :fr:
 - Other fixes.
