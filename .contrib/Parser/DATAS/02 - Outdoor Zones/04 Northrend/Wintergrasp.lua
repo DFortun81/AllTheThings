@@ -684,7 +684,6 @@ root(ROOTS.Zones, {
 						}),
 						n(30488, {	-- Travis Day <Legacy Weaponsmith>
 							["coord"] = { 51.0, 17.4, WINTERGRASP },
-							["timeline"] = { "removed 4.0.1" },	-- NOTE: Not sure what patch he was removed
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = TRAVIS_DAY_GROUPS,
 						}),

@@ -290,7 +290,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["races"] = HORDE_ONLY,
 				}),
 			})),
-			cl(WARRIOR, sharedData({ ["classes"] = { WARLOCK } }, {
+			cl(WARRIOR, sharedData({ ["classes"] = { WARRIOR } }, {
 				q(58914, {	-- A Warrior's End [A]
 					["sourceQuests"] = { 55194 },	-- Stocking Up on Supplies
 					["provider"] = { "n", 156801 },	-- Private Cole
