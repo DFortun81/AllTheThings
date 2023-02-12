@@ -45,8 +45,8 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, sformat
-	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, string.format;
+local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, sformat, strsplit
+	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, string.format, strsplit;
 local ATTAccountWideData;
 local ALLIANCE_ONLY = {
 	1,	-- Human
@@ -25111,14 +25111,14 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 end
 
 -- Vignette Functionality Scope
-(function()
-app.CurrentVignettes = {
+do
+local CurrentVignettes = {
 	["npcID"] = {},
 	["objectID"] = {},
 };
+app.CurrentVignettes = CurrentVignettes;
 local C_VignetteInfo_GetVignetteInfo = C_VignetteInfo.GetVignetteInfo;
 local C_VignetteInfo_GetVignettes = C_VignetteInfo.GetVignettes;
-local tonumber, strsplit, ipairs, wipe = tonumber, strsplit, ipairs, wipe;
 
 local function DelVignette(vignetteGUID)
 	local vignetteInfo = C_VignetteInfo_GetVignetteInfo(vignetteGUID);
@@ -25128,7 +25128,7 @@ local function DelVignette(vignetteGUID)
 		if id then
 			local searchType = type == "Creature" and "npcID" or "objectID";
 			-- app.PrintDebug("Hidden Vignette",searchType,id)
-			app.CurrentVignettes[searchType][id] = nil;
+			CurrentVignettes[searchType][id] = nil;
 		end
 	end
 end
@@ -25142,18 +25142,17 @@ local function AddVignette(vignetteGUID)
 			local searchType = type == "Creature" and "npcID" or "objectID";
 			if vignetteInfo.isDead then
 				-- app.PrintDebug("Dead Vignette",searchType,id)
-				app.CurrentVignettes[searchType][id] = nil;
+				CurrentVignettes[searchType][id] = nil;
 			else
 				-- app.PrintDebug("Visible Vignette",searchType,id)
 				-- app.PrintTable(vignetteInfo)
-				app.CurrentVignettes[searchType][id] = true;
+				CurrentVignettes[searchType][id] = true;
 				-- potentially can add groups into another window?
-				local vignetteGroup = app.SearchForObject(searchType, id, "field");
-				if vignetteGroup then
-					-- app.PrintDebug("Found Vignette Group")
-					-- force the related vignette group to be visible (this currently would only affect the Main list...)
-					vignetteGroup.visible = true;
-				end
+				-- local vignetteGroup = app.SearchForObject(searchType, id, "field");
+				-- if vignetteGroup then
+				-- 	app.PrintDebug("Found Vignette Group",vignetteGroup.hash)
+				-- 	app.DirectGroupUpdate(vignetteGroup);
+				-- end
 			end
 		end
 	end
@@ -25164,12 +25163,11 @@ app.events.VIGNETTE_MINIMAP_UPDATED = function(vignetteGUID, onMinimap)
 	else
 		DelVignette(vignetteGUID);
 	end
-	-- app.UpdateWindows(); -- maybe just a refresh?
 end
 app.events.VIGNETTES_UPDATED = function()
 	-- clear current vignettes as they will now be re-populated
-	wipe(app.CurrentVignettes["objectID"]);
-	wipe(app.CurrentVignettes["npcID"]);
+	wipe(CurrentVignettes["objectID"]);
+	wipe(CurrentVignettes["npcID"]);
 	local vignettes = C_VignetteInfo_GetVignettes();
 	if vignettes then
 		for _,vignetteGUID in ipairs(vignettes) do
@@ -25177,4 +25175,4 @@ app.events.VIGNETTES_UPDATED = function()
 		end
 	end
 end
-end)();
+end	-- Vignette Functionality Scope
