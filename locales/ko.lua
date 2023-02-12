@@ -865,7 +865,6 @@ for key,value in pairs({
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
-		--TODO: [-1150]	= "Winterpelt Furbolg",						-- Winterpelt Furbolg
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
