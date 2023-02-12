@@ -22,9 +22,9 @@ license-output: LICENSE.txt
 
 tools-used:
 
-manual-changelog:
- filename: CHANGELOG.md
- markup-type: markdown
+#manual-changelog:
+# filename: CHANGELOG.md
+# markup-type: markdown
 
 plain-copy:
   - assets/*
