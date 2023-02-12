@@ -32,10 +32,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 					r(370453),	-- Phial of Still Air
 					r(370438),	-- Phial of the Eye in the Storm
 					r(370473),	-- Steaming Phial of Finesse
-					-- Decay
-					r(370456, {	-- Phial of Icy Preservation
-						["description"] = "Requires Decayology."
-					}),
 				}),
 			},
 		}),
@@ -75,6 +71,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 				r(370504),	-- Phial of Elemental Chaos
 				-- Decay
 				r(370457, {	-- Iced Phial of Corrupting Rage
+					["description"] = "Requires Decayology."
+				}),
+				r(370456, {	-- Phial of Icy Preservation
 					["description"] = "Requires Decayology."
 				}),
 			}),
