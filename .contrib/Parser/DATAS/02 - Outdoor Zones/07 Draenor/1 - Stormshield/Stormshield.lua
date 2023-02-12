@@ -4316,7 +4316,7 @@ _.Zones =
 							["coord"] = { 49.0, 48.7, STORMSHIELD },
 							["g"] = appendGroups(COMMON_DRAENOR_BLACKSMITHING_RECIPES, {DRAENOR_BLACKSMITHING}),
 						}),
-						n(87065, {	-- Sean Catchpole
+						n(87065, {	-- Sean Catchpole <Engineering Plans>
 							["coord"] = { 47.9, 39.9, STORMSHIELD },
 							["g"] = {
 								i(111921, {	-- Draenor Engineering
@@ -4346,15 +4346,94 @@ _.Zones =
 										i(128327),	-- Small Pouch of Coins
 									},
 								}),
-								i(120267, {	-- Schematic: Blackrock Rifling
-									["u"] = REMOVED_FROM_GAME,	-- Deprecated and removed in 6.2.0
+								i(118490, {	-- Schematic: Blingtron 5000
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
-								i(122546, {	-- Schematic: Oglethorpe's Octagonal Lenses
-									["u"] = REMOVED_FROM_GAME,	-- Deprecated and removed in 6.2.0
+								i(118497, {	-- Schematic: Cybergenetic Mechshades
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
-								i(122554, {	-- Schematic: Precision Scope Tuning Kit
-									["u"] = REMOVED_FROM_GAME,	-- Deprecated and removed in 6.2.0
+								i(118493, {	-- Schematic: Didi's Delicate Assembly
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 								}),
+								i(118480, {	-- Schematic: Findle's Loot-a-Rang
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(118495, {	-- Schematic: Hemet's Heartseeker
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(202228, {	-- Schematic: Impressive Linkgrease Locksprocket
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
+								i(202230, {	-- Schematic: Impressive True Iron Trigger
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
+								i(118485, {	-- Schematic: Lifelike Mechanical Frostboar
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(118491, {	-- Schematic: Linkgrease Locksprocket
+									["collectible"] = false,
+									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { REMOVED_DF_0_5 },
+								}),
+								i(118484, {	-- Schematic: Mechanical Axebeak
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(119177, {	-- Schematic: Mechanical Scorpid
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(118478, {	-- Schematic: Megawatt Filament
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(118498, {	-- Schematic: Night-Vision Mechshades
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(118477, {	-- Schematic: Oglethorpe's Missle Splitter
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(118487, {	-- Schematic: Personal Hologram
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(118499, {	-- Schematic: Plasma Mechshades
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(118500, {	-- Schematic: Razorguard Mechshades
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(202229, {	-- Schematic: Remarkable Linkgrease Locksprocket
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
+								i(202231, {	-- Schematic: Remarkable True Iron Trigger
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
+								i(118476, {	-- Schematic: Shrediron's Shredder
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(118489, {	-- Schematic: Swapblaster
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(120268, {	-- Schematic: True Iron Trigger
+									["collectible"] = false,
+									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+									["timeline"] = { REMOVED_DF_0_5 },
+								}),
+								i(118481, {	-- Schematic: World Shrinker
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(118488, {	-- Schematic: Wormhole Centrifuge
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								i(128327, {	-- Small Pouch of Coins
+									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+								}),
+								un(REMOVED_FROM_GAME, i(120267)),	-- Schematic: Blackrock Rifling	-- Deprecated and removed in 6.2.0
+								un(REMOVED_FROM_GAME, i(122546)),	-- Schematic: Oglethorpe's Octagonal Lenses	-- Deprecated and removed in 6.2.0
+								un(REMOVED_FROM_GAME, i(122554)),	-- Schematic: Precision Scope Tuning Kit	-- Deprecated and removed in 6.2.0
 							},
 						}),
 						n(85946, {	-- Shadow Sage Brakoss <Arakkoa Outcasts Quartermaster>
