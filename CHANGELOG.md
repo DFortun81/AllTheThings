@@ -1,29 +1,24 @@
 # AllTheThings
 
-## [DF-3.2.2](https://github.com/DFortun81/AllTheThings/tree/DF-3.2.2) (2023-02-05)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.2.1...DF-3.2.2) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.2.3](https://github.com/DFortun81/AllTheThings/tree/DF-3.2.3) (2023-02-12)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.2.2...DF-3.2.3) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
-### Goblin Weather Machine Twitch Drop
-
-Watch select Twitch Streamers with Drops enabled for at least 4 hours between February 1st, 10:00 a.m. & February 5th, 11:59 p.m. PST. More details [here](https://worldofwarcraft.com/en-us/news/23896794/dragonflight-twitch-drops-get-your-goblin-weather-machine-now).
-
+### Updated Love is in the Air 💘
 
 ### Logic changes
 
-- ATT tooltips will work in Adventure Guide.
+- ATT now attaches to the Trading Post tooltips.
+- Dragonflight Profession Equipment/Tools can now be filtered using the 'Profession Equipment' toggle. (And previously existing 'Fishing Poles' filter was removed.)
 
 
 ### Ligic fixes
 
-- Fixed line wrapping in settings at certain resolutions / UI scales.
-- Fixed non-collectible items (necks, rings, etc) from being treated as collectible.
+- Some very complicated fixes/changes/magic relating to itemIDs/sourceIDs.
 
 ### Data additions/fixes
 
-- Reorganized Dragonriding Races (they are merged with Reverse races now).
-- Improved Trading Post icon.
-- Many more Dragonflight fixes.
-- Ongoing fixes to Poor/Common quality items.
-- WotLK updates.
+- Added/fixed Warlords of Draenor readded profession items.
+- Continued clean up of Achievements (Exploration category/Dragonflight Raids specifically).
+- Clarifications to readded Classic recipes.
 - Other fixes.
