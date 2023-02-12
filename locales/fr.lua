@@ -604,8 +604,8 @@ local L = app.L;
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
 		["Antorus, le Trône ardent"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
-		["Expansion Pre"] = "Pré",
-		["Expansion Features"] = "CE",
+		["Expansion Pre"] = "Pré",	--TODO: recheck this key
+		["Expansion Features"] = "CE",	--TODO: recheck this key
 		--TODO: [GROUP_FINDER] = "D&R",	-- ["Dungeons & Raids"] = "D&R"
 		["The Burning Crusade"] = "BC",	--TODO: recheck this key
 		["Burning Crusade"] = "BC",	--TODO: recheck this key
@@ -618,8 +618,8 @@ for key,value in pairs({
 		["The Shadowlands"] = "SL",	--TODO: recheck this key
 		["Shadowlands"] = "SL",	--TODO: recheck this key
 		["Player vs Player"] = "JcJ",	--TODO: recheck this key
-		["Raid Finder"] = "LFR",
-		["Looking For Raid"] = "LFR",
+		["Raid Finder"] = "LFR",	--TODO: recheck this key
+		["Looking For Raid"] = "LFR",	--TODO: recheck this key
 		["Normal"] = "N",	--TODO: recheck this key
 		["Heroic"] = "H",	--TODO: recheck this key
 		["Mythic"] = "M",	--TODO: recheck this key
@@ -629,7 +629,7 @@ for key,value in pairs({
 		["10 Player (Heroic)"] = "10J (H)",	--TODO: recheck this key
 		["25 Player"] = "25J",	--TODO: recheck this key
 		["25 Player (Heroic)"] = "25J (H)",	--TODO: recheck this key
-		["Emissary Quests"] = "Émissaire de quêtes",
+		["Emissary Quests"] = "Émissaire de quêtes",	--TODO: recheck this key
 		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
 		["WoW Anniversary"] = "Anniversaire",	--TODO: recheck this key
 		["Covenant:"] = "Cov :",	--TODO: recheck this key
