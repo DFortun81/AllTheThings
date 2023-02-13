@@ -2749,6 +2749,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74162),	-- Skinning Angen (Great Hunt)
 			q(74163),	-- Skinning Molkeej (Grand Hunt)
 			q(74164),	-- Skinning Diluu (Grand Hunt)
+			q(74166),	-- Skinning Nergazurai
 			q(74167),	-- Skinning Sunscale Behemoth
 			q(74169),	-- Skinning Liskheszaera
 			q(74170),	-- Skinning Zenet Avis

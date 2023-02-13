@@ -122,6 +122,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			-- n(193212, {	-- Malsegan // under DF/Timed Based Rare
 			-- n(193173, {	-- Mikrin of the Raging Winds // under DF/Timed Based Rare
+			n(195895, {	-- Nergazurai
+				["coord"] = { 60.0, 71.3, OHNAHRAN_PLAINS },
+				["questID"] = 74093,
+			}),
 			n(187219, {	-- Nokhud Warmaster
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
