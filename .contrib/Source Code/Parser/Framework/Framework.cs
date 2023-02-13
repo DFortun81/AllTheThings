@@ -22,7 +22,7 @@ namespace ATT
         /// <summary>
         /// The CustomConfiguration for the Parser
         /// </summary>
-        internal static CustomConfiguration Config { get; set; } = new CustomConfiguration("parser.config");
+        internal static CustomConfiguration Config { get; set; }
 
         /// <summary>
         /// The very first Phase ID as indicated in _main.lua.
@@ -317,27 +317,29 @@ namespace ATT
         /// <summary>
         /// Allows the optional Parser Config file to overwrite some built-in values for non-compile required manipulation of the Parser
         /// </summary>
-        public static void InitConfigSettings()
+        public static void InitConfigSettings(string filepath)
         {
+            Config = new CustomConfiguration(filepath);
+            Log($"config: {filepath}");
             CURRENT_RELEASE_PHASE_NAME = Config["CURRENT_RELEASE_PHASE_NAME"] ?? CURRENT_RELEASE_PHASE_NAME;
-            var configPatch = Config["LAST_EXPANSION_PATCH"];
+            int[] configPatch = Config["LAST_EXPANSION_PATCH"];
             if (configPatch != null)
             {
                 LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME] = configPatch;
             }
-            var configUseCounts = Config["TrackUseCounts"];
+            string[] configUseCounts = Config["TrackUseCounts"];
             if (configUseCounts != null)
             {
-                foreach (string type in (string[])configUseCounts)
+                foreach (string type in configUseCounts)
                 {
                     TypeUseCounts[type] = new Dictionary<decimal, int>();
                 }
             }
             HeirarchicalConsolidationFields = Config["HeirarchicalConsolidationFields"] ?? HeirarchicalConsolidationFields;
-            var configDebugDBs = Config["DebugDB"];
+            string[] configDebugDBs = Config["DebugDB"];
             if (configDebugDBs != null)
             {
-                foreach (string key in (string[])configDebugDBs)
+                foreach (string key in configDebugDBs)
                 {
                     DebugDBs[key] = new SortedDictionary<decimal, List<Dictionary<string, object>>>();
                 }
@@ -628,13 +630,6 @@ namespace ATT
                     if (sources.TryGetValue("mainHand", out long s))
                         data["s"] = s;
                 }
-            }
-
-            // Remove any fields which contain 'empty' data
-            if (data.TryGetValue("customCollect", out List<object> cc))
-            {
-                if (cc.Count == 0)
-                    data.Remove("customCollect");
             }
 
             // Verify 'classes' have acceptable values
@@ -1247,7 +1242,7 @@ namespace ATT
 
             CheckHeirloom(data);
 
-            VerifyListContentOrdering(data);
+            //VerifyListContentOrdering(data);
 
             // when consolidating data, check for duplicate objects (instead of when merging)
             foreach (string key in TypeUseCounts.Keys)
@@ -1265,9 +1260,22 @@ namespace ATT
                 }
             }
 
-            // clean up any metadata tags
-            foreach (string key in data.Keys.Where(k => k.StartsWith("_")).ToArray())
+            // clean up any Parser metadata tags
+            List<string> removeKeys = new List<string>(data.Keys.Where(k => k.StartsWith("_")));
+
+            foreach (KeyValuePair<string, object> dataKvp in data)
+            {
+                // Remove any fields which contain 'empty' lists
+                if (dataKvp.Value is IEnumerable<object> list && !list.Any())
+                {
+                    removeKeys.Add(dataKvp.Key);
+                }
+            }
+
+            foreach (string key in removeKeys)
+            {
                 data.Remove(key);
+            }
 
             return true;
         }

@@ -148,10 +148,6 @@
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Classic.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>
-  <Target Name="RenamePTRExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'PTR'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for PTR.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
   <Target Name="RenameRetailExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Retail'">
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Retail.exe" />
     <Message Text="Renamed executable file." Importance="high" />

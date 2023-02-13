@@ -25,16 +25,25 @@ namespace ATT
             // Determine if running in Debug Mode or not.
             if (args != null && args.Length > 0)
             {
+                char[] argSplit = new[] { '=' };
                 foreach (var arg in args)
                 {
                     if (arg == "debug") Framework.DebugMode = true;
+                    else if (arg.Contains("="))
+                    {
+                        string[] argPieces = arg.Split(argSplit);
+                        HandleParserArgument(argPieces[0], argPieces[1]);
+                    }
                 }
             }
 
-
             try
             {
-                Framework.InitConfigSettings();
+                // Ensure the default Retail Parser uses the default config
+                if (Framework.Config == null)
+                {
+                    Framework.InitConfigSettings("parser.config");
+                }
 
                 // Prepare console output to a file.
 #if ANYCLASSIC
@@ -194,6 +203,17 @@ namespace ATT
             {
                 Trace.WriteLine(e);
                 Console.ReadLine();
+            }
+        }
+
+        private static void HandleParserArgument(string name, string value)
+        {
+            switch (name)
+            {
+                case "config":
+                    if (!string.IsNullOrWhiteSpace(value))
+                        Framework.InitConfigSettings(value);
+                    break;
             }
         }
 
