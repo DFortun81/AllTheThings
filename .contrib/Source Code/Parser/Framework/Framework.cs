@@ -3748,9 +3748,9 @@ namespace ATT
             string addonRootFolder = "../../../../../../_ptr_/Interface/AddOns/AllTheThings";
 #else
             // Default is relative to where the executable is. (.contrib/Parser)
-            string addonRootFolder = "../..";
+            string addonRootFolder = Config["root-addon"] ?? "../..";
 #endif
-            string dbRootFolder = "";
+            string dbRootFolder = Config["db-relative"] ?? "";
 #endif
 
             // Setup the output folder (/db)

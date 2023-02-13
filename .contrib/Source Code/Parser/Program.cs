@@ -40,7 +40,7 @@ namespace ATT
 #if ANYCLASSIC
                 string databaseRootFolder = "../.db";
 #else
-                string databaseRootFolder = Framework.Config["root"] ?? ".";
+                string databaseRootFolder = Framework.Config["root-data"] ?? ".";
 #endif
 
 
