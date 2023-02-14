@@ -191,8 +191,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198156),	-- Wyrmhole Generator: Dragon Isles
 		i(198834),	-- Scribbled Bark Chunks
 		i(201934),	-- Nokhud Whittling Knife
-		i(202017),	-- Liberated Furbolg Artifacts
-		i(202018),	-- Intact Scribe Stick
 		i(202075),	-- Temp Currency
 		i(202088),	-- Powerful Flask of Renewal
 		i(202180),	-- Ripe Burcicle Berry
@@ -200,25 +198,13 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(202185),	-- Chillwrought Worm Meat
 		i(202196),	-- Zskera Vault Key
 		i(202202),	-- Revealing Mask
-		i(202253),	-- Primal Stave of Claw and Fur
-		i(202255),	-- Driftling
-		i(202264),	-- Defender of the Winterpelt
-		i(202268),	-- Winterpelt Totem
-		i(202273),	-- Renewed Proto-Drake: Stubby Snout
 		i(202274),	-- Renewed Proto-Drake: Plated Brow
 		i(202275),	-- Renewed Proto-Drake: Plated Jaw
 		i(202277),	-- Renewed Proto-Drake: Bruiser Horns
 		i(202278),	-- Renewed Proto-Drake: Antlers
-		i(202279),	-- Renewed Proto-Drake: Malevolent Horns
 		i(202280),	-- Renewed Proto-Drake: Pronged Tail
-		i(202282),	-- Winterpelt Mending Totem
-		i(202283),	-- Reading Glasses
-		i(202287),	-- Paw-Made Winterpelt Reagent Bag
-		i(202289),	-- Recipe: Firewater Sorbet
 		i(202290),	-- Firewater Sorbet
 		i(202294),	-- Recipe Pages
-		i(202314),	-- Big Chunk o' Meat
-		i(202315),	-- Frozen Solid Tea
 		i(202360),	-- Dented Can
 		i(202361),	-- Farscale Supplies
 		i(202362),	-- Sapphire Focus
@@ -486,7 +472,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(203986),	-- Ensemble: Bloodsoaked Plate
 		i(203988),	-- Warshard of the Hakkari, Unborn
 		i(203989),	-- Warshard of the Hakkari, Unborn
-		i(203995),	-- Winter Pelt Cloak
 		i(203997),	-- Raw Argali Flank
 		i(203998),	-- Beetle Juice
 		i(204000),	-- Storm Infused Stone

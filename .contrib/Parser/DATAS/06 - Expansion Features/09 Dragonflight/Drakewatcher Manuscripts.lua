@@ -903,13 +903,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 
 root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAKEWATCHER_MANUSCRIPTS, {
-		i(197006),	-- Cliffside Wylderdrake: Plated Nose [Datamined Winterfurbolg Rep?]
-		i(196995),	-- Cliffside Wylderdrake: Spiked Horns [Datamined Winterfurbolg Rep?]
-		i(197102),	-- Highland Drake: Horned Chin [Datamined Winterfurbolg Rep?]
-		i(197129),	-- Highland Drake: Sleek Horns [Datamined Winterfurbolg Rep?]
-		i(197583),	-- Windborne Velocidrake: Exposed Finned Back [Datamined Winterfurbolg Rep?]
-		i(197629),	-- Windborne Velocidrake: Spiked Neck [Datamined Winterfurbolg Rep?]
-		--
 		i(194837),	-- Highland Drake Manuscript: Black Hair (DM!)
 		i(194838),	-- Highland Drake Manuscript: Spined Head (DM!)
 		i(194836),	-- Highland Drake Manuscript: Spined Throat (DM!)
