@@ -758,7 +758,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(191541),	-- Shikaar Supplies
 		i(193257),	-- Clump of Sacred Soil
 
-		i(199704),	-- Artifact Fragment
 		i(200842),	-- Power-Depleted Staff
 		i(201990),	-- Primal Mote
 		i(202035),	-- Self-Heating Rations

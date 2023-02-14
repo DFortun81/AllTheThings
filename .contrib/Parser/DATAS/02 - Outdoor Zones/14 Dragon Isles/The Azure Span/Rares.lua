@@ -256,12 +256,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
 		q(73886),	-- Killing both Mucklings for Mucka the Raker
+		q(71240),	-- Triggered on killing Sharpfang
 	}),
 }));
 
-root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
-	m(THE_AZURE_SPAN, {
-		n(RARES, sharedData({["isDaily"] = true}, {
-		})),
-	}),
-})));
+

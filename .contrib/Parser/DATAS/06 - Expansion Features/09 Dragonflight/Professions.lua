@@ -2636,7 +2636,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 			["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
 			["coord"] = { 40.8, 48.3, VALDRAKKEN },
 			-- existed in Beta, marked obsolete by Blizzard, pops on unlocking alt spark skip
-			["timeline"] = { CREATED_DF_PRE },
+			["timeline"] = { ADDED_DF_PRE },
 			["isBreadcrumb"] = true,
 		}),
 		q(72340),	-- Triggered on unlocking alt spark skip
