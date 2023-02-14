@@ -6597,8 +6597,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(65454),	--
 				q(65458),	--
 				q(65459),	--
-				q(65502),	--
-				q(65533),	--
 				q(65568),	--
 				q(65569),	--
 				q(65596),	--
@@ -6609,12 +6607,10 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(65675),	--
 				q(65676),	--
 				q(65692),	--
-				q(65696),	--
 				q(65710),	--
 				q(65712),	--
 				q(65714),	--
 				q(65716),	--
-				q(65718),	--
 				q(65719),	--
 				q(65722),	--
 				q(65734),	--
@@ -7465,19 +7461,14 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { "created 10.0.5" } }, {
 				-- 10.0.5.47799
 				q(66925),	-- [DNT] Boar-B-Q
-				q(72070),	--
-				q(72080),	--
 				q(72081),	--
 				q(72082),	--
 				q(72085),	--
-				q(72086),	--
 				q(72087),	--
 				q(72088),	--
 				q(72092),	--
 				q(72123),	--
 				q(72124),	--
-				q(72132),	--
-				q(72133),	--
 				q(72384),	-- Valdrakken Tour
 				q(72735),	--
 				q(72736),	--

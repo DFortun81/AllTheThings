@@ -614,17 +614,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
 		i(190539),	-- Coral-Stalker Waveray (MOUNT!)
 		i(190168),	-- Crusty Crawler (MOUNT!)
-		mount(366647),	-- Magenta Cloud Serpent (MOUNT!)
-		i(190169),	-- Quawks (MOUNT!)
-		i(190613),	-- Savage Green Battle Turtle (MOUNT!)
-
 		pet(03255),	-- Buttercup (PET!)
 		i(190604),	-- Buzzworth (PET!)
 		pet(3253),	-- Crushhoof (PET!)
 		i(190176),	-- Drazka'zet the Wrathful (PET!)
-		i(190603),	-- Egbob (PET!)
 		i(190173),	-- Lil' Maka'jin (PET!)
-		i(190175),	-- Pippin (PET!)
 		pet(3254),	-- Watcher of the Huntress (PET!)
 
 		-- Items
@@ -772,15 +766,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200921),	-- Void-Bound Greatcloak
 		i(200922),	-- Void-Bound Shroud
 		i(200923),	-- Void-Bound Drape
-		i(190065),	-- Gnomish Liquid Transfer Apparatus
-		i(190204),	-- Huntsman's Recurve Bow
-		i(190448),	-- Trapper's Shot Pouch
-		i(190449),	-- Trapper's Fur-Lined Quiver
-		i(190540),	-- Ensemble: Trapper's Munitions
-		i(190725),	-- Ensemble: Battlewraps of the Honored Valarjar
-		i(201229),	-- Ensemble: Kvaldir Scout Leathers
-
-
 		--
 		i(191143),	-- Mudfin Totem
 		i(191539),	-- Sarnai's Collar
@@ -978,8 +963,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- Non Set Cosmetics
 				i(190093),	-- Elune's Fury
 				i(190094),	-- Elune's Wrath
-				i(190448),	-- Olive Huntsman's Shot Pouch
-				i(190449),	-- Olive Huntsman's Quiver
 				i(190674),	-- Leaky Bucket
 				i(190909),	-- Ruby Felfire Splitblade
 				i(190910),	-- Ruby Felfire Bulwark

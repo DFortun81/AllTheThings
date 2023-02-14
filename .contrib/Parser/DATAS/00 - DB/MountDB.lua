@@ -1604,7 +1604,7 @@ i(0, 367875);	-- Armored Siege Kodo
 i(0, 369480);	-- Cerulean Marsh Hopper
 i(190539, 367620);	-- Coral-Stalker Waveray
 i(190168, 366789);	-- Crusty Crawler
-i(0, 366647);	-- Magenta Cloud Serpent
+i(189978, 366647);	-- Magenta Cloud Serpent
 i(190169, 366790);	-- Quawks
 i(190613, 367826);	-- Savage Green Battle Turtle
 

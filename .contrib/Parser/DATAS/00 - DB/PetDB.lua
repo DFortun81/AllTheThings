@@ -1264,7 +1264,7 @@ pet(0, 3255);	-- Buttercup
 pet(190604, 3251);	-- Buzzworth
 pet(0, 3253);	-- Crushhoof
 pet(190176, 3244);	-- Drazka'zet the Wrathful
-pet(190603,	3250);	-- Egbob
+pet(190603, 3250);	-- Egbob
 pet(190173, 3242);	-- Lil' Maka'jin
 pet(190175, 3243);	-- Pippin
 pet(0, 3254);	-- Watcher of the Huntress
