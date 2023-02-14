@@ -13,5 +13,10 @@ for row in reader:
 my_dict = dict(sorted(my_dict.items()))
 with open(Path("..", "..", "GlobalStrings.lua"), "w") as lua_file:
     for key, value in my_dict.items():
-        value = value.replace('"', '\\"').replace('\\\\"', '\\"').replace("\\32", " ")
+        value = (
+            value.replace('"', '\\"')
+            .replace('\\\\"', '\\"')
+            .replace("\\32", " ")
+            .replace("\n", "\\n")
+        )
         lua_file.write(f'{key} = "{value}";\n')
