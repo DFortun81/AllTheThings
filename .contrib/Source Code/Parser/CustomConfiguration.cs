@@ -58,13 +58,32 @@ namespace ATT
 
             _root = _root ?? new CustomConfigurationNode(null);
         }
+
+        public void ApplyFile(string filepath)
+        {
+            if (!File.Exists(filepath))
+            {
+                return;
+            }
+
+            try
+            {
+                string configText = File.ReadAllText(filepath);
+                object jsonObj = MiniJSON.Json.Deserialize(configText);
+                _root.ApplyData(jsonObj);
+            }
+            catch (Exception ex)
+            {
+                throw new FormatException($"Failed Deserializing JSON config data from {filepath}", ex);
+            }
+        }
     }
 
     internal class CustomConfigurationNode
     {
-        private readonly Dictionary<string, CustomConfigurationNode> _dict;
-        private readonly List<CustomConfigurationNode> _list;
-        private readonly object _val;
+        private Dictionary<string, CustomConfigurationNode> _dict;
+        private List<CustomConfigurationNode> _list;
+        private object _val;
 
         /// <summary>
         /// Accesses a particular key of the current Configuration Node
@@ -156,13 +175,59 @@ namespace ATT
         /// </summary>
         internal CustomConfigurationNode(object jsonObj)
         {
+            ApplyData(jsonObj);
+        }
+
+        /// <summary>
+        /// Applies JSON data into the existing Configuration
+        /// </summary>
+        public void ApplyData(object jsonObj)
+        {
             if (jsonObj is IDictionary<string, object> dict)
             {
-                _dict = dict.ToDictionary(o => o.Key, o => new CustomConfigurationNode(o.Value));
+                if (_dict == null)
+                {
+                    _dict = dict.ToDictionary(o => o.Key, o => new CustomConfigurationNode(o.Value));
+                }
+                else
+                {
+                    foreach (KeyValuePair<string, object> kvpObj in dict)
+                    {
+                        if (_dict.TryGetValue(kvpObj.Key, out var config))
+                        {
+                            config.ApplyData(kvpObj.Value);
+                        }
+                        else
+                        {
+                            _dict[kvpObj.Key] = new CustomConfigurationNode(kvpObj.Value);
+                        }
+                    }
+                }
             }
             else if (jsonObj is ICollection<object> list)
             {
-                _list = list.Select(o => new CustomConfigurationNode(o)).ToList();
+                if (_list == null)
+                {
+                    _list = list.Select(o => new CustomConfigurationNode(o)).ToList();
+                }
+                else
+                {
+                    int i = 0;
+                    int max = _list.Count - 1;
+                    foreach (object listObj in list)
+                    {
+                        var config = i <= max ? _list[i] : null;
+                        if (config == null)
+                        {
+                            _list.Add(new CustomConfigurationNode(listObj));
+                        }
+                        else
+                        {
+                            config.ApplyData(listObj);
+                        }
+                        i++;
+                    }
+                }
             }
             else
             {

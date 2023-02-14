@@ -13,6 +13,8 @@ namespace ATT
     {
         private static bool Errored { get; set; }
 
+        private static string[] PreProcessorTags { get; set; }
+
         static void Main(string[] args)
         {
             // Setup tracing to the console.
@@ -21,6 +23,9 @@ namespace ATT
 #if DEBUG
             Framework.DebugMode = true;
 #endif
+
+            // Ensure the Retail Parser uses the default config always, input arg can change config values
+            Framework.InitConfigSettings("parser.config");
 
             // Determine if running in Debug Mode or not.
             if (args != null && args.Length > 0)
@@ -39,12 +44,7 @@ namespace ATT
 
             try
             {
-                // Ensure the default Retail Parser uses the default config
-                if (Framework.Config == null)
-                {
-                    Framework.InitConfigSettings("parser.config");
-                }
-
+                PreProcessorTags = Framework.Config["PreProcessorTags"] ?? Array.Empty<string>();
                 // Prepare console output to a file.
 #if ANYCLASSIC
                 string databaseRootFolder = "../.db";
@@ -307,6 +307,10 @@ namespace ATT
             }
             else if (command.Length > 1)
             {
+                // Config PreProcessorTags
+                if (PreProcessorTags.Contains(command[1]))
+                    return true;
+
                 switch (command[1])
                 {
                     case "NOT":
@@ -345,12 +349,6 @@ namespace ATT
                             }
                         }
                         throw new Exception($"Malformed #IF AFTER statement. '{string.Join(" ", command)}'");
-                    case "RETAIL":
-#if RETAIL
-                        return true;
-#else
-                        return false;
-#endif
                     case "ANYCLASSIC":
 #if ANYCLASSIC
                         return true;
@@ -359,18 +357,6 @@ namespace ATT
 #endif
                     case "CRIEVE":
 #if CRIEVE
-                        return true;
-#else
-                        return false;
-#endif
-                    case "BETA":
-#if BETA
-                        return true;
-#else
-                        return false;
-#endif
-                    case "PTR":
-#if PTR
                         return true;
 #else
                         return false;

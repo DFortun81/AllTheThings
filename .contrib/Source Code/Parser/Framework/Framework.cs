@@ -319,7 +319,14 @@ namespace ATT
         /// </summary>
         public static void InitConfigSettings(string filepath)
         {
-            Config = new CustomConfiguration(filepath);
+            if (Config == null)
+            {
+                Config = new CustomConfiguration(filepath);
+            }
+            else
+            {
+                Config.ApplyFile(filepath);
+            }
             Log($"config: {filepath}");
             CURRENT_RELEASE_PHASE_NAME = Config["CURRENT_RELEASE_PHASE_NAME"] ?? CURRENT_RELEASE_PHASE_NAME;
             int[] configPatch = Config["LAST_EXPANSION_PATCH"];
@@ -3721,13 +3728,8 @@ namespace ATT
         public static void Export()
         {
 #if ANYCLASSIC
-#if PTR
-            // We want PTR builds of ATT to build the database to the AllTheThings PTR folder.
-            string addonRootFolder = "../../../../../../_classic_ptr_/Interface/AddOns/AllTheThings";
-#else
             // We want Classic WRATH, TBC, and Classic builds of ATT to build the database to the ATT-Classic folder.
             string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
-#endif
 
 #if DRAGONFLIGHT
             string dbRootFolder = "Dragonflight/";
@@ -3751,13 +3753,8 @@ namespace ATT
             string dbRootFolder = "Classic/";
 #endif
 #else
-#if PTR
-            // We want PTR builds of ATT to build the database to the AllTheThings PTR folder.
-            string addonRootFolder = "../../../../../../_ptr_/Interface/AddOns/AllTheThings";
-#else
             // Default is relative to where the executable is. (.contrib/Parser)
             string addonRootFolder = Config["root-addon"] ?? "../..";
-#endif
             string dbRootFolder = Config["db-relative"] ?? "";
 #endif
 

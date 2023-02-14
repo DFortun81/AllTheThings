@@ -194,6 +194,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 					i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
 				},
 			}),
+			n(DROPS, {
+				i(201790, {	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
+					["crs"] = { 193909 },	-- Raszageth the Storm-Eater
+				}),
+			}),
 			n(QUESTS, {
 				q(72261, {	-- More Than a Prison?
 					["provider"] = { "i", 201412 },	-- Ancient Vault Artifact
@@ -212,9 +217,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 			n(ZONE_DROPS, {
 				i(201412),	-- Ancient Vault Artifact (Quest)
 				i(201411),	-- Ancient Vault Artifact (Repeatable)
-				i(201790, {	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
-					["crs"] = { 193909 },	-- Raszageth the Storm-Eater
-				}),
 			}),
 			d(LFR_RAID, {
 				n(ZONE_DROPS, {
