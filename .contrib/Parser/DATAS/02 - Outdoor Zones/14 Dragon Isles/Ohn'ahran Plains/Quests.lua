@@ -1144,6 +1144,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(65892, {	-- The Sundered Asunder
 					-- ["sourceQuests"] = {  },	--
 					["coord"] = { 64.0, 17.8, OHNAHRAN_PLAINS },
+					["description"] = "You must be at least level 62 for this to pop up. It does not appear you need to accept any quests.",
 					["isDaily"] = false,
 				}),
 				q(66421, {	-- The Storm Scar
@@ -1166,7 +1167,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["isDaily"] = false,
 				}),
 				q(67717, {	-- Web-Queen Ashkaz
-					["provider"] = { "n", 192938 },	-- Web-Queen Ashkaz
+					["provider"] = { "n", 192983 },	-- Web-Queen Ashkaz
 					["coord"] = { 43.3, 47.2, OHNAHRAN_PLAINS },
 					["isDaily"] = false,
 				}),
