@@ -11479,3 +11479,15 @@
 17530@@@Librarian of the Reach
 17531@@@X Marks the Spot
 17532@@@Scroll Hunter
+10.0.7.48076
+17398@@@Dragon Glyphs: Warlord's Perch
+17400@@@Dragon Glyphs: Froststone Peak
+17403@@@Dragon Glyphs: The Frosted Spine
+17498@@@Renowned Leatherworking Specialist
+17499@@@Renowned Tailoring Specialist
+17533@@@<Hidden> Travel Network - Node Unlock: Forbidden Reach - Morqut Islet
+17534@@@Explore the Forbidden Reach
+17535@@@<DNT> Complete the "Return to the Reach" questline.
+17540@@@Under the Weather
+17541@@@Global Swarming
+17543@@@You Know How to Reach Me

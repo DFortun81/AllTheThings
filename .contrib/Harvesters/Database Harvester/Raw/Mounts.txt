@@ -1595,3 +1595,5 @@
 368126@@@Armored Golden Pterrordax
 369480@@@Cerulean Marsh Hopper
 395095@@@Whelpling
+10.0.7.48076
+349935@@@Noble Bruffalon

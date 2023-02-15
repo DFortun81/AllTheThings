@@ -11118,3 +11118,6 @@
 6782@@@|C00CC0000Desirous Blood Stone
 6783@@@
 6784@@@|C00B84EFFProphetic Twilight Stone
+10.0.7.48076
+6776@@@|C00FF516CNecromantic Death Stone
+6782@@@|C00FF516CDesirous Blood Stone

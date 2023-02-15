@@ -1011,12 +1011,12 @@ ach(17325),	-- <DNT> Hearthfire Fellowship Rank 4
 ach(17366),	-- Relics of a Fallen Empire
 ach(17367),	-- Deadliest Cache
 ach(17397),	-- Door To Door
-ach(17398),	-- Dragon Glyphs: Northwind Point
+ach(17398),	-- Dragon Glyphs: Warlord's Perch \\ Dragon Glyphs: Northwind Point
 ach(17399),	-- Dragon Glyphs: Talon's Watch
-ach(17400),	-- Dragon Glyphs: Fragstone Vault
+ach(17400),	-- Dragon Glyphs: Froststone Peak \\ Dragon Glyphs: Fragstone Vault
 ach(17401),	-- Dragon Glyphs: Dragonskull Island
 ach(17402),	-- Dragon Glyphs: Stormsunder Mountain
-ach(17403),	-- Dragon Glyphs: War Creche
+ach(17403),	-- Dragon Glyphs: The Frosted Spine \\ Dragon Glyphs: War Creche
 ach(17404),	-- Dragon Glyphs: Talonlord's Perch
 ach(17405),	-- Dragon Glyphs: Caldera of the Menders
 ach(17406),	-- Battle on the Dragon Isles II
@@ -1034,8 +1034,8 @@ ach(17428),	-- <Hidden> Winterpelt Language - Send Mailer from Sonova
 ach(17495),	-- <Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
 ach(17496),	-- Renowned Weaponsmith
 ach(17497),	-- Renowned Armorsmith
-ach(17498),	-- Renowned Dragonscale Leatherworker
-ach(17499),	-- Renowned Elemental Leatherworker
+ach(17498),	-- Renowned Leatherworking Specialist \\ Renowned Dragonscale Leatherworker
+ach(17499),	-- Renowned Tailoring Specialist \\ Renowned Elemental Leatherworker
 ach(17500),	-- Renowned Tribal Leatherworker
 ach(17501),	-- Renowned Mooncloth Tailor
 ach(17502),	-- Renowned Spellfire Tailor
@@ -1050,3 +1050,10 @@ ach(17529),	-- Forbidden Spoils
 ach(17530),	-- Librarian of the Reach
 ach(17531),	-- X Marks the Spot
 ach(17532),	-- Scroll Hunter
+10.0.7.48076
+ach(17533),	-- <Hidden> Travel Network - Node Unlock: Forbidden Reach - Morqut Islet
+ach(17534),	-- Explore the Forbidden Reach
+ach(17535),	-- <DNT> Complete the "Return to the Reach" questline.
+ach(17540),	-- Under the Weather
+ach(17541),	-- Global Swarming
+ach(17543),	-- You Know How to Reach Me

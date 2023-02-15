@@ -1891,8 +1891,6 @@ p(3218),	-- Enraged Poultrid
 p(3219),	-- Predatory Helicid \\ Predatory Gastropod
 9.2.0.41726
 p(3246),	-- Tezpet
-10.0.5.47871
-p(3250),	-- Egbob
 10.0.7.47910
 p(3422),	-- [DNT] Storm Pet Boss - Legendary
 p(3423),	-- [DNT] Storm Pet Fodder

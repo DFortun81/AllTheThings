@@ -697,6 +697,8 @@ fp(2851),	-- Ohn'iri Springs, The Nokhud Offensive
 fp(2855),	-- Morqut Village, The Forbidden Reach
 fp(2856),	-- Quest Path 9315: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Up - EJC
 fp(2857),	-- Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC
+10.0.7.48076
+fp(2862),	-- Morqut Islet, Forbidden Reach
 
 
 
@@ -1399,3 +1401,5 @@ fp(2851),	-- Ohn'iri Springs, The Nokhud Offensive
 fp(2855),	-- Morqut Village, The Forbidden Reach
 fp(2856),	-- Quest Path 9315: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Up - EJC
 fp(2857),	-- Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC
+10.0.7.48076
+fp(2862),	-- Morqut Islet, Forbidden Reach

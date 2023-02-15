@@ -2666,3 +2666,5 @@
 2855@@@Morqut Village, The Forbidden Reach
 2856@@@Quest Path 9315: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Up - EJC
 2857@@@Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC
+10.0.7.48076
+2862@@@Morqut Islet, Forbidden Reach

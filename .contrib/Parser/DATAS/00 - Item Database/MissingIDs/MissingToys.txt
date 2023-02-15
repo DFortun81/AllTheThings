@@ -18,6 +18,9 @@ i(204257),	-- Holoviewer: The Lady of Dreams
 i(204262),	-- Holoviewer: The Timeless One
 10.0.7.47983
 i(203852),	-- Spore-Bound Essence \\ Vial of Spore-Bound Essence
+10.0.7.48076
+i(201930),	-- H.E.L.P.
+i(204675),	-- A Drake's Big Basket of Eggs
 
 
 
@@ -44,3 +47,6 @@ i(204257),	-- Holoviewer: The Lady of Dreams
 i(204262),	-- Holoviewer: The Timeless One
 10.0.7.47983
 i(203852),	-- Spore-Bound Essence \\ Vial of Spore-Bound Essence
+10.0.7.48076
+i(201930),	-- H.E.L.P.
+i(204675),	-- A Drake's Big Basket of Eggs

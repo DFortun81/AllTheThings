@@ -585,7 +585,102 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(204312),	-- Ettin Skin
 		i(204313),	-- Handful of Scales
 		i(204330),	-- Inert Promordal Fragments
-
+		i(114942),	-- Cracked Draenic Mortar
+		i(202252),	-- Recipe Rat
+		i(203402),	-- Broken Gnomish Voicebox
+		i(203405),	-- Slyvern Pelt
+		i(203406),	-- Torn Morqut Kite
+		i(203411),	-- Gnomish Voicebox
+		i(203414),	-- Reinforced Leather Patch
+		i(203415),	-- Morqut Kite
+		i(203416),	-- Lifebloom Seeds
+		i(203417),	-- Sharpened Bone
+		i(203418),	-- Quaking Stone
+		i(203424),	-- Design: Gnomish Voicebox
+		i(203427),	-- Design: Reinforced Leather Patch
+		i(203428),	-- Design: Morqut Kite
+		i(203685),	-- Borrowed Potion of Invisibility
+		i(203852),	-- Spore-Bound Essence
+		i(204073),	-- Ratcipe: Deviously Deviled Eggs
+		i(204339),	-- Satchel of Coalescing Chaos
+		i(204340),	-- Torn Recipe Scrap
+		i(204343),	-- Trusty Dragonkin Rake
+		i(204352),	-- Leftover Elemental Slime
+		i(204353),	-- Primordial Jeweler's Kit
+		i(204354),	-- Hollowed Furbolg Food Pack
+		i(204355),	-- Hollowed Winterpelt Food Pack
+		i(204356),	-- Illustrious Gemdust
+		i(204359),	-- Reach Racer's Purse
+		i(204360),	-- Strange Petrified Orb
+		i(204363),	-- Particularly Ordinary Egg
+		i(204364),	-- Magically Altered Egg
+		i(204366),	-- Egg of Unknown Contents
+		i(204367),	-- Egg-Hatched Ancient Mammoth
+		i(204369),	-- Scrap of Black Dragonscales
+		i(204371),	-- Drop of Blue Dragon Magic
+		i(204372),	-- Speck of Bronze Dust
+		i(204374),	-- Emerald Dragon Brooch
+		i(204375),	-- Everburning Ruby Coals
+		i(204378),	-- Brimming Dragonscale Expedition Supply Pack
+		i(204379),	-- Brimming Iskaaran Supply Pack
+		i(204380),	-- Brimming Maruuk Centaur Supply Satchel
+		i(204381),	-- Brimming Valdrakken Accord Supply Pack
+		i(204383),	-- Sack of Oddities
+		i(204403),	-- Sack of Sack of Oddities
+		i(204404),	-- Square Holders
+		i(204405),	-- Stuffed Bear
+		i(204406),	-- Ancient Design: Square Holders
+		i(196974),	-- Cliffside Wylderdrake: Four-Horned Chin
+		i(203217),	-- Dragonscale Surplus Crate
+		i(203220),	-- Iskaara Surplus Bag
+		i(203222),	-- Maruuk Surplus Bundle
+		i(203224),	-- Valdrakken Surplus Chest
+		i(203381),	-- Sealed Letter to Neltharion
+		i(203420),	-- Recipe: Neutralizing Agent
+		i(203421),	-- Plans: Ceremonial Trident
+		i(203422),	-- Recipe: Sparkling Spice Pouch
+		i(203423),	-- Formula: Glowing Crystal Bookmark
+		i(203424),	-- Schematic: Gnomish Voicebox
+		i(203425),	-- Technique: Dispelling Rune
+		i(203427),	-- Pattern: Reinforced Leather Patch
+		i(203428),	-- Pattern: Morqut Kite
+		i(203466),	-- Dragonscale Surplus Crate
+		i(203722),	-- Experimental Dragon Pack
+		i(204213),	-- Short-Range Teleport
+		i(204305),	-- Neltharion-Signed Notes
+		i(204367),	-- Sleeping Ancient Mammoth
+		i(204438),	-- Arcana Vessel from Morqut Islet
+		i(204439),	-- Research Chest Key
+		i(204442),	-- Clump of Tar
+		i(204443),	-- Blacksteel Hammer
+		i(204481),	-- Morqut Hearth Totem
+		i(204558),	-- Reliquary Scroll of Perception
+		i(204559),	-- Essence of Divination
+		i(204560),	-- Azure Scrying Crystal
+		i(204561),	-- Primalist Cache keys
+		i(204562),	-- Maruuk Maul
+		i(204563),	-- Morqut Club
+		i(204564),	-- Dragonscale Expeditioner's Rifle
+		i(204566),	-- Journal of the Forbidden Reach
+		i(204569),	-- Valdrakken Talons
+		i(204570),	-- Valdrakken Pocketknife
+		i(204571),	-- Bulwark of the Forbidden Reach
+		i(204573),	-- Condensed Fire Magic
+		i(204574),	-- Condensed Frost Magic
+		i(204575),	-- Condensed Earth Magic
+		i(204576),	-- Condensed Shadow Magic
+		i(204577),	-- Condensed Nature Magic
+		i(204578),	-- Condensed Arcane Magic
+		i(204579),	-- Condensed Necromantic Magic
+		i(204632),	-- Tectonic Rock Fragment
+		i(204636),	-- Snarfang's Stomach Sac
+		i(204674),	-- Cursed Demonbone Longbow
+		i(204675),	-- A Drake's Big Basket of Eggs
+		i(204677),	-- Ogre Mining Pick
+		i(204678),	-- Pattern: Paw-Made Winterpelt Reagent Bag
+		i(204685),	-- Primordial Anvil
+		i(204687),	-- Lost Battle Horn
+		i(204691),	-- Living Book
 	})),
 	tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 10.0.5" } }, {
 		i(202309),	-- Defective Doomsday Device (TOY!)

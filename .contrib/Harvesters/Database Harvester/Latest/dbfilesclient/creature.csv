@@ -18297,6 +18297,9 @@ ID,Name_lang,NameAlt_lang,Title_lang,TitleAlt_lang,Classification,CreatureType,C
 199134,Adamanthia,,,,1,2,0,0,110544,0,0,0,0,1,1,1,0,0,0
 199171,Hornswog Chorus Sound Stalker A,,,,6,10,0,3,90874,11686,0,0,0,1,1,1,0,0,0
 199172,Hornswog Chorus Sound Stalker B,,,,6,10,0,3,90874,11686,0,0,0,1,1,1,0,0,0
+199199,Scalecommander Cindrethresh,,Dark Talons,,0,7,0,0,102033,0,0,0,1,1,1,1,0,0,0
+199201,Scalecommander Viridia,,The Healing Wings,,0,7,0,0,104555,0,0,0,1,1,1,1,0,0,0
+199204,Scalecommander Azurathel,,Obsidian Warders,,0,7,0,0,102032,0,0,0,1,1,1,1,0,0,0
 199266,Garz,,Rustpine Furbolg,,0,7,0,0,106216,0,0,0,1,1,1,1,0,0,0
 199267,Radza Thunderclaw,,Rustpine Spiritspeaker,,0,7,0,0,106217,0,0,0,1,1,1,1,0,0,0
 199271,Elder Mhaz,,,,0,7,0,0,110608,0,0,0,1,1,1,1,0,0,0
@@ -18351,13 +18354,13 @@ ID,Name_lang,NameAlt_lang,Title_lang,TitleAlt_lang,Classification,CreatureType,C
 200252,Flying Squirrel,,,,6,8,0,0,100353,0,0,0,1,1,1,1,0,0,0
 200259,Driftling,,,,0,12,0,0,111824,0,0,0,1,1,1,1,0,0,0
 200272,Awakening Tarasek,,,,0,2,0,0,109404,0,0,0,1,1,1,1,0,0,0
-200284,Drakonid Crechebound,,,,0,2,0,0,105787,105788,0,0,1,1,1,1,192514,0,0
+200284,Drakonid Crechebound,,,,1,2,0,0,104285,104286,104287,104288,1,1,1,1,192514,0,0
 200303,Spellsworn Crechebound,,T1 Melee (1.5/1),,0,2,0,0,105787,106358,105788,106359,1,1,1,1,192514,0,0
 200338,Tarasek Scavenger,,T1 Melee (1/1),,0,2,0,0,109439,109437,109441,0,1,1,1,1,0,0,0
 200539,Ebyssian,,,,1,2,0,0,110926,105532,111203,0,1,0,0,1,0,0,0
 200549,Scalecommander Emberthal,,,,0,7,0,0,102031,0,0,0,1,1,1,1,0,0,0
 200554,Obsidian Warder,,,,0,7,0,0,104843,104844,104845,104846,1,1,1,1,0,0,0
-200555,Invisible Stalker,,,,0,10,0,0,32670,11686,0,0,0,1,1,1,0,0,0
+200555,Invisible Stalker,,,,0,10,0,3,32670,11686,0,0,0,1,1,1,0,0,0
 200556,Dark Talon,,,,0,7,0,0,104841,104842,104839,104840,1,1,1,1,0,0,0
 200587,Spellsworn Crechebound,,,,0,2,0,0,105787,106358,105788,106359,1,1,1,1,192514,0,0
 200676,Firefly,,,,0,8,0,3,18724,0,0,0,1,1,1,1,0,0,0
@@ -18455,3 +18458,4 @@ ID,Name_lang,NameAlt_lang,Title_lang,TitleAlt_lang,Classification,CreatureType,C
 202985,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 202986,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 202987,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
+203424,Drakonid Crechebound,,,,1,2,0,0,104285,104286,104287,104288,1,1,1,1,192514,0,0
