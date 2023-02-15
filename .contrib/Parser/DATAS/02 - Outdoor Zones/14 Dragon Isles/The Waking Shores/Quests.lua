@@ -685,7 +685,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["collectible"] = false,
 				["g"] = {
 					q(66825, {	-- A Ruby Lifecalling
-						["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+						["sourceQuests"] = { 
+							66114,	-- For the Benefit of the Queen
+							70125,	-- Where is Wrathion? (A)
+							69910,	-- Where is Wrathion? (H)
+						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 191025 },	-- Lifecaller Tzadrak
 						["coord"] = { 61.9, 73.8, THE_WAKING_SHORES },
 					}),
@@ -837,7 +842,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["collectible"] = false,
 				["g"] = {
 					q(65690, {	-- A Cultist's Misgivings
-						["sourceQuests"] = { 66079 },	-- Wrathion Awaits
+						["sourceQuests"] = { 
+							66079,	-- Wrathion Awaits
+							70125,	-- Where is Wrathion? (A)
+							69910,	-- Where is Wrathion? (H)
+						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 185627 },	-- Ingot
 						["coord"] = { 39.4, 48.3, THE_WAKING_SHORES },
 					}),
@@ -847,7 +857,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["coord"] = { 37.4, 46.7, THE_WAKING_SHORES },
 					}),
 					q(65687, {	-- Punching Up
-						["sourceQuests"] = { 66079 },	-- Wrathion Awaits
+						["sourceQuests"] = { 
+							66079,	-- Wrathion Awaits
+							70125,	-- Where is Wrathion? (A)
+							69910,	-- Where is Wrathion? (H)
+						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 185627 },	-- Ingot
 						["coord"] = { 39.4, 48.3, THE_WAKING_SHORES },
 						["g"] = {
