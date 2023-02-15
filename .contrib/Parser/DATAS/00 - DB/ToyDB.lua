@@ -1142,6 +1142,8 @@ i(197961);	-- Whelps on Strings
 -- PATCH 10.0.5 --
 ------------------
 i(202020);	-- Chasing Storm
+i(202253);	-- Primal Stave of Claw and Fur
+i(202283);	-- Reading Glasses
 i(202207);	-- Reusable Oversized Bobber
 i(203716);	-- Thundering Banner of the Aspects
 -- NYI --

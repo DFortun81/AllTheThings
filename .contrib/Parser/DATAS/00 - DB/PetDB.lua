@@ -1269,7 +1269,10 @@ pet(190173, 3242);	-- Lil' Maka'jin
 pet(190175, 3243);	-- Pippin
 pet(0, 3254);	-- Watcher of the Huntress
 
-
+------------------
+-- PATCH 10.0.7 --
+------------------
+pet(202255, 3427);	-- Driftling
 
 -- #if ANYCLASSIC
 -----------------
