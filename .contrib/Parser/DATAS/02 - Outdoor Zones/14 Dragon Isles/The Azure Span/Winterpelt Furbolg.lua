@@ -25,12 +25,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
 				}),
 
+				q(72547),	-- Academic Acquisitions [Is this first version of Repeatable Quest??? Myr?]
+
 				-- Repeatable handins
 				q(72586, {	-- Additional Academic Acquisitions
 					["minReputation"] = { 2526, UNFRIENDLY+2050 },	-- Winterpelt Furbolg Unfriendly + 2050
 					["provider"] = { "n", 189401 },	-- Sonova Snowden
 					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
 					["repeatable"] = true,
+					["cost"] = { { "i", 202017, 5 } },	-- 5x Liberated Furbolg Artifacts
+					["g"] = {
+						spell(403661),	-- Knowledge: Winterpelt
+					}
+				}),
+				q(72587, {	-- Astonishing Academic Acquisitions
+					-- Check This is true?
+					["minReputation"] = { 2526, UNFRIENDLY+2050 },	-- Winterpelt Furbolg Unfriendly + 2050
+					["provider"] = { "n", 189401 },	-- Sonova Snowden
+					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["cost"] = { { "i", 202018, 1 } },	-- 1x Intact Scribe Stick
 					["g"] = {
 						spell(403661),	-- Knowledge: Winterpelt
 					}
@@ -50,7 +64,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 					["provider"] = { "n", 189401 },	-- Sonova Snowden
 					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
 					["g"] = {
-						i(202283),	-- Reading Glasses
+						i(202283),	-- Reading Glasses (TOY!)
 					},
 				}),
 				q(72559, {	-- History Heist
@@ -66,7 +80,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 					["provider"] = { "n", 189401 },	-- Sonova Snowden
 					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
 					["g"] = {
-						i(202253),	-- Primal Stave of Claw and Fur
+						i(202253),	-- Primal Stave of Claw and Fur (TOY!)
 					},
 				}),
 			}),
@@ -74,7 +88,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 				n(201105, {	-- Kazzi
 					["coord"] = { 49.4, 22.6, THE_AZURE_SPAN },
 					["g"] = {
-						n(BAGS, {
+						filter(BAGS, {
 							i(202287, {	-- Paw-Made Winterpelt Reagent Bag
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 100 },
@@ -82,7 +96,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 								["minReputation"] = { 2526, REVERED },
 							}),
 						}),
-						n(CONSUMABLES, {
+						filter(CONSUMABLES, {
 							i(202314, {	-- Big Chunk o' Meat
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 15 },
@@ -96,7 +110,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 								["minReputation"] = { 2526, FRIENDLY },
 							}),
 						}),
-						n(COSMETIC, {
+						filter(COSMETIC, {
 							i(204354, {	-- Hollowed Furbolg Food Pack
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 500 },
@@ -117,64 +131,64 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 							}),
 						}),
 						n(DRAKEWATCHER_MANUSCRIPTS, {
-							i(197006, {	-- Cliffside Wylderdrake: Plated Nose
+							i(197006, {	-- Cliffside Wylderdrake: Plated Nose (DM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 50 },
 								},
 								["minReputation"] = { 2526, HONORED },
 							}),
-							i(196995, {	-- Cliffside Wylderdrake: Spiked Horns
+							i(196995, {	-- Cliffside Wylderdrake: Spiked Horns (DM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 								},
 								["minReputation"] = { 2526, REVERED },
 							}),
-							i(197102, {	-- Highland Drake: Horned Chin
+							i(197102, {	-- Highland Drake: Horned Chin (DM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 								},
 								["minReputation"] = { 2526, REVERED },
 							}),
-							i(197129, {	-- Highland Drake: Sleek Horns
+							i(197129, {	-- Highland Drake: Sleek Horns (DM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 50 },
 								},
 								["minReputation"] = { 2526, HONORED },
 							}),
-							i(202279, {	-- Renewed Proto-Drake: Malevolent Horns
+							i(202279, {	-- Renewed Proto-Drake: Malevolent Horns (DM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 10 },
 								},
 								["minReputation"] = { 2526, REVERED },
 							}),
-							i(202273, {	-- Renewed Proto-Drake: Stubby Snout
+							i(202273, {	-- Renewed Proto-Drake: Stubby Snout (DM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 50 },
 								},
 								["minReputation"] = { 2526, HONORED },
 							}),
-							i(197583, {	-- Windborne Velocidrake: Exposed Finned Back
+							i(197583, {	-- Windborne Velocidrake: Exposed Finned Back (DM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 50 },
 								},
 								["minReputation"] = { 2526, HONORED },
 							}),
-							i(197629, {	-- Windborne Velocidrake: Spiked Neck
+							i(197629, {	-- Windborne Velocidrake: Spiked Neck (DM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 								},
 								["minReputation"] = { 2526, REVERED },
 							}),
 						}),
-						n(PET_BATTLE, {
-							i(202255, {	-- Driftling
+						filter(PET_BATTLE, {
+							i(202255, {	-- Driftling (PET!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 150 },
 								},
 								["minReputation"] = { 2526, EXALTED },
 							}),
 						}),
-						n(RECIPES, {
+						filter(RECIPES, {
 							i(202289, {	-- Recipe: Firewater Sorbet
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },

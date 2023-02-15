@@ -4,19 +4,80 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(QUESTS, {
-
-
-			-- Dailys??
-			q(73189, {	-- Creche Cache
-				-- ["sourceQuests"] = {  },
-				["provider"] = { "n", 200727 },	-- Volethi
-				["coord"] = { 32.4, 52.9, THE_FORBIDDEN_REACH },
+			q(74381, {	-- Hidden Legacies
+				["maps"] = { VALDRAKKEN },
 			}),
+
+
+
+			q(74359, {	-- Plunder Siege
+				-- ["sourceQuests"] = {  },
+				["provider"] = { "n", 200010 },	-- Atrenosh Hailstone
+				["coord"] = { 34.7, 57.6, THE_FORBIDDEN_REACH },
+			}),
+			q(73160, {	-- Helping Hand and Claw
+				-- ["sourceQuests"] = {  },
+				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+			}),
+			q(73159, {	-- Exploring Our Past
+				["sourceQuests"] = { 73160 },	-- Helping Hand and Claw
+				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+			}),
+			q(74379, {	-- Still Within Reach
+				-- ["sourceQuests"] = {  },
+				["provider"] = { "n", 200559 },	-- Treysh
+				["coord"] = { 35.6, 59.5, THE_FORBIDDEN_REACH },
+			}),
+
+
+
+
+			-- Dailys
 			q(73139, {	-- Deep Sea Supplies
 				-- ["sourceQuests"] = {  },
 				["provider"] = { "n", 200558 },	-- Tukkaraq
 				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
 			}),
+			q(73179, {	-- Soupocalypse Now!
+				-- ["sourceQuests"] = {  },
+				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
+				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+			}),
+			q(73190, {	-- Toxic Infestation
+				-- ["sourceQuests"] = {  },
+				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
+				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+			}),
+
+
+			-- Envoy
+
+			-- Dragonscale
+			q(74908, {	-- New Adventures
+				-- ["sourceQuests"] = {  },
+				-- ["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
+				["coord"] = { 34.2, 59.9, THE_FORBIDDEN_REACH },
+			}),
+			q(74389, {	-- Filming the Caldera
+				["sourceQuests"] = { 74908 },	-- New Adventures
+				["provider"] = { "n", 200566 },	-- Cataloger Daela
+				["coord"] = { 34.3, 60.0, THE_FORBIDDEN_REACH },
+			}),
+
+
+
+
+
+
+			-- Dailys?? [From Alex]
+			q(73189, {	-- Creche Cache
+				-- ["sourceQuests"] = {  },
+				["provider"] = { "n", 200727 },	-- Volethi
+				["coord"] = { 32.4, 52.9, THE_FORBIDDEN_REACH },
+			}),
+
 			q(73715, {	-- Driftwood Derby
 				-- ["sourceQuests"] = {  },
 				["provider"] = { "n", 200558 },	-- Tukkaraq

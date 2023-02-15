@@ -201,7 +201,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(202274),	-- Renewed Proto-Drake: Plated Brow
 		i(202275),	-- Renewed Proto-Drake: Plated Jaw
 		i(202277),	-- Renewed Proto-Drake: Bruiser Horns
-		i(202278),	-- Renewed Proto-Drake: Antlers
 		i(202280),	-- Renewed Proto-Drake: Pronged Tail
 		i(202290),	-- Firewater Sorbet
 		i(202294),	-- Recipe Pages
@@ -630,7 +629,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(204404),	-- Square Holders
 		i(204405),	-- Stuffed Bear
 		i(204406),	-- Ancient Design: Square Holders
-		i(196974),	-- Cliffside Wylderdrake: Four-Horned Chin
 		i(203217),	-- Dragonscale Surplus Crate
 		i(203220),	-- Iskaara Surplus Bag
 		i(203222),	-- Maruuk Surplus Bundle

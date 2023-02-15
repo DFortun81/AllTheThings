@@ -17,7 +17,6 @@ i(197012, 69212);	-- Cliffside Wylderdrake: Blue Scales
 i(197019, 69219);	-- Cliffside Wylderdrake: Blunt Spiked Tail
 i(196996, 69196);	-- Cliffside Wylderdrake: Branched Horns
 i(196965, 69165);	-- Cliffside Wylderdrake: Bronze and Teal Armor
-i(197000, 69200);	-- Cliffside Wylderdrake: Coiled Horns
 i(196981, 69181);	-- Cliffside Wylderdrake: Conical Head
 i(196979, 69179);	-- Cliffside Wylderdrake: Curled Head Horns
 i(197015, 69215);	-- Cliffside Wylderdrake: Dark Skin Variation
@@ -29,7 +28,7 @@ i(196984, 69184);	-- Cliffside Wylderdrake: Finned Jaw
 i(197022, 69222);	-- Cliffside Wylderdrake: Finned Neck
 i(197018, 69218);	-- Cliffside Wylderdrake: Finned Tail
 i(197002, 69202);	-- Cliffside Wylderdrake: Flared Cheek
-i(196974, 69174);	-- Cliffside Wylderdrake: Four Horned Chin
+i(196974, 69174);	-- Cliffside Wylderdrake: Four-Horned Chin
 i(196964, 69164);	-- Cliffside Wylderdrake: Gold and Black Armor
 i(196966, 69166);	-- Cliffside Wylderdrake: Gold and Orange Armor
 i(196967, 69167);	-- Cliffside Wylderdrake: Gold and White Armor
@@ -130,7 +129,6 @@ i(197123, 69324);	-- Highland Drake: Thorn Horns
 i(197115, 69316);	-- Highland Drake: Thorned Jaw
 i(197135, 69336);	-- Highland Drake: Toothy Mouth
 i(197107, 69308);	-- Highland Drake: Triple Finned Head
-i(197136, 69337);	-- Highland Drake: Tapered Nose
 i(197148, 69349);	-- Highland Drake: Vertical Finned Tail
 i(197146, 69347);	-- Highland Drake: White Scales
 i(197357, 69558);	-- Renewed Proto-Drake: Armor
@@ -206,7 +204,6 @@ i(197624, 69828);	-- Windborne Velocidrake: Club Tail
 i(197602, 69806);	-- Windborne Velocidrake: Cluster Horns
 i(197605, 69809);	-- Windborne Velocidrake: Curled Horns
 i(197603, 69807);	-- Windborne Velocidrake: Curved Horns
-i(197626, 69831);	-- Windborne Velocidrake: Exposed Finned Neck
 i(197621, 69825);	-- Windborne Velocidrake: Exposed Finned Tail
 i(197587, 69791);	-- Windborne Velocidrake: Feathered Back
 i(197630, 69836);	-- Windborne Velocidrake: Feathered Neck
@@ -273,9 +270,20 @@ i(197384, 69585);	-- Renewed Proto-Drake: Thick Spined Jaw [Item doesnt seem to 
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+i(197000, 69200);	-- Cliffside Wylderdrake: Coiled Horns
 i(197006, 69206);	-- Cliffside Wylderdrake: Plated Nose
 i(196995, 69195);	-- Cliffside Wylderdrake: Spiked Horns
 i(197102, 69303);	-- Highland Drake: Horned Chin
 i(197129, 69330);	-- Highland Drake: Sleek Horns
+i(197136, 69337);	-- Highland Drake: Tapered Nose
+i(202278, 73058);	-- Renewed Proto-Drake: Antlers
+i(202279, 73056);	-- Renewed Proto-Drake: Malevolent Horns
+i(202273, 73054);	-- Renewed Proto-Drake: Stubby Snout
 i(197583, 69787);	-- Windborne Velocidrake: Exposed Finned Back
+i(197626, 69831);	-- Windborne Velocidrake: Exposed Finned Neck
 i(197629, 69835);	-- Windborne Velocidrake: Spiked Neck
+-- Unknown --
+i(202277, 73057);	-- Renewed Proto-Drake: Bruiser Horns
+i(202274, 73055);	-- Renewed Proto-Drake: Plated Brow
+i(202275, 73059);	-- Renewed Proto-Drake: Plated Jaw
+i(202280, 73060);	-- Renewed Proto-Drake: Pronged Tail
