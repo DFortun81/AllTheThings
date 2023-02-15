@@ -134,12 +134,12 @@ namespace ATT
         /// <summary>
         /// The current phase release ID of the current build type.
         /// </summary>
-        public static readonly int CURRENT_RELEASE_PHASE = FIRST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
+        public static int CURRENT_RELEASE_PHASE { get; private set; }
 
         /// <summary>
         /// The last patch version of the current build type. [Format: ABBCCFFFFFF]
         /// </summary>
-        public static readonly long CURRENT_RELEASE_VERSION = LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME].ConvertVersion();
+        public static long CURRENT_RELEASE_VERSION { get; private set; }
 
         /// <summary>
         /// The first patch they added Transmog as something you could collect.
@@ -328,12 +328,14 @@ namespace ATT
                 Config.ApplyFile(filepath);
             }
             Log($"config: {filepath}");
-            CURRENT_RELEASE_PHASE_NAME = Config["CURRENT_RELEASE_PHASE_NAME"] ?? CURRENT_RELEASE_PHASE_NAME;
-            int[] configPatch = Config["LAST_EXPANSION_PATCH"];
+            CURRENT_RELEASE_PHASE_NAME = Config["DataPhase"] ?? CURRENT_RELEASE_PHASE_NAME;
+            int[] configPatch = Config["DataPatch"];
             if (configPatch != null)
             {
                 LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME] = configPatch;
             }
+            CURRENT_RELEASE_PHASE = FIRST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
+            CURRENT_RELEASE_VERSION = LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME].ConvertVersion();
             string[] configUseCounts = Config["TrackUseCounts"];
             if (configUseCounts != null)
             {
