@@ -5298,21 +5298,25 @@ local function DetermineNPCDrops(group)
 		-- search for groups of this NPC
 		local npcGroups = app.SearchForField("npcID", npcID);
 		if npcGroups then
+			local ParentField = app.RecursiveFirstParentWithField;
 			-- see if there's a difficulty wrapping the fill group
-			local difficultyID = app.RecursiveFirstParentWithField(group, "difficultyID");
+			local difficultyID = ParentField(group, "difficultyID");
 			if difficultyID then
 				-- app.PrintDebug("FillNPC.difficultyID",group.hash,difficultyID)
 				-- can only fill npc groups for the npc which match the difficultyID
-				local headerID, groups;
+				local headerID, groups, npcDiff;
 				for _,npcGroup in pairs(npcGroups) do
 					if npcGroup.hash ~= group.hash then
 						headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
 						-- where headerID is allowed and the nested difficultyID matches
-						if headerID and NPCExpandHeaders[headerID] and app.RecursiveFirstParentWithFieldValue(npcGroup, "difficultyID", difficultyID) then
+						if headerID and NPCExpandHeaders[headerID] then
+							npcDiff = ParentField(npcGroup, "difficultyID");
 							-- copy the header under the NPC groups
-							-- app.PrintDebug("NPCDrops Diff",difficultyID,group.hash,"<==",npcGroup.hash)
-							if groups then tinsert(groups, CreateObject(npcGroup))
-							else groups = { CreateObject(npcGroup) }; end
+							if not npcDiff or npcDiff == difficultyID then
+								-- app.PrintDebug("NPCDrops Diff",difficultyID,group.hash,"<==",npcGroup.hash)
+								if groups then tinsert(groups, CreateObject(npcGroup))
+								else groups = { CreateObject(npcGroup) }; end
+							end
 						end
 					end
 				end
