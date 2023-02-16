@@ -537,7 +537,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			crit(2, {	-- Avis Gryphonheart
 				["cr"] = 193356,
-				["coord"] = { 51.4, 18.4, THE_WAKING_SHORES },
+				["coords"] = {
+					{ 51.4, 18.4, THE_WAKING_SHORES },
+					{ 33.1, 76.3, THE_WAKING_SHORES },
+					{ 58.6, 20.6, OHNAHRAN_PLAINS },
+					{ 58.2, 31.8, OHNAHRAN_PLAINS },
+					{ 63.2, 57.0, OHNAHRAN_PLAINS },
+					{ 36.2, 32.0, THE_AZURE_SPAN },
+				},
 			}),
 			crit(3, {	-- Blue Terror
 				["cr"] = 193259,
@@ -569,7 +576,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			crit(10, {	-- Halia Cloudfeather
 				["cr"] = 193354,
-				["coord"] = { 51.4, 18.2, THE_WAKING_SHORES },
+				["coords"] = {
+					{ 51.4, 18.4, THE_WAKING_SHORES },
+					{ 33.1, 76.3, THE_WAKING_SHORES },
+					{ 58.6, 20.6, OHNAHRAN_PLAINS },
+					{ 58.2, 31.8, OHNAHRAN_PLAINS },
+					{ 63.2, 57.0, OHNAHRAN_PLAINS },
+					{ 36.2, 32.0, THE_AZURE_SPAN },
+				},
 			}),
 			crit(11, {	-- Horned Filcher
 				["cr"] = 190218,
@@ -593,7 +607,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			crit(16, {	-- Palla of the Wing
 				["cr"] = 193357,
-				["coord"] = { 51.4, 18.4, THE_WAKING_SHORES },
+				["coords"] = {
+					{ 51.4, 18.4, THE_WAKING_SHORES },
+					{ 33.1, 76.3, THE_WAKING_SHORES },
+					{ 58.6, 20.6, OHNAHRAN_PLAINS },
+					{ 58.2, 31.8, OHNAHRAN_PLAINS },
+					{ 63.2, 57.0, OHNAHRAN_PLAINS },
+					{ 36.2, 32.0, THE_AZURE_SPAN },
+				},
 			}),
 			crit(17, {	-- Pine Flicker
 				["cr"] = 190221,
