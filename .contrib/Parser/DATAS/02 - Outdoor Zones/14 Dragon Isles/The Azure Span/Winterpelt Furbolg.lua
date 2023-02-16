@@ -198,13 +198,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 								},
 							}),
 						}),
-						petbattle(filter(BATTLE_PETS, {
+						filter(BATTLE_PETS, {
 							i(202255, {	-- Driftling (PET!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 150 },
 								},
 							}),
-						})),
+						}),
 						filter(RECIPES, {
 							i(202289, {	-- Recipe: Firewater Sorbet
 								["cost"] = {
