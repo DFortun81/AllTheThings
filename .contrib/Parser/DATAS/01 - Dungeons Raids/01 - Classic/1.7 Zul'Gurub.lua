@@ -962,6 +962,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #if BEFORE 4.0.3
+				i(12662, {	-- Demonic Rune
+					["cr"] = 15111,	-- Mad Servant
+				}),
+				-- #endif
 				i(20263),	-- Gurubashi Helm
 				i(19908),	-- Sceptre of Smiting
 				i(20261),	-- Shadow Panther Hide Belt

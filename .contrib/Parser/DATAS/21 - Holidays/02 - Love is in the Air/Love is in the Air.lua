@@ -155,6 +155,9 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["providers"] = {
 					{ "n", 9099 },	-- Sraaz <Pie Vendor>
 					{ "i", 22218 },	-- Handful of Rose Petals
+					{ "i", 49857 },	-- "Enchantress" Perfume
+					{ "i", 49858 },	-- "Forever" Perfume
+					{ "i", 49856 },	-- "VICTORY" Perfume
 				},
 				["coord"] = { 46.6, 48.4, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
@@ -163,6 +166,9 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["providers"] = {
 					{ "n", 8403 },	-- Jeremiah Payson <Cockroach Vendor>
 					{ "i", 22218 },	-- Handful of Rose Petals
+					{ "i", 49857 },	-- "Enchantress" Perfume
+					{ "i", 49858 },	-- "Forever" Perfume
+					{ "i", 49856 },	-- "VICTORY" Perfume
 				},
 				["coord"] = { 67.6, 43.8, UNDERCITY },
 				["races"] = HORDE_ONLY,
@@ -1845,6 +1851,30 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 						["timeline"] = { "added 4.3.0.15005" },
 						["cost"] = { { "i", 49927, 270 } },	-- 270x Love Token
 					}),
+					i(49859, {	-- "Bravado" Cologne
+						["timeline"] = { "added 3.3.2.11403" },
+						["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					}),
+					i(49857, {	-- "Enchantress" Perfume
+						["timeline"] = { "added 3.3.2.11403" },
+						["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					}),
+					i(49858, {	-- "Forever" Perfume
+						["timeline"] = { "added 3.3.2.11403" },
+						["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					}),
+					i(49861, {	-- "STALWART" Cologne
+						["timeline"] = { "added 3.3.2.11403" },
+						["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					}),
+					i(49856, {	-- "VICTORY" Perfume
+						["timeline"] = { "added 3.3.2.11403" },
+						["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					}),
+					i(49860, {	-- "Wizardry" Cologne
+						["timeline"] = { "added 3.3.2.11403" },
+						["cost"] = { { "i", 49927, 1 } },	-- 1x Love Token
+					}),
 					i(49909, {	-- Box of Chocolates
 						["timeline"] = { "added 3.3.2.11403" },
 						["cost"] = { { "i", 49927, 10 } },	-- 10x Love Token
@@ -1860,6 +1890,10 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					}),
 					i(22218, {	-- Handful of Rose Petals
 						["cost"] = { { "i", 49927, 2 } },	-- 2x Love Token
+					}),
+					i(22261, {	-- Love Fool
+						["timeline"] = { "added 3.3.2.11403" },
+						["cost"] = { { "i", 49927, 10 } },	-- 10x Love Token
 					}),
 					i(34258, {	-- Love Rocket
 						["timeline"] = { "added 2.3.0.7382" },
