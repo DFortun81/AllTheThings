@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 				}),
-				q(7838, {	-- Arena Grandmaster
+				pvp(q(7838, {	-- Arena Grandmaster
 					["qg"] = 14508,	-- Short John Mithril
 					["sourceQuest"] = 7810,	-- Arena Master
 					["coord"] = { 45.0, 25.4, THE_CAPE_OF_STRANGLETHORN },
@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(19024),	-- Arena Grand Master
 					},
-				}),
+				})),
 				q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
 					["altQuests"] = { 7908 },	-- Arena Master
