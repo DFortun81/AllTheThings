@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 				}),
 			}),
-			o(179697, {	-- Arena Treasure Chest
+			pvp(o(179697, {	-- Arena Treasure Chest
 				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
 				["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 				["groups"] = {
@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["timeline"] = { "added 6.1.0.19480" },
 					}),
 				},
-			}),
+			})),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				p(411, {	-- Baby Ape
