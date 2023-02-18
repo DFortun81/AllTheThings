@@ -888,33 +888,6 @@ namespace ATT
             Items.Merge(data);
             Objects.Merge(data);
 
-            // only clean the name after merging into the data dictionaries (since that is referenced elsewhere via itemID)
-            if (data.TryGetValue("name", out string name))
-            {
-                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object objKeyValue))
-                {
-                    long id = Convert.ToInt64(objKeyValue);
-                    // Store the name of this object (or whatever it is) in our table.
-                    if (!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<long, object> names))
-                    {
-                        NAMES_BY_TYPE[objectData.ObjectType] = names = new Dictionary<long, object>();
-                    }
-                    names[id] = name;
-
-#if RETAIL
-                    switch (objectData.ObjectType)
-                    {
-                        // only certain types we will auto-localize, so remove the raw 'name' field
-                        case "questID":
-                        case "itemID":
-                            data.Remove("name");
-                            break;
-                    }
-#endif
-                }
-            }
-
             return true;
         }
 
@@ -1266,6 +1239,33 @@ namespace ATT
                         IncrementTypeUseCount(key, id);
                     if (data.TryGetValue("questIDH", out id))
                         IncrementTypeUseCount(key, id);
+                }
+            }
+
+            // only clean the name after other processing is complete
+            if (data.TryGetValue("name", out string name))
+            {
+                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
+                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object objKeyValue))
+                {
+                    long id = Convert.ToInt64(objKeyValue);
+                    // Store the name of this object (or whatever it is) in our table.
+                    if (!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<long, object> names))
+                    {
+                        NAMES_BY_TYPE[objectData.ObjectType] = names = new Dictionary<long, object>();
+                    }
+                    names[id] = name;
+
+#if RETAIL
+                    switch (objectData.ObjectType)
+                    {
+                        // only certain types we will auto-localize, so remove the raw 'name' field
+                        case "questID":
+                        case "itemID":
+                            data.Remove("name");
+                            break;
+                    }
+#endif
                 }
             }
 
@@ -1967,8 +1967,11 @@ namespace ATT
             Log("Building Unsorted...");
             List<object> listing;
             long requireSkill;
-            var unsorted = new List<object>();
-            Objects.AllContainers["Unsorted"] = unsorted;
+            if (!Objects.AllContainers.TryGetValue("Unsorted", out List<object> unsorted))
+            {
+                unsorted = new List<object>();
+                Objects.AllContainers["Unsorted"] = unsorted;
+            }
             if (Items.GetNull(30000) == null) // Classic, no Tier Objects
             {
                 Dictionary<long, List<object>> FilteredLists = new Dictionary<long, List<object>>();
@@ -1995,11 +1998,11 @@ namespace ATT
                                     {
                                         if (!FilteredLists.TryGetValue(filterID, out listing))
                                         {
-                                            unsorted.Add(new Dictionary<string, object>
-                                        {
-                                            { "f", filterID },
-                                            { "g", listing = FilteredLists[filterID] = new List<object>() }
-                                        });
+                                            Objects.Merge(unsorted, new Dictionary<string, object>
+                                            {
+                                                { "f", filterID },
+                                                { "g", listing = FilteredLists[filterID] = new List<object>() }
+                                            });
                                         }
                                         if (item.TryGetValue("requireSkill", out object requireSkillRef))
                                         {
@@ -2007,10 +2010,10 @@ namespace ATT
                                             if (!ProfessionLists.TryGetValue(requireSkill, out List<object> sublisting))
                                             {
                                                 listing.Add(new Dictionary<string, object>
-                                            {
-                                                {"professionID", requireSkill },
-                                                { "g", listing = ProfessionLists[requireSkill] = new List<object>() }
-                                            });
+                                                {
+                                                    {"professionID", requireSkill },
+                                                    { "g", listing = ProfessionLists[requireSkill] = new List<object>() }
+                                                });
                                             }
                                             else
                                             {
@@ -2022,10 +2025,10 @@ namespace ATT
                                             if (!ProfessionLists.TryGetValue(-1, out List<object> sublisting))
                                             {
                                                 listing.Add(new Dictionary<string, object>
-                                            {
-                                                { "f", (int)Objects.Filters.Miscellaneous },
-                                                { "g", listing = ProfessionLists[-1] = new List<object>() }
-                                            });
+                                                {
+                                                    { "f", (int)Objects.Filters.Miscellaneous },
+                                                    { "g", listing = ProfessionLists[-1] = new List<object>() }
+                                                });
                                             }
                                             else
                                             {
@@ -2036,9 +2039,9 @@ namespace ATT
                                         if (item.TryGetValue("itemID", out long itemID))
                                         {
                                             var newItem = new Dictionary<string, object>
-                                        {
-                                            {"itemID", itemID },
-                                        };
+                                            {
+                                                {"itemID", itemID },
+                                            };
                                             Items.MergeInto(itemID, item, newItem);
                                             listing.Add(newItem);
                                         }
@@ -2052,19 +2055,19 @@ namespace ATT
                                         {
                                             if (!FilteredLists.TryGetValue(filterID, out listing))
                                             {
-                                                unsorted.Add(new Dictionary<string, object>
-                                            {
-                                                { "f", filterID },
-                                                { "g", listing = FilteredLists[filterID] = new List<object>() }
-                                            });
+                                                Objects.Merge(unsorted, new Dictionary<string, object>
+                                                {
+                                                    { "f", filterID },
+                                                    { "g", listing = FilteredLists[filterID] = new List<object>() }
+                                                });
                                             }
 
                                             if (item.TryGetValue("itemID", out long itemID))
                                             {
                                                 var newItem = new Dictionary<string, object>
-                                            {
-                                                {"itemID", itemID },
-                                            };
+                                                {
+                                                    {"itemID", itemID },
+                                                };
                                                 Items.MergeInto(itemID, item, newItem);
                                                 listing.Add(newItem);
                                             }
@@ -2081,7 +2084,7 @@ namespace ATT
                 var tierLists = new Dictionary<int, TierList>();
                 for (int tierID = 1; tierID <= 9; ++tierID)
                 {
-                    unsorted.Add(new Dictionary<string, object>
+                    Objects.Merge(unsorted, new Dictionary<string, object>
                     {
                         { "tierID", tierID },
                         { "g", (tierLists[tierID] = new TierList()).Groups },
@@ -2350,7 +2353,7 @@ namespace ATT
                 }
                 if (unsortedQuests.Count > 0)
                 {
-                    unsorted.Add(new Dictionary<string, object>
+                    Objects.Merge(unsorted, new Dictionary<string, object>
                     {
                         { "npcID", -17 },
                         { "g", unsortedQuests },

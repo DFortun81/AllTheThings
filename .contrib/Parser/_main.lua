@@ -34,6 +34,7 @@ ROOTS = {
 	["Secrets"] = "Secrets",
 	["TradingPost"] = "TradingPost",
 	["Uncollectable"] = "Uncollectable",
+	["Unsorted"] = "Unsorted",
 	["WorldDrops"] = "WorldDrops",
 	["WorldEvents"] = "WorldEvents",
 	["Zones"] = "Zones",
