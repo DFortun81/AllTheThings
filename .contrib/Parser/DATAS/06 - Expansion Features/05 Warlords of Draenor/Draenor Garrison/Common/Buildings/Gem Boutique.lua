@@ -45,6 +45,10 @@ _.ExpansionFeatures =
 					n(VENDORS, {
 						n(77356, {	-- Costan Highwall <Jewelcrafter>
 							["races"] = ALLIANCE_ONLY,
+							["sym"] = {
+								{"select","npcID",87052},{"pop"},	-- Artificer Harlaan <Jewelcrafting Designs> (A)
+								{"exclude", "itemID", 115359 },	-- Draenor Jewelcrafting
+							},
 							["g"] = {
 								i(115359, {	-- Draenor Jewelcrafting
 									["filterID"] = MISC,
@@ -62,73 +66,15 @@ _.ExpansionFeatures =
 											recipe(170700),	-- Taladite Crystal
 										}),
 									},
-								}),
-								i(116096, {	-- Recipe: Critical Strike Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116093, {	-- Recipe: Glowing Taladite Pendant
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116090, {	-- Recipe: Glowing Taladite Ring
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116102, {	-- Recipe: Greater Critical Strike Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116103, {	-- Recipe: Greater Haste Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116104, {	-- Recipe: Greater Mastery Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116107, {	-- Recipe: Greater Stamina Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116106, {	-- Recipe: Greater Versatility Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116097, {	-- Recipe: Haste Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116098, {	-- Recipe: Mastery Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116109, {	-- Recipe: Prismatic Focusing Lens
-									["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
-								}),
-								i(116108, {	-- Recipe: Reflecting Prism
-									["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
-								}),
-								i(116094, {	-- Recipe: Shifting Taladite Pendant
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116091, {	-- Recipe: Shifting Taladite Ring
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116101, {	-- Recipe: Stamina Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116079, {	-- Recipe: Taladite Amplifier
-									["collectible"] = false,
-									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116078, {	-- Recipe: Taladite Recrystalizer
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116100, {	-- Recipe: Versatility Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116095, {	-- Recipe: Whispering Taladite Pendant
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116092, {	-- Recipe: Whispering Taladite Ring
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
 							},
 						}),
 						n(79832, {	-- Dorogarr <Jewelcrafter>
 							["races"] = HORDE_ONLY,
+							["sym"] = {
+								{"select","npcID",87548},{"pop"},	-- Kaevan Highwit <Jewelcrafting Designs> (H)
+								{"exclude", "itemID", 115359 },	-- Draenor Jewelcrafting
+							},
 							["g"] = {
 								i(115359, {	-- Draenor Jewelcrafting
 									["filterID"] = MISC,
@@ -146,68 +92,6 @@ _.ExpansionFeatures =
 											recipe(170700),	-- Taladite Crystal
 										}),
 									},
-								}),
-								i(116096, {	-- Recipe: Critical Strike Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116093, {	-- Recipe: Glowing Taladite Pendant
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116090, {	-- Recipe: Glowing Taladite Ring
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116102, {	-- Recipe: Greater Critical Strike Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116103, {	-- Recipe: Greater Haste Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116104, {	-- Recipe: Greater Mastery Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116107, {	-- Recipe: Greater Stamina Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116106, {	-- Recipe: Greater Versatility Taladite
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116097, {	-- Recipe: Haste Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116098, {	-- Recipe: Mastery Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116109, {	-- Recipe: Prismatic Focusing Lens
-									["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
-								}),
-								i(116108, {	-- Recipe: Reflecting Prism
-									["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
-								}),
-								i(116094, {	-- Recipe: Shifting Taladite Pendant
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116091, {	-- Recipe: Shifting Taladite Ring
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116101, {	-- Recipe: Stamina Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116079, {	-- Recipe: Taladite Amplifier
-									["collectible"] = false,
-									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
-									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
-								}),
-								i(116078, {	-- Recipe: Taladite Recrystalizer
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116100, {	-- Recipe: Versatility Taladite
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116095, {	-- Recipe: Whispering Taladite Pendant
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
-								}),
-								i(116092, {	-- Recipe: Whispering Taladite Ring
-									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
 							},
 						}),

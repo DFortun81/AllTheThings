@@ -38,7 +38,7 @@ _.ExpansionFeatures =
 						n(79826, {	-- Pozzlow
 							["races"] = HORDE_ONLY,
 							["sym"] = {
-								{"select","npcID",87065},{"pop"},	-- Singegruff <Adventuring Supplies>
+								{"select","npcID",87552},{"pop"},	-- Nik Steelrings <Engineering Plans> (H)
 								{"exclude", "itemID", 111921 },	-- 
 								{"exclude", "itemID", 119299 },	-- 
 							},
@@ -60,7 +60,7 @@ _.ExpansionFeatures =
 						n(77365, {	-- Zaren Hoffle <Engineer>
 							["races"] = ALLIANCE_ONLY,
 							["sym"] = {
-								{"select","npcID",87065},{"pop"},	-- Singegruff <Adventuring Supplies>
+								{"select","npcID",87065},{"pop"},	-- Sean Catchpole <Engineering Plans> (A)
 								{"exclude", "itemID", 111921 },	-- 
 								{"exclude", "itemID", 119299 },	-- 
 							},
