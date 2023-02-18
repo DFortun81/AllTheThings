@@ -4890,7 +4890,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			tinsert(info, 1, { left = GetAddedWithPatchString(group.awp), wrap = true, color = app.Colors.AddedWithPatch });
 		end
 		if group.u and (not group.crs or group.itemID or group.s) then
-			tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
+			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
+			if group.u == 1 and app.RecursiveFirstParentWithField(group, "_missing", true) then
+				tinsert(info, { left = L["UNSORTED_DESC"], wrap = true, color = app.Colors.ChatLinkError });
+			else
+				tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
+			end
 		end
 		-- an item used for a faction which is repeatable
 		if group.itemID and group.factionID and group.repeatable then
@@ -7618,6 +7623,8 @@ local ObjectFunctions = {
 	-- whether something is considered 'missing' by seeing if it can search for itself
 	["_missing"] = function(t)
 		local key = t.key;
+		-- only process this logic for real 'Things' in the game
+		if not app.ThingKeys[key] then return; end
 		local o = app.SearchForObject(key, t[key], "field");
 		local missing = true;
 		while o do
@@ -8516,7 +8523,6 @@ local function TryPopulateQuestRewards(questObject)
 
 	-- Add info for currency rewards as containers for their respective collectibles
 	local numCurrencies = GetNumQuestLogRewardCurrencies(questID);
-	local skipCollectibleCurrencies = not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 	local currencyID, cachedCurrency;
 	for j=1,numCurrencies,1 do
 		currencyID = select(4, GetQuestLogRewardCurrencyInfo(j, questID));
@@ -8621,7 +8627,7 @@ local function TryPopulateQuestRewards(questObject)
 		end
 	end
 
-	BuildGroups(questObject, questObject.g);
+	BuildGroups(questObject);
 	-- Update the group directly
 	app.DirectGroupUpdate(questObject);
 end
@@ -23060,7 +23066,7 @@ local function AttachTooltip(self, ttdata)
 			-- TODO: review if Blizzard ever fixes their tooltips returning the wrong Item link when using TooltipUtil.GetDisplayedItem
 			-- on Auction House tooltips (i.e. Recipes) where one Item is nested inside another Item
 			if itemID ~= ttId then
-				app.PrintDebug("Mismatch TT data!",link,itemID,ttId)
+				-- app.PrintDebug("Mismatch TT data!",link,itemID,ttId)
 				-- fallout to the generalized Item search below
 			else
 				AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
