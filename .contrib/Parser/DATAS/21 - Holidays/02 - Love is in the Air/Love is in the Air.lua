@@ -1710,11 +1710,11 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 			["description"] = "The following items can be purchased from innkeepers.",
 			["groups"] = {
 				i(21833, {	-- Cologne Bottle
-					["timeline"] = { "removed 3.3.2.11403" },
+					["timeline"] = { "removed 3.3.2.11403", "added 8.1.0" },
 					["_drop"] = { "f", "spellID" },
 				}),
 				i(21829, {	-- Perfume Bottle
-					["timeline"] = { "removed 3.3.2.11403" },
+					["timeline"] = { "removed 3.3.2.11403", "added 8.1.0" },
 					["_drop"] = { "f", "spellID" },
 				}),
 				i(21815, {	-- Love Token
