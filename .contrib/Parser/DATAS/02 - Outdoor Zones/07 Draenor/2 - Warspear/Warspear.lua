@@ -3667,19 +3667,41 @@ _.Zones =
 										recipe(178497),	-- Warbinder's Ink
 									},
 								}),
-								i(118605),	-- Technique: Crystalfire Spellstaff
-								i(118606),	-- Technique: Darkmoon Card of Draenor
+								i(118605, {	-- Technique: Crystalfire Spellstaff
+									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+								}),
+								i(118606, {	-- Technique: Darkmoon Card of Draenor
+									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
+								}),
 								i(120265, {	-- Technique: Ensorcelled Tarot
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
 								}),
-								i(118607),	-- Technique: Etched-Blade Warstaff
-								i(118613),	-- Technique: Shadowtome
-								i(118614),	-- Technique: Volatile Crystal
-								i(118615),	-- Technique: Warmaster's Firestick
+								i(118607, {	-- Technique: Etched-Blade Warstaff
+									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+								}),
+								i(202236, {	-- Technique: Impressive Weapon Crystal
+									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
+								i(202237, {	-- Technique: Remarkable Weapon Crystal
+									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+									["timeline"] = { ADDED_DF_0_5 },
+								}),
+								i(118613, {	-- Technique: Shadowtome
+									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+								}),
+								i(118614, {	-- Technique: Volatile Crystal
+									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+								}),
+								i(118615, {	-- Technique: Warmaster's Firestick
+									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+								}),
 								i(118610, {	-- Technique: Weapon Crystal
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
 									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 								un(NEVER_IMPLEMENTED, i(118608)),	-- Technique: Greater Weapon Crystal
@@ -3728,30 +3750,6 @@ _.Zones =
 							["g"] = {
 								i(111921, {	-- Draenor Engineering
 									["filterID"] = MISC,
-								}),
-								i(119299, {	-- Secret of Draenor Engineering
-									["filterID"] = MISC,
-									["g"] = {
-										i(118493),	-- Schematic: Didi's Delicate Assembly
-										i(118490),	-- Schematic: Blingtron 5000
-										i(118480),	-- Schematic: Findle's Loot-a-Rang
-										i(118495),	-- Schematic: Hemet's Heartseeker
-										i(118485),	-- Schematic: Lifelike Mechanical Frostboar
-										i(118484),	-- Schematic: Mechanical Axebeak
-										i(119177),	-- Schematic: Mechanical Scorpid
-										i(118478),	-- Schematic: Megawatt Filament
-										i(118477),	-- Schematic: Oglethorpe's Missle Splitter
-										i(118487),	-- Schematic: Personal Hologram
-										i(118497),	-- Schematic: Cybergenetic Mechshades
-										i(118498),	-- Schematic: Night-Vision Mechshades
-										i(118499),	-- Schematic: Plasma Mechshades
-										i(118500),	-- Schematic: Razorguard Mechshades
-										i(118476),	-- Schematic: Shrediron's Shredder
-										i(118489),	-- Schematic: Swapblaster
-										i(118481),	-- Schematic: World Shrinker
-										i(118488),	-- Schematic: Wormhole Centrifuge
-										i(128327),	-- Small Pouch of Coins
-									},
 								}),
 								i(118490, {	-- Schematic: Blingtron 5000
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
@@ -3871,7 +3869,7 @@ _.Zones =
 								}),
 							},
 						}),
-						n(88253, {	-- Srikka
+						n(88253, {	-- Srikka <Archaeology>
 							["coord"] = { 74.4, 31.6, WARSPEAR },
 							["g"] = {
 								i(122606, {	-- Explorer's Notebook
