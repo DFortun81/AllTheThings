@@ -1887,6 +1887,16 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					}),
 					i(21813, {	-- Bag of Heart Candies
 						["cost"] = { { "i", 49927, 2 } },	-- 2x Love Token
+						["groups"] = {
+							i(21816),	-- Heart Candy (Be Mine!)
+							i(21817),	-- Heart Candy (I LOVE YOU)
+							i(21818),	-- Heart Candy (I'll follow you all around Azeroth.)
+							i(21819),	-- Heart Candy (All yours.)
+							i(21820),	-- Heart Candy (You're the best!)
+							i(21821),	-- Heart Candy (I'm all yours!)
+							i(21822),	-- Heart Candy (You're mine!)
+							i(21823),	-- Heart Candy (Hot lips!)
+						},
 					}),
 					i(22218, {	-- Handful of Rose Petals
 						["cost"] = { { "i", 49927, 2 } },	-- 2x Love Token
