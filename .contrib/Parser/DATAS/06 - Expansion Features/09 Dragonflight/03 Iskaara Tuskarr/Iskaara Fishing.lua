@@ -241,6 +241,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
 					["isRepeatable"] = true,
 				}),
+				q(72786, {	-- Contribue Supplies: Strong Seavine
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
+					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
+					["isRepeatable"] = true,
+				}),
+				q(72788, {	-- Contribue Supplies: Irontree Branch
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
+					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
+					["isRepeatable"] = true,
+				}),
 			}),
 			prof(TUSKARR_FISHING_GEAR, sharedData({
 				["requireSkill"] = FISHING,	-- Minimum 25, but it shows in the tooltip
@@ -516,6 +528,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(74370),	-- Triggered with 'Contribute Supplies: Battered Imbu-made Net'
 		q(74369),	-- Triggered with 'Contribute Supplies: Salinated Serevite'
 		q(74368),	-- Triggered with 'Contribute Supplies: Khaz'gorite-infused Resin'
+		q(74372),	-- Triggered with 'Contribute Supplies: Strong Seavine'
+		q(74367),	-- Triggered with 'Contribute Supplies: Irontree Branch'
 		--
 		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
 		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)
