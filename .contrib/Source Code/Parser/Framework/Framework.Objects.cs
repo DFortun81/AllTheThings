@@ -2631,38 +2631,12 @@ end
                             }
                             else
                             {
-                                // The item does not have a Bonus ID or a Mod ID, so we can simply merge with the first one.
-                                foreach (var entryRef in container)
-                                {
-                                    // Cache the container entry for comparisons.
-                                    var temp = entryRef as Dictionary<string, object>;
-                                    if (temp == null) continue;
-
-                                    // Compare the most significant IDs and if they match, this is what I'm looking for!
-                                    if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
-                                    {
-                                        entry = temp;
-                                        break;
-                                    }
-                                }
+                                entry = container.FindObject(mostSignificantID, id);
                             }
                         }
                         else
                         {
-                            // We need to look for the ID type.
-                            foreach (var entryRef in container)
-                            {
-                                // Cache the container entry for comparisons.
-                                if (entryRef is Dictionary<string, object> temp)
-                                {
-                                    // Compare the most significant IDs and if they match, this is what I'm looking for!
-                                    if (temp.TryGetValue(mostSignificantID, out object fieldRef) && fieldRef.Equals(id))
-                                    {
-                                        entry = temp;
-                                        break;
-                                    }
-                                }
-                            }
+                            entry = container.FindObject(mostSignificantID, id);
                         }
                     }
                 }

@@ -301,6 +301,23 @@ namespace ATT
             return false;
         }
 
+        public static Dictionary<string, object> FindObject(this List<object> list, string key, object value)
+        {
+            if (list == null || list.Count == 0) return null;
+
+            // We need to look for the ID type.
+            foreach (var obj in list)
+            {
+                // Cache the container entry for comparisons.
+                if (obj is Dictionary<string, object> thing && thing.TryGetValue(key, out object thingVal) && value.Equals(thingVal))
+                {
+                    return thing;
+                }
+            }
+
+            return null;
+        }
+
         /// <summary>
         /// Try to get a dictionary from the dictionary.
         /// </summary>

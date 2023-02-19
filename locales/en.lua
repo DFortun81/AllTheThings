@@ -883,7 +883,7 @@ app.L = {
 		[111] = GetItemClassInfo(16),							-- Glyph
 		[112] = FACTION,										-- Factions
 		[113] = INVTYPE_BAG,									-- Bags
-		[114] = MOUNT_EQUIPMENT_LEVEL_UP_FEATURE,				-- Mount Equipment
+		[114] = GetItemSubClassInfo(13,0),						-- Key
 
 		-- "Recipes"
 		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes
