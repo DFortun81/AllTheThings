@@ -411,7 +411,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added
 			}),
 			d(MYTHIC_RAID, {
 				["description"] = "Items at 278 item level or above will take the Mythic Appearance.\nSeason 4 (speculated): item level 304 and higher.",
-				["g"] = bubbleDown({ ["modID"] = 6  }, {
+				["g"] = bubbleDown({ ["modID"] = 6 }, {
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 6),
 						["g"] = {

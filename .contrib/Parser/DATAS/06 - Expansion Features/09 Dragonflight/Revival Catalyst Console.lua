@@ -71,7 +71,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			d(LFR_RAID, {
 				["description"] = "",
-				["g"] = bubbleDown({ ["modID"] = 4 }, {
+				["g"] = bubbleDown({ ["bonusID"] = 451 }, {
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 4),
 						["g"] = {
@@ -315,7 +315,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			d(HEROIC_RAID, {
 				["description"] = "",
-				["g"] = bubbleDown({ ["modID"] = 5 }, {
+				["g"] = bubbleDown({ ["bonusID"] = 1 }, {
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 5),
 						["g"] = {
@@ -437,7 +437,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			d(MYTHIC_RAID, {
 				["description"] = "",
-				["g"] = bubbleDown({ ["modID"] = 6  }, {
+				["g"] = bubbleDown({ ["bonusID"] = 450 }, {
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 6),
 						["g"] = {
