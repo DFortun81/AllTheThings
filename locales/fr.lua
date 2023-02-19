@@ -1351,6 +1351,7 @@ for key,value in pairs({
 	[181638] = "Avis de recherche",	-- Wanted Poster
 	[181643] = "Cadavre de Barbe-de-plumes",	-- Featherbeard's Remains
 	[181649] = "Journal de Barbe-de-plumes",	-- Featherbeard's Journal
+	[181665] = "Coffre funéraire",	-- Burial Chest
 	[181672] = "Effigie de l'homme d'osier",	-- Wickerman Effigy
 	[181681] = "Calice d'Élune",	-- Chalice of Elune
 	[181687] = "Tas de bois",	-- Lumber Pile
@@ -1385,6 +1386,7 @@ for key,value in pairs({
 	[184465] = "Cache de la Légion",	-- Cache of the Legion
 	[184660] = "Avis de recherche",	-- Wanted Poster
 	[184684] = "Œuf d'écorcheur vorace",	-- Ravenous Flayer Egg
+	[184793] = "Coffre primitif",	-- Primitive Chest
 	[184825] = "Tome lashh'an",	-- Lashh'an Tome
 	[184945] = "Avis de recherche",	-- Wanted Poster
 	[184946] = "Avis de recherche",	-- Wanted Poster

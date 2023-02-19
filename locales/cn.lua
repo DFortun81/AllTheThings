@@ -1367,6 +1367,7 @@ for key, value in pairs({
 	[181638] = "通缉布告",	-- Wanted Poster
 	[181643] = "羽须的遗骸",	-- Featherbeard's Remains	--TODO: This was taken from wotlk Wowhead
 	[181649] = "羽须的日记",	-- Featherbeard's Journal
+	--TODO: [181665] = "Burial Chest",	-- Burial Chest
 	[181672] = "稻草人",	-- Wickerman Effigy	--TODO: This was taken from wotlk Wowhead
 	[181681] = "艾露恩的圣杯",	-- Chalice of Elune
 	[181687] = "木材堆",	-- Warsong Lumber Pile	--TODO: This was taken from wotlk Wowhead
@@ -1401,6 +1402,7 @@ for key, value in pairs({
 	[184465] = "军团宝箱",	-- Cache of the Legion
 	[184660] = "通缉布告",	-- Wanted Poster
 	[184684] = "贪婪剥石者的卵",	-- Ravenous Flayer Egg
+	--TODO: [184793] = "Primitive Chest",	-- Primitive Chest
 	[184825] = "拉什鸦巢宝典",	-- Lashh'an Tome
 	[184945] = "通缉布告",	-- Wanted Poster
 	[184946] = "通缉布告",	-- Wanted Poster

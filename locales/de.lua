@@ -1353,6 +1353,7 @@ for key,value in pairs({
 	[181638] = "Steckbrief",	-- Wanted Poster
 	[181643] = "Federbarts Überreste",	-- Featherbeard's Remains
 	[181649] = "Federbarts Tagebuch",	-- Featherbeard's Journal
+	[181665] = "Grabtruhe",	-- Burial Chest
 	[181672] = "Weidenmann",	-- Wickerman Effigy
 	[181681] = "Elunes Kelch",	-- Chalice of Elune
 	[181687] = "Holzstapel",	-- Lumber Pile
@@ -1387,6 +1388,7 @@ for key,value in pairs({
 	[184465] = "Behälter der Legion",	-- Cache of the Legion
 	[184660] = "Steckbrief",	-- Wanted Poster
 	[184684] = "Ei eines gefräßigen Schinders",	-- Ravenous Flayer Egg
+	[184793] = "Primitive Truhe",	-- Primitive Chest
 	[184825] = "Foliant der Lashh'an",	-- Lashh'an Tome
 	[184945] = "Steckbrief",	-- Wanted Poster
 	[184946] = "Steckbrief",	-- Wanted Poster

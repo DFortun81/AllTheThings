@@ -1356,6 +1356,7 @@ for key,value in pairs({
 	[181638] = "Cartel de Se busca",	-- Wanted Poster
 	[181643] = "Restos de Barbapluma",	-- Featherbeard's Remains
 	[181649] = "Diario de Barbapluma",	-- Featherbeard's Journal
+	[181665] = "Sarcófago",	-- Burial Chest
 	[181672] = "Efigie del Hombre de Mimbre",	-- Wickerman Effigy
 	[181681] = "Cáliz de Elune",	-- Chalice of Elune
 	[181687] = "Montón de madera",	-- Lumber Pile
@@ -1390,6 +1391,7 @@ for key,value in pairs({
 	[184465] = "Alijo de la Legión",	-- Cache of the Legion
 	[184660] = "Cartel de Se busca",	-- Wanted Poster
 	[184684] = "Huevo de despellejador voraz",	-- Ravenous Flayer Egg
+	[184793] = "Cofre primitivo",	-- Primitive Chest
 	[184825] = "Escrito Lashh'an",	-- Lashh'an Tome
 	[184945] = "Cartel de Se busca",	-- Wanted Poster
 	[184946] = "Cartel de Se busca",	-- Wanted Poster

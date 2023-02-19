@@ -1352,6 +1352,7 @@ for key,value in pairs({
 	[181638] = "현상 수배 전단",	-- Wanted Poster
 	[181643] = "페더비어드의 유골",	-- Featherbeard's Remains	--TODO: This was taken from wotlk Wowhead
 	[181649] = "페더비어드의 일지",	-- Featherbeard's Journal
+	[181665] = "매장된 궤짝",	-- Burial Chest
 	[181672] = "밀짚인형",	-- Wickerman Effigy	--TODO: This was taken from wotlk Wowhead
 	[181681] = "엘룬의 성배",	-- Chalice of Elune
 	[181687] = "목재 더미",	-- Lumber Pile
@@ -1386,6 +1387,7 @@ for key,value in pairs({
 	[184465] = "군단 저장고",	-- Cache of the Legion
 	[184660] = "현상 수배 전단",	-- Wanted Poster
 	[184684] = "걸신들린 바위갈퀴 알",	-- Ravenous Flayer Egg
+	[184793] = "구식 궤짝",	-- Primitive Chest
 	[184825] = "라쉬안 마법책",	-- Lashh'an Tome
 	[184945] = "현상 수배 전단",	-- Wanted Poster
 	[184946] = "현상 수배 전단",	-- Wanted Poster
