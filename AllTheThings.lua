@@ -22865,6 +22865,7 @@ local HookableTooltips = {
 	["ShoppingTooltip2"]=1,
 	["PerksProgramTooltip"]=1,	-- tooltip used for items within the Trading Post UI
 	["EncounterJournalTooltipItem1Tooltip"]=1,	-- various tooltips in Adventure Guide, some are actually useful to attach ATT data
+	["GarrisonShipyardMapMissionTooltipTooltip"]=1,	-- tooltips of Navel missions from WoD Garrison
 	-- other addons which create user-visible tooltips that ATT should attach into
 	["SilverDragonLootTooltip"]=1,
 };
