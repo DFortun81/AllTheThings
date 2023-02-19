@@ -1,25 +1,24 @@
 # AllTheThings
 
-## [DF-3.2.3](https://github.com/DFortun81/AllTheThings/tree/DF-3.2.3) (2023-02-12)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.2.2...DF-3.2.3) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.2.4](https://github.com/DFortun81/AllTheThings/tree/DF-3.2.4) (2023-02-19)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.2.3...DF-3.2.4) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
-
-### Updated Love is in the Air 💘
 
 ### Logic changes
 
-- ATT now attaches to the Trading Post tooltips.
-- Dragonflight Profession Equipment/Tools can now be filtered using the 'Profession Equipment' toggle. (And previously existing 'Fishing Poles' filter was removed.)
+- From now on we will not mark all new Things with "This was never available to players" as it's misleading. Instead, such items will be marked with "This data hasn't been Sourced yet within ATT."
+- ATT will have tooltips on Garrison Naval Mission now.
 
 
-### Ligic fixes
+### Logic fixes
 
-- Some very complicated fixes/changes/magic relating to itemIDs/sourceIDs.
+- Small fixes to the content that's shared between different Dungeons & Raids difficulties.
 
 ### Data additions/fixes
 
-- Added/fixed Warlords of Draenor readded profession items.
-- Continued clean up of Achievements (Exploration category/Dragonflight Raids specifically).
-- Clarifications to readded Classic recipes.
-- Updated French translation by Machou :fr:
+- Ongoing Dragonflight content fixes.
+- Sorted more white common items.
+- Love is in the Air adjustments.
+- WotLK content adjustments.
+- Some WoD content adjustments.
 - Other fixes.
