@@ -3662,7 +3662,7 @@ for key,value in pairs({
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[382621] = "Consola del catalizador de reanimación",	-- Revival Catalyst Console
 	[383625] = "Caja de brillopeces frescos",	-- Case of Fresh Gleamfish
-	--TODO: [383732] = "Tuskarr Tacklebox",	-- Tuskarr Tacklebox
+	[383732] = "Caja de pesca colmillarr",	-- Tuskarr Tacklebox
 	[383733] = "Tierra revuelta",	-- Disturbed Dirt
 	[383734] = "Tierra revuelta",	-- Disturbed Dirt
 	[383735] = "Tierra revuelta",	-- Disturbed Dirt
