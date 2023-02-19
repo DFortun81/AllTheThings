@@ -443,6 +443,7 @@ _.ObjectNames = {
 	[184465] = "Cache of the Legion",
 	[184660] = "Wanted Poster",
 	[184684] = "Ravenous Flayer Egg",
+	[184793] = "Primitive Chest",
 	[184825] = "Lashh'an Tome",
 	[184945] = "Wanted Poster",
 	[184946] = "Wanted Poster",

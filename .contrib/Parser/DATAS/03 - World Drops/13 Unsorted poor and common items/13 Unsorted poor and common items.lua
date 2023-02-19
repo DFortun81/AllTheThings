@@ -705,7 +705,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 		n(WEAPONS, {
 			filter(ONE_HANDED_AXES, {
 				i(2047),	-- Anvilmar Hand Axe
-				i(20850),	-- Arcane Forged Axe
 				i(3443),	-- Ceremonial Tomahawk
 				i(2029),	-- Cleaver
 				i(2845),	-- Copper Axe
@@ -722,7 +721,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(4923),	-- Primitive Hatchet
 				i(1011),	-- Sharp Axe
 				i(1383),	-- Stone Tomahawk
-				i(20837),	-- Sunstrider Axe
 				i(2490),	-- Tomahawk
 				i(2054),	-- Trogg Hand Axe
 			}),
@@ -750,8 +748,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2505),	-- Polished Shortbow
 				i(12449),	-- Primitive Bow
 				i(3026),	-- Reinforced Bow
-				i(20910),	-- Stiff Shortbow
-				i(20838),	-- Sunstrider Bow
 				i(12447),	-- Thistlewood Bow
 				i(39522),	-- Wolvar Shortbow
 				i(23398),	-- Worn Ranger's Bow
@@ -768,7 +764,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			filter(DAGGERS, {
 				i(20983),	-- Acolyte's Dagger
 				i(2195),	-- Anvilmar Knife
-				i(20852),	-- Arcane Forged Dirk
 				i(3225),	-- Bloodstained Knife
 				i(10547),	-- Camping Knife
 				i(7166),	-- Copper Dagger
@@ -794,7 +789,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(4565),	-- Simple Dagger
 				i(4302),	-- Small Green Dagger
 				i(2494),	-- Stiletto
-				i(20836),	-- Sunstrider Dagger
 				i(5392),	-- Thistlewood Dagger
 				i(2787),	-- Trogg Dagger
 				i(2137),	-- Whittling Knife
@@ -860,7 +854,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			}),
 			filter(ONE_HANDED_MACES, {
 				i(30754),	-- Ancient Bone Mace
-				i(20851),	-- Arcane Forged Mace
 				i(4563),	-- Billy Club
 				i(6651),	-- Broken Wine Bottle
 				i(2130),	-- Club
@@ -890,7 +883,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(3329),	-- Spiked Wooden Plank
 				i(781),		-- Stone Gnoll Hammer
 				i(1913),	-- Studded Blackjack
-				i(20840),	-- Sunstrider Mace
 				i(10544),	-- Thistlewood Maul
 				i(2064),	-- Trogg Club
 				i(2524),	-- Truncheon
@@ -964,7 +956,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(17186),	-- Small Targe
 				i(4263),	-- Standard Issue Shield
 				i(2900),	-- Stone Buckler
-				i(20841),	-- Sunstrider Shield
 				i(9444),	-- Techbot CPU Shell
 				i(4911),	-- Thick Bark Buckler
 				i(6203),	-- Thuggish Shield
@@ -991,7 +982,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(23553),	-- Living Branch
 				i(767),		-- Long Bo Staff
 				i(928),		-- Long Staff
-				i(20853),	-- Mana Gathering Staff
 				i(1159),	-- Militia Quarterstaff
 				i(79740),	-- Plain Wooden Staff	-- TODO Mists of Pandaria
 				i(5778),	-- Primitive Walking Stick
@@ -999,16 +989,12 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2132),	-- Short Staff
 				i(22959),	-- Smooth Metal Staff
 				i(5581),	-- Smooth Walking Staff
-				i(20839),	-- Sunstrider Staff
 				i(24434),	-- The Discipline Stick
 				i(5393),	-- Thistlewood Staff
-				i(23371),	-- Velania's Walking Stick
 				i(2495),	-- Walking Stick
 				i(2535),	-- War Staff
 			}),
 			filter(ONE_HANDED_SWORDS, {
-				i(20849),	-- Arcane Forged Shortsword
-				i(24448),	-- Battle Tested Blade
 				i(2520),	-- Broadsword
 				i(2847),	-- Copper Shortsword
 				i(851),		-- Cutlass
@@ -1026,7 +1012,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(4932),	-- Harpy Wing Clipper
 				i(18610),	-- Keen Machete
 				i(39371),	-- Keleseth's Persuader
-				i(23370),	-- Ley-Keeper's Blade
 				i(23373),	-- Long Knife
 				i(923),		-- Longsword
 				i(1161),	-- Militia Shortsword
@@ -1038,7 +1023,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2131),	-- Shortsword
 				i(23396),	-- Slightly Used Ranger's Blade
 				i(3935),	-- Smotts' Cutlass
-				i(20835),	-- Sunstrider Sword
 				i(5586),	-- Thistlewood Blade
 			}),
 			filter(TWO_HANDED_SWORDS, {
