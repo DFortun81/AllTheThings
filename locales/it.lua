@@ -1344,6 +1344,7 @@ for key,value in pairs({
 	[181638] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[181643] = "Featherbeard's Remains",	-- Featherbeard's Remains	--TODO: This was taken from wotlk Wowhead
 	[181649] = "Diario di Barbapiuma",	-- Featherbeard's Journal
+	[181665] = "Cassa Funebre",	-- Burial Chest
 	[181672] = "Effige dell'Uomo di Paglia",	-- Wickerman Effigy
 	[181681] = "Calice di Elune",	-- Chalice of Elune
 	[181687] = "Lumber Pile",	-- Warsong Lumber Pile	--TODO: This was taken from wotlk Wowhead
@@ -1378,6 +1379,7 @@ for key,value in pairs({
 	[184465] = "Cassa della Legione",	-- Cache of the Legion
 	[184660] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[184684] = "Uovo di Scorticatore Vorace",	-- Ravenous Flayer Egg
+	[184793] = "Cassa Primitiva",	-- Primitive Chest
 	[184825] = "Tomo Lashh'an",	-- Lashh'an Tome
 	[184945] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[184946] = "Manifesto dei Ricercati",	-- Wanted Poster

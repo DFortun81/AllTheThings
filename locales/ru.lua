@@ -1343,6 +1343,7 @@ for key,value in pairs({
 	[181638] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[181643] = "Останки Пероборода",	-- Featherbeard's Remains
 	[181649] = "Дневник Пероборода",	-- Featherbeard's Journal
+	[181665] = "Погребальный сундук",	-- Burial Chest
 	[181672] = "Фигурка Плетеного человека",	-- Wickerman Effigy
 	[181681] = "Чаша Элуны",	-- Chalice of Elune
 	[181687] = "Штабель пиломатериалов",	-- Lumber Pile
@@ -1377,6 +1378,7 @@ for key,value in pairs({
 	[184465] = "Тайник Легиона",	-- Cache of the Legion
 	[184660] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[184684] = "Яйцо прожорливого камнедера",	-- Ravenous Flayer Egg
+	[184793] = "Примитивный сундук",	-- Primitive Chest
 	[184825] = "Фолиант Лашш",	-- Lashh'an Tome
 	[184945] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[184946] = "Плакат \"Разыскивается\"",	-- Wanted Poster

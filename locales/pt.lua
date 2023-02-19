@@ -1352,6 +1352,7 @@ for key,value in pairs({
 	[181638] = "Cartaz de Procura-se",	-- Wanted Poster
 	[181643] = "Restos Mortais de Barbapena",	-- Featherbeard's Remains	--TODO: This was taken from wotlk Wowhead
 	[181649] = "Diário de Barbapena",	-- Featherbeard's Journal
+	[181665] = "Baú de Enterro",	-- Burial Chest
 	[181672] = "Efígie do Homem de Palha",	-- Wickerman Effigy
 	[181681] = "Cálice de Eluna",	-- Chalice of Elune
 	[181687] = "Pilha de Madeira",	-- Warsong Lumber Pile	--TODO: This was taken from wotlk Wowhead
@@ -1386,6 +1387,7 @@ for key,value in pairs({
 	[184465] = "Baú da Legião",	-- Cache of the Legion
 	[184660] = "Cartaz de Procura-se",	-- Wanted Poster
 	[184684] = "Ovo de Esfola-pedra Vorasga",	-- Ravenous Flayer Egg
+	[184793] = "Baú Primitivo",	-- Primitive Chest
 	[184825] = "Tomo de Lashh'an",	-- Lashh'an Tome
 	[184945] = "Cartaz de Procura-se",	-- Wanted Poster
 	[184946] = "Cartaz de Procura-se",	-- Wanted Poster
