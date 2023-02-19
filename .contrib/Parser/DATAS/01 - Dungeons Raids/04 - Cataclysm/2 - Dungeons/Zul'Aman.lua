@@ -36,6 +36,20 @@ _.Instances = { tier(CATA_TIER, {
 							},
 						}),
 					}),
+					n(TREASURES, {
+						o(181665, {	-- Burial Chest
+							--[[["coords"] = {
+								{ 64.5 30.4, GHOSTLANDS },
+								{ 62.7, 32.5, GHOSTLANDS },
+								{ 58.8, 28.6, GHOSTLANDS },
+								{ 62.9, 28.0, GHOSTLANDS },
+							},--]]
+							["g"] = {
+								i(23923),	-- Amani Sacrificial Dagger
+								i(29518),	-- Amani Scimitar
+							},
+						}),
+					}),
 					n(ZONE_DROPS, {
 						i(69801, {	-- Amani Armguards
 							["crs"] = {

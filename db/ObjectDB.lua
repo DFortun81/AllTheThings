@@ -408,6 +408,7 @@ _.ObjectNames = {
 	[181638] = "Wanted Poster",
 	[181643] = "Featherbeard's Remains",
 	[181649] = "Featherbeard's Journal",
+	[181665] = "Burial Chest",
 	[181672] = "Wickerman Effigy",
 	[181681] = "Chalice of Elune",
 	[181687] = "Lumber Pile",

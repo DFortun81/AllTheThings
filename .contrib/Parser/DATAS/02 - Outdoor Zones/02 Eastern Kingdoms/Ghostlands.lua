@@ -1189,6 +1189,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 			}),
+			n(TREASURES, {
+				o(181665, {	-- Burial Chest
+					["coords"] = {
+						{ 65.8, 28.5, GHOSTLANDS },
+						{ 62.7, 32.5, GHOSTLANDS },
+						{ 58.8, 28.6, GHOSTLANDS },
+						{ 62.9, 28.0, GHOSTLANDS },
+					},
+					["g"] = {
+						i(23923),	-- Amani Sacrificial Dagger
+						i(29518),	-- Amani Scimitar
+					},
+				}),
+				o(184793, {	-- Primitive Chest
+					["coords"] = {
+						{ 81.5, 36.6, GHOSTLANDS },
+						{ 74.8, 46.9, GHOSTLANDS },
+						{ 68.0, 50.2, GHOSTLANDS },
+						{ 65.4, 66.2, GHOSTLANDS },
+						{ 65.3, 80.0, GHOSTLANDS },
+					},
+					["g"] = {
+						i(29518),	-- Amani Scimitar
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(16268, {	-- Eralan <Poison Supplies>
 					["coord"] = { 47.0, 34.2, GHOSTLANDS },

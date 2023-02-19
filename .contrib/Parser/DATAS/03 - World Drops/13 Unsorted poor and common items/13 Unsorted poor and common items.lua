@@ -767,7 +767,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			}),
 			filter(DAGGERS, {
 				i(20983),	-- Acolyte's Dagger
-				i(23923),	-- Amani Sacrificial Dagger
 				i(2195),	-- Anvilmar Knife
 				i(20852),	-- Arcane Forged Dirk
 				i(3225),	-- Bloodstained Knife
@@ -1008,7 +1007,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(2535),	-- War Staff
 			}),
 			filter(ONE_HANDED_SWORDS, {
-				i(29518),	-- Amani Scimitar
 				i(20849),	-- Arcane Forged Shortsword
 				i(24448),	-- Battle Tested Blade
 				i(2520),	-- Broadsword
