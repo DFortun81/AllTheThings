@@ -3663,7 +3663,7 @@ for key,value in pairs({
 	[383734] = "Poeira Revolvida",	-- Disturbed Dirt
 	[383735] = "Poeira Revolvida",	-- Disturbed Dirt
 	[384318] = "Marcador de Páginas Inconspícuo",	-- Inconspicuous Bookmark
-	--TODO: [384370] = "Deliberately Delinquent Notes",	-- Deliberately Delinquent Notes
+	[384370] = "Notas Deliberadamente Delinquentes",	-- Deliberately Delinquent Notes
 	[384405] = "Peixe Meio Cozido",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Ovo de Dragão Petrificado",	-- Petrified Dragon Egg
