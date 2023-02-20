@@ -75,9 +75,6 @@ root(ROOTS.WorldDrops, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE
 		i(188729),	-- Timeworn Chain Spaulders
 		i(188732),	-- Timeworn Chain Vest
 	}),
-	n(MISC, {
-		i(192631),	-- Scale-Piercing Fang
-	}),
 	n(PROFESSIONS, {
 		prof(ALCHEMY, sharedData({ ["requireSkill"] = ALCHEMY, },{
 			i(198963),	-- Decaying Phlegm

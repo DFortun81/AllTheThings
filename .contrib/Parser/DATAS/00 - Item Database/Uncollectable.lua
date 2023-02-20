@@ -545,6 +545,7 @@ i(158931);	-- Shiny Object
 i(158932);	-- Lucky Charm
 i(159621);	-- Personal Anchor
 i(162126);	-- River Clam Meat
+i(192631);	-- Scale-Piercing Fang
 
 -- Suramar Mana Gems
 i(139890);	-- Ancient Mana Gem
