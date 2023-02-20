@@ -801,20 +801,22 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		filter(QUEST_ITEMS, {
-			i(194445),	-- [DNT] Ceremonial Necklace
-			i(191633),	-- A Shard of Crystallized Mana
-			i(191023),	-- Mudcaked Necklace
-			i(191028),	-- Yu's Bloodied Journal Entry
-			i(191065),	-- Shiverweb Silk
-			i(191191),	-- Enchanted Compass
-			i(191108),	-- Tuskarr Offering
-			i(191282),	-- Scouting Job: Azure Spawn Expedition Site
-			i(191286),	-- Recovery Job: Hopaway Thieves
-			i(191785),	-- Overly Loud Pocketwatch
-			i(191786),	-- Elaborate Lace Cuff
-			i(191889),	-- Ancient Sword Design
-			i(192128),	-- Reinforced Scale Sample
-			i(192129),	-- Azure Basilisk Belly
+			tier(DF_TIER, 0.0, {
+				i(194445),	-- [DNT] Ceremonial Necklace
+				i(191633),	-- A Shard of Crystallized Mana
+				i(191023),	-- Mudcaked Necklace
+				i(191028),	-- Yu's Bloodied Journal Entry
+				i(191065),	-- Shiverweb Silk
+				i(191191),	-- Enchanted Compass
+				i(191108),	-- Tuskarr Offering
+				i(191282),	-- Scouting Job: Azure Spawn Expedition Site
+				i(191286),	-- Recovery Job: Hopaway Thieves
+				i(191785),	-- Overly Loud Pocketwatch
+				i(191786),	-- Elaborate Lace Cuff
+				i(191889),	-- Ancient Sword Design
+				i(192128),	-- Reinforced Scale Sample
+				i(192129),	-- Azure Basilisk Belly
+			}),
 		}),
 	}),
 }));
