@@ -121,6 +121,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 48.8, 79.4, THALDRASZUS },
 					["questID"] = 74035,
 					["g"] = {
+						i(200241),	-- Stormcaller's Ritual Hatchet
 						i(200139),	-- Tempest Arc
 						i(197593),	-- Windborne Velocidrake: Feathery Head (DM!)
 					},

@@ -95,6 +95,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 74556,
 					["g"] = {
 						i(203669),	-- Chillwing Leggings
+						i(200241),	-- Stormcaller's Ritual Hatchet
 						i(200242),	-- Watcher's Lightning Rod
 						i(197593),	-- Windborne Velocidrake: Feathery Head (DM!)
 					},

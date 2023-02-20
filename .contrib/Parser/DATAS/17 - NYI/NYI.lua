@@ -718,6 +718,105 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 	}),
+	tier(DF_TIER, {
+		filter(MISC, {
+			tier(DF_TIER, 0.0, {
+				i(194110),	-- [PH] Dragon Rider's Honor
+				i(193682),	-- [PH] Plains Feather
+				i(193702),	-- 10.0 Dungeon - Optional Reagent
+				i(193737),	-- 10.0 Dungeon - Optional Reagent
+				i(193749),	-- 10.0 Dungeon - Optional Reagent
+				i(194442),	-- Activity Map: Apex Canopy
+				i(201834),	-- Add Keystone Affix: Thundering
+				i(194028),	-- Ancient Parchment: Bottom Half
+				i(194027),	-- Ancient Parchment: Top Half
+				i(193798),	-- Ancient Titan Alloy
+				i(194873),	-- Apprentice's Fluffed Quill
+				i(191192),	-- Assorted Parts
+				i(192078),	-- Bottled Putrescence
+				i(191058),	-- Dilapidated Parchment: Bottom Half
+				i(191876),	-- DNT - Stonename Razorstone
+				i(191877),	-- DNT - Stonename Razorstone
+				i(191878),	-- DNT - Stonename Weightstone
+				i(191879),	-- DNT - Stonename Weightstone
+				i(191880),	-- DNT - Stonename Whetstone
+				i(191881),	-- DNT - Stonename Whetstone
+				i(191203),	-- Dragonscale Expedition Supplies
+				i(194021),	-- Emblazoned Parchment: Bottom Half
+				i(194022),	-- Emblazoned Parchment: Top Half
+				i(191296),	-- Enchanted Lockbox
+				i(198723),	-- Expedition Binoculars (NYI)
+				i(198724),	-- Expedition Telescope (NYI)
+				i(193659),	-- Ever-Decaying Spore
+				i(193774),	-- Furyforged Plating
+				i(190233),	-- Maruuk Centaur Supplies
+				i(191193),	-- Mysteriously Charged Core
+				i(187637),	-- Navarro's Backpack
+				i(190318),	-- Perception!
+				i(190340),	-- Plainshunter's Supplies
+				i(194903),	-- Pocket Chocolate
+				i(193209),	-- Quality Bone
+				i(191194),	-- Radiant Metallic Threading
+				i(191252),	-- Reinforced Plating+
+				i(191874),	-- Reinforced Plating++
+				i(191875),	-- Reinforced Plating+++
+				i(190319),	-- Resourceful!
+				i(194025),	-- Runebound Parchment: Bottom Half
+				i(194024),	-- Runebound Parchment: Top Half
+				i(201328),	-- Set Keystone Map: Upper Blackrock Spire
+				i(201329),	-- Set Keystone Map: The Everbloom
+				i(201330),	-- Set Keystone Map: Shadowmoon Burial Grounds
+				i(201331),	-- Set Keystone Map: Auchindoun
+				i(201332),	-- Set Keystone Map: Bloodmaul Slag Mines
+				i(201333),	-- Set Keystone Map: Skyreach
+				i(201334),	-- Set Keystone Map: Temple of the Jade Serpent
+				i(201335),	-- Set Keystone Map: Stormstout Brewery
+				i(201336),	-- Set Keystone Map: Gate of the Setting Sun
+				i(201337),	-- Set Keystone Map: Shado-Pan Monastery
+				i(201338),	-- Set Keystone Map: Siege of Niuzao Temple
+				i(201339),	-- Set Keystone Map: Mogu'shan Palace
+				i(201340),	-- Set Keystone Map: Scholomance
+				i(201341),	-- Set Keystone Map: Scarlet Halls
+				i(201342),	-- Set Keystone Map: Scarlet Monastery
+				i(201344),	-- Set Keystone Map: Algeth'ar Academy
+				i(201345),	-- Set Keystone Map: Halls of Infusion
+				i(201346),	-- Set Keystone Map: Brackenhide Hollow
+				i(201347),	-- Set Keystone Map: The Azure Vault
+				i(201348),	-- Set Keystone Map: The Nokhud Offensive
+				i(201349),	-- Set Keystone Map: Neltharus
+				i(201350),	-- Set Keystone Map: Ruby Life Pools
+				i(201351),	-- Set Keystone Map: Uldaman: Legacy of Tyr
+				i(190332),	-- Sparking Catalyst
+				i(194828),	-- Stacked Deck of Darkmoon Mysteries
+				i(187617),	-- Tempered Djaradin Steel
+				i(191087),	-- Treasure Map: Ohn'ahran Plains
+				i(194026),	-- Treasure Map: The Azure Span
+				i(194029),	-- Treasure Map: Thaldraszus
+				i(194023),	-- Treasure Map: The Waking Shores
+				i(193640),	-- Unstable Power Stone
+				i(198733),	-- Wayfinderr's Compass (NYI)
+				i(191185),	-- Worn Parchment
+				i(187621),	-- Writ of Construction
+				i(193361),	-- zzOldIncomplete Hunting Necklace
+			}),
+		}),
+		filter(QUEST_ITEMS, {
+			i(194445),	-- [DNT] Ceremonial Necklace
+			i(191633),	-- A Shard of Crystallized Mana
+			i(191023),	-- Mudcaked Necklace
+			i(191028),	-- Yu's Bloodied Journal Entry
+			i(191065),	-- Shiverweb Silk
+			i(191191),	-- Enchanted Compass
+			i(191108),	-- Tuskarr Offering
+			i(191282),	-- Scouting Job: Azure Spawn Expedition Site
+			i(191286),	-- Recovery Job: Hopaway Thieves
+			i(191785),	-- Overly Loud Pocketwatch
+			i(191786),	-- Elaborate Lace Cuff
+			i(191889),	-- Ancient Sword Design
+			i(192128),	-- Reinforced Scale Sample
+			i(192129),	-- Azure Basilisk Belly
+		}),
+	}),
 }));
 -- NYI Content which should NOT be filtered in game since it is 'technically' there
 root(ROOTS.NeverImplemented, {

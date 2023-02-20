@@ -294,6 +294,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		i(191345),	-- Steaming Phial of Finesse+
 		i(191346),	-- Steaming Phial of Finesse++
 		i(191347),	-- Steaming Phial of Finesse+++
+		i(191917),	-- Suspiciously Fuzzy Drink+
+		i(191918),	-- Suspiciously Fuzzy Drink++
+		i(191919),	-- Suspiciously Fuzzy Drink+++
 	}),
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
@@ -1594,6 +1597,10 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(194872),	-- Darkmoon Deck Box: Inferno
 			i(198477),	-- Darkmoon Deck Box: Rime
 			i(198481),	-- Darkmoon Deck Box: Watcher
+			i(198088),	-- Darkmoon Deck: Dance
+			i(198086),	-- Darkmoon Deck: Inferno
+			i(198087),	-- Darkmoon Deck: Rime
+			i(198089),	-- Darkmoon Deck: Watcher
 			i(194827),	-- Bundle O' Cards: Dragon Isles
 			i(194785),	-- Ace of Fire
 			i(194786),	-- Two of Fire
@@ -2240,6 +2247,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(193960),	-- Chromatic Embroidery Thread++
 			i(193961),	-- Chromatic Embroidery Thread+++
 			i(194020),	-- Chronocloth Reagent Bag
+			i(194127),	-- Dragon Isles Unravelling
 			i(194042),	-- Explorer's Banner of Herbology+
 			i(194043),	-- Explorer's Banner of Herbology++
 			i(194044),	-- Explorer's Banner of Herbology+++
