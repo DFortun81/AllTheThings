@@ -27,6 +27,9 @@ _.ExpansionFeatures =
 					n(VENDORS, {
 						n(77382, {	-- Christopher Macdonald <Tailor>
 							["races"] = ALLIANCE_ONLY,
+							["sym"] = {
+								{"select","npcID",87049},{"pop"},	--  Steven <Tailoring Patterns>
+							},
 							["g"] = {
 								i(115357, {	-- Draenor Tailoring
 									["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
@@ -38,88 +41,6 @@ _.ExpansionFeatures =
 										recipe(168854),	-- Sumptuous Leggings
 										recipe(168853),	-- Sumptuous Robes
 									},
-								}),
-								i(118722, {	-- Secret of Draenor Tailoring
-									["filterID"] = MISC,
-									["g"] = {
-										i(114863),	-- Pattern: Brilliant Hexweave Cloak
-										i(114866),	-- Pattern: Creeping Carpet
-										i(114865),	-- Pattern: Elekk Plushie
-										i(114852),	-- Pattern: Hexweave Embroidery
-										i(114864),	-- Pattern: Hexweave Bag
-										i(114860),	-- Pattern: Hexweave Belt
-										i(114858),	-- Pattern: Hexweave Bracers
-										i(114854),	-- Pattern: Hexweave Cowl
-										i(114856),	-- Pattern: Hexweave Gloves
-										i(114855),	-- Pattern: Hexweave Leggings
-										i(114853),	-- Pattern: Hexweave Mantle
-										i(114857),	-- Pattern: Hexweave Robe
-										i(114859),	-- Pattern: Hexweave Slippers
-										i(114862),	-- Pattern: Nimble Hexweave Cloak
-										i(114861),	-- Pattern: Powerful Hexweave Cloak
-										i(114970, {	-- Small Pouch of Coins
-											["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
-										}),
-									},
-								}),
-								i(114863, {	-- Pattern: Brilliant Hexweave Cloak
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114866, {	-- Pattern: Creeping Carpet
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-								}),
-								i(114865, {	-- Pattern: Elekk Plushie
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-								}),
-								i(114864, {	-- Pattern: Hexweave Bag
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-								}),
-								i(114860, {	-- Pattern: Hexweave Belt
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114858, {	-- Pattern: Hexweave Bracers
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114854, {	-- Pattern: Hexweave Cowl
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114852, {	-- Pattern: Hexweave Embroidery
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114856, {	-- Pattern: Hexweave Gloves
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114855, {	-- Pattern: Hexweave Leggings
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114853, {	-- Pattern: Hexweave Mantle
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114857, {	-- Pattern: Hexweave Robe
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114859, {	-- Pattern: Hexweave Slippers
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(202234, {	-- Pattern: Impressive Hexweave Essence
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-									["timeline"] = { ADDED_DF_0_5 },
-								}),
-								i(114862, {	-- Pattern: Nimble Hexweave Cloak
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114861, {	-- Pattern: Powerful Hexweave Cloak
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(202235, {	-- Pattern: Remarkable Hexweave Essence
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-									["timeline"] = { ADDED_DF_0_5 },
-								}),
-								i(114871, {	-- Recipe: Hexweave Essence
-									["collectible"] = false,
-									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 							},
 						}),
@@ -141,6 +62,9 @@ _.ExpansionFeatures =
 						}),
 						n(79864, {	-- Warra the Weaver <Tailor>
 							["races"] = HORDE_ONLY,
+							["sym"] = {
+								{"select","npcID",87543},{"pop"},	--  Petir Starocean <Tailoring Patterns>
+							},
 							["g"] = {
 								i(115357, {	-- Draenor Tailoring
 									["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
@@ -152,65 +76,6 @@ _.ExpansionFeatures =
 										recipe(168854),	-- Sumptuous Leggings
 										recipe(168853),	-- Sumptuous Robes
 									},
-								}),
-								i(114863, {	-- Pattern: Brilliant Hexweave Cloak
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114866, {	-- Pattern: Creeping Carpet
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-								}),
-								i(114865, {	-- Pattern: Elekk Plushie
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-								}),
-								i(114864, {	-- Pattern: Hexweave Bag
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-								}),
-								i(114860, {	-- Pattern: Hexweave Belt
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114858, {	-- Pattern: Hexweave Bracers
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114854, {	-- Pattern: Hexweave Cowl
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114852, {	-- Pattern: Hexweave Embroidery
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114856, {	-- Pattern: Hexweave Gloves
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114855, {	-- Pattern: Hexweave Leggings
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114853, {	-- Pattern: Hexweave Mantle
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114857, {	-- Pattern: Hexweave Robe
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114859, {	-- Pattern: Hexweave Slippers
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(202234, {	-- Pattern: Impressive Hexweave Essence
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-									["timeline"] = { ADDED_DF_0_5 },
-								}),
-								i(114862, {	-- Pattern: Nimble Hexweave Cloak
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114861, {	-- Pattern: Powerful Hexweave Cloak
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(202235, {	-- Pattern: Remarkable Hexweave Essence
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-									["timeline"] = { ADDED_DF_0_5 },
-								}),
-								i(114871, {	-- Recipe: Hexweave Essence
-									["collectible"] = false,
-									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-									["timeline"] = { REMOVED_DF_0_5 },
 								}),
 							},
 						}),
