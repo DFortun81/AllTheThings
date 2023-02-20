@@ -5001,6 +5001,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- SHAMAN --
 						i(52545),	-- Primal Pants
 						i(52544),	-- Primal Robe
+						
+						-- Unsure Which Class --
+						i(2398),	-- Light Chain Armor
+						i(2399),	-- Light Chain Belt
+						i(2400),	-- Light Chain Leggings
+						i(2401),	-- Light Chain Boots
+						i(2402),	-- Light Chain Bracers
+						i(2403),	-- Light Chain Gloves
+						i(17185),	-- Round Buckler
+						i(2376),	-- Worn Heater Shield
+						i(847),		-- Chainmail Armor
+						i(1845),	-- Chainmail Belt
+						i(848),		-- Chainmail Pants
+						i(849),		-- Chainmail Boots
+						i(1846),	-- Chainmail Bracers
+						i(850),		-- Chainmail Gloves
+						i(17187),	-- Banded Buckler
+						i(1202),	-- Wall Shield
+						i(285),		-- Scalemail Vest
+						i(1853),	-- Scalemail Belt
+						i(286),		-- Scalemail Pants
+						i(287),		-- Scalemail Boots
+						i(1852),	-- Scalemail Bracers
+						i(718),		-- Scalemail Gloves
+						i(17188),	-- Ringed Buckler
+						i(2445),	-- Large Metal Shield
 					}),
 				}),
 				-- #endif
@@ -5577,6 +5603,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(87800, {	-- Red Dragon Turtle (MOUNT!) (NON-P)
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
+					},
+				}),
+				n(3314, {	-- Urtharo <Weapon Merchant>
+					--TODO: No idea if this is how we're going to format these but I figured I'd start adding in the basics as I found them
+					["coord"] = { 46.6, 73.8, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(2131),	-- Shortsword
+						i(1194),	-- Bastard Sword
+						i(2134),	-- Hand Axe
+						i(2479),	-- Broad Axe
+						i(2130),	-- Club
+						i(2480),	-- Large Club
+						i(2139),	-- Dirk
+						i(2132),	-- Short Staff
+						i(2489),	-- Two-Handed Sword
+						i(2492),	-- Cudgel
+						i(2491),	-- Large Axe
+						i(2494),	-- Stiletto
+						i(2495),	-- Walking Stick
+						i(2488),	-- Gladius
+						i(2490),	-- Tomahawk
+						i(2493),	-- Wooden Mallet
+						i(851),		-- Cutlass
+						i(1198),	-- Claymore
+						i(853),		-- Hatchet
+						i(1196),	-- Tabar
+						i(852),		-- Mace
+						i(1197),	-- Giant Mace
+						i(2207),	-- Jambiya
+						i(854),		-- Quarter Staff
 					},
 				}),
 				n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
