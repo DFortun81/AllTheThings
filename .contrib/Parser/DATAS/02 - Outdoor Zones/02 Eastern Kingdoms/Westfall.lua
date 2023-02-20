@@ -1602,6 +1602,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 619,	-- Defias Conjurer
 				}),
 				i(2327, {	-- Sturdy Leather Bracers
+					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 480,	-- Rusty Harvest Golem
 				}),
 				i(827, {	-- Wicked Blackjack
