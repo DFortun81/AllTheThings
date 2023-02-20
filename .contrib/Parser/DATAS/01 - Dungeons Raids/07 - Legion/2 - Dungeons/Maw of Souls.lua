@@ -173,7 +173,7 @@ _.Instances = { tier(LEGION_TIER, {
 							98806,	-- Soul Essence
 						},
 						["groups"] = {
-							p(1930),	-- Lagan
+							i(140323),	-- Lagan
 						},
 					}),
 					i(137848),	-- Design: Blessed Dawnlight Medallion (Rank 3)

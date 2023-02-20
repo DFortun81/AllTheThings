@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				n(193227, {	-- Ronsak the Decimator
 					["coord"] = { 43.3, 55.2, OHNAHRAN_PLAINS },
-					-- ["questID"] = ,
+					["questID"] = 74026,
 					["g"] = {
 						i(200308),	-- Rellen's Legacy
 					},

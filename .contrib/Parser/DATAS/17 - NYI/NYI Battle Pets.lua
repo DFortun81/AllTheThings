@@ -38,6 +38,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(91031),	-- Darkmoon Glowfly (you get it via pet battles)
 		i(119147),	-- Nether Ray Fry (unsed Version)
 		i(119112),	-- Son of Sethe (unsed Version)
+		i(88148),	-- Jade Crane Chick
 		model(38311, n(51634)),	-- Bubbles
 		model(36583, n(51636)),	-- Lizzy
 		model(14657, n(14629)),	-- Loggerhead Snapjaw

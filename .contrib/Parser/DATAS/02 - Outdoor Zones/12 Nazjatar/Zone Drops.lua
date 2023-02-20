@@ -408,7 +408,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					170191,	-- Skeletal Hand
 					170177,	-- Exposed Fish
 					170170,	-- Fermented Deviate Fish
-					169351,	-- Sandclaw Nestseeker
 					170186,	-- Abyss Pearl
 					170192,	-- Mudwrap
 					170194,	-- Storm Totem
@@ -423,6 +422,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					169484,	-- Benthic Spaulders
 					169483,	-- Benthic Treads
 				}},
+				["g"] = {
+					i(169351),	-- Sandclaw Nestseeker
+				},
 			}),
 		}),
 		i(170200, {	-- Seastorm Totem
