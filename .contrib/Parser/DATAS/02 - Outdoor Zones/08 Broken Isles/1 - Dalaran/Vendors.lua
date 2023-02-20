@@ -3111,6 +3111,14 @@ _.Zones =
 						i(141055),	-- Technique: Glyph of Yu'lon's Grace (RECIPE!)
 					},
 				}),
+				n(97009, {	-- Jawknee <Axe Merchant>
+					["coord"] = { 53.8, 61.6, LEGION_DALARAN },
+					["groups"] = {
+						i(44642),	-- Dalaran Axe
+						i(44640),	-- Dalaran Great Axe
+						i(44654),	-- Dalaran Spear
+					},
+				}),
 				n(96483,  {	-- Jepetto Joybuzz <Toymaker>
 					["coord"] = { 43.6, 45.6, LEGION_DALARAN },
 					["timeline"] = { "added 7.0.3.22290" },

@@ -17,6 +17,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
+			n(128078, {	-- Bri'tani <Spears>
+				["coord"] = { 39.4, 17.4, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 44654 },	-- Dalaran Spear
+					{"select", "itemID", 15811 },	-- Heavy Spear
+					{"select", "itemID", 15810 },	-- Short Spear
+					{"select", "itemID", 39987 },	-- Tuskarr Fishing Spear
+				},
+				["groups"] = {
+				},
+			}),
 			n(148923, {	-- Captain Zen'taga <Dubloons Trader>
 				["coord"] = { 44.4, 94.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -1181,6 +1193,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(161498, {	-- Wristwraps of the Dutiful Apothecary
 						["cost"] = 14000000,	-- 1,400g
 					}),
+				},
+			}),
+			n(131255, {	-- Rawajo <Spears Vendor>
+				["coord"] = { 50.6, 11.8, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 44654 },	-- Dalaran Spear
+					{"select", "itemID", 15811 },	-- Heavy Spear
+					{"select", "itemID", 15810 },	-- Short Spear
+					{"select", "itemID", 39987 },	-- Tuskarr Fishing Spear
+				},
+				["groups"] = {
 				},
 			}),
 			n(122695, {	-- Seshuli <Jewelcrafting Trainer>

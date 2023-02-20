@@ -1168,6 +1168,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["isWeekly"] = true,
 				["groups"] = {
 					-- objectives don't exist in Retail because game has quest tracking by default
+					-- maybe plot a 2nd set of coordinates w/ a note so people know good spots for the quest :thinking:
 					objective(1, {	-- 0/20 Springy Horns
 						["provider"] = { "i", 201816 },	-- Springy Horn
 						["crs"] = {

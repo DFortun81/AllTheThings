@@ -6507,6 +6507,14 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					n(29496, {	-- Kerta the Bold <Axe & Polearm Merchant>
+						["coord"] = { 54.4, 62.0, NORTHREND_DALARAN },
+						["groups"] = {
+							i(44642),	-- Dalaran Axe
+							i(44640),	-- Dalaran Great Axe
+							i(44654),	-- Dalaran Spear
+						},
+					}),
 					n(29511, {	-- Lalla Brightweave <Spellfire Tailoring Specialist>
 						["coord"] = { 36.6, 32.8, NORTHREND_DALARAN },
 						["groups"] = {
