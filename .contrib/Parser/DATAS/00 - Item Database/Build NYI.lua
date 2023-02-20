@@ -1,10 +1,6 @@
 -- Build NYI
 
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
-	n(SOURCELESS),
-	tier(DF_TIER, 0.7, {}),
-	tier(DF_TIER, 0.5, {}),
-	tier(DF_TIER),
 	tier(CLASSIC_TIER),
 	tier(TBC_TIER),
 	tier(WOTLK_TIER),
@@ -14,6 +10,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(LEGION_TIER),
 	tier(BFA_TIER),
 	tier(SL_TIER),
+	tier(DF_TIER),
 }));
 root(ROOTS.HiddenAchievementTriggers, {
 	tier(WOTLK_TIER),

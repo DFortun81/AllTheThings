@@ -573,11 +573,11 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(72280),	-- Triggered with 'Hook, Line, and Swelter!' (70948)
 		q(72640),	-- Triggered with 'Abandoned... or Hidden Caches' (70952)
 		--
-		q(74370),	-- Triggered with 'Contribute Supplies: Battered Imbu-made Net'
-		q(74369),	-- Triggered with 'Contribute Supplies: Salinated Serevite'
-		q(74368),	-- Triggered with 'Contribute Supplies: Khaz'gorite-infused Resin'
-		q(74372),	-- Triggered with 'Contribute Supplies: Strong Seavine'
-		q(74367),	-- Triggered with 'Contribute Supplies: Irontree Branch'
+		q(74370),	-- First weekly completion of 'Contribute Supplies: Battered Imbu-made Net'
+		q(74369),	-- First weekly completion of 'Contribute Supplies: Salinated Serevite'
+		q(74368),	-- First weekly completion of 'Contribute Supplies: Khaz'gorite-infused Resin'
+		q(74372),	-- First weekly completion of 'Contribute Supplies: Strong Seavine'
+		q(74367),	-- First weekly completion of 'Contribute Supplies: Irontree Branch'
 		--
 		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
 		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)
