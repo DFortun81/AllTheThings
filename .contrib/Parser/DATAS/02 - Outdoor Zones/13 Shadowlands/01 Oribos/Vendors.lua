@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					i(194118, {	-- Cosmic Equipment Chest
 						["timeline"] = { "added 9.2.5", REMOVED_SL_S4 },
 						["cost"] = {
-							{ "c", 1602, 375 },	-- 375xConquest
+							{ "c", 1602, 375 },	-- 375x Conquest
 						},
 						["sym"] = {
 							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
@@ -50,7 +50,46 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					i(194334, {	-- Encrypted Equipment Chest
 						["timeline"] = { "added 9.2.5", REMOVED_SL_S4 },
 						["cost"] = {
-							{ "c", 1191, 500 },	-- 500xValor
+							{ "c", 1191, 500 },	-- 500x Valor
+						},
+						["sym"] = {
+							-- Dungeons
+							{"select", "instanceID", 1188},			-- De Other Side
+							{"select", "instanceID", 1185},			-- Halls of Atonement
+							{"select", "instanceID", 1184},			-- Mists of Tirna Scithe
+							{"select", "instanceID", 1182},			-- Necrotic Wake
+							{"select", "instanceID", 1183},			-- Plaguefall
+							{"select", "instanceID", 1189},			-- Sanguine Depths
+							{"select", "instanceID", 1186},			-- Spires of Ascension
+							{"select", "instanceID", 1194},			-- Tazavesh, the Veiled Market
+							{"select", "instanceID", 1187},			-- Theater of Pain
+
+							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
+							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+							{"is", "itemID"},						-- Only Items!
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						},
+					}),
+					i(201355, {	-- Eternal Equipment Chest
+						["timeline"] = { ADDED_SL_2_7, REMOVED_DF_REL },
+						["cost"] = {
+							{ "c", 1602, 375 },	-- 375x Conquest
+						},
+						["sym"] = {
+							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
+							{"pop"},								-- Discard the Header and acquire all of the children.
+							{"where", "headerID", SEASON_ETERNAL },	-- Eternal Gladiator: Shadowlands Season 4
+							{"pop"},								-- Discard the Header and acquire all of the children.
+							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
+							{"pop"},								-- Discard the Header and acquire all of the children.
+						},
+					}),
+					i(201362, {	-- Fated Equipment Chest
+					["timeline"] = { ADDED_SL_2_7, REMOVED_DF_REL },
+						["cost"] = {
+							{ "c", 1191, 500 },	-- 500x Valor
 						},
 						["sym"] = {
 							-- Dungeons
@@ -78,12 +117,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 							{ "c", ANIMA, 1000 },	-- Anima
 						},
 						["g"] = {
-							currency(ANIMA),	-- 1000xAnima
+							currency(ANIMA),	-- 1000x Anima
 						},
 					}),
 					i(188167, {	-- Broker Mark of Distinction
 						["cost"] = {
-							{ "g", 5000000 },	-- 500 gold
+							{ "g", 5000000 },	-- 500g
 						},
 					}),
 					i(187997, {	-- Eternal Heirloom Armor Casing
@@ -111,7 +150,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					i(188174, {	-- Unchained Equipment Cache
 						["timeline"] = { "added 9.1.5", "removed 9.2.0" },
 						["cost"] = {
-							{ "c", 1602, 375 },	-- 375xConquest
+							{ "c", 1602, 375 },	-- 375x Conquest
 						},
 						["sym"] = {
 							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
@@ -125,7 +164,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					i(188173, {	-- Valorous Equipment Cache
 						["timeline"] = { "added 9.1.5", "removed 9.2.0" },
 						["cost"] = {
-							{ "c", 1191, 500 },	-- 500xValor
+							{ "c", 1191, 500 },	-- 500x Valor
 						},
 						["sym"] = {
 							-- Dungeons

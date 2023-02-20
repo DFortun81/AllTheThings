@@ -754,6 +754,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(187637),	-- Navarro's Backpack
 				i(190318),	-- Perception!
 				i(190340),	-- Plainshunter's Supplies
+				i(201757),	-- Plundered Supplies
 				i(194903),	-- Pocket Chocolate
 				i(193209),	-- Quality Bone
 				i(191194),	-- Radiant Metallic Threading
@@ -798,6 +799,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(191185),	-- Worn Parchment
 				i(187621),	-- Writ of Construction
 				i(193361),	-- zzOldIncomplete Hunting Necklace
+				i(199110),	-- zzOldMechanical Maestro Duck
 			}),
 		}),
 		filter(QUEST_ITEMS, {

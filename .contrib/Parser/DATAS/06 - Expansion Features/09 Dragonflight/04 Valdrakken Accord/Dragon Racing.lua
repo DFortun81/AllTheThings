@@ -17,6 +17,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
 					i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
 				}),
+				i(200609),	-- Dragon Racing Purse - First Place
+				i(200610),	-- Dragon Racing Purse - Second Place
+				i(200611),	-- Dragon Racing Purse - Third Place
 			}),
 			n(WORLD_QUESTS, {
 				["sourceQuests"] = {

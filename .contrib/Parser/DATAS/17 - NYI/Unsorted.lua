@@ -2495,27 +2495,8 @@ root(ROOTS.Unsorted, {
 					i(201821),	-- Professor Instructaur's Brain
 				}),
 				n(SPECIAL, {
-					-- Cobolt Assembly
-					i(198563),	-- Arcane Spark
-					i(198603),	-- Arcane Rune
-					i(198604),	-- Arcane Gem
-					--
-					i(198657),	-- Forgotten Jewelry Box
-					i(199110),	-- Mechanical Maestro Duck
-					i(198863),	-- Small Dragon Expedition Supply Pack
-					i(198867),	-- Large Iskaaran Supply Pack
-					i(198868),	-- Small Valdrakken Accord Supply Pack
 					i(198869),	-- Large Valdrakken Accord Supply Pack
-					i(199472),	-- Overflowing Dragon Expedition Supply Pack
-					i(200609),	-- Dragon Racing Purse - First Place
-					i(200610),	-- Dragon Racing Purse - Second Place
-					i(200611),	-- Dragon Racing Purse - Third Place
 					i(201326),	-- Draconic Satchel of Cooperation
-					i(201355),	-- Eternal Equipment Chest
-					i(201362),	-- Fated Equipment Chest
-					i(201757),	-- Plundered Supplies
-					-- Fishing
-					i(199696),	-- Iskaaran Ice Axe
 				}),
 			}),
 			n(QUESTS, {

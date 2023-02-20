@@ -298,6 +298,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 				}),
 			}),
+			n(ZONE_DROPS, {
+				i(198604),	-- Arcane Gem
+				i(198603),	-- Arcane Rune
+				i(198563),	-- Arcane Spark
+			}),
 		}),
 	}),
 })));
