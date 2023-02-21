@@ -1721,7 +1721,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(193042),	-- Resonant Focus
 			i(194748),	-- Split-Lens Specs
 			i(193037),	-- Sundered Onyx Loupe
-			n(COSMETIC, {
+			filter(COSMETIC, {
 				i(193371),	-- "Rhinestone" Sunglasses
 			}),
 			filter(NECK_F, {
