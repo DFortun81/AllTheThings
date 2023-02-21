@@ -4307,15 +4307,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					paramA = "itemID";
 					paramB = GetGroupItemIDWithModID(nil, itemID, modID, bonusID) or itemID;
 				end
-				if #group > 0 then
-					for i,j in ipairs(group) do
-						if j.modItemID == paramB then
-							if j.u and j.u == 2 and (not app.IsBoP(j)) and (tonumber(numBonusIds) or 0) > 0 then
-								if topLevelSearch then tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] }); end
-							end
-						end
-					end
-				end
 			else
 				local kind, id = strsplit(":", paramA);
 				kind = string_lower(kind);
@@ -4900,6 +4891,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				tinsert(info, { left = L["UNSORTED_DESC"], wrap = true, color = app.Colors.ChatLinkError });
 			else
 				tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
+				-- removed BoE seen with a non-generic BonusID, potentially a level-scaled drop made re-obtainable
+				if group.u == 2 and not app.IsBoP(group) and (group.bonusID or 0) ~= 3524 then
+					if topLevelSearch then tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] }); end
+				end
 			end
 		end
 		-- an item used for a faction which is repeatable
