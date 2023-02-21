@@ -1188,6 +1188,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(676, {	-- The Hammer May Fall
 					["qg"] = 2770,	-- Tallow
+					["altQuests"] = { 677 },	-- Call to Arms (1/3)
 					["coord"] = { 61.86, 19.58, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
