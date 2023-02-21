@@ -494,6 +494,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 							i(186637),	-- Tazavesh Gearglider (MOUNT!)
 						}),
 						ach(15177),	-- Tazavesh, the Veiled Market
+						ach(15185),	-- Mythic: Tazavesh, the Veiled Market Guild Run
 						ach(15652, {["timeline"] = { ADDED_SL_S4 }}),	-- Mythic: So'leah's Gambit
 						i(186638),	-- Cartel Master's Gearglider (MOUNT!)
 						i(181838),	-- Charitable Soul

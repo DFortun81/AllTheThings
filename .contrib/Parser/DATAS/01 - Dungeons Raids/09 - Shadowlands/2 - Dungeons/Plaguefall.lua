@@ -225,6 +225,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 					["crs"] = { 164267 },	-- Margrave Stradama
 					["g"] = {
 						ach(14415),	-- Mythic: Plaguefall
+						ach(14383),	-- Mythic: Plaguefall Guild Run
 						i(181271),	-- Sludge Feeler (PET!)
 						i(178754),	-- Poxstorm, Longsword of Pestilence
 						i(178764),	-- Plagueborne Shoulderguards

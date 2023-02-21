@@ -238,6 +238,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 					},
 					["g"] = {
 						ach(14199),	-- Mythic: Sanguine Depths
+						ach(14200),	-- Mythic: Sanguine Depths Guild Run
 						ach(14289),	-- Kaal-ed Shot
 						i(178856),	-- Kaal's Gloomblade
 						i(178857),	-- Stone General's Edge

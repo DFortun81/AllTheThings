@@ -264,6 +264,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 					["crs"] = { 162693 },	-- Nalthor the Rimebinder
 					["g"] = {
 						ach(14368),	-- Mythic: The Necrotic Wake
+						ach(14381),	-- Mythic: The Necrotic Wake Guild Run
 						ach(14285),	-- Ready for Raiding VII
 						i(181819),	-- Marrowfang (MOUNT!)
 						i(178780),	-- Rimebinder's Runeblade

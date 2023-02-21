@@ -211,6 +211,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 					["crs"] = { 164218 },	--	Lord Chamberlain
 					["g"] = {
 						ach(14411),	-- Mythic: Halls of Atonement
+						ach(14380),	-- Mythic: Halls of Atonement Guild Run
 						ach(14352),	-- Nobody Puts Denathrius in a Corner
 						i(178829),	-- Nathrian Ferula
 						i(178816),	-- Nathrian Usurper's Mask

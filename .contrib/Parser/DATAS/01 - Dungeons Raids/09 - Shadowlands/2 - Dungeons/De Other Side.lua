@@ -253,6 +253,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 					["crs"] = { 166608 },	--	Mueh'zala
 					["g"] = {
 						ach(14409),	-- Mythic: De Other Side
+						ach(14379),	-- Mythic: De Other Side Guild Run
 						i(182178),	-- Raptor Soul (SS!)
 						i(186998),	-- Pattern: Pallid Oracle Bones
 						i(179353),	-- Harness of Twisted Whims

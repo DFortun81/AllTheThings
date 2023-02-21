@@ -269,6 +269,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
 					["g"] = {
 						ach(14325),	-- Mythic: Spires of Ascension
+						ach(14384),	-- Mythic: Spires of Ascension Guild Run
 						ach(14323),	-- ExSPEARiential
 						i(180096),	-- Devos' Cacophonous Poleaxe
 						i(180123),	-- Drape of Twisted Loyalties

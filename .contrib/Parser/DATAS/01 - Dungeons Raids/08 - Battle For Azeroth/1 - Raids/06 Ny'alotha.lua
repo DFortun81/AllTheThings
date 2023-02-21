@@ -29,6 +29,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 				ach(14146, {	-- Glory of the Ny'alotha Raider
 					i(174861),	-- Wriggling Parasite (MOUNT!)
 				}),
+				ach(14039),	-- Ny'alotha, the Waking City Guild Run
 				ach(14193),	-- Vision of Destiny
 				ach(14194),	-- Halls of Devotion
 				ach(14195),	-- Gift of Flesh
@@ -988,6 +989,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 						ach(14055, {	-- Mythic: N'Zoth, the Corruptor
 							title(417),	-- the Uncorrupted
 						}),
+						ach(14040),	-- Mythic: N'Zoth the Corruptor Guild Run
 						ach(14071, bubbleDownSelf({["timeline"] = { "added 8.3.0", "removed 9.0.1" } }, {	-- Hall of Fame: N'Zoth the Corruptor (Alliance)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {

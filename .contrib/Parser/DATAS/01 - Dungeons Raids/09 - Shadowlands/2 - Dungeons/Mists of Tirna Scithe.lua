@@ -222,6 +222,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 					["crs"] = { 164517 },	--	Tred'ova
 					["g"] = {
 						ach(14413),	-- Mythic: Mists of Tirna Scithe
+						ach(14382),	-- Mythic: Mists of Tirna Scithe Guild Run
 						ach(14375),	-- Hunger for Knowledge
 						i(183623),	-- Spinemaw Gormling (PET!)
 						i(178714),	-- Lakali's Spire of Knowledge

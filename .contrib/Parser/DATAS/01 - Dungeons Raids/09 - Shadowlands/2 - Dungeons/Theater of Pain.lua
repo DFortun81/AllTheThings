@@ -288,6 +288,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 					["crs"] = { 165946 },	-- Mordretha, the Endless Empress
 					["g"] = {
 						ach(14417),	-- Mythic: Theater of Pain
+						ach(14385),	-- Mythic: Theater of Pain Guild Run
 						ach(14533),	-- Royal Rumble
 						i(178867),	-- Barricade of the Endless Empire
 						i(178868),	-- Deathwalker's Promise

@@ -830,53 +830,6 @@ ach(13838),	-- Level 100 - Mount Equipment Unlock Check
 ach(13893),	-- Operation: Mechagon Guild Run
 8.3.0.32044
 ach(14025),	-- <new achievement>
-8.3.0.32203
-ach(14039),	-- Ny'alotha, the Waking City Guild Run
-ach(14040),	-- Mythic: N'Zoth, the Corruptor Guild Run \\ Mythic: N'Zoth the Corruptor Guild Run
-9.0.1.33978
-ach(13997),	-- Venthyr Campaign
-ach(14200),	-- Mythic: Sanguine Depths Guild Run
-ach(14234),	-- Kyrian Campaign
-ach(14279),	-- Necrolords Campaign
-ach(14282),	-- Night Fae Campaign
-9.0.1.34615
-ach(14299),	-- Bastion Bested \\ [PH] Bastion Zone Achievement
-ach(14300),	-- Ardenweald Achieved \\ [PH] Ardenweald Zone Achievement
-ach(14301),	-- Maldraxxus Mastered \\ [PH] Maldraxxus Zone Achievement
-ach(14302),	-- Revendreth Resolved \\ [PH] Revendreth Zone Achievement
-9.0.1.35078
-ach(14378),	-- Progression Tracking - Block 1. Skoldus
-ach(14379),	-- Mythic: De Other Side Guild Run
-ach(14380),	-- Mythic: Halls of Atonement Guild Run
-ach(14381),	-- Mythic: The Necrotic Wake Guild Run
-ach(14382),	-- Mythic: Mists of Tirna Scithe Guild Run
-ach(14383),	-- Mythic: Plaguefall Guild Run
-ach(14384),	-- Mythic: Spires of Ascension Guild Run
-ach(14385),	-- Mythic: Theater of Pain Guild Run
-9.0.1.35256
-ach(14517),	-- First Trial, First Try
-ach(14518),	-- The Many Trials of Zo'Sorg
-ach(14520),	-- Deathbringer
-9.0.1.35360
-ach(14529),	-- <Hidden> Shadowlands Alt - Trigger Alt Progression
-ach(14571),	-- Twisting Corridors: Layer 9 \\ Torghast: Twisting Corridors: Layer 9 \\ Torghast: Twisting Corridors: Level 9
-ach(14583),	-- The Soulforges: Layer 9 \\ Torghast: The Soulforges: Layer 9 \\ Torghast: The Soulforges: Level 9
-ach(14604),	-- Torghast: Tracking - Completed Layer 9
-9.0.1.35522
-ach(14657),	-- Stygian Stockpile
-9.0.1.35598
-ach(14756),	-- Stygian Sample
-ach(14757),	-- Rainy Day Fund \\ Stygian Supply
-9.0.2.35978
-ach(14838),	-- Champion of Connection
-9.1.0.38511
-ach(15074),	-- <Hidden> Razorwing Eggs Returned
-9.1.0.38950
-ach(15185),	-- Mythic: Tazavesh, the Veiled Market Guild Run
-9.1.5.40622
-ach(15326),	-- [DNT] Rating Test Achievement
-9.2.0.42174
-ach(15557),	-- Murkastrasza
 10.0.0.45335
 ach(16425),	-- I'm a Template Character [DNT]
 10.0.0.45454
