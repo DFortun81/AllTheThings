@@ -1372,9 +1372,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(22322),	-- The Jaw Breaker
 						i(22319),	-- Tome of Divine Right
 						i(22325),	-- Belt of the Trickster
-						i(22306, {	-- Ironweave Belt
-							["timeline"] = { "removed 4.0.1" },
-						}),
+						i(22306),	-- Ironweave Belt
 						i(22398, {	-- Idol of Rejuvenation
 							["timeline"] = { "removed 5.0.4" },
 						}),
