@@ -33,6 +33,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["timeline"] = { ADDED_DF_0_5 }
 				}),
 			}),
+			ach(16791, {	-- Merchant Artisan
+				title(485),	-- Merchant Artisan %s
+			}),
+			ach(16799, {	-- Personal Crafter
+				title(486),	-- Personal Crafter %s
+			}),
 		}),
 		n(QUESTS, {
 			q(67564, {	-- Artisan's Courier

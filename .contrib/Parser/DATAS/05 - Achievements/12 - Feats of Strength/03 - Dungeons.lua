@@ -156,6 +156,8 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		})),
 		un(REMOVED_FROM_GAME, ach(9627, {		-- Challenge Master: Upper Blackrock Spire
 			un(REMOVED_FROM_GAME, title_gendered(296, 297)),	-- Lord of Blackrock / Lady of Blackrock
+			--un(REMOVED_FROM_GAME, title(296)),	-- %s, Lord of Blackrock
+			--un(REMOVED_FROM_GAME, title(297)),	-- %s, Lady of Blackrock
 		})),
 		un(REMOVED_FROM_GAME, ach(8903, {		-- Mistwalker
 			un(REMOVED_FROM_GAME, title(255)),	-- Mistwalker

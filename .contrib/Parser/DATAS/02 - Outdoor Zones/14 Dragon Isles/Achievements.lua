@@ -632,6 +632,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["cr"] = 193209,
 				["coord"] = { 31.5, 63.9, OHNAHRAN_PLAINS },
 			}),
+			["g"] = {
+				title(472),	-- Birdwatcher %s
+			},
 		}),
 		ach(16519),	-- Dragon Isles Safari
 	}),

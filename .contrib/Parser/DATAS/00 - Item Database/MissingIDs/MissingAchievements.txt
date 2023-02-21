@@ -871,8 +871,6 @@ ach(14757),	-- Rainy Day Fund \\ Stygian Supply
 ach(14838),	-- Champion of Connection
 9.1.0.38511
 ach(15074),	-- <Hidden> Razorwing Eggs Returned
-9.1.0.38709
-ach(15135),	-- Cutting Edge: Sylvanas Windrunner
 9.1.0.38950
 ach(15185),	-- Mythic: Tazavesh, the Veiled Market Guild Run
 9.1.5.40622
@@ -884,14 +882,10 @@ ach(16425),	-- I'm a Template Character [DNT]
 10.0.0.45454
 ach(16520),	-- 10.0 Dragonflight - Expansion Quest Launch (Meet Wrathion/Ebyssian) \\ 10.0 Dragonflight - Expansion Quest Launch
 ach(16531),	-- A Whole Heap of Lunkers \\ A Whole Lot of Lunkers
-ach(16532),	-- True Friends with Sabellian \\ Friends with Sabellian
 ach(16533),	-- Lots of Lunkers \\ A Whole Lot of Lunkers
-ach(16536),	-- True Friends with Wrathion
 ach(16537),	-- Maximum Power!
 ach(16539),	-- In High Esteem
 ach(16546),	-- What's Down There? \\ That's not a fish...
-ach(16547),	-- Pulled!
-ach(16548),	-- It Takes a Tuskarr Buddy \\ It takes a (Tuskarr) village.
 10.0.0.45570
 ach(16622),	-- Three Minutes or It's Free
 ach(16626),	-- Working with Wyrms
@@ -905,12 +899,10 @@ ach(16731),	-- Court is Now in Session
 10.0.2.45969
 ach(16736),	-- Grand Theft Mammoth
 10.0.2.46259
-ach(16791),	-- Merchant Artisan
 ach(16794),	-- Dragon Isles Crafting Order Apprentice
 ach(16795),	-- Dragon Isles Crafting Order Journeyman
 ach(16797),	-- Artisan's Consortium Monopolist
 ach(16798),	-- Crafting Cooperative
-ach(16799),	-- Personal Crafter
 ach(16800),	-- Dragon Isles Crafting Order Master
 10.0.2.46420
 ach(17096),	-- Mythic: Algeth'ar Academy Guild Run

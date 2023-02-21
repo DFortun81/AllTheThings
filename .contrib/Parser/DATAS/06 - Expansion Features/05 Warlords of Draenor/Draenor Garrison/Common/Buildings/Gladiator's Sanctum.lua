@@ -17,6 +17,8 @@ _.ExpansionFeatures =
 						}),
 						ach(9725, {	-- The Last of Us
 							title_gendered(302, 303),	-- Lord of War / Lady of War
+							--title(302),	-- %s, Lord of War
+							--title(303),	-- %s, Lady of War
 						}),
 						ach(9738, {	-- Warlord of Draenor (Alliance) achievements used instead of criteria as criteria are behaving strangely with debug mode on
 							["races"] = ALLIANCE_ONLY,

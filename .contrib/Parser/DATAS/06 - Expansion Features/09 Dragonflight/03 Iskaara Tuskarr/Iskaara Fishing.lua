@@ -23,17 +23,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					}),
 				}),
 				ach(16321),	-- Cutting Tusk Equipment
-				ach(16317),	-- Secret Fishing Spots
-				ach(16561),	-- Lunkers, Lunkers Everywhere
-				ach(16562),	-- That's not a Fish...
-				ach(16563),	-- We're Going to Need a Bigger Harpoon
+				ach(16550),	-- Giving Back to Nature
+				ach(16552),	-- Giving Even More Back to Nature
+				ach(16551),	-- Giving More Back to Nature
+				ach(16548),	-- It Takes a Tuskarr Buddy
 				ach(16564),	-- It Takes a Tuskarr Family
 				ach(16565),	-- It Takes a Tuskarr Village
-
-				ach(16550),	-- Giving Back to Nature
-				ach(16551),	-- Giving More Back to Nature
-				ach(16552),	-- Giving Even More Back to Nature
+				ach(16561),	-- Lunkers, Lunkers Everywhere
+				ach(16547),	-- Pulled!
+				ach(16317),	-- Secret Fishing Spots
 				ach(16553),	-- Taking From Nature
+				ach(16562),	-- That's not a Fish...
+				ach(16563),	-- We're Going to Need a Bigger Harpoon
 			}),
 			n(QUESTS, {
 					-- RENOWN 4 --

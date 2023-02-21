@@ -96,6 +96,8 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		})),
 		petbattle(ach(8397, {		-- Crazy for Cats* (need to add locations to comments for future use - wowhead did not link)
 			title_gendered(252, 240),	-- the Crazy Cat Man / the Crazy Cat Lady
+			--title(240),	-- %s the Crazy Cat Lady
+			--title(252),	-- %s the Crazy Cat Man
 			crit(1),		-- Black Tabby Cat
 			crit(2),		-- Bombay Cat
 			crit(3),		-- Brightpaw

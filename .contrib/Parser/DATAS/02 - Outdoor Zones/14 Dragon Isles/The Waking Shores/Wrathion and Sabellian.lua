@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
 			n(ACHIEVEMENTS, {
-				ach(16494),	-- Loyalty to the Prince
+				ach(16532),	-- Friends with Sabellian
 				ach(16497, {	-- I'm Playing All Sides
 					crit(1, {	-- Sabellian
 						["_quests"] = {
@@ -38,6 +38,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["_quests"] = { 66129 },	-- Unlocking Our Past
 					}),
 				}),
+				ach(16494, {	-- Loyalty to the Prince
+					title(484),	-- %s, Agent of the Black Prince
+				}),
 				ach(16496, {	-- Obsidian Champion
 					crit(1, {
 						["_quests"] = { 67015 },	-- Forging the Answer
@@ -53,7 +56,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					}),
 				}),
 				ach(16495),	-- Obsidian Keymaster
-				ach(16760),	-- The Obsidian Bloodline
+				ach(16760, {	-- The Obsidian Bloodline
+					title(483),	-- %s, Paragon of the Obsidian Brood
+				}),
+				ach(16536),	-- True Friends with Wrathion
 			}),
 			n(QUESTS, {
 				q(66133, {	-- Keys of Loyalty
@@ -501,6 +507,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 							["description"] = "Can only be bought if you looted the Worldbreaker Membership once from the Twillight Cache before.",
 							["cost"] = {
 								{ "i", 202173, 20 },		-- 20x Magmote
+							},
+							["g"] = {
+								title(469, {	-- %s, the Worldbreaker
+									["collectible"] = false,
+								}),
 							},
 						}),
 					},

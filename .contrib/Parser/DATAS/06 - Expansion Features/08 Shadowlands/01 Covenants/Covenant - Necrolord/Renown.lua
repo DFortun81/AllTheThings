@@ -22,6 +22,8 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				title_gendered(426, 427, {	-- Baron / Baroness (TITLE!)
 					["description"] = "Requires Renown 40.",
 				}),
+				--title(426),	-- Baron %s
+				--title(427),	-- Baroness %s
 				title(443, {	-- Sword of the Primus (TITLE!)
 					["description"] = "Requires Renown 80.",
 				}),

@@ -31,6 +31,8 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		}),
 		ach(9072, {		-- Mantle of the Talon King
 			title_gendered(278, 279),	-- Talon King / Talon Queen
+			--title(278),	-- Talon King %s
+			--title(279),	-- Talon Queen %s
 			follower(224),	-- Talon Guard Kurekk
 		}),
 		ach(9478, {		-- Savage Friends (A)

@@ -128,6 +128,9 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 					16593,	-- Tour of Duty: Thaldraszus
 					16599,	-- A Champion's Pursuit
 				}},
+				["g"] =	{
+					title(479),	-- Malicious %s
+				},
 			}),
 			ach(16613, {	-- Finder's Keepers
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },

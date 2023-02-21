@@ -28,6 +28,10 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 	}),
 	i(165717),	-- Steel Strong Box, 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Ally
 	i(165718),	-- Steel Strong Box, 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Horde
+	title(96, {	-- %s the Flawless Victor
+		["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+		["collectible"] = false,
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, pvp(n(-240, {	-- Rated

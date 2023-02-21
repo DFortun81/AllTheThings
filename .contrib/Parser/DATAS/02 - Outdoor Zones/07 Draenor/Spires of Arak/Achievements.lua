@@ -132,6 +132,9 @@ _.Zones =
 					["sourceQuest"] = 37177,	-- Call of the Talon King
 					["g"] = {
 						title_gendered(278, 279),	-- Talon King / Talon Queen
+						--title(278),	-- Talon King %s
+						--title(279),	-- Talon Queen %s
+						follower(224),	-- Talon Guard Kurekk
 					},
 				}),
 				ach(9600, {		-- Monster Mash (Lost Veil Anzu)

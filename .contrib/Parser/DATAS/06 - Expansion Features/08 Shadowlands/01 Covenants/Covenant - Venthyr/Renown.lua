@@ -22,6 +22,8 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				title_gendered(429, 430, {	-- Count / Countess (TITLE!)
 					["description"] = "Requires Renown 40.",
 				}),
+				--title(429),	-- Count %s
+				--title(430),	-- Countess %s
 				title(444, {	-- Sin Eater (TITLE!)
 					["description"] = "Requires Renown 80.",
 				}),

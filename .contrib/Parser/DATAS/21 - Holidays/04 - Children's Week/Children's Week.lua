@@ -110,6 +110,8 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 					title(105),	-- Patron
 					-- #else
 					title_gendered(105, 104),	-- Patron / Matron
+					--title(104),	-- Matron %s
+					--title(105),	-- Patron %s
 					-- #endif
 				},
 			}),

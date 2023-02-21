@@ -1309,6 +1309,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 							},
 						})),
 						ach(15134, {["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 }}),	-- Ahead of the Curve: Sylvanas Windrunner
+						ach(15135, {["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 }}),	-- Cutting Edge: Sylvanas Windrunner
 						i(186642),	-- Vengeance (MOUNT!)
 						i(186398),	-- Edge of Night
 						i(186414),	-- Rae'shalare, Death's Whisper
