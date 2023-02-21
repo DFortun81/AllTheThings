@@ -6873,7 +6873,7 @@ end
 local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",search,...)
 	app.SetSkipPurchases(1);
-	AttachTooltipRawSearchResults(self, lineNumber, GetCachedSearchResults(search, method, ...));
+	pcall(AttachTooltipRawSearchResults, self, lineNumber, GetCachedSearchResults(search, method, ...));
 	app.SetSkipPurchases(0);
 end
 
