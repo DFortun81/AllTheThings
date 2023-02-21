@@ -10,6 +10,7 @@ local CHAMPIONS_WRIT = i(46114);	-- Champion's Writ
 local VALIANTS_SEAL = i(44987);	-- Valiant's Seal
 
 -- TODO: Finish setting this up, intent is to right click and show the achievement that's required.
+-- TODO: Forcibly changing visibility on groups is bad. These quests are now impossible to see even in Debug unless actually being on the respective quest.
 -- The dailies are locked until they're unlocked by completing A Silver Confidant for Alliance or The Sunreavers for Horde
 local CRUSADER_DAILY_OnClick = [[function(row, button)
 	if button == "RightButton" and row.ref.ach then

@@ -4863,7 +4863,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Only need to build/update groups from the top level
 		if topLevelSearch then
-			BuildGroups(group, group.g);
+			BuildGroups(group);
 			app.TopLevelUpdateGroup(group);
 		end
 	-- delete sub-groups if there are none
@@ -17430,7 +17430,7 @@ local function UpdateWindow(self, force, got)
 			if not self.doesOwnUpdate and
 				(force or (self.shouldFullRefresh and self:IsVisible())) then
 				-- app.PrintDebug("TopLevelUpdateGroup",self.Suffix)
-				app.TopLevelUpdateGroup(self.data, self);
+				app.TopLevelUpdateGroup(self.data);
 				self.HasPendingUpdate = nil;
 				-- app.PrintDebugPrior("Done")
 			end
@@ -19201,7 +19201,7 @@ customWindowUpdates["AuctionData"] = function(self)
 	self.data.indent = 0;
 	self.data.back = 1;
 	BuildGroups(self.data, self.data.g);
-	app.TopLevelUpdateGroup(self.data, self);
+	app.TopLevelUpdateGroup(self.data);
 	self.data.visible = true;
 	self:BaseUpdate(true);
 end;
@@ -20229,7 +20229,7 @@ customWindowUpdates["SourceFinder"] = function(self)
 			self:SetData(db);
 		end
 		self:BuildData();
-		app.TopLevelUpdateGroup(self.data, self);
+		app.TopLevelUpdateGroup(self.data);
 		self:BaseUpdate(true);
 	end
 end;
@@ -22828,7 +22828,7 @@ app.LoadDebugger = function()
 		-- Update the window and all of its row data
 		self:BaseUpdate(force);
 	end);
-	app.TopLevelUpdateGroup(debuggerWindow.data, debuggerWindow);
+	app.TopLevelUpdateGroup(debuggerWindow.data);
 	debuggerWindow:Show();
 	app.LoadDebugger = function()
 		debuggerWindow:Toggle();
@@ -22884,8 +22884,10 @@ local function AttachTooltip(self, ttdata)
 	-- Does the tooltip have an owner?
 	local owner = self:GetOwner();
 	if owner then
-		if owner.SpellHighlightTexture then
-			-- Actionbars, don't want that.
+		if owner.SpellHighlightTexture
+		or owner.TrainBook
+		or owner.spendTextShadows then
+			-- Actionbars/Spellbook/Talents UI, don't want that.
 			return true;
 		end
 		-- this is already covered by a default in-game tooltip line:
@@ -23514,8 +23516,8 @@ app.ProcessAuctionData = function()
 	app.Sort(window.data.g, function(a, b)
 		return (b.priority or 0) > (a.priority or 0);
 	end);
-	BuildGroups(window.data, window.data.g);
-	app.TopLevelUpdateGroup(window.data, window);
+	BuildGroups(window.data);
+	app.TopLevelUpdateGroup(window.data);
 	window:Show();
 	window:Update();
 end
