@@ -47,6 +47,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				q(66070, {	-- Brightblade's Bones
 					["coord"] = { 22.0, 95.1, THE_WAKING_SHORES },
 					["g"] = {
+						n(187077, {	-- Cymre Brightblade
+							["description"] = "Only available when world quest is active.",
+							["coord"] = { 22.8, 95.0, THE_WAKING_SHORES },
+							["g"] = {
+								i(202085, {	-- Bugbiter Tortoise (PET!)
+									["cost"] = {
+										{ "i", 202084, 1 },	-- 1xEroded Fossil
+										{ "i", 202082, 1 },	-- 1xPetrified Dragon Egg
+									},
+								}),
+							},
+						}),
 						i(191951),	-- Lost Banana
 					},
 				}),

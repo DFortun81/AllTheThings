@@ -37,6 +37,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			o(385022, {	-- Eroded Fossil
+				["description"] = "Only available when world quest |cffffffffBrightblade's Bones|r (66070) is active.",
 				["coords"] = {
 					{ 26.0, 94.6, THE_WAKING_SHORES },
 					{ 21.6, 92.1, THE_WAKING_SHORES },
@@ -146,6 +147,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			o(385021, {	-- Petrified Dragon Egg
+				["description"] = "Only available when world quest |cffffffffBrightblade's Bones|r (66070) is active.",
 				["coords"] = {
 					{ 33.4, 77.1, THE_WAKING_SHORES },
 					{ 23.0, 88.8, THE_WAKING_SHORES },

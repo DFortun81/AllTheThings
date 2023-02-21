@@ -1164,7 +1164,7 @@ root(ROOTS.Unsorted, {
 				mount(397406),	-- [PH] Magical Fish Mount (MOUNT!)
 				i(203226),	-- Stormfused Salamanther (MOUNT!)
 				mount(395095),	-- Whelpling (MOUNT!)
-		
+
 				i(190767),	-- Armored Golden Pterrordax (MOUNT!)
 				mount(367875),	-- Armored Siege Kodo (MOUNT!)
 				mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
@@ -1176,10 +1176,10 @@ root(ROOTS.Unsorted, {
 				i(190176),	-- Drazka'zet the Wrathful (PET!)
 				i(190173),	-- Lil' Maka'jin (PET!)
 				pet(3254),	-- Watcher of the Huntress (PET!)
-		
+
 				-- Items
 				i(137295),	-- Bottle of Arcwine
-		
+
 				-- Probably Trading Post?
 				i(189792),	-- Glorious Dragonrider's Grips
 				i(189872),	-- Shattered Krokul Edge
@@ -1329,7 +1329,6 @@ root(ROOTS.Unsorted, {
 				i(191541),	-- Shikaar Supplies
 				i(193257),	-- Clump of Sacred Soil
 		
-				i(200842),	-- Power-Depleted Staff
 				i(201990),	-- Primal Mote
 				i(202035),	-- Self-Heating Rations
 				i(202096),	-- Armaments of the Scale
@@ -1370,7 +1369,7 @@ root(ROOTS.Unsorted, {
 				q(71213),	--
 				q(74897),	--
 				q(74898),	--
-			}),	
+			}),
 		})),
 		tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 10.0.2" } }, {
 			n(REWARDS, {

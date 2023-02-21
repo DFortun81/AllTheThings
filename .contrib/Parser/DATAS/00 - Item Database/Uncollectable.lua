@@ -5,6 +5,10 @@ local i = function(itemID)
 	Items[itemID] = item;
 	return item;
 end
+
+-- DF
+i(200842);	-- Power-Depleted Staff
+
 -- SL
 i(179293);	-- Glimmering Facial Cream
 i(180293);	-- Night Fae Insignia
