@@ -2379,6 +2379,11 @@ local function GetRelativeMap(group, currentMapID)
 	end
 	return currentMapID;
 end
+local function GetRelativeFieldInSet(group, field, set)
+	if group then
+		return set[group[field]] or GetRelativeFieldInSet(group.sourceParent or group.parent, field, set);
+	end
+end
 local function GetRelativeField(group, field, value)
 	if group then
 		return group[field] == value or GetRelativeField(group.sourceParent or group.parent, field, value);
@@ -5299,26 +5304,26 @@ local function DetermineNPCDrops(group)
 	-- TODO: account for multi-NPC encounters
 	local npcID = group.npcID or group.creatureID;
 	if npcID then
-		-- app.PrintDebug("Found NPC Group",group.hash)
+		-- app.PrintDebug("NPC Group",group.hash)
 		-- search for groups of this NPC
 		local npcGroups = app.SearchForField("npcID", npcID);
 		if npcGroups then
-			local ParentField = app.RecursiveFirstParentWithField;
 			-- see if there's a difficulty wrapping the fill group
-			local difficultyID = ParentField(group, "difficultyID");
+			local difficultyID = GetRelativeValue(group, "difficultyID");
 			if difficultyID then
-				-- app.PrintDebug("FillNPC.difficultyID",group.hash,difficultyID)
+				-- app.PrintDebug("FillNPC.Diff",group.hash,difficultyID)
 				-- can only fill npc groups for the npc which match the difficultyID
 				local headerID, groups, npcDiff;
 				for _,npcGroup in pairs(npcGroups) do
 					if npcGroup.hash ~= group.hash then
-						headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
+						headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
+						-- app.PrintDebug("DropCheck",npcGroup.hash,"=>",headerID)
 						-- where headerID is allowed and the nested difficultyID matches
-						if headerID and NPCExpandHeaders[headerID] then
-							npcDiff = ParentField(npcGroup, "difficultyID");
+						if headerID then
+							npcDiff = GetRelativeValue(npcGroup, "difficultyID");
 							-- copy the header under the NPC groups
 							if not npcDiff or npcDiff == difficultyID then
-								-- app.PrintDebug("NPCDrops Diff",difficultyID,group.hash,"<==",npcGroup.hash)
+								-- app.PrintDebug("IsDrop.Diff",difficultyID,group.hash,"<==",npcGroup.hash)
 								if groups then tinsert(groups, CreateObject(npcGroup))
 								else groups = { CreateObject(npcGroup) }; end
 							end
@@ -5327,14 +5332,16 @@ local function DetermineNPCDrops(group)
 				end
 				return groups;
 			else
+				-- app.PrintDebug("FillNPC",group.hash)
 				local headerID, groups;
 				for _,npcGroup in pairs(npcGroups) do
 					if npcGroup.hash ~= group.hash then
-						headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
+						headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
+						-- app.PrintDebug("DropCheck",npcGroup.hash,"=>",headerID)
 						-- where headerID is allowed
-						if headerID and NPCExpandHeaders[headerID] then
+						if headerID then
 							-- copy the header under the NPC groups
-							-- app.PrintDebug("NPCDrops",group.hash,"<==",npcGroup.hash)
+							-- app.PrintDebug("IsDrop",group.hash,"<==",npcGroup.hash)
 							if groups then tinsert(groups, CreateObject(npcGroup))
 							else groups = { CreateObject(npcGroup) }; end
 						end
@@ -5419,6 +5426,7 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	end
 
 	if group.g then
+		local Runner = app.FunctionRunner;
 		-- app.PrintDebug(".g",group.hash,#group.g)
 		-- local hash = group.hash;
 		-- Then nest anything further
@@ -5426,7 +5434,7 @@ local function FillGroupsRecursiveAsync(group, FillData)
 			-- never nest the same Thing under itself
 			-- (prospecting recipes list the input as the output)
 			-- if o.hash ~= hash then
-			app.FunctionRunner.Run(FillGroupsRecursiveAsync, o, FillData);
+			Runner.Run(FillGroupsRecursiveAsync, o, FillData);
 			-- end
 		end
 	end
@@ -5448,11 +5456,14 @@ app.FillGroups = function(group)
 
 	-- Fill the group with all nestable content
 	if isInWindow then
+		local Runner = app.FunctionRunner;
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
-		app.FunctionRunner.SetPerFrame(25);
-		app.FunctionRunner.Run(FillGroupsRecursiveAsync, group, FillData);
+		Runner.SetPerFrame(25);
+		Runner.Run(FillGroupsRecursiveAsync, group, FillData);
 	else
+		-- app.PrintDebug("FG",group.hash)
 		FillGroupsRecursive(group, FillData);
+		-- app.PrintDebugPrior("FG",group.hash)
 	end
 
 	-- if app.DEBUG_PRINT then app.PrintTable(included) end
