@@ -1791,7 +1791,7 @@ root(ROOTS.Unsorted, {
 				q(74416),	--
 			}),
 		})),
-		tier(DF_TIER, 0.0, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+		tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
 			n(REWARDS, {
 				n(ARMOR, {
 					-- Evoker Set --
