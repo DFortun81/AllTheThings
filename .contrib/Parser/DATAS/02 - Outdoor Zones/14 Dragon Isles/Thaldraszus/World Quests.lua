@@ -64,6 +64,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(70111, {	-- Temple Treasures
 					["coord"] = { 51.0, 58.5, THALDRASZUS }
 				}),
+				q(70072, {	-- Time-Lost and Found
+					["coord"] = { 58.2, 80.0, THALDRASZUS }
+				}),
 				petbattle(q(71166, {	-- The Oldest Dragonfly
 					["coord"] = { 39.6, 73.4, THALDRASZUS }
 				})),

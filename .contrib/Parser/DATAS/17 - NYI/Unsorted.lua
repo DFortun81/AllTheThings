@@ -1328,7 +1328,7 @@ root(ROOTS.Unsorted, {
 				i(191540),	-- Batu's Collar
 				i(191541),	-- Shikaar Supplies
 				i(193257),	-- Clump of Sacred Soil
-		
+
 				i(201990),	-- Primal Mote
 				i(202035),	-- Self-Heating Rations
 				i(202096),	-- Armaments of the Scale
@@ -2995,7 +2995,6 @@ root(ROOTS.Unsorted, {
 				q(70056),	--
 				q(70065),	--
 				q(70071),	--
-				q(70072),	--
 				q(70108),	--
 				q(70109),	--
 				q(70113),	--

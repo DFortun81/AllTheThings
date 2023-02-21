@@ -558,6 +558,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				},
 			}),
 			q(72372, {	-- Taming the Dragon...kin
+				["minReputation"] = { 2510, 23 },	-- Valdrakken Accord Renown 23
 				["qg"] = 185561,	-- Kaestrasz
 				["coord"] = { 46.8, 78.8, VALDRAKKEN },
 				["classes"] = { HUNTER },
