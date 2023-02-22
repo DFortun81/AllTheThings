@@ -1479,9 +1479,6 @@ root(ROOTS.Unsorted, {
 				i(123868),	-- Relic of Shakama
 				i(192744),	-- Rymek's Gift
 				i(192768),	-- Titan Disc
-				i(199178),	-- Bronze Horn Flower
-				i(199179),	-- Dragon Foil
-				i(199180),	-- Dragon's Blood Berry
 				i(199790),	-- Makko's Journal Cover
 				i(199792),	-- Makko's Journal - Page One
 				i(199793),	-- Makko's Journal - Page Two
