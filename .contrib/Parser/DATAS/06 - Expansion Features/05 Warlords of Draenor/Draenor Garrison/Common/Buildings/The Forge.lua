@@ -21,11 +21,11 @@ _.ExpansionFeatures =
 					n(VENDORS, {
 						n(77359, {	-- Auria Irondreamer <Blacksmith>
 							["races"] = ALLIANCE_ONLY,
-							["g"] = appendGroups(COMMON_DRAENOR_BLACKSMITHING_RECIPES, {DRAENOR_BLACKSMITHING}),
+							["sym"] = {{"sub","common_vendor",87062}},	-- Royce Bigbeard <Blacksmithing Plans>
 						}),
 						n(79867, {	-- Orgek Ironhand
 							["races"] = HORDE_ONLY,
-							["g"] = appendGroups(COMMON_DRAENOR_BLACKSMITHING_RECIPES, {DRAENOR_BLACKSMITHING}),
+							["sym"] = {{"sub","common_vendor",87550}},	-- Nonn Threeratchet <Blacksmithing Plans>
 						}),
 					}),
 				}),
