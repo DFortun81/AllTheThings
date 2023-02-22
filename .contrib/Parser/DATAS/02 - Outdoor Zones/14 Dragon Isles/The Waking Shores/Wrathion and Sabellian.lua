@@ -173,16 +173,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "i", 199915 },	-- Ancient Obsidian Charm
 					["isWeekly"] = true,
 				}),
-				q(66856, {	-- Ashen Black and the Seven Gnomes
-					["sourceQuest"] = 66419,	-- Allegiance To One
-					["provider"] = { "n", 191014 },	-- Ashen Black
-					["coord"] = { 26.5, 62.5, THE_WAKING_SHORES },
-					["isDaily"] = true,
-				}),
 				q(66321, {	-- Bar Their Efforts
 					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 191193 },	-- Exadria
 					["isWeekly"] = true,
+				}),
+				q(66856, {	-- Becca Black and the Seven Gnomes
+					["sourceQuest"] = 66419,	-- Allegiance To One
+					["provider"] = { "n", 191014 },	-- Becca Black
+					["coord"] = { 26.5, 62.5, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(69926, {	-- Becca Black and the Seven Gnomes
 					["sourceQuest"] = 66419,	-- Allegiance To One
