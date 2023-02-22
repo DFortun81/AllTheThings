@@ -19,13 +19,13 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					["lvl"] = 60,
 				}),
 				q(8303, {	-- Anachronos
-					["qg"] = 15180,	-- Baristolth of the Shifting Sands
+					["providers"] = {
+						{ "n", 15180 },	-- Baristolth of the Shifting Sands
+						{ "i", 20415 },	-- The War of the Shifting Sands
+					},
 					["sourceQuest"] = 8301,	-- The Path of the Righteous
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
-					["cost"] = {
-						{ "i", 20415, 1 },	-- The War of the Shifting Sands
-					},
 					["lvl"] = 60,
 				}),
 				q(8575, {	-- Azuregos's Magical Ledger
@@ -36,12 +36,12 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					["lvl"] = 60,
 				}),
 				applyclassicphase(PHASE_FIVE_GONG, q(8743, {	-- Bang a Gong!
-					["provider"] = { "o", 180717 },	-- The Scarab Gong
+					["providers"] = {
+						{ "o", 180717 },	-- The Scarab Gong
+						{ "i",  21175 },	-- The Scepter of the Shifting Sands
+					},
 					["sourceQuest"] = 8742,	-- The Might of Kalimdor
 					["coord"] = { 25.7, 90.9, SILITHUS },
-					["cost"] = {
-						{ "i", 21175, 1 },	-- The Scepter of the Shifting Sands
-					},
 					["lvl"] = 60,
 					["groups"] = {
 						classicAch(416, {	-- Scarab Lord (Achievement)
@@ -55,10 +55,10 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 							["timeline"] = { "added 2.0.3.28000", "removed 4.0.3" },	-- Added in Burning Crusade Prepatch
 						}),
 						i(21176, {	-- Black Qiraji Battle Tank (MOUNT!)
-							mount(239770, {	-- Black Qiraji War Tank (MOUNT!)  (This a high resolution version given to players in the end of Legion)
-								["timeline"] = { "added 7.3.5" },
-								["u"] = REMOVED_FROM_GAME,	-- when it's added, it's already removed because it's only given to players who already have the original removed
-							}),
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						mount(239770, {	-- Black Qiraji War Tank (MOUNT!)  (This a high resolution version given to players in the end of Legion)
+							["timeline"] = { "added 7.3.5.10000", "removed 7.3.5.10001" },	-- when it's added, it's already removed because it's only given to players who already have the original removed
 						}),
 					},
 				})),
@@ -119,12 +119,12 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					["lvl"] = 60,
 				}),
 				q(8599, {	-- Love Song for Narain
-					["qg"] = 15526,	-- Meridith the Mermaiden
+					["providers"] = {
+						{ "n", 15526 },	-- Meridith the Mermaiden
+						{ "i", 21032 },	-- Meridith's Love Letter
+					},
 					["sourceQuest"] = 8597,	-- Draconic for Dummies
 					["coord"] = { 59.4, 96.0, TANARIS },
-					["cost"] = {
-						{ "i", 21032, 1 },	-- Meridith's Love Letter
-					},
 					["lvl"] = 60,
 				}),
 				q(8730, {	-- Nefarius's Corruption
@@ -165,22 +165,22 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					},
 				}),
 				q(8598, {	-- rAnS0m
-					["provider"] = { "o", 180652 },	-- Freshly Dug Dirt
+					["providers"] = {
+						{ "o", 180652 },	-- Freshly Dug Dirt
+						{ "i",  21029 },	-- Ransom Letter
+					},
 					["sourceQuest"] = 8599,	-- Love Song for Narain
 					["description"] = "The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",
 					["coord"] = { 59.4, 96.0, TANARIS },
-					["cost"] = {
-						{ "i", 21029, 1 },	-- Ransom Letter
-					},
 					["lvl"] = 60,
 				}),
 				q(8587, {	-- Return to Narain
-					["qg"] = 8125,	-- Dirge Quikcleave <Butcher>
+					["providers"] = {
+						{ "n", 8125 },	-- Dirge Quikcleave <Butcher>
+						{ "i", 21028 },	-- 500 Pound Chicken
+					},
 					["sourceQuest"] = 8586,	-- Dirge's Kickin' Chimaerok Chops
 					["coord"] = { 52.6, 28.1, TANARIS },
-					["cost"] = {
-						{ "i", 21028, 1 },	-- 500 Pound Chicken
-					},
 					["lvl"] = 60,
 				}),
 				q(8578, {	-- Scrying Goggles? No Problem!
@@ -189,10 +189,12 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu
 					["coord"] = { 46.2, 86.7, SILVERPINE_FOREST },
 					["maps"] = { MOLTEN_CORE },
-					["cost"] = {
-						{ "i", 20951, 1 },	-- Narain's Scrying Goggles
-					},
 					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Narain's Scrying Goggles
+							["provider"] = { "i", 20951 },	-- Narain's Scrying Goggles
+						}),
+					},
 				}),
 				q(8577, {	-- Stewvul, Ex-B.F.F.
 					["qg"] = 11811,	-- Narain Soothfancy
@@ -202,13 +204,13 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					["lvl"] = 60,
 				}),
 				q(8741, {	-- The Champion Returns
-					["qg"] = 11832,	-- Keeper Remulos
+					["providers"] = {
+						{ "n", 11832 },	-- Keeper Remulos
+						{ "i", 21139 },	-- Green Scepter Shard
+					},
 					["sourceQuest"] = 8736,	-- The Nightmare Manifests
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 36.18, 41.79, MOONGLADE },
-					["cost"] = {
-						{ "i", 21139, 1 },	-- Green Scepter Shard
-					},
 					["lvl"] = 60,
 				}),
 				q(8555, {	-- The Charge of the Dragonflights
@@ -239,11 +241,11 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					["sourceQuest"] = 8301,	-- The Path of the Righteous
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["repeatable"] = true,
-					["cost"] = {
-						{ "i", 20384, 200 },	-- Silithid Carapace Fragment
-					},
 					["lvl"] = 60,
 					["groups"] = {
+						objective(1, {	-- 0/200 Silithid Carapace Fragment
+							["provider"] = { "i", 20384 },	-- Silithid Carapace Fragment
+						}),
 						i(20403),	-- Proxy of Nozdormu
 					},
 				}),
@@ -413,13 +415,13 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					},
 				}),
 				q(8301, {	-- The Path of the Righteous
-					["qg"] = 15180,	-- Baristolth of the Shifting Sands
+					["providers"] = {
+						{ "n", 15180 },	-- Baristolth of the Shifting Sands
+						{ "i", 20402 },	-- Agent of Nozdormu
+					},
 					["sourceQuest"] = 8288,	-- Only One May Rise
 					["coord"] = { 49.5, 36.4, SILITHUS },
-					["cost"] = {
-						{ "i", 20402, 1 },	-- Agent of Nozdormu
-						{ "i", 20384, 200 },	-- Silithid Carapace Fragment
-					},
+					["cost"] = {{ "i", 20384, 200 }},	-- Silithid Carapace Fragment
 					["lvl"] = 60,
 					["groups"] = {
 						i(20403),	-- Proxy of Nozdormu
@@ -479,9 +481,6 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["lvl"] = 60,
 				}),
-			}),
-			n(REWARDS, {
-				i(20402),	-- Agent of Nozdormu
 			}),
 		},
 	}))
