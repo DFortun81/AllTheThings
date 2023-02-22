@@ -22,6 +22,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		filter(DAGGERS, {
+			tier(CLASSIC_TIER, {
+				i(3222),	-- Wicked Dagger
+			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.0, {
 					i(189680),	-- 10.0 Dungeon Template - Dagger - Agi - Weapon
@@ -88,6 +91,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		filter(ONE_HANDED_MACES, {
+			tier(CLASSIC_TIER, {
+				i(17733),	-- Fist of Stone
+			}),
 			tier(BFA_TIER, {
 				tier(BFA_TIER, 0.1, {
 					i(161118),	-- Marrow Shatter
@@ -152,6 +158,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		filter(SHIELDS, {
+			tier(CLASSIC_TIER, {
+				i(7748),	-- Forcestone Buckler
+			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.0, {
 					i(189671),	-- 10.0 Dungeon Template - Shield - Shield

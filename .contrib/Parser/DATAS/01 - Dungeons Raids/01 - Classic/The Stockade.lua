@@ -316,6 +316,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	i(3222),	-- Wicked Dagger
-}));

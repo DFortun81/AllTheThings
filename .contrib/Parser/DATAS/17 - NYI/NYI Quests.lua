@@ -16,6 +16,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(24889),	-- Classic Random 5-15 (Nth)
 			q(24882),	-- LFGDungeons - Classic - Random - 1st
 			q(24890),	-- LFGDungeons - Classic - Random - Nth
+			q(10561),	-- Revered Among the Keepers of Time
 		}),
 		tier(TBC_TIER, { -- These Quests might be ingame, very unlikely however.
 			q(24922),	-- LFGDungeons - Burning Crusade - Heroic Random - 1st
@@ -102,6 +103,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(29339),	-- Short-Supply Reward
 			q(29340),	-- Short-Supply Reward
 			q(29341),	-- Short-Supply Reward
+			q(29810, {	-- The Faceless Ones
+				["timeline"] = { "created 4.3.0.14732" },
+			}),
 			q(29158, {	-- The Zandalar Representative (initially) / The Darkspear Representative
 				["timeline"] = { "created 4.1.0" },	-- Never made it out of 4.1.0 test realms
 			}),
@@ -4552,6 +4556,80 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["lvl"] = 50,
 					["repeatable"] = 1,
 				}),
+				-- Mechagon
+				q(54084),	-- [DNT]
+				q(56191, {	-- Blueprint: TK32[DNT]
+					i(169177),	-- Blueprint: TK32[DNT]
+				}),
+				q(56192, {	-- Blueprint: TK33[DNT]
+					i(169178),	-- Blueprint: TK33[DNT]
+				}),
+				q(56193, {	-- Blueprint: TK34[DNT]
+					i(169179),	-- Blueprint: TK34[DNT]
+				}),
+				q(56194, {	-- Blueprint: TK35[DNT]
+					i(169180),	-- Blueprint: TK35[DNT]
+				}),
+				q(56195, {	-- Blueprint: TK36[DNT]
+					i(169181),	-- Blueprint: TK36[DNT]
+				}),
+				q(56196, {	-- Blueprint: TK37[DNT]
+					i(169182),	-- Blueprint: TK37[DNT]
+				}),
+				q(56197, {	-- Blueprint: TK38[DNT]
+					i(169183),	-- Blueprint: TK38[DNT]
+				}),
+				q(56198, {	-- Blueprint: TK39[DNT]
+					i(169184),	-- Blueprint: TK39[DNT]
+				}),
+				q(56199, {	-- Blueprint: TK40[DNT]
+					i(169185),	-- Blueprint: TK40[DNT]
+				}),
+				q(56200, {	-- Blueprint: TK41[DNT]
+					i(169186),	-- Blueprint: TK41[DNT]
+				}),
+				q(56201, {	-- Blueprint: TK42[DNT]
+					i(169187),	-- Blueprint: TK42[DNT]
+				}),
+				q(56202, {	-- Blueprint: TK43[DNT]
+					i(169188),	-- Blueprint: TK43[DNT]
+				}),
+				q(56203, {	-- Blueprint: TK44[DNT]
+					i(169189),	-- Blueprint: TK44[DNT]
+				}),
+				q(55742),	-- Bundle of Corroded Parts
+				q(56071),	-- De-Synced Vibro Blade
+				q(56072),	-- De-Synced Vibro Blade
+				q(55669, {	-- Encrypted Radio Receiver TBD
+					i(168221),	-- Encrypted Raido Receiver
+				}),
+				q(56097),	-- Grime-Coated Disc
+				q(55605),	-- NOT USED
+				q(55099),	-- TBD NOT USED
+				q(55100),	-- TBD NOT USED
+				q(55738),	-- TBD NOT USED
+				q(55740),	-- TBD NOT USED
+				q(55319),	-- Tonk the Terrible
+				q(55693),	-- UNusued
+				q(55320),	-- Vehicle: TK02[DNT]
+				q(55321),	-- Vehicle: TK03[DNT]
+				q(55322),	-- Vehicle: TK04[DNT]
+				q(55323),	-- Vehicle: TK05[DNT]
+				q(55324),	-- Vehicle: TK06[DNT]
+				q(55325),	-- Vehicle: TK07[DNT]
+				q(55326),	-- Vehicle: TK08[DNT]
+				q(55327),	-- Vehicle: TK09[DNT]
+				q(55328),	-- Vehicle: TK10[DNT]
+				q(55329),	-- Vehicle: TK11[DNT]
+				q(55330),	-- Vehicle: TK12[DNT]
+				q(55331),	-- Vehicle: TK13[DNT]
+				q(55332),	-- Vehicle: TK14[DNT]
+				q(55333),	-- Vehicle: TK15[DNT]
+				q(55334),	-- Vehicle: TK16[DNT]
+				q(55335),	-- Vehicle: TK17[DNT]
+				q(55336),	-- Vehicle: TK18[DNT]
+				q(55337),	-- Vehicle: TK19[DNT]
+				q(55338),	-- Vehicle: TK20[DNT]
 				-- Tools
 				-- 8.2.0.30080
 				q(54122),	--

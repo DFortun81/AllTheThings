@@ -4439,12 +4439,3 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
-
--- TODO: probably move to the NYI Quests file?
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, m(KALIMDOR, {
-	m(TANARIS, {
-		m(CAVERNS_OF_TIME, {
-			q(10561),	-- Revered Among the Keepers of Time
-		}),
-	}),
-})));

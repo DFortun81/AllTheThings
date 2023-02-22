@@ -345,14 +345,3 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 		})),
 	}),
 })));
-
-root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
-	m(OHNAHRAN_PLAINS, {
-		n(RARES, sharedData({ ["isDaily"] = true }, {
-			n(192020, {	-- Eaglemaster Niraak
-				["coord"] = { 49.6, 66.6, OHNAHRAN_PLAINS },
-				["questID"] = 74441,
-			}),
-		})),
-	}),
-})));

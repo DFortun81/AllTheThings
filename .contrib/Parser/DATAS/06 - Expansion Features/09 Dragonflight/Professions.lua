@@ -2640,14 +2640,3 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(72340),	-- Triggered on unlocking alt spark skip
 	}),
 }));
-
-root(ROOTS.NeverImplemented, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "created 10.0.5" }, ["u"] = NEVER_IMPLEMENTED, }, {
-	n(PROFESSIONS, {
-		ach(17316, {	-- Dragon Isles Crafting Order Apprentice
-		}),
-		ach(17317, {	-- Dragon Isles Crafting Order Journeyman
-		}),
-		ach(17318, {	-- Dragon Isles Crafting Order Master
-		}),
-	}),
-})));

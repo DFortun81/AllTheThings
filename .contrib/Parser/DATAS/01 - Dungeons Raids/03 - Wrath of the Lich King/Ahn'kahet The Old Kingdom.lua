@@ -348,8 +348,5 @@ root(ROOTS.NeverImplemented, {
 		["timeline"] = { "created 3.0.1", "added 6.2.0" },
 	}),
 	-- #endif
-	q(29810, {	-- The Faceless Ones
-		["timeline"] = { "created 4.3.0.14732" },
-	}),
 });
 -- #endif

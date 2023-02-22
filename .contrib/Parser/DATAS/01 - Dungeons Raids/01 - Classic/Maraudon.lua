@@ -510,6 +510,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	i(17733),	-- Fist of Stone
-}));

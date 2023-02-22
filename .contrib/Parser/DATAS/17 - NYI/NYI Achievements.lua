@@ -193,6 +193,13 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { "created 10.0.0" } }, {
 				ach(15798),	-- Winding Slitherdrake
 			})),
+
+			-- 10.0.5
+			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { "created 10.0.5" } }, {
+				ach(17316),	-- Dragon Isles Crafting Order Apprentice
+				ach(17317),	-- Dragon Isles Crafting Order Journeyman
+				ach(17318),	-- Dragon Isles Crafting Order Master
+			})),
 		}),
 	}),
 }));

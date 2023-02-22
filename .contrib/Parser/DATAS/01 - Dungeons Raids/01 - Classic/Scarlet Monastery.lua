@@ -1104,6 +1104,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- #endif
 });
 -- #endif
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	i(7748),	-- Forcestone Buckler
-}));
