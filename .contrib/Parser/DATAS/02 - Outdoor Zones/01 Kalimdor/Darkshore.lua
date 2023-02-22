@@ -2281,6 +2281,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(990, {	-- Trek to Ashenvale
 					["qg"] = 3694,	-- Sentinel Selarin
+					["altQuests"] = { 991 },	-- Raene's Cleansing (1/11) [Vanilla] / Finding Teronis [CATA]
 					["sourceQuests"] = {
 						994,	-- Escape Through Force
 						995,	-- Escape Through Stealth
