@@ -501,6 +501,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 786 },	-- Grelin Whitebeard
 								{ "i", 2619 },	-- Grelin's Report
 							},
+							["altQuests"] = { 287 },	-- Frostmane Hold
 							["sourceQuest"] = 218,	-- The Stolen Journal
 							["coord"] = { 25, 75.8, DUN_MOROGH },
 							["timeline"] = { "removed 4.0.3" },
@@ -511,6 +512,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 1965 },	-- Mountaineer Thalos
 								{ "i", 2619 },	-- Grelin's Report
 							},
+							["altQuests"] = { 287 },	-- Frostmane Hold
 							["sourceQuest"] = 282,	-- Senir's Observations (1/2)
 							["coord"] = { 33.4, 71.8, DUN_MOROGH },
 							["timeline"] = { "removed 4.0.3" },
