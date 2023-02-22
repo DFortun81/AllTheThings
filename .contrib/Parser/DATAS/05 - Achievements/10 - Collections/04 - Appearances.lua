@@ -25,7 +25,344 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 				15984,	-- Elite: Dragonflight Season 1
 			}},
 			["groups"] = {
-				i(202047),	-- Gleaming Incarnate Thunderstone
+				i(202047, {	-- Gleaming Incarnate Thunderstone
+					d(LFR_RAID, {
+						["g"] = bubbleDown({ ["bonusID"] = 6894 }, {
+							cl(DEATHKNIGHT, {
+								i(200408),	-- Maw of the Haunted Frostbrood
+								i(200410),	-- Jaws of the Haunted Frostbrood
+							}),
+							cl(DEMONHUNTER, {
+								i(200345),	-- Skybound Avenger's Visor
+								i(200347),	-- Skybound Avenger's Ailerons
+							}),
+							cl(DRUID, {
+								i(200354),	-- Lost Landcaller's Antlers
+								i(200356),	-- Lost Landcaller's Mantle
+							}),
+							cl(EVOKER, {
+								i(200381),	-- Crown of the Awakened
+								i(200383),	-- Talons of the Awakened
+							}),
+							cl(HUNTER, {
+								i(200390),	-- Stormwing Harrier's Skullmask
+								i(200392),	-- Stormwing Harrier's Pinions
+							}),
+							cl(MAGE, {
+								i(200318),	-- Crystal Scholar's Cowl	----------------------
+								i(200320),	-- Crystal Scholar's Beacons
+							}),
+							cl(MONK, {
+								i(200363),	-- Gaze of the Waking Fist	----------------------
+								i(200365),	-- Mantle of the Waking Fist
+							}),
+							cl(PALADIN, {
+								i(200414),	-- Virtuous Silver Breastplate
+								i(200419),	-- Virtuous Silver Pauldrons
+							}),
+							cl(PRIEST, {
+								i(200327),	-- Draconic Hierophant's Archcowl
+								i(200329),	-- Draconic Hierophant's Wisdom
+							}),
+							cl(ROGUE, {
+								i(200372),	-- Vault Delver's Vizard
+								i(200374),	-- Vault Delver's Epaulets
+							}),
+							cl(SHAMAN, {
+								i(200399),	-- Faceguard of Insued Earth
+								i(200401),	-- Calderas of Insued Earth
+							}),
+							cl(WARLOCK, {
+								i(200336),	-- Scalesworn Cultist's Scorn
+								i(200338),	-- Scalesworn Cultist's Effigy
+							}),
+							cl(WARRIOR, {
+								i(200426),	-- Casque of the Walking Mountain
+								i(200428),	-- Peaks of the Walking Mountain
+							}),
+						}),
+					}),
+					d(NORMAL_RAID, {
+						["g"] = bubbleDown({ ["bonusID"] = 6895 }, {
+							cl(DEATHKNIGHT, {
+								i(200408),	-- Maw of the Haunted Frostbrood
+								i(200410),	-- Jaws of the Haunted Frostbrood
+							}),
+							cl(DEMONHUNTER, {
+								i(200345),	-- Skybound Avenger's Visor
+								i(200347),	-- Skybound Avenger's Ailerons
+							}),
+							cl(DRUID, {
+								i(200354),	-- Lost Landcaller's Antlers
+								i(200356),	-- Lost Landcaller's Mantle
+							}),
+							cl(EVOKER, {
+								i(200381),	-- Crown of the Awakened
+								i(200383),	-- Talons of the Awakened
+							}),
+							cl(HUNTER, {
+								i(200390),	-- Stormwing Harrier's Skullmask
+								i(200392),	-- Stormwing Harrier's Pinions
+							}),
+							cl(MAGE, {
+								i(200318),	-- Crystal Scholar's Cowl	----------------------
+								i(200320),	-- Crystal Scholar's Beacons
+							}),
+							cl(MONK, {
+								i(200363),	-- Gaze of the Waking Fist	----------------------
+								i(200365),	-- Mantle of the Waking Fist
+							}),
+							cl(PALADIN, {
+								i(200414),	-- Virtuous Silver Breastplate
+								i(200419),	-- Virtuous Silver Pauldrons
+							}),
+							cl(PRIEST, {
+								i(200327),	-- Draconic Hierophant's Archcowl
+								i(200329),	-- Draconic Hierophant's Wisdom
+							}),
+							cl(ROGUE, {
+								i(200372),	-- Vault Delver's Vizard
+								i(200374),	-- Vault Delver's Epaulets
+							}),
+							cl(SHAMAN, {
+								i(200399),	-- Faceguard of Insued Earth
+								i(200401),	-- Calderas of Insued Earth
+							}),
+							cl(WARLOCK, {
+								i(200336),	-- Scalesworn Cultist's Scorn
+								i(200338),	-- Scalesworn Cultist's Effigy
+							}),
+							cl(WARRIOR, {
+								i(200426),	-- Casque of the Walking Mountain
+								i(200428),	-- Peaks of the Walking Mountain
+							}),
+						}),
+					}),
+					d(HEROIC_RAID, {
+						["g"] = bubbleDown({ ["bonusID"] = 6896 }, {
+							cl(DEATHKNIGHT, {
+								i(200408),	-- Maw of the Haunted Frostbrood
+								i(200410),	-- Jaws of the Haunted Frostbrood
+							}),
+							cl(DEMONHUNTER, {
+								i(200345),	-- Skybound Avenger's Visor
+								i(200347),	-- Skybound Avenger's Ailerons
+							}),
+							cl(DRUID, {
+								i(200354),	-- Lost Landcaller's Antlers
+								i(200356),	-- Lost Landcaller's Mantle
+							}),
+							cl(EVOKER, {
+								i(200381),	-- Crown of the Awakened
+								i(200383),	-- Talons of the Awakened
+							}),
+							cl(HUNTER, {
+								i(200390),	-- Stormwing Harrier's Skullmask
+								i(200392),	-- Stormwing Harrier's Pinions
+							}),
+							cl(MAGE, {
+								i(200318),	-- Crystal Scholar's Cowl	----------------------
+								i(200320),	-- Crystal Scholar's Beacons
+							}),
+							cl(MONK, {
+								i(200363),	-- Gaze of the Waking Fist	----------------------
+								i(200365),	-- Mantle of the Waking Fist
+							}),
+							cl(PALADIN, {
+								i(200414),	-- Virtuous Silver Breastplate
+								i(200419),	-- Virtuous Silver Pauldrons
+							}),
+							cl(PRIEST, {
+								i(200327),	-- Draconic Hierophant's Archcowl
+								i(200329),	-- Draconic Hierophant's Wisdom
+							}),
+							cl(ROGUE, {
+								i(200372),	-- Vault Delver's Vizard
+								i(200374),	-- Vault Delver's Epaulets
+							}),
+							cl(SHAMAN, {
+								i(200399),	-- Faceguard of Insued Earth
+								i(200401),	-- Calderas of Insued Earth
+							}),
+							cl(WARLOCK, {
+								i(200336),	-- Scalesworn Cultist's Scorn
+								i(200338),	-- Scalesworn Cultist's Effigy
+							}),
+							cl(WARRIOR, {
+								i(200426),	-- Casque of the Walking Mountain
+								i(200428),	-- Peaks of the Walking Mountain
+							}),
+						}),
+					}),
+					d(MYTHIC_RAID, {
+						["g"] = bubbleDown({ ["bonusID"] = 6897 }, {
+							cl(DEATHKNIGHT, {
+								i(200408),	-- Maw of the Haunted Frostbrood
+								i(200410),	-- Jaws of the Haunted Frostbrood
+							}),
+							cl(DEMONHUNTER, {
+								i(200345),	-- Skybound Avenger's Visor
+								i(200347),	-- Skybound Avenger's Ailerons
+							}),
+							cl(DRUID, {
+								i(200354),	-- Lost Landcaller's Antlers
+								i(200356),	-- Lost Landcaller's Mantle
+							}),
+							cl(EVOKER, {
+								i(200381),	-- Crown of the Awakened
+								i(200383),	-- Talons of the Awakened
+							}),
+							cl(HUNTER, {
+								i(200390),	-- Stormwing Harrier's Skullmask
+								i(200392),	-- Stormwing Harrier's Pinions
+							}),
+							cl(MAGE, {
+								i(200318),	-- Crystal Scholar's Cowl	----------------------
+								i(200320),	-- Crystal Scholar's Beacons
+							}),
+							cl(MONK, {
+								i(200363),	-- Gaze of the Waking Fist	----------------------
+								i(200365),	-- Mantle of the Waking Fist
+							}),
+							cl(PALADIN, {
+								i(200414),	-- Virtuous Silver Breastplate
+								i(200419),	-- Virtuous Silver Pauldrons
+							}),
+							cl(PRIEST, {
+								i(200327),	-- Draconic Hierophant's Archcowl
+								i(200329),	-- Draconic Hierophant's Wisdom
+							}),
+							cl(ROGUE, {
+								i(200372),	-- Vault Delver's Vizard
+								i(200374),	-- Vault Delver's Epaulets
+							}),
+							cl(SHAMAN, {
+								i(200399),	-- Faceguard of Insued Earth
+								i(200401),	-- Calderas of Insued Earth
+							}),
+							cl(WARLOCK, {
+								i(200336),	-- Scalesworn Cultist's Scorn
+								i(200338),	-- Scalesworn Cultist's Effigy
+							}),
+							cl(WARRIOR, {
+								i(200426),	-- Casque of the Walking Mountain
+								i(200428),	-- Peaks of the Walking Mountain
+							}),
+						}),
+					}),
+					n(PVP_GLADIATOR, {
+						["g"] = bubbleDown({ ["bonusID"] = 6898 }, {
+							cl(DEATHKNIGHT, {
+								i(200408),	-- Maw of the Haunted Frostbrood
+								i(200410),	-- Jaws of the Haunted Frostbrood
+							}),
+							cl(DEMONHUNTER, {
+								i(200345),	-- Skybound Avenger's Visor
+								i(200347),	-- Skybound Avenger's Ailerons
+							}),
+							cl(DRUID, {
+								i(200354),	-- Lost Landcaller's Antlers
+								i(200356),	-- Lost Landcaller's Mantle
+							}),
+							cl(EVOKER, {
+								i(200381),	-- Crown of the Awakened
+								i(200383),	-- Talons of the Awakened
+							}),
+							cl(HUNTER, {
+								i(200390),	-- Stormwing Harrier's Skullmask
+								i(200392),	-- Stormwing Harrier's Pinions
+							}),
+							cl(MAGE, {
+								i(200318),	-- Crystal Scholar's Cowl	----------------------
+								i(200320),	-- Crystal Scholar's Beacons
+							}),
+							cl(MONK, {
+								i(200363),	-- Gaze of the Waking Fist	----------------------
+								i(200365),	-- Mantle of the Waking Fist
+							}),
+							cl(PALADIN, {
+								i(200414),	-- Virtuous Silver Breastplate
+								i(200419),	-- Virtuous Silver Pauldrons
+							}),
+							cl(PRIEST, {
+								i(200327),	-- Draconic Hierophant's Archcowl
+								i(200329),	-- Draconic Hierophant's Wisdom
+							}),
+							cl(ROGUE, {
+								i(200372),	-- Vault Delver's Vizard
+								i(200374),	-- Vault Delver's Epaulets
+							}),
+							cl(SHAMAN, {
+								i(200399),	-- Faceguard of Insued Earth
+								i(200401),	-- Calderas of Insued Earth
+							}),
+							cl(WARLOCK, {
+								i(200336),	-- Scalesworn Cultist's Scorn
+								i(200338),	-- Scalesworn Cultist's Effigy
+							}),
+							cl(WARRIOR, {
+								i(200426),	-- Casque of the Walking Mountain
+								i(200428),	-- Peaks of the Walking Mountain
+							}),
+						}),
+					}),
+					n(PVP_ELITE, {
+						["g"] = bubbleDown({ ["bonusID"] = 8107 }, {
+							cl(DEATHKNIGHT, {
+								i(200408),	-- Maw of the Haunted Frostbrood
+								i(200410),	-- Jaws of the Haunted Frostbrood
+							}),
+							cl(DEMONHUNTER, {
+								i(200345),	-- Skybound Avenger's Visor
+								i(200347),	-- Skybound Avenger's Ailerons
+							}),
+							cl(DRUID, {
+								i(200354),	-- Lost Landcaller's Antlers
+								i(200356),	-- Lost Landcaller's Mantle
+							}),
+							cl(EVOKER, {
+								i(200381),	-- Crown of the Awakened
+								i(200383),	-- Talons of the Awakened
+							}),
+							cl(HUNTER, {
+								i(200390),	-- Stormwing Harrier's Skullmask
+								i(200392),	-- Stormwing Harrier's Pinions
+							}),
+							cl(MAGE, {
+								i(200318),	-- Crystal Scholar's Cowl	----------------------
+								i(200320),	-- Crystal Scholar's Beacons
+							}),
+							cl(MONK, {
+								i(200363),	-- Gaze of the Waking Fist	----------------------
+								i(200365),	-- Mantle of the Waking Fist
+							}),
+							cl(PALADIN, {
+								i(200414),	-- Virtuous Silver Breastplate
+								i(200419),	-- Virtuous Silver Pauldrons
+							}),
+							cl(PRIEST, {
+								i(200327),	-- Draconic Hierophant's Archcowl
+								i(200329),	-- Draconic Hierophant's Wisdom
+							}),
+							cl(ROGUE, {
+								i(200372),	-- Vault Delver's Vizard
+								i(200374),	-- Vault Delver's Epaulets
+							}),
+							cl(SHAMAN, {
+								i(200399),	-- Faceguard of Insued Earth
+								i(200401),	-- Calderas of Insued Earth
+							}),
+							cl(WARLOCK, {
+								i(200336),	-- Scalesworn Cultist's Scorn
+								i(200338),	-- Scalesworn Cultist's Effigy
+							}),
+							cl(WARRIOR, {
+								i(200426),	-- Casque of the Walking Mountain
+								i(200428),	-- Peaks of the Walking Mountain
+							}),
+						}),
+					}),
+				}),
 			},
 		}),
 		ach(12993),	-- Don't Warfront Me
