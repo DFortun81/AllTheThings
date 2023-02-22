@@ -109,7 +109,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		tier(DF_TIER, {
-			tier(DF_TIER, 0.0, {
+			tier(DF_TIER, 0.01, {
 				i(200142),	-- Generous Goblin Grenade (TOY!)
 				i(199111),	-- Maestro Duck's Orchestrion (TOY!)
 				i(199926),	-- Portable J.A.M. (TOY!)

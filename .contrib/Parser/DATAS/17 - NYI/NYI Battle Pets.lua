@@ -105,7 +105,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		tier(DF_TIER, {
-			tier(DF_TIER, 0.0, {
+			tier(DF_TIER, 0.01, {
 				i(193363),	-- Auburntusk Calf (PET!)
 				i(191930),	-- Blue Phoenix Hatchling (PET!)
 				i(193854),	-- Blue Vorquin Foal (PET!)

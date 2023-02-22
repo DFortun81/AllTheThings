@@ -720,7 +720,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	}),
 	tier(DF_TIER, {
 		filter(MISC, {
-			tier(DF_TIER, 0.0, {
+			tier(DF_TIER, 0.01, {
 				i(194110),	-- [PH] Dragon Rider's Honor
 				i(193682),	-- [PH] Plains Feather
 				i(193702),	-- 10.0 Dungeon - Optional Reagent
@@ -803,7 +803,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		filter(QUEST_ITEMS, {
-			tier(DF_TIER, 0.0, {
+			tier(DF_TIER, 0.01, {
 				i(194445),	-- [DNT] Ceremonial Necklace
 				i(191633),	-- A Shard of Crystallized Mana
 				i(191023),	-- Mudcaked Necklace

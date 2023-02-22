@@ -7,7 +7,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(WEAPONS, {
 		filter(BOWS, {
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189689),	-- 10.0 Dungeon Template - Bows - Ranged
 					i(189127),	-- 10.0 QRP Template <Descriptor> Longbow
 				}),
@@ -15,7 +15,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		filter(CROSSBOWS, {
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189690),	-- 10.0 Dungeon Template - Crossbow - RangedRight
 					i(189128),	-- 10.0 QRP Template <Descriptor> Crossbow
 				}),
@@ -26,7 +26,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(3222),	-- Wicked Dagger
 			}),
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189680),	-- 10.0 Dungeon Template - Dagger - Agi - Weapon
 					i(189679),	-- 10.0 Dungeon Template - Dagger - Int - Weapon
 					i(189043),	-- 10.0 End Game Template <Descriptor> Kris
@@ -41,14 +41,14 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		filter(PROF_EQUIP, {	-- Fishing Poles
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(199898),	-- Iskaara Fishing Pole
 				}),
 			}),
 		}),
 		filter(FIST_WEAPONS, {
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189699),	-- 10.0 Dungeon Template - FistWeapon - Weapon
 					i(189137),	-- 10.0 QRP Template <Descriptor> Fist
 				}),
@@ -56,7 +56,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		filter(GUNS, {
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189675),	-- 10.0 Dungeon Template - Guns - RangedRight
 					i(189042),	-- 10.0 End Game Template <Descriptor> Gun
 					i(189107),	-- 10.0 QRP Template <Descriptor> Gun
@@ -67,7 +67,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		filter(HELD_IN_OFF_HAND, {
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189672),	-- 10.0 Dungeon Template - Generic - Holdable
 					i(189040),	-- 10.0 End Game Template <Descriptor> Offhand
 					i(189104),	-- 10.0 QRP Template <Descriptor> Offhand
@@ -77,7 +77,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		filter(ONE_HANDED_AXES, {
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189692),	-- 10.0 Dungeon Template - Axe1H - Agi - Weapon
 					i(189693),	-- 10.0 Dungeon Template - Axe1H - Int - Weapon
 					i(189691),	-- 10.0 Dungeon Template - Axe1H - Str - Weapon
@@ -103,7 +103,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			}),
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189688),	-- 10.0 Dungeon Template - Mace1H - Agi - Weapon
 					i(189694),	-- 10.0 Dungeon Template - Mace1H - Int - Weapon
 					i(189696),	-- 10.0 Dungeon Template - Mace1H - Str - Weapon
@@ -130,7 +130,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			}),
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189681),	-- 10.0 Dungeon Template - Sword1H - Agi - Weapon
 					i(189695),	-- 10.0 Dungeon Template - Sword1H - Int - Weapon
 					i(189677),	-- 10.0 Dungeon Template - Sword1H - Str -Weapon
@@ -145,7 +145,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		filter(POLEARMS, {
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189703),	-- 10.0 Dungeon Template - Polearms - Agi - 2 Hand
 					i(189678),	-- 10.0 Dungeon Template - Polearms - Int - 2 Hand
 					i(189054),	-- 10.0 End Game Template <Descriptor> Halberd
@@ -162,7 +162,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(7748),	-- Forcestone Buckler
 			}),
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189671),	-- 10.0 Dungeon Template - Shield - Shield
 					i(189039),	-- 10.0 End Game Template <Descriptor> Shield
 					i(189103),	-- 10.0 QRP Template <Descriptor> Shield
@@ -172,7 +172,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		filter(STAVES, {
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189674),	-- 10.0 Dungeon Template - Staff - Agi - 2 Hand
 					i(189687),	-- 10.0 Dungeon Template - Staff - Int - 2 Hand
 					i(189056),	-- 10.0 End Game Template <Descriptor> Staff
@@ -187,7 +187,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		filter(TWO_HANDED_AXES, {
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189697),	-- 10.0 Dungeon Template - Axe2H - Str - 2 Hand
 					i(189135),	-- 10.0 QRP Template <Descriptor> Axe
 				}),
@@ -195,7 +195,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		filter(TWO_HANDED_MACES, {
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189700),	-- 10.0 Dungeon Template - Mace2H - Int - 2 Hand
 					i(189673),	-- 10.0 Dungeon Template - Mace2H - Str - 2 Hand
 					i(189048),	-- 10.0 End Game Template <Descriptor> Great Mace
@@ -211,7 +211,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(13262),	-- Ashbringer
 			}),
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189701),	-- 10.0 Dungeon Template - Sword2H - Int - 2 Hand
 					i(189698),	-- 10.0 Dungeon Template - Sword2H - Str - 2 Hand
 					i(189136),	-- 10.0 QRP Template <Descriptor> Greatsword
@@ -223,7 +223,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		filter(WANDS, {
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189702),	-- 10.0 Dungeon Template - Wand - RangedRight
 					i(199932),	-- 10.0 Enchanting - Weapon - Wand 1
 					i(199933),	-- 10.0 Enchanting - Weapon - Wand 2
@@ -234,7 +234,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		filter(WARGLAIVES, {
 			tier(DF_TIER, {
-				tier(DF_TIER, 0.0, {
+				tier(DF_TIER, 0.01, {
 					i(189676),	-- 10.0 Dungeon Template - Warglaives - Weapon
 					i(189057),	-- 10.0 End Game Template <Descriptor> Warglaive
 					i(189108),	-- 10.0 QRP Template <Descriptor> Glaive
