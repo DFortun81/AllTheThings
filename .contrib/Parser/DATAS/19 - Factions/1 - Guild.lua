@@ -36,6 +36,12 @@ _.Factions =
 			142185,	-- Ulla Skycloven (Dazar'alor)
 		},
 		["g"] = {
+			--
+			ach(11225),	-- Keystone Initiate Guild Run
+			ach(11226),	-- Keystone Challenger Guild Run
+			ach(11227),	-- Keystone Conqueror Guild Run
+			ach(13074),	-- Keystone Master Guild Run
+			--
 			ach(4989, {	-- A Class Act
 				["collectible"] = false,
 				["g"] = {

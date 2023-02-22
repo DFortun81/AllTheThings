@@ -213,6 +213,7 @@ _.Instances = { tier(BFA_TIER, {
 						},
 						["g"] = {
 							ach(12502),	-- Mythic: Underrot
+							ach(13003),	-- Mythic: Underrot Guild Run
 							ach(12499),	-- Sporely Alive
 							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 							i(160829),	-- Underrot Crawg (MOUNT!)

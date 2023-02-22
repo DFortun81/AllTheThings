@@ -23,6 +23,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 				ach(13687, {	-- Glory of the Palace Raider
 					i(167171),	-- Azshari Bloatray (MOUNT!)
 				}),
+				ach(13734),	-- The Eternal Palace Guild Run
 				ach(13718),	-- The Grand Reception
 				ach(13719),	-- Depths of the Devoted
 				ach(13725),	-- The Circle of Stars
@@ -839,6 +840,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 						ach(13733, {	-- Mythic: Queen Azshara
 							title(404),	-- the Eternal
 						}),
+						ach(13740),	-- Mythic: Queen Azshara Guild Run
 						ach(13785, {	-- Cutting Edge: Queen Azshara
 							["timeline"] = { "added 8.2.0", "removed 8.3.0" },
 						}),

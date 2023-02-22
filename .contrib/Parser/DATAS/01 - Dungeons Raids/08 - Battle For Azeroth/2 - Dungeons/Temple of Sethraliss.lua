@@ -223,6 +223,7 @@ _.Instances = { tier(BFA_TIER, {
 						["g"] = {
 							ach(12508),	-- Good Night, Sweet Prince
 							ach(12506),	-- Mythic: The Temple of Sethraliss
+							ach(13004),	-- Mythic: The Temple of Sethraliss Guild Run
 							i(158373),	-- Resonating Crystal Scimitar
 							i(159318),	-- Hood of the Slithering Loa
 							i(159374),	-- Sethraliss' Fanged Helm

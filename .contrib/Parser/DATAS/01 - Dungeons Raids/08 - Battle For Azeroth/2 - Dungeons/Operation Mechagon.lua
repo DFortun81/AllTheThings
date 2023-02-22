@@ -382,6 +382,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 								ach(13624, {	-- Keep DPS-ing and Nobody Explodes
 									i(168830),	-- Aerial Unit R-21/X (MOUNT!)
 								}),
+								ach(13893),	-- Operation: Mechagon Guild Run
 								i(169378),	-- Golden Snorf
 								i(168842),	-- Engine of Mecha-Perfection (Rank 1)
 								i(169172),	-- Blueprint: Perfectly Timed Differential

@@ -220,6 +220,7 @@ _.Instances = { tier(BFA_TIER, {
 						},
 						["g"] = {
 							ach(12838),	-- Mythic: Shrine of the Storm
+							ach(13001),	-- Mythic: Shrine of the Storm Guild Run
 							ach(12602),	-- Trust No One
 							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 							i(159135),	-- Deep Fathom's Bite

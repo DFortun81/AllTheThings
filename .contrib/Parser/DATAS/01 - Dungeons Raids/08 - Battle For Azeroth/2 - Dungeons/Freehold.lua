@@ -225,6 +225,7 @@ _.Instances = { tier(BFA_TIER, {
 						["crs"] = { 126983 },	-- Harlan Sweete
 						["g"] = {
 							ach(12833),	-- Mythic: Freehold
+							ach(12999),	-- Mythic: Freehold Guild Run
 							ach(12998),	-- That Sweete Booty
 							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 							i(159842),	-- Sharkbait (MOUNT!)

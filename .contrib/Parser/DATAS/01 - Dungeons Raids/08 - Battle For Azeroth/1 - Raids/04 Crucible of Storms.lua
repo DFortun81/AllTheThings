@@ -14,6 +14,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(13414),	-- Crucible of Storms
+				ach(13420),	-- Crucible of Storms Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
@@ -175,6 +176,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 					["crs"] = { 145371 },	-- Uu'nat, Harbinger of the Void
 					["g"] = {
 						ach(13417),	-- Mythic: Uu'nat, Harbinger of the Void
+						ach(13421),	-- Mythic: Uu'nat, Harbinger of the Void Guild Run
 						ach(13419, {	-- Cutting Edge: Uu'nat, Harbinger of the Void
 							["timeline"] = { "added 8.1.0", "removed 8.2.0" },
 						}),

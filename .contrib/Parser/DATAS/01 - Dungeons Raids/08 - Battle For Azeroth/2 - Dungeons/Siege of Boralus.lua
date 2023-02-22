@@ -191,6 +191,7 @@ _.Instances = { tier(BFA_TIER, {
 						["g"] = {
 							ach(12726),	-- A Fish Out of Water
 							ach(12847),	-- Siege of Boralus
+							ach(13007),	-- Siege of Boralus Guild Run
 							i(159651),	-- Coral-Edged Crescent
 							i(159310),	-- Circlet of the Enveloping Leviathan
 							i(159252),	-- Grasping Crown of the Deep

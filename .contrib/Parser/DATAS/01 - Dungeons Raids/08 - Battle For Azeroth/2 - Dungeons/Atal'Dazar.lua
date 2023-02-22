@@ -237,6 +237,7 @@ _.Instances = { tier(BFA_TIER, {
 						["crs"] = { 122968 },	-- Yazma
 						["g"] = {
 							ach(12826),	-- Mythic: Atal'Dazar
+							ach(13002),	-- Mythic: Atal'Dazar Guild Run
 							ach(12273),	-- It's Lit!
 							crit(4, {	-- Yazma defeated
 								["achievementID"] = 12270,	-- Bringing Hexy Back

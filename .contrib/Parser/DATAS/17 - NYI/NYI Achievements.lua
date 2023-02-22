@@ -14,6 +14,58 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				ach(11339),	-- Legion's Bane
 			})),
 		}),
+		tier(BFA_TIER, {
+			-- 8.0.1
+			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+				ach(12598),	-- <Hidden> Kul Tiras Continent Achievement
+				ach(12554),	-- <Hidden> Lordaeron Scenario Launch
+				ach(12920),	-- A Tiny Heart
+				ach(12921),	-- Big Hearted
+				ach(12569),	-- Bounty On My Head
+				ach(12570),	-- Bounty On My Head
+				ach(13052),	-- Dishonorable Discharge
+				ach(13040),	-- Dive Bar Hop
+				ach(12923),	-- Feel Your Heart
+				ach(13043),	-- First Responder
+				ach(12545),	-- Got My Mind On My Money
+				ach(12924),	-- Heart On Your Sleeve
+				ach(12919),	-- It Grew Ten Sizes That Day
+				ach(12925),	-- In Tune With Your Heart
+				ach(12922),	-- Listen To Your Heart
+				ach(12580),	-- Mission Accomplished: Kul Tiras
+				ach(12603),	-- Mission Accomplished: Zandalar
+				ach(12871),	-- Prepared for War
+				ach(13044),	-- The Dark Essence of Achieving
+			})),
+
+			-- 8.1.0
+			tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 8.1.0" } }, {
+				ach(13318),	-- 100 Exalted Reputations
+				ach(13432),	-- Mythic: Jadefire Masters
+				ach(13447),	-- Mythic: Jadefire Masters
+				ach(13444),	-- One Shot, One Kill
+				ach(13446),	-- One Shot, One Kill
+			})),
+
+			-- 8.1.5
+			tier(BFA_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 8.1.5" } }, {
+				ach(13540),	-- Deaths from Battle for Wintergrasp
+				ach(13195),	-- Rumble Club
+			})),
+
+			-- 8.2.0
+			tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
+				ach(13721),	-- Diligent Ally
+				ach(13471),	-- Diversed Investments
+				ach(13515),	-- Freedom Run
+				ach(13838),	-- Level 100 - Mount Equipment Unlock Check
+			})),
+
+			-- 8.3.0
+			tier(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 8.3.0" } }, {
+				ach(14025),	-- <new achievement>
+			})),
+		}),
 		tier(SL_TIER, {
 			-- 9.0.1
 			tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {

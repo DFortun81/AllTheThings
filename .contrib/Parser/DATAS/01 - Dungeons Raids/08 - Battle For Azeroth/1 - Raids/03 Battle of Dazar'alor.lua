@@ -25,6 +25,8 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 				ach(13315, {	-- Glory of the Dazar'alor Raider
 					i(166539),	-- Dazar'alor Windreaver (MOUNT!)
 				}),
+				ach(13319),	-- Battle of Dazar'alor Guild Run (H)
+				ach(13320),	-- Battle of Dazar'alor Guild Run (A)
 				ach(13286),	-- Siege of Dazar'alor (A)
 				ach(13289),	-- Defense of Dazar'alor (H)
 				ach(13287),	-- Empire's Fall (A)
@@ -967,6 +969,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 						ach(13314, {	-- Mythic: Lady Jaina Proudmoore
 							title(386),	-- <Name>, Hero of Dazar'alor
 						}),
+						ach(13321),	-- Mythic: Lady Jaina Proudmoore Guild Run
 						ach(13323, {	-- Cutting Edge: Lady Jaina Proudmoore
 							["timeline"] = { "added 8.1.0", "removed 8.2.0" },
 						}),

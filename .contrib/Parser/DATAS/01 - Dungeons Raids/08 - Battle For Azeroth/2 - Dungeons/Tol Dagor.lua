@@ -202,6 +202,7 @@ _.Instances = { tier(BFA_TIER, {
 						["crs"] = { 127503 },	-- Overseer Korgus
 						["g"] = {
 							ach(12842),	-- Mythic: Tol Dagor
+							ach(13005),	-- Mythic: Tol Dagor Guild Run
 							ach(12462),	-- Shot Through the Heart
 							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 							i(159129),	-- Flamecaster Botefeux

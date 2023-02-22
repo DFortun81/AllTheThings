@@ -19,6 +19,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(12806, {	-- Glory of the Uldir Raider
+				ach(12537),	-- Uldir Guild Run
 					i(163216),	-- Bloodgorged Crawg (MOUNT!)
 				}),
 				ach(12521),	-- Halls of Containment
@@ -823,6 +824,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 						ach(12533, {	-- Mythic: G'huun
 							title(381),	-- <Name> the Purifier
 						}),
+						ach(13010),	-- Mythic: G'huun Guild Run
 						ach(12542, bubbleDownSelf({["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {	-- Hall of Fame: G'huun (Alliance)
 							["races"] = ALLIANCE_ONLY,
 							["collectible"] = false,
