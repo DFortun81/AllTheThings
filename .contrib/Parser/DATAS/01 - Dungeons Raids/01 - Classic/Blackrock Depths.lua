@@ -757,7 +757,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 9544,	-- Yuka Screwspigot
 					["coord"] = { 66.1, 21.9, BURNING_STEPPES },
 					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ribbly's Head
