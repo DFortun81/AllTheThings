@@ -49,11 +49,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 								i(200392),	-- Stormwing Harrier's Pinions
 							}),
 							cl(MAGE, {
-								i(200318),	-- Crystal Scholar's Cowl	----------------------
+								i(200318),	-- Crystal Scholar's Cowl
 								i(200320),	-- Crystal Scholar's Beacons
 							}),
 							cl(MONK, {
-								i(200363),	-- Gaze of the Waking Fist	----------------------
 								i(200365),	-- Mantle of the Waking Fist
 							}),
 							cl(PALADIN, {
@@ -105,11 +104,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 								i(200392),	-- Stormwing Harrier's Pinions
 							}),
 							cl(MAGE, {
-								i(200318),	-- Crystal Scholar's Cowl	----------------------
+								i(200318),	-- Crystal Scholar's Cowl
 								i(200320),	-- Crystal Scholar's Beacons
 							}),
 							cl(MONK, {
-								i(200363),	-- Gaze of the Waking Fist	----------------------
 								i(200365),	-- Mantle of the Waking Fist
 							}),
 							cl(PALADIN, {
@@ -161,11 +159,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 								i(200392),	-- Stormwing Harrier's Pinions
 							}),
 							cl(MAGE, {
-								i(200318),	-- Crystal Scholar's Cowl	----------------------
+								i(200318),	-- Crystal Scholar's Cowl
 								i(200320),	-- Crystal Scholar's Beacons
 							}),
 							cl(MONK, {
-								i(200363),	-- Gaze of the Waking Fist	----------------------
 								i(200365),	-- Mantle of the Waking Fist
 							}),
 							cl(PALADIN, {
@@ -217,11 +214,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 								i(200392),	-- Stormwing Harrier's Pinions
 							}),
 							cl(MAGE, {
-								i(200318),	-- Crystal Scholar's Cowl	----------------------
+								i(200318),	-- Crystal Scholar's Cowl
 								i(200320),	-- Crystal Scholar's Beacons
 							}),
 							cl(MONK, {
-								i(200363),	-- Gaze of the Waking Fist	----------------------
 								i(200365),	-- Mantle of the Waking Fist
 							}),
 							cl(PALADIN, {
@@ -273,11 +269,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 								i(200392),	-- Stormwing Harrier's Pinions
 							}),
 							cl(MAGE, {
-								i(200318),	-- Crystal Scholar's Cowl	----------------------
+								i(200318),	-- Crystal Scholar's Cowl
 								i(200320),	-- Crystal Scholar's Beacons
 							}),
 							cl(MONK, {
-								i(200363),	-- Gaze of the Waking Fist	----------------------
 								i(200365),	-- Mantle of the Waking Fist
 							}),
 							cl(PALADIN, {
@@ -329,11 +324,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 								i(200392),	-- Stormwing Harrier's Pinions
 							}),
 							cl(MAGE, {
-								i(200318),	-- Crystal Scholar's Cowl	----------------------
+								i(200318),	-- Crystal Scholar's Cowl
 								i(200320),	-- Crystal Scholar's Beacons
 							}),
 							cl(MONK, {
-								i(200363),	-- Gaze of the Waking Fist	----------------------
 								i(200365),	-- Mantle of the Waking Fist
 							}),
 							cl(PALADIN, {
