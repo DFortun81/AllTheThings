@@ -444,6 +444,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 					i(14147, {	-- Cavedweller Bracers
 						["timeline"] = { "removed 5.0.4" },
+						-- #if ANYCLASSIC
+						["OnUpdate"] = [[function(t)
+							if _.Level >= 40 and _.ClassIndex ~= ]] .. HUNTER .. [[ and _.ClassIndex ~= ]] .. SHAMAN .. [[ then
+								t.f = ]] .. PLATE .. [[;
+							else
+								t.f = ]] .. MAIL .. [[;
+							end
+						end]],
+						-- #endif
 					}),
 				},
 			}),
