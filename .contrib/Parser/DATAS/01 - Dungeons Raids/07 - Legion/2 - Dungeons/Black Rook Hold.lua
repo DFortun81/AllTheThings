@@ -272,6 +272,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 						["g"] = {
 							ach(10806),	-- Mythic: Black Rook Hold
+							ach(10862),	-- Mythic: Black Rook Hold Guild Run
 							i(137858),	-- Design: Grim Furystone Gorget (Rank 3)
 							i(127930),	-- Recipe: Flask of the Whispered Pact (Rank 2)
 							i(137931),	-- Recipe: Gravenscale Hauberk (Rank 3)

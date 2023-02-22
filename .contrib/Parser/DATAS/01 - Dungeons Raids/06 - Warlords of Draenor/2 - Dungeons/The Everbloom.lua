@@ -165,6 +165,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 					["g"] = {
 						ach(9053),	-- Heroic: The Everbloom
+						ach(9374),	-- Heroic: The Everbloom Guild Run
 						ach(9223),	-- Weed Whacker
 						i(119181),	-- Hoof of Yalnu
 						i(110004),	-- Coagulated Genesaur Blood

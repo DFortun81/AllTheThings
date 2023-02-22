@@ -37,6 +37,11 @@ _.Factions =
 		},
 		["g"] = {
 			--
+			ach(9648),	-- Challenge Warlords - Guild Edition
+			ach(9649),	-- Challenge Warlords: Bronze - Guild Edition
+			ach(9650),	-- Challenge Warlords: Silver - Guild Edition
+			ach(11228),	-- Mythic Keystone Challenges
+			ach(9388),	-- Guild Draenor Dungeon Hero
 			ach(11225),	-- Keystone Initiate Guild Run
 			ach(11226),	-- Keystone Challenger Guild Run
 			ach(11227),	-- Keystone Conqueror Guild Run

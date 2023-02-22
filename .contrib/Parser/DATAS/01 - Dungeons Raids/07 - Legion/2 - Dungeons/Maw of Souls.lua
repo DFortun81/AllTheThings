@@ -166,6 +166,7 @@ _.Instances = { tier(LEGION_TIER, {
 				})),
 				cr(96759, e(1663, {	-- Helya
 					ach(10809),	-- Mythic: Maw of Souls
+					ach(10863),	-- Mythic: Maw of Souls Guild Run
 					ach(10412, {	-- Poor Unfortunate Souls
 						["description"] = "Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.\n\nWARNING: You must do this with a group of 5 players for the buffs to upgrade after each boss kill.",
 						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- Black Rook Hold

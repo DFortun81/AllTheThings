@@ -1839,9 +1839,11 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 				cr(91331, e(1438, {	-- Archimonde
 					un(REMOVED_FROM_GAME, ach(10044)),	-- Ahead of the Curve: The Black Gate
 					un(REMOVED_FROM_GAME, ach(10045)),	-- Cutting Edge: The Black Gate
+					un(REMOVED_FROM_GAME, ach(10380)),	-- Realm First! Archimonde
 					ach(10043, {	-- Mythic: Archimonde
 						title(319),		-- , Defiler's End
 					}),
+					ach(10176),	-- Mythic: Archimonde Guild Run
 					ig(123890),	-- Felsteel Annihilator (MOUNT!)
 					i(133762, {	-- Remnant of Chaos
 						["timeline"] = { "removed 7.0.3" },

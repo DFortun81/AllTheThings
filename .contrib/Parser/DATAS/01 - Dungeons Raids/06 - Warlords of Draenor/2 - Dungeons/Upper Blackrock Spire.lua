@@ -207,6 +207,7 @@ _.Instances = { tier(WOD_TIER, {
 					["g"] = {
 						ach(9057),	-- Dragonmaw? More Like Dragonfall!
 						ach(9055),	-- Heroic: Upper Blackrock Spire
+						ach(9376),	-- Heroic: Upper Blackrock Spire Guild Run
 						i(118740),	-- Bleakblade of Shahram
 						i(118738),	-- Felshanker
 						i(118739),	-- Draconian Doomshield

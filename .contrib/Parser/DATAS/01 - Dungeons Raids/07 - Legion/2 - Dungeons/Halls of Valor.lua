@@ -318,6 +318,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						["creatureID"] = 95676,	-- Odyn
 						["g"] = {
 							ach(10789),	-- Mythic: Halls of Valor
+							ach(10858),	-- Mythic: Halls of Valor Guild Run
 							ach(10543),	-- Surge Protector
 							i(137857),	-- Design: Raging Furystone Gorget [Rank 3] (RECIPE!)
 							i(137911),	-- Recipe: Battlebound Grips [Rank 3] (RECIPE!)

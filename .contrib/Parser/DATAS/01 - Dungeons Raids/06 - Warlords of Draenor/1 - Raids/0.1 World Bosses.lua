@@ -17,6 +17,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					87437,	-- Drov the Ruiner
 				},
 				["g"] = {
+					ach(9418),	-- Goliaths of Gorgrond Guild Run
 					ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
 						["collectible"] = false,
 						["g"] = {
@@ -48,6 +49,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 					83746,	-- Rukhmar (Crieve)
 				},
 				["g"] = {
+					ach(9424),	-- Rukhmar Guild Run
 					ach(9425),	-- So Grossly Incandescent
 					ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
 						["collectible"] = false,
@@ -83,6 +85,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 				["coord"] = { 47.5, 22.1, TANAAN_JUNGLE },
 				["creatureID"] = 94015,	-- Supreme Lord Kazzak
 				["g"] = {
+					ach(10175),	-- Kazzak Guild Run
 					ach(10071),	-- The Legion Will NOT Conquer All
 					i(127976),	-- Choker of Reciprocity
 					i(127977),	-- Insightful Void-Link Chain
@@ -109,6 +112,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 				["coord"] = { 47.0, 86.7, GORGROND },
 				["creatureID"] = 81535,	-- Tarlna the Ageless
 				["g"] = {
+					ach(9418),	-- Goliaths of Gorgrond Guild Run
 					ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
 						["collectible"] = false,
 						["g"] = {

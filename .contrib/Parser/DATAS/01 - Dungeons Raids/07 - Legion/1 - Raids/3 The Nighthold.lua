@@ -13,6 +13,9 @@ _.Instances = { tier(LEGION_TIER, {
 		["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
 		["lvl"] = 110,
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(10868),	-- The Nighthold Guild Run
+			}),
 			n(WORLD_QUESTS, {
 				q(44934, {	-- The Nighthold: Creepy Crawlers
 					["isWorldQuest"] = true,
@@ -1493,6 +1496,7 @@ _.Instances = { tier(LEGION_TIER, {
 						ach(11192, {	-- Cutting Edge: Gul'dan
 							["u"] = REMOVED_FROM_GAME,
 						}),
+						ach(11239),	-- Mythic: Gul'dan Guild Run
 						ach(10855, {	-- Realm First! Gul'dan
 							["u"] = REMOVED_FROM_GAME,
 						}),

@@ -123,6 +123,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 					["g"] = {
 						ach(9054),	-- Heroic: Shadowmoon Burial Grounds
+						ach(9375),	-- Heroic: Shadowmoon Burial Grounds Guild Run
 						ach(9026),	-- Souls of the Lost
 						i(138806),	-- Illusion: Mark of Shadowmoon
 						i(110039),	-- Portal-Ripper's Staff

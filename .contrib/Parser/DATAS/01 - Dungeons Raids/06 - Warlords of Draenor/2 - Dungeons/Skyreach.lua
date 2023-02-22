@@ -125,6 +125,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 					["g"] = {
 						ach(8844),	-- Heroic: Skyreach
+						ach(9372),	-- Heroic: Skyreach Guild Run
 						ach(9034),	-- Magnify... Enhance
 						ach(9036),	-- Monomania
 						i(110033),	-- Arcanic of the High Sage

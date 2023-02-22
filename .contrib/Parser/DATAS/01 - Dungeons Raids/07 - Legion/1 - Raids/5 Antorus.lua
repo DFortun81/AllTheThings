@@ -24,6 +24,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		},
 		["lvl"] = { 45 },
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(12112),	-- Antorus, the Burning Throne Guild Run
+			}),
 			n(QUESTS, {
 				q(48954, {	-- Blood of a Titan
 					["provider"] = { "i", 152900 },	-- Blood of the Unmaker
@@ -1654,6 +1657,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					ach(12002, {	-- Mythic: Argus the Unmaker
 						title(364),		-- Titanslayer
 					}),
+					ach(12113),	-- Mythic: Argus the Unmaker Guild Run
 					ach(12257),	-- Stardust Crusaders
 					i(152789),	-- Shackled Ur'zul (MOUNT!)
 					i(155880),	-- Scythe of the Unmaker [RED]

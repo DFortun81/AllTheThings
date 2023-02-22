@@ -215,6 +215,7 @@ _.Instances = { tier(LEGION_TIER, {
 					cr(99192, e(1657, {	-- Shade of Xavius
 						ach(10769),	-- Burning Down the House
 						ach(10785),	-- Mythic: Darkheart Thicket
+						ach(10857),	-- Mythic: Darkheart Thicket Guild Run
 						i(137853),	-- Design: Sylvan Maelstrom Amulet [Rank 3] (RECIPE!)
 						i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)
 						i(137876),	-- Recipe: Warhide Bindings [Rank 3] (RECIPE!)

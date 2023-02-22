@@ -130,6 +130,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 					["g"] = {
 						ach(9046),	-- Heroic: Bloodmaul Slag Mines
+						ach(9369),	-- Heroic: Bloodmaul Slag Mines Guild Run
 						ach(9008),	-- Is Draenor on Fire?
 						i(110042),	-- Gug'rokk's Smasher
 						i(110044),	-- Ogre Dinner Plate

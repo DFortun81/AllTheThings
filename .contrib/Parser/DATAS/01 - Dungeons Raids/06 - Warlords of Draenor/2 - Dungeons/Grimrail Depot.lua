@@ -110,6 +110,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 					["g"] = {
 						ach(9052),	-- Heroic: Grimrail Depot
+						ach(9373),	-- Heroic: Grimrail Depot Guild Run
 						i(110054),	-- Thunderlord Flamestaff
 						i(110053),	-- Arrowbreaker Greatshield
 						i(110001),	-- Tovra's Lightning Repository

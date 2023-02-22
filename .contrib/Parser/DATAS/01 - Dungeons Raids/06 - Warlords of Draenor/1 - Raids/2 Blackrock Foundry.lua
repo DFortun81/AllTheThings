@@ -11,6 +11,7 @@ _.Instances = { tier(WOD_TIER, {
 		["coord"] = { 51.55, 27.23, GORGROND },
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(9417),	-- Blackrock Foundry Guild Run
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
 					["collectible"] = false,
 					["g"] = {
@@ -1627,15 +1628,15 @@ _.Instances = { tier(WOD_TIER, {
 					ach(9443, {	-- Cutting Edge: Blackhand's Crucible
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					--[[{
-						["achievementID"] = 9399,	-- Realm First! Warlord Blackhand
+					ach(9399, {	-- Realm First! Warlord Blackhand
 						["u"] = REMOVED_FROM_GAME,
-					},]]--  Guild Achievement.  Perhaps if a guild version comes out in the future.
+					}),
 					ach(8952),	-- Ashes, Ashes...
 					ach(8992),	-- Blackhand's Crucible
 					ach(8973, {	-- Mythic: Blackhand's Crucible
 						title(301),	-- Ironbane
 					}),
+					ach(9421),	-- Mythic: Warlord Blackhand Guild Run
 					i(120283, {	-- Essence of the Iron Conqueror
 						["questID"] = 37560,	-- Essence of the Iron Conqueror
 						["races"] = ALLIANCE_ONLY,

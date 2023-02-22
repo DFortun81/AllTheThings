@@ -32,6 +32,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						["_encounter"] = { 1829, 15 },
 					}),
 				}),
+				ach(11403),	-- Trial of Valor Guild Run
 			}),
 			n(QUESTS, {
 				q(44868, {	-- Trial of Valor: Odyn's Judgment
@@ -505,6 +506,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(11398),	-- Mythic: Helya
+					ach(11404),	-- Mythic: Helya Guild Run
 					ach(11377),	-- Patient Zero
 					ach(11405, {	-- Realm First! Helya
 						["u"] = REMOVED_FROM_GAME,

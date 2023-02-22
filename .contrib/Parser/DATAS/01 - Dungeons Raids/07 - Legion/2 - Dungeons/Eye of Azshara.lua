@@ -267,6 +267,7 @@ _.Instances = { tier(LEGION_TIER, {
 					})),
 					cr(96028, e(1492, {	-- Wrath of Azshara
 						ach(10782),	-- Mythic: Eye of Azshara
+						ach(10856),	-- Mythic: Eye of Azshara Guild Run
 						ach(10458),	-- Ready for Raiding V
 						i(137825),	-- Design: Dawnlight Band [Rank 2] (RECIPE!)
 						i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess [Rank 2] (RECIPE!)

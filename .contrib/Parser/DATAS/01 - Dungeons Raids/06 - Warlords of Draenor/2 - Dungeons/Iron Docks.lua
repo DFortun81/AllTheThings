@@ -151,6 +151,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 					["g"] = {
 						ach(9047),	-- Heroic: Iron Docks
+						ach(9370),	-- Heroic: Iron Docks Guild Run
 						ach(9082),	-- Take Cover!
 						i(110059),	-- Chasmwrench Docking Hook
 						i(110058),	-- Bloodied Hand of Woe

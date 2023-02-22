@@ -334,6 +334,7 @@ _.Instances = { tier(LEGION_TIER, {
 					})),
 					cr(102387, e(1697, {	-- Sael'orn
 						ach(10800),	-- Mythic: Assault on Violet Hold
+						ach(10860),	-- Mythic: Assault on Violet Hold Guild Run
 						i(137824),	-- Design: Maelstrom Band (Rank 2)
 						i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
 						i(136700),	-- Schematic: "The Felic"
@@ -358,6 +359,7 @@ _.Instances = { tier(LEGION_TIER, {
 					})),
 					cr(102446, e(1711, {	-- Fel Lord Betrug
 						ach(10800),	-- Mythic: Assault on Violet Hold
+						ach(10860),	-- Mythic: Assault on Violet Hold Guild Run
 						i(137824),	-- Design: Maelstrom Band (Rank 2)
 						i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
 						i(136700),	-- Schematic: "The Felic"

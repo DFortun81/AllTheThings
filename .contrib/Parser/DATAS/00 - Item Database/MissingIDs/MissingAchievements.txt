@@ -696,69 +696,11 @@ ach(8789),	-- Celestial Challenge Guild Run
 ach(8790),	-- Ordos Guild Run
 ach(8852),	-- Scenario Rampage
 ach(8853),	-- Scenario Dominator
-7.3.0.24473
+6.x.x
 ach(9368),	-- Total deaths in raids
-ach(9369),	-- Heroic: Bloodmaul Slag Mines Guild Run
-ach(9370),	-- Heroic: Iron Docks Guild Run
-ach(9371),	-- Heroic: Auchindoun Guild Run
-ach(9372),	-- Heroic: Skyreach Guild Run
-ach(9373),	-- Heroic: Grimrail Depot Guild Run
-ach(9374),	-- Heroic: The Everbloom Guild Run
-ach(9375),	-- Heroic: Shadowmoon Burial Grounds Guild Run
-ach(9376),	-- Heroic: Upper Blackrock Spire Guild Run
-ach(9388),	-- Guild Draenor Dungeon Hero
-ach(9397),	-- Realm First! Imperator's Fall
-ach(9399),	-- Realm First! Warlord Blackhand
-ach(9416),	-- Highmaul Guild Run
-ach(9417),	-- Blackrock Foundry Guild Run
-ach(9418),	-- Goliaths of Gorgrond Guild Run
-ach(9420),	-- Mythic: Imperator's Fall Guild Run
-ach(9421),	-- Mythic: Warlord Blackhand Guild Run
-ach(9424),	-- Rukhmar Guild Run
-ach(9648),	-- Challenge Warlords - Guild Edition
-ach(9649),	-- Challenge Warlords: Bronze - Guild Edition
-ach(9650),	-- Challenge Warlords: Silver - Guild Edition
 ach(10060),	-- Garrison Followers recruited
-ach(10175),	-- Kazzak Guild Run
-ach(10176),	-- Mythic: Archimonde Guild Run
 ach(10181),	-- Garrison Missions completed
 ach(10184),	-- Garrison Rare Missions completed
-ach(10327),	-- Item slots equipped with Uncommon items
-ach(10328),	-- Item slots equipped with Rare items
-ach(10329),	-- Item slots equipped with Epic items
-ach(10330),	-- Item slots equipped with Legendary items
-ach(10331),	-- Item slots equipped with Heirloom items
-ach(10380),	-- Realm First! Archimonde
-ach(10856),	-- Mythic: Eye of Azshara Guild Run
-ach(10857),	-- Mythic: Darkheart Thicket Guild Run
-ach(10858),	-- Mythic: Halls of Valor Guild Run
-ach(10859),	-- Mythic: Neltharion's Lair Guild Run
-ach(10860),	-- Mythic: Assault on Violet Hold Guild Run
-ach(10861),	-- Mythic: Vault of the Wardens Guild Run
-ach(10862),	-- Mythic: Black Rook Hold Guild Run
-ach(10863),	-- Mythic: Maw of Souls Guild Run
-ach(10864),	-- Mythic: The Arcway Guild Run
-ach(10865),	-- Mythic: Court of Stars Guild Run
-ach(10866),	-- The Emerald Nightmare Guild Run
-ach(10868),	-- The Nighthold Guild Run
-ach(11228),	-- Mythic Keystone Challenges
-ach(11234),	-- Class Hall Champions recruited
-ach(11235),	-- Class Hall Troops recruited
-ach(11236),	-- Class Hall Missions completed
-ach(11237),	-- Class Hall Rare Missions completed
-ach(11238),	-- Mythic: Xavius Guild Run
-ach(11239),	-- Mythic: Gul'dan Guild Run
-ach(11403),	-- Trial of Valor Guild Run
-ach(11404),	-- Mythic: Helya Guild Run
-ach(11428),	-- Return to Karazhan Guild Run
-ach(11782),	-- Tomb of Sargeras Guild Run
-ach(11784),	-- Mythic: Kil'jaeden Guild Run
-7.3.0.24727
-ach(12107),	-- Season 3v3 victories on your current faction
-ach(12112),	-- Antorus, the Burning Throne Guild Run
-ach(12113),	-- Mythic: Argus the Unmaker Guild Run
-7.3.2.25079
-ach(12138),	-- Fierce Gladiator's Storm Dragon
 10.0.0.45335
 ach(16425),	-- I'm a Template Character [DNT]
 10.0.0.45454

@@ -18,6 +18,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		},
 		["lvl"] = 110,
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(11782),	-- Tomb of Sargeras Guild Run
+			}),
 			n(WORLD_QUESTS, {
 				q(46503, {	-- Tomb of Sargeras: A Lesson in Pain
 					["isWorldQuest"] = true,
@@ -1401,6 +1404,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						ach(11781, {	-- Mythic: Kil'jaeden
 							title(357),	-- %s the Darkener
 						}),
+						ach(11784),	-- Mythic: Kil'jaeden Guild Run
 						ach(11770),	-- Dark Souls
 						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
 							["timeline"] = { "added 7.2.5" },

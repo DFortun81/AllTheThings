@@ -126,6 +126,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 					["g"] = {
 						ach(9049),	-- Heroic: Auchindoun
+						ach(9371),	-- Heroic: Auchindoun Guild Run
 						ach(9552),	-- No Tag-backs!
 						i(110049),	-- Bloodblade of Teron'Gor
 						i(110050),	-- Dagger of the Sanguine Emeralds

@@ -11,6 +11,7 @@ _.Instances = { tier(WOD_TIER, {
 		["coord"] = { 32.9, 38.3, DRAENOR_NAGRAND },
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(9416),	-- Highmaul Guild Run
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
 					["collectible"] = false,
 					["g"] = {
@@ -741,8 +742,10 @@ _.Instances = { tier(WOD_TIER, {
 						ach(8965, {	-- Mythic: Imperator's Fall
 							title(304),	-- <Name>, Empire's Twilight
 						}),
+						ach(9420),	-- Mythic: Imperator's Fall Guild Run
 						un(REMOVED_FROM_GAME, ach(9441)),	-- Ahead of the Curve: Imperator's Fall
 						un(REMOVED_FROM_GAME, ach(9442)),	-- Cutting Edge: Imperator's Fall
+						un(REMOVED_FROM_GAME, ach(9397)),	-- Realm First! Imperator's Fall
 						ach(8977),	-- Lineage of Power
 						i(113848),	-- Gor'gah, High Blade of the Gorians
 						i(113857),	-- Staff of the Grand Imperator

@@ -257,6 +257,7 @@ _.Instances = { tier(LEGION_TIER, {
 					})),
 					cr(91007, e(1687, {	-- Dargrul
 						ach(10797),	-- Mythic: Neltharion's Lair
+						ach(10859),	-- Mythic: Neltharion's Lair Guild Run
 						i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
 						i(137912),	-- Recipe: Battlebound Treads (Rank 3)
 						i(137854),	-- Design: Intrepid Necklace of Prophecy (Rank 3)

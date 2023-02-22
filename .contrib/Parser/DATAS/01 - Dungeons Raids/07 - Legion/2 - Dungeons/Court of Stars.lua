@@ -120,6 +120,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				})),
 				cr(104218, e(1720, {	-- Advisor Melandrus
 					ach(10816),	-- Mythic: Court of Stars
+					ach(10865),	-- Mythic: Court of Stars Guild Run
 					i(137856),	-- Design: Righteous Dawnlight Medallion [Rank 3] (RECIPE!)
 					i(128594),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 2] (RECIPE!)
 					i(137929),	-- Recipe: Gravenscale Grips [Rank 3] (RECIPE!)

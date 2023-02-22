@@ -557,6 +557,7 @@ _.Instances = { tier(LEGION_TIER, {
 					["creatureID"] = 114790,	-- Viz'aduum the Watcher
 					["g"] = {
 						ach(11429),	-- Mythic: Return to Karazhan
+						ach(11428),	-- Return to Karazhan Guild Run
 						i(142167),	-- Eye of Command
 						i(142132),	-- Doomstride Footguards
 						i(142151),	-- Leggings of Countless Worlds

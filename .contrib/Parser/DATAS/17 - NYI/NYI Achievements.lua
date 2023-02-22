@@ -5,13 +5,38 @@
 
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(ACHIEVEMENTS, {
-		tier(TBC_TIER, {	-- test group, ignore this -Darkal
-
+		tier(WOD_TIER, {
+			-- 6.2.2
+			tier(WOD_TIER, 2.2, bubbleDownSelf({ ["timeline"] = { "created 6.2.2" } }, {
+				ach(10329),	-- Item slots equipped with Epic items
+				ach(10331),	-- Item slots equipped with Heirloom items
+				ach(10330),	-- Item slots equipped with Legendary items
+				ach(10328),	-- Item slots equipped with Rare items
+				ach(10327),	-- Item slots equipped with Uncommon items
+			})),
 		}),
 		tier(LEGION_TIER, {
+			-- 7.0.3
+			tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
+				ach(11234),	-- Class Hall Champions recruited
+				ach(11235),	-- Class Hall Troops recruited
+				ach(11236),	-- Class Hall Missions completed
+				ach(11237),	-- Class Hall Rare Missions completed
+			})),
+
 			-- 7.2.0
 			tier(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 7.2.0" } }, {
 				ach(11339),	-- Legion's Bane
+			})),
+
+			-- 7.3.0
+			tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 7.3.0" } }, {
+				ach(12107),	-- Season 3v3 victories on your current faction
+			})),
+
+			-- 7.3.2
+			tier(LEGION_TIER, 3.2, bubbleDownSelf({ ["timeline"] = { "created 7.3.2" } }, {
+				ach(12138),	-- Fierce Gladiator's Storm Dragon
 			})),
 		}),
 		tier(BFA_TIER, {
