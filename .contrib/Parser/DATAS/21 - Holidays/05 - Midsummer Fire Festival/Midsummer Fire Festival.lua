@@ -288,9 +288,6 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						i(53641, {	-- Ice Chip (Pet)
 							["timeline"] = { "added 3.3.3.11723" },
 						}),
-						-- #if BEFORE CATA
-						i(49426),	-- Emblem of Frost
-						-- #endif
 					},
 				}),
 				i(35723, {	-- Shards of Ahune
@@ -411,877 +408,191 @@ root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
-				ach(1038, {		-- The Flame Warden (Alliance)
+				ach(1038, {	-- The Flame Warden (Alliance)
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {
-						{"meta_achievement",
-							1034,				-- The Fires of Azeroth (A)
-							1035,				-- Desecration of the Horde (A)
-							263,				-- Ice the Frost Lord
-							271,				-- Burning Hot Pole Dance
-							1145,				-- King of the Fire Festival
-							272,				-- Torch Juggler
-						},
-					},
+					["sym"] = {{"meta_achievement",
+						1034,				-- The Fires of Azeroth (A)
+						1035,				-- Desecration of the Horde (A)
+						263,				-- Ice the Frost Lord
+						271,				-- Burning Hot Pole Dance
+						1145,				-- King of the Fire Festival
+						272,				-- Torch Juggler
+					}},
 					["groups"] = {
 						title(44),				-- Flame Warden
 					},
 				}),
-
-				ach(1035, {		-- Desecration of the Horde (A)
-					["sym"] = {
-						{"meta_achievement",
-							1028,	-- Extinguishing Eastern Kingdoms (A)
-							1029,	-- Extinguishing Kalimdor (A)
-							1030,	-- Extinguishing Outland (A)
-							6007,	-- Extinguishing Northrend (A)
-							6013,	-- Extinguishing the Cataclysm (A)
-						},
-					},
+				ach(1035, {	-- Desecration of the Horde (A)
+					["sym"] = {{"meta_achievement",
+						1028,	-- Extinguishing Eastern Kingdoms (A)
+						1029,	-- Extinguishing Kalimdor (A)
+						1030,	-- Extinguishing Outland (A)
+						-- #if AFTER 4.3.0.15005
+						6007,	-- Extinguishing Northrend (A)
+						6013,	-- Extinguishing the Cataclysm (A)
+						-- #endif
+					}},
+				}),
+				ach(1034, {	-- The Fires of Azeroth (A)
+					["sym"] = {{"meta_achievement",
+						1022,	-- Flame Warden of Eastern Kingdoms (A)
+						1023,	-- Flame Warden of Kalimdor (A)
+						1024,	-- Flame Warden of Outland (A)
+						-- #if AFTER 4.3.0.15005
+						6008,	-- Flame Warden of Northrend (A)
+						6011,	-- Flame Warden of Cataclysm (A)
+						-- #endif
+					}},
 				}),
 
 				ach(11276, {	-- Extinguishing Draenor (A)
-					["coord"] = { 72.8, 65.2, FROSTFIRE_RIDGE },
+					["timeline"] = { "added 7.2.0.23478" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(1028, {		-- Extinguishing Eastern Kingdoms (A)
-					crit(1,  {	-- Arathi Highlands
-						["coord"] = { 69.0, 43.1, ARATHI_HIGHLANDS },
-					}),
-					crit(2,  {	-- Badlands
-						["coord"] = { 24.1, 37.3, BADLANDS },
-					}),
-					crit(3,  {	-- Blasted Lands
-						["coord"] = { 46.3, 14.4, BLASTED_LANDS },
-					}),
-					crit(4,  {	-- Burning Steppes
-						["coord"] = { 51.5, 29.3, BURNING_STEPPES },
-					}),
-					crit(5,  {	-- Eversong Woods
-						["coord"] = { 46.3, 50.3, EVERSONG_WOODS },
-					}),
-					crit(6,  {	-- Ghostlands
-						["coord"] = { 47.0, 25.9, GHOSTLANDS },
-					}),
-					crit(7,  {	-- Hillsbrad Foothills
-						["coord"] = { 54.5, 50.1, HILLSBRAD_FOOTHILLS },
-					}),
-					crit(8,  {	-- Northern Stranglethorn
-						["coord"] = { 40.7, 52.0, NORTHERN_STRANGLETHORN },
-					}),
-					crit(9,  {	-- Silverpine Forest
-						["coord"] = { 49.6, 38.7, SILVERPINE_FOREST },
-					}),
-					crit(10, {	-- Swamp of Sorrows
-						["coord"] = { 76.7, 14.4, SWAMP_OF_SORROWS },
-					}),
-					crit(11, {	-- The Cape of Stranglethorn
-						["coord"] = { 50.6, 70.8, THE_CAPE_OF_STRANGLETHORN },
-					}),
-					crit(12, {	-- The Hinterlands
-						["coord"] = { 76.4, 74.5, THE_HINTERLANDS },
-					}),
-					crit(13, {	-- Tirisfal Glades
-						["coord"] = { 57.0, 51.9, TIRISFAL_GLADES },
-					}),
-					crit(14, {	-- Western Plaguelands
-						["coord"] = { 28.9, 56.8, WESTERN_PLAGUELANDS },
-					}),
+				ach(1028, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Eastern Kingdoms (A)
+				ach(1029, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Kalimdor (A)
+				ach(6007, {	-- Extinguishing Northrend (A)
+					["timeline"] = { "added 4.3.0.15005" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(1029, {		-- Extinguishing Kalimdor (A)
-					crit(1,  {	-- Ashenvale
-						["coord"] = { 51.6, 66.8, ASHENVALE },
-					}),
-					crit(2,  {	-- Azshara
-						["coord"] = { 60.4, 53.5, AZSHARA },
-					}),
-					crit(3,  {	-- Desolace
-						["coord"] = { 26.1, 77.4, DESOLACE },
-					}),
-					crit(4,  {	-- Durotar
-						["coord"] = { 52.0, 47.0, DUROTAR },
-					}),
-					crit(5,  {	-- Dustwallow Marsh
-						["coord"] = { 33.2, 30.8, DUSTWALLOW_MARSH },
-					}),
-					crit(6,  {	-- Feralas
-						["coord"] = { 72.5, 47.6, FERALAS },
-					}),
-					crit(7,  {	-- Mulgore
-						["coord"] = { 52.0, 59.3, MULGORE },
-					}),
-					crit(8,  {	-- Northern Barrens
-						["coord"] = { 49.9, 54.2, NORTHERN_BARRENS },
-					}),
-					crit(9,  {	-- Silithus
-						["coord"] = { 50.8, 41.8, SILITHUS },
-					}),
-					crit(10, {	-- Southern Barrens
-						["coord"] = { 40.7, 67.2, SOUTHERN_BARRENS },
-					}),
-					crit(11, {	-- Stonetalon Mountains
-						["coord"] = { 53.0, 62.4, STONETALON_MOUNTAINS },
-					}),
-					crit(12, {	-- Tanaris
-						["coord"] = { 49.8, 28.2, TANARIS },
-					}),
-					crit(13, {	-- Un'Goro Crater
-						["coord"] = { 56.3, 65.8, UNGORO_CRATER },
-					}),
-					crit(14, {	-- Winterspring
-						["coord"] = { 58.2, 47.3, WINTERSPRING },
-					}),
+				ach(1030, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Outland (A)
+				ach(8042, {	-- Extinguishing Pandaria (A)
+					["timeline"] = { "added 5.2.0.16408" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(6007, {		-- Extinguishing Northrend (A)
-					crit(1, {	-- Borean Tundra
-						["coord"] = { 51.1, 11.9, BOREAN_TUNDRA },
-					}),
-					crit(2, {	-- Storm Peaks
-						["coord"] = { 40.3, 85.6, THE_STORM_PEAKS },
-					}),
-					crit(3, {	-- Zul'Drak
-						["coord"] = { 43.2, 71.4, ZULDRAK },
-					}),
-					crit(4, {	-- Grizzly Hills
-						["coord"] = { 19.1, 61.3, GRIZZLY_HILLS },
-					}),
-					crit(5, {	-- Howling Fjord
-						["coord"] = { 48.4, 13.5, HOWLING_FJORD },
-					}),
-					crit(6, {	-- Crystalsong Forest
-						["coord"] = { 80.5, 53.0, CRYSTALSONG_FOREST },
-					}),
-					crit(7, {	-- Sholazar Basin
-						["coord"] = { 47.3, 61.7, SHOLAZAR_BASIN },
-					}),
-					crit(8, {	-- Dragonblight
-						["coord"] = { 38.5, 48.4, DRAGONBLIGHT },
-					}),
-				}),
-				ach(1030, {		-- Extinguishing Outland (A)
-					crit(1, {	-- Blade's Edge Mountains
-						["coord"] = { 49.9, 59.0, BLADES_EDGE_MOUNTAINS },
-					}),
-					crit(2, {	-- Hellfire Peninsula
-						["coord"] = { 57.3, 41.8, HELLFIRE_PENINSULA },
-					}),
-					crit(3, {	-- Nagrand
-						["coord"] = { 51.1, 34.2, NAGRAND },
-					}),
-					crit(4, {	-- Netherstorm
-						["coord"] = { 32.3, 68.4, NETHERSTORM },
-					}),
-					crit(5, {	-- Shadowmoon Valley
-						["coord"] = { 33.6, 30.3, SHADOWMOON_VALLEY },
-					}),
-					crit(6, {	-- Terokkar Forest
-						["coord"] = { 51.9, 43.3, TEROKKAR_FOREST },
-					}),
-					crit(7, {	-- Zangarmarsh
-						["coord"] = { 35.6, 51.9, ZANGARMARSH },
-					}),
-				}),
-				ach(8042, {		-- Extinguishing Pandaria (A)
-					["coord"] = { 77.9, 33.9, VALE_OF_ETERNAL_BLOSSOMS },
-				}),
-				ach(6013, {		-- Extinguishing the Cataclysm (A)
-					crit(1, {	-- Twilight Highlands
-						["coord"] = { 53.2, 46.5, TWILIGHT_HIGHLANDS },
-					}),
-					crit(2, {	-- Uldum
-						["coord"] = { 53.0, 34.4, ULDUM },
-					}),
+				ach(6013, {	-- Extinguishing the Cataclysm (A)
+					["timeline"] = { "added 4.3.0.15005" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(11278, {	-- Extinguishing the Broken Isles (A)
-					["coord"] = { 30.3, 45.4, SURAMAR },
+					["timeline"] = { "added 7.2.0.23478" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(13343, {	-- Extinguishing Zandalar (A)
-					crit(1, {	-- Zuldazar
-						["coord"] = { 53.3, 48.1, ZULDAZAR },
-					}),
-					crit(2, {	-- Nazmir
-						["coord"] = { 40.0, 74.0, NAZMIR },
-					}),
-					crit(3, {	-- Vol'dun
-						["coord"] = { 55.9, 47.4, VOLDUN },
-					}),
+					["timeline"] = { "added 8.1.5.29701" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 
 				ach(6011,  {	-- Flame Warden of Cataclysm (A)
-					crit(1, {	-- Uldum
-						["coord"] = { 53.0, 32.0, ULDUM },
-					}),
-					crit(2, {	-- Deepholm
-						["coord"] = { 49.4, 51.4, DEEPHOLM },
-					}),
-					crit(3, {	-- Twilight Highlands
-						["coord"] = { 47.2, 29.0, TWILIGHT_HIGHLANDS },
-					}),
-					crit(4, {	-- Vashj'ir
-						["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
-					}),
-					crit(5, {	-- Hyjal
-						["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
-					}),
+					["timeline"] = { "added 4.3.0.15005" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(11283, {	-- Flame Warden of Draenor (A)
-					crit(1, {	-- Spires of Arak
-						["coord"] = { 48.0, 44.6, SPIRES_OF_ARAK },
-					}),
-					crit(2, {	-- Talador
-						["coord"] = { 43.4, 71.8, TALADOR },
-					}),
-					crit(3, {	-- Nagrand
-						["coord"] = { 80.4, 47.6, DRAENOR_NAGRAND },
-					}),
-					crit(4, {	-- Gorgrond
-						["coord"] = { 43.8, 93.8, GORGROND },
-					}),
-					crit(5, {	-- Shadowmoon Valley
-						["coord"] = { 42.6, 36.0, DRAENOR_SHADOWMOON_VALLEY },
-					}),
+					["timeline"] = { "added 7.2.0.23478" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(1022,  {	-- Flame Warden of Eastern Kingdoms (A)
-					crit(1,  {	-- Arathi Highlands
-						["coord"] = { 44.3, 45.8, ARATHI_HIGHLANDS },
-					}),
-					crit(2,  {	-- Badlands
-						["coord"] = { 18.9, 56.1, BADLANDS },
-					}),
-					crit(3,  {	-- Blasted Lands
-						["coord"] = { 55.5, 15.0, BLASTED_LANDS },
-					}),
-					crit(4,  {	-- Burning Steppes
-						["coord"] = { 68.2, 60.6, BURNING_STEPPES },
-					}),
-					crit(5,  {	-- Dun Morogh
-						["coord"] = { 53.8, 45.2, DUN_MOROGH },
-					}),
-					crit(6,  {	-- Duskwood
-						["coord"] = { 73.8, 54.7, DUSKWOOD },
-					}),
-					crit(7,  {	-- Elwynn Forest
-						["coord"] = { 43.5, 62.7, ELWYNN_FOREST },
-					}),
-					crit(8,  {	-- Loch Modan
-						["coord"] = { 32.3, 41.0, LOCH_MODAN },
-					}),
-					crit(9,  {	-- Northern Stranglethorn
-						["coord"] = { 52.0, 63.6, NORTHERN_STRANGLETHORN },
-					}),
-					crit(10, {	-- Redridge Mountains
-						["coord"] = { 25.0, 53.5, REDRIDGE_MOUNTAINS },
-					}),
-					crit(11, {	-- Swamp of Sorrows
-						["coord"] = { 70.1, 15.4, SWAMP_OF_SORROWS },
-					}),
-					crit(12, {	-- The Cape of Stranglethorn
-						["coord"] = { 51.9, 67.8, THE_CAPE_OF_STRANGLETHORN },
-					}),
-					crit(13, {	-- The Hinterlands
-						["coord"] = { 14.4, 50.2, THE_HINTERLANDS },
-					}),
-					crit(14, {	-- Western Plaguelands
-						["coord"] = { 43.5, 82.2, WESTERN_PLAGUELANDS },
-					}),
-					crit(15, {	-- Westfall
-						["coord"] = { 44.6, 62.1, WESTFALL },
-					}),
-					crit(16, {	-- Wetlands
-						["coord"] = { 13.5, 47.1, WETLANDS },
-					}),
-				}),
-				ach(1023,  {	-- Flame Warden of Kalimdor (A)
-					crit(1,  {	-- Ashenvale
-						["coord"] = { 86.9, 41.9, ASHENVALE },
-					}),
-					crit(2,  {	-- Azuremyst Isle
-						["coord"] = { 44.0, 53.0, AZUREMYST_ISLE },
-					}),
-					crit(3,  {	-- Bloodmyst Isle
-						["coord"] = { 55.0, 69.0, BLOODMYST_ISLE },
-					}),
-					crit(4,  {	-- Darkshore
-						["coord"] = { 49.0, 23.0, DARKSHORE },
-					}),
-					crit(5,  {	-- Desolace
-						["coord"] = { 65.0, 17.0, DESOLACE },
-					}),
-					crit(6,  {	-- Dustwallow Marsh
-						["coord"] = { 62.0, 40.0, DUSTWALLOW_MARSH },
-					}),
-					crit(7,  {	-- Feralas
-						["coord"] = { 47.0, 44.0, FERALAS },
-					}),
-					crit(8,  {	-- Silithus
-						["coord"] = { 60.0, 33.0, SILITHUS },
-					}),
-					crit(9,  {	-- Southern Barrens
-						["coord"] = { 48.0, 72.0, SOUTHERN_BARRENS },
-					}),
-					crit(10, {	-- Stonetalon Mountains
-						["coord"] = { 49.0, 51.0, STONETALON_MOUNTAINS },
-					}),
-					crit(11, {	-- Tanaris
-						["coord"] = { 52.0, 29.0, TANARIS },
-					}),
-					crit(12, {	-- Teldrassil
-						["coord"] = { 54.8, 52.9, TELDRASSIL },
-					}),
-					crit(13, {	-- Un'goro Crater
-						["coord"] = { 60.0, 63.0, UNGORO_CRATER },
-					}),
-					crit(14, {	-- Winterspring
-						["coord"] = { 61.2, 47.2, WINTERSPRING },
-					}),
-				}),
+				ach(1022, { ["sym"] = {{ "achievement_criteria" }}}),	-- Flame Warden of Eastern Kingdoms (A)
+				ach(1023, { ["sym"] = {{ "achievement_criteria" }}}),	-- Flame Warden of Kalimdor (A)
 				ach(13341, {	-- Flame Warden of Kul Tiras (A)
-					crit(1, {	-- Tiragarde Sound
-						["coord"] = { 76.3, 49.9, TIRAGARDE_SOUND },
-					}),
-					crit(2, {	-- Stormsong Valley
-						["coord"] = { 35.8, 51.2, STORMSONG_VALLEY },
-					}),
-					crit(3, {	-- Drustvar
-						["coord"] = { 40.2, 47.7, DRUSTVAR },
-					}),
+					["timeline"] = { "added 8.1.5.29701" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(6008,  {	-- Flame Warden of Northrend (A)
-					crit(1, {	-- Dragonblight
-						["coord"] = { 75.0, 44.0, DRAGONBLIGHT },
-					}),
-					crit(2, {	-- Crystalsong Forest
-						["coord"] = { 78.0, 75.0, CRYSTALSONG_FOREST },
-					}),
-					crit(3, {	-- Howling Fjord
-						["coord"] = { 58.0, 16.0, HOWLING_FJORD },
-					}),
-					crit(4, {	-- Sholazar Basin
-						["coord"] = { 47.0, 66.0, SHOLAZAR_BASIN },
-					}),
-					crit(5, {	-- Storm Peaks
-						["coord"] = { 42.0, 87.0, THE_STORM_PEAKS },
-					}),
-					crit(6, {	-- Zul'Drak
-						["coord"] = { 41.0, 61.0, ZULDRAK },
-					}),
-					crit(7, {	-- Grizzly Hills
-						["coord"] = { 34.0, 61.0, GRIZZLY_HILLS },
-					}),
-					crit(8, {	-- Borean Tundra
-						["coord"] = { 55.0, 20.0, BOREAN_TUNDRA },
-					}),
+					["timeline"] = { "added 4.3.0.15005" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(1024,  {	-- Flame Warden of Outland (A)
-					crit(1, {	-- Blade's Edge Mountains
-						["coord"] = { 42.0, 66.0, BLADES_EDGE_MOUNTAINS },
-					}),
-					crit(2, {	-- Hellfire Peninsula
-						["coord"] = { 62.0, 58.0, HELLFIRE_PENINSULA },
-					}),
-					crit(3, {	-- Nagrand
-						["coord"] = { 49.6, 69.5, NAGRAND },
-					}),
-					crit(4, {	-- Netherstorm
-						["coord"] = { 31.0, 63.0, NETHERSTORM },
-					}),
-					crit(5, {	-- Shadowmoon Valley
-						["coord"] = { 40.0, 55.0, SHADOWMOON_VALLEY },
-					}),
-					crit(6, {	-- Terokkar Forest
-						["coord"] = { 55.0, 55.0, TEROKKAR_FOREST },
-					}),
-					crit(7, {	-- Zangarmarsh
-						["coord"] = { 69.0, 52.0, ZANGARMARSH },
-					}),
-				}),
-				ach(8045, {		-- Flame Warden of Pandaria (A)
-					crit(1, {	-- Dread Wastes
-						["coord"] = { 56.1, 69.5, DREAD_WASTES },
-					}),
-					crit(2, {	-- Jade Forest
-						["coord"] = { 47.2, 47.2, THE_JADE_FOREST },
-					}),
-					crit(3, {	-- Krasarang Wilds
-						["coord"] = { 74.0, 9.50, KRASARANG_WILDS },
-					}),
-					crit(4, {	-- Kun-Lai Summit
-						["coord"] = { 71.1, 90.9, KUN_LAI_SUMMIT },
-					}),
-					crit(5, {	-- Townlong Steppes
-						["coord"] = { 71.5, 56.3, TOWNLONG_STEPPES },
-					}),
-					crit(6, {	-- Vale of Eternal Blossoms
-						["coord"] = { 79.6, 37.2, VALE_OF_ETERNAL_BLOSSOMS },
-					}),
-					crit(7, {	-- Valley of the Four Winds
-						["coord"] = { 51.8, 51.4, VALLEY_OF_THE_FOUR_WINDS },
-					}),
+				ach(1024, { ["sym"] = {{ "achievement_criteria" }}}),	-- Flame Warden of Outland (A)
+				ach(8045, {	-- Flame Warden of Pandaria (A)
+					["timeline"] = { "added 5.2.0.16408" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(11280, {	-- Flame Warden of the Broken Isles (A)
-					crit(1, {	-- Azsuna
-						["coord"] = { 48.2, 29.6, AZSUNA },
-					}),
-					crit(2, {	-- Val'sharah
-						["coord"] = { 44.8, 58.0, VALSHARAH },
-					}),
-					crit(3, {	-- Highmountain
-						["coord"] = { 55.4, 84.4, HIGHMOUNTAIN },
-					}),
-					crit(4, {	-- Stormheim
-						["coord"] = { 32.4, 42.2, STORMHEIM },
-					}),
-					crit(5, {	-- Suramar
-						["coord"] = { 23.0, 58.4, SURAMAR },
-					}),
-				}),
-
-				ach(1034, {		-- The Fires of Azeroth (A)
-					["sym"] = {
-						{"meta_achievement",
-							1022,	-- Flame Warden of Eastern Kingdoms (A)
-							1023,	-- Flame Warden of Kalimdor (A)
-							1024,	-- Flame Warden of Outland (A)
-							6008,	-- Flame Warden of Northrend (A)
-							6011,	-- Flame Warden of Cataclysm (A)
-						},
-					},
+					["timeline"] = { "added 7.2.0.23478" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 			})),
 			n(FACTION_HEADER_HORDE, bubbleDown({ ["races"] = HORDE_ONLY }, {
-				ach(1039, {		-- The Flame Keeper (Horde)
+				ach(1039, {	-- The Flame Keeper (Horde)
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {
-						{"meta_achievement",
-							1036,				-- The Fires of Azeroth (H)
-							1037,				-- Desecration of the Alliance (H)
-							263,				-- Ice the Frost Lord
-							271,				-- Burning Hot Pole Dance
-							1145,				-- King of the Fire Festival
-							272,				-- Torch Juggler
-						},
-					},
+					["sym"] = {{"meta_achievement",
+						1036,				-- The Fires of Azeroth (H)
+						1037,				-- Desecration of the Alliance (H)
+						263,				-- Ice the Frost Lord
+						271,				-- Burning Hot Pole Dance
+						1145,				-- King of the Fire Festival
+						272,				-- Torch Juggler
+					}},
 					["groups"] = {
 						title(45),				-- Flame Keeper
 					},
 				}),
-
-				ach(1037, {		-- Desecration of the Alliance (H)
-					["sym"] = {
-						{"meta_achievement",
-							1031,	-- Extinguishing Eastern Kingdoms (H)
-							1032,	-- Extinguishing Kalimdor (H)
-							1033,	-- Extinguishing Outland (H)
-							6010,	-- Extinguishing Northrend (H)
-							6014,	-- Extinguishing the Cataclysm (H)
-						},
-					},
+				ach(1037, {	-- Desecration of the Alliance (H)
+					["sym"] = {{"meta_achievement",
+						1031,	-- Extinguishing Eastern Kingdoms (H)
+						1032,	-- Extinguishing Kalimdor (H)
+						1033,	-- Extinguishing Outland (H)
+						-- #if AFTER 4.3.0.15005
+						6010,	-- Extinguishing Northrend (H)
+						6014,	-- Extinguishing the Cataclysm (H)
+						-- #endif
+					}},
+				}),
+				ach(1036, {	-- The Fires of Azeroth (H)
+					["sym"] = {{"meta_achievement",
+						1025,	-- Flame Keeper of Eastern Kingdoms (H)
+						1026,	-- Flame Keeper of Kalimdor (H)
+						1027,	-- Flame Keeper of Outland (H)
+						-- #if AFTER 4.3.0.15005
+						6009,	-- Flame Keeper of Northrend (H)
+						6012,	-- Flame Keeper of Cataclysm (H)
+						-- #endif
+					}},
 				}),
 
 				ach(11277, {	-- Extinguishing Draenor (H)
-					["coord"] = { 42.8, 35.9, DRAENOR_SHADOWMOON_VALLEY },
+					["timeline"] = { "added 7.2.0.23478" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(1031, {		-- Extinguishing Eastern Kingdoms (H)
-					crit(1,  {	-- Arathi Highlands
-						["coord"] = { 44.8, 46.1, ARATHI_HIGHLANDS },
-					}),
-					crit(2,  {	-- Badlands
-						["coord"] = { 18.5, 56.1, BADLANDS },
-					}),
-					crit(3,  {	-- Blasted Lands
-						["coord"] = { 55.2, 15.3, BLASTED_LANDS },
-					}),
-					crit(4,  {	-- Burning Steppes
-						["coord"] = { 68.6, 59.9, BURNING_STEPPES },
-					}),
-					crit(5,  {	-- Dun Morogh
-						["coord"] = { 53.8, 44.7, DUN_MOROGH },
-					}),
-					crit(6,  {	-- Duskwood
-						["coord"] = { 73.2, 54.9, DUSKWOOD },
-					}),
-					crit(7,  {	-- Elwynn Forest
-						["coord"] = { 43.2, 63.0, ELWYNN_FOREST },
-					}),
-					crit(8,  {	-- Loch Modan
-						["coord"] = { 32.3, 40.4, LOCH_MODAN },
-					}),
-					crit(9,  {	-- Northern Stranglethorn
-						["coord"] = { 51.6, 63.3, NORTHERN_STRANGLETHORN },
-					}),
-					crit(10, {	-- Redridge Mountains
-						["coord"] = { 24.4, 53.9, REDRIDGE_MOUNTAINS },
-					}),
-					crit(11, {	-- Swamp of Sorrows
-						["coord"] = { 70.1, 14.8, SWAMP_OF_SORROWS },
-					}),
-					crit(12, {	-- The Cape of Stranglethorn
-						["coord"] = { 51.7, 67.3, THE_CAPE_OF_STRANGLETHORN },
-					}),
-					crit(13, {	-- The Hinterlands
-						["coord"] = { 14.5, 50.0, THE_HINTERLANDS },
-					}),
-					crit(14, {	-- Western Plaguelands
-						["coord"] = { 43.6, 82.5, WESTERN_PLAGUELANDS },
-					}),
-					crit(15, {	-- Westfall
-						["coord"] = { 45.2, 62.3, WESTFALL },
-					}),
-					crit(16, {	-- Wetlands
-						["coord"] = { 13.3, 47.3, WETLANDS },
-					}),
-				}),
-				ach(1032, {		-- Extinguishing Kalimdor (H)
-					crit(1,  {	-- Ashenvale
-						["coord"] = { 86.7, 41.4, ASHENVALE },
-					}),
-					crit(2,  {	-- Azuremyst Isle
-						["coord"] = { 44.7, 52.5, AZUREMYST_ISLE },
-					}),
-					crit(3,  {	-- Bloodmyst Isle
-						["coord"] = { 56.0, 68.5, BLOODMYST_ISLE },
-					}),
-					crit(4,  {	-- Darkshore
-						["coord"] = { 49.0, 22.5, DARKSHORE },
-					}),
-					crit(5,  {	-- Desolace
-						["coord"] = { 65.8, 17.0, DESOLACE },
-					}),
-					crit(6,  {	-- Dustwallow Marsh
-						["coord"] = { 62.1, 40.3, DUSTWALLOW_MARSH },
-					}),
-					crit(7,  {	-- Feralas
-						["coord"] = { 46.6, 43.8, FERALAS },
-					}),
-					crit(8,  {	-- Silithus
-						["coord"] = { 60.5, 33.4, SILITHUS },
-					}),
-					crit(9,  {	-- Southern Barrens
-						["coord"] = { 48.2, 72.4, SOUTHERN_BARRENS },
-					}),
-					crit(10, {	-- Stonetalon Mountains
-						["coord"] = { 49.6, 51.1, STONETALON_MOUNTAINS },
-					}),
-					crit(11, {	-- Tanaris
-						["coord"] = { 52.7, 30.0, TANARIS },
-					}),
-					crit(12, {	-- Teldrassil
-						["coord"] = { 54.7, 52.7, TELDRASSIL },
-					}),
-					crit(13, {	-- Un'Goro Crater
-						["coord"] = { 60.0, 62.9, UNGORO_CRATER },
-					}),
-					crit(14, {	-- Winterspring
-						["coord"] = { 61.3, 47.1, WINTERSPRING },
-					}),
-				}),
+				ach(1031, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Eastern Kingdoms (H)
+				ach(1032, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Kalimdor (H)
 				ach(13342, {	-- Extinguishing Kul Tiras (H)
-					crit(1, {	-- Tiragarde Sound
-						["coord"] = { 76.3, 49.7, TIRAGARDE_SOUND },
-					}),
-					crit(2, {	-- Stormsong Valley
-						["coord"] = { 36.0, 51.5, STORMSONG_VALLEY },
-					}),
-					crit(3, {	-- Drustvar
-						["coord"] = { 40.2, 47.3, DRUSTVAR },
-					}),
+					["timeline"] = { "added 8.1.5.29701" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(6010, {		-- Extinguishing Northrend (H)
-					crit(1, {	-- Dragonblight
-						["coord"] = { 75.1, 43.7, DRAGONBLIGHT },
-					}),
-					crit(2, {	-- Borean Tundra
-						["coord"] = { 55.1, 20.2, BOREAN_TUNDRA },
-					}),
-					crit(3, {	-- Howling Fjord
-						["coord"] = { 57.7, 15.7, HOWLING_FJORD },
-					}),
-					crit(4, {	-- Sholazar Basin
-						["coord"] = { 47.9, 66.0, SHOLAZAR_BASIN },
-					}),
-					crit(5, {	-- Storm Peaks
-						["coord"] = { 41.4, 87.0, THE_STORM_PEAKS },
-					}),
-					crit(6, {	-- Zul'Drak
-						["coord"] = { 40.4, 61.0, ZULDRAK },
-					}),
-					crit(7, {	-- Grizzly Hills
-						["coord"] = { 34.1, 60.7, GRIZZLY_HILLS },
-					}),
-					crit(8, {	-- Crystalsong Forest
-						["coord"] = { 77.7, 74.9, CRYSTALSONG_FOREST },
-					}),
+				ach(6010, {	-- Extinguishing Northrend (H)
+					["timeline"] = { "added 4.3.0.15005" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(1033, {		-- Extinguishing Outland (H)
-					crit(1, {	-- Blade's Edge Mountains
-						["coord"] = { 41.8, 65.9, BLADES_EDGE_MOUNTAINS },
-					}),
-					crit(2, {	-- Hellfire Peninsula
-						["coord"] = { 61.9, 58.5, HELLFIRE_PENINSULA },
-					}),
-					crit(3, {	-- Nagrand
-						["coord"] = { 49.7, 69.6, NAGRAND },
-					}),
-					crit(4, {	-- Netherstorm
-						["coord"] = { 31.1, 62.7, NETHERSTORM },
-					}),
-					crit(5, {	-- Shadowmoon Valley
-						["coord"] = { 39.6, 54.3, SHADOWMOON_VALLEY },
-					}),
-					crit(6, {	-- Terokkar Forest
-						["coord"] = { 54.2, 55.4, TEROKKAR_FOREST },
-					}),
-					crit(7, {	-- Zangarmarsh
-						["coord"] = { 68.6, 52.0, ZANGARMARSH },
-					}),
-				}),
+				ach(1033, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Outland (H)
 				ach(8043,  {	-- Extinguishing Pandaria (H)
-					["coord"] = { 79.8, 37.0, VALE_OF_ETERNAL_BLOSSOMS },
+					["timeline"] = { "added 5.2.0.16408" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(11279, {	-- Extinguishing the Broken Isles (H)
-					["coord"] = { 22.8, 58.2, SURAMAR },
+					["timeline"] = { "added 7.2.0.23478" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(6014, {		-- Extinguishing the Cataclysm (H)
-					crit(1, {	-- Twilight Highlands
-						["coord"] = { 47.0, 28.3, TWILIGHT_HIGHLANDS },
-					}),
-					crit(2, {	-- Uldum
-						["coord"] = { 53.4, 32.0, ULDUM },
-					}),
+				ach(6014, {	-- Extinguishing the Cataclysm (H)
+					["timeline"] = { "added 4.3.0.15005" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 
-				ach(6012, {		-- Flame Keeper of Cataclysm (H)
-					crit(1, {	-- Vashj'ir
-						["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
-					}),
-					crit(2, {	-- Twilight Highlands
-						["coord"] = { 53.0, 46.0, TWILIGHT_HIGHLANDS },
-					}),
-					crit(3, {	-- Hyjal
-						["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
-					}),
-					crit(4, {	-- Deepholm
-						["coord"] = { 49.4, 51.4, DEEPHOLM },
-					}),
-					crit(5, {	-- Uldum
-						["coord"] = { 53.0, 34.0, ULDUM },
-					}),
+				ach(6012, {	-- Flame Keeper of Cataclysm (H)
+					["timeline"] = { "added 4.3.0.15005" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(11284, {	-- Flame Keeper of Draenor (H)
-					crit(1, {	-- Spires of Arak
-						["coord"] = { 48.0, 44.6, SPIRES_OF_ARAK },
-					}),
-					crit(2, {	-- Talador
-						["coord"] = { 43.4, 71.8, TALADOR },
-					}),
-					crit(3, {	-- Nagrand
-						["coord"] = { 80.4, 47.6, DRAENOR_NAGRAND },
-					}),
-					crit(4, {	-- Gorgrond
-						["coord"] = { 43.8, 93.8, GORGROND },
-					}),
-					crit(5, {	-- Frostfire Ridge
-						["coord"] = { 72.6, 65.0, FROSTFIRE_RIDGE },
-					}),
+					["timeline"] = { "added 7.2.0.23478" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(1025, {		-- Flame Keeper of Eastern Kingdoms (H)
-					crit(1,  {	-- Arathi Highlands
-						["coord"] = { 69.4, 42.6, ARATHI_HIGHLANDS },
-					}),
-					crit(2,  {	-- Badlands
-						["coord"] = { 23.1, 37.4, BADLANDS },
-					}),
-					crit(3,  {	-- Blasted Lands
-						["coord"] = { 46.2, 13.8, BLASTED_LANDS },
-					}),
-					crit(4,  {	-- Burning Steppes
-						["coord"] = { 51.1, 29.2, BURNING_STEPPES },
-					}),
-					crit(5,  {	-- Eversong Woods
-						["coord"] = { 46.4, 50.6, EVERSONG_WOODS },
-					}),
-					crit(6,  {	-- Ghostlands
-						["coord"] = { 46.6, 26.3, GHOSTLANDS },
-					}),
-					crit(7,  {	-- Hillsbrad Foothills
-						["coord"] = { 54.7, 50.1, HILLSBRAD_FOOTHILLS },
-					}),
-					crit(8,  {	-- Northern Stranglethorn
-						["coord"] = { 40.6, 50.9, NORTHERN_STRANGLETHORN },
-					}),
-					crit(9,  {	-- Silverpine Forest
-						["coord"] = { 49.6, 38.2, SILVERPINE_FOREST },
-					}),
-					crit(10, {	-- Swamp of Sorrows
-						["coord"] = { 76.3, 13.8, SWAMP_OF_SORROWS },
-					}),
-					crit(11, {	-- The Cape of Stranglethorn
-						["coord"] = { 50.4, 70.4, THE_CAPE_OF_STRANGLETHORN },
-					}),
-					crit(12, {	-- The Hinterlands
-						["coord"] = { 76.6, 75.0, THE_HINTERLANDS },
-					}),
-					crit(13, {	-- Tirisfal Glades
-						["coord"] = { 57.2, 51.8, TIRISFAL_GLADES },
-					}),
-					crit(14, {	-- Western Plaguelands
-						["coord"] = { 29.2, 57.3, WESTERN_PLAGUELANDS },
-					}),
+				ach(1025, { ["sym"] = {{ "achievement_criteria" }}}),	-- Flame Keeper of Eastern Kingdoms (H)
+				ach(1026, { ["sym"] = {{ "achievement_criteria" }}}),	-- Flame Keeper of Kalimdor (H)
+				ach(6009, {	-- Flame Keeper of Northrend (H)
+					["timeline"] = { "added 4.3.0.15005" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
-				ach(1026, {		-- Flame Keeper of Kalimdor (H)
-					crit(1,  {	-- Ashenvale
-						["coord"] = { 51.4, 66.1, ASHENVALE },
-					}),
-					crit(2,  {	-- Azshara
-						["coord"] = { 60.8, 53.5, AZSHARA },
-					}),
-					crit(3,  {	-- Desolace
-						["coord"] = { 26.1, 76.9, DESOLACE },
-					}),
-					crit(4,  {	-- Durotar
-						["coord"] = { 52.0, 47.0, DUROTAR },
-					}),
-					crit(5,  {	-- Dustwallow Marsh
-						["coord"] = { 33.0, 30.0, DUSTWALLOW_MARSH },
-					}),
-					crit(6,  {	-- Feralas
-						["coord"] = { 72.4, 47.8, FERALAS },
-					}),
-					crit(7,  {	-- Mulgore
-						["coord"] = { 51.8, 59.3, MULGORE },
-					}),
-					crit(8,  {	-- Northern Barrens
-						["coord"] = { 50.0, 55.0, NORTHERN_BARRENS },
-					}),
-					crit(9,  {	-- Silithus
-						["coord"] = { 50.9, 41.3, SILITHUS },
-					}),
-					crit(10, {	-- Southern Barrens
-						["coord"] = { 41.0, 68.0, SOUTHERN_BARRENS },
-					}),
-					crit(11, {	-- Stonetalon Mountains
-						["coord"] = { 52.9, 62.5, STONETALON_MOUNTAINS },
-					}),
-					crit(12, {	-- Tanaris
-						["coord"] = { 49.8, 27.9, TANARIS },
-					}),
-					crit(13, {	-- Un'goro Crater
-						["coord"] = { 56.0, 66.0, UNGORO_CRATER },
-					}),
-					crit(14, {	-- Winterspring
-						["coord"] = { 58.1, 47.5, WINTERSPRING },
-					}),
-				}),
-				ach(6009, {		-- Flame Keeper of Northrend (H)
-					crit(1, {	-- Dragonblight
-						["coord"] = { 39.0, 48.0, DRAGONBLIGHT },
-					}),
-					crit(2, {	-- Borean Tundra
-						["coord"] = { 51.0, 12.0, BOREAN_TUNDRA },
-					}),
-					crit(3, {	-- Howling Fjord
-						["coord"] = { 48.0, 13.0, HOWLING_FJORD },
-					}),
-					crit(4, {	-- Sholazar Basin
-						["coord"] = { 47.0, 62.0, SHOLAZAR_BASIN },
-					}),
-					crit(5, {	-- Storm Peaks
-						["coord"] = { 40.0, 86.0, THE_STORM_PEAKS },
-					}),
-					crit(6, {	-- Zul'Drak
-						["coord"] = { 43.0, 71.0, ZULDRAK },
-					}),
-					crit(7, {	-- Grizzly Hills
-						["coord"] = { 19.0, 61.0, GRIZZLY_HILLS },
-					}),
-					crit(8, {	-- Crystalsong Forest
-						["coord"] = { 80.0, 53.0, CRYSTALSONG_FOREST },
-					}),
-				}),
-				ach(1027, {		-- Flame Keeper of Outland (H)
-					crit(1, {	-- Blade's Edge Mountains
-						["coord"] = { 50.0, 59.0, BLADES_EDGE_MOUNTAINS },
-					}),
-					crit(2, {	-- Hellfire Peninsula
-						["coord"] = { 55.0, 40.0, HELLFIRE_PENINSULA },
-					}),
-					crit(3, {	-- Nagrand
-						["coord"] = { 51.0, 34.0, NAGRAND },
-					}),
-					crit(4, {	-- Netherstorm
-						["coord"] = { 32.0, 68.0, NETHERSTORM },
-					}),
-					crit(5, {	-- Shadowmoon Valley
-						["coord"] = { 33.0, 30.0, SHADOWMOON_VALLEY },
-					}),
-					crit(6, {	-- Terokkar Forest
-						["coord"] = { 52.0, 43.0, TEROKKAR_FOREST },
-					}),
-					crit(7, {	-- Zangarmarsh
-						["coord"] = { 35.0, 51.0, ZANGARMARSH },
-					}),
-				}),
-				ach(8044, {		-- Flame Keeper of Pandaria (H)
-					crit(1, {	-- Dread Wastes
-						["coord"] = { 56.1, 69.5, DREAD_WASTES },
-					}),
-					crit(2, {	-- Jade Forest
-						["coord"] = { 47.2, 47.2, THE_JADE_FOREST },
-					}),
-					crit(3, {	-- Krasarang Wilds
-						["coord"] = { 77.8, 3.60, KRASARANG_WILDS },
-					}),
-					crit(4, {	-- Kun-Lai Summit
-						["coord"] = { 71.1, 90.9, KUN_LAI_SUMMIT },
-					}),
-					crit(5, {	-- Townlong Steppes
-						["coord"] = { 71.5, 56.3, TOWNLONG_STEPPES },
-					}),
-					crit(6, {	-- Vale of Eternal Blossoms
-						["coord"] = { 77.8, 33.1, VALE_OF_ETERNAL_BLOSSOMS },
-					}),
-					crit(7, {	-- Valley of the Four Winds
-						["coord"] = { 51.8, 51.4, VALLEY_OF_THE_FOUR_WINDS },
-					}),
+				ach(1027, { ["sym"] = {{ "achievement_criteria" }}}),	-- Flame Keeper of Outland (H)
+				ach(8044, {	-- Flame Keeper of Pandaria (H)
+					["timeline"] = { "added 5.2.0.16408" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(11282, {	-- Flame Keeper of the Broken Isles (H)
-					crit(1, {	-- Azsuna
-						["coord"] = { 48.2, 29.6, AZSUNA },
-					}),
-					crit(2, {	-- Val'sharah
-						["coord"] = { 44.8, 58.0, VALSHARAH },
-					}),
-					crit(3, {	-- Highmountain
-						["coord"] = { 55.4, 84.4, HIGHMOUNTAIN },
-					}),
-					crit(4, {	-- Stormheim
-						["coord"] = { 32.4, 42.2, STORMHEIM },
-					}),
-					crit(5, {	-- Suramar
-						["coord"] = { 30.4, 45.4, SURAMAR },
-					}),
+					["timeline"] = { "added 7.2.0.23478" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(13340, {	-- Flame Keeper of Zandalar (H)
-					crit(1, {	-- Zuldazar
-						["coord"] = { 53.3, 48.1, ZULDAZAR },
-					}),
-					crit(2, {	-- Nazmir
-						["coord"] = { 40.0, 74.3, NAZMIR },
-					}),
-					crit(3, {	-- Vol'dun
-						["coord"] = { 56.0, 47.8, VOLDUN },
-					}),
-				}),
-
-				ach(1036, {		-- The Fires of Azeroth (H)
-					["sym"] = {
-						{"meta_achievement",
-							1025,	-- Flame Keeper of Eastern Kingdoms (H)
-							1026,	-- Flame Keeper of Kalimdor (H)
-							1027,	-- Flame Keeper of Outland (H)
-							6009,	-- Flame Keeper of Northrend (H)
-							6012,	-- Flame Keeper of Cataclysm (H)
-						},
-					},
+					["timeline"] = { "added 8.1.5.29701" },
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 			})),
 			ach(271,  {	-- Burning Hot Pole Dance
