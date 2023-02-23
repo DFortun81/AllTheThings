@@ -2109,7 +2109,7 @@ namespace ATT
             else
             {
                 var tierLists = new Dictionary<int, TierList>();
-                int maxTierID = LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME][0];
+                int maxTierID = 10;// LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME][0];
                 for (int tierID = 1; tierID <= maxTierID; ++tierID)
                 {
                     // ensure the tier group exists
@@ -3098,7 +3098,7 @@ namespace ATT
                                 {
                                     if (o is Dictionary<string, object> illusion)
                                     {
-                                        Items.Merge(illusion);
+                                        ConditionalItemData.Add(illusion);
                                     }
                                 }
                             }
