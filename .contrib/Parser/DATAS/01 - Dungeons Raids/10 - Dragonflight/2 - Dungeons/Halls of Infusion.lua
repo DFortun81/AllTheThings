@@ -156,6 +156,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 					["crs"] = { 189729 },	-- Primal Tsunami
 					["g"] = {
 						ach(16262),	-- Mythic: Halls of Infusion
+						ach(17098),	-- Mythic: Halls of Infusion Guild Run
 						ach(16427),	-- Go With The Flow
 						i(193741),	-- Mantle of Crushing Waves
 						i(193738),	-- Robe of Plunging Depths

@@ -179,6 +179,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 					["crs"] = { 186121 },	-- Decatriarch Wratheye
 					["g"] = {
 						ach(16257),	-- Mythic: Brackenhide Hollow
+						ach(17097),	-- Mythic: Brackenhide Hollow Guild Run
 						ach(16404),	-- So You Can Kill This in a Way That Matters...
 						i(193661),	-- Blight Weaver's Clutches
 						i(193665),	-- Decatriarch's Bone Pestle

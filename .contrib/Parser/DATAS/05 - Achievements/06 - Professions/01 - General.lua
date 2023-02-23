@@ -4,6 +4,19 @@
 
 root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 	achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
+		ach(16630, {	-- Draconic Master of All
+			crit(1),		-- Dragon Isles Alchemy
+			crit(2),		-- Dragon Isles Blacksmithing
+			crit(3),		-- Dragon Isles Enchanting
+			crit(4),		-- Dragon Isles Engineering
+			crit(5),		-- Dragon Isles Herbalism
+			crit(6),		-- Dragon Isles Inscription
+			crit(7),		-- Dragon Isles Jewelcrafting
+			crit(8),		-- Dragon Isles Leatherworking
+			crit(9),		-- Dragon Isles Mining
+			crit(10),		-- Dragon Isles Skinning
+			crit(11),		-- Dragon Isles Tailoring
+		}),
 		ach(9454, {		-- Draenic Seed Collector
 			i(111997),		-- Herb Garden, Level 3 [Blueprints]
 		}),
@@ -60,6 +73,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 			ach(731),		-- Professional Expert
 			ach(116),		-- Professional Journeyman
 		}),
+		ach(16627),	-- Professional Draconic Master
 		ach(9464, {		-- Professional Draenor Master
 			title(305),		--	Artisan
 		}),
@@ -101,6 +115,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 		ach(4914),		-- Working In the Heat
 		ach(14329),		-- Working the Afterlife
 		ach(10581),		-- Working the Isles
+		ach(16626),		-- Working with Wyrms
 		ach(12737, {	-- Zandalari Master of All (H)
 			["races"] = HORDE_ONLY,
 			["g"] = {

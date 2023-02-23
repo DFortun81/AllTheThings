@@ -188,6 +188,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2
 					["crs"] = { 184125 },	-- Chrono-Lord Deios
 					["g"] = {
 						ach(16280),	-- Mythic: Uldaman: Legacy of Tyr
+						ach(17103),	-- Mythic: Uldaman: Legacy of Tyr Guild Run
 						ach(16281),	-- Like Sands Through the Hourglass
 						i(193799),	-- Crazed Traveler's Legwraps
 						i(193801),	-- Fatebound Chainmail

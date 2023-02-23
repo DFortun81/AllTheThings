@@ -26,6 +26,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ [
 			ach(121),		-- Journeyman Cook
 		}),
 		ach(9500),		-- Draenor Cook
+		ach(16631),		-- Dragon Isles Cook
 		ach(10593),		-- Everything Tastes Better
 		ach(1563,  {	-- Hail to the Chef
 			title(52),		-- Chef

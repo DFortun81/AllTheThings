@@ -172,6 +172,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				crit(11),	-- Wild Coast
 				crit(12),	-- Wild Preserve
 			}),
+			ach(16736),	-- Grand Theft Mammoth
 			ach(16493, {	-- Petty Theft Mammoth
 				["description"] = "Find Mammoths to ride from the individual locations to the location specified on this achievement.",
 				["cr"] = 198163,	-- Mammoth-Tamer Tavok
@@ -187,11 +188,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					}),
 					crit(3, {	-- Scalecracker Keep
 						["coord"] = { 66.3, 24.6, THE_WAKING_SHORES },
-						-- ["cr"] = TODO,	-- Tame Magmammoth
+						["cr"] = 198155,	-- Tame Magmammoth
 					}),
 					crit(4, {	-- Dragonbane Keep
 						["coord"] = { 23.6, 71.5, THE_WAKING_SHORES },
-						-- ["cr"] = TODO,	-- Tame Magmammoth
+						["cr"] = 198153,	-- Tame Magmammoth
 					}),
 				},
 			}),

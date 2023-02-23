@@ -162,6 +162,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 					["crs"] = { 186738 },	-- Umbrelskul
 					["g"] = {
 						ach(16274),	-- Mythic: The Azure Vault
+						ach(17101),	-- Mythic: The Azure Vault Guild Run
 						ach(16331),	-- The Cracked Crystal
 						i(193644),	-- Breastplate of Irreparable Madness
 						i(193645),	-- Crystalized Bulwark

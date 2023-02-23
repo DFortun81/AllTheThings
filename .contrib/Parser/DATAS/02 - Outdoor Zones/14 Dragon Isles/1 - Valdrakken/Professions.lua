@@ -4,6 +4,9 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(VALDRAKKEN, {
 		n(PROFESSIONS, {
+			n(ACHIEVEMENTS, {
+				ach(16539),	-- In High Esteem
+			}),
 			prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY }, {
 				n(185545, {	-- Conflago <Alchemy Trainer>
 					["coord"] = { 36.6, 72.6, VALDRAKKEN },

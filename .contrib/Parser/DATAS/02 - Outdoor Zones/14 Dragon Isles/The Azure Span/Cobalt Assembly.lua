@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 		faction(2550, {	-- Cobalt Assembly
 			n(ACHIEVEMENTS, {
 				ach(16569),	-- Cobalt Enthusiast
+				ach(16537),	-- Maximum Power!
 			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["isDaily"] = true,

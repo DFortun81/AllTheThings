@@ -179,6 +179,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 					["crs"] = { 190609 },	-- Echo of Doragosa
 					["g"] = {
 						ach(16271),	-- Mythic: Algeth'ar Academy
+						ach(17096),	-- Mythic: Algeth'ar Academy Guild Run
 						i(193701),	-- Algeth'ar Puzzle Box
 						i(193705),	-- Breastplate of Proven Knowledge
 						i(193707),	-- Final Grade

@@ -162,6 +162,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 					["crs"] = { 189901 },	-- Warlord Sargha
 					["g"] = {
 						ach(16265),	-- Mythic: Neltharus
+						ach(17099),	-- Mythic: Neltharus Guild Run
 						i(193776),	-- Dragonkiln Chestguard
 						i(193777),	-- Helm of Hardened Gold
 						i(193778),	-- Qalashi Defender

@@ -2369,7 +2369,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(16417),	-- <DNT> Cobalt Assembly - Rank 3 - High
 		ach(16418),	-- <DNT> Cobalt Assembly - Rank 4 - Maximum
 		--
+		--10.0.0.45335
+		ach(16425),	-- I'm a Template Character [DNT]
+		--10.0.0.45454
 		ach(16449),	-- [DNT] <Hidden> Mythic+ Rating > 0 (Dragonflight, any season)
+		ach(16520),	-- 10.0 Dragonflight - Expansion Quest Launch (Meet Wrathion/Ebyssian) \\ 10.0 Dragonflight - Expansion Quest Launch
 		--
 		ach(16662),	-- Dragon Isles Blacksmithing 75 (DNT)
 		ach(16663),	-- Dragon Isles Tailoring 75 (DNT)
@@ -2680,5 +2684,16 @@ root(ROOTS.HiddenAchievementTriggers, {
 		-- 10.0.2.46479
 		ach(17209),	-- <Hidden> Chromie Time - Hit 59 While In Chromie Time (copy)
 		ach(17210),	-- <Hidden> Chromie Time - Hit 60 While In Chromie Time (copy)
+		--10.0.2.47631
+		ach(17365),	-- <Hidden> 10.0 Professions Onboarding Skip Completed [DNT]
+		--10.0.5.47871
+		ach(16735),	-- 10.0.5 Trading Post - Tutorial Quest - Objective: Tenders Claimed - JZB <DND>
+		ach(16737),	-- 10.0.5 Trading Post - Tutorial Quest - Completed (Reward for Player) - JZB <DND>
+		ach(17310),	-- 10.0 Prologue - Storms - Dimmed Primeval Water
+		ach(17311),	-- 10.0 Prologue - Storms - Dimmed Primeval Fire
+		ach(17312),	-- 10.0 Prologue - Storms - Dimmed Primeval Earth
+		ach(17313),	-- 10.0 Prologue - Storms - Dimmed Primeval Storm
+		ach(17338),	-- <Hidden> ACCOUNT: Veritistrasz Q2 Completed
+		ach(17420),	-- Trial of Tyr Ineligible For Spark Skip [DNT]
 	}),
 });

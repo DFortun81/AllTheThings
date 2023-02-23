@@ -58,6 +58,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ [
 			crit(7),		-- Fire Ammonite Angler
 		}),
 		ach(9503),		-- Draenor Fisherman
+		ach(16632),	-- Dragon Isles Fisherman
 		ach(9547, {	-- Everything Is Awesome!
 			["cost"] = { { "i", 118414, 20 } },	-- 20x Awesomefish
 		}),

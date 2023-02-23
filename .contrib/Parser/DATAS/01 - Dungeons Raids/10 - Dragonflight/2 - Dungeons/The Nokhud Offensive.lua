@@ -194,6 +194,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 					["crs"] = { 186151 },	-- Balakar Khan
 					["g"] = {
 						ach(16277),	-- Mythic: The Nokhud Offensive
+						ach(17102),	-- Mythic: The Nokhud Offensive Guild Run
 						ach(16602),	-- Nokhud Deed Goes Unnoticed
 						i(193683),	-- Blessed Ohn'ir Robes
 						i(193687),	-- Koroleth's Crackling Dagger

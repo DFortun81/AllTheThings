@@ -33,51 +33,8 @@ ach(15207),	-- Challenger: Season 3
 ach(15208),	-- Duelist: Season 2
 ach(15209),	-- Rival: Season 2
 ach(15210),	-- Challenger: Season 2
-10.0.0.45335
-ach(16425),	-- I'm a Template Character [DNT]
-10.0.0.45454
-ach(16520),	-- 10.0 Dragonflight - Expansion Quest Launch (Meet Wrathion/Ebyssian) \\ 10.0 Dragonflight - Expansion Quest Launch
-ach(16531),	-- A Whole Heap of Lunkers \\ A Whole Lot of Lunkers
-ach(16533),	-- Lots of Lunkers \\ A Whole Lot of Lunkers
-ach(16537),	-- Maximum Power!
-ach(16539),	-- In High Esteem
-ach(16546),	-- What's Down There? \\ That's not a fish...
-10.0.0.45570
-ach(16622),	-- Three Minutes or It's Free
-ach(16626),	-- Working with Wyrms
-ach(16627),	-- Professional Draconic Master
-ach(16630),	-- Draconic Master of All
-ach(16631),	-- Dragon Isles Cook
-ach(16632),	-- Dragon Isles Fisherman
 10.0.2.45779
-ach(16729),	-- To All the Squirrels Hidden Til Now \\ To All the Squirrels Hidden Till Now
-ach(16731),	-- Court is Now in Session
-10.0.2.45969
-ach(16736),	-- Grand Theft Mammoth
-10.0.2.46259
-ach(16794),	-- Dragon Isles Crafting Order Apprentice
-ach(16795),	-- Dragon Isles Crafting Order Journeyman
-ach(16800),	-- Dragon Isles Crafting Order Master
-10.0.2.46420
-ach(17096),	-- Mythic: Algeth'ar Academy Guild Run
-ach(17097),	-- Mythic: Brackenhide Hollow Guild Run
-ach(17098),	-- Mythic: Halls of Infusion Guild Run
-ach(17099),	-- Mythic: Neltharus Guild Run
-ach(17100),	-- Mythic: Ruby Life Pools Guild Run
-ach(17101),	-- Mythic: The Azure Vault Guild Run
-ach(17102),	-- Mythic: The Nokhud Offensive Guild Run
-ach(17103),	-- Mythic: Uldaman: Legacy of Tyr Guild Run
-10.0.2.47631
-ach(17365),	-- <Hidden> 10.0 Professions Onboarding Skip Completed [DNT]
-10.0.5.47871
-ach(16735),	-- 10.0.5 Trading Post - Tutorial Quest - Objective: Tenders Claimed - JZB <DND>
-ach(16737),	-- 10.0.5 Trading Post - Tutorial Quest - Completed (Reward for Player) - JZB <DND>
-ach(17310),	-- 10.0 Prologue - Storms - Dimmed Primeval Water
-ach(17311),	-- 10.0 Prologue - Storms - Dimmed Primeval Fire
-ach(17312),	-- 10.0 Prologue - Storms - Dimmed Primeval Earth
-ach(17313),	-- 10.0 Prologue - Storms - Dimmed Primeval Storm
-ach(17338),	-- <Hidden> ACCOUNT: Veritistrasz Q2 Completed
-ach(17420),	-- Trial of Tyr Ineligible For Spark Skip [DNT]
+ach(16729),	-- To All the Squirrels Hidden Til Now
 10.0.7.47910
 ach(17214),	-- Stormsunder Crater Circuit: Bronze
 ach(17215),	-- Stormsunder Crater Circuit: Silver

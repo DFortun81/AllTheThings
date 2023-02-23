@@ -5,6 +5,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 	n(ISKAARA_TUSKARR, {
 		n(ISKAARA_FISHING, {
 			n(ACHIEVEMENTS, {
+				ach(16531),	-- A Whole Heap of Lunkers
 				ach(16322, {	-- Best in Slot
 					crit(1, {	-- Harpoon handle
 						["_quests"] = { 70795 },	-- Reinforced Irontree Harpoon Handle
@@ -29,12 +30,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				ach(16548),	-- It Takes a Tuskarr Buddy
 				ach(16564),	-- It Takes a Tuskarr Family
 				ach(16565),	-- It Takes a Tuskarr Village
+				ach(16533),	-- Lots of Lunkers
 				ach(16561),	-- Lunkers, Lunkers Everywhere
 				ach(16547),	-- Pulled!
 				ach(16317),	-- Secret Fishing Spots
 				ach(16553),	-- Taking From Nature
 				ach(16562),	-- That's not a Fish...
 				ach(16563),	-- We're Going to Need a Bigger Harpoon
+				ach(16546),	-- What's Down There?
 			}),
 			n(QUESTS, {
 					-- RENOWN 4 --

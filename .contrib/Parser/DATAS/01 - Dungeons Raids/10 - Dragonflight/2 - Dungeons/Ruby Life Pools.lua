@@ -143,6 +143,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 					},
 					["g"] = {
 						ach(16268),	-- Mythic: Ruby Life Pools
+						ach(17100),	-- Mythic: Ruby Life Pools Guild Run
 						ach(16440),	-- Are You My Broodmother?
 						i(193755),	-- Backdraft Cleaver
 						i(193753),	-- Breastplate of Soaring Terror
