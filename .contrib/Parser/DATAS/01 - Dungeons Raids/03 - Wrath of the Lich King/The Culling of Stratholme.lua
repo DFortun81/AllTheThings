@@ -30,6 +30,22 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 					-- #endif
 				}),
+				-- #if ANYCLASSIC
+				applyclassicphase(WRATH_PHASE_TWO, ach(17302, {	-- Defense Protocol Alpha: The Culling of Stratholme
+					crit(57771, { -- Meathook
+						["_encounter"] = { 611, 2 },
+					}),
+					crit(57772, { -- Chrono-Lord Epoch
+						["_encounter"] = { 613, 2 },
+					}),
+					crit(57773, { -- Salramm the Fleshcrafter
+						["_encounter"] = { 612, 2 },
+					}),
+					crit(57770, { -- Mal'Ganis
+						["_encounter"] = { 614, 2 },
+					}),
+				})),
+				-- #endif
 				ach(500,  {	-- Heroic: The Culling of Stratholme
 					crit(6805, { -- Meathook
 						["_encounter"] = { 611, 2 },

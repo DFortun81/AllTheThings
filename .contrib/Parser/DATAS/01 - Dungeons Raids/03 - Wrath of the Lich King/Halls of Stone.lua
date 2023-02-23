@@ -29,6 +29,22 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 					-- #endif
 				}),
+				-- #if ANYCLASSIC
+				applyclassicphase(WRATH_PHASE_TWO, ach(17297, {	-- Defense Protocol Alpha: Halls of Stone
+					crit(57752, { -- Maiden of Grief
+						["_encounter"] = { 605, 2 },
+					}),
+					crit(57748, { -- Sjonnir the Ironshaper
+						["_encounter"] = { 607, 2 },
+					}),
+					crit(57751, { -- Tribunal of Ages
+						["_encounter"] = { 606, 2 },
+					}),
+					crit(57749, { -- Krystallus
+						["_encounter"] = { 604, 2 },
+					}),
+				})),
+				-- #endif
 				ach(496,  {	-- Heroic: Halls of Stone
 					crit(6856, { -- Maiden of Grief
 						["_encounter"] = { 605, 2 },

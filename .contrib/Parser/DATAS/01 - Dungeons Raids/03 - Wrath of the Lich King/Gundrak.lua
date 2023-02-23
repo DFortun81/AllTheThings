@@ -30,6 +30,25 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 					-- #endif
 				}),
+				-- #if ANYCLASSIC
+				applyclassicphase(WRATH_PHASE_TWO, ach(17295, {	-- Defense Protocol Alpha: Gundrak
+					crit(57743, { -- Slad'ran
+						["_encounter"] = { 592, 2 },
+					}),
+					crit(57744, { -- Moorabi
+						["_encounter"] = { 594, 2 },
+					}),
+					crit(57746, { -- Drakkari Colossus
+						["_encounter"] = { 593, 2 },
+					}),
+					crit(57747, { -- Gal'darah
+						["_encounter"] = { 596, 2 },
+					}),
+					crit(57745, { -- Eck the Ferocious
+						["_encounter"] = { 595, 2 },
+					}),
+				})),
+				-- #endif
 				ach(495,  {	-- Heroic: Gundrak
 					crit(6839, { -- Slad'ran
 						["_encounter"] = { 592, 2 },

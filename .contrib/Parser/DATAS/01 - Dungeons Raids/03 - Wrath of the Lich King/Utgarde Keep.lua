@@ -30,6 +30,22 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 					-- #endif
 				}),
+				-- #if ANYCLASSIC
+				applyclassicphase(WRATH_PHASE_TWO, ach(17213, {	-- Defense Protocol Alpha: Utgarde Keep
+					crit(57666, { -- Prince Keleseth
+						["_encounter"] = { 638, 2 },
+					}),
+					crit(57665, { -- Skarvald the Constructor
+						["_encounter"] = { 639, 2 },
+					}),
+					crit(57667, { -- Dalronn the Controller
+						["_encounter"] = { 639, 2 },
+					}),
+					crit(57668, { -- Ingvar the Plunderer
+						["_encounter"] = { 640, 2 },
+					}),
+				})),
+				-- #endif
 				ach(489,  {	-- Heroic: Utgarde Keep
 					crit(3701, { -- Prince Keleseth
 						["_encounter"] = { 638, 2 },
