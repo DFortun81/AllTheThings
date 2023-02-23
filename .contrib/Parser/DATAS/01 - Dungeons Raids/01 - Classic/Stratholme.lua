@@ -1034,7 +1034,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						-- #if AFTER 4.0.3
 						["creatureID"] = 45412,	-- Lord Aurius Rivendare
 						-- #else
-						["creatureID"] = 10440,	-- Baron Rivendare
+						["npcID"] = 10440,	-- Baron Rivendare
 						-- #endif
 						["groups"] = {
 							i(13251),	-- Head of Baron Rivendare
