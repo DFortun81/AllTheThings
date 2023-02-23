@@ -1563,6 +1563,9 @@ POST_PROCESSING_FUNCTIONS = {};
 -- Construct a commonly formatted object.
 struct = function(field, id, t)
 	if not t then t = {};
+	elseif (t.g or t.groups) and t[1] then
+		print("ERROR: Don't use 'g' or 'groups' with an array of objects! Fix Group: "..field..":"..id);
+		return;
 	elseif not t.groups and t[1] then
 		t = { ["groups"] = bubbleUp(t) };
 	elseif t.groups then

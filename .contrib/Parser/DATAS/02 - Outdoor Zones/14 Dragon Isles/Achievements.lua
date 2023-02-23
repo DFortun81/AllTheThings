@@ -531,6 +531,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 		})),
 		ach(16446, {	-- That's Pretty Neat!
+			title(472),	-- Birdwatcher %s
 			crit(1, {	-- Apex Blazewing
 				["cr"] = 193291,
 				["maps"] = { 2080 },	-- Neltharus
@@ -632,9 +633,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["cr"] = 193209,
 				["coord"] = { 31.5, 63.9, OHNAHRAN_PLAINS },
 			}),
-			["g"] = {
-				title(472),	-- Birdwatcher %s
-			},
 		}),
 		ach(16519),	-- Dragon Isles Safari
 	}),
