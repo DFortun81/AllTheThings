@@ -229,6 +229,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					e(603, {	-- Escape from Arthas
 						["creatureID"] = 36954,	-- The Lich King
 						["groups"] = {
+							ach(5114, {	-- Heroic: The Halls of Reflection Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							ach(4526),	-- We're Not Retreating; We're Advancing in a Different Direction.
 							-- #if AFTER 7.3.5
 							i(49839),	-- Mourning Malice (7.3.5 - Used to be only Normal Mode)

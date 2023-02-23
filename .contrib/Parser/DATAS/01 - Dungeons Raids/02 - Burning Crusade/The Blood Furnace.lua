@@ -329,6 +329,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["creatureID"] = 17377,
 						["groups"] = {
 							ach(668),	-- Heroic: The Blood Furnace
+							ach(5068, {	-- Heroic: The Blood Furnace Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							-- #if AFTER 7.3.5
 							i(24394),	-- Warsong Howling Axe
 							-- #endif

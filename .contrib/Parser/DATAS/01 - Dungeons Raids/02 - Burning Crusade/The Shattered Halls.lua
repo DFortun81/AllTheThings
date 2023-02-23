@@ -585,6 +585,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
+							ach(5078, {	-- Heroic: The Shattered Halls Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							i(27533),	-- Demonblood Eviscerator
 							i(27538),	-- Lightsworn Hammer
 							i(29348),	-- The Bladefist

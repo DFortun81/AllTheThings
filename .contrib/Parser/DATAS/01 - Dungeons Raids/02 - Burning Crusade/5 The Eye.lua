@@ -226,6 +226,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
+					ach(5089, {	-- Tempest Keep Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					classicAch(885, {	-- Ashes of Al'ar
 						["provider"] = { "i", 32458 },	-- Ashes of Al'ar
 						["filterID"] = MOUNTS,

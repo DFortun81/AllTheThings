@@ -158,6 +158,7 @@ _.Instances = { tier(CATA_TIER, {
 					cr(40484, e(134, {	-- Erudax
 						ach(5298),	-- Don't Need to Break Eggs to Make an Omelet
 						ach(5062),	-- Heroic: Grim Batol
+						ach(5138),	-- Heroic: Grim Batol Guild Run
 						i(56461),	-- Staff of Siphoned Essences
 						i(56456),	-- Wild Hammer
 						i(56459),	-- Mace of Transformed Bone

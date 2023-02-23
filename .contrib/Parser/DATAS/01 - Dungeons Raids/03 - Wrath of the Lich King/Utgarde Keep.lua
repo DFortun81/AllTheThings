@@ -341,6 +341,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 								["criteriaID"] = 5608,		-- Ingvar the Plunderer slain
 							},
+							ach(5095, {	-- Heroic: Utgarde Keep Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							i(41793),	-- Design: Fierce Monarch Topaz
 							i(37190),	-- Enraged Feral Staff
 							-- #if AFTER 7.3.5

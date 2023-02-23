@@ -270,6 +270,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
+							ach(5077, {	-- Heroic: The Steamvault Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							i(29351),	-- Wrathtide Longbow
 							i(27801),	-- Beast Lord Mantle
 							i(27738),	-- Incanter's Pauldrons

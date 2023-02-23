@@ -304,6 +304,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["_encounter"] = { 529, HEROIC_DUNGEON },
 						}),
 					}),
+					ach(5067, {	-- Heroic: Hellfire Ramparts Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							17306,	-- Watchkeeper Gargolmar

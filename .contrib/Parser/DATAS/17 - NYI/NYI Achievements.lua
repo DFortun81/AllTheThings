@@ -5,6 +5,30 @@
 
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(ACHIEVEMENTS, {
+		tier(CATA_TIER, {
+			-- 4.x.x
+			n(P4xx, {
+				ach(5846),	-- A Bunch of Lunch
+				ach(5133),	-- Active Duty
+				ach(5365),	-- Bloom and Doom
+				ach(4783),	-- Cataclysm Dungeon Explorer
+				ach(5364),	-- Don't Want No Zombies on My Lawn
+				ach(4876),	-- Eastern Kingdoms Dungeon Explorer
+				ach(4867),	-- Explore Tol Barad NYI
+				ach(4953),	-- Guild Gladiator
+				ach(5852),	-- Gone Fishin'
+				ach(4877),	-- Kalimdor Dungeon Explorer
+				ach(4983),	-- Loremaster of Cataclysm
+				ach(4880),	-- Master of Battle for Gilneas
+				ach(5259),	-- Master of Twin Peaks
+				ach(4879),	-- Northrend Dungeon Explorer
+				ach(4878),	-- Outland Dungeon Explorer
+				ach(5033),	-- Tour of Duty
+				ach(5125),	-- United Nations
+				ach(4954),	-- Warrior Duelist/Gladiator (WIP)
+				ach(5085),	-- Zul'Aman Guild Run
+			}),
+		}),
 		tier(MOP_TIER, {
 			-- 5.x.x
 			n(P5xx, {

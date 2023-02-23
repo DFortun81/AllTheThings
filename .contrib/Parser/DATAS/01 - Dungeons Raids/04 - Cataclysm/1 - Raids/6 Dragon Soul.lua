@@ -21,6 +21,9 @@ _.Instances = { tier(CATA_TIER, {
 			{ 61.9, 27.2, CAVERNS_OF_TIME },	-- actual raid entrance
 		},
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(6123),	-- Dragon Soul Guild Run
+			}),
 			n(LEGENDARY_QUESTLINE, {
 				["title"] = "Fangs of the Father",
 				["icon"] = "Interface\\Icons\\ability_backstab",
@@ -868,6 +871,8 @@ _.Instances = { tier(CATA_TIER, {
 								},
 							},
 						},
+						ach(6125),	-- Heroic: Deathwing Guild Run
+						un(REMOVED_FROM_GAME, ach(6126)),	-- Realm First! Deathwing
 						i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
 						i(77067),	-- Blazing Drake (MOUNT!)
 						i(152981),	-- Severed Tentacle (PET!)

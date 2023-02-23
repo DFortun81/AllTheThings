@@ -271,6 +271,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["creatureID"] = 17977,
 						["groups"] = {
 							ach(680),	-- Heroic: The Botanica
+							ach(5080, {	-- Heroic: The Botanica Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							i(28370),	-- Bangle of Endless Blessings
 							-- #if BEFORE 7.3.5
 							i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved to High Botanist Freywinn)

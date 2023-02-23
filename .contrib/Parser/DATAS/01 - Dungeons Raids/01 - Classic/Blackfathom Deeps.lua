@@ -580,6 +580,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				-- #if BEFORE 6.0.1.18322
 				["groups"] = {
 					ach(632),	-- Blackfathom Deeps
+					ach(5041, {	-- Blackfathom Deeps Guild Run
+						["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
+					}),
 					i(6909),	-- Strike of the Hydra
 					i(6911),	-- Moss Cinch
 					i(6910),	-- Leech Pants
@@ -696,6 +699,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["timeline"] = { "added 6.0.1.18322" },
 				["groups"] = {
 					ach(632),	-- Blackfathom Deeps
+					ach(5041, {	-- Blackfathom Deeps Guild Run
+						["timeline"] = { "added 6.0.1.18322" },
+					}),
 					i(6909),	-- Strike of the Hydra
 					i(6911),	-- Moss Cinch
 					i(132553, {	-- Algae-Twined Waistcord

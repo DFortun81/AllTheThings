@@ -1088,6 +1088,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				["creatureID"] = 17968,
 				["groups"] = {
 					ach(695),	-- The Battle for Mount Hyjal
+					ach(5090, {	-- The Battle for Mount Hyjal Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(122112, {	-- Hyjal Wisp (PET!)
 						["timeline"] = { "added 6.1.0.19445" },
 					}),

@@ -57,6 +57,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							title(107),	-- of the Nightfall
 							i(43986)	-- Black Drake (MOUNT!)
 						}),
+						ach(5017, {	-- The Twilight Zone - Guild Edition
+							["timeline"] = { "added 4.0.3" },
+						}),
 						crit(5889, {	-- Sartharion (10 or 25 player) slain
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 						}),
@@ -120,6 +123,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						ach(2054, {	-- The Twilight Zone [25 player]
 							title(89),	-- Twilight Vanquisher
 							i(43954)	-- Twilight Drake (MOUNT!)
+						}),
+						ach(5017, {	-- The Twilight Zone - Guild Edition
+							["timeline"] = { "added 4.0.3" },
 						}),
 						crit(5889, {	-- Sartharion (10 or 25 player) slain
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes

@@ -88,6 +88,7 @@ _.Instances = { tier(CATA_TIER, {
 			cr(54969, e(292, {	-- Mannoroth
 				ach(6070),	-- That's Not Canon!
 				ach(6118),	-- Heroic: Well of Eternity
+				ach(6121),	-- Heroic: Well of Eternity Guild Run
 				i(72844),	-- Pit Lord's Destroyer
 				i(72846),	-- Thornwood Staff
 				i(72842),	-- Annihilan Helm

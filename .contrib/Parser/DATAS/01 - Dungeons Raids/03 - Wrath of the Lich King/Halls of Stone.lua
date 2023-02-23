@@ -248,6 +248,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								["criteriaID"] = 5615,			-- Sjonnir The Ironshaper slain
 							},
 							ach(2155),	-- Abuse the Ooze
+							ach(5102, {	-- Heroic: Halls of Stone Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							i(41792, {	-- Design: Deft Monarch Topaz
 								["timeline"] = { "removed 4.0.3" },
 							}),

@@ -205,6 +205,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					e(616, {	-- Devourer of Souls
 						["creatureID"] = 36502,	-- Devourer of Souls
 						["groups"] = {
+							ach(5112, {	-- Heroic: The Forge of Souls Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							ach(4523),	-- Three Faced
 							-- #if AFTER 7.3.5
 							i(49790),	-- Blood Boil Lancet (7.3.5 - Used to be only Normal Mode)

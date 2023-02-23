@@ -313,6 +313,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["creatureID"] = 18473,
 						["groups"] = {
 							ach(674),	-- Heroic: Sethekk Halls
+							ach(5074, {	-- Heroic: Sethekk Halls Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							i(27986),	-- Crow Wing Reaper
 							i(29355),	-- Terokk's Shadowstaff
 							i(27980),	-- Terokk's Nightmace

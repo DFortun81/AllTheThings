@@ -504,6 +504,7 @@ _.Instances = { tier(CATA_TIER, {
 					}),
 					cr(52148, e(185, {	-- Jin'do the Godbreaker
 						ach(5768),	-- Heroic: Zul'Gurub
+						ach(5770),	-- Heroic: Zul'Gurub Guild Run
 						ach(5759),	-- Spirit Twister
 						i(69628),	-- Jeklik's Smasher
 						i(69626),	-- Jin'do's Verdict

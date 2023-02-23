@@ -1511,6 +1511,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
+					ach(5058, {	-- Temple of Ahn'Qiraj Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(21221),	-- Eye of C'Thun
 					applyclassicphase(PHASE_SIX, {
 						["itemID"] = 22734,	-- Base of Atiesh

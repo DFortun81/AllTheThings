@@ -1526,6 +1526,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
+						ach(5052, {	-- Lower Blackrock Spire Guild Run
+							["timeline"] = { "added 4.0.3" },
+						}),
 						i(142370, {	-- Plans: Arcanite Champion
 							["timeline"] = { "added 7.1.5.23360" },
 						}),

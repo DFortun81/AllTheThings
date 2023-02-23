@@ -374,6 +374,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
+					ach(5045, {	-- Razorfen Downs Guild Run
+						["timeline"] = { "added 4.0.3", "removed 6.0.2" },
+					}),
 					i(10420),	-- Skull of the Coldbringer
 					i(10761),	-- Coldrage Dagger
 					i(10763),	-- Icemetal Barbute
@@ -405,6 +408,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["timeline"] = { "added 6.0.1.18322" },
 				["groups"] = {
 					ach(636),	-- Razorfen Downs
+					ach(5045, {	-- Razorfen Downs Guild Run
+						["timeline"] = { "added 6.0.1.18322" },
+					}),
 					i(10761),	-- Coldrage Dagger
 					i(10763),	-- Icemetal Barbute
 					i(10764),	-- Deathchill Armor

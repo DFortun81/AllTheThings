@@ -52,6 +52,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 						ach(622),	-- The Spellweaver's Downfall (10 player)
 						ach(1874),	-- You Don't Have an Eternity (10 player)
+						ach(5018, {	-- You Don't Have an Eternity - Guild Edition
+							["timeline"] = { "added 4.0.3" },
+						}),
 						i(43952),	-- Azure Drake (MOUNT!)
 						i(43953, {	-- Blue Drake (MOUNT!)
 							-- #if BEFORE 4.0.3
@@ -100,6 +103,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 						ach(623),	-- The Spellweaver's Downfall (25 player)
 						ach(1875),	-- You Don't Have an Eternity (25 player)
+						ach(5018, {	-- You Don't Have an Eternity - Guild Edition
+							["timeline"] = { "added 4.0.3" },
+						}),
 						i(43952),	-- Azure Drake (MOUNT!)
 						i(43953, {	-- Blue Drake (MOUNT!)
 							-- #if BEFORE 4.0.3

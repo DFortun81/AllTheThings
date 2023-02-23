@@ -10,6 +10,9 @@ _.Instances = { tier(CATA_TIER, {
 		["mapID"] = 282,
 		["coord"] = { 46.1, 47.9, 244 },
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(5425),	-- Baradin Hold Guild Run
+			}),
 			e(139, {	-- Argaloth
 				["creatureID"] = 47120,
 				["g"] = {

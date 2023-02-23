@@ -703,6 +703,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
+					ach(5056, {	-- Molten Core Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					classicAch(429, {	-- Sulfuras, Hand of Ragnaros
 						["provider"] = { "i", 17182 },	-- Sulfuras, Hand of Ragnaros
 						["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },

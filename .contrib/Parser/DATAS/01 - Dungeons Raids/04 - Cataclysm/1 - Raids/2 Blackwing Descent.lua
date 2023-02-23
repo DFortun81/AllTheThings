@@ -14,6 +14,7 @@ _.Instances = { tier(CATA_TIER, {
 		["coord"] = { 47.54, 68.93, EASTERN_KINGDOMS },	-- Blackwing Descent (This is the metamap it uses, don't change!)
 		["groups"] = {
 			ach(4842),	-- Blackwing Descent
+			ach(4985),	-- Blackwing Descent Guild Run
 			n(ZONE_DROPS, {
 				["groups"] = {
 					i(59466),	-- Ironstar's Impenetrable Cover
@@ -270,7 +271,9 @@ _.Instances = { tier(CATA_TIER, {
 							ach(5116, {	-- Heroic: Nefarian
 								title(187),	-- , Blackwing's Bane
 							}),
+							ach(5462),	-- Heroic: Nefarian Guild Run
 							ach(4849),	-- Keeping it in the Family
+							un(REMOVED_FROM_GAME, ach(5409)),	-- Realm First! Nefarian
 							i(65001),	-- Crown of the Forlorn Conqueror
 							i(65000),	-- Crown of the Forlorn Protector
 							i(65002),	-- Crown of the Forlorn Vanquisher

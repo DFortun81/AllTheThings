@@ -114,6 +114,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						-- #endif
 					},
 				}),
+				ach(5053, {	-- King of Dire Maul Guild Run
+					["timeline"] = { "added 4.0.3" },
+				}),
 			}),
 			n(FACTIONS, {
 				faction(809, {	-- Shen'dralar

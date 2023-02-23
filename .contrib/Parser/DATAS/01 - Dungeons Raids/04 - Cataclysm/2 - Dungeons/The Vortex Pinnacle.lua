@@ -172,6 +172,7 @@ _.Instances = { tier(CATA_TIER, {
 					})),
 					cr(43875, e(116, {	-- Asaad, Caliph of Zephyrs
 						ach(5064),	-- Heroic: The Vortex Pinnacle
+						ach(5137),	-- Heroic: The Vortex Pinnacle Guild Run
 						ach(5288),	-- No Static at All
 						i(56366),	-- Lightningflash
 						i(56374),	-- Lunar Halo

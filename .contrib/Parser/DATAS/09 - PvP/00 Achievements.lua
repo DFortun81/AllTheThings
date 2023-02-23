@@ -363,12 +363,10 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(701, {	-- Freedom of the Alliance
 		-- TODO: Add providers and make accessible to classic
-		["timeline"] = { "removed 7.0.3" },
 		["races"] = ALLIANCE_ONLY,
 	}),
 	ach(700, {	-- Freedom of the Horde
 		-- TODO: Add providers and make accessible to classic
-		["timeline"] = { "removed 7.0.3" },
 		["races"] = HORDE_ONLY,
 	}),
 	ach(10561, {	-- Honorable Medallion

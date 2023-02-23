@@ -250,6 +250,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				["creatureID"] = 25315,
 				["groups"] = {
 					ach(698),	-- Sunwell Plateau
+					ach(5092, {	-- Sunwell Plateau Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					classicAch(725, {	-- Thori'dal, the Stars' Fury
 						["provider"] = { "i", 34334 },	-- Thori'dal, the Stars' Fury
 						["classes"] = { WARRIOR, ROGUE, HUNTER },

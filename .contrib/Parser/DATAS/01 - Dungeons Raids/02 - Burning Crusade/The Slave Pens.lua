@@ -321,6 +321,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["creatureID"] = 17942,
 						["groups"] = {
 							ach(669),	-- Heroic: The Slave Pens
+							ach(5069, {	-- Heroic: The Slave Pens Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							i(27741),	-- Bleeding Hollow Warhammer
 							i(27673),	-- Phosphorescent Blade
 							i(27714),	-- Swamplight Lantern (NOTE: This drops from Rokmar in Timewalking)

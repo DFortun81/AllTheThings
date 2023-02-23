@@ -484,6 +484,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
+							ach(5049, {	-- Maraudon Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							i(17780),	-- Blade of Eternal Darkness
 							i(17710),	-- Charstone Dirk
 							i(17766),	-- Princess Theradras' Scepter

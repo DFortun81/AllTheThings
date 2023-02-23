@@ -305,6 +305,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["creatureID"] = 18096,
 						["groups"] = {
 							ach(673),	-- Heroic: The Escape From Durnholde
+							ach(5073, {	-- Heroic: The Escape From Durnholde Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							i(28222),	-- Reaver of the Infinites
 							-- #if AFTER 7.3.5
 							i(27431),	-- Time-Shifted Dagger

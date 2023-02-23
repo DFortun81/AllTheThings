@@ -338,6 +338,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
+							ach(5081, {	-- Heroic: The Arcatraz Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							objective(1, {	-- Millhouse Manastorm Rescued
 								["provider"] = { "n", 20977 },	-- Millhouse Manastorm
 								["questID"] = 10886,	-- Trial of the Naaru: Tenacity

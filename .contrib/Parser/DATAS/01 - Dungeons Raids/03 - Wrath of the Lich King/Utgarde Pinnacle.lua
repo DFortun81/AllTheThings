@@ -293,6 +293,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(644, {	-- King Ymiron
 						["creatureID"] = 26861,	-- King Ymiron
 						["groups"] = {
+							ach(5105, {	-- Heroic: Utgarde Pinnacle Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							ach(2157),	-- King's Bane
 							{	-- Champion of the Frozen Wastes
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes

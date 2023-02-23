@@ -329,6 +329,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 								["criteriaID"] = 5609,		-- Keristrasza slain
 							},
+							ach(5096, {	-- Heroic: The Nexus Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							ach(2036),	-- Intense Cold
 							i(41794, {	-- Design: Deadly Monarch Topaz
 								["timeline"] = { "removed 4.0.1" },

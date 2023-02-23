@@ -195,6 +195,7 @@ _.Instances = { tier(CATA_TIER, {
 					})),
 					cr(39378, e(130, {	-- Rajh, Construct of Sun
 						ach(5065),	-- Heroic: Halls of Origination
+						ach(5139),	-- Heroic: Halls of Origination Guild Run
 						ach(5295),	-- Sun of a...
 						i(56433),	-- Blade of the Burning Sun
 						i(56430),	-- Sun Strike

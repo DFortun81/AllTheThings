@@ -242,6 +242,7 @@ _.Instances = { tier(CATA_TIER, {
 					})),
 					cr(23863, e(191, {	-- Daakara
 						ach(5769),	-- Heroic: Zul'Aman
+						ach(5771),	-- Heroic: Zul'Aman Guild Run
 						ach(5760),	-- Ring Out!
 						i(69581),	-- Amani Scepter of Rites
 						i(69575),	-- Mace of the Sacrificed

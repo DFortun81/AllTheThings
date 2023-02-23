@@ -236,6 +236,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["creatureID"] = 18373,
 						["groups"] = {
 							ach(672),	-- Heroic: Auchenai Crypts
+							ach(5072, {	-- Heroic: Auchenai Crypts Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							-- #if AFTER 7.3.5
 							i(27412),	-- Ironstaff of Regeneration
 							-- #endif

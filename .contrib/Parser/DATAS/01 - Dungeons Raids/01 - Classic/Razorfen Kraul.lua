@@ -440,6 +440,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
+					ach(5043, {	-- Razorfen Kraul Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(5793),	-- Razorflank's Heart
 					i(5792),	-- Razorflank's Medallion
 					i(17008, {	-- Small Scroll (Before Wrathgate)

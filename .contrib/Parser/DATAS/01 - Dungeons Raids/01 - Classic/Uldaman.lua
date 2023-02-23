@@ -766,6 +766,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
+					ach(5047, {	-- Uldaman Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(7672),	-- Shattered Necklace Power Source
 					i(9418),	-- Stoneslayer
 					i(9413),	-- The Rockpounder

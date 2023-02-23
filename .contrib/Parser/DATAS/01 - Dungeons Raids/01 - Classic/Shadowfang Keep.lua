@@ -2022,6 +2022,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {
 						ach(631),	-- Shadowfang Keep
+						ach(5040, {	-- Shadowfang Keep Guild Run
+							["timeline"] = { "added 4.0.3" },
+						}),
 						i(60877),	-- Godfrey's Crystal Scope
 						i(60882),	-- Tenebrous Orb
 						i(6641),	-- Haunting Blade
@@ -2096,6 +2099,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								crit(2),	-- Bloodthirsty Ghouls killed by Pistol Barrage
 							}),
 							ach(5093),	-- Heroic: Shadowfang Keep
+							ach(5142),	-- Heroic: Shadowfang Keep Guild Run
 							i(63461),	-- Staff of Isolation
 							i(63456),	-- Meteor Shard
 							i(63459),	-- Worgen Hunter's Helm

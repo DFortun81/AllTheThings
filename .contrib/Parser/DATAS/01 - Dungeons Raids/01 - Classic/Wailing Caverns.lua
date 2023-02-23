@@ -380,6 +380,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
+					ach(5039, {	-- Wailing Caverns Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(10441),	-- Glowing Shard
 					i(6461),	-- Slime-Encrusted Pads
 					i(6627),	-- Mutant Breastplate

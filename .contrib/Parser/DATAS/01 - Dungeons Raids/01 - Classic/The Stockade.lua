@@ -304,6 +304,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["timeline"] = { "added 4.0.1.12984" },
 				["groups"] = {
 					ach(633),	-- Stormwind Stockade
+					ach(5042, {	-- Stormwind Stockade Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(1959),	-- Cold Iron Pick
 					i(151074, {	-- Turnkey's Pauldrons
 						["timeline"] = { "added 7.3.0.24484" },

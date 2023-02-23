@@ -1655,6 +1655,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
+						ach(5021, {	-- Call of the Crusade - Guild Edition
+							["timeline"] = { "added 4.0.3" },
+						}),
 						ach(3800),	-- The Traitor King (10 player)
 						i(142085, {	-- Nerubian Relic (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
@@ -2211,6 +2214,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
+						ach(5021, {	-- Call of the Crusade - Guild Edition
+							["timeline"] = { "added 4.0.3" },
+						}),
 						ach(3816),	-- The Traitor King (25 player)
 						i(142085, {	-- Nerubian Relic (PET!)
 							["timeline"] = { "added 7.1.0.22731" },

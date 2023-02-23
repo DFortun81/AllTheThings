@@ -2454,6 +2454,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
+						ach(5051, {	-- Blackrock Depths Guild Run
+							["timeline"] = { "added 4.0.3" },
+						}),
 						i(11931),	-- Dreadforge Retaliatior
 						-- #if BEFORE 7.3.2
 						i(11932),	-- Guiding Stave of Wisdom

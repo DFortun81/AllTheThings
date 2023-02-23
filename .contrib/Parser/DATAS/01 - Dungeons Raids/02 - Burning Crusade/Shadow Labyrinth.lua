@@ -335,6 +335,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
+							ach(5075, {	-- Heroic: Shadow Labyrinth Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							i(27903),	-- Sonic Spear
 							i(27905),	-- Greatsword of Horrid Dreams
 							i(29353),	-- Shockwave Truncheon

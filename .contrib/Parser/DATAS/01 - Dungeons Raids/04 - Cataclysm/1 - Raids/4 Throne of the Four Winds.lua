@@ -11,6 +11,7 @@ _.Instances = { tier(CATA_TIER, {
 		["coord"] = { 38.37, 80.63, ULDUM },	-- Throne of the Four Winds
 		["groups"] = {
 			ach(4851),	-- Throne of the Four Winds
+			ach(4987),	-- Throne of the Four Winds Guild Run
 			d(NORMAL_DUNGEON, {
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
@@ -96,6 +97,8 @@ _.Instances = { tier(CATA_TIER, {
 						["groups"] = {
 							ach(5305),	-- Four Play
 							ach(5123),	-- Heroic: Al'Akir
+							ach(5463),	-- Heroic: Al'Akir Guild Run
+							un(REMOVED_FROM_GAME, ach(5410)),	-- Realm First! Al'Akir
 							i(65001),	-- Crown of the Forlorn Conqueror
 							i(65000),	-- Crown of the Forlorn Protector
 							i(65002),	-- Crown of the Forlorn Vanquisher

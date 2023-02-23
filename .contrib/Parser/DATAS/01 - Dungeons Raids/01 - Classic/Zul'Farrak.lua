@@ -386,6 +386,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["creatureID"] = 7267,
 				["groups"] = {
 					ach(639),	-- Zul'Farrak
+					ach(5048, {	-- Zul'Farrak Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(11086),	-- Jan'thraze the Protector
 					i(9478),	-- Ripsaw
 					i(9477),	-- The Chief's Enforcer

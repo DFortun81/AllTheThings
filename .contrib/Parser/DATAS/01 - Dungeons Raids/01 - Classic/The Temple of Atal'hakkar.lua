@@ -761,6 +761,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
+					ach(5050, {	-- Sunken Temple Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(10454, {	-- Essence of Eranikus
 						["timeline"] = { "removed 4.0.3" },
 					}),

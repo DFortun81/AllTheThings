@@ -384,6 +384,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["creatureID"] = 18344,
 						["groups"] = {
 							ach(671),	-- Heroic: Mana-Tombs
+							ach(5071, {	-- Heroic: Mana-Tombs Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							i(27829),	-- Axe of the Nexus-Kings
 							i(27842),	-- Grand Scepter of the Nexus-Kings
 							i(27840),	-- Scepter of Sha'tar

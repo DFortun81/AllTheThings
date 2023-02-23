@@ -169,6 +169,7 @@ _.Instances = { tier(CATA_TIER, {
 					})),
 					cr(42333, e(113, {	-- High Priestess Azil
 						ach(5063),	-- Heroic: The Stonecore
+						ach(5136),	-- Heroic: The Stonecore Guild Run
 						ach(5287),	-- Rotten to the Core
 						i(56343),	-- Darkling Staff
 						i(56346),	-- Elementium Fang

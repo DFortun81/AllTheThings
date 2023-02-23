@@ -977,6 +977,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
+					ach(5059, {	-- Ruins of Ahn'Qiraj Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(21220),	-- Head of Ossirian the Unscarred
 					i(21452),	-- Staff of the Ruins
 					i(21715),	-- Sand Polished Hammer

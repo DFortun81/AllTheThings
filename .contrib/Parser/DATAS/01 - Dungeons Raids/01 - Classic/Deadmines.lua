@@ -682,6 +682,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {
 						ach(628),	-- Deadmines
+						ach(5037),	-- Deadmines Guild Run
 						i(5192),	-- Thief's Blade
 						i(5197),	-- Cookie's Tenderizer
 						i(5198),	-- Cookie's Stirring Rod
@@ -766,6 +767,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["creatureID"] = 49541,	-- Vanessa VanCleef
 						["groups"] = {
 							ach(5083),	-- Heroic: Deadmines
+							ach(5141),	-- Heroic: Deadmines Guild Run
 							ach(5371),	-- Vigorous VanCleef Vindicator
 							i(63485),	-- Cowl of Rebellion
 							i(63478),	-- Stonemason's Helm

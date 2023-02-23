@@ -309,6 +309,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(584, {	-- Herald Volazj
 						["creatureID"] = 29311,	-- Herald Volazj
 						["groups"] = {
+							ach(5098, {	-- Heroic: Ahn'kahet: The Old Kingdom Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							ach(1862),	-- Volazj's Quick Demise
 							{	-- Champion of the Frozen Wastes
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes

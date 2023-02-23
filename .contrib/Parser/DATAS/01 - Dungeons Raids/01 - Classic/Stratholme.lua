@@ -34,6 +34,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				ach(5055, {	-- Stratholme Guild Run
+					["timeline"] = { "added 4.0.3" },
+				}),
 			}),
 			n(QUESTS, {
 				q(27422, {	-- A City Under Siege

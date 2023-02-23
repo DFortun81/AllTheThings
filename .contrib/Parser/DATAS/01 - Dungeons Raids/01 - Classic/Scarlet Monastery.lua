@@ -45,6 +45,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["_npcs"] = { 4543 },	-- Bloodmage Thalnos
 						}),
 					}),
+					ach(5046, {	-- Scarlet Monastery Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 				}),
 				-- #endif
 				-- #endif
@@ -874,6 +877,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 5.0.4" },
 					["groups"] = {
 						ach(637),	-- Scarlet Monastery
+						ach(5046, {	-- Scarlet Monastery Guild Run
+							["timeline"] = { "added 5.0.4" },
+						}),
 						i(88301),	-- Greatstaff of Righteousness
 						i(88297),	-- Lightbreaker Greatsword
 						i(88299),	-- Whitemane's Embroidered Chapeau

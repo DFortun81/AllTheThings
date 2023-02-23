@@ -339,6 +339,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
+					ach(5057, {	-- Blackwing Lair Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(19003, {	-- Head of Nefarian (A)
 						["races"] = ALLIANCE_ONLY,
 					}),

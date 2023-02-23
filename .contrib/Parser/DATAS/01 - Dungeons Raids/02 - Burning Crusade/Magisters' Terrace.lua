@@ -317,6 +317,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 						["creatureID"] = 24664,
 						["groups"] = {
 							ach(682),	-- Heroic: Magister's Terrace
+							ach(5082, {	-- Heroic: Magister's Terrace Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							classicAch(884, {	-- Swift White Hawkstrider
 								["provider"] = { "i", 35513 },	-- Swift White Hawkstrider
 								["filterID"] = MOUNTS,

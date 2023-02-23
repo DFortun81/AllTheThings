@@ -12,6 +12,7 @@ _.Instances = { tier(CATA_TIER, {
 		["lvl"] = 85,
 		["groups"] = {
 			ach(4850),	-- The Bastion of Twilight
+			ach(4986),	-- The Bastion of Twilight Guild Run
 			n(ZONE_DROPS, {
 				["groups"] = {
 					i(60211),	-- Bracers of the Dark Pool
@@ -202,6 +203,7 @@ _.Instances = { tier(CATA_TIER, {
 						["sym"] = {{"select","itemID",175159}},	-- Sinister Shadows (Bag of Tricks addition)
 						["groups"] = {
 							ach(5120),	-- Heroic: Cho'gall
+							ach(5461),	-- Heroic: Cho'gall Guild Run
 							ach(5312),	-- The Abyss Will Gaze Back Into You
 							i(65088),	-- Shoulders of the Forlorn Conqueror
 							i(65087),	-- Shoulders of the Forlorn Protector
@@ -229,6 +231,8 @@ _.Instances = { tier(CATA_TIER, {
 							ach(5121, {	-- Heroic: Sinestra
 								title(186),	-- Dragonslayer
 							}),
+							un(REMOVED_FROM_GAME, ach(5464)),	-- Heroic: Sinestra Guild Run
+							ach(5411),	-- Realm First! Sinestra
 							i(60237),	-- Crown of the Twilight Queen
 							i(60227),	-- Caelestrasz's Will
 							i(60232),	-- Shroud of Endless Grief

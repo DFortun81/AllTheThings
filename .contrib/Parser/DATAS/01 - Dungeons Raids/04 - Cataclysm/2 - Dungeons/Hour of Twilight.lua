@@ -79,6 +79,7 @@ _.Instances = { tier(CATA_TIER, {
 				cr(54938, e(341, {	-- Archbishop Benedictus
 					ach(6132),	-- Eclipse
 					ach(6119),	-- Heroic: Hour of Twilight
+					ach(6122),	-- Heroic: Hour of Twilight Guild Run
 					i(72863),	-- Stalk of Corruption
 					i(72867),	-- Clattering Claw
 					i(72862),	-- Fanged Tentacle

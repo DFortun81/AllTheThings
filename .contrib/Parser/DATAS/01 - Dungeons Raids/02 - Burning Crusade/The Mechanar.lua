@@ -233,6 +233,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["creatureID"] = 19220,
 						["groups"] = {
 							ach(679),	-- Heroic: The Mechanar
+							ach(5079, {	-- Heroic: The Mechanar Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							i(28288),	-- Abacus of Violent Odds
 							i(28269),	-- Baba's Cloak of Arcanistry
 							-- #if BEFORE 7.3.5

@@ -647,6 +647,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									["description"] = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
 									-- #endif
 								}),
+								ach(5016, {	-- Just Can't Get Enough - Guild Edition
+									["timeline"] = { "added 4.0.3" },
+								}),
 								ach(1658, {	-- Champion of the Frozen Wastes
 									["criteriaID"] = 5888,	-- Kel'Thuzad (10 or 25 player) slain
 								}),
@@ -1484,6 +1487,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									-- #if NOT ANYCLASSIC
 									["description"] = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
 									-- #endif
+								}),
+								ach(5016, {	-- Just Can't Get Enough - Guild Edition
+									["timeline"] = { "added 4.0.3" },
 								}),
 								ach(1658, {	-- Champion of the Frozen Wastes
 									["criteriaID"] = 5888,	-- Kel'Thuzad (10 or 25 player) slain

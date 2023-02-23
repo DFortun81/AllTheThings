@@ -337,6 +337,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 								["criteriaID"] = 5616,			-- Loken slain
 							},
+							ach(5103, {	-- Heroic: Halls of Lightning Guild Run
+								["timeline"] = { "added 4.0.3" },
+							}),
 							ach(1867),	-- Timely Death
 							i(41799),	-- Design: Eternal Earthsiege Diamond
 							i(37848),	-- Lightning Giant Staff

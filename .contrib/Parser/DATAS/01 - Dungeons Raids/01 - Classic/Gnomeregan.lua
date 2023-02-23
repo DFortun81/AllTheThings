@@ -797,6 +797,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
+					ach(5044, {	-- Gnomeregan Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(9153, {	-- Rig Blueprints
 						["description"] = "In a small chest behind the 3rd pillar from the right after defeating Thermaplugg.",
 					}),

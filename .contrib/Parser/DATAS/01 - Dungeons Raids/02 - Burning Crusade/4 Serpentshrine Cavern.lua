@@ -218,6 +218,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
+					ach(5088, {	-- Serpentshrine Cavern Guild Run
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(97554, {	-- Dripping Strider Egg (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
 					}),

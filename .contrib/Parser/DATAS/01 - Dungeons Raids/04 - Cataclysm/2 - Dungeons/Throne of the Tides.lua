@@ -163,6 +163,7 @@ _.Instances = { tier(CATA_TIER, {
 						{	-- Heroic: Throne of the Tides
 							["achievementID"] = 5061,	-- Heroic: Throne of the Tides
 						},
+						ach(5135),	-- Heroic: Throne of the Tides Guild Run
 						{	-- Prince of Tides
 							["achievementID"] = 5286,	-- Prince of Tides
 						},
