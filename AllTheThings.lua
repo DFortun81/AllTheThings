@@ -2665,6 +2665,8 @@ local PrintQuestInfo = function(questID, new, info)
 				else
 					chatMsg = app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID);
 				end
+			else
+				return;
 			end
 		end
 		print("Quest",questChange,chatMsg,(info or ""));
