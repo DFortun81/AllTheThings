@@ -73,7 +73,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 						["cost"] = { { "c", ANIMA, 750 } },
 					}),
 					i(182204, {	-- Illusion: Sinwrath
-						["illusionID"] = 6258,	-- this doesn't want to be collectible without the ID added here, even though it's in the Illusions.lua file in the item DB
 						["cost"] = { { "c", ANIMA, 2500 } },
 					}),
 					i(182433, {	-- Barbedged Dredblade

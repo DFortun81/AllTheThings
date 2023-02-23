@@ -398,7 +398,7 @@ _.IllusionDB = {
 		["questID"] = 62964,
 	},
 	{	-- Illusion: Sinwrath
-		["itemID"] = 172177,	-- Illusion: Sinwrath
+		["itemID"] = 182204,	-- Illusion: Sinwrath
 		["illusionID"] = 6258,
 		["text"] = "Sinwrath",
 		["questID"] = 62398,

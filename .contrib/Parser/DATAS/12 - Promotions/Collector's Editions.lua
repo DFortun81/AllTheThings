@@ -253,9 +253,8 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 			i(153541),	-- Tottle
 		},
 	}),
-	tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+	tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE, ["timeline"] = { "added 9.0.1" }, }, {
 		["description"] = "These rewards are available to anyone who purchases Shadowlands Heroic Edition.",
-		["timeline"] = { "added 9.0.1" },
 		["groups"] = {
 			ach(14283, { -- Heroic Edition: Ensorcelled Everwyrm
 				-- ["provider"] = { "s", }	-- TODO maybe have a spell provider?
@@ -283,9 +282,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 				["groups"] = {
 					p(2779),	-- Anima Wyrmling
 					i(172179),	-- Eternal Traveler's Hearthstone (TOY!)
-					i(172177, {	-- Illusion: Wraithchill
-						["illusionID"] = 6162,	-- for some reason without this it wants to be ID #6258, which is Sinwrath's ID
-					}),
+					i(172177),	-- Illusion: Wraithchill
 				},
 			}),
 		},
