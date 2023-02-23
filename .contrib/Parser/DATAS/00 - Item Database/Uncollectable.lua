@@ -8,6 +8,8 @@ end
 
 -- DF
 i(200842);	-- Power-Depleted Staff
+i(200785);	-- Argali Wool Rug
+i(200786);	-- Marbled Broadhoof Brisket
 
 -- SL
 i(179293);	-- Glimmering Facial Cream

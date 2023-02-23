@@ -479,6 +479,7 @@ namespace ATT
                 if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object objKeyValue))
                     CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
                 var previousDifficultyRoot = DifficultyRoot;
+                var previousDifficulty = NestedDifficultyID;
 
                 Process(groups, modID, minLevel);
 
@@ -488,6 +489,7 @@ namespace ATT
 
                 CurrentParentGroup = previousParent;
                 DifficultyRoot = previousDifficultyRoot;
+                NestedDifficultyID = previousDifficulty;
             }
 
             if (!MergeItemData)
