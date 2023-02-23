@@ -257,6 +257,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
 					["isRepeatable"] = true,
 				}),
+				q(72791, {	-- Contribute Supplies: Khaz'gorite Wire
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
+					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
+					["isRepeatable"] = true,
+				}),
 			}),
 			prof(TUSKARR_FISHING_GEAR, sharedData({
 				["requireSkill"] = FISHING,	-- Minimum 25, but it shows in the tooltip
@@ -580,6 +586,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(74370),	-- First weekly completion of 'Contribute Supplies: Battered Imbu-made Net'
 		q(74369),	-- First weekly completion of 'Contribute Supplies: Salinated Serevite'
 		q(74368),	-- First weekly completion of 'Contribute Supplies: Khaz'gorite-infused Resin'
+		q(74371),	-- First weekly completion of 'Contribute Supplies: Khaz'gorite Wire'
 		q(74372),	-- First weekly completion of 'Contribute Supplies: Strong Seavine'
 		q(74367),	-- First weekly completion of 'Contribute Supplies: Irontree Branch'
 		--
