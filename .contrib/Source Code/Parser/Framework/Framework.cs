@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using static ATT.Export;
 
 namespace ATT
 {
@@ -351,6 +352,18 @@ namespace ATT
                 foreach (string key in configDebugDBs)
                 {
                     DebugDBs[key] = new SortedDictionary<decimal, List<Dictionary<string, object>>>();
+                }
+            }
+            ImportConfiguredObjectTypes(Config["ObjectTypes"]);
+        }
+
+        private static void ImportConfiguredObjectTypes(CustomConfigurationNode objectTypesConfig)
+        {
+            if (objectTypesConfig?.CanEnumerate ?? false)
+            {
+                foreach (CustomConfigurationNode objectConfig in objectTypesConfig)
+                {
+                    ObjectData.Insert(objectConfig["objectType"], objectConfig["shortcut"], "_." + objectConfig["function"], objectConfig["convertedKey"], objectConfig["ignoredFields"]);
                 }
             }
         }
@@ -860,6 +873,8 @@ namespace ATT
                 }
             }
 
+            ObjectData.TryFindAndConvertDataByObjectType(data);
+
             // Certain automatic header types may be converted from raw Lua data
             //if (data.TryGetValue("headerID", out decimal headerID) && data.TryGetValue("type", out string type))
             //{
@@ -1226,6 +1241,8 @@ namespace ATT
 
             CheckHeirloom(data);
 
+            ObjectData.TryDataConversion(data);
+
             //VerifyListContentOrdering(data);
 
             // when consolidating data, check for duplicate objects (instead of when merging)
@@ -1248,7 +1265,7 @@ namespace ATT
             if (data.TryGetValue("name", out string name))
             {
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object objKeyValue))
+                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
                 {
                     long id = Convert.ToInt64(objKeyValue);
                     // Store the name of this object (or whatever it is) in our table.

@@ -25,6 +25,11 @@ namespace ATT
             private static readonly IDictionary<string, ObjectData> OBJECT_CONSTRUCTORS = new Dictionary<string, ObjectData>();
 
             /// <summary>
+            /// All of the conersion fields and corresponding keys => ObjectData types
+            /// </summary>
+            private static readonly IDictionary<string, Dictionary<object, ObjectData>> OBJECT_CONVERSIONS = new Dictionary<string, Dictionary<object, ObjectData>>();
+
+            /// <summary>
             /// Create an object data container.
             /// </summary>
             /// <param name="objectType">The object type.</param>
@@ -45,7 +50,8 @@ namespace ATT
             /// <param name="function">The function string.</param>
             /// <param name="blacklist">The blacklisted fields.</param>
             /// <returns>The object data container.</returns>
-            public static ObjectData Create<OBJECTDATA>(string objectType, string shortcut, string function, params string[] blacklist) where OBJECTDATA : ObjectData, new()
+            public static ObjectData Create<OBJECTDATA>(string objectType, string shortcut, string function, params string[] blacklist)
+                where OBJECTDATA : ObjectData, new()
             {
                 var objectData = new OBJECTDATA();
                 ALL_OBJECTS.Add(objectData);
@@ -55,6 +61,28 @@ namespace ATT
                 objectData.BlacklistedFields = list;
                 objectData.ConstructorShortcut = shortcut;
                 objectData.Function = function;
+                return objectData;
+            }
+
+            /// <summary>
+            /// Create an object data container and insert at the front of the ObjectData prioritized list
+            /// </summary>
+            /// <param name="objectType">The object type.</param>
+            /// <param name="shortcut">The shortcut.</param>
+            /// <param name="function">The function string.</param>
+            /// <param name="blacklist">The blacklisted fields.</param>
+            /// <returns>The object data container.</returns>
+            public static ObjectData Insert(string objectType, string shortcut, string function, string convertedKey, params string[] blacklist)
+            {
+                var objectData = new ObjectData();
+                ALL_OBJECTS.Insert(0, objectData);
+                var list = new List<string>();
+                if (blacklist != null && blacklist.Length > 0) list.AddRange(blacklist);
+                OBJECT_CONSTRUCTORS[objectData.ObjectType = objectType] = objectData;
+                objectData.BlacklistedFields = list;
+                objectData.ConstructorShortcut = shortcut;
+                objectData.Function = function;
+                objectData.ConvertedKey = convertedKey;
                 return objectData;
             }
 
@@ -107,6 +135,63 @@ namespace ATT
                 objKeyValue = data[objectData.ObjectType];
                 return true;
             }
+
+            /// <summary>
+            /// Checks if the provided data has a 'type' field which matches a 'ConvertedKey' value of an ObjectData.
+            /// Then adjusts the data to match the expected ObjectData and remove the 'type' field
+            /// </summary>
+            public static bool TryFindAndConvertDataByObjectType(IDictionary<string, object> data)
+            {
+                if (data.TryGetValue("type", out string type))
+                {
+                    foreach (ObjectData objData in ALL_OBJECTS)
+                    {
+                        if (objData.ConvertedKey != null && objData.ObjectType == type)
+                        {
+                            if (data.TryGetValue(objData.ConvertedKey, out object convertKey))
+                            {
+                                data.Remove("type");
+                                data.Remove(objData.ConvertedKey);
+                                data[objData.ObjectType] = convertKey;
+                                AddObjectConversion(objData.ConvertedKey, convertKey, objData);
+                                return true;
+                            }
+                        }
+                    }
+                }
+
+                return false;
+            }
+
+            /// <summary>
+            /// Checks if the provided data has matches an existing ObjectType conversions, and re-applies the same conversion if so
+            /// </summary>
+            public static bool TryDataConversion(IDictionary<string, object> data)
+            {
+                foreach (KeyValuePair<string, Dictionary<object, ObjectData>> conversion in OBJECT_CONVERSIONS)
+                {
+                    if (data.TryGetValue(conversion.Key, out object fieldVal))
+                    {
+                        if (conversion.Value.TryGetValue(fieldVal, out ObjectData objData))
+                        {
+                            data.Remove(objData.ConvertedKey);
+                            data[objData.ObjectType] = fieldVal;
+                            return true;
+                        }
+                    }
+                }
+
+                return false;
+            }
+
+            private static void AddObjectConversion(string key, object convertKey, ObjectData objData)
+            {
+                if (!OBJECT_CONVERSIONS.TryGetValue(key, out Dictionary<object, ObjectData> typeConversions))
+                {
+                    OBJECT_CONVERSIONS[key] = typeConversions = new Dictionary<object, ObjectData>();
+                }
+                typeConversions[convertKey] = objData;
+            }
             #endregion
             #region Properties
             /// <summary>
@@ -128,6 +213,11 @@ namespace ATT
             /// The object type.
             /// </summary>
             public string ObjectType { get; private set; }
+
+            /// <summary>
+            /// The source data field which should be converted into the ObjectType of this ObjectData.
+            /// </summary>
+            public string ConvertedKey { get; private set; }
 
             /// <summary>
             /// Whether or not to allow the parser to explicitly write the object type.
@@ -190,7 +280,7 @@ namespace ATT
                     // If invalid, then don't write the field.
                     if (Convert.ToInt64(objRef) < 0) fields.Remove("f");
                 }
-                
+
                 // Keep the name field for quests, so long as they don't have an item.
                 // They are generally manually assigned in the database.
                 if (!data.ContainsKey("questID") || data.ContainsKey("itemID"))

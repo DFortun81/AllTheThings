@@ -86,6 +86,17 @@ namespace ATT
         private object _val;
 
         /// <summary>
+        /// Represents whether this CustomConfigurationNode supports enumeration
+        /// </summary>
+        public bool CanEnumerate
+        {
+            get
+            {
+                return _dict != null || _list != null;
+            }
+        }
+
+        /// <summary>
         /// Accesses a particular key of the current Configuration Node
         /// </summary>
         internal CustomConfigurationNode this[string key]
@@ -168,6 +179,22 @@ namespace ATT
             catch { }
 
             throw new InvalidOperationException($"CustomConfigurationNode cannot convert to int[] type: {(string)value}");
+        }
+
+        /// <summary>
+        /// Allows enumeration across config values contained by a CustomConfigurationNode
+        /// </summary>
+        public IEnumerator<CustomConfigurationNode> GetEnumerator()
+        {
+            if (_dict != null)
+            {
+                return _dict.Values.GetEnumerator();
+            }
+            else if (_list != null)
+            {
+                return _list.GetEnumerator();
+            }
+            throw new InvalidOperationException("Cannot enumerate a single value. Verify CanEnumerate is true for the " + nameof(CustomConfigurationNode));
         }
 
         /// <summary>
