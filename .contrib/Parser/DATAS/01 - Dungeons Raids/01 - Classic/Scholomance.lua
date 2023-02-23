@@ -1317,7 +1317,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						ach(645),	-- Scholomance
 						ach(5054, {	-- Scholomance Guild Run
-							["timeline"] = { "added 4.0.3" },
+							["timeline"] = { "added 5.0.4" },
 						}),
 						i(88362),	-- Shoulderguards of Painful Lessons
 						i(88357),	-- Vigorsteel Spaulders
@@ -1547,7 +1547,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							ach(6821),	-- School's Out Forever
 							ach(645),	-- Scholomance
 							ach(5054, {	-- Scholomance Guild Run
-								["timeline"] = { "added 4.0.3" },
+								["timeline"] = { "added 5.0.4" },
 							}),
 							i(144211, {	-- Headmaster's Will
 								["timeline"] = { "added 7.1.5.23360" },

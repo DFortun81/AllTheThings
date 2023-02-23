@@ -530,7 +530,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["groups"] = {
 					ach(629),	-- Ragefire Chasm
 					ach(5038, { -- Ragefire Chasm Guild Run
-						["timeline"] = { "added 4.0.3" },
+						["timeline"] = { "added 5.0.4" },
 					}),
 					i(82888, {	-- Heartboiler Staff
 						["timeline"] = { "added 5.0.4" },
