@@ -62,7 +62,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						ach(7434),	-- Scarlet Halls Guild Run
 						i(82469, {	-- Ancient Tome of Teleport: Dalaran
 							["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
-							["spellID"] = 120145,	-- Ancient Teleport: Dalaran
 							["classes"] = { MAGE },
 							["f"] = RECIPES,
 						}),
@@ -189,7 +188,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							ach(6769),	-- Heroic: Scarlet Halls Guild Run
 							i(82469, {	-- Ancient Tome of Teleport: Dalaran
 								["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
-								["spellID"] = 120145,	-- Ancient Teleport: Dalaran
 								["classes"] = { MAGE },
 								["f"] = RECIPES,
 							}),
