@@ -2635,7 +2635,7 @@ local PrintQuestInfo = function(questID, new, info)
 			DelayedCallback(app.CheckInaccurateQuestInfo, 1, questRef, questChange);
 		end
 		local chatMsg;
-		if not questRef or GetRelativeField(questRef, "text", L["UNSORTED_1"]) then
+		if not questRef or GetRelativeValue(questRef, "_missing") then
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
 			app:PlayReportSound();
 			-- Linkify the output
@@ -2646,7 +2646,7 @@ local PrintQuestInfo = function(questID, new, info)
 			);
 		else
 			-- give a chat output if the user has just interacted with a quest flagged as NYI
-			if questRef.u == 1 or GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
+			if GetRelativeField(questRef, "u", 1) then
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
 				app:PlayReportSound();
 				-- Linkify the output
@@ -2655,21 +2655,16 @@ local PrintQuestInfo = function(questID, new, info)
 				app:SetupReportDialog(popupID, "NYI Quest: " .. questID,
 					app.BuildDiscordQuestInfoTable(questID, "nyi-quest", questChange)
 				);
-			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
-			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
-			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
-			elseif GetRelativeField(questRef, "text", L["HIDDEN_QUEST_TRIGGERS"]) then
-				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
-					return true;
+			-- if user is allowing reporting of Sourced quests (true = don't report Sourced)
+			elseif not app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
+				-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
+				-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
+				-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
+				if GetRelativeValue(questRef, "_hqt") then
+					chatMsg = app:Linkify(questID .. " [HQT]", app.Colors.ChatLinkHQT, "search:questID:" .. questID);
+				else
+					chatMsg = app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID);
 				end
-				-- Linkify the output
-				chatMsg = app:Linkify(questID .. " [HQT]", app.Colors.ChatLinkHQT, "search:questID:" .. questID);
-			else
-				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
-					return true;
-				end
-				-- Linkify the output
-				chatMsg = app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID);
 			end
 		end
 		print("Quest",questChange,chatMsg,(info or ""));
@@ -4892,7 +4887,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			else
 				tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
 				-- removed BoE seen with a non-generic BonusID, potentially a level-scaled drop made re-obtainable
-				if group.u == 2 and not app.IsBoP(group) and (group.bonusID or 0) ~= 3524 then
+				if group.u == 2 and not app.IsBoP(group) and (group.bonusID or 3524) ~= 3524 then
 					if topLevelSearch then tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] }); end
 				end
 			end
@@ -18391,6 +18386,7 @@ function app:GetDataCache()
 		db.name = L["HIDDEN_QUEST_TRIGGERS"];
 		db.text = db.name;
 		db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];
+		db._hqt = true;
 		tinsert(g, db);
 		app.ToggleCacheMaps(true);
 		CacheFields(db);
