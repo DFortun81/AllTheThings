@@ -11,6 +11,9 @@ _.Instances = { tier(MOP_TIER, {
 		["maps"] = { 472, 473 },	-- 2nd LFR Wing
 		["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },	-- Mogu'shan Terrace
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(6668),	-- Mogu'shan Vaults Guild Run
+			}),
 			n(COMMON_BOSS_DROPS, {
 				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
 				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
@@ -635,9 +638,11 @@ _.Instances = { tier(MOP_TIER, {
 									},
 								},
 							},
+							ach(6675),	-- Heroic: Will of the Emperor Guild Run
 							{	-- Show Me Your Moves!
 								["achievementID"] = 6455,	-- Show Me Your Moves!
 							},
+							un(REMOVED_FROM_GAME, ach(6680)),	-- Realm First! Will of the Emperor
 							i(167050),	-- Mogu Statue (PET!)
 							i(138804),	-- Illusion: Colossus
 							i(87074),	-- Tihan, Scepter of the Sleeping Emperor

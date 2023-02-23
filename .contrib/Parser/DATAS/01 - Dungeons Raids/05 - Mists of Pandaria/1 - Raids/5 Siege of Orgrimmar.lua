@@ -28,6 +28,9 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 			570,
 		},
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(8510),	-- Siege of Orgrimmar Guild Run
+			}),
 			n(QUESTS, {
 				q(33147, {    -- The Last Gasp of Y'Shaarj
 					["provider"] = { "n", 73335 },    -- Fading Breath
@@ -1713,6 +1716,8 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						un(REMOVED_FROM_GAME, i(105632)),	-- Skeer's Bloodsoaked Talisman Mythic WF
 					}),
 					n(71865, {	-- Garrosh Hellscream
+						un(REMOVED_FROM_GAME, ach(8512)),	-- Realm First! Garrosh Hellscream (10 player)
+						un(REMOVED_FROM_GAME, ach(8513)),	-- Realm First! Garrosh Hellscream (25 player)
 						-- Heirlooms
 						un(REMOVED_FROM_GAME, i(105687)),	-- Hellscream's Barrier
 						un(REMOVED_FROM_GAME, i(105685)),	-- Hellscream's Cleaver
@@ -3159,6 +3164,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					crit(3, {	-- Garrosh Hellscream
 						["achievementID"] = 8462,	-- Downfall
 					}),
+					ach(8511),	-- Heroic: Garrosh Hellscream Guild Run
 					ach(8679, {	-- Conqueror of Orgrimmar
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -3644,6 +3650,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					crit(3, {	-- Garrosh Hellscream
 						["achievementID"] = 8462,	-- Downfall
 					}),
+					ach(8511),	-- Heroic: Garrosh Hellscream Guild Run
 					ach(8482, {	-- Mythic: Garrosh Hellscream
 						title(214),	-- , Hellscream's Downfall
 					}),

@@ -33,6 +33,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	tier(LEGION_TIER),
 	tier(BFA_TIER),
 	tier(SL_TIER),
+	tier(DF_TIER),
 });
 root(ROOTS.HiddenQuestTriggers, {
 	tier(CLASSIC_TIER),
@@ -44,4 +45,5 @@ root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER),
 	tier(BFA_TIER),
 	tier(SL_TIER),
+	tier(DF_TIER),
 });

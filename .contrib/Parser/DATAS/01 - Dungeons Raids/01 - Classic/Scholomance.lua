@@ -1537,6 +1537,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["timeline"] = { "added 5.0.4" },
 						["groups"] = {
 							ach(6762),	-- Heroic: Scholomance
+							ach(6771),	-- Heroic: Scholomance Guild Run
 							ach(6821),	-- School's Out Forever
 							ach(645),	-- Scholomance
 							i(144211, {	-- Headmaster's Will

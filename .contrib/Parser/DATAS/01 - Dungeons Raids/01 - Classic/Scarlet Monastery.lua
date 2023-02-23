@@ -1014,6 +1014,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								["provider"] = { "n", 58605 },	-- Scarlet Judicator
 							}),
 							ach(6761),	-- Heroic: Scarlet Monastery
+							ach(6770),	-- Heroic: Scarlet Monastery Guild Run
 							ach(637),	-- Scarlet Monastery
 							i(144189, {	-- Greatstaff of Righteousness
 								["timeline"] = { "added 7.1.5.23360" },

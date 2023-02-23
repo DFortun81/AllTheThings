@@ -36,17 +36,6 @@ _.Factions =
 			142185,	-- Ulla Skycloven (Dazar'alor)
 		},
 		["g"] = {
-			--
-			ach(9648),	-- Challenge Warlords - Guild Edition
-			ach(9649),	-- Challenge Warlords: Bronze - Guild Edition
-			ach(9650),	-- Challenge Warlords: Silver - Guild Edition
-			ach(11228),	-- Mythic Keystone Challenges
-			ach(9388),	-- Guild Draenor Dungeon Hero
-			ach(11225),	-- Keystone Initiate Guild Run
-			ach(11226),	-- Keystone Challenger Guild Run
-			ach(11227),	-- Keystone Conqueror Guild Run
-			ach(13074),	-- Keystone Master Guild Run
-			--
 			ach(4989, {	-- A Class Act
 				["collectible"] = false,
 				["g"] = {
@@ -284,5 +273,84 @@ _.Factions =
 				["races"] = HORDE_ONLY,
 			}),
 		},
+		n(ACHIEVEMENTS, {
+			-- GENERAL -- WIP
+			
+			-- QUESTS -- WIP
+
+			-- PLAYER VS. PLAYER -- WIP
+			ach(6532),	-- Pandaren Slayer
+			ach(6533),	-- Pandaren Slayer
+
+			-- DUNGEONS & RAIDS -- WIP
+
+			-- PROFESSIONS -- DONE
+			ach(16797),	-- Artisan's Consortium Monopolist
+			ach(5027),	-- Bushels and Bushels
+			ach(16798),	-- Crafting Cooperative
+			ach(5026),	-- Dinner Party
+			ach(5025),	-- Dust, Dust, and More Dust!
+			ach(5032),	-- Gemcrafter Extraordinaire
+			ach(6701),	-- Get Some Chopsticks
+			ach(5468),	-- Like Shooting Fish in a Barrel
+			ach(5460),	-- Making History
+			ach(6702),	-- Master Pandaria Crafter
+			ach(5030),	-- Mighty Miners
+			ach(5465),	-- Mix Master
+			ach(6703),	-- Pandaren Angler
+			ach(6700),	-- Pandarian Mix Master
+			ach(5467),	-- Set the Oven to "Cataclysmic"	
+			ach(5028),	-- Skinnin' for a Livin'
+			ach(5036),	-- That's a Lot of Bait
+			ach(4860),	-- Working as a Team
+			ach(5457),	-- The Pen is Mightier
+			ach(5466),	-- Time to Open a Restaurant
+			ach(5274),	-- We're Gonna Need a Bigger Boat
+			ach(6626),	-- Working Better as a Team
+
+			-- REPUTATION -- DONE
+			ach(5129),	-- Ambassadors
+			ach(7844),	-- Ambassadors
+			ach(5128),	-- Classic Battles
+			ach(5131),	-- Classic Battles
+			ach(5130),	-- Diplomacy
+			ach(7843),	-- Diplomacy
+			ach(5126),	-- Dungeon Diplomat
+			ach(5145),	-- Dungeon Diplomat
+			ach(6644),  -- Pandaren Embassy
+			ach(6664),  -- Pandaren Embassy
+			ach(5127),	-- Raid Representation
+			ach(5812),  -- United Nations
+			ach(5892),  -- United Nations
+			ach(5035),	-- Master Crafter
+
+			-- GUILD FEATS OF STRENGTH -- WIP
+
+			-- unsorted --
+			ach(9648),	-- Challenge Warlords - Guild Edition
+			ach(9649),	-- Challenge Warlords: Bronze - Guild Edition
+			ach(9650),	-- Challenge Warlords: Silver - Guild Edition
+			ach(11228),	-- Mythic Keystone Challenges
+			ach(9388),	-- Guild Draenor Dungeon Hero
+			ach(11225),	-- Keystone Initiate Guild Run
+			ach(11226),	-- Keystone Challenger Guild Run
+			ach(11227),	-- Keystone Conqueror Guild Run
+			ach(13074),	-- Keystone Master Guild Run
+			ach(6624),	-- Classy Pandaren
+			ach(6625),	-- Classy Pandaren
+			ach(6628),	-- Realm First! Working as a Better Team
+			ach(6629),	-- Daily Anticipation
+			ach(6632),	-- Challenge Conquerors: Bronze - Guild Edition
+			ach(6633),	-- Challenge Conquerors: Silver - Guild Edition
+			ach(6641),	-- Guild Hardware - Bronze
+			ach(6642),	-- Guild Hardware - Silver
+			ach(6643),	-- Guild Hardware - Gold
+			ach(6921),	-- Challenge Conquerors - Guild Edition
+			ach(7444),	-- Scenario Challenges
+			ach(7445),	-- Challenge Mode Dungeon Challenges
+			ach(7446),	-- The Ultimate Challenge
+			ach(7447),	-- More Fun With Friends
+			ach(8708),	-- Shroud of the Celestials - Guild Edition
+		}),
 	}),
 };

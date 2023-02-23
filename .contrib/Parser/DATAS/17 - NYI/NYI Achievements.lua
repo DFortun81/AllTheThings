@@ -5,15 +5,44 @@
 
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(ACHIEVEMENTS, {
+		tier(MOP_TIER, {
+			-- 5.x.x
+			n(P5xx, {
+				ach(7403),	-- Challenge mode dungeon completed the most
+				ach(8681),	-- Deaths in Deepwind Gorge
+				ach(7255),	-- Deaths in Silvershard Mines
+				ach(7256),	-- Deaths in Temple of Kotmogu
+				ach(7254),	-- Deaths in The Battle for Gilneas
+				ach(7253),	-- Deaths in Twin Peaks
+				ach(6617),	-- Gettin' Lucky
+				ach(6461),	-- He's Mine!
+				ach(6542),	-- Loremaster of Pandaria
+				ach(7278),	-- Mucking Around
+				ach(7243),	-- Pandaria different dungeon bosses defeated
+				ach(7246),	-- Pandaria different raid bosses defeated
+				ach(6627),	-- Realm First! Guild Level 30
+				ach(6710),	-- Realm First! Salyis's Warband
+				ach(6711),	-- Realm First! Sha of Anger
+				ach(8853),	-- Scenario Dominator
+				ach(8852),	-- Scenario Rampage
+				ach(6549),	-- The Brewmasters
+				ach(8394),	-- The Frostwind Slayer
+				ach(7277),	-- Zero Bug Count
+			}),
+		}),
 		tier(WOD_TIER, {
-			-- 6.2.2
-			tier(WOD_TIER, 2.2, bubbleDownSelf({ ["timeline"] = { "created 6.2.2" } }, {
+			-- 6.x.x
+			n(P6xx, {
+				ach(10060),	-- Garrison Followers recruited
+				ach(10181),	-- Garrison Missions completed
+				ach(10184),	-- Garrison Rare Missions completed
 				ach(10329),	-- Item slots equipped with Epic items
 				ach(10331),	-- Item slots equipped with Heirloom items
 				ach(10330),	-- Item slots equipped with Legendary items
 				ach(10328),	-- Item slots equipped with Rare items
 				ach(10327),	-- Item slots equipped with Uncommon items
-			})),
+				ach(9368),	-- Total deaths in raids
+			}),
 		}),
 		tier(LEGION_TIER, {
 			-- 7.0.3

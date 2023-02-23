@@ -141,6 +141,7 @@ _.Instances = { tier(MOP_TIER, {
 					cr(56439, e(335, {	-- Sha of Doubt
 						ach(6475),	-- Cleaning Up
 						ach(6758),	-- Heroic: Temple of the Jade Serpent
+						ach(6764),	-- Heroic: Temple of the Jade Serpent Guild Run
 						ach(6671),	-- Seeds of Doubt
 						ach(6757),	-- Temple of the Jade Serpent
 						i(144093),	-- Staff of Trembling Will

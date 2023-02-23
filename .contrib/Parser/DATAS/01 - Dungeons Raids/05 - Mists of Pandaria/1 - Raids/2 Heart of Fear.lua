@@ -11,6 +11,9 @@ _.Instances = { tier(MOP_TIER, {
 		["maps"] = { 475 },	-- 2nd wing
 		["coord"] = { 39.0, 34.9, DREAD_WASTES },	-- Heart of Fear
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(6669),	-- Heart of Fear Guild Run
+			}),
 			n(COMMON_BOSS_DROPS, {
 				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
 				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
@@ -472,6 +475,8 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62837, e(743, {	-- Grand Empress Shek'zeer
 						ach(6730),	-- Heroic: Grand Empress Shek'zeer
+						ach(6677),	-- Heroic: Grand Empress Shek'zeer Guild Run
+						un(REMOVED_FROM_GAME, ach(6679)),	-- Realm First! Grand Empress Shek'zeer
 						ach(6922),	-- Timing is Everything
 						i(167056),	-- Essence of Pride
 						i(89250, {	-- Chest of the Shadowy Conqueror

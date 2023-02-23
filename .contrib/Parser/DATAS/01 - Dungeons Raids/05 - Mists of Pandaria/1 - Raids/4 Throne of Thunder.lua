@@ -19,6 +19,9 @@ _.Instances = { tier(MOP_TIER, {
 		},
 		["coord"] = { 63.4, 32.6, ISLE_OF_THUNDER },	-- Throne of Thunder
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(8140),	-- Throne of Thunder Guild Run
+			}),
 			n(COMMON_BOSS_DROPS, {
 				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
 				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
@@ -1783,6 +1786,7 @@ _.Instances = { tier(MOP_TIER, {
 								},
 							},
 						},
+						ach(8139),	-- Heroic: Lei Shen Guild Run
 						i(96547),	-- Shan-Dun, Breaker of Hope
 						i(96553),	-- Uroe, Harbinger of Terror
 						i(96559),	-- Torall, Rod of the Shattered Throne
@@ -1830,7 +1834,9 @@ _.Instances = { tier(MOP_TIER, {
 					cr(69473, e(831, {	-- Ra-den
 						un(REMOVED_FROM_GAME, ach(8260)),	-- Cutting Edge: Ra-den
 						ach(8068),	-- Heroic: Ra-den
+						ach(8258),	-- Heroic: Ra-den Guild Run
 						un(REMOVED_FROM_GAME, ach(8089)),	-- I Thought He Was Supposeed to Be Hard?
+						un(REMOVED_FROM_GAME, ach(8257)),	-- Realm First! Ra-den
 						i(95013),	-- Black Night Thundercloak
 						i(95015),	-- Grey Wind Mistcloak
 						i(95014),	-- Red Sky Cloudcloak

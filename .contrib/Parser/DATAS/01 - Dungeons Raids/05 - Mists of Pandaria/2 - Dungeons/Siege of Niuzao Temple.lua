@@ -119,6 +119,7 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62205, e(727, {	-- Wing Leader Ner'onok
 						ach(6763),	-- Heroic: Siege of Niuzao Temple
+						ach(6772),	-- Heroic: Siege of Niuzao Temple Guild Run
 						ach(6822),	-- Run with the Wind
 						ach(10011),	-- Siege of Niuzao Temple
 						i(144172),	-- Gustwalker Staff

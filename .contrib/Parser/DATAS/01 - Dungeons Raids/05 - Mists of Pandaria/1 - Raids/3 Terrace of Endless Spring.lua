@@ -10,6 +10,9 @@ _.Instances = { tier(MOP_TIER, {
 		["maps"] = { 456 },	-- Terrace of Endless Spring
 		["coord"] = { 48.4, 61.4, THE_VEILED_STAIR },	-- Terrace of Endless Spring
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(6670),	-- Terrace of Endless Spring Guild Run
+			}),
 			n(COMMON_BOSS_DROPS, {
 				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
 				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
@@ -476,6 +479,8 @@ _.Instances = { tier(MOP_TIER, {
 								},
 							},
 						},
+						ach(6676),	-- Heroic: Sha of Fear Guild Run
+						un(REMOVED_FROM_GAME, ach(6678)),	-- Realm First! Sha of Fear
 						ach(6825),	-- The Mind-Killer
 						i(89259, {	-- Helm of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",

@@ -59,6 +59,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["creatureID"] = 59150,	-- Flameweaver Koegler
 					["groups"] = {
 						ach(7413),	-- Scarlet Halls
+						ach(7434),	-- Scarlet Halls Guild Run
 						i(82469, {	-- Ancient Tome of Teleport: Dalaran
 							["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
 							["spellID"] = 120145,	-- Ancient Teleport: Dalaran
@@ -185,6 +186,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["groups"] = {
 							ach(7413),	-- Scarlet Halls
 							ach(6760),	-- Heroic: Scarlet Halls
+							ach(6769),	-- Heroic: Scarlet Halls Guild Run
 							i(82469, {	-- Ancient Tome of Teleport: Dalaran
 								["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
 								["spellID"] = 120145,	-- Ancient Teleport: Dalaran
