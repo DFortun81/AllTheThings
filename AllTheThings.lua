@@ -6547,7 +6547,7 @@ app.SearchForObject = function(field, id, require)
 	if fcache then
 		local count = #fcache;
 		if count == 0 then
-			app.PrintDebug("SFO",field,id,require,"0~")
+			-- app.PrintDebug("SFO",field,id,require,"0~")
 			return;
 		end
 		local fcacheObj;
@@ -6563,7 +6563,7 @@ app.SearchForObject = function(field, id, require)
 				return fcacheObj;
 			end
 			-- one result, but doesn't meet the 'require'
-			app.PrintDebug("SFO",field,id,require,"1~",fcacheObj.hash)
+			-- app.PrintDebug("SFO",field,id,require,"1~",fcacheObj.hash)
 			return;
 		end
 		-- find a filter-match object first
@@ -14689,10 +14689,9 @@ app.CleanInheritingGroups = function(groups, field)
 	if groups then
 		-- ignore if a field is not provided
 		if not field then return groups; end
-		local parentCheck = GetRelativeValue;
 		local refined = {};
 		for _,j in ipairs(groups) do
-			if not parentCheck(j, field) then
+			if not GetRelativeValue(j, field) then
 				tinsert(refined, j);
 			-- else print("  ",j.hash)
 			end
