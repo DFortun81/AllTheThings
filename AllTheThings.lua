@@ -14684,13 +14684,15 @@ app.RecursiveFirstParentWithFieldValue = function(group, field, value)
 		end
 	end
 end
--- Cleans any groups which are nested under 'Source Ignored' content
-app.CleanSourceIgnoredGroups = function(groups)
+-- Cleans any groups which are nested under a group with a certain field
+app.CleanInheritingGroups = function(groups, field)
 	if groups then
-		local parentCheck = app.RecursiveFirstParentWithField;
+		-- ignore if a field is not provided
+		if not field then return groups; end
+		local parentCheck = GetRelativeValue;
 		local refined = {};
 		for _,j in ipairs(groups) do
-			if not parentCheck(j, "sourceIgnored") then
+			if not parentCheck(j, field) then
 				tinsert(refined, j);
 			-- else print("  ",j.hash)
 			end
@@ -17736,7 +17738,8 @@ local DynamicCategory_Nested = function(self)
 		self.text = Colorize(self.text, app.Colors.SourceIgnored);
 	end
 	-- pull out all Things which should go into this category based on field & value
-	NestObjects(self, app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups));
+	local groups = app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups);
+	NestObjects(self, app.CleanInheritingGroups(groups, "_missing"));
 	-- reset indents and such
 	BuildGroups(self, self.g);
 	-- delay-sort the top level groups
@@ -19490,7 +19493,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			end
 			wipe(self.CurrentMaps);
 			-- Get all results for this map, without any results that have been cloned into Source Ignored groups
-			results = app.CleanSourceIgnoredGroups(SearchForField("mapID", self.mapID));
+			results = app.CleanInheritingGroups(SearchForField("mapID", self.mapID), "sourceIgnored");
 			if results then
 				-- app.PrintDebug(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
