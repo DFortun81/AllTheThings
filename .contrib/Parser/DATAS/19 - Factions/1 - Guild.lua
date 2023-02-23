@@ -369,7 +369,32 @@ _.Factions =
 				ach(5241),	-- Stick Together Team
 	
 				-- DUNGEONS & RAIDS -- WIP
-	
+				ach(5009),	-- A Legendary Collection
+				ach(4955),	-- Are You Not Entertained?
+				ach(6182),	-- Fangs of the Father - Guild Edition
+				ach(5143),	-- Guild Cataclysm Dungeon Hero
+				ach(4950),	-- Guild Classic Dungeonmaster
+				ach(5011),	-- Guild Classic Raider
+				ach(9388),	-- Guild Draenor Dungeon Hero
+				ach(5015),	-- Guild Glory of the Lich King Raider
+				ach(5014),	-- Guild Northrend Dungeon Hero
+				ach(5124),	-- Guild Northrend Dungeon Hero
+				ach(5012),	-- Guild Outland Dungeon Hero
+				ach(5013),	-- Guild Outland Raider
+				ach(11226),	-- Keystone Challenger Guild Run
+				ach(11227),	-- Keystone Conqueror Guild Run
+				ach(11225),	-- Keystone Initiate Guild Run
+				ach(13074),	-- Keystone Master Guild Run
+				ach(5010),	-- The Ultimate Collection
+				ach(5186),	-- Thori'dal, the Stars' Fury - Guild Edition
+				ach(5184),	-- Thunderfury, Blessed Blade of the Windseeker - Guild Edition
+				ach(5188),	-- Shadowmourne - Guild Edition
+				ach(8708),	-- Shroud of the Celestials - Guild Edition
+				ach(4997),	-- Sulfuras, Hand of Ragnaros - Guild Edition
+				ach(5187),	-- Val'anyr, Hammer of Ancient Kings - Guild Edition
+				ach(5185),	-- Warglaives of Azzinoth - Guild Edition
+				ach(4861),	-- We Are Legendary
+
 				-- PROFESSIONS --
 				ach(16797),	-- Artisan's Consortium Monopolist
 				ach(5027),	-- Bushels and Bushels
@@ -423,6 +448,7 @@ _.Factions =
 				ach(4945),	-- Guild Level 15
 				ach(4946),	-- Guild Level 20
 				ach(4912),	-- Guild Level 25
+				ach(5492),	-- Guild Level 25
 				ach(6921),	-- Challenge Conquerors - Guild Edition
 				ach(6632),	-- Challenge Conquerors: Bronze - Guild Edition
 				ach(6634),	-- Challenge Conquerors: Gold - Guild Edition
@@ -436,34 +462,6 @@ _.Factions =
 				ach(6628),	-- Realm First! Working as a Better Team
 				ach(5408),	-- Realm First! Working as a Team
 				ach(7444),	-- Scenario Challenges
-	
-				-- unsorted --
-				ach(9388),	-- Guild Draenor Dungeon Hero
-				ach(11225),	-- Keystone Initiate Guild Run
-				ach(11226),	-- Keystone Challenger Guild Run
-				ach(11227),	-- Keystone Conqueror Guild Run
-				ach(13074),	-- Keystone Master Guild Run
-				ach(4955),	-- Are You Not Entertained?
-				ach(8708),	-- Shroud of the Celestials - Guild Edition
-				ach(4861),	-- We Are Legendary
-				ach(4950),	-- Guild Classic Dungeonmaster
-				ach(4997),	-- Sulfuras, Hand of Ragnaros - Guild Edition
-				ach(5009),	-- A Legendary Collection
-				ach(5010),	-- The Ultimate Collection
-				ach(5011),	-- Guild Classic Raider
-				ach(5012),	-- Guild Outland Dungeon Hero
-				ach(5013),	-- Guild Outland Raider
-				ach(5014),	-- Guild Northrend Dungeon Hero
-				ach(5015),	-- Guild Glory of the Lich King Raider
-				ach(5143),	-- Guild Cataclysm Dungeon Hero
-				ach(5184),	-- Thunderfury, Blessed Blade of the Windseeker - Guild Edition
-				ach(5185),	-- Warglaives of Azzinoth - Guild Edition
-				ach(5186),	-- Thori'dal, the Stars' Fury - Guild Edition
-				ach(5187),	-- Val'anyr, Hammer of Ancient Kings - Guild Edition
-				ach(5188),	-- Shadowmourne - Guild Edition
-				ach(5492),	-- Guild Level 25
-				ach(6182),	-- Fangs of the Father - Guild Edition
-				ach(5124),	-- Guild Northrend Dungeon Hero
 			}),
 		},
 	}),

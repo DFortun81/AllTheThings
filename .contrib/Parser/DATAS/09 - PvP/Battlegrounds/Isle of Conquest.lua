@@ -111,6 +111,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				classicAch(3846, {	-- Resource Glut
 					["races"] = ALLIANCE_ONLY,
 				}),
+				classicAch(4176, {	-- Resource Glut
+					["races"] = HORDE_ONLY,
+				}),
 			}),
 		},
 	}))),

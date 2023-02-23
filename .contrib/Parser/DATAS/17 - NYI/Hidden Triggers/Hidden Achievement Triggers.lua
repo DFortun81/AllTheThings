@@ -35,6 +35,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(115),	-- Deaths from fire and lava
 		ach(178),	-- Enchanting formulae learned \\ Enchanting formulae known
 		ach(181),	-- Items disenchanted \\ Total number of items disenchanted
+		ach(183),	-- Materials produced from disenchanting
 		ach(281),	-- First Aid skill \\ Current alchemy skill
 		ach(318),	-- Total deaths from opposite faction \\ Total times killed by opposite faction NYI \\ Total times killed by opposite faction
 		ach(319),	-- Duels won
