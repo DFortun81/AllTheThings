@@ -4326,6 +4326,16 @@ root(ROOTS.Zones, {
 					i(43659, {	-- Bloodied Prison Shank
 						["timeline"] = { "added 3.0.2.8982" },
 					}),
+					o(193402, {	-- Rusted Prisoner's Footlocker
+						["coord"] = { 64.5, 73.8, NORTHREND_DALARAN },
+						["cost"] = {{ "i", 43650, 1 }},	-- Rusty Prison Key
+						["groups"] = {
+							i(37891),	-- Cast Iron Shackles
+							i(37890),	-- Chain Gang Legguards
+							i(37889),	-- Prison Manifest
+						},
+					}),
+					i(43650),	-- Rusty Prison Key
 				}),
 				n(FLIGHT_PATHS, {
 					fp(310, {	-- Dalaran
