@@ -28,11 +28,10 @@ namespace ATT
             ObjectData.Create<ToyData>("isToy",     "toy",          "_.CreateToy", "f", "spellID", "modID");
             ObjectData.Create<ToyData>("toyID",     "toy",          "_.CreateToy", "f", "spellID", "modID");
             ObjectData.Create<MountData>("mountID", "mnt",          "_.CreateMount", "f", "spellID", "modID");
+            ObjectData.Create("headerID",           "h",            "_.CreateHeader", "f");
 #if ANYCLASSIC
-            // Classic has no implementation for Automated Headers... the _main.lua file will translate them into non-collectible versions of the respective Things
             ObjectData.Create("speciesID",          "p",            "_.CreateSpecies", "f", "modID");
 #else
-            ObjectData.Create("headerID",           "h",            "_.CreateHeader", "f");
             ObjectData.Create("speciesID",          "p",            "_.CreateSpecies", "f", "spellID", "modID");
 #endif
             ObjectData.Create("musicRollID",        "mr",           "_.CreateMusicRoll", "f", "spellID");
