@@ -165,7 +165,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			-- A Dryad Questline
 			q(67094, {	-- A Dryad's Work Is Never Done
-				["sourceQuests"] = { 66244 },	-- To Valdrakken
+				["sourceQuests"] = { 
+					66244,	-- To Valdrakken
+					70125,	-- Where is Wrathion? (A)
+					69910,	-- Where is Wrathion? (H)
+				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 			}),
