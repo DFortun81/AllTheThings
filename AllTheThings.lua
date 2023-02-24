@@ -3574,10 +3574,24 @@ local ResolveFunctions = {
 			local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject;
 			for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
 				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID);
-				criteriaObject = app.CreateAchievementCriteria(id);
+
+				-- SourceQuest
 				if criteriaType == 27 then
 					cache = app.SearchForField("questID", assetID);
-				elseif criteriaType == 36 or criteriaType == 42 then	-- Items
+					for _,o in ipairs(cache) do
+						criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID});
+						tinsert(searchResults, criteriaObject);
+						NestObject(o, criteriaObject);
+						BuildGroups(o);
+						app.CacheFields(criteriaObject);
+						app.DirectGroupUpdate(o);
+						-- app.PrintDebug("Add-Crit",achievementID,id,"=>",o.hash)
+					end
+					-- added to the quest(s) groups, not added to achievement
+					criteriaObject = nil;
+				-- Items
+				elseif criteriaType == 36 or criteriaType == 42 then
+					criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID});
 					criteriaObject.providers = {{ "i", assetID }};
 				elseif criteriaType == 110	-- Casting spells on specific target
 					or criteriaType == 29 or criteriaType == 69	-- Buff Gained
@@ -3588,22 +3602,14 @@ local ResolveFunctions = {
 				else
 					print("Unhandled Criteria Type", criteriaType, assetID);
 				end
-				if cache then
-					local uniques = {};
-					MergeObjects(uniques, cache);
-					for i,o in ipairs(uniques) do
-						rawset(o, "text", nil);
-						for key,value in pairs(o) do
-							criteriaObject[key] = value;
-						end
-						rawset(o, "text", criteriaObject.text);
-					end
+				if criteriaObject then
+					NestObject(o, criteriaObject);
+					app.CacheFields(criteriaObject);
+					tinsert(searchResults, criteriaObject);
 				end
-				criteriaObject.achievementID = achievementID;
-				criteriaObject.parent = o;
-				tinsert(searchResults, criteriaObject);
-				app.CacheFields(criteriaObject);
 			end
+			BuildGroups(o);
+			app.DirectGroupUpdate(o);
 		end
 	end,
 	-- Instruction to include only search results where an item is a relic (Not used currently)
