@@ -241,7 +241,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}},
 			}),
 			ach(16622, {	-- Three Minutes or It's Free
-				["maps"] = { THALDRASZUS, THE_AZURE_SPAN },
+				["maps"] = { THE_AZURE_SPAN },
 			}),
 			pvp(ach(16593)),	-- Tour of Duty: Thaldraszus
 			ach(16301, {	-- Treasures of Thaldraszus
