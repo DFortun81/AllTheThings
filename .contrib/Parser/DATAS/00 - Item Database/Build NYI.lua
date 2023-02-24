@@ -15,9 +15,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	filter(BATTLE_PETS),
 	n(CLASS_TRIAL),
 	n(FLIGHT_PATHS),
-	n(-24),	-- Maps
+	n(MAPS),
 	filter(MOUNTS),
-	n(-10),	-- Party Sync
+	n(PARTY_SYNC),
 	n(PROFESSIONS),
 	n(QUESTS),
 	filter(RECIPES),

@@ -825,7 +825,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 -- NYI Content which should NOT be filtered in game since it is 'technically' there
 root(ROOTS.NeverImplemented, {
 	-- Maps that don't have any data but still exist in game
-	n(-24, {	-- Maps
+	n(MAPS, {
 		m(843),		-- Shado-Pan Showdown
 		m(1335),	-- Cooking: Impossible
 	}),
