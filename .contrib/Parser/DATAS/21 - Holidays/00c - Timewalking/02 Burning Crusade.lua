@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-root(ROOTS.Holidays, d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
+root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(TBC_TIER, {
 		q(47523, {	-- Disturbance Detected: Black Temple
 			["coord"] = { 54.6, 39,  SHATTRATH_CITY },

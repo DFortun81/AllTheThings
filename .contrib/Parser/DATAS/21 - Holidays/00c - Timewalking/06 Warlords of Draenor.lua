@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-root(ROOTS.Holidays, d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
+root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(WOD_TIER, {
 		q(55498, {	-- The Shimmering Crystal
 			["provider"] = { "i", 167921 },		-- Shimmering Timewarped Crystal

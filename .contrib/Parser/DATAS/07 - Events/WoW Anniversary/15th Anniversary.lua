@@ -24,7 +24,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 		},
 		["cr"] = 154233,	-- Chromie
 		["g"] = {
-			d(24, {	-- Timewalking
+			d(TIMEWALKING_DUNGEON, {
 				ach(13931, {	-- Memories of Fel, Frost and Fire
 					i(172012),	-- Obsidian Worldbreaker (MOUNT!)
 				}),

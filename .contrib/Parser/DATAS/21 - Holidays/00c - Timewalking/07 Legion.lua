@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-root(ROOTS.Holidays, d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
+root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(LEGION_TIER, {
 		q(64710, {	-- Whispering Felflame Crystal
 			["provider"] = { "i", 187611 },		-- Whispering Felflame Crystal

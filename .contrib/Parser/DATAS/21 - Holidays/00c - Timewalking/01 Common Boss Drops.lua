@@ -4,7 +4,7 @@
 
 local InfiniteTimereaver =
 {
-	d(24, bubbleDown({ ["u"] = TIMEWALKING }, {  -- Timewalking
+	d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {  -- Timewalking
 		n(COMMON_BOSS_DROPS, {
 			i(133543, {	-- Infinite Timereaver (MOUNT!)
 				["crs"] = TIMEWALKING_DUNGEON_CREATURE_IDS,

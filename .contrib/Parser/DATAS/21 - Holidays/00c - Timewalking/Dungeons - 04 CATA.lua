@@ -1,5 +1,5 @@
 -- #if AFTER 6.2.3.20601
-root(ROOTS.Holidays, d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
+root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(CATA_TIER, {
 		i(185053, {	-- Kodo Serpent Soul
 			["timeline"] = { "added 9.1.5" },

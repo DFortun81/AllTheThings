@@ -8,7 +8,7 @@ local SKY = -145;
 local BLOOM = -146;
 -- local UBRS = -147;
 
-root(ROOTS.Holidays, d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
+root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(WOD_TIER, {
 		n(-23, {
 			["u"] = TIMEWALKING,

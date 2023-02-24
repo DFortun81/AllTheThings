@@ -1036,7 +1036,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	}),
 	tier(BFA_TIER, {
 		n(ARMOR, {
-			d(24, {	-- Timewalking
+			d(TIMEWALKING_DUNGEON, {
 				tier(LEGION_TIER, 2.5, {
 					i(150450),	-- Nether Shadow Tunic
 					i(150448),	-- Pauldrons of Abyssal Fury

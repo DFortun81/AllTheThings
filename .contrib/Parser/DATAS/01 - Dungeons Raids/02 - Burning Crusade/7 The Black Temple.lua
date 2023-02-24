@@ -497,7 +497,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			-- #if AFTER LEGION
 				},
 			}),
-			d(24, {	-- Timewalking
+			d(TIMEWALKING_DUNGEON, {
 				-- #if ANYCLASSIC
 				["u"] = LEGION_PHASE_ONE,
 				-- #endif

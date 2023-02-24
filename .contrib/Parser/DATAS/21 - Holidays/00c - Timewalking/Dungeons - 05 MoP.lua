@@ -1,5 +1,5 @@
 -- #if AFTER 7.1.5.23360
-root(ROOTS.Holidays, d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
+root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(MOP_TIER, {
 		i(187904, {	-- Cloud Serpent Soul
 			["timeline"] = { "added 9.1.5" },

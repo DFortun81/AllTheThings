@@ -145,7 +145,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				})),
 			}),
 			-- #if AFTER 9.1.5
-			d(24, {	-- Timewalking
+			d(TIMEWALKING_DUNGEON, {
 				["sym"] = {	-- link in Timewalking content
 					{"sub", "tw_instance", 800 },	-- this instance version of timewalking
 				},
