@@ -7128,49 +7128,11 @@ end	-- Map Information Lib
 
 -- Populates/replaces data within a questObject for displaying in a row
 local function PopulateQuestObject(questObject)
+	local questID = questObject and questObject.questID;
 	-- cannot do anything on a missing object or questID
-	if not questObject or not questObject.questID then return; end
+	if not questID then return; end
 
-	local questID = questObject.questID;
-	-- Check for a Task-specific icon
-	local info = C_QuestLog.GetQuestTagInfo(questID);
-
-	-- if info then
-		-- print("WQ info:",questID);
-		-- for k,v in pairs(info) do
-			-- print(k,v);
-		-- end
-		-- print("---");
-	-- end
-	-- local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = ;
-	local worldQuestType = info and info.worldQuestType;
-	local tagID = info and info.tagID;
-	if worldQuestType then
-		-- all WQ's on map should be treated as repeatable
-		questObject.repeatable = true;
-		if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
-			questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-		elseif worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE then
-			questObject.icon = "Interface\\Icons\\PetJournalPortrait";
-		elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
-			questObject.icon = "Interface\\Icons\\Trade_BlackSmithing";
-		elseif worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON or tagID == 137 then
-			-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-			-- TODO: Add the relevent dungeon icon. (DONE! IN REWARDS!)
-		elseif worldQuestType == LE_QUEST_TAG_TYPE_RAID then
-			questObject.isRaid = true;
-			-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-			-- TODO: Add the relevent dungeon icon.
-		elseif worldQuestType == LE_QUEST_TAG_TYPE_INVASION or worldQuestType == LE_QUEST_TAG_TYPE_INVASION_WRAPPER then
-			questObject.icon = "Interface\\Icons\\achievements_zone_brokenshore";
-		--elseif worldQuestType == LE_QUEST_TAG_TYPE_TAG then
-			-- completely useless
-			--questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-		--elseif worldQuestType == LE_QUEST_TAG_TYPE_NORMAL then
-		--	questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-		end
-	end
-
+	-- TODO: try moving this logic into the quest lib?
 	-- Get time remaining info (only works for World Quests)
 	local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questID);
 	if timeRemaining and timeRemaining > 0 then
@@ -7861,8 +7823,8 @@ end)();
 -- Quest Lib
 -- Quests first because a lot of other Thing libs use Quest logic
 (function()
-local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestReplayable,C_QuestLog_IsQuestReplayedRecently,C_QuestLog_ReadyForTurnIn,C_QuestLog_GetAllCompletedQuestIDs,C_QuestLog_RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData =
-	  C_QuestLog.GetQuestObjectives,C_QuestLog.IsOnQuest,C_QuestLog.IsQuestReplayable,C_QuestLog.IsQuestReplayedRecently,C_QuestLog.ReadyForTurnIn,C_QuestLog.GetAllCompletedQuestIDs,C_QuestLog.RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData;
+local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestReplayable,C_QuestLog_IsQuestReplayedRecently,C_QuestLog_ReadyForTurnIn,C_QuestLog_GetAllCompletedQuestIDs,C_QuestLog_RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData,C_QuestLog_GetQuestTagInfo =
+	  C_QuestLog.GetQuestObjectives,C_QuestLog.IsOnQuest,C_QuestLog.IsQuestReplayable,C_QuestLog.IsQuestReplayedRecently,C_QuestLog.ReadyForTurnIn,C_QuestLog.GetAllCompletedQuestIDs,C_QuestLog.RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData,C_QuestLog.GetQuestTagInfo;
 local GetSpellInfo,math_floor =
 	  GetSpellInfo,math.floor;
 
@@ -8319,26 +8281,50 @@ local questFields = {
 		end
 	end,
 	["icon"] = function(t)
+		local icon;
 		if t.providers then
 			for k,v in ipairs(t.providers) do
 				if v[2] > 0 then
 					if v[1] == "o" then
-						return app.ObjectIcons[v[2]] or "Interface\\Icons\\INV_Misc_Bag_10";
+						icon = app.ObjectIcons[v[2]] or "Interface\\Icons\\INV_Misc_Bag_10";
+						break;
 					elseif v[1] == "i" then
-						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Icons\\INV_Misc_Book_09";
+						icon = select(5, GetItemInfoInstant(v[2])) or "Interface\\Icons\\INV_Misc_Book_09";
+						break;
 					end
 				end
 			end
-		end
-		if t.isWorldQuest then
-			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Questind";
-		elseif t.repeatable then
-			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Questd";
-		elseif t._missing then
-			return "Interface\\Icons\\INV_Misc_QuestionMark";
+		elseif t.isWorldQuest then
+			-- Check for a Task-specific icon
+			local info = C_QuestLog_GetQuestTagInfo(t.questID);
+			if info then
+				t.title = info.tagName;
+				local worldQuestType = info.worldQuestType;
+				if worldQuestType then
+					-- all WQ's on map should be treated as repeatable
+					t.isWorldQuest = true;
+					icon = WorldQuestTypeIcons[worldQuestType] or DefaultIcon;
+				end
+				icon = icon or (info.isElite and app.asset("Interface_Rare"));
+			end
+			icon = icon or app.asset("Interface_WorldQuest");
 		else
-			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Quest";
+			local info = C_QuestLog_GetQuestTagInfo(t.questID);
+			if info and info.worldQuestType then
+				t.isWorldQuest = true;
+				-- don't set an icon on this pass. now it will try WQ logic
+				return;
+			end
+			if t.repeatable then
+				icon = app.asset("Interface_Questd");
+			elseif t._missing then
+				icon = 134400;	-- Inv_misc_questionmark
+			else
+				icon = app.asset("Interface_Quest");
+			end
 		end
+		rawset(t, "icon", icon);
+		return icon;
 	end,
 	["model"] = function(t)
 		if t.providers then
