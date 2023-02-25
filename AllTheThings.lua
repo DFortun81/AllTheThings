@@ -3566,6 +3566,7 @@ local ResolveFunctions = {
 	["myModID"] = function(finalized, searchResults, o)
 		FinalizeModID = o.modID;
 	end,
+	-- Instruction to query all criteria of an Achievement via the in-game APIs and generate Criteria data into the most-accurate Sources
 	["achievement_criteria"] = function(finalized, searchResults, o)
 		-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
 		if GetAchievementNumCriteria then
@@ -3602,6 +3603,7 @@ local ResolveFunctions = {
 				else
 					print("Unhandled Criteria Type", criteriaType, assetID);
 				end
+				-- Criteria was not Sourced, so put it under the Achievement
 				if criteriaObject then
 					NestObject(o, criteriaObject);
 					app.CacheFields(criteriaObject);
@@ -8999,7 +9001,7 @@ app:RegisterEvent("QUEST_SESSION_JOINED");
 end)();
 
 -- Achievement Lib
-(function()
+do
 local GetAchievementCategory, GetAchievementNumCriteria, GetCategoryInfo, GetStatistic = GetAchievementCategory, GetAchievementNumCriteria, GetCategoryInfo, GetStatistic;
 local cache = app.CreateCache("achievementID");
 local function CacheInfo(t, field)
@@ -9090,7 +9092,13 @@ local fields = {
 		end
 		return 0;
 	end,
-	-- ["OnUpdate"] = function(t) ResolveSymbolicLink(t); end,
+	["OnUpdate"] = function(t)
+		-- only handle this extra OnUpdate logic once for symlink Achievements
+		if not t.sym then return; end
+		if t.__filled then return; end
+		t.__filled = true;
+		app.FillSymlinkAsync(t);
+	end,
 };
 app.BaseAchievement = app.BaseObjectFields(fields, "BaseAchievement");
 app.CreateAchievement = function(id, t)
@@ -9536,7 +9544,7 @@ RefreshAchievementCollection = function()
 end
 app:RegisterEvent("ACHIEVEMENT_EARNED");
 app.events.ACHIEVEMENT_EARNED = CheckAchievementCollectionStatus;
-end)();
+end	-- Achievement Lib
 
 -- Artifact Lib
 (function()
