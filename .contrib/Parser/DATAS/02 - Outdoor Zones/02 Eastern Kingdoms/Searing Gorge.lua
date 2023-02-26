@@ -471,7 +471,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28055,	-- Sweet, Horrible Freedom
 						28056,	-- Rise, Obsidion
 					},
-					["description"] = "After looting the first pillow during |cFFFFD700Kill 'em With Sleep Deprivation|r, a timer begins. After ~10 minutes, |cFFFFD700Chambermaid Pillaclencher|r spawns and drops her pillow.",
+					["description"] = "After looting the first pillow during |cFFFFD700Kill 'em With Sleep Deprivation|r, a timer begins. After ~10 minutes, |cFFFFD700Chambermaid Pillaclencher|r spawns and drops her pillow. If the Pillamaster is already spawned on your shard, you do not need the prior quests to spawn them.",
 					["coord"] = { 46.0, 29.8, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
