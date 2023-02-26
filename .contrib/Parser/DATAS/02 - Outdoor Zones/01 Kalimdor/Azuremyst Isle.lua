@@ -683,6 +683,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						{ 42.0, 57.4, AZUREMYST_ISLE },
 						{ 46.2, 31.8, AZUREMYST_ISLE },
 						{ 53.4, 42.4, AZUREMYST_ISLE },
+						{ 55.6, 29.4, AZUREMYST_ISLE },
 						{ 55.6, 47.8, AZUREMYST_ISLE },
 						{ 56.8, 59.6, AZUREMYST_ISLE },
 						{ 58.0, 41.6, AZUREMYST_ISLE },

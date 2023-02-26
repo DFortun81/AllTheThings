@@ -2475,6 +2475,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 192565 },	-- Zayn Starmaker <Tailoring Trainer>
 				["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
 			}),
+			q(70366, {	-- Dragon Isles Tailoring
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 191894 },	-- Krillonn
+				["coord"] = { 61.3, 70.1, THE_WAKING_SHORES },
+			}),
 			q(70027, {	-- Artisan's Supply: Surveyor's Cloth Bands
 				["sourceQuests"] = { 72249 },	-- Dragon Isles Tailoring
 				["provider"] = { "n", 191894 },	-- Krillonn <Tailoring Trainer>

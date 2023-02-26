@@ -1583,6 +1583,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5637,	-- Roetten Stonehammer
 					["coord"] = { 69.6, 21.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(30, 30, 10),
 				}),
 				q(1361, {	-- Regthar Deathgate

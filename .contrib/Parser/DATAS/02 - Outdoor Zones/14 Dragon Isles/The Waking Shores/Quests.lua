@@ -1072,6 +1072,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 
 				-- MISC --
+			q(70164, {	-- A Tinker's Chance
+				["provider"] = { "n", 194136 },	-- Eralshek
+				["coord"] = { 65.4, 58.5, THE_WAKING_SHORES },
+				["races"] = {DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+			}),
 			q(70179, {	-- A Two for One Deal
 				["sourceQuests"] = { 66001 },	-- A Last Hope, -- TODO: Wasnt available when picking up 65997, but available before 66001....
 				["provider"] = { "n", 194525 },	-- Apprentice Caretaker Zefren
@@ -1189,6 +1194,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
 				["sourceQuests"] = 70124,	-- Practice Materials
 				["classes"] = { EVOKER },
+			}),
+			q(70368, {	-- Occupation Examination
+				["provider"] = { "n", 192498 },	-- Hephaesta
+				["coord"] = { 57.8, 68.2, THE_WAKING_SHORES },
+				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),
 				--TODO: At some point this quest will need to be looked at and changed to either a Dracthyr-specific race tag or adjusted to whatever classes Dracthyr are eventually opened up to. For now Evoker covers all the bases.
 

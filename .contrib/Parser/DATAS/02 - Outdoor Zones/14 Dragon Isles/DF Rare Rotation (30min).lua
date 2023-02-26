@@ -87,6 +87,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				n(193176, {	-- Sandana the Tempest <Timesand Thief>
 					["coord"] = { 37.4, 77.9, THALDRASZUS },
 					["questID"] = 74029,
+					["g"] = {
+						i(200202),	-- Tomorrow's Chains
+					},
 				}),
 				n(193258, {	-- Tempestrian <Stormbringer>
 					["coord"] = { 48.8, 79.4, THALDRASZUS },

@@ -9,6 +9,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2
 			2072,	-- The Vault of Tyr
 		},
 		["g"] = {
+			n(QUESTS, {
+				q(71093, {	-- Legacy of Tyr: Secrets of the Past
+					["description"] = "Given on zoning into the instance on a character that did not do the pre-patch version of this quest.",
+				}),
+			}),
 			n(ZONE_DROPS, {
 				i(194256),	-- Pattern: Hood of Surging Time (RECIPE!)
 			}),

@@ -197,6 +197,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 							{ "i", MASTODON_TUSK, 2 },
 							{ "i", RESILIENT_LEATHER, 20 },
 						},
+						["questID"] = 70804,
 						["g"] = {
 							i(199868),	-- Tuskarr Trader's Belt
 							i(199869),	-- Tuskarr Trader's Bindings
@@ -598,36 +599,36 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(198337, {	-- Azure Paw Pack
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
-							{ "i", LARGE_STURDY_FEMUR, 2 },
-							{ "i", CONTOURED_FOWLFEATHER, 5 },
+							{ "i", LARGE_STURDY_FEMUR, 1 },
+							{ "i", 194969, 20 },
 						},
 					}),
 					i(198338, {	-- Black Paw Pack
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
-							{ "i", LARGE_STURDY_FEMUR, 2 },
-							{ "i", CONTOURED_FOWLFEATHER, 5 },
+							{ "i", LARGE_STURDY_FEMUR, 1 },
+							{ "i", 194968, 20 },
 						},
 					}),
 					i(198339, {	-- Dark Paw Pack
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
-							{ "i", LARGE_STURDY_FEMUR, 2 },
-							{ "i", CONTOURED_FOWLFEATHER, 5 },
+							{ "i", LARGE_STURDY_FEMUR, 1 },
+							{ "i", 194966, 20 },
 						},
 					}),
 					i(198340, {	-- Red Paw Pack
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
-							{ "i", LARGE_STURDY_FEMUR, 2 },
-							{ "i", CONTOURED_FOWLFEATHER, 5 },
+							{ "i", LARGE_STURDY_FEMUR, 1 },
+							{ "i", 194967, 5 },
 						},
 					}),
 					i(198341, {	-- Tan Paw Pack
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
-							{ "i", LARGE_STURDY_FEMUR, 2 },
-							{ "i", CONTOURED_FOWLFEATHER, 5 },
+							{ "i", LARGE_STURDY_FEMUR, 1 },
+							{ "i", 194730, 5 },
 						},
 					}),
 				},

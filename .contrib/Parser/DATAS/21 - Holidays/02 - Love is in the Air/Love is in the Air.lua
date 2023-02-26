@@ -782,6 +782,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					{ 50.0, 65.0, ORGRIMMAR },	-- Detective Snap Snagglebolt
 					{ 57.6, 61.0, ORGRIMMAR },	-- Roka
 				},
+				["isYearly"] = true,
 				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
 			}),

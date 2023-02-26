@@ -2436,7 +2436,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71514),	-- Kinetic Pillar of the Isles
 			q(71518),	-- Overseer's Writhebark Stave
 			q(71517),	-- Pioneer's Writhebark Stave
-			-- q(),	-- Weathered Explorer's Stave
+			q(71516),	-- Weathered Explorer's Stave
 			-- Runes and Sigil
 			q(71559),	-- Azurescale Sigil
 			q(71560),	-- Bronzescale Sigil
@@ -2459,7 +2459,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71547),	-- Illusion Parchment: Arcane Burst
 			q(71548),	-- Illusion Parchment: Chilling Wind
 			q(71549),	-- Illusion Parchment: Love Charm
-			-- q(),	-- Illusion Parchment: Magma Missile
+			q(71550),	-- Illusion Parchment: Magma Missile
 			q(71551),	-- Illusion Parchment: Shadow Orb
 			q(71552),	-- Illusion Parchment: Spell Shield
 			-- q(),	-- Illusion Parchment: Whirling Breeze
@@ -2474,9 +2474,9 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- Contracts
 			q(71579),	-- Contract: Artisan's Consortium
 			q(71580),	-- Contract: Dragonscale Expedition
-			-- q(),	-- Contract: Iskaara Tuskarr
-			-- q(),	-- Contract: Maruuk Centaur
-			-- q(),	-- Contract: Valdrakken Accord
+			q(71581),	-- Contract: Iskaara Tuskarr
+			q(71578),	-- Contract: Maruuk Centaur
+			q(71582),	-- Contract: Valdrakken Accord
 			-- Profession Specialization
 			q(71519),	-- Draconic Treatise on Alchemy
 			q(71520),	-- Draconic Treatise on Blacksmithing
@@ -2490,22 +2490,22 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(),	-- Draconic Treatise on Skinning
 			q(71530),	-- Draconic Treatise on Tailoring
 			-- Dragonriding - Renewed Proto-Drake
-			-- q(),	-- Renewed Proto-Drake: Bovine Horns
-			-- q(),	-- Renewed Proto-Drake: Predator Pattern
+			q(71539),	-- Renewed Proto-Drake: Bovine Horns
+			q(71538),	-- Renewed Proto-Drake: Predator Pattern
 			-- q(),	-- Renewed Proto-Drake: Silver and Blue Armor
 			q(71540),	-- Renewed Proto-Drake: Spined Crest
 			-- q(),	-- Renewed Proto-Drake: Steel and Yellow Armor
 			-- Dragonriding - Windborne Velocidrake
 			q(71542),	-- Windborne Velocidrake: Black Fur
 			-- q(),	-- Windborne Velocidrake: Silver and Blue Armor
-			-- q(),	-- Windborne Velocidrake: Spined Head
+			q(71543),	-- Windborne Velocidrake: Spined Head
 			-- q(),	-- Windborne Velocidrake: Steel and Orange Armor
-			-- q(),	-- Windborne Velocidrake: Windswept Pattern
+			q(71544),	-- Windborne Velocidrake: Windswept Pattern
 			-- Dragonriding - Highland Drake
 			-- q(),	-- Highland Drake: Black Hair
 			-- q(),	-- Highland Drake: Silver and Blue Armor
 			-- q(),	-- Highland Drake: Spined Crest
-			-- q(),	-- Highland Drake: Spined Throat
+			q(71536),	-- Highland Drake: Spined Neck
 			-- q(),	-- Highland Drake: Steel and Yellow Armor
 			-- Dragonriding - Cliffside Wylderdrake
 			-- q(),	-- Cliffside Wylderdrake: Conical Head
@@ -2553,7 +2553,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(),	-- Stormy Malygite
 			-- q(),	-- Zen Neltharite
 			-- Primalist Gems
-			-- q(),	-- Fierce Illimited Diamond
+			q(71617),	-- Fierce Illimited Diamond
 			-- q(71619),	-- Inscribed Illimited Diamond
 			-- q(),	-- Resplendent Illimited Diamond
 			q(71618),	-- Skillful Illimited Diamond
@@ -2602,8 +2602,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- Extravagant Glasswares
 			q(71655),	-- Dreamer's Vision
 			q(71651),	-- Earthwarden's Prize
-			-- q(71654),	-- Jeweled Dragon's Heart
-			-- q(),	-- Keeper's Glory
+			q(71654),	-- Jeweled Dragon's Heart
+			q(71652),	-- Keeper's Glory
 			q(71656),	-- Queen's Gift
 			q(71653),	-- Timewatcher's Patience
 		}),
@@ -2614,7 +2614,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(),	-- Life-Bound Boots
 			-- q(),	-- Life-Bound Cap
 			-- q(),	-- Life-Bound Chestpiece
-			-- q(),	-- Life-Bound Gloves
+			q(71708),	-- Life-Bound Gloves
 			q(71711),	-- Life-Bound Shoulderpads
 			-- q(),	-- Life-Bound Trousers
 			q(71703),	-- Pioneer's Leather Tunic
@@ -2664,7 +2664,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71702),	-- Flaring Cowl
 			-- q(),	-- Old Spirit's Wristwraps
 			q(71718),	-- Scale Rein Grips
-			-- q(),	-- Snowball Makers
+			q(71693),	-- Snowball Makers
 			q(71690),	-- String of Spiritual Knick-Knacks
 			q(71719),	-- Wind Spirit's Lasso
 			-- Bestial Patterns
@@ -2688,7 +2688,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(),	-- Crimson Combatant's Resilient Trousers
 			-- q(),	-- Crimson Combatant's Resilient Wristwraps
 			q(71716),	-- Infurious Boots of Reprieve
-			-- q(),	-- Infurious Chainhelm Protector
+			q(71717),	-- Infurious Chainhelm Protector
 			-- q(),	-- Infurious Footwraps of Indemnity
 			q(71689),	-- Infurious Spirit's Hood
 			-- Decayed Patter
@@ -2744,6 +2744,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74148),	-- Skinning Zagdech
 			q(74149),	-- Skinning Zumakh (Grand Hunt)
 			q(74150),	-- Skinning Tonmu
+			q(74151),	-- Skinning Salkii
 			q(74152),	-- Skinning Galnomor
 			q(74153),	-- Skinning Degmakh (Grand Hunt)
 			q(74154),	-- Skinning Muugurv (Grand Hunt)

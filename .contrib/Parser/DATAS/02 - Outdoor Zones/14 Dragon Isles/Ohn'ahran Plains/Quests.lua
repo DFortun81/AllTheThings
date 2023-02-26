@@ -1057,6 +1057,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200295),	-- Makko's Complete Journal
 				},
 			}),
+			q(70370, {	-- Occupation Examination
+				["provider"] = { "n", 192498 },	-- Hephaesta
+				["coord"] = { 71.8, 78.7, OHNAHRAN_PLAINS },
+				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["isDaily"] = true,
 			},{
@@ -1164,7 +1170,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69865, {	-- Scaleseeker Mezeri
 					["provider"] = { "n", 193215 },	-- Scaleseeker Mezeri
 					["coord"] = { 20.1, 44.3, OHNAHRAN_PLAINS },
-					["isDaily"] = false,
+					["isDaily"] = true,
 				}),
 				q(67717, {	-- Web-Queen Ashkaz
 					["provider"] = { "n", 192983 },	-- Web-Queen Ashkaz

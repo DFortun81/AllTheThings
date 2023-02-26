@@ -438,6 +438,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(198867),	-- Large Iskaaran Supply Pack
 				},
 			}),
+				-- RENOWN 20 --
+			q(72635, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 20 },	-- Iskaara Tuskarr Renown 20
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198867),	-- Large Iskaaran Supply Pack
+				},
+			}),
 				-- RENOWN 21 --
 			q(70968, {	-- Of the Cloth, of the Community
 				["minReputation"] = { 2511, 21 },	-- Iskaara Tuskarr Renown 21

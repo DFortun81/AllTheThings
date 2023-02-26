@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local ADAMANT_SCALES = 193214;
-local AWAKENED_EARTH = 190326;
+local AWAKENED_EARTH = 190316;
 local AWAKENED_FIRE = 190321;
 local DRACONIUM_ORE = 188658;
 local GLIMMERING_NELTHARITE_CLUSTER = 200867;
@@ -904,6 +904,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 			q(66802),	-- Triggered when choosing Wrathion in Allegiance To One (66419) -- triggered for Wrathion only
 			q(72284),	-- Triggered when reaching max rank friendship with Sabellian after also being max rank with Wrathion (also popped with four Drake Armor triggers)
 			q(67168),	-- Triggered with completion of 67051 'Dragon Eyes' (alternate version???)
+			q(72378),	-- Triggered when refusing to activate the Wrathion and Sabellian skip for alts
 		}),
 	}),
 })));

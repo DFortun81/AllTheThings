@@ -220,6 +220,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74547,
 				["g"] = {
 					i(203676),	-- Stormcaller's Grounding Shoes
+					i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
 				},
 			})),
 			n(191842, {	-- Sulfurion
