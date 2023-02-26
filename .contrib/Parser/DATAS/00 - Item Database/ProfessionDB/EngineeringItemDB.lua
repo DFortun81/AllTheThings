@@ -75,7 +75,7 @@ i(0, 382386);	-- Sentry's Stabilized Specs
 i(0, 382376);	-- Shock-Spring Coil
 i(0, 382396);	-- Spring-Loaded Draconium Fabric Cutters
 i(0, 382401);	-- Tinker: Plane Displacer
-i(0, 382360);	-- Tinker Removal Kit
+i(0, 396777);	-- Tinker Removal Kit
 -- ITEM --
 i(199295, 384313);	-- Black Fireflight
 i(199289, 382403);	-- Blue Fireflight

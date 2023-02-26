@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						r(382376),	-- Shock-Spring Coil
 						r(382396),	-- Spring-Loaded Draconium Fabric Cutters
 						r(382401),	-- Tinker: Plane Displacer
-						r(382360),	-- Tinker Removal Kit
+						r(396777),	-- Tinker Removal Kit
 					},
 				}),
 			})),
