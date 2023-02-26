@@ -1121,6 +1121,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65630),	-- Headcover of the Speaker
 					},
 				}),
+				q(1943, {	-- Speak with Deino
+					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
+					["coord"] = { 85, 10.2, UNDERCITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { UNDEAD, TROLL },
+					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
+					["lvl"] = 26,
+				}),
 				q(66253, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Stolen Shipments
 					["qg"] = 187758,	-- Zaa'je
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
@@ -1370,6 +1379,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1944, {	-- Waters of Xavian
+					["qg"] = 5885,	-- Deino <Mage Trainer>
+					["sourceQuest"] = 1943,	-- Speak with Deino
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,

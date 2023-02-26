@@ -5133,7 +5133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 6171 },	-- Duthorian Rall
 						{ "i", 6866 },	-- Symbol of Life
 					},
-					["sourceQuest"] = 1644,	-- The Tome of Divinity (6/10)
+					["sourceQuest"] = 1780,	-- The Tome of Divinity (6/10)
 					-- #if AFTER WRATH
 					["coord"] = { 50.5, 47.5, STORMWIND_CITY },
 					-- #else
