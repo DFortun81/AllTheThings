@@ -3035,6 +3035,7 @@ _.ObjectIcons = {
 		-- #else
 		[[_.asset("Holiday_noblegarden")]],	-- Brightly Colored Egg
 		-- #endif
+	[113791] = "Interface/Icons/spell_fire_fire",	-- Brazier of Everfount
 	[126158] = "Interface/Icons/inv_misc_shadowegg",	-- Tallonkai's Dresser
 	[129127] = "Interface/Icons/inv_potion_66",	-- Gallywix's Lockbox
 	[131474] = "Interface/Icons/Creatureportrait_Nexus_Floating_Disc",	-- The Discs of Norgannon
@@ -4226,6 +4227,7 @@ _.ObjectModels = {
 	[58369] = 196976,	-- Stolen Iron Chest
 	[61935] = 198616,	-- Regulator Valve
 	[61936] = 198618,	-- Fuel Control Valve
+	[113791] = 198067,	-- Brazier of Everfount
 	[123329] = 196979,	-- Baelog's Chest
 	[129127] = 196979,	-- Gallywix's Lockbox
 	[131474] = 203420,	-- The Discs of Norgannon
