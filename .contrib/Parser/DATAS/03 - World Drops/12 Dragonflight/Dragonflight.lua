@@ -164,7 +164,6 @@ root(ROOTS.WorldDrops, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE
 		i(197742),	-- Ribbed Mollusk Meat
 		i(197743),	-- Waterfowl Filet
 		--
-		i(192644),	-- Aeriform Speck
 		i(192615),	-- Fluorescent Fluid
 		i(192658, {	-- High-Fiber Leaf
 			["crs"] = {
@@ -177,7 +176,6 @@ root(ROOTS.WorldDrops, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE
 				{ 29.7, 52.6, OHNAHRAN_PLAINS },
 			},
 		}),
-		i(192648),	-- Pristine Beast Fur
 		i(192636),	-- Woolly Mountain Pelt
 	}),
 	filter(RECIPES, {

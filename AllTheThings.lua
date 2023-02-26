@@ -395,7 +395,7 @@ app.FunctionRunner = FunctionRunner;
 end
 
 -- Sorting Logic
-(function()
+do
 local defaultComparison = function(a,b)
 	-- If either object doesn't exist
 	if a then
@@ -413,7 +413,7 @@ local defaultComparison = function(a,b)
 		return a < b;
 	end
 	local acomp, bcomp;
-	-- Maps 1st
+	-- Maps
 	acomp = a.mapID;
 	bcomp = b.mapID;
 	if acomp then
@@ -421,7 +421,7 @@ local defaultComparison = function(a,b)
 	elseif bcomp then
 		return false;
 	end
-	-- Raids/Encounter 2nd
+	-- Raids/Encounter
 	acomp = a.isRaid;
 	bcomp = b.isRaid;
 	if acomp then
@@ -429,7 +429,15 @@ local defaultComparison = function(a,b)
 	elseif bcomp then
 		return false;
 	end
-	-- Quests 3rd
+	-- Headers
+	acomp = a.headerID;
+	bcomp = b.headerID;
+	if acomp then
+		if not bcomp then return true; end
+	elseif bcomp then
+		return false;
+	end
+	-- Quests
 	acomp = a.questID;
 	bcomp = b.questID;
 	if acomp then
@@ -437,7 +445,7 @@ local defaultComparison = function(a,b)
 	elseif bcomp then
 		return false;
 	end
-	-- Items 4th
+	-- Items
 	acomp = a.itemID;
 	bcomp = b.itemID;
 	if acomp then
@@ -657,7 +665,7 @@ local function SortGroupDelayed(group, sortType, row, recur, conditionField)
 	group.SortInfo = { sortType, row, recur, conditionField };
 end
 app.SortGroupDelayed = SortGroupDelayed;
-end)();
+end	-- Sorting Logic
 
 -- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
 -- with a default fallback value if the field does not exist on the table entry
@@ -8255,6 +8263,26 @@ app.NestSourceQuestsV2 = function(questChainRoot, questID)
 	end
 end
 
+local TagType = Enum.QuestTagType;
+local DefaultIcon = app.asset("Interface_WorldQuest");
+local WorldQuestTypeIcons = {
+	-- [TagType.Tag] = DefaultIcon,
+	[TagType.Profession] = app.asset("Category_Crafting"),
+	-- [TagType.Normal] = DefaultIcon,
+	[TagType.PvP] = app.asset("Category_PvP"),
+	[TagType.PetBattle] = app.asset("Category_PetBattles"),
+	[TagType.Bounty] = 2125377,	-- Inv_bountyhunting
+	[TagType.Dungeon] = app.asset("Category_GroupFinder"),
+	[TagType.Invasion] = app.asset("Interface_Linvas"),
+	[TagType.Raid] = app.asset("Category_D&R"),
+	[TagType.Contribution] = app.asset("Interface_Vendor"),
+	-- [TagType.RatedReward] = DefaultIcon,
+	[TagType.InvasionWrapper] = app.asset("Interface_Linvas"),
+	[TagType.FactionAssault] = 1044536,	-- Achievement_garrison_invasion_gold
+	[TagType.Islands] = app.asset("Category_Zones"),
+	[TagType.Threat] = app.asset("Interface_World_boss"),
+	[TagType.CovenantCalling] = app.asset("Interface_Emissary_Callings"),
+};
 local questFields = {
 	["key"] = function(t)
 		return "questID";

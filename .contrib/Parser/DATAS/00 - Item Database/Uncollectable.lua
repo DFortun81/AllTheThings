@@ -10,6 +10,13 @@ end
 i(200842);	-- Power-Depleted Staff
 i(200785);	-- Argali Wool Rug
 i(200786);	-- Marbled Broadhoof Brisket
+i(200808);	-- Runestone Shards
+i(200795);	-- Sickly Egg Sacs
+i(200793);	-- Decorative Sail
+i(200800);	-- Fool's Gold
+i(200832);	-- Geode Splinters
+i(192648);	-- Pristine Beast Fur
+i(192644);	-- Aeriform Speck
 
 -- SL
 i(179293);	-- Glimmering Facial Cream
@@ -20,16 +27,13 @@ i(181796);	-- Emergency Supplies Key
 i(190172);	-- Title Reward: Gauntlet Runner
 i(184412);	-- Title Reward: Spirestalker
 i(187533);	-- Greater Phial of Serenity (via maw assault)
-
 i(174969);	-- Alpaca Saddlebag (Vulpera Backpack)
-
 i(181781);	-- Almost Empty Amontillado Cask
 i(183596);	-- Broken Artifact
 i(191734);	-- Motion Sick Peon's Magical Elixir
 
 -- Tailoring
 i(184480);	-- Lightless Silk Pouch
-
 
 -- 9.1 (no unsorted yet so don't know categories)
 i(186472);	-- Wisps of Memory
