@@ -2015,7 +2015,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 3444,	-- Dig Rat
 				}),
 				i(78342, {	-- Plump Dig Rat
-					["recipeID"] = 6417,	-- Dig Rat Stew
 					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },
 					["requireSkill"] = COOKING,
 					["cr"] = 3444,	-- Dig Rat
