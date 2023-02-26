@@ -127,12 +127,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74093,
 			}),
 			n(187219, {	-- Nokhud Warmaster
+				["description"] = "Spawns during the Aylaag Caravan escort from River Camp to Eaglewatch Outpost.",
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
 				-- ["g"] = {
 				-- },
 			}),
 			n(196350, {	-- Old Stormhide
+				["description"] = "Spawns during the Aylaag Caravan escort from Eaglewatch Outlook to Aylaag Outpout.",
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
 				-- ["g"] = {
@@ -272,6 +274,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(196334, {	-- The Great Enla <Scourge of the Plains>
+				["description"] = "Spawns during the Aylaag Caravan escort from Eaglewatch Outpost to Aylaag Outpost.",
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
 				-- ["g"] = {
