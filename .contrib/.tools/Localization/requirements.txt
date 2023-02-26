@@ -1,0 +1,9 @@
+aiohttp
+beautifulsoup4
+
+black
+flake8
+pep8-naming
+mypy
+types-beautifulsoup4
+pre-commit
