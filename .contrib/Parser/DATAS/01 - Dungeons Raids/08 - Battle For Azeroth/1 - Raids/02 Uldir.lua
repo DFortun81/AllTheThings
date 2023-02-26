@@ -18,8 +18,8 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(12806, {	-- Glory of the Uldir Raider
 				ach(12537),	-- Uldir Guild Run
+				ach(12806, {	-- Glory of the Uldir Raider
 					i(163216),	-- Bloodgorged Crawg (MOUNT!)
 				}),
 				ach(12521),	-- Halls of Containment
