@@ -5191,23 +5191,14 @@ local function DeterminePurchaseGroups(group, FillData)
 
 	local collectibles = group.costCollectibles;
 	if collectibles and #collectibles > 0 then
-		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-collectibles",collectibles and #collectibles);
-		local groups = {};
 		local groupHash = group.hash;
-		local depth, included = FillData.Depth, FillData.Included;
-		local clone, hash;
+		-- app.PrintDebug("DeterminePurchaseGroups",groupHash,"-collectibles",collectibles and #collectibles);
+		local groups = {};
+		local clone;
 		for _,o in ipairs(collectibles) do
-			hash = o.hash;
-			-- don't add copies of this group if it matches the 'cost' group, or has already been added at a lower depth
-			-- technically this allows something to become nested at a high depth, and then multiple times at lower depths...
-			-- but hopefully that's ok and is a bit better for visibility than to exclude things
-			if hash ~= groupHash and not included[hash] then
-				-- once something is filled, don't fill under it regardless of depth
-				included[hash] = depth;
+			if o.hash ~= groupHash then
 				-- app.PrintDebug("Purchase @",depth,groupHash,"=>",hash)
 				clone = CreateObject(o);
-				-- this logic shows the previous 'currency' icon next to Things which are nested as a cost... maybe too cluttered
-				-- clone.indicatorIcon = "Interface_Vendor";
 				tinsert(groups, clone);
 			end
 		end
@@ -5230,7 +5221,6 @@ local function DetermineCraftedGroups(group, FillData)
 	local filterSkill = not app.MODE_DEBUG and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
 
 	local craftableItemIDs = {};
-	local included = FillData.Included;
 	-- item is BoP
 	if filterSkill then
 		local craftedItemID, searchRecipes, recipe, skillID;
@@ -5241,7 +5231,7 @@ local function DetermineCraftedGroups(group, FillData)
 			craftedItemID = info[1];
 			-- print(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID);
 			-- TODO: review how this can be nil
-			if craftedItemID and not craftableItemIDs[craftedItemID] and not included[craftedItemID] then
+			if craftedItemID and not craftableItemIDs[craftedItemID] then
 				-- print("recipeID",recipeID);
 				searchRecipes = app.SearchForField("spellID", recipeID);
 				if searchRecipes and #searchRecipes > 0 then
@@ -5274,17 +5264,13 @@ local function DetermineCraftedGroups(group, FillData)
 	local groups = {};
 	local search;
 	for craftedItemID,_ in pairs(craftableItemIDs) do
-		-- never include crafted multiple times
-		if not included[craftedItemID] then
-			included[craftedItemID] = true;
-			-- Searches for a filter-matched crafted Item
-			search = app.SearchForObject("itemID",craftedItemID,"field");
-			if search then
-				search = CreateObject(search);
-			end
-			-- could do logic here to tack on the profession's spellID icon
-			tinsert(groups, search or app.CreateItem(craftedItemID));
+		-- Searches for a filter-matched crafted Item
+		search = app.SearchForObject("itemID",craftedItemID,"field");
+		if search then
+			search = CreateObject(search);
 		end
+		-- could do logic here to tack on the profession's spellID icon
+		tinsert(groups, search or app.CreateItem(craftedItemID));
 	end
 	-- app.PrintDebug("DetermineCraftedGroups",group.hash,groups and #groups);
 	if #groups > 0 then
@@ -5360,8 +5346,13 @@ local function DetermineNPCDrops(group)
 		end
 	end
 end
-local function SkipFillingGroup(group)
+local function SkipFillingGroup(group, FillData)
 	if group.skipFilling then return true; end
+
+	-- do not fill the same object twice in multiple Locations
+	local groupHash, included = group.hash, FillData.Included;
+	if included[groupHash] then return true; end
+
 	-- do not fill 'saved' groups in ATT tooltips
 	-- or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT then
@@ -5371,11 +5362,14 @@ local function SkipFillingGroup(group)
 		-- parent is a saved quest, then do not fill with stuff
 		if parent and parent.questID and parent.saved then return true; end
 	end
+
+	-- mark this group as being filled since it is not being skipped
+	included[groupHash] = true;
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
 local function FillGroupsRecursive(group, FillData)
 	-- app.PrintDebug("FillGroups",group.hash,depth)
-	if SkipFillingGroup(group) then return; end
+	if SkipFillingGroup(group, FillData) then return; end
 
 	-- app.PrintDebug("FillGroups",group.hash,depth)
 	-- increment depth if things are being nested
@@ -5411,7 +5405,7 @@ end
 -- over multiple frames to reduce stutter
 local function FillGroupsRecursiveAsync(group, FillData)
 	-- app.PrintDebug("FillGroupsAsync",group.hash,depth)
-	if SkipFillingGroup(group) then return; end
+	if SkipFillingGroup(group, FillData) then return; end
 
 	-- increment depth if things are being nested
 	FillData.Depth = FillData.Depth + 1;
@@ -5453,7 +5447,7 @@ app.FillGroups = function(group)
 	local isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
 	-- Setup the FillData for this fill operation
 	local FillData = {
-		Included = { [group.hash or ""] = 0, [group.itemID or 0] = 0 },
+		Included = {},
 		Depth = 0,
 		IsInWindow = isInWindow,
 	};
