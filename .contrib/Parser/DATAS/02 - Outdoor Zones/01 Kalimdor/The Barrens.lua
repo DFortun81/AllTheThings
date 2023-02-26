@@ -856,6 +856,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 5),
 					["groups"] = {
+						-- #if AFTER CATA
+						objective(1, {	-- 0/30 Quilboar Tusk
+							["provider"] = { "i", 5085 },	-- Quilboar Tusk
+							["crs"] = {
+								3261,	-- Bristleback Thornweaver
+								3266,	-- Razormane Defender
+								34545,	-- Razormane Frenzy
+								3269,	-- Razormane Geomancer
+								3265,	-- Razormane Hunter
+								3271,	-- Razormane Mystic
+								34503,	-- Razormane Pillager
+								3267,	-- Razormane Plunderer
+								3268,	-- Razormane Thornweaver
+							},
+						}),
+						-- #else
+						objective(1, {	-- 0/60 Bristleback Quilboar Tusk
+							["provider"] = { "i", 5085 },	-- Bristleback Quilboar Tusk
+							["crs"] = {
+								3263,	-- Bristleback Geomancer
+								3258,	-- Bristleback Hunter
+								3261,	-- Bristleback Thornweaver
+								3260,	-- Bristleback Water Seeker
+							},
+						}),
+						-- #endif
 						i(59539, {	-- Mankrik's Old Wedding Garments
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -1379,6 +1405,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(11, 11, 5),
 					["groups"] = {
+						objective(1, {	-- 0/1 Hezrul's Head
+							["provider"] = { "i", 5025 },	-- Hezrul's Head
+							-- #if AFTER CATA
+							["coord"] = { 42.6, 74.8, NORTHERN_BARRENS },
+							-- #else
+							["coord"] = { 46.8, 38.6, THE_BARRENS },
+							-- #endif
+							["cr"] = 3396,	-- Hezrul Bloodmark
+						}),
 						i(59585, {	-- Lushwater Cloak
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2813,6 +2848,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 5),
 					["groups"] = {
+						-- #if AFTER CATA
+						objective(1, {	-- 0/1 Lieutenant Buckland slain
+							["provider"] = { "n", 34753 },	-- Lieutenant Buckland <Northwatch Expeditionary Unit>
+						}),
+						objective(2, {	-- 0/1 Lieutenant Pyre slain
+							["provider"] = { "n", 34752 },	-- Lieutenant Pyre <Northwatch Expeditionary Unit>
+						}),
+						objective(3, {	-- 0/10 Theramore Medal
+							["provider"] = { "i", 5078 },	-- Theramore Medal
+							["crs"] = {
+								5629,	-- Theramore Commando
+								34707,	-- Theramore Deck Hand
+								3385,	-- Theramore Marine
+								3386,	-- Theramore Preserver
+								34706,	-- Theramore Sharpshooter
+							},
+						}),
+						-- #else
+						objective(1, {	-- 0/1 Captain Fairmount slain
+							["provider"] = { "n", 3393 },	-- Captain Fairmount
+							["coord"] = { 61.8, 54.8, THE_BARRENS },
+						}),
+						objective(2, {	-- 0/1 Cannoneer Whessan slain
+							["provider"] = { "n", 3455 },	-- Cannoneer Whessan
+							["coord"] = { 60.4, 54.8, THE_BARRENS },
+						}),
+						objective(3, {	-- 0/1 Cannoneer Smythe slain
+							["provider"] = { "n", 3454 },	-- Cannoneer Smythe
+							["coord"] = { 63.0, 56.6, THE_BARRENS },
+						}),
+						objective(4, {	-- 0/10 Theramore Medal
+							["provider"] = { "i", 5078 },	-- Theramore Medal
+							["crs"] = {
+								3385,	-- Theramore Marine
+								3386,	-- Theramore Preserver
+							},
+						}),
+						-- #endif
 						i(5309, {	-- Privateer Musket
 							["timeline"] = { "removed 4.0.3" },	-- NOTE: Old reward, quest repurposed, original quest name was The Guns of Northwatch
 						}),
