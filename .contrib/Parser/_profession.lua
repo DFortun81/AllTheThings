@@ -179,7 +179,7 @@ TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(29545),	-- Fel Iron Plate Gloves
 		r(29549),	-- Fel Iron Plate Pants
 	}),
-	n(MISC, {
+	filter(MISC, {
 		r(32655, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Fel Iron Rod
 		r(29654),	-- Fel Sharpening Stone
 		r(34607),	-- Fel Weightstone
