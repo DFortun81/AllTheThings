@@ -21,9 +21,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74446,
 				["isDaily"] = true,
 				["g"] = {
-					i(200237), -- burnished lifewarders targe
-					i(200086), -- khazgorite infused resin
-					i(200154), -- rubyscale band
+					i(200086), -- Khaz'gorite-infused Resin (IF!)
 				},
 			}),
 			n(196768, {	-- Primal Bear Cub

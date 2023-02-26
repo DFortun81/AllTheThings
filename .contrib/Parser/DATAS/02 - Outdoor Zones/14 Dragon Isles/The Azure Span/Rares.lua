@@ -3,18 +3,14 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
-		n(RARES, sharedData({["isDaily"] = true},{
+		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(194270, {	-- Arcane Devourer
 				["coord"] = { 53.0, 35.6, THE_AZURE_SPAN },
 				["questID"] = 73866,
-				-- ["g"] = {
-				-- },
 			}),
 			n(194210, {	-- Azure Pathfinder
 				["coord"] = { 60.7, 31.7, THE_AZURE_SPAN },
 				["questID"] = 73867,
-				-- ["g"] = {
-				-- },
 			}),
 			n(193116, {	-- Beogoka
 				["coord"] = { 73.0, 26.6, THE_AZURE_SPAN },
@@ -44,19 +40,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(194392, {	-- Brackle
 				["coord"] = { 8.7, 48.6, THE_AZURE_SPAN },
 				["questID"] = 73871,
-				["g"] = {
-					i(200448),	-- Abyssal Ward
-					i(200151),	-- Seamist Blade
-				},
 			}),
 			n(186962, {	-- Cascade
 				["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
 				["questID"] = 72836,
 				["isDaily"] = false,
-				["g"] = {
-					i(200135),	-- Corroded Greatsword
-					i(200187),	-- Rod of Glacial Force
-				},
 			}),
 			n(193157, {	-- Dragonhunter Gorund
 				["coord"] = { 27.8, 45.8, THE_AZURE_SPAN },
@@ -72,9 +60,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 72730,
 				["isDaily"] = false,
 				["g"] = {
-					i(200256),	-- Darkmaul Soul Horn
-					i(200158),	-- Eerie Spectral Ring
-					i(200187),	-- Rod of Glacial Force
 					i(198070),	-- Tattered Seavine (IF!)
 				},
 			}),
@@ -82,45 +67,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 38.2, 59.0, THE_AZURE_SPAN },
 				["questID"] = 72840,
 				["isDaily"] = false,
-				["g"] = {
-					i(200210),	-- Amnesia
-				},
 			}),
 			n(193698, {	-- Frigidpelt Den Mother
 				["coord"] = { 64.7, 29.9, THE_AZURE_SPAN },
 				["questID"] = 73876,
-				-- ["g"] = {
-				-- },
 			}),
 			n(191356, {	-- Frostpaw
+				["description"] = "Can be spawned when the three toys are present on the stump nearby- use the hammer at 58.6, 43.4.",
 				["coord"] = { 58.2, 43.7, THE_AZURE_SPAN },
 				["questID"] = 73877,
-				["description"] = "Can be spawned when the three toys are present on the stump nearby- use the hammer at 58.6, 43.4.",
-				-- ["g"] = {
-				-- },
 			}),
 			n(197354, {	-- Gnarls
 				["coord"] = { 14.1, 37.5, THE_AZURE_SPAN },
 				["questID"] = 73996,
-				["g"] = {
-					i(200259),	-- Forest Dweller's Shield
-					i(200267),	-- Reinforced Garden Tenders
-				},
 			}),
-			-- n(193251),	-- Gruffy // under DF/Timed Based Rare
-			-- n(193269),	-- Grumbletrunk // under DF/Timed Based Rare
+		--	n(193251),	-- Gruffy // under DF/Timed Based Rare
+		--	n(193269),	-- Grumbletrunk // under DF/Timed Based Rare
 			n(197356, {	-- High Shaman Rotknuckle
 				["coord"] = { 16.2, 33.6, THE_AZURE_SPAN },
 				["questID"] = 74004,
-				["g"] = {
-					i(200178),	-- Infested Ichor (TOY!)
-				},
 			}),
 			n(190244, {	-- Mahg the Trampler
 				["coord"] = { 36.8, 35.8, THE_AZURE_SPAN },
 				["questID"] = 73883,
 				["g"] = {
-					i(200684),	-- Emerald tailbone
 					i(200157),	-- Pathmaker
 				},
 			}),
@@ -135,10 +105,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(198004, {	-- Mange the Outcast
 				["coord"] = { 40.4, 48.4, THE_AZURE_SPAN },
 				["questID"] = 73884,
-				["g"] = {
-					i(200283),	-- Gnoll-Gnawed Breeches
-					i(200266),	-- Gnollish Chewtoy Launcher
-				},
 			}),
 			n(201561,	-- Motivator Krathos
 			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
@@ -149,12 +115,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			})),
 			n(193201, {	-- Mucka the Raker
+				["description"] = "In order to fully kill this rare and not have her reset on you, you have to kill two Mucklings in the area. They like to get stuck in rocks.",
 				["coord"] = { 57.2, 53.6, THE_AZURE_SPAN },
 				["questID"] = 73885,
-				["description"] = "In order to fully kill this rare and not have her reset on you, you have to kill two Mucklings in the area. They like to get stuck in rocks.",
-				["g"] = {
-					-- Rest is under shared Lv70 Elite Rare Drops
-				},
 			}),
 			n(193225, {	-- Notfar the Unbearable
 				["crs"] = { 198703 },	-- Gutrot Slime
@@ -174,12 +137,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
 				["questID"] = 72846,
 				["isDaily"] = false,
-				["g"] = {
-					i(200283),	-- Gnoll-Gnawed Breeches
-					i(200266),	-- Gnollish Chewtoy Launcher
-				},
 			}),
-			-- n(193149),	-- Skag the Thrower // under DF/Timed Based Rare
+		--	n(193149),	-- Skag the Thrower // under DF/Timed Based Rare
 			n(197344, {	-- Snarglebone
 				["coord"] = { 11.1, 32.2, THE_AZURE_SPAN },
 				["questID"] = 74032,
@@ -203,9 +162,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
 				["questID"] = 72848,
 				["isDaily"] = false,
-				["g"] = {
-					i(200868),	-- Integrated Primal Fire
-				},
 			}),
 			n(193167, {	-- Swagraal the Swollen
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
@@ -232,9 +188,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 72853,
 				["isDaily"] = false,
 				["g"] = {
-					i(201728, {	-- Vakril's Strongbox
-						i(200187),	-- Rod of Glacial Force
-					}),
+					i(201728),	-- Vakril's Strongbox
 				},
 			}),
 			n(201556,	-- Waterpots

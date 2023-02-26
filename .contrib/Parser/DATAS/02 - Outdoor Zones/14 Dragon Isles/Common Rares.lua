@@ -18,11 +18,14 @@ local RARE_GROUP_TWO = {
 	197356,	-- High Shaman Rotknuckle
 };
 local RARE_GROUP_THREE = {
-	193178,	-- Blightfur
-	193691,	-- Fisherman Tinnak <Angered Ghost>
-	193154,	-- Forgotten Gryphon
-	193256,	-- Nulltheria the Void Gazer
-	187559,	-- Shade of Grief
+	193704,	-- Honmor
+	186827,	-- Magmaton
+	190244,	-- Mahg the Trampler
+	193118,	-- O'nank Shorescour
+	193235,	-- Oshigol
+	193149,	-- Skag the Thrower
+	184456,	-- Spellforged Brute
+	194763,	-- Tenmod
 };
 local RARE_GROUP_FOUR = {
 	194392,	-- Brackle
@@ -33,6 +36,23 @@ local RARE_GROUP_FOUR = {
 	193181,	-- Skewersnout <Raypier of the Deep>
 	193634,	-- Swog'ranka <Lunker>
 };
+local RARE_GROUP_FIVE = {
+	190991,	-- Char
+	193658,	-- Corrupted Proto-Dragon
+	201557,	-- Graniteclaw
+	187209,	-- Klozicc the Ascended
+	193668,	-- Lookout Mordren
+	201558,	-- Malgain Rockknell
+	193173,	-- Mikrin of the Raging Winds
+	193669,	-- Prozela Galeshot <Stormcaller Headmaster>
+	193215,	-- Scaleseeker Mezeri
+	201545,	-- Shapemaster Za'lani
+	201559,	-- Shiobhan Waterborn
+	193165,	-- Sparkspitter Vrak
+	193171,	-- Terillod the Devout
+	191354,	-- Ty'foon the Ascended
+	201556,	-- Waterpots <The Splasher>
+};
 local RARE_GROUP_DRAGONKIN = {
 	193243,	-- Acrosoth
 	187111,	-- Ancient Hornswog
@@ -40,6 +60,13 @@ local RARE_GROUP_DRAGONKIN = {
 	193143,	-- Razk'vex the Untamed
 	196010,	-- Researcher Sneakwing <The Sundered Flame>
 	193722,	-- Tomnu
+};
+local RARE_GROUP_SPECTRAL = {
+	193178,	-- Blightfur
+	193691,	-- Fisherman Tinnak <Angered Ghost>
+	193154,	-- Forgotten Gryphon
+	193256,	-- Nulltheria the Void Gazer
+	187559,	-- Shade of Grief
 };
 local RARE_GROUP_GHENDISH = {
 	189652,	-- Deadwaker Ghendish
@@ -80,6 +107,7 @@ local RARE_GROUP_WATER = {
 	195286,	-- Mantai
 	194225,	-- Muugurv
 	193710,	-- Seereel, the Spring <Lunker>
+	201559,	-- Shiobhan Waterborn
 	193175,	-- Slurpo, the Incredible Snail
 	193706,	-- Snufflegust <Lunker>
 	193238,	-- Spellwrought Snowman
@@ -128,6 +156,7 @@ local RARE_GROUP_BIQ = {
 	193152,	-- Massive Magmashell
 	195093,	-- Moskhoi
 	192737,	-- Qalashi War Mammoth <Qalashi War Party>
+	193708,	-- Skald the Impaler <Lunker>
 	193120,	-- Smogswog the Firebreather
 	193288,	-- Summoned Destroyer
 	186859,	-- Worldcarver A'tir
@@ -145,6 +174,44 @@ local RARE_GROUP_AZRA = {
 	193135,	-- Azra's Prized Peony
 	197354,	-- Gnarls
 	201549,	-- Morlash <The Unquenchable>
+};
+local RARE_GROUP_SUNDER = {
+	201553,	-- Grand Artificer Zeerak <The Sundered Flame>
+	197009,	-- Liskheszaera
+	201561,	-- Movtivator Krathos <The Sundered Flame>
+	201555,	-- Srivantor <The Sundered Flame>
+	193196,	-- Trilvarus Loreweaver
+};
+local RARE_GROUP_DRAGONKIN_SMALL = {
+	196165,	-- Gethdazr
+	193885,	-- Salkii
+	193188,	-- Seeker Teryx
+};
+local RARE_GROUP_WIND = {
+	193173,	-- Mikrin of the Raging Winds
+	193669,	-- Prozela Galeshot <Stormcaller Headmaster>
+	193176,	-- Sandana the Tempest <Timesand Thief>
+	193165,	-- Sparkspitter Vrak
+	193258,	-- Tempestrian <Stormbringer>
+	193171,	-- Terillod the Devout
+	191354,	-- Ty'foon the Ascended
+	193209,	-- Zenet Avis <The Hard Wind>
+};
+local RARE_GROUP_TIME = {
+	193126,	-- Innumerable Ruination
+	193241,	-- Lord Epochbrgl <Time-Lost>
+	193210,	-- Phleep <Time-Lost, Mind-Lost>
+	193176,	-- Sandana the Tempest <Timesand Thief>
+};
+local RARE_GROUP_BEOGOKA = {
+	193116,	-- Beogoka
+	201557,	-- Graniteclaw
+	193225,	-- Notfar the Unbearable
+	187209,	-- Klozicc the Ascended
+};
+local RARE_GROUP_TEMPEST = {
+	193258,	-- Tempestrian <Stormbringer>
+	201562,	-- Shardwing
 };
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(RARES, {
@@ -238,9 +305,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				i(200193),	-- Manafrond Sandals
 				i(200232),	-- Raptor Talonglaive
 				i(200131),	-- Reclaimed Survivalist's Dagger
+				i(200212),	-- Sand-Encrusted Graves
 				i(200859),	-- Seasoned Hunter's Trophy
+				i(198409),	-- Personal Shell (TOY!)
 				i(200563),	-- Primal Ritual-shell
 				i(200195),	-- Thunderscale Legguards
+				i(200880),	-- Wind-Sealed Mana Capsule
 					-- Insignias @ Max Renown
 				i(200289),	-- Valdrakken Accord Insignia
 				i(200285),	-- Dragonscale Expedition Insignia
@@ -281,7 +351,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["crs"] = RARE_GROUP_DRAGONKIN,
 				}),
 				i(196985, {	-- Cliffside Wylderdrake: Horned Jaw (DM!)
-					["crs"] = RARE_GROUP_THREE,
+					["crs"] = RARE_GROUP_SPECTRAL,
 				}),
 				i(197005, {	-- Cliffside Wylderdrake: Horned Nose (DM!)
 					["crs"] = RARE_GROUP_DJARADIN,
@@ -290,44 +360,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["crs"] = RARE_GROUP_DRAGON,
 				}),
 				i(197023, {	-- Cliffside Wylderdrake: Maned Neck (DM!)
-					["crs"] = {
-						193116,	-- Beogoka
-						193225,	-- Notfar the Unbearable
-						187209,	-- Klozicc the Ascended
-					},
+					["crs"] = RARE_GROUP_BEOGOKA,
 				}),
 				i(197016, {	-- Cliffside Wylderdrake: Maned Tail (DM!)
 					["crs"] = RARE_GROUP_GHENDISH,
 				}),
 				i(197008, {	-- Cliffside Wylderdrake: Narrow Stripes Pattern (DM!)
-					["crs"] = {
-						193126,	-- Innumerable Ruination
-						193241,	-- Lord Epochbrgl <Time-Lost>
-						193210,	-- Phleep <Time-Lost, Mind-Lost>
-						193176,	-- Sandana the Tempest <Timesand Thief>
-					},
+					["crs"] = RARE_GROUP_TIME,
 				}),
 				i(196970, {	-- Cliffside Wylderdrake: Spiked Back (DM!)
-					["crs"] = {
-						196165,	-- Gethdazr
-						193885,	-- Salkii
-						193188,	-- Seeker Teryx
-					},
+					["crs"] = RARE_GROUP_DRAGONKIN_SMALL,
 				}),
 				i(196999, {	-- Cliffside Wylderdrake: Swept Horns (DM!)
 					["crs"] = RARE_GROUP_SUNDERING,
 				}),
 				i(197149, {	-- Highland Drake: Club Tail (DM!)
-					["crs"] = {
-						193704,	-- Honmor
-						186827,	-- Magmaton
-						190244,	-- Mahg the Trampler
-						193118,	-- O'nank Shorescour
-						193235,	-- Oshigol
-						193149,	-- Skag the Thrower
-						184456,	-- Spellforged Brute
-						194763,	-- Tenmod
-					},
+					["crs"] = RARE_GROUP_THREE
 				}),
 				i(197125, {	-- Highland Drake: Coiled Horns (DM!)
 					["crs"] = RARE_GROUP_DRAGON,
@@ -342,31 +390,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["crs"] = RARE_GROUP_WATER,
 				}),
 				i(197106, {	-- Highland Drake: Finned Head (DM!)
-					["crs"] = {
-						201553,	-- Grand Artificer Zeerak <The Sundered Flame>
-						197009,	-- Liskheszaera
-						201561,	-- Movtivator Krathos <The Sundered Flame>
-						201555,	-- Srivantor <The Sundered Flame>
-						193196,	-- Trilvarus Loreweaver
-					},
+					["crs"] = RARE_GROUP_SUNDER,
 				}),
 				i(197150, {	-- Highland Drake: Spiked Club Tail (DM!)
 					["crs"] = RARE_GROUP_GNOLLS,
 				}),
 				i(197105, {	-- Highland Drake: Spined Chin (DM!)
-					["crs"] = {
-						196165,	-- Gethdazr
-						193885,	-- Salkii
-						193188,	-- Seeker Teryx
-					},
+					["crs"] = RARE_GROUP_DRAGONKIN_SMALL,
 				}),
 				i(197130, {	-- Highland Drake: Stag Horns (DM!)
-					["crs"] = {
-						193126,	-- Innumerable Ruination
-						193241,	-- Lord Epochbrgl
-						193210,	-- Phleep
-						193176,	-- Sandana the Tempest
-					},
+					["crs"] = RARE_GROUP_TIME,
 				}),
 				i(197138, {	-- Highland Drake: Striped Pattern (DM!)
 					["crs"] = RARE_GROUP_ONE,
@@ -384,81 +417,34 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["crs"] = RARE_GROUP_GHENDISH,
 				}),
 				i(197383, {	-- Renewed Proto-Drake: Heavy Horns (DM!)
-					["crs"] = {
-						190991,	-- Char
-						193658,	-- Corrupted Proto-Dragon
-						187209,	-- Klozicc the Ascended
-						193668,	-- Lookout Mordren
-						193173,	-- Mikrin of the Raging Winds
-						193669,	-- Prozela Galeshot <Stormcaller Headmaster>
-						193215,	-- Scaleseeker Mezeri
-						201545,	-- Shapemaster Za'lani
-						193165,	-- Sparkspitter Vrak
-						193171,	-- Terillod the Devout
-						191354,	-- Ty'foon the Ascended
-						201556,	-- Waterpots <The Splasher>
-					},
+					["crs"] = RARE_GROUP_FIVE,
 				}),
 				i(197379, {	-- Renewed Proto-Drake: Impaler Horns (DM!)
 					["crs"] = RARE_GROUP_BIQ,
 				}),
 				i(197372, {	-- Renewed Proto-Drake: Purple Hair (DM!)
-					["crs"] = {
-						193173,	-- Mikrin of the Raging Winds
-						193669,	-- Prozela Galeshot <Stormcaller Headmaster>
-						193176,	-- Sandana the Tempest <Timesand Thief>
-						193165,	-- Sparkspitter Vrak
-						193171,	-- Terillod the Devout
-						191354,	-- Ty'foon the Ascended
-						193209,	-- Zenet Avis <The Hard Wind>
-					},
+					["crs"] = RARE_GROUP_WIND,
 				}),
 				i(197400, {	-- Renewed Proto-Drake: Shark Snout (DM!)
-					["crs"] = {
-						201553,	-- Grand Artificer Zeerak <The Sundered Flame>
-						197009,	-- Liskheszaera
-						201561,	-- Movtivator Krathos <The Sundered Flame>
-						201555,	-- Srivantor <The Sundered Flame>
-						193196,	-- Trilvarus Loreweaver
-					},
+					["crs"] = RARE_GROUP_SUNDER,
 				}),
 				i(197398, {	-- Renewed Proto-Drake: Snub Snout (DM!)
 					["crs"] = RARE_GROUP_AZRA,
 				}),
 				i(197382, {	-- Renewed Proto-Drake: White Horns (DM!)
-					["crs"] = RARE_GROUP_THREE,
+					["crs"] = RARE_GROUP_SPECTRAL,
 				}),
 				i(197624, {	-- Windborne Velocidrake: Club Tail (DM!)
 					["crs"] = RARE_GROUP_GIANT,
 				}),
 				i(197602, {	-- Windborne Velocidrake: Cluster Horns (DM!)
-					["crs"] = {
-						190991,	-- Char
-						193658,	-- Corrupted Proto-Dragon
-						201557,	-- Graniteclaw
-						187209,	-- Klozicc the Ascended
-						193668,	-- Lookout Mordren
-						193173,	-- Mikrin of the Raging Winds
-						193669,	-- Prozela Galeshot <Stormcaller Headmaster>
-						193215,	-- Scaleseeker Mezeri
-						201545,	-- Shapemaster Za'lani
-						193165,	-- Sparkspitter Vrak
-						193171,	-- Terillod the Devout
-						191354,	-- Ty'foon the Ascended
-						201556,	-- Waterpots <The Splasher>
-					},
+					["crs"] = RARE_GROUP_FIVE,
+				}),
+				i(197593, {	-- Windborne Velocidrake: Feathery Head (DM!)
+					["crs"] = RARE_GROUP_TEMPEST,
 				}),
 				i(197608, {	-- Windborne Velocidrake: Gray Horns (DM!)
-					["crs"] = {
-						193704,	-- Honmor
-						186827,	-- Magmaton
-						190244,	-- Mahg the Trampler
-						193118,	-- O'nank Shorescour
-						193235,	-- Oshigol
-						193149,	-- Skag the Thrower
-						184456,	-- Spellforged Brute
-						194763,	-- Tenmod
-					},
+					["crs"] = RARE_GROUP_THREE
 				}),
 				i(197589, {	-- Windborne Velocidrake: Large Head Fin (DM!)
 					["crs"] = RARE_GROUP_FOUR,
@@ -467,75 +453,57 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["crs"] = RARE_GROUP_ONE,
 				}),
 				i(197606, {	-- Windborne Velocidrake: Swept Horns (DM!)
-					["crs"] = {
-						193173,	-- Mikrin of the Raging Winds
-						193669,	-- Prozela Galeshot <Stormcaller Headmaster>
-						193176,	-- Sandana the Tempest <Timesand Thief>
-						193165,	-- Sparkspitter Vrak
-						193171,	-- Terillod the Devout
-						191354,	-- Ty'foon the Ascended
-						193209,	-- Zenet Avis <The Hard Wind>
-					},
+					["crs"] = RARE_GROUP_WIND,
 				}),
 			}),
 			n(ARMOR, {
+				i(200448, {	-- Abyssal Ward
+					["crs"] = RARE_GROUP_FOUR,
+				}),
 				i(200165, {	-- Aegis of Scales
 					["crs"] = RARE_GROUP_DRAGONKIN,
+				}),
+				i(200210, {	-- Amnesia
+					["crs"] = RARE_GROUP_ONE,
 				}),
 				i(200138, {	-- Ancient Dancer's Longspear
 					["crs"] = RARE_GROUP_ONE,
 				}),
+				i(200434, {	-- Anund's Mana-Singed Amice
+					["crs"] = RARE_GROUP_SUNDER,
+				}),
 				i(200217, {	-- Blazing Essence
-					["crs"] = {
-						190986,	-- Battlehorn Pyrhus
-						197557,	-- Bisquius
-						190985,	-- Death's Shadow
-						193234,	-- Eldoren the Reborn
-						193134,	-- Enkine the Voracious
-						195915,	-- Firava the Rekindler
-						193853,	-- Galnmor
-						194240,	-- Gamgus
-						193126,	-- Innumerable Ruination
-						193668,	-- Lookout Mordren
-						186827,	-- Magmaton
-						193152,	-- Massive Magmashell
-						195093,	-- Moskhoi
-						192737,	-- Qalashi War Mammoth
-						193708,	-- Skald the Impaler
-						193120,	-- Smogswog the Destroyer
-						193288,	-- Summoned Destroyer
-						186859,	-- Worldcarver A'tir
-					},
+					["crs"] = RARE_GROUP_BIQ,
+				}),
+				i(200435, {	-- Brackish Breeches
+					["crs"] = RARE_GROUP_FOUR,
 				}),
 				i(200758, {	-- Breastplate of Storied Antiquity
 					["crs"] = RARE_GROUP_ONE,
 				}),
 				i(200208, {	-- Cloud Coalescing Handwraps
-					["crs"] = {
-						193173,	-- Mikrin of the Raging Winds
-						193669,	-- Prozela Galeshot <Stormcaller Headmaster>
-						193171,	-- Terillod the Devout
-					},
+					["crs"] = RARE_GROUP_WIND,
+				}),
+				i(200292, {	-- Cragforge Pauldrons
+					["crs"] = RARE_GROUP_FIVE,
+				}),
+				i(200446, {	-- Crystalized Sigil
+					["crs"] = RARE_GROUP_SUNDER,
 				}),
 				i(200313, {	-- Earthen Protoscale Drape
-					["crs"] = {
-						190991,	-- Char
-						201557,	-- Graniteclaw
-						187209,	-- Klozicc the Ascended
-						193668,	-- Lookout Mordren
-						201558,	-- Malgain Rockknell
-						193173,	-- Mikrin of the Raging Winds
-						193669,	-- Prozela Galeshot <Stormcaller Headmaster>
-						193215,	-- Scaleseeker Mezeri
-						201545,	-- Shapemaster Za'lani
-						193165,	-- Sparkspitter Vrak
-						193171,	-- Terillod the Devout
-						191354,	-- Ty'foon the Ascended
-						201556,	-- Waterpots <The Splasher>
-					},
+					["crs"] = RARE_GROUP_FIVE,
+				}),
+				i(200158, {	-- Eerie Spectral Ring
+					["crs"] = RARE_GROUP_SPECTRAL,
 				}),
 				i(200244, {	-- Enchanted Muckstompers
 					["crs"] = RARE_GROUP_GIANT,
+				}),
+				i(200283, {	-- Gnoll-Gnawed Breeches
+					["crs"] = RARE_GROUP_GNOLLS,
+				}),
+				i(200682, {	-- Hardened Scale Shoulderguards
+					["crs"] = RARE_GROUP_DRAGONKIN,
 				}),
 				i(200441, {	-- Jhakan's Horned Cowl
 					["crs"] = RARE_GROUP_GHENDISH,
@@ -543,148 +511,152 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				i(200164, {	-- Iceloop
 					["crs"] = RARE_GROUP_WATER,
 				}),
+				i(200868, {	-- Integrated Primal Fire
+					["crs"] = RARE_GROUP_BIQ,
+				}),
 				i(200683, {	-- Legguards of the Deep Strata
 					["crs"] = RARE_GROUP_GIANT,
 				}),
 				i(200246, {	-- Lost Delving Lamp
 					["crs"] = RARE_GROUP_GIANT,
 				}),
+				i(200126, {	-- Mantle of Copious Chronologies
+					["crs"] = RARE_GROUP_TIME,
+				}),
+				i(200293, {	-- Primal Scion's Twinblade
+					["crs"] = RARE_GROUP_FIVE,
+				}),
+				i(200228, {	-- Protoscale Pauldrons
+					["crs"] = RARE_GROUP_DRAGONKIN,
+				}),
 				i(200757, {	-- Qalashi War-Helm
 					["crs"] = RARE_GROUP_DJARADIN,
 				}),
+				i(200161, {	-- Razorwind Talisman
+					["crs"] = RARE_GROUP_WIND,
+				}),
+				i(200267, {	-- Reinforced Garden Tenders
+					["crs"] = RARE_GROUP_AZRA,
+				}),
+				i(200203, {	-- Repurposed Giant's Thimble
+					["crs"] = RARE_GROUP_THREE,
+				}),
+				i(200689, {	-- Rimetalon Band
+					["crs"] = RARE_GROUP_SUNDERING,
+				}),
 				i(200163, {	-- Ring of Embers
-					["crs"] = {
-						190986,	-- Battlehorn Pyrhus
-						197557,	-- Bisquius
-						190985,	-- Death's Shadow
-						193234,	-- Eldoren the Reborn
-						193134,	-- Enkine the Voracious
-						195915,	-- Firava the Rekindler
-						193853,	-- Galnmor
-						194240,	-- Gamgus
-						193126,	-- Innumerable Ruination
-						193668,	-- Lookout Mordren
-						186827,	-- Magmaton
-						193152,	-- Massive Magmashell
-						195093,	-- Moskhoi
-						192737,	-- Qalashi War Mammoth
-						193708,	-- Skald the Impaler
-						193120,	-- Smogswog the Destroyer
-						193288,	-- Summoned Destroyer
-						186859,	-- Worldcarver A'tir
-					},
+					["crs"] = RARE_GROUP_BIQ,
+				}),
+				i(200432, {	-- Rotguard Cowl
+					["crs"] = RARE_GROUP_TWO,
+				}),
+				i(200154, {	-- Rubyscale Band
+					["crs"] = RARE_GROUP_DRAGONKIN_SMALL,
+				}),
+				i(200204, {	-- Sandshine Chestplate
+					["crs"] = RARE_GROUP_DRAGON,
+				}),
+				i(200314, {	-- Skyspeaker's Envelope
+					["crs"] = RARE_GROUP_WIND,
 				}),
 				i(200310, {	-- Stole of the Iron Phantom
-					["crs"] = RARE_GROUP_THREE,
+					["crs"] = RARE_GROUP_SPECTRAL,
+				}),
+				i(200438, {	-- Surcoat of the Chastigator
+					["crs"] = RARE_GROUP_DRAGONKIN,
+				}),
+				i(200306, {	-- Tempest Shawl
+					["crs"] = RARE_GROUP_WIND,
+				}),
+				i(200202, {	-- Tomorrow's Chains
+					["crs"] = RARE_GROUP_TIME,
 				}),
 				i(200552, {	-- Torrent Caller's Shell
 					["crs"] = RARE_GROUP_WATER,
 				}),
 				i(200254, {	-- Totemic Cinch
-					["crs"] = {
-						193116,	-- Beogoka
-						201557,	-- Graniteclaw
-						193225,	-- Notfar the Unbearable
-						187209,	-- Klozicc the Ascended
-					},
+					["crs"] = RARE_GROUP_BEOGOKA,
 				}),
 				i(200172, {	-- Zephyrdance Signet
-					["crs"] = {
-						193173,	-- Mikrin of the Raging Winds
-						193669,	-- Prozela Galeshot <Stormcaller Headmaster>
-						193176,	-- Sandana the Tempest <Timesand Thief>
-						193165,	-- Sparkspitter Vrak
-						193258,	-- Tempestrian <Stormbringer>
-						193171,	-- Terillod the Devout
-						191354,	-- Ty'foon the Ascended
-						193209,	-- Zenet Avis <The Hard Wind>
-					},
+					["crs"] = RARE_GROUP_WIND,
 				}),
 			}),
 			n(WEAPONS, {
+				i(200237, {	-- Burnished Lifewarder's Targe
+					["crs"] = RARE_GROUP_DRAGONKIN_SMALL,
+				}),
+				i(200135, {	-- Corroded Greatsword
+					["crs"] = RARE_GROUP_WATER,
+				}),
+				i(200256, {	-- Darkmaul Soul Horn
+					["crs"] = RARE_GROUP_SPECTRAL,
+				}),
 				i(200303, {	-- Dreamweaver Acolyte's Staff
 					["crs"] = RARE_GROUP_TITAN,
 				}),
+				i(200684, {	-- Emerald Tailbone
+					["crs"] = RARE_GROUP_THREE,
+				}),
+				i(200259, {	-- Forest Dweller's Shield
+					["crs"] = RARE_GROUP_AZRA,
+				}),
+				i(200266, {	-- Gnollish Chewtoy Launcher
+					["crs"] = RARE_GROUP_GNOLLS,
+				}),
+				i(200127, {	-- Gold-Alloy Blade
+					["crs"] = RARE_GROUP_TWO,
+				}),
+				i(200297, {	-- Hastily Cobbled Maul
+					["crs"] = RARE_GROUP_SUNDERING,
+				}),
 				i(200247, {	-- Inextinguishable Gavel
-					["crs"] = {
-						190986,	-- Battlehorn Pyrhus
-						197557,	-- Bisquius
-						190985,	-- Death's Shadow
-						193234,	-- Eldoren the Reborn
-						193134,	-- Enkine the Voracious
-						195915,	-- Firava the Rekindler
-						193853,	-- Galnmor
-						194240,	-- Gamgus
-						193126,	-- Innumerable Ruination
-						193668,	-- Lookout Mordren
-						186827,	-- Magmaton
-						193152,	-- Massive Magmashell
-						195093,	-- Moskhoi
-						192737,	-- Qalashi War Mammoth
-						193708,	-- Skald the Impaler
-						193120,	-- Smogswog the Destroyer
-						193288,	-- Summoned Destroyer
-						186859,	-- Worldcarver A'tir
-					},
+					["crs"] = RARE_GROUP_BIQ,
 				}),
 				i(200245, {	-- Leviathan Lure
 					["crs"] = RARE_GROUP_WATER,
 				}),
 				i(200252, {	-- Molten Flak Cannon
-					["crs"] = {
-						190986,	-- Battlehorn Pyrhus
-						197557,	-- Bisquius
-						190985,	-- Death's Shadow
-						193234,	-- Eldoren the Reborn
-						193134,	-- Enkine the Voracious
-						195915,	-- Firava the Rekindler
-						193853,	-- Galnmor
-						194240,	-- Gamgus
-						193126,	-- Innumerable Ruination
-						193668,	-- Lookout Mordren
-						186827,	-- Magmaton
-						193152,	-- Massive Magmashell
-						195093,	-- Moskhoi
-						192737,	-- Qalashi War Mammoth
-						193708,	-- Skald the Impaler
-						193120,	-- Smogswog the Destroyer
-						193288,	-- Summoned Destroyer
-						186859,	-- Worldcarver A'tir
-					},
+					["crs"] = RARE_GROUP_BIQ,
+				}),
+				i(200233, {	-- Paradox Saber
+					["crs"] = RARE_GROUP_DRAGON,
 				}),
 				i(200169, {	-- Protector's Molten Cudgel
 					["crs"] = RARE_GROUP_DJARADIN,
 				}),
+				i(200308, {	-- Rellen's Legacy
+					["crs"] = RARE_GROUP_GHENDISH,
+				}),
+				i(200187, {	-- Rod of Glacial Force
+					["crs"] = RARE_GROUP_WATER,
+				}),
+				i(200151, {	-- Seamist Blade
+					["crs"] = RARE_GROUP_FOUR,
+				}),
 				i(200253, {	-- Snowspring Incanter's Knife
-					["crs"] = {
-						193116,	-- Beogoka
-						201557,	-- Graniteclaw
-						193225,	-- Notfar the Unbearable
-						187209,	-- Klozicc the Ascended
-					},
+					["crs"] = RARE_GROUP_BEOGOKA,
+				}),
+				i(200241, {	-- Stormcaller's Ritual Hatchet
+					["crs"] = RARE_GROUP_TEMPEST,
+				}),
+				i(200299, {	-- Strange Clockwork Gladius
+					["crs"] = RARE_GROUP_TITAN,
+				}),
+				i(198429, {	-- Typhoon Bringer
+					["crs"] = RARE_GROUP_WIND,
 				}),
 				i(200133, {	-- Volcanic Chakram
-					["crs"] = {
-						190986,	-- Battlehorn Pyrhus
-						197557,	-- Bisquius
-						190985,	-- Death's Shadow
-						193234,	-- Eldoren the Reborn
-						193134,	-- Enkine the Voracious
-						195915,	-- Firava the Rekindler
-						193853,	-- Galnmor
-						194240,	-- Gamgus
-						193126,	-- Innumerable Ruination
-						193668,	-- Lookout Mordren
-						186827,	-- Magmaton
-						193152,	-- Massive Magmashell
-						195093,	-- Moskhoi
-						192737,	-- Qalashi War Mammoth
-						193708,	-- Skald the Impaler
-						193120,	-- Smogswog the Destroyer
-						193288,	-- Summoned Destroyer
-						186859,	-- Worldcarver A'tir
-					},
+					["crs"] = RARE_GROUP_BIQ,
 				}),
+				i(200242, {	-- Watcher's Lightning Rod
+					["crs"] = RARE_GROUP_TEMPEST,
+				}),
+			}),
+			i(200148, {	-- A Collection of Me (TOY!)
+				["crs"] = RARE_GROUP_TIME,
+			}),
+			i(200178, {	-- Infected Ichor (TOY!)
+				["crs"] = RARE_GROUP_TWO,
 			}),
 		}),
 	}),

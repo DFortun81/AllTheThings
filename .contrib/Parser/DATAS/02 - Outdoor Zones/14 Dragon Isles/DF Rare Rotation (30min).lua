@@ -34,25 +34,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				n(193235, {	-- Oshigol
 					["coord"] = { 60.8, 26.8, OHNAHRAN_PLAINS },
 					["questID"] = 74018,
-					["g"] = {
-						i(200684),	-- Emerald Tailbone
-						i(200203),	-- Repurposed Giant's Thimble
-					},
 				}),
 				n(196010, {	-- Researcher Sneakwing <The Sundered Flame>
 					["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
 					["questID"] = 74023,
-					["g"] = {
-						i(200438),	-- Surcoat of the Chastigator
-						i(200682),	-- Hardened Scale Shoulderguards
-					},
 				}),
 				n(193227, {	-- Ronsak the Decimator
 					["coord"] = { 43.3, 55.2, OHNAHRAN_PLAINS },
 					["questID"] = 74026,
-					["g"] = {
-						i(200308),	-- Rellen's Legacy
-					},
 				}),
 				n(193123, {	-- Steamgill
 					["coord"] = { 53.6, 72.8, OHNAHRAN_PLAINS },
@@ -66,8 +55,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 59.6, 70.1, THALDRASZUS },
 					["questID"] = 73987,
 					["g"] = {
-						-- is part of the DF>Global Rare Loottable
-						-- specfic drops
 						i(200147),	-- Web-Woven Robe
 					},
 				}),
@@ -88,42 +75,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				n(193210, {	-- Phleep <Time-Lost, Mind-Lost>
 					["coord"] = { 57.2, 84.2, THALDRASZUS },
 					["questID"] = 74021,
-					["g"] = {
-						i(200148),	-- A Collection of Me (TOY!)
-						i(200126),	-- Mantle of Copious Chronologies
-						i(200202),	-- Tomorrow's Chains
-					},
 				}),
 				n(193240, {	-- Riverwalker Tamopo <Terror of the Shallows>
 					["coord"] = { 39.8, 70.0, THALDRASZUS },
 					["questID"] = 74024,
-					-- ["g"] = {
-
-					-- },
 				}),
 				n(193666, {	-- Rokmur
 					["coord"] = { 50.0, 51.8, THALDRASZUS },
 					["questID"] = 74025,
-					-- ["g"] = {
-
-					-- },
 				}),
 				n(193176, {	-- Sandana the Tempest <Timesand Thief>
 					["coord"] = { 37.4, 77.9, THALDRASZUS },
 					["questID"] = 74029,
-					["g"] = {
-						i(200161),	-- Razorwind Talisman
-						i(200148),	-- A Collection of Me (TOY!)
-						i(200306),	-- Tempest Shawl
-					},
 				}),
 				n(193258, {	-- Tempestrian <Stormbringer>
 					["coord"] = { 48.8, 79.4, THALDRASZUS },
 					["questID"] = 74035,
 					["g"] = {
-						i(200241),	-- Stormcaller's Ritual Hatchet
 						i(200139),	-- Tempest Arc
-						i(197593),	-- Windborne Velocidrake: Feathery Head (DM!)
 					},
 				}),
 				n(193146, {	-- Treasure-Mad Trambladd
@@ -170,7 +139,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
 					["questID"] = 73984,
 					["g"] = {
-						i(200259),	-- Forest Dweller's Shield
 						i(200229),	-- Slightly Digested Leggings
 					},
 				}),
@@ -180,7 +148,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["questID"] = 73997,
 					["g"] = {
 						i(200281),	-- Gorjo's Riding Crop
-						i(200435),	-- Brackish Breeches
 					},
 				}),
 				n(186200, {	-- Harkyn Grymstone
@@ -194,7 +161,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["g"] = {
 						i(200171),	-- Grymheart Blade
 						i(197131),	-- Highland Drake: Hairy Cheek (DM!)
-						i(182361),	-- Protector's Molten Cudgel
 						i(200175),	-- Repurposed Anvil
 						i(200243),	-- Titanic Scholar's Finery
 					},
@@ -202,9 +168,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				n(186827, {	-- Magmaton
 					["coord"] = { 40.0, 64.5, THE_WAKING_SHORES },
 					["questID"] = 74010,
-					["g"] = {
-						i(200684),	-- Emerald Tailbone
-					},
 				}),
 				n(193152, {	-- Massive Magmashell
 					["coord"] = { 21.7, 76.2, THE_WAKING_SHORES },
@@ -216,10 +179,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				n(193118, {	-- O'nank Shorescour
 					["coord"] = { 82.2, 49.4, THE_WAKING_SHORES },
 					["questID"] = 74017,
-					["g"] = {
-						i(200435),	-- Brackish Breeches
-						i(200203),	-- Repurposed Giant's Thimble
-					},
 				}),
 				n(193120, {	-- Smogswog the Firebreather
 					["coord"] = { 69.0, 64.8, THE_WAKING_SHORES },

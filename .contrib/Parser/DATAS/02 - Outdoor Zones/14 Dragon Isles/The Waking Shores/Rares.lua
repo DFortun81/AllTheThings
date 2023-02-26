@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
-		n(RARES, sharedData({["isDaily"] = true},{
+		n(RARES, sharedData({ ["isDaily"] = true }, {
 		--	n(193132),	-- Amethyzar the Glittering // under DF/Timed Based Rare
 			n(187111, {	-- Ancient Hornswog
 				["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },

@@ -13,13 +13,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["cr"] = 193222,	-- Archaeologist Koranir
 				["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
 				["questID"] = 74096,
-				["g"] = {
-					i(200127),	-- Gold-Alloy Blade
-					i(200283),	-- Gnoll-Gnawed Breeches
-					i(200266),	-- Gnollish Chewtoy Launcher
-					i(200178),	-- Infected Ichor (TOY!)
-					i(200432),	-- Rotguard Cowl
-				},
 			}),
 			n(201535,	-- Bloodbeak the Ravenous
 			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
@@ -56,7 +49,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(200309),	-- Rock Encrusted Chestguard
 				},
 			}),
-		--	n(193170, {	-- Fulgurb // under DF/Timed Based Rare
+		--	n(193170),	-- Fulgurb // under DF/Timed Based Rare
 			n(201537,	-- Groffnar
 			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 35.0, 41.1, OHNAHRAN_PLAINS },
@@ -69,15 +62,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["description"] = "Only available if the Aylaag Camp is stationed north.\nChance to spawn upon killing Sutaan.",
 				["coord"] = { 85.4, 15.8, OHNAHRAN_PLAINS },
 				["questID"] = 73951,
-				-- ["g"] = {
-				-- },
 			}),
 			n(188095, {	-- Hunter of the Deep
 				["description"] = "Only spawns if the Aylaag Camp is stationed north.\nThere will be some glowing fish in the water when he is summonable. Click on the weapon rack, shoot the fish. When all fish are eliminated, the boss will spawn.",
 				["coord"] = { 80.5, 42.2, OHNAHRAN_PLAINS },
 				["questID"] = 73966,
-				-- ["g"] = {
-				-- },
 			}),
 			n(201538,	-- Huntmaster Yrgena
 			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
@@ -94,16 +83,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					{ 80.5, 37.8, OHNAHRAN_PLAINS },	-- Boss
 				},
 				["questID"] = 73967,
-				-- ["g"] = {
-				-- },
 			}),
 			n(197009, {	-- Liskheszaera
 				["coord"] = { 87.4, 61.4, OHNAHRAN_PLAINS },
 				["questID"] = 73882,
-				["g"] = {
-					i(200434),	-- Anund's Mana-Singed Amice
-					i(200446),	-- Crystalized Sigil
-				},
 			}),
 			n(201540,	-- Lurgan
 			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
@@ -117,11 +100,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["description"] = "Only spawns if the Aylaag Camp is stationed west.",
 				["coord"] = { 32.7, 38.1, OHNAHRAN_PLAINS },
 				["questID"] = 73968,
-				-- ["g"] = {
-				-- },
 			}),
-			-- n(193212, {	-- Malsegan // under DF/Timed Based Rare
-			-- n(193173, {	-- Mikrin of the Raging Winds // under DF/Timed Based Rare
+		--	n(193212),	-- Malsegan // under DF/Timed Based Rare
+		--	n(193173),	-- Mikrin of the Raging Winds // under DF/Timed Based Rare
 			n(195895, {	-- Nergazurai
 				["coord"] = { 60.0, 71.3, OHNAHRAN_PLAINS },
 				["questID"] = 74093,
@@ -140,7 +121,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- ["g"] = {
 				-- },
 			}),
-			-- n(193235, {	-- Oshigol // under DF/Timed Based Rare
+		--	n(193235),	-- Oshigol // under DF/Timed Based Rare
 			n(191950, {	-- Porta the Overgrown
 				["description"] = "Only available if the Aylaag Camp is stationed at the south east.\nRequires 5 Enriched Soil used on the mushroom in the cave at 59.71, 68.10 to spawn this rare. The Enriched Soil can be looted from piles of dirt scattered around the bottom of the lake in Mirror of the Sky and underwater in the surrounding area. The coordinates indicate possible spots for the Dirt Piles.",
 				["coords"] = {
@@ -160,9 +141,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
 				["questID"] = 72815,	-- 71240 must be elsewhere... will wait for reports...
 				["isDaily"] = false,
-				["g"] = {
-					i(200292),	-- Cragforge Pauldrons
-				},
 			}),
 			n(192557, {	-- Quackers the Terrible
 				["description"] = "Requires Duck Trap Kit, purchased from a nearby camp (northern waypoint).\n\nYou'll need a rank 1 of these reagents:\n\n1 x Primal Molten Alloy\n\n3 x Resilient Leather\n\n4 x Spool of Wilderthread\n\nUse the item to trap a duck and then go to southern waypoint & put the trapped duck into the nest.",
@@ -170,13 +148,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					{ 68.2, 79.2, OHNAHRAN_PLAINS },
 					{ 70.43, 63.49, OHNAHRAN_PLAINS },
 				},
-				["cost"] = {{"i",194739,1}},	-- Trapped Duck
+				["cost"] = { { "i", 194739, 1 } },	-- Trapped Duck
 				["questID"] = 73972,
-				-- ["g"] = {
-				-- },
 			}),
-			-- n(196010, {	-- Researcher Sneakwing // under DF/Timed Based Rare
-			-- n(193227, {	-- Ronsak the Decimator // under DF/Timed Based Rare
+		--	n(196010),	-- Researcher Sneakwing // under DF/Timed Based Rare
+		--	n(193227),	-- Ronsak the Decimator // under DF/Timed Based Rare
 			n(193153, {	-- Ripsaw the Stalker
 				["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
 				["questID"] = 72845,
@@ -205,14 +181,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73893,
 				["g"] = {
 					i(200168),	-- Gnoll Hide Belt
-					i(200266),	-- Gnollish Chewtoy Launcher
 				},
 			}),
 			n(193188, {	-- Seeker Teryx
 				["coord"] = { 61.0, 13.6, OHNAHRAN_PLAINS },
 				["questID"] = 73894,
 				["g"] = {
-					i(200154),	-- Rubyscale Band
 					i(200875),	-- Seeker's Bands
 				},
 			}),
@@ -236,12 +210,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 22.1, 38.8, OHNAHRAN_PLAINS },
 				["questID"] = 73896,
 				["g"] = {
-					i(200297),	-- Hastily Cobbled Maul
-					i(200689),	-- Rimetalon Band
 					i(200234),	-- Vrak's Embossed Aegis
 				},
 			}),
-			-- n(193123, {	-- Steamgill // under DF/Timed Based Rare
+		--	n(193123),	-- Steamgill // under DF/Timed Based Rare
 			n(201539,	-- Stormcaller Narkena
 			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
@@ -254,24 +226,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["description"] = "Only spawns if the Aylaag Camp is stationed at the south east.",
 				["coord"] = { 78.3, 83.0, OHNAHRAN_PLAINS },
 				["questID"] = 73974,
-				-- ["g"] = {
-				-- },
 			}),
 			n(193133, {	-- Sunscale Behemoth
 				["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
 				["questID"] = 72849,
 				["isDaily"] = false,
-				["g"] = {
-					i(198409),	-- Personal Shell (TOY!)
-				},
 			}),
 			n(193163, {	-- Territorial Coastling
 				["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
 				["questID"] = 72851,
 				["isDaily"] = false,
-				["g"] = {
-					i(200212),	-- Sand-Encrusted Graves
-				},
 			}),
 			n(196334, {	-- The Great Enla <Scourge of the Plains>
 				["description"] = "Spawns during the Aylaag Caravan escort from Eaglewatch Outpost to Aylaag Outpost.",
@@ -282,29 +246,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			n(195204, {	-- The Jolly Giant
 				["description"] = "Only spawns if the Aylaag Camp is stationed west.",
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
+				["coord"] = { 27.6, 55.6, OHNAHRAN_PLAINS },
 				["questID"] = 73976,
-				-- ["g"] = {
-				-- },
 			}),
 			n(191354, {	-- Ty'foon the Ascended
 				["coord"] = { 26.1, 34.2, OHNAHRAN_PLAINS },
 				["questID"] = 72852,
 				["isDaily"] = false,
-				["g"] = {
-					i(200293),	-- Primal Scion's Twinblade
-					i(198429),	-- Typhoon Bringer
-				},
 			}),
 			n(192453, {	-- Vaniik the Stormtouched <Corrupted Child of Ohn'ahra>
 				["description"] = "Only spawns if the Aylaag Camp is stationed at the south east.",
 				["coord"] = { 82.0, 63.0, OHNAHRAN_PLAINS },
 				["questID"] = 73978,
-				-- ["g"] = {
-				-- },
 			}),
 			n(192983, {	-- Web-Queen Ashkaz
-				["coord"] = {43.3, 47.2, OHNAHRAN_PLAINS },
+				["coord"] = { 43.3, 47.2, OHNAHRAN_PLAINS },
 				["questID"] = 74095,
 			}),
 			n(192364, {	-- Windscale the Stormborn
@@ -325,8 +281,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 31.5, 64.0, OHNAHRAN_PLAINS },
 				["questID"] = 73901,
 				["g"] = {
-					i(200314),	-- Skyspeaker's Envelope
-					i(200306),	-- Tempest Shawl
 					i(200879, {	-- Zenet Egg
 						i(198825),	-- Zenet Hatchling (MOUNT!)
 					}),

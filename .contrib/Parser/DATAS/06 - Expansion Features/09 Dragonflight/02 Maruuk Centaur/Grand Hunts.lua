@@ -94,17 +94,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 86.9, 18.1, OHNAHRAN_PLAINS },
 						["questID"] = 73909,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 					n(190968, {	-- Norbett	-- North Only
 						["coord"] = { 83.1, 18.8, OHNAHRAN_PLAINS },
 						["questID"] = 73929,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 					n(190161, {	-- Sarana	-- North Only
 						["coord"] = { 85.4, 15.6, OHNAHRAN_PLAINS },
@@ -112,7 +106,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["isDaily"] = true,
 						["g"] = {
 							i(200440),	-- Helm of Feline Instinct
-							-- is part of the DF>Global Rare Loottable
 						},
 					}),
 					n(191103, {	-- Uranto the Swift	-- North Only
@@ -130,17 +123,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 79.7, 55.4, OHNAHRAN_PLAINS },
 						["questID"] = 73920,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 					n(194601, {	-- Zagdech	-- East Only
 						["coord"] = { 76.7, 53.0, OHNAHRAN_PLAINS },
 						["questID"] = 73948,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 				}),
 				n(-1126, {	-- West
@@ -148,33 +135,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 57.2, 47.7, OHNAHRAN_PLAINS },
 						["questID"] = 73914,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 					n(194438, {	-- Khomuur
 						["coord"] = { 50.6, 50.0, OHNAHRAN_PLAINS },
 						["questID"] = 73921,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 					n(194458, {	-- Rokzul -- West Only
 						["coord"] = { 56.2, 51.5, OHNAHRAN_PLAINS },
 						["questID"] = 73930,
 						["isDaily"] = true,
-						["g"] = {
-							i(200693),	-- Legguards of the Deep Strata
-						},
 					}),
 					n(194624, {	-- Zumakh
 						["coord"] = { 72.5, 45.7, OHNAHRAN_PLAINS },
 						["questID"] = 73949,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 				}),
 			}),
@@ -184,10 +159,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 50.8, 46.6, THALDRASZUS },
 						["questID"] = 73912,
 						["isDaily"] = true,
-						["g"] = {
-							i(200233),	-- Paradox Saber
-							i(200204),	-- Sandshine Chestplate
-						},
 					}),
 					n(195430, {	-- Molkeej
 						["coord"] = { 51.1, 49.3, THALDRASZUS },
@@ -198,9 +169,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 50.0, 47.8, THALDRASZUS },
 						["questID"] = 73942,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 				}),
 				n(-1125, {	-- South
@@ -224,9 +192,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 33.2, 67.9, THALDRASZUS },
 						["questID"] = 73924,
 						["isDaily"] = true,
-						["g"] = {
-							-- Not sure. Maybe "is part of the DF>Global Rare Loottable"
-						},
 					}),
 				}),
 			}),
@@ -236,25 +201,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 67.6, 27.8, THE_AZURE_SPAN },
 						["questID"] = 73926,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 					n(195132, {	-- Tevgai
 						["coord"] = { 72.8, 27.2, THE_AZURE_SPAN },
 						["questID"] = 73939,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 					n(195101, {	-- Yaankhi
 						["questID"] = 73946,
 						["isDaily"] = true,
 						["coord"] = { 68.6, 26.3, THE_AZURE_SPAN },
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 				}),
 				n(-1125, {	-- South
@@ -262,27 +218,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 66.4, 59.5, THE_AZURE_SPAN },
 						["questID"] = 73907,
 						["isDaily"] = true,
-						["g"] = {
-							i(200299),	-- Strange Clockwork Gladius
-
-						},
 					}),
 					n(195286, {	-- Mantai
 						["coord"] = { 67.4, 55.5, THE_AZURE_SPAN },
 						["questID"] = 73923,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 					n(195283, {	-- Yamakh
 						["description"] = "Behind Rock Wall.",
 						["questID"] = 73947,
 						["isDaily"] = true,
 						["coord"] = { 66.1, 51.2, THE_AZURE_SPAN },
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 				}),
 				n(-1126, {	-- West
@@ -290,26 +236,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 38.7, 43.5, THE_AZURE_SPAN },
 						["questID"] = 73922,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 					n(194763, {	-- Tenmod
 						["coord"] = { 33.2, 40.3, THE_AZURE_SPAN },
 						["questID"] = 73938,
 						["isDaily"] = true,
-						["g"] = {
-							i(200684),	-- Emerald Tailbone
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 					n(194760, {	-- Uurhilt
 						["questID"] = 73944,
 						["isDaily"] = true,
 						["coord"] = { 36.3, 36.9, THE_AZURE_SPAN },
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 				}),
 			}),
@@ -319,9 +255,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 69.2, 56.6, THE_WAKING_SHORES },
 						["questID"] = 73910,
 						["isDaily"] = true,
-						["g"] = {
-							i(200187),	-- Rod of Glacial Force
-						},
 					}),
 					n(193853, {	-- Galnmor
 						["coord"] = { 69.6, 64.8, THE_WAKING_SHORES },
@@ -334,33 +267,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 41.0, 84.6, THE_WAKING_SHORES },
 						["questID"] = 73911,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 					n(194240, {	-- Gamgus
 						["coord"] = { 37.6, 76.8, THE_WAKING_SHORES },
 						["questID"] = 73917,
 						["isDaily"] = true,
-						["g"] = {
-							-- is part of the DF>Global Rare Loottable
-						},
 					}),
 					n(194225, {	-- Muugurv
 						["coord"] = { 47.8, 77.0, THE_WAKING_SHORES },
 						["questID"] = 73927,
 						["isDaily"] = true,
-						["g"] = {
-							i(200187),	-- Rod of Glacial Force
-						},
 					}),
 					n(193885, {	-- Salkii
 						["coord"] = { 66.4, 65.2, THE_WAKING_SHORES },
 						["questID"] = 73931,
 						["isDaily"] = true,
-						["g"] = {
-							i(200237),	-- Burnished Lifewarder's Targe
-						},
 					}),
 				}),
 				n(-1125, {	-- South
@@ -368,25 +289,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 24.0, 96.6, THE_WAKING_SHORES },
 						["questID"] = 73918,
 						["isDaily"] = true,
-						["g"] = {
-							i(200684),	-- Emerald Tailbone
-						},
 					}),
 					n(193722, {	-- Tomnu
 						["coord"] = { 23.2, 89.4, THE_WAKING_SHORES },
 						["questID"] = 73940,
 						["isDaily"] = true,
-						["g"] = {
-							i(200682),	-- Hardened Scale Shoulderguards
-						},
 					}),
 					n(193724, {	-- Uurtus
 						["coord"] = { 26.6, 88.6, THE_WAKING_SHORES },
 						["questID"] = 73945,
 						["isDaily"] = true,
-						["g"] = {
-							i(200187),	-- Rod of Glacial Force
-						},
 					}),
 				}),
 			}),
