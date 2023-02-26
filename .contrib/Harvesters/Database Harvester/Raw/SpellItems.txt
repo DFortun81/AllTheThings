@@ -11121,3 +11121,10 @@
 10.0.7.48076
 6776@@@|C00FF516CNecromantic Death Stone
 6782@@@|C00FF516CDesirous Blood Stone
+10.0.7.48220
+6769@@@|C00E97DFFSparkling Mana Stone
+6770@@@|C00834FFFSwirling Mojo Stone
+6773@@@|C00E97DFFHumming Arcane Stone
+6774@@@|C00E97DFFHarmonic Music Stone
+6780@@@|C00E97DFFObscure Pastel Stone
+6784@@@|C00834FFFProphetic Twilight Stone

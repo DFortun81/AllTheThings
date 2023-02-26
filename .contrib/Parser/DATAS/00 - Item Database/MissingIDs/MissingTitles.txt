@@ -1,3 +1,23 @@
+3.1.0.9767
+title(104),	-- Matron %s
+title(105),	-- Patron %s
+6.0.1.18125
+title(240),	-- %s the Crazy Cat Lady
+title(252),	-- %s the Crazy Cat Man
+6.0.1.18689
+title(278),	-- Talon King %s
+title(279),	-- Talon Queen %s
+6.0.1.18738
+title(296),	-- %s, Lord of Blackrock
+title(297),	-- %s, Lady of Blackrock
+6.0.2.18816
+title(302),	-- %s, Lord of War
+title(303),	-- %s, Lady of War
+9.0.1.35167
+title(426),	-- Baron %s
+title(427),	-- Baroness %s
+title(429),	-- Count %s
+title(430),	-- Countess %s
 9.2.0.41726
 title(453),	-- %s the [PH] TBD Title
 10.0.2.45779
@@ -5,3 +25,5 @@ title(480),	-- %s, Knight of Feathersworth
 10.0.7.47910
 title(489),	-- Forbidden Reach Racer %s
 title(494),	-- %s the Key Master
+10.0.7.48220
+title(495),	-- %s the Forbidden

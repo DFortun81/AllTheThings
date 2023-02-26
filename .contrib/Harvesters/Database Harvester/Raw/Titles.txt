@@ -615,3 +615,5 @@
 10.0.7.47910
 489@@@Forbidden Reach Racer %s
 494@@@%s the Key Master
+10.0.7.48220
+495@@@%s the Forbidden

@@ -21,6 +21,8 @@ i(203852),	-- Spore-Bound Essence \\ Vial of Spore-Bound Essence
 10.0.7.48076
 i(201930),	-- H.E.L.P.
 i(204675),	-- A Drake's Big Basket of Eggs
+10.0.7.48220
+i(204687),	-- Obsidian Battle Horn \\ Lost Battle Horn
 
 
 
@@ -34,8 +36,6 @@ i(163017),	-- Pitch-Soaked Torch
 i(163073),	-- Conch of Wa'mundi
 10.0.7.47910
 i(199900),	-- Secondhand Survey Tools
-i(202253),	-- Primal Stave of Claw and Fur
-i(202283),	-- Reading Glasses
 i(202360),	-- Dented Can
 i(203725),	-- 
 i(203734),	-- Snow Blanket
@@ -50,3 +50,5 @@ i(203852),	-- Spore-Bound Essence \\ Vial of Spore-Bound Essence
 10.0.7.48076
 i(201930),	-- H.E.L.P.
 i(204675),	-- A Drake's Big Basket of Eggs
+10.0.7.48220
+i(204687),	-- Obsidian Battle Horn \\ Lost Battle Horn

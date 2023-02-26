@@ -33,8 +33,10 @@ ach(15207),	-- Challenger: Season 3
 ach(15208),	-- Duelist: Season 2
 ach(15209),	-- Rival: Season 2
 ach(15210),	-- Challenger: Season 2
+4.0.1.12911
+ach(5020),	-- Observed - Guild Edition \\ He Feeds On Your Tears - Guild Edition
 10.0.2.45779
-ach(16729),	-- To All the Squirrels Hidden Til Now
+ach(16729),	-- To All the Squirrels Hidden Til Now \\ To All the Squirrels Hidden Till Now
 10.0.7.47910
 ach(17214),	-- Stormsunder Crater Circuit: Bronze
 ach(17215),	-- Stormsunder Crater Circuit: Silver
@@ -160,3 +162,5 @@ ach(17535),	-- <DNT> Complete the "Return to the Reach" questline.
 ach(17540),	-- Under the Weather
 ach(17541),	-- Global Swarming
 ach(17543),	-- You Know How to Reach Me
+10.0.7.48220
+ach(17546),	-- A New Beginning

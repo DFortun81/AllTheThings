@@ -1896,7 +1896,6 @@ p(3422),	-- [DNT] Storm Pet Boss - Legendary
 p(3423),	-- [DNT] Storm Pet Fodder
 p(3424),	-- [DNT] Storm Pet Boss - Epic
 p(3425),	-- [DNT] Storm Pet Boss - Rare
-p(3427),	-- Driftling
 p(3429),	-- Vortex
 p(3430),	-- Tremblor
 p(3431),	-- Wildfire

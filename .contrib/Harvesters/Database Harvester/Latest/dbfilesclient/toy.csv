@@ -877,6 +877,7 @@ WoW Esports: Dragonflight Season 1,1289,203716,2,-1
 |cFFFFD200Treasure: |r Chest|n|cFFFFD200Zone: |rThe Zskera Vaults,1305,204257,0,-1
 |cFFFFD200Treasure: |r Chest|n|cFFFFD200Zone: |rThe Zskera Vaults,1306,204262,0,-1
 |cFFFFD200Vendor: |rEmilia Bellocq|n|cFFFFD200Zone: |rThe Waking Shores|n|cFFFFD200Cost: |r5|TINTERFACE\MONEYFRAME\UI-GOLDICON.BLP:0|t,1307,199900,0,2
-Treasure: Overgrown Skeleton,1308,203852,0,-1
+Treasure: Overgrown Skeleton|n|cFFFFD200Zone: |rThe Zskera Vaults,1308,203852,0,-1
 |cFFFFD200Profession:|r Dragon Isles Engineering|n,1309,201930,0,3
 |cFFFFD200Vendor:|r Noblegarden Merchant|n|cFFFFD200Cost:|r 200|Hitem:44791|h|TInterface\ICONS\Achievement_Noblegarden_Chocolate_Egg.blp:0|t|h,1311,204675,0,2
+|cFFFFD200Treasure: |r Chest|n|cFFFFD200Zone: |rThe Zskera Vaults,1313,204687,0,-1
