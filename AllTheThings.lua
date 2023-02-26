@@ -4032,42 +4032,44 @@ ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 end;
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
-	if o.resolved or (o.key and app.ThingKeys[o.key] and ResolveCache[o.hash]) then
-		-- app.PrintDebug(o.resolved and "Object Resolve" or "Cache Resolve",o.hash,#(o.resolved or ResolveCache[o.hash]))
+	local oHash, oKey, oSym = o.hash, o.key, o.sym;
+	if o.resolved or (oKey and app.ThingKeys[oKey] and ResolveCache[oHash]) then
+		-- app.PrintDebug(o.resolved and "Object Resolve" or "Cache Resolve",oHash,#(o.resolved or ResolveCache[oHash]))
 		local cloned = {};
-		MergeObjects(cloned, o.resolved or ResolveCache[o.hash], true);
+		MergeObjects(cloned, o.resolved or ResolveCache[oHash], true);
 		return cloned;
 	end
-	if o and o.sym then
+	if oSym then
 		FinalizeModID = nil;
 		PruneFinalized = nil;
-		-- app.PrintDebug("Fresh Resolve:",o.hash)
+		-- app.PrintDebug("Fresh Resolve:",oHash)
 		local searchResults, finalized = {}, {};
 		local cmd, cmdFunc;
-		for _,sym in ipairs(o.sym) do
+		for _,sym in ipairs(oSym) do
 			cmd = sym[1];
 			cmdFunc = ResolveFunctions[cmd];
-			-- app.PrintDebug("sym: '",cmd,"' for",o.hash,"with:",unpack(sym))
+			-- app.PrintDebug("sym: '",cmd,"' for",oHash,"with:",unpack(sym))
 			if cmdFunc then
 				cmdFunc(finalized, searchResults, o, unpack(sym));
 			else
 				print("Unknown symlink command",cmd);
 			end
-			-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",o.hash,"with:",unpack(sym))
+			-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",oHash,"with:",unpack(sym))
 		end
 
 		-- Verify the final result is finalized
 		cmdFunc = ResolveFunctions.finalize;
 		cmdFunc(finalized, searchResults);
-		-- if app.DEBUG_PRINT then print("Forced Finalize",o.key,o.key and o[o.key],#finalized) end
+		-- if app.DEBUG_PRINT then print("Forced Finalize",oKey,oKey and o[oKey],#finalized) end
 
 		-- If we had any finalized search results, then clone all the records, store the results, and return them
 		if #finalized > 0 then
 			local cloned = {};
 			MergeObjects(cloned, finalized, true);
-			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #cloned, "values after filtering.") end
+			-- if app.DEBUG_PRINT then print("Symbolic Link for", oKey,oKey and o[oKey], "contains", #cloned, "values after filtering.") end
 			-- if any symlinks are left at the lowest level, go ahead and fill them
 			-- Apply any modID if necessary
+			local sHash;
 			if FinalizeModID then
 				-- app.PrintDebug("Applying FinalizeModID",FinalizeModID)
 				for _,s in ipairs(cloned) do
@@ -4081,8 +4083,9 @@ ResolveSymbolicLink = function(o)
 						s.g = nil;
 					end
 					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
-					if s.hash and s.hash == o.hash then
-						print("Symlink group pulled itself into finalized results!",o.hash)
+					sHash = s.hash;
+					if sHash and sHash == oHash then
+						print("Symlink group pulled itself into finalized results!",oHash)
 						s.sym = nil;
 					else
 						FillSymLinks(s);
@@ -4097,26 +4100,27 @@ ResolveSymbolicLink = function(o)
 						s.g = nil;
 					end
 					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
-					if s.hash and s.hash == o.hash then
-						print("Symlink group pulled itself into finalized results!",o.hash)
+					sHash = s.hash;
+					if sHash and sHash == oHash then
+						print("Symlink group pulled itself into finalized results!",oHash)
 						s.sym = nil;
 					else
 						FillSymLinks(s);
 					end
 				end
 			end
-			if o.key and app.ThingKeys[o.key] then
+			if oKey and app.ThingKeys[oKey] then
 				-- global resolve cache if it's a 'Thing'
-				-- app.PrintDebug("Thing Results",o.hash)
-				ResolveCache[o.hash] = cloned;
-			elseif o.key ~= false then
+				-- app.PrintDebug("Thing Results",oHash)
+				ResolveCache[oHash] = cloned;
+			elseif oKey ~= false then
 				-- otherwise can store it in the object itself (like a header from the Main list with symlink), if it's not specifically a pseudo-symlink resolve group
 				o.resolved = cloned;
-				-- app.PrintDebug("Object Results",o.hash)
+				-- app.PrintDebug("Object Results",oHash)
 			end
 			return cloned;
 		else
-			-- if app.DEBUG_PRINT then print("Symbolic Link for ", o.key, " ",o.key and o[o.key], " contained no values after filtering.") end
+			-- if app.DEBUG_PRINT then print("Symbolic Link for ", oKey, " ",oKey and o[oKey], " contained no values after filtering.") end
 		end
 	end
 end
