@@ -249,6 +249,19 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(10584),	-- Stormgale Fists
 				i(10578),	-- Thoughtcast Boots
 			}),
+			n(7895, {	-- Ambassador Bloodrage
+				-- #if BEFORE CATA
+				["coords"] = {
+					{ 46.2, 87.4, THE_BARRENS },
+					{ 48.0, 90.4, THE_BARRENS },
+					{ 48.6, 95.6, THE_BARRENS },
+				},
+				-- #else
+				["maps"] = { SOUTHERN_BARRENS },
+				-- #endif
+				["description"] = "This is a rare that is not always present.",
+				["timeline"] = { "removed 4.0.3" },
+			}),
 			-- #if BEFORE 6.0.2
 			n(7355, {	-- Tuten'kash
 				["timeline"] = { "removed 6.0.2" },

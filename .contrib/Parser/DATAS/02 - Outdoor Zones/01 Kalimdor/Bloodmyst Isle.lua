@@ -237,11 +237,21 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
 				}),
+				q(9502, {	-- Call of Water (1/6) (The Exodar)
+					["qg"] = 17219,	-- Sulaa <Shaman Trainer>
+					["coord"] = { 32.6, 24.2, THE_EXODAR },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { SHAMAN },
+					["races"] = { DRAENEI },
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
+				}),
 				q(9501, {	-- Call of Water (2/6)
 					["qg"] = 17204,	-- Farseer Nobundo <Shaman Trainer>
 					["sourceQuests"] = {
 						9500,	-- Call of Water (1/6) (Azuremyst Isle)
 						10490,	-- Call of Water (1/6) (Stormwind City)
+						9502,	-- Call of Water (1/6) (The Exodar)
 					},
 					["coord"] = { 30.0, 32.4, THE_EXODAR },
 					["timeline"] = { "removed 4.0.3" },

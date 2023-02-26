@@ -513,15 +513,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { TAUREN },
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
-				q(860, {	-- Sergra Darkthorn
-					["qg"] = 3441,	-- Melor Stonehoof
-					["sourceQuest"] = 861,	-- The Hunter's Way
-					["coord"] = { 61.52, 80.91, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = 10,
-				}),
 				q(29354, {	-- Shiny Baubles
 					["qg"] = 3028,	-- Kah Mistrunner
 					["coord"] = { 56.12, 46.34, THUNDER_BLUFF },

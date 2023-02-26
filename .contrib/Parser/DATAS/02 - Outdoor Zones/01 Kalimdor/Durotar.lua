@@ -1914,6 +1914,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if AFTER CATA
+				q(6385, {	-- Doras the Wind Rider Master
+					["providers"] = {
+						{ "n", 6929 },	-- Innkeeper Gryshka
+						{ "i", 16307 },	-- Gryshka's Letter
+					},
+					["sourceQuest"] = 6384,	-- Ride to Orgrimmar
+					["coord"] = { 53.5, 78.7, ORGRIMMAR },
+					["races"] = { ORC, TROLL, MAGHAR },
+				}),
+				-- #endif
 				q(40760, {	-- Emissary
 					["qg"] = 100866,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 40522,	-- Fate of the Horde
@@ -1975,6 +1986,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(4904),	-- Venomtail Antidote
+					},
+				}),
+				q(1464, {	-- Fire Sapta
+					["qg"] = 5900,	-- Telf Joolam
+					["sourceQuest"] = 1525,	-- Call of Fire (3/5)
+					["coord"] = { 38.6, 58.8, DUROTAR },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["repeatable"] = true,
+					["lvl"] = 10,
+					["groups"] = {
+						i(6636, {	-- Fire Sapta
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(25260, {	-- Fizzled
@@ -2566,6 +2592,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { GOBLIN },
 				}),
 				-- #if AFTER CATA
+				q(6386, {	-- Return to Razor Hill
+					["providers"] = {
+						{ "n", 3310 },	-- Doras
+						{ "i", 16307 },	-- Gryshka's Letter
+					},
+					["sourceQuest"] = 6385,	-- Doras the Wind Rider Master
+					["coord"] = { 49.5, 59.2, ORGRIMMAR },
+					["races"] = { ORC, TROLL, MAGHAR },
+				}),
 				q(6384, {	-- Ride to Orgrimmar
 					["providers"] = {
 						{ "n", 41140 },	-- Burok
@@ -2573,6 +2608,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
 					["coord"] = { 53.0, 43.6, DUROTAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				-- #endif

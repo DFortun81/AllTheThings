@@ -659,6 +659,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = ENGINEERING,
 					["isDaily"] = true,
 				}),
+				q(4785, {	-- Fine Gold Thread
+					["qg"] = 2670,	-- Xizk Goodstitch <Tailoring Supplies>
+					["coord"] = { 28.6, 76.8, STRANGLETHORN_VALE },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { WARLOCK },
+					["repeatable"] = true,
+					["lvl"] = 31,
+					["groups"] = {
+						i(12293, {	-- Fine Gold Thread
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
 				q(26624, {	-- Getting In With the Bloodsail
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 26612,	-- Details of the Attack

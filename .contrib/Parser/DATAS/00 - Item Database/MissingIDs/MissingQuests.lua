@@ -1,11 +1,7 @@
 --[[
 5.0.3.15890
-q(63),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(73),	-- <TXT> No Reward,		TBC: <TXT> No Reward,		CLASSIC: <TXT> No Reward
-q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(100),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(137),	-- <NYI> <TXT> Stormwind Commendation,		TBC: <NYI> <TXT> Stormwind Commendation,		CLASSIC: <NYI> <TXT> Stormwind Commendation
-q(220),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(242),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -24,10 +20,7 @@ q(811),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(814),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(820),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(839),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(854),	-- Journey to the Crossroads,		TBC: Journey to the Crossroads,		CLASSIC: Journey to the Crossroads
 q(856),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(886),	-- The Barrens Oases,		TBC: The Barrens Oases,		CLASSIC: The Barrens Oases
-q(897),	-- The Harvester,		TBC: The Harvester,		CLASSIC: The Harvester
 q(946),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(988),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(989),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -61,30 +54,9 @@ q(1441),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1443),	-- <nyi> The Shakedown,		CLASSIC: <nyi> The Shakedown
 q(1460),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1461),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(1498),	-- Path of Defense,		TBC: Path of Defense,		CLASSIC: Path of Defense
-q(1502),	-- Thun'grim Firegaze,		TBC: Thun'grim Firegaze,		CLASSIC: Thun'grim Firegaze
-q(1505),	-- Veteran Uzzek,		TBC: Veteran Uzzek,		CLASSIC: Veteran Uzzek
-q(1507),	-- Devourer of Souls,		TBC: Devourer of Souls,		CLASSIC: Devourer of Souls
-q(1508),	-- Blind Cazul,		TBC: Blind Cazul,		CLASSIC: Blind Cazul
-q(1509),	-- News of Dogran,		TBC: News of Dogran,		CLASSIC: News of Dogran
-q(1510),	-- News of Dogran,		TBC: News of Dogran,		CLASSIC: News of Dogran
-q(1512),	-- Love's Gift,		TBC: Love's Gift,		CLASSIC: Love's Gift
-q(1515),	-- Dogran's Captivity,		TBC: Dogran's Captivity,		CLASSIC: Dogran's Captivity
-q(1522),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
-q(1523),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
-q(1524),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
-q(1525),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
-q(1526),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
-q(1527),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
-q(1528),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(1529),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(1530),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(1531),	-- Call of Air,		TBC: Call of Air,		CLASSIC: Call of Air
 q(1532),	-- Call of Air,		TBC: Call of Air,		CLASSIC: Call of Air
 q(1533),	-- <NYI> Call of Air,		CLASSIC: <NYI> Call of Air
-q(1534),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(1535),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(1536),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(1537),	-- <NYI> Call of Air,		TBC: <NYI> Call of Air,		CLASSIC: <NYI> Call of Air
 q(1538),	-- <NYI> Call of Air,		CLASSIC: <NYI> Call of Air
 q(1646),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
@@ -95,20 +67,11 @@ q(1660),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1662),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1663),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1664),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(1718),	-- The Islander,		TBC: The Islander,		CLASSIC: The Islander
-q(1719),	-- The Affray,		TBC: The Affray,		CLASSIC: The Affray
-q(1738),	-- Heartswood,		TBC: Heartswood,		CLASSIC: Heartswood
 q(1778),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1779),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1783),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1784),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1785),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
-q(1791),	-- The Windwatcher,		TBC: The Windwatcher,		CLASSIC: The Windwatcher
-q(1796),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for the Enchanted Gold Bloodrobe,		CLASSIC: Components for the Enchanted Gold Bloodrobe
-q(1799),	-- Fragments of the Orb of Orahil,		TBC: Fragments of the Orb of Orahil,		CLASSIC: Fragments of the Orb of Orahil
-q(1801),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
-q(1803),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
-q(1805),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
 q(1943),	-- Speak with Deino,		TBC: Speak with Deino,		CLASSIC: Speak with Deino
 q(1963),	-- The Shattered Hand,		TBC: The Shattered Hand,		CLASSIC: The Shattered Hand
 q(2000),	-- Rokar Bladeshadow,		TBC: Rokar Bladeshadow,		CLASSIC: Rokar Bladeshadow
@@ -120,25 +83,17 @@ q(2059),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(2358),	-- Horns of Nez'ra,		CLASSIC: Horns of Nez'ra
 q(2378),	-- Find the Shattered Hand,		TBC: Find the Shattered Hand,		CLASSIC: Find the Shattered Hand
 q(2379),	-- Zando'zan,		TBC: Zando'zan,		CLASSIC: Zando'zan
-q(2381),	-- Plundering the Plunderers,		TBC: Plundering the Plunderers,		CLASSIC: Plundering the Plunderers
 q(2382),	-- Wrenix of Ratchet,		TBC: Wrenix of Ratchet,		CLASSIC: Wrenix of Ratchet
 q(2458),	-- Deep Cover,		TBC: Deep Cover,		CLASSIC: Deep Cover
 q(2460),	-- The Shattered Salute,		TBC: The Shattered Salute,		CLASSIC: The Shattered Salute
-q(2478),	-- Mission: Possible But Not Probable,		TBC: Mission: Possible But Not Probable,		CLASSIC: Mission: Possible But Not Probable
 q(2479),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's Assistance
 q(2868),	-- <TXT> The Shriveled Heart,		TBC: <TXT> The Shriveled Heart,		CLASSIC: <TXT> The Shriveled Heart
 q(2944),	-- The Super Snapper FX,		TBC: The Super Snapper FX,		CLASSIC: The Super Snapper FX
 q(2971),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(2983),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
-q(2984),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
-q(2985),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(2986),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(2996),	-- Seeking Strahad,		TBC: Seeking Strahad,		CLASSIC: Seeking Strahad
 q(2997),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(2998),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(2999),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(3000),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
-q(3001),	-- Seeking Strahad,		TBC: Seeking Strahad,		CLASSIC: Seeking Strahad
 q(3022),	-- Handle With Care,		TBC: Handle With Care,		CLASSIC: Handle With Care
 q(3023),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3111),	-- <UNUSED> [DEPRECATED],		CLASSIC: <UNUSED> [DEPRECATED]
@@ -162,34 +117,13 @@ q(3531),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(3622),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3623),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(3624),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(3631),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(3681),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(3885),	-- <NYI> <TXT> The Gadgetzan Run,		TBC: <NYI> <TXT> The Gadgetzan Run,		CLASSIC: <NYI> <TXT> The Gadgetzan Run
 q(3910),	-- <NYI> <TXT> The Un'Goro Run,		CLASSIC: <NYI> <TXT> The Un'Goro Run
 q(4299),	-- <NYI> <TXT>The Tomb of the Seven,		TBC: <NYI> <TXT>The Tomb of the Seven,		CLASSIC: <NYI> <TXT>The Tomb of the Seven
 q(4323),	-- <NYI> <TXT> Get those Hyenas!!!,		TBC: <NYI> <TXT> Get those Hyenas!!!,		CLASSIC: <NYI> <TXT> Get those Hyenas!!!
-q(4487),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
-q(4488),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
-q(4489),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
-q(4490),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(4541),	-- <NYI> <TXT>,		CLASSIC: <NYI> <TXT>
-q(4736),	-- In Search of Menara Voidrender,		TBC: In Search of Menara Voidrender,		CLASSIC: In Search of Menara Voidrender
-q(4737),	-- In Search of Menara Voidrender,		TBC: In Search of Menara Voidrender,		CLASSIC: In Search of Menara Voidrender
-q(4738),	-- In Search of Menara Voidrender,		TBC: In Search of Menara Voidrender,		CLASSIC: In Search of Menara Voidrender
-q(4739),	-- In Search of Menara Voidrender,		TBC: In Search of Menara Voidrender,		CLASSIC: In Search of Menara Voidrender
-q(4781),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for the Enchanted Gold Bloodrobe,		CLASSIC: Components for the Enchanted Gold Bloodrobe
-q(4782),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for the Enchanted Gold Bloodrobe,		CLASSIC: Components for the Enchanted Gold Bloodrobe
-q(4783),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for the Enchanted Gold Bloodrobe,		CLASSIC: Components for the Enchanted Gold Bloodrobe
-q(4784),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for the Enchanted Gold Bloodrobe,		CLASSIC: Components for the Enchanted Gold Bloodrobe
 q(4905),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(4961),	-- Cleansing of the Orb of Orahil,		TBC: Cleansing of the Orb of Orahil,		CLASSIC: Cleansing of the Orb of Orahil
-q(4962),	-- Shard of a Felhound,		TBC: Shard of a Felhound,		CLASSIC: Shard of a Felhound
-q(4963),	-- Shard of an Infernal,		TBC: Shard of an Infernal,		CLASSIC: Shard of an Infernal
-q(4965),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil,		CLASSIC: Knowledge of the Orb of Orahil
-q(4967),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil,		CLASSIC: Knowledge of the Orb of Orahil
-q(4968),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil,		CLASSIC: Knowledge of the Orb of Orahil
-q(4969),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil,		CLASSIC: Knowledge of the Orb of Orahil
-q(4976),	-- Returning the Cleansed Orb,		TBC: Returning the Cleansed Orb,		CLASSIC: Returning the Cleansed Orb
 q(5101),	-- Lee's Ultimate Test Quest... of Doom!,		TBC: Lee's Ultimate Test Quest... of Doom!,		CLASSIC: Lee's Ultimate Test Quest... of Doom!
 q(5205),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5207),	-- <NYI> <TXT> The True Summoner,		TBC: <NYI> <TXT> The True Summoner,		CLASSIC: <NYI> <TXT> The True Summoner
@@ -258,7 +192,6 @@ q(5710),	-- <NYI> <TXT> Troll Priest Robe,		CLASSIC: <NYI> <TXT> Troll Priest Ro
 q(5711),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
 q(5712),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
 q(6003),	-- <nyi> <txt> Green With Envy,		CLASSIC: <nyi> <txt> Green With Envy
-q(6128),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering the Cure
 q(6165),	-- <NYI> <TXT> Archmage Timolain's Remains,		TBC: <NYI> <TXT> Archmage Timolain's Remains,		CLASSIC: <NYI> <TXT> Archmage Timolain's Remains
 q(6201),	-- <UNUSED> The Legacy of the Ashbringer,		TBC: <UNUSED> The Legacy of the Ashbringer,		CLASSIC: <UNUSED> The Legacy of the Ashbringer
 q(6202),	-- <UNUSED> Good and Evil,		CLASSIC: <UNUSED> Good and Evil
@@ -362,7 +295,6 @@ q(9484),	-- Taming the Beast,		TBC: Taming the Beast
 q(9485),	-- Taming the Beast,		TBC: Taming the Beast
 q(9486),	-- Taming the Beast,		TBC: Taming the Beast
 q(9497),	-- Emblem of the Fel Horde,		TBC: Emblem of the Fel Horde
-q(9502),	-- Call of Water,		TBC: Call of Water
 
 
 q(9507),	-- <DEPRECATED>From the Desk of Mogul Razdunk

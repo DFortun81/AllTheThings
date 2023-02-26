@@ -1131,48 +1131,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 40,
 				}),
-				q(1802, {	-- Tome of the Cabal (2/3 Alliance)
-					["qg"] = 6294,	-- Krom Stoutarm
-					["sourceQuest"] = 1758,	-- Tome of the Cabal (1/3 Alliance)
-					["coord"] = { 74.4, 9.4, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { HILLSBRAD_FOOTHILLS, THOUSAND_NEEDLES },
-					["classes"] = { WARLOCK },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
-					["groups"] = {
-						objective(1, {	-- 0/1 Moldy Tome
-							["provider"] = { "i", 6931 },	-- Moldy Tome
-							["coord"] = { 27.8, 72.9, HILLSBRAD_FOOTHILLS },
-						}),
-						objective(2, {	-- 0/1 Tattered Manuscript
-							["provider"] = { "i", 6997 },	-- Tattered Manuscript
-							["coord"] = { 43.5, 32.7, THOUSAND_NEEDLES },
-						}),
-					},
-				}),
-				q(1804, {	-- Tome of the Cabal (3/3 Alliance)
-					["providers"] = {
-						{ "n", 6294 },	-- Krom Stoutarm
-						{ "i", 7006 },	-- Reconstructed Tome
-					},
-					["sourceQuest"] = 1802,	-- Tome of the Cabal (2/3 Alliance)
-					["coord"] = { 74.4, 9.4, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { WETLANDS, THE_BARRENS },
-					["classes"] = { WARLOCK },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
-					["groups"] = {
-						objective(1, {	-- 0/3 Rod of Channeling
-							["provider"] = { "i", 6930 },	-- Rod of Channeling
-							["crs"] = {
-								1057,	-- Dragonmaw Bonewarder
-								1038,	-- Dragonmaw Shadowwarder
-							},
-						}),
-					},
-				}),
 				q(1680, {	-- Tormus Deepforge
 					["qg"] = 6114,	-- Muren Stormpike
 					["sourceQuest"] = 1678,	-- Vejrek

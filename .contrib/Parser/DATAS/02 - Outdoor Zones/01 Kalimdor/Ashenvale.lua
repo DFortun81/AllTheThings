@@ -2514,6 +2514,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 				}),
+				q(6543, {	-- The Warsong Reports
+					["providers"] = {
+						{ "n", 8582 },	-- Kadrak
+						{ "i", 16783 },	-- Bundle of Reports
+					},
+					["sourceQuests"] = {
+						6541,	-- Report to Kadrak (Barrens)
+						6542,	-- Report to Kadrak (Stonetalon)
+					},
+					["coord"] = { 48.12, 5.42, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
+					["groups"] = {
+						objective(1, {	-- 0/1 Warsong Scout Update
+							["provider"] = { "i", 16764 },	-- Warsong Scout Update
+						}),
+						objective(2, {	-- 0/1 Warsong Runner Update
+							["provider"] = { "i", 16763 },	-- Warsong Runner Update
+						}),
+						objective(3, {	-- 0/1 Warsong Outrider Update
+							["provider"] = { "i", 16765 },	-- Warsong Outrider Update
+						}),
+					},
+				}),
 				q(1008, {	-- The Zoram Strand
 					["qg"] = 3845,	-- Shindrell Swiftfire
 					["coord"] = { 34.7, 48.9, ASHENVALE },

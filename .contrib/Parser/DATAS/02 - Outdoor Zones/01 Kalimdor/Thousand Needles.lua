@@ -1964,6 +1964,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 30,
 				}),
+				q(1145, {	-- The Swarm Grows (1/3)
+					["providers"] = {
+						{ "n", 3428 },	-- Korran
+						{ "i", 5846 },	-- Korran's Sealed Note
+					},
+					["coord"] = { 51.07, 29.62, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
+				}),
+				q(1146, {	-- The Swarm Grows (2/3)
+					["providers"] = {
+						{ "n", 4485 },	-- Belgrom Rockmaul
+						{ "i", 5850 },	-- Belgrom's Sealed Note
+					},
+					["sourceQuest"] = 1145,	-- The Swarm Grows (1/3)
+					["coord"] = { 75, 34.2, ORGRIMMAR },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
+				}),
 				q(1147, {	-- The Swarm Grows (3/3)
 					["qg"] = 4483,	-- Moktar Krin
 					["sourceQuest"] = 1146,	-- The Swarm Grows (2/3)

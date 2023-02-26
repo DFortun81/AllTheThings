@@ -879,6 +879,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 				}),
+				q(4785, {	-- Fine Gold Thread
+					["qg"] = 2670,	-- Xizk Goodstitch <Tailoring Supplies>
+					["coord"] = { 28.6, 76.8, STRANGLETHORN_VALE },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { WARLOCK },
+					["repeatable"] = true,
+					["lvl"] = 31,
+					["groups"] = {
+						i(12293, {	-- Fine Gold Thread
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
 				q(2764, {	-- Galvan's Finest Pupil
 					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuests"] = {
