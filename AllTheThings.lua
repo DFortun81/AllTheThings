@@ -10281,21 +10281,24 @@ local fields = {
 		return "difficultyID";
 	end,
 	["text"] = function(t)
-		local difficultyID = t.difficultyID;
-		local text = L["CUSTOM_DIFFICULTIES"][difficultyID] or GetDifficultyInfo(difficultyID) or "Unknown Difficulty";
+		local name = t.name;
 		-- don't follow sourceParent
 		local parent = rawget(t, "parent");
 		local parentInstance = parent and parent.instanceID;
 		if parentInstance then
-			return text;
+			return name;
 		else
 			-- append the name of the Source Instance which contains this diffculty group to help distinguish (LFR Queue NPCs)
 			parentInstance = t.sourceParent;
 			if parentInstance then
-				text = sformat("%s [%s]", text, parentInstance and parentInstance.text or UNKNOWN);
+				name = sformat("%s [%s]", name, parentInstance and parentInstance.text or UNKNOWN);
 			end
-			return text;
+			return name;
 		end
+	end,
+	["name"] = function(t)
+		local difficultyID = t.difficultyID;
+		return L["CUSTOM_DIFFICULTIES"][difficultyID] or GetDifficultyInfo(difficultyID) or "Unknown Difficulty";
 	end,
 	["icon"] = function(t)
 		return app.DifficultyIcons[t.difficultyID];
