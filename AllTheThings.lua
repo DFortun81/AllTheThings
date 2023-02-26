@@ -5368,7 +5368,7 @@ local function SkipFillingGroup(group, FillData)
 	end
 
 	-- mark this group as being filled since it is not being skipped
-	included[groupHash] = true;
+	if groupHash then included[groupHash] = true; end
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
 local function FillGroupsRecursive(group, FillData)
