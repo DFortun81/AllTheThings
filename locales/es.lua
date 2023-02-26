@@ -1029,7 +1029,7 @@ for key,value in pairs({
 	[3525] = "El Altar de Fuego",	-- The Altar of Fire
 	[3640] = "Champiñón cargado",	-- Laden Mushroom
 	[3643] = "Baúl antiguo",	-- Old Footlocker
-	[3644] = "Máquina voladora de Bael Modan",	-- Bael Modan Flying Machine	--TODO: This was taken from wotlk Wowhead
+	[3644] = "Máquina voladora de Bael Modan",	-- 	--TODO: This was taken from wotlk Wowhead
 	[3646] = "Caja fuerte del general Trenzado",	-- General Twinbraid's Strongbox
 	[3685] = "Montículo de silítidos",	-- Silithid Mound
 	[3737] = "Fisura burbujeante",	-- Bubbling Fissure

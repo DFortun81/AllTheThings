@@ -1017,7 +1017,7 @@ for key,value in pairs({
 	[3525] = "Altare del Fuoco",	-- The Altar of Fire
 	[3640] = "Fungo Carico di Spore",	-- Laden Mushroom
 	[3643] = "Vecchio Scrigno",	-- Old Footlocker
-	[3644] = "Bael Modan Flying Machine",	-- Bael Modan Flying Machine	--TODO: This was taken from wotlk Wowhead
+	[3644] = "Bael Modan Flying Machine",	-- 	--TODO: This was taken from wotlk Wowhead
 	[3646] = "General Twinbraid's Strongbox",	-- General Twinbraid's Strongbox	--TODO: This was taken from wotlk Wowhead
 	[3685] = "Silithid Mound",	-- Silithid Mound	--TODO: This was taken from wotlk Wowhead
 	[3737] = "Fessura Ribollente",	-- Bubbling Fissure

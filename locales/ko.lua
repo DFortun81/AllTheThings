@@ -1025,7 +1025,7 @@ for key,value in pairs({
 	[3525] = "불의 제단",	-- The Altar of Fire
 	[3640] = "숙성한 버섯",	-- Laden Mushroom
 	[3643] = "낡은 사물함",	-- Old Footlocker
-	[3644] = "바엘 모단 비행기",	-- Bael Modan Flying Machine	--TODO: This was taken from wotlk Wowhead
+	[3644] = "바엘 모단 비행기",	-- 	--TODO: This was taken from wotlk Wowhead
 	[3646] = "트윈브레이드 장군의 금고",	-- General Twinbraid's Strongbox
 	[3685] = "실리시드 흙더미",	-- Silithid Mound
 	[3737] = "거품이 나오는 균열",	-- Bubbling Fissure
