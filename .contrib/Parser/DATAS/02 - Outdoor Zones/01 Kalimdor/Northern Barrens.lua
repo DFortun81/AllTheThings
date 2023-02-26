@@ -723,6 +723,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 11,
 					["groups"] = {
+						objective(1, {	-- 0/5 Savannah Lion Tusk
+							["provider"] = { "i", 4893 },	-- Savannah Lion Tusk
+							["crs"] = {
+								3243,	-- Savannah Highmane
+								3415,	-- Savannah Huntress
+								3416,	-- Savannah Matriarch
+								3425,	-- Savannah Prowler
+								3241,	-- Savannah Patriarch
+							},
+						}),
+						objective(2, {	-- 0/5 Plainstrider Kidney
+							["provider"] = { "i", 4894 },	-- Plainstrider Kidney
+							["crs"] = {
+								3246,	-- Fleeting Plainstrider
+								3244,	-- Greater Plainstrider
+								3245,	-- Ornery Plainstrider
+							},
+						}),
+						objective(3, {	-- 0/1 Thunder Lizard Horn
+							["provider"] = { "i", 4895 },	-- Thunder Lizard Horn
+							["crs"] = {
+								3240,	-- Stormsnout
+								5832,	-- Thunderstomp
+								3239,	-- Thunderhead
+							},
+						}),
 						i(4952, {	-- Stormstout
 							["timeline"] = { "removed 4.0.1" },
 						}),
@@ -737,6 +763,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 11,
 					["groups"] = {
+						objective(1, {	-- 0/5 Lightning Gland
+							["provider"] = { "i", 4898 },	-- Lightning Gland
+							["cr"] = 3238,	-- Stormhide
+						}),
+						objective(2, {	-- 0/1 Thunderhawk Saliva Gland
+							["provider"] = { "i", 4897 },	-- Thunderhawk Saliva Gland
+							["cr"] = 3249,	-- Greater Thunderhawk
+						}),
+						objective(3, {	-- 0/1 Kodo Liver
+							["provider"] = { "i", 4896 },	-- Kodo Liver
+							["crs"] = {
+								3236,	-- Barrens Kodo
+								3235,	-- Greater Barrens Kodo
+								3234,	-- Lost Barrens Kodo
+								3237,	-- Wooly Kodo
+								3474,	-- Lakota'mani
+							},
+						}),
 						i(4953, {	-- Trogg Brew / Trogg Ale [CATA+]
 							["timeline"] = { "removed 4.0.1" },
 						}),
