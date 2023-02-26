@@ -153,17 +153,38 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 	-- #endif
 	["groups"] = {
 		n(ACHIEVEMENTS, {
-			ach(1683, {	-- Brewmaster
+			-- #if BEFORE MOP
+			ach(1684, {	-- Brewmaster (A)
 				-- Meta Achievement should symlink the contained Achievements from Source
-				["sym"] = {
-					{"meta_achievement",
-						1185,				-- The Brewfest Diet
-						2796,				-- Brew of the Month
-						295,				-- Direbrewfest
-						303,				-- Have Keg, Will Travel
-						1936,				-- Does Your Wolpertinger Linger?
-					},
+				["sym"] = {{"meta_achievement",
+					1186,				-- Down With The Dark Iron
+					1185,				-- The Brewfest Diet
+					2796,				-- Brew of the Month
+					295,				-- Direbrewfest
+					303,				-- Have Keg, Will Travel
+					1936,				-- Does Your Wolpertinger Linger?
+				}},
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					title(101),				-- Brewmaster
 				},
+			}),
+			-- #endif
+			ach(1683, {	-- Brewmaster (H)
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {{"meta_achievement",
+					-- #if BEFORE 8.2.0 
+					1186,				-- Down With The Dark Iron
+					-- #endif
+					1185,				-- The Brewfest Diet
+					2796,				-- Brew of the Month
+					295,				-- Direbrewfest
+					303,				-- Have Keg, Will Travel
+					1936,				-- Does Your Wolpertinger Linger?
+				}},
+				-- #if BEFORE MOP
+				["races"] = HORDE_ONLY,
+				-- #endif
 				["groups"] = {
 					title(101),				-- Brewmaster
 				},

@@ -3,7 +3,7 @@
 --------------------------------------------------
 
 root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
-	achcat(ACHIEVEMENT_CATEGORY_AREANA, {
+	achcat(ACHIEVEMENT_CATEGORY_ARENA, {
 		filter(TITLES, bubbleDown({ ["collectible"] = false, },{
 			title(387),	-- <Name> the Elite Death Knight
 			title(388),	-- <Name> the Elite Demon Hunter

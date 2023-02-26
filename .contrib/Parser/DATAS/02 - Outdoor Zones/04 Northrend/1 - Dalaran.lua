@@ -4156,6 +4156,17 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					ach(1010, {	-- Northrend Vanguard
+						["maps"] = {
+							DRAGONBLIGHT,
+							ICECROWN,
+						},
+						-- #if ANYCLASSIC
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 1106, 1090, 1098, 1091); end]],
+						-- #endif
+					}),
 					ach(1782, {	-- Our Daily Bread (A)
 						["requireSkill"] = COOKING,
 						["races"] = ALLIANCE_ONLY,

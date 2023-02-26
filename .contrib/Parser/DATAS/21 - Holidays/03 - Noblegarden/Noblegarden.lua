@@ -157,22 +157,46 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 		}),
 		-- #if AFTER 3.1.0.9733
 		n(ACHIEVEMENTS, {
-			ach(2798, {	-- Noble Gardener
+			-- #if BEFORE MOP
+			ach(2797, {	-- Noble Gardener (A)
 				-- Meta Achievement should symlink the contained Achievements from Source
-				["sym"] = {
-					{"meta_achievement",
-						2676,	-- I Found One
-						2418,	-- Chocoholic
-						2436,	-- Desert Rose
-						2576,	-- Blushing Bride
-						2416,	-- Hard Boiled
-						2419,	-- Spring Fling (A)
-						2497,	-- Spring Fling (H)
-						2421,	-- Noble Garden (A)
-						2420,	-- Noble Garden (H)
-						2422,	-- Shake Your Bunny-Maker
-					},
+				["sym"] = {{"meta_achievement",
+					2676,	-- I Found One
+					2418,	-- Chocoholic
+					2436,	-- Desert Rose
+					2576,	-- Blushing Bride
+					2416,	-- Hard Boiled
+					2419,	-- Spring Fling (A)
+					2421,	-- Noble Garden (A)
+					2422,	-- Shake Your Bunny-Maker
+				}},
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					title(122),	-- <Name> the Noble
 				},
+			}),
+			-- #endif
+			ach(2798, {	-- Noble Gardener (H)
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {{"meta_achievement",
+					2676,	-- I Found One
+					2418,	-- Chocoholic
+					2436,	-- Desert Rose
+					2576,	-- Blushing Bride
+					2416,	-- Hard Boiled
+					-- #if AFTER MOP
+					2419,	-- Spring Fling (A)
+					-- #endif
+					2497,	-- Spring Fling (H)
+					-- #if AFTER MOP
+					2421,	-- Noble Garden (A)
+					-- #endif
+					2420,	-- Noble Garden (H)
+					2422,	-- Shake Your Bunny-Maker
+				}},
+				-- #if BEFORE MOP
+				["races"] = HORDE_ONLY,
+				-- #endif
 				["groups"] = {
 					title(122),	-- <Name> the Noble
 				},

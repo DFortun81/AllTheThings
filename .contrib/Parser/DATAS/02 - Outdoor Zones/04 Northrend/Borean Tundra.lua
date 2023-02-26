@@ -189,6 +189,22 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
+					ach(1012, {	-- The Winds of the North (A)
+						-- #if ANYCLASSIC
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1037); end]],
+						-- #endif
+						["races"] = ALLIANCE_ONLY,
+					}),
+					ach(1011, {	-- The Winds of the North (H)
+						-- #if ANYCLASSIC
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1052); end]],
+						-- #endif
+						["races"] = HORDE_ONLY,
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
