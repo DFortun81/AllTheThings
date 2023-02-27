@@ -840,9 +840,9 @@ _.Zones =
 					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
 					["description"] = "Must restore 3 Leyline feeds to get this quest.",
 				}),
-				-- TODO:: do the leyline feed quests require something? maybe "Power Grid" or "Feeding Shal'Aran"?
 				q(43587, {	-- Leyline Feed: Elor'shan
 					["provider"] = { "o", 252258 },	-- Leyline Feed
+					["sourceQuests"] = { 41138 },	-- Feeding Shal'Aran
 					["coords"] = {
 						{ 65.9, 42.0, SURAMAR },	-- cave entrance
 						{ 46.5, 47.3, 686 },
@@ -851,9 +851,11 @@ _.Zones =
 				q(43592, {	-- Leyline Feed: Falanaar Arcway
 					["coord"] = { 66.5, 52.5, 685 },
 					["provider"] = { "o", 252262 },	-- Leyline Feed
+					["sourceQuests"] = { 41138 },	-- Feeding Shal'Aran
 				}),
 				q(43593, {	-- Leyline Feed: Falanaar Depths
 					["provider"] = { "o", 252263 },	-- Leyline Feed
+					["sourceQuests"] = { 41138 },	-- Feeding Shal'Aran
 					["coords"] = {
 						{ 20.5, 50.4, SURAMAR },	-- cave entrance
 						{ 57.9, 75.2, 685 },
@@ -861,6 +863,7 @@ _.Zones =
 				}),
 				q(43594, {	-- Leyline Feed: Halls of the Eclipse
 					["provider"] = { "o", 252264 },	-- Leyline Feed
+					["sourceQuests"] = { 41138 },	-- Feeding Shal'Aran
 					["coords"] = {
 						{ 29.1, 84.6, SURAMAR },	-- cave entrance
 						{ 27.2, 86.4, SURAMAR },
@@ -868,6 +871,7 @@ _.Zones =
 				}),
 				q(43588, {	-- Leyline Feed: Kel'balor
 					["provider"] = { "o", 252259 },	-- Leyline Feed
+					["sourceQuests"] = { 41138 },	-- Feeding Shal'Aran
 					["coords"] = {
 						{ 59.3, 42.9, SURAMAR },
 						{ 52.5, 45.1, 687 },
@@ -875,6 +879,7 @@ _.Zones =
 				}),
 				q(43591, {	-- Leyline Feed: Ley Station Aethenar
 					["provider"] = { "o", 252261 },	-- Leyline Feed
+					["sourceQuests"] = { 41138 },	-- Feeding Shal'Aran
 					["coords"] = {
 						{ 24.2, 19.3, SURAMAR },	-- cave entrance
 						{ 49.0, 49.4, 690 },
@@ -882,6 +887,7 @@ _.Zones =
 				}),
 				q(43590, {	-- Leyline Feed: Ley Station Moonfall
 					["provider"] = { "o", 252260 },	-- Leyline Feed
+					["sourceQuests"] = { 41138 },	-- Feeding Shal'Aran
 					["coords"] = {
 						{ 35.7, 24.2, SURAMAR },	-- cave entrance
 						{ 54.2, 45.5, 689 },
