@@ -77,6 +77,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(27848, {	-- Good Intentions...Poor Execution
 					["qg"] = 46889,	-- Kagtha
 					["sourceQuest"] = 27847,	-- Not Quite There
+					["sourceQuestNumRequired"] = 0,	-- Auto-accepted when getting close to Admiral Ripsnarl
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 7, 15),
@@ -89,6 +90,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(27847, {	-- Not Quite There
 					["qg"] = 46902,	-- Miss Mayhem
 					["sourceQuest"] = 27844,	-- Traitors!!!
+					["sourceQuestNumRequired"] = 0,	-- Auto-accepted when getting close to Foe Reaper 5000
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 7, 15),
@@ -270,6 +272,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(27844, {	-- Traitors!!!
 					["qg"] = 46906,	-- Slinky Sharpshiv
 					["sourceQuest"] = 27842,	-- Only the Beginning
+					["sourceQuestNumRequired"] = 0,	-- Auto-accepted when getting close to Helix Gearbreaker
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 7, 15),
