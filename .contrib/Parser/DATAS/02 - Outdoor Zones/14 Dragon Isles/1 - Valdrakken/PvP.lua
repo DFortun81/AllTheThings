@@ -1410,6 +1410,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						})),
 					},
 				}),
+				-- #IF BEFORE 10.0.5
 				n(196191, {	-- Malicia <Scourge of the Flightless>
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["sym"] = {
@@ -1424,7 +1425,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						{"not", "itemID", 200966 },		-- Not Wild Truffle
 						{"modID", 14}
 					},
+
 				}),
+				-- #ENDIF
 				n(199601, {	-- Seltherex
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {

@@ -906,6 +906,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						}),
 					},
 				}),
+				-- #IF BEFORE 10.0.5
 				n(196598, {	-- Rethelshi
 					["coord"] = { 38.4, 36.8, VALDRAKKEN },
 					["sym"] = {
@@ -917,6 +918,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{"modID", 14}
 					},
 				}),
+									-- #ENDIF
 			}),
 		},
 	}),
