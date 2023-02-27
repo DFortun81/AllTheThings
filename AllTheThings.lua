@@ -13517,6 +13517,7 @@ app.SkillIDToSpellID = {
 	[960] = 53428,  -- Runeforging
 	[40] = 2842,	-- Poisons
 	[633] = 1809,	-- Lockpicking
+	[921] = 921,	-- Pickpocketing
 
 	-- Specializations
 	[20219] = 20219,	-- Gnomish Engineering
