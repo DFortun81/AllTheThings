@@ -2118,7 +2118,6 @@ _.PVP =
 								un(ELITE_PVP_REQUIREMENT, i(136157)),	-- Vindictive Gladiator's Dreadplate Sabatons (H)
 								un(ELITE_PVP_REQUIREMENT, i(136161)),	-- Vindictive Gladiator's Dreadplate Shoulders (H)
 								un(ELITE_PVP_REQUIREMENT, i(136163)),	-- Vindictive Gladiator's Dreadplate Wristplates (H)
-								un(ELITE_PVP_REQUIREMENT, i(136244)),	-- Vindictive Gladiator's Dreadcloak (H)
 								un(ELITE_PVP_REQUIREMENT, i(143213)),	-- Fearless Gladiator's Dreadcloak (H)
 								un(ELITE_PVP_REQUIREMENT, i(143125)),	-- Fearless Gladiator's Dreadplate Chestpiece (H)
 								un(ELITE_PVP_REQUIREMENT, i(143127)),	-- Fearless Gladiator's Dreadplate Gauntlets (H)
@@ -2353,8 +2352,8 @@ _.PVP =
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 1
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 2
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 2
 								{"exclude", "itemID", 146233 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
@@ -11739,7 +11738,7 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_DEMONIC, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.3.0.26365", "removed 8.0.1" } }, { 
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.3.0.26365", "removed 8.0.1" } }, {
 				ach(12187),	-- Challenger: Legion Season 7
 				ach(12195, {	-- Defender of the Alliance: Legion Season 7
 					["races"] = ALLIANCE_ONLY,
