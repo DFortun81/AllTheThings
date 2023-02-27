@@ -220,15 +220,12 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(6566),	-- Shimmering Amice
 				}),
 				n(CHEST, {
-					i(6116),	-- Apprentice's Robe	-- was not added to vendor in 10.0.5
 					i(2568),	-- Brown Linen Vest
 					i(2617),	-- Burning Robes
 					i(2613),	-- Double-Stitched Robes
 					i(2435),	-- Embroidered Armor
 					i(38277),	-- Haliscan Jacket
-					i(837),		-- Heavy Weave Armor
 					i(2615),	-- Chromatic Robe
-					i(795),		-- Knitted Tunic
 					i(20990),	-- Light Cloth Armor
 					i(2160),	-- Padded Armor
 					i(2612),	-- Plain Robe
@@ -239,7 +236,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2616),	-- Shimmering Silk Robes
 					i(2618),	-- Silver Dress Robes
 					i(193),		-- Tattered Cloth Vest
-					i(200),		-- Thick Cloth Vest
 					i(2121),	-- Thin Cloth Armor
 					i(2364),	-- Woven Vest
 				}),
@@ -250,9 +246,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(14087),	-- Beaded Cuffs
 					i(7350),	-- Disciple's Bracers
 					i(3588),	-- Embroidered Bracers
-					i(3590),	-- Heavy Weave Bracers
 					i(3641),	-- Journeyman's Bracers
-					i(3603),	-- Knitted Bracers
 					i(20988),	-- Light Cloth Bracers
 					i(14095),	-- Native Bands
 					i(3592),	-- Padded Bracers
@@ -260,7 +254,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(9744),	-- Simple Bands
 					i(3643),	-- Spellbinder Bracers
 					i(3596),	-- Tattered Cloth Bracers
-					i(3598),	-- Thick Cloth Bracers
 					i(3600),	-- Thin Cloth Bracers
 					i(3607),	-- Woven Bracers
 				}),
@@ -269,9 +262,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(14089),	-- Beaded Gloves
 					i(6515),	-- Disciple's Gloves
 					i(2440),	-- Embroidered Gloves
-					i(839),		-- Heavy Weave Gloves
 					i(2960),	-- Journeyman's Gloves
-					i(793),		-- Knitted Gloves
 					i(20987),	-- Light Cloth Gloves
 					i(14102),	-- Native Handwraps
 					i(2158),	-- Padded Gloves
@@ -279,7 +270,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(9746),	-- Simple Gloves
 					i(2972),	-- Spellbinder Gloves
 					i(711),		-- Tattered Cloth Gloves
-					i(203),		-- Thick Cloth Gloves
 					i(2119),	-- Thin Cloth Gloves
 					i(2369),	-- Woven Gloves
 				}),
@@ -289,9 +279,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(14093),	-- Beaded Cord
 					i(6513),	-- Disciple's Sash
 					i(3587),	-- Embroidered Belt
-					i(3589),	-- Heavy Weave Belt
 					i(4663),	-- Journeyman's Belt
-					i(3602),	-- Knitted Belt
 					i(20989),	-- Light Cloth Belt
 					i(14099),	-- Native Sash
 					i(3591),	-- Padded Belt
@@ -299,21 +287,16 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(9742),	-- Simple Cord
 					i(4684),	-- Spellbinder Belt
 					i(3595),	-- Tattered Cloth Belt
-					i(3597),	-- Thick Cloth Belt
 					i(3599),	-- Thin Cloth Belt
 					i(3606),	-- Woven Belt
 				}),
 				n(LEGS, {
 					i(2437),	-- Embroidered Pants
 					i(38278),	-- Haliscan Pantaloons
-					i(838),		-- Heavy Weave Pants
-					i(794),		-- Knitted Pants
 					i(20986),	-- Light Cloth Pants
 					i(2159),	-- Padded Pants
 					i(2431),	-- Russet Pants
-					i(6118),	-- Squire's Pants
 					i(194),		-- Tattered Cloth Pants
-					i(201),		-- Thick Cloth Pants
 					i(2120),	-- Thin Cloth Pants
 					i(6126),	-- Trapper's Pants
 					i(2366),	-- Woven Pants
@@ -324,9 +307,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(7351),	-- Disciple's Boots
 					i(6836),	-- Dress Shoes
 					i(2438),	-- Embroidered Boots
-					i(840),		-- Heavy Weave Shoes
 					i(2959),	-- Journeyman's Boots
-					i(792),		-- Knitted Sandals
 					i(20985),	-- Light Cloth Shoes
 					i(14110),	-- Native Sandals
 					i(2156),	-- Padded Boots
@@ -334,7 +315,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(9743),	-- Simple Shoes
 					i(2971),	-- Spellbinder Boots
 					i(195),		-- Tattered Cloth Boots
-					i(202),		-- Thick Cloth Shoes
 					i(2117),	-- Thin Cloth Shoes
 					i(6127),	-- Trapper's Boots
 					i(2367),	-- Woven Boots
@@ -359,19 +339,16 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(6523),	-- Buckled Harness
 					i(2127),	-- Cracked Leather Vest
 					i(2141),	-- Cuirboulli Vest
-					i(236),		-- Cured Leather Armor
 					i(5108),	-- Dark Iron Leather
 					i(57157),	-- Dark Lady's Vest	-- TODO Cataclysm
 					i(85),		-- Dirty Leather Vest
 					i(49517),	-- Goblin Primitive's Mantle	-- TODO Cataclysm
 					i(6525),	-- Grunt's Harness
 					i(2470),	-- Reinforced Leather Vest
-					i(799),		-- Rough Leather Vest
 					i(42099),	-- Snowhide Vest
 					i(2463),	-- Studded Doublet
 					i(6524),	-- Studded Leather Harness
 					i(20925),	-- Sun Cured Vest
-					i(846),		-- Tanned Leather Jerkin
 				}),
 				n(WRIST, {
 					i(2374),	-- Battered Leather Bracers
@@ -380,7 +357,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(3312),	-- Ceremonial Leather Bracers
 					i(2124),	-- Cracked Leather Bracers
 					i(2144),	-- Cuirboulli Bracers
-					i(1850),	-- Cured Leather Bracers
 					i(1836),	-- Dirty Leather Bracers
 					i(15297),	-- Grizzly Bracers
 					i(3207),	-- Hunting Bracers
@@ -389,11 +365,9 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(6519),	-- Pioneer Bracers
 					i(15005),	-- Primal Bands
 					i(2474),	-- Reinforced Leather Bracers
-					i(1840),	-- Rough Leather Bracers
 					i(42092),	-- Snowhide Bracers
 					i(2468),	-- Studded Bracers
 					i(20922),	-- Sun Cured Bracers
-					i(1844),	-- Tanned Leather Bracers
 					i(3285),	-- Tribal Bracers
 				}),
 				n(HANDS, {
@@ -401,7 +375,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2964),	-- Burnt Leather Gloves
 					i(2125),	-- Cracked Leather Gloves
 					i(2145),	-- Cuirboulli Gloves
-					i(239),		-- Cured Leather Gloves
 					i(714),		-- Dirty Leather Gloves
 					i(15300),	-- Grizzly Gloves
 					i(53376),	-- Lockpicker's Glovelettes	-- TODO Cataclysm
@@ -409,11 +382,9 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(6521),	-- Pioneer Gloves
 					i(15008),	-- Primal Mitts
 					i(2475),	-- Reinforced Leather Gloves
-					i(797),		-- Rough Leather Gloves
 					i(42097),	-- Snowhide Mitts
 					i(2469),	-- Studded Gloves
 					i(20923),	-- Sun Cured Gloves
-					i(844),		-- Tanned Leather Gloves
 					i(3286),	-- Tribal Gloves
 				}),
 				n(WAIST, {
@@ -422,7 +393,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(4693),	-- Ceremonial Leather Belt
 					i(2122),	-- Cracked Leather Belt
 					i(2142),	-- Cuirboulli Belt
-					i(1849),	-- Cured Leather Belt
 					i(1835),	-- Dirty Leather Belt
 					i(15302),	-- Grizzly Belt
 					i(4690),	-- Hunting Belt
@@ -430,27 +400,23 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(6517),	-- Pioneer Belt
 					i(15003),	-- Primal Belt
 					i(2471),	-- Reinforced Leather Belt
-					i(1839),	-- Rough Leather Belt
 					i(42084),	-- Snowhide Belt
 					i(2464),	-- Studded Belt
 					i(20920),	-- Sun Cured Belt
-					i(1843),	-- Tanned Leather Belt
 					i(4675),	-- Tribal Belt
 				}),
 				n(LEGS, {
 					i(2372),	-- Battered Leather Pants
 					i(2126),	-- Cracked Leather Pants
 					i(2146),	-- Cuirboulli Pants
-					i(237),		-- Cured Leather Pants
+
 					i(209),		-- Dirty Leather Pants
 					i(6135),	-- Primitive Kilt
 					i(153),		-- Primitive Kilt
 					i(2472),	-- Reinforced Leather Pants
-					i(798),		-- Rough Leather Pants
 					i(42098),	-- Snowhide Pants
 					i(2465),	-- Studded Pants
 					i(20924),	-- Sun Cured Pants
-					i(845),		-- Tanned Leather Pants
 				}),
 				n(FEET, {
 					i(2373),	-- Battered Leather Boots
@@ -458,7 +424,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(3311),	-- Ceremonial Leather Ankleguards
 					i(2123),	-- Cracked Leather Boots
 					i(2143),	-- Cuirboulli Boots
-					i(238),		-- Cured Leather Boots
 					i(210),		-- Dirty Leather Boots
 					i(15301),	-- Grizzly Slippers
 					i(2975),	-- Hunting Boots
@@ -466,12 +431,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(6518),	-- Pioneer Boots
 					i(15004),	-- Primal Boots
 					i(2473),	-- Reinforced Leather Boots
-					i(796),		-- Rough Leather Boots
 					i(57254),	-- Runner's Boots	-- TODO Cataclysm
 					i(42088),	-- Snowhide Hoof-Warmers
 					i(2467),	-- Studded Boots
 					i(20921),	-- Sun Cured Boots
-					i(843),		-- Tanned Leather Boots
 					i(3284),	-- Tribal Boots
 				}),
 			}),
@@ -491,13 +454,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				n(CHEST, {
 					i(2417),	-- Augmented Chain Vest
 					i(2423),	-- Brigandine Vest
-					i(847),		-- Chainmail Armor
 					i(2398),	-- Light Chain Armor
-					i(2392),	-- Light Mail Armor
 					i(30781),	-- Mag'hari Chain Vest
 					i(2153),	-- Polished Scale Vest
 					i(2386),	-- Rusted Chain Vest
-					i(285),		-- Scalemail Vest
 					i(2379),	-- Tarnished Chain Vest
 					i(20919),	-- Unadorned Chain Vest
 				}),
@@ -507,14 +467,11 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(3303),	-- Brackwater Bracers
 					i(2427),	-- Brigandine Bracers
 					i(9760),	-- Cadet Bracers
-					i(1846),	-- Chainmail Bracers
 					i(15474),	-- Charger's Bindings
 					i(6507),	-- Infantry Bracers
 					i(2402),	-- Light Chain Bracers
-					i(2396),	-- Light Mail Bracers
 					i(2150),	-- Polished Scale Bracers
 					i(2390),	-- Rusted Chain Bracers
-					i(1852),	-- Scalemail Bracers
 					i(2384),	-- Tarnished Chain Bracers
 					i(20916),	-- Unadorned Chain Bracers
 					i(3213),	-- Veteran Bracers
@@ -527,14 +484,11 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(3304),	-- Brackwater Gauntlets
 					i(2428),	-- Brigandine Gloves
 					i(9762),	-- Cadet Gauntlets
-					i(850),		-- Chainmail Gloves
 					i(15476),	-- Charger's Handwraps
 					i(6510),	-- Infantry Gauntlets
 					i(2403),	-- Light Chain Gloves
-					i(2397),	-- Light Mail Gloves
 					i(2151),	-- Polished Scale Gloves
 					i(2391),	-- Rusted Chain Gloves
-					i(718),		-- Scalemail Gloves
 					i(2385),	-- Tarnished Chain Gloves
 					i(20917),	-- Unadorned Chain Gloves
 					i(15484),	-- War Torn Handgrips
@@ -547,14 +501,11 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(4681),	-- Brackwater Girdle
 					i(2424),	-- Brigandine Belt
 					i(9758),	-- Cadet Belt
-					i(1845),	-- Chainmail Belt
 					i(15472),	-- Charger's Belt
 					i(6509),	-- Infantry Belt
 					i(2399),	-- Light Chain Belt
-					i(2393),	-- Light Mail Belt
 					i(2148),	-- Polished Scale Belt
 					i(2387),	-- Rusted Chain Belt
-					i(1853),	-- Scalemail Belt
 					i(2380),	-- Tarnished Chain Belt
 					i(20914),	-- Unadorned Chain Belt
 					i(4678),	-- Veteran Girdle
@@ -564,12 +515,9 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				n(LEGS, {
 					i(2418),	-- Augmented Chain Leggings
 					i(2425),	-- Brigandine Leggings
-					i(848),		-- Chainmail Pants
 					i(2400),	-- Light Chain Leggings
-					i(2394),	-- Light Mail Leggings
 					i(2152),	-- Polished Scale Leggings
 					i(2388),	-- Rusted Chain Leggings
-					i(286),		-- Scalemail Pants
 					i(2381),	-- Tarnished Chain Leggings
 					i(20918),	-- Unadorned Chain Leggings
 				}),
@@ -578,14 +526,11 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(3279),	-- Battle Chain Boots
 					i(2426),	-- Brigandine Boots
 					i(9759),	-- Cadet Boots
-					i(849),		-- Chainmail Boots
 					i(15473),	-- Charger's Boots
 					i(6506),	-- Infantry Boots
 					i(2401),	-- Light Chain Boots
-					i(2395),	-- Light Mail Boots
 					i(2149),	-- Polished Scale Boots
 					i(2389),	-- Rusted Chain Boots
-					i(287),		-- Scalemail Boots
 					i(2383),	-- Tarnished Chain Boots
 					i(20915),	-- Unadorned Chain Boots
 					i(2979),	-- Veteran Boots

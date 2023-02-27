@@ -5705,6 +5705,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
+						i(847),		-- Chainmail Armor
+						i(1845),	-- Chainmail Belt
+						i(849),		-- Chainmail Boots
+						i(1846),	-- Chainmail Bracers
+						i(850),		-- Chainmail Gloves
+						i(848),		-- Chainmail Pants
+						i(2392),	-- Light Mail Armor
+						i(2393),	-- Light Mail Belt
+						i(2395),	-- Light Mail Boots
+						i(2396),	-- Light Mail Bracers
+						i(2397),	-- Light Mail Gloves
+						i(2394),	-- Light Mail Leggings
+						i(1853),	-- Scalemail Belt
+						i(287),		-- Scalemail Boots
+						i(1852),	-- Scalemail Bracers
+						i(718),		-- Scalemail Gloves
+						i(286),		-- Scalemail Pants
+						i(285),		-- Scalemail Vest
+
 						-- Now any class and race can buy this
 						-- HUNTER --
 						i(129),	-- Rugged Trapper's Boots
@@ -6140,7 +6159,70 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3428),	-- Common Grey Shirt
 						i(16060),	-- Common White Shirt
 						-- #if AFTER 10.0.5
+						i(6116, {	-- Apprentice's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(23350, {	-- Battleworn Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
 						i(23349, {	-- Battleworn Shoes
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(837, {	-- Heavy Weave Armor
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(3589, {	-- Heavy Weave Belt
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(3590, {	-- Heavy Weave Bracers
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(839, {	-- Heavy Weave Gloves
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(838, {	-- Heavy Weave Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(840, {	-- Heavy Weave Shoes
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(3602, {	-- Knitted Belt
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(3603, {	-- Knitted Bracers
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(793, {	-- Knitted Gloves
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(794, {	-- Knitted Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(792, {	-- Knitted Sandals
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(795, {	-- Knitted Tunic
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(6118, {	-- Squire's Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(3597, {	-- Thick Cloth Belt
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(3598, {	-- Thick Cloth Bracers
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(203, {	-- Thick Cloth Gloves
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(201, {	-- Thick Cloth Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(202, {	-- Thick Cloth Shoes
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(200, {	-- Thick Cloth Vest
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						-- Now any class and race can buy this
@@ -6936,6 +7018,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
+						i(236),		-- Cured Leather Armor
+						i(1849),	-- Cured Leather Belt
+						i(238),		-- Cured Leather Boots
+						i(1850),	-- Cured Leather Bracers
+						i(239),		-- Cured Leather Gloves
+						i(237),		-- Cured Leather Pants
+						i(1839),	-- Rough Leather Belt
+						i(796),		-- Rough Leather Boots
+						i(1840),	-- Rough Leather Bracers
+						i(797),		-- Rough Leather Gloves
+						i(798),		-- Rough Leather Pants
+						i(799),		-- Rough Leather Vest
+						i(1843),	-- Tanned Leather Belt
+						i(843),		-- Tanned Leather Boots
+						i(1844),	-- Tanned Leather Bracers
+						i(844),		-- Tanned Leather Gloves
+						i(846),		-- Tanned Leather Jerkin
+						i(845),		-- Tanned Leather Pants
+
 						-- Now any class and race can buy this
 						-- DRUID --
 						i(6124),	-- Novice's Pants
