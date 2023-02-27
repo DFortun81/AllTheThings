@@ -2987,7 +2987,7 @@ local function CreateHash(t)
 			-- Separate if using Class requirements
 			if t.c then
 				for _,class in pairs(t.c) do
-					hash = "C" .. class .. hash;
+					hash = hash .. "C" .. class;
 				end
 			end
 			-- Separate if using Faction/Race requirements
@@ -2995,7 +2995,7 @@ local function CreateHash(t)
 				hash = "F" .. t.r .. hash;
 			elseif t.races then
 				for _,race in pairs(t.races) do
-					hash = "R" .. race .. hash;
+					hash = hash .. "R" .. race;
 				end
 			end
 		elseif key == "spellID" and t.itemID then
@@ -5360,24 +5360,26 @@ local function SkipFillingGroup(group, FillData)
 	-- do not fill 'saved' groups in ATT tooltips
 	-- or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT then
-		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
-		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID or group.encounterID) then return true; end
+		-- only ignored filling saved 'quest' groups (unless it's an Item, which we ignore the ignore... :D)
+		if group.saved and group.questID and not group.itemID then return true; end
 		local parent = group.parent;
 		-- parent is a saved quest, then do not fill with stuff
 		if parent and parent.questID and parent.saved then return true; end
 	end
 
-	-- mark this group as being filled since it is not being skipped
-	if groupHash then included[groupHash] = true; end
+	-- mark this group as being filled since it is not being skipped (unless it's a basic header)
+	if not group.headerID then
+		if groupHash then included[groupHash] = true; end
+	end
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
 local function FillGroupsRecursive(group, FillData)
-	-- app.PrintDebug("FillGroups",group.hash,depth)
-	if SkipFillingGroup(group, FillData) then return; end
+	if SkipFillingGroup(group, FillData) then
+		-- app.PrintDebug("FGR-SKIP",group.hash)
+		return;
+	end
+	-- app.PrintDebug("FGR",group.hash)
 
-	-- app.PrintDebug("FillGroups",group.hash,depth)
-	-- increment depth if things are being nested
-	FillData.Depth = FillData.Depth + 1;
 	local groups;
 	-- Determine Cost/Crafted/Symlink groups
 	groups = app.ArrayAppend(groups,
@@ -5408,11 +5410,13 @@ end
 -- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FunctionRunner to recursively follow the next layer of groups
 -- over multiple frames to reduce stutter
 local function FillGroupsRecursiveAsync(group, FillData)
-	-- app.PrintDebug("FillGroupsAsync",group.hash,depth)
-	if SkipFillingGroup(group, FillData) then return; end
+	if SkipFillingGroup(group, FillData) then
+		-- app.PrintDebug("FGRA-SKIP",group.hash)
+		return;
+	end
+	-- app.PrintDebug("FGRA",group.hash)
 
 	-- increment depth if things are being nested
-	FillData.Depth = FillData.Depth + 1;
 	local groups;
 	-- Determine Cost/Crafted/Symlink groups
 	groups = app.ArrayAppend(groups,
@@ -5452,8 +5456,6 @@ app.FillGroups = function(group)
 	-- Setup the FillData for this fill operation
 	local FillData = {
 		Included = {},
-		Depth = 0,
-		IsInWindow = isInWindow,
 	};
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;

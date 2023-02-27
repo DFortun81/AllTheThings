@@ -420,9 +420,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
 				["cost"] = { { "i", 191570, 2 }, },	-- 2x Dragon's Alchemical Solution
-				["g"] = {
-					-- i(191462),	-- Hochenblume+++
-				},
+				["_drop"] = { "g" },
 			}),
 			q(70183, { -- Specialized Secrets: Alchemy
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
@@ -646,6 +644,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["requireSkill"] = BLACKSMITHING,
 				["cost"] = {{"i",191241,1}},	-- Draconium Sickle
 				-- ["sourceQuest"] = ,
+				["_drop"] = { "g" },
 			}),
 			q(66897, {	-- Fuel for the Forge
 				["description"] = "Requires 25 Skill.",
@@ -905,6 +904,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					{ 56.8, 75.6, OHNAHRAN_PLAINS },
 				},
 				["cost"] = { { "i", 201601, 2 }, },	-- 2xRuned Serevite Rod
+				["_drop"] = { "g" },
 			}),
 			q(70186, { -- Specialized Secrets: Enchanting
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
@@ -1135,6 +1135,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
 				["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
 				["cost"] = { { "i", 198328, 1 }, },	-- 2xQuality-Assured Optics
+				["_drop"] = { "g" },
 			}),
 			q(70187, { -- Specialized Secrets: Engineering
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
@@ -1301,6 +1302,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				--["sourceQuests"] = {  },	-- To the Dragon Isles:
 				["provider"] = { "n", 192549 },	-- Feilin Kuan
 				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
+				["_drop"] = { "g" },
 			}),
 			q(70253, {	-- Hidden Profession Master Herbalism
 				["name"] = "Hidden Profession Master: Herbalism",
@@ -1495,6 +1497,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 198125 },	-- Isarian Shadowplume
 				["coord"] = { 57.1, 58.2, THE_WAKING_SHORES },
 				["cost"] = { { "i", 191233, 1 }, },	-- 2xChef's Smooth Rolling Pin
+				["_drop"] = { "g" },
 			}),
 			q(70188, { -- Specialized Secrets: Inscription
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
@@ -1751,10 +1754,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["sourceQuests"] = { 70365 },	-- To the Dragon Isles: Jewelcrafting
 				["provider"] = { "n", 192121 },	-- Falron Greygold
 				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
-				["g"] = {
-					-- i(192851),	-- Eternity Amber+++
-					-- i(192845),	-- Vibrant Emerald+++
-				},
+				["_drop"] = { "g" },
 			}),
 			q(70189, { -- Specialized Secrets: Jewelcrafting
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
@@ -2026,6 +2026,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					{ 29.0, 61.0, VALDRAKKEN },			-- Samar
 					{ 39.4, 55.4, OHNAHRAN_PLAINS },	-- Ekhi
 				},
+				["_drop"] = { "g" },
 			}),
 			q(66363, {	-- Basilisk Bucklers
 				["description"] = "Requires 25 Skill.",
@@ -2172,9 +2173,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 187261 },	-- Grun Ashbeard
 				["coord"] = { 76.3, 34.6, THE_WAKING_SHORES },
 				["cost"] = { { "i", 197754, 5 }, },	-- 5xSalt Deposit
-				["g"] = {
-					-- i(190394),	-- Tyrivite Ore+++
-				}
+				["_drop"] = { "g" },
 			}),
 			q(70258, {	-- Hidden Profession Master Mining
 				["name"] = "Hidden Profession Master: Mining",
@@ -2295,6 +2294,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 192558 },	-- Toninaar
 				["coord"] = { 76.6, 34.8, THE_WAKING_SHORES },
 				["cost"] = { { "i", 193252, 4 }, },	-- 3xSalamanther Scales
+				["_drop"] = { "g" },
 			}),
 			q(70363, {	-- Dragon Isles Skinning
 				["sourceQuests"] = {
@@ -2488,6 +2488,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191894 },	-- Krillonn <Tailoring Trainer>
 				["coord"] = { 61.4, 70.0, THE_WAKING_SHORES },
 				["cost"] = { { "i", 193497, 1 }, },	-- 2xSurveyor's Cloth Bands
+				["_drop"] = { "g" },
 			}),
 			q(70194, {	-- Specialized Secrets: Tailoring
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
