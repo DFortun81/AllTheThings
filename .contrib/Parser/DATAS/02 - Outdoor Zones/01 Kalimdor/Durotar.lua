@@ -166,6 +166,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								DEMONHUNTER
 								-- #endif
 								}, ALL_CLASSES),
+							["groups"] = {
+								i(52879),	-- Sea Witch's Bracers
+								i(52884),	-- Footsteps of the Fallen Friend
+								i(131828, {	-- Spitescale Stompers
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(52887),	-- Zuni's Family Heirloom
+								i(60260),	-- Sea Witch's Bag
+							},
 						}),
 						q(25035, {	-- Breaking the Line
 							["qg"] = 38440,	-- Tortunga
@@ -184,15 +193,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								DEMONHUNTER
 								-- #endif
 								}, ALL_CLASSES),
-							["groups"] = {
-								i(52879),	-- Sea Witch's Bracers
-								i(52884),	-- Footsteps of the Fallen Friend
-								i(131828, {	-- Spitescale Stompers
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(52887),	-- Zuni's Family Heirloom
-								i(60260),	-- Sea Witch's Bag
-							},
 						}),
 						q(24625, {	-- Consort of the Sea Witch
 							["qg"] = 37987,	-- Tegashi
