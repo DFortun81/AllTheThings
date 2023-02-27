@@ -21,7 +21,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					}),
 					i(204383, {	-- Sack of Oddities
 						["cost"] = {
-							{ "c", ELEMENTAL_OVERFLOW, 1000 },
+							{ "c", ELEMENTAL_OVERFLOW, 2000 },
+						},
+						["g"] = {
+							i(204403),	-- Sack of Sack of Oddities
+							i(191915),	-- Shaggy (PET!)
 						},
 					}),
 				},
@@ -34,22 +38,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							{ "c", ELEMENTAL_OVERFLOW, 2000 },
 						},
 					}),
-					i(197000, {	-- Cliffside Wylderdrake: Coiled Horns (DM!)
-						["cost"] = {
-							{ "c", ELEMENTAL_OVERFLOW, 10000 },
-						},
-					}),
 					i(197136, {	-- Highland Drake: Tapered Nose (DM!)
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 10000 },
 						},
 					}),
 					i(198356),	-- Honey Snack
-					i(202278, {	-- Renewed Proto-Drake: Antlers (DM!)
-						["cost"] = {
-							{ "c", ELEMENTAL_OVERFLOW, 10000 },
-						},
-					}),
+					--i(202278, {	-- Renewed Proto-Drake: Antlers (DM!)
+					--	["cost"] = {
+					--		{ "c", ELEMENTAL_OVERFLOW, 10000 },
+					--	},
+					--}),
 					i(203224, {	-- Valdrakken Surplus Chest
 						["cost"] = {
 							{ "i", 202870, 1 },	-- 1x Mysterious Writings [Have no Source of This yet]

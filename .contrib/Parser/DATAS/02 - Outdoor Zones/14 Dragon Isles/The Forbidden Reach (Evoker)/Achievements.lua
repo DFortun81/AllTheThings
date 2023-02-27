@@ -56,7 +56,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 					}),
 				},
 			}),
-			ach(16452, {	-- Famliar Skies
+			ach(16452, {	-- Familiar Skies
 				crit(1),	-- The Old Weyrn Grounds
 				crit(2),	-- Caldera of the Menders
 				crit(3),	-- Stormsunder Crater
