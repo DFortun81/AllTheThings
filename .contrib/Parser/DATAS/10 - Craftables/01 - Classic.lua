@@ -104,6 +104,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(13452),	-- Elixir of the Mongoose
 			i(13447),	-- Elixir of the Sages
 			i(5996),	-- Elixir of Water Breathing
+			i(8827),	-- Elixir of Water Walking
 			i(3383),	-- Elixir of Wisdom
 			i(9088),	-- Gift of Arthas
 			i(13454),	-- Greater Arcane Elixir

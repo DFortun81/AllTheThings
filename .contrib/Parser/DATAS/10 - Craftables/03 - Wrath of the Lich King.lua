@@ -3,10 +3,71 @@
 ---------------------------------------------
 root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
 	prof(ALCHEMY, {
+		category(633, {	-- Potions
+			i(40077),	-- Crazy Alchemist's Potion
+			i(43569, {	-- Endless Healing Potion
+				["timeline"] = { "added 3.0.2", "deleted 5.0.4" },
+			}),
+			i(43570, {	-- Endless Mana Potion
+				["timeline"] = { "added 3.0.2", "deleted 5.0.4" },
+			}),
+			i(40067),	-- Icy Mana Potion
+			i(40093),	-- Indestructible Potion
+			i(40213),	-- Mighty Arcane Protection Potion
+			i(40214),	-- Mighty Fire Protection Potion
+			i(40215),	-- Mighty Frost Protection Potion
+			i(40216),	-- Mighty Nature Protection Potion
+			i(40217),	-- Mighty Shadow Protection Potion
+			i(40081),	-- Potion of Nightmares
+			i(40211),	-- Potion of Speed
+			i(40212),	-- Potion of Wild Magic
+			i(40087),	-- Powerful Rejuvenation Potion
+			i(39671),	-- Resurgent Healing Potion
+			i(33447),	-- Runic Healing Potion
+			i(33448),	-- Runic Mana Potion
+		}),
+		category(634, {	-- Elixirs
+			i(44325),	-- Elixir of Accuracy
+			i(44330),	-- Elixir of Armor Piercing
+			i(44327),	-- Elixir of Deadly Strikes
+			i(44329),	-- Elixir of Expertise
+			i(44331),	-- Elixir of Lightning Speed
+			i(39666),	-- Elixir of Mighty Agility
+			i(44328),	-- Elixir of Mighty Defense
+			i(40078),	-- Elixir of Mighty Fortitude
+			i(40109),	-- Elixir of Mighty Mageblood
+			i(40073),	-- Elixir of Mighty Strength
+			i(44332),	-- Elixir of Mighty Thoughts
+			i(45621),	-- Elixir of Minor Accuracy
+			i(40097),	-- Elixir of Protection
+			i(40072),	-- Elixir of Spirit
+			i(40076),	-- Guru's Elixir
+			i(40070),	-- Spellpower Elixir
+			i(40068),	-- Wrath Elixir
+		}),
+		category(635, {	-- Flasks
+			i(46377),	-- Flask of Endless Rage
+			i(46378),	-- Flask of Pure Mojo
+			i(46379),	-- Flask of Stoneblood
+			i(46376),	-- Flask of the Frost Wyrm
+			i(47499, {	-- Flask of the North
+				["timeline"] = { "added 3.0.2", "deleted 5.0.4" },
+			}),
+			i(44939),	-- Lesser Flask of Resistance
+			i(40079),	-- Lesser Flask of Toughness
+		}),
+		category(636, {	-- Transmutation
+			i(41334),	-- Earthsiege Diamond
+			i(41266),	-- Skyflare Diamond
+		}),
 		filter(TRINKET_F, {
 			i(44323),	-- Indestructible Alchemist Stone
 			i(44322),	-- Mercurial Alchemist Stone
 			i(44324),	-- Mighty Alchemist Stone
+		}),
+		category(644, {	-- Materials
+			i(44958),	-- Ethereal Oil
+			i(40195),	-- Pygmy Oil
 		}),
 	}),
 	prof(BLACKSMITHING, {

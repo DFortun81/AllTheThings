@@ -497,6 +497,16 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["recipeID"] = 7179
 				},
 				{
+					["name"] = "Elixir of Waterwalking",
+					["timeline"] = { "deleted 3.0.1" },
+					["recipeID"] = 11447,
+				},
+				{
+					["name"] = "Elixir of Water Walking",
+					["timeline"] = { "added 3.0.1" },
+					["recipeID"] = 62410,
+				},
+				{
 					["name"] = "Elixir of Wisdom",
 					["recipeID"] = 3171
 				},
