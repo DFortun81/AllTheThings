@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 			n(193669, {	-- Prozela Galeshot
 				["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
-				["questID"] = 72815,	-- 71240 must be elsewhere... will wait for reports...
+				["questID"] = 72815,
 				["isDaily"] = false,
 			}),
 			n(192557, {	-- Quackers the Terrible
