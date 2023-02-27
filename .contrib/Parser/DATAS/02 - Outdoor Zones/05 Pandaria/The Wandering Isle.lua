@@ -556,7 +556,9 @@ _.Zones =
 						["g"] = {
 							i(76391),	-- Trainee's Axe
 							i(73213),	-- Trainee's Shield
-							i(73210),	-- Trainee's Sword
+							i(73210, {	-- Trainee's Sword
+								["u"] = REMOVED_FROM_GAME,	-- Since warriors now default to protection, this can no longer be picked up
+							}),
 						},
 					}),
 				}),
