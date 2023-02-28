@@ -513,9 +513,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(173432),	-- Vile Manipulator's Handwraps
 				}),
 				i(173417, {	-- Black Empire Cloth Helm
-					i(173433),	-- Vile Manipulator's Cowl
-					i(184591),	-- Vile Manipulator's Cowl
-					i(173845),	-- Vile Manipulator's Hood
+					azeriteItem(173433),	-- Vile Manipulator's Cowl
+					azewrongItem(184591),	-- Vile Manipulator's Cowl
+					azeriteItem(173845),	-- Vile Manipulator's Hood
 				}),
 				i(173418, {	-- Black Empire Cloth Leggings
 					i(173434),	-- Vile Manipulator's Leggings
@@ -524,14 +524,14 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(173811),	-- Vile Manipulator's Trousers
 				}),
 				i(173414, {	-- Black Empire Cloth Robes
-					i(173458),	-- Vile Manipulator's Robe
-					i(184590),	-- Vile Manipulator's Robe
-					i(173846),	-- Vile Manipulator's Vestment
+					azeriteItem(173458),	-- Vile Manipulator's Robe
+					azewrongItem(184590),	-- Vile Manipulator's Robe
+					azeriteItem(173846),	-- Vile Manipulator's Vestment
 				}),
 				i(173419, {	-- Black Empire Cloth Spaulders
-					i(173844),	-- Vile Manipulator's Amice
-					i(173435),	-- Vile Manipulator's Mantle
-					i(184592),	-- Vile Manipulator's Mantle
+					azeriteItem(173844),	-- Vile Manipulator's Amice
+					azeriteItem(173435),	-- Vile Manipulator's Mantle
+					azewrongItem(184592),	-- Vile Manipulator's Mantle
 				}),
 				i(173413, {	-- Black Empire Leather Belt
 					i(173816),	-- Belt of the Insatiable Maw
@@ -553,10 +553,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(173445),	-- Wristwraps of the Insatiable Maw
 				}),
 				i(173407, {	-- Black Empire Leather Chestpiece
-					i(173438),	-- Chestguard of the Insatiable Maw
-					i(173843),	-- Vest of the Insatiable Maw
-					-- Possibly acquired if you don't have Heart of Azeroth
-					i(184593),	-- Chestguard of the Insatiable Maw
+					azeriteItem(173438),	-- Chestguard of the Insatiable Maw
+					azeriteItem(173843),	-- Vest of the Insatiable Maw
+					azewrongItem(184593),	-- Chestguard of the Insatiable Maw
 				}),
 				i(173409, {	-- Black Empire Leather Gloves
 					i(173464),	-- Gloves of the Insatiable Maw
@@ -565,10 +564,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(173492),	-- Handwraps of the Insatiable Maw
 				}),
 				i(173410, {	-- Black Empire Leather Helm
-					i(173441),	-- Guise of the Insatiable Maw
-					i(173842),	-- Visage of the Insatiable Maw
-					-- Possibly acquired if you don't have Heart of Azeroth
-					i(184594),	-- Chestguard of the Insatiable Maw
+					azeriteItem(173441),	-- Guise of the Insatiable Maw
+					azeriteItem(173842),	-- Visage of the Insatiable Maw
+					azewrongItem(184594),	-- Chestguard of the Insatiable Maw
 				}),
 				i(173411, {	-- Black Empire Leather Leggings
 					i(173484),	-- Breeches of the Insatiable Maw
@@ -577,10 +575,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(173814),	-- Trousers of the Insatiable Maw
 				}),
 				i(173412, {	-- Black Empire Leather Spaulders
-					i(173841),	-- Mantle of the Insatiable Maw
-					i(173443),	-- Shoulderpads of the Insatiable Maw
-					-- Possibly acquired if you don't have Heart of Azeroth
-					i(184595),	-- Shoulderpads of the Insatiable Maw
+					azeriteItem(173841),	-- Mantle of the Insatiable Maw
+					azeriteItem(173443),	-- Shoulderpads of the Insatiable Maw
+					azewrongItem(184595),	-- Shoulderpads of the Insatiable Maw
 				}),
 				i(173406, {	-- Black Empire Mail Belt
 					i(173452),	-- Nefarious Tormentor's Belt
@@ -602,9 +599,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(173453),	-- Nefarious Tormentor's Vambraces
 				}),
 				i(173400, {	-- Black Empire Mail Chestpiece
-					i(173446),	-- Nefarious Tormentor's Breastplate
-					i(184596),	-- Nefarious Tormentor's Breastplate
-					i(173840),	-- Nefarious Tormentor's Chestpiece
+					azeriteItem(173446),	-- Nefarious Tormentor's Breastplate
+					azewrongItem(184596),	-- Nefarious Tormentor's Breastplate
+					azeriteItem(173840),	-- Nefarious Tormentor's Chestpiece
 				}),
 				i(173402, {	-- Black Empire Mail Gloves
 					i(173465),	-- Nefarious Tormentor's Gloves
@@ -613,9 +610,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(173493),	-- Nefarious Tormentor's Handwraps
 				}),
 				i(173403, {	-- Black Empire Mail Helm
-					i(173839),	-- Nefarious Tormentor's Cover
-					i(173449),	-- Nefarious Tormentor's Mask
-					i(184597),	-- Nefarious Tormentor's Mask
+					azeriteItem(173839),	-- Nefarious Tormentor's Cover
+					azeriteItem(173449),	-- Nefarious Tormentor's Mask
+					azewrongItem(184597),	-- Nefarious Tormentor's Mask
 				}),
 				i(173404, {	-- Black Empire Mail Leggings
 					i(173469),	-- Nefarious Tormentor's Greaves
@@ -624,9 +621,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(173817),	-- Nefarious Tormentor's Trousers
 				}),
 				i(173405, {	-- Black Empire Mail Spaulders
-					i(173838),	-- Nefarious Tormentor's Epaulets
-					i(173451),	-- Nefarious Tormentor's Spaulders
-					i(184598),	-- Nefarious Tormentor's Spaulders
+					azeriteItem(173838),	-- Nefarious Tormentor's Epaulets
+					azeriteItem(173451),	-- Nefarious Tormentor's Spaulders
+					azewrongItem(184598),	-- Nefarious Tormentor's Spaulders
 				}),
 				i(173399, {	-- Black Empire Plate Belt
 					i(173821),	-- Malignant Leviathan's Clasp
@@ -648,9 +645,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(173482),	-- Malignant Leviathan's Wristguards
 				}),
 				i(173393, {	-- Black Empire Plate Chestpiece
-					i(173454),	-- Malignant Leviathan's Chestplate
-					i(184599),	-- Malignant Leviathan's Chestplate
-					i(173837),	-- Malignant Leviathan's Hauberk
+					azeriteItem(173454),	-- Malignant Leviathan's Chestplate
+					azewrongItem(184599),	-- Malignant Leviathan's Chestplate
+					azeriteItem(173837),	-- Malignant Leviathan's Hauberk
 				}),
 				i(173395, {	-- Black Empire Plate Gloves
 					i(173456),	-- Malignant Leviathan's Crushers
@@ -659,10 +656,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(173510),	-- Malignant Leviathan's Handguards
 				}),
 				i(173396, {	-- Black Empire Plate Helm
-					i(173457),	-- Malignant Leviathan's Headguard
-					i(173836),	-- Malignant Leviathan's Helm
-					-- Possibly acquired if you don't have Heart of Azeroth
-					i(184600),	-- Malignant Leviathan's Headguard
+					azeriteItem(173457),	-- Malignant Leviathan's Headguard
+					azeriteItem(173836),	-- Malignant Leviathan's Helm
+					azewrongItem(184600),	-- Malignant Leviathan's Headguard
 				}),
 				i(173397, {	-- Black Empire Plate Leggings
 					i(173820),	-- Malignant Leviathan's Greaves
@@ -671,10 +667,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(173459),	-- Malignant Leviathan's Wargreaves
 				}),
 				i(173398, {	-- Black Empire Plate Spaulders
-					i(173835),	-- Malignant Leviathan's Pauldrons
-					i(173460),	-- Malignant Leviathan's Spaulders
-					-- Possibly acquired if you don't have Heart of Azeroth
-					i(184601),	-- Malignant Leviathan's Spaulders
+					azeriteItem(173835),	-- Malignant Leviathan's Pauldrons
+					azeriteItem(173460),	-- Malignant Leviathan's Spaulders
+					azewrongItem(184601),	-- Malignant Leviathan's Spaulders
 				}),
 				i(173936, {	-- Dookin' Ookin' Quarterstaff
 					["coord"] = { 80.4, 63.6, 1530 },
