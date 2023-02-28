@@ -133,7 +133,8 @@ root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { "added 8.2.5
 				i(173640),	-- Lightdrinker Waistband
 			}),
 			cl(SHAMAN,  {
-				--i(),	-- Blue Winglord's Bracers
+				i(203370),	-- Blue Winglord's Bracers
+				-- Maybe all Blue Wings are available? 28.02.2023
 				i(173576),	-- Earthmender's Shield
 				i(173560),	-- Earthmender's Talons
 				i(173575),	-- Stormshaper's Bulwark

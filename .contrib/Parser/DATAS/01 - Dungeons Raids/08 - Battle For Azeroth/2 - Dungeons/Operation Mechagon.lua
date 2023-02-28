@@ -345,10 +345,12 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 									i(199921, {	-- Trashmaster's Mantle
 										["description"] = "Blizzard didn't want the M+ version of this cloak to be able to be used for the related Quest. So they created a brand new ItemID along with new SourceIDs...\n\nConfirmed as a Great Vault +15 reward",
 										["bonusID"] = 7359,
+										["timeline"] = { "added 9.2.7", "removed 10.0.2" },
 									}),
 									i(199921, {	-- Trashmaster's Mantle
 										["description"] = "Blizzard didn't want the M+ version of this cloak to be able to be used for the related Quest. So they created a brand new ItemID along with new SourceIDs...\n\nConfirmed as a direct M+ drop.",
 										["modID"] = 33,
+										["timeline"] = { "added 9.2.7", "removed 10.0.2" },
 									}),
 								}),
 							},

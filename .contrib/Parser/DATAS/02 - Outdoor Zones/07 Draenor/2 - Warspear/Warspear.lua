@@ -3780,11 +3780,11 @@ _.Zones =
 									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
 								}),
 								i(202236, {	-- Technique: Impressive Weapon Crystal
-									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
 									["timeline"] = { ADDED_DF_0_5 },
 								}),
 								i(202237, {	-- Technique: Remarkable Weapon Crystal
-									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
 									["timeline"] = { ADDED_DF_0_5 },
 								}),
 								i(118613, {	-- Technique: Shadowtome
