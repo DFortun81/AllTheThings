@@ -1542,6 +1542,30 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				["timeline"] = { "added 3.3.0" },
 				["races"] = HORDE_ONLY,
 			}),
+			q(72735, {	-- Still Into Perfume (A)
+				["qg"] = 199261,	-- Holiday Enthusiast
+				["coords"] = {
+					{ 31.4, 63.2, VALDRAKKEN },
+					{ 54.2, 60.0, VALDRAKKEN },
+					{ 55.0, 37.2, VALDRAKKEN },
+				},
+				["timeline"] = { ADDED_DF_0_5 },
+				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
+				["isYearly"] = true,
+			}),
+			q(72736, {	-- Still Into Perfume (H)
+				["qg"] = 199261,	-- Holiday Enthusiast
+				["coords"] = {
+					{ 31.4, 63.2, VALDRAKKEN },
+					{ 54.2, 60.0, VALDRAKKEN },
+					{ 55.0, 37.2, VALDRAKKEN },
+				},
+				["timeline"] = { ADDED_DF_0_5 },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+				["isYearly"] = true,
+			}),
 			q(9028, {	-- The Source Revealed (A)
 				["qg"] = 16106,	-- Evert Sorisam
 				["sourceQuest"] = 9027,	-- Tracing the Source (A) (2/2)
@@ -2367,8 +2391,6 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 
 root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 	q(74957),	-- daily tracker for Bad Luck Protection on Love Rocket drop
-	q(72735),	-- triggered while completing 'Uncommon Scents' (24804/5)
-	q(72736),	-- triggered while completing 'Uncommon Scents' (24804/5)
 }));
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
