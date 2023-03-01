@@ -17,8 +17,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 		}),
-		q(72681, {	-- Report to the Trading Post -- Last Month: Triggered after completing 66959 (and cross complete 66858) Probably Monthly? //Braghe
+		q(72681, {	-- Report to the Trading Post -- Last Month: Triggered after completing 66959 (and cross complete 66858)
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isMonthly"] = true,
 		}),
 	}),
 	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Trader's Tender in the month." }, {
