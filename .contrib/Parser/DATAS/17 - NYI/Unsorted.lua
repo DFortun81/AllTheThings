@@ -1181,14 +1181,14 @@ root(ROOTS.Unsorted, {
 				i(137295),	-- Bottle of Arcwine
 
 				-- Probably Trading Post?
-				i(189792),	-- Glorious Dragonrider's Grips
+
 				i(189872),	-- Shattered Krokul Edge
 				i(189873),	-- Sylvan Stalker's Boots
-				i(189874),	-- Glorious Dragonrider's Wristguards
+
 				i(189875),	-- Corrupted Runelord's Sash
 				i(189876),	-- Corrupted Runelord's Handguards
-				i(189877),	-- Glorious Dragonrider's Spaulders
-				i(189878),	-- Glorious Dragonrider's Runeward
+
+
 				i(189879),	-- Corrupted Runelord's Leggings
 				i(189880),	-- Corrupted Runelord's Mantle
 				i(189881),	-- Val'sharah Protector's Greaves
@@ -1227,15 +1227,15 @@ root(ROOTS.Unsorted, {
 				i(190203),	-- Woodsman's Timber Mallet
 				i(190206),	-- Corrupted Runelord's Glyphbands
 				i(190207),	-- Corrupted Runelord's Slippers
-				i(190208),	-- Glorious Dragonrider's Sabatons
-				i(190209),	-- Glorious Dragonrider's Chains
+
+
 				i(190210),	-- Corrupted Runelord's Cowl
 				i(190211),	-- Corrupted Runelord's Robe
-				i(190212),	-- Glorious Dragonrider's Hood
+
 				i(190213),	-- Val'sharah Protector's Cuirass
 				i(190218),	-- Jeweled Ripper
 				i(190219),	-- Virulent Gavel
-				i(190230),	-- Glorious Dragonrider's Cuisses
+
 				i(190428),	-- Regal Warcloak
 				i(190430),	-- Chipped Gladius
 				i(190432),	-- Tidecaller's Bracers
@@ -1848,15 +1848,6 @@ root(ROOTS.Unsorted, {
 						i(194318),	-- Book of Ancient Lore
 						i(194329),	-- Elaborate Reliquary Candelabra
 						i(194331),	-- Pristine Research Journal
-						-- Fel-Automaton Set
-						i(189887),	-- Fel-Automaton Coreguard
-						i(189888),	-- Fel-Automaton Stompers
-						i(189889),	-- Fel-Automaton Plating
-						i(189890),	-- Fel-Automaton Manipulators
-						i(189891),	-- Fel-Automaton Cranioplate
-						i(189892),	-- Fel-Automaton Mobilizers
-						i(189893),	-- Fel-Automaton Pauldrons
-						i(189894),	-- Fel-Automaton Stabilizers
 						-- Honored Valarjar Set
 						i(190081),	-- Mantle of the Honored Valarjar
 						i(190082),	-- Cloak of the Honored Valarjar
@@ -1887,14 +1878,6 @@ root(ROOTS.Unsorted, {
 						i(190227),	-- Nightmare Forest Raiment
 						i(190228),	-- Nightmare Forest Mantle
 						i(190229),	-- Nightmare Forest Bindings
-						-- Darkmoon Set
-						i(190488),	-- Darkmoon Harlequin's Visage
-						i(190489),	-- Darkmoon Harlequin's Mantle
-						i(190490),	-- Darkmoon Harlequin's Tunic
-						i(190491),	-- Darkmoon Harlequin's Gloves
-						i(190492),	-- Darkmoon Harlequin's Belt
-						i(190493),	-- Darkmoon Harlequin's Tights
-						i(190494),	-- Darkmoon Harlequin's Shoes
 						-- Honored Valarjar Set
 						i(190563),	-- Armbands of the Honored Valarjar
 						i(190564),	-- Cape of the Honored Valarjar
