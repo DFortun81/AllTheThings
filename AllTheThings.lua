@@ -6155,7 +6155,6 @@ app.CreateDataCache = function(name)
 	cache["professionID"] = {};
 	-- identical cache as professionID
 	cache["requireSkill"] = rawget(cache, "professionID");
-	cache["altQuestIDs"] = {};
 	cache["questID"] = {};
 	cache["runeforgePowerID"] = {};
 	cache["rwp"] = {};
@@ -6318,11 +6317,6 @@ fieldConverters = {
 	end,
 
 	-- Complex Converters
-	["altQuests"] = function(group, value)
-		for _,questID in ipairs(value) do
-			CacheField(group, "altQuestIDs", questID);
-		end
-	end,
 	["crs"] = function(group, value)
 		for _,creatureID in ipairs(value) do
 			cacheCreatureID(group, creatureID);
