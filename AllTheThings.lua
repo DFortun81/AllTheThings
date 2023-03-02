@@ -7879,7 +7879,7 @@ app.RequestLoadQuestByID = function(questID, data)
 	-- only allow requests once per frame until received
 	if not QuestsRequested[questID] then
 		-- there's some limit to quest data checking that causes d/c... not entirely sure what or how much
-		app.FunctionRunner.SetPerFrame(10, true);
+		app.FunctionRunner.SetPerFrame(10);
 		-- app.PrintDebug("RequestLoadQuestByID",questID,"Data:",data)
 		QuestsRequested[questID] = true;
 		if data then
