@@ -2264,6 +2264,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["sourceQuest"] = 34586,	-- Establish Your Garrison
 				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["description"] = "Becomes available after completing any seconday profession intro quest.",
+				["DisablePartySync"] = true,
 				["coords"] = {
 					{ 41.3, 49.4, LUNARFALL },	-- lvl 1 garrison
 					{ 29.2, 33.1, LUNARFALL },	-- lvl 2/3 garrison
@@ -2274,6 +2275,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["sourceQuest"] = 34378,	-- Establish Your Garrison
 				["provider"] = { "n", 78466 },	-- Gazlowe
 				["description"] = "Becomes available after completing any seconday profession intro quest.",
+				["DisablePartySync"] = true,
 				["coords"] = {
 					{ 52.4, 53.3, FROSTWALL },	-- lvl 1
 					{ 42.2, 55.6, FROSTWALL },	-- lvl 2
@@ -3049,12 +3051,14 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["coord"] = { 42.8, 45.2, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
+				["DisablePartySync"] = true,
 			}),
 			q(37183, {	-- The Critical Path
 				["provider"] = { "n", 81492 },	-- Bodrick Grey
 				["coord"] = { 38.2, 37.0, LUNARFALL },	-- garrison lvl 3
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
+				["DisablePartySync"] = true,
 			}),
 			q(36314, {	-- The Intricate Pendant
 				["races"] = HORDE_ONLY,

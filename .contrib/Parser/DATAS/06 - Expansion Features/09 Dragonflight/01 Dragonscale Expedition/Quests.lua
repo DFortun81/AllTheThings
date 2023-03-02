@@ -94,7 +94,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["description"] = "Buying the Renowned cloaks will remove this quest from being available!",
 				["provider"] = { "n", 187700 },	-- Pathfinder Jab
 				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "questID", 72025 },
 				["g"] = {
 					i(199873),	-- Renowned Expeditioner's Cape
 					i(199874),	-- Renowned Expeditioner's Cloak
@@ -133,6 +132,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(198863),	-- Small Dragon Expedition Supply Pack
 				},
 			}),
+				-- RENOWN 6 --
+			q(72032, {	-- Dragonscale Expedition Supplies
+				["minReputation"] = { 2507, 6 },	-- Dragonscale Expedition Renown 6
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
 				-- RENOWN 7 --
 			q(70807, {	-- Advanced Excavation Tools
 				["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
@@ -144,15 +152,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(194325),	-- Researcher's Magnifier
 				},
 			}),
-				-- RENOWN 8 --
-			q(72032, {	-- Dragonscale Expedition Supplies
-				["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
+			q(72033, {	-- Dragonscale Expedition Supplies
+				["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
 					i(198863),	-- Small Dragon Expedition Supply Pack
 				},
 			}),
+				-- RENOWN 8 --
 			q(72034, {	-- Dragonscale Expedition Supplies
 				["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
@@ -205,6 +213,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["g"] = {
 					i(198726),	-- Black Skitterbug (PET!)
 					i(198725),	-- Gray Marmoni (PET!)
+				},
+			}),
+			q(72037, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 11 },	-- Dragonscale Expedition Renown 11
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
 				},
 			}),
 				-- RENOWN 12 --
@@ -290,6 +306,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					{ 53.9, 50.7, THE_AZURE_SPAN },
 				},
 			}),
+			q(72038, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
 				-- RENOWN 14 --
 			q(70819, {	-- Renowned Explorer's Armor
 				["minReputation"] = { 2507, 14 },	-- Dragonscale Expedition Renown 14
@@ -353,6 +377,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(201715),	-- Notebook of Crafting Knowledge
 				},
 			}),
+			q(72039, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 14 },	-- Dragonscale Expedition Renown 14
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
 				-- RENOWN 15 --
 			q(70809, {	-- Deeper Mysteries of the Dragon Isles Drakes
 				["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
@@ -362,6 +394,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197395),	-- Renewed Proto-Drake: Harrier Pattern (DM!)
 					i(197402),	-- Renewed Proto-Drake: Spiked Club Tail (DM!)
 					i(197374),	-- Renewed Proto-Drake: Swept Horns (DM!)
+				},
+			}),
+			q(72040, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198865),	-- Large Dragon Expedition Supply Pack
 				},
 			}),
 				-- RENOWN 16 --
@@ -390,6 +430,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(198721),	-- Skinny Reliquary Pillow (TOY!)
 					i(198722),	-- Small Triangular Pillow (TOY!)
 					i(198720),	-- Soft Purple Pillow (TOY!)
+				},
+			}),
+			q(72042, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 17 },	-- Dragonscale Expedition Renown 17
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198865),	-- Large Dragon Expedition Supply Pack
 				},
 			}),
 				-- RENOWN 18 --
@@ -424,6 +472,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(198727),	-- Expedition Explosives
 				},
 			}),
+			q(72045, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 20 },	-- Dragonscale Expedition Renown 20
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198865),	-- Large Dragon Expedition Supply Pack
+				},
+			}),
 				-- RENOWN 21 --
 			q(70833, {	-- Rumors of the Jeweled Whelplings
 				["minReputation"] = { 2507, 21 },	-- Dragonscale Expedition Renown 21
@@ -431,6 +487,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 				["g"] = {
 					i(200738),	-- Onyx Gem Cluster Map
+				},
+			}),
+			q(72046, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 21 },	-- Dragonscale Expedition Renown 21
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198865),	-- Large Dragon Expedition Supply Pack
 				},
 			}),
 				-- RENOWN 22 --
@@ -442,6 +506,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197144),	-- Highland Drake: Red Scales (DM!)
 					i(197010),	-- Cliffside Wylderdrake: Red Scales (DM!)
 					i(197614),	-- Windborne Velocidrake: Red Scales (DM!)
+				},
+			}),
+			q(72047, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 22 },	-- Dragonscale Expedition Renown 22
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198865),	-- Large Dragon Expedition Supply Pack
 				},
 			}),
 				-- RENOWN 23 --
@@ -497,6 +569,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["requireSkill"] = TAILORING,
 				["g"] = {
 					i(201715),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72043, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23	-- TODO: might be renown 18 quest
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198865),	-- Large Dragon Expedition Supply Pack
 				},
 			}),
 				-- RENOWN 24 --
@@ -569,6 +649,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197805),	-- Suspicious Persons Scanner
 				},
 			}),
+			q(72048, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198865),	-- Large Dragon Expedition Supply Pack
+				},
+			}),
 				-- RENOWN 25 --
 			q(70834, {	-- Titled Story
 				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
@@ -591,6 +679,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["g"] = {
 					i(192761),	-- Tamed Skitterfly (Mount!)
 					i(192762),	-- Azure Skitterfly (Mount!)
+				},
+			}),
+			q(72049, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(199472),	-- Overflowing Dragon Expedition Supply Pack
 				},
 			}),
 				-- PARAGON --
@@ -672,22 +768,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		q(72033),	-- Triggeres together with 'Advanced Excavation Tools' (70807)
-		q(72037),	-- Triggers together with 'The Basecamp 'Pets'' (70820)
 		q(72401),	-- Triggered immediately after reaching renown 13
-		q(72038),	-- Triggered with 'A New Mystery' (69093)
 		q(72756),	-- Triggered with 'Next Steps' (66128)
-		q(72039),	-- Triggered with 'Renowned Explorer's Armor' (70819)
-		q(72040),	-- Triggered with 'Deeper Mysteries of the Dragon Isles Drakes' (70809)
-		q(72042),	-- Triggered with 'Researching in Comfort' (70831)
-		q(72045),	-- Triggered with 'Demolitions Access' (70815)
-		q(72046),	-- Triggered with 'Rumors of the Jeweled Whelplings' (70833)
-		q(72047),	-- Triggered with 'Broader Mysteries of the Dragon Isles Drakes' (70810)
 		q(72402),	-- Triggered on reaching Renown 24 before accepting any quests
-		q(72048),	-- Triggered with 'A Vault Unsealed' (69097)
 		q(72752),	-- Triggered on completion of 'It Belongs in a Museum... Eventually' (also at the same time as Friend of the Dragon Isles popping, unsure which is the trigger)
 		q(72822),	-- Triggered on completion of 'It Belongs in a Museum... Eventually' (also at the same time as Friend of the Dragon Isles popping, unsure which is the trigger)
-		q(72049),	-- Triggered with 'Skitterfly Riding' (70821)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor

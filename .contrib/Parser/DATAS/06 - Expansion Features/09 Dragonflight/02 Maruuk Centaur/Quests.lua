@@ -85,6 +85,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2503, 4 },	-- Maruuk Centaur Renown 4
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(189765),	-- Maruuk Centaur Supply Satchel
 				},
@@ -151,6 +152,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2503, 8 },	-- Maruuk Centaur Renown 8
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(189765),	-- Maruuk Centaur Supply Satchel
 				},
@@ -165,6 +167,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2503, 9 },	-- Maruuk Centaur Renown 9
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(189765),	-- Maruuk Centaur Supply Satchel
 				},
@@ -179,6 +182,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2503, 10 },	-- Maruuk Centaur Renown 10
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(189765),	-- Maruuk Centaur Supply Satchel
 				},
@@ -204,6 +208,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2503, 12 },	-- Maruuk Centaur Renown 12
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(189765),	-- Maruuk Centaur Supply Satchel
 				},
@@ -236,6 +241,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2503, 14 },	-- Maruuk Centaur Renown 14
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(189765),	-- Maruuk Centaur Supply Satchel
 				},
@@ -306,6 +312,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2503, 16 },	-- Maruuk Centaur Renown 16
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(198864),	-- Large Maruuk Centaur Supply Satchel
 				},
@@ -324,6 +331,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2503, 18 },	-- Maruuk Centaur Renown 18
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(198864),	-- Large Maruuk Centaur Supply Satchel
 				},
@@ -349,6 +357,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2503, 20 },	-- Maruuk Centaur Renown 20
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(198864),	-- Large Maruuk Centaur Supply Satchel
 				},
@@ -375,6 +384,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2503, 22 },	-- Maruuk Centaur Renown 22
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(198864),	-- Large Maruuk Centaur Supply Satchel
 				},
