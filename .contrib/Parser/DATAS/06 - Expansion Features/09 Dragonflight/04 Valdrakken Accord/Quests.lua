@@ -6,13 +6,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		n(QUESTS, {
 				-- RENOWN 1 --
 			q(72406, {	-- Orientation: Valdrakken
-				["minReputation"] = { 2510, 1 },	-- Valdrakken Renown 1
+				["minReputation"] = { 2510, 1 },	-- Valdrakken Accord Renown 1
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 			}),
 				-- RENOWN 2 --
 			q(70839, {	-- The Search for Titan Relics
-				["minReputation"] = { 2510, 2 },	-- Valdrakken Renown 2
+				["minReputation"] = { 2510, 2 },	-- Valdrakken Accord Renown 2
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["g"] = {
@@ -20,22 +20,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				},
 			}),
 			q(72282, {	-- Renown Supplies
-				["minReputation"] = { 2510, 2 },	-- Valdrakken Renown 2
-				["coord"] = { 26, 40, VALDRAKKEN },
+				["minReputation"] = { 2510, 2 },	-- Valdrakken Accord Renown 2
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 				["g"] = {
 					i(198868),	-- Small Valdrakken Accord Supply Pack
 				},
 			}),
 				-- Binds when picked up A Titan Relic
 			q(70840, {	-- A Titan Relic
-				["minReputation"] = { 2510, 2 },	-- Valdrakken Renown 2
+				["minReputation"] = { 2510, 2 },	-- Valdrakken Accord Renown 2
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["cost"] = { { "i", 199906, 1 }, },	-- 1x Titan Relic
 				["repeatable"] = true,
 			}),
 			q(70841, {	-- More Titan Relics
-				["minReputation"] = { 2510, 2 },	-- Valdrakken Renown 2
+				["minReputation"] = { 2510, 2 },	-- Valdrakken Accord Renown 2
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["cost"] = { { "i", 199906, 5 }, },	-- 5x Titan Relic
@@ -43,14 +44,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			}),
 				-- Binds to Blizard account Centaur Hunting Trophy
 			q(71042, {	-- A Titan Relic
-				["minReputation"] = { 2510, 2 },	-- Valdrakken Renown 2
+				["minReputation"] = { 2510, 2 },	-- Valdrakken Accord Renown 2
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["cost"] = { { "i", 200450, 1 }, },	-- 1x Titan Relic
 				["repeatable"] = true,
 			}),
 			q(71043, {	-- More Titan Relics
-				["minReputation"] = { 2510, 2 },	-- Valdrakken Renown 2
+				["minReputation"] = { 2510, 2 },	-- Valdrakken Accord Renown 2
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["cost"] = { { "i", 200450, 5 }, },	-- 5x Titan Relic
@@ -58,7 +59,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			}),
 				-- RENOWN 3 --
 			q(70880, {	-- To Cook With Finery
-				["minReputation"] = { 2510, 3 },	-- Valdrakken Renown 3
+				["minReputation"] = { 2510, 3 },	-- Valdrakken Accord Renown 3
 				["provider"] = { "n", 185556 },	-- Erugosa
 				["coord"] = { 46.5, 46.2, VALDRAKKEN },
 				["g"] = {
@@ -69,9 +70,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(200751),	-- Simple Silver Dragon Goblet
 				},
 			}),
+			q(72669, {	-- Renown Supplies
+				["minReputation"] = { 2510, 3 },	-- Valdrakken Accord Renown 3
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack
+				},
+			}),
 				-- RENOWN 4 --
-			q(70882, {	-- Well Supplied
-				["minReputation"] = { 2510, 4 },	-- Valdrakken Renown 4
+			q(70882, {	-- Renown Supplies
+				["minReputation"] = { 2510, 4 },	-- Valdrakken Accord Renown 4
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 				["g"] = {
@@ -80,14 +89,22 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			}),
 				-- RENOWN 5 --
 			q(71210, {	-- To Dragonbane Keep!
-				["minReputation"] = { 2510, 5 },	-- Valdrakken Renown 5
+				["minReputation"] = { 2510, 5 },	-- Valdrakken Accord Renown 5
 				["description"] = "Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197478 },	-- Herald Flaps
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
+			q(72671, {	-- Renown Supplies
+				["minReputation"] = { 2510, 5 },	-- Valdrakken Accord Renown 5
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack
+				},
+			}),
 				-- RENOWN 6 --
 			q(70883, {	-- A Hand In Cultivation
-				["minReputation"] = { 2510, 6 },	-- Valdrakken Renown 6
+				["minReputation"] = { 2510, 6 },	-- Valdrakken Accord Renown 6
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 				["g"] = {
@@ -98,8 +115,22 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199654),	-- Dragon Garden Shovel
 				},
 			}),
+			q(72672, {	-- Renown Supplies
+				["minReputation"] = { 2510, 6 },	-- Valdrakken Accord Renown 6
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack
+				},
+			}),
 				-- RENOWN 7 --
-			q(70885, {	-- Renown Supplies
+			q(71227, {	-- Aerial Challenges
+				["minReputation"] = { 2510, 7 },	-- Valdrakken Accord Renown 7
+				["description"] = "Spawns Anywhere on Dragon Isles.",
+				["provider"] = { "n", 197478 },	-- Herald Flaps
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			}),
+			q(72673, {	-- Renown Supplies
 				["minReputation"] = { 2510, 7 },	-- Valdrakken Accord Renown 7
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
@@ -107,11 +138,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(198868),	-- Small Valdrakken Accord Supply Pack
 				},
 			}),
-			q(71227, {	-- Aerial Challenges
-				["minReputation"] = { 2510, 7 },	-- Valdrakken Accord Renown 7
-				["description"] = "Spawns Anywhere on Dragon Isles.",
-				["provider"] = { "n", 197478 },	-- Herald Flaps
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				-- RENOWN 8 --
+			q(70885, {	-- Renown Supplies
+				["minReputation"] = { 2510, 8 },	-- Valdrakken Accord Renown 8
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack
+				},
 			}),
 				-- RENOWN 9 --
 			q(70887, {	-- Feeling Freedom
@@ -122,6 +156,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(196972),	-- Cliffside Wylderdrake: Plated Brow (DM!)
 					i(197003),	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
 					i(196977),	-- Cliffside Wylderdrake: Split Head Horns (DM!)
+				},
+			}),
+			q(72682, {	-- Renown Supplies
+				["minReputation"] = { 2510, 9 },	-- Valdrakken Accord Renown 9
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack
 				},
 			}),
 				-- RENOWN 10 --
@@ -135,6 +177,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199657),	-- Bronze Dragonspawn Shoulderpads
 					i(199658),	-- Green Dragonspawn Shoulderpads
 					i(199659),	-- Red Dragonspawn Shoulderpads
+				},
+			}),
+			q(72685, {	-- Renown Supplies
+				["minReputation"] = { 2510, 10 },	-- Valdrakken Accord Renown 10
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack
+				},
+			}),
+				-- RENOWN 11 --
+			q(72687, {	-- Renown Supplies
+				["minReputation"] = { 2510, 11 },	-- Valdrakken Accord Renown 11
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack
 				},
 			}),
 				-- RENOWN 12 --
@@ -201,7 +260,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(201781),	-- Memory of Tyr
 				},
 			}),
-			q(72687, {	-- Renown Supplies
+			q(72688, {	-- Renown Supplies
 				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
@@ -220,15 +279,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199774),	-- Ancient Titan Blunderbuss
 				},
 			}),
-				-- RENOWN 14 --
-			q(72690, {	-- Renown Supplies
-				["minReputation"] = { 2510, 14 },	-- Valdrakken Accord Renown 14
+			q(72694, {	-- Renown Supplies
+				["minReputation"] = { 2510, 13 },	-- Valdrakken Accord Renown 13
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 				["g"] = {
-					i(198868),	-- Small Valdrakken Accord Supply Pack
+					i(198869),	-- Large Valdrakken Accord Supply Pack
 				},
 			}),
+				-- RENOWN 14 --
 			q(70892, {	-- Crafting Your Start
 				["minReputation"] = { 2510, 14 },	-- Valdrakken Accord Renown 14
 				["provider"] = { "n", 191000 },	-- Dothenos
@@ -283,6 +342,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(201715),	-- Notebook of Crafting Knowledge
 				},
 			}),
+			q(72690, {	-- Renown Supplies
+				["minReputation"] = { 2510, 14 },	-- Valdrakken Accord Renown 14
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198869),	-- Large Valdrakken Accord Supply Pack
+				},
+			}),
 				-- RENOWN 15 --
 			q(70895, {	-- Soaring in Style
 				["minReputation"] = { 2510, 15 },	-- Valdrakken Accord Renown 15
@@ -292,6 +359,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(196998),	-- Cliffside Wylderdrake: Hook Horns (DM!)
 					i(197009),	-- Cliffside Wylderdrake: Scaled Pattern (DM!)
 					i(197020),	-- Cliffside Wylderdrake: Spear Tail (DM!)
+				},
+			}),
+			q(72283, {	-- Renown Supplies
+				["minReputation"] = { 2510, 15 },	-- Valdrakken Accord Renown 15
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198869),	-- Large Valdrakken Accord Supply Pack
 				},
 			}),
 				-- RENOWN 16 --
@@ -313,6 +388,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199683),	-- Verdant Drakonid Helmet
 				},
 			}),
+			q(72691, {	-- Renown Supplies
+				["minReputation"] = { 2510, 17 },	-- Valdrakken Accord Renown 17
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198869),	-- Large Valdrakken Accord Supply Pack
+				},
+			}),
 				-- RENOWN 18 --
 			q(70901, {	-- A Collection of Creatures
 				["minReputation"] = { 2510, 18 },	-- Valdrakken Accord Renown 18
@@ -321,6 +404,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["g"] = {
 					i(199758),	-- Crimson Proto-Whelp (PET!)
 					i(199757),	-- Magic Nibbler (PET!)
+				},
+			}),
+			q(72692, {	-- Renown Supplies
+				["minReputation"] = { 2510, 18 },	-- Valdrakken Accord Renown 18
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198869),	-- Large Valdrakken Accord Supply Pack
 				},
 			}),
 				-- RENOWN 19 --
@@ -518,6 +609,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(201779),	-- Merithra's Blessing
 				},
 			}),
+			q(72693, {	-- Renown Supplies
+				["minReputation"] = { 2510, 19 },	-- Valdrakken Accord Renown 19
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198869),	-- Large Valdrakken Accord Supply Pack
+				},
+			}),
 				-- RENOWN 20 --
 			q(70891, {	-- Fitting In
 				["minReputation"] = { 2510, 20 },	-- Valdrakken Accord Renown 20
@@ -531,6 +630,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199755),	-- Ensemble: Green Valdrakken Clothing
 				},
 			}),
+			q(72689, {	-- Renown Supplies
+				["minReputation"] = { 2510, 20 },	-- Valdrakken Accord Renown 20
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198869),	-- Large Valdrakken Accord Supply Pack
+				},
+			}),
 				-- RENOWN 21 --
 			q(70904, {	-- Variety is the Spice of Life
 				["minReputation"] = { 2510, 21 },	-- Valdrakken Accord Renown 21
@@ -540,6 +647,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197145),	-- Highland Drake: Bronze Scales (DM!)
 					i(197391),	-- Renewed Proto-Drake: Bronze Scales (DM!)
 					i(197613),	-- Windborne Velocidrake: Bronze Scales (DM!)
+				},
+			}),
+			q(72695, {	-- Renown Supplies
+				["minReputation"] = { 2510, 21 },	-- Valdrakken Accord Renown 21
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198869),	-- Large Valdrakken Accord Supply Pack
 				},
 			}),
 				-- RENOWN 22 --
@@ -566,6 +681,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(201791, {	-- How to Train a Dragonkin
 						["questID"] = 72094,
 					}),
+				},
+			}),
+			q(72696, {	-- Renown Supplies
+				["minReputation"] = { 2510, 23 },	-- Valdrakken Accord Renown 23
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198869),	-- Large Valdrakken Accord Supply Pack
 				},
 			}),
 				-- RENOWN 24 --
@@ -623,6 +746,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(201715),	-- Notebook of Crafting Knowledge
 				},
 			}),
+			q(72697, {	-- Renown Supplies
+				["minReputation"] = { 2510, 24 },	-- Valdrakken Accord Renown 24
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198869),	-- Large Valdrakken Accord Supply Pack
+				},
+			}),
 				-- RENOWN 25 --
 			q(70910, {	-- Mysteries in Paper and Glass
 				["minReputation"] = { 2510, 25 },	-- Valdrakken Accord Renown 25
@@ -637,6 +768,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(198389),	-- Weighted Potion Cylinder
 				},
 			}),
+			q(72698, {	-- Renown Supplies
+				["minReputation"] = { 2510, 25 },	-- Valdrakken Accord Renown 25
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198869),	-- Large Valdrakken Accord Supply Pack
+				},
+			}),
 				-- RENOWN 26 --
 			q(70911, {	-- Armored and ready
 				["minReputation"] = { 2510, 26 },	-- Valdrakken Accord Renown 26
@@ -647,6 +786,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197093),	-- Highland Drake: Silver and Purple Armor (DM!)
 					i(197350),	-- Renewned Proto-Drake: Silver and Purple Armor (DM!)
 					i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
+				},
+			}),
+			q(72284, {	-- Renown Supplies
+				["minReputation"] = { 2510, 26 },	-- Valdrakken Accord Renown 26
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 				},
 			}),
 				-- RENOWN 27 --
@@ -662,6 +809,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199767),	-- Red Dragon Banner (TOY!)
 				},
 			}),
+			q(72701, {	-- Renown Supplies
+				["minReputation"] = { 2510, 27 },	-- Valdrakken Accord Renown 27
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(199475),	-- Overflowing Valdrakken Accord Supply Pack
+				},
+			}),
 				-- RENOWN 28 --
 			q(70913, {	-- To Bear Our Mantle
 				["minReputation"] = { 2510, 28 },	-- Valdrakken Accord Renown 28
@@ -673,6 +828,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199663),	-- Emerald Jeweled Shoulderpads
 					i(199660),	-- Obsidian Jeweled Shoulderpads
 					i(199664),	-- Ruby Jeweled Shoulderpads
+				},
+			}),
+			q(72702, {	-- Renown Supplies
+				["minReputation"] = { 2510, 28 },	-- Valdrakken Accord Renown 28
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 				},
 			}),
 				-- RENOWN 29 --
@@ -692,6 +855,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199732),	-- Valdrakken Wing Glaive
 				},
 			}),
+			q(72703, {	-- Renown Supplies
+				["minReputation"] = { 2510, 29 },	-- Valdrakken Accord Renown 29
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(199475),	-- Overflowing Valdrakken Accord Supply Pack
+				},
+			}),
 				-- RENOWN 30 --
 			q(70916, {	-- Beknownst and Glorious
 				["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
@@ -703,6 +874,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					title(474),		-- %s, Ally of Dragons (TITLE!)
 				},
 			}),
+			q(72704, {	-- Renown Supplies
+				["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(199475),	-- Overflowing Valdrakken Accord Supply Pack
+				},
+			}),
 				-- PARAGON
 			q(71023, {	-- Renowned with the Valdrakken Accord
 				["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
@@ -711,48 +890,20 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 				},
 			}),
-
-				-- Unknown renown -- I will fix this later as well as all other renown quests -Darkal
-			q(72671, {	-- Renown Supplies
-				["provider"] = { "n", 193015 },	-- Unatos
-				["coord"] = { 58.1, 35.2, VALDRAKKEN },
-				["g"] = {
-					i(198868),	-- Small Valdrakken Accord Supply Pack (contains Dragon Isles Supplies)
-				},
-			}),
 		}),
 	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(VALDRAKKEN_ACCORD, {
-		q(72669),	-- triggered with 'To Cook With Finery' (70880)
-		q(72673),	-- triggered with 'Aerial Challenges' (71227)
-		q(72672),	-- triggered with 'A Hand In Cultivation' (70883)
-		q(72682),	-- triggered with 'Feeling Freedom' (70887)
-		q(72685),	-- triggered with 'Rubbing Shoulders With The Best' (70888)
 		q(72403),	-- triggered when reaching renown 12 with Valdrakken Accord
 		q(72404),	-- triggered when reaching renown 19 with Valdrakken Accord
-		q(72688),	-- triggered with 'Ally of Dragons' (68794)
 		q(72776),	-- triggered with 'Ally of Dragons' (68794)
 		q(70974),	-- triggers right after 'Hard Lock Life' (67079)
 		q(72757),	-- triggered with 'The Silver Purpose' (67084)
-		q(72694),	-- triggered with 'Wielding Titanic Might' (70903)
-		q(72283),	-- triggered with 'Soaring in Style' (70895)
-		q(72691),	-- triggered with 'A Coming of Age' (70897)
-		q(72692),	-- triggered with 'A Collection of Creatures' (70901)
-		q(72689),	-- triggered with 'Fitting In' (70891)
-		q(72693),	-- triggered with 'Emerald Summons' (66620)
 		q(72777),	-- triggered with 'Emerald Summons' (66620)
 		q(72759),	-- triggered with 'And Yet So Far' (66191)
 		q(72758),	-- triggered with 'Like Mother, Like Daughter' (66402)
-		q(72695),	-- triggered with 'Variety is the Spice of Life' (70904)
-		q(72696),	-- triggered with 'Flying with Our Colors' (70905)
-		q(72698),	-- triggered with 'Mysteries in Paper and Glass' (70910)
-		q(72701),	-- triggered with 'The Accord's High Standards' (70912)
-		q(72702),	-- triggered with 'To Bear Our Mantle' (70913)
-		q(72703),	-- triggered with 'The Breadth of Dragon Weaponry' (70914)
-		q(72704),	-- triggered with 'Beknownst and Glorious' (70916)
 
 		-- Ensembles
 		q(70755),	-- Ensemble: Crimson Valdrakken Clothing
