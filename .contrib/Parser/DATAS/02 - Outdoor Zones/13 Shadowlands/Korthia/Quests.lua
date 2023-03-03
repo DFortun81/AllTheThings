@@ -1202,7 +1202,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "i", 187264 },	-- Ve'rayn's Head
 			}),
-			q(64530, bubbleDownSelf({ ["customCollect"] = "SL_COV_NFA" }, {	-- Wilderling Saddle
+			q(64528, bubbleDownSelf({ ["customCollect"] = "SL_COV_NFA" }, {	-- Wilderling Saddle
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "i", 187281 },	-- Wilderling Saddle
 				["coord"] = { 33.1, 39.5, KORTHIA },
