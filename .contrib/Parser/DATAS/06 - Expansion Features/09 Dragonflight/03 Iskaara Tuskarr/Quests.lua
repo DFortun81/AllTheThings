@@ -108,6 +108,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2511, 5 },	-- Iskaara Tuskarr Renown 5
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(198866),	-- Small Iskaaran Supply Pack
 				},
@@ -156,6 +157,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2511, 8 },	-- Iskaara Tuskarr Renown 8
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(198866),	-- Small Iskaaran Supply Pack
 				},
@@ -290,6 +292,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2511, 11 },	-- Iskaara Tuskarr Renown 11
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(198866),	-- Small Iskaaran Supply Pack
 				},
@@ -302,16 +305,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["g"] = {
 					i(199872),	-- Tuskarr Trader's Cloak
 				},
-				["altQuests"] = { 72393 },	-- Dragon Isles Supplies
 			}),
 			q(72393 , {	-- Dragon Isles Supplies
-				["minReputation"] = { 2511, 11 },	-- Iskaara Tuskarr Renown 12
+				["minReputation"] = { 2511, 12 },	-- Iskaara Tuskarr Renown 12
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 				["g"] = {
 					i(198866),	-- Small Iskaaran Supply Pack
 				},
-				["altQuests"] = { 70960 },	-- Trader's Apparel
 			}),
 				-- RENOWN 13 --
 			q(70955, {	-- Fascinating Fliers
@@ -322,6 +323,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197153),	-- Highland Drake: Bladed Tail (DM!)
 					i(197139),	-- Highland Drake: Large Spotted Pattern (DM!)
 					i(197123),	-- Highland Drake: Thorn Horns (DM!)
+				},
+			}),
+			q(72394 , {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
 				},
 			}),
 				-- RENOWN 14 --
@@ -386,11 +395,27 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "i", 201471 },	-- Story of a Spectacular Victory
 				["isWeekly"] = true,
 			}),
+			q(72280, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 15 },	-- Iskaara Tuskarr Renown 15
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198867),	-- Large Iskaaran Supply Pack
+				},
+			}),
 				-- RENOWN 16 --
 			q(70966, {	-- Trading Made Easier
 				["minReputation"] = { 2511, 16 },	-- Iskaara Tuskarr Renown 16
 				["provider"] = { "n", 187869 },	-- Tikukk
 				["coord"] = { 12.6, 50.2, THE_AZURE_SPAN },
+			}),
+			q(72395, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 16 },	-- Iskaara Tuskarr Renown 16
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198867),	-- Large Iskaaran Supply Pack
+				},
 			}),
 				-- RENOWN 17 --
 			q(70967, {	-- Fishy Entertainment
@@ -415,6 +440,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(198867),	-- Large Iskaaran Supply Pack
 				},
@@ -443,6 +469,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2511, 20 },	-- Iskaara Tuskarr Renown 20
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(198867),	-- Large Iskaaran Supply Pack
 				},
@@ -460,6 +487,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2511, 21 },	-- Iskaara Tuskarr Renown 21
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["DisablePartySync"] = true,
 				["g"] = {
 					i(198867),	-- Large Iskaaran Supply Pack
 				},
@@ -475,16 +503,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2511, 23 },	-- Iskaara Tuskarr Renown 23
 				["provider"] = { "n", 196016 },	-- Lontupit
 				["coord"] = { 14.0, 49.4, THE_AZURE_SPAN },
-				["altQuests"] = { 72637 },	-- 'A Comfy Seat'
 			}),
 			q(72637, {	-- Dragon Isles Supplies
 				["minReputation"] = { 2511, 23 },	-- Iskaara Tuskarr Renown 23
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 				["g"] = {
-					i(198866),	-- Small Iskaaran Supply Pack
+					i(198867),	-- Large Iskaaran Supply Pack
 				},
-				["altQuests"] = { 70962 },	-- 'A Comfy Seat'
 			}),
 				-- RENOWN 24 --
 			q(70971, {	-- Arms for Every Arm
@@ -548,6 +574,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(201718),	-- Notebook of Crafting Knowledge
 				},
 			}),
+			q(72638, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 24 },	-- Iskaara Tuskarr Renown 24
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(198867),	-- Large Iskaaran Supply Pack
+				},
+			}),
 				-- RENOWN 25 --
 			q(70972, {	-- Our Loyal, Lanky Steeds
 				["minReputation"] = { 2511, 25 },	-- Iskaara Tuskarr Renown 25
@@ -557,16 +591,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(198872),	-- Brown Scouting Ottuk (MOUNT!)
 					i(200118),	-- Yellow Scouting Ottuk (MOUNT!)
 				},
-				["altQuests"] = { 72639 },	-- Dragon Isles Supplies (25)
 			}),
 			q(72639, {	-- Dragon Isles Supplies
-				["minReputation"] = { 2511, 25 },	-- Iskaara Tuskarr Renown 23
+				["minReputation"] = { 2511, 25 },	-- Iskaara Tuskarr Renown 25
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 				["g"] = {
-					i(198866),	-- Small Iskaaran Supply Pack
+					i(198867),	-- Large Iskaaran Supply Pack
 				},
-				["altQuests"] = { 70972 },	-- Our Loyal, Lanky Steeds
 			}),
 				-- RENOWN 26 --
 			q(70976, {	-- Slacking and Sledding
@@ -576,6 +608,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["g"] = {
 					i(199899),	-- Iskaara Tug Sled (TOY!)
 					i(198827),	-- Magical Snow Sled (TOY!)
+				},
+			}),
+			q(72281, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 26 },	-- Iskaara Tuskarr Renown 26
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(199473),	-- Overflowing Iskaaran Supply Pack
+				},
+			}),
+				-- RENOWN 27 --
+			q(72640, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 27 },	-- Iskaara Tuskarr Renown 27
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(199473),	-- Overflowing Iskaaran Supply Pack
 				},
 			}),
 				-- RENOWN 28 --
@@ -590,6 +639,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199542),	-- Red Tufted Shoulderpads
 				},
 			}),
+			q(72641, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 28 },	-- Iskaara Tuskarr Renown 28
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(199473),	-- Overflowing Iskaaran Supply Pack
+				},
+			}),
 				-- RENOWN 29 --
 			q(70977, {	-- Scaps Packs
 				["minReputation"] = { 2511, 29 },	-- Iskaara Tuskarr Renown 29
@@ -601,6 +658,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(198339),	-- Dark Paw Pack
 					i(198340),	-- Red Paw Pack
 					i(198341),	-- Tan Paw Pack
+				},
+			}),
+			q(72642, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 29 },	-- Iskaara Tuskarr Renown 29
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(199473),	-- Overflowing Iskaaran Supply Pack
 				},
 			}),
 				-- RENOWN 30 --
@@ -647,10 +712,5 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(72753),	-- Triggered with 'While the Iron Is Hot' (66444)
 		q(72400),	-- Triggered when hitting Renown 11
 		q(72782),	-- Triggered with 'A Lost Tribe' (68863)
-		q(72395),	-- Triggered with 'Trading Made Easier' (70966)
-		q(72638),	-- Triggered with 'Arms for Every Arm'  (70971)
-		q(72281),	-- Triggered with 'Slacking and Sledding' (70976)
-		q(72641),	-- Triggered with 'Shouldering the Needed Armor' (70961)
-		q(72642),	-- Triggered with 'Scaps Packs' (70977)
 	}),
 }));

@@ -96,9 +96,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
-					-- RENOWN 16 --
+					-- RENOWN 15 --
 				q(70948, {	-- Hook, Line, and Swelter!
-					["minReputation"] = { 2511, 16 },	-- Iskaara Tuskarr Renown 16
+					["minReputation"] = { 2511, 15 },	-- Iskaara Tuskarr Renown 15
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
@@ -559,10 +559,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
-		q(72394),	-- Triggered with 'Fascinating Fliers' (70955)
-		q(72280),	-- Triggered with 'Hook, Line, and Swelter!' (70948)
-		q(72640),	-- Triggered with 'Abandoned... or Hidden Caches' (70952)
-		--
 		q(74370),	-- First weekly completion of 'Contribute Supplies: Battered Imbu-made Net'
 		q(74369),	-- First weekly completion of 'Contribute Supplies: Salinated Serevite'
 		q(74368),	-- First weekly completion of 'Contribute Supplies: Khaz'gorite-infused Resin'
