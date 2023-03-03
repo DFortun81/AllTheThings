@@ -3,6 +3,7 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, pvp(n(PVP_HONOR, {
+	currency(HONOR),	-- Honor
 	ach(12893, {	-- Honor Level 5
 		i(142380, {	-- Dutiful Gruntling
 			["races"] = HORDE_ONLY,
