@@ -157,7 +157,6 @@ def create_missing_recipes() -> None:
         raw_path = Path("Raw", "Professions", f"{profession}.txt")
         missing_path = Path(
             DATAS_FOLDER,
-            "00 - Item Database",
             "MissingIDs",
             "Professions",
             f"{profession}.txt",
@@ -213,7 +212,6 @@ def create_missing_file(thing: type[Thing]) -> None:
         return
     missing_path = Path(
         DATAS_FOLDER,
-        "00 - Item Database",
         "MissingIDs",
         f"Missing{thing.__name__}.txt",
     )
@@ -251,7 +249,6 @@ def post_process(thing: type[Thing]) -> None:
     raw_ids = extract_nth_column(raw_path, 0)
     missing_path = Path(
         DATAS_FOLDER,
-        "00 - Item Database",
         "MissingIDs",
         f"Missing{thing.__name__}.txt",
     )
