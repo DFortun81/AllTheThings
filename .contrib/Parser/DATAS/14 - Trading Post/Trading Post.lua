@@ -22,7 +22,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 			["isMonthly"] = true,
 		}),
 	}),
-	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Trader's Tender in the month." }, {
+	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Travel Points in the month." }, {
 		-- FEB 2023 --
 		i(190231),	-- Ash'adar, Harbinger of Dawn (MOUNT!)
 		-- MAR 2023 --
