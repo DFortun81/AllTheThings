@@ -1400,7 +1400,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						}),
 						filter(RECIPES, sharedData({
 							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
-							["timeline"] = { ADDED_DF_05 },
+							["timeline"] = { ADDED_DF_0_5 },
 						}, {
 							i(203380),	-- Technique: Crimson Combatant's Emblem
 							i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity
