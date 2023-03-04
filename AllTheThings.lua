@@ -2542,7 +2542,11 @@ end
 
 -- Quest Completion Lib
 -- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
-app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
+app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, checks)
+	local info = {
+		"**"..(infoText or "quest-info")..":"..id.."**",
+		"```",	-- discord fancy box start
+	};
 	local coord;
 	local mapID = app.GetCurrentMapID();
 	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
@@ -2551,14 +2555,14 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 		covData = C_Covenants.GetCovenantData(covID);
 		covRenown = C_CovenantSanctumUI.GetRenownLevel();
 	end
-	local DFmajorFactionIDs, majorFactionInfo, info = C_MajorFactions.GetMajorFactionIDs(9), {};
+	local DFmajorFactionIDs, majorFactionInfo, data = C_MajorFactions.GetMajorFactionIDs(9), {};
 	if DFmajorFactionIDs then
 		for _,factionID in ipairs(DFmajorFactionIDs) do
-			info = C_MajorFactions.GetMajorFactionData(factionID);
+			data = C_MajorFactions.GetMajorFactionData(factionID);
 			tinsert(majorFactionInfo, "|");
-			tinsert(majorFactionInfo, info.name:sub(1,4));
+			tinsert(majorFactionInfo, data.name:sub(1,4));
 			tinsert(majorFactionInfo, ":");
-			tinsert(majorFactionInfo, info.renownLevel);
+			tinsert(majorFactionInfo, data.renownLevel);
 		end
 	end
 	if position then
@@ -2567,8 +2571,6 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 		y = math.floor(y * 1000) / 10;
 		coord = x..", "..y;
 	end
-	local u = questRef and questRef.u;
-	local completed = app.CurrentCharacter.Quests[id];
 	local skills = {};
 	for profID,known in pairs(app.CurrentCharacter.Professions) do
 		-- professions inherently known by all characters are marked 1 specifically; dynamic ones are true
@@ -2577,24 +2579,24 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 			tinsert(skills, C_TradeSkillUI.GetTradeSkillDisplayName(profID):sub(1,4));
 		end
 	end
-	return
-	{
-		"**"..(infoText or "quest-info")..":"..id.."**",
-		"```",	-- discord fancy box
 
-		questChange.." '"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???").."'",
-		"lvl:"..app.Level.." race:"..app.RaceID.." ("..app.Race..") class:"..app.ClassIndex.." ("..app.Class..") cov:"..(covData and covData.name or "N/A")..(covRenown and ":"..covRenown or ""),
-		"renown"..(app.TableConcat(majorFactionInfo)),
-		"u:"..(u or "").." comp:"..(completed or "").." skills"..(app.TableConcat(skills) or ""),
-		"sq:"..app.SourceQuestString(questRef or id),
-		"lq:"..(app.LastQuestTurnedIn or ""),
-		-- TODO: put more info in here as it will be copy-paste into Discord
+	tinsert(info, questChange.." '"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???").."'");
+	if checks then
+		for k,v in pairs(checks) do
+			tinsert(info, k..":"..tostring(v))
+		end
+	end
+	tinsert(info, "lvl:"..app.Level.." race:"..app.RaceID.." ("..app.Race..") class:"..app.ClassIndex.." ("..app.Class..") cov:"..(covData and covData.name or "N/A")..(covRenown and ":"..covRenown or ""));
+	tinsert(info, "renown"..(app.TableConcat(majorFactionInfo)));
+	tinsert(info, "skills"..(app.TableConcat(skills) or ""));
+	tinsert(info, "sq:"..app.SourceQuestString(questRef or id));
+	tinsert(info, "lq:"..(app.LastQuestTurnedIn or ""));
+	tinsert(info, mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??");
+	tinsert(info, coord and ("coord:"..coord) or "coord:??");
+	tinsert(info, "ver:"..app.Version);
+	tinsert(info, "```"); 	-- discord fancy box end
 
-		mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??",
-		coord and ("coord:"..coord) or "coord:??",
-		"ver:"..app.Version,
-		"```",	-- discord fancy box
-	};
+	return info;
 end
 -- Checks a given quest reference against the current character info to see if something is inaccurate
 app.CheckInaccurateQuestInfo = function(questRef, questChange)
@@ -2602,24 +2604,37 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
 		local completed = app.CurrentCharacter.Quests[id];
-		if not
+		local filter = app.CurrentCharacterFilters(questRef);
+		local inGame = app.ItemIsInGame(questRef);
+		local incomplete = (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed) and true;
+		local metPrereq = not questRef.missingPrequisites;
+		if not (
 			-- expectations for accurate quest data
 			-- meets current character filters
-			(app.CurrentCharacterFilters(questRef)
+			filter
 			-- is marked as in the game
-			and app.ItemIsInGame(questRef)
+			and inGame
 			-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check
-			and (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed)
+			and incomplete
 			-- not missing pre-requisites
-			and not questRef.missingPrequisites)
+			and metPrereq
+			-- debugging, show link for any accepted quest
+			-- and false
+			)
 		then
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
 			app:PlayReportSound();
 
 			local popupID = "quest-filter-" .. id;
+			local checks = {
+				["Filter"] = filter,
+				["InGame"] = inGame,
+				["Incomplete"] = incomplete,
+				["PreReq"] = metPrereq,
+			};
 			if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
-				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef)
-			) then
+				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef, checks))
+			then
 				local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], app.Colors.ChatLinkError, "dialog:" .. popupID);
 				Callback(app.print, reportMsg);
 			end
@@ -2640,7 +2655,7 @@ local PrintQuestInfo = function(questID, new, info)
 		end
 		-- This quest doesn't meet the filter for this character, then ask to report in chat
 		if questChange == "accepted" then
-			DelayedCallback(app.CheckInaccurateQuestInfo, 1, questRef, questChange);
+			app.FunctionRunner.Run(app.CheckInaccurateQuestInfo, questRef, questChange);
 		end
 		local chatMsg;
 		if not questRef or GetRelativeValue(questRef, "_missing") then
