@@ -6,7 +6,6 @@ ill(5389),	-- Striking
 ill(5393),	-- Crusader
 ill(5861),	-- Beastslayer
 ill(5862),	-- Titanguard
-ill(6185),	-- Stinging Sands
 10.0.7.47910
 ill(6786),	-- Primal Storm
 
@@ -15,7 +14,5 @@ ill(6786),	-- Primal Storm
 
 .
 
-9.0.1.34365
-ill(6185),	-- Stinging Sands
 10.0.7.47910
 ill(6786),	-- Primal Storm

@@ -391,6 +391,12 @@ _.IllusionDB = {
 -----------------
 -- PATCH 9.0.1 --
 -----------------
+	{	-- Illusion: Stinging Sands
+		["itemID"] = 171363,	-- Illusion: Stinging Sands
+		["illusionID"] = 6185,
+		["text"] = "Stinging Sands",
+		-- ["questID"] = ,
+	},
 	{	-- Illusion: Undying Spirit
 		["itemID"] = 183189,	-- Illusion: Undying Spirit
 		["illusionID"] = 6261,
