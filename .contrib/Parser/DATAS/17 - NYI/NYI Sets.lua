@@ -9,7 +9,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 1.x.x
 			n(P1xx, {
 				cl(DRUID, {
-					i(77751),	-- Replicate Knight Captains Dragonhide Chestpiece
 					i(32113),	-- Chancellor's Dragonhide Gloves
 					i(32114),	-- Chancellor's Dragonhide Helm
 					i(32115),	-- Chancellor's Dragonhide Legguards
@@ -44,7 +43,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(32110),	-- Chancellor's Silk Handguards
 					i(32111),	-- Chancellor's Silk Rainment
 					i(32112),	-- Chancellor's Silk Legs
-					i(77780),	-- Replica Lieutenant Commander's Silk Mantle
 				}),
 				cl(PALADIN, {
 					i(32153),	-- Chancellor's Lamellar Chestpiece
@@ -99,7 +97,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(32150),	-- Chancellor's Ringmail Headpiece
 					i(32151),	-- Chancellor's Ringmail Legguards
 					i(32152),	-- Chancellor's Ringmail Shoulders
-					i(77836),	-- Replica First Sergeant's Mail Wristguards
 				}),
 				cl(WARLOCK, {
 					i(32093),	-- Chancellor's Dreadweave Gloves
@@ -114,7 +111,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(32165),	-- Chancellor's Plate Helm
 					i(32166),	-- Chancellor's Plate Legguards
 					i(32167),	-- Chancellor's Plate Shoulders
-					i(77870),	-- Replica First Sergeant's Plate Bracers
 				}),
 			}),
 		}),
@@ -690,6 +686,22 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						i(64946),	-- Gladiator's Plate Gauntlets
 						i(64947),	-- Gladiator's Plate Chestpiece
 					}),
+				}),
+			})),
+
+			-- 4.3.0
+			tier(CATA_TIER, 3.0, bubbleDown({ ["timeline"] = { "created 4.3.0" } }, {
+				cl(DRUID, {
+					i(77751),	-- Replica Knight-Captain's Dragonhide Chestpiece
+				}),
+				cl(MAGE, {
+					i(77780),	-- Replica Lieutenant Commander's Silk Mantle
+				}),
+				cl(SHAMAN, {
+					i(77836),	-- Replica First Sergeant's Mail Wristguards
+				}),
+				cl(WARRIOR, {
+					i(77870),	-- Replica First Sergeant's Plate Bracers
 				}),
 			})),
 		}),
