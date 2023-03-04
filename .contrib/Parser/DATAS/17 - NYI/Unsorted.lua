@@ -681,6 +681,84 @@ root(ROOTS.Unsorted, {
 				i(204685),	-- Primordial Anvil
 				i(204687),	-- Lost Battle Horn
 				i(204691),	-- Living Book
+				i(203398),	-- Essence of Dampening
+				i(203404),	-- Crystal Fork
+				i(203405),	-- Pristine Pelt
+				i(203407),	-- Draconic Suppression Powder
+				i(203408),	-- Ancient Ceremonial Trident
+				i(203412),	-- Arcane Dispelling Rune
+				i(203413),	-- Crystal Tuning Fork
+				i(203414),	-- Reinforced Pristine Leather
+				i(203415),	-- Traditional Morqut Kite
+				i(203416),	-- Dormant Lifebloom Seeds
+				i(203417),	-- Razor-Sharp Animal Bone
+				i(203418),	-- Amplified Quaking Stone
+				i(203419),	-- Elusive Croaking Crab
+				i(203420),	-- Recipe: Draconic Suppression Powder
+				i(203421),	-- Plans: Ancient Ceremonial Trident
+				i(203425),	-- Technique: Arcane Dispelling Rune
+				i(203426),	-- Design: Crystal Tuning Fork
+				i(203427),	-- Pattern: Reinforced Pristine Leather
+				i(203428),	-- Pattern: Traditional Morqut Kite
+				i(203705),	-- Empty Obsidian Vial
+				i(204330),	-- Inert Primordial Fragments
+				i(204561),	-- Primalist Cache Key
+				i(204687),	-- Obsidian Battle Horn
+				i(204802),	-- Scroll of Teleport: Zskera Vaults
+				i(204812),	-- Seared Book
+				i(204813),	-- Blank Tome
+				i(204814),	-- Aged Journal
+				i(204815),	-- Ambiguous Compendium
+				i(204816),	-- Mysterious Almanac
+				i(204820),	-- Lionguard Greathelm
+				i(204821),	-- Lionguard Greathelm
+				i(204822),	-- Lionguard Greathelm
+				i(189882),	-- Dread Admiral's Bicorne
+				i(189938),	-- Ensemble: Fel-Automaton Exoplate
+				i(190063),	-- Greatcloak of the Virtuous Protector
+				i(190092),	-- Triumphant Blademaster's Greatsword
+				i(190097),	-- Fabulously Flashy Finery
+				i(190155),	-- Trusty Treasure Trove
+				i(190166),	-- Ensemble: Vagabond's Midnight Threads
+				i(190377),	-- Ensemble: Wanderer's Midnight Trappings
+				i(190504),	-- Ensemble: Darkmoon Harlequin's Bells
+				i(190600),	-- Shadowy Blademaster's Greatsword
+				i(190876),	-- Filigreed Lion's Maw
+				i(200884),	-- Ensemble: Glorious Dragonrider's Mail
+				i(202203),	-- Sending Stone: Protest
+				i(202204),	-- Receiving Stone: Final Warning
+				i(202205),	-- Translated Journal of Adamanthia
+				i(202248),	-- Frozen Shadow
+				i(202326),	-- Sending Stone: Initial Report
+				i(202327),	-- Sending Stone: The Prisoner
+				i(202328),	-- Receiving Stone: Final Warning
+				i(202329),	-- Journal Entry: Experiments
+				i(202335),	-- Journal Entry: Relics
+				i(202336),	-- Journal Entry: The Creches
+				i(202337),	-- Journal Entry: Silence
+				i(202362),	-- Arcane Focus
+				i(203398),	-- Dampening Powder
+				i(204200),	-- Journal Entry: Experiments
+				i(204221),	-- Journal Entry: Relics
+				i(204223),	-- Journal Entry: The Creches
+				i(204237),	-- Clockwork Azshara
+				i(204246),	-- Journal Entry: Silence
+				i(204249),	-- Translated Correspondence of Black Dragons
+				i(204250),	-- Receiving Stone: Final Warning
+				i(204251),	-- Sending Stone: Protest
+				i(204252),	-- Sending Stone: Initial Report
+				i(204253),	-- Sending Stone: The Prisoner
+				i(204316),	-- A Soldier's Journal
+				i(204317),	-- Words of the Wyrmslayer
+				i(204321),	-- Lost Expedition Notes
+				i(204328),	-- Return of the Nightsquall
+				i(204335),	-- A Song of the Depths
+				i(204338),	-- The Burden of Lapisagos
+				i(204438),	-- Enchanted Arcana Vessel
+				i(204863),	-- Lionguard Greatbelt
+				i(204865),	-- Lionguard Greatbelt
+				i(204866),	-- Lionguard Greatbelt
+				i(204873),	-- Tied-up Envelope
 			}),
 			n(QUESTS, {
 				-- 10.0.7.47910
@@ -1155,6 +1233,104 @@ root(ROOTS.Unsorted, {
 				q(75024),
 				q(75025),
 				q(75026),
+				-- 10.0.7.47983
+				q(75031),
+				q(75032),
+				q(75033),
+				q(75034),
+				q(75046),
+				q(75047),
+				q(75049),
+				q(75050),
+				q(75051),
+				q(75052),
+				q(75053),
+				q(75056),
+				q(75057),
+				q(75065),
+				q(75066),
+				q(75068),
+				q(75069),
+				q(75070),
+				q(75117),
+				q(75118),
+				q(75125),
+				q(75127),
+				q(75129),
+				q(75130),
+				q(75136),
+				q(75146),
+				q(75147),
+				q(75152),
+				q(75153),
+				-- 10.0.7.48076
+				q(75154),
+				q(75158),
+				q(75159),
+				q(75160),
+				q(75161),
+				q(75163),
+				q(75169),
+				q(75170),
+				q(75171),
+				q(75172),
+				q(75173),
+				q(75174),
+				q(75175),
+				q(75176),
+				q(75177),
+				q(75178),
+				q(75179),
+				q(75185),
+				q(75189),
+				q(75190),
+				q(75202),
+				q(75212),
+				q(75214),
+				q(75215),
+				q(75216),
+				q(75217),
+				q(75218),
+				q(75224),
+				q(75236),
+				q(75237),
+				q(75240),
+				q(75245),
+				q(75246),
+				q(75247),
+				q(75248),
+				q(75249),
+				q(75250),
+				q(75251),
+				q(75252),
+				q(75253),
+				q(75254),
+				q(75255),
+				q(75257),
+				q(75259),
+				q(75260),
+				-- 10.0.7.48220
+				q(75261),
+				q(75263),
+				q(75283),
+				q(75381),
+				q(75392),
+				q(75399),
+				q(75400),
+				q(75401),
+				q(75402),
+				q(75403),
+				q(75404),
+				q(75405),
+				q(75406),
+				-- 10.0.7.48295
+				q(75426),
+				q(75427),
+				q(75428),
+				q(75432),
+				q(75436),
+				q(75444),
+				q(75457),
 			})
 		})),
 		tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 10.0.5" } }, {

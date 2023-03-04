@@ -454,6 +454,7 @@ def give_name_quest() -> None:
         for line in csv_file:
             q_line: str = "q("+line.split("\t")[0].strip() + "),\n"
             csv_list.append(q_line)
+    with open(path, "w") as csv_file:
         csv_file.writelines(csv_list)
 
 
