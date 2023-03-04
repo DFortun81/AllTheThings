@@ -1,6 +1,8 @@
 local Items = root(ROOTS.ItemDBConditional);
 local Recipes = root(ROOTS.RecipeDB);
 local ProfessionID = ENGINEERING;
+local GNOMISH_ENGINEER = 20219;
+local GOBLIN_ENGINEER = 20222;
 local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 	if Items[itemID] then
 		print("Duplicate Recipe Item Defined!",itemID,recipeID);
@@ -34,6 +36,13 @@ local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 		Items[itemID] = item;
 	end
 end
+
+-- Gnomish Engineering
+i(18654, 23096, nil, GNOMISH_ENGINEER);		-- Schematic: Gnomish Alarm-o-Bot
+i(18661, 23129, nil, GNOMISH_ENGINEER);		-- Schematic: World Enlarger
+-- Goblin Engineering
+i(18653, 23078, nil, GOBLIN_ENGINEER);		-- Schematic: Goblin Jumper Cables XL
+
 
 -- TEMP
 -- #IF NOT ANYCLASSIC
