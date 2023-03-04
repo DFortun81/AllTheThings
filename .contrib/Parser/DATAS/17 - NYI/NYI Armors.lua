@@ -2283,6 +2283,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			filter(TABARDS, {
 				tier(DF_TIER, 0.01, {
+					i(191271),	-- Black Smith's Tabard
 					i(194676),	-- Emboldened Dracthyr's Tabard [Lol they changed model]
 				}),
 			}),

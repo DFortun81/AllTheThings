@@ -51,6 +51,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(DF_TIER, 0.01, {
 					i(189699),	-- 10.0 Dungeon Template - FistWeapon - Weapon
 					i(189137),	-- 10.0 QRP Template <Descriptor> Fist
+					i(198411),	-- Claw of Preparedness
 				}),
 			}),
 		}),
