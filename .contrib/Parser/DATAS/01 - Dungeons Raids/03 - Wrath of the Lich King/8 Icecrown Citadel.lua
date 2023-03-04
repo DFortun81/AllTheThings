@@ -2866,6 +2866,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138955, {	-- Illusion: Rune of Razorice
+								["classes"] = { DEATHKNIGHT },
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(51799),	-- Halion, Staff of Forgotten Love
@@ -3222,6 +3223,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138955, {	-- Illusion: Rune of Razorice
+								["classes"] = { DEATHKNIGHT },
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(51943),	-- Halion, Staff of Forgotten Love
@@ -3528,6 +3530,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["groups"] = {
 							ach(4619),	-- Portal Jockey (25 player)
 							i(138832, {	-- Illusion: Earthliving
+								["classes"] = { SHAMAN },
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(50183),	-- Lungbreaker
@@ -3579,6 +3582,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138955, {	-- Illusion: Rune of Razorice
+								["classes"] = { DEATHKNIGHT },
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(50429),	-- Archus, Greatstaff of Antonidas
@@ -3894,6 +3898,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["groups"] = {
 							ach(4619),	-- Portal Jockey (25 player)
 							i(138832, {	-- Illusion: Earthliving
+								["classes"] = { SHAMAN },
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(50621),	-- Lungbreaker
@@ -3959,6 +3964,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138955, {	-- Illusion: Rune of Razorice
+								["classes"] = { DEATHKNIGHT },
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(50731),	-- Archus, Greatstaff of Antonidas

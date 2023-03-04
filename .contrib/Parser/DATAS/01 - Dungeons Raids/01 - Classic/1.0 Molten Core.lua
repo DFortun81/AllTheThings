@@ -730,7 +730,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(138018, {	-- Clothes Chest Pattern: Molten Core
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
-					i(138833, {	-- Illusion: Flametongue (Shaman)
+					i(138833, {	-- Illusion: Flametongue
+						["classes"] = { SHAMAN },
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
 					i(17076),	-- Bonereaver's Edge

@@ -75,9 +75,15 @@ root(ROOTS.Promotions, {
 				i(171331),	-- Renowned Explorer's Versatile Vest
 			},
 		})),
-		i(171363, {	-- Illusion: Stinging Sands
+		ill(6185, {	-- Illusion: Stinging Sands [Not Sure?]
 			["timeline"] = { "added 8.2.5.31958" },
 		}),
+		ill(6158, {	-- Illusion: Stinging Sands [Not Sure?]
+			["timeline"] = { "added 8.2.5.31958" },
+		}),
+		--i(171363, {	-- Illusion: Stinging Sands [Not Sure?]
+		--	["timeline"] = { "added 8.2.5.31958" },
+		--}),
 		i(173299, {	-- Explorer's Jungle Hopper (MOUNT!)
 			["timeline"] = { "added 8.2.5.31958" },
 		}),

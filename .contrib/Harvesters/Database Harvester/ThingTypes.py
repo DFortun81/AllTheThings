@@ -131,7 +131,7 @@ class Followers(Thing):
 
 
 class Illusions(Thing):
-    db_path = Path(DATAS_FOLDER, "00 - Item Database", "Illusions.lua")
+    db_path = Path(DATAS_FOLDER, "00 - DB", "IllusionDB.lua")
 
     @staticmethod
     def table() -> str:
@@ -152,7 +152,7 @@ class Illusions(Thing):
 
     @staticmethod
     def extract_existing_info(line: str) -> str | None:
-        if match := re.search('\\["illusionID"] = (\\d+)', line):
+        if match := re.search("i\\(\\d+, (\\d+)", line):
             return match.group(1)
         else:
             return None
