@@ -77,6 +77,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		filter(ONE_HANDED_AXES, {
+			tier(WOTLK_TIER, {
+				n(P3xx, {
+					i(50251),	-- Shadow's Edge One-Hander
+				}),
+			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
 					i(189692),	-- 10.0 Dungeon Template - Axe1H - Agi - Weapon

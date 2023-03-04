@@ -6,14 +6,6 @@
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(CLASSIC_TIER, {
 		n(ARMOR, {
-			cl(ROGUE, {
-				i(7950),	-- Armor of Thero-Shan
-				i(7948),	-- Girdle of Thero-Shan
-				i(7952),	-- Boots of Thero-Shan
-				i(7951),	-- Hands of Thero-Shan
-				i(7953),	-- Mask of Thero-Shan
-				i(7949),	-- Leggings of Thero-Shan
-			}),
 			n(BACK, {
 				i(22230),	-- Frightmaw Hide
 			}),

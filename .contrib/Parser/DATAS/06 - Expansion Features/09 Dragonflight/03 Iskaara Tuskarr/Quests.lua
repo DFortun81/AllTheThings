@@ -408,6 +408,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2511, 16 },	-- Iskaara Tuskarr Renown 16
 				["provider"] = { "n", 187869 },	-- Tikukk
 				["coord"] = { 12.6, 50.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(199863),	-- Burgundy Tuskarr Backpack
+					i(199862),	-- Dark Tuskarr Backpack
+					i(199860),	-- Rustic Tuskarr Backpack
+					i(199861),	-- Tan Tuskarr Backpack
+				},
 			}),
 			q(72395, {	-- Dragon Isles Supplies
 				["minReputation"] = { 2511, 16 },	-- Iskaara Tuskarr Renown 16
