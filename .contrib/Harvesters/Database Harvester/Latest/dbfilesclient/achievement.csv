@@ -8206,7 +8206,7 @@ Defeat Balakar Khan in The Nokhud Offensive on Mythic or Mythic Keystone difficu
 Defeat Chrono-Lord Deios in Uldaman: Legacy of Tyr.,Uldaman: Legacy of Tyr,,16278,2451,-1,0,15467,0,10,0,22,4578418,0,137413,0,0
 Defeat Chrono-Lord Deios in Uldaman: Legacy of Tyr on Heroic difficulty or higher.,Heroic: Uldaman: Legacy of Tyr,,16279,2451,-1,16278,15467,0,10,0,23,4578418,0,137415,0,0
 Defeat Chrono-Lord Deios in Uldaman: Legacy of Tyr on Mythic or Mythic Keystone difficulty.,Mythic: Uldaman: Legacy of Tyr,,16280,2451,-1,16279,15467,0,10,0,24,4578418,0,137417,0,0
-Defeat Chrono-Lord Deios after catching every Eternity Orb as it falls to the ground in Uldaman: Legacy of Tyr on Mythic difficulty.,Like Sands Through the Hourglass,,16281,2451,-1,0,15467,0,10,0,52,525134,0,137473,0,0
+Defeat Chrono-Lord Deios after catching 20 Eternity Orbs as they fall to the ground in Uldaman: Legacy of Tyr on Mythic difficulty.,Like Sands Through the Hourglass,,16281,2451,-1,0,15467,0,10,0,52,525134,0,137473,0,0
 Defeat Sentinel Talondras after simultaneously stunning both Sentinel Talondras and all party members in Uldaman: Legacy of Tyr on Mythic difficulty.,"No, You're Stunning!",,16282,2451,-1,0,15467,0,10,0,51,464160,0,137467,0,0
 ,<Hidden> Travel Network - Node Unlock: Azure Span - Cobalt Assembly,,16283,-1,-1,0,15455,0,0,1179648,27,136243,0,137424,0,0
 ,<Hidden> Travel Network - Node Unlock: Azure Span - Vakthros,,16284,-1,-1,0,15455,0,0,1179648,28,136243,0,137426,0,0
@@ -8998,15 +8998,15 @@ Get Gold ranked time for Forbidden Reach Southern Reach Route Advanced.,Southern
 Complete Forbidden Reach Southern Reach Route Reverse.,Southern Reach Route Reverse: Bronze,,17258,-1,-1,0,15462,0,0,1048576,359,1002572,0,0,0,0
 Get Silver ranked time for Forbidden Reach Southern Reach Route Reverse.,Southern Reach Route Reverse: Silver,,17259,-1,-1,17258,15462,0,0,1048576,360,1002575,0,0,0,0
 Get Gold ranked time for Forbidden Reach Southern Reach Route Reverse.,Southern Reach Route Reverse: Gold,,17260,-1,-1,17259,15462,0,0,1048576,361,1002573,0,0,0,0
-Complete Forbidden Reach Caldera Climb.,Caldera Climb: Bronze,,17261,-1,-1,0,15462,0,0,1048576,362,1002572,0,0,0,0
-Get Silver ranked time for Forbidden Reach Caldera Climb.,Caldera Climb: Silver,,17262,-1,-1,17261,15462,0,0,1048576,363,1002575,0,0,0,0
-Get Gold ranked time for Forbidden Reach Caldera Climb.,Caldera Climb: Gold,,17263,-1,-1,17262,15462,0,0,1048576,364,1002573,0,0,0,0
-Complete Forbidden Reach Caldera Climb Advanced.,Caldera Climb Advanced: Bronze,,17264,-1,-1,0,15462,0,0,1048576,365,1002572,0,0,0,0
-Get Silver ranked time for Forbidden Reach Caldera Climb Advanced.,Caldera Climb Advanced: Silver,,17265,-1,-1,17264,15462,0,0,1048576,366,1002575,0,0,0,0
-Get Gold ranked time for Forbidden Reach Caldera Climb Advanced.,Caldera Climb Advanced: Gold,,17266,-1,-1,17265,15462,0,0,1048576,367,1002573,0,0,0,0
-Complete Forbidden Reach Caldera Climb Reverse.,Caldera Climb Reverse: Bronze,,17267,-1,-1,0,15462,0,0,1048576,368,1002572,0,0,0,0
-Get Silver ranked time for Forbidden Reach Caldera Climb Reverse.,Caldera Climb Reverse: Silver,,17268,-1,-1,17267,15462,0,0,1048576,369,1002575,0,0,0,0
-Get Gold ranked time for Forbidden Reach Caldera Climb Reverse.,Caldera Climb Reverse: Gold,,17269,-1,-1,17268,15462,0,0,1048576,370,1002573,0,0,0,0
+Complete Forbidden Reach Caldera Coaster.,Caldera Coaster: Bronze,,17261,-1,-1,0,15462,0,0,1048576,362,1002572,0,0,0,0
+Get Silver ranked time for Forbidden Reach Caldera Coaster.,Caldera Coaster: Silver,,17262,-1,-1,17261,15462,0,0,1048576,363,1002575,0,0,0,0
+Get Gold ranked time for Forbidden Reach Caldera Coaster.,Caldera Coaster: Gold,,17263,-1,-1,17262,15462,0,0,1048576,364,1002573,0,0,0,0
+Complete Forbidden Reach Caldera Coaster Advanced.,Caldera Coaster Advanced: Bronze,,17264,-1,-1,0,15462,0,0,1048576,365,1002572,0,0,0,0
+Get Silver ranked time for Forbidden Reach Caldera Coaster Advanced.,Caldera Coaster Advanced: Silver,,17265,-1,-1,17264,15462,0,0,1048576,366,1002575,0,0,0,0
+Get Gold ranked time for Forbidden Reach Caldera Coaster Advanced.,Caldera Coaster Advanced: Gold,,17266,-1,-1,17265,15462,0,0,1048576,367,1002573,0,0,0,0
+Complete Forbidden Reach Caldera Coaster Reverse.,Caldera Coaster Reverse: Bronze,,17267,-1,-1,0,15462,0,0,1048576,368,1002572,0,0,0,0
+Get Silver ranked time for Forbidden Reach Caldera Coaster Reverse.,Caldera Coaster Reverse: Silver,,17268,-1,-1,17267,15462,0,0,1048576,369,1002575,0,0,0,0
+Get Gold ranked time for Forbidden Reach Caldera Coaster Reverse.,Caldera Coaster Reverse: Gold,,17269,-1,-1,17268,15462,0,0,1048576,370,1002573,0,0,0,0
 Complete Forbidden Reach Forbidden Reach Rush.,Forbidden Reach Rush: Bronze,,17270,-1,-1,0,15462,0,0,1048576,371,1002572,0,0,0,0
 Get Silver ranked time for Forbidden Reach Forbidden Reach Rush.,Forbidden Reach Rush: Silver,,17271,-1,-1,17270,15462,0,0,1048576,372,1002575,0,0,0,0
 Get Gold ranked time for Forbidden Reach Forbidden Reach Rush.,Forbidden Reach Rush: Gold,,17272,-1,-1,17271,15462,0,0,1048576,373,1002573,0,0,0,0
@@ -9055,19 +9055,19 @@ Use Whirling Surge to dismount 50 enemy players in War Mode.,Airborne Tumbler,Ti
 Delivered a Restored Hakkari Bijou to someone with a great interest in such artifacts.,Relics of a Fallen Empire,Unlocks ancient secrets within Zul'Gurub,17366,-1,-1,0,14777,0,10,131072,27,132528,0,142996,0,0
 Fish up a Gurubashi Cache in Zul'Gurub.,Deadliest Cache,,17367,-1,-1,0,171,0,10,2048,77,132595,0,143003,0,0
 Unlock 50 doors within the Zskera Vaults using Zskera Vault Keys.,Door To Door,,17397,-1,-1,0,15465,0,10,131072,80,4909720,0,143163,0,0
-Collect the dragon glyph near Warlord's Perch.,Dragon Glyphs: Warlord's Perch,,17398,-1,-1,0,15462,0,0,1179648,392,4728198,0,0,0,0
+Collect the dragon glyph near Winglord's Perch.,Dragon Glyphs: Winglord's Perch,,17398,-1,-1,0,15462,0,0,1179648,392,4728198,0,0,0,0
 Collect the dragon glyph near Talon's Watch.,Dragon Glyphs: Talon's Watch,,17399,-1,-1,0,15462,0,0,1179648,393,4728198,0,0,0,0
 Collect the dragon glyph near Froststone Peak.,Dragon Glyphs: Froststone Peak,,17400,-1,-1,0,15462,0,0,1179648,394,4728198,0,0,0,0
 Collect the dragon glyph near Dragonskull Island.,Dragon Glyphs: Dragonskull Island,,17401,-1,-1,0,15462,0,0,1179648,395,4728198,0,0,0,0
 Collect the dragon glyph near Stormsunder Mountain.,Dragon Glyphs: Stormsunder Mountain,,17402,-1,-1,0,15462,0,0,1179648,396,4728198,0,0,0,0
 Collect the dragon glyph near the Frosted Spine.,Dragon Glyphs: The Frosted Spine,,17403,-1,-1,0,15462,0,0,1179648,397,4728198,0,0,0,0
-Collect the dragon glyph near Talonlord's Perch.,Dragon Glyphs: Talonlord's Perch,,17404,-1,-1,0,15462,0,0,1179648,398,4728198,0,0,0,0
+Collect the dragon glyph near Talonlords' Perch.,Dragon Glyphs: Talonlords' Perch,,17404,-1,-1,0,15462,0,0,1179648,398,4728198,0,0,0,0
 Collect the dragon glyph near the Caldera of the Menders.,Dragon Glyphs: Caldera of the Menders,,17405,-1,-1,0,15462,0,0,1179648,399,4728198,0,0,0,0
 Complete 8 Pet Battle World Quests on the Dragon Isles with a full team of level 25 pets.,Battle on the Dragon Isles II,,17406,-1,-1,0,15119,0,10,135168,3,652174,0,143165,0,0
 ,<Hidden> ACCOUNT: Treasure Room Local Quest Completed,,17409,-1,-1,0,15455,0,0,3276804,21,136243,0,143211,0,0
-Aided in the Zandalar Tribe's incursion into Zul'Gurub prior to the Cataclysm with your crafting skills.,Craftsman of the Zandalar Tribe,,17410,-1,-1,0,172,0,0,2048,23,134232,0,0,0,0
+Aided in the Zandalar Tribe's incursion into Zul'Gurub with your crafting skills prior to the Cataclysm.,Craftsman of the Zandalar Tribe,,17410,-1,-1,0,172,0,0,2048,23,134232,0,0,0,0
 Find the following dragon glyphs in the Forbidden Reach.,Forbidden Reach Glyph Hunter,,17411,-1,-1,0,15462,0,20,131072,400,4672496,0,143219,0,0
-Aided in the Argent Dawn's assault against Naxxramas prior to the expedition on Northrend with your crafting skills.,Craftsman of the Argent Dawn,,17412,-1,-1,0,172,0,0,2048,22,134499,0,0,0,0
+Aided in the Argent Dawn's assault against Naxxramas with your crafting skills prior to the expedition on Northrend.,Craftsman of the Argent Dawn,,17412,-1,-1,0,172,0,0,2048,22,134499,0,0,0,0
 Unlock 150 doors within the Zskera Vaults using Zskera Vault Keys.,Door Buster,Title Reward: the Key Master,17413,-1,-1,17397,15465,0,15,131072,81,4909720,0,143230,0,0
 ,Trial of Tyr Ineligible For Spark Skip [DNT],,17420,-1,-1,0,169,0,0,1048580,91,136243,0,143312,0,0
 ,<DNT> Artisan's Consortium Reputation is Preferred (Rank 1),,17422,-1,-1,0,15466,0,0,3145732,410,134446,0,143320,0,0
@@ -9076,10 +9076,10 @@ Unlock 150 doors within the Zskera Vaults using Zskera Vault Keys.,Door Buster,T
 Reach 100 skill in the Winterpelt language. Allows you to chat in Winterpelt!,Winterpelt Conversationalist,,17427,-1,-1,0,15466,0,10,0,2,4901295,0,143508,0,0
 ,<Hidden> Winterpelt Language - Send Mailer from Sonova,,17428,-1,-1,0,15455,0,0,9437184,44,136243,0,143510,0,0
 ,<Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy),,17495,-1,-1,0,15455,0,0,3276804,49,136243,0,143588,0,0
-Armed Azeroth's heroes during war efforts prior to the Cataclysm as a Weaponsmith.,Renowned Weaponsmith,,17496,-1,-1,0,172,0,0,2048,24,135326,0,0,0,0
-Equipped Azeroth's heroes during war efforts prior to the Cataclysm as an Armorsmith.,Renowned Armorsmith,,17497,-1,-1,0,172,0,0,2048,25,132739,0,0,0,0
-Equipped Azeroth's heroes during war efforts prior to the Cataclysm as a specialized Leatherworker.,Renowned Leatherworking Specialist,,17498,-1,-1,0,172,0,0,2048,26,133611,0,0,0,0
-Equipped Azeroth's heroes during war efforts prior to the Cataclysm as a specialized Tailor.,Renowned Tailoring Specialist,,17499,-1,-1,0,172,0,0,2048,27,136249,0,0,0,0
+Armed Azeroth's heroes as a Weaponsmith during war efforts prior to the Cataclysm.,Renowned Weaponsmith,,17496,-1,-1,0,172,0,0,2048,24,135326,0,0,0,0
+Equipped Azeroth's heroes as an Armorsmith during war efforts prior to the Cataclysm.,Renowned Armorsmith,,17497,-1,-1,0,172,0,0,2048,25,132739,0,0,0,0
+Equipped Azeroth's heroes as a specialized Leatherworker during war efforts prior to the Cataclysm.,Renowned Leatherworking Specialist,,17498,-1,-1,0,172,0,0,2048,26,133611,0,0,0,0
+Equipped Azeroth's heroes as a specialized Tailor during war efforts prior to the Cataclysm.,Renowned Tailoring Specialist,,17499,-1,-1,0,172,0,0,2048,27,136249,0,0,0,0
 Unlock every door in a single Zskera Vault within one week.,"Every Door, Everywhere, All At Once",,17509,-1,-1,0,15465,0,10,131072,82,237538,0,143604,0,0
 Complete 10 of the following special encounters in the post-storm Forbidden Reach.,Adventurer of the Forbidden Reach,,17524,-1,-1,0,15465,0,5,0,12,4638396,0,143672,0,0
 Complete all of the following special encounters in the post-storm Forbidden Reach.,Champion of the Forbidden Reach,,17525,-1,-1,17524,15465,0,15,0,13,4046656,0,143702,0,0

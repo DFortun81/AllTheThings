@@ -1,0 +1,20 @@
+3.1.0.9767
+104@@@Matron %s
+105@@@Patron %s
+6.0.1.18125
+240@@@%s the Crazy Cat Lady
+252@@@%s the Crazy Cat Man
+6.0.1.18689
+278@@@Talon King %s
+279@@@Talon Queen %s
+6.0.1.18738
+296@@@%s, Lord of Blackrock
+297@@@%s, Lady of Blackrock
+6.0.2.18816
+302@@@%s, Lord of War
+303@@@%s, Lady of War
+9.0.1.35167
+426@@@Baron %s
+427@@@Baroness %s
+429@@@Count %s
+430@@@Countess %s

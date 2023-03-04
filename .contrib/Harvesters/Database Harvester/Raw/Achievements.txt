@@ -11494,3 +11494,6 @@
 10.0.7.48220
 16452@@@Familiar Skies
 17546@@@A New Beginning
+10.0.7.48295
+17398@@@Dragon Glyphs: Winglord's Perch
+17404@@@Dragon Glyphs: Talonlords' Perch

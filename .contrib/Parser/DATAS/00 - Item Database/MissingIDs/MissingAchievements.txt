@@ -116,13 +116,13 @@ ach(17325),	-- <DNT> Hearthfire Fellowship Rank 4
 ach(17366),	-- Relics of a Fallen Empire
 ach(17367),	-- Deadliest Cache
 ach(17397),	-- Door To Door
-ach(17398),	-- Dragon Glyphs: Warlord's Perch \\ Dragon Glyphs: Northwind Point
+ach(17398),	-- Dragon Glyphs: Winglord's Perch \\ Dragon Glyphs: Warlord's Perch \\ Dragon Glyphs: Northwind Point
 ach(17399),	-- Dragon Glyphs: Talon's Watch
 ach(17400),	-- Dragon Glyphs: Froststone Peak \\ Dragon Glyphs: Fragstone Vault
 ach(17401),	-- Dragon Glyphs: Dragonskull Island
 ach(17402),	-- Dragon Glyphs: Stormsunder Mountain
 ach(17403),	-- Dragon Glyphs: The Frosted Spine \\ Dragon Glyphs: War Creche
-ach(17404),	-- Dragon Glyphs: Talonlord's Perch
+ach(17404),	-- Dragon Glyphs: Talonlords' Perch \\ Dragon Glyphs: Talonlord's Perch
 ach(17405),	-- Dragon Glyphs: Caldera of the Menders
 ach(17406),	-- Battle on the Dragon Isles II
 ach(17409),	-- <Hidden> ACCOUNT: Treasure Room Local Quest Completed

@@ -18397,7 +18397,6 @@ ID,Name_lang,NameAlt_lang,Title_lang,TitleAlt_lang,Classification,CreatureType,C
 201083,Spellsworn Crechebound,,,,0,2,0,0,105787,106358,105788,106359,1,1,1,1,192514,0,0
 201105,Kazzi,,,,0,7,0,0,106893,0,0,0,1,1,1,1,0,0,0
 201160,Morqut Fisher,,,,0,7,0,0,105760,105762,105640,105827,1,1,1,1,34784,0,0
-201173,Ebyssian,,,,1,2,0,0,111354,105532,0,0,1,0,1,1,0,0,0
 201213,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 201240,Volethi,,Field Mender,,0,7,0,0,111249,0,0,0,0,1,1,1,0,0,0
 201490,Vengeful Research,,,,0,4,0,0,111572,0,0,0,1,1,1,1,0,0,0
@@ -18421,7 +18420,7 @@ ID,Name_lang,NameAlt_lang,Title_lang,TitleAlt_lang,Classification,CreatureType,C
 202406,[DND] Kill Credit - Morqut Ascent,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 202407,[DND] Kill Credit - Aerie Chasm Cruise,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 202408,[DND] Kill Credit - Southern Reach Route,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
-202409,[DND] Kill Credit - Caldera Climb,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
+202409,[DND] Kill Credit - Caldera Coaster,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 202410,[DND] Kill Credit - Forbidden Reach Rush,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 202440,Enok the Stinky,,,,0,14,0,0,111660,0,0,0,1,1,1,1,0,0,0
 202452,Malfunctioning Matrix,,,,0,14,0,2,111662,0,0,0,1,1,1,1,0,0,0
@@ -18453,10 +18452,11 @@ ID,Name_lang,NameAlt_lang,Title_lang,TitleAlt_lang,Classification,CreatureType,C
 202619,Tracker Dragon Glyph,,,,0,10,0,3,21955,23767,0,0,0,1,1,1,0,0,0
 202620,Tracker Dragon Glyph,,,,0,10,0,3,21955,23767,0,0,0,1,1,1,0,0,0
 202725,Paper Zeppelin,,,,0,10,0,3,79541,0,0,0,1,1,1,1,0,0,0
-202752,Emberthal,,,,1,7,0,0,102031,0,0,0,1,1,1,1,0,0,0
 202837,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 202985,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 202986,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 202987,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
 203424,Drakonid Crechebound,,,,1,2,0,0,104285,104286,104287,104288,1,1,1,1,192514,0,0
 203689,Misha,,,,1,1,0,0,9492,0,0,0,1,1,1,1,0,0,0
+203859,[DNT] Kill Credit,,,,0,10,0,0,11686,0,0,0,1,1,1,1,0,0,0
+203994,Tarantula Hatchling,,,,0,8,0,0,107817,105840,77652,0,1,1,1,1,0,0,0
