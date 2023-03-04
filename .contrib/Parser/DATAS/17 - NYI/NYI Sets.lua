@@ -1101,6 +1101,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 		tier(WOD_TIER, {
+			-- 6.2.0
 			tier(WOD_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 6.2.0" } }, {
 				n(SEASON_PRIMAL, {
 					cl(DEATHKNIGHT, {
@@ -1180,6 +1181,683 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						-- i(127103),	-- Gladiator's Plate Shoulders	-- in NYI Sourceless
 						i(127114),	-- Gladiator's Plate Legguards
 					}),
+				}),
+			})),
+		}),
+		tier(SL_TIER, {
+			-- 9.2.0
+			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
+				header(HEADERS.LFGDungeon, 2288, {	-- Sepulcher of the First Ones
+					d(LFR_RAID, bubbleDown({ ["bonusID"] = 6896 }, {
+						cl(DEATHKNIGHT, {
+							i(188864),	-- Carapace of the First Eidolon
+							i(188866),	-- Chausses of the First Eidolon
+							i(188873),	-- Cloak of the First Eidolon
+							i(188863),	-- Gauntlets of the First Eidolon
+							i(188870),	-- Girdle of the First Eidolon
+							i(188865),	-- Greaves of the First Eidolon
+							i(188867),	-- Shoulderplates of the First
+							i(188869),	-- Vambraces of the First Eidolon
+							i(188868),	-- Visage of the First Eidolon
+						}),
+						cl(DEMONHUNTER, {
+							i(188897),	-- Mercurial Punisher's Belt
+							i(188899),	-- Mercurial Punisher's Boots
+							i(188893),	-- Mercurial Punisher's Breeches
+							i(188898),	-- Mercurial Punisher's Grips
+							i(188892),	-- Mercurial Punisher's Hood
+							i(188894),	-- Mercurial Punisher's Jerkin
+							i(188900),	-- Mercurial Punisher's Mantle
+							i(188896),	-- Mercurial Punisher's Shoulderpads
+							i(188895),	-- Mercurial Punisher's Wristguards
+						}),
+						cl(DRUID, {
+							i(188850),	-- Bracers of the Fixed Stars
+							i(188849),	-- Chestguard of the Fixed Stars
+							i(188852),	-- Cincture of the Fixed Stars
+							i(188854),	-- Footwraps of the Fixed Stars
+							i(188853),	-- Handwraps of the Fixed Stars
+							i(188847),	-- Headpiece of the Fixed Stars
+							i(188848),	-- Leggings of the Fixed Stars
+							i(188851),	-- Shoulderpads of the Fixed Stars
+							i(188871),	-- Wrap of the Fixed Stars
+						}),
+						cl(HUNTER, {
+							i(188872),	-- Godstalker's Camouflage
+							i(188857),	-- Godstalker's Fauld
+							i(188861),	-- Godstalker's Gauntlets
+							i(188858),	-- Godstalker's Hauberk
+							i(188856),	-- Godstalker's Pauldrons
+							i(188862),	-- Godstalker's Sabatons
+							i(188859),	-- Godstalker's Sallet
+							i(188860),	-- Godstalker's Tassets
+							i(188855),	-- Godstalker's Wristwraps
+						}),
+						cl(MAGE, {
+							i(188840),	-- Erudite Occultist's Bracers
+							i(188841),	-- Erudite Occultist's Cord
+							i(188845),	-- Erudite Occultist's Handwraps
+							i(188844),	-- Erudite Occultist's Hood
+							i(188842),	-- Erudite Occultist's Leggings
+							i(188843),	-- Erudite Occultist's Mantle
+							i(188839),	-- Erudite Occultist's Robes
+							i(188846),	-- Erudite Occultist's Shroud
+							i(188838),	-- Erudite Occultist's Treads
+						}),
+						cl(MONK, {
+							i(188910),	-- Crown of the Grand Upwelling
+							i(188912),	-- Cuirass of the Grand Upwelling
+							i(188913),	-- Demigaunts of the Grand Upwelling
+							i(188918),	-- Drape of the Grand Upwelling
+							i(188917),	-- Footwraps of the Grand Upwelling
+							i(188916),	-- Grips of the Grand Upwelling
+							i(188911),	-- Legguards of the Grand Upwelling
+							i(188914),	-- Tassets of the Grand Upwelling
+							i(188915),	-- Waistwrap of the Grand Upwelling
+						}),
+						cl(PALADIN, {
+							i(188933),	-- Luminous Chevalier's Casque
+							i(188936),	-- Luminous Chevalier's Drape
+							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188928),	-- Luminous Chevalier's Gauntlets
+							i(188935),	-- Luminous Chevalier's Girdle
+							i(188929),	-- Luminous Chevalier's Plackart
+							i(188931),	-- Luminous Chevalier's Robes
+							i(188930),	-- Luminous Chevalier's Spurs
+							i(188934),	-- Luminous Chevalier's Vambraces
+						}),
+						cl(PRIEST, {
+							i(188880),	-- Amice of the Empyrean
+							i(188876),	-- Bracelets of the Empyrean
+							i(188879),	-- Capelet of the Empyrean
+							i(188881),	-- Caress of the Empyrean
+							i(188882),	-- Drape of the Empyrean
+							i(188875),	-- Habit of the Empyrean
+							i(188878),	-- Leggings of the Empyrean
+							i(188877),	-- Sash of the Empyrean
+							i(188874),	-- Slippers of the Empyrean
+						}),
+						cl(ROGUE, {
+							i(188906),	-- Soulblade Baldric
+							i(188909),	-- Soulblade Cloak
+							i(188908),	-- Soulblade Footpads
+							i(188907),	-- Soulblade Grasps
+							i(188901),	-- Soulblade Guise
+							i(188903),	-- Soulblade Leathers
+							i(188902),	-- Soulblade Leggings
+							i(188905),	-- Soulblade Nightwings
+							i(188904),	-- Soulblade Wristguard
+						}),
+						cl(SHAMAN, {
+							i(188920),	-- Theurgic Starspeaker's Adornment
+							i(188921),	-- Theurgic Starspeaker's Belt
+							i(188919),	-- Theurgic Starspeaker's Bracers
+							i(188923),	-- Theurgic Starspeaker's Howl
+							i(188922),	-- Theurgic Starspeaker's Ringmail
+							i(188925),	-- Theurgic Starspeaker's Runebindings
+							i(188926),	-- Theurgic Starspeaker's Sabatons
+							i(188927),	-- Theurgic Starspeaker's Shawl
+							i(188924),	-- Theurgic Starspeaker's Tassets
+						}),
+						cl(WARLOCK, {
+							i(188885),	-- Bangles of the Demon Star
+							i(188883),	-- Boots of the Demon Star
+							i(188891),	-- Cape of the Demon Star
+							i(188890),	-- Grasps of the Demon Star
+							i(188889),	-- Horns of the Demon Star
+							i(188887),	-- Leggings of the Demon Star
+							i(188888),	-- Mantle of the Demon Star
+							i(188884),	-- Robes of the Demon Star
+							i(188886),	-- Waistwrap of the Demon Star
+						}),
+						cl(WARRIOR, {
+							i(188938),	-- Breastplate of the Infinite Infantry
+							i(188945),	-- Favor of the Infinite Infantry
+							i(188942),	-- Gaze of the Infinite Infantry
+							i(188937),	-- Grasps of the Infinite Infantry
+							i(188944),	-- Greatbelt of the Infinite Infantry
+							i(188940),	-- Legplates of the Infinite Infantry
+							i(188939),	-- March of the Infinite Infantry
+							i(188941),	-- Pauldrons of the Infinite Infantry
+							i(188943),	-- Vambraces of the Infinite Infantry
+						}),
+					})),
+					d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 8107 }, {
+						cl(DEATHKNIGHT, {
+							i(188864),	-- Carapace of the First Eidolon
+							i(188866),	-- Chausses of the First Eidolon
+							i(188873),	-- Cloak of the First Eidolon
+							i(188863),	-- Gauntlets of the First Eidolon
+							i(188870),	-- Girdle of the First Eidolon
+							i(188865),	-- Greaves of the First Eidolon
+							i(188867),	-- Shoulderplates of the First
+							i(188869),	-- Vambraces of the First Eidolon
+							i(188868),	-- Visage of the First Eidolon
+						}),
+						cl(DEMONHUNTER, {
+							i(188897),	-- Mercurial Punisher's Belt
+							i(188899),	-- Mercurial Punisher's Boots
+							i(188893),	-- Mercurial Punisher's Breeches
+							i(188898),	-- Mercurial Punisher's Grips
+							i(188892),	-- Mercurial Punisher's Hood
+							i(188894),	-- Mercurial Punisher's Jerkin
+							i(188900),	-- Mercurial Punisher's Mantle
+							i(188896),	-- Mercurial Punisher's Shoulderpads
+							i(188895),	-- Mercurial Punisher's Wristguards
+						}),
+						cl(DRUID, {
+							i(188850),	-- Bracers of the Fixed Stars
+							i(188849),	-- Chestguard of the Fixed Stars
+							i(188852),	-- Cincture of the Fixed Stars
+							i(188854),	-- Footwraps of the Fixed Stars
+							i(188853),	-- Handwraps of the Fixed Stars
+							i(188847),	-- Headpiece of the Fixed Stars
+							i(188848),	-- Leggings of the Fixed Stars
+							i(188851),	-- Shoulderpads of the Fixed Stars
+							i(188871),	-- Wrap of the Fixed Stars
+						}),
+						cl(HUNTER, {
+							i(188872),	-- Godstalker's Camouflage
+							i(188857),	-- Godstalker's Fauld
+							i(188861),	-- Godstalker's Gauntlets
+							i(188858),	-- Godstalker's Hauberk
+							i(188856),	-- Godstalker's Pauldrons
+							i(188862),	-- Godstalker's Sabatons
+							i(188859),	-- Godstalker's Sallet
+							i(188860),	-- Godstalker's Tassets
+							i(188855),	-- Godstalker's Wristwraps
+						}),
+						cl(MAGE, {
+							i(188840),	-- Erudite Occultist's Bracers
+							i(188841),	-- Erudite Occultist's Cord
+							i(188845),	-- Erudite Occultist's Handwraps
+							i(188844),	-- Erudite Occultist's Hood
+							i(188842),	-- Erudite Occultist's Leggings
+							i(188843),	-- Erudite Occultist's Mantle
+							i(188839),	-- Erudite Occultist's Robes
+							i(188846),	-- Erudite Occultist's Shroud
+							i(188838),	-- Erudite Occultist's Treads
+						}),
+						cl(MONK, {
+							i(188910),	-- Crown of the Grand Upwelling
+							i(188912),	-- Cuirass of the Grand Upwelling
+							i(188913),	-- Demigaunts of the Grand Upwelling
+							i(188918),	-- Drape of the Grand Upwelling
+							i(188917),	-- Footwraps of the Grand Upwelling
+							i(188916),	-- Grips of the Grand Upwelling
+							i(188911),	-- Legguards of the Grand Upwelling
+							i(188914),	-- Tassets of the Grand Upwelling
+							i(188915),	-- Waistwrap of the Grand Upwelling
+						}),
+						cl(PALADIN, {
+							i(188933),	-- Luminous Chevalier's Casque
+							i(188936),	-- Luminous Chevalier's Drape
+							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188928),	-- Luminous Chevalier's Gauntlets
+							i(188935),	-- Luminous Chevalier's Girdle
+							i(188929),	-- Luminous Chevalier's Plackart
+							i(188931),	-- Luminous Chevalier's Robes
+							i(188930),	-- Luminous Chevalier's Spurs
+							i(188934),	-- Luminous Chevalier's Vambraces
+						}),
+						cl(PRIEST, {
+							i(188880),	-- Amice of the Empyrean
+							i(188876),	-- Bracelets of the Empyrean
+							i(188879),	-- Capelet of the Empyrean
+							i(188881),	-- Caress of the Empyrean
+							i(188882),	-- Drape of the Empyrean
+							i(188875),	-- Habit of the Empyrean
+							i(188878),	-- Leggings of the Empyrean
+							i(188877),	-- Sash of the Empyrean
+							i(188874),	-- Slippers of the Empyrean
+						}),
+						cl(ROGUE, {
+							i(188906),	-- Soulblade Baldric
+							i(188909),	-- Soulblade Cloak
+							i(188908),	-- Soulblade Footpads
+							i(188907),	-- Soulblade Grasps
+							i(188901),	-- Soulblade Guise
+							i(188903),	-- Soulblade Leathers
+							i(188902),	-- Soulblade Leggings
+							i(188905),	-- Soulblade Nightwings
+							i(188904),	-- Soulblade Wristguard
+						}),
+						cl(SHAMAN, {
+							i(188920),	-- Theurgic Starspeaker's Adornment
+							i(188921),	-- Theurgic Starspeaker's Belt
+							i(188919),	-- Theurgic Starspeaker's Bracers
+							i(188923),	-- Theurgic Starspeaker's Howl
+							i(188922),	-- Theurgic Starspeaker's Ringmail
+							i(188925),	-- Theurgic Starspeaker's Runebindings
+							i(188926),	-- Theurgic Starspeaker's Sabatons
+							i(188927),	-- Theurgic Starspeaker's Shawl
+							i(188924),	-- Theurgic Starspeaker's Tassets
+						}),
+						cl(WARLOCK, {
+							i(188885),	-- Bangles of the Demon Star
+							i(188883),	-- Boots of the Demon Star
+							i(188891),	-- Cape of the Demon Star
+							i(188890),	-- Grasps of the Demon Star
+							i(188889),	-- Horns of the Demon Star
+							i(188887),	-- Leggings of the Demon Star
+							i(188888),	-- Mantle of the Demon Star
+							i(188884),	-- Robes of the Demon Star
+							i(188886),	-- Waistwrap of the Demon Star
+						}),
+						cl(WARRIOR, {
+							i(188938),	-- Breastplate of the Infinite Infantry
+							i(188945),	-- Favor of the Infinite Infantry
+							i(188942),	-- Gaze of the Infinite Infantry
+							i(188937),	-- Grasps of the Infinite Infantry
+							i(188944),	-- Greatbelt of the Infinite Infantry
+							i(188940),	-- Legplates of the Infinite Infantry
+							i(188939),	-- March of the Infinite Infantry
+							i(188941),	-- Pauldrons of the Infinite Infantry
+							i(188943),	-- Vambraces of the Infinite Infantry
+						}),
+					})),
+					d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6898 }, {
+						cl(DEATHKNIGHT, {
+							i(188864),	-- Carapace of the First Eidolon
+							i(188866),	-- Chausses of the First Eidolon
+							i(188873),	-- Cloak of the First Eidolon
+							i(188863),	-- Gauntlets of the First Eidolon
+							i(188870),	-- Girdle of the First Eidolon
+							i(188865),	-- Greaves of the First Eidolon
+							i(188867),	-- Shoulderplates of the First
+							i(188869),	-- Vambraces of the First Eidolon
+							i(188868),	-- Visage of the First Eidolon
+						}),
+						cl(DEMONHUNTER, {
+							i(188897),	-- Mercurial Punisher's Belt
+							i(188899),	-- Mercurial Punisher's Boots
+							i(188893),	-- Mercurial Punisher's Breeches
+							i(188898),	-- Mercurial Punisher's Grips
+							i(188892),	-- Mercurial Punisher's Hood
+							i(188894),	-- Mercurial Punisher's Jerkin
+							i(188900),	-- Mercurial Punisher's Mantle
+							i(188896),	-- Mercurial Punisher's Shoulderpads
+							i(188895),	-- Mercurial Punisher's Wristguards
+						}),
+						cl(DRUID, {
+							i(188850),	-- Bracers of the Fixed Stars
+							i(188849),	-- Chestguard of the Fixed Stars
+							i(188852),	-- Cincture of the Fixed Stars
+							i(188854),	-- Footwraps of the Fixed Stars
+							i(188853),	-- Handwraps of the Fixed Stars
+							i(188847),	-- Headpiece of the Fixed Stars
+							i(188848),	-- Leggings of the Fixed Stars
+							i(188851),	-- Shoulderpads of the Fixed Stars
+							i(188871),	-- Wrap of the Fixed Stars
+						}),
+						cl(HUNTER, {
+							i(188872),	-- Godstalker's Camouflage
+							i(188857),	-- Godstalker's Fauld
+							i(188861),	-- Godstalker's Gauntlets
+							i(188858),	-- Godstalker's Hauberk
+							i(188856),	-- Godstalker's Pauldrons
+							i(188862),	-- Godstalker's Sabatons
+							i(188859),	-- Godstalker's Sallet
+							i(188860),	-- Godstalker's Tassets
+							i(188855),	-- Godstalker's Wristwraps
+						}),
+						cl(MAGE, {
+							i(188840),	-- Erudite Occultist's Bracers
+							i(188841),	-- Erudite Occultist's Cord
+							i(188845),	-- Erudite Occultist's Handwraps
+							i(188844),	-- Erudite Occultist's Hood
+							i(188842),	-- Erudite Occultist's Leggings
+							i(188843),	-- Erudite Occultist's Mantle
+							i(188839),	-- Erudite Occultist's Robes
+							i(188846),	-- Erudite Occultist's Shroud
+							i(188838),	-- Erudite Occultist's Treads
+						}),
+						cl(MONK, {
+							i(188910),	-- Crown of the Grand Upwelling
+							i(188912),	-- Cuirass of the Grand Upwelling
+							i(188913),	-- Demigaunts of the Grand Upwelling
+							i(188918),	-- Drape of the Grand Upwelling
+							i(188917),	-- Footwraps of the Grand Upwelling
+							i(188916),	-- Grips of the Grand Upwelling
+							i(188911),	-- Legguards of the Grand Upwelling
+							i(188914),	-- Tassets of the Grand Upwelling
+							i(188915),	-- Waistwrap of the Grand Upwelling
+						}),
+						cl(PALADIN, {
+							i(188933),	-- Luminous Chevalier's Casque
+							i(188936),	-- Luminous Chevalier's Drape
+							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188928),	-- Luminous Chevalier's Gauntlets
+							i(188935),	-- Luminous Chevalier's Girdle
+							i(188929),	-- Luminous Chevalier's Plackart
+							i(188931),	-- Luminous Chevalier's Robes
+							i(188930),	-- Luminous Chevalier's Spurs
+							i(188934),	-- Luminous Chevalier's Vambraces
+						}),
+						cl(PRIEST, {
+							i(188880),	-- Amice of the Empyrean
+							i(188876),	-- Bracelets of the Empyrean
+							i(188879),	-- Capelet of the Empyrean
+							i(188881),	-- Caress of the Empyrean
+							i(188882),	-- Drape of the Empyrean
+							i(188875),	-- Habit of the Empyrean
+							i(188878),	-- Leggings of the Empyrean
+							i(188877),	-- Sash of the Empyrean
+							i(188874),	-- Slippers of the Empyrean
+						}),
+						cl(ROGUE, {
+							i(188906),	-- Soulblade Baldric
+							i(188909),	-- Soulblade Cloak
+							i(188908),	-- Soulblade Footpads
+							i(188907),	-- Soulblade Grasps
+							i(188901),	-- Soulblade Guise
+							i(188903),	-- Soulblade Leathers
+							i(188902),	-- Soulblade Leggings
+							i(188905),	-- Soulblade Nightwings
+							i(188904),	-- Soulblade Wristguard
+						}),
+						cl(SHAMAN, {
+							i(188920),	-- Theurgic Starspeaker's Adornment
+							i(188921),	-- Theurgic Starspeaker's Belt
+							i(188919),	-- Theurgic Starspeaker's Bracers
+							i(188923),	-- Theurgic Starspeaker's Howl
+							i(188922),	-- Theurgic Starspeaker's Ringmail
+							i(188925),	-- Theurgic Starspeaker's Runebindings
+							i(188926),	-- Theurgic Starspeaker's Sabatons
+							i(188927),	-- Theurgic Starspeaker's Shawl
+							i(188924),	-- Theurgic Starspeaker's Tassets
+						}),
+						cl(WARLOCK, {
+							i(188885),	-- Bangles of the Demon Star
+							i(188883),	-- Boots of the Demon Star
+							i(188891),	-- Cape of the Demon Star
+							i(188890),	-- Grasps of the Demon Star
+							i(188889),	-- Horns of the Demon Star
+							i(188887),	-- Leggings of the Demon Star
+							i(188888),	-- Mantle of the Demon Star
+							i(188884),	-- Robes of the Demon Star
+							i(188886),	-- Waistwrap of the Demon Star
+						}),
+						cl(WARRIOR, {
+							i(188938),	-- Breastplate of the Infinite Infantry
+							i(188945),	-- Favor of the Infinite Infantry
+							i(188942),	-- Gaze of the Infinite Infantry
+							i(188937),	-- Grasps of the Infinite Infantry
+							i(188944),	-- Greatbelt of the Infinite Infantry
+							i(188940),	-- Legplates of the Infinite Infantry
+							i(188939),	-- March of the Infinite Infantry
+							i(188941),	-- Pauldrons of the Infinite Infantry
+							i(188943),	-- Vambraces of the Infinite Infantry
+						}),
+					})),
+					d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6897 }, {
+						cl(DEATHKNIGHT, {
+							i(188864),	-- Carapace of the First Eidolon
+							i(188866),	-- Chausses of the First Eidolon
+							i(188873),	-- Cloak of the First Eidolon
+							i(188863),	-- Gauntlets of the First Eidolon
+							i(188870),	-- Girdle of the First Eidolon
+							i(188865),	-- Greaves of the First Eidolon
+							i(188867),	-- Shoulderplates of the First
+							i(188869),	-- Vambraces of the First Eidolon
+							i(188868),	-- Visage of the First Eidolon
+						}),
+						cl(DEMONHUNTER, {
+							i(188897),	-- Mercurial Punisher's Belt
+							i(188899),	-- Mercurial Punisher's Boots
+							i(188893),	-- Mercurial Punisher's Breeches
+							i(188898),	-- Mercurial Punisher's Grips
+							i(188892),	-- Mercurial Punisher's Hood
+							i(188894),	-- Mercurial Punisher's Jerkin
+							i(188900),	-- Mercurial Punisher's Mantle
+							i(188896),	-- Mercurial Punisher's Shoulderpads
+							i(188895),	-- Mercurial Punisher's Wristguards
+						}),
+						cl(DRUID, {
+							i(188850),	-- Bracers of the Fixed Stars
+							i(188849),	-- Chestguard of the Fixed Stars
+							i(188852),	-- Cincture of the Fixed Stars
+							i(188854),	-- Footwraps of the Fixed Stars
+							i(188853),	-- Handwraps of the Fixed Stars
+							i(188847),	-- Headpiece of the Fixed Stars
+							i(188848),	-- Leggings of the Fixed Stars
+							i(188851),	-- Shoulderpads of the Fixed Stars
+							i(188871),	-- Wrap of the Fixed Stars
+						}),
+						cl(HUNTER, {
+							i(188872),	-- Godstalker's Camouflage
+							i(188857),	-- Godstalker's Fauld
+							i(188861),	-- Godstalker's Gauntlets
+							i(188858),	-- Godstalker's Hauberk
+							i(188856),	-- Godstalker's Pauldrons
+							i(188862),	-- Godstalker's Sabatons
+							i(188859),	-- Godstalker's Sallet
+							i(188860),	-- Godstalker's Tassets
+							i(188855),	-- Godstalker's Wristwraps
+						}),
+						cl(MAGE, {
+							i(188840),	-- Erudite Occultist's Bracers
+							i(188841),	-- Erudite Occultist's Cord
+							i(188845),	-- Erudite Occultist's Handwraps
+							i(188844),	-- Erudite Occultist's Hood
+							i(188842),	-- Erudite Occultist's Leggings
+							i(188843),	-- Erudite Occultist's Mantle
+							i(188839),	-- Erudite Occultist's Robes
+							i(188846),	-- Erudite Occultist's Shroud
+							i(188838),	-- Erudite Occultist's Treads
+						}),
+						cl(MONK, {
+							i(188910),	-- Crown of the Grand Upwelling
+							i(188912),	-- Cuirass of the Grand Upwelling
+							i(188913),	-- Demigaunts of the Grand Upwelling
+							i(188918),	-- Drape of the Grand Upwelling
+							i(188917),	-- Footwraps of the Grand Upwelling
+							i(188916),	-- Grips of the Grand Upwelling
+							i(188911),	-- Legguards of the Grand Upwelling
+							i(188914),	-- Tassets of the Grand Upwelling
+							i(188915),	-- Waistwrap of the Grand Upwelling
+						}),
+						cl(PALADIN, {
+							i(188933),	-- Luminous Chevalier's Casque
+							i(188936),	-- Luminous Chevalier's Drape
+							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188928),	-- Luminous Chevalier's Gauntlets
+							i(188935),	-- Luminous Chevalier's Girdle
+							i(188929),	-- Luminous Chevalier's Plackart
+							i(188931),	-- Luminous Chevalier's Robes
+							i(188930),	-- Luminous Chevalier's Spurs
+							i(188934),	-- Luminous Chevalier's Vambraces
+						}),
+						cl(PRIEST, {
+							i(188880),	-- Amice of the Empyrean
+							i(188876),	-- Bracelets of the Empyrean
+							i(188879),	-- Capelet of the Empyrean
+							i(188881),	-- Caress of the Empyrean
+							i(188882),	-- Drape of the Empyrean
+							i(188875),	-- Habit of the Empyrean
+							i(188878),	-- Leggings of the Empyrean
+							i(188877),	-- Sash of the Empyrean
+							i(188874),	-- Slippers of the Empyrean
+						}),
+						cl(ROGUE, {
+							i(188906),	-- Soulblade Baldric
+							i(188909),	-- Soulblade Cloak
+							i(188908),	-- Soulblade Footpads
+							i(188907),	-- Soulblade Grasps
+							i(188901),	-- Soulblade Guise
+							i(188903),	-- Soulblade Leathers
+							i(188902),	-- Soulblade Leggings
+							i(188905),	-- Soulblade Nightwings
+							i(188904),	-- Soulblade Wristguard
+						}),
+						cl(SHAMAN, {
+							i(188920),	-- Theurgic Starspeaker's Adornment
+							i(188921),	-- Theurgic Starspeaker's Belt
+							i(188919),	-- Theurgic Starspeaker's Bracers
+							i(188923),	-- Theurgic Starspeaker's Howl
+							i(188922),	-- Theurgic Starspeaker's Ringmail
+							i(188925),	-- Theurgic Starspeaker's Runebindings
+							i(188926),	-- Theurgic Starspeaker's Sabatons
+							i(188927),	-- Theurgic Starspeaker's Shawl
+							i(188924),	-- Theurgic Starspeaker's Tassets
+						}),
+						cl(WARLOCK, {
+							i(188885),	-- Bangles of the Demon Star
+							i(188883),	-- Boots of the Demon Star
+							i(188891),	-- Cape of the Demon Star
+							i(188890),	-- Grasps of the Demon Star
+							i(188889),	-- Horns of the Demon Star
+							i(188887),	-- Leggings of the Demon Star
+							i(188888),	-- Mantle of the Demon Star
+							i(188884),	-- Robes of the Demon Star
+							i(188886),	-- Waistwrap of the Demon Star
+						}),
+						cl(WARRIOR, {
+							i(188938),	-- Breastplate of the Infinite Infantry
+							i(188945),	-- Favor of the Infinite Infantry
+							i(188942),	-- Gaze of the Infinite Infantry
+							i(188937),	-- Grasps of the Infinite Infantry
+							i(188944),	-- Greatbelt of the Infinite Infantry
+							i(188940),	-- Legplates of the Infinite Infantry
+							i(188939),	-- March of the Infinite Infantry
+							i(188941),	-- Pauldrons of the Infinite Infantry
+							i(188943),	-- Vambraces of the Infinite Infantry
+						}),
+					})),
+					n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6895 }, {
+						cl(DEATHKNIGHT, {
+							i(188864),	-- Carapace of the First Eidolon
+							i(188866),	-- Chausses of the First Eidolon
+							i(188873),	-- Cloak of the First Eidolon
+							i(188863),	-- Gauntlets of the First Eidolon
+							i(188870),	-- Girdle of the First Eidolon
+							i(188865),	-- Greaves of the First Eidolon
+							i(188867),	-- Shoulderplates of the First
+							i(188869),	-- Vambraces of the First Eidolon
+							i(188868),	-- Visage of the First Eidolon
+						}),
+						cl(DEMONHUNTER, {
+							i(188897),	-- Mercurial Punisher's Belt
+							i(188899),	-- Mercurial Punisher's Boots
+							i(188893),	-- Mercurial Punisher's Breeches
+							i(188898),	-- Mercurial Punisher's Grips
+							i(188892),	-- Mercurial Punisher's Hood
+							i(188894),	-- Mercurial Punisher's Jerkin
+							i(188900),	-- Mercurial Punisher's Mantle
+							i(188896),	-- Mercurial Punisher's Shoulderpads
+							i(188895),	-- Mercurial Punisher's Wristguards
+						}),
+						cl(DRUID, {
+							i(188850),	-- Bracers of the Fixed Stars
+							i(188849),	-- Chestguard of the Fixed Stars
+							i(188852),	-- Cincture of the Fixed Stars
+							i(188854),	-- Footwraps of the Fixed Stars
+							i(188853),	-- Handwraps of the Fixed Stars
+							i(188847),	-- Headpiece of the Fixed Stars
+							i(188848),	-- Leggings of the Fixed Stars
+							i(188851),	-- Shoulderpads of the Fixed Stars
+							i(188871),	-- Wrap of the Fixed Stars
+						}),
+						cl(HUNTER, {
+							i(188872),	-- Godstalker's Camouflage
+							i(188857),	-- Godstalker's Fauld
+							i(188861),	-- Godstalker's Gauntlets
+							i(188858),	-- Godstalker's Hauberk
+							i(188856),	-- Godstalker's Pauldrons
+							i(188862),	-- Godstalker's Sabatons
+							i(188859),	-- Godstalker's Sallet
+							i(188860),	-- Godstalker's Tassets
+							i(188855),	-- Godstalker's Wristwraps
+						}),
+						cl(MAGE, {
+							i(188840),	-- Erudite Occultist's Bracers
+							i(188841),	-- Erudite Occultist's Cord
+							i(188845),	-- Erudite Occultist's Handwraps
+							i(188844),	-- Erudite Occultist's Hood
+							i(188842),	-- Erudite Occultist's Leggings
+							i(188843),	-- Erudite Occultist's Mantle
+							i(188839),	-- Erudite Occultist's Robes
+							i(188846),	-- Erudite Occultist's Shroud
+							i(188838),	-- Erudite Occultist's Treads
+						}),
+						cl(MONK, {
+							i(188910),	-- Crown of the Grand Upwelling
+							i(188912),	-- Cuirass of the Grand Upwelling
+							i(188913),	-- Demigaunts of the Grand Upwelling
+							i(188918),	-- Drape of the Grand Upwelling
+							i(188917),	-- Footwraps of the Grand Upwelling
+							i(188916),	-- Grips of the Grand Upwelling
+							i(188911),	-- Legguards of the Grand Upwelling
+							i(188914),	-- Tassets of the Grand Upwelling
+							i(188915),	-- Waistwrap of the Grand Upwelling
+						}),
+						cl(PALADIN, {
+							i(188933),	-- Luminous Chevalier's Casque
+							i(188936),	-- Luminous Chevalier's Drape
+							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188928),	-- Luminous Chevalier's Gauntlets
+							i(188935),	-- Luminous Chevalier's Girdle
+							i(188929),	-- Luminous Chevalier's Plackart
+							i(188931),	-- Luminous Chevalier's Robes
+							i(188930),	-- Luminous Chevalier's Spurs
+							i(188934),	-- Luminous Chevalier's Vambraces
+						}),
+						cl(PRIEST, {
+							i(188880),	-- Amice of the Empyrean
+							i(188876),	-- Bracelets of the Empyrean
+							i(188879),	-- Capelet of the Empyrean
+							i(188881),	-- Caress of the Empyrean
+							i(188882),	-- Drape of the Empyrean
+							i(188875),	-- Habit of the Empyrean
+							i(188878),	-- Leggings of the Empyrean
+							i(188877),	-- Sash of the Empyrean
+							i(188874),	-- Slippers of the Empyrean
+						}),
+						cl(ROGUE, {
+							i(188906),	-- Soulblade Baldric
+							i(188909),	-- Soulblade Cloak
+							i(188908),	-- Soulblade Footpads
+							i(188907),	-- Soulblade Grasps
+							i(188901),	-- Soulblade Guise
+							i(188903),	-- Soulblade Leathers
+							i(188902),	-- Soulblade Leggings
+							i(188905),	-- Soulblade Nightwings
+							i(188904),	-- Soulblade Wristguard
+						}),
+						cl(SHAMAN, {
+							i(188920),	-- Theurgic Starspeaker's Adornment
+							i(188921),	-- Theurgic Starspeaker's Belt
+							i(188919),	-- Theurgic Starspeaker's Bracers
+							i(188923),	-- Theurgic Starspeaker's Howl
+							i(188922),	-- Theurgic Starspeaker's Ringmail
+							i(188925),	-- Theurgic Starspeaker's Runebindings
+							i(188926),	-- Theurgic Starspeaker's Sabatons
+							i(188927),	-- Theurgic Starspeaker's Shawl
+							i(188924),	-- Theurgic Starspeaker's Tassets
+						}),
+						cl(WARLOCK, {
+							i(188885),	-- Bangles of the Demon Star
+							i(188883),	-- Boots of the Demon Star
+							i(188891),	-- Cape of the Demon Star
+							i(188890),	-- Grasps of the Demon Star
+							i(188889),	-- Horns of the Demon Star
+							i(188887),	-- Leggings of the Demon Star
+							i(188888),	-- Mantle of the Demon Star
+							i(188884),	-- Robes of the Demon Star
+							i(188886),	-- Waistwrap of the Demon Star
+						}),
+						cl(WARRIOR, {
+							i(188938),	-- Breastplate of the Infinite Infantry
+							i(188945),	-- Favor of the Infinite Infantry
+							i(188942),	-- Gaze of the Infinite Infantry
+							i(188937),	-- Grasps of the Infinite Infantry
+							i(188944),	-- Greatbelt of the Infinite Infantry
+							i(188940),	-- Legplates of the Infinite Infantry
+							i(188939),	-- March of the Infinite Infantry
+							i(188941),	-- Pauldrons of the Infinite Infantry
+							i(188943),	-- Vambraces of the Infinite Infantry
+						}),
+					})),
 				}),
 			})),
 		}),
