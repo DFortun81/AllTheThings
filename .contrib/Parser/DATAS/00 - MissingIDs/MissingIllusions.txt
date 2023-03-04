@@ -1,17 +1,5 @@
-9.0.1.34365
-ill(1898),	-- Lifestealing
-ill(5360),	-- Hide Weapon Enchant
-ill(5387),	-- Agility
-ill(5389),	-- Striking
-ill(5393),	-- Crusader
-ill(5861),	-- Beastslayer
-ill(5862),	-- Titanguard
 10.0.7.47910
 ill(6786),	-- Primal Storm
-
-
-
-
 .
 
 10.0.7.47910

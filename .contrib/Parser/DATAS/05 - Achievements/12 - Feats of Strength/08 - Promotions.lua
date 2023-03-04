@@ -51,7 +51,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		}),
 		un(REMOVED_FROM_GAME, ach(11425)),		-- Herald of Flames
 		ach(9926),				-- Hero of the Storm
-		un(REMOVED_FROM_GAME, ach(3636)),		-- Jade Tiger (China only)
 		ach(13196, bubbleDownSelf({			-- Meat Marauder
 			["u"] = REMOVED_FROM_GAME,}, {
 				i(164571),	-- Meat Wagon (MOUNT!)

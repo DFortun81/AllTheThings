@@ -90,9 +90,10 @@ i(0, 6096);					-- Dreadflame
 -----------------
 -- PATCH 8.2.5 --
 -----------------
---i(0, 6185);					-- Stinging Sands
---i(171363, 6158, 57569);		-- Stinging Sands
+i(171363, 6158, 57569);		-- Stinging Sands
 i(172177, 6162, 57596);		-- Wraithchill
+-- NYI --
+i(0, 6185);					-- Stinging Sands
 
 -----------------
 -- PATCH 8.3.0 --
