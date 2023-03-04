@@ -1398,15 +1398,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 								},
 							}),
 						}),
-						filter(RECIPES, bubbleDown({
-							["requireSkill"] = INSCRIPTION,
-							["cost"] = {
-								{ "i", 190450, 3 },	-- 3x Awakened Ire
-							},
+						filter(RECIPES, sharedData({
+							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
+							["timeline"] = { ADDED_DF_05 },
 						}, {
-							i(203378),	-- Technique: Crimson Combatant's Medallion
-							i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity
 							i(203380),	-- Technique: Crimson Combatant's Emblem
+							i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity
+							i(203378),	-- Technique: Crimson Combatant's Medallion
 						})),
 					},
 				}),

@@ -713,18 +713,6 @@ root(ROOTS.Unsorted, {
 				i(204820),	-- Lionguard Greathelm
 				i(204821),	-- Lionguard Greathelm
 				i(204822),	-- Lionguard Greathelm
-				i(189882),	-- Dread Admiral's Bicorne
-				i(189938),	-- Ensemble: Fel-Automaton Exoplate
-				i(190063),	-- Greatcloak of the Virtuous Protector
-				i(190092),	-- Triumphant Blademaster's Greatsword
-				i(190097),	-- Fabulously Flashy Finery
-				i(190155),	-- Trusty Treasure Trove
-				i(190166),	-- Ensemble: Vagabond's Midnight Threads
-				i(190377),	-- Ensemble: Wanderer's Midnight Trappings
-				i(190504),	-- Ensemble: Darkmoon Harlequin's Bells
-				i(190600),	-- Shadowy Blademaster's Greatsword
-				i(190876),	-- Filigreed Lion's Maw
-				i(200884),	-- Ensemble: Glorious Dragonrider's Mail
 				i(202203),	-- Sending Stone: Protest
 				i(202204),	-- Receiving Stone: Final Warning
 				i(202205),	-- Translated Journal of Adamanthia
@@ -1654,12 +1642,6 @@ root(ROOTS.Unsorted, {
 				i(201044),	-- Cirrus Flowers
 				i(201091),	-- Sharp Tooth
 				i(202037),	-- Expedition Shovel or Expedition Multi-Toolbox
-				i(203375),	-- Crimson Combatant's Medallion
-				i(203376),	-- Crimson Combatant's Insignia of Alacrity
-				i(203377),	-- Crimson Combatant's Emblem
-				i(203378),	-- Technique: Crimson Combatant's Medallion
-				i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity
-				i(203380),	-- Technique: Crimson Combatant's Emblem
 				i(203434),	-- Bottomless Bag of Blacksmithing Goods
 				i(203435),	-- Bottomless Bag of Alchemy Goods
 				i(203436),	-- Bottomless Bag of Enchanting Goods

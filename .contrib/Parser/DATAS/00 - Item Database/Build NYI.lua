@@ -1,5 +1,4 @@
 -- Build NYI
-
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(CLASSIC_TIER),
 	tier(TBC_TIER),
@@ -21,6 +20,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(PROFESSIONS),
 	n(QUESTS),
 	filter(RECIPES),
+	n(SETS),
 	filter(TITLES),
 	filter(TOYS),
 	n(WEAPONS),

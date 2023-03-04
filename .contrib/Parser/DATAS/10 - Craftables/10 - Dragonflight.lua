@@ -1593,6 +1593,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(194858),	-- Serene Ink+++
 		}),
 		filter(TRINKET_F, {
+			i(203377, {["timeline"]={ADDED_DF_0_5}}),	-- Crimson Combatant's Emblem
+			i(203376, {["timeline"]={ADDED_DF_0_5}}),	-- Crimson Combatant's Insignia of Alacrity
+			i(203375, {["timeline"]={ADDED_DF_0_5}}),	-- Crimson Combatant's Medallion
 			i(198478),	-- Darkmoon Deck Box: Dance
 			i(194872),	-- Darkmoon Deck Box: Inferno
 			i(198477),	-- Darkmoon Deck Box: Rime
