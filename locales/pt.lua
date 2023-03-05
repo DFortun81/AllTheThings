@@ -971,7 +971,7 @@ for key,value in pairs({
 	[1561] = "Caixote Selado",	-- Sealed Crate
 	[1585] = "Carga Explosiva",	-- Explosive Charge	--TODO: This was taken from wotlk Wowhead
 	[1586] = "Caixote de Velas",	-- Crate of Candles
-	[1593] = "Barco Cheio de Cadáveres",	-- Corpse Laden Boat	--TODO: This was taken from wotlk Wowhead
+	[1593] = "Barco Cheio de Cadáveres",	-- Corpse Laden Boat	--TODO: This was taken from classic Wowhead
 	[1599] = "Cova Rasa",	-- Shallow Grave	--TODO: This was taken from wotlk Wowhead
 	[1609] = "Catapulta da Presa do Dragão",	-- Dragonmaw Catapult
 	[1627] = "Caixote de Dalaran",	-- Dalaran Crate
@@ -1068,7 +1068,7 @@ for key,value in pairs({
 	[19030] = "Monturo de Terra",	-- Mound of Dirt
 	[19869] = "Destroços de Carro-foguete",	-- [Deprecated for 4.x]Rocket Car Rubble	--TODO: This was taken from wotlk Wowhead
 	[19877] = "Armário de Velinde",	-- Velinde's Locker
-	[19901] = "Círculo de Encarceramento",	-- Circle of Imprisonment	--TODO: This was taken from wotlk Wowhead
+	[19901] = "Círculo de Encarceramento",	-- Circle of Imprisonment	--TODO: This was taken from classic Wowhead
 	[20359] = "Ovo de Onyxia",	-- Egg of Onyxia
 	[20691] = "Maleta do Cosella",	-- Cozzle's Footlocker
 	[20725] = "O Legado dos Aspectos",	-- The Legacy of the Aspects
@@ -1136,7 +1136,7 @@ for key,value in pairs({
 	[148504] = "Lápide Evidente",	-- A Conspicuous Gravestone
 	[148513] = "Tabuleta de Jin'yael",	-- Tablet of Jin'yael	--TODO: This was taken from wotlk Wowhead
 	[148514] = "Tabuleta de Markri",	-- Tablet of Markri	--TODO: This was taken from wotlk Wowhead
-	[148515] = "Tabuleta de Sael'hai",	-- Tablet of Sael'hai	--TODO: This was taken from wotlk Wowhead
+	[148515] = "Tabuleta de Sael'hai",	-- Tablet of Sael'hai	--TODO: This was taken from classic Wowhead
 	[148516] = "Tabuleta de Beth'Amara",	-- Tablet of Beth'Amara	--TODO: This was taken from wotlk Wowhead
 	[149036] = "Baú do Marlon",	-- Marvon's Chest
 	[149502] = "Tesouro da Revoada Negra",	-- Hoard of the Black Dragonflight	--TODO: This was taken from wotlk Wowhead
@@ -1208,7 +1208,7 @@ for key,value in pairs({
 	[175165] = "Baú do Aurora de Prata",	-- Silver Dawning's Lockbox	--TODO: This was taken from wotlk Wowhead
 	[175166] = "Baú do Véu das Brumas",	-- Mist Veil's Lockbox	--TODO: This was taken from wotlk Wowhead
 	[175207] = "Criatura Marinha Encalhada",	-- Beached Sea Creature
-	[175226] = "Criatura Marinha Encalhada",	-- Beached Sea Creature	--TODO: This was taken from wotlk Wowhead
+	[175226] = "Criatura Marinha Encalhada",	-- Beached Sea Creature	--TODO: This was taken from classic Wowhead
 	[175227] = "Criatura Marinha Encalhada",	-- Beached Sea Creature
 	[175230] = "Criatura Marinha Encalhada",	-- Beached Sea Creature	--TODO: This was taken from wotlk Wowhead
 	[175233] = "Criatura Marinha Encalhada",	-- Beached Sea Creature	--TODO: This was taken from wotlk Wowhead
@@ -1326,7 +1326,7 @@ for key,value in pairs({
 	[179564] = "Homenagem a Gordok",	-- Gordok Tribute Chest
 	[179565] = "Relicário Empoeirado",	-- Dusty Reliquary
 	[179697] = "Baú do Tesouro da Arena",	-- Arena Treasure Chest
-	[179827] = "Procurados/Desaparecidos/Achados e Perdidos",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from wotlk Wowhead
+	[179827] = "Procurados/Desaparecidos/Achados e Perdidos",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	[179828] = "Travesseiro de Ferro Negro",	-- Dark Iron Pillow
 	[179832] = "Travesseiro Ornado da Alma Fada",	-- Pillaclencher's Ornate Pillow
 	[179913] = "Chamado às armas!",	-- Call to Arms!	--TODO: This was taken from wotlk Wowhead
