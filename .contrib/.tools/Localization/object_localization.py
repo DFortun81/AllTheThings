@@ -178,8 +178,9 @@ async def localize_objects(
         if line_ind in localized_dict:
             obj_id = todo_dict[line_ind]
             # have to get name from Wowhead cause it might be name from non retail in this line
+            # but still check all flavors in case retail is missing this object
             if obj_id not in original_obj_names:
-                original_obj_names[obj_id] = await get_localized_obj_name_flavor(
+                original_obj_names[obj_id], _ = await get_localized_obj_name(
                     session, obj_id
                 )
             original_obj_name = original_obj_names[obj_id]
