@@ -1331,178 +1331,183 @@ root(ROOTS.Unsorted, {
 				pet(3254),	-- Watcher of the Huntress (PET!)
 			}),
 			filter(COSMETIC, {
-				-- Corrupted Runelord Set
-				i(189875),	-- Corrupted Runelord's Sash
-				i(189876),	-- Corrupted Runelord's Handguards
-				i(189879),	-- Corrupted Runelord's Leggings
-				i(189880),	-- Corrupted Runelord's Mantle
-				i(190206),	-- Corrupted Runelord's Glyphbands
-				i(190207),	-- Corrupted Runelord's Slippers
-				i(190210),	-- Corrupted Runelord's Cowl
-				i(190211),	-- Corrupted Runelord's Robe
+				n(ARMOR, {
+					-- Cloth
+					i(190075),	-- Mantle of the Scholarly Raven
 
-				-- Helarjar Berseker Set
-				i(190134),	-- Helarjar Berserker Warboots
-				i(190135),	-- Helarjar Berserker Gauntlets
-				i(190138),	-- Helarjar Berserker Horns
-				i(190139),	-- Helarjar Berserker Greaves
-				i(190550),	-- Helarjar Berserker Girdle
-				i(190551),	-- Helarjar Berserker Bracers
-				i(190553),	-- Helarjar Berserker Cuirass
-				i(190554),	-- Helarjar Berserker Pauldrons
+					-- Mail
+					i(190152),	-- Solemn Watchman's Gauntlets
 
-				-- Highborne Scholar Set
-				i(190435),	-- Highborne Scholar's Belt
-				i(190437),	-- Highborne Scholar's Collar
-				i(190555),	-- Highborne Scholar's Robe
-				i(190787),	-- Highborne Scholar's Cuffs
-				i(190809),	-- Highborne Scholar's Slippers
-				i(190815),	-- Highborne Scholar's Leggings
-				i(190868),	-- Highborne Scholar's Scrollmantle
-				i(190070),	-- Highborne Scholar's Gloves
+					-- Cosmetic
+					i(190076),	-- Granny's Old Hat
+					i(190144),	-- Irontide Raider's Bicorne
+					i(190428),	-- Regal Warcloak
 
-				-- Kvaldir Scout Set
-				i(190136),	-- Kvaldir Scout Treads
-				i(190137),	-- Kvaldir Scout Grips
-				i(190140),	-- Kvaldir Scout Trousers
-				i(190141),	-- Kvaldir Scout Chestguard
-				i(190548),	-- Kvaldir Scout Belt
-				i(190549),	-- Kvaldir Scout Wristguard
-				i(190552),	-- Kvaldir Scout Shoulderpads
-				i(190574),	-- Kvaldir Scout Hood
+					-- Random
+					i(190718),	-- Drape of the Honored Valarjar [Probably Belongs to Leather Set since its the only one missing a piece /Braghe]
+				}),
+				n(SETS, {
+					-- Corrupted Runelord Set
+					i(189875),	-- Corrupted Runelord's Sash
+					i(189876),	-- Corrupted Runelord's Handguards
+					i(189879),	-- Corrupted Runelord's Leggings
+					i(189880),	-- Corrupted Runelord's Mantle
+					i(190206),	-- Corrupted Runelord's Glyphbands
+					i(190207),	-- Corrupted Runelord's Slippers
+					i(190210),	-- Corrupted Runelord's Cowl
+					i(190211),	-- Corrupted Runelord's Robe
 
-				-- Sylvan Stalker Set
-				i(189873),	-- Sylvan Stalker's Boots
-				i(190073),	-- Sylvan Stalker's Hood
-				i(190142),	-- Sylvan Stalker's Legguards
-				i(190436),	-- Sylvan Stalker's Baldric
-				i(190788),	-- Sylvan Stalker's Wristguards
-				i(190810),	-- Sylvan Stalker's Handguards
-				i(190811),	-- Sylvan Stalker's Vest
-				i(190894),	-- Sylvan Stalker's Mantle
+					-- Helarjar Berseker Set
+					i(190134),	-- Helarjar Berserker Warboots
+					i(190135),	-- Helarjar Berserker Gauntlets
+					i(190138),	-- Helarjar Berserker Horns
+					i(190139),	-- Helarjar Berserker Greaves
+					i(190550),	-- Helarjar Berserker Girdle
+					i(190551),	-- Helarjar Berserker Bracers
+					i(190553),	-- Helarjar Berserker Cuirass
+					i(190554),	-- Helarjar Berserker Pauldrons
 
-				-- Tidecaller Set
-				i(190432),	-- Tidecaller's Bracers
-				i(190440),	-- Tidecaller's Crown
-				i(190067),	-- Tidecaller's Grips
-				i(190072),	-- Tidecaller's Hauberk
-				i(190556),	-- Tidecaller's Legguards
-				i(190700),	-- Tidecaller's Boots
-				i(190709),	-- Tidecaller's Pauldrons
-				i(190806),	-- Tidecaller's Cinch
+					-- Highborne Scholar Set
+					i(190435),	-- Highborne Scholar's Belt
+					i(190437),	-- Highborne Scholar's Collar
+					i(190555),	-- Highborne Scholar's Robe
+					i(190787),	-- Highborne Scholar's Cuffs
+					i(190809),	-- Highborne Scholar's Slippers
+					i(190815),	-- Highborne Scholar's Leggings
+					i(190868),	-- Highborne Scholar's Scrollmantle
+					i(190070),	-- Highborne Scholar's Gloves
 
-				-- Val'Sharah Protector Set
-				i(190547),	-- Val'Sharah Protector's Bracers
-				i(190676),	-- Val'Sharah Protector's Gauntlets
-				i(190213),	-- Val'sharah Protector's Cuirass
-				i(189881),	-- Val'sharah Protector's Greaves
-				i(190069),	-- Val'sharah Protector's Sabatons
-				i(190074),	-- Val'sharah Protector's Spaulders
-				i(190897),	-- Val'Sharah Protector's Crown
-				i(190861),	-- Val'Sharah Protector's Girdle
+					-- Kvaldir Scout Set
+					i(190136),	-- Kvaldir Scout Treads
+					i(190137),	-- Kvaldir Scout Grips
+					i(190140),	-- Kvaldir Scout Trousers
+					i(190141),	-- Kvaldir Scout Chestguard
+					i(190548),	-- Kvaldir Scout Belt
+					i(190549),	-- Kvaldir Scout Wristguard
+					i(190552),	-- Kvaldir Scout Shoulderpads
+					i(190574),	-- Kvaldir Scout Hood
 
-				-- Void-Bound Set [Cloth]
-				i(190679),	-- Void-Bound Cord
-				i(190680),	-- Void-Bound Gloves
-				i(190683),	-- Void-Bound Mantle
-				i(190684),	-- Void-Bound Trousers
-				i(190834),	-- Void-Bound Cuffs
-				i(190835),	-- Void-Bound Slippers
-				i(190838),	-- Void-Bound Robe
-				i(190839),	-- Void-Bound Crown
+					-- Sylvan Stalker Set
+					i(189873),	-- Sylvan Stalker's Boots
+					i(190073),	-- Sylvan Stalker's Hood
+					i(190142),	-- Sylvan Stalker's Legguards
+					i(190436),	-- Sylvan Stalker's Baldric
+					i(190788),	-- Sylvan Stalker's Wristguards
+					i(190810),	-- Sylvan Stalker's Handguards
+					i(190811),	-- Sylvan Stalker's Vest
+					i(190894),	-- Sylvan Stalker's Mantle
 
-				-- Void-Bound Set [Leather]
-				i(190703),	-- Void-Bound Striders
-				i(190704),	-- Void-Bound Handguards
-				i(190707),	-- Void-Bound Vest
-				i(190708),	-- Void-Bound Shoulderguards
-				i(190862),	-- Void-Bound Bracers
-				i(190863),	-- Void-Bound Belt
-				i(190879),	-- Void-Bound Mask
-				i(200919),	-- Void-Bound Leggings
+					-- Tidecaller Set
+					i(190432),	-- Tidecaller's Bracers
+					i(190440),	-- Tidecaller's Crown
+					i(190067),	-- Tidecaller's Grips
+					i(190072),	-- Tidecaller's Hauberk
+					i(190556),	-- Tidecaller's Legguards
+					i(190700),	-- Tidecaller's Boots
+					i(190709),	-- Tidecaller's Pauldrons
+					i(190806),	-- Tidecaller's Cinch
 
-				-- Void-Bound Set [Mail]
-				i(190677),	-- Void-Bound Boots
-				i(190678),	-- Void-Bound Chain
-				i(190681),	-- Void-Bound Tassets
-				i(190682),	-- Void-Bound Circlet
-				i(190836),	-- Void-Bound Wristguards
-				i(190837),	-- Void-Bound Grips
-				i(190840),	-- Void-Bound Hauberk
-				i(190841),	-- Void-Bound Spaulders
+					-- Val'Sharah Protector Set
+					i(190547),	-- Val'Sharah Protector's Bracers
+					i(190676),	-- Val'Sharah Protector's Gauntlets
+					i(190213),	-- Val'sharah Protector's Cuirass
+					i(189881),	-- Val'sharah Protector's Greaves
+					i(190069),	-- Val'sharah Protector's Sabatons
+					i(190074),	-- Val'sharah Protector's Spaulders
+					i(190897),	-- Val'Sharah Protector's Crown
+					i(190861),	-- Val'Sharah Protector's Girdle
 
-				-- Void-Bound Set [Plate]
-				i(190701),	-- Void-Bound Girdle
-				i(190702),	-- Void-Bound Vambraces
-				i(190705),	-- Void-Bound Greaves
-				i(190706),	-- Void-Bound Greathelm
-				i(190864),	-- Void-Bound Sabatons
-				i(190865),	-- Void-Bound Gauntlets
-				i(190866),	-- Void-Bound Breastplate
-				i(190867),	-- Void-Bound Pauldrons
+					-- Void-Bound Set [Cloth]
+					i(190679),	-- Void-Bound Cord
+					i(190680),	-- Void-Bound Gloves
+					i(190683),	-- Void-Bound Mantle
+					i(190684),	-- Void-Bound Trousers
+					i(190834),	-- Void-Bound Cuffs
+					i(190835),	-- Void-Bound Slippers
+					i(190838),	-- Void-Bound Robe
+					i(190839),	-- Void-Bound Crown
 
-				-- Void-Bound Set -- I dont know which cloak belongs to which set. // Braghe
-				i(200920),	-- Void-Bound Cloak
-				i(200921),	-- Void-Bound Greatcloak
-				i(200922),	-- Void-Bound Shroud
-				i(200923),	-- Void-Bound Drape
+					-- Void-Bound Set [Leather]
+					i(190703),	-- Void-Bound Striders
+					i(190704),	-- Void-Bound Handguards
+					i(190707),	-- Void-Bound Vest
+					i(190708),	-- Void-Bound Shoulderguards
+					i(190862),	-- Void-Bound Bracers
+					i(190863),	-- Void-Bound Belt
+					i(190879),	-- Void-Bound Mask
+					i(200919),	-- Void-Bound Leggings
 
-				-- One-Hand Wep
-				i(190675),	-- Arborcidal Peon's Chopper
-				i(190078),	-- Blade of Brutal Sacrifice
-				i(190446),	-- Blazing Forgehammer
-				i(190430),	-- Chipped Gladius
-				i(190689),	-- Corrupted Bladefist
-				i(190445),	-- Envenomed Gutripper
-				i(190698),	-- Gently-Used Cleaver
-				i(190699),	-- Gorian Mining Pick
-				i(190218),	-- Jeweled Ripper
-				i(190132),	-- Krokul Battlescythe
-				i(190685),	-- Lost Crusader's Azure Battleaxe
-				i(190148),	-- Ravencrest's Razor
-				i(189872),	-- Shattered Krokul Edge
-				i(190079),	-- Smoldering Forgeblade
-				i(189884),	-- Vengeful Nemesis Warblades
-				i(190219),	-- Virulent Gavel
-				i(190203),	-- Woodsman's Timber Mallet
+					-- Void-Bound Set [Mail]
+					i(190677),	-- Void-Bound Boots
+					i(190678),	-- Void-Bound Chain
+					i(190681),	-- Void-Bound Tassets
+					i(190682),	-- Void-Bound Circlet
+					i(190836),	-- Void-Bound Wristguards
+					i(190837),	-- Void-Bound Grips
+					i(190840),	-- Void-Bound Hauberk
+					i(190841),	-- Void-Bound Spaulders
 
-				-- Two-Hand Wep
-				i(190146),	-- Antoran Felspire
-				i(190131),	-- Brick-on-a-Stick
-				i(190080),	-- Catastrophe's Edge
-				i(190714),	-- Gorian Pulverizer
-				i(190713),	-- Imperator's Command
-				i(189886),	-- Might of the Titanforged
-				i(190687),	-- Painted Warblade
-				i(190066),	-- Primeval Maul
+					-- Void-Bound Set [Plate]
+					i(190701),	-- Void-Bound Girdle
+					i(190702),	-- Void-Bound Vambraces
+					i(190705),	-- Void-Bound Greaves
+					i(190706),	-- Void-Bound Greathelm
+					i(190864),	-- Void-Bound Sabatons
+					i(190865),	-- Void-Bound Gauntlets
+					i(190866),	-- Void-Bound Breastplate
+					i(190867),	-- Void-Bound Pauldrons
 
-				-- Off-Hand
-				i(190710),	-- Caged Eye of the Watcher
-				i(190442),	-- Illidari Bladeward
-				i(189883),	-- Lordaeron Sentry's Bulwark
-				i(190691),	-- Twisted Guardian's Profane Barrier
+					-- Void-Bound Set -- I dont know which cloak belongs to which set. // Braghe
+					i(200920),	-- Void-Bound Cloak
+					i(200921),	-- Void-Bound Greatcloak
+					i(200922),	-- Void-Bound Shroud
+					i(200923),	-- Void-Bound Drape
 
-				-- Ranged
-				i(190715),	-- Anodized Sniper Rifle
-				i(190711),	-- Arcanist's Barbed Baton
-				i(190147),	-- Longbow of the Twisted Grove
+					i(190772),	-- Ensemble: Vestments of the Nightmare Forest
+					i(190165),	-- Ensemble: Twisted Arcanum Regalia
+					i(190575),	-- Ensemble: Chains of the Honored Valarjar
+				}),
+				n(WEAPONS, {
+					-- One-Hand Wep
+					i(190675),	-- Arborcidal Peon's Chopper
+					i(190078),	-- Blade of Brutal Sacrifice
+					i(190446),	-- Blazing Forgehammer
+					i(190430),	-- Chipped Gladius
+					i(190689),	-- Corrupted Bladefist
+					i(190445),	-- Envenomed Gutripper
+					i(190698),	-- Gently-Used Cleaver
+					i(190699),	-- Gorian Mining Pick
+					i(190218),	-- Jeweled Ripper
+					i(190132),	-- Krokul Battlescythe
+					i(190685),	-- Lost Crusader's Azure Battleaxe
+					i(190148),	-- Ravencrest's Razor
+					i(189872),	-- Shattered Krokul Edge
+					i(190079),	-- Smoldering Forgeblade
+					i(189884),	-- Vengeful Nemesis Warblades
+					i(190219),	-- Virulent Gavel
+					i(190203),	-- Woodsman's Timber Mallet
 
-				-- Cloth
-				i(190075),	-- Mantle of the Scholarly Raven
+					-- Two-Hand Wep
+					i(190146),	-- Antoran Felspire
+					i(190131),	-- Brick-on-a-Stick
+					i(190080),	-- Catastrophe's Edge
+					i(190714),	-- Gorian Pulverizer
+					i(190713),	-- Imperator's Command
+					i(189886),	-- Might of the Titanforged
+					i(190687),	-- Painted Warblade
+					i(190066),	-- Primeval Maul
 
-				-- Mail
-				i(190152),	-- Solemn Watchman's Gauntlets
+					-- Off-Hand
+					i(190710),	-- Caged Eye of the Watcher
+					i(190442),	-- Illidari Bladeward
+					i(189883),	-- Lordaeron Sentry's Bulwark
+					i(190691),	-- Twisted Guardian's Profane Barrier
 
-				-- Cosmetic
-				i(190076),	-- Granny's Old Hat
-				i(190144),	-- Irontide Raider's Bicorne
-				i(190428),	-- Regal Warcloak
-
-				--
-				i(190718),	-- Drape of the Honored Valarjar
-				i(190772),	-- Ensemble: Vestments of the Nightmare Forest
-				i(190165),	-- Ensemble: Twisted Arcanum Regalia
-				i(190575),	-- Ensemble: Chains of the Honored Valarjar
+					-- Ranged
+					i(190715),	-- Anodized Sniper Rifle
+					i(190711),	-- Arcanist's Barbed Baton
+					i(190147),	-- Longbow of the Twisted Grove
+				}),
 			}),
 			filter(MISC, {
 				i(201990),	-- Primal Mote
@@ -1531,6 +1536,18 @@ root(ROOTS.Unsorted, {
 				i(203382),	-- Peripheral Vision Projectors
 				i(203471),	-- Tasty Candy
 			}),
+			filter(QUEST_ITEMS, {
+				i(137295),	-- Bottle of Arcwine
+				i(191143),	-- Mudfin Totem
+				i(191539),	-- Sarnai's Collar
+				i(191540),	-- Batu's Collar
+				i(191541),	-- Shikaar Supplies
+				i(193257),	-- Clump of Sacred Soil
+				i(203598),	-- Makko's Journal Cover
+			}),
+			filter(TOYS, {
+				i(202309),	-- Defective Doomsday Device (TOY!)
+			}),
 			n(QUESTS, {
 				-- 10.0.5.47799
 				q(66925),	-- [DNT] Boar-B-Q
@@ -1551,18 +1568,6 @@ root(ROOTS.Unsorted, {
 				q(71213),	--
 				q(74897),	--
 				q(74898),	--
-			}),
-			filter(QUEST_ITEMS, {
-				i(137295),	-- Bottle of Arcwine
-				i(191143),	-- Mudfin Totem
-				i(191539),	-- Sarnai's Collar
-				i(191540),	-- Batu's Collar
-				i(191541),	-- Shikaar Supplies
-				i(193257),	-- Clump of Sacred Soil
-				i(203598),	-- Makko's Journal Cover
-			}),
-			filter(TOYS, {
-				i(202309),	-- Defective Doomsday Device (TOY!)
 			}),
 		})),
 		tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 10.0.2" } }, {
@@ -1810,8 +1815,8 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {	-- Leave it DF_TIER, 0.01
-			n(REWARDS, {
-				n(ARMOR, {
+			n(ARMOR, {
+				n(SETS, {
 					-- Evoker Set --
 					i(187651),	-- Evoker Tunic
 					i(187652),	-- Evoker Boots
@@ -1822,7 +1827,8 @@ root(ROOTS.Unsorted, {
 					i(187657),	-- Evoker Belt
 					i(187658),	-- Evoker Armbands
 					i(187650),	-- Staff of Draconic Energies
-						-- Evoker Set --
+
+					-- Evoker Set -- // Might be Party Sync /Braghe
 					i(194522),	-- Blue Winglord's Staff
 					i(194523),	-- Blue Winglord's Chain
 					i(194524),	-- Blue Winglord's Boots
@@ -1838,11 +1844,13 @@ root(ROOTS.Unsorted, {
 					i(194534),	-- Blue Winglord's Loop
 					i(194535),	-- Cobalt Winglord's Cloak
 					i(194536),	-- Blue Winglord's Amulet
-						-- Evoker Set --
+
+					-- Evoker Set --
 					i(188818),	-- Emerald Winglord's Shoulderss
 					i(188825),	-- Emerald Winglord's Chain
 					i(188826),	-- Emerald Winglord's Staff
-						-- Evoker Sets --
+
+					-- Evoker Sets -- // Might be from Ensemble by Wrathion /Braghe
 					i(191797),	-- Obsidian Dracthyr Battlegear Hauberk
 					i(191798),	-- Obsidian Dracthyr Battlegear Grips
 					i(191799),	-- Obsidian Dracthyr Battlegear Helm
@@ -1867,611 +1875,145 @@ root(ROOTS.Unsorted, {
 					i(191826),	-- Obsidian Dracthyr Battlegear Belt
 					i(191827),	-- Obsidian Dracthyr Battlegear Bracers
 					i(191828),	-- Obsidian Dracthyr Battlegear Cover
-					i(191942),	-- Belloc's Hat [Added SpellIDs regarding this.. Belloc also lost his hat... In Waking Shores]
-					i(194398),	-- Crumbling Watcher's Stone (NYI)
-					filter(COSMETIC, {
-						i(193069),	-- Climber's Pack
-						i(191647),	-- Tuskarr Fishing Pole
-						i(194314),	-- Light of the Enlightened
-						i(194316),	-- Tome of Forgotten Legends
-						i(194318),	-- Book of Ancient Lore
-						i(194329),	-- Elaborate Reliquary Candelabra
-						i(194331),	-- Pristine Research Journal
-						-- Honored Valarjar Set
-						i(190081),	-- Mantle of the Honored Valarjar
-						i(190082),	-- Cloak of the Honored Valarjar
-						i(190083),	-- Robe of the Honored Valarjar
-						i(190084),	-- Bracers of the Honored Valarjar
-						i(190085),	-- Sash of the Honored Valarjar
-						i(190086),	-- Sandals of the Honored Valarjar
-						i(190087),	-- Pantaloons of the Honored Valarjar
-						i(190088),	-- Circlet of the Honored Valarjar
-						i(190089),	-- Gloves of the Honored Valarjar
-						-- Twisted Arcanum Set
-						i(190156),	-- Twisted Arcanum Sash
-						i(190157),	-- Twisted Arcanum Slippers
-						i(190158),	-- Twisted Arcanum Grips
-						i(190159),	-- Twisted Arcanum Cowl
-						i(190160),	-- Twisted Arcanum Trousers
-						i(190161),	-- Twisted Arcanum Mantle
-						i(190162),	-- Twisted Arcanum Bindings
-						i(190163),	-- Twisted Arcanum Robe
-						i(190193),	-- Twisted Arcanum Tunic
-						-- Nightmare Forest Set
-						i(190221),	-- Nightmare Forest Waistwrap
-						i(190222),	-- Nightmare Forest Sandals
-						i(190223),	-- Nightmare Forest Jerkin
-						i(190224),	-- Nightmare Forest Grips
-						i(190225),	-- Nightmare Forest Mask
-						i(190226),	-- Nightmare Forest Leggings
-						i(190227),	-- Nightmare Forest Raiment
-						i(190228),	-- Nightmare Forest Mantle
-						i(190229),	-- Nightmare Forest Bindings
-						-- Honored Valarjar Set
-						i(190563),	-- Armbands of the Honored Valarjar
-						i(190564),	-- Cape of the Honored Valarjar
-						i(190565),	-- Girdle of the Honored Valarjar
-						i(190566),	-- Gauntlets of the Honored Valarjar
-						i(190567),	-- Cuirass of the Honored Valarjar
-						i(190568),	-- Coif of the Honored Valarjar
-						i(190569),	-- Sabatons of the Honored Valarjar
-						i(190570),	-- Legguards of the Honored Valarjar
-						i(190571),	-- Pauldrons of the Honored Valarjar
-						-- Honored Valarjar Set
-						i(190716),	-- Shoulderpads of the Honored Valarjar
-						i(190717),	-- Wristguards of the Honored Valarjar
-						i(190719),	-- Hood of the Honored Valarjar
-						i(190720),	-- Leggings of the Honored Valarjar
-						i(190721),	-- Strap of the Honored Valarjar
-						i(190722),	-- Boots of the Honored Valarjar
-						i(190723),	-- Grips of the Honored Valarjar
-						i(190724),	-- Tunic of the Honored Valarjar
-						-- Slumbering Caldera Set
-						i(190774),	-- Slumbering Caldera Robe
-						i(190775),	-- Slumbering Caldera Gauntlets
-						i(190776),	-- Slumbering Caldera Girdle
-						i(190777),	-- Slumbering Caldera Pauldrons
-						i(190778),	-- Slumbering Caldera Legguards
-						i(190779),	-- Slumbering Caldera Sabatons
-						i(190780),	-- Slumbering Caldera Crown
-						i(190781),	-- Slumbering Caldera Bracers
-						i(190782),	-- Slumbering Caldera Hauberk
-						-- Buccaneer Sets
-						i(190904),	-- Dashing Buccaneer's Tunic
-						i(190905),	-- Dashing Buccaneer's Sash
-						i(190906),	-- Dashing Buccaneer's Breeches
-						i(190907),	-- Dashing Buccaneer's Boots
-						-- Bloodhunter Set
-						i(190789),	-- Bloodhunter Visage
-						i(190790),	-- Bloodhunter Handguards
-						i(190791),	-- Bloodhunter Subligar
-						i(190792),	-- Bloodhunter Loincloth
-						i(190793),	-- Bloodhunter Footwraps
-						i(190794),	-- Bloodhunter Warcloak
-						i(190795),	-- Bloodhunter Hornmantle
-						i(190798),	-- Bloodhunter Harness
-						-- Honored Valarjar Set
-						i(190911),	-- Greatcloak of the Honored Valarjar
-						i(190912),	-- Warboots of the Honored Valarjar
-						i(190913),	-- Vambraces of the Honored Valarjar
-						i(190914),	-- Greatbelt of the Honored Valarjar
-						i(190915),	-- Gardbrace of the Honored Valarjar
-						i(190916),	-- Greaves of the Honored Valarjar
-						i(190917),	-- Helm of the Honored Valarjar
-						i(190918),	-- Handguards of the Honored Valarjar
-						i(190919),	-- Breastplate of the Honored Valarjar
-						-- Non Set Cosmetics
-						i(190093),	-- Elune's Fury
-						i(190094),	-- Elune's Wrath
-						i(190674),	-- Leaky Bucket
-						i(190909),	-- Ruby Felfire Splitblade
-						i(190910),	-- Ruby Felfire Bulwark
-					}),
-					-- This is usually from a quest at Renown Level Max-1.... Hopefully someone add them soon
-					-- I Dont Think These has been added yet...
-					i(199665),	-- Spiked Obsidian Spaulders
-					i(199666),	-- Spiked Azure Spaulders
-					i(199667),	-- Spiked Bronze Spaulders
-					i(199668),	-- Spiked Emerald Spaulders
-					-- These are probably from rares... We just still missing Information
-					i(200230),	-- Terrorclaw Shoulderplates
-					i(200280),	-- Decaying Ghostly Band
-					i(200679),	-- Essence of Somnikus's Shade
-					i(197933),	-- Lutokk's Wedding Ring
-					-- Old Cloaks with New IDs... Probably made for the cloak toy.
-					i(200708),	-- Polymorphic Cloak of Absorption
-					i(200710),	-- Ashjra'kamas
 
-
-					i(200737),	-- Pauldrons of Infinite Darkness
+					--
 					i(200968),	-- Sandshaped Winglord's Drape
-
-					-- Green Dragon Set?
-					-- Dreamfire
-					i(201059),	-- Dreamfire Battleplate
-					i(201077),	-- Dreamfire Buckle
-					i(201063),	-- Dreamfire Gauntlets
-					i(201085),	-- Dreamfire Helm
-					i(201069),	-- Dreamfire Legplates
-					i(201074),	-- Dreamfire Pauldrons
-					i(201057),	-- Dreamfire Sabatons
-					i(201082),	-- Dreamfire Wristguards
-					-- Verdant Wing
-					i(201078),	-- Cord of the Verdant Wing
-					i(201064),	-- Gloves of the Verdant Wing
-					i(201066),	-- Hood of the Verdant Wing
-					i(201070),	-- Leggings of the Verdant Wing
-					i(201075),	-- Mantle of the Verdant Wing
-					i(201058),	-- Robes of the Verdant Wing
-					i(201086),	-- Slippers of the Verdant Wing
-					i(201081),	-- Wraps of the Verdant Wing
-					-- Emerald Scale
-					i(201083),	-- Emerald Scale Armguards
-					i(201060),	-- Emerald Scale Chainmail
-					i(201067),	-- Emerald Scale Coif
-					i(201065),	-- Emerald Scale Grips
-					i(201071),	-- Emerald Scale Legguards
-					i(201079),	-- Emerald Scale Loop
-					i(201076),	-- Emerald Scale Spaulders
-					i(201087),	-- Emerald Scale Treads
-					-- Green Draketracker
-					i(201080),	-- Green Draketracker's Belt
-					i(201088),	-- Green Draketracker's Boots
-					i(201084),	-- Green Draketracker's Bracers
-					i(201072),	-- Green Draketracker's Britches
-					i(201068),	-- Green Draketracker's Cowl
-					i(201061),	-- Green Draketracker's Vest
-					i(201062),	-- Green Draketracker's Mitts
-					i(201073),	-- Green Draketracker's Shoulderpads
-
-					-- NYI?
-					i(202116),	-- Alacritous Alchemist Stone
 				}),
-				n(PROFESSIONS, {
-					prof(ALCHEMY, {
-						r(371635),	-- Demonstration Item Recipe
-						r(370771),	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)
-						r(382571),	-- Opening
-						i(191598),	-- Recipe: Alchemical Flavor Pocket (RECIPE!)
-						i(191453),	-- Recipe: Frostfire Potion of Draconic Vigor (RECIPE!)
-						i(191457),	-- Recipe: Potion of Burning Purification (RECIPE!)
-						i(191595),	-- Recipe: Wisp of Tyr (RECIPE!)
-						-- Without SpellID attached
-						i(194543),	-- Design: Dragon Isles Jewelcrafting Recipe Template (DNT) (RECIPE!)
-						i(191428),	-- Recipe: Dragon Isles Alchemy Recipe Template (DNT) (RECIPE!)
-						i(194959),	-- Recipe: Dragon Isles Cooking Recipe Template (DNT) (RECIPE!)
-						i(191602),	-- Recipe: Advanced Phial Experimentation (RECIPE!)
-						i(191600),	-- Recipe: Advanced Potion Experimentation (RECIPE!)
-						i(191451),	-- Recipe: Aerated Mana Potion (RECIPE!)
-						i(191437),	-- Recipe: Aerated Phial of Deftness (RECIPE!)
-						i(191601),	-- Recipe: Basic Phial Experimentation (RECIPE!)
-						i(191599),	-- Recipe: Basic Potion Experimentation (RECIPE!)
-						i(191443),	-- Recipe: Bottled Putrescence (RECIPE!)
-						i(191591),	-- Recipe: Brood Salt (RECIPE!)
-						i(191439),	-- Recipe: Charged Phial of Alacrity (RECIPE!)
-						i(191441),	-- Recipe: Crystaline Phial of Perception (RECIPE!)
-						i(191448),	-- Recipe: Delicate Suspension of Spores (RECIPE!)
-						i(191452),	-- Recipe: Elemental Potion of Power (RECIPE!)
-						i(191450),	-- Recipe: Elemental Potion of Ultimate Power (RECIPE!)
-						i(191596),	-- Recipe: Illustrious Insight (RECIPE!)
-						i(191432),	-- Recipe: Iced Phial of Corrupting Rage (RECIPE!)
-						i(191585),	-- Recipe: Omnium Draconis (RECIPE!)
-						i(191433),	-- Recipe: Phial of Charged Isolation (RECIPE!)
-						i(191442),	-- Recipe: Phial of Elemental Chaos (RECIPE!)
-						i(191434),	-- Recipe: Phial of Glacial Fury (RECIPE!)
-						i(191431),	-- Recipe: Phial of Icy Preservation (RECIPE!)
-						i(191435),	-- Recipe: Phial of Static Empowerment (RECIPE!)
-						i(191430),	-- Recipe: Phial of Still Air (RECIPE!)
-						i(191436),	-- Recipe: Phial of Tepid Versatility (RECIPE!)
-						i(191429),	-- Recipe: Phial of the Eye in the Storm (RECIPE!)
-						i(191542),	-- Recipe: Potion Cauldron of Power (RECIPE!)
-						i(191543),	-- Recipe: Potion Cauldron of Ultimate Power (RECIPE!)
-						i(191445),	-- Recipe: Potion of Chilled Clarity (RECIPE!)
-						i(191440),	-- Recipe: Potion of Frozen Fatality (RECIPE!)
-						i(191444),	-- Recipe: Potion of Frozen Focus (RECIPE!)
-						i(191455),	-- Recipe: Potion of Gusts (RECIPE!)
-						i(191456),	-- Recipe: Potion of Shocking Disclosure (RECIPE!)
-						i(191454),	-- Recipe: Potion of the Hushed Zephyr (RECIPE!)
-						i(191446),	-- Recipe: Potion of Withering Vitality (RECIPE!)
-						i(191584),	-- Recipe: Primal Convergent (RECIPE!)
-						i(191449),	-- Recipe: Refreshing Healing Potion (RECIPE!)
-						i(191447),	-- Recipe: Residual Neural Channeling Agent (RECIPE!)
-						i(191438),	-- Recipe: Steaming Phial of Finesse (RECIPE!)
-						i(191581),	-- Recipe: Transmute: Awakened Air (RECIPE!)
-						i(191582),	-- Recipe: Transmute: Decay to Elements (RECIPE!)
-						i(191583),	-- Recipe: Transmute: Order to Elements (RECIPE!)
-						i(191592),	-- Recipe: Writhefire Oil (RECIPE!)
-						-- Items
-						i(191535),	-- Alchemical Flavor Pocket+
-						i(191536),	-- Alchemical Flavor Pocket++
-						i(191537),	-- Alchemical Flavor Pocket+++
-						i(191402),	-- Potion of Burning Purification+
-						i(191403),	-- Potion of Burning Purification++
-						i(191404),	-- Potion of Burning Purification+++
-						i(191390),	-- Breezy Potion of Draconic Vigor+
-						i(191391),	-- Breezy Potion of Draconic Vigor++
-						i(191392),	-- Breezy Potion of Draconic Vigor+++
-					}),
-					prof(BLACKSMITHING, {
-						r(371396),	-- Draconium Repair Hammer
-						r(382579),	-- Opening
-						r(376698),	-- Wisp of Tyr
-						i(194487),	-- Plans: Pauldrons of the Dragon (RECIPE!)
-						i(194488),	-- Plans: Traitorous Primal Gauntlets of the Dragon (RECIPE!)
-						-- Without SpellID attached
-						i(194501),	-- Plans: Khaz'gorite Blacksmith's Hammer (RECIPE!)
-						i(194502),	-- Plans: Khaz'gorite Blacksmith's Toolbox (RECIPE!)
-						i(194496),	-- Plans: Khaz'gorite Pickaxe (RECIPE!)
-						i(194462),	-- Plans: Primal Molten Breastplate (RECIPE!)
-						i(194469),	-- Plans: Primal Molten Defender (RECIPE!)
-						i(194465),	-- Plans: Primal Molten Gauntlets (RECIPE!)
-						i(194475),	-- Plans: Primal Molten Greataxe (RECIPE!)
-						i(194468),	-- Plans: Primal Molten Greatbelt (RECIPE!)
-						i(194461),	-- Plans: Primal Molten Helm (RECIPE!)
-						i(194463),	-- Plans: Primal Molten Legplates (RECIPE!)
-						i(194472),	-- Plans: Primal Molten Longsword (RECIPE!)
-						i(194474),	-- Plans: Primal Molten Mace (RECIPE!)
-						i(194464),	-- Plans: Primal Molten Pauldrons (RECIPE!)
-						i(194466),	-- Plans: Primal Molten Sabatons (RECIPE!)
-						i(194470),	-- Plans: Primal Molten Shortblade (RECIPE!)
-						i(194471),	-- Plans: Primal Molten Spellblade (RECIPE!)
-						i(194467),	-- Plans: Primal Molten Vambraces (RECIPE!)
-						i(194473),	-- Plans: Primal Molten Warglaive (RECIPE!)
-						i(194505),	-- Plans: Primal Weightstone (RECIPE!)
-						i(194504),	-- Plans: Primal Whetstone (RECIPE!)
-						i(194494),	-- Plans: Reinforced Plating (RECIPE!)
-						-- Items
-						i(191261),	-- Draconium Repair Hammer
-						i(191884),	-- Draconium Repair Hammer
-						i(191885),	-- Draconium Repair Hammer
-						i(190520),	-- zzOldPauldrons of the Dragon
-						i(190521),	-- zzOldTraitorous Primal Gauntlets of the Dragon
-					}),
-					prof(COOKING, {
-						-- Without SpellID attached
-						i(198118),	-- Recipe: Aromatic Seafood Platter (RECIPE!)
-						i(198100),	-- Recipe: Assorted Exotic Spices (RECIPE!)
-						i(198123),	-- Recipe: Braised Bruffalon Brisket (RECIPE!)
-						i(198097),	-- Recipe: Breakfast of Draconic Champions (RECIPE!)
-						i(198093),	-- Recipe: Cheese and Quackers (RECIPE!)
-						i(198108),	-- Recipe: Delicious Dragon Spittle (RECIPE!)
-						i(198117),	-- Recipe: Feisty Fish Sticks (RECIPE!)
-						i(198122),	-- Recipe: Great Cerulean Sea (RECIPE!)
-						i(198112),	-- Recipe: Hopefully Healthy (RECIPE!)
-						i(198094),	-- Recipe: Mackerel Snackerel (RECIPE!)
-						i(198099),	-- Recipe: Pebbled Rock Salts (RECIPE!)
-						i(198095),	-- Recipe: Probably Protein (RECIPE!)
-						i(198120),	-- Recipe: Revenge, Served Cold (RECIPE!)
-						i(198124),	-- Recipe: Riverside Picnic (RECIPE!)
-						i(198125),	-- Recipe: Roast Duck Delight (RECIPE!)
-						i(198126),	-- Recipe: Salted Meat Mash (RECIPE!)
-						i(198111),	-- Recipe: Scrambled Basilisk Eggs (RECIPE!)
-						i(198119),	-- Recipe: Sizzling Seafood Medley (RECIPE!)
-						i(198096),	-- Recipe: Sweet and Sour Clam Chowder (RECIPE!)
-						i(198121),	-- Recipe: Thousandbone Tongueslicer (RECIPE!)
-						i(198092),	-- Recipe: Twice-Baked Potato (RECIPE!)
-						i(198107),	-- Recipe: Zesty Water (RECIPE!)
-						-- Items
-						i(198396),	-- Ribbed Mollusk Meat
-					}),
-					prof(ENCHANTING, {
-						r(382580),	-- Opening
-						r(391200),	-- Wisp of Tyr
-						r(383736),	-- Unknown
-						i(198779),	-- Formula: Crystal Magical Lockpick (RECIPE!)
-					}),
-					prof(ENGINEERING, {
-						r(382581),	-- Opening
-						r(382352),	-- Perfectly Calibrated Lenses
-						r(382382),	-- Wisp of Tyr
-						r(382372),	--
-						r(382373),	--
-						i(199298),	-- Schematic: Arclight Vital Correctors (RECIPE!)
-						i(198780),	-- Schematic: Expedition Multi-Toolbox (RECIPE!)
-						i(199292),	-- Schematic: Convincingly Realistic Jumper Cables (RECIPE!)
-						i(199291),	-- Schematic: Draconic Gunshoes (RECIPE!)
-						-- Without SpellID attached
-						i(199294),	-- Schematic: Atomic Recalibrator (RECIPE!)
-						i(199277),	-- Schematic: Battle-Ready Binoculars (RECIPE!)
-						i(199279),	-- Schematic: Bottomless Stonecrust Ore Satchel (RECIPE!)
-						i(199296),	-- Schematic: Bronze Fireflight (RECIPE!)
-						i(199250),	-- Schematic: Calibrated Safety Switch (RECIPE!)
-						i(199266),	-- Schematic: Centralized Precipitation Emitter (RECIPE!)
-						i(199263),	-- Schematic: Completely Safe Rockets (RECIPE!)
-						i(199224),	-- Schematic: Complicated Cuffs (RECIPE!)
-						i(199235),	-- Schematic: Creature Combustion Canister (RECIPE!)
-						i(199249),	-- Schematic: Critical Failure Prevention Unit (RECIPE!)
-						i(199272),	-- Schematic: Deadline Deadeyes (RECIPE!)
-						i(199225),	-- Schematic: Difficult Wrist Protectors (RECIPE!)
-						i(199284),	-- Schematic: Draconium Brainwave Amplifier (RECIPE!)
-						i(199278),	-- Schematic: Draconium Delver's Helmet (RECIPE!)
-						i(199283),	-- Schematic: Draconium Encased Samophlange (RECIPE!)
-						i(199280),	-- Schematic: Draconium Fisherfriend (RECIPE!)
-						i(199221),	-- Schematic: Element-Infused Rocket Helmet (RECIPE!)
-						i(199264),	-- Schematic: Endless Stack of Needles (RECIPE!)
-						i(199267),	-- Schematic: Environmental Emulator (RECIPE!)
-						i(199254),	-- Schematic: EZ-Thro Creature Combustion Canister (RECIPE!)
-						i(199255),	-- Schematic: EZ-Thro Gravitational Displacer (RECIPE!)
-						i(199300),	-- Schematic: EZ-Thro Grease Grenade (RECIPE!)
-						i(199256),	-- Schematic: EZ-Thro Primal Deconstruction Charge (RECIPE!)
-						i(199268),	-- Schematic: Giggle Goggles (RECIPE!)
-						i(199288),	-- Schematic: Gyroscopic Kaleidoscope (RECIPE!)
-						i(199247),	-- Schematic: Haphazardly Tethered Wires (RECIPE!)
-						i(199231),	-- Schematic: High Intensity Thermal Scanner (RECIPE!)
-						i(199252),	-- Schematic: I.W.I.N. Button Mk10 (RECIPE!)
-						i(199281),	-- Schematic: Lapidary's Draconium Clamps (RECIPE!)
-						i(199274),	-- Schematic: Lightweight Ocular Lenses (RECIPE!)
-						i(199251),	-- Schematic: Magazine of Healing Darts (RECIPE!)
-						i(199261),	-- Schematic: Meticulously Tuned Gear (RECIPE!)
-						i(199271),	-- Schematic: Milestone Magnifiers (RECIPE!)
-						i(199223),	-- Schematic: Needlessly Complex Wristguards (RECIPE!)
-						i(199293),	-- Schematic: Neural Silencer Mk3 (RECIPE!)
-						i(199262),	-- Schematic: One-Size-Fits-All Gear (RECIPE!)
-						i(199276),	-- Schematic: Oscillating Wilderness Opticals (RECIPE!)
-						i(199248),	-- Schematic: Overcharged Overclocker (RECIPE!)
-						i(199222),	-- Schematic: Overengineered Sleeve Extenders (RECIPE!)
-						i(199226),	-- Schematic: P.E.W. x2 (RECIPE!)
-						i(199275),	-- Schematic: Peripheral Vision Projectors (RECIPE!)
-						i(199270),	-- Schematic: Quality-Assured Optics (RECIPE!)
-						i(199260),	-- Schematic: Rapidly Ticking Gear (RECIPE!)
-						i(199259),	-- Schematic: Razor-Sharp Gear (RECIPE!)
-						i(199233),	-- Schematic: S.A.V.I.O.R. (RECIPE!)
-						i(199273),	-- Schematic: Sentry's Stabilized Specs (RECIPE!)
-						i(199297),	-- Schematic: Spring-Loaded Capacitor Casing (RECIPE!)
-						i(199282),	-- Schematic: Spring-Loaded Draconium Fabric Cutters (RECIPE!)
-						i(199257),	-- Schematic: Suspiciously Silent Crate (RECIPE!)
-						i(199253),	-- Schematic: Suspiciously Ticking Crate (RECIPE!)
-						i(199287),	-- Schematic: Tinker: Plane Displacer (RECIPE!)
-						i(199258),	-- Schematic: Tinker: Supercollide-O-Tron (RECIPE!)
-						i(199265),	-- Schematic: Wyrmhole Generator (RECIPE!)
-						i(199415),	-- Schematic: Zapthrottle Soul Inhaler (RECIPE!)
-						-- Items
-						i(198836),	-- Arclight Vital Correctors
-						i(198250),	-- Convincingly Realistic Jumper Cables+
-						i(198251),	-- Convincingly Realistic Jumper Cables++
-						i(198252),	-- Convincingly Realistic Jumper Cables+++
-						i(198274),	-- Element-Infused Rocket Helmet (TOY!) [Used Another ID]
-						i(191305),	-- Expedition Multi-Toolbox
-						i(198177),	-- Draconic Gunshoes+
-						i(198178),	-- Draconic Gunshoes++
-						i(198179),	-- Draconic Gunshoes+++
-						i(198152),	-- Perfectly Calibrated Lenses+
-						i(198153),	-- Perfectly Calibrated Lenses++
-						i(198154),	-- Perfectly Calibrated Lenses+++
-						i(198242),	-- Quack-E [Used another ID!]
-						i(198284),	-- Spring-Loaded Draconium Fabric Cutter
-						i(198285),	-- Spring-Loaded Titanicium Fabric Cutter
-						i(198286),	-- Tinker Removal Kit+
-						i(198287),	-- Tinker Removal Kit++
-						i(198288),	-- Tinker Removal Kit+++
-					}),
-					prof(HERBALISM, {
-						r(382582),	-- Opening
-					}),
-					prof(INSCRIPTION, {
-						r(382583),	-- Opening
-						r(391783),	-- Wisp of Tyr
-						r(388458),	-- Unknown
-						i(198944),	-- Technique: Mixing Rod I (RECIPE!)
-						i(198945),	-- Technique: Mixing Rod II (RECIPE!)
-						i(198948),	-- Technique: Rolling Pin I (RECIPE!)
-						i(198949),	-- Technique: Rolling Pin II (RECIPE!)
-						i(198890),	-- Technique: Scroll of Sales (RECIPE!)
-						-- Without SpellID attached
-						i(198942),	-- Technique: Alchemist's Sturdy Mixing Rod (RECIPE!)
-						i(198922),	-- Technique: Azurescale Sigil (RECIPE!)
-						i(198915),	-- Technique: Blazing Fortune (RECIPE!)
-						i(198934),	-- Technique: Blazing Ink (RECIPE!)
-						i(198925),	-- Technique: Bronzescale Sigil (RECIPE!)
-						i(198882),	-- Technique: Bundle O' Cards: Dragon Isles (RECIPE!)
-						i(198932),	-- Technique: Burnished Ink (RECIPE!)
-						i(198917),	-- Technique: Buzzing Rune (RECIPE!)
-						i(198946),	-- Technique: Chef's Smooth Rolling Pin (RECIPE!)
-						i(198913),	-- Technique: Chilled Rune (RECIPE!)
-						i(198919),	-- Technique: Chirping Rune (RECIPE!)
-						i(198958),	-- Technique: Core Explorer's Compendium (RECIPE!)
-						i(198933),	-- Technique: Cosmic Ink (RECIPE!)
-						i(198939),	-- Technique: Contract: Dragonscale Expedition (RECIPE!)
-						i(198957),	-- Technique: Crackling Codex of the Isles (RECIPE!)
-						i(198952),	-- Technique: Darkmoon Deck Box: Dance (RECIPE!)
-						i(198955),	-- Technique: Darkmoon Deck Box: Inferno (RECIPE!)
-						i(198954),	-- Technique: Darkmoon Deck Box: Rime (RECIPE!)
-						i(198953),	-- Technique: Darkmoon Deck Box: Watcher (RECIPE!)
-						i(198928),	-- Technique: Draconic Missive of the Aurora (RECIPE!)
-						i(198931),	-- Technique: Draconic Missive of the Feverflare (RECIPE!)
-						i(198920),	-- Technique: Draconic Missive of the Fireflash (RECIPE!)
-						i(198929),	-- Technique: Draconic Missive of the Harmonious (RECIPE!)
-						i(198921),	-- Technique: Draconic Missive of the Peerless (RECIPE!)
-						i(198927),	-- Technique: Draconic Missive of the Quickblade (RECIPE!)
-						i(198879),	-- Technique: Draconic Treatise on Alchemy (RECIPE!)
-						i(198881),	-- Technique: Draconic Treatise on Blacksmithing (RECIPE!)
-						i(198883),	-- Technique: Draconic Treatise on Enchanting (RECIPE!)
-						i(198880),	-- Technique: Draconic Treatise on Engineering (RECIPE!)
-						i(198884),	-- Technique: Draconic Treatise on Herbalism (RECIPE!)
-						i(198885),	-- Technique: Draconic Treatise on Inscription (RECIPE!)
-						i(198886),	-- Technique: Draconic Treatise on Jewelcrafting (RECIPE!)
-						i(198887),	-- Technique: Draconic Treatise on Leatherworking (RECIPE!)
-						i(198888),	-- Technique: Draconic Treatise on Mining (RECIPE!)
-						i(201026),	-- Technique: Draconic Treatise on Skinning (RECIPE!)
-						i(198889),	-- Technique: Draconic Treatise on Tailoring (RECIPE!)
-						i(198924),	-- Technique: Emberscale Sigil (RECIPE!)
-						i(198898),	-- Technique: Explorer's Barding Manuscript (RECIPE!)
-						i(198914),	-- Technique: Flourishing Fortune (RECIPE!)
-						i(198935),	-- Technique: Flourishing Ink (RECIPE!)
-						i(198918),	-- Technique: Howling Rune (RECIPE!)
-						i(198875),	-- Technique: Illuminating Pillar of the Isles (RECIPE!)
-						i(198911),	-- Technique: Illusion Parchment: Spell Shield (RECIPE!)
-						i(198926),	-- Technique: Jetscale Sigil (RECIPE!)
-						i(198874),	-- Technique: Kinetic Pillar of the Isles (RECIPE!)
-						i(198878),	-- Technique: Overseer's Writhebark Stave (RECIPE!)
-						i(198877),	-- Technique: Pioneer's Writhebark Stave (RECIPE!)
-						i(198787),	-- Technique: Red Haired Renewed Proto-Drake Manuscript (RECIPE!)
-						i(198897),	-- Technique: Regal Barding Manuscript (RECIPE!)
-						i(198900),	-- Technique: Renewed Proto Drake Manuscript: Red Hair (RECIPE!)
-						i(198930),	-- Technique: Runed Writhebark (RECIPE!)
-						i(198923),	-- Technique: Sagescale Sigil (RECIPE!)
-						i(198950),	-- Technique: Scribe's Fastened Quill (RECIPE!)
-						i(198951),	-- Technique: Scribe's Resplendent Quill (RECIPE!)
-						i(198916),	-- Technique: Serene Fortune (RECIPE!)
-						i(198936),	-- Technique: Serene Ink (RECIPE!)
-						i(198956),	-- Technique: Vantus Rune: Vault of the Incarnates (RECIPE!)
-						i(198786),	-- Technique: Wrathion Darkmoon Deckbox (RECIPE!)
-					}),
-					prof(JEWELCRAFTING, {
-						r(382584),	-- Opening
-						r(391784),	-- Wisp of Tyr
-						i(194674),	-- Design: Soul Drainer/Elemental Soul Cage (RECIPE!)
-						i(194655),	-- Design: Ludicrously Luxurious Lucky Loop (RECIPE!)
-						i(194673),	-- Design: Straddling Illimited Diamond (RECIPE!)
-						-- Without SpellID attached
-						i(194672),	-- Design: Band of New Beginnings (RECIPE!)
-						i(194630),	-- Design: Blotting Sand (RECIPE!)
-						i(194656),	-- Design: Bold-Print Bifocals (RECIPE!)
-						i(194659),	-- Design: Chromatic Focus (RECIPE!)
-						i(194601),	-- Design: Crafty Alexstraszite (RECIPE!)
-						i(194596),	-- Design: Crafty Queen's Ruby (RECIPE!)
-						i(194609),	-- Design: Crafty Ysemerald (RECIPE!)
-						i(194604),	-- Design: Deadly Alexstraszite (RECIPE!)
-						i(194627),	-- Design: Draconic Vial (RECIPE!)
-						i(194665),	-- Design: Dreamer's Vision (RECIPE!)
-						i(194667),	-- Design: Earthwarden's Prize (RECIPE!)
-						i(194670),	-- Design: Elemental Harmony (RECIPE!)
-						i(194598),	-- Design: Energized Vibrant Emerald (RECIPE!)
-						i(194622),	-- Design: Fierce Illimited Diamond (RECIPE!)
-						i(194618),	-- Design: Forceful Nozdorite (RECIPE!)
-						i(194616),	-- Design: Fractured Neltharite (RECIPE!)
-						i(194628),	-- Design: Frameless Lens (RECIPE!)
-						i(194629),	-- Design: Glossy Stone (RECIPE!)
-						i(194621),	-- Design: Inscribed Illimited Diamond (RECIPE!)
-						i(194617),	-- Design: Jagged Nozdorite (RECIPE!)
-						i(194669),	-- Design: Jeweled Dragon's Heart (RECIPE!)
-						i(194653),	-- Design: Jeweled Offering (RECIPE!)
-						i(194666),	-- Design: Keeper's Glory (RECIPE!)
-						i(194657),	-- Design: Left-Handed Magnifying Glass (RECIPE!)
-						i(194639),	-- Design: Marvelous Mood Ring (RECIPE!)
-						i(194643),	-- Design: Narcissist's Sculpture (RECIPE!)
-						i(194636),	-- Design: Pendant of Impending Perils (RECIPE!)
-						i(194631),	-- Design: Pounce (RECIPE!)
-						i(194652),	-- Design: Projection Prism (RECIPE!)
-						i(194619),	-- Design: Puissant Nozdorite (RECIPE!)
-						i(194664),	-- Design: Queen's Gift (RECIPE!)
-						i(194612),	-- Design: Quick Ysemerald (RECIPE!)
-						i(194624),	-- Design: Resplendent Illimited Diamond (RECIPE!)
-						i(194644),	-- Design: Revitalizing Red Carving (RECIPE!)
-						i(194599),	-- Design: Sensei's Sundered Onyx (RECIPE!)
-						i(194626),	-- Design: Shimmering Clasp (RECIPE!)
-						i(198839),	-- Design: Signet of Titanic Insight (RECIPE!)
-						i(194623),	-- Design: Skillful Illimited Diamond (RECIPE!)
-						i(194600),	-- Design: Solid Eternity Amber (RECIPE!)
-						i(194749),	-- Design: Split-Lens Specs (RECIPE!)
-						i(194645),	-- Design: Statue of Tyr's Herald (RECIPE!)
-						i(194620),	-- Design: Steady Nozdorite (RECIPE!)
-						i(194608),	-- Design: Stormy Malygite (RECIPE!)
-						i(194658),	-- Design: Sundered Onyx Loupes (RECIPE!)
-						i(194625),	-- Design: Tiered Medallion Setting (RECIPE!)
-						i(194668),	-- Design: Timewatcher's Patience (RECIPE!)
-						i(194607),	-- Design: Zen Malygite (RECIPE!)
-						i(194597),	-- Design: Zen Mystic Sapphire (RECIPE!)
-						i(194615),	-- Design: Zen Neltharite (RECIPE!)
-						-- Items
-						i(193034),	-- Ludicrously Luxurious Lucky Loop
-						i(194112),	-- Straddling Illimited Diamond
-						i(194113),	-- Straddling Illimited Diamond
-						i(194114),	-- Straddling Illimited Diamond
-					}),
-					prof(LEATHERWORKING, {
-						r(375175);	-- Deathchill Hide
-						r(375177);	-- Drygrate Scales
-						r(375170);	-- Masterwork Riding Crop
-						r(382585);	-- Opening
-						r(375198);	-- Savage Bow
-						i(197984),	-- Pattern: Wisp of Tyr (RECIPE!)
-						-- Without SpellID attached
-						i(197985),	-- Pattern: Illustrious Insight / Essence of Tyr (RECIPE!)
-						-- Items
-						i(193232),	-- Deathchill Hide+
-						i(193233),	-- Deathchill Hide++
-						i(193234),	-- Deathchill Hide+++
-						i(193239),	-- Drygrate Scales+
-						i(193240),	-- Drygrate Scales++
-						i(193241),	-- Drygrate Scales+++
-						i(193475),	-- Masterwork Riding Crop
-						i(193495),	-- Savage Bow
-					}),
-					prof(MINING, {
-						r(382586),	-- Opening
-					}),
-					prof(SKINNING, {
-						r(382587),	-- Opening
-					}),
-					prof(TAILORING, {
-						r(382588);	-- Opening
-						r(376697),	-- Pattern: Wisp of Tyr
-						i(194263),	-- Pattern: Blue Dragon Rider's Robe (RECIPE!)
-						i(194264),	-- Pattern: Bronze Dragon Rider's Wraps (RECIPE!)
-						i(194296),	-- Pattern: Fiddle with Draconium Fabric Cutters (RECIPE!)
-						i(194297),	-- Pattern: Fiddle with Khaz'gorite Fabric Cutters (RECIPE!)
-						i(194284),	-- Pattern: Wildercloth Weapon Upholstery (RECIPE!)
-						-- Items
-						i(193531),	-- Blue Dragon Rider's Robe
-						i(193535),	-- Bronze Dragon Rider's Wraps
-						i(194051),	-- Wildercloth Weapon Upholstery
-					}),
-					i(194040),	-- Slateskin Hide
-					i(194041),	-- Driftbloom Sprout
-					i(194054),	-- Dredged Seedling
-					i(194055),	-- Primordial Soil
-					i(194061),	-- Suffocating Spores
-					i(194063),	-- Glowing Fragment
-					i(194064),	-- Intricate Geode
-					i(194066),	-- Frigid Frostfur Pelt
-					i(194067),	-- Festering Carcass
-					i(194068),	-- Progenitor Scales
-					i(194075),	-- Sacrilegious Spear
-					i(194076),	-- Exotic Resilient Leather
-					i(194077),	-- Pristine Adamant Scales
-					i(194078),	-- Perfect Draconium Scale
-					i(194079),	-- Pure Serevite Nugget
-					i(194080),	-- Peculiar Bud
-					i(194081),	-- Mutated Root
-					i(198607),	-- Scribe's Glyphs
-					i(198608),	-- Alchemy Notes
-					i(198611),	-- Engineering Details
-					i(198612),	-- Jeweler's Cuts
-					i(198599),	-- Experimental Decay Sample
-					i(198653),	-- PH Profession Drop
+				i(191942),	-- Belloc's Hat [Added SpellIDs regarding this.. Belloc also lost his hat... In Waking Shores 371683 (Wear Belloc's Hat [DNT]), 371665 (Sit on Belloc's Head [DNT]) /Brage ]
+			}),
+			filter(COSMETIC, {
+				n(SETS, {
+					-- Bloodhunter Set
+					i(190789),	-- Bloodhunter Visage
+					i(190790),	-- Bloodhunter Handguards
+					i(190791),	-- Bloodhunter Subligar
+					i(190792),	-- Bloodhunter Loincloth
+					i(190793),	-- Bloodhunter Footwraps
+					i(190794),	-- Bloodhunter Warcloak
+					i(190795),	-- Bloodhunter Hornmantle
+					i(190798),	-- Bloodhunter Harness
 
+					-- Buccaneer Sets
+					i(190904),	-- Dashing Buccaneer's Tunic
+					i(190905),	-- Dashing Buccaneer's Sash
+					i(190906),	-- Dashing Buccaneer's Breeches
+					i(190907),	-- Dashing Buccaneer's Boots
 
-					i(199115),	-- Herbalism Field Notes
-					i(199122),	-- Mining Field Notes
-					i(199128),	-- Skinning Field Notes
-					i(200638),	-- Bubblefilled Flounder
+					-- Honored Valarjar Set [Cloth]
+					i(190081),	-- Mantle of the Honored Valarjar
+					i(190082),	-- Cloak of the Honored Valarjar
+					i(190083),	-- Robe of the Honored Valarjar
+					i(190084),	-- Bracers of the Honored Valarjar
+					i(190085),	-- Sash of the Honored Valarjar
+					i(190086),	-- Sandals of the Honored Valarjar
+					i(190087),	-- Pantaloons of the Honored Valarjar
+					i(190088),	-- Circlet of the Honored Valarjar
+					i(190089),	-- Gloves of the Honored Valarjar
 
-					i(201360),	-- Glimmer of Order
-					i(201361),	-- Primal Inspiration
-					--
-					i(198853),	-- Tinker: Always Malfunction
-					--
-					i(198483),	-- jrz 10.0 enchanting test [DNT]
-					i(198518),	-- Professor Instructaur's Top Secret Guide to Blacksmithing
-					i(198519),	-- Professor Instructaur's Top Secret Guide to Alchemy
-					i(198520),	-- Professor Instructaur's Top Secret Guide to Enchanting
-					i(198521),	-- Professor Instructaur's Top Secret Guide to Engineering
-					i(198522),	-- Professor Instructaur's Top Secret Guide to Herbalism
-					i(198523),	-- Professor Instructaur's Top Secret Guide to Inscription
-					i(198524),	-- Professor Instructaur's Top Secret Guide to Jewelcrafting
-					i(198525),	-- Professor Instructaur's Top Secret Guide to Leatherworking
-					i(198526),	-- Professor Instructaur's Top Secret Guide to Mining
-					i(198527),	-- Professor Instructaur's Top Secret Guide to Skinning
-					i(198528),	-- Professor Instructaur's Top Secret Guide to Tailoring
-					i(198677),	-- jrz test vellum quality 1 [DNT]
-					i(198678),	-- jrz test vellum quality 2 [DNT]
-					i(198679),	-- jrz test vellum quality 3 [DNT]
-					i(201821),	-- Professor Instructaur's Brain
+					-- Honored Valarjar Set [Leather]
+					i(190716),	-- Shoulderpads of the Honored Valarjar
+					i(190717),	-- Wristguards of the Honored Valarjar
+					i(190719),	-- Hood of the Honored Valarjar
+					i(190720),	-- Leggings of the Honored Valarjar
+					i(190721),	-- Strap of the Honored Valarjar
+					i(190722),	-- Boots of the Honored Valarjar
+					i(190723),	-- Grips of the Honored Valarjar
+					i(190724),	-- Tunic of the Honored Valarjar
+
+					-- Honored Valarjar Set [Mail]
+					i(190563),	-- Armbands of the Honored Valarjar
+					i(190564),	-- Cape of the Honored Valarjar
+					i(190565),	-- Girdle of the Honored Valarjar
+					i(190566),	-- Gauntlets of the Honored Valarjar
+					i(190567),	-- Cuirass of the Honored Valarjar
+					i(190568),	-- Coif of the Honored Valarjar
+					i(190569),	-- Sabatons of the Honored Valarjar
+					i(190570),	-- Legguards of the Honored Valarjar
+					i(190571),	-- Pauldrons of the Honored Valarjar
+
+					-- Honored Valarjar Set [Plate]
+					i(190911),	-- Greatcloak of the Honored Valarjar
+					i(190912),	-- Warboots of the Honored Valarjar
+					i(190913),	-- Vambraces of the Honored Valarjar
+					i(190914),	-- Greatbelt of the Honored Valarjar
+					i(190915),	-- Gardbrace of the Honored Valarjar
+					i(190916),	-- Greaves of the Honored Valarjar
+					i(190917),	-- Helm of the Honored Valarjar
+					i(190918),	-- Handguards of the Honored Valarjar
+					i(190919),	-- Breastplate of the Honored Valarjar
+
+					-- Nightmare Forest Set
+					i(190221),	-- Nightmare Forest Waistwrap
+					i(190222),	-- Nightmare Forest Sandals
+					i(190223),	-- Nightmare Forest Jerkin
+					i(190224),	-- Nightmare Forest Grips
+					i(190225),	-- Nightmare Forest Mask
+					i(190226),	-- Nightmare Forest Leggings
+					i(190227),	-- Nightmare Forest Raiment
+					i(190228),	-- Nightmare Forest Mantle
+					i(190229),	-- Nightmare Forest Bindings
+
+					-- Slumbering Caldera Set
+					i(190774),	-- Slumbering Caldera Robe
+					i(190775),	-- Slumbering Caldera Gauntlets
+					i(190776),	-- Slumbering Caldera Girdle
+					i(190777),	-- Slumbering Caldera Pauldrons
+					i(190778),	-- Slumbering Caldera Legguards
+					i(190779),	-- Slumbering Caldera Sabatons
+					i(190780),	-- Slumbering Caldera Crown
+					i(190781),	-- Slumbering Caldera Bracers
+					i(190782),	-- Slumbering Caldera Hauberk
+
+					-- Twisted Arcanum Set
+					i(190156),	-- Twisted Arcanum Sash
+					i(190157),	-- Twisted Arcanum Slippers
+					i(190158),	-- Twisted Arcanum Grips
+					i(190159),	-- Twisted Arcanum Cowl
+					i(190160),	-- Twisted Arcanum Trousers
+					i(190161),	-- Twisted Arcanum Mantle
+					i(190162),	-- Twisted Arcanum Bindings
+					i(190163),	-- Twisted Arcanum Robe
+					i(190193),	-- Twisted Arcanum Tunic
 				}),
-				n(SPECIAL, {
-					i(198869),	-- Large Valdrakken Accord Supply Pack
-				}),
+				i(194318),	-- Book of Ancient Lore
+				i(193069),	-- Climber's Pack
+				i(194329),	-- Elaborate Reliquary Candelabra
+				i(190093),	-- Elune's Fury
+				i(190094),	-- Elune's Wrath
+				i(190674),	-- Leaky Bucket
+				i(194314),	-- Light of the Enlightened
+				i(194331),	-- Pristine Research Journal
+				i(190909),	-- Ruby Felfire Splitblade
+				i(190910),	-- Ruby Felfire Bulwark
+				i(194316),	-- Tome of Forgotten Legends
+				i(191647),	-- Tuskarr Fishing Pole
+				-- Only Ruby Spaulders used.. The others might be in other Metas later in expansion / Braghe
+				i(199665),	-- Spiked Obsidian Spaulders
+				i(199666),	-- Spiked Azure Spaulders
+				i(199667),	-- Spiked Bronze Spaulders
+				i(199668),	-- Spiked Emerald Spaulders
+			}),
+			filter(MISC, {
+				i(200638),	-- Bubblefilled Flounder [Speculated to be used in a Secret /Braghe]
+			}),
+			n(PROFESSIONS, {
+				-- Knowledge Points
+				i(194041),	-- Driftbloom Sprout
+				i(194054),	-- Dredged Seedling
+				i(194076),	-- Exotic Resilient Leather
+				i(194067),	-- Festering Carcass
+				i(194066),	-- Frigid Frostfur Pelt
+				i(194063),	-- Glowing Fragment
+				i(194064),	-- Intricate Geode
+				i(194081),	-- Mutated Root
+				i(194080),	-- Peculiar Bud
+				i(194078),	-- Perfect Draconium Scale
+				i(194055),	-- Primordial Soil
+				i(194077),	-- Pristine Adamant Scales
+				i(194068),	-- Progenitor Scales
+				i(194079),	-- Pure Serevite Nugget
+				i(194040),	-- Slateskin Hide
+				i(194061),	-- Suffocating Spores
 			}),
 			n(QUESTS, {
 				-- 10.0.0.44649
@@ -3175,10 +2717,6 @@ root(ROOTS.Unsorted, {
 				q(71936),	--
 				q(71937),	--
 				q(71938),	--
-				q(71939),	--
-				q(71940),	--
-				q(71942),	--
-				q(71943),	--
 				q(71949),	--
 				q(71968),	--
 				q(71985),	--

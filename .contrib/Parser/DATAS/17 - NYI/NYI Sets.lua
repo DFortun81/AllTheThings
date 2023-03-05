@@ -1862,6 +1862,50 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 		tier(DF_TIER, {
+			-- 10.0.0
+			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+				-- Green Dragon Set
+
+				-- Verdant Wing [Cloth]
+				i(201078),	-- Cord of the Verdant Wing
+				i(201064),	-- Gloves of the Verdant Wing
+				i(201066),	-- Hood of the Verdant Wing
+				i(201070),	-- Leggings of the Verdant Wing
+				i(201075),	-- Mantle of the Verdant Wing
+				i(201058),	-- Robes of the Verdant Wing
+				i(201086),	-- Slippers of the Verdant Wing
+				i(201081),	-- Wraps of the Verdant Wing
+
+				-- Green Draketracker [Leather]
+				i(201080),	-- Green Draketracker's Belt
+				i(201088),	-- Green Draketracker's Boots
+				i(201084),	-- Green Draketracker's Bracers
+				i(201072),	-- Green Draketracker's Britches
+				i(201068),	-- Green Draketracker's Cowl
+				i(201061),	-- Green Draketracker's Vest
+				i(201062),	-- Green Draketracker's Mitts
+				i(201073),	-- Green Draketracker's Shoulderpads
+
+				-- Emerald Scale [Mail]
+				i(201083),	-- Emerald Scale Armguards
+				i(201060),	-- Emerald Scale Chainmail
+				i(201067),	-- Emerald Scale Coif
+				i(201065),	-- Emerald Scale Grips
+				i(201071),	-- Emerald Scale Legguards
+				i(201079),	-- Emerald Scale Loop
+				i(201076),	-- Emerald Scale Spaulders
+				i(201087),	-- Emerald Scale Treads
+
+				-- Dreamfire [Plate]
+				i(201059),	-- Dreamfire Battleplate
+				i(201077),	-- Dreamfire Buckle
+				i(201063),	-- Dreamfire Gauntlets
+				i(201085),	-- Dreamfire Helm
+				i(201069),	-- Dreamfire Legplates
+				i(201074),	-- Dreamfire Pauldrons
+				i(201057),	-- Dreamfire Sabatons
+				i(201082),	-- Dreamfire Wristguards
+			})),
 			-- 10.0.2
 			tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 10.0.2" } }, {
 				header(HEADERS.LFGDungeon, 2390, {	-- Vault of the Incarnates

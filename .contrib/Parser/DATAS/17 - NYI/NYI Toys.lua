@@ -113,7 +113,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(200142),	-- Generous Goblin Grenade (TOY!)
 				i(199111),	-- Maestro Duck's Orchestrion (TOY!)
 				i(199926),	-- Portable J.A.M. (TOY!)
-				i(200636),	-- Primal Invocation Quintessence (TOY!)
 				i(197961),	-- Whelps on Strings (TOY!)
 			}),
 		}),

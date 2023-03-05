@@ -576,12 +576,31 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 	}),
 	prof(ENCHANTING, {
 		n(DISCOVERY, {
-			r(391185),	-- Primal Invocation Extract
+			r(391185, {	-- Primal Invocation Extract
+				["description"] = "Discovered only after obtaining all 5 Glimmers and then disenchanting a Sophic Amalgamation. Turn on Quest Tracking to see which Glimmers you have already disenchanted",
+				["cost"] = {
+					{ "i", 201358, 1 },	-- 1x Glimmer of Air
+					{ "i", 201359, 1 },	-- 1x Glimmer of Earth
+					{ "i", 201356, 1 },	-- 1x Glimmer of Fire
+					{ "i", 201357, 1 },	-- 1x Glimmer of Frost
+					{ "i", 201360, 1 },	-- 1x Glimmer of Order
+				},
+				["g"] = {
+					q(71939, { ["name"] = "Disenchanted Air" }),	-- Disenchanted Air
+					q(71940, { ["name"] = "Disenchanted Earth" }),	-- Disenchanted Earth
+					q(71941, { ["name"] = "Disenchanted Fire" }),	-- Disenchanted Fire
+					q(71942, { ["name"] = "Disenchanted Frost" }),	-- Disenchanted Frost
+					q(71943, { ["name"] = "Disenchanted Order" }),	-- Disenchanted Order
+				},
+			}),
 		}),
 		spell(392888, {	-- Disenchant
 			i(194123),	-- Chromatic Dust
 			i(200113),	-- Resonant Crystal
 			i(194124),	-- Vibrant Shard
+			header(HEADERS.Item, 200479, {	-- Sophic Amalgamation
+				i(201360),	-- Glimmer of Order
+			}),
 		}),
 		cat(657, {	-- Armor Enchantments
 			i(199934),	-- Enchant Boots - Plainsrunner's Breeze+
@@ -797,7 +816,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			-- Disenchanting Mystic items, these quests are NOT tied to the specific item disenchanted, but unsure what their logic is.
 			q(71934, { ["name"] = "Disenchant ? Mystic items", }),
 			q(71935, { ["name"] = "Disenchant ? Mystic items", }),
-			q(71941, { ["name"] = "Disenchant ? Mystic items", }),
 		})),
 		filter(ILLUSIONS, {
 			i(200883),	-- Illusion: Primal Air
@@ -845,6 +863,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		}),
 		filter(TOYS, {
 			i(200469),	-- Khadgar's Disenchanting Rod (TOY!)
+			i(200636, {	-- Primal Invocation Quintessence (TOY!)
+				["description"] = "You need to use 18xPrimal Invocation Extract Rank 3 or 26xPrimal Invocation Extract Rank 2 or 51xPrimal Invocation Extract Rank 1",
+				["cost"] = {
+					{ "i", 200618, 51 },	-- 51x Primal Invocation Extract+
+					{ "i", 200633, 26 },	-- 26x Primal Invocation Extract++
+					{ "i", 200634, 18 },	-- 18x Primal Invocation Extract+++
+				},
+			}),
 		}),
 		n(WEAPONS, {
 			i(200641),	-- Enchanted Writhebark Wand

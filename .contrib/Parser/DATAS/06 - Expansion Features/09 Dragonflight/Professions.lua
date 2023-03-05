@@ -438,6 +438,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198608),	-- Alchemy Notes
+				},
 			}),
 			q(66938, {	-- Mammoth Marrow
 				["description"] = "Requires 25 Skill.",
@@ -445,6 +448,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198608),	-- Alchemy Notes
+				},
 			}),
 			q(72427, {	-- Animated Infusion
 				["description"] = "Requires 25 Skill.",
@@ -452,6 +458,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198608),	-- Alchemy Notes
+				},
 			}),
 			q(66937, {	-- Decaying News
 				["description"] = "Requires 25 Skill.",
@@ -459,6 +468,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198608),	-- Alchemy Notes
+				},
 			}),
 			q(70533, {	-- Decaying News
 				["description"] = "Requires 45 Skill.",
@@ -466,6 +478,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185545 },	-- Conflago
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198608),	-- Alchemy Notes
+				},
 			}),
 			q(70532, {	-- Aiding the Raiding
 				["description"] = "Requires 45 Skill.",
@@ -473,6 +488,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185545 },	-- Conflago
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198608),	-- Alchemy Notes
+				},
 			}),
 			q(70531, {	-- Mana Markets
 				["description"] = "Requires 45 Skill.",
@@ -480,6 +498,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185545 },	-- Conflago
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198608),	-- Alchemy Notes
+				},
 			}),
 			q(70530, {	-- Examination Week
 				["description"] = "Requires 45 Skill.",
@@ -487,6 +508,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185545 },	-- Conflago
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198608),	-- Alchemy Notes
+				},
 			}),
 			o(380590, {	-- Well Insulated Mug
 				["questID"] = 70289,
@@ -652,6 +676,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198606),	-- Blacksmith's Writ
+				},
 			}),
 			q(66941, {	-- Tremendous Tools
 				["description"] = "Requires 25 Skill.",
@@ -659,6 +686,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198606),	-- Blacksmith's Writ
+				},
 			}),
 			q(72398, {	-- Rock and Stone
 				["description"] = "Requires 25 Skill.",
@@ -666,6 +696,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198606),	-- Blacksmith's Writ
+				},
 			}),
 			q(70235, {	-- Repair Bill
 				["description"] = "Requires 45 Skill.",
@@ -673,6 +706,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198606),	-- Blacksmith's Writ
+				},
 			}),
 			q(70234, {	-- All this Hammering
 				["description"] = "Requires 45 Skill.",
@@ -680,6 +716,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198606),	-- Blacksmith's Writ
+				},
 			}),
 			q(70233, {	-- Axe Shortage
 				["description"] = "Requires 45 Skill.",
@@ -687,6 +726,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198606),	-- Blacksmith's Writ
+				},
 			}),
 			q(70211, {	-- Stomping Explorers
 				["description"] = "Requires 45 Skill.",
@@ -694,6 +736,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198606),	-- Blacksmith's Writ
+				},
 			}),
 			q(66517, { -- A New Source of Weapons
 				["description"] = "Requires 45 Skill.",
@@ -701,6 +746,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198606),	-- Blacksmith's Writ
+				},
 			}),
 			q(70589, {	-- Blacksmithing Services Requested
 				["description"] = "Requires 25 Skill.",
@@ -709,6 +757,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198606),	-- Blacksmith's Writ
+				},
 			}),
 			q(70184, { -- Specialized Secrets: Blacksmithing
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
@@ -922,6 +973,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198610),	-- Enchanter's Script
+				},
 			}),
 			q(72423, {	-- Weathering the Storm
 				["description"] = "Requires 25 Skill.",
@@ -939,6 +993,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198610),	-- Enchanter's Script
+				},
 			}),
 			q(66935, {	-- Crystal Quill Pens
 				["description"] = "Requires 25 Skill.",
@@ -946,6 +1003,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198610),	-- Enchanter's Script
+				},
 			}),
 			q(72175, {	-- A Scept-acular Time
 				["description"] = "Requires 45 Skill.",
@@ -953,6 +1013,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198610),	-- Enchanter's Script
+				},
 			}),
 			q(72172, {	-- Essence, Shards, and Chromatic Dust
 				["description"] = "Requires 45 Skill.",
@@ -960,6 +1023,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198610),	-- Enchanter's Script
+				},
 			}),
 			q(72155, {	-- Spread the Enchantment
 				["description"] = "Requires 45 Skill.",
@@ -967,6 +1033,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198610),	-- Enchanter's Script
+				},
 			}),
 			q(72173, {	-- Braced for Enchantment
 				["description"] = "Requires 45 Skill.",
@@ -974,6 +1043,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198610),	-- Enchanter's Script
+				},
 			}),
 			o(380558, {	-- Enchanted Debris
 				["description"] = "Interact with the Disenchanted Broom, then follow it to the location of the treasure.",
@@ -1153,6 +1225,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198611),	-- Engineering Details
+				},
 			}),
 			q(66942, {	-- Enemy Engineering
 				["description"] = "Requires 25 Skill.",
@@ -1160,6 +1235,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198611),	-- Engineering Details
+				},
 			}),
 			q(66890, {	-- Stolen Tools
 				["description"] = "Requires 25 Skill.",
@@ -1167,6 +1245,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198611),	-- Engineering Details
+				},
 			}),
 			q(72396, {	-- Horns of Plenty
 				["description"] = "Requires 25 Skill.",
@@ -1184,6 +1265,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						},
 						["coord"] = { 62.0, 43.8, THE_WAKING_SHORES },
 					}),
+					i(198611),	-- Engineering Details
 				},
 			}),
 			q(70540, {	-- An Engineer's Best Friend
@@ -1192,6 +1274,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198611),	-- Engineering Details
+				},
 			}),
 			q(70557, {	-- No Scopes
 				["description"] = "Requires 45 Skill.",
@@ -1199,6 +1284,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198611),	-- Engineering Details
+				},
 			}),
 			q(70545, {	-- Blingtron 8000...?
 				["description"] = "Requires 45 Skill.",
@@ -1206,6 +1294,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198611),	-- Engineering Details
+				},
 			}),
 			q(70539, {	-- And You Thought They Did Nothing
 				["description"] = "Requires 45 Skill.",
@@ -1213,6 +1304,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198611),	-- Engineering Details
+				},
 			}),
 			q(70591, {	-- Engineering Services Requested
 				["description"] = "Requires 25 Skill.",
@@ -1221,6 +1315,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198611),	-- Engineering Details
+				},
 			}),
 			o(380560, {	-- Disabled Tesla Coil
 				["description"] = "Click on the three exposed items to make the treasure appear.",
@@ -1326,6 +1423,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(199115),	-- Herbalism Field Notes
+				},
 			}),
 			q(70614, {	-- Bubble Craze
 				["description"] = "Requires 25 Skill.",
@@ -1333,6 +1433,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(199115),	-- Herbalism Field Notes
+				},
 			}),
 			q(70615, {	-- The Case of the Missing Herbs
 				["description"] = "Requires 25 Skill.",
@@ -1340,6 +1443,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(199115),	-- Herbalism Field Notes
+				},
 			}),
 			q(70616, {	-- How Many??
 				["description"] = "Requires 25 Skill.",
@@ -1347,6 +1453,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(199115),	-- Herbalism Field Notes
+				},
 			}),
 			q(74107, {	-- Inscription Order: Herbalism
 				["name"] = "Inscription Order: Herbalism",
@@ -1515,6 +1624,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198607),	-- Scribe's Glyphs
+				},
 			}),
 			q(66944, {	-- Peacock Pigments
 				["description"] = "Requires 25 Skill.",
@@ -1522,6 +1634,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198607),	-- Scribe's Glyphs
+				},
 			}),
 			q(66945, {	-- Icy Ink
 				["description"] = "Requires 25 Skill.",
@@ -1529,6 +1644,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198607),	-- Scribe's Glyphs
+				},
 			}),
 			q(72438, {	-- Tarasek Intentions
 				["description"] = "Requires 25 Skill.",
@@ -1536,6 +1654,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198607),	-- Scribe's Glyphs
+				},
 			}),
 			q(70560, {	-- The Most Powerful Tool: Good Documentation
 				["description"] = "Requires 45 Skill.",
@@ -1543,6 +1664,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185540 },	-- Talendara
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198607),	-- Scribe's Glyphs
+				},
 			}),
 			q(70559, {	-- Quill You Help?
 				["description"] = "Requires 45 Skill.",
@@ -1550,6 +1674,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185540 },	-- Talendara
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198607),	-- Scribe's Glyphs
+				},
 			}),
 			q(70558, {	-- Disillusioned Illusions
 				["description"] = "Requires 45 Skill.",
@@ -1557,6 +1684,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185540 },	-- Talendara
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198607),	-- Scribe's Glyphs
+				},
 			}),
 			q(70561, {	-- A Scribe's Tragedy
 				["description"] = "Requires 45 Skill.",
@@ -1564,6 +1694,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185540 },	-- Talendara
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198607),	-- Scribe's Glyphs
+				},
 			}),
 			q(70592, {	-- Inscription Services Requested
 				["description"] = "Requires 25 Skill.",
@@ -1572,6 +1705,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198607),	-- Scribe's Glyphs
+				},
 			}),
 			o(380610, {	-- Pulsing Earth Rune
 				["questID"] = 70306,
@@ -1772,6 +1908,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198612),	-- Jeweler's Cuts
+				},
 			}),
 			q(66516, {	-- Mundane Gems, I Think not!
 				["description"] = "Requires 25 Skill.",
@@ -1779,6 +1918,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198612),	-- Jeweler's Cuts
+				},
 			}),
 			q(66950, {	-- Heart of a Giant
 				["description"] = "Requires 25 Skill.",
@@ -1786,6 +1928,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198612),	-- Jeweler's Cuts
+				},
 			}),
 			q(66949, {	-- Trinket Bandits
 				["description"] = "Requires 25 Skill.",
@@ -1793,6 +1938,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198612),	-- Jeweler's Cuts
+				},
 			}),
 			q(70565, {	-- Separation by Saturation
 				["description"] = "Requires 45 Skill.",
@@ -1800,6 +1948,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198612),	-- Jeweler's Cuts
+				},
 			}),
 			q(70564, {	-- Spectacular
 				["description"] = "Requires 45 Skill.",
@@ -1807,6 +1958,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198612),	-- Jeweler's Cuts
+				},
 			}),
 			q(70563, {	-- The Exhibition
 				["description"] = "Requires 45 Skill.",
@@ -1814,6 +1968,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198612),	-- Jeweler's Cuts
+				},
 			}),
 			q(70562, {	-- The Plumbers, Mason
 				["description"] = "Requires 45 Skill.",
@@ -1821,6 +1978,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198612),	-- Jeweler's Cuts
+				},
 			}),
 			q(70593, {	-- Jewelcrafting Services Requested
 				["description"] = "Requires 25 Skill.",
@@ -1829,6 +1989,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198612),	-- Jeweler's Cuts
+				},
 			}),
 			o(380822, {	-- Igneous Gem
 				["description"] = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
@@ -2034,6 +2197,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198613),	-- Leatherworking Designs
+				},
 			}),
 			q(66364, {	-- To Fly a Kite
 				["description"] = "Requires 25 Skill.",
@@ -2041,6 +2207,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198613),	-- Leatherworking Designs
+				},
 			}),
 			q(66951, {	-- Population Control
 				["description"] = "Requires 25 Skill.",
@@ -2048,6 +2217,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198613),	-- Leatherworking Designs
+				},
 			}),
 			q(72407, {	-- Soaked in Success
 				["description"] = "Requires 25 Skill.",
@@ -2055,6 +2227,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198613),	-- Leatherworking Designs
+				},
 			}),
 			q(70569, {	-- For Trisket, a Task Kit
 				["description"] = "Requires 45 Skill.",
@@ -2062,6 +2237,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198613),	-- Leatherworking Designs
+				},
 			}),
 			q(70567, {	-- When You Give Bakar a Bone
 				["description"] = "Requires 45 Skill.",
@@ -2069,6 +2247,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198613),	-- Leatherworking Designs
+				},
 			}),
 			q(70571, {	-- Drums Here!
 				["description"] = "Requires 45 Skill.",
@@ -2076,6 +2257,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198613),	-- Leatherworking Designs
+				},
 			}),
 			q(70568, {	-- Tipping the Scales
 				["description"] = "Requires 45 Skill.",
@@ -2083,6 +2267,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198613),	-- Leatherworking Designs
+				},
 			}),
 			q(70594, {	-- Leatherworking Services Requested
 				["description"] = "Requires 25 Skill.",
@@ -2091,6 +2278,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(198613),	-- Leatherworking Designs
+				},
 			}),
 			o(380615, {	-- Poacher's Pack
 				["questID"] = 70308,
@@ -2197,6 +2387,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(199122),	-- Mining Field Notes
+				},
 			}),
 			q(70618, {	-- The Call of the Forge
 				["description"] = "Requires 25 Skill.",
@@ -2204,6 +2397,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(199122),	-- Mining Field Notes
+				},
 			}),
 			q(70617, {	-- All Mine, Mine, Mine
 				["description"] = "Requires 25 Skill.",
@@ -2211,6 +2407,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(199122),	-- Mining Field Notes
+				},
 			}),
 			q(72156, {	-- A Fiery Flight
 				["description"] = "Requires 25 Skill.",
@@ -2218,6 +2417,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(199122),	-- Mining Field Notes
+				},
 			}),
 			q(74106, {		-- Inscription Order: Mining
 				["name"] = "Inscription Order: Mining",
@@ -2326,6 +2528,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(199128),	-- Skinning Field Notes
+				},
 			}),
 			q(70620, {	-- Scaling Up
 				["description"] = "Requires 25 Skill.",
@@ -2333,6 +2538,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(199128),	-- Skinning Field Notes
+				},
 			}),
 			q(70619, {	-- A Study of Leather
 				["description"] = "Requires 25 Skill.",
@@ -2340,6 +2548,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(199128),	-- Skinning Field Notes
+				},
 			}),
 			q(72158, {	-- A Dense Delivery
 				["description"] = "Requires 25 Skill.",
@@ -2347,6 +2558,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["g"] = {
+					i(199128),	-- Skinning Field Notes
+				},
 			}),
 			q(74114, {	-- Inscription Order: Skinning
 				["name"] = "Inscription Order: Skinning",
@@ -2506,6 +2720,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["groups"] = {
+					i(198609),	-- Tailoring Examples
+				},
 			}),
 			q(72410, {	-- Pincers and Needles
 				["description"] = "Requires 25 Skill.",
@@ -2523,6 +2740,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["groups"] = {
+					i(198609),	-- Tailoring Examples
+				},
 			}),
 			q(66953, {	-- All Things Fluffy
 				["description"] = "Requires 25 Skill.",
@@ -2530,6 +2750,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["groups"] = {
+					i(198609),	-- Tailoring Examples
+				},
 			}),
 			q(70587, {	-- A Knapsack Problem
 				["description"] = "Requires 45 Skill.",
@@ -2537,6 +2760,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["groups"] = {
+					i(198609),	-- Tailoring Examples
+				},
 			}),
 			q(70586, {	-- Sew Many Cooks
 				["description"] = "Requires 45 Skill.",
@@ -2544,6 +2770,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["groups"] = {
+					i(198609),	-- Tailoring Examples
+				},
 			}),
 			q(70582, {	-- Weave Well Enough Alone
 				["description"] = "Requires 45 Skill.",
@@ -2551,6 +2780,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["groups"] = {
+					i(198609),	-- Tailoring Examples
+				},
 			}),
 			q(70572, {	-- The Cold Does Bother Them, Actually
 				["description"] = "Requires 45 Skill.",
@@ -2558,6 +2790,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["groups"] = {
+					i(198609),	-- Tailoring Examples
+				},
 			}),
 			q(70595, {	-- Tailoring Services Requested
 				["description"] = "Requires 25 Skill.",
@@ -2566,6 +2801,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
+				["groups"] = {
+					i(198609),	-- Tailoring Examples
+				},
 			}),
 			o(380607, {	-- Itinerant Singed Fabric
 				["questID"] = 70304,

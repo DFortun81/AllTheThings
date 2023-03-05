@@ -1104,6 +1104,7 @@ i(200630);	-- Ohn'ir Windsage's Hearthstone
 i(194885);	-- Ohuna Perch
 i(198646);	-- Ornate Dragon Statue
 i(198409);	-- Personal Shell
+i(200636);	-- Primal Invocation Quintessence
 i(200198);	-- Primalist Prison
 i(191891);	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise
 i(199767);	-- Red Dragon Banner
@@ -1134,7 +1135,6 @@ i(198156);	-- Wyrmhole Generator
 i(200142);	-- Generous Goblin Grenade
 i(199111);	-- Maestro Duck's Orchestrion
 i(199926);	-- Portable J.A.M.
-i(200636);	-- Primal Invocation Quintessence
 i(197961);	-- Whelps on Strings
 
 
