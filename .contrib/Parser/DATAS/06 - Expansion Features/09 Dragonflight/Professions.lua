@@ -1758,6 +1758,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["questID"] = 70248,
 				["coord"] = { 47.1, 40.1, THALDRASZUS },
 				["g"] = {
+					i(198672),	-- Decryption Key
 					i(198659),	-- Forgetful Apprentice's Tome (1 of 2)
 				},
 			}),

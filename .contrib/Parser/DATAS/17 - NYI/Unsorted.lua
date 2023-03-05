@@ -1595,7 +1595,6 @@ root(ROOTS.Unsorted, {
 				-- New Stuff?
 				i(194421),	-- Teera's Bow
 				i(194423),	-- Maruuk's Spear
-				i(198672),	-- Decryption Key
 				i(198848),	-- Flyspawn Thorax
 				i(198982),	-- Broken Part: Head
 				i(198983),	-- Broken Part: Arm
