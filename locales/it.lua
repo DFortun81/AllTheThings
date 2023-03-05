@@ -3666,7 +3666,7 @@ for key,value in pairs({
 	[382029] = "Terra Smossa",	-- Disturbed Dirt
 	[382071] = "Rete da Pesca Piena",	-- Full Fishing Net
 	[382166] = "Banchetto di Rubino!",	-- The Ruby Feast!
-	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
+	[382180] = "Banco di Plesiosauri del Magma Surriscaldato",	-- Overheated Magma Thresher Pool
 	[382193] = "Cassa degli Elementi",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	--TODO: [382621] = "Revival Catalyst Console",	-- Revival Catalyst Console

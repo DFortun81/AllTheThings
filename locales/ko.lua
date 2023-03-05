@@ -3674,7 +3674,7 @@ for key,value in pairs({
 	[382029] = "흐트러진 흙",	-- Disturbed Dirt
 	[382071] = "완전한 낚시 그물",	-- Full Fishing Net	--TODO: this was manually translated
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
-	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
+	[382180] = "과열된 용암 상어 떼",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	--TODO: [382621] = "Revival Catalyst Console",	-- Revival Catalyst Console
