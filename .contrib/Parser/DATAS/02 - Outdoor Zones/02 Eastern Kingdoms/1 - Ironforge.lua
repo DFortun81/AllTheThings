@@ -1111,6 +1111,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1645, {	-- The Tome of Divinity (1a/8)
 					["qg"] = 6179,	-- Tiza Battleforge
+					["altQuests"] = { 1646 },	-- The Tome of Divinity (2/8)
 					["coord"] = { 27.4, 12, IRONFORGE },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = { DWARF },
