@@ -2499,12 +2499,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["_drop"] = { "g" },
 			}),
 			q(70363, {	-- Dragon Isles Skinning
+				["description"] = "DO NOT SKIN ANYTHING or you will lock yourself out of this quest.",
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
 					65444,	-- To the Dragon Isles! [H]
 				},
 				["provider"] = { "n", 192558 },    -- Toninaar
 				["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
+				["isBreadcrumb"] = true,
 			}),
 			q(70259, {	-- Hidden Profession Master Skinning
 				["name"] = "Hidden Profession Master: Skinning",
