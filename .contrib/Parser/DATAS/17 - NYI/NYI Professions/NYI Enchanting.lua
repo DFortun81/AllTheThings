@@ -7,13 +7,15 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(PROFESSIONS, {
 		prof(ENCHANTING, {
 			n(CRAFTABLES, {
-				-- 10.0.0
-				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
-					i(198483),	-- jrz 10.0 enchanting test [DNT]
-					i(198677),	-- jrz test vellum quality 1 [DNT]
-					i(198678),	-- jrz test vellum quality 2 [DNT]
-					i(198679),	-- jrz test vellum quality 3 [DNT]
-				})),
+				tier(DF_TIER, {
+					-- 10.0.0
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+						i(198483),	-- jrz 10.0 enchanting test [DNT]
+						i(198677),	-- jrz test vellum quality 1 [DNT]
+						i(198678),	-- jrz test vellum quality 2 [DNT]
+						i(198679),	-- jrz test vellum quality 3 [DNT]
+					})),
+				}),
 			}),
 			filter(RECIPES, {
 				tier(DF_TIER, {

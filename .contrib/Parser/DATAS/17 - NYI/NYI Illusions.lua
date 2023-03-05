@@ -10,6 +10,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(BFA_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 8.2.5" } }, {
 				ill(6185),	-- Stinging Sands
 			})),
+			
 			-- 8.3.0
 			tier(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 8.3.0" } }, {
 				i(174933),	-- Voidwrath

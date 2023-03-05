@@ -7,10 +7,12 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(PROFESSIONS, {
 		prof(INSCRIPTION, {
 			n(CRAFTABLES, {
-				-- 10.0.0
-				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
-					i(192464),	-- Darkmoon Deck: Ysera
-				})),
+				tier(DF_TIER, {
+					-- 10.0.0
+					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+						i(192464),	-- Darkmoon Deck: Ysera
+					})),
+				}),
 			}),
 			filter(RECIPES, {
 				tier(DF_TIER, {
