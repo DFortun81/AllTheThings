@@ -2550,16 +2550,19 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, c
 	local coord;
 	local mapID = app.GetCurrentMapID();
 	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
-	local covID, covData, covRenown = C_Covenants.GetActiveCovenantID();
+	local covID, covInfo = C_Covenants.GetActiveCovenantID();
 	if covID and covID > 0 then
-		covData = C_Covenants.GetCovenantData(covID);
-		covRenown = C_CovenantSanctumUI.GetRenownLevel();
+		local covData = C_Covenants.GetCovenantData(covID);
+		local covRenown = C_CovenantSanctumUI.GetRenownLevel();
+		covInfo = covID..":"..covData.name..":"..covRenown;
 	end
 	local DFmajorFactionIDs, majorFactionInfo, data = C_MajorFactions.GetMajorFactionIDs(9), {};
 	if DFmajorFactionIDs then
 		for _,factionID in ipairs(DFmajorFactionIDs) do
 			data = C_MajorFactions.GetMajorFactionData(factionID);
 			tinsert(majorFactionInfo, "|");
+			tinsert(majorFactionInfo, factionID);
+			tinsert(majorFactionInfo, ":");
 			tinsert(majorFactionInfo, data.name:sub(1,4));
 			tinsert(majorFactionInfo, ":");
 			tinsert(majorFactionInfo, data.renownLevel);
@@ -2575,7 +2578,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, c
 	for profID,known in pairs(app.CurrentCharacter.Professions) do
 		-- professions inherently known by all characters are marked 1 specifically; dynamic ones are true
 		if known ~= 1 then
-			tinsert(skills, "|");
+			tinsert(skills, "|"..profID..":");
 			tinsert(skills, C_TradeSkillUI.GetTradeSkillDisplayName(profID):sub(1,4));
 		end
 	end
@@ -2586,8 +2589,8 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, c
 			tinsert(info, k..":"..tostring(v))
 		end
 	end
-	tinsert(info, "lvl:"..app.Level.." race:"..app.RaceID.." ("..app.Race..") class:"..app.ClassIndex.." ("..app.Class..") cov:"..(covData and covData.name or "N/A")..(covRenown and ":"..covRenown or ""));
-	tinsert(info, "renown"..(app.TableConcat(majorFactionInfo)));
+	tinsert(info, "L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")");
+	tinsert(info, "cov:"..(covInfo or "N/A").." renown"..(app.TableConcat(majorFactionInfo)));
 	tinsert(info, "skills"..(app.TableConcat(skills) or ""));
 	tinsert(info, "sq:"..app.SourceQuestString(questRef or id));
 	tinsert(info, "lq:"..(app.LastQuestTurnedIn or ""));
