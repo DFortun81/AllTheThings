@@ -16746,6 +16746,47 @@ RowOnEnter = function (self)
 		if reference.speciesID then
 			local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
 			if total then GameTooltip:AddLine(tostring(progress) .. " / " .. tostring(total) .. L["COLLECTED_STRING"]); end
+			
+			if progress > 0 and app.Settings:GetTooltipSetting("PetBattleQuality") then
+				local speciesName = C_PetJournal.GetPetInfoBySpeciesID(reference.speciesID);
+				
+				-- Set the journal search filter to the pet name and the category for example duskwood or in-game shop
+				-- This is done so we limit how many pets will show up.
+				C_PetJournal.SetSearchFilter(speciesName .. " " .. reference.parent.parent.text);
+				local quality = {[1] = 0, [2] = 0, [3] = 0, [4] = 0};
+				local petlevel = {[1] = " ", [2] = " ", [3] = " ", [4] = " "}
+
+				-- Upper limit to serach for is 100 to make sure it wont run forever
+				-- it will stop running once theres no more collected pets left in journal which is normally under 10 
+				for i = 1, 100, 1 do
+					local guid, _, _, _, level, _, _, journalName = C_PetJournal.GetPetInfoByIndex(i);
+					if guid == nil then
+						if i == 1 then
+							-- Some pets are on the line of map borders eg Small Frog
+							-- This pet is not listed as spawning in duskwood in the wow sources, cause its on the westfall-duskwood border
+							-- For theese edge cases we change the serach to just the species name.
+							C_PetJournal.SetSearchFilter(speciesName);
+							guid, _, _, _, level, _, _, journalName = C_PetJournal.GetPetInfoByIndex(i);
+						else
+							break;
+						end
+					end
+
+					if journalName == speciesName then 
+						local rarity = select(5, C_PetJournal.GetPetStats(guid));
+						quality[rarity] = quality[rarity] + 1;
+						petlevel[rarity] = petlevel[rarity] .. level .. " ";
+						
+					end
+				end
+
+				for i = 1, 4, 1 do
+					if quality[i] > 0 then
+						GameTooltip:AddLine(tostring(quality[i]) .. " / " .. tostring(total) .. " " .. _G["BATTLE_PET_BREED_QUALITY"..i] .. " Level: " .. tostring(petlevel[i]));
+					end
+				end
+				C_PetJournal.ClearSearchFilter();
+			end
 		end
 		if reference.titleID then
 			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end

@@ -569,6 +569,8 @@ app.L = {
 	["MINI_LIST_SLIDER_LABEL"] = "Mini Lists Scale";
 	["MINI_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
 	["ADDITIONAL_LABEL"] = "Additional Information";
+	["PET_BATTLE_QUALITY_CHECKBOX"] = "Show Pet Battle Quality";
+	["PET_BATTLE_QUALITY_TOOLTIP"] = "Enable this option if you want to see the different pet qualities you have collected. \n\nRequires to have all pet families and sources selected in the pet battle journal to work properly";
 
 	-- Features tab
 	["FEATURES_TAB"] = FEATURES_LABEL;
