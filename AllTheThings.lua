@@ -16752,7 +16752,13 @@ RowOnEnter = function (self)
 				
 				-- Set the journal search filter to the pet name and the category for example duskwood or in-game shop
 				-- This is done so we limit how many pets will show up.
-				C_PetJournal.SetSearchFilter(speciesName .. " " .. reference.parent.parent.text);
+				-- If category text is formatted we only search for name since the formatting will break the search
+				if string.find(reference.parent.parent.text, "|") == nil then
+					C_PetJournal.SetSearchFilter(speciesName .. " " .. reference.parent.parent.text);
+				else
+					C_PetJournal.SetSearchFilter(speciesName);
+				end
+				-- C_PetJournal.SetSearchFilter(speciesName .. " " .. reference.parent.parent.text);
 				local quality = {[1] = 0, [2] = 0, [3] = 0, [4] = 0};
 				local petlevel = {[1] = " ", [2] = " ", [3] = " ", [4] = " "}
 
