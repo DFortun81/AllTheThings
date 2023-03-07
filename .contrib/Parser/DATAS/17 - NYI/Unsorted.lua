@@ -1668,7 +1668,6 @@ root(ROOTS.Unsorted, {
 				i(192776),	-- Dormant Embercone
 				i(194432),	-- Old Stonetusk's Tusk
 				i(201033),	-- Magical Salt Crystal
-				i(203652),	-- Griftah's All-Purpose Embellishing Powder
 				i(62528),	-- Sharp Crocolisk Tooth
 				i(168522),	-- Ub3r Module: Ub3r-Coil
 				i(193070),	-- The Insight of Tyr
@@ -1721,9 +1720,7 @@ root(ROOTS.Unsorted, {
 				q(73897),	--
 				q(73904),	--
 				q(73905),	--
-				q(73934),	--
 				q(73935),	--
-				q(73937),	--
 				q(73969),	--
 				q(73970),	--
 				q(73971),	--

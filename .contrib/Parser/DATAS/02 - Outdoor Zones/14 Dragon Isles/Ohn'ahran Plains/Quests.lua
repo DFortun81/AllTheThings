@@ -759,7 +759,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["coord"] = { 83.4, 32.3, OHNAHRAN_PLAINS },
 					}),
 					q(66005, {	-- Medallion of a Fallen Friend
-						["sourceQuests"] = { 65950 },	-- Thieving Gorlocs
+						-- ["sourceQuests"] = {  },	--
 						["provider"] = { "i", 191127 },	-- Medallion of a Fallen Friend
 						["coord"] = { 82.0, 31.4, OHNAHRAN_PLAINS },
 					}),
@@ -811,7 +811,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["sourceQuests"] = { 65895 },	-- Competing Company
 						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
 						["coord"] = { 62.1, 16.3, OHNAHRAN_PLAINS },
-						["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 						["classes"] = { EVOKER },
 					}),
 					q(65898, {	-- Proto Problems
@@ -991,7 +990,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			q(70155, {	-- Look, Listen, and Breathe
 				["provider"] = { "n", 194282 },	-- Threshrak
 				["coord"] = { 34.1, 59.4, OHNAHRAN_PLAINS },
-				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["classes"] = { EVOKER },
 			}),
 			q(70319, {	-- Nergazurai
@@ -1061,7 +1059,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["provider"] = { "n", 192498 },	-- Hephaesta
 				["coord"] = { 71.8, 78.7, OHNAHRAN_PLAINS },
 				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
-				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
 			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["isDaily"] = true,

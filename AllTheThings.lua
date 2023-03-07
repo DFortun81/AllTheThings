@@ -2706,15 +2706,13 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 			TotalQuests = TotalQuests + 1;
 		end
 		rawset(t, key, value);
-		rawset(DirtyQuests, key, true);
-		rawset(DirtyQuests, "DIRTY", true);
+		tinsert(DirtyQuests, key);
 		ATTAccountWideData.Quests[key] = 1;
 		app.CurrentCharacter.Quests[key] = 1;
 		PrintQuestInfo(key);
 	elseif value == false then
 		TotalQuests = TotalQuests - 1;
-		rawset(DirtyQuests, key, true);
-		rawset(DirtyQuests, "DIRTY", true);
+		tinsert(DirtyQuests, key);
 		-- no need to actually set the key in the table since it's been marked as incomplete
 		-- and this meta function only triggers on NEW key assignments
 		PrintQuestInfo(key, false);
@@ -8754,14 +8752,15 @@ app.ShowIfReplayableQuest = function(data)
 	data.visible = C_QuestLog_IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
 	return true;
 end
-local UpdateQuestIDs, CompletedKeys = {}, {};
+local CompletedKeys = {};
 local function QueryCompletedQuests()
+	wipe(DirtyQuests);
 	local freshCompletes = C_QuestLog_GetAllCompletedQuestIDs();
 	-- sometimes Blizz pretends that 0 Quests are completed. How silly of them!
 	if not freshCompletes or #freshCompletes == 0 then
 		return;
 	end
-	-- print("total completed quests new/previous",#freshCompletes,TotalQuests)
+	-- app.PrintDebug("QueryCompletedQuests",#freshCompletes,TotalQuests)
 	local oldReportSetting = app.Settings:GetTooltipSetting("Report:CompletedQuests");
 	-- check if Blizzard is being dumb / should we print a summary instead of individual lines
 	local questDiff = #freshCompletes - TotalQuests;
@@ -8796,52 +8795,23 @@ local function QueryCompletedQuests()
 	end
 end
 app.QueryCompletedQuests = QueryCompletedQuests;
--- A set of quests which indicate a needed refresh to the Custom Collect status of the character
-local CustomCollectQuests = {
-	[56775] = 1,	-- New Player Experience Starting Quest
-	[59926] = 1,	-- New Player Experience Starting Quest
-	[58911] = 1,	-- New Player Experience Ending Quest
-	[60359] = 1,	-- New Player Experience Ending Quest
-	[62713] = 1,	-- Shadowlands - SL_SKIP (Threads of Fate)
-	[65076] = 1,	-- Shadowlands - Covenant - Kyrian
-	[65077] = 1,	-- Shadowlands - Covenant - Venthyr
-	[65078] = 1,	-- Shadowlands - Covenant - Night Fae
-	[65079] = 1,	-- Shadowlands - Covenant - Necrolord
-};
 local function RefreshQuestCompletionState(questID)
 	-- app.PrintDebug("RefreshQuestCompletionState",questID)
 	if questID then
+		wipe(DirtyQuests);
 		questID = tonumber(questID);
 		CompletedQuests[questID] = true;
 	else
 		QueryCompletedQuests();
 	end
 
-	-- update if any quests were even completed to ensure visible changes occur
-	if questID or DirtyQuests.DIRTY then
-		DirtyQuests.DIRTY = nil;
-		-- make sure to update the incoming questID if it isn't marked after the refresh, somehow
-		if not DirtyQuests[questID] then
-			tinsert(UpdateQuestIDs, questID);
-		end
-		for questID,_ in pairs(DirtyQuests) do
-			tinsert(UpdateQuestIDs, questID);
-			-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
-			if CustomCollectQuests[questID] then
-				Callback(app.RefreshCustomCollectibility);
-			end
-		end
-		-- if app.DEBUG_PRINT then
-		-- 	app.PrintDebug("Update Quests")
-		-- 	app.PrintTable(UpdateQuestIDs)
-		-- end
-		UpdateRawIDs("questID", UpdateQuestIDs);
-		wipe(UpdateQuestIDs);
+	-- update if any quests were even changed to ensure visible changes occur
+	if #DirtyQuests > 0 then
+		UpdateRawIDs("questID", DirtyQuests);
 		wipe(searchCache);
 	end
 	-- re-register the criteria update event
 	app:RegisterEvent("CRITERIA_UPDATE");
-	wipe(DirtyQuests);
 	wipe(npcQuestsCache);
 	-- app.PrintDebugPrior("RefreshedQuestCompletionState")
 end
@@ -14965,6 +14935,10 @@ app.SetDGUDelay = function(delay)
 	DGUDelay = math.min(2, math.max(0.1, tonumber(delay)));
 end
 local function DirectGroupUpdate(group, got)
+	-- DGU OnUpdate needs to run regardless of filtering
+	if group.DGUOnUpdate then
+		group:DGUOnUpdate();
+	end
 	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
 	if not app.RecursiveDirectGroupRequirementsFilter(group) then
 		-- app.PrintDebug("DGU:Filtered",group.hash,group.parent.text)
@@ -18766,6 +18740,7 @@ app._RefreshData = function()
 	wipe(searchCache);
 end
 function app:RefreshData(lazy, got, manual)
+	if app.refreshDataQueued then return; end
 	-- app.PrintDebug("RefreshData",lazy and "LAZY", got and "COLLECTED", manual and "MANUAL")
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	app.refreshDataGot = app.refreshDataGot or got;
@@ -24035,6 +24010,36 @@ app.Startup = function()
 	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
 end
 
+-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
+local function DGU_CustomCollect(t)
+	-- app.PrintDebug("DGU_CustomCollect",t.hash)
+	Callback(app.RefreshCustomCollectibility);
+end
+-- A set of quests which indicate a needed refresh to the Custom Collect status of the character
+local DGU_Quests = {
+	[51211] = DGU_CustomCollect,	-- Heart of Azeroth Quest
+	[56775] = DGU_CustomCollect,	-- New Player Experience Starting Quest
+	[59926] = DGU_CustomCollect,	-- New Player Experience Starting Quest
+	[58911] = DGU_CustomCollect,	-- New Player Experience Ending Quest
+	[60359] = DGU_CustomCollect,	-- New Player Experience Ending Quest
+	[62713] = DGU_CustomCollect,	-- Shadowlands - SL_SKIP (Threads of Fate)
+	[65076] = DGU_CustomCollect,	-- Shadowlands - Covenant - Kyrian
+	[65077] = DGU_CustomCollect,	-- Shadowlands - Covenant - Venthyr
+	[65078] = DGU_CustomCollect,	-- Shadowlands - Covenant - Night Fae
+	[65079] = DGU_CustomCollect,	-- Shadowlands - Covenant - Necrolord
+};
+local function AssignDirectGroupOnUpdates()
+	local questRef;
+	local Search = app.SearchForObject;
+	for questID,func in pairs(DGU_Quests) do
+		questRef = Search("questID", questID);
+		if questRef then
+			-- app.PrintDebug("Assign DGUOnUpdate",questRef.hash)
+			questRef.DGUOnUpdate = func;
+		end
+	end
+end
+
 -- Function which is triggered after Startup
 app.InitDataCoroutine = function()
 	-- First, load the addon data
@@ -24115,6 +24120,9 @@ app.InitDataCoroutine = function()
 		wipe(reagentCache);
 		reagentCache[-1] = reagentCacheVer;
 	end
+
+	-- Assign DGU OnUpdates
+	AssignDirectGroupOnUpdates();
 
 	-- Mark all previously completed quests.
 	app.QueryCompletedQuests();
@@ -24340,8 +24348,6 @@ app.InitDataCoroutine = function()
 		end
 		anyComplete = nil;
 	end
-
-	wipe(DirtyQuests);
 
 	app:RegisterEvent("QUEST_LOG_UPDATE");
 	app:RegisterEvent("QUEST_TURNED_IN");

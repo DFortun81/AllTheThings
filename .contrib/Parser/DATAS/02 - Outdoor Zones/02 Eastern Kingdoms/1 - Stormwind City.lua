@@ -4053,6 +4053,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.2, 57.0, STORMWIND_CITY },
 					["timeline"] = { "added 10.0.2" },
 					["races"] = { DRACTHYR_ALLIANCE },
+					["classes"] = { EVOKER },
 				}),
 				q(32470, {	-- Light Camera Action
 					["qg"] = 16908,	-- Arielle Snapflash

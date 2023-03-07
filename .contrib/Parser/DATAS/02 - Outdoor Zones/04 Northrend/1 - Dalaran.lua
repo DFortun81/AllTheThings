@@ -4118,34 +4118,42 @@ root(ROOTS.Zones, {
 						["description"] = "The Schools of Arcane Magic books share a spawn location with generic books. Read the books in each location to start the respawn timer, which seems to be 3-4 hours.\n\nThe best time to hunt books is right after a server restart.",
 						["groups"] = {
 							crit(7237, {	-- The Schools of Arcane Magic - Abjuration
+								["provider"] = { "o", 192709 },	-- The Schools of Arcane Magic - Abjuration
 								["description"] = "The floor of the Dalaran Visitors Center next to a small book covered table.",
 								["coord"] = { 52.2, 54.8, NORTHREND_DALARAN },
 							}),
 							crit(7238, {	-- The Schools of Arcane Magic - Conjuration
+								["provider"] = { "o", 192710 },	-- The Schools of Arcane Magic - Conjuration
 								["description"] = "First floor of the Violet Citadel on the bottom shelf of the left bookcase on the north side of the room.",
 								["coord"] = { 31.0, 46.7, NORTHREND_DALARAN },
 							}),
 							crit(7239, {	-- The Schools of Arcane Magic - Divination
+								["provider"] = { "o", 192711 },	-- The Schools of Arcane Magic - Divination
 								["description"] = "Between the two bookcases on the south side of the second floor of the Violet Citadel.",
 								["coord"] = { 26.5, 52.2, NORTHREND_DALARAN },
 							}),
 							crit(7240, {	-- The Schools of Arcane Magic - Enchantment
+								["provider"] = { "o", 192713 },	-- The Schools of Arcane Magic - Enchantment
 								["description"] = "On a box on the upper balcony of The Threads of Fate.",
 								["coord"] = { 43.6, 46.7, NORTHREND_DALARAN },
 							}),
 							crit(7241, {	-- The Schools of Arcane Magic - Illusion
+								["provider"] = { "o", 192865 },	-- The Schools of Arcane Magic - Illusion
 								["description"] = "On a box in the corner of the Violet Hold near Archmage Timear.",
 								["coord"] = { 64.4, 52.4, NORTHREND_DALARAN },
 							}),
 							crit(7236, {	-- The Schools of Arcane Magic - Introduction
+								["provider"] = { "o", 192708 },	-- The Schools of Arcane Magic - Introduction
 								["description"] = "First floor of the teleportation room of the Violet Gate near a bookcase.",
 								["coord"] = { 56.7, 45.5, NORTHREND_DALARAN },
 							}),
 							crit(7242, {	-- The Schools of Arcane Magic - Necromancy
+								["provider"] = { "o", 192866 },	-- The Schools of Arcane Magic - Necromancy
 								["description"] = "Second floor of the Legerdemain Lounge in a bookcase in the northwest bedroom.",
 								["coord"] = { 46.8, 39.1, NORTHREND_DALARAN },
 							}),
 							crit(7243, {	-- The Schools of Arcane Magic - Transmutation
+								["provider"] = { "o", 192867 },	-- The Schools of Arcane Magic - Transmutation
 								["description"] = "First floor of the Legerdemain Lounge in the bookcase nearest the stove.",
 								["coord"] = { 46.8, 40.0, NORTHREND_DALARAN },
 							}),
