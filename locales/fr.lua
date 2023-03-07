@@ -538,7 +538,7 @@ local L = app.L;
 		L.DELETE_LINKED_CHARACTER = "Clic droit pour supprimer ce personnage lié";
 		L.DELETE_LINKED_ACCOUNT = "Clic droit pour supprimer ce compte lié";
 		L.DELETE_CHARACTER = "Clic droit pour supprimer ce personnage";
-		L.CONFIRM_DELETE = "\n\nÊtes-vous sûr de vouloir le supprimer ?";
+		L.CONFIRM_DELETE = "\n\nÊtes-vous sûr de vouloir supprimer ce personnage ?";
 
 	-- About tab
 		L.ABOUT = "À Propos";
