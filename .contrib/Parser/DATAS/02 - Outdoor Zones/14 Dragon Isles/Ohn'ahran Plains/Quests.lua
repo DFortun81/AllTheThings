@@ -759,7 +759,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["coord"] = { 83.4, 32.3, OHNAHRAN_PLAINS },
 					}),
 					q(66005, {	-- Medallion of a Fallen Friend
-						["sourceQuests"] = { 65950 },	-- Thieving Gorlocs
+						-- ["sourceQuests"] = {  },	--
 						["provider"] = { "i", 191127 },	-- Medallion of a Fallen Friend
 						["coord"] = { 82.0, 31.4, OHNAHRAN_PLAINS },
 					}),

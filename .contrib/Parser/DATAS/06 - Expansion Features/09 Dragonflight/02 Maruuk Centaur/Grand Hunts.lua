@@ -446,4 +446,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	q(70005),	-- Azure Span East - Completing the Hunt
 	q(70006),	-- Azure Span South - Completing the Hunt
 	q(69998),	-- Waking Shores South - Completing the Hunt
+	q(73934),	-- 'Random' Hunt step trigger/Trophy loot
+	q(73937),	-- Possibly first Hunt step completion of the week
 }));

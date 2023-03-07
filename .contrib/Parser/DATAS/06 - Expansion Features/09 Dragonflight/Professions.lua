@@ -5,6 +5,20 @@
 -- TODO: determine if the 'intro' per-profession quests are actually locked by learning the profession or by completion of the alternate quest...
 -- i.e. Blacksmithing 70357/70358
 
+local EARTH_ELEMENTAL = {
+	["crs"] = {
+		194212,	-- Unleashed Rubble
+		194517,	-- Crushing Elemental
+	},
+	["coords"] = {
+		{ 50.6, 57.6, THALDRASZUS },
+		{ 48.8, 60.6, THALDRASZUS },
+		{ 47.8, 35.6, THE_WAKING_SHORES },
+		{ 50.6, 33.2, THE_WAKING_SHORES },
+		{ 53.6, 31.0, THE_WAKING_SHORES },
+	},
+};
+
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(PROFESSIONS, {
 		n(ACHIEVEMENTS, {
@@ -117,7 +131,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["sourceQuests"] = {
 					69979,	-- A Worthy Hunt
 					67298,	-- The Wonders of the World
+					72366,	-- Account Dragonflight Campaign Completed
 				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["coord"] = { 39.4, 69.8, VALDRAKKEN },
 				["description"] = "Even though Miguel can be found in numerous places around the Dragon Isles, this quest is only offered in Valdrakken once the Dragon Shard of Knowledge chain has been completed.",
@@ -380,7 +396,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70504, {	-- Weekly Alchemy Knowledgepoint #3
 					["name"] = "Alchemy Drop #1: Decayed",
-					["description"] = "Drops from any Decayed Mob.\nCoordinates link to the mobs we found best.",
+					["description"] = "Drops from any Decayed Mob.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = { 186361 },	-- Rotting Treant
 					["coord"] = { 18.6, 38.4, THE_AZURE_SPAN },
 					["provider"] = { "i", 198963 },		-- Decaying Phlegm
@@ -390,9 +406,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70511, {	-- Weekly Alchemy Knowledgepoint #4
 					["name"] = "Alchemy Drop #2: Elemental",
-					["description"] = "Drops from any Elemental.\nCoordinates link to the mobs we found best.",
-					["crs"] = { 195092 },	-- Hydraulic Eroder
-					["coord"] = { 50.2, 59.6, THALDRASZUS },
+					["description"] = "Drops from any Elemental.\nCoordinates link to the spot(s) we found best.",
+					["crs"] = { 191712 },	-- Hissing Springsoul
+					["coord"] = { 80.2, 75.6, OHNAHRAN_PLAINS },
 					["provider"] = { "i", 198964 },		-- Elementious Splinter
 					["timeline"] = { ADDED_DF_REL },
 					["isWeekly"] = true,
@@ -623,7 +639,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
 					["name"] = "Blacksmithing Drop #1: Fire Elemental",
-					["description"] = "Drops from any Fire Elemental.\nCoordinates link to the mobs we found best.",
+					["description"] = "Drops from any Fire Elemental.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = {
 						196168, -- Springs Heater
 						196171, -- Flame Boiler
@@ -635,9 +651,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70512, {	-- Weekly Blacksmithing Knowledgepoint #4
 					["name"] = "Blacksmithing Drop #2: Earth Elemental",
-					["description"] = "Drops from any Earth Elemental.\nCoordinates link to the mobs we found best.",
-					["crs"] = { 194212 },	-- Unleashed Rubble
-					["coord"] = { 50.6, 59.4, THALDRASZUS },
+					["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
+					["crs"] = EARTH_ELEMENTAL.crs,
+					["coords"] = EARTH_ELEMENTAL.coords,
 					["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
 					["timeline"] = { ADDED_DF_REL },
 					["isWeekly"] = true,
@@ -917,7 +933,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70515, {	-- Weekly Enchanting Knowledgepoint #3
 					["name"] = "Enchanting Drop #1: Primalist",
-					["description"] = "Drops from any mob with Primalist in the name.\nCoordinates link to the mobs we found best.",
+					["description"] = "Drops from any mob with Primalist in the name.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = { 194656 },	-- Primalist Surgecrusher
 					["coord"] = { 53.4, 56.2, THALDRASZUS },
 					["provider"] = { "i", 198968 },	-- Primalist Charm
@@ -926,7 +942,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70514, {	-- Weekly Enchanting Knowledgepoint #4
 					["name"] = "Enchanting Drop #2: Arcane Elemental",
-					["description"] = "Drops from any Arcane Elemental.\nCoordinates link to the mobs we found best.",
+					["description"] = "Drops from any Arcane Elemental.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = { 181536 },	-- Destabilized Elemental
 					["coord"] = { 40.6, 60.8, THE_AZURE_SPAN },
 					["provider"] = { "i", 198967 },	-- Primordial Aether
@@ -1163,7 +1179,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70517, {	-- Weekly Engineering Knowledgepoint #3
 					["name"] = "Engineering Drop #1: Dragon-esque",
-					["description"] = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the mobs closest to Valdrakken.",
+					["description"] = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = { 194656 },	-- Reservoir Dapple
 					["coord"] = { 49.4, 62.6, THALDRASZUS },
 					["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
@@ -1552,7 +1568,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70518, {	-- Weekly Inscription Knowledgepoint #3
 					["name"] = "Inscription Drop #1: Qalashi Djaradin",
-					["description"] = "Drops from any Qalashi Djaradin.\nCoordinates link to the mobs we found best.",
+					["description"] = "Drops from any Qalashi Djaradin.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = {
 						186109,	-- Qalashi Necksnapper
 						186110,	-- Djaradin Crustshaper
@@ -1569,7 +1585,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70519, {	-- Weekly Inscription Knowledgepoint #4
 					["name"] = "Inscription Drop #2: Dragon-kin/Proto Drakes",
-					["description"] = "Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the mobs closest to Valdrakken.",
+					["description"] = "Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = {
 						193973,	-- Mistyvale Splashcaster
 						193969,	-- Mistyvale Firestarter
@@ -1838,7 +1854,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #3
 					["name"] = "Jewelcrafting Drop #1: Well Dressed",
-					["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot we found best.",
+					["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = {
 						195215,	-- Rebel Bruiser
 						195062,	-- Rebel Incinerator
@@ -1855,15 +1871,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #4
-					["name"] = "Jewelcrafting Drop #2: Corporeal Elemental",
-					["description"] = "Drops from any Corporeal Elemental.\nCoordinates link to the mobs closest to Valdrakken.",
-					["crs"] = {
-						194212,	-- Unleashed Rubble
-					},
-					["coords"] = {
-						{ 50.6, 57.6, THALDRASZUS },
-						{ 48.8, 60.6, THALDRASZUS },
-					},
+					["name"] = "Jewelcrafting Drop #2: Earth Elemental",
+					["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
+					["crs"] = EARTH_ELEMENTAL.crs,
+					["coords"] = EARTH_ELEMENTAL.coords,
 					["provider"] = { "i", 198973 },	-- Incandescent Curio
 					["timeline"] = { ADDED_DF_REL },
 					["isWeekly"] = true,
@@ -2115,7 +2126,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70522, {	-- Weekly Leatherworking Knowledgepoint #3
 					["name"] = "Leatherworking Drop #1: Proto Drake",
-					["description"] = "Drops from any Proto Drake.\nCoordinates link to the mobs we found best.",
+					["description"] = "Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = {
 						196420,	-- Cavern Hunter (Thaldraszus)
 						190056,	-- Primal Proto-Drake
@@ -2131,7 +2142,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70523, {	-- Weekly Leatherworking Knowledgepoint #4
 					["name"] = "Leatherworking Drop #2: Sylvern&Vorquin",
-					["description"] = "Drops from any Sylvern or Vorquin.\nCoordinates link to the mobs closest to Valdrakken.",
+					["description"] = "Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = {
 						188277,	-- Garden Herdmare
 						191317,	-- Creekside Grazer
@@ -2656,7 +2667,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70525, {	-- Weekly Tailoring Knowledgepoint #3
 					["name"] = "Tailoring Drop #1: Beast Humanoid",
-					["description"] = "Drops from any beastlike Humanoid.\nCoordinates link to the mobs closest to Valdrakken.",
+					["description"] = "Drops from any beastlike Humanoid.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = {
 						192500,	-- Fetid Slogger
 						192506,	-- Hyena Tender
@@ -2671,7 +2682,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70524, {	-- Weekly Tailoring Knowledgepoint #4
 					["name"] = "Tailoring Drop #2: Ohn'ahran Humanoid",
-					["description"] = "Drops from any Ohn'ahran Humanoid.\nCoordinates link to the mobs closest to Valdrakken.",
+					["description"] = "Drops from any Ohn'ahran Humanoid.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = {
 						193840,	-- Nokhud Raider
 					},
