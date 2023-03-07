@@ -18740,6 +18740,7 @@ app._RefreshData = function()
 	wipe(searchCache);
 end
 function app:RefreshData(lazy, got, manual)
+	if app.refreshDataQueued then return; end
 	-- app.PrintDebug("RefreshData",lazy and "LAZY", got and "COLLECTED", manual and "MANUAL")
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	app.refreshDataGot = app.refreshDataGot or got;
