@@ -158,7 +158,51 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				crit(5),	-- Dragonskull Island
 				crit(6),	-- Caldera of the Menders
 			}),
+			ach(17529),	-- Forbidden Spoils
+			petbattle(ach(17541, {	-- Global Swarming
+				crit(1, {	-- Cutting Wind
+					["_quests"] = { 73146 },
+				}),
+				crit(2, {	-- Shifting Ground
+					["_quests"] = { 73147 },
+				}),
+				crit(3, {	-- Combustible Vegetation
+					["_quests"] = { 73148 },
+				}),
+				crit(4, {	-- Flood Warning
+					["_quests"] = { 73149 },
+				}),
+			})),
 			ach(17528),	-- Hoarder of the Forbidden Reach
+			ach(17530, {	-- Librarian of the Reach
+				crit(1, {	-- The Burden of Lapisagos
+					["provider"] = { "i", 204338 },	-- The Burden of Lapisagos
+				}),
+				crit(2, {	-- A Soldier's Journal
+					["provider"] = { "i", 204316 },	-- A Soldier's Journal
+				}),
+				crit(3, {	-- A Song of the Depths
+					["provider"] = { "i", 204335 },	-- A Song of the Depths
+				}),
+				crit(4, {	-- Return of the Nightsquall
+					["provider"] = { "i", 204328 },	-- Return of the Nightsquall
+				}),
+				crit(5, {	-- Lost Expedition Notes
+					["provider"] = { "i", 204321 },	-- Lost Expedition Notes
+				}),
+				crit(6, {	-- Words of the Wyrmslayer
+					["provider"] = { "i", 204317 },	-- Words of the Wyrmslayer
+				}),
+				crit(7, {	-- Living Book
+					["provider"] = { "i", 204691 },	-- Living Book
+				}),
+				crit(8, {	-- Opera of the Aspects
+					["provider"] = { "i", 204181 },	-- Opera of the Aspects
+				}),
+				crit(9, {	-- The Old Gods and the Ordering of Azeroth (Annotated)
+					["provider"] = { "i", 204185 },	-- The Old Gods and the Ordering of Azeroth (Annotated)
+				}),
+			}),
 			ach(17527),	-- Scavenger of the Forbidden Reach
 			ach(17532),	-- Scroll Hunter
 			ach(17526, {	-- Treasures of the Forbidden Reach
@@ -199,19 +243,81 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					-- TODO: ["_quests"] = {  },
 				}),
 			}),
+			ach(17540, {	-- Under the Weather
+				crit(1),	-- Air
+				crit(2),	-- Earth
+				crit(3),	-- Fire
+				crit(4),	-- Water
+			}),
+			ach(17315, {	-- While We Were Sleeping
+				crit(1, {	-- Journal Entry: The Creches
+					["_quests"] = {
+						73114, -- Journal Entry: The Creches (A)
+						74883,	-- Journal Entry: The Creches (H)
+					},
+				}),
+				crit(2, {	-- Journal Entry: Experiments
+					["_quests"] = {
+						74866, -- Journal Entry: Experiments (A)
+						73110,	-- Journal Entry: Experiments (H)
+					},
+				}),
+				crit(3, {	-- Journal Entry: Relics
+					["_quests"] = {
+						73113, -- Journal Entry: Relics (A)
+						74880,	-- Journal Entry: Relics (H)
+					},
+				}),
+				crit(4, {	-- Journal Entry: Silence
+					["_quests"] = {
+						73115, -- Journal Entry: Silence (A)
+						74896,	-- Journal Entry: Silence (H)
+					},
+				}),
+				crit(5, {	-- Receiving Stone: Final Warning
+					["_quests"] = {
+						73109, -- Journal Entry: Final Warning (A)
+						74900,	-- Journal Entry: Final Warning (H)
+					},
+				}),
+				crit(6, {	-- Sending Stone: Protest
+					["_quests"] = {
+						72944, -- Journal Entry: Protest (A)
+						74901,	-- Journal Entry: Protest (H)
+					},
+				}),
+				crit(7, {	-- Sending Stone: Initial Report
+					["_quests"] = {
+						73107, -- Journal Entry: Initial Report (A)
+						74902,	-- Journal Entry: Initial Report (H)
+					},
+				}),
+				crit(8, {	-- Sending Stone: The Prisoner
+					["_quests"] = {
+						73108, -- Journal Entry: The Prisoner (A)
+						74903,	-- Journal Entry: The Prisoner (H)
+					},
+				}),
+			}),
 			ach(17531),	-- X Marks the Spot
-
-
-
-			-- Not Done Yet
-			ach(17529),	-- Forbidden Spoils
-			ach(17530),	-- Librarian of the Reach
-			ach(17315),	-- While We Were Sleeping
-
-			ach(17540),	-- Under the Weather
-			petbattle(ach(17541)),	-- Global Swarming
 			ach(17543, {	-- You Know How to Reach Me [META]
-				title(495),	-- <Name> the Forbidden
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					17525, 	-- Champion of the Forbidden Reach
+					17413,	-- Door Buster
+					17509,	-- Every Door, Everywhere, All At Once
+					17534,	-- Explore the Forbidden Reach
+					17529,	-- Forbidden Spoils
+					17528,	-- Hoarder of the Forbidden Reach
+					17530, 	-- Librarian of the Reach
+					17532,	-- Scroll Hunter
+					17526,	-- Treasures of the Forbidden Reach
+					17540, 	-- Under the Weather
+					17315, 	-- While We Were Sleeping
+				}},
+				["g"] = {
+					title(495),	-- <Name> the Forbidden
+				}
 			}),
 		}),
 	}),

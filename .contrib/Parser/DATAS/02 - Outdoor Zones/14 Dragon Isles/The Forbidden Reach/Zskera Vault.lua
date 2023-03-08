@@ -74,6 +74,56 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						i(203701),	-- Neltharion Gift Token
 					},
 				}),
+
+				-- Evoker Tablets
+				q(74866, { -- Journal Entry: Experiments (A)
+					["provider"] = { "i", 204200 },	-- Journal Entry: Experiments
+				}),
+				q(73110, {	-- Journal Entry: Experiments (H)
+					["provider"] = { "i", 202329 },	-- Journal Entry: Experiments
+				}),
+				q(73109, { -- Journal Entry: Final Warning (A)
+					["provider"] = { "i", 202328 },	-- Journal Entry: Final Warning
+				}),
+				q(74900, {	-- Journal Entry: Final Warning (H)
+					["provider"] = { "i", 204250 },	-- Journal Entry: Final Warning
+				}),
+				q(73107, { -- Journal Entry: Initial Report (A)
+					["provider"] = { "i", 202326 },	-- Journal Entry: Initial Report
+				}),
+				q(74902, {	-- Journal Entry: Initial Report (H)
+					["provider"] = { "i", 204252 },	-- Journal Entry: Initial Report
+				}),
+				q(72944, { --Journal Entry: Protest (A)
+					["provider"] = { "i", 202203 },	-- Journal Entry: Protest
+				}),
+				q(74901, {	-- Journal Entry: Protest (H)
+					["provider"] = { "i", 204251 },	-- Journal Entry: Protest
+				}),
+				q(73113, { -- Journal Entry: Relics (A)
+					["provider"] = { "i", 202335 },	-- Journal Entry: Relics
+				}),
+				q(74880, {	-- Journal Entry: Relics (H)
+					["provider"] = { "i", 204221 },	-- Journal Entry: Relics
+				}),
+				q(73115, { --Journal Entry: Silence (A)
+					["provider"] = { "i", 202337 },	-- Journal Entry: Silence
+				}),
+				q(74896, {	-- Journal Entry: Silence (H)
+					["provider"] = { "i", 204246 },	-- Journal Entry: Silence
+				}),
+				q(73114, { -- Journal Entry: The Creches (A)
+					["provider"] = { "i", 202336 },	-- Journal Entry: The Creches
+				}),
+				q(74883, {	-- Journal Entry: The Creches (H)
+					["provider"] = { "i", 204223 },	-- Journal Entry: The Creches
+				}),
+				q(73108, { -- Journal Entry: The Prisoner (A)
+					["provider"] = { "i", 202327 },	-- Journal Entry: The Prisoner
+				}),
+				q(74903, {	-- Journal Entry: The Prisoner (H)
+					["provider"] = { "i", 204253 },	-- Journal Entry: The Prisoner
+				}),
 			}),
 			n(TREASURES, {
 				o(388866, {	-- Reagent Pot

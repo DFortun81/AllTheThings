@@ -719,17 +719,9 @@ root(ROOTS.Unsorted, {
 				i(202326),	-- Sending Stone: Initial Report
 				i(202327),	-- Sending Stone: The Prisoner
 				i(202328),	-- Receiving Stone: Final Warning
-				i(202329),	-- Journal Entry: Experiments
-				i(202335),	-- Journal Entry: Relics
-				i(202336),	-- Journal Entry: The Creches
-				i(202337),	-- Journal Entry: Silence
 				i(202362),	-- Arcane Focus
 				i(203398),	-- Dampening Powder
-				i(204200),	-- Journal Entry: Experiments
-				i(204221),	-- Journal Entry: Relics
-				i(204223),	-- Journal Entry: The Creches
 				i(204237),	-- Clockwork Azshara
-				i(204246),	-- Journal Entry: Silence
 				i(204249),	-- Translated Correspondence of Black Dragons
 				i(204250),	-- Receiving Stone: Final Warning
 				i(204251),	-- Sending Stone: Protest
@@ -808,7 +800,6 @@ root(ROOTS.Unsorted, {
 				q(72906),
 				q(72907),
 				q(72941),
-				q(72944),
 				q(72945),
 				q(72952),
 				q(72953),
@@ -857,14 +848,7 @@ root(ROOTS.Unsorted, {
 				q(73083),
 				q(73084),
 				q(73089),
-				q(73107),
-				q(73108),
-				q(73109),
-				q(73110),
 				q(73112),
-				q(73113),
-				q(73114),
-				q(73115),
 				q(73127),
 				q(73129),
 				q(73136),
@@ -876,7 +860,6 @@ root(ROOTS.Unsorted, {
 				q(73143),
 				q(73144),
 				q(73145),
-				q(73146),
 				q(73148),
 				q(73149),
 				q(73153),
@@ -1143,22 +1126,14 @@ root(ROOTS.Unsorted, {
 				q(74862),
 				q(74864),
 				q(74865),
-				q(74866),
 				q(74867),
 				q(74869),
 				q(74871),
 				q(74874),
 				q(74875),
-				q(74880),
 				q(74881),
-				q(74883),
 				q(74890),
 				q(74891),
-				q(74896),
-				q(74900),
-				q(74901),
-				q(74902),
-				q(74903),
 				q(74908),
 				q(74909),
 				q(74910),

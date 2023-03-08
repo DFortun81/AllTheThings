@@ -12,6 +12,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				petbattle(q(73148, {	-- Combustible Vegetation
 					["coord"] = { 13.6, 53.6, THE_FORBIDDEN_REACH },
 				})),
+				petbattle(q(73146, {	-- Cutting Wind
+					--TODO: ["coord"] = { , THE_FORBIDDEN_REACH },
+				})),
 				petbattle(q(73149, {	-- Flood Warning
 					["coord"] = { 86.7, 62.4, THE_FORBIDDEN_REACH },
 				})),
