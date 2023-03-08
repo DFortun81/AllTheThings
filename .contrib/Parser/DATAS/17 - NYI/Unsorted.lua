@@ -198,7 +198,6 @@ root(ROOTS.Unsorted, {
 				i(202180),	-- Ripe Burcicle Berry
 				i(202181),	-- Best-root Tuber
 				i(202185),	-- Chillwrought Worm Meat
-				i(202196),	-- Zskera Vault Key
 				i(202202),	-- Revealing Mask
 				i(202274),	-- Renewed Proto-Drake: Plated Brow
 				i(202275),	-- Renewed Proto-Drake: Plated Jaw
@@ -1138,16 +1137,8 @@ root(ROOTS.Unsorted, {
 				q(74784),
 				q(74788),
 				q(74789),
-				q(74792),
-				q(74794),
 				q(74795),
 				q(74796),
-				q(74835),
-				q(74836),
-				q(74837),
-				q(74838),
-				q(74840),
-				q(74841),
 				q(74847),
 				q(74862),
 				q(74864),

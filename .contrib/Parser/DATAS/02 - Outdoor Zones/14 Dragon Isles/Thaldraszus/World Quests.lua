@@ -49,6 +49,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(71205, {	-- Hydro Tuskarr
 					["coord"] = { 53.6, 41.5, THALDRASZUS }
 				}),
+				petbattle(q(74794, {	-- Right Twice a Day
+					["coord"] = { 60.63, 59.74, THALDRASZUS }
+				})),
 				q(71156, {	-- Rebel Concerns
 					["coord"] = { 46.2, 52.2, THALDRASZUS },
 				}),
@@ -69,6 +72,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				petbattle(q(71166, {	-- The Oldest Dragonfly
 					["coord"] = { 39.6, 73.4, THALDRASZUS }
+				})),
+				petbattle(q(74792, {	-- They're Full of Stars!
+					["coord"] = { 55.97, 40.54, THALDRASZUS }
 				})),
 				q(70057, {	-- Thieving Tarasek
 					["coord"] = { 56.2, 68.7, THALDRASZUS }
