@@ -2541,109 +2541,6 @@ local function GetFixedItemSpecInfo(itemID)
 end
 
 -- Quest Completion Lib
--- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
-app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, checks)
-	local info = {
-		"**"..(infoText or "quest-info")..":"..id.."**",
-		"```",	-- discord fancy box start
-	};
-	local coord;
-	local mapID = app.GetCurrentMapID();
-	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
-	local covID, covInfo = C_Covenants.GetActiveCovenantID();
-	if covID and covID > 0 then
-		local covData = C_Covenants.GetCovenantData(covID);
-		local covRenown = C_CovenantSanctumUI.GetRenownLevel();
-		covInfo = covID..":"..covData.name..":"..covRenown;
-	end
-	local DFmajorFactionIDs, majorFactionInfo, data = C_MajorFactions.GetMajorFactionIDs(9), {};
-	if DFmajorFactionIDs then
-		for _,factionID in ipairs(DFmajorFactionIDs) do
-			data = C_MajorFactions.GetMajorFactionData(factionID);
-			tinsert(majorFactionInfo, "|");
-			tinsert(majorFactionInfo, factionID);
-			tinsert(majorFactionInfo, ":");
-			tinsert(majorFactionInfo, data.name:sub(1,4));
-			tinsert(majorFactionInfo, ":");
-			tinsert(majorFactionInfo, data.renownLevel);
-		end
-	end
-	if position then
-		local x,y = position:GetXY();
-		x = math.floor(x * 1000) / 10;
-		y = math.floor(y * 1000) / 10;
-		coord = x..", "..y;
-	end
-	local skills = {};
-	for profID,known in pairs(app.CurrentCharacter.Professions) do
-		-- professions inherently known by all characters are marked 1 specifically; dynamic ones are true
-		if known ~= 1 then
-			tinsert(skills, "|"..profID..":");
-			tinsert(skills, C_TradeSkillUI.GetTradeSkillDisplayName(profID):sub(1,4));
-		end
-	end
-
-	tinsert(info, questChange.." '"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???").."'");
-	if checks then
-		for k,v in pairs(checks) do
-			tinsert(info, k..":"..tostring(v))
-		end
-	end
-	tinsert(info, "L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")");
-	tinsert(info, "cov:"..(covInfo or "N/A").." renown"..(app.TableConcat(majorFactionInfo)));
-	tinsert(info, "skills"..(app.TableConcat(skills) or ""));
-	tinsert(info, "sq:"..app.SourceQuestString(questRef or id));
-	tinsert(info, "lq:"..(app.LastQuestTurnedIn or ""));
-	tinsert(info, mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??");
-	tinsert(info, coord and ("coord:"..coord) or "coord:??");
-	tinsert(info, "ver:"..app.Version);
-	tinsert(info, "```"); 	-- discord fancy box end
-
-	return info;
-end
--- Checks a given quest reference against the current character info to see if something is inaccurate
-app.CheckInaccurateQuestInfo = function(questRef, questChange)
-	if questRef and questRef.questID then
-		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
-		local id = questRef.questID;
-		local completed = app.CurrentCharacter.Quests[id];
-		local filter = app.CurrentCharacterFilters(questRef);
-		local inGame = app.ItemIsInGame(questRef);
-		local incomplete = (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed) and true;
-		local metPrereq = not questRef.missingPrequisites;
-		if not (
-			-- expectations for accurate quest data
-			-- meets current character filters
-			filter
-			-- is marked as in the game
-			and inGame
-			-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check
-			and incomplete
-			-- not missing pre-requisites
-			and metPrereq
-			-- debugging, show link for any accepted quest
-			-- and false
-			)
-		then
-			-- Play a sound when a reportable error is found, if any sound setting is enabled
-			app:PlayReportSound();
-
-			local popupID = "quest-filter-" .. id;
-			local checks = {
-				["Filter"] = filter,
-				["InGame"] = inGame,
-				["Incomplete"] = incomplete,
-				["PreReq"] = metPrereq,
-			};
-			if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
-				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef, checks))
-			then
-				local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], app.Colors.ChatLinkError, "dialog:" .. popupID);
-				Callback(app.print, reportMsg);
-			end
-		end
-	end
-end
 local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local questRef = app.SearchForObject("questID", questID, "field");
@@ -2719,6 +2616,109 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	end
 end});
 -- app.CompletedQuests = CompletedQuests;
+-- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
+app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, checks)
+	local info = {
+		"**"..(infoText or "quest-info")..":"..id.."**",
+		"```",	-- discord fancy box start
+	};
+	local coord;
+	local mapID = app.GetCurrentMapID();
+	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
+	local covID, covInfo = C_Covenants.GetActiveCovenantID();
+	if covID and covID > 0 then
+		local covData = C_Covenants.GetCovenantData(covID);
+		local covRenown = C_CovenantSanctumUI.GetRenownLevel();
+		covInfo = covID..":"..covData.name..":"..covRenown;
+	end
+	local DFmajorFactionIDs, majorFactionInfo, data = C_MajorFactions.GetMajorFactionIDs(9), {};
+	if DFmajorFactionIDs then
+		for _,factionID in ipairs(DFmajorFactionIDs) do
+			data = C_MajorFactions.GetMajorFactionData(factionID);
+			tinsert(majorFactionInfo, "|");
+			tinsert(majorFactionInfo, factionID);
+			tinsert(majorFactionInfo, ":");
+			tinsert(majorFactionInfo, data.name:sub(1,4));
+			tinsert(majorFactionInfo, ":");
+			tinsert(majorFactionInfo, data.renownLevel);
+		end
+	end
+	if position then
+		local x,y = position:GetXY();
+		x = math.floor(x * 1000) / 10;
+		y = math.floor(y * 1000) / 10;
+		coord = x..", "..y;
+	end
+	local skills = {};
+	for profID,known in pairs(app.CurrentCharacter.Professions) do
+		-- professions inherently known by all characters are marked 1 specifically; dynamic ones are true
+		if known ~= 1 then
+			tinsert(skills, "|"..profID..":");
+			tinsert(skills, C_TradeSkillUI.GetTradeSkillDisplayName(profID):sub(1,4));
+		end
+	end
+
+	tinsert(info, questChange.." '"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???").."'");
+	if checks then
+		for k,v in pairs(checks) do
+			tinsert(info, k..":"..tostring(v))
+		end
+	end
+	tinsert(info, "L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")");
+	tinsert(info, "cov:"..(covInfo or "N/A").." renown"..(app.TableConcat(majorFactionInfo)));
+	tinsert(info, "skills"..(app.TableConcat(skills) or ""));
+	tinsert(info, "sq:"..app.SourceQuestString(questRef or id));
+	tinsert(info, "lq:"..(app.LastQuestTurnedIn or ""));
+	tinsert(info, mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??");
+	tinsert(info, coord and ("coord:"..coord) or "coord:??");
+	tinsert(info, "ver:"..app.Version);
+	tinsert(info, "```"); 	-- discord fancy box end
+
+	return info;
+end
+-- Checks a given quest reference against the current character info to see if something is inaccurate
+app.CheckInaccurateQuestInfo = function(questRef, questChange)
+	if questRef and questRef.questID then
+		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
+		local id = questRef.questID;
+		local completed = CompletedQuests[id];
+		local filter = app.CurrentCharacterFilters(questRef);
+		local inGame = app.ItemIsInGame(questRef);
+		local incomplete = (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed) and true;
+		local metPrereq = not questRef.missingPrequisites;
+		if not (
+			-- expectations for accurate quest data
+			-- meets current character filters
+			filter
+			-- is marked as in the game
+			and inGame
+			-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check
+			and incomplete
+			-- not missing pre-requisites
+			and metPrereq
+			-- debugging, show link for any accepted quest
+			-- and false
+			)
+		then
+			-- Play a sound when a reportable error is found, if any sound setting is enabled
+			app:PlayReportSound();
+
+			local popupID = "quest-filter-" .. id;
+			local checks = {
+				["Filter"] = filter,
+				["InGame"] = inGame,
+				["Incomplete"] = incomplete,
+				["PreReq"] = metPrereq,
+			};
+			if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
+				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef, checks))
+			then
+				local reportMsg = app:Linkify(L["REPORT_INACCURATE_QUEST"], app.Colors.ChatLinkError, "dialog:" .. popupID);
+				Callback(app.print, reportMsg);
+			end
+		end
+	end
+end
 -- returns nil if nil provided, otherwise true/false based on the specific quest being completed by the current character
 local IsQuestFlaggedCompleted = function(questID)
 	return questID and CompletedQuests[questID];
