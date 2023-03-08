@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- }),
 				petbattle(q(74836, {	-- A New Vocation
 					["coord"] = { 19.52, 24.61, THE_AZURE_SPAN },
+					["timeline"] = { ADDED_DF_0_7 },
 				})),
 				q(70629, {	-- Assaulting the Shore
 					["coord"] = { 9.6, 42.4, THE_AZURE_SPAN },
@@ -53,6 +54,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				petbattle(q(74835, {	-- Enok the Stinky
 					["coord"] = { 23.41, 53.56, THE_AZURE_SPAN },
+					["timeline"] = { ADDED_DF_0_7 },
 				})),
 				q(70612, {	-- Feed Three-Falls
 					["coord"] = { 17.8, 27.6, THE_AZURE_SPAN },
