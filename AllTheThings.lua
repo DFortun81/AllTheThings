@@ -2681,7 +2681,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 	if questRef and questRef.questID then
 		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
-		local completed = CompletedQuests[id];
+		local completed = app.CurrentCharacter.Quests[id];
 		local filter = app.CurrentCharacterFilters(questRef);
 		local inGame = app.ItemIsInGame(questRef);
 		local incomplete = (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed) and true;
