@@ -4,6 +4,13 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(VENDORS, {
+			n(192818, {	-- Elder Yusa
+				["description"] = "Target this NPC and /hungry emote. May have to do it twice- the first time she might emote back and not give you anything.",
+				["coord"] = { 41.6, 62.2, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(194965),	-- Recipe: Yusa's Hearty Stew (RECIPE!)
+				},
+			}),
 			n(194928, {	-- Hearthkeeper Erden
 				["coord"] = { 62.2, 35.7, OHNAHRAN_PLAINS },
 				["g"] = {
@@ -68,12 +75,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					}),
 				},
 			}),
-			n(192818, {	-- Elder Yusa
-				["description"] = "Target this NPC and /hungry emote. May have to do it twice- the first time she might emote back and not give you anything.",
+			n(197725, {	-- Tuktu <Grillmaster>
+				["coord"] = { 39.8, 30.8, OHNAHRAN_PLAINS },
 				["g"] = {
-					i(194965),	-- Recipe: Yusa's Hearty Stew (RECIPE!)
+					i(200856),	-- Sideboat
 				},
-				["coord"] = { 41.6, 62.2, OHNAHRAN_PLAINS },
 			}),
 		}),
 	}),

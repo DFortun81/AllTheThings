@@ -48,6 +48,11 @@ _.Zones =
 						["coord"] = { 33.9, 70.0, 672 },
 						["provider"] = { "n", 94410 },	-- Allari the Souleater
 						["sourceQuests"] = { 40378 },	-- Enter the Illidar: Ashtongue
+						["g"] = {
+							i(201989, {	-- Twisted Heart
+								["timeline"] = TIMELINE_DF_REL,
+							}),
+						},
 					}),
 					q(38759, {	-- Set Them Free
 						["coord"] = { 33.9, 70.0, 672 },
@@ -71,6 +76,11 @@ _.Zones =
 						["coord"] = { 38.8, 60.6, 672 },
 						["provider"] = { "n", 93759 },	-- Jace Darkweaver
 						["sourceQuests"] = { 39050 },	-- Meeting With the Queen
+						["g"] = {
+							i(201989, {	-- Twisted Heart
+								["timeline"] = TIMELINE_DF_REL,
+							}),
+						},
 					}),
 					q(38765, {	-- Enter the Illidari: Shivarra
 						["coord"] = { 38.8, 60.6, 672 },
@@ -98,6 +108,11 @@ _.Zones =
 						["coord"] = { 64.0, 52.2, 672 },
 						["provider"] = { "n", 96436 },	-- Jace Darkweaver
 						["sourceQuests"] = { 39262 },	-- Give Me Sight Beyond Sight
+						["g"] = {
+							i(201989, {	-- Twisted Heart
+								["timeline"] = TIMELINE_DF_REL,
+							}),
+						},
 					}),
 					q(38819, {	-- Their Numbers Are Legion
 						["coord"] = { 60.5, 44.8, 672 },
@@ -361,11 +376,21 @@ _.Zones =
 								["coord"] = { 41.0, 47.1, 678 },
 								["provider"] = { "n", 96675 },	-- Allari the Souleater
 								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
+								["g"] = {
+									i(201989, {	-- Twisted Heart
+										["timeline"] = TIMELINE_DF_REL,
+									}),
+								},
 							}),
 							q(40254, {	-- Forged in Fire [Vengeance Only]
 								["coord"] = { 41.0, 47.1, 678 },
 								["provider"] = { "n", 96675 },	-- Allari the Souleater
 								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
+								["g"] = {
+									i(201989, {	-- Twisted Heart
+										["timeline"] = TIMELINE_DF_REL,
+									}),
+								},
 							}),
 							q(39684, {	-- Beam Me Up
 								["coord"] = { 41.3, 47.3, 678 },
@@ -404,21 +429,41 @@ _.Zones =
 								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
 								["races"] = { NIGHTELF },
 								["sourceQuests"] = { 40373 },	-- A New Direction
+								["g"] = {
+									i(201989, {	-- Twisted Heart
+										["timeline"] = TIMELINE_DF_REL,
+									}),
+								},
 							}),
 							q(40255, {	-- Between Us and Freedom / Night Elf [Vengeance]
 								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
 								["races"] = { NIGHTELF },
 								["sourceQuests"] = { 40373 },	-- A New Direction
+								["g"] = {
+									i(201989, {	-- Twisted Heart
+										["timeline"] = TIMELINE_DF_REL,
+									}),
+								},
 							}),
 							q(39694, {	-- Between Us and Freedom / Blood Elf [Havoc]
 								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
 								["races"] = { BLOODELF },
 								["sourceQuests"] = { 40373 },	-- A New Direction
+								["g"] = {
+									i(201989, {	-- Twisted Heart
+										["timeline"] = TIMELINE_DF_REL,
+									}),
+								},
 							}),
 							q(40256, {	-- Between Us and Freedom / Blood Elf [Vengeance]
 								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
 								["races"] = { BLOODELF },
 								["sourceQuests"] = { 40373 },	-- A New Direction
+								["g"] = {
+									i(201989, {	-- Twisted Heart
+										["timeline"] = TIMELINE_DF_REL,
+									}),
+								},
 							}),
 							q(39690, {	-- Illidari, We Are Leaving / Horde
 								["provider"] = { "n", 97978 },	-- Archmage Khadgar

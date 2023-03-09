@@ -4,20 +4,19 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THALDRASZUS, {
 		n(VENDORS, {
-			n(197872, {	-- Assistant Innkeeper Durang <Food & Drink>
+			n(188895, {	-- Assistant Innkeeper Durang <Food & Drink>
 				["coord"] = { 52.44, 69.88, THALDRASZUS },
 				["groups"] = {
-					i(201090, {	-- Bivigosa's Blood Sausages
-					}),
+					i(201090),	-- Bivigosa's Blood Sausages
 				},
 			}),
-			n(188895, {	-- Bromithus <Caffeinomancer>
+			n(197872, {	-- Bromithus <Caffeinomancer>
 				["coord"] = { 50.06, 42.68, THALDRASZUS },
 				["groups"] = {
 					i(201698),	-- Black Dragon Red Eye
-					i(201725),	-- Flappuccino
 					i(201697),	-- Coldarra Coldbrew
-					i(201646),	-- Dreamwarding Dripbrew
+					i(201046),	-- Dreamwarding Dripbrew
+					i(201725),	-- Flappuccino
 					i(201721),	-- Life Fire Latte
 				},
 			}),
@@ -42,7 +41,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(201435),	-- Shuffling Sands (TOY!)
 				},
 			}),
-			n(197586, {	-- Xemah 
+			n(197586, {	-- Xemah
 				["coord"] = { 38.95, 46.31, THALDRASZUS },
 				["g"] = {
 					i(200871),	-- Steamed Scarab Steak

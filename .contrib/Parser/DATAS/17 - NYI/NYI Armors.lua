@@ -2343,6 +2343,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189004),	-- 10.0 Zone Uncommon Template <Descriptor> Trinket
 					i(194398),	-- Crumbling Watcher's Stone (NYI)
 					i(200679),	-- Essence of Somnikus's Shade
+					i(193058),	-- Sherwood - Test Trinket
 					i(198392),	-- zzOldDarkmoon Binding: Awakened Chill
 					i(198391),	-- zzOldDarkmoon Binding: Inferno
 					i(198393),	-- zzOldDarkmoon Binding: Refreshing Dance

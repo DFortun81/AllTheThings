@@ -1360,7 +1360,6 @@ app.L = {
 		--[-918] = Uses Different Icons														-- Tier 3
 		[-920] = "Interface\\Icons\\ui_sigil_necrolord",									-- Covenant: Necrolord
 		--[-921] = Uses Different Icons														-- Sanctum Upgrades
-		[-922] = 132334,																	-- Theater of Pain
 		[-923] = "Interface\\Icons\\sanctum_features_buildabom",							-- Abomination Factory (Necrolord)
 		--[-924] = Uses Different Icons														-- Transport Network
 		--[-925] = Uses Different Icons														-- Tier 4
@@ -1396,15 +1395,6 @@ app.L = {
 		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
-	-- Temp Sets for Creation Catalyst
-		[-1006] = app.asset("Difficulty_LFR"),
-		[-1007] = app.asset("Difficulty_Normal"),
-		[-1008] = app.asset("Difficulty_Heroic"),
-		[-1009] = app.asset("Difficulty_Mythic"),
-		[-1010] = "Interface\\Worldmap\\GlowSkull_64Purple",
-		[-1011] = "Interface\\Worldmap\\GlowSkull_64Red",
-	-- Temp
-		[-1099] = "Interface\\Icons\\inv_legioncampaign04",											-- Campaign
 	-- Dragonflight
 		[-1100] = "Interface\\Icons\\ability_dragonriding_glyph01",									-- Drakewatcher Manuscripts
 		[-1101] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_trinket_1ragingelement_air",	-- Primal Storms
@@ -1905,11 +1895,6 @@ app.L = {
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
 		[-903] = "Zone Rewards",												-- Zone Rewards
 		[-905] = GetSpellInfo(280630),											-- Command Table
-		[-907] = "Dead Blanchy",												-- Dead Blanchy
-		[-909] = "Hunt: Death Elementals",										-- Hunt: Death Elementals
-		[-910] = "Hunt: Alpha Devourers",										-- Hunt: Alpha Devourers
-		[-911] = "Hunt: Shadehounds",											-- Hunt: Shadehounds
-		[-912] = "Hunt: Winged Soul Eaters",									-- Hunt: Winged Soul Eaters
 		[-914] = COVENANT_MISSIONS_TITLE,										-- Adventures
 		[-915] = ANIMA_DIVERSION_ORIGIN_TOOLTIP,								-- Anima Conductor
 		[-916] = string.format(COVENANT_SANCTUM_TIER, 1),						-- Tier 1
@@ -1920,7 +1905,6 @@ app.L = {
 		-- SL Maldraxxus/Necrolord
 		[-920] = GetSpellInfo(321078),											-- Necrolord
 		[-921] = "Sanctum Upgrades",											-- Sanctum Upgrades
-		[-922] = C_Map.GetAreaInfo(11465),										-- Theater of Pain
 		[-923] = COVENANT_SANCTUM_FEATURE_NECROLORDS,							-- Abomination Factory
 		[-924] = "Transport Network",											-- Transport Network
 		[-925] = string.format(COVENANT_SANCTUM_TIER, 4),						-- Tier 4
@@ -1959,15 +1943,6 @@ app.L = {
 		[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
-	-- Temp Sets for Creation Catalyst
-		[-1006] = "Raid Finder Alternative",										-- Raid Finder Alternative
-		[-1007] = "Normal Alternative",												-- Normal Alternative
-		[-1008] = "Heroic Alternative",												-- Heroic Alternative
-		[-1009] = "Mythic Alternative",												-- Mythic Alternative
-		[-1010] = "Gladiator Alternative",											-- Gladiator Alternative
-		[-1011] = "Elite Alternative",												-- Elite Alternative
-	-- Temp
-		[-1099] = TRACKER_HEADER_CAMPAIGN_QUESTS,									-- Campaign
 	-- Dragonflight
 		[-1100] = "Drakewatcher Manuscripts",										-- Drakewatcher Manuscripts
 		[-1101] = "Primal Storms",													-- Primal Storms

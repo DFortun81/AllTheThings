@@ -19,6 +19,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					{ 63.8, 39.0, THE_AZURE_SPAN },
 				},
 			}),
+			i(201420, {	-- Gnolan's House Special
+				["crs"] = {
+					187931,	-- Stormfang Bonecaster
+					187551,	-- Stormfang Dustcaller
+					187549,	-- Stormfang Grunt
+					187930,	-- Stormfang Hexspiter
+					187552,	-- Stormfang Shaman
+				},
+				["coord"] = { 23.0, 43.6, THE_AZURE_SPAN },
+			}),
 			i(193882, {	-- Pattern: Acidic Hailstone Treads (RECIPE!)
 				["description"] = "Drops from Decayed Creatures around Bracken Hollow.",
 			}),

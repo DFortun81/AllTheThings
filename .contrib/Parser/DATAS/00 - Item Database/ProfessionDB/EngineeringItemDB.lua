@@ -154,8 +154,10 @@ i(0, 387246);	-- Zapthrottle Soul Inhaler
 -- QUEST --
 i(0, 377983);	-- Heart in a Bottle
 -- NYI --
+i(0, 384311);	-- Bronze Fireflight
 i(0, 382581);	-- Opening
 i(0, 382352);	-- Perfectly Calibrated Lenses
+i(0, 382360);	-- Tinker Removal Kit
 i(0, 382382);	-- Wisp of Tyr
 i(0, 382372);	--
 i(0, 382373);	--

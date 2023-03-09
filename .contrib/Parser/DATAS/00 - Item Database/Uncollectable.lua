@@ -598,3 +598,38 @@ i(153119);	-- Wyrmtongue Cache of Finery
 -- PATCH 10.0.0 --
 ------------------
 i(201361);	-- Primal Inspiration
+
+------------------
+-- PATCH 10.0.2 --
+------------------
+i(200100);	-- Batubar the Relentless
+i(194433);	-- Bloodhorn's Horn
+i(198982);	-- Broken Part: Head
+i(198983);	-- Broken Part: Arm
+i(198984);	-- Broken Part: Shattered Orb
+i(201044);	-- Cirrus Flowers
+i(200854);	-- Cooked Caviar
+i(192776);	-- Dormant Embercone
+i(191042);	-- Flask of Dwarven Antifreeze
+i(198848);	-- Flyspawn Thorax
+i(194439);	-- Frostfist's Eye
+i(192474);	-- Frozen Core
+i(192473);	-- Hornswog Hide Scraps
+i(200108);	-- Irideus' Power Core
+i(191137);	-- Julh'ek's Runestone
+i(193355);	-- Map of Nelthazan Ruins
+i(194423);	-- Maruuk's Spear
+i(191135);	-- Nai'jin's Runestone
+i(194432);	-- Old Stonetusk's Tusk
+i(198079);	-- Orders from Sarkareth
+i(198078);	-- Recruitment Roster
+i(200115);	-- Sarantuya the Ever-True
+i(201091);	-- Sharp Tooth
+i(193357);	-- Shattered Ornament
+i(191136);	-- Sin'tia's Runestone
+i(193617);	-- Snowhide Totem
+i(194421);	-- Teera's Bow
+i(193070);	-- The Insight of Tyr
+i(193072);	-- The Judgment of Tyr
+i(197958);	-- Watcher Log
+i(193372);	-- Wood

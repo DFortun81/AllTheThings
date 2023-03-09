@@ -1179,6 +1179,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			q(70414, {	-- Shaky Grounds
 				["provider"] = { "n", 195234 },	-- Earthmender Govrum
 				["coord"] = { 37.0, 55.8, THE_WAKING_SHORES },
+				["g"] = {
+					i(200617),	-- Shattering Totem
+				},
 			}),
 			q(66369, {	-- The Earthen Ward
 				["sourceQuests"] = { 66003 },	-- Rings To Bind Them

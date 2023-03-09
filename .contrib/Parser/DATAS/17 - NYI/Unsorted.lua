@@ -1537,38 +1537,7 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 10.0.2" } }, {
-			n(REWARDS, {
-				n(SOURCELESS, {	-- Unsure..
-					i(193054),	-- Luxurious Loop
-					i(193057),	-- 10.0 Placeholder Enchanting Crystal
-					i(193058),	-- Sherwood - Test Trinket
-					i(193067),	-- Acadia's Tools [DNT/Unused]
-					i(201251),	-- Pillaged Contender's Strongbox
-					i(201252),	-- 10.0 Bronze PvP Chest (DNT)
-					i(201253),	-- Competitor's Edge
-					--
-					i(199553),	-- Memory of Unity
-					i(200854),	-- Cooked Caviar
-					i(200856),	-- Sideboat
-					i(200862),	-- Experimental Duck Feed
-					i(200964),	-- Alliance Dueling Flag
-					i(200965),	-- Horde Dueling Flag
-					i(201046),	-- Dreamwarding Dripbrew
-					i(201423),	-- Hallowed Helm
-					i(201989),	-- Twisted Heart
-					i(202062),	-- Ash Feather
-				}),
-				-- New Stuff?
-				i(194421),	-- Teera's Bow
-				i(194423),	-- Maruuk's Spear
-				i(198848),	-- Flyspawn Thorax
-				i(198982),	-- Broken Part: Head
-				i(198983),	-- Broken Part: Arm
-				i(198984),	-- Broken Part: Shattered Orb
-				i(200108),	-- Irideus' Power Core
-				i(201420),	-- Gnolan's House Special
-				i(201928),	-- Ohn'ir Windprayer Talisman
-				i(203206),	-- Elegant Canvas Brush
+			n(SETS, {
 				i(203366),	-- Blue Winglord's Staff
 				i(203367),	-- Blue Winglord's Hauberk
 				i(203368),	-- Blue Winglord's Chain
@@ -1578,6 +1547,12 @@ root(ROOTS.Unsorted, {
 				i(203372),	-- Blue Winglord's Coif
 				i(203373),	-- Blue Winglord's Greaves
 				i(203374),	-- Blue Winglord's Shoulders
+			}),
+			filter(MISC, {
+				i(202062),	-- Ash Feather [Probably a Secret /Braghe]
+				i(201033),	-- Magical Salt Crystal [Used for Rare]
+			}),
+			filter(QUEST_ITEMS, {
 				i(123869),	-- Relic of Elune
 				i(191855),	-- Qalashi Trophy
 				i(191858),	-- Succulent Snapper Meat
@@ -1586,11 +1561,13 @@ root(ROOTS.Unsorted, {
 				i(191863),	-- Waterlogged Wood
 				i(195359),	-- Dry Snapper Meat
 				i(195360),	-- Scorched Snapper Meat
+				--
 				i(197845),	-- Silver Scale
 				i(197862),	-- Primary Security Disc
 				i(197863),	-- Secondary Security Disc
 				i(198038),	-- Ancient Titansteel Ingot
 				i(198355),	-- Tyrhold Conduit
+				--
 				i(199830),	-- Tuskarr Training Dummy
 				i(200188),	-- Broken Fishing Pole
 				i(200190),	-- Stuffed Duckling Toy
@@ -1598,6 +1575,7 @@ root(ROOTS.Unsorted, {
 				i(123868),	-- Relic of Shakama
 				i(192744),	-- Rymek's Gift
 				i(192768),	-- Titan Disc
+				--
 				i(199790),	-- Makko's Journal Cover
 				i(199792),	-- Makko's Journal - Page One
 				i(199793),	-- Makko's Journal - Page Two
@@ -1606,47 +1584,9 @@ root(ROOTS.Unsorted, {
 				i(199796),	-- Makko's Journal - Page Five
 				i(199797),	-- Makko's Journal - Page Six
 				i(199798),	-- Makko's Journal - Page Seven
-				i(200100),	-- Batubar the Relentless
-				i(200115),	-- Sarantuya the Ever-True
-				i(200617),	-- Shattering Totem
-				i(201044),	-- Cirrus Flowers
-				i(201091),	-- Sharp Tooth
-				i(202037),	-- Expedition Shovel or Expedition Multi-Toolbox
-				i(203434),	-- Bottomless Bag of Blacksmithing Goods
-				i(203435),	-- Bottomless Bag of Alchemy Goods
-				i(203436),	-- Bottomless Bag of Enchanting Goods
-				i(203437),	-- Bottomless Bag of Engineering Goods
-				i(203438),	-- Bottomless Bag of Inscription Goods
-				i(203439),	-- Bottomless Bag of Jewelcrafting Goods
-				i(203440),	-- Bottomless Bag of Leatherworking Goods
-				i(203441),	-- Bottomless Bag of Tailoring Goods
-				i(203444),	-- Bottomless Bag of General Goods
-				i(203447),	-- Bottomless Bag of Optional Goods
-				i(203448),	-- Bottomless Bag of Ore
-				i(203449),	-- Bottomless Bag of Herbs
-				i(203450),	-- Bottomless Bag of Skins
-				i(191042),	-- Flask of Dwarven Antifreeze
-				i(191135),	-- Nai'jin's Runestone
-				i(191136),	-- Sin'tia's Runestone
-				i(191137),	-- Julh'ek's Runestone
-				i(192473),	-- Hornswog Hide Scraps
-				i(192474),	-- Frozen Core
-				i(192776),	-- Dormant Embercone
-				i(194432),	-- Old Stonetusk's Tusk
-				i(201033),	-- Magical Salt Crystal
-				i(62528),	-- Sharp Crocolisk Tooth
+			}),
+			n(PROFESSIONS, {
 				i(168522),	-- Ub3r Module: Ub3r-Coil
-				i(193070),	-- The Insight of Tyr
-				i(193072),	-- The Judgment of Tyr
-				i(193355),	-- Map of Nelthazan Ruins
-				i(193357),	-- Shattered Ornament
-				i(193372),	-- Wood
-				i(193617),	-- Snowhide Totem
-				i(194433),	-- Bloodhorn's Horn
-				i(194439),	-- Frostfist's Eye
-				i(197958),	-- Watcher Log
-				i(198078),	-- Recruitment Roster
-				i(198079),	-- Orders from Sarkareth
 			}),
 			n(QUESTS, {
 				-- 10.0.2.45779
@@ -1776,7 +1716,7 @@ root(ROOTS.Unsorted, {
 				q(74416),	--
 			}),
 		})),
-		tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {	-- Leave it DF_TIER, 0.01
+		tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
 			n(ARMOR, {
 				n(SETS, {
 					-- Evoker Set --

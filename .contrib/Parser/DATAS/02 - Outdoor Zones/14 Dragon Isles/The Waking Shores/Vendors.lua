@@ -45,6 +45,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					i(199177),	-- Ash Feather Amulet
 					i(74918),	-- Problem Solving Pendant
 					i(201410),	-- Powerful Purple Thing
+					i(203652),	-- Griftah's All-Purpose Embellishing Powder
 				},
 			}),
 			n(186454, {	-- Kora Fullsails <Food and Provisions>

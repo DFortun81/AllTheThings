@@ -37,8 +37,10 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(DF_TIER, {
 					-- 10.0.0
 					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+						r(384311),	-- Bronze Fireflight
 						r(382581),	-- Opening
 						r(382352),	-- Perfectly Calibrated Lenses
+						r(382360),	-- Tinker Removal Kit
 						r(382382),	-- Wisp of Tyr
 						r(382372),	--
 						r(382373),	--
