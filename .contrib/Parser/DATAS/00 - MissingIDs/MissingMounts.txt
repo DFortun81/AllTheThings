@@ -210,6 +210,3 @@ mount(363608),	-- Lightforged Ruinstrider
 mount(370770),	-- Tuskarr Shoreglider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
-mount(373646),	-- Dracthyr Flight Test
-10.0.0.45661
-mount(369536),	-- Soar

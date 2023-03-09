@@ -231,7 +231,8 @@ def create_missing_file(thing: type[Thing]) -> None:
                     if info := thing.extract_existing_info(line):
                         existing_things.append(info + "\n")
                 difference = sorted(
-                    set(raw_ids) - set(existing_things), key=raw_ids.index
+                    set(raw_ids) - set(existing_things) - set(excluded_ids),
+                    key=raw_ids.index,
                 )
                 if not (difference := remove_empty_builds(difference)):
                     return
