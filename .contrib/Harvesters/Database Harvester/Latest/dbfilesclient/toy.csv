@@ -856,7 +856,7 @@ Mythic Dungeon International: Shadowlands Season 2,1164,187959,2,-1
 |cFFFFD200Zone:|r The Waking Shores,1270,202019,0,0
 |cFFFFD200Vendor:|r Brendormi|n|cFFFFD200Cost: |r75|Hitem:202039|h|TInterface\ICONS\inv_misc_stormlordsfavor.blp:0|t|h 1200|Hcurrency:2118|h|TInterface\ICONS\INV_Misc_Powder_Thorium.blp:0|t|h,1271,202020,0,2
 |cFFFFD200Zone:|r The Waking Shore,1272,202022,0,0
-|cFFFFD200Vendor: |rFieldmaster Emberath|n|cFFFFD200Zone: |rValdrakken|n|cFFFFD200Cost: |r150000|Hcurrency:2123|h|TInterface\ICONS\INV_10_DungeonJewelry_Titan_Trinket_2_Color2.BLP:0|t|h,1273,202021,0,2
+|cFFFFD200Vendor: |rFieldmaster Emberath|n|cFFFFD200Zone: |rValdrakken|n|cFFFFD200Cost: |r1500|Hcurrency:2123|h|TInterface\ICONS\INV_10_DungeonJewelry_Titan_Trinket_2_Color2.BLP:0|t|h,1273,202021,0,-1
 |cFFFFD200Drop:|r Immaculate Sac of Swog Treasures,1274,202042,0,0
 |cFFFFD200Quest:|r For the Love of Others,1275,200926,0,0
 |cFFFFD200Achievement:|r Discombobberlated|n|cFFFFD200Category:|r Fishing,1276,202207,0,5
@@ -867,11 +867,11 @@ Mythic Dungeon International: Shadowlands Season 2,1164,187959,2,-1
 |cFFFFD200Profession:|r Dragon Isles Engineering|n,1281,198173,0,3
 |cFFFFD200Vendor: |rAtticus Belle|n|cFFFFD200Zone: |rThe Waking Shores|n|cFFFFD200Cost: |r20|Hitem:193050|h|TInterface\ICONS\INV_10_Tailoring_ClothCommon_Color2.BLP:0|t|h 100|Hcurrency:2003|h|TInterface\ICONS\INV_Faction_WarResources.BLP:0|t|h|n|n|cFFFFD200Vendor: |rLorena Belle|n|cFFFFD200Zone: |rThe Waking Shores|n|cFFFFD200Cost: |r20|Hitem:193050|h|TInterface\ICONS\INV_10_Tailoring_ClothCommon_Color2.BLP:0|t|h 100|Hcurrency:2003|h|TInterface\ICONS\INV_Faction_WarResources.BLP:0|t|h,1282,200707,0,2
 WoW Esports: Dragonflight Season 1,1289,203716,2,-1
-|cFFFFD200World Quest: |rLetting Go|n|cFFFFD200Zone: |rOhn'ahran Plains,1290,203725,0,1
+|cFFFFD200World Quest: |rA Final Word|n|cFFFFD200Zone: |rOhn'ahran Plains,1290,203725,4,1
 |cFFFFD200Discovery:|r Zul'Gurub|n,1295,203757,0,10
 |cFFFFD200Vendor: |rKazzi|n|cFFFFD200Zone: |rThe Azure Span|n|cFFFFD200Faction: |rWinterpelt Furbolg - Revered|n|cFFFFD200Cost: |r200|Hcurrency:2003|h|TInterface\ICONS\INV_Faction_WarResources.BLP:0|t|h,1300,203734,4,2
 |cFFFFD200Profession:|r Dragon Isles Engineering|n,1301,202360,0,3
-|cFFFFD200World Quest: |rTry and Try Again?|n|cFFFFD200Zone: |rThe Waking Shores|n|cFFFFD200Zone: |rOhn'ahran Plains|n|cFFFFD200Zone: |rThe Forbidden Reach,1302,204220,4,1
+|cFFFFD200World Quest: |rHraxian's Unbreakable Will|n|cFFFFD200Zone: |rZaralek Caverns,1302,204220,4,1
 |cFFFFD200Quest: |rAka'magosh|n|cFFFFD200Zone: |rDurotar|n|cFFFFD200Zone: |rAlterac Valley,1303,204170,0,1
 |cFFFFD200Treasure: |r Chest|n|cFFFFD200Zone: |rThe Zskera Vaults,1304,204256,0,-1
 |cFFFFD200Treasure: |r Chest|n|cFFFFD200Zone: |rThe Zskera Vaults,1305,204257,0,-1

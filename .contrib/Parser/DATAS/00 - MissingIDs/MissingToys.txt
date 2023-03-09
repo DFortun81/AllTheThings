@@ -1,8 +1,3 @@
-8.0.1.26788
-i(163017),	-- Pitch-Soaked Torch
-i(163073),	-- Conch of Wa'mundi
-9.0.1.35679
-i(177665),	-- Spectral Handkerchief \\ Spectral Hankerchief
 10.0.7.47910
 i(199900),	-- Secondhand Survey Tools
 i(202253),	-- Primal Stave of Claw and Fur

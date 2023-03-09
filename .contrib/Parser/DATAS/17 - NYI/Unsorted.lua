@@ -738,6 +738,10 @@ root(ROOTS.Unsorted, {
 				i(204865),	-- Lionguard Greatbelt
 				i(204866),	-- Lionguard Greatbelt
 				i(204873),	-- Tied-up Envelope
+				i(192772),	-- Ancient Salamanther
+				i(192785),	-- Gooey Snailemental
+				i(192790),	-- Mossy Mammoth
+				i(204382),	-- Noble Bruffalon
 			}),
 			n(QUESTS, {
 				-- 10.0.7.47910
@@ -1285,6 +1289,28 @@ root(ROOTS.Unsorted, {
 				q(75436),
 				q(75444),
 				q(75457),
+				q(73076),
+				-- 10.0.7.48439
+				q(75484),
+				q(75488),
+				q(75489),
+				q(75490),
+				q(75498),
+				q(75499),
+				q(75500),
+				q(75501),
+				q(75503),
+				q(75504),
+				q(75505),
+				q(75520),
+				q(75521),
+				q(75522),
+				q(75523),
+				q(75529),
+				q(75530),
+				q(75531),
+				q(75532),
+				q(75533),
 			})
 		})),
 		tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 10.0.5" } }, {

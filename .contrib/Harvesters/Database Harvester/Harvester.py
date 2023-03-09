@@ -157,7 +157,7 @@ def create_missing_recipes() -> None:
         raw_path = Path("Raw", "Professions", f"{profession}.txt")
         missing_path = Path(
             DATAS_FOLDER,
-            "MissingIDs",
+            "00 - MissingIDs",
             "Professions",
             f"{profession}.txt",
         )
@@ -212,7 +212,7 @@ def create_missing_file(thing: type[Thing]) -> None:
         return
     missing_path = Path(
         DATAS_FOLDER,
-        "MissingIDs",
+        "00 - MissingIDs",
         f"Missing{thing.__name__}.txt",
     )
     with open(missing_path, "w") as missing_file:
@@ -249,7 +249,7 @@ def post_process(thing: type[Thing]) -> None:
     raw_ids = extract_nth_column(raw_path, 0)
     missing_path = Path(
         DATAS_FOLDER,
-        "MissingIDs",
+        "00 - MissingIDs",
         f"Missing{thing.__name__}.txt",
     )
     # Might contain previous names?
@@ -457,7 +457,7 @@ def give_name_quest() -> None:
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-# add_latest_data("10.0.7.48295")
+# add_latest_data("10.0.7.48439")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
