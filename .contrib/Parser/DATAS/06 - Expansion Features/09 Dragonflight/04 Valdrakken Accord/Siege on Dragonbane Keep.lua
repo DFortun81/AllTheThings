@@ -5,6 +5,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 	n(VALDRAKKEN_ACCORD, {
 		n(SIEGE_ON_DRAGONBANE_KEEP, {
 			["questID"] = 70866,
+			["isWeekly"] = true,
+			["maps"] = { THE_WAKING_SHORES },
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(16412),	-- Siege on Dragonbane Keep: Chiseled Record
