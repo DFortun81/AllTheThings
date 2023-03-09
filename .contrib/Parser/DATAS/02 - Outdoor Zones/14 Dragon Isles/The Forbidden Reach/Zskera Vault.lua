@@ -30,6 +30,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
 					["coord"] = { 25.8, 47.9, THE_FORBIDDEN_REACH },
 				}),
+				q(74442, {	-- One Dragon's Junk
+					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["provider"] = { "n", 201517 },	-- Voxarian
+					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
+				}),
+				q(74443, {	-- Is Another Dragon's Treasure?
+					["sourceQuests"] = { 74442 },	-- One Dragon's Junk
+					["provider"] = { "n", 201517 },	-- Voxarian
+					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
+				}),
+				q(74447, {	-- Verbal Archaeology
+					["sourceQuests"] = { 74443 },	-- Is Another Dragon's Treasure?
+					["provider"] = { "n", 201517 },	-- Voxarian
+					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
+				}),
+				q(74984, {	-- Authentic Authorization
+					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["provider"] = { "n", 201180 },	-- Cataloger Wulferd
+					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
+				}),
 
 				-- Inside of Az
 				q(74293, {	-- Not Forgotten
@@ -73,6 +93,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						i(193908),	-- Kobaldt (PET!)
 						i(203701),	-- Neltharion Gift Token
 					},
+				}),
+				q(73155, {	-- The Forgotten Ring
+					-- TODO: ["provider"] = { "n",  },	--
+					["coord"] = { 29.7, 57.2, THE_FORBIDDEN_REACH },
+				}),
+				q(74355, {	--
+					["sourceQuests"] = { 73155 },	-- The Forgotten Ring
+					["provider"] = { "n", 200724 },	-- Researcher Imareth
+					["coord"] = { 35.1, 57.6, THE_FORBIDDEN_REACH },
 				}),
 
 				-- Evoker Tablets
@@ -191,13 +220,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				}),
 				o(388876, {	-- Wind Sculpted Stone
 					["coord"] = { 26.8, 53.7, THE_FORBIDDEN_REACH },
-					["questID"] = 74976,
+					["questID"] = 74976,	-- TODO: Got this quest upon looting a reagent pot
 					["g"] = {
 						i(204030),	-- Wind Sculpted Stone
 					},
 				}),
 				o(384980, {	-- Mysterious Chest
-					-- ["coord"] = { 25.7, 51.1, THE_FORBIDDEN_REACH }, Wrong?
+					-- ["coord"] = { 25.7, 51.1, THE_FORBIDDEN_REACH }, Wrong? -> 28.7, 57.8 also possible, multiple spawn locations?
 					["questID"] = 72710,
 					["g"] = {
 						i(202075),	-- Temp Currency
@@ -226,7 +255,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				}),
 				o(386426, {	-- Primordial Earth Cache
 					["coord"] = { 26.4, 53.9, THE_FORBIDDEN_REACH },
-					["questID"] = 74400,
+					["questID"] = 74400,	-- TODO: This was another element of cache for me...
 					["g"] = {
 						i(202075),	-- Temp Currency
 						i(204006),	-- Indomitable Earth Stone
@@ -244,6 +273,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["questID"] = 74401,
 					["g"] = {
 						i(202075),	-- Temp Currency
+						i(193835),	-- Brigthfeather (PET!)
 					},
 				}),
 				o(386444, {	-- Primordial Water Cache
@@ -576,6 +606,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(74296),
 		q(74299),
 		q(74301),
+		q(74302),
 		q(74303),
 		q(74304),
 		q(74311),
@@ -585,6 +616,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(74320),
 		q(74323),
 		q(74324),
+		q(75125),
 		q(74327),
 		-- Completed
 		q(74432),
@@ -596,9 +628,24 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(74755),
 		q(74756),
 		q(74867),
-
+		q(74499),
+		q(75160),
 
 		q(74513),	-- When using Stone Dissolver to Open Shattered Crystals
 		q(74431),	-- When Completed Quest: 72953 Zskera Vault: Az
+
+		-- TODO: See if these need to be associated with treasures
+		q(75500),	-- Looted spider cocoon in a vault room
+		q(75501),	-- Looted spider cocoon in a vault room
+		q(75503),	-- Looted spider cocoon in a vault room
+		q(75504),	-- Looted spider cocoon in a vault room
+		q(75505),	-- Looted spider cocoon in a vault room
+		q(75499),	-- Looted spider cocoon in a vault room
+		q(75498),	-- Looted spider cocoon in a vault room
+		q(75056),	-- Looted ice spike in a vault room
+		q(75117),	-- Looted ice spike in a vault room
+		q(75057),	-- Looted ice spike in a vault room
+		q(75118),	-- Looted box of rocks in a vault room
+		q(75147),	-- Looted inert goo in a vault room
 	}),
 })));

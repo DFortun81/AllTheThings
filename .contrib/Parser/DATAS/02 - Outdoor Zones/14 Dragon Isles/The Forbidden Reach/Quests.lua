@@ -7,28 +7,122 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			q(74381, {	-- Hidden Legacies
 				["maps"] = { VALDRAKKEN },
 			}),
-
-
-
-			q(74359, {	-- Plunder Siege
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
-				["provider"] = { "n", 200010 },	-- Atrenosh Hailstone
-				["coord"] = { 34.7, 57.6, THE_FORBIDDEN_REACH },
+			q(73076, {	-- Return to the Reach
+				["sourceQuests"] = { 74371 },	-- Hidden Legacies
+				["maps"] = { VALDRAKKEN },
+				["g"] = {
+					i(203646),	-- Primalist Cloak
+				},
 			}),
-			q(73160, {	-- Helping Hand and Claw
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+			q(75050, {	-- An Eclectic Accord
+				["sourceQuests"] = { 73076 },	-- Return to the Reach
 				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(74769, {	-- Stemming the Irontide
+				["sourceQuests"] = { 73076 },	-- Return to the Reach
+				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(73157, {	-- Wings of Mercy
+				["sourceQuests"] = { 73076 },	-- Return to the Reach
+				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(74847, {	-- Emberthal Awaits
+				["sourceQuests"] = {
+					75050,	-- An Eclectic Accord
+					74769,	-- Stemming the Irontide
+					73157,	--  Wings of Mercy
+				},
+				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(204276),	-- Untapped Forbidden Knowledge
+				},
+			}),
+			q(73160, {	-- Helping Hand and Claw
+				["sourceQuests"] = {
+					75050,	-- An Eclectic Accord
+					74769,	-- Stemming the Irontide
+					73157,	--  Wings of Mercy
+				},
+				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+			}),
+			q(73694, {	-- Stuck in Stasis
+				["sourceQuests"] = {
+					75050,	-- An Eclectic Accord
+					74769,	-- Stemming the Irontide
+					73157,	--  Wings of Mercy
+				},
+				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(73178, {	-- Hands Off Our Booty!
+				["sourceQuests"] = {
+					75050,	-- An Eclectic Accord
+					74769,	-- Stemming the Irontide
+					73157,	--  Wings of Mercy
+				},
+				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
+				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(74359, {	-- Plunder Siege
+				["sourceQuests"] = {
+					75050,	-- An Eclectic Accord
+					74769,	-- Stemming the Irontide
+					73157,	--  Wings of Mercy
+				},
+				["provider"] = { "n", 200010 },	-- Atrenosh Hailstone
+				["coord"] = { 34.7, 57.6, THE_FORBIDDEN_REACH },
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(73191, {	-- Snake Wrangling
+				["sourceQuests"] = {
+					75050,	-- An Eclectic Accord
+					74769,	-- Stemming the Irontide
+					73157,	--  Wings of Mercy
+				},
+				["provider"] = { "n", 201291 },	-- Cataloger Coralie
+				["coord"] = { 34.4, 59.3, THE_FORBIDDEN_REACH },
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(74379, {	-- Still Within Reach
+				["sourceQuests"] = {
+					75050,	-- An Eclectic Accord
+					74769,	-- Stemming the Irontide
+					73157,	--  Wings of Mercy
+				},
+				["provider"] = { "n", 200559 },	-- Treysh
+				["coord"] = { 35.6, 59.5, THE_FORBIDDEN_REACH },
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
 			}),
 			q(73159, {	-- Exploring Our Past
 				["sourceQuests"] = { 73160 },	-- Helping Hand and Claw
 				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
-			}),
-			q(74379, {	-- Still Within Reach
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
-				["provider"] = { "n", 200559 },	-- Treysh
-				["coord"] = { 35.6, 59.5, THE_FORBIDDEN_REACH },
 			}),
 
 			-- Dailys
@@ -151,3 +245,4 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 		}),
 	}),
 })));
+
