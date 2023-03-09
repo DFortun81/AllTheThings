@@ -346,15 +346,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["timeline"] = { ADDED_DF_0_5 },
 			}),
 			-- Alt Skip --
-			q(72339, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Engine of Innovation
+			q(72339,	-- Engine of Innovation
+			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
 				--["sourceQuests"] = { },
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 				["coord"] = { 83.9, 53.2, VALDRAKKEN },
-				["g"] = {
-					i(199197, {	-- Bottled Essence x5
-						i(190453),	-- Spark of Ingenuity
-					}),
-				},
+				["altQuests"] = { 70900 },	-- Innovating the Engine
+				["DisablePartySync"] = true,
+				["sym"] = {{"select","itemID",199197}},	-- Bottled Essence x5
 			})),
 		}),
 		prof(ALCHEMY, sharedData({

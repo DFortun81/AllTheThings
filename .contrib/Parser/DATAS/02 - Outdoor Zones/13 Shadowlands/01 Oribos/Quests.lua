@@ -155,6 +155,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					-- This quest gets skipped over during marking all the quest as done when using the skip, and it also doesn't pop up for people who after the skip implementation try to do the chain manually.
 					-- In short, things are broken, and until Blizzard does something about it (please submit a bug report to them if this affects you), marking this as breadcrumb and not obtainable in party sync is the best way to handle this in ATT.
 					["isBreadcrumb"] = true,
+					["altQuests"] = { 60146 },	-- Torment Chamber: Thrall
 					["DisablePartySync"] = true,
 				}),
 				q(62836, {	-- Signs of the Lion

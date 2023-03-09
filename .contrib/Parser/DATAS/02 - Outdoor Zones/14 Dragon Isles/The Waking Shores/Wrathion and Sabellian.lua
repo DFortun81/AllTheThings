@@ -483,6 +483,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				o(377534, {	-- Delivered Vault
 					["questID"] = 73223,
 					["coord"] = { 24.8, 60.5, THE_WAKING_SHORES },
+					["isWeekly"] = true,
 				}),
 			}),
 			n(VENDORS, {

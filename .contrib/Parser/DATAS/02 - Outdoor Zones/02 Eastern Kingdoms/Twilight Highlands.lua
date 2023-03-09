@@ -505,7 +505,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28038, {	-- Blood in the Highlands
 					["sourceQuests"] = {
-						28871,	-- Crushing the Wildhammer
+						27751,	-- Crushing the Wildhammer
 						27929,	-- Drag 'em Down
 					},
 					["isBreadcrumb"] = true,

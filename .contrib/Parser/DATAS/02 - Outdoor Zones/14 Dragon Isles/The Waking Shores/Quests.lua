@@ -684,7 +684,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["collectible"] = false,
 				["g"] = {
 					q(66825, {	-- A Ruby Lifecalling
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							66114,	-- For the Benefit of the Queen
 							70125,	-- Where is Wrathion? (A)
 							69910,	-- Where is Wrathion? (H)
@@ -841,7 +841,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["collectible"] = false,
 				["g"] = {
 					q(65690, {	-- A Cultist's Misgivings
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							66079,	-- Wrathion Awaits
 							70125,	-- Where is Wrathion? (A)
 							69910,	-- Where is Wrathion? (H)
@@ -856,7 +856,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["coord"] = { 37.4, 46.7, THE_WAKING_SHORES },
 					}),
 					q(65687, {	-- Punching Up
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							66079,	-- Wrathion Awaits
 							70125,	-- Where is Wrathion? (A)
 							69910,	-- Where is Wrathion? (H)
@@ -1304,7 +1304,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69891, {	-- Lepidoralia the Resplendent
 					["provider"] = { "n", 193266 },	-- Lepidoralia the Resplendent
 					["coord"] = { 34.1, 85.7, THE_WAKING_SHORES },
-					["isDaily"] = false,
 				}),
 				q(70979, {	-- Magmaton
 					["provider"] = { "n", 186827 },	-- Magmaton
@@ -1396,6 +1395,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["sourceQuests"] = { 66788 },	-- Eggcited for the Future
 					["provider"] = { "n", 195212 },	-- Commander Lethanak
 					["coord"] = { 62.7, 72.2, THE_WAKING_SHORES },
+					["isDaily"] = true,	-- possible weekly?
 				}),
 				q(70206, {	-- Stay awhile and listen: Veritistrasz: 1
 					["name"] = "Stay awhile and listen: Veritistrasz: 1",
@@ -1456,6 +1456,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["sourceQuests"] = { 65691 },	-- The Shadow of His Wings
 					["provider"] = { "n", 196072 },	-- Wu'de Prepfoot
 					["coord"] = { 35.1, 47.2, THE_WAKING_SHORES },
+					["isDaily"] = true,	-- possible weekly?
 				}),
 				-- Theory In Practice moved temporarily to HQTs
 				-- To Skytop Observatory moved temporarily to HQTs

@@ -2682,19 +2682,19 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
 		local completed = app.CurrentCharacter.Quests[id];
+		-- expectations for accurate quest data
+		-- meets current character filters
 		local filter = app.CurrentCharacterFilters(questRef);
+		-- is marked as in the game
 		local inGame = app.ItemIsInGame(questRef);
-		local incomplete = (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed) and true;
+		-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check, or character in party sync
+		local incomplete = (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed or app.IsInPartySync) and true;
+		-- not missing pre-requisites
 		local metPrereq = not questRef.missingPrequisites;
 		if not (
-			-- expectations for accurate quest data
-			-- meets current character filters
 			filter
-			-- is marked as in the game
 			and inGame
-			-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check
 			and incomplete
-			-- not missing pre-requisites
 			and metPrereq
 			-- debugging, show link for any accepted quest
 			-- and false
@@ -7611,6 +7611,10 @@ local ObjectFunctions = {
 	["costProgress"] = function(t)
 		return 0;
 	end,
+	-- whether something is marked as repeatable in some way
+	["repeatable"] = function(t)
+		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
+	end,
 	-- whether something is considered 'missing' by seeing if it can search for itself
 	["_missing"] = function(t)
 		local key = t.key;
@@ -8377,9 +8381,6 @@ local questFields = {
 	end,
 	["link"] = function(t)
 		return GetQuestLink(t.questID) or "quest:" .. t.questID;
-	end,
-	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 	end,
 	["collectible"] = app.CollectibleAsQuest,
 	["collected"] = IsQuestFlaggedCompletedForObject,
@@ -11752,9 +11753,6 @@ local itemFields = {
 			end
 			return sformat("i:%d", itemLink);
 		end
-	end,
-	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 	end,
 	["modItemID"] = function(t)
 		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);

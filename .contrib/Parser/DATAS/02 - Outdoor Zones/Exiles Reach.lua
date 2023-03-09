@@ -100,10 +100,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["races"] = HORDE_ONLY,
 				}),
 				q(59952, {	-- A Hunter's Trap [H]
-					["sourceQuests"] = {
-						59947,	-- Message to Base [H]
-						59949,	-- Who Lurks in the Pit [H]
-					},
+					["sourceQuests"] = { 59947 },	-- Message to Base [H]
 					["provider"] = { "n", 167215 },	-- Mithdran Dawntracker
 					["coord"] = { 52.4, 55.2, EXILES_REACH },
 					["races"] = HORDE_ONLY,

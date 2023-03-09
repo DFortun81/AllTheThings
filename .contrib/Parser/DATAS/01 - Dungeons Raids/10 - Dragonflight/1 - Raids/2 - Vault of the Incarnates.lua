@@ -1302,7 +1302,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(70091),	-- Broodkeeper Diurna (N)
 		q(72276),	-- Broodkeeper Diurna (N)
 		q(70099),	-- Broodkeeper Diurna (H)
-		-- q(TODO),	-- Broodkeeper Diurna (M)
+		q(70108),	-- Broodkeeper Diurna (M)
 		q(70084),	-- Raszageth the Storm-Eater (N)
 		q(70092),	-- Raszageth the Storm-Eater (N)
 		q(72277),	-- Raszageth the Storm-Eater (N)
