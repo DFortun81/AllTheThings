@@ -78,51 +78,67 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				-- Evoker Tablets
 				q(74866, { -- Journal Entry: Experiments (A)
 					["provider"] = { "i", 204200 },	-- Journal Entry: Experiments
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(73110, {	-- Journal Entry: Experiments (H)
 					["provider"] = { "i", 202329 },	-- Journal Entry: Experiments
+					["races"] = HORDE_ONLY,
 				}),
 				q(73109, { -- Journal Entry: Final Warning (A)
 					["provider"] = { "i", 202328 },	-- Journal Entry: Final Warning
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(74900, {	-- Journal Entry: Final Warning (H)
 					["provider"] = { "i", 204250 },	-- Journal Entry: Final Warning
+					["races"] = HORDE_ONLY,
 				}),
 				q(73107, { -- Journal Entry: Initial Report (A)
 					["provider"] = { "i", 202326 },	-- Journal Entry: Initial Report
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(74902, {	-- Journal Entry: Initial Report (H)
 					["provider"] = { "i", 204252 },	-- Journal Entry: Initial Report
+					["races"] = HORDE_ONLY,
 				}),
 				q(72944, { --Journal Entry: Protest (A)
 					["provider"] = { "i", 202203 },	-- Journal Entry: Protest
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(74901, {	-- Journal Entry: Protest (H)
 					["provider"] = { "i", 204251 },	-- Journal Entry: Protest
+					["races"] = HORDE_ONLY,
 				}),
 				q(73113, { -- Journal Entry: Relics (A)
 					["provider"] = { "i", 202335 },	-- Journal Entry: Relics
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(74880, {	-- Journal Entry: Relics (H)
 					["provider"] = { "i", 204221 },	-- Journal Entry: Relics
+					["races"] = HORDE_ONLY,
 				}),
-				q(73115, { --Journal Entry: Silence (A)
+				q(73115, { -- Journal Entry: Silence (A)
 					["provider"] = { "i", 202337 },	-- Journal Entry: Silence
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(74896, {	-- Journal Entry: Silence (H)
 					["provider"] = { "i", 204246 },	-- Journal Entry: Silence
+					["races"] = HORDE_ONLY,
 				}),
 				q(73114, { -- Journal Entry: The Creches (A)
 					["provider"] = { "i", 202336 },	-- Journal Entry: The Creches
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(74883, {	-- Journal Entry: The Creches (H)
 					["provider"] = { "i", 204223 },	-- Journal Entry: The Creches
+					["races"] = HORDE_ONLY,
 				}),
 				q(73108, { -- Journal Entry: The Prisoner (A)
 					["provider"] = { "i", 202327 },	-- Journal Entry: The Prisoner
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(74903, {	-- Journal Entry: The Prisoner (H)
 					["provider"] = { "i", 204253 },	-- Journal Entry: The Prisoner
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			n(TREASURES, {
