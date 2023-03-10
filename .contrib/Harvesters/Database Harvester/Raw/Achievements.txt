@@ -11497,3 +11497,91 @@
 10.0.7.48295
 17398@@@Dragon Glyphs: Winglord's Perch
 17404@@@Dragon Glyphs: Talonlords' Perch
+10.1.0.48480
+17429@@@Crystal Circuit: Bronze
+17430@@@Crystal Circuit: Silver
+17431@@@Crystal Circuit: Gold
+17432@@@Crystal Circuit Advanced: Bronze
+17433@@@Crystal Circuit Advanced: Silver
+17434@@@Crystal Circuit Advanced: Gold
+17435@@@Crystal Circuit Reverse: Bronze
+17436@@@Crystal Circuit Reverse: Silver
+17437@@@Crystal Circuit Reverse: Gold
+17438@@@Caldera Cruise: Bronze
+17439@@@Caldera Cruise: Silver
+17440@@@Caldera Cruise: Gold
+17441@@@Caldera Cruise Advanced: Bronze
+17442@@@Caldera Cruise Advanced: Silver
+17443@@@Caldera Cruise Advanced: Gold
+17444@@@Caldera Cruise Reverse: Bronze
+17445@@@Caldera Cruise Reverse: Silver
+17446@@@Caldera Cruise Reverse: Gold
+17447@@@Brimstone Scramble: Bronze
+17448@@@Brimstone Scramble: Silver
+17449@@@Brimstone Scramble: Gold
+17450@@@Brimstone Scramble Advanced: Bronze
+17451@@@Brimstone Scramble Advanced: Silver
+17452@@@Brimstone Scramble Advanced: Gold
+17453@@@Brimstone Scramble Reverse: Bronze
+17454@@@Brimstone Scramble Reverse: Silver
+17455@@@Brimstone Scramble Reverse: Gold
+17456@@@Shimmering Slalom: Bronze
+17457@@@Shimmering Slalom: Silver
+17458@@@Shimmering Slalom: Gold
+17459@@@Shimmering Slalom Advanced: Bronze
+17460@@@Shimmering Slalom Advanced: Silver
+17461@@@Shimmering Slalom Advanced: Gold
+17462@@@Shimmering Slalom Reverse: Bronze
+17463@@@Shimmering Slalom Reverse: Silver
+17464@@@Shimmering Slalom Reverse: Gold
+17465@@@Zaralek Zigzag: Bronze
+17466@@@Zaralek Zigzag: Silver
+17467@@@Zaralek Zigzag: Gold
+17468@@@Zaralek Zigzag Advanced: Bronze
+17469@@@Zaralek Zigzag Advanced: Silver
+17470@@@Zaralek Zigzag Advanced: Gold
+17471@@@Zaralek Zigzag Reverse: Bronze
+17472@@@Zaralek Zigzag Reverse: Silver
+17473@@@Zaralek Zigzag Reverse: Gold
+17474@@@Sulfur Sprint: Bronze
+17475@@@Sulfur Sprint: Silver
+17476@@@Sulfur Sprint: Gold
+17477@@@Sulfur Sprint Advanced: Bronze
+17478@@@Sulfur Sprint Advanced: Silver
+17479@@@Sulfur Sprint Advanced: Gold
+17480@@@Sulfur Sprint Reverse: Bronze
+17481@@@Sulfur Sprint Reverse: Silver
+17482@@@Sulfur Sprint Reverse: Gold
+17483@@@Zaralek Cavern: Bronze
+17484@@@Zaralek Cavern: Silver
+17485@@@Zaralek Cavern: Gold
+17486@@@Zaralek Cavern Advanced: Bronze
+17487@@@Zaralek Cavern Advanced: Silver
+17488@@@Zaralek Cavern Advanced: Gold
+17489@@@Zaralek Cavern Reverse: Bronze
+17490@@@Zaralek Cavern Reverse: Silver
+17491@@@Zaralek Cavern Reverse: Gold
+17492@@@Zaralek Cavern Racing Completionist
+17493@@@Zaralek Cavern Racing Completionist: Silver
+17494@@@Zaralek Cavern Racing Completionist: Gold
+17506@@@Still Standing in the Fire
+17510@@@Dragon Glyphs: Glimmerogg
+17511@@@Dragon Glyphs: Titan Vault
+17512@@@Dragon Glyphs: Loamm
+17513@@@Dragon Glyphs: Zaqili Caldera
+17514@@@Dragon Glyphs: Dragon Nests
+17515@@@Dragon Glyphs: The Throughway
+17516@@@Dragon Glyphs: Sulfur Ravine
+17517@@@Dragon Glyphs: Brimstone Garrison
+17537@@@Dragon Chase - WS01
+17538@@@Dragon Chase - WS02
+17560@@@Ancient Stones of the Dragon Isles
+17561@@@Ancient Stones of the Waking Shores
+17562@@@Ancient Stones of the Ohn'ahran Plains
+17563@@@Ancient Stones of the Azure Span
+17564@@@Ancient Stones of Thaldraszus
+17567@@@Ancient Stones of Zaralek
+17725@@@Vicious Saddle (37)
+17726@@@Vicious Saddle (37)
+17727@@@Obsidian Combatant
+17728@@@Obsidian Combatant

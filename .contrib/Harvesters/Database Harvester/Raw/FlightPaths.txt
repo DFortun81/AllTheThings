@@ -2668,3 +2668,10 @@
 2857@@@Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC
 10.0.7.48076
 2862@@@Morqut Islet, Forbidden Reach
+10.1.0.48480
+2860@@@10.1 UG - Campaign - Ch6 - Aberrus Upper Platform (SMART)
+2863@@@Loamm, Zaralek Cavern
+2864@@@Obsidian Rest, Zaralek Cavern
+2865@@@Dragonscale Camp, Zaralek Cavern
+2866@@@Cascades Canyon, Ohn'ahran Plains
+2867@@@The Throughway, Zaralek Cavern

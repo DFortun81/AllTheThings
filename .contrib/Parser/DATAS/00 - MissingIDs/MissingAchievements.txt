@@ -164,3 +164,91 @@ ach(17541),	-- Global Swarming
 ach(17543),	-- You Know How to Reach Me
 10.0.7.48220
 ach(17546),	-- A New Beginning
+10.1.0.48480
+ach(17429),	-- Crystal Circuit: Bronze
+ach(17430),	-- Crystal Circuit: Silver
+ach(17431),	-- Crystal Circuit: Gold
+ach(17432),	-- Crystal Circuit Advanced: Bronze
+ach(17433),	-- Crystal Circuit Advanced: Silver
+ach(17434),	-- Crystal Circuit Advanced: Gold
+ach(17435),	-- Crystal Circuit Reverse: Bronze
+ach(17436),	-- Crystal Circuit Reverse: Silver
+ach(17437),	-- Crystal Circuit Reverse: Gold
+ach(17438),	-- Caldera Cruise: Bronze
+ach(17439),	-- Caldera Cruise: Silver
+ach(17440),	-- Caldera Cruise: Gold
+ach(17441),	-- Caldera Cruise Advanced: Bronze
+ach(17442),	-- Caldera Cruise Advanced: Silver
+ach(17443),	-- Caldera Cruise Advanced: Gold
+ach(17444),	-- Caldera Cruise Reverse: Bronze
+ach(17445),	-- Caldera Cruise Reverse: Silver
+ach(17446),	-- Caldera Cruise Reverse: Gold
+ach(17447),	-- Brimstone Scramble: Bronze
+ach(17448),	-- Brimstone Scramble: Silver
+ach(17449),	-- Brimstone Scramble: Gold
+ach(17450),	-- Brimstone Scramble Advanced: Bronze
+ach(17451),	-- Brimstone Scramble Advanced: Silver
+ach(17452),	-- Brimstone Scramble Advanced: Gold
+ach(17453),	-- Brimstone Scramble Reverse: Bronze
+ach(17454),	-- Brimstone Scramble Reverse: Silver
+ach(17455),	-- Brimstone Scramble Reverse: Gold
+ach(17456),	-- Shimmering Slalom: Bronze
+ach(17457),	-- Shimmering Slalom: Silver
+ach(17458),	-- Shimmering Slalom: Gold
+ach(17459),	-- Shimmering Slalom Advanced: Bronze
+ach(17460),	-- Shimmering Slalom Advanced: Silver
+ach(17461),	-- Shimmering Slalom Advanced: Gold
+ach(17462),	-- Shimmering Slalom Reverse: Bronze
+ach(17463),	-- Shimmering Slalom Reverse: Silver
+ach(17464),	-- Shimmering Slalom Reverse: Gold
+ach(17465),	-- Zaralek Zigzag: Bronze
+ach(17466),	-- Zaralek Zigzag: Silver
+ach(17467),	-- Zaralek Zigzag: Gold
+ach(17468),	-- Zaralek Zigzag Advanced: Bronze
+ach(17469),	-- Zaralek Zigzag Advanced: Silver
+ach(17470),	-- Zaralek Zigzag Advanced: Gold
+ach(17471),	-- Zaralek Zigzag Reverse: Bronze
+ach(17472),	-- Zaralek Zigzag Reverse: Silver
+ach(17473),	-- Zaralek Zigzag Reverse: Gold
+ach(17474),	-- Sulfur Sprint: Bronze
+ach(17475),	-- Sulfur Sprint: Silver
+ach(17476),	-- Sulfur Sprint: Gold
+ach(17477),	-- Sulfur Sprint Advanced: Bronze
+ach(17478),	-- Sulfur Sprint Advanced: Silver
+ach(17479),	-- Sulfur Sprint Advanced: Gold
+ach(17480),	-- Sulfur Sprint Reverse: Bronze
+ach(17481),	-- Sulfur Sprint Reverse: Silver
+ach(17482),	-- Sulfur Sprint Reverse: Gold
+ach(17483),	-- Zaralek Cavern: Bronze
+ach(17484),	-- Zaralek Cavern: Silver
+ach(17485),	-- Zaralek Cavern: Gold
+ach(17486),	-- Zaralek Cavern Advanced: Bronze
+ach(17487),	-- Zaralek Cavern Advanced: Silver
+ach(17488),	-- Zaralek Cavern Advanced: Gold
+ach(17489),	-- Zaralek Cavern Reverse: Bronze
+ach(17490),	-- Zaralek Cavern Reverse: Silver
+ach(17491),	-- Zaralek Cavern Reverse: Gold
+ach(17492),	-- Zaralek Cavern Racing Completionist
+ach(17493),	-- Zaralek Cavern Racing Completionist: Silver
+ach(17494),	-- Zaralek Cavern Racing Completionist: Gold
+ach(17506),	-- Still Standing in the Fire
+ach(17510),	-- Dragon Glyphs: Glimmerogg
+ach(17511),	-- Dragon Glyphs: Titan Vault
+ach(17512),	-- Dragon Glyphs: Loamm
+ach(17513),	-- Dragon Glyphs: Zaqili Caldera
+ach(17514),	-- Dragon Glyphs: Dragon Nests
+ach(17515),	-- Dragon Glyphs: The Throughway
+ach(17516),	-- Dragon Glyphs: Sulfur Ravine
+ach(17517),	-- Dragon Glyphs: Brimstone Garrison
+ach(17537),	-- Dragon Chase - WS01
+ach(17538),	-- Dragon Chase - WS02
+ach(17560),	-- Ancient Stones of the Dragon Isles
+ach(17561),	-- Ancient Stones of the Waking Shores
+ach(17562),	-- Ancient Stones of the Ohn'ahran Plains
+ach(17563),	-- Ancient Stones of the Azure Span
+ach(17564),	-- Ancient Stones of Thaldraszus
+ach(17567),	-- Ancient Stones of Zaralek
+ach(17725),	-- Vicious Saddle (37)
+ach(17726),	-- Vicious Saddle (37)
+ach(17727),	-- Obsidian Combatant
+ach(17728),	-- Obsidian Combatant

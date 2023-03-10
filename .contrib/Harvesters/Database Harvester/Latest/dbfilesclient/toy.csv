@@ -871,7 +871,7 @@ WoW Esports: Dragonflight Season 1,1289,203716,2,-1
 |cFFFFD200Discovery:|r Zul'Gurub|n,1295,203757,0,10
 |cFFFFD200Vendor: |rKazzi|n|cFFFFD200Zone: |rThe Azure Span|n|cFFFFD200Faction: |rWinterpelt Furbolg - Revered|n|cFFFFD200Cost: |r200|Hcurrency:2003|h|TInterface\ICONS\INV_Faction_WarResources.BLP:0|t|h,1300,203734,4,2
 |cFFFFD200Profession:|r Dragon Isles Engineering|n,1301,202360,0,3
-|cFFFFD200World Quest: |rHraxian's Unbreakable Will|n|cFFFFD200Zone: |rZaralek Caverns,1302,204220,4,1
+|cFFFFD200Quest:|r Hraxian's Unbreakable Will|n|cFFFFD200Zone: |rZaralek Caverns|n,1302,204220,4,1
 |cFFFFD200Quest: |rAka'magosh|n|cFFFFD200Zone: |rDurotar|n|cFFFFD200Zone: |rAlterac Valley,1303,204170,0,1
 |cFFFFD200Treasure: |r Chest|n|cFFFFD200Zone: |rThe Zskera Vaults,1304,204256,0,-1
 |cFFFFD200Treasure: |r Chest|n|cFFFFD200Zone: |rThe Zskera Vaults,1305,204257,0,-1
@@ -879,5 +879,8 @@ WoW Esports: Dragonflight Season 1,1289,203716,2,-1
 |cFFFFD200Vendor: |rEmilia Bellocq|n|cFFFFD200Zone: |rThe Waking Shores|n|cFFFFD200Cost: |r5|TINTERFACE\MONEYFRAME\UI-GOLDICON.BLP:0|t,1307,199900,0,2
 Treasure: Overgrown Skeleton|n|cFFFFD200Zone: |rThe Zskera Vaults,1308,203852,0,-1
 |cFFFFD200Profession:|r Dragon Isles Engineering|n,1309,201930,0,3
+,1310,204389,4,-1
 |cFFFFD200World Event:|r Noblegarden,1311,204675,0,2
 |cFFFFD200Treasure: |r Chest|n|cFFFFD200Zone: |rThe Zskera Vaults,1313,204687,0,-1
+|cFFFFD200Profession:|r Dragon Isles Engineering|n,1314,204818,0,3
+|cFFFFD200Profession:|r Dragon Isles Jewelcrafting|n,1315,205045,0,3

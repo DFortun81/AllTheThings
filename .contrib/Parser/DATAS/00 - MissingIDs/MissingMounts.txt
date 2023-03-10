@@ -100,6 +100,8 @@ mount(276112),	-- Darkforge Ram
 mount(363608),	-- Lightforged Ruinstrider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
+10.1.0.48480
+mount(408313),	-- Big Slick in the City
 
 
 
@@ -210,3 +212,5 @@ mount(363608),	-- Lightforged Ruinstrider
 mount(370770),	-- Tuskarr Shoreglider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
+10.1.0.48480
+mount(408313),	-- Big Slick in the City
