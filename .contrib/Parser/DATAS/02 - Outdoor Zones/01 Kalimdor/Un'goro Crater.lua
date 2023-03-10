@@ -1580,6 +1580,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				q(24911, {	-- Tropical Paradise Beckons
+					["providers"] = {
+						{ "n", 38578 },	-- Flinn
+						{ "n", 44374 },	-- Sherm
+					},
+					["coords"] = {
+						{ 33.2, 76.8, TANARIS },
+						{ 40.2, 77.0, TANARIS },
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["isBreadcrumb"] = true,
+				}),
 				q(13887, {	-- Venomhide Eggs
 					["qg"] = 11701,	-- Mor'vek
 					["sourceQuest"] = 13850,	-- Toxic Tolerance

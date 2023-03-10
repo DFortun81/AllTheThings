@@ -300,6 +300,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 24.3, 64.5, ULDUM },
 					["sourceQuest"] = 28132,	-- Efficient Excavations
 				}),
+				q(27003, {	-- Easy Money
+					["qg"] = 44833,	-- Adarrah
+					["sourceQuests"] = {
+						28558,	-- Hero's Call: Uldum!
+						28295,	-- Meetup with the Caravan
+						28296,	-- Meetup with the Caravan
+						28557,	-- Warchief's Command: Uldum!
+					},
+					["coord"] = { 30.4, 65.5, TANARIS },
+					["timeline"] = { "added 4.0.3.13277" },
+				}),
 				q(28132, {	-- Efficient Excavations
 					["crs"] = { 46993 },	-- Schnottz Air Officer
 					["provider"] = { "i", 62768 },	-- Efficient Excavations

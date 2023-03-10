@@ -104,6 +104,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				q(25556, {	-- Into Zul'Farrak
+					["qg"] = 7804,	-- Trenton Lighthammer
+					["sourceQuest"] = 25032,	-- Secrets in the Oasis
+					["coord"] = { 42.4, 24.0, TANARIS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["isBreadcrumb"] = true,
+				}),
 				q(2991, {	-- Nekrum's Medallion
 					["qg"] = 8022,	-- Thadius Grimshade
 					["sourceQuest"] = 2990,	-- Thadius Grimshade

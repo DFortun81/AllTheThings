@@ -79,13 +79,11 @@ q(2458),	-- Deep Cover,		TBC: Deep Cover,		CLASSIC: Deep Cover
 q(2460),	-- The Shattered Salute,		TBC: The Shattered Salute,		CLASSIC: The Shattered Salute
 q(2479),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's Assistance
 q(2868),	-- <TXT> The Shriveled Heart,		TBC: <TXT> The Shriveled Heart,		CLASSIC: <TXT> The Shriveled Heart
-q(2944),	-- The Super Snapper FX,		TBC: The Super Snapper FX,		CLASSIC: The Super Snapper FX
 q(2971),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(2997),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(2998),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(2999),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(3000),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
-q(3022),	-- Handle With Care,		TBC: Handle With Care,		CLASSIC: Handle With Care
 q(3023),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3111),	-- <UNUSED> [DEPRECATED],		CLASSIC: <UNUSED> [DEPRECATED]
 q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak,		TBC: <NYI> <TXT><redux> Dreadmist Peak,		CLASSIC: <NYI> <TXT><redux> Dreadmist Peak
