@@ -485,6 +485,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 24.8, 60.5, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
+
+				-- o(XXXXXX, {	-- Grand Obsidian Cache
+					-- ["questID"] = ,
+					-- ["coord"] = { 35.8, 48.0, THE_WAKING_SHORES },
+					-- ["cost"] = { { "i", 204278, 1} },	-- 1x Neltharion's Toolkit
+					-- ["g"] = {
+						i(202278),	-- Renewed Proto-Drake: Antlers (DM!)
+					-- },
+				-- }),
 			}),
 			n(VENDORS, {
 				n(193310, {	-- Dealer Vexil <Food and Drink>

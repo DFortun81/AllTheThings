@@ -44,11 +44,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						},
 					}),
 					i(198356),	-- Honey Snack
-					--i(202278, {	-- Renewed Proto-Drake: Antlers (DM!)
-					--	["cost"] = {
-					--		{ "c", ELEMENTAL_OVERFLOW, 10000 },
-					--	},
-					--}),
 					i(203224, {	-- Valdrakken Surplus Chest
 						["cost"] = {
 							{ "i", 202870, 1 },	-- 1x Mysterious Writings [Have no Source of This yet]

@@ -245,3 +245,41 @@ i(42985);	-- Tattered Dreadmist Mantle
 i(48691);	-- Tattered Dreadmist Robe
 i(42945);	-- Venerable Dal'Rend's Sacred Charge
 i(48716);	-- Venerable Mass of McGowan
+
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(203635);	-- Primalist Cloth Belt
+i(203641);	-- Primalist Cloth Boots
+i(203632);	-- Primalist Cloth Bracers
+i(203616);	-- Primalist Cloth Chestpiece
+i(203642);	-- Primalist Cloth Gloves
+i(203612);	-- Primalist Cloth Helm
+i(203622);	-- Primalist Cloth Leggings
+i(203627);	-- Primalist Cloth Spaulders
+i(203637);	-- Primalist Leather Belt
+i(203638);	-- Primalist Leather Boots
+i(203630);	-- Primalist Leather Bracers
+i(203618);	-- Primalist Leather Chestpiece
+i(203645);	-- Primalist Leather Gloves
+i(203614);	-- Primalist Leather Helm
+i(203619);	-- Primalist Leather Leggings
+i(203629);	-- Primalist Leather Spaulders
+i(203636);	-- Primalist Mail Belt
+i(203639);	-- Primalist Mail Boots
+i(203631);	-- Primalist Mail Bracers
+i(203617);	-- Primalist Mail Chestpiece
+i(203644);	-- Primalist Mail Gloves
+i(203613);	-- Primalist Mail Helm
+i(203620);	-- Primalist Mail Leggings
+i(203628);	-- Primalist Mail Spaulders
+i(203634);	-- Primalist Plate Belt
+i(203640);	-- Primalist Plate Boots
+i(203633);	-- Primalist Plate Bracers
+i(203615);	-- Primalist Plate Chestpiece
+i(203643);	-- Primalist Plate Gloves
+i(203611);	-- Primalist Plate Helm
+i(203623);	-- Primalist Plate Leggings
+i(203626);	-- Primalist Plate Spaulders
+i(203650);	-- Primalist Weapon

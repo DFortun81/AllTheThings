@@ -606,6 +606,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				i(204015),	-- Swirling Mojo Stone
 				i(204020),	-- Wild Spirit Stone
 				i(204030),	-- Wind Sculpted Stone
+
+				-- Unknown
+				i(204278),	-- Neltharion's Toolkit
 			}),
 		}),
 	}),

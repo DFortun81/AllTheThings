@@ -1866,7 +1866,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "i", 28038 },	-- Seaforium PU-36 Explosive Nether Modulator
 								["coord"] = { 77.7, 51.9, HELLFIRE_PENINSULA },
 							}),
-							i(29942),	-- Battle Scarred Leggings
+							i(29942),	-- Battle Scarred Leggings / 10.0.7: Battle-Scarred Leggings
 							i(29937),	-- Helm of Infinite Visions
 							i(29944),	-- Protectorate Breastplate
 							i(29929),	-- Raging Spirit Harness
@@ -1887,7 +1887,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "i", 28038 },	-- Seaforium PU-36 Explosive Nether Modulator
 								["coord"] = { 77.7, 51.9, HELLFIRE_PENINSULA },
 							}),
-							i(29942),	-- Battle Scarred Leggings
+							i(29942),	-- Battle Scarred Leggings / 10.0.7: Battle-Scarred Leggings
 							i(29937),	-- Helm of Infinite Visions
 							i(29944),	-- Protectorate Breastplate
 							i(29929),	-- Raging Spirit Harness

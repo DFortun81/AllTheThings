@@ -781,8 +781,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			}),
 		}))),
 		applyclassicphase(PHASE_FIVE, cat(699, {	-- Oils
-			i(20748, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Mana Oil
-			i(20749, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Wizard Oil
+			i(20748, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Mana Oil / 10.0.7: Expired Mana Oil
+			i(20749, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Wizard Oil / 10.0.7: Expired Wizard Oil
 			i(20747),	-- Lesser Mana Oil
 			i(20746),	-- Lesser Wizard Oil
 			i(20745),	-- Minor Mana Oil

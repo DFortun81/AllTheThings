@@ -503,7 +503,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(180394),	-- Envy-Laced Leggings
 					i(180386),	-- Herbalist's Pouch
 					i(180335),	-- Sturdy Pitch Fork
-					i(180337),	-- Sturdy Pitch Fork
+					i(180337),	-- Sturdy Pitch Fork / 10.0.7: Rusty Hand Sickle
 				},
 			}),
 			o(351543, {	-- Secret Treasure
@@ -792,7 +792,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(180336),	-- Faintly Smoldering Torch
 					i(180386),	-- Herbalist's Pouch
 					i(180335),	-- Sturdy Pitch Fork
-					i(180337),	-- Sturdy Pitch Fork
+					i(180337),	-- Sturdy Pitch Fork / 10.0.7: Rusty Hand Sickle
 				},
 			}),
 			o(357584, {	-- Vyrtha's Dredglaive

@@ -843,6 +843,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		}),
 		i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)
 		i(197405),	-- Renewed Proto-Drake: Maned Tail (DM!)
+		i(202274, {["timeline"] = {ADDED_DF_0_7}}),	-- Renewed Proto-Drake: Plated Brow (DM!)
 		i(197394),	-- Renewed Proto-Drake: Predator Pattern (DM!)
 		i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 		i(197399),	-- Renewed Proto-Drake: Razor Snout (DM!)

@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 		filter(TRINKET_F, {
 			i(197934),	-- Ancestral Protector's Stone
 			i(198407),	-- Azure Arcanic Amplifier
-			i(193477),	-- Battle Scarred Scale
+			i(193477),	-- Battle-Scarred Scale
 			i(198627),	-- Blood of the Khansguard
 			i(198695),	-- Bottomless Reliquary Satchel
 			i(198539),	-- Breath of the Plains
@@ -97,7 +97,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			i(192033),	-- Maruuk Battle Standard
 			i(192028),	-- Metalshaper's Obsidian Mace
 			i(197947),	-- Molten Pugilist's Fist
-			i(192031),	-- Nokuhd Impaling Halberd
+			i(192031),	-- Nokhud Impaling Halberd
 			i(192018),	-- Piercing Shikaar Thrust
 			i(192022),	-- Plumed Outrunner's Dirk
 			i(192021),	-- Qalashi Crustshaper's Greatmace

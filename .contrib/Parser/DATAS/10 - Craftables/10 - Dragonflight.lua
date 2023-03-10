@@ -1181,10 +1181,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(198168),	-- Suspiciously Ticking Crate+++
 			i(199414),	-- Zapthrottle Soul Inhaler
 			-- Weird
-			i(198271),	-- H.E.L.P.+
-			i(198272),	-- H.E.L.P.++
-			i(198273),	-- H.E.L.P.+++
-			i(201930),	-- H.E.L.P.
+
+
 			i(198650),	-- Rummage Through Scrap
 		}),
 		filter(REAGENTS, {
@@ -1216,7 +1214,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(192443),	-- Element-Infused Rocket Helmet (TOY!)
 			i(198206),	-- Environmental Emulator (TOY!)
 			i(198227),	-- Giggle Goggles (TOY!)
-			i(198156),	-- Wyrmhole Generator (TOY!)
+			i(201930, {["timeline"] = {ADDED_DF_0_7}}),	-- H.E.L.P. (TOY!)
+			i(198156),	-- Wyrmhole Generator: Dragon Isles (TOY!)
 		}),
 		n(WEAPONS, {
 			i(198334),	-- P.E.W. x2
@@ -1276,7 +1275,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		i(199340),	-- Gold Coin of the Isles
 		i(194970),	-- Islefin Dorado
 		i(199344),	-- Magma Thresher
-		i(201934),	-- Nokuhd Whittling Knife
+		i(201934),	-- Nokhud Whittling Knife
 		i(194701),	-- Ominous Conch
 		i(200061),	-- Prismatic Leaper
 		i(198397),	-- Rainbow Pearl

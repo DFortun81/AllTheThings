@@ -1199,25 +1199,22 @@ pet(0, 3320);	-- Whitewhisker
 pet(0, 3301);	-- Wild Duckling
 pet(0, 3322);	-- Woodbiter Piculet
 -- NYI --
-pet(193363, 3290);	-- Auburntusk Calf
-pet(191930, 3261);	-- Blue Phoenix Hatchling
-pet(193854, 3333);	-- Blue Vorquin Foal
+pet(193363, 3290);	-- Bunbo
+pet(191930, 3261);	-- Wakyn
+pet(193854, 3333);	-- Berylmane
 pet(193835, 3323);	-- Brightfeather
-pet(193374, 3293);	-- Crimson Phoenix Hatchling
-pet(193853, 3331);	-- Emerald Frillfish
+pet(193374, 3293);	-- Ashenwing
+pet(193853, 3331);	-- Emmah
 pet(193614, 3314);	-- Groundshaker
 pet(193373, 3292);	-- Phoenix Wishwing
 pet(193380, 3298);	-- Pink Salamanther
-pet(193851, 3332);	-- Purple Frillfish
-pet(193908, 3338);	-- Sapphire Crystalspine
-pet(193235, 3285);	-- Scarlet Ottuk Pup
-pet(193364, 3291);	-- Time-Lost Baby Mammoth
+pet(193851, 3332);	-- Patos
+pet(193235, 3285);	-- Luvvy
+pet(193364, 3291);	-- Scruffles
 pet(193587, 3312);	-- Time-Lost Duck
-pet(191915, 3259);	-- Time-Lost Feral Rabbit
 pet(193377, 3294);	-- Time-Lost Phoenix Hatchling
 pet(193429, 3297);	-- Time-Lost Salamanther
 pet(193620, 3267);	-- Time-Lost Slyvern
-pet(193850, 3330);	-- Time-Lost Timbertooth
 pet(193068, 3277);	-- Time-Lost Treeflitter
 pet(0, 3393);	-- Anubisath Idol
 pet(0, 3401);	-- Arcantus
@@ -1272,7 +1269,61 @@ pet(0, 3254);	-- Watcher of the Huntress
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+pet(193850, 3330);	-- Buckie
 pet(202255, 3427);	-- Driftling
+pet(193908, 3338);	-- Kobaldt
+pet(191915, 3259);	-- Shaggy
+-- Unsorted
+
+-- Blizzard is Crazy... Have to check later which of these are correct /Braghe
+pet(202407, 3432);	-- Flow
+pet(0, 3436);	-- Flow
+pet(0, 3440);	-- Flow
+pet(0, 3449);	-- Flow
+pet(202411, 3430);	-- Tremblor
+pet(0, 3434);	-- Tremblor
+pet(0, 3438);	-- Tremblor
+pet(0, 3447);	-- Tremblor
+pet(202413, 3429);	-- Vortex
+pet(0, 3433);	-- Vortex
+pet(0, 3437);	-- Vortex
+pet(0, 3446);	-- Vortex
+pet(202412, 3431);	-- Wildfire
+pet(0, 3435);	-- Wildfire
+pet(0, 3439);	-- Wildfire
+pet(0, 3448);	-- Wildfire
+
+-- Needs Sorting
+pet(0, 3422);	-- [DNT] Storm Pet Boss - Legendary
+pet(0, 3423);	-- [DNT] Storm Pet Fodder
+pet(0, 3424);	-- [DNT] Storm Pet Boss - Epic
+pet(0, 3425);	-- [DNT] Storm Pet Boss - Rare
+
+
+pet(0, 3441);	-- Storm-Touched Ohuna
+pet(0, 3442);	-- Storm-Touched Skitterer
+pet(0, 3443);	-- Storm-Touched Slyvern
+pet(0, 3444);	-- Storm-Touched Swoglet
+
+pet(0, 3450);	-- Feral Frogduck
+pet(0, 3451);	-- Lord Flappinsby
+pet(0, 3452);	-- Enchanted Tuskling
+pet(0, 3453);	-- Adinakon
+pet(0, 3454);	-- Lyver
+pet(0, 3455);	-- Yu'shor
+pet(0, 3456);	-- Drakeula
+pet(0, 3457);	-- Arctichnid
+pet(0, 3458);	-- Kazzquack
+pet(0, 3459);	-- Mothoroth
+pet(0, 3460);	-- Blu'jaeden
+pet(0, 3465);	-- Enok the Stinky
+pet(0, 3466);	-- Malfunctioning Matrix
+pet(0, 3471);	-- Gilded Mechafrog
+pet(0, 3472);	-- Lil' Algalon
+pet(0, 3473);	-- Cozmos
+pet(0, 3474);	-- Celastro
+pet(0, 3476);	-- Gilded Mechafrog
+
 
 -- #if ANYCLASSIC
 -----------------

@@ -19,6 +19,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						i(198177),	-- Draconic Gunshoes+
 						i(198178),	-- Draconic Gunshoes++
 						i(198179),	-- Draconic Gunshoes+++
+						i(198271),	-- H.E.L.P.+
+						i(198272),	-- H.E.L.P.++
+						i(198273),	-- H.E.L.P.+++
 						i(198152),	-- Perfectly Calibrated Lenses+
 						i(198153),	-- Perfectly Calibrated Lenses++
 						i(198154),	-- Perfectly Calibrated Lenses+++
