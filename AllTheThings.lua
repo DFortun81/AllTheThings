@@ -11980,7 +11980,7 @@ end)();
 (function()
 local C_Heirloom_GetHeirloomInfo = C_Heirloom.GetHeirloomInfo;
 local C_Heirloom_GetHeirloomLink = C_Heirloom.GetHeirloomLink;
-local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
+--local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
 local C_Heirloom_GetHeirloomMaxUpgradeLevel = C_Heirloom.GetHeirloomMaxUpgradeLevel;
 local heirloomIDs = {};
 local fields = {
@@ -12000,7 +12000,8 @@ local fields = {
 		return app.CollectibleHeirlooms;
 	end,
 	["saved"] = function(t)
-		return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
+		--return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
+		return 1
 	end,
 	["trackable"] = app.ReturnTrue,
 };
@@ -12093,7 +12094,8 @@ fields.collected = function(t)
 			end
 		end
 		if t.s and ATTAccountWideData.Sources[t.s] then return 1; end
-		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
+		-- if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
+		if t.itemID then return 1; end
 	end
 fields.saved = function(t)
 		return t.collected == 1;
@@ -12160,7 +12162,7 @@ app.CacheHeirlooms = function()
 	for _,itemID in ipairs(heirloomIDs) do
 		if not uniques[itemID] then
 			uniques[itemID] = true;
-
+			--[[
 			heirloom = app.SearchForObject("itemID", itemID, "field");
 			if heirloom then
 				upgrades = C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
@@ -12184,6 +12186,7 @@ app.CacheHeirlooms = function()
 					end
 				end
 			end
+			--]]
 		end
 	end
 
