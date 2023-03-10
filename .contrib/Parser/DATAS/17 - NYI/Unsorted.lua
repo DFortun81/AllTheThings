@@ -227,7 +227,6 @@ root(ROOTS.Unsorted, {
 				i(202667),	-- Sealed Artifact Scroll
 				i(202668),	-- Sealed Spirit Scroll
 				i(202669),	-- Sealed Fish Scroll
-				i(202670),	-- Sealed Knowledge Scroll
 				i(202671),	-- [DNT] Dragonscale Expedition Item 02
 				i(202672),	-- [DNT] Dragonscale Expedition Item 03
 				i(202673),	-- [DNT] Dragonscale Expedition Item 04
@@ -248,11 +247,7 @@ root(ROOTS.Unsorted, {
 				i(202688),	-- [DNT] Valdrakken Accord Item 04
 				i(202689),	-- [DNT] Valdrakken Accord Item 05
 				i(202713),	-- Scattered Supplies
-				i(202854),	-- Wondrous Fish
 				i(202868),	-- Mender's Signal
-				i(202870),	-- Mysterious Writings
-				i(202871),	-- Draconic Artifact
-				i(202872),	-- Token of Blessing
 				i(202874),	-- Healing Draught
 				i(203210),	-- Dragonscale Supply Box
 				i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
@@ -271,10 +266,7 @@ root(ROOTS.Unsorted, {
 				i(203381),	-- Sealed Letter To Neltharion
 				i(203398),	-- Assorted Reagents
 				i(203399),	-- Damaged Trident
-				i(203400),	-- Lackluster Spices
-				i(203401),	-- Dull Crystal
 				i(203402),	-- Broken Gnomish Device
-				i(203403),	-- Hastily Scrawled Rune
 				i(203404),	-- Broken Tuning Fork
 				i(203405),	-- [PH] Broken Leatherworking Item
 				i(203406),	-- Torn Kite
@@ -300,7 +292,6 @@ root(ROOTS.Unsorted, {
 				i(203426),	-- Design: Tuning Fork
 				i(203427),	-- [PH] Design: Repaired Leatherworking Item
 				i(203428),	-- Design: Tuskarr Kite
-				i(203460),	-- Onyx Annulet
 				i(203463),	-- Atrenosh's Journal
 				i(203464),	-- Sealed Spellsworn Scroll
 				i(203465),	-- Draconic Artifact
@@ -473,31 +464,6 @@ root(ROOTS.Unsorted, {
 				i(203989),	-- Warshard of the Hakkari, Unborn
 				i(203997),	-- Raw Argali Flank
 				i(203998),	-- Beetle Juice
-				i(204000),	-- Storm Infused Stone
-				i(204001),	-- Echoing Thunder Stone
-				i(204002),	-- Flame Licked Stone
-				i(204003),	-- Raging Magma Stone
-				i(204004),	-- Searing Smokey Stone
-				i(204005),	-- Entropic Fel Stone
-				i(204006),	-- Indomitable Earth Stone
-				i(204007),	-- Shining Obsidian Stone
-				i(204008),	-- Prodigious Sand Stone
-				i(204009),	-- Gleaming Iron Stone
-				i(204010),	-- Deluging Water Stone
-				i(204011),	-- Freezing Ice Stone
-				i(204012),	-- Cold Frost Stone
-				i(204013),	-- Exuding Steam Stone
-				i(204014),	-- Sparkling Mana Stone
-				i(204015),	-- Swirling Mojo Stone
-				i(204018),	-- Humming Arcane Stone
-				i(204019),	-- Harmonic Music Stone
-				i(204020),	-- Wild Spirit Stone
-				i(204021),	-- Necromantic Death Stone
-				i(204022),	-- Pestilent Plague Stone
-				i(204025),	-- Obscure Pastel Stone
-				i(204027),	-- Desirous Blood Stone
-				i(204029),	-- Prophetic Twilight Stone
-				i(204030),	-- Wind Sculpted Stone
 				i(204065),	-- Azerite Powder
 				i(204066),	-- Igniter Torch
 				i(204072),	-- Deviously Deviled Eggs
@@ -516,7 +482,6 @@ root(ROOTS.Unsorted, {
 				i(204210),	-- Primordial Storm Core
 				i(204212),	-- Primordial Water Core
 				i(204213),	-- Short Range Teleport
-				i(204215),	-- Dormant Primordial Fragment
 				i(204216),	-- Primordial Pulverizing
 				i(204217),	-- Unstable Elementium
 				i(204218),	-- Design: Primordial Pulverizing
@@ -655,13 +620,6 @@ root(ROOTS.Unsorted, {
 				i(204559),	-- Essence of Divination
 				i(204560),	-- Azure Scrying Crystal
 				i(204561),	-- Primalist Cache keys
-				i(204562),	-- Maruuk Maul
-				i(204563),	-- Morqut Club
-				i(204564),	-- Dragonscale Expeditioner's Rifle
-				i(204566),	-- Journal of the Forbidden Reach
-				i(204569),	-- Valdrakken Talons
-				i(204570),	-- Valdrakken Pocketknife
-				i(204571),	-- Bulwark of the Forbidden Reach
 				i(204573),	-- Condensed Fire Magic
 				i(204574),	-- Condensed Frost Magic
 				i(204575),	-- Condensed Earth Magic
@@ -680,7 +638,6 @@ root(ROOTS.Unsorted, {
 				i(204691),	-- Living Book
 				i(203398),	-- Essence of Dampening
 				i(203404),	-- Crystal Fork
-				i(203405),	-- Pristine Pelt
 				i(203407),	-- Draconic Suppression Powder
 				i(203408),	-- Ancient Ceremonial Trident
 				i(203412),	-- Arcane Dispelling Rune

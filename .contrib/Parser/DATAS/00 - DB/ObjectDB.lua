@@ -2838,6 +2838,7 @@ _.ObjectNames = {
 	[385022] = "Eroded Fossil",
 	[385836] = "Journal Entry: The Creches",
 	[385837] = "Journal Entry: Silence",
+	[385952] = "Unusual Ring",
 	[999111] = "Amber Gem Cluster",
 	[9999890] = "Corrupted Loot",
 	[9999891] = "Main Objective Only",
