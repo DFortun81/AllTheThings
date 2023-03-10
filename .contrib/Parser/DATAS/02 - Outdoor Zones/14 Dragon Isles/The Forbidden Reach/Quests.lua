@@ -166,6 +166,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["coord"] = { 34.2, 59.9, THE_FORBIDDEN_REACH },
 			}),
+			q(74119, {	-- Angler's Challenge
+				["sourceQuests"] = { 74909 },	-- New Catches
+				["provider"] = { "n", 200562 },	-- Turik
+				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
+				["isDaily"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
 			q(74391, {	-- Harpooner's Challenge
 				["sourceQuests"] = { 74909 },	-- New Catches
 				["provider"] = { "n", 200562 },	-- Turik
@@ -176,14 +185,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				},
 			}),
 			-- Maruuk
-
+			q(74910, {	-- New Foes
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["coord"] = { 34.2, 59.9, THE_FORBIDDEN_REACH },
+			}),
+			q(74390, {	-- Brutal Prey
+				["sourceQuests"] = { 74910 },	-- New Foes
+				["provider"] = { "n", 200564 },	-- Storykeeper Ashekh
+				["coord"] = { 34.1, 59.9, THE_FORBIDDEN_REACH },
+				["isDaily"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
 			-- Valdrakken
 			q(74911, {	-- New Horizons
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["coord"] = { 34.2, 59.9, THE_FORBIDDEN_REACH },
 			}),
 			q(74392, {	-- Reach South
-				["sourceQuests"] = { 74911 },	-- New Valdrakken
+				["sourceQuests"] = { 74911 },	-- New Horizons
 				["provider"] = { "n", 200563 },	-- Kraxxus
 				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
@@ -279,5 +300,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
 	q(73216),	-- Triggered after using a Sealed Scroll Map
-	q(74767),	-- Locking in to any Envoy
+	q(74767),	-- First Envoy
+	q(74766),	-- Second Envoy
 })))
