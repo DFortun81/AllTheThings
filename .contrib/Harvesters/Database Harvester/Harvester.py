@@ -387,7 +387,7 @@ def post_process(thing: type[Thing]) -> None:
             transmog_id = re.sub("[^\\d^.]", "", transmog_id.strip())
             if transmog_id.isdigit():
                 name_id = transmog_dict[transmog_id][0]
-                missing_lines[index] = f"{thing.existing_prefixes()}{transmog_id})/{thing.new_prefix()}{name_id}),\t-- "
+                missing_lines[index] = f"{thing.existing_prefixes()[0]}{transmog_id})/{thing.new_prefix()}{name_id}),\t-- "
                 if name_id in item_dict.keys():
                     name_list = item_dict[name_id].copy()
                     name_list.reverse()
@@ -433,15 +433,15 @@ def available_post_process() -> None:
     for thing in things:
         print(thing)
         if thing in (
-            Achievements,
-            Factions,
-            FlightPaths,
-            Illusions,
-            Mounts,
-            Pets,
-            Recipes,
-            Titles,
-            Toys,
+            #Achievements,
+            #Factions,
+            #FlightPaths,
+            #Illusions,
+            #Mounts,
+            #Pets,
+            #Recipes,
+            #Titles,
+            #Toys,
             Transmog,
         ):
             post_process(thing)
@@ -490,4 +490,4 @@ def give_name_quest() -> None:
 """Step 5: Run create_missing_files() (you have to uncomment it)"""
 # create_missing_files()
 """Step 6: Run available_post_process() (you have to uncomment it) This is still underwork and currently only Achievements, Factions, Flight Paths, Illusions, Mounts, Pets, Titles and Toys can be Post Processed"""
-# available_post_process()
+available_post_process()
