@@ -433,15 +433,15 @@ def available_post_process() -> None:
     for thing in things:
         print(thing)
         if thing in (
-            #Achievements,
-            #Factions,
-            #FlightPaths,
-            #Illusions,
-            #Mounts,
-            #Pets,
-            #Recipes,
-            #Titles,
-            #Toys,
+            Achievements,
+            Factions,
+            FlightPaths,
+            Illusions,
+            Mounts,
+            Pets,
+            Recipes,
+            Titles,
+            Toys,
             Transmog,
         ):
             post_process(thing)
@@ -490,4 +490,4 @@ def give_name_quest() -> None:
 """Step 5: Run create_missing_files() (you have to uncomment it)"""
 # create_missing_files()
 """Step 6: Run available_post_process() (you have to uncomment it) This is still underwork and currently only Achievements, Factions, Flight Paths, Illusions, Mounts, Pets, Titles and Toys can be Post Processed"""
-available_post_process()
+# available_post_process()
