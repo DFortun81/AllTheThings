@@ -382,12 +382,14 @@ def post_process(thing: type[Thing]) -> None:
         return
     elif thing == Transmog:
         item_dict = create_dict_from_raw("Items.txt")
-        for index, id in enumerate(missing_lines):
-            id = re.sub("[^\\d^.]", "", id.strip())
-            if id.isdigit():
-                missing_lines[index] = f"{thing.new_prefix()}{id}),\t-- "
-                if id in item_dict.keys():
-                    name_list = item_dict[id].copy()
+        transmog_dict: dict[str, list[str]] = create_dict_from_raw("Transmog.txt")
+        for index, transmog_id in enumerate(missing_lines):
+            transmog_id = re.sub("[^\\d^.]", "", transmog_id.strip())
+            if transmog_id.isdigit():
+                missing_lines[index] = f"{thing.new_prefix()}{transmog_id}),\t-- "
+                name_id = transmog_dict[transmog_id][0]
+                if name_id in item_dict.keys():
+                    name_list = item_dict[name_id].copy()
                     name_list.reverse()
                     missing_lines[index] += " \\\\ ".join(name_list) + "\n"
                 else:
@@ -421,9 +423,8 @@ def create_missing_files() -> None:
     """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
-        if thing == Illusions:
-            print(thing)
-            create_missing_file(thing)
+        print(thing)
+        create_missing_file(thing)
 
 
 def available_post_process() -> None:
