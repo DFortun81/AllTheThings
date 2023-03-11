@@ -1793,9 +1793,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						applyclassicphase(TBC_PHASE_ONE, i(23848, {	-- Nethergarde Bitter
+						i(23848, {	-- Nethergarde Bitter
 							["description"] = "Buy at least one of these before you enter the Dark Portal!",
-						})),
+							["timeline"] = { "added 2.0.1.6180" },
+						}),
 					},
 				}),
 				-- #endif

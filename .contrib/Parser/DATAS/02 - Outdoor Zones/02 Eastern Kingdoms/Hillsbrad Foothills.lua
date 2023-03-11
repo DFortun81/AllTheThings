@@ -1459,9 +1459,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								"removed 2.0.1.5678"
 							},
 						}),
-						applyclassicphase(TBC_PHASE_ONE, i(25878, {	-- Dusksteel Throwing Knife [TBC]
-							["timeline"] = { "removed 5.0.4" },
-						})),
+						i(25878, {	-- Dusksteel Throwing Knife [TBC]
+							["timeline"] = { "added 2.1.0.6692", "removed 5.0.4" },
+						}),
 					},
 				}),
 				-- #endif

@@ -122,12 +122,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(2079, "200:195:660:21"),	-- Alcaz Island
-				applyclassicphase(TBC_PHASE_ONE, exploration(512, {		-- Blackhoof Village
+				exploration(512, {		-- Blackhoof Village
 					["coord"] = { 41.8, 13.7, DUSTWALLOW_MARSH },
-				})),
-				applyclassicphase(TBC_PHASE_ONE, exploration(498, {		-- Bloodfen Burrow
+					["timeline"] = { "added 2.0.1" },
+				}),
+				exploration(498, {		-- Bloodfen Burrow
 					["coord"] = { 32.6, 65.9, DUSTWALLOW_MARSH },
-				})),
+					["timeline"] = { "added 2.0.1" },
+				}),
 				exploration(496, "280:270:230:0"),		-- Brackenwall Village
 				exploration(509, "255:250:257:313"),	-- The Den of Flame
 				exploration(2302, "400:255:239:189"),	-- The Quagmire

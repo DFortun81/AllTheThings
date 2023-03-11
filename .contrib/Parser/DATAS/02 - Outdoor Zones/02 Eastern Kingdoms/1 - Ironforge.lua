@@ -652,15 +652,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = COOKING_AWARD_GROUPS,
 				}),
-				applyclassicphase(TBC_PHASE_ONE, q(10891, {	-- Imperial Plate Armor [A]
+				q(10891, {	-- Imperial Plate Armor [A]
 					["qg"] = 11145,	-- Myolor Sunderfury
 					["coord"] = { 52.0, 41.4, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "added 2.5.1", "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
-				})),
+				}),
 				q(1073, {	-- Ineptitude + Chemicals = Fun (1/2)
 					["qg"] = 4081,	-- Lomac Gearstrip
 					["sourceQuest"] = 1072,	-- An Old Colleague
