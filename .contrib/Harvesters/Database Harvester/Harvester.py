@@ -386,8 +386,8 @@ def post_process(thing: type[Thing]) -> None:
         for index, transmog_id in enumerate(missing_lines):
             transmog_id = re.sub("[^\\d^.]", "", transmog_id.strip())
             if transmog_id.isdigit():
-                missing_lines[index] = f"{thing.new_prefix()}{transmog_id}),\t-- "
                 name_id = transmog_dict[transmog_id][0]
+                missing_lines[index] = f"{thing.existing_prefixes()}{transmog_id})/{thing.new_prefix()}{name_id}),\t-- "
                 if name_id in item_dict.keys():
                     name_list = item_dict[name_id].copy()
                     name_list.reverse()
