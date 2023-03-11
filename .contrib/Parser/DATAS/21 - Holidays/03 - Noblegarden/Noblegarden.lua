@@ -354,6 +354,9 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 						["provider"] = { "i", 44791 },	-- Noblegarden Chocolate
 						["cost"] = { { "i", 44802, 1 } },	-- Borrowed Egg Basket
 					}),
+					i(44802, {	-- Borrowed Egg Basket
+						["timeline"] = { "added 3.1.0.9733" },
+					}),
 					i(188698, {	-- Eagger Basket (TOY!)
 						["timeline"] = { "added 9.1.5.40871" },
 					}),
@@ -384,6 +387,9 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 					objective(1, {	-- 0/10 Noblegarden Chocolate
 						["provider"] = { "i", 44791 },	-- Noblegarden Chocolate
 						["cost"] = { { "i", 44802, 1 } },	-- Borrowed Egg Basket
+					}),
+					i(44802, {	-- Borrowed Egg Basket
+						["timeline"] = { "added 3.1.0.9733" },
 					}),
 					i(188698, {	-- Eagger Basket (TOY!)
 						["timeline"] = { "added 9.1.5.40871" },

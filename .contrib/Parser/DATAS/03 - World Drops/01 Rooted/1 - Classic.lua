@@ -2324,6 +2324,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(2080),	-- Hillborne Axe
 			i(13818),	-- Jagged Axe
 			i(3785),	-- Keen Axe
+			i(768),		-- Lumberjack Axe
 			i(1827),	-- Meat Cleaver
 			i(15236),	-- Moon Cleaver
 			i(12990),	-- Razor's Edge
@@ -2369,12 +2370,14 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(4020),	-- Splintering Battle Axe
 			i(1828),	-- Stone War Axe
 			i(15268),	-- Twin-Bladed Axe [CATA+] / Twin-bladed Axe
+			i(3189),	-- Wood Chopper
 		}),
 		filter(ONE_HANDED_MACES, {
 			i(868),		-- Ardent Custodian
 			i(15222),	-- Barbed Club
 			i(15224),	-- Battlesmasher
 			i(13024),	-- Beazel's Basher
+			i(4563),	-- Billy Club
 			i(15229),	-- Blesswind Hammer
 			i(1823),	-- Bludgeoning Cudgel
 			i(13028),	-- Bludstone Hammer
@@ -2386,6 +2389,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(13025),	-- Deadwood Sledge
 			i(15227),	-- Diamond-Tip Bludgeon
 			i(2194),	-- Diamond Hammer
+			i(766),		-- Flanged Mace
 			i(15226),	-- Giant Club
 			i(8194),	-- Goblin Nutcracker
 			i(810),		-- Hammer of the Northern Wind
@@ -2422,6 +2426,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(1990),	-- Ballast Maul
 			i(1814),	-- Battered Mallet
 			i(3198),	-- Battering Hammer
+			i(3190),	-- Beatstick
 			i(4570),	-- Birchwood Maul
 			i(13046),	-- Blanchard's Stout
 			i(15267),	-- Brutehammer
@@ -2463,6 +2468,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(1413),	-- Feeble Sword
 			i(15212),	-- Fighter Broadsword
 			i(13816),	-- Fine Longsword
+			i(4560),	-- Fine Scimitar
 			i(15215),	-- Furious Falchion
 			i(8190),	-- Hanzo Sword
 			i(15221),	-- Holy War Sword
@@ -2525,6 +2531,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(1982),	-- Nightblade
 			i(1513),	-- Old Greatsword
 			i(15249),	-- Polished Zweihander
+			i(8177),	-- Practice Sword
 			i(12992),	-- Searing Blade
 			i(15257),	-- Shin Blade
 			i(3192),	-- Short Bastard Sword
@@ -2544,6 +2551,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(4025),	-- Balanced Long Bow
 			i(15288),	-- Blasthorn Bow
 			i(2825),	-- Bow of Searing Arrows
+			i(8179),	-- Cadet's Bow
 			i(2773),	-- Cracked Shortbow
 			i(15287),	-- Crusader Bow
 			i(13023),	-- Eaglehorn Long Bow
@@ -2627,10 +2635,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(8188),	-- Explosive Shotgun
 			i(13139),	-- Guttbuster
 			i(3040),	-- Hunter's Muzzle Loader
+			i(8181),	-- Hunting Rifle
 			i(13137),	-- Ironweaver
 			i(13136),	-- Lil Timmy's Peashooter
 			i(3780),	-- Long-Barreled Musket
 			i(2786),	-- Oiled Blunderbuss
+			i(8182),	-- Pellet Rifle
 			i(15323),	-- Percussion Shotgun
 			i(2100),	-- Precisely Calibrated Boomstick
 			i(13825),	-- Primed Musket
@@ -2666,6 +2676,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(812),		-- Glowing Brightwood Staff
 			i(791),		-- Gnarled Ash Staff
 			i(4024),	-- Heavy War Staff
+			i(767),		-- Long Bo Staff
 			i(2077),	-- Magician Staff
 			i(15276),	-- Magus Long Staff
 			i(4575),	-- Medicine Staff
@@ -2718,6 +2729,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9843),	-- Banded Shield
 		i(9778),	-- Bandit Buckler
 		i(6559),	-- Bard's Buckler
+		i(3650),	-- Battle Shield
 		i(2210),	-- Battered Buckler
 		i(6599),	-- Battleforge Shield
 		i(2211),	-- Bent Large Shield
@@ -2734,10 +2746,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15894),	-- Bristlebark Buckler
 		i(14912),	-- Brutish Shield
 		i(3655),	-- Burnished Shield
+		i(15895),	-- Burnt Buckler
 		i(9764),	-- Cadet Shield
 		i(7495),	-- Captain's Buckler
 		i(3653),	-- Ceremonial Buckler
 		i(7536),	-- Champion's Wall Shield
+		i(15478),	-- Charger's Shield
 		i(4068),	-- Chief Brigadier Shield
 		i(8135),	-- Chromite Shield
 		i(4065),	-- Combat Shield
@@ -2810,6 +2824,8 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15342),	-- Pathfinder Guard
 		i(7331),	-- Phalanx Shield
 		i(15563),	-- Pillager's Shield
+		i(7109),	-- Pioneer Buckler
+		i(15006),	-- Primal Buckler
 		i(15893),	-- Prospector's Buckler
 		i(3986),	-- Protective Pavise
 		i(14790),	-- Protector Buckler
@@ -2851,6 +2867,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(1204),	-- The Green Tower
 		i(15552),	-- Thick Scale Shield
 		i(2222),	-- Tower Shield
+		i(3649),	-- Tribal Buckler
 		i(15367),	-- Trickster's Protector
 		i(15687),	-- Triumphant Shield
 		i(14842),	-- Tyrant's Shield
@@ -2863,6 +2880,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14947),	-- Warbringer's Shield
 		i(15991),	-- Warleader's Shield
 		i(9958),	-- Warmonger's Buckler
+		i(1438),	-- Warrior's Shield
 		i(14812),	-- Warstrike Buckler
 		i(15543),	-- Wicked Chain Shield
 		i(2214),	-- Wooden Buckler

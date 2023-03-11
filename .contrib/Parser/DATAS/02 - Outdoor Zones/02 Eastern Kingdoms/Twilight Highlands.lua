@@ -2314,6 +2314,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.8, 57.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(44643),	-- Dalaran Bow
+						i(44637),	-- Dalaran Crossbow
 						i(11308, {	-- Sylvan Shortbow
 							["isLimited"] = true,
 						}),

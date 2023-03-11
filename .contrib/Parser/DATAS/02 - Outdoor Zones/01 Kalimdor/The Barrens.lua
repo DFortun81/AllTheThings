@@ -364,6 +364,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
 					["lvl"] = lvlsquish(10, 10, 5),
+					["groups"] = {
+						i(6653, {	-- Torch of the Dormant Flame
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(1525, {	-- Call of Fire (3/5)
 					["qg"] = 5900,	-- Telf Joolam
@@ -412,6 +417,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 38.6, 58.2, DUROTAR },
 							["cr"] = 5893,	-- Minor Manifestation of Fire
 						}),
+						i(6653, {	-- Torch of the Dormant Flame
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(1527, {	-- Call of Fire (5/5)
@@ -429,6 +437,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(3599),	-- Searing Totem
 						i(5176, {	-- Fire Totem
 							["description"] = "You must keep this in your bags forever.",
+						}),
+						i(6654, {	-- Torch of the Eternal Flame
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),

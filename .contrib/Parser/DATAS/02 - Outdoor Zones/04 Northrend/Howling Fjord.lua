@@ -2258,7 +2258,11 @@ root(ROOTS.Zones, {
 					n(24539, {	-- "Silvermoon" Harry
 						["coord"] = { 35.0, 80.8, HOWLING_FJORD },
 						["groups"] = {
+							i(20983),	-- Acolyte's Dagger
 							i(6097),	-- Acolyte's Shirt
+							i(20978),	-- Apprentice's Staff
+							i(20986),	-- Light Cloth Pants
+							i(20918),	-- Unadorned Chain Leggings
 						},
 					}),
 					n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
@@ -2280,6 +2284,14 @@ root(ROOTS.Zones, {
 							i(44503),	-- Schematic: Mekgineer's Chopper
 							i(38453),	-- Shield of the Lion-Hearted
 							i(38465),	-- Vanguard Soldier's Dagger
+						},
+					}),
+					n(24330, {	-- Orson Locke <Sharp Blades>
+						["coord"] = { 53.8, 66.8, HOWLING_FJORD },
+						["groups"] = {
+							i(40005),	-- Forsaken Blade
+							i(40004),	-- Forsaken Greatsword
+							i(40006),	-- Forsaken Sword
 						},
 					}),
 					n(32774, {	-- Sebastian Crane <Horde Expedition Quartermaster>

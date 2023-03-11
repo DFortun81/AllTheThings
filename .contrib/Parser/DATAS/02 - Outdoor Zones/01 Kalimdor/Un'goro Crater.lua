@@ -873,6 +873,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(11902, {	-- Linken's Sword of Mastery
 							["timeline"] = { "removed 4.0.3" },
 						}),
+						i(11522, {	-- Silver Totem of Aquementas
+							["timeline"] = { "removed 4.0.3" },
+						}),
 						i(11904, {	-- Spirit of Aquementas
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -908,6 +911,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 47,
+					["groups"] = {
+						i(11522, {	-- Silver Totem of Aquementas
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(3942, {	-- Linken's Memory
 					["qg"] = 9117,	-- J.D. Collie

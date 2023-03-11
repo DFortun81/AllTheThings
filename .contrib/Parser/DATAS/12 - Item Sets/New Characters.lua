@@ -164,6 +164,9 @@ root(ROOTS.GearSets, n(CLASS_TRIAL, {
 			}),
 			n(WEAPONS, {
 				i(2508),	-- Old Blunderbuss
+				i(20982, {	-- Sharp Dagger
+					["timeline"] = { "added 2.0.1.6180", "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+				}),
 				i(20980, {	-- Warder's Shortbow
 					["timeline"] = { "added 2.0.1.6180" }
 				}),
@@ -470,6 +473,9 @@ root(ROOTS.GearSets, n(CLASS_TRIAL, {
 				i(20977, {	-- Recruit's Shortsword
 					["timeline"] = { "added 4.0.1", "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
 				}),
+				i(20982, {	-- Sharp Dagger
+					["timeline"] = { "added 2.0.1.6180", "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+				}),
 				i(50057, {	-- Sharp Dirk
 					["timeline"] = { "added 3.3.0.10571" }
 				}),
@@ -756,6 +762,9 @@ root(ROOTS.GearSets, n(CLASS_TRIAL, {
 				}),
 				i(35),	-- Bent Staff
 				i(3661),	-- Handcrafted Staff
+				i(20981, {	-- Neophyte's Mace
+					["timeline"] = { "added 2.0.1.6180", "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+				}),
 			}),
 		}),
 		cl(SHAMAN, {

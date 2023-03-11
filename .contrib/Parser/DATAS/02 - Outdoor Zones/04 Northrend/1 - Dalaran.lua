@@ -5443,6 +5443,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					-- #endif
+					n(28989, {	-- Aemara <Bowyer>
+						["coord"] = { 60.6, 52.2, NORTHREND_DALARAN },
+						["groups"] = {
+							i(44643),	-- Dalaran Bow
+							i(44637),	-- Dalaran Crossbow
+						},
+					}),
 					n(29548, {	-- Aimee <Pie, Pastry & Cakes>
 						["coord"] = { 36.4, 33.8, NORTHREND_DALARAN },
 						["groups"] = {
@@ -5882,6 +5889,13 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					n(32337, {	-- Christi Stockton <Wine Vendor>
+						["coord"] = { 53.8, 32.6, NORTHREND_DALARAN },
+						["groups"] = {
+							i(44679),	-- Red Wine Glass
+							i(44678),	-- Wine Glass
+						},
+					}),
 					n(29716, {	-- Clockwork Assistant <Jepetto's Companion>
 						["coord"] = { 44.8, 46.3, NORTHREND_DALARAN },
 						["groups"] = {
@@ -5918,6 +5932,12 @@ root(ROOTS.Zones, {
 							i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
 								["timeline"] = { "added 3.1.0.9626" },
 							}),
+						},
+					}),
+					n(29476, {	-- Dagna Flintlock <Gunsmith>
+						["coord"] = { 60.0, 52.6, NORTHREND_DALARAN },
+						["groups"] = {
+							i(44635),	-- Dalaran Rifle
 						},
 					}),
 					n(29528, {	-- Debbi Moore <Trinkets & Charms>
@@ -6927,6 +6947,12 @@ root(ROOTS.Zones, {
 							emov(40, i(40750)),	-- Xintor's Expeditionary Boots
 						},
 					}),
+					n(29494, {	-- Shen Kang Cheng <Staves>
+						["coord"] = { 49.6, 72.6, NORTHREND_DALARAN },
+						["groups"] = {
+							i(44655),	-- Dalaran Stave
+						},
+					}),
 					-- #if AFTER CATA
 					n(32712, {	-- The Amazing Zanzo
 						["description"] = "Wanders around the commerce and alliance bank sections.",
@@ -7539,6 +7565,8 @@ root(ROOTS.Zones, {
 					n(28991, {	-- Valaden Silverblade <Sword Merchant>
 						["coord"] = { 54.5, 62.9, NORTHREND_DALARAN },
 						["groups"] = {
+							i(44639),	-- Dalaran Greatsword
+							i(44638),	-- Dalaran Sword
 							emoh(50, i(40703)),	-- Grasscutter
 						},
 					}),
@@ -7661,6 +7689,13 @@ root(ROOTS.Zones, {
 								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
 								["timeline"] = { "added 3.1.0" },
 							}),
+						},
+					}),
+					n(29496, {	-- Walther Whiteford <Mace Merchant>
+						["coord"] = { 55.8, 62.8, NORTHREND_DALARAN },
+						["groups"] = {
+							i(44636),	-- Dalaran Cudgel
+							i(44645),	-- Dalaran Hammer
 						},
 					}),
 					-- #if AFTER 8.0.1

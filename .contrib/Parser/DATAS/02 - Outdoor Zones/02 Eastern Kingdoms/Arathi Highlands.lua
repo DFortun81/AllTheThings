@@ -2056,6 +2056,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				i(5040, {	-- Shadow Hunter Knife
+					["cr"] = 2557,	-- Witherbark Shadow Hunter
+					["coord"] = { 63.6, 84.2, ARATHI_HIGHLANDS },
+				}),
 				i(3345, {	-- Silk Wizard Hat
 					["cr"] = 2591,	-- Syndicate Magus
 				}),

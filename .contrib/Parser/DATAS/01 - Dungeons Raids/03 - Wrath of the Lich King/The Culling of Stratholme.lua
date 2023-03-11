@@ -86,6 +86,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 			}),
+			n(VENDORS, {
+				n(31021, {	-- Sophie Aaren <Florist>
+					["coord"] = { 64.0, 55.2, THE_CULLING_OF_STRATHOLME_FLOOR2 },
+					["groups"] = {
+						i(43327),	-- Stratholme Lily
+					},
+				}),
+			}),
 			n(ZONE_DROPS, {
 				i(37115),	-- Crusader's Square Pauldrons
 				i(37697),	-- Trade District Knife

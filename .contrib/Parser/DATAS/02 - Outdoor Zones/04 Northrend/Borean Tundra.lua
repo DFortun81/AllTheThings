@@ -2498,6 +2498,15 @@ root(ROOTS.Zones, {
 							i(22307),	-- Pattern: Enchanted Mageweave Pouch
 						},
 					}),
+					n(27139, {	-- Librarian Whitley <Wands>
+						["coord"] = { 46.4, 32.6, BOREAN_TUNDRA },
+						["groups"] = {
+							i(40019),	-- Wand of Amber
+							i(40021),	-- Wand of Crystal
+							i(40020),	-- Wand of Jade
+							i(40018),	-- Wand of Onyx
+						},
+					}),
 					n(32564, {	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
 						["coord"] = { 57.7, 66.4, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,

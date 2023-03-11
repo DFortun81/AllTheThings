@@ -2244,6 +2244,14 @@ root(ROOTS.Zones, {
 							i(44258),	-- Wound-Binder Wristguards
 						},
 					}),
+					n(30067, {	-- Initiate Claget <Blades>
+						["coord"] = { 20.4, 47.8, ICECROWN },
+						["groups"] = {
+							i(40005),	-- Forsaken Blade
+							i(40004),	-- Forsaken Greatsword
+							i(40006),	-- Forsaken Sword
+						},
+					}),
 					n(30431, {	-- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>
 						["coord"] = { 87.6, 75.6, ICECROWN },
 						["groups"] = {

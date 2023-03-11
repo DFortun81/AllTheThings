@@ -605,6 +605,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
+						n(28500, {	-- Master Siegesmith Corvus
+							["coord"] = { 50.8, 30.2, EASTERN_PLAGUELANDS },
+							["classes"] = { DEATHKNIGHT },
+							["groups"] = {
+								i(38645),	-- Bone-Plated Armor
+								i(38646),	-- Bone-Plated Belt
+								i(38647),	-- Bone-Plated Boots
+								i(38648),	-- Bone-Plated Bracers
+								i(38649),	-- Bone-Plated Gloves
+								i(38650),	-- Bone-Plated Helm
+								i(38651),	-- Bone-Plated Leggings
+							},
+						}),
 						n(28512, {	-- Quartermaster Ozorg
 							["coord"] = { 81.9, 48.4, EASTERN_PLAGUELANDS },
 							["classes"] = { DEATHKNIGHT },

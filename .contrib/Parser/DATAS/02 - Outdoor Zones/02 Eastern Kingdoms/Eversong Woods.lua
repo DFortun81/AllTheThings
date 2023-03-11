@@ -769,6 +769,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 					}),
 					n(VENDORS, {
+						n(15292, {	-- Faraden Thelryn <Armorsmith>
+							["coord"] = { 60.0, 38.6, SUNSTRIDER_ISLE },
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(20912),	-- Large Shield
+								i(20911),	-- Light Guard
+								i(20914),	-- Unadorned Chain Belt
+								i(20915),	-- Unadorned Chain Boots
+								i(20916),	-- Unadorned Chain Bracers
+								i(20917),	-- Unadorned Chain Gloves
+								i(20918),	-- Unadorned Chain Leggings
+								i(20919),	-- Unadorned Chain Vest
+							},
+						}),
+						n(15291, {	-- Jainthess Thelryn <Cloth & Leather Merchant>
+							["coord"] = { 58.6, 38.8, SUNSTRIDER_ISLE },
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(20990),	-- Light Cloth Armor
+								i(20989),	-- Light Cloth Belt
+								i(20988),	-- Light Cloth Bracers
+								i(20987),	-- Light Cloth Gloves
+								i(20986),	-- Light Cloth Pants
+								i(20985),	-- Light Cloth Shoes
+								i(20920),	-- Sun Cured Belt
+								i(20921),	-- Sun Cured Boots
+								i(20922),	-- Sun Cured Bracers
+								i(20923),	-- Sun Cured Gloves
+								i(20924),	-- Sun Cured Pants
+								i(20925),	-- Sun Cured Vest
+							},
+						}),
 						n(15289, {	-- Raelis Dawnstar <Weaponsmith>
 							["coord"] = { 60.6, 39.6, SUNSTRIDER_ISLE },
 							["races"] = HORDE_ONLY,
@@ -1879,6 +1911,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["cr"] = 15968,	-- Darnassian Scout
 					["coord"] = { 33.2, 59.6, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
+				}),
+				i(23553, {	-- Living Branch
+					["cr"] = 15636,	-- Eversong Green Keeper
+					["coords"] = {
+						{ 54.8, 79.6, EVERSONG_WOODS },
+						{ 57.2, 74.0, EVERSONG_WOODS },
+						{ 60.8, 68.8, EVERSONG_WOODS },
+						{ 63.0, 64.6, EVERSONG_WOODS },
+					},
 				}),
 				i(23228, {	-- Old Whitebark's Pendant
 					["cr"] = 15409,	-- Old Whitebark

@@ -1925,6 +1925,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2907,	-- Dustbelcher Mystic
 				}),
 				-- #endif
+				i(4616, {	-- Ryedol's Lucky Pick
+					["crs"] = {
+						2740,	-- Shadowforge Darkweaver
+						2739,	-- Shadowforge Tunneler
+						2743,	-- Shadowforge Warrior
+					},
+				}),
 				i(9406, {	-- Spirewind Fetter
 					["crs"] = {
 						4846,	-- Shadowforge Digger

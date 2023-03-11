@@ -255,6 +255,7 @@ _.ExpansionFeatures =
 											["collectible"] = false,
 											["u"] = 15,
 										}),
+										i(34829),	-- Ornate Drinking Stein
 										i(44983),	-- Strand Crawler
 										i(118393, {	-- Tentacled Hat
 											["collectible"] = false,
@@ -274,6 +275,7 @@ _.ExpansionFeatures =
 											["collectible"] = false,
 											["u"] = 15,
 										}),
+										i(34829),	-- Ornate Drinking Stein
 										i(44983),	-- Strand Crawler
 										i(118393, {	-- Tentacled Hat
 											["collectible"] = false,

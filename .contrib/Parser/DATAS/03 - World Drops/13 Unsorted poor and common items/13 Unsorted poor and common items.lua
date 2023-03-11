@@ -226,7 +226,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2435),	-- Embroidered Armor
 					i(38277),	-- Haliscan Jacket
 					i(2615),	-- Chromatic Robe
-					i(20990),	-- Light Cloth Armor
 					i(2160),	-- Padded Armor
 					i(2612),	-- Plain Robe
 					i(52729),	-- Recruit's Robe	-- TODO Cataclysm
@@ -247,7 +246,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(7350),	-- Disciple's Bracers
 					i(3588),	-- Embroidered Bracers
 					i(3641),	-- Journeyman's Bracers
-					i(20988),	-- Light Cloth Bracers
 					i(14095),	-- Native Bands
 					i(3592),	-- Padded Bracers
 					i(3594),	-- Russet Bracers
@@ -263,7 +261,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(6515),	-- Disciple's Gloves
 					i(2440),	-- Embroidered Gloves
 					i(2960),	-- Journeyman's Gloves
-					i(20987),	-- Light Cloth Gloves
 					i(14102),	-- Native Handwraps
 					i(2158),	-- Padded Gloves
 					i(2434),	-- Russet Gloves
@@ -280,7 +277,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(6513),	-- Disciple's Sash
 					i(3587),	-- Embroidered Belt
 					i(4663),	-- Journeyman's Belt
-					i(20989),	-- Light Cloth Belt
 					i(14099),	-- Native Sash
 					i(3591),	-- Padded Belt
 					i(3593),	-- Russet Belt
@@ -293,7 +289,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				n(LEGS, {
 					i(2437),	-- Embroidered Pants
 					i(38278),	-- Haliscan Pantaloons
-					i(20986),	-- Light Cloth Pants
 					i(2159),	-- Padded Pants
 					i(2431),	-- Russet Pants
 					i(194),		-- Tattered Cloth Pants
@@ -308,7 +303,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(6836),	-- Dress Shoes
 					i(2438),	-- Embroidered Boots
 					i(2959),	-- Journeyman's Boots
-					i(20985),	-- Light Cloth Shoes
 					i(14110),	-- Native Sandals
 					i(2156),	-- Padded Boots
 					i(2432),	-- Russet Boots
@@ -348,7 +342,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(42099),	-- Snowhide Vest
 					i(2463),	-- Studded Doublet
 					i(6524),	-- Studded Leather Harness
-					i(20925),	-- Sun Cured Vest
 				}),
 				n(WRIST, {
 					i(2374),	-- Battered Leather Bracers
@@ -367,7 +360,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2474),	-- Reinforced Leather Bracers
 					i(42092),	-- Snowhide Bracers
 					i(2468),	-- Studded Bracers
-					i(20922),	-- Sun Cured Bracers
 					i(3285),	-- Tribal Bracers
 				}),
 				n(HANDS, {
@@ -384,7 +376,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2475),	-- Reinforced Leather Gloves
 					i(42097),	-- Snowhide Mitts
 					i(2469),	-- Studded Gloves
-					i(20923),	-- Sun Cured Gloves
 					i(3286),	-- Tribal Gloves
 				}),
 				n(WAIST, {
@@ -402,7 +393,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2471),	-- Reinforced Leather Belt
 					i(42084),	-- Snowhide Belt
 					i(2464),	-- Studded Belt
-					i(20920),	-- Sun Cured Belt
 					i(4675),	-- Tribal Belt
 				}),
 				n(LEGS, {
@@ -416,7 +406,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2472),	-- Reinforced Leather Pants
 					i(42098),	-- Snowhide Pants
 					i(2465),	-- Studded Pants
-					i(20924),	-- Sun Cured Pants
 				}),
 				n(FEET, {
 					i(2373),	-- Battered Leather Boots
@@ -434,7 +423,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(57254),	-- Runner's Boots	-- TODO Cataclysm
 					i(42088),	-- Snowhide Hoof-Warmers
 					i(2467),	-- Studded Boots
-					i(20921),	-- Sun Cured Boots
 					i(3284),	-- Tribal Boots
 				}),
 			}),
@@ -459,7 +447,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2153),	-- Polished Scale Vest
 					i(2386),	-- Rusted Chain Vest
 					i(2379),	-- Tarnished Chain Vest
-					i(20919),	-- Unadorned Chain Vest
 				}),
 				n(WRIST, {
 					i(2421),	-- Augmented Chain Bracers
@@ -473,7 +460,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2150),	-- Polished Scale Bracers
 					i(2390),	-- Rusted Chain Bracers
 					i(2384),	-- Tarnished Chain Bracers
-					i(20916),	-- Unadorned Chain Bracers
 					i(3213),	-- Veteran Bracers
 					i(15482),	-- War Torn Bands
 					i(3214),	-- Warrior's Bracers
@@ -490,7 +476,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2151),	-- Polished Scale Gloves
 					i(2391),	-- Rusted Chain Gloves
 					i(2385),	-- Tarnished Chain Gloves
-					i(20917),	-- Unadorned Chain Gloves
 					i(15484),	-- War Torn Handgrips
 					i(2968),	-- Warrior's Gloves
 					i(30784),	-- Worn Mag'hari Gauntlets
@@ -507,7 +492,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2148),	-- Polished Scale Belt
 					i(2387),	-- Rusted Chain Belt
 					i(2380),	-- Tarnished Chain Belt
-					i(20914),	-- Unadorned Chain Belt
 					i(4678),	-- Veteran Girdle
 					i(15480),	-- War Torn Girdle
 					i(4659),	-- Warrior's Girdle
@@ -519,7 +503,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2152),	-- Polished Scale Leggings
 					i(2388),	-- Rusted Chain Leggings
 					i(2381),	-- Tarnished Chain Leggings
-					i(20918),	-- Unadorned Chain Leggings
 				}),
 				n(FEET, {
 					i(2420),	-- Augmented Chain Boots
@@ -532,7 +515,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 					i(2149),	-- Polished Scale Boots
 					i(2389),	-- Rusted Chain Boots
 					i(2383),	-- Tarnished Chain Boots
-					i(20915),	-- Unadorned Chain Boots
 					i(2979),	-- Veteran Boots
 					i(15481),	-- War Torn Greaves
 					i(2967),	-- Warrior's Boots
@@ -540,35 +522,28 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 			}),
 			filter(PLATE, {
 				n(HEAD, {
-					i(38650),	-- Bone-Plated Helm
-					i(8092),	-- Platemail Helm
+					i(8092),	-- Platemail Helm	-- sold by many vendors
 				}),
 				n(CHEST, {
-					i(38645),	-- Bone-Plated Armor
-					i(30765),	-- Heavy Draenic Breastplate
-					i(8094),	-- Platemail Armor
+					i(30765),	-- Heavy Draenic Breastplate	-- sold by many vendors
+					i(8094),	-- Platemail Armor	-- sold by many vendors
 				}),
 				n(WRIST, {
-					i(38648),	-- Bone-Plated Bracers
-					i(30771),	-- Heavy Draenic Bracers
-					i(8090),	-- Platemail Bracers
+					i(30771),	-- Heavy Draenic Bracers	-- sold by many vendors
+					i(8090),	-- Platemail Bracers	-- sold by many vendors
 				}),
 				n(HANDS, {
-					i(38649),	-- Bone-Plated Gloves
-					i(8091),	-- Platemail Gloves
+					i(8091),	-- Platemail Gloves	-- sold by many vendors
 				}),
 				n(WAIST, {
-					i(30777),	-- Aldor Heavy Belt
-					i(38646),	-- Bone-Plated Belt
-					i(8088),	-- Platemail Belt
+					i(30777),	-- Aldor Heavy Belt	-- sold by many vendors
+					i(8088),	-- Platemail Belt	-- sold by many vendors
 				}),
 				n(LEGS, {
-					i(38651),	-- Bone-Plated Leggings
-					i(8093),	-- Platemail Leggings
+					i(8093),	-- Platemail Leggings	-- sold by many vendors
 				}),
 				n(FEET, {
-					i(38647),	-- Bone-Plated Boots
-					i(8089),	-- Platemail Boots
+					i(8089),	-- Platemail Boots	-- sold by many vendors
 				}),
 			}),
 			filter(CLOAKS, {
@@ -649,344 +624,148 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 		}),
 		n(WEAPONS, {
 			filter(ONE_HANDED_AXES, {
-				i(3443),	-- Ceremonial Tomahawk
-				i(2029),	-- Cleaver
-				i(2522),	-- Crescent Axe
-				i(44642),	-- Dalaran Axe
-				i(3293),	-- Deadman Cleaver
-				i(927),		-- Double Axe
-				i(2530),	-- Francisca
-				i(2134),	-- Hand Axe
-				i(853),		-- Hatchet
-				i(778),		-- Kobold Excavation Pick
-				i(768),		-- Lumberjack Axe
-				i(30751),	-- Mag'hari Light Axe
-				i(1011),	-- Sharp Axe
-				i(1383),	-- Stone Tomahawk
-				i(2490),	-- Tomahawk
-				i(2054),	-- Trogg Hand Axe
+				i(2029),	-- Cleaver	-- sold by many vendors
+				i(2522),	-- Crescent Axe	-- sold by many vendors
+				i(927),		-- Double Axe	-- sold by many vendors
+				i(2530),	-- Francisca	-- sold by many vendors
+				i(30751),	-- Mag'hari Light Axe	-- sold by many vendors
 			}),
 			filter(TWO_HANDED_AXES, {
-				i(926),	-- Battle Axe
-				i(2025),	-- Bearded Axe
-				i(2479),	-- Broad Axe
-				i(2523),	-- Bullova
-				i(44640),	-- Dalaran Great Axe
-				i(2531),	-- Great Axe
-				i(2491),	-- Large Axe
-				i(30752),	-- Mag'hari Battleaxe
-				i(1196),	-- Tabar
-				i(3189),	-- Wood Chopper
-				i(52532),	-- Worn Wood Chopper	-- TODO Cataclysm
+				i(926),	-- Battle Axe	-- sold by many vendors
+				i(2025),	-- Bearded Axe	-- sold by many vendors
+				i(2523),	-- Bullova	-- sold by many vendors
+				i(2531),	-- Great Axe	-- sold by many vendors
+				i(30752),	-- Mag'hari Battleaxe	-- sold by many vendors
+				i(52532),	-- Worn Wood Chopper	-- where is this from?
 			}),
 			filter(BOWS, {
-				i(8179),	-- Cadet's Bow
-				i(44643),	-- Dalaran Bow
-				i(3027),	-- Heavy Recurve Bow
-				i(4931),	-- Hickory Shortbow
-				i(2506),	-- Hornwood Recurve Bow
-				i(2507),	-- Laminated Recurve Bow
-				i(30759),	-- Mag'hari Light Recurve
-				i(2505),	-- Polished Shortbow
-				i(12449),	-- Primitive Bow
-				i(3026),	-- Reinforced Bow
-				i(12447),	-- Thistlewood Bow
-				i(39522),	-- Wolvar Shortbow
+				i(3027),	-- Heavy Recurve Bow	-- sold by many vendors
+				i(2506),	-- Hornwood Recurve Bow	-- sold by many vendors
+				i(2507),	-- Laminated Recurve Bow	-- sold by many vendors
+				i(30759),	-- Mag'hari Light Recurve	-- sold by many vendors
+				i(2505),	-- Polished Shortbow	-- sold by many vendors
+				i(12449),	-- Primitive Bow	-- where is this from?
+				i(3026),	-- Reinforced Bow	-- sold by many vendors
+				i(12447),	-- Thistlewood Bow	-- where is this from?
 			}),
 			filter(CROSSBOWS, {
-				i(24433),	-- Crossbow of the Albatross
-				i(44637),	-- Dalaran Crossbow
-				i(30757),	-- Draenic Light Crossbow
-				i(15808),	-- Fine Light Crossbow
-				i(15809),	-- Heavy Crossbow
-				i(15807),	-- Light Crossbow
+				i(30757),	-- Draenic Light Crossbow	-- sold by many vendors
+				i(15808),	-- Fine Light Crossbow	-- sold by many vendors
+				i(15809),	-- Heavy Crossbow	-- sold by many vendors
+				i(15807),	-- Light Crossbow	-- sold by many vendors
 			}),
 			filter(DAGGERS, {
-				i(20983),	-- Acolyte's Dagger
-				i(3225),	-- Bloodstained Knife
-				i(10547),	-- Camping Knife
-				i(7166),	-- Copper Dagger
-				i(44652),	-- Dalaran Dagger
-				i(2139),	-- Dirk
-				i(40005),	-- Forsaken Blade
-				i(3268),	-- Forsaken Dagger
-				i(2207),	-- Jambiya
-				i(2209),	-- Kris
-				i(2526),	-- Main Gauche
-				i(2224),	-- Militia Dagger
-				i(2208),	-- Poniard
-				i(4925),	-- Primitive Hand Blade
-				i(5605),	-- Pruning Knife
-				i(22963),	-- Ranger's Pocketknife
-				i(34859),	-- Razor Sharp Fillet Knife
-				i(5093),	-- Razormane Backstabber
-				i(2534),	-- Rondel
-				i(5040),	-- Shadow Hunter Knife
-				i(20982),	-- Sharp Dagger
-				i(2225),	-- Sharp Kitchen Knife
-				i(4565),	-- Simple Dagger
-				i(4302),	-- Small Green Dagger
-				i(2494),	-- Stiletto
-				i(5392),	-- Thistlewood Dagger
-				i(2787),	-- Trogg Dagger
-				i(2137),	-- Whittling Knife
+				i(2209),	-- Kris	-- sold by many vendors
+				i(2526),	-- Main Gauche	-- sold by many vendors
+				i(2208),	-- Poniard	-- sold by many vendors
+				i(2534),	-- Rondel	-- sold by many vendors
+				i(4565),	-- Simple Dagger	-- sold by many vendors
 			}),
 			filter(PROF_EQUIP, {	-- Fishing Poles
-				i(6367),	-- Big Iron Fishing Pole
-				i(12225),	-- Blump Family Fishing Pole
-				i(6366),	-- Darkwood Fishing Pole
-				i(6256),	-- Fishing Pole
-				i(6365),	-- Strong Fishing Pole
+				i(6366),	-- Darkwood Fishing Pole	-- fished up in many zones
+				i(6365),	-- Strong Fishing Pole	-- sold by many vendors
 			}),
 			filter(FIST_WEAPONS, {
-				i(15905),	-- Brass Knuckles
-				i(44641),	-- Dalaran Knuckles
-				i(15904),	-- Deadly Fist Blades
-				i(15909),	-- Left-Handed Blades
-				i(15906),	-- Left-Handed Brass Knuckles
-				i(15907),	-- Left-Handed Claw
-				i(15903),	-- Slicing Claw
+				i(15905),	-- Brass Knuckles	-- sold by many vendors
+				i(15904),	-- Deadly Fist Blades	-- sold by many vendors
+				i(15909),	-- Left-Handed Blades	-- where is this from?
+				i(15906),	-- Left-Handed Brass Knuckles	-- where is this from?
+				i(15907),	-- Left-Handed Claw	-- where is this from?
+				i(15903),	-- Slicing Claw	-- sold by many vendors
 			}),
 			filter(GUNS, {
-				i(30758),	-- Aldor Guardian Rifle
-				i(3025),	-- BKP 42 "Ultra"
-				i(3024),	-- BKP 2700 "Enforcer"
-				i(44635),	-- Dalaran Rifle
-				i(2511),	-- Hunter's Boomstick
-				i(8181),	-- Hunting Rifle
-				i(3023),	-- Large Bore Blunderbuss
-				i(12448),	-- Light Hunting Rifle
-				i(2509),	-- Ornate Blunderbuss
-				i(8182),	-- Pellet Rifle
-				i(2510),	-- Solid Blunderbuss
+				i(30758),	-- Aldor Guardian Rifle	-- sold by many vendors
+				i(3025),	-- BKP 42 "Ultra"	-- sold by many vendors
+				i(3024),	-- BKP 2700 "Enforcer"	-- sold by many vendors
+				i(2511),	-- Hunter's Boomstick	-- sold by many vendors
+				i(3023),	-- Large Bore Blunderbuss	-- sold by many vendors
+				i(12448),	-- Light Hunting Rifle	-- where is this from?
+				i(2509),	-- Ornate Blunderbuss	-- sold by many vendors
+				i(2510),	-- Solid Blunderbuss	-- sold by many vendors
 			}),
 			filter(HELD_IN_OFF_HAND, {
-				i(3422),	-- Beautiful Wildflowers
-				i(3420),	-- Black Rose
-				i(8626),	-- Blue Sparkler
-				i(44802),	-- Borrowed Egg Basket
-				i(3424),	-- Bouquet of Black Roses
-				i(2562),	-- Bouquet of Scarlet Begonias
-				i(3423),	-- Bouquet of White Roses
-				i(23691),	-- Corrupted Mark of the Lightbringer
-				i(19295),	-- Darkmoon Flower
-				i(27516),	-- Enormous Barbed Gill Trout
-				i(16967),	-- Feralas Ahi
-				i(33014),	-- Fine Poking Stick
-				i(27515),	-- Huge Spotted Feltail
-				i(7297),	-- Morbent's Bane
-				i(34829),	-- Ornate Drinking Stein
-				i(3419),	-- Red Rose
-				i(8624),	-- Red Sparkler
-				i(44679),	-- Red Wine Glass
-				i(11522),	-- Silver Totem of Aquementas
-				i(3421),	-- Simple Wildflowers
-				i(3360),	-- Stitches' Femur
-				i(43327),	-- Stratholme Lily
-				i(33012),	-- Terokkar Lilac
-				i(6653),	-- Torch of the Dormant Flame
-				i(6654),	-- Torch of the Eternal Flame
-				i(8625),	-- White Sparkler
-				i(44678),	-- Wine Glass
+				i(3422),	-- Beautiful Wildflowers	-- sold by many vendors
+				i(3420),	-- Black Rose	-- sold by many vendors
+				i(8626),	-- Blue Sparkler	-- sold by many vendors
+				i(3424),	-- Bouquet of Black Roses	-- sold by many vendors
+				i(3423),	-- Bouquet of White Roses	-- sold by many vendors
+				i(16967),	-- Feralas Ahi	-- fished up in Feralas
+				i(3419),	-- Red Rose	-- sold by many vendors
+				i(8624),	-- Red Sparkler	-- sold by many vendors
+				i(3421),	-- Simple Wildflowers	-- sold by many vendors
+				i(33012),	-- Terokkar Lilac	-- where is this from?
+				i(8625),	-- White Sparkler	-- sold by many vendors
 			}),
 			filter(ONE_HANDED_MACES, {
-				i(30754),	-- Ancient Bone Mace
-				i(4563),	-- Billy Club
-				i(6651),	-- Broken Wine Bottle
-				i(2130),	-- Club
-				i(2844),	-- Copper Mace
-				i(2492),	-- Cudgel
-				i(44636),	-- Dalaran Cudgel
-				i(3294),	-- Deadman Club
-				i(23392),	-- Exodar Maul
-				i(925),		-- Flail
-				i(766),		-- Flanged Mace
-				i(3269),	-- Forsaken Maul
-				i(2259),	-- Frostmane Club
-				i(2028),	-- Hammer
-				i(1389),	-- Kobold Mining Mallet
-				i(19292),	-- Last Month's Mutton
-				i(19293),	-- Last Year's Mutton
-				i(852),		-- Mace
-				i(24431),	-- McWeaksauce's Meat Tenderizer
-				i(5580),	-- Militia Hammer
-				i(2532),	-- Morning Star
-				i(20981),	-- Neophyte's Mace
-				i(4924),	-- Primitive Club
-				i(3262),	-- Putrid Wooden Hammer
-				i(1382),	-- Rock Mace
-				i(2055),	-- Small Wooden Hammer
-				i(3329),	-- Spiked Wooden Plank
-				i(781),		-- Stone Gnoll Hammer
-				i(1913),	-- Studded Blackjack
-				i(10544),	-- Thistlewood Maul
-				i(2064),	-- Trogg Club
-				i(2524),	-- Truncheon
+				i(30754),	-- Ancient Bone Mace	-- sold by many vendors
+				i(6651),	-- Broken Wine Bottle	-- fished up in The Barrens - Sludge Fen
+				i(925),		-- Flail	-- sold by many vendors
+				i(2028),	-- Hammer	-- sold by many vendors
+				i(2532),	-- Morning Star	-- sold by many vendors
+				i(2524),	-- Truncheon	-- sold by many vendors
 			}),
 			filter(TWO_HANDED_MACES, {
-				i(5761),	-- Anvilmar Sledge
-				i(3190),	-- Beatstick
-				i(44645),	-- Dalaran Hammer
-				i(3334),	-- Farmer's Shovel
-				i(1197),	-- Giant Mace
-				i(1195),	-- Kobold Mining Shovel
-				i(2480),	-- Large Club
-				i(924),		-- Maul
-				i(5579),	-- Militia Warhammer
-				i(2026),	-- Rock Hammer
-				i(24432),	-- The Shell Cracker
-				i(2525),	-- War Hammer
-				i(2533),	-- War Maul
-				i(2493),	-- Wooden Mallet
+				i(924),		-- Maul	-- sold by many vendors
+				i(2026),	-- Rock Hammer	-- sold by many vendors
+				i(2525),	-- War Hammer	-- sold by many vendors
+				i(2533),	-- War Maul	-- sold by many vendors
 			}),
 			filter(MISC, {
-				i(46069),	-- Alliance Lance
-				i(6219),	-- Arclight Spanner
-				i(5956),	-- Blacksmith Hammer
-				i(85663),	-- Herbalist's Spade	-- TODO Mists of Pandaria
-				i(2901),	-- Mining Pick
-				i(4616),	-- Ryedol's Lucky Pick
-				i(7005),	-- Skinning Knife
-				i(37708),	-- Stick
+				i(5956),	-- Blacksmith Hammer	-- sold by many vendors
+				i(85663),	-- Herbalist's Spade	-- sold by many vendors
+				i(2901),	-- Mining Pick	-- sold by many vendors
+				i(7005),	-- Skinning Knife	-- sold by many vendors
 			}),
 			filter(POLEARMS, {
-				i(15811),	-- Heavy Spear
-				i(15810),	-- Short Spear
-				i(39987),	-- Tuskarr Fishing Spear
+				i(15811),	-- Heavy Spear	-- sold by many vendors
+				i(15810),	-- Short Spear	-- sold by many vendors
+				i(39987),	-- Tuskarr Fishing Spear	-- sold by many vendors
 			}),
 			filter(SHIELDS, {
-				i(17187),	-- Banded Buckler
-				i(3650),	-- Battle Shield
-				i(5940),	-- Bone Buckler
-				i(15895),	-- Burnt Buckler
-				i(2451),	-- Crested Heater Shield
-				i(3276),	-- Deathguard Buckler
-				i(17183),	-- Dented Buckler
-				i(1201),	-- Dull Heater Shield
-				i(6176),	-- Dwarven Kite Shield
-				i(23395),	-- Farstrider's Buckler
-				i(2448),	-- Heavy Pavise
-				i(15478),	-- Charger's Shield
-				i(4937),	-- Charging Buckler
-				i(2446),	-- Kite Shield
-				i(2445),	-- Large Metal Shield
-				i(2129),	-- Large Round Shield
-				i(20912),	-- Large Shield
-				i(1200),	-- Large Wooden Shield
-				i(30775),	-- Layered Bone Shield
-				i(20911),	-- Light Guard
-				i(17189),	-- Metal Buckler
-				i(17190),	-- Ornate Buckler
-				i(6078),	-- Pikeman Shield
-				i(7109),	-- Pioneer Buckler
-				i(15006),	-- Primal Buckler
-				i(5094),	-- Razormane War Shield
-				i(17192),	-- Reinforced Targe
-				i(17188),	-- Ringed Buckler
-				i(17185),	-- Round Buckler
-				i(17184),	-- Small Shield
-				i(17186),	-- Small Targe
-				i(4263),	-- Standard Issue Shield
-				i(2900),	-- Stone Buckler
-				i(9444),	-- Techbot CPU Shell
-				i(4911),	-- Thick Bark Buckler
-				i(6203),	-- Thuggish Shield
-				i(3649),	-- Tribal Buckler
-				i(4967),	-- Tribal Warrior's Shield
-				i(1202),	-- Wall Shield
-				i(1438),	-- Warrior's Shield
-				i(5395),	-- Woodland Shield
-				i(2376),	-- Worn Heater Shield
+				i(2451),	-- Crested Heater Shield	-- sold by many vendors
+				i(17183),	-- Dented Buckler	-- sold by many vendors
+				i(1201),	-- Dull Heater Shield	-- sold by many vendors
+				i(2448),	-- Heavy Pavise	-- sold by many vendors
+				i(2446),	-- Kite Shield	-- sold by many vendors
+				i(2129),	-- Large Round Shield	-- sold by many vendors
+				i(1200),	-- Large Wooden Shield	-- sold by many vendors
+				i(30775),	-- Layered Bone Shield	-- sold by many vendors
+				i(17189),	-- Metal Buckler	-- sold by many vendors
+				i(17190),	-- Ornate Buckler	-- sold by many vendors
+				i(17192),	-- Reinforced Targe	-- sold by many vendors
+				i(17184),	-- Small Shield	-- sold by many vendors
+				i(17186),	-- Small Targe	-- sold by many vendors
 			}),
 			filter(STAVES, {
-				i(2527),	-- Battle Staff
-				i(4938),	-- Blemished Wooden Staff
-				i(1388),	-- Crooked Staff
-				i(44655),	-- Dalaran Stave
-				i(7094),	-- Driftwood Branch
-				i(5776),	-- Elder's Cane
-				i(3277),	-- Executor Staff
-				i(25553),	-- Exodar Staff
-				i(3335),	-- Farmer's Broom
-				i(2257),	-- Frostmane Staff
-				i(1010),	-- Gnarled Short Staff
-				i(2030),	-- Gnarled Staff
-				i(23553),	-- Living Branch
-				i(767),		-- Long Bo Staff
-				i(928),		-- Long Staff
-				i(1159),	-- Militia Quarterstaff
-				i(79740),	-- Plain Wooden Staff	-- TODO Mists of Pandaria
-				i(5778),	-- Primitive Walking Stick
-				i(854),		-- Quarter Staff
-				i(2132),	-- Short Staff
-				i(22959),	-- Smooth Metal Staff
-				i(5581),	-- Smooth Walking Staff
-				i(24434),	-- The Discipline Stick
-				i(5393),	-- Thistlewood Staff
-				i(2495),	-- Walking Stick
-				i(2535),	-- War Staff
+				i(2527),	-- Battle Staff	-- sold by many vendors
+				i(2030),	-- Gnarled Staff	-- sold by many vendors
+				i(928),		-- Long Staff	-- sold by many vendors
+				i(79740),	-- Plain Wooden Staff	-- sold by many vendors
+				i(2535),	-- War Staff	-- sold by many vendors
 			}),
 			filter(ONE_HANDED_SWORDS, {
-				i(2520),	-- Broadsword
-				i(851),		-- Cutlass
-				i(44638),	-- Dalaran Sword
-				i(3295),	-- Deadman Blade
-				i(30749),	-- Draenic Sparring Blade
-				i(1384),	-- Dull Blade
-				i(23393),	-- Exodar Shortsword
-				i(2528),	-- Falchion
-				i(4560),	-- Fine Scimitar
-				i(3267),	-- Forsaken Shortsword
-				i(40006),	-- Forsaken Sword
-				i(2258),	-- Frostmane Shortsword
-				i(2488),	-- Gladius
-				i(4932),	-- Harpy Wing Clipper
-				i(18610),	-- Keen Machete
-				i(39371),	-- Keleseth's Persuader
-				i(23373),	-- Long Knife
-				i(923),		-- Longsword
-				i(2057),	-- Pitted Defias Shortsword
-				i(2027),	-- Scimitar
-				i(57146),	-- Scythe Blade
-				i(3319),	-- Short Sabre
-				i(2131),	-- Shortsword
-				i(3935),	-- Smotts' Cutlass
-				i(5586),	-- Thistlewood Blade
+				i(2520),	-- Broadsword	-- sold by many vendors
+				i(30749),	-- Draenic Sparring Blade	-- sold by many vendors
+				i(2528),	-- Falchion	-- sold by many vendors
+				i(923),		-- Longsword	-- sold by many vendors
+				i(2027),	-- Scimitar	-- sold by many vendors
 			}),
 			filter(TWO_HANDED_SWORDS, {
-				i(1194),	-- Bastard Sword
-				i(23372),	-- Bloodhawk Claymore
-				i(1198),	-- Claymore
-				i(7955),	-- Copper Claymore
-				i(922),		-- Dacian Falx
-				i(44639),	-- Dalaran Greatsword
-				i(30750),	-- Draenic Warblade
-				i(2024),	-- Espadon
-				i(23390),	-- Exodar Bastard Sword
-				i(22958),	-- Farstrider Sword
-				i(2521),	-- Flamberge
-				i(5779),	-- Forsaken Bastard Sword
-				i(40004),	-- Forsaken Greatsword
-				i(8177),	-- Practice Sword
-				i(24430),	-- Seafarer's Blade
-				i(2489),	-- Two-Handed Sword
-				i(2529),	-- Zweihander
+				i(922),		-- Dacian Falx	-- sold by many vendors
+				i(30750),	-- Draenic Warblade	-- sold by many vendors
+				i(2024),	-- Espadon	-- sold by many vendors
+				i(2521),	-- Flamberge	-- sold by many vendors
+				i(2529),	-- Zweihander	-- sold by many vendors
 			}),
 			filter(WANDS, {
-				i(5239),	-- Blackbone Wand
-				i(5210),	-- Burning Wand
-				i(5236),	-- Combustible Wand
-				i(5211),	-- Dusk Wand
-				i(5209),	-- Gloom Wand
-				i(5092),	-- Charred Razormane Wand
-				i(57394),	-- Long Lost Wand	-- TODO Cataclysm
-				i(5347),	-- Pestilent Wand
-				i(5238),	-- Pitchwood Wand
-				i(5208),	-- Smoldering Wand
-				i(40019),	-- Wand of Amber
-				i(40021),	-- Wand of Crystal
-				i(40020),	-- Wand of Jade
-				i(40018),	-- Wand of Onyx
+				i(5239),	-- Blackbone Wand	-- sold by many vendors
+				i(5210),	-- Burning Wand	-- sold by many vendors
+				i(5236),	-- Combustible Wand	-- sold by many vendors
+				i(5211),	-- Dusk Wand	-- sold by many vendors
+				i(5209),	-- Gloom Wand	-- sold by many vendors
+				i(5347),	-- Pestilent Wand	-- sold by many vendors
+				i(5238),	-- Pitchwood Wand	-- sold by many vendors
+				i(5208),	-- Smoldering Wand	-- sold by many vendors
 			}),
 		}),
 	}),

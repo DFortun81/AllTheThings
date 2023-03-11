@@ -7654,6 +7654,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(53991, {	-- Quincy Cutler <Owner and Proprietor>
+					["timeline"] = { "added 4.2.0.14313" },
+					["coord"] = { 64.0, 46.2, STORMWIND_CITY },
+					["groups"] = {
+						i(44679),	-- Red Wine Glass
+						i(44678),	-- Wine Glass
+					},
+				}),
 				-- #if NOT ANYCLASSIC
 				-- CRIEVE NOTE: I've never been a fan of Tabard Vendors, they're too all encompassing.
 				-- Not including it in Classic for now, going to use a symlink instead at some point but don't have time right now. Just want this merge to be finished!

@@ -73,6 +73,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(64310),	-- No Tabard
 				}),
 			}),
+			n(WEAPONS, {
+				filter(WANDS, {
+					i(57394),	-- Long Lost Wand
+				}),
+			}),
 		}),
 		tier(MOP_TIER, {
 			-- NYI Mists of Pandaria Common Items
