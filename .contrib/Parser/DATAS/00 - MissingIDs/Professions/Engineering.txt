@@ -1,127 +1,127 @@
 0.5.3.3368
-3920
-3930
-3947
-4036
-4037
-4038
-6441
+r(3920),	-- Crafted Light Shot
+r(3930),	-- Crafted Heavy Shot
+r(3947),	-- Crafted Solid Shot
+r(4036),	-- Engineering
+r(4037),	-- Engineering
+r(4038),	-- Engineering
+r(6441),	-- Explosive Shells
 0.8.0.3734
-12596
-12621
-12656
-12719
-12720
-12722
-12904
+r(12596),	-- Hi-Impact Mithril Slugs
+r(12621),	-- Mithril Gyro-Shot
+r(12656),	-- Engineering
+r(12719),	-- Explosive Arrow
+r(12720),	-- Goblin "Boom" Box
+r(12722),	-- Goblin Radio
+r(12904),	-- Gnomish Ham Radio
 1.1.2.4125
-19800
-20219
-20222
+r(19800),	-- Thorium Shells
+r(20219),	-- Gnomish Engineer
+r(20222),	-- Goblin Engineer
 1.13.0.28211
-4073
-12749
-13166
-13258
-19804
+r(4073),	-- s \\ Mechanical Dragonling
+r(12749),	-- Mithril Mechanical Dragonling
+r(13166),	-- Battle Chicken
+r(13258),	-- Summon Goblin Bomb
+r(19804),	-- Arcanite Dragonling
 2.0.0.6080
-30346
-30350
-30555
-30561
-30573
+r(30346),	-- Fel Iron Shells
+r(30350),	-- Engineering
+r(30555),	-- Remote Mail Terminal
+r(30561),	-- Goblin Tonk Controller
+r(30573),	-- Gnomish Tonk Controller
 3.0.1.8303
-49383
+r(49383),	-- Engineering
 3.0.1.8622
-51306
-53280
+r(51306),	-- Engineering
+r(53280),	-- 
 3.0.1.8874
-54998
-54999
-56273
-56474
-56475
+r(54998),	-- Hand-Mounted Pyro Rocket
+r(54999),	-- Hyperspeed Accelerators
+r(56273),	-- Wormhole: Gadgetzan
+r(56474),	-- Mammoth Cutters
+r(56475),	-- Saronite Razorheads
 3.1.0.9767
-63765
-63770
+r(63765),	-- Springy Arachnoweave
+r(63770),	-- Reticulated Armor Webbing
 3.3.5.12340
-67790
-72952
-72953
+r(67790),	-- Dimensional Folder: K3
+r(72952),	-- Shatter Rounds
+r(72953),	-- Iceblade Arrow
 4.0.1.12911
-82175
-82177
-82180
-82201
-82774
-84344
-84407
-84422
-84423
-84433
-84434
+r(82175),	-- 
+r(82177),	-- 
+r(82180),	-- 
+r(82201),	-- 
+r(82774),	-- Engineering
+r(84344),	-- 
+r(84407),	-- 
+r(84422),	-- 
+r(84423),	-- 
+r(84433),	-- 
+r(84434),	-- 
 4.3.4.15595
-82207
-105518
+r(82207),	-- Explosive Bolts
+r(105518),	-- Open Box
 5.0.3.15890
-108789
-109077
-110403
-110955
-126731
+r(108789),	-- 
+r(109077),	-- 
+r(110403),	-- Engineering
+r(110955),	-- 
+r(126731),	-- 
 6.0.1.18179
-158739
-161543
+r(158739),	-- Engineering
+r(161543),	-- 
 7.3.0.24473
-195112
+r(195112),	-- Engineering
 8.0.1.25902
-255398
-255399
-255401
-255402
-255404
-255405
-255410
-255411
-255413
-255414
-255454
-264475
-264479
-264481
-264483
-264485
-264487
-264492
+r(255398),	-- Charged Refrigeration Projectile
+r(255399),	-- Charged Refrigeration Projectile
+r(255401),	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
+r(255402),	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
+r(255404),	-- Neurological Immobilization Bomb
+r(255405),	-- Neurological Immobilization Bomb
+r(255410),	-- Catchroot Seed Spreader
+r(255411),	-- Catchroot Seed Spreader
+r(255413),	-- Electro-Induced Slumber Bomb
+r(255414),	-- Electro-Induced Slumber Bomb
+r(255454),	-- REUSE ME \\ Monelite Boomstick \\ Monalite Boomstick
+r(264475),	-- Engineering
+r(264479),	-- Outland Engineering
+r(264481),	-- Northrend Engineering
+r(264483),	-- Cataclysm Engineering
+r(264485),	-- Pandaria Engineering
+r(264487),	-- Draenor Engineering
+r(264492),	-- Kul Tiran Engineering
 8.0.1.25976
-265807
+r(265807),	-- Zandalari Engineering
 8.0.1.26175
-269126
-269205
-269208
+r(269126),	-- Belt Enchant: Miniaturized Plasma Shield
+r(269205),	-- Belt Enchant: Holographic Horror Projector
+r(269208),	-- Belt Enchant: Personal Space Amplifier
 9.0.1.33978
-310480
-310481
-310482
-310483
-310488
-310489
-310491
-310494
-310513
-310515
-310527
-310537
-310542
+r(310480),	-- Faerie Glider Kit
+r(310481),	-- Kyrian Glider Kit
+r(310482),	-- Maldraxxian Glider Kit
+r(310483),	-- Stoneborn Glider Kit
+r(310488),	-- Disposable Ectoplasmic Specs
+r(310489),	-- 
+r(310491),	-- Torghast Reconfiguration Rig
+r(310494),	-- 
+r(310513),	-- Necrostatic Micro Capacitor \\ Elecxine Alloy
+r(310515),	-- Hydrodynamic Accelerators \\ Phaevon Alloy
+r(310527),	-- 
+r(310537),	-- Re-Calibrated Proton Blaster
+r(310542),	-- Shadowlands Engineering
 9.0.1.35432
-340534
+r(340534),	-- Interact
 10.0.7.47910
-400810
+r(400810),	-- Gnomish Voicebox \\ Gnomish Voice Recording
 10.1.0.48480
-407005
-407006
-408052
-408230
+r(407005),	-- Polarity Bomb
+r(407006),	-- EZ-Thro Polarity Bomb
+r(408052),	-- Tinker: Shadowflame Rockets
+r(408230),	-- Quackomancy Cannon
 
 
 
@@ -129,814 +129,814 @@
 Missing in EngineeringItemDB.lua
 
 0.5.3.3368
-3918
-3919
-3920
-3922
-3923
-3924
-3925
-3926
-3928
-3929
-3930
-3931
-3932
-3933
-3934
-3936
-3937
-3938
-3939
-3940
-3941
-3942
-3944
-3945
-3946
-3947
-3949
-3950
-3952
-3953
-3954
-3955
-3956
-3957
-3958
-3959
-3960
-3961
-3962
-3963
-3965
-3966
-3967
-3968
-3969
-3971
-3972
-3973
-3977
-3978
-3979
-4036
-4037
-4038
-6441
-6458
-7430
+r(3918),	-- Rough Blasting Powder
+r(3919),	-- Rough Dynamite
+r(3920),	-- Crafted Light Shot
+r(3922),	-- Handful of Copper Bolts
+r(3923),	-- Rough Copper Bomb
+r(3924),	-- Copper Tube
+r(3925),	-- Rough Boomstick
+r(3926),	-- Copper Modulator
+r(3928),	-- Mechanical Squirrel Box \\ Mechanical Squirrel
+r(3929),	-- Coarse Blasting Powder
+r(3930),	-- Crafted Heavy Shot
+r(3931),	-- Coarse Dynamite
+r(3932),	-- Target Dummy
+r(3933),	-- Small Seaforium Charge
+r(3934),	-- Flying Tiger Goggles
+r(3936),	-- Deadly Blunderbuss
+r(3937),	-- Large Copper Bomb
+r(3938),	-- Bronze Tube
+r(3939),	-- Lovingly Crafted Boomstick
+r(3940),	-- Shadow Goggles
+r(3941),	-- Small Bronze Bomb
+r(3942),	-- Whirring Bronze Gizmo
+r(3944),	-- Flame Deflector
+r(3945),	-- Heavy Blasting Powder
+r(3946),	-- Heavy Dynamite
+r(3947),	-- Crafted Solid Shot
+r(3949),	-- Silver-plated Shotgun
+r(3950),	-- Big Bronze Bomb
+r(3952),	-- Minor Recombobulator
+r(3953),	-- Bronze Framework
+r(3954),	-- Moonsight Rifle
+r(3955),	-- Explosive Sheep
+r(3956),	-- Green Tinted Goggles
+r(3957),	-- Ice Deflector
+r(3958),	-- Iron Strut
+r(3959),	-- Discombobulator Ray
+r(3960),	-- Portable Bronze Mortar
+r(3961),	-- Gyrochronatom
+r(3962),	-- Iron Grenade
+r(3963),	-- Compact Harvest Reaper Kit
+r(3965),	-- Advanced Target Dummy
+r(3966),	-- Craftsman's Monocle
+r(3967),	-- Big Iron Bomb
+r(3968),	-- Goblin Land Mine
+r(3969),	-- Mechanical Dragonling
+r(3971),	-- Gnomish Cloaking Device
+r(3972),	-- Large Seaforium Charge
+r(3973),	-- Silver Contact
+r(3977),	-- Crude Scope
+r(3978),	-- Standard Scope
+r(3979),	-- Accurate Scope
+r(4036),	-- Engineering
+r(4037),	-- Engineering
+r(4038),	-- Engineering
+r(6441),	-- Explosive Shells
+r(6458),	-- Ornate Spyglass
+r(7430),	-- Arclight Spanner
 0.5.5.3494
-8243
-8334
-8339
+r(8243),	-- Flash Bomb
+r(8334),	-- Clockwork Box \\ Practice Lock
+r(8339),	-- EZ-Thro Dynamite
 0.6.0.3592
-8895
-9269
-9271
-9273
+r(8895),	-- Goblin Rocket Boots
+r(9269),	-- Gnomish Universal Remote
+r(9271),	-- Aquadynamic Fish Attractor
+r(9273),	-- Goblin Jumper Cables
 0.8.0.3734
-12584
-12585
-12586
-12587
-12589
-12590
-12591
-12594
-12595
-12596
-12597
-12599
-12603
-12607
-12614
-12615
-12616
-12617
-12618
-12619
-12620
-12621
-12622
-12624
-12656
-12715
-12716
-12717
-12718
-12719
-12720
-12722
-12754
-12755
-12758
-12759
-12760
-12895
-12897
-12899
-12900
-12902
-12903
-12904
-12905
-12906
-12907
-12908
+r(12584),	-- Gold Power Core
+r(12585),	-- Solid Blasting Powder
+r(12586),	-- Solid Dynamite
+r(12587),	-- Bright-Eye Goggles
+r(12589),	-- Mithril Tube
+r(12590),	-- Gyromatic Micro-Adjustor
+r(12591),	-- Unstable Trigger
+r(12594),	-- Fire Goggles
+r(12595),	-- Mithril Blunderbuss
+r(12596),	-- Hi-Impact Mithril Slugs
+r(12597),	-- Deadly Scope
+r(12599),	-- Mithril Casing
+r(12603),	-- Mithril Frag Bomb
+r(12607),	-- Catseye Ultra Goggles
+r(12614),	-- Mithril Heavy-bore Rifle
+r(12615),	-- Spellpower Goggles Xtreme
+r(12616),	-- Parachute Cloak
+r(12617),	-- Deepdive Helmet
+r(12618),	-- Rose Colored Goggles
+r(12619),	-- Hi-Explosive Bomb
+r(12620),	-- Sniper Scope
+r(12621),	-- Mithril Gyro-Shot
+r(12622),	-- Green Lens
+r(12624),	-- Mithril Mechanical Dragonling
+r(12656),	-- Engineering
+r(12715),	-- Goblin Rocket Fuel Recipe
+r(12716),	-- Goblin Mortar
+r(12717),	-- Goblin Mining Helmet
+r(12718),	-- Goblin Construction Helmet
+r(12719),	-- Explosive Arrow
+r(12720),	-- Goblin "Boom" Box
+r(12722),	-- Goblin Radio
+r(12754),	-- The Big One
+r(12755),	-- Goblin Bomb Dispenser
+r(12758),	-- Goblin Rocket Helmet
+r(12759),	-- Gnomish Death Ray
+r(12760),	-- Goblin Sapper Charge
+r(12895),	-- Inlaid Mithril Cylinder Plans
+r(12897),	-- Gnomish Goggles
+r(12899),	-- Gnomish Shrink Ray
+r(12900),	-- Mobile Alarm
+r(12902),	-- Gnomish Net-o-Matic Projector
+r(12903),	-- Gnomish Harm Prevention Belt
+r(12904),	-- Gnomish Ham Radio
+r(12905),	-- Gnomish Rocket Boots
+r(12906),	-- Gnomish Battle Chicken
+r(12907),	-- Gnomish Mind Control Cap
+r(12908),	-- Goblin Dragon Gun
 0.9.0.3807
-13240
-15255
-15628
+r(13240),	-- The Mortar: Reloaded
+r(15255),	-- Mechanical Repair Kit
+r(15628),	-- Pet Bombling
 1.1.2.4125
-19567
-19788
-19790
-19791
-19792
-19793
-19794
-19795
-19796
-19799
-19800
-19814
-19815
-19819
-19825
-19830
-19831
-19833
-20219
-20222
+r(19567),	-- Salt Shaker
+r(19788),	-- Dense Blasting Powder
+r(19790),	-- Thorium Grenade
+r(19791),	-- Thorium Widget
+r(19792),	-- Thorium Rifle
+r(19793),	-- Lifelike Mechanical Toad
+r(19794),	-- Spellpower Goggles Xtreme Plus
+r(19795),	-- Thorium Tube
+r(19796),	-- Dark Iron Rifle
+r(19799),	-- Dark Iron Bomb
+r(19800),	-- Thorium Shells
+r(19814),	-- Masterwork Target Dummy
+r(19815),	-- Delicate Arcanite Converter
+r(19819),	-- Voice Amplification Modulator
+r(19825),	-- Master Engineer's Goggles
+r(19830),	-- Arcanite Dragonling
+r(19831),	-- Arcane Bomb
+r(19833),	-- Flawless Arcanite Rifle
+r(20219),	-- Gnomish Engineer
+r(20222),	-- Goblin Engineer
 1.13.0.28211
-4073
-12749
-13166
-13258
-19804
-21940
-22704
-22793
-22795
-22797
-23066
-23067
-23068
-23069
-23070
-23071
-23077
-23079
-23080
-23081
-23082
-23486
-23489
-23507
-24356
-24357
-26416
-26417
-26418
-26420
-26421
-26422
-26423
-26424
-26425
-26426
-26427
-26428
-26442
-26443
-28327
+r(4073),	-- s \\ Mechanical Dragonling
+r(12749),	-- Mithril Mechanical Dragonling
+r(13166),	-- Battle Chicken
+r(13258),	-- Summon Goblin Bomb
+r(19804),	-- Arcanite Dragonling
+r(21940),	-- Snowmaster 9000 \\ SnowMaster 9000
+r(22704),	-- Field Repair Bot 74A
+r(22793),	-- Biznicks 247x128 Accurascope
+r(22795),	-- Core Marksman Rifle
+r(22797),	-- Force Reactive Disk
+r(23066),	-- Red Firework
+r(23067),	-- Blue Firework
+r(23068),	-- Green Firework
+r(23069),	-- EZ-Thro Dynamite II
+r(23070),	-- Dense Dynamite
+r(23071),	-- Truesilver Transformer
+r(23077),	-- Gyrofreeze Ice Reflector
+r(23079),	-- Major Recombobulator
+r(23080),	-- Powerful Seaforium Charge
+r(23081),	-- Hyper-Radiant Flame Reflector
+r(23082),	-- Ultra-Flash Shadow Reflector
+r(23486),	-- Dimensional Ripper - Everlook
+r(23489),	-- Ultrasafe Transporter - Gadgetzan
+r(23507),	-- Snake Burst Firework
+r(24356),	-- Bloodvine Goggles
+r(24357),	-- Bloodvine Lens
+r(26416),	-- Small Blue Rocket
+r(26417),	-- Small Green Rocket
+r(26418),	-- Small Red Rocket
+r(26420),	-- Large Blue Rocket
+r(26421),	-- Large Green Rocket
+r(26422),	-- Large Red Rocket
+r(26423),	-- Blue Rocket Cluster
+r(26424),	-- Green Rocket Cluster
+r(26425),	-- Red Rocket Cluster
+r(26426),	-- Large Blue Rocket Cluster
+r(26427),	-- Large Green Rocket Cluster
+r(26428),	-- Large Red Rocket Cluster
+r(26442),	-- Firework Launcher
+r(26443),	-- Cluster Launcher \\ Firework Cluster Launcher
+r(28327),	-- Steam Tonk Controller
 2.0.0.6080
-30303
-30304
-30305
-30306
-30307
-30308
-30309
-30310
-30311
-30312
-30313
-30314
-30315
-30316
-30317
-30318
-30325
-30329
-30332
-30334
-30337
-30341
-30342
-30343
-30344
-30346
-30347
-30348
-30349
-30350
-30547
-30548
-30549
-30551
-30552
-30555
-30556
-30558
-30560
-30561
-30563
-30565
-30566
-30568
-30569
-30570
-30573
-30574
-30575
-32814
+r(30303),	-- Elemental Blasting Powder
+r(30304),	-- Fel Iron Casing
+r(30305),	-- Handful of Fel Iron Bolts
+r(30306),	-- Adamantite Frame
+r(30307),	-- Hardened Adamantite Tube
+r(30308),	-- Khorium Power Core
+r(30309),	-- Felsteel Stabilizer
+r(30310),	-- Fel Iron Bomb
+r(30311),	-- Adamantite Grenade
+r(30312),	-- Fel Iron Musket
+r(30313),	-- Adamantite Rifle
+r(30314),	-- Felsteel Boomstick
+r(30315),	-- Ornate Khorium Rifle
+r(30316),	-- Cogspinner Goggles
+r(30317),	-- Power Amplification Goggles
+r(30318),	-- Ultra-Spectropic Detection Goggles
+r(30325),	-- Hyper-Vision Goggles
+r(30329),	-- Adamantite Scope
+r(30332),	-- Khorium Scope
+r(30334),	-- Stabilized Eternium Scope
+r(30337),	-- Crashin' Thrashin' Robot
+r(30341),	-- White Smoke Flare
+r(30342),	-- Red Smoke Flare
+r(30343),	-- Blue Smoke Flare
+r(30344),	-- Green Smoke Flare
+r(30346),	-- Fel Iron Shells
+r(30347),	-- Adamantite Shell Machine
+r(30348),	-- Fel Iron Toolbox
+r(30349),	-- Titanium Toolbox \\ Khorium Toolbox
+r(30350),	-- Engineering
+r(30547),	-- Elemental Seaforium Charge
+r(30548),	-- Zapthrottle Mote Extractor
+r(30549),	-- Critter Enlarger
+r(30551),	-- Healing Potion Injector
+r(30552),	-- Mana Potion Injector
+r(30555),	-- Remote Mail Terminal
+r(30556),	-- Rocket Boots Xtreme
+r(30558),	-- The Bigger One
+r(30560),	-- Super Sapper Charge
+r(30561),	-- Goblin Tonk Controller
+r(30563),	-- Goblin Rocket Launcher
+r(30565),	-- Foreman's Enchanted Helmet
+r(30566),	-- Foreman's Reinforced Helmet
+r(30568),	-- Gnomish Flame Turret
+r(30569),	-- Gnomish Poultryizer
+r(30570),	-- Nigh-Invulnerability Belt
+r(30573),	-- Gnomish Tonk Controller
+r(30574),	-- Gnomish Power Goggles
+r(30575),	-- Gnomish Battle Goggles
+r(32814),	-- Purple Smoke Flare
 2.4.3.8606
-36954
-36955
-39895
-39971
-39973
-40274
-41307
-41311
-41312
-41314
-41315
-41316
-41317
-41318
-41319
-41320
-41321
-43676
-44155
-44157
-44391
-46106
-46107
-46108
-46109
-46110
-46111
-46112
-46113
-46114
-46115
-46116
-46697
+r(36954),	-- Dimensional Ripper - Area 52
+r(36955),	-- Ultrasafe Transporter - Toshley's Station
+r(39895),	-- Fused Wiring
+r(39971),	-- Icy Blasting Primers
+r(39973),	-- Frost Grenade \\ Frost Grenades
+r(40274),	-- Furious Gizmatic Goggles
+r(41307),	-- Gyro-balanced Khorium Destroyer
+r(41311),	-- Justicebringer 2000 Specs
+r(41312),	-- Tankatronic Goggles
+r(41314),	-- Surestrike Goggles v2.0
+r(41315),	-- Gadgetstorm Goggles
+r(41316),	-- Living Replicator Specs
+r(41317),	-- Deathblow X11 Goggles
+r(41318),	-- Wonderheal XT40 Shades
+r(41319),	-- Magnified Moon Specs
+r(41320),	-- Destruction Holo-gogs
+r(41321),	-- Powerheal 4000 Lens
+r(43676),	-- Adamantite Arrow Maker
+r(44155),	-- Flying Machine
+r(44157),	-- Turbo-Charged Flying Machine
+r(44391),	-- Field Repair Bot 110G
+r(46106),	-- Wonderheal XT68 Shades
+r(46107),	-- Justicebringer 3000 Specs
+r(46108),	-- Powerheal 9000 Lens
+r(46109),	-- Hyper-Magnified Moon Specs
+r(46110),	-- Primal-Attuned Goggles
+r(46111),	-- Annihilator Holo-Gogs
+r(46112),	-- Lightning Etched Specs
+r(46113),	-- Surestrike Goggles v3.0
+r(46114),	-- Mayhem Projection Goggles
+r(46115),	-- Hard Khorium Goggles
+r(46116),	-- Quad Deathblow X44 Goggles
+r(46697),	-- Rocket Boots Xtreme Lite
 3.0.1.8303
-49383
+r(49383),	-- Engineering
 3.0.1.8622
-51306
-53280
-53281
+r(51306),	-- Engineering
+r(53280),	-- 
+r(53281),	-- Volatile Blasting Trigger
 3.0.1.8874
-54353
-54736
-54793
-54998
-54999
-55002
-55016
-55252
-56273
-56349
-56459
-56460
-56461
-56462
-56463
-56464
-56465
-56466
-56467
-56468
-56469
-56470
-56471
-56472
-56473
-56474
-56475
-56476
-56477
-56478
-56479
-56480
-56481
-56483
-56484
-56486
-56487
-56514
-56574
+r(54353),	-- Mark "S" Boomstick
+r(54736),	-- EMP Generator \\ Personal Electromagnetic Pulse Generator
+r(54793),	-- Frag Belt
+r(54998),	-- Hand-Mounted Pyro Rocket
+r(54999),	-- Hyperspeed Accelerators
+r(55002),	-- Flexweave Underlay
+r(55016),	-- Nitro Boosts
+r(55252),	-- Scrapbot Construction Kit
+r(56273),	-- Wormhole: Gadgetzan
+r(56349),	-- Handful of Cobalt Bolts
+r(56459),	-- Hammer Pick
+r(56460),	-- Cobalt Frag Bomb
+r(56461),	-- Bladed Pickaxe
+r(56462),	-- Gnomish Army Knife
+r(56463),	-- Explosive Decoy
+r(56464),	-- Overcharged Capacitor
+r(56465),	-- Mechanized Snow Goggles
+r(56466),	-- Sonic Booster
+r(56467),	-- Noise Machine
+r(56468),	-- Box of Bombs
+r(56469),	-- Gnomish Lightning Generator
+r(56470),	-- Sun Scope
+r(56471),	-- Froststeel Tube
+r(56472),	-- MOLL-E
+r(56473),	-- Gnomish X-Ray Specs
+r(56474),	-- Mammoth Cutters
+r(56475),	-- Saronite Razorheads
+r(56476),	-- Healing Injector Kit
+r(56477),	-- Mana Injector Kit
+r(56478),	-- Heartseeker Scope
+r(56479),	-- Armor Plated Combat Shotgun
+r(56480),	-- Armored Titanium Goggles
+r(56481),	-- Weakness Spectralizers
+r(56483),	-- Charged Titanium Specs
+r(56484),	-- Visage Liquification Goggles
+r(56486),	-- Greensight Gogs
+r(56487),	-- Electroflux Sight Enhancers
+r(56514),	-- Global Thermal Sapper Charge
+r(56574),	-- Truesight Ice Blinders
 3.1.0.9767
-60866
-60867
-60874
-61471
-61481
-61482
-61483
-62271
-63750
-63765
-63770
+r(60866),	-- Mechano-Hog \\ Mechano-hog
+r(60867),	-- Mekgineer's Chopper
+r(60874),	-- Nesingwary 4000
+r(61471),	-- Diamond-cut Refractor Scope
+r(61481),	-- Mechanized Snow Goggles
+r(61482),	-- Mechanized Snow Goggles
+r(61483),	-- Mechanized Snow Goggles
+r(62271),	-- Unbreakable Healing Amplifiers
+r(63750),	-- High-powered Flashlight
+r(63765),	-- Springy Arachnoweave
+r(63770),	-- Reticulated Armor Webbing
 3.3.5.12340
-67326
-67790
-67839
-67920
-68067
-72952
-72953
+r(67326),	-- Goblin Beam Welder
+r(67790),	-- Dimensional Folder: K3
+r(67839),	-- Mind Amplification Dish
+r(67920),	-- Wormhole Generator: Northrend
+r(68067),	-- Jeeves
+r(72952),	-- Shatter Rounds
+r(72953),	-- Iceblade Arrow
 4.0.1.12911
-81714
-81715
-81716
-81720
-81722
-81724
-81725
-82175
-82177
-82180
-82200
-82201
-82774
-84344
-84403
-84406
-84407
-84408
-84409
-84410
-84411
-84412
-84413
-84415
-84416
-84417
-84418
-84420
-84421
-84422
-84423
-84425
-84427
-84428
-84429
-84430
-84431
-84432
-84433
-84434
+r(81714),	-- Reinforced Bio-Optic Killshades
+r(81715),	-- Specialized Bio-Optic Killshades
+r(81716),	-- Deadly Bio-Optic Killshades
+r(81720),	-- Energized Bio-Optic Killshades
+r(81722),	-- Agile Bio-Optic Killshades
+r(81724),	-- Camouflage Bio-Optic Killshades
+r(81725),	-- Lightweight Bio-Optic Killshades
+r(82175),	-- 
+r(82177),	-- 
+r(82180),	-- 
+r(82200),	-- Spinal Healing Injector
+r(82201),	-- 
+r(82774),	-- Engineering
+r(84344),	-- 
+r(84403),	-- Handful of Obsidium Bolts
+r(84406),	-- Authentic Jr. Engineer Goggles
+r(84407),	-- 
+r(84408),	-- R19 Threatfinder
+r(84409),	-- Volatile Seaforium Blastpack
+r(84410),	-- Safety Catch Removal Kit
+r(84411),	-- High-Powered Bolt Gun
+r(84412),	-- Personal World Destroyer
+r(84413),	-- De-Weaponized Mechanical Companion
+r(84415),	-- Lure Master Tackle Box
+r(84416),	-- Elementium Toolbox
+r(84417),	-- Volatile Thunderstick
+r(84418),	-- Elementium Dragonling
+r(84420),	-- Finely-Tuned Throat Needler
+r(84421),	-- Loot-a-Rang
+r(84422),	-- 
+r(84423),	-- 
+r(84425),	-- Cardboard Assassin
+r(84427),	-- Grounded Plasma Shield
+r(84428),	-- Gnomish X-Ray Scope
+r(84429),	-- Goblin Barbecue
+r(84430),	-- Heat-Treated Spinning Lure
+r(84431),	-- Overpowered Chicken Splitter
+r(84432),	-- Kickback 5000
+r(84433),	-- 
+r(84434),	-- 
 4.3.4.15595
-82207
-84424
-94748
-95703
-95705
-95707
-100587
-100687
-105518
+r(82207),	-- Explosive Bolts
+r(84424),	-- Invisibility Field
+r(94748),	-- Electrified Ether
+r(95703),	-- Electrostatic Condenser
+r(95705),	-- Gnomish Gravity Well
+r(95707),	-- Big Daddy
+r(100587),	-- Flintlocke's Woodchucker
+r(100687),	-- Extreme-Impact Hole Puncher
+r(105518),	-- Open Box
 5.0.3.15890
-108789
-109077
-109099
-110403
-110955
-126392
-126731
-127113
-127114
-127115
-127116
-127117
-127118
-127119
-127120
-127121
-127122
-127123
-127124
-127127
-127128
-127129
-127130
-127131
-127132
-127134
-127135
-127136
-127137
-127138
-127139
-128260
-128261
-128262
+r(108789),	-- 
+r(109077),	-- 
+r(109099),	-- Watergliding Jets
+r(110403),	-- Engineering
+r(110955),	-- 
+r(126392),	-- Goblin Glider
+r(126731),	-- 
+r(127113),	-- Ghost Iron Bolts
+r(127114),	-- High-Explosive Gunpowder
+r(127115),	-- Lord Blastington's Scope of Doom
+r(127116),	-- Mirror Scope
+r(127117),	-- Lightweight Retinal Armor
+r(127118),	-- Agile Retinal Armor
+r(127119),	-- Camouflage Retinal Armor
+r(127120),	-- Deadly Retinal Armor
+r(127121),	-- Energized Retinal Armor
+r(127122),	-- Specialized Retinal Armor
+r(127123),	-- Reinforced Retinal Armor
+r(127124),	-- Locksmith's Powderkeg
+r(127127),	-- G91 Landshark
+r(127128),	-- Goblin Dragon Gun, Mark II
+r(127129),	-- Blingtron 4000
+r(127130),	-- Mist-Piercing Goggles
+r(127131),	-- Thermal Anvil
+r(127132),	-- Wormhole Generator: Pandaria
+r(127134),	-- Ghost Iron Dragonling
+r(127135),	-- Mechanical Pandaren Dragonling
+r(127136),	-- Big Game Hunter
+r(127137),	-- Long-Range Trillium Sniper
+r(127138),	-- Depleted-Kyparium Rocket
+r(127139),	-- Geosynchronous World Spinner
+r(128260),	-- Celestial Firework
+r(128261),	-- Grand Celebration Firework
+r(128262),	-- Serpent's Heart Firework
 6.0.1.18179
-131211
-131212
-131213
-131214
-131215
-131216
-131217
-131218
-131256
-131258
-131353
-131563
-139176
-139192
-139196
-139197
-143714
-158739
-161543
+r(131211),	-- Flashing Tinker's Gear
+r(131212),	-- Fractured Tinker's Gear
+r(131213),	-- Precise Tinker's Gear
+r(131214),	-- Quick Tinker's Gear
+r(131215),	-- Rigid Tinker's Gear
+r(131216),	-- Smooth Tinker's Gear
+r(131217),	-- Sparkling Tinker's Gear
+r(131218),	-- Subtle Tinker's Gear
+r(131256),	-- Autumn Flower Firework
+r(131258),	-- Jade Blossom Firework
+r(131353),	-- Pandaria Fireworks
+r(131563),	-- Tinker's Kit
+r(139176),	-- Jard's Peculiar Energy Source
+r(139192),	-- Sky Golem
+r(139196),	-- Pierre
+r(139197),	-- Advanced Refrigeration Unit
+r(143714),	-- Rascal-Bot
+r(158739),	-- Engineering
+r(161543),	-- 
 7.3.0.24473
-162195
-162196
-162197
-162198
-162199
-162202
-162203
-162204
-162205
-162206
-162207
-162208
-162209
-162210
-162214
-162216
-162217
-162218
-169076
-169078
-169080
-169140
-171072
-171073
-171074
-173289
-173308
-173309
-176732
-177054
-177363
-178242
-182120
-187496
-187497
-187520
-187521
-195112
-198939
-198965
-198966
-198967
-198968
-198969
-198970
-198971
-198972
-198973
-198974
-198975
-198976
-198977
-198978
-198979
-198980
-198981
-198982
-198983
-198984
-198985
-198987
-198988
-198989
-198990
-198991
-198992
-198993
-198994
-198995
-198996
-198997
-198998
-198999
-199000
-199001
-199002
-199003
-199004
-199005
-199006
-199007
-199008
-199009
-199010
-199011
-199012
-199013
-199014
-199015
-199016
-199017
-199018
-200466
-209501
-209502
-209645
-209646
-235753
-235754
-235755
-235756
-235775
-247717
-247744
+r(162195),	-- Cybergenetic Mechshades
+r(162196),	-- Night-Vision Mechshades
+r(162197),	-- Plasma Mechshades
+r(162198),	-- Razorguard Mechshades
+r(162199),	-- Shrediron's Shredder
+r(162202),	-- Oglethorpe's Missile Splitter
+r(162203),	-- Megawatt Filament
+r(162204),	-- Goblin Glider Kit
+r(162205),	-- Findle's Loot-a-Rang
+r(162206),	-- World Shrinker
+r(162207),	-- Stealthman 54
+r(162208),	-- Ultimate Gnomish Army Knife
+r(162209),	-- Mechanical Axebeak
+r(162210),	-- Lifelike Mechanical Frostboar
+r(162214),	-- Personal Hologram
+r(162216),	-- Wormhole Centrifuge
+r(162217),	-- Swapblaster
+r(162218),	-- Blingtron 5000
+r(169076),	-- Linkgrease Locksprocket
+r(169078),	-- Didi's Delicate Assembly
+r(169080),	-- Gearspring Parts
+r(169140),	-- Ultimate Gnomish Army Knife
+r(171072),	-- Alliance Firework
+r(171073),	-- Horde Firework
+r(171074),	-- Snake Firework
+r(173289),	-- Hemet's Heartseeker
+r(173308),	-- Mecha-Blast Rocket
+r(173309),	-- Shieldtronic Shield
+r(176732),	-- Mechanical Scorpid
+r(177054),	-- Secrets of Draenor Engineering
+r(177363),	-- True Iron Trigger
+r(178242),	-- Gearspring Parts
+r(182120),	-- Primal Welding
+r(187496),	-- Advanced Muzzlesprocket
+r(187497),	-- Bi-Directional Fizzle Reducer
+r(187520),	-- Taladite Firing Pin
+r(187521),	-- Infrablue-Blocker Lenses
+r(195112),	-- Engineering
+r(198939),	-- Blink-Trigger Headgun
+r(198965),	-- Tactical Headgun
+r(198966),	-- Bolt-Action Headgun
+r(198967),	-- Reinforced Headgun
+r(198968),	-- Semi-Automagic Cranial Cannon
+r(198969),	-- Sawed-Off Cranial Cannon
+r(198970),	-- Double-Barreled Cranial Cannon
+r(198971),	-- Ironsight Cranial Cannon
+r(198972),	-- Deployable Bullet Dispenser
+r(198973),	-- Gunpowder Charge
+r(198974),	-- Pump-Action Bandage Gun
+r(198975),	-- Gunpack
+r(198976),	-- Auto-Hammer
+r(198977),	-- Failure Detection Pylon
+r(198978),	-- Gunshoes
+r(198979),	-- Intra-Dalaran Wormhole Generator
+r(198980),	-- Blingtron's Circuit Design Tutorial
+r(198981),	-- Trigger
+r(198982),	-- Reaves Battery
+r(198983),	-- Reaves Module: Wormhole Generator Mode
+r(198984),	-- Reaves Module: Repair Mode
+r(198985),	-- Reaves Module: Failure Detection Mode
+r(198987),	-- Reaves Module: Fireworks Display Mode
+r(198988),	-- Reaves Module: Snack Distribution Mode
+r(198989),	-- Reaves Module: Bling Mode
+r(198990),	-- Reaves Module: Piloted Combat Mode
+r(198991),	-- Blink-Trigger Headgun
+r(198992),	-- Tactical Headgun
+r(198993),	-- Bolt-Action Headgun
+r(198994),	-- Reinforced Headgun
+r(198995),	-- Semi-Automagic Cranial Cannon
+r(198996),	-- Sawed-Off Cranial Cannon
+r(198997),	-- Double-Barreled Cranial Cannon
+r(198998),	-- Ironsight Cranial Cannon
+r(198999),	-- Deployable Bullet Dispenser
+r(199000),	-- Gunpowder Charge
+r(199001),	-- Pump-Action Bandage Gun
+r(199002),	-- Gunpack
+r(199003),	-- Auto-Hammer
+r(199004),	-- Failure Detection Pylon
+r(199005),	-- Blink-Trigger Headgun
+r(199006),	-- Tactical Headgun
+r(199007),	-- Bolt-Action Headgun
+r(199008),	-- Reinforced Headgun
+r(199009),	-- Semi-Automagic Cranial Cannon
+r(199010),	-- Sawed-Off Cranial Cannon
+r(199011),	-- Double-Barreled Cranial Cannon
+r(199012),	-- Ironsight Cranial Cannon
+r(199013),	-- Deployable Bullet Dispenser
+r(199014),	-- Gunpowder Charge
+r(199015),	-- Pump-Action Bandage Gun
+r(199016),	-- Gunpack
+r(199017),	-- Auto-Hammer
+r(199018),	-- Failure Detection Pylon
+r(200466),	-- Sonic Environment Enhancer
+r(209501),	-- "The Felic"
+r(209502),	-- Shockinator
+r(209645),	-- Leystone Buoy
+r(209646),	-- Mecha-Bond Imprint Matrix
+r(235753),	-- Tailored Skullblasters
+r(235754),	-- Rugged Skullblasters
+r(235755),	-- Chain Skullblasters
+r(235756),	-- Heavy Skullblasters
+r(235775),	-- Rechargeable Reaves Battery
+r(247717),	-- Gravitational Reduction Slippers
+r(247744),	-- Wormhole Generator: Argus
 8.0.1.25902
-255392
-255393
-255394
-255395
-255396
-255397
-255398
-255399
-255400
-255401
-255402
-255403
-255404
-255405
-255406
-255407
-255408
-255409
-255410
-255411
-255412
-255413
-255414
-255415
-255454
-255457
-255458
-255459
-256070
-256071
-256072
-256073
-256074
-256075
-256080
-256082
-256084
-256132
-256133
-256134
-256154
-256155
-256156
-264475
-264479
-264481
-264483
-264485
-264487
-264490
-264492
+r(255392),	-- F.R.I.E.D.
+r(255393),	-- F.R.I.E.D.
+r(255394),	-- F.R.I.E.D.
+r(255395),	-- Thermo-Accelerated Plague Spreader
+r(255396),	-- Thermo-Accelerated Plague Spreader
+r(255397),	-- Thermo-Accelerated Plague Spreader
+r(255398),	-- Charged Refrigeration Projectile
+r(255399),	-- Charged Refrigeration Projectile
+r(255400),	-- Charged Refrigeration Projectile
+r(255401),	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
+r(255402),	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
+r(255403),	-- Fro-Grow Grenade \\ Freeze-Bang Grenade
+r(255404),	-- Neurological Immobilization Bomb
+r(255405),	-- Neurological Immobilization Bomb
+r(255406),	-- Neurological Immobilization Bomb
+r(255407),	-- Organic Discombobulation Grenade
+r(255408),	-- Organic Discombobulation Grenade
+r(255409),	-- Organic Discombobulation Grenade
+r(255410),	-- Catchroot Seed Spreader
+r(255411),	-- Catchroot Seed Spreader
+r(255412),	-- Catchroot Seed Spreader
+r(255413),	-- Electro-Induced Slumber Bomb
+r(255414),	-- Electro-Induced Slumber Bomb
+r(255415),	-- Electro-Induced Slumber Bomb
+r(255454),	-- REUSE ME \\ Monelite Boomstick \\ Monalite Boomstick
+r(255457),	-- Finely-Tuned Stormsteel Destroyer
+r(255458),	-- Finely-Tuned Stormsteel Destroyer
+r(255459),	-- Finely-Tuned Stormsteel Destroyer
+r(256070),	-- Electroshock Mount Motivator
+r(256071),	-- Electroshock Mount Motivator
+r(256072),	-- Electroshock Mount Motivator
+r(256073),	-- XA-1000 Surface Skimmer
+r(256074),	-- XA-1000 Surface Skimmer
+r(256075),	-- XA-1000 Surface Skimmer
+r(256080),	-- Interdimensional Companion Repository \\ Interdemensional Companion Repository
+r(256082),	-- Interdimensional Companion Repository \\ Interdemensional Companion Repository
+r(256084),	-- Interdimensional Companion Repository \\ Interdemensional Companion Repository
+r(256132),	-- Super-Charged Engine
+r(256133),	-- Potion of Specter Swiftness \\ REUSE ME [SCS] \\ Super-Charged Engine
+r(256134),	-- Potion of Soul Purity \\ REUSE ME [SCS] \\ Super-Charged Engine
+r(256154),	-- Deployable Attire Rearranger
+r(256155),	-- Deployable Attire Rearranger
+r(256156),	-- Deployable Attire Rearranger
+r(264475),	-- Engineering
+r(264479),	-- Outland Engineering
+r(264481),	-- Northrend Engineering
+r(264483),	-- Cataclysm Engineering
+r(264485),	-- Pandaria Engineering
+r(264487),	-- Draenor Engineering
+r(264490),	-- Legion Engineering
+r(264492),	-- Kul Tiran Engineering
 8.0.1.25976
-253122
-253150
-253151
-253152
-264960
-264961
-264962
-264964
-264966
-264967
-265097
-265098
-265099
-265100
-265101
-265102
-265807
+r(253122),	-- Magnetic Discombobulator
+r(253150),	-- Precision Attitude Adjuster
+r(253151),	-- Precision Attitude Adjuster
+r(253152),	-- Precision Attitude Adjuster
+r(264960),	-- Crow's Nest Scope
+r(264961),	-- Crow's Nest Scope
+r(264962),	-- Crow's Nest Scope
+r(264964),	-- Monelite Scope of Alacrity \\ Monalite Scope of Alacrity
+r(264966),	-- Monelite Scope of Alacrity \\ Monalite Scope of Alacrity
+r(264967),	-- Monelite Scope of Alacrity \\ Monalite Scope of Alacrity
+r(265097),	-- Incendiary Ammunition
+r(265098),	-- Incendiary Ammunition
+r(265099),	-- Incendiary Ammunition
+r(265100),	-- Frost-Laced Ammunition
+r(265101),	-- Frost-Laced Ammunition
+r(265102),	-- Frost-Laced Ammunition
+r(265807),	-- Zandalari Engineering
 8.0.1.26175
-269126
-269205
-269208
+r(269126),	-- Belt Enchant: Miniaturized Plasma Shield
+r(269205),	-- Belt Enchant: Holographic Horror Projector
+r(269208),	-- Belt Enchant: Personal Space Amplifier
 8.0.1.26231
-269724
-269725
-269726
-269727
-269728
-269729
+r(269724),	-- Honorable Combatant's Discombobulator
+r(269725),	-- Honorable Combatant's Discombobulator
+r(269726),	-- Honorable Combatant's Discombobulator
+r(269727),	-- Honorable Combatant's Stormsteel Destroyer
+r(269728),	-- Honorable Combatant's Stormsteel Destroyer
+r(269729),	-- Honorable Combatant's Stormsteel Destroyer
 8.0.1.26310
-272056
-272057
-272058
-272059
-272060
-272061
-272062
-272063
-272064
-272065
-272066
-272067
+r(272056),	-- AZ3-R1-T3 Synthetic Specs
+r(272057),	-- AZ3-R1-T3 Synthetic Specs
+r(272058),	-- AZ3-R1-T3 Synthetic Specs
+r(272059),	-- AZ3-R1-T3 Gearspun Goggles
+r(272060),	-- AZ3-R1-T3 Gearspun Goggles
+r(272061),	-- AZ3-R1-T3 Gearspun Goggles
+r(272062),	-- AZ3-R1-T3 Bionic Bifocals
+r(272063),	-- AZ3-R1-T3 Bionic Bifocals
+r(272064),	-- AZ3-R1-T3 Bionic Bifocals
+r(272065),	-- AZ3-R1-T3 Orthogonal Optics
+r(272066),	-- AZ3-R1-T3 Orthogonal Optics
+r(272067),	-- AZ3-R1-T3 Orthogonal Optics
 8.0.1.26476
-274621
+r(274621),	-- Mecha-Mogul Mk2
 8.0.1.26624
-255936
-255940
-269123
-278411
-278413
+r(255936),	-- Belt Enchant: Holographic Horror Projector \\ Belt Enchant - Holographic Horror Projector
+r(255940),	-- Belt Enchant: Personal Space Amplifier \\ Belt Enchant - Personal Space Amplifier
+r(269123),	-- Belt Enchant: Miniaturized Plasma Shield \\ Miniaturized Plasma Shield
+r(278411),	-- Makeshift Azerite Detector
+r(278413),	-- Monelite Fish Finder
 8.0.1.26871
-280732
-280733
-280734
+r(280732),	-- Magical Intrusion Dampener
+r(280733),	-- Magical Intrusion Dampener
+r(280734),	-- Magical Intrusion Dampener
 8.1.0.27826
-282806
-282807
-282808
-282809
-282810
-282811
-283914
-283915
-283916
+r(282806),	-- Sinister Combatant's Discombobulator
+r(282807),	-- Sinister Combatant's Discombobulator
+r(282808),	-- Sinister Combatant's Discombobulator
+r(282809),	-- Sinister Combatant's Stormsteel Destroyer
+r(282810),	-- Sinister Combatant's Stormsteel Destroyer
+r(282811),	-- Sinister Combatant's Stormsteel Destroyer
+r(283914),	-- Unstable Temporal Time Shifter
+r(283915),	-- Unstable Temporal Time Shifter
+r(283916),	-- Unstable Temporal Time Shifter
 8.1.0.27934
-286478
+r(286478),	-- Mechantula
 8.1.0.27985
-286647
-286864
-286865
-286866
-286867
-286868
-286869
-286870
-286871
-286872
-286873
-286874
-286875
+r(286647),	-- Sanguinated Thermo-Degradation \\ Breath to Sanguicell
+r(286864),	-- Surging Bionic Bifocals
+r(286865),	-- SP1-R1-73D Bionic Bifocals
+r(286866),	-- Charged SP1-R1-73D Bionic Bifocals
+r(286867),	-- Surging Gearspun Goggles
+r(286868),	-- SP1-R1-73D Gearspun Goggles
+r(286869),	-- Charged SP1-R1-73D Gearspun Goggles
+r(286870),	-- Surging Orthogonal Optics
+r(286871),	-- SP1-R1-73D Orthogonal Optics
+r(286872),	-- Charged SP1-R1-73D Orthogonal Optics
+r(286873),	-- Surging Synthetic Specs
+r(286874),	-- SP1-R1-73D Synthetic Specs
+r(286875),	-- Charged SP1-R1-73D Synthetic Specs
 8.1.0.28048
-287279
+r(287279),	-- Aqueous Thermo-Degradation \\ Tidalcore to Hydrocore
 8.1.0.28616
-291089
-291090
-291091
-291092
-291093
-291094
-291095
-291096
+r(291089),	-- Imbued Synthetic Specs
+r(291090),	-- Emblazoned Synthetic Specs
+r(291091),	-- Imbued Gearspun Goggles
+r(291092),	-- Emblazoned Gearspun Goggles
+r(291093),	-- Imbued Bionic Bifocals
+r(291094),	-- Emblazoned Bionic Bifocals
+r(291095),	-- Imbued Orthogonal Optics
+r(291096),	-- Emblazoned Orthogonal Optics
 8.1.5.28938
-282975
+r(282975),	-- The Ub3r-Spanner
 8.1.5.29220
-283399
-283401
-283403
+r(283399),	-- Ub3r-Module: Short-Fused Bomb Bots \\ Ub3r-Module: Boom Bots
+r(283401),	-- Ub3r-Module: Ub3r S3ntry Mk. X8.0 \\ Ub3r-Module: S3ntry MK X8.0
+r(283403),	-- Ub3r-Module: Ub3r-Improved Target Dummy
 8.2.0.30080
-294784
-294785
-294786
-294787
-294788
-294789
-298255
-298256
-298257
-298930
-299004
-299005
-299006
-299007
-299008
-299009
-299010
-299011
-299012
-299013
-299014
-299015
-299105
-299106
+r(294784),	-- Notorious Combatant's Discombobulator
+r(294785),	-- Notorious Combatant's Discombobulator
+r(294786),	-- Notorious Combatant's Discombobulator
+r(294787),	-- Notorious Combatant's Stormsteel Destroyer
+r(294788),	-- Notorious Combatant's Stormsteel Destroyer
+r(294789),	-- Notorious Combatant's Stormsteel Destroyer
+r(298255),	-- Ub3r-Module: P.O.G.O. \\ Ub3r-Module: P.O.G.O
+r(298256),	-- Ub3r-Module: Scrap Cannon
+r(298257),	-- Ub3r-Module: Ub3r-Coil
+r(298930),	-- Blingtron 7000
+r(299004),	-- Abyssal Synthetic Specs
+r(299005),	-- A5C-3N-D3D Synthetic Specs
+r(299006),	-- Charged A5C-3N-D3D Synthetic Specs
+r(299007),	-- Abyssal Gearspun Goggles
+r(299008),	-- A5C-3N-D3D Gearspun Goggles
+r(299009),	-- Charged A5C-3N-D3D Gearspun Goggles
+r(299010),	-- Abyssal Bionic Bifocals
+r(299011),	-- A5C-3N-D3D Bionic Bifocals
+r(299012),	-- Charged A5C-3N-D3D Bionic Bifocals
+r(299013),	-- Abyssal Orthogonal Optics
+r(299014),	-- A5C-3N-D3D Orthogonal Optics
+r(299015),	-- Charged A5C-3N-D3D Orthogonal Optics
+r(299105),	-- Wormhole Generator: Kul Tiras
+r(299106),	-- Wormhole Generator: Zandalar
 8.3.0.32044
-305858
-305859
-305860
-305861
-305862
-305863
-305940
-305941
-305942
-305943
-305944
-305945
-305946
-305947
-305948
-305949
-305950
-305951
-307220
+r(305858),	-- Uncanny Combatant's Stormsteel Destroyer
+r(305859),	-- Uncanny Combatant's Stormsteel Destroyer
+r(305860),	-- Uncanny Combatant's Stormsteel Destroyer
+r(305861),	-- Uncanny Combatant's Discombobulator
+r(305862),	-- Uncanny Combatant's Discombobulator
+r(305863),	-- Uncanny Combatant's Discombobulator
+r(305940),	-- Paramount Gearspun Goggles
+r(305941),	-- Superior Gearspun Goggles
+r(305942),	-- A-N0M-A-L0U5 Gearspun Goggles
+r(305943),	-- Paramount Synthetic Specs
+r(305944),	-- Superior Synthetic Specs
+r(305945),	-- A-N0M-A-L0U5 Synthetic Specs
+r(305946),	-- Paramount Orthogonal Optics
+r(305947),	-- Superior Orthogonal Optics
+r(305948),	-- A-N0M-A-L0U5 Orthogonal Optics
+r(305949),	-- Paramount Bionic Bifocals
+r(305950),	-- Superior Bionic Bifocals
+r(305951),	-- A-N0M-A-L0U5 Bionic Bifocals
+r(307220),	-- Void Focus
 9.0.1.33978
-310480
-310481
-310482
-310483
-310484
-310485
-310486
-310488
-310489
-310490
-310491
-310492
-310493
-310494
-310495
-310496
-310497
-310501
-310504
-310507
-310509
-310513
-310515
-310522
-310524
-310525
-310526
-310527
-310533
-310534
-310535
-310536
-310537
-310542
+r(310480),	-- Faerie Glider Kit
+r(310481),	-- Kyrian Glider Kit
+r(310482),	-- Maldraxxian Glider Kit
+r(310483),	-- Stoneborn Glider Kit
+r(310484),	-- Nutcracker Grenade \\ Holy Hand Grenade of Ardenweald
+r(310485),	-- Shadow Land Mine
+r(310486),	-- Bomb Bola Launcher \\ Bouncing Boomer
+r(310488),	-- Disposable Ectoplasmic Specs
+r(310489),	-- 
+r(310490),	-- Momentum Redistributor Boots \\ Short-range Teleportation Unit
+r(310491),	-- Torghast Reconfiguration Rig
+r(310492),	-- Gravimetric Scrambler Cannon \\ Portable Micro-Maw Cannon \\ Portable Micro-Maw \\ Deployable Black Hole Generator
+r(310493),	-- 50UL-TR4P \\ 50UL-7RAP \\ SL-00X Soul Shackler
+r(310494),	-- 
+r(310495),	-- Dimensional Shifter
+r(310496),	-- Electro-Jump
+r(310497),	-- Damage Retaliator
+r(310501),	-- Flexible Ectoplasmic Specs
+r(310504),	-- Grounded Ectoplasmic Specs
+r(310507),	-- Articulated Ectoplasmic Specs
+r(310509),	-- Reinforced Ectoplasmic Specs
+r(310513),	-- Necrostatic Micro Capacitor \\ Elecxine Alloy
+r(310515),	-- Hydrodynamic Accelerators \\ Phaevon Alloy
+r(310522),	-- Handful of Laestrite Bolts
+r(310524),	-- Porous Polishing Abrasive
+r(310525),	-- Mortal Coiled Spring
+r(310526),	-- Wormfed Gear Assembly
+r(310527),	-- 
+r(310533),	-- Optical Target Embiggener
+r(310534),	-- Infra-green Reflex Sight
+r(310535),	-- Wormhole Generator: Shadowlands
+r(310536),	-- Precision Lifeforce Inverter
+r(310537),	-- Re-Calibrated Proton Blaster
+r(310542),	-- Shadowlands Engineering
 9.0.1.34278
-331007
+r(331007),	-- PHA7-YNX \\ Pocket PHA7-YNX \\ Pocket Colossus
 9.0.1.35167
-338119
-338210
-338212
-338213
-338214
-338216
-338217
-338218
-338219
-338220
-338222
-338223
+r(338119),	-- Bug Zapifier \\ Ardenweald Engineering Item
+r(338210),	-- Energized Battery \\ Kinda Thing
+r(338212),	-- Electro Cable \\ Almost Thing
+r(338213),	-- Power Hammer \\ Bastion Engineering Item
+r(338214),	-- Piston Assembly \\ Almost Thing
+r(338216),	-- Hardened Bolts \\ Kinda Thing
+r(338217),	-- Boneclad  Stake Launcher \\ Maldraxxus Engineering Item
+r(338218),	-- Bone Reinforced Oxxein Tubing \\ Almost Thing
+r(338219),	-- Handful of Oxxein Bolts \\ Kinda Thing
+r(338220),	-- Duelist's Pistol \\ Revendreth Engineering Item
+r(338222),	-- Sinvyr Barrel \\ Almost Thing
+r(338223),	-- Sinvyr Trigger Mechanism \\ Kinda Thing
 9.0.1.35432
-340534
+r(340534),	-- Interact
 9.0.1.35598
-343099
-343100
-343102
-343103
+r(343099),	-- Crafter's Mark I
+r(343100),	-- Crafter's Mark II
+r(343102),	-- Crafter's Mark III
+r(343103),	-- Crafter's Mark of the Chained Isle \\ Prestigious Crafter's Mark \\ Crafter's Mark IV
 9.0.1.35679
-343661
+r(343661),	-- Novice Crafter's Mark
 9.0.2.35938
-345179
+r(345179),	-- Disposable Spectrophasic Reanimator
 9.2.0.41089
-359664
-359674
-360088
-360126
+r(359664),	-- Crafter's Mark IV
+r(359674),	-- Crafter's Mark of the First Ones
+r(360088),	-- Pure-Air Sail Extensions
+r(360126),	-- Erratic Genesis Matrix
 10.0.7.47910
-400810
+r(400810),	-- Gnomish Voicebox \\ Gnomish Voice Recording
 10.1.0.48480
-407005
-407006
-408052
-408230
+r(407005),	-- Polarity Bomb
+r(407006),	-- EZ-Thro Polarity Bomb
+r(408052),	-- Tinker: Shadowflame Rockets
+r(408230),	-- Quackomancy Cannon

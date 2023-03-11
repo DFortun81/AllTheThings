@@ -240,12 +240,61 @@ def create_missing_file(thing: type[Thing]) -> None:
                 missing_file.writelines(difference)
 
 
+def create_dict_from_raw(file_name: str) -> dict[str, list[str]]:
+    """This function creates a dict of raw files"""
+    raw_path = Path("Raw", file_name)
+    item_dict: dict[str, list[str]] = {}
+    with open(raw_path, "r+") as raw_file:
+        lines = raw_file.readlines()
+        for line in lines:
+            try:
+                key = line.split(DELIMITER)[0].strip()
+                value = line.split(DELIMITER)[1].strip()
+            except IndexError:
+                continue
+            if key in item_dict.keys():
+                name_list: list[str] = item_dict[key]
+                name_list.append(value)
+                item_dict[key] = name_list
+            else:
+                item_dict[key] = [f"{value}"]
+    return item_dict
+
+
+def post_process_recipes() -> None:
+    profession_dict: dict[str, int] = build_profession_dict()
+    spell_dict: dict[str, list[str]] = create_dict_from_raw("SpellNames.txt")
+    for profession in profession_dict.keys() | {"Other"}:
+        print(f"{profession}")
+        missing_path = Path(
+            DATAS_FOLDER,
+            "00 - MissingIDs",
+            "Professions",
+            f"{profession}.txt",
+        )
+        missing_lines = extract_nth_column(missing_path, 0)
+        with open(missing_path) as missing_file:
+            for index, id in enumerate(missing_lines):
+                id = re.sub("[^\\d^.]", "", id.strip())
+                if id.isdigit():
+                    missing_lines[index] = f"r({id}),\t-- "
+                    if id in spell_dict.keys():
+                        name_list: list[str] = spell_dict[id].copy()
+                        name_list.reverse()
+                        missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                    else:
+                        missing_lines[index] += "\n"
+        with open(missing_path, "w") as missing_file:
+            missing_file.writelines(missing_lines)
+
+
 def post_process(thing: type[Thing]) -> None:
     """Get the name of a thing and clean up builds."""
-    # TODO: Should this accept type of Thing and its ID?
-    # TODO: Should it return the name?
     if not thing.real_collectible:
         raise NotImplementedError("This is not a real collectible.")
+    if thing == Recipes:
+        post_process_recipes()
+        return
     raw_path = Path("Raw", f"{thing.__name__}.txt")
     raw_ids = extract_nth_column(raw_path, 0)
     missing_path = Path(
@@ -253,7 +302,6 @@ def post_process(thing: type[Thing]) -> None:
         "00 - MissingIDs",
         f"Missing{thing.__name__}.txt",
     )
-    # Might contain previous names?
     missing_lines = extract_nth_column(missing_path, 0)
     if thing in (
         Achievements,
@@ -283,62 +331,70 @@ def post_process(thing: type[Thing]) -> None:
         # TODO:
         raise NotImplementedError("Followers are not implemented yet.")
     elif thing == Illusions:
-        with open(raw_path) as raw_file:
-            raw_ids_and_nameids = raw_file.readlines()
-        name_ids = extract_nth_column(Path("Raw", "SpellItems.txt"), 0)
-        names = extract_nth_column(Path("Raw", "SpellItems.txt"), 1)
+        spell_dict: dict[str, list[str]] = create_dict_from_raw("SpellItems.txt")
+        for index, id in enumerate(missing_lines):
+            id = re.sub("[^\\d^.]", "", id.strip())
+            if id.isdigit():
+                missing_lines[index] = f"{thing.new_prefix()}{id}),\t-- "
+                if id in spell_dict.keys():
+                    name_list = spell_dict[id].copy()
+                    name_list.reverse()
+                    missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                else:
+                    missing_lines[index] += "\n"
+        with open(missing_path, "w") as missing_file:
+            missing_file.writelines(missing_lines)
+        return
     elif thing == Quests:
         # TODO:
         raise NotImplementedError("Quests are not implemented yet.")
     elif thing == Pets:
-        with open(raw_path) as raw_file:
-            raw_ids_and_nameids = raw_file.readlines()
-        name_ids = extract_nth_column(Path("Raw", "Creatures.txt"), 0)
-        names = extract_nth_column(Path("Raw", "Creatures.txt"), 1)
-    elif thing == Recipes:
-        # TODO:
-        # Recipe names are in the SpellName db and Profession names are in SkillLine db
-        raise NotImplementedError("Recipes are not implemented yet.")
+        pet_dict: dict[str, list[str]] = create_dict_from_raw("Pets.txt")
+        creature_dict: dict[str, list[str]] = create_dict_from_raw("Creatures.txt")
+        for index, pet_id in enumerate(missing_lines):
+            pet_id = re.sub("[^\\d^.]", "", pet_id.strip())
+            if pet_id.isdigit():
+                missing_lines[index] = f"{thing.new_prefix()}{pet_id}),\t-- "
+                name_id = pet_dict[pet_id][0]
+                if name_id in creature_dict.keys():
+                    name_list = creature_dict[name_id].copy()
+                    name_list.reverse()
+                    missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                else:
+                    missing_lines[index] += "\n"
+        with open(missing_path, "w") as missing_file:
+            missing_file.writelines(missing_lines)
+        return
     elif thing == Toys:
-        with open(raw_path) as raw_file:
-            raw_ids_and_nameids = raw_file.readlines()
-        name_ids = extract_nth_column(Path("Raw", "Items.txt"), 0)
-        names = extract_nth_column(Path("Raw", "Items.txt"), 1)
+        item_dict: dict[str, list[str]] = create_dict_from_raw("Items.txt")
+        for index, id in enumerate(missing_lines):
+            id = re.sub("[^\\d^.]", "", id.strip())
+            if id.isdigit():
+                missing_lines[index] = f"{thing.new_prefix()}{id}),\t-- "
+                if id in item_dict.keys():
+                    name_list = item_dict[id].copy()
+                    name_list.reverse()
+                    missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                else:
+                    missing_lines[index] += "\n"
+        with open(missing_path, "w") as missing_file:
+            missing_file.writelines(missing_lines)
+        return
     elif thing == Transmog:
-        # TODO:
-        # Transmog names are in the Item db
-        raise NotImplementedError("Recipes are not implemented yet.")
-    # TODO: I guess you want to set names, raw_id_to_nameid and name_ids for all Thing types above for this loop to work
-
-    # first recover raw_id to name_id ... they remove the lind about db..
-    for n in range(len(missing_lines)):
-        id_list: list[str] = []
-        name_list = []
-        missing_line: str = re.sub("[^\\d^.]", "", missing_lines[n].strip())
-        if missing_line.isdigit():
-            missing_lines[n] = f"{thing.new_prefix()}{missing_line}),\t-- "
-            for m in range(len(raw_ids_and_nameids)):
-                raw_id: str = raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
-                if missing_line == raw_id:
-                    if thing == Pets:
-                        id_list.append(
-                            raw_ids_and_nameids[m].split(DELIMITER)[1].strip()
-                        )
-                    elif thing == Illusions or thing == Toys:
-                        id_list.append(
-                            raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
-                        )
-            for index, name_id in enumerate(name_ids):
-                name_id = re.sub("[^\\d^.]", "", name_id.strip())
-                for element in id_list:
-                    if name_id == element:
-                        name_list.append(names[index].strip())
-        else:
-            missing_lines[n] = missing_line
-        name_list.reverse()
-        missing_lines[n] += " \\\\ ".join(name_list) + "\n"
-    with open(missing_path, "w") as missing_file:
-        missing_file.writelines(missing_lines)
+        item_dict = create_dict_from_raw("Items.txt")
+        for index, id in enumerate(missing_lines):
+            id = re.sub("[^\\d^.]", "", id.strip())
+            if id.isdigit():
+                missing_lines[index] = f"{thing.new_prefix()}{id}),\t-- "
+                if id in item_dict.keys():
+                    name_list = item_dict[id].copy()
+                    name_list.reverse()
+                    missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                else:
+                    missing_lines[index] += "\n"
+        with open(missing_path, "w") as missing_file:
+            missing_file.writelines(missing_lines)
+        return
 
 
 def add_latest_data(build: str) -> None:
@@ -365,8 +421,9 @@ def create_missing_files() -> None:
     """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
-        print(thing)
-        create_missing_file(thing)
+        if thing == Illusions:
+            print(thing)
+            create_missing_file(thing)
 
 
 def available_post_process() -> None:
@@ -381,47 +438,14 @@ def available_post_process() -> None:
             Illusions,
             Mounts,
             Pets,
+            Recipes,
             Titles,
             Toys,
+            Transmog,
         ):
             post_process(thing)
         else:
             continue
-
-
-def give_name_recipes() -> None:
-    """Ugly Function Helped me during Beta to get names to recipes... Need to add to PostProcess Properly Soon"""
-    fast_path: Path = Path("Fast.txt")
-    new_path: Path = Path("Fast_Processed.txt")
-    fast_lines: list[str] = extract_nth_column(fast_path, 0)
-    with open(fast_path) as raw_file:
-        raw_ids_and_nameids: list[str] = raw_file.readlines()
-        name_ids: list[str] = extract_nth_column(Path("Raw", "SpellNames.txt"), 0)
-        names: list[str] = extract_nth_column(Path("Raw", "SpellNames.txt"), 1)
-        for n in range(len(fast_lines)):
-            id_list: list[str] = []
-            name_list: list[str] = []
-            missing_line: str = re.sub("[^\\d^.]", "", fast_lines[n].strip())
-            if missing_line.isdigit():
-                fast_lines[n] = f"r({missing_line}),\t-- "
-                for m in range(len(raw_ids_and_nameids)):
-                    raw_id: str = raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
-                    if missing_line == raw_id:
-                        id_list.append(
-                            raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
-                        )
-                for index, name_id in enumerate(name_ids):
-                    name_id = re.sub("[^\\d^.]", "", name_id.strip())
-                    for element in id_list:
-                        if name_id.strip() == element.strip():
-                            name_list.append(names[index].strip())
-            else:
-                fast_lines[n] = missing_line
-            name_list.reverse()
-            fast_lines[n] += " \\\\ ".join(name_list) + "\n"
-            print(fast_lines[n])
-        with open(new_path, "w") as missing_file:
-            missing_file.writelines(fast_lines)
 
 
 def give_name_item() -> None:

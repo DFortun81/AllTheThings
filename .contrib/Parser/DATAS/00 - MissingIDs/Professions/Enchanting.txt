@@ -1,41 +1,41 @@
 5.0.3.15890
-110955
+r(110955),	-- 
 6.0.1.18179
-10000
-158144
-158882
-158890
-158891
-158897
-158904
-158905
-158912
-158919
+r(10000),	-- Douse Lock \\ Plans: Wicked Mithril Blade
+r(158144),	-- 
+r(158882),	-- 
+r(158890),	-- 
+r(158891),	-- 
+r(158897),	-- 
+r(158904),	-- 
+r(158905),	-- 
+r(158912),	-- 
+r(158919),	-- 
 7.3.0.24473
-178241
-181870
+r(178241),	-- Temporal Crystal
+r(181870),	-- Illusion: Holy Infusion
 8.2.0.30080
-300381
-300382
+r(300381),	-- Disenchant
+r(300382),	-- Disenchant
 8.2.0.30329
-302690
-302691
-302692
-302693
-302694
-302695
+r(302690),	-- Disenchant
+r(302691),	-- Disenchant
+r(302692),	-- Disenchant
+r(302693),	-- Disenchant
+r(302694),	-- Disenchant
+r(302695),	-- Disenchant
 10.0.7.47910
-400809
-402139
+r(400809),	-- Glowing Crystal Bookmark
+r(402139),	-- Mindslave's Reach
 10.1.0.48480
-404859
-405076
-405650
-405803
-405937
-406108
-406413
-406418
+r(404859),	-- 
+r(405076),	-- 
+r(405650),	-- Illusory Adornment: Spores
+r(405803),	-- Spore Keeper's Baton
+r(405937),	-- Titan Training Matrix V
+r(406108),	-- Enchanted Whelpling's Shadowflame Crest
+r(406413),	-- Enchanted Wyrm's Shadowflame Crest
+r(406418),	-- Enchanted Aspect's Shadowflame Crest
 
 
 
@@ -43,25 +43,25 @@
 Missing in EnchantingItemDB.lua
 
 0.5.3.3368
-7426
-7795
+r(7426),	-- Minor Absorption \\ Enchant Chest - Minor Absorption
+r(7795),	-- Runed Silver Rod
 0.9.0.3807
-13642
+r(13642),	-- Versatility \\ Enchant Bracer - Spirit
 2.4.3.8606
-42613
+r(42613),	-- Nexus Transformation
 9.0.1.33978
-309832
+r(309832),	-- Shadowlands Enchanting
 9.0.1.35167
-338119
+r(338119),	-- Bug Zapifier \\ Ardenweald Engineering Item
 10.0.7.47910
-400809
-402139
+r(400809),	-- Glowing Crystal Bookmark
+r(402139),	-- Mindslave's Reach
 10.1.0.48480
-404859
-405076
-405650
-405803
-405937
-406108
-406413
-406418
+r(404859),	-- 
+r(405076),	-- 
+r(405650),	-- Illusory Adornment: Spores
+r(405803),	-- Spore Keeper's Baton
+r(405937),	-- Titan Training Matrix V
+r(406108),	-- Enchanted Whelpling's Shadowflame Crest
+r(406413),	-- Enchanted Wyrm's Shadowflame Crest
+r(406418),	-- Enchanted Aspect's Shadowflame Crest

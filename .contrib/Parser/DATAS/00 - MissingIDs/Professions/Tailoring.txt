@@ -1,129 +1,129 @@
 0.5.3.3368
-3908
-3909
-3910
+r(3908),	-- Tailoring
+r(3909),	-- Tailoring
+r(3910),	-- Tailoring
 0.5.5.3494
-8468
+r(8468),	-- White Woolen Dress
 0.8.0.3734
-12180
+r(12180),	-- Tailoring
 2.0.0.6080
-26790
-26797
-26798
-26801
+r(26790),	-- Tailoring
+r(26797),	-- Spellfire Tailoring
+r(26798),	-- Mooncloth Tailoring
+r(26801),	-- Shadoweave Tailoring
 3.0.1.8622
-51309
+r(51309),	-- Tailoring
 3.0.1.8874
-55642
-55769
-55777
-56034
-56039
-56048
+r(55642),	-- Lightweave Embroidery
+r(55769),	-- Darkglow Embroidery
+r(55777),	-- Swordguard Embroidery
+r(56034),	-- Master's Spellthread
+r(56039),	-- Sanctified Spellthread
+r(56048),	-- Duskweave Boots
 3.1.0.9767
-59390
+r(59390),	-- Cloth Scavenging \\ Northern Cloth Scavenging
 4.0.1.12911
-75143
-75154
-75155
-75156
-75172
-75175
-75178
-75183
-75287
+r(75143),	-- 
+r(75154),	-- Master's Spellthread
+r(75155),	-- Sanctified Spellthread
+r(75156),	-- Tailoring
+r(75172),	-- 
+r(75175),	-- 
+r(75178),	-- 
+r(75183),	-- Unravel Embersilk Cloth
+r(75287),	-- 
 4.3.4.15595
-102171
+r(102171),	-- 
 5.0.3.15890
-104115
-110426
-110955
-125481
-125482
-125483
+r(104115),	-- Release Fire Spirit
+r(110426),	-- Tailoring
+r(110955),	-- 
+r(125481),	-- 
+r(125482),	-- 
+r(125483),	-- 
 6.0.1.18179
-158758
+r(158758),	-- Tailoring
 7.3.0.24473
-195126
+r(195126),	-- Tailoring
 8.0.1.25902
-257105
-257106
-257108
-257109
-257111
-257112
-257141
-264616
-264618
-264620
-264622
-264624
-264626
-264630
+r(257105),	-- Tidespray Linen Cloak of Resilience \\ Sun-Bleached Linen Cloak of Resilience
+r(257106),	-- Tidespray Linen Cloak of the Feather \\ Sun-Bleached Linen Cloak of the Feather
+r(257108),	-- Embroidered Deep Sea Cloak of Resilience
+r(257109),	-- Embroidered Deep Sea Cloak of Resilience
+r(257111),	-- Embroidered Deep Sea Cloak of the Feather
+r(257112),	-- Embroidered Deep Sea Cloak of the Feather
+r(257141),	-- Pet - Hot Air Balloon (DNT)
+r(264616),	-- Tailoring
+r(264618),	-- Outland Tailoring
+r(264620),	-- Northrend Tailoring
+r(264622),	-- Cataclysm Tailoring
+r(264624),	-- Pandaria Tailoring
+r(264626),	-- Draenor Tailoring
+r(264630),	-- Kul Tiran Tailoring
 8.0.1.25976
-265815
+r(265815),	-- Zandalari Tailoring
 9.0.1.33978
-310887
-310888
-310889
-310890
-310891
-310892
-310893
-310894
-310895
-310905
-310906
-310907
-310908
-310909
-310910
-310911
-310912
-310913
-310914
-310915
-310916
-310917
-310918
-310919
-310920
-310921
-310922
-310933
-310934
-310935
-310936
-310937
-310938
-310939
-310940
-310949
+r(310887),	-- Winterweave Footwraps
+r(310888),	-- Winterweave Tunic
+r(310889),	-- Winterweave Cloak
+r(310890),	-- Winterweave Handwraps
+r(310891),	-- Winterweave Cowl
+r(310892),	-- Winterweave Trousers
+r(310893),	-- Winterweave Mantle
+r(310894),	-- Winterweave Cord
+r(310895),	-- Winterweave Cuffs
+r(310905),	-- Stitchsilk Footwraps
+r(310906),	-- Stitchsilk Tunic
+r(310907),	-- Stitchsilk Cloak
+r(310908),	-- Stitchsilk Handwraps
+r(310909),	-- Stitchsilk Cowl
+r(310910),	-- Stitchsilk Trousers
+r(310911),	-- Stitchsilk Mantle
+r(310912),	-- Stitchsilk Cord
+r(310913),	-- Stitchsilk Cuffs
+r(310914),	-- Pureweave Footwraps
+r(310915),	-- Pureweave Tunic
+r(310916),	-- Pureweave Cloak
+r(310917),	-- Pureweave Handwraps
+r(310918),	-- Pureweave Cowl
+r(310919),	-- Pureweave Trousers
+r(310920),	-- Pureweave Mantle
+r(310921),	-- Pureweave Cord
+r(310922),	-- Pureweave Cuffs
+r(310933),	-- Craftsman's Pouch \\ Craftman's Pouch \\ Modified Crafting Reagent 01
+r(310934),	-- Modified Crafting Reagent 02
+r(310935),	-- Modified Crafting Reagent 03
+r(310936),	-- Modified Crafting Reagent 04
+r(310937),	-- Modified Crafting Reagent 05
+r(310938),	-- Modified Crafting Reagent 06
+r(310939),	-- Modified Crafting Reagent 07
+r(310940),	-- Modified Crafting Reagent 08
+r(310949),	-- Shadowlands Tailoring
 9.0.1.35679
-343634
+r(343634),	-- Shadowlands Cloth Scavenging
 10.0.7.47910
-400815
-402151
-402152
-402155
-402156
+r(400815),	-- Traditional Morqut Kite \\ Morqut Kite \\ Tuskarr Kite
+r(402151),	-- Bloodlord's Embrace
+r(402152),	-- Gurubashi Tigerhide Cloak
+r(402155),	-- Gurubashi Headdress
+r(402156),	-- Ritualistic Legwarmers
 10.0.7.48076
-405974
+r(405974),	-- Paw-Made Winterpelt Reagent Bag
 10.1.0.48480
-403149
-403150
-403151
-403152
-403153
-403154
-403155
-403156
-403157
-408304
-408305
-408316
-408318
-408319
+r(403149),	-- Obsidian Combatant's Wildercloth Cloak
+r(403150),	-- Obsidian Combatant's Wildercloth Tunic
+r(403151),	-- Obsidian Combatant's Wildercloth Treads
+r(403152),	-- Obsidian Combatant's Wildercloth Gloves
+r(403153),	-- Obsidian Combatant's Wildercloth Hood
+r(403154),	-- Obsidian Combatant's Wildercloth Leggings
+r(403155),	-- Obsidian Combatant's Wildercloth Shoulderpads
+r(403156),	-- Obsidian Combatant's Wildercloth Sash
+r(403157),	-- Obsidian Combatant's Wildercloth Bands
+r(408304),	-- Reserve Parachute
+r(408305),	-- Enourmous Ball of Yarn
+r(408316),	-- Spore-Infused Combat Bandage
+r(408318),	-- Undulating Sporecloak
+r(408319),	-- Explorer's Banner of Comradery
 
 
 
@@ -131,1173 +131,1173 @@
 Missing in TailoringItemDB.lua
 
 0.5.3.3368
-2385
-2386
-2387
-2389
-2392
-2393
-2394
-2395
-2396
-2397
-2399
-2401
-2402
-2403
-2406
-2963
-2964
-3755
-3757
-3758
-3813
-3839
-3840
-3841
-3842
-3843
-3844
-3845
-3847
-3848
-3849
-3850
-3851
-3852
-3854
-3855
-3856
-3857
-3858
-3859
-3860
-3861
-3862
-3863
-3864
-3865
-3866
-3868
-3869
-3870
-3871
-3872
-3873
-3908
-3909
-3910
-3914
-3915
-6521
-6686
-6688
-6690
-6692
-6693
-6695
-7623
-7624
-7629
-7630
-7633
-7636
-7639
-7643
-7892
-7893
+r(2385),	-- Brown Linen Vest
+r(2386),	-- Linen Boots
+r(2387),	-- Linen Cloak
+r(2389),	-- Red Linen Robe
+r(2392),	-- Red Linen Shirt
+r(2393),	-- White Linen Shirt
+r(2394),	-- Blue Linen Shirt
+r(2395),	-- Barbaric Linen Vest
+r(2396),	-- Green Linen Shirt
+r(2397),	-- Reinforced Linen Cape
+r(2399),	-- Green Woolen Vest
+r(2401),	-- Woolen Boots
+r(2402),	-- Woolen Cape
+r(2403),	-- Gray Woolen Robe
+r(2406),	-- Gray Woolen Shirt
+r(2963),	-- Bolt of Linen Cloth
+r(2964),	-- Bolt of Woolen Cloth
+r(3755),	-- Linen Bag
+r(3757),	-- Woolen Bag
+r(3758),	-- Green Woolen Bag
+r(3813),	-- Small Silk Pack
+r(3839),	-- Bolt of Silk Cloth
+r(3840),	-- Heavy Linen Gloves
+r(3841),	-- Green Linen Bracers
+r(3842),	-- Handstitched Linen Britches
+r(3843),	-- Heavy Woolen Gloves
+r(3844),	-- Heavy Woolen Cloak
+r(3845),	-- Soft-soled Linen Boots
+r(3847),	-- Red Woolen Boots
+r(3848),	-- Double-stitched Woolen Shoulders
+r(3849),	-- Reinforced Woolen Shoulders
+r(3850),	-- Heavy Woolen Pants
+r(3851),	-- Phoenix Pants
+r(3852),	-- Gloves of Meditation
+r(3854),	-- Azure Silk Gloves
+r(3855),	-- Spidersilk Boots
+r(3856),	-- Spider Silk Slippers
+r(3857),	-- Enchanter's Cowl
+r(3858),	-- Shadow Hood
+r(3859),	-- Azure Silk Vest
+r(3860),	-- Boots of the Enchanter
+r(3861),	-- Long Silken Cloak
+r(3862),	-- Icy Cloak
+r(3863),	-- Spider Belt
+r(3864),	-- Star Belt
+r(3865),	-- Bolt of Mageweave
+r(3866),	-- Stylish Red Shirt
+r(3868),	-- Phoenix Gloves
+r(3869),	-- Bright Yellow Shirt
+r(3870),	-- Dark Silk Shirt
+r(3871),	-- Formal White Shirt
+r(3872),	-- Rich Purple Silk Shirt
+r(3873),	-- Black Swashbuckler's Shirt
+r(3908),	-- Tailoring
+r(3909),	-- Tailoring
+r(3910),	-- Tailoring
+r(3914),	-- Brown Linen Pants
+r(3915),	-- Brown Linen Shirt
+r(6521),	-- Pearl-clasped Cloak
+r(6686),	-- Red Linen Bag
+r(6688),	-- Red Woolen Bag
+r(6690),	-- Lesser Wizard's Robe
+r(6692),	-- Robes of Arcana
+r(6693),	-- Green Silk Pack
+r(6695),	-- Black Silk Pack
+r(7623),	-- Brown Linen Robe
+r(7624),	-- White Linen Robe
+r(7629),	-- Red Linen Vest
+r(7630),	-- Blue Linen Vest
+r(7633),	-- Blue Linen Robe
+r(7636),	-- Green Woolen Robe
+r(7639),	-- Blue Overalls
+r(7643),	-- Greater Adept's Robe
+r(7892),	-- Stylish Blue Shirt
+r(7893),	-- Stylish Green Shirt
 0.5.5.3494
-8465
-8467
-8468
-8483
-8489
+r(8465),	-- Simple Dress
+r(8467),	-- White Woolen Dress
+r(8468),	-- White Woolen Dress
+r(8483),	-- White Swashbuckler's Shirt
+r(8489),	-- Red Swashbuckler's Shirt
 0.6.0.3592
-8758
-8760
-8762
-8764
-8766
-8770
-8772
-8774
-8776
-8778
-8780
-8782
-8784
-8786
-8789
-8791
-8793
-8795
-8797
-8799
-8802
-8804
+r(8758),	-- Azure Silk Pants
+r(8760),	-- Azure Silk Hood
+r(8762),	-- Silk Headband
+r(8764),	-- Earthen Vest
+r(8766),	-- Azure Silk Belt
+r(8770),	-- Robe of Power
+r(8772),	-- Crimson Silk Belt
+r(8774),	-- Green Silken Shoulders
+r(8776),	-- Linen Belt
+r(8778),	-- Boots of Darkness
+r(8780),	-- Hands of Darkness
+r(8782),	-- Truefaith Gloves
+r(8784),	-- Green Silk Armor
+r(8786),	-- Azure Silk Cloak
+r(8789),	-- Crimson Silk Cloak
+r(8791),	-- Crimson Silk Vest
+r(8793),	-- Crimson Silk Shoulders
+r(8795),	-- Azure Shoulders
+r(8797),	-- Earthen Silk Belt
+r(8799),	-- Crimson Silk Pantaloons
+r(8802),	-- Crimson Silk Robe
+r(8804),	-- Crimson Silk Gloves
 0.8.0.3734
-12044
-12045
-12046
-12047
-12048
-12049
-12050
-12052
-12053
-12055
-12056
-12059
-12060
-12061
-12062
-12063
-12064
-12065
-12066
-12067
-12068
-12069
-12070
-12071
-12072
-12073
-12074
-12075
-12076
-12077
-12078
-12079
-12080
-12081
-12082
-12083
-12084
-12085
-12086
-12087
-12088
-12089
-12090
-12091
-12092
-12093
-12180
+r(12044),	-- Simple Linen Pants
+r(12045),	-- Simple Linen Boots
+r(12046),	-- Simple Kilt
+r(12047),	-- Colorful Kilt
+r(12048),	-- Black Mageweave Vest
+r(12049),	-- Black Mageweave Leggings
+r(12050),	-- Black Mageweave Robe
+r(12052),	-- Shadoweave Pants
+r(12053),	-- Black Mageweave Gloves
+r(12055),	-- Shadoweave Robe
+r(12056),	-- Red Mageweave Vest
+r(12059),	-- White Bandit Mask
+r(12060),	-- Red Mageweave Pants
+r(12061),	-- Orange Mageweave Shirt
+r(12062),	-- Stormcloth Pants
+r(12063),	-- Stormcloth Gloves
+r(12064),	-- Orange Martial Shirt
+r(12065),	-- Mageweave Bag
+r(12066),	-- Red Mageweave Gloves
+r(12067),	-- Dreamweave Gloves
+r(12068),	-- Stormcloth Vest
+r(12069),	-- Cindercloth Robe
+r(12070),	-- Dreamweave Vest
+r(12071),	-- Shadoweave Gloves
+r(12072),	-- Black Mageweave Headband
+r(12073),	-- Black Mageweave Boots
+r(12074),	-- Black Mageweave Shoulders
+r(12075),	-- Lavender Mageweave Shirt
+r(12076),	-- Shadoweave Shoulders
+r(12077),	-- Simple Black Dress
+r(12078),	-- Red Mageweave Shoulders
+r(12079),	-- Red Mageweave Bag
+r(12080),	-- Pink Mageweave Shirt
+r(12081),	-- Admiral's Hat
+r(12082),	-- Shadoweave Boots
+r(12083),	-- Stormcloth Headband
+r(12084),	-- Red Mageweave Headband
+r(12085),	-- Tuxedo Shirt
+r(12086),	-- Shadoweave Mask
+r(12087),	-- Stormcloth Shoulders
+r(12088),	-- Cindercloth Boots
+r(12089),	-- Tuxedo Pants
+r(12090),	-- Stormcloth Boots
+r(12091),	-- White Wedding Dress
+r(12092),	-- Dreamweave Circlet
+r(12093),	-- Tuxedo Jacket
+r(12180),	-- Tailoring
 1.0.0.3980
-18401
-18402
-18403
-18404
-18405
-18406
-18407
-18408
-18409
-18410
-18411
-18412
-18413
-18414
-18415
-18416
-18417
-18418
-18419
-18420
-18421
-18422
-18423
-18424
-18434
-18436
-18437
-18438
-18439
-18440
-18441
-18442
-18444
-18445
-18446
-18447
-18448
-18449
-18450
-18451
-18452
-18453
-18454
-18455
-18456
-18457
-18458
-18560
+r(18401),	-- Bolt of Runecloth
+r(18402),	-- Runecloth Belt
+r(18403),	-- Frostweave Tunic
+r(18404),	-- Frostweave Robe
+r(18405),	-- Runecloth Bag
+r(18406),	-- Runecloth Robe
+r(18407),	-- Runecloth Tunic
+r(18408),	-- Cindercloth Vest
+r(18409),	-- Runecloth Cloak
+r(18410),	-- Ghostweave Belt
+r(18411),	-- Frostweave Gloves
+r(18412),	-- Cindercloth Gloves
+r(18413),	-- Ghostweave Gloves
+r(18414),	-- Brightcloth Robe
+r(18415),	-- Brightcloth Gloves
+r(18416),	-- Ghostweave Vest
+r(18417),	-- Runecloth Gloves
+r(18418),	-- Cindercloth Cloak
+r(18419),	-- Felcloth Pants
+r(18420),	-- Brightcloth Cloak
+r(18421),	-- Wizardweave Leggings
+r(18422),	-- Cloak of Fire
+r(18423),	-- Runecloth Boots
+r(18424),	-- Frostweave Pants
+r(18434),	-- Cindercloth Pants
+r(18436),	-- Robe of Winter Night
+r(18437),	-- Felcloth Boots
+r(18438),	-- Runecloth Pants
+r(18439),	-- Brightcloth Pants
+r(18440),	-- Mooncloth Leggings
+r(18441),	-- Ghostweave Pants
+r(18442),	-- Felcloth Hood
+r(18444),	-- Runecloth Headband
+r(18445),	-- Mooncloth Bag
+r(18446),	-- Wizardweave Robe
+r(18447),	-- Mooncloth Vest
+r(18448),	-- Mooncloth Shoulders
+r(18449),	-- Runecloth Shoulders
+r(18450),	-- Wizardweave Turban
+r(18451),	-- Felcloth Robe
+r(18452),	-- Mooncloth Circlet
+r(18453),	-- Felcloth Shoulders
+r(18454),	-- Gloves of Spell Mastery
+r(18455),	-- Bottomless Bag
+r(18456),	-- Truefaith Vestments
+r(18457),	-- Robe of the Archmage
+r(18458),	-- Robe of the Void
+r(18560),	-- Mooncloth
 1.1.2.4125
-19435
-20848
-20849
+r(19435),	-- Mooncloth Boots
+r(20848),	-- Flarecore Mantle
+r(20849),	-- Flarecore Gloves
 1.13.0.28211
-21945
-22759
-22813
-22866
-22867
-22868
-22869
-22870
-22902
-23662
-23663
-23664
-23665
-23666
-23667
-24091
-24092
-24093
-24901
-24902
-24903
-26085
-26086
-26087
-26403
-26407
-27658
-27659
-27660
-27724
-27725
-28205
-28207
-28208
-28209
-28210
-28480
-28481
-28482
+r(21945),	-- Green Holiday Shirt
+r(22759),	-- Flarecore Wraps
+r(22813),	-- Gordok Ogre Suit
+r(22866),	-- Belt of the Archmage
+r(22867),	-- Felcloth Gloves
+r(22868),	-- Inferno Gloves
+r(22869),	-- Mooncloth Gloves
+r(22870),	-- Cloak of Warding
+r(22902),	-- Mooncloth Robe
+r(23662),	-- Wisdom of the Timbermaw
+r(23663),	-- Mantle of the Timbermaw
+r(23664),	-- Argent Boots
+r(23665),	-- Argent Shoulders
+r(23666),	-- Flarecore Robe
+r(23667),	-- Flarecore Leggings
+r(24091),	-- Bloodvine Vest
+r(24092),	-- Bloodvine Leggings
+r(24093),	-- Bloodvine Boots
+r(24901),	-- Runed Stygian Leggings
+r(24902),	-- Runed Stygian Belt
+r(24903),	-- Runed Stygian Boots
+r(26085),	-- Soul Pouch
+r(26086),	-- Felcloth Bag
+r(26087),	-- Core Felcloth Bag
+r(26403),	-- Festival Dress \\ Festive Red Dress
+r(26407),	-- Festival Suit \\ Festive Red Pant Suit
+r(27658),	-- Enchanted Mageweave Pouch
+r(27659),	-- Enchanted Runecloth Bag
+r(27660),	-- Big Bag of Enchantment
+r(27724),	-- Cenarion Herb Bag
+r(27725),	-- Satchel of Cenarius
+r(28205),	-- Glacial Gloves
+r(28207),	-- Glacial Vest
+r(28208),	-- Glacial Cloak
+r(28209),	-- Glacial Wrists
+r(28210),	-- Gaea's Embrace
+r(28480),	-- Sylvan Vest
+r(28481),	-- Sylvan Crown
+r(28482),	-- Sylvan Shoulders
 2.0.0.6080
-26745
-26746
-26747
-26749
-26750
-26751
-26752
-26753
-26754
-26755
-26756
-26757
-26758
-26759
-26760
-26761
-26762
-26763
-26764
-26765
-26770
-26771
-26772
-26773
-26774
-26775
-26776
-26777
-26778
-26779
-26780
-26781
-26782
-26783
-26784
-26790
-26797
-26798
-26801
-31373
-31430
-31431
-31432
-31433
-31434
-31435
-31437
-31438
-31440
-31441
-31442
-31443
-31444
-31448
-31449
-31450
-31451
-31452
-31453
-31454
-31455
-31456
-31459
-31460
-31461
+r(26745),	-- Bolt of Netherweave
+r(26746),	-- Netherweave Bag
+r(26747),	-- Bolt of Imbued Netherweave
+r(26749),	-- Imbued Netherweave Bag
+r(26750),	-- Bolt of Soulcloth
+r(26751),	-- Primal Mooncloth
+r(26752),	-- Spellfire Belt
+r(26753),	-- Spellfire Gloves
+r(26754),	-- Spellfire Robe
+r(26755),	-- Spellfire Bag
+r(26756),	-- Frozen Shadoweave Shoulders
+r(26757),	-- Frozen Shadoweave Boots
+r(26758),	-- Frozen Shadoweave Robe
+r(26759),	-- Ebon Shadowbag
+r(26760),	-- Primal Mooncloth Belt
+r(26761),	-- Primal Mooncloth Shoulders
+r(26762),	-- Primal Mooncloth Robe
+r(26763),	-- Primal Mooncloth Bag
+r(26764),	-- Netherweave Bracers
+r(26765),	-- Netherweave Belt
+r(26770),	-- Netherweave Gloves
+r(26771),	-- Netherweave Pants
+r(26772),	-- Netherweave Boots
+r(26773),	-- Netherweave Robe
+r(26774),	-- Netherweave Tunic
+r(26775),	-- Imbued Netherweave Pants
+r(26776),	-- Imbued Netherweave Boots
+r(26777),	-- Imbued Netherweave Robe
+r(26778),	-- Imbued Netherweave Tunic
+r(26779),	-- Soulcloth Gloves
+r(26780),	-- Soulcloth Shoulders
+r(26781),	-- Soulcloth Vest
+r(26782),	-- Arcanoweave Bracers
+r(26783),	-- Arcanoweave Boots
+r(26784),	-- Arcanoweave Robe
+r(26790),	-- Tailoring
+r(26797),	-- Spellfire Tailoring
+r(26798),	-- Mooncloth Tailoring
+r(26801),	-- Shadoweave Tailoring
+r(31373),	-- Spellcloth
+r(31430),	-- Mystic Spellthread
+r(31431),	-- Silver Spellthread
+r(31432),	-- Runic Spellthread
+r(31433),	-- Golden Spellthread
+r(31434),	-- Unyielding Bracers
+r(31435),	-- Bracers of Havok
+r(31437),	-- Blackstrike Bracers
+r(31438),	-- Cloak of the Black Void
+r(31440),	-- Cloak of Eternity
+r(31441),	-- White Remedy Cape
+r(31442),	-- Unyielding Girdle
+r(31443),	-- Girdle of Ruination
+r(31444),	-- Black Belt of Knowledge
+r(31448),	-- Resolute Cape
+r(31449),	-- Vengeance Wrap
+r(31450),	-- Manaweave Cloak
+r(31451),	-- Whitemend Pants
+r(31452),	-- Spellstrike Pants
+r(31453),	-- Battlecast Pants
+r(31454),	-- Whitemend Hood
+r(31455),	-- Spellstrike Hood
+r(31456),	-- Battlecast Hood
+r(31459),	-- Bag of Jewels
+r(31460),	-- Netherweave Net
+r(31461),	-- Heavy Netherweave Net
 2.4.3.8606
-36315
-36316
-36317
-36318
-36665
-36667
-36668
-36669
-36670
-36672
-36686
-37873
-37882
-37883
-37884
-40020
-40021
-40023
-40024
-40060
-41205
-41206
-41207
-41208
-44950
-44958
-46128
-46129
-46130
-46131
-49677
-50194
-50644
-50647
+r(36315),	-- Belt of Blasting
+r(36316),	-- Belt of the Long Road
+r(36317),	-- Boots of Blasting
+r(36318),	-- Boots of the Long Road
+r(36665),	-- Netherflame Robe
+r(36667),	-- Netherflame Belt
+r(36668),	-- Netherflame Boots
+r(36669),	-- Lifeblood Leggings
+r(36670),	-- Lifeblood Belt
+r(36672),	-- Lifeblood Bracers
+r(36686),	-- Shadowcloth
+r(37873),	-- Cloak of Arcane Evasion
+r(37882),	-- Flameheart Bracers
+r(37883),	-- Flameheart Gloves
+r(37884),	-- Flameheart Vest
+r(40020),	-- Soulguard Slippers
+r(40021),	-- Soulguard Bracers
+r(40023),	-- Soulguard Leggings
+r(40024),	-- Soulguard Girdle
+r(40060),	-- Night's End
+r(41205),	-- Bracers of Nimble Thought
+r(41206),	-- Mantle of Nimble Thought
+r(41207),	-- Swiftheal Wraps
+r(41208),	-- Swiftheal Mantle
+r(44950),	-- Green Winter Clothes
+r(44958),	-- Red Winter Clothes
+r(46128),	-- Sunfire Handwraps
+r(46129),	-- Hands of Eternal Light
+r(46130),	-- Sunfire Robe
+r(46131),	-- Robe of Eternal Light
+r(49677),	-- Dress Shoes
+r(50194),	-- Mycah's Botanical Bag
+r(50644),	-- Haliscan Jacket
+r(50647),	-- Haliscan Pantaloons
 3.0.1.8622
-51309
+r(51309),	-- Tailoring
 3.0.1.8874
-55642
-55769
-55777
-55898
-55899
-55900
-55901
-55902
-55903
-55904
-55906
-55907
-55908
-55910
-55911
-55913
-55914
-55919
-55920
-55921
-55922
-55923
-55924
-55925
-55941
-55943
-55993
-55994
-55995
-55996
-55997
-55998
-55999
-56000
-56001
-56002
-56003
-56004
-56005
-56006
-56007
-56008
-56009
-56010
-56011
-56014
-56015
-56016
-56017
-56018
-56019
-56020
-56021
-56022
-56023
-56024
-56025
-56026
-56027
-56028
-56029
-56030
-56031
-56034
-56039
-56048
+r(55642),	-- Lightweave Embroidery
+r(55769),	-- Darkglow Embroidery
+r(55777),	-- Swordguard Embroidery
+r(55898),	-- Frostweave Net
+r(55899),	-- Bolt of Frostweave
+r(55900),	-- Bolt of Imbued Frostweave
+r(55901),	-- Duskweave Leggings
+r(55902),	-- Frostwoven Shoulders
+r(55903),	-- Frostwoven Robe
+r(55904),	-- Frostwoven Gloves
+r(55906),	-- Frostwoven Boots
+r(55907),	-- Frostwoven Cowl
+r(55908),	-- Frostwoven Belt
+r(55910),	-- Mystic Frostwoven Shoulders
+r(55911),	-- Mystic Frostwoven Robe
+r(55913),	-- Mystic Frostwoven Wristwraps
+r(55914),	-- Duskweave Belt
+r(55919),	-- Duskweave Cowl
+r(55920),	-- Duskweave Wristwraps
+r(55921),	-- Duskweave Robe
+r(55922),	-- Duskweave Gloves
+r(55923),	-- Duskweave Shoulders
+r(55924),	-- Duskweave Boots
+r(55925),	-- Black Duskweave Leggings
+r(55941),	-- Black Duskweave Robe
+r(55943),	-- Black Duskweave Wristwraps
+r(55993),	-- Red Lumberjack Shirt
+r(55994),	-- Blue Lumberjack Shirt
+r(55995),	-- Yellow Lumberjack Shirt
+r(55996),	-- Green Lumberjack Shirt
+r(55997),	-- Red Workman's Shirt
+r(55998),	-- Blue Workman's Shirt
+r(55999),	-- Rustic Workman's Shirt
+r(56000),	-- Green Workman's Shirt
+r(56001),	-- Moonshroud
+r(56002),	-- Ebonweave
+r(56003),	-- Spellweave
+r(56004),	-- Abyssal Bag
+r(56005),	-- Glacial Bag
+r(56006),	-- Mysterious Bag
+r(56007),	-- Frostweave Bag
+r(56008),	-- Shining Spellthread
+r(56009),	-- Brilliant Spellthread
+r(56010),	-- Azure Spellthread
+r(56011),	-- Sapphire Spellthread
+r(56014),	-- Cloak of the Moon
+r(56015),	-- Cloak of Frozen Spirits
+r(56016),	-- Wispcloak
+r(56017),	-- Deathchill Cloak
+r(56018),	-- Hat of Wintry Doom
+r(56019),	-- Silky Iceshard Boots
+r(56020),	-- Deep Frozen Cord
+r(56021),	-- Frostmoon Pants
+r(56022),	-- Light Blessed Mittens
+r(56023),	-- Aurora Slippers
+r(56024),	-- Moonshroud Robe
+r(56025),	-- Moonshroud Gloves
+r(56026),	-- Ebonweave Robe
+r(56027),	-- Ebonweave Gloves
+r(56028),	-- Spellweave Robe
+r(56029),	-- Spellweave Gloves
+r(56030),	-- Frostwoven Leggings
+r(56031),	-- Frostwoven Wristwraps
+r(56034),	-- Master's Spellthread
+r(56039),	-- Sanctified Spellthread
+r(56048),	-- Duskweave Boots
 3.1.0.9767
-59390
-59582
-59583
-59584
-59585
-59586
-59587
-59588
-59589
-60969
-60971
-60990
-60993
-60994
-63203
-63204
-63205
-63206
-63742
-63924
-64729
-64730
+r(59390),	-- Cloth Scavenging \\ Northern Cloth Scavenging
+r(59582),	-- Frostsavage Belt
+r(59583),	-- Frostsavage Bracers
+r(59584),	-- Frostsavage Shoulders
+r(59585),	-- Frostsavage Boots
+r(59586),	-- Frostsavage Gloves
+r(59587),	-- Frostsavage Robe
+r(59588),	-- Frostsavage Leggings
+r(59589),	-- Frostsavage Cowl
+r(60969),	-- Flying Carpet
+r(60971),	-- Magnificent Flying Carpet
+r(60990),	-- Glacial Waistband
+r(60993),	-- Glacial Robe
+r(60994),	-- Glacial Slippers
+r(63203),	-- Sash of Ancient Power
+r(63204),	-- Spellslinger's Slippers
+r(63205),	-- Cord of the White Dawn
+r(63206),	-- Savior's Slippers
+r(63742),	-- Spidersilk Drape
+r(63924),	-- Emerald Bag
+r(64729),	-- Frostguard Drape
+r(64730),	-- Cloak of Crimson Snow
 3.3.5.12340
-67064
-67065
-67066
-67079
-67144
-67145
-67146
-67147
-70550
-70551
-70552
-70553
-75597
+r(67064),	-- Royal Moonshroud Robe
+r(67065),	-- Royal Moonshroud Bracers
+r(67066),	-- Merlin's Robe
+r(67079),	-- Bejeweled Wizard's Bracers
+r(67144),	-- Royal Moonshroud Robe
+r(67145),	-- Bejeweled Wizard's Bracers
+r(67146),	-- Merlin's Robe
+r(67147),	-- Royal Moonshroud Bracers
+r(70550),	-- Leggings of Woven Death
+r(70551),	-- Deathfrost Boots
+r(70552),	-- Lightweave Leggings
+r(70553),	-- Sandals of Consecration
+r(75597),	-- Frosty Flying Carpet
 4.0.1.12911
-74964
-75141
-75142
-75143
-75144
-75145
-75146
-75154
-75155
-75156
-75172
-75175
-75178
-75183
-75247
-75248
-75249
-75250
-75251
-75252
-75253
-75254
-75255
-75256
-75257
-75258
-75259
-75260
-75261
-75262
-75263
-75264
-75265
-75266
-75267
-75268
-75269
-75270
-75287
-75288
-75289
-75290
-75291
-75292
-75293
-75294
-75295
-75296
-75297
-75298
-75299
-75300
-75301
-75302
-75303
-75304
-75305
-75306
-75307
-75308
-75309
-75310
+r(74964),	-- Bolt of Embersilk Cloth
+r(75141),	-- Dream of Skywall
+r(75142),	-- Dream of Deepholm
+r(75143),	-- 
+r(75144),	-- Dream of Hyjal
+r(75145),	-- Dream of Ragnaros
+r(75146),	-- Dream of Azshara
+r(75154),	-- Master's Spellthread
+r(75155),	-- Sanctified Spellthread
+r(75156),	-- Tailoring
+r(75172),	-- 
+r(75175),	-- 
+r(75178),	-- 
+r(75183),	-- Unravel Embersilk Cloth
+r(75247),	-- Embersilk Net
+r(75248),	-- Deathsilk Belt
+r(75249),	-- Deathsilk Bracers
+r(75250),	-- Enchanted Spellthread
+r(75251),	-- Deathsilk Shoulders
+r(75252),	-- Deathsilk Boots
+r(75253),	-- Deathsilk Gloves
+r(75254),	-- Deathsilk Leggings
+r(75255),	-- Ghostly Spellthread
+r(75256),	-- Deathsilk Cowl
+r(75257),	-- Deathsilk Robe
+r(75258),	-- Spiritmend Belt
+r(75259),	-- Spiritmend Bracers
+r(75260),	-- Spiritmend Shoulders
+r(75261),	-- Spiritmend Boots
+r(75262),	-- Spiritmend Gloves
+r(75263),	-- Spiritmend Leggings
+r(75264),	-- Embersilk Bag
+r(75265),	-- Otherworldly Bag
+r(75266),	-- Spiritmend Cowl
+r(75267),	-- Spiritmend Robe
+r(75268),	-- Hyjal Expedition Bag
+r(75269),	-- Vicious Fireweave Belt
+r(75270),	-- Vicious Embersilk Bracers
+r(75287),	-- 
+r(75288),	-- Black Embersilk Gown
+r(75289),	-- High Society Top Hat
+r(75290),	-- Vicious Fireweave Bracers
+r(75291),	-- Vicious Embersilk Shoulders
+r(75292),	-- Vicious Fireweave Shoulders
+r(75293),	-- Vicious Embersilk Belt
+r(75294),	-- Vicious Fireweave Boots
+r(75295),	-- Vicious Embersilk Gloves
+r(75296),	-- Vicious Fireweave Gloves
+r(75297),	-- Vicious Embersilk Boots
+r(75298),	-- Belt of the Depths
+r(75299),	-- Dreamless Belt
+r(75300),	-- Breeches of Mended Nightmares
+r(75301),	-- Flame-Ascended Pantaloons
+r(75302),	-- Vicious Fireweave Pants
+r(75303),	-- Vicious Fireweave Robe
+r(75304),	-- Vicious Fireweave Cowl
+r(75305),	-- Vicious Embersilk Robe
+r(75306),	-- Vicious Embersilk Cowl
+r(75307),	-- Vicious Embersilk Pants
+r(75308),	-- Illusionary Bag
+r(75309),	-- Powerful Enchanted Spellthread
+r(75310),	-- Powerful Ghostly Spellthread
 4.3.4.15595
-94743
-99448
-99449
-99459
-99460
-99537
-100585
-101920
-101921
-101922
-101923
-102171
+r(94743),	-- Dream of Destruction
+r(99448),	-- Grips of Altered Reality
+r(99449),	-- Don Tayo's Inferno Mittens
+r(99459),	-- Endless Dream Walkers
+r(99460),	-- Boots of the Black Flame
+r(99537),	-- Vicious Embersilk Cape
+r(100585),	-- Luxurious Silk Gem Bag
+r(101920),	-- World Mender's Pants
+r(101921),	-- Lavaquake Legwraps
+r(101922),	-- Dreamwraps of the Light
+r(101923),	-- Bracers of Unconquered Power
+r(102171),	-- 
 5.0.3.15890
-104115
-110426
-110955
-125481
-125482
-125483
-125496
-125497
-125523
-125524
-125525
-125526
-125527
-125528
-125529
-125530
-125531
-125532
-125533
-125534
-125535
-125536
-125537
-125538
-125539
-125540
-125541
-125542
-125543
-125544
-125545
-125546
-125547
-125548
-125549
-125550
-125551
-125552
-125553
-125554
-125555
-125556
-125557
-125558
-125559
-125560
-125561
-130325
+r(104115),	-- Release Fire Spirit
+r(110426),	-- Tailoring
+r(110955),	-- 
+r(125481),	-- 
+r(125482),	-- 
+r(125483),	-- 
+r(125496),	-- Master's Spellthread
+r(125497),	-- Sanctified Spellthread
+r(125523),	-- Windwool Hood
+r(125524),	-- Windwool Shoulders
+r(125525),	-- Windwool Tunic
+r(125526),	-- Windwool Gloves
+r(125527),	-- Windwool Pants
+r(125528),	-- Windwool Bracers
+r(125529),	-- Windwool Boots
+r(125530),	-- Windwool Belt
+r(125531),	-- Contender's Silk Cowl
+r(125532),	-- Contender's Silk Amice
+r(125533),	-- Contender's Silk Raiment
+r(125534),	-- Contender's Silk Handwraps
+r(125535),	-- Contender's Silk Pants
+r(125536),	-- Contender's Silk Cuffs
+r(125537),	-- Contender's Silk Footwraps
+r(125538),	-- Contender's Silk Belt
+r(125539),	-- Contender's Satin Cowl
+r(125540),	-- Contender's Satin Amice
+r(125541),	-- Contender's Satin Raiment
+r(125542),	-- Contender's Satin Handwraps
+r(125543),	-- Contender's Satin Pants
+r(125544),	-- Contender's Satin Cuffs
+r(125545),	-- Contender's Satin Footwraps
+r(125546),	-- Contender's Satin Belt
+r(125547),	-- Spelltwister's Grand Robe
+r(125548),	-- Spelltwister's Gloves
+r(125549),	-- Robes of Creation
+r(125550),	-- Gloves of Creation
+r(125551),	-- Bolt of Windwool Cloth
+r(125552),	-- Pearlescent Spellthread
+r(125553),	-- Cerulean Spellthread
+r(125554),	-- Greater Pearlescent Spellthread
+r(125555),	-- Greater Cerulean Spellthread
+r(125556),	-- Royal Satchel
+r(125557),	-- Imperial Silk
+r(125558),	-- Robe of Eternal Rule
+r(125559),	-- Imperial Silk Gloves
+r(125560),	-- Legacy of the Emperor
+r(125561),	-- Touch of the Light
+r(130325),	-- Song of Harmony
 6.0.1.18179
-134585
-137907
-137908
-137909
-137910
-137911
-137912
-137913
-137914
-137915
-137916
-137917
-137918
-137919
-137920
-137921
-137922
-137923
-137924
-137925
-137926
-137927
-137928
-137929
-137930
-137931
-137932
-137933
-137934
-137935
-137936
-137937
-137938
-137939
-137940
-137941
-137942
-138597
-138598
-138599
-138600
-142951
-142955
-142960
-142964
-143011
-143053
-143054
-143055
-143056
-143057
-143058
-143059
-143060
-143061
-143062
-143063
-143064
-143065
-143066
-143067
-143068
-143069
-143070
-143071
-143072
-143073
-143074
-143075
-143076
-143077
-143078
-143079
-143080
-143081
-143082
-143083
-143084
-143085
-143086
-143087
-143088
-146925
-158758
+r(134585),	-- Bipsi's Gloves
+r(137907),	-- Crafted Dreadful Gladiator's Cape of Cruelty
+r(137908),	-- Crafted Dreadful Gladiator's Cape of Prowess
+r(137909),	-- Crafted Dreadful Gladiator's Cord of Cruelty
+r(137910),	-- Crafted Dreadful Gladiator's Cord of Accuracy
+r(137911),	-- Crafted Dreadful Gladiator's Cord of Meditation
+r(137912),	-- Crafted Dreadful Gladiator's Treads of Cruelty
+r(137913),	-- Crafted Dreadful Gladiator's Treads of Alacrity
+r(137914),	-- Crafted Dreadful Gladiator's Treads of Meditation
+r(137915),	-- Crafted Dreadful Gladiator's Cuffs of Accuracy
+r(137916),	-- Crafted Dreadful Gladiator's Cuffs of Prowess
+r(137917),	-- Crafted Dreadful Gladiator's Cuffs of Meditation
+r(137918),	-- Crafted Dreadful Gladiator's Drape of Cruelty
+r(137919),	-- Crafted Dreadful Gladiator's Drape of Prowess
+r(137920),	-- Crafted Dreadful Gladiator's Drape of Meditation
+r(137921),	-- Crafted Dreadful Gladiator's Silk Handguards
+r(137922),	-- Crafted Dreadful Gladiator's Silk Cowl
+r(137923),	-- Crafted Dreadful Gladiator's Silk Trousers
+r(137924),	-- Crafted Dreadful Gladiator's Silk Robe
+r(137925),	-- Crafted Dreadful Gladiator's Silk Amice
+r(137926),	-- Crafted Dreadful Gladiator's Mooncloth Gloves
+r(137927),	-- Crafted Dreadful Gladiator's Mooncloth Helm
+r(137928),	-- Crafted Dreadful Gladiator's Mooncloth Leggings
+r(137929),	-- Crafted Dreadful Gladiator's Mooncloth Robe
+r(137930),	-- Crafted Dreadful Gladiator's Mooncloth Mantle
+r(137931),	-- Crafted Dreadful Gladiator's Satin Gloves
+r(137932),	-- Crafted Dreadful Gladiator's Satin Hood
+r(137933),	-- Crafted Dreadful Gladiator's Satin Leggings
+r(137934),	-- Crafted Dreadful Gladiator's Satin Robe
+r(137935),	-- Crafted Dreadful Gladiator's Satin Mantle
+r(137936),	-- Crafted Dreadful Gladiator's Cloak of Alacrity
+r(137937),	-- Crafted Dreadful Gladiator's Cloak of Prowess
+r(137938),	-- Crafted Dreadful Gladiator's Felweave Handguards
+r(137939),	-- Crafted Dreadful Gladiator's Felweave Cowl
+r(137940),	-- Crafted Dreadful Gladiator's Felweave Trousers
+r(137941),	-- Crafted Dreadful Gladiator's Felweave Raiment
+r(137942),	-- Crafted Dreadful Gladiator's Felweave Amice
+r(138597),	-- Falling Blossom Treads
+r(138598),	-- Falling Blossom Cowl
+r(138599),	-- Falling Blossom Sandals
+r(138600),	-- Falling Blossom Hood
+r(142951),	-- White Cloud Leggings
+r(142955),	-- Leggings of the Night Sky
+r(142960),	-- White Cloud Belt
+r(142964),	-- Belt of the Night Sky
+r(143011),	-- Celestial Cloth
+r(143053),	-- Crafted Malevolent Gladiator's Cape of Cruelty
+r(143054),	-- Crafted Malevolent Gladiator's Cape of Prowess
+r(143055),	-- Crafted Malevolent Gladiator's Cord of Cruelty
+r(143056),	-- Crafted Malevolent Gladiator's Cord of Accuracy
+r(143057),	-- Crafted Malevolent Gladiator's Cord of Meditation
+r(143058),	-- Crafted Malevolent Gladiator's Treads of Cruelty
+r(143059),	-- Crafted Malevolent Gladiator's Treads of Alacrity
+r(143060),	-- Crafted Malevolent Gladiator's Treads of Meditation
+r(143061),	-- Crafted Malevolent Gladiator's Cuffs of Accuracy
+r(143062),	-- Crafted Malevolent Gladiator's Cuffs of Prowess
+r(143063),	-- Crafted Malevolent Gladiator's Cuffs of Meditation
+r(143064),	-- Crafted Malevolent Gladiator's Drape of Cruelty
+r(143065),	-- Crafted Malevolent Gladiator's Drape of Prowess
+r(143066),	-- Crafted Malevolent Gladiator's Drape of Meditation
+r(143067),	-- Crafted Malevolent Gladiator's Silk Handguards
+r(143068),	-- Crafted Malevolent Gladiator's Silk Cowl
+r(143069),	-- Crafted Malevolent Gladiator's Silk Trousers
+r(143070),	-- Crafted Malevolent Gladiator's Silk Robe
+r(143071),	-- Crafted Malevolent Gladiator's Silk Amice
+r(143072),	-- Crafted Malevolent Gladiator's Mooncloth Gloves
+r(143073),	-- Crafted Malevolent Gladiator's Mooncloth Helm
+r(143074),	-- Crafted Malevolent Gladiator's Mooncloth Leggings
+r(143075),	-- Crafted Malevolent Gladiator's Mooncloth Robe
+r(143076),	-- Crafted Malevolent Gladiator's Mooncloth Mantle
+r(143077),	-- Crafted Malevolent Gladiator's Satin Gloves
+r(143078),	-- Crafted Malevolent Gladiator's Satin Hood
+r(143079),	-- Crafted Malevolent Gladiator's Satin Leggings
+r(143080),	-- Crafted Malevolent Gladiator's Satin Robe
+r(143081),	-- Crafted Malevolent Gladiator's Satin Mantle
+r(143082),	-- Crafted Malevolent Gladiator's Cloak of Alacrity
+r(143083),	-- Crafted Malevolent Gladiator's Cloak of Prowess
+r(143084),	-- Crafted Malevolent Gladiator's Felweave Handguards
+r(143085),	-- Crafted Malevolent Gladiator's Felweave Cowl
+r(143086),	-- Crafted Malevolent Gladiator's Felweave Trousers
+r(143087),	-- Crafted Malevolent Gladiator's Felweave Raiment
+r(143088),	-- Crafted Malevolent Gladiator's Felweave Amice
+r(146925),	-- Accelerated Celestial Cloth
+r(158758),	-- Tailoring
 7.3.0.24473
-168835
-168836
-168837
-168838
-168839
-168840
-168841
-168842
-168843
-168844
-168845
-168846
-168847
-168848
-168849
-168850
-168851
-168852
-168853
-168854
-168855
-169669
-173415
-176058
-176313
-176314
-176315
-176316
-182123
-185918
-185919
-185920
-185921
-185922
-185923
-185924
-185925
-185926
-185927
-185928
-185929
-185930
-185931
-185932
-185933
-185934
-185935
-185936
-185937
-185938
-185939
-185940
-185941
-185942
-185943
-185944
-185945
-185946
-185947
-185948
-185949
-185950
-185951
-185952
-185953
-185954
-185955
-185956
-185957
-185958
-185959
-185960
-185961
-185962
-186091
-186094
-186097
-186100
-186106
-186107
-186108
-186109
-186110
-186111
-186112
-186113
-186114
-186115
-186116
-186117
-186388
-186738
-186763
-186764
-186799
-186801
-186803
-187058
-187059
-187060
-187064
-187065
-187066
-187492
-187516
-195126
-208350
-208351
-208352
-208353
-213035
-213036
-213037
-220511
-229041
-229043
-229045
-239412
-247807
-247808
-247809
+r(168835),	-- Hexweave Cloth
+r(168836),	-- Hexweave Embroidery
+r(168837),	-- Hexweave Mantle
+r(168838),	-- Hexweave Cowl
+r(168839),	-- Hexweave Leggings
+r(168840),	-- Hexweave Gloves
+r(168841),	-- Hexweave Robe
+r(168842),	-- Hexweave Bracers
+r(168843),	-- Hexweave Slippers
+r(168844),	-- Hexweave Belt
+r(168845),	-- Powerful Hexweave Cloak
+r(168846),	-- Nimble Hexweave Cloak
+r(168847),	-- Brilliant Hexweave Cloak
+r(168848),	-- Hexweave Bag
+r(168849),	-- Elekk Plushie
+r(168850),	-- Creeping Carpet
+r(168851),	-- Miniature Flying Carpet
+r(168852),	-- Sumptuous Cowl
+r(168853),	-- Sumptuous Robes
+r(168854),	-- Sumptuous Leggings
+r(168855),	-- Hexweave Essence
+r(169669),	-- Hexweave Cloth
+r(173415),	-- Murloc Chew Toy
+r(176058),	-- Secrets of Draenor Tailoring
+r(176313),	-- Inspiring Battle Standard
+r(176314),	-- Fearsome Battle Standard
+r(176315),	-- Inspiring Battle Standard
+r(176316),	-- Fearsome Battle Standard
+r(182123),	-- Primal Weaving
+r(185918),	-- Silkweave Bracers
+r(185919),	-- Silkweave Cinch
+r(185920),	-- Silkweave Epaulets
+r(185921),	-- Silkweave Pantaloons
+r(185922),	-- Silkweave Hood
+r(185923),	-- Silkweave Gloves
+r(185924),	-- Silkweave Slippers
+r(185925),	-- Silkweave Robe
+r(185926),	-- Imbued Silkweave Bracers
+r(185927),	-- Imbued Silkweave Cinch
+r(185928),	-- Imbued Silkweave Epaulets
+r(185929),	-- Imbued Silkweave Pantaloons
+r(185930),	-- Imbued Silkweave Hood
+r(185931),	-- Imbued Silkweave Gloves
+r(185932),	-- Imbued Silkweave Slippers
+r(185933),	-- Imbued Silkweave Robe
+r(185934),	-- Silkweave Bracers
+r(185935),	-- Silkweave Cinch
+r(185936),	-- Silkweave Epaulets
+r(185937),	-- Silkweave Pantaloons
+r(185938),	-- Silkweave Hood
+r(185939),	-- Silkweave Gloves
+r(185940),	-- Silkweave Slippers
+r(185941),	-- Silkweave Robe
+r(185942),	-- Silkweave Bracers
+r(185943),	-- Silkweave Cinch
+r(185944),	-- Silkweave Epaulets
+r(185945),	-- Silkweave Robe
+r(185946),	-- Imbued Silkweave Bracers
+r(185947),	-- Imbued Silkweave Cinch
+r(185948),	-- Imbued Silkweave Epaulets
+r(185949),	-- Imbued Silkweave Pantaloons
+r(185950),	-- Imbued Silkweave Hood
+r(185951),	-- Imbued Silkweave Gloves
+r(185952),	-- Imbued Silkweave Slippers
+r(185953),	-- Imbued Silkweave Robe
+r(185954),	-- Imbued Silkweave Bracers
+r(185955),	-- Imbued Silkweave Cinch
+r(185956),	-- Imbued Silkweave Epaulets
+r(185957),	-- Imbued Silkweave Pantaloons
+r(185958),	-- Imbued Silkweave Hood
+r(185959),	-- Imbued Silkweave Gloves
+r(185960),	-- Imbued Silkweave Slippers
+r(185961),	-- Imbued Silkweave Robe
+r(185962),	-- Imbued Silkweave
+r(186091),	-- Silkweave Shade
+r(186094),	-- Silkweave Flourish
+r(186097),	-- Silkweave Cover
+r(186100),	-- Silkweave Drape
+r(186106),	-- Imbued Silkweave Shade
+r(186107),	-- Imbued Silkweave Shade
+r(186108),	-- Imbued Silkweave Shade
+r(186109),	-- Imbued Silkweave Flourish
+r(186110),	-- Imbued Silkweave Flourish
+r(186111),	-- Imbued Silkweave Flourish
+r(186112),	-- Imbued Silkweave Cover
+r(186113),	-- Imbued Silkweave Cover
+r(186114),	-- Imbued Silkweave Cover
+r(186115),	-- Imbued Silkweave Drape
+r(186116),	-- Imbued Silkweave Drape
+r(186117),	-- Imbued Silkweave Drape
+r(186388),	-- Silkweave Satchel
+r(186738),	-- Handcrafted Silkweave Robe
+r(186763),	-- Rune-Threaded Silkweave Robe
+r(186764),	-- Rune-Threaded Silkweave Bracers
+r(186799),	-- Basic Silkweave Robe
+r(186801),	-- Embroidered Silkweave Robe
+r(186803),	-- Handcrafted Silkweave Bag
+r(187058),	-- Silkweave Hood Lining
+r(187059),	-- Silkweave Hood: Outer Layer
+r(187060),	-- Handcrafted Silkweave Hood
+r(187064),	-- Silkweave Bracer Lining
+r(187065),	-- Silkweave Bracer: Outer Layer
+r(187066),	-- Masterwork Silkweave Bracers
+r(187492),	-- Mighty Hexweave Essence
+r(187516),	-- Savage Hexweave Essence
+r(195126),	-- Tailoring
+r(208350),	-- Silkweave Gloves
+r(208351),	-- Silkweave Hood
+r(208352),	-- Silkweave Slippers
+r(208353),	-- Silkweave Pantaloons
+r(213035),	-- Clothes Chest: Dalaran Citizens
+r(213036),	-- Clothes Chest: Karazhan Opera House
+r(213037),	-- Clothes Chest: Molten Core
+r(220511),	-- Bloodtotem Saddle Blanket
+r(229041),	-- Imbued Silkweave Bag
+r(229043),	-- Imbued Silkweave Bag
+r(229045),	-- Imbued Silkweave Bag
+r(239412),	-- Celumbra, the Night's Dichotomy
+r(247807),	-- Lightweave Breeches
+r(247808),	-- Lightweave Breeches
+r(247809),	-- Lightweave Breeches
 8.0.1.25902
-257095
-257096
-257097
-257099
-257101
-257102
-257103
-257104
-257105
-257106
-257107
-257108
-257109
-257110
-257111
-257112
-257113
-257114
-257115
-257116
-257118
-257120
-257121
-257122
-257123
-257124
-257125
-257126
-257127
-257128
-257129
-257130
-257131
-257132
-257133
-257134
-257135
-257136
-257137
-257138
-257139
-257141
-264616
-264618
-264620
-264622
-264624
-264626
-264628
-264630
+r(257095),	-- Tidespray Linen Sandals \\ Tidespray Linen Boots \\ Sun-Bleached Linen Boots
+r(257096),	-- Tidespray Linen Mittens \\ Sun-Bleached Linen Mittens
+r(257097),	-- Tidespray Linen Hood \\ Sun-Bleached Linen Hood
+r(257099),	-- Tidespray Linen Pants \\ Sun-Bleached Linen Pants
+r(257101),	-- Tidespray Linen Spaulders \\ Sun-Bleached Linen Spaulders
+r(257102),	-- Tidespray Linen Belt \\ Sun-Bleached Linen Belt
+r(257103),	-- Tidespray Linen Bracers \\ Sun-Bleached Linen Bracers
+r(257104),	-- Tidespray Linen Robe \\ Sun-Bleached Linen Robe
+r(257105),	-- Tidespray Linen Cloak of Resilience \\ Sun-Bleached Linen Cloak of Resilience
+r(257106),	-- Tidespray Linen Cloak of the Feather \\ Sun-Bleached Linen Cloak of the Feather
+r(257107),	-- Tidespray Linen Cloak \\ Tidespray Linen Cloak of Discretion \\ Sun-Bleached Linen Cloak of Discretion
+r(257108),	-- Embroidered Deep Sea Cloak of Resilience
+r(257109),	-- Embroidered Deep Sea Cloak of Resilience
+r(257110),	-- Embroidered Deep Sea Cloak of Resilience
+r(257111),	-- Embroidered Deep Sea Cloak of the Feather
+r(257112),	-- Embroidered Deep Sea Cloak of the Feather
+r(257113),	-- Embroidered Deep Sea Cloak of the Feather
+r(257114),	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion
+r(257115),	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion
+r(257116),	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion
+r(257118),	-- Embroidered Deep Sea Gloves
+r(257120),	-- Imbued Deep Sea Gloves \\ Embroidered Deep Sea Gloves
+r(257121),	-- Emblazoned Deep Sea Gloves \\ Embroidered Deep Sea Gloves
+r(257122),	-- Embroidered Deep Sea Breeches
+r(257123),	-- Imbued Deep Sea Breeches \\ Embroidered Deep Sea Breeches
+r(257124),	-- Emblazoned Deep Sea Breeches \\ Embroidered Deep Sea Breeches
+r(257125),	-- Deep Sea Bag
+r(257126),	-- Deep Sea Bag
+r(257127),	-- Deep Sea Bag
+r(257128),	-- Embroidered Deep Sea Bag
+r(257129),	-- Embroidered Deep Sea Bag
+r(257130),	-- Embroidered Deep Sea Bag
+r(257131),	-- Battle Flag: Spirit of Freedom
+r(257132),	-- Battle Flag: Spirit of Freedom
+r(257133),	-- Battle Flag: Spirit of Freedom
+r(257134),	-- Battle Flag: Phalanx Defense
+r(257135),	-- Battle Flag: Phalanx Defense
+r(257136),	-- Battle Flag: Phalanx Defense
+r(257137),	-- Battle Flag: Rallying Swiftness
+r(257138),	-- Battle Flag: Rallying Swiftness
+r(257139),	-- Battle Flag: Rallying Swiftness
+r(257141),	-- Pet - Hot Air Balloon (DNT)
+r(264616),	-- Tailoring
+r(264618),	-- Outland Tailoring
+r(264620),	-- Northrend Tailoring
+r(264622),	-- Cataclysm Tailoring
+r(264624),	-- Pandaria Tailoring
+r(264626),	-- Draenor Tailoring
+r(264628),	-- Legion Tailoring
+r(264630),	-- Kul Tiran Tailoring
 8.0.1.25976
-265815
+r(265815),	-- Zandalari Tailoring
 8.0.1.26032
-3275
-3276
-3277
-3278
-7928
-7929
-10840
-10841
-18629
-18630
-27032
-27033
-45545
-45546
-74556
-74557
-74558
-88893
-102697
-102698
-172539
-202853
-202854
-230047
-267201
-267202
+r(3275),	-- Linen Bandage
+r(3276),	-- Heavy Linen Bandage
+r(3277),	-- Wool Bandage
+r(3278),	-- Heavy Wool Bandage
+r(7928),	-- Silk Bandage
+r(7929),	-- Heavy Silk Bandage
+r(10840),	-- Mageweave Bandage
+r(10841),	-- Heavy Mageweave Bandage
+r(18629),	-- Runecloth Bandage
+r(18630),	-- Heavy Runecloth Bandage
+r(27032),	-- Netherweave Bandage
+r(27033),	-- Heavy Netherweave Bandage
+r(45545),	-- Frostweave Bandage
+r(45546),	-- Heavy Frostweave Bandage
+r(74556),	-- Embersilk Bandage
+r(74557),	-- Heavy Embersilk Bandage
+r(74558),	-- Field Bandage: Dense Embersilk
+r(88893),	-- Dense Embersilk Bandage
+r(102697),	-- Windwool Bandage
+r(102698),	-- Heavy Windwool Bandage
+r(172539),	-- Antiseptic Bandage
+r(202853),	-- Silkweave Bandage
+r(202854),	-- Silkweave Splint
+r(230047),	-- Feathered Luffa
+r(267201),	-- Tidespray Linen Bandage \\ Sun-Bleached Linen Bandage
+r(267202),	-- Deep Sea Bandage
 8.0.1.26175
-268982
-268983
-269596
-269597
-269598
-269599
-269600
-269601
-269602
-269603
-269604
-269605
-269606
-269607
-269608
-269609
-269610
-269611
-269612
-269613
+r(268982),	-- Tidespray Linen Net \\ Sun-Bleached Linen Net
+r(268983),	-- Hooked Deep Sea Net
+r(269596),	-- Honorable Combatant's Satin Cloak
+r(269597),	-- Honorable Combatant's Satin Cloak
+r(269598),	-- Honorable Combatant's Satin Cloak
+r(269599),	-- Honorable Combatant's Satin Boots
+r(269600),	-- Honorable Combatant's Satin Boots
+r(269601),	-- Honorable Combatant's Satin Boots
+r(269602),	-- Honorable Combatant's Satin Mittens
+r(269603),	-- Honorable Combatant's Satin Mittens
+r(269604),	-- Honorable Combatant's Satin Mittens
+r(269605),	-- Honorable Combatant's Satin Pants
+r(269606),	-- Honorable Combatant's Satin Pants
+r(269607),	-- Honorable Combatant's Satin Pants
+r(269608),	-- Honorable Combatant's Satin Belt
+r(269609),	-- Honorable Combatant's Satin Belt
+r(269610),	-- Honorable Combatant's Satin Belt
+r(269611),	-- Honorable Combatant's Satin Bracers
+r(269612),	-- Honorable Combatant's Satin Bracers
+r(269613),	-- Honorable Combatant's Satin Bracers
 8.0.1.26367
-272440
+r(272440),	-- Embroidered Deep Sea Satin
 8.0.1.26624
-278414
-279182
-279183
-279184
+r(278414),	-- Rough-hooked Tidespray Linen
+r(279182),	-- Resilient Spellthread
+r(279183),	-- Discreet Spellthread
+r(279184),	-- Feathery Spellthread
 8.1.0.27826
-282164
-282165
-282166
-282168
-282169
-282170
-282175
-282176
-282177
-282191
-282192
-282193
-282194
-282195
-282196
-282204
-282275
-282276
+r(282164),	-- Sinister Combatant's Satin Bracers
+r(282165),	-- Sinister Combatant's Satin Bracers
+r(282166),	-- Sinister Combatant's Satin Bracers
+r(282168),	-- Sinister Combatant's Satin Belt
+r(282169),	-- Sinister Combatant's Satin Belt
+r(282170),	-- Sinister Combatant's Satin Belt
+r(282175),	-- Sinister Combatant's Satin Pants
+r(282176),	-- Sinister Combatant's Satin Pants
+r(282177),	-- Sinister Combatant's Satin Pants
+r(282191),	-- Sinister Combatant's Satin Mittens
+r(282192),	-- Sinister Combatant's Satin Mittens
+r(282193),	-- Sinister Combatant's Satin Mittens
+r(282194),	-- Sinister Combatant's Satin Boots
+r(282195),	-- Sinister Combatant's Satin Boots
+r(282196),	-- Sinister Combatant's Satin Boots
+r(282204),	-- Sinister Combatant's Satin Cloak
+r(282275),	-- Sinister Combatant's Satin Cloak
+r(282276),	-- Sinister Combatant's Satin Cloak
 8.1.0.27985
-285077
-285078
-285085
-285086
-285093
-285094
-286654
+r(285077),	-- Enhanced Deep Sea Breeches
+r(285078),	-- Enhanced Deep Sea Gloves
+r(285085),	-- Fortified Deep Sea Breeches
+r(285086),	-- Fortified Deep Sea Gloves
+r(285093),	-- Tempered Deep Sea Breeches
+r(285094),	-- Tempered Deep Sea Gloves
+r(286654),	-- Sanguinated Alteration \\ Breath to Sanguicell
 8.1.0.28048
-287274
+r(287274),	-- Aqueous Alteration \\ Tidalcore to Hydrocore
 8.1.5.29141
-292946
+r(292946),	-- Synchronous Thread
 8.2.0.30080
-294829
-294830
-294831
-294832
-294833
-294834
-294835
-294836
-294837
-294838
-294839
-294840
-294841
-294842
-294843
-294844
-294845
-294846
-299031
-299032
-299033
-299034
-299035
-299036
+r(294829),	-- Notorious Combatant's Satin Cloak
+r(294830),	-- Notorious Combatant's Satin Cloak
+r(294831),	-- Notorious Combatant's Satin Cloak
+r(294832),	-- Notorious Combatant's Satin Boots
+r(294833),	-- Notorious Combatant's Satin Boots
+r(294834),	-- Notorious Combatant's Satin Boots
+r(294835),	-- Notorious Combatant's Satin Mittens
+r(294836),	-- Notorious Combatant's Satin Mittens
+r(294837),	-- Notorious Combatant's Satin Mittens
+r(294838),	-- Notorious Combatant's Satin Pants
+r(294839),	-- Notorious Combatant's Satin Pants
+r(294840),	-- Notorious Combatant's Satin Pants
+r(294841),	-- Notorious Combatant's Satin Belt
+r(294842),	-- Notorious Combatant's Satin Belt
+r(294843),	-- Notorious Combatant's Satin Belt
+r(294844),	-- Notorious Combatant's Satin Bracers
+r(294845),	-- Notorious Combatant's Satin Bracers
+r(294846),	-- Notorious Combatant's Satin Bracers
+r(299031),	-- Gilded Seaweave Gloves
+r(299032),	-- Reinforced Seaweave Gloves
+r(299033),	-- Banded Seaweave Gloves
+r(299034),	-- Gilded Seaweave Breeches
+r(299035),	-- Reinforced Seaweave Breeches
+r(299036),	-- Banded Seaweave Breeches
 8.2.0.30168
-301403
-301409
+r(301403),	-- Seabreeze Saddle Blanket
+r(301409),	-- Saddlechute
 8.3.0.32044
-304559
-304560
-304561
-304562
-304563
-304564
-304565
-304566
-304567
-304568
-304569
-304570
-304571
-304572
-304573
-304574
-304575
-304576
-304577
-304578
-304579
-304580
-304581
-304582
-307175
+r(304559),	-- Unsettling Seaweave Gloves
+r(304560),	-- Maddening Seaweave Gloves
+r(304561),	-- Eldritch Seaweave Gloves
+r(304562),	-- Unsettling Seaweave Breeches
+r(304563),	-- Maddening Seaweave Breeches
+r(304564),	-- Eldritch Seaweave Breeches
+r(304565),	-- Uncanny Combatant's Satin Cloak
+r(304566),	-- Uncanny Combatant's Satin Cloak
+r(304567),	-- Uncanny Combatant's Satin Cloak
+r(304568),	-- Uncanny Combatant's Satin Boots
+r(304569),	-- Uncanny Combatant's Satin Boots
+r(304570),	-- Uncanny Combatant's Satin Boots
+r(304571),	-- Uncanny Combatant's Satin Mittens
+r(304572),	-- Uncanny Combatant's Satin Mittens
+r(304573),	-- Uncanny Combatant's Satin Mittens
+r(304574),	-- Uncanny Combatant's Satin Pants
+r(304575),	-- Uncanny Combatant's Satin Pants
+r(304576),	-- Uncanny Combatant's Satin Pants
+r(304577),	-- Uncanny Combatant's Satin Belt
+r(304578),	-- Uncanny Combatant's Satin Belt
+r(304579),	-- Uncanny Combatant's Satin Belt
+r(304580),	-- Uncanny Combatant's Satin Bracers
+r(304581),	-- Uncanny Combatant's Satin Bracers
+r(304582),	-- Uncanny Combatant's Satin Bracers
+r(307175),	-- Void Focus
 9.0.1.33978
-310869
-310870
-310871
-310872
-310873
-310874
-310875
-310876
-310877
-310878
-310879
-310880
-310881
-310882
-310883
-310884
-310885
-310886
-310887
-310888
-310889
-310890
-310891
-310892
-310893
-310894
-310895
-310896
-310897
-310898
-310899
-310900
-310901
-310902
-310903
-310904
-310905
-310906
-310907
-310908
-310909
-310910
-310911
-310912
-310913
-310914
-310915
-310916
-310917
-310918
-310919
-310920
-310921
-310922
-310923
-310924
-310933
-310934
-310935
-310936
-310937
-310938
-310939
-310940
-310949
+r(310869),	-- Shrouded Cloth Sandals
+r(310870),	-- Shrouded Cloth Robe
+r(310871),	-- Shrouded Cloth Cape
+r(310872),	-- Shrouded Cloth Mittens
+r(310873),	-- Shrouded Cloth Hood
+r(310874),	-- Shrouded Cloth Pants
+r(310875),	-- Shrouded Cloth Spaulders
+r(310876),	-- Shrouded Cloth Belt
+r(310877),	-- Shrouded Cloth Bracers
+r(310878),	-- Grim-Veiled Sandals
+r(310879),	-- Grim-Veiled Robe
+r(310880),	-- Grim-Veiled Cape
+r(310881),	-- Grim-Veiled Mittens
+r(310882),	-- Grim-Veiled Hood
+r(310883),	-- Grim-Veiled Pants
+r(310884),	-- Grim-Veiled Spaulders
+r(310885),	-- Grim-Veiled Belt
+r(310886),	-- Grim-Veiled Bracers
+r(310887),	-- Winterweave Footwraps
+r(310888),	-- Winterweave Tunic
+r(310889),	-- Winterweave Cloak
+r(310890),	-- Winterweave Handwraps
+r(310891),	-- Winterweave Cowl
+r(310892),	-- Winterweave Trousers
+r(310893),	-- Winterweave Mantle
+r(310894),	-- Winterweave Cord
+r(310895),	-- Winterweave Cuffs
+r(310896),	-- Shadowlace Footwraps \\ Bloodlace Footwraps \\ Syn-Couture Footwraps
+r(310897),	-- Shadowlace Tunic \\ Bloodlace Tunic \\ Syn-Couture Tunic
+r(310898),	-- Shadowlace Cloak \\ Bloodlace Cloak \\ Syn-Couture Cloak
+r(310899),	-- Shadowlace Handwraps \\ Bloodlace Handwraps \\ Syn-Couture Handwraps
+r(310900),	-- Shadowlace Cowl \\ Bloodlace Cowl \\ Syn-Couture Cowl
+r(310901),	-- Shadowlace Trousers \\ Bloodlace Trousers \\ Syn-Couture Trousers
+r(310902),	-- Shadowlace Mantle \\ Bloodlace Mantle \\ Syn-Couture Mantle
+r(310903),	-- Shadowlace Cord \\ Bloodlace Cord \\ Syn-Couture Cord
+r(310904),	-- Shadowlace Cuffs \\ Bloodlace Cuffs \\ Syn-Couture Cuffs
+r(310905),	-- Stitchsilk Footwraps
+r(310906),	-- Stitchsilk Tunic
+r(310907),	-- Stitchsilk Cloak
+r(310908),	-- Stitchsilk Handwraps
+r(310909),	-- Stitchsilk Cowl
+r(310910),	-- Stitchsilk Trousers
+r(310911),	-- Stitchsilk Mantle
+r(310912),	-- Stitchsilk Cord
+r(310913),	-- Stitchsilk Cuffs
+r(310914),	-- Pureweave Footwraps
+r(310915),	-- Pureweave Tunic
+r(310916),	-- Pureweave Cloak
+r(310917),	-- Pureweave Handwraps
+r(310918),	-- Pureweave Cowl
+r(310919),	-- Pureweave Trousers
+r(310920),	-- Pureweave Mantle
+r(310921),	-- Pureweave Cord
+r(310922),	-- Pureweave Cuffs
+r(310923),	-- Heavy Shrouded Cloth Bandage
+r(310924),	-- Shrouded Cloth Bandage
+r(310933),	-- Craftsman's Pouch \\ Craftman's Pouch \\ Modified Crafting Reagent 01
+r(310934),	-- Modified Crafting Reagent 02
+r(310935),	-- Modified Crafting Reagent 03
+r(310936),	-- Modified Crafting Reagent 04
+r(310937),	-- Modified Crafting Reagent 05
+r(310938),	-- Modified Crafting Reagent 06
+r(310939),	-- Modified Crafting Reagent 07
+r(310940),	-- Modified Crafting Reagent 08
+r(310949),	-- Shadowlands Tailoring
 9.0.1.34199
-330222
-330223
-330224
-330225
-330226
-330227
-330228
-330229
-330230
-330231
-330232
-330233
-330234
-330235
-330236
-330237
-330238
-330239
-330240
-330241
-330242
-330243
-330244
-330245
-330246
-330247
-330248
-330249
-330250
-330251
-330252
-330253
-330254
-330255
-330256
-330257
-330258
-330259
-330260
-330261
+r(330222),	-- Relic of the Past I
+r(330223),	-- Relic of the Past II
+r(330224),	-- Relic of the Past III
+r(330225),	-- Relic of the Past IV
+r(330226),	-- Relic of the Past V
+r(330227),	-- Relic of the Past I
+r(330228),	-- Relic of the Past II
+r(330229),	-- Relic of the Past III
+r(330230),	-- Relic of the Past IV
+r(330231),	-- Relic of the Past V
+r(330232),	-- Relic of the Past I
+r(330233),	-- Relic of the Past II
+r(330234),	-- Relic of the Past III
+r(330235),	-- Relic of the Past IV
+r(330236),	-- Relic of the Past V
+r(330237),	-- Relic of the Past I
+r(330238),	-- Relic of the Past II
+r(330239),	-- Relic of the Past III
+r(330240),	-- Relic of the Past IV
+r(330241),	-- Relic of the Past V
+r(330242),	-- Relic of the Past I
+r(330243),	-- Relic of the Past II
+r(330244),	-- Relic of the Past III
+r(330245),	-- Relic of the Past IV
+r(330246),	-- Relic of the Past V
+r(330247),	-- Relic of the Past I
+r(330248),	-- Relic of the Past II
+r(330249),	-- Relic of the Past III
+r(330250),	-- Relic of the Past IV
+r(330251),	-- Relic of the Past V
+r(330252),	-- Relic of the Past I
+r(330253),	-- Relic of the Past II
+r(330254),	-- Relic of the Past III
+r(330255),	-- Relic of the Past IV
+r(330256),	-- Relic of the Past V
+r(330257),	-- Relic of the Past I
+r(330258),	-- Relic of the Past II
+r(330259),	-- Relic of the Past III
+r(330260),	-- Relic of the Past IV
+r(330261),	-- Relic of the Past V
 9.0.1.34490
-332030
-332031
-332032
-332033
-332034
-332035
-332036
-332037
-332038
-332065
-332066
-332067
-332068
-332069
-332070
-332071
-332072
-332073
+r(332030),	-- Grim-Veiled Sandals
+r(332031),	-- Grim-Veiled Robe
+r(332032),	-- Grim-Veiled Cape
+r(332033),	-- Grim-Veiled Mittens
+r(332034),	-- Grim-Veiled Hood
+r(332035),	-- Grim-Veiled Pants
+r(332036),	-- Grim-Veiled Spaulders
+r(332037),	-- Grim-Veiled Belt
+r(332038),	-- Grim-Veiled Bracers
+r(332065),	-- Grim-Veiled Sandals
+r(332066),	-- Grim-Veiled Robe
+r(332067),	-- Grim-Veiled Cape
+r(332068),	-- Grim-Veiled Mittens
+r(332069),	-- Grim-Veiled Hood
+r(332070),	-- Grim-Veiled Pants
+r(332071),	-- Grim-Veiled Spaulders
+r(332072),	-- Grim-Veiled Belt
+r(332073),	-- Grim-Veiled Bracers
 9.0.1.34714
-334499
+r(334499),	-- Pink Party Hat
 9.0.1.35167
-338267
-338269
-338270
-338271
-338272
-338273
-338275
-338276
-338277
-338278
-338279
-338280
+r(338267),	-- Cloak of Camouflage \\ Ardenweald Tailoring Item
+r(338269),	-- Bolt of Ardensilk Cloth \\ Almost Thing
+r(338270),	-- Ardensilk Cloth \\ Kinda Thing
+r(338271),	-- Woven Gossamer Tunic
+r(338272),	-- Bolt of Woven Gossamer
+r(338273),	-- Gossamer Cloth
+r(338275),	-- Haunting Hood \\ Maldraxxus Tailoring Item
+r(338276),	-- Bolt of Bleakcloth \\ Almost Thing
+r(338277),	-- Bleakcloth \\ Kinda Thing
+r(338278),	-- Looming Tapestry \\ Revendreth Tailoring Item
+r(338279),	-- Bolt of Prideweave \\ Almost Thing
+r(338280),	-- Prideweave Cloth \\ Kinda Thing
 9.0.1.35256
-338995
-338996
-338997
-338998
-339000
-339001
-339002
-339003
-339004
+r(338995),	-- Grim-Veiled Cape
+r(338996),	-- Grim-Veiled Robe
+r(338997),	-- Grim-Veiled Sandals
+r(338998),	-- Grim-Veiled Mittens
+r(339000),	-- Grim-Veiled Hood
+r(339001),	-- Grim-Veiled Pants
+r(339002),	-- Grim-Veiled Spaulders
+r(339003),	-- Grim-Veiled Belt
+r(339004),	-- Grim-Veiled Bracers
 9.0.1.35598
-343200
-343201
-343202
-343204
+r(343200),	-- Crafter's Mark of the Chained Isle \\ Prestigious Crafter's Mark \\ Crafter's Mark IV
+r(343201),	-- Crafter's Mark III
+r(343202),	-- Crafter's Mark II
+r(343204),	-- Crafter's Mark I
 9.0.1.35679
-343634
-343659
+r(343634),	-- Shadowlands Cloth Scavenging
+r(343659),	-- Novice Crafter's Mark
 9.0.2.36086
-345985
-345986
+r(345985),	-- Shrouded Cloth Bag
+r(345986),	-- Lightless Silk Pouch
 9.1.0.38312
-352445
+r(352445),	-- Vestige of Origins
 9.1.0.38511
-355183
+r(355183),	-- Shrouded Hand Towel
 9.2.0.41089
-359661
-359670
-359703
+r(359661),	-- Crafter's Mark IV
+r(359670),	-- Crafter's Mark of the First Ones
+r(359703),	-- Vestige of the Eternal
 10.0.7.47910
-400815
-402151
-402152
-402155
-402156
+r(400815),	-- Traditional Morqut Kite \\ Morqut Kite \\ Tuskarr Kite
+r(402151),	-- Bloodlord's Embrace
+r(402152),	-- Gurubashi Tigerhide Cloak
+r(402155),	-- Gurubashi Headdress
+r(402156),	-- Ritualistic Legwarmers
 10.0.7.48076
-405974
+r(405974),	-- Paw-Made Winterpelt Reagent Bag
 10.1.0.48480
-403149
-403150
-403151
-403152
-403153
-403154
-403155
-403156
-403157
-408304
-408305
-408316
-408318
-408319
+r(403149),	-- Obsidian Combatant's Wildercloth Cloak
+r(403150),	-- Obsidian Combatant's Wildercloth Tunic
+r(403151),	-- Obsidian Combatant's Wildercloth Treads
+r(403152),	-- Obsidian Combatant's Wildercloth Gloves
+r(403153),	-- Obsidian Combatant's Wildercloth Hood
+r(403154),	-- Obsidian Combatant's Wildercloth Leggings
+r(403155),	-- Obsidian Combatant's Wildercloth Shoulderpads
+r(403156),	-- Obsidian Combatant's Wildercloth Sash
+r(403157),	-- Obsidian Combatant's Wildercloth Bands
+r(408304),	-- Reserve Parachute
+r(408305),	-- Enourmous Ball of Yarn
+r(408316),	-- Spore-Infused Combat Bandage
+r(408318),	-- Undulating Sporecloak
+r(408319),	-- Explorer's Banner of Comradery

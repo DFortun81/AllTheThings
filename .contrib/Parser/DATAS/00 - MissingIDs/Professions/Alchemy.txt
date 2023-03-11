@@ -1,57 +1,57 @@
 0.5.3.3368
-2259
-3101
-3464
-6619
+r(2259),	-- Alchemy
+r(3101),	-- Alchemy
+r(3464),	-- Alchemy
+r(6619),	-- Cowardly Flight Potion
 0.7.0.3694
-11611
+r(11611),	-- Alchemy
 1.13.0.28211
-22430
+r(22430),	-- Refined Scale of Onyxia
 2.0.0.6080
-28596
-28672
-28675
-28677
+r(28596),	-- Alchemy
+r(28672),	-- Transmutation Master
+r(28675),	-- Potion Master
+r(28677),	-- Elixir Master
 3.0.1.8622
-51304
-53846
+r(51304),	-- Alchemy
+r(53846),	-- 
 3.0.1.8874
-53042
+r(53042),	-- Mixology
 3.1.0.9767
-62213
+r(62213),	-- Lesser Flask of Resistance
 4.0.1.12911
-80724
-80731
-85621
+r(80724),	-- 
+r(80731),	-- Alchemy
+r(85621),	-- Alchemy Tarot
 5.0.3.15890
-105206
-110955
+r(105206),	-- Alchemy
+r(110955),	-- 
 6.0.1.18179
-156566
-156574
-156575
-156583
-156586
-156606
+r(156566),	-- UNUSED
+r(156574),	-- UNUSED
+r(156575),	-- UNUSED
+r(156583),	-- UNUSED
+r(156586),	-- Alchemist's Cauldron
+r(156606),	-- Alchemy
 7.3.0.24473
-195095
+r(195095),	-- Alchemy
 8.0.1.25902
-264211
-264213
-264220
-264243
-264245
-264247
-264255
+r(264211),	-- Alchemy
+r(264213),	-- Outland Alchemy
+r(264220),	-- Northrend Alchemy
+r(264243),	-- Cataclysm Alchemy \\ Cataclsym Alchemy
+r(264245),	-- Pandaria Alchemy
+r(264247),	-- Draenor Alchemy
+r(264255),	-- Kul Tiran Alchemy
 8.0.1.25976
-265787
+r(265787),	-- Zandalari Alchemy
 10.0.7.47910
-400270
+r(400270),	-- Draconic Suppression Powder \\ Neutralizing Agent
 10.1.0.48480
-405832
-405847
-405879
-406106
+r(405832),	-- Stinky Bright Potion
+r(405847),	-- Transmute: Dracothyst
+r(405879),	-- Cauldron of Extracted Putrescence
+r(406106),	-- Draconic Phial Cauldron
 
 
 
@@ -59,421 +59,421 @@
 Missing in AlchemyItemDB.lua
 
 0.5.3.3368
-2259
-2329
-2330
-2331
-2332
-2333
-2334
-2335
-2336
-2337
-3101
-3170
-3171
-3172
-3173
-3174
-3175
-3176
-3177
-3188
-3230
-3447
-3448
-3449
-3450
-3451
-3452
-3453
-3454
-3464
-4508
-4942
-6617
-6618
-6619
-6624
-7179
-7181
-7183
-7255
-7256
-7257
-7258
-7259
-7836
-7837
-7841
-7845
+r(2259),	-- Alchemy
+r(2329),	-- Elixir of Lion's Strength
+r(2330),	-- Minor Healing Potion
+r(2331),	-- Minor Mana Potion
+r(2332),	-- Minor Rejuvenation Potion
+r(2333),	-- Elixir of Lesser Agility
+r(2334),	-- Elixir of Minor Fortitude
+r(2335),	-- Swiftness Potion
+r(2336),	-- Elixir of Tongues
+r(2337),	-- Lesser Healing Potion
+r(3101),	-- Alchemy
+r(3170),	-- Weak Troll's Blood Elixir \\ Weak Troll's Blood Potion
+r(3171),	-- Elixir of Wisdom
+r(3172),	-- Minor Magic Resistance Potion
+r(3173),	-- Lesser Mana Potion
+r(3174),	-- Potion of Curing \\ Elixir of Poison Resistance
+r(3175),	-- Limited Invulnerability Potion
+r(3176),	-- Strong Troll's Blood Elixir \\ Strong Troll's Blood Potion
+r(3177),	-- Elixir of Defense
+r(3188),	-- Elixir of Ogre's Strength
+r(3230),	-- Elixir of Minor Agility
+r(3447),	-- Healing Potion
+r(3448),	-- Lesser Invisibility Potion
+r(3449),	-- Shadow Oil
+r(3450),	-- Elixir of Fortitude
+r(3451),	-- Major Troll's Blood Elixir \\ Mighty Troll's Blood Potion
+r(3452),	-- Mana Potion
+r(3453),	-- Elixir of Detect Lesser Invisibility
+r(3454),	-- Frost Oil
+r(3464),	-- Alchemy
+r(4508),	-- Discolored Healing Potion
+r(4942),	-- Lesser Stoneshield Potion
+r(6617),	-- Rage Potion
+r(6618),	-- Great Rage Potion
+r(6619),	-- Cowardly Flight Potion
+r(6624),	-- Free Action Potion
+r(7179),	-- Elixir of Water Breathing
+r(7181),	-- Greater Healing Potion
+r(7183),	-- Elixir of Minor Defense
+r(7255),	-- Holy Protection Potion
+r(7256),	-- Shadow Protection Potion
+r(7257),	-- Fire Protection Potion
+r(7258),	-- Frost Protection Potion
+r(7259),	-- Nature Protection Potion
+r(7836),	-- Blackmouth Oil
+r(7837),	-- Fire Oil
+r(7841),	-- Swim Speed Potion
+r(7845),	-- Elixir of Firepower
 0.5.5.3494
-8240
+r(8240),	-- Elixir of Giant Growth
 0.7.0.3694
-11447
-11448
-11449
-11450
-11451
-11452
-11453
-11454
-11456
-11457
-11458
-11459
-11460
-11461
-11464
-11465
-11466
-11467
-11468
-11472
-11473
-11476
-11477
-11478
-11479
-11480
-11611
+r(11447),	-- Elixir of Waterwalking
+r(11448),	-- Greater Mana Potion
+r(11449),	-- Elixir of Agility
+r(11450),	-- Elixir of Greater Defense
+r(11451),	-- Oil of Immolation
+r(11452),	-- Restorative Potion
+r(11453),	-- Magic Resistance Potion
+r(11454),	-- Inlaid Mithril Cylinder
+r(11456),	-- Goblin Rocket Fuel
+r(11457),	-- Superior Healing Potion
+r(11458),	-- Wildvine Potion
+r(11459),	-- Philosopher's Stone \\ Philosophers' Stone
+r(11460),	-- Elixir of Detect Undead
+r(11461),	-- Arcane Elixir
+r(11464),	-- Invisibility Potion
+r(11465),	-- Elixir of Greater Intellect
+r(11466),	-- Gift of Arthas
+r(11467),	-- Elixir of Greater Agility
+r(11468),	-- Elixir of Dream Vision
+r(11472),	-- Elixir of Giants
+r(11473),	-- Ghost Dye
+r(11476),	-- Elixir of Shadow Power
+r(11477),	-- Elixir of Demonslaying
+r(11478),	-- Elixir of Detect Demon
+r(11479),	-- Transmute: Iron to Gold
+r(11480),	-- Transmute: Mithril to Truesilver
+r(11611),	-- Alchemy
 0.8.0.3734
-12609
+r(12609),	-- Catseye Elixir
 1.0.0.3980
-15833
-17187
-17551
-17552
-17553
-17554
-17555
-17556
-17557
-17559
-17560
-17561
-17562
-17563
-17564
-17565
-17566
-17570
-17571
-17572
-17573
-17574
-17575
-17576
-17577
-17578
-17579
-17580
-17632
-17634
-17635
-17636
-17637
-17638
+r(15833),	-- Dreamless Sleep Potion
+r(17187),	-- Transmute: Arcanite
+r(17551),	-- Stonescale Oil
+r(17552),	-- Mighty Rage Potion
+r(17553),	-- Superior Mana Potion
+r(17554),	-- Elixir of Superior Defense
+r(17555),	-- Elixir of the Sages
+r(17556),	-- Major Healing Potion
+r(17557),	-- Elixir of Brute Force
+r(17559),	-- Transmute: Air to Fire
+r(17560),	-- Transmute: Fire to Earth
+r(17561),	-- Transmute: Earth to Water
+r(17562),	-- Transmute: Water to Air
+r(17563),	-- Transmute: Undeath to Water
+r(17564),	-- Transmute: Water to Undeath
+r(17565),	-- Transmute: Life to Earth
+r(17566),	-- Transmute: Earth to Life
+r(17570),	-- Greater Stoneshield Potion
+r(17571),	-- Elixir of the Mongoose
+r(17572),	-- Purification Potion
+r(17573),	-- Greater Arcane Elixir
+r(17574),	-- Greater Fire Protection Potion
+r(17575),	-- Greater Frost Protection Potion
+r(17576),	-- Greater Nature Protection Potion
+r(17577),	-- Greater Arcane Protection Potion
+r(17578),	-- Greater Shadow Protection Potion
+r(17579),	-- Greater Holy Protection Potion
+r(17580),	-- Major Mana Potion
+r(17632),	-- Alchemist Stone \\ Alchemist's Stone
+r(17634),	-- Potion of Petrification \\ Flask of Petrification
+r(17635),	-- Flask of the Titans
+r(17636),	-- Flask of Distilled Wisdom
+r(17637),	-- Flask of Supreme Power
+r(17638),	-- Flask of Chromatic Resistance
 1.13.0.28211
-21923
-22430
-22732
-22808
-24266
-24365
-24366
-24367
-24368
-25146
-26277
+r(21923),	-- Elixir of Frost Power
+r(22430),	-- Refined Scale of Onyxia
+r(22732),	-- Major Rejuvenation Potion
+r(22808),	-- Elixir of Greater Water Breathing
+r(24266),	-- Gurubashi Mojo Madness
+r(24365),	-- Mageblood Elixir \\ Mageblood Potion
+r(24366),	-- Greater Dreamless Sleep Potion
+r(24367),	-- Living Action Potion
+r(24368),	-- Mighty Troll's Blood Elixir \\ Major Troll's Blood Potion
+r(25146),	-- Transmute: Elemental Fire
+r(26277),	-- Elixir of Greater Firepower
 2.0.0.6080
-28543
-28544
-28545
-28546
-28549
-28550
-28551
-28552
-28553
-28554
-28555
-28556
-28557
-28558
-28562
-28563
-28564
-28565
-28566
-28567
-28568
-28569
-28570
-28571
-28572
-28573
-28575
-28576
-28577
-28578
-28579
-28580
-28581
-28582
-28583
-28584
-28585
-28586
-28587
-28588
-28589
-28590
-28591
-28596
-28672
-28675
-28677
-29688
-32765
-32766
-33732
-33733
-33738
-33740
-33741
+r(28543),	-- Elixir of Camouflage
+r(28544),	-- Elixir of Major Strength
+r(28545),	-- Elixir of Healing Power
+r(28546),	-- Sneaking Potion
+r(28549),	-- Elixir of Major Frost Power
+r(28550),	-- Insane Strength Potion
+r(28551),	-- Super Healing Potion
+r(28552),	-- Elixir of the Searching Eye
+r(28553),	-- Elixir of Major Agility
+r(28554),	-- Shrouding Potion
+r(28555),	-- Super Mana Potion
+r(28556),	-- Elixir of Major Firepower
+r(28557),	-- Elixir of Major Defense
+r(28558),	-- Elixir of Major Shadow Power
+r(28562),	-- Major Dreamless Sleep Potion
+r(28563),	-- Heroic Potion
+r(28564),	-- Haste Potion
+r(28565),	-- Destruction Potion
+r(28566),	-- Transmute: Primal Air to Fire
+r(28567),	-- Transmute: Primal Earth to Water
+r(28568),	-- Transmute: Primal Fire to Earth
+r(28569),	-- Transmute: Primal Water to Air
+r(28570),	-- Elixir of Major Mageblood
+r(28571),	-- Major Fire Protection Potion
+r(28572),	-- Major Frost Protection Potion
+r(28573),	-- Major Nature Protection Potion
+r(28575),	-- Major Arcane Protection Potion
+r(28576),	-- Major Shadow Protection Potion
+r(28577),	-- Major Holy Protection Potion
+r(28578),	-- Elixir of Empowerment
+r(28579),	-- Ironshield Potion
+r(28580),	-- Transmute: Primal Shadow to Water
+r(28581),	-- Transmute: Primal Water to Shadow
+r(28582),	-- Transmute: Primal Mana to Fire
+r(28583),	-- Transmute: Primal Fire to Mana
+r(28584),	-- Transmute: Primal Life to Earth
+r(28585),	-- Transmute: Primal Earth to Life
+r(28586),	-- Super Rejuvenation Potion
+r(28587),	-- Flask of Fortification
+r(28588),	-- Flask of Mighty Versatility \\ Flask of Mighty Restoration
+r(28589),	-- Flask of Relentless Assault
+r(28590),	-- Flask of Blinding Light
+r(28591),	-- Flask of Pure Death
+r(28596),	-- Alchemy
+r(28672),	-- Transmutation Master
+r(28675),	-- Potion Master
+r(28677),	-- Elixir Master
+r(29688),	-- Transmute: Primal Might
+r(32765),	-- Transmute: Earthstorm Diamond
+r(32766),	-- Transmute: Skyfire Diamond
+r(33732),	-- Volatile Healing Potion
+r(33733),	-- Unstable Mana Potion
+r(33738),	-- Onslaught Elixir
+r(33740),	-- Adept's Elixir
+r(33741),	-- Elixir of Mastery
 2.4.3.8606
-38070
-38960
-38961
-38962
-39636
-39637
-39638
-39639
-41458
-41500
-41501
-41502
-41503
-42736
-45061
-47046
-47048
-47049
-47050
+r(38070),	-- Mercurial Stone
+r(38960),	-- Fel Strength Elixir
+r(38961),	-- Fel Mana Potion
+r(38962),	-- Fel Regeneration Potion
+r(39636),	-- Elixir of Major Fortitude
+r(39637),	-- Earthen Elixir
+r(39638),	-- Elixir of Draenic Wisdom
+r(39639),	-- Elixir of Ironskin
+r(41458),	-- Cauldron of Major Arcane Protection
+r(41500),	-- Cauldron of Major Fire Protection
+r(41501),	-- Cauldron of Major Frost Protection
+r(41502),	-- Cauldron of Major Nature Protection
+r(41503),	-- Cauldron of Major Shadow Protection
+r(42736),	-- Flask of Chromatic Wonder
+r(45061),	-- Mad Alchemist's Potion
+r(47046),	-- Guardian's Alchemist Stone
+r(47048),	-- Sorcerer's Alchemist Stone
+r(47049),	-- Redeemer's Alchemist Stone
+r(47050),	-- Assassin's Alchemist Stone
 3.0.1.8622
-51304
-53771
-53773
-53774
-53775
-53776
-53777
-53779
-53780
-53781
-53782
-53783
-53784
-53812
-53836
-53837
-53838
-53839
-53840
-53841
-53842
-53846
-53847
-53848
-53895
-53898
-53899
-53900
-53901
-53902
-53903
-53904
-53905
-53936
-53937
-53938
-53939
-53942
-54020
+r(51304),	-- Alchemy
+r(53771),	-- Transmute: Eternal Life to Shadow
+r(53773),	-- Transmute: Eternal Life to Fire
+r(53774),	-- Transmute: Eternal Fire to Water
+r(53775),	-- Transmute: Eternal Fire to Life
+r(53776),	-- Transmute: Eternal Air to Water
+r(53777),	-- Transmute: Eternal Air to Earth
+r(53779),	-- Transmute: Eternal Shadow to Earth
+r(53780),	-- Transmute: Eternal Shadow to Life
+r(53781),	-- Transmute: Eternal Earth to Air
+r(53782),	-- Transmute: Eternal Earth to Shadow
+r(53783),	-- Transmute: Eternal Water to Air
+r(53784),	-- Transmute: Eternal Water to Fire
+r(53812),	-- Pygmy Oil
+r(53836),	-- Runic Healing Potion
+r(53837),	-- Runic Mana Potion
+r(53838),	-- Resurgent Healing Potion
+r(53839),	-- Icy Mana Potion
+r(53840),	-- Elixir of Mighty Agility
+r(53841),	-- Wrath Elixir
+r(53842),	-- Spellpower Elixir
+r(53846),	-- 
+r(53847),	-- Elixir of Spirit
+r(53848),	-- Guru's Elixir
+r(53895),	-- Crazy Alchemist's Potion
+r(53898),	-- Elixir of Mighty Fortitude
+r(53899),	-- Lesser Flask of Toughness
+r(53900),	-- Potion of Nightmares
+r(53901),	-- Flask of the Frost Wyrm
+r(53902),	-- Flask of Stoneblood
+r(53903),	-- Flask of Endless Rage
+r(53904),	-- Powerful Rejuvenation Potion
+r(53905),	-- Indestructible Potion
+r(53936),	-- Mighty Arcane Protection Potion
+r(53937),	-- Mighty Frost Protection Potion
+r(53938),	-- Mighty Shadow Protection Potion
+r(53939),	-- Mighty Fire Protection Potion
+r(53942),	-- Mighty Nature Protection Potion
+r(54020),	-- Transmute: Eternal Might
 3.0.1.8874
-53042
-54213
-54218
-54220
-54221
-54222
-56519
+r(53042),	-- Mixology
+r(54213),	-- Flask of Pure Mojo
+r(54218),	-- Elixir of Mighty Strength
+r(54220),	-- Elixir of Protection
+r(54221),	-- Potion of Speed
+r(54222),	-- Potion of Wild Magic
+r(56519),	-- Elixir of Mighty Mageblood
 3.1.0.9767
-57425
-57427
-58868
-58871
-60350
-60354
-60355
-60356
-60357
-60365
-60366
-60367
-60396
-60403
-60405
-60893
-62213
-62409
-62410
-63732
+r(57425),	-- Transmute: Skyflare Diamond
+r(57427),	-- Transmute: Earthsiege Diamond
+r(58868),	-- Endless Mana Potion
+r(58871),	-- Endless Healing Potion
+r(60350),	-- Transmute: Titanium
+r(60354),	-- Elixir of Accuracy
+r(60355),	-- Elixir of Deadly Strikes
+r(60356),	-- Elixir of Mighty Defense
+r(60357),	-- Elixir of Expertise
+r(60365),	-- Elixir of Armor Piercing
+r(60366),	-- Elixir of Lightning Speed
+r(60367),	-- Elixir of Mighty Thoughts
+r(60396),	-- Mercurial Alchemist Stone
+r(60403),	-- Indestructible Alchemist Stone
+r(60405),	-- Mighty Alchemist Stone
+r(60893),	-- Northrend Alchemy Research
+r(62213),	-- Lesser Flask of Resistance
+r(62409),	-- Ethereal Oil
+r(62410),	-- Elixir of Water Walking
+r(63732),	-- Elixir of Minor Accuracy
 3.3.5.12340
-66658
-66659
-66660
-66662
-66663
-66664
-67025
+r(66658),	-- Transmute: Ametrine
+r(66659),	-- Transmute: Cardinal Ruby
+r(66660),	-- Transmute: King's Amber
+r(66662),	-- Transmute: Dreadstone
+r(66663),	-- Transmute: Majestic Zircon
+r(66664),	-- Transmute: Eye of Zul
+r(67025),	-- Flask of the North
 4.0.1.12911
-78866
-80237
-80243
-80244
-80245
-80246
-80247
-80248
-80250
-80251
-80269
-80477
-80478
-80479
-80480
-80481
-80482
-80484
-80486
-80487
-80488
-80490
-80491
-80492
-80493
-80494
-80495
-80496
-80497
-80498
-80508
-80719
-80720
-80721
-80723
-80724
-80725
-80726
-80731
-85621
+r(78866),	-- Transmute: Living Elements
+r(80237),	-- Transmute: Shadowspirit Diamond
+r(80243),	-- Transmute: Truegold
+r(80244),	-- Transmute: Pyrium Bar
+r(80245),	-- Transmute: Inferno Ruby
+r(80246),	-- Transmute: Ocean Sapphire
+r(80247),	-- Transmute: Amberjewel
+r(80248),	-- Transmute: Demonseye
+r(80250),	-- Transmute: Ember Topaz
+r(80251),	-- Transmute: Dream Emerald
+r(80269),	-- Potion of Illusion
+r(80477),	-- Ghost Elixir
+r(80478),	-- Earthen Potion
+r(80479),	-- Deathblood Venom
+r(80480),	-- Elixir of the Naga
+r(80481),	-- Volcanic Potion
+r(80482),	-- Potion of Concentration
+r(80484),	-- Elixir of the Cobra
+r(80486),	-- Deepstone Oil
+r(80487),	-- Mysterious Potion
+r(80488),	-- Elixir of Deep Earth
+r(80490),	-- Mighty Rejuvenation Potion
+r(80491),	-- Elixir of Impossible Accuracy
+r(80492),	-- Prismatic Elixir
+r(80493),	-- Elixir of Mighty Speed
+r(80494),	-- Mythical Mana Potion
+r(80495),	-- Potion of the Tol'vir
+r(80496),	-- Golemblood Potion
+r(80497),	-- Elixir of the Master
+r(80498),	-- Mythical Healing Potion
+r(80508),	-- Lifebound Alchemist Stone
+r(80719),	-- Flask of Steelskin
+r(80720),	-- Flask of the Draconic Mind
+r(80721),	-- Flask of the Winds
+r(80723),	-- Flask of Titanic Strength
+r(80724),	-- 
+r(80725),	-- Potion of Deepholm
+r(80726),	-- Potion of Treasure Finding
+r(80731),	-- Alchemy
+r(85621),	-- Alchemy Tarot
 4.3.4.15595
-92643
-92688
-93328
-93935
-94162
-96252
-96253
-96254
-101823
-101824
-101825
-101826
-101827
-101828
+r(92643),	-- Cauldron of Battle
+r(92688),	-- Big Cauldron of Battle
+r(93328),	-- Vial of the Sands
+r(93935),	-- Draught of War
+r(94162),	-- Flask of Flowing Water
+r(96252),	-- Volatile Alchemist Stone
+r(96253),	-- Quicksilver Alchemist Stone
+r(96254),	-- Vibrant Alchemist Stone
+r(101823),	-- 
+r(101824),	-- 
+r(101825),	-- 
+r(101826),	-- 
+r(101827),	-- 
+r(101828),	-- 
 5.0.3.15890
-105206
-110955
-114751
-114752
-114753
-114754
-114755
-114756
-114757
-114758
-114759
-114760
-114761
-114762
-114763
-114764
-114765
-114766
-114767
-114769
-114770
-114771
-114772
-114773
-114774
-114775
-114776
-114777
-114778
-114779
-114780
-114781
-114782
-114783
-114784
-114786
-130326
+r(105206),	-- Alchemy
+r(110955),	-- 
+r(114751),	-- Alchemist's Rejuvenation
+r(114752),	-- Master Healing Potion
+r(114753),	-- Potion of the Mountains
+r(114754),	-- Mad Hozen Elixir
+r(114755),	-- Mantid Elixir
+r(114756),	-- Elixir of Weaponry
+r(114757),	-- Potion of the Jade Serpent
+r(114758),	-- Monk's Elixir
+r(114759),	-- Elixir of the Rapids
+r(114760),	-- Potion of Mogu Power
+r(114761),	-- Desecrated Oil
+r(114762),	-- Elixir of Perfection
+r(114763),	-- Elixir of Mirrors
+r(114764),	-- Elixir of Peace
+r(114765),	-- Virmen's Bite
+r(114766),	-- Transmute: River's Heart
+r(114767),	-- Transmute: Wild Jade
+r(114769),	-- Flask of Spring Blossoms
+r(114770),	-- Flask of the Earth
+r(114771),	-- Flask of the Warm Sun
+r(114772),	-- Flask of Falling Leaves
+r(114773),	-- Flask of Winter's Bite
+r(114774),	-- Darkwater Potion
+r(114775),	-- Master Mana Potion
+r(114776),	-- Transmute: Vermilion Onyx
+r(114777),	-- Transmute: Imperial Amethyst
+r(114778),	-- Transmute: Sun's Radiance
+r(114779),	-- Potion of Luck
+r(114780),	-- Transmute: Living Steel
+r(114781),	-- Transmute: Primal Diamond
+r(114782),	-- Potion of Focus
+r(114783),	-- Transmute: Trillium Bar
+r(114784),	-- Transmute: Primordial Ruby
+r(114786),	-- Alchemist's Flask
+r(130326),	-- Riddle of Steel
 6.0.1.18179
-136197
-156560
-156561
-156562
-156563
-156564
-156565
-156566
-156567
-156568
-156569
-156570
-156571
-156572
-156573
-156574
-156575
-156576
-156577
-156578
-156579
-156580
-156581
-156582
-156583
-156584
-156585
-156586
-156587
-156588
-156589
-156590
-156591
-156592
-156593
-156606
+r(136197),	-- Zen Alchemist Stone
+r(156560),	-- Draenic Philosopher's Stone
+r(156561),	-- Draenic Agility Flask
+r(156562),	-- UNUSED
+r(156563),	-- Draenic Intellect Flask
+r(156564),	-- Draenic Strength Flask
+r(156565),	-- UNUSED
+r(156566),	-- UNUSED
+r(156567),	-- Draenor Armor Flask
+r(156568),	-- Draenic Stamina Flask
+r(156569),	-- Greater Draenic Agility Flask
+r(156570),	-- UNUSED
+r(156571),	-- Greater Draenic Intellect Flask
+r(156572),	-- Greater Draenic Strength Flask
+r(156573),	-- UNUSED
+r(156574),	-- UNUSED
+r(156575),	-- UNUSED
+r(156576),	-- Greater Draenic Stamina Flask
+r(156577),	-- Draenic Agility Potion
+r(156578),	-- Draenic Intellect Potion
+r(156579),	-- Draenic Strength Potion
+r(156580),	-- Draenic Versatility Potion
+r(156581),	-- Draenic Channeled Mana Potion
+r(156582),	-- Draenic Mana Potion
+r(156583),	-- UNUSED
+r(156584),	-- Draenic Rejuvenation Potion
+r(156585),	-- Crescent Oil
+r(156586),	-- Alchemist's Cauldron
+r(156587),	-- Alchemical Catalyst
+r(156588),	-- Alchemical Catalyst - Fireweed
+r(156589),	-- Alchemical Catalyst - Flytrap
+r(156590),	-- Alchemical Catalyst - Starflower
+r(156591),	-- Primal Alchemy
+r(156592),	-- Alchemical Catalyst - Orchid
+r(156593),	-- Alchemical Catalyst - Lotus
+r(156606),	-- Alchemy
 10.0.7.47910
-400270
+r(400270),	-- Draconic Suppression Powder \\ Neutralizing Agent
 10.1.0.48480
-405832
-405847
-405879
-406106
+r(405832),	-- Stinky Bright Potion
+r(405847),	-- Transmute: Dracothyst
+r(405879),	-- Cauldron of Extracted Putrescence
+r(406106),	-- Draconic Phial Cauldron

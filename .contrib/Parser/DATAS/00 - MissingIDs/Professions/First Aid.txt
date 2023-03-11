@@ -1,31 +1,31 @@
 0.5.3.3368
-1159
-3267
-3268
-3273
-3274
+r(1159),	-- First Aid
+r(3267),	-- First Aid
+r(3268),	-- First Aid
+r(3273),	-- First Aid
+r(3274),	-- First Aid
 0.5.5.3494
-7924
+r(7924),	-- First Aid
 0.7.0.3694
-10844
-10846
+r(10844),	-- Powerful Smelling Salts
+r(10846),	-- First Aid
 1.13.0.28211
-30021
+r(30021),	-- Crystal Infused Bandage
 2.0.0.6080
-27028
+r(27028),	-- First Aid
 3.0.1.8303
-45542
+r(45542),	-- First Aid
 3.0.1.8622
-51801
+r(51801),	-- 
 4.0.1.12911
-74559
+r(74559),	-- First Aid
 5.0.3.15890
-102699
-110406
+r(102699),	-- Heavy Windwool Bandage
+r(110406),	-- First Aid
 6.0.1.18179
-158741
+r(158741),	-- First Aid
 7.3.0.24473
-195113
+r(195113),	-- First Aid
 
 
 
@@ -33,67 +33,67 @@
 Missing in First AidItemDB.lua
 
 0.5.3.3368
-746
-1159
-3267
-3268
-3273
-3274
-3275
-3276
-3277
-3278
+r(746),	-- First Aid
+r(1159),	-- First Aid
+r(3267),	-- First Aid
+r(3268),	-- First Aid
+r(3273),	-- First Aid
+r(3274),	-- First Aid
+r(3275),	-- Linen Bandage
+r(3276),	-- Heavy Linen Bandage
+r(3277),	-- Wool Bandage
+r(3278),	-- Heavy Wool Bandage
 0.5.5.3494
-7924
-7928
-7929
-7934
-7935
+r(7924),	-- First Aid
+r(7928),	-- Silk Bandage
+r(7929),	-- Heavy Silk Bandage
+r(7934),	-- Anti-Venom
+r(7935),	-- Strong Anti-Venom
 0.7.0.3694
-10840
-10841
-10844
-10846
+r(10840),	-- Mageweave Bandage
+r(10841),	-- Heavy Mageweave Bandage
+r(10844),	-- Powerful Smelling Salts
+r(10846),	-- First Aid
 1.0.0.3980
-18629
-18630
+r(18629),	-- Runecloth Bandage
+r(18630),	-- Heavy Runecloth Bandage
 1.13.0.28211
-23787
-30021
+r(23787),	-- Powerful Anti-Venom
+r(30021),	-- Crystal Infused Bandage
 2.0.0.6080
-27028
-27032
-27033
+r(27028),	-- First Aid
+r(27032),	-- Netherweave Bandage
+r(27033),	-- Heavy Netherweave Bandage
 3.0.1.8303
-45542
-45545
-45546
+r(45542),	-- First Aid
+r(45545),	-- Frostweave Bandage
+r(45546),	-- Heavy Frostweave Bandage
 3.0.1.8622
-51801
+r(51801),	-- 
 4.0.1.12911
-74556
-74557
-74558
-74559
-88893
+r(74556),	-- Embersilk Bandage
+r(74557),	-- Heavy Embersilk Bandage
+r(74558),	-- Field Bandage: Dense Embersilk
+r(74559),	-- First Aid
+r(88893),	-- Dense Embersilk Bandage
 5.0.3.15890
-102697
-102698
-102699
-110406
+r(102697),	-- Windwool Bandage
+r(102698),	-- Heavy Windwool Bandage
+r(102699),	-- Heavy Windwool Bandage
+r(110406),	-- First Aid
 6.0.1.18179
-158741
+r(158741),	-- First Aid
 7.3.0.24473
-172539
-172540
-172541
-172542
-195113
-202853
-202854
-211353
-211696
-211926
-212067
-221690
-230047
+r(172539),	-- Antiseptic Bandage
+r(172540),	-- Healing Tonic
+r(172541),	-- Blackwater Anti-Venom
+r(172542),	-- Fire Ammonite Oil
+r(195113),	-- First Aid
+r(202853),	-- Silkweave Bandage
+r(202854),	-- Silkweave Splint
+r(211353),	-- Treat Fever
+r(211696),	-- Stabilize
+r(211926),	-- Set Bone
+r(212067),	-- Treat Burns
+r(221690),	-- Silvery Salve
+r(230047),	-- Feathered Luffa
