@@ -331,7 +331,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { "removed 4.1.0" },
 					["classes"] = { WARRIOR },
-					["lvl"] = 40,
+					["lvl"] = 58,
 					["groups"] = {
 						i(20699, {	-- Cenarion Reservist's Legplates
 							["timeline"] = { "removed 4.1.0" },
@@ -347,7 +347,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { "removed 4.1.0" },
 					["classes"] = { MAGE, WARLOCK },
-					["lvl"] = 40,
+					["lvl"] = 58,
 					["groups"] = {
 						i(20705, {	-- Cenarion Reservist's Pants
 							["timeline"] = { "removed 4.1.0" },
@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { "removed 4.1.0" },
 					["classes"] = { PRIEST },
-					["lvl"] = 40,
+					["lvl"] = 58,
 					["groups"] = {
 						i(20707, {	-- Cenarion Reservist's Pants
 							["timeline"] = { "removed 4.1.0" },
@@ -379,7 +379,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { "removed 4.1.0" },
 					["classes"] = { ROGUE },
-					["lvl"] = 40,
+					["lvl"] = 58,
 					["groups"] = {
 						i(20703, {	-- Cenarion Reservist's Leggings
 							["timeline"] = { "removed 4.1.0" },
@@ -395,7 +395,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { "removed 4.1.0" },
 					["classes"] = { DRUID },
-					["lvl"] = 40,
+					["lvl"] = 58,
 					["groups"] = {
 						i(20704, {	-- Cenarion Reservist's Leggings
 							["timeline"] = { "removed 4.1.0" },
@@ -411,7 +411,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { "removed 4.1.0" },
 					["classes"] = { HUNTER },
-					["lvl"] = 40,
+					["lvl"] = 58,
 					["groups"] = {
 						i(20702, {	-- Cenarion Reservist's Legguards
 							["timeline"] = { "removed 4.1.0" },
@@ -427,7 +427,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { "removed 4.1.0" },
 					["classes"] = { PALADIN },
-					["lvl"] = 40,
+					["lvl"] = 58,
 					["groups"] = {
 						i(20700, {	-- Cenarion Reservist's Legplates
 							["timeline"] = { "removed 4.1.0" },
@@ -443,7 +443,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { "removed 4.1.0" },
 					["classes"] = { SHAMAN },
-					["lvl"] = 40,
+					["lvl"] = 58,
 					["groups"] = {
 						i(20701, {	-- Cenarion Reservist's Legguards
 							["timeline"] = { "removed 4.1.0" },
@@ -2510,6 +2510,90 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21251),	-- Combat Task Briefing VII
 						}),
 					})),
+					i(20419, {	-- Crest of Beckoning: Earth
+						["cost"] = {
+							{ "i", 20527, 1 },	-- Scroll: Create Crest of Beckoning (Earth)
+							{ "i", 8170, 1 },	-- Rugged Leather
+							{ "i", 12365, 1 },	-- Dense Stone
+						},
+					}),
+					i(20416, {	-- Crest of Beckoning: Fire
+						["cost"] = {
+							{ "i", 20518, 1 },	-- Scroll: Create Crest of Beckoning (Fire)
+							{ "i", 8170, 1 },	-- Rugged Leather
+							{ "i", 4625, 1 },	-- Firebloom
+						},
+					}),
+					i(20418, {	-- Crest of Beckoning: Thunder
+						["cost"] = {
+							{ "i", 20526, 1 },	-- Scroll: Create Crest of Beckoning (Thunder)
+							{ "i", 8170, 1 },	-- Rugged Leather
+							{ "i", 7069, 1 },	-- Elemental Air
+						},
+					}),
+					i(20420, {	-- Crest of Beckoning: Water
+						["cost"] = {
+							{ "i", 20528, 1 },	-- Scroll: Create Crest of Beckoning (Water)
+							{ "i", 8170, 1 },	-- Rugged Leather
+							{ "i", 4791, 1 },	-- Enchanted Water
+						},
+					}),
+					i(20449, {	-- Scepter of Beckoning: Stone
+						["cost"] = {
+							{ "i", 20543, 1 },	-- Scroll: Create Scepter of Beckoning (Earth)
+							{ "i", 11144, 1 },	-- Truesilver Rod
+							{ "i", 12365, 20 },	-- Dense Stone
+						},
+					}),
+					i(20447, {	-- Scepter of Beckoning: Fire
+						["cost"] = {
+							{ "i", 20540, 1 },	-- Scroll: Create Scepter of Beckoning (Fire)
+							{ "i", 11144, 1 },	-- Truesilver Rod
+							{ "i", 4625, 20 },	-- Firebloom
+						},
+					}),
+					i(20448, {	-- Scepter of Beckoning: Thunder
+						["cost"] = {
+							{ "i", 20542, 1 },	-- Scroll: Create Scepter of Beckoning (Thunder)
+							{ "i", 11144, 1 },	-- Truesilver Rod
+							{ "i", 7069, 20 },	-- Elemental Air
+						},
+					}),
+					i(20450, {	-- Scepter of Beckoning: Water
+						["cost"] = {
+							{ "i", 20544, 1 },	-- Scroll: Create Scepter of Beckoning (Water)
+							{ "i", 11144, 1 },	-- Truesilver Rod
+							{ "i", 4791, 20 },	-- Enchanted Water
+						},
+					}),
+					i(20435, {	-- Signet of Beckoning: Stone
+						["cost"] = {
+							{ "i", 20533, 1 },	-- Scroll: Create Signet of Beckoning (Earth)
+							{ "i", 20520, 1 },	-- Dark Rune
+							{ "i", 12365, 5 },	-- Dense Stone
+						},
+					}),
+					i(20432, {	-- Signet of Beckoning: Fire
+						["cost"] = {
+							{ "i", 20531, 1 },	-- Scroll: Create Signet of Beckoning (Fire)
+							{ "i", 20520, 1 },	-- Dark Rune
+							{ "i", 4625, 5 },	-- Firebloom
+						},
+					}),
+					i(20433, {	-- Signet of Beckoning: Thunder
+						["cost"] = {
+							{ "i", 20532, 1 },	-- Scroll: Create Signet of Beckoning (Thunder)
+							{ "i", 20520, 1 },	-- Dark Rune
+							{ "i", 7069, 5 },	-- Elemental Air
+						},
+					}),
+					i(20436, {	-- Signet of Beckoning: Water
+						["cost"] = {
+							{ "i", 20535, 1 },	-- Scroll: Create Signet of Beckoning (Water)
+							{ "i", 20520, 1 },	-- Dark Rune
+							{ "i", 4791, 5 },	-- Enchanted Water
+						},
+					}),
 					i(20469, {	-- Decoded True Believer Clippings
 						["description"] = "This will arrive in your mailbox approximately 12-24 hours either of the quests are turned in.",
 						["sourceQuests"] = {
@@ -2524,6 +2608,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							applyclassicphase(PHASE_FOUR, i(20554)),	-- Plans: Darkrune Breastplate (RECIPE!)
 							applyclassicphase(PHASE_FOUR, i(20553)),	-- Plans: Darkrune Gauntlets (RECIPE!)
 							applyclassicphase(PHASE_FOUR, i(20555)),	-- Plans: Darkrune Helm (RECIPE!)
+							i(20527),	-- Scroll: Create Crest of Beckoning (Earth)
+							i(20518),	-- Scroll: Create Crest of Beckoning (Fire)
+							i(20526),	-- Scroll: Create Crest of Beckoning (Thunder)
+							i(20528),	-- Scroll: Create Crest of Beckoning (Water)
+							i(20543),	-- Scroll: Create Scepter of Beckoning (Earth)
+							i(20540),	-- Scroll: Create Scepter of Beckoning (Fire)
+							i(20542),	-- Scroll: Create Scepter of Beckoning (Thunder)
+							i(20544),	-- Scroll: Create Scepter of Beckoning (Water)
+							i(20533),	-- Scroll: Create Signet of Beckoning (Earth)
+							i(20531),	-- Scroll: Create Signet of Beckoning (Fire)
+							i(20532),	-- Scroll: Create Signet of Beckoning (Thunder)
+							i(20535),	-- Scroll: Create Signet of Beckoning (Water)
 						},
 					}),
 					i(20805, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Followup Logistics Assignment (A)
