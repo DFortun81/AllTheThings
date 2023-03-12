@@ -19,12 +19,22 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				}),
 			},
 		})),
-		ach(15215, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Can't Stop the Feeling
+		ach(15215,	-- Can't Stop the Feeling
+		bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {
 			ach(15214),	-- What a Feeling
 		})),
 		ach(6019),	-- Come One, Come All!
-		ach(15221, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Dancing Machine
-			i(187689),	-- Dance Dance Darkmoon (TOY!)
+		ach(15221,	-- Dancing Machine
+		bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				15215,	-- Can't Stop the Feeling
+				15223, 	-- Feeling It
+				15217, 	-- Maniac on the Dance Floor
+			}},
+			["g"] = {
+				i(187689),	-- Dance Dance Darkmoon (TOY!)
+			},
 		})),
 		ach(6028, {	-- Darkmoon Defender
 			crit(1, {	-- Adventurer's Journal
@@ -83,7 +93,8 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				["_quests"] = { 29446 },	-- A Wondrous Weapon
 			}),
 		}),
-		ach(15213, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Don't Stop Dancing
+		ach(15213,	-- Don't Stop Dancing
+		bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {
 			ach(15212),	-- First Dance
 		})),
 		ach(6032, {	-- Faire Favors
@@ -186,11 +197,13 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 				["provider"] = { "i", 74822 },
 			}),
 		}),
-		ach(15223, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Feeling It
+		ach(15223, 	-- Feeling It
+		bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {
 			ach(15222),	-- You Got the Beat
 		})),
 		ach(6025),	-- I Was Promised a Pony
-		ach(15217, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Maniac on the Dance Floor
+		ach(15217, 	-- Maniac on the Dance Floor
+		bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {
 			ach(15216),	-- Make You Sweat
 		})),
 		ach(6020, {	-- Step Right Up
