@@ -1130,7 +1130,7 @@ for key, value in pairs({
 	[142127] = "林吉的秘密",	-- Rin'ji's Secret	--TODO: This was taken from wotlk Wowhead
 	[142151] = "密封的桶",	-- Sealed Barrel
 	[142179] = "索兰萨尔瞭望台",	-- Solarsal Gazebo	--TODO: This was taken from wotlk Wowhead
-	[142181] = "被偷走的货物",	-- Stoley's Shipment	--TODO: This was taken from wotlk Wowhead
+	[142181] = "被偷走的货物",	-- Stolen Cargo	--TODO: This was taken from wotlk Wowhead
 	[142184] = "船长的箱子",	-- Captain's Chest
 	[142195] = "木爪作战地图",	-- Woodpaw Battle Map
 	[142343] = "奥丹姆石座",	-- Uldum Pedestal

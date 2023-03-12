@@ -1107,7 +1107,7 @@ for key,value in pairs({
 	[142127] = "Rin'ji's Secret",	-- Rin'ji's Secret	--TODO: This was taken from wotlk Wowhead
 	[142151] = "Barile Sigillato",	-- Sealed Barrel
 	[142179] = "Padiglione di Solarsal",	-- Solarsal Gazebo
-	[142181] = "Stolen Cargo",	-- Stoley's Shipment	--TODO: This was taken from wotlk Wowhead
+	[142181] = "Stolen Cargo",	-- Stolen Cargo	--TODO: This was taken from wotlk Wowhead
 	[142184] = "Cassa del Capitano",	-- Captain's Chest
 	[142195] = "Piani di Battaglia degli Gnoll",	-- Woodpaw Battle Map
 	[142343] = "Piedistallo di Uldum",	-- Uldum Pedestal

@@ -1115,7 +1115,7 @@ for key,value in pairs({
 	[142127] = "린지의 비밀",	-- Rin'ji's Secret	--TODO: This was taken from wotlk Wowhead
 	[142151] = "봉인된 통",	-- Sealed Barrel
 	[142179] = "솔라살 전망대",	-- Solarsal Gazebo
-	[142181] = "도난당한 화물",	-- Stoley's Shipment	--TODO: This was taken from wotlk Wowhead
+	[142181] = "도난당한 화물",	-- Stolen Cargo	--TODO: This was taken from wotlk Wowhead
 	[142184] = "선장의 상자",	-- Captain's Chest
 	[142195] = "덩굴발 작전도",	-- Woodpaw Battle Map
 	[142343] = "울둠 대좌",	-- Uldum Pedestal
