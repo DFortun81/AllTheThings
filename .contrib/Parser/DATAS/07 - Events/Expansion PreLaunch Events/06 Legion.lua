@@ -236,6 +236,16 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248
 				q(42237, { ["isRepeatable"] = true, }),	-- Invasion: Tanaris
 				q(43245, { ["isRepeatable"] = true, }),	-- Invasion: Westfall
 				q(42235, { ["isRepeatable"] = true, }),	-- Invasion: Westfall
+				q(40661, {	-- Protect the Home Front (A)
+					["qg"] = 101004,	-- Elerion Bladedancer
+					["coord"] = { 40.4, 77.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(44092, {	-- Protect the Home Front (H)
+					["qg"] = 95234,	-- Elthyn Da'rai
+					["coord"] = { 52.6, 56.2, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+				}),
 				q(43300, { ["isRepeatable"] = true, }),	-- Repel (Azshara)
 				q(43292, { ["isRepeatable"] = true, }),	-- Repel (Dun Morogh)
 				q(43297, { ["isRepeatable"] = true, }),	-- Repel (Hillsbrad Foothills)

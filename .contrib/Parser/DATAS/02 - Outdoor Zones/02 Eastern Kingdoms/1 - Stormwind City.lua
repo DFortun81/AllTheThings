@@ -3288,9 +3288,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 7.2.0.23746" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(32469, {	-- Crystal Clarity
+				q(32469, {	-- Crystal Clarity (A)
 					["qg"] = 16908,	-- Arielle Snapflash
-					["sourceQuest"] = 32470,	-- Light Camera Action
+					["sourceQuest"] = 32470,	-- Light Camera Action (A)
 					["coord"] = { 61.2, 22.8, STORMWIND_CITY },
 					["timeline"] = { "added 7.3.5" },
 					["collectible"] = false,
@@ -4055,7 +4055,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { DRACTHYR_ALLIANCE },
 					["classes"] = { EVOKER },
 				}),
-				q(32470, {	-- Light Camera Action
+				q(32470, {	-- Light Camera Action (A)
 					["qg"] = 16908,	-- Arielle Snapflash
 					["coord"] = { 61.2, 22.8, STORMWIND_CITY },
 					["timeline"] = { "added 7.3.5" },
@@ -4398,12 +4398,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
-				}),
-				q(40661, {	-- Protect the Home Front
-					["qg"] = 101004,	-- Elerion Bladedancer
-					["coord"] = { 40.4, 77.8, STORMWIND_CITY },
-					["timeline"] = { "added 7.0.3.21796", "removed 7.0.5" },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26975, {	-- Rallying the Fleet
 					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
@@ -5573,13 +5567,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(2723),	-- Bottle of Dalaran Noir
 					},
-				}),
-				q(49981, {	-- Witness to the Wound
-					["qg"] = 132255,	-- Master Mathias Shaw
-					["sourceQuest"] = 49976,	-- Gifts of the Fallen
-					["coord"] = { 39.0, 62.6, STORMWIND_CITY },
-					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(60962, {	-- Wrath of the Lich King: Onward to Adventure in Northrend
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>

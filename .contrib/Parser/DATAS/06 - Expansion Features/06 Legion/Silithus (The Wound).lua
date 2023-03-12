@@ -167,6 +167,20 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					["coord"] = { 65.9, 54.7, SILITHUS },
 					["races"] = HORDE_ONLY,
 				}),
+				q(49981, {	-- Witness to the Wound (A)
+					["qg"] = 132255,	-- Master Mathias Shaw
+					["sourceQuest"] = 49976,	-- Gifts of the Fallen
+					["coord"] = { 39.0, 62.6, STORMWIND_CITY },
+					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49982, {	-- Witness to the Wound (H)
+					["qg"] = 132254,	-- Nathanos Blightcaller
+					["sourceQuest"] = 50341,	-- A Recent Discovery
+					["coord"] = { 49.8, 75.6, ORGRIMMAR },
+					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
+					["races"] = HORDE_ONLY,
+				}),
 			}),
 			n(RARES, {
 				n(132591, {	-- Ogmot the Mad

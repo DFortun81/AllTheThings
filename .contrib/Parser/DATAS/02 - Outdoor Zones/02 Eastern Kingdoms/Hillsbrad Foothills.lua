@@ -1342,7 +1342,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2479,	-- Hinott's Assistance (1/2)
 					["coord"] = { 61.6, 19.2, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { "removed 4.0.3" },
-					["races"] = { ORC, UNDEAD, TROLL },
+					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
 					-- #if BEFORE 4.0.3

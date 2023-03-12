@@ -2044,8 +2044,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 2458,	-- Deep Cover
 					["coord"] = { 55.4, 5.6, THE_BARRENS },
 					["timeline"] = { "removed 4.0.3" },
-					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/2 Mutated Venture Co. Drone slain
@@ -2283,6 +2283,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(7676),	-- Thistle Tea
 					},
+				}),
+				q(26642, {	-- Preserving the Barrens
+					["qg"] = 35068,	-- Gotura Fourwinds
+					["altQuests"] = { 28494 },	-- Warchief's Command: Northern Barrens!
+					["coord"] = { 47.6, 71.3, ORGRIMMAR },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(26769, {	-- Raging River Ride
 					["qg"] = 3391,	-- Gazlowe

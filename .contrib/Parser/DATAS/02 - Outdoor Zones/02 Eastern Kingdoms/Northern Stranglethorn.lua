@@ -1174,6 +1174,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
+				q(26417, {	-- Northern Stranglethorn: The Fallen Empire
+					["qg"] = 43062,	-- Bort
+					["sourceQuest"] = 26416,	-- Well, Come to the Jungle
+					["coord"] = { 51.2, 56.2, ORGRIMMAR },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(190, {	-- Panther Hunting [CATA+] / Panther Mastery (1/4)
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
@@ -2206,6 +2214,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(29220, {	-- To Bambala
+					["qg"] = 52234,	-- Bwemba
+					["coord"] = { 32.6, 68.2, ORGRIMMAR },
+					["timeline"] = { "added 4.1.0.13726" },
+					["races"] = HORDE_ONLY,
+				}),
 				q(29236, {	-- To Hardwrench Hideaway
 					["qg"] = 53008,	-- Thysta
 					["sourceQuest"] = 29235,	-- Defend Grom'gol
@@ -2354,6 +2368,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
 					-- #endif
 					["lvl"] = lvlsquish(28, 28, 10),
+				}),
+				q(26416, {	-- Well, Come to the Jungle
+					["qg"] = 43063,	-- Cromula
+					["coord"] = { 49.4, 67.1, ASHENVALE },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(26330, {	-- Who's a Big Troll
 					["provider"] = { "o", 2076 },	-- Bubbling Cauldron

@@ -1760,8 +1760,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 2458,	-- Deep Cover
 					["coord"] = { 55.4, 5.6, THE_BARRENS },
 					["timeline"] = { "removed 4.0.3" },
-					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/2 Mutated Venture Co. Drone slain

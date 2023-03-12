@@ -3264,6 +3264,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13825, {	-- Clamlette Surprise
 					["qg"] = 8125,	-- Dirge Quikcleave
+					["sourceQuest"] = 6611,	-- To Gadgetzan You Go!
 					["coord"] = { 52.63, 28.12, TANARIS },
 					["timeline"] = { "added 3.1.0.9637", "removed 4.0.3" },
 					["lockCriteria"] = { 1, "spellID", 64054 },	-- Clamlette Magnifique
@@ -3552,6 +3553,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40580,	-- Gus Rustflutter
 					["coord"] = { 42.4, 24.2, TANARIS },
 					["timeline"] = { "added 4.0.3.13277" },
+				}),
+				q(10891, {	-- Imperial Plate Armor [A]
+					["qg"] = 11145,	-- Myolor Sunderfury
+					["coord"] = { 52.0, 41.4, IRONFORGE },
+					["timeline"] = { "added 2.5.1", "removed 4.0.3" },
+					["requireSkill"] = BLACKSMITHING,
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				}),
+				q(10892, {	-- Imperial Plate Armor [H]
+					["qg"] = 11176,	-- Krathok Moltenfist
+					["coord"] = { 80.0, 23.3, ORGRIMMAR },
+					["timeline"] = { "added 2.5.1", "removed 4.0.3" },
+					["requireSkill"] = BLACKSMITHING,
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7653, {	-- Imperial Plate Belt
 					["qg"] = 14567,	-- Derotain Mudsipper
@@ -4664,6 +4683,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25067,	-- Thunderdrome: The Ginormus!
 					["coord"] = { 51.7, 28.0, TANARIS },
 					["timeline"] = { "added 4.0.3.13277" },
+				}),
+				q(6611, {	-- To Gadgetzan You Go!
+					["qg"] = 3399,	-- Zamja
+					-- #if AFTER CATA
+					["coord"] = { 32.2, 69.4, ORGRIMMAR },
+					-- #else
+					["coord"] = { 57.4, 53.6, ORGRIMMAR },
+					-- #endif
+					["requireSkill"] = COOKING,
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(35, 35, 15),
 				}),
 				q(25053, {	-- To The Ground! (A)
 					["qg"] = 38704,	-- Kelsey Steelspark

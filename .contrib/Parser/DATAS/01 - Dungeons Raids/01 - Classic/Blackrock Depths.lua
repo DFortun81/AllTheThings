@@ -441,6 +441,40 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				-- #if AFTER SHADOWLANDS
+				q(28302, {	-- Meet with Avaros Dawnglaive [SL+] / Meet with Sunwalker Atohmo
+					["qgs"] = {
+						43795,	-- Aponi Brightmane
+						20406,	-- Champion Cyssa Dawnrose
+					},
+					["coords"] = {
+						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
+						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { PALADIN },
+					["races"] = { TAUREN },
+					["isBreadcrumb"] = true,
+				}),
+				q(28303, {	-- Meet With Avaros Dawnglaive [SL+] / Meet with Master Pyreanor
+					["qgs"] = {
+						43795,	-- Aponi Brightmane
+						16681,	-- Champion Bachi
+						20406,	-- Champion Cyssa Dawnrose
+					},
+					["coords"] = {
+						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
+						{ 92.0, 37.2, SILVERMOON_CITY },	-- Champion Bachi
+						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { PALADIN },
+					["races"] = { BLOODELF },
+					["isBreadcrumb"] = true,
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
 				q(28260, {	-- Meet with Dalgrun Steelpine [SL+] / Meet with Wulf Hansreim
 					["qgs"] = {
 						17122,	-- Vord
@@ -509,6 +543,25 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				-- #if AFTER SHADOWLANDS
+				q(28300, {	-- Meet with Feenix Arcshine [SL+] / Meet with Ureda
+					["qgs"] = {
+						3047,	-- Archmage Shymm
+						4566,	-- Kaelystia Hatebringer
+						16653,	-- Inethven
+					},
+					["coords"] = {
+						{ 22.6, 15.0, THUNDER_BLUFF },	-- Archmage Shymm
+						{ 53.0, 19.6, SILVERMOON_CITY },	-- Inethven
+						{ 85.2, 14.2, UNDERCITY },	-- Kaelystia Hatebringer
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { MAGE },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
 				q(28263, {	-- Meet with Frazzle Frostfingers [SL+] / Meet with Maginor Dumas
 					["qgs"] = {
 						16749,	-- Edirah
@@ -546,6 +599,42 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(28301, {	-- Meet with Hretar Riverspeaker [SL+] / Meet with Terga Earthbreaker
+					["qgs"] = {
+						51639,	-- Kador Cloudsong
+						16661,	-- Gez'li
+					},
+					["coords"] = {
+						{ 22.2, 19.0, THUNDER_BLUFF },	-- Kador Cloudsong
+						{ 71.8, 56.0, SILVERMOON_CITY },	-- Gez'li
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				-- #endif
+				-- #if AFTER WOD
+				q(28299, {	-- Meet with Kranosh [WOD+] / Meet with Kazak Darkscream [SL+] / Meet with Zevrost
+					["qgs"] = {
+						43881,	-- Delano Morisett
+						4563,	-- Kaal Soulreaper
+						16648,	-- Zanien
+					},
+					["coords"] = {
+						{ 25.2, 14.4, THUNDER_BLUFF },	-- Delano Morisett
+						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien
+						{ 86.0, 15.6, UNDERCITY },	-- Kaal Soulreaper
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				-- #endif
 				-- #if BEFORE SHADOWLANDS
@@ -606,6 +695,25 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28303, {	-- Meet with Master Pyreanor / Meet With Avaros Dawnglaive [SL+]
+					["qgs"] = {
+						43795,	-- Aponi Brightmane
+						16681,	-- Champion Bachi
+						20406,	-- Champion Cyssa Dawnrose
+					},
+					["coords"] = {
+						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
+						{ 92.0, 37.2, SILVERMOON_CITY },	-- Champion Bachi
+						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { PALADIN },
+					["races"] = { BLOODELF },
+					["isBreadcrumb"] = true,
+				}),
+				-- #endif
 				-- #if AFTER SHADOWLANDS
 				q(28287, {	-- Meet with Mulric Boldrock [SL+] / Meet with Farseer Umbrua
 					["qgs"] = {
@@ -622,6 +730,25 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28297, {	-- Meet with Ormak Grimshot / Meet with Tamanji [SL+]
+					["qgs"] = {
+						39116,	-- Apolos
+						3039,	-- Holt Thunderhorn
+						16674,	-- Zandine
+					},
+					["coords"] = {
+						{ 57.4, 89.2, THUNDER_BLUFF },	-- Holt Thunderhorn
+						{ 84.4, 28.0, SILVERMOON_CITY },	-- Zandine
+						{ 49.6, 29.0, UNDERCITY },	-- Apolos
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { HUNTER },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				-- #endif
 				-- #if AFTER SHADOWLANDS
@@ -662,6 +789,78 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28302, {	-- Meet with Sunwalker Atohmo / Meet with Avaros Dawnglaive [SL+]
+					["qgs"] = {
+						43795,	-- Aponi Brightmane
+						20406,	-- Champion Cyssa Dawnrose
+					},
+					["coords"] = {
+						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
+						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { PALADIN },
+					["races"] = { TAUREN },
+					["isBreadcrumb"] = true,
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(28297, {	-- Meet with Tamanji [SL+] / Meet with Ormak Grimshot
+					["qgs"] = {
+						39116,	-- Apolos
+						3039,	-- Holt Thunderhorn
+						16674,	-- Zandine
+					},
+					["coords"] = {
+						{ 57.4, 89.2, THUNDER_BLUFF },	-- Holt Thunderhorn
+						{ 84.4, 28.0, SILVERMOON_CITY },	-- Zandine
+						{ 49.6, 29.0, UNDERCITY },	-- Apolos
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { HUNTER },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28301, {	-- Meet with Terga Earthbreaker / Meet with Hretar Riverspeaker [SL+]
+					["qgs"] = {
+						51639,	-- Kador Cloudsong
+						16661,	-- Gez'li
+					},
+					["coords"] = {
+						{ 22.2, 19.0, THUNDER_BLUFF },	-- Kador Cloudsong
+						{ 71.8, 56.0, SILVERMOON_CITY },	-- Gez'li
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine [SL+]
+					["qgs"] = {
+						3047,	-- Archmage Shymm
+						4566,	-- Kaelystia Hatebringer
+						16653,	-- Inethven
+					},
+					["coords"] = {
+						{ 22.6, 15.0, THUNDER_BLUFF },	-- Archmage Shymm
+						{ 53.0, 19.6, SILVERMOON_CITY },	-- Inethven
+						{ 85.2, 14.2, UNDERCITY },	-- Kaelystia Hatebringer
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { MAGE },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				-- #endif
 				-- #if AFTER SHADOWLANDS
 				q(28262, {	-- Meet with Veruca Darkstream [SL+] / Meet with Lord Tony Romano
 					["qgs"] = {
@@ -700,6 +899,31 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
+				-- #if BEFORE WOD
+				q(28299, {	-- Meet with Zevrost / Meet with Kranosh [WOD+] / Meet with Kazak Darkscream [SL+]
+					["qgs"] = {
+						43881,	-- Delano Morisett
+						4563,	-- Kaal Soulreaper
+						16648,	-- Zanien
+					},
+					["coords"] = {
+						{ 25.2, 14.4, THUNDER_BLUFF },	-- Delano Morisett
+						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien
+						{ 86.0, 15.6, UNDERCITY },	-- Kaal Soulreaper
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				-- #endif
+				
+				
+				
+				
+				
+				
 				q(4132, {	-- Operation: Death to Angerforge
 					["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
 					["sourceQuest"] = 4121,	-- Precarious Predicament
@@ -778,7 +1002,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["cost"] = { { "i", 11325, 2 } },	-- Dark Iron Ale Mug
 					["repeatable"] = true,
 				}),
-				q(28401, {	-- Slaves of the Firelord
+				q(28401, {	-- Slaves of the Firelord (A)
 					["qgs"] = {
 						-- #if AFTER SHADOWLANDS
 						164945,	-- Mulric Boldrock
@@ -806,7 +1030,29 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				q(28399, {	-- Stones of Binding
+				q(28465, {	-- Slaves of the Firelord (H)
+					["qg"] = 72939,	-- Terga Earthbreaker
+					["sourceQuest"] = 28301,	-- Meet with Terga Earthbreaker / Meet with Hretar Riverspeaker [SL+]
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 73.6, 43.3, ORGRIMMAR },
+						-- #else
+						{ 39.0, 47.4, ORGRIMMAR },
+						-- #endif
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(65643, {	-- Mask of the Speaker
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(65630, {	-- Headcover of the Speaker
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
+				}),
+				q(28399, {	-- Stones of Binding (A)
 					["qgs"] = {
 						-- #if AFTER SHADOWLANDS
 						164942,	-- Evelyn Thorn
@@ -831,6 +1077,31 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				q(28459, {	-- Stones of Binding (H)
+					["qgs"] = {
+						-- #IF AFTER SHADOWLANDS
+						168623,	-- Kazak Darkscream
+						-- #ELSE
+						88705,	-- Kranosh
+						-- #ENDIF
+					},
+					["sourceQuest"] = 28299,	-- Meet with Zevrost / Meet with Kranosh [WOD+] / Meet with Kazak Darkscream [SL+]
+					["coords"] = {
+						-- #IF AFTER SHADOWLANDS
+						{ 74.6, 47.4, ORGRIMMAR },
+						-- #ELSE
+						{ 49.0, 55.2, ORGRIMMAR },
+						-- #ENDIF
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(65627, {	-- Horns of the Left Hand Path
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
+				}),
 				q(6402, {	-- Stormwind Rendezvous
 					["qg"] = 9560,	-- Marshal Maxwell
 					["sourceQuest"] = 4322,	-- Jail Break!
@@ -846,12 +1117,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
-				q(28406, {	-- The Dark Iron Army
+				q(28406, {	-- The Dark Iron Army (A)
 					["qgs"] = {
-						-- #if BEFORE SHADOWLANDS
-						13283,	-- Lord Tony Romano
-						-- #else
+						-- #if AFTER SHADOWLANDS
 						164946,	-- Veruca Darkstream
+						-- #else
+						13283,	-- Lord Tony Romano
 						-- #endif
 					},
 					["sourceQuest"] = 28262,	-- Meet with Lord Tony Romano / Meet with Veruca Darkstream [SL+]
@@ -867,6 +1138,31 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { ROGUE },
 					["groups"] = {
 						i(65624, {	-- SI:7 Special Issue Facemask
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
+				}),
+				q(28463, {	-- The Dark Iron Army (H)
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						168598,	-- Thega Graveblade
+						-- #else
+						47233,	-- Gordul
+						-- #endif
+					},
+					["sourceQuest"] = 28298,	-- Meet with Gordul (Cata+) / Meet with Thega Graveblade (SL+)
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 75.4, 47.4, ORGRIMMAR },
+						-- #else
+						{ 44.6, 61.4, ORGRIMMAR },
+						-- #endif
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(65629, {	-- Facemask of the Shattered Hand
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},
@@ -917,7 +1213,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
-				q(28394, {	-- The Golem Lord's Creations
+				q(28394, {	-- The Golem Lord's Creations (A)
 					["qgs"] = {
 						-- #if AFTER SHADOWLANDS
 						164960,	-- Dalgrun Steelpine <Hunter Trainer>
@@ -938,6 +1234,31 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(65619, {	-- Helm of the Crown
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
+				}),
+				q(28461, {	-- The Golem Lord's Creations (H)
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						168551,	-- Tamanji
+						-- #else
+						3352,	-- Ormak Grimshot
+						-- #endif
+					},
+					["sourceQuest"] = 28297,	-- Meet with Ormak Grimshot / Meet with Tamanji [SL+]
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 73.8, 43.8, ORGRIMMAR },
+						-- #else
+						{ 63.8, 32.8, ORGRIMMAR },
+						-- #endif
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { HUNTER },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(65628, {	-- Helm of the Great Hunter
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},
@@ -1047,7 +1368,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				q(28398, {	-- The Pyromancer's Grimoire
+				q(28398, {	-- The Pyromancer's Grimoire (A)
 					["qgs"] = {
 						-- #if AFTER SHADOWLANDS
 						164955,	-- Frazzle Frostfingers
@@ -1062,6 +1383,29 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { MAGE },
 					["groups"] = {
 						i(65620, {	-- Hood of the Royal Wizard
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
+				}),
+				q(28458, {	-- The Pyromancer's Grimoire (H)
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						168626,	-- Feenix Arcshine
+						-- #else
+						47246,	-- Ureda
+						-- #endif
+					},
+					["sourceQuest"] = 28300,	-- Meet with Ureda / Meet with Feenix Arcshine [SL+]
+					-- #if AFTER SHADOWLANDS
+					["coord"] = { 74.6, 43.5, ORGRIMMAR },
+					-- #else
+					["coord"] = { 48.4, 62.6, ORGRIMMAR },
+					-- #endif
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { MAGE },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(65626, {	-- Hood of the Arcane Path
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},
@@ -1245,7 +1589,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				}),
-				q(28405, {	-- Weapons of Darkness
+				q(28405, {	-- Weapons of Darkness (A)
 					["qgs"] = {
 						-- #if AFTER SHADOWLANDS
 						164952,	-- Ezul'aan <Paladin Trainer>
@@ -1284,6 +1628,55 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(141978, {	-- Helm of the Order
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
+					},
+				}),
+				q(28466, {	-- Weapons of Darkness (Tauren)
+					["qg"] = 44725,	-- Sunwalker Atohmo
+					["sourceQuest"] = 28302,	-- Meet with Sunwalker Atohmo / Meet with Avaros Dawnglaive [SL+]
+					["coord"] = { 45.2, 53.4, ORGRIMMAR },
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { PALADIN },
+					["races"] = { TAUREN },
+					["groups"] = {
+						i(65631, {	-- Helm of the Sunwalker
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(65644, {	-- Faceguard of the Sunwalker
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(65647, {	-- Headguard of the Sunwalker
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						-- You get these when completing the quest
+						i(141976, {	-- Headguard of the Order
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(141977, {	-- Faceguard of the Order
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(141978, {	-- Helm of the Order
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+				q(28473, {	-- Weapons of Darkness (Blood Elf)
+					["qg"] = 23128,	-- Master Pyreanor
+					["sourceQuest"] = 28303,	-- Meet with Master Pyreanor / Meet With Avaros Dawnglaive [SL+]
+					["coord"] = { 49.2, 71.2, ORGRIMMAR },
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { PALADIN },
+					["races"] = { BLOODELF },
+					["groups"] = {
+						i(65632, {	-- Helm of the Order
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(65645, {	-- Faceguard of the Order
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(65648, {	-- Headguard of the Order
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(25549),	-- Blood Knight Tabard
 					},
 				}),
 				q(3982, {	-- What Is Going On? (1/2)
