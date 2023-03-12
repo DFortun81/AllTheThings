@@ -3407,7 +3407,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				--	["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
 					["qg"] = 14720,	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
-					["timeline"] = { "removed 8.0.1.27144" },
+					["timeline"] = { "added 8.0.1.27144" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(163528),	-- Deathguard's Gladius
@@ -3853,7 +3853,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 48.5, 70.7, ORGRIMMAR },
 						{ 49.0, 91.6, ORGRIMMAR },
 					},
-					["timeline"] = { "removed 8.0.1.27144" },
+					["timeline"] = { "added 8.0.1.27144" },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if ANYCLASSIC
@@ -4118,17 +4118,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 42637,	-- Sauranok the Mystic
 					["sourceQuest"] = 28909,	-- Sauranok Will Paint the Way
 					["coord"] = { 48.0, 71.0, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.1.12984" },
+					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(63922, {	-- Awestruck Bracers
-							["timeline"] = { "removed 4.0.3.13287" },
+							["timeline"] = { "added 4.0.3.13287" },
 						}),
 						i(63924, {	-- Blade-Dodging Girdle
-							["timeline"] = { "removed 4.0.3.13287" },
+							["timeline"] = { "added 4.0.3.13287" },
 						}),
 						i(63923, {	-- Hauberk of Shock
-							["timeline"] = { "removed 4.0.3.13287" },
+							["timeline"] = { "added 4.0.3.13287" },
 						}),
 					},
 				}),
@@ -4136,13 +4136,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 162190,	-- Valeera Sanguinar
 					["sourceQuest"] = 58672,	-- A Gathering of Champions
 					["coord"] = { 39.4, 79.6, ORGRIMMAR },
-					["timeline"] = { "removed 8.3.0.33169" },
+					["timeline"] = { "added 8.3.0.33169" },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60968, {	-- Warlords of Draenor: Onward to Adventure in Draenor
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "removed 9.0.1.36228" },
+					["timeline"] = { "added 9.0.1.36228" },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["repeatable"] = true,
