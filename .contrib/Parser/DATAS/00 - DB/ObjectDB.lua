@@ -1891,6 +1891,7 @@ _.ObjectNames = {
 	[280883] = "Sun-Worn Chest",
 	[280886] = "Star-Touched Chest",
 	[280903] = "Lost Cat Toy",
+	[280948] = "Twilight Outhouse",
 	[280951] = "Ashvane Spoils",
 	[280957] = "Zukashi's Satchel",
 	[281092] = "Witch Doctor's Hoard",
