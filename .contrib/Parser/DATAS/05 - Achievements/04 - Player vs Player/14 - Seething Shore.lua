@@ -7,6 +7,7 @@ root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		["maps"] = {
 			907,	-- Seething Shore
 			-- 907 doubles as the trial map, but i feel like it's better to have it show the achievements in the BG for consistency across battlegrounds.  confusing for trials, but oh well!
+			904,	-- Silithus Brawl
 		},
 		["g"] = {
 			ach(12412, {	-- Master of Seething Shore

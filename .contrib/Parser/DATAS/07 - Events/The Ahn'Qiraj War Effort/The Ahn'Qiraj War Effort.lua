@@ -1581,6 +1581,32 @@ root(ROOTS.WorldEvents, n(-538,	-- The Ahn'Qiraj War Effort
 					-- #endif
 				},
 			}),
+			applyclassicphase(PHASE_FIVE_WAR, n(QUESTS, {
+				q(8857, {	-- Secrets of the Colossus - Ashi
+					["provider"] = { "i", 21534 },	-- Colossus of Ashi's Husk
+					["cr"] = 15742,	-- Colossus of Ashi
+					["lvl"] = 51,
+					["groups"] = {
+						i(21528),	-- Colossal Bag of Loot
+					},
+				}),
+				q(8858, {	-- Secrets of the Colossus - Regal
+					["provider"] = { "i", 21535 },	-- Colossus of Regal's Husk
+					["cr"] = 15741,	-- Colossus of Regal
+					["lvl"] = 51,
+					["groups"] = {
+						i(21528),	-- Colossal Bag of Loot
+					},
+				}),
+				q(8859, {	-- Secrets of the Colossus - Zora
+					["provider"] = { "i", 21533 },	-- Colossus of Zora's Husk
+					["cr"] = 15740,	-- Colossus of Zora
+					["lvl"] = 51,
+					["groups"] = {
+						i(21528),	-- Colossal Bag of Loot
+					},
+				}),
+			})),
 			n(REWARDS, {
 				i(21436, {	-- Alliance Commendation Signet
 					["races"] = ALLIANCE_ONLY,

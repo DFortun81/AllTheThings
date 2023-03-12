@@ -1164,11 +1164,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(8276, {	-- Taking Back Silithus
-					["qg"] = 15188,	-- Cenarion Emissary Blackhoof
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(51796, {	-- The Battle for Lordaeron
 					["sourceQuest"] = 53372,	-- Hour of Reckoning
 					["providers"] = {

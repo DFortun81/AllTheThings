@@ -239,7 +239,6 @@ q(8247),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(8248),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(8266),	-- Ribbons of Sacrifice,		TBC: Ribbons of Sacrifice,		CLASSIC: Ribbons of Sacrifice
 q(8268),	-- Ribbons of Sacrifice,		TBC: Ribbons of Sacrifice,		CLASSIC: Ribbons of Sacrifice
-q(8275),	-- Taking Back Silithus,		TBC: Taking Back Silithus,		CLASSIC: Taking Back Silithus
 q(8290),	-- Vanquish the Invaders,		TBC: Vanquish the Invaders,		CLASSIC: Vanquish the Invaders
 q(8291),	-- Vanquish the Invaders!,		TBC: Vanquish the Invaders!,		CLASSIC: Vanquish the Invaders!
 q(8294),	-- Quell the Silverwing Usurpers,		TBC: Quell the Silverwing Usurpers,		CLASSIC: Quell the Silverwing Usurpers

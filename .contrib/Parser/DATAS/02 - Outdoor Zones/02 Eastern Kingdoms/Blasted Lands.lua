@@ -284,6 +284,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
+				q(28865, {	-- Call of the Warmatron
+					["qg"] = 50587,	-- Okril'on Mage
+					["coord"] = { 53.2, 33.4, SILITHUS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(25716, {	-- Cultists at our Doorstep
 					["qg"] = 5385,	-- Watcher Mahar Ba
 					["sourceQuest"] = 25714,	-- Watcher Mahar Ba
@@ -704,6 +711,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},
+				}),
+				q(28867, {	-- Nethergarde Needs You!
+					["qg"] = 50588,	-- Nethergarde Mage
+					["coord"] = { 53.4, 33.4, SILITHUS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(25712, {	-- Nethergarde Reigns
 					["qg"] = 42262,	-- Leyan Steelson

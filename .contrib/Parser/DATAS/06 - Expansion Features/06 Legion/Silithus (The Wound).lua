@@ -201,6 +201,20 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					},
 				}),
 			}),
+			n(VENDORS, {
+				n(132139, {	-- Hagras Wartaker <Blacksmith> (Silithus)
+					["coord"] = { 66.2, 55.2, SILITHUS },
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
+				}),
+			}),
 		},
 	}),
 })));
