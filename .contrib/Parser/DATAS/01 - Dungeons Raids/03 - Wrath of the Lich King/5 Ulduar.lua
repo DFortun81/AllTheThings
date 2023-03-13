@@ -125,10 +125,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 					},
 				}),
-				ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
-					["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
-					["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
-				}),
 				ach(12312, {	-- Dwarfageddon
 					["timeline"] = { "added 7.3.5.25727" },
 					["crs"] = {
@@ -153,6 +149,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				["icon"] = "Interface\\Icons\\inv_mace_99",
 				["isRaid"] = true,
 				["groups"] = {
+					ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
+						["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
+						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+					}),
 					q(13622, {	-- Ancient History
 						["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
 						["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
@@ -1240,6 +1240,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["icon"] = "Interface\\Icons\\inv_mace_99",
 						["isRaid"] = true,
 						["groups"] = {
+							ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
+								["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
+								["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+							}),
 							q(13622, {	-- Ancient History
 								["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
 								["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
