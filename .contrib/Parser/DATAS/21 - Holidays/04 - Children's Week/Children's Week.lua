@@ -117,57 +117,75 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 			}),
 			ach(1792),	-- Aw, Isn't It Cute?
 			ach(1788, {	-- Bad Example
-				crit(6, {	-- Dalaran Brownie
+				crit(6656, {	-- Dalaran Brownie
 					["provider"] = { "i", 42431 },	-- Dalaran Brownie
 					["maps"] = {
 						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
 						LEGION_DALARAN,
+						-- #endif
 					},
 				}),
-				crit(7, {	-- Dalaran Doughnut
+				crit(6657, {	-- Dalaran Doughnut
 					["provider"] = { "i", 42430 },	-- Dalaran Doughnut
 					["maps"] = {
 						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
 						LEGION_DALARAN,
+						-- #endif
 					},
 				}),
-				crit(4, {	-- Delicious Chocolate Cake
+				crit(6654, {	-- Delicious Chocolate Cake
 					["provider"] = { "i", 33924 },	-- Delicious Chocolate Cake
 					["maps"] = {
 						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
 						LEGION_DALARAN,
+						-- #endif
 					},
 				}),
-				crit(5, {	-- Lovely Cake Slice
+				crit(6655, {	-- Lovely Cake Slice
 					["provider"] = { "i", 42438 },	-- Lovely Cake
+					-- #if AFTER MOP
 					["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
 					["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
+					-- #endif
 					["maps"] = {
 						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
 						LEGION_DALARAN,
+						-- #endif
 					},
 				}),
-				crit(3, {	-- Red Velvet Cupcake
+				crit(6653, {	-- Red Velvet Cupcake
 					["provider"] = { "i", 42429 },	-- Red Velvet Cupcake
+					-- #if AFTER MOP
 					["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
 					["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
+					-- #endif
 					["maps"] = {
 						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
 						LEGION_DALARAN,
+						-- #endif
 					},
 				}),
-				crit(2, {	-- Tasty Cupcake
+				crit(6652, {	-- Tasty Cupcake
 					["provider"] = { "i", 43490 },	-- Tasty Cupcake
 				}),
-				crit(1, {	-- Tigule's Strawberry Ice Cream
+				crit(6651, {	-- Tigule's Strawberry Ice Cream
 					["provider"] = { "i", 7228 },	-- Tigule's Strawberry Ice Cream
 					["crs"] = { -- TODO: Remove, add vendors to zones
 						-- Katrina Shimmerstar & Rachelle Gothena are listed on WoWHead, but only appear during Hallow's End.
 						14480,	-- Alowicious Czervik
+						-- #if AFTER 4.0.3.13277
 						47383,	-- Brivelthwerp
+						-- #endif
 						18914,	-- Caregiver Isel
 						14481,	-- Emmithue Smails
+						-- #if AFTER 4.0.3.13277
 						49893,	-- Lisa McKeever
+						-- #endif
 						18913,	-- Matron Tikkit
 						24934,	-- Snack-O-Matic IV
 					},
@@ -193,7 +211,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 			}),
 			ach(1791),	-- Home Alone
 			ach(1786, {	-- School of Hard Knocks
-				crit(3, {	-- Assault a flag in Arathi Basin
+				crit(6643, {	-- Assault a flag in Arathi Basin
 					["maps"] = {
 						ARATHI_BASIN,
 						837,	-- Arathi Basin
@@ -202,17 +220,17 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 						1366,	-- Arathi Basin
 					},
 				}),
-				crit(2, {	-- Assault a tower in Alterac Valley
+				crit(6642, {	-- Assault a tower in Alterac Valley
 					["maps"] = {
 						ALTERAC_VALLEY,
 					},
 				}),
-				crit(1, {	-- Capture the flag in Eye of the Storm
+				crit(6641, {	-- Capture the flag in Eye of the Storm
 					["maps"] = {
 						EYE_OF_THE_STORM,
 					},
 				}),
-				crit(4, {	-- Return a fallen flag in Warsong Gulch
+				crit(6644, {	-- Return a fallen flag in Warsong Gulch
 					["maps"] = {
 						WARSONG_GULCH,
 						859,	-- Warsong Gulch
@@ -223,6 +241,17 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 			ach(275, {	-- Veteran Nanny
 				["maps"] = { SHATTRATH_CITY },
 				["groups"] = {
+					-- #if NOT ANYCLASSIC
+					crit(52728, {	-- Egbert
+						["provider"] = { "i", 32616 },	-- Egbert's Egg
+					}),
+					crit(52726, {	-- Peanut
+						["provider"] = { "i", 32622 },	-- Elekk Training Collar
+					}),
+					crit(52727, {	-- Willy
+						["provider"] = { "i", 32617 },	-- Sleepy Willy
+					}),
+					-- #else
 					crit(9169, {	-- Egbert
 						["provider"] = { "i", 32616 },	-- Egbert's Egg
 					}),
@@ -232,6 +261,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 					crit(9168, {	-- Willy
 						["provider"] = { "i", 32617 },	-- Sleepy Willy
 					}),
+					-- #endif
 				},
 			}),
 		}),
