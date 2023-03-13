@@ -5237,7 +5237,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { DWARF },
-					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["lvl"] = 20,
 				}),
 				q(1793, {	-- The Tome of Valor [Human]
@@ -5250,7 +5250,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { HUMAN },
-					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["lvl"] = 20,
 				}),
 				q(1649, {	-- The Tome of Valor (1/4)
