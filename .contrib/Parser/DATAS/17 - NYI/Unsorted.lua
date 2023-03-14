@@ -2436,7 +2436,6 @@ root(ROOTS.Unsorted, {
 					i(203757),	-- Brazier of Madness (TOY!)
 					i(202360),	-- Dented Can (TOY!)
 					i(204257),	-- Holoviewer: The Lady of Dreams (TOY!)
-					i(204256),	-- Holoviewer: The Scarlet Queen (TOY!)
 					i(204262),	-- Holoviewer: The Timeless One (TOY!)
 					i(204220),	-- Hraxian's Unbreakable Will (TOY!)
 					i(204687),	-- Obsidian Battle Horn (TOY!)
@@ -2584,7 +2583,6 @@ root(ROOTS.Unsorted, {
 				i(203686),	-- Odd Round Object
 				i(203687),	-- Dusty Vase
 				i(203690),	-- Pearlescent Bubble Key
-				i(203700),	-- Tattered Gift Package
 				i(203702),	-- Experimental Melder
 				i(203704),	-- Stone Dissolver
 				i(203705),	-- Empty Vial

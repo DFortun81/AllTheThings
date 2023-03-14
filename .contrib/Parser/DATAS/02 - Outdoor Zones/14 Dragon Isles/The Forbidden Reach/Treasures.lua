@@ -42,8 +42,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			i(204328),	-- Return of the Nightsquall
 			i(204321),	-- Lost Expedition Notes
 			i(204317),	-- Words of the Wyrmslayer
-			i(204691),	-- Living Book
-			i(204181),	-- Opera of the Aspects
 			i(204185),	-- The Old Gods and the Ordering of Azeroth (Annotated)
 
 			-- TODO: Sealed Scroll Maps lead to these

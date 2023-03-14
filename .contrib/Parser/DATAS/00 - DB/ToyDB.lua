@@ -1152,6 +1152,7 @@ i(202309);	-- Defective Doomsday Device
 ------------------
 i(202253);	-- Primal Stave of Claw and Fur
 i(201930);	-- H.E.L.P.
+i(204256);	-- Holoviewer: The Scarlet Queen
 i(202283);	-- Reading Glasses
 i(199900);	-- Secondhand Survey Tools
 -- Unsorted --
@@ -1159,7 +1160,6 @@ i(204675);	-- A Drake's Big Basket of Eggs
 i(203757);	-- Brazier of Madness (ZG?)
 i(202360);	-- Dented Can
 i(204257);	-- Holoviewer: The Lady of Dreams
-i(204256);	-- Holoviewer: The Scarlet Queen
 i(204262);	-- Holoviewer: The Timeless One
 i(204220);	-- Hraxian's Unbreakable Will
 i(204687);	-- Obsidian Battle Horn

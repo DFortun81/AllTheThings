@@ -67,10 +67,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
 					["coord"] = { 25.8, 47.9, THE_FORBIDDEN_REACH },
 				}),
+				q(72952, {	-- The Scary Vault of Ur
+					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
+					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
+				}),
 				q(74294, {	-- The Keys You Need
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
 					["coord"] = { 25.8, 47.9, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(202196),	-- Zskera Vault Key
+					},
+				}),
+				q(74771, {	-- Key Hunting
+					["sourceQuests"] = { 72952 },	-- The Scary Vault of Ur
+					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
+					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
 					["g"] = {
 						i(202196),	-- Zskera Vault Key
 					},
@@ -123,7 +136,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["cost"] = { { "i", 203761, 1 }, },	-- 1x Neltharion Gift Token
 					["repeatable"] = true,
 					["g"] = {
-						i(203699),	-- Tattered Gift Package
+						i(203700),	-- Tattered Gift Package
 					},
 				}),
 				q(73071, {	-- A Brew for the Ages
@@ -139,9 +152,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["provider"] = { "n", 202627 },	-- Earthcaller Yevaa
 					["coord"] = { 25.5, 53.2, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(202196),	-- Zskera Vault Key
+						i(193363),	-- Bunbo (PET!)
 						i(193908),	-- Kobaldt (PET!)
 						i(203701),	-- Neltharion Gift Token
+						i(202196),	-- Zskera Vault Key
 					},
 				}),
 				q(73155, {	-- The Forgotten Ring
@@ -155,6 +169,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["sourceQuests"] = { 73155 },	-- The Forgotten Ring
 					["provider"] = { "n", 200724 },	-- Researcher Imareth
 					["coord"] = { 35.1, 57.6, THE_FORBIDDEN_REACH },
+				}),
+
+				q(74282, {	-- Authentic Authorization
+					["provider"] = { "n", 203381 },	-- Sealed Letter to Neltharion
 				}),
 
 				-- Evoker Tablets
@@ -254,13 +272,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						{ "i", 204369, 1 },	-- 1x Scrap of Black Dragonscales
 					},
 				}),
-				i(204371),	-- Drop of Blue Dragon Magic
-				i(204375),	-- Everburning Ruby Coals
 				i(204372),	-- Speck of Bronze Dust
 				i(204374),	-- Emerald Dragon Brooch
 			}),
 			n(TREASURES, {
-				n(TIER_ONE, {
+				n(TIER_ONE, {	-- 5 Keys
+					o(390009, {	-- Box of Rocks
+						["coord"] = { 29.6, 58.1, THE_FORBIDDEN_REACH },
+						["questID"] = 75118,
+						["g"] = {
+							i(199216),	-- A Box of Rocks
+						},
+					}),
 					o(386427, {	-- Cart of Crushed Stone
 						["coord"] = { 26.8, 53.7, THE_FORBIDDEN_REACH },
 						["questID"] = 74401,
@@ -280,6 +303,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						["coord"] = { 25.3, 53.5, THE_FORBIDDEN_REACH },
 						["questID"] = 75013,
 					}),
+					o(385064, {	-- Ice Spike
+						["coord"] = { 30.6, 57.2, THE_FORBIDDEN_REACH },
+						["questID"] = 75056,
+					}),
+					o(390008, {	-- Ice Spike
+						["coord"] = { 30.8, 57.4, THE_FORBIDDEN_REACH },
+						["questID"] = 75117,
+					}),
+					o(389599, {	-- Ice Spike
+						["coord"] = { 30.7, 57.5, THE_FORBIDDEN_REACH },
+						["questID"] = 75057,
+					}),
 					o(390258, {	-- Inert Goo
 						["coord"] = { 27.8, 50.8, THE_FORBIDDEN_REACH },
 						["questID"] = 75147,
@@ -294,8 +329,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						},
 					}),
 					o(384980, {	-- Mysterious Chest
-						-- ["coord"] = { 25.7, 51.1, THE_FORBIDDEN_REACH }, Wrong? -> 28.7, 57.8 also possible, multiple spawn locations?
+						["coord"] = { 28.7, 57.8, THE_FORBIDDEN_REACH },
 						["questID"] = 72710,
+						["g"] = {
+							i(204371),	-- Drop of Blue Dragon Magic
+							i(204360),	-- Strange Petrified Orb
+						},
 					}),
 					o(386581, {	-- Neltharion Gift
 						["coord"] = { 25.5, 52.5, THE_FORBIDDEN_REACH },
@@ -320,7 +359,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					}),
 					o(386426, {	-- Primordial Earth Cache
 						["coord"] = { 26.4, 53.9, THE_FORBIDDEN_REACH },
-						["questID"] = 74400,	-- TODO: This was another element of cache for me...
+						["questID"] = 74400,
 					}),
 					o(386532, {	-- Primordial Gold Cache
 						["coord"] = { 25.3, 53.7, THE_FORBIDDEN_REACH },
@@ -333,6 +372,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					o(386433, {	-- Primordial Wind Cache
 						["coord"] = { 26.8, 54.0, THE_FORBIDDEN_REACH },
 						["questID"] = 74407,
+					}),
+					o(388895, {	-- Random Scribblings
+						-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+						["g"] = {
+							i(204306),	-- Random Scribblings
+						},
 					}),
 					o(388876, {	-- Reagent Pot
 						["coord"] = { 26.8, 53.8, THE_FORBIDDEN_REACH },
@@ -358,11 +403,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						-- ["questID"] = ,
 					}),
 					o(386453, {	-- Wind-Bound Strongbox
-						["coord"] = { 25.7, 51.1, THE_FORBIDDEN_REACH },
-						["questID"] = 74417,
+						["coord"] = { 29.7, 58.3, THE_FORBIDDEN_REACH },
+						["questID"] = 74419,
 					}),
 				}),
-				n(TIER_TWO, {
+				n(TIER_TWO, {	-- 8 Keys
+					o(386690, {	-- Ambiguous Compendium
+						["coord"] = { 29.4, 58.1, THE_FORBIDDEN_REACH },
+						["questID"] = 74613,
+					}),
 					o(385468, {	-- Bone Pile
 						["coord"] = { 26.1, 54.0, THE_FORBIDDEN_REACH },
 						["questID"] = 72904,
@@ -397,11 +446,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						["coord"] = { 26.5, 49.3, THE_FORBIDDEN_REACH },
 						["questID"] = 73068,
 					}),
-					o(386353, {	-- Hardened Chest
-						["coord"] = { 30.2, 59.0, THE_FORBIDDEN_REACH },
+					o(386354, {	-- Hardened Chest
+						["coord"] = { 30.1, 57.9, THE_FORBIDDEN_REACH },
 						["questID"] = 74358,
 						["g"] = {
-							i(204360),	-- Strange Petrified Orb
+							i(193363),	-- Bunbo (PET!)
+							i(204369),	-- Scrap of Black Dragonscales
 						},
 					}),
 					o(386353, {	-- Hardened Chest
@@ -414,10 +464,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					o(385799, {	-- Hardened Strongbox
 						["coord"] = { 26.7, 48.8, THE_FORBIDDEN_REACH },
 						["questID"] = 73066,
+						["g"] = {
+							i(204375),	-- Everburning Ruby Coals
+						},
 					}),
 					o(386456, {	-- Hardshell Chest
 						["coord"] = { 27.4, 50.0, THE_FORBIDDEN_REACH },
 						["questID"] = 74422,
+					}),
+					o(386455, {	-- Hardshell Chest
+						["coord"] = { 30.9, 56.8, THE_FORBIDDEN_REACH },
+						["questID"] = 74421,
 					}),
 					--[[
 					o(, {	-- Hardshell Chest
@@ -431,6 +488,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							i(202336),	-- Journal Entry: The Creches
 						},
 					}),
+					o(386680, {	-- Mysterious Almanac
+						["coord"] = { 29.4, 58.3, THE_FORBIDDEN_REACH },
+						["questID"] = 74589,
+					}),
 					o(386582, {	-- Neltharion Gift Token
 						["coord"] = { 26.4, 49.4, THE_FORBIDDEN_REACH },
 						["questID"] = 74508,
@@ -438,18 +499,42 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							i(203701),	-- Neltharion Gift Token
 						},
 					}),
+					o(386573, {	-- Ornate Key Box
+						["coord"] = { 29.4, 58.3, THE_FORBIDDEN_REACH },
+						["g"] = {
+							i(203690, {	-- Pearlescent Bubble Key
+								["description"] = "This item is needed to unlock next floor",
+							}),
+						},
+					}),
+					o(386762, {	-- Primordial Armor Cache
+						["coord"] = { 30.5, 55.0, THE_FORBIDDEN_REACH },
+						["questID"] = 74636,
+					}),
 					o(386458, {	-- Primordial Decay Cache
 						["coord"] = { 26.0, 54.0, THE_FORBIDDEN_REACH },
 						["questID"] = 74424,
+					}),
+					o(390074, {	-- Primordial Deep Ocean Cache
+						["coord"] = { 31.0, 56.7, THE_FORBIDDEN_REACH },
+						["questID"] = 75129,
 					}),
 					o(386428, {	-- Primordial Earth Cache
 						["description"] = "The Key can be looted by nearby elemental, after interacting with the orb.",
 						["coord"] = { 27.0, 53.6, THE_FORBIDDEN_REACH },
 						["questID"] = 74402,
 					}),
+					o(386421, {	-- Primordial Fire Cache
+						["coord"] = { 28.3, 57.3, THE_FORBIDDEN_REACH },
+						["questID"] = 74394,
+					}),
 					o(386463, {	-- Primordial Gold Cache
 						["coord"] = { 26.4, 49.0, THE_FORBIDDEN_REACH },
 						["questID"] = 74429,
+					}),
+					o(389231, {	-- Primordial Music Cache
+						["coord"] = { 29.9, 54.4, THE_FORBIDDEN_REACH },
+						["questID"] = 75033,
 					}),
 					o(386445, {	-- Primordial Water Chest
 						["coord"] = { 27.7, 50.5, THE_FORBIDDEN_REACH },
@@ -480,77 +565,136 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							i(203703),	-- Prismatic Fragment
 						},
 					}),
+					o(385940, {	-- Runic Wrench
+						-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+						["g"] = {
+							i(202403),	-- Runic Wrench
+						},
+					}),
+					o(386683, {	-- Seared Book
+						["coord"] = { 29.2, 58.5, THE_FORBIDDEN_REACH },
+						["questID"] = 74609,
+					}),
+					o(385401, {	-- Searing Chest
+						["coord"] = { 28.5, 57.5, THE_FORBIDDEN_REACH },
+						["questID"] = 72890,
+					}),
+					o(385937, {	-- Titan Coffer
+						["coord"] = { 28.8, 54.8, THE_FORBIDDEN_REACH },
+						["questID"] = 73176,
+						["cost"] = { { "i", 202403, 1 }, },	-- 1x Runic Wrench
+					}),
+					o(385826, {	-- Titan Coffer
+						["coord"] = { 28.9, 54.4, THE_FORBIDDEN_REACH },
+						["questID"] = 73112,
+						["cost"] = { { "i", 202403, 1 }, },	-- 1x Runic Wrench
+					}),
 				}),
 				n(TIER_THREE, {
-					--[[
-					o(, {	-- Frozen Coffer
-						["coord"] = { 26.8, 53.7, THE_FORBIDDEN_REACH },
-						["questID"] = 74423,
-					}),
-					--]]
-					o(386660, {	-- Gold Pile
-						["coord"] = { 25.1, 50.0, THE_FORBIDDEN_REACH },
-						["questID"] = 74575,
-					}),
-					o(386605, {	-- Gold Pile
-						["coord"] = { 24.9, 50.1, THE_FORBIDDEN_REACH },
-						["questID"] = 74530,
-					}),
-					o(386430, {	-- Hardened Chest
-						["coord"] = { 27.3, 49.6, THE_FORBIDDEN_REACH },
-						["questID"] = 74404,
-					}),
-					o(386578, {	-- Neltharion Gift Token
-						["coord"] = { 24.8, 50.5, THE_FORBIDDEN_REACH },
-						["questID"] = 74504,
-						["g"] = {
-							i(203701),	-- Neltharion Gift Token
-						},
-					}),
-					o(386583, {	-- Neltharion Gift Token
-						["coord"] = { 26.9, 49.3, THE_FORBIDDEN_REACH },
-						["questID"] = 74509,
-						["g"] = {
-							i(203701),	-- Neltharion Gift Token
-						},
-					}),
-					o(386579, {	-- Neltharion Gift Token
-						["coord"] = { 26.7, 53.8, THE_FORBIDDEN_REACH },
-						["questID"] = 74505,
-						["g"] = {
-							i(203701),	-- Neltharion Gift Token
-						},
-					}),
-					o(386460, {	-- Primordial Arcane Cache
-						["coord"] = { 27.6, 52.7, THE_FORBIDDEN_REACH },
-						["questID"] = 74426,
-					}),
-					o(386429, {	-- Primordial Earth Cache
-						["coord"] = { 27.3, 49.6, THE_FORBIDDEN_REACH },
-						["questID"] = 74403,
-					}),
-					o(386604, {	-- Primordial Gold Cache
-						["coord"] = { 25.1, 49.9, THE_FORBIDDEN_REACH },
-						["questID"] = 74529,
-					}),
-					o(386447, {	-- Primordial Water Cache
-						["coord"] = { 26.3, 53.9, THE_FORBIDDEN_REACH },
-						["questID"] = 74413,
-					}),
-					o(389108, {	-- Prismatic Fragment
-						["coord"] = { 26.5, 54.1, THE_FORBIDDEN_REACH },
-						["questID"] = 75012,
-						["g"] = {
-							i(203703),	-- Prismatic Fragment
-						},
-					}),
-					o(389104, {	-- Prismatic Fragment
-						["coord"] = { 25.3, 53.8, THE_FORBIDDEN_REACH },
-						["questID"] = 75008,
-						["g"] = {
-							i(203703),	-- Prismatic Fragment
-						},
-					}),
+					["cost"] = { { "i", 203690, 1 }, },	-- 1x Pearlescent Bubble Key
+					["g"] = {
+						o(392570, {	-- Chain-Bound Primordial Cache
+							["coord"] = { 28.2, 56.6, THE_FORBIDDEN_REACH },
+							["questID"] = 75176,
+						}),
+						o(392569, {	-- Chain-Bound Primordial Cache
+							["coord"] = { 28.2, 56.6, THE_FORBIDDEN_REACH },
+							["questID"] = 75175,
+						}),
+						o(392573, {	-- Chain-Bound Strongbox
+							["coord"] = { 28.2, 56.8, THE_FORBIDDEN_REACH },
+							["questID"] = 75179,
+						}),
+						o(392571, {	-- Chain-Bound Strongbox
+							["coord"] = { 28.2, 56.7, THE_FORBIDDEN_REACH },
+							["questID"] = 75177,
+						}),
+						o(392572, {	-- Chain-Bound Strongbox
+							["coord"] = { 28.2, 56.6, THE_FORBIDDEN_REACH },
+							["questID"] = 75178,
+						}),
+						o(386591, {	-- Empty Vial
+							-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+							["g"] = {
+								i(203705),	-- Empty Obsidian Vial
+							},
+						}),
+						o(386457, {	-- Frozen Coffer
+							["coord"] = { 29.9, 58.1, THE_FORBIDDEN_REACH },
+							["questID"] = 74423,
+						}),
+						o(386660, {	-- Gold Pile
+							["coord"] = { 25.1, 50.0, THE_FORBIDDEN_REACH },
+							["questID"] = 74575,
+						}),
+						o(386605, {	-- Gold Pile
+							["coord"] = { 24.9, 50.1, THE_FORBIDDEN_REACH },
+							["questID"] = 74530,
+						}),
+						o(386430, {	-- Hardened Chest
+							["coord"] = { 27.3, 49.6, THE_FORBIDDEN_REACH },
+							["questID"] = 74404,
+						}),
+						o(386578, {	-- Neltharion Gift Token
+							["coord"] = { 24.8, 50.5, THE_FORBIDDEN_REACH },
+							["questID"] = 74504,
+							["g"] = {
+								i(203701),	-- Neltharion Gift Token
+							},
+						}),
+						o(386583, {	-- Neltharion Gift Token
+							["coord"] = { 26.9, 49.3, THE_FORBIDDEN_REACH },
+							["questID"] = 74509,
+							["g"] = {
+								i(203701),	-- Neltharion Gift Token
+							},
+						}),
+						o(386579, {	-- Neltharion Gift Token
+							["coord"] = { 26.7, 53.8, THE_FORBIDDEN_REACH },
+							["questID"] = 74505,
+							["g"] = {
+								i(203701),	-- Neltharion Gift Token
+							},
+						}),
+						o(386460, {	-- Primordial Arcane Cache
+							["coord"] = { 27.6, 52.7, THE_FORBIDDEN_REACH },
+							["questID"] = 74426,
+						}),
+						o(386429, {	-- Primordial Earth Cache
+							["coord"] = { 27.3, 49.6, THE_FORBIDDEN_REACH },
+							["questID"] = 74403,
+						}),
+						o(386422, {	-- Primordial Fire Cache
+							["coord"] = { 29.4, 54.2, THE_FORBIDDEN_REACH },
+							["questID"] = 74395,
+						}),
+						o(386604, {	-- Primordial Gold Cache
+							["coord"] = { 25.1, 49.9, THE_FORBIDDEN_REACH },
+							["questID"] = 74529,
+						}),
+						o(386447, {	-- Primordial Water Cache
+							["coord"] = { 26.3, 53.9, THE_FORBIDDEN_REACH },
+							["questID"] = 74413,
+						}),
+						o(389108, {	-- Prismatic Fragment
+							["coord"] = { 26.5, 54.1, THE_FORBIDDEN_REACH },
+							["questID"] = 75012,
+							["g"] = {
+								i(203703),	-- Prismatic Fragment
+							},
+						}),
+						o(389104, {	-- Prismatic Fragment
+							["coord"] = { 25.3, 53.8, THE_FORBIDDEN_REACH },
+							["questID"] = 75008,
+							["g"] = {
+								i(203703),	-- Prismatic Fragment
+							},
+						}),
+						o(386425, {	-- Searing Chest
+							["coord"] = { 29.1, 54.4, THE_FORBIDDEN_REACH },
+							["questID"] = 74398,
+						}),
+					},
 				}),
 				n(TIER_FOUR, {
 					o(387749, {	-- Animate Crystalspine
@@ -560,9 +704,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							i(193908),	-- Kobaldt (PET!)
 						},
 					}),
+					o(386454, {	-- Chest of Ice
+						["coord"] = { 28.3, 55.6, THE_FORBIDDEN_REACH },
+						["questID"] = 74420,
+					}),
+					o(386432, {	-- Hardened Chest
+						["coord"] = { 30.5, 55.1, THE_FORBIDDEN_REACH },
+						["questID"] = 74406,
+					}),
 					o(388908, {	-- Inert Goo
 						["coord"] = { 27.8, 50.8, THE_FORBIDDEN_REACH },
 						["questID"] = 75020,
+					}),
+					o(387737, {	-- Living Book
+						["coord"] = { 29.8, 54.0, THE_FORBIDDEN_REACH },
+						["questID"] = 75245,
+						["g"] = {
+							i(204691),	-- Living Book
+						},
 					}),
 					o(387501, {	-- Neltharion Gift Token
 						["coord"] = { 24.4, 51.0, THE_FORBIDDEN_REACH },
@@ -571,12 +730,64 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							i(203701),	-- Neltharion Gift Token
 						},
 					}),
-					--[[
-					o(, {	-- Primordial Spirit Cache
-						["coord"] = { 24.8, 52.5, THE_FORBIDDEN_REACH },
+					o(388712, {	-- Opera Chest
+						["coord"] = { 29.7, 54.2, THE_FORBIDDEN_REACH },
+						["questID"] = 74947,
+						["g"] = {
+							i(204256),	-- Holoviewer: The Scarlet Queen (TOY!)
+						},
+					}),
+					o(387728, {	-- Opera of the Aspects
+						["coord"] = { 29.8, 54.2, THE_FORBIDDEN_REACH },
+						["questID"] = 75381,
+						["g"] = {
+							i(204181),	-- Opera of the Aspects
+						},
+					}),
+					o(386461, {	-- Primordial Arcane Cache
+						["coord"] = { 28.8, 54.7, THE_FORBIDDEN_REACH },
+						["questID"] = 74759,
+					}),
+					o(389173, {	-- Primordial Blood Cache
+						["coord"] = { 30.9, 56.6, THE_FORBIDDEN_REACH },
+						["questID"] = 75031,
+					}),
+					o(389789, {	-- Primordial Earth Cache
+						["description"] = "Use Stone Dissolver.",
+						["coord"] = { 30.6, 55.1, THE_FORBIDDEN_REACH },
+						["questID"] = 75066,
+					}),
+					o(389902, {	-- Primordial Earth Cache
+						["description"] = "Use Stone Dissolver.",
+						["coord"] = { 30.6, 55.3, THE_FORBIDDEN_REACH },
+						["questID"] = 75068,
+					}),
+					o(386423, {	-- Primordial Fire Cache
+						["coord"] = { 30.3, 58.2, THE_FORBIDDEN_REACH },
+						["questID"] = 74396,
+					}),
+					o(387746, {	-- Primordial Spirit Cache
+						["coord"] = { 28.3, 57.2, THE_FORBIDDEN_REACH },
 						["questID"] = 74862,
 					}),
-					--]]
+					o(386450, {	-- Primordial Water Cache
+						["coord"] = { 28.2, 56.0, THE_FORBIDDEN_REACH },
+						["questID"] = 74414,
+					}),
+					o(386443, {	-- Primordial Wind Cache
+						["coord"] = { 29.4, 58.3, THE_FORBIDDEN_REACH },
+						["questID"] = 74410,
+					}),
+					o(387503, {	-- Sealed Letter to Neltharion
+						-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+						["g"] = {
+							i(203381),	-- Sealed Letter to Neltharion
+						},
+					}),
+					o(386424, {	-- Searing Chest
+						["coord"] = { 30.1, 57.9, THE_FORBIDDEN_REACH },
+						["questID"] = 74397,
+					}),
 					o(387853, {	-- Shattered Crystals
 						["description"] = "Use Stone Dissolver.",
 						["coord"] = { 27.0, 49.6, THE_FORBIDDEN_REACH },
@@ -586,7 +797,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							i(204199),	-- Ley-Infused Crystal
 						},
 					}),
-
+					o(386451, {	-- Wind-Bound Strongbox
+						["coord"] = { 25.7, 51.1, THE_FORBIDDEN_REACH },
+						["questID"] = 74417,
+					}),
 				}),
 				-- Floor Unknown
 				o(385834, {	-- Journal Entry: Experiments
@@ -648,6 +862,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 
 				-- Unknown
 				i(204278),	-- Neltharion's Toolkit
+
+				--
+				n(200777, {	-- Unleashed Earth
+					i(169872),	-- Key of Bound Earth
+				}),
 			}),
 		}),
 	}),
@@ -692,6 +911,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75125),
 		q(74327),
 		q(74496),
+		q(75032),
 		-- Completed
 		q(74432),
 		q(74474),
@@ -716,14 +936,22 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75505),	-- Looted spider cocoon in a vault room
 		q(75499),	-- Looted spider cocoon in a vault room
 		q(75498),	-- Looted spider cocoon in a vault room
-		q(75056),	-- Looted ice spike in a vault room
-		q(75117),	-- Looted ice spike in a vault room
-		q(75057),	-- Looted ice spike in a vault room
-		q(75118),	-- Looted box of rocks in a vault room
 
+		q(74612),	-- Research Volume Spawn (201953)
+		q(74611),	-- Research Volume Spawn (201953)
+		q(74610),	-- Research Volume Spawn (201953)
 		q(75014),	-- Touch big slime?
 		-- Chains
-		q(75173),	-- Pulled Chained first floor
-		q(75172),	-- Pulled Chained second floor
+		q(75173),	-- Pulled Chain First Floor
+		q(75172),	-- Pulled Chain Second Floor
+		q(75171),	-- Pulled Chain Third Floor
+		q(75170),	-- Pulled Chain Third Floor
+		q(75174),	-- Pulled Chain Fourth Floor
+		-- Stone Dissolver
+		q(75069),	-- On Primordial Earth Cache 389789
+		q(75070),	-- On Primordial Earth Cache 389902
+
+		--
+		q(74874),	-- Pop when completing Primordial Answers (74869)
 	}),
 })));
