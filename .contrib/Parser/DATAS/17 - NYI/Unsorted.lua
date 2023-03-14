@@ -2764,13 +2764,6 @@ root(ROOTS.Unsorted, {
 				i(204559),	-- Essence of Divination
 				i(204560),	-- Azure Scrying Crystal
 				i(204561),	-- Primalist Cache keys
-				i(204573),	-- Condensed Fire Magic
-				i(204574),	-- Condensed Frost Magic
-				i(204575),	-- Condensed Earth Magic
-				i(204576),	-- Condensed Shadow Magic
-				i(204577),	-- Condensed Nature Magic
-				i(204578),	-- Condensed Arcane Magic
-				i(204579),	-- Condensed Necromantic Magic
 				i(204632),	-- Tectonic Rock Fragment
 				i(204636),	-- Snarfang's Stomach Sac
 				i(204674),	-- Cursed Demonbone Longbow
@@ -3080,7 +3073,6 @@ root(ROOTS.Unsorted, {
 				q(74527),
 				q(74529),
 				q(74530),
-				q(74567),
 				q(74574),
 				q(74575),
 				q(74576),

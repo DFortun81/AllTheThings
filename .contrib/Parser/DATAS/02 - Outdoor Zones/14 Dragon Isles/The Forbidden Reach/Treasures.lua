@@ -7,6 +7,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			o(386633, {	-- Chest of Storms
 				["coord"] = { 48.8, 73.1, THE_FORBIDDEN_REACH },
 				["questID"] = 74567,
+				["g"] = {
+					i(204573),	-- Condensed Fire Magic
+					i(204574),	-- Condensed Frost Magic
+					i(204575),	-- Condensed Earth Magic
+					i(204576),	-- Condensed Shadow Magic
+					i(204577),	-- Condensed Nature Magic
+					i(204578),	-- Condensed Arcane Magic
+					i(204579),	-- Condensed Necromantic Magic
+					-- currency(2118),	-- Elemental Overflow
+					-- i(202196),	-- Zskera Vault Key
+				},
+				["sym"] = {
+					{"select", "mapID", THE_FORBIDDEN_REACH },{"pop"},
+					{"where", "headerID", ZONE_REWARDS },{"pop"},
+					{"not", "itemID", 204276 },	-- Untapped Forbidden Knowledge (TODO: verify this exclusion)
+				},
 			}),
 			o(386168, {	-- Farscale Cache
 				["coord"] = { 75.6, 65.0, THE_FORBIDDEN_REACH },
@@ -38,5 +54,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			i(202872),	-- Token of Blessing
 			i(202854),	-- Wondrous Fish
 		}),
+	}),
+})))
+
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+	n(THE_FORBIDDEN_REACH, {
+		q(74567),	-- Chest of Storms tracking quest
 	}),
 })))
