@@ -17,6 +17,15 @@ i(200800);	-- Fool's Gold
 i(200832);	-- Geode Splinters
 i(192648);	-- Pristine Beast Fur
 i(192644);	-- Aeriform Speck
+i(200841);	-- Miniature Prismatic Disc
+i(200794);	-- Fresh Critter Carcass
+i(200852);	-- Nourishing Fertilizer
+i(200816);	-- Partially Damp Measuring Stick
+i(200813);	-- Assorted Fractals
+i(200788);	-- Mantacorn Horns
+i(200843);	-- Severely Chipped Broadsword
+i(200801);	-- Gilded Statuette
+i(200779);	-- Lava Jars
 
 -- SL
 i(179293);	-- Glimmering Facial Cream
