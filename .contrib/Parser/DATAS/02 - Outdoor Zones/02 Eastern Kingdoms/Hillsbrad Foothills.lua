@@ -3112,9 +3112,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(3053, {	-- Humbert's Chestpiece
 					["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure.
+					-- #if AFTER CATA
 					["coords"] = {
 						{ 63.2, 85.8, HILLSBRAD_FOOTHILLS },
 					},
+					-- #endif
 					["crs"] = {
 						2344,	-- Dun Garok Mountaineer
 						14275,	-- Tamra Stormpike
