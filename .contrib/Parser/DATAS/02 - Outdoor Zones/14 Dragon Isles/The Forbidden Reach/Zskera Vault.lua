@@ -250,7 +250,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					},
 				}),
 				o(385837, {	-- Journal Entry: Silence
-					["coord"] = { 25.7, 53.8, THE_FORBIDDEN_REACH },
+					["coord"] = { 28.5, 55.6, THE_FORBIDDEN_REACH },
 					["questID"] = 73115,
 					["g"] = {
 						i(202337),	-- Journal Entry: Silence
@@ -577,6 +577,36 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				o(388908, {	-- Inert Goo
 					["coord"] = { 27.8, 50.8, THE_FORBIDDEN_REACH },
 					["questID"] = 75020,
+				}),
+
+				-- Floor Unknown
+				o(385834, {	-- Journal Entry: Experiments
+					["coord"] = { 59.6, 64.9, THE_FORBIDDEN_REACH },
+					["questID"] = 74866,
+					["g"] = {
+						i(204200),	-- Journal Entry: Experiments
+					}
+				}),
+				o(385832, {	-- Receiving Stone: Final Warning
+					["coord"] = { 58.9, 72.3, THE_FORBIDDEN_REACH },
+					["questID"] = 73109,
+					["g"] = {
+						i(202328),	-- Receiving Stone: Final Warning
+					}
+				}),
+				o(385830, {	-- Sending Stone: Initial Report
+					["coord"] = { 55.3, 35.8, THE_FORBIDDEN_REACH },
+					["questID"] = 73107,
+					["g"] = {
+						i(202326),	-- Sending Stone: Initial Report
+					}
+				}),
+				o(385533, {	-- Sending Stone: Protest
+					["coord"] = { 58.4, 70.5, THE_FORBIDDEN_REACH },
+					["questID"] = 72944,
+					["g"] = {
+						i(202203),	-- Sending Stone: Protest
+					}
 				}),
 			}),
 			n(ZONE_DROPS, {

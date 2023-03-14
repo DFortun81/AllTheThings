@@ -2783,12 +2783,9 @@ root(ROOTS.Unsorted, {
 				i(204814),	-- Aged Journal
 				i(204815),	-- Ambiguous Compendium
 				i(204816),	-- Mysterious Almanac
-				i(202203),	-- Sending Stone: Protest
 				i(202204),	-- Receiving Stone: Final Warning
 				i(202205),	-- Translated Journal of Adamanthia
-				i(202326),	-- Sending Stone: Initial Report
 				i(202327),	-- Sending Stone: The Prisoner
-				i(202328),	-- Receiving Stone: Final Warning
 				i(204237),	-- Clockwork Azshara
 				i(204249),	-- Translated Correspondence of Black Dragons
 				i(204250),	-- Receiving Stone: Final Warning
@@ -3097,7 +3094,6 @@ root(ROOTS.Unsorted, {
 				q(74761),
 				q(74762),
 				q(74763),
-				q(74764),
 				q(74769),
 				q(74771),
 				q(74773),
