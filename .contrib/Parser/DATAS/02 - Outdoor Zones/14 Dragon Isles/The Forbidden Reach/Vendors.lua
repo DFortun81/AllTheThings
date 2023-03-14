@@ -56,6 +56,86 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					}),
 				},
 			}),
+			n(200724, {	-- Researcher Imareth
+				["description"] = "This NPC becomes a vendor upon completing the quest 'Primordial Embellishment'",
+				["coord"] = { 35.1, 57.6, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(204573, {	-- Condensed Fire Magic
+						["cost"] = {
+							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
+						},
+						["g"] = {
+							i(204005),	-- Entropic Fel Stone
+							i(204003),	-- Raging Magma Stone
+							i(204004),	-- Searing Smokey Stone
+						},
+					}),
+					i(204574, {	-- Condensed Frost Magic
+						["cost"] = {
+							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
+						},
+						["g"] = {
+							i(204012),	-- Cold Frost Stone
+							i(204010),	-- Deluging Water Stone
+							i(204013),	-- Exuding Steam Stone
+							i(204011),	-- Freezing Ice Stone
+						},
+					}),
+					i(204575, {	-- Condensed Earth Magic
+						["cost"] = {
+							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
+						},
+						["g"] = {
+							i(204009),	-- Gleaming Iron Stone
+							i(204006),	-- Indomitable Earth Stone
+							i(204007),	-- Shining Obsidian Stone
+						},
+					}),
+					i(204576, {	-- Condensed Shadow Magic
+						["cost"] = {
+							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
+						},
+						["g"] = {
+							i(204029),	-- Prophetic Twilight Stone
+							i(204015),	-- Swirling Mojo Stone
+						},
+					}),
+					i(204577, {	-- Condensed Nature Magic
+						["cost"] = {
+							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
+						},
+						["g"] = {
+							i(204001),	-- Echoing Thunder Stone
+							i(204000),	-- Storm Infused Stone
+							i(204020),	-- Wild Spirit Stone
+						},
+					}),
+					i(204578, {	-- Condensed Arcane Magic
+						["cost"] = {
+							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
+						},
+						["g"] = {
+							i(204019),	-- Harmonic Music Stone
+							i(204018),	-- Humming Arcane Stone
+							i(204025),	-- Obscure Pastel Stone
+						},
+					}),
+					i(204579, {	-- Condensed Necromantic Magic
+						["cost"] = {
+							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
+						},
+						["g"] = {
+							i(204027),	-- Desirous Blood Stone
+							i(204021),	-- Necromantic Death Stone
+						},
+					}),
+					i(203460, {	-- Onyx Annulet
+						["cost"] = {
+							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
+						},
+					}),
+				},
+			}),
 			n(200564, {	-- Storykeeper Askhekh
 				["coord"] = { 34.1, 60.0, THE_FORBIDDEN_REACH },
 				["g"] = {

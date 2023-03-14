@@ -2401,9 +2401,6 @@ root(ROOTS.Unsorted, {
 					i(202642),	-- Proto-Killing Spear
 					i(202647),	-- Stolen Goods
 					i(202663),	-- [DNT] Dragonscale Expedition Item 01
-					i(202667),	-- Sealed Artifact Scroll
-					i(202668),	-- Sealed Spirit Scroll
-					i(202669),	-- Sealed Fish Scroll
 					i(202671),	-- [DNT] Dragonscale Expedition Item 02
 					i(202672),	-- [DNT] Dragonscale Expedition Item 03
 					i(202673),	-- [DNT] Dragonscale Expedition Item 04
@@ -2944,7 +2941,6 @@ root(ROOTS.Unsorted, {
 				q(73210),
 				q(73211),
 				q(73212),
-				q(73213),
 				q(73214),
 				q(73215),
 				q(73217),
@@ -3102,7 +3098,6 @@ root(ROOTS.Unsorted, {
 				q(74762),
 				q(74763),
 				q(74764),
-				q(74765),
 				q(74769),
 				q(74771),
 				q(74773),
@@ -3228,7 +3223,6 @@ root(ROOTS.Unsorted, {
 				q(75224),
 				q(75236),
 				q(75237),
-				q(75240),
 				q(75245),
 				q(75246),
 				q(75247),

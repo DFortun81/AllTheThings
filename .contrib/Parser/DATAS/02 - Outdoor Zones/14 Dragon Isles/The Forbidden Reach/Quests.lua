@@ -393,7 +393,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 })));
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
-	q(73216),	-- Triggered after using a Sealed Scroll Map
+	q(73213),	-- Triggered after using a Sealed Fish Scroll
+	q(73216),	-- Triggered after using a Sealed Knowledge Scroll
 	q(74767),	-- First Envoy
 	q(74766),	-- Second Envoy
+	q(74765),	-- Third Envoy
+	q(75240),	-- Unlocking Researcher Imareth as a vendor
 })))

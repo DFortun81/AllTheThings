@@ -10,7 +10,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			i(203400),	-- Lackluster Spices
 			i(203405),	-- Pristine Pelt
 
+			-- Sealed Scroll Maps
+			i(202667),	-- Sealed Artifact Scroll
+			i(202669),	-- Sealed Fish Scroll
 			i(202670),	-- Sealed Knowledge Scroll
+			i(202668),	-- Sealed Spirit Scroll
 		}),
 	}),
 })));

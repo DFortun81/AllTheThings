@@ -15,8 +15,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					i(204577),	-- Condensed Nature Magic
 					i(204578),	-- Condensed Arcane Magic
 					i(204579),	-- Condensed Necromantic Magic
-					-- currency(2118),	-- Elemental Overflow
-					-- i(202196),	-- Zskera Vault Key
 				},
 				["sym"] = {
 					{"select", "mapID", THE_FORBIDDEN_REACH },{"pop"},
@@ -48,11 +46,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			i(204181),	-- Opera of the Aspects
 			i(204185),	-- The Old Gods and the Ordering of Azeroth (Annotated)
 
-			-- TODO: When you use Sealed Knowledge Scroll you get the location of a treasure, which contains one of these
-			i(202871),	-- Draconic Artifact
-			i(202870),	-- Mysterious Writings
-			i(202872),	-- Token of Blessing
-			i(202854),	-- Wondrous Fish
+			-- TODO: Sealed Scroll Maps lead to these
+			i(202871),	-- Draconic Artifact (Sealed Artifact Scroll)
+			i(202870),	-- Mysterious Writings (Sealed Knowledge Scroll)
+			i(202872),	-- Token of Blessing (Sealed Spirit Scroll)
+			n(200958, {
+				["g"]= {
+					i(202854),	-- Wondrous Fish (Sealed Fish Scroll)
+				}
+			}),
 		}),
 	}),
 })))
