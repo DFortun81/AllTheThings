@@ -819,11 +819,6 @@ for key,value in pairs({
 		--TODO: [-861] = "Rank 4",									-- Rank 4
 	-- Shadowlands Header
 		--TODO: [-903] = "Zone Rewards",							-- Zone Rewards
-		[-907] = "죽은 블랑쉬",											-- Dead Blanchy
-		[-909] = "사냥: 죽음의 정령",										-- Hunt: Death Elementals
-		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
-		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
-		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
 		[-979] = "중개자 베켄 & 중개자 베노트",								-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "성소 강화",											-- Sanctum Upgrades
 		[-924] = "이동 연결망",											-- Transport Network
@@ -841,13 +836,6 @@ for key,value in pairs({
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
-	-- Temp Sets for Creation Catalyst
-		[-1006] = "공격대 찾기 Alternative",								-- TODO: Raid Finder Alternative
-		[-1007] = "일반 Alternative",									-- TODO: Normal Alternative
-		[-1008] = "영웅 Alternative",									-- TODO: Heroic Alternative
-		[-1009] = "신화 Alternative",									-- TODO: Mythic Alternative
-		[-1010] = "검투사 Alternative",								-- TODO: Gladiator Alternative
-		[-1011] = "정예병 Alternative",								-- TODO: Elite Alternative
 	-- Dragonflight
 		[-1100] = "비룡감시자 필사본",										-- Drakewatcher Manuscripts	--TODO: plural
 		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
@@ -865,6 +853,7 @@ for key,value in pairs({
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
+		--TODO: [-1200] = "Zskera Vaults",							-- Zskera Vaults
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",

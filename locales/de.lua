@@ -820,11 +820,6 @@ for key,value in pairs({
 		[-861] = "Rang 4",											-- Rank 4
 	-- Shadowlands Header
 		--TODO: [-903] = "Zone Rewards",							-- Zone Rewards
-		[-907] = "Tote Graumähne",									-- Dead Blanchy
-		[-909] = "Jagd: Todeselementare",							-- Hunt: Death Elementals
-		[-910] = "Jagd: Seelenfresser",								-- Hunt: Alpha Devourers
-		[-911] = "Jagd: Schemenhunde",								-- Hunt: Shadehounds
-		[-912] = "Jagd: Geflügelte Seelenfresser",					-- Hunt: Winged Soul Eaters
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Sanktumaufwertungen",								-- Sanctum Upgrades
 		[-924] = "Reisenetzwerk",									-- Transport Network
@@ -842,13 +837,6 @@ for key,value in pairs({
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
-	-- Temp Sets for Creation Catalyst
-		[-1006] = "Schlachtzugsbrowser Alternative",				-- TODO: Raid Finder Alternative
-		[-1007] = "Normal Alternative",								-- TODO: Normal Alternative
-		[-1008] = "Heroisch Alternative",							-- TODO: Heroic Alternative
-		[-1009] = "Mythisch Alternative",							-- TODO: Mythic Alternative
-		[-1010] = "Gladiator Alternative",							-- TODO: Gladiator Alternative
-		[-1011] = "Elite Alternative",								-- TODO: Elite Alternative
 	-- Dragonflight
 		[-1100] = "Drachenwächtermanuskript",						-- Drakewatcher Manuscripts	--TODO: plural
 		[-1101] = "Urstürme",										-- Primal Storms
@@ -866,6 +854,7 @@ for key,value in pairs({
 		[-1140] = "Valdrakkenabkommen",								-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
+		--TODO: [-1200] = "Zskera Vaults",							-- Zskera Vaults
 	-- Warrior order hall lore items
 		[-2200] = "Der große Odyn und der Feuerlord",				-- Great Odyn and the Firelord
 		[-2201] = "Der Wanderer und die Schlange",					-- The Wanderer and the Serpent

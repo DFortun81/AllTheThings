@@ -823,11 +823,6 @@ for key,value in pairs({
 		--TODO: [-861] = "Rank 4",									-- Rank 4
 	-- Shadowlands Header
 		--TODO: [-903] = "Zone Rewards",							-- Zone Rewards
-		[-907] = "Blanchy la Muerta",								-- Dead Blanchy
-		[-909] = "Caza: Elementales de muerte",						-- Hunt: Death Elementals
-		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
-		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
-		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
 		[-979] = "Especulador Ve'ken & Especulador Ve'nott",		-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Mejoras del sagrario",							-- Sanctum Upgrades
 		[-924] = "Red de transporte",								-- Transport Network
@@ -845,13 +840,6 @@ for key,value in pairs({
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
-	-- Temp Sets for Creation Catalyst
-		[-1006] = "Buscador de bandas Alternative",					-- TODO: Raid Finder Alternative
-		[-1007] = "Normal Alternative",								-- TODO: Normal Alternative
-		[-1008] = "Heroica Alternative",							-- TODO: Heroic Alternative
-		[-1009] = "Mítica Alternative",								-- TODO: Mythic Alternative
-		[-1010] = "Gladiador Alternative",							-- TODO: Gladiator Alternative
-		[-1011] = "Élite Alternative",								-- TODO: Elite Alternative
 	-- Dragonflight
 		[-1100] = "Manuscrito de dracovigía",						-- Drakewatcher Manuscripts	--TODO: plural
 		[-1101] = "Tormentas Primigenias",							-- Primal Storms
@@ -869,6 +857,7 @@ for key,value in pairs({
 		[-1140] = "Acuerdo de Valdrakken",							-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
+		--TODO: [-1200] = "Zskera Vaults",							-- Zskera Vaults
 	-- Warrior order hall lore items
 		[-2200] = "El gran Odyn y el Señor del Fuego",				-- Great Odyn and the Firelord
 		[-2201] = "El nómada y la serpiente",						-- The Wanderer and the Serpent

@@ -807,11 +807,6 @@ for key,value in pairs({
 		[-861] = "Ранг 4",											-- Rank 4
 	-- Shadowlands Header
 		[-903] = "Добыча локации",									-- Zone Rewards
-		[-907] = "Мертвая Савраска",								-- Dead Blanchy
-		[-909] = "Охота: элементали смерти",						-- Hunt: Death Elementals
-		[-910] = "Охота: пожиратели душ",							-- Hunt: Alpha Devourers
-		[-911] = "Охота: темные гончие",							-- Hunt: Shadehounds
-		[-912] = "Охота: крылатые пожиратели душ",					-- Hunt: Winged Soul Eaters
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Улучшения для Обители",							-- Sanctum Upgrades
 		[-924] = "Транспортная Сеть",								-- Transport Network
@@ -829,13 +824,6 @@ for key,value in pairs({
 			[-969] = "Набор B",										-- Set B
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
-	-- Temp Sets for Creation Catalyst
-		[-1006] = "Поиск рейда Реколор",							-- Raid Finder Alternative
-		[-1007] = "Обычный Реколор",								-- Normal Alternative
-		[-1008] = "Героический Реколор",							-- Heroic Alternative
-		[-1009] = "Эпохальный Реколор",								-- Mythic Alternative
-		[-1010] = "Гладиатор Реколор",								-- Gladiator Alternative
-		[-1011] = "Ветеран Реколор",								-- Elite Alternative
 	-- Dragonflight
 		[-1100] = "Манускрипты наблюдений за драконами",			-- Drakewatcher Manuscripts
 		[-1101] = "Изначальные Бури",								-- Primal Storms
@@ -853,6 +841,7 @@ for key,value in pairs({
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
 		[-1143] = "Редкие DF по расписанию",						-- DF Rare Rotation
 		[-1144] = "Еженедельные Очки Знаний Профессий",				-- Weekly Profession Header
+		--TODO: [-1200] = "Zskera Vaults",							-- Zskera Vaults
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",

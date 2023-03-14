@@ -829,11 +829,6 @@ for key,value in pairs({
 		[-856] = "坦克",												-- Tanks
 	-- Shadowlands Header
 		[-903] = "区域奖励",											-- Zone Rewards
-		[-907] = "死掉的布兰契",										-- Dead Blanchy
-		[-909] = "狩猎：死亡元素",										-- Hunt: Death Elementals
-		[-910] = "狩猎：噬魂者",											-- Hunt: Alpha Devourers
-		[-911] = "狩猎：影犬",											-- Hunt: Shadehounds
-		[-912] = "狩猎：飞翼噬魂者",										-- Hunt: Winged Soul Eaters
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "圣所升级",											-- Sanctum Upgrades
 		[-924] = "传送网络",											-- Transport Network
@@ -851,13 +846,6 @@ for key,value in pairs({
 			[-969] = "组 B",											-- Set B
 			[-970] = "组 C",											-- Set C
 			[-971] = "组 D",											-- Set D
-	-- Temp Sets for Creation Catalyst
-		[-1006] = "随机团队备选",											-- Raid Finder Alternative
-		[-1007] = "普通备选",											-- Normal Alternative
-		[-1008] = "英雄备选",											-- Heroic Alternative
-		[-1009] = "史诗备选",											-- Mythic Alternative
-		[-1010] = "角斗士备选",											-- Gladiator Alternative
-		[-1011] = "精锐备选",											-- Elite Alternative
 	-- Dragonflight
 		[-1100] = "观龙者手稿",											-- Drakewatcher Manuscripts
 		[-1101] = "原始风暴",											-- Primal Storms
@@ -875,6 +863,7 @@ for key,value in pairs({
 		[-1140] = "瓦德拉肯联军",										-- Valdrakken Accord
 		[-1143] = "每30分钟稀有",										-- TODO: DF Rare Rotation
 		[-1144] = "每周专业知识",										-- Weekly Profession Header
+		--TODO: [-1200] = "Zskera Vaults",						-- Zskera Vaults
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
