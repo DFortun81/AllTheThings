@@ -125,26 +125,106 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
 			}),
 
-			-- Dailys
+			-- Weeklies
+			q(75025, {	-- A Good Day for Rolling
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["provider"] = { "n", 201291 },	-- Cataloger Coralie
+				["coord"] = { 34.4, 59.3, THE_FORBIDDEN_REACH },
+				["isWeekly"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(73142, {	-- Busting Blues
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
+				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+				["isWeekly"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(73189, {	-- Creche Cache
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["provider"] = { "n", 200727 },	-- Volethi
+				["coord"] = { 32.4, 52.9, THE_FORBIDDEN_REACH },
+				["isWeekly"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
 			q(73139, {	-- Deep Sea Supplies
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 200558 },	-- Tukkaraq
 				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
-				["isDaily"] = true,
+				["isWeekly"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(73715, {	-- Driftwood Derby
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["provider"] = { "n", 200558 },	-- Tukkaraq
+				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
+				["isWeekly"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(73141, {	-- Everburning Embers
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["provider"] = { "n", 200558 },	-- Tukkaraq
+				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
+				["isWeekly"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(73140, {	-- Sunder the Crater
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
+				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
+				["isWeekly"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(75024, {	-- Sneaky Pebbles
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["provider"] = { "n", 200727 },	-- Volethi
+				["coord"] = { 32.4, 52.9, THE_FORBIDDEN_REACH },
+				["isWeekly"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
 			}),
 			q(73179, {	-- Soupocalypse Now!
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
 				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
-				["isDaily"] = true,
+				["isWeekly"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
+			q(73398, {	-- Too Far Forward
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
+				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
+				["isWeekly"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
 			}),
 			q(73190, {	-- Toxic Infestation
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
 				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
-				["isDaily"] = true,
+				["isWeekly"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
 			}),
-
 
 			-- Envoy
 			-- Dragonscale
@@ -238,19 +318,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["g"] = {
 					currency(2118),	-- Elemental Overflow
 				},
-			}),
-
-
-			-- Dailys?? [From Alex]
-			q(73189, {	-- Creche Cache
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
-				["provider"] = { "n", 200727 },	-- Volethi
-				["coord"] = { 32.4, 52.9, THE_FORBIDDEN_REACH },
-			}),
-			q(73715, {	-- Driftwood Derby
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
-				["provider"] = { "n", 200558 },	-- Tukkaraq
-				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
 			}),
 
 			n(BONUS_OBJECTIVES, sharedData({
