@@ -523,6 +523,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 46.8, 78.9, VALDRAKKEN },
 				["g"] = {
 						-- RENOWN 9 --
+					i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 50 },
+						},
+					}),
 					i(196972, {	-- Cliffside Wylderdrake: Plated Brow (DM!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
@@ -539,12 +545,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						},
 					}),
 						-- RENOWN 15 --
+					i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 100 },
+						},
+					}),
 					i(196998, {	-- Cliffside Wylderdrake: Hook Horns (DM!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 100 },
 						},
 					}),
 					i(197009, {	-- Cliffside Wylderdrake: Scaled Pattern (DM!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 100 },
+						},
+					}),
+					i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 100 },
 						},
