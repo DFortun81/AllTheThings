@@ -619,3 +619,8 @@ i(191581, 0);	-- Transmute: Awakened Air
 i(191582, 0);	-- Transmute: Decay to Elements
 i(191583, 0);	-- Transmute: Order to Elements
 i(191592, 0);	-- Writhefire Oil
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(203420, 400270);	-- Draconic Suppression Powder

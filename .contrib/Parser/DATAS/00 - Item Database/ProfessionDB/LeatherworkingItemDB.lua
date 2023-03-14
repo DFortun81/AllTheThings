@@ -164,3 +164,8 @@ i(197985, 0);	-- Illustrious Insight
 ------------------
 i(202232, 397862);	-- Impressive Burnished Essence
 i(202233, 397863);	-- Remarkable Burnished Essence
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(203427, 400814);	-- Reinforced Pristine Leather

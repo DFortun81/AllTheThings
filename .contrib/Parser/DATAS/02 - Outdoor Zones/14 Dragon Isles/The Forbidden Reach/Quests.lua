@@ -323,6 +323,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			n(BONUS_OBJECTIVES, sharedData({
 				["isDaily"] = true,
 			},{
+				q(74331, {	-- Agni Blazehoof
+					["provider"] = { "n", 200740 },	-- Agni Blazehoof
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				}),
+				q(74333, {	-- Amephyst
+					["provider"] = { "n", 200743 },	-- Amephyst
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				}),
+				q(74328, {	-- Arcantrix
+					["provider"] = { "n", 200737 },	-- Arcantrix
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				}),
 				q(74341, {	-- Bonesifter Marwak
 					["provider"] = { "n", 200681 },	-- Bonesifter Marwak
 					["coord"] = { 41.9, 57.1, THE_FORBIDDEN_REACH },
@@ -330,6 +342,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				q(74340, {	-- Duzalgor
 					["provider"] = { "n", 200610 },	-- Duzalgor
 					["coord"] = { 41.1, 43.9, 2101 },
+				}),
+				q(74322, {	-- Faunos
+					["provider"] = { "n", 200725 },	-- Faunos <Lord of Fleece>
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				}),
+				q(74330, {	-- Fimbol
+					["provider"] = { "n", 200739 },	-- Fimbol
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
 				}),
 				q(74337, {	-- Gahz'raxes
 					["provider"] = { "n", 200537 },	-- Gahz'raxes
@@ -339,6 +359,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["provider"] = { "n", 200717 },	-- Galakhad
 					["coord"] = { 44.0, 78.2, THE_FORBIDDEN_REACH },
 				}),
+				q(74321, {	-- Gareed
+					["provider"] = { "n", 200722 },	-- Gareed
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				}),
 				q(74343, {	-- Grugoth the Hullcrusher <Scource of the Coast>
 					["provider"] = { "n", 200721 },	-- Grugoth the Hullcrusher <Scource of the Coast>
 					["coord"] = { 42.9, 90.6, THE_FORBIDDEN_REACH },
@@ -347,13 +371,29 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["provider"] = { "n", 200579 },	-- Ishyra
 					["coord"] = { 39.6, 2.4, THE_FORBIDDEN_REACH },
 				}),
+				q(74329, {	-- Kangalo
+					["provider"] = { "n", 200738 },	-- Kangalo
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				}),
 				q(74344, {	-- Lady Shaz'ra
 					["provider"] = { "n", 200885 },	-- Lady Shaz'ra
 					["coord"] = { 62.0, 54.0, THE_FORBIDDEN_REACH },
 				}),
+				-- q(XXXXX, {	-- Loot Specialist
+					-- ["provider"] = { "n", 203353 },	-- Loot Specialist <Venture Co. Acquisitions>
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				-- }),
+				q(74332, {	-- Luttrok
+					["provider"] = { "n", 200742 },	-- Luttrok
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				}),
 				q(74346, {	-- Mad-Eye Carrey
 					["provider"] = { "n", 201181 },	-- Mad-Eye Carrey
 					["coord"] = { 71.2, 39.1, THE_FORBIDDEN_REACH },
+				}),
+				q(74306, {	-- Manathema
+					["provider"] = { "n", 200621 },	-- Manathema
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
 				}),
 				q(74349, {	-- Ookbeard
 					["provider"] = { "n", 200956 },	-- Ookbeard <Irontide "Captain">
@@ -366,6 +406,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				q(74339, {	-- Reisa the Drowned
 					["provider"] = { "n", 200600 },	-- Reisa the Drowned
 					["coord"] = { 46.9, 9.8, THE_FORBIDDEN_REACH },
+				}),
+				q(74305, {	-- Sir Pinchalot
+					["provider"] = { "n", 200620 },	-- Sir Pinchalot
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				}),
+				q(74307, {	-- Snarfang
+					["provider"] = { "n", 200622 },	-- Snarfang
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				}),
+				q(74300, {	-- Tectonus
+					["provider"] = { "n", 200619 },	-- Tectonus
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				}),
+				q(74325, {	-- Tidesmith Zarviss
+					["provider"] = { "n", 200730 },	-- Tidesmith Zarviss
+					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
 				}),
 				q(74345, {	-- Veltrax
 					["provider"] = { "n", 200904 },	-- Veltrax

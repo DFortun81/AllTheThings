@@ -2566,36 +2566,6 @@ root(ROOTS.Unsorted, {
 					i(203988),	-- Warshard of the Hakkari, Unborn
 					i(203989),	-- Warshard of the Hakkari, Unborn
 				}),
-				n(PROFESSIONS, {
-					i(203398),	-- Dampening Powder
-					i(203399),	-- Damaged Trident
-					i(203402),	-- Broken Gnomish Voicebox
-					i(203404),	-- Crystal Fork
-					i(203405),	-- Slyvern Pelt
-					i(203406),	-- Torn Morqut Kite
-					i(203407),	-- Draconic Suppression Powder
-					i(203408),	-- Ancient Ceremonial Trident
-					i(203412),	-- Arcane Dispelling Rune
-					i(203413),	-- Crystal Tuning Fork
-					i(203414),	-- Reinforced Pristine Leather
-					i(203415),	-- Traditional Morqut Kite
-					i(203416),	-- Dormant Lifebloom Seeds
-					i(203417),	-- Razor-Sharp Animal Bone
-					i(203418),	-- Amplified Quaking Stone
-					i(203419),	-- Elusive Croaking Crab
-					i(203409),	-- Sparkling Spice Pouch
-					i(203410),	-- Glowing Crystal Bookmark
-					i(203411),	-- Gnomish Voicebox
-				}),
-				i(203420),	-- Design: Neutralizing Agent
-				i(203421),	-- Design: Ceremonial Trident
-				i(203422),	-- Design: Sparkling Spice Pouch
-				i(203423),	-- Design: Glowing Crystal Bookmark
-				i(203424),	-- Design: Gnomish Voice Recording
-				i(203425),	-- Design: Dispelling Rune
-				i(203426),	-- Design: Tuning Fork
-				i(203427),	-- [PH] Design: Repaired Leatherworking Item
-				i(203428),	-- Design: Tuskarr Kite
 				i(203463),	-- Atrenosh's Journal
 				i(203464),	-- Sealed Spellsworn Scroll
 				i(203465),	-- Draconic Artifact
@@ -2709,9 +2679,6 @@ root(ROOTS.Unsorted, {
 				i(204330),	-- Inert Promordal Fragments
 				i(114942),	-- Cracked Draenic Mortar
 				i(202252),	-- Recipe Rat
-				i(203424),	-- Design: Gnomish Voicebox
-				i(203427),	-- Design: Reinforced Leather Patch
-				i(203428),	-- Design: Morqut Kite
 				i(203685),	-- Borrowed Potion of Invisibility
 				i(204073),	-- Ratcipe: Deviously Deviled Eggs
 				i(204339),	-- Satchel of Coalescing Chaos
@@ -2739,14 +2706,6 @@ root(ROOTS.Unsorted, {
 				i(204404),	-- Square Holders
 				i(204405),	-- Stuffed Bear
 				i(204406),	-- Ancient Design: Square Holders
-				i(203420),	-- Recipe: Neutralizing Agent
-				i(203421),	-- Plans: Ceremonial Trident
-				i(203422),	-- Recipe: Sparkling Spice Pouch
-				i(203423),	-- Formula: Glowing Crystal Bookmark
-				i(203424),	-- Schematic: Gnomish Voicebox
-				i(203425),	-- Technique: Dispelling Rune
-				i(203427),	-- Pattern: Reinforced Leather Patch
-				i(203428),	-- Pattern: Morqut Kite
 				i(203466),	-- Dragonscale Surplus Crate
 				i(203722),	-- Experimental Dragon Pack
 				i(204213),	-- Short-Range Teleport
@@ -2768,12 +2727,6 @@ root(ROOTS.Unsorted, {
 				i(204678),	-- Pattern: Paw-Made Winterpelt Reagent Bag
 				i(204685),	-- Primordial Anvil
 				i(204691),	-- Living Book
-				i(203420),	-- Recipe: Draconic Suppression Powder
-				i(203421),	-- Plans: Ancient Ceremonial Trident
-				i(203425),	-- Technique: Arcane Dispelling Rune
-				i(203426),	-- Design: Crystal Tuning Fork
-				i(203427),	-- Pattern: Reinforced Pristine Leather
-				i(203428),	-- Pattern: Traditional Morqut Kite
 				i(203705),	-- Empty Obsidian Vial
 				i(204330),	-- Inert Primordial Fragments
 				i(204561),	-- Primalist Cache Key

@@ -1183,3 +1183,8 @@ i(0, 382580);	-- Opening
 i(0, 391200);	-- Wisp of Tyr
 i(0, 383736);	-- Unknown
 i(198779, 392407);	-- Crystal Magical Lockpick
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(203423, 400809);	-- Glowing Crystal Bookmark

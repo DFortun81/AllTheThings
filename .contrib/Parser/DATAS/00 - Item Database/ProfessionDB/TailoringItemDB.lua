@@ -142,3 +142,8 @@ i(194284, 376571);	-- Wildercloth Weapon Upholstery
 ------------------
 i(202234, 397864);	-- Impressive Hexweave Essence
 i(202235, 397865);	-- Remarkable Hexweave Essence
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(203428, 400815);	-- Traditional Morqut Kite

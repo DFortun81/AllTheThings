@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			n(202445, {	-- Trader Hag'arth
 				["coord"] = { 35.9, 57.5, THE_FORBIDDEN_REACH },
 				["g"] = {
-					i(203426, {	-- Design: Tuning Fork (RECIPE!)
+					i(203426, {	-- Design: Crystal Tuning Fork (RECIPE!)
 						["cost"] = {
 							{ "c", ARTISANS_METTLE, 10 },
 						},
@@ -169,22 +169,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							{ "c", ARTISANS_METTLE, 10 },
 						},
 					}),
-					i(203428, {	-- Pattern: Morqut Kite (RECIPE!)
+					i(203427, {	-- Pattern: Reinforced Pristine Leather (RECIPE!)
 						["cost"] = {
 							{ "c", ARTISANS_METTLE, 10 },
 						},
 					}),
-					i(203427, {	-- Pattern: Reinforced Leather Patch (RECIPE!)
+					i(203428, {	-- Pattern: Traditional Morqut Kite (RECIPE!)
 						["cost"] = {
 							{ "c", ARTISANS_METTLE, 10 },
 						},
 					}),
-					i(203421, {	-- Plans: Ceremonial Trident (RECIPE!)
+					i(203421, {	-- Plans: Ancient Ceremonial Trident (RECIPE!)
 						["cost"] = {
 							{ "c", ARTISANS_METTLE, 10 },
 						},
 					}),
-					i(203420, {	-- Recipe: Neutralizing Agent (RECIPE!)
+					i(203420, {	-- Recipe: Draconic Suppression Powder (RECIPE!)
 						["cost"] = {
 							{ "c", ARTISANS_METTLE, 10 },
 						},
@@ -199,7 +199,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							{ "c", ARTISANS_METTLE, 10 },
 						},
 					}),
-					i(203425, {	-- Technique: Dispelling Rune (RECIPE!)
+					i(203425, {	-- Technique: Arcane Dispelling Rune (RECIPE!)
 						["cost"] = {
 							{ "c", ARTISANS_METTLE, 10 },
 						},

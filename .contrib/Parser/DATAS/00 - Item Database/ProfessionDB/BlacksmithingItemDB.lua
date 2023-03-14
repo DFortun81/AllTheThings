@@ -2048,3 +2048,8 @@ i(202223, 397853);	-- Impressive Steelforged Essence
 i(202224, 397855);	-- Remarkable Steelforged Essence
 i(202226, 397856);	-- Impressive Truesteel Essence
 i(202227, 397857);	-- Remarkable Truesteel Essence
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(203421, 400808);	-- Ancient Ceremonial Trident
