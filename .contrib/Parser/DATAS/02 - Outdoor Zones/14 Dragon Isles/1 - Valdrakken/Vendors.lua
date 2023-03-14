@@ -84,6 +84,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(194057, {	-- Rabul
 				["coord"] = { 35.4, 59.1, VALDRAKKEN },
 				["g"] = {
+					i(204339, {	-- Satchel of Coalescing Chaos
+						["cost"] = { { "i", 190454, 80 }, },	-- 80x Primal Chaos
+						["timeline"] = { ADDED_DF_0_5 },
+						["g"] = {
+							i(190454),	-- Primal Chaos
+						},
+					}),
 					i(198802),	-- Artisan's Consortium Tabard
 					i(198615),	-- Pentagold Seal
 					-- Dusty

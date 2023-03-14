@@ -136,7 +136,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["cost"] = { { "i", 203761, 1 }, },	-- 1x Neltharion Gift Token
 					["repeatable"] = true,
 					["g"] = {
-						i(203700),	-- Tattered Gift Package
+						i(203700, {	-- Tattered Gift Package
+							i(204079),	-- Gilded Mechafrog (PET!)
+						}),
 					},
 				}),
 				q(73071, {	-- A Brew for the Ages
@@ -242,13 +244,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				}),
 			}),
 			n(SPECIAL, {
+				i(204073, {	-- Ratcipe: Deviously Deviled Eggs (RECIPE!)
+					["cost"] = { { "i", 204340, 30 }, }, 	-- 30xTorn Recipe Scrap
+				}),
+				i(202252, {	-- Recipe Rat
+					["description"] = "Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotation.",
+					["crs"] = { 202982 },	-- Recipe Rat
+					["cost"] = { { "i", 3927, 200 }, }, 	-- 200x Fine Aged Cheddar
+					["g"] = {
+						i(204340),	-- Torn Recipe Scrap
+					},
+				}),
 				i(192790, {	-- Mossy Mammoth (MOUNT!)
 					["cost"] = {
-						{ "i", 204367, 1 },	-- 1x Egg-Hatched Ancient Mammoth
+						{ "i", 204367, 1 },	-- 1x Sleeping Ancient Mammoth
 						{ "i", 204374, 1 },	-- 1x Emerald Dragon Brooch
 					},
 				}),
-				i(204367, {	-- Egg-Hatched Ancient Mammoth
+				i(204367, {	-- Sleeping Ancient Mammoth
 					["cost"] = {
 						{ "i", 204366, 1 },	-- 1x Egg of Unknown Contents
 						{ "i", 204372, 1 },	-- 1x Speck of Bronze Dust

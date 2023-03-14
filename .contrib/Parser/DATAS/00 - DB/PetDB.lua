@@ -1292,6 +1292,8 @@ pet(202412, 3431);	-- Wildfire
 pet(0, 3435);	-- Wildfire
 pet(0, 3439);	-- Wildfire
 pet(0, 3448);	-- Wildfire
+pet(204079, 3471);	-- Gilded Mechafrog
+pet(0, 3476);	-- Gilded Mechafrog
 
 -- Needs Sorting
 pet(0, 3422);	-- [DNT] Storm Pet Boss - Legendary
@@ -1318,11 +1320,11 @@ pet(0, 3459);	-- Mothoroth
 pet(0, 3460);	-- Blu'jaeden
 pet(0, 3465);	-- Enok the Stinky
 pet(0, 3466);	-- Malfunctioning Matrix
-pet(0, 3471);	-- Gilded Mechafrog
+
 pet(0, 3472);	-- Lil' Algalon
 pet(0, 3473);	-- Cozmos
 pet(0, 3474);	-- Celastro
-pet(0, 3476);	-- Gilded Mechafrog
+
 
 
 -- #if ANYCLASSIC

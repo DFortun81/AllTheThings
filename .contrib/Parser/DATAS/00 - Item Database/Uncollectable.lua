@@ -651,3 +651,16 @@ i(197958);	-- Watcher Log
 i(191863);	-- Waterlogged Wood
 i(191862);	-- Whalebone Fragment
 i(193372);	-- Wood
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(204814);	-- Aged Journal
+i(204815);	-- Ambiguous Compendium
+i(204813);	-- Blank Tome
+i(204237);	-- Clockwork Azshara
+i(204234);	-- Dead Worms
+i(203473);	-- Geyser Flower
+i(204235);	-- Kaldorei Fruitcake
+i(204816);	-- Mysterious Almanac
+i(204812);	-- Seared Book

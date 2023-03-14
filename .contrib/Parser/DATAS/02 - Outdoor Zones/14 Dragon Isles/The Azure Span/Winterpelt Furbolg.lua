@@ -120,13 +120,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 				n(201105, {	-- Kazzi
 					["coord"] = { 65.8, 12.7, THE_AZURE_SPAN },
 					["g"] = {
-						filter(BAGS, {
-							i(202287, {	-- Paw-Made Winterpelt Reagent Bag
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 100 },
-								},
-							}),
-						}),
 						filter(CONSUMABLES, {
 							i(202314, {	-- Big Chunk o' Meat
 								["cost"] = {
@@ -206,6 +199,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 							}),
 						}),
 						filter(RECIPES, {
+							i(204678, {	-- Pattern: Paw-Made Winterpelt Reagent Bag
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 750 },
+								},
+							}),
 							i(202289, {	-- Recipe: Firewater Sorbet
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },

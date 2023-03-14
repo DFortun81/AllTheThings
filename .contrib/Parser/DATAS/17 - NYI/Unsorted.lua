@@ -1119,7 +1119,7 @@ root(ROOTS.Unsorted, {
 				i(204271),	-- Blacktalon Napalm
 				i(204273),	-- Stolen Supplies
 				i(204279),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Weapon - 1H Axe AGI
-				i(204310),	-- Mycelial Threads
+
 				i(204314),	-- Corehound Hide
 				i(204315),	-- Zaqali Bone Needle
 				i(204318),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Dracthyr Evolution - Holdable - Offhand
@@ -2364,273 +2364,139 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {
-			n(REWARDS, {
-				filter(BATTLE_PETS, {
-					i(202407),	-- Flow (PET!)
-					i(202411),	-- Tremblor (PET!)
-					i(202413),	-- Vortex (PET!)
-					i(202412),	-- Wildfire (PET!)
-				}),
-				n(DRAKEWATCHER_MANUSCRIPTS, {
-					i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
-					i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
-					i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
-				}),
-				filter(MISC, {
-					i(198138),	-- Lightning-Infused Rock
-					i(198834),	-- Scribbled Bark Chunks
-					i(202075),	-- Temp Currency
-					i(202180),	-- Ripe Burcicle Berry
-					i(202181),	-- Best-root Tuber
-					i(202185),	-- Chillwrought Worm Meat
-					i(202202),	-- Revealing Mask
-					i(202290),	-- Firewater Sorbet
-					i(202294),	-- Recipe Pages
-					i(202361),	-- Farscale Supplies
-					i(202362),	-- Arcane Focus
-					i(202364),	-- Everburning Ember
-					i(202394),	-- Fresh Plains Meat
-					i(202396),	-- Plains Timber
-					i(202403),	-- Runic Wrench
-					i(202405),	-- Bloody Axe
-					i(202414),	-- Tauren Necklace
-					i(202415),	-- Unique Headdress
-					i(202619),	-- Mender Supplies
-					i(202620),	-- Toxin Antidote
-					i(202642),	-- Proto-Killing Spear
-					i(202647),	-- Stolen Goods
-					i(202663),	-- [DNT] Dragonscale Expedition Item 01
-					i(202671),	-- [DNT] Dragonscale Expedition Item 02
-					i(202672),	-- [DNT] Dragonscale Expedition Item 03
-					i(202673),	-- [DNT] Dragonscale Expedition Item 04
-					i(202674),	-- [DNT] Dragonscale Expedition Item 05
-					i(202675),	-- [DNT] Maruuk Centaur Item 01
-					i(202676),	-- [DNT] Maruuk Centaur Item 02
-					i(202677),	-- [DNT] Maruuk Centaur Item 03
-					i(202678),	-- [DNT] Maruuk Centaur Item 04
-					i(202679),	-- [DNT] Maruuk Centaur Item 05
-					i(202680),	-- [DNT] Iskaara Tuskarr Item 01
-					i(202681),	-- [DNT] Iskaara Tuskarr Item 02
-					i(202682),	-- [DNT] Iskaara Tuskarr Item 03
-					i(202683),	-- [DNT] Iskaara Tuskarr Item 04
-					i(202684),	-- [DNT] Iskaara Tuskarr Item 05
-					i(202685),	-- [DNT] Valdrakken Accord Item 01
-					i(202686),	-- [DNT] Valdrakken Accord Item 02
-					i(202687),	-- [DNT] Valdrakken Accord Item 03
-					i(202688),	-- [DNT] Valdrakken Accord Item 04
-					i(202689),	-- [DNT] Valdrakken Accord Item 05
-					i(202713),	-- Scattered Supplies
-					i(202868),	-- Mender's Signal
-					i(202874),	-- Healing Draught
-					i(203210),	-- Dragonscale Supply Box
-					i(203218),	-- Iskaara Supply Pouch
-					i(203221),	-- Maruuk Supply Sack
-					i(203223),	-- Valdrakken Supply Coffer
-					i(203381),	-- Sealed Letter to Neltharion
-				}),
-				filter(MOUNTS, {
-					i(192772),	-- Ancient Salamanther
-				}),
-				filter(TOYS, {
-					i(204675),	-- A Drake's Big Basket of Eggs (TOY!)
-					i(203757),	-- Brazier of Madness (TOY!)
-					i(202360),	-- Dented Can (TOY!)
-					i(204257),	-- Holoviewer: The Lady of Dreams (TOY!)
-					i(204262),	-- Holoviewer: The Timeless One (TOY!)
-					i(204220),	-- Hraxian's Unbreakable Will (TOY!)
-					i(204687),	-- Obsidian Battle Horn (TOY!)
-					i(203734),	-- Snow Blanket (TOY!)
-					i(203852),	-- Spore-Bound Essence (TOY!)
-				}),
-				filter(COSMETIC, {
-					i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
-					i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
-					i(203213),	-- Ensemble: Lion's Heritage White Armor Set
-					i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
-					i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
-					i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
-					i(204820),	-- Lionguard Greathelm
-					i(204821),	-- Lionguard Greathelm
-					i(204822),	-- Lionguard Greathelm
-					i(204863),	-- Lionguard Greatbelt
-					i(204865),	-- Lionguard Greatbelt
-					i(204866),	-- Lionguard Greatbelt
-				}),
-				header(HEADERS.LFGDungeon, 334, {	-- Zul'Gurub
-					i(203735),	-- Shattered Hakkari Bijou
-					i(203736),	-- Fragmented Hakkari Bijou
-					i(203737),	-- Restored Hakkari Bijou
-					i(203742),	-- Waterlogged Gurubashi Cache
-					i(203743),	-- Jostled Gurubashi Cache
-					i(203765),	-- Blue Hakkari Bijou
-					i(203766),	-- Bronze Hakkari Bijou
-					i(203767),	-- Gold Hakkari Bijou
-					i(203768),	-- Green Hakkari Bijou
-					i(203769),	-- Orange Hakkari Bijou
-					i(203770),	-- Purple Hakkari Bijou
-					i(203771),	-- Red Hakkari Bijou
-					i(203772),	-- Silver Hakkari Bijou
-					i(203773),	-- Yellow Hakkari Bijou
-					i(203774),	-- Big Bag o' Bijous
-					i(203790),	-- Bloodherald
-					i(203791),	-- Warblade of the Hakkari, Reborn
-					i(203792),	-- Warblade of the Hakkari, Reborn
-					i(203793),	-- Bloodlord's Reaver
-					i(203794),	-- Animist's Legguards
-					i(203795),	-- Judgment of the Gurubashi
-					i(203796),	-- Bloodlord's Embrace
-					i(203797),	-- Gurubashi Hexxer
-					i(203798),	-- Copy Jin'do's Bag of Whammies
-					i(203799),	-- Animist's Footwraps
-					i(203800),	-- Ritualistic Legwarmers
-					i(203801),	-- Gurubashi Slicer
-					i(203802),	-- Venomfang
-					i(203803),	-- Gurubashi Tigerhide Cloak
-					i(203804),	-- Sceptre of Hexing
-					i(203805),	-- Gurubashi's Grasp
-					i(203806),	-- Gurubashi Crusher
-					i(203807),	-- Gurubashi Hoodoo Stick
-					i(203808),	-- Mindslave's Reach
-					i(203809),	-- Gurubashi Grinder
-					i(203810),	-- Gurubashi Carver
-					i(203811),	-- Pitchfork of Mojo Madness
-					i(203812),	-- Gurubashi Poker
-					i(203813),	-- Fiery Vengeance
-					i(203814),	-- Junglefury Gauntlets
-					i(203815),	-- Gurubashi Ceremonial Staff
-					i(203816),	-- Junglefury Leggings
-					i(203817),	-- Gurubashi Headplate
-					i(203819),	-- Gloves of the Tormentor
-					i(203820),	-- Gurubashi Headdress
-					i(203824),	-- Ancient Plans: Gurubashi Headplate
-					i(203825),	-- Ancient Plans: Gurubashi Carver
-					i(203826),	-- Ancient Plans: Venomfang
-					i(203827),	-- Ancient Plans: Gurubashi Poker
-					i(203828),	-- Ancient Plans: Gurubashi Grinder
-					i(203829),	-- Ancient Plans: Gurubashi Hexxer
-					i(203830),	-- Ancient Plans: Sceptre of Hexing
-					i(203831),	-- Ancient Plans: Gurubashi Crusher
-					i(203832),	-- Ancient Plans: Pitchfork of Mojo Madness
-					i(203833),	-- Ancient Plans: Bloodherald
-					i(203834),	-- Ancient Plans: Bloodlord's Reaver
-					i(203835),	-- Ancient Plans: Fiery Vengeance
-					i(203836),	-- Ancient Plans: Warblades of the Hakkari, Reborn
-					i(203837),	-- Ancient Plans: Gurubashi Slicer
-					i(203838),	-- Ancient Formula: Mindslave's Reach
-					i(203839),	-- Ancient Technique: Gurubashi Hoodoo Stick
-					i(203840),	-- Ancient Technique: Judgment of the Gurubashi
-					i(203841),	-- Ancient Technique: Gurubashi Ceremonial Staff
-					i(203842),	-- Ancient Pattern: Animist's Footwraps
-					i(203843),	-- Ancient Pattern: Animist's Legguards
-					i(203844),	-- Ancient Pattern: Gloves of the Tormentor
-					i(203845),	-- Ancient Pattern: Junglefury Gauntlets
-					i(203846),	-- Ancient Pattern: Junglefury Leggings
-					i(203847),	-- Ancient Pattern: Gurubashi's Grasp
-					i(203848),	-- Ancient Pattern: Bloodlord's Embrace
-					i(203849),	-- Ancient Pattern: Gurubashi Tigerhide Cloak
-					i(203850),	-- Ancient Pattern: Gurubashi Headdress
-					i(203851),	-- Ancient Pattern: Ritualistic Legwarmers
-					i(203854),	-- Warblades of the Hakkari, Reborn
-					i(203860),	-- Venomreaver
-					i(203861),	-- Ancient Plans: Venomreaver
-					i(203862),	-- Brilliant Mana Oil
-					i(203865),	-- Brilliant Wizard Oil
-					i(203912),	-- Penny Pouch o' Paragons
-					i(203914),	-- Zandalar Bargaining Token
-					i(203959),	-- Gurubashi Tribute
-					i(203966),	-- Cord of Shriveled Heads
-					i(203968),	-- Ancient Pattern: Cord of Shriveled Heads
-					i(203970),	-- Bloodtinged Hat
-					i(203971),	-- Bloodtinged Shoulders
-					i(203974),	-- Ensemble: Zandalar Haruspec
-					i(203975),	-- Ensemble: Zandalar Predator
-					i(203976),	-- Ensemble: Zandalar Illusionist
-					i(203977),	-- Ensemble: Zandalar Freethinker
-					i(203978),	-- Ensemble: Zandalar Confessor
-					i(203979),	-- Ensemble: Zandalar Madcap
-					i(203980),	-- Ensemble: Zandalar Augur
-					i(203981),	-- Ensemble: Zandalar Demoniac
-					i(203982),	-- Ensemble: Zandalar Vindicator
-					i(203983),	-- Ensemble: Bloodtinged Cloth
-					i(203984),	-- Ensemble: Blooddrenched Leather
-					i(203985),	-- Ensemble: Bloodstained Mail
-					i(203986),	-- Ensemble: Bloodsoaked Plate
-					i(203988),	-- Warshard of the Hakkari, Unborn
-					i(203989),	-- Warshard of the Hakkari, Unborn
-				}),
-				n(ARMOR, {
-					i(204258),	-- Goblin Trainee's Wristwraps
-					i(204259),	-- Goblin Trainee's Cord
-					i(204260),	-- Goblin Trainee's Leggings
-					i(204261),	-- Goblin Trainee's Vest
-					i(204266),	-- Gilnean Trainee's Vest
-					i(204267),	-- Gilnean Trainee's Leggings
-					i(204268),	-- Gilnean Trainee's Cord
-					i(204269),	-- Gilnean Trainee's Wristwraps
-				}),
-				i(203463),	-- Atrenosh's Journal
-				i(203464),	-- Sealed Spellsworn Scroll
-				i(203465),	-- Draconic Artifact
-				i(203466),	-- Dragonscale Supply Crate
-				i(203473),	-- Geyser Flower
+			n(ARMOR, {
+				i(204258),	-- Goblin Trainee's Wristwraps
+				i(204259),	-- Goblin Trainee's Cord
+				i(204260),	-- Goblin Trainee's Leggings
+				i(204261),	-- Goblin Trainee's Vest
+				i(204266),	-- Gilnean Trainee's Vest
+				i(204267),	-- Gilnean Trainee's Leggings
+				i(204268),	-- Gilnean Trainee's Cord
+				i(204269),	-- Gilnean Trainee's Wristwraps
+				--
 				i(203647),	-- Primalist Ring
 				i(203648),	-- Primalist Necklace
 				i(203649),	-- Primalist Trinket
+				--
+				i(204192),	-- Ascendancy
+				i(203680),	-- Totem Toss
+			}),
+			filter(BATTLE_PETS, {
+				i(202407),	-- Flow (PET!)
+				i(202411),	-- Tremblor (PET!)
+				i(202413),	-- Vortex (PET!)
+				i(202412),	-- Wildfire (PET!)
+			}),
+			filter(COSMETIC, {
+				i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
+				i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
+				i(203213),	-- Ensemble: Lion's Heritage White Armor Set
+				i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
+				i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
+				i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
+				i(204820),	-- Lionguard Greathelm
+				i(204821),	-- Lionguard Greathelm
+				i(204822),	-- Lionguard Greathelm
+				i(204863),	-- Lionguard Greatbelt
+				i(204865),	-- Lionguard Greatbelt
+				i(204866),	-- Lionguard Greatbelt
+				i(204182),	-- Cloak of Dark Descent
+			}),
+			n(DRAKEWATCHER_MANUSCRIPTS, {
+				i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
+				i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
+				i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
+			}),
+			filter(MISC, {
+				i(198138),	-- Lightning-Infused Rock
+				i(198834),	-- Scribbled Bark Chunks
+				i(202075),	-- Temp Currency
+				i(202180),	-- Ripe Burcicle Berry
+				i(202181),	-- Best-root Tuber
+				i(202185),	-- Chillwrought Worm Meat
+				i(202202),	-- Revealing Mask
+				i(202290),	-- Firewater Sorbet
+				i(202294),	-- Recipe Pages
+				i(202361),	-- Farscale Supplies
+				i(202362),	-- Arcane Focus
+				i(202364),	-- Everburning Ember
+				i(202394),	-- Fresh Plains Meat
+				i(202396),	-- Plains Timber
+				i(202403),	-- Runic Wrench
+				i(202405),	-- Bloody Axe
+				i(202414),	-- Tauren Necklace
+				i(202415),	-- Unique Headdress
+				i(202619),	-- Mender Supplies
+				i(202620),	-- Toxin Antidote
+				i(202642),	-- Proto-Killing Spear
+				i(202647),	-- Stolen Goods
+				i(202663),	-- [DNT] Dragonscale Expedition Item 01
+				i(202671),	-- [DNT] Dragonscale Expedition Item 02
+				i(202672),	-- [DNT] Dragonscale Expedition Item 03
+				i(202673),	-- [DNT] Dragonscale Expedition Item 04
+				i(202674),	-- [DNT] Dragonscale Expedition Item 05
+				i(202675),	-- [DNT] Maruuk Centaur Item 01
+				i(202676),	-- [DNT] Maruuk Centaur Item 02
+				i(202677),	-- [DNT] Maruuk Centaur Item 03
+				i(202678),	-- [DNT] Maruuk Centaur Item 04
+				i(202679),	-- [DNT] Maruuk Centaur Item 05
+				i(202680),	-- [DNT] Iskaara Tuskarr Item 01
+				i(202681),	-- [DNT] Iskaara Tuskarr Item 02
+				i(202682),	-- [DNT] Iskaara Tuskarr Item 03
+				i(202683),	-- [DNT] Iskaara Tuskarr Item 04
+				i(202684),	-- [DNT] Iskaara Tuskarr Item 05
+				i(202685),	-- [DNT] Valdrakken Accord Item 01
+				i(202686),	-- [DNT] Valdrakken Accord Item 02
+				i(202687),	-- [DNT] Valdrakken Accord Item 03
+				i(202688),	-- [DNT] Valdrakken Accord Item 04
+				i(202689),	-- [DNT] Valdrakken Accord Item 05
+				i(202713),	-- Scattered Supplies
+				i(202868),	-- Mender's Signal
+				i(202874),	-- Healing Draught
+				i(203210),	-- Dragonscale Supply Box
+				i(203218),	-- Iskaara Supply Pouch
+				i(203221),	-- Maruuk Supply Sack
+				i(203223),	-- Valdrakken Supply Coffer
+				i(203381),	-- Sealed Letter to Neltharion
+			}),
+			filter(MOUNTS, {
+				i(192772),	-- Ancient Salamanther
+			}),
+			filter(MISC, {
+				i(203463),	-- Atrenosh's Journal
+				i(203464),	-- Sealed Spellsworn Scroll
+				i(203465),	-- Draconic Artifact
+				i(203466),	-- Dragonscale Surplus Crate
 				i(203651),	-- Saza's Blade
 				i(203656),	-- Odd Device
 				i(203657),	-- Toxin Antidote
-				i(203680),	-- Totem Toss
 				i(203686),	-- Odd Round Object
 				i(203687),	-- Dusty Vase
-				i(203690),	-- Pearlescent Bubble Key
 				i(203702),	-- Experimental Melder
 				i(203704),	-- Stone Dissolver
-				i(203705),	-- Empty Vial
 				i(203715),	-- Oozing Gold
 				i(203718),	-- Vial of Flames
 				i(203720),	-- Restorative Water
-				i(203722),	-- Experimental Dragon pack
+				i(203722),	-- Experimental Dragon Pack
 				i(203724),	-- Field Medic's Hazard Payout
 				i(203730),	-- Rustic Winterpelt Supplies
 				i(203997),	-- Raw Argali Flank
 				i(203998),	-- Beetle Juice
 				i(204065),	-- Azerite Powder
 				i(204066),	-- Igniter Torch
-				i(204072),	-- Deviously Deviled Eggs
-				i(204073),	-- Recipe: Deviously Deviled Eggs
-				i(204079),	-- Gilded Mechafrog
 				i(204089),	-- Atrenosh's Spellsworn Sigil
 				i(204092),	-- Auric Fleece
 				i(204093),	-- Lunker Morsel
-				i(204182),	-- Cloak of Dark Descent
-				i(204192),	-- Ascendancy
-				i(204199),	-- Ley-Infused Crystal
 				i(204208),	-- Primordial Earth Core
 				i(204209),	-- Primordial Flame Core
 				i(204210),	-- Primordial Storm Core
 				i(204212),	-- Primordial Water Core
-				i(204213),	-- Short Range Teleport
+				i(204213),	-- Short-Range Teleport
 				i(204216),	-- Primordial Pulverizing
-				i(204217),	-- Unstable Elementium
-				i(204218),	-- Design: Primordial Pulverizing
-				i(204219),	-- Design: Unstable Elementium
-				i(204222),	-- Conductive Ametrine Shard
-				i(204224),	-- Speck of Arcane Awareness
-				i(204225),	-- Perfect Windfeather
-				i(204226),	-- Blazehoof Ashes
-				i(204227),	-- Everflowing Antifreeze
-				i(204228),	-- Undigested Hochenblume Petal
-				i(204229),	-- Glimmering Rune of Arcantrix
-				i(204230),	-- Dense Seaforged Javelin
-				i(204231),	-- Kingly Sheepskin Pelt
-				i(204232),	-- Slyvern Alpha Claw
-				i(204233),	-- Impenetrable Elemental Core
-				i(204234),	-- Dead Worms
-				i(204235),	-- Kaldorei Fruitcake
 				i(204239),	-- Shadowy Mojo Crystal
 				i(204244),	-- Breathing Mojo Crystal
 				i(204245),	-- Hateful Mojo Crystal
-
+				-- Community Feast
 				i(204281),	-- Thousandbite Piranha Collar
 				i(204282),	-- Lunker Bits
 				i(204283),	-- Skrog Liver Oil
@@ -2655,60 +2521,171 @@ root(ROOTS.Unsorted, {
 				i(204302),	-- Rations: Undermine Clam Chowder
 				i(204303),	-- Rations: Westfall Stew
 				i(204304),	-- Rations: Dragonbreath Chili
-				i(204305),	-- Neltharion Signed Notes
-				i(204306),	-- Random Scribblings
+				--
+				i(204305),	-- Neltharion-Signed Notes
 				i(204307),	-- Ornate Bronze Lockbox
 				i(204308),	-- Sturdy Bone
-				i(204310),	-- Mushy Spines
+				i(204310),	-- Mycelial Threads
 				i(204311),	-- Fluorescent Veil
 				i(204312),	-- Ettin Skin
 				i(204313),	-- Handful of Scales
-				i(204330),	-- Inert Promordal Fragments
+				i(204330),	-- Inert Primordial Fragments
 				i(114942),	-- Cracked Draenic Mortar
-				i(202252),	-- Recipe Rat
-				i(204073),	-- Ratcipe: Deviously Deviled Eggs
-				i(204339),	-- Satchel of Coalescing Chaos
-				i(204340),	-- Torn Recipe Scrap
 				i(204343),	-- Trusty Dragonkin Rake
 				i(204353),	-- Primordial Jeweler's Kit
-				i(204356),	-- Illustrious Gemdust
 				i(204378),	-- Brimming Dragonscale Expedition Supply Pack
 				i(204379),	-- Brimming Iskaaran Supply Pack
 				i(204380),	-- Brimming Maruuk Centaur Supply Satchel
 				i(204381),	-- Brimming Valdrakken Accord Supply Pack
-				i(204404),	-- Square Holders
 				i(204405),	-- Stuffed Bear
-				i(204406),	-- Ancient Design: Square Holders
-				i(203466),	-- Dragonscale Surplus Crate
-				i(203722),	-- Experimental Dragon Pack
-				i(204213),	-- Short-Range Teleport
-				i(204305),	-- Neltharion-Signed Notes
-				i(204367),	-- Sleeping Ancient Mammoth
 				i(204439),	-- Research Chest Key
 				i(204442),	-- Clump of Tar
 				i(204443),	-- Blacksteel Hammer
-				i(204561),	-- Primalist Cache keys
+				i(204561),	-- Primalist Cache Key
 				i(204632),	-- Tectonic Rock Fragment
 				i(204636),	-- Snarfang's Stomach Sac
-				i(204674),	-- Cursed Demonbone Longbow
-				i(204677),	-- Ogre Mining Pick
-				i(204678),	-- Pattern: Paw-Made Winterpelt Reagent Bag
 				i(204685),	-- Primordial Anvil
-				i(203705),	-- Empty Obsidian Vial
-				i(204330),	-- Inert Primordial Fragments
-				i(204561),	-- Primalist Cache Key
 				i(204802),	-- Scroll of Teleport: Zskera Vaults
-				i(204812),	-- Seared Book
-				i(204813),	-- Blank Tome
-				i(204814),	-- Aged Journal
-				i(204815),	-- Ambiguous Compendium
-				i(204816),	-- Mysterious Almanac
 				i(202204),	-- Receiving Stone: Final Warning
 				i(202205),	-- Translated Journal of Adamanthia
-				i(204237),	-- Clockwork Azshara
 				i(204249),	-- Translated Correspondence of Black Dragons
 				i(204438),	-- Enchanted Arcana Vessel
 				i(204873),	-- Tied-up Envelope
+			}),
+			n(PROFESSIONS, {
+				i(204217),	-- Unstable Elementium
+				i(204218),	-- Design: Primordial Pulverizing
+				i(204219),	-- Design: Unstable Elementium
+				i(204222),	-- Conductive Ametrine Shard
+				i(204224),	-- Speck of Arcane Awareness
+				i(204225),	-- Perfect Windfeather
+				i(204226),	-- Blazehoof Ashes
+				i(204227),	-- Everflowing Antifreeze
+				i(204228),	-- Undigested Hochenblume Petal
+				i(204229),	-- Glimmering Rune of Arcantrix
+				i(204230),	-- Dense Seaforged Javelin
+				i(204231),	-- Kingly Sheepskin Pelt
+				i(204232),	-- Slyvern Alpha Claw
+				i(204233),	-- Impenetrable Elemental Core
+				i(204404),	-- Square Holders
+				i(204406),	-- Ancient Design: Square Holders
+			}),
+			filter(TOYS, {
+				i(204675),	-- A Drake's Big Basket of Eggs (TOY!)
+				i(203757),	-- Brazier of Madness (TOY!)
+				i(202360),	-- Dented Can (TOY!)
+				i(204257),	-- Holoviewer: The Lady of Dreams (TOY!)
+				i(204262),	-- Holoviewer: The Timeless One (TOY!)
+				i(204220),	-- Hraxian's Unbreakable Will (TOY!)
+				i(204687),	-- Obsidian Battle Horn (TOY!)
+				i(203734),	-- Snow Blanket (TOY!)
+				i(203852),	-- Spore-Bound Essence (TOY!)
+			}),
+			n(WEAPONS, {
+				i(204674),	-- Cursed Demonbone Longbow
+				i(204677),	-- Ogre Mining Pick
+			}),
+			header(HEADERS.LFGDungeon, 334, {	-- Zul'Gurub
+				i(203735),	-- Shattered Hakkari Bijou
+				i(203736),	-- Fragmented Hakkari Bijou
+				i(203737),	-- Restored Hakkari Bijou
+				i(203742),	-- Waterlogged Gurubashi Cache
+				i(203743),	-- Jostled Gurubashi Cache
+				i(203765),	-- Blue Hakkari Bijou
+				i(203766),	-- Bronze Hakkari Bijou
+				i(203767),	-- Gold Hakkari Bijou
+				i(203768),	-- Green Hakkari Bijou
+				i(203769),	-- Orange Hakkari Bijou
+				i(203770),	-- Purple Hakkari Bijou
+				i(203771),	-- Red Hakkari Bijou
+				i(203772),	-- Silver Hakkari Bijou
+				i(203773),	-- Yellow Hakkari Bijou
+				i(203774),	-- Big Bag o' Bijous
+				i(203790),	-- Bloodherald
+				i(203791),	-- Warblade of the Hakkari, Reborn
+				i(203792),	-- Warblade of the Hakkari, Reborn
+				i(203793),	-- Bloodlord's Reaver
+				i(203794),	-- Animist's Legguards
+				i(203795),	-- Judgment of the Gurubashi
+				i(203796),	-- Bloodlord's Embrace
+				i(203797),	-- Gurubashi Hexxer
+				i(203798),	-- Copy Jin'do's Bag of Whammies
+				i(203799),	-- Animist's Footwraps
+				i(203800),	-- Ritualistic Legwarmers
+				i(203801),	-- Gurubashi Slicer
+				i(203802),	-- Venomfang
+				i(203803),	-- Gurubashi Tigerhide Cloak
+				i(203804),	-- Sceptre of Hexing
+				i(203805),	-- Gurubashi's Grasp
+				i(203806),	-- Gurubashi Crusher
+				i(203807),	-- Gurubashi Hoodoo Stick
+				i(203808),	-- Mindslave's Reach
+				i(203809),	-- Gurubashi Grinder
+				i(203810),	-- Gurubashi Carver
+				i(203811),	-- Pitchfork of Mojo Madness
+				i(203812),	-- Gurubashi Poker
+				i(203813),	-- Fiery Vengeance
+				i(203814),	-- Junglefury Gauntlets
+				i(203815),	-- Gurubashi Ceremonial Staff
+				i(203816),	-- Junglefury Leggings
+				i(203817),	-- Gurubashi Headplate
+				i(203819),	-- Gloves of the Tormentor
+				i(203820),	-- Gurubashi Headdress
+				i(203824),	-- Ancient Plans: Gurubashi Headplate
+				i(203825),	-- Ancient Plans: Gurubashi Carver
+				i(203826),	-- Ancient Plans: Venomfang
+				i(203827),	-- Ancient Plans: Gurubashi Poker
+				i(203828),	-- Ancient Plans: Gurubashi Grinder
+				i(203829),	-- Ancient Plans: Gurubashi Hexxer
+				i(203830),	-- Ancient Plans: Sceptre of Hexing
+				i(203831),	-- Ancient Plans: Gurubashi Crusher
+				i(203832),	-- Ancient Plans: Pitchfork of Mojo Madness
+				i(203833),	-- Ancient Plans: Bloodherald
+				i(203834),	-- Ancient Plans: Bloodlord's Reaver
+				i(203835),	-- Ancient Plans: Fiery Vengeance
+				i(203836),	-- Ancient Plans: Warblades of the Hakkari, Reborn
+				i(203837),	-- Ancient Plans: Gurubashi Slicer
+				i(203838),	-- Ancient Formula: Mindslave's Reach
+				i(203839),	-- Ancient Technique: Gurubashi Hoodoo Stick
+				i(203840),	-- Ancient Technique: Judgment of the Gurubashi
+				i(203841),	-- Ancient Technique: Gurubashi Ceremonial Staff
+				i(203842),	-- Ancient Pattern: Animist's Footwraps
+				i(203843),	-- Ancient Pattern: Animist's Legguards
+				i(203844),	-- Ancient Pattern: Gloves of the Tormentor
+				i(203845),	-- Ancient Pattern: Junglefury Gauntlets
+				i(203846),	-- Ancient Pattern: Junglefury Leggings
+				i(203847),	-- Ancient Pattern: Gurubashi's Grasp
+				i(203848),	-- Ancient Pattern: Bloodlord's Embrace
+				i(203849),	-- Ancient Pattern: Gurubashi Tigerhide Cloak
+				i(203850),	-- Ancient Pattern: Gurubashi Headdress
+				i(203851),	-- Ancient Pattern: Ritualistic Legwarmers
+				i(203854),	-- Warblades of the Hakkari, Reborn
+				i(203860),	-- Venomreaver
+				i(203861),	-- Ancient Plans: Venomreaver
+				i(203862),	-- Brilliant Mana Oil
+				i(203865),	-- Brilliant Wizard Oil
+				i(203912),	-- Penny Pouch o' Paragons
+				i(203914),	-- Zandalar Bargaining Token
+				i(203959),	-- Gurubashi Tribute
+				i(203966),	-- Cord of Shriveled Heads
+				i(203968),	-- Ancient Pattern: Cord of Shriveled Heads
+				i(203970),	-- Bloodtinged Hat
+				i(203971),	-- Bloodtinged Shoulders
+				i(203974),	-- Ensemble: Zandalar Haruspec
+				i(203975),	-- Ensemble: Zandalar Predator
+				i(203976),	-- Ensemble: Zandalar Illusionist
+				i(203977),	-- Ensemble: Zandalar Freethinker
+				i(203978),	-- Ensemble: Zandalar Confessor
+				i(203979),	-- Ensemble: Zandalar Madcap
+				i(203980),	-- Ensemble: Zandalar Augur
+				i(203981),	-- Ensemble: Zandalar Demoniac
+				i(203982),	-- Ensemble: Zandalar Vindicator
+				i(203983),	-- Ensemble: Bloodtinged Cloth
+				i(203984),	-- Ensemble: Blooddrenched Leather
+				i(203985),	-- Ensemble: Bloodstained Mail
+				i(203986),	-- Ensemble: Bloodsoaked Plate
+				i(203988),	-- Warshard of the Hakkari, Unborn
+				i(203989),	-- Warshard of the Hakkari, Unborn
 			}),
 			n(QUESTS, {
 				-- 10.0.7.47910
@@ -3380,7 +3357,6 @@ root(ROOTS.Unsorted, {
 				i(202035),	-- Self-Heating Rations
 				i(202096),	-- Armaments of the Scale
 				i(202112),	-- Crystal Shattering Armaments
-				i(202252),	-- Relic of the Future (prototype)
 				i(202310),	-- Defective Doomsday Device
 				i(202691),	-- Henry's Handbag
 				i(203461),	-- Chronologically Reallocated Rations

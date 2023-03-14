@@ -2728,6 +2728,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 				}),
+				prof(JEWELCRAFTING, {
+					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
+						["coord"] = { 63.6, 61.6, STORMWIND_CITY },
+						["timeline"] = { "added 4.0.1.12984" },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							r(404740, {	-- Cataclysm Crushing
+								["timeline"] = { ADDED_DF_0_7 },
+							}),
+						},
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(7794, {	-- A Donation of Mageweave
@@ -6421,6 +6433,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.3.0.14849" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						currency(361, {	-- Illustrious Jewelcrafter's Token
+							["cost"] = { { "i", 204356, 10 }, },	-- 10x Illustrious Gemdust
+							["timeline"] = { ADDED_DF_0_7 },
+						}),
 						i(71928, {	-- Design: Accurate Shadow Spinel
 							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
 						}),

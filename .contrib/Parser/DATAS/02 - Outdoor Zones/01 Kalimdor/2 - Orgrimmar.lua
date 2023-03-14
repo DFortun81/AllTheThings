@@ -2783,6 +2783,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				-- #endif
+				prof(JEWELCRAFTING, {
+					n(46675, {	-- Lugrah <Jewelcrafting Trainer>
+						["coord"] = { 72.5, 34.3, ORGRIMMAR },
+						["timeline"] = { "added 4.0.1.12984" },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							r(404740, {	-- Cataclysm Crushing
+								["timeline"] = { ADDED_DF_0_7 },
+							}),
+						},
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(7831, {	-- A Donation of Mageweave
@@ -6627,6 +6639,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.3.0.14849" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						currency(361, {	-- Illustrious Jewelcrafter's Token
+							["cost"] = { { "i", 204356, 10 }, },	-- 10x Illustrious Gemdust
+							["timeline"] = { ADDED_DF_0_7 },
+						}),
 						i(71928, {	-- Design: Accurate Shadow Spinel
 							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
 						}),

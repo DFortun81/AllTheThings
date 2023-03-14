@@ -146,4 +146,5 @@ i(202235, 397865);	-- Remarkable Hexweave Essence
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+i(204678, 405974);	-- Paw-Made Winterpelt Reagent Bag
 i(203428, 400815);	-- Traditional Morqut Kite

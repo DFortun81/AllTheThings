@@ -106,4 +106,5 @@ i(202249, 13028);	-- Goldthorn Tea
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+i(204073, 403018);	-- Deviously Deviled Eggs
 i(203422, 400807);	-- Sparkling Spice Pouch

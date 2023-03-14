@@ -203,3 +203,4 @@ i(194615, 0);	-- Zen Neltharite
 -- PATCH 10.0.7 --
 ------------------
 i(203426, 400812);	-- Crystal Tuning Fork
+i(0, 404740);	-- Cataclysm Crushing
