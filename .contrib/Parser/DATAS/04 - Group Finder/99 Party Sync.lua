@@ -52,6 +52,9 @@ root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { "added 8.2.5
 				i(173593),	-- Springrain Bracers
 				i(173540),	-- Staff of Astral Alignment
 			}),
+			cl(EVOKER,  {
+				i(203366),	-- Blue Winglord's Staff
+			}),
 			cl(HUNTER,  {
 				i(173569),	-- Marksman's Recurve Bow
 				i(173543),	-- Packmaster's Rifle
