@@ -2435,7 +2435,6 @@ root(ROOTS.Unsorted, {
 				}),
 				filter(MOUNTS, {
 					i(192772),	-- Ancient Salamanther
-					i(192785),	-- Gooey Snailemental
 					i(192790),	-- Mossy Mammoth
 				}),
 				filter(TOYS, {
@@ -2684,7 +2683,6 @@ root(ROOTS.Unsorted, {
 				i(204339),	-- Satchel of Coalescing Chaos
 				i(204340),	-- Torn Recipe Scrap
 				i(204343),	-- Trusty Dragonkin Rake
-				i(204352),	-- Leftover Elemental Slime
 				i(204353),	-- Primordial Jeweler's Kit
 				i(204354),	-- Hollowed Furbolg Food Pack
 				i(204355),	-- Hollowed Winterpelt Food Pack

@@ -499,7 +499,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(194106, {	-- Highland Drake [ITEM ONLY] (MOUNT!)
 					--["modelID"] = ,
 				}),
-				i(192770, {	-- Noble Elderhorn / [PH] Moose Bull Black (MOUNT!)
+				i(192770, {	-- Noble Elderhorn [ITEM ONLY] (MOUNT!)
 					--["modelID"] = ,
 				}),
 				i(192804, {	-- Restless Hornstrider / Restless Hornstrider (MOUNT!)
@@ -584,9 +584,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					--["modelID"] = ,
 				}),
 				i(192782, {	-- PH Lava Slug Yellow / [PH] Lava Slug Yellow (MOUNT!)
-					--["modelID"] = ,
-				}),
-				i(192785, {	-- PH Lava Snail Blue / [PH] Lava Snail Blue (MOUNT!)
 					--["modelID"] = ,
 				}),
 				mount(351404, {	-- PH Mammoth V2 Lava (MOUNT!)

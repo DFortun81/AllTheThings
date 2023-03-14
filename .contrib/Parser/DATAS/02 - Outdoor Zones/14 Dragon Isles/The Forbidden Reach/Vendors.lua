@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							{ "i", 202872, 1 },	-- 1x Token of Blessing [Have no Source of This yet]
 						},
 					}),
-					i(204382, {	-- Noble Bruffalon
+					i(204382, {	-- Noble Bruffalon (MOUNT!)
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 100000 },
 						},

@@ -1538,7 +1538,7 @@ i(198825, 385266);	-- Zenet Hatchling
 i(194722, 377849);	-- Carrier Yeti				/	Carrier Yeti
 i(0, 371571);	-- Dragon Isles Drake Model Test
 i(194106, 0);	-- Highland Drake
-i(192770, 349935);	-- Noble Elderhorn				/	[PH] Moose Bull Black
+i(192770, 0);	-- Noble Elderhorn				/	[PH] Moose Bull Black
 i(192804, 374263);	-- Restless Hornstrider			/	Restless Hornstrider
 i(192779, 374138);	-- Scorchpath					/	Scorchpath
 i(0, 372995);	-- Swift Spectral Drake
@@ -1567,7 +1567,6 @@ i(192781, 374140);	-- PH Lava Slug Blue			/	[PH] Lava Slug Blue
 i(192778, 350220);	-- PH Lava Slug Orange			/	[PH] Lava Slug Orange
 i(192780, 350220);	-- PH Lava Slug Orange			/	[PH] Lava Snail Orange
 i(192782, 374142);	-- PH Lava Slug Yellow			/	[PH] Lava Slug Yellow
-i(192785, 374157);	-- PH Lava Snail Blue			/	[PH] Lava Snail Blue
 i(0, 351404);	-- PH Mammoth V2 Lava
 i(192802, 374258);	-- PH Primal Tallstrider Black	/	PH Primal Tallstrider Black
 i(192803, 374259);	-- PH Primal Tallstrider Red	/	PH Primal Tallstrider Red
@@ -1608,9 +1607,11 @@ i(189978, 366647);	-- Magenta Cloud Serpent
 i(190169, 366790);	-- Quawks
 i(190613, 367826);	-- Savage Green Battle Turtle
 
-
-
-
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(192785, 374157);	-- Gooey Snailemental
+i(204382, 349935);	-- Noble Bruffalon
 
 
 
