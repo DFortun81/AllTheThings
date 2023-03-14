@@ -59,14 +59,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			n(200564, {	-- Storykeeper Askhekh
 				["coord"] = { 34.1, 60.0, THE_FORBIDDEN_REACH },
 				["g"] = {
+					i(204559, {	-- Essence of Divination
+						["cost"] = {
+							{ "c", ELEMENTAL_OVERFLOW, 2000 },
+						},
+					}),
 					i(203222, {	-- Maruuk Surplus Bundle
 						["cost"] = {
 							{ "i", 202872, 1 },	-- 1x Token of Blessing [Have no Source of This yet]
 						},
 					}),
-					i(204559, {	-- Essence of Divination
+					i(204382, {	-- Noble Bruffalon
 						["cost"] = {
-							{ "c", ELEMENTAL_OVERFLOW, 2000 },
+							{ "c", ELEMENTAL_OVERFLOW, 100000 },
 						},
 					}),
 				},

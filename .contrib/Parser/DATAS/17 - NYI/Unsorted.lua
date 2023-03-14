@@ -2440,7 +2440,6 @@ root(ROOTS.Unsorted, {
 					i(192772),	-- Ancient Salamanther
 					i(192785),	-- Gooey Snailemental
 					i(192790),	-- Mossy Mammoth
-					i(204382),	-- Noble Bruffalon
 				}),
 				filter(TOYS, {
 					i(204675),	-- A Drake's Big Basket of Eggs (TOY!)
