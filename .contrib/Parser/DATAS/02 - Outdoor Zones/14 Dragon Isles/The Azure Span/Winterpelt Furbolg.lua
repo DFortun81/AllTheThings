@@ -212,6 +212,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 								},
 							}),
 						}),
+						filter(TOYS, {
+							i(202253, {	-- Primal Stave of Claw and Fur
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 400 },
+								},
+							}),
+							i(203734, {	-- Snow Blanket
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 200 },
+								},
+							}),
+						}),
 						n(WEAPONS, {
 							i(202282, {	-- Winterpelt Mending Totem
 								["cost"] = {

@@ -337,7 +337,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							ach(5099, {	-- Heroic: Drak'Tharon Keep Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),
-							i(41795, {	-- Design: Timeless Twilight Opal
+							i(41795, {	-- Design: Timeless Twilight Opal [CATA+] / Design: Timeless Forest Emerald
 								["timeline"] = { "removed 4.0.1" },
 							}),
 							i(37733),	-- Mojo Masked Crusher

@@ -21,6 +21,10 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	-- Toys
+	i(204675, {	-- A Drake's Big Basket of Eggs
+		["timeline"] = { "added 10.0.7.48076" },
+	--	["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
+	}),
 	i(165802, {	-- Noble Gardener's Hearthstone (TOY!)
 		["timeline"] = { "added 8.1.5.29701" },
 		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate

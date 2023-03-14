@@ -1914,6 +1914,10 @@ champ = function(cost, item)							-- Assign a Champion's Seal cost to an item w
 	applycost(item, { "c", 241, cost });	-- Champion's Seal
 	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
+daljewelcraftingtoken = function(cost, item)				-- Assign a Dalaran Jewelcrafter's Token cost to an item.
+	applycost(item, { "c", 61, cost });
+	return item;
+end
 emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 221, cost });	-- Emblem of Conquest

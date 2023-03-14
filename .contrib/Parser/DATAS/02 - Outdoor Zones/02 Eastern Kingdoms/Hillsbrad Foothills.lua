@@ -3111,7 +3111,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(3053, {	-- Humbert's Chestpiece
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure.
+					-- #if AFTER CATA
+					["coords"] = {
+						{ 63.2, 85.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif
 					["crs"] = {
 						2344,	-- Dun Garok Mountaineer
 						14275,	-- Tamra Stormpike
@@ -3122,7 +3127,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2345,	-- Dun Garok Rifleman
 				}),
 				i(4723, {	-- Humbert's Pants
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3" },	
 					["cr"] = 2346,	-- Dun Garok Priest
 				}),
 				-- #if BEFORE CATA
