@@ -2380,7 +2380,6 @@ root(ROOTS.Unsorted, {
 					i(198138),	-- Lightning-Infused Rock
 					i(198834),	-- Scribbled Bark Chunks
 					i(202075),	-- Temp Currency
-					i(202088),	-- Powerful Flask of Renewal
 					i(202180),	-- Ripe Burcicle Berry
 					i(202181),	-- Best-root Tuber
 					i(202185),	-- Chillwrought Worm Meat
@@ -2424,13 +2423,9 @@ root(ROOTS.Unsorted, {
 					i(202868),	-- Mender's Signal
 					i(202874),	-- Healing Draught
 					i(203210),	-- Dragonscale Supply Box
-					i(203217),	-- Dragonscale Surplus Crate
 					i(203218),	-- Iskaara Supply Pouch
-					i(203220),	-- Iskaara Surplus Bag
 					i(203221),	-- Maruuk Supply Sack
-					i(203222),	-- Maruuk Surplus Bundle
 					i(203223),	-- Valdrakken Supply Coffer
-					i(203224),	-- Valdrakken Surplus Chest
 					i(203381),	-- Sealed Letter to Neltharion
 				}),
 				filter(MOUNTS, {
@@ -2581,11 +2576,8 @@ root(ROOTS.Unsorted, {
 				i(203686),	-- Odd Round Object
 				i(203687),	-- Dusty Vase
 				i(203690),	-- Pearlescent Bubble Key
-				i(203699),	-- Tattered Gift Package
 				i(203700),	-- Tattered Gift Package
-				i(203701),	-- Neltharion Gift Token
 				i(203702),	-- Experimental Melder
-				i(203703),	-- Prismatic Fragment
 				i(203704),	-- Stone Dissolver
 				i(203705),	-- Empty Vial
 				i(203715),	-- Oozing Gold
@@ -2604,9 +2596,7 @@ root(ROOTS.Unsorted, {
 				i(204089),	-- Atrenosh's Spellsworn Sigil
 				i(204092),	-- Auric Fleece
 				i(204093),	-- Lunker Morsel
-				i(204181),	-- Opera of the Aspects
 				i(204182),	-- Cloak of Dark Descent
-				i(204185),	-- The Old Gods and the Ordering of Azeroth (Annotated)
 				i(204192),	-- Ascendancy
 				i(204199),	-- Ley-Infused Crystal
 				i(204208),	-- Primordial Earth Core
@@ -2642,7 +2632,6 @@ root(ROOTS.Unsorted, {
 				i(204267),	-- Gilnean Trainee's Leggings
 				i(204268),	-- Gilnean Trainee's Cord
 				i(204269),	-- Gilnean Trainee's Wristwraps
-				i(204278),	-- Neltharion's Toolkit
 				i(204281),	-- Thousandbite Piranha Collar
 				i(204282),	-- Lunker Bits
 				i(204283),	-- Skrog Liver Oil
@@ -2684,8 +2673,6 @@ root(ROOTS.Unsorted, {
 				i(204340),	-- Torn Recipe Scrap
 				i(204343),	-- Trusty Dragonkin Rake
 				i(204353),	-- Primordial Jeweler's Kit
-				i(204354),	-- Hollowed Furbolg Food Pack
-				i(204355),	-- Hollowed Winterpelt Food Pack
 				i(204356),	-- Illustrious Gemdust
 				i(204360),	-- Strange Petrified Orb
 				i(204363),	-- Particularly Ordinary Egg
@@ -2709,14 +2696,9 @@ root(ROOTS.Unsorted, {
 				i(204213),	-- Short-Range Teleport
 				i(204305),	-- Neltharion-Signed Notes
 				i(204367),	-- Sleeping Ancient Mammoth
-				i(204438),	-- Arcana Vessel from Morqut Islet
 				i(204439),	-- Research Chest Key
 				i(204442),	-- Clump of Tar
 				i(204443),	-- Blacksteel Hammer
-				i(204481),	-- Morqut Hearth Totem
-				i(204558),	-- Reliquary Scroll of Perception
-				i(204559),	-- Essence of Divination
-				i(204560),	-- Azure Scrying Crystal
 				i(204561),	-- Primalist Cache keys
 				i(204632),	-- Tectonic Rock Fragment
 				i(204636),	-- Snarfang's Stomach Sac
@@ -2724,7 +2706,6 @@ root(ROOTS.Unsorted, {
 				i(204677),	-- Ogre Mining Pick
 				i(204678),	-- Pattern: Paw-Made Winterpelt Reagent Bag
 				i(204685),	-- Primordial Anvil
-				i(204691),	-- Living Book
 				i(203705),	-- Empty Obsidian Vial
 				i(204330),	-- Inert Primordial Fragments
 				i(204561),	-- Primalist Cache Key
@@ -2736,19 +2717,8 @@ root(ROOTS.Unsorted, {
 				i(204816),	-- Mysterious Almanac
 				i(202204),	-- Receiving Stone: Final Warning
 				i(202205),	-- Translated Journal of Adamanthia
-				i(202327),	-- Sending Stone: The Prisoner
 				i(204237),	-- Clockwork Azshara
 				i(204249),	-- Translated Correspondence of Black Dragons
-				i(204250),	-- Receiving Stone: Final Warning
-				i(204251),	-- Sending Stone: Protest
-				i(204252),	-- Sending Stone: Initial Report
-				i(204253),	-- Sending Stone: The Prisoner
-				i(204316),	-- A Soldier's Journal
-				i(204317),	-- Words of the Wyrmslayer
-				i(204321),	-- Lost Expedition Notes
-				i(204328),	-- Return of the Nightsquall
-				i(204335),	-- A Song of the Depths
-				i(204338),	-- The Burden of Lapisagos
 				i(204438),	-- Enchanted Arcana Vessel
 				i(204873),	-- Tied-up Envelope
 			}),
