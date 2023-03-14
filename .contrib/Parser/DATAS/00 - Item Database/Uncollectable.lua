@@ -613,12 +613,14 @@ i(201361);	-- Primal Inspiration
 ------------------
 i(200100);	-- Batubar the Relentless
 i(194433);	-- Bloodhorn's Horn
+i(200188);	-- Broken Fishing Pole
 i(198982);	-- Broken Part: Head
 i(198983);	-- Broken Part: Arm
 i(198984);	-- Broken Part: Shattered Orb
 i(201044);	-- Cirrus Flowers
 i(200854);	-- Cooked Caviar
 i(192776);	-- Dormant Embercone
+i(195359);	-- Dry Snapper Meat
 i(191042);	-- Flask of Dwarven Antifreeze
 i(198848);	-- Flyspawn Thorax
 i(194439);	-- Frostfist's Eye
@@ -631,14 +633,21 @@ i(194423);	-- Maruuk's Spear
 i(191135);	-- Nai'jin's Runestone
 i(194432);	-- Old Stonetusk's Tusk
 i(198079);	-- Orders from Sarkareth
+i(200191);	-- Ottuk Lure
+i(191855);	-- Qalashi Trophy
 i(198078);	-- Recruitment Roster
 i(200115);	-- Sarantuya the Ever-True
+i(195360);	-- Scorched Snapper Meat
 i(201091);	-- Sharp Tooth
 i(193357);	-- Shattered Ornament
 i(191136);	-- Sin'tia's Runestone
 i(193617);	-- Snowhide Totem
+i(200190);	-- Stuffed Duckling Toy
+i(191858);	-- Succulent Snapper Meat
 i(194421);	-- Teera's Bow
 i(193070);	-- The Insight of Tyr
 i(193072);	-- The Judgment of Tyr
 i(197958);	-- Watcher Log
+i(191863);	-- Waterlogged Wood
+i(191862);	-- Whalebone Fragment
 i(193372);	-- Wood

@@ -3549,13 +3549,7 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(QUEST_ITEMS, {
 				i(123869),	-- Relic of Elune
-				i(191855),	-- Qalashi Trophy
-				i(191858),	-- Succulent Snapper Meat
 				i(191859),	-- Half-Boiled Fish
-				i(191862),	-- Whalebone Fragment
-				i(191863),	-- Waterlogged Wood
-				i(195359),	-- Dry Snapper Meat
-				i(195360),	-- Scorched Snapper Meat
 				--
 				i(197845),	-- Silver Scale
 				i(197862),	-- Primary Security Disc
@@ -3563,21 +3557,10 @@ root(ROOTS.Unsorted, {
 				i(198038),	-- Ancient Titansteel Ingot
 				i(198355),	-- Tyrhold Conduit
 				--
-				i(199830),	-- Tuskarr Training Dummy
-				i(200188),	-- Broken Fishing Pole
-				i(200190),	-- Stuffed Duckling Toy
-				i(200191),	-- Ottuk Lure
 				i(123868),	-- Relic of Shakama
 				i(192744),	-- Rymek's Gift
 				i(192768),	-- Titan Disc
 				--
-				i(199790),	-- Makko's Journal Cover
-				i(199792),	-- Makko's Journal - Page One
-				i(199793),	-- Makko's Journal - Page Two
-				i(199794),	-- Makko's Journal - Page Three
-				i(199795),	-- Makko's Journal - Page Four
-				i(199796),	-- Makko's Journal - Page Five
-				i(199797),	-- Makko's Journal - Page Six
 				i(199798),	-- Makko's Journal - Page Seven
 			}),
 			n(PROFESSIONS, {

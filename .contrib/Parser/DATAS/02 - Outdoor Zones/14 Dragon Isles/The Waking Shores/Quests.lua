@@ -1181,6 +1181,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 37.0, 55.8, THE_WAKING_SHORES },
 				["g"] = {
 					i(200617),	-- Shattering Totem
+					i(198980),	-- Shattering Totem
 				},
 			}),
 			q(66369, {	-- The Earthen Ward

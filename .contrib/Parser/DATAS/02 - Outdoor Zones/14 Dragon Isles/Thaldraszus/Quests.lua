@@ -484,13 +484,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						-- ["sourceQuests"] = {  },	--
 						["provider"] = { "n", 197533 },	-- Waywatcher Lorin
 						["coord"] = { 50.2, 62.4, VALDRAKKEN },
-						["isBreadcrumb"] = true,	-- Probably?
+						["isBreadcrumb"] = true,
 					}),
 					q(66448, {	-- The Wayward Waywatcher
-						["description"] = "Another BC from maybe South Gate??",
-						--["provider"] = { "n", 197533 },	-- Waywatcher Lorin
-						--["coord"] = { 50.2, 62.4, THALDRASZUS },
-						["isBreadcrumb"] = true,	-- Probably?
+						-- ["sourceQuests"] = {  },	--
+						["provider"] = { "n", 187202 },	-- Waywatcher Nori
+						["coord"] = { 52.4, 68.7, THALDRASZUS },
+						["isBreadcrumb"] = true,
 					}),
 					q(66230, {	-- A Sketchy Request
 						["sourceQuests"] = {
@@ -567,7 +567,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					q(70781, {	-- Out of the Blue
 						-- ["sourceQuests"] = {  },	--
 						["provider"] = { "n", 196392 },	-- Lieutenant Conure
-						["coord"] = { 50.5, 67.4, VALDRAKKEN },
+						["coord"] = { 50.5, 67.4, THALDRASZUS },
 						["isBreadcrumb"] = true,
 					}),
 					q(66071, {	-- Flying Rocs

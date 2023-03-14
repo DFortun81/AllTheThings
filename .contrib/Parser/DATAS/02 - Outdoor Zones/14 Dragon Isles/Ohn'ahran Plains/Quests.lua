@@ -1053,6 +1053,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["description"] = "Drops from entrhalled Murlocs during |cffffff00The Insight of Tyr|r.",
 				["g"] = {
 					i(200295),	-- Makko's Complete Journal
+					i(199792),	-- Makko's Journal - Page One
+					i(199793),	-- Makko's Journal - Page Two
+					i(199794),	-- Makko's Journal - Page Three
+					i(199795),	-- Makko's Journal - Page Four
+					i(199796),	-- Makko's Journal - Page Five
+					i(199797),	-- Makko's Journal - Page Six
 				},
 			}),
 			q(70370, {	-- Occupation Examination

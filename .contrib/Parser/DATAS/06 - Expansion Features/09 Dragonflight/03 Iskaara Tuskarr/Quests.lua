@@ -221,6 +221,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["sourceQuests"] = { 66410 },	-- Worst Impressions
 				["provider"] = { "n", 188283 },	-- Elder Unujaak
 				["coord"] = { 53.7, 37.9, THE_WAKING_SHORES },
+				["g"] = {
+					i(192191),	-- Tuskarr Fishing Net
+				},
 			}),
 			q(66417, {	-- Salvaging Supplies
 				["minReputation"] = { 2511, 11 },	-- Iskaara Tuskarr Renown 11
