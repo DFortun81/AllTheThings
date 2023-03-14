@@ -2278,7 +2278,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				-- #if AFTER TBC
 				i(16984),	-- Black Dragonscale Boots
 				-- #endif
-				i(6836),	-- Dress Shoes
 				i(8209),	-- Tough Scorpid Boots
 			}),
 		}),
@@ -2546,8 +2545,12 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(10021),	-- Dreamweave Vest
 			i(7051),	-- Earthen Vest
 			i(14106),	-- Felcloth Robe
-			i(21154),	-- Festival Dress
-			i(21542),	-- Festival Suit
+			i(21154, {	-- Festival Dress
+				["timeline"] = { "removed 7.3.5" },
+			}),
+			i(21542, {	-- Festival Suit
+				["timeline"] = { "removed 7.3.5" },
+			}),
 			i(19156),	-- Flarecore Robe
 			i(13868),	-- Frostweave Robe
 			i(13869),	-- Frostweave Tunic
@@ -2689,6 +2692,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			})),
 			i(4325),	-- Boots of the Enchanter
 			i(10044),	-- Cindercloth Boots
+			i(6836),	-- Dress Shoes
 			i(14108),	-- Felcloth Boots
 			i(2569),	-- Linen Boots
 			i(15802),	-- Mooncloth Boots
