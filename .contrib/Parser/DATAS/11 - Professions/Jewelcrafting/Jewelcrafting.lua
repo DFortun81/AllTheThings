@@ -1365,652 +1365,383 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			["name"] = "Blue Gems",
 			["categoryID"] = 846,
 			["groups"] = {
-				{
-					["name"] = "Rigid Chalcedony",
-					["recipeID"] = 53854
-				},
-				{
-					["name"] = "Rigid Dragon's Eye",
-					["recipeID"] = 56084
-				},
-				{
-					["name"] = "Rigid Majestic Zircon",
-					["recipeID"] = 66501
-				},
-				{
-					["name"] = "Rigid Sky Sapphire",
-					["recipeID"] = 53958
-				},
-				{
-					["name"] = "Solid Chalcedony",
-					["recipeID"] = 53934
-				},
-				{
-					["name"] = "Solid Dragon's Eye",
-					["recipeID"] = 56086
-				},
-				{
-					["name"] = "Solid Majestic Zircon",
-					["recipeID"] = 66497
-				},
-				{
-					["name"] = "Solid Sky Sapphire",
-					["recipeID"] = 53952
-				},
-				{
-					["name"] = "Sparkling Chalcedony",
-					["recipeID"] = 53941
-				},
-				{
-					["name"] = "Sparkling Dragon's Eye",
-					["recipeID"] = 56087
-				},
-				{
-					["name"] = "Sparkling Majestic Zircon",
-					["recipeID"] = 66498
-				},
-				{
-					["name"] = "Sparkling Sky Sapphire",
-					["recipeID"] = 53954
-				},
-				{
-					["name"] = "Stormy Chalcedony",
-					["recipeID"] = 53943
-				},
-				{
-					["name"] = "Stormy Dragon's Eye",
-					["recipeID"] = 56088
-				},
-				{
-					["name"] = "Stormy Majestic Zircon",
-					["recipeID"] = 66499
-				},
-				{
-					["name"] = "Stormy Sky Sapphire",
-					["recipeID"] = 53955
-				}
+				-- #if BEFORE CATA
+				{ ["name"] = "Lustrous Dragon's Eye", ["recipeID"] = 56077, ["timeline"] = { "deleted 4.0.3" }, },
+				{ ["name"] = "Lustrous Chalcedony / Sparkling Chalcedony [CATA]", ["recipeID"] = 53941 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Lustrous Majestic Zircon", ["recipeID"] = 66500, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Lustrous Sky Sapphire / Sparkling Sky Sapphire [CATA]", ["recipeID"] = 53954 },
+				-- #endif
+				-- #if AFTER CATA
+				{ ["name"] = "Rigid Chalcedony [Blue] / Rigid Sun Crystal [WRATH - Yellow]", ["recipeID"] = 53854 },
+				{ ["name"] = "Rigid Dragon's Eye", ["recipeID"] = 56084 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Rigid Majestic Zircon [Blue] / Rigid King's Amber [WRATH - Yellow]", ["recipeID"] = 66501 }),
+				-- #endif
+				-- #if AFTER CATA
+				{ ["name"] = "Rigid Sky Sapphire [Blue] / Rigid Autumn's Glow [WRATH - Yellow]", ["recipeID"] = 53958 },
+				-- #endif
+				{ ["name"] = "Solid Chalcedony", ["recipeID"] = 53934 },
+				{ ["name"] = "Solid Dragon's Eye", ["recipeID"] = 56086 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Solid Majestic Zircon", ["recipeID"] = 66497 }),
+				{ ["name"] = "Solid Sky Sapphire", ["recipeID"] = 53952 },
+				-- #if AFTER CATA
+				{ ["name"] = "Sparkling Chalcedony [CATA] / Lustrous Chalcedony", ["recipeID"] = 53941 },
+				-- #endif
+				{ ["name"] = "Sparkling Chalcedony", ["recipeID"] = 53940, ["timeline"] = { "deleted 4.0.3" }, },
+				{ ["name"] = "Sparkling Dragon's Eye", ["recipeID"] = 56087 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Sparkling Majestic Zircon", ["recipeID"] = 66498 }),
+				-- #if AFTER CATA
+				{ ["name"] = "Sparkling Sky Sapphire [CATA] / Lustrous Sky Sapphire", ["recipeID"] = 53954 },
+				-- #endif
+				{ ["name"] = "Sparkling Sky Sapphire", ["recipeID"] = 53953, ["timeline"] = { "deleted 4.0.3" }, },
+				{ ["name"] = "Stormy Chalcedony", ["recipeID"] = 53943 },
+				{ ["name"] = "Stormy Dragon's Eye", ["recipeID"] = 56088 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Stormy Majestic Zircon", ["recipeID"] = 66499 }),
+				{ ["name"] = "Stormy Sky Sapphire", ["recipeID"] = 53955 }
 			}
 		},
 		{
 			["name"] = "Green Gems",
 			["categoryID"] = 847,
 			["groups"] = {
-				{
-					["name"] = "Energized Dark Jade",
-					["recipeID"] = 53925
-				},
-				{
-					["name"] = "Energized Eye of Zul",
-					["recipeID"] = 66442
-				},
-				{
-					["name"] = "Energized Forest Emerald",
-					["recipeID"] = 54011
-				},
-				{
-					["name"] = "Forceful Dark Jade",
-					["recipeID"] = 53920
-				},
-				{
-					["name"] = "Forceful Eye of Zul",
-					["recipeID"] = 66434
-				},
-				{
-					["name"] = "Forceful Forest Emerald",
-					["recipeID"] = 54001
-				},
-				{
-					["name"] = "Jagged Dark Jade",
-					["recipeID"] = 53870
-				},
-				{
-					["name"] = "Jagged Eye of Zul",
-					["recipeID"] = 66431
-				},
-				{
-					["name"] = "Jagged Forest Emerald",
-					["recipeID"] = 53996
-				},
-				{
-					["name"] = "Lightning Dark Jade",
-					["recipeID"] = 53923
-				},
-				{
-					["name"] = "Lightning Eye of Zul",
-					["recipeID"] = 66439
-				},
-				{
-					["name"] = "Lightning Forest Emerald",
-					["recipeID"] = 54009
-				},
-				{
-					["name"] = "Misty Dark Jade",
-					["recipeID"] = 53922
-				},
-				{
-					["name"] = "Misty Eye of Zul",
-					["recipeID"] = 66435
-				},
-				{
-					["name"] = "Misty Forest Emerald",
-					["recipeID"] = 54003
-				},
-				{
-					["name"] = "Nimble Dark Jade",
-					["recipeID"] = 53917
-				},
-				{
-					["name"] = "Nimble Eye of Zul",
-					["recipeID"] = 66429
-				},
-				{
-					["name"] = "Nimble Forest Emerald",
-					["recipeID"] = 53997
-				},
-				{
-					["name"] = "Radiant Dark Jade",
-					["recipeID"] = 53932
-				},
-				{
-					["name"] = "Radiant Eye of Zul",
-					["recipeID"] = 66441
-				},
-				{
-					["name"] = "Radiant Forest Emerald",
-					["recipeID"] = 54012
-				},
-				{
-					["name"] = "Regal Dark Jade",
-					["recipeID"] = 53918
-				},
-				{
-					["name"] = "Regal Eye of Zul",
-					["recipeID"] = 66338
-				},
-				{
-					["name"] = "Regal Forest Emerald",
-					["recipeID"] = 53998
-				},
-				{
-					["name"] = "Shattered Dark Jade",
-					["recipeID"] = 53933
-				},
-				{
-					["name"] = "Shattered Eye of Zul",
-					["recipeID"] = 66443
-				},
-				{
-					["name"] = "Shattered Forest Emerald",
-					["recipeID"] = 54014
-				},
-				{
-					["name"] = "Steady Dark Jade",
-					["recipeID"] = 53919
-				},
-				{
-					["name"] = "Steady Eye of Zul",
-					["recipeID"] = 66428
-				},
-				{
-					["name"] = "Steady Forest Emerald",
-					["recipeID"] = 54000
-				},
-				{
-					["name"] = "Turbid Dark Jade",
-					["recipeID"] = 53924,
-				},
-				{
-					["name"] = "Turbid Eye of Zul",
-					["recipeID"] = 66445
-				},
-				{
-					["name"] = "Turbid Forest Emerald",
-					["recipeID"] = 54005
-				}
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Dazzling Eye of Zul", ["recipeID"] = 66430, ["timeline"] = { "deleted 4.0.3" }, }),
+				-- #if BEFORE CATA
+				{ ["name"] = "Enduring Dark Jade / Regal Dark Jade [CATA]", ["recipeID"] = 53918 },
+				{ ["name"] = "Enduring Forest Emerald / Regal Forest Emerald [CATA]", ["recipeID"] = 53998 },
+				-- #endif
+				-- #if AFTER CATA
+				{ ["name"] = "Energized Dark Jade [CATA] / Intricate Dark Jade", ["recipeID"] = 53925 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Energized Eye of Zul", ["recipeID"] = 66442 }),
+				{ ["name"] = "Energized Forest Emerald", ["recipeID"] = 54011 },
+				{ ["name"] = "Forceful Dark Jade", ["recipeID"] = 53920 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Forceful Eye of Zul", ["recipeID"] = 66434 }),
+				{ ["name"] = "Forceful Forest Emerald", ["recipeID"] = 54001 },
+				-- #if AFTER CATA
+				{ ["name"] = "Jagged Dark Jade [CATA - Green] / Puissant Shadow Crystal [Purple]", ["recipeID"] = 53870 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Jagged Eye of Zul", ["recipeID"] = 66431 }),
+				{ ["name"] = "Jagged Forest Emerald", ["recipeID"] = 53996 },
+				-- #if BEFORE CATA
+				{ ["name"] = "Intricate Dark Jade / Energized Dark Jade [CATA]", ["recipeID"] = 53925 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Intricate Eye of Zul", ["recipeID"] = 66440, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Intricate Forest Emerald", ["recipeID"] = 54006, ["timeline"] = { "deleted 4.0.3" }, },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Lambent Eye of Zul / Lightning Eye of Zul [CATA]", ["recipeID"] = 66439 }),
+				-- #endif
+				-- #if AFTER CATA
+				{ ["name"] = "Lightning Dark Jade [CATA] / Shining Dark Jade", ["recipeID"] = 53923 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Lightning Eye of Zul [CATA] / Lambent Eye of Zul", ["recipeID"] = 66439 }),
+				-- #endif
+				{ ["name"] = "Lightning Forest Emerald", ["recipeID"] = 54009 },
+				{ ["name"] = "Misty Dark Jade", ["recipeID"] = 53922 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Misty Eye of Zul", ["recipeID"] = 66435 }),
+				{ ["name"] = "Misty Forest Emerald", ["recipeID"] = 54003 },
+				-- #if AFTER CATA
+				{ ["name"] = "Nimble Dark Jade [CATA] / Vivid Dark Jade", ["recipeID"] = 53917 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Nimble Eye of Zul [CATA] / Vivid Eye of Zul", ["recipeID"] = 66429 }),
+				{ ["name"] = "Nimble Forest Emerald [CATA] / Vivid Forest Emerald", ["recipeID"] = 53997 },
+				-- #endif
+				{ ["name"] = "Opaque Dark Jade", ["recipeID"] = 53929, ["timeline"] = { "deleted 4.0.3" }, },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Opaque Eye of Zul", ["recipeID"] = 66444, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Opaque Forest Emerald", ["recipeID"] = 54010, ["timeline"] = { "deleted 4.0.3" }, },
+				-- #if AFTER CATA
+				{ ["name"] = "Radiant Dark Jade [CATA] / Tense Dark Jade", ["recipeID"] = 53932 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Radiant Eye of Zul", ["recipeID"] = 66441 }),
+				{ ["name"] = "Radiant Forest Emerald", ["recipeID"] = 54012 },
+				-- #if AFTER CATA
+				{ ["name"] = "Regal Dark Jade [CATA] / Enduring Dark Jade", ["recipeID"] = 53918 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Regal Eye of Zul", ["recipeID"] = 66338 }),
+				-- #if AFTER CATA
+				{ ["name"] = "Regal Forest Emerald [CATA] / Enduring Forest Emerald", ["recipeID"] = 53998 },
+				-- #endif
+				-- #if BEFORE CATA
+				{ ["name"] = "Seer's Dark Jade [Green] / Purified Shadow Crystal [CATA - Purple]", ["recipeID"] = 53921 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Seer's Eye of Zul", ["recipeID"] = 66433, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Seer's Forest Emerald", ["recipeID"] = 54002, ["timeline"] = { "deleted 4.0.3" }, },
+				-- #endif
+				{ ["name"] = "Shattered Dark Jade", ["recipeID"] = 53933 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Shattered Eye of Zul", ["recipeID"] = 66443 }),
+				{ ["name"] = "Shattered Forest Emerald", ["recipeID"] = 54014 },
+				-- #if BEFORE CATA
+				{ ["name"] = "Shining Dark Jade / Lightning Dark Jade [CATA]", ["recipeID"] = 53923 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Shining Eye of Zul", ["recipeID"] = 66437, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Shining Forest Emerald", ["recipeID"] = 54004, ["timeline"] = { "deleted 4.0.3" }, },
+				-- #endif
+				{ ["name"] = "Steady Dark Jade", ["recipeID"] = 53919 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Steady Eye of Zul", ["recipeID"] = 66428 }),
+				{ ["name"] = "Steady Forest Emerald", ["recipeID"] = 54000 },
+				{ ["name"] = "Sundered Forest Emerald", ["recipeID"] = 54008, ["timeline"] = { "deleted 4.0.3" }, },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Sundered Eye of Zul", ["recipeID"] = 66436, ["timeline"] = { "deleted 4.0.3" }, }),
+				-- #if BEFORE CATA
+				{ ["name"] = "Tense Dark Jade / Radiant Dark Jade [CATA]", ["recipeID"] = 53932 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Tense Eye of Zul", ["recipeID"] = 66438, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Tense Forest Emerald", ["recipeID"] = 54013, ["timeline"] = { "deleted 4.0.3" }, },
+				{ ["name"] = "Timeless Dark Jade [Green] / Timeless Shadow Crystal [CATA - Purple]", ["recipeID"] = 53894 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Timeless Eye of Zul [Green] / Timeless Dreadstone [CATA - Purple]", ["recipeID"] = 66432 }),
+				{ ["name"] = "Timeless Forest Emerald", ["recipeID"] = 53995, ["timeline"] = { "deleted 4.0.3" }, },
+				-- #endif
+				{ ["name"] = "Turbid Dark Jade", ["recipeID"] = 53924, },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Turbid Eye of Zul", ["recipeID"] = 66445 }),
+				{ ["name"] = "Turbid Forest Emerald", ["recipeID"] = 54005 },
+				-- #if BEFORE CATA
+				{ ["name"] = "Vivid Dark Jade / Nimble Dark Jade [CATA]", ["recipeID"] = 53917 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Vivid Eye of Zul / Nimble Eye of Zul [CATA]", ["recipeID"] = 66429 }),
+				{ ["name"] = "Vivid Forest Emerald / Nimble Forest Emerald [CATA]", ["recipeID"] = 53997 },
+				-- #endif
 			}
 		},
 		{
 			["name"] = "Orange Gems",
 			["categoryID"] = 848,
 			["groups"] = {
-				{
-					["name"] = "Champion's Ametrine",
-					["recipeID"] = 66579
-				},
-				{
-					["name"] = "Champion's Huge Citrine",
-					["recipeID"] = 53874
-				},
-				{
-					["name"] = "Champion's Monarch Topaz",
-					["recipeID"] = 53977
-				},
-				{
-					["name"] = "Deadly Ametrine",
-					["recipeID"] = 66568
-				},
-				{
-					["name"] = "Deadly Huge Citrine",
-					["recipeID"] = 53877
-				},
-				{
-					["name"] = "Deadly Monarch Topaz",
-					["recipeID"] = 53988
-				},
-				{
-					["name"] = "Deft Ametrine",
-					["recipeID"] = 66584
-				},
-				{
-					["name"] = "Deft Huge Citrine",
-					["recipeID"] = 53880
-				},
-				{
-					["name"] = "Deft Monarch Topaz",
-					["recipeID"] = 53991
-				},
-				{
-					["name"] = "Fierce Ametrine",
-					["recipeID"] = 66583
-				},
-				{
-					["name"] = "Fierce Huge Citrine",
-					["recipeID"] = 53876
-				},
-				{
-					["name"] = "Fierce Monarch Topaz",
-					["recipeID"] = 54019
-				},
-				{
-					["name"] = "Inscribed Ametrine",
-					["recipeID"] = 66567
-				},
-				{
-					["name"] = "Inscribed Huge Citrine",
-					["recipeID"] = 53872
-				},
-				{
-					["name"] = "Inscribed Monarch Topaz",
-					["recipeID"] = 53975
-				},
-				{
-					["name"] = "Lucent Ametrine",
-					["recipeID"] = 66585
-				},
-				{
-					["name"] = "Lucent Huge Citrine",
-					["recipeID"] = 53879,
-				},
-				{
-					["name"] = "Lucent Monarch Topaz",
-					["recipeID"] = 53981
-				},
-				{
-					["name"] = "Potent Ametrine",
-					["recipeID"] = 66569
-				},
-				{
-					["name"] = "Potent Huge Citrine",
-					["recipeID"] = 53882
-				},
-				{
-					["name"] = "Potent Monarch Topaz",
-					["recipeID"] = 53984
-				},
-				{
-					["name"] = "Reckless Ametrine",
-					["recipeID"] = 66574
-				},
-				{
-					["name"] = "Reckless Huge Citrine",
-					["recipeID"] = 53885
-				},
-				{
-					["name"] = "Reckless Monarch Topaz",
-					["recipeID"] = 53987
-				},
-				{
-					["name"] = "Resolute Ametrine",
-					["recipeID"] = 66586
-				},
-				{
-					["name"] = "Resolute Huge Citrine",
-					["recipeID"] = 53893
-				},
-				{
-					["name"] = "Resolute Monarch Topaz",
-					["recipeID"] = 54023
-				},
-				{
-					["name"] = "Resplendent Ametrine",
-					["recipeID"] = 66582
-				},
-				{
-					["name"] = "Resplendent Huge Citrine",
-					["recipeID"] = 53875
-				},
-				{
-					["name"] = "Resplendent Monarch Topaz",
-					["recipeID"] = 53978
-				},
-				{
-					["name"] = "Stalwart Ametrine",
-					["recipeID"] = 66581
-				},
-				{
-					["name"] = "Stalwart Huge Citrine",
-					["recipeID"] = 53891
-				},
-				{
-					["name"] = "Stalwart Monarch Topaz",
-					["recipeID"] = 53993
-				},
-				{
-					["name"] = "Willful Ametrine",
-					["recipeID"] = 66571
-				},
-				{
-					["name"] = "Willful Huge Citrine",
-					["recipeID"] = 53884
-				},
-				{
-					["name"] = "Willful Monarch Topaz",
-					["recipeID"] = 53986
-				}
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Accurate Ametrine [Orange] / Accurate Dreadstone [CATA - Purple]", ["recipeID"] = 66576 }),
+				{ ["name"] = "Accurate Huge Citrine [Orange] / Accurate Shadow Crystal [CATA - Purple]", ["recipeID"] = 53892 },
+				{ ["name"] = "Accurate Monarch Topaz [Orange] / Accurate Twilight Opal [CATA - Purple]", ["recipeID"] = 53994 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Champion's Ametrine", ["recipeID"] = 66579 }),
+				{ ["name"] = "Champion's Huge Citrine", ["recipeID"] = 53874 },
+				{ ["name"] = "Champion's Monarch Topaz", ["recipeID"] = 53977 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Deadly Ametrine", ["recipeID"] = 66568 }),
+				{ ["name"] = "Deadly Huge Citrine", ["recipeID"] = 53877 },
+				-- #if AFTER CATA
+				{ ["name"] = "Deadly Monarch Topaz [CATA] / Wicked Monarch Topaz", ["recipeID"] = 53988 },
+				-- #endif
+				{ ["name"] = "Deadly Monarch Topaz", ["recipeID"] = 53979, ["timeline"] = { "deleted 4.0.3" }, },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Deft Ametrine", ["recipeID"] = 66584 }),
+				{ ["name"] = "Deft Huge Citrine", ["recipeID"] = 53880 },
+				-- #if AFTER CATA
+				{ ["name"] = "Deft Monarch Topaz [CATA] / Stark Monarch Topaz", ["recipeID"] = 53991 },
+				-- #endif
+				{ ["name"] = "Deft Monarch Topaz", ["recipeID"] = 53982, ["timeline"] = { "deleted 4.0.3" }, },
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Durable Ametrine / Willful Ametrine [CATA]", ["recipeID"] = 66571 }),
+				{ ["name"] = "Durable Huge Citrine / Willful Huge Citrine [CATA]", ["recipeID"] = 53884 },
+				-- #endif
+				-- #if BEFORE CATA
+				{ ["name"] = "Durable Monarch Topaz / Willful Monarch Topaz [CATA]", ["recipeID"] = 53986 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Empowered Ametrine", ["recipeID"] = 66580, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Empowered Huge Citrine", ["recipeID"] = 53888, ["timeline"] = { "deleted 4.0.3" }, },
+				{ ["name"] = "Empowered Monarch Topaz", ["recipeID"] = 53990, ["timeline"] = { "deleted 4.0.3" }, },
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Etched Ametrine [Orange] / Etched Dreadstone [CATA - Purple]", ["recipeID"] = 66572 }),
+				{ ["name"] = "Etched Huge Citrine [Orange] / Etched Shadow Crystal [CATA - Purple]", ["recipeID"] = 53873 },
+				{ ["name"] = "Etched Monarch Topaz [Orange] / Etched Twilight Opal [CATA - Purple]", ["recipeID"] = 53976 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Fierce Ametrine", ["recipeID"] = 66583 }),
+				{ ["name"] = "Fierce Huge Citrine", ["recipeID"] = 53876 },
+				{ ["name"] = "Fierce Monarch Topaz", ["recipeID"] = 54019 },
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Glimmering Ametrine", ["recipeID"] = 66578, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Glimmering Huge Citrine / Stalwart Huge Citrine [CATA]", ["recipeID"] = 53891 },
+				{ ["name"] = "Glimmering Monarch Topaz / Stalwart Monarch Topaz [CATA]", ["recipeID"] = 53993 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Glinting Ametrine", ["recipeID"] = 66575, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Glinting Monarch Topaz [Orange] / Glinting Twilight Opal [CATA - Purple]", ["recipeID"] = 53980 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Inscribed Ametrine", ["recipeID"] = 66567 }),
+				{ ["name"] = "Inscribed Huge Citrine", ["recipeID"] = 53872 },
+				{ ["name"] = "Inscribed Monarch Topaz", ["recipeID"] = 53975 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Lucent Ametrine", ["recipeID"] = 66585 }),
+				{ ["name"] = "Lucent Huge Citrine", ["recipeID"] = 53879, },
+				{ ["name"] = "Lucent Monarch Topaz", ["recipeID"] = 53981 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Luminous Ametrine", ["recipeID"] = 66566, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Luminous Monarch Topaz", ["recipeID"] = 53983, ["timeline"] = { "deleted 4.0.3" }, },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Potent Ametrine", ["recipeID"] = 66569 }),
+				{ ["name"] = "Potent Huge Citrine", ["recipeID"] = 53882 },
+				{ ["name"] = "Potent Monarch Topaz", ["recipeID"] = 53984 },
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Pristine Ametrine [Orange] / Glinting Dreadstone [CATA - Purple]", ["recipeID"] = 66573 }),
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Reckless Ametrine", ["recipeID"] = 66574 }),
+				{ ["name"] = "Reckless Huge Citrine", ["recipeID"] = 53885 },
+				{ ["name"] = "Reckless Monarch Topaz", ["recipeID"] = 53987 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Resolute Ametrine", ["recipeID"] = 66586 }),
+				{ ["name"] = "Resolute Huge Citrine", ["recipeID"] = 53893 },
+				{ ["name"] = "Resolute Monarch Topaz", ["recipeID"] = 54023 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Resplendent Ametrine", ["recipeID"] = 66582 }),
+				{ ["name"] = "Resplendent Huge Citrine", ["recipeID"] = 53875 },
+				{ ["name"] = "Resplendent Monarch Topaz", ["recipeID"] = 53978 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Stalwart Ametrine", ["recipeID"] = 66581 }),
+				-- #if AFTER CATA
+				{ ["name"] = "Stalwart Huge Citrine [CATA] / Glimmering Huge Citrine", ["recipeID"] = 53891 },
+				{ ["name"] = "Stalwart Monarch Topaz [CATA] / Glimmering Monarch Topaz", ["recipeID"] = 53993 },
+				-- #endif
+				{ ["name"] = "Stalwart Monarch Topaz", ["recipeID"] = 53992, ["timeline"] = { "deleted 4.0.3" }, },
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Stark Ametrine", ["recipeID"] = 66587, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Stark Monarch Topaz / Deft Monarch Topaz [CATA]", ["recipeID"] = 53991 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Veiled Ametrine [Orange] / Veiled Dreadstone [CATA - Purple]", ["recipeID"] = 66570 }),
+				{ ["name"] = "Veiled Huge Citrine [Orange] / Veiled Shadow Crystal [CATA - Purple]", ["recipeID"] = 53883 },
+				{ ["name"] = "Veiled Monarch Topaz [Orange] / Veiled Twilight Opal [CATA - Purple]", ["recipeID"] = 53985 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Wicked Ametrine", ["recipeID"] = 66577, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Wicked Monarch Topaz / Deadly Monarch Topaz [CATA]", ["recipeID"] = 53988 },
+				-- #endif
+				-- #if AFTER CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Willful Ametrine [CATA] / Durable Ametrine", ["recipeID"] = 66571 }),
+				{ ["name"] = "Willful Huge Citrine [CATA] / Durable Huge Citrine", ["recipeID"] = 53884 },
+				{ ["name"] = "Willful Monarch Topaz [CATA] / Durable Monarch Topaz", ["recipeID"] = 53986 },
+				-- #endif
 			}
 		},
 		{
 			["name"] = "Purple Gems",
 			["categoryID"] = 849,
 			["groups"] = {
-				{
-					["name"] = "Accurate Dreadstone",
-					["recipeID"] = 66576
-				},
-				{
-					["name"] = "Accurate Shadow Crystal",
-					["recipeID"] = 53892
-				},
-				{
-					["name"] = "Accurate Twilight Opal",
-					["recipeID"] = 53994
-				},
-				{
-					["name"] = "Defender's Dreadstone",
-					["recipeID"] = 66560
-				},
-				{
-					["name"] = "Defender's Shadow Crystal",
-					["recipeID"] = 53869
-				},
-				{
-					["name"] = "Defender's Twilight Opal",
-					["recipeID"] = 53972
-				},
-				{
-					["name"] = "Etched Dreadstone",
-					["recipeID"] = 66572
-				},
-				{
-					["name"] = "Etched Shadow Crystal",
-					["recipeID"] = 53873
-				},
-				{
-					["name"] = "Etched Twilight Opal",
-					["recipeID"] = 53976
-				},
-				{
-					["name"] = "Glinting Dreadstone",
-					["recipeID"] = 66573
-				},
-				{
-					["name"] = "Glinting Shadow Crystal",
-					["recipeID"] = 53861
-				},
-				{
-					["name"] = "Glinting Twilight Opal",
-					["recipeID"] = 53980
-				},
-				{
-					["name"] = "Guardian's Dreadstone",
-					["recipeID"] = 66561
-				},
-				{
-					["name"] = "Guardian's Shadow Crystal",
-					["recipeID"] = 53871
-				},
-				{
-					["name"] = "Guardian's Twilight Opal",
-					["recipeID"] = 53974
-				},
-				{
-					["name"] = "Mysterious Dreadstone",
-					["recipeID"] = 66562
-				},
-				{
-					["name"] = "Mysterious Shadow Crystal",
-					["recipeID"] = 53865
-				},
-				{
-					["name"] = "Mysterious Twilight Opal",
-					["recipeID"] = 53968
-				},
-				{
-					["name"] = "Purified Dreadstone",
-					["recipeID"] = 66556
-				},
-				{
-					["name"] = "Purified Shadow Crystal",
-					["recipeID"] = 53921
-				},
-				{
-					["name"] = "Purified Twilight Opal",
-					["recipeID"] = 53966
-				},
-				{
-					["name"] = "Shifting Dreadstone",
-					["recipeID"] = 66557
-				},
-				{
-					["name"] = "Shifting Shadow Crystal",
-					["recipeID"] = 53860
-				},
-				{
-					["name"] = "Shifting Twilight Opal",
-					["recipeID"] = 53963
-				},
-				{
-					["name"] = "Sovereign Dreadstone",
-					["recipeID"] = 66554
-				},
-				{
-					["name"] = "Sovereign Shadow Crystal",
-					["recipeID"] = 53859
-				},
-				{
-					["name"] = "Sovereign Twilight Opal",
-					["recipeID"] = 53962
-				},
-				{
-					["name"] = "Timeless Dreadstone",
-					["recipeID"] = 66432
-				},
-				{
-					["name"] = "Timeless Shadow Crystal",
-					["recipeID"] = 53894
-				},
-				{
-					["name"] = "Timeless Twilight Opal",
-					["recipeID"] = 53965
-				},
-				{
-					["name"] = "Veiled Dreadstone",
-					["recipeID"] = 66570
-				},
-				{
-					["name"] = "Veiled Shadow Crystal",
-					["recipeID"] = 53883
-				},
-				{
-					["name"] = "Veiled Twilight Opal",
-					["recipeID"] = 53985
-				}
+				-- #if AFTER CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Accurate Dreadstone [CATA - Purple] / Accurate Ametrine [Orange]", ["recipeID"] = 66576 }),
+				{ ["name"] = "Accurate Shadow Crystal [CATA - Purple] / Accurate Huge Citrine [Orange]", ["recipeID"] = 53892 },
+				{ ["name"] = "Accurate Twilight Opal [CATA - Purple] / Accurate Monarch Topaz [Orange]", ["recipeID"] = 53994 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Balanced Dreadstone", ["recipeID"] = 66553, ["timeline"] = { "deleted 4.0.3" }, }),
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Defender's Dreadstone", ["recipeID"] = 66560 }),
+				{ ["name"] = "Defender's Shadow Crystal", ["recipeID"] = 53869 },
+				{ ["name"] = "Defender's Twilight Opal", ["recipeID"] = 53972 },
+				-- #if AFTER CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Etched Dreadstone [CATA - Purple] / Etched Ametrine [Orange]", ["recipeID"] = 66572 }),
+				{ ["name"] = "Etched Shadow Crystal [CATA - Purple] / Etched Huge Citrine [Orange]", ["recipeID"] = 53873 },
+				{ ["name"] = "Etched Twilight Opal [CATA - Purple] / Etched Monarch Topaz [Orange]", ["recipeID"] = 53976 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Glinting Dreadstone [CATA - Purple] / Pristine Ametrine [Orange]", ["recipeID"] = 66573 }),
+				{ ["name"] = "Glinting Shadow Crystal [CATA] / Tenuous Shadow Crystal", ["recipeID"] = 53861 },
+				{ ["name"] = "Glinting Twilight Opal [CATA - Purple] / Glinting Monarch Topaz [Orange]", ["recipeID"] = 53980 },
+				-- #endif
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Glowing Dreadstone", ["recipeID"] = 66555, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Glowing Twilight Opal / Timeless Twilight Opal [CATA]", ["recipeID"] = 53965 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Guardian's Dreadstone", ["recipeID"] = 66561 }),
+				{ ["name"] = "Guardian's Shadow Crystal", ["recipeID"] = 53871 },
+				{ ["name"] = "Guardian's Twilight Opal", ["recipeID"] = 53974 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Infused Dreadstone", ["recipeID"] = 66564, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Infused Twilight Opal", ["recipeID"] = 53970, ["timeline"] = { "deleted 4.0.3" }, },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Mysterious Dreadstone", ["recipeID"] = 66562 }),
+				{ ["name"] = "Mysterious Shadow Crystal", ["recipeID"] = 53865 },
+				{ ["name"] = "Mysterious Twilight Opal", ["recipeID"] = 53968 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Puissant Dreadstone", ["recipeID"] = 66563, ["timeline"] = { "deleted 4.0.3" }, }),
+				-- #if BEFORE CATA
+				{ ["name"] = "Puissant Shadow Crystal [Purple] / Jagged Dark Jade [CATA - Green]", ["recipeID"] = 53870 },
+				-- #endif
+				{ ["name"] = "Puissant Twilight Opal", ["recipeID"] = 53973, ["timeline"] = { "deleted 4.0.3" }, },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Purified Dreadstone", ["recipeID"] = 66556 }),
+				-- #if AFTER CATA
+				{ ["name"] = "Purified Shadow Crystal [CATA - Purple] / Seer's Dark Jade [Green]", ["recipeID"] = 53921 },
+				-- #endif
+				{ ["name"] = "Purified Twilight Opal", ["recipeID"] = 53966 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Regal Dreadstone", ["recipeID"] = 66559, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Regal Twilight Opal", ["recipeID"] = 53971, ["timeline"] = { "deleted 4.0.3" }, },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Royal Dreadstone", ["recipeID"] = 66558, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Royal Twilight Opal", ["recipeID"] = 53967, ["timeline"] = { "deleted 4.0.3" }, },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Shifting Dreadstone", ["recipeID"] = 66557 }),
+				{ ["name"] = "Shifting Shadow Crystal", ["recipeID"] = 53860 },
+				{ ["name"] = "Shifting Twilight Opal", ["recipeID"] = 53963 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Sovereign Dreadstone", ["recipeID"] = 66554 }),
+				{ ["name"] = "Sovereign Shadow Crystal", ["recipeID"] = 53859 },
+				{ ["name"] = "Sovereign Twilight Opal", ["recipeID"] = 53962 },
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Tenuous Dreadstone", ["recipeID"] = 66565, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Tenuous Shadow Crystal / Glinting Shadow Crystal [CATA]", ["recipeID"] = 53861 },
+				{ ["name"] = "Tenuous Twilight Opal", ["recipeID"] = 53964, ["timeline"] = { "deleted 4.0.3" }, },
+				-- #endif
+				-- #if AFTER CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Timeless Dreadstone [CATA - Purple] / Timeless Eye of Zul [Green]", ["recipeID"] = 66432 }),
+				{ ["name"] = "Timeless Shadow Crystal [CATA - Purple] / Timeless Dark Jade [Green]", ["recipeID"] = 53894 },
+				{ ["name"] = "Timeless Twilight Opal [CATA] / Glowing Twilight Opal", ["recipeID"] = 53965 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Veiled Dreadstone [CATA - Purple] / Veiled Ametrine [Orange]", ["recipeID"] = 66570 }),
+				{ ["name"] = "Veiled Shadow Crystal [CATA - Purple] / Veiled Huge Citrine [Orange]", ["recipeID"] = 53883 },
+				{ ["name"] = "Veiled Twilight Opal [CATA - Purple] / Veiled Monarch Topaz [Orange]", ["recipeID"] = 53985 },
+				-- #endif
 			}
 		},
 		{
 			["name"] = "Red Gems",
 			["categoryID"] = 850,
 			["groups"] = {
-				{
-					["name"] = "Bold Bloodstone",
-					["recipeID"] = 53831
-				},
-				{
-					["name"] = "Bold Cardinal Ruby",
-					["recipeID"] = 66447
-				},
-				{
-					["name"] = "Bold Dragon's Eye",
-					["recipeID"] = 56049
-				},
-				{
-					["name"] = "Bold Scarlet Ruby",
-					["recipeID"] = 53830
-				},
-				{
-					["name"] = "Brilliant Bloodstone",
-					["recipeID"] = 53852
-				},
-				{
-					["name"] = "Brilliant Cardinal Ruby",
-					["recipeID"] = 66446
-				},
-				{
-					["name"] = "Brilliant Dragon's Eye",
-					["recipeID"] = 56053
-				},
-				{
-					["name"] = "Brilliant Scarlet Ruby",
-					["recipeID"] = 53946
-				},
-				{
-					["name"] = "Delicate Bloodstone",
-					["recipeID"] = 53832
-				},
-				{
-					["name"] = "Delicate Cardinal Ruby",
-					["recipeID"] = 66448
-				},
-				{
-					["name"] = "Delicate Dragon's Eye",
-					["recipeID"] = 56052
-				},
-				{
-					["name"] = "Delicate Scarlet Ruby",
-					["recipeID"] = 53945
-				},
-				{
-					["name"] = "Flashing Bloodstone",
-					["recipeID"] = 53844
-				},
-				{
-					["name"] = "Flashing Cardinal Ruby",
-					["recipeID"] = 66453
-				},
-				{
-					["name"] = "Flashing Dragon's Eye",
-					["recipeID"] = 56056
-				},
-				{
-					["name"] = "Flashing Scarlet Ruby",
-					["recipeID"] = 53949
-				},
-				{
-					["name"] = "Precise Bloodstone",
-					["recipeID"] = 54017
-				},
-				{
-					["name"] = "Precise Cardinal Ruby",
-					["recipeID"] = 66450
-				},
-				{
-					["name"] = "Precise Dragon's Eye",
-					["recipeID"] = 56081
-				},
-				{
-					["name"] = "Precise Scarlet Ruby",
-					["recipeID"] = 53951
-				}
+				{ ["name"] = "Bold Bloodstone", ["recipeID"] = 53831 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Bold Cardinal Ruby", ["recipeID"] = 66447 }),
+				{ ["name"] = "Bold Dragon's Eye", ["recipeID"] = 56049 },
+				{ ["name"] = "Bold Scarlet Ruby", ["recipeID"] = 53830 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Bright Cardinal Ruby", ["recipeID"] = 66449, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Bright Dragon's Eye", ["recipeID"] = 56054, ["timeline"] = { "deleted 4.0.3" }, },
+				-- #if AFTER CATA
+				{ ["name"] = "Brilliant Bloodstone [CATA - Red] / Brilliant Sun Crystal [Yellow]", ["recipeID"] = 53852 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Brilliant Cardinal Ruby [CATA] / Runed Cardinal Ruby", ["recipeID"] = 66446 }),
+				{ ["name"] = "Brilliant Dragon's Eye [CATA] / Runed Dragon's Eye", ["recipeID"] = 56053 },
+				-- #endif
+				{ ["name"] = "Brilliant Dragon's Eye", ["recipeID"] = 56074, ["timeline"] = { "deleted 4.0.3" }, },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Brilliant King's Amber", ["recipeID"] = 66503, ["timeline"] = { "deleted 4.0.3" }, }),
+				-- #if AFTER CATA
+				{ ["name"] = "Brilliant Scarlet Ruby [CATA] / Runed Scarlet Ruby", ["recipeID"] = 53946 },
+				-- #endif
+				{ ["name"] = "Delicate Bloodstone", ["recipeID"] = 53832 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Delicate Cardinal Ruby", ["recipeID"] = 66448 }),
+				{ ["name"] = "Delicate Dragon's Eye", ["recipeID"] = 56052 },
+				{ ["name"] = "Delicate Scarlet Ruby", ["recipeID"] = 53945 },
+				-- #if BEFORE CATA
+				{ ["name"] = "Fractured Bloodstone [Red] / Smooth Sun Crystal [CATA - Yellow]", ["recipeID"] = 53845 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Fractured Cardinal Ruby", ["recipeID"] = 66451, ["timeline"] = { "deleted 4.0.3" }, }),
+				{ ["name"] = "Fractured Dragon's Eye", ["recipeID"] = 56076, ["timeline"] = { "deleted 4.0.3" }, },
+				{ ["name"] = "Fractured Scarlet Ruby", ["recipeID"] = 53950, ["timeline"] = { "deleted 4.0.3" }, },
+				{ ["name"] = "Flashing Bloodstone", ["recipeID"] = 53844 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Flashing Cardinal Ruby", ["recipeID"] = 66453 }),
+				{ ["name"] = "Flashing Dragon's Eye", ["recipeID"] = 56056 },
+				{ ["name"] = "Flashing Scarlet Ruby", ["recipeID"] = 53949 },
+				{ ["name"] = "Precise Bloodstone", ["recipeID"] = 54017 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Precise Cardinal Ruby", ["recipeID"] = 66450 }),
+				{ ["name"] = "Precise Dragon's Eye", ["recipeID"] = 56081 },
+				{ ["name"] = "Precise Scarlet Ruby", ["recipeID"] = 53951 },
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Runed Cardinal Ruby / Brilliant Cardinal Ruby [CATA]", ["recipeID"] = 66446 }),
+				{ ["name"] = "Runed Dragon's Eye / Brilliant Dragon's Eye [CATA]", ["recipeID"] = 56053 },
+				{ ["name"] = "Runed Scarlet Ruby / Brilliant Scarlet Ruby [CATA]", ["recipeID"] = 53946 },
+				{ ["name"] = "Subtle Bloodstone [Red] / Subtle Sun Crystal [CATA - Yellow]", ["recipeID"] = 53843 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Subtle Cardinal Ruby [Red] / Subtle King's Amber [CATA - Yellow]", ["recipeID"] = 66452 }),
+				{ ["name"] = "Subtle Dragon's Eye [Red] / Subtle Dragon's Eye [CATA - Yellow]", ["recipeID"] = 56055 },
+				{ ["name"] = "Subtle Scarlet Ruby [Red]/ Subtle Autumn's Glow [CATA - Yellow]", ["recipeID"] = 53948 },
+				-- #endif
 			}
 		},
 		{
 			["name"] = "Yellow Gems",
 			["categoryID"] = 851,
 			["groups"] = {
-				{
-					["name"] = "Mystic Autumn's Glow",
-					["recipeID"] = 53960
-				},
-				{
-					["name"] = "Mystic Dragon's Eye",
-					["recipeID"] = 56079
-				},
-				{
-					["name"] = "Mystic King's Amber",
-					["recipeID"] = 66505
-				},
-				{
-					["name"] = "Mystic Sun Crystal",
-					["recipeID"] = 53857
-				},
-				{
-					["name"] = "Quick Autumn's Glow",
-					["recipeID"] = 53961
-				},
-				{
-					["name"] = "Quick Dragon's Eye",
-					["recipeID"] = 56083
-				},
-				{
-					["name"] = "Quick King's Amber",
-					["recipeID"] = 66506
-				},
-				{
-					["name"] = "Quick Sun Crystal",
-					["recipeID"] = 53856
-				},
-				{
-					["name"] = "Smooth Autumn's Glow",
-					["recipeID"] = 53957
-				},
-				{
-					["name"] = "Smooth Dragon's Eye",
-					["recipeID"] = 56085
-				},
-				{
-					["name"] = "Smooth King's Amber",
-					["recipeID"] = 66502
-				},
-				{
-					["name"] = "Smooth Sun Crystal",
-					["recipeID"] = 53845
-				},
-				{
-					["name"] = "Subtle Autumn's Glow",
-					["recipeID"] = 53948
-				},
-				{
-					["name"] = "Subtle Dragon's Eye",
-					["recipeID"] = 56055
-				},
-				{
-					["name"] = "Subtle King's Amber",
-					["recipeID"] = 66452
-				},
-				{
-					["name"] = "Subtle Sun Crystal",
-					["recipeID"] = 53843
-				}
+				-- #if BEFORE CATA
+				{ ["name"] = "Brilliant Sun Crystal [Yellow] / Brilliant Bloodstone [CATA - Red]", ["recipeID"] = 53852 },
+				-- #endif
+				{ ["name"] = "Mystic Autumn's Glow", ["recipeID"] = 53960 },
+				{ ["name"] = "Mystic Dragon's Eye", ["recipeID"] = 56079 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Mystic King's Amber", ["recipeID"] = 66505 }),
+				{ ["name"] = "Mystic Sun Crystal", ["recipeID"] = 53857 },
+				{ ["name"] = "Quick Autumn's Glow", ["recipeID"] = 53961 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Quick Dragon's Eye", ["recipeID"] = 56083 }),
+				{ ["name"] = "Quick King's Amber", ["recipeID"] = 66506 },
+				{ ["name"] = "Quick Sun Crystal", ["recipeID"] = 53856 },
+				-- #if BEFORE CATA
+				{ ["name"] = "Rigid Autumn's Glow [WRATH - Yellow] / Rigid Sky Sapphire [Blue]", ["recipeID"] = 53958 },
+				{ ["name"] = "Rigid Dragon's Eye", ["recipeID"] = 56084 },
+				-- #endif
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Rigid King's Amber [WRATH - Yellow] / Rigid Majestic Zircon [Blue]", ["recipeID"] = 66501 }),
+				-- #endif
+				-- #if BEFORE CATA
+				{ ["name"] = "Rigid Sun Crystal [WRATH - Yellow] / Rigid Chalcedony [Blue]", ["recipeID"] = 53854 },
+				-- #endif
+				{ ["name"] = "Smooth Autumn's Glow", ["recipeID"] = 53957 },
+				{ ["name"] = "Smooth Dragon's Eye", ["recipeID"] = 56085 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Smooth King's Amber", ["recipeID"] = 66502 }),
+				-- #if AFTER CATA
+				{ ["name"] = "Smooth Sun Crystal [CATA - Yellow] / Fractured Bloodstone [Red]", ["recipeID"] = 53845 },
+				-- #endif
+				-- #if AFTER CATA
+				{ ["name"] = "Subtle Autumn's Glow [CATA - Yellow] / Subtle Scarlet Ruby [Red]", ["recipeID"] = 53948 },
+				{ ["name"] = "Subtle Dragon's Eye [CATA - Yellow] / Subtle Dragon's Eye [Red]", ["recipeID"] = 56055 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Subtle King's Amber [CATA - Yellow] / Subtle Cardinal Ruby [Red]", ["recipeID"] = 66452 }),
+				{ ["name"] = "Subtle Sun Crystal [CATA - Yellow] / Subtle Bloodstone [Red]", ["recipeID"] = 53843 },
+				-- #endif
+				{ ["name"] = "Thick Autumn's Glow", ["recipeID"] = 53959, ["timeline"] = { "deleted 4.0.3" }, },
+				{ ["name"] = "Thick Dragon's Eye", ["recipeID"] = 56089, ["timeline"] = { "deleted 4.0.3" }, },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Thick King's Amber", ["recipeID"] = 66504, ["timeline"] = { "deleted 4.0.3" }, }),
 			}
 		},
 		{
@@ -2111,10 +1842,10 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["name"] = "Enchanted Tear",
 					["recipeID"] = 56531
 				},
-				{
+				applyclassicphase(WRATH_PHASE_THREE, {
 					["name"] = "Nightmare Tear",
 					["recipeID"] = 68253
-				}
+				}),
 			}
 		},
 		{
