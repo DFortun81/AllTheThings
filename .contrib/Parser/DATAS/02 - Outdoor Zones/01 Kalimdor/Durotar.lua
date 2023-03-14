@@ -2662,7 +2662,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(835, {	-- Securing the Lines
 					["qg"] = 3293,	-- Rezlak
+					-- #if BEFORE CATA
 					["sourceQuest"] = 834,	-- Winds in the Desert
+					-- #endif
 					["coord"] = { 46.4, 23, DUROTAR },
 					--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 					["lvl"] = lvlsquish(7, 7, 1),

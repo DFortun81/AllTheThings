@@ -394,7 +394,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 			}),
 			q(72292, {	-- Story of a Spectacular Victory
-				["sourceQuests"] = { 70978 },	-- Dragon Isles Champion's Tales
+				-- ["sourceQuests"] = { 70978 },	-- Dragon Isles Champion's Tales (inaccurate)
+				["minReputation"] = { 2511, 15 },	-- Iskaara Tuskarr Renown 15
 				["provider"] = { "i", 201471 },	-- Story of a Spectacular Victory
 				["isWeekly"] = true,
 			}),

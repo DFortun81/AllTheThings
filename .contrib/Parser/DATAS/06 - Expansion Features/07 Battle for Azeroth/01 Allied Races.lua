@@ -920,7 +920,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["lvl"] = 20,
 					}),
 					-- Mag'har Orc lvl 50 Quest
-					q(51484, {    -- Heritage of the Warsong
+					q(51484, {    -- Heritage of the Mag'har
 						["provider"] = { "n", 143845 },	--  Overlord Geya'rah
 						["coord"] = { 70.6, 44.6, ORGRIMMAR },
 						["races"] = { MAGHAR },

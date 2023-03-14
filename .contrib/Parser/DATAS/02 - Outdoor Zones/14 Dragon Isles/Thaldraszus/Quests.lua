@@ -437,7 +437,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["isBreadcrumb"] = true,	-- Probably?
 					}),
 					q(66468, {	-- What Once Was Ours
-						["sourceQuests"] = { 66252 },	-- Reporting In
+						-- ["sourceQuests"] = { 66252 },	-- Reporting In (inaccurate)
 						["provider"] = { "n", 189174 },	-- Commander Thadezus
 						["coord"] = { 52.7, 67.3, THALDRASZUS },
 						["g"] ={

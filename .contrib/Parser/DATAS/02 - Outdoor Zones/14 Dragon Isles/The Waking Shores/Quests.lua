@@ -627,7 +627,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["collectible"] = false,
 				["g"] = {
 					q(66963, {	-- Out For Delivery
-						["sourceQuests"] = { 66123 },	-- Cut Off the Head
+						-- ["sourceQuests"] = { 66123 },	-- Cut Off the Head (inaccurate)
 						["provider"] = { "n", 191698 },	-- Hauler Bennet
 						["coord"] = { 48.5, 78.9, THE_WAKING_SHORES },
 						["isBreadcrumb"] = true,

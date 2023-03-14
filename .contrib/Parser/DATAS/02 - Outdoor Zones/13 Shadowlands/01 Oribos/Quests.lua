@@ -488,6 +488,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				},
 				["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
 				["coord"] = { 49.2, 52.2, ARDENWEALD },
+				["timeline"] = { ADDED_SL_REL },
 				["g"] = {
 					i(179562),	-- Duskwarder Branch
 					i(179517),	-- Duskwarder Censor
@@ -512,6 +513,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				},
 				["provider"] = { "n", 163427 },	-- Kalisthene
 				["coord"] = { 51.1, 43.7, BASTION },
+				["timeline"] = { ADDED_SL_REL },
 				["g"] = {
 					i(181635),	-- Honortoll Gavel
 					i(181630),	-- Honortoll Spear
@@ -535,6 +537,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				},
 				["provider"] = { "n", 175008 },	-- Secutor Mevix
 				["coord"] = { 52.8, 68.2, MALDRAXXUS },
+				["timeline"] = { ADDED_SL_REL },
 				["g"] = {
 					i(181685),	-- Gorewrought Barrier
 					i(181689),	-- Gorewrought Bonesaw
@@ -567,6 +570,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					{ 52.0, 38.6, SINFALL_REACHES },	-- Prince Renathal [for Venthyr]
 					{ 61.4, 60.2, REVENDRETH },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 				},
+				["timeline"] = { ADDED_SL_REL },
 				["g"] = {
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff
