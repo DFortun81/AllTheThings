@@ -1199,10 +1199,7 @@ pet(0, 3320);	-- Whitewhisker
 pet(0, 3301);	-- Wild Duckling
 pet(0, 3322);	-- Woodbiter Piculet
 -- NYI --
-pet(193363, 3290);	-- Bunbo
 pet(191930, 3261);	-- Wakyn
-pet(193854, 3333);	-- Berylmane
-pet(193835, 3323);	-- Brightfeather
 pet(193374, 3293);	-- Ashenwing
 pet(193853, 3331);	-- Emmah
 pet(193614, 3314);	-- Groundshaker
@@ -1269,7 +1266,10 @@ pet(0, 3254);	-- Watcher of the Huntress
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+pet(193854, 3333);	-- Berylmane
+pet(193835, 3323);	-- Brightfeather
 pet(193850, 3330);	-- Buckie
+pet(193363, 3290);	-- Bunbo
 pet(202255, 3427);	-- Driftling
 pet(193908, 3338);	-- Kobaldt
 pet(191915, 3259);	-- Shaggy

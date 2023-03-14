@@ -2430,7 +2430,6 @@ root(ROOTS.Unsorted, {
 				}),
 				filter(MOUNTS, {
 					i(192772),	-- Ancient Salamanther
-					i(192790),	-- Mossy Mammoth
 				}),
 				filter(TOYS, {
 					i(204675),	-- A Drake's Big Basket of Eggs (TOY!)
@@ -2560,6 +2559,16 @@ root(ROOTS.Unsorted, {
 					i(203988),	-- Warshard of the Hakkari, Unborn
 					i(203989),	-- Warshard of the Hakkari, Unborn
 				}),
+				n(ARMOR, {
+					i(204258),	-- Goblin Trainee's Wristwraps
+					i(204259),	-- Goblin Trainee's Cord
+					i(204260),	-- Goblin Trainee's Leggings
+					i(204261),	-- Goblin Trainee's Vest
+					i(204266),	-- Gilnean Trainee's Vest
+					i(204267),	-- Gilnean Trainee's Leggings
+					i(204268),	-- Gilnean Trainee's Cord
+					i(204269),	-- Gilnean Trainee's Wristwraps
+				}),
 				i(203463),	-- Atrenosh's Journal
 				i(203464),	-- Sealed Spellsworn Scroll
 				i(203465),	-- Draconic Artifact
@@ -2572,7 +2581,6 @@ root(ROOTS.Unsorted, {
 				i(203656),	-- Odd Device
 				i(203657),	-- Toxin Antidote
 				i(203680),	-- Totem Toss
-				i(203685),	-- Baine's Potion of Invisibility
 				i(203686),	-- Odd Round Object
 				i(203687),	-- Dusty Vase
 				i(203690),	-- Pearlescent Bubble Key
@@ -2624,14 +2632,7 @@ root(ROOTS.Unsorted, {
 				i(204239),	-- Shadowy Mojo Crystal
 				i(204244),	-- Breathing Mojo Crystal
 				i(204245),	-- Hateful Mojo Crystal
-				i(204258),	-- Goblin Trainee's Wristwraps
-				i(204259),	-- Goblin Trainee's Cord
-				i(204260),	-- Goblin Trainee's Leggings
-				i(204261),	-- Goblin Trainee's Vest
-				i(204266),	-- Gilnean Trainee's Vest
-				i(204267),	-- Gilnean Trainee's Leggings
-				i(204268),	-- Gilnean Trainee's Cord
-				i(204269),	-- Gilnean Trainee's Wristwraps
+
 				i(204281),	-- Thousandbite Piranha Collar
 				i(204282),	-- Lunker Bits
 				i(204283),	-- Skrog Liver Oil
@@ -2667,23 +2668,12 @@ root(ROOTS.Unsorted, {
 				i(204330),	-- Inert Promordal Fragments
 				i(114942),	-- Cracked Draenic Mortar
 				i(202252),	-- Recipe Rat
-				i(203685),	-- Borrowed Potion of Invisibility
 				i(204073),	-- Ratcipe: Deviously Deviled Eggs
 				i(204339),	-- Satchel of Coalescing Chaos
 				i(204340),	-- Torn Recipe Scrap
 				i(204343),	-- Trusty Dragonkin Rake
 				i(204353),	-- Primordial Jeweler's Kit
 				i(204356),	-- Illustrious Gemdust
-				i(204360),	-- Strange Petrified Orb
-				i(204363),	-- Particularly Ordinary Egg
-				i(204364),	-- Magically Altered Egg
-				i(204366),	-- Egg of Unknown Contents
-				i(204367),	-- Egg-Hatched Ancient Mammoth
-				i(204369),	-- Scrap of Black Dragonscales
-				i(204371),	-- Drop of Blue Dragon Magic
-				i(204372),	-- Speck of Bronze Dust
-				i(204374),	-- Emerald Dragon Brooch
-				i(204375),	-- Everburning Ruby Coals
 				i(204378),	-- Brimming Dragonscale Expedition Supply Pack
 				i(204379),	-- Brimming Iskaaran Supply Pack
 				i(204380),	-- Brimming Maruuk Centaur Supply Satchel

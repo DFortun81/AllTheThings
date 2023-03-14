@@ -56,6 +56,81 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					}),
 				},
 			}),
+			n(203341, {	-- Researcher Baneflare
+				["coord"] = { 35.7, 59.4, THE_FORBIDDEN_REACH },
+				["g"] = bubbleDown({ ["cost"] = { { "i", 204276, 1 } } }, {
+					n(BACK, {
+						i(199450),	-- Cape of Raging Tempests
+						i(199451),	-- Cloak of Raging Tempests
+						i(199452),	-- Shroud of Raging Tempests
+						i(199449),	-- Wrap of Raging Tempests
+					}),
+					filter(CLOTH, {
+						i(199418),	-- Boots of Raging Tempests
+						i(199422),	-- Cord of Raging Tempests
+						i(199423),	-- Cuffs of Raging Tempests
+						i(199419),	-- Gloves of Raging Tempests
+						i(199420),	-- Hood of Raging Tempests
+						i(199421),	-- Leggings of Raging Tempests
+						i(199424),	-- Shoulderpads of Raging Tempests
+						i(199417),	-- Vestment of Raging Tempests
+					}),
+					filter(LEATHER, {
+						i(199430),	-- Bindings of Raging Tempests
+						i(199428),	-- Breeches of Raging Tempests
+						i(199427),	-- Cowl of Raging Tempests
+						i(199432),	-- Epaulets of Raging Tempests
+						i(199426),	-- Handguards of Raging Tempests
+						i(199429),	-- Sash of Raging Tempests
+						i(199431),	-- Vest of Raging Tempests
+						i(199425),	-- Waders of Raging Tempests
+					}),
+					filter(MAIL, {
+						i(199448),	-- Bracers of Raging Tempests
+						i(199441),	-- Chestguard of Raging Tempests
+						i(199447),	-- Cinch of Raging Tempests
+						i(199444),	-- Coif of Raging Tempests
+						i(199445),	-- Greaves of Raging Tempests
+						i(199443),	-- Grips of Raging Tempests
+						i(199446),	-- Shoulderguards of Raging Tempests
+						i(199442),	-- Striders of Raging Tempests
+					}),
+					filter(PLATE, {
+						i(199440),	-- Armplates of Raging Tempests
+						i(199434),	-- Breastplate of Raging Tempests
+						i(199436),	-- Gauntlets of Raging Tempests
+						i(199439),	-- Girdle of Raging Tempests
+						i(199433),	-- Helm of Raging Tempests
+						i(199437),	-- Legguards of Raging Tempests
+						i(199438),	-- Mantle of Raging Tempests
+						i(199435),	-- Sabatons of Raging Tempests
+					}),
+					n(WEAPONS, {
+						i(199314),	-- Broadsword of Raging Tempests
+						i(199319),	-- Bulwark of Raging Tempests
+						i(199304),	-- Cleaver of Raging Tempests
+						i(199324),	-- Crusher of Raging Tempests
+						i(199318),	-- Cudgel of Raging Tempests
+						i(199309),	-- Dagger of Raging Tempests
+						i(199308),	-- Glaive of Raging Tempests
+						i(199315),	-- Greatsword of Raging Tempests
+						i(199306),	-- Hacker of Raging Tempests
+						i(199305),	-- Hatchet of Raging Tempests
+						i(199307),	-- Heartseeker of Raging Tempests
+						i(199311),	-- Horn of Raging Tempests
+						i(199320),	-- Impaler of Raging Tempests
+						i(199321),	-- Javelin of Raging Tempests
+						i(199325),	-- Mace of Raging Tempests
+						i(199323),	-- Mallet of Raging Tempests
+						i(199317),	-- Maul of Raging Tempests
+						i(199313),	-- Pole of Raging Tempests
+						i(199322),	-- Rod of Raging Tempests
+						i(199316),	-- Scepter of Raging Tempests
+						i(199310),	-- Shiv of Raging Tempests
+						i(199312),	-- Staff of Raging Tempests
+					}),
+				}),
+			}),
 			n(200724, {	-- Researcher Imareth
 				["description"] = "This NPC becomes a vendor upon completing the quest 'Primordial Embellishment'",
 				["coord"] = { 35.1, 57.6, THE_FORBIDDEN_REACH },
@@ -350,82 +425,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						},
 					}),
 				},
-			}),
-
-			n(10000, {	-- Temp
-				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
-				["g"] = bubbleDown({ ["cost"] = { { "i", 204276, 1 } } }, {
-					n(BACK, {
-						i(199450),	-- Cape of Raging Tempests
-						i(199451),	-- Cloak of Raging Tempests
-						i(199452),	-- Shroud of Raging Tempests
-						i(199449),	-- Wrap of Raging Tempests
-					}),
-					filter(CLOTH, {
-						i(199418),	-- Boots of Raging Tempests
-						i(199422),	-- Cord of Raging Tempests
-						i(199423),	-- Cuffs of Raging Tempests
-						i(199419),	-- Gloves of Raging Tempests
-						i(199420),	-- Hood of Raging Tempests
-						i(199421),	-- Leggings of Raging Tempests
-						i(199424),	-- Shoulderpads of Raging Tempests
-						i(199417),	-- Vestment of Raging Tempests
-					}),
-					filter(LEATHER, {
-						i(199430),	-- Bindings of Raging Tempests
-						i(199428),	-- Breeches of Raging Tempests
-						i(199427),	-- Cowl of Raging Tempests
-						i(199432),	-- Epaulets of Raging Tempests
-						i(199426),	-- Handguards of Raging Tempests
-						i(199429),	-- Sash of Raging Tempests
-						i(199431),	-- Vest of Raging Tempests
-						i(199425),	-- Waders of Raging Tempests
-					}),
-					filter(MAIL, {
-						i(199448),	-- Bracers of Raging Tempests
-						i(199441),	-- Chestguard of Raging Tempests
-						i(199447),	-- Cinch of Raging Tempests
-						i(199444),	-- Coif of Raging Tempests
-						i(199445),	-- Greaves of Raging Tempests
-						i(199443),	-- Grips of Raging Tempests
-						i(199446),	-- Shoulderguards of Raging Tempests
-						i(199442),	-- Striders of Raging Tempests
-					}),
-					filter(PLATE, {
-						i(199440),	-- Armplates of Raging Tempests
-						i(199434),	-- Breastplate of Raging Tempests
-						i(199436),	-- Gauntlets of Raging Tempests
-						i(199439),	-- Girdle of Raging Tempests
-						i(199433),	-- Helm of Raging Tempests
-						i(199437),	-- Legguards of Raging Tempests
-						i(199438),	-- Mantle of Raging Tempests
-						i(199435),	-- Sabatons of Raging Tempests
-					}),
-					n(WEAPONS, {
-						i(199314),	-- Broadsword of Raging Tempests
-						i(199319),	-- Bulwark of Raging Tempests
-						i(199304),	-- Cleaver of Raging Tempests
-						i(199324),	-- Crusher of Raging Tempests
-						i(199318),	-- Cudgel of Raging Tempests
-						i(199309),	-- Dagger of Raging Tempests
-						i(199308),	-- Glaive of Raging Tempests
-						i(199315),	-- Greatsword of Raging Tempests
-						i(199306),	-- Hacker of Raging Tempests
-						i(199305),	-- Hatchet of Raging Tempests
-						i(199307),	-- Heartseeker of Raging Tempests
-						i(199311),	-- Horn of Raging Tempests
-						i(199320),	-- Impaler of Raging Tempests
-						i(199321),	-- Javelin of Raging Tempests
-						i(199325),	-- Mace of Raging Tempests
-						i(199323),	-- Mallet of Raging Tempests
-						i(199317),	-- Maul of Raging Tempests
-						i(199313),	-- Pole of Raging Tempests
-						i(199322),	-- Rod of Raging Tempests
-						i(199316),	-- Scepter of Raging Tempests
-						i(199310),	-- Shiv of Raging Tempests
-						i(199312),	-- Staff of Raging Tempests
-					}),
-				}),
 			}),
 		}),
 	}),

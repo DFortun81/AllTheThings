@@ -106,10 +106,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(DF_TIER, {
 			tier(DF_TIER, 0.01, {
-				i(193363),	-- Bunbo (PET!)
 				i(191930),	-- Wakyn (PET!)
-				i(193854),	-- Berylmane (PET!)
-				i(193835),	-- Brightfeather (PET!)
 				i(193374),	-- Ashenwing (PET!)
 				i(193853),	-- Emmah (PET!)
 				i(193614),	-- Groundshaker (PET!)
