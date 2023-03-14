@@ -5300,7 +5300,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(14103, {	-- Titanium Powder
+					applyclassicphase(WRATH_PHASE_THREE, q(14103, {	-- Titanium Powder
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 						["cost"] = {{ "i", 46849, 10 }},	-- Titanium Powder
@@ -5309,7 +5309,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
-					}),
+					})),
 					q(24431, {	-- Waterlogged Recipe
 						["provider"] = { "i", 49667 },	-- Waterlogged Recipe
 						["requireSkill"] = COOKING,
@@ -6967,600 +6967,515 @@ root(ROOTS.Zones, {
 					n(28721, {	-- Tiffany Cartier <Jewelcrafting Supplies>
 						["coord"] = { 40.4, 34.6, NORTHREND_DALARAN },
 						["groups"] = {
-							i(42298, {	-- Design: Bold Dragon's Eye
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
-							i(41576, {	-- Design: Bold Scarlet Ruby
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(2, i(42298)),	-- Design: Bold Dragon's Eye
+							daljewelcraftingtoken(3, i(41576)),	-- Design: Bold Scarlet Ruby
 							-- #if BEFORE CATA
-							i(42299, {	-- Design: Bright Dragon's Eye [WRATH] / Design: Delicate Dragon's Eye [CATA+]
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							daljewelcraftingtoken(2, i(42299, {	-- Design: Bright Dragon's Eye [WRATH] / Design: Delicate Dragon's Eye [CATA+]
 								["timeline"] = { "removed 4.0.3" },
-							}),
+							})),
 							-- #endif
 							-- #if AFTER CATA
-							i(42309, {	-- Design: Brilliant Dragon's Eye [CATA+] / Design: Runed Dragon's Eye [WRATH]
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(2, i(42309)),	-- Design: Brilliant Dragon's Eye [CATA+] / Design: Runed Dragon's Eye [WRATH]
 							-- #endif
-							i(42300, {	-- Design: Brilliant Dragon's Eye
-								-- #if BEFORE CATA
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-								-- #endif
+							daljewelcraftingtoken(2, i(42300, {	-- Design: Brilliant Dragon's Eye
 								["timeline"] = { "removed 4.0.3" },
-							}),
-							i(41704, {	-- Design: Chaotic Skyflare Diamond
-								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-							}),
+							})),
+							daljewelcraftingtoken(5, i(41704)),	-- Design: Chaotic Skyflare Diamond
 							-- #if AFTER CATA
-							i(41687, {	-- Design: Deft Monarch Topaz [CATA+] / Design: Stark Monarch Topaz [WRATH]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41687)),	-- Design: Deft Monarch Topaz [CATA+] / Design: Stark Monarch Topaz [WRATH]
 							-- #endif
-							i(42301, {	-- Design: Delicate Dragon's Eye
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(2, i(42301)),	-- Design: Delicate Dragon's Eye
 							-- #if AFTER CATA
-							i(42299, {	-- Design: Delicate Dragon's Eye [CATA+] / Design: Bright Dragon's Eye [WRATH]
+							daljewelcraftingtoken(2, i(42299, {	-- Design: Delicate Dragon's Eye [CATA+] / Design: Bright Dragon's Eye [WRATH]
 								["timeline"] = { "removed 4.0.3" },
-							}),
+							})),
 							-- #endif
-							i(41577, {	-- Design: Delicate Scarlet Ruby
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41577)),	-- Design: Delicate Scarlet Ruby
 							-- #if BEFORE CATA
-							i(41705, {	-- Design: Effulgent Skyflare Diamond [WRATH] / Design: Shielded Skyflare Diamond [CATA+]
-								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(5, i(41705)),	-- Design: Effulgent Skyflare Diamond [WRATH] / Design: Shielded Skyflare Diamond [CATA+]
 							-- #endif
-							i(41706, {	-- Design: Ember Skyflare Diamond
-								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(5, i(41706)),	-- Design: Ember Skyflare Diamond
 							-- #if BEFORE CATA
-							i(41697, {	-- Design: Enduring Forest Emerald [WRATH] / Design: Regal Forest Emerald [CATA+]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41697)),	-- Design: Enduring Forest Emerald [WRATH] / Design: Regal Forest Emerald [CATA+]
 							-- #endif
-							i(41692, {	-- Design: Energized Forest Emerald
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41692)),	-- Design: Energized Forest Emerald
 							-- #if AFTER CATA
-							i(41694, {	-- Design: Energized Forest Emerald [CATA+] / Design: Intricate Forest Emerald [WRATH]
+							daljewelcraftingtoken(3, i(41694, {	-- Design: Energized Forest Emerald [CATA+] / Design: Intricate Forest Emerald [WRATH]
 								["timeline"] = { "removed 4.0.3" },
-							}),
+							})),
 							-- #endif
-							i(42302, {	-- Design: Flashing Dragon's Eye
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
-							i(41578, {	-- Design: Flashing Scarlet Ruby
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
-							i(41693, {	-- Design: Forceful Forest Emerald
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(2, i(42302)),	-- Design: Flashing Dragon's Eye
+							daljewelcraftingtoken(3, i(41578)),	-- Design: Flashing Scarlet Ruby
+							daljewelcraftingtoken(3, i(41693)),	-- Design: Forceful Forest Emerald
 							-- #if BEFORE CATA
-							i(42303, {	-- Design: Fractured Dragon's Eye [WRATH] / Design: Smooth Dragon's Eye [CATA+]
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							daljewelcraftingtoken(2, i(42303, {	-- Design: Fractured Dragon's Eye [WRATH] / Design: Smooth Dragon's Eye [CATA+]
 								["timeline"] = { "removed 4.0.3" },
-							}),
+							})),
 							-- #endif
-							i(41582, {	-- Design: Glinting Twilight Opal
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
-							i(41708, {	-- Design: Insightful Earthsiege Diamond
-								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41582)),	-- Design: Glinting Twilight Opal
+							daljewelcraftingtoken(5, i(41708)),	-- Design: Insightful Earthsiege Diamond
 							-- #if BEFORE CATA
-							i(41694, {	-- Design: Intricate Forest Emerald [WRATH] / Design: Energized Forest Emerald [CATA+]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							daljewelcraftingtoken(3, i(41694, {	-- Design: Intricate Forest Emerald [WRATH] / Design: Energized Forest Emerald [CATA+]
 								["timeline"] = { "removed 4.0.3" },
-							}),
+							})),
 							-- #endif
-							i(41709, {	-- Design: Invigorating Earthsiege Diamond
-								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(5, i(41709)),	-- Design: Invigorating Earthsiege Diamond
 							-- #if AFTER CATA
-							i(41702, {	-- Design: Jagged Forest Emerald [CATA+] / Design: Puissant Twilight Opal [WRATH]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41702)),	-- Design: Jagged Forest Emerald [CATA+] / Design: Puissant Twilight Opal [WRATH]
 							-- #endif
-							i(41696, {	-- Design: Lambent Forest Emerald [WRATH] / Design: Lightning Forest Emerald [CATA+] (Not out of alignment after rename)
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41696)),	-- Design: Lambent Forest Emerald [WRATH] / Design: Lightning Forest Emerald [CATA+] (Not out of alignment after rename)
 							-- #if AFTER CATA
 							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
-							i(41565, {	-- Design: Lucent Huge Citrine
-								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(1, i(41565)),	-- Design: Lucent Huge Citrine
 							-- #endif
 							-- #if BEFORE CATA
-							i(41689, {	-- Design: Luminous Monarch Topaz [WRATH] / Design: Reckless Monarch Topaz [CATA+]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							daljewelcraftingtoken(3, i(41689, {	-- Design: Luminous Monarch Topaz [WRATH] / Design: Reckless Monarch Topaz [CATA+]
 								["timeline"] = { "removed 4.0.3" },
-							}),
-							i(42304, {	-- Design: Lustrous Dragon's Eye [WRATH] / Design: Sparkling Dragon's Eye [CATA+]
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							})),
+							daljewelcraftingtoken(2, i(42304, {	-- Design: Lustrous Dragon's Eye [WRATH] / Design: Sparkling Dragon's Eye [CATA+]
 								["timeline"] = { "removed 4.0.3" },
-							}),
-							i(41581, {	-- Design: Lustrous Sky Sapphire [WRATH] / Design: Sparkling Sky Sapphire [CATA+]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							})),
+							daljewelcraftingtoken(3, i(41581)),	-- Design: Lustrous Sky Sapphire [WRATH] / Design: Sparkling Sky Sapphire [CATA+]
 							-- #endif
 							-- #if AFTER CATA
 							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
-							i(41575, {	-- Design: Mysterious Shadow Crystal
-								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(1, i(41575)),	-- Design: Mysterious Shadow Crystal
 							-- #endif
-							i(42305, {	-- Design: Mystic Dragon's Eye
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(2, i(42305)),	-- Design: Mystic Dragon's Eye
 							-- #if AFTER CATA
 							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
-							i(41559, {	-- Design: Mystic Sun Crystal
-								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-							}),
-							i(41698, {	-- Design: Nimble Forest Emerald [CATA+] / Design: Vivid Forest Emerald [WRATH]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(1, i(41559)),	-- Design: Mystic Sun Crystal
+							daljewelcraftingtoken(3, i(41698)),	-- Design: Nimble Forest Emerald [CATA+] / Design: Vivid Forest Emerald [WRATH]
 							-- #endif
-							i(41686, {	-- Design: Potent Monarch Topaz
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
-							i(42306, {	-- Design: Precise Dragon's Eye
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41686)),	-- Design: Potent Monarch Topaz
+							daljewelcraftingtoken(2, i(42306)),	-- Design: Precise Dragon's Eye
 							-- #if BEFORE CATA
-							i(41702, {	-- Design: Puissant Twilight Opal [WRATH] / Design: Jagged Forest Emerald [CATA+]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41702)),	-- Design: Puissant Twilight Opal [WRATH] / Design: Jagged Forest Emerald [CATA+]
 							-- #endif
 							-- #if AFTER CATA
-							i(41701, {	-- Design: Purified Twilight Opal [CATA+] / Design: Royal Twilight Opal [WRATH]
+							daljewelcraftingtoken(3, i(41701, {	-- Design: Purified Twilight Opal [CATA+] / Design: Royal Twilight Opal [WRATH]
 								["timeline"] = { "removed 4.0.3" },
-							}),
-							i(41699, {	-- Design: Purified Twilight Opal [CATA+] / Design: Seer's Forest Emerald [WRATH]
+							})),
+							daljewelcraftingtoken(3, i(41699, {	-- Design: Purified Twilight Opal [CATA+] / Design: Seer's Forest Emerald [WRATH]
 								["timeline"] = { "removed 4.0.3" },
-							}),
+							})),
 							-- #endif
-							i(41579, {	-- Design: Quick Autumn's Glow
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
-							i(42307, {	-- Design: Quick Dragon's Eye
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41579)),	-- Design: Quick Autumn's Glow
+							daljewelcraftingtoken(2, i(42307)),	-- Design: Quick Dragon's Eye
 							-- #if AFTER CATA
 							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
-							i(41570, {	-- Design: Radiant Dark Jade
-								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(1, i(41570)),	-- Design: Radiant Dark Jade
 							-- #endif
-							i(41690, {	-- Design: Reckless Monarch Topaz
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41690)),	-- Design: Reckless Monarch Topaz
 							-- #if AFTER CATA
-							i(41689, {	-- Design: Reckless Monarch Topaz [CATA+] / Design: Luminous Monarch Topaz [WRATH]
+							daljewelcraftingtoken(3, i(41689, {	-- Design: Reckless Monarch Topaz [CATA+] / Design: Luminous Monarch Topaz [WRATH]
 								["timeline"] = { "removed 4.0.3" },
-							}),
+							})),
 							-- #endif
 							-- #if AFTER CATA
-							i(41697, {	-- Design: Regal Forest Emerald [CATA+] / Design: Enduring Forest Emerald [WRATH]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41697)),	-- Design: Regal Forest Emerald [CATA+] / Design: Enduring Forest Emerald [WRATH]
 							-- #endif
-							i(41703, {	-- Design: Regal Forest Emerald [CATA+] / Design: Regal Twilight Opal [WRATH]
-								-- #if BEFORE CATA
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-								-- #endif
-								["timeline"] = { "removed 4.0.3" },
-							}),
-							i(41710, {	-- Design: Relentless Earthsiege Diamond
-								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41703)),	-- Design: Regal Forest Emerald [CATA+] / Design: Regal Twilight Opal [WRATH]
+							daljewelcraftingtoken(5, i(41710)),	-- Design: Relentless Earthsiege Diamond
 							-- #if AFTER CATA
 							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
-							i(41566, {	-- Design: Resplendent Huge Citrine
-								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(1, i(41566)),	-- Design: Resplendent Huge Citrine
 							-- #endif
-							i(41707, {	-- Design: Revitalizing Skyflare Diamond
-								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-							}),
-							-- #if AFTER CATA
-							i(41580, {	-- Design: Rigid Autumn's Glow [WRATH] / Design: Rigid Sky Sapphire [CATA+]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
-							-- #endif
-							i(42308, {	-- Design: Rigid Dragon's Eye
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
-							-- #if AFTER CATA
-							i(41580, {	-- Design: Rigid Sky Sapphire [CATA+] / Design: Rigid Autumn's Glow [WRATH]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
-							-- #endif
-							i(43317, {	-- Design: Ring of Earthen Might
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(43320, {	-- Design: Ring of Northern Tears
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(43318, {	-- Design: Ring of Scarlet Shadows
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(5, i(41707)),	-- Design: Revitalizing Skyflare Diamond
 							-- #if BEFORE CATA
-							i(41701, {	-- Design: Royal Twilight Opal [WRATH] / Design: Purified Twilight Opal [CATA+]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-								["timeline"] = { "removed 4.0.3" },
-							}),
-							i(42309, {	-- Design: Runed Dragon's Eye [WRATH] / Design: Brilliant Dragon's Eye [CATA+]
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41580)),	-- Design: Rigid Autumn's Glow [WRATH] / Design: Rigid Sky Sapphire [CATA+]
 							-- #endif
-							i(43497, {	-- Design: Savage Titanium Band
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(43485, {	-- Design: Savage Titanium Ring
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(2, i(42308)),	-- Design: Rigid Dragon's Eye
+							-- #if AFTER CATA
+							daljewelcraftingtoken(3, i(41580)),	-- Design: Rigid Sky Sapphire [CATA+] / Design: Rigid Autumn's Glow [WRATH]
+							-- #endif
+							daljewelcraftingtoken(4, i(43317)),	-- Design: Ring of Earthen Might
+							daljewelcraftingtoken(4, i(43320)),	-- Design: Ring of Northern Tears
+							daljewelcraftingtoken(4, i(43318)),	-- Design: Ring of Scarlet Shadows
 							-- #if BEFORE CATA
-							i(41699, {	-- Design: Seer's Forest Emerald [WRATH] / Design: Purified Twilight Opal [CATA+]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							daljewelcraftingtoken(3, i(41701, {	-- Design: Royal Twilight Opal [WRATH] / Design: Purified Twilight Opal [CATA+]
 								["timeline"] = { "removed 4.0.3" },
-							}),
+							})),
+							daljewelcraftingtoken(2, i(42309)),	-- Design: Runed Dragon's Eye [WRATH] / Design: Brilliant Dragon's Eye [CATA+]
+							-- #endif
+							daljewelcraftingtoken(4, i(43497)),	-- Design: Savage Titanium Band
+							daljewelcraftingtoken(4, i(43485)),	-- Design: Savage Titanium Ring
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(3, i(41699, {	-- Design: Seer's Forest Emerald [WRATH] / Design: Purified Twilight Opal [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
 							-- #endif
 							-- #if AFTER CATA
 							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
-							i(41569, {	-- Design: Shattered Dark Jade
-								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-							}),
-							i(41705, {	-- Design: Shielded Skyflare Diamond [CATA+] / Design: Effulgent Skyflare Diamond [WRATH]
-								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(1, i(41569)),	-- Design: Shattered Dark Jade
+							daljewelcraftingtoken(5, i(41705)),	-- Design: Shielded Skyflare Diamond [CATA+] / Design: Effulgent Skyflare Diamond [WRATH]
 							-- #endif
-							i(41747, {	-- Design: Shifting Twilight Opal
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
-							i(42310, {	-- Design: Smooth Dragon's Eye
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41747)),	-- Design: Shifting Twilight Opal
+							daljewelcraftingtoken(2, i(42310)),	-- Design: Smooth Dragon's Eye
 							-- #if AFTER CATA
-							i(42303, {	-- Design: Smooth Dragon's Eye [CATA+] / Design: Fractured Dragon's Eye [WRATH]
+							daljewelcraftingtoken(2, i(42303, {	-- Design: Smooth Dragon's Eye [CATA+] / Design: Fractured Dragon's Eye [WRATH]
 								["timeline"] = { "removed 4.0.3" },
-							}),
+							})),
 							-- #endif
-							i(42311, {	-- Design: Solid Dragon's Eye
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
-							i(42138, {	-- Design: Solid Sky Sapphire
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
-							i(42312, {	-- Design: Sparkling Dragon's Eye
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(2, i(42311)),	-- Design: Solid Dragon's Eye
+							daljewelcraftingtoken(3, i(42138)),	-- Design: Solid Sky Sapphire
+							daljewelcraftingtoken(2, i(42312)),	-- Design: Sparkling Dragon's Eye
 							-- #if AFTER CATA
-							i(42304, {	-- Design: Sparkling Dragon's Eye [CATA+] / Design: Lustrous Dragon's Eye [WRATH]
+							daljewelcraftingtoken(2, i(42304, {	-- Design: Sparkling Dragon's Eye [CATA+] / Design: Lustrous Dragon's Eye [WRATH]
 								["timeline"] = { "removed 4.0.3" },
-							}),
-							i(41581, {	-- Design: Sparkling Sky Sapphire [CATA+] / Design: Lustrous Sky Sapphire [WRATH]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							})),
+							daljewelcraftingtoken(3, i(41581)),	-- Design: Sparkling Sky Sapphire [CATA+] / Design: Lustrous Sky Sapphire [WRATH]
 							-- #endif
 							-- #if BEFORE CATA
-							i(41687, {	-- Design: Stark Monarch Topaz [WRATH] / Design: Deft Monarch Topaz [CATA+]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41687)),	-- Design: Stark Monarch Topaz [WRATH] / Design: Deft Monarch Topaz [CATA+]
 							-- #endif
 							-- #if AFTER CATA
 							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
-							i(41572, {	-- Design: Steady Dark Jade
-								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-							}),
-							i(41560, {	-- Design: Stormy Chalcedony
-								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(1, i(41572)),	-- Design: Steady Dark Jade
+							daljewelcraftingtoken(1, i(41560)),	-- Design: Stormy Chalcedony
 							-- #endif
-							i(42313, {	-- Design: Stormy Dragon's Eye
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(2, i(42313)),	-- Design: Stormy Dragon's Eye
 							-- #if AFTER CATA
-							i(41719, {	-- Design: Subtle Autumn's Glow [CATA+] / Design: Subtle Scarlet Ruby [WRATH]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41719)),	-- Design: Subtle Autumn's Glow [CATA+] / Design: Subtle Scarlet Ruby [WRATH]
 							-- #endif
-							i(42314, {	-- Design: Subtle Dragon's Eye
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(2, i(42314)),	-- Design: Subtle Dragon's Eye
 							-- #if AFTER CATA
-							i(42315, {	-- Design: Subtle Dragon's Eye [CATA+] / Design: Thick Dragon's Eye [WRATH]
+							daljewelcraftingtoken(2, i(42315, {	-- Design: Subtle Dragon's Eye [CATA+] / Design: Thick Dragon's Eye [WRATH]
 								["timeline"] = { "removed 4.0.3" },
-							}),
+							})),
 							-- #endif
 							-- #if BEFORE CATA
-							i(41719, {	-- Design: Subtle Scarlet Ruby [WRATH] / Design: Subtle Autumn's Glow [CATA+]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
-							i(42315, {	-- Design: Thick Dragon's Eye [WRATH] / Design: Subtle Dragon's Eye [CATA+]
-								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							daljewelcraftingtoken(3, i(41719)),	-- Design: Subtle Scarlet Ruby [WRATH] / Design: Subtle Autumn's Glow [CATA+]
+							daljewelcraftingtoken(2, i(42315, {	-- Design: Thick Dragon's Eye [WRATH] / Design: Subtle Dragon's Eye [CATA+]
 								["timeline"] = { "removed 4.0.3" },
-							}),
+							})),
 							-- #endif
-							i(42652, {	-- Design: Titanium Earthguard Chain
-								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-							}),
-							i(42649, {	-- Design: Titanium Earthguard Ring
-								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-							}),
-							i(43597, {	-- Design: Titanium Frostguard Ring
-								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-							}),
-							i(42648, {	-- Design: Titanium Impact Band
-								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-							}),
-							i(42651, {	-- Design: Titanium Impact Choker
-								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-							}),
-							i(42653, {	-- Design: Titanium Spellshock Necklace
-								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-							}),
-							i(42650, {	-- Design: Titanium Spellshock Ring
-								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-							}),
-							i(41711, {	-- Design: Trenchant Earthsiege Diamond
-								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(6, i(42652)),	-- Design: Titanium Earthguard Chain
+							daljewelcraftingtoken(6, i(42649)),	-- Design: Titanium Earthguard Ring
+							daljewelcraftingtoken(6, i(43597)),	-- Design: Titanium Frostguard Ring
+							daljewelcraftingtoken(6, i(42648)),	-- Design: Titanium Impact Band
+							daljewelcraftingtoken(6, i(42651)),	-- Design: Titanium Impact Choker
+							daljewelcraftingtoken(6, i(42653)),	-- Design: Titanium Spellshock Necklace
+							daljewelcraftingtoken(6, i(42650)),	-- Design: Titanium Spellshock Ring
+							daljewelcraftingtoken(5, i(41711)),	-- Design: Trenchant Earthsiege Diamond
 							-- #if AFTER CATA
 							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
-							i(41571, {	-- Design: Turbid Dark Jade
-								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(1, i(41571)),	-- Design: Turbid Dark Jade
 							-- #endif
-							i(41688, {	-- Design: Veiled Twilight Opal
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41688)),	-- Design: Veiled Twilight Opal
 							-- #if BEFORE CATA
-							i(41698, {	-- Design: Vivid Forest Emerald [WRATH] / Design: Nimble Forest Emerald [CATA+]
-								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(3, i(41698)),	-- Design: Vivid Forest Emerald [WRATH] / Design: Nimble Forest Emerald [CATA+]
 							-- #endif
 							-- #if AFTER CATA
 							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
-							i(41563, {	-- Design: Willful Huge Citrine [CATA+] / Design: Durable Huge Citrine [WRATH]
-								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(1, i(41563)),	-- Design: Willful Huge Citrine [CATA+] / Design: Durable Huge Citrine [WRATH]
 							-- #endif
-							i(43319, {	-- Design: Windfire Band
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(42225, {	-- Dragon's Eye
-								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-							}),
+							daljewelcraftingtoken(4, i(43319)),	-- Design: Windfire Band
+							daljewelcraftingtoken(1, i(42225)),	-- Dragon's Eye
 						},
 					}),
 					n(28701, {	-- Timothy Jones <Jewelcrafting Trainer>
 						["coord"] = { 40.3, 35.1, NORTHREND_DALARAN },
-						["groups"] = {
-							i(47010, {	-- Design: Accurate Dreadstone
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46917, {	-- Design: Bold Cardinal Ruby
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46916, {	-- Design: Brilliant Cardinal Ruby
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46930, {	-- Design: Brilliant Cardinal Ruby
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(47015, {	-- Design: Champion's Ametrine
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46949, {	-- Design: Deadly Ametrine
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(47011, {	-- Design: Deadly Ametrine
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46941, {	-- Design: Defender's Dreadstone
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(47020, {	-- Design: Deft Ametrine
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(47023, {	-- Design: Deft Ametrine
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46918, {	-- Design: Delicate Cardinal Ruby
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46919, {	-- Design: Delicate Cardinal Ruby
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46912, {	-- Design: Energized Eye of Zul
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46910, {	-- Design: Energized Eye of Zul
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46953, {	-- Design: Etched Dreadstone
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(47019, {	-- Design: Fierce Ametrine
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46923, {	-- Design: Flashing Cardinal Ruby
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46904, {	-- Design: Forceful Eye of Zul
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46956, {	-- Design: Glinting Dreadstone
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46945, {	-- Design: Glinting Dreadstone
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46946, {	-- Design: Glinting Dreadstone
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(47008, {	-- Design: Glinting Dreadstone
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46942, {	-- Design: Guardian's Dreadstone
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46948, {	-- Design: Inscribed Ametrine
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46901, {	-- Design: Jagged Eye of Zul
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46944, {	-- Design: Jagged Eye of Zul
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46909, {	-- Design: Lightning Eye of Zul
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46907, {	-- Design: Lightning Eye of Zul
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(47021, {	-- Design: Lucent Ametrine
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(47016, {	-- Design: Lucent Ametrine
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46905, {	-- Design: Misty Eye of Zul
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46906, {	-- Design: Misty Eye of Zul
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46943, {	-- Design: Mysterious Dreadstone
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46932, {	-- Design: Mystic King's Amber
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(49112, {	-- Design: Nightmare Tear
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46899, {	-- Design: Nimble Eye of Zul
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46950, {	-- Design: Potent Ametrine
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46920, {	-- Design: Precise Cardinal Ruby
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46937, {	-- Design: Purified Dreadstone
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46900, {	-- Design: Purified Dreadstone
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46903, {	-- Design: Purified Dreadstone
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46947, {	-- Design: Purified Dreadstone
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46939, {	-- Design: Purified Dreadstone
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46933, {	-- Design: Quick King's Amber
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46911, {	-- Design: Radiant Eye of Zul
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46908, {	-- Design: Radiant Eye of Zul
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(47007, {	-- Design: Reckless Ametrine
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46897, {	-- Design: Regal Eye of Zul
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46940, {	-- Design: Regal Eye of Zul
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(47022, {	-- Design: Resolute Ametrine
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(47018, {	-- Design: Resplendent Ametrine
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46928, {	-- Design: Rigid Majestic Zircon
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46913, {	-- Design: Shattered Eye of Zul
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46938, {	-- Design: Shifting Dreadstone
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46934, {	-- Design: Shifting Dreadstone
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46929, {	-- Design: Smooth King's Amber
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46921, {	-- Design: Smooth King's Amber
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46924, {	-- Design: Solid Majestic Zircon
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46935, {	-- Design: Sovereign Dreadstone
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46925, {	-- Design: Sparkling Majestic Zircon
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46927, {	-- Design: Sparkling Majestic Zircon
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(47017, {	-- Design: Stalwart Ametrine
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(47012, {	-- Design: Stalwart Ametrine
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46898, {	-- Design: Steady Eye of Zul
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46926, {	-- Design: Stormy Majestic Zircon
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46922, {	-- Design: Subtle King's Amber
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46931, {	-- Design: Subtle King's Amber
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46902, {	-- Design: Timeless Dreadstone
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46936, {	-- Design: Timeless Dreadstone
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46915, {	-- Design: Turbid Eye of Zul
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46914, {	-- Design: Turbid Eye of Zul
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(46951, {	-- Design: Veiled Dreadstone
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-							i(46952, {	-- Design: Willful Ametrine
-								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-							}),
-						},
+						["groups"] = applyclassicphase(WRATH_PHASE_THREE, {
+							daljewelcraftingtoken(4, i(47010)),	-- Design: Accurate Dreadstone [CATA+] / Design: Accurate Ametrine
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46934, {	-- Design: Balanced Dreadstone / Design: Shifting Dreadstone [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46917)),	-- Design: Bold Cardinal Ruby
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46919, {	-- Design: Bright Cardinal Ruby / Design: Delicate Cardinal Ruby [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46916)),	-- Design: Brilliant Cardinal Ruby [CATA+] / Design: Runed Cardinal Ruby
+							-- #endif
+							daljewelcraftingtoken(4, i(46930, {	-- Design: Brilliant Cardinal Ruby [CATA+] / Design: Brilliant King's Amber
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							daljewelcraftingtoken(4, i(47015)),	-- Design: Champion's Ametrine [CATA+] / Design: Champion's Ametrine
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46900, {	-- Design: Dazzling Eye of Zul / Design: Purified Dreadstone [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46949)),	-- Design: Deadly Ametrine
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(47011, {	-- Design: Deadly Ametrine [CATA+] / Design: Wicked Ametrine
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46941)),	-- Design: Defender's Dreadstone
+							daljewelcraftingtoken(4, i(47020)),	-- Design: Deft Ametrine
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(47023, {	-- Design: Deft Ametrine [CATA+] / Design: Stark Ametrine
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46918)),	-- Design: Delicate Cardinal Ruby
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46919, {	-- Design: Delicate Cardinal Ruby [CATA+] / Design: Bright Cardinal Ruby
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46952)),	-- Design: Durable Ametrine / Design: Willful Ametrine [CATA+]
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(47016, {	-- Design: Empowered Ametrine / Design: Lucent Ametrine [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46897)),	-- Design: Enduring Eye of Zul / Design: Regal Eye of Zul [CATA+]
+							-- #endif
+							daljewelcraftingtoken(4, i(46912)),	-- Design: Energized Eye of Zul
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46910, {	-- Design: Energized Eye of Zul [CATA+] / Design: Intricate Eye of Zul
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46953)),	-- Design: Etched Dreadstone [CATA+] / Design: Etched Ametrine
+							daljewelcraftingtoken(4, i(47019)),	-- Design: Fierce Ametrine
+							daljewelcraftingtoken(4, i(46923)),	-- Design: Flashing Cardinal Ruby
+							daljewelcraftingtoken(4, i(46904)),	-- Design: Forceful Eye of Zul
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46921, {	-- Design: Fractured Cardinal Ruby / Design: Smooth King's Amber [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(47012, {	-- Design: Glimmering Ametrine / Design: Stalwart Ametrine [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(47008, {	-- Design: Glinting Ametrine / Design: Glinting Dreadstone [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46956)),	-- Design: Glinting Dreadstone [CATA+] / Design: Pristine Ametrine
+							daljewelcraftingtoken(4, i(46945, {	-- Design: Glinting Dreadstone [CATA+] / Design: Infused Dreadstone
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							daljewelcraftingtoken(4, i(46946, {	-- Design: Glinting Dreadstone [CATA+] / Design: Tenuous Dreadstone
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46936, {	-- Design: Glowing Dreadstone / Design: Timeless Dreadstone [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46942)),	-- Design: Guardian's Dreadstone
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46945, {	-- Design: Infused Dreadstone / Design: Glinting Dreadstone [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46948)),	-- Design: Inscribed Ametrine
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46910, {	-- Design: Intricate Eye of Zul / Design: Energized Eye of Zul [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46901)),	-- Design: Jagged Eye of Zul
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46944, {	-- Design: Jagged Eye of Zul [CATA+] / Design: Puissant Dreadstone
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46909)),	-- Design: Lambent Eye of Zul / Design: Lightning Eye of Zul [CATA+]
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46907, {	-- Design: Lightning Eye of Zul [CATA+] / Design: Shining Eye of Zul
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(47021)),	-- Design: Lucent Ametrine
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(47016, {	-- Design: Lucent Ametrine [CATA+] / Design: Empowered Ametrine
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46947, {	-- Design: Luminous Ametrine / Design: Purified Dreadstone [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46927, {	-- Design: Lustrous Majestic Zircon / Design: Sparkling Majestic Zircon [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46905)),	-- Design: Misty Eye of Zul
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46906, {	-- Design: Misty Eye of Zul [CATA+] / Design: Sundered Eye of Zul
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46943)),	-- Design: Mysterious Dreadstone
+							daljewelcraftingtoken(4, i(46932)),	-- Design: Mystic King's Amber
+							daljewelcraftingtoken(4, i(49112)),	-- Design: Nightmare Tear
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46899)),	-- Design: Nimble Eye of Zul [CATA+] / Design: Vivid Eye of Zul
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46914, {	-- Design: Opaque Eye of Zul / Design: Turbid Eye of Zul [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46950)),	-- Design: Potent Ametrine
+							daljewelcraftingtoken(4, i(46920)),	-- Design: Precise Cardinal Ruby
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46956)),	-- Design: Pristine Ametrine / Design: Glinting Dreadstone [CATA+]
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46944, {	-- Design: Puissant Dreadstone / Design: Jagged Eye of Zul [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46937)),	-- Design: Purified Dreadstone
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46900, {	-- Design: Purified Dreadstone [CATA+] / Design: Dazzling Eye of Zul
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46903, {	-- Design: Purified Dreadstone [CATA+] / Design: Seer's Eye of Zul
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46947, {	-- Design: Purified Dreadstone [CATA+] / Design: Luminous Ametrine
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46939, {	-- Design: Purified Dreadstone [CATA+] / Design: Royal Dreadstone
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46933)),	-- Design: Quick King's Amber
+							daljewelcraftingtoken(4, i(46911)),	-- Design: Radiant Eye of Zul
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46908, {	-- Design: Radiant Eye of Zul [CATA+] / Design: Tense Eye of Zul
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(47007)),	-- Design: Reckless Ametrine
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46897)),	-- Design: Regal Eye of Zul [CATA+] / Design: Enduring Eye of Zul
+							-- #endif
+							daljewelcraftingtoken(4, i(46940, {	-- Design: Regal Eye of Zul [CATA+] / Design: Regal Dreadstone
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							daljewelcraftingtoken(4, i(47022)),	-- Design: Resolute Ametrine
+							daljewelcraftingtoken(4, i(47018)),	-- Design: Resplendent Ametrine
+							daljewelcraftingtoken(4, i(46928)),	-- Design: Rigid Majestic Zircon [CATA+] / Design: Rigid King's Amber
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46939, {	-- Design: Royal Dreadstone / Design: Purified Dreadstone [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46916)),	-- Design: Runed Cardinal Ruby / Design: Brilliant Cardinal Ruby [CATA+]
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46903, {	-- Design: Seer's Eye of Zul / Design: Purified Dreadstone [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46913)),	-- Design: Shattered Eye of Zul
+							daljewelcraftingtoken(4, i(46938)),	-- Design: Shifting Dreadstone
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46934, {	-- Design: Shifting Dreadstone [CATA+] / Design: Balanced Dreadstone
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46907, {	-- Design: Shining Eye of Zul / Design: Lightning Eye of Zul [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46929)),	-- Design: Smooth King's Amber
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46921, {	-- Design: Smooth King's Amber [CATA+] / Design: Fractured Cardinal Ruby
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46924)),	-- Design: Solid Majestic Zircon
+							daljewelcraftingtoken(4, i(46935)),	-- Design: Sovereign Dreadstone
+							daljewelcraftingtoken(4, i(46925)),	-- Design: Sparkling Majestic Zircon
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46927, {	-- Design: Sparkling Majestic Zircon [CATA+] / Design: Lustrous Majestic Zircon
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(47017)),	-- Design: Stalwart Ametrine
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(47012, {	-- Design: Stalwart Ametrine [CATA+] / Design: Glimmering Ametrine
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(47023, {	-- Design: Stark Ametrine / Design: Deft Ametrine [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46898)),	-- Design: Steady Eye of Zul
+							daljewelcraftingtoken(4, i(46926)),	-- Design: Stormy Majestic Zircon
+							daljewelcraftingtoken(4, i(46922)),	-- Design: Subtle King's Amber [CATA+] / Design: Subtle Cardinal Ruby
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46931, {	-- Design: Subtle King's Amber [CATA+] / Design: Thick King's Amber
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46906, {	-- Design: Sundered Eye of Zul / Design: Misty Eye of Zul [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46908, {	-- Design: Tense Eye of Zul / Design: Radiant Eye of Zul [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46946, {	-- Design: Tenuous Dreadstone / Design: Glinting Dreadstone [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46931, {	-- Design: Thick King's Amber / Design: Subtle King's Amber [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46902)),	-- Design: Timeless Dreadstone [CATA+] / Design: Timeless Eye of Zul
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46936, {	-- Design: Timeless Dreadstone [CATA+] / Design: Glowing Dreadstone
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46915)),	-- Design: Turbid Eye of Zul
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46914, {	-- Design: Turbid Eye of Zul [CATA+] / Design: Opaque Eye of Zul
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							daljewelcraftingtoken(4, i(46951)),	-- Design: Veiled Dreadstone [CATA+] / Design: Veiled Ametrine
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(46899)),	-- Design: Vivid Eye of Zul / Design: Nimble Eye of Zul [CATA+]
+							-- #endif
+							-- #if BEFORE CATA
+							daljewelcraftingtoken(4, i(47011, {	-- Design: Wicked Ametrine / Design: Deadly Ametrine [CATA+]
+								["timeline"] = { "removed 4.0.3" },
+							})),
+							-- #endif
+							-- #if AFTER CATA
+							daljewelcraftingtoken(4, i(46952)),	-- Design: Willful Ametrine [CATA+] / Design: Durable Ametrine
+							-- #endif
+						}),
 					}),
 					n(28991, {	-- Valaden Silverblade <Sword Merchant>
 						["coord"] = { 54.5, 62.9, NORTHREND_DALARAN },

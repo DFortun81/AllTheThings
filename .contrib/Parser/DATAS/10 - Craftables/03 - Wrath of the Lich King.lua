@@ -511,9 +511,9 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 	}),
 	prof(JEWELCRAFTING, {
 		category(168, {	-- Materials
-			i(46849, {	-- Titanium Powder
+			applyclassicphase(WRATH_PHASE_THREE, i(46849, {	-- Titanium Powder
 				["cost"] = {{ "i", 36910, 5 }},	-- Titanium Ore
-			}),
+			})),
 		}),
 		filter(NECK_F, {
 			i(42339),	-- Blood Sun Necklace
