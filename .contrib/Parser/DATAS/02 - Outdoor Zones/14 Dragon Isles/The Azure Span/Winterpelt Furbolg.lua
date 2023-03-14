@@ -199,12 +199,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 							}),
 						}),
 						filter(RECIPES, {
-							i(204678, {	-- Pattern: Paw-Made Winterpelt Reagent Bag
+							i(204678, {	-- Pattern: Paw-Made Winterpelt Reagent Bag (RECIPE!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },
 								},
 							}),
-							i(202289, {	-- Recipe: Firewater Sorbet
+							i(202289, {	-- Recipe: Firewater Sorbet (RECIPE!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },
 								},

@@ -2053,3 +2053,19 @@ i(202227, 397857);	-- Remarkable Truesteel Essence
 -- PATCH 10.0.7 --
 ------------------
 i(203421, 400808);	-- Ancient Ceremonial Trident
+-- UNSORTED --
+i(203833, 402134);	-- Bloodherald
+i(203834, 402135);	-- Bloodlord's Reaver
+i(203835, 402136);	-- Fiery Vengeance
+i(203825, 402123);	-- Gurubashi Carver
+i(203831, 402130);	-- Gurubashi Crusher
+i(203828, 402126);	-- Gurubashi Grinder
+i(203824, 402118);	-- Gurubashi Headplate
+i(203829, 402128);	-- Gurubashi Hexxer
+i(203827, 402125);	-- Gurubashi Poker
+i(203837, 402138);	-- Gurubashi Slicer
+i(203832, 402131);	-- Pitchfork of Mojo Madness
+i(203830, 402129);	-- Sceptre of Hexing
+i(203826, 402124);	-- Venomfang
+i(203861, 402133);	-- Venomreaver
+i(203836, 402137);	-- Warblades of the Hakkari, Reborn

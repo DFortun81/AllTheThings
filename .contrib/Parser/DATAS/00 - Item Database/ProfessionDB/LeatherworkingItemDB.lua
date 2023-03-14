@@ -169,3 +169,11 @@ i(202233, 397863);	-- Remarkable Burnished Essence
 -- PATCH 10.0.7 --
 ------------------
 i(203427, 400814);	-- Reinforced Pristine Leather
+-- UNSORTED --
+i(203842, 402143);	-- Animist's Footwraps
+i(203843, 402144);	-- Animist's Legguards
+i(203968, 402615);	-- Cord of Shriveled Heads
+i(203844, 402146);	-- Gloves of the Tormentor
+i(203847, 402150);	-- Gurubashi's Grasp
+i(203845, 402147);	-- Junglefury Gauntlets
+i(203846, 402148);	-- Junglefury Leggings

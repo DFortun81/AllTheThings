@@ -204,3 +204,7 @@ i(194615, 0);	-- Zen Neltharite
 ------------------
 i(203426, 400812);	-- Crystal Tuning Fork
 i(0, 404740);	-- Cataclysm Crushing
+-- UNSORTED --
+i(204218, 403464);	-- Primordial Pulverizing
+i(204406, 405205);	-- Square Holders
+i(204219, 403483);	-- Unstable Elementium

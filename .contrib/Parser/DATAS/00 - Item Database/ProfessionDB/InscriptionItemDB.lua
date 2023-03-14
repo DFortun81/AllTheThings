@@ -1538,3 +1538,7 @@ i(202237, 397867);	-- Remarkable Weapon Crystal
 -- PATCH 10.0.7 --
 ------------------
 i(203425, 400811);	-- Arcane Dispelling Rune
+-- UNSORTED --
+i(203841, 402142);	-- Gurubashi Ceremonial Staff
+i(203839, 402140);	-- Gurubashi Hoodoo Stick
+i(203840, 402141);	-- Judgment of the Gurubashi

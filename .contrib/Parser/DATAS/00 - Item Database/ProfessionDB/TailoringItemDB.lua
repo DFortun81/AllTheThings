@@ -148,3 +148,8 @@ i(202235, 397865);	-- Remarkable Hexweave Essence
 ------------------
 i(204678, 405974);	-- Paw-Made Winterpelt Reagent Bag
 i(203428, 400815);	-- Traditional Morqut Kite
+-- UNSORTED --
+i(203848, 402151);	-- Bloodlord's Embrace
+i(203850, 402155);	-- Gurubashi Headdress
+i(203849, 402152);	-- Gurubashi Tigerhide Cloak
+i(203851, 402156);	-- Ritualistic Legwarmers

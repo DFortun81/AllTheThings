@@ -2415,7 +2415,6 @@ root(ROOTS.Unsorted, {
 				i(202181),	-- Best-root Tuber
 				i(202185),	-- Chillwrought Worm Meat
 				i(202202),	-- Revealing Mask
-				i(202290),	-- Firewater Sorbet
 				i(202294),	-- Recipe Pages
 				i(202361),	-- Farscale Supplies
 				i(202362),	-- Arcane Focus
@@ -2553,9 +2552,14 @@ root(ROOTS.Unsorted, {
 				i(204873),	-- Tied-up Envelope
 			}),
 			n(PROFESSIONS, {
+				-- JC
+				i(204406),	-- Ancient Design: Square Holders (RECIPE!)
+				i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
+				i(204219),	-- Design: Unstable Elementium (RECIPE!)
+				-- JC
+				i(204404),	-- Square Holders
 				i(204217),	-- Unstable Elementium
-				i(204218),	-- Design: Primordial Pulverizing
-				i(204219),	-- Design: Unstable Elementium
+				--
 				i(204222),	-- Conductive Ametrine Shard
 				i(204224),	-- Speck of Arcane Awareness
 				i(204225),	-- Perfect Windfeather
@@ -2567,8 +2571,6 @@ root(ROOTS.Unsorted, {
 				i(204231),	-- Kingly Sheepskin Pelt
 				i(204232),	-- Slyvern Alpha Claw
 				i(204233),	-- Impenetrable Elemental Core
-				i(204404),	-- Square Holders
-				i(204406),	-- Ancient Design: Square Holders
 			}),
 			filter(TOYS, {
 				i(204675),	-- A Drake's Big Basket of Eggs (TOY!)
@@ -2586,6 +2588,79 @@ root(ROOTS.Unsorted, {
 				i(204677),	-- Ogre Mining Pick
 			}),
 			header(HEADERS.LFGDungeon, 334, {	-- Zul'Gurub
+				-- BS
+				i(203833),	-- Ancient Plans: Bloodherald (RECIPE!)
+				i(203834),	-- Ancient Plans: Bloodlord's Reaver (RECIPE!)
+				i(203835),	-- Ancient Plans: Fiery Vengeance (RECIPE!)
+				i(203825),	-- Ancient Plans: Gurubashi Carver (RECIPE!)
+				i(203831),	-- Ancient Plans: Gurubashi Crusher (RECIPE!)
+				i(203828),	-- Ancient Plans: Gurubashi Grinder (RECIPE!)
+				i(203824),	-- Ancient Plans: Gurubashi Headplate (RECIPE!)
+				i(203829),	-- Ancient Plans: Gurubashi Hexxer (RECIPE!)
+				i(203827),	-- Ancient Plans: Gurubashi Poker (RECIPE!)
+				i(203837),	-- Ancient Plans: Gurubashi Slicer (RECIPE!)
+				i(203832),	-- Ancient Plans: Pitchfork of Mojo Madness (RECIPE!)
+				i(203830),	-- Ancient Plans: Sceptre of Hexing (RECIPE!)
+				i(203826),	-- Ancient Plans: Venomfang (RECIPE!)
+				i(203861),	-- Ancient Plans: Venomreaver (RECIPE!)
+				i(203836),	-- Ancient Plans: Warblades of the Hakkari, Reborn (RECIPE!)
+				-- BS
+				i(203790),	-- Bloodherald
+				i(203793),	-- Bloodlord's Reaver
+				i(203813),	-- Fiery Vengeance
+				i(203810),	-- Gurubashi Carver
+				i(203806),	-- Gurubashi Crusher
+				i(203809),	-- Gurubashi Grinder
+				i(203817),	-- Gurubashi Headplate
+				i(203797),	-- Gurubashi Hexxer
+				i(203812),	-- Gurubashi Poker
+				i(203801),	-- Gurubashi Slicer
+				i(203811),	-- Pitchfork of Mojo Madness
+				i(203804),	-- Sceptre of Hexing
+				i(203802),	-- Venomfang
+				i(203860),	-- Venomreaver
+				i(203854),	-- Warblades of the Hakkari, Reborn
+				i(203791),	-- Warblade of the Hakkari, Reborn
+				i(203792),	-- Warblade of the Hakkari, Reborn
+				-- Ench
+				i(203838),	-- Ancient Formula: Mindslave's Reach (RECIPE!)
+				-- Ench
+				i(203808),	-- Mindslave's Reach
+				-- Ins
+				i(203841),	-- Ancient Technique: Gurubashi Ceremonial Staff (RECIPE!)
+				i(203839),	-- Ancient Technique: Gurubashi Hoodoo Stick (RECIPE!)
+				i(203840),	-- Ancient Technique: Judgment of the Gurubashi (RECIPE!)
+				-- Ins
+				i(203815),	-- Gurubashi Ceremonial Staff
+				i(203807),	-- Gurubashi Hoodoo Stick
+				i(203795),	-- Judgment of the Gurubashi
+				-- LW
+				i(203842),	-- Ancient Pattern: Animist's Footwraps (RECIPE!)
+				i(203843),	-- Ancient Pattern: Animist's Legguards (RECIPE!)
+				i(203968),	-- Ancient Pattern: Cord of Shriveled Heads (RECIPE!)
+				i(203844),	-- Ancient Pattern: Gloves of the Tormentor (RECIPE!)
+				i(203847),	-- Ancient Pattern: Gurubashi's Grasp (RECIPE!)
+				i(203845),	-- Ancient Pattern: Junglefury Gauntlets (RECIPE!)
+				i(203846),	-- Ancient Pattern: Junglefury Leggings (RECIPE!)
+				-- LW
+				i(203799),	-- Animist's Footwraps
+				i(203794),	-- Animist's Legguards
+				i(203966),	-- Cord of Shriveled Heads
+				i(203819),	-- Gloves of the Tormentor
+				i(203805),	-- Gurubashi's Grasp
+				i(203814),	-- Junglefury Gauntlets
+				i(203816),	-- Junglefury Leggings
+				-- Tailoring
+				i(203848),	-- Ancient Pattern: Bloodlord's Embrace (RECIPE!)
+				i(203850),	-- Ancient Pattern: Gurubashi Headdress (RECIPE!)
+				i(203849),	-- Ancient Pattern: Gurubashi Tigerhide Cloak (RECIPE!)
+				i(203851),	-- Ancient Pattern: Ritualistic Legwarmers (RECIPE!)
+				-- Tailoring
+				i(203796),	-- Bloodlord's Embrace
+				i(203820),	-- Gurubashi Headdress
+				i(203803),	-- Gurubashi Tigerhide Cloak
+				i(203800),	-- Ritualistic Legwarmers
+				--
 				i(203735),	-- Shattered Hakkari Bijou
 				i(203736),	-- Fragmented Hakkari Bijou
 				i(203737),	-- Restored Hakkari Bijou
@@ -2601,74 +2676,12 @@ root(ROOTS.Unsorted, {
 				i(203772),	-- Silver Hakkari Bijou
 				i(203773),	-- Yellow Hakkari Bijou
 				i(203774),	-- Big Bag o' Bijous
-				i(203790),	-- Bloodherald
-				i(203791),	-- Warblade of the Hakkari, Reborn
-				i(203792),	-- Warblade of the Hakkari, Reborn
-				i(203793),	-- Bloodlord's Reaver
-				i(203794),	-- Animist's Legguards
-				i(203795),	-- Judgment of the Gurubashi
-				i(203796),	-- Bloodlord's Embrace
-				i(203797),	-- Gurubashi Hexxer
 				i(203798),	-- Copy Jin'do's Bag of Whammies
-				i(203799),	-- Animist's Footwraps
-				i(203800),	-- Ritualistic Legwarmers
-				i(203801),	-- Gurubashi Slicer
-				i(203802),	-- Venomfang
-				i(203803),	-- Gurubashi Tigerhide Cloak
-				i(203804),	-- Sceptre of Hexing
-				i(203805),	-- Gurubashi's Grasp
-				i(203806),	-- Gurubashi Crusher
-				i(203807),	-- Gurubashi Hoodoo Stick
-				i(203808),	-- Mindslave's Reach
-				i(203809),	-- Gurubashi Grinder
-				i(203810),	-- Gurubashi Carver
-				i(203811),	-- Pitchfork of Mojo Madness
-				i(203812),	-- Gurubashi Poker
-				i(203813),	-- Fiery Vengeance
-				i(203814),	-- Junglefury Gauntlets
-				i(203815),	-- Gurubashi Ceremonial Staff
-				i(203816),	-- Junglefury Leggings
-				i(203817),	-- Gurubashi Headplate
-				i(203819),	-- Gloves of the Tormentor
-				i(203820),	-- Gurubashi Headdress
-				i(203824),	-- Ancient Plans: Gurubashi Headplate
-				i(203825),	-- Ancient Plans: Gurubashi Carver
-				i(203826),	-- Ancient Plans: Venomfang
-				i(203827),	-- Ancient Plans: Gurubashi Poker
-				i(203828),	-- Ancient Plans: Gurubashi Grinder
-				i(203829),	-- Ancient Plans: Gurubashi Hexxer
-				i(203830),	-- Ancient Plans: Sceptre of Hexing
-				i(203831),	-- Ancient Plans: Gurubashi Crusher
-				i(203832),	-- Ancient Plans: Pitchfork of Mojo Madness
-				i(203833),	-- Ancient Plans: Bloodherald
-				i(203834),	-- Ancient Plans: Bloodlord's Reaver
-				i(203835),	-- Ancient Plans: Fiery Vengeance
-				i(203836),	-- Ancient Plans: Warblades of the Hakkari, Reborn
-				i(203837),	-- Ancient Plans: Gurubashi Slicer
-				i(203838),	-- Ancient Formula: Mindslave's Reach
-				i(203839),	-- Ancient Technique: Gurubashi Hoodoo Stick
-				i(203840),	-- Ancient Technique: Judgment of the Gurubashi
-				i(203841),	-- Ancient Technique: Gurubashi Ceremonial Staff
-				i(203842),	-- Ancient Pattern: Animist's Footwraps
-				i(203843),	-- Ancient Pattern: Animist's Legguards
-				i(203844),	-- Ancient Pattern: Gloves of the Tormentor
-				i(203845),	-- Ancient Pattern: Junglefury Gauntlets
-				i(203846),	-- Ancient Pattern: Junglefury Leggings
-				i(203847),	-- Ancient Pattern: Gurubashi's Grasp
-				i(203848),	-- Ancient Pattern: Bloodlord's Embrace
-				i(203849),	-- Ancient Pattern: Gurubashi Tigerhide Cloak
-				i(203850),	-- Ancient Pattern: Gurubashi Headdress
-				i(203851),	-- Ancient Pattern: Ritualistic Legwarmers
-				i(203854),	-- Warblades of the Hakkari, Reborn
-				i(203860),	-- Venomreaver
-				i(203861),	-- Ancient Plans: Venomreaver
 				i(203862),	-- Brilliant Mana Oil
 				i(203865),	-- Brilliant Wizard Oil
 				i(203912),	-- Penny Pouch o' Paragons
 				i(203914),	-- Zandalar Bargaining Token
 				i(203959),	-- Gurubashi Tribute
-				i(203966),	-- Cord of Shriveled Heads
-				i(203968),	-- Ancient Pattern: Cord of Shriveled Heads
 				i(203970),	-- Bloodtinged Hat
 				i(203971),	-- Bloodtinged Shoulders
 				i(203974),	-- Ensemble: Zandalar Haruspec
