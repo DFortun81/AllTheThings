@@ -7,19 +7,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			n(ACHIEVEMENTS, {
 				ach(17540, {	-- Under the Weather
 					crit(1, {	-- Air
-						["questID"] = 75402,
+						["_quests"] = { 75402 },
 						["_npcs"] = { 198914 },	-- Han'thul
 					}),
 					crit(2, {	-- Earth
-						["questID"] = 75401,
+						["_quests"] = { 75401 },
 						["_npcs"] = { 198915 },	-- Khirna Cragheart
 					}),
 					crit(3, {	-- Fire
-						["questID"] = 75400,
+						["_quests"] = { 75400 },
 						["_npcs"] = { 198916 },	-- Fael'lin
 					}),
 					crit(4, {	-- Water
-						["questID"] = 75399,
+						["_quests"] = { 75399 },
 						["_npcs"] = { 198917 },	-- Shukoro Rapidstamer
 					}),
 				}),

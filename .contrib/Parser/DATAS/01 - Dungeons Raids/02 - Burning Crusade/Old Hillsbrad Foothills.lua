@@ -3,6 +3,7 @@
 -----------------------------------------------------
 local THOMAS_YANCE_GROUPS = {
 	i(25725),	-- Pattern: Riding Crop
+	i(23321),	-- Recruit's Robe
 };
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(251, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Old Hillsbrad Foothills

@@ -498,6 +498,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						7079,	-- Viscous Fallout
 					},
 				}),
+				i(5108, {	-- Dark Iron Leather
+					["cr"] = 6212,	-- Dark Iron Agent
+				}),
 				i(9490, {	-- Gizmotron Megachopper
 					["crs"] = {
 						6232,	-- Arcane Nullifier X-21
@@ -780,6 +783,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			n(6228, {	-- Dark Iron Ambassador
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
+					i(5108),	-- Dark Iron Leather
 					i(9456),	-- Glass Shooter
 					i(9457),	-- Royal Diplomatic Scepter
 					i(9455),	-- Emissary Cuffs

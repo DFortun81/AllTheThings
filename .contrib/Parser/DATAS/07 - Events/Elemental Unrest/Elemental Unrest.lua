@@ -47,6 +47,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(-523, -- Elemental 
 						objective(1, {	-- Join the Doomsday Cult
 							["provider"] = { "i", 52729 },	-- Recruit's Robe
 						}),
+						i(52729),	-- Recruit's Robe
 					},
 				}),
 				q(25288, {	-- Infiltrating The Cult (H)
@@ -58,6 +59,7 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_SIX, n(-523, -- Elemental 
 						objective(1, {	-- Join the Doomsday Cult
 							["provider"] = { "i", 52729 },	-- Recruit's Robe
 						}),
+						i(52729),	-- Recruit's Robe
 					},
 				}),
 				q(25253, {	-- Prophecies of Doom (A)

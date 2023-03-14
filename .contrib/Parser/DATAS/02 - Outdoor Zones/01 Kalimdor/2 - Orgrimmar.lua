@@ -5254,6 +5254,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
 				}),
+				n(3359, {	-- Kiro <War Harness Maker>
+					["coord"] = { 66.8, 50.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(6526),	-- Battle Harness
+						i(6523),	-- Buckled Harness
+						i(6525),	-- Grunt's Harness
+						i(6524),	-- Studded Leather Harness
+					},
+				}),
 				n(3348, {	-- Kor'geld <Alchemy Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 55.6, 45.4, ORGRIMMAR },
@@ -5920,6 +5930,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(121),	-- Thug Boots
 						i(120),	-- Thug Pants
 						i(58246),	-- Thug Vest
+
+						-- ??? --
+						i(153),		-- Primitive Kilt
+						i(6135),	-- Primitive Kilt
 					}),
 				}),
 				-- #endif
@@ -5928,20 +5942,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(62260),	-- Grunt's Chain Belt
-						i(62261),	-- Grunt's Chain Boots
-						i(62262),	-- Grunt's Chain Bracers
-						i(62266),	-- Grunt's Chain Circlet
-						i(62263),	-- Grunt's Chain Gloves
-						i(62264),	-- Grunt's Chain Leggings
-						i(62265),	-- Grunt's Chain Vest
-						i(62253),	-- Grunt's Plate Armor
-						i(62254),	-- Grunt's Plate Belt
-						i(62255),	-- Grunt's Plate Boots
-						i(62256),	-- Grunt's Plate Bracers
-						i(62257),	-- Grunt's Plate Gloves
-						i(62259),	-- Grunt's Plate Helm
-						i(62258),	-- Grunt's Plate Leggings
 						-- #if AFTER 10.0.5
 						-- Now any class and race can buy this
 						-- PALADIN --
@@ -6107,6 +6107,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(59, {	-- Acolyte's Shoes
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
+
+						-- ??? --
+						i(6126),	-- Trapper's Pants
+						i(6127),	-- Trapper's Boots
 						-- #endif
 					},
 				}),
@@ -6216,32 +6220,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- SHAMAN --
 						i(52545),	-- Primal Pants
 						i(52544),	-- Primal Robe
-						
-						-- Unsure Which Class --
-						i(2398),	-- Light Chain Armor
-						i(2399),	-- Light Chain Belt
-						i(2400),	-- Light Chain Leggings
-						i(2401),	-- Light Chain Boots
-						i(2402),	-- Light Chain Bracers
-						i(2403),	-- Light Chain Gloves
-						i(17185),	-- Round Buckler
-						i(2376),	-- Worn Heater Shield
-						i(847),		-- Chainmail Armor
-						i(1845),	-- Chainmail Belt
-						i(848),		-- Chainmail Pants
-						i(849),		-- Chainmail Boots
-						i(1846),	-- Chainmail Bracers
-						i(850),		-- Chainmail Gloves
-						i(17187),	-- Banded Buckler
-						i(1202),	-- Wall Shield
-						i(285),		-- Scalemail Vest
-						i(1853),	-- Scalemail Belt
-						i(286),		-- Scalemail Pants
-						i(287),		-- Scalemail Boots
-						i(1852),	-- Scalemail Bracers
-						i(718),		-- Scalemail Gloves
-						i(17188),	-- Ringed Buckler
-						i(2445),	-- Large Metal Shield
 					}),
 				}),
 				-- #endif
@@ -6976,32 +6954,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.4, 68.6, ORGRIMMAR },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(2131),	-- Shortsword
-						i(1194),	-- Bastard Sword
-						i(2134),	-- Hand Axe
-						i(2479),	-- Broad Axe
-						i(2130),	-- Club
-						i(2480),	-- Large Club
-						i(2139),	-- Dirk
-						i(2132),	-- Short Staff
-						i(2489),	-- Two-Handed Sword
-						i(2492),	-- Cudgel
-						i(2491),	-- Large Axe
-						i(2494),	-- Stiletto
-						i(2495),	-- Walking Stick
-						i(2488),	-- Gladius
-						i(2490),	-- Tomahawk
-						i(2493),	-- Wooden Mallet
-						i(851),		-- Cutlass
-						i(1198),	-- Claymore
-						i(853),		-- Hatchet
-						i(1196),	-- Tabar
-						i(852),		-- Mace
-						i(1197),	-- Giant Mace
-						i(2207),	-- Jambiya
-						i(854),		-- Quarter Staff
-					},
+					--["groups"] = {
+					--
+					--},
 				}),
 				n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
 					["coord"] = { 36.6, 86.8, ORGRIMMAR },

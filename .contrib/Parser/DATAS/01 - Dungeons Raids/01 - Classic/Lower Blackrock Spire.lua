@@ -317,6 +317,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["maps"] = { DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
+					["groups"] = {
+						i(16787, {	-- Amulet of Draconic Subversion
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(4862, {	-- En-Ay-Es-Tee-Why
 					["qg"] = 10260,	-- Kibler

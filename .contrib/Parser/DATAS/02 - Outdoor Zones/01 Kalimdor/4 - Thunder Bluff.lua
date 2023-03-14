@@ -950,6 +950,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
+				n(3023, {	-- Sura Wildmane <War Harness Vendor>
+					["coord"] = { 51.8, 54.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(6526),	-- Battle Harness
+						i(6523),	-- Buckled Harness
+						i(6525),	-- Grunt's Harness
+						i(6524),	-- Studded Leather Harness
+					},
+				}),
 				n(3016, {	-- Tand <Basket Weaver>
 					["coord"] = { 49.1, 34.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,

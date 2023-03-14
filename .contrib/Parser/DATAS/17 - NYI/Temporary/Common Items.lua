@@ -49,11 +49,24 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					}),
 				}),
 				filter(LEATHER, {
+					n(SHOULDER, {
+						i(49517),	-- Goblin Primitive's Mantle
+					}),
+					n(CHEST, {
+						i(57157),	-- Dark Lady's Vest
+					}),
+					n(WRIST, {
+						i(53356),	-- Beast Tracker's Bracers
+					}),
 					n(HANDS, {
+						i(53376),	-- Lockpicker's Glovelettes
 						i(53385),	-- Rockbitten Gloves
 					}),
 					n(WAIST, {
 						i(49534),	-- Goblin Primitive's Belt
+					}),
+					n(FEET, {
+						i(57254),	-- Runner's Boots
 					}),
 				}),
 				filter(MAIL, {

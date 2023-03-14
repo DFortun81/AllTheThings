@@ -1571,7 +1571,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(4854, {	-- Demon Scarred Cloak
-							["ignoreSource"] = true,
 							["races"] = HORDE_ONLY,
 						}),
 					},

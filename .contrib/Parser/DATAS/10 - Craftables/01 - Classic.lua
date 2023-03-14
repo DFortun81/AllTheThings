@@ -2278,6 +2278,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				-- #if AFTER TBC
 				i(16984),	-- Black Dragonscale Boots
 				-- #endif
+				i(6836),	-- Dress Shoes
 				i(8209),	-- Tough Scorpid Boots
 			}),
 		}),
@@ -2537,6 +2538,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(6263),	-- Blue Overalls
 			i(14100),	-- Brightcloth Robe
 			i(6238),	-- Brown Linen Robe
+			i(2568),	-- Brown Linen Vest
 			i(10042),	-- Cindercloth Robe
 			i(14042),	-- Cindercloth Vest
 			i(7063),	-- Crimson Silk Robe
@@ -2557,6 +2559,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(6264),	-- Greater Adept's Robe
 			i(7065),	-- Green Silk Armor
 			i(2582),	-- Green Woolen Vest
+			i(38277, {	-- Haliscan Jacket
+				["timeline"] = { "added 2.4.2.8301" },
+			}),
 			i(5766),	-- Lesser Wizard's Robe
 			i(18486),	-- Mooncloth Robe
 			i(14138),	-- Mooncloth Vest
@@ -2660,6 +2665,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(19165),	-- Flarecore Leggings
 			i(13871),	-- Frostweave Pants
 			i(14144),	-- Ghostweave Pants
+			i(38278, {	-- Haliscan Pantaloons
+				["timeline"] = { "added 2.4.2.8301" },
+			}),
 			i(4309),	-- Handstitched Linen Britches
 			i(4316),	-- Heavy Woolen Pants
 			i(14137),	-- Mooncloth Leggings

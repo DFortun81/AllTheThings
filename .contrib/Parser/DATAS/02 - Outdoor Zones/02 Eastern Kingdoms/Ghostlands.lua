@@ -563,6 +563,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23921, {	-- Bulging Sack of Silver
 							["timeline"] = { "removed 4.0.3" },
 						}),
+						i(23717, {	-- Pitted Gold Band
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(9145, {	-- Help Ranger Valanna!

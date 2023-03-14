@@ -4,8 +4,10 @@
 root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 	filter(CLOAKS, {
 		i(9938),	-- Abjurer's Cloak
+		i(14116),	-- Aboriginal Cape
 		i(10258),	-- Adventurer's Cape
 		i(13005),	-- Amy's Blanket
+		i(4671),	-- Ancestral Cloak
 		i(15603),	-- Ancient Cloak
 		i(14292),	-- Arachnidian Cape
 		i(8286),	-- Arcane Cloak
@@ -13,25 +15,35 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(6417),	-- Aurora Cloak
 		i(9838),	-- Banded Cloak
 		i(9779),	-- Bandit Cloak
+		i(4686),	-- Barbaric Cloth Cloak
+		i(6555),	-- Bard's Cloak
+		i(4668),	-- Battle Chain Cloak
 		i(6593),	-- Battleforge Cloak
+		i(14088),	-- Beaded Cloak
 		i(13109),	-- Blackflame Cape
 		i(6424),	-- Blackforge Cape
 		i(14801),	-- Bloodlust Cape
-		i(14261),	-- Bloodwoven Cloak
+		i(15490),	-- Bloodspattered Cloak
+		i(14261),	-- Bloodwoven Cloak	
 		i(14300),	-- Bonecaster's Cape
 		i(15611),	-- Bonelink Cape
+		i(4680),	-- Brackwater Cloak
 		i(9929),	-- Brigade Cloak
 		i(6381),	-- Bright Cloak
 		i(14571),	-- Bristlebark Cape
 		i(1774),	-- Brocade Cloak
 		i(14167),	-- Buccaneer's Cape
 		i(4695),	-- Burnished Cloak
+		i(4665),	-- Burnt Cloak
 		i(7533),	-- Cabalist Cloak
+		i(9761),	-- Cadet Cloak
 		i(1497),	-- Calico Cloak
 		i(1766),	-- Canvas Cloak
 		i(7492),	-- Captain's Cloak
 		i(14313),	-- Celestial Cape
+		i(4692),	-- Ceremonial Cloak
 		i(7544),	-- Champion's Cape
+		i(15475),	-- Charger's Cloak
 		i(4726),	-- Chief Brigadier Cloak
 		i(9951),	-- Chieftain's Cloak
 		i(3475),	-- Cloak of Flames
@@ -46,6 +58,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14239),	-- Darkmist Cape
 		i(6575),	-- Defender Cloak
 		i(6604),	-- Dervish Cape
+		i(6514),	-- Disciple's Cloak
 		i(14582),	-- Dokebi Cape
 		i(3811),	-- Double-Stitched Cloak
 		i(9822),	-- Durable Cape
@@ -74,6 +87,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(7524),	-- Gossamer Cape
 		i(15190),	-- Grand Cloak
 		i(9770),	-- Greenweave Cloak
+		i(15299),	-- Grizzly Cape
 		i(15508),	-- Grunt's Cape
 		i(15624),	-- Gryphon Cloak
 		i(3803),	-- Hardened Cloak
@@ -85,6 +99,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(10138),	-- High Councillor's Cloak
 		i(14450),	-- Highborne Cloak
 		i(14745),	-- Hulking Cloak
+		i(4689),	-- Hunting Cloak
 		i(9890),	-- Huntsman's Cape
 		i(68762, {	-- Imbued Cadet Cloak
 			["timeline"] = { "added 4.0.6.13596" },
@@ -112,6 +127,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(8248),	-- Imperial Red Cloak
 		i(15165),	-- Imposing Cape
 		i(14683),	-- Indomitable Cloak
+		i(6508),	-- Infantry Cloak
 		i(7411),	-- Infiltrator Cloak
 		i(4701),	-- Inscribed Cloak
 		i(4722),	-- Insignia Cloak
@@ -120,6 +136,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9794),	-- Ivycloth Cloak
 		i(15392),	-- Jadefire Cloak
 		i(9898),	-- Jazeraint Cloak
+		i(4662),	-- Journeyman's Cloak
 		i(14665),	-- Keeper's Cloak
 		i(14781),	-- Khan's Cloak
 		i(7460),	-- Knight's Cloak
@@ -130,6 +147,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(2644),	-- Loose Chain Cloak
 		i(10079),	-- Lord's Cape
 		i(14251),	-- Lunar Cloak
+		i(15015),	-- Lupine Cloak
 		i(13007),	-- Mageflame Cloak
 		i(15671),	-- Magnificent Cloak
 		i(15568),	-- Marauder's Cloak
@@ -142,9 +160,11 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(8127),	-- Myrmidon's Cape
 		i(10174),	-- Mystical Cape
 		i(14365),	-- Mystic's Cape
+		i(14098),	-- Native Cloak
 		i(10224),	-- Nightshade Cloak
 		i(4719),	-- Nightsky Cloak
 		i(15153),	-- Nocturnal Cloak
+		i(9754),	-- Nomad Cloak
 		i(14280),	-- Opulent Cape
 		i(10120),	-- Ornate Cloak
 		i(15501),	-- Outrunner's Cloak
@@ -156,9 +176,11 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15427),	-- Peerless Cloak
 		i(7419),	-- Phalanx Cloak
 		i(15559),	-- Pillager's Cloak
+		i(6520),	-- Pioneer Cloak
 		i(15173),	-- Potent Cape
 		i(15183),	-- Praetorian Cloak
 		i(14673),	-- Pridelord Cape
+		i(15007),	-- Primal Cape
 		i(14563),	-- Prospector's Cloak
 		i(14791),	-- Protector Cape
 		i(15382),	-- Rageclaw Cloak
@@ -191,6 +213,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(6564),	-- Shimmering Cloak
 		i(14420),	-- Silksand Cape
 		i(4713),	-- Silver-Thread Cloak [CATA+] / Silver-thread Cloak
+		i(9745),	-- Simple Cape
 		i(22782, {	-- Sin'dorei Cloak of Warding
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
@@ -199,8 +222,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		}),
 		i(14752),	-- Slayer's Cape
 		i(3972),	-- Smooth Cloak
+		i(6549),	-- Soldier's Cloak
 		i(9877),	-- Sorcerer Cloak
 		i(15579),	-- Sparkleshell Cloak
+		i(4683),	-- Spellbinder Cloak
 		i(15519),	-- Spiked Chain Cloak
 		i(15594),	-- Steadfast Cloak
 		i(14409),	-- Stonecloth Cape
@@ -214,17 +239,21 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(1806),	-- Tough Cloak
 		i(9919),	-- Tracker's Cloak
 		i(8297),	-- Traveler's Cloak
+		i(4674),	-- Tribal Cloak
 		i(15364),	-- Trickster's Cloak
 		i(15681),	-- Triumphant Cloak
 		i(7436),	-- Twilight Cape
 		i(3947),	-- Twill Cloak
 		i(14440),	-- Venomshroud Cape
+		i(4677),	-- Veteran Cloak
 		i(14210),	-- Vital Cape
 		i(10108),	-- Wanderer's Cloak
 		i(14724),	-- War Paint Cloak
+		i(15483),	-- War Torn Cape
 		i(14602),	-- Warden's Cloak
 		i(9959),	-- Warmonger's Cloak
 		i(1505),	-- Warped Cloak
+		i(4658),	-- Warrior's Cloak
 		i(14813),	-- Warstrike Cape
 		i(14179),	-- Watcher's Cape
 		i(15537),	-- Wicked Chain Cloak
@@ -246,12 +275,18 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9943),	-- Abjurer's Robe
 		i(9945),	-- Abjurer's Sash
 		i(9946),	-- Abjurer's Tunic
+		i(14115),	-- Aboriginal Bands
 		i(14114),	-- Aboriginal Footwraps
 		i(14117),	-- Aboriginal Gloves
 		i(14119),	-- Aboriginal Loincloth
 		i(14120),	-- Aboriginal Robe
 		i(14113),	-- Aboriginal Sash
+		i(14169),	-- Aboriginal Shoulder Pads
 		i(14121),	-- Aboriginal Vest
+		i(4672),	-- Ancestral Belt
+		i(3289),	-- Ancestral Boots
+		i(3642),	-- Ancestral Bracers
+		i(3290),	-- Ancestral Gloves
 		i(6527),	-- Ancestral Robe
 		i(3292),	-- Ancestral Tunic
 		i(3291),	-- Ancestral Woollies
@@ -282,13 +317,19 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(4044),	-- Aurora Pants
 		i(6415),	-- Aurora Robe
 		i(6418),	-- Aurora Sash
+		i(4687),	-- Barbaric Cloth Belt
 		i(3307),	-- Barbaric Cloth Boots
+		i(3644),	-- Barbaric Cloth Bracers
 		i(3308),	-- Barbaric Cloth Gloves
 		i(6531),	-- Barbaric Cloth Robe
 		i(3310),	-- Barbaric Cloth Vest
 		i(3309),	-- Barbaric Loincloth
 		i(14090),	-- Beaded Britches
+		i(14093),	-- Beaded Cord
+		i(14087),	-- Beaded Cuffs
+		i(14089),	-- Beaded Gloves
 		i(14091),	-- Beaded Robe
+		i(14086),	-- Beaded Sandals
 		i(14094),	-- Beaded Wraps
 		i(2800),	-- Black Velvet Robes
 		i(14259),	-- Bloodwoven Boots
@@ -328,6 +369,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14166),	-- Buccaneer's Bracers
 		i(14173),	-- Buccaneer's Cord
 		i(14168),	-- Buccaneer's Gloves
+		i(14170),	-- Buccaneer's Mantle
 		i(14171),	-- Buccaneer's Pants
 		i(14172),	-- Buccaneer's Robes
 		i(14175),	-- Buccaneer's Vest
@@ -398,8 +440,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14246),	-- Darkmist Wizard Hat
 		i(14244),	-- Darkmist Wraps
 		i(12987),	-- Darkweave Breeches
+		i(7351),	-- Disciple's Boots
+		i(7350),	-- Disciple's Bracers
+		i(6515),	-- Disciple's Gloves
 		i(6267),	-- Disciple's Pants
 		i(6512),	-- Disciple's Robe
+		i(6513),	-- Disciple's Sash
 		i(6266),	-- Disciple's Vest
 		i(10404),	-- Durable Belt
 		i(9820),	-- Durable Boots
@@ -577,6 +623,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9798),	-- Ivycloth Robe
 		i(9799),	-- Ivycloth Sash
 		i(9791),	-- Ivycloth Tunic
+		i(4663),	-- Journeyman's Belt
+		i(2959),	-- Journeyman's Boots
+		i(3641),	-- Journeyman's Bracers
+		i(2960),	-- Journeyman's Gloves
 		i(2958),	-- Journeyman's Pants
 		i(6511),	-- Journeyman's Robe
 		i(2957),	-- Journeyman's Vest
@@ -625,11 +675,16 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14366),	-- Mystic's Bracelets
 		i(14367),	-- Mystic's Gloves
 		i(14371),	-- Mystic's Robe
+		i(14368),	-- Mystic's Shoulder Pads
 		i(14364),	-- Mystic's Slippers
 		i(14370),	-- Mystic's Woolies
 		i(14369),	-- Mystic's Wrap
+		i(14095),	-- Native Bands
+		i(14102),	-- Native Handwraps
 		i(14097),	-- Native Pants
 		i(14109),	-- Native Robe
+		i(14110),	-- Native Sandals
+		i(14099),	-- Native Sash
 		i(14096),	-- Native Vest
 		i(2277),	-- Necromancer Leggings
 		i(7111),	-- Nightsky Armor
@@ -654,6 +709,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14160),	-- Pagan Bands
 		i(14164),	-- Pagan Belt
 		i(14165),	-- Pagan Britches
+		i(14157),	-- Pagan Mantle
 		i(14162),	-- Pagan Mitts
 		i(14159),	-- Pagan Shoes
 		i(14158),	-- Pagan Vest
@@ -700,6 +756,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14326),	-- Resplendent Robes
 		i(14324),	-- Resplendent Sarong
 		i(14318),	-- Resplendent Tunic
+		i(14126),	-- Ritual Amice
 		i(14122),	-- Ritual Bands
 		i(14131),	-- Ritual Belt
 		i(14124),	-- Ritual Gloves
@@ -739,10 +796,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(2983),	-- Seer's Boots
 		i(3645),	-- Seer's Cuffs
 		i(2984),	-- Seer's Gloves
+		i(4698),	-- Seer's Mantle
 		i(6561),	-- Seer's Padded Armor
 		i(2982),	-- Seer's Pants
 		i(2981),	-- Seer's Robe
 		i(13144),	-- Serenity Belt
+		i(6566),	-- Shimmering Amice
 		i(6567),	-- Shimmering Armor
 		i(6562),	-- Shimmering Boots
 		i(6563),	-- Shimmering Bracers
@@ -767,9 +826,13 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(4037),	-- Silver-Thread Pants [CATA+] / Silver-thread Pants
 		i(4035),	-- Silver-Thread Robe [CATA+] / Silver-thread Robe
 		i(4714),	-- Silver-Thread Sash [CATA+] / Silver-thread Sash
+		i(9744),	-- Simple Bands
 		i(9749),	-- Simple Blouse
 		i(9747),	-- Simple Britches
+		i(9742),	-- Simple Cord
+		i(9746),	-- Simple Gloves
 		i(9748),	-- Simple Robe
+		i(9743),	-- Simple Shoes
 		i(9879),	-- Sorcerer Bracelets
 		i(9874),	-- Sorcerer Drape
 		i(9880),	-- Sorcerer Gloves
@@ -779,6 +842,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9884),	-- Sorcerer Robe
 		i(9875),	-- Sorcerer Sash
 		i(9876),	-- Sorcerer Slippers
+		i(4684),	-- Spellbinder Belt
+		i(2971),	-- Spellbinder Boots
+		i(3643),	-- Spellbinder Bracers
+		i(2972),	-- Spellbinder Gloves
 		i(2970),	-- Spellbinder Pants
 		i(6528),	-- Spellbinder Robe
 		i(2969),	-- Spellbinder Vest
@@ -886,6 +953,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9780),	-- Bandit Gloves
 		i(9782),	-- Bandit Jerkin
 		i(9781),	-- Bandit Pants
+		i(10405),	-- Bandit Shoulders
 		i(6558),	-- Bard's Belt
 		i(6557),	-- Bard's Boots
 		i(6556),	-- Bard's Bracers
@@ -901,7 +969,11 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14568),	-- Bristlebark Boots
 		i(14574),	-- Bristlebark Britches
 		i(14572),	-- Bristlebark Gloves
+		i(4666),	-- Burnt Leather Belt
+		i(2963),	-- Burnt Leather Boots
+		i(3200),	-- Burnt Leather Bracers
 		i(2962),	-- Burnt Leather Breeches
+		i(2964),	-- Burnt Leather Gloves
 		i(2961),	-- Burnt Leather Vest
 		i(7535),	-- Cabalist Belt
 		i(7531),	-- Cabalist Boots
@@ -911,6 +983,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(7529),	-- Cabalist Helm
 		i(7528),	-- Cabalist Leggings
 		i(7532),	-- Cabalist Spaulders
+		i(3311),	-- Ceremonial Leather Ankleguards
+		i(4693),	-- Ceremonial Leather Belt
+		i(3312),	-- Ceremonial Leather Bracers
 		i(3314),	-- Ceremonial Leather Gloves
 		i(3313),	-- Ceremonial Leather Harness
 		i(3315),	-- Ceremonial Leather Loincloth
@@ -968,6 +1043,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15311),	-- Feral Harness
 		i(15312),	-- Feral Leggings
 		i(15305),	-- Feral Shoes
+		i(15313),	-- Feral Shoulder Pads
 		i(6382),	-- Forest Leather Belt
 		i(3057),	-- Forest Leather Boots
 		i(3202),	-- Forest Leather Bracers
@@ -1001,8 +1077,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15192),	-- Grand Gauntlets
 		i(15194),	-- Grand Legguards
 		i(15693),	-- Grand Shoulders
+		i(15302),	-- Grizzly Belt
+		i(15297),	-- Grizzly Bracers
+		i(15300),	-- Grizzly Gloves
 		i(15304),	-- Grizzly Jerkin
 		i(15303),	-- Grizzly Pants
+		i(15301),	-- Grizzly Slippers
 		i(9756),	-- Gypsy Trousers
 		i(9757),	-- Gypsy Tunic
 		i(3800),	-- Hardened Leather Belt
@@ -1037,6 +1117,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(8122),	-- Heraldic Headpiece
 		i(8123),	-- Heraldic Leggings
 		i(8124),	-- Heraldic Spaulders
+		i(4690),	-- Hunting Belt
+		i(2975),	-- Hunting Boots
+		i(3207),	-- Hunting Bracers
 		i(2976),	-- Hunting Gloves
 		i(2974),	-- Hunting Pants
 		i(2973),	-- Hunting Tunic
@@ -1101,6 +1184,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(2985),	-- Inscribed Leather Breastplate
 		i(2988),	-- Inscribed Leather Gloves
 		i(2986),	-- Inscribed Leather Pants
+		i(4700),	-- Inscribed Leather Spaulders
 		i(6409),	-- Insignia Belt
 		i(4055),	-- Insignia Boots
 		i(6410),	-- Insignia Bracers
@@ -1126,8 +1210,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14668),	-- Keeper's Woolies
 		i(14667),	-- Keeper's Wreath
 		i(15011),	-- Lupine Cord
+		i(15013),	-- Lupine Cuffs
 		i(15016),	-- Lupine Handwraps
 		i(15017),	-- Lupine Leggings
+		i(15019),	-- Lupine Mantle
 		i(15012),	-- Lupine Slippers
 		i(15018),	-- Lupine Vest
 		i(10147),	-- Mighty Armsplints
@@ -1154,6 +1240,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15158),	-- Nocturnal Shoulder Pads
 		i(15159),	-- Nocturnal Tunic
 		i(15160),	-- Nocturnal Wristbands
+		i(9752),	-- Nomad Bands
+		i(9755),	-- Nomad Gloves
+		i(9751),	-- Nomad Sandals
+		i(9750),	-- Nomad Sash
 		i(13117),	-- Ogron's Sash
 		i(1787),	-- Patched Leather Belt
 		i(1788),	-- Patched Leather Boots
@@ -1178,6 +1268,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15430),	-- Peerless Headband
 		i(15431),	-- Peerless Leggings
 		i(15432),	-- Peerless Shoulders
+		i(6517),	-- Pioneer Belt
+		i(6518),	-- Pioneer Boots
+		i(6519),	-- Pioneer Bracers
+		i(6521),	-- Pioneer Gloves
 		i(6269),	-- Pioneer Trousers
 		i(6268),	-- Pioneer Tunic
 		i(15170),	-- Potent Armor
@@ -1204,7 +1298,11 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14676),	-- Pridelord Halo
 		i(14677),	-- Pridelord Pants
 		i(14678),	-- Pridelord Pauldrons
+		i(15005),	-- Primal Bands
+		i(15003),	-- Primal Belt
+		i(15004),	-- Primal Boots
 		i(15009),	-- Primal Leggings
+		i(15008),	-- Primal Mitts
 		i(15010),	-- Primal Wraps
 		i(14560),	-- Prospector's Boots
 		i(14562),	-- Prospector's Chestpiece
@@ -1293,6 +1391,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(6582),	-- Scouting Boots
 		i(6583),	-- Scouting Bracers
 		i(6586),	-- Scouting Gloves
+		i(6588),	-- Scouting Spaulders
 		i(6587),	-- Scouting Trousers
 		i(6584),	-- Scouting Tunic
 		i(7444),	-- Sentinel Boots
@@ -1379,6 +1478,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(8296),	-- Traveler's Jerkin
 		i(8300),	-- Traveler's Leggings
 		i(8301),	-- Traveler's Spaulders
+		i(4675),	-- Tribal Belt
+		i(3284),	-- Tribal Boots
+		i(3285),	-- Tribal Bracers
+		i(3286),	-- Tribal Gloves
 		i(3287),	-- Tribal Pants
 		i(3288),	-- Tribal Vest
 		i(15360),	-- Trickster's Bindings
@@ -1453,6 +1556,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(10408),	-- Banded Helm
 		i(9841),	-- Banded Leggings
 		i(9842),	-- Banded Pauldrons
+		i(3279),	-- Battle Chain Boots
+		i(3280),	-- Battle Chain Bracers
+		i(4669),	-- Battle Chain Girdle
+		i(3281),	-- Battle Chain Gloves
 		i(3282),	-- Battle Chain Pants
 		i(3283, {	-- Battle Chain Tunic
 			["timeline"] = { "removed 6.1.0.19445" },
@@ -1489,6 +1596,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15493),	-- Bloodspattered Loincloth
 		i(15489),	-- Bloodspattered Sabatons
 		i(15492),	-- Bloodspattered Sash
+		i(15496),	-- Bloodspattered Shoulder Pads
 		i(15488),	-- Bloodspattered Surcoat
 		i(15495),	-- Bloodspattered Wristbands
 		i(15609),	-- Bonelink Armor
@@ -1500,6 +1608,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15616),	-- Bonelink Legplates
 		i(15614),	-- Bonelink Sabatons
 		i(3302),	-- Brackwater Boots
+		i(3303),	-- Brackwater Bracers
+		i(3304),	-- Brackwater Gauntlets
+		i(4681),	-- Brackwater Girdle
 		i(3305, {	-- Brackwater Leggings
 			["timeline"] = { "removed 6.1.0.19445" },
 		}),
@@ -1520,6 +1631,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(4697),	-- Burnished Girdle
 		i(2992),	-- Burnished Gloves
 		i(2990),	-- Burnished Leggings
+		i(4694),	-- Burnished Pauldrons
 		i(2989),	-- Burnished Tunic
 		i(54784, {	-- Burnished Tunic
 			-- #if AFTER 6.0.1
@@ -1527,6 +1639,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			-- #endif
 			["timeline"] = { "created 4.0.1.12941", "added 6.0.1", "removed 7.0.1" },
 		}),
+		i(9758),	-- Cadet Belt
+		i(9759),	-- Cadet Boots
+		i(9760),	-- Cadet Bracers
+		i(9762),	-- Cadet Gauntlets
 		i(9763),	-- Cadet Leggings
 		i(9765),	-- Cadet Vest
 		i(7490),	-- Captain's Boots
@@ -1546,6 +1662,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(7539),	-- Champion's Leggings
 		i(7543),	-- Champion's Pauldrons
 		i(15479),	-- Charger's Armor
+		i(15472),	-- Charger's Belt
+		i(15474),	-- Charger's Bindings
+		i(15473),	-- Charger's Boots
+		i(15476),	-- Charger's Handwraps
 		i(15477),	-- Charger's Pants
 		i(6411),	-- Chief Brigadier Armor
 		i(6412),	-- Chief Brigadier Boots
@@ -1569,6 +1689,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(6577),	-- Defender Gauntlets
 		i(6576),	-- Defender Girdle
 		i(6578),	-- Defender Leggings
+		i(6579),	-- Defender Spaulders
 		i(6580),	-- Defender Tunic
 		i(3808),	-- Double Mail Belt
 		i(3809),	-- Double Mail Boots
@@ -1705,6 +1826,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15665),	-- Impenetrable Legguards
 		i(15666),	-- Impenetrable Pauldrons
 		i(15658),	-- Impenetrable Sabatons
+		i(6509),	-- Infantry Belt
+		i(6506),	-- Infantry Boots
+		i(6507),	-- Infantry Bracers
+		i(6510),	-- Infantry Gauntlets
 		i(6337),	-- Infantry Leggings
 		i(6336),	-- Infantry Tunic
 		i(15641),	-- Ironhide Belt
@@ -1852,6 +1977,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15499),	-- Outrunner's Cuffs
 		i(15502),	-- Outrunner's Gloves
 		i(15503),	-- Outrunner's Legguards
+		i(15505),	-- Outrunner's Pauldrons
 		i(15498),	-- Outrunner's Slippers
 		i(4007),	-- Overlinked Chain Armor
 		i(4000),	-- Overlinked Chain Belt
@@ -1892,6 +2018,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9783),	-- Raider's Chestpiece
 		i(9787),	-- Raider's Gauntlets
 		i(9789),	-- Raider's Legguards
+		i(10407),	-- Raider's Shoulderpads
 		i(14770),	-- Ravager's Armguards
 		i(14768),	-- Ravager's Armor
 		i(14773),	-- Ravager's Cord
@@ -1989,6 +2116,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15686),	-- Triumphant Shoulder Pads
 		i(15684),	-- Triumphant Skullcap
 		i(2977),	-- Veteran Armor
+		i(2979),	-- Veteran Boots
+		i(3213),	-- Veteran Bracers
+		i(4678),	-- Veteran Girdle
 		i(2980),	-- Veteran Gloves
 		i(2978),	-- Veteran Leggings [CRIEVE NOTE: This might be in a similar situation to the two other mail items that were swapped out.]
 		i(120953, {	-- Veteran Legguards
@@ -1999,7 +2129,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14730),	-- War Paint Chestpiece
 		i(14726),	-- War Paint Gloves
 		i(14727),	-- War Paint Legguards
+		i(14728),	-- War Paint Shoulder Pads
 		i(14725),	-- War Paint Waistband
+		i(15482),	-- War Torn Bands
+		i(15480),	-- War Torn Girdle
+		i(15481),	-- War Torn Greaves
+		i(15484),	-- War Torn Handgrips
 		i(15485),	-- War Torn Pants
 		i(15487),	-- War Torn Tunic
 		i(9961),	-- Warmonger's Belt
@@ -2010,6 +2145,10 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(9962),	-- Warmonger's Greaves
 		i(9964),	-- Warmonger's Leggings
 		i(9965),	-- Warmonger's Pauldrons
+		i(2967),	-- Warrior's Boots
+		i(3214),	-- Warrior's Bracers
+		i(4659),	-- Warrior's Girdle
+		i(2968),	-- Warrior's Gloves
 		i(2966),	-- Warrior's Pants
 		i(2965),	-- Warrior's Tunic
 		i(14810),	-- Warstrike Armsplints
