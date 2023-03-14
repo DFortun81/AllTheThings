@@ -161,6 +161,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					currency(2118),	-- Elemental Overflow
 				},
 			}),
+			q(74118, {	-- Spelunking the Den
+				["sourceQuests"] = { 74908 },	-- New Adventures
+				["provider"] = { "n", 200566 },	-- Cataloger Daela
+				["coord"] = { 34.3, 60.0, THE_FORBIDDEN_REACH },
+				["isDaily"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
 			-- Iskaara
 			q(74909, {	-- New Catches
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
@@ -198,10 +207,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					currency(2118),	-- Elemental Overflow
 				},
 			}),
+			q(74117, {	-- Rare Prey
+				["sourceQuests"] = { 74910 },	-- New Foes
+				["provider"] = { "n", 200564 },	-- Storykeeper Ashekh
+				["coord"] = { 34.1, 59.9, THE_FORBIDDEN_REACH },
+				["isDaily"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
+			}),
 			-- Valdrakken
 			q(74911, {	-- New Horizons
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["coord"] = { 34.2, 59.9, THE_FORBIDDEN_REACH },
+			}),
+			q(75261, {	-- Reach Center
+				["sourceQuests"] = { 74911 },	-- New Horizons
+				["provider"] = { "n", 200563 },	-- Kraxxus
+				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+				["isDaily"] = true,
+				["g"] = {
+					currency(2118),	-- Elemental Overflow
+				},
 			}),
 			q(74392, {	-- Reach South
 				["sourceQuests"] = { 74911 },	-- New Horizons
