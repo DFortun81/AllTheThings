@@ -33,15 +33,44 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				applyclassicphase(WRATH_PHASE_TWO, ach(17283, {	-- Defense Protocol Alpha: The Nexus
 					crit(57690, { -- Grand Magus Telestra
 						["_encounter"] = { 618, 2 },
+						["groups"] = {
+							i(39393),	-- Claymore of Ancient Power
+							i(39388),	-- Spirit-World Glass
+							i(39397),	-- Pauldrons of Havoc
+						},
 					}),
 					crit(57688, { -- Anomalus
 						["_encounter"] = { 619, 2 },
+						["groups"] = {
+							i(39407),	-- Circle of Life
+							i(39396),	-- Gown of Blaumeux
+							i(39386),	-- Tunic of Dislocation
+						},
 					}),
 					crit(57687, { -- Ormorok the Tree-Shaper
 						["_encounter"] = { 620, 2 },
+						["groups"] = {
+							i(39389),	-- Signet of the Malevolent
+							i(39395),	-- Thane's Tainted Greathelm
+							i(39391),	-- Heinous Mail Chestguard
+						},
 					}),
 					crit(57689, { -- Keristrasza
 						["_encounter"] = { 621, 2 },
+						["groups"] = {
+							i(39306),	-- Plated Gloves of Relief
+							i(39422),	-- Staff of the Plaguehound
+							i(44657),	-- Torque of the Red Dragonflight
+							i(40616),	-- Helm of the Lost Conqueror
+							i(40617),	-- Helm of the Lost Protector
+							i(40618),	-- Helm of the Lost Vanquisher
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
+						},
 					}),
 				})),
 				-- #endif
@@ -249,24 +278,40 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 					}),
 					-- #endif
-					e(833, {	-- Commander Stoutbeard
-						["creatureID"] = 26798,	-- Commander Stoutbeard
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(37728),	-- Cloak of the Enemy
-							i(37729),	-- Grips of Sculptured Icicles
-							i(37731),	-- Opposed Stasis Leggings
-							i(37730),	-- Cleric's Linen Shoes
+					header(HEADERS.Achievement, 435, {	-- Commander
+						-- This is a smart header that will change itself to the faction specific version on initial load.
+						["crs"] = {
+							26798,	-- Commander Stoutbeard
+							26796,	-- Commander Kolurg
 						},
-					}),
-					e(617, {	-- Commander Kolurg
-						["creatureID"] = 26796,	-- Commander Kolurg
-						["races"] = HORDE_ONLY,
+						["OnUpdate"] = [[function(t)
+							t.crs = nil;
+							t.OnUpdate = nil;
+							if _.FactionID == Enum.FlightPathFaction.Horde then
+								t.npcID = 26796;
+								t.encounterID = 617;
+							else
+								t.npcID = 26798;
+								t.encounterID = 833;
+							end
+							if EJ_GetEncounterInfo then
+								setmetatable(t, _.BaseEncounter);
+							else
+								setmetatable(t, _.BaseNPC);
+							end
+						end]],
 						["groups"] = {
 							i(37728),	-- Cloak of the Enemy
 							i(37729),	-- Grips of Sculptured Icicles
 							i(37731),	-- Opposed Stasis Leggings
 							i(37730),	-- Cleric's Linen Shoes
+							-- #if ANYCLASSIC
+							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
+								i(39394),	-- Charmed Cierge
+								i(39398),	-- Massive Skeletal Ribcage
+								i(39390),	-- Resurgent Phantom Bindings
+							})),
+							-- #endif
 						},
 					}),
 					e(618, {	-- Grand Magus Telestra

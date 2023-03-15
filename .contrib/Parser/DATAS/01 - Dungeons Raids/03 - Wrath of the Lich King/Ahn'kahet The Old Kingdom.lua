@@ -31,20 +31,54 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17291, {	-- Defense Protocol Alpha: Ahn'kahet: The Old Kingdom
-					crit(57733, { -- Prince Taldaram
-						["_encounter"] = { 581, 2 },
-					}),
 					crit(57731, { -- Elder Nadox
 						["_encounter"] = { 580, 2 },
+						["groups"] = {
+							i(39249),	-- Shoulderplates of Bloodshed
+							i(39255),	-- Staff of the Plague Beast
+							i(39263),	-- Dissevered Leggings
+						},
 					}),
-					crit(57732, { -- Jedoga Shadowseeker
-						["_encounter"] = { 582, 2 },
-					}),
-					crit(57730, { -- Herald Volazj
-						["_encounter"] = { 584, 2 },
+					crit(57733, { -- Prince Taldaram
+						["_encounter"] = { 581, 2 },
+						["groups"] = {
+							i(39260),	-- Helm of the Corrupted Mind
+							i(39247),	-- Cuffs of Dark Shadows
+							i(39251),	-- Necrogenic Belt
+						},
 					}),
 					crit(57734, { -- Amanitar
 						["_encounter"] = { 583, 2 },
+						["groups"] = {
+							i(39247),	-- Cuffs of Dark Shadows
+							i(39260),	-- Helm of the Corrupted Mind
+							i(39251),	-- Necrogenic Belt
+						},
+					}),
+					crit(57732, { -- Jedoga Shadowseeker
+						["_encounter"] = { 582, 2 },
+						["groups"] = {
+							i(39246),	-- Amulet of Autopsy
+							i(39250),	-- Ring of Holy Cleansing
+							i(39258),	-- Legplates of Inescapable Death
+						},
+					}),
+					crit(57730, { -- Herald Volazj
+						["_encounter"] = { 584, 2 },
+						["groups"] = {
+							i(43998),	-- Chestguard of Flagrant Prowess
+							i(39417),	-- Death's Bite
+							i(40486),	-- Necklace of the Glittering Chamber
+							i(40616),	-- Helm of the Lost Conqueror
+							i(40617),	-- Helm of the Lost Protector
+							i(40618),	-- Helm of the Lost Vanquisher
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
+						},
 					}),
 				})),
 				-- #endif

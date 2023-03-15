@@ -33,15 +33,44 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				applyclassicphase(WRATH_PHASE_TWO, ach(17297, {	-- Defense Protocol Alpha: Halls of Stone
 					crit(57752, { -- Maiden of Grief
 						["_encounter"] = { 605, 2 },
-					}),
-					crit(57748, { -- Sjonnir the Ironshaper
-						["_encounter"] = { 607, 2 },
-					}),
-					crit(57751, { -- Tribunal of Ages
-						["_encounter"] = { 606, 2 },
+						["groups"] = {
+							i(39215),	-- Boots of the Follower
+							i(39216),	-- Sash of Mortal Desire
+							i(39196),	-- Boots of the Worshiper
+						},
 					}),
 					crit(57749, { -- Krystallus
 						["_encounter"] = { 604, 2 },
+						["groups"] = {
+							i(39195),	-- Bracers of Lost Sentiments
+							i(39199),	-- Watchful Eye
+							i(39198),	-- Frostblight Pauldrons
+						},
+					}),
+					crit(57751, { -- Tribunal of Ages
+						["_encounter"] = { 606, 2 },
+						["groups"] = {
+							i(39197),	-- Gauntlets of the Master
+							i(39200),	-- Grieving Spellblade
+							i(39193),	-- Band of Neglected Pleas
+						},
+					}),
+					crit(57748, { -- Sjonnir the Ironshaper
+						["_encounter"] = { 607, 2 },
+						["groups"] = {
+							i(43993),	-- Greatring of Collision
+							i(40489),	-- Greatstaff of the Nexus
+							i(44659),	-- Pendant of the Dragonsworn
+							i(40616),	-- Helm of the Lost Conqueror
+							i(40617),	-- Helm of the Lost Protector
+							i(40618),	-- Helm of the Lost Vanquisher
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
+						},
 					}),
 				})),
 				-- #endif
