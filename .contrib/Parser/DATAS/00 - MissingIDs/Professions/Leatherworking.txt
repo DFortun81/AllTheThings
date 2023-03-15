@@ -174,7 +174,6 @@ r(309293),	-- Bonerivetted Armguards \\ Necrolord Scale Armguards
 9.0.1.35167
 r(338261),	-- Almost Thing
 10.0.7.47910
-r(400814),	-- Reinforced Pristine Leather \\ Reinforced Leather Patch \\ [PH] Repaired Leatherworking Item
 r(402143),	-- Animist's Footwraps
 r(402144),	-- Animist's Legguards
 r(402146),	-- Gloves of the Tormentor
@@ -1913,15 +1912,6 @@ r(355354),	-- Elusive Pet Treat
 r(359662),	-- Crafter's Mark IV
 r(359669),	-- Crafter's Mark of the First Ones
 r(359702),	-- Vestige of the Eternal
-10.0.7.47910
-r(400814),	-- Reinforced Pristine Leather \\ Reinforced Leather Patch \\ [PH] Repaired Leatherworking Item
-r(402143),	-- Animist's Footwraps
-r(402144),	-- Animist's Legguards
-r(402146),	-- Gloves of the Tormentor
-r(402147),	-- Junglefury Gauntlets
-r(402148),	-- Junglefury Leggings
-r(402150),	-- Gurubashi's Grasp
-r(402615),	-- Cord of Shriveled Heads
 10.1.0.48480
 r(403133),	-- Obsidian Combatant's Resilient Mask
 r(403134),	-- Obsidian Combatant's Resilient Chestpiece

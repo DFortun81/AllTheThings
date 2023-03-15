@@ -117,7 +117,6 @@ r(322644),	-- Sinsteel Shanker
 r(322645),	-- Sinsteel Spear
 r(322646),	-- Sinsteel Warglaive
 10.0.7.47910
-r(400808),	-- Ancient Ceremonial Trident \\ Ceremonial Trident
 r(402118),	-- Gurubashi Headplate
 r(402123),	-- Gurubashi Carver
 r(402124),	-- Venomfang
@@ -142,34 +141,17 @@ r(403162),	-- Obsidian Combatant's Draconium Helm
 r(403163),	-- Obsidian Combatant's Draconium Pauldrons
 r(403164),	-- Obsidian Combatant's Draconium Sabatons
 r(403165),	-- Obsidian Combatant's Draconium Waistguard
-r(408282),	-- Hellsteel Alloy
-r(408283),	-- [DNT] Hellsteel Bunker Buster
-r(408288),	-- Hellsteel Belt Buckle
+r(408282),	-- Shadowed Alloy \\ Hellsteel Alloy
+r(408283),	-- Shadowed Razing Annihilator \\ [DNT] Hellsteel Bunker Buster
+r(408288),	-- Shadowed Belt Buckle \\ Hellsteel Belt Buckle
 r(408299),	-- Heat-Resistant Rescue Ring
-r(408326),	-- Hellsteel Impact Buckler
+r(408326),	-- Shadowed Impact Buckler \\ Hellsteel Impact Buckler
 
 
 
 
 Missing in BlacksmithingItemDB.lua
 
-10.0.7.47910
-r(400808),	-- Ancient Ceremonial Trident \\ Ceremonial Trident
-r(402118),	-- Gurubashi Headplate
-r(402123),	-- Gurubashi Carver
-r(402124),	-- Venomfang
-r(402125),	-- Gurubashi Poker
-r(402126),	-- Gurubashi Grinder
-r(402128),	-- Gurubashi Hexxer
-r(402129),	-- Sceptre of Hexing
-r(402130),	-- Gurubashi Crusher
-r(402131),	-- Pitchfork of Mojo Madness
-r(402133),	-- Venomreaver
-r(402134),	-- Bloodherald
-r(402135),	-- Bloodlord's Reaver
-r(402136),	-- Fiery Vengeance
-r(402137),	-- Warblades of the Hakkari, Reborn
-r(402138),	-- Gurubashi Slicer
 10.1.0.48480
 r(403158),	-- Obsidian Combatant's Draconium Armguards
 r(403159),	-- Obsidian Combatant's Draconium Breastplate
@@ -179,8 +161,8 @@ r(403162),	-- Obsidian Combatant's Draconium Helm
 r(403163),	-- Obsidian Combatant's Draconium Pauldrons
 r(403164),	-- Obsidian Combatant's Draconium Sabatons
 r(403165),	-- Obsidian Combatant's Draconium Waistguard
-r(408282),	-- Hellsteel Alloy
-r(408283),	-- [DNT] Hellsteel Bunker Buster
-r(408288),	-- Hellsteel Belt Buckle
+r(408282),	-- Shadowed Alloy \\ Hellsteel Alloy
+r(408283),	-- Shadowed Razing Annihilator \\ [DNT] Hellsteel Bunker Buster
+r(408288),	-- Shadowed Belt Buckle \\ Hellsteel Belt Buckle
 r(408299),	-- Heat-Resistant Rescue Ring
-r(408326),	-- Hellsteel Impact Buckler
+r(408326),	-- Shadowed Impact Buckler \\ Hellsteel Impact Buckler

@@ -1709,6 +1709,104 @@ root(ROOTS.Unsorted, {
 				i(205179),	-- Glimmerfish Scale
 				i(205185),	-- Muddy Key
 				i(205186),	-- Sticky Key
+				i(202171),	-- Obsidian Flightstone
+				i(202610),	-- Dragonfire Bomb Dispenser
+				i(203963),	-- Beacon to the Beyond
+				i(204081),	-- Shredderizing Glove
+				i(204082),	-- Sappy Buddy
+				i(204086),	-- S.C.A.N.N.E.R. Mk3
+				i(204091),	-- Rocket Shredder 9001
+				i(204183),	-- Volatile Self-Driving Toolbox
+				i(204462),	-- Dracothyst Shard
+				i(204721),	-- Whelpling's Small Chest
+				i(204722),	-- Whelpling's Bountiful Chest
+				i(204723),	-- Whelpling's Hefty Chest
+				i(204724),	-- Drake's Small Chest
+				i(204725),	-- Drake's Hefty Chest
+				i(204726),	-- Drake's Bountiful Chest
+				i(204798),	-- Inferno Armoredon
+				i(204994),	-- Shadowed Alloy
+				i(204995),	-- Shadowed Alloy
+				i(204996),	-- Shadowed Alloy
+				i(205039),	-- Shadowed Belt Buckle
+				i(205040),	-- Shadowed Belt Buckle
+				i(205041),	-- Shadowed Belt Buckle
+				i(205042),	-- Shadowed Belt Buckle
+				i(205043),	-- Shadowed Belt Buckle
+				i(205044),	-- Shadowed Belt Buckle
+				i(205046),	-- Shadowed Razing Annihilator
+				i(205047),	-- Shadowed Impact Buckler
+				i(205048),	-- Shadowed Impact Buckler
+				i(205049),	-- Shadowed Impact Buckler
+				i(205050),	-- Paulie
+				i(205051),	-- Rango
+				i(205119),	-- Bashful
+				i(205121),	-- Tricky
+				i(205123),	-- Brulee
+				i(205137),	-- Plans: Shadowed Alloy
+				i(205142),	-- Pattern: Enormous Ball of Yarn
+				i(205143),	-- Plans: Shadowed Belt Buckle
+				i(205144),	-- Plans: Shadowed Razing Annihilator
+				i(205145),	-- Plans: Shadowed Impact Buckler
+				i(205168),	-- Shadowed Impact Buckler
+				i(205187),	-- Artisan's Consortium Flier
+				i(205188),	-- Barter Boulder
+				i(205189),	-- Arclight Welcome Letter
+				i(205190),	-- Arclight Welcome Letter
+				i(205191),	-- Underlight Globe
+				i(205192),	-- Volatile Crystal Shard
+				i(205193),	-- Sturdy Deepflayer Scute
+				i(205194),	-- Fractured Crystalspine Quill
+				i(205195),	-- Drakeforged Magma Charm
+				i(205196),	-- Zaqali Hand Cauldron
+				i(205197),	-- Sporebat, Fire (Red) [PH]
+				i(205198),	-- Detailed Titan Key
+				i(205200),	-- Stirring Twilight Ember
+				i(205201),	-- Smoldering Howler Horn
+				i(205202),	-- Bright Titan Key
+				i(205203),	-- Api Biru Sporebat
+				i(205204),	-- Flaming sporebat - Subject  01
+				i(205205),	-- Sporebat, Fire (DeepRed) [PH]
+				i(205206),	-- Sporebat, Fire (Yellow) [PH]
+				i(205207),	-- Sporebat, Stone (Black) [PH]
+				i(205208),	-- Sporebat, Stone (Orange) [PH]
+				i(205209),	-- Sporebat, Stone (Red) [PH]
+				i(205211),	-- Nutrient Diluted Protofluid
+				i(205212),	-- Marrow-Ripened Slime
+				i(205213),	-- Suspicious Mold
+				i(205214),	-- Snubbed Snail Shells
+				i(205216),	-- Gently Jostled Jewels
+				i(205217),	-- Sharpbeaks Feed
+				i(205219),	-- Broken Barter Boulder
+				i(205220),	-- Corroded Key
+				i(205225),	-- Aspects' Token of Merit
+				i(205226),	-- Cavern Racer's Purse
+				i(205229),	-- Magma Lure
+				i(205231),	-- Roggy
+				i(205232),	-- [DNT] REUSE
+				i(205234),	-- Soiled Key
+				i(205235),	-- Hound Paw
+				i(205236),	-- Long-Toed Talon
+				i(205237),	-- Pristine Beast Fur
+				i(205238),	-- Rain-soaked Feather
+				i(205239),	-- Fluffy Ear
+				i(205240),	-- Wooden Eagle Statue
+				i(205241),	-- Bone Necklace
+				i(205242),	-- Serrated Stone
+				i(205243),	-- Spare Bow String
+				i(205244),	-- Rain-soaked pelt
+				i(205245),	-- Vicious War Snail
+				i(205246),	-- Vicious War Snail
+				i(205247),	-- Clinking Dirt-Covered Pouch
+				i(205248),	-- Clanging Dirt-Covered Pouch
+				i(205249),	-- Pungent Niffen Incense
+				i(205250),	-- Gift of the High Redolence
+				i(205251),	-- Champion's Rock Bar
+				i(205252),	-- Momento of Rekindled Bonds
+				i(205253),	-- Farmhand's Abundant Harvest
+				i(205254),	-- Honorary Explorer's Compass
+				i(205255),	-- Niffen Diggin' Mits
+				i(205256),	-- Satchel of Pilfered Recipes
 			}),
 			n(QUESTS, {
 				-- 10.1.0.48480
@@ -2361,6 +2459,42 @@ root(ROOTS.Unsorted, {
 				q(75619),
 				q(75620),
 				q(75621),
+				-- 10.1.0.48537
+				q(75156),
+				q(75222),
+				q(75370),
+				q(75441),
+				q(75471),
+				q(75622),
+				q(75627),
+				q(75628),
+				q(75629),
+				q(75630),
+				q(75631),
+				q(75640),
+				q(75641),
+				q(75642),
+				q(75643),
+				q(75644),
+				q(75645),
+				q(75646),
+				q(75647),
+				q(75648),
+				q(75649),
+				q(75650),
+				q(75651),
+				q(75652),
+				q(75653),
+				q(75654),
+				q(75658),
+				q(75660),
+				q(75661),
+				q(75662),
+				q(75663),
+				q(75665),
+				q(75666),
+				q(75680),
+				q(75694),
 			}),
 		})),
 		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {

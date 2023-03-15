@@ -130,7 +130,7 @@ Throw a snowball at Baine Bloodhoof during the Feast of Winter Veil.,Scrooge,,25
 Create 12 Lovely Charm Bracelets.,Charming,,260,-1,-1,0,187,0,10,0,2,133334,0,2103,0,0
 Slay Ahune in the Slave Pens.,Ice the Frost Lord,,263,-1,-1,0,161,1,10,0,1,135861,0,5612,0,0
 Dance at the ribbon pole for 60 seconds while wearing completed Midsummer set.,Burning Hot Pole Dance,,271,-1,-1,0,161,0,10,0,2,236216,0,7608,0,0
-Juggle 40 torches in 15 seconds in Dalaran.,Torch Juggler,,272,-1,-1,0,161,0,10,0,43,135433,0,2097,0,0
+Juggle 40 torches in 15 seconds in Dalaran.,Torch Juggler,,272,-1,-1,0,161,0,10,0,45,135433,0,2097,0,0
 Save Metzen the Reindeer.,On Metzen!,,273,-1,-1,0,156,1,10,0,1,236707,0,5556,0,0
 "Acquire Egbert's Egg, Sleepy Willy, and Elekk Training Collar.",Veteran Nanny,,275,-1,-1,0,163,0,50,131072,7,134505,0,3662,0,0
 "During the Feast of Winter Veil, wear 3 pieces of winter clothing and eat Graccu's Mince Meat Fruitcake.",'Tis the Season,,277,-1,-1,0,156,0,10,0,6,132934,0,4076,0,0
@@ -625,19 +625,19 @@ Collect 25 tabard slot appearances.,Twenty-Five Tabards,Reward: Tabard of the Ac
 Honor the flames of Eastern Kingdoms.,Flame Warden of Eastern Kingdoms,,1022,-1,1,0,161,0,10,0,5,135265,0,3948,0,0
 Honor the flames of Kalimdor.,Flame Warden of Kalimdor,,1023,-1,1,0,161,0,10,0,6,135265,0,103,0,0
 Honor the flames of Outland.,Flame Warden of Outland,,1024,530,1,0,161,0,10,0,8,135265,0,1821,0,0
-Honor the flames of Eastern Kingdoms.,Flame Keeper of Eastern Kingdoms,,1025,-1,0,0,161,0,10,0,25,135265,0,7316,0,0
-Honor the flames of Kalimdor.,Flame Keeper of Kalimdor,,1026,-1,0,0,161,0,10,0,26,135265,0,12374,0,0
-Honor the flames of Outland.,Flame Keeper of Outland,,1027,530,0,0,161,0,10,0,28,135265,0,1830,0,0
-Desecrate the Horde's bonfires in Eastern Kingdoms.,Extinguishing Eastern Kingdoms,,1028,-1,1,0,161,0,10,0,15,135820,0,1242,0,0
-Desecrate the Horde's bonfires in Kalimdor.,Extinguishing Kalimdor,,1029,-1,1,0,161,0,10,0,16,135820,0,7330,0,0
-Desecrate the Horde's bonfires in Outland.,Extinguishing Outland,,1030,-1,1,0,161,0,10,0,18,135820,0,3925,0,0
-Desecrate the Alliance's bonfires in Eastern Kingdoms.,Extinguishing Eastern Kingdoms,,1031,-1,0,0,161,0,10,0,34,135820,0,1256,0,0
-Desecrate the Alliance's bonfires in Kalimdor.,Extinguishing Kalimdor,,1032,-1,0,0,161,0,10,0,35,135820,0,1435,0,0
-Desecrate the Alliance's bonfires in Outland.,Extinguishing Outland,,1033,-1,0,0,161,0,10,0,37,135820,0,2029,0,0
+Honor the flames of Eastern Kingdoms.,Flame Keeper of Eastern Kingdoms,,1025,-1,0,0,161,0,10,0,26,135265,0,7316,0,0
+Honor the flames of Kalimdor.,Flame Keeper of Kalimdor,,1026,-1,0,0,161,0,10,0,27,135265,0,12374,0,0
+Honor the flames of Outland.,Flame Keeper of Outland,,1027,530,0,0,161,0,10,0,29,135265,0,1830,0,0
+Desecrate the Horde's bonfires in Eastern Kingdoms.,Extinguishing Eastern Kingdoms,,1028,-1,1,0,161,0,10,0,16,135820,0,1242,0,0
+Desecrate the Horde's bonfires in Kalimdor.,Extinguishing Kalimdor,,1029,-1,1,0,161,0,10,0,17,135820,0,7330,0,0
+Desecrate the Horde's bonfires in Outland.,Extinguishing Outland,,1030,-1,1,0,161,0,10,0,19,135820,0,3925,0,0
+Desecrate the Alliance's bonfires in Eastern Kingdoms.,Extinguishing Eastern Kingdoms,,1031,-1,0,0,161,0,10,0,36,135820,0,1256,0,0
+Desecrate the Alliance's bonfires in Kalimdor.,Extinguishing Kalimdor,,1032,-1,0,0,161,0,10,0,37,135820,0,1435,0,0
+Desecrate the Alliance's bonfires in Outland.,Extinguishing Outland,,1033,-1,0,0,161,0,10,0,39,135820,0,2029,0,0
 Complete the Flame Warden achievements.,The Fires of Azeroth,,1034,-1,1,0,161,0,10,131072,12,135807,0,4549,0,0
-Complete all Extinguishing achievements.,Desecration of the Horde,,1035,-1,1,0,161,0,10,131072,22,135820,0,2484,0,0
-Complete the Flame Keeper achievements.,The Fires of Azeroth,,1036,-1,0,0,161,0,10,131072,32,135807,0,515,0,0
-Complete all Extinguishing achievements.,Desecration of the Alliance,,1037,-1,0,0,161,0,10,131072,42,135820,0,5300,0,0
+Complete all Extinguishing achievements.,Desecration of the Horde,,1035,-1,1,0,161,0,10,131072,23,135820,0,2484,0,0
+Complete the Flame Keeper achievements.,The Fires of Azeroth,,1036,-1,0,0,161,0,10,131072,34,135807,0,515,0,0
+Complete all Extinguishing achievements.,Desecration of the Alliance,,1037,-1,0,0,161,0,10,131072,44,135820,0,5300,0,0
 Complete the Midsummer achievements listed below.,The Flame Warden,Title Reward: Flame Warden,1038,-1,1,0,155,0,20,131072,5,135268,0,6199,0,0
 Complete the Midsummer achievements listed below.,The Flame Keeper,Title Reward: Flame Keeper,1039,-1,0,0,155,0,20,131072,6,135269,0,1623,0,0
 Ruin Hallow's End for the Horde and foil their attempts to wreck the Alliance celebration by completing the following quests.,Rotten Hallow,,1040,-1,1,0,158,0,10,0,8,236549,0,5735,0,0
@@ -2462,14 +2462,14 @@ Engage the Echo of Tyrande in End Time on Heroic Difficulty after surviving her 
 Achieved Vicious Gladiator title.,Vicious Gladiator,,6002,-1,-1,0,15270,0,0,2048,113,236542,0,20584,0,0
 Obtain the Vicious Gladiator's Twilight Drake from Arena Season 9 of Cataclysm.,Vicious Gladiator's Twilight Drake,,6003,-1,-1,0,15269,1,0,133120,26,236235,0,20308,0,0
 Honor the Elders which are located in zones opened by the cataclysm.,Elders of Cataclysm,,6006,-1,-1,0,160,0,10,0,10,135982,0,20587,0,0
-Desecrate the Horde's bonfires in Northrend.,Extinguishing Northrend,,6007,-1,1,0,161,0,10,0,17,135820,0,20701,0,0
+Desecrate the Horde's bonfires in Northrend.,Extinguishing Northrend,,6007,-1,1,0,161,0,10,0,18,135820,0,20701,0,0
 Honor the flames of Northrend.,Flame Warden of Northrend,,6008,-1,1,0,161,0,10,0,7,135265,0,20711,0,0
-Honor the flames of Northrend.,Flame Keeper of Northrend,,6009,-1,0,0,161,0,10,0,27,135265,0,20721,0,0
-Desecrate the Alliance's bonfires in Northrend.,Extinguishing Northrend,,6010,-1,0,0,161,0,10,0,36,135820,0,20731,0,0
+Honor the flames of Northrend.,Flame Keeper of Northrend,,6009,-1,0,0,161,0,10,0,28,135265,0,20721,0,0
+Desecrate the Alliance's bonfires in Northrend.,Extinguishing Northrend,,6010,-1,0,0,161,0,10,0,38,135820,0,20731,0,0
 Honor the flames of zones opened by the cataclysm.,Flame Warden of Cataclysm,,6011,-1,1,0,161,0,10,0,4,135265,0,20741,0,0
-Honor the flames of zones opened by the cataclysm.,Flame Keeper of Cataclysm,,6012,-1,0,0,161,0,10,0,23,135265,0,20748,0,0
-Desecrate the Horde's bonfires in zones opened by the cataclysm.,Extinguishing the Cataclysm,,6013,-1,1,0,161,0,5,0,14,135820,0,19639,0,0
-Desecrate the Alliance's bonfires in zones opened by the cataclysm.,Extinguishing the Cataclysm,,6014,-1,0,0,161,0,5,0,33,135820,0,20755,0,0
+Honor the flames of zones opened by the cataclysm.,Flame Keeper of Cataclysm,,6012,-1,0,0,161,0,10,0,24,135265,0,20748,0,0
+Desecrate the Horde's bonfires in zones opened by the cataclysm.,Extinguishing the Cataclysm,,6013,-1,1,0,161,0,5,0,15,135820,0,19639,0,0
+Desecrate the Alliance's bonfires in zones opened by the cataclysm.,Extinguishing the Cataclysm,,6014,-1,0,0,161,0,5,0,35,135820,0,20755,0,0
 Attend the Darkmoon Faire.,"Come One, Come All!",,6019,-1,-1,0,15101,0,5,0,1,134481,0,20524,0,0
 Play five different Darkmoon games.,Step Right Up,,6020,-1,-1,0,15101,0,10,0,12,531974,0,7806,0,0
 Score a bullseye when launched from the Darkmoon Cannon.,Blastenheimer Bullseye,,6021,-1,-1,0,15101,0,10,0,2,132177,0,7813,0,0
@@ -3274,9 +3274,9 @@ Become an honorary Klaxxi Paragon by completing the achievements listed below.,W
 "Start Wrathion's legendary ""Test of Valor"" quest and earn 3000 Valor Points.",A Test of Valor,,8031,-1,0,0,15447,0,0,2176,10,656543,0,31631,0,0
 Defeat Primordius in Throne of Thunder on Normal or Heroic difficulty without any player receiving a harmful mutation.,Genetically Unmodified Organism,,8037,-1,-1,0,15107,0,10,0,67,538561,0,31668,0,0
 Defeat Horridon in Throne of Thunder on Normal or Heroic difficulty without killing any Zandalari Dinomancers.,Cretaceous Collector,,8038,-1,-1,0,15107,0,10,0,61,458239,0,31712,0,0
-Desecrate the Horde's bonfire in Pandaria's Vale of Eternal Blossoms.,Extinguishing Pandaria,,8042,-1,1,0,161,0,10,0,19,135820,0,31726,0,0
-Desecrate the Alliance's bonfire in Pandaria's Vale of Eternal Blossoms.,Extinguishing Pandaria,,8043,-1,0,0,161,0,10,0,38,135820,0,31728,0,0
-Honor the flames of Pandaria.,Flame Keeper of Pandaria,,8044,530,0,0,161,0,10,0,29,135265,0,31730,0,0
+Desecrate the Horde's bonfire in Pandaria's Vale of Eternal Blossoms.,Extinguishing Pandaria,,8042,-1,1,0,161,0,10,0,20,135820,0,31726,0,0
+Desecrate the Alliance's bonfire in Pandaria's Vale of Eternal Blossoms.,Extinguishing Pandaria,,8043,-1,0,0,161,0,10,0,40,135820,0,31728,0,0
+Honor the flames of Pandaria.,Flame Keeper of Pandaria,,8044,530,0,0,161,0,10,0,30,135265,0,31730,0,0
 Honor the flames of Pandaria.,Flame Warden of Pandaria,,8045,530,1,0,161,0,10,0,9,135265,0,31738,0,0
 Discover each of the lore objects in Pandaria that tell of the Zandalari and their dark prophecy.,The Zandalari Prophecy,,8049,-1,-1,0,15113,0,10,0,34,645218,94197,31776,0,0
 "Discover each of the lore objects in Pandaria that tell of Lei-Shen, the Thunder King.",Rumbles of Thunder,,8050,-1,-1,0,15113,0,10,0,35,645218,94198,31781,0,0
@@ -5100,14 +5100,14 @@ Complete the following special encounters in Val'sharah.,Adventurer of Val'shara
 Complete the following special encounters in Stormheim.,Adventurer of Stormheim,,11263,-1,-1,0,15257,0,10,0,21,1409001,0,53850,0,0
 Complete the following special encounters in Highmountain.,Adventurer of Highmountain,,11264,-1,-1,0,15257,0,10,0,22,1409000,0,53876,0,0
 Complete the following special encounters in Suramar.,Adventurer of Suramar,,11265,-1,-1,0,15257,0,10,0,23,1409002,0,53901,0,0
-Desecrate the Horde's bonfire in Draenor's Frostfire Ridge.,Extinguishing Draenor,,11276,-1,1,0,161,0,10,0,20,135820,0,54206,0,0
-Desecrate the Alliance's bonfire in Draenor's Shadowmoon Valley.,Extinguishing Draenor,,11277,-1,0,0,161,0,10,0,40,135820,0,54208,0,0
-Desecrate the Horde's bonfire in Suramar.,Extinguishing the Broken Isles,,11278,-1,1,0,161,0,10,0,21,135820,0,54210,0,0
-Desecrate the Alliance's bonfire in Suramar.,Extinguishing the Broken Isles,,11279,-1,0,0,161,0,10,0,41,135820,0,54212,0,0
+Desecrate the Horde's bonfire in Draenor's Frostfire Ridge.,Extinguishing Draenor,,11276,-1,1,0,161,0,10,0,21,135820,0,54206,0,0
+Desecrate the Alliance's bonfire in Draenor's Shadowmoon Valley.,Extinguishing Draenor,,11277,-1,0,0,161,0,10,0,42,135820,0,54208,0,0
+Desecrate the Horde's bonfire in Suramar.,Extinguishing the Broken Isles,,11278,-1,1,0,161,0,10,0,22,135820,0,54210,0,0
+Desecrate the Alliance's bonfire in Suramar.,Extinguishing the Broken Isles,,11279,-1,0,0,161,0,10,0,43,135820,0,54212,0,0
 Honor the flames of the Broken Isles.,Flame Warden of the Broken Isles,,11280,-1,1,0,161,0,10,0,11,135265,0,54214,0,0
-Honor the flames of the Broken Isles.,Flame Keeper of the Broken Isles,,11282,-1,0,0,161,0,10,0,31,135265,0,54220,0,0
+Honor the flames of the Broken Isles.,Flame Keeper of the Broken Isles,,11282,-1,0,0,161,0,10,0,32,135265,0,54220,0,0
 Honor the flames of Draenor.,Flame Warden of Draenor,,11283,-1,1,0,161,0,10,0,10,135265,0,54226,0,0
-Honor the flames of Draenor.,Flame Keeper of Draenor,,11284,-1,0,0,161,0,10,0,30,135265,0,54232,0,0
+Honor the flames of Draenor.,Flame Keeper of Draenor,,11284,-1,0,0,161,0,10,0,31,135265,0,54232,0,0
 Proud owner of Knight-Captain Murky and Legionnaire Murky from the 2016 BlizzCon.,Murloc Battlemasters,,11294,-1,-1,0,15268,1,0,133120,11,1411878,0,53666,0,0
 "Obtain Rhok'delar, Longbow of the Ancient Keepers and Lok'delar, Stave of the Ancient Keepers.",The Ancient Keeper,,11296,-1,-1,0,15234,0,0,2048,3,135489,0,55136,0,0
 Obtain Benediction and Anathema.,The Balance of Light and Shadow,,11297,-1,-1,0,15234,0,0,2048,2,135167,0,55139,0,0
@@ -6235,10 +6235,10 @@ Among the first one hundred Horde guilds worldwide to defeat Lady Jaina Proudmoo
 ,Grong kills (Normal Battle of Dazar'alor),,13333,2070,0,0,15409,0,0,1,68,136243,0,72285,0,0
 ,Grong kills (Heroic Battle of Dazar'alor),,13334,2070,0,0,15409,0,0,1,69,136243,0,72288,0,0
 ,Grong kills (Mythic Battle of Dazar'alor),,13336,2070,0,0,15409,0,0,1,70,136243,0,72294,0,0
-Honor the flames of Zandalar.,Flame Keeper of Zandalar,,13340,-1,0,0,161,0,10,0,39,135265,0,72290,0,0
+Honor the flames of Zandalar.,Flame Keeper of Zandalar,,13340,-1,0,0,161,0,10,0,41,135265,0,72290,0,0
 Honor the flames of Kul Tiras.,Flame Warden of Kul Tiras,,13341,-1,1,0,161,0,10,0,13,135265,0,72296,0,0
-Desecrate the Alliance's bonfires in Kul Tiras.,Extinguishing Kul Tiras,,13342,-1,0,0,161,0,10,0,44,135820,0,72300,0,0
-Desecrate the Horde's bonfires in Zandalar.,Extinguishing Zandalar,,13343,-1,1,0,161,0,10,0,24,135820,0,72304,0,0
+Desecrate the Alliance's bonfires in Kul Tiras.,Extinguishing Kul Tiras,,13342,-1,0,0,161,0,10,0,46,135820,0,72300,0,0
+Desecrate the Horde's bonfires in Zandalar.,Extinguishing Zandalar,,13343,-1,1,0,161,0,10,0,25,135820,0,72304,0,0
 ,Grong the Revenant kills (Raid Finder Battle of Dazar'alor),,13344,2070,1,0,15409,0,0,1,71,136243,0,72308,0,0
 Defeat the Opulence in Battle of Dazar'alor after /praising a Singing Sunflower while under the effects of Brilliant Aura on Normal Difficulty or higher.,Praise the Sunflower,,13345,2070,-1,0,15286,0,10,0,41,133938,0,78296,0,0
 ,Grong the Revenant kills (Normal Battle of Dazar'alor),,13346,2070,1,0,15409,0,0,1,72,136243,0,72312,0,0
@@ -7934,7 +7934,7 @@ Get Gold ranked time for Thaldraszus Tyrhold Trial Advanced.,Tyrhold Trial Advan
 ,Dragon Isles Tailoring 50 (DNT),,15886,-1,-1,0,169,0,0,9437188,72,136243,0,134229,0,0
 ,Dragon Isles Tailoring 75 (DNT),,15887,-1,-1,0,169,0,0,9437188,75,136243,0,134233,0,0
 Collect 40 fish during one session of Ruriq's River Rapids Ride.,River Rapids Wrangler,Toy Reward: Tuskarr Dinghy,15889,-1,-1,0,15455,0,5,0,47,134325,0,136487,0,0
-Place a flag on 10 of the tallest peaks in the Dragon Isles.,Dragonscale Expedition: The Highest Peaks,,15890,-1,-1,0,15465,0,5,0,29,1723999,0,136485,0,0
+Place a flag on 10 of the tallest peaks in the Dragon Isles.,Dragonscale Expedition: The Highest Peaks,,15890,-1,-1,0,15465,0,5,0,30,1723999,0,136485,0,0
 Complete Thaldraszus Cliffside Circuit.,Cliffside Circuit: Bronze,,15891,-1,-1,0,15462,0,0,1048576,160,1002572,0,0,0,0
 Get Silver ranked time for Thaldraszus Cliffside Circuit.,Cliffside Circuit: Silver,,15892,-1,-1,15891,15462,0,0,1048576,161,1002575,0,0,0,0
 Get Gold ranked time for Thaldraszus Cliffside Circuit,Cliffside Circuit: Gold,,15893,-1,-1,15892,15462,0,0,1048576,162,1002573,0,0,0,0
@@ -8222,11 +8222,11 @@ Unlock all of the Ancient Waygate locations in the Dragon Isles.,Mastering the W
 Complete the Dragonflight Heroic dungeon achievements listed below.,Dragonflight Dungeon Hero,,16294,-1,-1,0,168,0,20,135168,56,4638547,0,137475,0,0
 Complete the Dragonflight Mythic dungeon achievements listed below.,Glory of the Dragonflight Hero,Mount Reward: Shellack,16295,-1,-1,0,168,0,25,143360,57,4295888,192784,137484,0,0
 "Defeat Hackclaw's War-Band after freeing Chief Softpaw, equipping her with a spear and shield, and making sure she survives in Brackenhide Hollow on Mythic difficulty.",Growlbossify,,16296,2520,-1,0,15467,0,10,0,31,2059635,0,138443,0,0
-Discover the hidden treasures within The Waking Shores.,Treasures of The Waking Shores,,16297,-1,-1,0,15465,0,5,0,24,1542856,0,137550,0,0
-Complete all of the Dragon Isles treasure achievements listed below.,Treasure Hunter of the Dragon Isles,,16298,-1,-1,0,15465,0,10,131072,30,4638725,0,137557,0,0
-Discover the hidden treasures within the Ohn'ahran Plains.,Treasures of the Ohn'ahran Plains,,16299,-1,-1,0,15465,0,5,0,25,1542855,0,137559,0,0
-Discover the hidden treasures within The Azure Span.,Treasures of The Azure Span,,16300,-1,-1,0,15465,0,5,0,26,1542857,0,137698,0,0
-Discover the hidden treasures within Thaldraszus.,Treasures of Thaldraszus,,16301,-1,-1,0,15465,0,5,0,27,1542858,0,137705,0,0
+Discover the hidden treasures within The Waking Shores.,Treasures of The Waking Shores,,16297,-1,-1,0,15465,0,5,0,25,1542856,0,137550,0,0
+Complete all of the Dragon Isles treasure achievements listed below.,Treasure Hunter of the Dragon Isles,,16298,-1,-1,0,15465,0,10,131072,31,4638725,0,137557,0,0
+Discover the hidden treasures within the Ohn'ahran Plains.,Treasures of the Ohn'ahran Plains,,16299,-1,-1,0,15465,0,5,0,26,1542855,0,137559,0,0
+Discover the hidden treasures within The Azure Span.,Treasures of The Azure Span,,16300,-1,-1,0,15465,0,5,0,27,1542857,0,137698,0,0
+Discover the hidden treasures within Thaldraszus.,Treasures of Thaldraszus,,16301,-1,-1,0,15465,0,5,0,28,1542858,0,137705,0,0
 Complete Ohn'ahran Plains River Rapids Route.,River Rapids Route: Bronze,,16302,-1,-1,0,15462,0,0,1048576,100,1002572,0,0,0,0
 Get Silver ranked time for Ohn'ahran Plains River Rapids Route.,River Rapids Route: Silver,,16303,-1,-1,16302,15462,0,0,1048576,101,1002575,0,0,0,0
 Get Gold ranked time for Ohn'ahran Plains River Rapids Route.,River Rapids Route: Gold,,16304,-1,-1,16303,15462,0,0,1048576,102,1002573,0,0,0,0
@@ -8243,7 +8243,7 @@ Hidden achievement to turn on dragon riding talents for characters after the fir
 Defeat Kokia Blazehoof after heating up 4 life pools with Molten Boulder in Ruby Life Pools on Mythic difficulty.,Does Steam Do Fire Damage?,,16320,2521,-1,0,15467,0,10,0,41,4554434,0,137968,0,0
 Obtain Iskaaran harpoon and Iskaaran fishing net.,Cutting Tusk Equipment,,16321,-1,-1,0,15466,0,10,0,282,1412207,0,137976,0,0
 Fully upgrade your Iskaaran fishing gear.,Best in Slot,,16322,-1,-1,0,15466,0,10,0,285,132933,0,137970,0,0
-"Acquire for Emilia Bellocq, the following loose pieces of statuary located around the Dragon Isles.",Fragments of History,,16323,-1,-1,0,15465,0,10,0,38,134908,0,137979,0,0
+"Acquire for Emilia Bellocq, the following loose pieces of statuary located around the Dragon Isles.",Fragments of History,,16323,-1,-1,0,15465,0,10,0,39,134908,0,137979,0,0
 Nokhudon Proving Grounds matches,Nokhudon Proving Grounds matches,,16324,-1,-1,0,152,0,0,1,29,136243,0,138022,0,0
 Nokhudon Proving Grounds victories,Nokhudon Proving Grounds victories,,16325,-1,-1,0,152,0,0,1,30,136243,0,138020,0,0
 ,<Hidden> ACCOUNT: Campaign Complete,,16326,-1,-1,0,15455,0,0,3276804,19,136243,0,138051,0,0
@@ -8256,7 +8256,7 @@ Complete the following questlines in the Waking Shores.,Waking Hope,,16334,-1,-1
 Defeat Eranog after finding a Frozen Portal Stone and defeating a Burning Behemoth in Vault of the Incarnates on Normal difficulty or higher.,What Frozen Things Do,,16335,2522,-1,0,15468,0,10,0,15,4572524,0,138067,0,0
 Complete the following questlines in the Azure Span.,Azure Spanner,,16336,-1,-1,0,15455,0,10,0,44,4672495,0,138069,0,0
 Defeat Bromach while 10 or more Stonevault Troggs are still alive in Uldaman: Legacy of Tyr on Mythic difficulty.,It's a Trogg Eat Trogg World,,16337,2451,-1,0,15467,0,10,0,50,134024,0,138089,0,0
-Get 10 points in a single game of Fang Flap Fire.,Fang Flap Fire Fighter,,16338,-1,-1,0,15465,0,5,131072,37,134153,0,138078,0,0
+Get 10 points in a single game of Fang Flap Fire.,Fang Flap Fire Fighter,,16338,-1,-1,0,15465,0,5,131072,38,134153,0,138078,0,0
 Complete each of the following Dragonflight dungeons on Mythic or Mythic Keystone difficulty.,Myths of the Dragonflight Dungeons,,16339,-1,-1,0,15467,0,10,131072,25,4622499,0,138080,0,0
 Defeat the following bosses on any difficulty.,Vault of the Incarnates,,16343,2522,-1,0,15468,0,10,0,1,4630363,0,138132,0,0
 Defeat the following bosses on Heroic difficulty.,Heroic: Vault of the Incarnates,,16345,2522,-1,16343,15468,0,10,0,2,4630363,0,138141,0,0
@@ -8311,24 +8311,24 @@ Defeat Terros after hitting the three Dormant Earth nodes in his chamber with Aw
 Collect an armor set from Vault of the Incarnates.,Vaulternative Fashion,,16395,-1,-1,0,15259,0,10,131072,46,4630363,0,138313,0,0
 Complete the optional Thaldraszus storylines listed below.,Sojourner of Thaldraszus,,16398,-1,-1,0,15455,0,10,0,16,4672499,0,138319,0,0
 Help Lubbins get his mojo back.,Lovin' Lubbins,,16399,-1,-1,0,15117,0,5,131072,18,4452489,0,138328,0,0
-"Explore the Waking Shores, revealing the covered areas of the world map.",Explore the Waking Shores,,16400,-1,-1,0,15465,0,10,2097152,7,4672500,0,138330,0,0
+"Explore the Waking Shores, revealing the covered areas of the world map.",Explore the Waking Shores,,16400,-1,-1,0,15465,0,10,2097152,8,4672500,0,138330,0,0
 Complete the optional Waking Shores storylines listed below.,Sojourner of the Waking Shores,,16401,-1,-1,0,15455,0,10,0,13,3953208,0,138349,0,0
 Defeat Melidrussa after defeating 40 of her chamber's Infused Whelps in Ruby Life Pools on Mythic difficulty.,Dragon Kill Points,,16402,2521,-1,0,15467,0,10,0,40,4397694,0,138347,0,0
 "Defeat Decatriarch Wratheye after finding and planting three Resilient Mushrooms, then destroying them with Decaystrike in Brackenhide Hollow on Mythic difficulty.",So You Can Kill This in a Way That Matters...,,16404,2520,-1,0,15467,0,10,0,33,134052,0,138865,0,0
 Complete the optional Ohn'ahran Plains storylines listed below.,Sojourner of Ohn'ahran Plains,,16405,-1,-1,0,15455,0,10,0,14,4687627,0,138360,0,0
-Hear all the stories told by the following denizens of the Waking Shores.,All Sides of the Story,,16406,-1,-1,0,15465,0,10,0,31,4549126,0,138369,0,0
-Rescue all five Bubbled Ducklings in the Restless Wetlands.,Let's Get Quacking,,16409,-1,-1,0,15465,0,5,0,33,4048818,0,138374,0,0
-"During stage 1 of the scenario Siege on Dragonbane Keep, feed Beef 20 Beef snacks.",Siege on Dragonbane Keep: Snack Attack,,16410,-1,-1,0,15465,0,5,131072,23,134062,0,138391,0,0
-Complete the scenario Siege on Dragonbane Keep.,Siege on Dragonbane Keep: Home Sweet Home,,16411,-1,-1,0,15465,0,10,131072,21,1394891,0,138393,0,0
-"In Dragonbane Keep, find all of the djaradin tablets.",Siege on Dragonbane Keep: Chiseled Record,,16412,-1,-1,0,15465,0,5,131072,22,134455,0,138395,0,0
+Hear all the stories told by the following denizens of the Waking Shores.,All Sides of the Story,,16406,-1,-1,0,15465,0,10,0,32,4549126,0,138369,0,0
+Rescue all five Bubbled Ducklings in the Restless Wetlands.,Let's Get Quacking,,16409,-1,-1,0,15465,0,5,0,34,4048818,0,138374,0,0
+"During stage 1 of the scenario Siege on Dragonbane Keep, feed Beef 20 Beef snacks.",Siege on Dragonbane Keep: Snack Attack,,16410,-1,-1,0,15465,0,5,131072,24,134062,0,138391,0,0
+Complete the scenario Siege on Dragonbane Keep.,Siege on Dragonbane Keep: Home Sweet Home,,16411,-1,-1,0,15465,0,10,131072,22,1394891,0,138393,0,0
+"In Dragonbane Keep, find all of the djaradin tablets.",Siege on Dragonbane Keep: Chiseled Record,,16412,-1,-1,0,15465,0,5,131072,23,134455,0,138395,0,0
 ,[HIDDEN] Fates of the Shadowlands Raid Portals,,16414,-1,-1,0,15438,0,0,1310720,83,136243,0,138399,0,0
 ,<DNT> Cobalt Assembly - Rank 1 - Low,,16415,-1,-1,0,15466,0,0,3145728,395,136243,0,138433,0,0
 ,<DNT> Cobalt Assembly - Rank 2 - Medium,,16416,-1,-1,0,15466,0,0,3145728,396,136243,0,138435,0,0
 ,<DNT> Cobalt Assembly - Rank 3 - High,,16417,-1,-1,0,15466,0,0,3145728,397,136243,0,138437,0,0
 ,<DNT> Cobalt Assembly - Rank 4 - Maximum,,16418,-1,-1,0,15466,0,0,3145728,398,136243,0,138439,0,0
 "Defeat Sennarth, The Cold Breath after finding and freeing 5 mysterious captives using Caustic Eruption, then witnessing their demise in Vault of the Incarnates on Normal difficulty or higher.",I Was Saving That For Later,,16419,2522,-1,0,15468,0,10,0,18,2437248,0,138445,0,0
-Present offerings to the following ancestor spirits in Ohn'ahran Plains while under the effect of Essence of Awakening.,Honor Our Ancestors,Toy Reward: Ohn'ir Windsage's Hearthstone,16423,-1,-1,0,15465,0,10,0,34,135946,0,138449,0,0
-Pet all of the bakar in the Ohn'ahran Plains.,Who's a Good Bakar?,,16424,-1,-1,0,15465,0,10,0,35,930453,0,138462,0,0
+Present offerings to the following ancestor spirits in Ohn'ahran Plains while under the effect of Essence of Awakening.,Honor Our Ancestors,Toy Reward: Ohn'ir Windsage's Hearthstone,16423,-1,-1,0,15465,0,10,0,35,135946,0,138449,0,0
+Pet all of the bakar in the Ohn'ahran Plains.,Who's a Good Bakar?,,16424,-1,-1,0,15465,0,10,0,36,930453,0,138462,0,0
 ,I'm a Template Character [DNT],,16425,-1,-1,0,92,0,0,20185092,59,136243,0,138482,0,0
 Defeat the Gulping Goliath after forcing it to become Hangry and devour 10 Curious Swoglets in Halls of Infusion on Mythic difficulty.,Hungry Hungry Hornswog,,16426,2527,-1,0,15467,0,10,0,35,237553,0,138937,0,0
 Defeat the Primal Tsunami after slaying three Flow Control Units in Halls of Infusion on Mythic difficulty.,Go With the Flow,,16427,2527,-1,0,15467,0,10,0,36,135861,0,138966,0,0
@@ -8342,54 +8342,54 @@ Defeat Vexamus without players absorbing any Arcane Orbs in Algeth'ar Academy on
 "Defeat Kyrakka and Erkhart Stormvein after chilling, searing, tempering, and keeping alive the Nascent Ruby Egg in Ruby Life Pools on Mythic difficulty.",Are You My Broodmother?,,16440,2521,-1,0,15467,0,10,0,42,4509422,0,138600,0,0
 Defeat Crawth after simultaneously activating both Goals in Algeth'ar Academy on Mythic difficulty.,Squad Goals,,16441,2526,-1,0,15467,0,10,0,28,464077,0,138568,0,0
 Defeat Broodkeeper Diurna after successfully hatching and defeating lieutenants from each Primal element's eggs within 10 seconds of each other in Vault of the Incarnates on Normal difficulty or higher.,Incubation Extermination,,16442,-1,-1,0,15468,0,10,0,21,1385911,0,138538,0,0
-Complete 100 tasks at the Community Feast in Iskaara.,Soupervisor,Title Reward: Soupervisor,16443,-1,-1,0,15466,0,10,0,400,4240492,0,138540,0,0
-"Cook Legendary soup at the Community Feast in Iskaara, then defeat Bisquius.",Leftovers' Revenge,Transmog: Big Kinook's Spare Ladle,16444,-1,-1,0,15466,0,10,0,401,794853,0,138542,0,0
+Complete 100 tasks at the Community Feast in Iskaara.,Soupervisor,Title Reward: Soupervisor,16443,-1,-1,0,15466,0,10,0,420,4240492,0,138540,0,0
+"Cook Legendary soup at the Community Feast in Iskaara, then defeat Bisquius.",Leftovers' Revenge,Transmog: Big Kinook's Spare Ladle,16444,-1,-1,0,15466,0,10,0,421,794853,0,138542,0,0
 Defeat Telash Greywing after using Icy Devastator 12 times on an Icy Crystal to create a Very Icy Crystal in The Azure Vault on Mythic difficulty.,Icy What You Did There,,16445,2515,-1,0,15467,0,10,0,44,2060147,0,138544,0,0
-Take a picture with the S.E.L.F.I.E. camera with all the birds (and birdwatchers!) of the Dragon Isles listed below.,That's Pretty Neat!,Title Reward: Birdwatcher,16446,-1,-1,0,15465,0,10,0,20,133707,0,138546,0,0
+Take a picture with the S.E.L.F.I.E. camera with all the birds (and birdwatchers!) of the Dragon Isles listed below.,That's Pretty Neat!,Title Reward: Birdwatcher,16446,-1,-1,0,15465,0,10,0,21,133707,0,138546,0,0
 Defeat the Raging Tempest after striking a single player with 5 Lightning Strikes simultaneously and defeating a Storm Elemental in The Nokhud Offensive on Mythic difficulty.,What Are The Chances...,,16447,2516,-1,0,15467,0,10,0,46,4554460,0,138570,0,0
 ,"[DNT] <Hidden> Mythic+ Rating > 0 (Dragonflight, any season)",,16449,-1,-1,0,15428,0,0,9568260,3,136243,0,138574,0,0
 Defeat Kurog Grimtotem after destroying the Primal Avatar in Vault of the Incarnates on Normal difficulty or higher.,The Power is MINE!,,16450,2522,-1,0,15468,0,10,0,20,4554441,0,138576,0,0
 Defeat Raszageth the Storm-Eater after successfully gathering two Concentrated Storm Essences and defeating the Concentrated Storm in Vault of the Incarnates on Normal difficulty or higher.,The Ol Raszle Daszle,,16451,-1,-1,0,15468,0,10,0,22,1041235,0,139675,0,0
-"Explore the Forbidden Reach as a newly awakened Dracthyr Evoker, revealing the covered areas of the world map.",Famliar Skies,,16452,-1,-1,0,15465,0,0,3145728,13,4672496,0,138595,0,0
+"Explore the Forbidden Reach as a newly awakened Dracthyr Evoker, revealing the covered areas of the world map.",Famliar Skies,,16452,-1,-1,0,15465,0,0,3145728,14,4672496,0,138595,0,0
 Defeat Magmatusk after it has been mutated with Draconic Tincture in Neltharus on Mythic difficulty.,Liquid Hot Magma,,16453,2519,-1,0,15467,0,10,0,39,959797,0,140744,0,0
 "Defeat Teera and Maruuk while holding the Spear of Tolui, War Axe of Berke, and Bow of Sartaq in The Nokhud Offensive on Mythic difficulty.",Weapons of the Maruukai,,16456,2516,-1,0,15467,0,10,0,47,615102,0,138925,0,0
-"Explore the Ohn'ahran Plains, revealing the covered areas of the world map.",Explore the Ohn'ahran Plains,,16457,-1,-1,0,15465,0,10,2097152,8,4672498,0,138602,0,0
+"Explore the Ohn'ahran Plains, revealing the covered areas of the world map.",Explore the Ohn'ahran Plains,,16457,-1,-1,0,15465,0,10,2097152,9,4672498,0,138602,0,0
 "Defeat Dathea, Ascended after collecting 8 Condensed Gales in Vault of the Incarnates on Normal difficulty or higher.",Nothing But Air,,16458,2522,-1,0,15468,0,10,0,19,135863,0,138653,0,0
-"Explore the Azure Span, revealing the covered areas of the world map.",Explore the Azure Span,,16460,-1,-1,0,15465,0,10,2097152,9,4672495,0,138622,0,0
-Defeat 8 special creatures during storm events in the Dragon Isles.,Stormed Off,,16461,-1,-1,0,15465,0,10,0,57,237589,0,138634,0,0
-Defend Clan Aylaag between all three of their camp locations.,The Ohn'ahran Trail,,16462,-1,-1,0,15465,0,10,0,39,237385,0,138655,0,0
-Defeat creatures empowered with elemental air during a storm event in The Waking Shores.,Thunderstorms in The Waking Shores,,16463,-1,-1,0,15465,0,5,0,60,132845,0,138659,0,0
+"Explore the Azure Span, revealing the covered areas of the world map.",Explore the Azure Span,,16460,-1,-1,0,15465,0,10,2097152,10,4672495,0,138622,0,0
+Defeat 8 special creatures during storm events in the Dragon Isles.,Stormed Off,,16461,-1,-1,0,15465,0,10,0,58,237589,0,138634,0,0
+Defend Clan Aylaag between all three of their camp locations.,The Ohn'ahran Trail,,16462,-1,-1,0,15465,0,10,0,40,237385,0,138655,0,0
+Defeat creatures empowered with elemental air during a storm event in The Waking Shores.,Thunderstorms in The Waking Shores,,16463,-1,-1,0,15465,0,5,0,61,132845,0,138659,0,0
 Complete 8 Pet Battle World Quests on the Dragon Isles with a full team of level 25 pets.,Battle on the Dragon Isles,,16464,-1,-1,0,15119,0,10,135168,2,652174,0,138662,0,0
-Defeat creatures empowered with elemental earth during a storm event in The Waking Shores.,Sandstorms in The Waking Shores,,16465,-1,-1,0,15465,0,5,0,61,451165,0,138667,0,0
-Defeat creatures empowered with elemental fire during a storm event in The Waking Shores.,Firestorms in The Waking Shores,,16466,-1,-1,0,15465,0,5,0,62,460952,0,138673,0,0
-Defeat creatures empowered with elemental water during a storm event in The Waking Shores.,Snowstorms in The Waking Shores,,16467,-1,-1,0,15465,0,5,0,63,135783,0,138675,0,0
-Complete the Waking Shore storm achievements below.,Chasing Storms in The Waking Shores,,16468,-1,-1,0,15465,0,10,0,59,4672500,0,138677,0,0
-Build a snowman in the Azure Span.,Do You Wanna Build a Snowman?,,16474,-1,-1,0,15465,0,5,0,42,655957,0,138682,0,0
-Defeat creatures empowered with elemental air during a storm event in the Ohn'ahran Plains.,Thunderstorms in the Ohn'ahran Plains,,16475,-1,-1,0,15465,0,5,0,65,132845,0,138684,0,0
-Complete the Ohn'ahran Plains storm achievements below.,Chasing Storms in the Ohn'ahran Plains,,16476,-1,-1,0,15465,0,10,0,64,4672498,0,138692,0,0
-Defeat creatures empowered with elemental earth during a storm event in the Ohn'ahran Plains.,Sandstorms in the Ohn'ahran Plains,,16477,-1,-1,0,15465,0,5,0,66,451165,0,138686,0,0
-Defeat creatures empowered with elemental fire during a storm event in the Ohn'ahran Plains.,Firestorms in the Ohn'ahran Plains,,16478,-1,-1,0,15465,0,5,0,67,460952,0,138688,0,0
-Defeat creatures empowered with elemental water during a storm event in the Ohn'ahran Plains.,Snowstorms in the Ohn'ahran Plains,,16479,-1,-1,0,15465,0,5,0,68,135783,0,138690,0,0
-Defeat creatures empowered with elemental air during a storm event in The Azure Span.,Thunderstorms in The Azure Span,,16480,-1,-1,0,15465,0,5,0,70,132845,0,138697,0,0
-Defeat creatures empowered with elemental earth during a storm event in The Azure Span.,Sandstorms in The Azure Span,,16481,-1,-1,0,15465,0,5,0,71,451165,0,138699,0,0
-Defeat creatures empowered with elemental fire during a storm event in The Azure Span.,Firestorms in The Azure Span,,16482,-1,-1,0,15465,0,5,0,72,460952,0,138701,0,0
-Defeat creatures empowered with elemental water during a storm event in The Azure Span.,Snowstorms in The Azure Span,,16483,-1,-1,0,15465,0,5,0,73,135783,0,138703,0,0
-Complete the Azure Span storm achievements below.,Chasing Storms in The Azure Span,,16484,-1,-1,0,15465,0,10,0,69,4672495,0,138705,0,0
-Defeat creatures empowered with elemental air during a storm event in Thaldraszus.,Thunderstorms in Thaldraszus,,16485,-1,-1,0,15465,0,5,0,75,132845,0,138710,0,0
-Defeat creatures empowered with elemental earth during a storm event in Thaldraszus.,Sandstorms in Thaldraszus,,16486,-1,-1,0,15465,0,5,0,76,451165,0,138712,0,0
-Defeat creatures empowered with elemental fire during a storm event in Thaldraszus.,Firestorms in Thaldraszus,,16487,-1,-1,0,15465,0,5,0,77,460952,0,138714,0,0
-Defeat creatures empowered with elemental water during a storm event in Thaldraszus.,Snowstorms in Thaldraszus,,16488,-1,-1,0,15465,0,5,0,78,135783,0,138716,0,0
-Complete the Thaldraszus storm achievements below.,Chasing Storms in Thaldraszus,,16489,-1,-1,0,15465,0,10,0,74,4672499,0,138718,0,0
-Complete the storm achievements below.,Storm Chaser,,16490,-1,-1,0,15465,0,10,0,58,572029,0,138723,0,0
-Complete the storm achievements below.,Into the Storm,,16492,-1,-1,0,15465,0,20,0,53,538566,0,138728,0,0
-Ride the tame baby mammoths from the following areas to Mammoth-Tamer Tavok in the Emberflow.,Petty Theft Mammoth,,16493,-1,-1,0,15465,0,5,0,45,4034836,0,139400,0,0
+Defeat creatures empowered with elemental earth during a storm event in The Waking Shores.,Sandstorms in The Waking Shores,,16465,-1,-1,0,15465,0,5,0,62,451165,0,138667,0,0
+Defeat creatures empowered with elemental fire during a storm event in The Waking Shores.,Firestorms in The Waking Shores,,16466,-1,-1,0,15465,0,5,0,63,460952,0,138673,0,0
+Defeat creatures empowered with elemental water during a storm event in The Waking Shores.,Snowstorms in The Waking Shores,,16467,-1,-1,0,15465,0,5,0,64,135783,0,138675,0,0
+Complete the Waking Shore storm achievements below.,Chasing Storms in The Waking Shores,,16468,-1,-1,0,15465,0,10,0,60,4672500,0,138677,0,0
+Build a snowman in the Azure Span.,Do You Wanna Build a Snowman?,,16474,-1,-1,0,15465,0,5,0,43,655957,0,138682,0,0
+Defeat creatures empowered with elemental air during a storm event in the Ohn'ahran Plains.,Thunderstorms in the Ohn'ahran Plains,,16475,-1,-1,0,15465,0,5,0,66,132845,0,138684,0,0
+Complete the Ohn'ahran Plains storm achievements below.,Chasing Storms in the Ohn'ahran Plains,,16476,-1,-1,0,15465,0,10,0,65,4672498,0,138692,0,0
+Defeat creatures empowered with elemental earth during a storm event in the Ohn'ahran Plains.,Sandstorms in the Ohn'ahran Plains,,16477,-1,-1,0,15465,0,5,0,67,451165,0,138686,0,0
+Defeat creatures empowered with elemental fire during a storm event in the Ohn'ahran Plains.,Firestorms in the Ohn'ahran Plains,,16478,-1,-1,0,15465,0,5,0,68,460952,0,138688,0,0
+Defeat creatures empowered with elemental water during a storm event in the Ohn'ahran Plains.,Snowstorms in the Ohn'ahran Plains,,16479,-1,-1,0,15465,0,5,0,69,135783,0,138690,0,0
+Defeat creatures empowered with elemental air during a storm event in The Azure Span.,Thunderstorms in The Azure Span,,16480,-1,-1,0,15465,0,5,0,71,132845,0,138697,0,0
+Defeat creatures empowered with elemental earth during a storm event in The Azure Span.,Sandstorms in The Azure Span,,16481,-1,-1,0,15465,0,5,0,72,451165,0,138699,0,0
+Defeat creatures empowered with elemental fire during a storm event in The Azure Span.,Firestorms in The Azure Span,,16482,-1,-1,0,15465,0,5,0,73,460952,0,138701,0,0
+Defeat creatures empowered with elemental water during a storm event in The Azure Span.,Snowstorms in The Azure Span,,16483,-1,-1,0,15465,0,5,0,74,135783,0,138703,0,0
+Complete the Azure Span storm achievements below.,Chasing Storms in The Azure Span,,16484,-1,-1,0,15465,0,10,0,70,4672495,0,138705,0,0
+Defeat creatures empowered with elemental air during a storm event in Thaldraszus.,Thunderstorms in Thaldraszus,,16485,-1,-1,0,15465,0,5,0,76,132845,0,138710,0,0
+Defeat creatures empowered with elemental earth during a storm event in Thaldraszus.,Sandstorms in Thaldraszus,,16486,-1,-1,0,15465,0,5,0,77,451165,0,138712,0,0
+Defeat creatures empowered with elemental fire during a storm event in Thaldraszus.,Firestorms in Thaldraszus,,16487,-1,-1,0,15465,0,5,0,78,460952,0,138714,0,0
+Defeat creatures empowered with elemental water during a storm event in Thaldraszus.,Snowstorms in Thaldraszus,,16488,-1,-1,0,15465,0,5,0,79,135783,0,138716,0,0
+Complete the Thaldraszus storm achievements below.,Chasing Storms in Thaldraszus,,16489,-1,-1,0,15465,0,10,0,75,4672499,0,138718,0,0
+Complete the storm achievements below.,Storm Chaser,,16490,-1,-1,0,15465,0,10,0,59,572029,0,138723,0,0
+Complete the storm achievements below.,Into the Storm,,16492,-1,-1,0,15465,0,20,0,54,538566,0,138728,0,0
+Ride the tame baby mammoths from the following areas to Mammoth-Tamer Tavok in the Emberflow.,Petty Theft Mammoth,,16493,-1,-1,0,15465,0,5,0,46,4034836,0,139400,0,0
 Reach the maximum friendship with Wrathion at the Obsidian Throne.,Loyalty to the Prince,Title Reward: Agent of the Black Prince,16494,-1,-1,0,15466,0,10,131072,280,132768,0,139397,0,0
-Turn in a total of 30 Obsidian Keys to individuals around the Obsidian Citadel.,Obsidian Keymaster,,16495,-1,-1,0,15465,0,10,0,46,1379238,0,139390,0,0
-Complete the following special encounters at the Obsidian Citadel and adjacent lava fields.,Obsidian Champion,,16496,-1,-1,0,15465,0,5,0,47,236326,0,139392,0,0
-Ensure that you always come out on top by turning in Obsidian Keys to each of these individuals at the Obsidian Citadel.,I'm Playing All Sides,,16497,-1,-1,0,15465,0,5,0,48,236352,0,139381,0,0
-Obtain 1000 Elemental Overflow,Elemental Overflow,,16498,-1,-1,0,15465,0,5,0,54,134388,0,138758,0,0
-Obtain 2500 Elemental Overflow,Elemental Overflowing,,16499,-1,-1,16498,15465,0,5,0,55,134388,0,138760,0,0
-Obtain 5000 Elemental Overflow,Elemental Overload,,16500,-1,-1,16499,15465,0,10,0,56,134388,0,138762,0,0
+Turn in a total of 30 Obsidian Keys to individuals around the Obsidian Citadel.,Obsidian Keymaster,,16495,-1,-1,0,15465,0,10,0,47,1379238,0,139390,0,0
+Complete the following special encounters at the Obsidian Citadel and adjacent lava fields.,Obsidian Champion,,16496,-1,-1,0,15465,0,5,0,48,236326,0,139392,0,0
+Ensure that you always come out on top by turning in Obsidian Keys to each of these individuals at the Obsidian Citadel.,I'm Playing All Sides,,16497,-1,-1,0,15465,0,5,0,49,236352,0,139381,0,0
+Obtain 1000 Elemental Overflow,Elemental Overflow,,16498,-1,-1,0,15465,0,5,0,55,134388,0,138758,0,0
+Obtain 2500 Elemental Overflow,Elemental Overflowing,,16499,-1,-1,16498,15465,0,5,0,56,134388,0,138760,0,0
+Obtain 5000 Elemental Overflow,Elemental Overload,,16500,-1,-1,16499,15465,0,10,0,57,134388,0,138762,0,0
 Defeat the elite pets and trainers of the Dragon Isles with a team of all level 25 Aquatic pets.,Aquatic Battler of the Dragon Isles,,16501,-1,-1,0,15119,0,5,131072,106,618981,0,138769,0,0
 Collect an armor set from the Primal Storms.,Storming the Runway,,16502,-1,-1,0,15259,0,10,131072,76,4628908,0,138767,0,0
 Defeat the elite pets and trainers of the Dragon Isles with a team of all level 25 Beast pets.,Beast Battler of the Dragon Isles,,16503,-1,-1,0,15119,0,5,131072,107,618972,0,138778,0,0
@@ -8403,57 +8403,57 @@ Defeat the elite pets and trainers of the Dragon Isles with a team of all level 
 Defeat the elite pets and trainers of the Dragon Isles with a team of all level 25 Undead pets.,Undead Battler of the Dragon Isles,,16511,-1,-1,0,15119,0,5,131072,115,618980,0,138787,0,0
 Complete the following achievements.,Family Battler of the Dragon Isles,Reward: Lady Feathersworth,16512,-1,-1,0,15119,0,10,135168,116,2103802,200874,138867,0,0
 Defeat the Toxic Swogmother after Purging the Water Intakes in Halls of Infusion on Mythic difficulty.,Toxicity Strike Team,,16517,2527,-1,0,15467,0,10,0,34,132104,0,138927,0,0
-"Explore Thaldraszus, revealing the covered areas of the world map.",Explore Thaldraszus,,16518,-1,-1,0,15465,0,10,2097152,10,4672499,0,138885,0,0
+"Explore Thaldraszus, revealing the covered areas of the world map.",Explore Thaldraszus,,16518,-1,-1,0,15465,0,10,2097152,11,4672499,0,138885,0,0
 "In the Dragon Isles, catch all of the battle pets listed below.",Dragon Isles Safari,,16519,-1,-1,0,15118,0,5,131072,49,4048818,0,138897,0,0
 ,10.0 Dragonflight - Expansion Quest Launch (Meet Wrathion/Ebyssian),,16520,-1,-1,0,92,0,0,18087940,54,136243,0,138923,0,0
 Reach Renown level 25 with the Dragonscale Expedition.,A True Explorer,,16522,-1,-1,0,15466,0,5,0,301,4687628,0,138930,0,0
-Reach Renown level 25 with the Maruuk Centaur,Joining the Khansguard,,16528,-1,-1,0,15466,0,5,0,403,4687627,0,138932,0,0
-Reach Renown level 30 with the Iskaara Tuskarr.,Joining the Community,,16529,-1,-1,0,15466,0,5,0,404,4687629,0,138934,0,0
-Reach Renown level 30 with the Valdrakken Accord.,Ally of the Flights,,16530,-1,-1,0,15466,0,5,0,405,4687630,0,138940,0,0
+Reach Renown level 25 with the Maruuk Centaur,Joining the Khansguard,,16528,-1,-1,0,15466,0,5,0,423,4687627,0,138932,0,0
+Reach Renown level 30 with the Iskaara Tuskarr.,Joining the Community,,16529,-1,-1,0,15466,0,5,0,424,4687629,0,138934,0,0
+Reach Renown level 30 with the Valdrakken Accord.,Ally of the Flights,,16530,-1,-1,0,15466,0,5,0,425,4687630,0,138940,0,0
 25 Lunkers found while fishing with an Iskaaran Harpoon.,A Whole Heap of Lunkers,,16531,-1,-1,16533,15466,0,10,0,252,1387362,0,138946,0,0
-Reach True Friend reputation with Sabellian.,True Friends with Sabellian,,16532,-1,-1,0,15466,0,5,0,406,4559236,0,138944,0,0
+Reach True Friend reputation with Sabellian.,True Friends with Sabellian,,16532,-1,-1,0,15466,0,5,0,426,4559236,0,138944,0,0
 10 Lunkers found while fishing with an Iskaaran Harpoon.,Lots of Lunkers,,16533,-1,-1,0,15466,0,10,0,250,4554356,0,138936,0,0
-Reach True Friend reputation with Wrathion.,True Friends with Wrathion,,16536,-1,-1,0,15466,0,5,0,407,1394891,0,138948,0,0
-Reach Maximum reputation with the Cobalt Assembly.,Maximum Power!,,16537,-1,-1,0,15466,0,5,0,408,1394893,0,138950,0,0
-Reach Esteemed reputation with the Artisan's Consortium.,In High Esteem,,16539,-1,-1,0,15466,0,5,0,409,134446,0,138952,0,0
-Complete every Grand Hunt in the Dragon Isles.,Hunt Master,,16540,-1,-1,0,15466,0,15,0,426,461115,0,138954,0,0
-Complete 100 hunt steps.,Longhunter,,16541,-1,-1,0,15466,0,10,128,423,236183,0,139211,0,0
-Find the disgruntled hunter near every Grand Hunt.,The Disgruntled Hunter,,16542,-1,-1,0,15466,0,15,0,425,236444,0,139008,0,0
-Collect all hunting companion colors.,Tetrachromancer,,16543,-1,-1,0,15466,0,10,0,422,236184,0,139231,0,0
-Complete a Grand Hunt from start to finish.,Grand Hunter,,16544,-1,-1,0,15466,0,5,0,421,237377,0,139241,0,0
-Kill 30 bosses in Grand Hunts.,The Best at What I Do,,16545,-1,-1,0,15466,0,15,128,424,4622465,0,138970,0,0
+Reach True Friend reputation with Wrathion.,True Friends with Wrathion,,16536,-1,-1,0,15466,0,5,0,427,1394891,0,138948,0,0
+Reach Maximum reputation with the Cobalt Assembly.,Maximum Power!,,16537,-1,-1,0,15466,0,5,0,428,1394893,0,138950,0,0
+Reach Esteemed reputation with the Artisan's Consortium.,In High Esteem,,16539,-1,-1,0,15466,0,5,0,429,134446,0,138952,0,0
+Complete every Grand Hunt in the Dragon Isles.,Hunt Master,,16540,-1,-1,0,15466,0,15,0,446,461115,0,138954,0,0
+Complete 100 hunt steps.,Longhunter,,16541,-1,-1,0,15466,0,10,128,443,236183,0,139211,0,0
+Find the disgruntled hunter near every Grand Hunt.,The Disgruntled Hunter,,16542,-1,-1,0,15466,0,15,0,445,236444,0,139008,0,0
+Collect all hunting companion colors.,Tetrachromancer,,16543,-1,-1,0,15466,0,10,0,442,236184,0,139231,0,0
+Complete a Grand Hunt from start to finish.,Grand Hunter,,16544,-1,-1,0,15466,0,5,0,441,237377,0,139241,0,0
+Kill 30 bosses in Grand Hunts.,The Best at What I Do,,16545,-1,-1,0,15466,0,15,128,444,4622465,0,138970,0,0
 2 Massive Lunkers found at a Large Fish Sighting.,What's Down There?,,16546,-1,-1,0,15466,0,10,0,265,2057311,0,138968,0,0
 Get knocked down while harpoon fishing.,Pulled!,,16547,-1,-1,0,15466,0,10,0,271,135860,0,139006,0,0
 Catch a fish with a friend.,It Takes a Tuskarr Buddy,,16548,-1,-1,0,15466,0,10,0,273,1911518,0,0,0,0
-Reach maximum Renown level with each of the four major factions.,Popular Around the Isles,,16549,-1,-1,0,15466,0,40,0,399,1380676,0,139163,0,0
+Reach maximum Renown level with each of the four major factions.,Popular Around the Isles,,16549,-1,-1,0,15466,0,40,0,419,1380676,0,139163,0,0
 Restock 100 fish in Tuskarr Fishing holes.,Giving Back to Nature,,16550,-1,-1,0,15466,0,10,0,257,236572,0,139168,0,0
 Restock 1000 fish in Tuskarr Fishing holes.,Giving More Back to Nature,,16551,-1,-1,16550,15466,0,10,0,259,236572,0,139170,0,0
 Restock 5000 fish in Tuskarr Fishing holes.,Giving Even More Back to Nature,,16552,-1,-1,16551,15466,0,10,0,261,236572,0,139172,0,0
 Unlock 5 different fishing nets in Tuskarr Fishing Holes.,Taking From Nature,,16553,-1,-1,0,15466,0,10,0,263,2159817,0,139174,0,0
-Experience all of the dishes served at The Ruby Feast in Valdrakken.,Great Gourmand of The Ruby Feast,,16556,-1,-1,0,15465,0,10,0,36,629060,0,139183,0,0
-Complete one cataloging world quest in each zone.,Wildlife Photographer,,16560,-1,-1,0,15466,0,10,0,414,1109100,0,139213,0,0
+Experience all of the dishes served at The Ruby Feast in Valdrakken.,Great Gourmand of The Ruby Feast,,16556,-1,-1,0,15465,0,10,0,37,629060,0,139183,0,0
+Complete one cataloging world quest in each zone.,Wildlife Photographer,,16560,-1,-1,0,15466,0,10,0,434,1109100,0,139213,0,0
 100 Lunkers found while fishing with an Iskaaran Harpoon.,"Lunkers, Lunkers Everywhere",,16561,-1,-1,16531,15466,0,10,0,253,1387362,0,139225,0,0
 10 Massive Lunkers found at a Large Fish Sighting.,That's not a Fish...,,16562,-1,-1,16546,15466,0,10,0,267,2057311,0,139227,0,0
 25 Massive Lunkers found at a Large Fish Sighting.,We're Going to Need a Bigger Harpoon,,16563,-1,-1,16562,15466,0,10,0,269,2057311,0,139229,0,0
 Catch a fish with 5 friends.,It Takes a Tuskarr Family,,16564,-1,-1,0,15466,0,10,0,275,1911518,0,0,0,0
 Catch a fish with 10 friends.,It Takes a Tuskarr Village,,16565,-1,-1,0,15466,0,10,0,278,1911518,0,0,0,0
-"Take a ""Great Shot"" while cataloging wildlife.",Great Shot!,,16566,-1,-1,0,15466,0,5,0,415,1109170,0,139243,0,0
-"Take 25 ""Great Shots"" while cataloging wildlife.",A Lot of Great Shots!,,16567,-1,-1,16566,15466,0,5,0,416,1109170,0,139245,0,0
-"Take 100 ""Great Shots"" while cataloging wildlife.",Great Shots Galore!,,16568,-1,-1,16567,15466,0,10,0,417,1109170,0,139247,0,0
-Have five or more Wild Arcana powers active at once in the Cobalt Assembly.,Cobalt Enthusiast,,16569,-1,-1,0,15465,0,5,0,49,1041231,0,139249,0,0
-Take photographs of legendary characters while cataloging wildlife.,A Legendary Album,,16570,-1,-1,16573,15466,0,10,0,420,1109168,0,139251,0,0
-Unlock every talent in the Expedition Supplies tree.,Well Supplied,,16571,-1,-1,0,15466,0,10,0,413,1529269,0,139254,0,0
-Take a photograph of a legendary character while cataloging wildlife.,Legendary Photograph,,16572,-1,-1,0,15466,0,5,0,418,1109168,0,139271,0,0
-Take photographs of legendary characters while cataloging wildlife.,Legendary Photographs,,16573,-1,-1,16572,15466,0,5,0,419,1109168,0,139279,0,0
+"Take a ""Great Shot"" while cataloging wildlife.",Great Shot!,,16566,-1,-1,0,15466,0,5,0,435,1109170,0,139243,0,0
+"Take 25 ""Great Shots"" while cataloging wildlife.",A Lot of Great Shots!,,16567,-1,-1,16566,15466,0,5,0,436,1109170,0,139245,0,0
+"Take 100 ""Great Shots"" while cataloging wildlife.",Great Shots Galore!,,16568,-1,-1,16567,15466,0,10,0,437,1109170,0,139247,0,0
+Have five or more Wild Arcana powers active at once in the Cobalt Assembly.,Cobalt Enthusiast,,16569,-1,-1,0,15465,0,5,0,50,1041231,0,139249,0,0
+Take photographs of legendary characters while cataloging wildlife.,A Legendary Album,,16570,-1,-1,16573,15466,0,10,0,440,1109168,0,139251,0,0
+Unlock every talent in the Expedition Supplies tree.,Well Supplied,,16571,-1,-1,0,15466,0,10,0,433,1529269,0,139254,0,0
+Take a photograph of a legendary character while cataloging wildlife.,Legendary Photograph,,16572,-1,-1,0,15466,0,5,0,438,1109168,0,139271,0,0
+Take photographs of legendary characters while cataloging wildlife.,Legendary Photographs,,16573,-1,-1,16572,15466,0,5,0,439,1109168,0,139279,0,0
 Target and Emote Sleep next to the following Dreamguards in the Ohn'ahran Plains.,Sleeping on the Job,,16574,-1,-1,0,15455,0,5,0,51,341763,0,139287,0,0
 Find the following dragon glyphs in the Waking Shores.,Waking Shores Glyph Hunter,,16575,-1,-1,0,15462,0,20,131072,184,4672500,0,139294,0,0
 Find the following dragon glyphs in the Ohn'ahran Plains.,Ohn'ahran Plains Glyph Hunter,,16576,-1,-1,0,15462,0,20,131072,185,4672498,0,139305,0,0
 Find the following dragon glyphs in the Azure Span.,Azure Span Glyph Hunter,,16577,-1,-1,0,15462,0,20,131072,186,4672495,0,139316,0,0
 Find the following dragon glyphs in Thaldraszus.,Thaldraszus Glyph Hunter,,16578,-1,-1,0,15462,0,20,131072,187,4672499,0,139327,0,0
 "Complete the optional quests from Camp Antonidas, Iskaara, and Three Falls Lookout listed below.",Lend a Helping Span,,16580,-1,-1,0,15455,0,10,0,18,2735955,0,139338,0,0
-Fly from the top of the Azure Archives to the Cobalt Assembly without landing.,Seeing Blue,,16581,-1,-1,0,15465,0,10,0,50,2103880,0,139355,0,0
-"While disguised as a Nokhud Martial, complete the training course in Nokhudon Hold.",Knew You Nokhud Do It!,,16583,-1,-1,0,15465,0,10,0,40,1103068,0,139359,0,0
-Release 10 Hope Kites that were tethered by locals of the Waking Shores while waiting for the dragonflights' return.,Symbols of Hope,,16584,-1,-1,0,15465,0,5,0,32,133837,0,139361,0,0
+Fly from the top of the Azure Archives to the Cobalt Assembly without landing.,Seeing Blue,,16581,-1,-1,0,15465,0,10,0,51,2103880,0,139355,0,0
+"While disguised as a Nokhud Martial, complete the training course in Nokhudon Hold.",Knew You Nokhud Do It!,,16583,-1,-1,0,15465,0,10,0,41,1103068,0,139359,0,0
+Release 10 Hope Kites that were tethered by locals of the Waking Shores while waiting for the dragonflights' return.,Symbols of Hope,,16584,-1,-1,0,15465,0,5,0,33,133837,0,139361,0,0
 Complete the Dragon Isles quest achievements listed below.,Loremaster of the Dragon Isles,,16585,-1,-1,0,15455,0,10,131072,11,4672500,0,139372,0,0
 Complete 10 climbing World Quests.,Lead Climber,,16587,-1,-1,0,15466,0,5,0,244,252175,0,139433,0,0
 Collect 10 Lost Supplies during climbing World Quests.,How Did These Get Here?,,16588,-1,-1,0,15466,0,5,0,246,1519426,0,139446,0,0
@@ -8476,8 +8476,8 @@ Collect 750 Bloody Tokens.,Bloodstained Bounty,,16614,-1,-1,0,15283,0,10,0,1,900
 Collect 3000 Bloody Tokens.,Blood Bank,,16615,-1,-1,16616,15283,0,10,0,3,4554435,0,139570,0,0
 Collect 1500 Bloody Tokens.,Prosperously Bloody,,16616,-1,-1,16614,15283,0,10,0,2,4554455,0,139568,0,0
 Deliver eight warm ohuna eggs to Ohuna Keeper Taruk in a single visit to The Nokhud Offensive on Mythic difficulty.,Ohuna Incubation,,16620,2516,-1,0,15467,0,10,0,49,236999,0,139483,0,0
-Try specialty food and drinks from a variety of Thaldraszus eateries.,"One of Everything, Please",,16621,-1,-1,0,15465,0,10,0,41,651585,0,139463,0,0
-Deliver bait to Patient Vaargo in 3 minutes or less!,Three Minutes or It's Free,,16622,-1,-1,0,15465,0,5,0,43,538536,0,139485,0,0
+Try specialty food and drinks from a variety of Thaldraszus eateries.,"One of Everything, Please",,16621,-1,-1,0,15465,0,10,0,42,651585,0,139463,0,0
+Deliver bait to Patient Vaargo in 3 minutes or less!,Three Minutes or It's Free,,16622,-1,-1,0,15465,0,5,0,44,538536,0,139485,0,0
 Avoid 50 hazards using the Spiked Cleats during climbing World Quests.,Toe Tension,,16623,-1,-1,0,15466,0,10,0,249,2400283,0,139503,0,0
 Unlock climbing World Quests with the Dragonscale Expedition.,Which Knot Was It Again?,,16624,-1,-1,0,15466,0,5,131072,243,1119938,0,139508,0,0
 Use the Buddy System 10 times during climbing World Quests.,Belay On!,,16625,-1,-1,0,15466,0,5,0,245,236681,0,139515,0,0
@@ -8487,8 +8487,8 @@ Use the Buddy System 10 times during climbing World Quests.,Belay On!,,16625,-1,
 "Obtain 100 skill points in the ""Dragon Isles"" category of cooking.",Dragon Isles Cook,,16631,-1,-1,0,170,0,10,0,13,4620671,0,139561,0,0
 "Obtain 100 skill points in the ""Dragon Isles"" category of fishing.",Dragon Isles Fisherman,,16632,-1,-1,0,171,0,10,0,15,4620674,0,139563,0,0
 ,<DNT> Maruuk Centaur Rank 25 + Title Quest,,16633,-1,-1,0,15466,0,0,3145728,394,136243,0,139592,0,0
-Take pictures with a the S.E.L.F.I.E. camera at all of the vistas listed below in Thaldraszus.,Framing a New Perspective,,16634,-1,-1,0,15465,0,10,0,44,1109100,0,139594,0,0
-Realign the ley lines of the Azure Span,Ley Line in the Span,,16638,-1,-1,0,15465,0,5,0,51,1033908,0,139595,0,0
+Take pictures with a the S.E.L.F.I.E. camera at all of the vistas listed below in Thaldraszus.,Framing a New Perspective,,16634,-1,-1,0,15465,0,10,0,45,1109100,0,139594,0,0
+Realign the ley lines of the Azure Span,Ley Line in the Span,,16638,-1,-1,0,15465,0,5,0,52,1033908,0,139595,0,0
 "Complete Uldaman: Legacy of Tyr at Mythic Level 20 or higher, within the time limit.",Keystone Hero: Uldaman: Legacy of Tyr,Reward: Teleport to Uldaman: Legacy of Tyr,16639,2451,-1,0,15272,0,0,2048,22,4578418,0,139632,0,0
 "Complete Ruby Life Pools at Mythic Level 20 or higher, within the time limit.",Keystone Hero: Ruby Life Pools,Reward: Teleport to Ruby Life Pools,16640,2521,-1,0,15272,0,0,2048,23,4578416,0,139634,0,0
 "Complete The Nokhud Offensive at Mythic Level 20 or higher, within the time limit.",Keystone Hero: The Nokhud Offensive,Reward: Teleport to The Nokhud Offensive,16641,2516,-1,0,15272,0,0,2048,24,4578413,0,139636,0,0
@@ -8517,10 +8517,10 @@ Collect the dragon glyph in Rubyscale Outpost.,Dragon Glyphs: Rubyscale Outpost,
 Collect the dragon glyph near Mirewood Fen.,Dragon Glyphs: Mirewood Fen,,16671,-1,-1,0,15462,0,0,1179648,202,4728198,0,0,0,0
 Collect the dragon glyph outside Forkriver Crossing.,Dragon Glyphs: Forkriver Crossing,,16672,-1,-1,0,15462,0,0,1179648,211,4728198,0,0,0,0
 Collect the dragon glyph near The Fallen Course.,Dragon Glyphs: The Fallen Course,,16673,-1,-1,0,15462,0,0,1179648,226,4728198,0,0,0,0
-Complete 10 of the following special encounters in The Waking Shores.,Adventurer of The Waking Shores,,16676,-1,-1,0,15465,0,5,0,14,4638396,0,139710,0,0
-Complete 10 of the following special encounters in the Ohn'ahran Plains.,Adventurer of the Ohn'ahran Plains,,16677,-1,-1,0,15465,0,5,0,15,4638396,0,139740,0,0
-Complete 10 of the following special encounters in The Azure Span.,Adventurer of The Azure Span,,16678,-1,-1,0,15465,0,5,0,16,4638396,0,139776,0,0
-Complete 10 of the following special encounters in Thaldraszus.,Adventurer of Thaldraszus,,16679,-1,-1,0,15465,0,5,0,17,4638396,0,139819,0,0
+Complete 10 of the following special encounters in The Waking Shores.,Adventurer of The Waking Shores,,16676,-1,-1,0,15465,0,5,0,15,4638396,0,139710,0,0
+Complete 10 of the following special encounters in the Ohn'ahran Plains.,Adventurer of the Ohn'ahran Plains,,16677,-1,-1,0,15465,0,5,0,16,4638396,0,139740,0,0
+Complete 10 of the following special encounters in The Azure Span.,Adventurer of The Azure Span,,16678,-1,-1,0,15465,0,5,0,17,4638396,0,139776,0,0
+Complete 10 of the following special encounters in Thaldraszus.,Adventurer of Thaldraszus,,16679,-1,-1,0,15465,0,5,0,18,4638396,0,139819,0,0
 ,10.0 Dragonflight - Expansion Quest Launch (Return to Docks),,16681,-1,-1,0,92,0,0,18087940,55,136243,0,139848,0,0
 Complete the quest achievements listed below.,In Tyr's Footsteps,Reward: Bottled Essence Detector,16683,-1,-1,0,169,0,15,135168,47,4554442,0,139850,0,0
 Collect the following cosmetic armor unlocks for the Renewed Proto-Drake.,Renewed Proto-Drake Armor,,16696,-1,-1,0,15478,0,5,131072,2,4622499,0,140028,0,0
@@ -8539,22 +8539,22 @@ Collect the following cosmetic armor unlocks for the Highland Drake.,Highland Dr
 Collect the following cosmetic horn and hair unlocks for the Highland Drake.,Highland Drake Horns and Hair,,16710,-1,-1,0,15478,0,5,131072,13,4622497,0,140199,0,0
 Collect the following cosmetic back and tail unlocks for the Highland Drake.,Highland Drake Back and Tail,,16711,-1,-1,0,15478,0,5,131072,15,4622497,0,140212,0,0
 Collect the following cosmetic head unlocks for the Highland Drake.,Highland Drake Head Features,,16712,-1,-1,0,15478,0,5,131072,14,4622497,0,140222,0,0
-,<DNT> Wrathion - 1 - Trusted Champion,,16713,-1,-1,0,15466,0,0,3145728,427,136243,0,140253,0,0
-,<DNT> Wrathion - 2 - Ally,,16714,-1,-1,0,15466,0,0,3145728,429,136243,0,140255,0,0
-,<DNT> Wrathion - 3 - Close Ally,,16715,-1,-1,0,15466,0,0,3145728,430,136243,0,140257,0,0
-,<DNT> Wrathion - 4 - Friend,,16716,-1,-1,0,15466,0,0,3145728,433,136243,0,140259,0,0
-,<DNT> Wrathion - 5 - True Friend,,16717,-1,-1,0,15466,0,0,3145728,434,136243,0,140261,0,0
-,<DNT> Sabellian - 1 - Devotee,,16718,-1,-1,0,15466,0,0,3145728,436,136243,0,140263,0,0
-,<DNT> Sabellian - 2 - Cohort,,16719,-1,-1,0,15466,0,0,3145728,437,136243,0,140265,0,0
-,<DNT> Sabellian - 3 - Ally,,16720,-1,-1,0,15466,0,0,3145728,438,136243,0,140267,0,0
-,<DNT> Sabellian - 4 - Fang,,16721,-1,-1,0,15466,0,0,3145728,439,136243,0,140269,0,0
-,<DNT> Sabellian - 5 - Friend,,16722,-1,-1,0,15466,0,0,3145728,440,136243,0,140271,0,0
+,<DNT> Wrathion - 1 - Trusted Champion,,16713,-1,-1,0,15466,0,0,3145728,447,136243,0,140253,0,0
+,<DNT> Wrathion - 2 - Ally,,16714,-1,-1,0,15466,0,0,3145728,449,136243,0,140255,0,0
+,<DNT> Wrathion - 3 - Close Ally,,16715,-1,-1,0,15466,0,0,3145728,450,136243,0,140257,0,0
+,<DNT> Wrathion - 4 - Friend,,16716,-1,-1,0,15466,0,0,3145728,453,136243,0,140259,0,0
+,<DNT> Wrathion - 5 - True Friend,,16717,-1,-1,0,15466,0,0,3145728,454,136243,0,140261,0,0
+,<DNT> Sabellian - 1 - Devotee,,16718,-1,-1,0,15466,0,0,3145728,456,136243,0,140263,0,0
+,<DNT> Sabellian - 2 - Cohort,,16719,-1,-1,0,15466,0,0,3145728,457,136243,0,140265,0,0
+,<DNT> Sabellian - 3 - Ally,,16720,-1,-1,0,15466,0,0,3145728,458,136243,0,140267,0,0
+,<DNT> Sabellian - 4 - Fang,,16721,-1,-1,0,15466,0,0,3145728,459,136243,0,140269,0,0
+,<DNT> Sabellian - 5 - Friend,,16722,-1,-1,0,15466,0,0,3145728,460,136243,0,140271,0,0
 Collect the following cosmetic scale and pattern unlocks for the Cliffside Wylderdrake.,Cliffside Wylderdrake Scales and Patterns,,16723,-1,-1,0,15478,0,5,131072,16,4622502,0,140290,0,0
 Collect the following cosmetic armor unlocks for the Cliffside Wylderdrake.,Cliffside Wylderdrake Armor,,16724,-1,-1,0,15478,0,5,131072,17,4622502,0,140300,0,0
 Collect the following cosmetic horn and mane unlocks for the Cliffside Wylderdrake.,Cliffside Wylderdrake Horns and Manes,,16725,-1,-1,0,15478,0,5,131072,18,4622502,0,140309,0,0
 Collect the following cosmetic back and tail unlocks for the Cliffside Wylderdrake.,Cliffside Wylderdrake Back and Tail,,16726,-1,-1,0,15478,0,5,131072,20,4622502,0,140324,0,0
 Collect the following cosmetic head unlocks for the Cliffside Wylderdrake.,Cliffside Wylderdrake Head Features,,16727,-1,-1,0,15478,0,5,131072,19,4622502,0,140333,0,0
-"The critters of the Dragon Isles have gone 10,000 years without anyone to show them /love.",To All the Squirrels Hidden Til Now,,16729,-1,-1,0,15465,0,10,0,52,237182,0,140360,0,0
+"The critters of the Dragon Isles have gone 10,000 years without anyone to show them /love.",To All the Squirrels Hidden Til Now,,16729,-1,-1,0,15465,0,10,0,53,237182,0,140360,0,0
 Obtain the Crimson Gladiator's Drake from Dragonflight Season 1.,Crimson Gladiator's Drake,,16730,-1,-1,0,15269,1,0,145408,51,4571779,0,140414,0,0
 End Dragonflight PvP Season 1 in the top 0.1% of the Solo Shuffle ladder (requires 50 games won on your current faction in Dragonflight Season 1).,Crimson Legend: Dragonflight Season 1,Title Reward: Crimson Legend,16734,-1,-1,0,15270,0,0,14336,241,236540,0,0,0,0
 ,10.0.5 Trading Post - Tutorial Quest - Objective: Tenders Claimed - JZB <DND>,,16735,-1,-1,0,92,0,0,3276804,93,136243,0,0,0,0
@@ -8572,32 +8572,32 @@ Liberate a Qalashi magmammoth... permanently.,Grand Theft Mammoth,,16736,-1,-1,0
 ,Jewelcrafting Crafting Orders Fulfilled,,16754,-1,-1,0,173,0,0,524289,72,136243,0,140699,0,0
 ,Leatherworking Crafting Orders Fulfilled,,16755,-1,-1,0,173,0,0,524289,73,136243,0,140701,0,0
 ,Tailoring Crafting Orders Fulfilled,,16756,-1,-1,0,173,0,0,524289,74,136243,0,140703,0,0
-Unlock cataloging World Quests with the Dragonscale Expedition.,"Ready, Aim, Catalog!",,16758,-1,-1,0,15466,0,5,131072,402,1109100,0,140719,0,0
+Unlock cataloging World Quests with the Dragonscale Expedition.,"Ready, Aim, Catalog!",,16758,-1,-1,0,15466,0,5,131072,422,1109100,0,140719,0,0
 ,<Hidden> Adventure Mode - Reached Dragon Isles,,16759,-1,-1,0,15455,0,0,1048576,40,136243,0,140721,0,0
 Reach the maximum friendship with Sabellian at the Obsidian Throne.,The Obsidian Bloodline,Title Reward: Paragon of the Obsidian Brood,16760,-1,-1,0,15466,0,10,131072,277,132768,0,140725,0,0
 Explore the regions of the Dragon Isles.,Dragon Isles Explorer,,16761,-1,-1,0,97,0,25,131072,19,4661645,0,140738,0,0
 Free every Captive Tuskarr in a Meat Storage in a single visit to Brackenhide Hollow.,The Vegetarian Diet,Reward: Happy Tuskarr Palooza,16762,2520,-1,0,15467,0,10,0,30,4635249,200631,140932,0,0
 Collect any armor set from Dragonflight PvP Season 1.,Crimson Carpet Fashion,,16764,-1,-1,0,15259,0,10,131072,75,4624566,0,142321,0,0
-,<DNT> Expedition Supplies: Climbing Gear,,16765,-1,-1,0,15466,0,0,3276804,441,136243,0,140764,0,0
-,<DNT> Expedition Supplies: Cataloging Gear,,16766,-1,-1,0,15466,0,0,3276804,442,136243,0,140766,0,0
-,<DNT> Expedition Supplies: Tireless Grip Chalk,,16767,-1,-1,0,15466,0,0,3276804,443,136243,0,140768,0,0
-,<DNT> Expedition Supplies: Anomaly Detection Spell Framework,,16768,-1,-1,0,15466,0,0,3276804,444,136243,0,140770,0,0
-,<DNT> Expedition Supplies: Cartographer's Flag,,16769,-1,-1,0,15466,0,0,3276804,445,136243,0,140772,0,0
-,<DNT> Expedition Supplies: Pictronic Gadget Upgrade,,16770,-1,-1,0,15466,0,0,3276804,446,136243,0,140774,0,0
-,<DNT> Expedition Supplies: Mechanism Bypass,,16771,-1,-1,0,15466,0,0,3276804,447,136243,0,140776,0,0
-,<DNT> Expedition Supplies: Quick Draw Film Holster,,16772,-1,-1,0,15466,0,0,3276804,448,136243,0,140778,0,0
-,<DNT> Expedition Supplies: Spiked Cleats,,16773,-1,-1,0,15466,0,0,3276804,449,136243,0,140780,0,0
-,<DNT> Expedition Supplies: Rupert's Helping Hand,,16774,-1,-1,0,15466,0,0,3276804,450,136243,0,140782,0,0
-,<DNT> Expedition Supplies: Jeb's Monocle,,16775,-1,-1,0,15466,0,0,3276804,451,136243,0,140784,0,0
-,<DNT> Expedition Supplies: Auto-Grappler,,16776,-1,-1,0,15466,0,0,3276804,452,136243,0,140786,0,0
-,<DNT> Expedition Supplies: Lucky Rock,,16777,-1,-1,0,15466,0,0,3276804,453,136243,0,140788,0,0
-,<DNT> Cobalt Assembly Talent: Arcane Instability,,16778,-1,-1,0,15466,0,0,3276804,454,136243,0,140790,0,0
-,<DNT> Cobalt Assembly Talent: Arcane Shield,,16779,-1,-1,0,15466,0,0,3276804,455,136243,0,140792,0,0
-,<DNT> Cobalt Assembly Talent: Azure Arise,,16780,-1,-1,0,15466,0,0,3276804,456,136243,0,140794,0,0
-,<DNT> Cobalt Assembly Talent: Cobalt Cutthroat,,16781,-1,-1,0,15466,0,0,3276804,457,136243,0,140796,0,0
-,<DNT> Cobalt Assembly Talent: Cobalt Reputation,,16782,-1,-1,0,15466,0,0,3276804,458,136243,0,140798,0,0
-,<DNT> Cobalt Assembly Talent: Extra Wild Arcana,,16783,-1,-1,0,15466,0,0,3276804,459,136243,0,140800,0,0
-,<DNT> Cobalt Assembly Talent: Unhelpful Fireworks,,16784,-1,-1,0,15466,0,0,3276804,460,136243,0,140802,0,0
+,<DNT> Expedition Supplies: Climbing Gear,,16765,-1,-1,0,15466,0,0,3276804,461,136243,0,140764,0,0
+,<DNT> Expedition Supplies: Cataloging Gear,,16766,-1,-1,0,15466,0,0,3276804,462,136243,0,140766,0,0
+,<DNT> Expedition Supplies: Tireless Grip Chalk,,16767,-1,-1,0,15466,0,0,3276804,463,136243,0,140768,0,0
+,<DNT> Expedition Supplies: Anomaly Detection Spell Framework,,16768,-1,-1,0,15466,0,0,3276804,464,136243,0,140770,0,0
+,<DNT> Expedition Supplies: Cartographer's Flag,,16769,-1,-1,0,15466,0,0,3276804,465,136243,0,140772,0,0
+,<DNT> Expedition Supplies: Pictronic Gadget Upgrade,,16770,-1,-1,0,15466,0,0,3276804,466,136243,0,140774,0,0
+,<DNT> Expedition Supplies: Mechanism Bypass,,16771,-1,-1,0,15466,0,0,3276804,467,136243,0,140776,0,0
+,<DNT> Expedition Supplies: Quick Draw Film Holster,,16772,-1,-1,0,15466,0,0,3276804,468,136243,0,140778,0,0
+,<DNT> Expedition Supplies: Spiked Cleats,,16773,-1,-1,0,15466,0,0,3276804,469,136243,0,140780,0,0
+,<DNT> Expedition Supplies: Rupert's Helping Hand,,16774,-1,-1,0,15466,0,0,3276804,470,136243,0,140782,0,0
+,<DNT> Expedition Supplies: Jeb's Monocle,,16775,-1,-1,0,15466,0,0,3276804,471,136243,0,140784,0,0
+,<DNT> Expedition Supplies: Auto-Grappler,,16776,-1,-1,0,15466,0,0,3276804,472,136243,0,140786,0,0
+,<DNT> Expedition Supplies: Lucky Rock,,16777,-1,-1,0,15466,0,0,3276804,473,136243,0,140788,0,0
+,<DNT> Cobalt Assembly Talent: Arcane Instability,,16778,-1,-1,0,15466,0,0,3276804,474,136243,0,140790,0,0
+,<DNT> Cobalt Assembly Talent: Arcane Shield,,16779,-1,-1,0,15466,0,0,3276804,475,136243,0,140792,0,0
+,<DNT> Cobalt Assembly Talent: Azure Arise,,16780,-1,-1,0,15466,0,0,3276804,476,136243,0,140794,0,0
+,<DNT> Cobalt Assembly Talent: Cobalt Cutthroat,,16781,-1,-1,0,15466,0,0,3276804,477,136243,0,140796,0,0
+,<DNT> Cobalt Assembly Talent: Cobalt Reputation,,16782,-1,-1,0,15466,0,0,3276804,478,136243,0,140798,0,0
+,<DNT> Cobalt Assembly Talent: Extra Wild Arcana,,16783,-1,-1,0,15466,0,0,3276804,479,136243,0,140800,0,0
+,<DNT> Cobalt Assembly Talent: Unhelpful Fireworks,,16784,-1,-1,0,15466,0,0,3276804,480,136243,0,140802,0,0
 ,<DNT> Dragonscale Expedition Rank 02 (Account),,16786,-1,-1,0,15466,0,0,3276800,256,136243,0,140911,0,0
 ,<DNT> Maruuk Centaur Rank 03 (Account),,16787,-1,-1,0,15466,0,0,3276800,370,136243,0,140914,0,0
 ,<DNT> Maruuk Centaur Rank 03 (Character),,16788,-1,-1,0,15466,0,0,3145728,371,136243,0,140917,0,0
@@ -9029,16 +9029,16 @@ Complete all races in the Forbidden Reach.,Forbidden Reach Racing Completionist,
 Obtain silver in all races in the Forbidden Reach.,Forbidden Reach Racing Completionist: Silver,,17296,-1,-1,17294,15462,0,20,0,390,1100022,0,142465,0,0
 Obtain gold in all races in the Forbidden Reach.,Forbidden Reach Racing Completionist: Gold,Title Reward: Forbidden Reach Racer,17298,-1,-1,17296,15462,0,20,0,391,1100022,0,142478,0,0
 Owner of any Dragonflight edition.,Trading Post: Dragonflight,Reward: 500 Trader's Tender,17305,-1,-1,0,92,0,10,2228228,94,4696085,0,142517,0,0
-,<DNT> Winterpelt Furbolg - 1 - Friendly,,17306,-1,-1,0,15466,0,0,3145728,428,136243,0,142519,0,0
-,<DNT> Winterpelt Furbolg - 1 - Honored,,17307,-1,-1,0,15466,0,0,3145728,431,136243,0,142521,0,0
-,<DNT> Winterpelt Furbolg - 1 - Revered,,17308,-1,-1,0,15466,0,0,3145728,432,136243,0,142523,0,0
-,<DNT> Winterpelt Furbolg - 1 - Exalted,,17309,-1,-1,0,15466,0,0,3145728,435,136243,0,142525,0,0
-,10.0 Prologue - Storms - Dimmed Primeval Water,,17310,-1,-1,0,15466,0,0,3276804,461,136243,0,142541,0,0
-,10.0 Prologue - Storms - Dimmed Primeval Fire,,17311,-1,-1,0,15466,0,0,3276804,462,136243,0,142543,0,0
-,10.0 Prologue - Storms - Dimmed Primeval Earth,,17312,-1,-1,0,15466,0,0,3276804,463,136243,0,142545,0,0
-,10.0 Prologue - Storms - Dimmed Primeval Storm,,17313,-1,-1,0,15466,0,0,3276804,464,136243,0,142547,0,0
+,<DNT> Winterpelt Furbolg - 1 - Friendly,,17306,-1,-1,0,15466,0,0,3145728,448,136243,0,142519,0,0
+,<DNT> Winterpelt Furbolg - 1 - Honored,,17307,-1,-1,0,15466,0,0,3145728,451,136243,0,142521,0,0
+,<DNT> Winterpelt Furbolg - 1 - Revered,,17308,-1,-1,0,15466,0,0,3145728,452,136243,0,142523,0,0
+,<DNT> Winterpelt Furbolg - 1 - Exalted,,17309,-1,-1,0,15466,0,0,3145728,455,136243,0,142525,0,0
+,10.0 Prologue - Storms - Dimmed Primeval Water,,17310,-1,-1,0,15466,0,0,3276804,481,136243,0,142541,0,0
+,10.0 Prologue - Storms - Dimmed Primeval Fire,,17311,-1,-1,0,15466,0,0,3276804,482,136243,0,142543,0,0
+,10.0 Prologue - Storms - Dimmed Primeval Earth,,17312,-1,-1,0,15466,0,0,3276804,483,136243,0,142545,0,0
+,10.0 Prologue - Storms - Dimmed Primeval Storm,,17313,-1,-1,0,15466,0,0,3276804,484,136243,0,142547,0,0
 Owner of the Dragonflight Heroic Edition Tangled Dreamweaver mount.,Heroic Edition: Tangled Dreamweaver,,17314,-1,-1,0,15268,1,0,133120,38,4096390,0,142551,0,0
-Deliver the following items to the Scalecommanders at the Forbidden Reach.,While We Were Sleeping,,17315,-1,-1,0,15465,0,10,0,85,134422,0,143322,0,0
+Deliver the following items to the Scalecommanders at the Forbidden Reach.,While We Were Sleeping,,17315,-1,-1,0,15465,0,10,0,86,134422,0,143322,0,0
 Honor the Elders which are located in the Dragon Isles.,Elders of the Dragon Isles,,17321,2574,-1,0,160,0,10,0,14,135982,0,142615,0,0
 Complete all reverse races in the Dragon Isles.,Reverse Racer: Bronze,,17330,-1,-1,0,15462,0,10,0,323,1002572,0,142658,0,0
 Obtain silver in all reverse races in the Dragon Isles.,Reverse Racer: Silver,,17331,-1,-1,17330,15462,0,10,0,324,1002575,0,142663,0,0
@@ -9054,7 +9054,7 @@ Use Whirling Surge to dismount 50 enemy players in War Mode.,Airborne Tumbler,Ti
 ,<Hidden> 10.0 Professions Onboarding Skip Completed [DNT],,17365,-1,-1,0,15455,0,0,3145732,37,136243,0,142945,0,0
 Delivered a Restored Hakkari Bijou to someone with a great interest in such artifacts.,Relics of a Fallen Empire,Unlocks ancient secrets within Zul'Gurub,17366,-1,-1,0,14777,0,10,131072,27,132528,0,142996,0,0
 Fish up a Gurubashi Cache in Zul'Gurub.,Deadliest Cache,,17367,-1,-1,0,171,0,10,0,77,132595,0,143003,0,0
-Unlock 50 doors within the Zskera Vaults using Zskera Vault Keys.,Door To Door,,17397,-1,-1,0,15465,0,10,131072,86,4909720,0,143163,0,0
+Unlock 50 doors within the Zskera Vaults using Zskera Vault Keys.,Door To Door,,17397,-1,-1,0,15465,0,10,131072,87,4909720,0,143163,0,0
 Collect the dragon glyph near Winglord's Perch.,Dragon Glyphs: Winglord's Perch,,17398,-1,-1,0,15462,0,0,1179648,392,4728198,0,0,0,0
 Collect the dragon glyph near Talon's Watch.,Dragon Glyphs: Talon's Watch,,17399,-1,-1,0,15462,0,0,1179648,393,4728198,0,0,0,0
 Collect the dragon glyph near Froststone Peak.,Dragon Glyphs: Froststone Peak,,17400,-1,-1,0,15462,0,0,1179648,394,4728198,0,0,0,0
@@ -9068,11 +9068,12 @@ Complete 8 Pet Battle World Quests on the Dragon Isles with a full team of level
 Aided in the Zandalar Tribe's incursion into Zul'Gurub with your crafting skills prior to the Cataclysm.,Craftsman of the Zandalar Tribe,,17410,-1,-1,0,172,0,0,2048,23,134232,0,0,0,0
 Find the following dragon glyphs in the Forbidden Reach.,Forbidden Reach Glyph Hunter,,17411,-1,-1,0,15462,0,20,131072,400,4672496,0,143219,0,0
 Aided in the Argent Dawn's assault against Naxxramas with your crafting skills prior to the expedition on Northrend.,Craftsman of the Argent Dawn,,17412,-1,-1,0,172,0,0,2048,22,134499,0,0,0,0
-Unlock 150 doors within the Zskera Vaults using Zskera Vault Keys.,Door Buster,Title Reward: the Key Master,17413,-1,-1,17397,15465,0,15,131072,87,4909720,0,143230,0,0
-,Trial of Tyr Ineligible For Spark Skip [DNT],,17420,-1,-1,0,169,0,0,1048580,91,136243,0,143312,0,0
-,<DNT> Artisan's Consortium Reputation is Preferred (Rank 1),,17422,-1,-1,0,15466,0,0,3145732,410,134446,0,143320,0,0
-,<DNT> Artisan's Consortium Reputation is Respected (Rank 2),,17423,-1,-1,0,15466,0,0,3145732,411,134446,0,143318,0,0
-,<DNT> Artisan's Consortium Reputation is Valued (Rank 3),,17424,-1,-1,0,15466,0,0,3145732,412,134446,0,143316,0,0
+Unlock 150 doors within the Zskera Vaults using Zskera Vault Keys.,Door Buster,Title Reward: the Key Master,17413,-1,-1,17397,15465,0,15,131072,88,4909720,0,143230,0,0
+,Trial of Tyr Ineligible For Spark Skip [DNT],,17420,-1,-1,0,169,0,0,1048580,92,136243,0,143312,0,0
+,<DNT> Artisan's Consortium Reputation is Preferred (Rank 1),,17422,-1,-1,0,15466,0,0,3145732,430,134446,0,143320,0,0
+,<DNT> Artisan's Consortium Reputation is Respected (Rank 2),,17423,-1,-1,0,15466,0,0,3145732,431,134446,0,143318,0,0
+,<DNT> Artisan's Consortium Reputation is Valued (Rank 3),,17424,-1,-1,0,15466,0,0,3145732,432,134446,0,143316,0,0
+Owner of the Volatile Self-Driving Toolbox pet from the Recruit a Friend promotion.,Toolbox Trouble,,17426,-1,-1,0,15268,0,0,133120,43,4679804,0,143471,0,0
 Reach 100 skill in the Winterpelt language. Allows you to chat in Winterpelt!,Winterpelt Conversationalist,,17427,-1,-1,0,15466,0,10,0,2,4901295,0,143508,0,0
 ,<Hidden> Winterpelt Language - Send Mailer from Sonova,,17428,-1,-1,0,15455,0,0,9437184,45,136243,0,143510,0,0
 Complete Zaralek Cavern Crystal Circuit.,Crystal Circuit: Bronze,,17429,-1,-1,0,15462,0,0,1048576,401,1002572,0,0,0,0
@@ -9147,7 +9148,7 @@ Equipped Azeroth's heroes as an Armorsmith during war efforts prior to the Catac
 Equipped Azeroth's heroes as a specialized Leatherworker during war efforts prior to the Cataclysm.,Renowned Leatherworking Specialist,,17498,-1,-1,0,172,0,0,2048,26,133611,0,0,0,0
 Equipped Azeroth's heroes as a specialized Tailor during war efforts prior to the Cataclysm.,Renowned Tailoring Specialist,,17499,-1,-1,0,172,0,0,2048,27,136249,0,0,0,0
 Get killed by Fyrakk.,Still Standing in the Fire,,17506,-1,-1,0,15465,0,10,0,1,4914672,0,143602,0,0
-Unlock every door in a single Zskera Vault within one week.,"Every Door, Everywhere, All At Once",,17509,-1,-1,0,15465,0,0,0,88,237538,0,0,0,0
+Unlock every door in a single Zskera Vault within one week.,"Every Door, Everywhere, All At Once",,17509,-1,-1,0,15465,0,0,0,89,237538,0,0,0,0
 Collect the dragon glyph near Glimmerogg,Dragon Glyphs: Glimmerogg,,17510,-1,-1,0,15462,0,0,1179648,467,4728198,0,0,0,0
 Collect the dragon glyph near the Titan Vault,Dragon Glyphs: Titan Vault,,17511,-1,-1,0,15462,0,0,1179648,468,4728198,0,0,0,0
 Collect the dragon glyph near Loamm,Dragon Glyphs: Loamm,,17512,-1,-1,0,15462,0,0,1179648,469,4728198,0,0,0,0
@@ -9156,31 +9157,58 @@ Collect the dragon glyph near the Dragon Nests,Dragon Glyphs: Dragon Nests,,1751
 Collect the dragon glyph near the Throughway,Dragon Glyphs: The Throughway,,17515,-1,-1,0,15462,0,0,1179648,472,4728198,0,0,0,0
 Collect the dragon glyph near Sulfur Ravine,Dragon Glyphs: Sulfur Ravine,,17516,-1,-1,0,15462,0,0,1179648,473,4728198,0,0,0,0
 Collect the dragon glyph near the Brimstone Garrison,Dragon Glyphs: Brimstone Garrison,,17517,-1,-1,0,15462,0,0,1179648,474,4728198,0,0,0,0
-Complete 10 of the following special encounters in the post-storm Forbidden Reach.,Adventurer of the Forbidden Reach,,17524,-1,-1,0,15465,0,5,0,18,4638396,0,143672,0,0
-Complete all of the following special encounters in the post-storm Forbidden Reach.,Champion of the Forbidden Reach,,17525,-1,-1,17524,15465,0,15,0,19,4046656,0,143702,0,0
-Discover the hidden treasures within the post-storm Forbidden Reach.,Treasures of the Forbidden Reach,,17526,-1,-1,0,15465,0,5,0,28,1542852,0,143732,0,0
-Open 20 small treasures around the post-storm Forbidden Reach.,Scavenger of the Forbidden Reach,,17527,-1,-1,0,15465,0,5,0,79,1542844,0,143745,0,0
-Open 100 small treasures around the post-storm Forbidden Reach.,Hoarder of the Forbidden Reach,,17528,-1,-1,17527,15465,0,10,0,80,1542848,0,143757,0,0
-Open 10 Forbidden Hoards around the post-storm Forbidden Reach.,Forbidden Spoils,,17529,-1,-1,0,15465,0,10,0,81,4638544,0,143759,0,0
-Collect each of the following books found in the post-storm Forbidden Reach.,Librarian of the Reach,,17530,-1,-1,0,15465,0,10,0,84,4549135,0,143761,0,0
-Find treasures from 10 Sealed Scroll maps in the post-storm Forbidden Reach.,X Marks the Spot,,17531,-1,-1,0,15465,0,10,0,82,1064187,0,143769,0,0
-Find treasures from 50 Sealed Scroll maps in the post-storm Forbidden Reach.,Scroll Hunter,,17532,-1,-1,17531,15465,0,10,0,83,4549192,0,143771,0,0
+Complete 10 of the following special encounters in the post-storm Forbidden Reach.,Adventurer of the Forbidden Reach,,17524,-1,-1,0,15465,0,5,0,19,4638396,0,143672,0,0
+Complete all of the following special encounters in the post-storm Forbidden Reach.,Champion of the Forbidden Reach,,17525,-1,-1,17524,15465,0,15,0,20,4046656,0,143702,0,0
+Discover the hidden treasures within the post-storm Forbidden Reach.,Treasures of the Forbidden Reach,,17526,-1,-1,0,15465,0,5,0,29,1542852,0,143732,0,0
+Open 20 small treasures around the post-storm Forbidden Reach.,Scavenger of the Forbidden Reach,,17527,-1,-1,0,15465,0,5,0,80,1542844,0,143745,0,0
+Open 100 small treasures around the post-storm Forbidden Reach.,Hoarder of the Forbidden Reach,,17528,-1,-1,17527,15465,0,10,0,81,1542848,0,143757,0,0
+Open 10 Forbidden Hoards around the post-storm Forbidden Reach.,Forbidden Spoils,,17529,-1,-1,0,15465,0,10,0,82,4638544,0,143759,0,0
+Collect each of the following books found in the post-storm Forbidden Reach.,Librarian of the Reach,,17530,-1,-1,0,15465,0,10,0,85,4549135,0,143761,0,0
+Find treasures from 10 Sealed Scroll maps in the post-storm Forbidden Reach.,X Marks the Spot,,17531,-1,-1,0,15465,0,10,0,83,1064187,0,143769,0,0
+Find treasures from 50 Sealed Scroll maps in the post-storm Forbidden Reach.,Scroll Hunter,,17532,-1,-1,17531,15465,0,10,0,84,4549192,0,143771,0,0
 ,<Hidden> Travel Network - Node Unlock: Forbidden Reach - Morqut Islet,,17533,-1,-1,0,15455,0,0,1179648,31,136243,0,143794,0,0
-"Explore the post-storm Forbidden Reach, revealing the covered areas of the world map.",Explore the Forbidden Reach,,17534,-1,-1,0,15465,0,10,0,12,4672496,0,143799,0,0
+"Explore the post-storm Forbidden Reach, revealing the covered areas of the world map.",Explore the Forbidden Reach,,17534,-1,-1,0,15465,0,10,0,13,4672496,0,143799,0,0
 ,"<DNT> Complete the ""Return to the Reach"" questline.",,17535,-1,-1,0,15455,0,10,3276800,3,136243,0,143806,0,0
 ,Dragon Chase - WS01,,17537,-1,-1,0,15462,0,0,1048576,475,1394953,0,0,0,0
 ,Dragon Chase - WS02,,17538,-1,-1,0,15462,0,0,1048576,476,1394953,0,0,0,0
-Complete a Froststone Vault Primal Storm of every element.,Under the Weather,,17540,-1,-1,0,15465,0,15,0,11,463562,0,143863,0,0
+Complete a Froststone Vault Primal Storm of every element.,Under the Weather,,17540,-1,-1,0,15465,0,15,0,12,463562,0,143863,0,0
 "Defeat Vortex, Tremblor, Wildfire, and Flow in a Pet Battle.",Global Swarming,,17541,-1,-1,0,15119,0,15,0,117,136099,0,143868,0,0
-Complete all of the Forbidden Reach achievements listed below.,You Know How to Reach Me,Title Reward: The Forbidden,17543,-1,-1,0,15465,0,25,131072,89,4616662,0,143908,0,0
+Complete all of the Forbidden Reach achievements listed below.,You Know How to Reach Me,Title Reward: The Forbidden,17543,-1,-1,0,15465,0,25,131072,90,4616662,0,143908,0,0
 Complete the Old Hatreds questline in the Ohn'ahran Plains.,A New Beginning,,17546,-1,-1,0,15455,0,5,0,2,236555,0,143992,0,0
-Uncover the mysteries of the ancient stones across the Dragon Isles.,Ancient Stones of the Dragon Isles,,17560,-1,-1,0,15465,0,20,131072,90,4632794,0,144202,0,0
-Uncover the mysteries of the ancient stones throughout the Waking Shores.,Ancient Stones of the Waking Shores,,17561,-1,-1,0,15465,0,5,2097152,2,134461,0,144207,0,0
-Uncover the mysteries of the ancient stones throughout the Ohn'ahran Plains.,Ancient Stones of the Ohn'ahran Plains,,17562,-1,-1,0,15465,0,5,2097152,3,134461,0,144213,0,0
-Uncover the mysteries of the ancient stones throughout the Azure Span.,Ancient Stones of the Azure Span,,17563,-1,-1,0,15465,0,5,2097152,4,134461,0,144219,0,0
-Uncover the mysteries of the ancient stones throughout Thaldraszus.,Ancient Stones of Thaldraszus,,17564,-1,-1,0,15465,0,5,2097152,5,134461,0,144225,0,0
-Uncover the mysteries of the ancient stones throughout Zaralek Cavern.,Ancient Stones of Zaralek,,17567,-1,-1,0,15465,0,5,2097152,6,134461,0,144233,0,0
+Uncover the mysteries of the ancient stones across the Dragon Isles.,Ancient Stones of the Dragon Isles,,17560,-1,-1,0,15465,0,20,131072,91,4632794,0,144202,0,0
+Uncover the mysteries of the ancient stones throughout the Waking Shores.,Ancient Stones of the Waking Shores,,17561,-1,-1,0,15465,0,5,2097152,3,134461,0,144207,0,0
+Uncover the mysteries of the ancient stones throughout the Ohn'ahran Plains.,Ancient Stones of the Ohn'ahran Plains,,17562,-1,-1,0,15465,0,5,2097152,4,134461,0,144213,0,0
+Uncover the mysteries of the ancient stones throughout the Azure Span.,Ancient Stones of the Azure Span,,17563,-1,-1,0,15465,0,5,2097152,5,134461,0,144219,0,0
+Uncover the mysteries of the ancient stones throughout Thaldraszus.,Ancient Stones of Thaldraszus,,17564,-1,-1,0,15465,0,5,2097152,6,134461,0,144225,0,0
+Uncover the mysteries of the ancient stones throughout Zaralek Cavern.,Ancient Stones of Zaralek,,17567,-1,-1,0,15465,0,5,2097152,7,134461,0,144233,0,0
 ,Vicious Saddle (37),,17725,-1,1,17104,15270,0,0,1179648,95,1379171,103533,144544,0,0
 ,Vicious Saddle (37),,17726,-1,0,17105,15270,0,0,1179648,47,1379171,103533,144546,0,0
-,Obsidian Combatant,,17727,-1,1,0,15270,0,0,1179648,57,236538,0,144548,0,0
-,Obsidian Combatant,,17728,-1,0,0,15270,0,0,1179648,58,236538,0,144552,0,0
+,Obsidian Combatant,,17727,-1,1,0,15270,0,0,1179648,57,236538,205246,144548,0,0
+,Obsidian Combatant,,17728,-1,0,0,15270,0,0,1179648,58,236538,205245,144552,0,0
+Douse 100 fires at the Suffusion Camps.,We Didn't Start the Fire,,17735,-1,-1,0,15455,0,5,0,53,132839,0,144585,0,0
+Share the Recipe Rat's greatest recipe with hungry rats across Azeroth.,The Gift of Cheese,Reward: Roland,17736,-1,-1,0,170,0,5,16908288,68,515993,204894,144600,0,0
+Honor the flames of the Dragon Isles.,Flame Warden of the Dragon Isles,,17737,-1,1,0,161,0,0,0,14,135265,0,144614,0,0
+Honor the flames of the Dragon Isles.,Flame Keeper of the Dragon Isles,,17738,-1,0,0,161,0,10,0,33,135265,0,144621,0,0
+Complete the following questlines in Zaralek Cavern.,Embers of Neltharion,,17739,-1,-1,0,15455,0,10,0,52,134400,0,144642,0,0
+Win 50 3v3 games while at Elite rank during Dragonflight Season 2.,Gladiator: Dragonflight Season 2,Reward: Gladiator Mount and Gladiator Title,17740,-1,-1,0,165,0,0,12288,221,236542,205233,144665,0,0
+"Toss treats to a racing snail in Glimmerogg, and have that snail win the race.",Slow And Steady Wins The Race,Reward: Roggy,17741,-1,-1,0,15465,0,0,143360,2,5003559,205231,144669,0,0
+,<DNT> Loamm Niffen Rank 01,,17742,-1,-1,0,15466,0,0,3145728,399,136243,0,144681,0,0
+,<DNT> Loamm Niffen Rank 02,,17743,-1,-1,0,15466,0,0,3145728,400,136243,0,144683,0,0
+,<DNT> Loamm Niffen Rank 03,,17744,-1,-1,0,15466,0,0,3145728,401,136243,0,144685,0,0
+,<DNT> Loamm Niffen Rank 04,,17745,-1,-1,0,15466,0,0,3145728,402,136243,0,144687,0,0
+,<DNT> Loamm Niffen Rank 05,,17746,-1,-1,0,15466,0,0,3145728,403,136243,0,144689,0,0
+,<DNT> Loamm Niffen Rank 06,,17747,-1,-1,0,15466,0,0,3145728,404,136243,0,144691,0,0
+,<DNT> Loamm Niffen Rank 07,,17748,-1,-1,0,15466,0,0,3145728,405,136243,0,144693,0,0
+,<DNT> Loamm Niffen Rank 08,,17749,-1,-1,0,15466,0,0,3145728,406,136243,0,144695,0,0
+,<DNT> Loamm Niffen Rank 09,,17750,-1,-1,0,15466,0,0,3145728,407,136243,0,144697,0,0
+,<DNT> Loamm Niffen Rank 10,,17751,-1,-1,0,15466,0,0,3145728,408,136243,0,144699,0,0
+,<DNT> Loamm Niffen Rank 11,,17752,-1,-1,0,15466,0,0,3145728,409,136243,0,144701,0,0
+,<DNT> Loamm Niffen Rank 12,,17753,-1,-1,0,15466,0,0,3145728,410,136243,0,144703,0,0
+,<DNT> Loamm Niffen Rank 13,,17754,-1,-1,0,15466,0,0,3145728,411,136243,0,144705,0,0
+,<DNT> Loamm Niffen Rank 14,,17755,-1,-1,0,15466,0,0,3145728,412,136243,0,144707,0,0
+,<DNT> Loamm Niffen Rank 15,,17756,-1,-1,0,15466,0,0,3145728,413,136243,0,144709,0,0
+,<DNT> Loamm Niffen Rank 16,,17757,-1,-1,0,15466,0,0,3145728,414,136243,0,144711,0,0
+,<DNT> Loamm Niffen Rank 17,,17758,-1,-1,0,15466,0,0,3145728,415,136243,0,144713,0,0
+,<DNT> Loamm Niffen Rank 18,,17759,-1,-1,0,15466,0,0,3145728,416,136243,0,144715,0,0
+,<DNT> Loamm Niffen Rank 19,,17760,-1,-1,0,15466,0,0,3145728,417,136243,0,144717,0,0
+,<DNT> Loamm Niffen Rank 20,,17761,-1,-1,0,15466,0,0,3145728,418,136243,0,144719,0,0

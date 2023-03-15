@@ -677,19 +677,19 @@ p(3524),	-- Devourer Lobstrok
 p(3525),	-- Bestial Lurker
 p(3526),	-- Snapjaw Lurker
 p(3527),	-- Void Lurker
-p(3528),	-- Scalebane Beetle
-p(3529),	-- Leshtar
+p(3528),	-- Paulie \\ Scalebane Beetle
+p(3529),	-- Rango \\ Leshtar
 p(3530),	-- Miloh
 p(3531),	-- Rusty
 p(3532),	-- Amador
 p(3533),	-- Brul
 p(3534),	-- Jerrie
 p(3535),	-- Diamondshell
-p(3536),	-- Sapphireshell
+p(3536),	-- Bashful \\ Sapphireshell
 p(3537),	-- Emeraldshell
-p(3538),	-- Ambershell
+p(3538),	-- Tricky \\ Ambershell
 p(3539),	-- Roseshell
-p(3540),	-- Topazshell
+p(3540),	-- Brulee \\ Topazshell
 p(3541),	-- Ridged Shalewing
 p(3542),	-- Dread Shalewing
 p(3543),	-- Ravenous Shalewing
@@ -706,6 +706,12 @@ p(3553),	-- Nelthara
 p(3554),	-- Senega
 p(3555),	-- Axel
 p(3556),	-- Kromos
+10.1.0.48537
+p(3475),	-- Volatile Self-Driving Toolbox
+p(3557),	-- Roggy
+p(3558),	-- Murrey
+p(3559),	-- Clawz
+p(3560),	-- Bassalt
 
 
 
@@ -1986,19 +1992,19 @@ p(3524),	-- Devourer Lobstrok
 p(3525),	-- Bestial Lurker
 p(3526),	-- Snapjaw Lurker
 p(3527),	-- Void Lurker
-p(3528),	-- Scalebane Beetle
-p(3529),	-- Leshtar
+p(3528),	-- Paulie \\ Scalebane Beetle
+p(3529),	-- Rango \\ Leshtar
 p(3530),	-- Miloh
 p(3531),	-- Rusty
 p(3532),	-- Amador
 p(3533),	-- Brul
 p(3534),	-- Jerrie
 p(3535),	-- Diamondshell
-p(3536),	-- Sapphireshell
+p(3536),	-- Bashful \\ Sapphireshell
 p(3537),	-- Emeraldshell
-p(3538),	-- Ambershell
+p(3538),	-- Tricky \\ Ambershell
 p(3539),	-- Roseshell
-p(3540),	-- Topazshell
+p(3540),	-- Brulee \\ Topazshell
 p(3541),	-- Ridged Shalewing
 p(3542),	-- Dread Shalewing
 p(3543),	-- Ravenous Shalewing
@@ -2015,3 +2021,9 @@ p(3553),	-- Nelthara
 p(3554),	-- Senega
 p(3555),	-- Axel
 p(3556),	-- Kromos
+10.1.0.48537
+p(3475),	-- Volatile Self-Driving Toolbox
+p(3557),	-- Roggy
+p(3558),	-- Murrey
+p(3559),	-- Clawz
+p(3560),	-- Bassalt

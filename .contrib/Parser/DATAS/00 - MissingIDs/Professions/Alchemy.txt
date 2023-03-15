@@ -45,8 +45,6 @@ r(264247),	-- Draenor Alchemy
 r(264255),	-- Kul Tiran Alchemy
 8.0.1.25976
 r(265787),	-- Zandalari Alchemy
-10.0.7.47910
-r(400270),	-- Draconic Suppression Powder \\ Neutralizing Agent
 10.1.0.48480
 r(405832),	-- Stinky Bright Potion
 r(405847),	-- Transmute: Dracothyst
@@ -470,8 +468,6 @@ r(156591),	-- Primal Alchemy
 r(156592),	-- Alchemical Catalyst - Orchid
 r(156593),	-- Alchemical Catalyst - Lotus
 r(156606),	-- Alchemy
-10.0.7.47910
-r(400270),	-- Draconic Suppression Powder \\ Neutralizing Agent
 10.1.0.48480
 r(405832),	-- Stinky Bright Potion
 r(405847),	-- Transmute: Dracothyst

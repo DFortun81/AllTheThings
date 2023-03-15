@@ -115,8 +115,6 @@ r(310537),	-- Re-Calibrated Proton Blaster
 r(310542),	-- Shadowlands Engineering
 9.0.1.35432
 r(340534),	-- Interact
-10.0.7.47910
-r(400810),	-- Gnomish Voicebox \\ Gnomish Voice Recording
 10.1.0.48480
 r(407005),	-- Polarity Bomb
 r(407006),	-- EZ-Thro Polarity Bomb
@@ -933,8 +931,6 @@ r(359664),	-- Crafter's Mark IV
 r(359674),	-- Crafter's Mark of the First Ones
 r(360088),	-- Pure-Air Sail Extensions
 r(360126),	-- Erratic Genesis Matrix
-10.0.7.47910
-r(400810),	-- Gnomish Voicebox \\ Gnomish Voice Recording
 10.1.0.48480
 r(407005),	-- Polarity Bomb
 r(407006),	-- EZ-Thro Polarity Bomb

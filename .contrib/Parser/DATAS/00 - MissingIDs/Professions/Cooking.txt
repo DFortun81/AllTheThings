@@ -52,7 +52,6 @@ r(399034),	--
 r(399035),	-- 
 r(399038),	-- 
 r(399040),	-- 
-r(400807),	-- Sparkling Spice Pouch
 r(403018),	-- Deviously Deviled Eggs
 10.1.0.48480
 r(407066),	-- Rocks on the Rocks
@@ -588,14 +587,6 @@ r(354766),	-- Bonemeal Bread
 r(354768),	-- Porous Rock Candy
 9.2.0.41089
 r(359333),	-- Empty Kettle of Stone Soup
-10.0.7.47910
-r(398438),	-- Firewater Sorbet
-r(399034),	-- 
-r(399035),	-- 
-r(399038),	-- 
-r(399040),	-- 
-r(400807),	-- Sparkling Spice Pouch
-r(403018),	-- Deviously Deviled Eggs
 10.1.0.48480
 r(407066),	-- Rocks on the Rocks
 r(407100),	-- Charitable Cheddar

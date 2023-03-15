@@ -1599,3 +1599,7 @@
 349935@@@Noble Bruffalon
 10.1.0.48480
 408313@@@Big Slick in the City
+10.1.0.48537
+400733@@@Rocket Shredder 9001
+406637@@@Inferno Armoredon
+408647@@@Api Biru Sporebat
