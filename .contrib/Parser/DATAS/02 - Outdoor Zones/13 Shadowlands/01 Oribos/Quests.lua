@@ -247,14 +247,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["provider"] = { "n", 173386 },	-- Calia Menethil
 				["coord"] = { 41.2, 69.3, ORIBOS },
 				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			q(65655, {	-- Eyes of the Wolf
 				--["sourceQuests"] = {},
 				["provider"] = { "n", 185525 },	-- Genn Greymane <King of Gilneas>
 				["coord"] = { 41.9, 63.5, ORIBOS },
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 		}),
 		n(QUESTS, sharedData({

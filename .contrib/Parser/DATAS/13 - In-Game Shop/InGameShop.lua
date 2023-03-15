@@ -217,7 +217,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 3.2.2.10505", "removed 10.0.2.47213" },
 		}),
 		p(3249, {	-- Lil' Ursoc (PET!)
-			["timeline"] = { "added 9.2.5" },
+			["timeline"] = { ADDED_SL_S4 },
 		}),
 		i(54847, {	-- Lil' XT
 			["timeline"] = { "added 3.3.3.11723", "removed 8.3.0" },

@@ -672,7 +672,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Explore Tirisfal Glades, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				ach(15579, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Return to Lordaeron
+				ach(15579, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Return to Lordaeron
 					["sourceQuests"] = {
 						65788,	-- A Walk with Ghosts
 						65669,	-- Report to Greymane
@@ -914,7 +914,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 185852,	-- Lilian Voss
 					["sourceQuest"] = 66091,	-- Path of the Dark Rangers (H)
 					["coord"] = { 61.8, 67.8, 2070 },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26930, {	-- After the Crusade
@@ -989,7 +989,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						65655,	-- Eyes of the Wolf
 					},
 					["coord"] = { 60.8, 51.4, 2070 },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 				q(427, {	-- At War With The Scarlet Crusade (1/4)
 					["qg"] = 1515,	-- Executor Zygand
@@ -1085,7 +1085,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 185513,	-- Lilian Voss
 					["sourceQuest"] = 65660,	-- Walk of Faith
 					["coord"] = { 61.9, 55.6, 2070 },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 				q(24990, {	-- Darkhound Pounding
 					["qg"] = 10665,	-- Junior Apothecary Holland
@@ -1452,14 +1452,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 185851,	-- Dark Ranger Velonara
 					["sourceQuest"] = 65668,	-- The Desolate Council
 					["coord"] = { 61.9, 67.8, 2070 },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(66091, {	-- Path of the Dark Rangers (H)
 					["qg"] = 185851,	-- Dark Ranger Velonara
 					["sourceQuest"] = 65668,	-- The Desolate Council
 					["coord"] = { 61.9, 67.8, 2070 },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24999, {	-- Planting the Seed of Fear
@@ -1556,7 +1556,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 185848,	-- Calia Menethil
 					["sourceQuest"] = 66090,	-- Path of the Dark Rangers (A)
 					-- ["coord"] = { 61.9, 67.8, 2070 },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(366, {	-- Return the Book
@@ -1651,7 +1651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 185513,	-- Lilian Voss
 					["sourceQuest"] = 65658,	-- This Land is Ours
 					["coord"] = { 60.9, 51.3, 2070 },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 				q(375, {	-- The Chill of Death
 					["qg"] = 1521,	-- Gretchen Dedmar
@@ -1701,7 +1701,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 185852,	-- Lilian Voss
 					["sourceQuest"] = 65667,	-- The Remedy of Lordaeron
 					["coord"] = { 61.9, 67.7, 2070 },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 				q(410, {	-- The Dormant Shade
 					["provider"] = { "o", 1557 },	-- Lillith's Dinner Table
@@ -1883,7 +1883,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 185839,	-- Calia Menethil
 					["sourceQuest"] = 65666,	-- Return to Brill
 					["coord"] = { 65.8, 60.4, 2070 },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 				q(24980, {	-- The Scarlet Palisade
 					["qg"] = 1519,	-- Deathguard Simmer
@@ -1896,7 +1896,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 185514,	-- Dark Ranger Velonara
 					["sourceQuest"] = 65657,	-- Assemble the Forsaken
 					["coord"] = { 62.0, 50.5, 2070 },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 				q(25011, {	-- To Bigger and Better Things
 					["qg"] = 10837,	-- High Executor Derrington
@@ -1943,7 +1943,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 185797,	-- Calia Menethil
 					["sourceQuest"] = 65659,	-- The Blight Congress
 					["coord"] = { 62.0, 55.7, 2070 },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 				q(398, {	-- Wanted: Maggot Eye
 					["provider"] = { "o", 711 },	-- Wanted!

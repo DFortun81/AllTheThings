@@ -5909,7 +5909,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 3.3.3.11573" },
 							}),
 							i(192099, {  -- Earpieces of Tranquil Focus (TOY!)
-								["timeline"] = { "added 9.2.5" },
+								["timeline"] = { ADDED_SL_S4 },
 							}),
 							i(104324, {	-- Foot Ball (TOY!)
 								["timeline"] = { "added 5.4.0.17227" },

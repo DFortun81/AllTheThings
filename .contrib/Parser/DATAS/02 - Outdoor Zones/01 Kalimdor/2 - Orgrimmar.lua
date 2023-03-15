@@ -2899,7 +2899,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(62265, {	-- A New Adventure Awaits
 					["description"] = "This quest is automatically offered upon reaching the specified level.",
-					["timeline"] = { "created 9.0.2", "added 10.0.2" },
+					["timeline"] = { "created 9.0.2", ADDED_DF_PRE2 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25160, {	-- A Present for Lila
@@ -3450,11 +3450,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 187758,	-- Zaa'je
 					["sourceQuest"] = 66253,	-- Stolen Shipments
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(191682, {	-- Explosive Pie
-							["timeline"] = { "added 9.2.5" },
+							["timeline"] = { ADDED_SL_S4 },
 						}),
 					},
 				}),
@@ -3822,11 +3822,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(66253, {	-- Stolen Shipments
 					["qg"] = 187758,	-- Zaa'je
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(191408, {	-- Explosive Pie
-							["timeline"] = { "added 9.2.5" },
+							["timeline"] = { ADDED_SL_S4 },
 						}),
 					},
 				}),

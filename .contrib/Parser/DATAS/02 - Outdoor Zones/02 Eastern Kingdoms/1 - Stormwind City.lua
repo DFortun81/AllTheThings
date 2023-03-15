@@ -2863,7 +2863,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(62250, {	-- A New Adventure Awaits
 					["description"] = "This quest is automatically offered upon reaching the specified level.",
-					["timeline"] = { "created 9.0.2", "added 10.0.2" },
+					["timeline"] = { "created 9.0.2", ADDED_DF_PRE2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47202, {	-- A Personal Message
@@ -3745,11 +3745,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 188342,	-- Onnesa
 					["sourceQuest"] = 66390,	-- Missing Merchandise
 					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(191865, {	-- Bottle of Briny Seawater
-							["timeline"] = { "added 9.2.5" },
+							["timeline"] = { ADDED_SL_S4 },
 						}),
 					},
 				}),
@@ -4063,7 +4063,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(65896, {	-- Let the Healing Begin
 					["qg"] = 190830,	-- Otan Tennoh
 					["coord"] = { 44.2, 57.0, STORMWIND_CITY },
-					["timeline"] = { "added 10.0.2" },
+					["timeline"] = { ADDED_DF_PRE2 },
 					["races"] = { DRACTHYR_ALLIANCE },
 					["classes"] = { EVOKER },
 				}),
@@ -4256,7 +4256,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(66390, {	-- Missing Merchandise
 					["qg"] = 188342,	-- Onnesa
 					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27038, {	-- Missing Parts

@@ -1401,7 +1401,7 @@ app.L = {
 		[-1102] = "Interface\\Icons\\ability_evoker_dragonrage2",									-- Wrathion & Sabellian
 		[-1110] = "Interface\\Icons\\ui_majorfaction_expedition",									-- Dragonscale Expedition
 		[-1111] = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",							-- Climbing
-		[-1112] = "Interface\\Icons\\inv_misc_-selfiecamera_01",									-- Cataloging
+		[-1112] = 1109168,																			-- Cataloging
 		[-1113] = "Interface\\Icons\\inv_misc_ancient_mana",										-- Ancient Waygates
 		[-1120] = "Interface\\Icons\\ui_majorfaction_centaur",										-- Maruuk Centaur
 		[-1121] = "Interface\\Icons\\ability_racial_returntocamp",									-- Clan Aylaag
@@ -1439,7 +1439,7 @@ app.L = {
 	-- Tournament
 		[-4191] = "Interface\\Icons\\Achievement_PVP_Legion08",								-- Tournament
 	-- Class Trial
-		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Class Trial Item Sets
+		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Class Trial
 	-- WoW Anniversary
 		[-5353] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 4th Anniversary
 		[-5354] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 5th Anniversary

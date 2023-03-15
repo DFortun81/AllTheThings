@@ -268,6 +268,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["timeline"] = { ADDED_DF_0_7 },
 				}),
 				q(75154, {	-- Waygate: Morqut Islet
 					-- TODO: ["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
@@ -277,6 +278,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["DisablePartySync"] = true,
+					["timeline"] = { ADDED_DF_0_7 },
 					["g"] = {
 
 					},
