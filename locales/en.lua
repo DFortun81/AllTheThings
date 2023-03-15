@@ -1996,7 +1996,7 @@ app.L = {
 		[-5204] = "Challenge Appearance",										-- Challenge Appearance
 		[-5205] = "Hidden Appearance",											-- Hidden Appearance
 		-- Class Sets
-		[-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",		-- Class Trial Item Sets
+		[-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,					-- Class Trial
 		-- Note!! We are localizing them here so when we filter the achievement we don't filter the entire section which is bad!
 		[-5353] = select(2,GetAchievementInfo(2398)),							-- 4th Anniversary
 		[-5354] = select(2,GetAchievementInfo(4400)),							-- 5th Anniversary

@@ -18122,12 +18122,12 @@ function app:GetDataCache()
 		tinsert(g, db);
 	end
 
-	-- Gear Sets
-	if app.Categories.GearSets then
+	-- Character
+	if app.Categories.Character then
 		db = {};
-		db.g = app.Categories.GearSets;
+		db.g = app.Categories.Character;
 		db.expanded = false;
-		db.text = LOOT_JOURNAL_ITEM_SETS;
+		db.text = CHARACTER;
 		db.name = db.text;
 		db.icon = app.asset("Category_ItemSets");
 		tinsert(g, db);
