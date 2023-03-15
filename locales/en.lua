@@ -1109,7 +1109,6 @@ app.L = {
 	-- Events
 		[-176] = 3753381,																	-- Weekly Holidays
 	-- New Characters
-		[-210] = 1530081,																	-- Allied New Characters
 		[-211] = 1530081,																	-- New Characters
 	-- Treasure Chest
 		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
@@ -1140,7 +1139,8 @@ app.L = {
 	-- War Campaign
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
 	-- Allied Races
-		[-254] = "Interface\\Icons\\FactionChange",											-- Allied Races & Heritage
+		[-254] = "Interface\\Icons\\FactionChange",											-- Allied Races
+		[-255] = "Interface\\Icons\\vas_guildfactionchange",								-- Heritage
 	-- Mailbox
 		[-297] = "Interface\\Icons\\inv_letter_17",											-- Mailbox
 	-- Garrison Missons
@@ -1641,7 +1641,6 @@ app.L = {
 	-- Events
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
 	-- Item Sets
-		[-210] = ALLIED.." "..NEW.." "..CHARACTER,								-- Allied New Character
 		[-211] = NEW.." "..CHARACTER,											-- New Character
 	-- Treasure Chest
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
@@ -1672,7 +1671,8 @@ app.L = {
 	-- War Campaign
 		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
 	-- Allied Races
-		[-254] = "Allied Races & Heritage",										-- Allied Races & Heritage
+		[-254] = "Allied Races",												-- Allied Races
+		[-255] = "Hertiage",													-- Heritage
 	-- Mailbox
 		[-297] = MINIMAP_TRACKING_MAILBOX,										-- Mailbox
 	-- Garrison Missions
