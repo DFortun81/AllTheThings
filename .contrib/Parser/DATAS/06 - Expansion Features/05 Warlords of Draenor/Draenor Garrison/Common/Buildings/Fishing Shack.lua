@@ -251,10 +251,13 @@ _.ExpansionFeatures =
 									n(85715, {	-- Lunarfall Cavedweller
 										i(23720),	-- Riding Turtle (MOUNT!)
 										i(46109),	-- Sea Turtle (MOUNT!)
+										i(34828),	-- Antique Silver Cufflinks
+										i(34826),	-- Gold Wedding Band
 										i(118380, {	-- Hightfish Cap
 											["collectible"] = false,
 											["u"] = 15,
 										}),
+										i(34829),	-- Ornate Drinking Stein
 										i(44983),	-- Strand Crawler
 										i(118393, {	-- Tentacled Hat
 											["collectible"] = false,
@@ -270,10 +273,13 @@ _.ExpansionFeatures =
 									n(81171, {	-- Frostdeep Cavedweller
 										i(23720),	-- Riding Turtle (MOUNT!)
 										i(46109),	-- Sea Turtle (MOUNT!)
+										i(34828),	-- Antique Silver Cufflinks
+										i(34826),	-- Gold Wedding Band
 										i(118380, {	-- Hightfish Cap
 											["collectible"] = false,
 											["u"] = 15,
 										}),
+										i(34829),	-- Ornate Drinking Stein
 										i(44983),	-- Strand Crawler
 										i(118393, {	-- Tentacled Hat
 											["collectible"] = false,

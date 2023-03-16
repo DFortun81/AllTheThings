@@ -1342,7 +1342,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2479,	-- Hinott's Assistance (1/2)
 					["coord"] = { 61.6, 19.2, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { "removed 4.0.3" },
-					["races"] = { ORC, UNDEAD, TROLL },
+					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
 					-- #if BEFORE 4.0.3
@@ -1459,9 +1459,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								"removed 2.0.1.5678"
 							},
 						}),
-						applyclassicphase(TBC_PHASE_ONE, i(25878, {	-- Dusksteel Throwing Knife [TBC]
-							["timeline"] = { "removed 5.0.4" },
-						})),
+						i(25878, {	-- Dusksteel Throwing Knife [TBC]
+							["timeline"] = { "added 2.1.0.6692", "removed 5.0.4" },
+						}),
 					},
 				}),
 				-- #endif
@@ -3111,7 +3111,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(3053, {	-- Humbert's Chestpiece
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure.
+					-- #if AFTER CATA
+					["coords"] = {
+						{ 63.2, 85.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif
 					["crs"] = {
 						2344,	-- Dun Garok Mountaineer
 						14275,	-- Tamra Stormpike
@@ -3122,7 +3127,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2345,	-- Dun Garok Rifleman
 				}),
 				i(4723, {	-- Humbert's Pants
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3" },	
 					["cr"] = 2346,	-- Dun Garok Priest
 				}),
 				-- #if BEFORE CATA

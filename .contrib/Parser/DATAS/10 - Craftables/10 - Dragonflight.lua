@@ -162,6 +162,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(191514),	-- Brood Salt+
 			i(191515),	-- Brood Salt++
 			i(191516),	-- Brood Salt+++
+			i(203407, {["timeline"]={ADDED_DF_0_7}}),	-- Draconic Suppression Powder
 			i(191505),	-- Exultant Incense+
 			i(191506),	-- Exultant Incense++
 			i(191507),	-- Exultant Incense+++
@@ -435,6 +436,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71343, { ["name"] = "First Craft: Prototype Regal Barding Framework", }),	-- Prototype Regal Barding Framework
 		})),
 		filter(MISC, {
+			i(203408, {["timeline"]={ADDED_DF_0_7}}),	-- Ancient Ceremonial Trident
 			i(191250),	-- Armor Spikes+
 			i(191872),	-- Armor Spikes++
 			i(191873),	-- Armor Spikes+++
@@ -529,6 +531,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			r(381398),	-- Sizzling Seafood Medley
 			r(381400),	-- Thousandbone Tongueslicer
 		}),
+		filter(MISC, {
+			i(203409, {["timeline"]={ADDED_DF_0_7}}),	-- Sparkling Spice Pouch
+		}),
 		-- Unknown
 		i(194690),	-- Horn o' Mead
 		i(194683),	-- Buttermilk
@@ -543,9 +548,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		i(197759),	-- Cheese and Quackers
 		i(197772),	-- Churnbelly Tea
 		i(197771),	-- Delicious Dragon Spittle
+		i(204072, {["timeline"]={ADDED_DF_0_7}}),	-- Deviously Deviled Eggs
 		i(197792),	-- Fated Fortune Cookie
 		i(197782),	-- Feisty Fish Sticks
 		i(197779),	-- Filet of Fangs
+		i(202290, {["timeline"]={ADDED_DF_0_7}}),	-- Firewater Sorbet
 		i(197794),	-- Grand Banquet of the Kalu'ak
 		i(197787),	-- Great Cerulean Sea
 		i(197795),	-- Hoard of Draconic Delicacies
@@ -825,6 +832,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(200470),	-- Illusion: Primal Mastery
 		}),
 		filter(MISC, {
+			i(203410, {["timeline"]={ADDED_DF_0_7}}),	-- Glowing Crystal Bookmark
 			i(201318),	-- Illusory Adornment: Air+
 			i(201317),	-- Illusory Adornment: Air++
 			i(201316),	-- Illusory Adornment: Air+++
@@ -970,6 +978,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(193572),	-- Quack-E (PET!)
 		}),
 		filter(MISC, {
+			i(203411, {["timeline"]={ADDED_DF_0_7}}),	-- Gnomish Voicebox
 			i(198651),	-- Piece of Scrap
 		}),
 		n(HIDDEN_QUESTS, sharedData({
@@ -1181,10 +1190,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(198168),	-- Suspiciously Ticking Crate+++
 			i(199414),	-- Zapthrottle Soul Inhaler
 			-- Weird
-			i(198271),	-- H.E.L.P.+
-			i(198272),	-- H.E.L.P.++
-			i(198273),	-- H.E.L.P.+++
-			i(201930),	-- H.E.L.P.
+
+
 			i(198650),	-- Rummage Through Scrap
 		}),
 		filter(REAGENTS, {
@@ -1216,7 +1223,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(192443),	-- Element-Infused Rocket Helmet (TOY!)
 			i(198206),	-- Environmental Emulator (TOY!)
 			i(198227),	-- Giggle Goggles (TOY!)
-			i(198156),	-- Wyrmhole Generator (TOY!)
+			i(201930, {["timeline"] = {ADDED_DF_0_7}}),	-- H.E.L.P. (TOY!)
+			i(198156),	-- Wyrmhole Generator: Dragon Isles (TOY!)
 		}),
 		n(WEAPONS, {
 			i(198334),	-- P.E.W. x2
@@ -1272,11 +1280,12 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		i(194968),	-- Cerulean Spinefish
 		i(199338),	-- Copper Coin of the Isles
 		i(198395),	-- Dull Spined Clam
+		i(203419, {["timeline"]={ADDED_DF_0_7}}),	-- Elusive Croaking Crab
 		i(200074),	-- Frosted Rimefin Tuna
 		i(199340),	-- Gold Coin of the Isles
 		i(194970),	-- Islefin Dorado
 		i(199344),	-- Magma Thresher
-		i(201934),	-- Nokuhd Whittling Knife
+		i(201934),	-- Nokhud Whittling Knife
 		i(194701),	-- Ominous Conch
 		i(200061),	-- Prismatic Leaper
 		i(198397),	-- Rainbow Pearl
@@ -1294,6 +1303,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(191467),	-- Bubble Poppy+
 			i(191468),	-- Bubble Poppy++
 			i(191469),	-- Bubble Poppy+++
+			i(203416, {["timeline"]={ADDED_DF_0_7}}),	-- Dormant Lifebloom Seeds
 			i(200678),	-- Dreambloom
 			i(200677),	-- Dreambloom Petal
 			i(191460),	-- Hochenblume+
@@ -1491,6 +1501,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(199170), 	-- Fated Fortune Card
 		}),
 		filter(MISC, {
+			i(203412, {["timeline"]={ADDED_DF_0_7}}),	-- Arcane Dispelling Rune
 			i(194871),	-- Azurescale Sigil+
 			i(199051),	-- Azurescale Sigil++
 			i(199052),	-- Azurescale Sigil+++
@@ -1817,6 +1828,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(192894),	-- Blotting Sand+
 			i(192895),	-- Blotting Sand++
 			i(192896),	-- Blotting Sand+++
+			i(203413, {["timeline"]={ADDED_DF_0_7}}),	-- Crystal Tuning Fork
 			i(193019),	-- Djaradin's "Pinata"+
 			i(193020),	-- Djaradin's "Pinata"++
 			i(193021),	-- Djaradin's "Pinata"+++
@@ -2090,6 +2102,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(193559),	-- Reinforced Armor Kit+
 			i(193563),	-- Reinforced Armor Kit++
 			i(193567),	-- Reinforced Armor Kit+++
+			i(203414, {["timeline"]={ADDED_DF_0_7}}),	-- Reinforced Pristine Leather
 			i(193469),	-- Toxified Armor Patch+
 			i(193552),	-- Toxified Armor Patch++
 			i(193555),	-- Toxified Armor Patch+++
@@ -2131,6 +2144,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 	}),
 	prof(MINING, {
 		spell(366260, {	-- Mining
+			i(203418, {["timeline"]={ADDED_DF_0_7}}),	-- Amplified Quaking Stone
 			i(189143),	-- Draconium Ore+
 			i(188658),	-- Draconium Ore++
 			i(190311),	-- Draconium Ore+++
@@ -2181,6 +2195,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(193223),	-- Lustrous Scaled Hide++
 			i(193224),	-- Lustrous Scaled Hide+++
 			i(193255),	-- Pristine Vorquin Horn
+			i(203417, {["timeline"]={ADDED_DF_0_7}}),	-- Razor-Sharp Animal Bone
 			i(193208),	-- Resilient Leather+
 			i(193210),	-- Resilient Leather++
 			i(193211),	-- Resilient Leather+++
@@ -2286,6 +2301,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(194011),	-- Frozen Spellthread+
 			i(194012),	-- Frozen Spellthread++
 			i(194013),	-- Frozen Spellthread+++
+			i(202287, {["timeline"]={ADDED_DF_0_7}}),	-- Paw-Made Winterpelt Reagent Bag
 			i(193962),	-- Shimmering Embroidery Thread+
 			i(193963),	-- Shimmering Embroidery Thread++
 			i(193964),	-- Shimmering Embroidery Thread+++
@@ -2293,6 +2309,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(194014),	-- Temporal Spellthread+
 			i(194015),	-- Temporal Spellthread++
 			i(194016),	-- Temporal Spellthread+++
+			i(203415, {["timeline"]={ADDED_DF_0_7}}),	-- Traditional Morqut Kite
 			i(193953),	-- Vibrant Polishing Cloth+
 			i(193954),	-- Vibrant Polishing Cloth++
 			i(193955),	-- Vibrant Polishing Cloth+++

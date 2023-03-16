@@ -4,10 +4,11 @@
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(ULDUM, {
 		["lore"] = "Uldum, a new zone added with Cataclysm, was known as the Land of the Titans. An ancient desert formerly inaccessible to the Alliance and the Horde, it is rich with Titan lore and an advanced civilization, the Tol'vir. This region draws aesthetic influences heavily from Ancient Egypt, with pyramids, obelisks, similar deities, and irrigation systems.",
+		["timeline"] = { "added 4.0.3" },
 		["maps"] = {
 			-- 737,	-- The Vortex Pinnacle
 			-- 857,	-- Throne of the Four Winds
-			1527,	-- Uldum (n'zoth assault)
+			1527,	-- Uldum (n'zoth assault) -- TODO: Move this to the Assault?
 		},
 		["achievementID"] = 4865,
 		["groups"] = {
@@ -299,6 +300,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "n", 47670 },	-- Belloc Brightblade
 					["coord"] = { 24.3, 64.5, ULDUM },
 					["sourceQuest"] = 28132,	-- Efficient Excavations
+				}),
+				q(27003, {	-- Easy Money
+					["qg"] = 44833,	-- Adarrah
+					["sourceQuests"] = {
+						28558,	-- Hero's Call: Uldum!
+						28295,	-- Meetup with the Caravan
+						28296,	-- Meetup with the Caravan
+						28557,	-- Warchief's Command: Uldum!
+					},
+					["coord"] = { 30.4, 65.5, TANARIS },
+					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				q(28132, {	-- Efficient Excavations
 					["crs"] = { 46993 },	-- Schnottz Air Officer
@@ -1134,6 +1146,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	}),
 }));
 
+-- #if AFTER CATA
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(28555),	-- Expel the Envoys
@@ -1151,3 +1164,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 }));
+-- #endif

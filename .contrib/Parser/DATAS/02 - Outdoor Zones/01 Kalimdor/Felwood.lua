@@ -338,6 +338,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 70, 49, TANARIS },
 							["cr"] = 9453,	-- Aquementas
 						}),
+						i(11522, {	-- Silver Totem of Aquementas
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(28372, {	-- Back to Business

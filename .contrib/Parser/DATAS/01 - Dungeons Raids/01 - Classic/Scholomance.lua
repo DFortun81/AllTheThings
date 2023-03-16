@@ -336,6 +336,18 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["timeline"] = { "removed 4.0.3" },
 						["lvl"] = 57,
 					}),
+					q(7667, {	-- Material Assistance
+						["qg"] = 13417,	-- Sagorne Creststrider
+						["coord"] = { 39.2, 48.4, ORGRIMMAR },
+						["timeline"] = { "added 1.4.0", "removed 4.0.3" },
+						["cost"] = {
+							{ "i", 12800, 1 },	-- Azerothian Diamond
+							{ "i", 18335, 1 },	-- Pristine Black Diamond
+						},
+						["classes"] = { SHAMAN },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 58,
+					}),
 					q(5463, {	-- Menethil's Gift (1/2)
 						["providers"] = {
 							{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>

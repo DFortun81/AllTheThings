@@ -644,11 +644,79 @@ p(3473),	-- Cozmos
 p(3474),	-- Celastro
 10.0.7.47983
 p(3476),	-- Gilded Mechafrog
+10.1.0.48480
+p(3477),	-- Puddlehopper
+p(3478),	-- Rock Martin
+p(3479),	-- Yellabon
+p(3480),	-- Endmite
+p(3481),	-- Stonewhisker
+p(3482),	-- Cobbleshell
+p(3483),	-- Boulderfang
+p(3484),	-- Slabwing
+p(3485),	-- Hollow Moth
+p(3486),	-- Lithengale
+p(3487),	-- Scarlapod
+p(3488),	-- Deepridger
+p(3489),	-- Sunglow Cobra
+p(3490),	-- Ebonwing Moth
+p(3493),	-- Roland
+p(3511),	-- Blaise
+p(3512),	-- Ambre
+p(3513),	-- Azure Swoglet
+p(3514),	-- Emerald Swoglet
+p(3515),	-- Karrit
+p(3516),	-- Crimson Swoglet
+p(3517),	-- Bronze Swoglet
+p(3518),	-- Lettuce
+p(3519),	-- Byrn
+p(3520),	-- Jade Skitterbug
+p(3521),	-- Lord Stantley
+p(3522),	-- Savage Lobstrok
+p(3523),	-- Cheddar
+p(3524),	-- Devourer Lobstrok
+p(3525),	-- Bestial Lurker
+p(3526),	-- Snapjaw Lurker
+p(3527),	-- Void Lurker
+p(3528),	-- Paulie \\ Scalebane Beetle
+p(3529),	-- Rango \\ Leshtar
+p(3530),	-- Miloh
+p(3531),	-- Rusty
+p(3532),	-- Amador
+p(3533),	-- Brul
+p(3534),	-- Jerrie
+p(3535),	-- Diamondshell
+p(3536),	-- Bashful \\ Sapphireshell
+p(3537),	-- Emeraldshell
+p(3538),	-- Tricky \\ Ambershell
+p(3539),	-- Roseshell
+p(3540),	-- Brulee \\ Topazshell
+p(3541),	-- Ridged Shalewing
+p(3542),	-- Dread Shalewing
+p(3543),	-- Ravenous Shalewing
+p(3544),	-- Shalewing Devourer
+p(3545),	-- Jyfaar
+p(3546),	-- Skaarn
+p(3547),	-- Mikah
+p(3548),	-- Aquapo
+p(3549),	-- Heartseeker Moth
+p(3550),	-- Undermoth
+p(3551),	-- Teardrop Moth
+p(3552),	-- Rithro
+p(3553),	-- Nelthara
+p(3554),	-- Senega
+p(3555),	-- Axel
+p(3556),	-- Kromos
+10.1.0.48537
+p(3475),	-- Volatile Self-Driving Toolbox
+p(3557),	-- Roggy
+p(3558),	-- Murrey
+p(3559),	-- Clawz
+p(3560),	-- Bassalt
 
 
 
 
-.
+Missing in PetDB.lua
 
 5.0.3.15882
 p(2),	-- Dumptruck \\ Xelnath
@@ -1891,47 +1959,71 @@ p(3218),	-- Enraged Poultrid
 p(3219),	-- Predatory Helicid \\ Predatory Gastropod
 9.2.0.41726
 p(3246),	-- Tezpet
-10.0.7.47910
-p(3422),	-- [DNT] Storm Pet Boss - Legendary
-p(3423),	-- [DNT] Storm Pet Fodder
-p(3424),	-- [DNT] Storm Pet Boss - Epic
-p(3425),	-- [DNT] Storm Pet Boss - Rare
-p(3429),	-- Vortex
-p(3430),	-- Tremblor
-p(3431),	-- Wildfire
-p(3432),	-- Flow
-p(3433),	-- Vortex
-p(3434),	-- Tremblor
-p(3435),	-- Wildfire
-p(3436),	-- Flow
-p(3437),	-- Vortex
-p(3438),	-- Tremblor
-p(3439),	-- Wildfire
-p(3440),	-- Flow
-p(3441),	-- Storm-Touched Ohuna
-p(3442),	-- Storm-Touched Skitterer
-p(3443),	-- Storm-Touched Slyvern
-p(3444),	-- Storm-Touched Swoglet
-p(3446),	-- Vortex
-p(3447),	-- Tremblor
-p(3448),	-- Wildfire
-p(3449),	-- Flow
-p(3450),	-- Feral Frogduck
-p(3451),	-- Lord Flappinsby
-p(3452),	-- Enchanted Tuskling
-p(3453),	-- Adinakon
-p(3454),	-- Lyver
-p(3455),	-- Yu'shor
-p(3456),	-- Drakeula
-p(3457),	-- Arctichnid
-p(3458),	-- Kazzquack
-p(3459),	-- Mothoroth
-p(3460),	-- Blu'jaeden
-p(3465),	-- Enok the Stinky
-p(3466),	-- Malfunctioning Matrix
-p(3471),	-- Gilded Mechafrog
-p(3472),	-- Lil' Algalon
-p(3473),	-- Cozmos
-p(3474),	-- Celastro
-10.0.7.47983
-p(3476),	-- Gilded Mechafrog
+10.1.0.48480
+p(3477),	-- Puddlehopper
+p(3478),	-- Rock Martin
+p(3479),	-- Yellabon
+p(3480),	-- Endmite
+p(3481),	-- Stonewhisker
+p(3482),	-- Cobbleshell
+p(3483),	-- Boulderfang
+p(3484),	-- Slabwing
+p(3485),	-- Hollow Moth
+p(3486),	-- Lithengale
+p(3487),	-- Scarlapod
+p(3488),	-- Deepridger
+p(3489),	-- Sunglow Cobra
+p(3490),	-- Ebonwing Moth
+p(3493),	-- Roland
+p(3511),	-- Blaise
+p(3512),	-- Ambre
+p(3513),	-- Azure Swoglet
+p(3514),	-- Emerald Swoglet
+p(3515),	-- Karrit
+p(3516),	-- Crimson Swoglet
+p(3517),	-- Bronze Swoglet
+p(3518),	-- Lettuce
+p(3519),	-- Byrn
+p(3520),	-- Jade Skitterbug
+p(3521),	-- Lord Stantley
+p(3522),	-- Savage Lobstrok
+p(3523),	-- Cheddar
+p(3524),	-- Devourer Lobstrok
+p(3525),	-- Bestial Lurker
+p(3526),	-- Snapjaw Lurker
+p(3527),	-- Void Lurker
+p(3528),	-- Paulie \\ Scalebane Beetle
+p(3529),	-- Rango \\ Leshtar
+p(3530),	-- Miloh
+p(3531),	-- Rusty
+p(3532),	-- Amador
+p(3533),	-- Brul
+p(3534),	-- Jerrie
+p(3535),	-- Diamondshell
+p(3536),	-- Bashful \\ Sapphireshell
+p(3537),	-- Emeraldshell
+p(3538),	-- Tricky \\ Ambershell
+p(3539),	-- Roseshell
+p(3540),	-- Brulee \\ Topazshell
+p(3541),	-- Ridged Shalewing
+p(3542),	-- Dread Shalewing
+p(3543),	-- Ravenous Shalewing
+p(3544),	-- Shalewing Devourer
+p(3545),	-- Jyfaar
+p(3546),	-- Skaarn
+p(3547),	-- Mikah
+p(3548),	-- Aquapo
+p(3549),	-- Heartseeker Moth
+p(3550),	-- Undermoth
+p(3551),	-- Teardrop Moth
+p(3552),	-- Rithro
+p(3553),	-- Nelthara
+p(3554),	-- Senega
+p(3555),	-- Axel
+p(3556),	-- Kromos
+10.1.0.48537
+p(3475),	-- Volatile Self-Driving Toolbox
+p(3557),	-- Roggy
+p(3558),	-- Murrey
+p(3559),	-- Clawz
+p(3560),	-- Bassalt

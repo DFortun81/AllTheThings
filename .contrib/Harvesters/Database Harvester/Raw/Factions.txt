@@ -1004,3 +1004,7 @@
 6@@@PLAYER, Tauren 
 10.0.7.47910
 2557@@@Hearthfire Fellowship
+10.1.0.48480
+2564@@@Loamm Niffen
+2565@@@Loamm Niffen (Paragon)
+2568@@@Glimmerogg Racer

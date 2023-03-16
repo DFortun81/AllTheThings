@@ -11,6 +11,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(SL_TIER),
 	tier(DF_TIER),
 	n(ACHIEVEMENTS),
+	filter(BAGS),
 	filter(BATTLE_PETS),
 	n(CLASS_TRIAL),
 	n(FLIGHT_PATHS),

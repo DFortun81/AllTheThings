@@ -2662,7 +2662,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(835, {	-- Securing the Lines
 					["qg"] = 3293,	-- Rezlak
+					-- #if BEFORE CATA
 					["sourceQuest"] = 834,	-- Winds in the Desert
+					-- #endif
 					["coord"] = { 46.4, 23, DUROTAR },
 					--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -3109,6 +3111,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
 					["lvl"] = 16,
+				}),
+				q(28816, {	-- To the Depths
+					["qg"] = 45244,	-- Farseer Krogar
+					["sourceQuest"] = 28805,	-- The Eye of the Storm
+					["coord"] = { 50.4, 38.2, ORGRIMMAR },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(47867, {	-- Two If By Sea
 					["qg"] = 122065,	-- Lady Liadrin

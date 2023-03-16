@@ -319,6 +319,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
 					}),
+					i(197155, {	-- Highland Drake: Finned Neck (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 50 },
+						},
+					}),
 					i(197114, {	-- Highland Drake: Multi-Horned Head (DM!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },

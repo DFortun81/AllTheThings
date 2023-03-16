@@ -11,11 +11,11 @@ ROOTS = {
 	["AchievementDB"] = "AchievementDB",
 	["Achievements"] = "Achievements",
 	["BlackMarket"] = "BlackMarket",
+	["Character"] = "Character",
 	["CommonQualityItems"] = "CommonQualityItems",
 	["Craftables"] = "Craftables",
 	["ExpansionFeatures"] = "ExpansionFeatures",
 	["Factions"] = "Factions",
-	["GearSets"] = "GearSets",
 	["GroupFinder"] = "GroupFinder",
 	["HiddenAchievementTriggers"] = "HiddenAchievementTriggers",
 	["HiddenQuestTriggers"] = "HiddenQuestTriggers",
@@ -436,6 +436,7 @@ THE_FORBIDDEN_REACH_EVOKER = 2118;
 THE_PRIMALIST_FUTURE = 2085;
 THE_WAKING_SHORES = 2022;
 VALDRAKKEN = 2112;
+ZARALEK_CAVERN = 2133;
 
 -- Factions
 COURT_OF_NIGHT = 2464;
@@ -1015,6 +1016,11 @@ LEGENDARY_QUESTLINE = -10066;
 	VALDRAKKEN_ACCORD = -1140;
 		SIEGE_ON_DRAGONBANE_KEEP = -1141;
 		DRAGONRIDING_RACING = -1142;
+	ZSKERA_VAULTS = -1200;
+
+ALLIED_RACES = -254;
+HERITAGE = -255;
+NEW_CHARACTER = -211;
 CLASS_TRIAL = -5350;
 LEVEL_NINETY = -137;
 LEVEL_HUNDRED = -138;
@@ -1285,16 +1291,17 @@ ADDED_SL_1_5 = "added 9.1.5";							-- Shadowlands 9.1.5 Start on November 2nd, 
 REMOVED_SL_1_5 = "removed 9.1.5";						-- Shadowlands 9.1.5 Start on November 2nd, 2021
 ADDED_SL_S3 = "added 9.2.0.42423";						-- Shadowlands Season 3 Start on February 22nd, 2022
 REMOVED_SL_S3 = "removed 9.2.0.42488";					-- Shadowlands Season 3 Start on February 22nd, 2022
-ADDED_SL_S4 = "added 9.2.5.44908";						-- Shadowlands Season 4 Start on May 31, 2022
-REMOVED_SL_S4 = "removed 9.2.5.44908";					-- Shadowlands Season 4 Start on May 31, 2022
-ADDED_SL_2_7 = "added 9.2.7";							-- Shadowlands 9.2.7 Start on August 16, 2022
+ADDED_SL_S4 = "added 9.2.5.43903";						-- Shadowlands Season 4 Start on May 31, 2022
+REMOVED_SL_S4 = "removed 9.2.5.43903";					-- Shadowlands Season 4 Start on May 31, 2022
+ADDED_SL_2_7 = "added 9.2.7.45114";						-- Shadowlands 9.2.7 Start on August 16, 2022
+REMOVED_SL_2_7 = "removed 9.2.7.45114";						-- Shadowlands 9.2.7 Start on August 16, 2022
 --
-CREATED_DF_PRE = "created 10.0.0";						-- First phase of Dragonflight pre-patch on October 25th, 2022
-ADDED_DF_PRE = "added 10.0.0";							-- First phase of Dragonflight pre-patch on October 25th, 2022
-REMOVED_DF_PRE = "removed 10.0.0";						-- First phase of Dragonflight pre-patch on October 25th, 2022
-ADDED_DF_PRE2 = "added 10.0.2"							-- Second phase of Dragonflight pre-patch on November 15th, 2022
+CREATED_DF_PRE = "created 10.0.0.46293";				-- First phase of Dragonflight pre-patch on October 25th, 2022
+ADDED_DF_PRE = "added 10.0.0.46293";					-- First phase of Dragonflight pre-patch on October 25th, 2022
+REMOVED_DF_PRE = "removed 10.0.0.46293";				-- First phase of Dragonflight pre-patch on October 25th, 2022
+ADDED_DF_PRE2 = "added 10.0.2.46658"					-- Second phase of Dragonflight pre-patch on November 15th, 2022
 TIMELINE_DF_PRE2 = { CREATED_DF_PRE, ADDED_DF_PRE2 };	-- Second phase of Dragonflight pre-patch on November 15th, 2022
-REMOVED_DF_PRE2 = "removed 10.0.2";						-- Second phase of Dragonflight pre-patch on November 15th, 2022
+REMOVED_DF_PRE2 = "removed 10.0.2.46658";				-- Second phase of Dragonflight pre-patch on November 15th, 2022
 ADDED_DF_REL = "added 10.0.2.46801";					-- Dragonflight Launch on November 28th, 2022
 TIMELINE_DF_REL = { CREATED_DF_PRE, ADDED_DF_REL };		-- Dragonflight Launch on November 28th, 2022
 REMOVED_DF_REL = "removed 10.0.2.46801";				-- Dragonflight Launch on November 28th, 2022
@@ -1911,6 +1918,10 @@ end
 champ = function(cost, item)							-- Assign a Champion's Seal cost to an item with proper timeline & phase requirements.
 	applycost(item, { "c", 241, cost });	-- Champion's Seal
 	return applyclassicphase(WRATH_PHASE_TWO, item);
+end
+daljewelcraftingtoken = function(cost, item)				-- Assign a Dalaran Jewelcrafter's Token cost to an item.
+	applycost(item, { "c", 61, cost });
+	return item;
 end
 emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1

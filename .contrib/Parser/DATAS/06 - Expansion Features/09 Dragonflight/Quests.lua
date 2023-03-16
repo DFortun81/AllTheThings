@@ -181,9 +181,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				i(201309),	-- Tomb Raider's Shank
 			},
 		}),
-		--q(71093),	-- Legacy of Tyr: Secrets of the Past [auto-accepted] ??
-
-
 
 		-- Temp? Place??
 		q(72743, {	-- A Piece of Copper

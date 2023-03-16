@@ -221,6 +221,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["sourceQuests"] = { 66410 },	-- Worst Impressions
 				["provider"] = { "n", 188283 },	-- Elder Unujaak
 				["coord"] = { 53.7, 37.9, THE_WAKING_SHORES },
+				["g"] = {
+					i(192191),	-- Tuskarr Fishing Net
+				},
 			}),
 			q(66417, {	-- Salvaging Supplies
 				["minReputation"] = { 2511, 11 },	-- Iskaara Tuskarr Renown 11
@@ -391,7 +394,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 			}),
 			q(72292, {	-- Story of a Spectacular Victory
-				["sourceQuests"] = { 70978 },	-- Dragon Isles Champion's Tales
+				-- ["sourceQuests"] = { 70978 },	-- Dragon Isles Champion's Tales (inaccurate)
+				["minReputation"] = { 2511, 15 },	-- Iskaara Tuskarr Renown 15
 				["provider"] = { "i", 201471 },	-- Story of a Spectacular Victory
 				["isWeekly"] = true,
 			}),

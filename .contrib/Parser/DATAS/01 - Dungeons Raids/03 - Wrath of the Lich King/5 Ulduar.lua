@@ -125,10 +125,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 					},
 				}),
-				ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
-					["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
-					["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
-				}),
 				ach(12312, {	-- Dwarfageddon
 					["timeline"] = { "added 7.3.5.25727" },
 					["crs"] = {
@@ -146,13 +142,17 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					},
 				}),
 			}),
-			n(LEGENDARY_QUESTLINE, {
+			applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(LEGENDARY_QUESTLINE, {
 				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
 				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
 				["title"] = "Val'anyr, Hammer of Ancient Kings",
 				["icon"] = "Interface\\Icons\\inv_mace_99",
 				["isRaid"] = true,
 				["groups"] = {
+					ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
+						["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
+						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+					}),
 					q(13622, {	-- Ancient History
 						["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
 						["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
@@ -170,7 +170,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						},
 					}),
 				},
-			}),
+			})),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					33113,	-- Flame Leviathan
@@ -190,7 +190,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					33288,	-- Yogg-Saron
 				},
 				["groups"] = {
-					i(45038),	-- Fragment of Val'anyr
+					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, i(45038)),	-- Fragment of Val'anyr
 					i(45087),	-- Runed Orb
 				},
 			}),
@@ -1233,13 +1233,17 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 						}),
 					}),
-					n(LEGENDARY_QUESTLINE, {
+					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(LEGENDARY_QUESTLINE, {
 						["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
 						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
 						["title"] = "Val'anyr, Hammer of Ancient Kings",
 						["icon"] = "Interface\\Icons\\inv_mace_99",
 						["isRaid"] = true,
 						["groups"] = {
+							ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
+								["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
+								["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+							}),
 							q(13622, {	-- Ancient History
 								["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
 								["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
@@ -1257,7 +1261,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								},
 							}),
 						},
-					}),
+					})),
 					n(QUESTS, {
 						q(13818, {	-- Heroic: Algalon
 							["providers"] = {
@@ -1379,7 +1383,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							33288,	-- Yogg-Saron
 						},
 						["groups"] = {
-							i(45038),	-- Fragment of Val'anyr
+							applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, i(45038)),	-- Fragment of Val'anyr
 							i(45087, {	-- Runed Orb
 								["description"] = "Can also drop from defeating 10-Man Hard Mode bosses.",
 							}),

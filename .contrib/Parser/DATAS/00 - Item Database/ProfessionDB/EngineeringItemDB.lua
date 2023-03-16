@@ -227,3 +227,8 @@ i(202228, 397858);	-- Impressive Linkgrease Locksprocket
 i(202229, 397859);	-- Remarkable Linkgrease Locksprocket
 i(202230, 397860);	-- Impressive True Iron Trigger
 i(202231, 397861);	-- Remarkable True Iron Trigger
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(203424, 400810);	-- Gnomish Voicebox

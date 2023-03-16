@@ -332,7 +332,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										n(WEAPONS, {
 											i(180336),	-- Faintly Smoldering Torch
 											i(180335),	-- Sturdy Pitch Fork
-											i(180337),	-- Sturdy Pitch Fork
+											i(180337),	-- Sturdy Pitch Fork / 10.0.7: Rusty Hand Sickle
 										}),
 									},
 								}),

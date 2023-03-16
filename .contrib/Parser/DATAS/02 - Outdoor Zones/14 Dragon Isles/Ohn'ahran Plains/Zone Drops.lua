@@ -4,6 +4,15 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(ZONE_DROPS, {
+			i(199790, {	-- Makko's Journal Cover
+				["crs"] = {
+					195960,	-- Beguiled Aquamancer
+					195962,	-- Captivated Shellwarden
+					196048,	-- Enraptured Hunter
+					195918,	-- Enthralled Shellcracker
+					195961,	-- Mesmerized Healer
+				},
+			}),
 			i(191127, {	-- Medallion of a Fallen Friend
 				["cr"] = 186678,	-- Chief Grrlgilmesh
 				["coord"] = { 82.0, 31.4, OHNAHRAN_PLAINS },
@@ -18,7 +27,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					{"i",200194,1},	-- 1x Nokhud Battle Tunic
 				},
 			}),
-			i(201934),	-- Nokuhd Whittling Knife
+			i(201934),	-- Nokhud Whittling Knife
 			i(201439, {	-- Renewed Dream
 				["cost"] = {{"i",201437,5}},	-- 5x Slumbering Dream Fragment
 				["g"] = {

@@ -27,15 +27,44 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				applyclassicphase(WRATH_PHASE_TWO, ach(17292, {	-- Defense Protocol Alpha: Drak'Tharon Keep
 					crit(57735, { -- Trollgore
 						["_encounter"] = { 588, 2 },
+						["groups"] = {
+							i(39241),	-- Dark Shroud of the Scourge
+							i(39245),	-- Demise
+							i(39242),	-- Robes of Hoarse Breaths
+						},
 					}),
 					crit(57736, { -- Novos the Summoner
 						["_encounter"] = { 589, 2 },
+						["groups"] = {
+							i(39244),	-- Ring of the Fated
+							i(39236),	-- Trespasser's Boots
+							i(39237),	-- Spaulders of Resumed Battle
+						},
 					}),
 					crit(57737, { -- King Dred
 						["_encounter"] = { 590, 2 },
+						["groups"] = {
+							i(39239),	-- Chestplate of the Risen Soldier
+							i(39240),	-- Noth's Curse
+							i(39243),	-- Handgrips of the Foredoomed
+						},
 					}),
 					crit(57738, { -- The Prophet Tharon'ja
 						["_encounter"] = { 591, 2 },
+						["groups"] = {
+							i(43995),	-- Enamored Cowl
+							i(39416),	-- Kel'Thuzad's Reach
+							i(43996),	-- Sabatons of Firmament
+							i(40616),	-- Helm of the Lost Conqueror
+							i(40617),	-- Helm of the Lost Protector
+							i(40618),	-- Helm of the Lost Vanquisher
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
+						},
 					}),
 				})),
 				-- #endif
@@ -337,7 +366,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							ach(5099, {	-- Heroic: Drak'Tharon Keep Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),
-							i(41795, {	-- Design: Timeless Twilight Opal
+							i(41795, {	-- Design: Timeless Twilight Opal [CATA+] / Design: Timeless Forest Emerald
 								["timeline"] = { "removed 4.0.1" },
 							}),
 							i(37733),	-- Mojo Masked Crusher

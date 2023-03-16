@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				}),
 
 
-				-- Dragonriding?
+				-- Dragonriding
 				q(73084, {	-- Dragonrider Racing - Forbidden Reach Rush
 					["coord"] = { 66.9, 5.6, THE_FORBIDDEN_REACH },
 					["g"] = {
@@ -35,6 +35,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				}),
 				q(73083, {	-- Dragonrider Racing - Caldera Climb
 					["coord"] = { 41.2, 14.3, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(204359),	-- Reach Racer's Purse
+					},
+				}),
+				q(73082, {	-- Dragonrider Racing - Southern Reach Route
+					["coord"] = { 63.5, 83.6, THE_FORBIDDEN_REACH },
 					["g"] = {
 						i(204359),	-- Reach Racer's Purse
 					},

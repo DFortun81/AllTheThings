@@ -34,15 +34,47 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				applyclassicphase(WRATH_PHASE_TWO, ach(17300, {	-- Defense Protocol Alpha: The Oculus
 					crit(57763, { -- Drakos the Interrogator
 						["_encounter"] = { 622, 2 },
-					}),
-					crit(57762, { -- Mage-Lord Urom
-						["_encounter"] = { 624, 2 },
+						["groups"] = {
+							i(39399),	-- Helm of the Vast Legions
+							i(39404),	-- Cloak of Mastery
+							i(39408),	-- Leggings of Sapphiron
+						},
 					}),
 					crit(57765, { -- Varos Cloudstrider
 						["_encounter"] = { 623, 2 },
+						["groups"] = {
+							i(39401),	-- Circle of Death
+							i(39409),	-- Cowl of Winged Fear
+							i(39405),	-- Helmet of the Inner Sanctum
+						},
+					}),
+					crit(57762, { -- Mage-Lord Urom
+						["_encounter"] = { 624, 2 },
+						["groups"] = {
+							i(39403),	-- Helm of the Unsubmissive
+							i(39311),	-- Scepter of Murmuring Spirits
+							i(39415),	-- Shroud of the Citadel
+						},
 					}),
 					crit(57764, { -- Ley-Guardian Eregos
 						["_encounter"] = { 625, 2 },
+						["groups"] = {
+							i(44658),	-- Chain of the Ancient Wyrm
+							i(44660),	-- Drakescale Collar
+							i(44659),	-- Pendant of the Dragonsworn
+							i(44657),	-- Torque of the Red Dragonflight
+							i(40497),	-- Black Ice
+							i(39310),	-- Mantle of the Extensive Mind
+							i(40616),	-- Helm of the Lost Conqueror
+							i(40617),	-- Helm of the Lost Protector
+							i(40618),	-- Helm of the Lost Vanquisher
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
+						},
 					}),
 				})),
 				-- #endif

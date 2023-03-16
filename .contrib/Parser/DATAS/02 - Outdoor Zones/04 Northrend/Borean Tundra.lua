@@ -504,6 +504,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 75.8, 37.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 11630,	-- The Bad Earth
+						["groups"] = {
+							i(34782),	-- Imbued Scourge Shroud
+						},
 					}),
 					q(11898, {	-- Breaking Through
 						["qg"] = 24703,	-- Chieftain Wintergale
@@ -2498,6 +2501,15 @@ root(ROOTS.Zones, {
 							i(22307),	-- Pattern: Enchanted Mageweave Pouch
 						},
 					}),
+					n(27139, {	-- Librarian Whitley <Wands>
+						["coord"] = { 46.4, 32.6, BOREAN_TUNDRA },
+						["groups"] = {
+							i(40019),	-- Wand of Amber
+							i(40021),	-- Wand of Crystal
+							i(40020),	-- Wand of Jade
+							i(40018),	-- Wand of Onyx
+						},
+					}),
 					n(32564, {	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
 						["coord"] = { 57.7, 66.4, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
@@ -2517,6 +2529,19 @@ root(ROOTS.Zones, {
 							i(44503),	-- Schematic: Mekgineer's Chopper
 							i(38453),	-- Shield of the Lion-Hearted
 							i(38465),	-- Vanguard Soldier's Dagger
+						},
+					}),
+					n(26697, {	-- Tewah Chillmane <Leather Armor Merchant>
+						["coord"] = { 76.6, 37.2, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(42084),	-- Snowhide Belt
+							i(42092),	-- Snowhide Bracers
+							i(42094),	-- Snowhide Cap
+							i(42088),	-- Snowhide Hoof-Warmers
+							i(42097),	-- Snowhide Mitts
+							i(42098),	-- Snowhide Pants
+							i(42099),	-- Snowhide Vest
 						},
 					}),
 					n(35132, {	-- Tohfo Skyhoof <Wind Rider Keeper>

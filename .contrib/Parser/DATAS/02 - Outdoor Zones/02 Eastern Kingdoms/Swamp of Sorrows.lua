@@ -417,14 +417,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(TBC_PHASE_ONE, q(9609, {	-- Help Watcher Biggs
+				q(9609, {	-- Help Watcher Biggs
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 25.8, 31.8, SWAMP_OF_SORROWS },
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
-				})),
+				}),
 				q(2702, {	-- Heroes of Old (1/2)
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2681,	-- The Stones That Bind Us
@@ -526,7 +526,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				applyclassicphase(TBC_PHASE_ONE, q(9440, {	-- Little Morsels
+				q(9440, {	-- Little Morsels
 					["qg"] = 17109,	-- Cersei Dusksinger
 					["coord"] = { 47.8, 54.9, DUSTWALLOW_MARSH },
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
@@ -549,7 +549,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 17112,	-- Captured Tarantula
 						}),
 					},
-				})),
+				}),
 				q(27822, {	-- Lumbering Oafs
 					["qg"] = 46676,	-- Joanna Blueheart
 					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
@@ -620,7 +620,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				applyclassicphase(TBC_PHASE_ONE, q(9448, {	-- Mercy for the Cursed
+				q(9448, {	-- Mercy for the Cursed
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 25.8, 31.8, SWAMP_OF_SORROWS },
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
@@ -631,7 +631,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 17115 },	-- Cursed Lost One
 						}),
 					},
-				})),
+				}),
 				q(27536, {	-- Mostly Harmless
 					["qg"] = 45786,	-- Trade Baron Silversnap
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
@@ -701,7 +701,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
-				applyclassicphase(TBC_PHASE_ONE, q(9610, {	-- Pool of Tears [Alliance]
+				q(9610, {	-- Pool of Tears [Alliance]
 					["qg"] = 18221,	-- Holaaru
 					["coord"] = { 25.9, 32.4, SWAMP_OF_SORROWS },
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
@@ -712,7 +712,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 6175 },	-- Atal'ai Artifact
 						}),
 					},
-				})),
+				}),
 				q(1424, {	-- Pool of Tears [Horde]
 					["qg"] = 1443,	-- Fel'zerul
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },

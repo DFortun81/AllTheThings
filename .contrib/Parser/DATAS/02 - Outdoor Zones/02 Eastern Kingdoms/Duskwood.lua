@@ -227,6 +227,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
+					["groups"] = {
+						i(7297, {	-- Morbent's Bane
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(26787, {	-- Bear In Mind
 					["qg"] = 288,	-- Jitters

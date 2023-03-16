@@ -1655,7 +1655,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(TBC_PHASE_ONE, q(9439, {	-- Unclaimed Baggage
+				q(9439, {	-- Unclaimed Baggage
 					["qg"] = 17097,	-- Advisor Sarophas
 					["coord"] = { 5.8, 48, BADLANDS },
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
@@ -1671,7 +1671,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 41.7, 26.8, BADLANDS },
 						}),
 					},
-				})),
+				}),
 				q(27775, {	-- When the Going Gets Tough, Cheat
 					["qg"] = 46653,	-- Garyanne Fleezlebop
 					["coord"] = { 64.2, 38.1, BADLANDS },
@@ -1925,6 +1925,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2907,	-- Dustbelcher Mystic
 				}),
 				-- #endif
+				i(4616, {	-- Ryedol's Lucky Pick
+					["crs"] = {
+						2740,	-- Shadowforge Darkweaver
+						2739,	-- Shadowforge Tunneler
+						2743,	-- Shadowforge Warrior
+					},
+				}),
 				i(9406, {	-- Spirewind Fetter
 					["crs"] = {
 						4846,	-- Shadowforge Digger

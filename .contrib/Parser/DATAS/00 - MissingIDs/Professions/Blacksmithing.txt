@@ -1,158 +1,168 @@
 3.0.1.8622
-50465
+r(50465),	-- Socket One-Handed Weapon
 3.0.1.8874
-55730
+r(55730),	-- Cobalt Rod
 4.0.1.12911
-76666
-85531
+r(76666),	-- Blacksmithing
+r(85531),	-- 
 4.3.4.15595
-92375
+r(92375),	-- 
 5.0.3.15890
-110955
-113263
-114112
-126864
-126866
-126867
+r(110955),	-- 
+r(113263),	-- 
+r(114112),	-- 
+r(126864),	-- 
+r(126866),	-- 
+r(126867),	-- 
 7.3.0.24473
-171652
-171653
+r(171652),	-- Upgrade Weapon
+r(171653),	-- Upgrade Weapon
 8.0.1.25902
-253129
-253148
-253153
-253154
-253155
-264440
-264448
+r(253129),	-- 9.0 Blacksmithing - Modified Crafting Reagent 02 \\ REUSE ME \\ Mariner's Battleaxe
+r(253148),	-- REUSE ME \\ Stormsteel Axe
+r(253153),	-- REUSE ME \\ Stormsteel Greatsword
+r(253154),	-- REUSE ME \\ Stormsteel Greatsword
+r(253155),	-- REUSE ME \\ Stormsteel Greatsword
+r(264440),	-- Cataclysm Blacksmithing
+r(264448),	-- Kul Tiran Blacksmithing
 8.0.1.25976
-265803
-265938
-265939
+r(265803),	-- Zandalari Blacksmithing
+r(265938),	-- 9.0 Blacksmithing - Crafted Reagent 05 \\ REUSE ME [SCS] \\ Monelite Reinforced Chassis \\ Monalite Reinforced Chassis
+r(265939),	-- 9.0 Blacksmithing - Crafted Reagent 06 \\ REUSE ME [SCS] \\ Monelite Reinforced Chassis \\ Monalite Reinforced Chassis
 8.0.1.26175
-269461
-269462
-269463
-269467
-269468
-269469
-269473
-269474
-269475
+r(269461),	-- REUSE ME \\ Honorable Combatant's Hatchet
+r(269462),	-- REUSE ME \\ Honorable Combatant's Hatchet
+r(269463),	-- REUSE ME \\ Honorable Combatant's Hatchet
+r(269467),	-- Honorable Combatant's Battleaxe
+r(269468),	-- Honorable Combatant's Battleaxe
+r(269469),	-- Honorable Combatant's Battleaxe
+r(269473),	-- REUSE ME \\ Honorable Combatant's Claymore
+r(269474),	-- REUSE ME \\ Honorable Combatant's Claymore
+r(269475),	-- REUSE ME \\ Honorable Combatant's Claymore
 9.0.1.33978
-255149
-280657
-280659
-307648
-307649
-307650
-307658
-307683
-307684
-307685
-307686
-307688
-307689
-307690
-307691
-307692
-307694
-307695
-307696
-307697
-307699
-307700
-307701
-307702
-307703
-307704
-309827
-322592
-322596
-322597
-322598
-322599
-322600
-322601
-322602
-322603
-322604
-322605
-322606
-322607
-322608
-322609
-322610
-322611
-322612
-322613
-322615
-322616
-322618
-322619
-322620
-322621
-322622
-322623
-322624
-322625
-322626
-322627
-322628
-322629
-322630
-322631
-322632
-322633
-322634
-322635
-322636
-322637
-322638
-322639
-322640
-322641
-322643
-322644
-322645
-322646
+r(255149),	-- 9.0 Blacksmithing - Modified Crafting Reagent 05 \\ REUSE ME (DNT)
+r(280657),	-- 9.0 Blacksmithing - Crafted Reagent 08 \\ R.I.P. (DNT NO LONGER USED) \\ R.I.P.
+r(280659),	-- 9.0 Blacksmithing - Crafted Reagent 07 \\ M.E.N.D. (DNT NO LONGER USED) \\ M.E.N.D.
+r(307648),	-- Elethium Setting
+r(307649),	-- 9.0 Blacksmithing - Crafted Reagent 03
+r(307650),	-- 9.0 Blacksmithing - Crafted Reagent 04
+r(307658),	-- 9.0 Blacksmithing - Modified Crafting Reagent 08
+r(307683),	-- Phaeweald Breastplate
+r(307684),	-- Phaeweald Sabatons
+r(307685),	-- Phaeweald Gauntlets
+r(307686),	-- Phaeweald Helm
+r(307688),	-- Phaeweald Greaves
+r(307689),	-- Phaeweald Aegis
+r(307690),	-- Phaeweald Pauldrons
+r(307691),	-- Phaeweald Waistguard
+r(307692),	-- Phaeweald Armguards
+r(307694),	-- Phaeweald Warglaive
+r(307695),	-- Phaeweald Spear
+r(307696),	-- Phaeweald Shanker
+r(307697),	-- Phaeweald Blade
+r(307699),	-- Phaeweald Claymore
+r(307700),	-- Phaeweald Smasher
+r(307701),	-- Phaeweald Reaper
+r(307702),	-- Phaeweald Rapier
+r(307703),	-- Phaeweald Mace
+r(307704),	-- Phaeweald Axe
+r(309827),	-- Shadowlands Blacksmithing
+r(322592),	-- Shadowsteel Aegis \\ Solforged Aegis
+r(322596),	-- Bonegrafted Breastplate
+r(322597),	-- Bonegrafted Sabatons
+r(322598),	-- Bonegrafted Gauntlets
+r(322599),	-- Bonegrafted Helm
+r(322600),	-- Bonegrafted Greaves
+r(322601),	-- Bonegrafted Aegis
+r(322602),	-- Bonegrafted Pauldrons
+r(322603),	-- Bonegrafted Waistguard
+r(322604),	-- Bonegrafted Armguards
+r(322605),	-- Sinsteel Breastplate
+r(322606),	-- Sinsteel Sabatons
+r(322607),	-- Sinsteel Gauntlets
+r(322608),	-- Sinsteel Helm
+r(322609),	-- Sinsteel Greaves
+r(322610),	-- Sinsteel Aegis
+r(322611),	-- Sinsteel Pauldrons
+r(322612),	-- Sinsteel Waistguard
+r(322613),	-- Sinsteel Armguards
+r(322615),	-- Solforged Axe
+r(322616),	-- Solforged Mace
+r(322618),	-- Solforged Rapier
+r(322619),	-- Solforged Reaper
+r(322620),	-- Solforged Smasher
+r(322621),	-- Solforged Claymore
+r(322622),	-- Solforged Blade
+r(322623),	-- Solforged Shanker
+r(322624),	-- Solforged Spear
+r(322625),	-- Solforged Warglaive
+r(322626),	-- Bonegrafted Axe
+r(322627),	-- Bonegrafted Mace
+r(322628),	-- Bonegrafted Rapier
+r(322629),	-- Bonegrafted Reaper
+r(322630),	-- Bonegrafted Smasher
+r(322631),	-- Bonegrafted Claymore
+r(322632),	-- Bonegrafted Blade
+r(322633),	-- Bonegrafted Shanker
+r(322634),	-- Bonegrafted Spear
+r(322635),	-- Bonegrafted Warglaive
+r(322636),	-- Sinsteel Axe
+r(322637),	-- Sinsteel Mace
+r(322638),	-- Sinsteel Rapier
+r(322639),	-- Sinsteel Reaper
+r(322640),	-- Sinsteel Smasher
+r(322641),	-- Sinsteel Claymore
+r(322643),	-- Sinsteel Blade
+r(322644),	-- Sinsteel Shanker
+r(322645),	-- Sinsteel Spear
+r(322646),	-- Sinsteel Warglaive
 10.0.7.47910
-400808
-402118
-402123
-402124
-402125
-402126
-402128
-402129
-402130
-402131
-402133
-402134
-402135
-402136
-402137
-402138
+r(402118),	-- Gurubashi Headplate
+r(402123),	-- Gurubashi Carver
+r(402124),	-- Venomfang
+r(402125),	-- Gurubashi Poker
+r(402126),	-- Gurubashi Grinder
+r(402128),	-- Gurubashi Hexxer
+r(402129),	-- Sceptre of Hexing
+r(402130),	-- Gurubashi Crusher
+r(402131),	-- Pitchfork of Mojo Madness
+r(402133),	-- Venomreaver
+r(402134),	-- Bloodherald
+r(402135),	-- Bloodlord's Reaver
+r(402136),	-- Fiery Vengeance
+r(402137),	-- Warblades of the Hakkari, Reborn
+r(402138),	-- Gurubashi Slicer
+10.1.0.48480
+r(403158),	-- Obsidian Combatant's Draconium Armguards
+r(403159),	-- Obsidian Combatant's Draconium Breastplate
+r(403160),	-- Obsidian Combatant's Draconium Gauntlets
+r(403161),	-- Obsidian Combatant's Draconium Greaves
+r(403162),	-- Obsidian Combatant's Draconium Helm
+r(403163),	-- Obsidian Combatant's Draconium Pauldrons
+r(403164),	-- Obsidian Combatant's Draconium Sabatons
+r(403165),	-- Obsidian Combatant's Draconium Waistguard
+r(408282),	-- Shadowed Alloy \\ Hellsteel Alloy
+r(408283),	-- Shadowed Razing Annihilator \\ [DNT] Hellsteel Bunker Buster
+r(408288),	-- Shadowed Belt Buckle \\ Hellsteel Belt Buckle
+r(408299),	-- Heat-Resistant Rescue Ring
+r(408326),	-- Shadowed Impact Buckler \\ Hellsteel Impact Buckler
 
 
 
 
 Missing in BlacksmithingItemDB.lua
 
-10.0.7.47910
-400808
-402118
-402123
-402124
-402125
-402126
-402128
-402129
-402130
-402131
-402133
-402134
-402135
-402136
-402137
-402138
+10.1.0.48480
+r(403158),	-- Obsidian Combatant's Draconium Armguards
+r(403159),	-- Obsidian Combatant's Draconium Breastplate
+r(403160),	-- Obsidian Combatant's Draconium Gauntlets
+r(403161),	-- Obsidian Combatant's Draconium Greaves
+r(403162),	-- Obsidian Combatant's Draconium Helm
+r(403163),	-- Obsidian Combatant's Draconium Pauldrons
+r(403164),	-- Obsidian Combatant's Draconium Sabatons
+r(403165),	-- Obsidian Combatant's Draconium Waistguard
+r(408282),	-- Shadowed Alloy \\ Hellsteel Alloy
+r(408283),	-- Shadowed Razing Annihilator \\ [DNT] Hellsteel Bunker Buster
+r(408288),	-- Shadowed Belt Buckle \\ Hellsteel Belt Buckle
+r(408299),	-- Heat-Resistant Rescue Ring
+r(408326),	-- Shadowed Impact Buckler \\ Hellsteel Impact Buckler

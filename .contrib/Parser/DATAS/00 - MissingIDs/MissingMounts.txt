@@ -99,7 +99,14 @@ mount(276112),	-- Darkforge Ram
 9.1.5.40622
 mount(363608),	-- Lightforged Ruinstrider
 10.0.0.44649
+mount(349935),	-- Noble Bruffalon \\ Noble Elderhorn \\ PH Moose Bull Black
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
+mount(374157),	-- PH Lava Snail Blue
+10.1.0.48480
+mount(408313),	-- Big Slick in the City
+10.1.0.48537
+mount(406637),	-- Inferno Armoredon
+mount(408647),	-- Api Biru Sporebat
 
 
 
@@ -210,6 +217,8 @@ mount(363608),	-- Lightforged Ruinstrider
 mount(370770),	-- Tuskarr Shoreglider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
-mount(373646),	-- Dracthyr Flight Test
-10.0.0.45661
-mount(369536),	-- Soar
+10.1.0.48480
+mount(408313),	-- Big Slick in the City
+10.1.0.48537
+mount(406637),	-- Inferno Armoredon
+mount(408647),	-- Api Biru Sporebat

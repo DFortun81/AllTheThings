@@ -1,250 +1,250 @@
 4.0.1.12911
-73979
-78670
-80451
-86857
-86864
-86865
-86866
-88180
-88181
-88262
-88907
-88908
-88909
-88910
-88929
-88930
-88961
-89009
-89012
-89014
+r(73979),	-- Searching for Artifacts
+r(78670),	-- Archaeology
+r(80451),	-- Survey
+r(86857),	-- Pewter Drinking Cup
+r(86864),	-- Ceramic Funeral Urn
+r(86865),	-- Worn Hunting Knife
+r(86866),	-- Bone Gaming Dice
+r(88180),	-- Stone Gryphon
+r(88181),	-- Silver Neck Torc
+r(88262),	-- Zandalari Voodoo Doll
+r(88907),	-- Fetish of Hir'eek
+r(88908),	-- Lizard Foot Charm
+r(88909),	-- Wooden Whistle
+r(88910),	-- Belt Buckle with Anvilmar Crest
+r(88929),	-- Black Trilobite
+r(88930),	-- Beautiful Preserved Fern
+r(88961),	-- Archaeology
+r(89009),	-- Highborne Pyxis
+r(89012),	-- Inlaid Ivory Comb
+r(89014),	-- Scandalous Silk Nightgown
 4.3.4.15595
-74268
-89693
-89696
-89701
-89711
-89717
-89718
-89719
-89720
-89721
-89722
-89890
-89891
-89893
-89894
-89895
-89896
-90410
-90411
-90412
-90413
-90415
-90419
-90420
-90421
-90423
-90429
-90432
-90433
-90451
-90452
-90453
-90458
-90464
-90493
-90504
-90506
-90509
-90518
-90519
-90521
-90553
-90558
-90581
-90608
-90609
-90610
-90611
-90612
-90614
-90616
-90617
-90618
-90619
-90622
-90720
-90728
-90730
-90732
-90734
-90831
-90832
-90833
-90843
-90853
-90860
-90861
-90864
-90968
-90974
-90975
-90983
-90984
-90987
-90988
-90997
-91008
-91012
-91014
-91084
-91089
-91132
-91133
-91170
-91188
-91191
-91197
-91209
-91211
-91214
-91215
-91219
-91221
-91223
-91224
-91225
-91226
-91227
-91757
-91761
-91762
-91766
-91769
-91773
-91775
-91779
-91780
-91782
-91785
-91790
-91792
-91793
-92137
-92139
-92145
-92148
-92163
-92168
-92806
-92807
-92808
-92809
-92810
-92811
-92812
-93440
-93441
-93442
-93443
-93444
-98533
-98556
-98560
-98569
-98582
-98588
+r(74268),	-- Track Archaeology Chests
+r(89693),	-- Fossilized Hatchling
+r(89696),	-- Cloak Clasp with Antlers
+r(89701),	-- Jade Asp with Ruby Eyes
+r(89711),	-- Feathered Gold Earring
+r(89717),	-- Moltenfist's Jeweled Goblet
+r(89718),	-- Archaeology
+r(89719),	-- Archaeology
+r(89720),	-- Archaeology
+r(89721),	-- Archaeology
+r(89722),	-- Archaeology
+r(89890),	-- Eerie Smolderthorn Idol
+r(89891),	-- Cinnabar Bijou
+r(89893),	-- Coin from Eldre'Thalas
+r(89894),	-- Shattered Glaive
+r(89895),	-- Twisted Ammonite Shell
+r(89896),	-- Green Dragon Ring
+r(90410),	-- Notched Sword of Tunadil the Redeemer
+r(90411),	-- Bodacious Door Knocker
+r(90412),	-- Boot Heel with Scrollwork
+r(90413),	-- Golden Chamber Pot
+r(90415),	-- Winged Helm of Corehammer
+r(90419),	-- Ironstar's Petrified Shield
+r(90420),	-- Skull-Shaped Planter
+r(90421),	-- Bracelet of Jade and Coins
+r(90423),	-- Gahz'rilla Figurine
+r(90429),	-- Atal'ai Scepter
+r(90432),	-- Devilsaur Tooth
+r(90433),	-- Insect in Amber
+r(90451),	-- Kaldorei Amphora
+r(90452),	-- Ancient Shark Jaws
+r(90453),	-- Hairpin of Silver and Malachite
+r(90458),	-- Delicate Music Box
+r(90464),	-- Highborne Soul Mirror
+r(90493),	-- Druid and Priest Statue Set
+r(90504),	-- Dented Shield of Horuz Killcrow
+r(90506),	-- Scorched Staff of Shadow Priest Anund
+r(90509),	-- Scepter of Charlga Razorflank
+r(90518),	-- Mithril Chain of Angerforge
+r(90519),	-- Skull Staff of Shadowforge
+r(90521),	-- Clockwork Gnome
+r(90553),	-- Chalice of the Mountain Kings
+r(90558),	-- Tooth with Gold Filling
+r(90581),	-- Drakkari Sacrificial Knife
+r(90608),	-- Zin'rokh, Destroyer of Worlds
+r(90609),	-- String of Small Pink Pearls
+r(90610),	-- Chest of Tiny Glass Animals
+r(90611),	-- Cracked Crystal Vial
+r(90612),	-- Scepter of Xavius
+r(90614),	-- Kaldorei Wind Chimes
+r(90616),	-- Queen Azshara's Dressing Gown
+r(90617),	-- Feathered Raptor Arm
+r(90618),	-- Vicious Ancient Fish
+r(90619),	-- Fossilized Raptor
+r(90622),	-- Tiny Bronze Scorpion
+r(90720),	-- Maul of Stone Guard Mur'og
+r(90728),	-- Gray Candle Stub
+r(90730),	-- Rusted Steak Knife
+r(90732),	-- Scepter of Nekros Skullcrusher
+r(90734),	-- Fierce Wolf Figurine
+r(90831),	-- Fiendish Whip
+r(90832),	-- Tile of Glazed Clay
+r(90833),	-- Skull Drinking Cup
+r(90843),	-- Headdress of the First Shaman
+r(90853),	-- Anklet with Golden Bells
+r(90860),	-- Carved Harp of Exotic Wood
+r(90861),	-- Strange Silver Paperweight
+r(90864),	-- Scepter of the Nathrezim
+r(90968),	-- Baroque Sword Scabbard
+r(90974),	-- Fine Crystal Candelabra
+r(90975),	-- Dignified Portrait
+r(90983),	-- Arrival of the Naaru
+r(90984),	-- The Last Relic of Argus
+r(90987),	-- Plated Elekk Goad
+r(90988),	-- Intricate Treasure Chest Key
+r(90997),	-- Nifflevar Bearded Axe
+r(91008),	-- Scramseax
+r(91012),	-- Flint Striker
+r(91014),	-- Fanged Cloak Pin
+r(91084),	-- Thorned Necklace
+r(91089),	-- Proto-Drake Skeleton
+r(91132),	-- Imprint of a Kraken Tentacle
+r(91133),	-- Spidery Sundial
+r(91170),	-- Scepter of Nezar'Azret
+r(91188),	-- Infested Ruby Ring
+r(91191),	-- Gruesome Heart Box
+r(91197),	-- Six-Clawed Cornice
+r(91209),	-- Ewer of Jormungar Blood
+r(91211),	-- Vizier's Scrawled Streamer
+r(91214),	-- Blessing of the Old God
+r(91215),	-- Puzzle Box of Yogg-Saron
+r(91219),	-- Silver Kris of Korl
+r(91221),	-- Warmaul of Burningeye
+r(91223),	-- Spiked Gauntlets of Anvilrage
+r(91224),	-- Word of Empress Zoe
+r(91225),	-- Scepter of Bronzebeard
+r(91226),	-- The Innkeeper's Daughter
+r(91227),	-- Staff of Sorcerer-Thane Thaurissan
+r(91757),	-- Tyrande's Favorite Doll
+r(91761),	-- Bones of Transformation
+r(91762),	-- Carcanet of the Hundred Magi
+r(91766),	-- Silver Scroll Case
+r(91769),	-- Umbra Crescent
+r(91773),	-- Wisp Amulet
+r(91775),	-- Castle of Sand
+r(91779),	-- Cat Statue with Emerald Eyes
+r(91780),	-- Soapstone Scarab Necklace
+r(91782),	-- Tiny Oasis Mosaic
+r(91785),	-- Engraved Scimitar Hilt
+r(91790),	-- Canopic Jar
+r(91792),	-- Sketch of a Desert Palace
+r(91793),	-- Pipe of Franclorn Forgewright
+r(92137),	-- Crawling Claw
+r(92139),	-- Staff of Ammunae
+r(92145),	-- Pendant of the Scarab Storm
+r(92148),	-- Scepter of Azj'Aqir
+r(92163),	-- Scimitar of the Sirocco
+r(92168),	-- Ring of the Boy Emperor
+r(92806),	-- Survey Mastery
+r(92807),	-- Survey Mastery
+r(92808),	-- Survey Mastery
+r(92809),	-- Survey Mastery
+r(92810),	-- Survey Mastery
+r(92811),	-- Survey Mastery
+r(92812),	-- Survey Mastery
+r(93440),	-- Dwarven Baby Socks
+r(93441),	-- Necklace with Elune Pendant
+r(93442),	-- Shard of Petrified Wood
+r(93443),	-- Strange Velvet Worm
+r(93444),	-- Fine Bloodscalp Dinnerware
+r(98533),	-- Extinct Turtle Shell
+r(98556),	-- Haunted War Drum
+r(98560),	-- Ancient Amber
+r(98569),	-- Vrykyl Drinking Horn
+r(98582),	-- Pterrordax Hatchling
+r(98588),	-- Voodoo Figurine
 5.0.3.15890
-110393
-113968
-113971
-113972
-113973
-113974
-113975
-113976
-113977
-113978
-113979
-113980
-113981
-113982
-113983
-113984
-113985
-113986
-113987
-113988
-113989
-113990
-113991
-113992
-113993
+r(110393),	-- Archaeology
+r(113968),	-- Pandaren Tea Set
+r(113971),	-- Pandaren Game Board
+r(113972),	-- Twin Stein Set of Brewfather Quan Tou Kuo
+r(113973),	-- Walking Cane of Brewfather Ren Yun
+r(113974),	-- Empty Keg of Brewfather Xin Wo Yin
+r(113975),	-- Carved Bronze Mirror
+r(113976),	-- Gold-Inlaid Porcelain Funerary Figurine
+r(113977),	-- Apothecary Tins
+r(113978),	-- Pearl of Yu'lon
+r(113979),	-- Standard of Niuzao
+r(113980),	-- Umbrella of Chi-Ji
+r(113981),	-- Spear of Xuen
+r(113982),	-- Manacles of Rebellion
+r(113983),	-- Cracked Mogu Runestone
+r(113984),	-- Terracotta Arm
+r(113985),	-- Petrified Bone Whip
+r(113986),	-- Thunder King Insignia
+r(113987),	-- Edicts of the Thunder King
+r(113988),	-- Iron Amulet
+r(113989),	-- Warlord's Branding Iron
+r(113990),	-- Mogu Coin
+r(113991),	-- Worn Monument Ledger
+r(113992),	-- Quilen Statuette
+r(113993),	-- Anatomical Dummy
 6.0.1.18179
-158762
+r(158762),	-- Archaeology
 7.3.0.24473
-168290
-168291
-168292
-168293
-168294
-168295
-168296
-168297
-168298
-168299
-168300
-168301
-168302
-168303
-168304
-168305
-168306
-168307
-168308
-168309
-168310
-168311
-168312
-168313
-168314
-168315
-168316
-168317
-168318
-168319
-168320
-168321
-168322
-168323
-168324
-168325
-168326
-168327
-168328
-168329
-168330
-168331
-172459
-172460
-172466
-195127
-196470
-196471
-196472
-196473
-196474
-196475
-196476
-196477
-196478
-196479
-196480
-196481
-196482
-196483
-196484
+r(168290),	-- Fang-Scarred Frostwolf Axe
+r(168291),	-- Frostwolf Ancestry Scrimshaw
+r(168292),	-- Wolfskin Snowshoes
+r(168293),	-- Warsinger's Drums
+r(168294),	-- Screaming Bullroarer
+r(168295),	-- Warsong Ceremonial Pike
+r(168296),	-- Metalworker's Hammer
+r(168297),	-- Elemental Bellows
+r(168298),	-- Blackrock Razor
+r(168299),	-- Weighted Chopping Axe
+r(168300),	-- Hooked Dagger
+r(168301),	-- Barbed Fishing Hook
+r(168302),	-- Calcified Eye In a Jar
+r(168303),	-- Ceremonial Tattoo Needles
+r(168304),	-- Cracked Ivory Idol
+r(168305),	-- Ancestral Talisman
+r(168306),	-- Flask of Blazegrease
+r(168307),	-- Gronn-Tooth Necklace
+r(168308),	-- Doomsday Prophecy
+r(168309),	-- Stonemaul Succession Stone
+r(168310),	-- Stone Manacles
+r(168311),	-- Ogre Figurine
+r(168312),	-- Pictogram Carving
+r(168313),	-- Gladiator's Shield
+r(168314),	-- Mortar and Pestle
+r(168315),	-- Eye of Har'gunn the Blind
+r(168316),	-- Stone Dentures
+r(168317),	-- Rylak Riding Harness
+r(168318),	-- Imperial Decree Stele
+r(168319),	-- Sorcerer-King Toe Ring
+r(168320),	-- Warmaul of the Warmaul Chieftain
+r(168321),	-- Dreamcatcher
+r(168322),	-- Burial Urn
+r(168323),	-- Decree Scrolls
+r(168324),	-- Solar Orb
+r(168325),	-- Sundial
+r(168326),	-- Talonpriest Mask
+r(168327),	-- Outcast Dreamcatcher
+r(168328),	-- Apexis Crystal
+r(168329),	-- Apexis Hieroglyph
+r(168330),	-- Apexis Scroll
+r(168331),	-- Beakbreaker of Terokk
+r(172459),	-- Headdress of the First Shaman
+r(172460),	-- Ancient Nest Guardian
+r(172466),	-- Ancient Frostwolf Fang
+r(195127),	-- Archaeology
+r(196470),	-- Violetglass Vessel
+r(196471),	-- Inert Leystone Charm
+r(196472),	-- Quietwine Vial
+r(196473),	-- Pre-War Highborne Tapestry
+r(196474),	-- Nobleman's Letter Opener
+r(196475),	-- Trailhead Drum
+r(196476),	-- Moosebone Fish-Hook
+r(196477),	-- Hand-Smoothed Pyrestone
+r(196478),	-- Drogbar Gem-Roller
+r(196479),	-- Stonewood Bow
+r(196480),	-- Imp's Cup
+r(196481),	-- Flayed-Skin Chronicle
+r(196482),	-- Malformed Abyssal
+r(196483),	-- Orb of Inner Chaos
+r(196484),	-- Houndstooth Hauberk
 8.0.1.26624
-278910
+r(278910),	-- Archaeology

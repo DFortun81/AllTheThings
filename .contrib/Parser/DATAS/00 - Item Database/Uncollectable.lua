@@ -17,6 +17,15 @@ i(200800);	-- Fool's Gold
 i(200832);	-- Geode Splinters
 i(192648);	-- Pristine Beast Fur
 i(192644);	-- Aeriform Speck
+i(200841);	-- Miniature Prismatic Disc
+i(200794);	-- Fresh Critter Carcass
+i(200852);	-- Nourishing Fertilizer
+i(200816);	-- Partially Damp Measuring Stick
+i(200813);	-- Assorted Fractals
+i(200788);	-- Mantacorn Horns
+i(200843);	-- Severely Chipped Broadsword
+i(200801);	-- Gilded Statuette
+i(200779);	-- Lava Jars
 
 -- SL
 i(179293);	-- Glimmering Facial Cream
@@ -604,12 +613,14 @@ i(201361);	-- Primal Inspiration
 ------------------
 i(200100);	-- Batubar the Relentless
 i(194433);	-- Bloodhorn's Horn
+i(200188);	-- Broken Fishing Pole
 i(198982);	-- Broken Part: Head
 i(198983);	-- Broken Part: Arm
 i(198984);	-- Broken Part: Shattered Orb
 i(201044);	-- Cirrus Flowers
 i(200854);	-- Cooked Caviar
 i(192776);	-- Dormant Embercone
+i(195359);	-- Dry Snapper Meat
 i(191042);	-- Flask of Dwarven Antifreeze
 i(198848);	-- Flyspawn Thorax
 i(194439);	-- Frostfist's Eye
@@ -622,14 +633,34 @@ i(194423);	-- Maruuk's Spear
 i(191135);	-- Nai'jin's Runestone
 i(194432);	-- Old Stonetusk's Tusk
 i(198079);	-- Orders from Sarkareth
+i(200191);	-- Ottuk Lure
+i(191855);	-- Qalashi Trophy
 i(198078);	-- Recruitment Roster
 i(200115);	-- Sarantuya the Ever-True
+i(195360);	-- Scorched Snapper Meat
 i(201091);	-- Sharp Tooth
 i(193357);	-- Shattered Ornament
 i(191136);	-- Sin'tia's Runestone
 i(193617);	-- Snowhide Totem
+i(200190);	-- Stuffed Duckling Toy
+i(191858);	-- Succulent Snapper Meat
 i(194421);	-- Teera's Bow
 i(193070);	-- The Insight of Tyr
 i(193072);	-- The Judgment of Tyr
 i(197958);	-- Watcher Log
+i(191863);	-- Waterlogged Wood
+i(191862);	-- Whalebone Fragment
 i(193372);	-- Wood
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(204814);	-- Aged Journal
+i(204815);	-- Ambiguous Compendium
+i(204813);	-- Blank Tome
+i(204237);	-- Clockwork Azshara
+i(204234);	-- Dead Worms
+i(203473);	-- Geyser Flower
+i(204235);	-- Kaldorei Fruitcake
+i(204816);	-- Mysterious Almanac
+i(204812);	-- Seared Book

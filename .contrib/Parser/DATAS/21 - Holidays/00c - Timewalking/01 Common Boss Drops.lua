@@ -59,6 +59,16 @@ local InfiniteTimereaver =
 					["cost"] = { { "c", 1166, 900 }, },		-- 900x Timewarped Badge
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
+				i(204336, {	-- Awakened Heirloom Armor Casing
+					["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
+					["timeline"] = { ADDED_DF_0_7 },
+					["sym"] = { { "fill" } },	-- simply fill this item
+				}),
+				i(204337, {	-- Awakened Heirloom Scabbard
+					["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
+					["timeline"] = { ADDED_DF_0_7 },
+					["sym"] = { { "fill" } },	-- simply fill this item
+				}),
 				i(167731, {	-- Battle-Hardened Heirloom Armor Casing
 					["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
 					["timeline"] = { "added 8.1.5.29701" },

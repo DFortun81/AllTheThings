@@ -68,7 +68,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["timeline"] = { "added 9.1.5" },
 				}),
 				ach(15646, {	-- Re-Re-Re-Renowned
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 				ach(14632),		-- Conducting Anima
 				ach(14639),		-- Dedication to the Restoration
@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 				ach(15024),	-- Denying the Drought
 				ach(15025),	-- Sanctum Superior
 				ach(15649, {	-- Shadowlands Dilettante
-					["timeline"] = { "added 9.2.5"},
+					["timeline"] = { ADDED_SL_S4},
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {
 						{"meta_achievement",

@@ -1,18 +1,18 @@
 9.0.1.33978
-325284
-325451
-325452
-325453
-325454
-325458
-326379
-326380
-326406
-326407
-326408
-326762
-326903
-327090
-327091
+r(325284),	-- Construct Body: "Chordy"
+r(325451),	-- Construct Body: "Roseboil" \\ Construct Body: "Rose"
+r(325452),	-- Construct Body: "Marz"
+r(325453),	-- Construct Body: "Flytrap"
+r(325454),	-- Construct Body: "Atticus"
+r(325458),	-- Construct Body: "Miru"
+r(326379),	-- Construct Body: "Neena"
+r(326380),	-- Construct Body: "Gas Bag"
+r(326406),	-- Construct Body: "Professor"
+r(326407),	-- Construct Body: "Toothpick"
+r(326408),	-- Construct Body: "Mama Tomalin"
+r(326762),	-- Bag of Creepy Crawlies
+r(326903),	-- Anima-bound Wraps
+r(327090),	-- Restore Construct
+r(327091),	-- Abominable Backup
 9.0.1.34615
-333550
+r(333550),	-- Lure 10

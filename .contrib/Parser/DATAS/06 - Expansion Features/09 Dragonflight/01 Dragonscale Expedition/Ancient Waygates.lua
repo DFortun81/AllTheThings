@@ -260,6 +260,29 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
+					-- Forbidden Reach --
+				q(75444, {	-- Waygate Exploration: The Forbidden Reach
+					-- TODO: ["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
+					-- TODO: ["sourceQuest"] = 71150,	-- Continued Waygate Exploration
+					["provider"] = { "n", 196643 },	-- Doc Nanners
+					["DisablePartySync"] = true,
+					["isBreadcrumb"] = true,
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["timeline"] = { ADDED_DF_0_7 },
+				}),
+				q(75154, {	-- Waygate: Morqut Islet
+					-- TODO: ["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
+					["sourceQuests"] = {
+						75444,	-- Waygate Exploration: The Forbidden Reach
+					},
+					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
+					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
+					["DisablePartySync"] = true,
+					["timeline"] = { ADDED_DF_0_7 },
+					["g"] = {
+
+					},
+				}),
 			}),
 		}),
 	}),

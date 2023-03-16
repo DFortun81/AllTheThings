@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if AFTER 4.0.1.12984
 			n(FLIGHT_PATHS, {
-				fp(457, {	-- Darnassus, Teldrassil [Alliance]
+				fp(457, {	-- Darnassus, Teldrassil (A)
 					["cr"] = 40552,	-- Leora <Hippogryph Master>
 					["coord"] = { 36.61, 47.82, DARNASSUS },
 					["timeline"] = { "added 4.0.1.12984" },
@@ -396,9 +396,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { NIGHTELF },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
-				q(4493, {	-- March of the Silithid [Alliance]
+				q(4493, {	-- March of the Silithid (A)
 					["qg"] = 7740,	-- Gracina Spiritmight
-					["sourceQuest"] = 162,	-- Rise of the Silithid [Alliance]
+					["sourceQuest"] = 162,	-- Rise of the Silithid (A)
 					["coord"] = { 42, 85.8, DARNASSUS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,

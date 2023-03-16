@@ -38,15 +38,44 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				applyclassicphase(WRATH_PHASE_TWO, ach(17299, {	-- Defense Protocol Alpha: Halls of Lightning
 					crit(57761, { -- General Bjarngrim
 						["_encounter"] = { 597, 2 },
-					}),
-					crit(57760, { -- Ionar
-						["_encounter"] = { 599, 2 },
+						["groups"] = {
+							i(39189),	-- Boots of Persistence
+							i(39192),	-- Gloves of Dark Gestures
+							i(39141),	-- Deflection Band
+						},
 					}),
 					crit(57759, { -- Volkhan
 						["_encounter"] = { 598, 2 },
+						["groups"] = {
+							i(39188),	-- Chivalric Chestguard
+							i(39140),	-- Knife of Incision
+							i(39191),	-- Splint-Bound Leggings
+						},
+					}),
+					crit(57760, { -- Ionar
+						["_encounter"] = { 599, 2 },
+						["groups"] = {
+							i(39139),	-- Ravaging Sabatons
+							i(39190),	-- Agonal Sash
+							i(39146),	-- Collar of Dissolution
+						},
 					}),
 					crit(57756, { -- Loken
 						["_encounter"] = { 600, 2 },
+						["groups"] = {
+							i(40526),	-- Gown of the Spell-Weaver
+							i(40426),	-- Signet of the Accord
+							i(40488),	-- Ice Spire Scepter
+							i(40616),	-- Helm of the Lost Conqueror
+							i(40617),	-- Helm of the Lost Protector
+							i(40618),	-- Helm of the Lost Vanquisher
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
+						},
 					}),
 				})),
 				-- #endif

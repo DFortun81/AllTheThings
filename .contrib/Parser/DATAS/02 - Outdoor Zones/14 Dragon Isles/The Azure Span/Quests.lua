@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 186188 },	-- Sindragosa
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					["g"] = {
-						i(197989),	-- Water Ordained Signet
+						i(197989),	-- Water-Ordained Signet
 					},
 				}),
 					-- Chapter 2 --

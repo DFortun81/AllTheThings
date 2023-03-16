@@ -4578,6 +4578,7 @@ ID,Name_lang,HordeName_lang,Duration,EffectArg[0],EffectArg[1],EffectArg[2],Effe
 6696,Weighted: +$k1 Attack Power |A:Professions-ChatIcon-Quality-Tier1:20:20|a,,7200,38,0,0,0.20955884,0,0,0,26,0,0,0,12,0,0,0,33,0,0,50,0,5,0,0,-7,0,0,61,70
 6697,Weighted: +$k1 Attack Power |A:Professions-ChatIcon-Quality-Tier2:20:20|a,,7200,38,0,0,0.25367647,0,0,0,26,0,0,0,12,0,0,0,33,0,0,50,0,5,0,0,-7,0,0,61,70
 6698,Weighted: +$k1 Attack Power |A:Professions-ChatIcon-Quality-Tier3:20:20|a,,7200,38,0,0,0.29779416,0,0,0,26,0,0,0,12,0,0,0,33,0,0,50,0,5,0,0,-7,0,0,61,70
+6699,10.0 FX Testing - Enchant Visualt - Storm SK,,0,0,0,0,0,0,0,1392911,0,0,0,50000,0,0,0,631,0,0,0,30,0,0,0,0,0,0,0,0,0
 6721,10.0.5 - Generic - Storm - Weapon Enchant - High - SK,,0,0,0,0,0,0,0,1392911,0,0,0,50000,0,0,0,631,0,0,0,30,0,0,0,0,0,0,0,0,0
 6722,|C0040C040Wind Sculpted Stone,,0,401678,62821,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,60,0,3,14,0,-4,0,0,0,0
 6755,|C0040C040Storm Infused Stone,,0,402928,62821,0,0,0,0,0,0,0,0,0,0,0,0,0,33,0,0,60,0,3,14,0,-4,0,0,0,0
@@ -4611,3 +4612,17 @@ ID,Name_lang,HordeName_lang,Duration,EffectArg[0],EffectArg[1],EffectArg[2],Effe
 6783,,,0,402958,62821,0,0,0,0,0,0,0,0,0,0,0,0,0,33,0,0,60,0,3,14,0,-4,0,0,0,0
 6784,|C00834FFFProphetic Twilight Stone,,0,402959,62821,0,500,0,0,0,0,0,0,0,0,0,0,0,33,0,0,60,0,3,14,0,-4,0,0,0,0
 6786,Primal Storm,,0,0,0,0,0,0,0,1392911,0,0,0,0,0,0,0,631,0,0,0,1,0,0,0,0,0,0,0,0,70
+6818,10.1 FX Testing - Enchant Visualt - Shadow Flame SK,,0,0,0,0,0,0,0,1392911,0,0,0,50000,0,0,0,633,0,0,0,30,0,0,0,0,0,0,0,0,0
+6819,Illusory Adornment: Spores,,1200,405658,0,0,0,0,0,5041801,0,0,0,0,0,0,0,0,0,0,0,1,0,3,0,0,0,0,0,0,0
+6820,Illusory Adornment: Spores,,2400,405658,0,0,0,0,0,5041801,0,0,0,0,0,0,0,0,0,0,0,1,0,3,0,0,0,0,0,0,0
+6821,Illusory Adornment: Spores,,3600,405658,0,0,0,0,0,5041801,0,0,0,0,0,0,0,0,0,0,0,1,0,3,0,0,0,0,0,0,0
+6822,Spore Tender |A:Professions-ChatIcon-Quality-Tier1:20:20|a,,0,405727,0,0,0,0,0,0,180,0,0,0,0,0,0,0,32,0,0,1,0,3,0,0,0,0,0,60,70
+6823,Spore Tender |A:Professions-ChatIcon-Quality-Tier2:20:20|a,,0,405728,0,0,0,0,0,0,180,0,0,0,0,0,0,0,32,0,0,1,0,3,0,0,0,0,0,60,70
+6824,Spore Tender |A:Professions-ChatIcon-Quality-Tier3:20:20|a,,0,405729,0,0,0,0,0,0,180,0,0,0,0,0,0,0,32,0,0,1,0,3,0,0,0,0,0,60,70
+6825,Shadowflame Wreathe |A:Professions-ChatIcon-Quality-Tier1:20:20|a,,0,405764,0,0,0,0,0,0,180,0,0,0,0,0,0,0,32,0,0,1,0,3,0,0,0,0,0,60,70
+6826,Shadowflame Wreathe |A:Professions-ChatIcon-Quality-Tier2:20:20|a,,0,405765,0,0,0,0,0,0,180,0,0,0,0,0,0,0,32,0,0,1,0,3,0,0,0,0,0,60,70
+6827,Shadowflame Wreathe |A:Professions-ChatIcon-Quality-Tier3:20:20|a,,0,405766,0,0,0,0,0,0,180,0,0,0,0,0,0,0,32,0,0,1,0,3,0,0,0,0,0,60,70
+6828,Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier1:20:20|a,,0,71,40,0,0.225,0.105,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
+6829,Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier2:20:20|a,,0,71,40,0,0.283,0.132,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
+6830,Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier3:20:20|a,,0,71,40,0,0.342,0.159,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
+6831,$spell@spelldesc407949,,0,407949,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,7,0,0,0,0,0,0,60

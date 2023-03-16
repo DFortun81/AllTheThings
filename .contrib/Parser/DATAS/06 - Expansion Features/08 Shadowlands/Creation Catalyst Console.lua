@@ -64,9 +64,9 @@ end
 root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	o(375368, {	-- Creation Catalyst Console
 		["description"] = "Help us gather information of what is/isnt available via doing reports in ATT discord. Especially the alternative sets and if the pvp transmog is available somewhere else",
-		--["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
+		["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 		["modelScale"] = 3,
-		["sourceQuest"] = 64842,	-- Flora Frenzy (technically the console was interactible after completing this quest, possibly earlier)
+		["sourceQuests"] = { 64842 },	-- Flora Frenzy
 		["g"] = {
 			d(LFR_RAID, {
 				["description"] = "Items of 249 item level or lower will take the LFR appearance.\nSeason 4 (speculated): 275 item level or lower.",
@@ -634,7 +634,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 				}),
 			})),
-			pvp(n(PVP_ELITE, {
+			pvp(n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_DF_PRE } }, {
 				["description"] = "This is theorized to be available from PvP gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {
@@ -746,7 +746,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 					}),
 				}),
-			})),
+			}))),
 		},
 	}),
 })));

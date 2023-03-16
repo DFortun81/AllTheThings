@@ -1305,116 +1305,158 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						gold(500, i(122375)),	-- Aged Pauldrons of The Five Thunders
-						gold(500, i(122338)),	-- Ancient Heirloom Armor Casing
-						gold(750, i(122339)),	-- Ancient Heirloom Scabbard
-						gold(650, i(122350)),	-- Balanced Heartseeker
-						gold(5000, i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-							["timeline"] = { "added 8.1.5.29701" },
-						})),
-						gold(7500, i(167732, {	-- Battle-Hardened Heirloom Scabbard
-							["timeline"] = { "added 8.1.5.29701" },
-						})),
-						gold(650, i(122369)),	-- Battleworn Thrash Blade
-						gold(750, i(122349)),	-- Bloodied Arcanite Reaper
-						gold(650, i(122389)),	-- Bloodsoaked Skullforge Reaver
-						gold(500, i(122387)),	-- Burnished Breastplate of Might
-						gold(500, i(122388)),	-- Burnished Pauldrons of Might
-						gold(750, i(122363)),	-- Burnished Warden Staff
-						gold(500, i(122356)),	-- Champion Herod's Shoulders
-						gold(500, i(122379)),	-- Champion's Deathdealer Breastplate
-						gold(750, i(122352)),	-- Charmed Ancient Bone Bow
-						gold(650, i(122354)),	-- Devout Aurastone Hammer
-						gold(750, i(122353)),	-- Dignified Headmaster's Charge
-						gold(700, i(122362)),	-- Discerning Eye of the Beast
-						gold(650, i(140773, {	-- Eagletalon Spear
-							["timeline"] = { "added 7.0.3.22248" },
-						})),
-						gold(700, i(122663)),	-- Eternal Amulet of the Redeemed
-						gold(700, i(122667)),	-- Eternal Emberfury Talisman
-						gold(5000, i(187997, {	-- Eternal Heirloom Armor Casing
-							["timeline"] = { "added 9.1.5.40871" },
-						})),
-						gold(7500, i(187998, {	-- Eternal Heirloom Scabbard
-							["timeline"] = { "added 9.1.5.40871" },
-						})),
-						gold(700, i(122664)),	-- Eternal Horizon Choker
-						gold(700, i(122662)),	-- Eternal Talisman of Evasion
-						gold(700, i(122668)),	-- Eternal Will of the Martyr
-						gold(700, i(122666)),	-- Eternal Woven Ivy Necklace
-						gold(500, i(122376)),	-- Exceptional Stormshroud Shoulders
-						gold(500, i(122378)),	-- Exquisite Sunderseer Mantle
-						gold(500, i(122391)),	-- Flamescarred Draconian Deflector
-						gold(750, i(122368)),	-- Grand Staff of Jordan
-						gold(700, i(122370, {	-- Inherited Insignia of the Horde
-							["races"] = HORDE_ONLY,
-						})),
-						gold(700, i(122530)),	-- Inherited Mark of Tyranny
-						gold(500, i(122377)),	-- Lasting Feralheart Spaulders
-						gold(500, i(122390)),	-- Musty Tome of the Lost
-						gold(500, i(122357)),	-- Mystical Pauldrons of Elements
-						gold(500, i(122380)),	-- Mystical Vest of Elements
-						gold(500, i(122381)),	-- Polished Breastplate of Valor
-						gold(500, i(122355)),	-- Polished Spaulders of Valor
-						gold(500, i(122382)),	-- Preened Ironfeather Breastplate
-						gold(500, i(122359)),	-- Preened Ironfeather Shoulders
-						gold(500, i(127010)),	-- Pristine Lightforge Breastplate
-						gold(500, i(122373)),	-- Pristine Lightforge Spaulders
-						gold(500, i(122374)),	-- Prized Beastmaster's Mantle
-						gold(750, i(122365)),	-- Reforged Truesilver Champion
-						gold(750, i(122386)),	-- Repurposed Lava Dredger
-						gold(10000, i(187896, {	-- Scouting Map: A Stormstout's Guide to Pandaria (TOY!)
-							["timeline"] = { "added 9.1.5.40871" },
-						})),
-						gold(10000, i(187897, {	-- Scouting Map: Cataclysm's Consequences (TOY!)
-							["timeline"] = { "added 9.1.5.40871" },
-						})),
-						gold(10000, i(187869, {	-- Scouting Map: Into the Shadowlands (TOY!)
-							["timeline"] = { "added 9.1.5.40871" },
-						})),
-						gold(10000, i(187895, {	-- Scouting Map: The Dangers of Draenor (TOY!)
-							["timeline"] = { "added 9.1.5.40871" },
-						})),
-						gold(10000, i(150745, {	-- Scouting Map: The Eastern Kingdoms Campaign (TOY!)
-							["timeline"] = { "added 7.2.5.23910" },
-							["races"] = HORDE_ONLY,
-						})),
-						gold(10000, i(187899, {	-- Scouting Map: The Many Curiosities of Outland (TOY!)
-							["timeline"] = { "added 9.1.5.40871" },
-						})),
-						gold(10000, i(187900, {	-- Scouting Map: The Wonders of Kul Tiras and Zandalar (TOY!)
-							["timeline"] = { "added 9.1.5.40871" },
-						})),
-						gold(10000, i(187898, {	-- Scouting Map: True Cost of the Northrend Campaign (TOY!)
-							["timeline"] = { "added 9.1.5.40871" },
-						})),
-						gold(10000, i(187875, {	-- Scouting Map: United Fronts of the Broken Isles (TOY!)
-							["timeline"] = { "added 9.1.5.40871" },
-						})),
-						gold(10000, i(150744, {	-- Scouting Map: Walking Kalimdor with the Earthmother (TOY!)
-							["timeline"] = { "added 7.2.5.23910" },
-							["races"] = HORDE_ONLY,
-						})),
-						gold(650, i(122364)),	-- Sharpened Scarlet Kris
-						gold(500, i(122358)),	-- Stained Shadowcraft Spaulders
-						gold(500, i(122383)),	-- Stained Shadowcraft Tunic
-						gold(500, i(122372)),	-- Strengthened Stockade Pauldrons
-						gold(700, i(122361)),	-- Swift Hand of Justice
-						gold(500, i(122360)),	-- Tattered Dreadmist Mantle
-						gold(500, i(122384)),	-- Tattered Dreadmist Robe
-						gold(650, i(122367)),	-- The Blessed Hammer of Grace
-						gold(1000, i(122340)),	-- Timeworn Heirloom Armor Casing
-						gold(1500, i(122341)),	-- Timeworn Heirloom Scabbard
-						gold(750, i(122366)),	-- Upgraded Dwarven Hand Cannon
-						gold(650, i(122351)),	-- Venerable Dal'Rend's Sacred Charge
-						gold(650, i(122385)),	-- Venerable Mass of McGowan
-						gold(2000, i(151614, {	-- Weathered Heirloom Armor Casing
-							["timeline"] = { "added 7.2.5.24076" },
-						})),
-						gold(3000, i(151615, {	-- Weathered Heirloom Scabbard
-							["timeline"] = { "added 7.2.5.24076" },
-						})),
-						gold(500, i(122392)),	-- Weathered Observer's Shield
+						n(ARMOR, {
+							filter(CLOTH, {
+								gold(500, i(122378)),	-- Exquisite Sunderseer Mantle
+								gold(500, i(122360)),	-- Tattered Dreadmist Mantle
+								gold(500, i(122384)),	-- Tattered Dreadmist Robe
+							}),
+							filter(LEATHER, {
+								gold(500, i(122376)),	-- Exceptional Stormshroud Shoulders
+								gold(500, i(122377)),	-- Lasting Feralheart Spaulders
+								gold(500, i(122382)),	-- Preened Ironfeather Breastplate
+								gold(500, i(122359)),	-- Preened Ironfeather Shoulders
+								gold(500, i(122358)),	-- Stained Shadowcraft Spaulders
+								gold(500, i(122383)),	-- Stained Shadowcraft Tunic
+							}),
+							filter(MAIL, {
+								gold(500, i(122375)),	-- Aged Pauldrons of The Five Thunders
+								gold(500, i(122356)),	-- Champion Herod's Shoulders
+								gold(500, i(122379)),	-- Champion's Deathdealer Breastplate
+								gold(500, i(122357)),	-- Mystical Pauldrons of Elements
+								gold(500, i(122380)),	-- Mystical Vest of Elements
+								gold(500, i(122374)),	-- Prized Beastmaster's Mantle
+							}),
+							n(NECK, {
+								gold(700, i(122663)),	-- Eternal Amulet of the Redeemed
+								gold(700, i(122667)),	-- Eternal Emberfury Talisman
+								gold(700, i(122664)),	-- Eternal Horizon Choker
+								gold(700, i(122662)),	-- Eternal Talisman of Evasion
+								gold(700, i(122668)),	-- Eternal Will of the Martyr
+								gold(700, i(122666)),	-- Eternal Woven Ivy Necklace
+							}),
+							filter(PLATE, {
+								gold(500, i(122387)),	-- Burnished Breastplate of Might
+								gold(500, i(122388)),	-- Burnished Pauldrons of Might
+								gold(500, i(122381)),	-- Polished Breastplate of Valor
+								gold(500, i(122355)),	-- Polished Spaulders of Valor
+								gold(500, i(127010)),	-- Pristine Lightforge Breastplate
+								gold(500, i(122373)),	-- Pristine Lightforge Spaulders
+								gold(500, i(122372)),	-- Strengthened Stockade Pauldrons
+							}),
+							n(-386, {	-- Trinket
+								gold(700, i(122362)),	-- Discerning Eye of the Beast
+								gold(700, i(122370, {	-- Inherited Insignia of the Horde
+									["races"] = HORDE_ONLY,
+								})),
+								gold(700, i(122530)),	-- Inherited Mark of Tyranny
+								gold(700, i(122361)),	-- Swift Hand of Justice
+							}),
+						}),
+						n(HEIRLOOMS, {
+							gold(500, i(122338, {	-- Ancient Heirloom Armor Casing
+								["sym"] = { { "fill" } },	-- simply fill this item
+							})),
+							gold(750, i(122339, {	-- Ancient Heirloom Scabbard
+								["sym"] = { { "fill" } },	-- simply fill this item
+							})),
+							gold(1000, i(122340, {	-- Timeworn Heirloom Armor Casing
+								["sym"] = { { "fill" } },	-- simply fill this item
+							})),
+							gold(1500, i(122341, {	-- Timeworn Heirloom Scabbard
+								["sym"] = { { "fill" } },	-- simply fill this item
+							})),
+							gold(2000, i(151614, {	-- Weathered Heirloom Armor Casing
+								["timeline"] = { "added 7.2.5.24076" },
+								["sym"] = { { "fill" } },	-- simply fill this item
+							})),
+							gold(3000, i(151615, {	-- Weathered Heirloom Scabbard
+								["timeline"] = { "added 7.2.5.24076" },
+								["sym"] = { { "fill" } },	-- simply fill this item
+							})),
+							gold(5000, i(167731, {	-- Battle-Hardened Heirloom Armor Casing
+								["timeline"] = { "added 8.1.5.29701" },
+								["sym"] = { { "fill" } },	-- simply fill this item
+							})),
+							gold(7500, i(167732, {	-- Battle-Hardened Heirloom Scabbard
+								["timeline"] = { "added 8.1.5.29701" },
+								["sym"] = { { "fill" } },	-- simply fill this item
+							})),
+							gold(5000, i(187997, {	-- Eternal Heirloom Armor Casing
+								["timeline"] = { "added 9.1.5.40871" },
+								["sym"] = { { "fill" } },	-- simply fill this item
+							})),
+							gold(7500, i(187998, {	-- Eternal Heirloom Scabbard
+								["timeline"] = { "added 9.1.5.40871" },
+								["sym"] = { { "fill" } },	-- simply fill this item
+							})),
+							gold(5000, i(204336, {	-- Awakened Heirloom Armor Casing
+								["timeline"] = { ADDED_DF_0_7 },
+								["sym"] = { { "fill" } },	-- simply fill this item
+							})),
+							gold(7500, i(204337, {	-- Awakened Heirloom Scabbard
+								["timeline"] = { ADDED_DF_0_7 },
+								["sym"] = { { "fill" } },	-- simply fill this item
+							})),
+						}),
+						filter(TOYS, {
+							gold(10000, i(187896, {	-- Scouting Map: A Stormstout's Guide to Pandaria (TOY!)
+								["timeline"] = { "added 9.1.5.40871" },
+							})),
+							gold(10000, i(187897, {	-- Scouting Map: Cataclysm's Consequences (TOY!)
+								["timeline"] = { "added 9.1.5.40871" },
+							})),
+							gold(10000, i(187869, {	-- Scouting Map: Into the Shadowlands (TOY!)
+								["timeline"] = { "added 9.1.5.40871" },
+							})),
+							gold(10000, i(187895, {	-- Scouting Map: The Dangers of Draenor (TOY!)
+								["timeline"] = { "added 9.1.5.40871" },
+							})),
+							gold(10000, i(150745, {	-- Scouting Map: The Eastern Kingdoms Campaign (TOY!)
+								["timeline"] = { "added 7.2.5.23910" },
+								["races"] = HORDE_ONLY,
+							})),
+							gold(10000, i(187899, {	-- Scouting Map: The Many Curiosities of Outland (TOY!)
+								["timeline"] = { "added 9.1.5.40871" },
+							})),
+							gold(10000, i(187900, {	-- Scouting Map: The Wonders of Kul Tiras and Zandalar (TOY!)
+								["timeline"] = { "added 9.1.5.40871" },
+							})),
+							gold(10000, i(187898, {	-- Scouting Map: True Cost of the Northrend Campaign (TOY!)
+								["timeline"] = { "added 9.1.5.40871" },
+							})),
+							gold(10000, i(187875, {	-- Scouting Map: United Fronts of the Broken Isles (TOY!)
+								["timeline"] = { "added 9.1.5.40871" },
+							})),
+							gold(10000, i(150744, {	-- Scouting Map: Walking Kalimdor with the Earthmother (TOY!)
+								["timeline"] = { "added 7.2.5.23910" },
+								["races"] = HORDE_ONLY,
+							})),
+						}),
+						n(WEAPONS, {
+							gold(650, i(122350)),	-- Balanced Heartseeker
+							gold(650, i(122369)),	-- Battleworn Thrash Blade
+							gold(750, i(122349)),	-- Bloodied Arcanite Reaper
+							gold(650, i(122389)),	-- Bloodsoaked Skullforge Reaver
+							gold(750, i(122363)),	-- Burnished Warden Staff
+							gold(750, i(122352)),	-- Charmed Ancient Bone Bow
+							gold(650, i(122354)),	-- Devout Aurastone Hammer
+							gold(750, i(122353)),	-- Dignified Headmaster's Charge
+							gold(650, i(140773, {	-- Eagletalon Spear
+								["timeline"] = { "added 7.0.3.22248" },
+							})),
+							gold(500, i(122391)),	-- Flamescarred Draconian Deflector
+							gold(750, i(122368)),	-- Grand Staff of Jordan
+							gold(500, i(122390)),	-- Musty Tome of the Lost
+							gold(750, i(122365)),	-- Reforged Truesilver Champion
+							gold(750, i(122386)),	-- Repurposed Lava Dredger
+							gold(650, i(122364)),	-- Sharpened Scarlet Kris
+							gold(650, i(122367)),	-- The Blessed Hammer of Grace
+							gold(750, i(122366)),	-- Upgraded Dwarven Hand Cannon
+							gold(650, i(122351)),	-- Venerable Dal'Rend's Sacred Charge
+							gold(650, i(122385)),	-- Venerable Mass of McGowan
+							gold(500, i(122392)),	-- Weathered Observer's Shield
+						}),
 					},
 				}),
 				-- #endif

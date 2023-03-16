@@ -781,8 +781,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			}),
 		}))),
 		applyclassicphase(PHASE_FIVE, cat(699, {	-- Oils
-			i(20748, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Mana Oil
-			i(20749, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Wizard Oil
+			i(20748, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Mana Oil / 10.0.7: Expired Mana Oil
+			i(20749, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Wizard Oil / 10.0.7: Expired Wizard Oil
 			i(20747),	-- Lesser Mana Oil
 			i(20746),	-- Lesser Wizard Oil
 			i(20745),	-- Minor Mana Oil
@@ -2113,9 +2113,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				-- #if AFTER TBC
 				i(15062),	-- Devilsaur Leggings
 				-- #endif
-				-- #if AFTER CATA
-				applyclassicphase(TBC_PHASE_ONE, i(29971)),	-- Dragonstrike Leggings
-				-- #endif
 				i(7373),	-- Dusky Leather Leggings
 				i(4242),	-- Embossed Leather Pants
 				i(5958),	-- Fine Leather Pants
@@ -2266,6 +2263,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				-- #if AFTER TBC
 				i(15052),	-- Black Dragonscale Leggings
 				i(20295),	-- Blue Dragonscale Leggings
+				-- #if AFTER CATA
+				applyclassicphase(TBC_PHASE_ONE, i(29971)),	-- Dragonstrike Leggings
+				-- #endif
 				i(15046),	-- Green Dragonscale Leggings
 				-- #endif
 				i(15079, {	-- Heavy Scorpid Leggings
@@ -2537,6 +2537,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(6263),	-- Blue Overalls
 			i(14100),	-- Brightcloth Robe
 			i(6238),	-- Brown Linen Robe
+			i(2568),	-- Brown Linen Vest
 			i(10042),	-- Cindercloth Robe
 			i(14042),	-- Cindercloth Vest
 			i(7063),	-- Crimson Silk Robe
@@ -2544,8 +2545,12 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(10021),	-- Dreamweave Vest
 			i(7051),	-- Earthen Vest
 			i(14106),	-- Felcloth Robe
-			i(21154),	-- Festival Dress
-			i(21542),	-- Festival Suit
+			i(21154, {	-- Festival Dress
+				["timeline"] = { "removed 7.3.5" },
+			}),
+			i(21542, {	-- Festival Suit
+				["timeline"] = { "removed 7.3.5" },
+			}),
 			i(19156),	-- Flarecore Robe
 			i(13868),	-- Frostweave Robe
 			i(13869),	-- Frostweave Tunic
@@ -2557,6 +2562,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(6264),	-- Greater Adept's Robe
 			i(7065),	-- Green Silk Armor
 			i(2582),	-- Green Woolen Vest
+			i(38277, {	-- Haliscan Jacket
+				["timeline"] = { "added 2.4.2.8301" },
+			}),
 			i(5766),	-- Lesser Wizard's Robe
 			i(18486),	-- Mooncloth Robe
 			i(14138),	-- Mooncloth Vest
@@ -2660,6 +2668,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(19165),	-- Flarecore Leggings
 			i(13871),	-- Frostweave Pants
 			i(14144),	-- Ghostweave Pants
+			i(38278, {	-- Haliscan Pantaloons
+				["timeline"] = { "added 2.4.2.8301" },
+			}),
 			i(4309),	-- Handstitched Linen Britches
 			i(4316),	-- Heavy Woolen Pants
 			i(14137),	-- Mooncloth Leggings
@@ -2681,6 +2692,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			})),
 			i(4325),	-- Boots of the Enchanter
 			i(10044),	-- Cindercloth Boots
+			i(6836),	-- Dress Shoes
 			i(14108),	-- Felcloth Boots
 			i(2569),	-- Linen Boots
 			i(15802),	-- Mooncloth Boots

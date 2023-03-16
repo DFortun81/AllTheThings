@@ -1,376 +1,398 @@
 3.0.1.8303
-45357
-45358
-45359
-45360
-45361
-45363
-45381
-45383
-48118
+r(45357),	-- Inscription
+r(45358),	-- Inscription
+r(45359),	-- Inscription
+r(45360),	-- Inscription
+r(45361),	-- Inscription
+r(45363),	-- Inscription
+r(45381),	-- Silver Quill
+r(45383),	-- 
+r(48118),	-- 
 3.0.1.8622
-52175
-52183
+r(52175),	-- Decipher
+r(52183),	-- 
 3.1.0.9767
-56943
-56944
-56946
-56947
-56949
-56950
-56952
-56954
-56957
-56958
-56960
-56972
-56975
-56977
-56980
-56983
-56984
-56987
-56988
-56989
-56990
-56991
-56996
-56998
-56999
-57003
-57006
-57008
-57010
-57011
-57012
-57013
-57014
-57019
-57021
-57026
-57028
-57033
-57034
-57035
-57036
-57112
-57113
-57115
-57116
-57117
-57122
-57124
-57126
-57127
-57128
-57130
-57152
-57153
-57155
-57159
-57160
-57164
-57166
-57168
-57169
-57170
-57172
-57181
-57187
-57189
-57190
-57191
-57192
-57193
-57195
-57198
-57199
-57202
-57207
-57208
-57211
-57212
-57214
-57215
-57217
-57218
-57220
-57221
-57222
-57223
-57225
-57226
-57227
-57228
-57230
-57231
-57232
-57233
-57234
-57235
-57236
-57237
-57243
-57247
-57248
-57250
-57252
-57253
-57257
-57258
-57260
-57261
-57264
-57267
-57268
-57273
-57275
-57276
-57719
-58321
-58322
-59338
-59339
-59340
-59500
-59501
-59559
-59560
-59561
-61177
-61677
-62162
-64246
-64247
-64248
-64249
-64251
-64252
-64253
-64254
-64255
-64256
-64257
-64268
-64270
-64271
-64273
-64274
-64275
-64276
-64277
-64278
-64279
-64280
-64281
-64282
-64283
-64284
-64285
-64286
-64287
-64288
-64289
-64291
-64294
-64295
-64296
-64297
-64298
-64299
-64300
-64301
-64302
-64303
-64304
-64305
-64307
-64308
-64309
-64310
-64311
-64312
-64313
-64314
-64315
-64316
-64317
-64318
-65245
+r(56943),	-- Glyph of Frenzied Regeneration
+r(56944),	-- Glyph of Growl
+r(56946),	-- Glyph of Hurricane
+r(56947),	-- Glyph of Innervate
+r(56949),	-- Glyph of Lifebloom
+r(56950),	-- Glyph of Mangle
+r(56952),	-- Glyph of Rake
+r(56954),	-- Glyph of Regrowth
+r(56957),	-- Glyph of Shred
+r(56958),	-- Glyph of Starfall
+r(56960),	-- Glyph of Swiftmend
+r(56972),	-- Glyph of Arcane Power
+r(56975),	-- Glyph of Fireball
+r(56977),	-- Glyph of Frostbolt
+r(56980),	-- Glyph of Ice Lance
+r(56983),	-- Glyph of Invisibility
+r(56984),	-- Glyph of Mage Armor
+r(56987),	-- Glyph of Polymorph
+r(56988),	-- Glyph of Remove Curse
+r(56989),	-- Glyph of Water Elemental
+r(56990),	-- Glyph of Blast Wave
+r(56991),	-- Glyph of Arcane Blast
+r(56996),	-- Glyph of the Beast
+r(56998),	-- Glyph of Aspect of the Viper
+r(56999),	-- Glyph of Bestial Wrath
+r(57003),	-- Glyph of Frost Trap
+r(57006),	-- Glyph of the Hawk
+r(57008),	-- Glyph of Rapid Fire
+r(57010),	-- Glyph of Snake Trap
+r(57011),	-- Glyph of Steady Shot
+r(57012),	-- Glyph of Trueshot Aura
+r(57013),	-- Glyph of Volley
+r(57014),	-- Glyph of Wyvern Sting
+r(57019),	-- Glyph of Avenger's Shield
+r(57021),	-- Glyph of Avenging Wrath
+r(57026),	-- Glyph of Flash of Light
+r(57028),	-- Glyph of Hammer of Wrath
+r(57033),	-- Glyph of Seal of Command
+r(57034),	-- Glyph of Seal of Light
+r(57035),	-- Glyph of Seal of Wisdom
+r(57036),	-- Glyph of Turn Evil
+r(57112),	-- Glyph of Adrenaline Rush
+r(57113),	-- Glyph of Ambush
+r(57115),	-- Glyph of Blade Flurry
+r(57116),	-- Glyph of Crippling Poison
+r(57117),	-- Glyph of Deadly Throw
+r(57122),	-- Glyph of Feint
+r(57124),	-- Glyph of Ghostly Strike
+r(57126),	-- Glyph of Hemorrhage
+r(57127),	-- Glyph of Preparation
+r(57128),	-- Glyph of Rupture
+r(57130),	-- Glyph of Vigor
+r(57152),	-- Glyph of Blocking
+r(57153),	-- Glyph of Bloodthirst
+r(57155),	-- Glyph of Devastate
+r(57159),	-- Glyph of Intervene
+r(57160),	-- Glyph of Mortal Strike
+r(57164),	-- Glyph of Resonating Power
+r(57166),	-- Glyph of Last Stand
+r(57168),	-- Glyph of Sweeping Strikes
+r(57169),	-- Glyph of Taunt
+r(57170),	-- Glyph of Victory Rush
+r(57172),	-- Glyph of Whirlwind
+r(57181),	-- Glyph of Circle of Healing
+r(57187),	-- Glyph of Holy Nova
+r(57189),	-- Glyph of Lightwell
+r(57190),	-- Glyph of Mass Dispel
+r(57191),	-- Glyph of Mind Control
+r(57192),	-- Glyph of Shadow Word: Pain
+r(57193),	-- Glyph of Shadow
+r(57195),	-- Glyph of Prayer of Healing
+r(57198),	-- Glyph of Scourge Imprisonment
+r(57199),	-- Glyph of Shadow Word: Death
+r(57202),	-- Glyph of Spirit of Redemption
+r(57207),	-- Glyph of Anti-Magic Shell
+r(57208),	-- Glyph of Heart Strike
+r(57211),	-- Glyph of Chains of Ice
+r(57212),	-- Glyph of Dark Command
+r(57214),	-- Glyph of Death and Decay
+r(57215),	-- Glyph of Death's Embrace
+r(57217),	-- Glyph of Horn of Winter
+r(57218),	-- Glyph of Icebound Fortitude
+r(57220),	-- Glyph of Obliterate
+r(57221),	-- Glyph of Plague Strike
+r(57222),	-- Glyph of the Ghoul
+r(57223),	-- Glyph of Rune Strike
+r(57225),	-- Glyph of Strangulate
+r(57226),	-- Glyph of Unbreakable Armor
+r(57227),	-- Glyph of Vampiric Blood
+r(57228),	-- Glyph of Raise Dead
+r(57230),	-- Glyph of Pestilence
+r(57231),	-- Death Knight Glyph 25
+r(57232),	-- Glyph of Chain Heal
+r(57233),	-- Glyph of Chain Lightning
+r(57234),	-- Glyph of Lava
+r(57235),	-- Glyph of Shocking
+r(57236),	-- Glyph of Earthliving Weapon
+r(57237),	-- Glyph of Fire Elemental Totem
+r(57243),	-- Glyph of Healing Wave
+r(57247),	-- Glyph of Mana Tide Totem
+r(57248),	-- Glyph of Stormstrike
+r(57250),	-- Glyph of Elemental Mastery
+r(57252),	-- Glyph of Windfury Weapon
+r(57253),	-- Glyph of Thunderstorm
+r(57257),	-- Glyph of Incinerate
+r(57258),	-- Glyph of Conflagrate
+r(57260),	-- Glyph of Curse of Agony
+r(57261),	-- Glyph of Death Coil
+r(57264),	-- Glyph of Felhunter
+r(57267),	-- Glyph of Howl of Terror
+r(57268),	-- Glyph of Immolate
+r(57273),	-- Glyph of Siphon Life
+r(57275),	-- Glyph of Succubus
+r(57276),	-- Glyph of Unstable Affliction
+r(57719),	-- Glyph of Fire Blast
+r(58321),	-- Glyph of Shadow Protection
+r(58322),	-- Glyph of Shadowfiend
+r(59338),	-- Glyph of Rune Tap
+r(59339),	-- Glyph of Blood Strike
+r(59340),	-- Glyph of Death Strike
+r(59500),	-- Armor Vellum III
+r(59501),	-- Weapon Vellum III
+r(59559),	-- Glyph of Holy Wrath
+r(59560),	-- Glyph of Seal of Righteousness
+r(59561),	-- Glyph of Seal of Vengeance
+r(61177),	-- Northrend Inscription Research
+r(61677),	-- Glyph of Frostfire
+r(62162),	-- Glyph of Focus
+r(64246),	-- Glyph of Raptor Strike
+r(64247),	-- Glyph of Stoneclaw Totem
+r(64248),	-- Glyph of Life Tap
+r(64249),	-- Glyph of Scatter Shot
+r(64251),	-- Glyph of Salvation
+r(64252),	-- Glyph of Shield Wall
+r(64253),	-- Glyph of Explosive Trap
+r(64254),	-- Glyph of Holy Shock
+r(64255),	-- Glyph of Vigilance
+r(64256),	-- Glyph of Barkskin
+r(64257),	-- Glyph of Ice Barrier
+r(64268),	-- Glyph of Berserk
+r(64270),	-- Glyph of Wild Growth
+r(64271),	-- Glyph of Chimera Shot
+r(64273),	-- Glyph of Explosive Shot
+r(64274),	-- Glyph of Deep Freeze
+r(64275),	-- Glyph of Living Bomb
+r(64276),	-- Glyph of Arcane Barrage
+r(64277),	-- Glyph of Beacon of Light
+r(64278),	-- Glyph of Hammer of the Righteous
+r(64279),	-- Glyph of Divine Storm
+r(64280),	-- Glyph of Dispersion
+r(64281),	-- Glyph of Guardian Spirit
+r(64282),	-- Glyph of Penance
+r(64283),	-- Glyph of Hymn of Hope
+r(64284),	-- Glyph of Hunger for Blood
+r(64285),	-- Glyph of Killing Spree
+r(64286),	-- Glyph of Shadow Dance
+r(64287),	-- Glyph of Thunder
+r(64288),	-- Glyph of Feral Spirit
+r(64289),	-- Glyph of Riptide
+r(64291),	-- Glyph of Haunt
+r(64294),	-- Glyph of Chaos Bolt
+r(64295),	-- Glyph of Bladestorm
+r(64296),	-- Glyph of Shockwave
+r(64297),	-- Glyph of Dancing Rune Weapon
+r(64298),	-- Glyph of Hungering Cold
+r(64299),	-- Glyph of Unholy Blight
+r(64300),	-- Glyph of Howling Blast
+r(64301),	-- Glyph of Envenom
+r(64302),	-- Glyph of Spell Reflection
+r(64303),	-- Glyph of Cloak of Shadows
+r(64304),	-- Glyph of Kill Shot
+r(64305),	-- Glyph of Divine Plea
+r(64307),	-- Glyph of Savage Roar
+r(64308),	-- Glyph of Shield of Righteousness
+r(64309),	-- Glyph of Mind Sear
+r(64310),	-- Glyph of Tricks of the Trade
+r(64311),	-- Glyph of Shadowflame
+r(64312),	-- Glyph of Enraged Regeneration
+r(64313),	-- Glyph of Nourish
+r(64314),	-- Glyph of Mirror Image
+r(64315),	-- Glyph of Fan of Knives
+r(64316),	-- Glyph of Hex
+r(64317),	-- Glyph of Demonic Circle
+r(64318),	-- Glyph of Metamorphosis
+r(65245),	-- Glyph of Survival Instincts
 3.3.5.12340
-71015
-71102
+r(71015),	-- Glyph of Rapid Rejuvenation
+r(71102),	-- Glyph of Quick Decay
 4.0.1.12911
-89815
+r(89815),	-- 
 4.3.4.15595
-86647
-86650
-89367
-92027
-92579
-94000
-94401
-94402
-94403
-94404
-94405
-94406
-94711
-95215
-95710
-95825
-96284
-98398
-99547
-99548
-99549
-101057
+r(86647),	-- 
+r(86650),	-- 
+r(89367),	-- 
+r(92027),	-- 
+r(92579),	-- 
+r(94000),	-- 
+r(94401),	-- 
+r(94402),	-- 
+r(94403),	-- 
+r(94404),	-- 
+r(94405),	-- 
+r(94406),	-- 
+r(94711),	-- 
+r(95215),	-- 
+r(95710),	-- 
+r(95825),	-- 
+r(96284),	-- 
+r(98398),	-- 
+r(99547),	-- 
+r(99548),	-- 
+r(99549),	-- 
+r(101057),	-- 
 5.0.3.15890
-57037
-58309
-110417
-110955
-112264
-112265
-112266
-112437
-112440
-112442
-112444
-112450
-112451
-112452
-112454
-112457
-112458
-112460
-112461
-112463
-112465
-112468
-112883
-119481
-122015
-122030
-124442
-124443
-124444
-124445
-124446
-124447
-124448
-124449
-124450
-124451
-124452
-124453
-124454
-124455
-124456
-124457
-124459
-124460
-124461
-124463
-126153
-126687
-126701
-126704
-126801
-127625
+r(57037),	-- Unused
+r(58309),	-- Glyph of the Bear Cub
+r(110417),	-- Inscription
+r(110955),	-- 
+r(112264),	-- 
+r(112265),	-- 
+r(112266),	-- 
+r(112437),	-- 
+r(112440),	-- 
+r(112442),	-- 
+r(112444),	-- 
+r(112450),	-- 
+r(112451),	-- 
+r(112452),	-- 
+r(112454),	-- 
+r(112457),	-- 
+r(112458),	-- 
+r(112460),	-- 
+r(112461),	-- 
+r(112463),	-- 
+r(112465),	-- 
+r(112468),	-- 
+r(112883),	-- 
+r(119481),	-- 
+r(122015),	-- 
+r(122030),	-- 
+r(124442),	-- 
+r(124443),	-- 
+r(124444),	-- 
+r(124445),	-- 
+r(124446),	-- 
+r(124447),	-- 
+r(124448),	-- 
+r(124449),	-- 
+r(124450),	-- 
+r(124451),	-- 
+r(124452),	-- 
+r(124453),	-- 
+r(124454),	-- 
+r(124455),	-- 
+r(124456),	-- 
+r(124457),	-- 
+r(124459),	-- 
+r(124460),	-- 
+r(124461),	-- 
+r(124463),	-- 
+r(126153),	-- 
+r(126687),	-- 
+r(126701),	-- 
+r(126704),	-- 
+r(126801),	-- 
+r(127625),	-- 
 6.0.1.18179
-132167
-135535
-135561
-148255
-148257
-148259
-148260
-148261
-148268
-148269
-148272
-148273
-148279
-148280
-148283
-148284
-148285
-148286
-148287
-148288
-148289
-148290
-148291
-148487
-148488
-148489
-148490
-158748
+r(132167),	-- 
+r(135535),	-- 
+r(135561),	-- 
+r(148255),	-- 
+r(148257),	-- 
+r(148259),	-- 
+r(148260),	-- 
+r(148261),	-- 
+r(148268),	-- 
+r(148269),	-- 
+r(148272),	-- 
+r(148273),	-- 
+r(148279),	-- 
+r(148280),	-- 
+r(148283),	-- 
+r(148284),	-- 
+r(148285),	-- 
+r(148286),	-- 
+r(148287),	-- 
+r(148288),	-- 
+r(148289),	-- 
+r(148290),	-- 
+r(148291),	-- 
+r(148487),	-- 
+r(148488),	-- 
+r(148489),	-- 
+r(148490),	-- 
+r(158748),	-- Inscription
 7.3.0.24473
-186239
-240254
+r(186239),	-- 
+r(240254),	-- 
 8.0.1.25902
-256238
-256241
-256250
-256251
-256252
-264494
-264496
-264498
-264500
-264502
-264504
+r(256238),	-- Manual of Elemental Enchancement
+r(256241),	-- Manual of Reverse Wounding
+r(256250),	-- Inked Vessel of Robust Regeneration \\ Tome of Robust Regeneration
+r(256251),	-- Inked Vessel of Robust Regeneration \\ Tome of Robust Regeneration
+r(256252),	-- Inked Vessel of Robust Regeneration \\ Tome of Robust Regeneration
+r(264494),	-- Inscription
+r(264496),	-- Outland Inscription
+r(264498),	-- Northrend Inscription
+r(264500),	-- Cataclysm Inscription
+r(264502),	-- Pandaria Inscription
+r(264504),	-- Draenor Inscription
 8.0.1.26231
-269744
-269745
-269746
+r(269744),	-- Honorable Combatant's Inked Vessel \\ Honorable Combatant's Robust Tome
+r(269745),	-- Honorable Combatant's Inked Vessel \\ Honorable Combatant's Robust Tome
+r(269746),	-- Honorable Combatant's Inked Vessel \\ Honorable Combatant's Robust Tome
 8.2.0.30080
-299666
-299667
-299669
-299670
+r(299666),	-- Contract: Ankoan
+r(299667),	-- Contract: Ankoan
+r(299669),	-- Contract: Unshackled
+r(299670),	-- Contract: Unshackled
 8.2.0.30168
-301999
-302001
+r(301999),	-- Milling
+r(302001),	-- Milling
 8.2.0.30329
-302697
-302698
-302700
-302701
-302703
-302704
+r(302697),	-- Milling
+r(302698),	-- Milling
+r(302700),	-- Milling
+r(302701),	-- Milling
+r(302703),	-- Milling
+r(302704),	-- Milling
 9.0.1.33978
-311407
-311687
-311690
+r(311407),	-- Deathbound Codex
+r(311687),	-- Redeemer's Column
+r(311690),	-- Redeemer's Spire
 9.0.1.35679
-343687
-343688
+r(343687),	-- Crafter's Mark IV
+r(343688),	-- Crafter's Mark III
 10.0.0.44649
-382982
-382984
-382986
-382987
-382988
-382989
-382990
-382991
-382994
+r(382982),	-- Shadowlands Milling
+r(382984),	-- Kul Tiras and Zandalar Milling
+r(382986),	-- Legion Milling
+r(382987),	-- Draenor Milling
+r(382988),	-- Pandaria Milling
+r(382989),	-- Cataclysm Milling
+r(382990),	-- Northrend Milling
+r(382991),	-- Outland Milling
+r(382994),	-- Classic Milling
 10.0.7.47910
-400811
-402140
-402141
-402142
+r(402140),	-- Gurubashi Hoodoo Stick
+r(402141),	-- Judgment of the Gurubashi
+r(402142),	-- Gurubashi Ceremonial Staff
+10.1.0.48480
+r(403166),	-- Obsidian Combatant's Medallion
+r(403167),	-- Obsidian Combatant's Insignia of Alacrity
+r(403168),	-- Obsidian Combatant's Emblem
+r(408218),	-- Winding Slitherdrake: Blue and Silver Armor
+r(408220),	-- Winding Slitherdrake: Yellow and Silver Armor
+r(408221),	-- Winding Slitherdrake: White Hair
+r(408222),	-- Winding Slitherdrake: Curved Chin Horn
+r(408223),	-- Winding Slitherdrake: Small Finned Throat
+r(408271),	-- Hissing Rune
+r(408272),	-- Vantus Rune: Aberrus, the Shadowed Crucible
+r(408273),	-- Glyph of the Heaved Armament
+r(408277),	-- Glyph of the Chosen Glaive
+r(408278),	-- Contract: Loamm Niffen
 
 
 
 
 Missing in InscriptionItemDB.lua
 
-10.0.7.47910
-400811
-402140
-402141
-402142
+10.1.0.48480
+r(403166),	-- Obsidian Combatant's Medallion
+r(403167),	-- Obsidian Combatant's Insignia of Alacrity
+r(403168),	-- Obsidian Combatant's Emblem
+r(408218),	-- Winding Slitherdrake: Blue and Silver Armor
+r(408220),	-- Winding Slitherdrake: Yellow and Silver Armor
+r(408221),	-- Winding Slitherdrake: White Hair
+r(408222),	-- Winding Slitherdrake: Curved Chin Horn
+r(408223),	-- Winding Slitherdrake: Small Finned Throat
+r(408271),	-- Hissing Rune
+r(408272),	-- Vantus Rune: Aberrus, the Shadowed Crucible
+r(408273),	-- Glyph of the Heaved Armament
+r(408277),	-- Glyph of the Chosen Glaive
+r(408278),	-- Contract: Loamm Niffen

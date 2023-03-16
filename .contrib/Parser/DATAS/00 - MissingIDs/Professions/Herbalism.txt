@@ -1,53 +1,57 @@
 0.5.3.3368
-2366
-2368
-2369
-2371
-2383
-3570
+r(2366),	-- Herb Gathering
+r(2368),	-- Herb Gathering
+r(2369),	-- Herb Gathering
+r(2371),	-- Herb Gathering
+r(2383),	-- Find Herbs
+r(3570),	-- Herb Gathering
 0.5.5.3494
-8387
+r(8387),	-- Find Herbs
 0.8.0.3734
-11993
+r(11993),	-- Herb Gathering
 2.0.0.6080
-28695
-32605
+r(28695),	-- Herb Gathering
+r(32605),	-- Herb Gathering
 3.0.1.8622
-50300
+r(50300),	-- Herb Gathering
 3.0.1.8874
-55428
-55480
-55500
-55501
-55502
-55503
+r(55428),	-- Lifeblood
+r(55480),	-- Lifeblood
+r(55500),	-- Lifeblood
+r(55501),	-- Lifeblood
+r(55502),	-- Lifeblood
+r(55503),	-- Lifeblood
 4.0.1.12911
-74497
-74519
-81708
+r(74497),	-- 
+r(74519),	-- Herb Gathering
+r(81708),	-- 
 5.0.3.15890
-110413
-110955
-121279
+r(110413),	-- Herb Gathering
+r(110955),	-- 
+r(121279),	-- 
 6.0.1.18179
-158745
+r(158745),	-- Herb Gathering
 7.3.0.24473
-193290
-195114
+r(193290),	-- Herbalism Journal \\ Herbalism Skills
+r(195114),	-- Herb Gathering
 8.0.1.25976
-265819
-265821
-265823
-265825
-265827
-265829
-265831
-265834
-265835
+r(265819),	-- Herb Gathering
+r(265821),	-- Herb Gathering
+r(265823),	-- Herb Gathering
+r(265825),	-- Herb Gathering
+r(265827),	-- Herb Gathering
+r(265829),	-- Herb Gathering
+r(265831),	-- Herb Gathering
+r(265834),	-- Herb Gathering
+r(265835),	-- Herb Gathering
 9.0.1.33978
-309780
-10.0.5.47871
-390392
+r(309780),	-- Herb Gathering
+10.1.0.48480
+r(405123),	-- Lambent Hochenblume
+r(405124),	-- Lambent Bubble Poppy
+r(405126),	-- Lambent Saxifrage
+r(405127),	-- Lambent Writhebark
+r(405134),	-- Overload Lambent Herb
 
 
 
@@ -55,96 +59,102 @@
 Missing in HerbalismItemDB.lua
 
 0.5.3.3368
-2366
-2368
-2369
-2371
-2383
-3570
+r(2366),	-- Herb Gathering
+r(2368),	-- Herb Gathering
+r(2369),	-- Herb Gathering
+r(2371),	-- Herb Gathering
+r(2383),	-- Find Herbs
+r(3570),	-- Herb Gathering
 0.5.5.3494
-8387
+r(8387),	-- Find Herbs
 0.8.0.3734
-11993
+r(11993),	-- Herb Gathering
 2.0.0.6080
-28695
-32605
+r(28695),	-- Herb Gathering
+r(32605),	-- Herb Gathering
 3.0.1.8622
-50300
+r(50300),	-- Herb Gathering
 3.0.1.8874
-55428
-55480
-55500
-55501
-55502
-55503
+r(55428),	-- Lifeblood
+r(55480),	-- Lifeblood
+r(55500),	-- Lifeblood
+r(55501),	-- Lifeblood
+r(55502),	-- Lifeblood
+r(55503),	-- Lifeblood
 4.0.1.12911
-74497
-74519
-81708
+r(74497),	-- 
+r(74519),	-- Herb Gathering
+r(81708),	-- 
 5.0.3.15890
-110413
-110955
-121279
+r(110413),	-- Herb Gathering
+r(110955),	-- 
+r(121279),	-- 
 6.0.1.18179
-158745
+r(158745),	-- Herb Gathering
 7.3.0.24473
-193290
-193292
-193293
-193294
-193295
-193296
-193297
-193298
-193299
-193300
-193301
-193302
-193303
-193304
-193305
-193306
-193307
-193308
-193309
-195114
-247812
-247813
-247814
+r(193290),	-- Herbalism Journal \\ Herbalism Skills
+r(193292),	-- Aethril
+r(193293),	-- Aethril
+r(193294),	-- Aethril
+r(193295),	-- Dreamleaf
+r(193296),	-- Dreamleaf
+r(193297),	-- Dreamleaf
+r(193298),	-- Foxflower
+r(193299),	-- Foxflower
+r(193300),	-- Foxflower
+r(193301),	-- Fjarnskaggl
+r(193302),	-- Fjarnskaggl
+r(193303),	-- Fjarnskaggl
+r(193304),	-- Starlight Rose
+r(193305),	-- Starlight Rose
+r(193306),	-- Starlight Rose
+r(193307),	-- Felwort
+r(193308),	-- Felwort
+r(193309),	-- Felwort
+r(195114),	-- Herb Gathering
+r(247812),	-- Astral Glory
+r(247813),	-- Astral Glory
+r(247814),	-- Astral Glory
 8.0.1.25976
-252405
-252406
-252407
-252408
-252409
-252410
-252411
-252412
-252413
-252415
-252416
-252417
-252418
-252419
-252420
-252421
-252422
-252423
-252424
-252425
-252426
-265819
-265821
-265823
-265825
-265827
-265829
-265831
-265834
-265835
+r(252405),	-- Riverbud
+r(252406),	-- Riverbud
+r(252407),	-- Riverbud
+r(252408),	-- Star Moss
+r(252409),	-- Star Moss
+r(252410),	-- Star Moss
+r(252411),	-- Akunda's Bite
+r(252412),	-- Akunda's Bite
+r(252413),	-- Akunda's Bite
+r(252415),	-- Winter's Kiss
+r(252416),	-- Winter's Kiss
+r(252417),	-- Winter's Kiss
+r(252418),	-- Siren's Pollen
+r(252419),	-- Siren's Pollen
+r(252420),	-- Siren's Pollen
+r(252421),	-- Sea Stalk
+r(252422),	-- Sea Stalk
+r(252423),	-- Sea Stalk
+r(252424),	-- Anchor Weed
+r(252425),	-- Anchor Weed
+r(252426),	-- Anchor Weed
+r(265819),	-- Herb Gathering
+r(265821),	-- Herb Gathering
+r(265823),	-- Herb Gathering
+r(265825),	-- Herb Gathering
+r(265827),	-- Herb Gathering
+r(265829),	-- Herb Gathering
+r(265831),	-- Herb Gathering
+r(265834),	-- Herb Gathering
+r(265835),	-- Herb Gathering
 8.2.0.30080
-298142
-298143
-298144
+r(298142),	-- Zin'anthid
+r(298143),	-- Zin'anthid
+r(298144),	-- Zin'anthid
 9.0.1.33978
-309780
+r(309780),	-- Herb Gathering
+10.1.0.48480
+r(405123),	-- Lambent Hochenblume
+r(405124),	-- Lambent Bubble Poppy
+r(405126),	-- Lambent Saxifrage
+r(405127),	-- Lambent Writhebark
+r(405134),	-- Overload Lambent Herb

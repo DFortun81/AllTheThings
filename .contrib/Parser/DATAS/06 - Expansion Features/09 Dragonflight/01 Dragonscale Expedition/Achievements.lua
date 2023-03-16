@@ -5,7 +5,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 	n(DRAGONSCALE_EXPEDITION, {
 		n(ACHIEVEMENTS, {
 			ach(16522, {	-- A True Explorer
-				["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 25
+				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
 			}),
 			ach(15890, {	-- Dragonscale Expedition: The Highest Peaks
 				["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7

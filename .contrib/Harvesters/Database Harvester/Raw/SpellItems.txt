@@ -11128,3 +11128,19 @@
 6774@@@|C00E97DFFHarmonic Music Stone
 6780@@@|C00E97DFFObscure Pastel Stone
 6784@@@|C00834FFFProphetic Twilight Stone
+10.1.0.48480
+6699@@@10.0 FX Testing - Enchant Visualt - Storm SK
+6818@@@10.1 FX Testing - Enchant Visualt - Shadow Flame SK
+6819@@@Illusory Adornment: Spores
+6820@@@Illusory Adornment: Spores
+6821@@@Illusory Adornment: Spores
+6822@@@Spore Tender |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+6823@@@Spore Tender |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+6824@@@Spore Tender |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+6825@@@Shadowflame Wreathe |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+6826@@@Shadowflame Wreathe |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+6827@@@Shadowflame Wreathe |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+6828@@@Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+6829@@@Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+6830@@@Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+6831@@@$spell@spelldesc407949

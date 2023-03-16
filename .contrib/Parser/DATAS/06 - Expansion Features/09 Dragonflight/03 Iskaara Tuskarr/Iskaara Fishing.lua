@@ -188,7 +188,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["isDaily"] = true,
 					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 				}),
-
+					-- Forbidden Reach
+				q(73226, {	-- Dragonskull Shoal
+					["provider"] = { "n", 200947 },	-- Reclusive Fisher
+					["coord"] = { 74.1, 40.5, THE_FORBIDDEN_REACH },
+					["isDaily"] = true,
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
+					["g"] = {
+						i(198855),	-- Throw Net
+					},
+				}),
 					-- Repeatables --
 				q(70201, {	-- Catch and Release: Aileron Seamoth
 					["provider"] = { "n", 194584 },	-- Khuri

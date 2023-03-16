@@ -627,7 +627,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["collectible"] = false,
 				["g"] = {
 					q(66963, {	-- Out For Delivery
-						["sourceQuests"] = { 66123 },	-- Cut Off the Head
+						-- ["sourceQuests"] = { 66123 },	-- Cut Off the Head (inaccurate)
 						["provider"] = { "n", 191698 },	-- Hauler Bennet
 						["coord"] = { 48.5, 78.9, THE_WAKING_SHORES },
 						["isBreadcrumb"] = true,
@@ -1181,6 +1181,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 37.0, 55.8, THE_WAKING_SHORES },
 				["g"] = {
 					i(200617),	-- Shattering Totem
+					i(198980),	-- Shattering Totem
 				},
 			}),
 			q(66369, {	-- The Earthen Ward

@@ -1,90 +1,94 @@
 0.5.3.3368
-2575
-2576
-2577
-2578
-2579
-2580
-2656
-3564
+r(2575),	-- Mining
+r(2576),	-- Mining
+r(2577),	-- Mining
+r(2578),	-- Mining
+r(2579),	-- Mining
+r(2580),	-- Find Minerals
+r(2656),	-- Mining Journal \\ Mining Skills \\ Smelting
+r(3564),	-- Mining
 0.5.5.3494
-8296
-8388
+r(8296),	-- Mass Smelt Copper OLD
+r(8388),	-- Find Minerals
 0.7.0.3694
-10248
+r(10248),	-- Mining
 0.8.0.3734
-12680
-12681
-12682
-12687
-12689
-12690
-12691
+r(12680),	-- Journeyman Gemology
+r(12681),	-- Gemology - Copper (DND)
+r(12682),	-- Gemology - Tin (DND)
+r(12687),	-- Expert Gemology
+r(12689),	-- Gemology - Iron (DND)
+r(12690),	-- Gemology - Mithril (DND)
+r(12691),	-- Artisan Gemology
 2.0.0.6080
-29354
-32606
+r(29354),	-- Mining
+r(32606),	-- Mining
 3.0.1.8303
-49253
-49254
-49255
-49260
+r(49253),	-- 
+r(49254),	-- 
+r(49255),	-- 
+r(49260),	-- 
 3.0.1.8622
-50310
-53040
-53120
-53121
-53122
-53123
-53124
-53417
+r(50310),	-- Mining
+r(53040),	-- Toughness
+r(53120),	-- Toughness
+r(53121),	-- Toughness
+r(53122),	-- Toughness
+r(53123),	-- Toughness
+r(53124),	-- Toughness
+r(53417),	-- 
 4.0.1.12911
-74496
-74517
+r(74496),	-- 
+r(74517),	-- Mining
 5.0.3.15890
-102161
-102163
-110955
+r(102161),	-- Mining
+r(102163),	-- 
+r(110955),	-- 
 6.0.1.18179
-158754
+r(158754),	-- Mining
 7.3.0.24473
-195122
+r(195122),	-- Mining
 8.0.1.25976
-265837
-265839
-265841
-265843
-265845
-265847
-265849
-265851
-265853
+r(265837),	-- Mining
+r(265839),	-- Mining
+r(265841),	-- Mining
+r(265843),	-- Mining
+r(265845),	-- Mining
+r(265847),	-- Mining
+r(265849),	-- Mining
+r(265851),	-- Mining
+r(265853),	-- Mining
 9.0.1.33978
-308130
-308131
-308150
-308151
-308152
-308153
-309835
+r(308130),	-- Laestrite Ore
+r(308131),	-- Solenium Ore
+r(308150),	-- Oxxein Ore
+r(308151),	-- Phaedrum Ore
+r(308152),	-- Sinvyr Ore
+r(308153),	-- Elethium Ore \\ Elethium Ingot
+r(309835),	-- Mining
 10.0.0.44707
-384688
-384690
-384693
+r(384688),	-- Draconium Deposit \\ [PH]Draconium Deposit
+r(384690),	-- Molten Draconium Deposit \\ [PH]Molten Draconium Deposit
+r(384693),	-- Rich Draconium Deposit \\ [PH]Rich Draconium Deposit
 10.0.0.45232
-389406
-389409
-389413
-389420
-389458
-389459
-389460
-389461
-389462
-389463
-389464
-389465
+r(389406),	-- Titan-Touched Draconium Deposit
+r(389409),	-- Primal Draconium Deposit
+r(389413),	-- Hardened Draconium Deposit
+r(389420),	-- Infurious Draconium Deposit \\ Bloody Draconium Deposit
+r(389458),	-- Draconium Seam
+r(389459),	-- Molten Serevite Deposit \\ Molten Tyrivite Deposit
+r(389460),	-- Rich Serevite Deposit \\ Rich Tyrivite Deposit
+r(389461),	-- Titan-Touched Serevite Deposit \\ Titan-Touched Tyrivite Deposit
+r(389462),	-- Primal Serevite Deposit \\ Primal Tyrivite Deposit
+r(389463),	-- Hardened Serevite Deposit \\ Hardened Tyrivite Deposit
+r(389464),	-- Infurious Serevite Deposit \\ Bloody Tyrivite Deposit
+r(389465),	-- Serevite Seam \\ Tyrivite Seam
 10.0.5.47871
-388213
+r(388213),	-- Overload Elemental Deposit \\ Overload Mining Node \\ Overload Element
+10.1.0.48480
+r(405120),	-- Metamorphic Serevite Deposit
+r(405121),	-- Metamorphic Draconium Deposit
+r(405131),	-- Overload Metamorphic Deposit
 
 
 
@@ -92,159 +96,163 @@
 Missing in MiningItemDB.lua
 
 0.5.3.3368
-2575
-2576
-2577
-2578
-2579
-2580
-2656
-2657
-2658
-2659
-3304
-3307
-3308
-3564
-3569
+r(2575),	-- Mining
+r(2576),	-- Mining
+r(2577),	-- Mining
+r(2578),	-- Mining
+r(2579),	-- Mining
+r(2580),	-- Find Minerals
+r(2656),	-- Mining Journal \\ Mining Skills \\ Smelting
+r(2657),	-- Smelt Copper
+r(2658),	-- Smelt Silver
+r(2659),	-- Smelt Bronze
+r(3304),	-- Smelt Tin
+r(3307),	-- Smelt Iron
+r(3308),	-- Smelt Gold
+r(3564),	-- Mining
+r(3569),	-- Smelt Steel
 0.5.5.3494
-8296
-8388
+r(8296),	-- Mass Smelt Copper OLD
+r(8388),	-- Find Minerals
 0.7.0.3694
-10097
-10098
-10248
+r(10097),	-- Smelt Mithril
+r(10098),	-- Smelt Truesilver
+r(10248),	-- Mining
 0.8.0.3734
-12680
-12681
-12682
-12687
-12689
-12690
-12691
+r(12680),	-- Journeyman Gemology
+r(12681),	-- Gemology - Copper (DND)
+r(12682),	-- Gemology - Tin (DND)
+r(12687),	-- Expert Gemology
+r(12689),	-- Gemology - Iron (DND)
+r(12690),	-- Gemology - Mithril (DND)
+r(12691),	-- Artisan Gemology
 0.9.0.3807
-14891
+r(14891),	-- Smelt Dark Iron
 1.0.0.3980
-16153
+r(16153),	-- Smelt Thorium
 1.13.0.28211
-22967
+r(22967),	-- Smelt Enchanted Elementium \\ Smelt Elementium
 2.0.0.6080
-29354
-29356
-29358
-29359
-29360
-29361
-29686
-32606
+r(29354),	-- Mining
+r(29356),	-- Smelt Fel Iron
+r(29358),	-- Smelt Adamantite
+r(29359),	-- Smelt Eternium
+r(29360),	-- Smelt Felsteel
+r(29361),	-- Smelt Khorium
+r(29686),	-- Smelt Hardened Adamantite
+r(32606),	-- Mining
 2.4.3.8606
-35750
-35751
-46353
+r(35750),	-- Earth Shatter
+r(35751),	-- Fire Sunder
+r(46353),	-- Smelt Hardened Khorium
 3.0.1.8303
-49252
-49253
-49254
-49255
-49258
-49260
+r(49252),	-- Smelt Cobalt
+r(49253),	-- 
+r(49254),	-- 
+r(49255),	-- 
+r(49258),	-- Smelt Saronite
+r(49260),	-- 
 3.0.1.8622
-50310
-53040
-53120
-53121
-53122
-53123
-53124
-53417
+r(50310),	-- Mining
+r(53040),	-- Toughness
+r(53120),	-- Toughness
+r(53121),	-- Toughness
+r(53122),	-- Toughness
+r(53123),	-- Toughness
+r(53124),	-- Toughness
+r(53417),	-- 
 3.0.1.8874
-55208
-55211
+r(55208),	-- Smelt Titansteel
+r(55211),	-- Smelt Titanium
 3.3.5.12340
-70524
+r(70524),	-- Enchanted Thorium Bar \\ Enchanted Thorium
 4.0.1.12911
-74496
-74517
-74529
-74530
-74537
-84038
+r(74496),	-- 
+r(74517),	-- Mining
+r(74529),	-- Smelt Pyrite
+r(74530),	-- Smelt Elementium
+r(74537),	-- Smelt Hardened Elementium
+r(84038),	-- Smelt Obsidium
 5.0.3.15890
-102161
-102163
-102165
-102167
-110955
+r(102161),	-- Mining
+r(102163),	-- 
+r(102165),	-- Smelt Ghost Iron
+r(102167),	-- Smelt Trillium
+r(110955),	-- 
 6.0.1.18179
-158754
+r(158754),	-- Mining
 7.3.0.24473
-184454
-184456
-184457
-184484
-184485
-184486
-184488
-184489
-184490
-184492
-184493
-184494
-184496
-184497
-184498
-184500
-184501
-184502
-184504
-184505
-191970
-195122
-247848
-247849
-247850
-247851
-247852
-247853
+r(184454),	-- Leystone Deposit
+r(184456),	-- Leystone Deposit
+r(184457),	-- Leystone Deposit
+r(184484),	-- Leystone Seam
+r(184485),	-- Leystone Seam
+r(184486),	-- Leystone Seam
+r(184488),	-- Living Leystone
+r(184489),	-- Living Leystone
+r(184490),	-- Living Leystone
+r(184492),	-- Felslate Deposit
+r(184493),	-- Felslate Deposit
+r(184494),	-- Felslate Deposit
+r(184496),	-- Felslate Seam
+r(184497),	-- Felslate Seam
+r(184498),	-- Felslate Seam
+r(184500),	-- Living Felslate
+r(184501),	-- Living Felslate
+r(184502),	-- Living Felslate
+r(184504),	-- Infernal Brimstone
+r(184505),	-- Infernal Brimstone
+r(191970),	-- Infernal Brimstone
+r(195122),	-- Mining
+r(247848),	-- Empyrium Deposit
+r(247849),	-- Empyrium Deposit
+r(247850),	-- Empyrium Deposit
+r(247851),	-- Empyrium Seam
+r(247852),	-- Empyrium Seam
+r(247853),	-- Empyrium Seam
 8.0.1.25976
-253333
-253334
-253335
-253336
-253337
-253338
-253339
-253340
-253341
-253342
-253343
-253344
-253345
-253346
-253347
-265837
-265839
-265841
-265843
-265845
-265847
-265849
-265851
-265853
+r(253333),	-- Monelite Deposit \\ Monalite Deposit
+r(253334),	-- Monelite Deposit \\ Monalite Deposit
+r(253335),	-- Monelite Deposit \\ Monalite Deposit
+r(253336),	-- Storm Silver Deposit
+r(253337),	-- Storm Silver Deposit
+r(253338),	-- Storm Silver Deposit
+r(253339),	-- Platinum Deposit
+r(253340),	-- Platinum Deposit
+r(253341),	-- Platinum Deposit
+r(253342),	-- Monelite Seam \\ Monalite Seam
+r(253343),	-- Monelite Seam \\ Monalite Seam
+r(253344),	-- Monelite Seam \\ Monalite Seam
+r(253345),	-- Storm Silver Seam
+r(253346),	-- Storm Silver Seam
+r(253347),	-- Storm Silver Seam
+r(265837),	-- Mining
+r(265839),	-- Mining
+r(265841),	-- Mining
+r(265843),	-- Mining
+r(265845),	-- Mining
+r(265847),	-- Mining
+r(265849),	-- Mining
+r(265851),	-- Mining
+r(265853),	-- Mining
 8.2.0.30080
-296143
-296144
-296145
-296147
-296148
-296149
+r(296143),	-- Osmenite Seam
+r(296144),	-- Osmenite Seam
+r(296145),	-- Osmenite Seam
+r(296147),	-- Osmenite Deposit
+r(296148),	-- Osmenite Deposit
+r(296149),	-- Osmenite Deposit
 9.0.1.33978
-308130
-308131
-308150
-308151
-308152
-308153
-309835
+r(308130),	-- Laestrite Ore
+r(308131),	-- Solenium Ore
+r(308150),	-- Oxxein Ore
+r(308151),	-- Phaedrum Ore
+r(308152),	-- Sinvyr Ore
+r(308153),	-- Elethium Ore \\ Elethium Ingot
+r(309835),	-- Mining
 10.0.5.47871
-388213
+r(388213),	-- Overload Elemental Deposit \\ Overload Mining Node \\ Overload Element
+10.1.0.48480
+r(405120),	-- Metamorphic Serevite Deposit
+r(405121),	-- Metamorphic Draconium Deposit
+r(405131),	-- Overload Metamorphic Deposit

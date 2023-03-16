@@ -284,6 +284,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
+				q(28865, {	-- Call of the Warmatron
+					["qg"] = 50587,	-- Okril'on Mage
+					["coord"] = { 53.2, 33.4, SILITHUS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(25716, {	-- Cultists at our Doorstep
 					["qg"] = 5385,	-- Watcher Mahar Ba
 					["sourceQuest"] = 25714,	-- Watcher Mahar Ba
@@ -704,6 +711,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},
+				}),
+				q(28867, {	-- Nethergarde Needs You!
+					["qg"] = 50588,	-- Nethergarde Mage
+					["coord"] = { 53.4, 33.4, SILITHUS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(25712, {	-- Nethergarde Reigns
 					["qg"] = 42262,	-- Leyan Steelson
@@ -1793,9 +1807,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						applyclassicphase(TBC_PHASE_ONE, i(23848, {	-- Nethergarde Bitter
+						i(23848, {	-- Nethergarde Bitter
 							["description"] = "Buy at least one of these before you enter the Dark Portal!",
-						})),
+							["timeline"] = { "added 2.0.1.6180" },
+						}),
 					},
 				}),
 				-- #endif
@@ -1978,7 +1993,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	m(BLASTED_LANDS, {
 		q(66560, {	-- Changing time of zone from Present to Past through Zidormi
-			["timeline"] = { "added 9.2.5" },
+			["timeline"] = { ADDED_SL_S4 },
 		}),
 	}),
 });

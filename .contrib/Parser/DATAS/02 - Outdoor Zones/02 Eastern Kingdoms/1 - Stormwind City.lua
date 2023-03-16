@@ -2728,6 +2728,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 				}),
+				prof(JEWELCRAFTING, {
+					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
+						["coord"] = { 63.6, 61.6, STORMWIND_CITY },
+						["timeline"] = { "added 4.0.1.12984" },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							r(404740, {	-- Cataclysm Crushing
+								["timeline"] = { ADDED_DF_0_7 },
+							}),
+						},
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(7794, {	-- A Donation of Mageweave
@@ -2851,7 +2863,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(62250, {	-- A New Adventure Awaits
 					["description"] = "This quest is automatically offered upon reaching the specified level.",
-					["timeline"] = { "created 9.0.2", "added 10.0.2" },
+					["timeline"] = { "created 9.0.2", ADDED_DF_PRE2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47202, {	-- A Personal Message
@@ -3288,9 +3300,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 7.2.0.23746" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(32469, {	-- Crystal Clarity
+				q(32469, {	-- Crystal Clarity (A)
 					["qg"] = 16908,	-- Arielle Snapflash
-					["sourceQuest"] = 32470,	-- Light Camera Action
+					["sourceQuest"] = 32470,	-- Light Camera Action (A)
 					["coord"] = { 61.2, 22.8, STORMWIND_CITY },
 					["timeline"] = { "added 7.3.5" },
 					["collectible"] = false,
@@ -3733,11 +3745,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 188342,	-- Onnesa
 					["sourceQuest"] = 66390,	-- Missing Merchandise
 					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(191865, {	-- Bottle of Briny Seawater
-							["timeline"] = { "added 9.2.5" },
+							["timeline"] = { ADDED_SL_S4 },
 						}),
 					},
 				}),
@@ -4051,11 +4063,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(65896, {	-- Let the Healing Begin
 					["qg"] = 190830,	-- Otan Tennoh
 					["coord"] = { 44.2, 57.0, STORMWIND_CITY },
-					["timeline"] = { "added 10.0.2" },
+					["timeline"] = { ADDED_DF_PRE2 },
 					["races"] = { DRACTHYR_ALLIANCE },
 					["classes"] = { EVOKER },
 				}),
-				q(32470, {	-- Light Camera Action
+				q(32470, {	-- Light Camera Action (A)
 					["qg"] = 16908,	-- Arielle Snapflash
 					["coord"] = { 61.2, 22.8, STORMWIND_CITY },
 					["timeline"] = { "added 7.3.5" },
@@ -4244,7 +4256,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(66390, {	-- Missing Merchandise
 					["qg"] = 188342,	-- Onnesa
 					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27038, {	-- Missing Parts
@@ -4398,12 +4410,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
-				}),
-				q(40661, {	-- Protect the Home Front
-					["qg"] = 101004,	-- Elerion Bladedancer
-					["coord"] = { 40.4, 77.8, STORMWIND_CITY },
-					["timeline"] = { "added 7.0.3.21796", "removed 7.0.5" },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26975, {	-- Rallying the Fleet
 					["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
@@ -5243,7 +5249,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { DWARF },
-					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["lvl"] = 20,
 				}),
 				q(1793, {	-- The Tome of Valor [Human]
@@ -5256,7 +5262,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { HUMAN },
-					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["lvl"] = 20,
 				}),
 				q(1649, {	-- The Tome of Valor (1/4)
@@ -5574,13 +5580,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2723),	-- Bottle of Dalaran Noir
 					},
 				}),
-				q(49981, {	-- Witness to the Wound
-					["qg"] = 132255,	-- Master Mathias Shaw
-					["sourceQuest"] = 49976,	-- Gifts of the Fallen
-					["coord"] = { 39.0, 62.6, STORMWIND_CITY },
-					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(60962, {	-- Wrath of the Lich King: Onward to Adventure in Northrend
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["sourceQuest"] = 60096,	-- Wrath of the Lich King: To Northrend!
@@ -5706,25 +5705,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
-						i(847),		-- Chainmail Armor
-						i(1845),	-- Chainmail Belt
-						i(849),		-- Chainmail Boots
-						i(1846),	-- Chainmail Bracers
-						i(850),		-- Chainmail Gloves
-						i(848),		-- Chainmail Pants
-						i(2392),	-- Light Mail Armor
-						i(2393),	-- Light Mail Belt
-						i(2395),	-- Light Mail Boots
-						i(2396),	-- Light Mail Bracers
-						i(2397),	-- Light Mail Gloves
-						i(2394),	-- Light Mail Leggings
-						i(1853),	-- Scalemail Belt
-						i(287),		-- Scalemail Boots
-						i(1852),	-- Scalemail Bracers
-						i(718),		-- Scalemail Gloves
-						i(286),		-- Scalemail Pants
-						i(285),		-- Scalemail Vest
-
 						-- Now any class and race can buy this
 						-- HUNTER --
 						i(129),	-- Rugged Trapper's Boots
@@ -6160,72 +6140,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3428),	-- Common Grey Shirt
 						i(16060),	-- Common White Shirt
 						-- #if AFTER 10.0.5
-						i(6116, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(23350, {	-- Battleworn Pants
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(23349, {	-- Battleworn Shoes
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(837, {	-- Heavy Weave Armor
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(3589, {	-- Heavy Weave Belt
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(3590, {	-- Heavy Weave Bracers
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(839, {	-- Heavy Weave Gloves
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(838, {	-- Heavy Weave Pants
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(840, {	-- Heavy Weave Shoes
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(3602, {	-- Knitted Belt
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(3603, {	-- Knitted Bracers
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(793, {	-- Knitted Gloves
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(794, {	-- Knitted Pants
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(792, {	-- Knitted Sandals
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(795, {	-- Knitted Tunic
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(6118, {	-- Squire's Pants
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(3597, {	-- Thick Cloth Belt
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(3598, {	-- Thick Cloth Bracers
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(203, {	-- Thick Cloth Gloves
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(201, {	-- Thick Cloth Pants
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(202, {	-- Thick Cloth Shoes
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
-						i(200, {	-- Thick Cloth Vest
-							["timeline"] = { ADDED_DF_0_5 }
-						}),
 						-- Now any class and race can buy this
 						-- MAGE --
 						i(55, {	-- Apprentice's Boots
@@ -6275,6 +6189,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						i(59, {	-- Acolyte's Shoes
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+
+						-- ??? --
+						i(6116, {	-- Apprentice's Robe
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(23350, {	-- Battleworn Pants
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(23349, {	-- Battleworn Shoes
+							["timeline"] = { ADDED_DF_0_5 }
+						}),
+						i(6118, {	-- Squire's Pants
 							["timeline"] = { ADDED_DF_0_5 }
 						}),
 						-- #endif
@@ -6505,6 +6433,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.3.0.14849" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						currency(361, {	-- Illustrious Jewelcrafter's Token
+							["cost"] = { { "i", 204356, 10 }, },	-- 10x Illustrious Gemdust
+							["timeline"] = { ADDED_DF_0_7 },
+						}),
 						i(71928, {	-- Design: Accurate Shadow Spinel
 							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
 						}),
@@ -7019,25 +6951,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
-						i(236),		-- Cured Leather Armor
-						i(1849),	-- Cured Leather Belt
-						i(238),		-- Cured Leather Boots
-						i(1850),	-- Cured Leather Bracers
-						i(239),		-- Cured Leather Gloves
-						i(237),		-- Cured Leather Pants
-						i(1839),	-- Rough Leather Belt
-						i(796),		-- Rough Leather Boots
-						i(1840),	-- Rough Leather Bracers
-						i(797),		-- Rough Leather Gloves
-						i(798),		-- Rough Leather Pants
-						i(799),		-- Rough Leather Vest
-						i(1843),	-- Tanned Leather Belt
-						i(843),		-- Tanned Leather Boots
-						i(1844),	-- Tanned Leather Bracers
-						i(844),		-- Tanned Leather Gloves
-						i(846),		-- Tanned Leather Jerkin
-						i(845),		-- Tanned Leather Pants
-
 						-- Now any class and race can buy this
 						-- DRUID --
 						i(6124),	-- Novice's Pants
@@ -7652,6 +7565,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(175167, {  -- Expeditionary Staff
 							["timeline"] = { "added 9.0.1.36216" },
 						}),
+					},
+				}),
+				n(53991, {	-- Quincy Cutler <Owner and Proprietor>
+					["timeline"] = { "added 4.2.0.14313" },
+					["coord"] = { 64.0, 46.2, STORMWIND_CITY },
+					["groups"] = {
+						i(44679),	-- Red Wine Glass
+						i(44678),	-- Wine Glass
 					},
 				}),
 				-- #if NOT ANYCLASSIC

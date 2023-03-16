@@ -1254,15 +1254,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
 				}),
-				applyclassicphase(TBC_PHASE_ONE, q(10371, {	-- Yorus Barleybrew (Draenei)
+				q(10371, {	-- Yorus Barleybrew (Draenei)
 					["qg"] = 16771,	-- Ahonan
 					["coord"] = { 55.0, 83.4, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["races"] = { DRAENEI },
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
-				})),
+				}),
 				q(26545, {	-- Yowler Must Die!
 					["qg"] = 344,	-- Magistrate Solomon
 					["sourceQuest"] = 26544,	-- They've Wised Up...

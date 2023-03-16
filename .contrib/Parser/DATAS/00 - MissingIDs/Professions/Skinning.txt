@@ -1,46 +1,46 @@
 0.5.5.3494
-8613
-8617
-8618
+r(8613),	-- Skinning
+r(8617),	-- Skinning
+r(8618),	-- Skinning
 0.7.0.3694
-10768
+r(10768),	-- Skinning
 2.0.0.6080
-32678
+r(32678),	-- Skinning
 3.0.1.8303
-47429
+r(47429),	-- 
 3.0.1.8622
-50305
-53125
-53662
-53663
-53664
-53665
-53666
+r(50305),	-- Skinning
+r(53125),	-- Master of Anatomy
+r(53662),	-- Master of Anatomy
+r(53663),	-- Master of Anatomy
+r(53664),	-- Master of Anatomy
+r(53665),	-- Master of Anatomy
+r(53666),	-- Master of Anatomy
 4.0.1.12911
-74495
-74522
+r(74495),	-- 
+r(74522),	-- Skinning
 5.0.3.15890
-102216
-102219
-110955
+r(102216),	-- Skinning
+r(102219),	-- 
+r(110955),	-- 
 6.0.1.18179
-158756
+r(158756),	-- Skinning
 7.3.0.24473
-194174
-195125
-205243
+r(194174),	-- Skinning Journal \\ Skinning Skills
+r(195125),	-- Skinning
+r(205243),	-- Skinning
 8.0.1.25976
-265855
-265857
-265859
-265861
-265863
-265865
-265867
-265869
-265871
+r(265855),	-- Skinning
+r(265857),	-- Skinning
+r(265859),	-- Skinning
+r(265861),	-- Skinning
+r(265863),	-- Skinning
+r(265865),	-- Skinning
+r(265867),	-- Skinning
+r(265869),	-- Skinning
+r(265871),	-- Skinning
 9.0.1.33978
-308569
+r(308569),	-- Skinning
 
 
 
@@ -48,76 +48,76 @@
 Missing in SkinningItemDB.lua
 
 0.5.5.3494
-8613
-8617
-8618
+r(8613),	-- Skinning
+r(8617),	-- Skinning
+r(8618),	-- Skinning
 0.7.0.3694
-10768
+r(10768),	-- Skinning
 2.0.0.6080
-32678
+r(32678),	-- Skinning
 3.0.1.8303
-47429
+r(47429),	-- 
 3.0.1.8622
-50305
-53125
-53662
-53663
-53664
-53665
-53666
+r(50305),	-- Skinning
+r(53125),	-- Master of Anatomy
+r(53662),	-- Master of Anatomy
+r(53663),	-- Master of Anatomy
+r(53664),	-- Master of Anatomy
+r(53665),	-- Master of Anatomy
+r(53666),	-- Master of Anatomy
 4.0.1.12911
-74495
-74522
+r(74495),	-- 
+r(74522),	-- Skinning
 5.0.3.15890
-102216
-102219
-110955
+r(102216),	-- Skinning
+r(102219),	-- 
+r(110955),	-- 
 6.0.1.18179
-158756
+r(158756),	-- Skinning
 7.3.0.24473
-194161
-194162
-194163
-194164
-194165
-194166
-194167
-194168
-194169
-194170
-194171
-194174
-194203
-195125
-205243
-247842
-247843
-247844
+r(194161),	-- Stonehide Leather
+r(194162),	-- Stonehide Leather
+r(194163),	-- Stonehide Leather
+r(194164),	-- Stormscale
+r(194165),	-- Stormscale
+r(194166),	-- Stormscale
+r(194167),	-- Felhide
+r(194168),	-- Felhide
+r(194169),	-- Felhide
+r(194170),	-- Unbroken Tooth
+r(194171),	-- Unbroken Claw
+r(194174),	-- Skinning Journal \\ Skinning Skills
+r(194203),	-- Legion Gutting
+r(195125),	-- Skinning
+r(205243),	-- Skinning
+r(247842),	-- Fiendish Leather
+r(247843),	-- Fiendish Leather
+r(247844),	-- Fiendish Leather
 8.0.1.25976
-257146
-257147
-257148
-257149
-257150
-257151
-257152
-257153
-257154
-265855
-265857
-265859
-265861
-265863
-265865
-265867
-265869
-265871
+r(257146),	-- Leather Gathering
+r(257147),	-- Leather Gathering
+r(257148),	-- Leather Gathering
+r(257149),	-- Scale Gathering
+r(257150),	-- Scale Gathering
+r(257151),	-- Scale Gathering
+r(257152),	-- Bone Gathering
+r(257153),	-- Bone Gathering
+r(257154),	-- Bone Gathering
+r(265855),	-- Skinning
+r(265857),	-- Skinning
+r(265859),	-- Skinning
+r(265861),	-- Skinning
+r(265863),	-- Skinning
+r(265865),	-- Skinning
+r(265867),	-- Skinning
+r(265869),	-- Skinning
+r(265871),	-- Skinning
 8.2.0.30168
-302007
-302010
-302011
-302014
-302015
-302016
+r(302007),	-- Dredged Leather
+r(302010),	-- Dredged Leather
+r(302011),	-- Dredged Leather
+r(302014),	-- Cragscale
+r(302015),	-- Cragscale
+r(302016),	-- Cragscale
 9.0.1.33978
-308569
+r(308569),	-- Skinning

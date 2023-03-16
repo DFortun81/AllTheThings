@@ -64,7 +64,6 @@ q(1660),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1662),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1663),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1664),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(1963),	-- The Shattered Hand,		TBC: The Shattered Hand,		CLASSIC: The Shattered Hand
 q(2000),	-- Rokar Bladeshadow,		TBC: Rokar Bladeshadow,		CLASSIC: Rokar Bladeshadow
 q(2018),	-- Rokar's Test,		CLASSIC: Rokar's Test
 q(2019),	-- Tools of the Trade,		CLASSIC: Tools of the Trade
@@ -72,20 +71,12 @@ q(2020),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(2058),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(2059),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(2358),	-- Horns of Nez'ra,		CLASSIC: Horns of Nez'ra
-q(2378),	-- Find the Shattered Hand,		TBC: Find the Shattered Hand,		CLASSIC: Find the Shattered Hand
-q(2379),	-- Zando'zan,		TBC: Zando'zan,		CLASSIC: Zando'zan
-q(2382),	-- Wrenix of Ratchet,		TBC: Wrenix of Ratchet,		CLASSIC: Wrenix of Ratchet
-q(2458),	-- Deep Cover,		TBC: Deep Cover,		CLASSIC: Deep Cover
-q(2460),	-- The Shattered Salute,		TBC: The Shattered Salute,		CLASSIC: The Shattered Salute
-q(2479),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's Assistance
 q(2868),	-- <TXT> The Shriveled Heart,		TBC: <TXT> The Shriveled Heart,		CLASSIC: <TXT> The Shriveled Heart
-q(2944),	-- The Super Snapper FX,		TBC: The Super Snapper FX,		CLASSIC: The Super Snapper FX
 q(2971),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(2997),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(2998),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(2999),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(3000),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
-q(3022),	-- Handle With Care,		TBC: Handle With Care,		CLASSIC: Handle With Care
 q(3023),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3111),	-- <UNUSED> [DEPRECATED],		CLASSIC: <UNUSED> [DEPRECATED]
 q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak,		TBC: <NYI> <TXT><redux> Dreadmist Peak,		CLASSIC: <NYI> <TXT><redux> Dreadmist Peak
@@ -130,16 +121,8 @@ q(5523),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5530),	-- <NYI> <TXT> Necklace of the Dawn,		CLASSIC: <NYI> <TXT> Necklace of the Dawn
 q(5532),	-- <NYI> <TXT> Ring of the Dawn,		TBC: <NYI> <TXT> Ring of the Dawn,		CLASSIC: <NYI> <TXT> Ring of the Dawn
 q(5641),	-- A Lack of Fear,		TBC: A Lack of Fear,		CLASSIC: A Lack of Fear
-q(5642),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
-q(5643),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
 q(5645),	-- A Lack of Fear,		TBC: A Lack of Fear,		CLASSIC: A Lack of Fear
 q(5647),	-- A Lack of Fear,		TBC: A Lack of Fear,		CLASSIC: A Lack of Fear
-q(5652),	-- Hex of Weakness,		TBC: Hex of Weakness,		CLASSIC: Hex of Weakness
-q(5653),	-- <NYI> Hex of Weakness,		CLASSIC: <NYI> Hex of Weakness
-q(5654),	-- Hex of Weakness,		TBC: Hex of Weakness,		CLASSIC: Hex of Weakness
-q(5655),	-- Hex of Weakness,		TBC: Hex of Weakness,		CLASSIC: Hex of Weakness
-q(5656),	-- Hex of Weakness,		TBC: Hex of Weakness,		CLASSIC: Hex of Weakness
-q(5657),	-- Hex of Weakness,		TBC: Hex of Weakness,		CLASSIC: Hex of Weakness
 q(5659),	-- <NYI> Touch of Weakness,		CLASSIC: <NYI> Touch of Weakness
 q(5664),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5665),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -149,7 +132,6 @@ q(5668),	-- <NYI> A Blessing of Light,		CLASSIC: <NYI> A Blessing of Light
 q(5669),	-- <NYI> A Blessing of Light,		CLASSIC: <NYI> A Blessing of Light
 q(5670),	-- <NYI> A Blessing of Light,		CLASSIC: <NYI> A Blessing of Light
 q(5671),	-- <NYI> A Blessing of Light,		CLASSIC: <NYI> A Blessing of Light
-q(5680),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
 q(5681),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5682),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5683),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -241,7 +223,6 @@ q(8247),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(8248),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(8266),	-- Ribbons of Sacrifice,		TBC: Ribbons of Sacrifice,		CLASSIC: Ribbons of Sacrifice
 q(8268),	-- Ribbons of Sacrifice,		TBC: Ribbons of Sacrifice,		CLASSIC: Ribbons of Sacrifice
-q(8275),	-- Taking Back Silithus,		TBC: Taking Back Silithus,		CLASSIC: Taking Back Silithus
 q(8290),	-- Vanquish the Invaders,		TBC: Vanquish the Invaders,		CLASSIC: Vanquish the Invaders
 q(8291),	-- Vanquish the Invaders!,		TBC: Vanquish the Invaders!,		CLASSIC: Vanquish the Invaders!
 q(8294),	-- Quell the Silverwing Usurpers,		TBC: Quell the Silverwing Usurpers,		CLASSIC: Quell the Silverwing Usurpers
@@ -252,7 +233,6 @@ q(8337),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(8339),	-- Royalty of the Council <NYI> <TXT> UNUSED,		TBC: Royalty of the Council <NYI> <TXT> UNUSED,		CLASSIC: Royalty of the Council <NYI> <TXT> UNUSED
 q(8340),	-- Twilight Signet Ring <NYI> <TXT>,		CLASSIC: Twilight Signet Ring <NYI> <TXT>
 q(8344),	-- Windows to the Source,		TBC: Windows to the Source,		CLASSIC: Windows to the Source
-q(8410),	-- Elemental Mastery,		TBC: Elemental Mastery,		CLASSIC: Elemental Mastery
 q(8411),	-- [DEPRECATED] Mastering the Elements,		TBC: Mastering the Elements,		CLASSIC: Mastering the Elements
 q(8444),	-- <NYI> <TXT> gossip shade of ambermoon,		TBC: <NYI> <TXT> gossip shade of ambermoon,		CLASSIC: <NYI> <TXT> gossip shade of ambermoon
 q(8445),	-- <NYI> <TXT> gossip shade of ambermoon,		TBC: <NYI> <TXT> gossip shade of ambermoon,		CLASSIC: <NYI> <TXT> gossip shade of ambermoon
@@ -376,7 +356,6 @@ q(10779),	-- The Hunter's Path,		TBC: The Hunter's Path
 q(10787),	-- [DEPRECATED]<txt><nyi>The Dragons of Dragons' End,		TBC: [DEPRECATED]<txt><nyi>The Dragons of Dragons' End
 q(10789),	-- Return to Carendin Halgar,		TBC: Return to Carendin Halgar
 q(10790),	-- Return to Mordak Darkfist,		TBC: Return to Gan'rul Bloodeye
-q(10794),	-- Rogues of the Shattered Hand,		TBC: Rogues of the Shattered Hand
 q(10844),	-- Forge Camp: Anger,		TBC: Forge Camp: Anger
 q(10890),	-- [UNUSED] <NYI>,		TBC: [UNUSED] <NYI>
 q(10931),	-- Return to the Exodar,		TBC: Return to the Exodar

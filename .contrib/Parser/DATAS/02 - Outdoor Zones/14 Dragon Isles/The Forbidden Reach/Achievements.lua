@@ -126,29 +126,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["_npcs"] = { 203353 },	-- Loot Specialist
 				}),
 			}),
-			ach(17405, {	-- Dragon Glyphs: Caldera of the Menders
-				["coord"] = { 35.7, 21.9, THE_FORBIDDEN_REACH },
-			}),
-			ach(17401, {	-- Dragon Glyphs: Dragonskull Island
-				["coord"] = { 81.6, 50.2, THE_FORBIDDEN_REACH },
-			}),
-			ach(17400, {	-- Dragon Glyphs: Froststone Peak
-				["coord"] = { 64.6, 23.9, THE_FORBIDDEN_REACH },
-			}),
-			ach(17402, {	-- Dragon Glyphs: Stormsunder Mountain
-				["coord"] = { 81.6, 50.2, THE_FORBIDDEN_REACH },
-			}),
-			ach(17404, {	-- Dragon Glyphs: Talonlord's Perch
-				["coord"] = { 60.5, 61.8, THE_FORBIDDEN_REACH },
-			}),
-			ach(17399, {	-- Dragon Glyphs: Talon's Watch
-				["coord"] = { 15.9, 92.3, THE_FORBIDDEN_REACH },
-			}),
-			ach(17403, {	-- Dragon Glyphs: The Frosted Spine
-				["coord"] = { 48.3, 66.3, THE_FORBIDDEN_REACH },
-			}),
-			ach(17398, {	-- Dragon Glyphs: Warlord's Perch
-				["coord"] = { 13.3, 1.6, THE_FORBIDDEN_REACH },
+			ach(17411, {	-- Forbidden Reach Glyph Hunter
+				crit(1, {	-- Dragon Glyphs: Winglord's Perch
+					["coord"] = { 13.3, 1.6, THE_FORBIDDEN_REACH },
+				}),
+				crit(2, {	-- Dragon Glyphs: Talon's Watch
+					["coord"] = { 15.9, 92.3, THE_FORBIDDEN_REACH },
+				}),
+				crit(3, {	-- Dragon Glyphs: Froststone Peak
+					["coord"] = { 64.6, 23.9, THE_FORBIDDEN_REACH },
+				}),
+				crit(4, {	-- Dragon Glyphs: Dragonskull Island
+					["coord"] = { 81.6, 50.2, THE_FORBIDDEN_REACH },
+				}),
+				crit(5, {	-- Dragon Glyphs: Stormsunder Mountain
+					["coord"] = { 81.6, 50.2, THE_FORBIDDEN_REACH },
+				}),
+				crit(6, {	-- Dragon Glyphs: The Frosted Spine
+					["coord"] = { 48.3, 66.3, THE_FORBIDDEN_REACH },
+				}),
+				crit(7, {	-- Dragon Glyphs: Talonlord's Perch
+					["coord"] = { 60.5, 61.8, THE_FORBIDDEN_REACH },
+				}),
+				crit(8, {	-- Dragon Glyphs: Caldera of the Menders
+					["coord"] = { 35.7, 21.9, THE_FORBIDDEN_REACH },
+				}),
 			}),
 			ach(17534, {	-- Explore the Forbidden Reach
 				crit(1),	-- The War Creche
@@ -241,62 +243,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				}),
 				crit(12, {	-- 	Morqut Provisions
 					-- TODO: ["_quests"] = {  },
-				}),
-			}),
-			ach(17540, {	-- Under the Weather
-				crit(1),	-- Air
-				crit(2),	-- Earth
-				crit(3),	-- Fire
-				crit(4),	-- Water
-			}),
-			ach(17315, {	-- While We Were Sleeping
-				crit(1, {	-- Journal Entry: The Creches
-					["_quests"] = {
-						73114, -- Journal Entry: The Creches (A)
-						74883,	-- Journal Entry: The Creches (H)
-					},
-				}),
-				crit(2, {	-- Journal Entry: Experiments
-					["_quests"] = {
-						74866, -- Journal Entry: Experiments (A)
-						73110,	-- Journal Entry: Experiments (H)
-					},
-				}),
-				crit(3, {	-- Journal Entry: Relics
-					["_quests"] = {
-						73113, -- Journal Entry: Relics (A)
-						74880,	-- Journal Entry: Relics (H)
-					},
-				}),
-				crit(4, {	-- Journal Entry: Silence
-					["_quests"] = {
-						73115, -- Journal Entry: Silence (A)
-						74896,	-- Journal Entry: Silence (H)
-					},
-				}),
-				crit(5, {	-- Receiving Stone: Final Warning
-					["_quests"] = {
-						73109, -- Journal Entry: Final Warning (A)
-						74900,	-- Journal Entry: Final Warning (H)
-					},
-				}),
-				crit(6, {	-- Sending Stone: Protest
-					["_quests"] = {
-						72944, -- Journal Entry: Protest (A)
-						74901,	-- Journal Entry: Protest (H)
-					},
-				}),
-				crit(7, {	-- Sending Stone: Initial Report
-					["_quests"] = {
-						73107, -- Journal Entry: Initial Report (A)
-						74902,	-- Journal Entry: Initial Report (H)
-					},
-				}),
-				crit(8, {	-- Sending Stone: The Prisoner
-					["_quests"] = {
-						73108, -- Journal Entry: The Prisoner (A)
-						74903,	-- Journal Entry: The Prisoner (H)
-					},
 				}),
 			}),
 			ach(17531),	-- X Marks the Spot

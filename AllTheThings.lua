@@ -7935,11 +7935,11 @@ app.CollectibleAsQuest = function(t)
 						-- or able to access quest on current character
 						or not t.locked
 					)
-					-- account-wide quests (special case since quests are only available once per account, so can only consider them collectible if they've never been completed otherwise)
 					and
 					(
+						-- collectible by any character
 						app.AccountWideQuests
-						-- otherwise must not be a once-per-account quest which has already been flagged as completed on a different character
+						-- or not OTQ or is OTQ not yet known to be completed by any character, or is OTQ completed by this character
 						or (not ATTAccountWideData.OneTimeQuests[questID] or ATTAccountWideData.OneTimeQuests[questID] == app.GUID)
 					)
 				)
@@ -9778,9 +9778,10 @@ local function default_link(t)
 end
 local CollectedSpeciesHelper = setmetatable({}, {
 	__index = function(t, key)
-		if not C_PetJournal_GetNumCollectedInfo(key) then
-			app.print("SpeciesID " .. key .. " was not found.");
-		elseif C_PetJournal_GetNumCollectedInfo(key) > 0 then
+		local num = C_PetJournal_GetNumCollectedInfo(key);
+		if not num then
+			app.PrintDebug("SpeciesID " .. key .. " was not found.");
+		elseif num > 0 then
 			rawset(t, key, 1);
 			return 1;
 		end
@@ -14319,8 +14320,7 @@ local function CurrentCharacterFilters(item)
 	return FilterItemClass_RequiredSkill(item)
 		and FilterItemClass_RequireClasses(item)
 		and FilterItemClass_RequireRaces(item)
-		and FilterItemClass_CustomCollect(item)
-		and FilterItemClass_UnobtainableItem(item);
+		and FilterItemClass_CustomCollect(item);
 end
 local function FilterItemSource(sourceInfo)
 	return sourceInfo.isCollected;
@@ -16737,10 +16737,11 @@ RowOnEnter = function (self)
 					GameTooltip:AddDoubleLine(L["QUEST_ID"].. " ["..(app.FactionID == Enum.FlightPathFaction.Alliance and FACTION_HORDE or FACTION_ALLIANCE).."]", tostring(otherFactionQuestID));
 				end
 			end
-			if ATTAccountWideData.OneTimeQuests[refQuestID] then
-				local charData = ATTCharacterData[ATTAccountWideData.OneTimeQuests[refQuestID]];
-				GameTooltip:AddDoubleLine(L["QUEST_ONCE_PER_ACCOUNT"], sformat(L["QUEST_ONCE_PER_ACCOUNT_FORMAT"], charData and charData.text or "Unknown"));
-			elseif ATTAccountWideData.OneTimeQuests[refQuestID] == false then
+			local oneTimeQuestCharGuid = ATTAccountWideData.OneTimeQuests[refQuestID];
+			if oneTimeQuestCharGuid then
+				local charData = ATTCharacterData[oneTimeQuestCharGuid];
+				GameTooltip:AddDoubleLine(L["QUEST_ONCE_PER_ACCOUNT"], sformat(L["QUEST_ONCE_PER_ACCOUNT_FORMAT"], charData and charData.text or UNKNOWN));
+			elseif oneTimeQuestCharGuid == false then
 				GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
 			end
 		end
@@ -18124,12 +18125,12 @@ function app:GetDataCache()
 		tinsert(g, db);
 	end
 
-	-- Gear Sets
-	if app.Categories.GearSets then
+	-- Character
+	if app.Categories.Character then
 		db = {};
-		db.g = app.Categories.GearSets;
+		db.g = app.Categories.Character;
 		db.expanded = false;
-		db.text = LOOT_JOURNAL_ITEM_SETS;
+		db.text = CHARACTER;
 		db.name = db.text;
 		db.icon = app.asset("Category_ItemSets");
 		tinsert(g, db);
@@ -24362,13 +24363,6 @@ app.InitDataCoroutine = function()
 	app:RegisterEvent("QUEST_DATA_LOAD_RESULT");
 	app:RegisterEvent("LEARNED_SPELL_IN_TAB");
 
-	local needRefresh;
-	-- NOTE: The auto refresh only happens once per version
-	if not accountWideData.LastAutoRefresh or (accountWideData.LastAutoRefresh ~= app.Version) then
-		accountWideData.LastAutoRefresh = app.Version;
-		needRefresh = true;
-	end
-
 	-- check if we are in a Party Sync session when loading in
 	app.IsInPartySync = C_QuestSession.Exists();
 
@@ -24383,7 +24377,9 @@ app.InitDataCoroutine = function()
 	-- print("Yield prior to Refresh")
 	coroutine.yield();
 
-	if needRefresh then
+	-- NOTE: The auto refresh only happens once per version
+	if not accountWideData.LastAutoRefresh or (accountWideData.LastAutoRefresh ~= app.Version) then
+		accountWideData.LastAutoRefresh = app.Version;
 		-- print("Force Refresh")
 		-- collection refresh includes data refresh
 		app.RefreshCollections();

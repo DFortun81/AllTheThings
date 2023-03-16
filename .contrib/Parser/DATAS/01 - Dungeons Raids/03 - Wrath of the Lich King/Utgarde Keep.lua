@@ -34,15 +34,39 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				applyclassicphase(WRATH_PHASE_TWO, ach(17213, {	-- Defense Protocol Alpha: Utgarde Keep
 					crit(57666, { -- Prince Keleseth
 						["_encounter"] = { 638, 2 },
+						["groups"] = {
+							i(39345),	-- Girdle of the Ascended Phantom
+							i(39379),	-- Spectral Rider's Girdle
+							i(39392),	-- Veiled Amulet of Life
+						},
 					}),
 					crit(57665, { -- Skarvald the Constructor
 						["_encounter"] = { 639, 2 },
+						["groups"] = {
+							i(39309),	-- Leggings of the Instructor
+							i(39344),	-- Slayer of the Lifeless
+							i(39369),	-- Sabatons of Deathlike Gloom
+						},
 					}),
 					crit(57667, { -- Dalronn the Controller
 						["_encounter"] = { 639, 2 },
 					}),
 					crit(57668, { -- Ingvar the Plunderer
 						["_encounter"] = { 640, 2 },
+						["groups"] = {
+							i(40519),	-- Footsteps of Malygos
+							i(40474),	-- Surge Needle Ring
+							i(39424),	-- The Soulblade
+							i(40616),	-- Helm of the Lost Conqueror
+							i(40617),	-- Helm of the Lost Protector
+							i(40618),	-- Helm of the Lost Vanquisher
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
+						},
 					}),
 				})),
 				-- #endif

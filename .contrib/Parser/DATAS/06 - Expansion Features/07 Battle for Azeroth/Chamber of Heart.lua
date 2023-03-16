@@ -96,19 +96,27 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						}),
 					},
 				}),
+				q(54938, {	-- A Brother's Help
+					-- This was removed during BfA in 8.2 but is now appearing again for characters leveling up during Shadowlands
+					["qg"] = 130216,	-- Magni Bronzebeard
+					["sourceQuest"] = 53406,	-- The Chamber of Heart
+					["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
+					["coord"] = { 42.1, 44.3, SILITHUS },
+					["timeline"] = { "added 8.1.5.29701" },
+				}),
 				q(55374, {	-- A Disturbance Beneath the Earth
 					["provider"] = { "n", 152194 },	-- MOTHER
 					["coord"] = { 48.1, 72.2, REPAIRED_CHAMBER_OF_HEART },
 					["sourceQuest"] = 55533,	-- MOTHER Knows Best
 				}),
-				q(52946, {	-- A Dying World
+				q(52946, {	-- A Dying World (A)
 					["qg"] = 142930,	-- Halford Wyrmbane
 					["sourceQuest"] = 51795,	-- The Battle for Lordaeron
 					["coord"] = { 27.7, 21.5, STORMWIND_CITY },
 					["timeline"] = { "added 8.0.1.27291", "removed 9.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(53028, {	-- A Dying World
+				q(53028, {	-- A Dying World (A/H)
 					--	originally removed, then hotfixed back in for 50 characters
 					--	NOT Horde-only, this ID is offered in both Dazar'alor and Boralus.  there used to be a separate ID for Alliance (52946), but it looks like that one was permanently removed.
 					--	used to be able to be picked up in Orgrimmar from Nathanos, but that doesn't seem to be the case anymore.  Nathanos is still in Org, but the only quest he offered to me at 50 was "Battle for Azeroth: Mission Statement," which i think originally took place after players had picked up the HoA - after completing "Mission Statement" i went back and Nathanos was no longer in that location in Orgrimmar
@@ -591,6 +599,14 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					["coord"] = { 49.4, 68.3, HIGHMOUNTAIN },
 					["sourceQuest"] = 55374,	-- A Disurbance Beneath the Earth
 				}),
+				q(53406, {	-- The Chamber of Heart (third HoA upgrade)
+					["qg"] = 130216,	-- Magni Bronzebeard
+					["sourceQuest"] = 53405,	-- Unlocking the Heart's Potential
+					["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Revered with Champions of Azeroth.",
+					["coord"] = { 42.1, 44.3, SILITHUS },
+					["timeline"] = { "added 8.0.1.27291", "removed 8.2.0" },
+					["lvl"] = 120,
+				}),
 				q(55618, {	-- The Heart Forge
 					["provider"] = { "n", 152194 },	-- MOTHER
 					["coord"] = { 48.1, 72.4, REPAIRED_CHAMBER_OF_HEART },
@@ -598,6 +614,27 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					["g"] = {
 						i(168611),	-- Petrified Ebony Scale
 					},
+				}),
+				q(51211, {	-- The Heart of Azeroth
+					["qg"] = 130216,	-- Magni Bronzebeard
+					["sourceQuests"] = {
+						52946,	-- A Dying World (A)
+						53028,	-- A Dying World (A/H)
+					},
+					["coord"] = { 42.2, 44.2, SILITHUS },
+					["timeline"] = { "added 8.0.1.27144" },
+					["groups"] = {
+						i(158075, {	-- Heart of Azeroth
+							["timeline"] = { "added 8.0.1.27144" },
+						}),
+					},
+				}),
+				q(50973, {	-- The Heart's Power (first HoA upgrade)
+					["qg"] = 130216,	-- Magni Bronzebeard
+					["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
+					["coord"] = { 42.1, 44.3, SILITHUS },
+					["timeline"] = { "added 8.0.1.27291", "removed 8.2.0" },
+					["lvl"] = 120,
 				}),
 				q(55398, {	-- The Long Awake
 					["provider"] = { "n", 151887 },	-- Merithra of the Dream
@@ -653,6 +690,14 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						"removed 8.3",	-- (removed with 8.3)
 						"added 9.2",	-- Reported available again 2022-03-21
 					},
+				}),
+				q(53405, {	-- Unlocking the Heart's Potential (second HoA upgrade)
+					["qg"] = 130216,	-- Magni Bronzebeard
+					["sourceQuest"] = 50973,	-- The Heart's Power
+					["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
+					["coord"] = { 42.1, 44.3, SILITHUS },
+					["timeline"] = { "added 8.0.1.27291", "removed 8.2.0" },
+					["lvl"] = 120,
 				}),
 				q(56263, {	-- Unlocking the Power (A)
 					["provider"] = { "n", 154464 },	-- Earthen Guardian

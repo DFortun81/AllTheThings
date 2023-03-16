@@ -49,6 +49,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
 		["coord"] = { 60.6, 53.8, THALDRASZUS },
 		["modelScale"] = 4,
+		["sourceQuests"] = { 72360 },	-- Reviving the Machine
 		["g"] = {
 			d(LFR_RAID, {
 				["description"] = "",

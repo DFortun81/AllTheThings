@@ -699,6 +699,13 @@ fp(2856),	-- Quest Path 9315: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Up
 fp(2857),	-- Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC
 10.0.7.48076
 fp(2862),	-- Morqut Islet, Forbidden Reach
+10.1.0.48480
+fp(2860),	-- 10.1 UG - Campaign - Ch6 - Aberrus Upper Platform (SMART)
+fp(2863),	-- Loamm, Zaralek Cavern
+fp(2864),	-- Obsidian Rest, Zaralek Cavern
+fp(2865),	-- Dragonscale Camp, Zaralek Cavern
+fp(2866),	-- Cascades Canyon, Ohn'ahran Plains
+fp(2867),	-- The Throughway, Zaralek Cavern
 
 
 
@@ -1403,3 +1410,10 @@ fp(2856),	-- Quest Path 9315: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Up
 fp(2857),	-- Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC
 10.0.7.48076
 fp(2862),	-- Morqut Islet, Forbidden Reach
+10.1.0.48480
+fp(2860),	-- 10.1 UG - Campaign - Ch6 - Aberrus Upper Platform (SMART)
+fp(2863),	-- Loamm, Zaralek Cavern
+fp(2864),	-- Obsidian Rest, Zaralek Cavern
+fp(2865),	-- Dragonscale Camp, Zaralek Cavern
+fp(2866),	-- Cascades Canyon, Ohn'ahran Plains
+fp(2867),	-- The Throughway, Zaralek Cavern

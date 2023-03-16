@@ -2933,12 +2933,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(26416, {	-- Well, Come to the Jungle
-					["qg"] = 43063,	-- Cromula
-					["coord"] = { 49.4, 67.1, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = HORDE_ONLY,
-				}),
 				q(13617, {	-- West to the Strand
 					["qg"] = 33187,	-- Sentinel Shyela
 					["sourceQuest"] = 13594,	-- Don't Forget the Horde

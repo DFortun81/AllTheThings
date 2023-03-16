@@ -849,6 +849,9 @@ root(ROOTS.Zones, {
 						["qg"] = 26377,	-- Squire Percy
 						["coord"] = { 59.0, 26.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(37708),	-- Stick
+						},
 					}),
 					q(12027, {	-- Mr. Floppy's Perilous Adventure
 						["qg"] = 26588,	-- Emily

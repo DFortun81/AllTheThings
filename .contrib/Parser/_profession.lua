@@ -9,15 +9,24 @@ local PYRIUM = 51950;
 local SECRET_OF_DRAENOR_BLACKSMITHING = 118720;
 APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 	r(2018, {	-- Blacksmithing (Apprentice)
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 1,
 	}),
 	r(3100, {	-- Blacksmithing (Journeyman)
 		["timeline"]={ "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 2,
 	}),
 	r(3538, {	-- Blacksmithing (Expert)
 		["timeline"]={ "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 3,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264434, {["timeline"]={"added 8.0.1"}})),	-- Blacksmithing
 	n(ARMOR, {
@@ -97,7 +106,10 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 ARTISAN_BLACKSMITHING = {
 	r(9785, {	-- Blacksmithing (Artisan)
 		["timeline"]={ "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 4,
 	}),
 	n(ARMOR, {
 		r(9968),	-- Heavy Mithril Boots
@@ -127,30 +139,45 @@ ARTISAN_BLACKSMITHING = {
 };
 CLASSIC_WEAPONSMITHING = {
 	r(9787, {	-- Weaponsmith
+		["requireSkill"] = 9787,
 		["timeline"]={ "removed 4.0.3" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
 	}),
 	r(17041, {	-- Master Axesmith
+		["requireSkill"] = 17041,
 		["timeline"]={ "removed 4.0.3" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
 	}),
 	r(17039, {	-- Master Swordsmith
+		["requireSkill"] = 17039,
 		["timeline"]={ "removed 4.0.3" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
 	}),
 	r(17040, {	-- Master Hammersmith
+		["requireSkill"] = 17040,
 		["timeline"]={ "removed 4.0.3" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
 	}),
 	r(10003, {["timeline"]={"removed 4.0.3"}}),	-- The Shatterer
 	r(10007, {["timeline"]={"removed 4.0.3"}}),	-- Phantom Blade
 	r(10011, {["timeline"]={"removed 4.0.3"}}),	-- Blight
-	r(10015, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Champio
+	r(10015, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Champion
 };
 CLASSIC_ARMORSMITHING = {
 	r(9788, {	-- Armorsmith
+		["requireSkill"] = 9788,
 		["timeline"]={ "removed 4.0.3" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
 	}),
 	r(9974, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Breastplate
 	r(9954, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Gauntlets
@@ -165,7 +192,10 @@ ARTISAN_BLACKSMITHING
 TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, {
 	r(29844, {	-- Blacksmithing (Master)
 		["timeline"]={ "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 5,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264436, {["timeline"]={"added 8.0.1"}})),	-- Outland Blacksmithing
 	n(ARMOR, {
@@ -238,7 +268,10 @@ TBC_WEAPONSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] 
 WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 3.0.2" } }, {
 	r(51300, {	-- Blacksmithing (Grand Master)
 		["timeline"]={ "added 3.0.2", "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 6,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264438, {["timeline"]={"added 8.0.1"}})),	-- Northrend Blacksmithing
 	n(ARMOR, {
@@ -360,7 +393,10 @@ WRATH_WEAPONSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timelin
 CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 4.0.3" } }, {
 	r(76666, {	-- Blacksmithing (Illustrious)
 		["timeline"]={ "added 4.0.3", "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 7,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264440, {["timeline"]={"added 8.0.1"}})),	-- Cataclysm Blacksmithing
 	n(ARMOR, {
@@ -513,7 +549,10 @@ COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, bubbl
 MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 5.0.4" } }, {
 	r(110396, {	-- Blacksmithing (Zen Master)
 		["timeline"]={ "added 5.0.4", "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 8,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264442, {["timeline"]={"added 8.0.1"}})),	-- Pandaria Blacksmithing
 	n(ARMOR, {
@@ -596,7 +635,10 @@ DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSel
 	["g"] = {
 		r(158737, {	-- Blacksmithing (Draenor Master)
 			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
+			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
+			-- #endif
+			["rank"] = 9,
 		}),
 		applyclassicphase(BFA_PHASE_ONE, r(264444, {["timeline"]={"added 8.0.1"}})),	-- Draenor Enchanting
 		r(171692),	-- Smoldering Breastplate
@@ -701,15 +743,24 @@ local MAELSTORM_CRYSTAL = 52722
 local SECRET_OF_DRAENOR_ENCHANTING = 119293;
 APPRENTICE_JOURNEYMAN_ENCHANTING = {
 	r(7411, {	-- Enchanting (Apprentice)
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 1,
 	}),
 	r(7412, {	-- Enchanting (Journeyman)
 		["timeline"]={ "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 2,
 	}),
 	r(7413, {	-- Enchanting (Expert)
 		["timeline"]={ "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 3,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264455, {["timeline"]={"added 8.0.1"}})),	-- Enchanting
 	r(13262, {	-- Disenchant
@@ -770,7 +821,10 @@ APPRENTICE_JOURNEYMAN_ENCHANTING = {
 EXPERT_ARTISAN_ENCHANTING = {
 	r(13920, {	-- Enchanting (Artisan)
 		["timeline"]={ "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 4,
 	}),
 	cat(ARMOR_ENCHANTMENTS, {
 		r(13935),	-- Agility[Boot]
@@ -824,7 +878,10 @@ EXPERT_ARTISAN_ENCHANTING
 TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, {
 	r(28029, {	-- Enchanting (Master)
 		["timeline"]={ "added 2.0.1", "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 5,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264460, {["timeline"]={"added 8.0.1"}})),	-- Outland Enchanting
 	cat(ARMOR_ENCHANTMENTS, {
@@ -857,7 +914,10 @@ TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 3.0.2" } }, {
 	r(51313, {	-- Enchanting (Grand Master)
 		["timeline"]={ "added 3.0.2", "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 6,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264462, {["timeline"]={"added 8.0.1"}})),	-- Northrend Enchanting
 	cat(ARMOR_ENCHANTMENTS, {
@@ -913,7 +973,10 @@ WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] 
 CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 4.0.3" } }, {
 	r(74258, {	-- Enchanting (Illustrious)
 		["timeline"]={ "added 4.0.3", "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 7,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264464, {["timeline"]={"added 8.0.1"}})),	-- Cataclysm Enchanting
 	cat(ARMOR_ENCHANTMENTS, {
@@ -1007,7 +1070,10 @@ COMMON_CATACLYSM_ENCHANTING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedDa
 MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 5.0.4" } }, {
 	r(110400, {	-- Enchanting (Zen Master)
 		["timeline"]={ "added 5.0.4", "removed 8.0.1" },
+		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #endif
+		["rank"] = 8,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264467, {["timeline"]={"added 8.0.1"}})),	-- Pandaria Enchanting
 	cat(ARMOR_ENCHANTMENTS, {
@@ -1057,7 +1123,10 @@ DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({
 	["g"] = {
 		r(158716, {	-- Enchanting (Draenor Master)
 			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
+			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
+			-- #endif
+			["rank"] = 9,
 		}),
 		applyclassicphase(BFA_PHASE_ONE, r(264469, {["timeline"]={"added 8.0.1"}})),	-- Draenor Enchanting
 		r(158907),	-- Breath of Critical Strike

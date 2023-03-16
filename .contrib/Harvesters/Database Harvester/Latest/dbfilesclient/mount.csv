@@ -1027,6 +1027,7 @@ Colossal Plaguespew Mawrat,"|cFFFFD200Drop:|r Rhuv, Gorger of Ruin|n","These rod
 Colossal Wraithbound Mawrat,|cFFFFD200Drop:|r Mawsworn Supply Chest|n,"Infused by the energies of tormented souls, these creatures have adopted ghostlike abilities that make them quite elusive.",1585,230,0,5,368128,0,0,4,0,0
 Armored Golden Pterrordax,|cFFFFD200Trading Post|r,Many an unwary direhorn has met its end in a flash of glittering gold before becoming this pterrordax's next meal.,1586,248,192,2,368126,0,0,4,0,0
 Zereth Overseer,|cFFFFD200Drop: |rThe Jailer|n|cFFFFD200Zone: |rSepulcher of the First Ones|n|cFFFFD200Difficulty: |rMythic,"Enigmatic and aloof, this construct of the First Ones flies on a graceful stream of perfect geometric understanding.",1587,248,0,0,368158,0,0,4,0,0
+Winding Slitherdrake,,[PH],1588,402,512,-1,368893,0,0,4,0,0
 Renewed Proto-Drake,|cFFFFD200Achievement:|r Dragon Isles: A New Friend,"As the isles awaken, these proto-drakes answer the call to soar the skies alongside mortals.",1589,402,512,5,368896,0,0,4,0,0
 Windborne Velocidrake,|cFFFFD200Achievement:|r Dragon Isles: Windborne Velocidrake,The long talons of the velocidrake give it an edge on the plains.,1590,402,512,5,368899,0,0,4,0,0
 Cliffside Wylderdrake,|cFFFFD200Achievement:|r Dragon Isles: Cliffside Wylderdrake,"Often roosting along the steep cliff faces of Thaldraszus, they're swift to the skies in times of danger.",1591,402,512,5,368901,0,0,4,0,0
@@ -1074,3 +1075,7 @@ Obsidian Vorquin,|cFFFFD200Vendor: |rTreysh|n|cFFFFD200Zone: |rThe Forbidden Rea
 Vicious Sabertooth,|cFFFFD200PvP:|r Dragonflight: Season 1|nRated Arena and Rated Battleground Season Reward,"The elite Alliance forces that use these sabertooth mounts use a battle cry that translates from Darnassian as ""here kitty kitty"".",1688,230,4,0,394737,0,0,4,0,0
 Vicious Sabertooth,|cFFFFD200PvP:|r Dragonflight: Season 1|nRated Arena and Rated Battleground Season Reward,"The elite Horde forces that use these sabertooth mounts use a battle cry that translates from Thalassian as ""pspspspsps"".",1689,230,4,0,394738,0,0,4,0,0
 Whelpling,,,1690,411,4160,-1,395095,0,0,4,0,0
+Rocket Shredder 9001,|cFFFFD200Recruit-a-Friend|r |n,"The salesgoblin always tells people about the RS-9001's huge variety of attachments, but somehow neglects to mention that you never get to pick the attachments it'll have when you mount up.",1698,248,192,9,400733,0,0,4,0,0
+Inferno Armoredon,|cFFFFD200Achievement: |rDragonflight Keystone Master: Season Two|n|cFFFFD200Category: |rDungeons,PH,1725,230,0,5,406637,0,0,4,0,0
+Big Slick in the City,|cFFFFD200Quest:|r Snailed It|n|cFFFFD200Zone: |rZaralek Cavern,"Big heart, big dreams, Big Slick.",1729,230,0,1,408313,0,0,4,0,0
+Api Biru Sporebat,|cFFFFD200Vendor: |rSacratros|n|cFFFFD200Zone: |rZaralek Cavern|n|cFFFFD200Cost: |r500|Hitem:204727|h|TInterface\ICONS\INV_Misc_CuriousCoin.BLP:0|t|h,"Born from the sulfur pits, its electric-blue flame has the illusory appearance of lava.",1732,248,0,2,408647,0,0,4,0,0

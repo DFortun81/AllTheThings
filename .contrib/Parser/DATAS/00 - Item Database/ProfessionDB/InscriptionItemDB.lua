@@ -1533,3 +1533,12 @@ i(203379, 400027);	-- Crimson Combatant's Insignia of Alacrity
 i(203378, 400026);	-- Crimson Combatant's Medallion
 i(202236, 397866);	-- Impressive Weapon Crystal
 i(202237, 397867);	-- Remarkable Weapon Crystal
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(203425, 400811);	-- Arcane Dispelling Rune
+-- UNSORTED --
+i(203841, 402142);	-- Gurubashi Ceremonial Staff
+i(203839, 402140);	-- Gurubashi Hoodoo Stick
+i(203840, 402141);	-- Judgment of the Gurubashi

@@ -1109,7 +1109,6 @@ app.L = {
 	-- Events
 		[-176] = 3753381,																	-- Weekly Holidays
 	-- New Characters
-		[-210] = 1530081,																	-- Allied New Characters
 		[-211] = 1530081,																	-- New Characters
 	-- Treasure Chest
 		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
@@ -1140,7 +1139,8 @@ app.L = {
 	-- War Campaign
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
 	-- Allied Races
-		[-254] = "Interface\\Icons\\FactionChange",											-- Allied Races & Heritage
+		[-254] = "Interface\\Icons\\FactionChange",											-- Allied Races
+		[-255] = "Interface\\Icons\\vas_guildfactionchange",								-- Heritage
 	-- Mailbox
 		[-297] = "Interface\\Icons\\inv_letter_17",											-- Mailbox
 	-- Garrison Missons
@@ -1401,7 +1401,7 @@ app.L = {
 		[-1102] = "Interface\\Icons\\ability_evoker_dragonrage2",									-- Wrathion & Sabellian
 		[-1110] = "Interface\\Icons\\ui_majorfaction_expedition",									-- Dragonscale Expedition
 		[-1111] = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",							-- Climbing
-		[-1112] = "Interface\\Icons\\inv_misc_-selfiecamera_01",									-- Cataloging
+		[-1112] = 1109168,																			-- Cataloging
 		[-1113] = "Interface\\Icons\\inv_misc_ancient_mana",										-- Ancient Waygates
 		[-1120] = "Interface\\Icons\\ui_majorfaction_centaur",										-- Maruuk Centaur
 		[-1121] = "Interface\\Icons\\ability_racial_returntocamp",									-- Clan Aylaag
@@ -1418,6 +1418,7 @@ app.L = {
 		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Dragonriding Racing
 		[-1143] = 237274,																			-- Every 30 min Rare
 		[-1144] = "Interface\\Icons\\inv_scroll_11",												-- Weekly Profession Header
+		[-1200] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_ring_4_omni",					-- Zskera Vaults
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1438,7 +1439,7 @@ app.L = {
 	-- Tournament
 		[-4191] = "Interface\\Icons\\Achievement_PVP_Legion08",								-- Tournament
 	-- Class Trial
-		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Class Trial Item Sets
+		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Class Trial
 	-- WoW Anniversary
 		[-5353] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 4th Anniversary
 		[-5354] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 5th Anniversary
@@ -1640,7 +1641,6 @@ app.L = {
 	-- Events
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
 	-- Item Sets
-		[-210] = ALLIED.." "..NEW.." "..CHARACTER,								-- Allied New Character
 		[-211] = NEW.." "..CHARACTER,											-- New Character
 	-- Treasure Chest
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
@@ -1671,7 +1671,8 @@ app.L = {
 	-- War Campaign
 		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
 	-- Allied Races
-		[-254] = "Allied Races & Heritage",										-- Allied Races & Heritage
+		[-254] = "Allied Races",												-- Allied Races
+		[-255] = "Hertiage",													-- Heritage
 	-- Mailbox
 		[-297] = MINIMAP_TRACKING_MAILBOX,										-- Mailbox
 	-- Garrison Missions
@@ -1966,6 +1967,7 @@ app.L = {
 		[-1142] = GetSpellInfo(400433),												-- Dragonriding Racing
 		[-1143] = "DF Rare Rotation",												-- DF Rare Rotation (Every 30 min Rare)
 		[-1144] = "Weekly Profession Knowledge",									-- Weekly Profession Header
+		[-1200] = "Zskera Vaults",													-- Zskera Vaults
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",
@@ -1994,7 +1996,7 @@ app.L = {
 		[-5204] = "Challenge Appearance",										-- Challenge Appearance
 		[-5205] = "Hidden Appearance",											-- Hidden Appearance
 		-- Class Sets
-		[-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",		-- Class Trial Item Sets
+		[-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,					-- Class Trial
 		-- Note!! We are localizing them here so when we filter the achievement we don't filter the entire section which is bad!
 		[-5353] = select(2,GetAchievementInfo(2398)),							-- 4th Anniversary
 		[-5354] = select(2,GetAchievementInfo(4400)),							-- 5th Anniversary
