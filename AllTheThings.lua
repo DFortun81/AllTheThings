@@ -11981,7 +11981,7 @@ end)();
 (function()
 local C_Heirloom_GetHeirloomInfo = C_Heirloom.GetHeirloomInfo;
 local C_Heirloom_GetHeirloomLink = C_Heirloom.GetHeirloomLink;
---local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
+local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
 local C_Heirloom_GetHeirloomMaxUpgradeLevel = C_Heirloom.GetHeirloomMaxUpgradeLevel;
 local heirloomIDs = {};
 local fields = {
@@ -12001,8 +12001,7 @@ local fields = {
 		return app.CollectibleHeirlooms;
 	end,
 	["saved"] = function(t)
-		--return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
-		return 1
+		return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
 	end,
 	["trackable"] = app.ReturnTrue,
 };
@@ -12014,7 +12013,8 @@ local armorTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor02",
 	"Interface/ICONS/Inv_leather_draenordungeon_c_01shoulder",
 	"Interface/ICONS/inv_mail_draenorquest90_b_01shoulder",
-	"Interface/ICONS/inv_leather_warfrontsalliance_c_01_shoulder"
+	"Interface/ICONS/inv_leather_warfrontsalliance_c_01_shoulder",
+	"Interface/ICONS/inv_shoulder_armor_dragonspawn_c_02",
 };
 local weaponTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon01",
@@ -12022,6 +12022,7 @@ local weaponTextures = {
 	"Interface/ICONS/inv_weapon_shortblade_112",
 	"Interface/ICONS/inv_weapon_shortblade_111",
 	"Interface/ICONS/inv_weapon_shortblade_102",
+	"Interface/ICONS/inv_weapon_shortblade_84",
 };
 local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
 local fields = {
@@ -12095,7 +12096,7 @@ fields.collected = function(t)
 			end
 		end
 		if t.s and ATTAccountWideData.Sources[t.s] then return 1; end
-		-- if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
+		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
 		if t.itemID then return 1; end
 	end
 fields.saved = function(t)
@@ -12136,6 +12137,7 @@ app.CacheHeirlooms = function()
 
 	-- setup the armor tokens which will contain the upgrades for the heirlooms
 	local armorTokens = {
+		app.CreateItem(204336),	-- Awakened Heirloom Armor Casing
 		app.CreateItem(187997),	-- Eternal Heirloom Armor Casing
 		app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
 		app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
@@ -12143,6 +12145,7 @@ app.CacheHeirlooms = function()
 		app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
 	};
 	local weaponTokens = {
+		app.CreateItem(204337),	-- Awakened Heirloom Scabbard
 		app.CreateItem(187998),	-- Eternal Heirloom Scabbard
 		app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
 		app.CreateItem(151615),	-- Weathered Heirloom Scabbard
@@ -12163,7 +12166,6 @@ app.CacheHeirlooms = function()
 	for _,itemID in ipairs(heirloomIDs) do
 		if not uniques[itemID] then
 			uniques[itemID] = true;
-			--[[
 			heirloom = app.SearchForObject("itemID", itemID, "field");
 			if heirloom then
 				upgrades = C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
@@ -12187,7 +12189,6 @@ app.CacheHeirlooms = function()
 					end
 				end
 			end
-			--]]
 		end
 	end
 
