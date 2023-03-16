@@ -562,11 +562,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		prof(JEWELCRAFTING, {
 			tier(TBC_TIER, {
-				-- 2.0.1
-				tier(TBC_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 2.0.1"} }, {
-					i(24195),	-- Design: Brilliant Living Ruby
-				})),
-
 				-- 2.1.0
 				tier(TBC_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 2.1.0"} }, {
 					i(32412),	-- Design: Relentless Earthstorm Diamond
