@@ -2297,6 +2297,31 @@ profession(LEATHERWORKING, {
 					["recipeID"] = 62448,
 				},
 				{
+					["name"] = "Fur Lining - Attack Power",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 57683
+				},
+				{
+					["name"] = "Fur Lining - Frost Resist",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 57694
+				},
+				{
+					["name"] = "Fur Lining - Spell Power / Fur Lining - Intellect [MOP+]",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 57691
+				},
+				{
+					["name"] = "Fur Lining - Shadow Resist",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 57696
+				},
+				{
+					["name"] = "Fur Lining - Stamina",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 57690
+				},
+				{
 					["name"] = "Frosthide Leg Armor",
 					["recipeID"] = 50965,
 				},
@@ -2313,8 +2338,18 @@ profession(LEATHERWORKING, {
 					["recipeID"] = 50964,
 				},
 				{
+					["name"] = "Jormungar Leg Reinforcements",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 60583
+				},
+				{
 					["name"] = "Nerubian Leg Armor",
 					["recipeID"] = 50966,
+				},
+				{
+					["name"] = "Nerubian Leg Reinforcements",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 60584
 				},
 			},
 		},
