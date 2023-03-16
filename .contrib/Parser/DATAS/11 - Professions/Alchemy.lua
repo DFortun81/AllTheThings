@@ -1263,7 +1263,12 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				{
 					["name"] = "Lesser Flask of Toughness",
 					["recipeID"] = 53899
-				}
+				},
+				{
+					["name"] = "Lesser Flask of Resistance",
+					["timeline"] = { "removed 5.0.4" },
+					["recipeID"] = 62213
+				},
 			}
 		},
 		{
