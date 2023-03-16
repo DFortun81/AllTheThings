@@ -189,6 +189,104 @@ TAZAVESH_AGGRAMARS_VAULT = 1997;
 -- World Map
 COSMIC = 947;
 
+-- #if ANYCLASSIC
+-- NOTE: Classic WoW got all new mapIDs for the old world and Outland for some reason...
+-- This is pointed to as potential "OH HEY, WOAH THEY ARE ADDING THE OLD WORLD TO RETAIL!" proof.
+-- If they do, that'll explain this dumb change. If they don't, it's just a pointless difference and I'm sad.
+-- Kalimdor
+KALIMDOR = 1414;
+AHNQIRAJ_THE_FALLEN_KINGDOM = 327;
+ASHENVALE = 1440;
+AZSHARA = 1447;
+CAMP_NARACHE = 462;
+CAVERNS_OF_TIME = 75;
+DARKSHORE = 1439;
+DARNASSUS = 1457;
+DESOLACE = 1443;
+DUROTAR = 1411;
+DUSTWALLOW_MARSH = 1445;
+FELWOOD = 1448;
+FERALAS = 1444;
+MOONGLADE = 1450;
+MULGORE = 1412;
+NORTHERN_BARRENS = 1413;
+ORGRIMMAR = 1454;
+SHADOWGLEN = 460;
+SILITHUS = 1451;
+SOUTHERN_BARRENS = 199;
+STONETALON_MOUNTAINS = 1442;
+TANARIS = 1446;
+TELDRASSIL = 1438;
+TELDRASSIL_BANETHIL_BARROW_DEN = 1438;
+THE_BARRENS = 1413;
+THOUSAND_NEEDLES = 1441;
+THUNDER_BLUFF = 1456;
+ULDUM = 249;
+UNGORO_CRATER = 1449;
+WINTERSPRING = 1452;
+
+-- Eastern Kingdoms
+EASTERN_KINGDOMS = 1415;
+ALTERAC_MOUNTAINS = 1416;
+ARATHI_HIGHLANDS = 1417;
+BADLANDS = 1418;
+BLACKROCK_MOUNTAIN = 33;
+BLACKROCK_MOUNTAIN_LEVEL2 = 34;
+BLACKROCK_MOUNTAIN_LEVEL3 = 35;
+BLASTED_LANDS = 1419;
+BURNING_STEPPES = 1428;
+COLDRIDGE_VALLEY = 427;
+DEADWIND_PASS = 1430;
+DEATHKNELL = 465;
+DEEPRUN_TRAM = 499;
+DUN_MOROGH = 1426;
+DUSKWOOD = 1431;
+EASTERN_PLAGUELANDS = 1423;
+ELWYNN_FOREST = 1429;
+HILLSBRAD_FOOTHILLS = 1424;
+IRONFORGE = 1455;
+LIGHTS_HOPE_CHAPEL = 24;
+LOCH_MODAN = 1432;
+NEW_TINKERTOWN = 469;
+NEW_TINKERTOWN_LOWER = 30;
+NORTHERN_STRANGLETHORN = 1434;
+NORTHSHIRE_VALLEY = 425;
+REDRIDGE_MOUNTAINS = 1433;
+RUINS_OF_GILNEAS = 217;
+SEARING_GORGE = 1427;
+SILVERPINE_FOREST = 1421;
+STORMWIND_CITY = 1453;
+STRANGLETHORN_VALE = 1434;
+SWAMP_OF_SORROWS = 1435;
+SUNSTRIDER_ISLE = 467;
+THE_CAPE_OF_STRANGLETHORN = 210;
+THE_HINTERLANDS = 1425;
+TIRISFAL_GLADES = 1420;
+TWILIGHT_HIGHLANDS = 241;
+UNDERCITY = 1458;
+WESTERN_PLAGUELANDS = 1422;
+WESTFALL = 1436;
+WETLANDS = 1437;
+
+-- Outland & TBC Additions
+OUTLAND = 1945;
+EVERSONG_WOODS = 1941;
+GHOSTLANDS = 1942;
+ISLE_OF_QUELDANAS = 1957;
+SILVERMOON_CITY = 1954;
+AZUREMYST_ISLE = 1943;
+BLOODMYST_ISLE = 1950;
+AMMEN_VALE = 468;
+THE_EXODAR = 1947;
+HELLFIRE_PENINSULA = 1944;
+ZANGARMARSH = 1946;
+NAGRAND = 1951;
+NETHERSTORM = 1953;
+TEROKKAR_FOREST = 1952;
+SHATTRATH_CITY = 1955;
+BLADES_EDGE_MOUNTAINS = 1949;
+SHADOWMOON_VALLEY = 1948;
+-- #else
 -- Kalimdor
 KALIMDOR = 12;
 AHNQIRAJ_THE_FALLEN_KINGDOM = 327;
@@ -282,6 +380,7 @@ TEROKKAR_FOREST = 108;
 SHATTRATH_CITY = 111;
 BLADES_EDGE_MOUNTAINS = 105;
 SHADOWMOON_VALLEY = 104;
+-- #endif
 
 -- Cataclysm
 MOUNT_HYJAL = 198;
@@ -880,11 +979,19 @@ PET_BATTLE = -796;
 PET_JOURNAL = -797;
 
 -- Battlegrounds
+-- #if ANYCLASSIC
+ALTERAC_VALLEY = 1459;
+ARATHI_BASIN = 1461;
+EYE_OF_THE_STORM = 1956;
+WARSONG_GULCH = 1460;
+WINTERGRASP_BG = 2104;
+-- #else
 ALTERAC_VALLEY = 91;
 ARATHI_BASIN = 93;
 EYE_OF_THE_STORM = 112;
 WARSONG_GULCH = 92;
 WINTERGRASP_BG = 1334;
+-- #endif
 
 -- PvP Headers
 PVP = -9;
@@ -1147,6 +1254,26 @@ LEGION_TIER = 7;
 BFA_TIER = 8;
 SL_TIER = 9;
 DF_TIER = 10;
+
+-- #if AFTER DF
+CURRENT_TIER = DF_TIER;
+-- #elseif AFTER SHADOWLANDS
+CURRENT_TIER = SL_TIER;
+-- #elseif AFTER BFA
+CURRENT_TIER = BFA_TIER;
+-- #elseif AFTER LEGION
+CURRENT_TIER = LEGION_TIER;
+-- #elseif AFTER WOD
+CURRENT_TIER = WOD_TIER;
+-- #elseif AFTER CATA
+CURRENT_TIER = CATA_TIER;
+-- #elseif AFTER WRATH
+CURRENT_TIER = WRATH_TIER;
+-- #elseif AFTER TBC
+CURRENT_TIER = TBC_TIER;
+-- #else
+CURRENT_TIER = CLASSIC_TIER;
+-- #endif
 
 -- Difficulties
 NORMAL_DUNGEON = 1;
@@ -1982,22 +2109,23 @@ writ = function(item)									-- Assign a Champion's Writ cost to an item with p
 end
 
 -- SHORTCUTS for Object Class Types
-artifact = function(id, t)								-- Create an ARTIFACT Object
-	return struct("artifactID", id, t);
-end
 ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	if t or type(altID) == "number" then
 		t = struct("allianceAchievementID", id, t or {});
 		t["hordeAchievementID"] = altID;
-		return t;
 	else
-		return struct("achievementID", id, altID);
+		t = struct("achievementID", id, altID);
 	end
+	if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end
+	return t;
 end
 achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
 	return struct("achievementCategoryID", id, t);
 end
 achievementCategory = achcat;
+artifact = function(id, t)								-- Create an ARTIFACT Object
+	return struct("artifactID", id, t);
+end
 az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object.
 	if t or type(rank) == "number" then
 		t = struct("azeriteEssenceID", id, t or {});
@@ -2019,7 +2147,9 @@ azewrongItem = function(id, t)							-- Create an Item which is marked as having
 	return t;
 end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
-	return struct("speciesID", id, t);
+	t = struct("speciesID", id, t);
+	if not t.itemID then t.u = MOP_PHASE_ONE; end
+	return t;
 end
 classicAch = function(id, altID, t)						-- Create an ACHIEVEMENT Object that doesn't have a timeline built into it.
 	if t or type(altID) == "number" then
@@ -2047,7 +2177,7 @@ end
 category = function(id, t)								-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
-cl = function(id, specc, t)									-- Create a CHARACTER CLASS Object
+cl = function(id, specc, t)								-- Create a CHARACTER CLASS Object
 	-- specc is optional
 	if not t then
 		t = specc;
@@ -2072,6 +2202,26 @@ creature = function(id, t)								-- Create a CREATURE Object
 	return struct("creatureID", id, t);
 end
 cr = creature;											-- Create a CREATURE Object (alternative shortcut)
+crit = function(criteriaUID, t)           				-- Create an Achievement Criteria Object (localized automatically)
+	if not t then t = {};
+	elseif not t.groups then
+		if not isarray(t) then
+			-- DO NOT do that lol
+			if t.achievementID then
+				-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
+				-- error(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
+			end
+			if t.questID then
+				error(table.concat({"Do not use QuestID:",t.questID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests' to indicate a Criteria granted from completion of a single Quest."}))
+			end
+		else
+			t = { ["groups"] = t };
+		end
+	end
+	t.criteriaID = criteriaUID;
+	if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end
+	return t;
+end
 currency = function(id, t)								-- Create a CURRENCY Object
 	return struct("currencyID", id, t);
 end
@@ -2084,7 +2234,42 @@ d = function(id, t)										-- Create a DIFFICULTY Object
 	return t;
 end
 e = function(id, t)										-- Create an ENCOUNTER Object
+	-- #if AFTER WRATH
 	return struct("encounterID", id, t);
+	-- #else
+	-- Not yet supported in classic.
+	if t then
+		if t.groups or t.g then
+			-- #if AFTER WRATH
+			t.encounterID = id;
+			-- #endif
+			-- Convert to a Header or NPC ID.
+			if t.npcID then
+				return t;
+			elseif t.creatureID then
+				t.npcID = t.creatureID;
+				t.creatureID = nil;
+				return t;
+			elseif t.cr then
+				t.npcID = t.cr;
+				t.cr = nil;
+				return t;
+			elseif t.crs then
+				t.npcID = t.crs[1];
+				table.remove(t.crs, 1);
+				if #t.crs < 1 then
+					t.crs = nil;
+				end
+				return t;
+			else
+				t.npcID = -1;
+				return t;
+			end
+		else
+			return { ["npcID"] = -1, ["groups"] = t };
+		end
+	end
+	-- #endif
 end
 exploration = function(id, t)							-- Create an EXPLORATION Object
 	if type(t) == "string" then t = { ["maphash"] = t }; end
@@ -2168,7 +2353,34 @@ ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
 	return t;
 end
 inst = function(id, t)									-- Create an INSTANCE Object
-	return struct("instanceID", id, t);
+	if t then
+		t = struct("instanceID", id, t);
+		-- #if BEFORE WRATH
+		-- Not yet supported in classic.
+		if t.groups or t.g then
+			-- Convert to a MAP ID.
+			if t.mapID then
+				return t;
+			else
+				if t.maps then
+					t.mapID = t.maps[1];
+					table.remove(t.maps, 1);
+					if #t.maps < 1 then
+						t.maps = nil;
+					end
+				else
+					error("Instance Missing a MapID.");
+				end
+				return t;
+			end
+		else
+			return { ["npcID"] = -1, ["groups"] = t };
+		end
+		-- #endif
+		return t;
+	else
+		return struct("instanceID", id, t);
+	end
 end
 inst_tw = function(id, t)								-- Create a TIMEWALKING INSTANCE Object
 	t = inst(id, t);
@@ -2250,22 +2462,22 @@ o_repeated = function(t)								-- Create a group which represents the shared co
 	print("Could not find a group with an objectID value");
 end
 petbattle = function(t)									-- Flag all nested content as requiring Pet Battle gameplay
-	return bubbleDown({["pb"] = true,}, t);
+	-- #if ANYCLASSIC
+	return t;
+	-- #else
+	return bubbleDown({ ["pb"] = true }, t);
+	-- #endif
 end
 prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
 	local p = prof(skillID, t);
-	-- TODO: the bubbleDown remains necessary until another solution (similar to ItemRecipes.lua ??) is designed
-	-- to apply the proper requireSkill value where necessary on Sourced data. Removing the bubbleDown will cause Sourced profession content to no longer
-	-- be associated to the required Profession!
 	root(ROOTS.Professions, bubbleDown({ ["requireSkill"] = skillID }, p));
-	-- print("Don't use profession(). It's pointless now that it no longer applies the 'requireSkill' to its content. It will be removed soon.")
 	return p;
 end
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
-	return bubbleDown({["pvp"] = true,}, t);
+	return bubbleDown({ ["pvp"] = true }, t);
 end
 pvprank = function(id, t)								-- Create a PVP Rank Object.
 	return struct("pvpRankID", id, t);
@@ -2432,39 +2644,11 @@ h = function(t) -- Flag as Horde Only
 	end
 	return t;
 end
-un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
-
--- BEGIN UNFINISHED SECTION:
-crit = function(criteriaID, t)           -- Create an Achievement Criteria Object (localized automatically)
-	if not t then t = {};
-	elseif not t.groups then
-		if not isarray(t) then
-			-- DO NOT do that lol
-			if t.achievementID then
-				-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
-				-- error(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
-			end
-			if t.questID then
-				error(table.concat({"Do not use QuestID:",t.questID," inside Achievement Criteria:",criteriaID," ==> Use '_quests' to indicate a Criteria granted from completion of a single Quest."}))
-			end
-		else
-			t = { ["groups"] = t };
-		end
-	end
-	t.criteriaID = criteriaID;
-	return t;
-end
--- Special function to create a Criteria for an Achievement which is associated with an Item
-itemcrit = function(itemID, achID, critID, t)
-	local crit = crit(critID, t);
-	crit.achievementID = achID;
-	crit.itemID = itemID;
-	return crit;
-end
 model = function(displayID, t)
 	t.displayID = displayID;
 	return t;
 end
+un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
 -- Used by the Harvester (Parser)
 function Harvest(things)
