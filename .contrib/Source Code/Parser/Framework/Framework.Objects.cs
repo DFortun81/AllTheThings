@@ -1185,7 +1185,6 @@ namespace ATT
             public static void Export(string directory)
             {
                 var AllContainerClones = new SortedDictionary<string, List<object>>(AllContainers);
-                AllContainerClones.Remove("Uncollectable");
 
                 var filename = Path.Combine(directory, "Categories.lua");
                 var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString().Replace("\r\n", "\n").Trim();
