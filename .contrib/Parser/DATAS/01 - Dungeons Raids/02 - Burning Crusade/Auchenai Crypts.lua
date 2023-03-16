@@ -9,7 +9,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			AUCHINDOUN_AUCHENAI_CRYPTS,	-- Halls of Hereafter
 			257,	-- Bridge of Souls
 		},
-		["lvl"] = lvlsquish(62, 10, 62),
+		["lvl"] = lvlsquish(62, 62, 15),
 		["groups"] = {
 			n(QUESTS, {
 				q(10167, {	-- Auchindoun...
@@ -17,7 +17,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10102,	-- A Secret Revealed
 					["coord"] = { 53.9, 44.8, SHATTRATH_CITY },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(66, 15, 66),
+					["lvl"] = lvlsquish(66, 66, 15),
 					["groups"] = {
 						objective(1, {	-- Exarch Maladaar slain
 							["provider"] = { "n", 18373 },	-- Exarch Maladaar
@@ -29,7 +29,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10253,	-- Levixus the Soul Caller
 					["coord"] = { 35.1, 65.2, TEROKKAR_FOREST },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(64, 15, 64),
+					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
 						objective(1, {	-- Exarch Maladaar slain
 							["provider"] = { "n", 18373 },	-- Exarch Maladaar
@@ -46,12 +46,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 35.0, 65.2, TEROKKAR_FOREST },
 					["timeline"] = { "added 4.3.0.14732" },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(64, 15, 64),
+					["lvl"] = lvlsquish(64, 64, 15),
 				}),
 				q(29591, {	-- Raging Spirits
 					["qg"] = 54698,	-- Tormented Soulpriest
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(63, 15, 63),
+					["lvl"] = lvlsquish(63, 63, 15),
 					["groups"] = {
 						objective(1, {	-- 0/5 Angered Skeleton slain
 							["provider"] = { "n", 18524 },	-- Angered Skeleton
@@ -67,7 +67,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29590, {	-- The Dead Watcher
 					["qg"] = 54725,	-- Draenei Spirit
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(63, 15, 63),
+					["lvl"] = lvlsquish(63, 63, 15),
 					["groups"] = {
 						objective(1, {	-- Shirrak the Dead Watcher slain
 							["provider"] = { "n", 18371 },	-- Shirrak the Dead Watcher
@@ -78,7 +78,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54725,	-- Draenei Spirit
 					["sourceQuest"] = 29595,	-- Everything Will Be Alright
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(63, 15, 63),
+					["lvl"] = lvlsquish(63, 63, 15),
 					["groups"] = {
 						objective(1, {	-- Exarch Maladaar slain
 							["provider"] = { "n", 18373 },	-- Exarch Maladaar
@@ -95,7 +95,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 73.8, 57.0, 257 },
 					["maps"] = { NAGRAND },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(66, 15, 66),
+					["lvl"] = lvlsquish(66, 66, 15),
 					["groups"] = {
 						objective(1, {	-- Darkened Spirit slain
 							["provider"] = { "i", 28283 },	-- Soul Mirror
@@ -196,7 +196,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30633, 1 },	-- Auchenai Key
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

@@ -346,7 +346,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 57.8, 90.6, UNDERCITY },
 					["timeline"] = { "added 3.3.0.10772", "removed 4.0.3" },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(1472, {	-- Devourer of Souls [Undercity]
 					["qg"] = 5675,	-- Carendin Halgar

@@ -12,13 +12,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #else
 		["coord"] = { 39.0, 19.0, TANARIS },
 		-- #endif
-		["lvl"] = lvlsquish(39, 15, 39),
+		["lvl"] = lvlsquish(39, 39, 15),
 		["groups"] = {
 			n(QUESTS, {
 				q(27070, {	-- A Fool's Errand
 					["qg"] = 7407,	-- Chief Engineer Bildewhizzle
 					["timeline"] = { "added 4.0.3.13277" },
-					["lvl"] = lvlsquish(44, 15, 44),
+					["lvl"] = lvlsquish(44, 44, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Tiara of the Deep
 							["provider"] = { "i", 9234 },	-- Tiara of the Deep
@@ -38,7 +38,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(27076, {	-- Breaking and Entering
 					["qg"] = 44929,	-- Tran'rek
 					["timeline"] = { "added 4.0.3.13277" },
-					["lvl"] = lvlsquish(44, 15, 44),
+					["lvl"] = lvlsquish(44, 44, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Nekrum Gutchewer slain
 							["provider"] = { "n", 7796 },	-- Nekrum Gutchewer
@@ -52,7 +52,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 40712,	-- Mazoga's Spirit
 					["sourceQuest"] = 25556,	-- Into Zul'Farrak
 					["timeline"] = { "added 4.0.3.13277" },
-					["lvl"] = lvlsquish(44, 15, 44),
+					["lvl"] = lvlsquish(44, 44, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Chief Ukorz Sandscalp slain
 							["provider"] = { "n", 7267 },	-- Chief Ukorz Sandscalp
@@ -223,7 +223,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(27071, {	-- Wrath of the Sandfury
 					["qg"] = 40712,	-- Mazoga's Spirit
 					["timeline"] = { "added 4.0.3.13277" },
-					["lvl"] = lvlsquish(44, 15, 44),
+					["lvl"] = lvlsquish(44, 44, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Theka the Martyr slain
 							["provider"] = { "n", 7272 },	-- Theka the Martyr

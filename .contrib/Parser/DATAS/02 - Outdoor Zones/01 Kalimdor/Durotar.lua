@@ -1673,7 +1673,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 7.0.1.20796" },
 					["races"] = { BLOODELF },
 					["classes"] = { DEMONHUNTER },
-					["lvl"] = lvlsquish(98, 10, 98),
+					["lvl"] = lvlsquish(98, 98, 10),
 				}),
 				q(25263, {	-- Arnak Fireblade
 					["providers"] = {
@@ -1685,7 +1685,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(4, 1, 4),
+					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(809, {	-- Ak'Zeloth
 					["qg"] = 3216,	-- Neeru Fireblade
@@ -1706,7 +1706,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(8, 5, 8),
+					["lvl"] = lvlsquish(8, 8, 5),
 				}),
 				q(815, {	-- Break a Few Eggs
 					["qg"] = 3191,	-- Cook Torka
@@ -1849,7 +1849,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.8, 43.5, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(10, 5, 10),
+					["lvl"] = lvlsquish(10, 10, 5),
 				}),
 				q(842, {	-- Crossroads Conscription
 					["providers"] = {
@@ -1887,7 +1887,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 7.0.3.21655" },
 					["races"] = HORDE_ONLY,
 					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-					["lvl"] = lvlsquish(98, 10, 98),
+					["lvl"] = lvlsquish(98, 98, 10),
 					["groups"] = {
 						i(129104, {	-- Brand of the Banshee Queen
 							["timeline"] = { "added 7.0.3.21655" },
@@ -1907,7 +1907,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 7.0.3.20796" },
 					["races"] = { BLOODELF },
 					["classes"] = { DEMONHUNTER },
-					["lvl"] = lvlsquish(98, 10, 98),
+					["lvl"] = lvlsquish(98, 98, 10),
 					["groups"] = {
 						i(129104, {	-- Brand of the Banshee Queen
 							["timeline"] = { "added 7.0.3.20796" },
@@ -1931,7 +1931,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.6, 15.8, DUROTAR },
 					["timeline"] = { "added 7.0.3.21655" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(98, 10, 98),
+					["lvl"] = lvlsquish(98, 98, 10),
 				}),
 				q(837, {	-- Encroachment
 					["qg"] = 3139,	-- Gar'Thok
@@ -1967,7 +1967,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 57.2, 10.5, DUROTAR },
 					["timeline"] = { "added 7.0.3.21655" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(98, 10, 98),
+					["lvl"] = lvlsquish(98, 98, 10),
 				}),
 				q(813, {	-- Finding the Antidote
 					["qg"] = 3189,	-- Kor'ghan
@@ -2196,7 +2196,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 61.2, 44.6, DUROTAR },
 					["timeline"] = { "added 5.0.1.15589" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(80, 10, 80),
+					["lvl"] = lvlsquish(80, 80, 10),
 				}),
 				q(7664, {	-- Ivory Raptor Replacement
 					["qg"] = 7952,	-- Zjolnir
@@ -2258,7 +2258,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						"spellID", 90265,	-- Master Riding
 					},
 					["races"] = { TROLL },
-					["lvl"] = lvlsquish(20, 10, 20),
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14088, {	-- Learn to Ride in Durotar
 					["provider"] = { "i", 46883 },	-- Riding Training Pamphlet
@@ -2349,7 +2349,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 61.3, 8.8, DUROTAR },
 					["timeline"] = { "added 7.0.1.20796" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(98, 10, 98),
+					["lvl"] = lvlsquish(98, 98, 10),
 				}),
 				q(25261, {	-- Margoz
 					["qg"] = 39379,	-- Gor the Enforcer
@@ -2903,7 +2903,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				--	["altQuest"] = 44543,	-- Scenario Skip (H)
 					["description"] = "Legion expansion introduction quest.|r",
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(98, 10, 98),
+					["lvl"] = lvlsquish(98, 98, 10),
 					["groups"] = {
 						i(136582),	-- Bonegrinder of the Horde Vanguard
 						i(136583),	-- Longbow of the Horde Vanguard
@@ -3024,7 +3024,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.9, 14.7, DUROTAR },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(8, 1, 8),
+					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(1859, {	-- Therzok
 					["qg"] = 3170,	-- Kaplak
@@ -3083,7 +3083,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 43926,	-- The Legion Returns
 					["coord"] = { 46.0, 13.7, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(98, 10, 98),
+					["lvl"] = lvlsquish(98, 98, 10),
 					["groups"] = {
 						i(141294),	-- Mark of Orgrimmar
 					},
@@ -3168,7 +3168,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.9, 15.9, DUROTAR },
 					["timeline"] = { "added 8.1.0.29139" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(120, 50, 120),
+					["lvl"] = lvlsquish(120, 120, 50),
 				}),
 				q(834, {	-- Winds in the Desert
 					["qg"] = 3293,	-- Rezlak

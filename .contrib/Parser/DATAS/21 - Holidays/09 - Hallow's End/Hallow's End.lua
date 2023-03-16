@@ -2180,7 +2180,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["timeline"] = { "added 4.0.1" },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 			}),
 			q(29431, {	-- A Friend in Need (Horde)
 				["qg"] = 53763,	-- Candace Fenlow
@@ -2188,7 +2188,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["timeline"] = { "added 4.0.1" },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 			}),
 			q(29074, {	-- A Season for Celebration (Alliance)
 				["qgs"] = {
@@ -2345,7 +2345,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["timeline"] = { "added 7.0.1" },
 				["maps"] = { VALSHARAH },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(98, 40, 98),	-- TODO: Check Level Requirement
+				["lvl"] = lvlsquish(98, 98, 40),	-- TODO: Check Level Requirement
 			}),
 			q(11392, {	-- Call the Headless Horseman
 				["provider"] = { "o", 186267 },	-- Pumpkin Shrine
@@ -2370,7 +2370,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["coord"] = { 18.6, 51.4, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					i(20490),	-- Ironforge Mint
 				},
@@ -2380,7 +2380,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["coord"] = { 67.8, 38.6, UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					i(20491),	-- Undercity Mint
 				},
@@ -2482,7 +2482,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 					DRAENOR_SHADOWMOON_VALLEY,
 				},
 				["isDaily"] = true,
-				["lvl"] = lvlsquish(100, 40, 100),
+				["lvl"] = lvlsquish(100, 100, 40),
 				["groups"] = {
 					objective(1, {	-- 0/12 Boneship Crewman slain
 						["crs"] = {
@@ -2503,7 +2503,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				-- #endif
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					i(20496),	-- Darnassus Marzipan
 				},
@@ -2513,7 +2513,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["coord"] = { 45.8, 64.4, THUNDER_BLUFF },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					i(20497),	-- Thunder Bluff Marzipan
 				},
@@ -2528,7 +2528,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				-- #endif
 				["timeline"] = { "added 4.0.1" },
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 			}),
 			q(29416, {	-- Fencing the Goods (Horde)
 				["qg"] = 54142,	-- Hired Courier
@@ -2537,7 +2537,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["timeline"] = { "added 4.0.1" },
 				["maps"] = { ORGRIMMAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 			}),
 			q(11440, {	-- Fire Brigade Practice (Azuremyst Isle)
 				["qg"] = 24519,	-- Costumed Orphan Matron
@@ -2664,7 +2664,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				-- #endif
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					i(20492),	-- Stormwind Nougat
 				},
@@ -2680,7 +2680,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				-- #endif
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					i(20493),	-- Orgrimmar Nougat
 				},
@@ -2694,7 +2694,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 					DRAENOR_SHADOWMOON_VALLEY,
 				},
 				["isDaily"] = true,
-				["lvl"] = lvlsquish(100, 40, 100),
+				["lvl"] = lvlsquish(100, 100, 40),
 				["groups"] = {
 					objective(1, {	-- 0/8 Dread Fertilizer
 						["provider"] = { "n", 96765 },	-- Dread Fertilizer
@@ -2711,7 +2711,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 					{ "i", 33277, 1 },	-- Tome of Thomas Thomson
 				},
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = lvlsquish(60, 25, 60),
+				["lvl"] = lvlsquish(60, 60, 25),
 			}),
 			q(11403, {	-- Free at Last! (Horde)
 				["qg"] = 23904,	-- Sir Thomas
@@ -2721,7 +2721,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 					{ "i", 33277, 1 },	-- Tome of Thomas Thomson
 				},
 				["races"] = HORDE_ONLY,
-				["lvl"] = lvlsquish(60, 25, 60),
+				["lvl"] = lvlsquish(60, 60, 25),
 			}),
 			q(8311, {	-- Hallow's End Treats for Jesper!
 				["qg"] = 15310,	-- Jesper
@@ -2734,7 +2734,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				-- #endif
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					objective(1, {	-- 0/1 Stormwind Nougat
 						["provider"] = { "i", 20492 },	-- Stormwind Nougat
@@ -2766,7 +2766,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				-- #endif
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					objective(1, {	-- 0/1 Orgrimmar Nougat
 						["provider"] = { "i", 20493 },	-- Orgrimmar Nougat
@@ -2792,7 +2792,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["coord"] = { 36, 4, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					i(20494),	-- Gnomeregan Gumdrop
 				},
@@ -2808,7 +2808,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				-- #endif
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					i(20495),	-- Darkspear Gumdrop
 				},
@@ -2857,7 +2857,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				-- #endif
 				["timeline"] = { "added 4.0.1" },
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 			}),
 			q(29415, {	-- Missing Heirlooms (Horde)
 				["qg"] = 54141,	-- Edgar Goodwin
@@ -2865,7 +2865,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["coord"] = { 54.4, 77.6, ORGRIMMAR },
 				["timeline"] = { "added 4.0.1" },
 				["races"] = HORDE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 			}),
 			q(39719, {	-- Mutiny on the Boneship
 				["qg"] = 96705,	-- Orukan
@@ -2876,7 +2876,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 					DRAENOR_SHADOWMOON_VALLEY,
 				},
 				["isDaily"] = true,
-				["lvl"] = lvlsquish(100, 40, 100),
+				["lvl"] = lvlsquish(100, 100, 40),
 				["groups"] = {
 					objective(1, {	-- Captain Bonerender slain
 						["provider"] = { "n", 96535 },	-- Captain Bonerender
@@ -2921,7 +2921,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				-- #endi
 				["timeline"] = { "added 4.0.1" },
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 			}),
 			q(29425, {	-- Shopping Around (Horde)
 				["qg"] = 44866,	-- Auctioneer Drezmit
@@ -2929,7 +2929,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["coord"] = { 54, 73.4, ORGRIMMAR },
 				["timeline"] = { "added 4.0.1" },
 				["races"] = HORDE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 			}),
 			q(1657, {	-- Stinking Up Southshore
 				["qg"] = 15197,	-- Darkcaller Yanka
@@ -2956,7 +2956,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 					DRAENOR_SHADOWMOON_VALLEY,
 				},
 				["isDaily"] = true,
-				["lvl"] = lvlsquish(100, 40, 100),
+				["lvl"] = lvlsquish(100, 100, 40),
 				["groups"] = {
 					objective(1, {	-- 0/6 Growing Squashling
 						["provider"] = { "n", 96545 },	-- Growing Squashling
@@ -3086,7 +3086,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["coord"] = { 64, 46.4, STORMWIND_CITY },
 				["timeline"] = { "added 4.0.1" },
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					objective(1, {	-- 0/2 Strange Dust
 						["provider"] = { "i", 10940 },	-- Strange Dust
@@ -3105,7 +3105,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["coord"] = { 58, 48.2, ORGRIMMAR },
 				["timeline"] = { "added 4.0.1" },
 				["races"] = HORDE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					objective(1, {	-- 0/5 Crystal Vial
 						["provider"] = { "i", 3371 },	-- Crystal Vial
@@ -3124,7 +3124,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["coord"] = { 64, 46.4, STORMWIND_CITY },
 				["timeline"] = { "added 4.0.1" },
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					objective(1, {	-- Meeting Disrupted
 						["provider"] = { "n", 54114 },	-- Unleashed Void
@@ -3139,7 +3139,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["timeline"] = { "added 4.0.1" },
 				["maps"] = { TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					objective(1, {	-- Meeting Disrupted
 						["provider"] = { "n", 54114 },	-- Unleashed Void
@@ -3153,7 +3153,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["timeline"] = { "added 4.0.1" },
 				["maps"] = { STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					i(71076),	-- Creepy Crate (Pet)
 				},
@@ -3164,7 +3164,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["timeline"] = { "added 4.0.1" },
 				["maps"] = { ORGRIMMAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 				["groups"] = {
 					i(71076),	-- Creepy Crate (Pet)
 				},
@@ -3223,7 +3223,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				["coord"] = { 34.9, 56.0, VALSHARAH },
 				["timeline"] = { "added 7.0.1" },
 				["isDaily"] = true,
-				["lvl"] = lvlsquish(98, 40, 98),	-- TODO: Check Level Requirement
+				["lvl"] = lvlsquish(98, 98, 40),	-- TODO: Check Level Requirement
 				["groups"] = {
 					objective(1, {	-- Drink from the cauldron and release Aria Sorrowheart's spirit
 						["provider"] = { "n", 109825 },	-- Aria Sorrowheart
@@ -3257,7 +3257,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 					{ "i", 71057, 1 },	-- Recovered Crate
 				},
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 			}),
 			q(29428, {	-- What Now? (Horde)
 				["provider"] = { "o", 209094 },	-- Stolen Crate
@@ -3270,7 +3270,7 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 					{ "i", 71057, 1 },	-- Recovered Crate
 				},
 				["races"] = HORDE_ONLY,
-				["lvl"] = lvlsquish(10, 1, 10),
+				["lvl"] = lvlsquish(10, 10, 1),
 			}),
 
 			-- Candy Bucket Quests

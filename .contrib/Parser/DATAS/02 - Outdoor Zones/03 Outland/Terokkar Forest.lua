@@ -1242,7 +1242,7 @@ root(ROOTS.Zones, {
 						["qg"] = 17834,	-- Lethyn Moonfire
 						["coord"] = { 78.6, 63.0, ZANGARMARSH },
 						["isBreadcrumb"] = true,
-						["lvl"] = lvlsquish(62, 10, 62),
+						["lvl"] = lvlsquish(62, 62, 10),
 					}),
 					q(10040, {	-- Who Are They? (A)
 						["qg"] = 18715,	-- Private Weeks

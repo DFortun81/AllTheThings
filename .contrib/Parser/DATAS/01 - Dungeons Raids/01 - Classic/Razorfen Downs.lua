@@ -12,7 +12,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["coord"] = { 50, 92, THE_BARRENS },
 		-- #endif
 		["mapID"] = RAZORFEN_DOWNS,
-		["lvl"] = lvlsquish(35, 15, 35),
+		["lvl"] = lvlsquish(35, 35, 15),
 		["groups"] = {
 			n(QUESTS, {
 				q(6626, {	-- A Host of Evil
@@ -79,7 +79,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						74888,	-- Koristrasza
 					},
 					["timeline"] = { "added 6.0.1.18322" },
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Mushlump slain
 							["provider"] = { "n", 74435 },	-- Mushlump
@@ -159,7 +159,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 				}),
 				q(27062, {	-- Looming Threat [Horde]
 					["qg"] = 39895,	-- Kanati Greycloud
@@ -167,12 +167,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 				}),
 				q(27024, {	-- Partners in Crime
 					["qg"] = 44837,	-- Koristrasza
 					["timeline"] = { "added 4.0.3", "removed 6.0.2" },
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Glutton slain
 							["provider"] = { "n", 8567 },	-- Glutton
@@ -204,7 +204,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						27062,	-- Looming Threat [Horde]
 					},
 					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					-- #if BEFORE 6.0.1.18322
 					["groups"] = {
 						objective(1, {	-- 0/1 Amnennar the Coldbringer slain

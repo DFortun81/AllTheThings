@@ -17,7 +17,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 		["mapID"] = RUINS_OF_AHNQIRAJ,
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["lvl"] = lvlsquish(50, 25, 50),
+		["lvl"] = lvlsquish(50, 50, 25),
 		["groups"] = {
 			n(FACTIONS, {
 				faction(609, {	-- Cenarion Circle

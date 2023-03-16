@@ -2991,7 +2991,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["isBreadcrumb"] = true,
 				}),
 				q(40976, {	-- Audience with the Warchief
@@ -3969,7 +3969,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.4, 71.4, ORGRIMMAR },
 					["timeline"] = { "added 8.1.0.29139" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(120, 50, 120),
+					["lvl"] = lvlsquish(120, 120, 50),
 				}),
 				q(2756, {	-- The Old Ways
 					["qg"] = 7792,	-- Aturk the Anvil

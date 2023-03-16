@@ -9,13 +9,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 			MAGISTERS_TERRACE,	-- Grand Magister's Asylum
 			349,	-- Observation Grounds
 		},
-		["lvl"] = lvlsquish(65, 25, 65),
+		["lvl"] = lvlsquish(65, 65, 25),
 		["groups"] = {
 			n(QUESTS, {
 				q(29686, {	-- A Radical Notion
 					["qg"] = 55007,	-- Exarch Larethor
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(68, 25, 68),
+					["lvl"] = lvlsquish(68, 68, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Volatile Essence
 							["provider"] = { "i", 73084 },	-- Volatile Essence
@@ -26,7 +26,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 24848,	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(70, 25, 70),
+					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kael'thas
 							["provider"] = { "i", 34157 },	-- Head of Kael'thas
@@ -39,7 +39,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 24848,	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(68, 25, 68),
+					["lvl"] = lvlsquish(68, 68, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kael'thas
 							["provider"] = { "i", 34157 },	-- Head of Kael'thas
@@ -56,35 +56,35 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					},
 					["coord"] = { 47.4, 30.7, ISLE_OF_QUELDANAS },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(70, 25, 70),
+					["lvl"] = lvlsquish(70, 70, 25),
 				}),
 				q(29682, {	-- Magisters' Terrace
 					["qg"] = 24967,	-- Captain Theris Dawnhearth
 					["sourceQuest"] = 11481,	-- Crisis at the Sunwell
 					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(68, 25, 68),
+					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(29684, {	-- Severed Communications
 					["qg"] = 55007,	-- Exarch Larethor
 					["sourceQuest"] = 11482,	-- Duty Calls
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(68, 25, 68),
+					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(11490, {	-- The Scryer's Scryer
 					["qg"] = 24822,	-- Tyrith
 					-- #if AFTER 4.3.0
 					["sourceQuest"] = 29684,	-- Severed Communications
-					["lvl"] = lvlsquish(68, 25, 68),
+					["lvl"] = lvlsquish(68, 68, 25),
 					-- #else
 					["sourceQuest"] = 11488,	-- Magisters' Terrace
-					["lvl"] = lvlsquish(70, 25, 70),
+					["lvl"] = lvlsquish(70, 70, 25),
 					-- #endif
 				}),
 				q(29687, {	-- Twisted Associations
 					["qg"] = 55007,	-- Exarch Larethor
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(68, 25, 68),
+					["lvl"] = lvlsquish(68, 68, 25),
 					["groups"] = {
 						objective(1, {	-- Selin Fireheart slain
 							["provider"] = { "n", 24723 },	-- Selin Fireheart
@@ -244,7 +244,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				["description"] = "You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",
 				["sourceQuest"] = 11492,	-- Hard to Kill
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						i(35275, {	-- Orb of Sin'dorei (TOY!)

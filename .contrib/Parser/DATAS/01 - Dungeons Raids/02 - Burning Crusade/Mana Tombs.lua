@@ -6,7 +6,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["lore"] = "Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spotaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",
 		["coord"] = { 39.63, 57.67, TEROKKAR_FOREST },	-- Mana-Tombs, Terokkar Forest
 		["mapID"] = AUCHINDOUN_MANA_TOMBS,
-		["lvl"] = lvlsquish(61, 15, 61),
+		["lvl"] = lvlsquish(61, 61, 15),
 		["groups"] = {
 			n(QUESTS, {
 				q(29583, {	-- Eckert the Mad
@@ -15,7 +15,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(64, 15, 64),
+					["lvl"] = lvlsquish(64, 64, 15),
 				}),
 				q(29582, {	-- Grek's Crazy Night
 					["qg"] = 19606,	-- Grek
@@ -23,12 +23,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(64, 15, 64),
+					["lvl"] = lvlsquish(64, 64, 15),
 				}),
 				q(29574, {	-- Intriguing Specimens
 					["qg"] = 54694,	-- Mamdy the "Ologist"
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(62, 15, 62),
+					["lvl"] = lvlsquish(62, 62, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Pandemonius' Essence
 							["provider"] = { "i", 72126 },	-- Pandemonius' Essence
@@ -48,7 +48,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 31941, 1 },	-- Mark of the Nexus-King
 					},
 					["repeatable"] = true,
-					["lvl"] = lvlsquish(70, 25, 70),
+					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						i(32079),	-- Shaffar's Stasis Chamber Key
 					},
@@ -57,7 +57,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19670,	-- Artificer Morphalius
 					["coord"] = { 39.4, 58.5, TEROKKAR_FOREST },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(64, 15, 64),
+					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
 						objective(1, {	-- 0/10 Ethereal Crypt Raider slain
 							["provider"] = { "n", 18311 },	-- Ethereal Crypt Raider
@@ -76,7 +76,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29573, {	-- Safety is Job One
 					["qg"] = 54692,	-- Artificer Morphalius
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(62, 15, 62),
+					["lvl"] = lvlsquish(62, 62, 15),
 					["groups"] = {
 						objective(1, {	-- 0/10 Ethereal Crypt Raider slain
 							["provider"] = { "n", 18311 },	-- Ethereal Crypt Raider
@@ -96,7 +96,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19671,	-- Cryo-Engineer Sha'heen
 					["sourceQuest"] = 10216,	-- Safety Is Job One
 					["maps"] = { TEROKKAR_FOREST },
-					["lvl"] = lvlsquish(64, 15, 64),
+					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
 						i(29328),	-- Consortium Prince's Wrap
 						i(29327),	-- Cryo-mitts
@@ -108,7 +108,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 22919,	-- Image of Commander Ameer
 					["sourceQuest"] = 10976,	-- The Mark of the Nexus-King
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
-					["lvl"] = lvlsquish(70, 25, 70),
+					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						objective(1, {	--	Mana-Tombs Stasis Chamber Investigated
 							["provider"] = { "i", 32069 },	-- Mana-Tombs Stasis Chamber Key
@@ -121,7 +121,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10977,	-- Stasis Chambers of the Mana-Tombs
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { 933, EXALTED },	-- The Consortium, Exalted.
-					["lvl"] = lvlsquish(70, 25, 70),
+					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						i(32092),	-- The Eye of Haramad
 					},
@@ -129,7 +129,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(10165, bubbleDown({ ["timeline"] = { "removed 4.3.0.14732" } }, {	-- Undercutting the Competition [Rewards also removed... :(]
 					["qg"] = 19674,	-- Nexus-Prince Haramad
 					["coord"] = { 39.4, 58.5, TEROKKAR_FOREST },
-					["lvl"] = lvlsquish(64, 15, 64),
+					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Shaffar's Wrappings
 							["provider"] = { "i", 28490 },	-- Shaffar's Wrappings
@@ -146,7 +146,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = {
 						{ "i", 28490, 1 },	-- Shaffar's Wrappings
 					},
-					["lvl"] = lvlsquish(62, 15, 62),
+					["lvl"] = lvlsquish(62, 62, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Shaffar's Wrappings
 							["provider"] = { "i", 28490 },	-- Shaffar's Wrappings
@@ -285,7 +285,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30633, 1 },	-- Auchenai Key
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

@@ -1412,7 +1412,7 @@ _.Zones =
 				q(32461, {	-- The Order of the Cloud Serpent
 					["description"] = "Need to loot a Cloud Serpent without going to The Order of the Cloud Serpent.",
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(90, 10, 90),
+					["lvl"] = lvlsquish(90, 90, 10),
 					["timeline"] = {
 						"added 5.1.0.16231",
 					},

@@ -978,7 +978,7 @@ root(ROOTS.Zones, {
 						["timeline"] = { "removed 4.0.3" },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
-						["lvl"] = lvlsquish(70, 20, 70),
+						["lvl"] = lvlsquish(70, 70, 20),
 					}),
 					q(11498, {	-- Learning to Fly (H)
 						["qg"] = 18940,	-- Nutral
@@ -986,7 +986,7 @@ root(ROOTS.Zones, {
 						["timeline"] = { "removed 4.0.3" },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
-						["lvl"] = lvlsquish(70, 20, 70),
+						["lvl"] = lvlsquish(70, 70, 20),
 					}),
 					q(10537, {	-- Lohn'goron, Bow of the Torn-heart
 						["qg"] = 21318,	-- Spirit of Ar'tor
@@ -2144,14 +2144,14 @@ root(ROOTS.Zones, {
 						["timeline"] = { "removed 4.0.3.14732" },
 						["cr"] = 22037,	-- Smith Gorlunk
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = lvlsquish(68, 10, 68),
+						["lvl"] = lvlsquish(68, 68, 10),
 					}),
 					i(31241, {	-- Primed Key Mold
 						["coord"] = { 67.6, 36.2, SHADOWMOON_VALLEY },
 						["timeline"] = { "removed 4.0.3.14732" },
 						["cr"] = 22037,	-- Smith Gorlunk
 						["races"] = HORDE_ONLY,
-						["lvl"] = lvlsquish(68, 10, 68),
+						["lvl"] = lvlsquish(68, 68, 10),
 					}),
 					i(31682, {	-- Recipe: Fel Mana Potion
 						["crs"] = {

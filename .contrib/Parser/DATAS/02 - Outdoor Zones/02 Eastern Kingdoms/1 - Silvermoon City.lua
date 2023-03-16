@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
-					["lvl"] = lvlsquish(60, 1, 60),
+					["lvl"] = lvlsquish(60, 60, 1),
 					["groups"] = {
 						objective(1, {	-- 0/15 Scourge Siege Engineer slain
 							["provider"] = { "n", 17878 },	-- Scourge Siege Engineer
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 				}),
 				q(10361, {	-- A Donation of Mageweave
 					["qg"] = 20612,	-- Sorim Lightsong
@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(60, 1, 60),
+					["lvl"] = lvlsquish(60, 60, 1),
 				}),
 				q(9681, {	-- A Study in Power
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(12, 1, 12),
+					["lvl"] = lvlsquish(12, 12, 1),
 				}),
 				q(9721, {	-- A Summons from Lord Solanar
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(60, 1, 60),
+					["lvl"] = lvlsquish(60, 60, 1),
 				}),
 				q(10363, {	-- Additional Runecloth
 					["qg"] = 20612,	-- Sorim Lightsong
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["sourceQuest"] = 9626,	-- Meeting the Orcs
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9684, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {	-- Claiming the Light
 					["qg"] = 17718,	-- Magister Astalor Bloodsworn
@@ -189,7 +189,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(12, 1, 12),
+					["lvl"] = lvlsquish(12, 12, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Filled Shimmering Vessel
 							["provider"] = { "i", 24156 },	-- Filled Shimmering Vessel
@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 23929, 1 },	-- Letter from Lor'themar Theron
 					},
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9812, {	-- Envoy to the Horde [Non-Blood Elf Only]
 					["qg"] = 16802,	-- Lor'themar Theron
@@ -219,7 +219,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 23929, 1 },	-- Letter from Lor'themar Theron
 					},
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9707, {	-- Forging the Weapon
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(20, 1, 20),
+					["lvl"] = lvlsquish(20, 20, 1),
 				}),
 				q(9626, {	-- Meeting the Orcs [Blood Elf Only]
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Warchief>
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 23930, 1 },	-- Letter Sealed by Sylvanas
 					},
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9813, {	-- Meeting the Orcs [Non-Blood Elf Only]
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Warchief>
@@ -253,7 +253,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 23930, 1 },	-- Letter Sealed by Sylvanas
 					},
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9685, {	-- Redeeming the Dead
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
@@ -262,7 +262,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(12, 1, 12),
+					["lvl"] = lvlsquish(12, 12, 1),
 					["groups"] = {
 						objective(1, {	-- Resurrect Sangrias Stillblade
 							["provider"] = { "n", 17768 },	-- Blood Knight Stillblade
@@ -287,7 +287,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = { BLOODELF },
 					["classes"] = { WARLOCK },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				-- #if BEFORE WRATH
 				-- Before Wrath, this quest chain was in the Ghostlands and has a higher level requirement.
@@ -300,7 +300,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 22550, 1 },	-- Quartermaster Lymel's Goods
 					},
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				-- #else
 				q(9134, {	-- Skymistress Gloaming
@@ -312,7 +312,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 22550, 1 },	-- Sathiel's Goods
 					},
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(5, 1, 5),
+					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				-- #endif
 				q(9710, {	-- The Blood-Tempered Ranseur
@@ -322,7 +322,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(20, 1, 20),
+					["lvl"] = lvlsquish(20, 20, 1),
 					["groups"] = {
 						i(25464, {	-- Blood-Tempered Ranseur
 							["timeline"] = { "removed 4.0.3" },
@@ -337,7 +337,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { GHOSTLANDS },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(12, 1, 12),
+					["lvl"] = lvlsquish(12, 12, 1),
 					["groups"] = {
 						objective(1, {	-- Undergo the First Trial
 							["provider"] = { "n", 17716 },	-- Sangrias Stillblade <Blood Knight>
@@ -352,7 +352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(60, 1, 60),
+					["lvl"] = lvlsquish(60, 60, 1),
 				}),
 				q(9692, {	-- The Path of the Adept
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(20, 1, 20),
+					["lvl"] = lvlsquish(20, 20, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Corrupted Kor Gem
 							["provider"] = { "i", 6995 },	-- Corrupted Kor Gem
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = { BLOODELF },
 					["classes"] = { WARLOCK },
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- Summoned Voidwalker slain
 							["provider"] = { "i", 23732 },	-- Voidstone
@@ -406,7 +406,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(20, 1, 20),
+					["lvl"] = lvlsquish(20, 20, 1),
 				}),
 				q(9529, {	-- The Stone
 					["qg"] = 16647,	-- Talionia <Warlock Trainer>
@@ -416,7 +416,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { GHOSTLANDS },
 					["races"] = { BLOODELF },
 					["classes"] = { WARLOCK },
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9735, {	-- True Masters of the Light (1/3)
 					["qg"] = 25223,	-- Lord Solanar Bloodwrath
@@ -426,7 +426,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(60, 1, 60),
+					["lvl"] = lvlsquish(60, 60, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Tyr's Hand Holy Water
 							["provider"] = { "i", 24284 },	-- Tyr's Hand Holy Water
@@ -447,7 +447,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(60, 1, 60),
+					["lvl"] = lvlsquish(60, 60, 1),
 				}),
 				q(9737, {	-- True Masters of the Light (3/3)
 					["qg"] = 25223,	-- Lord Solanar Bloodwrath
@@ -457,7 +457,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { STRATHOLME },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(60, 1, 60),
+					["lvl"] = lvlsquish(60, 60, 1),
 					["groups"] = {
 						objective(1, {	-- Remove Alonsus Chapel Protection
 							["provider"] = { "i", 24287 },	-- Extinguishing Mixture

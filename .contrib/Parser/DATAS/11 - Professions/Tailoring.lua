@@ -5372,7 +5372,7 @@ profession(TAILORING, {
 				10833,	-- Becoming a Shadoweave Tailor
 				10832,	-- Becoming a Spellfire Tailor
 			},
-			["lvl"] = lvlsquish(60, 20, 60),
+			["lvl"] = lvlsquish(60, 60, 20),
 			["groups"] = {
 				objective(1, {	-- 0/1 Sample of Primal Mooncloth
 					["provider"] = { "i", 31530 },	-- Sample of Primal Mooncloth
@@ -5399,7 +5399,7 @@ profession(TAILORING, {
 				-- 10833,	-- Becoming a Shadoweave Tailor
 				10832,	-- Becoming a Spellfire Tailor
 			},
-			["lvl"] = lvlsquish(60, 20, 60),
+			["lvl"] = lvlsquish(60, 60, 20),
 			["groups"] = {
 				objective(1, {	-- Deepen Altar of Shadows Attunement
 					["provider"] = { "i", 31736 },	-- Crystal of Deep Shadows
@@ -5418,7 +5418,7 @@ profession(TAILORING, {
 				10833,	-- Becoming a Shadoweave Tailor
 				-- 10832,	-- Becoming a Spellfire Tailor
 			},
-			["lvl"] = lvlsquish(60, 20, 60),
+			["lvl"] = lvlsquish(60, 60, 20),
 			["groups"] = {
 				objective(1, {	-- 0/1 Nether-wraith Essence
 					["provider"] = { "i", 31741 },	-- Nether-wraith Essence

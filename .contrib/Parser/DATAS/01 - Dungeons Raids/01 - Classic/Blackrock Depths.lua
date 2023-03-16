@@ -53,7 +53,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
 					["requireSkill"] = BLACKSMITHING,
 					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
-					["lvl"] = lvlsquish(60, 20, 60),
+					["lvl"] = lvlsquish(60, 60, 20),
 					["groups"] = {
 						i(18592),	-- Plans: Sulfuron Hammer (RECIPE!)
 					},
@@ -1720,7 +1720,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						i(65618, {	-- Faceguard of the Crown
 							["timeline"] = { "added 4.0.3.13277" },
@@ -1737,7 +1737,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						i(65625, {	-- Faceguard of the Horde
 							["timeline"] = { "added 4.0.3.13277" },
@@ -1765,7 +1765,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				q(28307, {	-- Journey to Orgrimmar [Blood Elf] (SL+) / Meet with Tyelis (Cata+)
 					["qgs"] = {
@@ -1784,7 +1784,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				q(28308, {	-- Journey to Orgrimmar [Tauren] (SL+) / Meet with Seer Liwatha (Cata+)
 					["qgs"] = {
@@ -1803,7 +1803,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				q(28309, {	-- Journey to Orgrimmar [Troll] (SL+) / Meet with Shadow-Walker Zuru (Cata+)
 					["qgs"] = {
@@ -1822,7 +1822,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				q(28323, {	-- Journey to Orgrimmar [Goblin] (SL+) / Meet with Brother Silverhallow (Cata+)
 					["qgs"] = {
@@ -1841,7 +1841,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
 				-- #if BEFORE SHADOWLANDS
@@ -1862,7 +1862,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				q(28304, {	-- Meet with Dark Cleric Cecille (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
 					["qgs"] = {
@@ -1881,7 +1881,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				q(28298, {	-- Meet with Gordul (Cata+) / Meet with Thega Graveblade (SL+)
 					["qgs"] = {
@@ -1896,7 +1896,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
 				-- #if AFTER SHADOWLANDS
@@ -1915,7 +1915,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
 				-- #if BEFORE SHADOWLANDS
@@ -1934,7 +1934,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				q(28308, {	-- Meet with Seer Liwatha (Cata+) / Journey to Orgrimmar [Tauren] (SL+)
 					["qgs"] = {
@@ -1953,7 +1953,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				q(28309, {	-- Meet with Shadow-Walker Zuru (Cata+) / Journey to Orgrimmar [Troll] (SL+)
 					["qgs"] = {
@@ -1972,7 +1972,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
 				-- #if AFTER SHADOWLANDS
@@ -1989,7 +1989,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
 				-- #if BEFORE SHADOWLANDS
@@ -2010,7 +2010,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
 
@@ -2021,7 +2021,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						i(65634),	-- Crown of the Sunchaser
 					},
@@ -2033,7 +2033,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						i(65637),	-- Crown of Golden Worship
 					},
@@ -2045,7 +2045,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						i(65633),	-- Crown of Forsaken Faith
 					},
@@ -2057,7 +2057,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						i(65635),	-- Crown of the Earthmother
 						-- You get these when completing the quest
@@ -2074,7 +2074,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						i(65636),	-- Crown of the Shadow-Walker
 					},

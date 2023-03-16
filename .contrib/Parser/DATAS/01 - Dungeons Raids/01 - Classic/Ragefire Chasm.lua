@@ -12,14 +12,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["coord"] = { 50.6, 51.6, ORGRIMMAR },
 		-- #endif
 		["mapID"] = RAGEFIRE_CHASM,
-		["lvl"] = lvlsquish(13, 10, 13),
+		["lvl"] = lvlsquish(13, 13, 7),
 		["groups"] = {
 			n(QUESTS, {
 				q(30998, {	-- A New Enemy
 					["qg"] = 61823,	-- High Sorceress Aryna
 					["timeline"] = { "added 5.0.1.15589" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/5 Corrupted Insignia
 							["provider"] = { "i", 82605 },	-- Corrupted Insignia
@@ -37,7 +37,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 61716,	-- Invoker Xorenth
 					["timeline"] = { "added 5.0.1.15589" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/5 Corrupted Insignia
 							["provider"] = { "i", 82605 },	-- Corrupted Insignia
@@ -55,7 +55,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 44216,	-- Bovaal Whitehorn
 					["timeline"] = { "added 4.0.3.13277", "removed 5.0.4" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/6 Searing Binding
 							["provider"] = { "i", 60499 },	-- Searing Binding
@@ -150,7 +150,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 61822,	-- SI:7 Field Commander Dirken
 					["timeline"] = { "added 5.0.1.15589" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/5 SI:7 Rangers rescued
 							["provider"] = { "n", 61788 },	-- SI:7 Ranger
@@ -161,7 +161,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 61823,	-- Commander Bagran
 					["timeline"] = { "added 5.0.1.15589" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/5 Kor'kron Scout rescued
 							["provider"] = { "n", 61680 },	-- Kor'kron Scout
@@ -172,7 +172,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 44217,	-- Stone Guard Kurjack
 					["timeline"] = { "added 4.0.3.13277", "removed 5.0.4" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(13, 7, 13),
+					["lvl"] = lvlsquish(13, 13, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Jergosh the Invoker slain
 							["provider"] = { "n", 11518 },	-- Jergosh the Invoker
@@ -237,7 +237,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(13, 7, 13),
+					["lvl"] = lvlsquish(13, 13, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Taragaman the Hungerer's Heart
 							["provider"] = { "i", 14540 },	-- Taragaman the Hungerer's Heart
@@ -284,7 +284,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 61823,	-- High Sorceress Aryna
 					["timeline"] = { "added 5.0.1.15589" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(13, 7, 13),
+					["lvl"] = lvlsquish(13, 13, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Dark Shaman Koranthal slain
 							["provider"] = { "n", 61412 },	-- Dark Shaman Koranthal
@@ -319,7 +319,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 61716,	-- Invoker Xorenth
 					["timeline"] = { "added 5.0.1.15589" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(13, 7, 13),
+					["lvl"] = lvlsquish(13, 13, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Dark Shaman Koranthal slain
 							["provider"] = { "n", 61412 },	-- Dark Shaman Koranthal

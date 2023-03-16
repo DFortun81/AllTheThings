@@ -27,7 +27,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 46410,	-- Nurse Lillian
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(20, 10, 20),
+					["lvl"] = lvlsquish(20, 20, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lord Overheat's Fiery Core
 							["provider"] = { "i", 62305 },	-- Lord Overheat's Fiery Core
@@ -128,7 +128,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 46409,	-- Warden Thelwater
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(20, 10, 20),
+					["lvl"] = lvlsquish(20, 20, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Hogger slain
 							["provider"] = { "n", 46254 },	-- Hogger
@@ -146,7 +146,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 46417,	-- Rifle Commander Coe
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(20, 10, 20),
+					["lvl"] = lvlsquish(20, 20, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Randolph Moloch slain
 							["provider"] = { "n", 46383 },	-- Randolph Moloch

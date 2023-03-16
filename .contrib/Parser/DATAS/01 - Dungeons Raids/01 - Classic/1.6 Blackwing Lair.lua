@@ -12,7 +12,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 		-- #endif
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["lvl"] = lvlsquish(50, 25, 50),
+		["lvl"] = lvlsquish(50, 50, 25),
 		["groups"] = {
 			n(QUESTS, {
 				q(7783, {	-- The Lord of Blackrock [Horde]

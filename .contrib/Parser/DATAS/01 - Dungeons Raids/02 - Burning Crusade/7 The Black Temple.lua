@@ -20,7 +20,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 		-- #if BEFORE WRATH
 		["sourceQuest"] = 10985,	-- A Distraction for Akama
 		-- #endif
-		["lvl"] = lvlsquish(70, 30, 68),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
+		["lvl"] = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				classicAch(958, {	-- Sworn to the Deathsworn
@@ -43,7 +43,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["sourceQuest"] = 10949,	-- Entry Into the Black Temple
 					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
 					["timeline"] = { "removed 3.0.1" },
-					["lvl"] = lvlsquish(70, 30, 70),
+					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
 						classicAch(431, {	-- Hand of A'dal (Achievement)
 							["sourceQuest"] = 10985,	-- A Distraction for Akama
@@ -65,7 +65,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["altQuests"] = { 10985 },	-- A Distraction for Akama (legacy version)
 					["coord"] = { 65.2, 43.9, SHADOWMOON_VALLEY },
 					["timeline"] = { "added 3.0.1" },
-					["lvl"] = lvlsquish(70, 30, 70),
+					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
 						i(32649),	-- Medallion of Karabor
 					},
@@ -75,13 +75,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10948,	-- The Hostage Soul
 					["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
-					["lvl"] = lvlsquish(70, 30, 70),
+					["lvl"] = lvlsquish(70, 70, 30),
 				}),
 				q(10957, {	-- Redemption of the Ashtongue
 					["qg"] = 23158,	-- Seer Kanai
 					["sourceQuest"] = 10958,	-- Seek Out the Ashtongue
 					["coord"] = { 62.0, 50.2, THE_BLACK_TEMPLE },
-					["lvl"] = lvlsquish(70, 30, 70),
+					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
 						objective(1, {	-- Shade of Akama slain
 							["provider"] = { "n", 22841 },	-- Shade of Akama
@@ -97,13 +97,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						13429,	-- A Distraction for Akama
 						-- #endif
 					},
-					["lvl"] = lvlsquish(70, 30, 70),
+					["lvl"] = lvlsquish(70, 70, 30),
 				}),
 				q(10959, {	-- The Fall of the Betrayer
 					["qg"] = 23158,	-- Seer Kanai
 					["sourceQuest"] = 10957,	-- Redemption of the Ashtongue
 					["coord"] = { 62.0, 50.2, THE_BLACK_TEMPLE },
-					["lvl"] = lvlsquish(70, 30, 70),
+					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
 						objective(1, {	-- Illidan Stormrage slain
 							["provider"] = { "n", 22917 },	-- Illidan Stormrage <The Betrayer>
@@ -115,7 +115,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["qg"] = 21700,	-- Akama
 					["sourceQuest"] = 10947,	-- An Artifact From the Past
 					["coord"] = { 58.1, 48.2, SHADOWMOON_VALLEY },
-					["lvl"] = lvlsquish(70, 30, 70),
+					["lvl"] = lvlsquish(70, 70, 30),
 				}),
 			}),
 			n(VENDORS, {

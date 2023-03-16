@@ -1024,7 +1024,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 					-- #endif
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(40, 1, 40),
+					["lvl"] = lvlsquish(40, 40, 1),
 				}),
 				q(11419, {	-- Brewfest Riding Rams (H)
 					["provider"] = { "i", 33978 },	-- "Honorary Brewer" Hand Stamp (H)
@@ -1035,7 +1035,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 					-- #endif
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(40, 1, 40),
+					["lvl"] = lvlsquish(40, 40, 1),
 				}),
 				q(29394, {	-- Brew For Brewfest (A)
 					["qg"] = 23558,	-- Neill Ramstein
@@ -1369,7 +1369,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 					["timeline"] = { "added 2.4.3", "removed 3.3.3" },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["isDaily"] = true,
-					["lvl"] = lvlsquish(65, 10, 65),
+					["lvl"] = lvlsquish(65, 65, 10),
 				}),
 				q(11318, {	-- Now This is Ram Racing... Almost. (A)
 					["qg"] = 23558,	-- Neill Ramstein
@@ -1490,7 +1490,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 					},
 					["timeline"] = { "added 2.4.3", "removed 3.3.3" },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(65, 10, 65),
+					["lvl"] = lvlsquish(65, 65, 10),
 				}),
 				q(12193, {	-- Say, There Wouldn't Happen to be a Souvenir This Year, Would There? (A)
 					["qg"] = 24468,	-- Pol Amberstill

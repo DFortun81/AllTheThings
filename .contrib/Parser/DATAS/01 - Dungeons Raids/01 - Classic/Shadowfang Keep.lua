@@ -20,7 +20,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			SHADOWFANG_KEEP_LEVEL6,
 			SHADOWFANG_KEEP_LEVEL7
 		},
-		["lvl"] = lvlsquish(14, 11, 14),
+		["lvl"] = lvlsquish(14, 14, 8),
 		["groups"] = {
 			n(QUESTS, {
 				q(27355, {	-- A Boon for the Powerful
@@ -28,7 +28,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3" },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["qgs"] = {
 						-- #if AFTER SHADOWLANDS
 						164942,	-- Evelyn Thorn
@@ -63,7 +63,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { GNOME },
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander's Holy Symbol
 							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
@@ -96,7 +96,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3" },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Silverlaine Family Sword
 							["provider"] = { "i", 60885 },	-- Silverlaine Family Sword
@@ -126,7 +126,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3" },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Silverlaine Family Sword
 							["provider"] = { "i", 60885 },	-- Silverlaine Family Sword
@@ -172,7 +172,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Godfrey's Crystal Scope
 							["provider"] = { "i", 60877 },	-- Godfrey's Crystal Scope
@@ -194,7 +194,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				q(27351, {	-- A Royal Reward
@@ -218,7 +218,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Springvale's Sharpening Stone
 							["provider"] = { "i", 60880 },	-- Springvale's Sharpening Stone
@@ -247,7 +247,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander's Holy Symbol
 							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
@@ -276,7 +276,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander's Holy Symbol
 							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
@@ -298,7 +298,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander's Holy Symbol
 							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
@@ -327,7 +327,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				q(27403, {	-- A True Sunwalker
 					["qg"] = 44725,	-- Sunwalker Atohmo
@@ -336,7 +336,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander's Holy Symbol
 							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
@@ -398,7 +398,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				q(27273, {	-- An Invitation from Moonglade
 					["qgs"] = {
@@ -424,7 +424,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 27917,	-- Sniffing Them Out
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 8, 16),
+					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Baron Silverlaine slain
 							["provider"] = { "n", 3887 },	-- Baron Silverlaine
@@ -464,7 +464,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Springvale's Sharpening Stone
 							["provider"] = { "i", 60880 },	-- Springvale's Sharpening Stone
@@ -483,7 +483,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3" },
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["qgs"] = {
 						-- #if AFTER SHADOWLANDS
 						164945,	-- Mulric Boldrock
@@ -549,7 +549,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				q(1098, {	-- Deathstalkers in Shadowfang
@@ -572,7 +572,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				-- #if BEFORE MOP
@@ -595,7 +595,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Walden's Talisman
 							["provider"] = { "i", 60881 },	-- Walden's Talisman
@@ -627,7 +627,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				q(27362, {	-- Favored of Elune
@@ -637,7 +637,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander's Holy Symbol
 							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
@@ -666,7 +666,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander's Holy Symbol
 							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
@@ -685,7 +685,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 27920,	-- Armored to the Teeth
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 8, 16),
+					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lord Walden slain
 							["provider"] = { "n", 46963 },	-- Lord Walden
@@ -706,7 +706,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				-- #if AFTER SHADOWLANDS
@@ -717,7 +717,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander's Holy Symbol
 							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
@@ -737,7 +737,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 27921,	-- Fighting Tooth and Claw
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 8, 16),
+					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lord Godfrey slain
 							["provider"] = { "n", 46964 },	-- Lord Godfrey
@@ -771,7 +771,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				-- #if BEFORE SHADOWLANDS
@@ -790,7 +790,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				q(27278, {	-- Grimshot's Call [CATA] / Tamanji's Call [SL+]
 					["qgs"] = {
@@ -807,7 +807,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				-- #if AFTER SHADOWLANDS
@@ -830,7 +830,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Walden's Talisman
 							["provider"] = { "i", 60881 },	-- Walden's Talisman
@@ -863,7 +863,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #if AFTER SHADOWLANDS
 				q(28164, {	-- Journey to Orgrimmar [Goblin] [SL+] / Seek Brother Silverhallow [CATA]
@@ -883,7 +883,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				q(27331, {	-- Journey to Orgrimmar [Tauren] [SL+] / The Seer's Call [CATA]
 					["qgs"] = {
@@ -902,7 +902,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				q(27332, {	-- Journey to Orgrimmar [Troll] [SL+] / Seek the Shadow-Walker [CATA]
 					["qgs"] = {
@@ -921,7 +921,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				q(27334, {	-- Journey to Orgrimmar [Undead] [SL+] / Dark Cleric Cecille [CATA]
 					["qgs"] = {
@@ -940,7 +940,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				q(27282, {	-- Kazak's Behest [SL+] / Zevrost's Behest [CATA] / Kranosh's Behest [WOD]
 					["qgs"] = {
@@ -994,7 +994,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				q(27267, {	-- Make Contact with SI:7
@@ -1010,7 +1010,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #if BEFORE SHADOWLANDS
 				q(27268, {	-- Make Haste to the Cathedral [CATA] / Patrice Lancaster Sends Word [SL+]
@@ -1028,7 +1028,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				q(27354, {	-- Mastering the Arcane [Alliance]
@@ -1050,7 +1050,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13287" },
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Silverlaine's Enchanted Crystal
 							["provider"] = { "i", 60878 },	-- Silverlaine's Enchanted Crystal
@@ -1079,7 +1079,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13287" },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Silverlaine's Enchanted Crystal
 							["provider"] = { "i", 60878 },	-- Silverlaine's Enchanted Crystal
@@ -1107,7 +1107,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				q(27996, {	-- Orders Are For the Living
@@ -1115,7 +1115,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 27988,	-- Plague...Plague Everywhere!
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(16, 8, 16),
+					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lord Walden slain
 							["provider"] = { "n", 46963 },	-- Lord Walden
@@ -1138,7 +1138,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				q(27274, {	-- Patrice Lancaster Sends Word [Gnome] [SL+] / The Chief Surgeon [CATA]
 					["qgs"] = {
@@ -1155,7 +1155,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { GNOME },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				q(27988, {	-- Plague...Plague Everywhere!
@@ -1163,7 +1163,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuests"] = { 27974 },	-- This Land is Our Land
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(16, 8, 16),
+					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Baron Silverlaine slain
 							["provider"] = { "n", 3887 },	-- Baron Silverlaine
@@ -1191,7 +1191,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				q(27298, {	-- Seek Out Master Pyreanor [CATA] / Seek Out Avaros Dawnglaive [SL+]
@@ -1209,7 +1209,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #if BEFORE SHADOWLANDS
 				q(27332, {	-- Seek the Shadow-Walker [CATA] / Journey to Orgrimmar [Undead] [SL+]
@@ -1229,14 +1229,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				q(27917, {	-- Sniffing Them Out
 					["qg"] = 47006,	-- Packleader Ivar Bloodfang
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 8, 16),
+					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Baron Ashbury slain
 							["provider"] = { "n", 46962 },	-- Baron Ashbury
@@ -1276,7 +1276,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 27988,	-- Plague...Plague Everywhere!
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(16, 8, 16),
+					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lord Godfrey slain
 							["provider"] = { "n", 46964 },	-- Lord Godfrey
@@ -1310,7 +1310,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				-- #if AFTER MOP
@@ -1334,7 +1334,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Walden's Talisman
 							["provider"] = { "i", 60881 },	-- Walden's Talisman
@@ -1366,7 +1366,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander's Holy Symbol
 							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
@@ -1408,7 +1408,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { GNOME },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				q(27356, {	-- The Circle's Future [Alliance]
@@ -1463,7 +1463,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander's Holy Symbol
 							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
@@ -1493,7 +1493,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #else
 				q(27280, {	-- The Earthbreaker Calls [MOP] / The Dreamseeker Calls [CATA] / The Riverspeaker Calls [SL+]
@@ -1511,7 +1511,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				-- #endif
@@ -1520,7 +1520,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["qgs"] = {
 						-- #if AFTER SHADOWLANDS
 						164952,	-- Ezul'aan <Paladin Trainer>
@@ -1588,7 +1588,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				-- #endif
 				-- #if BEFORE SHADOWLANDS
@@ -1609,7 +1609,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				q(27436, {	-- The Shadow-Walker's Task [CATA] / A Seer's Staff [Troll] [SL+]
 					["qg"] = 45137,	-- Shadow-Walker Zuru
@@ -1618,7 +1618,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander's Holy Symbol
 							["provider"] = { "i", 60879 },	-- Commander's Holy Symbol
@@ -1646,7 +1646,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				q(27269, {	-- The Temple of the Moon
 					["qgs"] = {
@@ -1661,13 +1661,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["classes"] = { PALADIN },
 					["races"] = { NIGHTELF },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 				}),
 				q(27974, {	-- This Land is Our Land
 					["qg"] = 47293,	-- Deathstalker Commander Belmont
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(16, 8, 16),
+					["lvl"] = lvlsquish(16, 16, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Baron Ashbury slain
 							["provider"] = { "n", 46962 },	-- Baron Ashbury
@@ -1693,7 +1693,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3" },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 8, 20),
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Tenebrous Orb
 							["provider"] = { "i", 60882 },	-- Tenebrous Orb

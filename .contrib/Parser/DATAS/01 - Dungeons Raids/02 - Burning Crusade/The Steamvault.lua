@@ -9,13 +9,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			COILFANG_RESERVOIR_STEAMVAULT,
 			264,	-- The Cooling Pools
 		},
-		["lvl"] = lvlsquish(65, 20, 65),
+		["lvl"] = lvlsquish(65, 65, 20),
 		["groups"] = {
 			n(QUESTS, {
 				q(29613, {	-- A Proper Fate
 					["qg"] = 54848,	-- Watcher Jhang
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Warlord Kalithresh slain
 							["provider"] = { "n", 17798 },	-- Warlord Kalithresh
@@ -25,7 +25,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29614, {	-- Containment is Key
 					["qg"] = 54849,	-- Naturalist Bite
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- 0/3 Bog Overlord slain
 							["provider"] = { "n", 21694 },	-- Bog Overlord
@@ -41,18 +41,18 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(9764, {	-- Orders from Lady Vashj
 					["provider"] = { "i", 24367 },	-- Orders from Lady Vashj
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 				}),
 				q(29616, {	-- Storming the Steamvault
 					["qg"] = 17841,	-- Ysiel Windsinger
 					["coord"] = { 78.4, 62, ZANGARMARSH },
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 				}),
 				q(9763, bubbleDown({ ["timeline"] = { "removed 4.3.0.14732" } }, {	-- The Warlord's Hideout
 					["qg"] = 17884,	-- Watcher Jhang
 					["coord"] = { 52.3, 36.0, ZANGARMARSH },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Warlord Kalithresh slain
 							["provider"] = { "n", 17798 },	-- Warlord Kalithresh
@@ -70,7 +70,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						10666,	-- The Lexicon Demonica
 					},
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Vial of Underworld Loam
 							["provider"] = { "i", 30828 },	-- Vial of Underworld Loam
@@ -80,7 +80,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29615, {	-- Windcaller Claw and the Water Thief
 					["qg"] = 54851,	-- Windcaller Claw
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Hydromancer Thespia slain
 							["provider"] = { "n", 17797 },	-- Hydromancer Thespia
@@ -204,7 +204,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30623, 1 },	-- Reservoir Key
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

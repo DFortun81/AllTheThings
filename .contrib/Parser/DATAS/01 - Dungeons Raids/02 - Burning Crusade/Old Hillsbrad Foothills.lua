@@ -10,20 +10,20 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["lore"] = "Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",
 		["coord"] = { 26.8, 36.8, CAVERNS_OF_TIME },
 		["mapID"] = CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS,
-		["lvl"] = lvlsquish(63, 15, 63),
+		["lvl"] = lvlsquish(63, 63, 15),
 		["groups"] = {
 			n(QUESTS, {
 				q(10284, {	-- Escape from Durnholde
 					["qg"] = 17876,	-- Thrall
 					["sourceQuest"] = 10283,	-- Taretha's Diversion
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(66, 15, 66),
+					["lvl"] = lvlsquish(66, 66, 15),
 				}),
 				q(29599, {	-- Escape from Durnholde
 					["qg"] = 17876,	-- Thrall
 					["sourceQuest"] = 29598,	-- Taretha's Diversion
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(64, 15, 64),
+					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
 						i(29317),	-- Tempest's Touch
 						i(29318),	-- Southshore Sneakers
@@ -40,7 +40,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["races"] = { HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME },
-					["lvl"] = lvlsquish(66, 15, 66),
+					["lvl"] = lvlsquish(66, 66, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Don Carlos' Hat
 							["provider"] = { "i", 38329 },	-- Don Carlos' Hat
@@ -57,7 +57,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME }, ALL_RACES),
-					["lvl"] = lvlsquish(66, 15, 66),
+					["lvl"] = lvlsquish(66, 66, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Don Carlos' Hat
 							["provider"] = { "i", 38329 },	-- Don Carlos' Hat
@@ -73,13 +73,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					-- #else
 					["coord"] = { 58.4, 54.3, TANARIS },
 					-- #endif
-					["lvl"] = lvlsquish(66, 15, 66),
+					["lvl"] = lvlsquish(66, 66, 15),
 				}),
 				q(10283, {	-- Taretha's Diversion
 					["qg"] = 18723,	-- Erozion
 					["sourceQuest"] = 10282,	-- Old Hillsbrad
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(66, 15, 66),
+					["lvl"] = lvlsquish(66, 66, 15),
 					["groups"] = {
 						objective(1, {	-- Internment Lodges Set Ablaze
 							["provider"] = { "i", 25853 },	-- Pack of Incendiary Bombs
@@ -89,7 +89,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29598, {	-- Taretha's Diversion
 					["qg"] = 18723,	-- Erozion
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(64, 15, 64),
+					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
 						objective(1, {	-- Internment Lodges Set Ablaze
 							["provider"] = { "i", 25853 },	-- Pack of Incendiary Bombs
@@ -100,7 +100,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18723,	-- Erozion
 					["sourceQuest"] = 10284,	-- Escape from Durnholde
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(66, 15, 66),
+					["lvl"] = lvlsquish(66, 66, 15),
 					["groups"] = {
 						i(29317),	-- Tempest's Touch
 						i(29318),	-- Southshore Sneakers
@@ -228,7 +228,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30635, 1 },	-- Key of Time
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

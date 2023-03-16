@@ -161,7 +161,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 46077,	-- Lord Itharius
 					["sourceQuest"] = 27915,	-- The Heart of the Temple
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Shade of Eranikus slain
 							["provider"] = { "n", 5709 },	-- Shade of Eranikus
@@ -275,7 +275,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(27604, {	-- Jammal'an the Prophet
 					["qg"] = 46077,	-- Lord Itharius
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Jammal'an
 							["provider"] = { "i", 6212 },	-- Head of Jammal'an
@@ -346,7 +346,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(27633, {	-- The Blood God Hakkar
 					["qg"] = 46077,	-- Lord Itharius
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(50, 20, 50),
+					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Avatar of Hakkar slain
 							["provider"] = { "n", 8443 },	-- Avatar of Hakkar

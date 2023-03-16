@@ -86,7 +86,7 @@ _.Zones =
 				n(84951, {	-- Gobblefin
 					["questID"] = 36305,
 					["coord"] = { 33.6, 58.8, SPIRES_OF_ARAK },
-					["lvl"] = lvlsquish(100, 40, 100),
+					["lvl"] = lvlsquish(100, 100, 40),
 				}),
 				n(86724, {	-- Hermit Palefur
 					["questID"] = 36887,

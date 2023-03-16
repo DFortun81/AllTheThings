@@ -1217,8 +1217,10 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C = 2107;
 WRATH_PHASE_ONE = 30;
 WRATH_PHASE_ONE_REALM_FIRST = 3001;
 WRATH_PHASE_TWO = 31;
+WRATH_PHASE_TWO_HAMMERPRIO = 3101;
 WRATH_PHASE_THREE = 32;
 WRATH_PHASE_FOUR = 33;
+WRATH_PHASE_FOUR_SHADOWMOURNE = 3301;
 WRATH_PHASE_FIVE = 34;
 WRATH_PHASE_SIX = 35;
 
@@ -1847,40 +1849,44 @@ end
 
 -- Asset Path Helper Functions
 asset = function(path)
+	-- #if ANYCLASSIC
+	return "Interface\\Addons\\ATT-Classic\\assets\\" .. path;
+	-- #else
 	return "Interface\\Addons\\AllTheThings\\assets\\" .. path;
+	-- #endif
 end
 icon = function(path)
 	return "Interface\\Icons\\" .. path;
 end
 
 -- Classic / Retail Helper Functions
--- #if ANYCLASSIC
-applyclassicphase = function(phase, data)
-	return bubbleDown({ ["u"] = phase }, data);
-end
-applyholiday = function(holiday, data)
-	return bubbleDown({ ["u"] = holiday }, data);
-end
-lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
-	return originalLvl;
-end
--- #else
-applyclassicphase = function(phase, data)
+applyclassicphase = function(phase, data, force)
+	-- #if ANYCLASSIC
+	return (force and bubbleDownAndReplace or bubbleDown)({ ["u"] = phase }, data);
+	-- #else
 	return data;
+	-- #endif
 end
 applyholiday = function(holiday, data)
 	return bubbleDown({ ["u"] = holiday }, data);
 end
--- #if AFTER SHADOWLANDS
-lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
+local squishes = {};
+lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
+	if cataLvl < shadowlandsLvl then
+		local squish = "lvlsquish(" .. originalLvl .. ", " .. cataLvl .. ", " ..shadowlandsLvl .. ") > " .. "lvlsquish(" .. originalLvl .. ", " .. shadowlandsLvl .. ", " .. cataLvl .. ")";
+		if not squishes[squish] then
+			print("Someone messed up a lvlsquish order.", squish);
+			squishes[squish] = true;
+		end
+	end
+	-- #if AFTER SHADOWLANDS
 	return shadowlandsLvl;
+	-- #elseif AFTER CATA
+	return cataLvl;
+	-- #else
+	return originalLvl;
+	-- #endif
 end
--- #else
-lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
-	return retailLvl or originalLvl;
-end
--- #endif
--- #endif
 
 -- Cost Helper Functions
 applycost = function(item, ...)

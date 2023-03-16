@@ -712,7 +712,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(35, 10, 35),
+					["lvl"] = lvlsquish(35, 35, 10),
 					-- Horde Trauma (6623) is unavailable permanently, a GM confirmed this to me. Because of the phasing issue, they removed the quest from the NPC entirely.
 					["timeline"] = { "removed 7.3.5" },
 					-- #if AFTER 7.3.5
@@ -1411,7 +1411,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = FIRST_AID,
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/15 Patients Saved!
 							["provider"] = { "i", 16991 },	-- Triage Bandage

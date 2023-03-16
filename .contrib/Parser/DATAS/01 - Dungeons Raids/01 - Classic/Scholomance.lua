@@ -46,7 +46,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["maxReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
 						["timeline"] = { "added 4.0.3.13277" },
 						["repeatable"] = true,
-						["lvl"] = lvlsquish(40, 15, 40),
+						["lvl"] = lvlsquish(40, 40, 15),
 						["groups"] = {
 							objective(1, {	-- 0/1 Rattlegore slain
 								["provider"] = { "n", 59153 },	-- Rattlegore

@@ -80,7 +80,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuestNumRequired"] = 0,	-- Auto-accepted when getting close to Admiral Ripsnarl
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Admiral Ripsnarl slain
 							["provider"] = { "n", 47626 },	-- Admiral Ripsnarl
@@ -93,7 +93,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuestNumRequired"] = 0,	-- Auto-accepted when getting close to Foe Reaper 5000
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Foe Reaper 5000 slain
 							["provider"] = { "n", 43778 },	-- Foe Reaper 5000
@@ -121,7 +121,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					--["sourceQuest"] = 28004,	-- Adventurers Wanted: The Deadmines [Horde]
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Glubtok slain
 							["provider"] = { "n", 47162 },	-- Glubtok <The Foreman>
@@ -161,7 +161,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 27781,	-- The Machination
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Admiral Ripsnarl slain
 							["provider"] = { "n", 47626 },	-- Admiral Ripsnarl
@@ -173,7 +173,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 27756,	-- The Foreman
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Helix Gearbreaker slain
 							["provider"] = { "n", 47296 },	-- Helix Gearbreaker
@@ -207,7 +207,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 27785,	-- The Admiral
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 "Captain" Cookie slain
 							["provider"] = { "n", 47739 },	-- "Captain" Cookie <Defias Kingpin?>
@@ -222,7 +222,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 27848,	-- Good Intentions...Poor Execution
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 "Captain" Cookie slain
 							["provider"] = { "n", 47739 },	-- "Captain" Cookie <Defias Kingpin?>
@@ -241,7 +241,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					--["sourceQuest"] = 28005,	-- Adventurers Wanted: The Deadmines [Alliance]
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Glubtok slain
 							["provider"] = { "n", 47162 },	-- Glubtok <The Foreman>
@@ -253,7 +253,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 27758,	-- The Carpenter
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Foe Reaper 5000 slain
 							["provider"] = { "n", 43778 },	-- Foe Reaper 5000
@@ -275,7 +275,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuestNumRequired"] = 0,	-- Auto-accepted when getting close to Helix Gearbreaker
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 7, 15),
+					["lvl"] = lvlsquish(15, 15, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Helix Gearbreaker slain
 							["provider"] = { "n", 47296 },	-- Helix Gearbreaker
