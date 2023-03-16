@@ -1740,7 +1740,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				{ ["name"] = "Mystic Sun Crystal", ["recipeID"] = 53857 },
 				{ ["name"] = "Quick Autumn's Glow", ["recipeID"] = 53961 },
 				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Quick Dragon's Eye", ["recipeID"] = 56083 }),
-				{ ["name"] = "Quick King's Amber", ["recipeID"] = 66506 },
+				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Quick King's Amber", ["recipeID"] = 66506 }),
 				{ ["name"] = "Quick Sun Crystal", ["recipeID"] = 53856 },
 				-- #if BEFORE CATA
 				{ ["name"] = "Rigid Autumn's Glow [WRATH - Yellow] / Rigid Sky Sapphire [Blue]", ["recipeID"] = 53958 },
