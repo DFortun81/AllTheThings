@@ -1268,7 +1268,7 @@ CURRENT_TIER = WOD_TIER;
 -- #elseif AFTER CATA
 CURRENT_TIER = CATA_TIER;
 -- #elseif AFTER WRATH
-CURRENT_TIER = WRATH_TIER;
+CURRENT_TIER = WOTLK_TIER;
 -- #elseif AFTER TBC
 CURRENT_TIER = TBC_TIER;
 -- #else
@@ -1974,28 +1974,12 @@ unpack = function(t, i)
   end
 end
 
--- Asset Path Helper Functions
-asset = function(path)
-	-- #if ANYCLASSIC
-	return "Interface\\Addons\\ATT-Classic\\assets\\" .. path;
-	-- #else
-	return "Interface\\Addons\\AllTheThings\\assets\\" .. path;
-	-- #endif
+-- Helper Functions
+applyholiday = function(holiday, data)
+	return bubbleDown({ ["u"] = holiday }, data);
 end
 icon = function(path)
 	return "Interface\\Icons\\" .. path;
-end
-
--- Classic / Retail Helper Functions
-applyclassicphase = function(phase, data, force)
-	-- #if ANYCLASSIC
-	return (force and bubbleDownAndReplace or bubbleDown)({ ["u"] = phase }, data);
-	-- #else
-	return data;
-	-- #endif
-end
-applyholiday = function(holiday, data)
-	return bubbleDown({ ["u"] = holiday }, data);
 end
 local squishes = {};
 lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
@@ -2006,14 +1990,36 @@ lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
 			squishes[squish] = true;
 		end
 	end
+	local lvl;
 	-- #if AFTER SHADOWLANDS
-	return shadowlandsLvl;
+	lvl = shadowlandsLvl;
 	-- #elseif AFTER CATA
-	return cataLvl;
+	lvl = cataLvl;
 	-- #else
-	return originalLvl;
+	lvl = originalLvl;
 	-- #endif
+	return lvl;
 end
+
+-- Classic Only
+-- #IF ANYCLASSIC
+asset = function(path)
+	return "Interface\\Addons\\ATT-Classic\\assets\\" .. path;
+end
+applyclassicphase = function(phase, data, force)
+	return (force and bubbleDownAndReplace or bubbleDown)({ ["u"] = phase }, data);
+end
+
+-- Retail Only
+-- #ELSE
+asset = function(path)
+	return "Interface\\Addons\\AllTheThings\\assets\\" .. path;
+end
+applyclassicphase = function(phase, data, force)
+	return data;
+end
+
+-- #ENDIF
 
 -- Cost Helper Functions
 applycost = function(item, ...)
@@ -2233,10 +2239,12 @@ d = function(id, t)										-- Create a DIFFICULTY Object
 	-- #endif
 	return t;
 end
-e = function(id, t)										-- Create an ENCOUNTER Object
-	-- #if AFTER WRATH
+-- #if AFTER WRATH
+e = function(id, t)										-- Create an ENCOUNTER Object (Post-Wrath)
 	return struct("encounterID", id, t);
-	-- #else
+end
+-- #else
+e = function(id, t)										-- Create an ENCOUNTER Object (Post-Wrath)
 	-- Not yet supported in classic.
 	if t then
 		if t.groups or t.g then
@@ -2269,8 +2277,8 @@ e = function(id, t)										-- Create an ENCOUNTER Object
 			return { ["npcID"] = -1, ["groups"] = t };
 		end
 	end
-	-- #endif
 end
+-- #endif
 exploration = function(id, t)							-- Create an EXPLORATION Object
 	if type(t) == "string" then t = { ["maphash"] = t }; end
 	return struct("explorationID", id, t);
@@ -2461,13 +2469,15 @@ o_repeated = function(t)								-- Create a group which represents the shared co
 	end
 	print("Could not find a group with an objectID value");
 end
-petbattle = function(t)									-- Flag all nested content as requiring Pet Battle gameplay
-	-- #if ANYCLASSIC
+-- #if ANYCLASSIC
+petbattle = function(t)									-- Pet Battle (ignored in Classic)
 	return t;
-	-- #else
-	return bubbleDown({ ["pb"] = true }, t);
-	-- #endif
 end
+-- #else
+petbattle = function(t)									-- Pet Battle (bubbleDown pb filter)
+	return bubbleDown({ ["pb"] = true }, t);
+end
+-- #endif
 prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
