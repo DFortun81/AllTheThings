@@ -11371,6 +11371,8 @@
 17343@@@Drop It Like It's Hot
 17345@@@Airborne Tumbler
 17420@@@Trial of Tyr Ineligible For Spark Skip [DNT]
+10.0.5.48526
+17495@@@<Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
 10.0.7.47910
 16532@@@True Friends with Sabellian
 17214@@@Stormsunder Crater Circuit: Bronze
@@ -11489,7 +11491,6 @@
 17278@@@Forbidden Reach Rush Reverse: Gold
 17427@@@Winterpelt Conversationalist
 17428@@@<Hidden> Winterpelt Language - Send Mailer from Sonova
-17495@@@<Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
 17496@@@Renowned Weaponsmith
 17497@@@Renowned Armorsmith
 17498@@@Renowned Dragonscale Leatherworker

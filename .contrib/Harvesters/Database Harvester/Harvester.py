@@ -27,8 +27,11 @@ from ThingTypes import (
 )
 
 VERSION_THING_DICT: dict[str, list[type[Thing]]] = {
-    "retail": Thing.__subclasses__(),
-    "classic": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items],
+    "Beta": Thing.__subclasses__(),
+    "Classic": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items],
+    "PTR1": Thing.__subclasses__(),
+    "PTR2": Thing.__subclasses__(),
+    "Retail": Thing.__subclasses__(),
 }
 
 
@@ -45,8 +48,8 @@ def add_latest_build(build: str, thing: type[Thing]) -> list[str]:
         if version.parse(build) > version.parse(build_lines[-1]):
             build_lines.append(build + "\n")
             next_builds = list(build)
-    with open(Path("Builds", f"{thing.__name__}.txt"), "w") as build_list:
-        build_list.writelines(build_lines)
+    # with open(Path("Builds", f"{thing.__name__}.txt"), "w") as build_list:
+        # build_list.writelines(build_lines)
     return next_builds
 
 
@@ -426,40 +429,41 @@ def post_process(thing: type[Thing]) -> None:
         return
 
 
-def add_latest_data(build: str) -> None:
+def add_latest_data(build: str, version: str) -> None:
     """Adds latest builds to build files and add latests data to raw files"""
-    things: list[type[Thing]] = Thing.__subclasses__()
+    things: list[type[Thing]] = VERSION_THING_DICT[version]
     for thing in things:
         print(thing)
-        ask = input("Y/N?")
-        if ask == "Y":
-            before_list: list[str] = []
-            after_list: list[str] = []
-            next_builds: list[str] = add_latest_build(build, thing)
-            raw_path = Path("Raw", f"{thing.__name__}.txt")
-            thing_list = get_thing_data(thing, build.strip(), "classic")
-            with open(raw_path, "r") as raw_file:
-                old_lines = raw_file.readlines()
-                for next_build in next_builds:
-                    if next_build in old_lines:
-                        index = old_lines.index(next_build)
-                        before_list = old_lines[:index]
-                        after_list = old_lines[index:]
-                        break
-                    else:
-                        before_list = old_lines
-                        after_list = []
-                difference = sorted(
-                    set(thing_list) - set(before_list),
-                    key=lambda x: (float(x.split(DELIMITER)[0])),
-                )
-                if difference:
-                    before_list.append(build + "\n")
-                    before_list.extend(difference)
-                    before_list.extend(after_list)
-                    before_list = list(dict.fromkeys(before_list))
-            with open(raw_path, "w") as raw_file:
-                raw_file.writelines(before_list)
+        #ask = input("Y/N?")
+        #if ask == "Y":
+        before_list: list[str] = []
+        after_list: list[str] = []
+        next_builds: list[str] = add_latest_build(build, thing)
+        raw_path = Path("Raw", f"{thing.__name__}.txt")
+        thing_list = get_thing_data(thing, build.strip(), version)
+        with open(raw_path, "r") as raw_file:
+            old_lines = raw_file.readlines()
+            for next_build in next_builds:
+                if next_build in old_lines:
+                    index = old_lines.index(next_build)
+                    before_list = old_lines[:index]
+                    after_list = old_lines[index:]
+                    break
+                else:
+                    before_list = old_lines
+                    after_list = []
+            print(after_list)
+            difference = sorted(
+                set(thing_list) - set(before_list),
+                key=lambda x: (float(x.split(DELIMITER)[0])),
+            )
+            if difference:
+                before_list.append(build + "\n")
+                before_list.extend(difference)
+            before_list.extend(after_list)
+            before_list = list(dict.fromkeys(before_list))
+        with open(raw_path, "w") as raw_file:
+            raw_file.writelines(before_list)
 
 
 # def add_latest_data(build: str) -> None:
@@ -546,7 +550,7 @@ def give_name_quest() -> None:
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-add_latest_data("3.4.1.48503")
+add_latest_data("10.0.5.48526", "Retail")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
