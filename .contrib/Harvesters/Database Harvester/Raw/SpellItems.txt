@@ -3997,13 +3997,14 @@
 3881@@@+17 Mana every 5 seconds
 3882@@@+8 Armor Penetration Rating
 3883@@@Rune of the Nerubian Carapace
-3.4.1.48503
+3.4.0.46158
 3045@@@+5 Strength and +6 Stamina 
 3050@@@+6 Spell Power and +4 Intellect 
 3155@@@Chance to Increase Melee/Ranged Attack Speed 
 3430@@@+6 Defense Rating and +9 Stamina 
 3643@@@Chance to Increase Melee/Ranged Attack Speed 
 3700@@@+7 Defense Rating and +11 Stamina 
+3.4.1.48503
 4.0.1.12911
 2@@@Frostbrand
 5@@@Flametongue

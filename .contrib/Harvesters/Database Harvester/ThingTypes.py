@@ -74,7 +74,7 @@ class Factions(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Factions have names in the same db
-        if build and version.parse(build) < version.parse("3.9.9.99999"):
+        if build and version.parse(build) < version.parse("3.9.9.99999") and version.parse(build) > version.parse("3.4.1.46722"):
             name = "Field_3_4_1_46722_001_lang"
             id = "Field_3_4_1_46722_003"
         else:

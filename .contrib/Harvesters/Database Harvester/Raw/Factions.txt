@@ -526,8 +526,9 @@
 1156@@@The Ashen Verdict
 1159@@@CTF - Flag - Alliance 2
 1160@@@CTF - Flag - Horde 2
-3.4.1.48503
+3.4.0.46158
 6@@@PLAYER, Tauren 
+3.4.1.48503
 4.0.1.12911
 52@@@Orc, Fel Dragonmaw
 54@@@Gnomeregan

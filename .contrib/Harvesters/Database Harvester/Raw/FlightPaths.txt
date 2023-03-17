@@ -468,8 +468,9 @@
 438@@@Durotar - ET - CC Prologue Troll Taxi Bat Start
 439@@@Durotar - ET - CC Prologue Troll Recruit End
 440@@@Durotar - ET - CC Prologue - Troll Battle End
-3.4.1.48503
+3.4.0.46158
 103@@@Nagrand - PvP - Attack Run Start 1 
+3.4.1.48503
 4.0.1.12911
 25@@@Crossroads, Northern Barrens
 26@@@Lor'danel, Darkshore

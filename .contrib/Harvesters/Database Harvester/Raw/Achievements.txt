@@ -2702,7 +2702,7 @@
 1685@@@Holiday Bromance
 1686@@@Holiday Bromance
 4627@@@X-45 Heartbreaker
-3.4.1.48503
+3.4.0.46158
 15330@@@Survivor of the Firelord (Season of Mastery)
 15332@@@[DNT] Survivor (Season of Mastery) (hidden)
 15333@@@Survivor of the Shadow Flame (Season of Mastery)
@@ -2718,6 +2718,7 @@
 16397@@@[DNT] Heirloom Tracking - Bloodied Arcanite Reaper (Hidden)
 16433@@@Soul of Iron (Season of Mastery)
 16437@@@[DNT] Soul of Iron Tracker (Season of Mastery) (hidden)
+3.4.1.48503
 17213@@@Defense Protocol Alpha: Utgarde Keep
 17283@@@Defense Protocol Alpha: The Nexus
 17285@@@Defense Protocol Alpha: Azjol-Nerub
