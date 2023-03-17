@@ -569,7 +569,7 @@ namespace ATT
                             // setting a spellID on an Item with a recipeID should do nothing
                             if (field == "spellID" && item.TryGetValue("recipeID", out long recipeID) && recipeID > 0)
                             {
-                                Log($"WARN: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' : {MiniJSON.Json.Serialize(item)}");
+                                LogDebug($"WARN: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' : {MiniJSON.Json.Serialize(item)}");
                                 break;
                             }
 
