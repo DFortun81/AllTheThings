@@ -11527,6 +11527,8 @@
 10.0.7.48295
 17398@@@Dragon Glyphs: Winglord's Perch
 17404@@@Dragon Glyphs: Talonlords' Perch
+10.0.7.48520
+17426@@@Toolbox Trouble
 10.1.0.48480
 17429@@@Crystal Circuit: Bronze
 17430@@@Crystal Circuit: Silver
@@ -11616,7 +11618,6 @@
 17727@@@Obsidian Combatant
 17728@@@Obsidian Combatant
 10.1.0.48537
-17426@@@Toolbox Trouble
 17735@@@We Didn't Start the Fire
 17736@@@The Gift of Cheese
 17737@@@Flame Warden of the Dragon Isles
