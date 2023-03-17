@@ -21,16 +21,19 @@ from ThingTypes import (
     Toys,
     Transmog,
     SpellItems,
+    SpellNames,
     SkillLines,
     Items,
+    Creatures,
     remove_non_digits,
 )
 
 VERSION_THING_DICT: dict[str, list[type[Thing]]] = {
     "Beta": Thing.__subclasses__(),
-    "Classic": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items],
-    "Classic Beta": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items],
-    "Classic PTR": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items],
+    "Classic": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items, SpellNames],
+    "Classic Beta": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items, SpellNames],
+    "Classic Era": [Achievements, Factions, FlightPaths, Quests, Recipes, Transmog, SpellItems, SkillLines, Items, SpellNames, Creatures],
+    "Classic PTR": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items, SpellNames],
     "PTR1": Thing.__subclasses__(),
     "PTR2": Thing.__subclasses__(),
     "Retail": Thing.__subclasses__(),
@@ -551,7 +554,7 @@ def give_name_quest() -> None:
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-add_latest_data("3.4.0.46158", "Classic Beta")
+add_latest_data("1.14.3.46575", "Classic Era")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()

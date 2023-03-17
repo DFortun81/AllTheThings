@@ -1938,6 +1938,8 @@
 2825@@@+$i Attack Power
 2826@@@+$i Block
 3726@@@+$i Haste
+1.14.3.46575
+250@@@Weapon Damage +1 
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
