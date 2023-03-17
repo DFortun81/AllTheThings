@@ -3997,6 +3997,13 @@
 3881@@@+17 Mana every 5 seconds
 3882@@@+8 Armor Penetration Rating
 3883@@@Rune of the Nerubian Carapace
+3.4.1.48503
+3045@@@+5 Strength and +6 Stamina 
+3050@@@+6 Spell Power and +4 Intellect 
+3155@@@Chance to Increase Melee/Ranged Attack Speed 
+3430@@@+6 Defense Rating and +9 Stamina 
+3643@@@Chance to Increase Melee/Ranged Attack Speed 
+3700@@@+7 Defense Rating and +11 Stamina 
 4.0.1.12911
 2@@@Frostbrand
 5@@@Flametongue
@@ -4124,7 +4131,6 @@
 3001@@@+16 Intellect and +18 Spirit
 3014@@@zzOLDWindfury Totem 5 (L70 Testing)
 3021@@@Rockbiter
-3045@@@+5 Strength and +6 Stamina
 3046@@@+5 Intellect and +4 Haste Rating
 3047@@@+5 Critical Strike Rating and +6 Stamina
 3049@@@+5 Critical Strike Rating and +4 Spirit
@@ -6513,7 +6519,6 @@
 3152@@@+$k1 Critical Strike
 3153@@@+$k1 Spell Power
 3154@@@+$k1 Agility and $44797s1% Increased Critical Effect
-3155@@@Chance to Increase Melee/Ranged Attack Speed
 3156@@@+$k1 Agility and +$k2 Stamina
 3157@@@+$k1 Intellect and +$k2 Stamina
 3158@@@+$k1 Intellect and +$k2 Spirit
@@ -6898,7 +6903,6 @@
 3640@@@+$k1 Haste and Sometimes Heal on Your Crits
 3641@@@+$k1 Critical Strike and +$55337s1% Mana
 3642@@@+$k1 Stamina and Stun Duration Reduced by 10%
-3643@@@Chance to Increase Melee/Ranged Attack Speed
 3644@@@+$k1 Agility
 3646@@@+$k1 Dodge
 3647@@@+$k1 Expertise

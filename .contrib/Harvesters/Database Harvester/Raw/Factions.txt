@@ -526,6 +526,8 @@
 1156@@@The Ashen Verdict
 1159@@@CTF - Flag - Alliance 2
 1160@@@CTF - Flag - Horde 2
+3.4.1.48503
+6@@@PLAYER, Tauren 
 4.0.1.12911
 52@@@Orc, Fel Dragonmaw
 54@@@Gnomeregan
@@ -999,9 +1001,7 @@
 2523@@@Dark Talons
 2524@@@Obsidian Warders
 10.0.2.46259
-6@@@PLAYER, Tauren
 10.0.2.47187
-6@@@PLAYER, Tauren 
 10.0.7.47910
 2557@@@Hearthfire Fellowship
 10.1.0.48480

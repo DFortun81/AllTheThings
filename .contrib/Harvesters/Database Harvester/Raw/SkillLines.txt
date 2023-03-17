@@ -264,6 +264,9 @@
 270@@@Pet - Generic Hunter
 787@@@Pet - Exotic Core Hound
 788@@@Pet - Exotic Spirit Beast
+3.4.1.48503
+633@@@Lockpicking
+776@@@Runeforging
 4.0.1.12911
 134@@@Feral
 789@@@Racial - Worgen
