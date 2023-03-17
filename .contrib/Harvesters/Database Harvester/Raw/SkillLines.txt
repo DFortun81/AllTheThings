@@ -222,8 +222,6 @@
 1.13.0.28211
 270@@@Pet - Generic
 758@@@Pet - Event - Remote Control
-1.14.3.46575
-633@@@Lockpicking
 2.0.0.6080
 755@@@Jewelcrafting
 756@@@Blood Elf Racial
@@ -266,9 +264,6 @@
 270@@@Pet - Generic Hunter
 787@@@Pet - Exotic Core Hound
 788@@@Pet - Exotic Spirit Beast
-3.4.0.46158
-776@@@Runeforging
-3.4.1.48503
 4.0.1.12911
 134@@@Feral
 789@@@Racial - Worgen

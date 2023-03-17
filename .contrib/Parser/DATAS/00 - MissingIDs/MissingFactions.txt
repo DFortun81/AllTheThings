@@ -4,7 +4,7 @@ faction(2),	-- PLAYER, Orc \\ Orc (Player)
 faction(3),	-- PLAYER, Dwarf \\ Dwarf (Player)
 faction(4),	-- PLAYER, Night Elf \\ Nightelf (Player)
 faction(5),	-- PLAYER, Undead \\ Undead (Player)
-faction(6),	-- PLAYER, Tauren \\ PLAYER, Tauren \\ PLAYER, Tauren \\ Tauren (Player)
+faction(6),	-- PLAYER, Tauren \\ PLAYER, Tauren \\ Tauren (Player)
 faction(7),	-- Creature
 faction(8),	-- PLAYER, Gnome \\ Gnome (Player)
 faction(9),	-- PLAYER, Troll \\ Troll (Player)

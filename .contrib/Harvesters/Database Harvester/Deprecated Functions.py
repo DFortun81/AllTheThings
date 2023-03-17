@@ -52,3 +52,30 @@ def create_named_file(thing: type[Thing]) -> None:
                 ids[index] += "\n"
         with open(named_path, "w") as named_file:
             named_file.writelines(ids)
+
+
+# def add_latest_data(build: str) -> None:
+#    """Adds latest builds to build files and add latests data to raw files"""
+#    add_latest_build(build)
+#    things: list[type[Thing]] = Thing.__subclasses__()
+#    for thing in things:
+#        print(thing)
+#        raw_path = Path("Raw", f"{thing.__name__}.txt")
+#        thing_list = get_thing_data(thing, build.strip())
+#        with open(raw_path, "r+") as raw_file:
+#            old_lines = raw_file.readlines()
+#            # TODO: this only finds new Things, not removed Things
+#            difference = sorted(
+#                set(thing_list) - set(old_lines),
+#                key=lambda x: (float(x.split(DELIMITER)[0])),
+#            )
+#            if difference:
+#                raw_file.write(build + "\n")
+#                raw_file.writelines(difference)
+
+
+# def add_latest_build(build: str) -> None:
+#    """Append the latest build to all the BuildList files."""
+#    for thing in Thing.__subclasses__():
+#        with open(Path("Builds", f"{thing.__name__}.txt"), "a") as build_list:
+#            build_list.write(build + "\n")

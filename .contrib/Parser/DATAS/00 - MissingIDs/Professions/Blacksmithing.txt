@@ -116,22 +116,6 @@ r(322643),	-- Sinsteel Blade
 r(322644),	-- Sinsteel Shanker
 r(322645),	-- Sinsteel Spear
 r(322646),	-- Sinsteel Warglaive
-10.0.7.47910
-r(402118),	-- Gurubashi Headplate
-r(402123),	-- Gurubashi Carver
-r(402124),	-- Venomfang
-r(402125),	-- Gurubashi Poker
-r(402126),	-- Gurubashi Grinder
-r(402128),	-- Gurubashi Hexxer
-r(402129),	-- Sceptre of Hexing
-r(402130),	-- Gurubashi Crusher
-r(402131),	-- Pitchfork of Mojo Madness
-r(402133),	-- Venomreaver
-r(402134),	-- Bloodherald
-r(402135),	-- Bloodlord's Reaver
-r(402136),	-- Fiery Vengeance
-r(402137),	-- Warblades of the Hakkari, Reborn
-r(402138),	-- Gurubashi Slicer
 10.1.0.48480
 r(403158),	-- Obsidian Combatant's Draconium Armguards
 r(403159),	-- Obsidian Combatant's Draconium Breastplate

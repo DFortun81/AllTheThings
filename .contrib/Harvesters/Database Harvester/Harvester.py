@@ -58,13 +58,6 @@ def add_latest_build(build: str, thing: type[Thing]) -> list[str]:
     return next_builds
 
 
-# def add_latest_build(build: str) -> None:
-#    """Append the latest build to all the BuildList files."""
-#    for thing in Thing.__subclasses__():
-#        with open(Path("Builds", f"{thing.__name__}.txt"), "a") as build_list:
-#            build_list.write(build + "\n")
-
-
 def get_thing_data(thing: type[Thing], build: str, version: str) -> list[str]:
     """Get the IDs (and some thing specific data) of a thing from a build."""
     thing_list: list[str] = list[str]()
@@ -439,8 +432,6 @@ def add_latest_data(build: str, version: str) -> None:
     things: list[type[Thing]] = VERSION_THING_DICT[version]
     for thing in things:
         print(thing)
-        #ask = input("Y/N?")
-        #if ask == "Y":
         before_list: list[str] = []
         after_list: list[str] = []
         next_builds: list[str] = add_latest_build(build, thing)
@@ -468,26 +459,6 @@ def add_latest_data(build: str, version: str) -> None:
             before_list = list(dict.fromkeys(before_list))
         with open(raw_path, "w") as raw_file:
             raw_file.writelines(before_list)
-
-
-# def add_latest_data(build: str) -> None:
-#    """Adds latest builds to build files and add latests data to raw files"""
-#    add_latest_build(build)
-#    things: list[type[Thing]] = Thing.__subclasses__()
-#    for thing in things:
-#        print(thing)
-#        raw_path = Path("Raw", f"{thing.__name__}.txt")
-#        thing_list = get_thing_data(thing, build.strip())
-#        with open(raw_path, "r+") as raw_file:
-#            old_lines = raw_file.readlines()
-#            # TODO: this only finds new Things, not removed Things
-#            difference = sorted(
-#                set(thing_list) - set(old_lines),
-#                key=lambda x: (float(x.split(DELIMITER)[0])),
-#            )
-#            if difference:
-#                raw_file.write(build + "\n")
-#                raw_file.writelines(difference)
 
 
 def create_missing_files() -> None:
@@ -554,11 +525,11 @@ def give_name_quest() -> None:
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-add_latest_data("1.14.3.46575", "Classic Era")
+# add_latest_data("3.4.0.46158", "Classic Beta")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
 """Step 5: Run create_missing_files() (you have to uncomment it)"""
 # create_missing_files()
 """Step 6: Run available_post_process() (you have to uncomment it) This is still underwork and currently only Achievements, Factions, Flight Paths, Illusions, Mounts, Pets, Titles and Toys can be Post Processed"""
-# available_post_process()
+available_post_process()

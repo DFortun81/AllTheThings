@@ -644,6 +644,8 @@ p(3473),	-- Cozmos
 p(3474),	-- Celastro
 10.0.7.47983
 p(3476),	-- Gilded Mechafrog
+10.0.7.48520
+p(3475),	-- Volatile Self-Driving Toolbox
 10.1.0.48480
 p(3477),	-- Puddlehopper
 p(3478),	-- Rock Martin
@@ -707,7 +709,6 @@ p(3554),	-- Senega
 p(3555),	-- Axel
 p(3556),	-- Kromos
 10.1.0.48537
-p(3475),	-- Volatile Self-Driving Toolbox
 p(3557),	-- Roggy
 p(3558),	-- Murrey
 p(3559),	-- Clawz
@@ -1959,6 +1960,8 @@ p(3218),	-- Enraged Poultrid
 p(3219),	-- Predatory Helicid \\ Predatory Gastropod
 9.2.0.41726
 p(3246),	-- Tezpet
+10.0.7.48520
+p(3475),	-- Volatile Self-Driving Toolbox
 10.1.0.48480
 p(3477),	-- Puddlehopper
 p(3478),	-- Rock Martin
@@ -2022,7 +2025,6 @@ p(3554),	-- Senega
 p(3555),	-- Axel
 p(3556),	-- Kromos
 10.1.0.48537
-p(3475),	-- Volatile Self-Driving Toolbox
 p(3557),	-- Roggy
 p(3558),	-- Murrey
 p(3559),	-- Clawz

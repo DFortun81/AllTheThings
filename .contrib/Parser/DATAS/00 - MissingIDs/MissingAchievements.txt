@@ -3,16 +3,16 @@ ach(9275),	-- Warlord Zaela kills (Upper Blackrock Spire)
 1.14.1.40666
 ach(15329),	-- Has Died
 1.14.1.40688
-ach(15330),	-- Survivor of the Firelord \\ Survivor of the Flames
-ach(15332),	-- Survivor
+ach(15330),	-- Survivor of the Firelord (Season of Mastery) \\ Survivor of the Firelord \\ Survivor of the Flames
+ach(15332),	-- [DNT] Survivor (Season of Mastery) (hidden) \\ Survivor
 1.14.1.40800
-ach(15333),	-- Survivor of the Shadow Flame
-ach(15334),	-- Survivor of the Old God
-ach(15335),	-- Survivor of the Damned
+ach(15333),	-- Survivor of the Shadow Flame (Season of Mastery) \\ Survivor of the Shadow Flame
+ach(15334),	-- Survivor of the Old God (Season of Mastery) \\ Survivor of the Old God
+ach(15335),	-- Survivor of the Damned (Season of Mastery) \\ Survivor of the Damned
 1.14.2.42597
 ach(15578),	-- <Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
 1.14.3.42770
-ach(15637),	-- The Immortal
+ach(15637),	-- The Immortal (Season of Mastery) \\ The Immortal
 2.5.1.39399
 ach(15018),	-- Infernal Gladiator
 ach(15019),	-- Gladiator: Season 1
@@ -33,10 +33,39 @@ ach(15207),	-- Challenger: Season 3
 ach(15208),	-- Duelist: Season 2
 ach(15209),	-- Rival: Season 2
 ach(15210),	-- Challenger: Season 2
+3.4.0.46158
+ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
+ach(16313),	-- Rival: Season 5
+ach(16314),	-- Gladiator: Season 5
+ach(16315),	-- Duelist: Season 5
+ach(16316),	-- Challenger: Season 5
+ach(16332),	-- The Perfect Pebble
+ach(16397),	-- [DNT] Heirloom Tracking - Bloodied Arcanite Reaper (Hidden)
+ach(16433),	-- Soul of Iron (Season of Mastery)
+ach(16437),	-- [DNT] Soul of Iron Tracker (Season of Mastery) (hidden)
+3.4.1.48503
+ach(17213),	-- Defense Protocol Alpha: Utgarde Keep
+ach(17283),	-- Defense Protocol Alpha: The Nexus
+ach(17285),	-- Defense Protocol Alpha: Azjol-Nerub
+ach(17291),	-- Defense Protocol Alpha: Ahn'kahet: The Old Kingdom
+ach(17292),	-- Defense Protocol Alpha: Drak'Tharon Keep
+ach(17293),	-- Defense Protocol Alpha: The Violet Hold
+ach(17295),	-- Defense Protocol Alpha: Gundrak
+ach(17297),	-- Defense Protocol Alpha: Halls of Stone
+ach(17299),	-- Defense Protocol Alpha: Halls of Lightning
+ach(17300),	-- Defense Protocol Alpha: The Oculus
+ach(17301),	-- Defense Protocol Alpha: Utgarde Pinnacle
+ach(17302),	-- Defense Protocol Alpha: The Culling of Stratholme
+ach(17304),	-- Defense Protocol Alpha: Terminated
+ach(17328),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
+ach(17340),	-- Ahead of the Curve: Yogg-Saron
+ach(17341),	-- Cutting Edge: Ulduar
 4.0.1.12911
 ach(5020),	-- Observed - Guild Edition \\ He Feeds On Your Tears - Guild Edition
 10.0.2.45779
 ach(16729),	-- To All the Squirrels Hidden Til Now \\ To All the Squirrels Hidden Till Now
+10.0.5.48526
+ach(17495),	-- <Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
 10.0.7.47910
 ach(17214),	-- Stormsunder Crater Circuit: Bronze
 ach(17215),	-- Stormsunder Crater Circuit: Silver
@@ -136,7 +165,6 @@ ach(17424),	-- <DNT> Artisan's Consortium Reputation is Valued (Rank 3)
 10.0.7.47983
 ach(17427),	-- Winterpelt Conversationalist
 ach(17428),	-- <Hidden> Winterpelt Language - Send Mailer from Sonova
-ach(17495),	-- <Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
 ach(17496),	-- Renowned Weaponsmith
 ach(17497),	-- Renowned Armorsmith
 ach(17498),	-- Renowned Leatherworking Specialist \\ Renowned Dragonscale Leatherworker
@@ -164,6 +192,8 @@ ach(17541),	-- Global Swarming
 ach(17543),	-- You Know How to Reach Me
 10.0.7.48220
 ach(17546),	-- A New Beginning
+10.0.7.48520
+ach(17426),	-- Toolbox Trouble
 10.1.0.48480
 ach(17429),	-- Crystal Circuit: Bronze
 ach(17430),	-- Crystal Circuit: Silver
@@ -253,7 +283,6 @@ ach(17726),	-- Vicious Saddle (37)
 ach(17727),	-- Obsidian Combatant
 ach(17728),	-- Obsidian Combatant
 10.1.0.48537
-ach(17426),	-- Toolbox Trouble
 ach(17735),	-- We Didn't Start the Fire
 ach(17736),	-- The Gift of Cheese
 ach(17737),	-- Flame Warden of the Dragon Isles
