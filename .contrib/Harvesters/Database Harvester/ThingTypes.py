@@ -1,6 +1,7 @@
 import re
 from abc import ABC, abstractmethod
 from pathlib import Path
+from packaging import version
 
 DATAS_FOLDER = Path("..", "..", "Parser", "DATAS")
 DELIMITER = "@@@"
@@ -73,8 +74,13 @@ class Factions(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Factions have names in the same db
-        name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
-        return f"{row['ID']}{DELIMITER}{row[name]}"
+        if build and version.parse(build) < version.parse("3.9.9.99999"):
+            name = "Field_3_4_1_46722_001_lang"
+            id = "Field_3_4_1_46722_003"
+        else:
+            name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
+            id = "ID"
+        return f"{row[id]}{DELIMITER}{row[name]}"
 
 
 class FlightPaths(Thing):
