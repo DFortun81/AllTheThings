@@ -883,6 +883,7 @@ root(ROOTS.Zones, {
 								["cr"] = 21795,	-- Shadowmoon Harbinger
 								["provider"] = { "i", 30719 },	-- Spectrecles (Provided)
 							}),
+							i(30719),	-- Spectrecles
 						},
 					}),
 					q(10621, {	-- Illidari Bane-Shard (A)
@@ -1268,6 +1269,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10624,	-- A Haunted History
 						["coord"] = { 29.9, 27.6, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(30719),	-- Spectrecles
+						},
 					}),
 					q(10661, {	-- Spleendid!
 						["qg"] = 21777,	-- Gnomus
@@ -1395,12 +1399,18 @@ root(ROOTS.Zones, {
 						},
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(67, 67, 25),
+						["groups"] = {
+							i(30721),	-- Spectrecles
+						},
 					}),
 					q(10633, {	-- Teron Gorefiend - Lore and Legend (H)
 						["qg"] = 21772,	-- Chief Apothecary Hildagard
 						["sourceQuest"] = 10625,	-- Spectrecles
 						["coord"] = { 29.9, 27.6, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(30721),	-- Spectrecles
+						},
 					}),
 					q(10606, {	-- The Art of Fel Reaver Maintenance (A)
 						["qg"] = 21790,	-- Plexi

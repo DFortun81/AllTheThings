@@ -460,29 +460,8 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"]
 				i(168004),	-- Gift of N'Zoth	-- TODO Battle for Azeroth
 			}),
 			filter(MISC, {
-				i(34828),	-- Antique Silver Cufflinks
-				i(33105),	-- Budd's Guise of Zul'aman
-				i(44692),	-- Dalaran Nurse's Gown
-				i(13896),	-- Dark Green Wedding Hanbok
-				i(44737),	-- Draenic Silk Robes
-				i(34087),	-- Green Winter Clothes
-				i(49916),	-- Lovely Charm Bracelet
-				i(5514),	-- Mana Agate
-				i(43486),	-- Mohawk Mask
-				i(34827),	-- Noble's Monocle
-				i(44648),	-- Purple Turban
-				i(34085),	-- Red Winter Clothes
-				i(38160),	-- Soul-Trader's Bindings
-				i(38162),	-- Soul-Trader's Boots
-				i(38161),	-- Soul-Trader's Gloves
-				i(38163),	-- Soul-Trader's Head Wrap
-				i(38286),	-- Soul-Trader's Pauldrons
-				i(38285),	-- Soul-Trader's Waistband
-				i(30719),	-- Spectrecles
-				i(30721),	-- Spectrecles
-				i(46735),	-- Synthebrew Goggles
-				i(44647),	-- Violet Hat
-				i(34086),	-- Winter Boots
+				i(33105),	-- Budd's Guise of Zul'aman	-- something removed
+				i(43486),	-- Mohawk Mask	-- something removed
 			}),
 			filter(FINGER_F, {
 				i(7341),	-- Cubic Zirconia Ring	-- sold by many vendors

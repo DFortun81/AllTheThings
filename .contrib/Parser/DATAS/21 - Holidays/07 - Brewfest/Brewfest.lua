@@ -1142,6 +1142,9 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 							},
 							["cr"] = 23487,	-- Wild Wolpertinger
 						}),
+						i(46735, {	-- Synthebrew Goggles
+							["timeline"] = { "added 3.2.0.10314" },
+						}),
 						i(32233, {	-- Wolpertinger's Tankard (Pet)
 							["timeline"] = { "added 2.2.2" },
 						}),
@@ -1171,6 +1174,9 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 								-- #endif
 							},
 							["cr"] = 23487,	-- Wild Wolpertinger
+						}),
+						i(46735, {	-- Synthebrew Goggles
+							["timeline"] = { "added 3.2.0.10314" },
 						}),
 						i(32233, {	-- Wolpertinger's Tankard (Pet)
 							["timeline"] = { "added 2.2.2" },
@@ -1438,6 +1444,9 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 							["provider"] = { "i", 32960 },	-- Elekk Dispersion Ray
 							["cr"] = 23527,	-- Teldrassil Pink Elekk
 						}),
+						i(46735, {	-- Synthebrew Goggles
+							["timeline"] = { "added 3.2.0.10314" },
+						}),
 					}),
 				}),
 				q(11120, {	-- Pink Elekks On Parade (H) [Non-EU Only!]
@@ -1470,6 +1479,9 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 						objective(3, {	-- 0/3 Tirisfal Pink Elekk slain
 							["provider"] = { "i", 32960 },	-- Elekk Dispersion Ray
 							["cr"] = 23530,	-- Tirisfal Pink Elekk
+						}),
+						i(46735, {	-- Synthebrew Goggles
+							["timeline"] = { "added 3.2.0.10314" },
 						}),
 					}),
 				}),

@@ -2955,6 +2955,7 @@ local keys = {
 		["71599"] = "First Craft: Blazing Ink",
 		["71601"] = "First Craft: Serene Ink",
 		["71602"] = "First Craft: Pendant of Impending Perils",
+		["71604"] = "First Craft: Choker of Shielding",
 		["71605"] = "First Craft: Signet of Titanic Insight",
 		["71606"] = "First Craft: Ring-Bound Hourglass",
 		["71608"] = "First Craft: Crimson Combatant's Jeweled Amulet",

@@ -1861,6 +1861,11 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		category(188, {	-- Devices
 			i(18662),	-- Heavy Leather Ball
 		}),
+		category(258, {	-- Boots
+			i(34086, {	-- Winter Boots
+				["timeline"] = { "added 2.3.0.7382", "removed 7.3.5" },
+			}),
+		}),
 		category(259, {	-- Cloaks
 			i(8216),	-- Big Voodoo Cloak
 			i(7283),	-- Black Whelp Cloak
@@ -2561,6 +2566,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(2585),	-- Gray Woolen Robe
 			i(6264),	-- Greater Adept's Robe
 			i(7065),	-- Green Silk Armor
+			i(34087, {	-- Green Winter Clothes
+				["timeline"] = { "added 2.3.0.7382", "removed 7.3.5" },
+			}),
 			i(2582),	-- Green Woolen Vest
 			i(38277, {	-- Haliscan Jacket
 				["timeline"] = { "added 2.4.2.8301" },
@@ -2571,6 +2579,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(2572),	-- Red Linen Robe
 			i(6239),	-- Red Linen Vest
 			i(10007),	-- Red Mageweave Vest
+			i(34085, {	-- Red Winter Clothes
+				["timeline"] = { "added 2.3.0.7382", "removed 7.3.5" },
+			}),
 			i(7054),	-- Robe of Power
 			i(14152),	-- Robe of the Archmage
 			i(14153, {	-- Robe of the Void

@@ -5476,6 +5476,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.0, 37.4, NORTHREND_DALARAN },
 						["groups"] = {
 							i(44694),	-- Antiseptic-Soaked Dressing
+							i(44692),	-- Dalaran Nurse's Gown
 							i(44693),	-- Wound Dressing
 						},
 					}),
@@ -5861,6 +5862,13 @@ root(ROOTS.Zones, {
 							i(23817, {	-- Schematic: Titanium Toolbox
 								["isLimited"] = true,
 							}),
+						},
+					}),
+					n(29702, {	-- Chameli Banaphash <Haberdasher>
+						["coord"] = { 44.8, 46.6, NORTHREND_DALARAN },
+						["groups"] = {
+							i(44648),	-- Purple Turban
+							i(44647),	-- Violet Hat
 						},
 					}),
 					n(28699, {	-- Charles Worth <Tailoring Trainer>
@@ -6694,6 +6702,11 @@ root(ROOTS.Zones, {
 							i(44235, {	-- Traveler's Tundra Mammoth (A) (MOUNT!)
 								["races"] = ALLIANCE_ONLY,
 								["cost"] = 200000000,	-- 20,000g
+								["groups"] = {
+									i(44737, {	-- Draenic Silk Robes
+										["cr"] = 32638,	-- Hakmud of Argus <Traveling Trader>
+									}),
+								},
 							}),
 							i(44234, {	-- Traveler's Tundra Mammoth (H) (MOUNT!)
 								["races"] = HORDE_ONLY,

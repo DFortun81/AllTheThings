@@ -1493,6 +1493,7 @@ root(ROOTS.Zones, {
 							i(35350),	-- Chuck's Bucket
 							i(34826),	-- Gold Wedding Band
 							i(33818),	-- Muckbreath's Bucket
+							i(34827),	-- Noble's Monocle
 							i(34829),	-- Ornate Drinking Stein
 							i(35349),	-- Snarly's Bucket
 							i(33816),	-- Toothy's Bucket
@@ -1506,6 +1507,7 @@ root(ROOTS.Zones, {
 							i(34834),	-- Recipe: Captain Rumsey's Lager
 							i(34831),	-- Eye of the Sea
 							i(34826),	-- Gold Wedding Band
+							i(34827),	-- Noble's Monocle
 							i(34829),	-- Ornate Drinking Stein
 							i(34859),	-- Razor Sharp Fillet Knife
 							i(34836),	-- Spun Truesilver Fishing Line
