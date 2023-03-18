@@ -4559,89 +4559,37 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 				n(33595, {	-- Mera Mistrunner <Cooking Supplies>
 					["coord"] = { 72.4, 20.8, ICECROWN },
 					["groups"] = {
-						i(46349, {	-- Chef's Hat
-							["timeline"] = { "deleted 7.0.3.22248" },
-							["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
-						}),
-						i(134020, {	-- Chef's Hat (TOY!)
-							["timeline"] = { "added 7.0.3.22248" },
-							["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
-						}),
-						i(43007, {	-- Northern Spices
-							["cost"] = { { "c", 81, 1 }, },	-- 1x Epicurean's Award
-						}),
-						i(43035, {	-- Recipe: Blackened Dragonfin
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43032, {	-- Recipe: Blackened Worg Steak
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43029, {	-- Recipe: Critter Bites
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43033, {	-- Recipe: Cuttlesteak
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43036, {	-- Recipe: Dragonfin Filet
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43024, {	-- Recipe: Firecracker Salmon
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43017, {	-- Recipe: Fish Feast
-							["cost"] = { { "c", 81, 5 }, },	-- 5x Epicurean's Award
-						}),
-						i(43505, {	-- Recipe: Gigantic Feast
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43030, {	-- Recipe: Hearty Rhino
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43026, {	-- Recipe: Imperial Manta Steak
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43018, {	-- Recipe: Mega Mammoth Meal
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43022, {	-- Recipe: Mighty Rhino Dogs
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43023, {	-- Recipe: Poached Northern Sculpin
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43028, {	-- Recipe: Rhinolicious Wormsteak
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43506, {	-- Recipe: Small Feast
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43031, {	-- Recipe: Snapper Extreme
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43034, {	-- Recipe: Spiced Mammoth Treats
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43020, {	-- Recipe: Spiced Worm Burger
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43025, {	-- Recipe: Spicy Blue Nettlefish
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43027, {	-- Recipe: Spicy Fried Herring
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43019, {	-- Recipe: Tender Shoveltusk Steak
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43037, {	-- Recipe: Tracker Snacks
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(43021, {	-- Recipe: Very Burnt Worg
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(44954, {	-- Recipe: Worg Tartare
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
+						epicurean(100, i(46349, {	-- Chef's Hat
+								["timeline"] = { "deleted 7.0.3.22248" },
+							})),
+							epicurean(100, i(134020, {	-- Chef's Hat (TOY!)
+								["timeline"] = { "added 7.0.3.22248" },
+							})),
+							epicurean(1, i(43007)),	-- Northern Spices
+							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin
+							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak
+							epicurean(3, i(43029)),	-- Recipe: Critter Bites
+							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak
+							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet
+							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon
+							epicurean(5, i(43017)),	-- Recipe: Fish Feast
+							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast
+							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino
+							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak
+							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal
+							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs
+							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin
+							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak
+							epicurean(3, i(43506)),	-- Recipe: Small Feast
+							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme
+							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats
+							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger
+							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish
+							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring
+							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak
+							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks
+							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg
+							epicurean(3, i(44954)),	-- Recipe: Worg Tartare
 					},
 				}),
 				n(33650, {	-- Rillie Spindlenut <Gnomeregan Quartermaster>

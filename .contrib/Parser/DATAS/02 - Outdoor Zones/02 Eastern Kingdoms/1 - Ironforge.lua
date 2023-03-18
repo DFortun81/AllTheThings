@@ -1341,7 +1341,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 60.6, 38.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
-					["sym"] = { {"sub", "common_recipes_vendor", 49737} }, -- Shazdar <Sous Chef>
+					["sym"] = {{"sub", "common_recipes_vendor", 49701}}, -- Jon Casper <Sous Chef>
 					-- #endif
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight

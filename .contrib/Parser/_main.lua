@@ -2037,7 +2037,15 @@ champ = function(cost, item)							-- Assign a Champion's Seal cost to an item w
 	applycost(item, { "c", 241, cost });	-- Champion's Seal
 	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
-daljewelcraftingtoken = function(cost, item)				-- Assign a Dalaran Jewelcrafter's Token cost to an item.
+chefsaward = function(cost, item)						-- Assign a Chef's Award or Epicurean's Award cost to an item. (based on patch)
+	-- #if AFTER 5.0.4
+	applycost(item, { "c", 81, cost });	-- Epicurean's Award
+	-- #else
+	applycost(item, { "c", 402, cost });	-- Chef's Award
+	-- #endif
+	return item;
+end
+daljewelcraftingtoken = function(cost, item)			-- Assign a Dalaran Jewelcrafter's Token cost to an item.
 	applycost(item, { "c", 61, cost });
 	return item;
 end
@@ -2070,6 +2078,10 @@ emov = function(cost, item)								-- Assign a Emblem of Valor cost to an item w
 	applycost(item, { "c", 102, cost });	-- Emblem of Valor
 	-- #endif
 	return applyclassicphase(WRATH_PHASE_ONE, item);
+end
+epicurean = function(cost, item)						-- Assign a Epicurean's Award cost to an item.
+	applycost(item, { "c", 81, cost });
+	return item;
 end
 gold = function(cost, item)								-- Assign a Gold cost to an item.
 	applycost(item, { "g", cost * 10000 });	-- Gold

@@ -6748,98 +6748,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {}),
 				}),
 				-- #endif
-				n(49701, {	-- Jon Casper <Sous Chef>
+				n(49701, {	-- Jon Casper <Sous Chef>
 					["coord"] = { 50.6, 71.6, STORMWIND_CITY },
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(65426, {	-- Recipe: Baked Rockfish
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65427, {	-- Recipe: Basilisk Liverdog
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65429, {	-- Recipe: Beer-Basted Crocolisk
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65424, {	-- Recipe: Blackbelly Sushi
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65411, {	-- Recipe: Broiled Mountain Trout
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65431, {	-- Recipe: Chocolate Cookie
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65430, {	-- Recipe: Crocolisk Au Gratin
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65422, {	-- Recipe: Delicious Sagefish Tail
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65408, {	-- Recipe: Feathered Lure
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65423, {	-- Recipe: Fish Fry
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65432, {	-- Recipe: Fortune Cookie
-							["cost"] = { { "c", 81, 5 }, },	-- 5x Epicurean's Award
-						}),
-						i(65428, {	-- Recipe: Grilled Dragon
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65418, {	-- Recipe: Hearty Seafood Soup
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65415, {	-- Recipe: Highland Spirits
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65407, {	-- Recipe: Lavascale Fillet
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65409, {	-- Recipe: Lavascale Minestrone
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65412, {	-- Recipe: Lightly Fried Lurker
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65416, {	-- Recipe: Lurker Lunch
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65420, {	-- Recipe: Mushroom Sauce Mudfish
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65417, {	-- Recipe: Pickled Guppy
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65410, {	-- Recipe: Salted Eye
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(68688, {	-- Recipe: Scalding Murglesnout
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65413, {	-- Recipe: Seasoned Crab
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65421, {	-- Recipe: Severed Sagefish Head
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65425, {	-- Recipe: Skewered Eel
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65433, {	-- Recipe: South Island Iced Tea
-							["cost"] = { { "c", 81, 5 }, },	-- 5x Epicurean's Award
-						}),
-						i(65414, {	-- Recipe: Starfire Espresso
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65419, {	-- Recipe: Tender Baked Turtle
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65406, {	-- Recipe: Whitecrest Gumbo
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
+						chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish
+						chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog
+						chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk
+						chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi
+						chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout
+						chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie
+						chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin
+						chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail
+						chefsaward(3, i(65408)),	-- Recipe: Feathered Lure
+						chefsaward(3, i(65423)),	-- Recipe: Fish Fry
+						chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie
+						chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon
+						chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup
+						chefsaward(3, i(65415)),	-- Recipe: Highland Spirits
+						chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet
+						chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone
+						chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker
+						chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch
+						chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish
+						chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy
+						chefsaward(3, i(65410)),	-- Recipe: Salted Eye
+						chefsaward(3, i(68688)),	-- Recipe: Scalding Murglesnout
+						chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab
+						chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head
+						chefsaward(3, i(65425)),	-- Recipe: Skewered Eel
+						chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea
+						chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso
+						chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle
+						chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo
 					},
 				}),
 				n(55684, {	-- Jordan Smith <Blacksmithing Trainer & Supplies>
