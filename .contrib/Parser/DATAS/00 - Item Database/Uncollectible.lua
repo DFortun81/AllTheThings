@@ -159,7 +159,6 @@ i(23766);	-- Stabilized Eternium Scope
 i(23820);	-- Critter Enlarger
 i(28421);	-- Adamantite Weightstone
 
-i(34258);	-- Love Rocket
 i(180686);	-- "Borrowed" Soulstone
 i(181616);	-- A Treatise on the Great Battles of Lordaeron
 i(33930);	-- Amani Charm of the Bloodletter
@@ -254,9 +253,6 @@ i(15723);	-- Tea with Sugar
 i(180709);	-- Tempered Armor Patch
 i(178602);	-- Thorny Loop
 i(169860);	-- Tiny Dapper Hat
-i(143858);	-- Twilight Cultist Cowl
-i(143857);	-- Twilight Cultist Mantle
-i(143855);	-- Twilight Cultist Robe
 i(182198);	-- Undulating Blood Burrower
 i(168003);	-- Unstable Manapearl
 i(13514);	-- Wail of the Banshee
@@ -297,7 +293,6 @@ i(185916);	-- Codex of Memories
 i(146686);	-- Colorless Shroud of Xavius
 i(183042);	-- Colossal Power Core
 i(169235);	-- Confusing Spring Box
-i(12843);	-- Corruptor's Scourgestone
 i(169250);	-- Crude Eating Utensil
 i(9265);	-- Cuergo's Hidden Treasure
 i(182955);	-- Cypher of Dampening
@@ -331,7 +326,6 @@ i(118383);	-- Heart of Stone (N)
 i(118386);	-- Heart of Stone (H)
 i(118389);	-- Heart of Stone (M)
 i(168236);	-- Hearthstone Card
-i(158913);	-- Huge Dragon Kite
 i(181471);	-- Humility's Guard
 i(169240);	-- Idea Starter
 i(169233);	-- Infinite Loop Spring
@@ -412,14 +406,11 @@ i(169247);	-- Throwing Rocks
 i(146698);	-- Torn Bracers of the First War
 i(169226);	-- Torn Sheet Music
 i(169255);	-- Tuft of Red Fur
-i(12812);	-- Unfired Plate Gauntlets
-i(12806);	-- Unforged Rune Covered Breastplate
 i(118377);	-- Universal Language Module
 i(169239);	-- Unknowable Cube
 i(169225);	-- Unstoppable Countdown Clock
 i(169867);	-- Visual Holo Sphere
 i(146688);	-- Waterlogged Handmaiden's Gloves
-i(146702);	-- White Lightningsteel
 i(156926);	-- Witchrend
 i(142509);	-- Withered Targeting Orb
 i(164761);	-- Xal'atath, Blade of the Black Empire
@@ -465,7 +456,6 @@ i(180983);	-- Artisan's Stuffed Satchel
 i(173791);	-- Baguette
 i(181362);	-- Blob of Slime
 i(171209);	-- Blooded Satchel
-i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries
 i(171987);	-- Champions of Azeroth Survival Kit
 i(180486);	-- Chiu's Lute
@@ -508,7 +498,6 @@ i(173771);	-- Old Apple
 i(173778);	-- Orange Orange
 i(179392);	-- Orb of Burgeoning Ambition
 i(72201);	-- Plump Intestines
-i(9316);	-- Prismatic Punch Card
 i(183987);	-- Prisoner Cage Key
 i(185615);	-- Recovered Phantasma
 i(79104);	-- Rusty Watering Can
@@ -529,12 +518,10 @@ i(171211);	-- Venthyr's Coin Purse
 i(80513);	-- Vintage Bug Sprayer
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate
-i(9279);	-- White Punch Card
 i(160376);	-- Wilderbew Special
 i(180470);	-- Wild Fungus
 i(173773);	-- Yeasty Hunk
 
-i(4407);	-- Accurate Scope
 i(15869);	-- Silver Skeleton Key
 i(15870);	-- Golden Skeleton Key
 i(15871);	-- Truesilver Skeleton Key
@@ -561,7 +548,6 @@ i(169473);	-- Dormant Scale of the Blue Aspect
 
 -- Grey
 i(158931);	-- Shiny Object
-i(158932);	-- Lucky Charm
 i(159621);	-- Personal Anchor
 i(162126);	-- River Clam Meat
 i(192631);	-- Scale-Piercing Fang

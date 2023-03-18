@@ -2281,22 +2281,17 @@ namespace ATT
 
         private static void ProcessContainer(KeyValuePair<string, List<object>> container)
         {
+            switch (container.Key)
+            {
+                // don't process uncollectibles in the normal way
+                case "Uncollectible":
+                    return;
+                default:
+                    break;
+            }
+
             ProcessingAchievementCategory = container.Key.Contains("Achievement");
-            // uncollectibles don't need to be processed, just marked as 'referenced' so they aren't added to Unsorted
-            if (MergeItemData && container.Key == "Uncollectible")
-            {
-                foreach (object itemObj in container.Value)
-                {
-                    if (itemObj is Dictionary<string, object> item)
-                    {
-                        Items.MarkItemAsReferenced((long)Items.GetSpecificItemID(item));
-                    }
-                }
-            }
-            else
-            {
-                Process(container.Value, 0, 1);
-            }
+            Process(container.Value, 0, 1);
         }
 
         /// <summary>
@@ -2304,6 +2299,27 @@ namespace ATT
         /// </summary>
         private static void AdditionalProcessing()
         {
+            // Mark uncollectibles & warn if Sourced
+            if (Objects.AllContainers.TryGetValue("Uncollectible", out List<object> objects))
+            {
+                foreach (object itemObj in objects)
+                {
+                    if (itemObj is Dictionary<string, object> item)
+                    {
+                        decimal itemID = Items.GetSpecificItemID(item);
+                        if (Items.IsItemReferenced(itemID))
+                        {
+                            LogDebug($"WARN: Item {itemID} is referenced and also included in Uncollectibles");
+                        }
+                        else
+                        {
+                            Items.MarkItemAsReferenced(itemID);
+                        }
+                    }
+                }
+            }
+
+
             // Merge conditional data
             ProcessingMergeData = true;
             foreach (var data in ConditionalItemData)

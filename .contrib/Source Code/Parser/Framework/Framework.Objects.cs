@@ -2143,10 +2143,10 @@ end
                     }
 
                     // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                    if (costType == "i")
+                    if (costType == "i" && cost[1].TryConvert(out long costID))
                     {
                         // cost item can be a ModItemID (decimal) value as well, but only care to mark the raw ItemID as referenced
-                        Items.MarkItemAsReferenced(Convert.ToInt64(Convert.ToDecimal(cost[1])));
+                        Items.MarkItemAsReferenced(costID);
                     }
                 }
 
