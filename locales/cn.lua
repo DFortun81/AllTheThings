@@ -717,8 +717,6 @@ for key,value in pairs({
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."（直升）",	-- Level 50 (Boost)
 	-- Class Hall /Artifact
 		[-159] = "事件投骰",										-- Daily Dreamway Event Roll
-	-- Other
-		--TODO: [-210] = ALLIED.." "..NEW.." "..CHARACTER,			-- Allied New Character
 	-- Fishing
 		[-217] = "鱼竿",												-- Lures (for Fishing)
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
@@ -727,7 +725,7 @@ for key,value in pairs({
 		[-242] = "无评级",												-- Unrated
 		[-243] = "赏金任务",											-- Bounty
 	-- Allied Races
-		[-254] = "同盟种族 & 传承护甲",										-- Allied Races & Heritage
+		[-255] = "传承护甲",											-- Heritage
 	-- First Questline Draenor
 		[-356] = "进攻黑暗之门",										-- Assault on the Dark Portal
 	-- Outposts in Draenor
@@ -885,8 +883,6 @@ for key,value in pairs({
 			[-5203] = "荣誉奖励",										-- Prestige Rewards
 			[-5204] = "挑战外观",										-- Challenge Appearance
 			[-5205] = "隐藏外观",										-- Hidden Appearance
-		-- Class Sets
-			[-5350] = "职业试用套装",										-- Class Trial
 
 		[-7776] = "冬季狂欢者",											-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------

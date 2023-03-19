@@ -712,7 +712,6 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
 	-- Other
-		--TODO: [-210] = ALLIED.." "..NEW.." "..CHARACTER,			-- Allied New Character
 		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing
@@ -723,7 +722,7 @@ for key,value in pairs({
 		[-242] = "Ungewertet",										-- Unrated
 		[-243] = "Preisgeld",										-- Bounty
 	-- Allied Races
-		[-254] = "Verbündete Völker & Traditionsrüstung",			-- Allied Races & Heritage
+		[-255] = "Traditionsrüstung",								-- Heritage
 	-- First Questline Draenor
 		[-356] = "Angriff auf das Dunkle Portal",					-- Assault on the Dark Portal
 	-- Outposts in Draenor
@@ -878,8 +877,6 @@ for key,value in pairs({
 			--TODO: [-5203] = "Prestige Rewards",					-- Prestige Rewards
 			--TODO: [-5204] = "Challenge Appearance",				-- Challenge Appearance
 			--TODO: [-5205] = "Hidden Appearance",					-- Hidden Appearance
-		-- Class Sets
-			--TODO: [-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",	-- Class Trial Item Sets
 
 		[-7776] = "Winterfeiernder",								-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------

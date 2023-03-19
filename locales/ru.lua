@@ -700,19 +700,18 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		[-159] = "Ролл События",									-- Daily Dreamway Event Roll
 	-- Other
-		[-210] = "Новый персонаж Союзной расы",						-- Allied New Character
 		[-211] = "Новый персонаж",									-- New Character
 		[-212] = "Сундук с сокровищами",							-- Treasure Chest
 	-- Fishing
 		[-217] = "Наживки",											-- Lures (for Fishing)
 		[-218] = "Побережье",										-- Coastal (for Fishing)
 	[-219] = "Без Источника",										-- Sourceless
-	[-228] = "Точка полета",									-- GetSpellInfo(218950),  -- Flight Path
+	[-228] = "Точка полета",										-- GetSpellInfo(218950),  -- Flight Path
 	-- PvP
 		[-242] = "Нерейтинговые",									-- Unrated
 		[-243] = "Премия",											-- Bounty
 	-- Allied Races
-		[-254] = "Союзные расы & Традиционные доспехи",				-- Allied Races & Heritage
+		[-255] = "Традиционные доспехи",							-- Heritage
 	-- First Questline Draenor
 		[-356] = "Атака на Темный портал",							-- Assault on the Dark Portal
 	-- Outposts in Draenor
@@ -865,8 +864,6 @@ for key,value in pairs({
 			[-5203] = "Награды за Престиж",							-- Prestige Rewards
 			[-5204] = "Облик Испытаний",							-- Challenge Appearance
 			[-5205] = "Скрытый облик",								-- Hidden Appearance
-		-- Class Sets
-			[-5350] = "Комплекты Пробных персонажей",				-- Class Trial
 
 		[-7776] = "Гуляка Зимнего Покрова",							-- Winter Revelers (for Winter Veil)
 	-- Classes
