@@ -2046,102 +2046,105 @@ namespace ATT
                     else tier = tierLists[1];
                 }
 
-                if (item.TryGetValue("f", out long filterID) && filterID >= 0 && (filterID < 56 || filterID > 90))
+                if (CheckTimeline(item))
                 {
-                    Objects.Filters filter = (Objects.Filters)filterID;
-                    item.TryGetValue("q", out long quality);
-                    switch (filter)
+                    if (item.TryGetValue("f", out long filterID) && filterID >= 0 && (filterID < 56 || filterID > 90))
                     {
-                        case Objects.Filters.Invalid:
-                        case Objects.Filters.Ignored:
-                        case Objects.Filters.Quest:
-                        case Objects.Filters.Holiday:
-                            // specific types we don't really care to Source unless they are actually determined to be useful
-                            break;
-                        case Objects.Filters.Recipe:
-                            {
-                                if (!tier.FilteredLists.TryGetValue(filterID, out listing))
+                        Objects.Filters filter = (Objects.Filters)filterID;
+                        item.TryGetValue("q", out long quality);
+                        switch (filter)
+                        {
+                            case Objects.Filters.Invalid:
+                            case Objects.Filters.Ignored:
+                            case Objects.Filters.Quest:
+                            case Objects.Filters.Holiday:
+                                // specific types we don't really care to Source unless they are actually determined to be useful
+                                break;
+                            case Objects.Filters.Recipe:
                                 {
-                                    tier.Groups.Add(new Dictionary<string, object>
+                                    if (!tier.FilteredLists.TryGetValue(filterID, out listing))
+                                    {
+                                        tier.Groups.Add(new Dictionary<string, object>
                                         {
                                             { "f", filterID },
                                             { "g", listing = tier.FilteredLists[filterID] = new List<object>() }
                                         });
-                                }
-                                if (item.TryGetValue("requireSkill", out object requireSkillRef))
-                                {
-                                    requireSkill = Convert.ToInt64(requireSkillRef);
-                                    if (!tier.ProfessionLists.TryGetValue(requireSkill, out List<object> sublisting))
+                                    }
+                                    if (item.TryGetValue("requireSkill", out object requireSkillRef))
                                     {
-                                        listing.Add(new Dictionary<string, object>
+                                        requireSkill = Convert.ToInt64(requireSkillRef);
+                                        if (!tier.ProfessionLists.TryGetValue(requireSkill, out List<object> sublisting))
+                                        {
+                                            listing.Add(new Dictionary<string, object>
                                             {
                                                 {"professionID", requireSkill },
                                                 { "g", listing = tier.ProfessionLists[requireSkill] = new List<object>() }
                                             });
+                                        }
+                                        else
+                                        {
+                                            listing = sublisting;
+                                        }
                                     }
                                     else
                                     {
-                                        listing = sublisting;
-                                    }
-                                }
-                                else
-                                {
-                                    if (!tier.ProfessionLists.TryGetValue(-1, out List<object> sublisting))
-                                    {
-                                        listing.Add(new Dictionary<string, object>
+                                        if (!tier.ProfessionLists.TryGetValue(-1, out List<object> sublisting))
+                                        {
+                                            listing.Add(new Dictionary<string, object>
                                             {
                                                 { "f", (int)Objects.Filters.Miscellaneous },
                                                 { "g", listing = tier.ProfessionLists[-1] = new List<object>() }
                                             });
+                                        }
+                                        else
+                                        {
+                                            listing = sublisting;
+                                        }
                                     }
-                                    else
-                                    {
-                                        listing = sublisting;
-                                    }
-                                }
 
-                                if (item.TryGetValue("itemID", out long itemID))
-                                {
-                                    var newItem = new Dictionary<string, object>
+                                    if (item.TryGetValue("itemID", out long itemID))
+                                    {
+                                        var newItem = new Dictionary<string, object>
                                         {
                                             {"itemID", itemID },
                                         };
-                                    Items.MergeInto(itemID, item, newItem);
-                                    listing.Add(newItem);
+                                        Items.MergeInto(itemID, item, newItem);
+                                        listing.Add(newItem);
+                                    }
+                                    break;
                                 }
-                                break;
-                            }
-                        default:
-                            {
-                                switch (filter)
+                            default:
                                 {
-                                    case Objects.Filters.Consumable:
-                                        // ignore white/grey consumables from going into unsorted
-                                        if (quality < 2)
-                                            continue;
-                                        break;
-                                }
-                                item.Remove("spellID");
-                                if (!tier.FilteredLists.TryGetValue(filterID, out listing))
-                                {
-                                    tier.Groups.Add(new Dictionary<string, object>
+                                    switch (filter)
+                                    {
+                                        case Objects.Filters.Consumable:
+                                            // ignore white/grey consumables from going into unsorted
+                                            if (quality < 2)
+                                                continue;
+                                            break;
+                                    }
+                                    item.Remove("spellID");
+                                    if (!tier.FilteredLists.TryGetValue(filterID, out listing))
+                                    {
+                                        tier.Groups.Add(new Dictionary<string, object>
                                         {
                                             { "f", filterID },
                                             { "g", listing = tier.FilteredLists[filterID] = new List<object>() }
                                         });
-                                }
+                                    }
 
-                                if (item.TryGetValue("itemID", out long itemID))
-                                {
-                                    var newItem = new Dictionary<string, object>
+                                    if (item.TryGetValue("itemID", out long itemID))
+                                    {
+                                        var newItem = new Dictionary<string, object>
                                         {
                                             {"itemID", itemID },
                                         };
-                                    Items.MergeInto(itemID, item, newItem);
-                                    listing.Add(newItem);
+                                        Items.MergeInto(itemID, item, newItem);
+                                        listing.Add(newItem);
+                                    }
+                                    break;
                                 }
-                                break;
-                            }
+                        }
                     }
                 }
             }

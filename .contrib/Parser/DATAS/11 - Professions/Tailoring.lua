@@ -2035,13 +2035,38 @@ profession(TAILORING, {
 					["recipeID"] = 56009
 				},
 				{
+					["name"] = "Darkglow Embroidery",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 55769
+				},
+				{
+					["name"] = "Lightweave Embroidery",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 55642
+				},
+				{
+					["name"] = "Master's Spellthread",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 56034
+				},
+				{
+					["name"] = "Sanctified Spellthread",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 56039
+				},
+				{
 					["name"] = "Sapphire Spellthread",
 					["recipeID"] = 56011
 				},
 				{
 					["name"] = "Shining Spellthread",
 					["recipeID"] = 56008
-				}
+				},
+				{
+					["name"] = "Swordguard Embroidery",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 55777
+				},
 			}
 		},
 		{
