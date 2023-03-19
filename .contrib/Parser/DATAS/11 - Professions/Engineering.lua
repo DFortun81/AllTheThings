@@ -1049,12 +1049,32 @@ profession(ENGINEERING, {
 					["recipeID"] = 54793,
 				},
 				{
+					["name"] = "Hand-Mounted Pyro Rocket",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 54998,
+				},
+				{
+					["name"] = "Hyperspeed Accelerators",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 54999,
+				},
+				{
 					["name"] = "Mind Amplification Dish",
 					["recipeID"] = 67839,
 				},
 				{
 					["name"] = "Nitro Boosts",
 					["recipeID"] = 55016,
+				},
+				{
+					["name"] = "Reticulated Armor Webbing",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 63770,
+				},
+				{
+					["name"] = "Springy Arachnoweave",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 63765,
 				},
 			},
 		},
