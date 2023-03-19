@@ -3525,6 +3525,7 @@ for key,value in pairs({
 	[377317] = "Куча сокровищ",	-- Treasure Hoard
 	[377458] = "Брошенная оружейная стойка",	-- Abandoned Weapon Rack
 	[377466] = "Потерянные песочные часы драконов",	-- Lost Draconic Hourglass
+	[377485] = "Кислое яблоко",	-- Sour Apple
 	[377499] = "О происхождении видов драконов",	-- On the Origin of Draconic Species
 	[377534] = "Доставленный сундук",	-- Delivered Vault
 	[377899] = "Скрытый заложник рогоплава",	-- Hidden Hornswog Hostage
@@ -3690,10 +3691,14 @@ for key,value in pairs({
 	--TODO: [385415] = "Bone Pile",	-- Bone Pile
 	--TODO: [385468] = "Bone Pile",	-- Bone Pile
 	--TODO: [385520] = "Bone Pile",	-- Bone Pile
+	--TODO: [385533] = "Sending Stone: Protest",	-- Sending Stone: Protest
 	--TODO: [385799] = "Hardened Strongbox",	-- Hardened Strongbox
 	--TODO: [385800] = "Gold Pile",	-- Gold Pile
 	--TODO: [385801] = "Gold Pile",	-- Gold Pile
 	--TODO: [385802] = "Gold Pile",	-- Gold Pile
+	--TODO: [385830] = "Sending Stone: Initial Report",	-- Sending Stone: Initial Report
+	--TODO: [385832] = "Receiving Stone: Final Warning",	-- Receiving Stone: Final Warning
+	--TODO: [385834] = "Journal Entry: Experiments",	-- Journal Entry: Experiments
 	--TODO: [385836] = "Journal Entry: The Creches",	-- Journal Entry: The Creches
 	--TODO: [385837] = "Journal Entry: Silence",	-- Journal Entry: Silence
 	--TODO: [385952] = "Unusual Ring",	-- Unusual Ring
