@@ -1814,6 +1814,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71666, { ["name"] = "First Craft: Alexstraszite Loupes", }),
 			q(71663, { ["name"] = "First Craft: Fine-Print Trifocals", }),
 			q(71616, { ["name"] = "First Craft: Split-Lens Specs", }),
+			q(71604, { ["name"] = "First Craft: Choker of Shielding", }),
 			q(71605, { ["name"] = "First Craft: Signet of Titanic Insight", }),
 			q(71606, { ["name"] = "First Craft: Ring-Bound Hourglass", }),
 		})),

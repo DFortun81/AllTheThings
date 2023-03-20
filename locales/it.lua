@@ -709,7 +709,6 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
 	-- Other
-		--TODO: [-210] = ALLIED.." "..NEW.." "..CHARACTER,			-- Allied New Character
 		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing
@@ -720,7 +719,7 @@ for key,value in pairs({
 		--TODO: [-242] = "Unrated",									-- Unrated
 		--TODO: [-243] = "Bounty",									-- Bounty
 	-- Allied Races
-		[-254] = "Razze Alleate & Armatura Retaggio",				-- Allied Races & Heritage
+		[-255] = "Armatura Retaggio",								-- Heritage
 	-- First Questline Draenor
 		--TODO: [-356] = "Assault on the Dark Portal",				-- Assault on the Dark Portal
 	-- Outposts in Draenor
@@ -869,8 +868,6 @@ for key,value in pairs({
 			--TODO: [-5203] = "Prestige Rewards",					-- Prestige Rewards
 			--TODO: [-5204] = "Challenge Appearance",				-- Challenge Appearance
 			--TODO: [-5205] = "Hidden Appearance",					-- Hidden Appearance
-		-- Class Sets
-			--TODO: [-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",	-- Class Trial Item Sets
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
@@ -3529,6 +3526,7 @@ for key,value in pairs({
 	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
+	[377485] = "Mela Acida",	-- Sour Apple
 	[377499] = "Sulle Origini delle Specie Draconiche",	-- On the Origin of Draconic Species
 	[377534] = "Scrigno Consegnato",	-- Delivered Vault
 	[377899] = "Ostaggio dei Drospi Cornuti Nascosto",	-- Hidden Hornswog Hostage
@@ -3694,10 +3692,14 @@ for key,value in pairs({
 	--TODO: [385415] = "Bone Pile",	-- Bone Pile
 	--TODO: [385468] = "Bone Pile",	-- Bone Pile
 	--TODO: [385520] = "Bone Pile",	-- Bone Pile
+	--TODO: [385533] = "Sending Stone: Protest",	-- Sending Stone: Protest
 	--TODO: [385799] = "Hardened Strongbox",	-- Hardened Strongbox
 	--TODO: [385800] = "Gold Pile",	-- Gold Pile
 	--TODO: [385801] = "Gold Pile",	-- Gold Pile
 	--TODO: [385802] = "Gold Pile",	-- Gold Pile
+	--TODO: [385830] = "Sending Stone: Initial Report",	-- Sending Stone: Initial Report
+	--TODO: [385832] = "Receiving Stone: Final Warning",	-- Receiving Stone: Final Warning
+	--TODO: [385834] = "Journal Entry: Experiments",	-- Journal Entry: Experiments
 	--TODO: [385836] = "Journal Entry: The Creches",	-- Journal Entry: The Creches
 	--TODO: [385837] = "Journal Entry: Silence",	-- Journal Entry: Silence
 	--TODO: [385952] = "Unusual Ring",	-- Unusual Ring

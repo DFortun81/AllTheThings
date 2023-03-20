@@ -2288,6 +2288,7 @@ root(ROOTS.Zones, {
 					}),
 					n(24330, {	-- Orson Locke <Sharp Blades>
 						["coord"] = { 53.8, 66.8, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(40005),	-- Forsaken Blade
 							i(40004),	-- Forsaken Greatsword

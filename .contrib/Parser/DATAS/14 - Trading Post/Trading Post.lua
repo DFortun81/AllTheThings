@@ -183,17 +183,15 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 root(ROOTS.HiddenQuestTriggers, {
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {
 		-- These don't trigger when using ensembles, but they are listed on Wowhead
-		q(65677),	-- Ensemble: Wanderer's Rosy Trappings
-		q(65720),	-- Ensemble: Swashbuckling Buccaneer's Slops
-		q(65737),	-- Ensemble: Vagabond's Rosy Threads
-		-- Future ensembles
 		q(65502),	-- Ensemble: Fel-Automaton Exoplate
 		q(65533),	-- Ensemble: Vestment of the Honored Valarjar
 		q(65570),	-- Ensemble: Vagabond's Midnight Threads
 		q(65648),	-- Ensemble: Wanderer's Midnight Trappings
 		q(65673),	-- Ensemble: Wanderer's Violet Trappings
-		-- q(65677),	-- Ensemble: Wanderer's Azure/Snowy Trappings	-- Wowhead has same id as Rosy Trappings
+		q(65677),	-- Ensemble: Wanderer's Rosy/Azure/Snowy Trappings
 		q(65678),	-- Ensemble: Vagabond's Azure Threads
+		q(65720),	-- Ensemble: Swashbuckling Buccaneer's Slops
+		q(65737),	-- Ensemble: Vagabond's Rosy Threads
 		q(65672),	-- Ensemble: Vagabond's Violet Threads
 		q(65696),	-- Ensemble: Battlewraps of the Honored Valarjar
 		q(65718),	-- Ensemble: Slumbering Caldera Regalia
@@ -251,7 +249,7 @@ root(ROOTS.NeverImplemented, {
 			filter(COSMETIC, {
 				-- Ensemble
 				i(190725, {	-- Ensemble: Battlewraps of the Honored Valarjar
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+					["cost"] = { { "c", TRADERS_TENDER, 850 }, },
 					["g"] = {
 						-- i(),	--
 						-- i(),	--
@@ -335,7 +333,7 @@ root(ROOTS.NeverImplemented, {
 				-- 	},
 				-- }),
 				i(190095, {	-- Ensemble: Vestment of the Honored Valarjar
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+					["cost"] = { { "c", TRADERS_TENDER, 850 }, },
 					["g"] = {
 						-- i(),	--
 						-- i(),	--

@@ -2,6 +2,7 @@
 import csv
 import re
 from pathlib import Path
+from packaging import version
 
 from ThingTypes import (
     DATAS_FOLDER,
@@ -19,21 +20,48 @@ from ThingTypes import (
     Titles,
     Toys,
     Transmog,
+    SpellItems,
+    SpellNames,
+    SkillLines,
+    Items,
+    Creatures,
     remove_non_digits,
 )
 
+VERSION_THING_DICT: dict[str, list[type[Thing]]] = {
+    "Beta": Thing.__subclasses__(),
+    "Classic": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items, SpellNames],
+    "Classic Beta": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items, SpellNames],
+    "Classic Era": [Achievements, Factions, FlightPaths, Quests, Recipes, Transmog, SpellItems, SkillLines, Items, SpellNames, Creatures],
+    "Classic PTR": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items, SpellNames],
+    "PTR1": Thing.__subclasses__(),
+    "PTR2": Thing.__subclasses__(),
+    "Retail": Thing.__subclasses__(),
+}
 
-def add_latest_build(build: str) -> None:
+
+def add_latest_build(build: str, thing: type[Thing]) -> list[str]:
     """Append the latest build to all the BuildList files."""
-    for thing in Thing.__subclasses__():
-        with open(Path("Builds", f"{thing.__name__}.txt"), "a") as build_list:
-            build_list.write(build + "\n")
+    next_builds: list[str] = []
+    with open(Path("Builds", f"{thing.__name__}.txt"), "r") as build_list:
+        build_lines: list[str] = build_list.readlines()
+        for n, build_line in enumerate(build_lines):
+            if version.parse(build) < version.parse(build_line):
+                build_lines.insert(n, build + "\n")
+                next_builds = build_lines[n:]
+                break
+        if version.parse(build) > version.parse(build_lines[-1]):
+            build_lines.append(build + "\n")
+            next_builds = list(build)
+    with open(Path("Builds", f"{thing.__name__}.txt"), "w") as build_list:
+        build_list.writelines(build_lines)
+    return next_builds
 
 
-def get_thing_data(thing: type[Thing], build: str) -> list[str]:
+def get_thing_data(thing: type[Thing], build: str, version: str) -> list[str]:
     """Get the IDs (and some thing specific data) of a thing from a build."""
     thing_list: list[str] = list[str]()
-    with open(Path("Latest", "dbfilesclient", f"{thing.table()}.csv")) as csv_file:
+    with open(Path("Latest", f"{version}", "dbfilesclient", f"{thing.table()}.csv")) as csv_file:
         reader = csv.DictReader(csv_file)
         for row in reader:
             try:
@@ -399,24 +427,38 @@ def post_process(thing: type[Thing]) -> None:
         return
 
 
-def add_latest_data(build: str) -> None:
+def add_latest_data(build: str, version: str) -> None:
     """Adds latest builds to build files and add latests data to raw files"""
-    add_latest_build(build)
-    things: list[type[Thing]] = Thing.__subclasses__()
+    things: list[type[Thing]] = VERSION_THING_DICT[version]
     for thing in things:
         print(thing)
+        before_list: list[str] = []
+        after_list: list[str] = []
+        next_builds: list[str] = add_latest_build(build, thing)
         raw_path = Path("Raw", f"{thing.__name__}.txt")
-        thing_list = get_thing_data(thing, build.strip())
-        with open(raw_path, "r+") as raw_file:
+        thing_list = get_thing_data(thing, build.strip(), version)
+        with open(raw_path, "r") as raw_file:
             old_lines = raw_file.readlines()
-            # TODO: this only finds new Things, not removed Things
+            for next_build in next_builds:
+                if next_build in old_lines:
+                    index = old_lines.index(next_build)
+                    before_list = old_lines[:index]
+                    after_list = old_lines[index:]
+                    break
+                else:
+                    before_list = old_lines
+                    after_list = []
             difference = sorted(
-                set(thing_list) - set(old_lines),
+                set(thing_list) - set(before_list),
                 key=lambda x: (float(x.split(DELIMITER)[0])),
             )
             if difference:
-                raw_file.write(build + "\n")
-                raw_file.writelines(difference)
+                before_list.append(build + "\n")
+                before_list.extend(difference)
+            before_list.extend(after_list)
+            before_list = list(dict.fromkeys(before_list))
+        with open(raw_path, "w") as raw_file:
+            raw_file.writelines(before_list)
 
 
 def create_missing_files() -> None:
@@ -483,11 +525,11 @@ def give_name_quest() -> None:
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-# add_latest_data("10.1.0.48537")
+# add_latest_data("3.4.0.46158", "Classic Beta")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
 """Step 5: Run create_missing_files() (you have to uncomment it)"""
 # create_missing_files()
 """Step 6: Run available_post_process() (you have to uncomment it) This is still underwork and currently only Achievements, Factions, Flight Paths, Illusions, Mounts, Pets, Titles and Toys can be Post Processed"""
-# available_post_process()
+available_post_process()

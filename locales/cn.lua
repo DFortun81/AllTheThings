@@ -717,8 +717,6 @@ for key,value in pairs({
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."（直升）",	-- Level 50 (Boost)
 	-- Class Hall /Artifact
 		[-159] = "事件投骰",										-- Daily Dreamway Event Roll
-	-- Other
-		--TODO: [-210] = ALLIED.." "..NEW.." "..CHARACTER,			-- Allied New Character
 	-- Fishing
 		[-217] = "鱼竿",												-- Lures (for Fishing)
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
@@ -727,7 +725,7 @@ for key,value in pairs({
 		[-242] = "无评级",												-- Unrated
 		[-243] = "赏金任务",											-- Bounty
 	-- Allied Races
-		[-254] = "同盟种族 & 传承护甲",										-- Allied Races & Heritage
+		[-255] = "传承护甲",											-- Heritage
 	-- First Questline Draenor
 		[-356] = "进攻黑暗之门",										-- Assault on the Dark Portal
 	-- Outposts in Draenor
@@ -885,8 +883,6 @@ for key,value in pairs({
 			[-5203] = "荣誉奖励",										-- Prestige Rewards
 			[-5204] = "挑战外观",										-- Challenge Appearance
 			[-5205] = "隐藏外观",										-- Hidden Appearance
-		-- Class Sets
-			[-5350] = "职业试用套装",										-- Class Trial
 
 		[-7776] = "冬季狂欢者",											-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
@@ -3552,6 +3548,7 @@ for key, value in pairs({
 	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
+	[377485] = "酸苹果",	-- Sour Apple
 	[377499] = "《龙族起源考》",	-- On the Origin of Draconic Species
 	[377534] = "递送的宝库",	-- Delivered Vault
 	[377899] = "隐藏的龙蛙人质",	-- Hidden Hornswog Hostage
@@ -3717,10 +3714,14 @@ for key, value in pairs({
 	--TODO: [385415] = "Bone Pile",	-- Bone Pile
 	--TODO: [385468] = "Bone Pile",	-- Bone Pile
 	--TODO: [385520] = "Bone Pile",	-- Bone Pile
+	--TODO: [385533] = "Sending Stone: Protest",	-- Sending Stone: Protest
 	--TODO: [385799] = "Hardened Strongbox",	-- Hardened Strongbox
 	--TODO: [385800] = "Gold Pile",	-- Gold Pile
 	--TODO: [385801] = "Gold Pile",	-- Gold Pile
 	--TODO: [385802] = "Gold Pile",	-- Gold Pile
+	--TODO: [385830] = "Sending Stone: Initial Report",	-- Sending Stone: Initial Report
+	--TODO: [385832] = "Receiving Stone: Final Warning",	-- Receiving Stone: Final Warning
+	--TODO: [385834] = "Journal Entry: Experiments",	-- Journal Entry: Experiments
 	--TODO: [385836] = "Journal Entry: The Creches",	-- Journal Entry: The Creches
 	--TODO: [385837] = "Journal Entry: Silence",	-- Journal Entry: Silence
 	--TODO: [385952] = "Unusual Ring",	-- Unusual Ring

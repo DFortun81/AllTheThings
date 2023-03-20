@@ -22,7 +22,7 @@ root(ROOTS.WorldEvents, n(-541,	-- The Silithyst Must Flow
 				},
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
-				["lvl"] = lvlsquish(53, 15, 53),
+				["lvl"] = lvlsquish(53, 53, 15),
 			}),
 			q(9415, {	-- Report to Marshal Bluewall
 				["qg"] = 17082,	-- Rifleman Torrig
@@ -35,7 +35,7 @@ root(ROOTS.WorldEvents, n(-541,	-- The Silithyst Must Flow
 				},
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = lvlsquish(53, 15, 53),
+				["lvl"] = lvlsquish(53, 53, 15),
 			}),
 			q(9419, {	-- Scouring the Desert [ALLIANCE]
 				["qg"] = 17080,	-- Marshal Bluewall
@@ -49,7 +49,7 @@ root(ROOTS.WorldEvents, n(-541,	-- The Silithyst Must Flow
 				},
 				["timeline"] = { "removed 7.2.0" },
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = lvlsquish(53, 15, 53),
+				["lvl"] = lvlsquish(53, 53, 15),
 				-- #if ANYCLASSIC
 				["groups"] = {
 					MAJOR_HEALING_POTION,
@@ -69,7 +69,7 @@ root(ROOTS.WorldEvents, n(-541,	-- The Silithyst Must Flow
 				},
 				["timeline"] = { "removed 7.2.0" },
 				["races"] = HORDE_ONLY,
-				["lvl"] = lvlsquish(53, 15, 53),
+				["lvl"] = lvlsquish(53, 53, 15),
 				-- #if ANYCLASSIC
 				["groups"] = {
 					MAJOR_HEALING_POTION,

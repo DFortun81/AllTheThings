@@ -1185,7 +1185,6 @@ namespace ATT
             public static void Export(string directory)
             {
                 var AllContainerClones = new SortedDictionary<string, List<object>>(AllContainers);
-                AllContainerClones.Remove("Uncollectable");
 
                 var filename = Path.Combine(directory, "Categories.lua");
                 var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString().Replace("\r\n", "\n").Trim();
@@ -2144,10 +2143,10 @@ end
                     }
 
                     // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                    if (costType == "i")
+                    if (costType == "i" && cost[1].TryConvert(out long costID))
                     {
                         // cost item can be a ModItemID (decimal) value as well, but only care to mark the raw ItemID as referenced
-                        Items.MarkItemAsReferenced(Convert.ToInt64(Convert.ToDecimal(cost[1])));
+                        Items.MarkItemAsReferenced(costID);
                     }
                 }
 

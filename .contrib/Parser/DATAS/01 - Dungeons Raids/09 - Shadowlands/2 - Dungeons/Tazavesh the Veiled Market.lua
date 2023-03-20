@@ -130,6 +130,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 				["description"] = "All the vendors with the name Vendor in them can be found just inside the entrance to the dungeon.",
 				["g"] = {
 					n(180130, {	-- Antique Vendor
+						i(34828),	-- Antique Silver Cufflinks
 						i(187179),	-- Glow Sticks
 					}),
 					n(180750, { -- Au'manal <Master Forger>
@@ -139,6 +140,10 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 								["cost"] = { { "i", 185953, 1 } },	-- Fraudulent Credentials
 							}),
 						},
+					}),
+					n(177239, {	-- Collector of Worth <Banker>
+						i(34828),	-- Antique Silver Cufflinks
+						i(187179),	-- Glow Sticks
 					}),
 					n(180114, {	-- Fruit Vendor
 						i(187171),	-- Organic Melon

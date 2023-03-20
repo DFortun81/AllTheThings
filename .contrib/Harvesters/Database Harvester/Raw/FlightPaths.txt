@@ -468,6 +468,9 @@
 438@@@Durotar - ET - CC Prologue Troll Taxi Bat Start
 439@@@Durotar - ET - CC Prologue Troll Recruit End
 440@@@Durotar - ET - CC Prologue - Troll Battle End
+3.4.0.46158
+103@@@Nagrand - PvP - Attack Run Start 1 
+3.4.1.48503
 4.0.1.12911
 25@@@Crossroads, Northern Barrens
 26@@@Lor'danel, Darkshore
@@ -768,7 +771,6 @@
 1130@@@Quest Path 3506: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top) NEW (Tab 870)
 1131@@@Quest Path 3507: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine) NEW (Tab 870)
 6.0.1.18125
-1076@@@Quest Path 3375: Jade Forest: JSB - East Temple -> Grookin' Hill
 1117@@@Serpent's Spine, Kun-Lai Summit
 1190@@@Lion's Landing, Krasarang Wilds
 1195@@@Domination Point, Krasarang Wilds
@@ -2189,11 +2191,6 @@
 2137@@@--
 2138@@@--
 8.0.1.26367
-103@@@Nagrand - PvP - Attack Run Start 1
-509@@@Quest Path 2063: Brian's 4.0 Test Path
-951@@@Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise
-963@@@Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise
-1495@@@Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice
 2111@@@Vorrik's Sanctum, Vol'dun
 2140@@@Plunder Harbor, Tiragarde Sound
 2143@@@Scorched Sands Outpost, Vol'dun
@@ -2623,13 +2620,6 @@
 10.0.0.44895
 2832@@@Cobalt Assembly, The Azure Span
 10.0.0.44999
-103@@@Nagrand - PvP - Attack Run Start 1
-509@@@Quest Path 2063: Brian's 4.0 Test Path
-951@@@Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise
-963@@@Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise
-1495@@@Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice
-2392@@@Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path
-2711@@@Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron
 2786@@@Rhonin's Shield, Azure Span
 2834@@@Eon's Fringe, Thaldraszus
 2835@@@[Hidden] 10.0 Travel Network - Destination Input
@@ -2646,7 +2636,6 @@
 10.0.0.45454
 2842@@@Rubyscale Outpost, The Waking Shores
 10.0.2.46259
-103@@@Nagrand - PvP - Attack Run Start 1 
 509@@@Quest Path 2063: Brian's 4.0 Test Path 
 951@@@Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise 
 963@@@Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise 

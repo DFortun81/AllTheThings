@@ -6,7 +6,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["lore"] = "The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",
 		["coord"] = { 46.06, 51.74, HELLFIRE_PENINSULA },	-- The Blood Furnace, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_BLOOD_FURNACE,
-		["lvl"] = lvlsquish(58, 10, 58),
+		["lvl"] = lvlsquish(58, 58, 10),
 		["groups"] = {
 			n(QUESTS, {
 				q(9607,  {	-- Heart of Rage [Alliance]
@@ -14,7 +14,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 56.4, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 					-- #if BEFORE 4.3.0.14732
 					["groups"] = {
 						i(25714),	-- Crimson Pendant of Clarity
@@ -28,7 +28,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 54.9, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 					-- #if BEFORE 4.3.0.14732
 					["groups"] = {
 						i(25714),	-- Crimson Pendant of Clarity
@@ -41,7 +41,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54629,	-- Gunny
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
 						i(25714),	-- Crimson Pendant of Clarity
 						i(25713),	-- Holy Healing Band
@@ -52,7 +52,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54636,	-- Caza'rez
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
 						i(25714),	-- Crimson Pendant of Clarity
 						i(25713),	-- Holy Healing Band
@@ -63,7 +63,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54629,	-- Gunny
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Fel Orc Blood Vial
 							["provider"] = { "i", 23894 },	-- Fel Orc Blood Vial
@@ -77,7 +77,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54636,	-- Caza'rez
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Fel Orc Blood Vial
 							["provider"] = { "i", 23894 },	-- Fel Orc Blood Vial
@@ -91,7 +91,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54636,	-- Caza'rez
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
 						objective(1, {	-- Keli'dan the Breaker slain
 							["provider"] = { "n", 17377 },	-- Keli'dan the Breaker
@@ -108,7 +108,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 56.4, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Fel Orc Blood Vial
 							["provider"] = { "i", 23894 },	-- Fel Orc Blood Vial
@@ -127,7 +127,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 54.9, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Fel Orc Blood Vial
 							["provider"] = { "i", 23894 },	-- Fel Orc Blood Vial
@@ -144,7 +144,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54629,	-- Gunny
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
 						objective(1, {	-- Keli'dan the Breaker slain
 							["provider"] = { "n", 17377 },	-- Keli'dan the Breaker
@@ -254,7 +254,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30637, 1 },	-- Flamewrought Key [H]
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

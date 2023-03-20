@@ -474,7 +474,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["qg"] = 11801,	-- Rabine Saturna
 					["sourceQuest"] = 29303,	-- Tragedy and Family
 					["timeline"] = { "added 4.2.0.14241" },
-					["lvl"] = lvlsquish(85, 32, 85),
+					["lvl"] = lvlsquish(85, 85, 32),
 				}),
 				q(29214, {	-- The Shadow Wardens
 					["provider"] = { "n", 52135 },	-- Malfurion Stormrage

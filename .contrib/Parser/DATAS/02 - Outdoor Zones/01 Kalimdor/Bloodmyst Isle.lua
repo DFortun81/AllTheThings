@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17599,	-- Aonar
 					["coord"] = { 63.4, 88.7, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Sand Pear
 							["provider"] = { "i", 23927 },	-- Sand Pear
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["provider"] = { "i", 23837 },	-- Weathered Treasure Map
 					["sourceQuest"] = 9549,	-- Artifacts of the Blacksilt
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(13, 1, 13),
+					["lvl"] = lvlsquish(13, 13, 1),
 				}),
 				q(9634, {	-- Alien Predators
 					["qg"] = 17586,	-- Vorkhan the Elekk Herder
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["coord"] = { 63.0, 87.9, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(8, 1, 8),
+					["lvl"] = lvlsquish(8, 8, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Bloodmyst Hatchling slain
 							["provider"] = { "n", 17525 },	-- Bloodmyst Hatchling
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["coord"] = { 42.1, 21.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(13, 1, 13),
+					["lvl"] = lvlsquish(13, 13, 1),
 					["groups"] = {
 						objective(1, {	-- 0/3 Crude Murloc Idol
 							["provider"] = { "i", 23834 },	-- Crude Murloc Idol
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { THE_EXODAR },
 					["cost"] = { { "i", 24323, 1 } },	-- Translated Sunhawk Missive
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(14, 1, 14),
+					["lvl"] = lvlsquish(14, 14, 1),
 				}),
 				-- #if BEFORE CATA
 				-- This quest was moved from Azuremyst Isle after Cataclysm.
@@ -201,7 +201,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 55.8, 59.8, BLOODMYST_ISLE },
 					["cost"] = { { "i", 23902, 1 } },	-- Topher's List
 					["races"] = { DRAENEI },
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				-- #endif
 				q(9694, {	-- Blood Watch
@@ -209,7 +209,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9693,	-- What Argus Means to Me
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Sunhawk Spy slain
 							["provider"] = { "n", 17604 },	-- Sunhawk Spy
@@ -333,7 +333,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17434,	-- Morae
 					["coord"] = { 53.2, 57.7, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Blacksilt Scouts Tagged
 							["provider"] = { "i", 23995 },	-- Murloc Tagger
@@ -360,7 +360,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #else
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
-					["lvl"] = lvlsquish(18, 1, 18),
+					["lvl"] = lvlsquish(18, 18, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Sunhawk Agent slain
 							["provider"] = { "n", 17610 },	-- Sunhawk Agent
@@ -380,7 +380,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17642,	-- Tracker Lyceon
 					["coord"] = { 55.8, 56.9, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(14, 1, 14),
+					["lvl"] = lvlsquish(14, 14, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Thorny Constrictor Vine
 							["provider"] = { "i", 23994 },	-- Thorny Constrictor Vine
@@ -393,7 +393,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9567,	-- Know Thine Enemy
 					["coord"] = { 55.0, 57.9, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(13, 1, 13),
+					["lvl"] = lvlsquish(13, 13, 1),
 					["groups"] = {
 						objective(1, {	-- Zevrax slain
 							["provider"] = { "n", 17494 },	-- Zevrax
@@ -416,7 +416,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17926,	-- Scout Loryi
 					["coord"] = { 30.2, 45.8, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/12 Void Critter slain
 							["provider"] = { "n", 17887 },	-- Void Critter
@@ -427,14 +427,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9576, {	-- Cruelfin's Necklace
 					["provider"] = { "i", 23870 },	-- Red Crystal Pendant
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 				}),
 				q(9647, {	-- Culling the Flutterers
 					["qg"] = 17642,	-- Tracker Lyceon
 					["sourceQuest"] = 9643,	-- Constrictor Vines
 					["coord"] = { 55.8, 57.0, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(14, 1, 14),
+					["lvl"] = lvlsquish(14, 14, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Royal Blue Flutterer slain
 							["provider"] = { "n", 17350 },	-- Royal Blue Flutterer
@@ -454,7 +454,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["coord"] = { 30.2, 45.9, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Enraged Ravager slain
 							["provider"] = { "n", 17527 },	-- Enraged Ravager
@@ -469,14 +469,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9550,	-- A Map to Where?
 					["coord"] = { 61.1, 41.8, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(13, 1, 13),
+					["lvl"] = lvlsquish(13, 13, 1),
 				}),
 				q(9666, {	-- Declaration of Power
 					["qg"] = 17649,	-- Kessel
 					["sourceQuest"] = 9663,	-- The Kessel Run
 					["coord"] = { 62.9, 87.5, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- Declaration of Power
 							["provider"] = { "i", 24084 },	-- Draenei Banner
@@ -496,7 +496,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9703,	-- The Cryo-Core
 					["coord"] = { 55.5, 55.3, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Bloodmyst Water Sample
 							["provider"] = { "i", 24317 },	-- Bloodmyst Water Sample
@@ -510,7 +510,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9682,	-- The Hopeless Ones...
 					["coord"] = { 79.1, 22.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- Atoph the Bloodcursed slain
 							["provider"] = { "n", 17715 },	-- Atoph the Bloodcursed
@@ -529,7 +529,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9760,	-- Vindicator's Rest
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
-					["lvl"] = lvlsquish(18, 1, 18),
+					["lvl"] = lvlsquish(18, 18, 1),
 					["groups"] = {
 						objective(1, {	-- Vector Coil Destroyed and Sironas Slain
 							["provider"] = { "n", 17678 },	-- Sironas
@@ -546,7 +546,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 56.3, 54.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(13, 1, 13),
+					["lvl"] = lvlsquish(13, 13, 1),
 				}),
 				q(10067, {	-- Fouled Water Spiritsm
 					-- #if AFTER WRATH
@@ -565,7 +565,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 30.7, 46.8, BLOODMYST_ISLE },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Fouled Water Spirit slain
 							["provider"] = { "n", 17358 },	-- Fouled Water Spirit
@@ -577,7 +577,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9578,	-- Searching for Galaen
 					["coord"] = { 37.4, 61.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Galaen's Amulet
 							["provider"] = { "i", 23873 },	-- Galaen's Amulet
@@ -603,14 +603,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["coord"] = { 37.5, 61.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9700, {	-- I Shoot Magic Into the Darkness
 					["qg"] = 17684,	-- Vindicator Boros
 					["sourceQuest"] = 9699,	-- Truth or Fiction
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(14, 1, 14),
+					["lvl"] = lvlsquish(14, 14, 1),
 					["groups"] = {
 						objective(1, {	-- Sun Portal Site Confirmed
 							["provider"] = { "n", 17550 },	-- Void Anomaly
@@ -629,7 +629,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9694,	-- Blood Watch
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(14, 1, 14),
+					["lvl"] = lvlsquish(14, 14, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Sunhawk Missive
 							["provider"] = { "i", 24399 },	-- Sunhawk Missive
@@ -648,7 +648,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9687,	-- Restoring Sanctity
 					["coord"] = { 74.0, 34.7, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/5 Veridian Whelp slain
 							["provider"] = { "n", 17588 },	-- Veridian Whelp
@@ -663,7 +663,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["cost"] = { { "i", 23984, 10 } },	-- Irradiated Crystal Shard
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(13, 1, 13),
+					["lvl"] = lvlsquish(13, 13, 1),
 					["groups"] = {
 						i(23985),	-- Crystal of Vitality
 						i(23986),	-- Crystal of Insight
@@ -674,7 +674,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17433,	-- Vindicator Aalesia
 					["coord"] = { 55.0, 57.9, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(13, 1, 13),
+					["lvl"] = lvlsquish(13, 13, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Nazzivus Monument Glyph
 							["provider"] = { "i", 23859 },	-- Nazzivus Monument Glyph
@@ -686,7 +686,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17423,	-- Harbinger Mikolaas
 					["coord"] = { 52.5, 53.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Impact Site Crystal Sample
 							["provider"] = { "i", 23878 },	-- Impact Site Crystal Sample
@@ -706,7 +706,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9748,	-- Don't Drink the Water
 					["coord"] = { 55.5, 55.4, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Sunhawk Pyromancer slain
 							["provider"] = { "n", 17608 },	-- Sunhawk Pyromancer
@@ -720,7 +720,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17663,	-- Maatparm
 					["coord"] = { 56.4, 56.8, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Aquatic Stinkhorn
 							["provider"] = { "i", 24041 },	-- Aquatic Stinkhorn
@@ -754,7 +754,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9706,	-- Galaen's Journal - The Fate of Vindicator Saruan
 					["coord"] = { 55.6, 55.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- Matis the Cruel captured
 							["provider"] = { "n", 17664 },	-- Matis the Cruel
@@ -776,7 +776,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = { { "i", 23984, 10 } },	-- Irradiated Crystal Shard
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["lvl"] = lvlsquish(13, 1, 13),
+					["lvl"] = lvlsquish(13, 13, 1),
 					["groups"] = {
 						i(23985),	-- Crystal of Vitality
 						i(23986),	-- Crystal of Insight
@@ -789,14 +789,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { AZUREMYST_ISLE },
 					["cost"] = { { "i", 23937, 1 } },	-- Letter of Introduction
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9561, {	-- Nolkai's Words
 					["qg"] = 17424,	-- Anchorite Paetheus
 					["sourceQuest"] = 9557,	-- Deciphering the Book
 					["coord"] = { 54.6, 53.9, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(13, 1, 13),
+					["lvl"] = lvlsquish(13, 13, 1),
 					["groups"] = {
 						i(23846, {	-- Nolkai's Box
 							i(23844),	-- Nolkai's Lantern
@@ -821,7 +821,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 30.7, 46.8, BLOODMYST_ISLE },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Mutated Tangler slain
 							["provider"] = { "n", 17346 },	-- Mutated Tangler
@@ -836,7 +836,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 57.7, 53.9, BLOODMYST_ISLE },
 					["cost"] = { { "i", 23902, 1 } },	-- Topher's List
 					["races"] = { DRAENEI },
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				-- #endif
 				q(9548, {	-- Pilfered Equipment
@@ -844,7 +844,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10063,	-- Explorers' League, Is That Something for Gnomes?
 					["coord"] = { 42.1, 21.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(13, 1, 13),
+					["lvl"] = lvlsquish(13, 13, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Clopper's Equipment
 							["provider"] = { "i", 23830 },	-- Clopper's Equipment
@@ -862,7 +862,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9688,	-- Into the Dream
 					["coord"] = { 74.0, 34.7, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(19, 1, 19),
+					["lvl"] = lvlsquish(19, 19, 1),
 					["groups"] = {
 						objective(1, {	-- Razormaw slain
 							["provider"] = { "n", 17592 },	-- Razormaw
@@ -882,13 +882,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9666,	-- Declaration of Power
 					["coord"] = { 62.9, 87.5, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9687, {	-- Restoring Sanctity
 					["qg"] = 17674,	-- Prince Toreth
 					["coord"] = { 74.0, 34.7, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Dragon Bone
 							["provider"] = { "i", 24185 },	-- Dragon Bone
@@ -900,7 +900,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9620,	-- The Missing Survey Team
 					["coord"] = { 61.2, 48.3, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Survey Data Crystal
 							["provider"] = { "i", 23932 },	-- Survey Data Crystal
@@ -921,7 +921,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["coord"] = { 68.2, 81.0, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- Princess Stillpine Saved
 							["provider"] = { "n", 17682 },	-- Princess Stillpine
@@ -940,12 +940,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17434,	-- Morae
 					["coord"] = { 53.2, 57.7, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9594, {	-- Signs of the Legion
 					["provider"] = { "i", 23900 },	-- Tzerak's Armor Plate
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Nazzivus Satyr slain
 							["provider"] = { "n", 17337 },	-- Nazzivus Satyr
@@ -959,13 +959,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17423,	-- Harbinger Mikolaas
 					["coord"] = { 52.5, 53.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 				}),
 				q(9580, {	-- The Bear Necessities
 					["qg"] = 17642,	-- Tracker Lyceon
 					["coord"] = { 55.8, 56.9, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(14, 1, 14),
+					["lvl"] = lvlsquish(14, 14, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Elder Brown Bear Flank
 							["provider"] = { "i", 24026 },	-- Elder Brown Bear Flank
@@ -980,7 +980,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["description"] = "The letter is mailed to you when you complete the |cFFFFD700Urgent Delivery|r quest. If you abandon it, you can get it at |cFFFFD700Odesyus' Landing|r in |cFFFFD700Azuremyst Isle|r.",
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9751, {	-- The Bloodcurse Legacy [Abandoned Other Quest]
 					["qg"] = 17240,	-- Admiral Odesyus
@@ -989,7 +989,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["description"] = "This quest is offered to you if you don't receive the 'A Letter from the Admiral' in the mail or you destroy it and abandon the quest.",
 					["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9674, {	-- The Bloodcursed Naga
 					["qg"] = 17712,	-- Captain Edward Hanes
@@ -999,7 +999,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["coord"] = { 79.1, 22.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Bloodcursed Naga slain
 							["provider"] = { "n", 17713 },	-- Bloodcursed Naga
@@ -1011,7 +1011,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9700,	-- I Shoot Magic Into the Darkness
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/12 Medical Supplies
 							["provider"] = { "i", 24236 },	-- Medical Supplies
@@ -1027,7 +1027,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9584,	-- The Second Sample
 					["coord"] = { 52.5, 53.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Axxarien Crystal Sample
 							["provider"] = { "i", 23880 },	-- Axxarien Crystal Sample
@@ -1041,7 +1041,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9674,	-- The Bloodcursed Naga
 					["coord"] = { 79.1, 22.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/4 Bloodcursed Soul
 							["provider"] = { "i", 24153 },	-- Bloodcursed Soul
@@ -1054,7 +1054,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 62.9, 87.5, BLOODMYST_ISLE },
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- High Chief Stillpine Warned
 							["provider"] = { "n", 17440 },	-- High Chief Stillpine
@@ -1074,7 +1074,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17676,	-- Achelus
 					["coord"] = { 53.2, 57.0, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(17, 1, 17),
+					["lvl"] = lvlsquish(17, 17, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Myst Leecher slain
 							["provider"] = { "n", 17523 },	-- Myst Leecher
@@ -1093,14 +1093,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9581,	-- Learning from the Crystals
 					["coord"] = { 52.5, 53.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9584, {	-- The Second Sample
 					["qg"] = 17423,	-- Harbinger Mikolaas
 					["sourceQuest"] = 9628,	-- Salvaging the Data
 					["coord"] = { 52.5, 53.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Altered Crystal Sample
 							["provider"] = { "i", 23879 },	-- Altered Crystal Sample
@@ -1114,7 +1114,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9746,	-- Limits of Physical Exhaustion
 					["coord"] = { 55.5, 55.4, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- The Sun Gate Destroyed
 							["coord"] = { 18.7, 64.0, BLOODMYST_ISLE },
@@ -1129,7 +1129,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						{ 32.6, 54.2, THE_EXODAR },
 					},
 					["races"] = { DRAENEI },
-					["lvl"] = lvlsquish(18, 1, 18),
+					["lvl"] = lvlsquish(18, 18, 1),
 					["groups"] = {
 						i(24344),	-- Tabard of the Hand
 						i(24349),   -- Signet Ring of the Hand
@@ -1144,14 +1144,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { DARKSHORE },
 					["cost"] = { { "i", 23937, 1 } },	-- Letter of Introduction
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9670, {	-- They're Alive! Maybe...
 					["qg"] = 17686,	-- Researcher Cornelius
 					["altQuests"] = { 9749 },	-- They're Alive! Maybe... (duplicate, never went live)
 					["coord"] = { 24.8, 34.3, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/5 Expedition Researcher Freed
 							["provider"] = { "n", 17681 },	-- Expedition Researcher
@@ -1166,7 +1166,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["cost"] = { { "i", 24399, 1 } },	-- Sunhawk Missive
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(14, 1, 14),
+					["lvl"] = lvlsquish(14, 14, 1),
 				}),
 				q(9699, {	-- Truth or Fiction
 					["qg"] = 17468,	-- Prophet Velen
@@ -1174,7 +1174,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 32.6, 54.2, THE_EXODAR },
 					["cost"] = { { "i", 24230, 1 } },	-- Velen's Orders
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(14, 1, 14),
+					["lvl"] = lvlsquish(14, 14, 1),
 				}),
 				q(9671, {	-- Urgent Delivery
 					["qg"] = 17703,	-- Messenger Hermesius
@@ -1184,14 +1184,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["altQuests"] = { 9750 },	-- UNUSED Urgent Delivery
 					["coord"] = { 54.9, 54.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(18, 1, 18),
+					["lvl"] = lvlsquish(18, 18, 1),
 				}),
 				q(9574, {	-- Victims of Corruption
 					["qg"] = 17434,	-- Morae
 					["sourceQuest"] = 9629,	-- Catch and Release
 					["coord"] = { 53.2, 57.7, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Crystallized Bark
 							["provider"] = { "i", 23869 },	-- Crystallized Bark
@@ -1208,13 +1208,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #else
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
-					["lvl"] = lvlsquish(18, 1, 18),
+					["lvl"] = lvlsquish(18, 18, 1),
 				}),
 				q(9646, {	-- WANTED: Deathclaw
 					["provider"] = { "o", 181889 },	-- Wanted Poster
 					["coord"] = { 55.2, 59.1, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Deathclaw's Paw
 							["provider"] = { "n", 24025 },	-- Deathclaw's Paw
@@ -1229,7 +1229,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17658,	-- Exarch Admetius
 					["coord"] = { 52.6, 53.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9756, {	-- What We Don't Know...
 					["qg"] = 17658,	-- Exarch Admetius
@@ -1240,7 +1240,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #else
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
-					["lvl"] = lvlsquish(18, 1, 18),
+					["lvl"] = lvlsquish(18, 18, 1),
 				}),
 				q(9753, {	-- What We Know...
 					["qg"] = 17844,	-- Vindicator Aesom
@@ -1253,14 +1253,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #else
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
-					["lvl"] = lvlsquish(18, 1, 18),
+					["lvl"] = lvlsquish(18, 18, 1),
 				}),
 				q(9649, {	-- Ysera's Tears
 					["qg"] = 17663,	-- Maatparm
 					["sourceQuest"] = 9648,	-- Eredath Mushroom Menagerie
 					["coord"] = { 56.4, 56.8, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/2 Ysera's Tear
 							["provider"] = { "i", 24049 },	-- Ysera's Tear

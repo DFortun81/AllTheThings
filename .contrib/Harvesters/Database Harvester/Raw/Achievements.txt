@@ -2163,7 +2163,6 @@
 3411@@@Yogg-Saron + 0 Keepers attempts (Ulduar 25 player) (TRACKING ONLY)
 3.3.5.12340
 260@@@Charming
-272@@@Torch Juggler
 306@@@Master Angler of Azeroth
 562@@@The Arachnid Quarter (10 player)
 563@@@The Arachnid Quarter (25 player)
@@ -2703,6 +2702,39 @@
 1685@@@Holiday Bromance
 1686@@@Holiday Bromance
 4627@@@X-45 Heartbreaker
+3.4.0.46158
+15330@@@Survivor of the Firelord (Season of Mastery)
+15332@@@[DNT] Survivor (Season of Mastery) (hidden)
+15333@@@Survivor of the Shadow Flame (Season of Mastery)
+15334@@@Survivor of the Old God (Season of Mastery)
+15335@@@Survivor of the Damned (Season of Mastery)
+15637@@@The Immortal (Season of Mastery)
+15853@@@<Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
+16313@@@Rival: Season 5
+16314@@@Gladiator: Season 5
+16315@@@Duelist: Season 5
+16316@@@Challenger: Season 5
+16332@@@The Perfect Pebble
+16397@@@[DNT] Heirloom Tracking - Bloodied Arcanite Reaper (Hidden)
+16433@@@Soul of Iron (Season of Mastery)
+16437@@@[DNT] Soul of Iron Tracker (Season of Mastery) (hidden)
+3.4.1.48503
+17213@@@Defense Protocol Alpha: Utgarde Keep
+17283@@@Defense Protocol Alpha: The Nexus
+17285@@@Defense Protocol Alpha: Azjol-Nerub
+17291@@@Defense Protocol Alpha: Ahn'kahet: The Old Kingdom
+17292@@@Defense Protocol Alpha: Drak'Tharon Keep
+17293@@@Defense Protocol Alpha: The Violet Hold
+17295@@@Defense Protocol Alpha: Gundrak
+17297@@@Defense Protocol Alpha: Halls of Stone
+17299@@@Defense Protocol Alpha: Halls of Lightning
+17300@@@Defense Protocol Alpha: The Oculus
+17301@@@Defense Protocol Alpha: Utgarde Pinnacle
+17302@@@Defense Protocol Alpha: The Culling of Stratholme
+17304@@@Defense Protocol Alpha: Terminated
+17328@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
+17340@@@Ahead of the Curve: Yogg-Saron
+17341@@@Cutting Edge: Ulduar
 4.0.1.12911
 736@@@Explore Mulgore NYI
 750@@@Explore Northern Barrens
@@ -3061,7 +3093,6 @@
 5032@@@Gemcrafter Extraordinaire
 5035@@@Master Crafter
 5036@@@That's A Lot of Bait
-5060@@@Heroic: Blackrock Caverns
 5107@@@Heroic: Omnotron Defense System
 5115@@@Heroic: Chimaeron
 5119@@@Heroic: Ascendant Council
@@ -9976,7 +10007,6 @@
 15991@@@Dragon Glyphs: Crumbling Life Archway
 10.0.0.44795
 15878@@@Dragon Isles Leatherworking 75 (DNT)
-15903@@@Dragon Racing - Thaldraszus - Garden Gallivant - Bronze
 15918@@@Ohn'ahran Plains - Bronze
 15919@@@Ohn'ahran Plains - Silver
 15920@@@Ohn'ahran Plains - Gold
@@ -11342,6 +11372,8 @@
 17343@@@Drop It Like It's Hot
 17345@@@Airborne Tumbler
 17420@@@Trial of Tyr Ineligible For Spark Skip [DNT]
+10.0.5.48526
+17495@@@<Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
 10.0.7.47910
 16532@@@True Friends with Sabellian
 17214@@@Stormsunder Crater Circuit: Bronze
@@ -11460,7 +11492,6 @@
 17278@@@Forbidden Reach Rush Reverse: Gold
 17427@@@Winterpelt Conversationalist
 17428@@@<Hidden> Winterpelt Language - Send Mailer from Sonova
-17495@@@<Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
 17496@@@Renowned Weaponsmith
 17497@@@Renowned Armorsmith
 17498@@@Renowned Dragonscale Leatherworker
@@ -11497,6 +11528,8 @@
 10.0.7.48295
 17398@@@Dragon Glyphs: Winglord's Perch
 17404@@@Dragon Glyphs: Talonlords' Perch
+10.0.7.48520
+17426@@@Toolbox Trouble
 10.1.0.48480
 17429@@@Crystal Circuit: Bronze
 17430@@@Crystal Circuit: Silver
@@ -11586,7 +11619,6 @@
 17727@@@Obsidian Combatant
 17728@@@Obsidian Combatant
 10.1.0.48537
-17426@@@Toolbox Trouble
 17735@@@We Didn't Start the Fire
 17736@@@The Gift of Cheese
 17737@@@Flame Warden of the Dragon Isles

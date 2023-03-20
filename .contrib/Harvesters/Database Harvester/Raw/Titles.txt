@@ -151,6 +151,10 @@
 140@@@%s the Kingslayer
 141@@@%s of the Ashen Verdict
 142@@@Wrathful Gladiator %s
+3.4.1.48503
+143@@@%s, Soul of Iron
+144@@@%s, Survivor of the Firelord
+210@@@Battlemaster %s
 4.0.1.12911
 143@@@Recruit of %s
 144@@@Guardian of %s

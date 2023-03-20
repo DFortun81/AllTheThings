@@ -9,7 +9,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			AUCHINDOUN_SETHEKK_HALLS,	-- Veil Sethekk
 			259,	-- Halls of Mourning
 		},
-		["lvl"] = lvlsquish(63, 15, 63),
+		["lvl"] = lvlsquish(63, 63, 15),
 		["groups"] = {
 			n(QUESTS, {
 				q(10097, {	-- Brother Against Brother
@@ -17,7 +17,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10180,	-- Can't Stay Away
 					["coord"] = { 44.1, 65.0, TEROKKAR_FOREST },
 					["timeline"] = { "removed 4.3.0.14942" },
-					["lvl"] = lvlsquish(65, 15, 65),
+					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
 						objective(1, {	-- Darkweaver Syth slain
 							["provider"] = { "n", 18472 },	-- Darkweaver Syth
@@ -35,7 +35,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54840,	-- Isfar
 					["sourceQuest"] = 10180,	-- Can't Stay Away
 					["timeline"] = { "added 4.3.0.14942" },
-					["lvl"] = lvlsquish(65, 15, 65),
+					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
 						objective(1, {	-- Free Lakka
 							["provider"] = { "n", 18956 },	-- Lakka
@@ -50,7 +50,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19045,	-- Oloraak
 					["coord"] = { 58.0, 15.2, SHATTRATH_CITY },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(65, 15, 65),
+					["lvl"] = lvlsquish(65, 65, 15),
 				}),
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(11011, {	-- Eternal Vigilance
 					["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
@@ -59,7 +59,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.0.1" },
 					["classes"] = { DRUID },
 					["repeatable"] = true,
-					["lvl"] = lvlsquish(70, 30, 70),
+					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
 						i(32449),	-- Essence-Infused Moonstone
 					},
@@ -68,7 +68,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54847,	-- Dealer Vijaad
 					["description"] = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
 					["timeline"] = { "added 4.3.0.14942" },
-					["lvl"] = lvlsquish(65, 15, 65),
+					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
 						objective(1, {	-- 0/3 Cobalt Eye
 							["provider"] = { "i", 72480 },	-- Cobalt Eye
@@ -105,7 +105,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29606, {	-- Terokk's Legacy
 					["qg"] = 54840,	-- Isfar
 					["timeline"] = { "added 4.3.0.14942" },
-					["lvl"] = lvlsquish(65, 15, 65),
+					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Terokk's Mask
 							["provider"] = { "i", 27633 },	-- Terokk's Mask
@@ -124,7 +124,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 80.2, 65.2, ZANGARMARSH },
 					["timeline"] = { "removed 4.0.1" },
 					["classes"] = { DRUID },
-					["lvl"] = lvlsquish(70, 30, 70),
+					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
 						objective(1, {	-- 0/1 Anzu slain
 							["provider"] = { "i", 32449 },	-- Essence-Infused Moonstone
@@ -241,7 +241,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30633, 1 },	-- Auchenai Key
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

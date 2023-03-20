@@ -1175,7 +1175,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				-- #endif
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(30, 10, 30),
+				["lvl"] = lvlsquish(30, 30, 10),
 				["groups"] = {
 					i(17726, {	-- Smokywood Pastures Special Gift
 						["sym"] = {{"fill"}},	-- fill with cached content
@@ -1192,7 +1192,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				-- #endif
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(30, 10, 30),
+				["lvl"] = lvlsquish(30, 30, 10),
 				["groups"] = {
 					i(17726, {	-- Smokywood Pastures Special Gift
 						["sym"] = {{"fill"}},	-- fill with cached content
@@ -1563,7 +1563,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { FROSTFIRE_RIDGE },
 				["timeline"] = { "added 6.2.2.20395" },
 				["isDaily"] = true,
-				["lvl"] = lvlsquish(90, 40, 90),
+				["lvl"] = lvlsquish(90, 90, 40),
 				["groups"] = {
 					objective(1, {	-- Grumpus slain
 						["provider"] = { "n", 96448 },	-- Grumpus
@@ -1586,7 +1586,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { FROSTFIRE_RIDGE },
 				["timeline"] = { "added 6.2.2.20395" },
 				["isDaily"] = true,
-				["lvl"] = lvlsquish(90, 40, 90),
+				["lvl"] = lvlsquish(90, 90, 40),
 				["groups"] = {
 					objective(1, {	-- 0/8 Grumplings slain
 						["provider"] = { "n", 96449 },	-- Grumpling
@@ -1874,7 +1874,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { FROSTFIRE_RIDGE },
 				["timeline"] = { "added 6.2.2.20395" },
 				["isDaily"] = true,
-				["lvl"] = lvlsquish(90, 40, 90),
+				["lvl"] = lvlsquish(90, 90, 40),
 				["groups"] = {
 					objective(1, {	-- 0/5 Unusual gifts destroyed
 						["provider"] = { "n", 96487 },	-- Unusual Gift
@@ -1897,7 +1897,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				["maps"] = { FROSTFIRE_RIDGE },
 				["timeline"] = { "added 6.2.2.20395" },
 				["isDaily"] = true,
-				["lvl"] = lvlsquish(90, 40, 90),
+				["lvl"] = lvlsquish(90, 90, 40),
 				["groups"] = {
 					objective(1, {	-- 0/6 Children rescued
 						["provider"] = { "n", 96454 },	-- Draenei Child

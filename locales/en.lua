@@ -1109,7 +1109,7 @@ app.L = {
 	-- Events
 		[-176] = 3753381,																	-- Weekly Holidays
 	-- New Characters
-		[-211] = 1530081,																	-- New Characters
+		[-211] = 1530081,																	-- New Character
 	-- Treasure Chest
 		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
 	-- Dalaran Sub-Zone
@@ -1671,8 +1671,8 @@ app.L = {
 	-- War Campaign
 		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
 	-- Allied Races
-		[-254] = "Allied Races",												-- Allied Races
-		[-255] = "Hertiage",													-- Heritage
+		[-254] = CHARACTER_CREATE_MORE_RACES,									-- Allied Races
+		[-255] = "Heritage",													-- Heritage
 	-- Mailbox
 		[-297] = MINIMAP_TRACKING_MAILBOX,										-- Mailbox
 	-- Garrison Missions

@@ -6,14 +6,14 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["lore"] = "The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",
 		["coord"] = { 37.2, 83.3, CAVERNS_OF_TIME },
 		["mapID"] = CAVERNS_OF_TIME_BLACK_MORASS,
-		["lvl"] = lvlsquish(65, 25, 65),
+		["lvl"] = lvlsquish(65, 65, 25),
 		["groups"] = {
 			n(QUESTS, {
 				q(10298, {	-- Hero of the Brood
 					["qg"] = 20201,	-- Sa'at
 					["sourceQuest"] = 10297,	-- The Opening of the Dark Portal
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(66, 25, 66),
+					["lvl"] = lvlsquish(66, 66, 25),
 					-- #if BEFORE 4.3.0.14732
 					["groups"] = {
 						i(29320),	-- Band of the Guardian
@@ -32,7 +32,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = {
 						{ "i", 24490, 1 },	-- The Master's Key
 					},
-					["lvl"] = lvlsquish(69, 30, 69),
+					["lvl"] = lvlsquish(69, 69, 30),
 				}),
 				q(10296, {	-- The Black Morass
 					["qg"] = 20130,	-- Andormu
@@ -40,7 +40,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10285,	-- Return to Andormu
 					-- #endif
 					["coord"] = { 41.5, 38.5, CAVERNS_OF_TIME },
-					["lvl"] = lvlsquish(66, 25, 66),
+					["lvl"] = lvlsquish(66, 66, 25),
 				}),
 				q(9836, {	-- The Master's Touch
 					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
@@ -50,7 +50,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = {
 						{ "i", 24489, 1 },	-- Restored Apprentice's Key
 					},
-					["lvl"] = lvlsquish(69, 30, 69),
+					["lvl"] = lvlsquish(69, 69, 30),
 				}),
 				q(10297, {	-- The Opening of the Dark Portal
 					["qg"] = 20201,	-- Sa'at
@@ -58,7 +58,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = {
 						{ "i", 24289, 1 },	-- Chrono-beacon
 					},
-					["lvl"] = lvlsquish(66, 25, 66),
+					["lvl"] = lvlsquish(66, 66, 25),
 					-- #if AFTER 4.3.0.14732
 					["groups"] = {
 						i(29320),	-- Band of the Guardian
@@ -164,7 +164,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30635, 1 },	-- Key of Time
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

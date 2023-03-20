@@ -135,12 +135,8 @@ r(382978),	-- Cataclysm Prospecting
 r(382979),	-- Northrend Prospecting
 r(382980),	-- Outland Prospecting
 r(382995),	-- Classic Prospecting
-10.0.7.47910
-r(403464),	-- Primordial Pulverizing
-r(403483),	-- Unstable Elementium
 10.0.7.47983
 r(404740),	-- Cataclysm Crushing
-r(405205),	-- Square Holders
 10.1.0.48480
 r(403131),	-- Obsidian Combatant's Jeweled Amulet
 r(403132),	-- Obsidian Combatant's Jeweled Signet

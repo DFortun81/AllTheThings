@@ -70,6 +70,29 @@ root(ROOTS.Promotions, n(TCG_HEADER, bubbleDown({
 		}),
 		i(38050, {	-- Soul-Trader Beacon
 			["timeline"] = { "added 2.4.2.8301" },
+			["groups"] = {
+				i(38186, {	-- Ethereal Credit
+					["description"] = "To obtain this, summon your Soul-Trader pet and kill players or NPCs which are no less than 8 levels below you.",
+				}),
+				i(38160, {	-- Soul-Trader's Bindings
+					["cost"] = { { "i", 38186, 1000 } },	-- 1000x Ethereal Credit
+				}),
+				i(38162, {	-- Soul-Trader's Boots
+					["cost"] = { { "i", 38186, 250 } },	-- 250x Ethereal Credit
+				}),
+				i(38161, {	-- Soul-Trader's Gloves
+					["cost"] = { { "i", 38186, 250 } },	-- 250x Ethereal Credit
+				}),
+				i(38163, {	-- Soul-Trader's Head Wrap
+					["cost"] = { { "i", 38186, 100 } },	-- 100x Ethereal Credit
+				}),
+				i(38286, {	-- Soul-Trader's Pauldrons
+					["cost"] = { { "i", 38186, 500 } },	-- 500x Ethereal Credit
+				}),
+				i(38285, {	-- Soul-Trader's Waistband
+					["cost"] = { { "i", 38186, 100 } },	-- 100x Ethereal Credit
+				}),
+			},
 		}),
 		i(49343, {	-- Spectral Tiger Cub
 			["timeline"] = { "added 3.2.2.10468" },

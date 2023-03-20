@@ -19447,6 +19447,8 @@
 203994@@@Tarantula Hatchling
 10.0.7.48439
 204075@@@Spellsworn Crechebound
+10.0.7.48520
+202548@@@Volatile Self-Driving Toolbox
 10.1.0.48480
 192519@@@Monsterous Mud
 198757@@@Void Lasher
@@ -19665,7 +19667,6 @@
 204438@@@Vault Observation Executor
 10.1.0.48537
 192519@@@Monstrous Mud
-202548@@@Volatile Self-Driving Toolbox
 204286@@@Paulie
 204288@@@Rango
 204321@@@Bashful

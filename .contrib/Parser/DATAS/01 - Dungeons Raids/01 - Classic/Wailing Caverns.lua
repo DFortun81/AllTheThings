@@ -12,7 +12,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #else
 		["coord"] = { 45.9, 35.7, THE_BARRENS },
 		-- #endif
-		["lvl"] = lvlsquish(10, 12, 10),
+		["lvl"] = lvlsquish(10, 12, 8),
 		["groups"] = {
 			n(QUESTS, {
 				-- #if BEFORE CATA
@@ -22,7 +22,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					q(26870, {	-- Cleansing the Caverns
 						["qg"] = 5768,	-- Ebru
 						["timeline"] = { "added 4.0.3.13277" },
-						["lvl"] = lvlsquish(15, 8, 15),
+						["lvl"] = lvlsquish(15, 15, 8),
 						["groups"] = {
 							objective(1, {	-- 0/1 Lord Cobrahn slain
 								["provider"] = { "n", 3669 },	-- Lord Cobrahn <Fanglord>
@@ -98,7 +98,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					q(26872, {	-- Deviate Hides
 						["qg"] = 5767,	-- Nalpak
 						["timeline"] = { "added 4.0.3.13277" },
-						["lvl"] = lvlsquish(15, 8, 15),
+						["lvl"] = lvlsquish(15, 15, 8),
 						["groups"] = {
 							objective(1, {	-- 0/10 Deviate Hide
 								["provider"] = { "i", 6443 },	-- Deviate Hide
@@ -192,7 +192,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					q(26873, {	-- Preemptive Methods
 						["qg"] = 5767,	-- Nalpak
 						["timeline"] = { "added 4.0.3.13277" },
-						["lvl"] = lvlsquish(15, 8, 15),
+						["lvl"] = lvlsquish(15, 15, 8),
 						["groups"] = {
 							objective(1, {	-- 0/5 Serpentbloom
 								["provider"] = { "i", 5339 },	-- Serpentbloom

@@ -271,7 +271,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(35, 10, 35),
+					["lvl"] = lvlsquish(35, 35, 10),
 				}),
 				q(27427, {	-- Arms of the Grimtotems
 					["qg"] = 23568,	-- Captain Darill
@@ -2923,7 +2923,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Needs a minimum of 225 skill in First Aid.",
 					["requireSkill"] = FIRST_AID,
 					-- #endif
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/15 Patients Saved
 							["provider"] = { "i", 16991 },	-- Triage Bandage

@@ -13,7 +13,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #endif
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["lvl"] = lvlsquish(50, 25, 50),
+		["lvl"] = lvlsquish(50, 50, 25),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				classicAch(955, {	-- Hydraxian Waterlords

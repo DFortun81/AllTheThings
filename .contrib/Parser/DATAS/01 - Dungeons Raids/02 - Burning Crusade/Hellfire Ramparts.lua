@@ -6,7 +6,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["lore"] = "Hellfire Ramparts make up the first wing of Hellfire Citadel. The citadel itself sits in the center of the zone, in the middle of a broken-up wall that divided the zone before the conflict began. The Ramparts takes place atop this wall along the sides of the citadel.",
 		["coord"] = { 47.65, 53.57, HELLFIRE_PENINSULA },	-- Hellfire Ramparts, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_RAMPARTS,
-		["lvl"] = lvlsquish(57, 10, 57),
+		["lvl"] = lvlsquish(57, 57, 10),
 		["groups"] = {
 			n(QUESTS, {
 				q(9587,  {	-- Dark Tidings [Alliance]
@@ -14,20 +14,20 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 				}),
 				q(9588,  {	-- Dark Tidings [Horde]
 					["provider"] = { "i", 23892 },	-- Ominous Letter
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 				}),
 				q(29529, {	-- Demons in the Citadel [Alliance]
 					["qg"] = 54603,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(57, 10, 57),
+					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Omor's Hoof
 							["provider"] = { "i", 23886 },	-- Omor's Hoof
@@ -38,7 +38,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54606,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(57, 10, 57),
+					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Omor's Hoof
 							["provider"] = { "i", 23886 },	-- Omor's Hoof
@@ -49,7 +49,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54603,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(57, 10, 57),
+					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
 						objective(1, {	-- 0/3 Hellfire Supplies
 							["provider"] = { "i", 72160 },	-- Hellfire Supplies
@@ -60,7 +60,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54606,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(57, 10, 57),
+					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
 						objective(1, {	-- 0/3 Hellfire Supplies
 							["provider"] = { "i", 72160 },	-- Hellfire Supplies
@@ -72,20 +72,20 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 61.6, 60.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 				}),
 				q(29542, {	-- Invading the Citadel [Horde]
 					["qg"] = 19256,	-- Sergeant Shatterskull
 					["coord"] = { 58.0, 41.2, HELLFIRE_PENINSULA },
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 				}),
 				q(29528, {	-- War on the Ramparts [Alliance]
 					["qg"] = 54603,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(57, 10, 57),
+					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Gargolmar's Hand
 							["provider"] = { "i", 23881 },	-- Gargolmar's Hand
@@ -103,7 +103,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54606,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(57, 10, 57),
+					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Gargolmar's Hand
 							["provider"] = { "i", 23881 },	-- Gargolmar's Hand
@@ -123,7 +123,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 56.7, 66.3, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Gargolmar's Hand
 							["provider"] = { "i", 23881 },	-- Gargolmar's Hand
@@ -146,7 +146,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 55.2, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 10, 59),
+					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Gargolmar's Hand
 							["provider"] = { "i", 23881 },	-- Gargolmar's Hand
@@ -291,7 +291,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30637, 1 },	-- Flamewrought Key [H]
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					ach(667, {	-- Heroic: Hellfire Ramparts
 						crit(1, {	-- Omor the Unscarred

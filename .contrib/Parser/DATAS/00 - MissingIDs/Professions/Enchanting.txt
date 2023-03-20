@@ -24,8 +24,6 @@ r(302692),	-- Disenchant
 r(302693),	-- Disenchant
 r(302694),	-- Disenchant
 r(302695),	-- Disenchant
-10.0.7.47910
-r(402139),	-- Mindslave's Reach
 10.1.0.48480
 r(404859),	-- 
 r(405076),	-- 

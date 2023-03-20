@@ -30,6 +30,7 @@ _.Zones =
 					["coord"] = { 36.6, 37.6, LEGION_DALARAN },
 					["g"] = {
 						i(44694),	-- Antiseptic-Soaked Dressing
+						i(44692),	-- Dalaran Nurse's Gown
 						i(44693),	-- Wound Dressing
 					},
 				}),
@@ -5398,6 +5399,12 @@ _.Zones =
 						i(137918),	-- Recipe: Gravenscale Spaulders [Rank 2] (RECIPE!)
 						i(137922),	-- Recipe: Gravenscale Treads [Rank 2] (RECIPE!)
 						i(137920),	-- Recipe: Gravenscale Warhelm [Rank 2] (RECIPE!)
+					},
+				}),
+				n(97332,  {	-- Richard Hatstock <Haberdasher>
+					["coord"] = { 37.2, 55.6, LEGION_DALARAN },
+					["sym"] = {
+						{"sub", "common_vendor", 29702},	--  Chameli Banaphash <Haberdasher> (Dalaran Northrend)
 					},
 				}),
 				n(97342,  {	-- Salan Sunthread <Clothier>

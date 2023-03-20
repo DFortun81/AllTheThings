@@ -755,7 +755,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["timeline"] = { "added 2.1.2" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(5, 1, 5),
+					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Kyle Fed
 							["providers"] = {

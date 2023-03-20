@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6661, {	-- Deeprun Rat Roundup
 					["qg"] = 12997,	-- Monty
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/5 Rats Captured
 							["provider"] = { "i", 17117 },	-- Rat Catcher's Flute
@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = {
 						{ "i", 17118, 1 },	-- Carton of Mystery Meat
 					},
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						i(17119),	-- Deeprun Rat Kabob
 					},

@@ -358,10 +358,6 @@ r(382989),	-- Cataclysm Milling
 r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
-10.0.7.47910
-r(402140),	-- Gurubashi Hoodoo Stick
-r(402141),	-- Judgment of the Gurubashi
-r(402142),	-- Gurubashi Ceremonial Staff
 10.1.0.48480
 r(403166),	-- Obsidian Combatant's Medallion
 r(403167),	-- Obsidian Combatant's Insignia of Alacrity

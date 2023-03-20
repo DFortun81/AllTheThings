@@ -11,13 +11,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			{ "i", 27991, 1 },	-- Shadow Labyrinth Key
 		},
 		-- #endif
-		["lvl"] = lvlsquish(65, 20, 65),
+		["lvl"] = lvlsquish(65, 65, 20),
 		["groups"] = {
 			n(QUESTS, {
 				q(29645, {	-- Ambassador Hellmaw
 					["qg"] = 54890,	-- Field Commander Mahfuun
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- 0/12 Cabal Ritualist slain
 							["provider"] = { "n", 18794 },	-- Cabal Ritualist
@@ -31,18 +31,18 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19496,	-- Spy Grik'tha
 					["coord"] = { 39.9, 72.3, TEROKKAR_FOREST },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(68, 20, 68),
+					["lvl"] = lvlsquish(68, 68, 20),
 				}),
 				q(29640, {	-- Find Spy To'gun
 					["qg"] = 54891,	-- Spy Grik'tha
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 				}),
 				q(10095, {	-- Into the Heart of the Labyrinth
 					["provider"] = { "o", 182947 },	-- The Codex of Blood
 					["sourceQuest"] = 10094,	-- The Codex of Blood
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(68, 20, 68),
+					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
 						objective(1, {	-- Murmur slain
 							["provider"] = { "n", 18708 },	-- Murmur
@@ -71,7 +71,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18417,	-- Altruis
 					["sourceQuest"] = 10646,	-- Illidan's Pupil
 					["coord"] = { 27.3, 43.0, NAGRAND },
-					["lvl"] = lvlsquish(68, 25, 68),
+					["lvl"] = lvlsquish(68, 68, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Book of Fel Names
 							["provider"] = { "i", 30808 },	-- Book of Fel Names
@@ -82,20 +82,20 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19542,	-- Field Commander Mahfuun
 					["sourceQuest"] = 10177,	-- Trouble at Auchindoun
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(68, 20, 68),
+					["lvl"] = lvlsquish(68, 68, 20),
 				}),
 				q(29643, {	-- The Codex of Blood
 					["qg"] = 54890,	-- Field Commander Mahfuun
 					["sourceQuest"] = 29642,	-- Trouble at Auchindoun
 					["coord"] = {50.4, 45.3, SHATTRATH_CITY },
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(68, 20, 68),
+					["lvl"] = lvlsquish(68, 68, 20),
 				}),
 				q(10666, {	-- The Lexicon Demonica
 					["qg"] = 21465,	-- David Wayne
 					["sourceQuest"] = 10664,	-- Additional Materials
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["lvl"] = lvlsquish(67, 25, 67),
+					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lexicon Demonica
 							["provider"] = { "i", 30827 },	-- Lexicon Demonica
@@ -106,7 +106,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18891,	-- Spy To'gun
 					["sourceQuest"] = 10178,	-- Find Spy To'gun
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(68, 20, 68),
+					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
 						objective(1, {	-- 0/5 Soul Device
 							["provider"] = { "i", 27480 },	-- Soul Device
@@ -121,7 +121,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18891,	-- Spy To'gun
 					["sourceQuest"] = 29640,	-- Find Spy To'gun
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(68, 20, 68),
+					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
 						objective(1, {	-- 0/5 Soul Device
 							["provider"] = { "i", 27480 },	-- Soul Device
@@ -137,7 +137,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10883,	-- The Tempest Key
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
 					["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
-					["lvl"] = lvlsquish(70, 30, 70),
+					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
 						objective(1, {	-- 0/1 Kalithresh's Trident
 							["provider"] = { "i", 31721 },	-- Kalithresh's Trident
@@ -152,14 +152,14 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(68, 20, 68),
+					["lvl"] = lvlsquish(68, 68, 20),
 				}),
 				q(29642, {	-- Trouble at Auchindoun
 					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
 					["timeline"] = { "added 4.3.0.14732" },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(68, 20, 68),
+					["lvl"] = lvlsquish(68, 68, 20),
 					["altQuests"] = {
 						10094,	-- The Codex of Blood (pre 4.0.3)
 					},
@@ -268,7 +268,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30633, 1 },	-- Auchenai Key
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

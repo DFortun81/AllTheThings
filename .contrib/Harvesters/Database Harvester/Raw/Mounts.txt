@@ -1582,8 +1582,9 @@
 385738@@@Temperamental Skyclaw
 10.0.2.46999
 369476@@@Amalgam of Rage
-10.0.2.47631
+10.0.2.47120
 369451@@@Jade, Bright Foreseer
+10.0.2.47631
 10.0.5.47871
 366647@@@Magenta Cloud Serpent
 366789@@@Crusty Crawler
@@ -1595,11 +1596,12 @@
 368126@@@Armored Golden Pterrordax
 369480@@@Cerulean Marsh Hopper
 395095@@@Whelpling
+10.0.5.48526
+400733@@@Rocket Shredder 9001
 10.0.7.48076
 349935@@@Noble Bruffalon
 10.1.0.48480
 408313@@@Big Slick in the City
 10.1.0.48537
-400733@@@Rocket Shredder 9001
 406637@@@Inferno Armoredon
 408647@@@Api Biru Sporebat

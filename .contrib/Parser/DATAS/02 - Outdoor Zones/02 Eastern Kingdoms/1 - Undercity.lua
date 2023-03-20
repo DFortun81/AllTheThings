@@ -16,6 +16,13 @@ local OnTooltipForCityFactionReputation = [[function(t)
 	end
 end]];
 -- #endif
+local COOKING_AWARD_GROUPS = {
+	-- #if AFTER 5.0.4
+	currency(81),	-- Epicurean's Award
+	-- #else
+	currency(402),	-- Chef's Award
+	-- #endif
+};
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(UNDERCITY, {
 		["lore"] = "The Undercity is the capital city of the Forsaken undead of the Horde.\n\nFar beneath the ruined Capital City of the kingdom of Lordaeron, its royal crypts were turned into a bastion of evil and undeath. Originally intended by Prince Arthas to be the Scourge's seat of power, the budding \"Undercity\" was abandoned when Arthas was recalled to aid the Lich King in the distant Northrend. In Arthas' absence, the Dark Lady, Sylvanas Windrunner, led the rebel Forsaken to the Undercity, and claimed it for her own. Since taking up residence, the Forsaken worked to complete the Undercity's construction by dredging the twisted maze of catacombs, tombs, and dungeons that Arthas began.",
@@ -346,7 +353,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 57.8, 90.6, UNDERCITY },
 					["timeline"] = { "added 3.3.0.10772", "removed 4.0.3" },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(1472, {	-- Devourer of Souls [Undercity]
 					["qg"] = 5675,	-- Carendin Halgar
@@ -439,9 +446,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = {
-						currency(81),	-- Epicurean's Award
-					},
+					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 				q(1998, {	-- Fenwick Thatros
 					["qg"] = 6467,	-- Mennet Carkad
@@ -474,9 +479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = {
-						currency(81),	-- Epicurean's Award
-					},
+					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 				q(1961, {	-- Gathering Materials
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
@@ -663,9 +666,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = {
-						currency(81),	-- Epicurean's Award
-					},
+					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 				q(2995, {	-- Lines of Communication
 					["qg"] = 7825,	-- Oran Snakewrithe
@@ -813,9 +814,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = {
-						currency(81),	-- Epicurean's Award
-					},
+					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 				q(1358, {	-- Sample for Helbrim
 					["providers"] = {
@@ -1205,9 +1204,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = {
-						currency(81),	-- Epicurean's Award
-					},
+					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 			}),
 			-- #if AFTER 6.1.0.19480
@@ -1540,8 +1537,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
-					["sym"] = { {"sub", "common_recipes_vendor", 49737 } }, -- Shazdar <Sous Chef>
 					["coord"] = { 62.3, 43.1, UNDERCITY },
+					-- #if AFTER CATA
+					["sym"] = {{"sub", "common_recipes_vendor", 49737}}, -- Shazdar <Sous Chef>
+					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6330),	-- Recipe: Bristle Whisker Catfish

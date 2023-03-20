@@ -1,0 +1,146 @@
+ID,Name_lang,Name1_lang,Mask_ID,Flags
+1,Private %s,Private %s,1,0
+2,Corporal %s,Corporal %s,2,0
+3,Sergeant %s,Sergeant %s,3,0
+4,Master Sergeant %s,Master Sergeant %s,4,0
+5,Sergeant Major %s,Sergeant Major %s,5,0
+6,Knight %s,Knight %s,6,0
+7,Knight-Lieutenant %s,Knight-Lieutenant %s,7,0
+8,Knight-Captain %s,Knight-Captain %s,8,0
+9,Knight-Champion %s,Knight-Champion %s,9,0
+10,Lieutenant Commander %s,Lieutenant Commander %s,10,0
+11,Commander %s,Commander %s,11,0
+12,Marshal %s,Marshal %s,12,0
+13,Field Marshal %s,Field Marshal %s,13,0
+14,Grand Marshal %s,Grand Marshal %s,14,0
+15,Scout %s,Scout %s,15,0
+16,Grunt %s,Grunt %s,16,0
+17,Sergeant %s,Sergeant %s,17,0
+18,Senior Sergeant %s,Senior Sergeant %s,18,0
+19,First Sergeant %s,First Sergeant %s,19,0
+20,Stone Guard %s,Stone Guard %s,20,0
+21,Blood Guard %s,Blood Guard %s,21,0
+22,Legionnaire %s,Legionnaire %s,22,0
+23,Centurion %s,Centurion %s,23,0
+24,Champion %s,Champion %s,24,0
+25,Lieutenant General %s,Lieutenant General %s,25,0
+26,General %s,General %s,26,0
+27,Warlord %s,Warlord %s,27,0
+28,High Warlord %s,High Warlord %s,28,0
+42,Gladiator %s,Gladiator %s,29,0
+43,Duelist %s,Duelist %s,30,0
+44,Rival %s,Rival %s,31,0
+45,Challenger %s,Challenger %s,32,0
+46,Scarab Lord %s,Scarab Lord %s,33,0
+47,Conqueror %s,Conqueror %s,34,0
+48,Justicar %s,Justicar %s,35,0
+53,"%s, Champion of the Naaru","%s, Champion of the Naaru",36,0
+62,Merciless Gladiator %s,Merciless Gladiator %s,37,0
+63,%s of the Shattered Sun,%s of the Shattered Sun,38,0
+64,"%s, Hand of A'dal","%s, Hand of A'dal",39,0
+71,Vengeful Gladiator %s,Vengeful Gladiator %s,40,0
+72,Battlemaster %s,Battlemaster %s,210,0
+74,Elder %s,Elder %s,43,0
+75,Flame Warden %s,Flame Warden %s,44,0
+76,Flame Keeper %s,Flame Keeper %s,45,0
+77,%s the Exalted,%s the Exalted,46,0
+78,%s the Explorer,%s the Explorer,47,0
+79,%s the Diplomat,%s the Diplomat,48,0
+80,Brutal Gladiator %s,Brutal Gladiator %s,49,0
+81,%s the Seeker,%s the Seeker,42,0
+82,Arena Master %s,Arena Master %s,50,0
+83,Salty %s,Salty %s,51,0
+84,Chef %s,Chef %s,52,0
+85,%s the Supreme,%s the Supreme,53,0
+86,%s of the Ten Storms,%s of the Ten Storms,54,0
+87,%s of the Emerald Dream,%s of the Emerald Dream,55,0
+89,Prophet %s,Prophet %s,57,0
+90,%s the Malefic,%s the Malefic,58,0
+91,Stalker %s,Stalker %s,59,0
+92,%s of the Ebon Blade,%s of the Ebon Blade,60,0
+93,Archmage %s,Archmage %s,61,0
+94,Warbringer %s,Warbringer %s,62,0
+95,Assassin %s,Assassin %s,63,0
+96,Grand Master Alchemist %s,Grand Master Alchemist %s,64,0
+97,Grand Master Blacksmith %s,Grand Master Blacksmith %s,65,0
+98,Iron Chef %s,Iron Chef %s,66,0
+99,Grand Master Enchanter %s,Grand Master Enchanter %s,67,0
+100,Grand Master Engineer %s,Grand Master Engineer %s,68,0
+101,Doctor %s,Doctor %s,69,0
+102,Grand Master Angler %s,Grand Master Angler %s,70,0
+103,Grand Master Herbalist %s,Grand Master Herbalist %s,71,0
+104,Grand Master Scribe %s,Grand Master Scribe %s,72,0
+105,Grand Master Jewelcrafter %s,Grand Master Jewelcrafter %s,73,0
+106,Grand Master Leatherworker %s,Grand Master Leatherworker %s,74,0
+107,Grand Master Miner %s,Grand Master Miner %s,75,0
+108,Grand Master Skinner %s,Grand Master Skinner %s,76,0
+109,Grand Master Tailor %s,Grand Master Tailor %s,77,0
+110,%s of Quel'Thalas,%s of Quel'Thalas,78,0
+111,%s of Argus,%s of Argus,79,0
+112,%s of Khaz Modan,%s of Khaz Modan,80,0
+113,%s of Gnomeregan,%s of Gnomeregan,81,0
+114,%s the Lion Hearted,%s the Lion Hearted,82,0
+115,"%s, Champion of Elune","%s, Champion of Elune",83,0
+116,"%s, Hero of Orgrimmar","%s, Hero of Orgrimmar",84,0
+117,Plainsrunner %s,Plainsrunner %s,85,0
+118,%s of the Darkspear,%s of the Darkspear,86,0
+119,%s the Forsaken,%s the Forsaken,87,0
+120,%s the Magic Seeker,%s the Magic Seeker,88,0
+121,Twilight Vanquisher %s,Twilight Vanquisher %s,89,0
+122,"%s, Conqueror of Naxxramas","%s, Conqueror of Naxxramas",90,0
+123,"%s, Hero of Northrend","%s, Hero of Northrend",91,0
+124,%s the Hallowed,%s the Hallowed,92,0
+125,Loremaster %s,Loremaster %s,93,0
+126,%s of the Alliance,%s of the Alliance,94,0
+127,%s of the Horde,%s of the Horde,95,0
+128,%s the Flawless Victor,%s the Flawless Victor,96,0
+129,"%s, Champion of the Frozen Wastes","%s, Champion of the Frozen Wastes",97,0
+130,Ambassador %s,Ambassador %s,98,0
+131,%s the Argent Champion,%s the Argent Champion,99,0
+132,"%s, Guardian of Cenarius","%s, Guardian of Cenarius",100,0
+133,Brewmaster %s,Brewmaster %s,101,0
+134,Merrymaker %s,Merrymaker %s,102,0
+135,%s the Love Fool,%s the Love Fool,103,0
+137,Matron %s,Matron %s,104,0
+138,Patron %s,Patron %s,105,0
+139,Obsidian Slayer %s,Obsidian Slayer %s,106,0
+140,%s of the Nightfall,%s of the Nightfall,107,0
+141,%s the Immortal,%s the Immortal,108,0
+142,%s the Undying,%s the Undying,109,0
+143,%s Jenkins,%s Jenkins,110,0
+144,Bloodsail Admiral %s,Bloodsail Admiral %s,111,0
+145,%s the Insane,%s the Insane,112,0
+146,%s of the Exodar,%s of the Exodar,113,0
+147,%s of Darnassus,%s of Darnassus,114,0
+148,%s of Ironforge,%s of Ironforge,115,0
+149,%s of Stormwind,%s of Stormwind,116,0
+150,%s of Orgrimmar,%s of Orgrimmar,117,0
+151,%s of Sen'jin,%s of Sen'jin,118,0
+152,%s of Silvermoon,%s of Silvermoon,119,0
+153,%s of Thunder Bluff,%s of Thunder Bluff,120,0
+154,%s of the Undercity,%s of the Undercity,121,0
+155,%s the Noble,%s the Noble,122,0
+156,Crusader %s,Crusader %s,123,0
+157,Deadly Gladiator %s,Deadly Gladiator %s,56,0
+158,"%s, Death's Demise","%s, Death's Demise",124,0
+159,%s the Celestial Defender,%s the Celestial Defender,125,0
+160,"%s, Conqueror of Ulduar","%s, Conqueror of Ulduar",126,0
+161,"%s, Champion of Ulduar","%s, Champion of Ulduar",127,0
+163,Vanquisher %s,Vanquisher %s,128,0
+164,Starcaller %s,Starcaller %s,129,0
+165,%s the Astral Walker,%s the Astral Walker,130,0
+166,"%s, Herald of the Titans","%s, Herald of the Titans",131,0
+167,Furious Gladiator %s,Furious Gladiator %s,132,0
+168,%s the Pilgrim,%s the Pilgrim,133,0
+169,Relentless Gladiator %s,Relentless Gladiator %s,134,0
+170,Grand Crusader %s,Grand Crusader %s,135,0
+171,%s the Argent Defender,%s the Argent Defender,136,0
+172,%s the Patient,%s the Patient,137,0
+173,%s the Light of Dawn,%s the Light of Dawn,138,0
+174,"%s, Bane of the Fallen King","%s, Bane of the Fallen King",139,0
+175,%s the Kingslayer,%s the Kingslayer,140,0
+176,%s of the Ashen Verdict,%s of the Ashen Verdict,141,0
+177,Wrathful Gladiator %s,Wrathful Gladiator %s,142,0
+697,Infernal Gladiator %s,Infernal Gladiator %s,41,0
+756,"%s, Soul of Iron","%s, Soul of Iron",143,0
+757,"%s, Survivor of the Firelord","%s, Survivor of the Firelord",144,0

@@ -52,7 +52,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["mapID"] = ONYXIAS_LAIR,
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["lvl"] = lvlsquish(60, 30, 60),
+		["lvl"] = lvlsquish(60, 60, 30),
 		["groups"] = {
 			n(QUESTS, {
 				applyclassicphase(WRATH_PHASE_THREE, q(24428, {	-- A Most Puzzling Circumstance (A)
@@ -85,7 +85,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["maps"] = { BURNING_STEPPES },
 					-- #endif
 					["classes"] = { HUNTER },
-					["lvl"] = lvlsquish(60, 30, 60),
+					["lvl"] = lvlsquish(60, 60, 30),
 					-- #if BEFORE WRATH
 					["cost"] = { { "i", 18705, 1 } },	-- Mature Black Dragon Sinew
 					-- #endif
@@ -120,7 +120,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["maps"] = { WINTERSPRING },
 					["classes"] = { HUNTER },
 					["cost"] = { { "i", 18704, 1 } },	-- Mature Blue Dragon Sinew
-					["lvl"] = lvlsquish(60, 30, 60),
+					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						i(18714),	-- Ancient Sinew Wrapped Lamina
 					},
@@ -130,7 +130,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 7495,	-- Victory for the Alliance
 					["coord"] = { 67.2, 85.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(60, 30, 60),
+					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						i(18403),	-- Dragonslayer's Signet
 						i(18406),	-- Onyxia Blood Talisman
@@ -142,7 +142,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 7490,	-- Victory for the Horde
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(60, 30, 60),
+					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						i(18403),	-- Dragonslayer's Signet
 						i(18404),	-- Onyxia Tooth Pendant
@@ -154,7 +154,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
 					["classes"] = { WARRIOR, PALADIN },
 					["maps"] = { DIRE_MAUL },
-					["lvl"] = lvlsquish(60, 30, 60),
+					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						i(18513),	-- A Dull and Flat Elven Blade
 					},
@@ -169,7 +169,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["coord"] = { 47, 24.48, FELWOOD },
 					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
 					["classes"] = { HUNTER },
-					["lvl"] = lvlsquish(60, 30, 60),
+					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						objective(1, {	-- 0/1 Simone's Head
 							["provider"] = { "i", 18952 },	-- Simone's Head
@@ -234,14 +234,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 7507,	-- Nostro's Compendium
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN },
-					["lvl"] = lvlsquish(60, 30, 60),
+					["lvl"] = lvlsquish(60, 60, 30),
 				})),
 				q(7509, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- The Forging of Quel'Serrar
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuest"] = 7508,	-- The Forging of Quel'Serrar
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN },
-					["lvl"] = lvlsquish(60, 30, 60),
+					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						objective(1, {	-- 0/1 Treated Ancient Blade
 							["provider"] = { "i", 18492 },	-- Treated Ancient Blade
@@ -277,7 +277,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["coord"] = { 67.0, 85.0, STORMWIND_CITY },
 					["requireSkill"] = LEATHERWORKING,
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(60, 30, 60),
+					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						recipe(19093, {	-- Onyxia Scale Cloak
 							["timeline"] = ADDED_WITH_RERELEASE,
@@ -298,7 +298,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["coord"] = { 52.2, 75.8, ORGRIMMAR },
 					["requireSkill"] = LEATHERWORKING,
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(60, 30, 60),
+					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						recipe(19093, {	-- Onyxia Scale Cloak
 							["timeline"] = ADDED_WITH_RERELEASE,
@@ -311,12 +311,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(7495, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Victory for the Alliance
 					["provider"] = { "i", 18423 },	-- Head of Onyxia (A)
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(60, 30, 60),
+					["lvl"] = lvlsquish(60, 60, 30),
 				})),
 				q(7490, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Victory for the Horde
 					["provider"] = { "i", 18422 },	-- Head of Onyxia (H)
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(60, 30, 60),
+					["lvl"] = lvlsquish(60, 60, 30),
 				})),
 			}),
 			prof(SKINNING, {

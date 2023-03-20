@@ -50,6 +50,11 @@ namespace ATT
             private static IDictionary<string, bool> WARNED_FIELDS = new ConcurrentDictionary<string, bool>();
 
             /// <summary>
+            /// Returns whether a specific ItemID has been referenced
+            /// </summary>
+            public static bool IsItemReferenced(decimal itemID) => ITEMS_WITH_REFERENCES.ContainsKey(itemID);
+
+            /// <summary>
             /// All of the item IDs that are in the database.
             /// </summary>
             public static ICollection<decimal> AllIDs
@@ -569,7 +574,7 @@ namespace ATT
                             // setting a spellID on an Item with a recipeID should do nothing
                             if (field == "spellID" && item.TryGetValue("recipeID", out long recipeID) && recipeID > 0)
                             {
-                                Log($"WARN: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' : {MiniJSON.Json.Serialize(item)}");
+                                LogDebug($"WARN: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' : {MiniJSON.Json.Serialize(item)}");
                                 break;
                             }
 
@@ -996,7 +1001,7 @@ namespace ATT
             #endregion
 
             #region Utility
-            public static void MarkItemAsReferenced(long itemID)
+            public static void MarkItemAsReferenced(decimal itemID)
             {
                 ITEMS_WITH_REFERENCES[itemID] = true;
             }

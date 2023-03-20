@@ -8,13 +8,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #endif
 		["mapID"] = MARAUDON,
 		["maps"] = { MARAUDON_LEVEL2, 67, 68 },
-		["lvl"] = lvlsquish(41, 10, 30),
+		["lvl"] = lvlsquish(41, 30, 10),
 		["groups"] = {
 			n(QUESTS, {
 				q(27697, {	-- Corruption in Maraudon
 					["qg"] = 12238,	-- Zaetar's Spirit
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(32, 10, 32),
+					["lvl"] = lvlsquish(32, 32, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lord Vyletongue slain
 							["provider"] = { "n", 12236 },	-- Lord Vyletongue
@@ -80,7 +80,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(27692, {	-- Princess Theradras
 					["qg"] = 12238,	-- Zaetar's Spirit
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(32, 10, 32),
+					["lvl"] = lvlsquish(32, 32, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Princess Theradras slain
 							["provider"] = { "n", 12201 },	-- Princess Theradras
@@ -112,7 +112,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(27698, {	-- Servants of Theradras
 					["qg"] = 12238,	-- Zaetar's Spirit
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(32, 10, 32),
+					["lvl"] = lvlsquish(32, 32, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Noxxion slain
 							["provider"] = { "n", 13282 },	-- Noxxion

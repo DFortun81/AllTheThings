@@ -101,13 +101,6 @@ r(310940),	-- Modified Crafting Reagent 08
 r(310949),	-- Shadowlands Tailoring
 9.0.1.35679
 r(343634),	-- Shadowlands Cloth Scavenging
-10.0.7.47910
-r(402151),	-- Bloodlord's Embrace
-r(402152),	-- Gurubashi Tigerhide Cloak
-r(402155),	-- Gurubashi Headdress
-r(402156),	-- Ritualistic Legwarmers
-10.0.7.48076
-r(405974),	-- Paw-Made Winterpelt Reagent Bag
 10.1.0.48480
 r(403149),	-- Obsidian Combatant's Wildercloth Cloak
 r(403150),	-- Obsidian Combatant's Wildercloth Tunic
