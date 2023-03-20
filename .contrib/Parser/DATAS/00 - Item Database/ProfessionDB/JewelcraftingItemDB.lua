@@ -36,12 +36,6 @@ local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 end
 
 -- NOT ORGANIZED
-i(41564, 53879);	-- Design: Lucent Huge Citrine [WotLK]
-i(41565, 53879);	-- Design: Lucent Huge Citrine [Cata+]
-i(41571, 53924);	-- Design: Turbid Dark Jade [Cata+]
-i(41573, 53924);	-- Design: Turbid Dark Jade [WotLK]
-
-
 i(0, 382978);	-- Cataclysm Prospecting
 i(0, 382995);	-- Classic Prospecting
 
