@@ -5,6 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 	n(ZONE_DROPS, {	-- Drops available from pretty much anywhere in Dragon Isles
 		["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 		["g"] = {
+			i(202071),	-- Elemental Mote
 			i(202070),	-- Exceptional Pelt
 		},
 	}),
