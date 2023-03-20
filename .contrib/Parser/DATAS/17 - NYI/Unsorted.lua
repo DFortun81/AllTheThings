@@ -166,7 +166,7 @@ root(ROOTS.Unsorted, {
 		},
 	}),
 	tier(DF_TIER, {
-		tier(DF_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 10.1.0" } }, {
+		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 10.1.0" } }, {
 			n(REWARDS, {
 				i(87829),	-- Technique: Incarnadine Ink
 				i(87830),	-- Technique: Tigersblood Tincture
