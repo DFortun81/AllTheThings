@@ -17,8 +17,6 @@ r(51304),	-- Alchemy
 r(53846),	-- 
 3.0.1.8874
 r(53042),	-- Mixology
-3.1.0.9767
-r(62213),	-- Lesser Flask of Resistance
 4.0.1.12911
 r(80724),	-- 
 r(80731),	-- Alchemy

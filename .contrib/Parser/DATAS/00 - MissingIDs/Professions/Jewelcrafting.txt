@@ -135,8 +135,6 @@ r(382978),	-- Cataclysm Prospecting
 r(382979),	-- Northrend Prospecting
 r(382980),	-- Outland Prospecting
 r(382995),	-- Classic Prospecting
-10.0.7.47983
-r(404740),	-- Cataclysm Crushing
 10.1.0.48480
 r(403131),	-- Obsidian Combatant's Jeweled Amulet
 r(403132),	-- Obsidian Combatant's Jeweled Signet
@@ -454,6 +452,7 @@ r(53875),	-- Resplendent Huge Citrine
 r(53876),	-- Fierce Huge Citrine
 r(53877),	-- Deadly Huge Citrine
 r(53878),	-- Glinting Huge Citrine
+r(53879),	-- Lucent Huge Citrine
 r(53880),	-- Deft Huge Citrine
 r(53881),	-- Luminous Huge Citrine
 r(53882),	-- Potent Huge Citrine
@@ -477,6 +476,7 @@ r(53920),	-- Forceful Dark Jade
 r(53921),	-- Purified Shadow Crystal \\ Seer's Dark Jade
 r(53922),	-- Misty Dark Jade
 r(53923),	-- Lightning Dark Jade \\ Shining Dark Jade
+r(53924),	-- Turbid Dark Jade
 r(53925),	-- Energized Dark Jade \\ Intricate Dark Jade
 r(53926),	-- Dazzling Dark Jade
 r(53927),	-- Sundered Dark Jade

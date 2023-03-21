@@ -622,7 +622,6 @@ faction(2522),	-- Clan Teerai
 faction(2523),	-- Dark Talons \\ The Talons
 faction(2524),	-- Obsidian Warders \\ The New Warders
 faction(2525),	-- Elemental, Fire
-faction(2526),	-- Winterpelt Furbolg
 faction(2542),	-- Clan Ukhel
 faction(2544),	-- Artisan's Consortium - Dragon Isles Branch
 faction(2545),	-- Maruuk Centaur (Renown)

@@ -65174,67 +65174,11 @@ s(184176)/i(202160),	--
 s(184178)/i(202161),	-- 
 s(184380)/i(202380),	-- 
 10.0.7.47910
-s(184336)/i(202282),	-- Winterpelt Mending Totem
 s(184337)/i(202285),	-- 
-s(185356)/i(203790),	-- Bloodherald
-s(185357)/i(203791),	-- Warblade of the Hakkari, Reborn
-s(185358)/i(203792),	-- Warblade of the Hakkari, Reborn
-s(185359)/i(203793),	-- Bloodlord's Reaver
-s(185360)/i(203794),	-- Animist's Legguards
-s(185361)/i(203795),	-- Judgment of the Gurubashi
-s(185362)/i(203796),	-- Bloodlord's Embrace
-s(185363)/i(203797),	-- Gurubashi Hexxer
 s(185364)/i(203798),	-- Copy Jin'do's Bag of Whammies
-s(185365)/i(203799),	-- Animist's Footwraps
-s(185366)/i(203800),	-- Ritualistic Legwarmers
-s(185367)/i(203801),	-- Gurubashi Slicer
-s(185368)/i(203802),	-- Venomfang
-s(185369)/i(203803),	-- Gurubashi Tigerhide Cloak
-s(185370)/i(203804),	-- Sceptre of Hexing
-s(185371)/i(203805),	-- Gurubashi's Grasp
-s(185372)/i(203806),	-- Gurubashi Crusher
-s(185373)/i(203807),	-- Gurubashi Hoodoo Stick
-s(185374)/i(203808),	-- Mindslave's Reach
-s(185375)/i(203809),	-- Gurubashi Grinder
-s(185376)/i(203810),	-- Gurubashi Carver
-s(185377)/i(203811),	-- Pitchfork of Mojo Madness
-s(185378)/i(203812),	-- Gurubashi Poker
-s(185379)/i(203813),	-- Fiery Vengeance
-s(185380)/i(203814),	-- Junglefury Gauntlets
-s(185381)/i(203815),	-- Gurubashi Ceremonial Staff
-s(185382)/i(203816),	-- Junglefury Leggings
-s(185383)/i(203817),	-- Gurubashi Headplate
-s(185384)/i(203819),	-- Gloves of the Tormentor
-s(185385)/i(203820),	-- Gurubashi Headdress
-s(185386)/i(203860),	-- Venomreaver
-s(185415)/i(203966),	-- Cord of Shriveled Heads
-s(185416)/i(203970),	-- Bloodtinged Hat
-s(185417)/i(203971),	-- Bloodtinged Shoulders
-s(185419)/i(203995),	-- Winter Pelt Cloak
-s(185460)/i(204182),	-- Cloak of Dark Descent
-s(185470)/i(204258),	-- Goblin Trainee's Wristwraps
-s(185471)/i(204259),	-- Goblin Trainee's Cord
-s(185472)/i(204260),	-- Goblin Trainee's Leggings
-s(185473)/i(204261),	-- Goblin Trainee's Vest
-s(185483)/i(204266),	-- Gilnean Trainee's Vest
-s(185484)/i(204267),	-- Gilnean Trainee's Leggings
-s(185485)/i(204268),	-- Gilnean Trainee's Cord
-s(185486)/i(204269),	-- Gilnean Trainee's Wristwraps
 s(185489)/i(204272),	-- 
 s(185513)/i(204309),	-- 
-10.0.7.47983
-s(185552)/i(204354),	-- Hollowed Furbolg Food Pack
-s(185553)/i(204355),	-- Hollowed Winterpelt Food Pack
-s(185565)/i(204404),	-- Square Holders
 10.0.7.48076
-s(185648)/i(204562),	-- Maruuk Maul
-s(185649)/i(204563),	-- Morqut Club
-s(185650)/i(204564),	-- Dragonscale Expeditioner's Rifle
-s(185651)/i(204566),	-- Journal of the Forbidden Reach
-s(185652)/i(204569),	-- Valdrakken Talons
-s(185653)/i(204570),	-- Valdrakken Pocketknife
-s(185654)/i(204571),	-- Bulwark of the Forbidden Reach
-s(185703)/i(204674),	-- Cursed Demonbone Longbow
 s(185704)/i(199420),	-- Hood of Raging Tempests \\ PH Primal Storm Hood
 s(185705)/i(204677),	-- Ogre Mining Pick
 s(185706)/i(199424),	-- Shoulderpads of Raging Tempests \\ PH Primal Storm Shoulderpads
@@ -65295,13 +65239,6 @@ s(185759)/i(199322),	-- Rod of Raging Tempests \\ PH Primal Storm Rod
 s(185760)/i(199323),	-- Mallet of Raging Tempests \\ PH Primal Storm Mallet
 s(185761)/i(199324),	-- Crusher of Raging Tempests \\ PH Primal Storm Crusher
 s(185762)/i(199325),	-- Mace of Raging Tempests \\ PH Primal Storm Mace
-s(185842)/i(204820),	-- Lionguard Greathelm
-s(185843)/i(204821),	-- Lionguard Greathelm
-s(185844)/i(204822),	-- Lionguard Greathelm
-10.0.7.48295
-s(185845)/i(204863),	-- Lionguard Greatbelt
-s(185846)/i(204865),	-- Lionguard Greatbelt
-s(185847)/i(204866),	-- Lionguard Greatbelt
 10.0.7.48439
 s(185909)/i(204882),	-- 
 s(185910)/i(204881),	-- 

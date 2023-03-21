@@ -36,14 +36,9 @@ r(49383),	-- Engineering
 r(51306),	-- Engineering
 r(53280),	-- 
 3.0.1.8874
-r(54998),	-- Hand-Mounted Pyro Rocket
-r(54999),	-- Hyperspeed Accelerators
 r(56273),	-- Wormhole: Gadgetzan
 r(56474),	-- Mammoth Cutters
 r(56475),	-- Saronite Razorheads
-3.1.0.9767
-r(63765),	-- Springy Arachnoweave
-r(63770),	-- Reticulated Armor Webbing
 3.3.5.12340
 r(67790),	-- Dimensional Folder: K3
 r(72952),	-- Shatter Rounds
