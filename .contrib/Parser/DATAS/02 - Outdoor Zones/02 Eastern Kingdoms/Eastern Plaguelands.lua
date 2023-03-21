@@ -2558,7 +2558,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 14494 },	-- Eris Havenfire
 						{ "i", 18659 },	-- Splinter of Nordrassil
 					},
+					-- #if AFTER WRATH
+					["coord"] = { 17.6, 14.1, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 20.8, 18.4, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["cost"] = {
 						{ "i", 18646, 1 },	-- The Eye of Divinity
