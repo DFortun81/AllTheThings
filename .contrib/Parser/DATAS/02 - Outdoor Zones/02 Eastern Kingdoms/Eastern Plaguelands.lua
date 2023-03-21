@@ -2554,26 +2554,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(7622, {	-- The Balance of Light and Shadow
-					["qg"] = 14494,	-- Eris Havenfire
+					["providers"] = {
+						{ "n", 14494 },	-- Eris Havenfire
+						{ "i", 18659 },	-- Splinter of Nordrassil
+					},
 					["coord"] = { 20.8, 18.4, EASTERN_PLAGUELANDS },
 					["timeline"] = { "removed 4.0.3" },
+					["cost"] = {
+						{ "i", 18646, 1 },	-- The Eye of Divinity
+						{ "i", 18665, 1 },	-- The Eye of Shadow
+					},
 					["classes"] = { PRIEST },
 					["lvl"] = 60,
 					["groups"] = {
-						i(18659, {	-- Splinter of Nordrassil
+						i(18609, {	-- Anathema
 							["timeline"] = { "removed 4.0.3" },
-							["cost"] = {
-								{ "i", 18646, 1 },	-- The Eye of Divinity
-								{ "i", 18665, 1 },	-- The Eye of Shadow
-							},
-							["groups"] = {
-								i(18609, {	-- Anathema
-									["timeline"] = { "removed 4.0.3" },
-								}),
-								i(18608, {	-- Benediction
-									["timeline"] = { "removed 4.0.3" },
-								}),
-							},
+						}),
+						i(18608, {	-- Benediction
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
