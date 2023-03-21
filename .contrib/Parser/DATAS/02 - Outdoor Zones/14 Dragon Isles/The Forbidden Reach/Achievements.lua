@@ -126,31 +126,42 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["_npcs"] = { 203353 },	-- Loot Specialist
 				}),
 			}),
+			ach(17405, {	-- Dragon Glyphs: Caldera of the Menders
+				["coord"] = { 35.7, 21.9, THE_FORBIDDEN_REACH },
+			}),
+			ach(17401, {	-- Dragon Glyphs: Dragonskull Island
+				["coord"] = { 81.6, 50.2, THE_FORBIDDEN_REACH },
+			}),
+			ach(17400, {	-- Dragon Glyphs: Froststone Peak
+				["coord"] = { 64.6, 23.9, THE_FORBIDDEN_REACH },
+			}),
+			ach(17402, {	-- Dragon Glyphs: Stormsunder Mountain
+				["coord"] = { 81.6, 50.2, THE_FORBIDDEN_REACH },
+			}),
+			ach(17404, {	-- Dragon Glyphs: Talonlord's Perch
+				["coord"] = { 60.5, 61.8, THE_FORBIDDEN_REACH },
+			}),
+			ach(17399, {	-- Dragon Glyphs: Talon's Watch
+				["coord"] = { 15.9, 92.3, THE_FORBIDDEN_REACH },
+			}),
+			ach(17403, {	-- Dragon Glyphs: The Frosted Spine
+				["coord"] = { 48.3, 66.3, THE_FORBIDDEN_REACH },
+			}),
+			ach(17398, {	-- Dragon Glyphs: Winglord's Perch
+				["coord"] = { 13.3, 1.6, THE_FORBIDDEN_REACH },
+			}),
 			ach(17411, {	-- Forbidden Reach Glyph Hunter
-				crit(1, {	-- Dragon Glyphs: Winglord's Perch
-					["coord"] = { 13.3, 1.6, THE_FORBIDDEN_REACH },
-				}),
-				crit(2, {	-- Dragon Glyphs: Talon's Watch
-					["coord"] = { 15.9, 92.3, THE_FORBIDDEN_REACH },
-				}),
-				crit(3, {	-- Dragon Glyphs: Froststone Peak
-					["coord"] = { 64.6, 23.9, THE_FORBIDDEN_REACH },
-				}),
-				crit(4, {	-- Dragon Glyphs: Dragonskull Island
-					["coord"] = { 81.6, 50.2, THE_FORBIDDEN_REACH },
-				}),
-				crit(5, {	-- Dragon Glyphs: Stormsunder Mountain
-					["coord"] = { 81.6, 50.2, THE_FORBIDDEN_REACH },
-				}),
-				crit(6, {	-- Dragon Glyphs: The Frosted Spine
-					["coord"] = { 48.3, 66.3, THE_FORBIDDEN_REACH },
-				}),
-				crit(7, {	-- Dragon Glyphs: Talonlord's Perch
-					["coord"] = { 60.5, 61.8, THE_FORBIDDEN_REACH },
-				}),
-				crit(8, {	-- Dragon Glyphs: Caldera of the Menders
-					["coord"] = { 35.7, 21.9, THE_FORBIDDEN_REACH },
-				}),
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					17405,	-- Dragon Glyphs: Caldera of the Menders
+					17401,	-- Dragon Glyphs: Dragonskull Island
+					17400,	-- Dragon Glyphs: Froststone Peak
+					17402,	-- Dragon Glyphs: Stormsunder Mountain
+					17404,	-- Dragon Glyphs: Talonlord's Perch
+					17399,	-- Dragon Glyphs: Talon's Watch
+					17403,	-- Dragon Glyphs: The Frosted Spine
+					17398,	-- Dragon Glyphs: Winglord's Perch
+				}},
 			}),
 			ach(17534, {	-- Explore the Forbidden Reach
 				crit(1),	-- The War Creche

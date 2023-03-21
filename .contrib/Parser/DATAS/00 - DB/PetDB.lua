@@ -1271,29 +1271,32 @@ pet(193835, 3323);	-- Brightfeather
 pet(193850, 3330);	-- Buckie
 pet(193363, 3290);	-- Bunbo
 pet(202255, 3427);	-- Driftling
+pet(202407, 3449);	-- Flow
+pet(204079, 3476);	-- Gilded Mechafrog
 pet(193908, 3338);	-- Kobaldt
 pet(191915, 3259);	-- Shaggy
+pet(202411, 3447);	-- Tremblor
+pet(204183, 3475);	-- Volatile Self-Driving Toolbox
+pet(202413, 3446);	-- Vortex
+pet(202412, 3448);	-- Wildfire
 -- Unsorted
 
--- Blizzard is Crazy... Have to check later which of these are correct /Braghe
-pet(202407, 3432);	-- Flow
+
+pet(0, 3432);	-- Flow
 pet(0, 3436);	-- Flow
 pet(0, 3440);	-- Flow
-pet(0, 3449);	-- Flow
-pet(202411, 3430);	-- Tremblor
+pet(0, 3430);	-- Tremblor
 pet(0, 3434);	-- Tremblor
 pet(0, 3438);	-- Tremblor
-pet(0, 3447);	-- Tremblor
-pet(202413, 3429);	-- Vortex
+
+pet(0, 3429);	-- Vortex
 pet(0, 3433);	-- Vortex
 pet(0, 3437);	-- Vortex
-pet(0, 3446);	-- Vortex
-pet(202412, 3431);	-- Wildfire
+
+pet(0, 3431);	-- Wildfire
 pet(0, 3435);	-- Wildfire
 pet(0, 3439);	-- Wildfire
-pet(0, 3448);	-- Wildfire
-pet(204079, 3471);	-- Gilded Mechafrog
-pet(0, 3476);	-- Gilded Mechafrog
+pet(0, 3471);	-- Gilded Mechafrog
 
 -- Needs Sorting
 pet(0, 3422);	-- [DNT] Storm Pet Boss - Legendary

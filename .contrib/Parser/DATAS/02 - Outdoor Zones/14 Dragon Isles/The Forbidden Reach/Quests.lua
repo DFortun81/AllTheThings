@@ -100,6 +100,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
 			}),
+			-- Not confirmed --
 			-- Envoy
 			-- Dragonscale
 			q(74908, {	-- New Adventures
@@ -293,6 +294,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			})),
 		}),
 		n(QUESTS, sharedData({ ["isWeekly"] = true }, {
+			-- Not Confirmed --
 			q(75025, {	-- A Good Day for Rolling
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 201291 },	-- Cataloger Coralie

@@ -1552,7 +1552,6 @@ i(192765, 374071);	-- [PH] Dragonfly Yellow		/	[PH] Dragonfly Yellow
 i(192788, 374181);	-- [PH] Mammoth V2 Blue			/	[PH] Mammoth V2 Blue
 i(192787, 351403);	-- [PH] Mammoth V2 Dark			/	[PH] Mammoth V2 Dark
 i(192789, 374172);	-- [PH] Mammoth V2 Gray			/	[PH] Mammoth V2 Gray
-i(192790, 374194);	-- [PH] Mammoth V2 Green		/	[PH] Mammoth V2 Green
 i(198822, 385260);	-- [PH] Sepia Wind Eagle		/	[PH] Sepia Wind Eagle
 i(192771, 352927);	-- [PH] Water Salamander Blue	/	[PH] Water Salamander Blue
 i(192772, 374090);	-- [PH] Water Salamander Green
@@ -1592,7 +1591,6 @@ i(0, 369451);		-- Jade Foreseer
 ------------------
 i(192800, 352926);	-- Skyskin Hornstrider
 -- NYI --
-i(0, 400733);	-- [PH] Goblin Shredder Rocket
 i(0, 397406);	-- [PH] Magical Fish Mount
 i(203226, 399708);	-- Stormfused Salamanther
 i(0, 395095);	-- Whelpling
@@ -1611,7 +1609,9 @@ i(190613, 367826);	-- Savage Green Battle Turtle
 -- PATCH 10.0.7 --
 ------------------
 i(192785, 374157);	-- Gooey Snailemental
+i(192790, 374194);	-- Mossy Mammoth
 i(204382, 349935);	-- Noble Bruffalon
+i(204091, 400733);	-- Rocket Shredder 9001
 
 
 

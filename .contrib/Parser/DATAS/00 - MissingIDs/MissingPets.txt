@@ -435,7 +435,7 @@ p(2368),	-- Scales
 p(2370),	-- Breaker
 p(2371),	-- Stickers
 8.1.0.27934
-p(2481),	-- 
+p(2481),	--
 p(2485),	-- Leper Rat
 p(2486),	-- Cockroach
 p(2487),	-- Automated Spider Tank
@@ -716,8 +716,8 @@ Missing in PetDB.lua
 5.0.3.15882
 p(2),	-- Dumptruck \\ Xelnath
 p(69),	-- Snowy Owl
-p(71),	-- 
-p(73),	-- 
+p(71),	--
+p(73),	--
 p(154),	-- Lucky
 p(230),	-- Macabre Marionette
 p(257),	-- Murkimus the Gladiator
@@ -1655,7 +1655,7 @@ p(2398),	-- Boghopper
 p(2399),	-- Hermit Crab
 p(2400),	-- Coastal Bounder
 8.1.0.27934
-p(2481),	-- 
+p(2481),	--
 p(2485),	-- Leper Rat
 p(2486),	-- Cockroach
 p(2487),	-- Automated Spider Tank
@@ -1954,8 +1954,6 @@ p(3218),	-- Enraged Poultrid
 p(3219),	-- Predatory Helicid \\ Predatory Gastropod
 9.2.0.41726
 p(3246),	-- Tezpet
-10.0.7.48520
-p(3475),	-- Volatile Self-Driving Toolbox
 10.1.0.48480
 p(3477),	-- Puddlehopper
 p(3478),	-- Rock Martin

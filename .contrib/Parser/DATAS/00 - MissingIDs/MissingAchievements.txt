@@ -77,14 +77,6 @@ ach(17324),	-- <DNT> Hearthfire Fellowship Rank 3
 ach(17325),	-- <DNT> Hearthfire Fellowship Rank 4
 ach(17366),	-- Relics of a Fallen Empire
 ach(17367),	-- Deadliest Cache
-ach(17398),	-- Dragon Glyphs: Winglord's Perch \\ Dragon Glyphs: Warlord's Perch \\ Dragon Glyphs: Northwind Point
-ach(17399),	-- Dragon Glyphs: Talon's Watch
-ach(17400),	-- Dragon Glyphs: Froststone Peak \\ Dragon Glyphs: Fragstone Vault
-ach(17401),	-- Dragon Glyphs: Dragonskull Island
-ach(17402),	-- Dragon Glyphs: Stormsunder Mountain
-ach(17403),	-- Dragon Glyphs: The Frosted Spine \\ Dragon Glyphs: War Creche
-ach(17404),	-- Dragon Glyphs: Talonlords' Perch \\ Dragon Glyphs: Talonlord's Perch
-ach(17405),	-- Dragon Glyphs: Caldera of the Menders
 ach(17409),	-- <Hidden> ACCOUNT: Treasure Room Local Quest Completed
 ach(17410),	-- Craftsman of the Zandalar Tribe
 ach(17412),	-- Craftsman of the Argent Dawn
@@ -104,10 +96,6 @@ ach(17503),	-- Renowned Shadoweave Tailor
 10.0.7.48076
 ach(17533),	-- <Hidden> Travel Network - Node Unlock: Forbidden Reach - Morqut Islet
 ach(17535),	-- <DNT> Complete the "Return to the Reach" questline.
-10.0.7.48220
-ach(17546),	-- A New Beginning
-10.0.7.48520
-ach(17426),	-- Toolbox Trouble
 10.1.0.48480
 ach(17429),	-- Crystal Circuit: Bronze
 ach(17430),	-- Crystal Circuit: Silver

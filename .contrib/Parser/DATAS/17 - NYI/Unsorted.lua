@@ -1712,11 +1712,6 @@ root(ROOTS.Unsorted, {
 				i(202171),	-- Obsidian Flightstone
 				i(202610),	-- Dragonfire Bomb Dispenser
 				i(203963),	-- Beacon to the Beyond
-				i(204081),	-- Shredderizing Glove
-				i(204082),	-- Sappy Buddy
-				i(204086),	-- S.C.A.N.N.E.R. Mk3
-				i(204091),	-- Rocket Shredder 9001
-				i(204183),	-- Volatile Self-Driving Toolbox
 				i(204462),	-- Dracothyst Shard
 				i(204721),	-- Whelpling's Small Chest
 				i(204722),	-- Whelpling's Bountiful Chest
@@ -2515,12 +2510,6 @@ root(ROOTS.Unsorted, {
 				i(204192),	-- Ascendancy
 				i(203680),	-- Totem Toss
 			}),
-			filter(BATTLE_PETS, {
-				i(202407),	-- Flow (PET!)
-				i(202411),	-- Tremblor (PET!)
-				i(202413),	-- Vortex (PET!)
-				i(202412),	-- Wildfire (PET!)
-			}),
 			filter(COSMETIC, {
 				i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
 				i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
@@ -3310,7 +3299,6 @@ root(ROOTS.Unsorted, {
 				i(204277),	-- Ruby Whelp Treat
 			}),
 			filter(MOUNTS, {
-				mount(400733),	-- [PH] Goblin Shredder Rocket (MOUNT!)
 				mount(397406),	-- [PH] Magical Fish Mount (MOUNT!)
 				i(203226),	-- Stormfused Salamanther (MOUNT!)
 				mount(395095),	-- Whelpling (MOUNT!)

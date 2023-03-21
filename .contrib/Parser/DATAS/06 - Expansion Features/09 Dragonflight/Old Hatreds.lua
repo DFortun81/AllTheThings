@@ -108,6 +108,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["sourceQuests"] = { 72609 },	-- Case Closed
 			["provider"] = { "n", 201566 },	-- Baine Bloodhoof
 			["coord"] = { 72.7, 56.1, OHNAHRAN_PLAINS },
+			["g"] = {
+				ach(17546),	-- A New Beginning
+			},
 		}),
 	}),
 })));

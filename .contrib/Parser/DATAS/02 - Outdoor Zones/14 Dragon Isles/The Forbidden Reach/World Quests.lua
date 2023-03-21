@@ -11,39 +11,38 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 				petbattle(q(73148, {	-- Combustible Vegetation
 					["coord"] = { 13.6, 53.6, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(202412, {	-- Wildfire (PET!)
+							["description"] = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
+						}),
+					},
 				})),
 				petbattle(q(73146, {	-- Cutting Wind
-					--TODO: ["coord"] = { , THE_FORBIDDEN_REACH },
+					["coord"] = { 18.3, 13.2, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(202413, {	-- Vortex (PET!)
+							["description"] = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
+						}),
+					},
 				})),
 				petbattle(q(73149, {	-- Flood Warning
 					["coord"] = { 86.7, 62.4, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(202407, {	-- Flow (PET!)
+							["description"] = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
+						}),
+					},
 				})),
 				petbattle(q(73147, {	-- Shifting Ground
 					["coord"] = { 29.0, 6.4, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(202411, {	-- Tremblor (PET!)
+							["description"] = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
+						}),
+					},
 				})),
 				q(75257, {	-- The War Creche
 					["coord"] = { 66.9, 5.6, THE_FORBIDDEN_REACH },
-				}),
-
-
-				-- Dragonriding
-				q(73084, {	-- Dragonrider Racing - Forbidden Reach Rush
-					["coord"] = { 66.9, 5.6, THE_FORBIDDEN_REACH },
-					["g"] = {
-						i(204359),	-- Reach Racer's Purse
-					},
-				}),
-				q(73083, {	-- Dragonrider Racing - Caldera Climb
-					["coord"] = { 41.2, 14.3, THE_FORBIDDEN_REACH },
-					["g"] = {
-						i(204359),	-- Reach Racer's Purse
-					},
-				}),
-				q(73082, {	-- Dragonrider Racing - Southern Reach Route
-					["coord"] = { 63.5, 83.6, THE_FORBIDDEN_REACH },
-					["g"] = {
-						i(204359),	-- Reach Racer's Purse
-					},
 				}),
 			}),
 		}),
