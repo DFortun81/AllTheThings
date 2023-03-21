@@ -3120,31 +3120,8 @@ root(ROOTS.Unsorted, {
 					i(190076),	-- Granny's Old Hat
 					i(190144),	-- Irontide Raider's Bicorne
 					i(190428),	-- Regal Warcloak
-
-					-- Random
-					i(190718),	-- Drape of the Honored Valarjar [Probably Belongs to Leather Set since its the only one missing a piece /Braghe]
 				}),
 				n(SETS, {
-					-- Corrupted Runelord Set
-					i(189875),	-- Corrupted Runelord's Sash
-					i(189876),	-- Corrupted Runelord's Handguards
-					i(189879),	-- Corrupted Runelord's Leggings
-					i(189880),	-- Corrupted Runelord's Mantle
-					i(190206),	-- Corrupted Runelord's Glyphbands
-					i(190207),	-- Corrupted Runelord's Slippers
-					i(190210),	-- Corrupted Runelord's Cowl
-					i(190211),	-- Corrupted Runelord's Robe
-
-					-- Helarjar Berseker Set
-					i(190134),	-- Helarjar Berserker Warboots
-					i(190135),	-- Helarjar Berserker Gauntlets
-					i(190138),	-- Helarjar Berserker Horns
-					i(190139),	-- Helarjar Berserker Greaves
-					i(190550),	-- Helarjar Berserker Girdle
-					i(190551),	-- Helarjar Berserker Bracers
-					i(190553),	-- Helarjar Berserker Cuirass
-					i(190554),	-- Helarjar Berserker Pauldrons
-
 					-- Highborne Scholar Set
 					i(190435),	-- Highborne Scholar's Belt
 					i(190437),	-- Highborne Scholar's Collar
@@ -3155,16 +3132,6 @@ root(ROOTS.Unsorted, {
 					i(190868),	-- Highborne Scholar's Scrollmantle
 					i(190070),	-- Highborne Scholar's Gloves
 
-					-- Kvaldir Scout Set
-					i(190136),	-- Kvaldir Scout Treads
-					i(190137),	-- Kvaldir Scout Grips
-					i(190140),	-- Kvaldir Scout Trousers
-					i(190141),	-- Kvaldir Scout Chestguard
-					i(190548),	-- Kvaldir Scout Belt
-					i(190549),	-- Kvaldir Scout Wristguard
-					i(190552),	-- Kvaldir Scout Shoulderpads
-					i(190574),	-- Kvaldir Scout Hood
-
 					-- Sylvan Stalker Set
 					i(189873),	-- Sylvan Stalker's Boots
 					i(190073),	-- Sylvan Stalker's Hood
@@ -3174,16 +3141,6 @@ root(ROOTS.Unsorted, {
 					i(190810),	-- Sylvan Stalker's Handguards
 					i(190811),	-- Sylvan Stalker's Vest
 					i(190894),	-- Sylvan Stalker's Mantle
-
-					-- Tidecaller Set
-					i(190432),	-- Tidecaller's Bracers
-					i(190440),	-- Tidecaller's Crown
-					i(190067),	-- Tidecaller's Grips
-					i(190072),	-- Tidecaller's Hauberk
-					i(190556),	-- Tidecaller's Legguards
-					i(190700),	-- Tidecaller's Boots
-					i(190709),	-- Tidecaller's Pauldrons
-					i(190806),	-- Tidecaller's Cinch
 
 					-- Val'Sharah Protector Set
 					i(190547),	-- Val'Sharah Protector's Bracers
@@ -3605,16 +3562,6 @@ root(ROOTS.Unsorted, {
 					i(190088),	-- Circlet of the Honored Valarjar
 					i(190089),	-- Gloves of the Honored Valarjar
 
-					-- Honored Valarjar Set [Leather]
-					i(190716),	-- Shoulderpads of the Honored Valarjar
-					i(190717),	-- Wristguards of the Honored Valarjar
-					i(190719),	-- Hood of the Honored Valarjar
-					i(190720),	-- Leggings of the Honored Valarjar
-					i(190721),	-- Strap of the Honored Valarjar
-					i(190722),	-- Boots of the Honored Valarjar
-					i(190723),	-- Grips of the Honored Valarjar
-					i(190724),	-- Tunic of the Honored Valarjar
-
 					-- Honored Valarjar Set [Mail]
 					i(190563),	-- Armbands of the Honored Valarjar
 					i(190564),	-- Cape of the Honored Valarjar
@@ -3647,17 +3594,6 @@ root(ROOTS.Unsorted, {
 					i(190227),	-- Nightmare Forest Raiment
 					i(190228),	-- Nightmare Forest Mantle
 					i(190229),	-- Nightmare Forest Bindings
-
-					-- Slumbering Caldera Set
-					i(190774),	-- Slumbering Caldera Robe
-					i(190775),	-- Slumbering Caldera Gauntlets
-					i(190776),	-- Slumbering Caldera Girdle
-					i(190777),	-- Slumbering Caldera Pauldrons
-					i(190778),	-- Slumbering Caldera Legguards
-					i(190779),	-- Slumbering Caldera Sabatons
-					i(190780),	-- Slumbering Caldera Crown
-					i(190781),	-- Slumbering Caldera Bracers
-					i(190782),	-- Slumbering Caldera Hauberk
 
 					-- Twisted Arcanum Set
 					i(190156),	-- Twisted Arcanum Sash
