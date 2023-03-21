@@ -2928,6 +2928,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 					["groups"] = FISHING_AWARD_GROUPS,
 				}),
+				q(60360, {	-- An Urgent Meeting
+					["sourceQuests"] = { 60359 },	-- Home Is Where the Hearth Is
+					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
+					["coord"] = { 70.9, 49.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_SL_PRE },
+				}),
 				q(7832, {	-- Additional Runecloth [Darkspear Trolls]
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["sourceQuest"] = 7824,	-- A Donation of Runecloth
@@ -3025,6 +3032,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["description"] = "This item can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths.",
 							-- #endif
 						}),
+					},
+				}),
+				q(60361, {	-- Battle for Azeroth: Mission Statement
+					["sourceQuests"] = { 60360 },	-- An Urgent Meeting
+					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
+					["coord"] = { 48.3, 71.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_SL_PRE },
+					["g"] = {
+						i(178942),	-- War-Chain of the Horde
 					},
 				}),
 				q(1508, {	-- Blind Cazul

@@ -2940,6 +2940,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { DEMONHUNTER },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(58912, {	-- An Urgent Meeting
+					["sourceQuests"] = { 58911 },	-- Home Is Where the Hearth Is [A]
+					["provider"] = { "n", 163211 },	-- Henry Garrick
+					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_SL_PRE },
+				}),
 				q(7796, {	-- Additional Runecloth [Stormwind]
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["sourceQuest"] = 7795,	-- A Donation of Runecloth
@@ -3152,6 +3159,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 8.0.1.27291" },
 						}),
 					},
+				}),
+				q(58983, {	-- Battle for Azeroth: Tides of War
+					["sourceQuests"] = { 58912 },	-- An Urgent Meeting [A]
+					["provider"] = { "n", 163219 },	-- Captain Garrick
+					["coord"] = { 85.2, 32.1, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_SL_PRE },
+					["g"] = {
+						i(178941),	-- Alliance Dog Tags,
+					}
 				}),
 				-- #endif
 				q(1640, {	-- Beat Bartleby
@@ -4955,6 +4972,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 85.0, 32.4, STORMWIND_CITY },
 					["timeline"] = { "added 8.0.1" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(59641, {	-- The Nation of Kul Tiras
+					["sourceQuests"] = { 58983 },	-- Battle for Azeroth: Tides of War
+					["provider"] = { "n", 165395 },	-- Anduin Wrynn
+					["coord"] = { 85.8, 31.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_SL_PRE },
 				}),
 				q(27072, {	-- The Old Barracks
 					["qg"] = 50049,	-- Jack Bauden <SI:7 Agent>

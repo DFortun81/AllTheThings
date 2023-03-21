@@ -61,8 +61,7 @@ root(ROOTS.Promotions, {
 		}),
 
 		-- Desert Path
-		--[[
-		i(173300, bubbleDown({ ["timeline"] = "added 8.2.5.31958", REMOVED_DF_0_7 }, {	-- Ensemble: Renowned Explorer's Attire
+		i(173300, bubbleDownSelf({ ["timeline"] = { "added 8.2.5.31958", REMOVED_DF_0_7 } }, {	-- Ensemble: Renowned Explorer's Attire
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["groups"] = {
 				i(171324),	-- Renowned Explorer's Akubra
@@ -85,7 +84,7 @@ root(ROOTS.Promotions, {
 		i(173297, {	-- Explorer's Dunetrekker (MOUNT!)
 			["timeline"] = { "added 8.2.5.31958", REMOVED_DF_0_7 },
 		}),
-		i(173298, bubbleDown({ ["timeline"] = "added 8.2.5.31958", REMOVED_DF_0_7 }, {	-- Explorer's Certification
+		i(173298, bubbleDownSelf({ ["timeline"] = { "added 8.2.5.31958", REMOVED_DF_0_7 } }, {	-- Explorer's Certification
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["groups"] = {
 				title(410),	-- Renowned Explorer <Name>
@@ -102,7 +101,6 @@ root(ROOTS.Promotions, {
 		i(173296, {	-- Rikki's Pith Helmet (PET!)
 			["timeline"] = { "added 8.2.5.31958", REMOVED_DF_0_7 },
 		}),
-		--]]
 	})),
 	n(-546, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Recruit A Friend (Current Rewards)
 		i(173301, {	-- Game Time
