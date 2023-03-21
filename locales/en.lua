@@ -1671,7 +1671,7 @@ app.L = {
 	-- War Campaign
 		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
 	-- Allied Races
-		[-254] = "Allied Races",												-- Allied Races
+		[-254] = "Allied Races",												-- Allied Races, do not replace with CHARACTER_CREATE_MORE_RACES, it's nil
 		[-255] = "Heritage",													-- Heritage
 	-- Mailbox
 		[-297] = MINIMAP_TRACKING_MAILBOX,										-- Mailbox
