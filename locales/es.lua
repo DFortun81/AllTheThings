@@ -725,6 +725,7 @@ for key,value in pairs({
 		--TODO: [-242] = "Unrated",									-- Unrated
 		--TODO: [-243] = "Bounty",									-- Bounty
 	-- Allied Races
+		[-254] = "Razas aliadas",									-- Allied Races
 		[-255] = "Armadura dinástica",								-- Heritage
 	-- First Questline Draenor
 		--TODO: [-356] = "Assault on the Dark Portal",				-- Assault on the Dark Portal

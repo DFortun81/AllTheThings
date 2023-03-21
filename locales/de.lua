@@ -722,6 +722,7 @@ for key,value in pairs({
 		[-242] = "Ungewertet",										-- Unrated
 		[-243] = "Preisgeld",										-- Bounty
 	-- Allied Races
+		[-254] = "Verbündete Völker",								-- Allied Races
 		[-255] = "Traditionsrüstung",								-- Heritage
 	-- First Questline Draenor
 		[-356] = "Angriff auf das Dunkle Portal",					-- Assault on the Dark Portal
