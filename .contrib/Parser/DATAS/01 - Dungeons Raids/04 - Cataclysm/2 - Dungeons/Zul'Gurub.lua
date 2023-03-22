@@ -82,6 +82,8 @@ _.Instances = { tier(CATA_TIER, {
 						i(19706),	-- Bloodscalp Coin
 						i(19701),	-- Gurubashi Coin
 						i(203743, {	-- Jostled Gurubashi Cache
+							["questID"] = 74579
+							["isDaily"] = true,
 							["sym"] = {
 								{"select","itemID",
 									203765,	-- Blue Hakkari Bijou
@@ -93,6 +95,15 @@ _.Instances = { tier(CATA_TIER, {
 									203771,	-- Red Hakkari Bijou
 									203772,	-- Silver Hakkari Bijou
 									203773,	-- Yellow Hakkari Bijou
+									19706,	-- Bloodscalp Coin
+									19701,	-- Gurubashi Coin
+									19700,	-- Hakkari Coin
+									19699,	-- Razzashi Coin
+									19704,	-- Sandfury Coin
+									19705,	-- Skullsplitter Coin
+									19702,	-- Vilebranch Coin
+									19703,	-- Witherbark Coin
+									19698,	-- Zulian Coin
 							}},
 							["groups"] = {
 								i(19944),	-- Nat Pagle's Fish Terminator
@@ -104,6 +115,8 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 						i(19700),	-- Hakkari Coin
 						i(203912, {	-- Penny Pouch o' Paragons
+							["questID"] = 74579
+							["isDaily"] = true,
 							["sym"] = {
 								{"select","itemID",
 									203765,	-- Blue Hakkari Bijou
@@ -115,7 +128,6 @@ _.Instances = { tier(CATA_TIER, {
 									203771,	-- Red Hakkari Bijou
 									203772,	-- Silver Hakkari Bijou
 									203773,	-- Yellow Hakkari Bijou
-									
 									19706,	-- Bloodscalp Coin
 									19701,	-- Gurubashi Coin
 									19700,	-- Hakkari Coin
