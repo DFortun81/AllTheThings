@@ -37,9 +37,25 @@ _.Instances = { tier(CATA_TIER, {
 								["_npcs"] = { 52414 },	-- Tor-Tun
 							}),
 						}),
+						ach(17366, 	-- Relics of a Fallen Empire
+						bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+							["description"] = "|cFFFF0000This achievement is required to have any of the materials, bijous or recipes added in 10.0.7 drop.|r\n\nTo get the achievement, kill any two of the four bosses to unlock Jin'do & then enter the interior of the pyramid in the middle of the dungeon. The first Bijou named 'Fragmented Hakkari Bijou' is near one of the gongs & the second Bijou is at the same spot, but doring phase 2 of the Jin'do Boss Encounter. Collect both, combine them & deliver them to Rin'wosho in Zandalar at 55.0 86.8",
+						--	["collectible"] = true,	-- Do we force it?
+						})),
 					}),
-					-- #if AFTER 10.0.7
-					n(COMMON_BOSS_DROPS, {
+					n(COMMON_BOSS_DROPS, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
+						-- todo: add cost
+						i(203842),	-- ancient pattern animists footwraps
+						i(203843),	-- ancient pattern animists legguards
+						i(203848),	-- ancient pattern bloodlords embrace
+						i(203968),	-- ancient pattern cord of shriveled heads
+						i(203844),	-- ancient pattern gloves of the tormentor
+						i(203847),	-- ancient pattern gurubashis grasp
+						i(203849),	-- ancient pattern gurubashi tigerhide cloak
+						i(203850),	-- ancient pattern gurubashi headdress
+						i(203845),	-- ancient pattern junglefury gauntlets
+						i(203846),	-- ancient pattern junglefury leggings
+						i(203851),	-- ancient pattern ritualistic legwarmers
 						i(203774, {	-- Big Bag o' Bijous
 							["sym"] = {
 								{"select","itemID",
@@ -54,8 +70,8 @@ _.Instances = { tier(CATA_TIER, {
 									203773,	-- Yellow Hakkari Bijou
 							}},
 						}),
-					}),
-					prof(FISHING, {
+					})),
+					prof(FISHING, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 						i(203743, {	-- Jostled Gurubashi Cache
 							["sym"] = {
 								{"select","itemID",
@@ -87,12 +103,11 @@ _.Instances = { tier(CATA_TIER, {
 									203773,	-- Yellow Hakkari Bijou
 							}},
 						}),
-					}),
-					prof(SKINNING, {
+					})),
+					prof(SKINNING, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 						i(19768),	-- Primal Tiger Leather
 						i(19767),	-- Primal Bat Leather
-					}),
-					-- #endif
+					})),
 					n(QUESTS, {
 						q(29155, {	-- A Shiny Reward
 							["races"] = ALLIANCE_ONLY,
@@ -182,12 +197,42 @@ _.Instances = { tier(CATA_TIER, {
 							["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
 						}),
 					}),
+					n(VENDORS, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
+						n(143138, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
+							["description"] = "Only visible after completing the 'Relics of a Fallen Empire' Achievement.",
+							["groups"] = {
+								i(20757),	-- Formula: Brilliant Mana Oil (RECIPE!)
+								i(20756),	-- Formula: Brilliant Wizard Oil (RECIPE!)
+								i(19772),	-- Pattern: Blood Tiger Breastplate
+								i(19773),	-- Pattern: Blood Tiger Shoulders
+								i(19766),	-- Pattern: Bloodvine Boots
+								i(19765),	-- Pattern: Bloodvine Leggings
+								i(19764),	-- Pattern: Bloodvine Vest
+								i(19771),	-- Pattern: Primal Batskin Bracers
+								i(19770),	-- Pattern: Primal Batskin Gloves
+								i(19769),	-- Pattern: Primal Batskin Jerkin
+								i(19776),	-- Plans: Bloodsoul Breastplate (RECIPE!)
+								i(19778),	-- Plans: Bloodsoul Gauntlets (RECIPE!)
+								i(19777),	-- Plans: Bloodsoul Shoulders (RECIPE!)
+								i(19779),	-- Plans: Darksoul Breastplate (RECIPE!)
+								i(19780),	-- Plans: Darksoul Leggings (RECIPE!)
+								i(19781),	-- Plans: Darksoul Shoulders (RECIPE!)
+								i(20012),	-- Recipe: Greater Dreamless Sleep Potion
+								i(20013),	-- Recipe: Living Action Potion
+								i(20011),	-- Recipe: Mageblood Potion
+								i(20014),	-- Recipe: Major Troll's Blood Potion
+								i(20000),	-- Schematic: Bloodvine Goggles
+								i(20001),	-- Schematic: Bloodvine Lens
+							},
+						}),
+					})),
 					n(ZONE_DROPS, {
 						-- #if AFTER 10.0.7
 						i(203765),	-- Blue Hakkari Bijou
 						i(203766),	-- Bronze Hakkari Bijou
 						i(203767),	-- Gold Hakkari Bijou
 						i(203768),	-- Green Hakkari Bijou
+						i(19943),	-- Massive Mojo
 						i(203769),	-- Orange Hakkari Bijou
 						i(203770),	-- Purple Hakkari Bijou
 						i(203771),	-- Red Hakkari Bijou
