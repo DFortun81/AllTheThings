@@ -934,7 +934,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		unknown(i(197636)),	-- Windborne Velocidrake: Shrieker Pattern ["centaur renown but not on vendor]
 		i(197578),	-- Windborne Velocidrake: Silver and Blue Armor (DM!)
 		i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
-		unknown(i(197594)),	-- Windborne Velocidrake: Small Ears
+		i(197594, {	-- Windborne Velocidrake: Small Ears (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		unknown(i(197590)),	-- Windborne Velocidrake: Small Head Fin
 		i(197586),	-- Windborne Velocidrake: Spiked Back (DM!)
 		i(197629, {	-- Windborne Velocidrake: Spiked Neck (DM!)

@@ -16,6 +16,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
 					i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
 					i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
+					i(197594),	-- Windborne Velocidrake: Small Ears (DM!)
 				}),
 				i(204359, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {	-- Reach Racer's Purse
 					i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
