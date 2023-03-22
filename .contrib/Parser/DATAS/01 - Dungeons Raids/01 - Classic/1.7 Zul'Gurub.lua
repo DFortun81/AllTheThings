@@ -1209,15 +1209,18 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				}),
 				-- #if AFTER 10.0.7
 				i(203774, {	-- Big Bag o' Bijous
-					i(203765),	-- Blue Hakkari Bijou
-					i(203766),	-- Bronze Hakkari Bijou
-					i(203767),	-- Gold Hakkari Bijou
-					i(203768),	-- Green Hakkari Bijou
-					i(203769),	-- Orange Hakkari Bijou
-					i(203770),	-- Purple Hakkari Bijou
-					i(203771),	-- Red Hakkari Bijou
-					i(203772),	-- Silver Hakkari Bijou
-					i(203773),	-- Yellow Hakkari Bijou
+					["sym"] = {
+						{"select","itemID",
+							203765,	-- Blue Hakkari Bijou
+							203766,	-- Bronze Hakkari Bijou
+							203767,	-- Gold Hakkari Bijou
+							203768,	-- Green Hakkari Bijou
+							203769,	-- Orange Hakkari Bijou
+							203770,	-- Purple Hakkari Bijou
+							203771,	-- Red Hakkari Bijou
+							203772,	-- Silver Hakkari Bijou
+							203773,	-- Yellow Hakkari Bijou
+					}},
 				}),
 				i(203765),	-- Blue Hakkari Bijou
 				i(203766),	-- Bronze Hakkari Bijou
@@ -1233,26 +1236,32 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 			prof(FISHING, {
 				-- #if AFTER 10.0.7
 				i(203743, {	-- Jostled Gurubashi Cache
-					i(203765),	-- Blue Hakkari Bijou
-					i(203766),	-- Bronze Hakkari Bijou
-					i(203767),	-- Gold Hakkari Bijou
-					i(203768),	-- Green Hakkari Bijou
-					i(203769),	-- Orange Hakkari Bijou
-					i(203770),	-- Purple Hakkari Bijou
-					i(203771),	-- Red Hakkari Bijou
-					i(203772),	-- Silver Hakkari Bijou
-					i(203773),	-- Yellow Hakkari Bijou
+					["sym"] = {
+						{"select","itemID",
+							203765,	-- Blue Hakkari Bijou
+							203766,	-- Bronze Hakkari Bijou
+							203767,	-- Gold Hakkari Bijou
+							203768,	-- Green Hakkari Bijou
+							203769,	-- Orange Hakkari Bijou
+							203770,	-- Purple Hakkari Bijou
+							203771,	-- Red Hakkari Bijou
+							203772,	-- Silver Hakkari Bijou
+							203773,	-- Yellow Hakkari Bijou
+					}},
 				}),
 				i(203912, {	-- Penny Pouch o' Paragons
-					i(203765),	-- Blue Hakkari Bijou
-					i(203766),	-- Bronze Hakkari Bijou
-					i(203767),	-- Gold Hakkari Bijou
-					i(203768),	-- Green Hakkari Bijou
-					i(203769),	-- Orange Hakkari Bijou
-					i(203770),	-- Purple Hakkari Bijou
-					i(203771),	-- Red Hakkari Bijou
-					i(203772),	-- Silver Hakkari Bijou
-					i(203773),	-- Yellow Hakkari Bijou
+					["sym"] = {
+						{"select","itemID",
+							203765,	-- Blue Hakkari Bijou
+							203766,	-- Bronze Hakkari Bijou
+							203767,	-- Gold Hakkari Bijou
+							203768,	-- Green Hakkari Bijou
+							203769,	-- Orange Hakkari Bijou
+							203770,	-- Purple Hakkari Bijou
+							203771,	-- Red Hakkari Bijou
+							203772,	-- Silver Hakkari Bijou
+							203773,	-- Yellow Hakkari Bijou
+					}},
 				}),
 				-- #endif
 				i(19975, {	-- Zulian Mudskunk

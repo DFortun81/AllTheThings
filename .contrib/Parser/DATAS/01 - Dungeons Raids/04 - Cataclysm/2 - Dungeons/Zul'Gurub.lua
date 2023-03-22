@@ -38,195 +38,61 @@ _.Instances = { tier(CATA_TIER, {
 							}),
 						}),
 					}),
-					n(ZONE_DROPS, {
-						i(69803, {	-- Gurubashi Punisher
-							["crs"] = {
-								52348,	-- Berserking Boulder Roller
-								52323,	-- Chosen of Hethiss
-								52442,	-- Florawing Hive Queen
-								52440,	-- Gub
-								52077,	-- Gurubashi Berserker
-								52325,	-- Gurubashi Blood Drinker
-								52079,	-- Gurubashi Bloodrager
-								52088,	-- Gurubashi Cauldron-Mixer
-								52076,	-- Gurubashi Cauldron-Mixer
-								52082,	-- Gurubashi Cauldron-Mixer
-								52081,	-- Gurubashi Cauldron-Mixer
-								52392,	-- Gurubashi Master Chef
-								52436,	-- Gurubashi Refugee
-								52327,	-- Gurubashi Shadow Hunter
-								52598,	-- Gurubashi Soul-Eater
-								52167,	-- Gurubashi Spirit Warrior
-								52434,	-- Gurubashi Villager
-								52606,	-- Gurubashi Warmonger
-								52089,	-- Gurubashi Worker
-								52086,	-- Hakkari Witch Doctor
-								52422,	-- Kaulema the Mover
-								52339,	-- Lesser Priest of Bethekk
-								52418,	-- Lost Offspring of Gahz'ranka
-								52405,	-- Mor'Lek the Dismantler
-								52438,	-- Mortaxx
-								52345,	-- Pride of Bethekk
-								52085,	-- Razzashi Adder
-								52417,	-- Shredtooth Frenzy
-								52340,	-- Tiki Lord Mu'Loa
-								52362,	-- Tiki Lord Zim'wae
-								52380,	-- Venomancer Mauri
-								52381,	-- Venomancer T'Kulu
-								52311,	-- Venomguard Destroyer
-								52379,	-- Venomtip Needler
-								52322,	-- Witch Doctor Qu'in
-								52962,	-- Zandalari Archon
-								130241,	-- Zandalari Archon
-								130243,	-- Zandalari Hierophant
-								52958,	-- Zandalari Hierophant
-								130245,	-- Zandalari Juggernaut
-								52956,	-- Zandalari Juggernaut
-								52413,	-- Zulian Gnasher
-							},
-						}),
-						i(69800, {	-- Spiritguard Drape
-							["crs"] = {
-								52348,	-- Berserking Boulder Roller
-								52323,	-- Chosen of Hethiss
-								52442,	-- Florawing Hive Queen
-								52377,	-- Florawing Needler
-								52440,	-- Gub
-								52077,	-- Gurubashi Berserker
-								52325,	-- Gurubashi Blood Drinker
-								52079,	-- Gurubashi Bloodrager
-								52076,	-- Gurubashi Cauldron-Mixer
-								52088,	-- Gurubashi Cauldron-Mixer
-								52082,	-- Gurubashi Cauldron-Mixer
-								52081,	-- Gurubashi Cauldron-Mixer
-								52392,	-- Gurubashi Master Chef
-								52436,	-- Gurubashi Refugee
-								52327,	-- Gurubashi Shadow Hunter
-								52598,	-- Gurubashi Soul-Eater
-								52167,	-- Gurubashi Spirit Warrior
-								52434,	-- Gurubashi Villager
-								52435,	-- Gurubashi Villager
-								52606,	-- Gurubashi Warmonger
-								52089,	-- Gurubashi Worker
-								52086,	-- Hakkari Witch Doctor
-								52422,	-- Kaulema the Mover
-								52339,	-- Lesser Priest of Bethekk
-								52418,	-- Lost Offspring of Gahz'ranka
-								52405,	-- Mor'Lek the Dismantler
-								52438,	-- Mortaxx
-								52345,	-- Pride of Bethekk
-								52085,	-- Razzashi Adder
-								52417,	-- Shredtooth Frenzy
-								52340,	-- Tiki Lord Mu'Loa
-								52362,	-- Tiki Lord Zim'wae
-								52414,	-- Tor-Tun
-								52380,	-- Venomancer Mauri
-								52381,	-- Venomancer T'Kulu
-								52311,	-- Venomguard Destroyer
-								52379,	-- Venomtip Needler
-								52322,	-- Witch Doctor Qu'in
-								130241,	-- Zandalari Archon
-								52962,	-- Zandalari Archon
-								130243,	-- Zandalari Hierophant
-								52958,	-- Zandalari Hierophant
-								52956,	-- Zandalari Juggernaut
-								130245,	-- Zandalari Juggernaut
-								52413,	-- Zulian Gnasher
-							},
-						}),
-						i(69796, {	-- Spiritcaller Cloak
-							["crs"] = {
-								52348,	-- Berserking Boulder Roller
-								52323,	-- Chosen of Hethiss
-								52442,	-- Florawing Hive Queen
-								52440,	-- Gub
-								52077,	-- Gurubashi Berserker
-								52325,	-- Gurubashi Blood Drinker
-								52079,	-- Gurubashi Bloodrager
-								52076,	-- Gurubashi Cauldron-Mixer
-								52088,	-- Gurubashi Cauldron-Mixer
-								52082,	-- Gurubashi Cauldron-Mixer
-								52081,	-- Gurubashi Cauldron-Mixer
-								52392,	-- Gurubashi Master Chef
-								52436,	-- Gurubashi Refugee
-								52437,	-- Gurubashi Refugee
-								52327,	-- Gurubashi Shadow Hunter
-								52598,	-- Gurubashi Soul-Eater
-								52167,	-- Gurubashi Spirit Warrior
-								52435,	-- Gurubashi Villager
-								52434,	-- Gurubashi Villager
-								52606,	-- Gurubashi Warmonger
-								52089,	-- Gurubashi Worker
-								52086,	-- Hakkari Witch Doctor
-								52422,	-- Kaulema the Mover
-								52339,	-- Lesser Priest of Bethekk
-								52418,	-- Lost Offspring of Gahz'ranka
-								52405,	-- Mor'Lek the Dismantler
-								52438,	-- Mortaxx
-								52345,	-- Pride of Bethekk
-								52085,	-- Razzashi Adder
-								52417,	-- Shredtooth Frenzy
-								52340,	-- Tiki Lord Mu'Loa
-								52362,	-- Tiki Lord Zim'wae
-								52414,	-- Tor-Tun
-								52380,	-- Venomancer Mauri
-								52381,	-- Venomancer T'Kulu
-								52311,	-- Venomguard Destroyer
-								52379,	-- Venomtip Needler
-								52322,	-- Witch Doctor Qu'in
-								52962,	-- Zandalari Archon
-								52958,	-- Zandalari Hierophant
-								130243,	-- Zandalari Hierophant
-								52956,	-- Zandalari Juggernaut
-								130245,	-- Zandalari Juggernaut
-								52413,	-- Zulian Gnasher
-							},
-						}),
-						i(69802, {	-- Band of the Gurubashi Berserker
-							["crs"] = {
-								52348,	-- Berserking Boulder Roller
-								52323,	-- Chosen of Hethiss
-								52442,	-- Florawing Hive Queen
-								52440,	-- Gub
-								52077,	-- Gurubashi Berserker
-								52325,	-- Gurubashi Blood Drinker
-								52079,	-- Gurubashi Bloodrager
-								52088,	-- Gurubashi Cauldron-Mixer
-								52076,	-- Gurubashi Cauldron-Mixer
-								52082,	-- Gurubashi Cauldron-Mixer
-								52081,	-- Gurubashi Cauldron-Mixer
-								52392,	-- Gurubashi Master Chef
-								52327,	-- Gurubashi Shadow Hunter
-								52598,	-- Gurubashi Soul-Eater
-								52167,	-- Gurubashi Spirit Warrior
-								52434,	-- Gurubashi Villager
-								52606,	-- Gurubashi Warmonger
-								52089,	-- Gurubashi Worker
-								52086,	-- Hakkari Witch Doctor
-								52422,	-- Kaulema the Mover
-								52339,	-- Lesser Priest of Bethekk
-								52418,	-- Lost Offspring of Gahz'ranka
-								52405,	-- Mor'Lek the Dismantler
-								52438,	-- Mortaxx
-								52345,	-- Pride of Bethekk
-								52085,	-- Razzashi Adder
-								52417,	-- Shredtooth Frenzy
-								52340,	-- Tiki Lord Mu'Loa
-								52362,	-- Tiki Lord Zim'wae
-								52414,	-- Tor-Tun
-								52380,	-- Venomancer Mauri
-								52381,	-- Venomancer T'Kulu
-								52311,	-- Venomguard Destroyer
-								52379,	-- Venomtip Needler
-								52322,	-- Witch Doctor Qu'in
-								52962,	-- Zandalari Archon
-								52958,	-- Zandalari Hierophant
-								130245,	-- Zandalari Juggernaut
-								52956,	-- Zandalari Juggernaut
-								52413,	-- Zulian Gnasher
-							},
+					-- #if AFTER 10.0.7
+					n(COMMON_BOSS_DROPS, {
+						i(203774, {	-- Big Bag o' Bijous
+							["sym"] = {
+								{"select","itemID",
+									203765,	-- Blue Hakkari Bijou
+									203766,	-- Bronze Hakkari Bijou
+									203767,	-- Gold Hakkari Bijou
+									203768,	-- Green Hakkari Bijou
+									203769,	-- Orange Hakkari Bijou
+									203770,	-- Purple Hakkari Bijou
+									203771,	-- Red Hakkari Bijou
+									203772,	-- Silver Hakkari Bijou
+									203773,	-- Yellow Hakkari Bijou
+							}},
 						}),
 					}),
+					prof(FISHING, {
+						i(203743, {	-- Jostled Gurubashi Cache
+							["sym"] = {
+								{"select","itemID",
+									203765,	-- Blue Hakkari Bijou
+									203766,	-- Bronze Hakkari Bijou
+									203767,	-- Gold Hakkari Bijou
+									203768,	-- Green Hakkari Bijou
+									203769,	-- Orange Hakkari Bijou
+									203770,	-- Purple Hakkari Bijou
+									203771,	-- Red Hakkari Bijou
+									203772,	-- Silver Hakkari Bijou
+									203773,	-- Yellow Hakkari Bijou
+							}},
+							["groups"] = {
+								-- tigule??
+							},
+						}),
+						i(203912, {	-- Penny Pouch o' Paragons
+							["sym"] = {
+								{"select","itemID",
+									203765,	-- Blue Hakkari Bijou
+									203766,	-- Bronze Hakkari Bijou
+									203767,	-- Gold Hakkari Bijou
+									203768,	-- Green Hakkari Bijou
+									203769,	-- Orange Hakkari Bijou
+									203770,	-- Purple Hakkari Bijou
+									203771,	-- Red Hakkari Bijou
+									203772,	-- Silver Hakkari Bijou
+									203773,	-- Yellow Hakkari Bijou
+							}},
+						}),
+					}),
+					prof(SKINNING, {
+						i(19768),	-- Primal Tiger Leather
+						i(19767),	-- Primal Bat Leather
+					}),
+					-- #endif
 					n(QUESTS, {
 						q(29155, {	-- A Shiny Reward
 							["races"] = ALLIANCE_ONLY,
@@ -314,6 +180,26 @@ _.Instances = { tier(CATA_TIER, {
 							--["objectID"] = 208550,	-- Voodoo Pile
 							["isDaily"] = true,
 							["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
+						}),
+					}),
+					n(ZONE_DROPS, {
+						i(203765),	-- Blue Hakkari Bijou
+						i(203766),	-- Bronze Hakkari Bijou
+						i(203767),	-- Gold Hakkari Bijou
+						i(203768),	-- Green Hakkari Bijou
+						i(203769),	-- Orange Hakkari Bijou
+						i(203770),	-- Purple Hakkari Bijou
+						i(203771),	-- Red Hakkari Bijou
+						i(203772),	-- Silver Hakkari Bijou
+						i(203773),	-- Yellow Hakkari Bijou
+						
+						i(69802, {	-- Band of the Gurubashi Berserker
+						}),
+						i(69803, {	-- Gurubashi Punisher
+						}),
+						i(69800, {	-- Spiritguard Drape
+						}),
+						i(69796, {	-- Spiritcaller Cloak
 						}),
 					}),
 					n(52442, {	-- Florawing Hive Queen
