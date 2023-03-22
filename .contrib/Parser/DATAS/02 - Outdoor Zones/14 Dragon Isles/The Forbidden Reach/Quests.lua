@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["maps"] = { VALDRAKKEN },
 			}),
 			q(73076, {	-- Return to the Reach
-				["sourceQuests"] = { 74371 },	-- Hidden Legacies
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 201398 },	-- Kurazidaia
 				["coord"] = { 60.8, 26.4, VALDRAKKEN },
 				["g"] = {
