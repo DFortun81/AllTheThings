@@ -268,7 +268,8 @@ _.Instances = { tier(CATA_TIER, {
 								i(203914),	-- Zandalar Bargaining Token
 							}),
 						}),
-						q(00000, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
+						--]]
+						q(74697, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
 							["cost"] = {
 								{ "i", BLOODSCALP_COIN, 1 },	-- Bloodscalp Coin
 								{ "i", SANDFURY_COIN, 1 },		-- Sandfury Coin
@@ -279,7 +280,6 @@ _.Instances = { tier(CATA_TIER, {
 								i(203914),	-- Zandalar Bargaining Token
 							}),
 						}),
-						--]]
 					}),
 					n(VENDORS, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 						n(143138, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
@@ -596,5 +596,20 @@ root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35411),	-- Zul'Gurub Reward Quest - Heroic completion
 		q(35412),	-- Zul'Gurub Bonus Objective Reward Quest - kill Cache of Madness
+	}),
+	tier(DF_TIER, {
+		q(74720),	-- Heruspec Ensemble
+		q(74721),	-- Predator Ensemble
+		q(74722),	-- Illusionist Ensemble
+		q(74723),	-- freethinker Ensemble
+		q(74724),	-- confuser Ensemble
+		q(74725),	-- madcap Ensemble
+		q(74726),	-- augur Ensemble
+		q(74727),	-- demonic Ensemble
+		q(74728),	-- vindicator Ensemble
+		q(74730),	-- bloodtinged cloth ensemble
+		q(74732),	-- blooddreanched leather ensemble
+		q(74733),	-- bloodstained mail ensemble
+		q(74734),	-- bloodsoaked plate ensemble
 	}),
 });
