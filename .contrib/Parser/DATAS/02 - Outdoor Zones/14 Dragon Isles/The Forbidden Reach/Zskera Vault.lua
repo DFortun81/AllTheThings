@@ -97,6 +97,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 201517 },	-- Voxarian
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(203656),	-- Odd Device
+					},
 				}),
 				q(74443, {	-- Is Another Dragon's Treasure?
 					["sourceQuests"] = { 74442 },	-- One Dragon's Junk
@@ -107,6 +110,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["sourceQuests"] = { 74443 },	-- Is Another Dragon's Treasure?
 					["provider"] = { "n", 201517 },	-- Voxarian
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
+				}),
+				q(74983, {	-- Authentic Authorization
+					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["provider"] = { "n", 201180 },	-- Cataloger Wulferd
+					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(204305),	-- Neltharion Signed Notes
+					},
 				}),
 				q(74984, {	-- Authentic Authorization
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
@@ -344,12 +355,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 								i(202337),	-- Journal Entry: Silence
 							},
 						}),
+						o(389564, {	-- Mindless Slime
+							["questID"] = 75053,
+							["g"] = {
+								i(193363),	-- Bunbo (PET!)
+							},
+						}),
 						o(384980, {	-- Mysterious Chest
 							["coord"] = { 28.7, 57.8, THE_FORBIDDEN_REACH },
 							["questID"] = 72710,
 							["g"] = {
 								i(204371),	-- Drop of Blue Dragon Magic
 								i(204360),	-- Strange Petrified Orb
+							},
+						}),
+						o(389545, {	-- Mysterious Chest
+							["coord"] = { 28.6, 57.8, THE_FORBIDDEN_REACH },
+							["questID"] = 75051,
+							["g"] = {
+								i(204369),	-- Scrap of Black Dragonscales
 							},
 						}),
 						o(386581, {	-- Neltharion Gift
@@ -373,9 +397,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 								i(202088),	-- Powerful Flask of Renewal
 							},
 						}),
+						o(386462, {	-- Primordial Blood Cache
+							["questID"] = 74428,
+							["g"] = {
+								i(204027),	-- Desirous Blood Stone
+							},
+						}),
 						o(386426, {	-- Primordial Earth Cache
 							["coord"] = { 26.4, 53.9, THE_FORBIDDEN_REACH },
 							["questID"] = 74400,
+						}),
+						o(385396, {	-- Primordial Fire Cache
+							["questID"] = 72888,
+							["g"] = {
+								i(204003),	-- Raging Magma Stone
+							},
 						}),
 						o(386532, {	-- Primordial Gold Cache
 							["coord"] = { 25.3, 53.7, THE_FORBIDDEN_REACH },
@@ -402,6 +438,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						o(388866, {	-- Reagent Pot
 							["coord"] = { 25.7, 51.1, THE_FORBIDDEN_REACH },
 							["questID"] = 74969,
+						}),
+						o(385398, {	-- Searing Chest
+							["questID"] = 72889,
 						}),
 						o(385011, {	-- Spun Webs
 							-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
@@ -432,6 +471,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["coord"] = { 29.4, 58.1, THE_FORBIDDEN_REACH },
 							["questID"] = 74613,
 						}),
+						o(393282, {	-- Balloon Box
+							["questID"] = 75217,
+							["g"] = {
+								i(169673),	-- Blue Paint Filled Bladder
+							},
+						}),
+						o(393283, {	-- Balloon Box
+							["questID"] = 75218,
+							["g"] = {
+								i(169674),	-- Green Paint Filled Bladder
+							},
+						}),
+						o(385467, {	-- Bone Pile
+							["questID"] = 72902,
+						}),
 						o(385468, {	-- Bone Pile
 							["coord"] = { 26.1, 54.0, THE_FORBIDDEN_REACH },
 							["questID"] = 72904,
@@ -444,16 +498,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["coord"] = { 25.9, 53.8, THE_FORBIDDEN_REACH },
 							["questID"] = 72903,
 						}),
+						o(385469, {	-- Bone Pile
+							["questID"] = 72905,
+						}),
 						o(386588, {	-- Crystal Basket
 							["coord"] = { 25.3, 49.8, THE_FORBIDDEN_REACH },
 							["questID"] = 74511,
 						}),
-						--[[
-						o(, {	-- Crystal Basket
+						o(386589, {	-- Crystal Basket
 							["coord"] = { 25.5, 49.2, THE_FORBIDDEN_REACH },
 							["questID"] = 74512,
 						}),
-						--]]
+						o(386632, {	-- Experimental Dragon Pack 
+							["g"] = {
+								i(203722),	-- Experimental Dragon Pack 
+							},
+						}),
+						o(386585, {	-- Experimental Melder
+							["g"] = {
+								i(203702),	-- Experimental Melder
+							},
+						}),
 						o(385800, {	-- Gold Pile
 							["coord"] = { 26.4, 49.5, THE_FORBIDDEN_REACH },
 							["questID"] = 73067,
@@ -556,6 +621,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["coord"] = { 29.9, 54.4, THE_FORBIDDEN_REACH },
 							["questID"] = 75033,
 						}),
+						o(393220, {	-- Primordial Paint Cache
+							["questID"] = 75214,
+							["g"] = {
+								i(204025),	-- Obscure Pastel Stone
+							},
+						}),
 						o(386445, {	-- Primordial Water Chest
 							["coord"] = { 27.7, 50.5, THE_FORBIDDEN_REACH },
 							["questID"] = 74412,
@@ -578,12 +649,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 								i(203703),	-- Prismatic Fragment
 							},
 						}),
+						o(389107, {	-- Prismatic Fragment
+							["questID"] = 75011,
+							["g"] = {
+								i(203703),	-- Prismatic Fragment
+							},
+						}),
 						o(386587, {	-- Prismatic Fragment
 							["coord"] = { 25.1, 49.7, THE_FORBIDDEN_REACH },
 							["questID"] = 75004,
 							["g"] = {
 								i(203703),	-- Prismatic Fragment
 							},
+						}),
+						o(393221, {	-- Reagent Pot
+							["questID"] = 75215,
 						}),
 						o(385940, {	-- Runic Wrench
 							-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
@@ -599,6 +679,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["coord"] = { 28.5, 57.5, THE_FORBIDDEN_REACH },
 							["questID"] = 72890,
 						}),
+						o(393222, {	-- Supply Trunk
+							["questID"] = 75216,
+						}),
 						o(385937, {	-- Titan Coffer
 							["coord"] = { 28.8, 54.8, THE_FORBIDDEN_REACH },
 							["questID"] = 73176,
@@ -609,6 +692,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["questID"] = 73112,
 							["cost"] = { { "i", 202403, 1 }, },	-- 1x Runic Wrench
 						}),
+						o(387493, {	-- Unique Fish
+							["questID"] = 74745,
+							["g"] = {
+								i(193851),	-- Patos (PET!)
+							},
+						}),
 					},
 				}),
 				n(TIER_THREE, {
@@ -616,6 +705,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["description"] = "Requires 8 Keys.",
 					["cost"] = { { "i", 203690, 1 }, },	-- 1x Pearlescent Bubble Key
 					["g"] = {
+						o(390559, {	-- Box of Rocks
+							["questID"] = 75152,
+							["g"] = {
+								i(199216),	-- A Box of Rocks
+							},
+						}),
 						o(392570, {	-- Chain-Bound Primordial Cache
 							["coord"] = { 28.2, 56.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75176,
@@ -658,6 +753,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["coord"] = { 27.3, 49.6, THE_FORBIDDEN_REACH },
 							["questID"] = 74404,
 						}),
+						o(386648, {	-- Mysterious Scroll 
+							["questID"] = 74574,
+							["g"] = {
+								i(204802),	-- Scroll of Teleport: Ziskara Vaults
+							},
+						}),
 						o(386578, {	-- Neltharion Gift Token
 							["coord"] = { 24.8, 50.5, THE_FORBIDDEN_REACH },
 							["questID"] = 74504,
@@ -695,6 +796,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["coord"] = { 25.1, 49.9, THE_FORBIDDEN_REACH },
 							["questID"] = 74529,
 						}),
+						o(386442, {	-- Primordial Void Cache
+							["questID"] = 74409,
+							["g"] = {
+								i(204015),	-- Swirling Mojo Stone
+							},
+						}),
 						o(386447, {	-- Primordial Water Cache
 							["coord"] = { 26.3, 53.9, THE_FORBIDDEN_REACH },
 							["questID"] = 74413,
@@ -713,9 +820,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 								i(203703),	-- Prismatic Fragment
 							},
 						}),
+						o(389106, {	-- Prismatic Fragment
+							["questID"] = 75010,
+							["g"] = {
+								i(203703),	-- Prismatic Fragment
+							},
+						}),
 						o(386425, {	-- Searing Chest
 							["coord"] = { 29.1, 54.4, THE_FORBIDDEN_REACH },
 							["questID"] = 74398,
+						}),
+						o(390136, {	-- Spore-bound Essence
+							["questID"] = 75136,
+							["description"] = "Use Restorative Water on an Overgrown Skeleton.",
+							["g"] = {
+								i(203852),	-- Spore-bound Essence (TOY!)
+							},
+						}),
+						o(386452, {	-- Void-Bound Strongbox
+							["questID"] = 75283,
 						}),
 					},
 				}),
@@ -779,6 +902,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["coord"] = { 30.9, 56.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75031,
 						}),
+						o(386459, {	-- Primordial Decay Cache
+							["questID"] = 74425,
+							["g"] = {
+								i(204021),	-- Necromantic Death Stone
+							},
+						}),
 						o(389789, {	-- Primordial Earth Cache
 							["description"] = "Use Stone Dissolver.",
 							["coord"] = { 30.6, 55.1, THE_FORBIDDEN_REACH },
@@ -804,6 +933,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						o(386443, {	-- Primordial Wind Cache
 							["coord"] = { 29.4, 58.3, THE_FORBIDDEN_REACH },
 							["questID"] = 74410,
+						}),
+						o(389105, {	-- Prismatic Fragment
+							["questID"] = 75009,
+							["g"] = {
+								i(203703),	-- Prismatic Fragment
+							},
 						}),
 						o(387503, {	-- Sealed Letter to Neltharion
 							-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
@@ -955,6 +1090,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 
 		q(74513),	-- When using Stone Dissolver to Open Shattered Crystals
 		q(74431),	-- When Completed Quest: 72953 Zskera Vault: Az
+		q(74748),	-- Triggered when looting Recipe Rat along with 74509
+		q(75127),	-- Triggered when earning "Every Door, Everywhere, All At Once"
 
 		-- TODO: See if these need to be associated with treasures
 		q(75500),	-- Looted spider cocoon in a vault room

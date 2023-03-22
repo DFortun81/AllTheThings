@@ -112,7 +112,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(193614),	-- Groundshaker (PET!)
 				i(193373),	-- Phoenix Wishwing (PET!)
 				i(193380),	-- Pink Salamanther (PET!)
-				i(193851),	-- Patos (PET!)
 				i(193235),	-- Luvvy (PET!)
 				i(193364),	-- Scruffles (PET!)
 				i(193587),	-- Time-Lost Duck (PET!)

@@ -2589,16 +2589,13 @@ root(ROOTS.Unsorted, {
 				i(203465),	-- Draconic Artifact
 				i(203466),	-- Dragonscale Surplus Crate
 				i(203651),	-- Saza's Blade
-				i(203656),	-- Odd Device
 				i(203657),	-- Toxin Antidote
 				i(203686),	-- Odd Round Object
 				i(203687),	-- Dusty Vase
-				i(203702),	-- Experimental Melder
 				i(203704),	-- Stone Dissolver
 				i(203715),	-- Oozing Gold
 				i(203718),	-- Vial of Flames
 				i(203720),	-- Restorative Water
-				i(203722),	-- Experimental Dragon Pack
 				i(203724),	-- Field Medic's Hazard Payout
 				i(203730),	-- Rustic Winterpelt Supplies
 				i(203997),	-- Raw Argali Flank
@@ -2643,7 +2640,6 @@ root(ROOTS.Unsorted, {
 				i(204303),	-- Rations: Westfall Stew
 				i(204304),	-- Rations: Dragonbreath Chili
 				--
-				i(204305),	-- Neltharion-Signed Notes
 				i(204307),	-- Ornate Bronze Lockbox
 				i(204308),	-- Sturdy Bone
 				i(204310),	-- Mycelial Threads
@@ -2666,7 +2662,6 @@ root(ROOTS.Unsorted, {
 				i(204632),	-- Tectonic Rock Fragment
 				i(204636),	-- Snarfang's Stomach Sac
 				i(204685),	-- Primordial Anvil
-				i(204802),	-- Scroll of Teleport: Zskera Vaults
 				i(202204),	-- Receiving Stone: Final Warning
 				i(202205),	-- Translated Journal of Adamanthia
 				i(204249),	-- Translated Correspondence of Black Dragons
@@ -2700,7 +2695,6 @@ root(ROOTS.Unsorted, {
 				i(204220),	-- Hraxian's Unbreakable Will (TOY!)
 				i(204687),	-- Obsidian Battle Horn (TOY!)
 				i(203734),	-- Snow Blanket (TOY!)
-				i(203852),	-- Spore-Bound Essence (TOY!)
 			}),
 			n(WEAPONS, {
 				i(204674),	-- Cursed Demonbone Longbow
@@ -2837,10 +2831,6 @@ root(ROOTS.Unsorted, {
 				q(72610),
 				q(72716),
 				q(72718),
-				q(72888),
-				q(72889),
-				q(72902),
-				q(72905),
 				q(72906),
 				q(72907),
 				q(72941),
@@ -2914,11 +2904,8 @@ root(ROOTS.Unsorted, {
 				q(74377),
 				q(74384),
 				q(74405),
-				q(74409),
 				q(74418),
-				q(74425),
 				q(74427),
-				q(74428),
 				q(74433),
 				q(74434),
 				q(74435),
@@ -2937,9 +2924,7 @@ root(ROOTS.Unsorted, {
 				q(74493),
 				q(74495),
 				q(74500),
-				q(74512),
 				q(74527),
-				q(74574),
 				q(74576),
 				q(74579),
 				q(74711),
@@ -2959,8 +2944,6 @@ root(ROOTS.Unsorted, {
 				q(74732),
 				q(74733),
 				q(74734),
-				q(74745),
-				q(74748),
 				q(74757),
 				q(74760),
 				q(74761),
@@ -3013,24 +2996,16 @@ root(ROOTS.Unsorted, {
 				q(75002),
 				q(75003),
 				q(75007),
-				q(75009),
-				q(75010),
-				q(75011),
 				q(75026),
 				-- 10.0.7.47983
 				q(75034),
 				q(75046),
 				q(75047),
 				q(75049),
-				q(75051),
 				q(75052),
-				q(75053),
 				q(75065),
-				q(75127),
 				q(75130),
-				q(75136),
 				q(75146),
-				q(75152),
 				q(75153),
 				-- 10.0.7.48076
 				q(75158),
@@ -3043,11 +3018,6 @@ root(ROOTS.Unsorted, {
 				q(75190),
 				q(75202),
 				q(75212),
-				q(75214),
-				q(75215),
-				q(75216),
-				q(75217),
-				q(75218),
 				q(75224),
 				q(75236),
 				q(75237),
@@ -3065,7 +3035,6 @@ root(ROOTS.Unsorted, {
 				q(75260),
 				-- 10.0.7.48220
 				q(75263),
-				q(75283),
 				q(75392),
 				q(75399),
 				q(75400),
