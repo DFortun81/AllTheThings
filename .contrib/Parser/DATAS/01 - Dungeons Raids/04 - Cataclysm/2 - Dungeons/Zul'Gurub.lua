@@ -11,6 +11,13 @@ _.Instances = { tier(CATA_TIER, {
 				["lvl"] = 85,
 				["g"] = {
 					n(ACHIEVEMENTS, {
+						ach(17367, 	-- Deadliest Cache
+						bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+							crit(1, {	-- Gain Jostled Gurubashi Cache
+							}),
+							crit(2, {	-- Waterlogged Gurubashi Cache
+							}),
+						})),
 						ach(5744, {	-- Gurubashi Headhunter
 							crit(1, {	-- Gub
 								["_npcs"] = { 52440 },	-- Gub
@@ -72,6 +79,8 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 					})),
 					prof(FISHING, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
+						i(19706),	-- Bloodscalp Coin
+						i(19701),	-- Gurubashi Coin
 						i(203743, {	-- Jostled Gurubashi Cache
 							["sym"] = {
 								{"select","itemID",
@@ -86,9 +95,14 @@ _.Instances = { tier(CATA_TIER, {
 									203773,	-- Yellow Hakkari Bijou
 							}},
 							["groups"] = {
-								-- tigule??
+								i(19944),	-- Nat Pagle's Fish Terminator
+								i(19946),	-- Tigule's Harpoon
+							--	i(19945),	-- Foror's Eyepatch
+							--	i(19947),	-- Nat Pagle's Broken Reel
+							--	TOME_OF_POLYMORPH_TURTLE,
 							},
 						}),
+						i(19700),	-- Hakkari Coin
 						i(203912, {	-- Penny Pouch o' Paragons
 							["sym"] = {
 								{"select","itemID",
@@ -101,8 +115,31 @@ _.Instances = { tier(CATA_TIER, {
 									203771,	-- Red Hakkari Bijou
 									203772,	-- Silver Hakkari Bijou
 									203773,	-- Yellow Hakkari Bijou
+									
+									19706,	-- Bloodscalp Coin
+									19701,	-- Gurubashi Coin
+									19700,	-- Hakkari Coin
+									19699,	-- Razzashi Coin
+									19704,	-- Sandfury Coin
+									19705,	-- Skullsplitter Coin
+									19702,	-- Vilebranch Coin
+									19703,	-- Witherbark Coin
+									19698,	-- Zulian Coin
 							}},
+							["groups"] = {
+								i(19944),	-- Nat Pagle's Fish Terminator
+								i(19946),	-- Tigule's Harpoon
+							--	i(19945),	-- Foror's Eyepatch
+							--	i(19947),	-- Nat Pagle's Broken Reel
+							--	TOME_OF_POLYMORPH_TURTLE,
+							},
 						}),
+						i(19699),	-- Razzashi Coin
+						i(19704),	-- Sandfury Coin
+						i(19705),	-- Skullsplitter Coin
+						i(19702),	-- Vilebranch Coin
+						i(19703),	-- Witherbark Coin
+						i(19698),	-- Zulian Coin
 					})),
 					prof(SKINNING, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 						i(19768),	-- Primal Tiger Leather
@@ -196,13 +233,92 @@ _.Instances = { tier(CATA_TIER, {
 							["isDaily"] = true,
 							["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
 						}),
+						--[[
+						q(00000, {	--
+							["cost"] = {
+								{ "i", GURUBASHI_COIN, 1 },		-- GURUBASHI_COIN
+								{ "i", VILEBRANCH_COIN, 1 },	-- VILEBRANCH_COIN
+								{ "i", WITHERBARK_COIN, 1 },	-- WITHERBARK_COIN
+							},
+							["repeatable"] = true,
+							["groups"] = {
+								i(203914),	-- Zandalar Bargaining Token
+							}),
+						}),
+						q(00000, {	--
+							["cost"] = {
+								{ "i", HAKKARI_COIN, 1 },	-- Hakkari Coin
+								{ "i", RAZZASHI_COIN, 1 },	-- Razzashi Coin
+								{ "i", ZULIAN_COIN, 1 },	-- Zulian Coin
+							},
+							["repeatable"] = true,
+							["groups"] = {
+								i(203914),	-- Zandalar Bargaining Token
+							}),
+						}),
+						q(00000, {	--
+							["cost"] = {
+								{ "i", BLOODSCALP_COIN, 1 },	-- Bloodscalp Coin
+								{ "i", SANDFURY_COIN, 1 },		-- Sandfury Coin
+								{ "i", SKULLSPLITTER_COIN, 1 },	-- Skullsplitter Coin
+							},
+							["repeatable"] = true,
+							["groups"] = {
+								i(203914),	-- Zandalar Bargaining Token
+							}),
+						}),
+						--]]
 					}),
 					n(VENDORS, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 						n(143138, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 							["description"] = "Only visible after completing the 'Relics of a Fallen Empire' Achievement.",
 							["groups"] = {
+								cl(DRUID, {
+									i(203974, {	-- Ensemble zandalar haruspec
+									}),
+								}),
+								cl(HUNTER, {
+									i(203975, {	-- Ensemble zandalar predator
+									}),
+								}),
+								cl(MAGE, {
+									i(203976, {	-- Ensemble zandalar illusionist
+									}),
+								}),
+								cl(PALADIN, {
+									i(203977, {	-- Ensemble zandalar freethinker
+									}),
+								}),
+								cl(PRIEST, {
+									i(203978, {	-- Ensemble zandalar confessor
+									}),
+								}),
+								cl(SHAMAN, {
+									i(203980, {	-- Ensemble zandalar augur
+									}),
+								}),
+								cl(ROGUE, {
+									i(203979, {	-- Ensemble zandalar madcap
+									}),
+								}),
+								cl(WARLOCK, {
+									i(203981, {	-- Ensemble zandalar demoniac
+									}),
+								}),
+								cl(WARRIOR, {
+									i(203982, {	-- Ensemble zandalar vindicator
+									}),
+								}),
 								i(20757),	-- Formula: Brilliant Mana Oil (RECIPE!)
 								i(20756),	-- Formula: Brilliant Wizard Oil (RECIPE!)
+								i(203983, {	-- Ensemble bloodtinged cloth
+								}),
+								i(203984, {	-- Ensemble blooddrenched leather
+								}),
+								i(203985, {	-- Ensemble bloodstained mail
+								}),
+								i(203986, {	-- Ensemble bloodsoaked plate
+								}),
 								i(19772),	-- Pattern: Blood Tiger Breastplate
 								i(19773),	-- Pattern: Blood Tiger Shoulders
 								i(19766),	-- Pattern: Bloodvine Boots
@@ -238,6 +354,15 @@ _.Instances = { tier(CATA_TIER, {
 						i(203771),	-- Red Hakkari Bijou
 						i(203772),	-- Silver Hakkari Bijou
 						i(203773),	-- Yellow Hakkari Bijou
+						i(19706),	-- Bloodscalp Coin
+						i(19701),	-- Gurubashi Coin
+						i(19700),	-- Hakkari Coin
+						i(19699),	-- Razzashi Coin
+						i(19704),	-- Sandfury Coin
+						i(19705),	-- Skullsplitter Coin
+						i(19702),	-- Vilebranch Coin
+						i(19703),	-- Witherbark Coin
+						i(19698),	-- Zulian Coin
 						-- #endif
 						i(69802, {	-- Band of the Gurubashi Berserker
 						}),
