@@ -1206,68 +1206,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 						14510,	-- High Priestess Mar'li
 					},
 				}),
-<<<<<<< HEAD
-				-- #if AFTER 10.0.7
-				i(203774, {	-- Big Bag o' Bijous
-					["sym"] = {
-						{"select","itemID",
-							203765,	-- Blue Hakkari Bijou
-							203766,	-- Bronze Hakkari Bijou
-							203767,	-- Gold Hakkari Bijou
-							203768,	-- Green Hakkari Bijou
-							203769,	-- Orange Hakkari Bijou
-							203770,	-- Purple Hakkari Bijou
-							203771,	-- Red Hakkari Bijou
-							203772,	-- Silver Hakkari Bijou
-							203773,	-- Yellow Hakkari Bijou
-					}},
-				}),
-				i(203765),	-- Blue Hakkari Bijou
-				i(203766),	-- Bronze Hakkari Bijou
-				i(203767),	-- Gold Hakkari Bijou
-				i(203768),	-- Green Hakkari Bijou
-				i(203769),	-- Orange Hakkari Bijou
-				i(203770),	-- Purple Hakkari Bijou
-				i(203771),	-- Red Hakkari Bijou
-				i(203772),	-- Silver Hakkari Bijou
-				i(203773),	-- Yellow Hakkari Bijou
-				-- #endif
 			}),
 			prof(FISHING, {
-				-- #if AFTER 10.0.7
-				i(203743, {	-- Jostled Gurubashi Cache
-					["sym"] = {
-						{"select","itemID",
-							203765,	-- Blue Hakkari Bijou
-							203766,	-- Bronze Hakkari Bijou
-							203767,	-- Gold Hakkari Bijou
-							203768,	-- Green Hakkari Bijou
-							203769,	-- Orange Hakkari Bijou
-							203770,	-- Purple Hakkari Bijou
-							203771,	-- Red Hakkari Bijou
-							203772,	-- Silver Hakkari Bijou
-							203773,	-- Yellow Hakkari Bijou
-					}},
-				}),
-				i(203912, {	-- Penny Pouch o' Paragons
-					["sym"] = {
-						{"select","itemID",
-							203765,	-- Blue Hakkari Bijou
-							203766,	-- Bronze Hakkari Bijou
-							203767,	-- Gold Hakkari Bijou
-							203768,	-- Green Hakkari Bijou
-							203769,	-- Orange Hakkari Bijou
-							203770,	-- Purple Hakkari Bijou
-							203771,	-- Red Hakkari Bijou
-							203772,	-- Silver Hakkari Bijou
-							203773,	-- Yellow Hakkari Bijou
-					}},
-				}),
-				-- #endif
-=======
-			}),
-			prof(FISHING, {
->>>>>>> parent of 8efe60b (first rough work on the zg recipes (bijous))
 				i(19975, {	-- Zulian Mudskunk
 					["provider"] = { "o", 180369 },	-- Muddy Churning Waters
 				}),

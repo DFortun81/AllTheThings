@@ -183,6 +183,7 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 					}),
 					n(ZONE_DROPS, {
+						-- #if AFTER 10.0.7
 						i(203765),	-- Blue Hakkari Bijou
 						i(203766),	-- Bronze Hakkari Bijou
 						i(203767),	-- Gold Hakkari Bijou
@@ -192,7 +193,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(203771),	-- Red Hakkari Bijou
 						i(203772),	-- Silver Hakkari Bijou
 						i(203773),	-- Yellow Hakkari Bijou
-						
+						-- #endif
 						i(69802, {	-- Band of the Gurubashi Berserker
 						}),
 						i(69803, {	-- Gurubashi Punisher
