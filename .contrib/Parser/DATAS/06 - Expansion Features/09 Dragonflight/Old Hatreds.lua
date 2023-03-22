@@ -46,7 +46,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["provider"] = { "n", 200831 },	-- Baine Bloodhoof
 			["coord"] = { 72.8, 55.8, OHNAHRAN_PLAINS },
 		}),
-		q(72660, {	-- A Proper Shikaar Send-Off
+		q(72600, {	-- A Proper Shikaar Send-Off
 			["sourceQuests"] = { 72663 },	-- Pinewood Trail
 			["provider"] = { "n", 200933 },	-- Scout Tomul
 			["coord"] = { 80.9, 57.7, OHNAHRAN_PLAINS },
@@ -61,7 +61,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		q(72601, {	-- Bovan's Last Hope
 			["sourceQuests"] = {
-				72660,	-- A Proper Shikaar Send-Off
+				72600,	-- A Proper Shikaar Send-Off
 				72599,	-- Joint Rescue Operation
 			},
 			["provider"] = { "n", 200938 },	-- Scout Tomul
