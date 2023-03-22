@@ -328,7 +328,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					}),
 					-- Pre Event Gear
 					i(203693, {	-- Ensemble: Cloudburst Regalia
-						["questID"] = 74363,
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 10000 },
 						},
@@ -345,7 +344,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						},
 					}),
 					i(203694, {	-- Ensemble: Cyclonic Battlegear
-						["questID"] = 74365,
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 10000 },
 						},
@@ -362,7 +360,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						},
 					}),
 					i(203696, {	-- Ensemble: Dust Devil Armor
-						["questID"] = 74364,
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 10000 },
 						},
@@ -379,7 +376,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						},
 					}),
 					i(203695, {	-- Ensemble: Firestorm Armor
-						["questID"] = 74366,
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 10000 },
 						},
@@ -427,5 +423,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				},
 			}),
 		}),
+	}),
+})));
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+	n(THE_FORBIDDEN_REACH, {
+		q(74363),	-- Ensemble: Cloudburst Regalia
+		q(74364),	-- Ensemble: Dust Devil Armor
+		q(74365),	-- Ensemble: Cyclonic Battlegear
+		q(74366),	-- Ensemble: Firestorm Armor
 	}),
 })));
