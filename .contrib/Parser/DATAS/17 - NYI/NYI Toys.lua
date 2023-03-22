@@ -116,7 +116,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(197961),	-- Whelps on Strings (TOY!)
 			}),
 			tier(DF_TIER, 0.7, {
-				i(203725);	--
 				i(204170);	--
 			}),
 		}),

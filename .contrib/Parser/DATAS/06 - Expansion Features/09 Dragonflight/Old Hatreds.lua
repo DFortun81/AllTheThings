@@ -108,8 +108,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["sourceQuests"] = { 72609 },	-- Case Closed
 			["provider"] = { "n", 201566 },	-- Baine Bloodhoof
 			["coord"] = { 72.7, 56.1, OHNAHRAN_PLAINS },
+		}),
+		q(75258, {	-- A Final Word
+			["sourceQuests"] = { 72611 },	-- 72611
+			["provider"] = { "n", 203204 },	-- Baine Bloodhoof
 			["g"] = {
+				i(203679, {	-- Ancestral Bloodhoof Totem
+					["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
+				}),
 				ach(17546),	-- A New Beginning
+				i(203725),	-- Display of Strength (TOY!)
+				-- To be confirmed
+				-- i(204084),	-- Ancestor's Might
 			},
 		}),
 	}),
