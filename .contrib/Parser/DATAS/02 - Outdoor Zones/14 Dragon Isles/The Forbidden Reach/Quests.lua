@@ -42,6 +42,54 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					i(204276),	-- Untapped Forbidden Knowledge
 				},
 			}),
+			q(72712, {	-- The Best We Have
+				["sourceQuests"] = { 74847 },	-- Emberthal Awaits
+				["provider"] = { "n", 199532 },	-- Scalecommander Emberthal
+				["coord"] = { 32.6, 60.3, THE_FORBIDDEN_REACH },
+			}),
+			q(72713, {	-- Inheritance
+				["sourceQuests"] = { 72712 },	-- The Best We Have
+				["provider"] = { "n", 200403 },	-- Talon Damos
+				["coord"] = { 55, 37.2, THE_FORBIDDEN_REACH },
+			}),
+			q(72545, {	-- Creche Fallen
+				["sourceQuests"] = { 72713 },	-- Inheritance
+				["provider"] = { "n", 199531 },	-- Scalecommander Emberthal
+				["coord"] = { 55.1, 35.8, THE_FORBIDDEN_REACH },
+			}),
+			q(73094, {	-- Aiding the Expedition
+				["sourceQuests"] = { 72545 },	-- Creche Fallen
+				["provider"] = { "n", 199531 },	-- Scalecommander Emberthal
+				["coord"] = { 55.1, 35.8, THE_FORBIDDEN_REACH },
+			}),
+			q(72715, {	-- Keeping the Flame at Bay
+				["sourceQuests"] = { 73094 },	-- Aiding the Expedition
+				["provider"] = { "n", 199175 },	-- Scalecommander Emberthal
+				["coord"] = { 61.4, 61.5, THE_FORBIDDEN_REACH },
+			}),
+			q(72714, {	-- An Interdisciplinary Approach
+				["sourceQuests"] = { 73094 },	-- Aiding the Expedition
+				["provider"] = { "n", 199520 },	-- Ebyssian
+				["coord"] = { 61.6, 61.4, THE_FORBIDDEN_REACH },
+			}),
+			q(73137, {	-- Chasing the Flame
+				["sourceQuests"] = {
+					72715,	-- Keeping the Flame at Bay
+					72714,	-- An Interdisciplinary Approach
+				},
+				["provider"] = { "n", 199521 },	-- Scalecommander Emberthal
+				["coord"] = { 58.7, 70.2, THE_FORBIDDEN_REACH },
+			}),
+			q(72717, {	-- A Creche Divided
+				["sourceQuests"] = { 73137 },	-- Chasing the Flame
+				["provider"] = { "n", 199538 },	-- Scalecommander Emberthal
+				["coord"] = { 74.3, 36.9, THE_FORBIDDEN_REACH },
+			}),
+			q(73156, {	-- Return to Viridia
+				["sourceQuests"] = { 72717 },	-- A Creche Divided
+				["provider"] = { "n", 199539 },	-- Scalecommander Emberthal
+				["coord"] = { 76.6, 38.6, THE_FORBIDDEN_REACH },
+			}),
 			q(73160, {	-- Helping Hand and Claw
 				["sourceQuests"] = {
 					75050,	-- An Eclectic Accord

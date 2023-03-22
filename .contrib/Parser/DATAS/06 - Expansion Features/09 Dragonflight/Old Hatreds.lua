@@ -124,3 +124,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF_0_7 }, {
+	n(QUESTS, {
+		q(72610),	-- After getting the achievement "A New Beginning"
+	}),
+})));
+
