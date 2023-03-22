@@ -994,7 +994,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				-- #if BEFORE CATA
 				RAZZASHI_HATCHLING,
 				-- #endif
-				
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(22721, {	-- Band of Servitude
@@ -1207,6 +1206,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 						14510,	-- High Priestess Mar'li
 					},
 				}),
+<<<<<<< HEAD
 				-- #if AFTER 10.0.7
 				i(203774, {	-- Big Bag o' Bijous
 					["sym"] = {
@@ -1264,6 +1264,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					}},
 				}),
 				-- #endif
+=======
+			}),
+			prof(FISHING, {
+>>>>>>> parent of 8efe60b (first rough work on the zg recipes (bijous))
 				i(19975, {	-- Zulian Mudskunk
 					["provider"] = { "o", 180369 },	-- Muddy Churning Waters
 				}),
@@ -1289,10 +1293,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				i(19767, {	-- Primal Bat Leather
 					["cr"] = 11368,	-- Bloodseeker Bat
 				}),
-				-- #if AFTER 10.0.7
-				i(19768),	-- Primal Tiger Leather
-				i(19767),	-- Primal Bat Leather
-				-- #endif
 			}),
 			o(180229, {	-- Jinxed Hoodoo Pile
 				["description"] = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
