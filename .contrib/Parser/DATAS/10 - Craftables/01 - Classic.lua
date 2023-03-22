@@ -7,7 +7,10 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(9210),	-- Ghost Dye
 			i(9061),	-- Goblin Rocket Fuel
 			applyclassicphase(PHASE_FOUR, i(19931, {	-- Gurubashi Mojo Madness
-				["timeline"] = { "removed 4.0.3.14732" },
+				["timeline"] = { "removed 4.0.3.14732", "added 10.0.7" },
+				-- #if after 10.0.7
+				["description"] = "Has to be used near the 'Brazier of Madness' Toy to receive the 'Succumbed to Madness' Buff.",
+				-- #endif
 			})),
 		}),
 		category(638, {	-- Potions

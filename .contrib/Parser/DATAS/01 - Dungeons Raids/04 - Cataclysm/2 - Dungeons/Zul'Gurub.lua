@@ -51,18 +51,53 @@ _.Instances = { tier(CATA_TIER, {
 						})),
 					}),
 					n(COMMON_BOSS_DROPS, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
-						-- todo: add cost
 						i(203842),	-- ancient pattern animists footwraps
 						i(203843),	-- ancient pattern animists legguards
 						i(203848),	-- ancient pattern bloodlords embrace
 						i(203968),	-- ancient pattern cord of shriveled heads
 						i(203844),	-- ancient pattern gloves of the tormentor
-						i(203847),	-- ancient pattern gurubashis grasp
 						i(203849),	-- ancient pattern gurubashi tigerhide cloak
 						i(203850),	-- ancient pattern gurubashi headdress
 						i(203845),	-- ancient pattern junglefury gauntlets
 						i(203846),	-- ancient pattern junglefury leggings
 						i(203851),	-- ancient pattern ritualistic legwarmers
+						i(203835),	-- ancient plans fiery vengeance
+						i(203825),	-- ancient plans gurubashi carver
+						i(203828),	-- ancient plans gurubashi grinder
+						i(203824),	-- ancient plans gurubashi headplate
+						i(203827),	-- ancient plans gurubashi poker
+						i(203837),	-- ancient plans gurubashi slicer
+						i(203832),	-- ancient plans pitchfork of mojo madness
+						i(203830),	-- ancient plans sceptre of hexing
+						i(203841),	-- ancient technique gurubashi ceremonial staff
+						i(203839),	-- ancient technique gurubashi hoodoo stick
+						 --  epic
+						i(203959, {	-- Gurubashi Tribute
+							["sym"] = {
+								{"select","itemID",
+									19706,	-- Bloodscalp Coin
+									19701,	-- Gurubashi Coin
+									19700,	-- Hakkari Coin
+									19699,	-- Razzashi Coin
+									19704,	-- Sandfury Coin
+									19705,	-- Skullsplitter Coin
+									19702,	-- Vilebranch Coin
+									19703,	-- Witherbark Coin
+									19698,	-- Zulian Coin
+							}},
+							["groups"] = {
+								i(203838),	-- ancient formula: mindslave's reach
+								i(203847),	-- ancient pattern gurubashis grasp
+								i(203833),	-- ancient plans bloodherald
+								i(203834),	-- ancient plans bloodlords reaver
+								i(203831),	-- ancient plans gurubashi crusher
+								i(203829),	-- ancient plans gurubashi hexxer
+								i(203826),	-- ancient plans venomfang
+								i(203861),	-- ancient plans venomreaver
+								i(203836),	-- ancient plans warblades of the hakkari reborn
+								i(203840),	-- ancient technique judgment of the gurubashi
+							},
+						}),
 						i(203774, {	-- Big Bag o' Bijous
 							["sym"] = {
 								{"select","itemID",
@@ -82,7 +117,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(19706),	-- Bloodscalp Coin
 						i(19701),	-- Gurubashi Coin
 						i(203743, {	-- Jostled Gurubashi Cache
-							["questID"] = 74579
+							["questID"] = 74579,
 							["isDaily"] = true,
 							["sym"] = {
 								{"select","itemID",
@@ -115,7 +150,7 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 						i(19700),	-- Hakkari Coin
 						i(203912, {	-- Penny Pouch o' Paragons
-							["questID"] = 74579
+							["questID"] = 74579,
 							["isDaily"] = true,
 							["sym"] = {
 								{"select","itemID",
@@ -271,14 +306,14 @@ _.Instances = { tier(CATA_TIER, {
 						--]]
 						q(74697, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
 							["cost"] = {
-								{ "i", BLOODSCALP_COIN, 1 },	-- Bloodscalp Coin
-								{ "i", SANDFURY_COIN, 1 },		-- Sandfury Coin
-								{ "i", SKULLSPLITTER_COIN, 1 },	-- Skullsplitter Coin
+								{ "i", 19706, 1 },	-- Bloodscalp Coin
+								{ "i", 19704, 1 },		-- Sandfury Coin
+								{ "i", 19705, 1 },	-- Skullsplitter Coin
 							},
 							["repeatable"] = true,
 							["groups"] = {
 								i(203914),	-- Zandalar Bargaining Token
-							}),
+							},
 						}),
 					}),
 					n(VENDORS, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
@@ -385,6 +420,14 @@ _.Instances = { tier(CATA_TIER, {
 						i(69796, {	-- Spiritcaller Cloak
 						}),
 					}),
+					o(xxxxx, 	-- Bonepile Offering
+					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+						["description"] = "Can only be interacted with the 'Succumbed to Madness' Buff, received by using the Gurubashi Mojo Madness potion. With the buff, you can sacrifice bijous to receive an epic recipe.\n\nPossible spawning positions are behind each boss, excluding the archaeology area and Jin'do.",
+					})),
+					i(203757, 	-- Brazier of Madness
+					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+						["description"] = "Can be looted near the Cache of Madness event, to the left of the altar at 61.2, 45.6.",
+					})),	
 					n(52442, {	-- Florawing Hive Queen
 						["questID"] = 53809,	-- KillID
 						["isDaily"] = true,
@@ -392,6 +435,14 @@ _.Instances = { tier(CATA_TIER, {
 							i(69817),	-- Hive Queen's Honeycomb
 						},
 					}),
+					o(180368, 	-- Tablet of Madness
+					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+						["description"] = "Alchemists with 300 classic skill can interact with the Tablet of Madness to learn the recipe.",
+						["requireSkill"] = ALCHEMY,
+						["groups"] = {
+							recipe(24266),	-- Gurubashi Mojo Madness
+						},
+					})),
 					n(52414),	-- Tor-Tun
 					cr(52155, e(175, {	-- High Priest Venoxis
 						ach(5743),	-- It's Not Easy Being Green
