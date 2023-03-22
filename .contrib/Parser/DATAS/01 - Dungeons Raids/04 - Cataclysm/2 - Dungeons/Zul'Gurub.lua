@@ -246,7 +246,7 @@ _.Instances = { tier(CATA_TIER, {
 							["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
 						}),
 						--[[
-						q(00000, {	--
+						q(00000, {	-- Gurubashi, Vilebranch, and Witherbark Coins
 							["cost"] = {
 								{ "i", GURUBASHI_COIN, 1 },		-- GURUBASHI_COIN
 								{ "i", VILEBRANCH_COIN, 1 },	-- VILEBRANCH_COIN
@@ -257,7 +257,7 @@ _.Instances = { tier(CATA_TIER, {
 								i(203914),	-- Zandalar Bargaining Token
 							}),
 						}),
-						q(00000, {	--
+						q(00000, {	-- Zulian, Razzashi, and Hakkari Coins
 							["cost"] = {
 								{ "i", HAKKARI_COIN, 1 },	-- Hakkari Coin
 								{ "i", RAZZASHI_COIN, 1 },	-- Razzashi Coin
@@ -268,7 +268,7 @@ _.Instances = { tier(CATA_TIER, {
 								i(203914),	-- Zandalar Bargaining Token
 							}),
 						}),
-						q(00000, {	--
+						q(00000, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
 							["cost"] = {
 								{ "i", BLOODSCALP_COIN, 1 },	-- Bloodscalp Coin
 								{ "i", SANDFURY_COIN, 1 },		-- Sandfury Coin
