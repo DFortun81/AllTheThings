@@ -1851,6 +1851,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(192992),	-- Tiered Medallion Setting+
 			i(192993),	-- Tiered Medallion Setting++
 			i(192994),	-- Tiered Medallion Setting+++
+			i(204217, {["timeline"]={ADDED_DF_0_7}}),	-- Unstable Elementium
 		}),
 		filter(REAGENTS, {
 			i(191474),	-- Draconic Vial+

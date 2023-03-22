@@ -2572,7 +2572,6 @@ root(ROOTS.Unsorted, {
 				i(202687),	-- [DNT] Valdrakken Accord Item 03
 				i(202688),	-- [DNT] Valdrakken Accord Item 04
 				i(202689),	-- [DNT] Valdrakken Accord Item 05
-				i(202713),	-- Scattered Supplies
 				i(202868),	-- Mender's Signal
 				i(202874),	-- Healing Draught
 				i(203210),	-- Dragonscale Supply Box
@@ -2678,12 +2677,9 @@ root(ROOTS.Unsorted, {
 				-- JC
 				i(204406),	-- Ancient Design: Square Holders (RECIPE!)
 				i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
-				i(204219),	-- Design: Unstable Elementium (RECIPE!)
 				-- JC
 				i(204404),	-- Square Holders
-				i(204217),	-- Unstable Elementium
 				--
-				i(204222),	-- Conductive Ametrine Shard
 				i(204224),	-- Speck of Arcane Awareness
 				i(204225),	-- Perfect Windfeather
 				i(204226),	-- Blazehoof Ashes
@@ -2926,7 +2922,6 @@ root(ROOTS.Unsorted, {
 				q(74433),
 				q(74434),
 				q(74435),
-				q(74471),
 				q(74472),
 				q(74473),
 				q(74477),

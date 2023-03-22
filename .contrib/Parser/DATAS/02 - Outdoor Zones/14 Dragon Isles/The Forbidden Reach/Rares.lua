@@ -12,11 +12,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				-- },
 			}),
 			n(200743, {	-- Amephyst
-				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				["coord"] = { 31.0, 60.0, THE_FORBIDDEN_REACH },
 				-- ["questID"] = ,
 				["cost"] = { { "i", 203413, 1 }, },	-- 1x Crystal Tuning Fork
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(204222),	-- Conductive Ametrine Shard
+					i(204219),	-- Design: Unstable Elementium (RECIPE!)
+				},
 			}),
 			n(200737, {	-- Arcantrix
 				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },

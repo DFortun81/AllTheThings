@@ -50,6 +50,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				},
 				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(202713),	-- Scattered Supplies
+				},
 			}),
 			q(73694, {	-- Stuck in Stasis
 				["sourceQuests"] = {
@@ -178,7 +181,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				}),
 				q(74333, {	-- Amephyst
 					["provider"] = { "n", 200743 },	-- Amephyst
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 31.0, 60.0, THE_FORBIDDEN_REACH },
 				}),
 				q(74328, {	-- Arcantrix
 					["provider"] = { "n", 200737 },	-- Arcantrix
@@ -363,4 +366,5 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 	q(74765),	-- Third Envoy
 	q(74764),	-- Fourth Envoy
 	q(75240),	-- Unlocking Researcher Imareth as a vendor
+	q(74471),	-- Triggered after accepting Zskera Vault: Az
 })))
