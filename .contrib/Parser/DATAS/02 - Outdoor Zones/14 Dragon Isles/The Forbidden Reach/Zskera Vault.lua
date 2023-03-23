@@ -166,7 +166,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["coord"] = { 25.5, 53.2, THE_FORBIDDEN_REACH },
 					["g"] = {
 						i(193363),	-- Bunbo (PET!)
-						i(193908),	-- Kobaldt (PET!)
 						i(203701),	-- Neltharion Gift Token
 						i(202196),	-- Zskera Vault Key
 					},
@@ -509,9 +508,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["coord"] = { 25.5, 49.2, THE_FORBIDDEN_REACH },
 							["questID"] = 74512,
 						}),
-						o(386632, {	-- Experimental Dragon Pack 
+						o(386632, {	-- Experimental Dragon Pack
 							["g"] = {
-								i(203722),	-- Experimental Dragon Pack 
+								i(203722),	-- Experimental Dragon Pack
 							},
 						}),
 						o(386585, {	-- Experimental Melder
@@ -753,7 +752,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["coord"] = { 27.3, 49.6, THE_FORBIDDEN_REACH },
 							["questID"] = 74404,
 						}),
-						o(386648, {	-- Mysterious Scroll 
+						o(386648, {	-- Mysterious Scroll
 							["questID"] = 74574,
 							["g"] = {
 								i(204802),	-- Scroll of Teleport: Ziskara Vaults
@@ -1025,6 +1024,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 
 				-- Unknown
 				i(204278),	-- Neltharion's Toolkit
+				i(193853),	-- Emmah (PET!)
+				i(204257),	-- Holoviewer: The Lady of Dreams (TOY!)
+				i(204262),	-- Holoviewer: The Timeless One (TOY!)
 
 				--
 				n(200777, {	-- Unleashed Earth

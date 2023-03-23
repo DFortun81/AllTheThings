@@ -1228,7 +1228,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		-- --
 		-- q(69813),	-- Triggered when Prozela Killed
 		-- --
-		-- q(69834),	-- Triggered when Ripaw the Stalker is killed
 		-- --
 		-- Has to do with the Chest Event In the South
 		--q(70511),	-- complete??

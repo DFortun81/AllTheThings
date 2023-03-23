@@ -1554,7 +1554,6 @@ i(192787, 351403);	-- [PH] Mammoth V2 Dark			/	[PH] Mammoth V2 Dark
 i(192789, 374172);	-- [PH] Mammoth V2 Gray			/	[PH] Mammoth V2 Gray
 i(198822, 385260);	-- [PH] Sepia Wind Eagle		/	[PH] Sepia Wind Eagle
 i(192771, 352927);	-- [PH] Water Salamander Blue	/	[PH] Water Salamander Blue
-i(192772, 374090);	-- [PH] Water Salamander Green
 i(192773, 374093);	-- [PH] Water Salamander Orange	/	[PH] Water Salamander Orange
 i(192774, 374097);	-- [PH] Water Salamander Pink	/	[PH] Water Salamander Pink
 i(0, 387948);	-- [PH] Wind Proto-Drake
@@ -1608,6 +1607,7 @@ i(190613, 367826);	-- Savage Green Battle Turtle
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+i(192772, 374090);	-- Ancient Salamanther
 i(192785, 374157);	-- Gooey Snailemental
 i(192790, 374194);	-- Mossy Mammoth
 i(204382, 349935);	-- Noble Bruffalon

@@ -90,6 +90,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["provider"] = { "n", 199539 },	-- Scalecommander Emberthal
 				["coord"] = { 76.6, 38.6, THE_FORBIDDEN_REACH },
 			}),
+			--
 			q(73160, {	-- Helping Hand and Claw
 				["sourceQuests"] = {
 					75050,	-- An Eclectic Accord
@@ -172,7 +173,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["isDaily"] = true,
 			}),
 			-- Iskaara
-			q(74909, {	-- New Catches
+			q(74909, {	-- New Catches [Confirmed]
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["coord"] = { 34.2, 59.9, THE_FORBIDDEN_REACH },
 			}),
@@ -182,7 +183,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
-			q(74391, {	-- Harpooner's Challenge
+			q(74391, {	-- Harpooner's Challenge [Confirmed]
 				["sourceQuests"] = { 74909 },	-- New Catches
 				["provider"] = { "n", 200562 },	-- Turik
 				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
@@ -285,7 +286,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				-- }),
 				q(74332, {	-- Luttrok
 					["provider"] = { "n", 200742 },	-- Luttrok
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 56.0, 51.6, THE_FORBIDDEN_REACH },
 				}),
 				q(74346, {	-- Mad-Eye Carrey
 					["provider"] = { "n", 201181 },	-- Mad-Eye Carrey
@@ -346,16 +347,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			})),
 		}),
 		n(QUESTS, sharedData({ ["isWeekly"] = true }, {
+			q(73142, {	-- Busting Blues
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
+				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+			}),
+			q(73715, {	-- Driftwood Derby
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["provider"] = { "n", 200558 },	-- Tukkaraq
+				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
+			}),
+			q(73179, {	-- Soupocalypse Now!
+				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
+				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+			}),
 			-- Not Confirmed --
 			q(75025, {	-- A Good Day for Rolling
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 201291 },	-- Cataloger Coralie
 				["coord"] = { 34.4, 59.3, THE_FORBIDDEN_REACH },
-			}),
-			q(73142, {	-- Busting Blues
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
-				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
-				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
 			}),
 			q(73189, {	-- Creche Cache
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
@@ -363,11 +374,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["coord"] = { 32.4, 52.9, THE_FORBIDDEN_REACH },
 			}),
 			q(73139, {	-- Deep Sea Supplies
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
-				["provider"] = { "n", 200558 },	-- Tukkaraq
-				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
-			}),
-			q(73715, {	-- Driftwood Derby
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 200558 },	-- Tukkaraq
 				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
@@ -386,11 +392,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 200727 },	-- Volethi
 				["coord"] = { 32.4, 52.9, THE_FORBIDDEN_REACH },
-			}),
-			q(73179, {	-- Soupocalypse Now!
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
-				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
-				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
 			}),
 			q(73398, {	-- Too Far Forward
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies

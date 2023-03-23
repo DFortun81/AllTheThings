@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					}),
 					i(197136, {	-- Highland Drake: Tapered Nose (DM!)
 						["cost"] = {
-							{ "c", ELEMENTAL_OVERFLOW, 10000 },
+							{ "c", ELEMENTAL_OVERFLOW, 2500 },
 						},
 					}),
 					i(198356),	-- Honey Snack
@@ -51,14 +51,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					}),
 					i(197626, {	-- Windborne Velocidrake: Exposed Finned Neck (DM!)
 						["cost"] = {
-							{ "c", ELEMENTAL_OVERFLOW, 10000 },
+							{ "c", ELEMENTAL_OVERFLOW, 2500 },
 						},
 					}),
 				},
 			}),
 			n(203341, {	-- Researcher Baneflare
 				["coord"] = { 35.7, 59.4, THE_FORBIDDEN_REACH },
-				["g"] = bubbleDown({ ["cost"] = { { "i", 204276, 1 } } }, {
+				["g"] = bubbleDown({ ["cost"] = { { "i", 204276, 1 } }, ["modID"] = 14, ["bonusID"] = 8943, }, {
 					n(BACK, {
 						i(199450),	-- Cape of Raging Tempests
 						i(199451),	-- Cloak of Raging Tempests

@@ -1199,15 +1199,9 @@ pet(0, 3320);	-- Whitewhisker
 pet(0, 3301);	-- Wild Duckling
 pet(0, 3322);	-- Woodbiter Piculet
 -- NYI --
-pet(191930, 3261);	-- Wakyn
-pet(193374, 3293);	-- Ashenwing
-pet(193853, 3331);	-- Emmah
 pet(193614, 3314);	-- Groundshaker
 pet(193373, 3292);	-- Phoenix Wishwing
 pet(193380, 3298);	-- Pink Salamanther
-pet(193851, 3332);	-- Patos
-pet(193235, 3285);	-- Luvvy
-pet(193364, 3291);	-- Scruffles
 pet(193587, 3312);	-- Time-Lost Duck
 pet(193377, 3294);	-- Time-Lost Phoenix Hatchling
 pet(193429, 3297);	-- Time-Lost Salamanther
@@ -1266,18 +1260,24 @@ pet(0, 3254);	-- Watcher of the Huntress
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+pet(193374, 3293);	-- Ashenwing
 pet(193854, 3333);	-- Berylmane
 pet(193835, 3323);	-- Brightfeather
 pet(193850, 3330);	-- Buckie
 pet(193363, 3290);	-- Bunbo
 pet(202255, 3427);	-- Driftling
+pet(193853, 3331);	-- Emmah
 pet(202407, 3449);	-- Flow
 pet(204079, 3476);	-- Gilded Mechafrog
 pet(193908, 3338);	-- Kobaldt
+pet(193235, 3285);	-- Luvvy
+pet(193851, 3332);	-- Patos
+pet(193364, 3291);	-- Scruffles
 pet(191915, 3259);	-- Shaggy
 pet(202411, 3447);	-- Tremblor
 pet(204183, 3475);	-- Volatile Self-Driving Toolbox
 pet(202413, 3446);	-- Vortex
+pet(191930, 3261);	-- Wakyn
 pet(202412, 3448);	-- Wildfire
 -- Unsorted
 

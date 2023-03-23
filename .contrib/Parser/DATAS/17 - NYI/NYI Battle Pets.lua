@@ -106,14 +106,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		tier(DF_TIER, {
 			tier(DF_TIER, 0.01, {
-				i(191930),	-- Wakyn (PET!)
-				i(193374),	-- Ashenwing (PET!)
-				i(193853),	-- Emmah (PET!)
 				i(193614),	-- Groundshaker (PET!)
 				i(193373),	-- Phoenix Wishwing (PET!)
 				i(193380),	-- Pink Salamanther (PET!)
-				i(193235),	-- Luvvy (PET!)
-				i(193364),	-- Scruffles (PET!)
 				i(193587),	-- Time-Lost Duck (PET!)
 				i(193377),	-- Time-Lost Phoenix Hatchling (PET!)
 				i(193429),	-- Time-Lost Salamanther (PET!)

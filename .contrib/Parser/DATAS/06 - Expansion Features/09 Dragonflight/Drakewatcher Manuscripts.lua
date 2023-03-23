@@ -853,7 +853,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		}),
 		i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)
 		i(197405),	-- Renewed Proto-Drake: Maned Tail (DM!)
-		i(202274, {["timeline"] = {ADDED_DF_0_7}}),	-- Renewed Proto-Drake: Plated Brow (DM!)
+		i(202274, {	-- Renewed Proto-Drake: Plated Brow (DM!)
+			["timeline"] = {ADDED_DF_0_7},
+		}),
 		i(197394),	-- Renewed Proto-Drake: Predator Pattern (DM!)
 		i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 		i(197399),	-- Renewed Proto-Drake: Razor Snout (DM!)
@@ -917,7 +919,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197591, {	-- Windborne Velocidrake: Hairy Head (DM!)
 			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
 		}),
-		unknown(i(197617)),	-- Windborne Velocidrake: Heavy Scales
+		i(197617, {	-- Windborne Velocidrake: Heavy Scales (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(197600),	-- Windborne Velocidrake: Helm
 		i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
 		i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
@@ -927,17 +931,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197604, {	-- Windborne Velocidrake: Ox Horns (DM!)
 			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
 		}),
-		unknown(i(197628)),	-- Windborne Velocidrake: Plated Neck [world drop?]
+		i(197628, {	-- Windborne Velocidrake: Plated Neck (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
 		i(197599),	-- Windborne Velocidrake: Red Hair (DM!)
 		i(197614),	-- Windborne Velocidrake: Red Scales (DM!)
-		unknown(i(197636)),	-- Windborne Velocidrake: Shrieker Pattern ["centaur renown but not on vendor]
+		i(197636, {	-- Windborne Velocidrake: Shrieker Pattern (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(197578),	-- Windborne Velocidrake: Silver and Blue Armor (DM!)
 		i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
 		i(197594, {	-- Windborne Velocidrake: Small Ears (DM!)
 			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
 		}),
-		unknown(i(197590)),	-- Windborne Velocidrake: Small Head Fin
+		i(197590, {	-- Windborne Velocidrake: Small Head Fin (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(197586),	-- Windborne Velocidrake: Spiked Back (DM!)
 		i(197629, {	-- Windborne Velocidrake: Spiked Neck (DM!)
 			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },

@@ -547,9 +547,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(192771, {	-- [PH] Water Salamander Blue / [PH] Water Salamander Blue (MOUNT!)
 					--["modelID"] = ,
 				}),
-				i(192772, {	-- [PH] Water Salamander Green / [PH] Water Salamander Green (MOUNT!)
-					--["modelID"] = ,
-				}),
 				i(192773, {	-- [PH] Water Salamander Orange / [PH] Water Salamander Orange (MOUNT!)
 					--["modelID"] = ,
 				}),
