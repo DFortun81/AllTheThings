@@ -1297,7 +1297,7 @@ namespace ATT
             }
 
             // clean up any Parser metadata tags
-            List<string> removeKeys = new List<string>(data.Keys.Where(k => k.StartsWith("_")));
+            List<string> removeKeys = new List<string>();
 
             foreach (KeyValuePair<string, object> dataKvp in data)
             {
@@ -2135,6 +2135,7 @@ namespace ATT
                                             {"itemID", itemID },
                                         };
                                         Items.MergeInto(itemID, item, newItem);
+                                        Items.DetermineSourceID(newItem);
                                         listing.Add(newItem);
                                     }
                                     break;
@@ -2166,6 +2167,7 @@ namespace ATT
                                             {"itemID", itemID },
                                         };
                                         Items.MergeInto(itemID, item, newItem);
+                                        Items.DetermineSourceID(newItem);
                                         listing.Add(newItem);
                                     }
                                     break;
@@ -2346,6 +2348,8 @@ namespace ATT
                         }
                     }
                 }
+
+                Objects.AllContainers.Remove("Uncollectible");
             }
 
             // Merge conditional data

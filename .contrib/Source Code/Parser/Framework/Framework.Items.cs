@@ -923,12 +923,13 @@ namespace ATT
             /// </summary>
             public static void DetermineSourceID(Dictionary<string, object> data)
             {
+                const bool DoSpammyDebugLogging = false;
                 decimal sourceIDKey = GetSourceIDKey(data);
                 if (sourceIDKey == 0) return;
 
                 if (data.ContainsKey("ignoreSource"))
                 {
-                    //LogDebug($"INFO: Item:{sourceIDKey} Skipped SourceID due to ignoreSource");
+                    if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Skipped SourceID due to ignoreSource");
                     return;
                 }
 
@@ -937,7 +938,7 @@ namespace ATT
                 {
                     if (!((f > 0 && f < 38) || f == 57))
                     {
-                        //LogDebug($"INFO: Item:{sourceIDKey} Skipped SourceID due to Filter:{(Objects.Filters)f}");
+                        if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Skipped SourceID due to Filter:{(Objects.Filters)f}");
                         return;
                     }
                 }
@@ -953,14 +954,14 @@ namespace ATT
                 if (SOURCES.TryGetValue(sourceIDKey, out long sourceID))
                 {
                     // quite spammmmmy, only enable if needed
-                    //LogDebug($"INFO: Item:{sourceIDKey} ==> s:{sourceID}");
+                    if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} ==> s:{sourceID}");
                     data["s"] = sourceID;
                     return;
                 }
 
                 // quite spammmmmy, only enable if needed
-                //if (!data.ContainsKey("s"))
-                //    LogDebug($"INFO: Failed to match SourceID for Item {sourceIDKey}");
+                if (!data.ContainsKey("s"))
+                    if (DoSpammyDebugLogging) LogDebug($"INFO: Failed to match SourceID for Item {sourceIDKey}");
             }
 
             /// <summary>

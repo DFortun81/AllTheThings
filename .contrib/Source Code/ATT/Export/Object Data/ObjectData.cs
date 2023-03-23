@@ -220,6 +220,16 @@ namespace ATT
                 fields.Remove("ilvl");
                 fields.Remove("q");
 
+                // Ensure parser-only fields are not exported
+                for (int i = fields.Count - 1; i >= 0; i--)
+                {
+                    string field = fields[i];
+                    if (field.StartsWith("_"))
+                    {
+                        fields.RemoveAt(i);
+                    }
+                }
+
                 // Conditionally remove certain fields.
                 if (data.TryGetValue("b", out object objRef))
                 {
