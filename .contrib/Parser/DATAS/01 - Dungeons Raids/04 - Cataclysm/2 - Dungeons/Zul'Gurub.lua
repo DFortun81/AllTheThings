@@ -144,8 +144,8 @@ _.Instances = { tier(CATA_TIER, {
 								i(19944),	-- Nat Pagle's Fish Terminator
 								i(19946),	-- Tigule's Harpoon
 								i(19945),	-- Lizardscale Eyepatch
-							--	i(19947),	-- Nat Pagle's Broken Reel
-							--	TOME_OF_POLYMORPH_TURTLE,
+								i(19947),	-- Nat Pagle's Broken Reel
+								TOME_OF_POLYMORPH_TURTLE,
 							},
 						}),
 						i(19700),	-- Hakkari Coin
@@ -177,8 +177,8 @@ _.Instances = { tier(CATA_TIER, {
 								i(19944),	-- Nat Pagle's Fish Terminator
 								i(19946),	-- Tigule's Harpoon
 								i(19945),	-- Lizardscale Eyepatch
-							--	i(19947),	-- Nat Pagle's Broken Reel
-							--	TOME_OF_POLYMORPH_TURTLE,
+								i(19947),	-- Nat Pagle's Broken Reel
+								TOME_OF_POLYMORPH_TURTLE,
 							},
 						}),
 						i(19699),	-- Razzashi Coin
