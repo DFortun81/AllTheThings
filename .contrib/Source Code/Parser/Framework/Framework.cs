@@ -322,13 +322,21 @@ namespace ATT
         {
             if (Config == null)
             {
+                Log($"Using config: {filepath}");
                 Config = new CustomConfiguration(filepath);
             }
             else
             {
+                Log($"Added config: {filepath}");
                 Config.ApplyFile(filepath);
             }
-            Log($"config: {filepath}");
+        }
+
+        /// <summary>
+        /// After multiple calls to InitConfigSettings have been completed, this method is used to apply the config settings into the Parser
+        /// </summary>
+        public static void ApplyConfigSettings()
+        {
             CURRENT_RELEASE_PHASE_NAME = Config["DataPhase"] ?? CURRENT_RELEASE_PHASE_NAME;
             int[] configPatch = Config["DataPatch"];
             if (configPatch != null)
@@ -474,9 +482,6 @@ namespace ATT
             }
             else
             {
-                // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
-                Objects.PostProcessMergeInto(data);
-
                 if (!DataConsolidation(data))
                     return false;
             }
@@ -489,7 +494,7 @@ namespace ATT
             if (data.TryGetValue("g", out List<object> groups))
             {
                 var previousParent = CurrentParentGroup;
-                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object objKeyValue))
+                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
                     CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
                 var previousDifficultyRoot = DifficultyRoot;
                 var previousDifficulty = NestedDifficultyID;
@@ -873,8 +878,6 @@ namespace ATT
                 }
             }
 
-            ObjectData.TryFindAndConvertDataByObjectType(data);
-
             // Certain automatic header types may be converted from raw Lua data
             //if (data.TryGetValue("headerID", out decimal headerID) && data.TryGetValue("type", out string type))
             //{
@@ -1215,6 +1218,9 @@ namespace ATT
             Items.MergeInto(data);
             Objects.MergeInto(data);
 
+            // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
+            Objects.PostProcessMergeInto(data);
+
             // verify the timeline data of Merged data (can prevent keeping the data in the data container)
             if (!CheckTimeline(data))
                 return false;
@@ -1241,7 +1247,9 @@ namespace ATT
 
             CheckHeirloom(data);
 
-            ObjectData.TryDataConversion(data);
+            Items.DetermineSourceID(data);
+
+            CheckObjectConversion(data);
 
             //VerifyListContentOrdering(data);
 
@@ -1306,6 +1314,17 @@ namespace ATT
             }
 
             return true;
+        }
+
+        private static void CheckObjectConversion(Dictionary<string, object> data)
+        {
+            if (ObjectData.TryFindObjectConversion(data, out ObjectData conversionObject, out object convertValue))
+            {
+                LogDebug($"INFO: Type Conversion {conversionObject.ConvertedKey}=>{conversionObject.ObjectType} ({convertValue})");
+                data.Remove("type");
+                data.Remove(conversionObject.ConvertedKey);
+                data[conversionObject.ObjectType] = convertValue;
+            }
         }
 
         /// <summary>
@@ -1818,7 +1837,7 @@ namespace ATT
             if (!MergeItemData) return;
 
             var groupIDs = Objects.CompressToList(groups) ?? new List<object> { groups };
-            if (groupIDs != null && ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object _))
+            if (groupIDs != null && ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object _))
             {
                 switch (objectData.ObjectType)
                 {
@@ -1917,7 +1936,14 @@ namespace ATT
             // duplicate the data into the sourced data by type
             foreach (object dupeGroupID in groupIDs)
             {
-                Objects.PostProcessMerge(type, dupeGroupID, data);
+                if (dupeGroupID.TryConvert(out decimal groupID))
+                {
+                    Objects.PostProcessMerge(type, groupID, data);
+                }
+                else
+                {
+                    Log($"WARN: Trying to Post-Process Merge using a non-numeric key: {dupeGroupID} for type {type}");
+                }
             }
         }
 
@@ -2321,7 +2347,6 @@ namespace ATT
                     }
                 }
             }
-
 
             // Merge conditional data
             ProcessingMergeData = true;
@@ -3005,7 +3030,7 @@ namespace ATT
         public static void Merge(LuaTable table)
         {
             // Parse the contents of the table into a generic object.
-            var dict = ParseAsDictionary(table);
+            var dict = ParseAsStringDictionary(table);
             if (dict == null) return;
 
             // Iterate through the pairs and determine what goes where.
@@ -3029,7 +3054,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("IllusionDB not in the correct format!");
+                                LogError("IllusionDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;
@@ -3050,7 +3075,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3066,7 +3091,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3074,7 +3099,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemDB not in the correct format!");
+                                LogError("ItemDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             ProcessingMergeData = false;
@@ -3095,7 +3120,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3111,7 +3136,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3119,7 +3144,20 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemDB not in the correct format!");
+                                LogError("ItemDB not in the correct format!");
+                                Console.ReadLine();
+                            }
+                        }
+                        break;
+                    case "Items.SOURCES":
+                        {
+                            if (pair.Value is Dictionary<decimal, object> db)
+                            {
+                                db.AsParallel().ForAll(Items.AddItemSourceID);
+                            }
+                            else
+                            {
+                                LogError($"{pair.Key} not in the correct format!");
                                 Console.ReadLine();
                             }
                         }
@@ -3138,7 +3176,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("RecipeDB not in the correct format!");
+                                        LogError("RecipeDB not in the correct format!");
                                         Console.WriteLine(ToJSON(recipeValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3154,7 +3192,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3162,7 +3200,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemDB not in the correct format!");
+                                LogError("ItemDB not in the correct format!");
                                 Console.ReadLine();
                             }
                         }
@@ -3181,7 +3219,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemMountDB not in the correct format!");
+                                        LogError("ItemMountDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3189,7 +3227,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemMountDB not in the correct format!");
+                                LogError("ItemMountDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;
@@ -3209,7 +3247,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemSpeciesDB not in the correct format!");
+                                        LogError("ItemSpeciesDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3217,7 +3255,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemSpeciesDB not in the correct format!");
+                                LogError("ItemSpeciesDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;
@@ -3236,7 +3274,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemToyDB not in the correct format!");
+                                        LogError("ItemToyDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3244,7 +3282,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemToyDB not in the correct format!");
+                                LogError("ItemToyDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;
@@ -3426,24 +3464,44 @@ namespace ATT
         {
             if (table.Keys.Count > 0)
             {
-                // Determine if we're dealing with a <string,object> dictionary.
+                // Determine most-necessary key type
+                bool useDecimal = false, useLong = false;
                 var keyList = new List<object>();
                 foreach (var key in table.Keys)
                 {
-                    if (key.GetType().ToString() == "System.String")
+                    var keyType = key.GetType();
+                    if (keyType == typeof(string))
                     {
-                        if (table[key].GetType().ToString() == "NLua.LuaFunction") continue;
-                        return ParseAsDictionary(table);
+                        if (table[key].GetType() == typeof(LuaFunction)) continue;
+                        return ParseAsStringDictionary(table);
+                    }
+                    else if (!useDecimal && keyType.IsDecimal())
+                    {
+                        useDecimal = true;
+                    }
+                    else if (!useDecimal && !useLong && keyType.IsNumeric())
+                    {
+                        useLong = true;
                     }
                     keyList.Add(key);
                 }
-                keyList.Sort();
+                //keyList.Sort();
 
                 // Determine if we're dealing with a <long,object> dictionary.
                 for (int i = 1; i <= keyList.Count; ++i)
                 {
                     var key = keyList[i - 1];
-                    if (Convert.ToInt32(key) != i) return ParseAsTable(table);
+                    if (key.TryConvert(out int index) && (index != i || index > keyList.Count))
+                    {
+                        if (useDecimal)
+                        {
+                            return ParseAsDictionary<decimal>(table);
+                        }
+                        else
+                        {
+                            return ParseAsDictionary<long>(table);
+                        }
+                    }
                 }
 
                 // Create an ordered list from the table.
@@ -3458,14 +3516,24 @@ namespace ATT
             return new List<object>();
         }
 
-        static Dictionary<long, object> ParseAsTable(LuaTable table)
+        static Dictionary<TKey, object> ParseAsDictionary<TKey>(LuaTable table)
         {
-            var dict = new Dictionary<long, object>();
-            foreach (var key in table.Keys) dict[Convert.ToInt64(key)] = ParseObject(table[key]);
+            var dict = new Dictionary<TKey, object>();
+            foreach (var key in table.Keys)
+            {
+                if (key.TryConvert(out TKey tKey))
+                {
+                    dict[tKey] = ParseObject(table[key]);
+                }
+                else
+                {
+                    LogError($"Failed to convert {key} to type {typeof(TKey).GetType().Name}");
+                }
+            }
             return dict;
         }
 
-        static Dictionary<string, object> ParseAsDictionary(LuaTable table)
+        static Dictionary<string, object> ParseAsStringDictionary(LuaTable table)
         {
             var dict = new Dictionary<string, object>();
             foreach (var key in table.Keys) dict[ConvertFieldName(key.ToString())] = ParseObject(table[key]);
@@ -3511,6 +3579,7 @@ namespace ATT
             return null;
         }
         #endregion
+
         #region Export (Clean)
         /// <summary>
         /// Export the data to the builder in a clean, longhand format.
@@ -3826,7 +3895,7 @@ namespace ATT
                         }
 
                         // Export the Mount DB file.
-                        var mounts = Framework.Items.AllIDs;
+                        var mounts = Items.AllIDs;
                         if (mounts.Any())
                         {
                             var builder = new StringBuilder("-----------------------------------------------------\n--   M O U N T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
@@ -3834,7 +3903,7 @@ namespace ATT
                             keys.Sort();
                             foreach (var itemID in keys)
                             {
-                                var item = Framework.Items.GetNull(itemID);
+                                var item = Items.GetNull(itemID);
                                 if (item != null)
                                 {
                                     if (item.TryGetValue("mountID", out long spellID))
@@ -3954,11 +4023,12 @@ namespace ATT
                 }
 
                 // Export various debug information to the output folder.
-                ATT.Export.IncludeRawNewlines = false;
+                IncludeRawNewlines = false;
                 Objects.Export(outputFolder.FullName);
-                ATT.Export.IncludeRawNewlines = true;
+                IncludeRawNewlines = true;
 
 #if RETAIL
+                Objects.ExportAutoItemSources(Config["root-data"]);
                 Objects.ExportAutoLocale(outputFolder.FullName);
 #endif
             }

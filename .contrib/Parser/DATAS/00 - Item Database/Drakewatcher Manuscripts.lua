@@ -2,7 +2,7 @@
 
 local Items = root(ROOTS.ItemDBConditional);
 local i = function(itemID, questID)
-	Items[itemID] = { ["questID"] = questID };
+	Items[itemID] = { ["questID"] = questID, ["type"] = "dmID" };
 end
 
 ------------------

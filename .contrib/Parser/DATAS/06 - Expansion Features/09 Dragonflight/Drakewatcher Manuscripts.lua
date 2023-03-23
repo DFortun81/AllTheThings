@@ -6,11 +6,6 @@ local function unknown(i)
 	i.u = NEVER_IMPLEMENTED;
 	return i;
 end
-local i = function(id, t)
-	local i = i(id, t);
-	-- i.type = "dmID";	-- Convert to DragonManuscript ObjectType for export
-	return i;
-end
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAKEWATCHER_MANUSCRIPTS, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
