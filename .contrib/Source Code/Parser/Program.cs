@@ -42,6 +42,8 @@ namespace ATT
                 }
             }
 
+            Framework.ApplyConfigSettings();
+
             try
             {
                 PreProcessorTags = Framework.Config["PreProcessorTags"] ?? Array.Empty<string>();

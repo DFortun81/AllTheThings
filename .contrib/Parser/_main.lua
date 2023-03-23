@@ -2604,7 +2604,8 @@ title_gendered = function(id_m, id_f, t)				-- Create a TITLE Object which is 't
 	return struct("titleID", id_m * id_f * 100, t);		-- Arbitrary titleID from the combination of both titleID's
 end
 v = function(id, t)										-- Create a VIGNETTE Object
-	return struct("vignetteID", id, t);
+	t.type = "vignetteID";
+	return struct("questID", id, t);
 end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
@@ -2674,7 +2675,7 @@ un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable w
 
 -- Used by the Harvester (Parser)
 function Harvest(things)
-	local itemDB = root(ROOTS.ItemDBConditional, {});
+	local itemDB = root(ROOTS.ItemDBConditional);
 	local thing;
 	for i,j in pairs(things) do
 		thing = itemDB[i];
