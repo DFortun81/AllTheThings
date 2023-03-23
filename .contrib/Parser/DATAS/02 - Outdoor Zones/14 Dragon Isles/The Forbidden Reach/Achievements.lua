@@ -127,28 +127,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				}),
 			}),
 			ach(17405, {	-- Dragon Glyphs: Caldera of the Menders
-				["coord"] = { 35.7, 21.9, THE_FORBIDDEN_REACH },
+				["coord"] = { 37.7, 30.6, THE_FORBIDDEN_REACH },
 			}),
 			ach(17401, {	-- Dragon Glyphs: Dragonskull Island
-				["coord"] = { 81.6, 50.2, THE_FORBIDDEN_REACH },
+				["coord"] = { 79.4, 32.8, THE_FORBIDDEN_REACH },
 			}),
 			ach(17400, {	-- Dragon Glyphs: Froststone Peak
-				["coord"] = { 64.6, 23.9, THE_FORBIDDEN_REACH },
+				["coord"] = { 62.4, 32.4, THE_FORBIDDEN_REACH },
 			}),
 			ach(17402, {	-- Dragon Glyphs: Stormsunder Mountain
-				["coord"] = { 81.6, 50.2, THE_FORBIDDEN_REACH },
+				["coord"] = { 77.4, 55.1, THE_FORBIDDEN_REACH },
 			}),
 			ach(17404, {	-- Dragon Glyphs: Talonlord's Perch
-				["coord"] = { 60.5, 61.8, THE_FORBIDDEN_REACH },
+				["coord"] = { 59.0, 65.2, THE_FORBIDDEN_REACH },
 			}),
 			ach(17399, {	-- Dragon Glyphs: Talon's Watch
-				["coord"] = { 15.9, 92.3, THE_FORBIDDEN_REACH },
+				["coord"] = { 20.5, 91.4, THE_FORBIDDEN_REACH },
 			}),
 			ach(17403, {	-- Dragon Glyphs: The Frosted Spine
-				["coord"] = { 48.3, 66.3, THE_FORBIDDEN_REACH },
+				["coord"] = { 48.6, 68.9, THE_FORBIDDEN_REACH },
 			}),
 			ach(17398, {	-- Dragon Glyphs: Winglord's Perch
-				["coord"] = { 13.3, 1.6, THE_FORBIDDEN_REACH },
+				["coord"] = { 18.4, 13.2, THE_FORBIDDEN_REACH },
 			}),
 			ach(17411, {	-- Forbidden Reach Glyph Hunter
 				-- Meta Achievement
