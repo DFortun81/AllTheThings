@@ -7870,21 +7870,19 @@ local QuestsToPopulate = {};
 app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 	-- app.PrintDebug("QUEST_DATA_LOAD_RESULT",questID,success)
 	QuestsRequested[questID] = nil;
-	-- Store the Quest title
-	if not rawget(QuestTitleFromID, questID) then
-		if success then
-			local title = QuestUtils_GetQuestName(questID);
-			if title and title ~= "" then
-				-- app.PrintDebug("Available QuestData",questID,title)
-				rawset(QuestTitleFromID, questID, title);
-				-- trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
-				app:RefreshWindows();
-			end
-		else
-			-- this quest name cannot be populated by the server
-			-- app.PrintDebug("No Server QuestData",questID)
-			rawset(QuestTitleFromID, questID, L["QUEST_NAMES"][questID] or "Quest #"..questID.."*");
+	-- Store the Quest title if successful, regardless of already being cached
+	if success then
+		local title = QuestUtils_GetQuestName(questID);
+		if title and title ~= "" then
+			-- app.PrintDebug("Available QuestData",questID,title)
+			rawset(QuestTitleFromID, questID, title);
+			-- trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
+			app:RefreshWindows();
 		end
+	else
+		-- this quest name cannot be populated by the server
+		-- app.PrintDebug("No Server QuestData",questID)
+		rawset(QuestTitleFromID, questID, L["QUEST_NAMES"][questID] or "Quest #"..questID.."*");
 	end
 	-- see if this Quest is awaiting Reward population & Updates
 	local data = QuestsToPopulate[questID];
