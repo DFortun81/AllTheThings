@@ -71,8 +71,22 @@ _.Instances = { tier(CATA_TIER, {
 						i(203830),	-- ancient plans sceptre of hexing
 						i(203841),	-- ancient technique gurubashi ceremonial staff
 						i(203839),	-- ancient technique gurubashi hoodoo stick
-						 --  epic
+						i(203774, {	-- Big Bag o' Bijous
+							["sym"] = {
+								{"select","itemID",
+									203765,	-- Blue Hakkari Bijou
+									203766,	-- Bronze Hakkari Bijou
+									203767,	-- Gold Hakkari Bijou
+									203768,	-- Green Hakkari Bijou
+									203769,	-- Orange Hakkari Bijou
+									203770,	-- Purple Hakkari Bijou
+									203771,	-- Red Hakkari Bijou
+									203772,	-- Silver Hakkari Bijou
+									203773,	-- Yellow Hakkari Bijou
+							}},
+						}),
 						i(203959, {	-- Gurubashi Tribute
+							["description"] = "Not directly a common boss drop, but behind each boss, except the archaeology area & Jin'do, is an offering bonepile. It can only be interacted with the 'Succumbed to Madness' Buff, received by using the Gurubashi Mojo Madness potion near the Brazier of Madness Toy. With the buff, you can sacrifice bijous to receive an epic recipe and/or 5-6 coins.",
 							["sym"] = {
 								{"select","itemID",
 									19706,	-- Bloodscalp Coin
@@ -97,20 +111,6 @@ _.Instances = { tier(CATA_TIER, {
 								i(203836),	-- ancient plans warblades of the hakkari reborn
 								i(203840),	-- ancient technique judgment of the gurubashi
 							},
-						}),
-						i(203774, {	-- Big Bag o' Bijous
-							["sym"] = {
-								{"select","itemID",
-									203765,	-- Blue Hakkari Bijou
-									203766,	-- Bronze Hakkari Bijou
-									203767,	-- Gold Hakkari Bijou
-									203768,	-- Green Hakkari Bijou
-									203769,	-- Orange Hakkari Bijou
-									203770,	-- Purple Hakkari Bijou
-									203771,	-- Red Hakkari Bijou
-									203772,	-- Silver Hakkari Bijou
-									203773,	-- Yellow Hakkari Bijou
-							}},
 						}),
 					})),
 					prof(FISHING, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
@@ -354,8 +354,6 @@ _.Instances = { tier(CATA_TIER, {
 									i(203982, {	-- Ensemble zandalar vindicator
 									}),
 								}),
-								i(20757),	-- Formula: Brilliant Mana Oil (RECIPE!)
-								i(20756),	-- Formula: Brilliant Wizard Oil (RECIPE!)
 								i(203983, {	-- Ensemble bloodtinged cloth
 								}),
 								i(203984, {	-- Ensemble blooddrenched leather
@@ -364,6 +362,8 @@ _.Instances = { tier(CATA_TIER, {
 								}),
 								i(203986, {	-- Ensemble bloodsoaked plate
 								}),
+								i(20757),	-- Formula: Brilliant Mana Oil (RECIPE!)
+								i(20756),	-- Formula: Brilliant Wizard Oil (RECIPE!)
 								i(19772),	-- Pattern: Blood Tiger Breastplate
 								i(19773),	-- Pattern: Blood Tiger Shoulders
 								i(19766),	-- Pattern: Bloodvine Boots
@@ -417,17 +417,7 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 						i(69796, {	-- Spiritcaller Cloak
 						}),
-					}),
-					--[[
-					o(xxxxx, 	-- Bonepile Offering
-					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
-						["description"] = "Can only be interacted with the 'Succumbed to Madness' Buff, received by using the Gurubashi Mojo Madness potion. With the buff, you can sacrifice bijous to receive an epic recipe.\n\nPossible spawning positions are behind each boss, excluding the archaeology area and Jin'do.",
-					})),
-					--]]
-					i(203757, 	-- Brazier of Madness
-					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
-						["description"] = "Can be looted near the Cache of Madness event, to the left of the altar at 61.2, 45.6.",
-					})),	
+					}),	
 					n(52442, {	-- Florawing Hive Queen
 						["questID"] = 53809,	-- KillID
 						["isDaily"] = true,
@@ -435,14 +425,6 @@ _.Instances = { tier(CATA_TIER, {
 							i(69817),	-- Hive Queen's Honeycomb
 						},
 					}),
-					o(180368, 	-- Tablet of Madness
-					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
-						["description"] = "Alchemists with 300 classic skill can interact with the Tablet of Madness to learn the recipe.",
-						["requireSkill"] = ALCHEMY,
-						["groups"] = {
-							recipe(24266),	-- Gurubashi Mojo Madness
-						},
-					})),
 					n(52414),	-- Tor-Tun
 					cr(52155, e(175, {	-- High Priest Venoxis
 						ach(5743),	-- It's Not Easy Being Green
@@ -467,6 +449,10 @@ _.Instances = { tier(CATA_TIER, {
 					n(52405, {	-- Mor'Lek
 						i(69818),	-- Giant Sack
 					}),
+					i(203757, 	-- Brazier of Madness
+					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+						["description"] = "Can be looted near the Cache of Madness event, to the left of the altar at 61.2, 45.6.",
+					})),
 					n(-41,   {			-- Cache of Madness (Requires 225 Archeology)
 						--[[ encounter IDs if we're ever able to use an array for them:
 							177,	-- Gri'lek
@@ -594,6 +580,14 @@ _.Instances = { tier(CATA_TIER, {
 							}),
 						},
 					}),
+					o(180368, 	-- Tablet of Madness
+					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+						["description"] = "Alchemists with 300 classic skill can interact with the Tablet of Madness to learn the recipe.",
+						["requireSkill"] = ALCHEMY,
+						["groups"] = {
+							recipe(24266),	-- Gurubashi Mojo Madness
+						},
+					})),
 					n(52438, {	-- Mortaxx
 						i(52722),	-- Maelstrom Crystal
 					}),
