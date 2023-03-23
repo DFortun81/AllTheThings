@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			}),
 			n(200978, {	-- Pyrachniss
 				["description"] = "Inside the War Creche.",
-				["coord"] = { 74.4, 48.7, 2102 },
+				["coord"] = { 67.3, 56.3, 2102 },
 				["questID"] = 73385,
 				["g"] = {
 					i(197590),	-- Windborne Velocidrake: Small Head Fin (DM!)
@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			}),
 			n(200904, {	-- Veltrax
 				["coord"] = { 76.4, 64.6, THE_FORBIDDEN_REACH },
-				["questID"] = 74345,	-- Check if correct??
+				["questID"] = 73229,
 				-- ["g"] = {
 				-- },
 			}),

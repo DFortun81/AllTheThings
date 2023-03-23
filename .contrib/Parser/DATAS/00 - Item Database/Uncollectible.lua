@@ -641,6 +641,16 @@ i(193372);	-- Wood
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+-- Quest Items --
+i(202362);	-- Arcane Focus
+i(203463);	-- Atrenosh's Journal
+i(204685);	-- Primordial Anvil
+i(204353);	-- Primordial Jeweler's Kit
+i(202713);	-- Scattered Supplies
+-- Stupid Stuff
+i(204308);	-- Sturdy Bone
+i(204873);	-- Tied-up Envelope
+--
 i(204814);	-- Aged Journal
 i(204815);	-- Ambiguous Compendium
 i(204813);	-- Blank Tome

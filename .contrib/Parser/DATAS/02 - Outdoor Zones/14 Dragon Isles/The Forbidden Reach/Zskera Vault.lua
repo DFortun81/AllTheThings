@@ -10,58 +10,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					title(494),	-- <Name> the Key Master
 				}),
 				ach(17509),	-- Every Door, Everywhere, All At Once
-				ach(17315, {	-- While We Were Sleeping
-					crit(1, {	-- Journal Entry: The Creches
-						["_quests"] = {
-							73114, -- Journal Entry: The Creches (A)
-							74883,	-- Journal Entry: The Creches (H)
-						},
-					}),
-					crit(2, {	-- Journal Entry: Experiments
-						["_quests"] = {
-							74866, -- Journal Entry: Experiments (A)
-							73110,	-- Journal Entry: Experiments (H)
-						},
-					}),
-					crit(3, {	-- Journal Entry: Relics
-						["_quests"] = {
-							73113, -- Journal Entry: Relics (A)
-							74880,	-- Journal Entry: Relics (H)
-						},
-					}),
-					crit(4, {	-- Journal Entry: Silence
-						["_quests"] = {
-							73115, -- Journal Entry: Silence (A)
-							74896,	-- Journal Entry: Silence (H)
-						},
-					}),
-					crit(5, {	-- Receiving Stone: Final Warning
-						["_quests"] = {
-							73109, -- Journal Entry: Final Warning (A)
-							74900,	-- Journal Entry: Final Warning (H)
-						},
-					}),
-					crit(6, {	-- Sending Stone: Protest
-						["_quests"] = {
-							72944, -- Journal Entry: Protest (A)
-							74901,	-- Journal Entry: Protest (H)
-						},
-					}),
-					crit(7, {	-- Sending Stone: Initial Report
-						["_quests"] = {
-							73107, -- Journal Entry: Initial Report (A)
-							74902,	-- Journal Entry: Initial Report (H)
-						},
-					}),
-					crit(8, {	-- Sending Stone: The Prisoner
-						["_quests"] = {
-							73108, -- Journal Entry: The Prisoner (A)
-							74903,	-- Journal Entry: The Prisoner (H)
-						},
-					}),
-				}),
+			}),
+			filter(MISC, {
+				i(203715),	-- Oozing Gold
+				i(203720),	-- Restorative Water
+				i(203704),	-- Stone Dissolver
+				i(203718),	-- Vial of Flames
 			}),
 			n(QUESTS, {
+				q(73160, {	-- Helping Hand and Claw
+					["sourceQuests"] = {
+						75050,	-- An Eclectic Accord
+						74769,	-- Stemming the Irontide
+						73157,	--  Wings of Mercy
+					},
+					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+				}),
+				q(73159, {	-- Exploring Our Past
+					["sourceQuests"] = { 73160 },	-- Helping Hand and Claw
+					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+				}),
 				q(72953, {	-- Zskera Vault: Az
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
@@ -124,8 +94,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["provider"] = { "n", 201180 },	-- Cataloger Wulferd
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
 				}),
-
 				-- Inside of Az
+				q(74282, {	-- Authentic Authorization
+					["provider"] = { "n", 203381 },	-- Sealed Letter to Neltharion
+				}),
 				q(74293, {	-- Not Forgotten
 					["sourceQuests"] = { 72953 },	-- Zskera Vault: Az
 					["provider"] = { "n", 201240 },	-- Volethi
@@ -182,74 +154,29 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["provider"] = { "n", 200724 },	-- Researcher Imareth
 					["coord"] = { 35.1, 57.6, THE_FORBIDDEN_REACH },
 				}),
-
-				q(74282, {	-- Authentic Authorization
-					["provider"] = { "n", 203381 },	-- Sealed Letter to Neltharion
-				}),
-
 				-- Evoker Tablets
-				q(74866, { -- Journal Entry: Experiments (A)
-					["provider"] = { "i", 204200 },	-- Journal Entry: Experiments
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(73110, {	-- Journal Entry: Experiments (H)
-					["provider"] = { "i", 202329 },	-- Journal Entry: Experiments
-					["races"] = HORDE_ONLY,
-				}),
-				q(73109, { -- Journal Entry: Final Warning (A)
-					["provider"] = { "i", 202328 },	-- Journal Entry: Final Warning
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(74900, {	-- Journal Entry: Final Warning (H)
-					["provider"] = { "i", 204250 },	-- Journal Entry: Final Warning
-					["races"] = HORDE_ONLY,
-				}),
-				q(73107, { -- Journal Entry: Initial Report (A)
-					["provider"] = { "i", 202326 },	-- Journal Entry: Initial Report
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(74902, {	-- Journal Entry: Initial Report (H)
-					["provider"] = { "i", 204252 },	-- Journal Entry: Initial Report
-					["races"] = HORDE_ONLY,
-				}),
-				q(72944, { --Journal Entry: Protest (A)
-					["provider"] = { "i", 202203 },	-- Journal Entry: Protest
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(74901, {	-- Journal Entry: Protest (H)
-					["provider"] = { "i", 204251 },	-- Journal Entry: Protest
-					["races"] = HORDE_ONLY,
-				}),
-				q(73113, { -- Journal Entry: Relics (A)
-					["provider"] = { "i", 202335 },	-- Journal Entry: Relics
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(74880, {	-- Journal Entry: Relics (H)
-					["provider"] = { "i", 204221 },	-- Journal Entry: Relics
-					["races"] = HORDE_ONLY,
-				}),
 				q(73115, { -- Journal Entry: Silence (A)
-					["provider"] = { "i", 202337 },	-- Journal Entry: Silence
+					["provider"] = { "i", 202337 },	-- Journal Entry: Silence [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(74896, {	-- Journal Entry: Silence (H)
-					["provider"] = { "i", 204246 },	-- Journal Entry: Silence
+					["provider"] = { "i", 204246 },	-- Journal Entry: Silence [H]
 					["races"] = HORDE_ONLY,
 				}),
 				q(73114, { -- Journal Entry: The Creches (A)
-					["provider"] = { "i", 202336 },	-- Journal Entry: The Creches
+					["provider"] = { "i", 202336 },	-- Journal Entry: The Creches [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(74883, {	-- Journal Entry: The Creches (H)
-					["provider"] = { "i", 204223 },	-- Journal Entry: The Creches
+					["provider"] = { "i", 204223 },	-- Journal Entry: The Creches [H]
 					["races"] = HORDE_ONLY,
 				}),
 				q(73108, { -- Journal Entry: The Prisoner (A)
-					["provider"] = { "i", 202327 },	-- Journal Entry: The Prisoner
+					["provider"] = { "i", 202327 },	-- Journal Entry: The Prisoner [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(74903, {	-- Journal Entry: The Prisoner (H)
-					["provider"] = { "i", 204253 },	-- Journal Entry: The Prisoner
+					["provider"] = { "i", 204253 },	-- Journal Entry: The Prisoner [H]
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -351,7 +278,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						o(385837, {	-- Journal Entry: Silence
 							["coord"] = { 28.5, 55.6, THE_FORBIDDEN_REACH },
 							["g"] = {
-								i(202337),	-- Journal Entry: Silence
+								i(202337),	-- Journal Entry: Silence [A]
+								i(204246),	-- Journal Entry: Silence [H]
 							},
 						}),
 						o(389564, {	-- Mindless Slime
@@ -451,6 +379,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						o(385010, {	-- Spun Webs
 							-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
 							-- ["questID"] = ,
+						}),
+						o(390257, {	-- Stuffed Bear
+							["coord"] = { 30.5, 57.6, THE_FORBIDDEN_REACH },
+							["questID"] = 75164,
+							["g"] = {
+								i(204405),	-- Stuffed Bear
+							},
 						}),
 						o(388876, {	-- Wind Sculpted Stone
 							["coord"] = { 26.8, 53.7, THE_FORBIDDEN_REACH },
@@ -555,6 +490,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						o(386456, {	-- Hardshell Chest
 							["coord"] = { 27.4, 50.0, THE_FORBIDDEN_REACH },
 							["questID"] = 74422,
+							["g"] = {
+								i(193835),	-- Brigthfeather (PET!)
+							},
 						}),
 						o(386455, {	-- Hardshell Chest
 							["coord"] = { 30.9, 56.8, THE_FORBIDDEN_REACH },
@@ -569,7 +507,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						o(385836, {	-- Journal Entry: The Creches
 							["coord"] = { 25.1, 50.8, THE_FORBIDDEN_REACH },
 							["g"] = {
-								i(202336),	-- Journal Entry: The Creches
+								i(202336),	-- Journal Entry: The Creches [A]
+								i(204223),	-- Journal Entry: The Creches [H]
 							},
 						}),
 						o(386680, {	-- Mysterious Almanac
@@ -680,6 +619,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						}),
 						o(393222, {	-- Supply Trunk
 							["questID"] = 75216,
+						}),
+						n(200777, {	-- Unleashed Earth
+							i(169872),	-- Key of Bound Earth
 						}),
 						o(385937, {	-- Titan Coffer
 							["coord"] = { 28.8, 54.8, THE_FORBIDDEN_REACH },
@@ -949,6 +891,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["coord"] = { 30.1, 57.9, THE_FORBIDDEN_REACH },
 							["questID"] = 74397,
 						}),
+						o(385831, {	-- Sending Stone: The Prisoner
+							["coord"] = { 28.5, 57.6, THE_FORBIDDEN_REACH },
+							["g"] = {
+								i(202327),	-- Sending Stone: The Prisoner [A]
+								i(204253),	-- Sending Stone: The Prisoner [H]
+							},
+						}),
 						o(387853, {	-- Shattered Crystals
 							["description"] = "Use Stone Dissolver.",
 							["coord"] = { 27.0, 49.6, THE_FORBIDDEN_REACH },
@@ -963,35 +912,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["questID"] = 74417,
 						}),
 					},
-				}),
-				-- Floor Unknown
-				o(385834, {	-- Journal Entry: Experiments
-					["coord"] = { 59.6, 64.9, THE_FORBIDDEN_REACH },
-					["questID"] = 74866,
-					["g"] = {
-						i(204200),	-- Journal Entry: Experiments
-					}
-				}),
-				o(385832, {	-- Receiving Stone: Final Warning
-					["coord"] = { 58.9, 72.3, THE_FORBIDDEN_REACH },
-					["questID"] = 73109,
-					["g"] = {
-						i(202328),	-- Receiving Stone: Final Warning
-					}
-				}),
-				o(385830, {	-- Sending Stone: Initial Report
-					["coord"] = { 55.3, 35.8, THE_FORBIDDEN_REACH },
-					["questID"] = 73107,
-					["g"] = {
-						i(202326),	-- Sending Stone: Initial Report
-					}
-				}),
-				o(385533, {	-- Sending Stone: Protest
-					["coord"] = { 58.4, 70.5, THE_FORBIDDEN_REACH },
-					["questID"] = 72944,
-					["g"] = {
-						i(202203),	-- Sending Stone: Protest
-					}
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -1021,17 +941,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				i(204015),	-- Swirling Mojo Stone
 				i(204020),	-- Wild Spirit Stone
 				i(204030),	-- Wind Sculpted Stone
-
 				-- Unknown
 				i(204278),	-- Neltharion's Toolkit
 				i(193853),	-- Emmah (PET!)
 				i(204257),	-- Holoviewer: The Lady of Dreams (TOY!)
 				i(204262),	-- Holoviewer: The Timeless One (TOY!)
-
-				--
-				n(200777, {	-- Unleashed Earth
-					i(169872),	-- Key of Bound Earth
-				}),
 			}),
 		}),
 	}),

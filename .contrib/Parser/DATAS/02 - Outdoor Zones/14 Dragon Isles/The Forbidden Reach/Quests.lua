@@ -91,18 +91,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["coord"] = { 76.6, 38.6, THE_FORBIDDEN_REACH },
 			}),
 			--
-			q(73160, {	-- Helping Hand and Claw
-				["sourceQuests"] = {
-					75050,	-- An Eclectic Accord
-					74769,	-- Stemming the Irontide
-					73157,	--  Wings of Mercy
-				},
-				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
-				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
-				["g"] = {
-					i(202713),	-- Scattered Supplies
-				},
-			}),
 			q(73694, {	-- Stuck in Stasis
 				["sourceQuests"] = {
 					75050,	-- An Eclectic Accord
@@ -148,11 +136,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["provider"] = { "n", 200559 },	-- Treysh
 				["coord"] = { 35.6, 59.5, THE_FORBIDDEN_REACH },
 			}),
-			q(73159, {	-- Exploring Our Past
-				["sourceQuests"] = { 73160 },	-- Helping Hand and Claw
-				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
-				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+			-- Evoker Tablets
+			q(74866, { -- Journal Entry: Experiments (A)
+				["provider"] = { "i", 204200 },	-- Journal Entry: Experiments [A]
+				["races"] = ALLIANCE_ONLY,
 			}),
+			q(73110, {	-- Journal Entry: Experiments (H)
+				["provider"] = { "i", 202329 },	-- Journal Entry: Experiments [H]
+				["races"] = HORDE_ONLY,
+			}),
+			q(73113, { -- Journal Entry: Relics (A)
+				["provider"] = { "i", 202335 },	-- Journal Entry: Relics [A]
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(74880, {	-- Journal Entry: Relics (H)
+				["provider"] = { "i", 204221 },	-- Journal Entry: Relics [H]
+				["races"] = HORDE_ONLY,
+			}),
+			q(73109, { -- Receiving Stone: Final Warning (A)
+				["provider"] = { "i", 202328 },	-- Receiving Stone: Final Warning [A]
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(74900, {	-- Receiving Stone: Final Warning (H)
+				["provider"] = { "i", 204250 },	-- Receiving Stone: Final Warning [H]
+				["races"] = HORDE_ONLY,
+			}),
+			q(73107, { -- Sending Stone: Initial Report (A)
+				["provider"] = { "i", 202326 },	-- Sending Stone: Initial Report [A]
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(74902, {	-- Sending Stone: Initial Report (H)
+				["provider"] = { "i", 204252 },	-- Sending Stone: Initial Report [H]
+				["races"] = HORDE_ONLY,
+			}),
+			q(72944, { -- Sending Stone: Protest (A)
+				["provider"] = { "i", 202203 },	-- Sending Stone: Protest [A]
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(74901, {	-- Sending Stone: Protest (H)
+				["provider"] = { "i", 204251 },	-- Sending Stone: Protest [H]
+				["races"] = HORDE_ONLY,
+			}),
+			--
 			-- Not confirmed --
 			-- Envoy
 			-- Dragonscale

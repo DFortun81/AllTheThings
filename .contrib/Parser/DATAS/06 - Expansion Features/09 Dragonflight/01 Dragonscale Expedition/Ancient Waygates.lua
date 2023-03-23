@@ -280,7 +280,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["DisablePartySync"] = true,
 					["timeline"] = { ADDED_DF_0_7 },
 					["g"] = {
-
+						i(204438),	-- Enchanted Arcana Vessel
 					},
 				}),
 			}),

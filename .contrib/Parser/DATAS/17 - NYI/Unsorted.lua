@@ -2540,7 +2540,6 @@ root(ROOTS.Unsorted, {
 				i(202202),	-- Revealing Mask
 				i(202294),	-- Recipe Pages
 				i(202361),	-- Farscale Supplies
-				i(202362),	-- Arcane Focus
 				i(202364),	-- Everburning Ember
 				i(202394),	-- Fresh Plains Meat
 				i(202396),	-- Plains Timber
@@ -2581,7 +2580,7 @@ root(ROOTS.Unsorted, {
 				i(203381),	-- Sealed Letter to Neltharion
 			}),
 			filter(MISC, {
-				i(203463),	-- Atrenosh's Journal
+
 				i(203464),	-- Sealed Spellsworn Scroll
 				i(203465),	-- Draconic Artifact
 				i(203466),	-- Dragonscale Surplus Crate
@@ -2589,10 +2588,6 @@ root(ROOTS.Unsorted, {
 				i(203657),	-- Toxin Antidote
 				i(203686),	-- Odd Round Object
 				i(203687),	-- Dusty Vase
-				i(203704),	-- Stone Dissolver
-				i(203715),	-- Oozing Gold
-				i(203718),	-- Vial of Flames
-				i(203720),	-- Restorative Water
 				i(203724),	-- Field Medic's Hazard Payout
 				i(203730),	-- Rustic Winterpelt Supplies
 				i(203997),	-- Raw Argali Flank
@@ -2638,7 +2633,6 @@ root(ROOTS.Unsorted, {
 				i(204304),	-- Rations: Dragonbreath Chili
 				--
 				i(204307),	-- Ornate Bronze Lockbox
-				i(204308),	-- Sturdy Bone
 				i(204310),	-- Mycelial Threads
 				i(204311),	-- Fluorescent Veil
 				i(204312),	-- Ettin Skin
@@ -2646,24 +2640,19 @@ root(ROOTS.Unsorted, {
 				i(204330),	-- Inert Primordial Fragments
 				i(114942),	-- Cracked Draenic Mortar
 				i(204343),	-- Trusty Dragonkin Rake
-				i(204353),	-- Primordial Jeweler's Kit
 				i(204378),	-- Brimming Dragonscale Expedition Supply Pack
 				i(204379),	-- Brimming Iskaaran Supply Pack
 				i(204380),	-- Brimming Maruuk Centaur Supply Satchel
 				i(204381),	-- Brimming Valdrakken Accord Supply Pack
-				i(204405),	-- Stuffed Bear
 				i(204439),	-- Research Chest Key
 				i(204442),	-- Clump of Tar
 				i(204443),	-- Blacksteel Hammer
 				i(204561),	-- Primalist Cache Key
 				i(204632),	-- Tectonic Rock Fragment
 				i(204636),	-- Snarfang's Stomach Sac
-				i(204685),	-- Primordial Anvil
 				i(202204),	-- Receiving Stone: Final Warning
 				i(202205),	-- Translated Journal of Adamanthia
 				i(204249),	-- Translated Correspondence of Black Dragons
-				i(204438),	-- Enchanted Arcana Vessel
-				i(204873),	-- Tied-up Envelope
 			}),
 			n(PROFESSIONS, {
 				-- JC

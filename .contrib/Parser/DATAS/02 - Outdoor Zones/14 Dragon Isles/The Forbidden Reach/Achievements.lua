@@ -256,6 +256,56 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					-- TODO: ["_quests"] = {  },
 				}),
 			}),
+			ach(17315, {	-- While We Were Sleeping
+				crit(1, {	-- Journal Entry: The Creches
+					["_quests"] = {
+						73114, -- Journal Entry: The Creches (A)
+						74883,	-- Journal Entry: The Creches (H)
+					},
+				}),
+				crit(2, {	-- Journal Entry: Experiments
+					["_quests"] = {
+						74866, -- Journal Entry: Experiments (A)
+						73110,	-- Journal Entry: Experiments (H)
+					},
+				}),
+				crit(3, {	-- Journal Entry: Relics
+					["_quests"] = {
+						73113, -- Journal Entry: Relics (A)
+						74880,	-- Journal Entry: Relics (H)
+					},
+				}),
+				crit(4, {	-- Journal Entry: Silence
+					["_quests"] = {
+						73115, -- Journal Entry: Silence (A)
+						74896,	-- Journal Entry: Silence (H)
+					},
+				}),
+				crit(5, {	-- Receiving Stone: Final Warning
+					["_quests"] = {
+						73109, -- Journal Entry: Final Warning (A)
+						74900,	-- Journal Entry: Final Warning (H)
+					},
+				}),
+				crit(6, {	-- Sending Stone: Protest
+					["_quests"] = {
+						72944, -- Journal Entry: Protest (A)
+						74901,	-- Journal Entry: Protest (H)
+					},
+				}),
+				crit(7, {	-- Sending Stone: Initial Report
+					["_quests"] = {
+						73107, -- Journal Entry: Initial Report (A)
+						74902,	-- Journal Entry: Initial Report (H)
+					},
+				}),
+				crit(8, {	-- Sending Stone: The Prisoner
+					["_quests"] = {
+						73108, -- Journal Entry: The Prisoner (A)
+						74903,	-- Journal Entry: The Prisoner (H)
+					},
+				}),
+			}),
 			ach(17531),	-- X Marks the Spot
 			ach(17543, {	-- You Know How to Reach Me [META]
 				-- Meta Achievement
