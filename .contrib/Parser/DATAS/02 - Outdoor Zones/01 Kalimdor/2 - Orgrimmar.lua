@@ -5050,6 +5050,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 					},
 				}),
+				n(4043, {	-- Galthuk <Two-Handed Weapons Merchant>
+					["coord"] = { 76.0, 37.2, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(73210, {	-- Trainee's Sword
+							["timeline"] = { "added 10.0.7" },
+						}),
+					},
+				}),
 				-- #if NOT ANYCLASSIC
 				-- CRIEVE NOTE: I've never been a fan of Tabard Vendors, they're too all encompassing.
 				-- Not including it in Classic for now, going to use a symlink instead at some point but don't have time right now. Just want this merge to be finished!

@@ -6721,6 +6721,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(1333, {	-- Gerik Koen <Two Handed Weapon Merchant>
+					["coord"] = { 73.2, 57.2, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(73210, {	-- Trainee's Sword
+							["timeline"] = { "added 10.0.7" },
+						}),
+					},
+				}),
 				n(110034, {	-- Historian Llore <The Timewalkers>
 					["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 					["timeline"] = { "added 7.1.0.22810" },
