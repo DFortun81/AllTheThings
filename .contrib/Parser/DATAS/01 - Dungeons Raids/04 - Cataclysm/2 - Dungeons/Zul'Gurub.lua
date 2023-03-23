@@ -320,38 +320,119 @@ _.Instances = { tier(CATA_TIER, {
 							["groups"] = {
 								cl(DRUID, {
 									i(203974, {	-- Ensemble zandalar haruspec
+										["cost"] = {
+											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+											{ "i", 203769, 6 },	-- Orange Hakkari Bijou
+										},
+										["groups"] = {
+											i(19840),	-- Zandalar Haruspexs bracers
+											i(19839),	-- Zandalar Haruspexs belt
+											i(19838),	-- Zandalar Haruspexs tunic
+										},
 									}),
 								}),
 								cl(HUNTER, {
 									i(203975, {	-- Ensemble zandalar predator
+										["cost"] = {
+											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+											{ "i", 203768, 6 },	-- Green Hakkari Bijou
+										},
+										["groups"] = {
+											i(19832),	-- Zandalar predator belt
+											i(19833),	-- Zandalar predator bracer
+											i(19831),	-- Zandalar predator mantle
+										},
 									}),
 								}),
 								cl(MAGE, {
 									i(203976, {	-- Ensemble zandalar illusionist
+										["cost"] = {
+											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+											{ "i", 203771, 6 },	-- Red Hakkari Bijou
+										},
+										["groups"] = {
+											i(19845),	-- Zandalar illusionist mantle
+											i(20034),	-- Zandalar illusionist robe
+											i(19846),	-- Zandalar illusionist wraps
+										},
 									}),
 								}),
 								cl(PALADIN, {
 									i(203977, {	-- Ensemble zandalar freethinker
+										["cost"] = {
+											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+											{ "i", 203767, 6 },	-- Gold Hakkari Bijou
+										},
+										["groups"] = {
+											i(19825),	-- Zandalar freethinker breastplate
+											i(19827),	-- Zandalar freethinker armguards
+											i(19826),	-- Zandalar freethinker belt
+										},
 									}),
 								}),
 								cl(PRIEST, {
 									i(203978, {	-- Ensemble zandalar confessor
-									}),
-								}),
-								cl(SHAMAN, {
-									i(203980, {	-- Ensemble zandalar augur
+										["cost"] = {
+											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+											{ "i", 203772, 6 },	-- Silver Hakkari Bijou
+										},
+										["groups"] = {
+											i(19842),	-- Zandalar confessor binding
+											i(19841),	-- Zandalar confessor mantle
+											i(19843),	-- Zandalar confessor wraps
+										},
 									}),
 								}),
 								cl(ROGUE, {
 									i(203979, {	-- Ensemble zandalar madcap
+										["cost"] = {
+											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+											{ "i", 203773, 6 },	-- Yellow Hakkari Bijou
+										},
+										["groups"] = {
+											i(19835),	-- Zandalar madcap mantle
+											i(19834),	-- Zandalar madcap tunic
+											i(19836),	-- Zandalar madcap wraps
+										},
+									}),
+								}),
+								cl(SHAMAN, {
+									i(203980, {	-- Ensemble zandalar augur
+										["cost"] = {
+											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+											{ "i", 203765, 6 },	-- Blue Hakkari Bijou
+										},
+										["groups"] = {
+											i(19830),	-- Zandalar augur bracers
+											i(19828),	-- Zandalar augur hauberk
+											i(19829),	-- Zandalar augur belt
+										},
 									}),
 								}),
 								cl(WARLOCK, {
 									i(203981, {	-- Ensemble zandalar demoniac
+										["cost"] = {
+											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+											{ "i", 203770, 6 },	-- Purple Hakkari Bijou
+										},
+										["groups"] = {
+											i(19848),	-- Zandalar demoniac wraps
+											i(19849),	-- Zandalar demoniac mantle
+											i(20033),	-- Zandalar demoniac robe
+										},
 									}),
 								}),
 								cl(WARRIOR, {
 									i(203982, {	-- Ensemble zandalar vindicator
+										["cost"] = {
+											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+											{ "i", 203766, 6 },	-- Bronze Hakkari Bijou
+										},
+										["groups"] = {
+											i(19823),	-- Zandalar vindicator belt
+											i(19822),	-- Zandalar vindicator breastplate
+											i(19824),	-- Zandalar vindicator armguards
+										},
 									}),
 								}),
 								i(203983, {	-- Ensemble bloodtinged cloth
