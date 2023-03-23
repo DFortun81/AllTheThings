@@ -436,12 +436,52 @@ _.Instances = { tier(CATA_TIER, {
 									}),
 								}),
 								i(203983, {	-- Ensemble bloodtinged cloth
+									["cost"] = {
+										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+										{ "i", 203765, 6 },	-- Blue Hakkari Bijou
+									},
+									["groups"] = {
+										i(19929),	-- bloodtinged gloves
+										i(203970),	-- bloodtinged hat
+										i(19895),	-- bloodtinged kilt
+										i(203971),	-- bloodtinged shoulders
+									},
 								}),
 								i(203984, {	-- Ensemble blooddrenched leather
+									["cost"] = {
+										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+										{ "i", 203773, 6 },	-- Yellow Hakkari Bijou
+									},
+									["groups"] = {
+										i(19906),	-- blooddrenched footpads
+										i(19869),	-- blooddrenched grips
+										i(19889),	-- blooddrenched leggings
+										i(22718),	-- blooddrenched mask
+									},
 								}),
 								i(203985, {	-- Ensemble bloodstained mail
+									["cost"] = {
+										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+										{ "i", 203768, 6 },	-- Green Hakkari Bijou
+									},
+									["groups"] = {
+										i(19875),	-- bloodstained coif
+										i(19919),	-- bloodstained greaves
+										i(19869),	-- bloodstained grips
+										i(19887),	-- bloodstained legplates
+									},
 								}),
 								i(203986, {	-- Ensemble bloodsoaked plate
+									["cost"] = {
+										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+										{ "i", 203771, 6 },	-- Red Hakkari Bijou
+									},
+									["groups"] = {
+										i(19894),	-- bloodsoaked gauntlets
+										i(19913),	-- bloodsoaked greaves
+										i(19855),	-- bloodsoaked legplates
+										i(19878),	-- bloodsoaked pauldrons
+									},
 								}),
 								i(20757),	-- Formula: Brilliant Mana Oil (RECIPE!)
 								i(20756),	-- Formula: Brilliant Wizard Oil (RECIPE!)
