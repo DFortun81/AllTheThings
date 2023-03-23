@@ -280,30 +280,28 @@ _.Instances = { tier(CATA_TIER, {
 							["isDaily"] = true,
 							["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
 						}),
-						--[[
-						q(00000, {	-- Gurubashi, Vilebranch, and Witherbark Coins
+						q(74696, {	-- Gurubashi, Vilebranch, and Witherbark Coins
 							["cost"] = {
-								{ "i", GURUBASHI_COIN, 1 },		-- GURUBASHI_COIN
-								{ "i", VILEBRANCH_COIN, 1 },	-- VILEBRANCH_COIN
-								{ "i", WITHERBARK_COIN, 1 },	-- WITHERBARK_COIN
+								{ "i", 19701, 1 },	-- GURUBASHI_COIN
+								{ "i", 19702, 1 },	-- VILEBRANCH_COIN
+								{ "i", 19703, 1 },	-- WITHERBARK_COIN
 							},
 							["repeatable"] = true,
 							["groups"] = {
 								i(203914),	-- Zandalar Bargaining Token
-							}),
+							},
 						}),
-						q(00000, {	-- Zulian, Razzashi, and Hakkari Coins
+						q(74695, {	-- Zulian, Razzashi, and Hakkari Coins
 							["cost"] = {
-								{ "i", HAKKARI_COIN, 1 },	-- Hakkari Coin
-								{ "i", RAZZASHI_COIN, 1 },	-- Razzashi Coin
-								{ "i", ZULIAN_COIN, 1 },	-- Zulian Coin
+								{ "i", 19700, 1 },	-- Hakkari Coin
+								{ "i", 19699, 1 },	-- Razzashi Coin
+								{ "i", 19698, 1 },	-- Zulian Coin
 							},
 							["repeatable"] = true,
 							["groups"] = {
 								i(203914),	-- Zandalar Bargaining Token
-							}),
+							},
 						}),
-						--]]
 						q(74697, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
 							["cost"] = {
 								{ "i", 19706, 1 },	-- Bloodscalp Coin
@@ -420,10 +418,12 @@ _.Instances = { tier(CATA_TIER, {
 						i(69796, {	-- Spiritcaller Cloak
 						}),
 					}),
+					--[[
 					o(xxxxx, 	-- Bonepile Offering
 					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
 						["description"] = "Can only be interacted with the 'Succumbed to Madness' Buff, received by using the Gurubashi Mojo Madness potion. With the buff, you can sacrifice bijous to receive an epic recipe.\n\nPossible spawning positions are behind each boss, excluding the archaeology area and Jin'do.",
 					})),
+					--]]
 					i(203757, 	-- Brazier of Madness
 					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
 						["description"] = "Can be looted near the Cache of Madness event, to the left of the altar at 61.2, 45.6.",
