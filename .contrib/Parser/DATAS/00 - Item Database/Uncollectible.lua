@@ -644,8 +644,6 @@ i(193372);	-- Wood
 -- Quest Items --
 i(202362);	-- Arcane Focus
 i(203463);	-- Atrenosh's Journal
-i(204685);	-- Primordial Anvil
-i(204353);	-- Primordial Jeweler's Kit
 i(202713);	-- Scattered Supplies
 -- Stupid Stuff
 i(204308);	-- Sturdy Bone

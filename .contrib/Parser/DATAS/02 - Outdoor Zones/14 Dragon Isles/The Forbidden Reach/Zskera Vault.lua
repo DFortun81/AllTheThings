@@ -153,6 +153,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["sourceQuests"] = { 73155 },	-- The Forgotten Ring
 					["provider"] = { "n", 200724 },	-- Researcher Imareth
 					["coord"] = { 35.1, 57.6, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(204353),	-- Primordial Jeweler's Kit
+						i(204685),	-- Primordial Anvil
+					},
 				}),
 				-- Evoker Tablets
 				q(73115, { -- Journal Entry: Silence (A)
@@ -530,6 +534,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 								}),
 							},
 						}),
+						o(393218, {	-- Primordial Arcane Cache
+							["questID"] = 75212,
+							["g"] = {
+								i(204018),	-- Humming Arcane Stone
+							},
+						}),
 						o(386762, {	-- Primordial Armor Cache
 							["coord"] = { 30.5, 55.0, THE_FORBIDDEN_REACH },
 							["questID"] = 74636,
@@ -671,6 +681,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						o(392572, {	-- Chain-Bound Strongbox
 							["coord"] = { 28.2, 56.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75178,
+						}),
+						o(35591, {	-- Disgusting Vat
+							["description"] = "You must fish when interacting with this.",
+							["g"] = {
+								i(193853),	-- Emmah (PET!)
+								i(203701),	-- Neltharion Gift Token
+								i(204215),	-- Dormant Primordial Fragment
+							},
 						}),
 						o(386591, {	-- Empty Vial
 							-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
@@ -943,7 +961,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				i(204030),	-- Wind Sculpted Stone
 				-- Unknown
 				i(204278),	-- Neltharion's Toolkit
-				i(193853),	-- Emmah (PET!)
 				i(204257),	-- Holoviewer: The Lady of Dreams (TOY!)
 				i(204262),	-- Holoviewer: The Timeless One (TOY!)
 			}),
@@ -1008,6 +1025,12 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(74431),	-- When Completed Quest: 72953 Zskera Vault: Az
 		q(74748),	-- Triggered when looting Recipe Rat along with 74509
 		q(75127),	-- Triggered when earning "Every Door, Everywhere, All At Once"
+		q(75490),	-- Triggered when fishing up Dormant Primordial Fragment from Disgusting Vat
+		q(75159),	-- Triggered when fishing up Neltharion Gift Toekn from Disgusting Vat
+		q(75488),	-- Triggered when fishing up Emmah from Disgusting Vat
+		q(75158),	-- Triggered when fishing up Prismatic Fragment from Disgusting Vat
+		q(75489),	-- Triggered when fishing up Dormant Primordial Fragment #2 from Disgusting Vat
+		
 
 		-- TODO: See if these need to be associated with treasures
 		q(75500),	-- Looted spider cocoon in a vault room
