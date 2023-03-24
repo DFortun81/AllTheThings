@@ -94,12 +94,14 @@ _.Instances = { tier(CATA_TIER, {
 						i(203773),	-- Yellow Hakkari Bijou
 					})),
 					prof(FISHING, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
+						q(74579, {	-- Daily Zul'Gurub Cache
+							["name"] = "Daily Zul'Gurub Cache",
+							["isDaily"] = true,
+						}),
 						i(19706),	-- Bloodscalp Coin
 						i(19701),	-- Gurubashi Coin
 						i(203743, {	-- Jostled Gurubashi Cache
-							["questID"] = 74579,
 							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly get near the water.",
-							["isDaily"] = true,
 							["sym"] = {
 								{"select","itemID",
 									203765,	-- Blue Hakkari Bijou
@@ -130,9 +132,7 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 						i(19700),	-- Hakkari Coin
 						i(203912, {	-- Penny Pouch o' Paragons
-							["questID"] = 74579,
 							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly get near the water.",
-							["isDaily"] = true,
 							["sym"] = {
 								{"select","itemID",
 									203765,	-- Blue Hakkari Bijou
@@ -166,9 +166,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(19705),	-- Skullsplitter Coin
 						i(19702),	-- Vilebranch Coin
 						i(203742, {	-- Waterlooged Gurubashi Cache
-							["questID"] = 74579,
 							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly get near the water.",
-							["isDaily"] = true,
 							["sym"] = {
 								{"select","itemID",
 									203765,	-- Blue Hakkari Bijou
@@ -195,7 +193,7 @@ _.Instances = { tier(CATA_TIER, {
 								i(19946),	-- Tigule's Harpoon
 								i(19945),	-- Lizardscale Eyepatch
 								i(19947),	-- Nat Pagle's Broken Reel
-								TOME_OF_POLYMORPH_TURTLE,
+								i(22739),	-- TOME_OF_POLYMORPH_TURTLE,
 							},
 						}),
 						i(19703),	-- Witherbark Coin
