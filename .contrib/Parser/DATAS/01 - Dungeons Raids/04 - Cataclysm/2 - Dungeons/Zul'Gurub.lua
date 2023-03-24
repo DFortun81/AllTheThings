@@ -46,8 +46,6 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 						ach(17366, 	-- Relics of a Fallen Empire
 						bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
-							["description"] = "|cFFFF0000This achievement is required to have any of the materials, bijous or recipes added in 10.0.7 drop.|r\n\nTo get the achievement, kill any two of the four bosses to unlock Jin'do & then enter the interior of the pyramid in the middle of the dungeon. The first Bijou named 'Fragmented Hakkari Bijou' is near one of the gongs & the second Bijou is at the same spot, but doring phase 2 of the Jin'do Boss Encounter. Collect both, combine them & deliver them to Rin'wosho in Zandalar at 55.0 86.8",
-						--	["collectible"] = true,	-- Do we force it?
 						})),
 					}),
 					n(COMMON_BOSS_DROPS, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
@@ -84,54 +82,6 @@ _.Instances = { tier(CATA_TIER, {
 									203772,	-- Silver Hakkari Bijou
 									203773,	-- Yellow Hakkari Bijou
 							}},
-						}),
-						i(203959, {	-- Gurubashi Tribute
-							["description"] = "Not directly a common boss drop, but behind each boss, except the archaeology area & Jin'do, is an offering bonepile. It can only be interacted with the 'Succumbed to Madness' Buff, received by using the Gurubashi Mojo Madness potion near the Brazier of Madness Toy. With the buff, you can sacrifice bijous to receive an epic recipe and/or 5-6 coins.",
-							["sym"] = {
-								{"select","itemID",
-									19706,	-- Bloodscalp Coin
-									19701,	-- Gurubashi Coin
-									19700,	-- Hakkari Coin
-									19699,	-- Razzashi Coin
-									19704,	-- Sandfury Coin
-									19705,	-- Skullsplitter Coin
-									19702,	-- Vilebranch Coin
-									19703,	-- Witherbark Coin
-									19698,	-- Zulian Coin
-									-- blue recipes
-									203842,	-- ancient pattern animists footwraps
-									203843,	-- ancient pattern animists legguards
-									203848,	-- ancient pattern bloodlords embrace
-									203968,	-- ancient pattern cord of shriveled heads
-									203844,	-- ancient pattern gloves of the tormentor
-									203849,	-- ancient pattern gurubashi tigerhide cloak
-									203850,	-- ancient pattern gurubashi headdress
-									203845,	-- ancient pattern junglefury gauntlets
-									203846,	-- ancient pattern junglefury leggings
-									203851,	-- ancient pattern ritualistic legwarmers
-									203835,	-- ancient plans fiery vengeance
-									203825,	-- ancient plans gurubashi carver
-									203828,	-- ancient plans gurubashi grinder
-									203824,	-- ancient plans gurubashi headplate
-									203827,	-- ancient plans gurubashi poker
-									203837,	-- ancient plans gurubashi slicer
-									203832,	-- ancient plans pitchfork of mojo madness
-									203830,	-- ancient plans sceptre of hexing
-									203841,	-- ancient technique gurubashi ceremonial staff
-									203839,	-- ancient technique gurubashi hoodoo stick
-							}},
-							["groups"] = {
-								i(203838),	-- ancient formula: mindslave's reach
-								i(203847),	-- ancient pattern gurubashis grasp
-								i(203833),	-- ancient plans bloodherald
-								i(203834),	-- ancient plans bloodlords reaver
-								i(203831),	-- ancient plans gurubashi crusher
-								i(203829),	-- ancient plans gurubashi hexxer
-								i(203826),	-- ancient plans venomfang
-								i(203861),	-- ancient plans venomreaver
-								i(203836),	-- ancient plans warblades of the hakkari reborn
-								i(203840),	-- ancient technique judgment of the gurubashi
-							},
 						}),
 					})),
 					prof(FISHING, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
@@ -214,6 +164,19 @@ _.Instances = { tier(CATA_TIER, {
 						i(19767),	-- Primal Bat Leather
 					})),
 					n(QUESTS, {
+						q(74576, 	-- Restored Hakkari Bijou
+						bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+							["description"] = "|cFFFF0000This achievement is required to have any of the materials, bijous or recipes added in 10.0.7 drop.|r\n\nTo get the achievement, kill any two of the four bosses to unlock Jin'do & then enter the interior of the pyramid in the middle of the dungeon. The first Bijou named 'Fragmented Hakkari Bijou' is near one the gongs at roughly 48.6, 42.3 & the second Bijou is at the same spot, but during phase 2 of the Jin'do Boss Encounter. Collect both, combine them & deliver them to Rin'wosho in Zandalar at 55.0 86.8",
+							["cost"] = {
+								{ "i", 203736, 1 },	-- Fragmented Hakkari Bijou
+								{ "i", 203735, 1 },	-- Shattered Hakkari Bijou
+							},
+							["provider"] = { "i", 203737 },	-- Restored Hakkari Bijou
+							["coord"] = { 55.0, 86.8, DAZARALOR },
+							["groups"] = {
+								ach(17366), 	-- Relics of a Fallen Empire
+							},
+						})),
 						q(29155, {	-- A Shiny Reward
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
@@ -504,43 +467,143 @@ _.Instances = { tier(CATA_TIER, {
 										i(19878),	-- bloodsoaked pauldrons
 									},
 								}),
-								i(20757),	-- Formula: Brilliant Mana Oil (RECIPE!)
-								i(20756),	-- Formula: Brilliant Wizard Oil (RECIPE!)
-								i(19772),	-- Pattern: Blood Tiger Breastplate
-								i(19773),	-- Pattern: Blood Tiger Shoulders
-								i(19766),	-- Pattern: Bloodvine Boots
-								i(19765),	-- Pattern: Bloodvine Leggings
-								i(19764),	-- Pattern: Bloodvine Vest
-								i(19771),	-- Pattern: Primal Batskin Bracers
-								i(19770),	-- Pattern: Primal Batskin Gloves
-								i(19769),	-- Pattern: Primal Batskin Jerkin
-								i(19776),	-- Plans: Bloodsoul Breastplate (RECIPE!)
-								i(19778),	-- Plans: Bloodsoul Gauntlets (RECIPE!)
-								i(19777),	-- Plans: Bloodsoul Shoulders (RECIPE!)
-								i(19779),	-- Plans: Darksoul Breastplate (RECIPE!)
-								i(19780),	-- Plans: Darksoul Leggings (RECIPE!)
-								i(19781),	-- Plans: Darksoul Shoulders (RECIPE!)
-								i(20012),	-- Recipe: Greater Dreamless Sleep Potion
-								i(20013),	-- Recipe: Living Action Potion
-								i(20011),	-- Recipe: Mageblood Potion
-								i(20014),	-- Recipe: Major Troll's Blood Potion
-								i(20000),	-- Schematic: Bloodvine Goggles
-								i(20001),	-- Schematic: Bloodvine Lens
+								i(20757, {	-- Formula: Brilliant Mana Oil (RECIPE!)
+									["cost"] = {
+										{ "i", 203914, 5 },	-- Zandalar Bargaining Token
+										{ "i", 203767, 5 },	-- Gold Hakkari Bijou
+									},
+								}),
+								i(20756, {	-- Formula: Brilliant Wizard Oil (RECIPE!)
+									["cost"] = {
+										{ "i", 203914, 5 },	-- Zandalar Bargaining Token
+										{ "i", 203767, 5 },	-- Gold Hakkari Bijou
+									},
+								}),
+								i(19772, {	-- Pattern: Blood Tiger Breastplate
+									["cost"] = {
+										{ "i", 203914, 6 },	-- Zandalar Bargaining Token
+										{ "i", 203769, 4 },	-- Orange Hakkari Bijou
+									},
+								}),
+								i(19773, {	-- Pattern: Blood Tiger Shoulders
+									["cost"] = {
+										{ "i", 203914, 6 },	-- Zandalar Bargaining Token
+										{ "i", 203769, 4 },	-- Orange Hakkari Bijou
+									},
+								}),
+								i(19766, {	-- Pattern: Bloodvine Boots
+									["cost"] = {
+										{ "i", 203914, 3 },	-- Zandalar Bargaining Token
+										{ "i", 203770, 7 },	-- Purple Hakkari Bijou
+									},
+								}),
+								i(19765, {	-- Pattern: Bloodvine Leggings
+									["cost"] = {
+										{ "i", 203914, 3 },	-- Zandalar Bargaining Token
+										{ "i", 203770, 7 },	-- Purple Hakkari Bijou
+									},
+								}),
+								i(19764, {	-- Pattern: Bloodvine Vest
+									["cost"] = {
+										{ "i", 203914, 3 },	-- Zandalar Bargaining Token
+										{ "i", 203770, 7 },	-- Purple Hakkari Bijou
+									},
+								}),
+								i(19771, {	-- Pattern: Primal Batskin Bracers
+									["cost"] = {
+										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+										{ "i", 203769, 6 },	-- Orange Hakkari Bijou
+									},
+								}),
+								i(19770, {	-- Pattern: Primal Batskin Gloves
+									["cost"] = {
+										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+										{ "i", 203769, 6 },	-- Orange Hakkari Bijou
+									},
+								}),
+								i(19769, {	-- Pattern: Primal Batskin Jerkin
+									["cost"] = {
+										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+										{ "i", 203769, 6 },	-- Orange Hakkari Bijou
+									},
+								}),
+								i(19776, {	-- Plans: Bloodsoul Breastplate (RECIPE!)
+									["cost"] = {
+										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+										{ "i", 203766, 6 },	-- Bronze Hakkari Bijou
+									},
+								}),
+								i(19778, {	-- Plans: Bloodsoul Gauntlets (RECIPE!)
+									["cost"] = {
+										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+										{ "i", 203766, 6 },	-- Bronze Hakkari Bijou
+									},
+								}),
+								i(19777, {	-- Plans: Bloodsoul Shoulders (RECIPE!)
+									["cost"] = {
+										{ "i", 203914, 7 },	-- Zandalar Bargaining Token
+										{ "i", 203766, 3 },	-- Bronze Hakkari Bijou
+									},
+								}),
+								i(19779, {	-- Plans: Darksoul Breastplate (RECIPE!)
+									["cost"] = {
+										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+										{ "i", 203766, 6 },	-- Bronze Hakkari Bijou
+									},
+								}),
+								i(19780, {	-- Plans: Darksoul Leggings (RECIPE!)
+									["cost"] = {
+										{ "i", 203914, 3 },	-- Zandalar Bargaining Token
+										{ "i", 203766, 7 },	-- Bronze Hakkari Bijou
+									},
+								}),
+								i(19781, {	-- Plans: Darksoul Shoulders (RECIPE!)
+									["cost"] = {
+										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
+										{ "i", 203766, 6 },	-- Bronze Hakkari Bijou
+									},
+								}),
+								i(20012, {	-- Recipe: Greater Dreamless Sleep Potion
+									["cost"] = {
+										{ "i", 203914, 5 },	-- Zandalar Bargaining Token
+										{ "i", 203772, 5 },	-- Silver Hakkari Bijou
+									},
+								}),
+								i(20013, {	-- Recipe: Living Action Potion
+									["cost"] = {
+										{ "i", 203914, 5 },	-- Zandalar Bargaining Token
+										{ "i", 203772, 5 },	-- Silver Hakkari Bijou
+									},
+								}),
+								i(20011, {	-- Recipe: Mageblood Potion
+									["cost"] = {
+										{ "i", 203914, 5 },	-- Zandalar Bargaining Token
+										{ "i", 203772, 5 },	-- Silver Hakkari Bijou
+									},
+								}),
+								i(20014, {	-- Recipe: Major Troll's Blood Potion
+									["cost"] = {
+										{ "i", 203914, 5 },	-- Zandalar Bargaining Token
+										{ "i", 203772, 5 },	-- Silver Hakkari Bijou
+									},
+								}),
+								i(20000, {	-- Schematic: Bloodvine Goggles
+									["cost"] = {
+										{ "i", 203914, 5 },	-- Zandalar Bargaining Token
+										{ "i", 203767, 5 },	-- Gold Hakkari Bijou
+									},
+								}),
+								i(20001, {	-- Schematic: Bloodvine Lens
+									["cost"] = {
+										{ "i", 203914, 5 },	-- Zandalar Bargaining Token
+										{ "i", 203767, 5 },	-- Gold Hakkari Bijou
+									},
+								}),
 							},
 						}),
 					})),
 					n(ZONE_DROPS, {
 						-- #if AFTER 10.0.7
-						i(203765),	-- Blue Hakkari Bijou
-						i(203766),	-- Bronze Hakkari Bijou
-						i(203767),	-- Gold Hakkari Bijou
-						i(203768),	-- Green Hakkari Bijou
-						i(19943),	-- Massive Mojo
-						i(203769),	-- Orange Hakkari Bijou
-						i(203770),	-- Purple Hakkari Bijou
-						i(203771),	-- Red Hakkari Bijou
-						i(203772),	-- Silver Hakkari Bijou
-						i(203773),	-- Yellow Hakkari Bijou
 						i(19706),	-- Bloodscalp Coin
 						i(19701),	-- Gurubashi Coin
 						i(19700),	-- Hakkari Coin
@@ -559,15 +622,34 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 						i(69796, {	-- Spiritcaller Cloak
 						}),
-					}),	
-					n(52442, {	-- Florawing Hive Queen
-						["questID"] = 53809,	-- KillID
-						["isDaily"] = true,
-						["g"] = {
-							i(69817),	-- Hive Queen's Honeycomb
-						},
+						-- "Mini Bosses"
+						n(52442, {	-- Florawing Hive Queen
+							["questID"] = 53809,	-- KillID
+							["isDaily"] = true,
+							["g"] = {
+								i(69817),	-- Hive Queen's Honeycomb
+							},
+						}),
+						n(52392, {	-- Gurubashi Master Chef
+							i(69822),	-- Master Chef's Groceries
+						}),	
+						n(52440, {	-- Gub
+							i(69823),	-- Gub's Catch
+						}),
+						n(52422, {	-- Kaulema
+							i(69818),	-- Giant Sack
+						}),	
+						n(52418, {	-- Lost Offspring of Gahz'ranka
+							i(70719),	-- Water-Filled Gills
+						}),	
+						n(52438, {	-- Mortaxx
+						--	i(52722),	-- Maelstrom Crystal
+						}),							
+						n(52405, {	-- Mor'Lek
+							i(69818),	-- Giant Sack
+						}),
+						n(52414),	-- Tor-Tun	
 					}),
-					n(52414),	-- Tor-Tun
 					cr(52155, e(175, {	-- High Priest Venoxis
 						ach(5743),	-- It's Not Easy Being Green
 						i(69603),	-- Breastplate of Serenity
@@ -576,9 +658,6 @@ _.Instances = { tier(CATA_TIER, {
 						i(69601),	-- Serpentine Leggings
 						i(69602),	-- Signet of Venoxis
 					})),
-					n(52422, {	-- Kaulema
-						i(69818),	-- Giant Sack
-					}),
 					cr(52151, e(176, {	-- Bloodlord Mandokir
 						ach(5762),	-- Ohganot So Fast!
 						i(68823),	-- Armored Razzashi Raptor (MOUNT!)
@@ -588,12 +667,61 @@ _.Instances = { tier(CATA_TIER, {
 						i(69606),	-- Hakkari Loa Drape
 						i(69608),	-- Deathcharged Wristguards
 					})),
-					n(52405, {	-- Mor'Lek
-						i(69818),	-- Giant Sack
-					}),
-					i(203757, 	-- Brazier of Madness
+					o(180327, 	-- Brazier of Madness
 					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
-						["description"] = "Can be looted near the Cache of Madness event, to the left of the altar at 61.2, 45.6.",
+						i(203757, {	-- Brazier of Madness
+							["description"] = "Can be looted near the Cache of Madness event, to the left of the altar at 61.2, 45.6.",
+							["groups"] = {
+								i(203959, {	-- Gurubashi Tribute
+									["description"] = "Behind the 4 Main Bosses is an offering bonepile. It can only be interacted with the 'Succumbed to Madness' Buff, received by using the Gurubashi Mojo Madness potion near the Brazier of Madness Toy. With the buff, you can sacrifice bijous to receive 1-2 recipes and/or 3-7 coins.\n\nVenoxis' available offerings: 2x Silver Bijou / 3x Green Bijou / 3x Gold Bijou. Coords: 51.5, 55.8 Behind the Boss\n\nMandokir's available offerings: 2x Bronze Bijou / 3x Red Bijou / 3x Gold Bijou. Coords: 60.8, 80.9 Right side of Boss\n\nKilnara's available offerings: 2x Orange Bijou / 3x Yellow Bijou / 3x Gold Bijou. Coords: 47.5, 22.1 Behind Boss at the wall\n\nZanzil's available offerings: 2x Purple Bijou / 3x Blue Bijou / 3x Gold Bijou. Coords: 30.4, 19.9 North side of the Boss room, at the left wall.",
+									["sym"] = {
+										{"select","itemID",
+											19706,	-- Bloodscalp Coin
+											19701,	-- Gurubashi Coin
+											19700,	-- Hakkari Coin
+											19699,	-- Razzashi Coin
+											19704,	-- Sandfury Coin
+											19705,	-- Skullsplitter Coin
+											19702,	-- Vilebranch Coin
+											19703,	-- Witherbark Coin
+											19698,	-- Zulian Coin
+											-- blue recipes
+											203842,	-- ancient pattern animists footwraps
+											203843,	-- ancient pattern animists legguards
+											203848,	-- ancient pattern bloodlords embrace
+											203968,	-- ancient pattern cord of shriveled heads
+											203844,	-- ancient pattern gloves of the tormentor
+											203849,	-- ancient pattern gurubashi tigerhide cloak
+											203850,	-- ancient pattern gurubashi headdress
+											203845,	-- ancient pattern junglefury gauntlets
+											203846,	-- ancient pattern junglefury leggings
+											203851,	-- ancient pattern ritualistic legwarmers
+											203835,	-- ancient plans fiery vengeance
+											203825,	-- ancient plans gurubashi carver
+											203828,	-- ancient plans gurubashi grinder
+											203824,	-- ancient plans gurubashi headplate
+											203827,	-- ancient plans gurubashi poker
+											203837,	-- ancient plans gurubashi slicer
+											203832,	-- ancient plans pitchfork of mojo madness
+											203830,	-- ancient plans sceptre of hexing
+											203841,	-- ancient technique gurubashi ceremonial staff
+											203839,	-- ancient technique gurubashi hoodoo stick
+									}},
+									["groups"] = {
+										i(203838),	-- ancient formula: mindslave's reach
+										i(203847),	-- ancient pattern gurubashis grasp
+										i(203833),	-- ancient plans bloodherald
+										i(203834),	-- ancient plans bloodlords reaver
+										i(203831),	-- ancient plans gurubashi crusher
+										i(203829),	-- ancient plans gurubashi hexxer
+										i(203826),	-- ancient plans venomfang
+										i(203861),	-- ancient plans venomreaver
+										i(203836),	-- ancient plans warblades of the hakkari reborn
+										i(203840),	-- ancient technique judgment of the gurubashi
+									},
+								}),
+							},
+						}),
 					})),
 					n(-41,   {			-- Cache of Madness (Requires 225 Archeology)
 						--[[ encounter IDs if we're ever able to use an array for them:
@@ -730,12 +858,6 @@ _.Instances = { tier(CATA_TIER, {
 							recipe(24266),	-- Gurubashi Mojo Madness
 						},
 					})),
-					n(52438, {	-- Mortaxx
-						i(52722),	-- Maelstrom Crystal
-					}),
-					n(52392, {	-- Gurubashi Master Chef
-						i(69822),	-- Master Chef's Groceries
-					}),
 					cr(52059, e(181, {	-- High Priestess Kilnara
 						ach(5765),	-- Here, Kitty Kitty...
 						i(68824),	-- Swift Zulian Panther (MOUNT!)
@@ -752,12 +874,20 @@ _.Instances = { tier(CATA_TIER, {
 						i(69619),	-- Bone Plate Handguards
 						i(69615),	-- Zombie Walker Legguards
 					})),
-					n(52440, {	-- Gub
-						i(69823),	-- Gub's Catch
-					}),
-					n(52418, {	-- Lost Offspring of Gahz'ranka
-						i(70719),	-- Water-Filled Gills
-					}),
+					o(00000,	-- Fragmented Hakkari Bijou
+					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+						["description"] = "The first Bijou named 'Fragmented Hakkari Bijou' is near the gong in the middle of the pyramid at roughly 48.6, 42.3.",
+						["groups"] = {
+							i(203736),	-- Fragmented Hakkari Bijou
+						},
+					})),
+					o(00000,	-- Shattered Hakkari Bijou
+					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+						["description"] = "The second Bijou named 'Shattered Hakkari Bijou' is at the same spot, but during phase 2 of the Jin'do Boss Encounter. In the middle of the pyramid at roughly 48.6, 42.3 ",
+						["groups"] = {
+							i(203735),	-- Shattered Hakkari Bijou
+						},	
+					})),
 					cr(52148, e(185, {	-- Jin'do the Godbreaker
 						ach(5768),	-- Heroic: Zul'Gurub
 						ach(5770),	-- Heroic: Zul'Gurub Guild Run
