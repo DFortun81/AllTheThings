@@ -16720,13 +16720,13 @@ RowOnEnter = function (self)
 			local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
 			if total then GameTooltip:AddLine(tostring(progress) .. " / " .. tostring(total) .. L["COLLECTED_STRING"]); end
 			
-			if progress > 0 and app.Settings:GetTooltipSetting("PetBattleQuality") then
+			if progress > 0 and app.Settings:GetTooltipSetting("BattlePetQuality") then
 				local speciesName = C_PetJournal.GetPetInfoBySpeciesID(reference.speciesID);
 				
 				-- Set the journal search filter to the pet name and the category for example duskwood or in-game shop
 				-- This is done so we limit how many pets will show up.
 				-- If category text is formatted we only search for name since the formatting will break the search
-				if string.find(reference.parent.parent.text, "|") == nil then
+				if reference.parent ~= nil and string.find(reference.parent.parent.text, "|") == nil then
 					C_PetJournal.SetSearchFilter(speciesName .. " " .. reference.parent.parent.text);
 				else
 					C_PetJournal.SetSearchFilter(speciesName);

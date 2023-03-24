@@ -3943,9 +3943,9 @@ end);
 ShowCompletedByCheckBox:SetATTTooltip(L["COMPLETED_BY_CHECKBOX_TOOLTIP"]);
 ShowCompletedByCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsWithWrappingCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowPetBattleQualityCheckBox = settings:CreateCheckBox(L["PET_BATTLE_QUALITY_CHECKBOX"],
+local ShowBattlePetQualityCheckBox = settings:CreateCheckBox(L["BATTLE_PET_QUALITY_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("PetBattleQuality"));
+	self:SetChecked(settings:GetTooltipSetting("BattlePetQuality"));
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -3955,10 +3955,10 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetTooltipSetting("PetBattleQuality", self:GetChecked());
+	settings:SetTooltipSetting("BattlePetQuality", self:GetChecked());
 end);
-ShowPetBattleQualityCheckBox:SetATTTooltip(L["PET_BATTLE_QUALITY_TOOLTIP"]);
-ShowPetBattleQualityCheckBox:SetPoint("TOPLEFT", ShowCompletedByCheckBox, "BOTTOMLEFT", 0, 4);
+ShowBattlePetQualityCheckBox:SetATTTooltip(L["BATTLE_PET_QUALITY_TOOLTIP"]);
+ShowBattlePetQualityCheckBox:SetPoint("TOPLEFT", ShowCompletedByCheckBox, "BOTTOMLEFT", 0, 4);
 
 local AdditionalLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 AdditionalLabel:SetPoint("TOP", TooltipLabel, "TOP", 0, 0);
