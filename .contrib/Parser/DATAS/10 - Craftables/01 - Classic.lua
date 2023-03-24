@@ -228,9 +228,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7915),	-- Barbaric Iron Helm
 			i(7913),	-- Barbaric Iron Shoulders
 			applyclassicphase(PHASE_FIVE, i(22194)),	-- Black Grasp of the Destroyer
-			applyclassicphase(PHASE_FOUR, i(19690, {["timeline"]={"removed 4.0.3"}})),	-- Bloodsoul Breastplate
-			applyclassicphase(PHASE_FOUR, i(19692, {["timeline"]={"removed 4.0.3"}})),	-- Bloodsoul Gauntlets
-			applyclassicphase(PHASE_FOUR, i(19691, {["timeline"]={"removed 4.0.3"}})),	-- Bloodsoul Shoulders
+			applyclassicphase(PHASE_FOUR, i(19690, {["timeline"] = { "removed 4.0.3", "added 10.0.7" }})),	-- Bloodsoul Breastplate
+			applyclassicphase(PHASE_FOUR, i(19692, {["timeline"] = { "removed 4.0.3", "added 10.0.7" }})),	-- Bloodsoul Gauntlets
+			applyclassicphase(PHASE_FOUR, i(19691, {["timeline"] = { "removed 4.0.3", "added 10.0.7" }})),	-- Bloodsoul Shoulders
 			i(2853),	-- Copper Bracers
 			i(2851),	-- Copper Chain Belt
 			i(3469),	-- Copper Chain Boots
@@ -242,9 +242,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_FOUR, i(20550)),	-- Darkrune Breastplate
 			applyclassicphase(PHASE_FOUR, i(20549)),	-- Darkrune Gauntlets
 			applyclassicphase(PHASE_FOUR, i(20551)),	-- Darkrune Helm
-			applyclassicphase(PHASE_FOUR, i(19693, {["timeline"]={"removed 4.0.3"}})),	-- Darksoul Breastplate
-			applyclassicphase(PHASE_FOUR, i(19694, {["timeline"]={"removed 4.0.3"}})),	-- Darksoul Leggings
-			applyclassicphase(PHASE_FOUR, i(19695, {["timeline"]={"removed 4.0.3"}})),	-- Darksoul Shoulders
+			applyclassicphase(PHASE_FOUR, i(19693, {["timeline"] = { "removed 4.0.3", "added 10.0.7" }})),	-- Darksoul Breastplate
+			applyclassicphase(PHASE_FOUR, i(19694, {["timeline"] = { "removed 4.0.3", "added 10.0.7" }})),	-- Darksoul Leggings
+			applyclassicphase(PHASE_FOUR, i(19695, {["timeline"] = { "removed 4.0.3", "added 10.0.7" }})),	-- Darksoul Shoulders
 			applyclassicphase(TBC_PHASE_ONE, i(12625, {["timeline"]={"added 2.0.1"}})),	-- Dawnbringer Shoulders
 			i(3474),	-- Gemmed Copper Gauntlets
 			applyclassicphase(PHASE_THREE, i(19051)),	-- Girdle of the Dawn
@@ -786,6 +786,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		applyclassicphase(PHASE_FIVE, cat(699, {	-- Oils
 			i(20748, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Mana Oil / 10.0.7: Expired Mana Oil
 			i(20749, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Wizard Oil / 10.0.7: Expired Wizard Oil
+			i(203862, {["timeline"]={"added 10.0.7"}}),	-- Brilliant Mana Oil 
+			i(203865, {["timeline"]={"added 10.0.7"}}),	-- Brilliant Wizard Oil 
 			i(20747),	-- Lesser Mana Oil
 			i(20746),	-- Lesser Wizard Oil
 			i(20745),	-- Minor Mana Oil
@@ -1049,10 +1051,10 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		}),
 		category(185, {	-- Goggles
 			applyclassicphase(PHASE_FOUR, i(19999, {	-- Bloodvine Goggles
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 			})),
 			applyclassicphase(PHASE_FOUR, i(19998, {	-- Bloodvine Lens
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 			})),
 			i(10499),	-- Bright-Eye Goggles
 			i(10501),	-- Catseye Ultra Goggles
@@ -1926,7 +1928,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			category(252, {	-- Shoulder
 				i(5964),	-- Barbaric Shoulders
 				applyclassicphase(PHASE_FOUR, i(19689, {	-- Blood Tiger Shoulders
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 				})),
 				i(4252),	-- Dark Leather Shoulders
 				i(7352),	-- Earthen Leather Shoulders
@@ -1951,7 +1953,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(8200),	-- Big Voodoo Robe
 				i(20575),	-- Black Whelp Tunic
 				applyclassicphase(PHASE_FOUR, i(19688, {	-- Blood Tiger Breastplate
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 				})),
 				-- #if AFTER TBC
 				i(15075),	-- Chimeric Vest
@@ -1988,7 +1990,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 					["timeline"] = { "removed 3.0.1" },
 				})),
 				applyclassicphase(PHASE_FOUR, i(19685, {	-- Primal Batskin Jerkin
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 				})),
 				{
 					["itemID"] = 4455,	-- Raptor Hide Harness (Horde only)
@@ -2025,7 +2027,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 					["timeline"] = { "removed 3.0.1" },
 				})),
 				applyclassicphase(PHASE_FOUR, i(19687, {	-- Primal Batskin Bracers
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 				})),
 				i(15092),	-- Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
 				i(15084),	-- Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
@@ -2063,7 +2065,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 					["timeline"] = { "removed 3.0.1" },
 				})),
 				applyclassicphase(PHASE_FOUR, i(19686, {	-- Primal Batskin Gloves
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 				})),
 				i(7284),	-- Red Whelp Gloves
 				i(15091),	-- Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
@@ -2435,10 +2437,10 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(11512),	-- Patch of Tainted Skin
 			i(6471),	-- Perfect Deviate Scale
 			applyclassicphase(PHASE_FOUR, i(19767, {	-- Primal Bat Leather
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 			})),
 			applyclassicphase(PHASE_FOUR, i(19768, {	-- Primal Tiger Leather
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 			})),
 			i(12731, {	-- Pristine Hide of the Beast
 				["timeline"] = { "removed 6.0.2" },
@@ -2538,7 +2540,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(10001),	-- Black Mageweave Robe
 			i(9998),	-- Black Mageweave Vest
 			applyclassicphase(PHASE_FOUR, i(19682, {	-- Bloodvine Vest
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 			})),
 			i(6242),	-- Blue Linen Robe
 			i(6240),	-- Blue Linen Vest
@@ -2671,7 +2673,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7046),	-- Azure Silk Pants
 			i(9999),	-- Black Mageweave Leggings
 			applyclassicphase(PHASE_FOUR, i(19683, {	-- Bloodvine Leggings
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 			})),
 			i(14104),	-- Brightcloth Pants
 			i(4343),	-- Brown Linen Pants
@@ -2702,7 +2704,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_THREE, i(19056)),	-- Argent Boots
 			i(10026),	-- Black Mageweave Boots
 			applyclassicphase(PHASE_FOUR, i(19684, {	-- Bloodvine Boots
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 			})),
 			i(4325),	-- Boots of the Enchanter
 			i(10044),	-- Cindercloth Boots
