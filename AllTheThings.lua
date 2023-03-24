@@ -16827,8 +16827,8 @@ RowOnEnter = function (self)
 					elseif _ == "c" then
 						amount = v[3];
 						local currencyData = C_CurrencyInfo.GetCurrencyInfo(v[2]);
-						name = C_CurrencyInfo.GetCurrencyLink(v[2], amount) or currencyData.name or "Unknown";
-						icon = currencyData.iconFileID or nil;
+						name = C_CurrencyInfo.GetCurrencyLink(v[2], amount) or (currencyData and currencyData.name) or "Unknown";
+						icon = currencyData and currencyData.iconFileID or nil;
 						if amount > 1 then
 							amount = formatNumericWithCommas(amount) .. "x ";
 						else
