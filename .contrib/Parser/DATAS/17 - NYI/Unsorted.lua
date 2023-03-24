@@ -2670,13 +2670,10 @@ root(ROOTS.Unsorted, {
 				i(204233),	-- Impenetrable Elemental Core
 			}),
 			filter(TOYS, {
-				i(204675),	-- A Drake's Big Basket of Eggs (TOY!)
-				i(203757),	-- Brazier of Madness (TOY!)
 				i(204170),	-- Clan Banner (TOY!)
 				i(202360),	-- Dented Can (TOY!)
 				i(204220),	-- Hraxian's Unbreakable Will (TOY!)
 				i(204687),	-- Obsidian Battle Horn (TOY!)
-				i(203734),	-- Snow Blanket (TOY!)
 			}),
 			n(WEAPONS, {
 				i(204674),	-- Cursed Demonbone Longbow
