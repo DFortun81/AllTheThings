@@ -3131,6 +3131,7 @@ local keys = {
 		["74115"] = "Inscription Order: Tailoring",
 		["74477"] = "First Craft: Ancient Ceremonial Trident",
 		["74481"] = "First Craft: Arcane Dispelling Rune",
+		["74579"] = "Daily Zul'Gurub Cache",
 	},
 }
 

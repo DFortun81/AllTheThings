@@ -165,7 +165,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(19704),	-- Sandfury Coin
 						i(19705),	-- Skullsplitter Coin
 						i(19702),	-- Vilebranch Coin
-						i(203742, {	-- Waterlooged Gurubashi Cache
+						i(203742, bubbleDownSelf({ ["modID"] = 2 }, {	-- Waterlooged Gurubashi Cache
 							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly get near the water.",
 							["sym"] = {
 								{"select","itemID",
@@ -195,7 +195,7 @@ _.Instances = { tier(CATA_TIER, {
 								i(19947),	-- Nat Pagle's Broken Reel
 								i(22739),	-- TOME_OF_POLYMORPH_TURTLE,
 							},
-						}),
+						})),
 						i(19703),	-- Witherbark Coin
 						i(19698),	-- Zulian Coin
 					})),
