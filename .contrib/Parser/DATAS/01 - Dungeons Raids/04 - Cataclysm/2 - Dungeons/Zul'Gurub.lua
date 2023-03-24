@@ -920,14 +920,18 @@ _.Instances = { tier(CATA_TIER, {
 					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
 						["description"] = "The first Bijou named 'Fragmented Hakkari Bijou' is near the gong in the middle of the pyramid at roughly 48.6, 42.3.",
 						["groups"] = {
-							i(203736),	-- Fragmented Hakkari Bijou
+							i(203736, {	-- Fragmented Hakkari Bijou
+								i(203737),	-- Restored Hakkari Bijou
+							}),
 						},
 					})),
 					o(00000,	-- Shattered Hakkari Bijou
 					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
 						["description"] = "The second Bijou named 'Shattered Hakkari Bijou' is at the same spot, but during phase 2 of the Jin'do Boss Encounter. In the middle of the pyramid at roughly 48.6, 42.3 ",
 						["groups"] = {
-							i(203735),	-- Shattered Hakkari Bijou
+							i(203735, {	-- Shattered Hakkari Bijou
+								i(203737),	-- Restored Hakkari Bijou
+							}),
 						},	
 					})),
 					cr(52148, e(185, {	-- Jin'do the Godbreaker

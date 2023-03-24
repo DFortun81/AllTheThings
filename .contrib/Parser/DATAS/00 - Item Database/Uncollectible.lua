@@ -26,6 +26,8 @@ i(200788);	-- Mantacorn Horns
 i(200843);	-- Severely Chipped Broadsword
 i(200801);	-- Gilded Statuette
 i(200779);	-- Lava Jars
+i(203988);	-- Warshard of the Hakkari, Unborn
+i(203989);	-- Warshard of the Hakkari, Unborn
 
 -- SL
 i(179293);	-- Glimmering Facial Cream

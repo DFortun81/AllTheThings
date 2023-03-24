@@ -1714,6 +1714,13 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(20832),	-- Moonsoul Crown
 			i(20969),	-- Ruby Crown of Restoration
 		}),
+		-- #if AFTER 10.0.7
+		filter(COSMETIC, {
+			i(204404, {	-- Square Holders
+				["timeline"] = { "added 10.0.7" },
+			}),
+		}),
+		-- #endif
 		filter(TRINKET_F, {
 			i(21784),	-- Figurine - Black Diamond Crab
 			i(21758),	-- Figurine - Black Pearl Panther
