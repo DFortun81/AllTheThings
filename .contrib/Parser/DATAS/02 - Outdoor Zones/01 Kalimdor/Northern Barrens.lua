@@ -10,7 +10,7 @@ local OnTooltipForRatchet = [[function(t)
 			local repPerKill = isHuman and 5.5 or 5;
 			local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(84000 / repPerKill);
 			GameTooltip:AddDoubleLine("Kill Pirates near Ratchet", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			
+
 			local repPerKill = isHuman and 2.75 or 2.5;
 			local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(84000 / repPerKill);
 			GameTooltip:AddDoubleLine("Kill Pirates in Tanaris", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
@@ -20,7 +20,7 @@ local OnTooltipForRatchet = [[function(t)
 				local x, n = math.ceil((20999 - t.reputation) / repPerKill), math.ceil(20999 / repPerKill);
 				GameTooltip:AddDoubleLine("Kill Pirates near Ratchet (To 11999 Honored)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 			end
-			
+
 			local repPerKill = isHuman and 2.75 or 2.5;
 			local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(42000 / repPerKill);
 			GameTooltip:AddDoubleLine("Kill Pirates in Tanaris", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
@@ -90,26 +90,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(635, {	-- Adder
-					["crs"] = { 61325 },	-- Adder
-				}),
-				p(474, {	-- Cheetah Cub
-					["crs"] = { 62129 },	-- Cheetah Cub
-					["description"] = "Can be found under large trees alongside Plainsland Cheetahs.",
-				}),
-				p(631, {	-- Emerald Boa
-					["crs"] = { 62127 },	-- Emerald Boa
-				}),
-				p(1157, {	-- Harpy Youngling
-					["crs"] = { 68804 },	-- Harpy Youngling
-					["description"] = "Can be found at The Dry Hills, alongside Witchwing Harpies.",
-				}),
-				p(386, {	-- Prairie Dog
-					["crs"] = { 61141 },	-- Prairie Dog
-				}),
-				p(419, {	-- Small Frog
-					["crs"] = { 61071 },	-- Small Frog
-				}),
+				["sym"] = {{"select","speciesID",
+					635,	-- Adder
+				}},
+				["groups"] = {
+					p(474, {	-- Cheetah Cub
+						["crs"] = { 62129 },	-- Cheetah Cub
+						["description"] = "Can be found under large trees alongside Plainsland Cheetahs.",
+					}),
+					p(631, {	-- Emerald Boa
+						["crs"] = { 62127 },	-- Emerald Boa
+					}),
+					p(1157, {	-- Harpy Youngling
+						["crs"] = { 68804 },	-- Harpy Youngling
+						["description"] = "Can be found at The Dry Hills, alongside Witchwing Harpies.",
+					}),
+					p(386, {	-- Prairie Dog
+						["crs"] = { 61141 },	-- Prairie Dog
+					}),
+					p(419, {	-- Small Frog
+						["crs"] = { 61071 },	-- Small Frog
+					}),
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

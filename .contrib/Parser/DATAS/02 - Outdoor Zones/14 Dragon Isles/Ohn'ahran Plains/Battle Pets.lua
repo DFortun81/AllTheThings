@@ -5,10 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 	m(OHNAHRAN_PLAINS, {
 		petbattle(filter(BATTLE_PETS, {
 			pet(3266, {	-- Black Slyvern Pup (PET!)
-				["cr"] = 189160,	-- Black Slyvern Pup
-				["coords"] = {
-					{ 64.0, 26.0, OHNAHRAN_PLAINS, },
-				},
+				["coord"] = { 64.0, 26.0, OHNAHRAN_PLAINS, },
 			}),
 			pet(3327, {	-- Dusky Timbertooth (PET!)
 				["description"] = "You have to click on the |cFFefc400Beaver Dam|r before you can battle this pet.",

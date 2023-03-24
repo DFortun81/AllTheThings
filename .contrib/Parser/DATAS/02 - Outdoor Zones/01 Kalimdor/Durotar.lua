@@ -1561,27 +1561,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(635, {	-- Adder
-					["crs"] = { 61325 },	-- Adder
-				}),
-				p(468, {	-- Creepy Crawly
-					["crs"] = { 62116 },	-- Creepy Crawly
-				}),
-				p(467, {	-- Dung Beetle
-					["crs"] = { 62115 },	-- Dung Beetle
-				}),
-				p(448, {	-- Hare
-					["crs"] = { 61751 },	-- Hare
-				}),
-				p(466, {	-- Spiny Lizard
-					["crs"] = { 62114 },	-- Spiny Lizard
-				}),
-				p(420, {	-- Toad
-					["crs"] = { 61369 },	-- Toad
-				}),
-				p(418, {	-- Water Snake
-					["crs"] = { 61367 },	-- Water Snake
-				}),
+				pet(635),	-- Adder
+				pet(468),	-- Creepy Crawly
+				pet(467),	-- Dung Beetle
+				pet(448),	-- Hare
+				pet(466),	-- Spiny Lizard
+				pet(420),	-- Toad
+				pet(418),	-- Water Snake
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

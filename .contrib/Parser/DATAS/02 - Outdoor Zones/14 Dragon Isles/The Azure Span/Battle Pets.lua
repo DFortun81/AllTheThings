@@ -4,9 +4,7 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
 		petbattle(filter(BATTLE_PETS, {
-			pet(3357, {	-- Azure Crystalspine (PET!)
-				["cr"] = 192265,	-- Azure Crystalspine
-			}),
+			pet(3357),	-- Azure Crystalspine (PET!)
 			pet(3356, {	-- Chalkshell Turtle (PET!)
 				["description"] = "Talk to |cFFefc400Lani|r and use the extra action button to spawn this pet.",
 				["crs"] = {

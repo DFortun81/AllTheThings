@@ -5,10 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 	m(THALDRASZUS, {
 		petbattle(filter(BATTLE_PETS, {
 			pet(3403, {	-- Blue Dasher (PET!)
-				["cr"] = 197629,	-- Blue Dasher
-				["coords"] = {
-					{ 37.8, 79.8, THALDRASZUS },
-				},
+				["coord"] = { 37.8, 79.8, THALDRASZUS },
 			}),
 			pet(3358, {	-- Crimsonspine (PET!)
 				["cr"] = 192268,	-- Crimsonspine

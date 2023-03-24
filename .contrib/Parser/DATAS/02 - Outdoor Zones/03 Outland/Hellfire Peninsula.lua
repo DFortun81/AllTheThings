@@ -296,12 +296,14 @@ root(ROOTS.Zones, {
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
-					p(635, {	-- Adder
-						["cr"] = 61325,	-- Adder
-					}),
-					p(414, {	-- Scorpid
-						["cr"] = 61326,	-- Scorpid
-					}),
+					["sym"] = {{"select","speciesID",
+						635,	-- Adder
+					}},
+					["groups"] = {
+						p(414, {	-- Scorpid
+							["cr"] = 61326,	-- Scorpid
+						}),
+					},
 				})),
 				-- #endif
 				-- #if ANYCLASSIC
