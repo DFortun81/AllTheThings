@@ -106,10 +106,41 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			i(202872),	-- Token of Blessing (Sealed Spirit Scroll)
 		}),
 	}),
-})))
+})));
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
-	n(THE_FORBIDDEN_REACH, {
-		q(74567),	-- Chest of Storms tracking quest
+	m(THE_FORBIDDEN_REACH, {
+		n(TREASURES, {
+			q(74567),	-- Chest of Storms tracking quest
+			header(HEADERS.Item, 202667, {	-- Sealed Artifact Scroll
+				q(73200),
+				q(73201),
+				q(73202),
+				q(73203),
+				-- q(73204),	-- guessed
+				-- q(73205),	-- guessed
+			}),
+			header(HEADERS.Item, 202669, {	-- Sealed Fish Scroll
+				-- q(73211),	-- guessed
+				-- q(73212),	-- guessed
+				q(73213),
+				q(73214),
+				-- q(73215),	-- guessed
+			}),
+			header(HEADERS.Item, 202670, {	-- Sealed Knowledge Scroll
+				q(73216),
+				-- q(73217),	-- guessed
+				-- q(73218),	-- guessed
+				q(73219),
+				-- q(73220),	-- guessed
+			}),
+			header(HEADERS.Item, 202668, {	-- Sealed Spirit Scroll
+				q(73206),
+				q(73207),
+				q(73208),
+				-- q(73209),	-- guessed
+				-- q(73210),	-- guessed
+			}),
+		}),
 	}),
-})))
+})));

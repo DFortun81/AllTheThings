@@ -240,47 +240,47 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["g"] = {
 					i(203426, {	-- Design: Crystal Tuning Fork (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203423, {	-- Formula: Glowing Crystal Bookmark (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203427, {	-- Pattern: Reinforced Pristine Leather (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203428, {	-- Pattern: Traditional Morqut Kite (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203421, {	-- Plans: Ancient Ceremonial Trident (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203420, {	-- Recipe: Draconic Suppression Powder (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203422, {	-- Recipe: Sparkling Spice Pouch (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203424, {	-- Schematic: Gnomish Voicebox (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203425, {	-- Technique: Arcane Dispelling Rune (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 				},

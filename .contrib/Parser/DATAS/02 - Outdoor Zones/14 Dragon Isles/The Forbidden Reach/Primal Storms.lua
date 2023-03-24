@@ -7,21 +7,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			n(ACHIEVEMENTS, {
 				ach(17540, {	-- Under the Weather
 					crit(1, {	-- Air
-						--["questID"] = 75402,
 						["_npcs"] = { 198914 },	-- Han'thul
 					}),
 					crit(2, {	-- Earth
-						--["questID"] = 75401,
 						["_npcs"] = { 198915 },	-- Khirna Cragheart
 					}),
 					crit(3, {	-- Fire
-						--["questID"] = 75400,
 						["_npcs"] = { 198916 },	-- Fael'lin
 					}),
 					crit(4, {	-- Water
-						--["questID"] = 75399,
 						["_npcs"] = { 198917 },	-- Shukoro Rapidstamer
 					}),
+				}),
+			}),
+			n(COMMON_BOSS_DROPS, {
+				i(204352, {	-- Leftover Elemental Slime
+					["crs"] = {
+						198914,	-- Han'thul
+						198915,	-- Khirna Cragheart
+						198916,	-- Fael'lin
+						198917,	-- Shukoro Rapidstamer
+					},
 				}),
 			}),
 			n(RARES, {
@@ -43,9 +49,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["cost"] = { { "i", 204352, 50 }, },	-- 50x Leftover Elemental Slime
 				}),
 			}),
-			n(ZONE_DROP, {
-				i(204352),	-- Leftover Elemental Slime
-			}),
+		}),
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+	m(THE_FORBIDDEN_REACH, {
+		n(PRIMAL_STORMS, {
+			q(75399),	-- Water Storm Mini-Boss
+			q(75400),	-- Fire Storm Mini-Boss
+			q(75401),	-- Earth Storm Mini-Boss
+			q(75402),	-- Air Storm Mini-Boss
 		}),
 	}),
 })));

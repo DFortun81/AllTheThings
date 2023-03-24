@@ -2503,9 +2503,6 @@ root(ROOTS.Unsorted, {
 				i(204268),	-- Gilnean Trainee's Cord
 				i(204269),	-- Gilnean Trainee's Wristwraps
 				--
-				i(203647),	-- Primalist Ring
-				i(203648),	-- Primalist Necklace
-				i(203649),	-- Primalist Trinket
 				--
 				i(204192),	-- Ascendancy
 				i(203680),	-- Totem Toss
@@ -2850,25 +2847,15 @@ root(ROOTS.Unsorted, {
 				q(73186),
 				q(73187),
 				q(73194),
-				q(73200),
-				q(73201),
-				q(73202),
-				q(73203),
 				q(73204),
 				q(73205),
-				q(73206),
-				q(73207),
-				q(73208),
 				q(73209),
 				q(73210),
 				q(73211),
 				q(73212),
-				q(73214),
 				q(73215),
 				q(73217),
 				q(73218),
-				q(73219),
-				q(73229),
 				q(73547),
 				q(73550),
 				q(73692),
@@ -2894,11 +2881,9 @@ root(ROOTS.Unsorted, {
 				q(74435),
 				q(74472),
 				q(74473),
-				q(74477),
 				q(74478),
 				q(74479),
 				q(74480),
-				q(74481),
 				q(74482),
 				q(74483),
 				q(74484),

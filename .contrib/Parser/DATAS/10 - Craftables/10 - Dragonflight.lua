@@ -434,6 +434,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			-- Dragon Riding
 			q(71342, { ["name"] = "First Craft: Prototype Explorer's Barding Framework", }),	-- Prototype Explorer's Barding Framework
 			q(71343, { ["name"] = "First Craft: Prototype Regal Barding Framework", }),	-- Prototype Regal Barding Framework
+			q(74477, { ["name"] = "First Craft: Ancient Ceremonial Trident", }),	-- Prototype Regal Barding Framework
 		})),
 		filter(MISC, {
 			i(203408, {["timeline"]={ADDED_DF_0_7}}),	-- Ancient Ceremonial Trident
@@ -1442,6 +1443,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71534, { ["name"] = "First Craft: Highland Drake: Black Hair", }),
 			q(71587, { ["name"] = "First Craft: Chef's Splendid Rolling Pin", }),
 			q(71541, { ["name"] = "First Craft: Renewed Proto-Drake: Steel and Yellow Armor", }),
+			q(74481, { ["name"] = "First Craft: Arcane Dispelling Rune", }),
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)

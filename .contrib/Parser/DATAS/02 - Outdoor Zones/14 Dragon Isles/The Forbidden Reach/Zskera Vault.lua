@@ -1026,11 +1026,11 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(74748),	-- Triggered when looting Recipe Rat along with 74509
 		q(75127),	-- Triggered when earning "Every Door, Everywhere, All At Once"
 		q(75490),	-- Triggered when fishing up Dormant Primordial Fragment from Disgusting Vat
-		q(75159),	-- Triggered when fishing up Neltharion Gift Toekn from Disgusting Vat
+		q(75159),	-- Triggered when fishing up Neltharion Gift Token from Disgusting Vat
 		q(75488),	-- Triggered when fishing up Emmah from Disgusting Vat
 		q(75158),	-- Triggered when fishing up Prismatic Fragment from Disgusting Vat
 		q(75489),	-- Triggered when fishing up Dormant Primordial Fragment #2 from Disgusting Vat
-		
+
 
 		-- TODO: See if these need to be associated with treasures
 		q(75500),	-- Looted spider cocoon in a vault room

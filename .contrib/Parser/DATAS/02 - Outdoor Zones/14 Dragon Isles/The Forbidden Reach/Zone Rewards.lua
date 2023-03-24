@@ -145,6 +145,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					i(199312),	-- Staff of Raging Tempests
 				}),
 			}),
+			filter(NECK_F, {
+				i(203648, {	-- Primalist Necklace
+					["sym"] = {{"select","itemID",
+						201962,	-- Heat of Primal Winter
+					}},
+				}),
+			}),
+			filter(FINGER_F, {
+				i(203647, {	-- Primalist Ring
+				}),
+			}),
+			filter(TRINKET_F, {
+				i(203649, {	-- Primalist Trinket
+					["sym"] = {{"select","itemID",
+						202015,	-- Sands of Temporal Perfection
+					}},
+				})
+			}),
 		}),
 	}),
 })));
