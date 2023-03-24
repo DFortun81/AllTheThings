@@ -83,6 +83,15 @@ _.Instances = { tier(CATA_TIER, {
 									203773,	-- Yellow Hakkari Bijou
 							}},
 						}),
+						i(203765),	-- Blue Hakkari Bijou
+						i(203766),	-- Bronze Hakkari Bijou
+						i(203767),	-- Gold Hakkari Bijou
+						i(203768),	-- Green Hakkari Bijou
+						i(203769),	-- Orange Hakkari Bijou
+						i(203770),	-- Purple Hakkari Bijou
+						i(203771),	-- Red Hakkari Bijou
+						i(203772),	-- Silver Hakkari Bijou
+						i(203773),	-- Yellow Hakkari Bijou
 					})),
 					prof(FISHING, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 						i(19706),	-- Bloodscalp Coin
@@ -156,6 +165,31 @@ _.Instances = { tier(CATA_TIER, {
 						i(19704),	-- Sandfury Coin
 						i(19705),	-- Skullsplitter Coin
 						i(19702),	-- Vilebranch Coin
+						i(203742, {	-- Waterlooged Gurubashi Cache
+							["questID"] = 74579,
+							["isDaily"] = true,
+							["sym"] = {
+								{"select","itemID",
+									203765,	-- Blue Hakkari Bijou
+									203766,	-- Bronze Hakkari Bijou
+									203767,	-- Gold Hakkari Bijou
+									203768,	-- Green Hakkari Bijou
+									203769,	-- Orange Hakkari Bijou
+									203770,	-- Purple Hakkari Bijou
+									203771,	-- Red Hakkari Bijou
+									203772,	-- Silver Hakkari Bijou
+									203773,	-- Yellow Hakkari Bijou
+									19706,	-- Bloodscalp Coin
+									19701,	-- Gurubashi Coin
+									19700,	-- Hakkari Coin
+									19699,	-- Razzashi Coin
+									19704,	-- Sandfury Coin
+									19705,	-- Skullsplitter Coin
+									19702,	-- Vilebranch Coin
+									19703,	-- Witherbark Coin
+									19698,	-- Zulian Coin
+							}},
+						}),
 						i(19703),	-- Witherbark Coin
 						i(19698),	-- Zulian Coin
 					})),
