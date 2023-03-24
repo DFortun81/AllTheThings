@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["g"] = bubbleDown({
 					["cost"] = { { "i", 204276, 1 } },	-- Untapped Forbidden Knowledge
 					["modID"] = 14,
-					["bonusID"] = 8943,
+					["bonusID"] = 9344,
 				},{
 					n(BACK, {
 						i(199450),	-- Cape of Raging Tempests
