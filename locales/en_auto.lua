@@ -3129,6 +3129,8 @@ local keys = {
 		["74113"] = "Inscription Order: Leatherworking",
 		["74114"] = "Inscription Order: Skinning",
 		["74115"] = "Inscription Order: Tailoring",
+		["74477"] = "First Craft: Ancient Ceremonial Trident",
+		["74481"] = "First Craft: Arcane Dispelling Rune",
 	},
 }
 
