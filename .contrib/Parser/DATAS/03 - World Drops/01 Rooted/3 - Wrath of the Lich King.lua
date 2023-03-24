@@ -1160,7 +1160,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(41779, {	-- Design: Stalwart Monarch Topaz
 				["timeline"] = { "removed 4.0.3" },
 			}),
-			-- #if AFTER CATA
+			-- #if BEFORE CATA
 			i(41785, {	-- Design: Tenuous Twilight Opal [WRATH] / Design: Glinting Twilight Opal [CATA+]
 				["timeline"] = { "removed 4.0.3" },
 			}),

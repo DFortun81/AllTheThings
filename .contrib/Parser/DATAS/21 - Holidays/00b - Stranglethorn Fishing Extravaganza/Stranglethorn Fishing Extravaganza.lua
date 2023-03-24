@@ -52,7 +52,7 @@ root(ROOTS.Holidays, applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, {
 				["requireSkill"] = FISHING,
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-				["lvl"] = lvlsquish(35, 15, 35),
+				["lvl"] = lvlsquish(35, 35, 15),
 				["groups"] = {
 					i(19978),	-- Fishing Tournament!
 				},
@@ -63,7 +63,7 @@ root(ROOTS.Holidays, applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, {
 				["requireSkill"] = FISHING,
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
-				["lvl"] = lvlsquish(35, 15, 35),
+				["lvl"] = lvlsquish(35, 35, 15),
 				["groups"] = {
 					i(19978),	-- Fishing Tournament!
 				},

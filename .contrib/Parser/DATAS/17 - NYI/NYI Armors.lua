@@ -6,14 +6,6 @@
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(CLASSIC_TIER, {
 		n(ARMOR, {
-			cl(ROGUE, {
-				i(7950),	-- Armor of Thero-Shan
-				i(7948),	-- Girdle of Thero-Shan
-				i(7952),	-- Boots of Thero-Shan
-				i(7951),	-- Hands of Thero-Shan
-				i(7953),	-- Mask of Thero-Shan
-				i(7949),	-- Leggings of Thero-Shan
-			}),
 			n(BACK, {
 				i(22230),	-- Frightmaw Hide
 			}),
@@ -2063,7 +2055,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(DF_TIER, {
 		n(ARMOR, {
 			n(BACK, {
-				tier(DF_TIER, 0.01, {
+				-- 10.0.0
+				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
 					i(189669),	-- 10.0 Dungeon Template - Generic - Cloak
 					i(189061),	-- 10.0 End Game Template <Descriptor> Shawl
 					i(192038),	-- 10.0 PH Dragonscale Expedition Shawl
@@ -2071,10 +2064,13 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189101),	-- 10.0 QRP Template <Descriptor> Shroud
 					i(189622),	-- 10.0 Raid Template - Generic - Cloak
 					i(189006),	-- 10.0 Zone Uncommon Template <Descriptor> Cape
-				}),
+					i(200710),	-- Ashjra'kamas
+					i(200708),	-- Polymorphic Cloak of Absorption
+				})),
 			}),
 			cl(DRUID, {
-				tier(DF_TIER, 0.01, {
+				-- 10.0.0
+				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
 					i(198145),	-- Copy Bracers of the druid name PH
 					i(198144),	-- Copy Chestguard of the druid name PH
 					i(198147),	-- Copy Cincture of the druid name PH
@@ -2084,10 +2080,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(198143),	-- Copy Leggings of the druid name PH
 					i(198146),	-- Copy Shoulderpads of the druid name PH
 					i(198150),	-- Copy Wrap of the druid name PH
-				}),
+				})),
 			}),
 			filter(CLOTH, {
-				tier(DF_TIER, 0.01, {
+				-- 10.0.0
+				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
 					i(189683),	-- 10.0 Dungeon Template - Cloth - Feet
 					i(189641),	-- 10.0 Dungeon Template - Cloth - Hand
 					i(189643),	-- 10.0 Dungeon Template - Cloth - Head
@@ -2128,10 +2125,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(188991),	-- 10.0 Zone Uncommon Template <Descriptor> Shoulderpads
 					i(188960),	-- 10.0 Zone Uncommon Template <Descriptor> Vestment
 					i(188966),	-- 10.0 Zone Uncommon Template <Descriptor> Wristwraps
-				}),
+				})),
 			}),
 			filter(LEATHER, {
-				tier(DF_TIER, 0.01, {
+				-- 10.0.0
+				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
 					i(189638),	-- 10.0 Dungeon Template - Leather - Chest
 					i(189685),	-- 10.0 Dungeon Template - Leather - Feet
 					i(189639),	-- 10.0 Dungeon Template - Leather - Hand
@@ -2173,10 +2171,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(188969),	-- 10.0 Zone Uncommon Template <Descriptor> Helm
 					i(188967),	-- 10.0 Zone Uncommon Template <Descriptor> Treads
 					i(188989),	-- 10.0 Zone Uncommon Template <Descriptor> Tunic
-				}),
+				})),
 			}),
 			filter(MAIL, {
-				tier(DF_TIER, 0.01, {
+				-- 10.0.0
+				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
 					i(189637),	-- 10.0 Dungeon Template - Mail - Chest
 					i(189684),	-- 10.0 Dungeon Template - Mail - Feet
 					i(189642),	-- 10.0 Dungeon Template - Mail - Hand
@@ -2218,10 +2217,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(188978),	-- 10.0 Zone Uncommon Template <Descriptor> Shoulderguards
 					i(188974),	-- 10.0 Zone Uncommon Template <Descriptor> Striders
 					i(191934),	-- TEMP Event Stream TEMP - No Buckle Fleshscale Belt
-				}),
+				})),
 			}),
 			filter(PLATE, {
-				tier(DF_TIER, 0.01, {
+				-- 10.0.0
+				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
 					i(189636),	-- 10.0 Dungeon Template - Plate - Chest
 					i(189634),	-- 10.0 Dungeon Template - Plate - Feet
 					i(189640),	-- 10.0 Dungeon Template - Plate - Hand
@@ -2271,23 +2271,29 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(188981),	-- 10.0 Zone Uncommon Template <Descriptor> Helm
 					i(188985),	-- 10.0 Zone Uncommon Template <Descriptor> Legguards
 					i(188986),	-- 10.0 Zone Uncommon Template <Descriptor> Pauldrons
+					i(200737),	-- Pauldrons of Infinite Darkness
+					i(200230),	-- Terrorclaw Shoulderplates
 					i(195467),	-- zzOld(DNT) Test Belt of Molten Metallic Awesomeness
-				}),
+				})),
 			}),
 			filter(COSMETIC, {
-				tier(DF_TIER, 0.01, {
+				-- 10.0.0
+				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
 					i(198385),	-- Draconian Garden Pick
 					i(198386),	-- Gardener's Tilling Spork
 					i(198342),	-- Tuskarr Expedition Pack
-				}),
+				})),
 			}),
 			filter(TABARDS, {
-				tier(DF_TIER, 0.01, {
+				-- 10.0.0
+				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
+					i(191271),	-- Black Smith's Tabard
 					i(194676),	-- Emboldened Dracthyr's Tabard [Lol they changed model]
-				}),
+				})),
 			}),
 			filter(NECK_F, {
-				tier(DF_TIER, 0.01, {
+				-- 10.0.0
+				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
 					i(189667),	-- 10.0 Dungeon Template - Generic - Neck
 					i(189062),	-- 10.0 End Game Template <Descriptor> Choker
 					i(192039),	-- 10.0 PH Dragonscale Expedition Choker
@@ -2295,10 +2301,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189100),	-- 10.0 QRP Template <Descriptor> Pendant
 					i(189624),	-- 10.0 Raid Template - Generic - Neck
 					i(189005),	-- 10.0 Zone Uncommon Template <Descriptor> Necklace
-				}),
+				})),
 			}),
 			filter(FINGER_F, {
-				tier(DF_TIER, 0.01, {
+				-- 10.0.0
+				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
 					i(189662),	-- 10.0 Dungeon Template - Generic - Finger
 					i(189049),	-- 10.0 End Game Template <Descriptor> Band
 					i(189059),	-- 10.0 End Game Template <Descriptor> Band
@@ -2313,10 +2320,13 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189623),	-- 10.0 Raid Template - Generic - Finger
 					i(189003),	-- 10.0 Zone Uncommon Template <Descriptor> Band
 					i(189002),	-- 10.0 Zone Uncommon Template <Descriptor> Signet
-				}),
+					i(200280),	-- Decaying Ghostly Band
+					i(197933),	-- Lutokk's Wedding Ring
+				})),
 			}),
 			filter(TRINKET_F, {
-				tier(DF_TIER, 0.01, {
+				-- 10.0.0
+				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {
 					i(189666),	-- 10.0 Dungeon Template - Generic - Trinket
 					i(189058),	-- 10.0 End Game Template <Descriptor> Trinket
 					i(192035),	-- 10.0 PH Dragonscale Expedition Trinket
@@ -2331,7 +2341,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(189629),	-- 10.0 Raid Template - STR - Trinket
 					i(189626),	-- 10.0 Raid Template - Tank - Trinket
 					i(189004),	-- 10.0 Zone Uncommon Template <Descriptor> Trinket
-					i(192464),	-- Darkmoon Deck: Ysera
+					i(194398),	-- Crumbling Watcher's Stone (NYI)
+					i(200679),	-- Essence of Somnikus's Shade
+					i(193058),	-- Sherwood - Test Trinket
 					i(198392),	-- zzOldDarkmoon Binding: Awakened Chill
 					i(198391),	-- zzOldDarkmoon Binding: Inferno
 					i(198393),	-- zzOldDarkmoon Binding: Refreshing Dance
@@ -2339,12 +2351,12 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(198433),	-- zzOldDarkmoon Deckbox: Awakened Chill
 					i(198434),	-- zzOldDarkmoon Deckbox: Refreshing Dance
 					i(198435),	-- zzOldDarkmoon Deckbox: Watcher
-				}),
+				})),
 			}),
-			tier(DF_TIER, 0.01, {	-- Unknown
-				i(198531),	-- Peripheral Vision Projectors (TYLER'S TEST DNT)
+			-- 10.0.0
+			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { "created 10.0.0" } }, {	-- Unknown
 				i(198681),	-- Luke Test Belt [DNT]
-			}),
+			})),
 		}),
 	}),
 }));

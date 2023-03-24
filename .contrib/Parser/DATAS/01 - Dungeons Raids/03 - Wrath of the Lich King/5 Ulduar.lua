@@ -125,10 +125,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 					},
 				}),
-				ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
-					["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
-					["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
-				}),
 				ach(12312, {	-- Dwarfageddon
 					["timeline"] = { "added 7.3.5.25727" },
 					["crs"] = {
@@ -146,13 +142,17 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					},
 				}),
 			}),
-			n(LEGENDARY_QUESTLINE, {
+			applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(LEGENDARY_QUESTLINE, {
 				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
 				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
 				["title"] = "Val'anyr, Hammer of Ancient Kings",
 				["icon"] = "Interface\\Icons\\inv_mace_99",
 				["isRaid"] = true,
 				["groups"] = {
+					ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
+						["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
+						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+					}),
 					q(13622, {	-- Ancient History
 						["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
 						["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
@@ -170,7 +170,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						},
 					}),
 				},
-			}),
+			})),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					33113,	-- Flame Leviathan
@@ -190,7 +190,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					33288,	-- Yogg-Saron
 				},
 				["groups"] = {
-					i(45038),	-- Fragment of Val'anyr
+					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, i(45038)),	-- Fragment of Val'anyr
 					i(45087),	-- Runed Orb
 				},
 			}),
@@ -1233,13 +1233,17 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 						}),
 					}),
-					n(LEGENDARY_QUESTLINE, {
+					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(LEGENDARY_QUESTLINE, {
 						["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
 						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
 						["title"] = "Val'anyr, Hammer of Ancient Kings",
 						["icon"] = "Interface\\Icons\\inv_mace_99",
 						["isRaid"] = true,
 						["groups"] = {
+							ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
+								["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
+								["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+							}),
 							q(13622, {	-- Ancient History
 								["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
 								["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
@@ -1257,7 +1261,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								},
 							}),
 						},
-					}),
+					})),
 					n(QUESTS, {
 						q(13818, {	-- Heroic: Algalon
 							["providers"] = {
@@ -1379,7 +1383,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							33288,	-- Yogg-Saron
 						},
 						["groups"] = {
-							i(45038),	-- Fragment of Val'anyr
+							applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, i(45038)),	-- Fragment of Val'anyr
 							i(45087, {	-- Runed Orb
 								["description"] = "Can also drop from defeating 10-Man Hard Mode bosses.",
 							}),
@@ -2917,130 +2921,3 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 		},
 	})),
 })));
-
--- #if AFTER 4.0.1
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(WOTLK_TIER, {
-		inst(759, {
-			-- Most sets was added 4.0.1
-			cl(DEATHKNIGHT, {
-				i(46232),	-- Darkruned Battleplate
-				i(46233),	-- Darkruned Chestguard
-				i(46234),	-- Darkruned Faceguard
-				i(46235),	-- Darkruned Gauntlets
-				i(46236),	-- Darkruned Handguards
-				i(46237),	-- Darkruned Helmet
-				i(46238),	-- Darkruned Legguards
-				i(46239),	-- Darkruned Legplates
-				i(46240),	-- Darkruned Pauldrons
-				i(46241),	-- Darkruned Shoulderplates
-
-			}),
-			cl(DRUID, {
-				i(45350),	-- Nightsong Cover
-				i(46260),	-- Nightsong Handgrips
-				i(46261),	-- Nightsong Handguards
-				i(46262),	-- Nightsong Headguard
-				i(46263),	-- Nightsong Headpiece
-				i(46264),	-- Nightsong Leggings
-				i(46265),	-- Nightsong Legguards
-				i(46266),	-- Nightsong Mantle
-				i(46267),	-- Nightsong Raiments
-				i(46268),	-- Nightsong Robe
-				i(46269),	-- Nightsong Shoulderpads
-				i(46270),	-- Nightsong Spaulders
-				i(46271),	-- Nightsong Trousers
-				i(46272),	-- Nightsong Vestments
-				i(46309),	-- Nightsong Gloves
-			}),
-			cl(HUNTER, {
-				i(46274),	-- Scourgestalker Headpiece
-				i(46273),	-- Scourgestalker Handguards
-				i(46275),	-- Scourgestalker Legguards
-				i(46276),	-- Scourgestalker Spaulders
-				i(46277),	-- Scourgestalker Tunic
-			}),
-			cl(MAGE, {
-				i(46249),	-- Kirin Tor Gauntlets
-				i(46250),	-- Kirin Tor Hood
-				i(46251),	-- Kirin Tor Leggings
-				i(46252),	-- Kirin Tor Shoulderpads
-				i(46253),	-- Kirin Tor Tunic
-			}),
-			cl(PALADIN, {
-				i(46213),	-- Aegis Battleplate
-				i(46214),	-- Aegis Breastplate
-				i(46215),	-- Aegis Faceguard
-				i(46216),	-- Aegis Gauntlets
-				i(46217),	-- Aegis Gloves
-				i(46218),	-- Aegis Greaves
-				i(46219),	-- Aegis Handguards
-				i(46220),	-- Aegis Headpiece
-				i(46221),	-- Aegis Helm
-				i(46222),	-- Aegis Legguards
-				i(46223),	-- Aegis Legguards
-				i(46224),	-- Aegis Legplates
-				i(46225),	-- Aegis Shoulderguards
-				i(46226),	-- Aegis Shoulderplates
-				i(46227),	-- Aegis Spaulders
-				i(46228),	-- Aegis Tunic
-			}),
-			cl(PRIEST, {
-				i(46230),	-- Circlet of Sanctification
-				i(46231),	-- Cowl of Sanctification
-				i(46247),	-- Gloves of Sanctification
-				i(46248),	-- Handwraps of Sanctification
-				i(46254),	-- Leggings of Sanctification
-				i(46255),	-- Mantle of Sanctification
-				i(46256),	-- Pants of Sanctification
-				i(46257),	-- Rainments of Sanctification
-				i(46258),	-- Robe of Sanctification
-				i(46259),	-- Shoulderpads of Sanctification
-			}),
-			cl(ROGUE, {
-				i(46288),	-- Terrorblade Breastplate
-				i(46289),	-- Terrorblade Gauntlets
-				i(46290),	-- Terrorblade Helmet
-				i(46291),	-- Terrorblade Legplates
-				i(46292),	-- Terrorblade Pauldrons
-			}),
-			cl(SHAMAN, {
-				i(46293),	-- Worldbreaker Chestguard
-				i(46294),	-- Worldbreaker Faceguard
-				i(46295),	-- Worldbreaker Gloves
-				i(46296),	-- Worldbreaker Grips
-				i(46297),	-- Worldbreaker Handguards
-				i(46298),	-- Worldbreaker Hauberk
-				i(46299),	-- Worldbreaker Headpiece
-				i(46300),	-- Worldbreaker Helm
-				i(46301),	-- Worldbreaker Kilt
-				i(46302),	-- Worldbreaker Legguards
-				i(46303),	-- Worldbreaker Shoulderguards
-				i(46304),	-- Worldbreaker Shoulderpads
-				i(46305),	-- Worldbreaker Spaulbers
-				i(46306),	-- Worldbreaker Tunic
-				i(46307),	-- Worldbreaker War-Kilt
-			}),
-			cl(WARLOCK, {
-				i(46242),	-- Deathbringer Gloves
-				i(46243),	-- Deathbringer Hood
-				i(46244),	-- Deathbringer Leggings
-				i(46245),	-- Deathbringer Robe
-				i(46246),	-- Deathbringer Shoulderpads
-			}),
-			cl(WARRIOR, {
-				i(46278),	-- Siegebreaker Battleplate
-				i(46279),	-- Siegebreaker Breastplate
-				i(46280),	-- Siegebreaker Gauntlets
-				i(46281),	-- Siegebreaker Greathelm
-				i(46282),	-- Siegebreaker Helmet
-				i(46283),	-- Siegebreaker Handguards
-				i(46284),	-- Siegebreaker Legguards
-				i(46285),	-- Siegebreaker Legplates
-				i(46286),	-- Siegebreaker Pauldrons
-				i(46287),	-- Siegebreaker Shoulderplates
-			}),
-		}),
-	}),
-}));
--- #endif

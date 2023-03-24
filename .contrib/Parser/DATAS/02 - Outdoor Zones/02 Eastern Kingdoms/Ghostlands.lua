@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_ghostlands",
 		-- #endif
-		["lvl"] = lvlsquish(10, 1, 10),
+		["lvl"] = lvlsquish(10, 10, 1),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				explorationAch(858, {	-- Explore Ghostlands
@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9276,	-- Attack on Zeb'Tela
 					["coord"] = { 72.6, 31.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- Poison the Raw Meat Rack
 							["provider"] = { "i", 22796 },	-- Apothecary's Poison
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9758,	-- Return to Arcanist Vandril
 					["coord"] = { 57.5, 14.9, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- Anok'suten slain
 							["provider"] = { "n", 16357 },	-- Anok'suten
@@ -176,7 +176,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 46.5, 28.4, GHOSTLANDS },
 					["classes"] = { MAGE },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Arcane Fragment
 							["provider"] = { "i", 23706 },	-- Arcane Fragment
@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 54.8, 48.4, GHOSTLANDS },
 					["timeline"] = { "removed 7.3.5" },	-- TODO: This is a guess based on prereq quest modifications in 7.3.5.
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(17, 1, 17),
+					["lvl"] = lvlsquish(17, 17, 1),
 				}),
 				q(9488, {	-- A Simple Robe
 					["qg"] = 16197,	-- Arcanist Vandril
@@ -201,7 +201,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["classes"] = { MAGE },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(2, {	-- 0/1 Spindleweb Silk Gland
 							["provider"] = { "i", 23707 },	-- Spindleweb Silk Gland
@@ -219,7 +219,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9276,	-- Attack on Zeb'tela
 					["coord"] = { 72.3, 31.2, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Shadowpine Catlord slain
 							["provider"] = { "n", 16345 },	-- Shadowpine Catlord
@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
 					["coord"] = { 72.3, 31.2, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Shadowpine Shadowcaster slain
 							["provider"] = { "n", 16469 },	-- Shadowpine Shadowcaster
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16202,	-- Farstrider Sedina
 					["coord"] = { 72.4, 32.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(11, 1, 11),
+					["lvl"] = lvlsquish(11, 11, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Ghostclaw Lynx slain
 							["provider"] = { "n", 16348 },	-- Ghostclaw Lynx
@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9276,	-- Attack on Zeb'tela
 					["coord"] = { 72.2, 31.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kel'gash the Wicked
 							["provider"] = { "i", 22640 },	-- Head of Kel'gash the Wicked
@@ -291,7 +291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 47.6, 34.8, GHOSTLANDS },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(17, 1, 17),
+					["lvl"] = lvlsquish(17, 17, 1),
 					["groups"] = {
 						objective(1, {	-- Apothecary Enith Rescued
 							["provider"] = { "i", 22628 },	-- Restorative Draught
@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16480,	-- Apprentice Vor'el
 					["coord"] = { 46.3, 56.4, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Greater Spindleweb slain
 							["provider"] = { "n", 16352 },	-- Greater Spindleweb
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 22644, 5 },	-- Crunchy Spider Leg
 					},
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(12, 1, 12),
+					["lvl"] = lvlsquish(12, 12, 1),
 					["groups"] = {
 						i(22647),	-- Recipe: Crunchy Spider Surprise
 						i(22645),	-- Crunchy Spider Surprise
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9158,	-- Bearers of the Plague
 					["coord"] = { 72.4, 32.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(11, 1, 11),
+					["lvl"] = lvlsquish(11, 11, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Vampiric Mistbat slain
 							["provider"] = { "n", 16354 },	-- Vampiric Mistbat
@@ -371,7 +371,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["coord"] = { 54.8, 48.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(17, 1, 17),
+					["lvl"] = lvlsquish(17, 17, 1),
 					["groups"] = {
 						objective(1, {	-- Mirdoran the Fallen slain
 							["provider"] = { "n", 16250 },	-- Mirdoran the Fallen
@@ -405,7 +405,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9166,	-- Deliver the Plans to An'telas
 					["coord"] = { 60.2, 35.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(11, 1, 11),
+					["lvl"] = lvlsquish(11, 11, 1),
 					["groups"] = {
 						objective(1, {	-- Night Elf Moon Crystal Deactivated
 							["provider"] = { "i", 23191 },	-- Crystal Controlling Orb
@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9145,	-- Help Ranger Valanna!
 					["coord"] = { 69.3, 15.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Zeb'Sora Troll Ear
 							["provider"] = { "i", 22639 },	-- Zeb'Sora Troll Ear
@@ -441,14 +441,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9163,	-- Into Occupied Territory
 					["coord"] = { 44.8, 32.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(11, 1, 11),
+					["lvl"] = lvlsquish(11, 11, 1),
 				}),
 				q(9155, {	-- Down the Dead Scar
 					["qg"] = 16200,	-- Deathstalker Rathiel
 					["sourceQuest"] = 9138,	-- Suncrown Village
 					["coord"] = { 46.0, 33.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Risen Hungerer slain
 							["provider"] = { "n", 16301 },	-- Risen Hungerer
@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16295,	-- Ranger Lilatha
 					["coord"] = { 59.9, 81.5, 96 },	-- TODO: Check that the coordinate plots correctly in TBC
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(14, 1, 14),
+					["lvl"] = lvlsquish(14, 14, 1),
 					["groups"] = {
 						i(23412),	-- Troll Kickers (Plate)
 						i(23413),	-- Troll Kickers (Cloth)
@@ -482,7 +482,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9130,	-- Goods from Silvermoon City
 					["coord"] = { 45.4, 30.5, GHOSTLANDS },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				-- #endif
 				q(9157, {	-- Forgotten Rituals
@@ -490,7 +490,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
 					["coord"] = { 72.2, 19.0, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Wavefront Medallion
 							["provider"] = { "i", 22674 },	-- Wavefront Medallion
@@ -506,14 +506,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9167,	-- The Traitor's Destruction
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9139, {	-- Goldenmist Village
 					["qg"] = 16197,	-- Arcanist Vandril
 					["sourceQuest"] = 9138,	-- Suncrown Village
 					["coord"] = { 46.3, 28.3, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Quel'dorei Ghost slain
 							["provider"] = { "n", 16325 },	-- Quel'dorei Ghost
@@ -539,7 +539,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["coord"] = { 47.3, 29.3, GHOSTLANDS },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				-- #endif
 				q(9491, {	-- Greed
@@ -552,7 +552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Pitted Gold Band
 							["provider"] = { "i", 23717 },	-- Pitted Gold Band
@@ -561,6 +561,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 63.8, 28.9, GHOSTLANDS },
 						}),
 						i(23921, {	-- Bulging Sack of Silver
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(23717, {	-- Pitted Gold Band
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -577,7 +580,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["isBreadcrumb"] = true,
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 				}),
 				q(9328, {	-- Hero of the Sin'dorei [Blood Elf Only]
 					["providers"] = {
@@ -587,7 +590,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9167,	-- The Traitor's Destruction
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9162, {	-- Hints of the Past
 					["providers"] = {
@@ -597,14 +600,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9161,	-- The Traitor's Shadow
 					["coord"] = { 79.6, 17.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9163, {	-- Into Occupied Territory
 					["qg"] = 16231,	-- Dame Auriferous
 					["sourceQuest"] = 9160,	-- Investigate An'daroth
 					["coord"] = { 44.8, 32.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(11, 1, 11),
+					["lvl"] = lvlsquish(11, 11, 1),
 					["groups"] = {
 						objective(1, {	-- Night Elf Plans: An'daroth
 							["provider"] = { "i", 22590 },	-- Night Elf Plans: An'daroth
@@ -635,7 +638,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 44.8, 32.8, GHOSTLANDS },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(14, 1, 14),
+					["lvl"] = lvlsquish(14, 14, 1),
 					["groups"] = {
 						objective(1, {	-- Investigate the Amani Catacombs [Burn Mummified Troll Remains]
 							["provider"] = { "i", 22755 },	-- Blazing Torch
@@ -651,7 +654,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
 					-- #ENDIF
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(11, 1, 11),
+					["lvl"] = lvlsquish(11, 11, 1),
 					["groups"] = {
 						objective(1, {	-- 0/12 Sentinel Spy slain
 							["provider"] = { "n", 16330 },	-- Sentinel Spy
@@ -669,7 +672,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9175,	-- The Lady's Necklace
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9180, {	-- Journey to Undercity [Blood Elf Only]
 					["providers"] = {
@@ -679,7 +682,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9175,	-- The Lady's Necklace
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9217, {	-- More Rotting Hearts
 					["qg"] = 16205,	-- Magistrix Aminel
@@ -690,7 +693,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						i(22779),	-- Scourgebane Draught
 					},
@@ -704,7 +707,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						i(22778),	-- Scourgebane Infusion
 					},
@@ -714,7 +717,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9143,	-- Dealing with Zeb'Sora
 					["coord"] = { 69.4, 15.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						i(23405),	-- Farstrider's Tunic
 						i(28144),	-- Troll Handler Gloves
@@ -732,7 +735,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9162,	-- Hints of the Past
 					["coord"] = { 71.9, 32.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						i(28154),	-- Red Silk Trousers
 						i(28157),	-- Black Leather Jerkin
@@ -747,7 +750,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9140,	-- Windrunner Village
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Deatholme Acolyte slain
 							["provider"] = { "n", 16315 },	-- Deatholme Acolyte
@@ -765,7 +768,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 				}),
 				q(9216, {	-- Rotting Hearts
 					["qg"] = 16205,	-- Magistrix Aminel
@@ -775,7 +778,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 22641, 10 },	-- Rotting Heart
 					},
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						i(22779),	-- Scourgebane Draught
 					},
@@ -786,7 +789,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 46.0, 31.9, GHOSTLANDS },
 					["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Crystallized Mana Essence
 							["provider"] = { "i", 22580 },	-- Crystallized Mana Essence
@@ -802,7 +805,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
 					["coord"] = { 72.3, 29.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/3 Headhunter Axe
 							["provider"] = { "i", 23165 },	-- Headhunter Axe
@@ -830,7 +833,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 22642, 10 },	-- Spinal Dust
 					},
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						i(22778),	-- Scourgebane Infusion
 					},
@@ -840,7 +843,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
 					["coord"] = { 72.2, 29.7, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Ravening Apparition slain
 							["provider"] = { "n", 16327 },	-- Ravening Apparition
@@ -855,7 +858,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9758,	-- Return to Arcanist Vandril
 					["coord"] = { 46.2, 28.3, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Nerubis Guard slain
 							["provider"] = { "n", 16313 },	-- Nerubis Guard
@@ -868,24 +871,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9327, {	-- The Forsaken [Blood Elf Only]
 					["qg"] = 16197,	-- Arcanist Vandril
 					["coord"] = { 46.5, 28.4, GHOSTLANDS },
 					["races"] = { BLOODELF },
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 				}),
 				q(9329, {	-- The Forsaken [Non-Blood Elf Only]
 					["qg"] = 16197,	-- Arcanist Vandril
 					["coord"] = { 46.5, 28.4, GHOSTLANDS },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 				}),
 				q(9175, {	-- The Lady's Necklace
 					["provider"] = { "i", 22597 },	-- The Lady's Necklace
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9149, {	-- The Plagued Coast
 					["qg"] = 16198,	-- Apothecary Renzithen
@@ -901,7 +904,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["coord"] = { 47.6, 34.8, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Plagued Murloc Spine
 							["provider"] = { "i", 22579 },	-- Plagued Murloc Spine
@@ -921,7 +924,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(16, 1, 16),
+					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Archeologist's Shrunken Head
 							["provider"] = { "i", 30503 },	-- Archeologist's Shrunken Head
@@ -950,14 +953,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #if BEFORE BFA
 					["isBreadcrumb"] = true,
 					-- #endif
-					["lvl"] = lvlsquish(17, 1, 17),
+					["lvl"] = lvlsquish(17, 17, 1),
 				}),
 				q(9167, {	-- The Traitor's Destruction
 					["qg"] = 16239,	-- Magister Kaendris
 					["sourceQuest"] = 9176,	-- The Twin Ziggurats
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Dar'Khan's Head
 							["provider"] = { "i", 22653 },	-- Dar'Khan's Head
@@ -980,14 +983,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9282,	-- The Farstrider Enclave
 					["coord"] = { 71.9, 32.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9176, {	-- The Twin Ziggurats
 					["qg"] = 16239,	-- Magister Kaendris
 					["sourceQuest"] = 9172,	-- Report to Master Kaendris
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(15, 1, 15),
+					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- Stone of Flame
 							["provider"] = { "i", 22599 },	-- Stone of Flame
@@ -1015,7 +1018,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["coord"] = { 47.2, 28.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- Rathis Tomber's Supplies
 							["provider"] = { "i", 22583 },	-- Rathis Tomber's Supplies
@@ -1035,7 +1038,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 44.8, 32.4, GHOSTLANDS },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(14, 1, 14),
+					["lvl"] = lvlsquish(14, 14, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Troll Juju
 							["provider"] = { "i", 22633 },	-- Troll Juju
@@ -1058,7 +1061,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 44.7, 32.2, GHOSTLANDS },
 					["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(11, 1, 11),
+					["lvl"] = lvlsquish(11, 11, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Blackpaw Gnoll slain
 							["provider"] = { "n", 16334 },	-- Blackpaw Gnoll
@@ -1075,7 +1078,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16293,	-- Apprentice Shatharia
 					["coord"] = { 31.4, 48.3, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(11, 1, 11),
+					["lvl"] = lvlsquish(11, 11, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Underlight Ore
 							["provider"] = { "i", 22634 },	-- Underlight Ore
@@ -1092,7 +1095,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9157,	-- Forgotten Rituals
 					["coord"] = { 72.2, 19.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(10, 1, 10),
+					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- Aquantion slain
 							["provider"] = { "i", 22675 },	-- Bundle of Medallions
@@ -1109,7 +1112,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["coord"] = { 48.3, 31.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Knucklerot's Head
 							["provider"] = { "i", 22894 },	-- Knucklerot's Head
@@ -1136,7 +1139,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["coord"] = { 54.8, 48.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(17, 1, 17),
+					["lvl"] = lvlsquish(17, 17, 1),
 					["groups"] = {
 						objective(1, {	-- 0/5 Eye of Dar'Khan slain
 							["provider"] = { "n", 16320 },	-- Eye of Dar'Khan
@@ -1154,7 +1157,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9139,	-- Goldenmist Village
 					["coord"] = { 46.2, 28.3, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(9, 1, 9),
+					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Phantasmal Substance
 							["provider"] = { "i", 22566 },	-- Phantasmal Substance

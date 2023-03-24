@@ -2128,6 +2128,9 @@ root(ROOTS.Zones, {
 					n(19227, {	-- Griftah
 						i(27982),	-- Charm of Potent and Powerful Passions
 						i(27941),	-- Compassionate Critter's Friend
+						i(33014, {	-- Fine Poking Stick
+							["timeline"] = { "added 2.2.0.6983", "removed 2.3.0" },
+						}),
 						i(34249),	-- Hula Girl Doll
 						i(27992),	-- Infallible Tikbalang Ward
 						i(27940),	-- Marvelous Madstone of Immortality

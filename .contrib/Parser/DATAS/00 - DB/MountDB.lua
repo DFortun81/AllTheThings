@@ -1538,7 +1538,7 @@ i(198825, 385266);	-- Zenet Hatchling
 i(194722, 377849);	-- Carrier Yeti				/	Carrier Yeti
 i(0, 371571);	-- Dragon Isles Drake Model Test
 i(194106, 0);	-- Highland Drake
-i(192770, 349935);	-- Noble Elderhorn				/	[PH] Moose Bull Black
+i(192770, 0);	-- Noble Elderhorn				/	[PH] Moose Bull Black
 i(192804, 374263);	-- Restless Hornstrider			/	Restless Hornstrider
 i(192779, 374138);	-- Scorchpath					/	Scorchpath
 i(0, 372995);	-- Swift Spectral Drake
@@ -1552,10 +1552,8 @@ i(192765, 374071);	-- [PH] Dragonfly Yellow		/	[PH] Dragonfly Yellow
 i(192788, 374181);	-- [PH] Mammoth V2 Blue			/	[PH] Mammoth V2 Blue
 i(192787, 351403);	-- [PH] Mammoth V2 Dark			/	[PH] Mammoth V2 Dark
 i(192789, 374172);	-- [PH] Mammoth V2 Gray			/	[PH] Mammoth V2 Gray
-i(192790, 374194);	-- [PH] Mammoth V2 Green		/	[PH] Mammoth V2 Green
 i(198822, 385260);	-- [PH] Sepia Wind Eagle		/	[PH] Sepia Wind Eagle
 i(192771, 352927);	-- [PH] Water Salamander Blue	/	[PH] Water Salamander Blue
-i(192772, 374090);	-- [PH] Water Salamander Green
 i(192773, 374093);	-- [PH] Water Salamander Orange	/	[PH] Water Salamander Orange
 i(192774, 374097);	-- [PH] Water Salamander Pink	/	[PH] Water Salamander Pink
 i(0, 387948);	-- [PH] Wind Proto-Drake
@@ -1567,7 +1565,6 @@ i(192781, 374140);	-- PH Lava Slug Blue			/	[PH] Lava Slug Blue
 i(192778, 350220);	-- PH Lava Slug Orange			/	[PH] Lava Slug Orange
 i(192780, 350220);	-- PH Lava Slug Orange			/	[PH] Lava Snail Orange
 i(192782, 374142);	-- PH Lava Slug Yellow			/	[PH] Lava Slug Yellow
-i(192785, 374157);	-- PH Lava Snail Blue			/	[PH] Lava Snail Blue
 i(0, 351404);	-- PH Mammoth V2 Lava
 i(192802, 374258);	-- PH Primal Tallstrider Black	/	PH Primal Tallstrider Black
 i(192803, 374259);	-- PH Primal Tallstrider Red	/	PH Primal Tallstrider Red
@@ -1593,7 +1590,6 @@ i(0, 369451);		-- Jade Foreseer
 ------------------
 i(192800, 352926);	-- Skyskin Hornstrider
 -- NYI --
-i(0, 400733);	-- [PH] Goblin Shredder Rocket
 i(0, 397406);	-- [PH] Magical Fish Mount
 i(203226, 399708);	-- Stormfused Salamanther
 i(0, 395095);	-- Whelpling
@@ -1608,9 +1604,14 @@ i(189978, 366647);	-- Magenta Cloud Serpent
 i(190169, 366790);	-- Quawks
 i(190613, 367826);	-- Savage Green Battle Turtle
 
-
-
-
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(192772, 374090);	-- Ancient Salamanther
+i(192785, 374157);	-- Gooey Snailemental
+i(192790, 374194);	-- Mossy Mammoth
+i(204382, 349935);	-- Noble Bruffalon
+i(204091, 400733);	-- Rocket Shredder 9001
 
 
 

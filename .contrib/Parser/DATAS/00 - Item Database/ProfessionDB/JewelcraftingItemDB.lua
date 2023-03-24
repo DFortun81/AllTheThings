@@ -36,12 +36,6 @@ local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 end
 
 -- NOT ORGANIZED
-i(41564, 53879);	-- Design: Lucent Huge Citrine [WotLK]
-i(41565, 53879);	-- Design: Lucent Huge Citrine [Cata+]
-i(41571, 53924);	-- Design: Turbid Dark Jade [Cata+]
-i(41573, 53924);	-- Design: Turbid Dark Jade [WotLK]
-
-
 i(0, 382978);	-- Cataclysm Prospecting
 i(0, 382995);	-- Classic Prospecting
 
@@ -198,3 +192,13 @@ i(194668, 0);	-- Timewatcher's Patience
 i(194607, 0);	-- Zen Malygite
 i(194597, 0);	-- Zen Mystic Sapphire
 i(194615, 0);	-- Zen Neltharite
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(203426, 400812);	-- Crystal Tuning Fork
+i(0, 404740);	-- Cataclysm Crushing
+-- UNSORTED --
+i(204218, 403464);	-- Primordial Pulverizing
+i(204406, 405205);	-- Square Holders
+i(204219, 403483);	-- Unstable Elementium

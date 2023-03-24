@@ -1,0 +1,17 @@
+10.0.0.44999
+r(387594),	-- Reinforced Irontree Harpoon Handle
+r(387827),	-- Flying Fish Bone Charm
+r(387828),	-- Iskaaran Fishing Net \\ Tuskarr Fishing Net
+r(387831),	-- Iskaaran Harpoon \\ Tuskarr Harpoon
+r(387832),	-- Iskaaran Ice Axe \\ Ice Axe
+r(387833),	-- Polished Basalt Bracelet
+r(387836),	-- Irontree Harpoon Handle
+10.0.0.45141
+r(387375),	-- Serevite Harpoon Head \\ Tyrivite Harpoon Head \\ Irontree Harpoon Handle
+r(388249),	-- Jagged Serevite Harpoon Head \\ Jagged Tyrivite Harpoon Head
+r(388250),	-- Seavine Harpoon Rope
+r(388251),	-- Braided Seavine Harpoon Rope
+r(388252),	-- Draconium Net Weights
+r(388253),	-- Dense Draconium Net Weights
+r(388254),	-- Imbu Knot
+r(388255),	-- Double Imbu Knot

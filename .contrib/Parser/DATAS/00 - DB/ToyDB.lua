@@ -1104,6 +1104,7 @@ i(200630);	-- Ohn'ir Windsage's Hearthstone
 i(194885);	-- Ohuna Perch
 i(198646);	-- Ornate Dragon Statue
 i(198409);	-- Personal Shell
+i(200636);	-- Primal Invocation Quintessence
 i(200198);	-- Primalist Prison
 i(191891);	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise
 i(199767);	-- Red Dragon Banner
@@ -1129,12 +1130,11 @@ i(200550);	-- Very Comfortable Pelt
 i(199902);	-- Wayfinder's Compass
 i(199650);	-- Whale Bone Tea Set
 i(200878);	-- Wheeled Floaty Boaty Controller
-i(198156);	-- Wyrmhole Generator
+i(198156);	-- Wyrmhole Generator: Dragon Isles
 -- NYI --
 i(200142);	-- Generous Goblin Grenade
 i(199111);	-- Maestro Duck's Orchestrion
 i(199926);	-- Portable J.A.M.
-i(200636);	-- Primal Invocation Quintessence
 i(197961);	-- Whelps on Strings
 
 
@@ -1142,12 +1142,31 @@ i(197961);	-- Whelps on Strings
 -- PATCH 10.0.5 --
 ------------------
 i(202020);	-- Chasing Storm
-i(202253);	-- Primal Stave of Claw and Fur
-i(202283);	-- Reading Glasses
 i(202207);	-- Reusable Oversized Bobber
 i(203716);	-- Thundering Banner of the Aspects
 -- NYI --
 i(202309);	-- Defective Doomsday Device
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(203725);	-- Display of Strength
+i(202253);	-- Primal Stave of Claw and Fur
+i(201930);	-- H.E.L.P.
+i(204257);	-- Holoviewer: The Lady of Dreams
+i(204256);	-- Holoviewer: The Scarlet Queen
+i(204262);	-- Holoviewer: The Timeless One
+i(202283);	-- Reading Glasses
+i(199900);	-- Secondhand Survey Tools
+-- Unsorted --
+i(204675);	-- A Drake's Big Basket of Eggs
+i(203757);	-- Brazier of Madness (ZG?)
+i(204170);	-- Clan Banner
+i(202360);	-- Dented Can
+i(204220);	-- Hraxian's Unbreakable Will
+i(204687);	-- Obsidian Battle Horn
+i(203734);	-- Snow Blanket
+i(203852);	-- Spore-Bound Essence
 
 
 -- #if ANYCLASSIC

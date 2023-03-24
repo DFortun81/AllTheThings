@@ -139,9 +139,6 @@ _.Zones =
 					["provider"] = { "n", 34874 },	-- Megs Dreadshredder
 					["sourceQuests"] = { 14071 },	-- Rolling with my Homies
 				}),
-				q(24521, {	-- Report For Tryouts (NYI)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(14121, {	-- Robbing Hoods
 					["coord"] = { 60.0, 78.1, 194 },
 					["provider"] = { "n", 34874 },	-- Megs Dreadshredder

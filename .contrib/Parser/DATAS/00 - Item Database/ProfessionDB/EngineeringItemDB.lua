@@ -1,6 +1,8 @@
 local Items = root(ROOTS.ItemDBConditional);
 local Recipes = root(ROOTS.RecipeDB);
 local ProfessionID = ENGINEERING;
+local GNOMISH_ENGINEER = 20219;
+local GOBLIN_ENGINEER = 20222;
 local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 	if Items[itemID] then
 		print("Duplicate Recipe Item Defined!",itemID,recipeID);
@@ -34,6 +36,13 @@ local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 		Items[itemID] = item;
 	end
 end
+
+-- Gnomish Engineering
+i(18654, 23096, nil, GNOMISH_ENGINEER);		-- Schematic: Gnomish Alarm-o-Bot
+i(18661, 23129, nil, GNOMISH_ENGINEER);		-- Schematic: World Enlarger
+-- Goblin Engineering
+i(18653, 23078, nil, GOBLIN_ENGINEER);		-- Schematic: Goblin Jumper Cables XL
+
 
 -- TEMP
 -- #IF NOT ANYCLASSIC
@@ -145,8 +154,10 @@ i(0, 387246);	-- Zapthrottle Soul Inhaler
 -- QUEST --
 i(0, 377983);	-- Heart in a Bottle
 -- NYI --
+i(0, 384311);	-- Bronze Fireflight
 i(0, 382581);	-- Opening
 i(0, 382352);	-- Perfectly Calibrated Lenses
+i(0, 382360);	-- Tinker Removal Kit
 i(0, 382382);	-- Wisp of Tyr
 i(0, 382372);	--
 i(0, 382373);	--
@@ -216,3 +227,8 @@ i(202228, 397858);	-- Impressive Linkgrease Locksprocket
 i(202229, 397859);	-- Remarkable Linkgrease Locksprocket
 i(202230, 397860);	-- Impressive True Iron Trigger
 i(202231, 397861);	-- Remarkable True Iron Trigger
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+i(203424, 400810);	-- Gnomish Voicebox

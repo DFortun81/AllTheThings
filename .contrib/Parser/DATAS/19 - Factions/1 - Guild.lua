@@ -312,7 +312,7 @@ _.Factions =
 				ach(5158),	-- Stay Classy
 				ach(7446),	-- The Ultimate Challenge
 				ach(5780),	-- You Have Been Challenged
-	
+
 				-- QUESTS --
 				ach(5422),	-- A Daily Routine
 				ach(6629),	-- Daily Anticipation
@@ -321,7 +321,7 @@ _.Factions =
 				ach(5421),	-- That's a Lot of Travel Time
 				ach(4947),	-- That's a Lot of Turn Ins
 				ach(5265),	-- The Daily Grind
-	
+
 				-- PLAYER VS. PLAYER
 					-- GENERAL --
 				ach(5179),	-- Alliance Slayer
@@ -367,7 +367,7 @@ _.Factions =
 				ach(5437),	-- Guild Warlords
 				ach(5240),	-- Now That's Teamwork
 				ach(5241),	-- Stick Together Team
-	
+
 				-- DUNGEONS & RAIDS -- WIP
 				ach(5009),	-- A Legendary Collection
 				ach(4955),	-- Are You Not Entertained?
@@ -410,9 +410,9 @@ _.Factions =
 				ach(5465),	-- Mix Master
 				ach(6703),	-- Pandaren Angler
 				ach(6700),	-- Pandarian Mix Master
-				ach(5467),	-- Set the Oven to "Cataclysmic"	
+				ach(5467),	-- Set the Oven to "Cataclysmic"
 				ach(5028, {	-- Skinnin' for a Livin'
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_DF_PRE2 },
 				}),
 				ach(5036),	-- That's a Lot of Bait
 				ach(4860),	-- Working as a Team
@@ -420,7 +420,7 @@ _.Factions =
 				ach(5466),	-- Time to Open a Restaurant
 				ach(5274),	-- We're Gonna Need a Bigger Boat
 				ach(6626),	-- Working Better as a Team
-	
+
 				-- REPUTATION --
 				ach(5129),	-- Ambassadors
 				ach(7844),	-- Ambassadors
@@ -436,7 +436,7 @@ _.Factions =
 				ach(5812),	-- United Nations
 				ach(5892),	-- United Nations
 				ach(5035),	-- Master Crafter
-	
+
 				-- GUILD FEATS OF STRENGTH --
 				ach(5440),	-- Guild Battlemasters
 				ach(5441),	-- Guild Battlemasters

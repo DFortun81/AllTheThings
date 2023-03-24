@@ -27,7 +27,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["mapID"] = ZULAMAN,
 		["isRaid"] = true,
-		["lvl"] = lvlsquish(68, 30, 68),
+		["lvl"] = lvlsquish(68, 68, 30),
 		["groups"] = {
 			-- #if AFTER CATA
 			d(NORMAL_DUNGEON , {	-- Legacy

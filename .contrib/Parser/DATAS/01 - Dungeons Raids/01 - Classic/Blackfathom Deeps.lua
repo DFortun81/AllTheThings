@@ -15,7 +15,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["coord"] = { 14.0, 11.1, ASHENVALE },
 		-- #endif
 		["maps"] = { BLACKFATHOM_DEEPS, BLACKFATHOM_DEEPS_LEVEL2, BLACKFATHOM_DEEPS_LEVEL3 },
-		["lvl"] = lvlsquish(19, 10, 19),
+		["lvl"] = lvlsquish(19, 19, 10),
 		["groups"] = {
 			n(QUESTS, {
 				q(6564, {	-- Allegiance to the Old Gods (1/2)
@@ -89,7 +89,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(22, 10, 22),
+					["lvl"] = lvlsquish(22, 22, 10),
 				}),
 				q(26897, {	-- Blackfathom Deeps (A)
 					["qg"] = 3845,	-- Shindrell Swiftfire
@@ -97,7 +97,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(22, 10, 22),
+					["lvl"] = lvlsquish(22, 22, 10),
 				}),
 				q(26898, {	-- Blackfathom Deeps (A)
 					["qg"] = 3691,	-- Raene Wolfrunner
@@ -105,7 +105,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(22, 10, 22),
+					["lvl"] = lvlsquish(22, 22, 10),
 				}),
 				q(1200, {	-- Blackfathom Villainy (A)
 					["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
@@ -354,7 +354,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 75606,	-- Sentinel Aluwyn
 					["timeline"] = { "added 6.0.1.18322" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(20, 10, 20),
+					["lvl"] = lvlsquish(20, 20, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Aku'mai the Devourer slain
 							["provider"] = { "n", 75155 },	-- Aku'mai the Devourer <Terror from the Deep>
@@ -372,7 +372,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 74409,	-- Zeya
 					["timeline"] = { "added 6.0.1.18322" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 10, 20),
+					["lvl"] = lvlsquish(20, 20, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Aku'mai the Devourer slain
 							["provider"] = { "n", 75155 },	-- Aku'mai the Devourer <Terror from the Deep>

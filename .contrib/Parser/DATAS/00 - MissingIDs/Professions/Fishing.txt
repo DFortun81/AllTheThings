@@ -1,0 +1,86 @@
+0.5.3.3368
+r(7620),	-- Fishing
+r(7731),	-- Fishing
+r(7732),	-- Fishing
+r(7738),	-- Fishing Poles
+1.0.0.3980
+r(18248),	-- Fishing
+2.0.0.6080
+r(33095),	-- Fishing
+2.4.3.8606
+r(43308),	-- Find Fish
+3.0.1.8622
+r(51294),	-- Fishing
+3.1.0.9767
+r(62734),	-- Fishing
+4.0.1.12911
+r(88868),	-- Fishing
+5.0.3.15890
+r(110410),	-- Fishing
+6.0.1.18179
+r(131474),	-- Fishing
+r(131476),	-- Fishing
+r(131490),	-- Fishing
+r(158743),	-- Fishing
+8.0.1.26287
+r(271616),	-- Fishing
+r(271656),	-- Outland Fishing
+r(271658),	-- Northrend Fishing
+r(271660),	-- Cataclysm Fishing
+r(271662),	-- Pandaria Fishing
+r(271664),	-- Draenor Fishing
+r(271672),	-- Legion Fishing
+r(271675),	-- Kul Tiran Fishing
+r(271677),	-- Zandalari Fishing
+8.0.1.26310
+r(271990),	-- Fishing Journal \\ Fishing Skills
+8.0.1.26367
+r(272011),	-- Fishing
+9.0.1.33978
+r(310675),	-- Shadowlands Fishing
+
+
+
+
+Missing in FishingItemDB.lua
+
+0.5.3.3368
+r(7620),	-- Fishing
+r(7731),	-- Fishing
+r(7732),	-- Fishing
+r(7738),	-- Fishing Poles
+1.0.0.3980
+r(18248),	-- Fishing
+2.0.0.6080
+r(33095),	-- Fishing
+2.4.3.8606
+r(43308),	-- Find Fish
+3.0.1.8622
+r(51294),	-- Fishing
+3.1.0.9767
+r(62734),	-- Fishing
+4.0.1.12911
+r(88868),	-- Fishing
+5.0.3.15890
+r(110410),	-- Fishing
+6.0.1.18179
+r(131474),	-- Fishing
+r(131476),	-- Fishing
+r(131490),	-- Fishing
+r(158743),	-- Fishing
+8.0.1.26287
+r(271616),	-- Fishing
+r(271656),	-- Outland Fishing
+r(271658),	-- Northrend Fishing
+r(271660),	-- Cataclysm Fishing
+r(271662),	-- Pandaria Fishing
+r(271664),	-- Draenor Fishing
+r(271672),	-- Legion Fishing
+r(271675),	-- Kul Tiran Fishing
+r(271677),	-- Zandalari Fishing
+8.0.1.26310
+r(271990),	-- Fishing Journal \\ Fishing Skills
+8.0.1.26367
+r(272011),	-- Fishing
+9.0.1.33978
+r(310675),	-- Shadowlands Fishing

@@ -403,7 +403,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.0, 68.2, ASHENVALE },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(19, 7, 19),
+					["lvl"] = lvlsquish(19, 19, 7),
 					["groups"] = {
 						objective(1, {	-- 0/9 Ashenvale Outrunner slain
 							["provider"] = { "n", 12856 },	-- Ashenvale Outrunner
@@ -488,7 +488,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 11.8, 34.4, ASHENVALE },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(21, 7, 21),
+					["lvl"] = lvlsquish(21, 21, 7),
 					-- #if BEFORE CATA
 					["groups"] = {
 						objective(1, {	-- 0/12 Thistlefur Avenger slain
@@ -1923,7 +1923,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 73, 61.4, ASHENVALE },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(21, 7, 21),
+					["lvl"] = lvlsquish(21, 21, 7),
 					["groups"] = {
 						objective(1, {	-- 0/16 Satyr Horns
 							["provider"] = { "i", 5481 },	-- Satyr Horns
@@ -2033,7 +2033,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["cr"] = 12677,	-- Shadumbra
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 7, 20),
+					["lvl"] = lvlsquish(20, 20, 7),
 				}),
 				q(2, {		-- Sharptalon's Claw
 					["provider"] = { "i", 16305 },	-- Sharptalon's Claw
@@ -2045,7 +2045,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["cr"] = 12676,	-- Sharptalon
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 7, 20),
+					["lvl"] = lvlsquish(20, 20, 7),
 				}),
 				q(13873, {	-- Sheelah's Last Wish
 					["qg"] = 34233,	-- Guardian Menerin
@@ -2204,7 +2204,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.8, 71.6, ASHENVALE },
 					["cr"] = 12759,	-- Tideress
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(23, 7, 23),
+					["lvl"] = lvlsquish(23, 23, 7),
 				}),
 				q(26468, {	-- The Branch of Cenarius
 					["qg"] = 3920,	-- Anilia
@@ -2761,7 +2761,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 12717,	-- Muglash
 					["coord"] = { 12, 34.6, ASHENVALE },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 7, 20),
+					["lvl"] = lvlsquish(20, 20, 7),
 					["groups"] = {
 						objective(1, {	-- 0/1 Vorsha the Lasher slain
 							["provider"] = { "n", 12940 },	-- Vorsha the Lasher
@@ -2930,12 +2930,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41678,	-- Blood Guard Aldo Rockrain
 					["sourceQuest"] = 28532,	-- Warchief's Command: Stonetalon Mountains!
 					["coord"] = { 49.8, 65.7, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = HORDE_ONLY,
-				}),
-				q(26416, {	-- Well, Come to the Jungle
-					["qg"] = 43063,	-- Cromula
-					["coord"] = { 49.4, 67.1, ASHENVALE },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),

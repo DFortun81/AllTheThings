@@ -13,6 +13,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- q(QUEST, {	-- NAME
 				-- 	-- ["coord"] = { XX, YY, THE_WAKING_SHORES }
 				-- }),
+				petbattle(q(74841, { -- Adinakon
+					["coord"] = { 51.90, 72.39, THE_WAKING_SHORES },
+					["timeline"] = { ADDED_DF_0_7 },
+				})),
 				q(70636, {	-- Ancient Protodragons
 					["coord"] = { 35.1, 81.6, THE_WAKING_SHORES },
 				}),
@@ -55,6 +59,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(70012, {	-- Protect the Nets!
 					["coord"] = { 55.6, 58.3, THE_WAKING_SHORES },
 				}),
+				petbattle(q(74840, { -- Sharp as Flint
+					["coord"] = { 68.96, 46.78, THE_WAKING_SHORES },
+					["timeline"] = { ADDED_DF_0_7 },
+				})),
 				q(67024, {	-- Smoldering Reinforcement
 					["coord"] = { 53.9, 27.0, THE_WAKING_SHORES },
 				}),

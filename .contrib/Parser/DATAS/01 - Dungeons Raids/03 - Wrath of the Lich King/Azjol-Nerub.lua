@@ -31,12 +31,36 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				applyclassicphase(WRATH_PHASE_TWO, ach(17285, {	-- Defense Protocol Alpha: Azjol-Nerub
 					crit(57699, {	-- Krik'thir the Gatewatcher
 						["_encounter"] = { 585, 2 },
+						["groups"] = {
+							i(39257),	-- Loatheb's Shadow
+							i(39267),	-- Abomination Shoulderblades
+							i(39259),	-- Fungi-Stained Coverings
+						},
 					}),
 					crit(57697, {	-- Hadronox
 						["_encounter"] = { 586, 2 },
+						["groups"] = {
+							i(39256),	-- Sulfur Stave
+							i(39252),	-- Preceptor's Bindings
+							i(39261),	-- Tainted Girdle of Mending
+						},
 					}),
 					crit(57698, {	-- Anub'arak
 						["_encounter"] = { 587, 2 },
+						["groups"] = {
+							i(39419),	-- Nerubian Conquerer
+							i(43994),	-- Belabored Legplates
+							i(39425),	-- Cloak of the Dying
+							i(40616),	-- Helm of the Lost Conqueror
+							i(40617),	-- Helm of the Lost Protector
+							i(40618),	-- Helm of the Lost Vanquisher
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
+						},
 					}),
 				})),
 				-- #endif

@@ -84,3 +84,8 @@ i(0, 391089);	-- Refine Herbs+++
 i(0, 377984);	-- Heart in a Bottle
 -- NYI --
 i(0, 382582);	-- Opening
+
+------------------
+-- PATCH 10.0.5 --
+------------------
+i(0, 390392);	-- Overload Elemental Herb

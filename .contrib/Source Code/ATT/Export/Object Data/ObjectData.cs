@@ -137,62 +137,29 @@ namespace ATT
             }
 
             /// <summary>
-            /// Checks if the provided data has a 'type' field which matches a 'ConvertedKey' value of an ObjectData.
-            /// Then adjusts the data to match the expected ObjectData and remove the 'type' field
+            /// Checks if the provided data has a 'type' field which matches a 'ConvertedKey' value of an ObjectData
+            /// and returns the first matching ObjectData found
             /// </summary>
-            public static bool TryFindAndConvertDataByObjectType(IDictionary<string, object> data)
+            public static bool TryFindObjectConversion(IDictionary<string, object> data, out ObjectData conversionObject, out object convertValue)
             {
                 if (data.TryGetValue("type", out string type))
                 {
                     foreach (ObjectData objData in ALL_OBJECTS)
                     {
-                        if (objData.ConvertedKey != null && objData.ObjectType == type)
+                        if (objData.ConvertedKey != null && objData.ObjectType == type && data.TryGetValue(objData.ConvertedKey, out convertValue))
                         {
-                            if (data.TryGetValue(objData.ConvertedKey, out object convertKey))
-                            {
-                                data.Remove("type");
-                                data.Remove(objData.ConvertedKey);
-                                data[objData.ObjectType] = convertKey;
-                                AddObjectConversion(objData.ConvertedKey, convertKey, objData);
-                                return true;
-                            }
-                        }
-                    }
-                }
-
-                return false;
-            }
-
-            /// <summary>
-            /// Checks if the provided data has matches an existing ObjectType conversions, and re-applies the same conversion if so
-            /// </summary>
-            public static bool TryDataConversion(IDictionary<string, object> data)
-            {
-                foreach (KeyValuePair<string, Dictionary<object, ObjectData>> conversion in OBJECT_CONVERSIONS)
-                {
-                    if (data.TryGetValue(conversion.Key, out object fieldVal))
-                    {
-                        if (conversion.Value.TryGetValue(fieldVal, out ObjectData objData))
-                        {
-                            data.Remove(objData.ConvertedKey);
-                            data[objData.ObjectType] = fieldVal;
+                            conversionObject = objData;
                             return true;
                         }
                     }
                 }
 
+                conversionObject = null;
+                convertValue = null;
                 return false;
             }
-
-            private static void AddObjectConversion(string key, object convertKey, ObjectData objData)
-            {
-                if (!OBJECT_CONVERSIONS.TryGetValue(key, out Dictionary<object, ObjectData> typeConversions))
-                {
-                    OBJECT_CONVERSIONS[key] = typeConversions = new Dictionary<object, ObjectData>();
-                }
-                typeConversions[convertKey] = objData;
-            }
             #endregion
+
             #region Properties
             /// <summary>
             /// The blacklisted fields.
@@ -252,6 +219,16 @@ namespace ATT
                 fields.Remove("timeline");
                 fields.Remove("ilvl");
                 fields.Remove("q");
+
+                // Ensure parser-only fields are not exported
+                for (int i = fields.Count - 1; i >= 0; i--)
+                {
+                    string field = fields[i];
+                    if (field.StartsWith("_"))
+                    {
+                        fields.RemoveAt(i);
+                    }
+                }
 
                 // Conditionally remove certain fields.
                 if (data.TryGetValue("b", out object objRef))

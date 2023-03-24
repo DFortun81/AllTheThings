@@ -29,6 +29,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+								["crs"] = {
+									11739,	-- Rock Stalker
+									11738,	-- Sand Skitterer
+									11737,	-- Stonelash Flayer
+									11736,	-- Stonelash Pincer
+									11735,	-- Stonelash Scorpid
+								},
 							}),
 						},
 						-- #endif
@@ -160,6 +167,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+								["crs"] = {
+									11739,	-- Rock Stalker
+									11738,	-- Sand Skitterer
+									11737,	-- Stonelash Flayer
+									11736,	-- Stonelash Pincer
+									11735,	-- Stonelash Scorpid
+								},
 							}),
 						},
 						-- #endif
@@ -289,6 +303,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+								["crs"] = {
+									11739,	-- Rock Stalker
+									11738,	-- Sand Skitterer
+									11737,	-- Stonelash Flayer
+									11736,	-- Stonelash Pincer
+									11735,	-- Stonelash Scorpid
+								},
 							}),
 						},
 						-- #endif
@@ -411,6 +432,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+								["crs"] = {
+									11739,	-- Rock Stalker
+									11738,	-- Sand Skitterer
+									11737,	-- Stonelash Flayer
+									11736,	-- Stonelash Pincer
+									11735,	-- Stonelash Scorpid
+								},
 							}),
 						},
 						-- #endif
@@ -532,6 +560,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+								["crs"] = {
+									11739,	-- Rock Stalker
+									11738,	-- Sand Skitterer
+									11737,	-- Stonelash Flayer
+									11736,	-- Stonelash Pincer
+									11735,	-- Stonelash Scorpid
+								},
 							}),
 						},
 						-- #endif
@@ -664,6 +699,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+								["crs"] = {
+									11739,	-- Rock Stalker
+									11738,	-- Sand Skitterer
+									11737,	-- Stonelash Flayer
+									11736,	-- Stonelash Pincer
+									11735,	-- Stonelash Scorpid
+								},
 							}),
 						},
 						-- #endif
@@ -785,6 +827,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+								["crs"] = {
+									11739,	-- Rock Stalker
+									11738,	-- Sand Skitterer
+									11737,	-- Stonelash Flayer
+									11736,	-- Stonelash Pincer
+									11735,	-- Stonelash Scorpid
+								},
 							}),
 						},
 						-- #endif
@@ -914,6 +963,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+								["crs"] = {
+									11739,	-- Rock Stalker
+									11738,	-- Sand Skitterer
+									11737,	-- Stonelash Flayer
+									11736,	-- Stonelash Pincer
+									11735,	-- Stonelash Scorpid
+								},
 							}),
 						},
 						-- #endif
@@ -1026,6 +1082,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["groups"] = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+								["crs"] = {
+									11739,	-- Rock Stalker
+									11738,	-- Sand Skitterer
+									11737,	-- Stonelash Flayer
+									11736,	-- Stonelash Pincer
+									11735,	-- Stonelash Scorpid
+								},
 							}),
 						},
 						-- #endif
@@ -1310,6 +1373,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Druidical Remains
 							["provider"] = { "i", 22226 },	-- Druidical Remains
+							["crs"] = {
+								11730,	-- Hive'Regal Ambusher
+								11731,	-- Hive'Regal Burrower
+								11734,	-- Hive'Regal Hive Lord
+								11733,	-- Hive'Regal Slavemaker
+								11732,	-- Hive'Regal Spitfire
+							},
 						}),
 					},
 				}),
@@ -1584,6 +1654,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Druidical Remains
 							["provider"] = { "i", 22226 },	-- Druidical Remains
+							["crs"] = {
+								11730,	-- Hive'Regal Ambusher
+								11731,	-- Hive'Regal Burrower
+								11734,	-- Hive'Regal Hive Lord
+								11733,	-- Hive'Regal Slavemaker
+								11732,	-- Hive'Regal Spitfire
+							},
 						}),
 						i(22192),	-- Bloodkelp Elixir of Dodging
 						i(22193),	-- Bloodkelp Elixir of Resistance

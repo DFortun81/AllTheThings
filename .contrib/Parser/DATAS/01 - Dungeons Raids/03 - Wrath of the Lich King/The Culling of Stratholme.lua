@@ -34,15 +34,44 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				applyclassicphase(WRATH_PHASE_TWO, ach(17302, {	-- Defense Protocol Alpha: The Culling of Stratholme
 					crit(57771, { -- Meathook
 						["_encounter"] = { 611, 2 },
-					}),
-					crit(57772, { -- Chrono-Lord Epoch
-						["_encounter"] = { 613, 2 },
+						["groups"] = {
+							i(43992),	-- Volitant Amulet
+							i(40429),	-- Crimson Steel
+							i(43988),	-- Gale-Proof Cloak
+						},
 					}),
 					crit(57773, { -- Salramm the Fleshcrafter
 						["_encounter"] = { 612, 2 },
+						["groups"] = {
+							i(43991),	-- Legguards of Composure
+							i(43989),	-- Remembrance Girdle
+							i(40428),	-- Titan's Outlook
+						},
+					}),
+					crit(57772, { -- Chrono-Lord Epoch
+						["_encounter"] = { 613, 2 },
+						["groups"] = {
+							i(43990),	-- Blade-Scarred Tunic
+							i(40430),	-- Majestic Dragon Figurine
+							i(40427),	-- Circle of Arcane Streams
+						},
 					}),
 					crit(57770, { -- Mal'Ganis
 						["_encounter"] = { 614, 2 },
+						["groups"] = {
+							i(40475),	-- Barricade of Eternity
+							i(39235),	-- Bone-Framed Bracers
+							i(44658),	-- Chain of the Ancient Wyrm
+							i(40616),	-- Helm of the Lost Conqueror
+							i(40617),	-- Helm of the Lost Protector
+							i(40618),	-- Helm of the Lost Vanquisher
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
+						},
 					}),
 				})),
 				-- #endif
@@ -83,6 +112,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						objective(1, {	-- Plagued Grain Crates Dispelled
 							["provider"] = { "i", 37888 },	-- Arcane Disruptor
 						}),
+					},
+				}),
+			}),
+			n(VENDORS, {
+				n(31021, {	-- Sophie Aaren <Florist>
+					["coord"] = { 64.0, 55.2, THE_CULLING_OF_STRATHOLME_FLOOR2 },
+					["groups"] = {
+						i(43327),	-- Stratholme Lily
 					},
 				}),
 			}),
@@ -265,6 +302,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					n(32273, {	-- Infinite Corruptor
 						ach(1817),	-- The Culling of Time
 						i(43951),	-- Bronze Drake (MOUNT!)
+						-- #if ANYCLASSIC
+						applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
+							i(39427),	-- Omen of Ruin
+							i(39468),	-- The Stray
+							i(39473),	-- Contortion
+							i(39470),	-- Medallion of the Disgraced
+							i(39467),	-- Minion Bracers
+						})),
+						-- #endif
 					}),
 					e(614, {	-- Mal'Ganis
 						["creatureID"] = 26533,	-- Mal'Ganis

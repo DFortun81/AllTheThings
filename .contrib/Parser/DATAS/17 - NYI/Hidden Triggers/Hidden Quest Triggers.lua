@@ -1801,7 +1801,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(14448),	-- Takes One to Know One - completed with quest 13260
 		q(14474),	-- Goblin Escape Pods - completed with quest 14001
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807
-		q(25305),	-- Never Look Back- completed with quest 25304
+		q(25305),	-- Never Look Back - completed with quest 25304
+		q(24521),	-- Report For Tryouts - completed with quest 24567
 		q(26379),	-- In Aid of the Refugees - completed with quest 13601
 		q(26398),	-- Walk With The Earth Mother - completed with 26397
 		q(26522),	-- Faces of Evil - completed with 26357 & 26521

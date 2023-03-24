@@ -12,7 +12,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["coord"] = { 40.94, 94.55, THE_BARRENS },
 		-- #endif
 		["mapID"] = RAZORFEN_KRAUL,
-		["lvl"] = lvlsquish(17, 10, 25),
+		["lvl"] = lvlsquish(17, 25, 10),
 		["groups"] = {
 			n(QUESTS, {
 				q(1102, {	-- A Vengeful Fate
@@ -39,13 +39,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(26906, {	-- Agamaggan
 					["qg"] = 44402,	-- Auld Stonespire
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(30, 10, 30),
+					["lvl"] = lvlsquish(30, 30, 10),
 				}),
 				q(26905, {	-- Agamaggan's Charge
 					["qg"] = 44415,	-- Spirit of Agamaggan
 					["sourceQuest"] = 26906,	-- Agamaggan
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(30, 10, 30),
+					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Razorflank's Heart
 							["provider"] = { "i", 5793 },	-- Razorflank's Heart
@@ -154,7 +154,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(26907, {	-- Take Them Down!
 					["qg"] = 44402,	-- Auld Stonespire
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(30, 10, 30),
+					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
 						-- #if AFTER 6.0.2
 						objective(1, {	-- 0/1 Hunter Bonetusk slain

@@ -1,0 +1,12 @@
+10.0.7.47910
+ill(6786),	-- Primal Storm
+
+
+
+
+Missing in IllusionDB.lua
+
+9.0.1.34365
+ill(1894),	-- Icy Chill \\ Icy Weapon
+10.0.7.47910
+ill(6786),	-- Primal Storm

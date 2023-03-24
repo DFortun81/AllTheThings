@@ -499,7 +499,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(194106, {	-- Highland Drake [ITEM ONLY] (MOUNT!)
 					--["modelID"] = ,
 				}),
-				i(192770, {	-- Noble Elderhorn / [PH] Moose Bull Black (MOUNT!)
+				i(192770, {	-- Noble Elderhorn [ITEM ONLY] (MOUNT!)
 					--["modelID"] = ,
 				}),
 				i(192804, {	-- Restless Hornstrider / Restless Hornstrider (MOUNT!)
@@ -541,16 +541,10 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(192789, {	-- [PH] Mammoth V2 Gray / [PH] Mammoth V2 Gray (MOUNT!)
 					--["modelID"] = ,
 				}),
-				i(192790, {	-- [PH] Mammoth V2 Green / [PH] Mammoth V2 Green (MOUNT!)
-					--["modelID"] = ,
-				}),
 				i(198822, {	-- [PH] Sepia Wind Eagle / [PH] Sepia Wind Eagle (MOUNT!)
 					--["modelID"] = ,
 				}),
 				i(192771, {	-- [PH] Water Salamander Blue / [PH] Water Salamander Blue (MOUNT!)
-					--["modelID"] = ,
-				}),
-				i(192772, {	-- [PH] Water Salamander Green / [PH] Water Salamander Green (MOUNT!)
 					--["modelID"] = ,
 				}),
 				i(192773, {	-- [PH] Water Salamander Orange / [PH] Water Salamander Orange (MOUNT!)
@@ -584,9 +578,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					--["modelID"] = ,
 				}),
 				i(192782, {	-- PH Lava Slug Yellow / [PH] Lava Slug Yellow (MOUNT!)
-					--["modelID"] = ,
-				}),
-				i(192785, {	-- PH Lava Snail Blue / [PH] Lava Snail Blue (MOUNT!)
 					--["modelID"] = ,
 				}),
 				mount(351404, {	-- PH Mammoth V2 Lava (MOUNT!)

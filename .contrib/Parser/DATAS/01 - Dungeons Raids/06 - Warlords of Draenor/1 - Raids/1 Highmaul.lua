@@ -89,7 +89,9 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 				ach(8987, {	-- Arcane Sanctum
 					cr(78948, e(1195, {	-- Tectus <The Living Mountain>
-						i(138835),	-- Illusion: Rockbiter
+						i(138835, {	-- Illusion: Rockbiter
+							["classes"] = { SHAMAN },
+						}),
 						i(116362),	-- Shard of Crystalline Fury
 						i(116363),	-- Shield of Violent Upheaval
 						i(116237),	-- Crown of the Crags
@@ -274,7 +276,9 @@ _.Instances = { tier(WOD_TIER, {
 				})),
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
 					ach(8974),	-- More Like Wrecked-us
-					i(138835),	-- Illusion: Rockbiter
+					i(138835, {	-- Illusion: Rockbiter
+						["classes"] = { SHAMAN },
+					}),
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus
 					i(113647),	-- Flechette-Riddled Chain
@@ -474,7 +478,9 @@ _.Instances = { tier(WOD_TIER, {
 				})),
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
 					ach(8974),	-- More Like Wrecked-us
-					i(138835),	-- Illusion: Rockbiter
+					i(138835, {	-- Illusion: Rockbiter
+						["classes"] = { SHAMAN },
+					}),
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus
 					i(113647),	-- Flechette-Riddled Chain
@@ -679,7 +685,9 @@ _.Instances = { tier(WOD_TIER, {
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
 					ach(8961),	-- Mythic: Tectus
 					ach(8974),	-- More Like Wrecked-us
-					i(138835),	-- Illusion: Rockbiter
+					i(138835, {	-- Illusion: Rockbiter
+						["classes"] = { SHAMAN },
+					}),
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus
 					i(113647),	-- Flechette-Riddled Chain

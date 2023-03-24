@@ -1050,7 +1050,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26934, {	-- Latent Disease
 					["qg"] = 11057,	-- Apothecary Dithers
-					["sourceQuest"] = 26930,	-- After the Crusade
+					["sourceQuests"] = {
+						-- #IF BEFORE CATA
+						26930,	-- After the Crusade (not sure if this is wrong in Classic also but just in case)
+						-- #ELSE
+						25007,	-- East... Always to the East (assumed from report)
+						-- #ENDIF
+					},
 					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,

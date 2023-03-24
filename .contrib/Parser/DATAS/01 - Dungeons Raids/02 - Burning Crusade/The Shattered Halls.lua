@@ -11,14 +11,14 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			{ "i", 28395, 1 },	-- Shattered Halls Key
 		},
 		-- #endif
-		["lvl"] = lvlsquish(65, 20, 65),
+		["lvl"] = lvlsquish(65, 65, 20),
 		["groups"] = {
 			n(QUESTS, {
 				q(29655, {	-- A Very Special Cloth
 					["qg"] = 54931,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(66, 20, 66),
+					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
 						objective(1, {	-- O'mrogg's Warcloth
 							["provider"] = { "i", 72597 },	-- O'mrogg's Warcloth
@@ -30,14 +30,14 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(66, 20, 66),
+					["lvl"] = lvlsquish(66, 66, 20),
 				}),
 				q(29688, {	-- Advancing the Campaign [Horde]
 					["qg"] = 16575,	-- Shadow Hunter Ty'jin
 					["coord"] = { 55.0, 36.3, HELLFIRE_PENINSULA },
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(66, 20, 66),
+					["lvl"] = lvlsquish(66, 66, 20),
 				}),
 				q(10763, {	-- Dumphry's Request
 					["qg"] = 21209,	-- Dumphry <Master Blacksmithing Trainer>
@@ -45,7 +45,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(68, 10, 68),
+					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {
 						objective(1, {	-- Fel Iron Bar
 							["provider"] = { "i", 23445 },	-- Fel Iron Bar
@@ -64,7 +64,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { SHADOWMOON_VALLEY },
 					["cr"] = 22037,	-- Smith Gorlunk
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(68, 10, 68),
+					["lvl"] = lvlsquish(68, 68, 10),
 				}),
 				q(10755, {	-- Entry Into the Citadel [Horde]
 					["provider"] = { "i", 31241 },	-- Primed Key Mold
@@ -72,13 +72,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { SHADOWMOON_VALLEY },
 					["cr"] = 22037,	-- Smith Gorlunk
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(68, 10, 68),
+					["lvl"] = lvlsquish(68, 68, 10),
 				}),
 				q(29650, {	-- Fel Ember
 					["qg"] = 54931,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(66, 20, 66),
+					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
 						objective(1, {	-- Fel Ember
 							["provider"] = { "i", 23726 },	-- Fel Ember
@@ -95,7 +95,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 53.9, 65.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					-- #if BEFORE 4.3.0.14732
 					["groups"] = {
 						objective(1, {	-- Fel Ember
@@ -115,7 +115,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(68, 10, 68),
+					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {
 						objective(1, {	-- Primed Key Mold
 							["provider"] = { "i", 31245 },	-- Primed Key Mold
@@ -128,7 +128,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(68, 10, 68),
+					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {
 						objective(1, {	-- Primed Key Mold
 							["provider"] = { "i", 31245 },	-- Primed Key Mold
@@ -139,7 +139,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54932,	-- Caza'rez
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(66, 20, 66),
+					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
 						objective(1, {	-- 0/2 Shattered Hand Legionnaire slain
 							["provider"] = { "n", 16700 },	-- Shattered Hand Legionnaire
@@ -157,7 +157,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10763,	-- Dumphry's Request
 					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(68, 10, 68),
+					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Charred Key Mold
 							["provider"] = { "i", 31251 },	-- Unfired Key Mold
@@ -171,7 +171,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10757,	-- Rohok's Request
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(68, 10, 68),
+					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Charred Key Mold
 							["provider"] = { "i", 31251 },	-- Unfired Key Mold
@@ -184,7 +184,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(66, 20, 66),
+					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
 						objective(1, {	-- Fel Ember
 							["provider"] = { "i", 23726 },	-- Fel Ember
@@ -214,7 +214,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(66, 20, 66),
+					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
 						objective(1, {	-- O'mrogg's Warcloth
 							["provider"] = { "i", 72597 },	-- O'mrogg's Warcloth
@@ -225,7 +225,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54934,	-- Gunny
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(66, 20, 66),
+					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
 						objective(1, {	-- 0/2 Shattered Hand Legionnaire slain
 							["provider"] = { "n", 16700 },	-- Shattered Hand Legionnaire
@@ -243,7 +243,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 56.8, 62.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(66, 20, 66),
+					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
 						objective(1, {	-- 0/8 Shattered Hand Legionnaire slain
 							["provider"] = { "n", 16700 },	-- Shattered Hand Legionnaire
@@ -261,7 +261,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 55.0, 36.3, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(66, 20, 66),
+					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
 						objective(1, {	-- 0/8 Shattered Hand Legionnaire slain
 							["provider"] = { "n", 16700 },	-- Shattered Hand Legionnaire
@@ -280,7 +280,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(68, 10, 68),
+					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {
 						objective(1, {	-- Fel Iron Bar
 							["provider"] = { "i", 23445 },	-- Fel Iron Bar
@@ -300,7 +300,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						10666,	-- The Lexicon Demonica
 					},
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["lvl"] = lvlsquish(67, 25, 67),
+					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- Tear of the Earthmother
 							["provider"] = { "i", 30829 },	-- Tear of the Earthmother
@@ -312,7 +312,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					-- #if BEFORE 4.3.0.14732
 					["groups"] = {
 						objective(1, {	-- Warchief Kargath's Fist
@@ -329,7 +329,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54931,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(66, 20, 66),
+					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
 						objective(1, {	-- Warchief Kargath's Fist
 							["provider"] = { "i", 23723 },	-- Warchief Kargath's Fist
@@ -344,7 +344,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10883,	-- The Tempest Key
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
-					["lvl"] = lvlsquish(70, 20, 70),
+					["lvl"] = lvlsquish(70, 70, 20),
 					["groups"] = {
 						objective(1, {	-- Unused Axe of the Executioner
 							["provider"] = { "i", 31716 },	-- Unused Axe of the Executioner
@@ -356,7 +356,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					-- #if BEFORE 4.3.0.14732
 					["groups"] = {
 						objective(1, {	-- Warchief Kargath's Fist
@@ -373,7 +373,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(66, 20, 66),
+					["lvl"] = lvlsquish(66, 66, 20),
 					["groups"] = {
 						objective(1, {	-- Warchief Kargath's Fist
 							["provider"] = { "i", 23723 },	-- Warchief Kargath's Fist
@@ -489,7 +489,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30637, 1 },	-- Flamewrought Key [H]
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

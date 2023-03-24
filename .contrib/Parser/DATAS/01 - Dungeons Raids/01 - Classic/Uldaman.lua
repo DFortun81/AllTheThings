@@ -19,7 +19,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #endif
 		["mapID"] = ULDAMAN,
 		["maps"] = { 231 },
-		["lvl"] = lvlsquish(35, 15, 35),
+		["lvl"] = lvlsquish(35, 35, 15),
 		["groups"] = {
 			n(QUESTS, {
 				q(2964, {	-- A Future Task [Alliance]
@@ -75,7 +75,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 27672,	-- The Chamber of Khaz'mul [Alliance]
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Archaedas slain
 							["provider"] = { "n", 2748 },	-- Archaedas <Ancient Stone Watcher>
@@ -87,7 +87,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 27679,	-- The Chamber of Khaz'mul [Horde]
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Archaedas slain
 							["provider"] = { "n", 2748 },	-- Archaedas <Ancient Stone Watcher>
@@ -109,7 +109,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 46233,	-- Olga Runesworn
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Galgann Firehammer slain
 							["provider"] = { "n", 7291 },	-- Galgann Firehammer
@@ -120,7 +120,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 46235,	-- Lidia Sunglow
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Galgann Firehammer slain
 							["provider"] = { "n", 7291 },	-- Galgann Firehammer
@@ -188,7 +188,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 46247,	-- Kand Sandseeker
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Obsidian Power Core
 							["provider"] = { "i", 62053 },	-- Obsidian Power Core
@@ -361,7 +361,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 46234,	-- Lead Prospector Durdin <Explorer's League>
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Ironaya slain
 							["provider"] = { "n", 7228 },	-- Ironaya
@@ -372,7 +372,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 46236,	-- High Examiner Tae'thelan Bloodwatcher <The Reliquary>
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Ironaya slain
 							["provider"] = { "n", 7228 },	-- Ironaya
@@ -421,25 +421,25 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(2278, {	-- The Platinum Discs (1/3)
 					["provider"] = { "o", 131474 },	-- The Discs of Norgannon
 					["description"] = "Right click on The Discs of Norgannon after defeating Archaedas to start this quest.",
-					["lvl"] = lvlsquish(40, 15, 40),
+					["lvl"] = lvlsquish(40, 40, 15),
 				}),
 				q(2279, {	-- The Platinum Discs (2/3) [Alliance]
 					["provider"] = { "i", 6064 },	-- Miniature Platinum Discs
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(40, 15, 40),
+					["lvl"] = lvlsquish(40, 40, 15),
 				}),
 				-- #if BEFORE CATA
 				-- apparently there used to be A/H versions of these quests, then changed to one shared version in Cata?
 				q(2280, {	-- The Platinum Discs (2/3) [Horde]
 					["provider"] = { "i", 6064 },	-- Miniature Platinum Discs
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(40, 15, 40),
+					["lvl"] = lvlsquish(40, 40, 15),
 				}),
 				-- #else
 				q(2280, {	-- The Platinum Discs (2/3) [Both]
 					["provider"] = { "i", 6064 },	-- Miniature Platinum Discs
-					["lvl"] = lvlsquish(40, 15, 40),
+					["lvl"] = lvlsquish(40, 40, 15),
 				}),
 				-- #endif
 				q(2439, {	-- The Platinum Discs (3/3) [Alliance]
@@ -511,7 +511,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["qg"] = 46241,	-- Aoren Sunglow
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(35, 15, 35),
+					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Obsidian Power Core
 							["provider"] = { "i", 62053 },	-- Obsidian Power Core

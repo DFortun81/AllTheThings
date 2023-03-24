@@ -15,13 +15,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			{ "i", 31084, 1 },	-- Key to the Arcatraz
 		},
 		-- #endif
-		["lvl"] = lvlsquish(65, 25, 65),
+		["lvl"] = lvlsquish(65, 65, 25),
 		["groups"] = {
 			n(QUESTS, {
 				q(10706, {	-- A Mysterious Portent
 					["qg"] = 21962,	-- Udalo
 					["sourceQuest"] = 10705,	-- Seer Udalo
-					["lvl"] = lvlsquish(68, 25, 68),
+					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(10882, {	-- Harbinger of Doom
 					["qg"] = 18481,	-- A'dal
@@ -29,9 +29,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
 					["timeline"] = { "removed 4.3.0.14732" },
 					-- #if AFTER WRATH
-					["lvl"] = lvlsquish(67, 25, 67),
+					["lvl"] = lvlsquish(67, 67, 25),
 					-- #else
-					["lvl"] = lvlsquish(70, 25, 70),
+					["lvl"] = lvlsquish(70, 70, 25),
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- Harbinger Skyriss slain
@@ -46,7 +46,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 29674,	-- Unbound Darkness
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 25, 67),
+					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- Wrath-Scryer Soccothrates slain
 							["provider"] = { "n", 20886 },	-- Wrath-Scryer Soccothrates
@@ -62,9 +62,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
 					["maps"] = { TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
 					-- #if AFTER WRATH
-					["lvl"] = lvlsquish(67, 25, 67),
+					["lvl"] = lvlsquish(67, 67, 25),
 					-- #else
-					["lvl"] = lvlsquish(70, 25, 70),
+					["lvl"] = lvlsquish(70, 70, 25),
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/1 Top Shard of the Arcatraz Key
@@ -87,7 +87,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 29675,	-- Hey There Dalliah
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 25, 67),
+					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- Harbinger Skyriss slain
 							["provider"] = { "n", 20912 },	-- Harbinger Skyriss
@@ -101,18 +101,18 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 21700,	-- Akama
 					["sourceQuest"] = 10628,	-- Akama
 					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
-					["lvl"] = lvlsquish(68, 25, 68),
+					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(10886, {	-- Trial of the Naaru: Tenacity
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10883,	-- The Tempest Key
 					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
-					["lvl"] = lvlsquish(70, 25, 70),
+					["lvl"] = lvlsquish(70, 70, 25),
 				}),
 				q(29674, {	-- Unbound Darkness
 					["qg"] = 18481,	-- A'dal
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 25, 67),
+					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- Zereketh the Unbound slain
 							["provider"] = { "n", 20870 },	-- Zereketh the Unbound
@@ -250,7 +250,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30634, 1 },	-- Warpforged Key
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

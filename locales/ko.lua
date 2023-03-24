@@ -711,7 +711,6 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
 	-- Other
-		--TODO: [-210] = ALLIED.." "..NEW.." "..CHARACTER,			-- Allied New Character
 		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing
@@ -722,7 +721,8 @@ for key,value in pairs({
 		--TODO: [-242] = "Unrated",									-- Unrated
 		--TODO: [-243] = "Bounty",									-- Bounty
 	-- Allied Races
-		[-254] = "동맹 종족 & 유산 방어구",									-- Allied Races & Heritage
+		[-254] = "동맹 종족",										-- Allied Races
+		[-255] = "유산 방어구",											-- Heritage
 	-- First Questline Draenor
 		--TODO: [-356] = "Assault on the Dark Portal",				-- Assault on the Dark Portal
 	-- Outposts in Draenor
@@ -819,11 +819,6 @@ for key,value in pairs({
 		--TODO: [-861] = "Rank 4",									-- Rank 4
 	-- Shadowlands Header
 		--TODO: [-903] = "Zone Rewards",							-- Zone Rewards
-		[-907] = "죽은 블랑쉬",											-- Dead Blanchy
-		[-909] = "사냥: 죽음의 정령",										-- Hunt: Death Elementals
-		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
-		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
-		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
 		[-979] = "중개자 베켄 & 중개자 베노트",								-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "성소 강화",											-- Sanctum Upgrades
 		[-924] = "이동 연결망",											-- Transport Network
@@ -841,13 +836,6 @@ for key,value in pairs({
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
-	-- Temp Sets for Creation Catalyst
-		[-1006] = "공격대 찾기 Alternative",								-- TODO: Raid Finder Alternative
-		[-1007] = "일반 Alternative",									-- TODO: Normal Alternative
-		[-1008] = "영웅 Alternative",									-- TODO: Heroic Alternative
-		[-1009] = "신화 Alternative",									-- TODO: Mythic Alternative
-		[-1010] = "검투사 Alternative",								-- TODO: Gladiator Alternative
-		[-1011] = "정예병 Alternative",								-- TODO: Elite Alternative
 	-- Dragonflight
 		[-1100] = "비룡감시자 필사본",										-- Drakewatcher Manuscripts	--TODO: plural
 		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
@@ -865,6 +853,7 @@ for key,value in pairs({
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
+		--TODO: [-1200] = "Zskera Vaults",							-- Zskera Vaults
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -888,8 +877,6 @@ for key,value in pairs({
 			--TODO: [-5203] = "Prestige Rewards",					-- Prestige Rewards
 			--TODO: [-5204] = "Challenge Appearance",				-- Challenge Appearance
 			--TODO: [-5205] = "Hidden Appearance",					-- Hidden Appearance
-		-- Class Sets
-			--TODO: [-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",	-- Class Trial Item Sets
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
@@ -1106,6 +1093,8 @@ for key,value in pairs({
 	[129127] = "갤리윅스의 금고",	-- Gallywix's Lockbox
 	[131474] = "노르간논의 원반",	-- The Discs of Norgannon
 	[138492] = "미즈라엘의 결정",	-- Shards of Myzrael
+	[140971] = "가즈리디안",	-- Gahz'ridian	--TODO: This was taken from wotlk Wowhead
+	[141853] = "제비수염버섯",	-- Violet Tragan
 	[141979] = "고대의 보물",	-- Ancient Treasure
 	[142071] = "자동부화기",	-- Egg-O-Matic	--TODO: This was taken from wotlk Wowhead
 	[142088] = "결의의 서판",	-- Tablet of Will
@@ -1113,6 +1102,7 @@ for key,value in pairs({
 	[142127] = "린지의 비밀",	-- Rin'ji's Secret	--TODO: This was taken from wotlk Wowhead
 	[142151] = "봉인된 통",	-- Sealed Barrel
 	[142179] = "솔라살 전망대",	-- Solarsal Gazebo
+	[142181] = "도난당한 화물",	-- Stolen Cargo	--TODO: This was taken from wotlk Wowhead
 	[142184] = "선장의 상자",	-- Captain's Chest
 	[142195] = "덩굴발 작전도",	-- Woodpaw Battle Map
 	[142343] = "울둠 대좌",	-- Uldum Pedestal
@@ -1140,6 +1130,7 @@ for key,value in pairs({
 	[148516] = "베스아마라 서판",	-- Tablet of Beth'Amara	--TODO: This was taken from wotlk Wowhead
 	[149036] = "마본의 궤짝",	-- Marvon's Chest
 	[149502] = "검은용군단의 보물",	-- Hoard of the Black Dragonflight	--TODO: This was taken from wotlk Wowhead
+	[150075] = "현상 수배 전단",	-- Wanted Poster	--TODO: This was taken from wotlk Wowhead
 	[151286] = "칼도레이 소환의 고서",	-- Kaldorei Tome of Summoning	--TODO: This was taken from wotlk Wowhead
 	[152095] = "달봉우리 백합",	-- Moonpetal Lily	--TODO: This was taken from wotlk Wowhead
 	[152622] = "아즈샤리트 결정체",	-- Azsharite Formation
@@ -1317,6 +1308,7 @@ for key,value in pairs({
 	[178195] = "전쟁노래 기름",	-- Warsong Oil
 	[178204] = "전쟁노래 도끼 상자",	-- Warsong Axe Shipment
 	[178227] = "머구트의 토템 광주리",	-- Murgut's Totem Basket
+	[178553] = "하이브아쉬 고치",	-- Hive'Ashi Pod
 	[178609] = "눈더미",	-- Holiday Snow
 	[179485] = "부서진 함정",	-- A Broken Trap
 	[179499] = "오우거 타닌 광주리",	-- Ogre Tannin Basket
@@ -1336,10 +1328,12 @@ for key,value in pairs({
 	[180366] = "찌그러진 낚시상자",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "광기의 서판",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
 	[180369] = "거품이는 진흙탕물",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
+	[180436] = "황혼의 서판 조각",	-- Twilight Tablet Fragment
 	[180448] = "현상 수배: 죽음의 갈고리",	-- Wanted Poster: Deathclasp
 	[180456] = "하급 바람의 돌",	-- Lesser Wind Stone
 	[180461] = "바람의 돌",	-- Wind Stone
 	[180466] = "상급 바람의 돌",	-- Greater Wind Stone
+	[180501] = "황혼의 서판 조각",	-- Twilight Tablet Fragment
 	[180503] = "모래투성이 요리책",	-- Sandy Cookbook
 	[180526] = "베데크의 징",	-- Gong of Bethekk
 	[180570] = "맥주통",	-- Keg
@@ -1544,11 +1538,19 @@ for key,value in pairs({
 	[192079] = "호디르의 창",	-- Hodir's Spear
 	[192080] = "호디르의 투구",	-- Hodir's Helm
 	[192524] = "탐욕의 아른그림",	-- Arngrim the Insatiable
+	[192708] = "비전 마법의 갈래 - 소개편",	-- The Schools of Arcane Magic - Introduction
+	[192709] = "비전 마법의 갈래 - 회피술",	-- The Schools of Arcane Magic - Abjuration
+	[192710] = "비전 마법의 갈래 - 창조술",	-- The Schools of Arcane Magic - Conjuration
+	[192711] = "비전 마법의 갈래 - 예지",	-- The Schools of Arcane Magic - Divination
+	[192713] = "비전 마법의 갈래 - 마력",	-- The Schools of Arcane Magic - Enchantment
 	[192818] = "마력 깃든 버섯",	-- Infused Mushroom
 	[192823] = "가득 찬 포도주 단지",	-- Full Jug of Wine
 	[192827] = "야생 겨자",	-- Wild Mustard
 	[192828] = "수정노래 당근",	-- Crystalsong Carrot
 	[192833] = "브라이든브래드의 물건 상자",	-- Bridenbrad's Possessions
+	[192865] = "비전 마법의 갈래 - 환상",	-- The Schools of Arcane Magic - Illusion
+	[192866] = "비전 마법의 갈래 - 강령술",	-- The Schools of Arcane Magic - Necromancy
+	[192867] = "비전 마법의 갈래 - 변환",	-- The Schools of Arcane Magic - Transmutation
 	[193051] = "네루비안 스컬지 알",	-- Nerubian Scourge Egg
 	[193195] = "고동치는 수정",	-- Pulsing Crystal
 	[193400] = "사로나이트 폭탄 더미",	-- Saronite Bomb Stack	--TODO: This was taken from wotlk Wowhead
@@ -2756,6 +2758,7 @@ for key,value in pairs({
 	--TODO: [280883] = "Sun-Worn Chest",	-- Sun-Worn Chest
 	--TODO: [280886] = "Star-Touched Chest",	-- Star-Touched Chest
 	--TODO: [280903] = "Lost Cat Toy",	-- Lost Cat Toy
+	[280948] = "황혼의 화장실",	-- Twilight Outhouse
 	[280951] = "애쉬베인 전리품",	-- Ashvane Spoils
 	--TODO: [280957] = "Zukashi's Satchel",	-- Zukashi's Satchel
 	[281092] = "의술사의 비축함",	-- Witch Doctor's Hoard
@@ -3532,6 +3535,7 @@ for key,value in pairs({
 	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
+	[377485] = "시큼한 사과",	-- Sour Apple
 	[377499] = "용족의 기원에 관하여",	-- On the Origin of Draconic Species
 	[377534] = "전달된 금고",	-- Delivered Vault
 	[377899] = "숨겨진 용뿔두꺼비 인질",	-- Hidden Hornswog Hostage
@@ -3674,7 +3678,7 @@ for key,value in pairs({
 	[382029] = "흐트러진 흙",	-- Disturbed Dirt
 	[382071] = "완전한 낚시 그물",	-- Full Fishing Net	--TODO: this was manually translated
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
-	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
+	[382180] = "과열된 용암 상어 떼",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	--TODO: [382621] = "Revival Catalyst Console",	-- Revival Catalyst Console
@@ -3686,9 +3690,116 @@ for key,value in pairs({
 	[384318] = "눈에 띄지 않는 서표",	-- Inconspicuous Bookmark
 	[384370] = "섬세한 방황의 기록",	-- Deliberately Delinquent Notes
 	[384405] = "반쯤 삶은 생선",	-- Half-Boiled Fish
+	--TODO: [384763] = "Forbidden Hoard",	-- Forbidden Hoard
+	--TODO: [384980] = "Mysterious Chest",	-- Mysterious Chest
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
+	--TODO: [385010] = "Spun Webs",	-- Spun Webs
+	--TODO: [385011] = "Spun Webs",	-- Spun Webs
 	[385021] = "석화된 용의 알",	-- Petrified Dragon Egg
 	[385022] = "부식된 화석",	-- Eroded Fossil
+	--TODO: [385028] = "Powerful Flask of Renewal",	-- Powerful Flask of Renewal
+	--TODO: [385032] = "Gold Pile",	-- Gold Pile
+	--TODO: [385064] = "Ice Spike",	-- Ice Spike
+	--TODO: [385401] = "Searing Chest",	-- Searing Chest
+	--TODO: [385415] = "Bone Pile",	-- Bone Pile
+	--TODO: [385468] = "Bone Pile",	-- Bone Pile
+	--TODO: [385520] = "Bone Pile",	-- Bone Pile
+	--TODO: [385533] = "Sending Stone: Protest",	-- Sending Stone: Protest
+	--TODO: [385799] = "Hardened Strongbox",	-- Hardened Strongbox
+	--TODO: [385800] = "Gold Pile",	-- Gold Pile
+	--TODO: [385801] = "Gold Pile",	-- Gold Pile
+	--TODO: [385802] = "Gold Pile",	-- Gold Pile
+	--TODO: [385826] = "Titan Coffer",	-- Titan Coffer
+	--TODO: [385830] = "Sending Stone: Initial Report",	-- Sending Stone: Initial Report
+	--TODO: [385832] = "Receiving Stone: Final Warning",	-- Receiving Stone: Final Warning
+	--TODO: [385834] = "Journal Entry: Experiments",	-- Journal Entry: Experiments
+	--TODO: [385836] = "Journal Entry: The Creches",	-- Journal Entry: The Creches
+	--TODO: [385837] = "Journal Entry: Silence",	-- Journal Entry: Silence
+	--TODO: [385937] = "Titan Coffer",	-- Titan Coffer
+	--TODO: [385940] = "Runic Wrench",	-- Runic Wrench
+	--TODO: [385952] = "Unusual Ring",	-- Unusual Ring
+	--TODO: [386168] = "Farscale Cache",	-- Farscale Cache
+	--TODO: [386353] = "Hardened Chest",	-- Hardened Chest
+	--TODO: [386354] = "Hardened Chest",	-- Hardened Chest
+	--TODO: [386421] = "Primordial Fire Cache",	-- Primordial Fire Cache
+	--TODO: [386422] = "Primordial Fire Cache",	-- Primordial Fire Cache
+	--TODO: [386423] = "Primordial Fire Cache",	-- Primordial Fire Cache
+	--TODO: [386424] = "Searing Chest",	-- Searing Chest
+	--TODO: [386425] = "Searing Chest",	-- Searing Chest
+	--TODO: [386426] = "Primordial Earth Cache",	-- Primordial Earth Cache
+	--TODO: [386427] = "Cart of Crushed Stone",	-- Cart of Crushed Stone
+	--TODO: [386428] = "Primordial Earth Cache",	-- Primordial Earth Cache
+	--TODO: [386429] = "Primordial Earth Cache",	-- Primordial Earth Cache
+	--TODO: [386430] = "Hardened Chest",	-- Hardened Chest
+	--TODO: [386432] = "Hardened Chest",	-- Hardened Chest
+	--TODO: [386433] = "Primordial Wind Cache",	-- Primordial Wind Cache
+	--TODO: [386441] = "Primordial Wind Cache",	-- Primordial Wind Cache
+	--TODO: [386443] = "Primordial Wind Cache",	-- Primordial Wind Cache
+	--TODO: [386444] = "Primordial Water Cache",	-- Primordial Water Cache
+	--TODO: [386445] = "Primordial Water Cache",	-- Primordial Water Cache
+	--TODO: [386447] = "Primordial Water Cache",	-- Primordial Water Cache
+	--TODO: [386450] = "Primordial Water Cache",	-- Primordial Water Cache
+	--TODO: [386451] = "Wind-Bound Strongbox",	-- Wind-Bound Strongbox
+	--TODO: [386453] = "Wind-Bound Strongbox",	-- Wind-Bound Strongbox
+	--TODO: [386454] = "Chest of Ice",	-- Chest of Ice
+	--TODO: [386455] = "Hardshell Chest",	-- Hardshell Chest
+	--TODO: [386456] = "Hardshell Chest",	-- Hardshell Chest
+	--TODO: [386457] = "Frozen Coffer",	-- Frozen Coffer
+	--TODO: [386458] = "Primordial Decay Cache",	-- Primordial Decay Cache
+	--TODO: [386460] = "Primordial Arcane Cache",	-- Primordial Arcane Cache
+	--TODO: [386461] = "Primordial Arcane Cache",	-- Primordial Arcane Cache
+	--TODO: [386463] = "Primordial Gold Cache",	-- Primordial Gold Cache
+	--TODO: [386484] = "Gold Pile",	-- Gold Pile
+	--TODO: [386531] = "Gold Pile",	-- Gold Pile
+	--TODO: [386532] = "Primordial Gold Cache",	-- Primordial Gold Cache
+	--TODO: [386573] = "Ornate Key Box",	-- Ornate Key Box
+	--TODO: [386578] = "Neltharion Gift Token",	-- Neltharion Gift Token
+	--TODO: [386579] = "Neltharion Gift Token",	-- Neltharion Gift Token
+	--TODO: [386580] = "Neltharion Gift",	-- Neltharion Gift
+	--TODO: [386581] = "Neltharion Gift Token",	-- Neltharion Gift Token
+	--TODO: [386582] = "Neltharion Gift Token",	-- Neltharion Gift Token
+	--TODO: [386583] = "Neltharion Gift Token",	-- Neltharion Gift Token
+	--TODO: [386586] = "Prismatic Fragment",	-- Prismatic Fragment
+	--TODO: [386587] = "Prismatic Fragment",	-- Prismatic Fragment
+	--TODO: [386588] = "Crystal Basket",	-- Crystal Basket
+	--TODO: [386591] = "Empty Vial",	-- Empty Vial
+	--TODO: [386604] = "Primordial Gold Cache",	-- Primordial Gold Cache
+	--TODO: [386605] = "Gold Pile",	-- Gold Pile
+	--TODO: [386633] = "Chest of Storms",	-- Chest of Storms
+	--TODO: [386660] = "Gold Pile",	-- Gold Pile
+	--TODO: [386680] = "Mysterious Almanac",	-- Mysterious Almanac
+	--TODO: [386683] = "Seared Book",	-- Seared Book
+	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
+	--TODO: [386762] = "Primordial Armor Cache",	-- Primordial Armor Cache
+	--TODO: [387501] = "Neltharion Gift Token",	-- Neltharion Gift Token
+	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
+	--TODO: [387728] = "Opera of the Aspects",	-- Opera of the Aspects
+	--TODO: [387737] = "Living Book",	-- Living Book
+	--TODO: [387746] = "Primordial Spirit Cache",	-- Primordial Spirit Cache
+	--TODO: [387749] = "Animate Crystalspine",	-- Animate Crystalspine
+	--TODO: [387853] = "Shattered Crystals",	-- Shattered Crystals
+	--TODO: [388712] = "Opera Chest",	-- Opera Chest
+	--TODO: [388866] = "Reagent Pot",	-- Reagent Pot
+	--TODO: [388876] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
+	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	--TODO: [388908] = "Inert Goo",	-- Inert Goo
+	--TODO: [389102] = "Prismatic Fragment",	-- Prismatic Fragment
+	--TODO: [389104] = "Prismatic Fragment",	-- Prismatic Fragment
+	--TODO: [389108] = "Prismatic Fragment",	-- Prismatic Fragment
+	--TODO: [389173] = "Primordial Blood Cache",	-- Primordial Blood Cache
+	--TODO: [389231] = "Primordial Music Cache",	-- Primordial Music Cache
+	--TODO: [389599] = "Ice Spike",	-- Ice Spike
+	--TODO: [389789] = "Primordial Earth Cache",	-- Primordial Earth Cache
+	--TODO: [389902] = "Primordial Earth Cache",	-- Primordial Earth Cache
+	--TODO: [390008] = "Ice Spike",	-- Ice Spike
+	--TODO: [390009] = "Box of Rocks",	-- Box of Rocks
+	--TODO: [390074] = "Primordial Deep Ocean Cache",	-- Primordial Deep Ocean Cache
+	--TODO: [390258] = "Inert Goo",	-- Inert Goo
+	--TODO: [392569] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
+	--TODO: [392570] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
+	--TODO: [392571] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
+	--TODO: [392572] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
+	--TODO: [392573] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

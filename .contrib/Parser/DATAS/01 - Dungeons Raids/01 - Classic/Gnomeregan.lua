@@ -9,7 +9,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["coord"] = { 30.11, 74.64, NEW_TINKERTOWN_LOWER },	-- Gnomeregan [Dun Morogh]
 		["mapID"] = GNOMEREGAN,
 		["maps"] = { 227, 228, 229, },
-		["lvl"] = 19,
+		["lvl"] = lvlsquish(19, 19, 10),
 		["groups"] = {
 			n(QUESTS, {
 				q(2904, {	-- A Fine Mess
@@ -80,7 +80,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["altQuests"] = { 26943 },	-- Home Sweet Gnome
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(26, 10, 26),
+					["lvl"] = lvlsquish(26, 26, 10),
 				}),
 				q(2926, { 	-- Gnogaine
 					["qg"] = 1268,	-- Ozzie Togglevolt
@@ -108,7 +108,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						{ "i", 1206, 1 },	-- Moss Agate
 						{ "g", 3000 },	-- 30s
 					},
-					["lvl"] = lvlsquish(28, 10, 28),
+					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						i(9538),	-- Talvash's Gold Ring
 					},
@@ -124,7 +124,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(2945, {	-- Grime-Encrusted Ring
 					["provider"] = { "i", 9326 },	-- Grime-Encrusted Ring
 					["description"] = "Take this to The Sparklematic 5200.",
-					["lvl"] = lvlsquish(24, 10, 24),
+					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
 						i(9362),	-- Brilliant Gold Ring
 					},
@@ -154,7 +154,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["altQuests"] = { 26944 },	-- Exploring Gnomeregan
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(26, 10, 26),
+					["lvl"] = lvlsquish(26, 26, 10),
 				}),
 				q(2925, {	-- Klockmort's Essentials
 					["qg"] = 6142,	-- Mathiel
@@ -218,7 +218,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 					["sourceQuest"] = 2945,	-- Grime-Encrusted Ring
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(28, 10, 28),
+					["lvl"] = lvlsquish(28, 28, 10),
 				}),
 				q(2949, {	-- Return of the Ring [Horde]
 					["providers"] = {
@@ -227,7 +227,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 					["sourceQuest"] = 2945,	-- Grime-Encrusted Ring
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(28, 10, 28),
+					["lvl"] = lvlsquish(28, 28, 10),
 				}),
 				q(2841, {	-- Rig Wars
 					["qg"] = 3412, 	-- Nogg <Expert Engineer>
@@ -306,7 +306,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(24, 10, 24),
+					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Viscous Fallout slain
 							["provider"] = { "n", 7079 },	-- Viscous Fallout
@@ -321,7 +321,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 26939,	-- The G-Team (1/3) [Alliance]
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(24, 10, 24),
+					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Electrocutioner 6000 slain
 							["provider"] = { "n", 6235 },	-- Electrocutioner 6000
@@ -333,7 +333,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 26941,	-- The G-Team (2/3) [Alliance]
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(24, 10, 24),
+					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Mekgineer Thermaplugg slain
 							["provider"] = { "n", 7800 },	-- Mekgineer Thermaplugg
@@ -358,7 +358,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 					["timeline"] = { "added 7.3.5.25860" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(24, 10, 24),
+					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Viscous Fallout slain
 							["provider"] = { "n", 7079 },	-- Viscous Fallout
@@ -373,7 +373,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 50338,	-- The G-Team (1/3) [Horde]
 					["timeline"] = { "added 7.3.5.25860" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(24, 10, 24),
+					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Electrocutioner 6000 slain
 							["provider"] = { "n", 6235 },	-- Electrocutioner 6000
@@ -385,7 +385,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 50337,	-- The G-Team (2/3) [Horde]
 					["timeline"] = { "added 7.3.5.25860" },
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(24, 10, 24),
+					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Mekgineer Thermaplugg slain
 							["provider"] = { "n", 7800 },	-- Mekgineer Thermaplugg
@@ -497,6 +497,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						7800,	-- Mekgineer Thermaplugg
 						7079,	-- Viscous Fallout
 					},
+				}),
+				i(5108, {	-- Dark Iron Leather
+					["cr"] = 6212,	-- Dark Iron Agent
 				}),
 				i(9490, {	-- Gizmotron Megachopper
 					["crs"] = {
@@ -780,6 +783,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			n(6228, {	-- Dark Iron Ambassador
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
+					i(5108),	-- Dark Iron Leather
 					i(9456),	-- Glass Shooter
 					i(9457),	-- Royal Diplomatic Scepter
 					i(9455),	-- Emissary Cuffs

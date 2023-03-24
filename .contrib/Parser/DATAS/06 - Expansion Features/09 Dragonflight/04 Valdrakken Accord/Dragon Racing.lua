@@ -16,7 +16,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
 					i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
 					i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
+					i(197594),	-- Windborne Velocidrake: Small Ears (DM!)
 				}),
+				i(204359, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {	-- Reach Racer's Purse
+					i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
+				})),
 				i(200609),	-- Dragon Racing Purse - First Place
 				i(200610),	-- Dragon Racing Purse - Second Place
 				i(200611),	-- Dragon Racing Purse - Third Place
@@ -114,6 +118,20 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					}),
 					q(70432, {	-- Dragonrider Racing - Tyrhold Trial
 						["coord"] = { 57.2, 66.8, THALDRASZUS }
+					}),
+
+						-- The Forbidden Reach --
+					q(73083, {	-- Dragonrider Racing - Caldera Climb
+						["coord"] = { 41.2, 14.3, THE_FORBIDDEN_REACH },
+						["timeline"] = { ADDED_DF_0_7 },
+					}),
+					q(73084, {	-- Dragonrider Racing - Forbidden Reach Rush
+						["coord"] = { 66.9, 5.6, THE_FORBIDDEN_REACH },
+						["timeline"] = { ADDED_DF_0_7 },
+					}),
+					q(73082, {	-- Dragonrider Racing - Southern Reach Route
+						["coord"] = { 63.5, 83.6, THE_FORBIDDEN_REACH },
+						["timeline"] = { ADDED_DF_0_7 },
 					}),
 				}),
 			}),

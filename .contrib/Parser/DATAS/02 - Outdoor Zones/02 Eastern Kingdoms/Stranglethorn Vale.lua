@@ -1438,7 +1438,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(606, {	-- Scaring Shaky
-					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
+					["qg"] = 2501,	-- "Sea Wolf" MacKinley
 					["coord"] = { 27.78, 77.07, STRANGLETHORN_VALE },
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 30,
@@ -1973,7 +1973,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["altQuests"] = { 3638, 3640 },	-- The Pledge of Secrecy
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.3.2000" },
+					["timeline"] = { "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -2232,7 +2232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(609, {	-- Voodoo Dues
-					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
+					["qg"] = 2501,	-- "Sea Wolf" MacKinley
 					["sourceQuest"] = 607,	-- Return to MacKinley
 					["coord"] = { 27.8, 77.1, STRANGLETHORN_VALE },
 					["timeline"] = { "removed 4.0.3" },

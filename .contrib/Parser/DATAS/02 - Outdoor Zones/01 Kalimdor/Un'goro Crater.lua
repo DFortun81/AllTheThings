@@ -873,6 +873,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(11902, {	-- Linken's Sword of Mastery
 							["timeline"] = { "removed 4.0.3" },
 						}),
+						i(11522, {	-- Silver Totem of Aquementas
+							["timeline"] = { "removed 4.0.3" },
+						}),
 						i(11904, {	-- Spirit of Aquementas
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -908,6 +911,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 47,
+					["groups"] = {
+						i(11522, {	-- Silver Totem of Aquementas
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(3942, {	-- Linken's Memory
 					["qg"] = 9117,	-- J.D. Collie
@@ -1579,6 +1587,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24703,	-- An Important Lesson
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
 					["timeline"] = { "added 4.0.3.13277" },
+				}),
+				q(24911, {	-- Tropical Paradise Beckons
+					["providers"] = {
+						{ "n", 38578 },	-- Flinn
+						{ "n", 44374 },	-- Sherm
+					},
+					["coords"] = {
+						{ 33.2, 76.8, TANARIS },
+						{ 40.2, 77.0, TANARIS },
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["isBreadcrumb"] = true,
 				}),
 				q(13887, {	-- Venomhide Eggs
 					["qg"] = 11701,	-- Mor'vek

@@ -7,6 +7,12 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			n(VENDORS, {
+				n(96778,  {	-- Aemara <Bowyer>
+					["coord"] = { 60.0, 52.6, LEGION_DALARAN },
+					["sym"] = {
+						{"sub", "common_vendor", 28989},	--  Aemara <Bowyer> (Dalaran Northrend)
+					},
+				}),
 				n(92936,  {	-- Aimee <Pie, Pastry & Cakes>
 					["coord"] = { 50.85, 29.09, LEGION_DALARAN },
 					["groups"] = {
@@ -24,6 +30,7 @@ _.Zones =
 					["coord"] = { 36.6, 37.6, LEGION_DALARAN },
 					["g"] = {
 						i(44694),	-- Antiseptic-Soaked Dressing
+						i(44692),	-- Dalaran Nurse's Gown
 						i(44693),	-- Wound Dressing
 					},
 				}),
@@ -2892,6 +2899,12 @@ _.Zones =
 						{"sub", "common_vendor", 29499},	-- Bartram Haller <Dagger & Fist Weapon Merchant>
 					},
 				}),
+				n(96785,  {	-- Christi Stockton <Wine Vendor>
+					["coord"] = { 53.8, 32.6, LEGION_DALARAN },
+					["sym"] = {
+						{"sub", "common_vendor", 32337},	--  Christi Stockton <Wine Vendor> (Dalaran Northrend)
+					},
+				}),
 				n(96484,  {	-- Clockwork Assistant <Jepetto's Companion>
 					["coord"] = { 43.4, 45.7, LEGION_DALARAN },
 					["sym"] = {
@@ -2908,6 +2921,12 @@ _.Zones =
 					["coord"] = { 50.8, 55.6, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 28776}, -- Elizabeth Ross <Tabard Vendor>
+					},
+				}),
+				n(96779,  {	-- Dagna Flintlock <Gunsmith>
+					["coord"] = { 59.8, 52.2, LEGION_DALARAN },
+					["sym"] = {
+						{"sub", "common_vendor", 29476},	--  Dagna Flintlock <Gunsmith> (Dalaran Northrend)
 					},
 				}),
 				n(107326, {	-- Draemus <Exotic Pet Supplier>
@@ -3007,6 +3026,12 @@ _.Zones =
 						}),
 						i(136631),	-- Surface-to-Infernal Rocket Launcher
 						i(141047),	-- Technique: Glyph of the Goblin Anti-Grav Flare (RECIPE!)
+					},
+				}),
+				n(97331,  {	-- Icks <Staves>
+					["coord"] = { 49.0, 73.0, LEGION_DALARAN },
+					["sym"] = {
+						{"sub", "common_vendor", 29494},	--  Shen Kang Cheng <Staves> (Dalaran Northrend)
 					},
 				}),
 				n(93530,  {	-- Ildine Sorrowspear <Enchanting Supplies>
@@ -3125,6 +3150,12 @@ _.Zones =
 					["sym"] = {{"sub", "common_vendor", 29716}},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
 					["g"] = {
 						i(129057),	-- Dalaran Disc (TOY!)
+					},
+				}),
+				n(97007,  {	-- Kerta the Bold <Mace & Polearm Merchant>
+					["coord"] = { 54.4, 63.0, LEGION_DALARAN },
+					["sym"] = {
+						{"sub", "common_vendor", 29496},	--  Kerta the Bold <Axe & Polearm Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(93524,  {	-- Lalla Brightweave <Tailoring Supplies>
@@ -5368,6 +5399,12 @@ _.Zones =
 						i(137918),	-- Recipe: Gravenscale Spaulders [Rank 2] (RECIPE!)
 						i(137922),	-- Recipe: Gravenscale Treads [Rank 2] (RECIPE!)
 						i(137920),	-- Recipe: Gravenscale Warhelm [Rank 2] (RECIPE!)
+					},
+				}),
+				n(97332,  {	-- Richard Hatstock <Haberdasher>
+					["coord"] = { 37.2, 55.6, LEGION_DALARAN },
+					["sym"] = {
+						{"sub", "common_vendor", 29702},	--  Chameli Banaphash <Haberdasher> (Dalaran Northrend)
 					},
 				}),
 				n(97342,  {	-- Salan Sunthread <Clothier>

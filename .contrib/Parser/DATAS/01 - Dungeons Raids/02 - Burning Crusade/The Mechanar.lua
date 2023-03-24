@@ -9,14 +9,14 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			TEMPEST_KEEP_MECHANAR,
 			268,	-- Calculation Chamber
 		},
-		["lvl"] = lvlsquish(65, 20, 65),
+		["lvl"] = lvlsquish(65, 65, 20),
 		["groups"] = {
 			n(QUESTS, {
 				q(10665, {	-- Fresh from the Mechanar
 					["qg"] = 21465,	-- David Wayne
 					["sourceQuest"] = 10664,	-- Additional Materials
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["lvl"] = lvlsquish(67, 25, 67),
+					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Overcharged Manacell
 							["provider"] = { "i", 30824 },	-- Overcharged Manacell
@@ -26,7 +26,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29659, {	-- Lost Treasure
 					["description"] = "Automatically provided after killing either Gatewatcher.",
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Blinding Fury
 							["provider"] = { "i", 72663 },	-- Blinding Fury
@@ -36,7 +36,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29658, {	-- The Calculator
 					["sourceQuest"] = 29657,	-- With Great Power, Comes Great Responsibility
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Pathaleon the Calculator slain
 							["provider"] = { "n", 19220 },	-- Pathaleon the Calculator
@@ -46,7 +46,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29657, {	-- With Great Power, Comes Great Responsibility
 					["description"] = "Automatically provided upon starting the instance.",
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Mechano-Lord Capacitus slain
 							["provider"] = { "n", 19219 },	-- Mechano-Lord Capacitus
@@ -180,7 +180,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30634, 1 },	-- Warpforged Key
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

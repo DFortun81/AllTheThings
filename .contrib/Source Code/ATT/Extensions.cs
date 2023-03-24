@@ -109,9 +109,8 @@ namespace ATT
         /// <returns>Whether or not a value was found for the key.</returns>
         public static bool TryGetValue(this IDictionary<string, object> dict, string key, out bool value)
         {
-            if (dict != null && dict.TryGetValue(key, out object o))
+            if (dict != null && dict.TryGetValue(key, out object o) && o.TryConvert(out value))
             {
-                value = Convert.ToBoolean(o);
                 return true;
             }
             value = false;
@@ -127,9 +126,8 @@ namespace ATT
         /// <returns>Whether or not a value was found for the key.</returns>
         public static bool TryGetValue(this IDictionary<string, object> dict, string key, out long value)
         {
-            if (dict != null && dict.TryGetValue(key, out object o))
+            if (dict != null && dict.TryGetValue(key, out object o) && o.TryConvert(out value))
             {
-                value = Convert.ToInt64(o);
                 return true;
             }
             value = 0;
@@ -145,9 +143,8 @@ namespace ATT
         /// <returns>Whether or not a value was found for the key.</returns>
         public static bool TryGetValue(this IDictionary<string, object> dict, string key, out decimal value)
         {
-            if (dict != null && dict.TryGetValue(key, out object o))
+            if (dict != null && dict.TryGetValue(key, out object o) && o.TryConvert(out value))
             {
-                value = Convert.ToDecimal(o);
                 return true;
             }
             value = 0;
@@ -388,10 +385,19 @@ namespace ATT
             typeof(byte), typeof(ulong),   typeof(ushort),
             typeof(uint), typeof(float)
         };
+        private static readonly HashSet<Type> DecimalTypes = new HashSet<Type>
+        {
+            typeof(double),  typeof(decimal), typeof(float)
+        };
 
         public static bool IsNumeric(this Type myType)
         {
             return NumericTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
+        }
+
+        public static bool IsDecimal(this Type myType)
+        {
+            return DecimalTypes.Contains(Nullable.GetUnderlyingType(myType) ?? myType);
         }
 
         /// <summary>

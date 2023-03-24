@@ -1,0 +1,18 @@
+10.1.0.48480
+i(204389),	-- Stone Breaker
+i(204818),	-- Quackomancy Cannon
+i(205045),	-- B.B.F. Fist
+10.1.0.48537
+i(205255),	-- Niffen Diggin' Mits
+
+
+
+
+Missing in ToyDB.lua
+
+10.1.0.48480
+i(204389),	-- Stone Breaker
+i(204818),	-- Quackomancy Cannon
+i(205045),	-- B.B.F. Fist
+10.1.0.48537
+i(205255),	-- Niffen Diggin' Mits

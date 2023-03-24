@@ -22,6 +22,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(72374),	-- Aiding the Accord: Dragonbane Keep
 				q(72373),	-- Aiding the Accord: The Hunt is On
 				q(72375),	-- Aiding the Accord: The Isles Call
+				q(75259, {	-- Aiding the Accord: Zskera Vaults
+					["timeline"] = { ADDED_DF_0_7 },
+				}),
 			})),
 			n(REWARDS, {
 				i(200073, {	-- Valdrakken Treasures

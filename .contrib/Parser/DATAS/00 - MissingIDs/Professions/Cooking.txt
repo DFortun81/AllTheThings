@@ -1,0 +1,585 @@
+0.5.3.3368
+r(2550),	-- Cooking
+r(3102),	-- Cooking
+r(3413),	-- Cooking
+1.0.0.3980
+r(818),	-- Cooking Fire \\ Basic Campfire
+r(18260),	-- Cooking
+1.13.0.28211
+r(30047),	-- Crystal Throat Lozenge
+2.0.0.6080
+r(33359),	-- Cooking
+3.0.1.8622
+r(51296),	-- Cooking
+4.0.1.12911
+r(88053),	-- Cooking
+5.0.3.15890
+r(104381),	-- Cooking
+6.0.1.18179
+r(89719),	-- Archaeology
+r(158765),	-- Cooking
+r(160961),	-- UNUSED
+r(160967),	-- UNUSED
+r(160976),	-- UNUSED
+r(160980),	-- UNUSED
+r(160985),	-- UNUSED
+r(160988),	-- UNUSED
+7.3.0.24473
+r(195128),	-- Cooking
+8.0.1.25902
+r(264632),	-- Classic Cooking
+r(264634),	-- Outland Cooking
+r(264636),	-- Northrend Cooking
+r(264638),	-- Cataclysm Cooking
+r(264640),	-- Pandaria Cooking
+r(264642),	-- Draenor Cooking
+r(264644),	-- Legion Cooking
+r(264646),	-- Kul Tiran Cooking
+8.0.1.25976
+r(265815),	-- Zandalari Tailoring
+8.0.1.26522
+r(265817),	-- Zandalari Cooking
+9.0.1.33978
+r(308416),	-- Quiethounds
+r(308421),	-- Ardenweald Zonewich
+r(308422),	-- Bastion Zonewich
+r(308423),	-- Maldraxxus Zonewich
+r(308424),	-- Revendreth Zonewich
+r(309830),	-- Shadowlands Cooking
+10.1.0.48480
+r(407066),	-- Rocks on the Rocks
+r(407100),	-- Charitable Cheddar
+
+
+
+
+Missing in CookingItemDB.lua
+
+0.5.3.3368
+r(2538),	-- Charred Wolf Meat
+r(2539),	-- Spiced Wolf Meat
+r(2540),	-- Roasted Boar Meat
+r(2541),	-- Coyote Steak
+r(2542),	-- Goretusk Liver Pie
+r(2543),	-- Westfall Stew
+r(2544),	-- Crab Cake
+r(2545),	-- Cooked Crab Claw
+r(2546),	-- Dry Pork Ribs
+r(2547),	-- Redridge Goulash
+r(2548),	-- Succulent Pork Ribs
+r(2549),	-- Seasoned Wolf Kabob
+r(2550),	-- Cooking
+r(2795),	-- Beer Basted Boar Ribs
+r(3102),	-- Cooking
+r(3370),	-- Crocolisk Steak
+r(3371),	-- Blood Sausage
+r(3372),	-- Murloc Fin Soup
+r(3373),	-- Crocolisk Gumbo
+r(3376),	-- Curiously Tasty Omelet
+r(3377),	-- Gooey Spider Cake
+r(3397),	-- Big Bear Steak
+r(3398),	-- Hot Lion Chops
+r(3399),	-- Tasty Lion Steak
+r(3400),	-- Soothing Turtle Bisque
+r(3413),	-- Cooking
+r(4094),	-- Barbecued Buzzard Wing
+r(6412),	-- Kaldorei Spider Kabob
+r(6413),	-- Scorpid Surprise
+r(6414),	-- Roasted Kodo Meat
+r(6415),	-- Fillet of Frenzy
+r(6416),	-- Strider Stew
+r(6417),	-- Dig Rat Stew
+r(6418),	-- Crispy Lizard Tail
+r(6419),	-- Lean Venison
+r(6499),	-- Boiled Clams
+r(6500),	-- Goblin Deviled Clams
+r(6501),	-- Clam Chowder
+r(7213),	-- Giant Clam Scorcho
+r(7751),	-- Brilliant Smallfish
+r(7752),	-- Slitherskin Mackerel
+r(7753),	-- Longjaw Mud Snapper
+r(7754),	-- Loch Frenzy Delight
+r(7755),	-- Bristle Whisker Catfish
+r(7827),	-- Rainbow Fin Albacore
+r(7828),	-- Rockscale Cod
+0.5.5.3494
+r(8238),	-- Savory Deviate Delight
+r(8604),	-- Herb Baked Egg
+r(8607),	-- Smoked Bear Meat
+0.6.0.3592
+r(9513),	-- Thistle Tea
+1.0.0.3980
+r(818),	-- Cooking Fire \\ Basic Campfire
+r(15853),	-- Lean Wolf Steak
+r(15855),	-- Roast Raptor
+r(15856),	-- Hot Wolf Ribs
+r(15861),	-- Jungle Stew
+r(15863),	-- Carrion Surprise
+r(15865),	-- Mystery Stew
+r(15906),	-- Dragonbreath Chili
+r(15910),	-- Heavy Kodo Stew
+r(15915),	-- Spiced Chili Crab
+r(15933),	-- Monster Omelet
+r(15935),	-- Crispy Bat Wing
+r(18238),	-- Spotted Yellowtail
+r(18239),	-- Cooked Glossy Mightfish
+r(18240),	-- Grilled Squid
+r(18241),	-- Filet of Redgill
+r(18242),	-- Hot Smoked Bass
+r(18243),	-- Nightfin Soup
+r(18244),	-- Poached Sunscale Salmon
+r(18245),	-- Lobster Stew
+r(18246),	-- Mightfish Steak
+r(18247),	-- Baked Salmon
+r(18260),	-- Cooking
+1.1.2.4125
+r(20626),	-- Undermine Clam Chowder
+r(20916),	-- Mithril Head Trout \\ Mithril Headed Trout
+1.13.0.28211
+r(21143),	-- Gingerbread Cookie
+r(21144),	-- Winter Veil Egg Nog \\ Egg Nog
+r(21175),	-- Spider Sausage
+r(22480),	-- Tender Wolf Steak
+r(22761),	-- Runn Tum Tuber Surprise
+r(24418),	-- Heavy Crocolisk Stew
+r(24801),	-- Smoked Desert Dumplings
+r(25659),	-- Dirge's Kickin' Chimaerok Chops
+r(25704),	-- Smoked Sagefish
+r(25954),	-- Sagefish Delight
+r(30047),	-- Crystal Throat Lozenge
+2.0.0.6080
+r(28267),	-- Crunchy Spider Surprise
+r(33276),	-- Lynx Steak
+r(33277),	-- Roasted Moongraze Tenderloin
+r(33278),	-- Bat Bites
+r(33279),	-- Buzzard Bites
+r(33284),	-- Ravager Dog
+r(33285),	-- Sporeling Snack
+r(33286),	-- Blackened Basilisk
+r(33287),	-- Roasted Clefthoof
+r(33288),	-- Warp Burger
+r(33289),	-- Talbuk Steak
+r(33290),	-- Blackened Trout
+r(33291),	-- Feltail Delight
+r(33292),	-- Blackened Sporefish
+r(33293),	-- Grilled Mudfish
+r(33294),	-- Poached Bluefish
+r(33295),	-- Golden Fish Sticks
+r(33296),	-- Spicy Crawdad
+r(33359),	-- Cooking
+2.4.3.8606
+r(36210),	-- Clam Bar
+r(37836),	-- Spice Bread
+r(38867),	-- Mok'Nathal Shortribs
+r(38868),	-- Crunchy Serpent
+r(42296),	-- Stewed Trout
+r(42302),	-- Fisherman's Feast
+r(42305),	-- Hot Buttered Trout
+r(43707),	-- Skullfish Soup
+r(43758),	-- Stormchops
+r(43761),	-- Broiled Bloodfin
+r(43765),	-- Spicy Hot Talbuk
+r(43772),	-- Kibler's Bits
+r(43779),	-- Delicious Chocolate Cake
+r(45022),	-- Hot Apple Cider
+r(45695),	-- Captain Rumsey's Lager
+r(46684),	-- Charred Bear Kabobs
+r(46688),	-- Juicy Bear Burger
+3.0.1.8303
+r(44438),	-- Shoveltusk Soup
+r(45547),	-- Succulent Orca Stew
+r(45549),	-- Mammoth Meal
+r(45550),	-- Shoveltusk Steak
+r(45551),	-- Worm Delight
+r(45552),	-- Roasted Worg
+r(45553),	-- Rhino Dogs
+r(45554),	-- Great Feast
+r(45555),	-- Mega Mammoth Meal
+r(45556),	-- Tender Shoveltusk Steak
+r(45557),	-- Spiced Worm Burger
+r(45558),	-- Very Burnt Worg
+r(45559),	-- Mighty Rhino Dogs
+r(45560),	-- Smoked Rockfin
+r(45561),	-- Grilled Bonescale
+r(45562),	-- Sauteed Goby
+r(45563),	-- Grilled Sculpin
+r(45564),	-- Smoked Salmon
+r(45565),	-- Poached Nettlefish
+r(45566),	-- Pickled Fangtooth
+r(45567),	-- Poached Northern Sculpin
+r(45568),	-- Firecracker Salmon
+r(45569),	-- Baked Manta Ray
+r(45570),	-- Imperial Manta Steak
+r(45571),	-- Spicy Blue Nettlefish
+3.0.1.8622
+r(51296),	-- Cooking
+r(53056),	-- Kungaloosh
+3.1.0.9767
+r(57421),	-- Northern Stew
+r(57423),	-- Fish Feast
+r(57433),	-- Spicy Fried Herring
+r(57434),	-- Rhinolicious Wormsteak
+r(57435),	-- Critter Bites
+r(57436),	-- Hearty Rhino
+r(57437),	-- Snapper Extreme
+r(57438),	-- Blackened Worg Steak
+r(57439),	-- Cuttlesteak
+r(57440),	-- Spiced Mammoth Treats
+r(57441),	-- Blackened Dragonfin
+r(57442),	-- Dragonfin Filet
+r(57443),	-- Tracker Snacks
+r(58065),	-- Dalaran Clam Chowder
+r(58512),	-- Tasty Cupcake
+r(58521),	-- Last Week's Mammoth
+r(58523),	-- Bad Clams
+r(58525),	-- Haunted Herring
+r(58527),	-- Gigantic Feast
+r(58528),	-- Small Feast
+r(62044),	-- Pumpkin Pie
+r(62045),	-- Slow-Roasted Turkey
+r(62049),	-- Cranberry Chutney
+r(62050),	-- Spice Bread Stuffing
+r(62051),	-- Candied Sweet Potato
+r(62350),	-- Worg Tartare
+r(64054),	-- Clamlette Magnifique
+r(64358),	-- Black Jelly
+3.3.5.12340
+r(65454),	-- Bread of the Dead
+r(66034),	-- Candied Sweet Potato
+r(66035),	-- Cranberry Chutney
+r(66036),	-- Pumpkin Pie
+r(66037),	-- Slow-Roasted Turkey
+r(66038),	-- Spice Bread Stuffing
+4.0.1.12911
+r(88003),	-- Baked Rockfish
+r(88004),	-- Basilisk Liverdog
+r(88005),	-- Beer-Basted Crocolisk
+r(88006),	-- Blackened Surprise
+r(88011),	-- Broiled Dragon Feast
+r(88012),	-- Broiled Mountain Trout
+r(88013),	-- Chocolate Cookie
+r(88014),	-- Crocolisk Au Gratin
+r(88015),	-- Darkbrew Lager
+r(88016),	-- Delicious Sagefish Tail
+r(88017),	-- Feathered Lure
+r(88018),	-- Fish Fry
+r(88019),	-- Fortune Cookie
+r(88020),	-- Grilled Dragon
+r(88021),	-- Hearty Seafood Soup
+r(88022),	-- Highland Spirits
+r(88024),	-- Lavascale Fillet
+r(88025),	-- Lavascale Minestrone
+r(88028),	-- Lightly Fried Lurker
+r(88030),	-- Lurker Lunch
+r(88031),	-- Mushroom Sauce Mudfish
+r(88033),	-- Pickled Guppy
+r(88034),	-- Blackbelly Sushi
+r(88035),	-- Salted Eye
+r(88036),	-- Seafood Magnifique Feast
+r(88037),	-- Seasoned Crab
+r(88039),	-- Severed Sagefish Head
+r(88042),	-- Skewered Eel
+r(88044),	-- South Island Iced Tea
+r(88045),	-- Starfire Espresso
+r(88046),	-- Tender Baked Turtle
+r(88047),	-- Whitecrest Gumbo
+r(88053),	-- Cooking
+4.3.4.15595
+r(93741),	-- Venison Jerky
+r(96133),	-- Scalding Murglesnout
+5.0.3.15890
+r(104237),	-- Golden Carp Consomme
+r(104297),	-- Fish Cake
+r(104381),	-- Cooking
+r(105190),	-- Pandaren Banquet
+r(105194),	-- Great Pandaren Banquet
+r(124029),	-- Viseclaw Soup
+r(124032),	-- Krasarang Fritters
+r(124223),	-- Pounded Rice Cake
+r(124224),	-- Yak Cheese Curds
+r(124225),	-- Toasted Fish Jerky
+r(124226),	-- Dried Peaches
+r(124227),	-- Dried Needle Mushrooms
+r(124228),	-- Boiled Silkworm Pupa
+r(124229),	-- Red Bean Bun
+r(124230),	-- Tangy Yogurt
+r(124231),	-- Green Curry Fish
+r(124232),	-- Peach Pie
+r(124233),	-- Blanched Needle Mushrooms
+r(124234),	-- Skewered Peanut Chicken
+r(125067),	-- Perfectly Cooked Instant Noodles
+r(125078),	-- Roasted Barley Tea
+r(125080),	-- Pearl Milk Tea
+r(125117),	-- Sliced Peaches
+r(125120),	-- Spicy Salmon
+r(125121),	-- Wildfowl Ginseng Soup
+r(125122),	-- Rice Pudding
+r(125123),	-- Spicy Vegetable Chips
+r(126654),	-- Four Senses Brew
+r(126655),	-- Banana Infused Rum
+6.0.1.18179
+r(89719),	-- Archaeology
+r(145038),	-- Noodle Cart Kit
+r(145061),	-- Deluxe Noodle Cart Kit
+r(145062),	-- Pandaren Treasure Noodle Cart Kit
+r(145167),	-- Grand Noodle Cart Kit
+r(145170),	-- Grand Deluxe Noodle Cart Kit
+r(145197),	-- Grand Pandaren Treasure Noodle Cart Kit
+r(145308),	-- Mango Ice
+r(158765),	-- Cooking
+r(160958),	-- Hearty Elekk Steak
+r(160961),	-- UNUSED
+r(160962),	-- Blackrock Ham
+r(160966),	-- Pan-Seared Talbuk
+r(160967),	-- UNUSED
+r(160968),	-- Braised Riverbeast
+r(160969),	-- Rylak Crepes
+r(160971),	-- Clefthoof Sausages
+r(160973),	-- Steamed Scorpion
+r(160976),	-- UNUSED
+r(160978),	-- Grilled Gulper
+r(160979),	-- Sturgeon Stew
+r(160980),	-- UNUSED
+r(160981),	-- Fat Sleeper Cakes
+r(160982),	-- Fiery Calamari
+r(160983),	-- Skulker Chowder
+r(160984),	-- Talador Surf and Turf
+r(160985),	-- UNUSED
+r(160986),	-- Blackrock Barbecue
+r(160987),	-- Frosty Stew
+r(160988),	-- UNUSED
+r(160989),	-- Sleeper Surprise
+r(160999),	-- Calamari Crepes
+r(161000),	-- Gorgrond Chowder
+r(161001),	-- Saberfish Broth
+r(161002),	-- Grilled Saberfish
+7.3.0.24473
+r(169693),	-- Whole Pot-Roasted Elekk
+r(169696),	-- Marinated Elekk Steak
+r(169699),	-- Seasoned Elekk Ribeye
+r(173978),	-- Feast of Blood
+r(173979),	-- Feast of the Waters
+r(180757),	-- Salty Squid Roll
+r(180758),	-- Pickled Eel
+r(180759),	-- Jumbo Sea Dog
+r(180760),	-- Whiptail Fillet
+r(180761),	-- Buttered Sturgeon
+r(180762),	-- Sleeper Sushi
+r(185704),	-- Lemon Herb Filet
+r(185705),	-- Fancy Darkmoon Feast
+r(185708),	-- Sugar-Crusted Fish Feast
+r(190788),	-- Fel Eggs and Ham
+r(195128),	-- Cooking
+r(201413),	-- Salt and Pepper Shank
+r(201496),	-- Deep-Fried Mossgill
+r(201497),	-- Pickled Stormray
+r(201498),	-- Faronaar Fizz
+r(201499),	-- Spiced Rib Roast
+r(201500),	-- Leybeque Ribs
+r(201501),	-- Suramar Surf and Turf
+r(201502),	-- Barracuda Mrglgagh
+r(201503),	-- Koi-Scented Stormray
+r(201504),	-- Drogbar-Style Salmon
+r(201505),	-- The Hungry Magister
+r(201506),	-- Azshari Salad
+r(201507),	-- Nightborne Delicacy Platter
+r(201508),	-- Seed-Battered Fish Plate
+r(201511),	-- Fishbrul Special
+r(201512),	-- Dried Mackerel Strips
+r(201513),	-- Bear Tartare
+r(201514),	-- Fighter Chow
+r(201515),	-- Hearty Feast
+r(201516),	-- Lavish Suramar Feast
+r(201524),	-- Salt and Pepper Shank
+r(201525),	-- Deep-Fried Mossgill
+r(201526),	-- Pickled Stormray
+r(201527),	-- Faronaar Fizz
+r(201528),	-- Spiced Rib Roast
+r(201529),	-- Leybeque Ribs
+r(201530),	-- Suramar Surf and Turf
+r(201531),	-- Barracuda Mrglgagh
+r(201532),	-- Koi-Scented Stormray
+r(201533),	-- Drogbar-Style Salmon
+r(201534),	-- The Hungry Magister
+r(201535),	-- Azshari Salad
+r(201536),	-- Nightborne Delicacy Platter
+r(201537),	-- Seed-Battered Fish Plate
+r(201538),	-- Fishbrul Special
+r(201539),	-- Dried Mackerel Strips
+r(201540),	-- Bear Tartare
+r(201541),	-- Fighter Chow
+r(201542),	-- Hearty Feast
+r(201543),	-- Lavish Suramar Feast
+r(201544),	-- Salt and Pepper Shank
+r(201545),	-- Deep-Fried Mossgill
+r(201546),	-- Pickled Stormray
+r(201547),	-- Faronaar Fizz
+r(201548),	-- Spiced Rib Roast
+r(201549),	-- Leybeque Ribs
+r(201550),	-- Suramar Surf and Turf
+r(201551),	-- Barracuda Mrglgagh
+r(201552),	-- Koi-Scented Stormray
+r(201553),	-- Drogbar-Style Salmon
+r(201554),	-- The Hungry Magister
+r(201555),	-- Azshari Salad
+r(201556),	-- Nightborne Delicacy Platter
+r(201557),	-- Seed-Battered Fish Plate
+r(201558),	-- Fishbrul Special
+r(201559),	-- Dried Mackerel Strips
+r(201560),	-- Bear Tartare
+r(201561),	-- Fighter Chow
+r(201562),	-- Hearty Feast
+r(201563),	-- Lavish Suramar Feast
+r(201683),	-- Crispy Bacon
+r(201684),	-- Crispy Bacon
+r(201685),	-- Crispy Bacon
+r(230046),	-- Spiced Falcosaur Omelet
+r(251258),	-- Feast of the Fishes
+8.0.1.25902
+r(264632),	-- Classic Cooking
+r(264634),	-- Outland Cooking
+r(264636),	-- Northrend Cooking
+r(264638),	-- Cataclysm Cooking
+r(264640),	-- Pandaria Cooking
+r(264642),	-- Draenor Cooking
+r(264644),	-- Legion Cooking
+r(264646),	-- Kul Tiran Cooking
+8.0.1.25976
+r(265815),	-- Zandalari Tailoring
+8.0.1.26367
+r(259411),	-- Kul Tiramisu
+r(259412),	-- Kul Tiramisu
+r(259413),	-- Kul Tiramisu
+r(259414),	-- Honey-Glazed Haunches
+r(259415),	-- Honey-Glazed Haunches
+r(259416),	-- Honey-Glazed Haunches
+r(259418),	-- Galley Banquet
+r(259419),	-- Galley Banquet
+r(259420),	-- Galley Banquet
+r(259421),	-- Bountiful Captain's Feast
+r(259422),	-- Bountiful Captain's Feast
+r(259423),	-- Bountiful Captain's Feast
+r(259424),	-- Ravenberry Tarts
+r(259425),	-- Ravenberry Tarts
+r(259426),	-- Ravenberry Tarts
+r(259427),	-- Swamp Fish 'n Chips
+r(259428),	-- Swamp Fish 'n Chips
+r(259429),	-- Swamp Fish 'n Chips
+r(259430),	-- Grilled Catfish \\ Grilled Snapper
+r(259431),	-- Grilled Catfish \\ Grilled Snapper
+r(259432),	-- Grilled Catfish \\ Grilled Snapper
+r(259433),	-- Seasoned Loins
+r(259434),	-- Seasoned Loins
+r(259435),	-- Seasoned Loins
+r(259436),	-- Loa Loaf
+r(259437),	-- Loa Loaf
+r(259438),	-- Loa Loaf
+r(259439),	-- Sailor's Pie
+r(259440),	-- Sailor's Pie
+r(259441),	-- Sailor's Pie
+r(259442),	-- Mon'Dazi
+r(259443),	-- Mon'Dazi
+r(259444),	-- Mon'Dazi
+r(259445),	-- Spiced Snapper \\ Spiced Catfish
+r(259446),	-- Spiced Snapper \\ Spiced Catfish
+r(259447),	-- Spiced Snapper \\ Spiced Catfish
+8.0.1.26522
+r(265817),	-- Zandalari Cooking
+8.0.1.26871
+r(280282),	-- Heartsbane Hexwurst
+8.1.0.27934
+r(286381),	-- Honey Potpie
+8.1.0.27985
+r(287108),	-- Sanguinated Feast
+r(287110),	-- Sanguinated Feast
+r(287112),	-- Sanguinated Feast
+8.1.0.28151
+r(288027),	-- Wild Berry Bread
+r(288028),	-- Wild Berry Bread
+r(288029),	-- Wild Berry Bread
+r(288030),	-- Seasoned Steak and Potatoes
+r(288032),	-- Seasoned Steak and Potatoes
+r(288033),	-- Seasoned Steak and Potatoes
+8.1.0.28440
+r(290471),	-- Boralus Blood Sausage
+r(290472),	-- Boralus Blood Sausage
+r(290473),	-- Boralus Blood Sausage
+8.2.0.30080
+r(297074),	-- Fragrant Kakavia
+r(297075),	-- Fragrant Kakavia
+r(297077),	-- Fragrant Kakavia
+r(297078),	-- Mech-Dowel's "Big Mech"
+r(297079),	-- Mech-Dowel's "Big Mech"
+r(297080),	-- Mech-Dowel's "Big Mech"
+r(297081),	-- Baked Port Tato
+r(297082),	-- Baked Port Tato
+r(297083),	-- Baked Port Tato
+r(297084),	-- Abyssal-Fried Rissole
+r(297085),	-- Abyssal-Fried Rissole
+r(297086),	-- Abyssal-Fried Rissole
+r(297087),	-- Bil'Tong
+r(297088),	-- Bil'Tong
+r(297089),	-- Bil'Tong
+r(297105),	-- Famine Evaluator And Snack Table
+r(297106),	-- Famine Evaluator And Snack Table
+r(297107),	-- Famine Evaluator And Snack Table
+8.2.0.30168
+r(301392),	-- Mecha-Bytes
+8.2.0.30495
+r(303788),	-- Unagi Skewer
+8.3.0.32151
+r(314959),	-- Baked Voidfin \\ G'Zpacho
+r(314960),	-- K'Bab
+r(314961),	-- Dubious Delight \\ B'Sque
+r(314962),	-- Ghastly Goulash \\ G'Ulash
+r(314963),	-- Grilled Gnasher \\ B'Rscht
+9.0.1.33978
+r(308397),	-- Butterscotch Marinated Ribs \\ 9.0 Cooking - Crit Food 01
+r(308400),	-- Spinefin Souffle and Fries \\ Phantasmal Souffle and Fries \\ 9.0 Cooking - Crit Food 02
+r(308402),	-- Surprisingly Palatable Feast \\ 9.0 Cooking - Feast 01
+r(308403),	-- Feast of Gluttonous Hedonism \\ 9.0 Cooking - Feast 02
+r(308404),	-- Cinnamon Bonefish Stew \\ 9.0 Cooking - Haste Food 01
+r(308405),	-- Tenebrous Crown Roast Aspic \\ 9.0 Cooking - Haste Food 02
+r(308410),	-- Biscuits and Caviar \\ 9.0 Cooking - Health Food 01
+r(308411),	-- Candied Amberjack Cakes \\ 9.0 Cooking - Health Food 02
+r(308412),	-- Meaty Apple Dumplings \\ 9.0 Cooking - Mastery Food 01
+r(308413),	-- Iridescent Ravioli with Apple Sauce \\ Crawler Ravioli with Apple Sauce \\ 9.0 Cooking - Mastery Food 02
+r(308414),	-- Pickled Meat Smoothie \\ 9.0 Cooking - Stam Food 01
+r(308415),	-- Banana Beef Pudding \\ 9.0 Cooking - Stam Food 02
+r(308416),	-- Quiethounds
+r(308417),	-- Seraph Tenders \\ Health / Mana Regenwich
+r(308419),	-- Smothered Shank \\ Pungent Sole Pinwheel
+r(308420),	-- Fried Bonefish \\ Speed Boostwich
+r(308421),	-- Ardenweald Zonewich
+r(308422),	-- Bastion Zonewich
+r(308423),	-- Maldraxxus Zonewich
+r(308424),	-- Revendreth Zonewich
+r(308425),	-- Sweet Silvergill Sausages \\ 9.0 Cooking - Vers Food 01
+r(308426),	-- Steak a la Mode \\ 9.0 Cooking - Vers Food 02
+r(309830),	-- Shadowlands Cooking
+9.0.1.35167
+r(338100),	-- Arden Apple Pie
+r(338101),	-- Oat Pie Crust
+r(338102),	-- Sliced Arden Apples
+r(338105),	-- Steward Stew
+r(338106),	-- Grazer Bone Broth
+r(338107),	-- Diced Vegetables
+r(338110),	-- Spider Jerky
+r(338113),	-- Thick Spider Meat
+r(338115),	-- Ember Sauce
+r(338116),	-- Skewered Meats
+r(338117),	-- Seared Cutlets
+9.0.2.36294
+r(347176),	-- Extra Sugary Fish Feast
+9.0.2.36512
+r(347457),	-- Extra Lemony Herb Filet
+r(347509),	-- Extra Fancy Darkmoon Feast
+9.1.0.38394
+r(354764),	-- Twilight Tea
+r(354766),	-- Bonemeal Bread
+r(354768),	-- Porous Rock Candy
+9.2.0.41089
+r(359333),	-- Empty Kettle of Stone Soup
+10.1.0.48480
+r(407066),	-- Rocks on the Rocks
+r(407100),	-- Charitable Cheddar

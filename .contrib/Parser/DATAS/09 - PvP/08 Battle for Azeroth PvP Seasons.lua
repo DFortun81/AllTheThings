@@ -10,7 +10,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 				ach(12959),	-- Challenger: Battle for Azeroth Season 1
 				ach(13199),	-- Combatant: Battle for Azeroth Season 1
 				ach(12962, {	-- Duelist: Battle for Azeroth Season 1
-					illusion(6096),		-- Dreadflame
+					ill(6096),	-- Dreadflame
 					i(164575),	-- Dread Gladiator's Cloak (A)
 					i(164574),	-- Dread Gladiator's Cloak (H)
 				}),
@@ -523,16 +523,16 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			filter(MOUNTS, {
 				i(163123, {	-- Vicious War Riverbeast (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { 
-						"added 8.0.0", 
-						"removed 8.1.0" 
+					["timeline"] = {
+						"added 8.0.0",
+						"removed 8.1.0"
 					},
 				}),
 				i(163124, {	-- Vicious War Clefthoof (MOUNT!)
 					["races"] = HORDE_ONLY,
-					["timeline"] = { 
-						"added 8.0.0", 
-						"removed 8.1.0" 
+					["timeline"] = {
+						"added 8.0.0",
+						"removed 8.1.0"
 					},
 				}),
 			}),
@@ -542,7 +542,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 				ach(13203),	-- Challenger: Battle for Azeroth Season 2
 				ach(13204),	-- Combatant: Battle for Azeroth Season 2
 				ach(13209, {	-- Duelist: Battle for Azeroth Season 2
-					illusion(6096),		-- Dreadflame
+					ill(6096),	-- Dreadflame
 					i(165060),	-- Alliance Sinister Gladiator's Cloak
 					i(165059),	-- Horde Sinister Gladiator's Cloak
 				}),
@@ -1030,9 +1030,9 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 				}),
 				filter(PLATE, {
 					i(164840),	-- Sinister Gladiator's Plate Armguards (A)
-					i(164813),	-- Sinister Gladiator's Plate Chestpiece (A)															
+					i(164813),	-- Sinister Gladiator's Plate Chestpiece (A)
 					i(164821),	-- Sinister Gladiator's Plate Gauntlets (A)
-					i(164835),	-- Sinister Gladiator's Plate Girdle (A)					
+					i(164835),	-- Sinister Gladiator's Plate Girdle (A)
 					i(164811),	-- Sinister Gladiator's Plate Helm (A)
 					i(164827),	-- Sinister Gladiator's Plate Legguards (A)
 					i(164832),	-- Sinister Gladiator's Plate Pauldrons (A)
@@ -1079,16 +1079,16 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			filter(MOUNTS, {
 				i(165019, {	-- Vicious Black Warsaber (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { 
-						"added 8.1.0", 
-						"removed 8.2.0" 
+					["timeline"] = {
+						"added 8.1.0",
+						"removed 8.2.0"
 					},
 				}),
 				i(165020, {	-- Vicious Black Bonesteed (MOUNT!)
 					["races"] = HORDE_ONLY,
-					["timeline"] = { 
-						"added 8.1.0", 
-						"removed 8.2.0" 
+					["timeline"] = {
+						"added 8.1.0",
+						"removed 8.2.0"
 					},
 				}),
 			}),
@@ -1098,7 +1098,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 				ach(13634),	-- Challenger: Battle for Azeroth Season 3
 				ach(13639),	-- Combatant: Battle for Azeroth Season 3
 				ach(13642, {	-- Duelist: Battle for Azeroth Season 3
-					illusion(6096),		-- Dreadflame
+					ill(6096),	-- Dreadflame
 					i(167382),	-- Notorious Gladiator's Cloak (A)
 					i(167381),	-- Notorious Gladiator's Cloak (H)
 				}),
@@ -1587,7 +1587,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 					i(167238),	-- Notorious Gladiator's Silk Leggings (H)
 					i(167235),	-- Notorious Gladiator's Silk Treads (H)
 					i(167240),	-- Notorious Gladiator's Silk Cuffs (H)
-					i(167236),	-- Notorious Gladiator's Silk Gloves (H)				
+					i(167236),	-- Notorious Gladiator's Silk Gloves (H)
 				}),
 				filter(LEATHER, {
 					i(167281),	-- Notorious Gladiator's Leather Helm (A)
@@ -1608,7 +1608,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 					i(167274),	-- Notorious Gladiator's Leather Boots (A)
 				}),
 				filter(MAIL, {
-					i(167296),	-- Notorious Gladiator's Chain Armbands (A) 
+					i(167296),	-- Notorious Gladiator's Chain Armbands (A)
 					i(167269),	-- Notorious Gladiator's Chain Armor (A)
 					i(167278),	-- Notorious Gladiator's Chain Gauntlets (A)
 					i(167280),	-- Notorious Gladiator's Chain Helm (A)
@@ -1616,7 +1616,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 					i(167273),	-- Notorious Gladiator's Chain Sabatons (A)
 					i(167289),	-- Notorious Gladiator's Chain Spaulders (A)
 					i(167292),	-- Notorious Gladiator's Chain Waistguard (A)
-					i(167257),	-- Notorious Gladiator's Chain Armbands (H) 
+					i(167257),	-- Notorious Gladiator's Chain Armbands (H)
 					i(167250),	-- Notorious Gladiator's Chain Armor (H)
 					i(167252),	-- Notorious Gladiator's Chain Gauntlets (H)
 					i(167253),	-- Notorious Gladiator's Chain Helm (H)
@@ -1676,15 +1676,15 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			filter(MOUNTS, {
 				i(163122, {	-- Vicious War Basilisk (A) (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { 
-						"added 8.2.0", 
+					["timeline"] = {
+						"added 8.2.0",
 						"removed 8.3.0"
 					},
 				}),
 				i(163121, {	-- Vicious War Basilisk (H) (MOUNT!)
 					["races"] = HORDE_ONLY,
-					["timeline"] = { 
-						"added 8.2.0", 
+					["timeline"] = {
+						"added 8.2.0",
 						"removed 8.3.0"
 					},
 				}),
@@ -1702,7 +1702,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 					["filterID"] = MOUNTS,
 				}),
 				ach(13964, {	-- Duelist: Battle for Azeroth Season 4
-					illusion(6096),		-- Dreadflame
+					ill(6096),	-- Dreadflame
 					i(172671),	-- Corrupted Gladiator's Cloak (A)
 					i(172670),	-- Corrupted Gladiator's Cloak (H)
 				}),
@@ -2121,7 +2121,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 					i(172561),	-- Corrupted Gladiator's Silk Treads (A)
 					i(172524),	-- Corrupted Gladiator's Silk Treads (H)
 				}),
-				filter(LEATHER, { 
+				filter(LEATHER, {
 					i(172570),	-- Corrupted Gladiator's Leather Helm (A)
 					i(172575),	-- Corrupted Gladiator's Leather Spaulders (A)
 					i(172536),	-- Corrupted Gladiator's Leather Spaulders (H)
@@ -2139,7 +2139,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 					i(172599),	-- Corrupted Gladiator's Leather Pants (H)
 					i(172596),	-- Corrupted Gladiator's Leather Footguards (H)
 				}),
-				filter(MAIL, { 
+				filter(MAIL, {
 					i(172569),	-- Corrupted Gladiator's Chain Helm (A)
 					i(172542),	-- Corrupted Gladiator's Chain Helm (H)
 					i(172578),	-- Corrupted Gladiator's Chain Spaulders (A)
@@ -2207,15 +2207,15 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			filter(MOUNTS, {
 				i(173714, {	-- Vicious White Warsaber (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { 
-						"added 8.3.0", 
+					["timeline"] = {
+						"added 8.3.0",
 						"removed 9.0.0"
 					},
 				}),
 				i(173713, {	-- Vicious White Bonesteed (MOUNT!)
 					["races"] = HORDE_ONLY,
-					["timeline"] = { 
-						"added 8.3.0", 
+					["timeline"] = {
+						"added 8.3.0",
 						"removed 9.0.0"
 					},
 				}),
@@ -2279,7 +2279,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(63573),	-- Dread Gladiator's Chain (Hunter, Shaman - Alliance)
 		q(63574),	-- Dread Gladiator's Leathers (Rogue, Monk, Druid, Demon Hunter - Alliance)
 		q(63575),	-- Dread Gladiator's Vestment (Priest, Mage, Warlock - Alliance)
-		
+
 		-- PvP Arsenals
 		q(63223),	-- Dread Gladiator's Arsenal (Alliance)
 		q(63224),	-- Dread Gladiator's Arsenal (Horde)

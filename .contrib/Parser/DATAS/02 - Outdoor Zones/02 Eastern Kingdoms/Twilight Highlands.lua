@@ -505,7 +505,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28038, {	-- Blood in the Highlands
 					["sourceQuests"] = {
-						28871,	-- Crushing the Wildhammer
+						27751,	-- Crushing the Wildhammer
 						27929,	-- Drag 'em Down
 					},
 					["isBreadcrumb"] = true,
@@ -2314,6 +2314,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.8, 57.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(44643),	-- Dalaran Bow
+						i(44637),	-- Dalaran Crossbow
 						i(11308, {	-- Sylvan Shortbow
 							["isLimited"] = true,
 						}),

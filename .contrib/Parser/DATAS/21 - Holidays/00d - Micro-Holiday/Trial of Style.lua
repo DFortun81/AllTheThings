@@ -5,6 +5,10 @@ local TRIAL_OF_STYLE_TOKEN = 151134;
 root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(TRIAL_OF_STYLE, bubbleDown({ ["timeline"] = { "added 7.2.5" } }, {
 	n(REWARDS, {
 		i(TRIAL_OF_STYLE_TOKEN),
+		i(147573),	-- Trial of Style Reward: First Place
+		i(147574),	-- Trial of Style Reward: Second Place
+		i(147575),	-- Trial of Style Reward: Third Place
+		i(147576),	-- Trial of Style Consolation Prize
 	}),
 	n(VENDORS, {
 		["crs"] = {
@@ -330,7 +334,6 @@ root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(TRIAL_OF_STYLE, bubbleD
 			i(202298, {	-- Trader's Bicorne
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 }, },
 				["timeline"] = { ADDED_DF_0_5 },
-				["description"] = "You will get this hat for free if you participate in the Trial of Style between March 20th and March 24th 2023.",	--TODO: remove this line after the event is over
 			}),
 			i(190544, {	-- Ultramafic Girdle
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },

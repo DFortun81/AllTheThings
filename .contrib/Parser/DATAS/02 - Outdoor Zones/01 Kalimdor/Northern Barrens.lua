@@ -432,6 +432,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
 					["lvl"] = lvlsquish(10, 10, 5),
+					["groups"] = {
+						i(6653, {	-- Torch of the Dormant Flame
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(1525, {	-- Call of Fire (3/5)
 					["qg"] = 5900,	-- Telf Joolam
@@ -480,6 +485,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 38.6, 58.2, DUROTAR },
 							["cr"] = 5893,	-- Minor Manifestation of Fire
 						}),
+						i(6653, {	-- Torch of the Dormant Flame
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(1527, {	-- Call of Fire (5/5)
@@ -497,6 +505,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(3599),	-- Searing Totem
 						i(5176, {	-- Fire Totem
 							["description"] = "You must keep this in your bags forever.",
+						}),
+						i(6654, {	-- Torch of the Eternal Flame
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
@@ -2033,8 +2044,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 2458,	-- Deep Cover
 					["coord"] = { 55.4, 5.6, THE_BARRENS },
 					["timeline"] = { "removed 4.0.3" },
-					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/2 Mutated Venture Co. Drone slain
@@ -2272,6 +2283,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(7676),	-- Thistle Tea
 					},
+				}),
+				q(26642, {	-- Preserving the Barrens
+					["qg"] = 35068,	-- Gotura Fourwinds
+					["altQuests"] = { 28494 },	-- Warchief's Command: Northern Barrens!
+					["coord"] = { 47.6, 71.3, ORGRIMMAR },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(26769, {	-- Raging River Ride
 					["qg"] = 3391,	-- Gazlowe

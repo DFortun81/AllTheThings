@@ -1111,8 +1111,7 @@ app.L = {
 	-- Events
 		[-176] = 3753381,																	-- Weekly Holidays
 	-- New Characters
-		[-210] = 1530081,																	-- Allied New Characters
-		[-211] = 1530081,																	-- New Characters
+		[-211] = 1530081,																	-- New Character
 	-- Treasure Chest
 		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
 	-- Dalaran Sub-Zone
@@ -1142,7 +1141,8 @@ app.L = {
 	-- War Campaign
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
 	-- Allied Races
-		[-254] = "Interface\\Icons\\FactionChange",											-- Allied Races & Heritage
+		[-254] = "Interface\\Icons\\FactionChange",											-- Allied Races
+		[-255] = "Interface\\Icons\\vas_guildfactionchange",								-- Heritage
 	-- Mailbox
 		[-297] = "Interface\\Icons\\inv_letter_17",											-- Mailbox
 	-- Garrison Missons
@@ -1362,7 +1362,6 @@ app.L = {
 		--[-918] = Uses Different Icons														-- Tier 3
 		[-920] = "Interface\\Icons\\ui_sigil_necrolord",									-- Covenant: Necrolord
 		--[-921] = Uses Different Icons														-- Sanctum Upgrades
-		[-922] = 132334,																	-- Theater of Pain
 		[-923] = "Interface\\Icons\\sanctum_features_buildabom",							-- Abomination Factory (Necrolord)
 		--[-924] = Uses Different Icons														-- Transport Network
 		--[-925] = Uses Different Icons														-- Tier 4
@@ -1398,22 +1397,13 @@ app.L = {
 		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
-	-- Temp Sets for Creation Catalyst
-		[-1006] = app.asset("Difficulty_LFR"),
-		[-1007] = app.asset("Difficulty_Normal"),
-		[-1008] = app.asset("Difficulty_Heroic"),
-		[-1009] = app.asset("Difficulty_Mythic"),
-		[-1010] = "Interface\\Worldmap\\GlowSkull_64Purple",
-		[-1011] = "Interface\\Worldmap\\GlowSkull_64Red",
-	-- Temp
-		[-1099] = "Interface\\Icons\\inv_legioncampaign04",											-- Campaign
 	-- Dragonflight
 		[-1100] = "Interface\\Icons\\ability_dragonriding_glyph01",									-- Drakewatcher Manuscripts
 		[-1101] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_trinket_1ragingelement_air",	-- Primal Storms
 		[-1102] = "Interface\\Icons\\ability_evoker_dragonrage2",									-- Wrathion & Sabellian
 		[-1110] = "Interface\\Icons\\ui_majorfaction_expedition",									-- Dragonscale Expedition
 		[-1111] = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",							-- Climbing
-		[-1112] = "Interface\\Icons\\inv_misc_-selfiecamera_01",									-- Cataloging
+		[-1112] = 1109168,																			-- Cataloging
 		[-1113] = "Interface\\Icons\\inv_misc_ancient_mana",										-- Ancient Waygates
 		[-1120] = "Interface\\Icons\\ui_majorfaction_centaur",										-- Maruuk Centaur
 		[-1121] = "Interface\\Icons\\ability_racial_returntocamp",									-- Clan Aylaag
@@ -1430,6 +1420,7 @@ app.L = {
 		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Dragonriding Racing
 		[-1143] = 237274,																			-- Every 30 min Rare
 		[-1144] = "Interface\\Icons\\inv_scroll_11",												-- Weekly Profession Header
+		[-1200] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_ring_4_omni",					-- Zskera Vaults
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1450,7 +1441,7 @@ app.L = {
 	-- Tournament
 		[-4191] = "Interface\\Icons\\Achievement_PVP_Legion08",								-- Tournament
 	-- Class Trial
-		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Class Trial Item Sets
+		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Class Trial
 	-- WoW Anniversary
 		[-5353] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 4th Anniversary
 		[-5354] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- 5th Anniversary
@@ -1652,7 +1643,6 @@ app.L = {
 	-- Events
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
 	-- Item Sets
-		[-210] = ALLIED.." "..NEW.." "..CHARACTER,								-- Allied New Character
 		[-211] = NEW.." "..CHARACTER,											-- New Character
 	-- Treasure Chest
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
@@ -1683,7 +1673,8 @@ app.L = {
 	-- War Campaign
 		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
 	-- Allied Races
-		[-254] = "Allied Races & Heritage",										-- Allied Races & Heritage
+		[-254] = "Allied Races",												-- Allied Races, do not replace with CHARACTER_CREATE_MORE_RACES, it's nil
+		[-255] = "Heritage",													-- Heritage
 	-- Mailbox
 		[-297] = MINIMAP_TRACKING_MAILBOX,										-- Mailbox
 	-- Garrison Missions
@@ -1907,11 +1898,6 @@ app.L = {
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
 		[-903] = "Zone Rewards",												-- Zone Rewards
 		[-905] = GetSpellInfo(280630),											-- Command Table
-		[-907] = "Dead Blanchy",												-- Dead Blanchy
-		[-909] = "Hunt: Death Elementals",										-- Hunt: Death Elementals
-		[-910] = "Hunt: Alpha Devourers",										-- Hunt: Alpha Devourers
-		[-911] = "Hunt: Shadehounds",											-- Hunt: Shadehounds
-		[-912] = "Hunt: Winged Soul Eaters",									-- Hunt: Winged Soul Eaters
 		[-914] = COVENANT_MISSIONS_TITLE,										-- Adventures
 		[-915] = ANIMA_DIVERSION_ORIGIN_TOOLTIP,								-- Anima Conductor
 		[-916] = string.format(COVENANT_SANCTUM_TIER, 1),						-- Tier 1
@@ -1922,7 +1908,6 @@ app.L = {
 		-- SL Maldraxxus/Necrolord
 		[-920] = GetSpellInfo(321078),											-- Necrolord
 		[-921] = "Sanctum Upgrades",											-- Sanctum Upgrades
-		[-922] = C_Map.GetAreaInfo(11465),										-- Theater of Pain
 		[-923] = COVENANT_SANCTUM_FEATURE_NECROLORDS,							-- Abomination Factory
 		[-924] = "Transport Network",											-- Transport Network
 		[-925] = string.format(COVENANT_SANCTUM_TIER, 4),						-- Tier 4
@@ -1961,15 +1946,6 @@ app.L = {
 		[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
-	-- Temp Sets for Creation Catalyst
-		[-1006] = "Raid Finder Alternative",										-- Raid Finder Alternative
-		[-1007] = "Normal Alternative",												-- Normal Alternative
-		[-1008] = "Heroic Alternative",												-- Heroic Alternative
-		[-1009] = "Mythic Alternative",												-- Mythic Alternative
-		[-1010] = "Gladiator Alternative",											-- Gladiator Alternative
-		[-1011] = "Elite Alternative",												-- Elite Alternative
-	-- Temp
-		[-1099] = TRACKER_HEADER_CAMPAIGN_QUESTS,									-- Campaign
 	-- Dragonflight
 		[-1100] = "Drakewatcher Manuscripts",										-- Drakewatcher Manuscripts
 		[-1101] = "Primal Storms",													-- Primal Storms
@@ -1993,6 +1969,7 @@ app.L = {
 		[-1142] = GetSpellInfo(400433),												-- Dragonriding Racing
 		[-1143] = "DF Rare Rotation",												-- DF Rare Rotation (Every 30 min Rare)
 		[-1144] = "Weekly Profession Knowledge",									-- Weekly Profession Header
+		[-1200] = "Zskera Vaults",													-- Zskera Vaults
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",
@@ -2021,7 +1998,7 @@ app.L = {
 		[-5204] = "Challenge Appearance",										-- Challenge Appearance
 		[-5205] = "Hidden Appearance",											-- Hidden Appearance
 		-- Class Sets
-		[-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",		-- Class Trial Item Sets
+		[-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,					-- Class Trial
 		-- Note!! We are localizing them here so when we filter the achievement we don't filter the entire section which is bad!
 		[-5353] = select(2,GetAchievementInfo(2398)),							-- 4th Anniversary
 		[-5354] = select(2,GetAchievementInfo(4400)),							-- 5th Anniversary

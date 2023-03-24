@@ -135,11 +135,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 23903, 1 },	-- Nurguni's Supplies
 					},
 					["races"] = { DRAENEI },
-					-- #if AFTER CATA
-					["lvl"] = lvlsquish(5, 1, 5),
-					-- #else
-					["lvl"] = lvlsquish(10, 1, 10),
-					-- #endif
+					["lvl"] = lvlsquish(10, 5, 1),
 				}),
 				q(10366, {	-- Jol
 					["qg"] = 17483,	-- Tullas <Paladin Trainer>
@@ -147,7 +143,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(12, 10, 12),
+					["lvl"] = lvlsquish(12, 12, 10),
 				}),
 				q(32661, {	-- Learn To Ride
 					["qg"] = 20914,	-- Aalun <Riding Trainer>
@@ -158,7 +154,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = { DRAENEI },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 10, 20),
+					["lvl"] = lvlsquish(20, 20, 10),
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -191,7 +187,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = {
 						{ "i", 23926, 1 },	-- Tome of Divinity
 					},
-					["lvl"] = lvlsquish(12, 10, 12),
+					["lvl"] = lvlsquish(12, 12, 10),
 				}),
 				q(9600, {	-- Redemption (2/2)
 					["qg"] = 17509,	-- Jol <Paladin Trainer>
@@ -201,7 +197,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { BLOODMYST_ISLE },
 					["classes"] = { PALADIN },
 					["races"] = { DRAENEI },
-					["lvl"] = lvlsquish(12, 10, 12),
+					["lvl"] = lvlsquish(12, 12, 10),
 					["groups"] = {
 						objective(1, {	-- Young Furbolg Shaman Resurrected
 							["provider"] = { "i", 6866 },	-- Symbol of Life
@@ -226,11 +222,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 23903, 1 },	-- Nurguni's Supplies
 					},
 					["races"] = { DRAENEI },
-					-- #if AFTER CATA
-					["lvl"] = lvlsquish(5, 1, 5),
-					-- #else
-					["lvl"] = lvlsquish(10, 1, 10),
-					-- #endif
+					["lvl"] = lvlsquish(10, 5, 1),
 				}),
 			}),
 			n(VENDORS, {

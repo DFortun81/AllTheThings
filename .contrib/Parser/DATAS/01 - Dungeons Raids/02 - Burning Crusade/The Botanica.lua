@@ -6,13 +6,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["lore"] = "Since Kael'thas and his blood elves seized Tempest Keep from the naaru they have had quite the time to investigate and find a usage for the technology in it. The Botanica appears to be the satellite chosen especially for this purpose. Here, blood elf scientists carry out experiments on the flora in Outland, how naaru technology can be used to create and manipulate living beings, and how all this can grant the blood elves new powers. It seems, however, that the results were not quite as expected, and thus some of the experiments have gotten out of control...",
 		["coord"] = { 71.74, 54.95, NETHERSTORM },	-- The Botanica, Netherstorm
 		["mapID"] = TEMPEST_KEEP_BOTANICA,
-		["lvl"] = lvlsquish(65, 20, 65),
+		["lvl"] = lvlsquish(65, 65, 20),
 		["groups"] = {
 			n(QUESTS, {
 				q(29669, {	-- A Most Somber Task
 					["sourceQuest"] = 29667,	-- Culling the Herd
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Warp Splinter slain
 							["provider"] = { "n", 17977 },	-- Warp Splinter
@@ -23,7 +23,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19481,	-- Archmage Vargoth
 					["sourceQuest"] = 10256,	-- Finding the Keymaster
 					["coord"] = { 58.3, 86.4, NETHERSTORM },
-					["lvl"] = lvlsquish(67, 25, 67),
+					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 The Keystone
 							["provider"] = { "i", 28769 },	-- The Keystone
@@ -33,7 +33,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29667, {	-- Culling the Herd
 					["sourceQuest"] = 29660,	-- Saving the Botanica
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- 0/6 Mutate Fleshlasher slain
 							["provider"] = { "n", 19598 },	-- Mutate Fleshlasher
@@ -52,7 +52,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29660, {	-- Saving the Botanica
 					["description"] = "Automatically provided upon starting the instance.",
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(67, 20, 67),
+					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Commander Sarannis slain
 							["provider"] = { "n", 17976 },	-- Commander Sarannis
@@ -184,7 +184,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30634, 1 },	-- Warpforged Key
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

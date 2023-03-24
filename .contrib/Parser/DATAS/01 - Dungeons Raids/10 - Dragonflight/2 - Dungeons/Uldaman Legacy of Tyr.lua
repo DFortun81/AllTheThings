@@ -12,6 +12,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2
 			n(QUESTS, {
 				q(71093, {	-- Legacy of Tyr: Secrets of the Past
 					["description"] = "Given on zoning into the instance on a character that did not do the pre-patch version of this quest.",
+					["_drop"] = { "r" },	-- bad API data
 				}),
 			}),
 			n(ZONE_DROPS, {

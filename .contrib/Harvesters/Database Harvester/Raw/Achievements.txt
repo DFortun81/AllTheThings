@@ -2163,7 +2163,6 @@
 3411@@@Yogg-Saron + 0 Keepers attempts (Ulduar 25 player) (TRACKING ONLY)
 3.3.5.12340
 260@@@Charming
-272@@@Torch Juggler
 306@@@Master Angler of Azeroth
 562@@@The Arachnid Quarter (10 player)
 563@@@The Arachnid Quarter (25 player)
@@ -2703,6 +2702,39 @@
 1685@@@Holiday Bromance
 1686@@@Holiday Bromance
 4627@@@X-45 Heartbreaker
+3.4.0.46158
+15330@@@Survivor of the Firelord (Season of Mastery)
+15332@@@[DNT] Survivor (Season of Mastery) (hidden)
+15333@@@Survivor of the Shadow Flame (Season of Mastery)
+15334@@@Survivor of the Old God (Season of Mastery)
+15335@@@Survivor of the Damned (Season of Mastery)
+15637@@@The Immortal (Season of Mastery)
+15853@@@<Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
+16313@@@Rival: Season 5
+16314@@@Gladiator: Season 5
+16315@@@Duelist: Season 5
+16316@@@Challenger: Season 5
+16332@@@The Perfect Pebble
+16397@@@[DNT] Heirloom Tracking - Bloodied Arcanite Reaper (Hidden)
+16433@@@Soul of Iron (Season of Mastery)
+16437@@@[DNT] Soul of Iron Tracker (Season of Mastery) (hidden)
+3.4.1.48503
+17213@@@Defense Protocol Alpha: Utgarde Keep
+17283@@@Defense Protocol Alpha: The Nexus
+17285@@@Defense Protocol Alpha: Azjol-Nerub
+17291@@@Defense Protocol Alpha: Ahn'kahet: The Old Kingdom
+17292@@@Defense Protocol Alpha: Drak'Tharon Keep
+17293@@@Defense Protocol Alpha: The Violet Hold
+17295@@@Defense Protocol Alpha: Gundrak
+17297@@@Defense Protocol Alpha: Halls of Stone
+17299@@@Defense Protocol Alpha: Halls of Lightning
+17300@@@Defense Protocol Alpha: The Oculus
+17301@@@Defense Protocol Alpha: Utgarde Pinnacle
+17302@@@Defense Protocol Alpha: The Culling of Stratholme
+17304@@@Defense Protocol Alpha: Terminated
+17328@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
+17340@@@Ahead of the Curve: Yogg-Saron
+17341@@@Cutting Edge: Ulduar
 4.0.1.12911
 736@@@Explore Mulgore NYI
 750@@@Explore Northern Barrens
@@ -3061,7 +3093,6 @@
 5032@@@Gemcrafter Extraordinaire
 5035@@@Master Crafter
 5036@@@That's A Lot of Bait
-5060@@@Heroic: Blackrock Caverns
 5107@@@Heroic: Omnotron Defense System
 5115@@@Heroic: Chimaeron
 5119@@@Heroic: Ascendant Council
@@ -9976,7 +10007,6 @@
 15991@@@Dragon Glyphs: Crumbling Life Archway
 10.0.0.44795
 15878@@@Dragon Isles Leatherworking 75 (DNT)
-15903@@@Dragon Racing - Thaldraszus - Garden Gallivant - Bronze
 15918@@@Ohn'ahran Plains - Bronze
 15919@@@Ohn'ahran Plains - Silver
 15920@@@Ohn'ahran Plains - Gold
@@ -11342,6 +11372,8 @@
 17343@@@Drop It Like It's Hot
 17345@@@Airborne Tumbler
 17420@@@Trial of Tyr Ineligible For Spark Skip [DNT]
+10.0.5.48526
+17495@@@<Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
 10.0.7.47910
 16532@@@True Friends with Sabellian
 17214@@@Stormsunder Crater Circuit: Bronze
@@ -11460,7 +11492,6 @@
 17278@@@Forbidden Reach Rush Reverse: Gold
 17427@@@Winterpelt Conversationalist
 17428@@@<Hidden> Winterpelt Language - Send Mailer from Sonova
-17495@@@<Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
 17496@@@Renowned Weaponsmith
 17497@@@Renowned Armorsmith
 17498@@@Renowned Dragonscale Leatherworker
@@ -11494,3 +11525,124 @@
 10.0.7.48220
 16452@@@Familiar Skies
 17546@@@A New Beginning
+10.0.7.48295
+17398@@@Dragon Glyphs: Winglord's Perch
+17404@@@Dragon Glyphs: Talonlords' Perch
+10.0.7.48520
+17426@@@Toolbox Trouble
+10.1.0.48480
+17429@@@Crystal Circuit: Bronze
+17430@@@Crystal Circuit: Silver
+17431@@@Crystal Circuit: Gold
+17432@@@Crystal Circuit Advanced: Bronze
+17433@@@Crystal Circuit Advanced: Silver
+17434@@@Crystal Circuit Advanced: Gold
+17435@@@Crystal Circuit Reverse: Bronze
+17436@@@Crystal Circuit Reverse: Silver
+17437@@@Crystal Circuit Reverse: Gold
+17438@@@Caldera Cruise: Bronze
+17439@@@Caldera Cruise: Silver
+17440@@@Caldera Cruise: Gold
+17441@@@Caldera Cruise Advanced: Bronze
+17442@@@Caldera Cruise Advanced: Silver
+17443@@@Caldera Cruise Advanced: Gold
+17444@@@Caldera Cruise Reverse: Bronze
+17445@@@Caldera Cruise Reverse: Silver
+17446@@@Caldera Cruise Reverse: Gold
+17447@@@Brimstone Scramble: Bronze
+17448@@@Brimstone Scramble: Silver
+17449@@@Brimstone Scramble: Gold
+17450@@@Brimstone Scramble Advanced: Bronze
+17451@@@Brimstone Scramble Advanced: Silver
+17452@@@Brimstone Scramble Advanced: Gold
+17453@@@Brimstone Scramble Reverse: Bronze
+17454@@@Brimstone Scramble Reverse: Silver
+17455@@@Brimstone Scramble Reverse: Gold
+17456@@@Shimmering Slalom: Bronze
+17457@@@Shimmering Slalom: Silver
+17458@@@Shimmering Slalom: Gold
+17459@@@Shimmering Slalom Advanced: Bronze
+17460@@@Shimmering Slalom Advanced: Silver
+17461@@@Shimmering Slalom Advanced: Gold
+17462@@@Shimmering Slalom Reverse: Bronze
+17463@@@Shimmering Slalom Reverse: Silver
+17464@@@Shimmering Slalom Reverse: Gold
+17465@@@Zaralek Zigzag: Bronze
+17466@@@Zaralek Zigzag: Silver
+17467@@@Zaralek Zigzag: Gold
+17468@@@Zaralek Zigzag Advanced: Bronze
+17469@@@Zaralek Zigzag Advanced: Silver
+17470@@@Zaralek Zigzag Advanced: Gold
+17471@@@Zaralek Zigzag Reverse: Bronze
+17472@@@Zaralek Zigzag Reverse: Silver
+17473@@@Zaralek Zigzag Reverse: Gold
+17474@@@Sulfur Sprint: Bronze
+17475@@@Sulfur Sprint: Silver
+17476@@@Sulfur Sprint: Gold
+17477@@@Sulfur Sprint Advanced: Bronze
+17478@@@Sulfur Sprint Advanced: Silver
+17479@@@Sulfur Sprint Advanced: Gold
+17480@@@Sulfur Sprint Reverse: Bronze
+17481@@@Sulfur Sprint Reverse: Silver
+17482@@@Sulfur Sprint Reverse: Gold
+17483@@@Zaralek Cavern: Bronze
+17484@@@Zaralek Cavern: Silver
+17485@@@Zaralek Cavern: Gold
+17486@@@Zaralek Cavern Advanced: Bronze
+17487@@@Zaralek Cavern Advanced: Silver
+17488@@@Zaralek Cavern Advanced: Gold
+17489@@@Zaralek Cavern Reverse: Bronze
+17490@@@Zaralek Cavern Reverse: Silver
+17491@@@Zaralek Cavern Reverse: Gold
+17492@@@Zaralek Cavern Racing Completionist
+17493@@@Zaralek Cavern Racing Completionist: Silver
+17494@@@Zaralek Cavern Racing Completionist: Gold
+17506@@@Still Standing in the Fire
+17510@@@Dragon Glyphs: Glimmerogg
+17511@@@Dragon Glyphs: Titan Vault
+17512@@@Dragon Glyphs: Loamm
+17513@@@Dragon Glyphs: Zaqili Caldera
+17514@@@Dragon Glyphs: Dragon Nests
+17515@@@Dragon Glyphs: The Throughway
+17516@@@Dragon Glyphs: Sulfur Ravine
+17517@@@Dragon Glyphs: Brimstone Garrison
+17537@@@Dragon Chase - WS01
+17538@@@Dragon Chase - WS02
+17560@@@Ancient Stones of the Dragon Isles
+17561@@@Ancient Stones of the Waking Shores
+17562@@@Ancient Stones of the Ohn'ahran Plains
+17563@@@Ancient Stones of the Azure Span
+17564@@@Ancient Stones of Thaldraszus
+17567@@@Ancient Stones of Zaralek
+17725@@@Vicious Saddle (37)
+17726@@@Vicious Saddle (37)
+17727@@@Obsidian Combatant
+17728@@@Obsidian Combatant
+10.1.0.48537
+17735@@@We Didn't Start the Fire
+17736@@@The Gift of Cheese
+17737@@@Flame Warden of the Dragon Isles
+17738@@@Flame Keeper of the Dragon Isles
+17739@@@Embers of Neltharion
+17740@@@Gladiator: Dragonflight Season 2
+17741@@@Slow And Steady Wins The Race
+17742@@@<DNT> Loamm Niffen Rank 01
+17743@@@<DNT> Loamm Niffen Rank 02
+17744@@@<DNT> Loamm Niffen Rank 03
+17745@@@<DNT> Loamm Niffen Rank 04
+17746@@@<DNT> Loamm Niffen Rank 05
+17747@@@<DNT> Loamm Niffen Rank 06
+17748@@@<DNT> Loamm Niffen Rank 07
+17749@@@<DNT> Loamm Niffen Rank 08
+17750@@@<DNT> Loamm Niffen Rank 09
+17751@@@<DNT> Loamm Niffen Rank 10
+17752@@@<DNT> Loamm Niffen Rank 11
+17753@@@<DNT> Loamm Niffen Rank 12
+17754@@@<DNT> Loamm Niffen Rank 13
+17755@@@<DNT> Loamm Niffen Rank 14
+17756@@@<DNT> Loamm Niffen Rank 15
+17757@@@<DNT> Loamm Niffen Rank 16
+17758@@@<DNT> Loamm Niffen Rank 17
+17759@@@<DNT> Loamm Niffen Rank 18
+17760@@@<DNT> Loamm Niffen Rank 19
+17761@@@<DNT> Loamm Niffen Rank 20

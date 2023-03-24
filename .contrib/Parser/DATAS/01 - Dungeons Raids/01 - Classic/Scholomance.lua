@@ -46,7 +46,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["maxReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
 						["timeline"] = { "added 4.0.3.13277" },
 						["repeatable"] = true,
-						["lvl"] = lvlsquish(40, 15, 40),
+						["lvl"] = lvlsquish(40, 40, 15),
 						["groups"] = {
 							objective(1, {	-- 0/1 Rattlegore slain
 								["provider"] = { "n", 59153 },	-- Rattlegore
@@ -335,6 +335,18 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["coord"] = { 65.2, 23.8, BURNING_STEPPES },
 						["timeline"] = { "removed 4.0.3" },
 						["lvl"] = 57,
+					}),
+					q(7667, {	-- Material Assistance
+						["qg"] = 13417,	-- Sagorne Creststrider
+						["coord"] = { 39.2, 48.4, ORGRIMMAR },
+						["timeline"] = { "added 1.4.0", "removed 4.0.3" },
+						["cost"] = {
+							{ "i", 12800, 1 },	-- Azerothian Diamond
+							{ "i", 18335, 1 },	-- Pristine Black Diamond
+						},
+						["classes"] = { SHAMAN },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 58,
 					}),
 					q(5463, {	-- Menethil's Gift (1/2)
 						["providers"] = {

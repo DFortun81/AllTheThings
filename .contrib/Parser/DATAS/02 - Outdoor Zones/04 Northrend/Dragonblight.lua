@@ -342,6 +342,18 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.2, 51.4, DRAGONBLIGHT },
 					}),
 				}),
+				spell(921, {	-- Pickpocketing
+					i(38268, {	-- Spare Hand
+						["coords"] = {
+							{ 81.0, 42.8, DRAGONBLIGHT },
+							{ 82.6, 68.6, DRAGONBLIGHT },
+						},
+						["crs"] = {
+							27224,	-- Forgotten Knight
+							27401,	-- Risen Wintergarde Miner
+						},
+					}),
+				}),
 				n(QUESTS, {
 					q(12439, {	-- A Disturbance In The West
 						["coord"] = { 78.9, 45.3, DRAGONBLIGHT },
@@ -2422,16 +2434,6 @@ root(ROOTS.Zones, {
 						["classes"] = { MAGE },
 						["crs"] = { 26482 },	-- Arctic Grizzly
 						["f"] = RECIPES,
-					}),
-					i(38268, {	-- Spare Hand
-						["coords"] = {
-							{ 81.0, 42.8, DRAGONBLIGHT },
-							{ 82.6, 68.6, DRAGONBLIGHT },
-						},
-						["crs"] = {
-							27224,	-- Forgotten Knight
-							27401,	-- Risen Wintergarde Miner
-						},
 					}),
 					i(38262, { -- Well-Worn Bat
 						["coord"] = { 68.2, 74.2, DRAGONBLIGHT },

@@ -37,7 +37,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 		-- #endif
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["lvl"] = lvlsquish(70, 30, 68),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
+		["lvl"] = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
 		["groups"] = {
 			n(QUESTS, {
 				q(11007, {	-- Kael'thas and the Verdant Sphere

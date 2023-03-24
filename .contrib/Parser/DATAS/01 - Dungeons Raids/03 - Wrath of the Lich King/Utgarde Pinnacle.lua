@@ -34,15 +34,44 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				applyclassicphase(WRATH_PHASE_TWO, ach(17301, {	-- Defense Protocol Alpha: Utgarde Pinnacle
 					crit(57767, { -- Svala Sorrowgrave
 						["_encounter"] = { 641, 2 },
+						["groups"] = {
+							i(39296),	-- Accursed Bow of the Elite
+							i(39308),	-- Girdle of Lenience
+							i(39299),	-- Rapid Attack Gloves
+						},
 					}),
 					crit(57769, { -- Gortok Palehoof
 						["_encounter"] = { 642, 2 },
+						["groups"] = {
+							i(39284),	-- Miasma Mantle
+							i(39298),	-- Waistguard of the Tutor
+							i(39295),	-- Cowl of Sheet Lightning
+						},
 					}),
 					crit(57768, { -- Skadi the Ruthless
 						["_encounter"] = { 643, 2 },
+						["groups"] = {
+							i(39294),	-- Arc-Scorched Helmet
+							i(39297),	-- Cloak of Darkening
+							i(39472),	-- Chain of Latent Energies
+						},
 					}),
 					crit(57766, { -- King Ymiron
 						["_encounter"] = { 644, 2 },
+						["groups"] = {
+							i(39421),	-- Gem of Imprisoned Vassals
+							i(39423),	-- Hammer of the Astral Plane
+							i(39194),	-- Rusted-Link Spiked Gauntlets
+							i(40616),	-- Helm of the Lost Conqueror
+							i(40617),	-- Helm of the Lost Protector
+							i(40618),	-- Helm of the Lost Vanquisher
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
+						},
 					}),
 				})),
 				-- #endif

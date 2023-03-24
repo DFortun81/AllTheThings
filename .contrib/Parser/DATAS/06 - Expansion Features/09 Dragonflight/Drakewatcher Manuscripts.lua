@@ -6,11 +6,6 @@ local function unknown(i)
 	i.u = NEVER_IMPLEMENTED;
 	return i;
 end
-local i = function(id, t)
-	local i = i(id, t);
-	-- i.type = "dmID";	-- Convert to DragonManuscript ObjectType for export
-	return i;
-end
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAKEWATCHER_MANUSCRIPTS, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
@@ -672,7 +667,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		}),
 		i(196981),	-- Cliffside Wylderdrake: Conical Head (DM!)
 		i(196979),	-- Cliffside Wylderdrake: Curled Head Horns (DM!)
-		unknown(i(197015)),	-- Cliffside Wylderdrake: Dark Skin Variation
+		i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
 		i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 		i(196969),	-- Cliffside Wylderdrake: Finned Back (DM!)
@@ -681,7 +678,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197022),	-- Cliffside Wylderdrake: Finned Neck (DM!)
 		i(197018),	-- Cliffside Wylderdrake: Finned Tail (DM!)
 		unknown(i(197002)),	-- Cliffside Wylderdrake: Flared Cheek
-		unknown(i(196974)),	-- Cliffside Wylderdrake: Four-Horned Chin
+		i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(196964),	-- Cliffside Wylderdrake: Gold and Black Armor (DM!)
 		i(196966),	-- Cliffside Wylderdrake: Gold and Orange Armor (DM!)
 		unknown(i(196967)),	-- Cliffside Wylderdrake: Gold and White Armor
@@ -718,7 +717,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(196995, {	-- Cliffside Wylderdrake: Spiked Horns (DM!)
 			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
 		}),
-		unknown(i(197004)),	-- Cliffside Wylderdrake: Spiked Legs
+		i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(196977),	-- Cliffside Wylderdrake: Split Head Horns (DM!)
 		unknown(i(196997)),	-- Cliffside Wylderdrake: Split Horns
 		i(196968),	-- Cliffside Wylderdrake: Steel and Yellow Armor (DM!)
@@ -741,7 +742,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197116),	-- Highland Drake: Ears (DM!)
 		i(197098),	-- Highland Drake: Finned Back (DM!)
 		i(197106),	-- Highland Drake: Finned Head (DM!)
-		unknown(i(197155)),	-- Highland Drake: Finned Neck [States: Quest Reward at Rostrum]
+		i(197155, {	-- Highland Drake: Finned Neck (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(197090),	-- Highland Drake: Gold and Black Armor (DM!)
 		unknown(i(197156)),	-- Highland Drake: Gold and Green Armor
 		i(197094),	-- Highland Drake: Gold and Red Armor (DM!)
@@ -815,7 +818,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 		i(197375),	-- Renewed Proto-Drake: Curled Horns (DM!)
 		i(197380),	-- Renewed Proto-Drake: Curved Horns (DM!)
-		unknown(i(197358)),	-- Renewed Proto-Drake: Curved Spiked Brow
+		i(197358, {	-- Renewed Proto-Drake: Curved Spiked Brow (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
 		i(197376),	-- Renewed Proto-Drake: Ears (DM!)
 		i(197365),	-- Renewed Proto-Drake: Finned Crest (DM!)
@@ -843,6 +848,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		}),
 		i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)
 		i(197405),	-- Renewed Proto-Drake: Maned Tail (DM!)
+		i(202274, {	-- Renewed Proto-Drake: Plated Brow (DM!)
+			["timeline"] = {ADDED_DF_0_7},
+		}),
 		i(197394),	-- Renewed Proto-Drake: Predator Pattern (DM!)
 		i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 		i(197399),	-- Renewed Proto-Drake: Razor Snout (DM!)
@@ -888,8 +896,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
 		}),
 		unknown(i(197621)),	-- Windborne Velocidrake: Exposed Finned Tail
-		unknown(i(197587)),	-- Windborne Velocidrake: Feathered Back
-		unknown(i(197630)),	-- Windborne Velocidrake: Feathered Neck
+		i(197587, {	-- Windborne Velocidrake: Feathered Back (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
+		i(197630, {	-- Windborne Velocidrake: Feathered Neck (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(197593),	-- Windborne Velocidrake: Feathery Head (DM!)
 		i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
 		i(197584),	-- Windborne Velocidrake: Finned Back (DM!)
@@ -899,24 +911,38 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197580),	-- Windborne Velocidrake: Gold and Red Armor (DM!)
 		i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 		i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
-		unknown(i(197591)),	-- Windborne Velocidrake: Hairy Head [Brackenhide? Or Centaur Rep?]
-		unknown(i(197617)),	-- Windborne Velocidrake: Heavy Scales
+		i(197591, {	-- Windborne Velocidrake: Hairy Head (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
+		i(197617, {	-- Windborne Velocidrake: Heavy Scales (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(197600),	-- Windborne Velocidrake: Helm
 		i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
 		i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
 		i(197589),	-- Windborne Velocidrake: Large Head Fin (DM!)
 		i(197618),	-- Windborne Velocidrake: Long Snout (DM!)
 		i(197585),	-- Windborne Velocidrake: Maned Back (DM!)
-		unknown(i(197604)),	-- Windborne Velocidrake: Ox Horns [centaur renown but not on vendor]
-		unknown(i(197628)),	-- Windborne Velocidrake: Plated Neck [world drop?]
+		i(197604, {	-- Windborne Velocidrake: Ox Horns (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
+		i(197628, {	-- Windborne Velocidrake: Plated Neck (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
 		i(197599),	-- Windborne Velocidrake: Red Hair (DM!)
 		i(197614),	-- Windborne Velocidrake: Red Scales (DM!)
-		unknown(i(197636)),	-- Windborne Velocidrake: Shrieker Pattern ["centaur renown but not on vendor]
+		i(197636, {	-- Windborne Velocidrake: Shrieker Pattern (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(197578),	-- Windborne Velocidrake: Silver and Blue Armor (DM!)
 		i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
-		unknown(i(197594)),	-- Windborne Velocidrake: Small Ears
-		unknown(i(197590)),	-- Windborne Velocidrake: Small Head Fin
+		i(197594, {	-- Windborne Velocidrake: Small Ears (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
+		i(197590, {	-- Windborne Velocidrake: Small Head Fin (DM!)
+			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
+		}),
 		i(197586),	-- Windborne Velocidrake: Spiked Back (DM!)
 		i(197629, {	-- Windborne Velocidrake: Spiked Neck (DM!)
 			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },

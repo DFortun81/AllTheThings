@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					{ 30.77, 59.67, MECHAGON },
 				},
 				["g"] = {
-					i(169872, {	-- Irontide Lockbox Key
+					i(169872, {	-- Irontide Lockbox Key / 10.0.7: Key of Bound Earth
 						["description"] = "Key drops from Seaspit and Seaspray mobs in the area, chest has a chance to spawn around the nearby islands.",
 						["crs"] = {
 							154491,	-- Chief Curglrrmrgur

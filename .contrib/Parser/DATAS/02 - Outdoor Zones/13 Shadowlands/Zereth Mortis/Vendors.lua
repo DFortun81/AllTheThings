@@ -5,115 +5,6 @@ local SANDWORN_RELIC = 190189;
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	m(ZERETH_MORTIS, {
 		n(VENDORS, {
-			o(375368, {	-- Creation Catalyst Console
-				["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
-				["modelScale"] = 3,
-				["sym"] = {{"fill"}},
-			}),
-			n(185587, {	-- Elder Rafiq
-				["coord"] = { 60.6, 51, ZERETH_MORTIS },
-				["g"] = sharedData({ ["modID"] = 28, ["b"] = 1, }, {
-					i(188054, {	-- Antecedent Drape
-						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
-					}),
-					i(188026, {	-- Anthemic Bracers
-						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
-					}),
-					i(188022, {	-- Anthemic Coif
-						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
-					}),
-					i(188019, {	-- Anthemic Cuirass
-						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
-					}),
-					i(188021, {	-- Anthemic Gauntlets
-						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
-					}),
-					i(188020, {	-- Anthemic Greaves
-						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
-					}),
-					i(188023, {	-- Anthemic Legguards
-						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
-					}),
-					i(188025, {	-- Anthemic Links
-						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
-					}),
-					i(188024, {	-- Anthemic Shoulders
-						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
-					}),
-					i(188037, {	-- Choral Amice
-						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
-					}),
-					i(188008, {	-- Choral Handwraps
-						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
-					}),
-					i(188009, {	-- Choral Hood
-						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
-					}),
-					i(188010, {	-- Choral Leggings
-						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
-					}),
-					i(188011, {	-- Choral Sash
-						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
-					}),
-					i(188007, {	-- Choral Slippers
-						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
-					}),
-					i(188006, {	-- Choral Vestments
-						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
-					}),
-					i(188012, {	-- Choral Wraps
-						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
-					}),
-					i(188028, {	-- Harmonium Breastplate
-						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
-					}),
-					i(188030, {	-- Harmonium Gauntlets
-						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
-					}),
-					i(188033, {	-- Harmonium Girdle
-						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
-					}),
-					i(188027, {	-- Harmonium Helm
-						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
-					}),
-					i(188031, {	-- Harmonium Legplates
-						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
-					}),
-					i(188029, {	-- Harmonium Percussive Stompers
-						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
-					}),
-					i(188032, {	-- Harmonium Spaulders
-						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
-					}),
-					i(188034, {	-- Harmonium Vambrace
-						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
-					}),
-					i(188017, {	-- Staccato Belt
-						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
-					}),
-					i(188013, {	-- Staccato Boots
-						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
-					}),
-					i(188018, {	-- Staccato Cuffs
-						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
-					}),
-					i(188014, {	-- Staccato Grips
-						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
-					}),
-					i(188015, {	-- Staccato Helm
-						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
-					}),
-					i(188016, {	-- Staccato Leggings
-						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
-					}),
-					i(188036, {	-- Staccato Mantle
-						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
-					}),
-					i(188035, {	-- Staccato Vest
-						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
-					}),
-				}),
-			}),
 			n(185713, {	-- Hadja
 				["coord"] = { 35.2, 65.7, ZERETH_MORTIS },
 				["g"] = sharedData({ ["cost"] = { { "c", ANIMA, 500 }, }, }, {
@@ -253,6 +144,110 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, 
 								188048,	-- Truthseeker's Staff
 							},
 						},
+					}),
+				}),
+			}),
+			n(185587, {	-- Rafiq
+				["coord"] = { 60.6, 51, ZERETH_MORTIS },
+				["g"] = sharedData({ ["modID"] = 28, ["b"] = 1, }, {
+					i(188054, {	-- Antecedent Drape
+						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
+					}),
+					i(188026, {	-- Anthemic Bracers
+						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
+					}),
+					i(188022, {	-- Anthemic Coif
+						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
+					}),
+					i(188019, {	-- Anthemic Cuirass
+						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
+					}),
+					i(188021, {	-- Anthemic Gauntlets
+						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
+					}),
+					i(188020, {	-- Anthemic Greaves
+						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
+					}),
+					i(188023, {	-- Anthemic Legguards
+						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
+					}),
+					i(188025, {	-- Anthemic Links
+						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
+					}),
+					i(188024, {	-- Anthemic Shoulders
+						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
+					}),
+					i(188037, {	-- Choral Amice
+						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
+					}),
+					i(188008, {	-- Choral Handwraps
+						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
+					}),
+					i(188009, {	-- Choral Hood
+						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
+					}),
+					i(188010, {	-- Choral Leggings
+						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
+					}),
+					i(188011, {	-- Choral Sash
+						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
+					}),
+					i(188007, {	-- Choral Slippers
+						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
+					}),
+					i(188006, {	-- Choral Vestments
+						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
+					}),
+					i(188012, {	-- Choral Wraps
+						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
+					}),
+					i(188028, {	-- Harmonium Breastplate
+						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
+					}),
+					i(188030, {	-- Harmonium Gauntlets
+						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
+					}),
+					i(188033, {	-- Harmonium Girdle
+						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
+					}),
+					i(188027, {	-- Harmonium Helm
+						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
+					}),
+					i(188031, {	-- Harmonium Legplates
+						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
+					}),
+					i(188029, {	-- Harmonium Percussive Stompers
+						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
+					}),
+					i(188032, {	-- Harmonium Spaulders
+						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
+					}),
+					i(188034, {	-- Harmonium Vambrace
+						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
+					}),
+					i(188017, {	-- Staccato Belt
+						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
+					}),
+					i(188013, {	-- Staccato Boots
+						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
+					}),
+					i(188018, {	-- Staccato Cuffs
+						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
+					}),
+					i(188014, {	-- Staccato Grips
+						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
+					}),
+					i(188015, {	-- Staccato Helm
+						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
+					}),
+					i(188016, {	-- Staccato Leggings
+						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
+					}),
+					i(188036, {	-- Staccato Mantle
+						["cost"] = { { "i", SANDWORN_RELIC, 230 }, },
+					}),
+					i(188035, {	-- Staccato Vest
+						["cost"] = { { "i", SANDWORN_RELIC, 300 }, },
 					}),
 				}),
 			}),

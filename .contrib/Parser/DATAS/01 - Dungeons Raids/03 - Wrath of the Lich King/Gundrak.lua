@@ -34,18 +34,52 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				applyclassicphase(WRATH_PHASE_TWO, ach(17295, {	-- Defense Protocol Alpha: Gundrak
 					crit(57743, { -- Slad'ran
 						["_encounter"] = { 592, 2 },
-					}),
-					crit(57744, { -- Moorabi
-						["_encounter"] = { 594, 2 },
+						["groups"] = {
+							i(39229),	-- Embrace of the Spider
+							i(39234),	-- Plague-Impervious Boots
+							i(39230),	-- Spaulders of the Monstrosity
+						},
 					}),
 					crit(57746, { -- Drakkari Colossus
 						["_encounter"] = { 593, 2 },
+						["groups"] = {
+							i(39233),	-- Aegis of Damnation
+							i(39225),	-- Cloak of Armed Strife
+							i(39224),	-- Leggings of Discord
+						},
 					}),
-					crit(57747, { -- Gal'darah
-						["_encounter"] = { 596, 2 },
+					crit(57744, { -- Moorabi
+						["_encounter"] = { 594, 2 },
+						["groups"] = {
+							i(39232),	-- Pendant of Lost Vocations
+							i(39228),	-- Web Cocoon Grips
+							i(39221),	-- Wraith Spear
+						},
 					}),
 					crit(57745, { -- Eck the Ferocious
 						["_encounter"] = { 595, 2 },
+						["groups"] = {
+							i(39217),	-- Avenging Combat Leggings
+							i(39231),	-- Timeworn Silken Band
+							i(39226),	-- Maexxna's Femur
+						},
+					}),
+					crit(57747, { -- Gal'darah
+						["_encounter"] = { 596, 2 },
+						["groups"] = {
+							i(40491),	-- Hailstorm
+							i(39283),	-- Putrescent Bands
+							i(44660),	-- Drakescale Collar
+							i(40616),	-- Helm of the Lost Conqueror
+							i(40617),	-- Helm of the Lost Protector
+							i(40618),	-- Helm of the Lost Vanquisher
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
+						},
 					}),
 				})),
 				-- #endif

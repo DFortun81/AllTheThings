@@ -117,57 +117,75 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 			}),
 			ach(1792),	-- Aw, Isn't It Cute?
 			ach(1788, {	-- Bad Example
-				crit(6, {	-- Dalaran Brownie
+				crit(6656, {	-- Dalaran Brownie
 					["provider"] = { "i", 42431 },	-- Dalaran Brownie
 					["maps"] = {
 						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
 						LEGION_DALARAN,
+						-- #endif
 					},
 				}),
-				crit(7, {	-- Dalaran Doughnut
+				crit(6657, {	-- Dalaran Doughnut
 					["provider"] = { "i", 42430 },	-- Dalaran Doughnut
 					["maps"] = {
 						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
 						LEGION_DALARAN,
+						-- #endif
 					},
 				}),
-				crit(4, {	-- Delicious Chocolate Cake
+				crit(6654, {	-- Delicious Chocolate Cake
 					["provider"] = { "i", 33924 },	-- Delicious Chocolate Cake
 					["maps"] = {
 						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
 						LEGION_DALARAN,
+						-- #endif
 					},
 				}),
-				crit(5, {	-- Lovely Cake Slice
+				crit(6655, {	-- Lovely Cake Slice
 					["provider"] = { "i", 42438 },	-- Lovely Cake
+					-- #if AFTER MOP
 					["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
 					["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
+					-- #endif
 					["maps"] = {
 						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
 						LEGION_DALARAN,
+						-- #endif
 					},
 				}),
-				crit(3, {	-- Red Velvet Cupcake
+				crit(6653, {	-- Red Velvet Cupcake
 					["provider"] = { "i", 42429 },	-- Red Velvet Cupcake
+					-- #if AFTER MOP
 					["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
 					["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
+					-- #endif
 					["maps"] = {
 						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
 						LEGION_DALARAN,
+						-- #endif
 					},
 				}),
-				crit(2, {	-- Tasty Cupcake
+				crit(6652, {	-- Tasty Cupcake
 					["provider"] = { "i", 43490 },	-- Tasty Cupcake
 				}),
-				crit(1, {	-- Tigule's Strawberry Ice Cream
+				crit(6651, {	-- Tigule's Strawberry Ice Cream
 					["provider"] = { "i", 7228 },	-- Tigule's Strawberry Ice Cream
 					["crs"] = { -- TODO: Remove, add vendors to zones
 						-- Katrina Shimmerstar & Rachelle Gothena are listed on WoWHead, but only appear during Hallow's End.
 						14480,	-- Alowicious Czervik
+						-- #if AFTER 4.0.3.13277
 						47383,	-- Brivelthwerp
+						-- #endif
 						18914,	-- Caregiver Isel
 						14481,	-- Emmithue Smails
+						-- #if AFTER 4.0.3.13277
 						49893,	-- Lisa McKeever
+						-- #endif
 						18913,	-- Matron Tikkit
 						24934,	-- Snack-O-Matic IV
 					},
@@ -193,7 +211,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 			}),
 			ach(1791),	-- Home Alone
 			ach(1786, {	-- School of Hard Knocks
-				crit(3, {	-- Assault a flag in Arathi Basin
+				crit(6643, {	-- Assault a flag in Arathi Basin
 					["maps"] = {
 						ARATHI_BASIN,
 						837,	-- Arathi Basin
@@ -202,17 +220,17 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 						1366,	-- Arathi Basin
 					},
 				}),
-				crit(2, {	-- Assault a tower in Alterac Valley
+				crit(6642, {	-- Assault a tower in Alterac Valley
 					["maps"] = {
 						ALTERAC_VALLEY,
 					},
 				}),
-				crit(1, {	-- Capture the flag in Eye of the Storm
+				crit(6641, {	-- Capture the flag in Eye of the Storm
 					["maps"] = {
 						EYE_OF_THE_STORM,
 					},
 				}),
-				crit(4, {	-- Return a fallen flag in Warsong Gulch
+				crit(6644, {	-- Return a fallen flag in Warsong Gulch
 					["maps"] = {
 						WARSONG_GULCH,
 						859,	-- Warsong Gulch
@@ -223,6 +241,17 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 			ach(275, {	-- Veteran Nanny
 				["maps"] = { SHATTRATH_CITY },
 				["groups"] = {
+					-- #if NOT ANYCLASSIC
+					crit(52728, {	-- Egbert
+						["provider"] = { "i", 32616 },	-- Egbert's Egg
+					}),
+					crit(52726, {	-- Peanut
+						["provider"] = { "i", 32622 },	-- Elekk Training Collar
+					}),
+					crit(52727, {	-- Willy
+						["provider"] = { "i", 32617 },	-- Sleepy Willy
+					}),
+					-- #else
 					crit(9169, {	-- Egbert
 						["provider"] = { "i", 32616 },	-- Egbert's Egg
 					}),
@@ -232,6 +261,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 					crit(9168, {	-- Willy
 						["provider"] = { "i", 32617 },	-- Sleepy Willy
 					}),
+					-- #endif
 				},
 			}),
 		}),
@@ -248,7 +278,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(10951, {	-- A Trip to the Dark Portal [Horde - Blood Elf]
 				["providers"] = {
@@ -261,7 +291,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(13937, {	-- A Trip To The Wonderworks [Neutral - Oracles]
 				["providers"] = {
@@ -287,7 +317,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["cr"] = 29478,	-- Jeppetto Joybuzz
 				-- #endif
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(13938, {	-- A Trip To The Wonderworks [Neutral - Wolvar]
 				["providers"] = {
@@ -313,7 +343,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["cr"] = 29478,	-- Jeppetto Joybuzz
 				-- #endif
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(171, {	-- A Warden of the Alliance [Alliance - Human - FINAL]
 				["providers"] = {
@@ -396,7 +426,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(10966, {	-- Back to the Orphanage [Alliance - Draenei - FINAL]
 				["providers"] = {
@@ -412,7 +442,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 2.0.1" },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 				["groups"] = BACK_AT_THE_OUTLAND_ORPHANAGE_GROUPS,
 			}),
 			q(10967, {	-- Back to the Orphanage [Horde - Blood Elf - FINAL]
@@ -432,7 +462,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 2.0.1" },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 				["groups"] = BACK_AT_THE_OUTLAND_ORPHANAGE_GROUPS,
 			}),
 			q(28879, {	-- Back To The Orphanage [Neutral - Oracles - FINAL]
@@ -445,7 +475,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				["cr"] = 34365,	-- Orphan Matron Aria
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 				["groups"] = {
 					i(46545, {	-- Curious Oracle Hatchling
 						["timeline"] = { "added 3.0.1" },
@@ -463,7 +493,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 				["timeline"] = { "added 3.0.1" },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 				["groups"] = {
 					i(46544, {	-- Curious Wolvar Pup
 						["timeline"] = { "added 3.0.1" },
@@ -487,7 +517,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 			}),
 			q(925, {	-- Cairne's Hoofprint [Horde - Orc] (removed)
 				["providers"] = {
@@ -527,7 +557,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(10943, {	-- Children's Week [Alliance - Draenei - START]
 				["qg"] = 22819,	-- Orphan Matron Mercy
@@ -535,7 +565,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 2.0.1" },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(1468, {	-- Children's Week [Alliance - Human - START]
 				-- #if AFTER CATA
@@ -562,7 +592,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 8.0.1" },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 			}),
 			q(10942, {	-- Children's Week [Horde - Blood Elf - START]
 				["qg"] = 22819,	-- Orphan Matron Mercy
@@ -570,7 +600,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 2.0.1" },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(172, {	-- Children's Week [Horde - Orc - START]
 				-- #if AFTER CATA
@@ -600,7 +630,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 			}),
 			q(29093, {	-- Cruisin' the Chasm [Alliance - Human]
 				["providers"] = {
@@ -667,7 +697,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(13930, {	-- Home Of The Bear-Men [Neutral - Wolvar]
 				["providers"] = {
@@ -683,7 +713,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(53969, {	-- Hunting For Gold [Horde - Zandalari]
 				["providers"] = {
@@ -704,7 +734,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 			}),
 			q(558, {	-- Jaina's Autograph [Alliance - Human] (removed)
 				["providers"] = {
@@ -743,7 +773,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(29117, {	-- Let's Go Fly a Kite [Alliance - Human]
 				["providers"] = {
@@ -827,14 +857,14 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 				["timeline"] = { "added 3.0.1" },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(13926, {	-- Little Orphan Roo Of The Oracles [Neutral - Oracles - START]
 				["qg"] = 34365,	-- Orphan Matron Aria
 				["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 				["timeline"] = { "added 3.0.1" },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(53966, {	-- Loa of Winds [Horde - Zandalari]
 				["providers"] = {
@@ -855,7 +885,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 			}),
 			q(1800, {	-- Lordaeron Throne Room [Horde - Orc] (removed)
 				["providers"] = {
@@ -905,7 +935,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(11975, {	-- Now, When I Grow Up... [Horde - Blood Elf]
 				["providers"] = {
@@ -922,7 +952,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(54130, {	-- Our New Friends [Alliance - Human]
 				["providers"] = {
@@ -950,7 +980,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(13951, {	-- Playmates! [Neutral - Wolvar]
 				["providers"] = {
@@ -962,7 +992,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(53971, {	-- Return to the Hall of Castes [Horde - Zandalari - FINAL]
 				["providers"] = {
@@ -981,7 +1011,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 				["groups"] = RETURN_TO_THE_BFA_ORPHANAGE_GROUPS,
 			}),
 			q(53865, {	-- Return to the Orphanage [Alliance - Kul Tiran - FINAL]
@@ -997,7 +1027,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 8.0.1" },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 				["groups"] = RETURN_TO_THE_BFA_ORPHANAGE_GROUPS,
 			}),
 			q(29146, {	-- Ridin' the Rocketway [Horde - Orc]
@@ -1035,7 +1065,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 			}),
 			q(1687, {	-- Spooky Lighthouse [Alliance - Human] (removed)
 				["providers"] = {
@@ -1116,7 +1146,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(1479, {	-- The Bough of the Eternals [Alliance - Human] (removed)
 				["providers"] = {
@@ -1148,7 +1178,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(13934, {	-- The Bronze Dragonshrine [Neutral - Wolvar]
 				["providers"] = {
@@ -1163,7 +1193,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(13954, {	-- The Dragon Queen [Neutral - Oracles]
 				["providers"] = {
@@ -1179,7 +1209,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(13955, {	-- The Dragon Queen [Neutral - Wolvar]
 				["providers"] = {
@@ -1195,7 +1225,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(29176, {	-- The Fallen Chieftain [Horde - Orc]
 				["providers"] = {
@@ -1232,7 +1262,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 			}),
 			q(13957, {	-- The Mighty Hemet Nesingwary [Neutral - Wolvar]
 				["providers"] = {
@@ -1248,7 +1278,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(72, 10, 72),
+				["lvl"] = lvlsquish(72, 72, 10),
 			}),
 			q(53859, {	-- The Mountain Folk [Alliance - Kul Tiran]
 				["providers"] = {
@@ -1261,7 +1291,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 			}),
 			q(10956, {	-- The Seat of the Naaru [Alliance - Draenei]
 				["providers"] = {
@@ -1281,7 +1311,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(53970, {	-- The Sethrak Queen [Horde - Zandalari]
 				["providers"] = {
@@ -1306,7 +1336,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 			}),
 			q(53968, {	-- The Shifting Pack [Horde - Zandalari]
 				["providers"] = {
@@ -1326,7 +1356,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 			}),
 			q(1558, {	-- The Stonewrought Dam [Alliance - Human] (removed)
 				["providers"] = {
@@ -1356,7 +1386,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 			}),
 			q(10962, {	-- Time to Visit the Caverns [Alliance - Draenei]
 				["providers"] = {
@@ -1377,7 +1407,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { TANARIS, SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(10963, {	-- Time to Visit the Caverns [Horde - Blood Elf]
 				["providers"] = {
@@ -1398,7 +1428,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { TANARIS, SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(10953, {	-- Visit the Throne of the Elements [Horde - Blood Elf]
 				["providers"] = {
@@ -1417,7 +1447,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(10960, {	-- When I Grow Up... [Horde - Blood Elf]
 				["providers"] = {
@@ -1434,7 +1464,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(60, 10, 60),
+				["lvl"] = lvlsquish(60, 60, 10),
 			}),
 			q(53861, {	-- Yo Ho, Yo Ho! [Alliance - Kul Tiran]
 				["providers"] = {
@@ -1447,7 +1477,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 				["maps"] = { BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(110, 10, 110),
+				["lvl"] = lvlsquish(110, 110, 10),
 			}),
 			q(4822, {	-- You Scream, I Scream... [Alliance - Human] (removed)
 				["providers"] = {

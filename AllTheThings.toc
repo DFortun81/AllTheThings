@@ -1,5 +1,5 @@
 ## Author: Crieve-Sargeras
-## Interface: 100005
+## Interface: 100007
 ## X-Curse-Project-ID: 267285
 ## X-Wago-ID: yQKyY5K7
 ## Title: AllTheThings |TInterface\Addons\AllTheThings\assets\logo_32x32:0|t

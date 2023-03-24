@@ -21,6 +21,10 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	-- Toys
+	i(204675, {	-- A Drake's Big Basket of Eggs
+		["timeline"] = { ADDED_DF_0_7 },
+	--	["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
+	}),
 	i(165802, {	-- Noble Gardener's Hearthstone (TOY!)
 		["timeline"] = { "added 8.1.5.29701" },
 		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
@@ -354,6 +358,9 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 						["provider"] = { "i", 44791 },	-- Noblegarden Chocolate
 						["cost"] = { { "i", 44802, 1 } },	-- Borrowed Egg Basket
 					}),
+					i(44802, {	-- Borrowed Egg Basket
+						["timeline"] = { "added 3.1.0.9733" },
+					}),
 					i(188698, {	-- Eagger Basket (TOY!)
 						["timeline"] = { "added 9.1.5.40871" },
 					}),
@@ -384,6 +391,9 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 					objective(1, {	-- 0/10 Noblegarden Chocolate
 						["provider"] = { "i", 44791 },	-- Noblegarden Chocolate
 						["cost"] = { { "i", 44802, 1 } },	-- Borrowed Egg Basket
+					}),
+					i(44802, {	-- Borrowed Egg Basket
+						["timeline"] = { "added 3.1.0.9733" },
 					}),
 					i(188698, {	-- Eagger Basket (TOY!)
 						["timeline"] = { "added 9.1.5.40871" },

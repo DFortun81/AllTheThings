@@ -155,6 +155,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					-- This quest gets skipped over during marking all the quest as done when using the skip, and it also doesn't pop up for people who after the skip implementation try to do the chain manually.
 					-- In short, things are broken, and until Blizzard does something about it (please submit a bug report to them if this affects you), marking this as breadcrumb and not obtainable in party sync is the best way to handle this in ATT.
 					["isBreadcrumb"] = true,
+					["altQuests"] = { 60146 },	-- Torment Chamber: Thrall
 					["DisablePartySync"] = true,
 				}),
 				q(62836, {	-- Signs of the Lion
@@ -238,22 +239,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 			q(60274, {	-- Trading Favors
 				["provider"] = { "n", 156688 },	-- Host Ta'rela
 				["coord"] = { 67.2, 50.6, ORIBOS },
-			}),
-
-				-- 9.2.5 --
-			q(65656, {	-- Call to Lordaeron
-				--["sourceQuests"] = {},
-				["provider"] = { "n", 173386 },	-- Calia Menethil
-				["coord"] = { 41.2, 69.3, ORIBOS },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 9.2.5" },
-			}),
-			q(65655, {	-- Eyes of the Wolf
-				--["sourceQuests"] = {},
-				["provider"] = { "n", 185525 },	-- Genn Greymane <King of Gilneas>
-				["coord"] = { 41.9, 63.5, ORIBOS },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 9.2.5" },
 			}),
 		}),
 		n(QUESTS, sharedData({
@@ -487,6 +472,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				},
 				["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
 				["coord"] = { 49.2, 52.2, ARDENWEALD },
+				["timeline"] = { ADDED_SL_REL },
 				["g"] = {
 					i(179562),	-- Duskwarder Branch
 					i(179517),	-- Duskwarder Censor
@@ -511,6 +497,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				},
 				["provider"] = { "n", 163427 },	-- Kalisthene
 				["coord"] = { 51.1, 43.7, BASTION },
+				["timeline"] = { ADDED_SL_REL },
 				["g"] = {
 					i(181635),	-- Honortoll Gavel
 					i(181630),	-- Honortoll Spear
@@ -534,6 +521,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				},
 				["provider"] = { "n", 175008 },	-- Secutor Mevix
 				["coord"] = { 52.8, 68.2, MALDRAXXUS },
+				["timeline"] = { ADDED_SL_REL },
 				["g"] = {
 					i(181685),	-- Gorewrought Barrier
 					i(181689),	-- Gorewrought Bonesaw
@@ -566,6 +554,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					{ 52.0, 38.6, SINFALL_REACHES },	-- Prince Renathal [for Venthyr]
 					{ 61.4, 60.2, REVENDRETH },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 				},
+				["timeline"] = { ADDED_SL_REL },
 				["g"] = {
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff

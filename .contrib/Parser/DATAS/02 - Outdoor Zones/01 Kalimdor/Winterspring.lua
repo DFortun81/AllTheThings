@@ -2400,7 +2400,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						}),
 						i(201794, {	-- Schematic: Tranquil Mechanical Yeti
-							["timeline"] = { "added 10.0.2" },
+							["timeline"] = { ADDED_DF_PRE2 },
 							["description"] = "Available for purchase after you complete |cFFFFD700Yetiphobia|r quest.",
 							["isLimited"] = true,
 							["sourceQuest"] = 28722,	-- Yetiphobia

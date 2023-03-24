@@ -1,35 +1,17 @@
 # AllTheThings
 
-## [DF-3.2.5](https://github.com/DFortun81/AllTheThings/tree/DF-3.2.5) (2023-02-26)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.2.4...DF-3.2.5) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.3.0](https://github.com/DFortun81/AllTheThings/tree/DF-3.3.0) (2023-03-21)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.2.8...DF-3.3.0) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
-### Logic changes
+### Patch 10.0.7
 
-- Excluded integration of ATT tooltips into Spellbook and DF Talent UI.
-- Improved some quest chat-printing logic.
-- Dynamic Nested categories no longer pull in any 'missing' data.
-- Default sorting now sorts Header groups ahead of non-Headers.
+This update includes most of the WoW patch 10.0.7 content. You can expect more updates soon with fixes and additions!
 
+### Twitch Drops
 
-### Logic fixes
-
-- Potential workaround for immediate script timeout issue from tooltips when within an instance.
-- Fixed some missing NPC drops.
-- Fixed some logic which could duplicate text on tooltips of certain AH listings.
-- Fixed Achievements causing more lag when opening Main list.
-- Fixed Quest icons (including World Quests).
-- Difficulty groups are now properly sorted.
-- Fixed some items not being visible due to multiple filtered Sources of the same Thing based on current character's Faction. Optimized related logic.
-- More micro performance improvements.
+Earn the D.I.S.C.O. Toy 🕺 from March 21st, 10:00 a.m. PDT until April 2nd, 23:59 p.m. PDT. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23923488/dragonflight-twitch-drops-earn-the-disco-toy).
 
 ### Data additions/fixes
 
-- Sorted more white/grey items.
-- Some unsorted items housekeeping so we can sort them faster.
-- Added some missing Titles and Achievements.
-- More Dragonflight content fixes.
-- WoD Garrison tweaks.
-- Updated The Barrens.
-- Updated Midsummer Fire Festival.
 - Other fixes.

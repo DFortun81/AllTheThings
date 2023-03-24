@@ -490,7 +490,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["sourceQuests"] = { 65791 },	-- Life-Binder on Duty
 					["provider"] = { "n", 185905 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
-					["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 					["classes"] = { EVOKER },
 				}),
 			}),
@@ -628,7 +627,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["collectible"] = false,
 				["g"] = {
 					q(66963, {	-- Out For Delivery
-						["sourceQuests"] = { 66123 },	-- Cut Off the Head
+						-- ["sourceQuests"] = { 66123 },	-- Cut Off the Head (inaccurate)
 						["provider"] = { "n", 191698 },	-- Hauler Bennet
 						["coord"] = { 48.5, 78.9, THE_WAKING_SHORES },
 						["isBreadcrumb"] = true,
@@ -685,7 +684,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["collectible"] = false,
 				["g"] = {
 					q(66825, {	-- A Ruby Lifecalling
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							66114,	-- For the Benefit of the Queen
 							70125,	-- Where is Wrathion? (A)
 							69910,	-- Where is Wrathion? (H)
@@ -842,7 +841,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["collectible"] = false,
 				["g"] = {
 					q(65690, {	-- A Cultist's Misgivings
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							66079,	-- Wrathion Awaits
 							70125,	-- Where is Wrathion? (A)
 							69910,	-- Where is Wrathion? (H)
@@ -857,7 +856,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						["coord"] = { 37.4, 46.7, THE_WAKING_SHORES },
 					}),
 					q(65687, {	-- Punching Up
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							66079,	-- Wrathion Awaits
 							70125,	-- Where is Wrathion? (A)
 							69910,	-- Where is Wrathion? (H)
@@ -1075,7 +1074,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			q(70164, {	-- A Tinker's Chance
 				["provider"] = { "n", 194136 },	-- Eralshek
 				["coord"] = { 65.4, 58.5, THE_WAKING_SHORES },
-				["races"] = {DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
 			}),
 			q(70179, {	-- A Two for One Deal
 				["sourceQuests"] = { 66001 },	-- A Last Hope, -- TODO: Wasnt available when picking up 65997, but available before 66001....
@@ -1180,6 +1179,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			q(70414, {	-- Shaky Grounds
 				["provider"] = { "n", 195234 },	-- Earthmender Govrum
 				["coord"] = { 37.0, 55.8, THE_WAKING_SHORES },
+				["g"] = {
+					i(200617),	-- Shattering Totem
+					i(198980),	-- Shattering Totem
+				},
 			}),
 			q(66369, {	-- The Earthen Ward
 				["sourceQuests"] = { 66003 },	-- Rings To Bind Them
@@ -1199,7 +1202,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["provider"] = { "n", 192498 },	-- Hephaesta
 				["coord"] = { 57.8, 68.2, THE_WAKING_SHORES },
 				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
-				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
 			}),
 				--TODO: At some point this quest will need to be looked at and changed to either a Dracthyr-specific race tag or adjusted to whatever classes Dracthyr are eventually opened up to. For now Evoker covers all the bases.
 
@@ -1305,7 +1308,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69891, {	-- Lepidoralia the Resplendent
 					["provider"] = { "n", 193266 },	-- Lepidoralia the Resplendent
 					["coord"] = { 34.1, 85.7, THE_WAKING_SHORES },
-					["isDaily"] = false,
 				}),
 				q(70979, {	-- Magmaton
 					["provider"] = { "n", 186827 },	-- Magmaton
@@ -1397,6 +1399,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["sourceQuests"] = { 66788 },	-- Eggcited for the Future
 					["provider"] = { "n", 195212 },	-- Commander Lethanak
 					["coord"] = { 62.7, 72.2, THE_WAKING_SHORES },
+					["isDaily"] = true,	-- possible weekly?
 				}),
 				q(70206, {	-- Stay awhile and listen: Veritistrasz: 1
 					["name"] = "Stay awhile and listen: Veritistrasz: 1",
@@ -1457,6 +1460,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["sourceQuests"] = { 65691 },	-- The Shadow of His Wings
 					["provider"] = { "n", 196072 },	-- Wu'de Prepfoot
 					["coord"] = { 35.1, 47.2, THE_WAKING_SHORES },
+					["isDaily"] = true,	-- possible weekly?
 				}),
 				-- Theory In Practice moved temporarily to HQTs
 				-- To Skytop Observatory moved temporarily to HQTs

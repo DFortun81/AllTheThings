@@ -100,10 +100,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["races"] = HORDE_ONLY,
 				}),
 				q(59952, {	-- A Hunter's Trap [H]
-					["sourceQuests"] = {
-						59947,	-- Message to Base [H]
-						59949,	-- Who Lurks in the Pit [H]
-					},
+					["sourceQuests"] = { 59947 },	-- Message to Base [H]
 					["provider"] = { "n", 167215 },	-- Mithdran Dawntracker
 					["coord"] = { 52.4, 55.2, EXILES_REACH },
 					["races"] = HORDE_ONLY,
@@ -935,27 +932,6 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuestNumRequired"] = 1
 				}),
-				q(58912, {	-- An Urgent Meeting
-					["sourceQuests"] = { 58911 },	-- Home Is Where the Hearth Is [A]
-					["provider"] = { "n", 163211 },	-- Henry Garrick
-					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(58983, {	-- Battle for Azeroth: Tides of War
-					["sourceQuests"] = { 58912 },	-- An Urgent Meeting [A]
-					["provider"] = { "n", 163219 },	-- Captain Garrick
-					["coord"] = { 85.2, 32.1, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(178941),	-- Alliance Dog Tags,
-					}
-				}),
-				q(59641, {	-- The Nation of Kul Tiras
-					["sourceQuests"] = { 58983 },	-- Battle for Azeroth: Tides of War
-					["provider"] = { "n", 165395 },	-- Anduin Wrynn
-					["coord"] = { 85.8, 31.6, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-				}),
 
 					-- Orgrimmar --
 				q(60343, {	-- Welcome to Orgrimmar
@@ -1060,23 +1036,9 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						60357,	-- What's Your Specialty? [H] [Warrior]
 					},
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 73.6, 43.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuestNumRequired"] = 1,
-				}),
-				q(60360, {	-- An Urgent Meeting [H]
-					["sourceQuests"] = { 60359 },	-- Home Is Where the Hearth Is
-					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
-					["coord"] = { 70.9, 49.6, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60361, {	-- Battle for Azeroth: Mission Statement
-					["sourceQuests"] = { 60360 },	-- An Urgent Meeting
-					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
-					["coord"] = { 48.3, 71.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(178942),	-- War-Chain of the Horde
-					},
 				}),
 			}),
 

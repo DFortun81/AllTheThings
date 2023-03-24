@@ -700,19 +700,19 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		[-159] = "Ролл События",									-- Daily Dreamway Event Roll
 	-- Other
-		[-210] = "Новый персонаж Союзной расы",						-- Allied New Character
 		[-211] = "Новый персонаж",									-- New Character
 		[-212] = "Сундук с сокровищами",							-- Treasure Chest
 	-- Fishing
 		[-217] = "Наживки",											-- Lures (for Fishing)
 		[-218] = "Побережье",										-- Coastal (for Fishing)
 	[-219] = "Без Источника",										-- Sourceless
-	[-228] = "Точка полета",									-- GetSpellInfo(218950),  -- Flight Path
+	[-228] = "Точка полета",										-- GetSpellInfo(218950),  -- Flight Path
 	-- PvP
 		[-242] = "Нерейтинговые",									-- Unrated
 		[-243] = "Премия",											-- Bounty
 	-- Allied Races
-		[-254] = "Союзные расы & Традиционные доспехи",				-- Allied Races & Heritage
+		[-254] = "Союзные расы",									-- Allied Races
+		[-255] = "Традиционные доспехи",							-- Heritage
 	-- First Questline Draenor
 		[-356] = "Атака на Темный портал",							-- Assault on the Dark Portal
 	-- Outposts in Draenor
@@ -807,11 +807,6 @@ for key,value in pairs({
 		[-861] = "Ранг 4",											-- Rank 4
 	-- Shadowlands Header
 		[-903] = "Добыча локации",									-- Zone Rewards
-		[-907] = "Мертвая Савраска",								-- Dead Blanchy
-		[-909] = "Охота: элементали смерти",						-- Hunt: Death Elementals
-		[-910] = "Охота: пожиратели душ",							-- Hunt: Alpha Devourers
-		[-911] = "Охота: темные гончие",							-- Hunt: Shadehounds
-		[-912] = "Охота: крылатые пожиратели душ",					-- Hunt: Winged Soul Eaters
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Улучшения для Обители",							-- Sanctum Upgrades
 		[-924] = "Транспортная Сеть",								-- Transport Network
@@ -829,13 +824,6 @@ for key,value in pairs({
 			[-969] = "Набор B",										-- Set B
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
-	-- Temp Sets for Creation Catalyst
-		[-1006] = "Поиск рейда Реколор",							-- Raid Finder Alternative
-		[-1007] = "Обычный Реколор",								-- Normal Alternative
-		[-1008] = "Героический Реколор",							-- Heroic Alternative
-		[-1009] = "Эпохальный Реколор",								-- Mythic Alternative
-		[-1010] = "Гладиатор Реколор",								-- Gladiator Alternative
-		[-1011] = "Ветеран Реколор",								-- Elite Alternative
 	-- Dragonflight
 		[-1100] = "Манускрипты наблюдений за драконами",			-- Drakewatcher Manuscripts
 		[-1101] = "Изначальные Бури",								-- Primal Storms
@@ -853,6 +841,7 @@ for key,value in pairs({
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
 		[-1143] = "Редкие DF по расписанию",						-- DF Rare Rotation
 		[-1144] = "Еженедельные Очки Знаний Профессий",				-- Weekly Profession Header
+		--TODO: [-1200] = "Zskera Vaults",							-- Zskera Vaults
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",
@@ -876,8 +865,6 @@ for key,value in pairs({
 			[-5203] = "Награды за Престиж",							-- Prestige Rewards
 			[-5204] = "Облик Испытаний",							-- Challenge Appearance
 			[-5205] = "Скрытый облик",								-- Hidden Appearance
-		-- Class Sets
-			[-5350] = "Комплекты Пробных персонажей",				-- Class Trial
 
 		[-7776] = "Гуляка Зимнего Покрова",							-- Winter Revelers (for Winter Veil)
 	-- Classes
@@ -1097,6 +1084,8 @@ for key,value in pairs({
 	[129127] = "Сейф Галливикса",	-- Gallywix's Lockbox
 	[131474] = "Диски Норганнона",	-- The Discs of Norgannon
 	[138492] = "Кристаллы Мизраэль",	-- Shards of Myzrael
+	[140971] = "Газ'рилльское украшение",	-- Gahz'ridian
+	[141853] = "Фиалковый траган",	-- Violet Tragan
 	[141979] = "Древнее сокровище",	-- Ancient Treasure
 	[142071] = "Яйц-О-Матик",	-- Egg-O-Matic
 	[142088] = "Табличка воли",	-- Tablet of Will
@@ -1104,6 +1093,7 @@ for key,value in pairs({
 	[142127] = "Секрет Рин'джи",	-- Rin'ji's Secret
 	[142151] = "Запечатанная бочка",	-- Sealed Barrel
 	[142179] = "Соларсальская Беседка",	-- Solarsal Gazebo
+	[142181] = "Краденый груз",	-- Stoley's Shipment
 	[142184] = "Сундук капитана",	-- Captain's Chest
 	[142195] = "Тактическая карта стаи Древолапов",	-- Woodpaw Battle Map
 	[142343] = "Ульдумский пьедестал",	-- Uldum Pedestal
@@ -1131,6 +1121,7 @@ for key,value in pairs({
 	[148516] = "Табличка Бет'Амары",	-- Tablet of Beth'Amara
 	[149036] = "Сундук Марвона",	-- Marvon's Chest
 	[149502] = "Сокровищница черных драконов",	-- Hoard of the Black Dragonflight
+	[150075] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[151286] = "Калдорайский фолиант Призыва",	-- Kaldorei Tome of Summoning
 	[152095] = "Лунная лилия",	-- Moonpetal Lily
 	[152622] = "Отложение азшарита",	-- Azsharite Formation
@@ -1308,6 +1299,7 @@ for key,value in pairs({
 	[178195] = "Масло Песни Войны",	-- Warsong Oil
 	[178204] = "Партия топоров Песни Войны",	-- Warsong Axe Shipment
 	[178227] = "Корзина тотема Мургута",	-- Murgut's Totem Basket
+	[178553] = "Кокон Улья Аши",	-- Hive'Ashi Pod
 	[178609] = "Праздничный снег",	-- Holiday Snow
 	[179485] = "Сломанная ловушка",	-- A Broken Trap
 	[179499] = "Огрский дубильный чан",	-- Ogre Tannin Basket
@@ -1327,10 +1319,12 @@ for key,value in pairs({
 	[180366] = "Побитый ящик для рыболовных снастей",	-- Battered Tackle Box
 	[180368] = "Табличка Безумия",	-- Tablet of Madness
 	[180369] = "Грязный водоворот",	-- Muddy Churning Waters
+	[180436] = "Фрагмент сумеречной таблички",	-- Twilight Tablet Fragment
 	[180448] = "Плакат: \"Разыскивается\": Смертехват",	-- Wanted Poster: Deathclasp
 	[180456] = "Меньший камень Ветров",	-- Lesser Wind Stone
 	[180461] = "Камень Ветров",	-- Wind Stone
 	[180466] = "Больший Ветровой Камень",	-- Greater Wind Stone
+	[180501] = "Фрагмент сумеречной таблички",	-- Twilight Tablet Fragment
 	[180503] = "Занесенная песком поваренная книга",	-- Sandy Cookbook
 	[180526] = "Гонг Бетекка",	-- Gong of Bethekk
 	[180570] = "Бочонок",	-- Keg
@@ -1535,11 +1529,19 @@ for key,value in pairs({
 	[192079] = "Копье Ходира",	-- Hodir's Spear
 	[192080] = "Шлем Ходира",	-- Hodir's Helm
 	[192524] = "Арнгрим Ненасытный",	-- Arngrim the Insatiable
+	[192708] = "Школы тайной магии – Введение",	-- The Schools of Arcane Magic - Introduction
+	[192709] = "Школы тайной магии – Отречение",	-- The Schools of Arcane Magic - Abjuration
+	[192710] = "Школы тайной магии – Сотворение",	-- The Schools of Arcane Magic - Conjuration
+	[192711] = "Школы тайной магии – Предсказание",	-- The Schools of Arcane Magic - Divination
+	[192713] = "Школы тайной магии – Чаротворство",	-- The Schools of Arcane Magic - Enchantment
 	[192818] = "Странный гриб",	-- Infused Mushroom
 	[192823] = "Полный кувшин с вином",	-- Full Jug of Wine
 	[192827] = "Полевая горчица",	-- Wild Mustard
 	[192828] = "Морковь из леса Хрустальной Песни",	-- Crystalsong Carrot
 	[192833] = "Имущество Бриденбрада",	-- Bridenbrad's Possessions
+	[192865] = "Школы тайной магии – Иллюзия",	-- The Schools of Arcane Magic - Illusion
+	[192866] = "Школы тайной магии – Некромантия",	-- The Schools of Arcane Magic - Necromancy
+	[192867] = "Школы тайной магии – Трансмутация",	-- The Schools of Arcane Magic - Transmutation
 	[193051] = "Нерубское яйцо Плети",	-- Nerubian Scourge Egg
 	[193195] = "Пульсирующий кристалл",	-- Pulsing Crystal
 	[193400] = "Штабель саронитовых бомб",	-- Saronite Bomb Stack
@@ -2747,6 +2749,7 @@ for key,value in pairs({
 	[280883] = "Рассохшийся под солнцем сундук",	-- Sun-Worn Chest
 	[280886] = "Залитый звездным светом сундук",	-- Star-Touched Chest
 	[280903] = "Потерянная кошачья игрушка",	-- Lost Cat Toy
+	[280948] = "Туалет Сумеречного форта",	-- Twilight Outhouse
 	[280951] = "Трофеи Эшвейнов",	-- Ashvane Spoils
 	[280957] = "Сумка Зукаши",	-- Zukashi's Satchel
 	[281092] = "Схрон знахаря",	-- Witch Doctor's Hoard
@@ -3523,6 +3526,7 @@ for key,value in pairs({
 	[377317] = "Куча сокровищ",	-- Treasure Hoard
 	[377458] = "Брошенная оружейная стойка",	-- Abandoned Weapon Rack
 	[377466] = "Потерянные песочные часы драконов",	-- Lost Draconic Hourglass
+	[377485] = "Кислое яблоко",	-- Sour Apple
 	[377499] = "О происхождении видов драконов",	-- On the Origin of Draconic Species
 	[377534] = "Доставленный сундук",	-- Delivered Vault
 	[377899] = "Скрытый заложник рогоплава",	-- Hidden Hornswog Hostage
@@ -3677,9 +3681,116 @@ for key,value in pairs({
 	[384318] = "Непримечательная закладка",	-- Inconspicuous Bookmark
 	[384370] = "Нарочито непристойные записи",	-- Deliberately Delinquent Notes
 	[384405] = "Наполовину сваренная рыба",	-- Half-Boiled Fish
+	--TODO: [384763] = "Forbidden Hoard",	-- Forbidden Hoard
+	--TODO: [384980] = "Mysterious Chest",	-- Mysterious Chest
 	[385001] = "Пустой бочонок для рыбы",	-- Empty Fish Barrel
+	--TODO: [385010] = "Spun Webs",	-- Spun Webs
+	--TODO: [385011] = "Spun Webs",	-- Spun Webs
 	[385021] = "Окаменевшее яйцо дракона",	-- Petrified Dragon Egg
 	[385022] = "Размытая окаменелость",	-- Eroded Fossil
+	--TODO: [385028] = "Powerful Flask of Renewal",	-- Powerful Flask of Renewal
+	--TODO: [385032] = "Gold Pile",	-- Gold Pile
+	--TODO: [385064] = "Ice Spike",	-- Ice Spike
+	--TODO: [385401] = "Searing Chest",	-- Searing Chest
+	--TODO: [385415] = "Bone Pile",	-- Bone Pile
+	--TODO: [385468] = "Bone Pile",	-- Bone Pile
+	--TODO: [385520] = "Bone Pile",	-- Bone Pile
+	--TODO: [385533] = "Sending Stone: Protest",	-- Sending Stone: Protest
+	--TODO: [385799] = "Hardened Strongbox",	-- Hardened Strongbox
+	--TODO: [385800] = "Gold Pile",	-- Gold Pile
+	--TODO: [385801] = "Gold Pile",	-- Gold Pile
+	--TODO: [385802] = "Gold Pile",	-- Gold Pile
+	--TODO: [385826] = "Titan Coffer",	-- Titan Coffer
+	--TODO: [385830] = "Sending Stone: Initial Report",	-- Sending Stone: Initial Report
+	--TODO: [385832] = "Receiving Stone: Final Warning",	-- Receiving Stone: Final Warning
+	--TODO: [385834] = "Journal Entry: Experiments",	-- Journal Entry: Experiments
+	--TODO: [385836] = "Journal Entry: The Creches",	-- Journal Entry: The Creches
+	--TODO: [385837] = "Journal Entry: Silence",	-- Journal Entry: Silence
+	--TODO: [385937] = "Titan Coffer",	-- Titan Coffer
+	--TODO: [385940] = "Runic Wrench",	-- Runic Wrench
+	--TODO: [385952] = "Unusual Ring",	-- Unusual Ring
+	--TODO: [386168] = "Farscale Cache",	-- Farscale Cache
+	--TODO: [386353] = "Hardened Chest",	-- Hardened Chest
+	--TODO: [386354] = "Hardened Chest",	-- Hardened Chest
+	--TODO: [386421] = "Primordial Fire Cache",	-- Primordial Fire Cache
+	--TODO: [386422] = "Primordial Fire Cache",	-- Primordial Fire Cache
+	--TODO: [386423] = "Primordial Fire Cache",	-- Primordial Fire Cache
+	--TODO: [386424] = "Searing Chest",	-- Searing Chest
+	--TODO: [386425] = "Searing Chest",	-- Searing Chest
+	--TODO: [386426] = "Primordial Earth Cache",	-- Primordial Earth Cache
+	--TODO: [386427] = "Cart of Crushed Stone",	-- Cart of Crushed Stone
+	--TODO: [386428] = "Primordial Earth Cache",	-- Primordial Earth Cache
+	--TODO: [386429] = "Primordial Earth Cache",	-- Primordial Earth Cache
+	--TODO: [386430] = "Hardened Chest",	-- Hardened Chest
+	--TODO: [386432] = "Hardened Chest",	-- Hardened Chest
+	--TODO: [386433] = "Primordial Wind Cache",	-- Primordial Wind Cache
+	--TODO: [386441] = "Primordial Wind Cache",	-- Primordial Wind Cache
+	--TODO: [386443] = "Primordial Wind Cache",	-- Primordial Wind Cache
+	--TODO: [386444] = "Primordial Water Cache",	-- Primordial Water Cache
+	--TODO: [386445] = "Primordial Water Cache",	-- Primordial Water Cache
+	--TODO: [386447] = "Primordial Water Cache",	-- Primordial Water Cache
+	--TODO: [386450] = "Primordial Water Cache",	-- Primordial Water Cache
+	--TODO: [386451] = "Wind-Bound Strongbox",	-- Wind-Bound Strongbox
+	--TODO: [386453] = "Wind-Bound Strongbox",	-- Wind-Bound Strongbox
+	--TODO: [386454] = "Chest of Ice",	-- Chest of Ice
+	--TODO: [386455] = "Hardshell Chest",	-- Hardshell Chest
+	--TODO: [386456] = "Hardshell Chest",	-- Hardshell Chest
+	--TODO: [386457] = "Frozen Coffer",	-- Frozen Coffer
+	--TODO: [386458] = "Primordial Decay Cache",	-- Primordial Decay Cache
+	--TODO: [386460] = "Primordial Arcane Cache",	-- Primordial Arcane Cache
+	--TODO: [386461] = "Primordial Arcane Cache",	-- Primordial Arcane Cache
+	--TODO: [386463] = "Primordial Gold Cache",	-- Primordial Gold Cache
+	--TODO: [386484] = "Gold Pile",	-- Gold Pile
+	--TODO: [386531] = "Gold Pile",	-- Gold Pile
+	--TODO: [386532] = "Primordial Gold Cache",	-- Primordial Gold Cache
+	--TODO: [386573] = "Ornate Key Box",	-- Ornate Key Box
+	--TODO: [386578] = "Neltharion Gift Token",	-- Neltharion Gift Token
+	--TODO: [386579] = "Neltharion Gift Token",	-- Neltharion Gift Token
+	--TODO: [386580] = "Neltharion Gift",	-- Neltharion Gift
+	--TODO: [386581] = "Neltharion Gift Token",	-- Neltharion Gift Token
+	--TODO: [386582] = "Neltharion Gift Token",	-- Neltharion Gift Token
+	--TODO: [386583] = "Neltharion Gift Token",	-- Neltharion Gift Token
+	--TODO: [386586] = "Prismatic Fragment",	-- Prismatic Fragment
+	--TODO: [386587] = "Prismatic Fragment",	-- Prismatic Fragment
+	--TODO: [386588] = "Crystal Basket",	-- Crystal Basket
+	--TODO: [386591] = "Empty Vial",	-- Empty Vial
+	--TODO: [386604] = "Primordial Gold Cache",	-- Primordial Gold Cache
+	--TODO: [386605] = "Gold Pile",	-- Gold Pile
+	--TODO: [386633] = "Chest of Storms",	-- Chest of Storms
+	--TODO: [386660] = "Gold Pile",	-- Gold Pile
+	--TODO: [386680] = "Mysterious Almanac",	-- Mysterious Almanac
+	--TODO: [386683] = "Seared Book",	-- Seared Book
+	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
+	--TODO: [386762] = "Primordial Armor Cache",	-- Primordial Armor Cache
+	--TODO: [387501] = "Neltharion Gift Token",	-- Neltharion Gift Token
+	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
+	--TODO: [387728] = "Opera of the Aspects",	-- Opera of the Aspects
+	--TODO: [387737] = "Living Book",	-- Living Book
+	--TODO: [387746] = "Primordial Spirit Cache",	-- Primordial Spirit Cache
+	--TODO: [387749] = "Animate Crystalspine",	-- Animate Crystalspine
+	--TODO: [387853] = "Shattered Crystals",	-- Shattered Crystals
+	--TODO: [388712] = "Opera Chest",	-- Opera Chest
+	--TODO: [388866] = "Reagent Pot",	-- Reagent Pot
+	--TODO: [388876] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
+	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	--TODO: [388908] = "Inert Goo",	-- Inert Goo
+	--TODO: [389102] = "Prismatic Fragment",	-- Prismatic Fragment
+	--TODO: [389104] = "Prismatic Fragment",	-- Prismatic Fragment
+	--TODO: [389108] = "Prismatic Fragment",	-- Prismatic Fragment
+	--TODO: [389173] = "Primordial Blood Cache",	-- Primordial Blood Cache
+	--TODO: [389231] = "Primordial Music Cache",	-- Primordial Music Cache
+	--TODO: [389599] = "Ice Spike",	-- Ice Spike
+	--TODO: [389789] = "Primordial Earth Cache",	-- Primordial Earth Cache
+	--TODO: [389902] = "Primordial Earth Cache",	-- Primordial Earth Cache
+	--TODO: [390008] = "Ice Spike",	-- Ice Spike
+	--TODO: [390009] = "Box of Rocks",	-- Box of Rocks
+	--TODO: [390074] = "Primordial Deep Ocean Cache",	-- Primordial Deep Ocean Cache
+	--TODO: [390258] = "Inert Goo",	-- Inert Goo
+	--TODO: [392569] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
+	--TODO: [392570] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
+	--TODO: [392571] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
+	--TODO: [392572] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
+	--TODO: [392573] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only

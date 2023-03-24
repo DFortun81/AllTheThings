@@ -16,6 +16,13 @@ local OnTooltipForCityFactionReputation = [[function(t)
 	end
 end]];
 -- #endif
+local COOKING_AWARD_GROUPS = {
+	-- #if AFTER 5.0.4
+	currency(81),	-- Epicurean's Award
+	-- #else
+	currency(402),	-- Chef's Award
+	-- #endif
+};
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(THUNDER_BLUFF, {
 		["lore"] = "Thunder Bluff is the Tauren capital city located in the northern part of the region of Mulgore. The whole of the city is built on bluffs several hundred feet above the surrounding landscape, and is accessible by elevators on the southwestern and northeastern sides.",
@@ -127,9 +134,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = {
-						currency(81),	-- Epicurean's Award
-					},
+					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 				q(6361, {	-- A Bundle of Hides
 					["providers"] = {
@@ -262,9 +267,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = {
-						currency(81),	-- Epicurean's Award
-					},
+					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 				q(29349, {	-- Craving Crayfish
 					["qg"] = 3028,	-- Kah Mistrunner
@@ -413,9 +416,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = {
-						currency(81),	-- Epicurean's Award
-					},
+					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 				q(29365, {	-- Perfectly Picked Portions
 					["qg"] = 3026,	-- Aska Mistrunner
@@ -425,9 +426,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = {
-						currency(81),	-- Epicurean's Award
-					},
+					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 				q(29358, {	-- Pining for Nuts
 					["qg"] = 3026,	-- Aska Mistrunner
@@ -437,9 +436,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = {
-						currency(81),	-- Epicurean's Award
-					},
+					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 				q(29345, {	-- Pond Predators
 					["qg"] = 3028,	-- Kah Mistrunner
@@ -858,7 +855,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(3027, {	-- Naal Mistrunner <Cooking Supplies>
 					["coord"] = { 51.0, 52.5, THUNDER_BLUFF },
-					["sym"] = { {"sub", "common_recipes_vendor", 49737} }, -- Shazdar <Sous Chef>
+					-- #if AFTER CATA
+					["sym"] = {{"sub", "common_recipes_vendor", 49737}}, -- Shazdar <Sous Chef>
+					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6330),	-- Recipe: Bristle Whisker Catfish
@@ -948,6 +947,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						-- #endif
+					},
+				}),
+				n(3023, {	-- Sura Wildmane <War Harness Vendor>
+					["coord"] = { 51.8, 54.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(6526),	-- Battle Harness
+						i(6523),	-- Buckled Harness
+						i(6525),	-- Grunt's Harness
+						i(6524),	-- Studded Leather Harness
 					},
 				}),
 				n(3016, {	-- Tand <Basket Weaver>

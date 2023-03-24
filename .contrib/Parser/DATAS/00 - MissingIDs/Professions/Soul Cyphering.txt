@@ -1,0 +1,43 @@
+9.0.1.33978
+r(296386),	-- Encrypted Radio Receiver
+r(300278),	-- Galvanic Oscillator \\ TK32[DNT] \\ TK32
+r(300279),	-- Chain Ignitercoils \\ TK33[DNT] \\ TK33
+r(300280),	-- TK34[DNT] \\ TK34
+r(300281),	-- TK35[DNT] \\ TK35
+r(300282),	-- TK36[DNT] \\ TK36
+r(300283),	-- TK37[DNT] \\ TK37
+r(300284),	-- TK38[DNT] \\ TK38
+r(300285),	-- TK39[DNT] \\ TK39
+r(300286),	-- TK40[DNT] \\ TK40
+r(300287),	-- TK41[DNT] \\ TK41
+r(300288),	-- TK42[DNT] \\ TK42
+r(300289),	-- TK43[DNT] \\ TK43
+r(300290),	-- TK44[DNT] \\ TK44
+r(300465),	-- Pocket-Sized Computation Device
+r(317398),	-- Icebound Cypher
+r(317427),	-- Hoarfrost Immunity
+r(317708),	-- Kinetic Cypher
+r(317751),	-- Adamantine Cypher
+r(317756),	-- Dauntless Cypher
+r(317761),	-- Formless Dreadsaddle
+r(317797),	-- Versatility
+r(317798),	-- Critical Strike Chance
+r(317799),	-- Max Health
+r(317800),	-- Mastery
+r(317801),	-- Haste
+r(317802),	-- Critical Damage
+r(317825),	-- Healing
+r(317841),	-- Pandemonium Master Key
+r(317843),	-- Nullification Aura
+r(317850),	-- Repulsion Cypher
+r(317852),	-- Critical Healing
+r(317900),	-- Cypher of Extrication
+r(317902),	-- Jailer's Tower Key
+r(319235),	-- Resolute Cypher
+r(325848),	-- Cypher of Relocation
+9.0.1.34821
+r(335278),	-- The Maw - Travel Upgrade - NYI
+r(335279),	-- The Maw - Pet Cosmetic - NYI
+r(335284),	-- The Maw - POI Unlock - NYI
+r(335286),	-- The Maw - Torghast Unlock - NYI
+r(335287),	-- The Maw - Consumable Power - NYI

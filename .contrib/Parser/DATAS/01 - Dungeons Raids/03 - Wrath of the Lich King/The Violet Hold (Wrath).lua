@@ -257,6 +257,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								["timeline"] = { "added 7.3.5.25744" },
 							}),
 							i(43405),	-- Sabatons of Erekem
+							-- #if ANYCLASSIC
+							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
+								i(39275),	-- Contagion Gloves
+								i(39293),	-- Blackened Legplates of Feugen
+								i(39281),	-- Infection Repulser
+							})),
+							-- #endif
 						},
 					}),
 					e(627, {	-- Moragg
@@ -274,6 +281,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(43382),	-- Band of Eyes (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(43408),	-- Solitaire of Reflecting Doom
+							-- #if ANYCLASSIC
+							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
+								i(39292),	-- Repelling Charge
+								i(39280),	-- Leggings of Innumerable Barbs
+								i(39274),	-- Retcher's Shoulderpads
+							})),
+							-- #endif
 						},
 					}),
 					e(628, {	-- Ichoron
@@ -292,6 +306,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								["timeline"] = { "added 7.3.5.25744" },
 							}),
 							i(37869),	-- Globule Signet
+							-- #if ANYCLASSIC
+							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
+								i(39273),	-- Sullen Cloth Boots
+								i(39279),	-- Blistered Belt of Decay
+								i(39291),	-- Torment of the Banished
+							})),
+							-- #endif
 						},
 					}),
 					e(629, {	-- Xevozz
@@ -312,6 +333,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(35644),	-- Xevozz's Belt (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(37867),	-- Footwraps of Teleportation
+							-- #if ANYCLASSIC
+							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
+								i(39278),	-- Bands of Anxiety
+								i(39285),	-- Handgrips of Turmoil
+								i(39272),	-- Drape of Surgery
+							})),
+							-- #endif
 						},
 					}),
 					e(630, {	-- Levanthor
@@ -332,6 +360,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							-- #endif
 							i(37870),	-- Twin-Headed Boots
 							i(37872),	-- Levanthor's Talisman
+							-- #if ANYCLASSIC
+							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
+								i(39277),	-- Sealing Ring of Grobbulus
+								i(39271),	-- Blade of Dormant Memories
+								i(39307),	-- Iron Rings of Endurance
+							})),
+							-- #endif
 						},
 					}),
 					e(631, {	-- Zuramat the Obliterator
@@ -350,13 +385,33 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(43353),	-- Void Sentry Legplates (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(43402),	-- The Obliterator Greaves
+							-- #if ANYCLASSIC
+							applyclassicphase(WRATH_PHASE_TWO, header(HEADERS.Spell, 396441, {	-- Defense Protocol Alpha
+								i(39270),	-- Hatestrike
+								i(39276),	-- The Skull of Ruin
+								i(39282),	-- Bone-Linked Amulet
+							})),
+							-- #endif
 						},
 					}),
 					e(632, {	-- Cyanigosa
 						["creatureID"] = 31134,	-- Cyanigosa
 						["groups"] = {
 							-- #if ANYCLASSIC
-							applyclassicphase(WRATH_PHASE_TWO, ach(17293)),	-- Defense Protocol Alpha: The Violet Hold
+							applyclassicphase(WRATH_PHASE_TWO, ach(17293, {	-- Defense Protocol Alpha: The Violet Hold
+								i(39420),	-- Anarchy
+								i(40511),	-- Focusing Energy Epaulets
+								i(39426),	-- Wand of the Archlich
+								i(40616),	-- Helm of the Lost Conqueror
+								i(40617),	-- Helm of the Lost Protector
+								i(40618),	-- Helm of the Lost Vanquisher
+								i(40622),	-- Spaulders of the Lost Conqueror
+								i(40623),	-- Spaulders of the Lost Protector
+								i(40624),	-- Spaulders of the Lost Vanquisher
+								i(40619),	-- Leggings of the Lost Conqueror
+								i(40620),	-- Leggings of the Lost Protector
+								i(40621),	-- Leggings of the Lost Vanquisher
+							})),
 							-- #endif
 							ach(494),	-- Heroic: The Violet Hold
 							ach(5100, {	-- Heroic: The Violet Hold Guild Run

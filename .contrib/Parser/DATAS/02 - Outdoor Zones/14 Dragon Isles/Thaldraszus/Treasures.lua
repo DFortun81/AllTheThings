@@ -37,6 +37,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			o(381094, {	-- Elegant Canvas Brush
 				["coord"] = { 60.2, 41.6, THALDRASZUS },
 				["questID"] = 70609,
+				["g"] = {
+					i(203206),	-- Elegant Canvas Brush
+				},
 			}),
 			o(380429, {	-- Golden Claw
 				["coord"] = { 38.8, 45.01, THALDRASZUS },

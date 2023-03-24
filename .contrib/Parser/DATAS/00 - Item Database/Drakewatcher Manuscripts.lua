@@ -2,7 +2,7 @@
 
 local Items = root(ROOTS.ItemDBConditional);
 local i = function(itemID, questID)
-	Items[itemID] = { ["questID"] = questID };
+	Items[itemID] = { ["questID"] = questID, ["type"] = "dmID" };
 end
 
 ------------------
@@ -217,7 +217,6 @@ i(197580, 69784);	-- Windborne Velocidrake: Gold and Red Armor
 i(197598, 69802);	-- Windborne Velocidrake: Gray Hair
 i(197608, 69812);	-- Windborne Velocidrake: Gray Horns
 i(197591, 69795);	-- Windborne Velocidrake: Hairy Head
-i(197617, 69821);	-- Windborne Velocidrake: Heavy Scales
 i(197600, 69804);	-- Windborne Velocidrake: Helm
 i(197619, 69823);	-- Windborne Velocidrake: Hooked Snout
 i(197596, 69800);	-- Windborne Velocidrake: Horned Jaw
@@ -225,15 +224,12 @@ i(197589, 69793);	-- Windborne Velocidrake: Large Head Fin
 i(197618, 69822);	-- Windborne Velocidrake: Long Snout
 i(197585, 69789);	-- Windborne Velocidrake: Maned Back
 i(197604, 69808);	-- Windborne Velocidrake: Ox Horns
-i(197628, 69834);	-- Windborne Velocidrake: Plated Neck
 i(197635, 69846);	-- Windborne Velocidrake: Reaver Pattern
 i(197599, 69803);	-- Windborne Velocidrake: Red Hair
 i(197614, 69818);	-- Windborne Velocidrake: Red Scales
-i(197636, 69847);	-- Windborne Velocidrake: Shrieker Pattern
 i(197578, 69782);	-- Windborne Velocidrake: Silver and Blue Armor
 i(197581, 69785);	-- Windborne Velocidrake: Silver and Purple Armor
 i(197594, 69798);	-- Windborne Velocidrake: Small Ears
-i(197590, 69794);	-- Windborne Velocidrake: Small Head Fin
 i(197586, 69790);	-- Windborne Velocidrake: Spiked Back
 i(197623, 69827);	-- Windborne Velocidrake: Spiked Tail
 i(197592, 69796);	-- Windborne Velocidrake: Spined Head
@@ -278,12 +274,16 @@ i(197129, 69330);	-- Highland Drake: Sleek Horns
 i(197136, 69337);	-- Highland Drake: Tapered Nose
 i(202278, 73058);	-- Renewed Proto-Drake: Antlers
 i(202279, 73056);	-- Renewed Proto-Drake: Malevolent Horns
+i(202274, 73055);	-- Renewed Proto-Drake: Plated Brow
 i(202273, 73054);	-- Renewed Proto-Drake: Stubby Snout
 i(197583, 69787);	-- Windborne Velocidrake: Exposed Finned Back
 i(197626, 69831);	-- Windborne Velocidrake: Exposed Finned Neck
+i(197617, 69821);	-- Windborne Velocidrake: Heavy Scales
+i(197628, 69834);	-- Windborne Velocidrake: Plated Neck
+i(197636, 69847);	-- Windborne Velocidrake: Shrieker Pattern
+i(197590, 69794);	-- Windborne Velocidrake: Small Head Fin
 i(197629, 69835);	-- Windborne Velocidrake: Spiked Neck
 -- Unknown --
 i(202277, 73057);	-- Renewed Proto-Drake: Bruiser Horns
-i(202274, 73055);	-- Renewed Proto-Drake: Plated Brow
 i(202275, 73059);	-- Renewed Proto-Drake: Plated Jaw
 i(202280, 73060);	-- Renewed Proto-Drake: Pronged Tail

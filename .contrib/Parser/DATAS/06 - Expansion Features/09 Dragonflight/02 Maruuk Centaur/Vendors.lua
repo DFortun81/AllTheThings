@@ -230,7 +230,19 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						},
 					}),
 						-- RENOWN 5 --
+					i(197630, {	-- Windborne Velocidrake: Feathered Neck (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 50 },
+						},
+					}),
 					i(197596, {	-- Windborne Velocidrake: Horned Jaw (DM!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 50 },
+						},
+					}),
+					i(197604, {	-- Windborne Velocidrake: Ox Horns (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
@@ -330,6 +342,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["minReputation"] = { 2503, 15 },	-- Maruuk Centaur Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 25 },
+						},
+					}),
+					i(197587, {	-- Windborne Velocidrake: Feathered Back (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 100 },
+						},
+					}),
+					i(197591, {	-- Windborne Velocidrake: Hairy Head (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 100 },
 						},
 					}),
 					i(197618, {	-- Windborne Velocidrake: Long Snout (DM!)

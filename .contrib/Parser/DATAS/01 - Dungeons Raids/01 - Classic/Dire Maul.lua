@@ -79,7 +79,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 		["lore"] = "Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",
 		-- #endif
 		["mapID"] = DIRE_MAUL,
-		["lvl"] = lvlsquish(44, 31, 44),
+		["lvl"] = lvlsquish(44, 44, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				classicAch(5788, {	-- Agent of the Shen'dralar
@@ -154,14 +154,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					},
 					-- #endif
 					["repeatable"] = true,
-					["lvl"] = lvlsquish(56, 15, 56),
+					["lvl"] = lvlsquish(56, 56, 15),
 				}),
 				q(27118, {	-- A Broken Trap
 					["provider"] = { "o", 179485 },	-- A Broken Trap
 					["timeline"] = { "added 4.0.3" },
 					["maps"] = { 235 },	-- Gordok Commons
 					["repeatable"] = true,
-					["lvl"] = lvlsquish(42, 15, 42),
+					["lvl"] = lvlsquish(42, 42, 15),
 				}),
 				q(7463, {	-- Arcane Refreshment
 					["qg"] = 14368,	-- Lorekeeper Lydros
@@ -182,7 +182,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["qg"] = 44969,	-- Furgus Warpwood
 					["timeline"] = { "added 4.0.3" },
 					["maps"] = { 239 },	-- Warpwood Quarter
-					["lvl"] = lvlsquish(36, 15, 36),
+					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Zevrim Thornhoof slain
 							["provider"] = { "n", 11490 },	-- Zevrim Thornhoof
@@ -200,7 +200,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["qg"] = 44969,	-- Furgus Warpwood
 					["timeline"] = { "added 4.0.3" },
 					["maps"] = { 239 },	-- Warpwood Quarter
-					["lvl"] = lvlsquish(36, 15, 36),
+					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Hydrospawn Essence
 							["provider"] = { "i", 18299 },	-- Hydrospawn Essence
@@ -486,7 +486,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["timeline"] = { "added 4.0.3" },
 					["maps"] = { 235 },	-- Gordok Commons
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(42, 15, 42),
+					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 King Gordok slain
 							["provider"] = { "n", 11501 },	-- King Gordok
@@ -502,7 +502,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["timeline"] = { "added 4.0.3" },
 					["maps"] = { 235 },	-- Gordok Commons
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(42, 15, 42),
+					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 King Gordok slain
 							["provider"] = { "n", 11501 },	-- King Gordok
@@ -551,7 +551,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["qg"] = 44971,	-- "Ambassador" Dagg'thol
 					["timeline"] = { "added 4.0.3" },
 					["maps"] = { 239 },	-- Warpwood Quarter
-					["lvl"] = lvlsquish(36, 15, 36),
+					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lethtendris's Web
 							["provider"] = { "i", 18426 },	-- Lethtendris's Web
@@ -649,7 +649,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["qg"] = 44971,	-- "Ambassador" Dagg'thol
 					["timeline"] = { "added 4.0.3" },
 					["maps"] = { 239 },	-- Warpwood Quarter
-					["lvl"] = lvlsquish(36, 15, 36),
+					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Book of Incantations
 							["provider"] = { "i", 18261 },	-- Book of Incantations
@@ -674,7 +674,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["qg"] = 44969,	-- Furgus Warpwood
 					["timeline"] = { "added 4.0.3" },
 					["maps"] = { 239 },	-- Warpwood Quarter
-					["lvl"] = lvlsquish(36, 15, 36),
+					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Sealed Reliquary of Purity
 							["provider"] = { "i", 18540 },	-- Sealed Reliquary of Purity
@@ -704,7 +704,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["qg"] = 44991,	-- Estulan
 					["timeline"] = { "added 4.0.3" },
 					["maps"] = { 236 },	-- Capital Gardens
-					["lvl"] = lvlsquish(39, 15, 39),
+					["lvl"] = lvlsquish(39, 39, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Magister Kalendris slain
 							["provider"] = { "n", 11487 },	-- Magister Kalendris
@@ -718,7 +718,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["qg"] = 44999,
 					["timeline"] = { "added 4.0.3" },
 					["maps"] = { 236 },	-- Capital Gardens
-					["lvl"] = lvlsquish(39, 15, 39),
+					["lvl"] = lvlsquish(39, 39, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Tendris Warpwood slain
 							["provider"] = { "n", 11489 },	-- Tendris Warpwood
@@ -791,7 +791,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
 					["maps"] = { 235 },	-- Gordok Commons
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(42, 15, 42),
+					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						i(18258),	-- Gordok Ogre Suit
 					},
@@ -803,7 +803,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["maps"] = { 235 },	-- Gordok Commons
 					["timeline"] = { "added 4.0.3" },
 					["repeatable"] = true,
-					["lvl"] = lvlsquish(42, 15, 42),
+					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						i(18258),	-- Gordok Ogre Suit
 					},
@@ -824,7 +824,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
 					["timeline"] = { "added 4.0.3" },
 					["maps"] = { 235 },	-- Gordok Commons
-					["lvl"] = lvlsquish(42, 15, 42),
+					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						i(18269),	-- Gordok Green Grog
 						i(18284),	-- Kreeg's Stout Beatdown
@@ -892,7 +892,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["qg"] = 14358,	-- Shen'dralar Ancient
 					["maps"] = { 236 },	-- Capital Gardens
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(36, 15, 36),
+					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Immol'thar slain
 							["provider"] = { "n", 11496 },	-- Immol'thar
@@ -906,7 +906,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["qg"] = 44991,	-- Estulan
 					["maps"] = { 236 },	-- Capital Gardens
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(39, 15, 39),
+					["lvl"] = lvlsquish(39, 39, 15),
 				}),
 				q(7877, {	-- The Treasure of the Shen'dralar
 					["qg"] = 14358,	-- Shen'dralar Ancient
@@ -931,7 +931,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["sourceQuest"] = 27110,	-- The Madness Within
 					["maps"] = { 236 },	-- Capital Gardens
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(39, 15, 39),
+					["lvl"] = lvlsquish(39, 39, 15),
 					["groups"] = {
 						i(65949),	-- Dire Maul
 						i(65973),	-- Grimm's Cigar Cutter
@@ -962,7 +962,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
 					["maps"] = { 235 },	-- Gordok Commons
 					["timeline"] = { "added 4.0.3" },
-					["lvl"] = lvlsquish(42, 15, 42),
+					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						i(18367),	-- Gordok's Gauntlets
 						i(18368),	-- Gordok's Gloves

@@ -1,0 +1,78 @@
+9.0.1.33978
+r(325284),	-- Construct Body: "Chordy"
+r(325451),	-- Construct Body: "Roseboil" \\ Construct Body: "Rose"
+r(325452),	-- Construct Body: "Marz"
+r(325453),	-- Construct Body: "Flytrap"
+r(325454),	-- Construct Body: "Atticus"
+r(325458),	-- Construct Body: "Miru"
+r(326379),	-- Construct Body: "Neena"
+r(326380),	-- Construct Body: "Gas Bag"
+r(326406),	-- Construct Body: "Professor"
+r(326407),	-- Construct Body: "Toothpick"
+r(326408),	-- Construct Body: "Mama Tomalin"
+r(326762),	-- Bag of Creepy Crawlies
+r(326903),	-- Anima-bound Wraps
+r(327090),	-- Restore Construct
+r(327091),	-- Abominable Backup
+9.0.1.34365
+r(331403),	-- Lil' Eddie
+r(331404),	-- Construct Disguise
+9.0.1.35167
+r(337535),	-- Dapper Top Hat
+r(337540),	-- Outlaw Flag
+r(337554),	-- Trustworthy Doll \\ Green Envy Doll \\ Green Doll
+r(338037),	-- Construct Body: "Iron Phillip"
+r(338039),	-- Construct Body: "Guillotine"
+r(338040),	-- Construct Body: "Sabrina"
+r(338043),	-- Construct Body: "Naxx"
+r(338046),	-- Bindings of Wellbeing \\ Construct Body: "Unity"
+r(338052),	-- Bonesewn Fleshroc \\ Whiteout
+r(338057),	-- Backbone
+r(338058),	-- Mu'dud
+r(338059),	-- Bag of Twigin Treats
+r(338383),	-- Holiday Hat
+9.0.1.35432
+r(341498),	-- Construct Ensemble: Stitched Authority of Maldraxxus
+r(341500),	-- Construct Ensemble: Stitched Alacrity of Maldraxxus
+r(341502),	-- Construct Ensemble: Stitched Guile of Maldraxxus
+r(341504),	-- Construct Ensemble: Stitched Rationale of Maldraxxus
+9.0.1.35522
+r(342417),	-- Vestigial Wings
+r(342418),	-- Engineering Pack
+r(342421),	-- Operational Instructions
+9.0.1.35598
+r(342447),	-- Flower Crown
+r(342448),	-- Halo of Purity
+r(342454),	-- Skull Protector
+r(342455),	-- Red Eye Lens
+r(342468),	-- Happiness Bird
+r(342483),	-- Six-League Pack
+r(342782),	-- Tossable Head
+r(342803),	-- Construct's Best Friend
+r(342841),	-- Collector Kash's Pack
+r(342842),	-- Safe Fall Pack
+r(342843),	-- Faction Flag
+r(342845),	-- Sticky Cat
+r(342846),	-- Butterflies
+r(342849),	-- Armor Plating
+r(342850),	-- Plague Pack \\ Spare Body
+r(342851),	-- Magician's Hat
+r(342895),	-- Intellectuals Monocle
+r(342899),	-- Spare Weapon \\ Spare Weapons
+9.0.2.35854
+r(342902),	-- Hitchhiker
+r(344095),	-- Dundae's Hat
+r(344096),	-- Lovely Candle Display
+r(344097),	-- Trained Corpselice \\ Trained Corpslice
+r(344100),	-- Chef Hat
+r(344101),	-- Egg Hat
+r(344110),	-- Barrel O' Fish
+r(344765),	-- Pumpkin Head
+r(344766),	-- Skull Fungus
+r(344769),	-- Pirate Hat
+r(344770),	-- Unworthy Crown
+r(344796),	-- Back Mushrooms
+r(344797),	-- Underpowered Gravity Pack
+r(344798),	-- Shoulder Sprouts
+9.0.2.36294
+r(347024),	-- Tighter Stitching

@@ -862,7 +862,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							i(139713, {	-- Belt of the Unseen Path
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(191658, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Ensemble: Dark Ranger's Attire
+							i(191658, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Ensemble: Dark Ranger's Attire
 								["sourceQuests"] = {
 									65788,	-- A Walk with Ghosts
 									65669,	-- Report to Greymane

@@ -27,7 +27,7 @@ root(ROOTS.Holidays, applyholiday(HARVEST_FESTIVAL, {
 				["maps"] = { WESTERN_PLAGUELANDS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(30, 1, 30),
+				["lvl"] = lvlsquish(30, 30, 1),
 				["groups"] = {
 					objective(1, {	-- Uther's Tribute
 						["provider"] = { "i", 19850 },	-- Uther's Tribute
@@ -46,7 +46,7 @@ root(ROOTS.Holidays, applyholiday(HARVEST_FESTIVAL, {
 				["maps"] = { ASHENVALE },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
-				["lvl"] = lvlsquish(30, 1, 30),
+				["lvl"] = lvlsquish(30, 30, 1),
 				["groups"] = {
 					objective(1, {	-- Grom's Tribute
 						["provider"] = { "i", 19851 },	-- Grom's Tribute

@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 				["coord"] = { 59.7, 70.6, ORIBOS },
 				["g"] = {
 					i(194118, {	-- Cosmic Equipment Chest
-						["timeline"] = { "added 9.2.5", REMOVED_SL_S4 },
+						["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
 						["cost"] = {
 							{ "c", 1602, 375 },	-- 375x Conquest
 						},
@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 						},
 					}),
 					i(194334, {	-- Encrypted Equipment Chest
-						["timeline"] = { "added 9.2.5", REMOVED_SL_S4 },
+						["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500x Valor
 						},

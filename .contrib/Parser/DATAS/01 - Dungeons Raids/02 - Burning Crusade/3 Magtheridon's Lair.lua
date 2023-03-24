@@ -8,7 +8,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["mapID"] = MAGTHERIDONS_LAIR,
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["lvl"] = lvlsquish(68, 30, 68),	-- Level 68s could zone in without any attunements. TODO: Check this.
+		["lvl"] = lvlsquish(68, 68, 30),	-- Level 68s could zone in without any attunements. TODO: Check this.
 		["groups"] = {
 			n(QUESTS, {
 				q(11002, {	-- The Fall of Magtheridon (A)

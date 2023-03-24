@@ -103,7 +103,7 @@ namespace ATT
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
             { "SHADOWLANDS", new int[] { 9, 2, 7, 45745 } },
-            { "DF", new int[] { 10, 0, 5, 48001 } },
+            { "DF", new int[] { 10, 0, 7, 48676 } },
         };
 
         public static string CURRENT_RELEASE_PHASE_NAME =
@@ -322,13 +322,21 @@ namespace ATT
         {
             if (Config == null)
             {
+                Log($"Using config: {filepath}");
                 Config = new CustomConfiguration(filepath);
             }
             else
             {
+                Log($"Added config: {filepath}");
                 Config.ApplyFile(filepath);
             }
-            Log($"config: {filepath}");
+        }
+
+        /// <summary>
+        /// After multiple calls to InitConfigSettings have been completed, this method is used to apply the config settings into the Parser
+        /// </summary>
+        public static void ApplyConfigSettings()
+        {
             CURRENT_RELEASE_PHASE_NAME = Config["DataPhase"] ?? CURRENT_RELEASE_PHASE_NAME;
             int[] configPatch = Config["DataPatch"];
             if (configPatch != null)
@@ -474,9 +482,6 @@ namespace ATT
             }
             else
             {
-                // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
-                Objects.PostProcessMergeInto(data);
-
                 if (!DataConsolidation(data))
                     return false;
             }
@@ -489,7 +494,7 @@ namespace ATT
             if (data.TryGetValue("g", out List<object> groups))
             {
                 var previousParent = CurrentParentGroup;
-                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object objKeyValue))
+                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
                     CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
                 var previousDifficultyRoot = DifficultyRoot;
                 var previousDifficulty = NestedDifficultyID;
@@ -873,8 +878,6 @@ namespace ATT
                 }
             }
 
-            ObjectData.TryFindAndConvertDataByObjectType(data);
-
             // Certain automatic header types may be converted from raw Lua data
             //if (data.TryGetValue("headerID", out decimal headerID) && data.TryGetValue("type", out string type))
             //{
@@ -1215,6 +1218,9 @@ namespace ATT
             Items.MergeInto(data);
             Objects.MergeInto(data);
 
+            // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
+            Objects.PostProcessMergeInto(data);
+
             // verify the timeline data of Merged data (can prevent keeping the data in the data container)
             if (!CheckTimeline(data))
                 return false;
@@ -1241,7 +1247,9 @@ namespace ATT
 
             CheckHeirloom(data);
 
-            ObjectData.TryDataConversion(data);
+            Items.DetermineSourceID(data);
+
+            CheckObjectConversion(data);
 
             //VerifyListContentOrdering(data);
 
@@ -1289,7 +1297,7 @@ namespace ATT
             }
 
             // clean up any Parser metadata tags
-            List<string> removeKeys = new List<string>(data.Keys.Where(k => k.StartsWith("_")));
+            List<string> removeKeys = new List<string>();
 
             foreach (KeyValuePair<string, object> dataKvp in data)
             {
@@ -1306,6 +1314,17 @@ namespace ATT
             }
 
             return true;
+        }
+
+        private static void CheckObjectConversion(Dictionary<string, object> data)
+        {
+            if (ObjectData.TryFindObjectConversion(data, out ObjectData conversionObject, out object convertValue))
+            {
+                LogDebug($"INFO: Type Conversion {conversionObject.ConvertedKey}=>{conversionObject.ObjectType} ({convertValue})");
+                data.Remove("type");
+                data.Remove(conversionObject.ConvertedKey);
+                data[conversionObject.ObjectType] = convertValue;
+            }
         }
 
         /// <summary>
@@ -1818,7 +1837,7 @@ namespace ATT
             if (!MergeItemData) return;
 
             var groupIDs = Objects.CompressToList(groups) ?? new List<object> { groups };
-            if (groupIDs != null && ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object _))
+            if (groupIDs != null && ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object _))
             {
                 switch (objectData.ObjectType)
                 {
@@ -1917,7 +1936,14 @@ namespace ATT
             // duplicate the data into the sourced data by type
             foreach (object dupeGroupID in groupIDs)
             {
-                Objects.PostProcessMerge(type, dupeGroupID, data);
+                if (dupeGroupID.TryConvert(out decimal groupID))
+                {
+                    Objects.PostProcessMerge(type, groupID, data);
+                }
+                else
+                {
+                    Log($"WARN: Trying to Post-Process Merge using a non-numeric key: {dupeGroupID} for type {type}");
+                }
             }
         }
 
@@ -1964,8 +1990,7 @@ namespace ATT
             Log("Data Validation...");
             foreach (var container in Objects.AllContainers)
             {
-                ProcessingAchievementCategory = container.Key.Contains("Achievement");
-                Process(container.Value, 0, 1);
+                ProcessContainer(container);
             }
 
             // Merge the Item Data into the Containers again, this time syncing Item data into nested Item groups
@@ -1974,8 +1999,7 @@ namespace ATT
             AdditionalProcessing();
             foreach (var container in Objects.AllContainers)
             {
-                ProcessingAchievementCategory = container.Key.Contains("Achievement");
-                Process(container.Value, 0, 1);
+                ProcessContainer(container);
             }
 
             // Sort World Drops by Name
@@ -1991,183 +2015,70 @@ namespace ATT
                 unsorted = new List<object>();
                 Objects.AllContainers["Unsorted"] = unsorted;
             }
-            if (Items.GetNull(30000) == null) // Classic, no Tier Objects
+            var tierLists = new Dictionary<int, TierList>();
+            int maxTierID = 10;// LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME][0];
+            for (int tierID = 1; tierID <= maxTierID; ++tierID)
             {
-                Dictionary<long, List<object>> FilteredLists = new Dictionary<long, List<object>>();
-                Dictionary<long, List<object>> ProfessionLists = new Dictionary<long, List<object>>();
-                foreach (var item in Items.AllItemsWithoutReferences)
-                {
-                    if (item.TryGetValue("f", out object objRef))
-                    {
-                        long filterID = Convert.ToInt64(objRef);
-                        if (filterID >= 0 && (filterID < 56 || filterID > 90))
-                        {
-                            switch ((Objects.Filters)filterID)
-                            {
-                                /*
-                                case Objects.Filters.Invalid:
-                                case Objects.Filters.Ignored:
-                                case Objects.Filters.Toy:
-                                case Objects.Filters.Illusion:
-                                case Objects.Filters.Mount:
-                                case Objects.Filters.Quest:
-                                case Objects.Filters.Holiday:
-                                */
-                                case Objects.Filters.Recipe:
-                                    {
-                                        if (!FilteredLists.TryGetValue(filterID, out listing))
-                                        {
-                                            // ensure the filter group exists
-                                            Objects.Merge(unsorted, new Dictionary<string, object>
-                                                {
-                                                    { "f", filterID },
-                                                    { "g", new List<object>() },
-                                                });
-                                            // grab the resulting filter group 'g' list
-                                            unsorted.FindObject("f", filterID).TryGetValue("g", out listing);
-                                            FilteredLists[filterID] = listing;
-                                        }
-                                        if (item.TryGetValue("requireSkill", out object requireSkillRef))
-                                        {
-                                            requireSkill = Convert.ToInt64(requireSkillRef);
-                                            if (!ProfessionLists.TryGetValue(requireSkill, out List<object> sublisting))
-                                            {
-                                                listing.Add(new Dictionary<string, object>
-                                                {
-                                                    {"professionID", requireSkill },
-                                                    { "g", listing = ProfessionLists[requireSkill] = new List<object>() }
-                                                });
-                                            }
-                                            else
-                                            {
-                                                listing = sublisting;
-                                            }
-                                        }
-                                        else
-                                        {
-                                            if (!ProfessionLists.TryGetValue(-1, out List<object> sublisting))
-                                            {
-                                                listing.Add(new Dictionary<string, object>
-                                                {
-                                                    { "f", (int)Objects.Filters.Miscellaneous },
-                                                    { "g", listing = ProfessionLists[-1] = new List<object>() }
-                                                });
-                                            }
-                                            else
-                                            {
-                                                listing = sublisting;
-                                            }
-                                        }
-
-                                        if (item.TryGetValue("itemID", out long itemID))
-                                        {
-                                            var newItem = new Dictionary<string, object>
-                                            {
-                                                {"itemID", itemID },
-                                            };
-                                            Items.MergeInto(itemID, item, newItem);
-                                            listing.Add(newItem);
-                                        }
-                                        break;
-                                    }
-                                default:
-                                    {
-                                        item.Remove("spellID");
-                                        if ((item.TryGetValue("q", out objRef) && Convert.ToInt64(objRef) >= 2)
-                                        || (filterID == 101 || filterID == 102 || filterID == 100 || filterID == 108 || filterID == 10))
-                                        {
-                                            if (!FilteredLists.TryGetValue(filterID, out listing))
-                                            {
-                                                // ensure the filter group exists
-                                                Objects.Merge(unsorted, new Dictionary<string, object>
-                                                {
-                                                    { "f", filterID },
-                                                    { "g", new List<object>() },
-                                                });
-                                                // grab the resulting filter group 'g' list
-                                                unsorted.FindObject("f", filterID).TryGetValue("g", out listing);
-                                                FilteredLists[filterID] = listing;
-                                            }
-
-                                            if (item.TryGetValue("itemID", out long itemID))
-                                            {
-                                                var newItem = new Dictionary<string, object>
-                                                {
-                                                    {"itemID", itemID },
-                                                };
-                                                Items.MergeInto(itemID, item, newItem);
-                                                listing.Add(newItem);
-                                            }
-                                        }
-                                        break;
-                                    }
-                            }
-                        }
-                    }
-                }
-            }
-            else
-            {
-                var tierLists = new Dictionary<int, TierList>();
-                int maxTierID = 10;// LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME][0];
-                for (int tierID = 1; tierID <= maxTierID; ++tierID)
-                {
-                    // ensure the tier group exists
-                    Objects.Merge(unsorted, new Dictionary<string, object>
+                // ensure the tier group exists
+                Objects.Merge(unsorted, new Dictionary<string, object>
                     {
                         { "tierID", tierID },
                         { "g", new List<object>() },
                     });
-                    // grab the resulting tier group 'g' list
-                    unsorted.FindObject("tierID", tierID).TryGetValue("g", out listing);
-                    // create a new TierList object tracking the specified g listing
-                    tierLists[tierID] = new TierList
-                    {
-                        Groups = listing
-                    };
-                }
-                TierList tier = tierLists[1];
-                var moreThanOne = tierLists.Count > 1;
-                foreach (var item in Items.AllItemsWithoutReferences)
+                // grab the resulting tier group 'g' list
+                unsorted.FindObject("tierID", tierID).TryGetValue("g", out listing);
+                // create a new TierList object tracking the specified g listing
+                tierLists[tierID] = new TierList
                 {
-                    if (moreThanOne)
+                    Groups = listing
+                };
+            }
+            TierList tier = tierLists[1];
+            var moreThanOne = tierLists.Count > 1;
+            foreach (var item in Items.AllItemsWithoutReferences)
+            {
+                if (moreThanOne)
+                {
+                    var level = GetDataMinLevel(item);
+                    // try to sort by itemID
+                    if (item.TryGetValue("itemID", out long itemID))
                     {
-                        var level = GetDataMinLevel(item);
-                        // try to sort by itemID
-                        if (item.TryGetValue("itemID", out long itemID))
-                        {
-                            if (itemID < 22727) tier = tierLists[1]; // Classic
-                            else if (itemID < 29205) tier = tierLists[2];   // Burning Crusade
-                            else if (itemID < 37649) tier = tierLists[3];   // Wrath of the Lich King
-                            else if (itemID < 72019) tier = tierLists[4];   // Cataclysm
-                            else if (itemID < 100855) tier = tierLists[5];   // Mists of Pandaria
-                            else if (itemID < 130731) tier = tierLists[6];   // Warlords of Draenor
-                            else if (itemID < 156823) tier = tierLists[7];   // Legion
-                            else if (itemID < 174366) tier = tierLists[8];   // Battle For Azeroth
-                            else if (itemID < 190311) tier = tierLists[9];   // Shadowlands
-                            else tier = tierLists[10];   // Dragonflight
-                        }
-                        // sort by level into tier if not an item
-                        else if (level.HasValue)
-                        {
-                            if (level <= 25) tier = tierLists[1]; // Classic
-                            else if (level <= 27) tier = tierLists[2];   // Burning Crusade
-                            else if (level <= 30) tier = tierLists[3];   // Wrath of the Lich King
-                            else if (level <= 32) tier = tierLists[4];   // Cataclysm
-                            else if (level <= 35) tier = tierLists[5];   // Mists of Pandaria
-                            else if (level <= 40) tier = tierLists[6];   // Warlords of Draenor
-                            else if (level <= 45) tier = tierLists[7];   // Legion
-                            else if (level <= 50) tier = tierLists[8];   // Battle For Azeroth
-                            else if (level <= 60) tier = tierLists[9];   // Shadowlands
-                            else tier = tierLists[10];   // Dragonflight
-                        }
-                        // default tier assignment
-                        else tier = tierLists[1];
+                        if (itemID < 22727) tier = tierLists[1]; // Classic
+                        else if (itemID < 29205) tier = tierLists[2];   // Burning Crusade
+                        else if (itemID < 37649) tier = tierLists[3];   // Wrath of the Lich King
+                        else if (itemID < 72019) tier = tierLists[4];   // Cataclysm
+                        else if (itemID < 100855) tier = tierLists[5];   // Mists of Pandaria
+                        else if (itemID < 130731) tier = tierLists[6];   // Warlords of Draenor
+                        else if (itemID < 156823) tier = tierLists[7];   // Legion
+                        else if (itemID < 174366) tier = tierLists[8];   // Battle For Azeroth
+                        else if (itemID < 190311) tier = tierLists[9];   // Shadowlands
+                        else tier = tierLists[10];   // Dragonflight
                     }
+                    // sort by level into tier if not an item
+                    else if (level.HasValue)
+                    {
+                        if (level <= 25) tier = tierLists[1]; // Classic
+                        else if (level <= 27) tier = tierLists[2];   // Burning Crusade
+                        else if (level <= 30) tier = tierLists[3];   // Wrath of the Lich King
+                        else if (level <= 32) tier = tierLists[4];   // Cataclysm
+                        else if (level <= 35) tier = tierLists[5];   // Mists of Pandaria
+                        else if (level <= 40) tier = tierLists[6];   // Warlords of Draenor
+                        else if (level <= 45) tier = tierLists[7];   // Legion
+                        else if (level <= 50) tier = tierLists[8];   // Battle For Azeroth
+                        else if (level <= 60) tier = tierLists[9];   // Shadowlands
+                        else tier = tierLists[10];   // Dragonflight
+                    }
+                    // default tier assignment
+                    else tier = tierLists[1];
+                }
 
+                if (CheckTimeline(item))
+                {
                     if (item.TryGetValue("f", out long filterID) && filterID >= 0 && (filterID < 56 || filterID > 90))
                     {
-                        switch ((Objects.Filters)filterID)
+                        Objects.Filters filter = (Objects.Filters)filterID;
+                        item.TryGetValue("q", out long quality);
+                        switch (filter)
                         {
                             case Objects.Filters.Invalid:
                             case Objects.Filters.Ignored:
@@ -2224,12 +2135,21 @@ namespace ATT
                                             {"itemID", itemID },
                                         };
                                         Items.MergeInto(itemID, item, newItem);
+                                        Items.DetermineSourceID(newItem);
                                         listing.Add(newItem);
                                     }
                                     break;
                                 }
                             default:
                                 {
+                                    switch (filter)
+                                    {
+                                        case Objects.Filters.Consumable:
+                                            // ignore white/grey consumables from going into unsorted
+                                            if (quality < 2)
+                                                continue;
+                                            break;
+                                    }
                                     item.Remove("spellID");
                                     if (!tier.FilteredLists.TryGetValue(filterID, out listing))
                                     {
@@ -2247,6 +2167,7 @@ namespace ATT
                                             {"itemID", itemID },
                                         };
                                         Items.MergeInto(itemID, item, newItem);
+                                        Items.DetermineSourceID(newItem);
                                         listing.Add(newItem);
                                     }
                                     break;
@@ -2256,26 +2177,22 @@ namespace ATT
                 }
             }
 
-            // If NOT Classic
-            if (Items.GetNull(30000) != null)
+            // Remove empty tiers.
+            for (int i = unsorted.Count - 1; i >= 0; --i)
             {
-                // Remove empty tiers.
-                for (int i = unsorted.Count - 1; i >= 0; --i)
+                var o = unsorted[i] as Dictionary<string, object>;
+                if (o == null) continue;
+                if (o.TryGetValue("g", out List<object> list) && list.Count == 0)
                 {
-                    var o = unsorted[i] as Dictionary<string, object>;
-                    if (o == null) continue;
-                    if (o.TryGetValue("g", out List<object> list) && list.Count == 0)
-                    {
-                        unsorted.RemoveAt(i);
-                    }
+                    unsorted.RemoveAt(i);
                 }
-                if (unsorted.Count == 1)
+            }
+            if (unsorted.Count == 1)
+            {
+                var o = unsorted[0] as Dictionary<string, object>;
+                if (o != null && o.TryGetValue("g", out List<object> list))
                 {
-                    var o = unsorted[0] as Dictionary<string, object>;
-                    if (o != null && o.TryGetValue("g", out List<object> list))
-                    {
-                        Objects.AllContainers["Unsorted"] = list;
-                    }
+                    Objects.AllContainers["Unsorted"] = list;
                 }
             }
 
@@ -2393,11 +2310,48 @@ namespace ATT
             Log("Processing Complete");
         }
 
+        private static void ProcessContainer(KeyValuePair<string, List<object>> container)
+        {
+            switch (container.Key)
+            {
+                // don't process uncollectibles in the normal way
+                case "Uncollectible":
+                    return;
+                default:
+                    break;
+            }
+
+            ProcessingAchievementCategory = container.Key.Contains("Achievement");
+            Process(container.Value, 0, 1);
+        }
+
         /// <summary>
         /// Does additional processing after the first pass of processing has completed
         /// </summary>
         private static void AdditionalProcessing()
         {
+            // Mark uncollectibles & warn if Sourced
+            if (Objects.AllContainers.TryGetValue("Uncollectible", out List<object> objects))
+            {
+                foreach (object itemObj in objects)
+                {
+                    if (itemObj is Dictionary<string, object> item)
+                    {
+                        decimal itemID = Items.GetSpecificItemID(item);
+                        if (Items.IsItemReferenced(itemID))
+                        {
+                            LogDebug($"WARN: Item {itemID} is referenced and also included in Uncollectibles");
+                        }
+                        else
+                        {
+                            Items.MarkItemAsReferenced(itemID);
+                        }
+                    }
+                }
+
+                Objects.AllContainers.Remove("Uncollectible");
+            }
+
             // Merge conditional data
             ProcessingMergeData = true;
             foreach (var data in ConditionalItemData)
@@ -3080,7 +3034,7 @@ namespace ATT
         public static void Merge(LuaTable table)
         {
             // Parse the contents of the table into a generic object.
-            var dict = ParseAsDictionary(table);
+            var dict = ParseAsStringDictionary(table);
             if (dict == null) return;
 
             // Iterate through the pairs and determine what goes where.
@@ -3104,7 +3058,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("IllusionDB not in the correct format!");
+                                LogError("IllusionDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;
@@ -3125,7 +3079,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3141,7 +3095,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3149,7 +3103,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemDB not in the correct format!");
+                                LogError("ItemDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             ProcessingMergeData = false;
@@ -3170,7 +3124,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3186,7 +3140,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3194,7 +3148,20 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemDB not in the correct format!");
+                                LogError("ItemDB not in the correct format!");
+                                Console.ReadLine();
+                            }
+                        }
+                        break;
+                    case "Items.SOURCES":
+                        {
+                            if (pair.Value is Dictionary<decimal, object> db)
+                            {
+                                db.AsParallel().ForAll(Items.AddItemSourceID);
+                            }
+                            else
+                            {
+                                LogError($"{pair.Key} not in the correct format!");
                                 Console.ReadLine();
                             }
                         }
@@ -3213,7 +3180,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("RecipeDB not in the correct format!");
+                                        LogError("RecipeDB not in the correct format!");
                                         Console.WriteLine(ToJSON(recipeValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3229,7 +3196,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3237,7 +3204,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemDB not in the correct format!");
+                                LogError("ItemDB not in the correct format!");
                                 Console.ReadLine();
                             }
                         }
@@ -3256,7 +3223,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemMountDB not in the correct format!");
+                                        LogError("ItemMountDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3264,7 +3231,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemMountDB not in the correct format!");
+                                LogError("ItemMountDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;
@@ -3284,7 +3251,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemSpeciesDB not in the correct format!");
+                                        LogError("ItemSpeciesDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3292,7 +3259,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemSpeciesDB not in the correct format!");
+                                LogError("ItemSpeciesDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;
@@ -3311,7 +3278,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemToyDB not in the correct format!");
+                                        LogError("ItemToyDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3319,7 +3286,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemToyDB not in the correct format!");
+                                LogError("ItemToyDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;
@@ -3501,24 +3468,44 @@ namespace ATT
         {
             if (table.Keys.Count > 0)
             {
-                // Determine if we're dealing with a <string,object> dictionary.
+                // Determine most-necessary key type
+                bool useDecimal = false, useLong = false;
                 var keyList = new List<object>();
                 foreach (var key in table.Keys)
                 {
-                    if (key.GetType().ToString() == "System.String")
+                    var keyType = key.GetType();
+                    if (keyType == typeof(string))
                     {
-                        if (table[key].GetType().ToString() == "NLua.LuaFunction") continue;
-                        return ParseAsDictionary(table);
+                        if (table[key].GetType() == typeof(LuaFunction)) continue;
+                        return ParseAsStringDictionary(table);
+                    }
+                    else if (!useDecimal && keyType.IsDecimal())
+                    {
+                        useDecimal = true;
+                    }
+                    else if (!useDecimal && !useLong && keyType.IsNumeric())
+                    {
+                        useLong = true;
                     }
                     keyList.Add(key);
                 }
-                keyList.Sort();
+                //keyList.Sort();
 
                 // Determine if we're dealing with a <long,object> dictionary.
                 for (int i = 1; i <= keyList.Count; ++i)
                 {
                     var key = keyList[i - 1];
-                    if (Convert.ToInt32(key) != i) return ParseAsTable(table);
+                    if (key.TryConvert(out int index) && (index != i || index > keyList.Count))
+                    {
+                        if (useDecimal)
+                        {
+                            return ParseAsDictionary<decimal>(table);
+                        }
+                        else
+                        {
+                            return ParseAsDictionary<long>(table);
+                        }
+                    }
                 }
 
                 // Create an ordered list from the table.
@@ -3533,14 +3520,24 @@ namespace ATT
             return new List<object>();
         }
 
-        static Dictionary<long, object> ParseAsTable(LuaTable table)
+        static Dictionary<TKey, object> ParseAsDictionary<TKey>(LuaTable table)
         {
-            var dict = new Dictionary<long, object>();
-            foreach (var key in table.Keys) dict[Convert.ToInt64(key)] = ParseObject(table[key]);
+            var dict = new Dictionary<TKey, object>();
+            foreach (var key in table.Keys)
+            {
+                if (key.TryConvert(out TKey tKey))
+                {
+                    dict[tKey] = ParseObject(table[key]);
+                }
+                else
+                {
+                    LogError($"Failed to convert {key} to type {typeof(TKey).GetType().Name}");
+                }
+            }
             return dict;
         }
 
-        static Dictionary<string, object> ParseAsDictionary(LuaTable table)
+        static Dictionary<string, object> ParseAsStringDictionary(LuaTable table)
         {
             var dict = new Dictionary<string, object>();
             foreach (var key in table.Keys) dict[ConvertFieldName(key.ToString())] = ParseObject(table[key]);
@@ -3586,6 +3583,7 @@ namespace ATT
             return null;
         }
         #endregion
+
         #region Export (Clean)
         /// <summary>
         /// Export the data to the builder in a clean, longhand format.
@@ -3901,7 +3899,7 @@ namespace ATT
                         }
 
                         // Export the Mount DB file.
-                        var mounts = Framework.Items.AllIDs;
+                        var mounts = Items.AllIDs;
                         if (mounts.Any())
                         {
                             var builder = new StringBuilder("-----------------------------------------------------\n--   M O U N T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
@@ -3909,7 +3907,7 @@ namespace ATT
                             keys.Sort();
                             foreach (var itemID in keys)
                             {
-                                var item = Framework.Items.GetNull(itemID);
+                                var item = Items.GetNull(itemID);
                                 if (item != null)
                                 {
                                     if (item.TryGetValue("mountID", out long spellID))
@@ -4029,11 +4027,12 @@ namespace ATT
                 }
 
                 // Export various debug information to the output folder.
-                ATT.Export.IncludeRawNewlines = false;
+                IncludeRawNewlines = false;
                 Objects.Export(outputFolder.FullName);
-                ATT.Export.IncludeRawNewlines = true;
+                IncludeRawNewlines = true;
 
 #if RETAIL
+                Objects.ExportAutoItemSources(Config["root-data"]);
                 Objects.ExportAutoLocale(outputFolder.FullName);
 #endif
             }

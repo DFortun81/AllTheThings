@@ -1242,7 +1242,7 @@ root(ROOTS.Zones, {
 						["qg"] = 17834,	-- Lethyn Moonfire
 						["coord"] = { 78.6, 63.0, ZANGARMARSH },
 						["isBreadcrumb"] = true,
-						["lvl"] = lvlsquish(62, 10, 62),
+						["lvl"] = lvlsquish(62, 62, 10),
 					}),
 					q(10040, {	-- Who Are They? (A)
 						["qg"] = 18715,	-- Private Weeks
@@ -1491,7 +1491,10 @@ root(ROOTS.Zones, {
 							i(34834),	-- Recipe: Captain Rumsey's Lager
 							i(34837),	-- The 2 Ring
 							i(35350),	-- Chuck's Bucket
+							i(34826),	-- Gold Wedding Band
 							i(33818),	-- Muckbreath's Bucket
+							i(34827),	-- Noble's Monocle
+							i(34829),	-- Ornate Drinking Stein
 							i(35349),	-- Snarly's Bucket
 							i(33816),	-- Toothy's Bucket
 							i(33820),	-- Weather-Beaten Fishing Hat
@@ -1503,6 +1506,9 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager
 							i(34831),	-- Eye of the Sea
+							i(34826),	-- Gold Wedding Band
+							i(34827),	-- Noble's Monocle
+							i(34829),	-- Ornate Drinking Stein
 							i(34859),	-- Razor Sharp Fillet Knife
 							i(34836),	-- Spun Truesilver Fishing Line
 							i(33820),	-- Weather-Beaten Fishing Hat

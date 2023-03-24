@@ -755,40 +755,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["provider"] = { "o", 358382 },	-- Wanted: Chelicera
 				["coord"] = { 53.0, 41.4, MALDRAXXUS },
 			}),
-			-- 9.2.5
-			q(65666, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Return to Brill
-				["sourceQuests"] = { 65665 },	-- Embodiment
-				["provider"] = { "n", 185829 },	-- Lilian Voss
-				["coord"] = { 68.6, 81.8, MALDRAXXUS },
-				["timeline"] = { "added 9.2.5" },
-			})),
-			q(65665, {	-- Embodiment
-				["sourceQuests"] = {
-					65663,	-- Feed th Eater
-					65664,	-- Essence of Plague
-				},
-				["provider"] = { "n", 185825 },	-- Plague Deviser Marileth
-				["coord"] = { 68.7, 81.8, MALDRAXXUS },
-				["timeline"] = { "added 9.2.5" },
-			}),
-			q(65664, {	-- Essence of Plague
-				["sourceQuests"] = { 65662 },	-- House of Plagues
-				["provider"] = { "n", 185517 },	-- Plague Deviser Marileth
-				["coord"] = { 71.2, 71.5, MALDRAXXUS },
-				["timeline"] = { "added 9.2.5" },
-			}),
-			q(65663, {	-- Feed the Eater
-				["sourceQuests"] = { 65662 },	-- House of Plagues
-				["provider"] = { "n", 185803 },	-- Calia Menethil
-				["coord"] = { 71.1, 71.4, MALDRAXXUS },
-				["timeline"] = { "added 9.2.5" },
-			}),
-			q(65662, {	-- House of Plagues
-				["sourceQuests"] = { 65661 },	-- Consulting Our Allies
-				["provider"] = { "n", 177782 },	-- Margrave Sin'dane
-				["coord"] = { 74.8, 33.6, MALDRAXXUS },
-				["timeline"] = { "added 9.2.5" },
-			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character

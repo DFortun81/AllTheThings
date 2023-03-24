@@ -6,13 +6,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["lore"] = "Underbog is the 2nd 5-man instance within the Coilfang Reservoir found on the east side of the naga invested complex. The Underbog is home to the last vestiges of natural life left within Coilfang Reservoir that has not been completely stamped out by the Naga incursion. The only Naga presence in this section defends the structure they built to house their hydra god, Ghaz'an. The rest of the Underbog is a natural habitat, home to the most powerful species of animal life in Zangarmarsh.",
 		["coord"] = { 54.24, 34.45, ZANGARMARSH },	-- The Underbog, Zangarmarsh
 		["mapID"] = COILFANG_RESERVOIR_UNDERBOG,
-		["lvl"] = lvlsquish(60, 10, 60),
+		["lvl"] = lvlsquish(60, 60, 10),
 		["groups"] = {
 			n(QUESTS, {
 				q(29568, {	-- A Necessary Evil
 					["qg"] = 54678,	-- Naturalist Bite
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(61, 10, 61),
+					["lvl"] = lvlsquish(61, 61, 10),
 					["groups"] = {
 						objective(1, {	-- Hungarfen slain
 							["provider"] = { "n", 17770 },	-- Hungarfen
@@ -26,7 +26,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
-					["lvl"] = lvlsquish(63, 10, 63),
+					["lvl"] = lvlsquish(63, 63, 10),
 				}),
 				q(29691, {	-- Bring Me A Shrubbery!
 					["qg"] = 54674,	-- T'shu
@@ -34,7 +34,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
-					["lvl"] = lvlsquish(61, 10, 61),
+					["lvl"] = lvlsquish(61, 61, 10),
 				}),
 				q(9714, {	-- Bring Me Another Shrubbery!
 					["qg"] = 17856,	-- Gzhun'tt
@@ -46,7 +46,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
-					["lvl"] = lvlsquish(63, 10, 63),
+					["lvl"] = lvlsquish(63, 63, 10),
 				}),
 				q(29692, {	-- Bring Me Another Shrubbery!
 					["qg"] = 54674,	-- T'shu
@@ -57,20 +57,20 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
-					["lvl"] = lvlsquish(61, 10, 61),
+					["lvl"] = lvlsquish(61, 61, 10),
 				}),
 				q(29571, {	-- Defending the Wilds
 					["qg"] = 18074,	-- Elementalist Morgh <The Earthen Ring>
 					["coord"] = { 60.6, 22.4, NAGRAND },
 					["timeline"] = { "added 4.3.0.14732" },
 					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(63, 10, 63),
+					["lvl"] = lvlsquish(63, 63, 10),
 				}),
 				q(9717, {	-- Oh, It's On!
 					["qg"] = 17857,	-- T'shu
 					["coord"] = { 19.4, 49.8, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(63, 10, 63),
+					["lvl"] = lvlsquish(63, 63, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Underspore Frond
 							["provider"] = { "i", 24247 },	-- Underspore Frond
@@ -82,7 +82,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29570, {	-- Rescuing the Expedition
 					["qg"] = 54675,	-- Watcher Jhang
 					["timeline"] = { "added 4.3.0.14732" },
-					["lvl"] = lvlsquish(61, 10, 61),
+					["lvl"] = lvlsquish(61, 61, 10),
 					["groups"] = {
 						objective(1, {	-- Earthbinder Rayge Discovered
 							["provider"] = { "n", 17885 },	-- Earthbinder Rayge
@@ -107,7 +107,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17866,	-- Khn'nix
 					["coord"] = { 19.6, 49.8, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(63, 10, 63),
+					["lvl"] = lvlsquish(63, 63, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Brain of the Black Stalker
 							["provider"] = { "i", 24248 },	-- Brain of the Black Stalker
@@ -247,7 +247,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					{ "i", 30623, 1 },	-- Reservoir Key
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 30, 70),
+				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
