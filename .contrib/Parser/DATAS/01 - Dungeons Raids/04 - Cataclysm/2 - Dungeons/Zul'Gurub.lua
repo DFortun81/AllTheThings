@@ -98,6 +98,27 @@ _.Instances = { tier(CATA_TIER, {
 									19702,	-- Vilebranch Coin
 									19703,	-- Witherbark Coin
 									19698,	-- Zulian Coin
+									-- blue recipes
+									203842,	-- ancient pattern animists footwraps
+									203843,	-- ancient pattern animists legguards
+									203848,	-- ancient pattern bloodlords embrace
+									203968,	-- ancient pattern cord of shriveled heads
+									203844,	-- ancient pattern gloves of the tormentor
+									203849,	-- ancient pattern gurubashi tigerhide cloak
+									203850,	-- ancient pattern gurubashi headdress
+									203845,	-- ancient pattern junglefury gauntlets
+									203846,	-- ancient pattern junglefury leggings
+									203851,	-- ancient pattern ritualistic legwarmers
+									203835,	-- ancient plans fiery vengeance
+									203825,	-- ancient plans gurubashi carver
+									203828,	-- ancient plans gurubashi grinder
+									203824,	-- ancient plans gurubashi headplate
+									203827,	-- ancient plans gurubashi poker
+									203837,	-- ancient plans gurubashi slicer
+									203832,	-- ancient plans pitchfork of mojo madness
+									203830,	-- ancient plans sceptre of hexing
+									203841,	-- ancient technique gurubashi ceremonial staff
+									203839,	-- ancient technique gurubashi hoodoo stick
 							}},
 							["groups"] = {
 								i(203838),	-- ancient formula: mindslave's reach
