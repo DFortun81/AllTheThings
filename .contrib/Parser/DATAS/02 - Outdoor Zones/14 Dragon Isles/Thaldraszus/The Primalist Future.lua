@@ -185,6 +185,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(ZONE_DROPS, {
 				i(203469),	-- Coalesced Storm Remnants
 			}),
+			n(199502, {		-- Glakis, Winter's Wrath
+				["description"] = "Possible Boss at the end of the Storm's Fury Event.",
+				["groups"]	= {
+					i(204215),	-- Dormanted Primordial Fragment
+				},
+			}),
+			n(199667, {		-- Nimbulatus, Storm's Wrath
+				["description"] = "Possible Boss at the end of the Storm's Fury Event.",
+				["groups"]	= {
+					i(204215),	-- Dormanted Primordial Fragment
+				},
+			}),
+			n(200439, {		-- Seismodor, Earth's Wrath
+				["description"] = "Possible Boss at the end of the Storm's Fury Event.",
+				["groups"]	= {
+					i(204215),	-- Dormanted Primordial Fragment
+				},
+			}),
 		})),
 	}),
 })));

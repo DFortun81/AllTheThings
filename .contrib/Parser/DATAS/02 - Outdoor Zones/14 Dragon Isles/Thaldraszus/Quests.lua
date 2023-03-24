@@ -252,7 +252,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 186931 },	-- Nozdormu
 					["coord"] = { 60.1, 82.4, THALDRASZUS },
 					["g"] = {
-						currency(2118),	-- Elemental Overflow
+					--	currency(2118),	-- Elemental Overflow
+					-- dont need to show 60x one time reward when rares drop 1k+ in 10.0.7
 					},
 				}),
 				q(66029, {	-- Temporal Tuning
@@ -269,7 +270,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 186953 },	-- Possible Future You
 					["coord"] = { 61.4, 50.2, THE_PRIMALIST_FUTURE },
 					["g"] = {
-						currency(2118),	-- Elemental Overflow
+					--	currency(2118),	-- Elemental Overflow
+					-- dont need to show 60x one time reward when rares drop 1k+ in 10.0.7
 						i(195185),	-- Annihilation Warder's Cloak
 					},
 				}),
@@ -278,7 +280,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 183860 },	-- Soridormi
 					["coord"] = { 61.1, 50.8, THE_PRIMALIST_FUTURE },
 					["g"] = {
-						currency(2118),	-- Elemental Overflow
+					--	currency(2118),	-- Elemental Overflow
+					-- dont need to show 60x one time reward when rares drop 1k+ in 10.0.7
 						i(192467),	-- Bandages
 					},
 				}),
