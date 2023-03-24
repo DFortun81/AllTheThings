@@ -98,6 +98,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(19701),	-- Gurubashi Coin
 						i(203743, {	-- Jostled Gurubashi Cache
 							["questID"] = 74579,
+							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly get near the water.",
 							["isDaily"] = true,
 							["sym"] = {
 								{"select","itemID",
@@ -119,18 +120,18 @@ _.Instances = { tier(CATA_TIER, {
 									19702,	-- Vilebranch Coin
 									19703,	-- Witherbark Coin
 									19698,	-- Zulian Coin
+									-- Items
+									19944,	-- Nat Pagle's Fish Terminator
+									19946,	-- Tigule's Harpoon
+									19945,	-- Lizardscale Eyepatch
+									19947,	-- Nat Pagle's Broken Reel
+									22739,	-- TOME_OF_POLYMORPH_TURTLE,
 							}},
-							["groups"] = {
-								i(19944),	-- Nat Pagle's Fish Terminator
-								i(19946),	-- Tigule's Harpoon
-								i(19945),	-- Lizardscale Eyepatch
-								i(19947),	-- Nat Pagle's Broken Reel
-								TOME_OF_POLYMORPH_TURTLE,
-							},
 						}),
 						i(19700),	-- Hakkari Coin
 						i(203912, {	-- Penny Pouch o' Paragons
 							["questID"] = 74579,
+							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly get near the water.",
 							["isDaily"] = true,
 							["sym"] = {
 								{"select","itemID",
@@ -152,14 +153,13 @@ _.Instances = { tier(CATA_TIER, {
 									19702,	-- Vilebranch Coin
 									19703,	-- Witherbark Coin
 									19698,	-- Zulian Coin
+									-- Items
+									19944,	-- Nat Pagle's Fish Terminator
+									19946,	-- Tigule's Harpoon
+									19945,	-- Lizardscale Eyepatch
+									19947,	-- Nat Pagle's Broken Reel
+									22739,	-- TOME_OF_POLYMORPH_TURTLE,
 							}},
-							["groups"] = {
-								i(19944),	-- Nat Pagle's Fish Terminator
-								i(19946),	-- Tigule's Harpoon
-								i(19945),	-- Lizardscale Eyepatch
-								i(19947),	-- Nat Pagle's Broken Reel
-								TOME_OF_POLYMORPH_TURTLE,
-							},
 						}),
 						i(19699),	-- Razzashi Coin
 						i(19704),	-- Sandfury Coin
@@ -167,6 +167,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(19702),	-- Vilebranch Coin
 						i(203742, {	-- Waterlooged Gurubashi Cache
 							["questID"] = 74579,
+							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly get near the water.",
 							["isDaily"] = true,
 							["sym"] = {
 								{"select","itemID",
@@ -189,6 +190,13 @@ _.Instances = { tier(CATA_TIER, {
 									19703,	-- Witherbark Coin
 									19698,	-- Zulian Coin
 							}},
+							["groups"] = {
+								i(19944),	-- Nat Pagle's Fish Terminator
+								i(19946),	-- Tigule's Harpoon
+								i(19945),	-- Lizardscale Eyepatch
+								i(19947),	-- Nat Pagle's Broken Reel
+								TOME_OF_POLYMORPH_TURTLE,
+							},
 						}),
 						i(19703),	-- Witherbark Coin
 						i(19698),	-- Zulian Coin
