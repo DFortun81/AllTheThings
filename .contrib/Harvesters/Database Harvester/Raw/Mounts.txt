@@ -1605,3 +1605,11 @@
 10.1.0.48537
 406637@@@Inferno Armoredon
 408647@@@Api Biru Sporebat
+10.1.0.48661
+374138@@@Seething Slug
+408647@@@Cobalt Shalewing
+408653@@@Boulder Hauler
+408655@@@Morsel Sniffer
+408977@@@Obsidian Gladiator's Slitherdrake
+409032@@@Vicious War Snail
+409034@@@Vicious War Snail

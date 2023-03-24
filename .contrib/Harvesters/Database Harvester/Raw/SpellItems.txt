@@ -11151,3 +11151,11 @@
 6829@@@Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 6830@@@Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier3:20:20|a
 6831@@@$spell@spelldesc407949
+10.1.0.48661
+6836@@@Shadow Flame
+6837@@@Hissing Rune
+6838@@@Hissing Rune
+6839@@@Hissing Rune
+6840@@@Shadowed Belt Buckle
+6841@@@Shadowed Belt Buckle
+6842@@@Shadowed Belt Buckle

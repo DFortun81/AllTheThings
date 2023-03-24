@@ -115,6 +115,11 @@ r(407005),	-- Polarity Bomb
 r(407006),	-- EZ-Thro Polarity Bomb
 r(408052),	-- Tinker: Shadowflame Rockets
 r(408230),	-- Quackomancy Cannon
+10.1.0.48661
+r(409351),	-- Obsidian Combatant's Cloth Goggles
+r(409353),	-- Obsidian Combatant's Leather Goggles
+r(409355),	-- Obsidian Combatant's Mail Goggles
+r(409356),	-- Obsidian Combatant's Plate Goggles
 
 
 
@@ -931,3 +936,8 @@ r(407005),	-- Polarity Bomb
 r(407006),	-- EZ-Thro Polarity Bomb
 r(408052),	-- Tinker: Shadowflame Rockets
 r(408230),	-- Quackomancy Cannon
+10.1.0.48661
+r(409351),	-- Obsidian Combatant's Cloth Goggles
+r(409353),	-- Obsidian Combatant's Leather Goggles
+r(409355),	-- Obsidian Combatant's Mail Goggles
+r(409356),	-- Obsidian Combatant's Plate Goggles

@@ -187,6 +187,9 @@ r(406214),	-- Lambent Armor Kit
 r(406266),	-- Spore Colony Shoulderguards
 r(406267),	-- Adaptive Dracothyst Armguards
 r(406275),	-- Shadowflame-Tempered Armor Patch
+10.1.0.48661
+r(409555),	-- Lustrous Scaled Drums
+r(409557),	-- Hide-Bound Drums
 
 
 
@@ -1918,3 +1921,6 @@ r(406214),	-- Lambent Armor Kit
 r(406266),	-- Spore Colony Shoulderguards
 r(406267),	-- Adaptive Dracothyst Armguards
 r(406275),	-- Shadowflame-Tempered Armor Patch
+10.1.0.48661
+r(409555),	-- Lustrous Scaled Drums
+r(409557),	-- Hide-Bound Drums

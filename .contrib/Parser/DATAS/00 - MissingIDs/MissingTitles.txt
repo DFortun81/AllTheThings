@@ -6,3 +6,11 @@ title(453),	-- %s the [PH] TBD Title
 title(480),	-- %s, Knight of Feathersworth
 10.1.0.48480
 title(498),	-- %s the Reconciler
+10.1.0.48661
+title(493),	-- Lionguard %s
+title(499),	-- Obsidian Gladiator %s
+title(500),	-- Obsidian Legend %s
+title(501),	-- Smelly %s
+title(502),	-- %s, Barter Boss
+title(503),	-- %s the <PH Season 2 Title>
+title(504),	-- %s the <PH Season 2 Hero Title>

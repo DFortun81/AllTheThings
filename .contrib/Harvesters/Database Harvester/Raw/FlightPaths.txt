@@ -2664,3 +2664,8 @@
 2865@@@Dragonscale Camp, Zaralek Cavern
 2866@@@Cascades Canyon, Ohn'ahran Plains
 2867@@@The Throughway, Zaralek Cavern
+10.1.0.48661
+2874@@@Old Loamm Road, Ohn'ahran Plains
+2875@@@Old Loamm Road, Zaralek Cavern
+2876@@@Lookout Breach, Zaralek Cavern
+2877@@@Lookout Breach, Azure Span

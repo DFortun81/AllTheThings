@@ -139,7 +139,7 @@ r(382995),	-- Classic Prospecting
 r(403131),	-- Obsidian Combatant's Jeweled Amulet
 r(403132),	-- Obsidian Combatant's Jeweled Signet
 r(408231),	-- B.B.F. Fist
-r(408397),	-- [PH] Precognition Reagent
+r(408397),	-- Statuette of the Forethoughtful Fiend \\ [PH] Precognition Reagent
 r(408398),	-- [PH] Melee Reagent
 
 
@@ -1514,5 +1514,5 @@ r(360317),	-- Devourer Essence Stone
 r(403131),	-- Obsidian Combatant's Jeweled Amulet
 r(403132),	-- Obsidian Combatant's Jeweled Signet
 r(408231),	-- B.B.F. Fist
-r(408397),	-- [PH] Precognition Reagent
+r(408397),	-- Statuette of the Forethoughtful Fiend \\ [PH] Precognition Reagent
 r(408398),	-- [PH] Melee Reagent

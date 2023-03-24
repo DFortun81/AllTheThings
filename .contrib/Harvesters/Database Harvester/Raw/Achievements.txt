@@ -11646,3 +11646,50 @@
 17759@@@<DNT> Loamm Niffen Rank 18
 17760@@@<DNT> Loamm Niffen Rank 19
 17761@@@<DNT> Loamm Niffen Rank 20
+10.1.0.48661
+17511@@@Dragon Glyphs: Nal Ks'kol
+17514@@@Dragon Glyphs: Slitherdrake Roost
+17536@@@<DNT> Complete the "A Creche Divided" questline.
+17763@@@There's No Place Like Loamm
+17764@@@Obsidian Gladiator: Dragonflight Season 2
+17765@@@What We Wear In The Shadowflame
+17766@@@Explore Zaralek Cavern
+17767@@@Obsidian Legend: Dragonflight Season 2
+17768@@@Hero of the Alliance: Obsidian
+17772@@@Hero of the Horde: Obsidian
+17778@@@Obsidian Gladiator's Slitherdrake
+17779@@@A Serpentine Discovery
+17781@@@The Smell of Money
+17783@@@Adventurer of Zaralek Cavern
+17785@@@Que Zara(lek), Zara(lek)
+17786@@@Treasures of Zaralek Cavern
+17788@@@Current Patch - Login Video [DNT] (Updated Every Patch)
+17794@@@Duelist: Dragonflight Season 2
+17795@@@Rival I: Dragonflight Season 2
+17796@@@Rival II: Dragonflight Season 2
+17797@@@Challenger I: Dragonflight Season 2
+17798@@@Challenger II: Dragonflight Season 2
+17799@@@Combatant I: Dragonflight Season 2
+17800@@@Combatant II: Dragonflight Season 2
+17801@@@Legend: Dragonflight Season 2
+17830@@@Stones Can't Fly!
+17831@@@Elite: Dragonflight Season 2
+17832@@@Sniffen Around
+17833@@@Sniffen Sage
+17836@@@Flightstones earned
+17837@@@Whelpling's Shadowflame Crest Fragments earned
+17838@@@Drake's Shadowflame Crest Fragments earned
+17839@@@Wyrm's Shadowflame Crest Fragments earned
+17840@@@Aspect's Shadowflame Crest Fragments earned
+17841@@@Pyramid Scheme
+17842@@@Dragonflight Keystone Explorer: Season Two
+17843@@@Dragonflight Keystone Conqueror: Season Two
+17844@@@Dragonflight Keystone Master: Season Two
+17845@@@Dragonflight Keystone Hero: Season Two
+17846@@@<PH> Hero: Dragonflight Season 2
+17847@@@Keystone Hero: The Vortex Pinnacle
+17848@@@Keystone Hero: Freehold
+17849@@@Keystone Hero: The Underrot
+17850@@@Keystone Hero: Neltharion's Lair
+17851@@@Tour of Duty: Zaralek Cavern
+17852@@@Elemental Conjuror

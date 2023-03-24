@@ -75,8 +75,6 @@ ach(17322),	-- <DNT> Hearthfire Fellowship Rank 1
 ach(17323),	-- <DNT> Hearthfire Fellowship Rank 2
 ach(17324),	-- <DNT> Hearthfire Fellowship Rank 3
 ach(17325),	-- <DNT> Hearthfire Fellowship Rank 4
-ach(17366),	-- Relics of a Fallen Empire
-ach(17367),	-- Deadliest Cache
 ach(17409),	-- <Hidden> ACCOUNT: Treasure Room Local Quest Completed
 ach(17410),	-- Craftsman of the Zandalar Tribe
 ach(17412),	-- Craftsman of the Argent Dawn
@@ -165,10 +163,10 @@ ach(17493),	-- Zaralek Cavern Racing Completionist: Silver
 ach(17494),	-- Zaralek Cavern Racing Completionist: Gold
 ach(17506),	-- Still Standing in the Fire
 ach(17510),	-- Dragon Glyphs: Glimmerogg
-ach(17511),	-- Dragon Glyphs: Titan Vault
+ach(17511),	-- Dragon Glyphs: Nal Ks'kol \\ Dragon Glyphs: Titan Vault
 ach(17512),	-- Dragon Glyphs: Loamm
 ach(17513),	-- Dragon Glyphs: Zaqili Caldera
-ach(17514),	-- Dragon Glyphs: Dragon Nests
+ach(17514),	-- Dragon Glyphs: Slitherdrake Roost \\ Dragon Glyphs: Dragon Nests
 ach(17515),	-- Dragon Glyphs: The Throughway
 ach(17516),	-- Dragon Glyphs: Sulfur Ravine
 ach(17517),	-- Dragon Glyphs: Brimstone Garrison
@@ -212,3 +210,48 @@ ach(17758),	-- <DNT> Loamm Niffen Rank 17
 ach(17759),	-- <DNT> Loamm Niffen Rank 18
 ach(17760),	-- <DNT> Loamm Niffen Rank 19
 ach(17761),	-- <DNT> Loamm Niffen Rank 20
+10.1.0.48661
+ach(17536),	-- <DNT> Complete the "A Creche Divided" questline.
+ach(17763),	-- There's No Place Like Loamm
+ach(17764),	-- Obsidian Gladiator: Dragonflight Season 2
+ach(17765),	-- What We Wear In The Shadowflame
+ach(17766),	-- Explore Zaralek Cavern
+ach(17767),	-- Obsidian Legend: Dragonflight Season 2
+ach(17768),	-- Hero of the Alliance: Obsidian
+ach(17772),	-- Hero of the Horde: Obsidian
+ach(17778),	-- Obsidian Gladiator's Slitherdrake
+ach(17779),	-- A Serpentine Discovery
+ach(17781),	-- The Smell of Money
+ach(17783),	-- Adventurer of Zaralek Cavern
+ach(17785),	-- Que Zara(lek), Zara(lek)
+ach(17786),	-- Treasures of Zaralek Cavern
+ach(17788),	-- Current Patch - Login Video [DNT] (Updated Every Patch)
+ach(17794),	-- Duelist: Dragonflight Season 2
+ach(17795),	-- Rival I: Dragonflight Season 2
+ach(17796),	-- Rival II: Dragonflight Season 2
+ach(17797),	-- Challenger I: Dragonflight Season 2
+ach(17798),	-- Challenger II: Dragonflight Season 2
+ach(17799),	-- Combatant I: Dragonflight Season 2
+ach(17800),	-- Combatant II: Dragonflight Season 2
+ach(17801),	-- Legend: Dragonflight Season 2
+ach(17830),	-- Stones Can't Fly!
+ach(17831),	-- Elite: Dragonflight Season 2
+ach(17832),	-- Sniffen Around
+ach(17833),	-- Sniffen Sage
+ach(17836),	-- Flightstones earned
+ach(17837),	-- Whelpling's Shadowflame Crest Fragments earned
+ach(17838),	-- Drake's Shadowflame Crest Fragments earned
+ach(17839),	-- Wyrm's Shadowflame Crest Fragments earned
+ach(17840),	-- Aspect's Shadowflame Crest Fragments earned
+ach(17841),	-- Pyramid Scheme
+ach(17842),	-- Dragonflight Keystone Explorer: Season Two
+ach(17843),	-- Dragonflight Keystone Conqueror: Season Two
+ach(17844),	-- Dragonflight Keystone Master: Season Two
+ach(17845),	-- Dragonflight Keystone Hero: Season Two
+ach(17846),	-- <PH> Hero: Dragonflight Season 2
+ach(17847),	-- Keystone Hero: The Vortex Pinnacle
+ach(17848),	-- Keystone Hero: Freehold
+ach(17849),	-- Keystone Hero: The Underrot
+ach(17850),	-- Keystone Hero: Neltharion's Lair
+ach(17851),	-- Tour of Duty: Zaralek Cavern
+ach(17852),	-- Elemental Conjuror

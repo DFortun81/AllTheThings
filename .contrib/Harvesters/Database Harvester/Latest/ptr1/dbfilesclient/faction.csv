@@ -759,6 +759,6 @@ ID,ReputationRaceMask[0],ReputationRaceMask[1],ReputationRaceMask[2],ReputationR
 2553,0,0,0,0,Timewalkers,,-1,2510,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
 2554,-1,0,0,0,Clan Toghus,,412,2503,0,0,0,0,0,0,-1,0,0,0,2052,0,0,0,0,0,0,0,42000,0,0,0,0,0,0,0
 2555,-1,0,0,0,Clan Kaighan,,413,2506,0,0,0,0,0,0,-1,0,0,0,2054,0,0,0,-6000,0,0,0,42000,0,0,0,0,0,0,0
-2564,-1,0,0,0,Loamm Niffen,[Placeholder for Niffen faction flavor text],421,2506,9,0,2,2565,0,2402,-1,0,0,0,16,0,0,0,0,0,0,0,2500,0,0,0,0,0,0,0
-2565,-1,0,0,0,Loamm Niffen (Paragon),[Placeholder for faction flavor text],422,2506,9,0,2,0,0,0,-1,0,0,0,16,0,0,0,0,0,0,0,42000,0,0,0,0,0,0,0
+2564,-1,0,0,0,Loamm Niffen,"The Niffen that reside in Loamm in the Zaralek Cavern under the Dragon Isles, this group of Niffen are renown for their extremely sensitive sense of smell and their unique bartering trade system.",421,2506,9,0,2,2565,0,2402,-1,0,0,0,16,0,0,0,0,0,0,0,2500,0,0,0,0,0,0,0
+2565,-1,0,0,0,Loamm Niffen (Paragon),"The Niffen that reside in Loamm in the Zaralek Cavern under the Dragon Isles, this group of Niffen are renown for their extremely sensitive sense of smell and their unique bartering trade system.",422,2506,9,0,2,0,0,0,-1,0,0,0,16,0,0,0,0,0,0,0,42000,0,0,0,0,0,0,0
 2568,-1,0,0,0,Glimmerogg Racer,Briggul won't let Slick go with just anybody. Can you prove your worth as a snail trainer?,425,2506,0,408,0,0,0,0,-1,0,0,0,16,0,0,0,0,0,0,0,2800,0,0,0,0,0,0,0

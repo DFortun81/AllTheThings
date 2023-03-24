@@ -65033,90 +65033,27 @@ s(183228)/i(201161),	-- Scepter of Spectacle: Air
 s(184046)/i(201992),	-- Emissary's Flamewrought Seal \\ [PH] BoE Ring
 10.0.2.46259
 s(184086)/i(202041),	-- 
+s(184114)/i(202143),	-- Woven Stone Bracelets
+s(184116)/i(202143),	-- Woven Stone Bracelets
+s(184118)/i(202144),	-- Greathelm of Horned Fury
+s(184119)/i(202144),	-- Greathelm of Horned Fury
+s(184122)/i(202145),	-- Frozen Claw Mantle
+s(184124)/i(202145),	-- Frozen Claw Mantle
+s(184126)/i(202146),	-- Brawler's Earthen Cuirass
+s(184128)/i(202146),	-- Brawler's Earthen Cuirass
+s(184130)/i(202147),	-- Primal Seeker's Leggings
+s(184132)/i(202147),	-- Primal Seeker's Leggings
 s(184133)/i(202148),	-- Emissary's Flamewrought Seal
+s(184135)/i(202149),	-- Primalist Warden's Bracers
+s(184136)/i(202149),	-- Primalist Warden's Bracers
+s(184139)/i(202150),	-- Galvanic Gaiters
+s(184140)/i(202150),	-- Galvanic Gaiters
+s(184143)/i(202151),	-- Lavamancer's Ceremonial Waistguard
+s(184144)/i(202151),	-- Lavamancer's Ceremonial Waistguard
 s(184158)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
 s(184159)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
 10.0.2.46479
 s(184332)/i(152839),	-- Khaz'gorian Smithing Hammer \\ Khaz'gorian Hammer
-10.0.2.47213
-s(184723)/i(203490),	-- Virtuous Silver Greatboots
-s(184724)/i(203490),	-- Virtuous Silver Greatboots
-s(184750)/i(203495),	-- Virtuous Silver Faulds
-s(184753)/i(203496),	-- Virtuous Silver Bracers
-s(184754)/i(203496),	-- Virtuous Silver Bracers
-s(184758)/i(203497),	-- Virtuous Silver Cloak
-s(184766)/i(203499),	-- Boots of the Walking Mountain
-s(184796)/i(203504),	-- Core of the Walking Mountain
-s(184798)/i(203504),	-- Core of the Walking Mountain
-s(184802)/i(203505),	-- Bracers of the Walking Mountain
-s(184804)/i(203506),	-- Drape of the Walking Mountain
-s(184805)/i(203506),	-- Drape of the Walking Mountain
-s(184806)/i(203506),	-- Drape of the Walking Mountain
-s(184814)/i(203508),	-- Sabatons of the Haunted Frostbrood
-s(184846)/i(203513),	-- Girdle of the Haunted Frostbrood
-s(184848)/i(203514),	-- Vambraces of the Haunted Frostbrood
-s(184850)/i(203514),	-- Vambraces of the Haunted Frostbrood
-s(184852)/i(203515),	-- Drape of the Haunted Frostbrood
-s(184854)/i(203515),	-- Drape of the Haunted Frostbrood
-s(184862)/i(203517),	-- Lost Landcaller's Moccasins
-s(184894)/i(203522),	-- Lost Landcaller's Sash
-s(184898)/i(203523),	-- Lost Landcaller's Bindings
-s(184900)/i(203524),	-- Lost Landcaller's Laena
-s(184902)/i(203524),	-- Lost Landcaller's Laena
-s(184908)/i(203526),	-- Skybound Avenger's Boots
-s(184910)/i(203526),	-- Skybound Avenger's Boots
-s(184942)/i(203531),	-- Skybound Avenger's Waistwrap
-s(184944)/i(203532),	-- Skybound Avenger's Wristbands
-s(184946)/i(203532),	-- Skybound Avenger's Wristbands
-s(184950)/i(203533),	-- Skybound Avenger's Cape
-s(184958)/i(203535),	-- Gaiters of the Waking Fist
-s(184984)/i(203540),	-- Girdle of the Waking Fist
-s(184988)/i(203541),	-- Cuffs of the Waking Fist
-s(184991)/i(203542),	-- Drape of the Waking Fist
-s(184992)/i(203542),	-- Drape of the Waking Fist
-s(184999)/i(203544),	-- Vault Delver's Shinguards
-s(185000)/i(203544),	-- Vault Delver's Shinguards
-s(185032)/i(203549),	-- Vault Delver's Utility Belt
-s(185034)/i(203550),	-- Vault Delver's Sweatbands
-s(185040)/i(203551),	-- Vault Delver's Camouflage
-s(185048)/i(203553),	-- Treads of the Awakened
-s(185080)/i(203558),	-- Chain of the Awakened
-s(185084)/i(203559),	-- Bracers of the Awakened
-s(185088)/i(203560),	-- Shroud of the Awakened
-s(185096)/i(203562),	-- Stormwing Harrier's Sabatons
-s(185126)/i(203567),	-- Stormwing Harrier's Belt
-s(185127)/i(203567),	-- Stormwing Harrier's Belt
-s(185128)/i(203567),	-- Stormwing Harrier's Belt
-s(185132)/i(203568),	-- Stormwing Harrier's Wristguards
-s(185136)/i(203569),	-- Stormwing Harrier's Plumage
-s(185142)/i(203571),	-- Treads of Infused Earth
-s(185143)/i(203571),	-- Treads of Infused Earth
-s(185144)/i(203571),	-- Treads of Infused Earth
-s(185174)/i(203576),	-- Faulds of Infused Earth
-s(185175)/i(203576),	-- Faulds of Infused Earth
-s(185176)/i(203576),	-- Faulds of Infused Earth
-s(185178)/i(203577),	-- Cuffs of Infused Earth
-s(185179)/i(203577),	-- Cuffs of Infused Earth
-s(185180)/i(203577),	-- Cuffs of Infused Earth
-s(185182)/i(203578),	-- Greatcloak of Infused Earth
-s(185183)/i(203578),	-- Greatcloak of Infused Earth
-s(185184)/i(203578),	-- Greatcloak of Infused Earth
-s(185192)/i(203580),	-- Scalesworn Cultist's Sandals
-s(185224)/i(203585),	-- Scalesworn Cultist's Girdle
-s(185232)/i(203587),	-- Scalesworn Cultist's Runedrape
-s(185238)/i(203589),	-- Crystal Scholar's Footwraps
-s(185240)/i(203589),	-- Crystal Scholar's Footwraps
-s(185272)/i(203594),	-- Crystal Scholar's Cinch
-s(185276)/i(203595),	-- Crystal Scholar's Cuffs
-s(185280)/i(203596),	-- Crystal Scholar's Cape
-s(185286)/i(203599),	-- Draconic Hierophant's Slippers
-s(185288)/i(203599),	-- Draconic Hierophant's Slippers
-s(185318)/i(203604),	-- Draconic Hierophant's Sash
-s(185320)/i(203604),	-- Draconic Hierophant's Sash
-s(185322)/i(203605),	-- Draconic Hierophant's Wristbands
-s(185324)/i(203605),	-- Draconic Hierophant's Wristbands
-s(185326)/i(203606),	-- Draconic Hierophant's Drape
-s(185328)/i(203606),	-- Draconic Hierophant's Drape
 10.0.5.47799
 s(169016)/i(190802),	-- 
 s(169018)/i(190804),	-- 
@@ -65179,66 +65116,7 @@ s(185364)/i(203798),	-- Copy Jin'do's Bag of Whammies
 s(185489)/i(204272),	-- 
 s(185513)/i(204309),	-- 
 10.0.7.48076
-s(185704)/i(199420),	-- Hood of Raging Tempests \\ PH Primal Storm Hood
 s(185705)/i(204677),	-- Ogre Mining Pick
-s(185706)/i(199424),	-- Shoulderpads of Raging Tempests \\ PH Primal Storm Shoulderpads
-s(185707)/i(199417),	-- Vestment of Raging Tempests \\ PH Primal Storm Vestment
-s(185708)/i(199422),	-- Cord of Raging Tempests \\ PH Primal Storm Cord
-s(185709)/i(199421),	-- Leggings of Raging Tempests \\ PH Primal Storm Leggings
-s(185710)/i(199418),	-- Boots of Raging Tempests \\ PH Primal Storm Boots
-s(185711)/i(199423),	-- Cuffs of Raging Tempests \\ PH Primal Storm Cuffs
-s(185712)/i(199419),	-- Gloves of Raging Tempests \\ PH Primal Storm Gloves
-s(185713)/i(199451),	-- Cloak of Raging Tempests \\ PH Primal Storm Cloak
-s(185714)/i(199427),	-- Cowl of Raging Tempests \\ PH Primal Storm Cowl
-s(185715)/i(199432),	-- Epaulets of Raging Tempests \\ PH Primal Storm Epaulets
-s(185716)/i(199431),	-- Vest of Raging Tempests \\ PH Primal Storm Vest
-s(185717)/i(199429),	-- Sash of Raging Tempests \\ PH Primal Storm Sash
-s(185718)/i(199428),	-- Breeches of Raging Tempests \\ PH Primal Storm Breeches
-s(185719)/i(199425),	-- Waders of Raging Tempests \\ PH Primal Storm Waders
-s(185720)/i(199430),	-- Bindings of Raging Tempests \\ PH Primal Storm Bindings
-s(185721)/i(199426),	-- Handguards of Raging Tempests \\ PH Primal Storm Handguards
-s(185722)/i(199452),	-- Shroud of Raging Tempests \\ PH Primal Storm Shroud
-s(185723)/i(199444),	-- Coif of Raging Tempests \\ PH Primal Storm Coif
-s(185724)/i(199446),	-- Shoulderguards of Raging Tempests \\ PH Primal Storm Shoulderguards
-s(185725)/i(199441),	-- Chestguard of Raging Tempests \\ PH Primal Storm Chestguard
-s(185726)/i(199447),	-- Cinch of Raging Tempests \\ PH Primal Storm Cinch
-s(185727)/i(199445),	-- Greaves of Raging Tempests \\ PH Primal Storm Greaves
-s(185728)/i(199442),	-- Striders of Raging Tempests \\ PH Primal Storm Striders
-s(185729)/i(199448),	-- Bracers of Raging Tempests \\ PH Primal Storm Bracers
-s(185730)/i(199443),	-- Grips of Raging Tempests \\ PH Primal Storm Grips
-s(185731)/i(199449),	-- Wrap of Raging Tempests \\ PH Primal Storm Wrap
-s(185732)/i(199433),	-- Helm of Raging Tempests \\ PH Primal Storm Helm
-s(185733)/i(199434),	-- Breastplate of Raging Tempests \\ PH Primal Storm Breastplate
-s(185734)/i(199435),	-- Sabatons of Raging Tempests \\ PH Primal Storm Sabatons
-s(185735)/i(199436),	-- Gauntlets of Raging Tempests \\ PH Primal Storm Gauntlets
-s(185736)/i(199437),	-- Legguards of Raging Tempests \\ PH Primal Storm Legguards
-s(185737)/i(199438),	-- Mantle of Raging Tempests \\ PH Primal Storm Mantle
-s(185738)/i(199439),	-- Girdle of Raging Tempests \\ PH Primal Storm Girdle
-s(185739)/i(199440),	-- Armplates of Raging Tempests \\ PH Primal Storm Armplates
-s(185740)/i(199450),	-- Cape of Raging Tempests \\ PH Primal Storm Cape
-10.0.7.48220
-s(185741)/i(199304),	-- Cleaver of Raging Tempests \\ PH Primal Storm Cleaver
-s(185742)/i(199305),	-- Hatchet of Raging Tempests \\ PH Primal Storm Hatchet
-s(185743)/i(199306),	-- Hacker of Raging Tempests \\ PH Primal Storm Hacker
-s(185744)/i(199307),	-- Heartseeker of Raging Tempests \\ PH Primal Storm Heartseeker
-s(185745)/i(199308),	-- Glaive of Raging Tempests \\ PH Primal Storm Glaive
-s(185746)/i(199309),	-- Dagger of Raging Tempests \\ PH Primal Storm Dagger
-s(185747)/i(199310),	-- Shiv of Raging Tempests \\ PH Primal Storm Shiv
-s(185748)/i(199311),	-- Horn of Raging Tempests \\ PH Primal Storm Horn
-s(185749)/i(199312),	-- Staff of Raging Tempests \\ PH Primal Storm Staff
-s(185750)/i(199313),	-- Pole of Raging Tempests \\ PH Primal Storm Pole
-s(185751)/i(199314),	-- Broadsword of Raging Tempests \\ PH Primal Storm Broadsword
-s(185752)/i(199315),	-- Greatsword of Raging Tempests \\ PH Primal Storm Greatsword
-s(185753)/i(199316),	-- Scepter of Raging Tempests \\ PH Primal Storm Scepter
-s(185754)/i(199317),	-- Maul of Raging Tempests \\ PH Primal Storm Maul
-s(185755)/i(199318),	-- Cudgel of Raging Tempests \\ PH Primal Storm Cudgel
-s(185756)/i(199319),	-- Bulwark of Raging Tempests \\ PH Primal Storm Bulwark
-s(185757)/i(199320),	-- Impaler of Raging Tempests \\ PH Primal Storm Impaler
-s(185758)/i(199321),	-- Javelin of Raging Tempests \\ PH Primal Storm Javelin
-s(185759)/i(199322),	-- Rod of Raging Tempests \\ PH Primal Storm Rod
-s(185760)/i(199323),	-- Mallet of Raging Tempests \\ PH Primal Storm Mallet
-s(185761)/i(199324),	-- Crusher of Raging Tempests \\ PH Primal Storm Crusher
-s(185762)/i(199325),	-- Mace of Raging Tempests \\ PH Primal Storm Mace
 10.0.7.48439
 s(185909)/i(204882),	-- 
 s(185910)/i(204881),	-- 
@@ -65248,10 +65126,6 @@ s(185913)/i(204878),	--
 s(185914)/i(204876),	-- 
 s(185915)/i(204875),	-- 
 s(185916)/i(204874),	-- 
-10.0.7.48520
-s(185420)/i(204081),	-- Shredderizing Glove
-s(185421)/i(204082),	-- Sappy Buddy
-s(185424)/i(204086),	-- S.C.A.N.N.E.R. Mk3
 10.1.0.48480
 s(184355)/i(202347),	-- 
 s(184356)/i(202348),	-- 
@@ -65434,7 +65308,7 @@ s(184538)/i(202564),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - We
 s(184539)/i(202565),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Weapon - 2H Staff INT
 s(184540)/i(202566),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Dracthyr Evolution - Weapon - Warglaives
 s(184542)/i(202568),	-- 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Elemental - Weapon - 1H Mace STR
-s(184543)/i(202569),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Weapon - 2H Polearm AGI
+s(184543)/i(202569),	-- Djaruun, Pillar of the Elder Flame \\ 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Weapon - 2H Polearm AGI
 s(184544)/i(202570),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Weapon - 1H Mace INT
 s(184545)/i(202571),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Dracthyr Evolution - Weapon - Shield
 s(184546)/i(202573),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Accessory - CLOAK 1
@@ -65458,7 +65332,7 @@ s(184563)/i(202590),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Mon
 s(184564)/i(202591),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - HEAD 1
 s(184565)/i(202592),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Plate - HEAD 1
 s(184566)/i(202593),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Cloth - WRIST 1
-s(184567)/i(202594),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WAIST 1
+s(184567)/i(202594),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WRIST 1 \\ 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WAIST 1
 s(184568)/i(202595),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Plate - SHOULDER 1
 s(184569)/i(202596),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Leather - LEGS 1
 s(184570)/i(202597),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - LEGS 1
@@ -65478,7 +65352,7 @@ s(184583)/i(202651),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> -
 s(184584)/i(202652),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Cloth - WAIST 2
 s(184585)/i(202653),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - WRIST 2
 s(184586)/i(202654),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - FEET 2
-s(184587)/i(202655),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 2
+s(184587)/i(202655),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 1 \\ 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 2
 s(184588)/i(202656),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 2
 s(184589)/i(202657),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - FEET 2
 s(184590)/i(202658),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - WAIST 2
@@ -65524,9 +65398,9 @@ s(185458)/i(204128),	-- Obsidian Combatant's Draconium Armguards
 s(185474)/i(202570),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Weapon - 1H Mace INT
 s(185475)/i(202570),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Weapon - 1H Mace INT
 s(185476)/i(202570),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Weapon - 1H Mace INT
-s(185477)/i(202569),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Weapon - 2H Polearm AGI
-s(185478)/i(202569),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Weapon - 2H Polearm AGI
-s(185479)/i(202569),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Weapon - 2H Polearm AGI
+s(185477)/i(202569),	-- Djaruun, Pillar of the Elder Flame \\ 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Weapon - 2H Polearm AGI
+s(185478)/i(202569),	-- Djaruun, Pillar of the Elder Flame \\ 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Weapon - 2H Polearm AGI
+s(185479)/i(202569),	-- Djaruun, Pillar of the Elder Flame \\ 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Weapon - 2H Polearm AGI
 s(185480)/i(202559),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Weapon - 2H - Polearm STR
 s(185481)/i(202559),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Weapon - 2H - Polearm STR
 s(185482)/i(202559),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Weapon - 2H - Polearm STR
@@ -66396,3 +66270,815 @@ s(186446)/i(202519),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunte
 s(186447)/i(202519),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Generic - Cloak
 s(186448)/i(205105),	-- Zaralek Surveyor's Censer
 s(186449)/i(204742),	-- Suffused Censer
+10.1.0.48661
+s(184598)/i(203152),	-- Lionguard Pauldrons
+s(184599)/i(203153),	-- Lionguard Greathelm
+s(184600)/i(203154),	-- Lionguard Greathelm
+s(184601)/i(203155),	-- Lionguard Pauldrons
+s(184602)/i(203156),	-- Lionguard Pauldrons
+s(184603)/i(203157),	-- Lionguard Greathelm
+s(184604)/i(203158),	-- Lionguard Chestplate
+s(184605)/i(203159),	-- Lionguard Chestplate
+s(184606)/i(203160),	-- Lionguard Chestplate
+s(184607)/i(203161),	-- Lionguard Greatbelt
+s(184608)/i(203162),	-- Lionguard Greatbelt
+s(184609)/i(203163),	-- Lionguard Greatbelt
+s(184610)/i(203164),	-- Lionguard Legguards
+s(184611)/i(203165),	-- Lionguard Legguards
+s(184612)/i(203166),	-- Lionguard Legguards
+s(184613)/i(203167),	-- Lionguard Warboots
+s(184614)/i(203168),	-- Lionguard Warboots
+s(184615)/i(203169),	-- Lionguard Warboots
+s(184616)/i(203170),	-- Lionguard Bracers
+s(184617)/i(203171),	-- Lionguard Bracers
+s(184618)/i(203172),	-- Lionguard Bracers
+s(184619)/i(203173),	-- Lionguard Gauntlets
+s(184620)/i(203174),	-- Lionguard Gauntlets
+s(184621)/i(203175),	-- Lionguard Gauntlets
+s(184622)/i(203176),	-- Lionguard Robe
+s(184623)/i(203177),	-- Lionguard Robe
+s(184624)/i(203178),	-- Lionguard Robe
+s(184625)/i(203179),	-- Kosh'aka Casque
+s(184626)/i(203180),	-- Kosh'aka Casque
+s(184627)/i(203181),	-- Kosh'aka Casque
+s(184628)/i(203185),	-- Kosh'aka Spaulders
+s(184629)/i(203186),	-- Kosh'aka Spaulders
+s(184630)/i(203187),	-- Kosh'aka Spaulders
+s(184631)/i(203188),	-- Kosh'aka Cheststraps
+s(184632)/i(203189),	-- Kosh'aka Cheststraps
+s(184633)/i(203190),	-- Kosh'aka Cheststraps
+s(184634)/i(203191),	-- Kosh'aka Girdle
+s(184635)/i(203192),	-- Kosh'aka Girdle
+s(184636)/i(203193),	-- Kosh'aka Girdle
+s(184637)/i(203194),	-- Kosh'aka Legstraps
+s(184638)/i(203195),	-- Kosh'aka Legstraps
+s(184639)/i(203196),	-- Kosh'aka Legstraps
+s(184640)/i(203197),	-- Kosh'aka Greaves
+s(184641)/i(203198),	-- Kosh'aka Greaves
+s(184642)/i(203199),	-- Kosh'aka Greaves
+s(184643)/i(203200),	-- Kosh'aka Armbands
+s(184644)/i(203201),	-- Kosh'aka Armbands
+s(184645)/i(203202),	-- Kosh'aka Armbands
+s(184646)/i(203203),	-- Kosh'aka Grips
+s(184647)/i(203204),	-- Kosh'aka Grips
+s(184648)/i(203205),	-- Kosh'aka Grips
+s(184649)/i(203207),	-- Kosh'aka Drape
+s(184650)/i(203208),	-- Kosh'aka Drape
+s(184651)/i(203209),	-- Kosh'aka Drape
+s(185422)/i(204083),	-- 
+s(185423)/i(204084),	-- Ancestor's Might
+s(185609)/i(204482),	-- 
+s(186450)/i(205264),	-- Speleothemic Footguards
+s(186451)/i(205265),	-- Sulfuric Crystal Boots
+s(186452)/i(205269),	-- Scent-Masking Moccasins
+s(186453)/i(205270),	-- Mycelial Fabric Sandals
+s(186454)/i(205271),	-- Speleothemic Cataphract
+s(186455)/i(205272),	-- Scent-Masking Vest
+s(186456)/i(205273),	-- Sulfuric Crystal Breastmail
+s(186458)/i(205275),	-- Mycelial Fabric Tunic
+s(186459)/i(205278),	-- Obsidian Combatant's Cloth Goggles
+s(186460)/i(205279),	-- Obsidian Combatant's Leather Goggles
+s(186461)/i(205280),	-- Obsidian Combatant's Mail Goggles
+s(186462)/i(205281),	-- Obsidian Combatant's Plate Goggles
+s(186463)/i(202589),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Cloth - WAIST 1
+s(186464)/i(202589),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Cloth - WAIST 1
+s(186465)/i(202589),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Cloth - WAIST 1
+s(186466)/i(202652),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Cloth - WAIST 2
+s(186467)/i(202652),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Cloth - WAIST 2
+s(186468)/i(202652),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Cloth - WAIST 2
+s(186469)/i(202593),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Cloth - WRIST 1
+s(186470)/i(202593),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Cloth - WRIST 1
+s(186471)/i(202593),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Cloth - WRIST 1
+s(186472)/i(204393),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Cloth - WRIST 2
+s(186473)/i(204393),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Cloth - WRIST 2
+s(186474)/i(204393),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Cloth - WRIST 2
+s(186475)/i(204410),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Cloth - WRIST 3
+s(186476)/i(204410),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Cloth - WRIST 3
+s(186477)/i(204410),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Cloth - WRIST 3
+s(186478)/i(204413),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
+s(186479)/i(204413),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
+s(186480)/i(204413),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - WRIST 3
+s(186481)/i(202603),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Cloth - FEET 1
+s(186482)/i(202603),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Cloth - FEET 1
+s(186483)/i(202603),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Cloth - FEET 1
+s(186484)/i(204392),	-- 10.1 Raid - Black Dragon Labs - Boss 08 - Neltharion's Twisted Mind - Armor - Cloth - FEET 2
+s(186485)/i(204392),	-- 10.1 Raid - Black Dragon Labs - Boss 08 - Neltharion's Twisted Mind - Armor - Cloth - FEET 2
+s(186486)/i(204392),	-- 10.1 Raid - Black Dragon Labs - Boss 08 - Neltharion's Twisted Mind - Armor - Cloth - FEET 2
+s(186487)/i(202579),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Cloth - HEAD 1
+s(186488)/i(202579),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Cloth - HEAD 1
+s(186489)/i(202579),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Cloth - HEAD 1
+s(186490)/i(202580),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Cloth - SHOULDER 1
+s(186491)/i(202580),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Cloth - SHOULDER 1
+s(186492)/i(202580),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Cloth - SHOULDER 1
+s(186493)/i(204411),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Cloth - SHOULDER 3
+s(186494)/i(204411),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Cloth - SHOULDER 3
+s(186495)/i(204411),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Cloth - SHOULDER 3
+s(186496)/i(204412),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
+s(186497)/i(204412),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
+s(186498)/i(204412),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Cloth - SHOULDER 3
+s(186499)/i(202578),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Cloth - HAND 1
+s(186500)/i(202578),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Cloth - HAND 1
+s(186501)/i(202578),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Cloth - HAND 1
+s(186502)/i(202585),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Cloth - LEGS 1
+s(186503)/i(202585),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Cloth - LEGS 1
+s(186504)/i(202585),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Cloth - LEGS 1
+s(186505)/i(204408),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
+s(186506)/i(204408),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
+s(186507)/i(204408),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
+s(186508)/i(202600),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Cloth - CHEST 1
+s(186509)/i(202600),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Cloth - CHEST 1
+s(186510)/i(202600),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Cloth - CHEST 1
+s(186511)/i(202598),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Mail - CHEST 1
+s(186512)/i(202598),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Mail - CHEST 1
+s(186513)/i(202598),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Mail - CHEST 1
+s(186514)/i(204422),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Mail - CHEST 2
+s(186515)/i(204422),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Mail - CHEST 2
+s(186516)/i(204422),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Mail - CHEST 2
+s(186517)/i(204420),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
+s(186518)/i(204420),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
+s(186519)/i(204420),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - CHEST 2
+s(186520)/i(202584),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Mail - LEGS 1
+s(186521)/i(202584),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Mail - LEGS 1
+s(186522)/i(202584),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Mail - LEGS 1
+s(186523)/i(202583),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Mail - HAND 1
+s(186524)/i(202583),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Mail - HAND 1
+s(186525)/i(202583),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Mail - HAND 1
+s(186526)/i(202590),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Mail - SHOULDER 1
+s(186527)/i(202590),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Mail - SHOULDER 1
+s(186528)/i(202590),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Mail - SHOULDER 1
+s(186529)/i(202591),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - HEAD 1
+s(186530)/i(202591),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - HEAD 1
+s(186531)/i(202591),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - HEAD 1
+s(186532)/i(204425),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
+s(186533)/i(204425),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
+s(186534)/i(204425),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Mail - HEAD 2
+s(186535)/i(202605),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Mail - WAIST 1
+s(186536)/i(202605),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Mail - WAIST 1
+s(186537)/i(202605),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Mail - WAIST 1
+s(186538)/i(204395),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Armor - Mail - WAIST 2
+s(186539)/i(204395),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Armor - Mail - WAIST 2
+s(186540)/i(204395),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Armor - Mail - WAIST 2
+s(186541)/i(204423),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Mail - WAIST 3
+s(186542)/i(204423),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Mail - WAIST 3
+s(186543)/i(204423),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Mail - WAIST 3
+s(186544)/i(204421),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
+s(186545)/i(204421),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
+s(186546)/i(204421),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Mail - WAIST 3
+s(186547)/i(202604),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - WRIST 1
+s(186548)/i(202604),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - WRIST 1
+s(186549)/i(202604),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - WRIST 1
+s(186550)/i(202659),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
+s(186551)/i(202659),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
+s(186552)/i(202659),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
+s(186553)/i(202588),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Mail - FEET 1
+s(186554)/i(202588),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Mail - FEET 1
+s(186555)/i(202588),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Mail - FEET 1
+s(186556)/i(204424),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Mail - FEET 2
+s(186557)/i(204424),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Mail - FEET 2
+s(186558)/i(204424),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Mail - FEET 2
+s(186559)/i(205286),	-- Loamm Niffen Tabard
+s(186560)/i(205290),	-- Greatcloak of Spun Marrow
+s(186561)/i(205291),	-- Garrison General's Cape
+s(186562)/i(205292),	-- Kairoktra's Mane
+s(186563)/i(205293),	-- Emberdusk's Embrace
+s(186564)/i(205294),	-- Sandals of Molten Scorn
+s(186565)/i(205295),	-- Sediment Sifters
+s(186566)/i(205296),	-- Goopal's Visage
+s(186567)/i(205297),	-- Flamewielder's Trousers
+s(186568)/i(205298),	-- Belt of Floating Stone
+s(186569)/i(205299),	-- Rudiment Cuffs
+s(186570)/i(205300),	-- Magma Waders
+s(186571)/i(205301),	-- Hardened Lava Handwraps
+s(186572)/i(205302),	-- Underlight Headwrap
+s(186573)/i(205303),	-- Leggings of Flowing Flame
+s(186574)/i(205304),	-- Snareguard Sash
+s(186575)/i(205305),	-- Zaralek Arachnid Armbands
+s(186576)/i(205306),	-- Aquiferous Raiment
+s(186577)/i(205307),	-- Kob'rok's Scale Sabatons
+s(186578)/i(205308),	-- Clacking Clawguards
+s(186579)/i(205309),	-- Loyal Attendant's Gaze
+s(186580)/i(205310),	-- Legguards of Kaprachu
+s(186581)/i(205311),	-- Magmascale Pauldrons
+s(186582)/i(205312),	-- Subterrax's Stout Waistguard
+s(186583)/i(205313),	-- Brulsef's Wristbraces
+s(186584)/i(205314),	-- Greathelm of the Emissary
+s(186585)/i(205315),	-- Colossian Cuirass
+s(186586)/i(205316),	-- Crystal Stompers
+s(186587)/i(205317),	-- Crystalpod Gauntlets
+s(186588)/i(205318),	-- Guardian Golem's Legplates
+s(186589)/i(205319),	-- Deepflayer Shoulderguards
+s(186590)/i(205320),	-- Greatbelt of the Stronk
+s(186591)/i(205321),	-- Brimstone Bracers
+s(186592)/i(205322),	-- Algeth'ar Exile's Frock
+s(186593)/i(205323),	-- Rock-Lined Pauldrons
+s(186594)/i(205324),	-- Moth Queen Mantle
+s(186595)/i(205325),	-- Crystal Wing Shield
+s(186596)/i(205326),	-- Crystalweb Chelicera
+s(186597)/i(205327),	-- Shard of the Veridian King
+s(186598)/i(205328),	-- Earthen Emissasry's Edge
+s(186599)/i(205331),	-- Zskorran Cleaver
+s(186600)/i(205332),	-- Fist of the Demolisher
+s(186603)/i(205361),	-- Obsidian Gladiator's Prestigious Cloak
+s(186604)/i(205362),	-- Obsidian Gladiator's Tabard
+s(186605)/i(202574),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Leather - FEET 1
+s(186606)/i(202574),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Leather - FEET 1
+s(186607)/i(202574),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Leather - FEET 1
+s(186608)/i(204391),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Leather - FEET 2
+s(186609)/i(204391),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Leather - FEET 2
+s(186610)/i(204391),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Leather - FEET 2
+s(186611)/i(202594),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WRIST 1 \\ 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WAIST 1
+s(186612)/i(202594),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WRIST 1 \\ 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WAIST 1
+s(186613)/i(202594),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WRIST 1 \\ 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WAIST 1
+s(186614)/i(204394),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Armor - Leather - WRIST 2
+s(186615)/i(204394),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Armor - Leather - WRIST 2
+s(186616)/i(204394),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Armor - Leather - WRIST 2
+s(186617)/i(204419),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
+s(186618)/i(204419),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
+s(186619)/i(204419),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Leather - WRIST 3
+s(186620)/i(202655),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 1 \\ 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 2
+s(186621)/i(202655),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 1 \\ 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 2
+s(186622)/i(202655),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 1 \\ 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 2
+s(186623)/i(204399),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Leather - WAIST 2
+s(186624)/i(204399),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Leather - WAIST 2
+s(186625)/i(204399),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Leather - WAIST 2
+s(186626)/i(202587),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Leather - HAND 1
+s(186627)/i(202587),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Leather - HAND 1
+s(186628)/i(202587),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Leather - HAND 1
+s(186629)/i(204414),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Leather - HAND 2
+s(186630)/i(204414),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Leather - HAND 2
+s(186631)/i(204414),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Leather - HAND 2
+s(186632)/i(204416),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
+s(186633)/i(204416),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
+s(186634)/i(204416),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - HAND 2
+s(186635)/i(202596),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Leather - LEGS 1
+s(186636)/i(202596),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Leather - LEGS 1
+s(186637)/i(202596),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Leather - LEGS 1
+s(186638)/i(202586),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Leather - CHEST 1
+s(186639)/i(202586),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Leather - CHEST 1
+s(186640)/i(202586),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Leather - CHEST 1
+s(186641)/i(202575),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Leather - SHOULDER 1
+s(186642)/i(202575),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Leather - SHOULDER 1
+s(186643)/i(202575),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Leather - SHOULDER 1
+s(186644)/i(204415),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Leather - SHOULDER 2
+s(186645)/i(204415),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Leather - SHOULDER 2
+s(186646)/i(204415),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Leather - SHOULDER 2
+s(186647)/i(204417),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
+s(186648)/i(204417),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
+s(186649)/i(204417),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Leather - SHOULDER 2
+s(186650)/i(202602),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Leather - HEAD 1
+s(186651)/i(202602),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Leather - HEAD 1
+s(186652)/i(202602),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Leather - HEAD 1
+s(186653)/i(202576),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Plate - FEET 1
+s(186654)/i(202576),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Plate - FEET 1
+s(186655)/i(202576),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Plate - FEET 1
+s(186656)/i(204396),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Armor - Plate - FEET 2
+s(186657)/i(204396),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Armor - Plate - FEET 2
+s(186658)/i(204396),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Armor - Plate - FEET 2
+s(186659)/i(204430),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - FEET 2
+s(186660)/i(204430),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - FEET 2
+s(186661)/i(204430),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - FEET 2
+s(186662)/i(204428),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
+s(186663)/i(204428),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
+s(186664)/i(204428),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - FEET 2
+s(186665)/i(204390),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Plate - WRIST 2
+s(186666)/i(204390),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Plate - WRIST 2
+s(186667)/i(204390),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Plate - WRIST 2
+s(186668)/i(202582),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Plate - WRIST 1
+s(186669)/i(202582),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Plate - WRIST 1
+s(186670)/i(202582),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Plate - WRIST 1
+s(186671)/i(202577),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - WAIST 1
+s(186672)/i(202577),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - WAIST 1
+s(186673)/i(202577),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - WAIST 1
+s(186674)/i(204400),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Plate - WAIST 2
+s(186675)/i(204400),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Plate - WAIST 2
+s(186676)/i(204400),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Plate - WAIST 2
+s(186677)/i(202601),	-- 10.1 Raid - Black Dragon Labs - Boss 08 - Neltharion's Twisted Mind - Armor - Plate - HAND 1
+s(186678)/i(202601),	-- 10.1 Raid - Black Dragon Labs - Boss 08 - Neltharion's Twisted Mind - Armor - Plate - HAND 1
+s(186679)/i(202601),	-- 10.1 Raid - Black Dragon Labs - Boss 08 - Neltharion's Twisted Mind - Armor - Plate - HAND 1
+s(186680)/i(202597),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - LEGS 1
+s(186681)/i(202597),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - LEGS 1
+s(186682)/i(202597),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Plate - LEGS 1
+s(186683)/i(202599),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Plate - CHEST 1
+s(186684)/i(202599),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Plate - CHEST 1
+s(186685)/i(202599),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Plate - CHEST 1
+s(186686)/i(202595),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Plate - SHOULDER 1
+s(186687)/i(202595),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Plate - SHOULDER 1
+s(186688)/i(202595),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Plate - SHOULDER 1
+s(186689)/i(202592),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Plate - HEAD 1
+s(186690)/i(202592),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Plate - HEAD 1
+s(186691)/i(202592),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Plate - HEAD 1
+s(186692)/i(204429),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - HEAD 2
+s(186693)/i(204429),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - HEAD 2
+s(186694)/i(204429),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - HEAD 2
+s(186695)/i(204427),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
+s(186696)/i(204427),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
+s(186697)/i(204427),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor - Plate - HEAD 2
+s(186698)/i(204465),	-- Voice of the Silent Star
+s(186699)/i(204465),	-- Voice of the Silent Star
+s(186700)/i(204465),	-- Voice of the Silent Star
+s(186701)/i(205375),	-- Obsidian Gladiator's Silk Tunic
+s(186702)/i(205375),	-- Obsidian Gladiator's Silk Tunic
+s(186703)/i(205376),	-- Obsidian Gladiator's Silk Blouse
+s(186704)/i(205376),	-- Obsidian Gladiator's Silk Blouse
+s(186705)/i(205377),	-- Obsidian Gladiator's Silk Slippers
+s(186706)/i(205377),	-- Obsidian Gladiator's Silk Slippers
+s(186707)/i(205378),	-- Obsidian Gladiator's Silk Treads
+s(186708)/i(205378),	-- Obsidian Gladiator's Silk Treads
+s(186709)/i(205379),	-- Obsidian Gladiator's Silk Gloves
+s(186710)/i(205379),	-- Obsidian Gladiator's Silk Gloves
+s(186711)/i(205380),	-- Obsidian Gladiator's Silk Handwraps
+s(186712)/i(205380),	-- Obsidian Gladiator's Silk Handwraps
+s(186713)/i(205381),	-- Obsidian Gladiator's Silk Hood
+s(186714)/i(205381),	-- Obsidian Gladiator's Silk Hood
+s(186715)/i(205381),	-- Obsidian Gladiator's Silk Hood
+s(186716)/i(205381),	-- Obsidian Gladiator's Silk Hood
+s(186717)/i(205382),	-- Obsidian Gladiator's Silk Guise
+s(186718)/i(205382),	-- Obsidian Gladiator's Silk Guise
+s(186719)/i(205383),	-- Obsidian Gladiator's Silk Leggings
+s(186720)/i(205383),	-- Obsidian Gladiator's Silk Leggings
+s(186721)/i(205384),	-- Obsidian Gladiator's Silk Trousers
+s(186722)/i(205384),	-- Obsidian Gladiator's Silk Trousers
+s(186723)/i(205385),	-- Obsidian Gladiator's Silk Mantle
+s(186724)/i(205385),	-- Obsidian Gladiator's Silk Mantle
+s(186725)/i(205386),	-- Obsidian Gladiator's Silk Amice
+s(186726)/i(205386),	-- Obsidian Gladiator's Silk Amice
+s(186727)/i(205387),	-- Obsidian Gladiator's Silk Cord
+s(186728)/i(205387),	-- Obsidian Gladiator's Silk Cord
+s(186729)/i(205388),	-- Obsidian Gladiator's Silk Belt
+s(186730)/i(205388),	-- Obsidian Gladiator's Silk Belt
+s(186731)/i(205389),	-- Obsidian Gladiator's Silk Wristwraps
+s(186732)/i(205389),	-- Obsidian Gladiator's Silk Wristwraps
+s(186733)/i(205390),	-- Obsidian Gladiator's Silk Armbands
+s(186734)/i(205390),	-- Obsidian Gladiator's Silk Armbands
+s(186735)/i(205391),	-- Obsidian Gladiator's Chain Vest
+s(186736)/i(205391),	-- Obsidian Gladiator's Chain Vest
+s(186737)/i(205392),	-- Obsidian Gladiator's Chain Tunic
+s(186738)/i(205392),	-- Obsidian Gladiator's Chain Tunic
+s(186739)/i(205393),	-- Obsidian Gladiator's Chain Sabatons
+s(186740)/i(205393),	-- Obsidian Gladiator's Chain Sabatons
+s(186741)/i(205394),	-- Obsidian Gladiator's Chain Boots
+s(186742)/i(205394),	-- Obsidian Gladiator's Chain Boots
+s(186743)/i(205395),	-- Obsidian Gladiator's Chain Gauntlets
+s(186744)/i(205395),	-- Obsidian Gladiator's Chain Gauntlets
+s(186745)/i(205396),	-- Obsidian Gladiator's Chain Handguards
+s(186746)/i(205396),	-- Obsidian Gladiator's Chain Handguards
+s(186747)/i(205397),	-- Obsidian Gladiator's Chain Helm
+s(186748)/i(205397),	-- Obsidian Gladiator's Chain Helm
+s(186749)/i(205398),	-- Obsidian Gladiator's Chain Faceguard
+s(186750)/i(205398),	-- Obsidian Gladiator's Chain Faceguard
+s(186751)/i(205399),	-- Obsidian Gladiator's Chain Leggings
+s(186752)/i(205399),	-- Obsidian Gladiator's Chain Leggings
+s(186753)/i(205400),	-- Obsidian Gladiator's Chain Breeches
+s(186754)/i(205400),	-- Obsidian Gladiator's Chain Breeches
+s(186755)/i(205401),	-- Obsidian Gladiator's Chain Monnion
+s(186756)/i(205401),	-- Obsidian Gladiator's Chain Monnion
+s(186757)/i(205402),	-- Obsidian Gladiator's Chain Shoulderguard
+s(186758)/i(205402),	-- Obsidian Gladiator's Chain Shoulderguard
+s(186759)/i(205403),	-- Obsidian Gladiator's Chain Belt
+s(186760)/i(205403),	-- Obsidian Gladiator's Chain Belt
+s(186761)/i(205404),	-- Obsidian Gladiator's Chain Girdle
+s(186762)/i(205404),	-- Obsidian Gladiator's Chain Girdle
+s(186763)/i(205405),	-- Obsidian Gladiator's Chain Wristguards
+s(186764)/i(205405),	-- Obsidian Gladiator's Chain Wristguards
+s(186765)/i(205406),	-- Obsidian Gladiator's Chain Bracers
+s(186766)/i(205406),	-- Obsidian Gladiator's Chain Bracers
+s(186767)/i(205407),	-- Obsidian Gladiator's Cloak
+s(186768)/i(205407),	-- Obsidian Gladiator's Cloak
+s(186769)/i(205408),	-- Obsidian Gladiator's Drape
+s(186770)/i(205408),	-- Obsidian Gladiator's Drape
+s(186771)/i(205409),	-- Obsidian Gladiator's Shawl
+s(186772)/i(205409),	-- Obsidian Gladiator's Shawl
+s(186773)/i(204467),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Accessory - CLOAK 2
+s(186774)/i(204467),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Accessory - CLOAK 2
+s(186775)/i(204467),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Accessory - CLOAK 2
+s(186776)/i(202573),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Accessory - CLOAK 1
+s(186777)/i(202573),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Accessory - CLOAK 1
+s(186778)/i(202573),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Accessory - CLOAK 1
+s(186779)/i(205414),	-- Ornate Black Dragon Labwear Coat
+s(186780)/i(205415),	-- Ornate Black Dragon Labwear Mantle
+s(186781)/i(205416),	-- Ornate Black Dragon Labwear Cloak
+s(186782)/i(205421),	-- Ponzo's Scheming Topper
+s(186783)/i(205446),	-- Obsidian Gladiator's Cloak
+s(186784)/i(205446),	-- Obsidian Gladiator's Cloak
+s(186785)/i(205447),	-- Obsidian Gladiator's Drape
+s(186786)/i(205447),	-- Obsidian Gladiator's Drape
+s(186787)/i(205448),	-- Obsidian Gladiator's Shawl
+s(186788)/i(205448),	-- Obsidian Gladiator's Shawl
+s(186789)/i(205473),	-- Obsidian Gladiator's Plate Chestguard
+s(186790)/i(205473),	-- Obsidian Gladiator's Plate Chestguard
+s(186791)/i(205474),	-- Obsidian Gladiator's Plate Chestplate
+s(186792)/i(205474),	-- Obsidian Gladiator's Plate Chestplate
+s(186793)/i(205475),	-- Obsidian Gladiator's Plate Warboots
+s(186794)/i(205475),	-- Obsidian Gladiator's Plate Warboots
+s(186795)/i(205476),	-- Obsidian Gladiator's Plate Stompers
+s(186796)/i(205476),	-- Obsidian Gladiator's Plate Stompers
+s(186797)/i(205477),	-- Obsidian Gladiator's Plate Gauntlets
+s(186798)/i(205477),	-- Obsidian Gladiator's Plate Gauntlets
+s(186799)/i(205478),	-- Obsidian Gladiator's Plate Handguards
+s(186800)/i(205478),	-- Obsidian Gladiator's Plate Handguards
+s(186801)/i(205479),	-- Obsidian Gladiator's Plate Helm
+s(186802)/i(205479),	-- Obsidian Gladiator's Plate Helm
+s(186803)/i(205480),	-- Obsidian Gladiator's Plate Helmet
+s(186804)/i(205480),	-- Obsidian Gladiator's Plate Helmet
+s(186805)/i(205481),	-- Obsidian Gladiator's Plate Legguards
+s(186806)/i(205481),	-- Obsidian Gladiator's Plate Legguards
+s(186807)/i(205482),	-- Obsidian Gladiator's Plate Wargreaves
+s(186808)/i(205482),	-- Obsidian Gladiator's Plate Wargreaves
+s(186809)/i(205483),	-- Obsidian Gladiator's Plate Shoulders
+s(186810)/i(205483),	-- Obsidian Gladiator's Plate Shoulders
+s(186811)/i(205484),	-- Obsidian Gladiator's Plate Pauldrons
+s(186812)/i(205484),	-- Obsidian Gladiator's Plate Pauldrons
+s(186813)/i(205485),	-- Obsidian Gladiator's Plate Girdle
+s(186814)/i(205485),	-- Obsidian Gladiator's Plate Girdle
+s(186815)/i(205486),	-- Obsidian Gladiator's Plate Greatbelt
+s(186816)/i(205486),	-- Obsidian Gladiator's Plate Greatbelt
+s(186817)/i(205487),	-- Obsidian Gladiator's Plate Wristguards
+s(186818)/i(205487),	-- Obsidian Gladiator's Plate Wristguards
+s(186819)/i(205488),	-- Obsidian Gladiator's Plate Vambraces
+s(186820)/i(205488),	-- Obsidian Gladiator's Plate Vambraces
+s(186821)/i(205489),	-- Obsidian Gladiator's Silk Robe
+s(186822)/i(205489),	-- Obsidian Gladiator's Silk Robe
+s(186823)/i(205490),	-- Obsidian Gladiator's Silk Vestments
+s(186824)/i(205490),	-- Obsidian Gladiator's Silk Vestments
+s(186825)/i(205491),	-- Obsidian Gladiator's Silk Slippers
+s(186826)/i(205491),	-- Obsidian Gladiator's Silk Slippers
+s(186827)/i(205492),	-- Obsidian Gladiator's Silk Treads
+s(186828)/i(205492),	-- Obsidian Gladiator's Silk Treads
+s(186829)/i(205493),	-- Obsidian Gladiator's Silk Gloves
+s(186830)/i(205493),	-- Obsidian Gladiator's Silk Gloves
+s(186831)/i(205494),	-- Obsidian Gladiator's Silk Handwraps
+s(186832)/i(205494),	-- Obsidian Gladiator's Silk Handwraps
+s(186833)/i(205495),	-- Obsidian Gladiator's Silk Hood
+s(186834)/i(205495),	-- Obsidian Gladiator's Silk Hood
+s(186835)/i(205496),	-- Obsidian Gladiator's Silk Guise
+s(186836)/i(205496),	-- Obsidian Gladiator's Silk Guise
+s(186837)/i(205497),	-- Obsidian Gladiator's Silk Leggings
+s(186838)/i(205497),	-- Obsidian Gladiator's Silk Leggings
+s(186839)/i(205498),	-- Obsidian Gladiator's Silk Trousers
+s(186840)/i(205498),	-- Obsidian Gladiator's Silk Trousers
+s(186841)/i(205499),	-- Obsidian Gladiator's Silk Mantle
+s(186842)/i(205499),	-- Obsidian Gladiator's Silk Mantle
+s(186843)/i(205500),	-- Obsidian Gladiator's Silk Amice
+s(186844)/i(205500),	-- Obsidian Gladiator's Silk Amice
+s(186845)/i(205501),	-- Obsidian Gladiator's Silk Cord
+s(186846)/i(205501),	-- Obsidian Gladiator's Silk Cord
+s(186847)/i(205502),	-- Obsidian Gladiator's Silk Belt
+s(186848)/i(205502),	-- Obsidian Gladiator's Silk Belt
+s(186849)/i(205503),	-- Obsidian Gladiator's Silk Wristwraps
+s(186850)/i(205503),	-- Obsidian Gladiator's Silk Wristwraps
+s(186851)/i(205504),	-- Obsidian Gladiator's Silk Armbands
+s(186852)/i(205504),	-- Obsidian Gladiator's Silk Armbands
+s(186853)/i(205505),	-- Obsidian Gladiator's Silk Robe
+s(186854)/i(205505),	-- Obsidian Gladiator's Silk Robe
+s(186855)/i(205506),	-- Obsidian Gladiator's Silk Vestments
+s(186856)/i(205506),	-- Obsidian Gladiator's Silk Vestments
+s(186857)/i(205507),	-- Obsidian Gladiator's Silk Slippers
+s(186858)/i(205507),	-- Obsidian Gladiator's Silk Slippers
+s(186859)/i(205508),	-- Obsidian Gladiator's Silk Treads
+s(186860)/i(205508),	-- Obsidian Gladiator's Silk Treads
+s(186861)/i(205509),	-- Obsidian Gladiator's Silk Gloves
+s(186862)/i(205509),	-- Obsidian Gladiator's Silk Gloves
+s(186863)/i(205510),	-- Obsidian Gladiator's Silk Handwraps
+s(186864)/i(205510),	-- Obsidian Gladiator's Silk Handwraps
+s(186865)/i(205511),	-- Obsidian Gladiator's Silk Hood
+s(186866)/i(205511),	-- Obsidian Gladiator's Silk Hood
+s(186867)/i(205512),	-- Obsidian Gladiator's Silk Guise
+s(186868)/i(205512),	-- Obsidian Gladiator's Silk Guise
+s(186869)/i(205513),	-- Obsidian Gladiator's Silk Leggings
+s(186870)/i(205513),	-- Obsidian Gladiator's Silk Leggings
+s(186871)/i(205514),	-- Obsidian Gladiator's Silk Trousers
+s(186872)/i(205514),	-- Obsidian Gladiator's Silk Trousers
+s(186873)/i(205515),	-- Obsidian Gladiator's Silk Mantle
+s(186874)/i(205515),	-- Obsidian Gladiator's Silk Mantle
+s(186875)/i(205516),	-- Obsidian Gladiator's Silk Amice
+s(186876)/i(205516),	-- Obsidian Gladiator's Silk Amice
+s(186877)/i(205517),	-- Obsidian Gladiator's Silk Cord
+s(186878)/i(205517),	-- Obsidian Gladiator's Silk Cord
+s(186879)/i(205518),	-- Obsidian Gladiator's Silk Belt
+s(186880)/i(205518),	-- Obsidian Gladiator's Silk Belt
+s(186881)/i(205519),	-- Obsidian Gladiator's Silk Wristwraps
+s(186882)/i(205519),	-- Obsidian Gladiator's Silk Wristwraps
+s(186883)/i(205520),	-- Obsidian Gladiator's Silk Armbands
+s(186884)/i(205520),	-- Obsidian Gladiator's Silk Armbands
+s(186885)/i(205521),	-- Obsidian Gladiator's Leather Vest
+s(186886)/i(205521),	-- Obsidian Gladiator's Leather Vest
+s(186887)/i(205522),	-- Obsidian Gladiator's Leather Jerkin
+s(186888)/i(205522),	-- Obsidian Gladiator's Leather Jerkin
+s(186889)/i(205523),	-- Obsidian Gladiator's Leather Boots
+s(186890)/i(205523),	-- Obsidian Gladiator's Leather Boots
+s(186891)/i(205524),	-- Obsidian Gladiator's Leather Treads
+s(186892)/i(205524),	-- Obsidian Gladiator's Leather Treads
+s(186893)/i(205525),	-- Obsidian Gladiator's Leather Gloves
+s(186894)/i(205525),	-- Obsidian Gladiator's Leather Gloves
+s(186895)/i(205526),	-- Obsidian Gladiator's Leather Grips
+s(186896)/i(205526),	-- Obsidian Gladiator's Leather Grips
+s(186897)/i(205527),	-- Obsidian Gladiator's Leather Helm
+s(186898)/i(205527),	-- Obsidian Gladiator's Leather Helm
+s(186899)/i(205528),	-- Obsidian Gladiator's Leather Mask
+s(186900)/i(205528),	-- Obsidian Gladiator's Leather Mask
+s(186901)/i(205529),	-- Obsidian Gladiator's Leather Breeches
+s(186902)/i(205529),	-- Obsidian Gladiator's Leather Breeches
+s(186903)/i(205530),	-- Obsidian Gladiator's Leather Legwraps
+s(186904)/i(205530),	-- Obsidian Gladiator's Leather Legwraps
+s(186905)/i(205531),	-- Obsidian Gladiator's Leather Spaulders
+s(186906)/i(205531),	-- Obsidian Gladiator's Leather Spaulders
+s(186907)/i(205532),	-- Obsidian Gladiator's Leather Shoulderpads
+s(186908)/i(205532),	-- Obsidian Gladiator's Leather Shoulderpads
+s(186909)/i(205533),	-- Obsidian Gladiator's Leather Belt
+s(186910)/i(205533),	-- Obsidian Gladiator's Leather Belt
+s(186911)/i(205534),	-- Obsidian Gladiator's Leather Strap
+s(186912)/i(205534),	-- Obsidian Gladiator's Leather Strap
+s(186913)/i(205535),	-- Obsidian Gladiator's Leather Wristwraps
+s(186914)/i(205535),	-- Obsidian Gladiator's Leather Wristwraps
+s(186915)/i(205536),	-- Obsidian Gladiator's Leather Wristguards
+s(186916)/i(205536),	-- Obsidian Gladiator's Leather Wristguards
+s(186917)/i(205537),	-- Obsidian Gladiator's Leather Vest
+s(186918)/i(205537),	-- Obsidian Gladiator's Leather Vest
+s(186919)/i(205538),	-- Obsidian Gladiator's Leather Jerkin
+s(186920)/i(205538),	-- Obsidian Gladiator's Leather Jerkin
+s(186921)/i(205539),	-- Obsidian Gladiator's Leather Boots
+s(186922)/i(205539),	-- Obsidian Gladiator's Leather Boots
+s(186923)/i(205540),	-- Obsidian Gladiator's Leather Treads
+s(186924)/i(205540),	-- Obsidian Gladiator's Leather Treads
+s(186925)/i(205541),	-- Obsidian Gladiator's Leather Gloves
+s(186926)/i(205541),	-- Obsidian Gladiator's Leather Gloves
+s(186927)/i(205542),	-- Obsidian Gladiator's Leather Grips
+s(186928)/i(205542),	-- Obsidian Gladiator's Leather Grips
+s(186929)/i(205543),	-- Obsidian Gladiator's Leather Helm
+s(186930)/i(205543),	-- Obsidian Gladiator's Leather Helm
+s(186931)/i(205544),	-- Obsidian Gladiator's Leather Mask
+s(186932)/i(205544),	-- Obsidian Gladiator's Leather Mask
+s(186933)/i(205545),	-- Obsidian Gladiator's Leather Breeches
+s(186934)/i(205545),	-- Obsidian Gladiator's Leather Breeches
+s(186935)/i(205546),	-- Obsidian Gladiator's Leather Legwraps
+s(186936)/i(205546),	-- Obsidian Gladiator's Leather Legwraps
+s(186937)/i(205547),	-- Obsidian Gladiator's Leather Spaulders
+s(186938)/i(205547),	-- Obsidian Gladiator's Leather Spaulders
+s(186939)/i(205548),	-- Obsidian Gladiator's Leather Shoulderpads
+s(186940)/i(205548),	-- Obsidian Gladiator's Leather Shoulderpads
+s(186941)/i(205549),	-- Obsidian Gladiator's Leather Belt
+s(186942)/i(205549),	-- Obsidian Gladiator's Leather Belt
+s(186943)/i(205550),	-- Obsidian Gladiator's Leather Strap
+s(186944)/i(205550),	-- Obsidian Gladiator's Leather Strap
+s(186945)/i(205551),	-- Obsidian Gladiator's Leather Wristwraps
+s(186946)/i(205551),	-- Obsidian Gladiator's Leather Wristwraps
+s(186947)/i(205552),	-- Obsidian Gladiator's Leather Wristguards
+s(186948)/i(205552),	-- Obsidian Gladiator's Leather Wristguards
+s(186949)/i(205553),	-- Obsidian Gladiator's Leather Vest
+s(186950)/i(205553),	-- Obsidian Gladiator's Leather Vest
+s(186951)/i(205554),	-- Obsidian Gladiator's Leather Jerkin
+s(186952)/i(205554),	-- Obsidian Gladiator's Leather Jerkin
+s(186953)/i(205555),	-- Obsidian Gladiator's Leather Boots
+s(186954)/i(205555),	-- Obsidian Gladiator's Leather Boots
+s(186955)/i(205556),	-- Obsidian Gladiator's Leather Treads
+s(186956)/i(205556),	-- Obsidian Gladiator's Leather Treads
+s(186957)/i(205557),	-- Obsidian Gladiator's Leather Gloves
+s(186958)/i(205557),	-- Obsidian Gladiator's Leather Gloves
+s(186959)/i(205558),	-- Obsidian Gladiator's Leather Grips
+s(186960)/i(205558),	-- Obsidian Gladiator's Leather Grips
+s(186961)/i(205559),	-- Obsidian Gladiator's Leather Helm
+s(186962)/i(205559),	-- Obsidian Gladiator's Leather Helm
+s(186963)/i(205560),	-- Obsidian Gladiator's Leather Mask
+s(186964)/i(205560),	-- Obsidian Gladiator's Leather Mask
+s(186965)/i(205561),	-- Obsidian Gladiator's Leather Breeches
+s(186966)/i(205561),	-- Obsidian Gladiator's Leather Breeches
+s(186967)/i(205562),	-- Obsidian Gladiator's Leather Legwraps
+s(186968)/i(205562),	-- Obsidian Gladiator's Leather Legwraps
+s(186969)/i(205563),	-- Obsidian Gladiator's Leather Spaulders
+s(186970)/i(205563),	-- Obsidian Gladiator's Leather Spaulders
+s(186971)/i(205564),	-- Obsidian Gladiator's Leather Shoulderpads
+s(186972)/i(205564),	-- Obsidian Gladiator's Leather Shoulderpads
+s(186973)/i(205565),	-- Obsidian Gladiator's Leather Belt
+s(186974)/i(205565),	-- Obsidian Gladiator's Leather Belt
+s(186975)/i(205566),	-- Obsidian Gladiator's Leather Strap
+s(186976)/i(205566),	-- Obsidian Gladiator's Leather Strap
+s(186977)/i(205567),	-- Obsidian Gladiator's Leather Wristwraps
+s(186978)/i(205567),	-- Obsidian Gladiator's Leather Wristwraps
+s(186979)/i(205568),	-- Obsidian Gladiator's Leather Wristguards
+s(186980)/i(205568),	-- Obsidian Gladiator's Leather Wristguards
+s(186981)/i(205569),	-- Obsidian Gladiator's Leather Vest
+s(186982)/i(205569),	-- Obsidian Gladiator's Leather Vest
+s(186983)/i(205570),	-- Obsidian Gladiator's Leather Jerkin
+s(186984)/i(205570),	-- Obsidian Gladiator's Leather Jerkin
+s(186985)/i(205571),	-- Obsidian Gladiator's Leather Boots
+s(186986)/i(205571),	-- Obsidian Gladiator's Leather Boots
+s(186987)/i(205572),	-- Obsidian Gladiator's Leather Treads
+s(186988)/i(205572),	-- Obsidian Gladiator's Leather Treads
+s(186989)/i(205573),	-- Obsidian Gladiator's Leather Gloves
+s(186990)/i(205573),	-- Obsidian Gladiator's Leather Gloves
+s(186991)/i(205574),	-- Obsidian Gladiator's Leather Grips
+s(186992)/i(205574),	-- Obsidian Gladiator's Leather Grips
+s(186993)/i(205575),	-- Obsidian Gladiator's Leather Helm
+s(186994)/i(205575),	-- Obsidian Gladiator's Leather Helm
+s(186995)/i(205576),	-- Obsidian Gladiator's Leather Mask
+s(186996)/i(205576),	-- Obsidian Gladiator's Leather Mask
+s(186997)/i(205577),	-- Obsidian Gladiator's Leather Breeches
+s(186998)/i(205577),	-- Obsidian Gladiator's Leather Breeches
+s(186999)/i(205578),	-- Obsidian Gladiator's Leather Legwraps
+s(187000)/i(205578),	-- Obsidian Gladiator's Leather Legwraps
+s(187001)/i(205579),	-- Obsidian Gladiator's Leather Spaulders
+s(187002)/i(205579),	-- Obsidian Gladiator's Leather Spaulders
+s(187003)/i(205580),	-- Obsidian Gladiator's Leather Shoulderpads
+s(187004)/i(205580),	-- Obsidian Gladiator's Leather Shoulderpads
+s(187005)/i(205581),	-- Obsidian Gladiator's Leather Belt
+s(187006)/i(205581),	-- Obsidian Gladiator's Leather Belt
+s(187007)/i(205582),	-- Obsidian Gladiator's Leather Strap
+s(187008)/i(205582),	-- Obsidian Gladiator's Leather Strap
+s(187009)/i(205583),	-- Obsidian Gladiator's Leather Wristwraps
+s(187010)/i(205583),	-- Obsidian Gladiator's Leather Wristwraps
+s(187011)/i(205584),	-- Obsidian Gladiator's Leather Wristguards
+s(187012)/i(205584),	-- Obsidian Gladiator's Leather Wristguards
+s(187013)/i(205585),	-- Obsidian Gladiator's Chain Vest
+s(187014)/i(205585),	-- Obsidian Gladiator's Chain Vest
+s(187015)/i(205586),	-- Obsidian Gladiator's Chain Tunic
+s(187016)/i(205586),	-- Obsidian Gladiator's Chain Tunic
+s(187017)/i(205587),	-- Obsidian Gladiator's Chain Sabatons
+s(187018)/i(205587),	-- Obsidian Gladiator's Chain Sabatons
+s(187019)/i(205588),	-- Obsidian Gladiator's Chain Boots
+s(187020)/i(205588),	-- Obsidian Gladiator's Chain Boots
+s(187021)/i(205589),	-- Obsidian Gladiator's Chain Gauntlets
+s(187022)/i(205589),	-- Obsidian Gladiator's Chain Gauntlets
+s(187023)/i(205590),	-- Obsidian Gladiator's Chain Handguards
+s(187024)/i(205590),	-- Obsidian Gladiator's Chain Handguards
+s(187025)/i(205591),	-- Obsidian Gladiator's Chain Helm
+s(187026)/i(205591),	-- Obsidian Gladiator's Chain Helm
+s(187027)/i(205592),	-- Obsidian Gladiator's Chain Faceguard
+s(187028)/i(205592),	-- Obsidian Gladiator's Chain Faceguard
+s(187029)/i(205593),	-- Obsidian Gladiator's Chain Leggings
+s(187030)/i(205593),	-- Obsidian Gladiator's Chain Leggings
+s(187031)/i(205594),	-- Obsidian Gladiator's Chain Breeches
+s(187032)/i(205594),	-- Obsidian Gladiator's Chain Breeches
+s(187033)/i(205595),	-- Obsidian Gladiator's Chain Monnion
+s(187034)/i(205595),	-- Obsidian Gladiator's Chain Monnion
+s(187035)/i(205596),	-- Obsidian Gladiator's Chain Shoulderguard
+s(187036)/i(205596),	-- Obsidian Gladiator's Chain Shoulderguard
+s(187037)/i(205597),	-- Obsidian Gladiator's Chain Belt
+s(187038)/i(205597),	-- Obsidian Gladiator's Chain Belt
+s(187039)/i(205598),	-- Obsidian Gladiator's Chain Girdle
+s(187040)/i(205598),	-- Obsidian Gladiator's Chain Girdle
+s(187041)/i(205599),	-- Obsidian Gladiator's Chain Wristguards
+s(187042)/i(205599),	-- Obsidian Gladiator's Chain Wristguards
+s(187043)/i(205600),	-- Obsidian Gladiator's Chain Bracers
+s(187044)/i(205600),	-- Obsidian Gladiator's Chain Bracers
+s(187045)/i(205601),	-- Obsidian Gladiator's Chain Vestments
+s(187046)/i(205601),	-- Obsidian Gladiator's Chain Vestments
+s(187047)/i(205602),	-- Obsidian Gladiator's Chain Robe
+s(187048)/i(205602),	-- Obsidian Gladiator's Chain Robe
+s(187049)/i(205603),	-- Obsidian Gladiator's Chain Sabatons
+s(187050)/i(205603),	-- Obsidian Gladiator's Chain Sabatons
+s(187051)/i(205604),	-- Obsidian Gladiator's Chain Boots
+s(187052)/i(205604),	-- Obsidian Gladiator's Chain Boots
+s(187053)/i(205605),	-- Obsidian Gladiator's Chain Gauntlets
+s(187054)/i(205605),	-- Obsidian Gladiator's Chain Gauntlets
+s(187055)/i(205606),	-- Obsidian Gladiator's Chain Handguards
+s(187056)/i(205606),	-- Obsidian Gladiator's Chain Handguards
+s(187057)/i(205607),	-- Obsidian Gladiator's Chain Helm
+s(187058)/i(205607),	-- Obsidian Gladiator's Chain Helm
+s(187059)/i(205608),	-- Obsidian Gladiator's Chain Faceguard
+s(187060)/i(205608),	-- Obsidian Gladiator's Chain Faceguard
+s(187061)/i(205609),	-- Obsidian Gladiator's Chain Leggings
+s(187062)/i(205609),	-- Obsidian Gladiator's Chain Leggings
+s(187063)/i(205610),	-- Obsidian Gladiator's Chain Breeches
+s(187064)/i(205610),	-- Obsidian Gladiator's Chain Breeches
+s(187065)/i(205611),	-- Obsidian Gladiator's Chain Monnion
+s(187066)/i(205611),	-- Obsidian Gladiator's Chain Monnion
+s(187067)/i(205612),	-- Obsidian Gladiator's Chain Shoulderguard
+s(187068)/i(205612),	-- Obsidian Gladiator's Chain Shoulderguard
+s(187069)/i(205613),	-- Obsidian Gladiator's Chain Belt
+s(187070)/i(205613),	-- Obsidian Gladiator's Chain Belt
+s(187071)/i(205614),	-- Obsidian Gladiator's Chain Girdle
+s(187072)/i(205614),	-- Obsidian Gladiator's Chain Girdle
+s(187073)/i(205615),	-- Obsidian Gladiator's Chain Wristguards
+s(187074)/i(205615),	-- Obsidian Gladiator's Chain Wristguards
+s(187075)/i(205616),	-- Obsidian Gladiator's Plate Chestguard
+s(187076)/i(205616),	-- Obsidian Gladiator's Plate Chestguard
+s(187077)/i(205617),	-- Obsidian Gladiator's Plate Chestplate
+s(187078)/i(205617),	-- Obsidian Gladiator's Plate Chestplate
+s(187079)/i(205618),	-- Obsidian Gladiator's Plate Warboots
+s(187080)/i(205618),	-- Obsidian Gladiator's Plate Warboots
+s(187081)/i(205619),	-- Obsidian Gladiator's Plate Stompers
+s(187082)/i(205619),	-- Obsidian Gladiator's Plate Stompers
+s(187083)/i(205620),	-- Obsidian Gladiator's Plate Gauntlets
+s(187084)/i(205620),	-- Obsidian Gladiator's Plate Gauntlets
+s(187085)/i(205621),	-- Obsidian Gladiator's Plate Handguards
+s(187086)/i(205621),	-- Obsidian Gladiator's Plate Handguards
+s(187087)/i(205622),	-- Obsidian Gladiator's Plate Helm
+s(187088)/i(205622),	-- Obsidian Gladiator's Plate Helm
+s(187089)/i(205623),	-- Obsidian Gladiator's Plate Helmet
+s(187090)/i(205623),	-- Obsidian Gladiator's Plate Helmet
+s(187091)/i(205624),	-- Obsidian Gladiator's Plate Legguards
+s(187092)/i(205624),	-- Obsidian Gladiator's Plate Legguards
+s(187093)/i(205625),	-- Obsidian Gladiator's Plate Wargreaves
+s(187094)/i(205625),	-- Obsidian Gladiator's Plate Wargreaves
+s(187095)/i(205626),	-- Obsidian Gladiator's Plate Shoulders
+s(187096)/i(205626),	-- Obsidian Gladiator's Plate Shoulders
+s(187097)/i(205627),	-- Obsidian Gladiator's Plate Pauldrons
+s(187098)/i(205627),	-- Obsidian Gladiator's Plate Pauldrons
+s(187099)/i(205628),	-- Obsidian Gladiator's Plate Girdle
+s(187100)/i(205628),	-- Obsidian Gladiator's Plate Girdle
+s(187101)/i(205629),	-- Obsidian Gladiator's Plate Greatbelt
+s(187102)/i(205629),	-- Obsidian Gladiator's Plate Greatbelt
+s(187103)/i(205630),	-- Obsidian Gladiator's Plate Wristguards
+s(187104)/i(205630),	-- Obsidian Gladiator's Plate Wristguards
+s(187105)/i(205631),	-- Obsidian Gladiator's Plate Vambraces
+s(187106)/i(205631),	-- Obsidian Gladiator's Plate Vambraces
+s(187107)/i(205632),	-- Obsidian Gladiator's Plate Chestguard
+s(187108)/i(205632),	-- Obsidian Gladiator's Plate Chestguard
+s(187109)/i(205633),	-- Obsidian Gladiator's Plate Chestplate
+s(187110)/i(205633),	-- Obsidian Gladiator's Plate Chestplate
+s(187111)/i(205634),	-- Obsidian Gladiator's Plate Warboots
+s(187112)/i(205634),	-- Obsidian Gladiator's Plate Warboots
+s(187113)/i(205635),	-- Obsidian Gladiator's Plate Stompers
+s(187114)/i(205635),	-- Obsidian Gladiator's Plate Stompers
+s(187115)/i(205636),	-- Obsidian Gladiator's Plate Gauntlets
+s(187116)/i(205636),	-- Obsidian Gladiator's Plate Gauntlets
+s(187117)/i(205637),	-- Obsidian Gladiator's Plate Handguards
+s(187118)/i(205637),	-- Obsidian Gladiator's Plate Handguards
+s(187119)/i(205638),	-- Obsidian Gladiator's Plate Helm
+s(187120)/i(205638),	-- Obsidian Gladiator's Plate Helm
+s(187121)/i(205639),	-- Obsidian Gladiator's Plate Helmet
+s(187122)/i(205639),	-- Obsidian Gladiator's Plate Helmet
+s(187123)/i(205640),	-- Obsidian Gladiator's Plate Legguards
+s(187124)/i(205640),	-- Obsidian Gladiator's Plate Legguards
+s(187125)/i(205641),	-- Obsidian Gladiator's Plate Wargreaves
+s(187126)/i(205641),	-- Obsidian Gladiator's Plate Wargreaves
+s(187127)/i(205642),	-- Obsidian Gladiator's Plate Shoulders
+s(187128)/i(205642),	-- Obsidian Gladiator's Plate Shoulders
+s(187129)/i(205643),	-- Obsidian Gladiator's Plate Pauldrons
+s(187130)/i(205643),	-- Obsidian Gladiator's Plate Pauldrons
+s(187131)/i(205644),	-- Obsidian Gladiator's Plate Girdle
+s(187132)/i(205644),	-- Obsidian Gladiator's Plate Girdle
+s(187133)/i(205645),	-- Obsidian Gladiator's Plate Greatbelt
+s(187134)/i(205645),	-- Obsidian Gladiator's Plate Greatbelt
+s(187135)/i(205646),	-- Obsidian Gladiator's Plate Wristguards
+s(187136)/i(205646),	-- Obsidian Gladiator's Plate Wristguards
+s(187137)/i(205647),	-- Obsidian Gladiator's Plate Vambraces
+s(187138)/i(205647),	-- Obsidian Gladiator's Plate Vambraces
+s(187139)/i(205648),	-- Obsidian Gladiator's Chain Bracers
+s(187140)/i(205648),	-- Obsidian Gladiator's Chain Bracers
+s(187141)/i(205649),	-- Obsidian Gladiator's Cloak
+s(187142)/i(205649),	-- Obsidian Gladiator's Cloak
+s(187143)/i(205650),	-- Obsidian Gladiator's Drape
+s(187144)/i(205650),	-- Obsidian Gladiator's Drape
+s(187145)/i(205651),	-- Obsidian Gladiator's Shawl
+s(187146)/i(205651),	-- Obsidian Gladiator's Shawl
+s(187147)/i(205652),	-- Obsidian Gladiator's Cloak
+s(187148)/i(205652),	-- Obsidian Gladiator's Cloak
+s(187149)/i(205653),	-- Obsidian Gladiator's Drape
+s(187150)/i(205653),	-- Obsidian Gladiator's Drape
+s(187151)/i(205654),	-- Obsidian Gladiator's Shawl
+s(187152)/i(205654),	-- Obsidian Gladiator's Shawl
+s(187153)/i(205655),	-- Obsidian Gladiator's Cloak
+s(187154)/i(205655),	-- Obsidian Gladiator's Cloak
+s(187155)/i(205656),	-- Obsidian Gladiator's Drape
+s(187156)/i(205656),	-- Obsidian Gladiator's Drape
+s(187157)/i(205657),	-- Obsidian Gladiator's Shawl
+s(187158)/i(205657),	-- Obsidian Gladiator's Shawl
+s(187159)/i(205658),	-- Obsidian Gladiator's Cloak
+s(187160)/i(205658),	-- Obsidian Gladiator's Cloak
+s(187161)/i(205659),	-- Obsidian Gladiator's Drape
+s(187162)/i(205659),	-- Obsidian Gladiator's Drape
+s(187163)/i(205660),	-- Obsidian Gladiator's Shawl
+s(187164)/i(205660),	-- Obsidian Gladiator's Shawl
+s(187165)/i(205661),	-- Obsidian Gladiator's Cloak
+s(187166)/i(205661),	-- Obsidian Gladiator's Cloak
+s(187167)/i(205662),	-- Obsidian Gladiator's Drape
+s(187168)/i(205662),	-- Obsidian Gladiator's Drape
+s(187169)/i(205663),	-- Obsidian Gladiator's Shawl
+s(187170)/i(205663),	-- Obsidian Gladiator's Shawl
+s(187171)/i(205664),	-- Obsidian Gladiator's Cloak
+s(187172)/i(205664),	-- Obsidian Gladiator's Cloak
+s(187173)/i(205665),	-- Obsidian Gladiator's Drape
+s(187174)/i(205665),	-- Obsidian Gladiator's Drape
+s(187175)/i(205666),	-- Obsidian Gladiator's Shawl
+s(187176)/i(205666),	-- Obsidian Gladiator's Shawl
+s(187177)/i(205667),	-- Obsidian Gladiator's Cloak
+s(187178)/i(205667),	-- Obsidian Gladiator's Cloak
+s(187179)/i(205668),	-- Obsidian Gladiator's Drape
+s(187180)/i(205668),	-- Obsidian Gladiator's Drape
+s(187181)/i(205669),	-- Obsidian Gladiator's Shawl
+s(187182)/i(205669),	-- Obsidian Gladiator's Shawl
+s(187183)/i(205670),	-- Obsidian Gladiator's Cloak
+s(187184)/i(205670),	-- Obsidian Gladiator's Cloak
+s(187185)/i(205671),	-- Obsidian Gladiator's Drape
+s(187186)/i(205671),	-- Obsidian Gladiator's Drape
+s(187187)/i(205672),	-- Obsidian Gladiator's Shawl
+s(187188)/i(205672),	-- Obsidian Gladiator's Shawl
+s(187189)/i(205673),	-- Obsidian Gladiator's Cloak
+s(187190)/i(205673),	-- Obsidian Gladiator's Cloak
+s(187191)/i(205674),	-- Obsidian Gladiator's Drape
+s(187192)/i(205674),	-- Obsidian Gladiator's Drape
+s(187193)/i(205675),	-- Obsidian Gladiator's Shawl
+s(187194)/i(205675),	-- Obsidian Gladiator's Shawl
+s(187195)/i(205676),	-- Obsidian Gladiator's Cloak
+s(187196)/i(205676),	-- Obsidian Gladiator's Cloak
+s(187197)/i(205677),	-- Obsidian Gladiator's Drape
+s(187198)/i(205677),	-- Obsidian Gladiator's Drape
+s(187199)/i(205678),	-- Obsidian Gladiator's Shawl
+s(187200)/i(205678),	-- Obsidian Gladiator's Shawl
+s(187201)/i(205679),	-- Obsidian Gladiator's Cloak
+s(187202)/i(205679),	-- Obsidian Gladiator's Cloak
+s(187203)/i(205680),	-- Obsidian Gladiator's Drape
+s(187204)/i(205680),	-- Obsidian Gladiator's Drape
+s(187205)/i(205681),	-- Obsidian Gladiator's Shawl
+s(187206)/i(205681),	-- Obsidian Gladiator's Shawl

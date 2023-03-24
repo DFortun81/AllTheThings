@@ -479,6 +479,13 @@ ID,Name_lang,Name1_lang,Mask_ID,Flags
 751,Reverse Racer %s,Reverse Racer %s,490,0
 752,Legend %s,Legend %s,491,0
 753,Skyscourge %s,Skyscourge %s,492,0
+760,Lionguard %s,Lionguard %s,493,0
 761,%s the Key Master,%s the Key Master,494,0
 762,%s the Forbidden,%s the Forbidden,495,0
 765,%s the Reconciler,%s the Reconciler,498,0
+766,Obsidian Gladiator %s,Obsidian Gladiator %s,499,0
+767,Obsidian Legend %s,Obsidian Legend %s,500,0
+768,Smelly %s,Smelly %s,501,0
+769,"%s, Barter Boss","%s, Barter Boss",502,0
+770,%s the <PH Season 2 Title>,%s the <PH Season 2 Title>,503,0
+771,%s the <PH Season 2 Hero Title>,%s the <PH Season 2 Hero Title>,504,0

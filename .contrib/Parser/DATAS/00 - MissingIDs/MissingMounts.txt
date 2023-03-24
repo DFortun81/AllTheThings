@@ -104,7 +104,13 @@ mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Ea
 mount(408313),	-- Big Slick in the City
 10.1.0.48537
 mount(406637),	-- Inferno Armoredon
-mount(408647),	-- Api Biru Sporebat
+mount(408647),	-- Cobalt Shalewing \\ Api Biru Sporebat
+10.1.0.48661
+mount(408653),	-- Boulder Hauler
+mount(408655),	-- Morsel Sniffer
+mount(408977),	-- Obsidian Gladiator's Slitherdrake
+mount(409032),	-- Vicious War Snail
+mount(409034),	-- Vicious War Snail
 
 
 
@@ -219,4 +225,10 @@ mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Ea
 mount(408313),	-- Big Slick in the City
 10.1.0.48537
 mount(406637),	-- Inferno Armoredon
-mount(408647),	-- Api Biru Sporebat
+mount(408647),	-- Cobalt Shalewing \\ Api Biru Sporebat
+10.1.0.48661
+mount(408653),	-- Boulder Hauler
+mount(408655),	-- Morsel Sniffer
+mount(408977),	-- Obsidian Gladiator's Slitherdrake
+mount(409032),	-- Vicious War Snail
+mount(409034),	-- Vicious War Snail
