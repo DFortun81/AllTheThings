@@ -2222,7 +2222,7 @@ ExtraThingsLabel.OnRefresh = function(self)
     local numEvents = C_Calendar.GetNumDayEvents(0, date.monthDay);
     for i=1, numEvents do
         local event = C_Calendar.GetHolidayInfo(0, date.monthDay, i);
-        if event.texture == 235461 or event.texture == 235462 then -- Non-localised way to detect specific holiday, I hope?
+        if event and (event.texture == 235461 or event.texture == 235462) then -- Non-localised way to detect specific holiday, I hope?
             self:SetText(L["STRANGER_THINGS_LABEL"]);
         end
     end
