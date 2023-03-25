@@ -491,8 +491,8 @@ _.Instances = { tier(CATA_TIER, {
 									["groups"] = {
 										i(19875),	-- bloodstained coif
 										i(19919),	-- bloodstained greaves
-										i(19869),	-- bloodstained grips
 										i(19887),	-- bloodstained legplates
+										i(19904),	-- Runed Bloodstained Hauberk
 									},
 								}),
 								i(203986, {	-- Ensemble bloodsoaked plate
