@@ -2352,6 +2352,10 @@ namespace ATT
                 Objects.AllContainers.Remove("Uncollectible");
             }
 
+            // Clean out any temporary containers
+            string[] temporaryKeys = Objects.AllContainers.Keys.Where(k => k.StartsWith("_")).ToArray();
+            temporaryKeys.All(k => Objects.AllContainers.Remove(k));
+
             // Merge conditional data
             ProcessingMergeData = true;
             foreach (var data in ConditionalItemData)

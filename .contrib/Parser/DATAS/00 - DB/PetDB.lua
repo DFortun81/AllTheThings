@@ -1,6 +1,6 @@
 
 local ItemDB = root(ROOTS.ItemDBConditional);
-local petDB = root("petDB");
+local petDB = root("_petDB");
 local i = function(itemID, speciesID, altSpeciesID)
 	local item = { ["speciesID"] = speciesID, ["ignoreBonus"] = true };
 	if altSpeciesID then item.altSpeciesID = altSpeciesID; end
