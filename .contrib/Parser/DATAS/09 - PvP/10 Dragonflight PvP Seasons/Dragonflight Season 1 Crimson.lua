@@ -44,7 +44,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, {
 					["races"] = HORDE_ONLY,
 				}),
 				-- Solo
-				ach(17339),		-- Legend: Dragonflight Season 1
+				ach(17339),		-- Crimson Legend: Dragonflight Season 1
 				ach(16734, {	-- Crimson Soloist: Dragonflight Season 1
 					title(482),	-- Crimson Soloist <Name>
 				}),
