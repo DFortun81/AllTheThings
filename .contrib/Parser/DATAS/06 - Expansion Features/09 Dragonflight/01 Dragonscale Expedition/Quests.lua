@@ -696,7 +696,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["isRepeatable"] = true,
 				["g"] = {
+					-- #if BEFORE 10.0.7
 					i(199472),	-- Overflowing Dragon Expedition Supply Pack
+					-- #else
+					i(204378),	-- Brimming Dragonscale Expedition Supply Pack
+					-- #endif
 				},
 			}),
 

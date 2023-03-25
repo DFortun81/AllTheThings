@@ -2637,10 +2637,6 @@ root(ROOTS.Unsorted, {
 				i(204330),	-- Inert Primordial Fragments
 				i(114942),	-- Cracked Draenic Mortar
 				i(204343),	-- Trusty Dragonkin Rake
-				i(204378),	-- Brimming Dragonscale Expedition Supply Pack
-				i(204379),	-- Brimming Iskaaran Supply Pack
-				i(204380),	-- Brimming Maruuk Centaur Supply Satchel
-				i(204381),	-- Brimming Valdrakken Accord Supply Pack
 				i(204439),	-- Research Chest Key
 				i(204442),	-- Clump of Tar
 				i(204443),	-- Blacksteel Hammer

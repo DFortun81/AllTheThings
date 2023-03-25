@@ -887,7 +887,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
 				["repeatable"] = true,
 				["g"] = {
+					-- #if BEFORE 10.0.7
 					i(199475),	-- Overflowing Valdrakken Accord Supply Pack
+					-- #else
+					i(204381),	-- Brimming Valdrakken Accord Supply Pack
+					-- #endif
 				},
 			}),
 		}),

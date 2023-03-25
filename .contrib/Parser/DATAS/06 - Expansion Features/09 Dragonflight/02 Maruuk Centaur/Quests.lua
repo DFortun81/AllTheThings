@@ -466,9 +466,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["isRepeatable"] = true,
 				["g"] = {
+					-- #if BEFORE 10.0.7
 					i(199474, {	-- Overflowing Maruuk Centaur Supply Satchel
 						i(191850),	-- Broken Serevite Blade Tip
 					}),
+					-- #else
+					i(204380),	-- Brimming Maruuk Centaur Supply Satchel
+					-- #endif
 				},
 			}),
 		}),

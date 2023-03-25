@@ -703,9 +703,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 				["isRepeatable"] = true,
 				["g"] = {
+					-- #if BEFORE 10.0.7
 					i(199473, {	-- Overflowing Iskaaran Supply Pack
 						i(191850),	-- Broken Serevite Blade Tip
 					}),
+					-- #else
+					i(204379),	-- Brimming Iskaaran Supply Pack
+					-- #endif
 				},
 			}),
 		}),
