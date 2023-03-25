@@ -3,7 +3,9 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
-		n(RARES, {
+		n(RARES, sharedData({
+			["isDaily"] = true,
+		},{
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					200740,	-- Agni Blazehoof
@@ -37,6 +39,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					200960,	-- Warden Entrix
 					201013,	-- Wyrmslayer Angvardi
 				},
+				["isDaily"] = 0,
 				["g"] = {
 					i(192772),	-- Ancient Salamanther (MOUNT!)
 				},
@@ -255,6 +258,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				-- ["g"] = {
 				-- },
 			}),
-		}),
+		})),
 	}),
 })));

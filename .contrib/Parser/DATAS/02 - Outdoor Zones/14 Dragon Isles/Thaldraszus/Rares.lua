@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193243, {	-- Acrosoth
 				["coord"] = { 40.5, 78.3, THALDRASZUS },
 				["questID"] = 72834,
-				["isDaily"] = false,
+				["isDaily"] = 0,
 			}),
 			n(193664, {	-- Ancient Protector
 				["coord"] = { 59.5, 59.2, THALDRASZUS },
@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193229, {	-- Henlare
 				["coord"] = { 55.6, 77.4, THALDRASZUS },
 				["questID"] = 72814,
-				["isDaily"] = false,
+				["isDaily"] = 0,
 			}),
 			n(193126, {	-- Innumerable Ruination
 				["description"] = "Patrols in a circle around the coordinates.",
@@ -57,12 +57,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193273, {	-- Liskron the Dazzling
 				["coord"] = { 36.7, 72.8, THALDRASZUS },
 				["questID"] = 72842,
-				["isDaily"] = false,
+				["isDaily"] = 0,
 			}),
 			n(193668, {	-- Lookout Mordren
 				["coord"] = { 36.8, 85.6, THALDRASZUS },
 				["questID"] = 72813,
-				["isDaily"] = false,
+				["isDaily"] = 0,
 				["g"] = {
 					i(200182),	-- Riveted Drape
 				},

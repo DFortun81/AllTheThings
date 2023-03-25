@@ -624,7 +624,7 @@ namespace ATT
             {
                 if (data.TryGetValue("npcID", out object dupeNpcID))
                 {
-                    LogError($"Both CreatureID {creatureID} and NPCID {dupeNpcID}?{Environment.NewLine}-- {ToJSON(data)}");
+                    LogError($"Both CreatureID {creatureID} and NPCID {dupeNpcID}? --", data);
                 }
                 data["npcID"] = creatureID;
                 NPCS_WITH_REFERENCES[creatureID] = true;

@@ -1712,6 +1712,11 @@ end
                     case "sort":
                     case "sourceIgnored":
                         {
+                            if (value is long v && v == 0)
+                            {
+                                LogDebug($"INFO: 0-value bool '{field}' ignored merging into", item);
+                                break;
+                            }
                             item[field] = Convert.ToBoolean(value);
                             break;
                         }

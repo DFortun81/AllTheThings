@@ -536,7 +536,7 @@ namespace ATT
                         // any 0 value should simply be removed for cleanliness
                         if (longval == 0)
                         {
-                            LogDebug($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
+                            LogDebug($"Removing 0-value {field} from", item);
                             item.Remove(field);
                         }
                         else
@@ -555,7 +555,7 @@ namespace ATT
                         // any 0 value should simply be removed for cleanliness
                         if (longval == 0)
                         {
-                            LogDebug($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
+                            LogDebug($"Removing 0-value {field} from", item);
                             item.Remove(field);
                         }
                         else
@@ -563,7 +563,7 @@ namespace ATT
                             // setting a spellID on an Item with a recipeID should do nothing
                             if (field == "spellID" && item.TryGetValue("recipeID", out long recipeID) && recipeID > 0)
                             {
-                                LogDebug($"WARN: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' : {MiniJSON.Json.Serialize(item)}");
+                                LogDebug($"WARN: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' :", item);
                                 break;
                             }
 
@@ -583,7 +583,7 @@ namespace ATT
                         // any 0 value should simply be removed for cleanliness
                         if (longval == 0)
                         {
-                            LogDebug($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
+                            LogDebug($"Removing 0-value {field} from", item);
                             item.Remove(field);
                         }
                         else
@@ -595,7 +595,7 @@ namespace ATT
                         if (!ProcessingMergeData) break;
 
                         Objects.MergeStringArrayData(item, field, value);
-                        LogDebug($"Merge {item["itemID"]}: {field} <== {MiniJSON.Json.Serialize(value)}");
+                        LogDebug($"Merge {item["itemID"]}: {field} <==", value);
                         break;
 
                     // Integer-Array Data Type Fields (stored as List<object> for usability reasons)
@@ -761,7 +761,7 @@ namespace ATT
                     }
                     else if (data["itemID"].TryConvert(out long itemID) && itemID > 0)
                     {
-                        LogDebug($"INFO: Conditional Item data not merged: {itemID} = [{MiniJSON.Json.Serialize(data)}]");
+                        LogDebug($"INFO: Conditional Item data not merged: {itemID} = ", data);
                     }
                 }
             }
@@ -833,7 +833,7 @@ namespace ATT
                         if (!data.ContainsKey(field))
                         {
                             data[field] = value;
-                            LogDebug($"MergeInto {data["itemID"]}: {field} <== {MiniJSON.Json.Serialize(value)}");
+                            LogDebug($"MergeInto {data["itemID"]}: {field} <==", value);
                         }
                         break;
                     case "races":

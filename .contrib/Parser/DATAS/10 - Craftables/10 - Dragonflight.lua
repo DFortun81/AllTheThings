@@ -2856,6 +2856,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74551, {["timeline"] = { ADDED_DF_0_5 }}),	-- Skinning Bloodbeak the Ravenous
 			q(74555, {["timeline"] = { ADDED_DF_0_5 }}),	-- Skinning Shardwing
 			q(74559, {["timeline"] = { ADDED_DF_0_5 }}),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)
+			q(75884, {["timeline"] = { ADDED_DF_0_5 }}),	-- Skinning Gahz'raxes
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--

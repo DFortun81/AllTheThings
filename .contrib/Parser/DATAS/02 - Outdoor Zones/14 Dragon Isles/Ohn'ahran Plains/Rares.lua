@@ -140,7 +140,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193669, {	-- Prozela Galeshot
 				["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
 				["questID"] = 72815,
-				["isDaily"] = false,
+				["isDaily"] = 0,
 			}),
 			n(192557, {	-- Quackers the Terrible
 				["description"] = "Requires Duck Trap Kit, purchased from a nearby camp (northern waypoint).\n\nYou'll need a rank 1 of these reagents:\n\n1 x Primal Molten Alloy\n\n3 x Resilient Leather\n\n4 x Spool of Wilderthread\n\nUse the item to trap a duck and then go to southern waypoint & put the trapped duck into the nest.",
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193153, {	-- Ripsaw the Stalker
 				["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
 				["questID"] = 72845,
-				["isDaily"] = false,
+				["isDaily"] = 0,
 			}),
 			n(195223, {	-- Rustlily <Nimblewing Matriarch>
 				["description"] = "Only spawns if the Aylaag Camp is stationed west.",
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(192949, {	-- Skaara
 				["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
 				["questID"] = 72847,
-				["isDaily"] = false,
+				["isDaily"] = 0,
 			}),
 			n(193165, {	-- Sparkspitter Vrak
 				["coord"] = { 22.1, 38.8, OHNAHRAN_PLAINS },
@@ -231,12 +231,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193133, {	-- Sunscale Behemoth
 				["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
 				["questID"] = 72849,
-				["isDaily"] = false,
+				["isDaily"] = 0,
 			}),
 			n(193163, {	-- Territorial Coastling
 				["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
 				["questID"] = 72851,
-				["isDaily"] = false,
+				["isDaily"] = 0,
 			}),
 			n(196334, {	-- The Great Enla <Scourge of the Plains>
 				["description"] = "Spawns during the Aylaag Caravan escort from Eaglewatch Outpost to Aylaag Outpost.",
@@ -253,7 +253,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(191354, {	-- Ty'foon the Ascended
 				["coord"] = { 26.1, 34.2, OHNAHRAN_PLAINS },
 				["questID"] = 72852,
-				["isDaily"] = false,
+				["isDaily"] = 0,
 			}),
 			n(192453, {	-- Vaniik the Stormtouched <Corrupted Child of Ohn'ahra>
 				["description"] = "Only spawns if the Aylaag Camp is stationed at the south east.",
