@@ -103,6 +103,15 @@ _.Zones =
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
+				q(72129, {	-- Aiding Khadgar
+					["classes"] = { EVOKER },
+					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
+				}),
+				q(72134, {	-- An Adventurer's Aid
+					["classes"] = { EVOKER },
+					["provider"] = { "n", 90417 },	-- Archmage Khadgar
+					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
+				}),
 				q(38035, {	-- A Royal Summons
 					["provider"] = { "n", 96644 },	-- Sky Admiral Rogers
 					["coord"] = { 29.2, 47.2, LEGION_DALARAN },
