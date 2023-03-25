@@ -18440,20 +18440,6 @@ function app:GetDataCache()
 		--app.ToggleCacheMaps();
 	end
 
-	-- petDB
-	if app.Categories.petDB then
-		db = {};
-		db.expanded = false;
-		db.g = app.Categories.petDB;
-		db.name = "petDB";
-		db.text = db.name;
-		db.description = "Test?";
-		--tinsert(g, db);
-		--app.ToggleCacheMaps(true);
-		--CacheFields(db);
-		--app.ToggleCacheMaps();
-	end
-
 	-- Unsorted
 	if app.Categories.Unsorted then
 		db = {};
