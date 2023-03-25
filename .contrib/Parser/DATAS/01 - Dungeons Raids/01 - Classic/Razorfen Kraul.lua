@@ -33,6 +33,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 						i(6742, {	-- Stonefist Girdle
 							["timeline"] = { "removed 4.0.3" },
+							-- #if ANYCLASSIC
+							["OnUpdate"] = [[function(t)
+								if _.Level >= 40 and _.ClassIndex ~= ]] .. HUNTER .. [[ and _.ClassIndex ~= ]] .. SHAMAN .. [[ then
+									t.f = ]] .. PLATE .. [[;
+								else
+									t.f = ]] .. MAIL .. [[;
+								end
+							end]],
+							-- #endif
 						}),
 					},
 				}),
@@ -201,6 +210,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 						i(6742, {	-- Stonefist Girdle
 							["timeline"] = { "removed 4.0.3" },
+							-- #if ANYCLASSIC
+							["OnUpdate"] = [[function(t)
+								if _.Level >= 40 and _.ClassIndex ~= ]] .. HUNTER .. [[ and _.ClassIndex ~= ]] .. SHAMAN .. [[ then
+									t.f = ]] .. PLATE .. [[;
+								else
+									t.f = ]] .. MAIL .. [[;
+								end
+							end]],
+							-- #endif
 						}),
 						-- #if AFTER TBC
 						i(29200, {	-- Falfindel's Blaster
