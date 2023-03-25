@@ -188,7 +188,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(65570),	-- Ensemble: Vagabond's Midnight Threads
 		q(65648),	-- Ensemble: Wanderer's Midnight Trappings
 		q(65673),	-- Ensemble: Wanderer's Violet Trappings
-		q(65677),	-- Ensemble: Wanderer's Rosy/Azure/Snowy Trappings
+		q(65677),	-- Ensemble: Wanderer's Azure Trappings
 		q(65678),	-- Ensemble: Vagabond's Azure Threads
 		q(65720),	-- Ensemble: Swashbuckling Buccaneer's Slops
 		q(65737),	-- Ensemble: Vagabond's Rosy Threads
@@ -197,12 +197,14 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(65718),	-- Ensemble: Slumbering Caldera Regalia
 		q(65721),	-- Ensemble: Wanderer's Crimson Trappings
 		q(65723),	-- Ensemble: Vagabond's Crimson Trappings
-		-- q(65737),	-- Ensemble: Vagabond's Snowy Threads	-- Wowhead has same id as Rosy Threads
+		q(65736),	-- Ensemble: Wanderer's Snowy Trappings
 		q(72070),	-- Ensemble: Glorious Dragonrider's Mail
 		q(72080),	-- Ensemble: Corrupted Runelord's Regalia
 		q(72086),	-- Ensemble: Tidecaller's Chainmail
 		q(72132),	-- Ensemble: Kvaldir Scout Leathers
 		q(72133),	-- Ensemble: Helarjar Berserker Warplate
+		q(72811),	-- Ensemble: Wanderer's Rosy Trappings
+		q(72812),	-- Ensemble: Vagabond's Snowy Threads
 	})),
 });
 root(ROOTS.NeverImplemented, {
@@ -371,10 +373,17 @@ root(ROOTS.NeverImplemented, {
 				-- 	},
 				-- }),
 				i(190095, {	-- Ensemble: Vestment of the Honored Valarjar
-					["cost"] = { { "c", TRADERS_TENDER, 850 }, },
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 					["g"] = {
-						-- i(),	--
-						-- i(),	--
+						i(190081),	-- Mantle of the Honored Valarjar
+						i(190082),	-- Cloak of the Honored Valarjar
+						i(190083),	-- Robe of the Honored Valarjar
+						i(190084),	-- Bracers of the Honored Valarjar
+						i(190085),	-- Sash of the Honored Valarjar
+						i(190086),	-- Sandals of the Honored Valarjar
+						i(190087),	-- Pantaloons of the Honored Valarjar
+						i(190088),	-- Circlet of the Honored Valarjar
+						i(190089),	-- Gloves of the Honored Valarjar
 					},
 				}),
 				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
