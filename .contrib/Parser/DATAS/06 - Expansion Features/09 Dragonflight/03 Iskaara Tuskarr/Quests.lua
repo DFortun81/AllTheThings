@@ -708,7 +708,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(191850),	-- Broken Serevite Blade Tip
 					}),
 					-- #else
-					i(204379),	-- Brimming Iskaaran Supply Pack
+					i(204379, {	-- Brimming Iskaaran Supply Pack
+						["timeline"] = { ADDED_DF_0_7 },
+					}),
 					-- #endif
 				},
 			}),

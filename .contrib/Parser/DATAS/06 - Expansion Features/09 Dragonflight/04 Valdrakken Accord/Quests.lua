@@ -890,7 +890,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					-- #if BEFORE 10.0.7
 					i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 					-- #else
-					i(204381),	-- Brimming Valdrakken Accord Supply Pack
+					i(204381, {	-- Brimming Valdrakken Accord Supply Pack
+						["timeline"] = { ADDED_DF_0_7 },
+					}),
 					-- #endif
 				},
 			}),

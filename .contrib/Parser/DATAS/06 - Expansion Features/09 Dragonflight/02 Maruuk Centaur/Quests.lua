@@ -471,7 +471,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(191850),	-- Broken Serevite Blade Tip
 					}),
 					-- #else
-					i(204380),	-- Brimming Maruuk Centaur Supply Satchel
+					i(204380, {	-- Brimming Maruuk Centaur Supply Satchel
+						["timeline"] = { ADDED_DF_0_7 },
+					}),
 					-- #endif
 				},
 			}),
