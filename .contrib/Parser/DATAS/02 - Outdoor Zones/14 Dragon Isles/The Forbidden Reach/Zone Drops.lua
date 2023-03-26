@@ -15,24 +15,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			i(203405),	-- Pristine Pelt
 			i(203406),	-- Torn Morqut Kite
 
-
-
-
-
 			-- Sealed Scroll Maps
-			i(202667, {	-- Sealed Artifact Scroll
-				["questID"] = 73201,
-				["repeatable"] = true,
-			}),
-			i(202669, {	-- Sealed Fish Scroll
-				["questID"] = 73210,
-				["repeatable"] = true,
-			}),
+			i(202667),	-- Sealed Artifact Scroll
+			i(202669),	-- Sealed Fish Scroll
 			i(202670),	-- Sealed Knowledge Scroll
-			i(202668, {	-- Sealed Spirit Scroll
-				["questID"] = 73206,
-				["repeatable"] = true,
-			}),
+			i(202668),	-- Sealed Spirit Scroll
 		}),
 	}),
 })));

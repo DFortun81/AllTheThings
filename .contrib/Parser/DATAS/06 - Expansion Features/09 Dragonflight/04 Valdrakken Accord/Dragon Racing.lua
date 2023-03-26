@@ -18,7 +18,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
 					i(197594),	-- Windborne Velocidrake: Small Ears (DM!)
 				}),
-				i(204359, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {	-- Reach Racer's Purse
+				i(204359,	-- Reach Racer's Purse
+				bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+					i(197002),	-- Cliffside Wylderdrake: Flared Cheek (DM!)
+					i(197124),	-- Highland Drake: Swept Horns (DM!)
 					i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
 				})),
 				i(200609),	-- Dragon Racing Purse - First Place

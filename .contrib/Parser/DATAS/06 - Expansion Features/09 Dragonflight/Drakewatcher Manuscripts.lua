@@ -677,7 +677,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		unknown(i(196984)),	-- Cliffside Wylderdrake: Finned Jaw
 		i(197022),	-- Cliffside Wylderdrake: Finned Neck (DM!)
 		i(197018),	-- Cliffside Wylderdrake: Finned Tail (DM!)
-		unknown(i(197002)),	-- Cliffside Wylderdrake: Flared Cheek
+		i(197002),	-- Cliffside Wylderdrake: Flared Cheek (DM!)
 		i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (DM!)
 			["timeline"] = { CREATED_DF_PRE, ADDED_DF_0_7 },
 		}),
@@ -789,7 +789,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197130),	-- Highland Drake: Stag Horns (DM!)
 		i(197096),	-- Highland Drake: Steel and Yellow Armor (DM!)
 		i(197138),	-- Highland Drake: Striped Pattern (DM!)
-		unknown(i(197124)),	-- Highland Drake: Swept Horns
+		i(197124),	-- Highland Drake: Swept Horns (DM!)
 		i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
 		i(197121),	-- Highland Drake: Tan Horns (DM!)
 		unknown(i(197104)),	-- Highland Drake: Tapered Chin
@@ -954,7 +954,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197606),	-- Windborne Velocidrake: Swept Horns (DM!)
 		unknown(i(197615)),	-- Windborne Velocidrake: Teal Scales
 		i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
-		unknown(i(197609)),	-- Windborne Velocidrake: White Horns [world drop?]
+		i(197609),	-- Windborne Velocidrake: White Horns (DM!)
 		unknown(i(197616)),	-- Windborne Velocidrake: White Scales
 		unknown(i(197582)),	-- Windborne Velocidrake: White and Pink Armor
 		i(197634),	-- Windborne Velocidrake: Windswept Pattern (DM!)
