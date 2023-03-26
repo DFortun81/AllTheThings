@@ -3695,7 +3695,7 @@ for key,value in pairs({
 	[384980] = "Mysteriöse Truhe",	-- Mysterious Chest
 	[385001] = "Leeres Fischfass",	-- Empty Fish Barrel
 	[385010] = "Gesponnene Netze",	-- Spun Webs
-	--TODO: [385011] = "Spun Webs",	-- Spun Webs
+	[385011] = "Gesponnene Netze",	-- Spun Webs	--TODO: this was manually translated
 	[385021] = "Versteinertes Drachenei",	-- Petrified Dragon Egg
 	[385022] = "Erodiertes Fossil",	-- Eroded Fossil
 	[385028] = "Machtvolles Fläschchen der Erneuerung",	-- Powerful Flask of Renewal
@@ -3756,7 +3756,7 @@ for key,value in pairs({
 	[386457] = "Gefrorene Kiste",	-- Frozen Coffer
 	[386458] = "Urzeitliche Verfalltruhe",	-- Primordial Decay Cache
 	[386459] = "Urzeitliche Verfalltruhe",	-- Primordial Decay Cache
-	--TODO: [386460] = "Primordial Arcane Cache",	-- Primordial Arcane Cache
+	[386460] = "Urzeitliche Arkantruhe",	-- Primordial Arcane Cache	--TODO: this was manually translated
 	[386461] = "Urzeitliche Arkantruhe",	-- Primordial Arcane Cache
 	[386462] = "Urzeitliche Bluttruhe",	-- Primordial Blood Cache
 	[386463] = "Urzeitliche Goldtruhe",	-- Primordial Gold Cache
@@ -3835,6 +3835,7 @@ for key,value in pairs({
 	[393283] = "Ballonkiste",	-- Balloon Box
 	[398778] = "Widerwärtiger Bottich",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
+	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

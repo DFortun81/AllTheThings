@@ -3685,7 +3685,7 @@ for key,value in pairs({
 	[384980] = "Таинственный сундук",	-- Mysterious Chest
 	[385001] = "Пустой бочонок для рыбы",	-- Empty Fish Barrel
 	[385010] = "Скрученная паутина",	-- Spun Webs
-	--TODO: [385011] = "Spun Webs",	-- Spun Webs
+	[385011] = "Скрученная паутина",	-- Spun Webs	--TODO: this was manually translated
 	[385021] = "Окаменевшее яйцо дракона",	-- Petrified Dragon Egg
 	[385022] = "Размытая окаменелость",	-- Eroded Fossil
 	[385028] = "Мощный настой обновления",	-- Powerful Flask of Renewal
@@ -3746,7 +3746,7 @@ for key,value in pairs({
 	[386457] = "Замерзший сундук",	-- Frozen Coffer
 	[386458] = "Тайник изначального разложения",	-- Primordial Decay Cache
 	[386459] = "Тайник изначального разложения",	-- Primordial Decay Cache
-	--TODO: [386460] = "Primordial Arcane Cache",	-- Primordial Arcane Cache
+	[386460] = "Тайник изначальных чар",	-- Primordial Arcane Cache	--TODO: this was manually translated
 	[386461] = "Тайник изначальных чар",	-- Primordial Arcane Cache
 	[386462] = "Тайник изначальной крови",	-- Primordial Blood Cache
 	[386463] = "Тайник изначального золота",	-- Primordial Gold Cache
@@ -3825,6 +3825,7 @@ for key,value in pairs({
 	[393283] = "Ящик из шаров",	-- Balloon Box
 	[398778] = "Мерзкий чан",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
+	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only
 	[9999892] = "Основная Задача + 2 Дополнительных Зоны",	-- Main Objective + 2 Bonus Areas

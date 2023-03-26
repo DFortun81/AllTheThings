@@ -3694,7 +3694,7 @@ for key,value in pairs({
 	[384980] = "Baú Misterioso",	-- Mysterious Chest
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385010] = "Teias Enroladas",	-- Spun Webs
-	--TODO: [385011] = "Spun Webs",	-- Spun Webs
+	[385011] = "Teias Enroladas",	-- Spun Webs	--TODO: this was manually translated
 	[385021] = "Ovo de Dragão Petrificado",	-- Petrified Dragon Egg
 	[385022] = "Fóssil Corroído",	-- Eroded Fossil
 	[385028] = "Frasco da Renovação Poderoso",	-- Powerful Flask of Renewal
@@ -3754,8 +3754,8 @@ for key,value in pairs({
 	[386456] = "Baú Cascadura",	-- Hardshell Chest
 	[386457] = "Cofre Congelado",	-- Frozen Coffer
 	[386458] = "Baú de Decomposição Primordial",	-- Primordial Decay Cache
-	--TODO: [386459] = "Primordial Decay Cache",	-- Primordial Decay Cache
-	--TODO: [386460] = "Primordial Arcane Cache",	-- Primordial Arcane Cache
+	[386459] = "Baú de Decomposição Primordial",	-- Primordial Decay Cache	--TODO: this was manually translated
+	[386460] = "Baú Arcano Primordial",	-- Primordial Arcane Cache	--TODO: this was manually translated
 	[386461] = "Baú Arcano Primordial",	-- Primordial Arcane Cache
 	[386462] = "Baú Arcano Primordial",	-- Primordial Blood Cache
 	[386463] = "Baú Áureo Primordial",	-- Primordial Gold Cache
@@ -3834,6 +3834,7 @@ for key,value in pairs({
 	[393283] = "Caixa de Balão",	-- Balloon Box
 	[398778] = "Tanque Nojento",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
+	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

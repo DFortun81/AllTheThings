@@ -3686,7 +3686,7 @@ for key,value in pairs({
 	[384980] = "Cassa Misteriosa",	-- Mysterious Chest
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385010] = "Ragnatele Tessute",	-- Spun Webs
-	--TODO: [385011] = "Spun Webs",	-- Spun Webs
+	[385011] = "Ragnatele Tessute",	-- Spun Webs	--TODO: this was manually translated
 	[385021] = "Uovo di Drago Pietrificato",	-- Petrified Dragon Egg
 	[385022] = "Fossile Eroso",	-- Eroded Fossil
 	[385028] = "Tonico del Rinnovamento Potente",	-- Powerful Flask of Renewal
@@ -3747,7 +3747,7 @@ for key,value in pairs({
 	[386457] = "Scrigno Congelato",	-- Frozen Coffer
 	[386458] = "Cassa del Decadimento Primordiale",	-- Primordial Decay Cache
 	[386459] = "Cassa del Decadimento Primordiale",	-- Primordial Decay Cache
-	--TODO: [386460] = "Primordial Arcane Cache",	-- Primordial Arcane Cache
+	[386460] = "Cassa dell'Arcano Primordiale",	-- Primordial Arcane Cache	--TODO: this was manually translated
 	[386461] = "Cassa dell'Arcano Primordiale",	-- Primordial Arcane Cache
 	[386462] = "Cassa del Sangue Primordiale",	-- Primordial Blood Cache
 	[386463] = "Cassa dell'Oro primordiale",	-- Primordial Gold Cache
@@ -3826,6 +3826,7 @@ for key,value in pairs({
 	[393283] = "Scatola di Palloncini",	-- Balloon Box
 	[398778] = "Tinozza Disgustosa",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
+	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

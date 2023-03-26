@@ -3694,7 +3694,7 @@ for key,value in pairs({
 	[384980] = "신비로운 궤짝",	-- Mysterious Chest
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385010] = "자아낸 거미줄",	-- Spun Webs
-	--TODO: [385011] = "Spun Webs",	-- Spun Webs
+	[385011] = "자아낸 거미줄",	-- Spun Webs	--TODO: this was manually translated
 	[385021] = "석화된 용의 알",	-- Petrified Dragon Egg
 	[385022] = "부식된 화석",	-- Eroded Fossil
 	[385028] = "강력한 소생의 영약",	-- Powerful Flask of Renewal
@@ -3755,7 +3755,7 @@ for key,value in pairs({
 	[386457] = "얼어붙은 궤짝",	-- Frozen Coffer
 	[386458] = "태고의 부패 보관함",	-- Primordial Decay Cache
 	[386459] = "태고의 부패 보관함",	-- Primordial Decay Cache
-	--TODO: [386460] = "Primordial Arcane Cache",	-- Primordial Arcane Cache
+	[386460] = "태고의 비전 보관함",	-- Primordial Arcane Cache	--TODO: this was manually translated
 	[386461] = "태고의 비전 보관함",	-- Primordial Arcane Cache
 	[386462] = "태고의 핏빛 보관함",	-- Primordial Blood Cache
 	[386463] = "태고의 황금 보관함",	-- Primordial Gold Cache
@@ -3834,6 +3834,7 @@ for key,value in pairs({
 	[393283] = "풍선 상자",	-- Balloon Box
 	[398778] = "역겨운 보관통",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
+	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

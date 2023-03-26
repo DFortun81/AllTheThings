@@ -3698,7 +3698,7 @@ for key,value in pairs({
 	[384980] = "Arcón misterioso",	-- Mysterious Chest
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385010] = "Telarañas tejidas",	-- Spun Webs
-	--TODO: [385011] = "Spun Webs",	-- Spun Webs
+	[385011] = "Telarañas tejidas",	-- Spun Webs	--TODO: this was manually translated
 	[385021] = "Huevo de dragón petrificado",	-- Petrified Dragon Egg
 	[385022] = "Fósil erosionado",	-- Eroded Fossil
 	[385028] = "Frasco de renovación potente",	-- Powerful Flask of Renewal
@@ -3759,7 +3759,7 @@ for key,value in pairs({
 	[386457] = "Arca congelada",	-- Frozen Coffer
 	[386458] = "Alijo de descomposición primordial",	-- Primordial Decay Cache
 	[386459] = "Alijo de descomposición primordial",	-- Primordial Decay Cache
-	--TODO: [386460] = "Primordial Arcane Cache",	-- Primordial Arcane Cache
+	[386460] = "Alijo Arcano primordial",	-- Primordial Arcane Cache	--TODO: this was manually translated
 	[386461] = "Alijo Arcano primordial",	-- Primordial Arcane Cache
 	[386462] = "Alijo de sangre primordial",	-- Primordial Blood Cache
 	[386463] = "Alijo de oro primordial",	-- Primordial Gold Cache
@@ -3838,6 +3838,7 @@ for key,value in pairs({
 	[393283] = "Caja de globos",	-- Balloon Box
 	[398778] = "Cuba asquerosa",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
+	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

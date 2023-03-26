@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 								i(203761),	-- Neltharion Gift Token
 							},
 						}),
-						o(386580, {	-- Neltharion Gift
+						o(386580, {	-- Neltharion Gift Token
 							["coord"] = { 25.6, 53.8, THE_FORBIDDEN_REACH },
 							["questID"] = 74506,
 							["g"] = {
@@ -391,7 +391,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 								i(204405),	-- Stuffed Bear
 							},
 						}),
-						o(388876, {	-- Wind Sculpted Stone
+						o(9000000, {	-- Wind Sculpted Stone	--TODO: fake ID
 							["coord"] = { 26.8, 53.7, THE_FORBIDDEN_REACH },
 							-- ["questID"] = ,
 						}),
