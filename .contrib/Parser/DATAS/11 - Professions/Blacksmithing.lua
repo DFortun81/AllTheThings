@@ -4547,7 +4547,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Demonsteel Pauldrons",
-					["timeline"] = { "removed 8.0.1", "added 10.0.7" },	-- rank 3 used to drop from RBG wins but not available after Legion
+					["timeline"] = { "removed 8.0.1", ADDED_DF_0_7 },
 					["previousRecipeID"] = 182976,
 					["recipeID"] = 182984,
 				},

@@ -5055,7 +5055,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(73210, {	-- Trainee's Sword
-							["timeline"] = { "added 10.0.7" },
+							["timeline"] = { ADDED_DF_0_7 },
 						}),
 					},
 				}),

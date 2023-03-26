@@ -5394,7 +5394,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Dreadleather Shoulderguard  [Rank 3]",
-					["timeline"] = { "removed 8.0.1", "added 10.0.7" },	-- rank 3 used to drop from RBG wins but not available after Legion
+					["timeline"] = { "removed 8.0.1", ADDED_DF_0_7 },
 					["previousRecipeID"] = 194721,
 					["recipeID"] = 194729,
 				},
@@ -5789,7 +5789,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Gravenscale Spaulders [Rank 3]",
-					["timeline"] = { "removed 8.0.1", "added 10.0.7" },	-- rank 3 used to drop from RBG wins but not available after Legion
+					["timeline"] = { "removed 8.0.1", ADDED_DF_0_7 },
 					["previousRecipeID"] = 194761,
 					["recipeID"] = 194769,
 				},

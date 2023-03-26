@@ -102,8 +102,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(9653, {	-- Speedy Racer Googles
 							["timeline"] = { "removed 1.9.3" },
 						}),
-						i(204406, {	-- Ancient Design: Square Holders
-							["timeline"] = { "added 10.0.7" },
+						i(204406, {	-- Ancient Design: Square Holders (RECIPE!)
+							["timeline"] = { ADDED_DF_0_7 },
 						}),
 					},
 				}),

@@ -57,11 +57,10 @@ root("Instances", tier(CATA_TIER, {
 							["_npcs"] = { 52414 },	-- Tor-Tun
 						}),
 					}),
-					ach(17366, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {	-- Relics of a Fallen Empire
-						crit(1, {	-- Restored Hakkari Bijou
-							["sourceQuests"] = { 74576 },	-- Restored Hakkari Bijou
-						}),
-					})),
+					ach(17366, {	-- Relics of a Fallen Empire
+						["sourceQuests"] = { 74576 },	-- Restored Hakkari Bijou
+						["timeline"] = { ADDED_DF_0_7 }
+					}),
 				}),
 				header(HEADERS.Item, 203757, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {	-- Brazier of Madness
 					["description"] = "Requires the toy Brazier of Madness",
