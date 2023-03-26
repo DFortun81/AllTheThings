@@ -1065,7 +1065,6 @@ for key,value in pairs({
 	[22245] = "Sacca di Carne",	-- Sack of Meat
 	[22246] = "Lacrima di Theradras",	-- Tear of Theradras
 	[35251] = "Cassa di Karnitol",	-- Karnitol's Chest
-	--TODO: [35591] = "Disgusting Vat",	-- Disgusting Vat
 	[37099] = "Tavoletta Atal'ai",	-- Atal'ai Tablet
 	[50961] = "Malem Chest",	-- Malem Chest	--TODO: This was taken from wotlk Wowhead
 	[51708] = "Eliza's Grave Dirt",	-- Eliza's Grave Dirt	--TODO: This was taken from wotlk Wowhead
@@ -3825,6 +3824,7 @@ for key,value in pairs({
 	[393222] = "Baule di Rifornimenti",	-- Supply Trunk
 	[393282] = "Scatola di Palloncini",	-- Balloon Box
 	[393283] = "Scatola di Palloncini",	-- Balloon Box
+	[398778] = "Tinozza Disgustosa",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
