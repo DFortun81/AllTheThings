@@ -758,7 +758,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				},
 			}),
 			n(195769, {	-- Weaponsmith Koref
-				["coord"] = { 32.6, 52.0, VALDRAKKEN },
+				["coord"] = { 36.2, 51.9, VALDRAKKEN },
 				["g"] = {
 						-- RENOWN 29 --
 					i(199736, {	-- Amber Dragonflame Blade

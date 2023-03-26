@@ -677,7 +677,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 				}),
 				n(188623, {	-- Samia Inkling
-					["coord"] = { 25.2, 55.8, THE_WAKING_SHORES },
+					["coord"] = { 24.7, 56.8, THE_WAKING_SHORES },
 					["g"] = {
 						i(200952, {	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
 							["cost"] = {

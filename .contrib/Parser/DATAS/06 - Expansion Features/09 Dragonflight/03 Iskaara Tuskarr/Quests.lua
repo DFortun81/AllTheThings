@@ -139,9 +139,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 196544 },	-- Norukk
 				["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
 				["g"] = {
-					i(197132),	-- Highland Drake: Spiked Cheek (DM!)
-					i(197114),	-- Highland Drake: Multi-Horned Head (DM!)
 					i(197101),	-- Highland Drake: Bushy Brow (DM!)
+					i(197155, {	-- Highland Drake: Finned Neck (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
+					}),
+					i(197114),	-- Highland Drake: Multi-Horned Head (DM!)
+					i(197132),	-- Highland Drake: Spiked Cheek (DM!)
 				},
 			}),
 			q(72388, {	-- Dragon Isles Supplies

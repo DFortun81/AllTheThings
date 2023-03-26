@@ -391,6 +391,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 188265 },	-- Rae'ana
 				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
 				["g"] = {
+					i(197358, {	-- Renewed Proto-Drake: Curved Spiked Brow (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
+					}),
 					i(197395),	-- Renewed Proto-Drake: Harrier Pattern (DM!)
 					i(197402),	-- Renewed Proto-Drake: Spiked Club Tail (DM!)
 					i(197374),	-- Renewed Proto-Drake: Swept Horns (DM!)

@@ -2,9 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 root(ROOTS.PVP, pvp(tier(SL_TIER, {
-	header(HEADERS.Achievement, SEASON_SINFUL, bubbleDownSelf({
-		["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2, ADDED_DF_REL },
-	},{
+	header(HEADERS.Achievement, SEASON_SINFUL, {
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount",
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {
@@ -37,14 +35,14 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2, ADDED_DF_REL }
 				}),
 			})),
-			filter(MOUNTS, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2, ADDED_DF_REL } }, {
 				i(184014, {	-- Vicious War Spider [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(184013, {	-- Vicious War Spider [H] (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
-			}),
+			})),
 			filter(TITLES, bubbleDown({ ["collectible"] = false, },{
 				title(78),	-- Combatant <Name>
 				title(32),	-- Challenger <Name>
@@ -64,7 +62,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				title(398),	-- <Name> the Elite Warrior
 				title(29),	-- Gladiator <Name>
 			})),
-			n(PVP_ASPIRANT, {
+			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2, ADDED_DF_REL } }, {
 				filter(CLOAKS, {
 					i(178301),	-- Sinful Aspirant's Cape
 					i(175851),	-- Sinful Aspirant's Cloak
@@ -148,8 +146,8 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(178474),	-- Sinful Aspirant's Sword
 					i(178479),	-- Sinful Aspirant's Warglaive
 				}),
-			}),
-			n(PVP_GLADIATOR, {
+			})),
+			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2, ADDED_DF_REL } }, {
 				filter(CLOAKS, {
 					i(175888),	-- Sinful Gladiator's Cloak
 					i(178353),	-- Sinful Gladiator's Drape
@@ -310,7 +308,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 						i(182410),	-- Sinful Gladiator's Wingglaive
 					})),
 				}),
-			}),
+			})),
 			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 }, ["modID"] = 45 }, {
 				filter(CLOAKS, {
 					i(175888),	-- Sinful Gladiator's Cloak
@@ -474,7 +472,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				}),
 			})),
 		},
-	})),
+	}),
 })));
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

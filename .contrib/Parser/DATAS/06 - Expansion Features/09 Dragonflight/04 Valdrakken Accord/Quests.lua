@@ -153,6 +153,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185561 },	-- Kaestrasz
 				["coord"] = { 46.8, 78.8, VALDRAKKEN },
 				["g"] = {
+					i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
+					}),
 					i(196972),	-- Cliffside Wylderdrake: Plated Brow (DM!)
 					i(197003),	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
 					i(196977),	-- Cliffside Wylderdrake: Split Head Horns (DM!)
@@ -356,9 +359,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185561 },	-- Kaestrasz
 				["coord"] = { 46.8, 78.8, VALDRAKKEN },
 				["g"] = {
+					i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
+					}),
 					i(196998),	-- Cliffside Wylderdrake: Hook Horns (DM!)
 					i(197009),	-- Cliffside Wylderdrake: Scaled Pattern (DM!)
 					i(197020),	-- Cliffside Wylderdrake: Spear Tail (DM!)
+					i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (DM!)
+						["timeline"] = { ADDED_DF_0_7 },
+					}),
 				},
 			}),
 			q(72283, {	-- Renown Supplies
