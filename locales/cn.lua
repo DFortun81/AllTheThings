@@ -3779,7 +3779,7 @@ for key, value in pairs({
 	--TODO: [386573] = "Ornate Key Box",	-- Ornate Key Box
 	--TODO: [386578] = "Neltharion Gift Token",	-- Neltharion Gift Token
 	--TODO: [386579] = "Neltharion Gift Token",	-- Neltharion Gift Token
-	--TODO: [386580] = "Neltharion Gift",	-- Neltharion Gift
+	--TODO: [386580] = "Neltharion Gift Token",	-- Neltharion Gift Token
 	--TODO: [386581] = "Neltharion Gift Token",	-- Neltharion Gift Token
 	--TODO: [386582] = "Neltharion Gift Token",	-- Neltharion Gift Token
 	--TODO: [386583] = "Neltharion Gift Token",	-- Neltharion Gift Token
@@ -3811,7 +3811,7 @@ for key, value in pairs({
 	--TODO: [387853] = "Shattered Crystals",	-- Shattered Crystals
 	--TODO: [388712] = "Opera Chest",	-- Opera Chest
 	--TODO: [388866] = "Reagent Pot",	-- Reagent Pot
-	--TODO: [388876] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
+	--TODO: [388876] = "Reagent Pot",	-- Reagent Pot
 	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
 	--TODO: [388908] = "Inert Goo",	-- Inert Goo
 	--TODO: [389102] = "Prismatic Fragment",	-- Prismatic Fragment
@@ -3848,6 +3848,7 @@ for key, value in pairs({
 	--TODO: [393283] = "Balloon Box",	-- Balloon Box
 	--TODO: [398778] = "Disgusting Vat",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
+	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas
