@@ -682,7 +682,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["coord"] = { 28.2, 56.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75178,
 						}),
-						o(35591, {	-- Disgusting Vat
+						o(398778, {	-- Disgusting Vat
 							["description"] = "You must fish when interacting with this.",
 							["g"] = {
 								i(193853),	-- Emmah (PET!)

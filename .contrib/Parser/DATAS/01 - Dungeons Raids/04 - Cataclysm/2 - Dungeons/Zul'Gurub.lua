@@ -341,168 +341,168 @@ _.Instances = { tier(CATA_TIER, {
 							["description"] = "Only visible after completing the 'Relics of a Fallen Empire' Achievement.",
 							["groups"] = {
 								cl(DRUID, {
-									i(203974, {	-- Ensemble zandalar haruspec
+									i(203974, {	-- Ensemble: Zandalar Haruspec
 										["cost"] = {
 											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 											{ "i", 203769, 6 },	-- Orange Hakkari Bijou
 										},
 										["groups"] = {
-											i(19840),	-- Zandalar Haruspexs bracers
-											i(19839),	-- Zandalar Haruspexs belt
-											i(19838),	-- Zandalar Haruspexs tunic
+											i(19840),	-- Zandalar Haruspex's Bracers
+											i(19839),	-- Zandalar Haruspex's Belt
+											i(19838),	-- Zandalar Haruspex's Tunic
 										},
 									}),
 								}),
 								cl(HUNTER, {
-									i(203975, {	-- Ensemble zandalar predator
+									i(203975, {	-- Ensemble: Zandalar Predator
 										["cost"] = {
 											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 											{ "i", 203768, 6 },	-- Green Hakkari Bijou
 										},
 										["groups"] = {
-											i(19832),	-- Zandalar predator belt
-											i(19833),	-- Zandalar predator bracer
-											i(19831),	-- Zandalar predator mantle
+											i(19832),	-- Zandalar Predator's Belt
+											i(19833),	-- Zandalar Predator's Bracer
+											i(19831),	-- Zandalar Predator's Mantle
 										},
 									}),
 								}),
 								cl(MAGE, {
-									i(203976, {	-- Ensemble zandalar illusionist
+									i(203976, {	-- Ensemble: Zandalar Illusionist
 										["cost"] = {
 											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 											{ "i", 203771, 6 },	-- Red Hakkari Bijou
 										},
 										["groups"] = {
-											i(19845),	-- Zandalar illusionist mantle
-											i(20034),	-- Zandalar illusionist robe
-											i(19846),	-- Zandalar illusionist wraps
+											i(19845),	-- Zandalar Illusionist's Mantle
+											i(20034),	-- Zandalar Illusionist's Robe
+											i(19846),	-- Zandalar Illusionist's Wraps
 										},
 									}),
 								}),
 								cl(PALADIN, {
-									i(203977, {	-- Ensemble zandalar freethinker
+									i(203977, {	-- Ensemble: Zandalar Freethinker
 										["cost"] = {
 											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 											{ "i", 203767, 6 },	-- Gold Hakkari Bijou
 										},
 										["groups"] = {
-											i(19825),	-- Zandalar freethinker breastplate
-											i(19827),	-- Zandalar freethinker armguards
-											i(19826),	-- Zandalar freethinker belt
+											i(19825),	-- Zandalar Freethinker's Breastplate
+											i(19827),	-- Zandalar Freethinker's Armguards
+											i(19826),	-- Zandalar Freethinker's Belt
 										},
 									}),
 								}),
 								cl(PRIEST, {
-									i(203978, {	-- Ensemble zandalar confessor
+									i(203978, {	-- Ensemble: Zandalar Confessor
 										["cost"] = {
 											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 											{ "i", 203772, 6 },	-- Silver Hakkari Bijou
 										},
 										["groups"] = {
-											i(19842),	-- Zandalar confessor binding
-											i(19841),	-- Zandalar confessor mantle
-											i(19843),	-- Zandalar confessor wraps
+											i(19842),	-- Zandalar Confessor's Binding
+											i(19841),	-- Zandalar Confessor's Mantle
+											i(19843),	-- Zandalar Confessor's Wraps
 										},
 									}),
 								}),
 								cl(ROGUE, {
-									i(203979, {	-- Ensemble zandalar madcap
+									i(203979, {	-- Ensemble: Zandalar Madcap
 										["cost"] = {
 											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 											{ "i", 203773, 6 },	-- Yellow Hakkari Bijou
 										},
 										["groups"] = {
-											i(19835),	-- Zandalar madcap mantle
-											i(19834),	-- Zandalar madcap tunic
-											i(19836),	-- Zandalar madcap wraps
+											i(19835),	-- Zandalar Madcap's Mantle
+											i(19834),	-- Zandalar Madcap's Tunic
+											i(19836),	-- Zandalar Madcap's Wraps
 										},
 									}),
 								}),
 								cl(SHAMAN, {
-									i(203980, {	-- Ensemble zandalar augur
+									i(203980, {	-- Ensemble: Zandalar Augur
 										["cost"] = {
 											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 											{ "i", 203765, 6 },	-- Blue Hakkari Bijou
 										},
 										["groups"] = {
-											i(19830),	-- Zandalar augur bracers
-											i(19828),	-- Zandalar augur hauberk
-											i(19829),	-- Zandalar augur belt
+											i(19830),	-- Zandalar Augur's Bracers
+											i(19828),	-- Zandalar Augur's Hauberk
+											i(19829),	-- Zandalar Augur's Belt
 										},
 									}),
 								}),
 								cl(WARLOCK, {
-									i(203981, {	-- Ensemble zandalar demoniac
+									i(203981, {	-- Ensemble: Zandalar Demoniac
 										["cost"] = {
 											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 											{ "i", 203770, 6 },	-- Purple Hakkari Bijou
 										},
 										["groups"] = {
-											i(19848),	-- Zandalar demoniac wraps
-											i(19849),	-- Zandalar demoniac mantle
-											i(20033),	-- Zandalar demoniac robe
+											i(19848),	-- Zandalar Demoniac's Wraps
+											i(19849),	-- Zandalar Demoniac's Mantle
+											i(20033),	-- Zandalar Demoniac's Robe
 										},
 									}),
 								}),
 								cl(WARRIOR, {
-									i(203982, {	-- Ensemble zandalar vindicator
+									i(203982, {	-- Ensemble: Zandalar Vindicator
 										["cost"] = {
 											{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 											{ "i", 203766, 6 },	-- Bronze Hakkari Bijou
 										},
 										["groups"] = {
-											i(19823),	-- Zandalar vindicator belt
-											i(19822),	-- Zandalar vindicator breastplate
-											i(19824),	-- Zandalar vindicator armguards
+											i(19823),	-- Zandalar Vindicator's Belt
+											i(19822),	-- Zandalar Vindicator's Breastplate
+											i(19824),	-- Zandalar Vindicator's Armguards
 										},
 									}),
 								}),
-								i(203983, {	-- Ensemble bloodtinged cloth
+								i(203983, {	-- Ensemble: Bloodtinged Cloth
 									["cost"] = {
 										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 										{ "i", 203765, 6 },	-- Blue Hakkari Bijou
 									},
 									["groups"] = {
-										i(19929),	-- bloodtinged gloves
-										i(203970),	-- bloodtinged hat
-										i(19895),	-- bloodtinged kilt
-										i(203971),	-- bloodtinged shoulders
+										i(19929),	-- Bloodtinged Gloves
+										i(203970),	-- Bloodtinged Hat
+										i(19895),	-- Bloodtinged Kilt
+										i(203971),	-- Bloodtinged Shoulders
 									},
 								}),
-								i(203984, {	-- Ensemble blooddrenched leather
+								i(203984, {	-- Ensemble: Blooddrenched Leather
 									["cost"] = {
 										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 										{ "i", 203773, 6 },	-- Yellow Hakkari Bijou
 									},
 									["groups"] = {
-										i(19906),	-- blooddrenched footpads
-										i(19869),	-- blooddrenched grips
-										i(19889),	-- blooddrenched leggings
-										i(22718),	-- blooddrenched mask
+										i(19906),	-- Blooddrenched Footpads
+										i(19869),	-- Blooddrenched Grips
+										i(19889),	-- Blooddrenched Leggings
+										i(22718),	-- Blooddrenched Mask
 									},
 								}),
-								i(203985, {	-- Ensemble bloodstained mail
+								i(203985, {	-- Ensemble: Bloodstained Mail
 									["cost"] = {
 										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 										{ "i", 203768, 6 },	-- Green Hakkari Bijou
 									},
 									["groups"] = {
-										i(19875),	-- bloodstained coif
-										i(19919),	-- bloodstained greaves
-										i(19887),	-- bloodstained legplates
+										i(19875),	-- Bloodstained Coif
+										i(19919),	-- Bloodstained Greaves
+										i(19887),	-- Bloodstained Legplates
 										i(19904),	-- Runed Bloodstained Hauberk
 									},
 								}),
-								i(203986, {	-- Ensemble bloodsoaked plate
+								i(203986, {	-- Ensemble: Bloodsoaked Plate
 									["cost"] = {
 										{ "i", 203914, 4 },	-- Zandalar Bargaining Token
 										{ "i", 203771, 6 },	-- Red Hakkari Bijou
 									},
 									["groups"] = {
-										i(19894),	-- bloodsoaked gauntlets
-										i(19913),	-- bloodsoaked greaves
-										i(19855),	-- bloodsoaked legplates
-										i(19878),	-- bloodsoaked pauldrons
+										i(19894),	-- Bloodsoaked Gauntlets
+										i(19913),	-- Bloodsoaked Greaves
+										i(19855),	-- Bloodsoaked Legplates
+										i(19878),	-- Bloodsoaked Pauldrons
 									},
 								}),
 								i(20757, {	-- Formula: Brilliant Mana Oil (RECIPE!)
