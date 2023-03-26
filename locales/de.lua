@@ -854,7 +854,7 @@ for key,value in pairs({
 		[-1140] = "Valdrakkenabkommen",								-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
-		--TODO: [-1200] = "Zskera Vaults",							-- Zskera Vaults
+		[-1200] = "Gewölbe von Zskera",								-- Zskera Vaults
 	-- Warrior order hall lore items
 		[-2200] = "Der große Odyn und der Feuerlord",				-- Great Odyn and the Firelord
 		[-2201] = "Der Wanderer und die Schlange",					-- The Wanderer and the Serpent

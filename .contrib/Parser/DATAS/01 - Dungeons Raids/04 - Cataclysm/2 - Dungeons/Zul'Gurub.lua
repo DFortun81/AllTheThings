@@ -13,10 +13,8 @@ _.Instances = { tier(CATA_TIER, {
 					n(ACHIEVEMENTS, {
 						ach(17367, 	-- Deadliest Cache
 						bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
-							crit(1, {	-- Gain Jostled Gurubashi Cache
-							}),
-							crit(2, {	-- Waterlogged Gurubashi Cache
-							}),
+							crit(1),	-- Gain Jostled Gurubashi Cache
+							crit(2),	-- Waterlogged Gurubashi Cache
 						})),
 						ach(5744, {	-- Gurubashi Headhunter
 							crit(1, {	-- Gub
@@ -673,23 +671,23 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 						n(52392, {	-- Gurubashi Master Chef
 							i(69822),	-- Master Chef's Groceries
-						}),	
+						}),
 						n(52440, {	-- Gub
 							i(69823),	-- Gub's Catch
 						}),
 						n(52422, {	-- Kaulema
 							i(69818),	-- Giant Sack
-						}),	
+						}),
 						n(52418, {	-- Lost Offspring of Gahz'ranka
 							i(70719),	-- Water-Filled Gills
-						}),	
+						}),
 						n(52438, {	-- Mortaxx
 						--	i(52722),	-- Maelstrom Crystal
-						}),							
+						}),
 						n(52405, {	-- Mor'Lek
 							i(69818),	-- Giant Sack
 						}),
-						n(52414),	-- Tor-Tun	
+						n(52414),	-- Tor-Tun
 					}),
 					cr(52155, e(175, {	-- High Priest Venoxis
 						ach(5743),	-- It's Not Easy Being Green
@@ -931,7 +929,7 @@ _.Instances = { tier(CATA_TIER, {
 							i(203735, {	-- Shattered Hakkari Bijou
 								i(203737),	-- Restored Hakkari Bijou
 							}),
-						},	
+						},
 					})),
 					cr(52148, e(185, {	-- Jin'do the Godbreaker
 						ach(5768),	-- Heroic: Zul'Gurub
