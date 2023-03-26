@@ -39,20 +39,6 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 56.5, 28.1, LEGION_DALARAN },
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
-						--i(139775),	-- Alliance Enthusiast
-						--i(142379),	-- Dutiful Squire
-						un(ELITE_PVP_REQUIREMENT, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(147364)),	-- Ferocious Gladiator's Cloak [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149443)),	-- Fierce Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149447)),	-- Dominant Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
-						un(ELITE_PVP_REQUIREMENT, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
-
 						n(PVP_COMBATANT, {	-- Season1+Season2
 							cl(DEATHKNIGHT, {
 								i(146165, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor (H)
@@ -1673,6 +1659,24 @@ _.Zones =
 								}),
 							}),
 						}),
+						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+							i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
+								["requireSkill"] = TAILORING,
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(123950, {	-- Recipe: Demonsteel Pauldrons [Rank 3] (RECIPE!)
+								["requireSkill"] = BLACKSMITHING,
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(137894, {	-- Recipe: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+								["requireSkill"] = LEATHERWORKING,
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(137926, {	-- Recipe: Gravenscale Spaulders [Rank 3] (RECIPE!)
+								["requireSkill"] = LEATHERWORKING,
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+						})),
 					},
 				}),
 				n(106655, {	-- Arcanomancer Vridiel <Blacksmithing Trainer>
@@ -4803,6 +4807,24 @@ _.Zones =
 								}),
 							}),
 						}),
+						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+							i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
+								["requireSkill"] = TAILORING,
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(123950, {	-- Recipe: Demonsteel Pauldrons [Rank 3] (RECIPE!)
+								["requireSkill"] = BLACKSMITHING,
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(137894, {	-- Recipe: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+								["requireSkill"] = LEATHERWORKING,
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(137926, {	-- Recipe: Gravenscale Spaulders [Rank 3] (RECIPE!)
+								["requireSkill"] = LEATHERWORKING,
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+						})),
 					},
 				}),
 				n(120906, {	-- Marshal Frazer <Gladiator Quartermaster>

@@ -5,7 +5,7 @@
 root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 	filter(RECIPES, bubbleDown(
 	{
-		["u"] = REMOVED_FROM_GAME,
+		["timeline"] = { "removed 8.0.1" },
 		["description"] = "This had a chance to drop from any rated battleground win during Legion, but has not been seen since Legion ended.",
 	},
 	{

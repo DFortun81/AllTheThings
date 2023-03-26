@@ -2520,7 +2520,6 @@ root(ROOTS.Unsorted, {
 				i(204863),	-- Lionguard Greatbelt
 				i(204865),	-- Lionguard Greatbelt
 				i(204866),	-- Lionguard Greatbelt
-				i(204182),	-- Cloak of Dark Descent
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
@@ -2773,7 +2772,6 @@ root(ROOTS.Unsorted, {
 				q(74500),
 				q(74527),
 				q(74576),
-				q(74579),
 				q(74711),
 				q(74712),
 				q(74713),
