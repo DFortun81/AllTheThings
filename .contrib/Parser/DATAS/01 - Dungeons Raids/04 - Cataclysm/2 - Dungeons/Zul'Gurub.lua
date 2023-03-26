@@ -125,7 +125,7 @@ _.Instances = { tier(CATA_TIER, {
 									19946,	-- Tigule's Harpoon
 									19945,	-- Lizardscale Eyepatch
 									19947,	-- Nat Pagle's Broken Reel
-									22739,	-- TOME_OF_POLYMORPH_TURTLE,
+									22739,	-- Tome of Polymorph: Turtle
 							}},
 						}),
 						i(19700),	-- Hakkari Coin
@@ -156,7 +156,7 @@ _.Instances = { tier(CATA_TIER, {
 									19946,	-- Tigule's Harpoon
 									19945,	-- Lizardscale Eyepatch
 									19947,	-- Nat Pagle's Broken Reel
-									22739,	-- TOME_OF_POLYMORPH_TURTLE,
+									22739,	-- Tome of Polymorph: Turtle
 							}},
 						}),
 						i(19699),	-- Razzashi Coin
@@ -191,7 +191,7 @@ _.Instances = { tier(CATA_TIER, {
 								i(19946),	-- Tigule's Harpoon
 								i(19945),	-- Lizardscale Eyepatch
 								i(19947),	-- Nat Pagle's Broken Reel
-								i(22739),	-- TOME_OF_POLYMORPH_TURTLE,
+								i(22739),	-- Tome of Polymorph: Turtle
 							},
 						})),
 						i(19703),	-- Witherbark Coin
@@ -304,9 +304,9 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 						q(74696, {	-- Gurubashi, Vilebranch, and Witherbark Coins
 							["cost"] = {
-								{ "i", 19701, 1 },	-- GURUBASHI_COIN
-								{ "i", 19702, 1 },	-- VILEBRANCH_COIN
-								{ "i", 19703, 1 },	-- WITHERBARK_COIN
+								{ "i", 19701, 1 },	-- Gurubashi Coin
+								{ "i", 19702, 1 },	-- Vilebranch Coin
+								{ "i", 19703, 1 },	-- Witherbark Coin
 							},
 							["repeatable"] = true,
 							["groups"] = {
@@ -327,7 +327,7 @@ _.Instances = { tier(CATA_TIER, {
 						q(74697, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
 							["cost"] = {
 								{ "i", 19706, 1 },	-- Bloodscalp Coin
-								{ "i", 19704, 1 },		-- Sandfury Coin
+								{ "i", 19704, 1 },	-- Sandfury Coin
 								{ "i", 19705, 1 },	-- Skullsplitter Coin
 							},
 							["repeatable"] = true,
@@ -961,15 +961,15 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(74720),	-- Heruspec Ensemble
 		q(74721),	-- Predator Ensemble
 		q(74722),	-- Illusionist Ensemble
-		q(74723),	-- freethinker Ensemble
-		q(74724),	-- confuser Ensemble
-		q(74725),	-- madcap Ensemble
-		q(74726),	-- augur Ensemble
-		q(74727),	-- demonic Ensemble
-		q(74728),	-- vindicator Ensemble
-		q(74730),	-- bloodtinged cloth ensemble
-		q(74732),	-- blooddreanched leather ensemble
-		q(74733),	-- bloodstained mail ensemble
-		q(74734),	-- bloodsoaked plate ensemble
+		q(74723),	-- Freethinker Ensemble
+		q(74724),	-- Confuser Ensemble
+		q(74725),	-- Madcap Ensemble
+		q(74726),	-- Augur Ensemble
+		q(74727),	-- Demonic Ensemble
+		q(74728),	-- Vindicator Ensemble
+		q(74730),	-- Bloodtinged Cloth Ensemble
+		q(74732),	-- Blooddreanched Leather Ensemble
+		q(74733),	-- Bloodstained Mail Ensemble
+		q(74734),	-- Bloodsoaked Plate Ensemble
 	}),
 });
