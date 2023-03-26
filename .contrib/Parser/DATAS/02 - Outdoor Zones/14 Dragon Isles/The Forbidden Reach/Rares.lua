@@ -255,8 +255,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["crs"] = { 201310 },	-- Nidharr
 				["coord"] = { 63.6, 25.5, THE_FORBIDDEN_REACH },
 				["questID"] = 73409,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(197609),	-- Windborne Velocidrake: White Horns (DM!)
+				},
 			}),
 		})),
 	}),

@@ -2520,7 +2520,6 @@ root(ROOTS.Unsorted, {
 				i(204863),	-- Lionguard Greatbelt
 				i(204865),	-- Lionguard Greatbelt
 				i(204866),	-- Lionguard Greatbelt
-				i(204182),	-- Cloak of Dark Descent
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
@@ -2730,7 +2729,6 @@ root(ROOTS.Unsorted, {
 				q(73204),
 				q(73205),
 				q(73209),
-				q(73210),
 				q(73211),
 				q(73212),
 				q(73215),
@@ -2774,7 +2772,6 @@ root(ROOTS.Unsorted, {
 				q(74500),
 				q(74527),
 				q(74576),
-				q(74579),
 				q(74711),
 				q(74712),
 				q(74713),
@@ -3099,8 +3096,6 @@ root(ROOTS.Unsorted, {
 				q(72123),	--
 				q(72124),	--
 				q(72384),	-- Valdrakken Tour
-				q(72811),	--
-				q(72812),	--
 				q(72829),	--
 				q(72830),	--
 				-- 10.0.5.47871
@@ -3357,17 +3352,6 @@ root(ROOTS.Unsorted, {
 					i(190906),	-- Dashing Buccaneer's Breeches
 					i(190907),	-- Dashing Buccaneer's Boots
 
-					-- Honored Valarjar Set [Cloth]
-					i(190081),	-- Mantle of the Honored Valarjar
-					i(190082),	-- Cloak of the Honored Valarjar
-					i(190083),	-- Robe of the Honored Valarjar
-					i(190084),	-- Bracers of the Honored Valarjar
-					i(190085),	-- Sash of the Honored Valarjar
-					i(190086),	-- Sandals of the Honored Valarjar
-					i(190087),	-- Pantaloons of the Honored Valarjar
-					i(190088),	-- Circlet of the Honored Valarjar
-					i(190089),	-- Gloves of the Honored Valarjar
-
 					-- Honored Valarjar Set [Mail]
 					i(190563),	-- Armbands of the Honored Valarjar
 					i(190564),	-- Cape of the Honored Valarjar
@@ -3500,7 +3484,6 @@ root(ROOTS.Unsorted, {
 				q(65719),	--
 				q(65722),	--
 				q(65734),	--
-				q(65736),	--
 				q(65738),	--
 				q(65740),	--
 				q(65759),	--

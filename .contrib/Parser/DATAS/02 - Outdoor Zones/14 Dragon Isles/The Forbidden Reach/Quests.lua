@@ -84,6 +84,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["sourceQuests"] = { 73137 },	-- Chasing the Flame
 				["provider"] = { "n", 199538 },	-- Scalecommander Emberthal
 				["coord"] = { 74.3, 36.9, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(204182),	-- Cloak of Dark Descent
+				},
 			}),
 			q(73156, {	-- Return to Viridia
 				["sourceQuests"] = { 72717 },	-- A Creche Divided
