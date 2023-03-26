@@ -1087,7 +1087,6 @@ for key, value in pairs({
 	[22245] = "一袋肉",	-- Sack of Meat
 	[22246] = "瑟莱德丝之泪",	-- Tear of Theradras
 	[35251] = "卡尼托的箱子",	-- Karnitol's Chest	--TODO: This was taken from wotlk Wowhead
-	--TODO: [35591] = "Disgusting Vat",	-- Disgusting Vat
 	[37099] = "阿塔莱石板",	-- Atal'ai Tablet
 	[50961] = "玛雷姆的箱子",	-- Malem Chest	--TODO: This was taken from wotlk Wowhead
 	[51708] = "伊莉莎的坟墓",	-- Eliza's Grave Dirt	--TODO: This was taken from wotlk Wowhead
@@ -3847,6 +3846,7 @@ for key, value in pairs({
 	--TODO: [393222] = "Supply Trunk",	-- Supply Trunk
 	--TODO: [393282] = "Balloon Box",	-- Balloon Box
 	--TODO: [393283] = "Balloon Box",	-- Balloon Box
+	--TODO: [398778] = "Disgusting Vat",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

@@ -1064,7 +1064,6 @@ for key,value in pairs({
 	[22245] = "Мешок мяса",	-- Sack of Meat
 	[22246] = "Слеза Терадрас",	-- Tear of Theradras
 	[35251] = "Сундук Карнитола",	-- Karnitol's Chest
-	--TODO: [35591] = "Disgusting Vat",	-- Disgusting Vat
 	[37099] = "Табличка племени Атал'ай",	-- Atal'ai Tablet
 	[50961] = "Сундук Малема",	-- Malem Chest
 	[51708] = "Земля с могилы Элизы",	-- Eliza's Grave Dirt
@@ -3824,6 +3823,7 @@ for key,value in pairs({
 	[393222] = "Коробка с припасами",	-- Supply Trunk
 	[393282] = "Ящик из шаров",	-- Balloon Box
 	[393283] = "Ящик из шаров",	-- Balloon Box
+	[398778] = "Мерзкий чан",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only

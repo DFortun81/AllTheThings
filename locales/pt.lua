@@ -1073,7 +1073,6 @@ for key,value in pairs({
 	[22245] = "Saco de Carne",	-- Sack of Meat
 	[22246] = "Lágrima de Theradras",	-- Tear of Theradras
 	[35251] = "Baú de Karnitol",	-- Karnitol's Chest
-	--TODO: [35591] = "Disgusting Vat",	-- Disgusting Vat
 	[37099] = "Tabuleta Atal'ai",	-- Atal'ai Tablet
 	[50961] = "Baú de Malem",	-- Malem Chest	--TODO: This was taken from wotlk Wowhead
 	[51708] = "Terra da Cova de Eliza",	-- Eliza's Grave Dirt	--TODO: This was taken from wotlk Wowhead
@@ -3833,6 +3832,7 @@ for key,value in pairs({
 	[393222] = "Baú de Suprimentos",	-- Supply Trunk
 	[393282] = "Caixa de Balão",	-- Balloon Box
 	[393283] = "Caixa de Balão",	-- Balloon Box
+	[398778] = "Tanque Nojento",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

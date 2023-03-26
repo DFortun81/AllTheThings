@@ -1073,7 +1073,6 @@ for key,value in pairs({
 	[22245] = "고기 부대",	-- Sack of Meat
 	[22246] = "테라드라스의 눈물",	-- Tear of Theradras
 	[35251] = "카니톨의 궤짝",	-- Karnitol's Chest
-	--TODO: [35591] = "Disgusting Vat",	-- Disgusting Vat
 	[37099] = "아탈라이 서판",	-- Atal'ai Tablet
 	[50961] = "말렘의 궤짝",	-- Malem Chest
 	[51708] = "엘리자의 무덤",	-- Eliza's Grave Dirt	--TODO: This was taken from wotlk Wowhead
@@ -3833,6 +3832,7 @@ for key,value in pairs({
 	[393222] = "보급품 보관함",	-- Supply Trunk
 	[393282] = "풍선 상자",	-- Balloon Box
 	[393283] = "풍선 상자",	-- Balloon Box
+	[398778] = "역겨운 보관통",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

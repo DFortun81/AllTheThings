@@ -1072,7 +1072,6 @@ for key,value in pairs({
 	[22245] = "Sac de viande",	-- Sack of Meat
 	[22246] = "Larme de Theradras",	-- Tear of Theradras
 	[35251] = "Coffre de Karnitol",	-- Karnitol's Chest
-	--TODO: [35591] = "Disgusting Vat",	-- Disgusting Vat
 	[37099] = "Tablette atal'ai",	-- Atal'ai Tablet
 	[50961] = "Coffre de Malem",	-- Malem Chest
 	[51708] = "Boue du tombeau d'Eliza",	-- Eliza's Grave Dirt
@@ -3832,6 +3831,7 @@ for key,value in pairs({
 	[393222] = "Malle de fournitures",	-- Supply Trunk
 	[393282] = "Boîte à ballons",	-- Balloon Box
 	[393283] = "Boîte à ballons",	-- Balloon Box
+	[398778] = "Cuve répugnante",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	[9999891] = "Objectic principal uniquement",	-- Main Objective Only
