@@ -177,7 +177,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			-- #if AFTER 7.3.5
 			n(ZONE_DROPS, {
 				i(36659, {	-- Shivery Wand
-					["timeline"] = { "added 10.0.7" },	-- This item is wierd.
+					["timeline"] = { "added 10.0.7" },	-- This item is weird.
 				}),
 				i(35616),	-- Spored Tendrils Spaulders
 			}),
