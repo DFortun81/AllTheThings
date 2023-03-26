@@ -914,7 +914,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(69619),	-- Bone Plate Handguards
 						i(69615),	-- Zombie Walker Legguards
 					})),
-					o(00000,	-- Fragmented Hakkari Bijou
+					o(386669,	-- Fragmented Hakkari Bijou
 					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
 						["description"] = "The first Bijou named 'Fragmented Hakkari Bijou' is near the gong in the middle of the pyramid at roughly 48.6, 42.3.",
 						["groups"] = {
@@ -923,7 +923,7 @@ _.Instances = { tier(CATA_TIER, {
 							}),
 						},
 					})),
-					o(00000,	-- Shattered Hakkari Bijou
+					o(386668,	-- Shattered Hakkari Bijou
 					bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
 						["description"] = "The second Bijou named 'Shattered Hakkari Bijou' is at the same spot, but during phase 2 of the Jin'do Boss Encounter. In the middle of the pyramid at roughly 48.6, 42.3 ",
 						["groups"] = {
