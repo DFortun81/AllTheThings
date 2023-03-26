@@ -647,6 +647,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(19706),	-- Bloodscalp Coin
 						i(19701),	-- Gurubashi Coin
 						i(19700),	-- Hakkari Coin
+						i(19943),	-- Massive Mojo
 						i(19699),	-- Razzashi Coin
 						i(19704),	-- Sandfury Coin
 						i(19705),	-- Skullsplitter Coin
