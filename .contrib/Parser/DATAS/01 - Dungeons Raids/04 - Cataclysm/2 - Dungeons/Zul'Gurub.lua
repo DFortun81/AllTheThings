@@ -101,7 +101,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(19706),	-- Bloodscalp Coin
 						i(19701),	-- Gurubashi Coin
 						i(203743, {	-- Jostled Gurubashi Cache
-							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly get near the water.",
+							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
 							["sym"] = {
 								{"select","itemID",
 									203765,	-- Blue Hakkari Bijou
@@ -132,7 +132,7 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 						i(19700),	-- Hakkari Coin
 						i(203912, {	-- Penny Pouch o' Paragons
-							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly get near the water.",
+							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
 							["sym"] = {
 								{"select","itemID",
 									203765,	-- Blue Hakkari Bijou
@@ -166,7 +166,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(19705),	-- Skullsplitter Coin
 						i(19702),	-- Vilebranch Coin
 						i(203742, bubbleDownSelf({ ["modID"] = 2 }, {	-- Waterlooged Gurubashi Cache
-							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly get near the water.",
+							["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
 							["sym"] = {
 								{"select","itemID",
 									203765,	-- Blue Hakkari Bijou

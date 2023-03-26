@@ -4,6 +4,14 @@
 
 root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 	achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS_LEGACY, {
+		ach(17412, {	-- Craftsman of the Argent Dawn
+			["timeline"] = { "added 10.0.7" },
+			["u"] = REMOVED_FROM_GAME,
+		}),
+		ach(17410, {	-- Craftsman of the Zandalar Tribe
+			["timeline"] = { "added 10.0.7" },
+			["u"] = REMOVED_FROM_GAME,
+		}),
 		ach(10585, {	-- Fel-Smelter
 			["u"] = REMOVED_FROM_GAME,
 			["g"] = {
@@ -46,6 +54,22 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 			}),
 		})),
 		ach(10586, {	-- Mass Obliteration
+			["u"] = REMOVED_FROM_GAME,
+		}),
+		ach(17497, {	-- Renowned Armorsmith
+			["timeline"] = { "added 10.0.7" },
+			["u"] = REMOVED_FROM_GAME,
+		}),
+		ach(17498, {	-- Renowned Leatherworking Specialist
+			["timeline"] = { "added 10.0.7" },
+			["u"] = REMOVED_FROM_GAME,
+		}),
+		ach(17499, {	-- Renowned Tailoring Specialist
+			["timeline"] = { "added 10.0.7" },
+			["u"] = REMOVED_FROM_GAME,
+		}),
+		ach(17496, {	-- Renowned Weaponsmith
+			["timeline"] = { "added 10.0.7" },
 			["u"] = REMOVED_FROM_GAME,
 		}),
 	}),
