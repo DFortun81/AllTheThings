@@ -2,9 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 root(ROOTS.PVP, pvp(tier(SL_TIER, {
-	header(HEADERS.Achievement, SEASON_UNCHAINED, bubbleDownSelf({
-		["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3, ADDED_DF_REL },
-	},{
+	header(HEADERS.Achievement, SEASON_UNCHAINED, {
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount_blue",
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 } }, {
@@ -46,14 +44,14 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3, ADDED_DF_REL },
 				}),
 			})),
-			filter(MOUNTS, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3, ADDED_DF_REL } }, {
 				i(186178, {	-- Vicious War Gorm [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(186179, {	-- Vicious War Gorm [H] (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
-			}),
+			})),
 			filter(TITLES, bubbleDown({ ["collectible"] = false, },{
 				title(78),	-- Combatant <Name>
 				title(32),	-- Challenger <Name>
@@ -73,7 +71,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				title(398),	-- <Name> the Elite Warrior
 				title(29),	-- Gladiator <Name>
 			})),
-			n(PVP_ASPIRANT, {
+			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3, ADDED_DF_REL } }, {
 				filter(CLOAKS, {
 					i(185240),	-- Unchained Aspirant's Cape
 					i(185128),	-- Unchained Aspirant's Cloak
@@ -189,8 +187,8 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(185289),	-- Unchained Aspirant's Sword
 					i(185293),	-- Unchained Aspirant's Warglaive
 				}),
-			}),
-			n(PVP_GLADIATOR, {
+			})),
+			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3, ADDED_DF_REL } }, {
 				filter(CLOAKS, {
 					i(185164),	-- Unchained Gladiator's Cloak
 					i(185245),	-- Unchained Gladiator's Drape
@@ -330,7 +328,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(185312),	-- Unchained Gladiator's Warglaive
 					i(185315),	-- Unchained Gladiator's Xiphos
 				}),
-			}),
+			})),
 			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 }, ["modID"] = 14, ["bonusID"] = 7309 }, {
 				filter(CLOAKS, {
 					i(185164),	-- Unchained Gladiator's Cloak
@@ -477,5 +475,5 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				}),
 			})),
 		},
-	})),
+	}),
 })));

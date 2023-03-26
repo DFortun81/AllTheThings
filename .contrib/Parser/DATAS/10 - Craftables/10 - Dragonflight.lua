@@ -2393,6 +2393,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71982),	-- First Frigid Bubble Poppy Harvest
 			q(71983),	-- First Frigid Saxifrage Harvest
 			q(71984),	-- First Titan-Touched Hochenblume Harvest
+			q(71985),	-- First Titan-Touched Writhebark
 			q(71986),	-- First Titan-Touched Bubble Poppy
 			q(71987),	-- First Titan-Touched Saxifrage
 			q(71988),	-- First Decayed Hochenblume

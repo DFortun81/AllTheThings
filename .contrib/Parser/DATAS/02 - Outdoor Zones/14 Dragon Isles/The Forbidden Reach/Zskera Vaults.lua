@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					["sourceQuests"] = { 74502 },	-- Complimentary Gift
 					["provider"] = { "n", 201714 },	-- Prototype Tinker-Tron
 					["coord"] = { 24.7, 52.0, THE_FORBIDDEN_REACH },
-					["cost"] = { { "i", 203761, 1 }, },	-- 1x Neltharion Gift Token
+					["cost"] = { { "i", 203701, 1 }, },	-- 1x Neltharion Gift Token
 					["repeatable"] = true,
 					["g"] = {
 						i(203700, {	-- Tattered Gift Package
@@ -311,14 +311,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 							["coord"] = { 25.5, 52.5, THE_FORBIDDEN_REACH },
 							["questID"] = 74507,
 							["g"] = {
-								i(203761),	-- Neltharion Gift Token
+								i(203701),	-- Neltharion Gift Token
 							},
 						}),
 						o(386580, {	-- Neltharion Gift
 							["coord"] = { 25.6, 53.8, THE_FORBIDDEN_REACH },
 							["questID"] = 74506,
 							["g"] = {
-								i(203761),	-- Neltharion Gift Token
+								i(203701),	-- Neltharion Gift Token
 							},
 						}),
 						o(385028, {	-- Powerful Flask of Renewal

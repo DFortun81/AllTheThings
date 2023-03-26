@@ -2,9 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 root(ROOTS.PVP, pvp(tier(SL_TIER, {
-	header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDownSelf({
-		["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE, ADDED_DF_REL },
-	},{
+	header(HEADERS.Achievement, SEASON_ETERNAL, {
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
@@ -48,14 +46,14 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE, ADDED_DF_REL },
 				}),
 			})),
-			filter(MOUNTS, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE, ADDED_DF_REL } }, {
 				i(187644, {	-- Vicious Warstalker [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(187642, {	-- Vicious Warstalker [H] (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
-			}),
+			})),
 			filter(TITLES, bubbleDown({ ["collectible"] = false, },{
 				title(78),	-- Combatant <Name>
 				title(32),	-- Challenger <Name>
@@ -75,7 +73,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				title(398),	-- <Name> the Elite Warrior
 				title(29),	-- Gladiator <Name>
 			})),
-			n(PVP_ASPIRANT, {
+			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE, ADDED_DF_REL } }, {
 				filter(CLOAKS, {
 					i(192390),	-- Eternal Aspirant's Cape
 					i(192319),	-- Eternal Aspirant's Cloak
@@ -191,8 +189,8 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(192399),	-- Eternal Aspirant's Sword
 					i(192403),	-- Eternal Aspirant's Warglaive
 				}),
-			}),
-			n(PVP_GLADIATOR, {
+			})),
+			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE, ADDED_DF_REL } }, {
 				n(CLASSES,{
 					["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
 					["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
@@ -455,7 +453,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(192290),	-- Eternal Gladiator's Warglaive
 					i(192289),	-- Eternal Gladiator's Xiphos
 				}),
-			}),
+			})),
 			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE }, ["bonusID"] = 7532 }, {
 				n(CLASSES,{
 					["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
@@ -698,5 +696,5 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				}),
 			})),
 		},
-	})),
+	}),
 })));
