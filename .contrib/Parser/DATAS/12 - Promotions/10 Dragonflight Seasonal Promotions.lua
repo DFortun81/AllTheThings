@@ -52,6 +52,7 @@ root(ROOTS.Promotions, {
 					"removed 10.0.2.47067",
 				},
 			}),
+			-- Season 1
 			i(49703, {	-- Perpetual Purple Firework (TOY!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 2 hours between December 13th, 03:00 p.m. & December 28th, 11:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = {
@@ -59,17 +60,16 @@ root(ROOTS.Promotions, {
 					"removed 10.0.2.47213",
 				},
 			}),
+			i(203716, {	-- Thundering Banner of the Aspects (TOY!)
+				["description"] = "Mythic Dungeon International: DF Season 1\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 7th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Thundering Banner of the Aspects to use in-game!\nSign-ups close 27 January 2022 1PM PDT and The Proving Grounds are on 1 February 1PM PDT - 8 February (US) 1PM PDT.",
+				["timeline"] = { ADDED_DF_0_5, REMOVED_DF_0_7 },
+			}),
 			i(35227, {	-- Goblin Weather Machine - Prototype 01-B (TOY!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between February 1st, 10:00 a.m. & February 5th, 11:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = {
 					"added 10.0.5.47884",
 					"removed 10.0.5.47936",
 				},
-			}),
-			-- Season 1
-			i(203716, {	-- Thundering Banner of the Aspects (TOY!)
-				["description"] = "Mythic Dungeon International: DF Season 1\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 7th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Thundering Banner of the Aspects to use in-game!\nSign-ups close 27 January 2022 1PM PDT and The Proving Grounds are on 1 February 1PM PDT - 8 February (US) 1PM PDT.",
-				["timeline"] = { ADDED_DF_0_5, REMOVED_DF_0_7 },
 			}),
 			i(38301, {	-- D.I.S.C.O. (TOY!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between February 21st, 10:00 a.m. & April 2nd, 11:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
