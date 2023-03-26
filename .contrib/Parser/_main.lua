@@ -2132,7 +2132,7 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	else
 		t = struct("achievementID", id, altID);
 	end
-	if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end
+	--if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end
 	return t;
 end
 achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
