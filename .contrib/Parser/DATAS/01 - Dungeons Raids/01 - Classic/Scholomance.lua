@@ -306,7 +306,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 					q(7647, {	-- Judgment and Redemption
 						["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-						["sourceQuest"] = 7646,	-- The Divination Scryer
+						-- ["sourceQuest"] = 7646,	-- The Divination Scryer -- TODO: this quest needs to be sourced! (see MissingQuests.txt)
 						["coord"] = { 37.6, 32.6, STORMWIND_CITY },
 						["timeline"] = { "removed 4.0.3" },
 						["classes"] = { PALADIN },

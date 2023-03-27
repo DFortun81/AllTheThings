@@ -3350,6 +3350,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				q(1502, {	-- Thun'grim Firegaze
+					["qg"] = 5810,	-- Uzzek
+					["sourceQuest"] = 1498,	-- Path of Defense
+					["coord"] = { 61.38, 21.11, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = lvlsquish(10, 10, 5),
+				}),
 				q(13620, {	-- To Dinah, at Once!
 					["qg"] = 8582,	-- Kadrak
 					["sourceQuest"] = 13619,	-- Final Report

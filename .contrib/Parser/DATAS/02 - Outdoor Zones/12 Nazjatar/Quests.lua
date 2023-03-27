@@ -704,7 +704,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["provider"] = { "n", 151763 },	-- Isla
 			["coord"] = { 37.7, 55.3, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["sourceQuest"] = 154248,	-- A Tempered Blade
+			["sourceQuest"] = 56156,	-- A Tempered Blade
 		}),
 		q(56176, {	-- Desperate Need (H)
 			["u"] = NEVER_IMPLEMENTED,
@@ -1244,7 +1244,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(56422, {	-- On Ghostly Wings
 			["provider"] = { "n", 154601 },	-- Kelya Moonfall
 			["coord"] = { 80.2, 31.8, NAZJATAR },
-			["sourceQuest"] = 154514,	-- Saving Corin
+			["sourceQuest"] = 56321,	-- Saving Corin
 		}),
 		q(55625, {	-- Pearls of Unimaginable Power
 			["provider"] = { "n", 152407 },	-- Arcanist Owara
@@ -1778,7 +1778,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["provider"] = { "n", 153509 },	-- Artisan Okata
 			["coord"] = { 37.8, 55.8, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["sourceQuest"] = 154248,	-- A Tempered Blade
+			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["g"] = {
 				crit(3, {	-- Learn about the Scrying Stones of Nazjatar
 					["achievementID"] = 13635,	-- Tour of the Depths
@@ -2268,7 +2268,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["provider"] = { "n", 150101 },	-- Lady Jaina Proudmoore
 			["coord"] = { 45.5, 74.9, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["sourceQuest"] = 155482,	-- In Deep
+			["sourceQuest"] = 56643,	-- In Deep
 		}),
 		q(56429, {	-- Up Against It (H)
 			["provider"] = { "n", 150196 },	-- First Arcanist Thalyssra

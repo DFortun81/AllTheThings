@@ -1190,7 +1190,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1841, {	-- Velora Nitely and the Brutal Legguards
 					["qg"] = 5878,	-- Thun'grim Firegaze
-					["sourceQuest"] = 18382,	-- Brutal Armor
+					["sourceQuest"] = 1838,	-- Brutal Armor
 					["coord"] = { 257.2, 30.2, THE_BARRENS },
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARRIOR },

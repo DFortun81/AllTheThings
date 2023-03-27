@@ -758,7 +758,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						q(56576, {	-- Aqir Extermination
 							["coord"] = { 42.4, 55.9, 1527 },
 							["provider"] = { "n", 159920 },	-- Zahra Sandstalker
-							["sourceQuest"] = 159820,	-- Obelisk of the Sun
+							["sourceQuest"] = 57990,	-- Obelisk of the Sun
 						}),
 						q(58009, {	-- To the Moon
 							["coord"] = { 42.4, 55.9, 1527 },

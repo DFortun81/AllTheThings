@@ -1391,7 +1391,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(758, {	-- Thunderhorn Cleansing
 					["qg"] = 2948,	-- Mull Thunderhorn
-					["sourceQuest"] = 5415,	-- Thunderhorn Totem
+					["sourceQuest"] = 756,	-- Thunderhorn Totem
 					["coord"] = { 48.5, 60.4, MULGORE },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = { TAUREN },
