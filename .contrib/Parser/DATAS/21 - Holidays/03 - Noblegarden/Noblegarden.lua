@@ -30,7 +30,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
 	}),
 	i(188694, {	-- Spring Florist's Pouch (TOY!)
-		["timeline"] = { "added 9.1.5.40871" },
+		["timeline"] = { ADDED_9_1_5 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	-- Appearances
@@ -362,7 +362,7 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 						["timeline"] = { "added 3.1.0.9733" },
 					}),
 					i(188698, {	-- Eagger Basket (TOY!)
-						["timeline"] = { "added 9.1.5.40871" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(45067, {	-- Egg Basket
 						["timeline"] = { "added 3.1.0.9733" },
@@ -396,7 +396,7 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 						["timeline"] = { "added 3.1.0.9733" },
 					}),
 					i(188698, {	-- Eagger Basket (TOY!)
-						["timeline"] = { "added 9.1.5.40871" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(45067, {	-- Egg Basket
 						["timeline"] = { "added 3.1.0.9733" },

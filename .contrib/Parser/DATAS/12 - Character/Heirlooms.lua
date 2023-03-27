@@ -19,10 +19,10 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		["timeline"] = { "added 8.1.5.29701" },
 	}),
 	i(187997, {	-- Eternal Heirloom Armor Casing
-		["timeline"] = { "added 9.1.5.40871" },
+		["timeline"] = { ADDED_9_1_5 },
 	}),
 	i(187998, {	-- Eternal Heirloom Scabbard
-		["timeline"] = { "added 9.1.5.40871" },
+		["timeline"] = { ADDED_9_1_5 },
 	}),
 	i(204336, {	-- Awakened Heirloom Armor Casing
 		["timeline"] = { ADDED_10_0_7 },

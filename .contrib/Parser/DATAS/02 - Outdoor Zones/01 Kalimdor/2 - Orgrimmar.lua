@@ -2960,7 +2960,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(62568, {	-- Adventurers Wanted: Chromie's Call
 					["qg"] = 168431,	-- Warlord Breka Grimaxe
 					["coord"] = { 48.3, 71.4, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3034,16 +3034,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(60361, {	-- Battle for Azeroth: Mission Statement
+				q(60361, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Battle for Azeroth: Mission Statement
 					["sourceQuests"] = { 60360 },	-- An Urgent Meeting
 					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
 					["coord"] = { 48.3, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { ADDED_9_0_1 },
 					["g"] = {
 						i(178942),	-- War-Chain of the Horde
 					},
-				}),
+				})),
 				q(1508, {	-- Blind Cazul
 					["qg"] = 5909,	-- Cazul
 					["sourceQuests"] = {
@@ -3114,7 +3113,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 60123,	-- Burning Crusade: To Outland!
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["repeatable"] = true,
@@ -3122,7 +3121,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60123, {	-- Burning Crusade: To Outland!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["isBreadcrumb"] = true,
@@ -3156,7 +3155,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60887, {	-- Cataclysm: Onward to Adventure in Kalimdor
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -3597,7 +3596,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60970, {	-- Legion: Onward to Adventure in the Broken Isles
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["repeatable"] = true,
@@ -3676,7 +3675,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60964, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["repeatable"] = true,
@@ -3684,7 +3683,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60126, {	-- Mists of Pandaria: To Pandaria!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["isBreadcrumb"] = true,
@@ -4171,7 +4170,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60968, {	-- Warlords of Draenor: Onward to Adventure in Draenor
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["repeatable"] = true,
@@ -4270,7 +4269,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["sourceQuest"] = 60097,	-- Wrath of the Lich King: To Northrend!
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["repeatable"] = true,
@@ -4278,7 +4277,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60097, {	-- Wrath of the Lich King: To Northrend!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["isBreadcrumb"] = true,
 				}),
@@ -4347,9 +4346,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				n(175050, {	-- Aneka Melae
+				n(175050, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Aneka Melae
 					["coord"] = { 37.5, 71.4, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						n(PVP_ASPIRANT, {
@@ -4552,7 +4550,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							}),
 						}),
 					},
-				}),
+				})),
 				n(52809, {	-- Blax Bottlerocket <Toys and Novelties>
 					["coords"] = {
 						{ 58.2, 62.6, ORGRIMMAR },
@@ -4686,9 +4684,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
-				n(179897, {	-- Ca'nees
+				n(179897, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Ca'nees
 					["coord"] = { 40.0, 61.0, ORGRIMMAR },
-					["timeline"] = { "added 9.1.0.39226" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(187009),	-- Dazzling Spectacles
@@ -4697,7 +4694,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(186090),	-- Simple Glasses
 						i(187010),	-- Tasteful Eyeglasses
 					},
-				}),
+				})),
 				n(50477, {	-- Champion Uru'zin <Darkspear Quartermaster>
 					["coord"] = { 49.9, 58.1, ORGRIMMAR },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -5229,14 +5226,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(168623, {	-- Kazak Darkscream <Warlock Trainer>
 					["coord"] = { 74.6, 47.2, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(189719, {	-- Barbed Collar of the Incubus
-							["timeline"] = { "added 9.2.0.42423" },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 						i(189720, {	-- Barbed Collar of the Succubus
-							["timeline"] = { "added 9.2.0.42423" },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 					},
 				}),
@@ -6152,10 +6149,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
-				n(169166, {	-- Provisioner Jin'hake
+				n(169166, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Provisioner Jin'hake
 					["description"] = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
 					["coord"] = { 72.6, 44.6, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36216" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(175161),	-- Expeditionary Axe
@@ -6166,7 +6162,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(175163),	-- Expeditionary Quarterstaff
 						i(175164),	-- Expeditionary Staff
 					},
-				}),
+				})),
 				n(46359, {	-- Punra <Blacksmithing Supplies>
 					["coord"] = { 45.0, 77.6, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },

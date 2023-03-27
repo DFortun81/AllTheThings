@@ -14,7 +14,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	}),
 	-- This wasn't showing on WoWHead, might not be there yet?
 	i(187997, {	-- Eternal Heirloom Armor Casing
-		["timeline"] = { "added 9.1.5.40871" },
+		["timeline"] = { ADDED_9_1_5 },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),

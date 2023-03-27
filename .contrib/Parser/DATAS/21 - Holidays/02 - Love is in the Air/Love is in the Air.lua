@@ -536,7 +536,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							n(39679, {	-- Corla, Herald of Twilight
 								BOUQUET_RED,
 								i(188693, {	-- Pouch of Red Rose Petals
-									["timeline"] = { "added 9.1.5.40871" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							}),
 						}),
@@ -544,7 +544,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							n(39679, {	-- Corla, Herald of Twilight
 								BOUQUET_RED,
 								i(188693, {	-- Pouch of Red Rose Petals
-									["timeline"] = { "added 9.1.5.40871" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							}),
 						}),
@@ -1774,7 +1774,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					}),
 					i(187998, {	-- Eternal Heirloom Scabbard
 						["cost"] = { { "i", 49927, 450 } },	-- 450x Love Token
-						["timeline"] = { "added 9.1.5.40871" },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(122341, {	-- Timeworn Heirloom Scabbard

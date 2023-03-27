@@ -1,10 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(BFA_TIER, {
+root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_1 } }, {
 	d(MYTHIC_DUNGEON, {
-		n(AZERITE_ESSENCES, bubbleDownSelf({ ["timeline"] = { "added 9.0.0", } }, {
+		n(AZERITE_ESSENCES, {
 			i(169491),	-- Focused Life Anima
 			-- Requires Tank Loot Spec
 			i(168399, {	-- Fetish of the Dark Caverns (Rank 1)
@@ -42,6 +41,6 @@ _.Instances = { tier(BFA_TIER, {
 				["cost"] = { { "i", 169491, 8 } },	-- 8x Focused Life Anima
 				["classes"] = HEALERS,
 			}),
-		})),
+		}),
 	}),
-})};
+})));

@@ -81,12 +81,12 @@ local InfiniteTimereaver =
 				}),
 				i(187997, {	-- Eternal Heirloom Armor Casing
 					["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
-					["timeline"] = { "added 9.1.5.40871" },
+					["timeline"] = { ADDED_9_1_5 },
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(187998, {	-- Eternal Heirloom Scabbard
 					["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
-					["timeline"] = { "added 9.1.5.40871" },
+					["timeline"] = { ADDED_9_1_5 },
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(122340, {	-- Timeworn Heirloom Armor Casing

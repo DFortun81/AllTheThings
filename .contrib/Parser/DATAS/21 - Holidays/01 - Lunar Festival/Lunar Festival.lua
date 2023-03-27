@@ -1245,7 +1245,7 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(187997, {	-- Eternal Heirloom Armor Casing
-						["timeline"] = { "added 9.1.5.40871" },
+						["timeline"] = { ADDED_9_1_5 },
 						["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),

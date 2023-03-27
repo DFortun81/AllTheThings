@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["timeline"] = {
 					"added 8.1.5.29701",
 					"removed 8.2",	-- Retired with the implementation of 8.2
-					"added 9.2",	-- Reported available again 2022-03-21
+					ADDED_9_2_0,	-- Reported available again 2022-03-21
 				},
 			}),
 			q(48402, {	-- A Poisonous Touch
@@ -654,7 +654,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["timeline"] = {
 					"added 8.1.5.29701",
 					"removed 8.2",	-- Retired with the implementation of 8.2
-					"added 9.2",	-- Reported available again 2022-03-21
+					ADDED_9_2_0,	-- Reported available again 2022-03-21
 				},
 			}),
 			q(49125, {	-- Negative Blood
@@ -998,7 +998,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["timeline"] = {
 					"added 8.1.5.29701",
 					"removed 8.2",	-- Retired with the implementation of 8.2
-					"added 9.2",	-- Reported available again 2022-03-21
+					ADDED_9_2_0,	-- Reported available again 2022-03-21
 				},
 			}),
 			q(49477, {	-- Surprise Backup

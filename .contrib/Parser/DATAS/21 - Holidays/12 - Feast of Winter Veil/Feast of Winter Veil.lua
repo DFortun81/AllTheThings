@@ -577,11 +577,11 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
 					{ "i", 187560 },	-- Rockin' Rollin' Racer Pack
 				},
-				["timeline"] = { "added 9.1.5.40871" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			ach(15181, {	-- Rock n' Roll (2021)
 				["provider"] = { "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
-				["timeline"] = { "added 9.1.5.40871" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			ach(15645, {	-- To Catch Falling Stars (2022)
 				["provider"] = { "i", 191937 },	-- Falling Star Catcher (TOY!)
@@ -1118,12 +1118,12 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 187520 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2021.",
-				["timeline"] = { "added 9.1.5.40871", "removed 9.1.5.41793" },
+				["timeline"] = { ADDED_9_1_5, "removed 9.1.5.41793" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["groups"] = {
 					i(187422, {	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
-						["timeline"] = { "added 9.1.5.40871" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(128768, {	-- Candy Cane
 						["timeline"] = { "added 6.2.2.20395" },
@@ -1448,38 +1448,32 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(64639, { 	-- A Winter Veil Gift (2021)
+			q(64639, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, "removed 9.1.5.41793" } }, { 	-- A Winter Veil Gift (2021)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 187561 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2021.",
-				["timeline"] = { "added 9.1.5.40871", "removed 9.1.5.41793" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
-					i(187560, {	-- Rockin' Rollin' Racer Pack
-						["timeline"] = { "added 9.1.5.40871" },
-					}),
+					i(187560),	-- Rockin' Rollin' Racer Pack
 				},
-			}),
-			q(66507, { 	-- A Winter Veil Gift (2022)
+			})),
+			q(66507, bubbleDownSelf({ ["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" } }, { 	-- A Winter Veil Gift (2022)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 192094 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2022.",
-				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
-					i(191937, {	-- Falling Star Catcher (TOY!)
-						["timeline"] = { "added 10.0.2.47213" },
-					}),
+					i(191937),	-- Falling Star Catcher (TOY!)
 				},
-			}),
+			})),
 			q(7022, {	-- Greatfather Winter is Here! (Alliance)
 				["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				-- #if AFTER CATA
@@ -2148,7 +2142,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 					i(45057),	-- Wind-Up Train Wrecker (TOY!)
 					i(188680, {	-- Winter Veil Chorus Book (TOY!)
-						["timeline"] = { "added 9.1.5.40871" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(116691, {	-- Zhevra Lounge Cusion (TOY!)
 						["timeline"] = { "added 6.0.2" },
@@ -2235,7 +2229,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(17201),	-- Recipe: Winter Veil Egg Nog [CATA+] / Recipe: Egg Nog
 					-- #endif
 					i(188680, {	-- Winter Veil Chorus Book (TOY!)
-						["timeline"] = { "added 9.1.5.40871" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					-- #if AFTER 5.1.0
 					i(70923, {	-- Gaudy Winter Veil Sweater
@@ -2450,7 +2444,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	holiday(235485, {	-- Winter's Veil
 		q(45766, {["isYearly"]=true}),	-- finding Greatfather Winter in Highmountain (npc ID 104710)
 		q(64628, {	-- Triggered when learning the additional things for the Rockin' Rollin' Toy.
-			["timeline"] = { "added 9.1.5.40871" },
+			["timeline"] = { ADDED_9_1_5 },
 		}),
 	}),
 });

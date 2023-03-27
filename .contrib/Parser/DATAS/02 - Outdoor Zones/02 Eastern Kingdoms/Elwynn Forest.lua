@@ -574,7 +574,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 29080,	-- Join the Battle
 							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
-							["timeline"] = { "added 9.0.5.37893" },
+							["timeline"] = { ADDED_9_0_5 },
 							["races"] = { KULTIRAN },
 							["groups"] = {
 								i(57258, {	-- Wolf Hunter's Vest

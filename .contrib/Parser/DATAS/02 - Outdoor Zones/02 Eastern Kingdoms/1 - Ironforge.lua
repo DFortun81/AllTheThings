@@ -1459,11 +1459,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(187997, {	-- Eternal Heirloom Armor Casing
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(187998, {	-- Eternal Heirloom Scabbard
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(204336, {	-- Awakened Heirloom Armor Casing
@@ -1477,13 +1477,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						filter(TOYS, {
 							gold(10000, i(187896, {	-- Scouting Map: A Stormstout's Guide to Pandaria (TOY!)
-							["timeline"] = { "added 9.1.5.40871" },
+							["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187897, {	-- Scouting Map: Cataclysm's Consequences (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187869, {	-- Scouting Map: Into the Shadowlands (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(150746, {	-- Scouting Map: Modern Provisioning of the Eastern Kingdoms (TOY!)
 								["timeline"] = { "added 7.2.5.23910" },
@@ -1494,19 +1494,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["races"] = ALLIANCE_ONLY,
 							})),
 							gold(10000, i(187895, {	-- Scouting Map: The Dangers of Draenor (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187899, {	-- Scouting Map: The Many Curiosities of Outland (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187900, {	-- Scouting Map: The Wonders of Kul Tiras and Zandalar (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187898, {	-- Scouting Map: True Cost of the Northrend Campaign (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187875, {	-- Scouting Map: United Fronts of the Broken Isles (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 						}),
 						n(WEAPONS, {

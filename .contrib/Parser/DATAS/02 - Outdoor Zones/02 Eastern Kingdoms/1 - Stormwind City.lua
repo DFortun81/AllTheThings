@@ -2965,7 +2965,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(62567, {	-- Adventurers Wanted: Chromie's Call
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.6, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3264,7 +3264,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["sourceQuest"] = 60120,	-- Burning Crusade: To Outland!
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -3272,7 +3272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60120, {	-- Burning Crusade: To Outland!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3298,7 +3298,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60891, {	-- Cataclysm: Onward to Adventure in the Eastern Kingdoms
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -4072,7 +4072,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60971, {	-- Legion: Onward to Adventure in the Broken Isles
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -4149,7 +4149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44395,	-- Celestine of the Harvest
 					["coord"] = { 57.6, 24.8, STORMWIND_CITY },
 					["name"] = "Mark of the Nightwing Raven",	-- TODO: What is this?
-					["timeline"] = { "added 9.1.5" },
+					["timeline"] = { ADDED_9_1_5 },
 					["classes"] = { DRUID },
 				}),
 				q(1666, {	-- Marshal Haggard
@@ -4298,7 +4298,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["lockCriteria"] = { 1, "lvl", 50 },
-					["timeline"] = { "added 9.0.1" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -5549,7 +5549,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60969, {	-- Warlords of Draenor: Onward to Adventure in Draenor
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -5608,7 +5608,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["sourceQuest"] = 60096,	-- Wrath of the Lich King: To Northrend!
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -5747,9 +5747,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				-- #endif
-				n(175051, {	-- Alice Fischer <Corrupted Aspirant Vendor>
+				n(175051, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Alice Fischer <Corrupted Aspirant Vendor>
 					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						n(PVP_ASPIRANT, {
@@ -5952,7 +5951,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 						}),
 					},
-				}),
+				})),
 				-- #if AFTER 10.0.5
 				n(53641, {	-- Allison Potts <Heavy Armor Merchant>
 					["coord"] = { 64.8, 48.0, STORMWIND_CITY },
@@ -6436,13 +6435,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(164942, {	-- Evelyn Thorn <Warlock Trainer>
 					["coord"] = { 79.4, 69.8, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["groups"] = {
 						i(189719, {	-- Barbed Collar of the Incubus
-							["timeline"] = { "added 9.0.1.36228" },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 						i(189720, {	-- Barbed Collar of the Succubus
-							["timeline"] = { "added 9.0.1.36228" },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 					},
 				}),
@@ -6680,28 +6679,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2665),	-- Stormwind Seasoning Herbs
 					},
 				}),
-				n(179896, {	-- Finn
+				n(179896, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Finn
 					["coord"] = { 61.0, 65.0, STORMWIND_CITY },
-					["timeline"] = { "added 9.1.0.39226" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(187009, {	-- Dazzling Spectacles
-							["timeline"] = { "added 9.1.0.39226" },
-						}),
-						i(186092, {	-- Historical Perspective Shifters
-							["timeline"] = { "added 9.1.0.39226" },
-						}),
-						i(186091, {	-- Onyx Glare-Reducers
-							["timeline"] = { "added 9.1.0.39226" },
-						}),
-						i(186090, {	-- Simple Glasses
-							["timeline"] = { "added 9.1.0.39226" },
-						}),
-						i(187010, {	-- Tasteful Eyeglasses
-							["timeline"] = { "added 9.1.0.39226" },
-						}),
+						i(187009),	-- Dazzling Spectacles
+						i(186092),	-- Historical Perspective Shifters
+						i(186091),	-- Onyx Glare-Reducers
+						i(186090),	-- Simple Glasses
+						i(187010),	-- Tasteful Eyeglasses
 					},
-				}),
+				})),
 				n(1298, {	-- Frederick Stover <Bow & Arrow Merchant>
 					-- #if AFTER WRATH
 					["coord"] = { 58.6, 69.0, STORMWIND_CITY },
@@ -7513,35 +7501,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})
 					},
 				}),
-				n(167429, {	-- Quartermaster Richter
+				n(167429, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Quartermaster Richter
 					["description"] = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
 					["coord"] = { 79.5, 69.0, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36216" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(175173, {  -- Expeditionary Cudgel
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
-						i(175172, {  -- Expeditionary Dagger
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
-						i(175166, {  -- Expeditionary Greatsword
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
-						i(175162, {  -- Expeditionary Longbow
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
-						i(175168, {  -- Expeditionary Quarterstaff
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
-						i(175170, {  -- Expeditionary Short Sword
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
-						i(175167, {  -- Expeditionary Staff
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
+						i(175173),	-- Expeditionary Cudgel
+						i(175172),	-- Expeditionary Dagger
+						i(175166),	-- Expeditionary Greatsword
+						i(175162),	-- Expeditionary Longbow
+						i(175168),	-- Expeditionary Quarterstaff
+						i(175170),	-- Expeditionary Short Sword
+						i(175167),	-- Expeditionary Staff
 					},
-				}),
+				})),
 				n(53991, {	-- Quincy Cutler <Owner and Proprietor>
 					["timeline"] = { "added 4.2.0.14313" },
 					["coord"] = { 64.0, 46.2, STORMWIND_CITY },
