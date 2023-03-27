@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
 				["provider"] = { "n", 161905 },	-- Bonesmith Heirmir
 				["coord"] = { 42.8, 31.9, SEAT_OF_THE_PRIMUS },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 				["g"] = {
 					follower(1262),	-- Bonesmith Heirmir
 				},
@@ -504,10 +504,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["description"] = "Requires Renown 22.",
 				["provider"] = { "n", 175998 },    -- Elspeth Larink
 				["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
-				["timeline"] = {
-					ADDED_SL_REL,
-					"removed 9.1.0.39226",
-				},
+				["timeline"] = { ADDED_SL_REL, REMOVED_9_1_0 },
 			}),
 			q(64084, {	-- Necrolord Tactician
 				["description"] = "Requires Renown 59.",
@@ -518,10 +515,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["description"] = "Requires Renown 7.",
 				["provider"] = { "n", 175998 },    -- Elspeth Larink
 				["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
-				["timeline"] = {
-					ADDED_SL_REL,
-					"removed 9.1.0.39226",
-				},
+				["timeline"] = { ADDED_SL_REL, REMOVED_9_1_0 },
 			}),
 			q(64324, {	-- Necrolord Veteran #2
 				["description"] = "Requires Renown 43.",
@@ -707,7 +701,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
 				["provider"] = { "n", 183248 },	-- Construct Attendant
 				["coord"] = { 37.9, 36.2, SEAT_OF_THE_PRIMUS },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 				["g"] = {
 					follower(1263),	-- Emeni
 				},
@@ -919,7 +913,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["isWeekly"] = true,
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
-				["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
+				["timeline"] = { ADDED_SL_REL, REMOVED_9_1_5 },
 			}),
 			q(62864, {	-- Return Lost Souls (10 soul version)
 				-- ["sourceQuests"] = {  },	-- TODO
@@ -927,7 +921,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 				["isWeekly"] = true,
-				["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
+				["timeline"] = { ADDED_SL_REL, REMOVED_9_1_5 },
 			}),
 			q(62865, {	-- Return Lost Souls (15 soul version)
 				-- ["sourceQuests"] = {  },	-- TODO
@@ -935,7 +929,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 				["isWeekly"] = true,
-				["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
+				["timeline"] = { ADDED_SL_REL, REMOVED_9_1_5 },
 			}),
 			q(62866, {	-- Return Lost Souls (20 soul version)
 				["sourceQuests"] = { 62846 },	-- Sanctum Improvements

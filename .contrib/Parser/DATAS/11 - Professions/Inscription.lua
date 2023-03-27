@@ -860,7 +860,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(192848, {["timeline"]={"added 7.0.3","removed 8.0.1"}}),	-- Glyph of the Wraith Walker
 			r(225559, {["timeline"]={"added 7.2.0"}}),	-- Glyph of Wrathguard
 			r(225547),	-- Glyph of Yu'lon's Grace
-			r(360882, {["timeline"]={"added 9.1.5"}}),	-- Mark of the Duskwing Raven
+			r(360882, {["timeline"]={ADDED_9_1_5}}),	-- Mark of the Duskwing Raven
 		}),
 		cat(492, {	-- Mass Milling
 			r(209658),	-- Mass Mill Aethril
@@ -1614,14 +1614,14 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 	--[[
 	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL } }, {
 		cat(1410, {	-- Contracts
-			r(354000, {["timeline"]={"added 9.1.0"}}),	-- Contract: Death's Advance
+			r(354000, {["timeline"]={ADDED_9_1_0}}),	-- Contract: Death's Advance
 			r(311412),	-- Contract: Court of Harvesters
 			r(311409),	-- Contract: The Ascended
 			r(359786, {["timeline"]={"added 9.2.0"}}),	-- Contract: The Enlightened
 			r(311411),	-- Contract: The Undying Army
 			r(311410),	-- Contract: The Wild Hunt
 		}),
-		cat(786, sharedDataSelf({ ["timeline"] = { "added 9.1.5" }},{	-- Glyphs
+		cat(786, sharedDataSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- Glyphs
 			r(367389, {["timeline"]={"added 9.2.0"}}),	-- Glyph of the Spectral Lupine
 			r(367393, {["timeline"]={"added 9.2.0"}}),	-- Glyph of the Spectral Vulpine
 			r(362412),	-- Glyph of the Wild Mushroom
@@ -1680,7 +1680,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		cat(1416, {	-- Vantus Runes
 			r(311453),	-- Vantus Rune: Castle Nathria
-			r(354394, {["timeline"]={"added 9.1.0"}}),	-- Vantus Rune: Sanctum of Domination
+			r(354394, {["timeline"]={ADDED_9_1_0}}),	-- Vantus Rune: Sanctum of Domination
 			r(359890, {["timeline"]={"added 9.2.0"}}),	-- Vantus Rune: Sepulcher of the First Ones
 		}),
 	}))),

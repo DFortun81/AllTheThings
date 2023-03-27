@@ -10,6 +10,9 @@ local BLOOM = -146;
 
 root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(WOD_TIER, {
+		i(187905, {	-- Boar Soul
+			["timeline"] = { ADDED_9_1_5 },
+		}),
 		n(-23, {
 			["u"] = TIMEWALKING,
 			["g"] = {
@@ -306,9 +309,6 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(110050),	-- Dagger of the Sanguine Emeralds
 					i(110005),	-- Crystalline Blood Drop
 					i(110010),	-- Mote of Corruption
-					i(187905, {	-- Boar Soul
-						["timeline"] = { "added 9.1.5" },
-					}),
 				},
 			}),
 		}),
@@ -356,13 +356,10 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(110042),	-- Gug'rokk's Smasher
 					i(110044),	-- Ogre Dinner Plate
 					i(110043),	-- Gug'rokk's Grandmother
-					i(187905, {	-- Boar Soul
-						["timeline"] = { "added 9.1.5" },
-					}),
 				},
 			}),
 		}),
-		inst_tw(536, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- Grimrail Depot
+		inst_tw(536, bubbleDown({ ["timeline"] = { ADDED_9_1_5, }},{	-- Grimrail Depot
 			e(1138, {	-- Rocketspark and Borka
 				["crs"] = {
 					77816,	-- Borka the Brute
@@ -404,7 +401,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 		})),
-		inst_tw(558, bubbleDown({ ["timeline"] = { "added 8.1.5.29701", "removed 9.1.5", }},{	-- Iron Docks
+		inst_tw(558, bubbleDown({ ["timeline"] = { "added 8.1.5.29701", REMOVED_9_1_5 }},{	-- Iron Docks
 			e(1235, {	-- Fleshrender Nok'gar
 				["crs"] = {
 					81297,	-- Dreadfang
@@ -507,9 +504,6 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(138806),	-- Illusion: Mark of Shadowmoon
 					i(110039),	-- Portal-Ripper's Staff
 					i(110038),	-- Ner'zhul's Ritual Blade
-					i(187905, {	-- Boar Soul
-						["timeline"] = { "added 9.1.5" },
-					}),
 				},
 			}),
 		}),

@@ -509,9 +509,7 @@ _.Zones =
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
 					["coord"] = { 42.7, 28.4, LEGION_DALARAN },
 					["lvl"] = 45,
-					["timeline"] = {
-						"removed 9.1",
-					},
+					["timeline"] = { REMOVED_9_1_0 },
 				}),
 				q(45917, {	-- Following the Scent
 					["sourceQuests"] = { 45125 },	-- Dabbling in the Demonic
@@ -766,9 +764,7 @@ _.Zones =
 					["provider"] = { "n", 114719 },	-- Trader Caelen
 					["coord"] = { 42.3, 27.0, LEGION_DALARAN },
 					["lvl"] = 45,
-					["timeline"] = {
-						"removed 9.1",
-					},
+					["timeline"] = { REMOVED_9_1_0 },
 				}),
 				q(44549, {	-- Master of the Isles
 					["isBreadcrumb"] = true,
@@ -867,9 +863,7 @@ _.Zones =
 					["provider"] = { "n", 114719 },	-- Trader Caelen
 					["coord"] = { 42.3, 27.0, LEGION_DALARAN },
 					["lvl"] = 45,
-					["timeline"] = {
-						"removed 9.1",
-					},
+					["timeline"] = { REMOVED_9_1_0 },
 				}),
 				q(47022, {	-- Protection: Aid of the Illidari
 					["sourceQuests"] = {

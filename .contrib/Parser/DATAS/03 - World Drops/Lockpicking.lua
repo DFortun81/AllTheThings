@@ -179,7 +179,7 @@ root(ROOTS.WorldDrops, {
 				["timeline"] = { "added 9.2.0.42423" },
 			}),
 			i(186160, {	-- Locked Artifact Case
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 				["sym"] = { {
 					"select", "itemID",
 					-- Last Updated: 2022-05-02, Crieve. 28 items total, no exclusives.

@@ -1,9 +1,7 @@
 -------------------------------------------
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
-
-root(ROOTS.Secrets, bubbleDown({["timeline"] = { "added 9.1.5" } },{
-	-- TODO: feels weird to have just a basic quest chain in 'Secrets', so maybe these random Pet quest chains will just move into the Battle Pets category eventually
+root(ROOTS.Secrets, bubbleDown({["timeline"] = { ADDED_9_1_5 } },{
 	n(179140, {	-- Gurgl
 		q(64167,{	-- Pets Detective
 			["qg"] = 96479,	-- Breanni

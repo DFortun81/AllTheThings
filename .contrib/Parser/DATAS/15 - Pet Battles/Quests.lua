@@ -1177,8 +1177,7 @@ root(ROOTS.PetBattles, petbattle({
 				SACK_OF_PET_SUPPLIES
 			},
 		}),
-		q(63435, {	-- Temple Throwdown
-			["timeline"] = { "added 9.1.0.39226" },
+		q(63435, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Temple Throwdown
 			["provider"] = { "n", 176655 },	-- Anthea <Carefree Pet Tamer>
 			["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
 			["g"] = {
@@ -1187,7 +1186,7 @@ root(ROOTS.PetBattles, petbattle({
 					i(184867),	-- Squibbles (PET!)
 				}),
 			},
-		}),
+		})),
 		q(32441, {	-- Thundering Pandaren Spirit
 			["coord"] = { 64.9, 93.8, KUN_LAI_SUMMIT },
 			["provider"] = { "n", 68465 },	-- Thundering Pandaren Spirit

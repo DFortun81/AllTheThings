@@ -150,14 +150,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 								{ "c", ANIMA, 15000 },
 								{ "c", GRATEFUL, 25 },
 							},
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 						i(187881, {	-- Ram Soul
 							["cost"] = {
 								{ "c", ANIMA, 25000 },
 								{ "c", GRATEFUL, 50 },
 							},
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 					})),
 				}, {	-- Friendly

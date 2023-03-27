@@ -300,7 +300,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 											i(180414),	-- Wakener's Runestag (MOUNT!)
 											i(187705, {	-- Choofa's Call (TOY!)
 												["description"] = "Please report if you get this toy from another Spirit.",
-												["timeline"] = { "added 9.1.5" },
+												["timeline"] = { ADDED_9_1_5 },
 											}),
 										})),
 									}),

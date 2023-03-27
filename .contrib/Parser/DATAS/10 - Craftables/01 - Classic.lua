@@ -577,10 +577,10 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(12212),	-- Jungle Stew
 			i(5472),	-- Kaldorei Spider Kabob
 			i(5480, {	-- Lean Venison
-				["timeline"] = { "removed 4.0.3", "added 9.1" },
+				["timeline"] = { "removed 4.0.3", ADDED_9_1_0 },
 			}),
 			i(12209, {	-- Lean Wolf Steak
-				["timeline"] = { "removed 5.0.4", "added 9.1" },
+				["timeline"] = { "removed 5.0.4", ADDED_9_1_0 },
 			}),
 			-- #if AFTER WOD
 			applyclassicphase(WOD_PHASE_ONE, i(126934)),	-- Lemon Herb Filet

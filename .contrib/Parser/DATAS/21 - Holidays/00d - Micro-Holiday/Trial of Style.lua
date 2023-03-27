@@ -235,27 +235,27 @@ root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(TRIAL_OF_STYLE, bubbleD
 			--
 			i(188237, {	-- Conjuror's Slippers
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 7 }, },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(188249, {	-- Freezing Footguards
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(188236, {	-- Patroller's Footwear
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 7 }, },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(188248, {	-- Searing Stompers
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(188243, {	-- Shadow-Stitched Stalkers
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 10 }, },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(188244, {	-- Virulent Gravetreaders
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 10 }, },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 
 			--

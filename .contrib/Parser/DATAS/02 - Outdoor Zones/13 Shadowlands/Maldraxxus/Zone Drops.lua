@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["_drop"] = { "spellID" },
 			}),
 			i(186727, {	-- Seal Breaker Key
-				["timeline"] = {"added 9.1.0"}
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 		}),
 	}),

@@ -155,7 +155,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71246, { ["name"] = "First Craft: Alacritous Alchemist Stone", }),
 			q(71245, { ["name"] = "First Craft: Sustaining Alchemist Stone", }),
 			-- Artisan Curios
-			--q(TODO, { ["name"] = "First Craft: Draconic Suppression Powder", ["timeline"] = { ADDED_10_0_7 }, }),
+			--q(TODO, { ["name"] = "First Craft: Draconic Suppression Powder", ["timeline"] = {ADDED_10_0_7}}),
 		})),
 		filter(MISC, {
 			i(191520),	-- Agitating Potion Augmentation+
@@ -164,7 +164,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(191514),	-- Brood Salt+
 			i(191515),	-- Brood Salt++
 			i(191516),	-- Brood Salt+++
-			i(203407, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Draconic Suppression Powder
+			i(203407, {["timeline"] = {ADDED_10_0_7}}),	-- Draconic Suppression Powder
 			i(191505),	-- Exultant Incense+
 			i(191506),	-- Exultant Incense++
 			i(191507),	-- Exultant Incense+++
@@ -437,10 +437,10 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71342, { ["name"] = "First Craft: Prototype Explorer's Barding Framework", }),
 			q(71343, { ["name"] = "First Craft: Prototype Regal Barding Framework", }),
 			-- Artisan Curios
-			q(74477, { ["name"] = "First Craft: Ancient Ceremonial Trident", ["timeline"] = { ADDED_10_0_7 }, }),
+			q(74477, { ["name"] = "First Craft: Ancient Ceremonial Trident", ["timeline"] = {ADDED_10_0_7}}),
 		})),
 		filter(MISC, {
-			i(203408, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Ancient Ceremonial Trident
+			i(203408, {["timeline"] = {ADDED_10_0_7}}),	-- Ancient Ceremonial Trident
 			i(191250),	-- Armor Spikes+
 			i(191872),	-- Armor Spikes++
 			i(191873),	-- Armor Spikes+++
@@ -536,7 +536,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			r(381400),	-- Thousandbone Tongueslicer
 		}),
 		filter(MISC, {
-			i(203409, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Sparkling Spice Pouch
+			i(203409, {["timeline"] = {ADDED_10_0_7}}),	-- Sparkling Spice Pouch
 		}),
 		-- Unknown
 		i(194690),	-- Horn o' Mead
@@ -552,11 +552,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		i(197759),	-- Cheese and Quackers
 		i(197772),	-- Churnbelly Tea
 		i(197771),	-- Delicious Dragon Spittle
-		i(204072, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Deviously Deviled Eggs
+		i(204072, {["timeline"] = {ADDED_10_0_7}}),	-- Deviously Deviled Eggs
 		i(197792),	-- Fated Fortune Cookie
 		i(197782),	-- Feisty Fish Sticks
 		i(197779),	-- Filet of Fangs
-		i(202290, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Firewater Sorbet
+		i(202290, {["timeline"] = {ADDED_10_0_7}}),	-- Firewater Sorbet
 		i(197794),	-- Grand Banquet of the Kalu'ak
 		i(197787),	-- Great Cerulean Sea
 		i(197795),	-- Hoard of Draconic Delicacies
@@ -836,7 +836,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(200470),	-- Illusion: Primal Mastery
 		}),
 		filter(MISC, {
-			i(203410, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Glowing Crystal Bookmark
+			i(203410, {["timeline"] = {ADDED_10_0_7}}),	-- Glowing Crystal Bookmark
 			i(201318),	-- Illusory Adornment: Air+
 			i(201317),	-- Illusory Adornment: Air++
 			i(201316),	-- Illusory Adornment: Air+++
@@ -982,7 +982,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(193572),	-- Quack-E (PET!)
 		}),
 		filter(MISC, {
-			i(203411, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Gnomish Voicebox
+			i(203411, {["timeline"] = {ADDED_10_0_7}}),	-- Gnomish Voicebox
 			i(198651),	-- Piece of Scrap
 		}),
 		n(HIDDEN_QUESTS, sharedData({
@@ -1093,7 +1093,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71458, { ["name"] = "First Craft: D.U.C.K.O.Y", }),
 			q(71892, { ["name"] = "First Craft: Quack-E", }),
 			-- Artisan Curios
-			--q(TODO, { ["name"] = "First Craft: Gnomish Voicebox", ["timeline"] = { ADDED_10_0_7 }, }),
+			--q(TODO, { ["name"] = "First Craft: Gnomish Voicebox", ["timeline"] = {ADDED_10_0_7}}),
 		})),
 		filter(MISC, {
 			i(198549),	-- Black Fireflight
@@ -1227,7 +1227,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(192443),	-- Element-Infused Rocket Helmet (TOY!)
 			i(198206),	-- Environmental Emulator (TOY!)
 			i(198227),	-- Giggle Goggles (TOY!)
-			i(201930, { ["timeline"] = { ADDED_10_0_7 }, }),	-- H.E.L.P. (TOY!)
+			i(201930, {["timeline"] = {ADDED_10_0_7}}),	-- H.E.L.P. (TOY!)
 			i(198156),	-- Wyrmhole Generator: Dragon Isles (TOY!)
 		}),
 		n(WEAPONS, {
@@ -1284,7 +1284,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		i(194968),	-- Cerulean Spinefish
 		i(199338),	-- Copper Coin of the Isles
 		i(198395),	-- Dull Spined Clam
-		i(203419, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Elusive Croaking Crab
+		i(203419, {["timeline"] = {ADDED_10_0_7}}),	-- Elusive Croaking Crab
 		i(200074),	-- Frosted Rimefin Tuna
 		i(199340),	-- Gold Coin of the Isles
 		i(194970),	-- Islefin Dorado
@@ -1307,7 +1307,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(191467),	-- Bubble Poppy+
 			i(191468),	-- Bubble Poppy++
 			i(191469),	-- Bubble Poppy+++
-			i(203416, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Dormant Lifebloom Seeds
+			i(203416, {["timeline"] = {ADDED_10_0_7 }}),	-- Dormant Lifebloom Seeds
 			i(200678),	-- Dreambloom
 			i(200677),	-- Dreambloom Petal
 			i(191460),	-- Hochenblume+
@@ -1449,9 +1449,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71563, { ["name"] = "First Craft: Sagescale Sigil", }),
 			q(71594, { ["name"] = "First Craft: Vantus Rune: Vault of the Incarnates", }),
 			-- Trinkets
-			q(74102, { ["name"] = "First Craft: Crimson Combatant's Medallion", ["timeline"] = { ADDED_10_0_5 }, }),
-			q(74103, { ["name"] = "First Craft: Crimson Combatant's Insignia", ["timeline"] = { ADDED_10_0_5 }, }),
-			q(74104, { ["name"] = "First Craft: Crimson Combatant's Emblem", ["timeline"] = { ADDED_10_0_5 }, }),
+			q(74102, { ["name"] = "First Craft: Crimson Combatant's Medallion", ["timeline"] = {ADDED_10_0_5}}),
+			q(74103, { ["name"] = "First Craft: Crimson Combatant's Insignia", ["timeline"] = {ADDED_10_0_5}}),
+			q(74104, { ["name"] = "First Craft: Crimson Combatant's Emblem", ["timeline"] = {ADDED_10_0_5}}),
 			q(71592, { ["name"] = "First Craft: Darkmoon Deck Box: Dance", }),
 			q(71591, { ["name"] = "First Craft: Darkmoon Deck Box: Inferno", }),
 			q(71590, { ["name"] = "First Craft: Darkmoon Deck Box: Rime", }),
@@ -1527,7 +1527,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(72018, { ["name"] = "First Craft: Cliffside Wylderdrake: Steel and Yellow Armor", }),
 			q(71533, { ["name"] = "First Craft: Cliffside Wylderdrake: Triple Head Horns", }),
 			-- Artisan Curios
-			q(74481, { ["name"] = "First Craft: Arcane Dispelling Rune", ["timeline"] = { ADDED_10_0_7 }, }),
+			q(74481, { ["name"] = "First Craft: Arcane Dispelling Rune", ["timeline"] = {ADDED_10_0_7 }}),
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
@@ -1587,7 +1587,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(199170), 	-- Fated Fortune Card
 		}),
 		filter(MISC, {
-			i(203412, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Arcane Dispelling Rune
+			i(203412, {["timeline"] = {ADDED_10_0_7 }}),	-- Arcane Dispelling Rune
 			i(194871),	-- Azurescale Sigil+
 			i(199051),	-- Azurescale Sigil++
 			i(199052),	-- Azurescale Sigil+++
@@ -1716,9 +1716,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(194858),	-- Serene Ink+++
 		}),
 		filter(TRINKET_F, {
-			i(203377, { ["timeline"] = { ADDED_10_0_5 }, }),	-- Crimson Combatant's Emblem
-			i(203376, { ["timeline"] = { ADDED_10_0_5 }, }),	-- Crimson Combatant's Insignia of Alacrity
-			i(203375, { ["timeline"] = { ADDED_10_0_5 }, }),	-- Crimson Combatant's Medallion
+			i(203377, {["timeline"] = {ADDED_10_0_5}}),	-- Crimson Combatant's Emblem
+			i(203376, {["timeline"] = {ADDED_10_0_5}}),	-- Crimson Combatant's Insignia of Alacrity
+			i(203375, {["timeline"] = {ADDED_10_0_5}}),	-- Crimson Combatant's Medallion
 			i(198478),	-- Darkmoon Deck Box: Dance
 			i(194872),	-- Darkmoon Deck Box: Inferno
 			i(198477),	-- Darkmoon Deck Box: Rime
@@ -1915,7 +1915,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(192894),	-- Blotting Sand+
 			i(192895),	-- Blotting Sand++
 			i(192896),	-- Blotting Sand+++
-			i(203413, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Crystal Tuning Fork
+			i(203413, {["timeline"] = {ADDED_10_0_7}}),	-- Crystal Tuning Fork
 			i(193019),	-- Djaradin's "Pinata"+
 			i(193020),	-- Djaradin's "Pinata"++
 			i(193021),	-- Djaradin's "Pinata"+++
@@ -2818,11 +2818,11 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74228),	-- Skinning Worldcarver A'tir
 			q(74229),	-- Skinning Death's Shadow
 			q(74177),	-- Skinning The Jolly Giant
-			q(74550, {["timeline"] = { ADDED_10_0_5 }}),	-- Skinning Groffnar
-			q(74551, {["timeline"] = { ADDED_10_0_5 }}),	-- Skinning Bloodbeak the Ravenous
-			q(74555, {["timeline"] = { ADDED_10_0_5 }}),	-- Skinning Shardwing
-			q(74559, {["timeline"] = { ADDED_10_0_5 }}),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)
-			q(75884, {["timeline"] = { ADDED_10_0_5 }}),	-- Skinning Gahz'raxes
+			q(74550, {["timeline"] = {ADDED_10_0_5}}),	-- Skinning Groffnar
+			q(74551, {["timeline"] = {ADDED_10_0_5}}),	-- Skinning Bloodbeak the Ravenous
+			q(74555, {["timeline"] = {ADDED_10_0_5}}),	-- Skinning Shardwing
+			q(74559, {["timeline"] = {ADDED_10_0_5}}),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)
+			q(75884, {["timeline"] = {ADDED_10_0_7}}),	-- Skinning Gahz'raxes
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--

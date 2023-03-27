@@ -578,7 +578,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			mount(363613, {	-- Lightforged Ruinstrider (MOUNT!)
 				["races"] = { LIGHTFORGED },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 		}),
 	}),

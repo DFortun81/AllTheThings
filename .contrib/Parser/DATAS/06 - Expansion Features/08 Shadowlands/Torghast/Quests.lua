@@ -105,7 +105,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 64210 },	-- The Box of Many Things
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.3, 60.4, 1912 },	-- The Runecarver's Oubliette
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 
 		--	Champion Unlocks
@@ -169,7 +169,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
 				["sourceQuests"] = { 64186 },	-- ELGU - 007's Missing Power Core
 				["provider"] = { "n", 179666 },	-- ELGU - 007
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 				["g"] = {
 					follower(1328),	-- ELGU - 007
 				},
@@ -178,7 +178,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
 				["sourceQuests"] = { 64185 },	-- Assist Ella With ?
 				["provider"] = { "n", 179672 },	-- Ella
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 				["g"] = {
 					follower(1327),	-- Ella
 				},
@@ -236,7 +236,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
 				["sourceQuests"] = { 64189 },	-- Kinessa's Support
 				["provider"] = { "n", 179678 },	-- Kinessa the Absorbent
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 				["g"] = {
 					follower(1331),	-- Kinessa the Absorbent
 				},
@@ -253,7 +253,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
 				["sourceQuests"] = { 64191 },	-- Lassik's Gear
 				["provider"] = { "n", 179682 },	-- Lassik Spinebender
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 				["g"] = {
 					follower(1333),	-- Lassik Spinebender
 				},
@@ -301,7 +301,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
 				["sourceQuests"] = { 64188 },	-- Ryuja's Supplies
 				["provider"] = { "n", 179676 },	-- Ryuja Shockfist
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 				["g"] = {
 					follower(1330),	-- Ryuja Shockfist
 				},
@@ -310,7 +310,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
 				["sourceQuests"] = { 64184 },	-- Missing Friend
 				["provider"] = { "n", 179670 },	-- Spore of Marasmius
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 				["g"] = {
 					follower(1326),	-- Spore of Marasmius
 				},
@@ -319,7 +319,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
 				["sourceQuests"] = { 64190 },	-- Steadyhands' Platter
 				["provider"] = { "n", 179680 },	-- Steadyhands
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 				["g"] = {
 					follower(1332),	-- Steadyhands
 				},
@@ -399,7 +399,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			q(64185, {	-- Assist Ella With ?
 				["provider"] = { "n", 179671 },	-- Ella
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			q(61259, {	-- Ayeleth's Hunger
 				["provider"] = { "n", 171920 },	-- Ayeleth
@@ -418,7 +418,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			q(64186, {	-- ELGU - 007's Missing Power Core [Double check]
 				["provider"] = { "n", 179665 },	-- ELGU - 007
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			q(59340, {	-- Gallath's Bell
 				["provider"] = { "n", 152418 },	-- Gallath
@@ -449,19 +449,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				-- Fracture Chambers 4 / 2
 			}),
 			q(64187, {	-- Kiaranyka's Search
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 				--["provider"] = { "n", },	-- Kiaranyka (multiple npcid)
 			}),
 			q(64189, {	-- Kinessa's Support
 				["provider"] = { "n", 179677 },	-- Kinessa the Absorbent
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			q(61322, {	-- Kythekios' Memory Stone
 				["provider"] = { "n", 171996 },	-- Kythekios
 			}),
 			q(64191, {	-- Lassik's Gear
 				["provider"] = { "n", 179681 },	-- Lassik Spinebender
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			q(61431, {	-- Lloth'wellyn's Breakthrough
 				["provider"] = { "n", 172263 },	-- Lloth'wellyn
@@ -471,14 +471,14 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			q(64184, {	-- Missing Friend [Double check]
 				["provider"] = { "n", 179762 },	-- Friend? [Might be Spore of Marasmius]
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			q(61347, {	-- Molako's Freedom
 				["provider"] = { "n", 172031 },	-- Molako
 			}),
 			q(64190, {	-- Steadyhands' Platter
 				["provider"] = { "n", 179679 },	-- Steadyhands
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			q(61340, {	-- Telethakas' Revenge
 				["provider"] = { "n", 172024 },	-- Telethakas
@@ -500,7 +500,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			q(64188, {	-- Ryuja's Supplies
 				["provider"] = { "n", 179673 },	-- Ryuja Shockfist
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			q(61395, {	-- Spare Parts
 				["provider"] = { "n", 172157 },	-- Ispiron
@@ -780,7 +780,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 		q(62979),	-- Twisting Corridors, Layer 6
 		q(62980),	-- Twisting Corridors, Layer 8
 		q(64347, {	-- Adamant Vaults
-			["timeline"] = { "added 9.1.0" },
+			["timeline"] = { ADDED_9_1_0 },
 		}),
 
 	-- Follower Access Triggers

@@ -172,7 +172,7 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 			i(172363),	-- Enchant Ring - Tenet of Mastery
 			i(172364),	-- Enchant Ring - Tenet of Versatility
 		}),
-		filter(TOYS, sharedDataSelf({ ["timeline"] = { "added 9.1.0" } }, {
+		filter(TOYS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 			i(186973),	-- Anima-ted Leash (TOY!)
 		})),
 		filter(WANDS, {

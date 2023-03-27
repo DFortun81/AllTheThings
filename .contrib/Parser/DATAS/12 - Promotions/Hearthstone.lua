@@ -13,7 +13,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		n(-536, { 	-- Hearthstone Mercenaries Promotion
 			["description"] = "Complete Hearthstone's Mercenaries Mode tutorial and send your party on a mission in order to receive this new mount.",
-			["timeline"] = { "added 9.1.0" },
+			["timeline"] = { ADDED_9_1_0 },
 			["groups"] = {
 				mount(356488),	-- Sarge's Tale (MOUNT!)
 				ach(15323),	-- Sarge's Tale

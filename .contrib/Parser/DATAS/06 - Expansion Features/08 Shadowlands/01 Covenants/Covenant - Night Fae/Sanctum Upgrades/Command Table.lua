@@ -105,19 +105,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							}),
 							n(REWARDS, {
 								i(177698, {	-- Untamed Spirit Ardenweald (Uncommon)
-									["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
+									["timeline"] = { ADDED_SL_REL, REMOVED_9_1_5 },
 								}),
 								i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
 								i(178881, {	-- Dutiful Spirit Bastion (Uncommon)
-									["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
+									["timeline"] = { ADDED_SL_REL, REMOVED_9_1_5 },
 								}),
 								i(178880),	-- Divine Dutiful Spirit (Rare)
 								i(178874, {	-- Martial Spirit Maldraxxus (Uncommon)
-									["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
+									["timeline"] = { ADDED_SL_REL, REMOVED_9_1_5 },
 								}),
 								i(178877),	-- Divine Martial Spirit (Rare)
 								i(178882, {	-- Prideful Spirit Revendreth (Uncommon)
-									["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
+									["timeline"] = { ADDED_SL_REL, REMOVED_9_1_5 },
 								}),
 								i(178883),	-- Divine Prideful Spirit (Rare)
 							}),

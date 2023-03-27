@@ -173,7 +173,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
 		battlepet(156, {	-- Bananas
-			["timeline"] = { ADDED_9_0_5, "removed 9.1.5" },
+			["timeline"] = { ADDED_9_0_5, REMOVED_9_1_5 },
 		}),
 		pet(3153, {	-- Blinky
 			["timeline"] = { "added 9.1.5.41488" },

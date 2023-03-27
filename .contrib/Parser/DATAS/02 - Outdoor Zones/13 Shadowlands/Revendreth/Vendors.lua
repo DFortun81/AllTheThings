@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(182163),	-- Strength of Blood
 					i(187886, {	-- Technique: Mark of the Gloomstalker Dredbat (RECIPE!)
 						["description"] = "Sold for 20-30 of a trade good which changes every day. And sometimes it's not even on the vendor!",
-						["timeline"] = { "added 9.1.5" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 				},
 			}),

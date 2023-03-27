@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 				q(62632),					-- A Burning Path Through Time
 				pvp(q(62637)),				-- A Call to Battle
 				q(64709, {					-- A Fel Path Through Time
-					["timeline"] = { "added 9.1.5", REMOVED_DF_REL },
+					["timeline"] = { ADDED_9_1_5, REMOVED_DF_REL },
 				}),
 				q(62633),					-- A Frozen Path Through Time
 				q(62636),					-- A Savage Path Through Time
@@ -191,7 +191,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 				q(64970, {					-- Timeworn Keystone: The Broken Isle
 					["provider"] = { "n", 178804 },	-- Ta'hsup
 					["coord"] = { 65.2, 35.1, ORIBOS },
-					["timeline"] = { "added 9.1.5", REMOVED_DF_REL },
+					["timeline"] = { ADDED_9_1_5, REMOVED_DF_REL },
 				}),
 				pvp(q(62640)),				-- The Arena Calls
 				pvp(petbattle(q(62639))),	-- The Very Best

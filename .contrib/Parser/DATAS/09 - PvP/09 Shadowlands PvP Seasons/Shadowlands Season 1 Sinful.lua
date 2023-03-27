@@ -2,7 +2,9 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 root(ROOTS.PVP, pvp(tier(SL_TIER, {
-	header(HEADERS.Achievement, SEASON_SINFUL, {
+	header(HEADERS.Achievement, SEASON_SINFUL, bubbleDownSelf({
+		["timeline"] = { ADDED_SL_REL, REMOVED_9_1_0, ADDED_DF_REL },
+	},{
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount",
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
@@ -472,7 +474,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				}),
 			})),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

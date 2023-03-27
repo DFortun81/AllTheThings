@@ -662,7 +662,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							["crs"] = { 177269 },	-- So'leah
 							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { "added 9.1.5" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							},
 						}),
@@ -672,7 +672,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							["crs"] = { 177269 },	-- So'leah
 							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { "added 9.1.5" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							},
 						}),
@@ -684,7 +684,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							["crs"] = { 164266 },	-- Domina Venomblade
 							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { "added 9.1.5" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							},
 						}),
@@ -694,7 +694,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							["crs"] = { 164266 },	-- Domina Venomblade
 							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { "added 9.1.5" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							},
 						}),
@@ -704,7 +704,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							["crs"] = { 164266 },	-- Domina Venomblade
 							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { "added 9.1.5" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							},
 						}),

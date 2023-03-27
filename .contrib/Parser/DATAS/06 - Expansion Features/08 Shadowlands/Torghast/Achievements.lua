@@ -5,10 +5,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	m(TORGHAST, {
 		n(ACHIEVEMENTS, {
 			ach(15091, {	-- A Taste of Perfection
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			ach(15067, {	-- Adamant Vaults
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			ach(14795, {	-- Clearing the Fog
 				ach(14759),	-- It's Coming Back to Me...
@@ -133,7 +133,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 				}),
 			}),
-			ach(15089, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Flawless Master (Layer 12)
+			ach(15089, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Flawless Master (Layer 12)
 				i(186655),	-- Mawsworn Charger (MOUNT!)
 				ach(15088),	-- Flawless: Upper Reaches (Layer 12)
 				ach(15087),	-- Flawless: Mort'regar (Layer 12)
@@ -230,7 +230,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["description"] = "This boss can be found in Coldheart Interstitia.",
 				}),
 			}),
-			ach(15075, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Infiltrators
+			ach(15075, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Infiltrators
 				crit(1, {	-- Karthazel
 					["cr"] = 179136,	-- Karthazel
 				}),
@@ -242,16 +242,16 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			})),
 			ach(14755, {	-- Legendary Accord
-				["timeline"] = { "added 9.1.0" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
-			ach(15079, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Many, Many Things
+			ach(15079, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Many, Many Things
 				i(186551),		-- Mord'al Eveningstar (PET!)
 				ach(15076, {	-- The Box of Many Things
 					["sourceQuests"] = { 64216 },	-- Tower Knowledge
 				}),
 				ach(15080),		-- So Blessed
 			})),
-			ach(15092, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Master of Torment
+			ach(15092, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Master of Torment
 				ach(15093),	-- Avenge Me!
 				ach(15095),	-- No Doubt
 				ach(15094),	-- Rampage

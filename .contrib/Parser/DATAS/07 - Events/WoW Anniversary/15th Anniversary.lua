@@ -706,7 +706,7 @@ root(ROOTS.WorldEvents, n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_AN
 					},
 				}),
 				q(63953, {	-- Korrak's Revenge
-					["timeline"] = { "added 9.1.5" },
+					["timeline"] = { ADDED_9_1_5 },
 					["isYearly"] = true,	-- presumably
 					["groups"] = {
 						i(172022, {	-- Stormpike Battle Ram (MOUNT!)

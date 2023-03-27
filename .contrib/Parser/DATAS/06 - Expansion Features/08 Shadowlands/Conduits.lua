@@ -4,10 +4,10 @@
 root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	n(CONDUITS, {
 		i(187507, {	-- Adaptive Armor Fragment
-			["timeline"] = { "added 9.1.0" },
+			["timeline"] = { ADDED_9_1_0 },
 		}),
 		i(187506, {	-- Condensed Anima Sphere
-			["timeline"] = { "added 9.1.0" },
+			["timeline"] = { ADDED_9_1_0 },
 		}),
 		cl(DEATHKNIGHT, {
 			i(181848),	-- Accelerated Cold

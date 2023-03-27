@@ -30,19 +30,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(182626),	-- Memory of the Phearomones
 			i(186566, {	-- Memory of the Final Sentence
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186568, {	-- Memory of an Abomination's Frenzy
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186565, {	-- Memory of Rampant Transference
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186567, {	-- Memory of Insatiable Hunger
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190584, {	-- Memory of Unity (DK)
 				["timeline"] = { "added 9.2.0" },
@@ -63,19 +63,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(183211),	-- Memory of the Hour of Darkness
 			i(187111, {	-- Memory of Blind Faith
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187118, {	-- Memory of the Demonic Oath
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187109, {	-- Memory of a Blazing Slaughter
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187105, {	-- Memory of the Agonizing Gaze
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190587, {	-- Memory of Unity (DH)
 				["timeline"] = { "added 9.2.0" },
@@ -104,19 +104,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(183236),	-- Memory of Ursoc
 			i(186673, {	-- Memory of Kindred Affinity
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186577, {	-- Memory of the Unbridled Swarm
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186687, {	-- Memory of Celestial Spirits
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186609, {	-- Memory of Sinful Hysteria
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190588, {	-- Memory of Unity (DRUID)
 				["timeline"] = { "added 9.2.0" },
@@ -144,19 +144,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(183250),	-- Memory of the Wild Call
 			i(187229, {	-- Memory of the Pact of the Soulstalkers
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187230, {	-- Memory of the Bag of Munitions
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187231, {	-- Memory of the Fragments of the Elder Antlers
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187232, {	-- Memory of the Pouch of Razor Fragments
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190589, {	-- Memory of Unity (HUNTER)
 				["timeline"] = { "added 9.2.0" },
@@ -181,19 +181,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(183269),	-- Memory of the Triune Ward
 			i(186591, {	-- Memory of the Harmonic Echo
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186621, {	-- Memory of Death's Fathom
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187280, {	-- Memory of the Fae Heart
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186635, {	-- Memory of Sinful Delight
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190590, {	-- Memory of Unity (MAGE)
 				["timeline"] = { "added 9.2.0" },
@@ -218,19 +218,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(183291),	-- Memory of Yu'lon
 			i(187237, {	-- Memory of a Call to Arms
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187217, {	-- Memory of the Bountiful Brew
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187258, {	-- Memory of the Faeline Harmony
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187277, {	-- Memory of Sinister Teachings
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190591, {	-- Memory of Unity (MONK)
 				["timeline"] = { "added 9.2.0" },
@@ -255,19 +255,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(183301),	-- Memory of Uther
 			i(187106, {	-- Memory of Divine Resonance
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187107, {	-- Memory of the Duty-Bound Gavel
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187132, {	-- Memory of the Seasons of Plenty
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187127, {	-- Memory of Radiant Embers
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190592, {	-- Memory of Unity (PALADIN)
 				["timeline"] = { "added 9.2.0" },
@@ -292,19 +292,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(183326),	-- Memory of the Void's Eternal Call
 			i(187163, {	-- Memory of the Spheres' Harmony
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187160, {	-- Memory of Pallid Command
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187161, {	-- Memory of Bwonsamdi's Pact
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187162, {	-- Memory of Shadow Word: Manipulation
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190593, {	-- Memory of Unity (PRIEST)
 				["timeline"] = { "added 9.2.0" },
@@ -329,19 +329,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(183333),	-- Memory of Tiny Toxic Blade
 			i(186775, {	-- Memory of Resounding Clarity
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186712, {	-- Memory of the Deathspike
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186676, {	-- Memory of the Toxic Onslaught
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186710, {	-- Memory of the Obedient
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190594, {	-- Memory of Unity (ROGUE)
 				["timeline"] = { "added 9.2.0" },
@@ -366,19 +366,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(183357),	-- Memory of the Witch Doctor
 			i(187259, {	-- Memory of the Raging Vesper Vortex
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186689, {	-- Memory of the Splintered Elements
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187223, {	-- Memory of the Seeds of Rampant Growth
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187224, {	-- Memory of the Elemental Conduit
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190595, {	-- Memory of Unity (SHAMAN)
 				["timeline"] = { "added 9.2.0" },
@@ -403,19 +403,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(183369),	-- Memory of Wilfred's Sigil of Superior Summoning
 			i(187225, {	-- Memory of the Languishing Soul Detritus
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187226, {	-- Memory of the Shards of Annihilation
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187227, {	-- Memory of the Decaying Soul Satchel
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187228, {	-- Memory of the Contained Perpetual Explosion
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190596, {	-- Memory of Unity (WARLOCK)
 				["timeline"] = { "added 9.2.0" },
@@ -440,19 +440,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(183391),	-- Memory of the Wall
 			i(187511, {	-- Memory of Elysian Might
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186570, {	-- Memory of Glory
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186576, {	-- Memory of Nature's Fury
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186572, {	-- Memory of the Sinful Surge
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190598, {	-- Memory of Unity (WARRIOR)
 				["timeline"] = { "added 9.2.0" },

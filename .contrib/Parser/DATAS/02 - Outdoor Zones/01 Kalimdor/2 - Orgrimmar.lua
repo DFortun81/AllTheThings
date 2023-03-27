@@ -4111,7 +4111,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE 9.1.0
 						i(63917, {	-- Truthbreaker Shield [Not listed, but awards on completing quest] [9.1: was NOT received when completed. 2021-09-25]
 							-- Crieve NOTE: This appears to have been an Alliance quest reward in SW.
-							["timeline"] = { "added 4.0.3.13277", "removed 9.1.0" },
+							["timeline"] = { "added 4.0.3.13277", REMOVED_9_1_0 },
 						}),
 						-- #endif
 					},

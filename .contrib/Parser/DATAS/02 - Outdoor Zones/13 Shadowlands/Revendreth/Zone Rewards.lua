@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				i(181184),	-- Soulstalker Helm
 				i(181186),	-- Stalker Wight's Sash
 				i(185854, {	-- Stone-Etched Shawl
-					["timeline"] = { "added 9.1.0" },
+					["timeline"] = { ADDED_9_1_0 },
 				}),
 				i(181198),	-- Stone-Infused Sabatons
 				i(181201),	-- Stonewing Mantle

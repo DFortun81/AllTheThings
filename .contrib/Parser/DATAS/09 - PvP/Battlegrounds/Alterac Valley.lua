@@ -361,7 +361,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 65.6, 55.1, ALTERAC_MOUNTAINS },
 					-- #endif
-					["timeline"] = { "removed 8.2.5.31958", "added 9.1" },
+					["timeline"] = { "removed 8.2.5.31958", ADDED_9_1_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(6982, {	-- Coldtooth Supplies (Alliance)
@@ -1176,7 +1176,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(17326),	-- Stormpike Soldier's Flesh
 				i(18231),	-- Sleeveless T-Shirt
 				i(187696, {	-- The Wolf, the Wolpertinger, and Other Tails
-					["timeline"] = { "added 9.1.5" },
+					["timeline"] = { ADDED_9_1_5 },
 				}),
 			}),
 		},

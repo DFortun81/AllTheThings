@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL 
 							r(324039),	-- Darkmoon Card of the Indomitable
 							r(324035),	-- Darkmoon Card of Voracity
 						}),
-						cat(786, sharedDataSelf({ ["timeline"] = { "added 9.1.5" }},{	-- Glyphs
+						cat(786, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 }},{	-- Glyphs
 							r(362412),	-- Glyph of the Wild Mushroom*
 						})),
 						cat(1408, {	-- Ink

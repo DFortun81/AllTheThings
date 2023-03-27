@@ -196,7 +196,7 @@ root(ROOTS.Holidays, applyholiday(DAY_OF_THE_DEAD, {
 						["timeline"] = { "added 3.2.2.10505" },
 					}),
 					i(188689, {	-- Marigold Petal Offering Bowl
-						["timeline"] = { "added 9.1.5" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(46718, {	-- Orange Marigold
 						["timeline"] = { "added 3.2.2.10505" },

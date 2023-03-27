@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					}),
 					i(186684, {	-- Memories of Brigther Times
 						["collectible"] = false,
-						["timeline"] = { "added 9.1.0" }
+						["timeline"] = { ADDED_9_1_0 }
 					}),
 				},
 			}),
@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 							{"isnt","repeatable"},		-- Not Paragon quest
 							{"pop"}},
 			}),
-			n(182864, bubbleDownSelf({ ["timeline"] = { "added 9.1.5" } }, {	-- Au'Dara
+			n(182864, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Au'Dara
 				["description"] = "Next to the flightmaster.",
 				["coord"] = { 59.7, 70.6, ORIBOS },
 				["g"] = {
@@ -148,7 +148,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(187869),	-- Scouting Map: Into the Shadowlands (TOY!)
 					i(188673),	-- Timebound Runimations
 					i(188174, {	-- Unchained Equipment Cache
-						["timeline"] = { "added 9.1.5", "removed 9.2.0" },
+						["timeline"] = { ADDED_9_1_5, "removed 9.2.0" },
 						["cost"] = {
 							{ "c", 1602, 375 },	-- 375x Conquest
 						},
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 						},
 					}),
 					i(188173, {	-- Valorous Equipment Cache
-						["timeline"] = { "added 9.1.5", "removed 9.2.0" },
+						["timeline"] = { ADDED_9_1_5, "removed 9.2.0" },
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500x Valor
 						},
@@ -206,22 +206,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(180136),	-- The Brokers Angle'r
 				},
 			}),
-			n(176197, bubbleDownSelf({ ["timeline"] = { "added 9.1.5" } }, {	-- Griftah <Amazing Amulets>
-				i(188226), -- Boots o' Maw Walkin
-				i(188224), -- Darling Maldraxxi Doll
-				i(188217), -- De Purpose
-				i(188221), -- Eye of the Wailer
-				i(188219), -- Garlic Pendant of Fang-Warding
-				i(188218), -- Korthian Secret-Keeping Journal
-				i(188223), -- Stain of Domination
-				i(188222), -- Steward Wings
-				i(188220), -- Torghast Ash Globe
-				i(188225), -- Worneblade
+			n(176197, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Griftah <Amazing Amulets>
+				["coord"] = { 51.0, 43.4, ORIBOS },
+				["g"] = {
+					i(188226), -- Boots o' Maw Walkin
+					i(188224), -- Darling Maldraxxi Doll
+					i(188217), -- De Purpose
+					i(188221), -- Eye of the Wailer
+					i(188219), -- Garlic Pendant of Fang-Warding
+					i(188218), -- Korthian Secret-Keeping Journal
+					i(188223), -- Stain of Domination
+					i(188222), -- Steward Wings
+					i(188220), -- Torghast Ash Globe
+					i(188225), -- Worneblade
+				},
 			})),
 			n(156769, {	-- Keeper Ta'hult <Pet Vendor>
 				["coord"] = { 64.9, 67.3, ORIBOS },
-				["g"] = sharedData({ ["timeline"] = { "added 9.1.0" } }, {
-				--	TODO: verify costs if these make it to live
+				["g"] = sharedData({ ["timeline"] = { ADDED_9_1_0 } }, {
 					i(185919, {	-- Flawless Amethyst Baubleworm
 						["cost"] = { { "i", 163036, 10000 } },	-- 10,000x Polished Pet Charm
 					}),
@@ -270,7 +272,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["g"] = {
 					i(187254, {	-- Arrangement of Anima
 						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { "added 9.1.0", "removed 9.2.0" },
+						["timeline"] = { ADDED_9_1_0, "removed 9.2.0" },
 						["g"] = {
 							currency(ANIMA),	-- Reservoir Anima
 						},
@@ -281,7 +283,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 							i(188957),	-- Genesis Mote
 						},
 					})),
-					i(187503, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", REMOVED_DF_REL } }, {	-- Bundle of Archived Research
+					i(187503, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_DF_REL } }, {	-- Bundle of Archived Research
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							currency(1931),	-- Cataloged Research
@@ -305,13 +307,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
 						["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
 					}),
-					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", REMOVED_DF_REL } }, {	-- Korthite Crystal Geode
+					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_DF_REL } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
 						["g"] = {
 							i(186017),	-- Korthite Crystal
 						},
 					})),
-					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {	-- Korthite Crystal Geode
+					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, "removed 9.2.0" } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "c", 1191, 1500 } },	-- 1500x Valor
 						["g"] = {
 							i(186017),	-- Korthite Crystal
@@ -348,14 +350,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					}),
 					i(187221, {	-- Soul Ash Cache
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { "added 9.1.0", REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_DF_REL },
 						["g"] = {
 							currency(1828),	-- Soul Ash
 						},
 					}),
 					i(187222, {	-- Stygic Singularity
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { "added 9.1.0", REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_DF_REL },
 						["g"] = {
 							currency(1767),	-- Stygia
 						},
@@ -416,7 +418,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 			n(181681, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5 } }, {	-- Tu'kol <Anima Exchange Specialist>
 				["coord"] = { 63.8, 36.0, ORIBOS },
 				["g"] = {
-					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Korthite Crystal Geode
+					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "c", ANIMA, 15000 } },
 						["g"] = {
 							i(186017),	-- Korthite Crystal

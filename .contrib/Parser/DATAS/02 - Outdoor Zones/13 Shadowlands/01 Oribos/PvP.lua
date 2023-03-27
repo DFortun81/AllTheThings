@@ -116,15 +116,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						currency(1792),	-- Honor
 					},
 				}),
-				q(64304, {	-- New Opportunities Await
+				q(64304, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- New Opportunities Await
 					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["coord"] = { 34.7, 57.3, ORIBOS },
-					["timeline"] = { "added 9.1.0" },
 					["isWeekly"] = true,
 					["g"] = {
 						i(186980),	-- Unchained Gladiator's Shackles of Malediction
 					},
-				}),
+				})),
 				q(62287, {	-- Observing Arenas
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["isWeekly"] = true,
@@ -152,11 +151,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				q(64527, {	-- Observing the Chase [SL 'Try Warmode']
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
-					["timeline"] = { "added 9.1.0" },
 					["altQuests"] = {
 						53295,	-- Do Your Part [BFA 'Try Warmode'] [A]
 						53338,	-- Prove Your Worth [BFA 'Try Warmode'] [H]
 					},
+					["timeline"] = { ADDED_9_1_0 },
 				}),
 				q(62285, {	-- Observing War
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
