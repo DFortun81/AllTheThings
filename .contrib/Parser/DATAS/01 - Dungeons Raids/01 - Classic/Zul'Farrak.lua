@@ -102,9 +102,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(9653, {	-- Speedy Racer Googles
 							["timeline"] = { "removed 1.9.3" },
 						}),
-						i(204406, {	-- Ancient Design: Square Holders (RECIPE!)
-							["timeline"] = { ADDED_10_0_7 },
-						}),
 					},
 				}),
 				q(25556, {	-- Into Zul'Farrak
@@ -426,6 +423,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				},
 				-- #endif
 				["groups"] = {
+					i(204406, {	-- Ancient Design: Square Holders (RECIPE!)
+						["timeline"] = { "added 10.0.7" },
+					}),
 					i(8707),	-- Gahz'rilla's Electrified Scale
 					i(9467), 	-- Gahz'rilla Fang
 					i(151455, {	-- Gahz'rilla Scale Cloak
