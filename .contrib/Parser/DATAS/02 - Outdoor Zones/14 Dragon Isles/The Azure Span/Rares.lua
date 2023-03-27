@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(186962, {	-- Cascade
 				["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
 				["questID"] = 72836,
-				["isDaily"] = 0,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193157, {	-- Dragonhunter Gorund
 				["coord"] = { 27.8, 45.8, THE_AZURE_SPAN },
@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["description"] = "Collect the Broken Fishing Pole, Torn Fishing Net and Old Harpoon around to summon him.\n\nRewards you with 950 Reputation if you are summoner or 60 Reputation with a normal tag.",
 				["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
 				["questID"] = 72730,
-				["isDaily"] = 0,
+				["isDaily"] = IGNORED_VALUE,
 				["g"] = {
 					i(198070),	-- Tattered Seavine (IF!)
 				},
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193214, {	-- Forgotten Creation
 				["coord"] = { 38.2, 59.0, THE_AZURE_SPAN },
 				["questID"] = 72840,
-				["isDaily"] = 0,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193698, {	-- Frigidpelt Den Mother
 				["coord"] = { 64.7, 29.9, THE_AZURE_SPAN },
@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(192749, {	-- Sharpfang
 				["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
 				["questID"] = 72846,
-				["isDaily"] = 0,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 		--	n(193149),	-- Skag the Thrower // under DF/Timed Based Rare
 			n(197344, {	-- Snarglebone
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193288, {	-- Summoned Destroyer
 				["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
 				["questID"] = 72848,
-				["isDaily"] = 0,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193167, {	-- Swagraal the Swollen
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
@@ -186,7 +186,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193223, {	-- Vakril <The Strongest Tuskarr?>
 				["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },
 				["questID"] = 72853,
-				["isDaily"] = 0,
+				["isDaily"] = IGNORED_VALUE,
 				["g"] = {
 					i(201728),	-- Vakril's Strongbox
 				},

@@ -21,6 +21,11 @@ namespace ATT
         public static bool DebugMode = false;
 
         /// <summary>
+        /// Used to represent a Lua object value which will be ignored by the Parser
+        /// </summary>
+        public static string IgnoredValue { get; set; }
+
+        /// <summary>
         /// The CustomConfiguration for the Parser
         /// </summary>
         internal static CustomConfiguration Config { get; set; }
@@ -292,6 +297,11 @@ namespace ATT
         {
             { "questID", new Dictionary<decimal, int>() },
         };
+
+        /// <summary>
+        /// A Dictionary of key-ID types and how many times each value of key-type has been referenced in the final DB
+        /// </summary>
+        public static Dictionary<string, HashSet<decimal>> OutputSets { get; } = new Dictionary<string, HashSet<decimal>>();
 
         /// <summary>
         /// A Dictionary of key-ID types and the respective objects which contain the specified key which will be captured and output during Debug runs</para>
@@ -911,6 +921,43 @@ namespace ATT
             return true;
         }
 
+        private static void Validate_SourceQuests(Dictionary<string, object> data)
+        {
+            if (data.TryGetValue("sourceQuests", out List<object> sourceQuests))
+            {
+                foreach (var sourceQuestRef in sourceQuests)
+                {
+                    if (!sourceQuestRef.TryConvert(out long sourceQuestID))
+                    {
+                        LogError($"Non-number 'sourceQuests' value used: {sourceQuestRef}");
+                        continue;
+                    }
+
+                    if (!Objects.AllQuests.TryGetValue(sourceQuestID, out Dictionary<string, object> sourceQuest))
+                    {
+                        // Source Quest not in database
+                        LogError($"Referenced Source Quest {sourceQuestID} has not been Sourced");
+                        continue;
+                    }
+
+                    // source quest of this data is considered a breadcrumb, so note in the source quest it has a specific follow up
+                    if (sourceQuest.TryGetValue("isBreadcrumb", out bool isBreadcrumb) && isBreadcrumb)
+                    {
+                        // Source Quest is a breadcrumb, add current quest into breadcrumb's next quests list
+                        if (!sourceQuest.TryGetValue("nextQuests", out List<object> nextQuests))
+                        {
+                            sourceQuest.Add("nextQuests", nextQuests = new List<object>());
+                        }
+
+                        if (data.TryGetValue("questID", out long questID) && !nextQuests.Contains(questID))
+                        {
+                            nextQuests.Add(questID);
+                        }
+                    }
+                }
+            }
+        }
+
         private static void Validate_Encounter(Dictionary<string, object> data)
         {
             if (data.TryGetValue("encounterID", out long encounterID))
@@ -1242,13 +1289,10 @@ namespace ATT
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
             TryFindRecipeID(data);
-
             CheckRequireSkill(data);
-
             CheckHeirloom(data);
-
+            Validate_SourceQuests(data);
             Items.DetermineSourceID(data);
-
             CheckObjectConversion(data);
 
             //VerifyListContentOrdering(data);
@@ -2197,57 +2241,21 @@ namespace ATT
             }
 
             // Include in breadcrumb quests the list of next quests that may make the breadcrumb unable to complete
-            bool isBreadcrumb;
-            HashSet<long> orphanedBreadcrumbs = new HashSet<long>();
-            foreach (var pair in Objects.AllQuests)
-            {
-                if (pair.Value.TryGetValue("sourceQuests", out List<object> sourceQuests))
-                {
-                    foreach (var sourceQuestRef in sourceQuests)
-                    {
-                        var sourceQuestID = Convert.ToInt64(sourceQuestRef);
-                        if (Objects.AllQuests.TryGetValue(sourceQuestID, out Dictionary<string, object> sourceQuest))
-                        {
-                            if (sourceQuest.TryGetValue("isBreadcrumb", out isBreadcrumb) && isBreadcrumb)
-                            {
-                                // Source Quest is a breadcrumb, add current quest into breadcrumb's next quests list
-                                if (sourceQuest.TryGetValue("nextQuests", out List<object> nextQuests))
-                                {
-                                    if (!nextQuests.Contains(pair.Key)) nextQuests.Add(pair.Key);
-                                }
-                                else
-                                {
-                                    sourceQuest.Add("nextQuests", new List<object>() { pair.Key });
-                                }
-                            }
-                        }
-                        else
-                        {
-                            // Source Quest not in database
-                        }
-                    }
-                }
-            }
+            //bool isBreadcrumb;
+            HashSet<decimal> orphanedBreadcrumbs = new HashSet<decimal>();
+            OutputSets.Add("Orphaned Breadcrumbs", orphanedBreadcrumbs);
 
             // check for orphaned breadcrumbs
             foreach (var pair in Objects.AllQuests)
             {
-                if (pair.Value.TryGetValue("isBreadcrumb", out isBreadcrumb) && isBreadcrumb)
+                if (pair.Value.TryGetValue("isBreadcrumb", out bool isBreadcrumb)
+                    && isBreadcrumb
+                    && !pair.Value.TryGetValue("nextQuests", out object nextQuests))
                 {
-                    if (!pair.Value.TryGetValue("nextQuests", out List<object> nextQuests))
-                    {
-                        // Breadcrumb quest without next quests information
-                        orphanedBreadcrumbs.Add(pair.Key);
-                    }
+                    // Breadcrumb quest without next quests information
+                    orphanedBreadcrumbs.Add(pair.Key);
                 }
             }
-            var sortedOrphanedBreadcrumbs = new SortedList<long, long>();
-            foreach (long q in orphanedBreadcrumbs)
-            {
-                sortedOrphanedBreadcrumbs.Add(q, q);
-            }
-            var sortedList = new List<long>(sortedOrphanedBreadcrumbs.Values);
-            Log($"Orphaned Breadcrumb Quests:{Environment.NewLine}{ToJSON(sortedList)}");
 
             if (QUESTS.Any())
             {

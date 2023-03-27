@@ -409,6 +409,9 @@ namespace ATT
             /// <param name="value">The value of the merged field.</param>
             public static void Merge(Dictionary<string, object> item, string field, object value)
             {
+                if (value is string v && v == IgnoredValue)
+                    return;
+
                 // Convert the name of the field to something more standardized.
                 switch (field = ConvertFieldName(field))
                 {

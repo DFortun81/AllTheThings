@@ -1652,6 +1652,9 @@ end
             /// <param name="value">The value of the merged field.</param>
             public static void Merge(Dictionary<string, object> item, string field, object value)
             {
+                if (value is string v && v == IgnoredValue)
+                    return;
+
                 // Convert the name of the field to something more standardized.
                 switch (field = ConvertFieldName(field))
                 {
@@ -1712,11 +1715,6 @@ end
                     case "sort":
                     case "sourceIgnored":
                         {
-                            if (value is long v && v == 0)
-                            {
-                                LogDebug($"INFO: 0-value bool '{field}' ignored merging into", item);
-                                break;
-                            }
                             item[field] = Convert.ToBoolean(value);
                             break;
                         }

@@ -1052,7 +1052,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(72114, {	-- Acrosoth
 					["provider"] = { "n", 193243 },	-- Acrosoth
 					["coord"] = { 39.0, 78.0, THALDRASZUS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69963, {	-- Ancient Protector
 					["provider"] = { "n", 193664 },	-- Ancient Protector
@@ -1077,7 +1077,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69873, {	-- Henlare
 					["provider"] = { "n", 193229 },	-- Henlare
 					["coord"] = { 55.6, 77.4, THALDRASZUS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(74450, {	-- Morlash
 					["provider"] = { "n", 201549 },	-- Morlash
@@ -1087,12 +1087,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(72116, {	-- Liskron the Dazzling
 					["provider"] = { "n", 193273 },	-- Liskron the Dazzling
 					["coord"] = { 36.4, 72.8, THALDRASZUS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69967, {	-- Lookout Mordren
 					["provider"] = { "n", 193668 },	-- Lookout Mordren
 					["coord"] = { 36.8, 85.6, THALDRASZUS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69882, {	-- Lord Epochbrgl
 					["provider"] = { "n", 193241 },	-- Lord Epochbrgl
@@ -1124,7 +1124,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(70986, {	-- Private Shikzar
 					["provider"] = { "n", 193127 },	-- Private Shikzar
 					["coord"] = { 37.6, 84.7, THALDRASZUS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69880, {	-- Riverwalker Tamopo
 					["provider"] = { "n", 193240 },	-- Riverwalker Tamopo
@@ -1149,7 +1149,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(72121, {	-- The Great Shellkhan
 					["provider"] = { "n", 191305 },	-- The Great Shellkhan
 					["coord"] = { 38.4, 68.2, THALDRASZUS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(70947, {	-- Treasure-Mad Trambladd
 					["provider"] = { "n", 193146 },	-- Treasure-Mad Trambladd

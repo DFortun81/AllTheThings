@@ -1560,7 +1560,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(72358, {	-- Cascade
 					["provider"] = { "n", 186962 },	-- Cascade
 					["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(74001, {	-- Gruffy
 					["provider"] = { "n", 193251 },	-- Gruffy
@@ -1574,17 +1574,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(72254, {	-- Fisherman Tinnak's Ghost
 					["provider"] = { "n", 193691 },	-- Fisherman Tinnak <Angered Ghost>
 					["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69864, {	-- Forgotten Creation
 					["provider"] = { "n", 193214 },	-- Forgotten Creation
 					["coord"] = { 38.2, 59.0, THE_AZURE_SPAN },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(66718, {	-- Gnolls Must Die
 					["sourceQuests"] = { 66709 },	-- Field Medic 101
 					["coord"] = { 58.1, 42.3, THE_AZURE_SPAN },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(74461, {	-- Malgain Rockknell
 					["provider"] = { "n", 201558 },	-- Malgain Rockknell
@@ -1618,27 +1618,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 19.1, 36.2, THE_AZURE_SPAN },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69895, {	-- Summoned Destroyer
 					["provider"] = { "n", 193288 },	-- Summoned Destroyer
 					["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(67173, {	-- Thieving Gnolls
 					["provider"] = { "n", 192749 },	-- Sharpfang
 					["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69861, {	-- Trilvarus Loreweaver
 					["provider"] = { "n", 193196 },	-- Trilvarus Loreweaver
 					["coord"] = { 70.4, 25.0, THE_AZURE_SPAN },
-					["isDaily"] = 0,	-- remove if inaccurate
+					["isDaily"] = IGNORED_VALUE,	-- remove if inaccurate
 				}),
 				q(69872, {	-- Vakril, the Strongest Tuskarr
 					["provider"] = { "n", 193223 },	-- Vakril
 					["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(74460, {	-- Waterpots
 					["provider"] = { "n", 201556 },	-- Waterpots

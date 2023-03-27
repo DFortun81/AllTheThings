@@ -1112,7 +1112,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69968, {	-- Prozela Galeshot
 					["provider"] = { "n", 193669 },	-- Prozela Galeshot
 					["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(70698, {	-- Researcher Sneakwing
 					["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
@@ -1121,7 +1121,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69851, {	-- Ripsaw the Stalker
 					["provider"] = { "n", 193153 },	-- Ripsaw the Stalker
 					["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69878, {	-- Ronsak the Decimator
 					["provider"] = { "n", 193227 },	-- Ronsak the Decimator
@@ -1130,7 +1130,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(70783, {	-- Skaara
 					["provider"] = { "n", 192949 },	-- Skaara
 					["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69667, {	-- Steamgill
 					["provider"] = { "n", 193123 },	-- Steamgill
@@ -1144,28 +1144,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69837, {	-- Sunscale Behemoth
 					["provider"] = { "n", 193133 },	-- Sunscale Behemoth
 					["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69852, {	-- Territorial Coastling
 					["provider"] = { "n", 193163 },	-- Territorial Coastling
 					["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(65892, {	-- The Sundered Asunder
 					-- ["sourceQuests"] = {  },	--
 					["coord"] = { 64.0, 17.8, OHNAHRAN_PLAINS },
 					["description"] = "You must be at least level 62 for this to pop up. It does not appear you need to accept any quests.",
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(66421, {	-- The Storm Scar
 					["sourceQuests"] = { 66331 },	-- The Primalist Front
 					["coord"] = { 25.7, 40.5, OHNAHRAN_PLAINS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(66970, {	-- Ty'foon the Ascended
 					["provider"] = { "n", 191354 },	-- Ty'foon the Ascended
 					["coord"] = { 26.1, 34.2, OHNAHRAN_PLAINS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69857, {	-- Mikrin of the Raging Winds
 					["provider"] = { "n", 193173 },	-- Mikrin of the Raging Winds
@@ -1179,7 +1179,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(67717, {	-- Web-Queen Ashkaz
 					["provider"] = { "n", 192983 },	-- Web-Queen Ashkaz
 					["coord"] = { 43.3, 47.2, OHNAHRAN_PLAINS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(74440, {	-- Windseeker Avash
 					["provider"] = { "n", 192045 },	-- Windseeker Avash
@@ -1189,7 +1189,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(72364, {	-- Zarizz
 					["provider"] = { "n", 193140 },	-- Zarizz
 					["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
-					["isDaily"] = 0,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 			})),
 		}),
