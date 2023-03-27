@@ -2,7 +2,7 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
-root(ROOTS.Secrets, header(HEADERS.Spell, 376873, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, { 	 -- Otto
+root(ROOTS.Secrets, header(HEADERS.Spell, 376873, bubbleDownSelf({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, { 	 -- Otto
 	["description"] = "***Debugg Mode enabled is required to see all the steps. Fishing is required for this Secret!***",
 	["modelScale"] = .8,
 	["modelID"] = 102074,

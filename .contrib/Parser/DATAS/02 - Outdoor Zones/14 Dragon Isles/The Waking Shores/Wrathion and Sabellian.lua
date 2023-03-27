@@ -13,7 +13,7 @@ local RAINBOW_PEARL = 198397;
 local SEREVITE_ORE = 190396;
 local TALLSTRIDER_SINEW = 201404;
 local WILDERCLOTH = 193050;
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
 			n(ACHIEVEMENTS, {
@@ -905,7 +905,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
 			q(64277),	-- Triggered when choosing anyone in Allegiance To One (66419) -- triggered for both in 2 weeks

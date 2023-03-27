@@ -12,7 +12,7 @@ local TALLSTRIDER_SINEW = 201404;
 local TUFT_OF_PRIMAL_WOOL = 201405;
 local WILDERCLOTH = 193050;
 local WILDERTHREAD = 192096;
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(VENDORS, {
 			n(189065, {	-- Boss Magor

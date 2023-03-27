@@ -52,7 +52,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_CHARACTER, {
 		ach(5455),		-- Got My Mind On My Money (50,000)
 		ach(5456),		-- Got My Mind On My Money (100,000)
 	}),
-	ach(15805, {["timeline"] = TIMELINE_DF_REL}),		-- Level 70
+	ach(15805, {["timeline"] = TIMELINE_10_0_2_LAUNCH}),		-- Level 70
 	ach(14783, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 60
 	ach(14782, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 50
 	ach(14884, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 45

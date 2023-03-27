@@ -608,13 +608,13 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 			n(WORLD_QUESTS, {
 				q(66693, {	-- Tempting Fate: Castle Nathria
 					["isWorldQuest"] = true,
-					["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
+					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(180453),	-- She Had a Stone Heart
 			}),
-			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_DF_REL }, {
+			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_10_0_2_LAUNCH }, {
 				n(ZONE_DROPS, {
 					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet

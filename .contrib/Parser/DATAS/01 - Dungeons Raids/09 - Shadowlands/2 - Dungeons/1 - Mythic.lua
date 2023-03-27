@@ -4,7 +4,7 @@
 root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	d(MYTHIC_DUNGEON, {
 		n(SOULSHAPES, {
-			i(182173, {["timeline"] = { ADDED_DF_REL }}),	-- Hyena Soul
+			i(182173, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),	-- Hyena Soul
 		}),
 	}),
 })));

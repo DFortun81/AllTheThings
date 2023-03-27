@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(tier(SL_TIER, {
 	header(HEADERS.Achievement, SEASON_SINFUL, bubbleDownSelf({
-		["timeline"] = { ADDED_SL_REL, REMOVED_9_1_0, ADDED_DF_REL },
+		["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH },
 	},{
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount",
 		["g"] = {
@@ -34,10 +34,10 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				}),
 				-- Fashion
 				ach(14831, {	-- I Live, I Die, I Queue Again
-					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_DF_REL }
+					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH }
 				}),
 			})),
-			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_DF_REL } }, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH } }, {
 				i(184014, {	-- Vicious War Spider [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -64,7 +64,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				title(398),	-- <Name> the Elite Warrior
 				title(29),	-- Gladiator <Name>
 			})),
-			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_DF_REL } }, {
+			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH } }, {
 				filter(CLOAKS, {
 					i(178301),	-- Sinful Aspirant's Cape
 					i(175851),	-- Sinful Aspirant's Cloak
@@ -149,7 +149,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(178479),	-- Sinful Aspirant's Warglaive
 				}),
 			})),
-			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_DF_REL } }, {
+			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH } }, {
 				filter(CLOAKS, {
 					i(175888),	-- Sinful Gladiator's Cloak
 					i(178353),	-- Sinful Gladiator's Drape

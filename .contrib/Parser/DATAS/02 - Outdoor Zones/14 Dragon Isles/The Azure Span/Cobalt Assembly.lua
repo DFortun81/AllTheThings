@@ -9,7 +9,7 @@ local GLOWING_TITAN_ORB = 201406;
 local RAINBOW_PEARL = 198397;
 local SEREVITE_ORE = 190396;
 local TALLSTRIDER_SINEW = 201404;
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THE_AZURE_SPAN, {
 		faction(2550, {	-- Cobalt Assembly
 			n(ACHIEVEMENTS, {

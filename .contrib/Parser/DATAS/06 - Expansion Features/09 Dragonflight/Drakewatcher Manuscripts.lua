@@ -6,7 +6,7 @@ local function unknown(i)
 	i.u = NEVER_IMPLEMENTED;
 	return i;
 end
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(DRAKEWATCHER_MANUSCRIPTS, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 			ach(16699, {	-- Renewed Proto-Drake Scales and Patterns
@@ -965,7 +965,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 	}),
 })));
 
-root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(DRAKEWATCHER_MANUSCRIPTS, {
 		i(194837),	-- Highland Drake Manuscript: Black Hair (DM!)
 		i(194838),	-- Highland Drake Manuscript: Spined Head (DM!)

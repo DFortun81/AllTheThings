@@ -4737,16 +4737,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						vicioussaddle(i(140348)),	-- Vicious Warstrider (MOUNT!)
 						vicioussaddle(i(173713)),	-- Vicious White Bonesteed (MOUNT!)
 						vicioussaddle(i(184013, {	-- Vicious War Spider (H) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 						vicioussaddle(i(186179, {	-- Vicious War Gorm (H) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 						vicioussaddle(i(187680, {	-- Vicious War Gulper (H) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 						vicioussaddle(i(187642, {	-- Vicious Warstalker (H) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 					}),
 				}),

@@ -19,7 +19,7 @@ local EARTH_ELEMENTAL = {
 	},
 };
 
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(PROFESSIONS, {
 		n(ACHIEVEMENTS, {
 			ach(16683, {	-- In Tyr's Footsteps
@@ -383,14 +383,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				q(66373, {	-- Weekly Alchemy Knowledgepoint #1
 					["name"] = "Alchemy Treasure #1",
 					["provider"] = { "i", 193891 },		-- Experimental Substance
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(66374, {	-- Weekly Alchemy Knowledgepoint #2
 					["name"] = "Alchemy Treasure #2",
 					["provider"] = { "i", 193897 },		-- Reawakened Catalyst
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -400,7 +400,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["crs"] = { 186361 },	-- Rotting Treant
 					["coord"] = { 18.6, 38.4, THE_AZURE_SPAN },
 					["provider"] = { "i", 198963 },		-- Decaying Phlegm
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -410,7 +410,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["crs"] = { 191712 },	-- Hissing Springsoul
 					["coord"] = { 80.2, 75.6, OHNAHRAN_PLAINS },
 					["provider"] = { "i", 198964 },		-- Elementious Splinter
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -655,7 +655,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["crs"] = EARTH_ELEMENTAL.crs,
 					["coords"] = EARTH_ELEMENTAL.coords,
 					["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -1183,7 +1183,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["crs"] = { 194656 },	-- Reservoir Dapple
 					["coord"] = { 49.4, 62.6, THALDRASZUS },
 					["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -1193,7 +1193,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["crs"] = { 193244 },	-- Titan Defense Matrix
 					["coord"] = { 57.2, 60.4, THALDRASZUS },
 					["provider"] = { "i", 198969 },		-- Keeper's Mark
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -1555,14 +1555,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				q(66375, {	-- Weekly Inscription Knowledgepoint #1
 					["name"] = "Inscription Treasure #1",
 					["provider"] = { "i", 193904 },		-- Phoenix Feather Quill
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(66376, {	-- Weekly Inscription Knowledgepoint #2
 					["name"] = "Inscription Treasure #2",
 					["provider"] = { "i", 193905 },		-- Iskaaran Trading Ledger
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -1579,7 +1579,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ 39.6, 51.4, THE_WAKING_SHORES },
 					},
 					["provider"] = { "i", 198971 },		-- Curious Djaradin Rune
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -1592,7 +1592,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 					["coord"] = { 44.0, 81.8, THALDRASZUS },
 					["provider"] = { "i", 198972 },		-- Draconic Glamour
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -1841,14 +1841,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				q(66388, {	-- Weekly Jewelcrafting Knowledgepoint #1
 					["name"] = "Jewelcrafting Treasure #1",
 					["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(66389, {	-- Weekly Jewelcrafting Knowledgepoint #2
 					["name"] = "Jewelcrafting Treasure #2",
 					["provider"] = { "i", 193907 },		-- Chipped Tyrstone
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -1866,7 +1866,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ 45.8 ,58.2, THALDRASZUS },
 					},
 					["provider"] = { "i", 198974 },	-- Elegantly Engraved Embellishment
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -1876,7 +1876,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["crs"] = EARTH_ELEMENTAL.crs,
 					["coords"] = EARTH_ELEMENTAL.coords,
 					["provider"] = { "i", 198973 },	-- Incandescent Curio
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -2113,14 +2113,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				q(66384, {	-- Weekly Leatherworking Knowledgepoint #1
 					["name"] = "Leatherworking Treasure #1",
 					["provider"] = { "i", 193910 },		-- Molten Dragon Scales
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(66385, {	-- Weekly Leatherworking Knowledgepoint #2
 					["name"] = "Leatherworking Treasure #2",
 					["provider"] = { "i", 193913 },		-- Preserved Animal Parts
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -2136,7 +2136,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ 79.4, 32.5, THE_WAKING_SHORES },
 					},
 					["provider"] = { "i", 198975 },		-- Ossified Hide
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -2155,7 +2155,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ 31.3, 76.5, THALDRASZUS },
 					},
 					["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
-					["timeline"] = { ADDED_DF_REL },
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),

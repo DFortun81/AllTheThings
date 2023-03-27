@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(tier(SL_TIER, {
 	header(HEADERS.Achievement, SEASON_UNCHAINED, bubbleDownSelf({
-		["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+		["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 	},{
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount_blue",
 		["g"] = {
@@ -43,10 +43,10 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				}),
 				-- Fashion
 				ach(15102, {	-- It's Off the Chain!
-					["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+					["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 				}),
 			})),
-			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL } }, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH } }, {
 				i(186178, {	-- Vicious War Gorm [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -73,7 +73,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				title(398),	-- <Name> the Elite Warrior
 				title(29),	-- Gladiator <Name>
 			})),
-			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL } }, {
+			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH } }, {
 				filter(CLOAKS, {
 					i(185240),	-- Unchained Aspirant's Cape
 					i(185128),	-- Unchained Aspirant's Cloak
@@ -190,7 +190,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(185293),	-- Unchained Aspirant's Warglaive
 				}),
 			})),
-			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL } }, {
+			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH } }, {
 				filter(CLOAKS, {
 					i(185164),	-- Unchained Gladiator's Cloak
 					i(185245),	-- Unchained Gladiator's Drape
@@ -289,41 +289,41 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				})),
 				n(WEAPONS, {
 					i(188660, {	-- Unchained Gladiator's Barrier
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(185200),	-- Unchained Gladiator's Ceremonial Sword
 					i(185203),	-- Unchained Gladiator's Chalice
 					i(185317),	-- Unchained Gladiator's Dory
 					i(188663, {	-- Unchained Gladiator's Focus Staff
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(188661, {	-- Unchained Gladiator's Gavel
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(185199),	-- Unchained Gladiator's Gladius
 					i(185301),	-- Unchained Gladiator's Greataxe
 					i(188662, {	-- Unchained Gladiator's Greatstaff
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(188668, {	-- Unchained Gladiator's Greatsword
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(185126),	-- Unchained Gladiator's Guard
 					i(185314),	-- Unchained Gladiator's Hacker
 					i(185202),	-- Unchained Gladiator's Knife
 					i(185201),	-- Unchained Gladiator's Lightbow
 					i(188664, {	-- Unchained Gladiator's Mageblade
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(188666, {	-- Unchained Gladiator's Rifle
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(188667, {	-- Unchained Gladiator's Ripper
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(185316),	-- Unchained Gladiator's Ritual Dagger
 					i(188665, {	-- Unchained Gladiator's Slicer
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(185125),	-- Unchained Gladiator's Splitter
 					i(185300),	-- Unchained Gladiator's Vesper
@@ -430,24 +430,24 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				}),
 				n(WEAPONS, {
 					i(188660, {	-- Unchained Gladiator's Barrier
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(185200),	-- Unchained Gladiator's Ceremonial Sword
 					i(185203),	-- Unchained Gladiator's Chalice
 					i(185317),	-- Unchained Gladiator's Dory
 					i(188663, {	-- Unchained Gladiator's Focus Staff
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(188661, {	-- Unchained Gladiator's Gavel
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(185199),	-- Unchained Gladiator's Gladius
 					i(185301),	-- Unchained Gladiator's Greataxe
 					i(188662, {	-- Unchained Gladiator's Greatstaff
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(188668, {	-- Unchained Gladiator's Greatsword
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(185126),	-- Unchained Gladiator's Guard
 					i(185314),	-- Unchained Gladiator's Hacker
@@ -456,17 +456,17 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 						["modID"] = 44,	-- this item does not use modID 14
 					}),
 					i(188664, {	-- Unchained Gladiator's Mageblade
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(188666, {	-- Unchained Gladiator's Rifle
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(188667, {	-- Unchained Gladiator's Ripper
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(185316),	-- Unchained Gladiator's Ritual Dagger
 					i(188665, {	-- Unchained Gladiator's Slicer
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 					}),
 					i(185125),	-- Unchained Gladiator's Splitter
 					i(185300, {	-- Unchained Gladiator's Vesper

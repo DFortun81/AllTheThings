@@ -3428,7 +3428,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			}
 		}
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL } }, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 		r(309822),	-- Shadowlands Alchemy
 		cat(1303, {	-- Anti-Venoms
 			r(307100),	-- Spiritual Anti-Venom

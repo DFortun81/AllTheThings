@@ -452,7 +452,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["description"] = "Requires Renown 22.",
 				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 70.3, ARCHONS_RISE },
-				["timeline"] = { ADDED_SL_REL, REMOVED_9_1_0 },
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64086, {	-- Kyrian Tactician #2
 				["description"] = "Requires Renown 59.",
@@ -463,7 +463,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["description"] = "Requires Renown 7.",
 				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 70.3, ARCHONS_RISE },
-				["timeline"] = { ADDED_SL_REL, REMOVED_9_1_0 },
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64323, {	-- Kyrian Veteran #2
 				["description"] = "Requires Renown 43.",
@@ -643,21 +643,21 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["isWeekly"] = true,
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
-				["timeline"] = { ADDED_SL_REL, REMOVED_9_1_5 },
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 			}),
 			q(62861, {	-- Return Lost Souls (10 Souls)
 				["description"] = "Requires Renown 15.",
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["isWeekly"] = true,
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
-				["timeline"] = { ADDED_SL_REL, REMOVED_9_1_5 },
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 			}),
 			q(62862, {	-- Return Lost Souls (15 Souls)
 				["description"] = "Requires Renown 24.",
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["isWeekly"] = true,
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
-				["timeline"] = { ADDED_SL_REL, REMOVED_9_1_5 },
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 			}),
 			q(62863, {	-- Return Lost Souls (20 Souls)
 				["description"] = "Requires Renown 32.",

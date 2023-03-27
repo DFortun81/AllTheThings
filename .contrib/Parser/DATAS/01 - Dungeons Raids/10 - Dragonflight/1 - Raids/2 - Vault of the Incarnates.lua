@@ -30,7 +30,7 @@ local function TOKEN_MYTHIC(id, t)
 	end
 	return item;
 end
-root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	inst(1200, {	-- Vault of the Incarnates
 		["isRaid"] = true,
 		["coord"] = { 73.0, 55.7, THALDRASZUS },
@@ -944,7 +944,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 				e(2499, {	-- Raszageth the Storm-Eater
 					["crs"] = { 193909 },	-- Raszageth the Storm-Eater
 					["g"] = {
-						ach(17107, {["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
+						ach(17107, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
 						TOKEN_HEROIC(196590, {	-- Dreadful Topaz Forgestone
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200345),	-- Skybound Avenger's Visor
@@ -1208,19 +1208,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						ach(16353, {	-- Mythic: Raszageth the Storm-Eater
 							title(488),	-- <Name> the Storm-Eater
 						}),
-						ach(17116, bubbleDownSelf({["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (A)
+						ach(17116, bubbleDownSelf({["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (A)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(487),	-- <Name>, Famed Slayer of Raszageth
 							},
 						})),
-						ach(17118, bubbleDownSelf({["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (H)
+						ach(17118, bubbleDownSelf({["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (H)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(487),	-- <Name>, Famed Slayer of Raszageth
 							},
 						})),
-						ach(17108, {["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 }}),	-- Cutting Edge: Raszageth the Storm-Eater
+						ach(17108, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Cutting Edge: Raszageth the Storm-Eater
 						TOKEN_MYTHIC(196590, {	-- Dreadful Topaz Forgestone
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200345),	-- Skybound Avenger's Visor
@@ -1258,7 +1258,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	inst(1200, {	-- Vault of the Incarnates
 		q(72264),	-- 'Anicent Vault Artifact' first drop per week
 		q(72612),	-- Volcanius (trash)

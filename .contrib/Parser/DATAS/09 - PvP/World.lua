@@ -50,7 +50,7 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 			i(184810),	-- Plundered Supplies [Shadowlands-Maldraxxus-(Ore)]
 		}),
 	})),
-	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 		n(ACHIEVEMENTS, {
 			ach(16599, {	-- A Champion's Pursuit
 				crit(1, {	-- Krolkoth the Mountain
@@ -176,7 +176,7 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 })));
 
 root(ROOTS.PVP, pvp(n(-10058, {	-- World
-	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 		q(72376),	-- looting first War Crate of the day
 		q(72377, {	-- looting first War Crate of the day
 			["name"] = "Warmode Crate Looted",

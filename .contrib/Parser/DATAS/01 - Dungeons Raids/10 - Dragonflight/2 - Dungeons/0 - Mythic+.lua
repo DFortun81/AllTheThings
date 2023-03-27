@@ -1,10 +1,10 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_THUNDERING, bubbleDownSelf({
-			["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 }
+			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
 		},{
 			ach(16801, {	-- Realm First! Dragonflight Keystone Hero
 				["u"] = REMOVED_FROM_GAME,

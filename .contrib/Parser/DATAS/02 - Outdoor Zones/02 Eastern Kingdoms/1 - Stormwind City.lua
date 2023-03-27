@@ -7303,16 +7303,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						vicioussaddle(i(173714)),	-- Vicious White Warsaber (MOUNT!)
 						vicioussaddle(i(143648)),	-- Vicious War Turtle (A) (MOUNT!)
 						vicioussaddle(i(184014, {	-- Vicious War Spider (A) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 						vicioussaddle(i(186178, {	-- Vicious War Gorm (A) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 						vicioussaddle(i(187681, {	-- Vicious War Gulper (A) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 						vicioussaddle(i(187644, {	-- Vicious Warstalker (A) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 					}),
 				}),

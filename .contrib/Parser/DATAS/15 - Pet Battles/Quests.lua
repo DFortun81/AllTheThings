@@ -833,7 +833,7 @@ root(ROOTS.PetBattles, petbattle({
 	}),
 	-- Dragonflight
 	n(QUESTS, bubbleDown({
-		["timeline"] = TIMELINE_DF_REL,
+		["timeline"] = TIMELINE_10_0_2_LAUNCH,
 	},{
 		-- PET QUESTS?!
 		q(70647, {	-- Oh Where, Oh Where Can He Be?

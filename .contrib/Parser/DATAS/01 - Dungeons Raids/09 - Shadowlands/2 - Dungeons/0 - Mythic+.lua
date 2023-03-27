@@ -102,7 +102,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 			})),
 		}),
 		n(SOULSHAPES, {
-			i(182173, {["timeline"] = { ADDED_9_0_2, REMOVED_DF_REL }}),	-- Hyena Soul
+			i(182173, {["timeline"] = { ADDED_9_0_2, REMOVED_10_0_2_LAUNCH }}),	-- Hyena Soul
 		}),
 	}),
 }));

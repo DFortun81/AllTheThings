@@ -50,19 +50,19 @@ local SymRaid = function(InstanceID, Remove)
 	end
 	return SymLink
 end
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(VALDRAKKEN, {
 		o(381035, {	-- The Great Vault
 			["coord"] = { 58.8, 57.9, VALDRAKKEN },
 			["g"] = {
 				i(201836),	-- Aspects' Token of Merit
 				inst(1200, {	-- Vault of the Incarnates
-					["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 },
+					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 					["sym"] = SymRaid(1200),
 				}),
 				n(MYTHIC_PLUS, {
 					header(HEADERS.Achievement, SEASON_THUNDERING, {
-						["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 },
+						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 						["sym"] = {
 							-- Dragonflight, Legion & Warlords of Draenor Dungeons
 							{"select", "instanceID",
@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				pvp(n(PVP, {
 					header(HEADERS.Achievement, SEASON_CRIMSON, {
 						["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
-						["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 },
+						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 						["sym"] = SymPvP(SEASON_CRIMSON),
 					}),
 				})),

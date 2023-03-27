@@ -120,17 +120,17 @@ profession(COOKING, {
 				-- #if AFTER LEGION
 				applyclassicphase(LEGION_PHASE_ONE, {
 					["name"] = "Extra Fancy Darkmoon Feast",
-					["timeline"] = { ADDED_SL_REL },
+					["timeline"] = { ADDED_9_0_2_LAUNCH },
 					["recipeID"] = 347509,
 				}),
 				applyclassicphase(LEGION_PHASE_ONE, {
 					["name"] = "Extra Lemony Herb Filet",
-					["timeline"] = { ADDED_SL_REL },
+					["timeline"] = { ADDED_9_0_2_LAUNCH },
 					["recipeID"] = 347457,
 				}),
 				applyclassicphase(LEGION_PHASE_ONE, {
 					["name"] = "Extra Sugary Fish Feast",
-					["timeline"] = { ADDED_SL_REL },
+					["timeline"] = { ADDED_9_0_2_LAUNCH },
 					["recipeID"] = 347176,
 				}),
 				-- #endif

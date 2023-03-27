@@ -104,7 +104,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 				},
 			}),
 			q(66619, {	-- Antros (Fated)
-				["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select","encounterID",2468,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -136,7 +136,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 				},
 			}),
 			q(66618, {	-- Mor'geth (Fated)
-				["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select","encounterID",2456,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -164,7 +164,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 				},
 			}),
 			q(66617, {	-- Mortanis (Fated)
-				["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select","encounterID",2431,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -192,7 +192,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 				},
 			}),
 			q(66615, {	-- Nurgash Muckfromed (Fated)
-				["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select","encounterID",2433,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -220,7 +220,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 				},
 			}),
 			q(66616, {	-- Oranomonos the Everbranching (Fated WQ)
-				["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select","encounterID",2432,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -248,7 +248,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 				},
 			}),
 			q(66614, {	-- Valinor, the Light of Eons (Fated WQ)
-				["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select","encounterID",2430,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'

@@ -5,7 +5,7 @@
 root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to SL)
 		ach(15654, bubbleDownSelf({	-- Back from the Beyond
-			["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
+			["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 			["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
 		},{
 			-- Meta Achievement

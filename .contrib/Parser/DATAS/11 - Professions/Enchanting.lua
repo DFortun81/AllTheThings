@@ -998,7 +998,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(287494),	-- Iwen's Enchanting Rod
 		})),
 	}))),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL } }, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 		r(309832),	-- Shadowlands Enchanting
 		cat(1365, {	-- Boot Enchantments
 			r(309532),	-- Agile Soulwalker

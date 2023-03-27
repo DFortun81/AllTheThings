@@ -588,10 +588,10 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 			n(WORLD_QUESTS, {
 				q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
 					["isWorldQuest"] = true,
-					["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
+					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				}),
 			}),
-			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_DF_REL }, {
+			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_10_0_2_LAUNCH }, {
 				n(ZONE_DROPS, {
 					i(190629),	-- Cartel's Larcenous Toecaps
 					i(190630),	-- Devouring Pellicle Shoulderpads
@@ -1218,7 +1218,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 			d(HEROIC_RAID, {
 				n(QUESTS, {
 					q(65717, bubbleDownSelf({	-- Final Shape
-						["timeline"] = { ADDED_9_2_0, REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 					},{
 						["provider"] = { "i", 190773 },	-- Carcinized Protoform
 						["g"] = {
@@ -1484,7 +1484,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 				e(2467, {	-- Rygelon
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
-						ach(15468, {["timeline"] = { ADDED_9_2_7, REMOVED_DF_REL }}),	-- We Are All Made of Stars [Heroic]
+						ach(15468, {["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH }}),	-- We Are All Made of Stars [Heroic]
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
 						i(189851),	-- Devastated Worldshard
@@ -1532,7 +1532,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 						i(188253),	-- Scars of Fraternal Strife
 						i(189859),	-- Worldkiller Iris
 						i(189861),	-- Zovastrum, the Unmaking
-						i(190773, {["timeline"] = { ADDED_9_2_0, REMOVED_DF_REL }}),	-- Carcinized Protoform (MOUNT! - QUEST)
+						i(190773, {["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH }}),	-- Carcinized Protoform (MOUNT! - QUEST)
 						i(189982),	-- Silithid Soul
 					},
 				}),
@@ -1808,7 +1808,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
 						ach(15488),	-- Mythic: Rygelon
-						ach(15469, {["timeline"] = { ADDED_9_2_7, REMOVED_DF_REL }}),	-- We Are All Made of Stars [Mythic]
+						ach(15469, {["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH }}),	-- We Are All Made of Stars [Mythic]
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
 						i(189851),	-- Devastated Worldshard

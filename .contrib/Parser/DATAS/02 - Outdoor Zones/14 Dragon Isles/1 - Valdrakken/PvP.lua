@@ -4,7 +4,7 @@
 local BLOODY_TOKENS = 2123;
 local ROUSING_IRE = 190451;
 local MOH = 137642;
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(VALDRAKKEN, {
 		pvp(n(PVP, {
 			n(QUESTS, {
@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 44.3, 36.6, VALDRAKKEN },
 					["g"] = {
 						header(HEADERS.Achievement, SEASON_CRIMSON, bubbleDownSelf({
-							["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 },
+							["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 						},{
 							["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
 							["g"] = {
@@ -990,7 +990,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 45.9, 38.7, VALDRAKKEN },
 					["g"] = {
 						header(HEADERS.Achievement, SEASON_CRIMSON, bubbleDownSelf({
-							["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 },
+							["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 						},{
 							["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
 							["g"] = {
@@ -1430,7 +1430,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {
 						header(HEADERS.Achievement, SEASON_CRIMSON, bubbleDownSelf({
-							["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 },
+							["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 						},{
 							["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
 							["g"] = {

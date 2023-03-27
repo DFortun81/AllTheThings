@@ -457,10 +457,10 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 			n(WORLD_QUESTS, {
 				q(66694, {	-- Tempting Fate: Sanctum of Domination
 					["isWorldQuest"] = true,
-					["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
+					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				}),
 			}),
-			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_DF_REL }, {
+			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_10_0_2_LAUNCH }, {
 				n(ZONE_DROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
 					i(186362),	-- Bindings of the Subjugated

@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(tier(DF_TIER, {
 	header(HEADERS.Achievement, SEASON_CRIMSON, bubbleDownSelf({
-		["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 },
+		["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 	},{
 		["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
 		["g"] = {

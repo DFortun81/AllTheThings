@@ -41,7 +41,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
-			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 } }, {
+			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				i(201998),	-- Fenryr's Bloodstained Fang
 				i(201997),	-- Key to the Halls
 				i(201999),	-- Skovald's Resolve

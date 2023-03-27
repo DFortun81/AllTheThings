@@ -52,7 +52,7 @@ local SymRaid = function(InstanceID, Remove)
 end
 root(ROOTS.Zones, m(SHADOWLANDS, {
 	m(ORIBOS, {
-		o(353484, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL, REMOVED_DF_REL } }, {	-- The Great Vault
+		o(353484, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH } }, {	-- The Great Vault
 			["coord"] = { 64.3, 32.1, ORIBOS },
 			["g"] = {
 				i(187219, {	-- Attendant's Token of Merit

@@ -38,7 +38,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 		})),
 		n(ACHIEVEMENTS, {
 			ach(13075, bubbleDownSelf({		-- Battle for Azeroth Keymaster
-				["timeline"] = { ADDED_BFA_REL, REMOVED_9_0_1 },
+				["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 },
 			}, {
 				crit(4),		-- Atal'Dazar
 				crit(1),		-- Freehold
@@ -52,7 +52,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				crit(2),		-- Waycrest Manor
 			})),
 			header(HEADERS.Achievement, SEASON_INFESTED, bubbleDownSelf({
-				["timeline"] = { ADDED_BFA_REL, REMOVED_8_1_0 },
+				["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 },
 			},{
 				ach(13078, {	-- Realm First! Battle for Azeroth Keystone Master
 					["u"] = REMOVED_FROM_GAME,

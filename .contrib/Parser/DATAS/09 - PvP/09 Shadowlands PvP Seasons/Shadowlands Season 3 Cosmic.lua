@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(tier(SL_TIER, {
 	header(HEADERS.Achievement, SEASON_COSMIC, bubbleDownSelf({
-		["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_DF_REL },
+		["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
 	},{
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount_red",
 		["g"] = {
@@ -45,10 +45,10 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				}),
 				--Fashion
 				ach(15408, {	-- Cosmic Chic
-					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_DF_REL },
+					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
 				}),
 			})),
-			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_DF_REL } }, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH } }, {
 				i(187681, {	-- Vicious War Gulper [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -75,7 +75,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				title(398),	-- <Name> the Elite Warrior
 				title(29),	-- Gladiator <Name>
 			})),
-			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_DF_REL } }, {
+			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH } }, {
 				filter(CLOAKS, {
 					i(186944),	-- Cosmic Aspirant's Cape
 					i(186873),	-- Cosmic Aspirant's Cloak
@@ -192,7 +192,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(186957),	-- Cosmic Aspirant's Warglaive
 				}),
 			})),
-			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_DF_REL } }, {
+			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH } }, {
 				n(CLASSES,{
 					["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
 					["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
