@@ -958,6 +958,27 @@ namespace ATT
             }
         }
 
+        private static void Validate_AltQuests(Dictionary<string, object> data)
+        {
+            if (data.TryGetValue("altQuests", out List<object> altQuests))
+            {
+                foreach (var altQuestRef in altQuests)
+                {
+                    if (!altQuestRef.TryConvert(out long altQuestID))
+                    {
+                        LogError($"Non-number 'altQuests' value used: {altQuestRef}");
+                        continue;
+                    }
+
+                    if (!Objects.AllQuests.TryGetValue(altQuestID, out Dictionary<string, object> altQuest))
+                    {
+                        // Source Quest not in database
+                        LogDebug($"WARN: Referenced Alternate Quest {altQuestID} has not been Sourced");
+                    }
+                }
+            }
+        }
+
         private static void Validate_Encounter(Dictionary<string, object> data)
         {
             if (data.TryGetValue("encounterID", out long encounterID))
@@ -1292,6 +1313,7 @@ namespace ATT
             CheckRequireSkill(data);
             CheckHeirloom(data);
             Validate_SourceQuests(data);
+            Validate_AltQuests(data);
             Items.DetermineSourceID(data);
             CheckObjectConversion(data);
 
