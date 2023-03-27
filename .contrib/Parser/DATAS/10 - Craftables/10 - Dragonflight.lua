@@ -87,73 +87,75 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			["requireSkill"] = ALCHEMY,
 		},{
 			-- Alchemy Essentials
-			q(71251, { ["name"] = "First Craft: Advanced Phial Alchemical Experimentation", }),	-- Advanced Phial Alchemical Experimentation
-			q(71253, { ["name"] = "First Craft: Advanced Potion Alchemical Experimentation", }),	-- Advanced Potion Alchemical Experimentation
-			q(71250, { ["name"] = "First Craft: Basic Phial Alchemical Experimentation", }),	-- Basic Phial Alchemical Experimentation
-			q(71252, { ["name"] = "First Craft: Basic Potion Alchemical Experimentation", }),	-- Basic Potion Alchemical Experimentation
+			q(71251, { ["name"] = "First Craft: Advanced Phial Alchemical Experimentation", }),
+			q(71253, { ["name"] = "First Craft: Advanced Potion Alchemical Experimentation", }),
+			q(71250, { ["name"] = "First Craft: Basic Phial Alchemical Experimentation", }),
+			q(71252, { ["name"] = "First Craft: Basic Potion Alchemical Experimentation", }),
 			-- Reagents
-			q(71248, { ["name"] = "First Craft: Omnium Draconis", }),	-- Omnium Draconis
-			q(71249, { ["name"] = "First Craft: Primal Convergent", }),	-- Primal Convergent
+			q(71248, { ["name"] = "First Craft: Omnium Draconis", }),
+			q(71249, { ["name"] = "First Craft: Primal Convergent", }),
 			-- Air Potions
-			q(71287, { ["name"] = "First Craft: Aerated Mana Potion", }),	-- Aerated Mana Potion
-			q(71279, { ["name"] = "First Craft: Bottled Putrescence", }),	-- Bottled Putrescence
-			q(71292, { ["name"] = "First Craft: Potion of Gusts", }),	-- Potion of Gusts
-			q(71293, { ["name"] = "First Craft: Potion of Shocking Disclosure", }),	-- Potion of Shocking Disclosure
-			q(71291, { ["name"] = "First Craft: Potion of the Hushed Zephyr", }),	-- Potion of the Hushed Zephyr
-			q(71283, { ["name"] = "First Craft: Residual Neural Channeling Agent", }),	-- Residual Neural Channeling Agent
-			-- Frost Potions
-			q(71284, { ["name"] = "First Craft: Delicate Suspension of Spores", }),	-- Delicate Suspension of Spores
-			q(71281, { ["name"] = "First Craft: Potion of Chilled Clarity", }),	-- Potion of Chilled Clarity
-			q(71276, { ["name"] = "First Craft: Potion of Frozen Fatality", }),	-- Potion of Frozen Fatality
-			q(71280, { ["name"] = "First Craft: Potion of Frozen Focus", }),	-- Potion of Frozen Focus
-			q(71282, { ["name"] = "First Craft: Potion of Withering Vitality", }),	-- Potion of Withering Vitality
-			q(71285, { ["name"] = "First Craft: Refreshing Healing Potion", }),	-- Refreshing Healing Potion
+			q(71287, { ["name"] = "First Craft: Aerated Mana Potion", }),
+			q(71279, { ["name"] = "First Craft: Bottled Putrescence", }),
+			q(71292, { ["name"] = "First Craft: Potion of Gusts", }),
+			q(71293, { ["name"] = "First Craft: Potion of Shocking Disclosure", }),
+			q(71291, { ["name"] = "First Craft: Potion of the Hushed Zephyr", }),
+			q(71283, { ["name"] = "First Craft: Residual Neural Channeling Agent", }),
 			-- Cauldrons
-			q(71295, { ["name"] = "First Craft: Potion Cauldron of Ultimate Power", }),	-- Potion Cauldron of Ultimate Power
-			q(71296, { ["name"] = "First Craft: Potion Cauldron of Power", }),	-- Potion Cauldron of Power
-			q(71247, { ["name"] = "First Craft: Cauldron of the Pooka", }),	-- Cauldron of the Pooka
+			q(71295, { ["name"] = "First Craft: Potion Cauldron of Ultimate Power", }),
+			q(71296, { ["name"] = "First Craft: Potion Cauldron of Power", }),
+			q(71247, { ["name"] = "First Craft: Cauldron of the Pooka", }),
+			-- Frost Potions
+			q(71284, { ["name"] = "First Craft: Delicate Suspension of Spores", }),
+			q(71281, { ["name"] = "First Craft: Potion of Chilled Clarity", }),
+			q(71276, { ["name"] = "First Craft: Potion of Frozen Fatality", }),
+			q(71280, { ["name"] = "First Craft: Potion of Frozen Focus", }),
+			q(71282, { ["name"] = "First Craft: Potion of Withering Vitality", }),
+			q(71285, { ["name"] = "First Craft: Refreshing Healing Potion", }),
 			-- Elemental Phials and Potions
-			q(71286, { ["name"] = "First Craft: Elemental Potion of Ultimate Power", }),	-- Elemental Potion of Ultimate Power
-			q(71288, { ["name"] = "First Craft: Elemental Potion of Power", }),	-- Elemental Potion of Power
-			q(71278, { ["name"] = "First Craft: Phial of Elemental Chaos", }),	-- Phial of Elemental Chaos
+			q(71286, { ["name"] = "First Craft: Elemental Potion of Ultimate Power", }),
+			q(71288, { ["name"] = "First Craft: Elemental Potion of Power", }),
+			q(71278, { ["name"] = "First Craft: Phial of Elemental Chaos", }),
 			-- Air Phials
-			q(71274, { ["name"] = "First Craft: Aerated Phial of Deftness", }),	-- Aerated Phial of Deftness
-			q(71273, { ["name"] = "First Craft: Aerated Phial of Quick Hands", }),	-- Aerated Phial of Quick Hands
-			q(71272, { ["name"] = "First Craft: Charged Phial of Alacrity", }),	-- Charged Phial of Alacrity
-			q(71268, { ["name"] = "First Craft: Phial of Charged Isolation", }),	-- Phial of Charged Isolation
-			q(71270, { ["name"] = "First Craft: Phial of Static Empowerment", }),	-- Phial of Static Empowerment
-			q(71265, { ["name"] = "First Craft: Phial of Still Air", }),	-- Phial of Still Air
-			q(71264, { ["name"] = "First Craft: Phial of the Eye in the Storm", }),	-- Phial of the Eye in the Storm
+			q(71274, { ["name"] = "First Craft: Aerated Phial of Deftness", }),
+			q(71273, { ["name"] = "First Craft: Aerated Phial of Quick Hands", }),
+			q(71272, { ["name"] = "First Craft: Charged Phial of Alacrity", }),
+			q(71268, { ["name"] = "First Craft: Phial of Charged Isolation", }),
+			q(71270, { ["name"] = "First Craft: Phial of Static Empowerment", }),
+			q(71265, { ["name"] = "First Craft: Phial of Still Air", }),
+			q(71264, { ["name"] = "First Craft: Phial of the Eye in the Storm", }),
 			-- Frost Phials
-			q(71277, { ["name"] = "First Craft: Crystalline Phial of Perception", }),	-- Crystalline Phial of Perception
-			q(71267, { ["name"] = "First Craft: Iced Phial of Corrupting Rage", }),	-- Iced Phial of Corrupting Rage
-			q(71269, { ["name"] = "First Craft: Phial of Glacial Fury", }),	-- Phial of Glacial Fury
-			q(71266, { ["name"] = "First Craft: Phial of Icy Preservation", }),	-- Phial of Icy Preservation
-			q(71271, { ["name"] = "First Craft: Phial of Tepid Versatility", }),	-- Phial of Tepid Versatility
-			q(71275, { ["name"] = "First Craft: Steaming Phial of Finesse", }),	-- Steaming Phial of Finesse
+			q(71277, { ["name"] = "First Craft: Crystalline Phial of Perception", }),
+			q(71267, { ["name"] = "First Craft: Iced Phial of Corrupting Rage", }),
+			q(71269, { ["name"] = "First Craft: Phial of Glacial Fury", }),
+			q(71266, { ["name"] = "First Craft: Phial of Icy Preservation", }),
+			q(71271, { ["name"] = "First Craft: Phial of Tepid Versatility", }),
+			q(71275, { ["name"] = "First Craft: Steaming Phial of Finesse", }),
 			-- Transmutations
-			q(71297, { ["name"] = "First Craft: Transmute: Awakened Air", }),	-- Transmute: Awakened Air
-			q(71298, { ["name"] = "First Craft: Transmute: Awakened Earth", }),	-- Transmute: Awakened Earth
-			q(71299, { ["name"] = "First Craft: Transmute: Awakened Fire", }),	-- Transmute: Awakened Fire
-			q(71300, { ["name"] = "First Craft: Transmute: Awakened Frost", }),	-- Transmute: Awakened Frost
-			q(71301, { ["name"] = "First Craft: Transmute: Decay to Elements", }),	-- Transmute: Decay to Elements
-			q(71302, { ["name"] = "First Craft: Transmute: Order to Elements", }),	-- Transmute: Order to Elements
+			q(71297, { ["name"] = "First Craft: Transmute: Awakened Air", }),
+			q(71298, { ["name"] = "First Craft: Transmute: Awakened Earth", }),
+			q(71299, { ["name"] = "First Craft: Transmute: Awakened Fire", }),
+			q(71300, { ["name"] = "First Craft: Transmute: Awakened Frost", }),
+			q(71301, { ["name"] = "First Craft: Transmute: Decay to Elements", }),
+			q(71302, { ["name"] = "First Craft: Transmute: Order to Elements", }),
 			-- Optional Reagents
-			q(71263, { ["name"] = "First Craft: Potion Absorption Inhibitor", }),	-- Potion Absorption Inhibitor
+			q(71263, { ["name"] = "First Craft: Potion Absorption Inhibitor", }),
 			-- Finishing Reagents
-			q(71257, { ["name"] = "First Craft: Agitating Potion Augmentation", }),	-- Agitating Potion Augmentation
-			q(71255, { ["name"] = "First Craft: Brood Salt", }),	-- Brood Salt
-			q(71258, { ["name"] = "First Craft: Reactive Phial Embellishment", }),	-- Reactive Phial Embellishment
-			q(71254, { ["name"] = "First Craft: Stable Fluidic Draconium", }),	-- Stable Fluidic Draconium
-			q(71256, { ["name"] = "First Craft: Writhefire Oil", }),	-- Writhefire Oil
+			q(71257, { ["name"] = "First Craft: Agitating Potion Augmentation", }),
+			q(71255, { ["name"] = "First Craft: Brood Salt", }),
+			q(71258, { ["name"] = "First Craft: Reactive Phial Embellishment", }),
+			q(71254, { ["name"] = "First Craft: Stable Fluidic Draconium", }),
+			q(71256, { ["name"] = "First Craft: Writhefire Oil", }),
 			-- Incense
-			q(71259, { ["name"] = "First Craft: Exultant Incense", }),	-- Exultant Incense
-			q(71289, { ["name"] = "First Craft: Fervid Incense", }),	-- Fervid Incense
-			q(71261, { ["name"] = "First Craft: Sagacious Incense", }),	-- Sagacious Incense
-			q(71260, { ["name"] = "First Craft: Somniferous Incense", }),	-- Somniferous Incense
+			q(71259, { ["name"] = "First Craft: Exultant Incense", }),
+			q(71289, { ["name"] = "First Craft: Fervid Incense", }),
+			q(71261, { ["name"] = "First Craft: Sagacious Incense", }),
+			q(71260, { ["name"] = "First Craft: Somniferous Incense", }),
 			-- Alchemist Stones
-			q(71246, { ["name"] = "First Craft: Alacritous Alchemist Stone", }),	-- Alacritous Alchemist Stone
-			q(71245, { ["name"] = "First Craft: Sustaining Alchemist Stone", }),	-- Sustaining Alchemist Stone
+			q(71246, { ["name"] = "First Craft: Alacritous Alchemist Stone", }),
+			q(71245, { ["name"] = "First Craft: Sustaining Alchemist Stone", }),
+			-- Artisan Curios
+			--q(TODO, { ["name"] = "First Craft: Draconic Suppression Powder", ["timeline"] = { ADDED_10_0_7 }, }),
 		})),
 		filter(MISC, {
 			i(191520),	-- Agitating Potion Augmentation+
@@ -162,7 +164,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(191514),	-- Brood Salt+
 			i(191515),	-- Brood Salt++
 			i(191516),	-- Brood Salt+++
-			i(203407, {["timeline"]={ADDED_10_0_7}}),	-- Draconic Suppression Powder
+			i(203407, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Draconic Suppression Powder
 			i(191505),	-- Exultant Incense+
 			i(191506),	-- Exultant Incense++
 			i(191507),	-- Exultant Incense+++
@@ -339,105 +341,106 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			["requireSkill"] = BLACKSMITHING,
 		},{
 			-- Smelting --
-			q(71353, { ["name"] = "First Craft: Frostfire Alloy", }),	-- Frostfire Alloy
-			q(71355, { ["name"] = "First Craft: Infurious Alloy", }),	-- Infurious Alloy
-			q(71354, { ["name"] = "First Craft: Obsidian Seared Alloy", }),	-- Obsidian Seared Alloy
-			q(71352, { ["name"] = "First Craft: Primal Molten Alloy", }),	-- Primal Molten Alloy
+			q(71353, { ["name"] = "First Craft: Frostfire Alloy", }),
+			q(71355, { ["name"] = "First Craft: Infurious Alloy", }),
+			q(71354, { ["name"] = "First Craft: Obsidian Seared Alloy", }),
+			q(71352, { ["name"] = "First Craft: Primal Molten Alloy", }),
 			-- Optional Reagent
-			q(71358, { ["name"] = "First Craft: Armor Spikes", }),	--  Armor Spikes
+			q(71358, { ["name"] = "First Craft: Armor Spikes", }),
 			-- Armor
-			q(71309, { ["name"] = "First Craft: Allied Chestplate of Generosity", }),	-- Allied Chestplate of Generosity
-			q(71310, { ["name"] = "First Craft: Allied Wristguard of Companionship", }),	-- Allied Wristguard of Companionship
-			q(71331, { ["name"] = "First Craft: Crimson Combatant's Draconium Armguards", }),	-- Crimson Combatant's Draconium Armguards
-			q(71324, { ["name"] = "First Craft: Crimson Combatant's Draconium Breastplate", }),	-- Crimson Combatant's Draconium Breastplate
-			q(71326, { ["name"] = "First Craft: Crimson Combatant's Draconium Gauntlets", }),	-- Crimson Combatant's Draconium Gauntlets
-			q(71328, { ["name"] = "First Craft: Crimson Combatant's Draconium Greaves", }),	-- Crimson Combatant's Draconium Greaves
-			q(71327, { ["name"] = "First Craft: Crimson Combatant's Draconium Helm", }),	-- Crimson Combatant's Draconium Helm
-			q(71329, { ["name"] = "First Craft: Crimson Combatant's Draconium Pauldrons", }),	-- Crimson Combatant's Draconium Pauldrons
-			q(71325, { ["name"] = "First Craft: Crimson Combatant's Draconium Sabatons", }),	-- Crimson Combatant's Draconium Sabatons
-			q(71330, { ["name"] = "First Craft: Crimson Combatant's Draconium Waistguard", }),	-- Crimson Combatant's Draconium Waistguard
-			q(72489, { ["name"] = "First Craft: Explorer's Expert Clasp", }),	-- Explorer's Expert Clasp
-			q(72562, { ["name"] = "First Craft: Explorer's Expert Gauntlets", }),	-- Explorer's Expert Gauntlets
-			q(72494, { ["name"] = "First Craft: Explorer's Expert Greaves", }),	-- Explorer's Expert Greaves
-			q(72490, { ["name"] = "First Craft: Explorer's Expert Helm", }),	-- Explorer's Expert Helm
-			q(72568, { ["name"] = "First Craft: Explorer's Expert Spaulders", }),	-- Explorer's Expert Spaulders
-			q(71314, { ["name"] = "First Craft: Explorer's Plate Boots", }),	-- Explorer's Plate Boots
-			q(71315, { ["name"] = "First Craft: Explorer's Plate Bracers", }),	-- Explorer's Plate Bracers
-			q(71313, { ["name"] = "First Craft: Explorer's Plate Chestguard", }),	-- Explorer's Plate Chestguard
-			q(71305, { ["name"] = "First Craft: Frostfire Legguards of Preparation", }),	-- Frostfire Legguards of Preparation
-			q(71308, { ["name"] = "First Craft: Infurious Helm of Vegeance", }),	-- Infurious Helm of Vegeance
-			q(71307, { ["name"] = "First Craft: Infurious Warboots of Impunity", }),	-- Infurious Warboots of Impunity
-			q(71316, { ["name"] = "First Craft: Primal Molten Breastplate", }),	-- Primal Molten Breastplate
-			q(71318, { ["name"] = "First Craft: Primal Molten Gauntlets", }),	-- Primal Molten Gauntlets
-			q(71322, { ["name"] = "First Craft: Primal Molten Greatbelt", }),	-- Primal Molten Greatbelt
-			q(71319, { ["name"] = "First Craft: Primal Molten Helm", }),	-- Primal Molten Helm
-			q(71320, { ["name"] = "First Craft: Primal Molten Legplates", }),	-- Primal Molten Legplates
-			q(71321, { ["name"] = "First Craft: Primal Molten Pauldrons", }),	-- Primal Molten Pauldrons
-			q(71317, { ["name"] = "First Craft: Primal Molten Sabatons", }),	-- Primal Molten Sabatons
-			q(71323, { ["name"] = "First Craft: Primal Molten Vambraces", }),	-- Primal Molten Vambraces
-			q(71306, { ["name"] = "First Craft: Unstable Frostfire Belt", }),	-- Unstable Frostfire Belt
+			q(71309, { ["name"] = "First Craft: Allied Chestplate of Generosity", }),
+			q(71310, { ["name"] = "First Craft: Allied Wristguard of Companionship", }),
+			q(71331, { ["name"] = "First Craft: Crimson Combatant's Draconium Armguards", }),
+			q(71324, { ["name"] = "First Craft: Crimson Combatant's Draconium Breastplate", }),
+			q(71326, { ["name"] = "First Craft: Crimson Combatant's Draconium Gauntlets", }),
+			q(71328, { ["name"] = "First Craft: Crimson Combatant's Draconium Greaves", }),
+			q(71327, { ["name"] = "First Craft: Crimson Combatant's Draconium Helm", }),
+			q(71329, { ["name"] = "First Craft: Crimson Combatant's Draconium Pauldrons", }),
+			q(71325, { ["name"] = "First Craft: Crimson Combatant's Draconium Sabatons", }),
+			q(71330, { ["name"] = "First Craft: Crimson Combatant's Draconium Waistguard", }),
+			q(72489, { ["name"] = "First Craft: Explorer's Expert Clasp", }),
+			q(72562, { ["name"] = "First Craft: Explorer's Expert Gauntlets", }),
+			q(72494, { ["name"] = "First Craft: Explorer's Expert Greaves", }),
+			q(72490, { ["name"] = "First Craft: Explorer's Expert Helm", }),
+			q(72568, { ["name"] = "First Craft: Explorer's Expert Spaulders", }),
+			q(71314, { ["name"] = "First Craft: Explorer's Plate Boots", }),
+			q(71315, { ["name"] = "First Craft: Explorer's Plate Bracers", }),
+			q(71313, { ["name"] = "First Craft: Explorer's Plate Chestguard", }),
+			q(71305, { ["name"] = "First Craft: Frostfire Legguards of Preparation", }),
+			q(71308, { ["name"] = "First Craft: Infurious Helm of Vegeance", }),
+			q(71307, { ["name"] = "First Craft: Infurious Warboots of Impunity", }),
+			q(71316, { ["name"] = "First Craft: Primal Molten Breastplate", }),
+			q(71318, { ["name"] = "First Craft: Primal Molten Gauntlets", }),
+			q(71322, { ["name"] = "First Craft: Primal Molten Greatbelt", }),
+			q(71319, { ["name"] = "First Craft: Primal Molten Helm", }),
+			q(71320, { ["name"] = "First Craft: Primal Molten Legplates", }),
+			q(71321, { ["name"] = "First Craft: Primal Molten Pauldrons", }),
+			q(71317, { ["name"] = "First Craft: Primal Molten Sabatons", }),
+			q(71323, { ["name"] = "First Craft: Primal Molten Vambraces", }),
+			q(71306, { ["name"] = "First Craft: Unstable Frostfire Belt", }),
 			-- Shields
-			q(72183, { ["name"] = "First Craft: Draconium Defender", }),	-- Draconium Defender
-			q(71303, { ["name"] = "First Craft: Shield of the Hearth", }),	-- Shield of the Hearth
-			q(71304, { ["name"] = "First Craft: Primal Molten Defender", }),	-- Primal Molten Defender
+			q(72183, { ["name"] = "First Craft: Draconium Defender", }),
+			q(71303, { ["name"] = "First Craft: Shield of the Hearth", }),
+			q(71304, { ["name"] = "First Craft: Primal Molten Defender", }),
 			-- Weapons
-			q(71332, { ["name"] = "First Craft: Draconium Axe", }),	-- Draconium Axe
-			q(71336, { ["name"] = "First Craft: Draconium Dirk", }),	-- Draconium Dirk
-			q(72186, { ["name"] = "First Craft: Draconium Great Axe", }),	-- Draconium Great Axe
-			q(71334, { ["name"] = "First Craft: Draconium Great Mace", }),	-- Draconium Great Mace
-			q(71337, { ["name"] = "First Craft: Draconium Knuckles", }),	-- Draconium Knuckles
-			q(71335, { ["name"] = "First Craft: Draconium Stiletto", }),	-- Draconium Stiletto
-			q(71333, { ["name"] = "First Craft: Draconium Sword", }),	-- Draconium Sword
-			q(71381, { ["name"] = "First Craft: Obsidian Seared Claymore", }),	-- Obsidian Seared Claymore
-			q(71377, { ["name"] = "First Craft: Obsidian Seared Crusher", }),	-- Obsidian Seared Crusher
-			q(71378, { ["name"] = "First Craft: Obsidian Seared Facesmasher", }),	-- Obsidian Seared Facesmasher
-			q(71379, { ["name"] = "First Craft: Obsidian Seared Halberd", }),	-- Obsidian Seared Halberd
-			q(71380, { ["name"] = "First Craft: Obsidian Seared Hexsword", }),	-- Obsidian Seared Hexsword
-			q(71376, { ["name"] = "First Craft: Obsidian Seared Invoker", }),	-- Obsidian Seared Invoker
-			q(71374, { ["name"] = "First Craft: Obsidian Seared Runeaxe", }),	-- Obsidian Seared Runeaxe
-			q(71375, { ["name"] = "First Craft: Obsidian Seared Slicer", }),	-- Obsidian Seared Slicer
-			q(71384, { ["name"] = "First Craft: Primal Molten Greataxe", }),	-- Primal Molten Greataxe
-			q(71383, { ["name"] = "First Craft: Primal Molten Longsword", }),	-- Primal Molten Longsword
-			q(71382, { ["name"] = "First Craft: Primal Molten Mace", }),	-- Primal Molten Mace
-			q(71386, { ["name"] = "First Craft: Primal Molten Shortblade", }),	-- Primal Molten Shortblade
-			q(71385, { ["name"] = "First Craft: Primal Molten Spellblade", }),	-- Primal Molten Spellblade
-			q(71387, { ["name"] = "First Craft: Primal Molten Warglaive", }),	-- Primal Molten Warglaive
+			q(71332, { ["name"] = "First Craft: Draconium Axe", }),
+			q(71336, { ["name"] = "First Craft: Draconium Dirk", }),
+			q(72186, { ["name"] = "First Craft: Draconium Great Axe", }),
+			q(71334, { ["name"] = "First Craft: Draconium Great Mace", }),
+			q(71337, { ["name"] = "First Craft: Draconium Knuckles", }),
+			q(71335, { ["name"] = "First Craft: Draconium Stiletto", }),
+			q(71333, { ["name"] = "First Craft: Draconium Sword", }),
+			q(71381, { ["name"] = "First Craft: Obsidian Seared Claymore", }),
+			q(71377, { ["name"] = "First Craft: Obsidian Seared Crusher", }),
+			q(71378, { ["name"] = "First Craft: Obsidian Seared Facesmasher", }),
+			q(71379, { ["name"] = "First Craft: Obsidian Seared Halberd", }),
+			q(71380, { ["name"] = "First Craft: Obsidian Seared Hexsword", }),
+			q(71376, { ["name"] = "First Craft: Obsidian Seared Invoker", }),
+			q(71374, { ["name"] = "First Craft: Obsidian Seared Runeaxe", }),
+			q(71375, { ["name"] = "First Craft: Obsidian Seared Slicer", }),
+			q(71384, { ["name"] = "First Craft: Primal Molten Greataxe", }),
+			q(71383, { ["name"] = "First Craft: Primal Molten Longsword", }),
+			q(71382, { ["name"] = "First Craft: Primal Molten Mace", }),
+			q(71386, { ["name"] = "First Craft: Primal Molten Shortblade", }),
+			q(71385, { ["name"] = "First Craft: Primal Molten Spellblade", }),
+			q(71387, { ["name"] = "First Craft: Primal Molten Warglaive", }),
 			-- Profession Tools and Accessories
-			q(71360, { ["name"] = "First Craft: Black Dragon Touched Hammer", }),	-- Black Dragon Touched Hammer
-			q(71361, { ["name"] = "First Craft: Draconium Blacksmith's Hammer", }),	-- Draconium Blacksmith's Hammer
-			q(71345, { ["name"] = "First Craft: Draconium Blacksmith's Toolbox", }),	-- Draconium Blacksmith's Toolbox
-			q(71365, { ["name"] = "First Craft: Draconium Leatherworker's Knife", }),	-- Draconium Leatherworker's Knife
-			q(71347, { ["name"] = "First Craft: Draconium Leatherworker's Toolset", }),	-- Draconium Leatherworker's Toolset
-			q(71349, { ["name"] = "First Craft: Draconium Needle Set", }),	-- Draconium Needle Set
-			q(71367, { ["name"] = "First Craft: Draconium Pickaxe", }),	-- Draconium Pickaxe
-			q(71363, { ["name"] = "First Craft: Draconium Sickle", }),	-- Draconium Sickle
-			q(71369, { ["name"] = "First Craft: Draconium Skinning Knife", }),	-- Draconium Skinning Knife
-			q(71362, { ["name"] = "First Craft: Khaz'gorite Blacksmith's Hammer", }),	-- Khaz'gorite Blacksmith's Hammer
-			q(71346, { ["name"] = "First Craft: Khaz'gorite Blacksmith's Toolbox", }),	-- Khaz'gorite Blacksmith's Toolbox
-			q(71366, { ["name"] = "First Craft: Khaz'gorite Leatherworker's Knife", }),	-- Khaz'gorite Leatherworker's Knife
-			q(71348, { ["name"] = "First Craft: Khaz'gorite Leatherworker's Toolset", }),	-- Khaz'gorite Leatherworker's Toolset
-			q(71350, { ["name"] = "First Craft: Khaz'gorite Needle Set", }),	-- Khaz'gorite Needle Set
-			q(71368, { ["name"] = "First Craft: Khaz'gorite Pickaxe", }),	-- Khaz'gorite Pickaxe
-			q(71364, { ["name"] = "First Craft: Khaz'gorite Sickle", }),	-- Khaz'gorite Sickle
-			q(71370, { ["name"] = "First Craft: Khaz'gorite Skinning Knife", }),	-- Khaz'gorite Skinning Knife
+			q(71360, { ["name"] = "First Craft: Black Dragon Touched Hammer", }),
+			q(71361, { ["name"] = "First Craft: Draconium Blacksmith's Hammer", }),
+			q(71345, { ["name"] = "First Craft: Draconium Blacksmith's Toolbox", }),
+			q(71365, { ["name"] = "First Craft: Draconium Leatherworker's Knife", }),
+			q(71347, { ["name"] = "First Craft: Draconium Leatherworker's Toolset", }),
+			q(71349, { ["name"] = "First Craft: Draconium Needle Set", }),
+			q(71367, { ["name"] = "First Craft: Draconium Pickaxe", }),
+			q(71363, { ["name"] = "First Craft: Draconium Sickle", }),
+			q(71369, { ["name"] = "First Craft: Draconium Skinning Knife", }),
+			q(71362, { ["name"] = "First Craft: Khaz'gorite Blacksmith's Hammer", }),
+			q(71346, { ["name"] = "First Craft: Khaz'gorite Blacksmith's Toolbox", }),
+			q(71366, { ["name"] = "First Craft: Khaz'gorite Leatherworker's Knife", }),
+			q(71348, { ["name"] = "First Craft: Khaz'gorite Leatherworker's Toolset", }),
+			q(71350, { ["name"] = "First Craft: Khaz'gorite Needle Set", }),
+			q(71368, { ["name"] = "First Craft: Khaz'gorite Pickaxe", }),
+			q(71364, { ["name"] = "First Craft: Khaz'gorite Sickle", }),
+			q(71370, { ["name"] = "First Craft: Khaz'gorite Skinning Knife", }),
 			-- Consumable Tools
-			q(72262, { ["name"] = "First Craft: Master's Hammer", }),	-- Master's Hammer
-			q(71357, { ["name"] = "First Craft: Serevite Repair Hammer", }),	-- Serevite Repair Hammer
-			q(71344, { ["name"] = "First Craft: Serevite Skeleton Key", }),	-- Serevite Skeleton Key
-			q(71388, { ["name"] = "First Craft: Sturdy Expedition Shovel", }),	-- Sturdy Expedition Shovel
+			q(72262, { ["name"] = "First Craft: Master's Hammer", }),
+			q(71357, { ["name"] = "First Craft: Serevite Repair Hammer", }),
+			q(71344, { ["name"] = "First Craft: Serevite Skeleton Key", }),
+			q(71388, { ["name"] = "First Craft: Sturdy Expedition Shovel", }),
 			-- Stonework
-			q(71338, { ["name"] = "First Craft: Primal Razorstone", }),	-- Primal Razorstone
-			q(71340, { ["name"] = "First Craft: Primal Weightstone", }),	-- Primal Weightstone
-			q(71341, { ["name"] = "First Craft: Primal Whetstone", }),	-- Primal Whetstone
+			q(71338, { ["name"] = "First Craft: Primal Razorstone", }),
+			q(71340, { ["name"] = "First Craft: Primal Weightstone", }),
+			q(71341, { ["name"] = "First Craft: Primal Whetstone", }),
 			-- Pets
-			q(71351, { ["name"] = "First Craft: Alvin The Anvil", }),	-- Alvin The Anvil
+			q(71351, { ["name"] = "First Craft: Alvin The Anvil", }),
 			-- Dragon Riding
-			q(71342, { ["name"] = "First Craft: Prototype Explorer's Barding Framework", }),	-- Prototype Explorer's Barding Framework
-			q(71343, { ["name"] = "First Craft: Prototype Regal Barding Framework", }),	-- Prototype Regal Barding Framework
-			q(74477, { ["name"] = "First Craft: Ancient Ceremonial Trident", }),	-- Prototype Regal Barding Framework
+			q(71342, { ["name"] = "First Craft: Prototype Explorer's Barding Framework", }),
+			q(71343, { ["name"] = "First Craft: Prototype Regal Barding Framework", }),
+			-- Artisan Curios
+			q(74477, { ["name"] = "First Craft: Ancient Ceremonial Trident", ["timeline"] = { ADDED_10_0_7 }, }),
 		})),
 		filter(MISC, {
-			i(203408, {["timeline"]={ADDED_10_0_7}}),	-- Ancient Ceremonial Trident
+			i(203408, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Ancient Ceremonial Trident
 			i(191250),	-- Armor Spikes+
 			i(191872),	-- Armor Spikes++
 			i(191873),	-- Armor Spikes+++
@@ -533,7 +536,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			r(381400),	-- Thousandbone Tongueslicer
 		}),
 		filter(MISC, {
-			i(203409, {["timeline"]={ADDED_10_0_7}}),	-- Sparkling Spice Pouch
+			i(203409, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Sparkling Spice Pouch
 		}),
 		-- Unknown
 		i(194690),	-- Horn o' Mead
@@ -549,11 +552,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		i(197759),	-- Cheese and Quackers
 		i(197772),	-- Churnbelly Tea
 		i(197771),	-- Delicious Dragon Spittle
-		i(204072, {["timeline"]={ADDED_10_0_7}}),	-- Deviously Deviled Eggs
+		i(204072, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Deviously Deviled Eggs
 		i(197792),	-- Fated Fortune Cookie
 		i(197782),	-- Feisty Fish Sticks
 		i(197779),	-- Filet of Fangs
-		i(202290, {["timeline"]={ADDED_10_0_7}}),	-- Firewater Sorbet
+		i(202290, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Firewater Sorbet
 		i(197794),	-- Grand Banquet of the Kalu'ak
 		i(197787),	-- Great Cerulean Sea
 		i(197795),	-- Hoard of Draconic Delicacies
@@ -594,11 +597,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 					{ "i", 201360, 1 },	-- 1x Glimmer of Order
 				},
 				["g"] = {
-					q(71939, { ["name"] = "Disenchanted Air" }),	-- Disenchanted Air
-					q(71940, { ["name"] = "Disenchanted Earth" }),	-- Disenchanted Earth
-					q(71941, { ["name"] = "Disenchanted Fire" }),	-- Disenchanted Fire
-					q(71942, { ["name"] = "Disenchanted Frost" }),	-- Disenchanted Frost
-					q(71943, { ["name"] = "Disenchanted Order" }),	-- Disenchanted Order
+					q(71939, { ["name"] = "Disenchanted Air" }),
+					q(71940, { ["name"] = "Disenchanted Earth" }),
+					q(71941, { ["name"] = "Disenchanted Fire" }),
+					q(71942, { ["name"] = "Disenchanted Frost" }),
+					q(71943, { ["name"] = "Disenchanted Order" }),
 				},
 			}),
 		}),
@@ -747,80 +750,80 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			["requireSkill"] = ENCHANTING,
 		},{
 			-- Cloak Enchantments
-			q(71403, { ["name"] = "First Craft: Graceful Avoidance", }),	-- Graceful Avoidance
-			q(71407, { ["name"] = "First Craft: Homebound Avoidance", }),	-- Homebound Avoidance
-			q(71405, { ["name"] = "First Craft: Renegenerative Leech", }),	-- Renegenerative Leech
-			q(71402, { ["name"] = "First Craft: Writ of Avoidance", }),	-- Writ of Avoidance
-			q(71404, { ["name"] = "First Craft: Writ of Leech", }),	-- Writ of Leech
-			q(71406, { ["name"] = "First Craft: Writ of Speed", }),	-- Writ of Speed
+			q(71403, { ["name"] = "First Craft: Graceful Avoidance", }),
+			q(71407, { ["name"] = "First Craft: Homebound Avoidance", }),
+			q(71405, { ["name"] = "First Craft: Renegenerative Leech", }),
+			q(71402, { ["name"] = "First Craft: Writ of Avoidance", }),
+			q(71404, { ["name"] = "First Craft: Writ of Leech", }),
+			q(71406, { ["name"] = "First Craft: Writ of Speed", }),
 			-- Chest Enchantments
-			q(71398, { ["name"] = "First Craft: Accelerated Agility", }),	-- Accelerated Agility
-			q(71399, { ["name"] = "First Craft: Reserved Intellect", }),	-- Reserved Intellect
-			q(71401, { ["name"] = "First Craft: Sustained Strength", }),	-- Sustained Strength
-			q(71400, { ["name"] = "First Craft: Waking Stats", }),	-- Waking Stats
+			q(71398, { ["name"] = "First Craft: Accelerated Agility", }),
+			q(71399, { ["name"] = "First Craft: Reserved Intellect", }),
+			q(71401, { ["name"] = "First Craft: Sustained Strength", }),
+			q(71400, { ["name"] = "First Craft: Waking Stats", }),
 			-- Bracer Enchantments
-			q(71393, { ["name"] = "First Craft: Devotion of Avoidance", }),	-- Devotion of Avoidance
-			q(71395, { ["name"] = "First Craft: Devotion of Leech", }),	-- Devotion of Leech
-			q(71397, { ["name"] = "First Craft: Devotion of Speed", }),	-- Devotion of Speed
-			q(71392, { ["name"] = "First Craft: Writ of Avoidance", }),	-- Writ of Avoidance
-			q(71394, { ["name"] = "First Craft: Writ of Leech", }),	-- Writ of Leech
-			q(71396, { ["name"] = "First Craft: Writ of Speed", }),	-- Writ of Speed
+			q(71393, { ["name"] = "First Craft: Devotion of Avoidance", }),
+			q(71395, { ["name"] = "First Craft: Devotion of Leech", }),
+			q(71397, { ["name"] = "First Craft: Devotion of Speed", }),
+			q(71392, { ["name"] = "First Craft: Writ of Avoidance", }),
+			q(71394, { ["name"] = "First Craft: Writ of Leech", }),
+			q(71396, { ["name"] = "First Craft: Writ of Speed", }),
 			-- Boot Enchantments
-			q(71390, { ["name"] = "First Craft: Plainsrunner's Breeze", }),	-- Plainsrunner's Breeze
-			q(71389, { ["name"] = "First Craft: Rider's Reassurance", }),	-- Rider's Reassurance
-			q(71391, { ["name"] = "First Craft: Watcher's Loam", }),	-- Watcher's Loam
+			q(71390, { ["name"] = "First Craft: Plainsrunner's Breeze", }),
+			q(71389, { ["name"] = "First Craft: Rider's Reassurance", }),
+			q(71391, { ["name"] = "First Craft: Watcher's Loam", }),
 			-- Ring Enchantments
-			q(71409, { ["name"] = "First Craft: Devotion of Critical Strike", }),	-- Devotion of Critical Strike
-			q(71411, { ["name"] = "First Craft: Devotion of Haste", }),	-- Devotion of Haste
-			q(71413, { ["name"] = "First Craft: Devotion of Mastery", }),	-- Devotion of Mastery
-			q(71415, { ["name"] = "First Craft: Devotion of Versatility", }),	-- Devotion of Versatility
-			q(71408, { ["name"] = "First Craft: Writ of Critical Strike", }),	-- Writ of Critical Strike
-			q(71410, { ["name"] = "First Craft: Writ of Haste", }),	-- Writ of Haste
-			q(71412, { ["name"] = "First Craft: Writ of Mastery", }),	-- Writ of Mastery
-			q(71414, { ["name"] = "First Craft: Writ of Versatility", }),	-- Writ of Versatility
+			q(71409, { ["name"] = "First Craft: Devotion of Critical Strike", }),
+			q(71411, { ["name"] = "First Craft: Devotion of Haste", }),
+			q(71413, { ["name"] = "First Craft: Devotion of Mastery", }),
+			q(71415, { ["name"] = "First Craft: Devotion of Versatility", }),
+			q(71408, { ["name"] = "First Craft: Writ of Critical Strike", }),
+			q(71410, { ["name"] = "First Craft: Writ of Haste", }),
+			q(71412, { ["name"] = "First Craft: Writ of Mastery", }),
+			q(71414, { ["name"] = "First Craft: Writ of Versatility", }),
 			-- Weapon Enchantments
-			q(71426, { ["name"] = "First Craft: Burning Devotion", }),	-- Burning Devotion
-			q(71425, { ["name"] = "First Craft: Burning Writ", }),	-- Burning Writ
-			q(71424, { ["name"] = "First Craft: Earthen Devotion", }),	-- Earthen Devotion
-			q(71423, { ["name"] = "First Craft: Earthen Writ", }),	-- Earthen Writ
-			q(71428, { ["name"] = "First Craft: Frozen Devotion", }),	-- Frozen Devotion
-			q(71427, { ["name"] = "First Craft: Frozen Writ", }),	-- Frozen Writ
-			q(71430, { ["name"] = "First Craft: Sophic Devotion", }),	-- Sophic Devotion
-			q(71429, { ["name"] = "First Craft: Sophic Writ", }),	-- Sophic Writ
-			q(71422, { ["name"] = "First Craft: Wafting Devotion", }),	-- Wafting Devotion
-			q(71421, { ["name"] = "First Craft: Wafting Writ", }),	-- Wafting Writ
+			q(71426, { ["name"] = "First Craft: Burning Devotion", }),
+			q(71425, { ["name"] = "First Craft: Burning Writ", }),
+			q(71424, { ["name"] = "First Craft: Earthen Devotion", }),
+			q(71423, { ["name"] = "First Craft: Earthen Writ", }),
+			q(71428, { ["name"] = "First Craft: Frozen Devotion", }),
+			q(71427, { ["name"] = "First Craft: Frozen Writ", }),
+			q(71430, { ["name"] = "First Craft: Sophic Devotion", }),
+			q(71429, { ["name"] = "First Craft: Sophic Writ", }),
+			q(71422, { ["name"] = "First Craft: Wafting Devotion", }),
+			q(71421, { ["name"] = "First Craft: Wafting Writ", }),
 			-- Profession Tool Enchantments
-			q(71416, { ["name"] = "First Craft: Draconic Detness", }),	-- Draconic Detness
-			q(71417, { ["name"] = "First Craft: Draconic Finess", }),	-- Draconic Finess
-			q(71418, { ["name"] = "First Craft: Draconic Inspiration", }),	-- Draconic Inspiration
-			q(71419, { ["name"] = "First Craft: Draconic Perception", }),	-- Draconic Perception
-			q(71420, { ["name"] = "First Craft: Draconic Resourcefulness", }),	-- Draconic Resourcefulness
+			q(71416, { ["name"] = "First Craft: Draconic Detness", }),
+			q(71417, { ["name"] = "First Craft: Draconic Finess", }),
+			q(71418, { ["name"] = "First Craft: Draconic Inspiration", }),
+			q(71419, { ["name"] = "First Craft: Draconic Perception", }),
+			q(71420, { ["name"] = "First Craft: Draconic Resourcefulness", }),
 			-- Rods and Wands
-			q(71435, { ["name"] = "First Craft: Enchanted Writhebark Rod", }),	-- Enchanted Writhebark Rod
-			q(71433, { ["name"] = "First Craft: Runed Draconium Rod", }),	-- Runed Draconium Rod
-			q(71434, { ["name"] = "First Craft: Runed Khaz'gorite", }),	-- Runed Khaz'gorite
-			q(71945, { ["name"] = "First Craft: Runed Serevite Rod", }),	-- Runed Serevite Rod
-			q(71436, { ["name"] = "First Craft: Torch of Primal Awakening", }),	-- Torch of Primal Awakening
+			q(71435, { ["name"] = "First Craft: Enchanted Writhebark Rod", }),
+			q(71433, { ["name"] = "First Craft: Runed Draconium Rod", }),
+			q(71434, { ["name"] = "First Craft: Runed Khaz'gorite", }),
+			q(71945, { ["name"] = "First Craft: Runed Serevite Rod", }),
+			q(71436, { ["name"] = "First Craft: Torch of Primal Awakening", }),
 			-- Illusory Goods
-			q(71875, { ["name"] = "First Craft: Illusion: Primal Air", }),	-- Illusion: Primal Air
-			q(71874, { ["name"] = "First Craft: Illusion: Primal Earth", }),	-- Illusion: Primal Earth
-			q(71873, { ["name"] = "First Craft: Illusion: Primal Fire", }),	-- Illusion: Primal Fire
-			q(71871, { ["name"] = "First Craft: Illusion: Primal Frost", }),	-- Illusion: Primal Frost
-			q(71870, { ["name"] = "First Craft: Illusion: Primal Mastery", }),	-- Illusion: Primal Mastery
-			q(71931, { ["name"] = "First Craft: Illusory Adornment: Air", }),	-- Illusory Adornment: Air
-			q(71932, { ["name"] = "First Craft: Illusory Adornment: Earth", }),	-- Illusory Adornment: Earth
-			q(71432, { ["name"] = "First Craft: Illusory Adornment: Fire", }),	-- Illusory Adornment: Fire
-			q(71930, { ["name"] = "First Craft: Illusory Adornment: Frost", }),	-- Illusory Adornment: Frost
-			q(71933, { ["name"] = "First Craft: Illusory Adornment: Order", }),	-- Illusory Adornment: Order
-			q(71876, { ["name"] = "First Craft: Khadgar's Disenchanting Rod", }),	-- Khadgar's Disenchanting Rod
-			--q(, { ["name"] = "First Craft: Primal Invocation Extract", }),	-- Primal Invocation Extract
-			q(71886, { ["name"] = "First Craft: Scepter of Spectacle: Air", }),	-- Scepter of Spectacle: Air
-			q(71884, { ["name"] = "First Craft: Scepter of Spectacle: Earth", }),	-- Scepter of Spectacle: Earth
-			q(71883, { ["name"] = "First Craft: Scepter of Spectacle: Fire", }),	-- Scepter of Spectacle: Fire
-			q(71881, { ["name"] = "First Craft: Scepter of Spectacle: Frost", }),	-- Scepter of Spectacle: Frost
-			q(71880, { ["name"] = "First Craft: Scepter of Spectacle: Order", }),	-- Scepter of Spectacle: Order
+			q(71875, { ["name"] = "First Craft: Illusion: Primal Air", }),
+			q(71874, { ["name"] = "First Craft: Illusion: Primal Earth", }),
+			q(71873, { ["name"] = "First Craft: Illusion: Primal Fire", }),
+			q(71871, { ["name"] = "First Craft: Illusion: Primal Frost", }),
+			q(71870, { ["name"] = "First Craft: Illusion: Primal Mastery", }),
+			q(71931, { ["name"] = "First Craft: Illusory Adornment: Air", }),
+			q(71932, { ["name"] = "First Craft: Illusory Adornment: Earth", }),
+			q(71432, { ["name"] = "First Craft: Illusory Adornment: Fire", }),
+			q(71930, { ["name"] = "First Craft: Illusory Adornment: Frost", }),
+			q(71933, { ["name"] = "First Craft: Illusory Adornment: Order", }),
+			q(71876, { ["name"] = "First Craft: Khadgar's Disenchanting Rod", }),
+			--q(TODO, { ["name"] = "First Craft: Primal Invocation Extract", }),
+			q(71886, { ["name"] = "First Craft: Scepter of Spectacle: Air", }),
+			q(71884, { ["name"] = "First Craft: Scepter of Spectacle: Earth", }),
+			q(71883, { ["name"] = "First Craft: Scepter of Spectacle: Fire", }),
+			q(71881, { ["name"] = "First Craft: Scepter of Spectacle: Frost", }),
+			q(71880, { ["name"] = "First Craft: Scepter of Spectacle: Order", }),
 			-- Magical Merchandise
-			q(71878, { ["name"] = "First Craft: Sophic Amalgamation", }),	-- Sophic Amalgamation
+			q(71878, { ["name"] = "First Craft: Sophic Amalgamation", }),
 			-- Disenchanting Mystic items, these quests are NOT tied to the specific item disenchanted, but unsure what their logic is.
 			q(71934, { ["name"] = "Disenchant ? Mystic items", }),
 			q(71935, { ["name"] = "Disenchant ? Mystic items", }),
@@ -833,7 +836,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(200470),	-- Illusion: Primal Mastery
 		}),
 		filter(MISC, {
-			i(203410, {["timeline"]={ADDED_10_0_7}}),	-- Glowing Crystal Bookmark
+			i(203410, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Glowing Crystal Bookmark
 			i(201318),	-- Illusory Adornment: Air+
 			i(201317),	-- Illusory Adornment: Air++
 			i(201316),	-- Illusory Adornment: Air+++
@@ -979,116 +982,118 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(193572),	-- Quack-E (PET!)
 		}),
 		filter(MISC, {
-			i(203411, {["timeline"]={ADDED_10_0_7}}),	-- Gnomish Voicebox
+			i(203411, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Gnomish Voicebox
 			i(198651),	-- Piece of Scrap
 		}),
 		n(HIDDEN_QUESTS, sharedData({
 			["requireSkill"] = ENGINEERING,
 		},{
 			-- Parts --
-			q(71482, { ["name"] = "First Craft: Arclight Capacitor", }),	-- Arclight Capacitor
-			q(71484, { ["name"] = "First Craft: Assorted Safety Fuses", }),	-- Assorted Safety Fuses
-			q(71480, { ["name"] = "First Craft: Everburning Blasting Powder", }),	-- Everburning Blasting Powder
-			q(71481, { ["name"] = "First Craft: Greased-Up Gears", }),	-- Greased-Up Gears
-			q(71478, { ["name"] = "First Craft: Handful of Serevite Bolts", }),	-- Handful of Serevite Bolts
-			q(71483, { ["name"] = "First Craft: Reinforced Machine Chassis", }),	-- Reinforced Machine Chassis
-			q(71479, { ["name"] = "First Craft: Shock-Spring Coil", }),	-- Shock-Spring Coil
+			q(71482, { ["name"] = "First Craft: Arclight Capacitor", }),
+			q(71484, { ["name"] = "First Craft: Assorted Safety Fuses", }),
+			q(71480, { ["name"] = "First Craft: Everburning Blasting Powder", }),
+			q(71481, { ["name"] = "First Craft: Greased-Up Gears", }),
+			q(71478, { ["name"] = "First Craft: Handful of Serevite Bolts", }),
+			q(71483, { ["name"] = "First Craft: Reinforced Machine Chassis", }),
+			q(71479, { ["name"] = "First Craft: Shock-Spring Coil", }),
 			-- Finishing Reagents
-			q(71468, { ["name"] = "First Craft: Haphazardly Tethered Wires", }),	-- Haphazardly Tethered Wires
-			q(71469, { ["name"] = "First Craft: Overcharged Overclocker", }),	-- Overcharged Overclocker
+			q(71468, { ["name"] = "First Craft: Haphazardly Tethered Wires", }),
+			q(71469, { ["name"] = "First Craft: Overcharged Overclocker", }),
 			-- Optional Reagents
-			q(71476, { ["name"] = "First Craft: Calibrated Safety Switch", }),	-- Calibrated Safety Switch
-			--q(, { ["name"] = "First Craft: Critical Failure Prevention Unit", }),	-- Critical Failure Prevention Unit
-			q(71474, { ["name"] = "First Craft: Magazine of Healing Darts", }),	-- Magazine of Healing Darts
-			--q(, { ["name"] = "First Craft: Spring-Loaded Capacitor Casing", }),	-- Spring-Loaded Capacitor Casing
+			q(71476, { ["name"] = "First Craft: Calibrated Safety Switch", }),
+			--q(TODO, { ["name"] = "First Craft: Critical Failure Prevention Unit", }),
+			q(71474, { ["name"] = "First Craft: Magazine of Healing Darts", }),
+			q(71475, { ["name"] = "First Craft: Spring-Loaded Capacitor Casing", }),
 			-- Tinker
-			q(71501, { ["name"] = "First Craft: Tinker: Alarm-O-Turret", }),	-- Tinker: Alarm-O-Turret
-			q(71944, { ["name"] = "First Craft: Tinker: Arclight Vital Correctors", }),	-- Tinker: Arclight Vital Correctors
-			q(71502, { ["name"] = "First Craft: Tinker: Breath of Neltharion", }),	-- Tinker: Breath of Neltharion
-			q(71506, { ["name"] = "First Craft: Tinker: Grounded Circuitry", }),	-- Tinker: Grounded Circuitry
-			q(71503, { ["name"] = "First Craft: Tinker: Plane Displacer", }),	-- Tinker: Plane Displacer
-			q(71505, { ["name"] = "First Craft: Tinker: Polarity Amplifier", }),	-- Tinker: Polarity Amplifier
-			q(71504, { ["name"] = "First Craft: Tinker: Supercollide-O-Tron", }),	-- Tinker: Supercollide-O-Tron
+			q(71501, { ["name"] = "First Craft: Tinker: Alarm-O-Turret", }),
+			q(71944, { ["name"] = "First Craft: Tinker: Arclight Vital Correctors", }),
+			q(71502, { ["name"] = "First Craft: Tinker: Breath of Neltharion", }),
+			q(71506, { ["name"] = "First Craft: Tinker: Grounded Circuitry", }),
+			q(71503, { ["name"] = "First Craft: Tinker: Plane Displacer", }),
+			q(71505, { ["name"] = "First Craft: Tinker: Polarity Amplifier", }),
+			q(71504, { ["name"] = "First Craft: Tinker: Supercollide-O-Tron", }),
 			-- Googles
-			q(71444, { ["name"] = "First Craft: Battle-Ready Binoculars", }),	-- Battle-Ready Binoculars
-			q(71448, { ["name"] = "First Craft: Deadline Deadeyes", }),	-- Deadline Deadeyes
-			q(71441, { ["name"] = "First Craft: Lightweight Ocular Lenses", }),	-- Lightweight Ocular Lenses
-			q(71447, { ["name"] = "First Craft: Milestone Magnifiers", }),	-- Milestone Magnifiers
-			q(71443, { ["name"] = "First Craft: Oscillating Wilderness Opticals", }),	-- Oscillating Wilderness Opticals
-			q(71442, { ["name"] = "First Craft: Peripheral Vision Projectors", }),	-- Peripheral Vision Projectors
-			q(71446, { ["name"] = "First Craft: Quality-Assured Optics", }),	-- Quality-Assured Optics
-			q(71449, { ["name"] = "First Craft: Sentry's Stabilized Specs", }),	-- Sentry's Stabilized Specs
+			q(71444, { ["name"] = "First Craft: Battle-Ready Binoculars", }),
+			q(71448, { ["name"] = "First Craft: Deadline Deadeyes", }),
+			q(71441, { ["name"] = "First Craft: Lightweight Ocular Lenses", }),
+			q(71447, { ["name"] = "First Craft: Milestone Magnifiers", }),
+			q(71443, { ["name"] = "First Craft: Oscillating Wilderness Opticals", }),
+			q(71442, { ["name"] = "First Craft: Peripheral Vision Projectors", }),
+			q(71446, { ["name"] = "First Craft: Quality-Assured Optics", }),
+			q(71449, { ["name"] = "First Craft: Sentry's Stabilized Specs", }),
 			-- Armor
-			q(71450, { ["name"] = "First Craft: Complicated Cuffs", }),	-- Complicated Cuffs
-			q(71451, { ["name"] = "First Craft: Difficult Wrist Protectors", }),	-- Difficult Wrist Protectors
-			q(71445, { ["name"] = "First Craft: Needlessy Complex Wristguards", }),	-- Needlessy Complex Wristguards
-			q(71440, { ["name"] = "First Craft: Overengineered Sleeve Extenders", }),	-- Overengineered Sleeve Extenders
+			q(71450, { ["name"] = "First Craft: Complicated Cuffs", }),
+			q(71451, { ["name"] = "First Craft: Difficult Wrist Protectors", }),
+			q(71445, { ["name"] = "First Craft: Needlessy Complex Wristguards", }),
+			q(71440, { ["name"] = "First Craft: Overengineered Sleeve Extenders", }),
 			-- Weapons
-			q(71511, { ["name"] = "First Craft: P.E.W. x2", }),	-- P.E.W. x2
-			q(71510, { ["name"] = "First Craft: Sophisticated Problem Solver", }),	-- Sophisticated Problem Solver
+			q(71511, { ["name"] = "First Craft: P.E.W. x2", }),
+			q(71510, { ["name"] = "First Craft: Sophisticated Problem Solver", }),
 			-- Cogwheels
-			q(71472, { ["name"] = "First Craft: Meticulously-Tuned Gear", }),	-- Meticulously-Tuned Gear
-			q(71509, { ["name"] = "First Craft: One-Size-Fits-All", }),	-- One-Size-Fits-All
-			q(71470, { ["name"] = "First Craft: Rapidly Ticking Gear", }),	-- Rapidly Ticking Gear
-			q(71455, { ["name"] = "First Craft: Razor-Sharp Gear", }),	-- Razor-Sharp Gear
+			q(71472, { ["name"] = "First Craft: Meticulously-Tuned Gear", }),
+			q(71509, { ["name"] = "First Craft: One-Size-Fits-All", }),
+			q(71470, { ["name"] = "First Craft: Rapidly Ticking Gear", }),
+			q(71455, { ["name"] = "First Craft: Razor-Sharp Gear", }),
 			-- Scopes & Ammo
-			q(71438, { ["name"] = "First Craft: Completely Safe Rockets", }),	-- Completely Safe Rockets
-			q(71439, { ["name"] = "First Craft: Endless Stack of Needles", }),	-- Endless Stack of Needles
-			q(71512, { ["name"] = "First Craft: Gyroscopic Kaleidoscope", }),	-- Gyroscopic Kaleidoscope
-			q(71508, { ["name"] = "First Craft: High Intensity Thermal Scanner", }),	-- High Intensity Thermal Scanner
-			q(71507, { ["name"] = "First Craft: Projectile Propulsion Pinion", }),	-- Projectile Propulsion Pinion
+			q(71438, { ["name"] = "First Craft: Completely Safe Rockets", }),
+			q(71439, { ["name"] = "First Craft: Endless Stack of Needles", }),
+			q(71512, { ["name"] = "First Craft: Gyroscopic Kaleidoscope", }),
+			q(71508, { ["name"] = "First Craft: High Intensity Thermal Scanner", }),
+			q(71507, { ["name"] = "First Craft: Projectile Propulsion Pinion", }),
 			-- Fireworks
-			q(71869, { ["name"] = "First Craft: Black Fireflight", }),	-- Black Fireflight
-			q(71872, { ["name"] = "First Craft: Blue Fireflight", }),	-- Blue Fireflight
-			q(71877, { ["name"] = "First Craft: Bronze Fireflight", }),	-- Bronze Fireflight
-			q(71868, { ["name"] = "First Craft: Bundle of Fireworks", }),	-- Bundle of Fireworks
-			q(71879, { ["name"] = "First Craft: Green Fireflight", }),	-- Green Fireflight
-			q(71882, { ["name"] = "First Craft: Red Fireflight", }),	-- Red Fireflight
+			q(71869, { ["name"] = "First Craft: Black Fireflight", }),
+			q(71872, { ["name"] = "First Craft: Blue Fireflight", }),
+			q(71877, { ["name"] = "First Craft: Bronze Fireflight", }),
+			q(71868, { ["name"] = "First Craft: Bundle of Fireworks", }),
+			q(71879, { ["name"] = "First Craft: Green Fireflight", }),
+			q(71882, { ["name"] = "First Craft: Red Fireflight", }),
 			-- Explosives
-			q(71462, { ["name"] = "First Craft: Creature Combustion Canister", }),	-- Creature Combustion Canister
-			--q(, { ["name"] = "First Craft: EZ-Thro Creature Combustion Canister", }),	-- EZ-Thro Creature Combustion Canister
-			--q(, { ["name"] = "First Craft: EZ-Thro Gravitational Displacer", }),	-- EZ-Thro Gravitational Displacer
-			--q(, { ["name"] = "First Craft: EZ-Thro Grease Grenade", }),	-- EZ-Thro Grease Grenade
-			--q(, { ["name"] = "First Craft: EZ-Thro Primal Deconstruction Charge", }),	-- EZ-Thro Primal Deconstruction Charge
-			q(71460, { ["name"] = "First Craft: Gravitational Displacer", }),	-- Gravitational Displacer
-			q(71461, { ["name"] = "First Craft: Grease Grenade", }),	-- Grease Grenade
-			--q(, { ["name"] = "First Craft: I.W.I.N Button Mk10", }),	-- I.W.I.N Button Mk10
-			q(71463, { ["name"] = "First Craft: Primal Deconstruction Charge", }),	-- Primal Deconstruction Charge
-			q(71464, { ["name"] = "First Craft: Sticky Warp Grenade", }),	-- Sticky Warp Grenade
-			q(71453, { ["name"] = "First Craft: Suspiciously Silent Crate", }),	-- Suspiciously Silent Crate
-			q(71452, { ["name"] = "First Craft: Suspiciously Ticking Crate", }),	-- Suspiciously Ticking Crate
+			q(71462, { ["name"] = "First Craft: Creature Combustion Canister", }),
+			--q(TODO, { ["name"] = "First Craft: EZ-Thro Creature Combustion Canister", }),
+			--q(TODO, { ["name"] = "First Craft: EZ-Thro Gravitational Displacer", }),
+			--q(TODO, { ["name"] = "First Craft: EZ-Thro Grease Grenade", }),
+			--q(TODO, { ["name"] = "First Craft: EZ-Thro Primal Deconstruction Charge", }),
+			q(71460, { ["name"] = "First Craft: Gravitational Displacer", }),
+			q(71461, { ["name"] = "First Craft: Grease Grenade", }),
+			--q(TODO, { ["name"] = "First Craft: I.W.I.N Button Mk10", }),
+			q(71463, { ["name"] = "First Craft: Primal Deconstruction Charge", }),
+			q(71464, { ["name"] = "First Craft: Sticky Warp Grenade", }),
+			q(71453, { ["name"] = "First Craft: Suspiciously Silent Crate", }),
+			q(71452, { ["name"] = "First Craft: Suspiciously Ticking Crate", }),
 			-- Devices
-			q(71866, { ["name"] = "First Craft: Cartomancy Cannon", }),	-- Cartomancy Cannon
-			--q(, { ["name"] = "First Craft: Centralized Precipitation Emitter", }),	-- Centralized Precipitation Emitter
-			q(71885, { ["name"] = "First Craft: Element-Infused Rocket Helmet", }),	-- Element-Infused Rocket Helmet
-			--q(, { ["name"] = "First Craft: Environmental Emulator", }),	-- Environmental Emulator
-			q(71887, { ["name"] = "First Craft: Giggle Googles", }),	-- Giggle Googles
-			--q(, { ["name"] = "First Craft: H.E.L.P", }),	-- H.E.L.P
-			q(71891, { ["name"] = "First Craft: Neural Silencer Mk3", }),	-- Neural Silencer Mk3
-			q(71889, { ["name"] = "First Craft: Portable Alchemist's Lab Bench", }),	-- Portable Alchemist's Lab Bench
-			q(71890, { ["name"] = "First Craft: Portable Tinker's Workbench", }),	-- Portable Tinker's Workbench
-			q(71471, { ["name"] = "First Craft: S.A.V.I.O.R", }),	-- S.A.V.I.O.R
-			q(72711, { ["name"] = "First Craft: Tinker Removal Kit", }),	-- Tinker Removal Kit
-			q(71888, { ["name"] = "First Craft: Wyrmhole Generator", }),	-- Wyrmhole Generator
-			q(71456, { ["name"] = "First Craft: Zapthrottle Soul Inhaler", }),	-- Zapthrottle Soul Inhaler
+			q(71866, { ["name"] = "First Craft: Cartomancy Cannon", }),
+			q(71863, { ["name"] = "First Craft: Centralized Precipitation Emitter", }),
+			q(71885, { ["name"] = "First Craft: Element-Infused Rocket Helmet", }),
+			q(71865, { ["name"] = "First Craft: Environmental Emulator", }),
+			q(71887, { ["name"] = "First Craft: Giggle Googles", }),
+			--q(TODO, { ["name"] = "First Craft: H.E.L.P", }),
+			q(71891, { ["name"] = "First Craft: Neural Silencer Mk3", }),
+			q(71889, { ["name"] = "First Craft: Portable Alchemist's Lab Bench", }),
+			q(71890, { ["name"] = "First Craft: Portable Tinker's Workbench", }),
+			q(71471, { ["name"] = "First Craft: S.A.V.I.O.R", }),
+			q(72711, { ["name"] = "First Craft: Tinker Removal Kit", }),
+			q(71888, { ["name"] = "First Craft: Wyrmhole Generator", }),
+			q(71456, { ["name"] = "First Craft: Zapthrottle Soul Inhaler", }),
 			-- Profession Equipment
-			q(71496, { ["name"] = "First Craft: Bottomless Mireslush Ore Satchel", }),	-- Bottomless Mireslush Ore Satchel
-			q(71495, { ["name"] = "First Craft: Bottomless Stonecrust Ore Satchel", }),	-- Bottomless Stonecrust Ore Satchel
-			q(71485, { ["name"] = "First Craft: Draconium Brainwave Amplifier", }),	-- Draconium Brainwave Amplifier
-			q(71493, { ["name"] = "First Craft: Draconium Delver's Helmet", }),	-- Draconium Delver's Helmet
-			q(71487, { ["name"] = "First Craft: Draconium Encased Samophlange", }),	-- Draconium Encased Samophlange
-			q(71489, { ["name"] = "First Craft: Draconium Fisherfriend", }),	-- Draconium Fisherfriend
-			q(71486, { ["name"] = "First Craft: Khaz'gorite Brainwave Amplifier", }),	-- Khaz'gorite Brainwave Amplifier
-			q(71494, { ["name"] = "First Craft: Khaz'gorite Delver's Helmet", }),	-- Khaz'gorite Delver's Helmet
-			q(71488, { ["name"] = "First Craft: Khaz'gorite Encased Samophlange", }),	-- Khaz'gorite Encased Samophlange
-			q(71490, { ["name"] = "First Craft: Khaz'gorite Fisherfriend", }),	-- Khaz'gorite Fisherfriend
-			q(71491, { ["name"] = "First Craft: Lapidary's Draconium Clamps", }),	-- Lapidary's Draconium Clamps
-			q(71492, { ["name"] = "First Craft: Lapidary's Khaz'gorite Clamps", }),	-- Lapidary's Khaz'gorite Clamps
-			q(71497, { ["name"] = "First Craft: Spring-Loaded Draconium Fabric Cutters", }),	-- Spring-Loaded Draconium Fabric Cutters
-			q(71498, { ["name"] = "First Craft: Spring-Loaded Khaz'gorite Fabric Cutters", }),	-- Spring-Loaded Khaz'gorite Fabric Cutters
+			q(71496, { ["name"] = "First Craft: Bottomless Mireslush Ore Satchel", }),
+			q(71495, { ["name"] = "First Craft: Bottomless Stonecrust Ore Satchel", }),
+			q(71485, { ["name"] = "First Craft: Draconium Brainwave Amplifier", }),
+			q(71493, { ["name"] = "First Craft: Draconium Delver's Helmet", }),
+			q(71487, { ["name"] = "First Craft: Draconium Encased Samophlange", }),
+			q(71489, { ["name"] = "First Craft: Draconium Fisherfriend", }),
+			q(71486, { ["name"] = "First Craft: Khaz'gorite Brainwave Amplifier", }),
+			q(71494, { ["name"] = "First Craft: Khaz'gorite Delver's Helmet", }),
+			q(71488, { ["name"] = "First Craft: Khaz'gorite Encased Samophlange", }),
+			q(71490, { ["name"] = "First Craft: Khaz'gorite Fisherfriend", }),
+			q(71491, { ["name"] = "First Craft: Lapidary's Draconium Clamps", }),
+			q(71492, { ["name"] = "First Craft: Lapidary's Khaz'gorite Clamps", }),
+			q(71497, { ["name"] = "First Craft: Spring-Loaded Draconium Fabric Cutters", }),
+			q(71498, { ["name"] = "First Craft: Spring-Loaded Khaz'gorite Fabric Cutters", }),
 			-- Robotics
-			q(71458, { ["name"] = "First Craft: D.U.C.K.O.Y", }),	-- D.U.C.K.O.Y
-			q(71892, { ["name"] = "First Craft: Quack-E", }),	-- Quack-E
+			q(71458, { ["name"] = "First Craft: D.U.C.K.O.Y", }),
+			q(71892, { ["name"] = "First Craft: Quack-E", }),
+			-- Artisan Curios
+			--q(TODO, { ["name"] = "First Craft: Gnomish Voicebox", ["timeline"] = { ADDED_10_0_7 }, }),
 		})),
 		filter(MISC, {
 			i(198549),	-- Black Fireflight
@@ -1191,8 +1196,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(198168),	-- Suspiciously Ticking Crate+++
 			i(199414),	-- Zapthrottle Soul Inhaler
 			-- Weird
-
-
 			i(198650),	-- Rummage Through Scrap
 		}),
 		filter(REAGENTS, {
@@ -1224,14 +1227,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(192443),	-- Element-Infused Rocket Helmet (TOY!)
 			i(198206),	-- Environmental Emulator (TOY!)
 			i(198227),	-- Giggle Goggles (TOY!)
-			i(201930, {["timeline"] = {ADDED_10_0_7}}),	-- H.E.L.P. (TOY!)
+			i(201930, { ["timeline"] = { ADDED_10_0_7 }, }),	-- H.E.L.P. (TOY!)
 			i(198156),	-- Wyrmhole Generator: Dragon Isles (TOY!)
 		}),
 		n(WEAPONS, {
 			i(198334),	-- P.E.W. x2
 			i(198335),	-- Sophisticated Problem Solver
 		}),
-		n(DROPS, {	-- not sure if this is where we want the 'random knowledge items'
+		n(DROPS, {
 			i(198970),	-- Infinitely Attachable Pair o' Docks
 		}),
 	}),
@@ -1281,7 +1284,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		i(194968),	-- Cerulean Spinefish
 		i(199338),	-- Copper Coin of the Isles
 		i(198395),	-- Dull Spined Clam
-		i(203419, {["timeline"]={ADDED_10_0_7}}),	-- Elusive Croaking Crab
+		i(203419, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Elusive Croaking Crab
 		i(200074),	-- Frosted Rimefin Tuna
 		i(199340),	-- Gold Coin of the Isles
 		i(194970),	-- Islefin Dorado
@@ -1304,7 +1307,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(191467),	-- Bubble Poppy+
 			i(191468),	-- Bubble Poppy++
 			i(191469),	-- Bubble Poppy+++
-			i(203416, {["timeline"]={ADDED_10_0_7}}),	-- Dormant Lifebloom Seeds
+			i(203416, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Dormant Lifebloom Seeds
 			i(200678),	-- Dreambloom
 			i(200677),	-- Dreambloom Petal
 			i(191460),	-- Hochenblume+
@@ -1410,40 +1413,125 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		n(HIDDEN_QUESTS, sharedData({
 			["requireSkill"] = INSCRIPTION,
 		},{
-			-- Unsorted
-			q(74102, { ["name"] = "First Craft: Crimson Combatant's Medallion", }),	-- Not commenting these, it's right there in the name
-			q(74103, { ["name"] = "First Craft: Crimson Combatant's Insignia", }),
-			q(74104, { ["name"] = "First Craft: Crimson Combatant's Emblem", }),
-			q(71558, { ["name"] = "First Craft: Draconic Missive of the Aurora", }),
-			q(71564, { ["name"] = "First Craft: Draconic Missive of the Feverflare", }),
-			q(71565, { ["name"] = "First Craft: Draconic Missive of the Fireflash", }),
-			q(71566, { ["name"] = "First Craft: Draconic Missive of the Harmonious", }),
-			q(71567, { ["name"] = "First Craft: Draconic Missive of the Peerless", }),
-			q(71568, { ["name"] = "First Craft: Draconic Missive of the Quickblade", }),
-			q(71554, { ["name"] = "First Craft: Fated Fortune Card", }),
-			q(71552, { ["name"] = "First Craft: Illusion Parchment: Spell Shield", }),
-			q(71548, { ["name"] = "First Craft: Illusion Parchment: Chilling Wind", }),
-			q(71547, { ["name"] = "First Craft: Illusion Parchment: Arcane Burst", }),
-			q(71546, { ["name"] = "First Craft: Illusion Parchment: Aqua Torrent", }),
-			q(71596, { ["name"] = "First Craft: Core Explorer's Compendium", }),
-			q(71569, { ["name"] = "First Craft: Chilled Rune", }),
-			q(71601, { ["name"] = "First Craft: Serene Ink", }),
+			-- Inks
 			q(71599, { ["name"] = "First Craft: Blazing Ink", }),
+			q(71597, { ["name"] = "First Craft: Burnished Ink", }),
+			q(71598, { ["name"] = "First Craft: Cosmic Ink", }),
+			q(71600, { ["name"] = "First Craft: Flourishing Ink", }),
+			q(71601, { ["name"] = "First Craft: Serene Ink", }),
+			-- Reagents
+			q(71569, { ["name"] = "First Craft: Chilled Rune", }),
+			q(71570, { ["name"] = "First Craft: Runed Writhebark", }),
+			-- Missives
+			q(71558, { ["name"] = "First Craft: First Craft: Draconic Missive of the Aurora", }),
+			q(71564, { ["name"] = "First Craft: First Craft: Draconic Missive of the Feverflare", }),
+			q(71565, { ["name"] = "First Craft: First Craft: Draconic Missive of the Fireflash", }),
+			q(71566, { ["name"] = "First Craft: First Craft: Draconic Missive of the Harmonious", }),
+			q(71567, { ["name"] = "First Craft: First Craft: Draconic Missive of the Peerless", }),
+			q(71568, { ["name"] = "First Craft: First Craft: Draconic Missive of the Quickblade", }),
+			-- Crafting Tool Missives
+			q(71571, { ["name"] = "First Craft: Draconic Missive of Crafting Speed", }),
+			q(71572, { ["name"] = "First Craft: Draconic Missive of Inspiration", }),
+			q(71573, { ["name"] = "First Craft: Draconic Missive of Multicraft", }),
+			q(71574, { ["name"] = "First Craft: Draconic Missive of Resourcefulness", }),
+			-- Gathering Tool Missives
+			q(71575, { ["name"] = "First Craft: Draconic Missive of Deftness", }),
+			q(71576, { ["name"] = "First Craft: Draconic Missive of Finesse", }),
+			q(71577, { ["name"] = "First Craft: Draconic Missive of Perception", }),
+			-- Runes and Sigil
+			q(71559, { ["name"] = "First Craft: Azurescale Sigil", }),
+			q(71560, { ["name"] = "First Craft: Bronzescale Sigil", }),
+			q(71555, { ["name"] = "First Craft: Buzzing Rune", }),
+			q(71556, { ["name"] = "First Craft: Chirping Rune", }),
+			q(71561, { ["name"] = "First Craft: Emberscale Sigil", }),
+			q(71557, { ["name"] = "First Craft: Howling Rune", }),
+			q(71562, { ["name"] = "First Craft: Jetscale Sigil+", }),
+			q(71563, { ["name"] = "First Craft: Sagescale Sigil", }),
+			q(71594, { ["name"] = "First Craft: Vantus Rune: Vault of the Incarnates", }),
+			-- Trinkets
+			q(74102, { ["name"] = "First Craft: Crimson Combatant's Medallion", ["timeline"] = { ADDED_10_0_5 }, }),
+			q(74103, { ["name"] = "First Craft: Crimson Combatant's Insignia", ["timeline"] = { ADDED_10_0_5 }, }),
+			q(74104, { ["name"] = "First Craft: Crimson Combatant's Emblem", ["timeline"] = { ADDED_10_0_5 }, }),
+			-- q(TODO, { ["name"] = "First Craft: Darkmoon Deck Box: Dance", }),
+			-- q(TODO, { ["name"] = "First Craft: Darkmoon Deck Box: Inferno", }),
+			-- q(TODO, { ["name"] = "First Craft: Darkmoon Deck Box: Rime", }),
+			-- q(TODO, { ["name"] = "First Craft: Darkmoon Deck Box: Watcher", }),
+			-- Weapons
+			q(71596, { ["name"] = "First Craft: Core Explorer's Compendium", }),
+			--q(TODO, { ["name"] = "First Craft: Cracking Codex of the Isles", }),
+			q(71515, { ["name"] = "First Craft: Illuminating Pillar of the Isles", }),
+			q(71514, { ["name"] = "First Craft: Kinetic Pillar of the Isles", }),
+			q(71518, { ["name"] = "First Craft: Overseer's Writhebark Stave", }),
+			q(71517, { ["name"] = "First Craft: Pioneer's Writhebark Stave", }),
+			q(71516, { ["name"] = "First Craft: Weathered Explorer's Stave", }),
+			-- Profession Equipment
 			q(71585, { ["name"] = "First Craft: Alchemist's Brilliant Mixing Rod", }),
-			q(71533, { ["name"] = "First Craft: Cliffside Wylderdrake: Triple Head Horns", }),
-			q(72016, { ["name"] = "First Craft: Windborne Velocidrake: Steel and Orange Armor", }),
-			q(71526, { ["name"] = "First Craft: Draconic Treatise on Jewelcrafting", }),
-			q(71528, { ["name"] = "First Craft: Draconic Treatise on Skinning", }),
-			q(72018, { ["name"] = "First Craft: Cliffside Wylderdrake: Steel and Yellow Armor", }),
-			q(72015, { ["name"] = "First Craft: Cliffside Wylderdrake: Silver and Blue Armor", }),
-			q(72017, { ["name"] = "First Craft: Highland Drake: Steel and Yellow Armor", }),
-			q(72014, { ["name"] = "First Craft: Highland Drake: Silver and Blue Armor", }),
-			q(72013, { ["name"] = "First Craft: Windborne Velocidrake: Silver and Blue Armor", }),
-			q(71537, { ["name"] = "First Craft: Renewed Proto-Drake: Silver and Blue Armor", }),
-			q(71534, { ["name"] = "First Craft: Highland Drake: Black Hair", }),
+			q(71584, { ["name"] = "First Craft: Alchemist's Sturdy Mixing Rod", }),
+			q(71586, { ["name"] = "First Craft: Chef's Smooth Rolling Pin", }),
 			q(71587, { ["name"] = "First Craft: Chef's Splendid Rolling Pin", }),
+			q(71588, { ["name"] = "First Craft: Scribe's Fastened Quill", }),
+			q(71589, { ["name"] = "First Craft: Scribe's Resplendent Quill", }),
+			-- Scrolls
+			q(71546, { ["name"] = "First Craft: Illusion Parchment: Aqua Torrent", }),
+			q(71547, { ["name"] = "First Craft: Illusion Parchment: Arcane Burst", }),
+			q(71548, { ["name"] = "First Craft: Illusion Parchment: Chilling Wind", }),
+			q(71549, { ["name"] = "First Craft: Illusion Parchment: Love Charm", }),
+			q(71550, { ["name"] = "First Craft: Illusion Parchment: Magma Missile", }),
+			q(71551, { ["name"] = "First Craft: Illusion Parchment: Shadow Orb", }),
+			q(71552, { ["name"] = "First Craft: Illusion Parchment: Spell Shield", }),
+			q(71553, { ["name"] = "First Craft: Illusion Parchment: Whirling Breeze", }),
+			--q(TODO, { ["name"] = "First Craft: Scroll of Sales", }),
+			-- Mysteries
+			q(71554, { ["name"] = "First Craft: Blazing Fortune / Flourishing Fortune / Setene Fortune", }),
+			q(71521, { ["name"] = "First Craft: Bundle O' Cards: Dragon Isles", }),
+			-- q(TODO, { ["name"] = "First Craft: Extraction: Awakened Air", }),
+			-- q(TODO, { ["name"] = "First Craft: Extraction: Awakened Earth", }),
+			-- q(TODO, { ["name"] = "First Craft: Extraction: Awakened Fire", }),
+			-- q(TODO, { ["name"] = "First Craft: Extraction: Awakened Frost", }),
+			-- Contracts
+			q(71579, { ["name"] = "First Craft: Contract: Artisan's Consortium", }),
+			q(71580, { ["name"] = "First Craft: Contract: Dragonscale Expedition", }),
+			q(71581, { ["name"] = "First Craft: Contract: Iskaara Tuskarr", }),
+			q(71578, { ["name"] = "First Craft: Contract: Maruuk Centaur", }),
+			q(71582, { ["name"] = "First Craft: Contract: Valdrakken Accord", }),
+			-- Profession Specialization
+			q(71519, { ["name"] = "First Craft: Draconic Treatise on Alchemy", }),
+			q(71520, { ["name"] = "First Craft: Draconic Treatise on Blacksmithing", }),
+			q(71522, { ["name"] = "First Craft: Draconic Treatise on Enchanting", }),
+			q(71523, { ["name"] = "First Craft: Draconic Treatise on Engineering", }),
+			q(71524, { ["name"] = "First Craft: Draconic Treatise on Herbalism", }),
+			q(71525, { ["name"] = "First Craft: Draconic Treatise on Inscription", }),
+			q(71526, { ["name"] = "First Craft: Draconic Treatise on Jewelcrafting", }),
+			q(71527, { ["name"] = "First Craft: Draconic Treatise on Leatherworking", }),
+			q(71528, { ["name"] = "First Craft: Draconic Treatise on Mining", }),
+			-- q(TODO, { ["name"] = "First Craft: Draconic Treatise on Skinning", }),
+			q(71530, { ["name"] = "First Craft: Draconic Treatise on Tailoring", }),
+			-- Dragonriding - Renewed Proto-Drake
+			q(71539, { ["name"] = "First Craft: Renewed Proto-Drake: Bovine Horns", }),
+			q(71538, { ["name"] = "First Craft: Renewed Proto-Drake: Predator Pattern", }),
+			q(71537, { ["name"] = "First Craft: Renewed Proto-Drake: Silver and Blue Armor", }),
+			q(71540, { ["name"] = "First Craft: Renewed Proto-Drake: Spined Crest", }),
 			q(71541, { ["name"] = "First Craft: Renewed Proto-Drake: Steel and Yellow Armor", }),
-			q(74481, { ["name"] = "First Craft: Arcane Dispelling Rune", }),
+			-- Dragonriding - Windborne Velocidrake
+			q(71542, { ["name"] = "First Craft: Windborne Velocidrake: Black Fur", }),
+			q(72013, { ["name"] = "First Craft: Windborne Velocidrake: Silver and Blue Armor", }),
+			q(71543, { ["name"] = "First Craft: Windborne Velocidrake: Spined Head", }),
+			q(72016, { ["name"] = "First Craft: Windborne Velocidrake: Steel and Orange Armor", }),
+			q(71544, { ["name"] = "First Craft: Windborne Velocidrake: Windswept Pattern", }),
+			-- Dragonriding - Highland Drake
+			q(71534, { ["name"] = "First Craft: Highland Drake: Black Hair", }),
+			q(72014, { ["name"] = "First Craft: Highland Drake: Silver and Blue Armor", }),
+			-- q(TODO, { ["name"] = "First Craft: Highland Drake: Spined Crest", }),
+			q(71536, { ["name"] = "First Craft: Highland Drake: Spined Neck", }),
+			q(72017, { ["name"] = "First Craft: Highland Drake: Steel and Yellow Armor", }),
+			-- Dragonriding - Cliffside Wylderdrake
+			-- q(TODO, { ["name"] = "First Craft: Cliffside Wylderdrake: Conical Head", }),
+			q(71532, { ["name"] = "First Craft: Cliffside Wylderdrake: Red Hair", }),
+			q(72015, { ["name"] = "First Craft: Cliffside Wylderdrake: Silver and Blue Armor", }),
+			q(72018, { ["name"] = "First Craft: Cliffside Wylderdrake: Steel and Yellow Armor", }),
+			q(71533, { ["name"] = "First Craft: Cliffside Wylderdrake: Triple Head Horns", }),
+			-- Artisan Curios
+			q(74481, { ["name"] = "First Craft: Arcane Dispelling Rune", ["timeline"] = { ADDED_10_0_7 }, }),
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
@@ -1503,7 +1591,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(199170), 	-- Fated Fortune Card
 		}),
 		filter(MISC, {
-			i(203412, {["timeline"]={ADDED_10_0_7}}),	-- Arcane Dispelling Rune
+			i(203412, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Arcane Dispelling Rune
 			i(194871),	-- Azurescale Sigil+
 			i(199051),	-- Azurescale Sigil++
 			i(199052),	-- Azurescale Sigil+++
@@ -1632,9 +1720,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(194858),	-- Serene Ink+++
 		}),
 		filter(TRINKET_F, {
-			i(203377, {["timeline"]={ADDED_10_0_5}}),	-- Crimson Combatant's Emblem
-			i(203376, {["timeline"]={ADDED_10_0_5}}),	-- Crimson Combatant's Insignia of Alacrity
-			i(203375, {["timeline"]={ADDED_10_0_5}}),	-- Crimson Combatant's Medallion
+			i(203377, { ["timeline"] = { ADDED_10_0_5 }, }),	-- Crimson Combatant's Emblem
+			i(203376, { ["timeline"] = { ADDED_10_0_5 }, }),	-- Crimson Combatant's Insignia of Alacrity
+			i(203375, { ["timeline"] = { ADDED_10_0_5 }, }),	-- Crimson Combatant's Medallion
 			i(198478),	-- Darkmoon Deck Box: Dance
 			i(194872),	-- Darkmoon Deck Box: Inferno
 			i(198477),	-- Darkmoon Deck Box: Rime
@@ -1831,7 +1919,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(192894),	-- Blotting Sand+
 			i(192895),	-- Blotting Sand++
 			i(192896),	-- Blotting Sand+++
-			i(203413, {["timeline"]={ADDED_10_0_7}}),	-- Crystal Tuning Fork
+			i(203413, { ["timeline"] = { ADDED_10_0_7 }, }),	-- Crystal Tuning Fork
 			i(193019),	-- Djaradin's "Pinata"+
 			i(193020),	-- Djaradin's "Pinata"++
 			i(193021),	-- Djaradin's "Pinata"+++
@@ -2060,7 +2148,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71754, { ["name"] = "First Craft: Resplendent Cover", }),
 			q(71688, { ["name"] = "First Craft: Infurious Footwraps of Indemnity", }),
 			q(71740, { ["name"] = "First Craft: Allied Legguards of Sansok Khan", }),
-			q(71462, { ["name"] = "First Craft: Creature Combustion Canister", }),
 			q(71750, { ["name"] = "First Craft: Shockproof Gloves", }),
 			q(71706, { ["name"] = "First Craft: Life-Bound Boots", }),
 			q(71704, { ["name"] = "First Craft: Pioneer's Leather Boots", }),
@@ -2448,124 +2535,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		prof(FISHING, {
 		}),
 		--]]
-		prof(INSCRIPTION, {
-			-- Inks
-			q(71599),	-- Blazing Ink
-			q(71597),	-- Burnished Ink
-			q(71598),	-- Cosmic Ink
-			q(71600),	-- Flourishing Ink
-			q(71601),	-- Serene Ink
-			-- Reagents
-			q(71569),	-- Chilled Rune
-			-- q(),	-- Illustrious Insight
-			q(71570),	-- Runed Writhebark
-			-- Missives
-			q(71558),	-- Draconic Missive of the Aurora
-			q(71564),	-- Draconic Missive of the Feverflare
-			q(71565),	-- Draconic Missive of the Fireflash
-			q(71566),	-- Draconic Missive of the Harmonious
-			q(71567),	-- Draconic Missive of the Peerless
-			q(71568),	-- Draconic Missive of the Quickblade
-			-- Crafting Tool Missives
-			q(71571),	-- Draconic Missive of Crafting Speed
-			q(71572),	-- Draconic Missive of Inspiration
-			q(71573),	-- Draconic Missive of Multicraft
-			q(71574),	-- Draconic Missive of Resourcefulness
-			-- Gathering Tool Missives
-			q(71575),	-- Draconic Missive of Deftness
-			q(71576),	-- Draconic Missive of Finesse
-			q(71577),	-- Draconic Missive of Perception
-			-- Trinkets
-			-- q(),	-- Darkmoon Deck Box: Dance
-			-- q(),	-- Darkmoon Deck Box: Inferno
-			-- q(),	-- Darkmoon Deck Box: Rime
-			-- q(),	-- Darkmoon Deck Box: Watcher
-			-- Weapons
-			q(71596),	-- Core Explorer's Compendium
-			-- q(),	-- Cracking Codex of the Isles
-			q(71515),	-- Illuminating Pillar of the Isles
-			q(71514),	-- Kinetic Pillar of the Isles
-			q(71518),	-- Overseer's Writhebark Stave
-			q(71517),	-- Pioneer's Writhebark Stave
-			q(71516),	-- Weathered Explorer's Stave
-			-- Runes and Sigil
-			q(71559),	-- Azurescale Sigil
-			q(71560),	-- Bronzescale Sigil
-			q(71555),	-- Buzzing Rune
-			q(71556),	-- Chirping Rune
-			q(71561),	-- Emberscale Sigil
-			q(71557),	-- Howling Rune
-			q(71562),	-- Jetscale Sigil+
-			q(71563),	-- Sagescale Sigil
-			q(71594),	-- Vantus Rune: Vault of the Incarnates
-			-- Profession Equipment
-			-- q(),	-- Alchemist's Brilliant Mixing Rod
-			q(71584),	-- Alchemist's Sturdy Mixing Rod
-			q(71586),	-- Chef's Smooth Rolling Pin
-			-- q(),	-- Chef's Splendid Rolling Pin
-			q(71588),	-- Scribe's Fastened Quill
-			q(71589),	-- Scribe's Resplendent Quill
-			-- Scrolls
-			q(71546),	-- Illusion Parchment: Aqua Torrent
-			q(71547),	-- Illusion Parchment: Arcane Burst
-			q(71548),	-- Illusion Parchment: Chilling Wind
-			q(71549),	-- Illusion Parchment: Love Charm
-			q(71550),	-- Illusion Parchment: Magma Missile
-			q(71551),	-- Illusion Parchment: Shadow Orb
-			q(71552),	-- Illusion Parchment: Spell Shield
-			-- q(),	-- Illusion Parchment: Whirling Breeze
-			-- q(),	-- Scroll of Sales
-			-- Mysteries
-			q(71554),	-- Blazing Fortune / Flourishing Fortune / Setene Fortune
-			-- q(),	-- Bundle O' Cards: Dragon Isles
-			-- q(),	-- Extraction: Awakened Air
-			-- q(),	-- Extraction: Awakened Earth
-			-- q(),	-- Extraction: Awakened Fire
-			-- q(),	-- Extraction: Awakened Frost
-			-- Contracts
-			q(71579),	-- Contract: Artisan's Consortium
-			q(71580),	-- Contract: Dragonscale Expedition
-			q(71581),	-- Contract: Iskaara Tuskarr
-			q(71578),	-- Contract: Maruuk Centaur
-			q(71582),	-- Contract: Valdrakken Accord
-			-- Profession Specialization
-			q(71519),	-- Draconic Treatise on Alchemy
-			q(71520),	-- Draconic Treatise on Blacksmithing
-			q(71522),	-- Draconic Treatise on Enchanting
-			q(71523),	-- Draconic Treatise on Engineering
-			q(71524),	-- Draconic Treatise on Herbalism
-			q(71525),	-- Draconic Treatise on Inscription
-			q(71526),	-- Draconic Treatise on Jewelcrafting
-			q(71527),	-- Draconic Treatise on Leatherworking
-			q(71528),	-- Draconic Treatise on Mining
-			-- q(),	-- Draconic Treatise on Skinning
-			q(71530),	-- Draconic Treatise on Tailoring
-			-- Dragonriding - Renewed Proto-Drake
-			q(71539),	-- Renewed Proto-Drake: Bovine Horns
-			q(71538),	-- Renewed Proto-Drake: Predator Pattern
-			-- q(),	-- Renewed Proto-Drake: Silver and Blue Armor
-			q(71540),	-- Renewed Proto-Drake: Spined Crest
-			-- q(),	-- Renewed Proto-Drake: Steel and Yellow Armor
-			-- Dragonriding - Windborne Velocidrake
-			q(71542),	-- Windborne Velocidrake: Black Fur
-			-- q(),	-- Windborne Velocidrake: Silver and Blue Armor
-			q(71543),	-- Windborne Velocidrake: Spined Head
-			-- q(),	-- Windborne Velocidrake: Steel and Orange Armor
-			q(71544),	-- Windborne Velocidrake: Windswept Pattern
-			-- Dragonriding - Highland Drake
-			-- q(),	-- Highland Drake: Black Hair
-			-- q(),	-- Highland Drake: Silver and Blue Armor
-			-- q(),	-- Highland Drake: Spined Crest
-			q(71536),	-- Highland Drake: Spined Neck
-			-- q(),	-- Highland Drake: Steel and Yellow Armor
-			-- Dragonriding - Cliffside Wylderdrake
-			-- q(),	-- Cliffside Wylderdrake: Conical Head
-			q(71532),	-- Cliffside Wylderdrake: Red Hair
-			-- q(),	-- Cliffside Wylderdrake: Silver and Blue Armor
-			-- q(),	-- Cliffside Wylderdrake: Steel and Yellow Armor
-			-- q(),	-- Cliffside Wylderdrake: Triple Head Horns
-		}),
-		--]]
 		prof(JEWELCRAFTING, {
 			-- Reagents
 			q(71647),	-- Blotting Sand
@@ -2584,7 +2553,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(),	-- Energized Malygite
 			q(71627),	-- Forceful Nozdorite
 			-- q(),	-- Keen Neltharite
-			-- q(),	-- Quick Ysemerald
+			q(71631),	-- Quick Ysemerald
 			-- Earth Gems
 			q(71636),	-- Fractured Neltharite
 			q(71632),	-- Keen Ysemerald
@@ -2601,8 +2570,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71634),	-- Energized Ysemerald
 			q(71642),	-- Radiant Alexstraszite
 			q(71630),	-- Steady Nozdorite
-			-- q(),	-- Stormy Malygite
-			-- q(),	-- Zen Neltharite
+			q(71646),	-- Stormy Malygite
+			q(71638),	-- Zen Neltharite
 			-- Primalist Gems
 			q(71617),	-- Fierce Illimited Diamond
 			-- q(71619),	-- Inscribed Illimited Diamond
@@ -2637,7 +2606,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71670),	-- Jeweled Ruby Whelpling
 			-- q(),	-- Jeweled Sapphire Whelpling
 			-- Novelties
-			-- q(),	-- "Rhinestone" Sunglasses
+			q(71615),	-- "Rhinestone" Sunglasses
 			-- q(),	-- Covergent Prism
 			-- q(),	-- Jeweled Offering
 			-- q(),	-- Projection Prism
@@ -2663,7 +2632,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71712),	-- Life-Bound Belt
 			q(71713),	-- Life-Bound Binding
 			-- q(),	-- Life-Bound Boots
-			-- q(),	-- Life-Bound Cap
+			q(71709),	-- Life-Bound Cap
 			-- q(),	-- Life-Bound Chestpiece
 			q(71708),	-- Life-Bound Gloves
 			q(71711),	-- Life-Bound Shoulderpads
@@ -2681,9 +2650,9 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(),	-- Flame-Touched Cuffs
 			-- q(),	-- Flame-Touched Handguards
 			-- q(),	-- Flame-Touched Helmet
-			-- q(),	-- Flame-Touched Legguards
-			-- q(),	-- Flame-Touched Spaulders
-			-- q(),	-- Flame-Touched Treads
+			q(71736),	-- Flame-Touched Legguards
+			q(71737),	-- Flame-Touched Spaulders
+			q(71732),	-- Flame-Touched Treads
 			q(71730),	-- Trailblazer's Scale Boots
 			q(71731),	-- Trailblazer's Scale Bracers
 			q(71729),	-- Trailblazer's Scale Vest
@@ -2696,7 +2665,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71767),	-- Durable Pack
 			-- q(),	-- Expert Alchemist's Hat
 			-- q(),	-- Expert Skinner's Cap
-			-- q(),	-- Flameproof Apron
+			q(71745),	-- Flameproof Apron
 			q(71751),	-- Floral Basket
 			q(71753),	-- Jeweler's Cover
 			-- q(),	-- Lavish Floral Pack
@@ -2713,7 +2682,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- Elemental Patterns
 			-- q(),	-- Ancestor's Dew Drippers
 			q(71702),	-- Flaring Cowl
-			-- q(),	-- Old Spirit's Wristwraps
+			q(71691),	-- Old Spirit's Wristwraps
 			q(71718),	-- Scale Rein Grips
 			q(71693),	-- Snowball Makers
 			q(71690),	-- String of Spiritual Knick-Knacks
