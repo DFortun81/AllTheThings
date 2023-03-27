@@ -971,6 +971,7 @@ SEASON_TORMENTED = 15327;
 SEASON_CRYPTIC = 15691;
 SEASON_SHROUDED = 15756;
 SEASON_THUNDERING = 16429;
+SEASON_PH = 17846;
 
 -- Pet
 PET_BATTLE = -796;
@@ -1426,6 +1427,12 @@ ADDED_10_0_7 = "added 10.0.7.48676";					-- Dragonflight 10.0.7 Launch on March 
 REMOVED_10_0_7 = "removed 10.0.7.48676";				-- Dragonflight 10.0.7 Launch on March 21st, 2023
 ADDED_10_1_0 = "added 10.1.0";							-- Dragonflight 10.1.0 Launch on
 REMOVED_10_1_0 = "removed 10.1.0";						-- Dragonflight 10.1.0 Launch on
+ADDED_10_1_5 = "added 10.1.5";							-- Dragonflight 10.1.5 Launch on
+REMOVED_10_1_5 = "removed 10.1.5";						-- Dragonflight 10.1.5 Launch on
+ADDED_10_1_7 = "added 10.1.7";							-- Dragonflight 10.1.7 Launch on
+REMOVED_10_1_7 = "removed 10.1.7";						-- Dragonflight 10.1.7 Launch on
+ADDED_10_2_0 = "added 10.2.0";							-- Dragonflight 10.2.0 Launch on
+REMOVED_10_2_0 = "removed 10.2.0";						-- Dragonflight 10.2.0 Launch on
 
 -- Holiday Filters
 BREWFEST = 1000;

@@ -144,7 +144,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" },	-- removed from the store again on Jan 2 2023
 		}),
 		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)
-			["timeline"] = { "added 10.0.2" },	-- Not sure when exactly it got added to the shop.
+			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.
 		}),
 		i(166775, {	-- Vulpine Familiar (MOUNT!)
 			["timeline"] = { "added 8.1.0.28724" },
