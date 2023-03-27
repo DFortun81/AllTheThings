@@ -117,8 +117,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 				q(73201),
 				q(73202),
 				q(73203),
-				-- q(73204),	-- guessed
-				-- q(73205),	-- guessed
+				q(73204),
+				q(73205),
 			}),
 			header(HEADERS.Item, 202669, {	-- Sealed Fish Scroll
 				q(73210),
@@ -126,12 +126,12 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 				-- q(73212),	-- guessed
 				q(73213),
 				q(73214),
-				-- q(73215),	-- guessed
+				q(73215),
 			}),
 			header(HEADERS.Item, 202670, {	-- Sealed Knowledge Scroll
 				q(73216),
-				-- q(73217),	-- guessed
-				-- q(73218),	-- guessed
+				q(73217),	
+				q(73218),
 				q(73219),
 				-- q(73220),	-- guessed
 			}),
@@ -139,7 +139,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 				q(73206),
 				q(73207),
 				q(73208),
-				-- q(73209),	-- guessed
+				q(73209),
 			}),
 		}),
 	}),
