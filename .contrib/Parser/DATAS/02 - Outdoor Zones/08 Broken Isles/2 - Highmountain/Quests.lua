@@ -120,7 +120,7 @@ _.Zones =
 					["g"] = {
 						i(200664, {	-- Bloodgem of Greed
 							["classes"] = { EVOKER },
-							["timeline"] = ADDED_DF_PRE2,
+							["timeline"] = ADDED_10_0_2,
 						}),
 						i(133115),	-- Stonedark Focus
 						i(133116),	-- Bloodsinger Essence
@@ -194,7 +194,7 @@ _.Zones =
 					["g"] = {
 						i(200662, {	-- Encrusted Blade of the Mountains
 							["classes"] = { EVOKER },
-							["timeline"] = ADDED_DF_PRE2,
+							["timeline"] = ADDED_10_0_2,
 						}),
 						i(133070),	-- Empowered Lifespring Crystal
 						i(133081),	-- Manathirster Focus

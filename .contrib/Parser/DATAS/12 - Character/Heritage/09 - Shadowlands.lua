@@ -1,7 +1,7 @@
 -------------------------------------------
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
-root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_SL_S4 } }, {
+root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_9_2_5 } }, {
 	tier(SL_TIER, {
 		race(BLOODELF, {
 			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 60 Blood Elf|r with a standing of |cFFFFFFFFExalted|r with Silvermoon City.",

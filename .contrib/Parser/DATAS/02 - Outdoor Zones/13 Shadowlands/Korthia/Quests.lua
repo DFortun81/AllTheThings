@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(KORTHIA, {
 		n(QUESTS, {
 			n(REWARDS, {
@@ -1103,7 +1103,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, 
 				["sourceQuest"] = 65020,	-- Practical Applications
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.8, 22.6, KORTHIA },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			q(64290, {	-- Collecting Research
 				["sourceQuests"] = { 64289 },	-- Picking Up the Pieces
@@ -1148,7 +1148,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, 
 			q(65020, {	-- Practical Applications
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.8, 22.6, KORTHIA },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			q(64289, {	-- Picking Up the Pieces
 				["sourceQuests"] = { 63738 },	-- Establishing the Archive
@@ -1161,7 +1161,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, 
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.8, 22.6, KORTHIA },
 				["minReputation"] = { 2472, 3 },	-- Tier 3
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			q(64368, {	-- Relic Efficiency
 				["sourceQuest"] = 63861,	-- Beginning the Collection
@@ -1174,7 +1174,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, 
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.8, 22.6, KORTHIA },
 				["minReputation"] = { 2472, 5 },	-- Tier 5
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			q(63949, {	-- Shaping Fate
 				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
@@ -1465,7 +1465,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, 
 			q(65266, {	-- Lost Research
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.8, 22.6, KORTHIA },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 				["isWeekly"] = true,
 			}),
 			q(63954, {	-- Sealed Secrets

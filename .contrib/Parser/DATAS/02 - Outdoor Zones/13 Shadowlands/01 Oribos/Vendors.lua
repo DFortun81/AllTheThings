@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 				["coord"] = { 59.7, 70.6, ORIBOS },
 				["g"] = {
 					i(194118, {	-- Cosmic Equipment Chest
-						["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+						["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 						["cost"] = {
 							{ "c", 1602, 375 },	-- 375x Conquest
 						},
@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 						},
 					}),
 					i(194334, {	-- Encrypted Equipment Chest
-						["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
+						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 },
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500x Valor
 						},
@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 						},
 					}),
 					i(201355, {	-- Eternal Equipment Chest
-						["timeline"] = { ADDED_SL_2_7, REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_2_7, REMOVED_DF_REL },
 						["cost"] = {
 							{ "c", 1602, 375 },	-- 375x Conquest
 						},
@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 						},
 					}),
 					i(201362, {	-- Fated Equipment Chest
-					["timeline"] = { ADDED_SL_2_7, REMOVED_DF_REL },
+					["timeline"] = { ADDED_9_2_7, REMOVED_DF_REL },
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500x Valor
 						},
@@ -253,7 +253,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 			}),
 			n(188391, {	-- Ko'ropo <Sire Supplier>
 				["coord"] = { 66.7, 31.6, ORIBOS },
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
 				["sym"] = {
 					{"select", "instanceID", 1190},			-- Castle Nathria
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -299,11 +299,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					})),
 					i(191297, {	-- Ephemera-Infused Mesh
 						["cost"] = { { "i", 187219, 6 } },	-- 6x Attendant's Token of Merit
-						["timeline"] = { "added 9.2.0", REMOVED_SL_S4 },
+						["timeline"] = { "added 9.2.0", REMOVED_9_2_5 },
 					}),
 					i(199112, {	-- Fated Matter Fractalizer
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
-						["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
 					}),
 					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", REMOVED_DF_REL } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
@@ -379,7 +379,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 			}),
 			n(188377, {	-- So'turu <Fence of the First Ones>
 				["coord"] = { 67.0, 32.2, ORIBOS },
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
 				["sym"] = {
 					{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -393,7 +393,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 			}),
 			n(188386, {	-- Ta'choso <Domination Dealer>
 				["coord"] = { 67.3, 32.7, ORIBOS },
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
 				["sym"] = {
 					{"select", "instanceID", 1193},			-- Sanctum of Domination
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.

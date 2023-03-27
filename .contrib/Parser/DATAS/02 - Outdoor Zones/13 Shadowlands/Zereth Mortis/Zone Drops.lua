@@ -1,14 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_DROPS, {
 			i(189704, {	-- Dominance Key
 				["cr"] = 181403,	-- Mawsworn Inquisitor
 			}),
 			i(192444, {	-- Resonating Disc
-				["timeline"] = { ADDED_SL_S4 },
+				["timeline"] = { ADDED_9_2_5 },
 			}),
 			i(190198),	-- Sandworn Chest Key Fragment
 			i(190197, {	-- Sandworn Chest Key

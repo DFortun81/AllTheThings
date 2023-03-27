@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(THE_MAW, {
 		n(ZONE_DROPS, {
 			i(175769),	-- Constellan Writ
@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 			}),
 			i(186564, {	-- Golden Eye
 				["crs"] = { 177132 },	-- Helsworn Soulseeker
-				["timeline"] = { ADDED_SL_S2 },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186559, {	-- Grappling Gauntlet (PET!)
 				["description"] = "Available in The Maw, Korthia, Zereth Mortis.",
@@ -28,23 +28,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					177293,	-- Mawsworn Torturer
 					157824,	-- Protector of Flame
 				},
-				["timeline"] = { ADDED_SL_S2 },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(187253, {	-- Maw Guard's Spiked Spaulders
 				["crs"] = { 167322 },	-- Mawsworn Shackler
-				["timeline"] = { ADDED_SL_S2 },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(183059, {	-- Mawsworn Shackles
 				["crs"] = { 167322, 176198 },	-- Mawsworn Shackler
 			}),
 			i(187252, {	-- Ritualist's Spiked Mantle
 				["crs"] = { 168977 },	-- Mawsworn Thaumaturge
-				["timeline"] = { ADDED_SL_S2 },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186727, {	-- Seal Breaker Key
 				["crs"] = { 177134 },	-- Maldraxxi Defector
 				["questID"] = 62679,
-				["timeline"] = { ADDED_SL_S2 },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(186161),	-- Stygian Lockbox
 		}),

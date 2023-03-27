@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(BASTION, {
 		n(ZONE_REWARDS, {
 			["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
@@ -19,10 +19,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				i(181630),	-- Honortoll Spear
 				i(184840),	-- Hymnal of the Path
 				i(184842, {	-- Instructor's Divine Bell
-					["timeline"] = {  ADDED_SL_REL, REMOVED_SL_S3 },
+					["timeline"] = {  ADDED_9_0_2, REMOVED_9_2_0 },
 				}),
 				i(190641, {	-- Instructor's Divine Bell
-					["timeline"] = { ADDED_SL_S3 },
+					["timeline"] = { ADDED_9_2_0 },
 				}),
 				i(181627),	-- Lifepath Crossbow
 				i(181637),	-- Lifepath Hammer

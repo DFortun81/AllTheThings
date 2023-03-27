@@ -4,7 +4,7 @@
 local PRIMEVAL_ESSENCE = 199211;
 
 root(ROOTS.WorldEvents, n(-520,	-- Expansion Prelaunch Events
-	bubbleDown({ ["timeline"] = { CREATED_DF_PRE, ADDED_DF_PRE2, REMOVED_DF_REL } }, {
+	bubbleDown({ ["timeline"] = { CREATED_10_0_0, ADDED_10_0_2, REMOVED_DF_REL } }, {
 	tier(DF_TIER, {
 		n(ACHIEVEMENTS, {
 			ach(16431, {	-- Against the Elements

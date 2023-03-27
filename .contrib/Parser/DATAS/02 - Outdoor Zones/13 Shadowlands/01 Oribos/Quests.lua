@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(ORIBOS, {
 		n(QUESTS, {
 			header(HEADERS.Quest, 60152, {	-- The Eternal City
@@ -193,12 +193,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 			q(66243, {	-- A Gift of Hope
 				["provider"] = { "n", 187905 },	-- Lilacsprig <Queen's Messenger>
 				["coord"] = { 60.6, 41.2, ORIBOS },
-				["timeline"] = { ADDED_SL_S4 },
+				["timeline"] = { ADDED_9_2_5 },
 			}),
 			q(66661, {	-- It's Just a Coin, What Could it Cost?
 				["description"] = "Automatically accepted when zoning into Oribos after completion of 'Crossing Fate'.",
 				["sourceQuests"] = { 66648 },	-- Crossing Fate
-				["timeline"] = { ADDED_SL_S4 },
+				["timeline"] = { ADDED_9_2_5 },
 			}),
 			q(51355, {	-- Secretest Fish
 				["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 			q(65625, {	-- The Jailer's Gauntlet
 				["provider"] = { "n", 185576 },	-- Ve'nyo
 				["coord"] = { 55.7, 49.3, ORIBOS },
-				["timeline"] = { ADDED_SL_S3 },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 			q(60274, {	-- Trading Favors
 				["provider"] = { "n", 156688 },	-- Host Ta'rela
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 		n(QUESTS, sharedData({
 			["customCollect"] = "SL_SKIP",
 		}, bubbleDown({
-			["timeline"] = { ADDED_SL_REL, REMOVED_DF_PRE2 },
+			["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 		}, {
 			-- Skip Quests
 			q(62704, {	-- The Threads of Fate
@@ -252,14 +252,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
 				["coord"] = { 19.6, 50.2, ORIBOS },
 				["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
-				["timeline"] = { ADDED_SL_REL },
+				["timeline"] = { ADDED_9_0_2 },
 			}),
 			q(63771, {	-- Fate's Reminder
 				["description"] = "To get this Quest, you have to choose 'Replay Storyline' and pick 'Skip Storyline' right after.",
 				["sourceQuests"] = { 62704 },	-- The Threads of Fate
 				["altQuests"] = { 62713 },	-- Becoming a Skip character will exclude this Quest from being available
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_SL_0_5, REMOVED_DF_PRE2 },
+				["timeline"] = { ADDED_9_0_5, ADDED_10_0_2 },
 				["lockCriteria"] = { 1, "lvl", 60 },
 			}),
 			q(62716, {	-- Re-Introductions
@@ -272,14 +272,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					{ 19.6, 50.2, ORIBOS },
 					{ 79.0, 49.2, ORIBOS },
 				},
-				["timeline"] = { ADDED_SL_REL },
+				["timeline"] = { ADDED_9_0_2 },
 			}),
 			q(62000, {	-- Choosing Your Purpose
 				["sourceQuests"] = { 62716 },	-- Re-Introductionse
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["altQuests"] = { 57878 },	-- Choosing Your Purpose
-				["timeline"] = { ADDED_SL_REL },
+				["timeline"] = { ADDED_9_0_2 },
 			}),
 
 			-- Zone Choice Quests
@@ -371,13 +371,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 1, "questID", 65030 },	-- accepting this Quest
-				["timeline"] = { ADDED_SL_1_5, REMOVED_DF_PRE2 },
+				["timeline"] = { ADDED_9_1_5, ADDED_10_0_2 },
 			}),
 			q(64846, {	-- Torghast
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_SL_1_5, REMOVED_DF_PRE2 },
+				["timeline"] = { ADDED_9_1_5, ADDED_10_0_2 },
 			}),
 
 			-- Zone Travel Breadcrumbs
@@ -451,7 +451,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_SL_1_5, REMOVED_DF_PRE2 },
+				["timeline"] = { ADDED_9_1_5, ADDED_10_0_2 },
 			}),
 			-- Torghast
 			q(64849, {	-- Tower of the Damned
@@ -459,7 +459,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_SL_1_5, REMOVED_DF_PRE2 },
+				["timeline"] = { ADDED_9_1_5, ADDED_10_0_2 },
 			}),
 
 			-- Zone Meta Quests (keep in Oribos for visibility to players who may skip storyline I suppose)
@@ -472,7 +472,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				},
 				["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
 				["coord"] = { 49.2, 52.2, ARDENWEALD },
-				["timeline"] = { ADDED_SL_REL },
+				["timeline"] = { ADDED_9_0_2 },
 				["g"] = {
 					i(179562),	-- Duskwarder Branch
 					i(179517),	-- Duskwarder Censor
@@ -497,7 +497,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				},
 				["provider"] = { "n", 163427 },	-- Kalisthene
 				["coord"] = { 51.1, 43.7, BASTION },
-				["timeline"] = { ADDED_SL_REL },
+				["timeline"] = { ADDED_9_0_2 },
 				["g"] = {
 					i(181635),	-- Honortoll Gavel
 					i(181630),	-- Honortoll Spear
@@ -521,7 +521,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				},
 				["provider"] = { "n", 175008 },	-- Secutor Mevix
 				["coord"] = { 52.8, 68.2, MALDRAXXUS },
-				["timeline"] = { ADDED_SL_REL },
+				["timeline"] = { ADDED_9_0_2 },
 				["g"] = {
 					i(181685),	-- Gorewrought Barrier
 					i(181689),	-- Gorewrought Bonesaw
@@ -554,7 +554,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					{ 52.0, 38.6, SINFALL_REACHES },	-- Prince Renathal [for Venthyr]
 					{ 61.4, 60.2, REVENDRETH },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 				},
-				["timeline"] = { ADDED_SL_REL },
+				["timeline"] = { ADDED_9_0_2 },
 				["g"] = {
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff
@@ -582,7 +582,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["coord"] = { 34.7, 56.5, ORIBOS },
 				["isDaily"] = true,
 				["lvl"] = { 50, 59 },
-				["timeline"] = { ADDED_SL_1_5, REMOVED_DF_PRE2 },
+				["timeline"] = { ADDED_9_1_5, ADDED_10_0_2 },
 				["sym"] = {
 					{"select", "mapID", BASTION },{"pop"},
 					{"where", "headerID", ZONE_REWARDS },
@@ -611,7 +611,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["provider"] = { "n", 181328 },	-- Ve'nish
 				["coord"] = { 35.5, 46.9, 1627 },
 				["isDaily"] = true,
-				["timeline"] = { ADDED_SL_1_5, REMOVED_DF_PRE2 },
+				["timeline"] = { ADDED_9_1_5, ADDED_10_0_2 },
 				["lockCriteria"] = { 1, "lvl", 60 },
 			}),
 
@@ -655,7 +655,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["sourceQuests"] = { 65033 },	-- Observing Victory
 				["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 				["coord"] = { 34.7, 56.5, ORIBOS },
-				["timeline"] = { ADDED_SL_1_5, REMOVED_DF_PRE2 },
+				["timeline"] = { ADDED_9_1_5, ADDED_10_0_2 },
 				["lvl"] = { 48, 60 },
 			})),
 			-- Torghast
@@ -663,7 +663,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["sourceQuests"] = { 64850 },	-- Traversing Torghast
 				["provider"] = { "n", 181328 },	-- Ve'nish
 				["coord"] = { 35.5, 46.9, 1627 },
-				["timeline"] = { ADDED_SL_1_5, REMOVED_DF_PRE2 },
+				["timeline"] = { ADDED_9_1_5, ADDED_10_0_2 },
 				["lvl"] = { 48, 60 },
 			}),
 		}))),

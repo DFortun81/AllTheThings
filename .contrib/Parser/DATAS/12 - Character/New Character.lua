@@ -41,23 +41,23 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		n(ARMOR, {
 			i(187778, {	-- Druid's Footwear
 				--["races"] = { NIGHTELF, TAUREN, TROLL },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187777, {	-- Druid's Handwraps
 				--["races"] = { NIGHTELF, TAUREN, TROLL },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187776, {	-- Druid's Leggings
 				--["races"] = { NIGHTELF, TAUREN, TROLL },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187775, {	-- Druid's Tunic
 				--["races"] = { NIGHTELF, TAUREN, TROLL },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187774, {	-- Druid's Waistband
 				--["races"] = { NIGHTELF, TAUREN, TROLL },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(49565, {	-- Gilnean Novice's Gloves
 				--["races"] = { WORGEN },
@@ -77,15 +77,15 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(6124, {	-- Novice's Pants
 				--["races"] = { NIGHTELF, TAUREN, TROLL },
-				["timeline"] = { REMOVED_SL_1_5 },
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(6123, {	-- Novice's Robe
 				--["races"] = { NIGHTELF },
-				["timeline"] = { REMOVED_SL_1_5 },
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(6139, {	-- Novice's Robe
 				--["races"] = { TAUREN, TROLL },
-				["timeline"] = { REMOVED_SL_1_5 },
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 		}),
 		n(WEAPONS, {
@@ -148,75 +148,75 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(187693, {	-- Hunter's Belt
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187691, {	-- Hunter's Boots
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187694, {	-- Hunter's Bracers
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187695, {	-- Hunter's Gloves
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187690, {	-- Hunter's Pants
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187692, {	-- Hunter's Vest
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(129, {	-- Rugged Trapper's Boots
 				--["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
-				["timeline"] = { REMOVED_SL_1_5 },
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(147, {	-- Rugged Trapper's Pants
 				--["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
-				["timeline"] = { REMOVED_SL_1_5 },
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(58232, {	-- Rugged Trapper's Vest
 				--["races"] = { HUMAN, DWARF, NIGHTELF, UNDEAD },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 },
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 },
 			}),
 			i(23348, {	-- Scout's Boots
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 },
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 },
 			}),
 			i(23344, {	-- Scout's Pants
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 },
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 },
 			}),
 			i(58240, {	-- Scout's Vest
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 },
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 },
 			}),
 			i(6137, {	-- Thug Pants
 				--["races"] = { ORC, TAUREN, TROLL },
-				["timeline"] = { REMOVED_SL_1_5 },
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(6138, {	-- Trapper's Boots
 				--["races"] = { ORC, TAUREN, TROLL },
-				["timeline"] = { REMOVED_SL_1_5 },
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(58247, {	-- Trapper's Vest
 				--["races"] = { ORC, TAUREN, TROLL },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 },
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 },
 			}),
 			i(20900, {	-- Warder's Boots
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 },
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 },
 			}),
 			i(20899, {	-- Warder's Pants
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 },
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 },
 			}),
 			i(58235, {	-- Warder's Vest
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 },
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 },
 			}),
 		}),
 		n(WEAPONS, {
@@ -267,47 +267,47 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		n(ARMOR, {
 			i(55, {	-- Apprentice's Boots
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(52554, {	-- Apprentice's Boots
 				--["races"] = { NIGHTELF },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(20895, {	-- Apprentice's Boots
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(1395, {	-- Apprentice's Pants
 				--["races"] = { HUMAN, DWARF, GNOME, NIGHTELF, UNDEAD },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(52681, {	-- Apprentice's Pants
 				--["races"] = { ORC, TROLL },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(20894, {	-- Apprentice's Pants
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(56, {	-- Apprentice's Robe
 				--["races"] = { HUMAN, DWARF, GNOME },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(52553, {	-- Apprentice's Robe
 				--["races"] = { NIGHTELF },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(52546, {	-- Apprentice's Robe
 				--["races"] = { ORC, TROLL },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(6140, {	-- Apprentice's Robe
 				--["races"] = { UNDEAD },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(20893, {	-- Apprentice's Robe
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(49401, {	-- Gilnean Apprentice's Boots
 				--["races"] = { WORGEN },
@@ -341,7 +341,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187760, {	-- Mage's Sash
 			--[[
@@ -351,7 +351,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187759, {	-- Mage's Slippers
 			--[[
@@ -361,7 +361,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187758, {	-- Mage's Trousers
 			--[[
@@ -371,7 +371,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187761, {	-- Mage's Robes
 			--[[
@@ -381,7 +381,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187757, {	-- Mage's Wristwraps
 			--[[
@@ -391,15 +391,15 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(23478, {	-- Recruit's Pants
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(23479, {	-- Recruit's Robe
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(77509, {	-- Trainee's Cord
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
@@ -488,71 +488,71 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		n(ARMOR, {
 			i(24146, {	-- Initiate's Boots
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(52549, {	-- Initiate's Pants
 				--["races"] = { TAUREN },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(24145, {	-- Initiate's Pants
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(58248, {	-- Initiate's Vest
 				--["races"] = { TAUREN },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(58237, {	-- Initiate's Vest
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(187722, {	-- Paladin's Chestplate
 				--["races"] = { HUMAN, DWARF, DRAENEI, TAUREN, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187725, {	-- Paladin's Cuffs
 				--["races"] = { HUMAN, DWARF, DRAENEI, TAUREN, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187724, {	-- Paladin's Gauntlets
 				--["races"] = { HUMAN, DWARF, DRAENEI, TAUREN, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187726, {	-- Paladin's Girdle
 				--["races"] = { HUMAN, DWARF, DRAENEI, TAUREN, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187723, {	-- Paladin's Greaves
 				--["races"] = { HUMAN, DWARF, DRAENEI, TAUREN, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187727, {	-- Paladin's Sabatons
 				--["races"] = { HUMAN, DWARF, DRAENEI, TAUREN, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(43, {	-- Squire's Boots
 				--["races"] = { HUMAN, DWARF },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(52533, {	-- Squire's Boots
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(44, {	-- Squire's Pants
 				--["races"] = { HUMAN, DWARF },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(23477, {	-- Squire's Pants
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(58233, {	-- Squire's Vest
 				--["races"] = { HUMAN, DWARF },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(58242, {	-- Squire's Vest
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 		}),
 		n(WEAPONS, {
@@ -586,11 +586,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		n(ARMOR, {
 			i(1396, {	-- Acolyte's Pants
 				--["races"] = { DRAENEI },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(23322, {	-- Acolyte's Robe
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(49406, {	-- Gilnean Neophyte's Boots
 				--["races"] = { WORGEN },
@@ -618,35 +618,35 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(51, {	-- Neophyte's Boots
 				--["races"] = { HUMAN, DWARF, GNOME, NIGHTELF, UNDEAD, BLOODELF },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(52, {	-- Neophyte's Pants
 				--["races"] = { HUMAN, DWARF, GNOME, NIGHTELF, UNDEAD, BLOODELF },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(52680, {	-- Neophyte's Pants
 				--["races"] = { TAUREN, TROLL },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(6098, {	-- Neophyte's Robe
 				--["races"] = { HUMAN, DWARF, GNOME },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(6119, {	-- Neophyte's Robe
 				--["races"] = { NIGHTELF },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(6144, {	-- Neophyte's Robe
 				--["races"] = { UNDEAD },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(52547, {	-- Neophyte's Robe
 				--["races"] = { TAUREN, TROLL },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(20891, {	-- Neophyte's Robe
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(187768, {	-- Priest's Mitts
 			--[[
@@ -656,7 +656,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187767, {	-- Priest's Robes
 			--[[
@@ -666,7 +666,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187766, {	-- Priest's Sash
 			--[[
@@ -676,7 +676,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187765, {	-- Priest's Slippers
 			--[[
@@ -686,7 +686,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187764, {	-- Priest's Trousers
 			--[[
@@ -696,7 +696,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187763, {	-- Priest's Wristwraps
 			--[[
@@ -706,7 +706,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(77509, {	-- Trainee's Cord
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
@@ -749,15 +749,15 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		n(ARMOR, {
 			i(48, {	-- Footpad's Pants
 				--["races"] = { HUMAN, DWARF, GNOME, NIGHTELF, UNDEAD },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(47, {	-- Footpad's Shoes
 				--["races"] = { HUMAN, DWARF, GNOME, NIGHTELF, UNDEAD },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(58234, {	-- Footpad's Vest
 				--["races"] = { HUMAN, DWARF, GNOME, NIGHTELF, UNDEAD },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(49575, {	-- Gilnean Footpad's Boots
 				--["races"] = { WORGEN },
@@ -789,15 +789,15 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(20896, {	-- Lookout's Pants
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(20898, {	-- Lookout's Shoes
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(58238, {	-- Lookout's Vest
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(187770, {	-- Rogue's Footwear
 			--[[
@@ -808,7 +808,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187773, {	-- Rogue's Handwraps
 			--[[
@@ -819,7 +819,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187769, {	-- Rogue's Leggings
 			--[[
@@ -830,7 +830,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187772, {	-- Rogue's Tunic
 			--[[
@@ -841,7 +841,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187771, {	-- Rogue's Waistband
 			--[[
@@ -852,19 +852,19 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					-- #endif
 				},
 			]]--
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(121, {	-- Thug Boots
 				--["races"] = { ORC, TROLL },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(120, {	-- Thug Pants
 				--["races"] = { ORC, TROLL },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(58246, {	-- Thug Vest
 				--["races"] = { ORC, TROLL },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 		}),
 		n(WEAPONS, {
@@ -896,7 +896,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		n(ARMOR, {
 			i(52540, {	-- Primal Boots
 				--["races"] = { DWARF},
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(52552, {	-- Primal Boots
 				--["races"] = { GOBLIN },
@@ -904,15 +904,15 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(52539, {	-- Primal Pants
 				--["races"] = { DWARF },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(52535, {	-- Primal Pants
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(52545, {	-- Primal Pants
 				--["races"] = { ORC, TROLL, TAUREN },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(52551, {	-- Primal Pants
 				--["races"] = { GOBLIN },
@@ -920,15 +920,15 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(52538, {	-- Primal Robe
 				--["races"] = { DWARF },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(52534, {	-- Primal Robe
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(52544, {	-- Primal Robe
 				--["races"] = { ORC, TROLL, TAUREN },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(52550, {	-- Primal Shirt
 				--["races"] = { GOBLIN },
@@ -936,27 +936,27 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(187721, {	-- Shaman's Belt
 				--["races"] = { DWARF, DRAENEI, ORC, TAUREN, TROLL },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187720, {	-- Shaman's Boots
 				--["races"] = { DWARF, DRAENEI, ORC, TAUREN, TROLL },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187719, {	-- Shaman's Bracers
 				--["races"] = { DWARF, DRAENEI, ORC, TAUREN, TROLL },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187718, {	-- Shaman's Gloves
 				--["races"] = { DWARF, DRAENEI, ORC, TAUREN, TROLL },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187717, {	-- Shaman's Pants
 				--["races"] = { DWARF, DRAENEI, ORC, TAUREN, TROLL },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187716, {	-- Shaman's Vest
 				--["races"] = { DWARF, DRAENEI, ORC, TAUREN, TROLL },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 		}),
 		n(WEAPONS, {
@@ -988,7 +988,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["coord"] = { 79.5, 69.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_SL_S3 }
+				["timeline"] = { ADDED_9_2_0 }
 			}),
 			q(65424, {	-- Whatever You Sayaad (H)
 				["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
@@ -996,37 +996,37 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["coord"] = { 74.6, 47.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_SL_S3 }
+				["timeline"] = { ADDED_9_2_0 }
 			}),
 		}),
 		n(ARMOR, {
 			i(1396, {	-- Acolyte's Pants
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD, BLOODELF },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(52679, {	-- Acolyte's Pants
 				--["races"] = { ORC, TROLL },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(57, {	-- Acolyte's Robe
 				--["races"] = { HUMAN, DWARF, GNOME },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(52543, {	-- Acolyte's Robe
 				--["races"] = { ORC, TROLL },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(6129, {	-- Acolyte's Robe
 				--["races"] = { UNDEAD },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(20892, {	-- Acolyte's Robe
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(59, {	-- Acolyte's Shoes
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD, BLOODELF },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(49407, {	-- Gilnean Acolyte's Boots
 				--["races"] = { WORGEN },
@@ -1054,27 +1054,27 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(187753, {	-- Warlock's Mitts
 				--["races"] = { HUMAN, DWARF, GNOME, ORC, UNDEAD, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187751, {	-- Warlock's Robes
 				--["races"] = { HUMAN, DWARF, GNOME, ORC, UNDEAD, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187756, {	-- Warlock's Sash
 				--["races"] = { HUMAN, DWARF, GNOME, ORC, UNDEAD, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187755, {	-- Warlock's Slippers
 				--["races"] = { HUMAN, DWARF, GNOME, ORC, UNDEAD, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187752, {	-- Warlock's Trousers
 				--["races"] = { HUMAN, DWARF, GNOME, ORC, UNDEAD, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187754, {	-- Warlock's Wristwraps
 				--["races"] = { HUMAN, DWARF, GNOME, ORC, UNDEAD, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 		}),
 		n(WEAPONS, {
@@ -1097,15 +1097,15 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		n(ARMOR, {
 			i(140, {	-- Brawler's Boots
 				--["races"] = { ORC, TROLL, TAUREN },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(139, {	-- Brawler's Pants
 				--["races"] = { ORC, TROLL, TAUREN },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(58245, {	-- Brawler's Vest
 				--["races"] = { ORC, TROLL, TAUREN },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(49577, {	-- Gilnean Recruit's Belt
 				--["races"] = { WORGEN },
@@ -1141,75 +1141,75 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(40, {	-- Recruit's Boots
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(6122, {	-- Recruit's Boots
 				--["races"] = { NIGHTELF },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(23475, {	-- Recruit's Boots
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(20903, {	-- Recruit's Boots
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 4.0.1.12941", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.1.12941", REMOVED_9_1_5 }
 			}),
 			i(39, {	-- Recruit's Pants
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(6121, {	-- Recruit's Pants
 				--["races"] = { NIGHTELF },
-				["timeline"] = { REMOVED_SL_1_5 }
+				["timeline"] = { REMOVED_9_1_5 }
 			}),
 			i(23474, {	-- Recruit's Pants
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_SL_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
 			}),
 			i(20902, {	-- Recruit's Pants
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 4.0.1.12941", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.1.12941", REMOVED_9_1_5 }
 			}),
 			i(20904, {	-- Recruit's Tunic
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 4.0.1.12941", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.1.12941", REMOVED_9_1_5 }
 			}),
 			i(58231, {	-- Recruit's Vest
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(58244, {	-- Recruit's Vest
 				--["races"] = { NIGHTELF },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(58243, {	-- Recruit's Vest
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_SL_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
 			}),
 			i(187748, {	-- Warrior's Chestplate
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187747, {	-- Warrior's Cuffs
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187746, {	-- Warrior's Gauntlets
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187745, {	-- Warrior's Girdle
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187744, {	-- Warrior's Greaves
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(187743, {	-- Warrior's Sabatons
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 		}),
 		n(WEAPONS, {

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, tier(SL_TIER, {
-	["timeline"] = { ADDED_SL_REL },
+	["timeline"] = { ADDED_9_0_2 },
 	-- #if ANYCLASSIC
 	["u"] = SHADOWLANDS_PHASE_ONE,
 	-- #endif

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(MALDRAXXUS, {
 		n(SPECIAL, {
 			i(183114, {	-- Carpal (PET!)
@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					{ "i", 183113, 1 },	-- 1x Flexing Phalanges
 				},
 			}),
-			n(182105, bubbleDownSelf({ ["timeline"] = { ADDED_SL_1_5 } }, {	-- Mysterious Trashpile
+			n(182105, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Mysterious Trashpile
 				["description"] = "Use /bow on the Mysterious Trashpile. (Cave Entrance is 44.59, 65.48).",
 				["coord"] = { 44.84, 67.89, MALDRAXXUS },
 				["g"] = {

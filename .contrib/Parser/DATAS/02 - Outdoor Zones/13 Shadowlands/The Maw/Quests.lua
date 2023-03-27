@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(THE_MAW, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14334, {	-- Into the Maw
@@ -423,7 +423,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 			q(64521, {	-- Helsworn Battle Plans
 				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 				["provider"] = { "i", 187275 },	-- Helsworn Battle Plans
-				["timeline"] = { ADDED_SL_S2 },
+				["timeline"] = { ADDED_9_1_0 },
 				["crs"] = {
 					177413,	-- Avowed Soulbreaker
 					177418,	-- Chained Bonesculpter
@@ -439,7 +439,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 			}),
 			q(63708, {	-- Phantasmagoria
 				["provider"] = { "i", 185756 },	-- Warped Phantasma
-				["timeline"] = { ADDED_SL_S2 },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			q(62234, {	-- Power of the Colossus
 				["provider"] = { "n", 162804 },	-- Ve'nari
@@ -449,7 +449,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.8, 41.7, THE_MAW },
 				["cost"] = { { "c", 1767, 800 } },	-- 800x Stygia
-				["timeline"] = { ADDED_SL_S2 },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 			q(61079, {	-- The Jailer's Share
 				["provider"] = { "n", 162804 },	-- Ve'nari

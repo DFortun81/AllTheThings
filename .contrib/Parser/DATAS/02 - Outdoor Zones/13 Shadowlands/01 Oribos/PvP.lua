@@ -84,7 +84,7 @@ local SymPvPClass = function(ClassID, Extra)
 	end
 	return SymLink
 end
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(ORIBOS, {
 		pvp(n(PVP, {
 			n(QUESTS, {
@@ -368,12 +368,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, PLATE, 178301),
 						}),
-						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_SL_S4 } }, {
+						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_9_2_5 } }, {
 							i(192388),	-- Eternal Aspirant's Insignia of Alacrity
 							i(192412),	-- Eternal Aspirant's Medallion
 							i(192414),	-- Eternal Aspirant's Sigil of Adaptation
 						})),
-						header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+						header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
 							["g"] = {
 								filter(CLOAKS, {
@@ -687,7 +687,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								}),
 							},
 						})),
-						header(HEADERS.Achievement, SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+						header(HEADERS.Achievement, SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount_red",
 							["g"] = {
 								filter(CLOAKS, {
@@ -1001,7 +1001,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								}),
 							},
 						})),
-						header(HEADERS.Achievement, SEASON_UNCHAINED, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 } }, {
+						header(HEADERS.Achievement, SEASON_UNCHAINED, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount_blue",
 							["g"] = {
 								filter(CLOAKS, {
@@ -1315,7 +1315,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								}),
 							},
 						})),
-						header(HEADERS.Achievement, SEASON_SINFUL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {
+						header(HEADERS.Achievement, SEASON_SINFUL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount",
 							["g"] = {
 								filter(CLOAKS, {
@@ -2119,7 +2119,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 							["timeline"] = { ADDED_DF_REL },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_GLADIATOR, PLATE, 184311),
 						}),
-						header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDown({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+						header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
 							["g"] = {
 								filter(CLOAKS, {
@@ -2463,7 +2463,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								}),
 							},
 						})),
-						header(HEADERS.Achievement, SEASON_COSMIC, bubbleDown({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+						header(HEADERS.Achievement, SEASON_COSMIC, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount_red",
 							["g"] = {
 								filter(CLOAKS, {
@@ -2807,7 +2807,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								}),
 							},
 						})),
-						header(HEADERS.Achievement, SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 } }, {
+						header(HEADERS.Achievement, SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount_blue",
 							["g"] = {
 								filter(CLOAKS, {
@@ -3069,7 +3069,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								n(WEAPONS, {
 									i(188660, {	-- Unchained Gladiator's Barrier
 										["cost"] = { { "c", CONQUEST, 450 } },
-										["timeline"] = { ADDED_SL_1_5, REMOVED_SL_S3 },
+										["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 									}),
 									i(185200, {	-- Unchained Gladiator's Ceremonial Sword
 										["cost"] = { { "c", CONQUEST, 1350 } },
@@ -3082,11 +3082,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 									}),
 									i(188663, {	-- Unchained Gladiator's Focus Staff
 										["cost"] = { { "c", CONQUEST, 1800 } },
-										["timeline"] = { ADDED_SL_1_5, REMOVED_SL_S3 },
+										["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 									}),
 									i(188661, {	-- Unchained Gladiator's Gavel
 										["cost"] = { { "c", CONQUEST, 1350 } },
-										["timeline"] = { ADDED_SL_1_5, REMOVED_SL_S3 },
+										["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 									}),
 									i(185199, {	-- Unchained Gladiator's Gladius
 										["cost"] = { { "c", CONQUEST, 900 } },
@@ -3096,11 +3096,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 									}),
 									i(188662, {	-- Unchained Gladiator's Greatstaff
 										["cost"] = { { "c", CONQUEST, 1800 } },
-										["timeline"] = { ADDED_SL_1_5, REMOVED_SL_S3 },
+										["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 									}),
 									i(188668, {	-- Unchained Gladiator's Greatsword
 										["cost"] = { { "c", CONQUEST, 1800 } },
-										["timeline"] = { ADDED_SL_1_5, REMOVED_SL_S3 },
+										["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 									}),
 									i(185126, {	-- Unchained Gladiator's Guard
 										["cost"] = { { "c", CONQUEST, 450 } },
@@ -3116,22 +3116,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 									}),
 									i(188664, {	-- Unchained Gladiator's Mageblade
 										["cost"] = { { "c", CONQUEST, 1350 } },
-										["timeline"] = { ADDED_SL_1_5, REMOVED_SL_S3 },
+										["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 									}),
 									i(188666, {	-- Unchained Gladiator's Rifle
 										["cost"] = { { "c", CONQUEST, 1800 } },
-										["timeline"] = { ADDED_SL_1_5, REMOVED_SL_S3 },
+										["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 									}),
 									i(188667, {	-- Unchained Gladiator's Ripper
 										["cost"] = { { "c", CONQUEST, 900 } },
-										["timeline"] = { ADDED_SL_1_5, REMOVED_SL_S3 },
+										["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 									}),
 									i(185316, {	-- Unchained Gladiator's Ritual Dagger
 										["cost"] = { { "c", CONQUEST, 1350 } },
 									}),
 									i(188665, {	-- Unchained Gladiator's Slicer
 										["cost"] = { { "c", CONQUEST, 900 } },
-										["timeline"] = { ADDED_SL_1_5, REMOVED_SL_S3 },
+										["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 									}),
 									i(185125, {	-- Unchained Gladiator's Splitter
 										["cost"] = { { "c", CONQUEST, 900 } },
@@ -3148,7 +3148,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 								}),
 							},
 						})),
-						header(HEADERS.Achievement, SEASON_SINFUL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {
+						header(HEADERS.Achievement, SEASON_SINFUL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount",
 							["g"] = {
 								filter(CLOAKS, {

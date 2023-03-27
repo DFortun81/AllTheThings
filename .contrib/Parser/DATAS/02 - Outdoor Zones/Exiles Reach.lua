@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 		-- ["classes"] = exclude({ DEMONHUNTER, DEATHKNIGHT, EVOKER }, ALL_CLASSES),
 		-- ["races"] = exclude({ DRACTHYR_ALLIANCE, DRACTHYR_HORDE }, ALL_RACES),
 		["customCollect"] = { "NPE" },
-		["timeline"] = { ADDED_SL_PRE },
+		["timeline"] = { ADDED_9_0_1 },
 	}, {
 	["icon"] = 3567434,
 	["maps"] = {

@@ -5,7 +5,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 	header(HEADERS.Achievement, SEASON_ETERNAL, {
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
 		["g"] = {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 				ach(15599, {	-- Eternal Combatant [A]
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
@@ -43,10 +43,10 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				}),
 				-- Fashion
 				ach(15408, {	-- Cosmic Chic
-					["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE, ADDED_DF_REL },
+					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_DF_REL },
 				}),
 			})),
-			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE, ADDED_DF_REL } }, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_DF_REL } }, {
 				i(187644, {	-- Vicious Warstalker [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -73,7 +73,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				title(398),	-- <Name> the Elite Warrior
 				title(29),	-- Gladiator <Name>
 			})),
-			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE, ADDED_DF_REL } }, {
+			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_DF_REL } }, {
 				filter(CLOAKS, {
 					i(192390),	-- Eternal Aspirant's Cape
 					i(192319),	-- Eternal Aspirant's Cloak
@@ -97,7 +97,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(192356),	-- Eternal Aspirant's Silk Vest
 					i(192348),	-- Eternal Aspirant's Silk Wristwraps
 				}),
-				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 					i(192383),	-- Eternal Aspirant's Band
 					i(192347),	-- Eternal Aspirant's Ring
 					i(192391),	-- Eternal Aspirant's Signet
@@ -138,7 +138,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(192373),	-- Eternal Aspirant's Chain Wargreaves
 					i(192350),	-- Eternal Aspirant's Chain Wristwraps
 				}),
-				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 					i(192389),	-- Eternal Aspirant's Choker
 					i(192353),	-- Eternal Aspirant's Necklace
 					i(192393),	-- Eternal Aspirant's Pendant
@@ -162,11 +162,11 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(192371),	-- Eternal Aspirant's Plate Wargreaves
 				}),
 				filter(TRINKET_F, {
-					i(192352, {["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE }}),	-- Eternal Aspirant's Badge of Ferocity
-					i(192392, {["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE }}),	-- Eternal Aspirant's Emblem
+					i(192352, {["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 }}),	-- Eternal Aspirant's Badge of Ferocity
+					i(192392, {["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 }}),	-- Eternal Aspirant's Emblem
 					i(192388),	-- Eternal Aspirant's Insignia of Alacrity
 					i(192412),	-- Eternal Aspirant's Medallion
-					i(192413, {["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE }}),	-- Eternal Aspirant's Relentless Brooch
+					i(192413, {["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 }}),	-- Eternal Aspirant's Relentless Brooch
 					i(192414),	-- Eternal Aspirant's Sigil of Adaptation
 				}),
 				n(WEAPONS, {
@@ -190,7 +190,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(192403),	-- Eternal Aspirant's Warglaive
 				}),
 			})),
-			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE, ADDED_DF_REL } }, {
+			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_DF_REL } }, {
 				n(CLASSES,{
 					["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
 					["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
@@ -352,7 +352,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(192220),	-- Eternal Gladiator's Silk Vestments
 					i(192233),	-- Eternal Gladiator's Silk Wristwraps
 				}),
-				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 					i(192214),	-- Eternal Gladiator's Band
 					i(192213),	-- Eternal Gladiator's Ring
 					i(192215),	-- Eternal Gladiator's Signet
@@ -393,7 +393,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(192251),	-- Eternal Gladiator's Chain Vest
 					i(192265),	-- Eternal Gladiator's Chain Wristguards
 				}),
-				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 					i(192218),	-- Eternal Gladiator's Amulet
 					i(192216),	-- Eternal Gladiator's Necklace
 					i(192217),	-- Eternal Gladiator's Pendant
@@ -416,7 +416,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(192276),	-- Eternal Gladiator's Plate Wargreaves
 					i(192281),	-- Eternal Gladiator's Plate Wristguards
 				}),
-				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 					i(192295),	-- Eternal Gladiator's Badge of Ferocity
 					i(192305),	-- Eternal Gladiator's Devouring Malediction
 					i(192302),	-- Eternal Gladiator's Echoing Resolve
@@ -454,7 +454,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(192289),	-- Eternal Gladiator's Xiphos
 				}),
 			})),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE }, ["bonusID"] = 7532 }, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 }, ["bonusID"] = 7532 }, {
 				n(CLASSES,{
 					["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
 					["g"] = bubbleDown({ ["bonusID"] = 7532 }, {

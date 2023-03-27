@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
 				i(184869, {	-- Cache of Nathrian Treasures (N)
-					["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 },
+					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },
 					["sym"] = {
 						{"select", "instanceID", 1190},			-- Castle Nathria
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					},
 				}),
 				i(184868, {	-- Cache of Nathrian Treasures (HC)
-					["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 },
+					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },
 					["sym"] = {
 						{"select", "instanceID", 1190},			-- Castle Nathria
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					},
 				}),
 				i(186531, {	-- Cache of Sanctum Treasures (N)
-					["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 },
+					["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
 					["sym"] = {
 						{"select", "instanceID", 1193},			-- Sanctum of Domination
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					},
 				}),
 				i(186533, {	-- Cache of Sanctum Treasures (HC)
-					["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 },
+					["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
 					["sym"] = {
 						{"select", "instanceID", 1193},			-- Sanctum of Domination
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					},
 				}),
 				i(190655, {	-- Cache of Sepulcher Treasures (N) or 190654
-					["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					},
 				}),
 				i(191040, {	-- Cache of Sepulcher Treasures (5x BC TW -> N) [Q:62632]
-					["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					},
 				}),
 				i(191041, {	-- Cache of Sepulcher Treasures (4x Mythic -> H)
-					["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					},
 				}),
 				i(190656, {	-- Cache of Sepulcher Treasures (H)
-					["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					},
 				}),
 				i(192437, {	-- Cache of Fated Treasures (Normal)
-					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+					["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
 					["modID"] = 11,
 					["bonusID"] = 8157,
 					["sym"] = {
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					},
 				}),
 				i(192438, {	-- Cache of Fated Treasures (Heroic)
-					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+					["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
 					["modID"] = 11,
 					["bonusID"] = 8157,
 					["sym"] = {

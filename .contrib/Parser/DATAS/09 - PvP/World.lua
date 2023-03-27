@@ -45,7 +45,7 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 			}),
 		}),
 	})),
-	tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+	tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 		n(-243,	{	-- Bounty (for later). Contains every aspirant gear as well
 			i(184810),	-- Plundered Supplies [Shadowlands-Maldraxxus-(Ore)]
 		}),

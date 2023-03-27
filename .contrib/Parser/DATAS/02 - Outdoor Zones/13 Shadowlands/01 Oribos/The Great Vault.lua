@@ -56,25 +56,25 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 			["coord"] = { 64.3, 32.1, ORIBOS },
 			["g"] = {
 				i(187219, {	-- Attendant's Token of Merit
-					["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 				}),
 				i(199202, {	-- Attendant's Token of Merit
-					["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
+					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 },
 				}),
 				inst(1190, {	-- Castle Nathria
-					["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2, ADDED_SL_S4, REMOVED_DF_PRE },
+					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_9_2_5, REMOVED_10_0_0 },
 					["sym"] = SymRaid(1190, {
 						182169,	-- Veilwing Soul (SS!)
 					}),
 				}),
 				inst(1193, {	-- Sanctum of Domination
-					["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3, ADDED_SL_S4, REMOVED_DF_PRE },
+					["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_9_2_5, REMOVED_10_0_0 },
 					["sym"] = SymRaid(1193, {
 						182177,	-- Owlcat Soul (SS!)
 					})
 				}),
 				inst(1195, {	-- Sepulcher of the First Ones
-					["timeline"] = { ADDED_SL_S3, REMOVED_DF_PRE },
+					["timeline"] = { ADDED_9_2_0, REMOVED_10_0_0 },
 					["sym"] = SymRaid(1195, {
 						189437,	-- Schematic: Stabilized Geomental (RECIPE!)
 						189178,	-- Tools of Incomprehensible Experimentation
@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 				}),
 				n(MYTHIC_PLUS, {
 					header(HEADERS.Achievement, SEASON_PROUD, {
-						["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 },
+						["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },
 						["sym"] = {
 							{"select", "instanceID",
 								1188,	-- De Other Side
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						},
 					}),
 					header(HEADERS.Achievement, SEASON_TORMENTED, {
-						["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
 						["sym"] = {
 							{"select", "instanceID",
 								1188,	-- De Other Side
@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						},
 					}),
 					header(HEADERS.Achievement, SEASON_CRYPTIC, {
-						["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+						["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 						["sym"] = {
 							{"select", "instanceID",
 								1188,	-- De Other Side
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						},
 					}),
 					header(HEADERS.Achievement, SEASON_SHROUDED, {
-						["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
+						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 },
 						["sym"] = {
 							{"select", "instanceID",
 								536,	-- Grimrail Depot
@@ -175,22 +175,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 				pvp(n(PVP, {
 					header(HEADERS.Achievement, SEASON_SINFUL, {
 						["icon"] = "Interface\\Icons\\inv_shadebeastmount",
-						["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 },
+						["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },
 						["sym"] = SymPvP(SEASON_SINFUL),
 					}),
 					header(HEADERS.Achievement, SEASON_UNCHAINED, {
 						["icon"] = "Interface\\Icons\\inv_shadebeastmount_blue",
-						["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
 						["sym"] = SymPvP(SEASON_UNCHAINED),
 					}),
 					header(HEADERS.Achievement, SEASON_COSMIC, {
 						["icon"] = "Interface\\Icons\\inv_shadebeastmount_red",
-						["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+						["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 						["sym"] = SymPvP(SEASON_COSMIC),
 					}),
 					header(HEADERS.Achievement, SEASON_ETERNAL, {
 						["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
-						["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
+						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 },
 						["sym"] = SymPvP(SEASON_ETERNAL),
 					}),
 				})),

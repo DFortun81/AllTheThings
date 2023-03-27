@@ -38,7 +38,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 		})),
 		n(ACHIEVEMENTS, {
 			ach(13075, bubbleDownSelf({		-- Battle for Azeroth Keymaster
-				["timeline"] = { ADDED_BFA_REL, REMOVED_SL_PRE },
+				["timeline"] = { ADDED_BFA_REL, REMOVED_9_0_1 },
 			}, {
 				crit(4),		-- Atal'Dazar
 				crit(1),		-- Freehold
@@ -73,7 +73,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				ach(13781),	-- Battle for Azeroth Keystone Master: Season Three
 			})),
 			header(HEADERS.Achievement, SEASON_AWAKENED, bubbleDownSelf({
-				["timeline"] = { ADDED_BFA_S4, REMOVED_SL_PRE },
+				["timeline"] = { ADDED_BFA_S4, REMOVED_9_0_1 },
 			},{
 				ach(14144, {	-- Battle for Azeroth Keystone Conqueror: Season Four
 					title(418),	-- <Name> the Awakened (TITLE!)

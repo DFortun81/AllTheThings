@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_REWARDS, {
 			currency(1979),	-- Cyphers of the First Ones
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, 
 				i(190389),	-- Broker's Lucky Coin
 				i(190726),	-- Extract of Prodigious Sands
 			}),
-			n(WEAPONS, sharedData({ ["timeline"] = { ADDED_SL_S4 } }, {
+			n(WEAPONS, sharedData({ ["timeline"] = { ADDED_9_2_5 } }, {
 				i(192428),	-- Ballad Shield
 				i(192450),	-- Choral Staff
 				i(192422),	-- Harmonium Lantern

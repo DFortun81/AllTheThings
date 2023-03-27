@@ -5,7 +5,7 @@ local CATALOGED_RESEARCH = 1931;
 local STYGIA = 1767;
 local SOUL_ASH = 1828;
 local SOUL_CINDERS = 1906;
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(KORTHIA, {
 		n(VENDORS, {
 			n(178257, {	-- Archivist Roh-Suir
@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, 
 					}),
 					i(191031, {	-- Packaged Soul Cinders
 						["cost"] = { { "c", SOUL_CINDERS, 300 } },
-						["timeline"] = { ADDED_SL_S3 },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(187532, {	-- Soulfire Chisel
 						["cost"] = { { "c", STYGIA, 2500 } },
@@ -335,7 +335,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, 
 					}),
 					i(188156, {	-- Korthian Accessory
 						["cost"] = { { "c", STYGIA, 750 } },
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_FINGER" },
 							{"sub", "korthian_armaments", "INVTYPE_TRINKET" },
@@ -343,28 +343,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, 
 					}),
 					i(188161, {	-- Korthian Belt
 						["cost"] = { { "c", STYGIA, 750 } },
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_WAIST" },
 						},
 					}),
 					i(188155, {	-- Korthian Boots
 						["cost"] = { { "c", STYGIA, 1000 } },
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_FEET" },
 						},
 					}),
 					i(188163, {	-- Korthian Bracers
 						["cost"] = { { "c", STYGIA, 750 } },
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_WRIST" },
 						},
 					}),
 					i(188154, {	-- Korthian Chestpiece
 						["cost"] = { { "c", STYGIA, 1250 } },
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_CHEST" },
 							{"sub", "korthian_armaments", "INVTYPE_ROBE" },
@@ -372,42 +372,42 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, 
 					}),
 					i(188153, {	-- Korthian Cloak
 						["cost"] = { { "c", STYGIA, 750 } },
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_CLOAK" },
 						},
 					}),
 					i(188157, {	-- Korthian Gloves
 						["cost"] = { { "c", STYGIA, 1000 } },
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_HAND" },
 						},
 					}),
 					i(188158, {	-- Korthian Helm
 						["cost"] = { { "c", STYGIA, 1250 } },
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_HEAD" },
 						},
 					}),
 					i(188159, {	-- Korthian Legguards
 						["cost"] = { { "c", STYGIA, 1250 } },
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_LEGS" },
 						},
 					}),
 					i(188160, {	-- Korthian Shoulders
 						["cost"] = { { "c", STYGIA, 1000 } },
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_SHOULDER" },
 						},
 					}),
 					i(188162, {	-- Korthian Weaponry
 						["cost"] = { { "c", STYGIA, 1500 } },
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"select", "itemID", 187187 },		-- Korthian Armaments
 							{"pop"},							-- Discard Header

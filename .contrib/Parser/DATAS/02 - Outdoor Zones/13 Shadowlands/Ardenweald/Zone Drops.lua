@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(ARDENWEALD, {
 		n(ZONE_DROPS, {
 			i(180478),	-- Champion's Pelt
@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 			}),
 			i(187935, {	-- Technique: Mark of the Midnight Runestag (RECIPE!)
 				["crs"] = { 165907 },	-- Runestag
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(175247),	-- Unusually Large Mushroom
 			filter(CLOTH, {

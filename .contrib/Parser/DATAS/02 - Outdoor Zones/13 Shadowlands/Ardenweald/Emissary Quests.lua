@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(ARDENWEALD, {
 		n(EMISSARY_QUESTS, {
 			q(61098, bubbleDownSelf({ ["minReputation"] = { THE_WILD_HUNT, EXALTED } }, {	-- Supplies from The Wild Hunt
@@ -12,8 +12,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(180649, {	-- Wild Hunt Supplies
 						i(180635),	-- Hungry Burrower (PET!)
 						i(183800),	-- Amber Ardenmoth (MOUNT!)
-						i(187870, {["timeline"] = { ADDED_SL_1_5 }}),	-- Porcupine Soul (SS!)
-						i(185054, {["timeline"] = { ADDED_SL_1_5 }}),	-- Mammoth Soul (SS!)
+						i(187870, {["timeline"] = { ADDED_9_1_5 }}),	-- Porcupine Soul (SS!)
+						i(185054, {["timeline"] = { ADDED_9_1_5 }}),	-- Mammoth Soul (SS!)
 					}),
 				},
 			})),

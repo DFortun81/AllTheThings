@@ -289,7 +289,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 	})),
 	tier(DF_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["description"] = "These rewards are available to anyone who purchases Dragonflight Heroic Edition.",
-		["timeline"] = { ADDED_SL_S4 },
+		["timeline"] = { ADDED_9_2_5 },
 		["groups"] = {
 			p(3177, {	-- Drakks (PET!)
 				["description"] = "This is a pre-order bonus only available before the launch of Dragonflight.",

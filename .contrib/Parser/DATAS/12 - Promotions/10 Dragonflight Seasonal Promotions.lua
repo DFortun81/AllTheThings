@@ -20,7 +20,7 @@ root(ROOTS.Promotions, {
 			i(34493, {	-- Dragon Kite (PET!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 15th, 03:00 p.m. & November 18th, 11:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = {
-					ADDED_DF_PRE2,
+					ADDED_10_0_2,
 					"removed 10.0.2.46702",	-- After November 17th, 11:59 p.m. PST
 				},
 			}),

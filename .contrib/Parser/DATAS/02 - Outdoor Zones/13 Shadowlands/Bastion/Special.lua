@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(BASTION, {
 		n(SPECIAL, {
 			n(175563, { -- Courage
@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(184400),	-- Courage (PET!)
 				},
 			}),
-			n(181682, bubbleDownSelf({ ["timeline"] = { ADDED_SL_1_5 } }, {	-- Lost Soul (Otter)
+			n(181682, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Lost Soul (Otter)
 				["description"] = "Use /hug on the Lost Soul. It has roughly a 60 minute respawn.",
 				["coord"] = { 49.85, 46.85, BASTION },
 				["g"] = {

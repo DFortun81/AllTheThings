@@ -19,7 +19,7 @@ local UNFORMED_LATTICE = 189153;
 local VESPOID_LATTICE = 189154;
 local VIPERID_LATTICE = 189155;
 local VOMBATA_LATTICE = 189156;
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		prof(PROTOFORM_SYNTHESIS, {
 			n(ACHIEVEMENTS, {

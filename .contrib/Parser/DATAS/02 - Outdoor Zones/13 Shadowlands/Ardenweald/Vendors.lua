@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(ARDENWEALD, {
 		n(VENDORS, {
 			n(158556, {	-- Aithlyn <Wild Hunt Quartermaster>
@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["g"] = repVendor(THE_WILD_HUNT, {
 				{		-- Neutral
 					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { ADDED_SL_S3 },
+						["timeline"] = { ADDED_9_2_0 },
 						["sym"] = {
 							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
 							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(183106),	-- Recipe: Eternal Cauldron (RECIPE!)
 					i(183093),	-- Technique: Contract: The Wild Hunt (RECIPE!)
 					i(187883, {	-- Technique: Mark of the Twilight Runestag (RECIPE!)
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
 						i(181309, {	-- Faewoven Pack
@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 						["description"] = "Talk to Droman Dawnblossom. Then pick up the Fae Net item that is leaning against a table to the right of Droman.\nThen either travel to Val'sharah or summon a Vale Flitter Pet and use the Fae Net on the battle pet until you get a buff called Glowing Moth.",
 						["requireSkill"] = INSCRIPTION,
 						["cost"] = { { "i", 187943, 1}, },	-- 1x Fae Net
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 				},
 			}),
@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					n(NIGHT_FAE, sharedData({["customCollect"] = { "SL_COV_NFA" }},{
 						i(187901, {	-- Eagle Soul (SS!)
 							["cost"] = { { "c", ANIMA, 20000 } },
-							["timeline"] = { ADDED_SL_1_5 },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 						i(182662, {	-- Leafadore (PET!)
 							["cost"] = { { "i", 163036, 250 } },
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 						}),
 						i(187873, {	-- Prairie Dog Soul (SS!)
 							["cost"] = { { "c", ANIMA, 10000 } },
-							["timeline"] = { ADDED_SL_1_5 },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 						i(181304, {	-- Winterwoven Branches
 							["cost"] = { { "c", ANIMA, 3500 } },
@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 							{ "c", ANIMA, 1000 },
 							{ "c", GRATEFUL, 5 },
 						},
-						["timeline"] = { ADDED_SL_1_5 },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
 						i(181308, {	-- Winterwoven Bulb

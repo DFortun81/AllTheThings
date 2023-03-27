@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(MALDRAXXUS, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14206, {	-- Blade of the Primus
@@ -759,7 +759,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 			}, bubbleDown({
-				["timeline"] = { ADDED_SL_REL, REMOVED_DF_PRE2 },
+				["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 			}, {
 				q(62742, {	-- Avoid 'Em Like the P	lague [Pre-60]
 					i(181638),	-- Gorewrought Drape

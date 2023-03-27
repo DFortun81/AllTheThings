@@ -1995,7 +1995,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	m(BLASTED_LANDS, {
 		q(66560, {	-- Changing time of zone from Present to Past through Zidormi
-			["timeline"] = { ADDED_SL_S4 },
+			["timeline"] = { ADDED_9_2_5 },
 		}),
 	}),
 });

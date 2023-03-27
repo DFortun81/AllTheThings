@@ -12,8 +12,8 @@ local MageTowerFilter =
 }};
 local MageTowerFilter92 =
 {["timeline"] = {
-	ADDED_SL_S3,
-	REMOVED_DF_PRE,
+	ADDED_9_2_0,
+	REMOVED_10_0_0,
 	ADDED_10_0_5,
 }};
 -- #endif

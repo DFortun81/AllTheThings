@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(MALDRAXXUS, {
 		n(VENDORS, {
 			n(166640, {	-- Au'larrynar <Enhancers>
@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(180771),	-- Potion of Unusual Strength
 					i(180659),	-- Soul Siphoning Shard
 					i(180969, {	-- Spiral Deathroc Horn
-						["timeline"] = { ADDED_SL_REL, "deleted 9.0.5" },
+						["timeline"] = { ADDED_9_0_2, "deleted 9.0.5" },
 					}),
 					i(180694),	-- Tome of Power
 					i(180658),	-- Witherlight Crystal
@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 						["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 					}),
 					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { ADDED_SL_S3 },
+						["timeline"] = { ADDED_9_2_0 },
 						["sym"] = {
 							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
 							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)

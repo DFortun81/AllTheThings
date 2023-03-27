@@ -59,7 +59,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 		i(200102),	-- Plans: Infurious Alloy (RECIPE!)
 		i(194484),	-- Plans: Infurious Helm of Vengeance
 		i(194485),	-- Plans: Infurious Warboots of Impunity
-		i(199241, {["timeline"] = { CREATED_DF_PRE, ADDED_10_0_7 }}),	-- Schematic: H.E.L.P. (RECIPE!)
+		i(199241, {["timeline"] = { CREATED_10_0_0, ADDED_10_0_7 }}),	-- Schematic: H.E.L.P. (RECIPE!)
 		i(199238),	-- Schematic: Sticky Warp Grenade (RECIPE!)
 		i(199239),	-- Schematic: Tinker: Alarm-O-Turret (RECIPE!)
 		i(199299),	-- Schematic: Tinker: Polarity Amplifier (RECIPE!)

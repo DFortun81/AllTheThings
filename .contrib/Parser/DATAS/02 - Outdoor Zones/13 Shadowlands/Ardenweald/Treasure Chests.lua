@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(ARDENWEALD, {
 		n(TREASURES, {
 			n(171156, {		-- Aerto <Grove Ranger>
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(183129),	-- Anima-Laden Dreamcatcher
 				},
 			}),
-			o(373460, bubbleDownSelf({ ["timeline"] = { ADDED_SL_1_5 } }, {	-- Fae Net
+			o(373460, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Fae Net
 				["coord"] = { 38.3, 36.8, ARDENWEALD },
 				["g"] = {
 					i(187943),	-- Fae Net

@@ -123,7 +123,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added
 				["timeline"] = { "added 9.2.0" },
 			}),
 		})),
-		cl(EVOKER, bubbleDownSelf({ ["classes"] = { EVOKER }, ["timeline"] = { ADDED_DF_PRE } }, {
+		cl(EVOKER, bubbleDownSelf({ ["classes"] = { EVOKER }, ["timeline"] = { ADDED_10_0_0 } }, {
 			i(199552),	-- Memory of Unity (EVOKER)
 		})),
 		cl(HUNTER, bubbleDownSelf({ ["classes"] = { HUNTER } }, {

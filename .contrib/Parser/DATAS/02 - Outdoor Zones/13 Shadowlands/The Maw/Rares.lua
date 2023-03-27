@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(THE_MAW, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(COMMON_BOSS_DROPS, {
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 57482,
 				["g"] = {
 					i(186222, {	-- Grips of the Coldheart Adjutant
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 63380,
 				["g"] = {
 					i(186616, {	-- Bindings of Screaming Death
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 63382,
 				["g"] = {
 					i(186617, {	-- Death's Hammer Stompers
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(186223),	-- Coif of the Molten Terror
 				},
 			}),
-			n(180246, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S2 } }, {	-- Carriage Crusher
+			n(180246, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Carriage Crusher
 				["description"] = "The Assault Supply Carriage starts in Korthia, moves to the northeastern bridge out of the Beastwarrens, and then finishes its supply run to the current covenant assault.\n\nWhen the carriage makes it to the bridge, the Carriage Crusher spawns.  You can hop into the carriage to heal it and yourself.",
 				["crs"] = { 180182 },	-- Assault Supply Carriage
 				["coord"] = { 45.5, 54.8, THE_MAW },
@@ -133,10 +133,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 62282,
 				["g"] = {
 					i(183901, {	-- Bonestorm Top (TOY!)
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 					i(186611, {	-- Taraxis' Treads
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(186620),	-- Rezara's Fencing Grips
 				},
 			}),
-			n(179779, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S2 } }, {	-- Deomen the Vortex
+			n(179779, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Deomen the Vortex
 				["description"] = "If the cage is locked, enter the building to the left of the rare at |cFFFFFFFF63.3, 43.6|r.  There is a lever on the wall on either side of the room at the bottom of the stairs, inside the alcoves.",
 				["crs"] = { 179791 },	-- Deomen the Vortex (while in cage)
 				["coord"] = { 61.3, 41.3, THE_MAW },
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 63372,
 				["g"] = {
 					i(186622, {	-- Robe of Drifting Sorrow
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -207,7 +207,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["g"] = {
 					i(183407),	-- Dread (PET!)
 					i(186212, {	-- Eternas' Braided Waistcord
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 58918,
 				["g"] = {
 					i(186623, {	-- Lost Soul's Mantle
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -267,7 +267,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 63383,
 				["g"] = {
 					i(186625, {	-- Hood of Malevolence
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -281,7 +281,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["g"] = {
 					i(184292),	-- Ancient Elethium Coin (TOY!)
 					i(185892, {	-- Stygia-Etched Decapitator
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -290,7 +290,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 57573,
 				["g"] = {
 					i(186236, {	-- Devourer's Shadehide Jerkin
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -299,7 +299,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 60667,
 				["g"] = {
 					i(186238, {	-- Mantle of the Prime Collector
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -315,7 +315,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 63375,
 				["g"] = {
 					i(186626, {	-- Bloodwicking Bands
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 61519,
 				["g"] = {
 					i(186211, {	-- Pantaloons of the Condemned Bard
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 					o(356555, {	-- Eurydea's Necklace
 						["coord"] = { 26.8, 29.3, THE_MAW },
@@ -385,7 +385,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 63386,
 				["g"] = {
 					i(186240, {	-- Broodmotherhide Cloak
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -394,7 +394,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 60834,
 				["g"] = {
 					i(186613, {	-- Rhovus' Linked Greaves
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 					i(183141),	-- Stygic Magma
 				},
@@ -411,7 +411,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["questID"] = 63371,
 				["g"] = {
 					i(186631, {	-- Emberfused Band
-						["timeline"] = { ADDED_SL_S2 },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -437,7 +437,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					}),
 				},
 			}),
-			n(179805, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S2 } }, {	-- Traitor Balthier
+			n(179805, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Traitor Balthier
 				["coords"] = {
 					{ 67.5, 48.3, THE_MAW },
 					{ 68.8, 45.5, THE_MAW },
@@ -472,7 +472,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(186228),	-- Helm of the Skittish Hero
 				},
 			}),
-			n(177444, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S2 } }, {	-- Ylva <Mate of Guarm>
+			n(177444, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Ylva <Mate of Guarm>
 				["questID"] = 64152,	-- also 62683 after a refresh, not sure which one is 'first time' or if both trigger every time.  didn't get to do the achievement so it's unrelated to that
 				["coord"] = { 66.7, 42.4, THE_MAW },
 				["g"] = {

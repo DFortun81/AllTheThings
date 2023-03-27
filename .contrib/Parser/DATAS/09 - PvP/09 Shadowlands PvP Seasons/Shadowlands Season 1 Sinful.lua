@@ -5,7 +5,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 	header(HEADERS.Achievement, SEASON_SINFUL, {
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount",
 		["g"] = {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 				ach(14685),		-- Combatant: Shadowlands Season 1
 				ach(14686),		-- Challenger: Shadowlands Season 1
 				ach(14687),		-- Rival: Shadowlands Season 1
@@ -32,10 +32,10 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				}),
 				-- Fashion
 				ach(14831, {	-- I Live, I Die, I Queue Again
-					["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2, ADDED_DF_REL }
+					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_DF_REL }
 				}),
 			})),
-			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2, ADDED_DF_REL } }, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_DF_REL } }, {
 				i(184014, {	-- Vicious War Spider [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -62,7 +62,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				title(398),	-- <Name> the Elite Warrior
 				title(29),	-- Gladiator <Name>
 			})),
-			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2, ADDED_DF_REL } }, {
+			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_DF_REL } }, {
 				filter(CLOAKS, {
 					i(178301),	-- Sinful Aspirant's Cape
 					i(175851),	-- Sinful Aspirant's Cloak
@@ -78,7 +78,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(175857),	-- Sinful Aspirant's Silk Treads
 					i(175880),	-- Sinful Aspirant's Silk Wristwraps
 				}),
-				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {
+				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 					i(178293),	-- Sinful Aspirant's Band
 					i(175879),	-- Sinful Aspirant's Ring
 					i(178329),	-- Sinful Aspirant's Signet
@@ -103,7 +103,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(175854),	-- Sinful Aspirant's Chain Vest
 					i(175882),	-- Sinful Aspirant's Chain Wristwraps
 				}),
-				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {
+				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 					i(178299),	-- Sinful Aspirant's Choker
 					i(175885),	-- Sinful Aspirant's Necklace
 					i(178335),	-- Sinful Aspirant's Pendant
@@ -118,7 +118,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(175872),	-- Sinful Aspirant's Plate Shoulders
 					i(175856),	-- Sinful Aspirant's Plate Warboots
 				}),
-				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {
+				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 					i(175884),	-- Sinful Aspirant's Badge of Ferocity
 					i(178334),	-- Sinful Aspirant's Emblem
 					i(178298),	-- Sinful Aspirant's Insignia of Alacrity
@@ -147,7 +147,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(178479),	-- Sinful Aspirant's Warglaive
 				}),
 			})),
-			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2, ADDED_DF_REL } }, {
+			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_DF_REL } }, {
 				filter(CLOAKS, {
 					i(175888),	-- Sinful Gladiator's Cloak
 					i(178353),	-- Sinful Gladiator's Drape
@@ -172,7 +172,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(178354),	-- Sinful Gladiator's Silk Vestments
 					i(175917),	-- Sinful Gladiator's Silk Wristwraps
 				}),
-				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {
+				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 					i(178381),	-- Sinful Gladiator's Band
 					i(175916),	-- Sinful Gladiator's Ring
 					i(178442),	-- Sinful Gladiator's Signet
@@ -213,7 +213,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(175891),	-- Sinful Gladiator's Chain Vest
 					i(175919),	-- Sinful Gladiator's Chain Wristguards
 				}),
-				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {
+				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 					i(178448),	-- Sinful Gladiator's Amulet
 					i(175922),	-- Sinful Gladiator's Necklace
 					i(178387),	-- Sinful Gladiator's Pendant
@@ -236,7 +236,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(178369),	-- Sinful Gladiator's Plate Wargreaves
 					i(175918),	-- Sinful Gladiator's Plate Wristguards
 				}),
-				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {
+				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 					i(175921),	-- Sinful Gladiator's Badge of Ferocity
 					i(178447),	-- Sinful Gladiator's Emblem
 					i(178386),	-- Sinful Gladiator's Insignia of Alacrity
@@ -309,7 +309,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					})),
 				}),
 			})),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 }, ["modID"] = 45 }, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 }, ["modID"] = 45 }, {
 				filter(CLOAKS, {
 					i(175888),	-- Sinful Gladiator's Cloak
 					i(178353),	-- Sinful Gladiator's Drape

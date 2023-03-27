@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(BASTION, {
 		n(VENDORS, {
 			n(160470, {	-- Adjutant Nikos <Ascended Quartermaster>
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(184729),	-- Masque of the Path
 					i(184756),	-- Smoothed Loop of Contemplation
 					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { ADDED_SL_S3 },
+						["timeline"] = { ADDED_9_2_0 },
 						["sym"] = {
 							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
 							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)

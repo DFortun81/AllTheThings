@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	inst(1193, {	-- Sanctum of Domination
 		["isRaid"] = true,
 		["coord"] = { 69.8, 31.8, THE_MAW },
@@ -158,7 +158,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 				}),
 				ach(15110),		-- Dominating the Catwalk
 				-- Fated
-				ach(15667, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Fate of Domination
+				ach(15667, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Fate of Domination
 					crit(1, { -- The Tarragrue
 						["_encounter"] = { 2435, LFR_RAID },
 					}),
@@ -190,7 +190,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 						["_encounter"] = { 2441, LFR_RAID },
 					}),
 				})),
-				ach(15668, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of Domination
+				ach(15668, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of Domination
 					crit(1, { -- The Tarragrue
 						["_encounter"] = { 2435, HEROIC_RAID },
 					}),
@@ -222,7 +222,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 						["_encounter"] = { 2441, HEROIC_RAID },
 					}),
 				})),
-				ach(15669, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of Domination
+				ach(15669, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of Domination
 					crit(1, { -- The Tarragrue
 						["_encounter"] = { 2435, MYTHIC_RAID },
 					}),
@@ -457,7 +457,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 			n(WORLD_QUESTS, {
 				q(66694, {	-- Tempting Fate: Sanctum of Domination
 					["isWorldQuest"] = true,
-					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+					["timeline"] = { ADDED_9_2_5, REMOVED_DF_REL },
 				}),
 			}),
 			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_DF_REL }, {
@@ -1074,7 +1074,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 				e(2441, {	-- Sylvanas Windrunner
 					["crs"] = { 175732 },	-- Sylvanas Windrunner
 					["g"] = {
-						ach(15134, {["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 }}),	-- Ahead of the Curve: Sylvanas Windrunner
+						ach(15134, {["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 }}),	-- Ahead of the Curve: Sylvanas Windrunner
 						i(186398),	-- Edge of Night
 						i(186414),	-- Rae'shalare, Death's Whisper
 						i(186417),	-- Guard of the Sundered Defender
@@ -1296,20 +1296,20 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 						ach(15121, {	-- Mythic: Sylvanas Windrunner
 							title(447),	-- Breaker of Chains
 						}),
-						ach(15197, bubbleDownSelf({["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 } }, {	-- Hall of Fame: Sylvanas (Alliance)
+						ach(15197, bubbleDownSelf({["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Hall of Fame: Sylvanas (Alliance)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(448),	-- <Name>, Famed Bane of the Banshee Queen
 							},
 						})),
-						ach(15196, bubbleDownSelf({["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 } }, {	-- Hall of Fame: Sylvanas (Horde)
+						ach(15196, bubbleDownSelf({["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Hall of Fame: Sylvanas (Horde)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(448),	-- <Name>, Famed Bane of the Banshee Queen
 							},
 						})),
-						ach(15134, {["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 }}),	-- Ahead of the Curve: Sylvanas Windrunner
-						ach(15135, {["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 }}),	-- Cutting Edge: Sylvanas Windrunner
+						ach(15134, {["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 }}),	-- Ahead of the Curve: Sylvanas Windrunner
+						ach(15135, {["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 }}),	-- Cutting Edge: Sylvanas Windrunner
 						i(186642),	-- Vengeance (MOUNT!)
 						i(186398),	-- Edge of Night
 						i(186414),	-- Rae'shalare, Death's Whisper
@@ -1350,7 +1350,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
+root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	inst(1193, {	-- Sanctum of Domination
 		--q(63074),	-- Stygian ember loot >-- seems a too low number for this.
 		q(64604),	-- Stygian Ember from Bonesteel [] (Normal / Heroic)

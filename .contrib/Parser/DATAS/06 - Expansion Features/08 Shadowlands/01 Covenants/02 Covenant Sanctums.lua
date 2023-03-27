@@ -46,7 +46,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				ach(15647, sharedDataSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Dead Men Tell Some Tales
+				ach(15647, sharedDataSelf({ ["timeline"] = { ADDED_9_2_5 } }, {	-- Dead Men Tell Some Tales
 					crit(1, {	--  Kyrian Campaign
 						["sourceQuests"] = { 62557 },	-- Our Realm Reclaimed
 					}),
@@ -68,7 +68,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["timeline"] = { "added 9.1.5" },
 				}),
 				ach(15646, {	-- Re-Re-Re-Renowned
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_9_2_5 },
 				}),
 				ach(14632),		-- Conducting Anima
 				ach(14639),		-- Dedication to the Restoration
@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 				ach(15024),	-- Denying the Drought
 				ach(15025),	-- Sanctum Superior
 				ach(15649, {	-- Shadowlands Dilettante
-					["timeline"] = { ADDED_SL_S4},
+					["timeline"] = { ADDED_9_2_5},
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {
 						{"meta_achievement",

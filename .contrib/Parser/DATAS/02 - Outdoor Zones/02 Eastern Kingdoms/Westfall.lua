@@ -1350,7 +1350,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(TREASURES, {
-				o(357515, sharedDataSelf({ ["timeline"] = { ADDED_SL_REL } }, {	-- Sack of Oats
+				o(357515, sharedDataSelf({ ["timeline"] = { ADDED_9_0_2 } }, {	-- Sack of Oats
 					["coords"] = {
 						{ 43.1, 37.3, WESTFALL },
 						{ 44.9, 35.3, WESTFALL },

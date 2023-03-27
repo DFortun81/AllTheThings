@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local SANDWORN_RELIC = 190189;
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(VENDORS, {
 			n(185713, {	-- Hadja
@@ -347,7 +347,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, 
 					i(190584),	-- Memory of Unity (DK)
 					i(190587),	-- Memory of Unity (DH)
 					i(190588),	-- Memory of Unity (DRUID)
-					i(199552, { ["timeline"] = { ADDED_DF_PRE } }),	-- Memory of Unity (EVOKER)
+					i(199552, { ["timeline"] = { ADDED_10_0_0 } }),	-- Memory of Unity (EVOKER)
 					i(190589),	-- Memory of Unity (HUNTER)
 					i(190590),	-- Memory of Unity (MAGE)
 					i(190591),	-- Memory of Unity (MONK)

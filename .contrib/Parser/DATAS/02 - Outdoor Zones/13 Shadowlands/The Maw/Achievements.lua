@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(THE_MAW, {
 		n(ACHIEVEMENTS, {
 			ach(14744, {	-- Better to be Lucky than Dead
@@ -475,7 +475,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					["provider"] = { "i", 184901 },
 				}),
 			}),
-			ach(15648, sharedDataSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Walking in Maw-mphis
+			ach(15648, sharedDataSelf({ ["timeline"] = { ADDED_9_2_5 } }, {	-- Walking in Maw-mphis
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
 					14895,	-- 'Ghast Five

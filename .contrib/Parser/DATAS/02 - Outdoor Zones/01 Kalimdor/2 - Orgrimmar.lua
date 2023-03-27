@@ -2899,7 +2899,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(62265, {	-- A New Adventure Awaits
 					["description"] = "This quest is automatically offered upon reaching the specified level.",
-					["timeline"] = { "created 9.0.2", ADDED_DF_PRE2 },
+					["timeline"] = { "created 9.0.2", ADDED_10_0_2 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25160, {	-- A Present for Lila
@@ -2933,7 +2933,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
 					["coord"] = { 70.9, 49.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { ADDED_SL_PRE },
+					["timeline"] = { ADDED_9_0_1 },
 				}),
 				q(7832, {	-- Additional Runecloth [Darkspear Trolls]
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
@@ -3039,7 +3039,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
 					["coord"] = { 48.3, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { ADDED_SL_PRE },
+					["timeline"] = { ADDED_9_0_1 },
 					["g"] = {
 						i(178942),	-- War-Chain of the Horde
 					},
@@ -3467,11 +3467,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 187758,	-- Zaa'je
 					["sourceQuest"] = 66253,	-- Stolen Shipments
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_9_2_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(191682, {	-- Explosive Pie
-							["timeline"] = { ADDED_SL_S4 },
+							["timeline"] = { ADDED_9_2_5 },
 						}),
 					},
 				}),
@@ -3839,11 +3839,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(66253, {	-- Stolen Shipments
 					["qg"] = 187758,	-- Zaa'je
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_9_2_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(191408, {	-- Explosive Pie
-							["timeline"] = { ADDED_SL_S4 },
+							["timeline"] = { ADDED_9_2_5 },
 						}),
 					},
 				}),

@@ -2863,7 +2863,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(62250, {	-- A New Adventure Awaits
 					["description"] = "This quest is automatically offered upon reaching the specified level.",
-					["timeline"] = { "created 9.0.2", ADDED_DF_PRE2 },
+					["timeline"] = { "created 9.0.2", ADDED_10_0_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47202, {	-- A Personal Message
@@ -2945,7 +2945,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 163211 },	-- Henry Garrick
 					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { ADDED_SL_PRE },
+					["timeline"] = { ADDED_9_0_1 },
 				}),
 				q(7796, {	-- Additional Runecloth [Stormwind]
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
@@ -3165,7 +3165,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 163219 },	-- Captain Garrick
 					["coord"] = { 85.2, 32.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { ADDED_SL_PRE },
+					["timeline"] = { ADDED_9_0_1 },
 					["g"] = {
 						i(178941),	-- Alliance Dog Tags,
 					}
@@ -3762,11 +3762,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 188342,	-- Onnesa
 					["sourceQuest"] = 66390,	-- Missing Merchandise
 					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_9_2_5 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(191865, {	-- Bottle of Briny Seawater
-							["timeline"] = { ADDED_SL_S4 },
+							["timeline"] = { ADDED_9_2_5 },
 						}),
 					},
 				}),
@@ -4080,7 +4080,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(65896, {	-- Let the Healing Begin
 					["qg"] = 190830,	-- Otan Tennoh
 					["coord"] = { 44.2, 57.0, STORMWIND_CITY },
-					["timeline"] = { ADDED_DF_PRE2 },
+					["timeline"] = { ADDED_10_0_2 },
 					["races"] = { DRACTHYR_ALLIANCE },
 					["classes"] = { EVOKER },
 				}),
@@ -4273,7 +4273,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(66390, {	-- Missing Merchandise
 					["qg"] = 188342,	-- Onnesa
 					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_9_2_5 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27038, {	-- Missing Parts
@@ -4978,7 +4978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 165395 },	-- Anduin Wrynn
 					["coord"] = { 85.8, 31.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { ADDED_SL_PRE },
+					["timeline"] = { ADDED_9_0_1 },
 				}),
 				q(27072, {	-- The Old Barracks
 					["qg"] = 50049,	-- Jack Bauden <SI:7 Agent>
