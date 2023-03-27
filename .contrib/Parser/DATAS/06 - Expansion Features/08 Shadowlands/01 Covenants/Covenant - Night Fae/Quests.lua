@@ -121,7 +121,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 176096 },	-- Laurel
 				["coord"] = { 34.0, 37.0, THE_TRUNK },
 				["timeline"] = {
-					"added 9.0.2.36734",
+					ADDED_SL_REL,
 					"removed 9.1.0.39226",
 				},
 			}),
@@ -136,7 +136,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 176096 },	-- Laurel
 				["coord"] = { 34.0, 37.0, THE_TRUNK },
 				["timeline"] = {
-					"added 9.0.2.36734",
+					ADDED_SL_REL,
 					"removed 9.1.0.39226",
 				},
 			}),

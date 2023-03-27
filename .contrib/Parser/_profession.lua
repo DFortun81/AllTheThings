@@ -708,29 +708,29 @@ COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedDa
 		["collectible"] = false,
 		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }, },
-		["timeline"] = { REMOVED_DF_0_5 },
+		["timeline"] = { REMOVED_10_0_5 },
 	}),
 	i(116745, {	-- Recipe: Steelforged Essence (RECIPE!)
 		["collectible"] = false,
 		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }, },
-		["timeline"] = { REMOVED_DF_0_5 },
+		["timeline"] = { REMOVED_10_0_5 },
 	}),
 	i(202223, {	-- Recipe: Impressive Steelforged Essence
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }, },
-		["timeline"] = { ADDED_DF_0_5 },
+		["timeline"] = { ADDED_10_0_5 },
 	}),
 	i(202224, {	-- Recipe: Remarkable Steelforged Essence
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }, },
-		["timeline"] = { ADDED_DF_0_5 },
+		["timeline"] = { ADDED_10_0_5 },
 	}),
 	i(202226, {	-- Recipe: Impressive Truesteel Essence
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }, },
-		["timeline"] = { ADDED_DF_0_5 },
+		["timeline"] = { ADDED_10_0_5 },
 	}),
 	i(202227, {	-- Recipe: Remarkable Truesteel Essence
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }, },
-		["timeline"] = { ADDED_DF_0_5 },
+		["timeline"] = { ADDED_10_0_5 },
 	}),
 }));
 ----------------

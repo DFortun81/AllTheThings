@@ -225,10 +225,10 @@ root(ROOTS.WorldDrops, {
 			}),
 			i(5758),	-- Mithril Lockbox
 			i(180532, {	-- Oxxein Lockbox
-				["timeline"] = { "added 9.0.1.36216" },
+				["timeline"] = { ADDED_SL_REL },
 			}),
 			i(180522, {	-- Phaedrum Lockbox
-				["timeline"] = { "added 9.0.1.36216" },
+				["timeline"] = { ADDED_SL_REL },
 			}),
 			i(43575, {	-- Reinforced Junkbox
 				["timeline"] = { "added 3.0.2.8905" },
@@ -269,7 +269,7 @@ root(ROOTS.WorldDrops, {
 				-- },
 			}),
 			i(180533, {	-- Solenium Lockbox
-				["timeline"] = { "added 9.0.1.36216" },
+				["timeline"] = { ADDED_SL_REL },
 			}),
 			i(4637,  {	-- Steel Lockbox
 				i(11204),	-- Formula: Enchant Bracer - Greater Versatility / CLASSIC: Formula: Enchant Bracer - Greater Versatility (RECIPE!)
@@ -371,7 +371,7 @@ root(ROOTS.WorldDrops, {
 				i(12024),	-- Vanadium Talisman
 			}),
 			i(179311, {	-- Synvir Lockbox
-				["timeline"] = { "added 9.0.1.36216" },
+				["timeline"] = { ADDED_SL_REL },
 			}),
 			i(5759, {	-- Thorium Lockbox
 

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local ATTENDANTS_TOKEN_OF_MERIT = 199202;	-- Shadowlands Season 4
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(ORIBOS, {
 		n(VENDORS, {
 			n(169524, {	-- Acquirer Ta'gosh <Curiosity Vendor>
@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					{"invtype", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 				},
 			}),
-			n(177829, bubbleDownSelf({ ["timeline"] = { "added 9.0.5" } }, {	-- Ko'tul <Exchange Specialist>
+			n(177829, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5 } }, {	-- Ko'tul <Exchange Specialist>
 				["coord"] = { 63.8, 36.0, ORIBOS },
 				["g"] = {
 					i(187254, {	-- Arrangement of Anima
@@ -327,21 +327,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					}),
 					i(185832, {	-- Shipment of Elethium Ore
 						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
-						["timeline"] = { "added 9.0.5", REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_0_5, REMOVED_DF_REL },
 						["g"] = {
 							i(171833),	-- Elethium Ore
 						},
 					}),
 					i(185765, {	-- Shipment of Heavy Callous Hide
 						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
-						["timeline"] = { "added 9.0.5", REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_0_5, REMOVED_DF_REL },
 						["g"] = {
 							i(172097),	-- Heavy Callous Hide
 						},
 					}),
 					i(185833, {	-- Shipment of Lightless Silk
 						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
-						["timeline"] = { "added 9.0.5", REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_0_5, REMOVED_DF_REL },
 						["g"] = {
 							i(173204),	-- Lightless Silk
 						},
@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					}),
 				},
 			}),
-			n(181681, bubbleDownSelf({ ["timeline"] = { "added 9.0.5" } }, {	-- Tu'kol <Anima Exchange Specialist>
+			n(181681, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5 } }, {	-- Tu'kol <Anima Exchange Specialist>
 				["coord"] = { 63.8, 36.0, ORIBOS },
 				["g"] = {
 					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Korthite Crystal Geode
@@ -428,21 +428,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					}),
 					i(185832, {	-- Shipment of Elethium Ore
 						["cost"] = { { "c", ANIMA, 7500 } },
-						["timeline"] = { "added 9.0.5" },
+						["timeline"] = { ADDED_9_0_5 },
 						["g"] = {
 							i(171833),	-- Elethium Ore
 						},
 					}),
 					i(185765, {	-- Shipment of Heavy Callous Hide
 						["cost"] = { { "c", ANIMA, 7500 } },
-						["timeline"] = { "added 9.0.5" },
+						["timeline"] = { ADDED_9_0_5 },
 						["g"] = {
 							i(172097),	-- Heavy Callous Hide
 						},
 					}),
 					i(185833, {	-- Shipment of Lightless Silk
 						["cost"] = { { "c", ANIMA, 7500 } },
-						["timeline"] = { "added 9.0.5" },
+						["timeline"] = { ADDED_9_0_5 },
 						["g"] = {
 							i(173204),	-- Lightless Silk
 						},

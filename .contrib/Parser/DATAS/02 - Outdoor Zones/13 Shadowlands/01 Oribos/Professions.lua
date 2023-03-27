@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(ORIBOS, {
 		n(PROFESSIONS, {
 			prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY }, {

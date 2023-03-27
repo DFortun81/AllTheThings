@@ -453,7 +453,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 70.3, ARCHONS_RISE },
 				["timeline"] = {
-					"added 9.0.2.36734",
+					ADDED_SL_REL,
 					"removed 9.1.0.39226",
 				},
 			}),
@@ -467,7 +467,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 70.3, ARCHONS_RISE },
 				["timeline"] = {
-					"added 9.0.2.36734",
+					ADDED_SL_REL,
 					"removed 9.1.0.39226",
 				},
 			}),
@@ -649,21 +649,21 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["isWeekly"] = true,
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
-				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+				["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
 			}),
 			q(62861, {	-- Return Lost Souls (10 Souls)
 				["description"] = "Requires Renown 15.",
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["isWeekly"] = true,
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
-				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+				["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
 			}),
 			q(62862, {	-- Return Lost Souls (15 Souls)
 				["description"] = "Requires Renown 24.",
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["isWeekly"] = true,
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
-				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+				["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
 			}),
 			q(62863, {	-- Return Lost Souls (20 Souls)
 				["description"] = "Requires Renown 32.",
