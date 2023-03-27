@@ -2209,14 +2209,14 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = {
 						"added 8.3.0",
-						REMOVED_9_0_1"
+						REMOVED_9_0_1,
 					},
 				}),
 				i(173713, {	-- Vicious White Bonesteed (MOUNT!)
 					["races"] = HORDE_ONLY,
 					["timeline"] = {
 						"added 8.3.0",
-						REMOVED_9_0_1
+						REMOVED_9_0_1,
 					},
 				}),
 			}),
