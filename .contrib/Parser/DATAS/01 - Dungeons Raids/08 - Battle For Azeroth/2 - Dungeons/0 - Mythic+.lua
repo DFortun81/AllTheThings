@@ -52,7 +52,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				crit(2),		-- Waycrest Manor
 			})),
 			header(HEADERS.Achievement, SEASON_INFESTED, bubbleDownSelf({
-				["timeline"] = { ADDED_BFA_REL, REMOVED_BFA_S2 },
+				["timeline"] = { ADDED_BFA_REL, REMOVED_8_1_0 },
 			},{
 				ach(13078, {	-- Realm First! Battle for Azeroth Keystone Master
 					["u"] = REMOVED_FROM_GAME,
@@ -61,19 +61,19 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				ach(13080),	-- Battle for Azeroth Keystone Master: Season One
 			})),
 			header(HEADERS.Achievement, SEASON_REAPING, bubbleDownSelf({
-				["timeline"] = { ADDED_BFA_S2, REMOVED_BFA_S3 },
+				["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 },
 			},{
 				ach(13448),	-- Battle for Azeroth Keystone Conqueror: Season Two
 				ach(13449),	-- Battle for Azeroth Keystone Master: Season Two
 			})),
 			header(HEADERS.Achievement, SEASON_BEGUILING, bubbleDownSelf({
-				["timeline"] = { ADDED_BFA_S3, REMOVED_BFA_S4 },
+				["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 },
 			},{
 				ach(13780),	-- Battle for Azeroth Keystone Conqueror: Season Three
 				ach(13781),	-- Battle for Azeroth Keystone Master: Season Three
 			})),
 			header(HEADERS.Achievement, SEASON_AWAKENED, bubbleDownSelf({
-				["timeline"] = { ADDED_BFA_S4, REMOVED_9_0_1 },
+				["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 			},{
 				ach(14144, {	-- Battle for Azeroth Keystone Conqueror: Season Four
 					title(418),	-- <Name> the Awakened (TITLE!)
