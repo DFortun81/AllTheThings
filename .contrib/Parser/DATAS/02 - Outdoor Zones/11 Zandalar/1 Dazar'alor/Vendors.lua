@@ -1209,7 +1209,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			n(143138, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 				["coord"] = { 55.0, 86.8, DAZARALOR },
-				["sym"] = {{ "fill" }},	-- 
+				["sym"] = {{ "fill" }},	--
 			}),
 			n(122695, {	-- Seshuli <Jewelcrafting Trainer>
 				["coord"] = { 47.0, 37.8, DAZARALOR },
@@ -1236,7 +1236,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["g"] = {
 					i(163042, {	-- Mighty Caravan Brutosaur (MOUNT!)
 						["cost"] = 50000000000,	-- 5,000,000g
-						["timeline"] = { "added 8.0.1", "removed 9.0.1"}
+						["timeline"] = { "added 8.0.1", REMOVED_9_0_1 },
 					}),
 					i(159139),	-- Lightweight Skyterror Barding
 					i(163568, {	-- Lost Platysaur (PET!)

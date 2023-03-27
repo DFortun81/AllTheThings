@@ -2644,14 +2644,14 @@ root(ROOTS.Zones, {
 					}),
 					q(49862, {	-- To Outland! [Alliance]
 						["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
-						["timeline"] = { "added 7.3.5.25600", "removed 9.0" },
+						["timeline"] = { "added 7.3.5.25600", REMOVED_9_0_1 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(49816, {	-- To Outland! [Horde]
 						["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
-						["timeline"] = { "added 7.3.5.25600", "removed 9.0" },
+						["timeline"] = { "added 7.3.5.25600", REMOVED_9_0_1 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),

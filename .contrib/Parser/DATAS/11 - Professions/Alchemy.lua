@@ -2068,7 +2068,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["recipeID"] = 188676,	-- Elemental Distillate
-					["timeline"] = { "added 6.2.0", "removed 9.0.1" },
+					["timeline"] = { "added 6.2.0", REMOVED_9_0_1 },
 				},
 				{
 					["name"] = "Stone of Fire",
@@ -2088,7 +2088,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["recipeID"] = 188674,	-- Wildswater
-					["timeline"] = { "added 6.2.0", "removed 9.0.1" },
+					["timeline"] = { "added 6.2.0", REMOVED_9_0_1 },
 				},
 			}
 		}

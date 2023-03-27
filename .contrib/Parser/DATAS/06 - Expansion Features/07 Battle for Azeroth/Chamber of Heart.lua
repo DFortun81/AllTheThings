@@ -113,7 +113,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					["qg"] = 142930,	-- Halford Wyrmbane
 					["sourceQuest"] = 51795,	-- The Battle for Lordaeron
 					["coord"] = { 27.7, 21.5, STORMWIND_CITY },
-					["timeline"] = { "added 8.0.1.27291", "removed 9.0.1" },
+					["timeline"] = { "added 8.0.1.27291", REMOVED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53028, {	-- A Dying World (A/H)

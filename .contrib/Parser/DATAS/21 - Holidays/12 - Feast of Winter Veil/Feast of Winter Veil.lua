@@ -1082,7 +1082,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 172225 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2019.",
-				["timeline"] = { "added 8.2.5.31961", "removed 9.0.1.36230" },
+				["timeline"] = { "added 8.2.5.31961", "removed 9.0.1.36230" },	-- Should been removed earlier?
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["groups"] = {
@@ -1408,7 +1408,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 172224 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2019.",
-				["timeline"] = { "added 8.2.5.31958", "removed 9.0.1.36216" },
+				["timeline"] = { "added 8.2.5.31958", "removed 9.0.1.36216" },	-- Should been removed earlier?
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["lvl"] = 10,

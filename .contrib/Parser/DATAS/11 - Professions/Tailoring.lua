@@ -3397,17 +3397,17 @@ profession(TAILORING, {
 				{
 					["name"] = "Hexweave Essence",
 					["recipeID"] = 168855,
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 				},
 				{
 					["name"] = "Mighty Hexweave Essence",
 					["recipeID"] = 187492,
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 				},
 				{
 					["name"] = "Savage Hexweave Essence",
 					["recipeID"] = 187516,
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 				},
 			}
 		},

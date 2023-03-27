@@ -722,22 +722,22 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		cat(361, {	-- Item Enhancers
 			r(187519, {	-- Savage Ensorcelled Tarot
-				["timeline"] = { "removed 9.0.1" },
+				["timeline"] = { REMOVED_9_0_1 },
 			}),
 			r(187518, {	-- Savage Weapon Crystal
-				["timeline"] = { "removed 9.0.1" },
+				["timeline"] = { REMOVED_9_0_1 },
 			}),
 			r(187495, {	-- Mighty Ensorcelled Tarot
-				["timeline"] = { "removed 9.0.1" },
+				["timeline"] = { REMOVED_9_0_1 },
 			}),
 			r(187494, {	-- Mighty Weapon Crystal
-				["timeline"] = { "removed 9.0.1" },
+				["timeline"] = { REMOVED_9_0_1 },
 			}),
 			r(178248, {	-- Ensorcelled Tarot
-				["timeline"] = { "removed 9.0.1" },
+				["timeline"] = { REMOVED_9_0_1 },
 			}),
 			r(166366, {	-- Weapon Crystal
-				["timeline"] = { "removed 9.0.1" },
+				["timeline"] = { REMOVED_9_0_1 },
 			}),
 			r(397866, {	-- Impressive Weapon Crystal
 				["timeline"] = { ADDED_10_0_5 },
@@ -1494,13 +1494,13 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 8.1.0", "removed 9.0.1" },	-- Might no be correct removed patch
+				["timeline"] = { "added 8.1.0", REMOVED_9_0_1 },	-- Might no be correct removed patch
 			}),
 			q(54478, {	-- Inscribed Methods (H)
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
 				["coord"] = { 42.3, 39.7, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 8.1.0", "removed 9.0.1" },	-- Might no be correct removed patch
+				["timeline"] = { "added 8.1.0", REMOVED_9_0_1 },	-- Might no be correct removed patch
 			}),
 			q(40537, { --Drawing Blood (A)
 				["description"] = "This quest chain requires 150 skill in Kul Tiran Inscription.",

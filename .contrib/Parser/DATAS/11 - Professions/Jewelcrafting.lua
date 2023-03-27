@@ -3910,17 +3910,17 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			["groups"] = {
 				{
 					["name"] = "Mighty Taladite Amplifier",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187493,
 				},
 				{
 					["name"] = "Savage Taladite Amplifier",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187517,
 				},
 				{
 					["name"] = "Taladite Amplifier",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 170702,
 				},
 				{

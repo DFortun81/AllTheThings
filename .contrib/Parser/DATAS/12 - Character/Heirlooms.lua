@@ -219,7 +219,7 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 			-- TODO: more accurate timeline updates
 			["timeline"] = {
 				"added 7.2", "removed 8.0",
-				"added 8.2", "removed 9.0",
+				"added 8.2", REMOVED_9_0_1,
 			},
 		}),
 		un(REMOVED_FROM_GAME, i(79131)),	-- Burnished Warden Staff

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, tier(BFA_TIER, {
 	n(MYTHIC_PLUS, {
-		n(AZERITE_ESSENCES, bubbleDownSelf({ ["timeline"] = { "added 8.2.0.30918", "removed 9.0.0" } }, {
+		n(AZERITE_ESSENCES, bubbleDownSelf({ ["timeline"] = { "added 8.2.0.30918", REMOVED_9_0_1 } }, {
 			i(169491),	-- Focused Life Anima
 			i(168399, {	-- Fetish of the Dark Caverns (Rank 1)
 				["description"] = "Requires completing a +4 Mythic and looting the chest at the end of the dungeon.\n",

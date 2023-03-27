@@ -4976,7 +4976,7 @@ profession(LEATHERWORKING, {
 			["groups"] = {
 				{
 					["recipeID"] = 171286,	-- Burnished Essence
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 				},
 				{
 					["name"] = "Leather Refurbishing Kit",
@@ -4984,11 +4984,11 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["recipeID"] = 187489,	-- Mighty Burnished Essence
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 				},
 				{
 					["recipeID"] = 187513,	-- Savage Burnished Essence
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 				},
 			},
 		},

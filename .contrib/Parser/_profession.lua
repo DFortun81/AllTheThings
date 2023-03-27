@@ -1327,7 +1327,7 @@ NAZJATAR_ENCHANTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline
 		r(298437),	-- Oceanic Restoration [Rank 2]
 	}),
 }));
-SL_ENCHANTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { "added 9.0.2" } }, {
+SL_ENCHANTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_SL_REL } }, {
 	r(309832),	-- Shadowlands Enchanting
 	r(324750, {["collectible"] = false}),	-- Disenchant
 	cat(ARMOR_ENCHANTMENTS, {

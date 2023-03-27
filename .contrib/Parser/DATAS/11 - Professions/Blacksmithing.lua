@@ -4088,32 +4088,32 @@ profession(BLACKSMITHING, {
 			["groups"] = {
 				{
 					["name"] = "Savage Truesteel Essence",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187515,
 				},
 				{
 					["name"] = "Savage Steelforged Essence",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187514,
 				},
 				{
 					["name"] = "Mighty Truesteel Essence",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187491,
 				},
 				{
 					["name"] = "Mighty Steelforged Essence",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187490,
 				},
 				{
 					["name"] = "Steelforged Essence",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 171710,
 				},
 				{
 					["name"] = "Truesteel Essence",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 171708,
 				},
 				{

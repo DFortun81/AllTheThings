@@ -1823,12 +1823,12 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Advanced Muzzlesprocket",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187496,
 				},
 				{
 					["name"] = "Bi-Directional Fizzle Reducer",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187497,
 				},
 				{
@@ -1849,12 +1849,12 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Infrablue-Blocker Lenses",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187521,
 				},
 				{
 					["name"] = "Linkgrease Locksprocket",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 169076,
 				},
 				{
@@ -1891,12 +1891,12 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Taladite Firing Pin",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187520,
 				},
 				{
 					["name"] = "True Iron Trigger",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 177363,
 				},
 				{

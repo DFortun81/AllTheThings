@@ -222,7 +222,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 3057 },	-- Cairne Bloodhoof <High Chieftain>
 			-- #endif
 		},
-		["timeline"] = { "removed 9.0.1" },
+		["timeline"] = { REMOVED_9_0_1 },
 		["maps"] = { THUNDER_BLUFF },
 		["races"] = ALLIANCE_ONLY,
 	}),
@@ -460,7 +460,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "n", 29611 },	-- King Varian Wrynn <King of Stormwind>
 			-- #endif
 		},
-		["timeline"] = { "removed 9.0.1" },
+		["timeline"] = { REMOVED_9_0_1 },
 		["maps"] = { STORMWIND_CITY },
 		["races"] = HORDE_ONLY,
 	}),

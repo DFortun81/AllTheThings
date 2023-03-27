@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
 						"added 6.1.0.19480",
-						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -496,7 +496,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
 						"added 6.1.0.19480",
-						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -799,7 +799,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
 						"added 6.1.0.19480",
-						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1066,7 +1066,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
 						"added 6.1.0.19480",
-						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

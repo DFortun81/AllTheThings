@@ -222,7 +222,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		n(WEAPONS, {
 			i(2508),	-- Old Blunderbuss
 			i(20982, {	-- Sharp Dagger
-				["timeline"] = { "added 2.0.1.6180", "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(20980, {	-- Warder's Shortbow
 				["timeline"] = { "added 2.0.1.6180" }
@@ -234,10 +234,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { "added 2.0.1.6180" }
 			}),
 			i(2504, {	-- Worn Shortbow
-				["timeline"] = { "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(57243, {	-- Worn Spear
-				["timeline"] = { "added 4.0.1.13082", "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { "added 4.0.1.13082", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 		}),
 		n(ALLIED_RACES, {
@@ -557,7 +557,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		n(WEAPONS, {
 			i(52557, {	-- Battleworn Hammer
-				["timeline"] = { "added 4.0.1", "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { "added 4.0.1", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(36),	-- Worn Mace
 			i(2362),	-- Worn Wooden Shield
@@ -732,7 +732,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(35),	-- Bent Staff
 			i(3661),	-- Handcrafted Staff
 			i(20981, {	-- Neophyte's Mace
-				["timeline"] = { "added 2.0.1.6180", "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 		}),
 		n(ALLIED_RACES, {
@@ -869,10 +869,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		n(WEAPONS, {
 			i(20977, {	-- Recruit's Shortsword
-				["timeline"] = { "added 4.0.1", "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { "added 4.0.1", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(20982, {	-- Sharp Dagger
-				["timeline"] = { "added 2.0.1.6180", "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(50057, {	-- Sharp Dirk
 				["timeline"] = { "added 3.3.0.10571" }
@@ -1214,10 +1214,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		n(WEAPONS, {
 			i(12282, {	-- Worn Battleaxe
-				["timeline"] = { "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(49778, {	-- Worn Greatsword
-				["timeline"] = { "added 2.0.1.6180", "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(25),	-- Worn Shortsword
 			i(2362),	-- Worn Wooden Shield
@@ -1325,13 +1325,13 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	}),
 	n(WEAPONS, {	-- These were used and changed so many times on different classes, that I leave them here.
 		i(23346, {	-- Battleworn Claymore
-			["timeline"] = { "added 2.0.1.6180", "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+			["timeline"] = { "added 2.0.1.6180", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 		}),
 		i(2361, {	-- Battleworn Hammer
-			["timeline"] = { "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+			["timeline"] = { REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 		}),
 		i(37, {	-- Worn Axe
-			["timeline"] = { "removed 9.0.1" }	-- TODO: I am not sure when this got removed.
+			["timeline"] = { REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 		}),
 	}),
 }));

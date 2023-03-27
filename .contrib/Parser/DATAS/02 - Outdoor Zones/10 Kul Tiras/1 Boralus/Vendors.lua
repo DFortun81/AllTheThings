@@ -2528,7 +2528,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["g"] = {
 					i(163042, {	-- Mighty Caravan Brutosaur (MOUNT!)
 						["cost"] = 50000000000,	-- 5,000,000g
-						["timeline"] = { "added 8.0.1", "removed 9.0.1"}
+						["timeline"] = { "added 8.0.1", REMOVED_9_0_1 },
 					}),
 					i(163568, {	-- Lost Platysaur (PET!)
 						["cost"] = 1000000000,	-- 100,000g

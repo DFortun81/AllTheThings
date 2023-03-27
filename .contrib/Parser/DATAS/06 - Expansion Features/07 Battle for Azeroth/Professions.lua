@@ -216,13 +216,13 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 				["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>
 				["coord"] = { 74.1, 11.4, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 8.1.0", "removed 9.0.1" },	-- Might no be correct removed patch
+				["timeline"] = { "added 8.1.0", REMOVED_9_0_1 },	-- Might no be correct removed patch
 			}),
 			q(54474, {	-- Enchanted Formulae (H)
 				["provider"] = { "n", 122702 },	-- Enchantress Quinni <Enchanting Trainer>
 				["coord"] = { 47.0, 35.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 8.1.0", "removed 9.0.1" },	-- Might no be correct removed patch
+				["timeline"] = { "added 8.1.0", REMOVED_9_0_1 },	-- Might no be correct removed patch
 			}),
 			q(54005, {	-- What the Drust Knew (A)
 				["description"] = "This quest chain requires 150 in Kul Tiran Enchanting.",
