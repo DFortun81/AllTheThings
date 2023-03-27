@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 202662 },	-- Kazure
 					["coord"] = { 42.2, 40.7, VALDRAKKEN },
 					["isWeekly"] = true,
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 				}),
 				q(72646, {	-- Sparks of Life: The Waking Shores
 					["provider"] = { "n", 199376 },	-- Ailith Stonebreeze
@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 44.3, 36.6, VALDRAKKEN },
 					["g"] = {
 						header(HEADERS.Achievement, SEASON_CRIMSON, bubbleDownSelf({
-							["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 },
+							["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 },
 						},{
 							["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
 							["g"] = {
@@ -990,7 +990,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 45.9, 38.7, VALDRAKKEN },
 					["g"] = {
 						header(HEADERS.Achievement, SEASON_CRIMSON, bubbleDownSelf({
-							["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 },
+							["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 },
 						},{
 							["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
 							["g"] = {
@@ -1400,7 +1400,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 						}),
 						filter(RECIPES, sharedData({
 							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
-							["timeline"] = { ADDED_DF_0_5 },
+							["timeline"] = { ADDED_10_0_5 },
 						}, {
 							i(203380),	-- Technique: Crimson Combatant's Emblem
 							i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity
@@ -1430,7 +1430,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {
 						header(HEADERS.Achievement, SEASON_CRIMSON, bubbleDownSelf({
-							["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 },
+							["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 },
 						},{
 							["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
 							["g"] = {

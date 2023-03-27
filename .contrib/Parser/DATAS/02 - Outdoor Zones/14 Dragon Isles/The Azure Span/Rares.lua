@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(201558,	-- Malgain Rockknell
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 56.0, 67.6, THE_AZURE_SPAN },
 				["questID"] = 74531,
 				["g"] = {
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73884,
 			}),
 			n(201561,	-- Motivator Krathos
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 43.9, 30.9, THE_AZURE_SPAN },
 				["questID"] = 74544,
 				["g"] = {
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(201556,	-- Waterpots
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 57.2, 64.6, THE_AZURE_SPAN },
 				["questID"] = 74535,
 				["g"] = {

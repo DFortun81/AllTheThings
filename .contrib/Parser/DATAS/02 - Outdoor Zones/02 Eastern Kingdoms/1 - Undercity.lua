@@ -1388,11 +1388,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(204336, {	-- Awakened Heirloom Armor Casing
-								["timeline"] = { ADDED_DF_0_7 },
+								["timeline"] = { ADDED_10_0_7 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(204337, {	-- Awakened Heirloom Scabbard
-								["timeline"] = { ADDED_DF_0_7 },
+								["timeline"] = { ADDED_10_0_7 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 						}),

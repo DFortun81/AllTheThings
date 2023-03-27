@@ -206,28 +206,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 200686, 2 } },	-- 2x Primal Focus
 				["repeatable"] = true,
-				["timeline"] = { ADDED_DF_0_7 },
+				["timeline"] = { ADDED_10_0_7 },
 			}),
 			q(75166, {	-- In Need of Many Primal Foci
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 200686, 10 } },	-- 10x Primal Focus
 				["repeatable"] = true,
-				["timeline"] = { ADDED_DF_0_7 },
+				["timeline"] = { ADDED_10_0_7 },
 			}),
 			q(75165, {	-- In Need of Concentrated Primal Foci
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 200686, 1 } },	-- 1x Concentrated Primal Focus
 				["repeatable"] = true,
-				["timeline"] = { ADDED_DF_0_7 },
+				["timeline"] = { ADDED_10_0_7 },
 			}),
 			q(75167, {	-- In Need of Many Concentrated Primal Foci
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 190455, 10 } },	-- 10x Concentrated Primal Focus
 				["repeatable"] = true,
-				["timeline"] = { ADDED_DF_0_7 },
+				["timeline"] = { ADDED_10_0_7 },
 			}),
 		}),
 		n(QUESTS, sharedData({

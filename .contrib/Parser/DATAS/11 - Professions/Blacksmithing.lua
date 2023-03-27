@@ -4019,12 +4019,12 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Impressive Steelforged Essence",
 					["recipeID"] = 397853,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Impressive Truesteel Essence",
 					["recipeID"] = 397856,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Relic of the Past I",
@@ -4049,12 +4049,12 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Remarkable Steelforged Essence",
 					["recipeID"] = 397855,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Remarkable Truesteel Essence",
 					["recipeID"] = 397857,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 			},
 		},
@@ -4547,7 +4547,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Demonsteel Pauldrons",
-					["timeline"] = { "removed 8.0.1", ADDED_DF_0_7 },
+					["timeline"] = { "removed 8.0.1", ADDED_10_0_7 },
 					["previousRecipeID"] = 182976,
 					["recipeID"] = 182984,
 				},

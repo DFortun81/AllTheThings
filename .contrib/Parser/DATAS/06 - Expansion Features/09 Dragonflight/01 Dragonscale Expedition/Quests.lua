@@ -392,7 +392,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
 				["g"] = {
 					i(197358, {	-- Renewed Proto-Drake: Curved Spiked Brow (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					i(197395),	-- Renewed Proto-Drake: Harrier Pattern (DM!)
 					i(197402),	-- Renewed Proto-Drake: Spiked Club Tail (DM!)
@@ -703,7 +703,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199472),	-- Overflowing Dragon Expedition Supply Pack
 					-- #else
 					i(204378, {	-- Brimming Dragonscale Expedition Supply Pack
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					-- #endif
 				},
@@ -816,7 +816,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TI
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		q(73696),	-- Flag at 24.4, 55.6, THE_FORBIDDEN_REACH
 		q(73699),	-- Flag at 55.3, 26.4, THE_FORBIDDEN_REACH

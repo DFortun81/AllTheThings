@@ -22,12 +22,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74457, {	-- Grand Artificer Zeerak
 					["coord"] = { 47.5, 23.6, THE_AZURE_SPAN },
 					["provider"] = { "n", 201553 },	-- Grand Artificer Zeerak
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(74455, {	-- Unstable Arcanogolem
 					["coord"] = { 47.0, 25.3, THE_AZURE_SPAN },
 					["provider"] = { "n", 201554 },	-- Unstable Arcanogolem
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 			})),
 			n(QUESTS, {
@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["isDaily"] = true,
 			},{
 				n(201553,	-- Grand Artificer Zeerak
-				bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["coord"] = { 47.5, 23.6, THE_AZURE_SPAN },
 					["questID"] = 74545,
 					["groups"] = {
@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 				})),
 				n(201555,	-- Srivantor
-				bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["coord"] = { 47.0, 22.0, THE_AZURE_SPAN },
 					["questID"] = 74543,
 					["g"] = {
@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 				})),
 				n(201554,	-- Unstable Arcanogolem
-				bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["coord"] = { 47.0, 25.3, THE_AZURE_SPAN },
 					["questID"] = 74536,
 					["g"] = {

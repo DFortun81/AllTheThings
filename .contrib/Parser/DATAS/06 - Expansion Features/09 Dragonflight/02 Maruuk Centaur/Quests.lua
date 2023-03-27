@@ -118,11 +118,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(197630, {	-- Windborne Velocidrake: Feathered Neck (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
 					i(197604, {	-- Windborne Velocidrake: Ox Horns (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					i(197610),	-- Windborne Velocidrake: Yellow Horns (DM!)
 					i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all Drakewatcher Manuscripts
@@ -304,10 +304,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(197587, {	-- Windborne Velocidrake: Feathered Back (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					i(197591, {	-- Windborne Velocidrake: Hairy Head (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					i(197618),	-- Windborne Velocidrake: Long Snout (DM!)
 					i(197623),	-- Windborne Velocidrake: Spiked Tail (DM!)
@@ -484,7 +484,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					}),
 					-- #else
 					i(204380, {	-- Brimming Maruuk Centaur Supply Satchel
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					-- #endif
 				},

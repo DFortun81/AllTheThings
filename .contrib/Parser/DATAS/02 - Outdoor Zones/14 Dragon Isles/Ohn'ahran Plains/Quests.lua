@@ -1085,12 +1085,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74466, {	-- Huntmaster Yrgena
 					["provider"] = { "n", 201538 },	-- Huntmaster Yrgena
 					["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(74463, {	-- Groffnar
 					["provider"] = { "n", 201537 },	-- Groffnar
 					["coord"] = { 35.1, 40.8, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(66356, {	-- Irontree
 					["provider"] = { "n", 193128 },	-- Irontree
@@ -1099,7 +1099,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74464, {	-- Lurgan
 					["provider"] = { "n", 201540 },	-- Lurgan
 					["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(69871, {	-- Malsegan
 					["provider"] = { "n", 193212 },	-- Malsegan
@@ -1139,7 +1139,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74465, {	-- Stormcaller Narkena
 					["provider"] = { "n", 201539 },
 					["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(69837, {	-- Sunscale Behemoth
 					["provider"] = { "n", 193133 },	-- Sunscale Behemoth
@@ -1184,7 +1184,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74440, {	-- Windseeker Avash
 					["provider"] = { "n", 192045 },	-- Windseeker Avash
 					["coord"] = { 58.9, 67.5, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(72364, {	-- Zarizz
 					["provider"] = { "n", 193140 },	-- Zarizz

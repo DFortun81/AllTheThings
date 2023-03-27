@@ -1082,7 +1082,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74450, {	-- Morlash
 					["provider"] = { "n", 201549 },	-- Morlash
 					["coord"] = { 62.1, 60.1, THALDRASZUS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(72116, {	-- Liskron the Dazzling
 					["provider"] = { "n", 193273 },	-- Liskron the Dazzling
@@ -1106,12 +1106,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 201550 },	-- Overloading Defense Matrix
 					["coord"] = { 59.8, 61.6, THALDRASZUS },
 					["isDaily"] = true,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(74448, {	-- Overseer Stonetongue
 					["provider"] = { "n", 201552 },	-- Overseer Stonetongue
 					["coord"] = { 59.0, 56.0, THALDRASZUS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				qNYI(69976, {	-- Phenran
 					["provider"] = { "n", 193688 },	-- Phenran

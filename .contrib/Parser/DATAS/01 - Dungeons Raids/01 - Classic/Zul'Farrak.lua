@@ -103,7 +103,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["timeline"] = { "removed 1.9.3" },
 						}),
 						i(204406, {	-- Ancient Design: Square Holders (RECIPE!)
-							["timeline"] = { ADDED_DF_0_7 },
+							["timeline"] = { ADDED_10_0_7 },
 						}),
 					},
 				}),

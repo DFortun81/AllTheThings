@@ -61,7 +61,7 @@ root(ROOTS.Promotions, {
 		}),
 
 		-- Desert Path
-		i(173300, bubbleDownSelf({ ["timeline"] = { "added 8.2.5.31958", REMOVED_DF_0_7 } }, {	-- Ensemble: Renowned Explorer's Attire
+		i(173300, bubbleDownSelf({ ["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 } }, {	-- Ensemble: Renowned Explorer's Attire
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["groups"] = {
 				i(171324),	-- Renowned Explorer's Akubra
@@ -76,15 +76,15 @@ root(ROOTS.Promotions, {
 			},
 		})),
 		i(171363, {	-- Illusion: Stinging Sands
-			["timeline"] = { "added 8.2.5.31958", REMOVED_DF_0_7 },
+			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
 		}),
 		i(173299, {	-- Explorer's Jungle Hopper (MOUNT!)
-			["timeline"] = { "added 8.2.5.31958", REMOVED_DF_0_7 },
+			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
 		}),
 		i(173297, {	-- Explorer's Dunetrekker (MOUNT!)
-			["timeline"] = { "added 8.2.5.31958", REMOVED_DF_0_7 },
+			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
 		}),
-		i(173298, bubbleDownSelf({ ["timeline"] = { "added 8.2.5.31958", REMOVED_DF_0_7 } }, {	-- Explorer's Certification
+		i(173298, bubbleDownSelf({ ["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 } }, {	-- Explorer's Certification
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["groups"] = {
 				title(410),	-- Renowned Explorer <Name>
@@ -92,14 +92,14 @@ root(ROOTS.Promotions, {
 		})),
 		i(171333, {	-- Renowned Explorer's Rucksack
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
-			["timeline"] = { "added 8.2.5.31958", REMOVED_DF_0_7 },
+			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
 		}),
 		i(171361, {	-- Renowned Explorer's Tabard
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
-			["timeline"] = { "added 8.2.5.31958", REMOVED_DF_0_7 },
+			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
 		}),
 		i(173296, {	-- Rikki's Pith Helmet (PET!)
-			["timeline"] = { "added 8.2.5.31958", REMOVED_DF_0_7 },
+			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
 		}),
 	})),
 	n(-546, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Recruit A Friend (Current Rewards)
@@ -107,25 +107,25 @@ root(ROOTS.Promotions, {
 			["timeline"] = { "added 8.2.5.31958" },
 		}),
 		i(204183, {	-- Volatile Self-Driving Toolbox (PET!)
-			["timeline"] = { ADDED_DF_0_7 },
+			["timeline"] = { ADDED_10_0_7 },
 		}),
 		ach(17426, {	-- Toolbox Trouble
-			["timeline"] = { ADDED_DF_0_7 },
+			["timeline"] = { ADDED_10_0_7 },
 		}),
 		i(204081, {	-- Shredderizing Glove
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
-			["timeline"] = { ADDED_DF_0_7 },
+			["timeline"] = { ADDED_10_0_7 },
 		}),
 		i(204082, {	-- Sappy Buddy
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
-			["timeline"] = { ADDED_DF_0_7 },
+			["timeline"] = { ADDED_10_0_7 },
 		}),
 		i(204086, {	-- S.C.A.N.N.E.R. Mk3
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
-			["timeline"] = { ADDED_DF_0_7 },
+			["timeline"] = { ADDED_10_0_7 },
 		}),
 		i(204091, {	-- Rocket Shredder 9001 (MOUNT!)
-			["timeline"] = { ADDED_DF_0_7 },
+			["timeline"] = { ADDED_10_0_7 },
 		}),
 	})),
 });

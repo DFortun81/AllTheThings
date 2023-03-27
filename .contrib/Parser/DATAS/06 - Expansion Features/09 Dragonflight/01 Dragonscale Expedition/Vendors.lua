@@ -490,7 +490,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					}),
 						-- RENOWN 15 --
 					i(197358, {	-- Renewed Proto-Drake: Curved Spiked Brow (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 100 },
 						},

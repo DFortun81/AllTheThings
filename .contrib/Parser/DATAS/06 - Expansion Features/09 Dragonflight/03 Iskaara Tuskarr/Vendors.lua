@@ -320,7 +320,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						},
 					}),
 					i(197155, {	-- Highland Drake: Finned Neck (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},

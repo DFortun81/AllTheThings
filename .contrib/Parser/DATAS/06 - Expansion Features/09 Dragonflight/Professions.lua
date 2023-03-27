@@ -40,11 +40,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				crit(6, {	-- Fifth Challenge: Ingenuity
 					["_quests"] = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				crit(7, {	-- Innovation Complete
 					["_quests"] = { 70900 },	-- Innovating the Engine
-					["timeline"] = { ADDED_DF_0_5 }
+					["timeline"] = { ADDED_10_0_5 }
 				}),
 			}),
 			ach(16791, {	-- Merchant Artisan
@@ -330,7 +330,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				},
 			}),
 			-- In Tyr's Footsteps chapter 6 --
-			q(70899, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Fifth Challenge of Tyr: Ingenuity
+			q(70899, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Fifth Challenge of Tyr: Ingenuity
 				["sourceQuests"] = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 				["coord"] = { 83.9, 53.2, VALDRAKKEN },
@@ -343,11 +343,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["sourceQuests"] = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 				["coord"] = { 83.9, 53.2, VALDRAKKEN },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			-- Alt Skip --
 			q(72339,	-- Engine of Innovation
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				--["sourceQuests"] = { },
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 				["coord"] = { 83.9, 53.2, VALDRAKKEN },
@@ -366,7 +366,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					r(370745),	-- Advanced Potion Experimentation
 					r(370730),	-- Brood Salt
 					r(370735),	-- Illustrious Insight
-					r(390392, {["timeline"] = { ADDED_DF_0_5 }}),	-- Overload Elemental Herb
+					r(390392, {["timeline"] = { ADDED_10_0_5 }}),	-- Overload Elemental Herb
 					r(370668),	-- Potion Cauldron of Power
 					r(370715),	-- Transmute: Order to Elements
 					r(370714),	-- Transmute: Decay to Elements

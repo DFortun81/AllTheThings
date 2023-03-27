@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 74096,
 			}),
 			n(201535,	-- Bloodbeak the Ravenous
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 37.3, 38.5, OHNAHRAN_PLAINS },
 				["questID"] = 74467,
 				["g"] = {
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 		--	n(193170),	-- Fulgurb // under DF/Timed Based Rare
 			n(201537,	-- Groffnar
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 35.0, 41.1, OHNAHRAN_PLAINS },
 				["questID"] = 74549,
 				["g"] = {
@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73966,
 			}),
 			n(201538,	-- Huntmaster Yrgena
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
 				["questID"] = 74548,
 				["g"] = {
@@ -89,7 +89,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73882,
 			}),
 			n(201540,	-- Lurgan
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
 				["questID"] = 74546,
 				["g"] = {
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 		--	n(193123),	-- Steamgill // under DF/Timed Based Rare
 			n(201539,	-- Stormcaller Narkena
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
 				["questID"] = 74547,
 				["g"] = {
@@ -271,7 +271,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["questID"] = 73979,
 			}),
 			n(192045,	-- Windseeker Avash
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 58.6, 68.2, OHNAHRAN_PLAINS },
 				["questID"] = 74088,
 				["g"] = {

@@ -25,10 +25,10 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		["timeline"] = { "added 9.1.5.40871" },
 	}),
 	i(204336, {	-- Awakened Heirloom Armor Casing
-		["timeline"] = { ADDED_DF_0_7 },
+		["timeline"] = { ADDED_10_0_7 },
 	}),
 	i(204337, {	-- Awakened Heirloom Scabbard
-		["timeline"] = { ADDED_DF_0_7 },
+		["timeline"] = { ADDED_10_0_7 },
 	}),
 	n(ACHIEVEMENTS, {
 		ach(9909, {	-- Heirloom Hoarder (35)

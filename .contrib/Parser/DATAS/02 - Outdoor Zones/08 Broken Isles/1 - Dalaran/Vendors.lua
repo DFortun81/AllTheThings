@@ -1659,7 +1659,7 @@ _.Zones =
 								}),
 							}),
 						}),
-						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 							i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
 								["requireSkill"] = TAILORING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -4807,7 +4807,7 @@ _.Zones =
 								}),
 							}),
 						}),
-						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 							i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
 								["requireSkill"] = TAILORING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor

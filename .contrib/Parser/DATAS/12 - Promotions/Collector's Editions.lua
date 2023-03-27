@@ -298,7 +298,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 			mount(359843),	-- Tangled Dreamweaver (MOUNT!)
 			ach(17314),	-- Heroic Edition: Tangled Dreamweaver
 			ach(17305, {	-- Trading Post: Dragonflight
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			n(REWARDS, {
 				["description"] = "The following additional rewards were only available if you purchased Dragonflight Epic Edition.",

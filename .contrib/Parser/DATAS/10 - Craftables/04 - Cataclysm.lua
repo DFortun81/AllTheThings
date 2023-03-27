@@ -382,7 +382,7 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(52489),	-- Rhinestone Sunglasses
 		}),
 		filter(MISC, {
-			i(204356, {["timeline"]={ADDED_DF_0_7}}),	-- Illustrious Gemdust
+			i(204356, {["timeline"]={ADDED_10_0_7}}),	-- Illustrious Gemdust
 		}),
 		filter(NECK_F, {
 			i(52307, {	-- Alicite Pendant

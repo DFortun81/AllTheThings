@@ -261,7 +261,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					}),
 				})),
 			}),
-			header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_DF_0_5 }, {	-- Reverse Racer: Gold
+			header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
 				n(ACHIEVEMENTS, {
 					ach(17195, {	-- Waking Shores Reverse: Bronze
 						-- Meta Achievement

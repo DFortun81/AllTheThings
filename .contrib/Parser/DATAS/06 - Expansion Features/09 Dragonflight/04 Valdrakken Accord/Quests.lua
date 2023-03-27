@@ -154,7 +154,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 46.8, 78.8, VALDRAKKEN },
 				["g"] = {
 					i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					i(196972),	-- Cliffside Wylderdrake: Plated Brow (DM!)
 					i(197003),	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
@@ -360,13 +360,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 46.8, 78.8, VALDRAKKEN },
 				["g"] = {
 					i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					i(196998),	-- Cliffside Wylderdrake: Hook Horns (DM!)
 					i(197009),	-- Cliffside Wylderdrake: Scaled Pattern (DM!)
 					i(197020),	-- Cliffside Wylderdrake: Spear Tail (DM!)
 					i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 				},
 			}),
@@ -900,7 +900,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 					-- #else
 					i(204381, {	-- Brimming Valdrakken Accord Supply Pack
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					-- #endif
 				},

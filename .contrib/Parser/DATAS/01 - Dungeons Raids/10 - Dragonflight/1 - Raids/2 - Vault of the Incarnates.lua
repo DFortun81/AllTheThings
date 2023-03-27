@@ -944,7 +944,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 				e(2499, {	-- Raszageth the Storm-Eater
 					["crs"] = { 193909 },	-- Raszageth the Storm-Eater
 					["g"] = {
-						ach(17107, {["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
+						ach(17107, {["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
 						TOKEN_HEROIC(196590, {	-- Dreadful Topaz Forgestone
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200345),	-- Skybound Avenger's Visor
@@ -988,24 +988,24 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(202004, {["timeline"] = { ADDED_DF_0_5 }}),		-- Brawler's Earthen Cuirass [BoE]
-					i(202146, {["timeline"] = { "added 10.0.2.47213", REMOVED_DF_0_5 }}),	-- Brawler's Earthen Cuirass [BoP]
-					i(201992, {["timeline"] = { ADDED_DF_0_5 }}),		-- Emissary's Flamewrought Seal [BoE]
-					i(202148, {["timeline"] = { "added 10.0.2.47213", REMOVED_DF_0_5 }}),	-- Emissary's Flamewrought Seal [BoP]
-					i(202005, {["timeline"] = { ADDED_DF_0_5 }}),		-- Frozen Claw Mantle [BoE]
-					i(202145, {["timeline"] = { "added 10.0.2.47213", REMOVED_DF_0_5 }}),	-- Frozen Claw Mantle [BoP]
-					i(202008, {["timeline"] = { ADDED_DF_0_5 }}),		-- Galvanic Gaiters [BoE]
-					i(202150, {["timeline"] = { "added 10.0.2.47213", REMOVED_DF_0_5 }}),	-- Galvanic Gaiters [BoP]
-					i(202006, {["timeline"] = { ADDED_DF_0_5 }}),		-- Greathelm of Horned Fury [BoE]
-					i(202144, {["timeline"] = { "added 10.0.2.47213", REMOVED_DF_0_5 }}),	-- Greathelm of Horned Fury [BoP]
-					i(202009, {["timeline"] = { ADDED_DF_0_5 }}),		-- Lavamancer's Ceremonial Waistguard [BoE]
-					i(202151, {["timeline"] = { "added 10.0.2.47213", REMOVED_DF_0_5 }}),	-- Lavamancer's Ceremonial Waistguard [BoP]
-					i(202003, {["timeline"] = { ADDED_DF_0_5 }}),		-- Primal Seeker's Leggings [BoE]
-					i(202147, {["timeline"] = { "added 10.0.2.47213", REMOVED_DF_0_5 }}),	-- Primal Seeker's Leggings [BoP]
-					i(202010, {["timeline"] = { ADDED_DF_0_5 }}),		-- Primalist Warden's Bracers [BoE]
-					i(202149, {["timeline"] = { "added 10.0.2.47213", REMOVED_DF_0_5 }}),	-- Primalist Warden's Bracers [BoP]
-					i(202007, {["timeline"] = { ADDED_DF_0_5 }}),		-- Woven Stone Bracelets [BoE]
-					i(202143, {["timeline"] = { "added 10.0.2.47213", REMOVED_DF_0_5}}),	-- Woven Stone Bracelets [BoP]
+					i(202004, {["timeline"] = { ADDED_10_0_5 }}),		-- Brawler's Earthen Cuirass [BoE]
+					i(202146, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Brawler's Earthen Cuirass [BoP]
+					i(201992, {["timeline"] = { ADDED_10_0_5 }}),		-- Emissary's Flamewrought Seal [BoE]
+					i(202148, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Emissary's Flamewrought Seal [BoP]
+					i(202005, {["timeline"] = { ADDED_10_0_5 }}),		-- Frozen Claw Mantle [BoE]
+					i(202145, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Frozen Claw Mantle [BoP]
+					i(202008, {["timeline"] = { ADDED_10_0_5 }}),		-- Galvanic Gaiters [BoE]
+					i(202150, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Galvanic Gaiters [BoP]
+					i(202006, {["timeline"] = { ADDED_10_0_5 }}),		-- Greathelm of Horned Fury [BoE]
+					i(202144, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Greathelm of Horned Fury [BoP]
+					i(202009, {["timeline"] = { ADDED_10_0_5 }}),		-- Lavamancer's Ceremonial Waistguard [BoE]
+					i(202151, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Lavamancer's Ceremonial Waistguard [BoP]
+					i(202003, {["timeline"] = { ADDED_10_0_5 }}),		-- Primal Seeker's Leggings [BoE]
+					i(202147, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Primal Seeker's Leggings [BoP]
+					i(202010, {["timeline"] = { ADDED_10_0_5 }}),		-- Primalist Warden's Bracers [BoE]
+					i(202149, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Primalist Warden's Bracers [BoP]
+					i(202007, {["timeline"] = { ADDED_10_0_5 }}),		-- Woven Stone Bracelets [BoE]
+					i(202143, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5}}),	-- Woven Stone Bracelets [BoP]
 				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },	-- Eranog
@@ -1208,19 +1208,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 						ach(16353, {	-- Mythic: Raszageth the Storm-Eater
 							title(488),	-- <Name> the Storm-Eater
 						}),
-						ach(17116, bubbleDownSelf({["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (A)
+						ach(17116, bubbleDownSelf({["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (A)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(487),	-- <Name>, Famed Slayer of Raszageth
 							},
 						})),
-						ach(17118, bubbleDownSelf({["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (H)
+						ach(17118, bubbleDownSelf({["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (H)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(487),	-- <Name>, Famed Slayer of Raszageth
 							},
 						})),
-						ach(17108, {["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 }}),	-- Cutting Edge: Raszageth the Storm-Eater
+						ach(17108, {["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 }}),	-- Cutting Edge: Raszageth the Storm-Eater
 						TOKEN_MYTHIC(196590, {	-- Dreadful Topaz Forgestone
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200345),	-- Skybound Avenger's Visor

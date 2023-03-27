@@ -19,7 +19,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197594),	-- Windborne Velocidrake: Small Ears (DM!)
 				}),
 				i(204359,	-- Reach Racer's Purse
-				bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 					i(197002),	-- Cliffside Wylderdrake: Flared Cheek (DM!)
 					i(197124),	-- Highland Drake: Swept Horns (DM!)
 					i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
@@ -126,15 +126,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						-- The Forbidden Reach --
 					q(73083, {	-- Dragonrider Racing - Caldera Climb
 						["coord"] = { 41.2, 14.3, THE_FORBIDDEN_REACH },
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					q(73084, {	-- Dragonrider Racing - Forbidden Reach Rush
 						["coord"] = { 66.9, 5.6, THE_FORBIDDEN_REACH },
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					q(73082, {	-- Dragonrider Racing - Southern Reach Route
 						["coord"] = { 63.5, 83.6, THE_FORBIDDEN_REACH },
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 				}),
 			}),

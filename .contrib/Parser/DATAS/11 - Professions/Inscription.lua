@@ -740,10 +740,10 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["timeline"] = { "removed 9.0.1" },
 			}),
 			r(397866, {	-- Impressive Weapon Crystal
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			r(397867, {	-- Remarkable Weapon Crystal
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			r(166432),	-- Volatile Crystal
 		}),

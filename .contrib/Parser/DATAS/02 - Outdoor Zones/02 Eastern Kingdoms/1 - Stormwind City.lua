@@ -2735,7 +2735,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							r(404740, {	-- Cataclysm Crushing
-								["timeline"] = { ADDED_DF_0_7 },
+								["timeline"] = { ADDED_10_0_7 },
 							}),
 						},
 					}),
@@ -5728,7 +5728,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1294, {	-- Aldric Moore <Mail Armor Merchant>
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
+					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
 						-- Now any class and race can buy this
 						-- HUNTER --
 						i(129),	-- Rugged Trapper's Boots
@@ -5957,7 +5957,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(53641, {	-- Allison Potts <Heavy Armor Merchant>
 					["coord"] = { 64.8, 48.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
+					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
 						-- Now any class and race can buy this
 						-- PALADIN --
 						i(43),	-- Squire's Boots
@@ -6167,67 +6167,67 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- Now any class and race can buy this
 						-- MAGE --
 						i(55, {	-- Apprentice's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52554, {	-- Apprentice's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(1395, {	-- Apprentice's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(56, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52553, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(23478, {	-- Recruit's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(23479, {	-- Recruit's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 
 						-- PRIEST --
 						i(1396, {	-- Acolyte's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(23322, {	-- Acolyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(51, {	-- Neophyte's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(6098, {	-- Neophyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(6119, {	-- Neophyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 
 						-- WARLOCK --
 						i(1396, {	-- Acolyte's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(57, {	-- Acolyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(59, {	-- Acolyte's Shoes
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 
 						-- ??? --
 						i(6116, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(23350, {	-- Battleworn Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(23349, {	-- Battleworn Shoes
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(6118, {	-- Squire's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						-- #endif
 					},
@@ -6459,7 +6459,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						currency(361, {	-- Illustrious Jewelcrafter's Token
 							["cost"] = { { "i", 204356, 10 }, },	-- 10x Illustrious Gemdust
-							["timeline"] = { ADDED_DF_0_7 },
+							["timeline"] = { ADDED_10_0_7 },
 						}),
 						i(71928, {	-- Design: Accurate Shadow Spinel
 							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
@@ -6726,7 +6726,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(73210, {	-- Trainee's Sword
-							["timeline"] = { ADDED_DF_0_7 },
+							["timeline"] = { ADDED_10_0_7 },
 						}),
 					},
 				}),
@@ -6925,7 +6925,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1295, {	-- Lara Moore <Leather Armor Merchant>
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
+					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
 						-- Now any class and race can buy this
 						-- DRUID --
 						i(6124),	-- Novice's Pants

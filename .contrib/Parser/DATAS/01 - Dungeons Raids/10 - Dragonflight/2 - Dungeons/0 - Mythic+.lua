@@ -4,7 +4,7 @@
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_THUNDERING, bubbleDownSelf({
-			["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 }
+			["timeline"] = { ADDED_DF_REL, REMOVED_10_1_0 }
 		},{
 			ach(16801, {	-- Realm First! Dragonflight Keystone Hero
 				["u"] = REMOVED_FROM_GAME,
@@ -45,8 +45,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 				title(000),	-- <Name> the Thundering Hero
 			}),
 			ach(17848),		-- Keystone Hero: Freehold
-			ach(17850),		-- Keystone Hero: Neltharion's Lair  
-			ach(17849),		-- Keystone Hero: The Underrot 
+			ach(17850),		-- Keystone Hero: Neltharion's Lair
+			ach(17849),		-- Keystone Hero: The Underrot
 			ach(17847),		-- Keystone Hero: The Vortex Pinnacle
 			ach(0),		-- Keystone Hero: Halls of Infusion
 			ach(0),		-- Keystone Hero: Brackenhide Hollow

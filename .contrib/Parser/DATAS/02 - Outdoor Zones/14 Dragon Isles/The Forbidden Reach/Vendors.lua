@@ -3,7 +3,7 @@
 ---------------------------------------------------
 local ARTISANS_METTLE = 190456;
 local ELEMENTAL_OVERFLOW = 2118;
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(VENDORS, {
 			n(200566, {	-- Cataloger Daela
@@ -429,7 +429,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 	n(THE_FORBIDDEN_REACH, {
 		q(74363),	-- Ensemble: Cloudburst Regalia
 		q(74364),	-- Ensemble: Dust Devil Armor

@@ -330,7 +330,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					i(49641, {	-- Faded Lovely Greeting Card [H]
 						["timeline"] = { "added 3.3.2.11403" },
 					}),
-					
+
 					-- #if ANYCLASSIC
 					i(54537, {	-- Heart-Shaped Box
 						["description"] = "This box doesn't actually exist without RDF. The loot normally contained within drop directly from the boss this year.",
@@ -1549,7 +1549,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					{ 54.2, 60.0, VALDRAKKEN },
 					{ 55.0, 37.2, VALDRAKKEN },
 				},
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
@@ -1561,7 +1561,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					{ 54.2, 60.0, VALDRAKKEN },
 					{ 55.0, 37.2, VALDRAKKEN },
 				},
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
@@ -2389,7 +2389,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 	},
 }));
 
-root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
+root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	q(74957),	-- daily tracker for Bad Luck Protection on Love Rocket drop
 }));
 

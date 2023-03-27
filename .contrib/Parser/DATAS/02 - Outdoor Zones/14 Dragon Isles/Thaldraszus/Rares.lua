@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 		--	n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
 			n(201549,	-- Morlash
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 62.1, 60.1, THALDRASZUS },
 				["questID"] = 74561,
 				["g"] = {
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(201550,	-- Overloading Defense Matrix
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 59.6, 61.8, THALDRASZUS },
 				["questID"] = 74565,
 				["group"] = {
@@ -100,7 +100,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			})),
 			n(201552,	-- Overseer Stonetongue
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 59.0, 56.0, THALDRASZUS },
 				["questID"] = 74566,
 				["g"] = {

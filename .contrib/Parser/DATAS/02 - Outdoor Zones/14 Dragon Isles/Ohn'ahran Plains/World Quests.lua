@@ -38,14 +38,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				petbattle(q(74838, {	-- Lyver
 					["coord"] = { 73.38, 68, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 				})),
 				q(70780, {	-- Ohn'ahran Banners
 					["coord"] = { 85.3, 45.3, OHNAHRAN_PLAINS }
 				}),
 				petbattle(q(74837, {	-- Paws of Thunder
 					["coord"] = { 36.15, 52.57, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 				})),
 				q(70074, {	-- Plunder the Sundered
 					["coord"] = { 46.2, 65.2, OHNAHRAN_PLAINS }

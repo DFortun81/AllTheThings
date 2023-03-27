@@ -1768,12 +1768,12 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Impressive Linkgrease Locksprocket",
 					["recipeID"] = 397858,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Impressive True Iron Trigger",
 					["recipeID"] = 397860,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Primal Welding",
@@ -1782,12 +1782,12 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Remarkable Linkgrease Locksprocket",
 					["recipeID"] = 397859,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Remarkable True Iron Trigger",
 					["recipeID"] = 397861,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Secrets of Draenor Engineering",

@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_S2 } }, {
+root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	inst(1208, {	-- Aberrus, the Shadowed Crucible
 		["isRaid"] = true,
 		-- ["coord"] = { 73.0, 55.7, ZARALEK_CAVERN },

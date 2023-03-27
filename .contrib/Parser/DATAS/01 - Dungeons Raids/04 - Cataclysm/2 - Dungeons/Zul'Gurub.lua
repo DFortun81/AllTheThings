@@ -27,7 +27,7 @@ root("Instances", tier(CATA_TIER, {
 		["g"] = {
 			d(HEROIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
-					ach(17367, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {	-- Deadliest Cache
+					ach(17367, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Deadliest Cache
 						crit(1),	-- Gain Jostled Gurubashi Cache
 						crit(2),	-- Waterlogged Gurubashi Cache
 					})),
@@ -59,10 +59,10 @@ root("Instances", tier(CATA_TIER, {
 					}),
 					ach(17366, {	-- Relics of a Fallen Empire
 						["sourceQuests"] = { 74576 },	-- Restored Hakkari Bijou
-						["timeline"] = { ADDED_DF_0_7 }
+						["timeline"] = { ADDED_10_0_7 }
 					}),
 				}),
-				header(HEADERS.Item, 203757, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {	-- Brazier of Madness
+				header(HEADERS.Item, 203757, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Brazier of Madness
 					["description"] = "Requires the toy Brazier of Madness",
 					["cost"] = {
 						{ "i", BLUE_HAKKARI_BIJOU, 1 },
@@ -126,7 +126,7 @@ root("Instances", tier(CATA_TIER, {
 						}),
 					},
 				})),
-				n(COMMON_BOSS_DROPS, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+				n(COMMON_BOSS_DROPS, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 					["crs"] = {
 						52155,	-- High Priest Venoxis
 						52151,	-- Bloodlord Mandokir
@@ -179,7 +179,7 @@ root("Instances", tier(CATA_TIER, {
 						i(YELLOW_HAKKARI_BIJOU),
 					}),
 				})),
-				prof(FISHING, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 }, ["modID"] = 0, }, {
+				prof(FISHING, bubbleDown({ ["timeline"] = { ADDED_10_0_7 }, ["modID"] = 0, }, {
 					q(74579, {	-- Daily Zul'Gurub Cache
 						["name"] = "Daily Zul'Gurub Cache",
 						["isDaily"] = true,
@@ -288,7 +288,7 @@ root("Instances", tier(CATA_TIER, {
 					i(WITHERBARK_COIN),
 					i(ZULIAN_COIN),
 				})),
-				prof(SKINNING, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+				prof(SKINNING, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 					i(19768),	-- Primal Tiger Leather
 					i(19767),	-- Primal Bat Leather
 				})),
@@ -297,7 +297,7 @@ root("Instances", tier(CATA_TIER, {
 						["description"] = "|cFFFF0000This achievement is required to have any of the materials, bijous or recipes added in 10.0.7 drop.|r\n\nTo get the achievement, kill any two of the four bosses to unlock Jin'do & then enter the interior of the pyramid in the middle of the dungeon. The first Bijou named 'Fragmented Hakkari Bijou' is near one the gongs at roughly 48.6, 42.3 & the second Bijou is at the same spot, but during phase 2 of the Jin'do Boss Encounter. Collect both, combine them & deliver them to Rin'wosho in Zandalar at 55.0 86.8",
 						["provider"] = { "i", 203737 },	-- Restored Hakkari Bijou
 						["coord"] = { 55.0, 86.8, DAZARALOR },
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					q(29155, {	-- A Shiny Reward
 						["races"] = ALLIANCE_ONLY,
@@ -386,7 +386,7 @@ root("Instances", tier(CATA_TIER, {
 						["isDaily"] = true,
 						["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
 					}),
-					q(74696, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {	-- Gurubashi, Vilebranch, and Witherbark Coins
+					q(74696, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Gurubashi, Vilebranch, and Witherbark Coins
 						["cost"] = {
 							{ "i", GURUBASHI_COIN, 1 },
 							{ "i", VILEBRANCH_COIN, 1 },
@@ -397,7 +397,7 @@ root("Instances", tier(CATA_TIER, {
 							i(ZANDALAR_BARGAINING_TOKEN),
 						},
 					})),
-					q(74695, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {	-- Zulian, Razzashi, and Hakkari Coins
+					q(74695, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Zulian, Razzashi, and Hakkari Coins
 						["cost"] = {
 							{ "i", HAKKARI_COIN, 1 },
 							{ "i", RAZZASHI_COIN, 1 },
@@ -408,7 +408,7 @@ root("Instances", tier(CATA_TIER, {
 							i(ZANDALAR_BARGAINING_TOKEN),
 						},
 					})),
-					q(74697, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
+					q(74697, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
 						["cost"] = {
 							{ "i", BLOODSCALP_COIN, 1 },
 							{ "i", SANDFURY_COIN, 1 },
@@ -420,7 +420,7 @@ root("Instances", tier(CATA_TIER, {
 						},
 					})),
 				}),
-				n(TREASURES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+				n(TREASURES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 					o(387496, {	-- Brazier of Madness
 						["description"] = "Can be looted near the Cache of Madness event, to the left of the altar at 61.2, 45.6.",
 						["groups"] = {
@@ -453,7 +453,7 @@ root("Instances", tier(CATA_TIER, {
 						},
 					}),
 				})),
-				n(VENDORS, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+				n(VENDORS, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 					n(143138, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 						["description"] = "Only visible after completing the 'Relics of a Fallen Empire' Achievement.",
 						["groups"] = {
@@ -794,7 +794,7 @@ root("Instances", tier(CATA_TIER, {
 					}),
 					n(52414),	-- Tor-Tun
 				}),
-				n(ZONE_DROPS, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 }, ["modID"] = 0, }, {
+				n(ZONE_DROPS, bubbleDown({ ["timeline"] = { ADDED_10_0_7 }, ["modID"] = 0, }, {
 					i(BLOODSCALP_COIN),
 					i(GURUBASHI_COIN),
 					i(HAKKARI_COIN),

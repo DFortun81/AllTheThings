@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				petbattle(q(74794, {	-- Right Twice a Day
 					["coord"] = { 60.63, 59.74, THALDRASZUS },
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 				})),
 				q(71156, {	-- Rebel Concerns
 					["coord"] = { 46.2, 52.2, THALDRASZUS },
@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				})),
 				petbattle(q(74792, {	-- They're Full of Stars!
 					["coord"] = { 55.97, 40.54, THALDRASZUS },
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 				})),
 				q(70057, {	-- Thieving Tarasek
 					["coord"] = { 56.2, 68.7, THALDRASZUS }

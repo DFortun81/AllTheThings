@@ -3300,7 +3300,7 @@ profession(TAILORING, {
 				{
 					["name"] = "Impressive Hexweave Essence",
 					["recipeID"] = 397864,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Relic of the Past I",
@@ -3325,7 +3325,7 @@ profession(TAILORING, {
 				{
 					["name"] = "Remarkable Hexweave Essence",
 					["recipeID"] = 397865,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 			}
 		},
@@ -3650,7 +3650,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Imbued Silkweave Epaulets",	-- Rank 3
-					["timeline"] = { "removed 8.0.1", ADDED_DF_0_7 },
+					["timeline"] = { "removed 8.0.1", ADDED_10_0_7 },
 					["previousRecipeID"] = 185948,
 					["recipeID"] = 185956
 				},

@@ -1411,12 +1411,12 @@ REMOVED_DF_PRE2 = "removed 10.0.2.46658";				-- Second phase of Dragonflight pre
 ADDED_DF_REL = "added 10.0.2.46801";					-- Dragonflight Launch on November 28th, 2022
 TIMELINE_DF_REL = { CREATED_DF_PRE, ADDED_DF_REL };		-- Dragonflight Launch on November 28th, 2022
 REMOVED_DF_REL = "removed 10.0.2.46801";				-- Dragonflight Launch on November 28th, 2022
-ADDED_DF_0_5 = "added 10.0.5.47799";					-- Dragonflight 10.0.5 Launch on January 24th, 2023
-REMOVED_DF_0_5 = "removed 10.0.5.47799";				-- Dragonflight 10.0.5 Launch on January 24th, 2023
-ADDED_DF_0_7 = "added 10.0.7.48676";							-- Dragonflight 10.0.7 Launch on March ??, 2023
-REMOVED_DF_0_7 = "removed 10.0.7.48676";						-- Dragonflight 10.0.7 Launch on March ??, 2023
-ADDED_DF_S2 = "added 10.1.0";							-- Dragonflight Season 2 Start on
-REMOVED_DF_S2 = "removed 10.1.0";						-- Dragonflight Season 2 Start on
+ADDED_10_0_5 = "added 10.0.5.47799";					-- Dragonflight 10.0.5 Launch on January 24th, 2023
+REMOVED_10_0_5 = "removed 10.0.5.47799";				-- Dragonflight 10.0.5 Launch on January 24th, 2023
+ADDED_10_0_7 = "added 10.0.7.48676";					-- Dragonflight 10.0.7 Launch on March 21st, 2023
+REMOVED_10_0_7 = "removed 10.0.7.48676";				-- Dragonflight 10.0.7 Launch on March 21st, 2023
+ADDED_10_1_0 = "added 10.1.0";							-- Dragonflight Season 2 Start on
+REMOVED_10_1_0 = "removed 10.1.0";						-- Dragonflight Season 2 Start on
 
 -- Holiday Filters
 BREWFEST = 1000;

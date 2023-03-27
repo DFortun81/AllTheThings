@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(204339, {	-- Satchel of Coalescing Chaos
 						["cost"] = { { "i", 190454, 80 }, },	-- 80x Primal Chaos
-						["timeline"] = { ADDED_DF_0_5 },
+						["timeline"] = { ADDED_10_0_5 },
 						["g"] = {
 							i(190454),	-- Primal Chaos
 						},

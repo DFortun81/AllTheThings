@@ -7,7 +7,7 @@
 -- DO NOT REMOVE OR I WILL FIND YOU! -Darkal
 
 -- #if NOT ANYCLASSIC
-root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_DF_0_5, ["description"] = "This item is currently in a temporary group of unsorted items under World Drops. It will be sorted soon.\nYou don't need to report this." }, {
+root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"] = "This item is currently in a temporary group of unsorted items under World Drops. It will be sorted soon.\nYou don't need to report this." }, {
 	-- I AM HIDING THIS FOR NOW -Darkal
 	--[[
 	n(-123456, {	-- Poor
