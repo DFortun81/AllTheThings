@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			n(200725, {	-- Faunos <Lord of Fleece>
 				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
-				-- ["questID"] = ,
+				["questID"] = 73158,
 				["cost"] = { { "i", 203417, 1 }, },	-- 1x Razor-Sharp Animal Bone
 				-- ["g"] = {
 				-- },
