@@ -10,7 +10,6 @@ local CHAMPIONS_WRIT = i(46114);	-- Champion's Writ
 local VALIANTS_SEAL = i(44987);	-- Valiant's Seal
 
 -- TODO: Finish setting this up, intent is to right click and show the achievement that's required.
--- TODO: Forcibly changing visibility on groups is bad. These quests are now impossible to see even in Debug unless actually being on the respective quest.
 -- The dailies are locked until they're unlocked by completing A Silver Confidant for Alliance or The Sunreavers for Horde
 local CRUSADER_DAILY_OnClick = [[function(row, button)
 	if button == "RightButton" and row.ref.ach then
@@ -78,9 +77,14 @@ local SUNREAVERS_DAILY_OnUpdate = [[function(t)
 		end
 	end
 end]];
+-- #IF ANYCLASSIC
+-- Forcibly changing visibility on groups is bad. These quests are impossible to see even in Debug unless actually being on the respective quest.
 local VALIANT_DAILY_OnUpdate = function(valiantQuestID)
 	return [[function(t) if not C_QuestLog.IsOnQuest(]] .. valiantQuestID .. [[) then t.visible = false; return true; end end]];
 end
+-- #ELSE
+local VALIANT_DAILY_OnUpdate = function() end
+-- #ENDIF
 
 root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
 	n(-363, {	-- The Argent Tournament
