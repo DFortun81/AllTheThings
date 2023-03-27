@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
-
-root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.1" } }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(TORGHAST, {
 		n(176761, {	-- Adamant Vault
 			n(COMMON_BOSS_DROPS, sharedData({ ["timeline"] = { "added 9.1.0" } }, {
@@ -177,7 +176,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added
 					153165,	-- Custodian Thonar
 					151329,	-- Warden Skoldus
 				},
-				["timeline"] = { "added 9.0.1" }
 			}),
 			i(183192, {	-- Frenzied Mawrat
 				["crs"] = {

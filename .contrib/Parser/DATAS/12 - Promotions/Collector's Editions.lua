@@ -253,7 +253,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 			i(153541),	-- Tottle
 		},
 	}),
-	tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE, ["timeline"] = { "added 9.0.1" }, }, {
+	tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE, ["timeline"] = { ADDED_9_0_1 }, }, {
 		["description"] = "These rewards are available to anyone who purchases Shadowlands Heroic Edition.",
 		["groups"] = {
 			ach(14283, { -- Heroic Edition: Ensorcelled Everwyrm

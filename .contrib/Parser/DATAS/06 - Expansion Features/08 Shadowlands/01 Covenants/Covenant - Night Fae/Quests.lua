@@ -168,7 +168,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["isWeekly"] = true,
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
-				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+				["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
 			}),
 			q(62858, {	-- Return Lost Souls (10 soul version)
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -176,7 +176,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["isWeekly"] = true,
-				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+				["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
 			}),
 			q(62859, {	-- Return Lost Souls (15 soul version)
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -184,7 +184,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["isWeekly"] = true,
-				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+				["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
 			}),
 			q(62860, {	-- Return Lost Souls (20 soul version)
 				["sourceQuests"] = { 58104 },	-- Show, Don't Tell
@@ -194,22 +194,22 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["isWeekly"] = true,
 				["g"] = {
 					i(177698, {	-- Untamed Spirit Ardenweald (Uncommon)
-						["timeline"] = { "added 9.0", "removed 9.1.5" },
+						["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
 					}),
 					i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
 					i(177700),	-- Greater Untamed Spirit Ardenweald (Epic)
 					i(178881, {	-- Dutiful Spirit Bastion (Uncommon)
-						["timeline"] = { "added 9.0", "removed 9.1.5" },
+						["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
 					}),
 					i(178880),	-- Divine Dutiful Spirit (Rare)
 					i(178879),	-- Greater Dutiful Spirit (Epic)
 					i(178874, {	-- Martial Spirit Maldraxxus (Uncommon)
-						["timeline"] = { "added 9.0", "removed 9.1.5" },
+						["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
 					}),
 					i(178877),	-- Divine Martial Spirit (Rare)
 					i(178878),	-- Greater Martial Spirit (Epic)
 					i(178882, {	-- Prideful Spirit Revendreth (Uncommon)
-						["timeline"] = { "added 9.0", "removed 9.1.5" },
+						["timeline"] = { ADDED_SL_REL, "removed 9.1.5" },
 					}),
 					i(178883),	-- Divine Prideful Spirit (Rare)
 					i(178884),	-- Greater Prideful Spirit (Epic)

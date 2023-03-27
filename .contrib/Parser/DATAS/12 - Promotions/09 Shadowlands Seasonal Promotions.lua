@@ -3,13 +3,13 @@
 -----------------------------------------------------
 root(ROOTS.Promotions, {
 	n(-580, {	-- Shadowlands Seasonal Promotions
-		["timeline"] = { "added 9.0.5" },
+		["timeline"] = { ADDED_9_0_5 },
 		["description"] = "These promotions happened during the time Shadowlands was the most recent content between 13th October 2020 & 25th October 2022.\n\nThey are listed in the order of their first appearance.",
 		["groups"] = {
 			-- SEASON 1
 			mount(348162, {	-- Wandering Ancient (MOUNT!)
 				["description"] = "Granted to players by logging in on character of at least level 20.",
-				["timeline"] = { "added 9.0.5" },
+				["timeline"] = { ADDED_9_0_5 },
 			}),
 			-- SEASON 2
 			i(187834, {		-- Tormented Banner of the Opportune (TOY!)

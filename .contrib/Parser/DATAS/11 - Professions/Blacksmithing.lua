@@ -5864,7 +5864,7 @@ profession(BLACKSMITHING, {
 			},
 		},
 	}))),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL } }, {
 		applytraining({
 			["name"] = "Quest Recipes",
 			["categoryID"] = 1522,

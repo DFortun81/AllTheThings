@@ -173,7 +173,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
 		battlepet(156, {	-- Bananas
-			["timeline"] = { "added 9.0.5", "removed 9.1.5" },
+			["timeline"] = { ADDED_9_0_5, "removed 9.1.5" },
 		}),
 		pet(3153, {	-- Blinky
 			["timeline"] = { "added 9.1.5.41488" },
@@ -194,7 +194,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 5.1.0.16309" },
 		}),
 		battlepet(2780, {	-- Daisy
-			["timeline"] = { "added 9.0.5.37864" },
+			["timeline"] = { ADDED_9_0_5 },
 		}),
 		battlepet(2623, {	-- Dottie
 			["timeline"] = { "added 8.3.0.33062" },

@@ -307,7 +307,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(1157),	-- Duel-icious
 	ach(14815, {	-- Executing the Exarch
 		["provider"] = { "n", 175137 },	-- High Exarch Turalyon <Lord Commander of Alliance Forces>
-		["timeline"] = { "added 9.0.1" },
+		["timeline"] = { ADDED_9_0_1 },
 		["races"] = HORDE_ONLY,
 	}),
 	ach(614, {	-- For The Alliance!
@@ -426,7 +426,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(247),	-- Make Love, Not Warcraft
 	ach(14817, {	-- Opposing Orgrimmar
 		["provider"] = { "n", 175135 },	-- Rokhan <Darkspear Chieftain>
-		["timeline"] = { "added 9.0.1" },
+		["timeline"] = { ADDED_9_0_1 },
 		["maps"] = { ORGRIMMAR },
 		["races"] = ALLIANCE_ONLY,
 	}),

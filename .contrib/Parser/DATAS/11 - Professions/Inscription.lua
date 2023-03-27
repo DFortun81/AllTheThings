@@ -1461,13 +1461,13 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { "added 8.1.0" },
 			}),
-			r(344341, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Aerial Chameleon
-			r(344340, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Aquatic Chameleon
+			r(344341, {["timeline"]={ADDED_SL_REL}}),  -- Glyph of the Aerial Chameleon
+			r(344340, {["timeline"]={ADDED_SL_REL}}),  -- Glyph of the Aquatic Chameleon
 			r(304036, {["timeline"]={"added 8.2.0"}}),	-- Glyph of the Cold Waves
 			r(304030, {["timeline"]={"added 8.2.0"}}),	-- Glyph of the Dark Depths
 			r(276059),	-- Glyph of the Dolphin
 			r(276121),	-- Glyph of the Humble Flyer
-			r(344335, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Swift Chameleon
+			r(344335, {["timeline"]={ADDED_SL_REL}}),  -- Glyph of the Swift Chameleon
 			r(289313, {["timeline"]={"added 8.1.0"}}),	-- Glyph of the Tides
 			r(276088),	-- Glyph of the Tideskipper
 		}),
@@ -1612,7 +1612,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 	}))),
 	--[[
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL } }, {
 		cat(1410, {	-- Contracts
 			r(354000, {["timeline"]={"added 9.1.0"}}),	-- Contract: Death's Advance
 			r(311412),	-- Contract: Court of Harvesters

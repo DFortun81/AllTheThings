@@ -473,13 +473,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7301, {	-- Fallen Sky Lords (Alliance)
 					["qg"] = 13319,	-- Commander Duffy
 					["coord"] = { 49.0, 14.6, ALTERAC_VALLEY },
-					["timeline"] = { "removed 2.3.0", "added 9.0.1" },
+					["timeline"] = { "removed 2.3.0", ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7302, {	-- Fallen Sky Lords (Horde)
 					["qg"] = 13153,	-- Commander Mulfort
 					["coord"] = { 49.5, 88.2, ALTERAC_VALLEY },
-					["timeline"] = { "removed 2.3.0", "added 9.0.1" },
+					["timeline"] = { "removed 2.3.0", ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(7361, {	-- Favor Amongst the Darkspear
