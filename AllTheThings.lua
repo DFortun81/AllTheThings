@@ -329,6 +329,7 @@ local FunctionRunnerCoroutine = function()
 	local i, perFrame = 1, Config.PerFrame;
 	local params;
 	local func = FunctionQueue[i];
+	-- app.PrintDebug("FRC.Running")
 	while func do
 		perFrame = perFrame - 1;
 		params = ParameterBucketQueue[i];
@@ -8300,6 +8301,14 @@ local questFields = {
 		return "questID";
 	end,
 	["name"] = function(t)
+		-- optional to provide a 'type' for a quest to utilize the automatic header generation for the name
+		if t.type then
+			local type, id = strsplit(":", t.type);
+			local name, icon = app.GetAutomaticHeaderData(id, type);
+			rawset(t, "name", name);
+			rawset(t, "icon", icon);
+			return name;
+		end
 		return QuestTitleFromID[t.questID];
 	end,
 	["objectiveInfo"] = function(t)
@@ -8923,7 +8932,7 @@ end
 -- end
 --]]
 
--- Vignette Lib
+-- Vignette Sub-Lib
 (function()
 local function BuildTextFromNPCIDs(t, npcIDs)
 	if not npcIDs or #npcIDs == 0 then app.report("Invalid Vignette! "..(t.hash or "[NOHASH]")) end
@@ -8990,7 +8999,7 @@ app.CreateQuest = function(id, t)
 	end
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
-end)();
+end)();	-- Vignette Sub-Lib
 
 app:RegisterEvent("QUEST_SESSION_JOINED");
 end)();
@@ -13174,49 +13183,53 @@ local HeaderTypeAbbreviations = {
 };
 -- Alternate functions to attach data into a table based on an id for a given type code
 local AlternateDataTypes = {
-	["ac"] = function(t, id)
-		t.name = GetCategoryInfo(id);
+	["ac"] = function(id)
+		local name = GetCategoryInfo(id);
+		return name;
 	end,
-	["crit"] = function(t, id)
+	["crit"] = function(id)
 		local ach = math.floor(id);
 		local crit = math.floor(100 * (id - ach) + 0.005);
 		local name = GetAchievementCriteriaInfo(ach, crit);
-		t.name = name;
+		return name;
 	end,
-	["d"] = function(t, id)
+	["d"] = function(id)
 		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
-		t.name = name;
-		t.icon = textureFilename;
+		return name, textureFilename;
 	end,
-	["df"] = function(t, id)
+	["df"] = function(id)
 		local aid = math.floor(id);
 		local hid = math.floor(10000 * (id - aid) + 0.005);
 		id = app.FactionID == Enum.FlightPathFaction.Alliance and tonumber(aid) or tonumber(hid);
 		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
-		t.name = name;
-		t.icon = textureFilename;
+		return name, textureFilename;
 	end,
 };
+-- Returns the 'name' and 'icon' values to use for a given id/type automatic name lookup
+local function GetAutomaticHeaderData(id, type)
+	local altFunc = AlternateDataTypes[type];
+	if altFunc then
+		return altFunc(id);
+	else
+		local typeID = HeaderTypeAbbreviations[type] or type;
+		local obj = app.SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id});
+		if obj then
+			-- app.PrintDebug("Automatic Header",obj.name or obj.link)
+			return (obj.name or obj.link), obj.icon;
+		else
+			app.print("Failed finding object/function for automatic header",type,id);
+		end
+	end
+end
 local cache = app.CreateCache("headerCode");
 local function CacheInfo(t, field)
 	local type = t.type;
 	if not type then return; end
 	local id = t.headerID;
 	local _t = cache.GetCached(t);
-	local altFunc = AlternateDataTypes[type];
-	if altFunc then
-		altFunc(_t, id);
-	else
-		local typeID = HeaderTypeAbbreviations[type] or type;
-		local obj = app.SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id});
-		if obj then
-			-- app.PrintDebug("Automatic Header",obj.name or obj.link)
-			_t.name = obj.name or obj.link;
-			_t.icon = obj.icon;
-		else
-			app.print("Failed finding object/function for automatic header",t.headerCode);
-		end
-	end
+	local name, icon = GetAutomaticHeaderData(id, type);
+	_t.name = name;
+	_t.icon = icon;
 	if field then return _t[field]; end
 end
 
@@ -13286,6 +13299,8 @@ app.BaseAutomaticHeader = app.BaseObjectFields(fields, "BaseAutomaticHeader");
 app.CreateHeader = function(id, t)
 	return setmetatable(constructor(id, t, "headerID"), app.BaseAutomaticHeader);
 end
+-- Allows for directly accessing the Automatic Header Name logic for a specific ID/Type combination
+app.GetAutomaticHeaderData = GetAutomaticHeaderData;
 app.CreateNPC = function(id, t)
 	if t then
 		-- TEMP: clean MoH tagging from random Vendors
@@ -14904,6 +14919,7 @@ end
 local function TopLevelUpdateGroup(group)
 	group.total = 0;
 	group.progress = 0;
+	-- app.PrintDebug("TLUG",group.hash)
 	local ItemBindFilter = app.ItemBindFilter;
 	if ItemBindFilter ~= app.NoFilter and ItemBindFilter(group) then
 		app.ItemBindFilter = app.NoFilter;
@@ -14920,6 +14936,7 @@ local function TopLevelUpdateGroup(group)
 		end
 	end
 	if group.OnUpdate then group.OnUpdate(group); end
+	-- app.PrintDebugPrior("TLUG",group.hash)
 end
 app.TopLevelUpdateGroup = TopLevelUpdateGroup;
 -- For directly applying the full Update operation at the specified group, and propagating the difference upwards in the parent hierarchy,

@@ -1,7 +1,15 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+-- Simple function for First Craft tracking Quests
+local function FirstCraft(questID, recipeID, added)
+	local t = { ["questID"] = questID, ["type"] = HEADERS.Spell..":"..recipeID };
+	if added then
+		t.timeline = { added };
+	end
+	return t;
+end
+root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	i(190456),	-- Artisan's Mettle
 	-- Optional
 	i(190455),	-- Concentrated Primal Focus
@@ -341,7 +349,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			["requireSkill"] = BLACKSMITHING,
 		},{
 			-- Smelting --
-			q(71353, { ["name"] = "First Craft: Frostfire Alloy", }),
+			FirstCraft(71353, 367712);	-- Frostfire Alloy
 			q(71355, { ["name"] = "First Craft: Infurious Alloy", }),
 			q(71354, { ["name"] = "First Craft: Obsidian Seared Alloy", }),
 			q(71352, { ["name"] = "First Craft: Primal Molten Alloy", }),
