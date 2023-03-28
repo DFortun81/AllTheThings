@@ -5,7 +5,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 	m(ZARALEK_CAVERN, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 17739, {	-- Embers of Neltharion
-					-- Chapter 1
+					-- Chapter 1 --
+				q(75528, {	-- A Tester's Guide to Entering Zaralek [Probably NYI on live?]
+					["provider"] = { "n", 204252 },	-- Questaniffen
+					["coord"] = { 49.7, 55.3, VALDRAKKEN },
+				}),
 				q(72975, {	-- The Land Beneath: Zaralek Cavern!
 					["maps"] = { VALDRAKKEN },
 				}),
@@ -715,6 +719,33 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205254),	-- Honoary Explorer's Compass
 				},
 			}),
+
+			n(BONUS_OBJECTIVES, sharedData({ ["repeatable"] = true }, {
+				q(75455, {	-- Conspiracy of Flames
+					["coord"] = { 32.1, 42.7, ZARALEK_CAVERN },
+				}),
+				q(75451, {	-- Imperfect Balance
+					["coord"] = { 36.3, 52.2, ZARALEK_CAVERN },
+				}),
+				q(75454, {	-- Mortar Warfare
+					["coord"] = { 39.8, 43.7, ZARALEK_CAVERN },
+				}),
+				q(75450, {	-- Seismic Ceremony
+					["coord"] = { 34.1, 47.1, ZARALEK_CAVERN },
+				}),
+				q(75222, {	-- Shellfire
+					["coord"] = { 58.1, 49.5, ZARALEK_CAVERN },
+				}),
+				q(75370, {	-- Smellincense
+					["coord"] = { 60.8, 55.5, ZARALEK_CAVERN },
+				}),
+				q(75441, {	-- Smelly Scramble
+					["coord"] = { 57.6, 57.1, ZARALEK_CAVERN },
+				}),
+				q(75156, {	-- Stress Express
+					["coord"] = { 64.5, 51.4, ZARALEK_CAVERN },
+				}),
+			})),
 		}),
 	}),
 })));
