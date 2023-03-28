@@ -1418,7 +1418,11 @@ app.L = {
 		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Dragonriding Racing
 		[-1143] = 237274,																			-- Every 30 min Rare
 		[-1144] = "Interface\\Icons\\inv_scroll_11",												-- Weekly Profession Header
+		[-1150] = "Interface\\Icons\\ui_majorfaction_niffen",										-- Loamm Niffen
+		[-1151] = "Interface\\Icons\\achievement_guildperk_bartering",								-- Bartering
 		[-1200] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_ring_4_omni",					-- Zskera Vaults
+		[-1201] = "Interface\\Icons\\inv_shadowflame_missile",										-- Researchers Under Fire Scenario
+		[-1202] = "Interface\\Icons\\inv_fyrakk_dragonbreath",										-- Fyrakk Assaults
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1967,8 +1971,12 @@ app.L = {
 		[-1142] = GetSpellInfo(400433),												-- Dragonriding Racing
 		[-1143] = "DF Rare Rotation",												-- DF Rare Rotation (Every 30 min Rare)
 		[-1144] = "Weekly Profession Knowledge",									-- Weekly Profession Header
+		[-1150] = "Loamm Niffen",													-- Loamm Niffen
+		[-1151] = "Bartering",														-- Bartering
 		[-1200] = "Zskera Vaults",													-- Zskera Vaults
-	-- Warrior order hall lore items
+		[-1201] = "Researchers Under Fire Scenario",								-- Researchers Under Fire Scenario
+		[-1202] = "Fyrakk Assaults",												-- Fyrakk Assaults
+ 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",
 		[-2202] = "Halls of Gold and Glory",
