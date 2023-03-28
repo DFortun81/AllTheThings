@@ -6225,6 +6225,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(23349, {	-- Battleworn Shoes
 							["timeline"] = { ADDED_10_0_5 }
 						}),
+						i(23472, {	-- Rugged Trapper's Boots
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(23471, {	-- Rugged Trapper's Pants
+							["timeline"] = { ADDED_10_0_5 }
+						}),
 						i(6118, {	-- Squire's Pants
 							["timeline"] = { ADDED_10_0_5 }
 						}),

@@ -2589,10 +2589,7 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				-- JC
-				i(204406),	-- Ancient Design: Square Holders (RECIPE!)
 				i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
-				-- JC
-				i(204404),	-- Square Holders
 				--
 				i(204224),	-- Speck of Arcane Awareness
 				i(204225),	-- Perfect Windfeather
