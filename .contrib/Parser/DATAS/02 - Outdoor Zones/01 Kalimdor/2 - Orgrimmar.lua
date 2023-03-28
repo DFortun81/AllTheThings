@@ -6991,6 +6991,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(2130),	-- Club
+						i(2131),	-- Shortsword
 					},
 				}),
 				n(45546, {	-- Vizna Bangwrench <Engineering Supplies>

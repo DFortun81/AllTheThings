@@ -1495,6 +1495,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 					-- added all
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 2523 },	-- Bullova
+						{"select", "itemID", 2528 },	-- Falchion
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2531 },	-- Great axe
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2525 },	-- War Hammer
+						{"select", "itemID", 2533 },	-- War Maul
+						{"select", "itemID", 2529 },	-- Zweihander
+					},
+				}),
+				n(4556, {	-- Gordon Wendham
+					["coord"] = { 61.4, 41.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+					-- added all
 						{"select", "itemID", 1194 },	-- Bastard Sword
 						{"select", "itemID", 2479 },	-- Broad Axe
 						{"select", "itemID", 2130 },	-- Club
@@ -1511,23 +1528,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 2489 },	-- Two-Handed Sword
 						{"select", "itemID", 2495 },	-- Walking Stick
 						{"select", "itemID", 2493 },	-- Wooden Mallet
-					},
-				}),
-				n(130974, {	-- Gordon Wendham
-					["coord"] = { 61.4, 41.2, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["sym"] = {
-					-- added all
-						{"select", "itemID", 2520 },	-- Broadsword
-						{"select", "itemID", 2523 },	-- Bullova
-						{"select", "itemID", 2528 },	-- Falchion
-						{"select", "itemID", 2521 },	-- Flamberge
-						{"select", "itemID", 2531 },	-- Great Axe
-						{"select", "itemID", 2526 },	-- Main Gauche
-						{"select", "itemID", 2534 },	-- Rondel
-						{"select", "itemID", 2525 },	-- War Hammer
-						{"select", "itemID", 2533 },	-- War Maul
-						{"select", "itemID", 2529 },	-- zweihander
 					},
 				}),
 				n(8403, {	-- Jeremiah Payson <Cockroach Vendor>
