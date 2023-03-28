@@ -797,9 +797,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.6, 62.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2024 },	-- Espadon
-						{"select", "itemID", 2208 },	-- Poniard
-						{"select", "itemID", 2027 },	-- Scimitar
+						{"select", "itemID", 2025 }, -- bearded axe
+						{"select", "itemID", 1194 }, -- bastard sword
+						{"select", "itemID", 2479 }, -- broad axe
+						{"select", "itemID", 1198 }, -- claymore
+						{"select", "itemID", 2130 }, -- club
+						{"select", "itemID", 2029 }, -- cleaver
+						{"select", "itemID", 2492 }, -- cudgel
+						{"select", "itemID", 851 }, -- cutlass
+						{"select", "itemID", 2139 }, -- dirk
+						{"select", "itemID", 2024 }, -- espadon
+						{"select", "itemID", 2488 }, -- gladius
+						{"select", "itemID", 2030 }, -- gnarled staff
+						{"select", "itemID", 1197 }, -- giant mace
+						{"select", "itemID", 2134 }, -- hand axe
+						{"select", "itemID", 853 }, -- hatchet
+						{"select", "itemID", 2511 }, -- hunters boomstick
+						{"select", "itemID", 2207 }, -- jambiya
+						{"select", "itemID", 2491 }, -- large axe
+						{"select", "itemID", 2480 }, -- large club
+						{"select", "itemID", 852 }, -- mace
+						{"select", "itemID", 2509 }, -- ornate blunderbuss
+						{"select", "itemID", 2208 }, -- poniard
+						{"select", "itemID", 854 }, -- quarter staff
+						{"select", "itemID", 2026 }, -- rock hammer
+						{"select", "itemID", 2027 }, -- scimitar
+						{"select", "itemID", 2132 }, -- short staff
+						{"select", "itemID", 2131 }, -- shortsword
+						{"select", "itemID", 2494 } -- stiletto
 					},
 				}),
 				n(3021, {	-- Kard Ragetotem

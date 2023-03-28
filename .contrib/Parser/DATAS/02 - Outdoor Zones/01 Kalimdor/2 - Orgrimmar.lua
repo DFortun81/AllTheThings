@@ -6990,7 +6990,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 851 },		-- Cutlass
 					},
 					["groups"] = {
+						i(1194),	-- Bastard Sword
 						i(2130),	-- Club
+						i(2479),	-- Broad Axe
+						i(2134),	-- Hand Axe
 						i(2131),	-- Shortsword
 					},
 				}),
