@@ -6726,33 +6726,50 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2529),	-- Zweihander
 					},
 				}),
+				n(1348, {	-- Gregory Ardus
+					["coord"] = { 48.2, 54.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2492),	-- Cudgel
+						i(925),	-- Flail
+						i(1197),	-- Giant Mace
+						i(2030),	-- Gnarled Staff
+						i(2028),	-- Hammer
+						i(928),	-- Long Staff
+						i(852),	-- Mace
+						i(924),	-- Maul
+						i(854),	-- Quarter Staff
+						i(2026),	-- Rock Hammer
+						i(2493),	-- Wooden Mallet
+					},
+				}),
 				n(1289, {	-- Gunther Weller <Weapons Merchant>
 					["coord"] = { 64.0, 68.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 					-- added all
-						i(926),	-- battle axe
+						i(926),		-- battle axe
 						i(2025),	-- bearded axe
 						i(1198),	-- claymore
 						i(2029),	-- cleaver
-						i(851),	-- cutlass
-						i(922),	-- dacian falx
-						i(927),	-- double axe
+						i(851),		-- cutlass
+						i(922),		-- dacian falx
+						i(927),		-- double axe
 						i(2024),	-- espadon
-						i(925),	-- flail
+						i(925),		-- flail
 						i(1197),	-- giant mace
 						i(2030),	-- gnarled staff
 						i(2028),	-- hammer	
-						i(853),	-- hatchet
+						i(853),		-- hatchet
 						i(15811),	-- heavy spear
 						i(2207),	-- jambiya
 						i(2209),	-- kris
-						i(923),	-- longsword
-						i(928),	-- long staff
-						i(852),	-- mace
-						i(924),	-- maul
+						i(923),		-- longsword
+						i(928),		-- long staff
+						i(852),		-- mace
+						i(924),		-- maul
 						i(2208),	-- poniard
-						i(854),	-- quarter staff
+						i(854),		-- quarter staff
 						i(2027),	-- scimitar
 						i(2026),	-- rock hammer
 						i(15810),	-- short spear

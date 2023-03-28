@@ -6991,10 +6991,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(1194),	-- Bastard Sword
-						i(2130),	-- Club
 						i(2479),	-- Broad Axe
+						i(1198),	-- Claymore
+						i(2130),	-- Club
+						i(2492),	-- cudgel
+						i(2139),	-- Dirk
+						i(1197),	-- Giant Mace
 						i(2134),	-- Hand Axe
+						i(2488),	-- Gladius
+						i(853),		-- Hatched
+						i(2207),	-- Jambiya
+						i(2491),	-- Large Axe
+						i(2480),	-- Large Club
+						i(852),		-- Mace
+						i(854),		-- Quarter Staff
 						i(2131),	-- Shortsword
+						i(2132),	-- Short Staff
+						i(2494),	-- Stiletto
+						i(1196),	-- Tabar
+						i(2490),	-- Tomahawk
+						i(2489),	-- Two-handed Sword
+						i(2495),	-- Walking Stick
+						i(2493),	-- Wooden Mallet
 					},
 				}),
 				n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
@@ -7042,6 +7060,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
+				}),
+				n(3409, {	-- Zendo'jian <Weapon Vendor>
+					["coord"] = { 75.0, 36.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2495 },	-- Walking Stick
 					},
 				}),
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>

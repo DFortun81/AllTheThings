@@ -611,17 +611,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(5208),	-- Smoldering Wand	-- sold by many vendors
 			}),
 			---
-			i(2480),	-- Large Club
-			i(2139),	-- Dirk
-			i(2132),	-- Short Staff
-			i(2489),	-- Two-Handed Sword
-			i(2492),	-- Cudgel
-			i(2491),	-- Large Axe
-			i(2494),	-- Stiletto
-			i(2495),	-- Walking Stick
-			i(2488),	-- Gladius
-			i(2490),	-- Tomahawk
-			i(2493),	-- Wooden Mallet
 			i(1198),	-- Claymore
 			i(853),		-- Hatchet
 			i(1196),	-- Tabar

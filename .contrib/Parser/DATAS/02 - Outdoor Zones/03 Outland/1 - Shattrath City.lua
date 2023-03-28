@@ -2743,6 +2743,9 @@ root(ROOTS.Zones, {
 					n(19238, {	-- Urumir Stavebright <Staff Vendor>
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 						["coord"] = { 49.6, 79.0, SHATTRATH_CITY },
+						["sym"] = {
+							{"select", "itemID", 2495 },	-- Walking Stick
+						},
 						["groups"] = {
 							i(12252, {	-- Staff of Protection
 								["isLimited"] = true,
