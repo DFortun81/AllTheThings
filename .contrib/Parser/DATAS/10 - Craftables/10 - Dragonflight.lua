@@ -1542,7 +1542,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(72018, { ["name"] = "First Craft: Cliffside Wylderdrake: Steel and Yellow Armor", }),
 			q(71533, { ["name"] = "First Craft: Cliffside Wylderdrake: Triple Head Horns", }),
 			-- Artisan Curios
-			q(74481, { ["name"] = "First Craft: Arcane Dispelling Rune", ["timeline"] = {ADDED_10_0_7 }}),
+			q(74481, { ["name"] = "First Craft: Arcane Dispelling Rune", ["timeline"] = {ADDED_10_0_7}}),
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
@@ -1602,7 +1602,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(199170), 	-- Fated Fortune Card
 		}),
 		filter(MISC, {
-			i(203412, {["timeline"] = {ADDED_10_0_7 }}),	-- Arcane Dispelling Rune
+			i(203412, {["timeline"] = {ADDED_10_0_7}}),	-- Arcane Dispelling Rune
 			i(194871),	-- Azurescale Sigil+
 			i(199051),	-- Azurescale Sigil++
 			i(199052),	-- Azurescale Sigil+++
@@ -1893,31 +1893,103 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		n(FIRST_CRAFT_HEADER, sharedData({
 			["requireSkill"] = JEWELCRAFTING,
 		},{
-			-- Unsorted
-			q(71645, { ["name"] = "First Craft: Radiant Malygite", }),	-- Not commenting these, it's right there in the name
-			q(71609, { ["name"] = "First Craft: Crimson Combatant's Jeweled Signet", }),
-			q(71608, { ["name"] = "First Craft: Crimson Combatant's Jeweled Amulet", }),
-			q(71635, { ["name"] = "First Craft: Keen Neltharite", }),
-			q(71643, { ["name"] = "First Craft: Energized Malygite", }),
-			q(71637, { ["name"] = "First Craft: Sensei's Neltharite", }),
+			-- Reagents
+			q(71674, { ["name"] = "First Craft: Elemental Harmony", }),
+			q(71647, { ["name"] = "First Craft: Blotting Sand", }),
 			q(71648, { ["name"] = "First Craft: Pounce", }),
+			q(71862, { ["name"] = "First Craft: Empty Soul Cage", }),
 			q(71673, { ["name"] = "First Craft: Draconic Vial", }),
-			q(71654, { ["name"] = "First Craft: Jeweled Dragon's Heart", }),
-			q(71677, { ["name"] = "First Craft: Jeweled Offering", }),
-			q(71678, { ["name"] = "First Craft: Convergent Prism", }),
-			q(71625, { ["name"] = "First Craft: Crafty Queen's Ruby", }),
-			q(71650, { ["name"] = "First Craft: Projection Prism", }),
-			q(71665, { ["name"] = "First Craft: Sundered Onyx Loupe", }),
 			q(71675, { ["name"] = "First Craft: Frameless Lens", }),
-			q(71602, { ["name"] = "First Craft: Pendant of Impending Perils", }),
+			q(71676, { ["name"] = "First Craft: Glossy Stone", }),
 			q(71672, { ["name"] = "First Craft: Shimmering Clasp", }),
-			q(71611, { ["name"] = "First Craft: Kalu'ak Figurine", }),
-			q(71666, { ["name"] = "First Craft: Alexstraszite Loupes", }),
-			q(71663, { ["name"] = "First Craft: Fine-Print Trifocals", }),
-			q(71616, { ["name"] = "First Craft: Split-Lens Specs", }),
+			-- Rudimentary Gems
+			q(71625, { ["name"] = "First Craft: Crafty Queen's Ruby", }),
+			q(71623, { ["name"] = "First Craft: Energized Vibrant Emerald", }),
+			q(71624, { ["name"] = "First Craft: Sensei's Sundered Onyx", }),
+			q(71622, { ["name"] = "First Craft: Solid Eternity Amber", }),
+			q(71626, { ["name"] = "First Craft: Zen Mystic Sapphire", }),
+			-- Air Gems
+			q(71639, { ["name"] = "First Craft: Crafty Alexstraszite", }), 
+			q(71643, { ["name"] = "First Craft: Energized Malygite", }),
+			q(71627, { ["name"] = "First Craft: Forceful Nozdorite", }),
+			q(71635, { ["name"] = "First Craft: Keen Neltharite", }),
+			q(71631, { ["name"] = "First Craft: Quick Ysemerald", }),
+			-- Earth Gems
+			q(71636, { ["name"] = "First Craft: Fractured Neltharite", }),
+			q(71632, { ["name"] = "First Craft: Keen Ysemerald", }),
+			q(71628, { ["name"] = "First Craft: Puissant Nozdorite", }),
+			q(71640, { ["name"] = "First Craft: Sensei's Alexstraszite", }),
+			q(71644, { ["name"] = "First Craft: Zen Malygite", }),
+			-- Fire Gems
+			q(71633, { ["name"] = "First Craft: Crafty Ysemerald", }),
+			q(71641, { ["name"] = "First Craft: Deadly Alexstraszite", }),
+			q(71629, { ["name"] = "First Craft: Jagged Nozdorite", }),
+			q(71645, { ["name"] = "First Craft: Radiant Malygite", }),
+			q(71637, { ["name"] = "First Craft: Sensei's Neltharite", }),
+			-- Frost Gems
+			q(71634, { ["name"] = "First Craft: Energized Ysemerald", }),
+			q(71642, { ["name"] = "First Craft: Radiant Alexstraszite", }),
+			q(71630, { ["name"] = "First Craft: Steady Nozdorite", }),
+			q(71646, { ["name"] = "First Craft: Stormy Malygite", }),
+			q(71638, { ["name"] = "First Craft: Zen Neltharite", }),
+			-- Primalist Gems
+			q(71617, { ["name"] = "First Craft: Fierce Illimited Diamond", }),
+			q(71619, { ["name"] = "First Craft: Inscribed Illimited Diamond", }),
+			q(71620, { ["name"] = "First Craft: Resplendent Illimited Diamond", }),
+			q(71618, { ["name"] = "First Craft: Skillful Illimited Diamond", }),
+			-- Misc
+			q(71657, { ["name"] = "First Craft: Tiered Medallion Setting", }), 
+			-- Trinkets
+			q(71679, { ["name"] = "First Craft: Idol of the Dreamer", }),
+			q(71680, { ["name"] = "First Craft: Idol of the Earth Warder", }),
+			q(71681, { ["name"] = "First Craft: Idol of the Lifebinder", }),
+			q(71682, { ["name"] = "First Craft: Idol of the Spellweaver", }),
+			-- Jewelry
 			q(71604, { ["name"] = "First Craft: Choker of Shielding", }),
-			q(71605, { ["name"] = "First Craft: Signet of Titanic Insight", }),
+			q(71603, { ["name"] = "First Craft: Elemental Lariat", }),
 			q(71606, { ["name"] = "First Craft: Ring-Bound Hourglass", }),
+			q(71605, { ["name"] = "First Craft: Signet of Titanic Insight", }),
+			q(72349, { ["name"] = "First Craft: Torc of Passed Time", }),
+			q(71608, { ["name"] = "First Craft: Crimson Combatant's Jeweled Amulet", }),
+			q(71609, { ["name"] = "First Craft: Crimson Combatant's Jeweled Signet", }),
+			q(71607, { ["name"] = "First Craft: Band of New Beginnings", }),
+			q(71602, { ["name"] = "First Craft: Pendant of Impending Perils", }),
+			-- Statues & Carvings
+			q(71614, { ["name"] = "First Craft: Djaradin's 'Pinata'", }),
+			q(71611, { ["name"] = "First Craft: Kalu'ak Figurine", }),
+			q(71613, { ["name"] = "First Craft: Narcissist's Sculpture", }),
+			q(71612, { ["name"] = "First Craft: Revitalizing Red Carving", }),
+			q(71610, { ["name"] = "First Craft: Statue of Tyr's Herald", }),
+			-- Battle Pets
+			q(71667, { ["name"] = "First Craft: Jeweled Amber Whelpling", }),
+			q(71668, { ["name"] = "First Craft: Jeweled Emerald Whelpling", }),
+			q(71669, { ["name"] = "First Craft: Jeweled Onyx Whelpling", }),
+			q(71670, { ["name"] = "First Craft: Jeweled Ruby Whelpling", }),
+			q(71671, { ["name"] = "First Craft: Jeweled Sapphire Whelpling", }),
+			-- Novelties
+			q(71615, { ["name"] = "First Craft: 'Rhinestone' Sunglasses", }),
+			q(71678, { ["name"] = "First Craft: Convergent Prism", }),
+			q(71677, { ["name"] = "First Craft: Jeweled Offering", }),
+			q(71650, { ["name"] = "First Craft: Projection Prism", }),
+			q(71616, { ["name"] = "First Craft: Split-Lens Specs", }),
+			-- Profession Equipment
+			q(71666, { ["name"] = "First Craft: Alexstraszite Loupes", }),
+			q(71661, { ["name"] = "First Craft: Bold-Print Bifocals", }),
+			q(71659, { ["name"] = "First Craft: Chromatic Focus", }),
+			q(71663, { ["name"] = "First Craft: Fine-Print Trifocals", }),
+			q(71662, { ["name"] = "First Craft: Left-Handed Magnifying Glass", }),
+			q(71664, { ["name"] = "First Craft: Magnificent Margin Magnifier", }),
+			q(71660, { ["name"] = "First Craft: Resonant Focus", }),
+			q(71665, { ["name"] = "First Craft: Sundered Onyx Loupe", }),
+			-- Extravagant Glasswares
+			q(71655, { ["name"] = "First Craft: Dreamer's Vision", }),
+			q(71651, { ["name"] = "First Craft: Earthwarden's Prize", }),
+			q(71654, { ["name"] = "First Craft: Jeweled Dragon's Heart", }),
+			q(71652, { ["name"] = "First Craft: Keeper's Glory", }),
+			q(71656, { ["name"] = "First Craft: Queen's Gift", }),
+			q(71653, { ["name"] = "First Craft: Timewatcher's Patience", }),
+			-- Artisan Curios
+			--q(TODO, { ["name"] = "First Craft: Crystal Tuning Fork", ["timeline"] = {ADDED_10_0_7}}),
 		})),
 		filter(BATTLE_PETS, {
 			i(193885),	-- Jeweled Amber Whelpling (PET!)
@@ -2535,108 +2607,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		}),
 		prof(BLACKSMITHING, {
 			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom
-		}),
-		--[[
-		prof(COOKING, {
-		}),
-		prof(ENCHANTING, {
-		}),
-		prof(ENGINEERING, {
-		}),
-		prof(FISHING, {
-		}),
-		--]]
-		prof(JEWELCRAFTING, {
-			-- Reagents
-			q(71647),	-- Blotting Sand
-			q(71674),	-- Elemental Harmony
-			q(71862),	-- Empty Soul Cage
-			q(71676),	-- Glossy Stone
-			-- q(),	-- Illustrious Insight
-			-- q(),	-- Pounce
-			-- Rudimentary Gems
-			q(71623),	-- Energized Vibrant Emerald
-			q(71624),	-- Sensei's Sundered Onyx
-			q(71622),	-- Solid Eternity Amber
-			q(71626),	-- Zen Mystic Sapphire
-			-- Air Gems
-			-- q(),	-- Crafty Alexstraszite
-			-- q(),	-- Energized Malygite
-			q(71627),	-- Forceful Nozdorite
-			-- q(),	-- Keen Neltharite
-			q(71631),	-- Quick Ysemerald
-			-- Earth Gems
-			q(71636),	-- Fractured Neltharite
-			q(71632),	-- Keen Ysemerald
-			q(71628),	-- Puissant Nozdorite
-			q(71640),	-- Sensei's Alexstraszite
-			q(71644),	-- Zen Malygite
-			-- Fire Gems
-			-- q(),	-- Crafty Ysemerald
-			-- q(),	-- Deadly Alexstraszite
-			q(71629),	-- Jagged Nozdorite
-			-- q(),	-- Radiant Malygite
-			-- q(),	-- Sensei's Neltharite
-			-- Frost Gems
-			q(71634),	-- Energized Ysemerald
-			q(71642),	-- Radiant Alexstraszite
-			q(71630),	-- Steady Nozdorite
-			q(71646),	-- Stormy Malygite
-			q(71638),	-- Zen Neltharite
-			-- Primalist Gems
-			q(71617),	-- Fierce Illimited Diamond
-			-- q(71619),	-- Inscribed Illimited Diamond
-			-- q(),	-- Resplendent Illimited Diamond
-			q(71618),	-- Skillful Illimited Diamond
-			-- Misc
-			-- q(71657),	-- Tiered Medallion Setting
-			-- Trinkets
-			-- q(),	-- Idol of the Earth Warder
-			-- q(),	-- Idol of the Dreamer
-			-- q(),	-- Idol of the Lifebinder
-			-- q(),	-- Idol of the Spellweaver
-			-- Jewelry
-			q(71607),	-- Band of New Beginnings
-			-- q(),	-- Choker of Shielding
-			-- q(),	-- Crimson Combatant's Jeweled Amulet
-			-- q(),	-- Crimson Combatant's Jeweled Signet
-			q(71603),	-- Elemental Lariat
-			q(71602),	-- Pendant of Impending Perils
-			-- q(),	-- Ring-Bound Hourglass
-			q(72349),	-- Torc of Passed Time
-			-- Statues & Carvings
-			q(71614),	-- Djaradin's "Pinata"
-			-- q(),	-- Kalu'ak Figurine
-			-- q(),	-- Narcissist's Sculpture
-			q(71612),	-- Revitalizing Red Carving
-			-- q(),	-- Statue of Tyr's Herald
-			-- Battle Pets
-			-- q(),	-- Jeweled Amber Whelpling
-			-- q(),	-- Jeweled Emerald Whelpling
-			q(71669),	-- Jeweled Onyx Whelpling
-			q(71670),	-- Jeweled Ruby Whelpling
-			-- q(),	-- Jeweled Sapphire Whelpling
-			-- Novelties
-			q(71615),	-- "Rhinestone" Sunglasses
-			-- q(),	-- Covergent Prism
-			-- q(),	-- Jeweled Offering
-			-- q(),	-- Projection Prism
-			-- q(),	-- Split-Lens Specs
-			-- Profession Equipment
-			-- q(),	-- Alexstraszite Loupes
-			q(71661),	-- Bold-Print Bifocals
-			q(71659),	-- Chromatic Focus
-			-- q(),	-- Fine-Print Trifocals
-			q(71662),	-- Left-Handed Magnifying Glass
-			q(71664),	-- Magnificent Margin Magnifier
-			-- q(),	-- Resonant Focus
-			-- Extravagant Glasswares
-			q(71655),	-- Dreamer's Vision
-			q(71651),	-- Earthwarden's Prize
-			q(71654),	-- Jeweled Dragon's Heart
-			q(71652),	-- Keeper's Glory
-			q(71656),	-- Queen's Gift
-			q(71653),	-- Timewatcher's Patience
 		}),
 		prof(LEATHERWORKING, {
 			-- Leather Armor
