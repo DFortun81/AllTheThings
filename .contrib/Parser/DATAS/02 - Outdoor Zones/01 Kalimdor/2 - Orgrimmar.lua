@@ -6479,6 +6479,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(2520),	-- Broadsword
+						i(1198),	-- Claymore
 						i(851),		-- Cutlass
 						i(922),		-- Dacian Falx
 						i(2024),	-- Espadon
@@ -7066,7 +7067,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 75.0, 36.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2495 },	-- Walking Stick
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+						{"select", "itemID", 1196 },    -- Tabar
+						{"select", "itemID", 2495 },    -- Walking Stick
 					},
 				}),
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>

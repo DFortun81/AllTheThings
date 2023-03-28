@@ -1426,7 +1426,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.4, 66.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 1198 },    -- Claymore
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 851 },    -- Cutlass
+						{"select", "itemID", 2024 },    -- Espadon
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 2207 },    -- Jambiya
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 2208 },    -- Poniard
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
+						{"select", "itemID", 2027 },    -- Scimitar
+						{"select", "itemID", 1196 },    -- Tabar
+					},
+				}),
+				n(5119, {	-- Hegnar Swiftaxe
+					["coord"] = { 61.8, 88.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 2522 },    -- Crescent Axe
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 2530 },    -- Francisca
+						{"select", "itemID", 2531 },    -- Great Axe
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 1196 },    -- Tabar
 					},
 				}),
 				n(5170, {	-- Hjoldir Stoneblade

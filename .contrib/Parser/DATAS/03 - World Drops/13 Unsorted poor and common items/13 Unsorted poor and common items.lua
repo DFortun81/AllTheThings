@@ -611,8 +611,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(5208),	-- Smoldering Wand	-- sold by many vendors
 			}),
 			---
-			i(1198),	-- Claymore
-			i(853),		-- Hatchet
 			i(1196),	-- Tabar
 			i(852),		-- Mace
 			i(1197),	-- Giant Mace

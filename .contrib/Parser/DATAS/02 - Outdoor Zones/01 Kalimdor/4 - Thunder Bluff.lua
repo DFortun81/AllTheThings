@@ -764,6 +764,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3019, {	-- Delgo Ragetotem <Axe Merchant>
 					["coord"] = { 53.8, 57.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 2522 },    -- Crescent Axe
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 2530 },    -- Francisca
+						{"select", "itemID", 2531 },    -- Great Axe
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 12249 },    -- Merciless Axe
+						{"select", "itemID", 1196 },    -- Tabar
+					},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
 							["isLimited"] = true,

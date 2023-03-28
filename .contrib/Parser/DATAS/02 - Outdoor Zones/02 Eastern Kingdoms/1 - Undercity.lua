@@ -1490,6 +1490,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(4601, {	-- Francis Eliot
+					["coord"] = { 58.6, 32.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 15811 },    -- Heavy Spear
+						{"select", "itemID", 15810 },    -- Short Spear
+						{"select", "itemID", 1196 },    -- Tabar
+					},
+				}),
 				n(4600, {	-- Geoffrey Hartwell
 					["coord"] = { 58.4, 32.6, UNDERCITY },
 					["races"] = HORDE_ONLY,

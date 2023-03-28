@@ -880,6 +880,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(VENDORS, {
+				n(4234, {	-- Andrus <Staff Merchant>
+					["coord"] = { 54.6, 83.2, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+					-- all done
+						{"select", "itemID", 2527 },	-- Battle Staff
+						{"select", "itemID", 2535 },	-- War Staff
+					},
+				}),
 				n(4203, {	-- Ariyell Skyshadow
 					["coord"] = { 56.6, 52.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
@@ -978,6 +987,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.2, 59.0, DARNASSUS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 2522 },    -- Crescent Axe
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 2530 },    -- Francisca
+						{"select", "itemID", 2531 },    -- Great Axe
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 12249 },    -- Merciless Axe
+						{"select", "itemID", 1196 },    -- Tabar
+					},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
 							["isLimited"] = true,
