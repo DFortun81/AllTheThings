@@ -1909,7 +1909,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71622, { ["name"] = "First Craft: Solid Eternity Amber", }),
 			q(71626, { ["name"] = "First Craft: Zen Mystic Sapphire", }),
 			-- Air Gems
-			q(71639, { ["name"] = "First Craft: Crafty Alexstraszite", }), 
+			q(71639, { ["name"] = "First Craft: Crafty Alexstraszite", }),
 			q(71643, { ["name"] = "First Craft: Energized Malygite", }),
 			q(71627, { ["name"] = "First Craft: Forceful Nozdorite", }),
 			q(71635, { ["name"] = "First Craft: Keen Neltharite", }),
@@ -1938,7 +1938,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71620, { ["name"] = "First Craft: Resplendent Illimited Diamond", }),
 			q(71618, { ["name"] = "First Craft: Skillful Illimited Diamond", }),
 			-- Misc
-			q(71657, { ["name"] = "First Craft: Tiered Medallion Setting", }), 
+			q(71657, { ["name"] = "First Craft: Tiered Medallion Setting", }),
 			-- Trinkets
 			q(71679, { ["name"] = "First Craft: Idol of the Dreamer", }),
 			q(71680, { ["name"] = "First Craft: Idol of the Earth Warder", }),
@@ -2612,6 +2612,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71778, { ["name"] = "First Craft: Hood of Surging Time", }),	-- Not commenting these, it's right there in the name
 			q(72508, { ["name"] = "First Craft: Surveyor's Seasoned Pants", }),
 			q(71838, { ["name"] = "First Craft: Master's Wildercloth Fishing Cap", }),
+			FirstCraft(74318, 400815, ADDED_10_0_7);	-- Traditional Morqut Kite
 		})),
 	}),
 })));
