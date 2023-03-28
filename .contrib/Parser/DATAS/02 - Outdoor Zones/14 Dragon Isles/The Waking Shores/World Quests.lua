@@ -66,9 +66,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(67024, {	-- Smoldering Reinforcement
 					["coord"] = { 53.9, 27.0, THE_WAKING_SHORES },
 				}),
-				q(70651, {	-- Stolen Luggage
-					["coord"] = { 61.6, 49.5, THE_WAKING_SHORES },
-				}),
 				petbattle(q(66588, {	-- Swog the Elder
 					["coord"] = { 25.6, 92.1, THE_WAKING_SHORES },
 				})),

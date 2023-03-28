@@ -56,9 +56,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(70649, {	-- Swab Swog
 					["coord"] = { 81.4, 71.1, OHNAHRAN_PLAINS },
 				}),
-				q(70652, {	-- Take One Down, Pass It Around
-					["coord"] = { 24.5, 34.7, OHNAHRAN_PLAINS }
-				}),
 				q(71154, {	-- Talon Toss: Shooting 101
 					["coord"] = { 60.5, 25.7, OHNAHRAN_PLAINS }
 				}),

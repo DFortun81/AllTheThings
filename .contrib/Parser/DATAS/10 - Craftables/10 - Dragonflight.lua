@@ -2608,11 +2608,100 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		n(FIRST_CRAFT_HEADER, sharedData({
 			["requireSkill"] = TAILORING,
 		},{
-			-- Unsorted
-			q(71778, { ["name"] = "First Craft: Hood of Surging Time", }),	-- Not commenting these, it's right there in the name
+			-- Woven Cloth	--
+			q(71842, { ["name"] = "First Craft: Azureweave Bolt", }),
+			q(71843, { ["name"] = "First Craft: Chornocloth Bolt", }),
+			q(71845, { ["name"] = "First Craft: Infurious Wildercloth Bolt", }),
+			q(71844, { ["name"] = "First Craft: Vibrant Wildercloth Bolt", }),
+			q(71841, { ["name"] = "First Craft: Wildercloth Bolt", }),
+			-- Optional Reagents --
+			q(71827, { ["name"] = "First Craft: Blue Silken Lining", }),
+			q(71828, { ["name"] = "First Craft: Bronzed Grip Wrappings", }),
+			-- Finishing Reagents --
+			q(71819, { ["name"] = "First Craft: Abrasive Polishing Cloth", }),
+			q(71820, { ["name"] = "First Craft: Vibrant Polishing Cloth", }),
+			q(71822, { ["name"] = "First Craft: Chromatic Embroidery Thread", }),
+			q(71821, { ["name"] = "First Craft: Blazing Embroidery Thread", }),
+			q(71823, { ["name"] = "First Craft: Shimmering Embroidery Thread", }),
+			-- Garments --
+			q(71813, { ["name"] = "First Craft: Crimson Combatant's Wildercloth Bands", }),
+			q(71805, { ["name"] = "First Craft: Crimson Combatant's Wildercloth Cloak", }),
+			q(71808, { ["name"] = "First Craft: Crimson Combatant's Wildercloth Gloves", }),
+			q(71809, { ["name"] = "First Craft: Crimson Combatant's Wildercloth Hood", }),
+			q(71810, { ["name"] = "First Craft: Crimson Combatant's Wildercloth Leggings", }),
+			q(71812, { ["name"] = "First Craft: Crimson Combatant's Wildercloth Sash", }),
+			q(71811, { ["name"] = "First Craft: Crimson Combatant's Wildercloth Shoulderpads", }),
+			q(71807, { ["name"] = "First Craft: Crimson Combatant's Wildercloth Treads", }),
+			q(71806, { ["name"] = "First Craft: Crimson Combatant's Wildercloth Tunic", }),
+			q(71803, { ["name"] = "First Craft: Vibrant Wildercloth Girdle", }),
+			q(71799, { ["name"] = "First Craft: Vibrant Wildercloth Handwraps", }),
+			q(71800, { ["name"] = "First Craft: Vibrant Wildercloth Headcover", }),
+			q(71796, { ["name"] = "First Craft: Vibrant Wildercloth Shawl", }),
+			q(71802, { ["name"] = "First Craft: Vibrant Wildercloth Shoulderspikes", }),
+			q(71801, { ["name"] = "First Craft: Vibrant Wildercloth Slacks", }),
+			q(71798, { ["name"] = "First Craft: Vibrant Wildercloth Slippers", }),
+			q(71797, { ["name"] = "First Craft: Vibrant Wildercloth Vestments", }),
+			q(71804, { ["name"] = "First Craft: Vibrant Wildercloth Wristwrap", }),
+			q(71795, { ["name"] = "First Craft: Surveyor's Cloth Bands", }),
+			q(71793, { ["name"] = "First Craft: Surveyor's Cloth Robe", }),
+			q(71794, { ["name"] = "First Craft: Surveyor's Cloth Treads", }),
+			q(72504, { ["name"] = "First Craft: Surveyor's Seasoned Cord", }),
+			q(72506, { ["name"] = "First Craft: Surveyor's Seasoned Gloves", }),
+			q(72507, { ["name"] = "First Craft: Surveyor's Seasoned Hood", }),
 			q(72508, { ["name"] = "First Craft: Surveyor's Seasoned Pants", }),
+			q(72509, { ["name"] = "First Craft: Surveyor's Seasoned Shoulders", }),
+			q(71792, { ["name"] = "First Craft: Surveyor's Tailored Cloak", }),
+			-- Azureweave Garments --
+			q(71779, { ["name"] = "First Craft: Amice of the Blue", }),
+			q(71788, { ["name"] = "First Craft: Azureweave Mantle", }),
+			q(71786, { ["name"] = "First Craft: Azureweave Robe", }),
+			q(71787, { ["name"] = "First Craft: Azureweave Slippers", }),
+			q(71782, { ["name"] = "First Craft: Blue Dragon Soles", }),
+			q(71780, { ["name"] = "First Craft: Infurious Handwraps of Gesticulation", }),
+			-- Chronocloth Garments --
+			q(71783, { ["name"] = "First Craft: Allied Cinch of Time Dilation", }),
+			q(71789, { ["name"] = "First Craft: Chronocloth Gloves", }),
+			q(71790, { ["name"] = "First Craft: Chronocloth Leggings", }),
+			q(71791, { ["name"] = "First Craft: Chronocloth Sash", }),
+			q(71778, { ["name"] = "First Craft: Hood of Surging Time", }),
+			q(71781, { ["name"] = "First Craft: Infurious Legwraps of Possibility", }),
+			-- Profession Garments --
+			q(71832, { ["name"] = "First Craft: Dragoncloth Tailoring Vestments", }),
+			q(71830, { ["name"] = "First Craft: Master's Wildercloth Alchemist's Robe", }),
+			q(71834, { ["name"] = "First Craft: Master's Wildercloth Chef's Hat", }),
+			q(71836, { ["name"] = "First Craft: Master's Wildercloth Enchanter's Hat", }),
 			q(71838, { ["name"] = "First Craft: Master's Wildercloth Fishing Cap", }),
-			FirstCraft(74318, 400815, ADDED_10_0_7);	-- Traditional Morqut Kite
+			q(71840, { ["name"] = "First Craft: Master's Wildercloth Gardening Hat", }),
+			q(71829, { ["name"] = "First Craft: Wildercloth Alchemist's Robe", }),
+			q(71833, { ["name"] = "First Craft: Wildercloth Chef's Hat", }),
+			q(71835, { ["name"] = "First Craft: Wildercloth Enchanter's Hat", }),
+			q(71837, { ["name"] = "First Craft: Wildercloth Fishing Cap", }),
+			q(71839, { ["name"] = "First Craft: Wildercloth Gardening Hat", }),
+			q(71831, { ["name"] = "First Craft: Wildercloth Tailor's Coat", }),
+			-- Spellthread --
+			q(71825, { ["name"] = "First Craft: Frozen Spellthread", }),
+			q(71826, { ["name"] = "First Craft: Temporal Spellthread", }),
+			q(71824, { ["name"] = "First Craft: Vibrant Spellthread", }),
+			-- Embroidered Bags --
+			q(71815, { ["name"] = "First Craft: Azureweave Expedition Pack", }),
+			q(71847, { ["name"] = "First Craft: Chronocloth Reagent Bag", }),
+			q(71846, { ["name"] = "First Craft: Simply Stitched Reagent Bag", }),
+			q(71814, { ["name"] = "First Craft: Wildercloth Bag", }),
+			-- Assorted Embroidery --
+			q(71818, { ["name"] = "First Craft: Explorer's Banner of Geology", }),
+			q(71817, { ["name"] = "First Craft: Explorer's Banner of Herbology", }),
+			q(71853, { ["name"] = "First Craft: Cold Cushion", }),
+			q(71852, { ["name"] = "First Craft: Cushion of Time Travel", }),
+			q(71855, { ["name"] = "First Craft: Dragonscale Expedition's Expedition Tent", }),
+			q(71850, { ["name"] = "First Craft: Duck-Stuffed Duck Lovie", }),
+			q(71851, { ["name"] = "First Craft: Forlorn Funeral Pall", }),
+			q(71854, { ["name"] = "First Craft: Market Tent", }),
+			q(71816, { ["name"] = "First Craft: Wildercloth Bandage", }),
+			-- Experiments --
+			q(71848, { ["name"] = "First Craft: Fiddle with Draconium Fabric Cutters", }),
+			q(71849, { ["name"] = "First Craft: Fiddle with Khaz'gorite Fabric Cutters", }),
+			-- Artisan Curios
+			q(74318, { ["name"] = "First Craft: Traditional Morqut Kite", ["timeline"] = {ADDED_10_0_7}}),
 		})),
 	}),
 })));
@@ -2772,98 +2861,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(75884, {["timeline"] = {ADDED_10_0_7}}),	-- Skinning Gahz'raxes
 		}),
 		prof(TAILORING, {
-				-- Woven Cloth	--
-			q(71842),	-- Azureweave Bolt
-			q(71843),	-- Chornocloth Bolt
-			q(71845),	-- Infurious Wildercloth Bolt
-			q(71844),	-- Vibrant Wildercloth Bolt
-			q(71841),	-- Wildercloth Bolt
-				-- Optional Reagents --
-			q(71827),	-- Blue Silken Lining
-			q(71828),	-- Bronzed Grip Wrappings
-				-- Finishing Reagents --
-			q(71819),	-- Abrasive Polishing Cloth
-			q(71820),	-- Vibrant Polishing Cloth
-			q(71822),	-- Chromatic Embroidery Thread
-			q(71821),	-- Blazing Embroidery Thread
-			q(71823),	-- Shimmering Embroidery Thread
-				-- Garments --
-			q(71813),	-- Crimson Combatant's Wildercloth Bands
-			q(71805),	-- Crimson Combatant's Wildercloth Cloak
-			q(71808),	-- Crimson Combatant's Wildercloth Gloves
-			q(71809),	-- Crimson Combatant's Wildercloth Hood
-			q(71810),	-- Crimson Combatant's Wildercloth Leggings
-			q(71812),	-- Crimson Combatant's Wildercloth Sash
-			q(71811),	-- Crimson Combatant's Wildercloth Shoulderpads
-			q(71807),	-- Crimson Combatant's Wildercloth Treads
-			q(71806),	-- Crimson Combatant's Wildercloth Tunic
-			q(71803),	-- Vibrant Wildercloth Girdle
-			q(71799),	-- Vibrant Wildercloth Handwraps
-			q(71800),	-- Vibrant Wildercloth Headcover
-			q(71796),	-- Vibrant Wildercloth Shawl
-			q(71802),	-- Vibrant Wildercloth Shoulderspikes
-			q(71801),	-- Vibrant Wildercloth Slacks
-			q(71798),	-- Vibrant Wildercloth Slippers
-			q(71797),	-- Vibrant Wildercloth Vestments
-			q(71804),	-- Vibrant Wildercloth Wristwrap
-			q(71795),	-- Surveyor's Cloth Bands
-			q(71793),	-- Surveyor's Cloth Robe
-			q(71794),	-- Surveyor's Cloth Treads
-			q(72504),	-- Surveyor's Seasoned Cord
-			q(72506),	-- Surveyor's Seasoned Gloves
-			q(72507),	-- Surveyor's Seasoned Hood
-			q(72509),	-- Surveyor's Seasoned Shoulders
-			q(71792),	-- Surveyor's Tailored Cloak
-				-- Azureweave Garments --
-			q(71779),	-- Amice of the Blue
-			q(71788),	-- Azureweave Mantle
-			q(71786),	-- Azureweave Robe
-			q(71787),	-- Azureweave Slippers
-			q(71782),	-- Blue Dragon Soles
-			q(71780),	-- Infurious Handwraps of Gesticulation
-				-- Chronocloth Garments --
-			q(71783),	-- Allied Cinch of Time Dilation
-			q(71789),	-- Chronocloth Gloves
-			q(71790),	-- Chronocloth Leggings
-			q(71791),	-- Chronocloth Sash
-			q(71776),	-- Hood of Surging Time
-			q(71781),	-- Infurious Legwraps of Possibility
-				-- Profession Garments --
-			q(71832),	-- Dragoncloth Tailoring Vestments
-			q(71830),	-- Master's Wildercloth Alchemist's Robe
-			q(71834),	-- Master's Wildercloth Chef's Hat
-			q(71836),	-- Master's Wildercloth Enchanter's Hat
-			--q(),	-- Master's Wildercloth Fishing Cap
-			q(71840),	-- Master's Wildercloth Gardening Hat
-			q(71829),	-- Wildercloth Alchemist's Robe
-			q(71833),	-- Wildercloth Chef's Hat
-			q(71835),	-- Wildercloth Enchanter's Hat
-			q(71837),	-- Wildercloth Fishing Cap
-			q(71839),	-- Wildercloth Gardening Hat
-			q(71831),	-- Wildercloth Tailor's Coat
-				-- Spellthread --
-			q(71825),	-- Frozen Spellthread
-			q(71826),	-- Temporal Spellthread
-			q(71824),	-- Vibrant Spellthread
-				-- Embroidered Bags --
-			q(71815),	-- Azureweave Expedition Pack
-			q(71847),	-- Chronocloth Reagent Bag
-			q(71846),	-- Simply Stitched Reagent Bag
-			q(71814),	-- Wildercloth Bag
-				-- Assorted Embroidery --
-			q(71818),	-- Explorer's Banner of Geology
-			q(71817),	-- Explorer's Banner of Herbology
-			q(71853),	-- Cold Cushion
-			q(71852),	-- Cushion of Time Travel
-			q(71855),	-- Dragonscale Expedition's Expedition Tent
-			q(71850),	-- Duck-Stuffed Duck Lovie
-			q(71851),	-- Forlorn Funeral Pall
-			q(71854),	-- Market Tent
-			q(71816),	-- Wildercloth Bandage
-				-- Experiments --
-			q(71848),	-- Fiddle with Draconium Fabric Cutters
-			q(71849),	-- Fiddle with Khaz'gorite Fabric Cutters
-				-- Specc --
 			q(71946),	-- Timeweaving unlocked
 			q(71947),	-- Timeweaving Full maxed out
 			q(71290),	-- Azureweave unlocked

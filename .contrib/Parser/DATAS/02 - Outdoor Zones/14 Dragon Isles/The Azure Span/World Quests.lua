@@ -43,9 +43,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(70068, {	-- Cobalt Catastrophe
 					["coord"] = { 49.3, 23.5, THE_AZURE_SPAN },
 				}),
-				q(70653, {	-- Cold Hard Science
-					["coord"] = { 47.9, 39.1, THE_AZURE_SPAN },
-				}),
 				q(70440, {	-- Dead Eyes
 					["coord"] = { 33.6, 44.4, THE_AZURE_SPAN },
 				}),
@@ -105,6 +102,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 51.3, 24.6, THE_AZURE_SPAN },
 				})),
 				--[[
+				-- probably NYI
 				q(70037, {	-- Unpowered Tools [Cobalt]
 					["coord"] = { 47.4, 24.6, THE_AZURE_SPAN },
 				}),

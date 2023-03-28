@@ -175,9 +175,3 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 		},
 	})
 })));
-
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
-	inst(1199, {	-- Neltharus
-		--q(70724),	-- first time entering dungeon as blacksmith // [From Errors: I pop for a mage In Ohn Plains] // [From Errors: got this for completing The Nokhud Offensive: Founders Keepers (66658) a warlock]
-	}),
-})));
