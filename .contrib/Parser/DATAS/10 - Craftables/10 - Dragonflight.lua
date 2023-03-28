@@ -1,7 +1,9 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
+
 -- Simple function for First Craft tracking Quests
+-- ex. FirstCraft(QUESTID, RECIPEID);	-- RECIPE_NAME
 local function FirstCraft(questID, recipeID, added)
 	local t = { ["questID"] = questID, ["type"] = HEADERS.Spell..":"..recipeID };
 	if added then
@@ -9,6 +11,11 @@ local function FirstCraft(questID, recipeID, added)
 	end
 	return t;
 end
+-- replace regex
+-- q\(([0-9]+), \{ \["name"\] = "First Craft: (.)+", \}\),
+-- FirstCraft($1, RECIPEID);	-- $2
+local FIRST_CRAFT_HEADER = -1152;
+
 root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	i(190456),	-- Artisan's Mettle
 	-- Optional
@@ -91,54 +98,54 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 				-- Recipes Discoverable
 			}),
 		}),
-		n(HIDDEN_QUESTS, sharedData({
+		n(FIRST_CRAFT_HEADER, sharedData({
 			["requireSkill"] = ALCHEMY,
 		},{
 			-- Alchemy Essentials
-			q(71251, { ["name"] = "First Craft: Advanced Phial Alchemical Experimentation", }),
-			q(71253, { ["name"] = "First Craft: Advanced Potion Alchemical Experimentation", }),
-			q(71250, { ["name"] = "First Craft: Basic Phial Alchemical Experimentation", }),
-			q(71252, { ["name"] = "First Craft: Basic Potion Alchemical Experimentation", }),
+			FirstCraft(71251, 370747);	-- Advanced Phial Experimentation
+			FirstCraft(71253, 370745);	-- Advanced Potion Experimentation
+			FirstCraft(71250, 370746);	-- Basic Phial Experimentation
+			FirstCraft(71252, 370743);	-- Basic Potion Experimentation
 			-- Reagents
-			q(71248, { ["name"] = "First Craft: Omnium Draconis", }),
-			q(71249, { ["name"] = "First Craft: Primal Convergent", }),
+			FirstCraft(71248, 370722);	-- Omnium Draconis
+			FirstCraft(71249, 370717);	-- Primal Convergent
 			-- Air Potions
-			q(71287, { ["name"] = "First Craft: Aerated Mana Potion", }),
-			q(71279, { ["name"] = "First Craft: Bottled Putrescence", }),
-			q(71292, { ["name"] = "First Craft: Potion of Gusts", }),
-			q(71293, { ["name"] = "First Craft: Potion of Shocking Disclosure", }),
-			q(71291, { ["name"] = "First Craft: Potion of the Hushed Zephyr", }),
-			q(71283, { ["name"] = "First Craft: Residual Neural Channeling Agent", }),
+			FirstCraft(71287, 370547);	-- Aerated Mana Potion
+			FirstCraft(71279, 370521);	-- Bottled Putrescence
+			FirstCraft(71292, 370558);	-- Potion of Gusts
+			FirstCraft(71293, 370561);	-- Potion of Shocking Disclosure
+			FirstCraft(71291, 370556);	-- Potion of the Hushed Zephyr
+			FirstCraft(71283, 370533);	-- Residual Neural Channeling Agent
 			-- Cauldrons
-			q(71295, { ["name"] = "First Craft: Potion Cauldron of Ultimate Power", }),
-			q(71296, { ["name"] = "First Craft: Potion Cauldron of Power", }),
-			q(71247, { ["name"] = "First Craft: Cauldron of the Pooka", }),
+			FirstCraft(71295, 370672);	-- Potion Cauldron of Ultimate Power
+			FirstCraft(71296, 370668);	-- Potion Cauldron of Power
+			FirstCraft(71247, 370673);	-- Cauldron of the Pooka
 			-- Frost Potions
-			q(71284, { ["name"] = "First Craft: Delicate Suspension of Spores", }),
-			q(71281, { ["name"] = "First Craft: Potion of Chilled Clarity", }),
-			q(71276, { ["name"] = "First Craft: Potion of Frozen Fatality", }),
-			q(71280, { ["name"] = "First Craft: Potion of Frozen Focus", }),
-			q(71282, { ["name"] = "First Craft: Potion of Withering Vitality", }),
-			q(71285, { ["name"] = "First Craft: Refreshing Healing Potion", }),
+			FirstCraft(71284, 370536);	-- Delicate Suspension of Spores
+			FirstCraft(71281, 370525);	-- Potion of Chilled Clarity
+			FirstCraft(71276, 370478);	-- Potion of Frozen Fatality
+			FirstCraft(71280, 370524);	-- Potion of Frozen Focus
+			FirstCraft(71282, 370528);	-- Potion of Withering Vitality
+			FirstCraft(71285, 370539);	-- Refreshing Healing Potion
 			-- Elemental Phials and Potions
-			q(71286, { ["name"] = "First Craft: Elemental Potion of Ultimate Power", }),
-			q(71288, { ["name"] = "First Craft: Elemental Potion of Power", }),
-			q(71278, { ["name"] = "First Craft: Phial of Elemental Chaos", }),
+			FirstCraft(71286, 370543);	-- Elemental Potion of Ultimate Power
+			FirstCraft(71288, 370551);	-- Elemental Potion of Power
+			FirstCraft(71278, 370504);	-- Phial of Elemental Chaos
 			-- Air Phials
-			q(71274, { ["name"] = "First Craft: Aerated Phial of Deftness", }),
-			q(71273, { ["name"] = "First Craft: Aerated Phial of Quick Hands", }),
-			q(71272, { ["name"] = "First Craft: Charged Phial of Alacrity", }),
-			q(71268, { ["name"] = "First Craft: Phial of Charged Isolation", }),
-			q(71270, { ["name"] = "First Craft: Phial of Static Empowerment", }),
-			q(71265, { ["name"] = "First Craft: Phial of Still Air", }),
-			q(71264, { ["name"] = "First Craft: Phial of the Eye in the Storm", }),
+			FirstCraft(71274, 370472);	-- Aerated Phial of Deftness
+			FirstCraft(71273, 381270);	-- Aerated Phial of Quick Hands
+			FirstCraft(71272, 370476);	-- Charged Phial of Alacrity
+			FirstCraft(71268, 370460);	-- Phial of Charged Isolation
+			FirstCraft(71270, 370463);	-- Phial of Static Empowerment
+			FirstCraft(71265, 370453);	-- Phial of Still Air
+			FirstCraft(71264, 370438);	-- Phial of the Eye in the Storm
 			-- Frost Phials
-			q(71277, { ["name"] = "First Craft: Crystalline Phial of Perception", }),
-			q(71267, { ["name"] = "First Craft: Iced Phial of Corrupting Rage", }),
-			q(71269, { ["name"] = "First Craft: Phial of Glacial Fury", }),
-			q(71266, { ["name"] = "First Craft: Phial of Icy Preservation", }),
-			q(71271, { ["name"] = "First Craft: Phial of Tepid Versatility", }),
-			q(71275, { ["name"] = "First Craft: Steaming Phial of Finesse", }),
+			FirstCraft(71277, 370483);	-- Crystalline Phial of Perception
+			FirstCraft(71267, 370457);	-- Iced Phial of Corrupting Rage
+			FirstCraft(71269, 370462);	-- Phial of Glacial Fury
+			FirstCraft(71266, 370456);	-- Phial of Icy Preservation
+			FirstCraft(71271, 370465);	-- Phial of Tepid Versatility
+			FirstCraft(71275, 370473);	-- Steaming Phial of Finesse
 			-- Transmutations
 			q(71297, { ["name"] = "First Craft: Transmute: Awakened Air", }),
 			q(71298, { ["name"] = "First Craft: Transmute: Awakened Earth", }),
@@ -163,7 +170,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71246, { ["name"] = "First Craft: Alacritous Alchemist Stone", }),
 			q(71245, { ["name"] = "First Craft: Sustaining Alchemist Stone", }),
 			-- Artisan Curios
-			--q(TODO, { ["name"] = "First Craft: Draconic Suppression Powder", ["timeline"] = {ADDED_10_0_7}}),
+			-- FirstCraft(TODO, 400270, ADDED_10_0_7);	-- Steaming Phial of Finesse
 		})),
 		filter(MISC, {
 			i(191520),	-- Agitating Potion Augmentation+
@@ -345,7 +352,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		filter(BATTLE_PETS, {
 			i(191886),	-- Alvin the Anvil (PET!)
 		}),
-		n(HIDDEN_QUESTS, sharedData({
+		n(FIRST_CRAFT_HEADER, sharedData({
 			["requireSkill"] = BLACKSMITHING,
 		},{
 			-- Smelting --
@@ -754,7 +761,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		filter(BATTLE_PETS, {
 			i(200479),	-- Sophic Amalgamation (PET!)
 		}),
-		n(HIDDEN_QUESTS, sharedData({
+		n(FIRST_CRAFT_HEADER, sharedData({
 			["requireSkill"] = ENCHANTING,
 		},{
 			-- Cloak Enchantments
@@ -993,7 +1000,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(203411, {["timeline"] = {ADDED_10_0_7}}),	-- Gnomish Voicebox
 			i(198651),	-- Piece of Scrap
 		}),
-		n(HIDDEN_QUESTS, sharedData({
+		n(FIRST_CRAFT_HEADER, sharedData({
 			["requireSkill"] = ENGINEERING,
 		},{
 			-- Parts --
@@ -1418,7 +1425,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(197579),	-- Windborne Velocidrake: Steel and Orange Armor (DM!)
 			i(197634),	-- Windborne Velocidrake: Windswept Pattern (DM!)
 		}),
-		n(HIDDEN_QUESTS, sharedData({
+		n(FIRST_CRAFT_HEADER, sharedData({
 			["requireSkill"] = INSCRIPTION,
 		},{
 			-- Inks
@@ -1883,7 +1890,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 				i(193370),	-- Silken Gemdust+++
 			}),
 		}),
-		n(HIDDEN_QUESTS, sharedData({
+		n(FIRST_CRAFT_HEADER, sharedData({
 			["requireSkill"] = JEWELCRAFTING,
 		},{
 			-- Unsorted
@@ -2142,7 +2149,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(193482),	-- Skinner's Cap
 			i(193612),	-- Smithing Apron
 		}),
-		n(HIDDEN_QUESTS, sharedData({
+		n(FIRST_CRAFT_HEADER, sharedData({
 			["requireSkill"] = LEATHERWORKING,
 		},{
 			-- Unsorted
@@ -2450,7 +2457,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			i(198041),	-- Khaz'gorite Fabric Cutters Left Blade
 			i(194065),	-- Khaz'gorite Fabric Cutters Right Blade
 		}),
-		n(HIDDEN_QUESTS, sharedData({
+		n(FIRST_CRAFT_HEADER, sharedData({
 			["requireSkill"] = TAILORING,
 		},{
 			-- Unsorted
