@@ -2274,7 +2274,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25193, {	-- Lost But Not Forgotten
 					["qg"] = 3193,	-- Misha Tor'kren
-					["sourceQuest"] = 25187,	-- Lost in the Floods
+					["sourceQuest"] = 25188,	--  Watershed Patrol
 					["coord"] = { 43.3, 30.6, DUROTAR },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,

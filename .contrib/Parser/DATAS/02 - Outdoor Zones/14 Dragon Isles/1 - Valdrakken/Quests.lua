@@ -189,7 +189,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			q(67007, {	-- Archival Assistance
 				["provider"] = { "o", 381687 },	-- Discarded Note
 				["coord"] = { 47.8, 46.6, VALDRAKKEN },
-				["isBreadcrumb"] = true,
 			}),
 			q(72585, {	-- Open Orientation
 				["provider"] = { "n", 196499 },	-- Therazal
