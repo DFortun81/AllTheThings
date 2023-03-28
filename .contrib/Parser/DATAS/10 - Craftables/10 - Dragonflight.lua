@@ -357,102 +357,102 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 		},{
 			-- Smelting --
 			FirstCraft(71353, 367712);	-- Frostfire Alloy
-			q(71355, { ["name"] = "First Craft: Infurious Alloy", }),
-			q(71354, { ["name"] = "First Craft: Obsidian Seared Alloy", }),
-			q(71352, { ["name"] = "First Craft: Primal Molten Alloy", }),
+			FirstCraft(71355, 367714);	-- Infurious Alloy
+			FirstCraft(71354, 367713);	-- Obsidian Seared Alloy
+			FirstCraft(71352, 365735);	-- Primal Molten Alloy
 			-- Optional Reagent
-			q(71358, { ["name"] = "First Craft: Armor Spikes", }),
+			FirstCraft(71358, 371349);	-- Armor Spikes
 			-- Armor
-			q(71309, { ["name"] = "First Craft: Allied Chestplate of Generosity", }),
-			q(71310, { ["name"] = "First Craft: Allied Wristguard of Companionship", }),
-			q(71331, { ["name"] = "First Craft: Crimson Combatant's Draconium Armguards", }),
-			q(71324, { ["name"] = "First Craft: Crimson Combatant's Draconium Breastplate", }),
-			q(71326, { ["name"] = "First Craft: Crimson Combatant's Draconium Gauntlets", }),
-			q(71328, { ["name"] = "First Craft: Crimson Combatant's Draconium Greaves", }),
-			q(71327, { ["name"] = "First Craft: Crimson Combatant's Draconium Helm", }),
-			q(71329, { ["name"] = "First Craft: Crimson Combatant's Draconium Pauldrons", }),
-			q(71325, { ["name"] = "First Craft: Crimson Combatant's Draconium Sabatons", }),
-			q(71330, { ["name"] = "First Craft: Crimson Combatant's Draconium Waistguard", }),
-			q(72489, { ["name"] = "First Craft: Explorer's Expert Clasp", }),
-			q(72562, { ["name"] = "First Craft: Explorer's Expert Gauntlets", }),
-			q(72494, { ["name"] = "First Craft: Explorer's Expert Greaves", }),
-			q(72490, { ["name"] = "First Craft: Explorer's Expert Helm", }),
-			q(72568, { ["name"] = "First Craft: Explorer's Expert Spaulders", }),
-			q(71314, { ["name"] = "First Craft: Explorer's Plate Boots", }),
-			q(71315, { ["name"] = "First Craft: Explorer's Plate Bracers", }),
-			q(71313, { ["name"] = "First Craft: Explorer's Plate Chestguard", }),
-			q(71305, { ["name"] = "First Craft: Frostfire Legguards of Preparation", }),
-			q(71308, { ["name"] = "First Craft: Infurious Helm of Vegeance", }),
-			q(71307, { ["name"] = "First Craft: Infurious Warboots of Impunity", }),
-			q(71316, { ["name"] = "First Craft: Primal Molten Breastplate", }),
-			q(71318, { ["name"] = "First Craft: Primal Molten Gauntlets", }),
-			q(71322, { ["name"] = "First Craft: Primal Molten Greatbelt", }),
-			q(71319, { ["name"] = "First Craft: Primal Molten Helm", }),
-			q(71320, { ["name"] = "First Craft: Primal Molten Legplates", }),
-			q(71321, { ["name"] = "First Craft: Primal Molten Pauldrons", }),
-			q(71317, { ["name"] = "First Craft: Primal Molten Sabatons", }),
-			q(71323, { ["name"] = "First Craft: Primal Molten Vambraces", }),
-			q(71306, { ["name"] = "First Craft: Unstable Frostfire Belt", }),
+			FirstCraft(71309, 367615);	-- Allied Chestplate of Generosity
+			FirstCraft(71310, 367614);	-- Allied Wristguard of Companionship
+			FirstCraft(71331, 376617);	-- Crimson Combatant's Draconium Armguards
+			FirstCraft(71324, 376618);	-- Crimson Combatant's Draconium Breastplate
+			FirstCraft(71326, 376619);	-- Crimson Combatant's Draconium Gauntlets
+			FirstCraft(71328, 376620);	-- Crimson Combatant's Draconium Greaves
+			FirstCraft(71327, 376621);	-- Crimson Combatant's Draconium Helm
+			FirstCraft(71329, 376622);	-- Crimson Combatant's Draconium Pauldrons
+			FirstCraft(71325, 376623);	-- Crimson Combatant's Draconium Sabatons
+			FirstCraft(71330, 376624);	-- Crimson Combatant's Draconium Waistguard
+			FirstCraft(72489, 367611);	-- Explorer's Expert Clasp
+			FirstCraft(72562, 395879);	-- Explorer's Expert Gauntlets
+			FirstCraft(72494, 395881);	-- Explorer's Expert Greaves
+			FirstCraft(72490, 395883);	-- Explorer's Expert Helm
+			FirstCraft(72568, 395880);	-- Explorer's Expert Spaulders
+			FirstCraft(71314, 367610);	-- Explorer's Plate Boots
+			FirstCraft(71315, 367609);	-- Explorer's Plate Bracers
+			FirstCraft(71313, 395886);	-- Explorer's Plate Chestguard
+			FirstCraft(71305, 367619);	-- Frostfire Legguards of Preparation
+			FirstCraft(71308, 367617);	-- Infurious Helm of Vengeance
+			FirstCraft(71307, 367616);	-- Infurious Warboots of Impunity
+			FirstCraft(71316, 367608);	-- Primal Molten Breastplate
+			FirstCraft(71318, 367606);	-- Primal Molten Gauntlets
+			FirstCraft(71322, 367602);	-- Primal Molten Greatbelt
+			FirstCraft(71319, 367605);	-- Primal Molten Helm
+			FirstCraft(71320, 367604);	-- Primal Molten Legplates
+			FirstCraft(71321, 367603);	-- Primal Molten Pauldrons
+			FirstCraft(71317, 367607);	-- Primal Molten Sabatons
+			FirstCraft(71323, 367601);	-- Primal Molten Vambraces
+			FirstCraft(71306, 367618);	-- Unstable Frostfire Belt
 			-- Shields
-			q(72183, { ["name"] = "First Craft: Draconium Defender", }),
-			q(71303, { ["name"] = "First Craft: Shield of the Hearth", }),
-			q(71304, { ["name"] = "First Craft: Primal Molten Defender", }),
+			FirstCraft(72183, 393404);	-- Draconium Defender
+			FirstCraft(71303, 367623);	-- Shield of the Hearth
+			FirstCraft(71304, 367622);	-- Primal Molten Defender
 			-- Weapons
-			q(71332, { ["name"] = "First Craft: Draconium Axe", }),
-			q(71336, { ["name"] = "First Craft: Draconium Dirk", }),
-			q(72186, { ["name"] = "First Craft: Draconium Great Axe", }),
-			q(71334, { ["name"] = "First Craft: Draconium Great Mace", }),
-			q(71337, { ["name"] = "First Craft: Draconium Knuckles", }),
-			q(71335, { ["name"] = "First Craft: Draconium Stiletto", }),
-			q(71333, { ["name"] = "First Craft: Draconium Sword", }),
-			q(71381, { ["name"] = "First Craft: Obsidian Seared Claymore", }),
-			q(71377, { ["name"] = "First Craft: Obsidian Seared Crusher", }),
-			q(71378, { ["name"] = "First Craft: Obsidian Seared Facesmasher", }),
-			q(71379, { ["name"] = "First Craft: Obsidian Seared Halberd", }),
-			q(71380, { ["name"] = "First Craft: Obsidian Seared Hexsword", }),
-			q(71376, { ["name"] = "First Craft: Obsidian Seared Invoker", }),
-			q(71374, { ["name"] = "First Craft: Obsidian Seared Runeaxe", }),
-			q(71375, { ["name"] = "First Craft: Obsidian Seared Slicer", }),
-			q(71384, { ["name"] = "First Craft: Primal Molten Greataxe", }),
-			q(71383, { ["name"] = "First Craft: Primal Molten Longsword", }),
-			q(71382, { ["name"] = "First Craft: Primal Molten Mace", }),
-			q(71386, { ["name"] = "First Craft: Primal Molten Shortblade", }),
-			q(71385, { ["name"] = "First Craft: Primal Molten Spellblade", }),
-			q(71387, { ["name"] = "First Craft: Primal Molten Warglaive", }),
+			FirstCraft(71332, 367600);	-- Draconium Axe
+			FirstCraft(71336, 367596);	-- Draconium Dirk
+			FirstCraft(72186, 393416);	-- Draconium Great Axe
+			FirstCraft(71334, 367598);	-- Draconium Great Mace
+			FirstCraft(71337, 367595);	-- Draconium Knuckles
+			FirstCraft(71335, 367597);	-- Draconium Stiletto
+			FirstCraft(71333, 367599);	-- Draconium Sword
+			FirstCraft(71381, 367590);	-- Obsidian Seared Claymore
+			FirstCraft(71377, 367591);	-- Obsidian Seared Crusher
+			FirstCraft(71378, 367589);	-- Obsidian Seared Facesmasher
+			FirstCraft(71379, 367588);	-- Obsidian Seared Halberd
+			FirstCraft(71380, 367587);	-- Obsidian Seared Hexsword
+			FirstCraft(71376, 367592);	-- Obsidian Seared Invoker
+			FirstCraft(71374, 367594);	-- Obsidian Seared Runeaxe
+			FirstCraft(71375, 367593);	-- Obsidian Seared Slicer
+			FirstCraft(71384, 365734);	-- Primal Molten Greataxe
+			FirstCraft(71383, 367585);	-- Primal Molten Longsword
+			FirstCraft(71382, 367586);	-- Primal Molten Mace
+			FirstCraft(71386, 365730);	-- Primal Molten Shortblade
+			FirstCraft(71385, 365731);	-- Primal Molten Spellblade
+			FirstCraft(71387, 365729);	-- Primal Molten Warglaive
 			-- Profession Tools and Accessories
-			q(71360, { ["name"] = "First Craft: Black Dragon Touched Hammer", }),
-			q(71361, { ["name"] = "First Craft: Draconium Blacksmith's Hammer", }),
-			q(71345, { ["name"] = "First Craft: Draconium Blacksmith's Toolbox", }),
-			q(71365, { ["name"] = "First Craft: Draconium Leatherworker's Knife", }),
-			q(71347, { ["name"] = "First Craft: Draconium Leatherworker's Toolset", }),
-			q(71349, { ["name"] = "First Craft: Draconium Needle Set", }),
-			q(71367, { ["name"] = "First Craft: Draconium Pickaxe", }),
-			q(71363, { ["name"] = "First Craft: Draconium Sickle", }),
-			q(71369, { ["name"] = "First Craft: Draconium Skinning Knife", }),
-			q(71362, { ["name"] = "First Craft: Khaz'gorite Blacksmith's Hammer", }),
-			q(71346, { ["name"] = "First Craft: Khaz'gorite Blacksmith's Toolbox", }),
-			q(71366, { ["name"] = "First Craft: Khaz'gorite Leatherworker's Knife", }),
-			q(71348, { ["name"] = "First Craft: Khaz'gorite Leatherworker's Toolset", }),
-			q(71350, { ["name"] = "First Craft: Khaz'gorite Needle Set", }),
-			q(71368, { ["name"] = "First Craft: Khaz'gorite Pickaxe", }),
-			q(71364, { ["name"] = "First Craft: Khaz'gorite Sickle", }),
-			q(71370, { ["name"] = "First Craft: Khaz'gorite Skinning Knife", }),
+			FirstCraft(71360, 371372);	-- Black Dragon Touched Hammer
+			FirstCraft(71361, 371344);	-- Draconium Blacksmith's Hammer
+			FirstCraft(71345, 371364);	-- Draconium Blacksmith's Toolbox
+			FirstCraft(71365, 371338);	-- Draconium Leatherworker's Knife
+			FirstCraft(71347, 371360);	-- Draconium Leatherworker's Toolset
+			FirstCraft(71349, 371302);	-- Draconium Needle Set
+			FirstCraft(71367, 371309);	-- Draconium Pickaxe
+			FirstCraft(71363, 371343);	-- Draconium Sickle
+			FirstCraft(71369, 371304);	-- Draconium Skinning Knife
+			FirstCraft(71362, 371412);	-- Khaz'gorite Blacksmith's Hammer
+			FirstCraft(71346, 371374);	-- Khaz'gorite Blacksmith's Toolbox
+			FirstCraft(71366, 371369);	-- Khaz'gorite Leatherworker's Knife
+			FirstCraft(71348, 371371);	-- Khaz'gorite Leatherworker's Toolset
+			FirstCraft(71350, 371368);	-- Khaz'gorite Needle Set
+			FirstCraft(71368, 371366);	-- Khaz'gorite Pickaxe
+			FirstCraft(71364, 371365);	-- Khaz'gorite Sickle
+			FirstCraft(71370, 371367);	-- Khaz'gorite Skinning Knife
 			-- Consumable Tools
-			q(72262, { ["name"] = "First Craft: Master's Hammer", }),
-			q(71357, { ["name"] = "First Craft: Serevite Repair Hammer", }),
-			q(71344, { ["name"] = "First Craft: Serevite Skeleton Key", }),
-			q(71388, { ["name"] = "First Craft: Sturdy Expedition Shovel", }),
+			FirstCraft(72262, 393853);	-- Master's Hammer
+			FirstCraft(71357, 371395);	-- Serevite Repair Hammer
+			FirstCraft(71344, 371394);	-- Serevite Skeleton Key
+			FirstCraft(71388, 388279);	-- Sturdy Expedition Shovel
 			-- Stonework
-			q(71338, { ["name"] = "First Craft: Primal Razorstone", }),
-			q(71340, { ["name"] = "First Craft: Primal Weightstone", }),
-			q(71341, { ["name"] = "First Craft: Primal Whetstone", }),
+			FirstCraft(71338, 371682);	-- Primal Razorstone
+			FirstCraft(71340, 371674);	-- Primal Weightstone
+			FirstCraft(71341, 371650);	-- Primal Whetstone
 			-- Pets
-			q(71351, { ["name"] = "First Craft: Alvin The Anvil", }),
+			FirstCraft(71351, 371403);	-- Alvin The Anvil
 			-- Dragon Riding
-			q(71342, { ["name"] = "First Craft: Prototype Explorer's Barding Framework", }),
-			q(71343, { ["name"] = "First Craft: Prototype Regal Barding Framework", }),
+			FirstCraft(71342, 377281);	-- Prototype Explorer's Barding Framework
+			FirstCraft(71343, 377280);	-- Prototype Regal Barding Framework
 			-- Artisan Curios
-			q(74477, { ["name"] = "First Craft: Ancient Ceremonial Trident", ["timeline"] = {ADDED_10_0_7}}),
+			FirstCraft(74477, 400808, ADDED_10_0_7);	-- Ancient Ceremonial Trident
 		})),
 		filter(MISC, {
 			i(203408, {["timeline"] = {ADDED_10_0_7}}),	-- Ancient Ceremonial Trident
