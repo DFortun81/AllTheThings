@@ -20,6 +20,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(70750),	-- Aiding the Accord
 				q(72068),	-- Aiding the Accord: A Feast For All
 				q(72374),	-- Aiding the Accord: Dragonbane Keep
+				q(75861, {	-- Aiding the Accord: Suffusion Camp
+					["timeline"] = { ADDED_10_1_0 },
+				}),
 				q(72373),	-- Aiding the Accord: The Hunt is On
 				q(72375),	-- Aiding the Accord: The Isles Call
 				q(75259, {	-- Aiding the Accord: Zskera Vaults

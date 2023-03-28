@@ -229,6 +229,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["repeatable"] = true,
 				["timeline"] = { ADDED_10_0_7 },
 			}),
+
+			-- New Questline?
+			q(72411, {	-- Cause Without a Rebel
+				-- ["sourceQuests"] = {  },	--
+				["provider"] = { "n", 189842 },	-- Captain Drine
+				["coord"] = { 56.5, 40.1, VALDRAKKEN },
+			}),
 		}),
 		n(QUESTS, sharedData({
 				["isWeekly"] = true,
