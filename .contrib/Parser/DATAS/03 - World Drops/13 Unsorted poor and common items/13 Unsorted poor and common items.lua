@@ -594,10 +594,8 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(2535),	-- War Staff	-- sold by many vendors
 			}),
 			filter(ONE_HANDED_SWORDS, {
-				i(2520),	-- Broadsword	-- sold by many vendors
 				i(30749),	-- Draenic Sparring Blade	-- sold by many vendors
 				i(923),		-- Longsword	-- sold by many vendors
-				i(2027),	-- Scimitar	-- sold by many vendors
 			}),
 			filter(TWO_HANDED_SWORDS, {
 				i(30750),	-- Draenic Warblade	-- sold by many vendors
@@ -629,7 +627,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 			i(2488),	-- Gladius
 			i(2490),	-- Tomahawk
 			i(2493),	-- Wooden Mallet
-			i(851),		-- Cutlass
 			i(1198),	-- Claymore
 			i(853),		-- Hatchet
 			i(1196),	-- Tabar

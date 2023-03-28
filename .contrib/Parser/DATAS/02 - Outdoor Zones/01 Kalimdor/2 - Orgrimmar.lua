@@ -6478,6 +6478,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.0, 37.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(2520),	-- Broadsword
+						i(851),		-- Cutlass
 						i(922),		-- Dacian Falx
 						i(2024),	-- Espadon
 						i(2528),	-- falchion
@@ -6485,6 +6487,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2526),	-- Main Gauche
 						i(2208),	-- Poniad
 						i(2534),	-- Rondel
+						i(2027),	-- Scimitar
 					},
 				}),
 				n(3413, {	-- Sovik <Engineering Supplies>
@@ -6983,9 +6986,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.4, 68.6, ORGRIMMAR },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					--["groups"] = {
-					--
-					--},
+					["sym"] = {
+						{"select", "itemID", 851 },		-- Cutlass
+					},
 				}),
 				n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
 					["coord"] = { 36.6, 86.8, ORGRIMMAR },

@@ -799,6 +799,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {
 						{"select", "itemID", 2024 },	-- Espadon
 						{"select", "itemID", 2208 },	-- Poniard
+						{"select", "itemID", 2027 },	-- Scimitar
 					},
 				}),
 				n(3021, {	-- Kard Ragetotem

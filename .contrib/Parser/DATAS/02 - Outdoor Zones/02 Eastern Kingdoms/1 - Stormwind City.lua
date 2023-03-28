@@ -6730,16 +6730,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.0, 68.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(922),		-- Dacian Falx
-						i(2024),	-- Espadon
-						i(2209),	-- Kris
-						i(2208),	-- Poniard
+					-- added all
+						i(926),	-- battle axe
+						i(2025),	-- bearded axe
+						i(1198),	-- claymore
+						i(2029),	-- cleaver
+						i(851),	-- cutlass
+						i(922),	-- dacian falx
+						i(927),	-- double axe
+						i(2024),	-- espadon
+						i(925),	-- flail
+						i(1197),	-- giant mace
+						i(2030),	-- gnarled staff
+						i(2028),	-- hammer	
+						i(853),	-- hatchet
+						i(15811),	-- heavy spear
+						i(2207),	-- jambiya
+						i(2209),	-- kris
+						i(923),	-- longsword
+						i(928),	-- long staff
+						i(852),	-- mace
+						i(924),	-- maul
+						i(2208),	-- poniard
+						i(854),	-- quarter staff
+						i(2027),	-- scimitar
+						i(2026),	-- rock hammer
+						i(15810),	-- short spear
 					},
 				}),
 				n(1324, {	-- Heinrich Stone
 					["coord"] = { 77.0, 57.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(2520),	-- Broadsword
 						i(2528),	-- falchion
 						i(2526),	-- Main Gauche
 						i(2534),	-- Rondel
@@ -7245,10 +7268,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.0, 68.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 922 },		-- Dacian Falx
-						{"select", "itemID", 2024 },	-- Espadon
-						{"select", "itemID", 2209 },	-- Kris
-						{"select", "itemID", 2208 },	-- Poniard
+					-- added all
+						{"select", "itemID", 926 },		-- battle axe
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 851 },		-- cutlass
+						{"select", "itemID", 922 },		-- dacian falx
+						{"select", "itemID", 927 },		-- double axe
+						{"select", "itemID", 2024 },	-- espadon
+						{"select", "itemID", 925 },		-- flail
+						{"select", "itemID", 15808 },	-- fine light crossbow
+						{"select", "itemID", 2030 },	-- gnarled staff
+						{"select", "itemID", 1197 },	-- giant mace
+						{"select", "itemID", 853 },		-- hatchet
+						{"select", "itemID", 15809 },	-- heavy crossbow
+						{"select", "itemID", 2207 },	-- jambiya
+						{"select", "itemID", 2209 },	-- kris
+						{"select", "itemID", 928 },		-- long staff
+						{"select", "itemID", 852 },		-- mace
+						{"select", "itemID", 924 },		-- maul
+						{"select", "itemID", 2208 },	-- poniard
+						{"select", "itemID", 854 },		-- quarter staff
+						{"select", "itemID", 2026 },	-- rock hammer
+						{"select", "itemID", 2027 },	-- scimitar
 					},
 				}),
 				n(12781, {	-- Master Sergeant Biggins <Accessories Quartermaster> [WRATH+] / Master Sergeant Biggins <Officer Accessories Quartermaster>

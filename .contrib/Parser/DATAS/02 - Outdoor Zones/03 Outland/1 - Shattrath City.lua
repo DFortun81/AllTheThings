@@ -2279,10 +2279,15 @@ root(ROOTS.Zones, {
 					n(19047, {	-- Lissaf
 						["coord"] = { 51.8, 17.8, SHATTRATH_CITY },
 						["sym"] = {
+						-- added all
+							{"select", "itemID", 15905 },	-- Brass Knuckles
+							{"select", "itemID", 2520 },	-- Broadsword
+							{"select", "itemID", 15904 },	-- Deadly fist blades
 							{"select", "itemID", 2528 },	-- falchion
 							{"select", "itemID", 2521 },	-- Flamberge
 							{"select", "itemID", 2526 },	-- Main Gauche
 							{"select", "itemID", 2534 },	-- Rondel
+							{"select", "itemID", 15903 },	-- slicing claw
 							{"select", "itemID", 2529 },	-- zweihander
 						},
 					}),

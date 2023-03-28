@@ -14,6 +14,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
+			n(137431, {	-- Annie Lacier
+				["coord"] = { 50.6, 49.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 851 },		-- Cutlass
+					{"select", "itemID", 2027 },	-- Scimitar
+				},
+			}),
 			n(142165, {	-- Arwin Blakemore <Thrift Goods>
 				["coord"] = { 66.5, 40.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,

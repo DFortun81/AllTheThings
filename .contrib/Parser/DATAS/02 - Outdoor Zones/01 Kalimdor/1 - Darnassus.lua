@@ -884,11 +884,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.6, 52.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 922 },		-- Dacian Falx
-						{"select", "itemID", 2024 },	-- Espadon
-						{"select", "itemID", 2209 },	-- Kris
-						{"select", "itemID", 2526 },	-- Main Gauche
-						{"select", "itemID", 2208 },	-- Poniard
+					-- all done
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 15905 },	-- brass knuckles
+						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 851 },		-- cutlass
+						{"select", "itemID", 922 },		-- dacian falx
+						{"select", "itemID", 927 },		-- double axe
+						{"select", "itemID", 15904 },	-- deadly fist blades
+						{"select", "itemID", 2024 },	-- espadon
+						{"select", "itemID", 925 },		-- flail
+						{"select", "itemID", 1197 },	-- giant mace
+						{"select", "itemID", 2030 },	-- gnarled staff
+						{"select", "itemID", 853 },		-- hatchet
+						{"select", "itemID", 2028 },	-- hammer
+						{"select", "itemID", 2207 },	-- jambiya
+						{"select", "itemID", 2209 },	-- kris
+						{"select", "itemID", 2507 },	-- laminated recurve bow
+						{"select", "itemID", 928 },		-- long staff
+						{"select", "itemID", 924 },		-- maul
+						{"select", "itemID", 852 },		-- mace
+						{"select", "itemID", 854 },		-- quarter staff
+						{"select", "itemID", 3026 },	-- reinforced bow
+						{"select", "itemID", 2026 },	-- rock hammer
+						{"select", "itemID", 2027 },	-- scimitar
+						{"select", "itemID", 15903 },	-- slicing claw
+						{"select", "itemID", 1196 },	-- tabar
 					},
 				}),
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
@@ -966,8 +988,38 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 61.0, 63.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2024 },	-- Espadon
-						{"select", "itemID", 2208 },	-- Poniard
+					-- added all
+						{"select", "itemID", 1194 },	-- bastard sword
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 2479 },	-- broad axe
+						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 2130 },	-- club
+						{"select", "itemID", 2492 },	-- cudgel
+						{"select", "itemID", 851 },	-- cutlass
+						{"select", "itemID", 2139 },	-- dirk
+						{"select", "itemID", 2024 },	-- espadon
+						{"select", "itemID", 1197 },	-- giant mace
+						{"select", "itemID", 2488 },	-- gladius
+						{"select", "itemID", 2030 },	-- gnarled staff
+						{"select", "itemID", 2134 },	-- hand axe
+						{"select", "itemID", 2028 },	-- hammer
+						{"select", "itemID", 853 },	-- hatchet
+						{"select", "itemID", 2207 },	-- jambiya
+						{"select", "itemID", 2491 },	-- large axe
+						{"select", "itemID", 2480 },	-- large club
+						{"select", "itemID", 852 },	-- mace
+						{"select", "itemID", 2208 },	-- poniard
+						{"select", "itemID", 854 },	-- quarter staff
+						{"select", "itemID", 2026 },	-- rock hammer
+						{"select", "itemID", 2027 },	-- scimitar
+						{"select", "itemID", 2131 },	-- shortsword
+						{"select", "itemID", 2132 },	-- short staff
+						{"select", "itemID", 2494 },	-- stiletto
+						{"select", "itemID", 1196 },	-- tabar
+						{"select", "itemID", 2490 },	-- tomahawk
+						{"select", "itemID", 2495 },	-- walking stick
+						{"select", "itemID", 2493 },	-- wooden mallet
 					},
 				}),
 				n(3561, {	-- Kyrai   
