@@ -6989,6 +6989,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {
 						{"select", "itemID", 851 },		-- Cutlass
 					},
+					["groups"] = {
+						i(2130),	-- Club
+					},
 				}),
 				n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
 					["coord"] = { 36.6, 86.8, ORGRIMMAR },

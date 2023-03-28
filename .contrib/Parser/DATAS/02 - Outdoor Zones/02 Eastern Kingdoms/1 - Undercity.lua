@@ -1495,6 +1495,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 					-- added all
+						{"select", "itemID", 1194 },	-- Bastard Sword
+						{"select", "itemID", 2479 },	-- Broad Axe
+						{"select", "itemID", 2130 },	-- Club
+						{"select", "itemID", 2492 },	-- Cudgel
+						{"select", "itemID", 2139 },	-- Dirk
+						{"select", "itemID", 2488 },	-- Gladius
+						{"select", "itemID", 2134 },	-- Hand Axe
+						{"select", "itemID", 2491 },	-- Large Axe
+						{"select", "itemID", 2480 },	-- Large Club
+						{"select", "itemID", 2132 },	-- Short Staff
+						{"select", "itemID", 2131 },	-- Shortsword
+						{"select", "itemID", 2494 },	-- Stiletto
+						{"select", "itemID", 2490 },	-- Tomahawk
+						{"select", "itemID", 2489 },	-- Two-Handed Sword
+						{"select", "itemID", 2495 },	-- Walking Stick
+						{"select", "itemID", 2493 },	-- Wooden Mallet
+					},
+				}),
+				n(130974, {	-- Gordon Wendham
+					["coord"] = { 61.4, 41.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+					-- added all
 						{"select", "itemID", 2520 },	-- Broadsword
 						{"select", "itemID", 2523 },	-- Bullova
 						{"select", "itemID", 2528 },	-- Falchion

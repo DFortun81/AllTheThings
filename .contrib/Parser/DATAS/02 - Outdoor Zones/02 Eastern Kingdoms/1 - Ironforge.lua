@@ -1359,6 +1359,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(5102, {	-- Dolman Steelfury
+					["coord"] = { 36.6, 66.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(1194),	-- Bastard Sword
+						i(2479),	-- Broad Axe
+						i(2130),	-- Club
+						i(2492),	-- Cudgel
+						i(2139),	-- Dirk
+						i(2488),	-- Gladius
+						i(2134),	-- Hand Axe
+						i(2491),	-- Large Axe
+						i(2480),	-- Large Club
+						i(2132),	-- Short Staff
+						i(2131),	-- Shortsword
+						i(2494),	-- Stiletto
+						i(2490),	-- Tomahawk
+						i(2489),	-- Two-Handed Sword
+						i(2495),	-- Walking Stick
+						i(2493),	-- Wooden Mallet
+					},
+				}),
 				n(5160, {	-- Emrul Riknussun <Cooking Supplier>
 					["coord"] = { 60.6, 38.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,

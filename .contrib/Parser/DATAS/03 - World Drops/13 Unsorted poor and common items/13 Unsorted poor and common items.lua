@@ -615,7 +615,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 			i(1194),	-- Bastard Sword
 			i(2134),	-- Hand Axe
 			i(2479),	-- Broad Axe
-			i(2130),	-- Club
 			i(2480),	-- Large Club
 			i(2139),	-- Dirk
 			i(2132),	-- Short Staff
