@@ -880,6 +880,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(VENDORS, {
+				n(4203, {	-- Ariyell Skyshadow
+					["coord"] = { 56.6, 52.8, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniard
+					},
+				}),
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["coord"] = { 48.2, 21.8, DARNASSUS },
 					["timeline"] = { "added 4.3.0.14732" },
@@ -949,6 +960,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(12249, {	-- Merciless Axe
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(4231, {	-- Kieran <Weapon Merchant>
+					["coord"] = { 61.0, 63.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2208 },	-- Poniard
+					},
+				}),
+				n(3561, {	-- Kyrai   
+					["coord"] = { 38.8, 35.4, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
 					},
 				}),
 				n(4173, {	-- Landria <Bow Merchant>
@@ -1034,7 +1060,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 61.6, 63.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2528 },	-- Falchion
+					-- added all
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
 					},
 				}),
 				n(50305, {	-- Moon Priestess Lasara <Darnassus Quartermaster>

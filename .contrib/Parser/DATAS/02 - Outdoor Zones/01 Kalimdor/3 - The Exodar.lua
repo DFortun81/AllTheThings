@@ -306,6 +306,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				n(20121, {	-- Fingin 
+					["coord"] = { 52.2, 84.6, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
+				}),
 				n(16716, {	-- Gornii <Cloth Armor Merchant>
 					["coord"] = { 71.5, 91.7, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
@@ -405,7 +412,26 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 69.8, 89.4, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
+						-- added all
+						{"select", "itemID", 926 },		-- battle axe
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 927 },		-- Double Axe
+						{"select", "itemID", 2024 },	-- Espadon
 						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 852 },		-- Hatched
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
+						{"select", "itemID", 1196 },	-- Tabar
 					},
 				}),
 			}),

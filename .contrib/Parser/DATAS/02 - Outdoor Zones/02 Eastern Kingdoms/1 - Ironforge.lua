@@ -1305,7 +1305,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.8, 88.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2528 },	-- Falchion
+					-- added all
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
 						{"select", "itemID", 2521 },	-- Flamberge
 						{"select", "itemID", 2529 },	-- zweihander
 					},
@@ -1385,10 +1398,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(5103, {	-- Grenil Steelfury
+					["coord"] = { 36.4, 66.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2024 },	-- Espadon
+					},
+				}),
 				n(5170, {	-- Hjoldir Stoneblade
 					["coord"] = { 45.8, 7.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
+						-- added all
 						{"select", "itemID", 2520 },	-- broadsword
 						{"select", "itemID", 2528 },	-- falchion
 						{"select", "itemID", 2521 },	-- flamberge
@@ -1690,6 +1711,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					},
+				}),
+				n(5169, {	-- Tynnus Venomsprout 
+					["coord"] = { 52.8, 13.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
 					},
 				}),
 			}),

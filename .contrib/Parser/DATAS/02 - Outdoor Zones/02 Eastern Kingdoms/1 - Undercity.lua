@@ -1279,6 +1279,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(4569, {	-- Charles Seaton <Blade Merchant>
+					["coord"] = { 77.0, 50.0, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2027 },	-- Scimitar
+					},
+				}),
 				n(4561, {	-- Daniel Bartlett <Trade Supplies> [TBC+] / Daniel Bartlett <General Trade Supplier>
 					["coord"] = { 64.0, 37.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -1457,6 +1473,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(4585, {	-- Ezekiel  
+					["coord"] = { 75.6, 51.6, UNDERCITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
+				}),
 				n(4775, {	-- Felicia Doan <Trade Supplies>
 					["coord"] = { 64.1, 50.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -1471,8 +1494,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 58.4, 32.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
+					-- added all
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 2523 },	-- Bullova
 						{"select", "itemID", 2528 },	-- Falchion
 						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2531 },	-- Great Axe
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2525 },	-- War Hammer
+						{"select", "itemID", 2533 },	-- War Maul
 						{"select", "itemID", 2529 },	-- zweihander
 					},
 				}),
@@ -1513,6 +1544,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6328),	-- Recipe: Longjaw Mud Snapper
 						i(17062),	-- Recipe: Mithril Head Trout
 						i(6369),	-- Recipe: Rockscale Cod
+					},
+				}),
+				n(4557, {	-- Louis Warren
+					["coord"] = { 62.0, 41.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 851 },	-- cutlass
+						{"select", "itemID", 2024 },	-- espadon
+						{"select", "itemID", 1197 },	-- giant mace
+						{"select", "itemID", 2030 },	-- gnarled staff
+						{"select", "itemID", 2028 },	-- hammer
+						{"select", "itemID", 853 },	-- hatched
+						{"select", "itemID", 2207 },	-- jambiya
+						{"select", "itemID", 852 },	-- mace
+						{"select", "itemID", 2208 },	-- Poniard
+						{"select", "itemID", 854 },	-- quarter staff
+						{"select", "itemID", 2026 },	-- rock hammer
+						{"select", "itemID", 2027 },	-- scimitar
+						{"select", "itemID", 1196 },	-- tabar
 					},
 				}),
 				n(5190, {	-- Merill Pleasance <Tabard Vendor>

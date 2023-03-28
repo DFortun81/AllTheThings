@@ -504,13 +504,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(15809),	-- Heavy Crossbow	-- sold by many vendors
 				i(15807),	-- Light Crossbow	-- sold by many vendors
 			}),
-			filter(DAGGERS, {
-				i(2209),	-- Kris	-- sold by many vendors
-				i(2526),	-- Main Gauche	-- sold by many vendors
-				i(2208),	-- Poniard	-- sold by many vendors
-				i(2534),	-- Rondel	-- sold by many vendors
-				i(4565),	-- Simple Dagger	-- sold by many vendors
-			}),
 			filter(PROF_EQUIP, {	-- Fishing Poles
 				i(6366),	-- Darkwood Fishing Pole	-- fished up in many zones
 				i(6365),	-- Strong Fishing Pole	-- sold by many vendors
@@ -607,9 +600,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(2027),	-- Scimitar	-- sold by many vendors
 			}),
 			filter(TWO_HANDED_SWORDS, {
-				i(922),		-- Dacian Falx	-- sold by many vendors
 				i(30750),	-- Draenic Warblade	-- sold by many vendors
-				i(2024),	-- Espadon	-- sold by many vendors
 			}),
 			filter(WANDS, {
 				i(5239),	-- Blackbone Wand	-- sold by many vendors

@@ -22,6 +22,21 @@ _.Zones =
 					p(1915),	-- Blind Rat
 				})),
 				n(VENDORS, {
+					n(106056, {	-- Charles Seaton
+						["coord"] = { 74.2, 54.8, LEGION_THE_UNDERBELLY },
+						["sym"] = {
+						-- added all
+							{"select", "itemID", 1198 },	-- Claymore
+							{"select", "itemID", 851 },		-- Cutlass
+							{"select", "itemID", 922 },		-- Dacian Falx
+							{"select", "itemID", 2024 },	-- Espadon
+							{"select", "itemID", 2207 },	-- Jambiya
+							{"select", "itemID", 2209 },	-- Kris
+							{"select", "itemID", 923 },		-- Longsword
+							{"select", "itemID", 2208 },	-- Poniad
+							{"select", "itemID", 2027 },	-- Scimitar
+						},
+					}),
 					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 						["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
 						["coord"] = { 51.6, 40.6, LEGION_THE_UNDERBELLY },
@@ -60,7 +75,20 @@ _.Zones =
 					n(106054, {	-- Kareth
 						["coord"] = { 75.2, 57.0, LEGION_THE_UNDERBELLY },
 						["sym"] = {
+						-- added all
+							{"select", "itemID", 2520 },	-- Broadsword
+							{"select", "itemID", 1198 },	-- Claymore
+							{"select", "itemID", 851 },		-- Cutlass
+							{"select", "itemID", 922 },		-- Dacian Falx
+							{"select", "itemID", 2024 },	-- Espadon
 							{"select", "itemID", 2528 },	-- falchion
+							{"select", "itemID", 2207 },	-- Jambiya
+							{"select", "itemID", 2209 },	-- Kris
+							{"select", "itemID", 923 },		-- Longsword
+							{"select", "itemID", 2526 },	-- Main Gauche
+							{"select", "itemID", 2208 },	-- Poniad
+							{"select", "itemID", 2534 },	-- Rondel
+							{"select", "itemID", 2027 },	-- Scimitar
 						},
 					}),
 					n(97363, {	-- K'huta <Portals and Jujus>

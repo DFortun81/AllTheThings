@@ -486,6 +486,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16683, {	-- Darlia <Poison Supplies>
 					["coord"] = { 80.4, 51.0, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
 					["groups"] = {
 						i(24285, {	-- Crepuscular Powder
 							["cost"] = { { "g", 1500000 } },	-- 150g
@@ -591,6 +594,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 52.6, 64.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
+						-- added all
 						{"select", "itemID", 2520 },	-- broadsword
 						{"select", "itemID", 2528 },	-- falchion
 						{"select", "itemID", 2521 },	-- Flamberge

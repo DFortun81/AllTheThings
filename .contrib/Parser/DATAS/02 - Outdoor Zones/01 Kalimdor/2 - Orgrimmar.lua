@@ -5265,7 +5265,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.8, 63.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
+						-- added all
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
 						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
 					},
 				}),
 				n(3346, {	-- Kithas <Enchanting Supplies>
@@ -6234,6 +6247,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					}),
 				}),
+				n(3334, {	-- Rekkul 
+					["coord"] = { 44.0, 58.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(4565),	-- Simple Dagger
+					},
+				}),
 				n(52033, {	-- Rogoc <Bloodthirsty Gladiator>
 					["coord"] = { 37.8, 71.6, ORGRIMMAR },
 					["timeline"] = { "added 4.0.6.13596" },
@@ -6458,7 +6478,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.0, 37.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(922),		-- Dacian Falx
+						i(2024),	-- Espadon
 						i(2528),	-- falchion
+						i(2209),	-- Kris
+						i(2526),	-- Main Gauche
+						i(2208),	-- Poniad
+						i(2534),	-- Rondel
 					},
 				}),
 				n(3413, {	-- Sovik <Engineering Supplies>
@@ -6999,6 +7025,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
+					},
+				}),
+				n(3405, {	-- Zeal'aya
+					["coord"] = { 34.6, 63.2, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
 					},
 				}),
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>

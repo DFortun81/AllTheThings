@@ -793,11 +793,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16060),	-- Common White Shirt
 					},
 				}),
+				n(2997, {	-- Jyn Stonehoof
+					["coord"] = { 41.6, 62.0, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2208 },	-- Poniard
+					},
+				}),
 				n(3021, {	-- Kard Ragetotem
 					["coord"] = { 53.6, 56.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2528 },	-- Falchion
+						-- added all
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
 					},
 				}),
 				n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>

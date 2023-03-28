@@ -6726,11 +6726,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2529),	-- Zweihander
 					},
 				}),
+				n(1289, {	-- Gunther Weller <Weapons Merchant>
+					["coord"] = { 64.0, 68.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(922),		-- Dacian Falx
+						i(2024),	-- Espadon
+						i(2209),	-- Kris
+						i(2208),	-- Poniard
+					},
+				}),
 				n(1324, {	-- Heinrich Stone
 					["coord"] = { 77.0, 57.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(2528),	-- falchion
+						i(2526),	-- Main Gauche
+						i(2534),	-- Rondel
 					},
 				}),
 				n(110034, {	-- Historian Llore <The Timewalkers>
@@ -6752,6 +6764,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["sym"] = {{ "sub", "common_recipes_vendor", 50482 }}, -- Marith Lazuria <Jewelcrafting Supplies>
 					["races"] = ALLIANCE_ONLY,
+				}),
+				n(1325, {	-- Jasper Fel
+					["coord"] = { 80.6, 61.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
 				}),
 				n(1318, {	-- Jessara Cordell <Enchanting Supplies>
 					-- #if AFTER WRATH
@@ -7222,6 +7241,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(1287, {	-- Marda Weller <Weapons Merchant>
+					["coord"] = { 64.0, 68.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 2208 },	-- Poniard
+					},
+				}),
 				n(12781, {	-- Master Sergeant Biggins <Accessories Quartermaster> [WRATH+] / Master Sergeant Biggins <Officer Accessories Quartermaster>
 					-- #if BEFORE TBC
 					["description"] = "Found within the Champion's Hall.",
@@ -7268,6 +7297,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 3.0.1.8634" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(4565),	-- Simple Dagger
 						i(38579, {	-- Venomous Tome
 							["timeline"] = { "created 2.4.2", "added 3.0.1.8634" },
 							["isLimited"] = true,
@@ -7660,6 +7690,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(1326, {	-- Sloan McCoy
+					["coord"] = { 81.2, 62.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
+				}),
 				n(30730, {	-- Stanly McCormick
 					["coord"] = { 49.6, 74.8, STORMWIND_CITY },
 					["timeline"] = { "added 3.0.2.8905" },
