@@ -147,28 +147,28 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			FirstCraft(71271, 370465);	-- Phial of Tepid Versatility
 			FirstCraft(71275, 370473);	-- Steaming Phial of Finesse
 			-- Transmutations
-			q(71297, { ["name"] = "First Craft: Transmute: Awakened Air", }),
-			q(71298, { ["name"] = "First Craft: Transmute: Awakened Earth", }),
-			q(71299, { ["name"] = "First Craft: Transmute: Awakened Fire", }),
-			q(71300, { ["name"] = "First Craft: Transmute: Awakened Frost", }),
-			q(71301, { ["name"] = "First Craft: Transmute: Decay to Elements", }),
-			q(71302, { ["name"] = "First Craft: Transmute: Order to Elements", }),
+			FirstCraft(71297, 370711);	-- Transmute: Awakened Air
+			FirstCraft(71298, 370710);	-- Transmute: Awakened Earth
+			FirstCraft(71299, 370707);	-- Transmute: Awakened Fire
+			FirstCraft(71300, 370708);	-- Transmute: Awakened Frost
+			FirstCraft(71301, 370714);	-- Transmute: Decay to Elements
+			FirstCraft(71302, 370715);	-- Transmute: Order to Elements
 			-- Optional Reagents
-			q(71263, { ["name"] = "First Craft: Potion Absorption Inhibitor", }),
+			FirstCraft(71263, 370738);	-- Potion Absorption Inhibitor
 			-- Finishing Reagents
-			q(71257, { ["name"] = "First Craft: Agitating Potion Augmentation", }),
-			q(71255, { ["name"] = "First Craft: Brood Salt", }),
-			q(71258, { ["name"] = "First Craft: Reactive Phial Embellishment", }),
-			q(71254, { ["name"] = "First Craft: Stable Fluidic Draconium", }),
-			q(71256, { ["name"] = "First Craft: Writhefire Oil", }),
+			FirstCraft(71257, 370732);	-- Agitating Potion Augmentation
+			FirstCraft(71255, 370730);	-- Brood Salt
+			FirstCraft(71258, 370733);	-- Reactive Phial Embelishment
+			FirstCraft(71254, 370729);	-- Stable Fluidic Draconium
+			FirstCraft(71256, 370731);	-- Writhefire Oil
 			-- Incense
-			q(71259, { ["name"] = "First Craft: Exultant Incense", }),
-			q(71289, { ["name"] = "First Craft: Fervid Incense", }),
-			q(71261, { ["name"] = "First Craft: Sagacious Incense", }),
-			q(71260, { ["name"] = "First Craft: Somniferous Incense", }),
+			FirstCraft(71259, 370725);	-- Exultant Incense
+			FirstCraft(71289, 370728);	-- Fervid Incense
+			FirstCraft(71261, 370723);	-- Sagacious Incense
+			FirstCraft(71260, 370724);	-- Somniferous Incense
 			-- Alchemist Stones
-			q(71246, { ["name"] = "First Craft: Alacritous Alchemist Stone", }),
-			q(71245, { ["name"] = "First Craft: Sustaining Alchemist Stone", }),
+			FirstCraft(71246, 370677);	-- Alacritous Alchemist Stone
+			FirstCraft(71245, 370676);	-- Sustaining Alchemist Stone
 			-- Artisan Curios
 			-- FirstCraft(TODO, 400270, ADDED_10_0_7);	-- Steaming Phial of Finesse
 		})),
