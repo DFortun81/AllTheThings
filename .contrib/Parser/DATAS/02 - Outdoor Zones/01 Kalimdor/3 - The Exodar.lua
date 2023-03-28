@@ -401,6 +401,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(29744),	-- Gray Elekk (MOUNT!)
 					},
 				}),
+				n(16714, {	-- Ven
+					["coord"] = { 69.8, 89.4, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2528 },	-- falchion
+					},
+				}),
 			}),
 		},
 	})),

@@ -915,6 +915,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(4180, {	-- Ealyshia Dewwhisper
+					["coord"] = { 57.8, 71.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2529 },	-- zweihander
+					},
+				}),
 				n(4223, {	-- Fyldan <Cooking Supplies> [TBC+] / Fyldan <Cooking Supplier>
 					-- #if AFTER CATA
 					["coord"] = { 49.6, 36.6, DARNASSUS },
@@ -1020,6 +1028,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(67532, {	-- Gilnean Satchel
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
+					},
+				}),
+				n(4171, {	-- Merelyssa
+					["coord"] = { 61.6, 63.8, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2528 },	-- Falchion
 					},
 				}),
 				n(50305, {	-- Moon Priestess Lasara <Darnassus Quartermaster>

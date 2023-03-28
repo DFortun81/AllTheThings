@@ -587,6 +587,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["groups"] = QUELIS_GROUPS,
 				}),
+				n(16678, {	-- Rahein <Blade Vendor>
+					["coord"] = { 52.6, 64.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2520 },	-- broadsword
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2526 },	-- main-gauche
+						{"select", "itemID", 2534 },	-- rondel
+						{"select", "itemID", 2529 },	-- zweihander
+					},
+				}),
 				n(16442, {	-- Vinemaster Suntouched <Wine & Spirits Merchant>
 					["coord"] = { 79.5, 58.5, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,

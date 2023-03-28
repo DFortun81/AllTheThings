@@ -1467,6 +1467,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(4600, {	-- Geoffrey Hartwell
+					["coord"] = { 58.4, 32.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2528 },	-- Falchion
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2529 },	-- zweihander
+					},
+				}),
 				n(8403, {	-- Jeremiah Payson <Cockroach Vendor>
 					["coord"] = { 67.6, 44.1, UNDERCITY },
 					["races"] = HORDE_ONLY,

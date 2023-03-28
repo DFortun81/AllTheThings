@@ -6719,9 +6719,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.2, 57.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(2521),	-- Flamberge
 						i(73210, {	-- Trainee's Sword
 							["timeline"] = { ADDED_10_0_7 },
 						}),
+						i(2529),	-- Zweihander
+					},
+				}),
+				n(1324, {	-- Heinrich Stone
+					["coord"] = { 77.0, 57.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2528),	-- falchion
 					},
 				}),
 				n(110034, {	-- Historian Llore <The Timewalkers>

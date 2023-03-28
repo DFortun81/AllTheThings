@@ -57,6 +57,12 @@ _.Zones =
 							}),
 						},
 					}),
+					n(106054, {	-- Kareth
+						["coord"] = { 75.2, 57.0, LEGION_THE_UNDERBELLY },
+						["sym"] = {
+							{"select", "itemID", 2528 },	-- falchion
+						},
+					}),
 					n(97363, {	-- K'huta <Portals and Jujus>
 						["coord"] = { 66.0, 79.9, LEGION_THE_UNDERBELLY },
 						["g"] = {
