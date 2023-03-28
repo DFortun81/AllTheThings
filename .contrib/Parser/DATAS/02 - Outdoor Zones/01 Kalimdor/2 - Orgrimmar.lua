@@ -5051,9 +5051,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.0, 37.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(2521),	-- Flamberge
 						i(73210, {	-- Trainee's Sword
 							["timeline"] = { ADDED_10_0_7 },
 						}),
+						i(2529),	-- Zweihander
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -5257,6 +5259,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
+					},
+				}),
+				n(3331, {	-- Kareth
+					["coord"] = { 46.8, 63.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2528 },	-- falchion
 					},
 				}),
 				n(3346, {	-- Kithas <Enchanting Supplies>
@@ -6443,6 +6452,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso
 						chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle
 						chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo
+					},
+				}),
+				n(3361, {	-- Shoma <Weapon Vendor>
+					["coord"] = { 76.0, 37.8, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(2528),	-- falchion
 					},
 				}),
 				n(3413, {	-- Sovik <Engineering Supplies>

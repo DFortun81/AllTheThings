@@ -2258,6 +2258,14 @@ root(ROOTS.Zones, {
 						})),
 					}),
 					-- #endif
+					n(19047, {	-- Lissaf
+						["coord"] = { 51.8, 17.8, SHATTRATH_CITY },
+						["sym"] = {
+							{"select", "itemID", 2528 },	-- falchion
+							{"select", "itemID", 2521 },	-- Flamberge
+							{"select", "itemID", 2529 },	-- zweihander
+						},
+					}),
 					-- #if AFTER CATA
 					n(52278, {	-- Linsa <Tabard Vendor>
 						["coord"] = { 58.8, 46.4, SHATTRATH_CITY },
@@ -2675,6 +2683,14 @@ root(ROOTS.Zones, {
 							i(28903, {	-- Inscription of the Orb
 								["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
 							}),
+						},
+					}),
+					n(19240, {	-- Selanam the Blade
+						["coord"] = { 42.0, 75.2, SHATTRATH_CITY },
+						["sym"] = {
+							{"select", "itemID", 2528 },	-- falchion
+							{"select", "itemID", 2521 },	-- Flamberge
+							{"select", "itemID", 2529 },	-- zweihander
 						},
 					}),
 					n(19074, {	-- Skreah <Alchemy Supplies>

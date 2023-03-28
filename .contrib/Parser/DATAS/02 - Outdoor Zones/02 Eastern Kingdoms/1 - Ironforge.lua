@@ -1301,6 +1301,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(5120, {	-- Brenwyn Wintersteel
+					["coord"] = { 61.8, 88.8, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2528 },	-- Falchion
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2529 },	-- zweihander
+					},
+				}),
 				n(5163, {	-- Burbik Gearspanner <Trade Supplies>
 					["coord"] = { 46.6, 27.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -1374,6 +1383,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 							-- #endif
 						}),
+					},
+				}),
+				n(5170, {	-- Hjoldir Stoneblade
+					["coord"] = { 45.8, 7.0, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2520 },	-- broadsword
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2521 },	-- flamberge
+						{"select", "itemID", 2526 },	-- gauche
+						{"select", "itemID", 2534 },	-- rondel
+						{"select", "itemID", 2529 },	-- zweihander
 					},
 				}),
 				-- #if AFTER 6.1.0

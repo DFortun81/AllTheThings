@@ -603,7 +603,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 			filter(ONE_HANDED_SWORDS, {
 				i(2520),	-- Broadsword	-- sold by many vendors
 				i(30749),	-- Draenic Sparring Blade	-- sold by many vendors
-				i(2528),	-- Falchion	-- sold by many vendors
 				i(923),		-- Longsword	-- sold by many vendors
 				i(2027),	-- Scimitar	-- sold by many vendors
 			}),
@@ -611,8 +610,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(922),		-- Dacian Falx	-- sold by many vendors
 				i(30750),	-- Draenic Warblade	-- sold by many vendors
 				i(2024),	-- Espadon	-- sold by many vendors
-				i(2521),	-- Flamberge	-- sold by many vendors
-				i(2529),	-- Zweihander	-- sold by many vendors
 			}),
 			filter(WANDS, {
 				i(5239),	-- Blackbone Wand	-- sold by many vendors

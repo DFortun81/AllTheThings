@@ -793,6 +793,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16060),	-- Common White Shirt
 					},
 				}),
+				n(3021, {	-- Kard Ragetotem
+					["coord"] = { 53.6, 56.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2528 },	-- Falchion
+					},
+				}),
 				n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
 					["coord"] = { 46.8, 45.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -886,6 +893,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					},
+				}),
+				n(8398, {	-- Ohanko <Blade Vendor>
+					["coord"] = { 53.6, 56.8, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2523 },	-- bullova
+						{"select", "itemID", 2531 },	-- great axe
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2525 },	-- war hammer
+						{"select", "itemID", 2533 },	-- war maul
+						{"select", "itemID", 2529 },	-- zweihander
 					},
 				}),
 				n(8364, {	-- Pakwa <Bag Vendor>
