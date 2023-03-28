@@ -1926,6 +1926,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(4616, {	-- Ryedol's Lucky Pick
+					["timeline"] = { "removed 4.0.3" },
 					["crs"] = {
 						2740,	-- Shadowforge Darkweaver
 						2739,	-- Shadowforge Tunneler
