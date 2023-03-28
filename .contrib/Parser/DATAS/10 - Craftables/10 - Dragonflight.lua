@@ -842,6 +842,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			-- Disenchanting Mystic items, these quests are NOT tied to the specific item disenchanted, but unsure what their logic is.
 			q(71934, { ["name"] = "Disenchant ? Mystic items", }),
 			q(71935, { ["name"] = "Disenchant ? Mystic items", }),
+			-- Artisan Curios
+			q(74310, { ["name"] = "First Craft: Glowing Crystal Bookmark", ["timeline"] = {ADDED_10_0_7}}),
 		})),
 		filter(ILLUSIONS, {
 			i(200883),	-- Illusion: Primal Air
@@ -1939,6 +1941,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71618, { ["name"] = "First Craft: Skillful Illimited Diamond", }),
 			-- Misc
 			q(71657, { ["name"] = "First Craft: Tiered Medallion Setting", }),
+			q(74881, { ["name"] = "First Craft: Unstable Elementium", ["timeline"] = {ADDED_10_0_7}}),
 			-- Trinkets
 			q(71679, { ["name"] = "First Craft: Idol of the Dreamer", }),
 			q(71680, { ["name"] = "First Craft: Idol of the Earth Warder", }),
@@ -1989,7 +1992,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71656, { ["name"] = "First Craft: Queen's Gift", }),
 			q(71653, { ["name"] = "First Craft: Timewatcher's Patience", }),
 			-- Artisan Curios
-			--q(TODO, { ["name"] = "First Craft: Crystal Tuning Fork", ["timeline"] = {ADDED_10_0_7}}),
+			q(74482, { ["name"] = "First Craft: Crystal Tuning Fork", ["timeline"] = {ADDED_10_0_7}}),
 		})),
 		filter(BATTLE_PETS, {
 			i(193885),	-- Jeweled Amber Whelpling (PET!)
@@ -2337,6 +2340,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			q(71771, { ["name"] = "First Craft: Artisan's Sign", }),
 			q(71772, { ["name"] = "First Craft: Gnoll Tent", }),
 			q(71773, { ["name"] = "First Craft: Tuskarr Beanbag", }),
+			-- Artisan Curios
+			q(74483, { ["name"] = "First Craft: Reinforced Pristine Leather", ["timeline"] = {ADDED_10_0_7}}),
 		})),
 		filter(MISC, {
 			i(193468),	-- Fang Adornments+
@@ -2768,6 +2773,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71965),	-- First Overload Titan Node
 			q(71963),	-- First Overload Molten Node
 			q(71966),	-- First Overload Primal Node
+			q(72346),	-- First Serevite Seam
+			q(72347),	-- First Draconium Seam
 			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
 		}),

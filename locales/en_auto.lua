@@ -3261,9 +3261,13 @@ local keys = {
 		["74113"] = "Inscription Order: Leatherworking",
 		["74114"] = "Inscription Order: Skinning",
 		["74115"] = "Inscription Order: Tailoring",
+		["74310"] = "First Craft: Glowing Crystal Bookmark",
 		["74318"] = "First Craft: Traditional Morqut Kite",
 		["74481"] = "First Craft: Arcane Dispelling Rune",
+		["74482"] = "First Craft: Crystal Tuning Fork",
+		["74483"] = "First Craft: Reinforced Pristine Leather",
 		["74579"] = "Daily Zul'Gurub Cache",
+		["74881"] = "First Craft: Unstable Elementium",
 	},
 }
 
