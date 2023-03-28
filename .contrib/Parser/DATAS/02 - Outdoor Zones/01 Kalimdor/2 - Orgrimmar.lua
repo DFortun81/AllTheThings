@@ -6144,8 +6144,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 
 						-- ??? --
-						i(6126),	-- Trapper's Pants
-						i(6127),	-- Trapper's Boots
+						i(52556, {	-- Initiate's Boots
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(6126, {	-- Trapper's Pants
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(6127, {	-- Trapper's Boots
+							["timeline"] = { ADDED_10_0_5 }
+						}),
 						-- #endif
 					},
 				}),
