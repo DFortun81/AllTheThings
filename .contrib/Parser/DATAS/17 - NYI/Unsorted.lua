@@ -3093,7 +3093,6 @@ root(ROOTS.Unsorted, {
 				i(204330),	-- Inert Primordial Fragments
 				i(114942),	-- Cracked Draenic Mortar
 				i(204343),	-- Trusty Dragonkin Rake
-				i(204439),	-- Research Chest Key
 				i(204442),	-- Clump of Tar
 				i(204443),	-- Blacksteel Hammer
 				i(204561),	-- Primalist Cache Key
@@ -3203,7 +3202,6 @@ root(ROOTS.Unsorted, {
 				q(74434),
 				q(74435),
 				q(74472),
-				q(74473),
 				q(74478),
 				q(74479),
 				q(74480),
@@ -3219,7 +3217,6 @@ root(ROOTS.Unsorted, {
 				q(74712),
 				q(74713),
 				q(74714),
-				q(74757),
 				q(74760),
 				q(74761),
 				q(74762),
@@ -3259,7 +3256,6 @@ root(ROOTS.Unsorted, {
 				q(74974),
 				q(74978),
 				q(74983),
-				q(74993),
 				q(74994),
 				q(74996),
 				q(74997),
@@ -3280,7 +3276,6 @@ root(ROOTS.Unsorted, {
 				q(75065),
 				q(75130),
 				q(75146),
-				q(75153),
 				-- 10.0.7.48076
 				q(75161),
 				q(75163),
@@ -3316,10 +3311,8 @@ root(ROOTS.Unsorted, {
 				q(75427),
 				q(75428),
 				q(75432),
-				q(75436),
 				q(75457),
 				-- 10.0.7.48439
-				q(75484),
 				q(75520),
 				q(75521),
 				q(75522),
