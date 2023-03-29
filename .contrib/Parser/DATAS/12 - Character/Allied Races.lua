@@ -395,6 +395,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 150941 },	-- Katherine Proudmoore
 				["coord"] = { 67.8, 21.8, BORALUS },
 				["races"] = { KULTIRAN },
+				["classes"] = { DRUID, HUNTER, MAGE, MONK, PRIEST, ROGUE, SHAMAN, WARRIOR },
 				["lvl"] = 20,
 				["g"] = {
 					i(165010),	-- Tabard of Kul Tiras
@@ -406,6 +407,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 133362 },	-- Ambassador Moorgard
 				["coord"] = { 53.2, 15.4, STORMWIND_CITY },
 				["races"] = { KULTIRAN },
+				["classes"] = { DRUID, HUNTER, MAGE, MONK, PRIEST, ROGUE, SHAMAN, WARRIOR },
 				["lvl"] = 20,
 			}),
 		},
