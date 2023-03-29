@@ -23311,6 +23311,27 @@ else
 	ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
 end
 
+-- We overrite the function used by Blizzard and attach ATTData to it at the end 
+-- We do this cause blizzard has not implemented map pins in the TooltipDataProcessor yet, so it wont get called and tooltip will never get attached
+-- The only lines changed is Local ATTData... and the one below that, the rest is from blizzard. Last updated in 10.0.7.48749
+function EncounterJournalPinMixin:OnMouseEnter()
+	if self.tooltipTitle then
+		GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+		GameTooltip_SetTitle(GameTooltip, self.tooltipTitle);
+
+		if C_EncounterJournal.IsEncounterComplete(self.encounterID) then
+			GameTooltip_AddColoredLine(GameTooltip, DUNGEON_ENCOUNTER_DEFEATED, RED_FONT_COLOR);
+		end
+
+		GameTooltip_AddNormalLine(GameTooltip, self.tooltipText, true);
+
+		local ATTData = AttachTooltip(GameTooltip, self);
+		GameTooltip_AddNormalLine(GameTooltip, ATTData, true);
+
+		GameTooltip:Show();
+	end
+end
+
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 end -- Tooltip Hooks
 
