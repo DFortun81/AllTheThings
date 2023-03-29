@@ -642,6 +642,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 28.5, 57.5, THE_FORBIDDEN_REACH },
 							["questID"] = 72890,
 						}),
+						o(390136, {	-- Spore-bound Essence
+							["coord"] = { 30.7, 55.1, THE_FORBIDDEN_REACH },
+							["questID"] = 75136,
+							["description"] = "Use Restorative Water on an Overgrown Skeleton.",
+							["g"] = {
+								i(203852),	-- Spore-bound Essence (TOY!)
+							},
+						}),
 						o(393222, {	-- Supply Trunk
 							["questID"] = 75216,
 						}),
@@ -733,11 +741,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 27.3, 49.6, THE_FORBIDDEN_REACH },
 							["questID"] = 74404,
 						}),
+						o(392025, {	-- Molded Coins
+							["coord"] = { 28.8, 57.9, THE_FORBIDDEN_REACH },
+							["questID"] = 75161,
+							["g"] = {
+								i(203701),	-- Neltharion Gift Token
+							},
+						}),
 						o(386648, {	-- Mysterious Scroll
 							["questID"] = 74574,
 							["g"] = {
 								i(204802),	-- Scroll of Teleport: Ziskara Vaults
 							},
+						}),
+						o(392026, {	-- Neltharion Coin Mold
+							["coord"] = { 28.8, 57.9, THE_FORBIDDEN_REACH },
+							["questID"] = 75163,
 						}),
 						o(386578, {	-- Neltharion Gift Token
 							["coord"] = { 24.8, 50.5, THE_FORBIDDEN_REACH },
@@ -763,6 +782,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386460, {	-- Primordial Arcane Cache
 							["coord"] = { 27.6, 52.7, THE_FORBIDDEN_REACH },
 							["questID"] = 74426,
+						}),
+						o(392335, {	-- Primordial Armor Cache
+							["coord"] = { 28.9, 58.2, THE_FORBIDDEN_REACH },
+							["questID"] = 75169,
 						}),
 						o(386429, {	-- Primordial Earth Cache
 							["coord"] = { 27.3, 49.6, THE_FORBIDDEN_REACH },
@@ -809,13 +832,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386425, {	-- Searing Chest
 							["coord"] = { 29.1, 54.4, THE_FORBIDDEN_REACH },
 							["questID"] = 74398,
-						}),
-						o(390136, {	-- Spore-bound Essence
-							["questID"] = 75136,
-							["description"] = "Use Restorative Water on an Overgrown Skeleton.",
-							["g"] = {
-								i(203852),	-- Spore-bound Essence (TOY!)
-							},
 						}),
 						o(386452, {	-- Void-Bound Strongbox
 							["questID"] = 75283,
@@ -887,6 +903,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(389173, {	-- Primordial Blood Cache
 							["coord"] = { 30.9, 56.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75031,
+						}),
+						o(386431, {	-- Primordial Earth Cache
+							["coord"] = { 30.6, 55.2, THE_FORBIDDEN_REACH },
+							["questID"] = 74405,
 						}),
 						o(386459, {	-- Primordial Decay Cache
 							["questID"] = 74425,
@@ -976,7 +996,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				i(204021),	-- Necromantic Death Stone
 				i(204025),	-- Obscure Pastel Stone
 				i(204022),	-- Pestilent Plague Stone
-				i(204008),	-- Prodigious Sand Stone
 				i(204029),	-- Prophetic Twilight Stone
 				i(204003),	-- Raging Magma Stone
 				i(204004),	-- Searing Smokey Stone

@@ -3033,7 +3033,7 @@ root(ROOTS.Unsorted, {
 				i(203381),	-- Sealed Letter to Neltharion
 			}),
 			filter(MISC, {
-
+				i(204008),	-- Prodigious Sand Stone
 				i(203464),	-- Sealed Spellsworn Scroll
 				i(203465),	-- Draconic Artifact
 				i(203466),	-- Dragonscale Surplus Crate
@@ -3195,7 +3195,6 @@ root(ROOTS.Unsorted, {
 				q(74362),
 				q(74377),
 				q(74384),
-				q(74405),
 				q(74418),
 				q(74427),
 				q(74433),
@@ -3277,9 +3276,6 @@ root(ROOTS.Unsorted, {
 				q(75130),
 				q(75146),
 				-- 10.0.7.48076
-				q(75161),
-				q(75163),
-				q(75169),
 				q(75185),
 				q(75189),
 				q(75190),
