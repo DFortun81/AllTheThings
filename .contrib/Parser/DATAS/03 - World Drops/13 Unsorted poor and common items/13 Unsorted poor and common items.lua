@@ -548,9 +548,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(2524),	-- Truncheon	-- sold by many vendors
 			}),
 			filter(TWO_HANDED_MACES, {
-				i(924),		-- Maul	-- sold by many vendors
-				i(2026),	-- Rock Hammer	-- sold by many vendors
-				i(2525),	-- War Hammer	-- sold by many vendors
 				i(2533),	-- War Maul	-- sold by many vendors
 			}),
 			filter(MISC, {
@@ -611,9 +608,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(5208),	-- Smoldering Wand	-- sold by many vendors
 			}),
 			---
-			i(1196),	-- Tabar
-			i(852),		-- Mace
-			i(1197),	-- Giant Mace
 			i(2207),	-- Jambiya
 			i(854),		-- Quarter Staff
 		}),

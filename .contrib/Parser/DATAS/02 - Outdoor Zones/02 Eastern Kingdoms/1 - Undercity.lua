@@ -1252,6 +1252,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(4602, {	-- Benijah Fenner
+					["coord"] = { 58.6, 32.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 15808 },    -- Fine Light Crossbow
+						{"select", "itemID", 925 },    -- Flail
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 15809 },    -- Heavy Crossbow
+						{"select", "itemID", 15807 },    -- Light Crossbow
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 924 },    -- Maul
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
+					},
+				}),
 				n(50304, {	-- Captain Donald Adams <Undercity Quartermaster>
 					["coords"] = {
 						{ 63.6, 48.8, UNDERCITY },
@@ -1509,7 +1527,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 58.4, 32.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-					-- added all
 						{"select", "itemID", 2520 },	-- Broadsword
 						{"select", "itemID", 2523 },	-- Bullova
 						{"select", "itemID", 2528 },	-- Falchion

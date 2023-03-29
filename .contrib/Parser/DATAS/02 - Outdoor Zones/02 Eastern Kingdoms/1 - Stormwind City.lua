@@ -6723,23 +6723,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(73210, {	-- Trainee's Sword
 							["timeline"] = { ADDED_10_0_7 },
 						}),
+						i(2525),	-- War Hammer
 						i(2529),	-- Zweihander
 					},
 				}),
 				n(1348, {	-- Gregory Ardus
 					["coord"] = { 48.2, 54.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 1197 },	-- Giant Mace
+						{"select", "itemID", 2030 },	-- Gnarled Staff
+						{"select", "itemID", 852 },	-- Mace
+						{"select", "itemID", 924 },	-- Maul
+						{"select", "itemID", 854 },	-- Quarter Staff
+						{"select", "itemID", 2026 },	-- Rock Hammer
+					},
 					["groups"] = {
 						i(2492),	-- Cudgel
 						i(925),	-- Flail
-						i(1197),	-- Giant Mace
-						i(2030),	-- Gnarled Staff
 						i(2028),	-- Hammer
 						i(928),	-- Long Staff
-						i(852),	-- Mace
-						i(924),	-- Maul
-						i(854),	-- Quarter Staff
-						i(2026),	-- Rock Hammer
 						i(2493),	-- Wooden Mallet
 					},
 				}),

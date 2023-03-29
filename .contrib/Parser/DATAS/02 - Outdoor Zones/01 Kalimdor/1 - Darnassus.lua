@@ -961,8 +961,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 57.8, 71.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2521 },	-- Flamberge
-						{"select", "itemID", 2529 },	-- zweihander
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2521 },    -- Flamberge
+						{"select", "itemID", 2531 },    -- Great Axe
+						{"select", "itemID", 2525 },    -- War Hammer
+						{"select", "itemID", 2533 },    -- War Maul
+						{"select", "itemID", 2529 },    -- Zweihander
 					},
 				}),
 				n(4223, {	-- Fyldan <Cooking Supplies> [TBC+] / Fyldan <Cooking Supplier>
@@ -1191,6 +1195,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16217, {	-- Formula: Enchant Shield - Greater Stamina (RECIPE!)
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(4233, {	-- Mythidan
+					["coord"] = { 60.4, 63.4, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 925 },    -- Flail
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 924 },    -- Maul
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
 					},
 				}),
 				n(4225, {	-- Saenorion <Leatherworking Supplies>

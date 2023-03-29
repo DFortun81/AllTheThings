@@ -628,6 +628,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				n(16637, {	-- Welethelon 
+					["coord"] = { 56.2, 60.2, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 2532 },    -- Morning Star
+						{"select", "itemID", 2524 },    -- Truncheon
+						{"select", "itemID", 2525 },    -- War Hammer
+						{"select", "itemID", 2533 },    -- War Maul
+						{"select", "itemID", 2535 },    -- War Staff
+					},
+				}),
 				n(16611, {	-- Zalle <Reagents>
 					["coord"] = { 54.5, 72.0, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,

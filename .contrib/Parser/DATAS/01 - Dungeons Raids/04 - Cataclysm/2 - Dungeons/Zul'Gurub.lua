@@ -187,7 +187,7 @@ root("Instances", tier(CATA_TIER, {
 					i(BLOODSCALP_COIN),
 					i(GURUBASHI_COIN),
 					i(203743, {	-- Jostled Gurubashi Cache
-						["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
+						["description"] = "You can fish only 1 out of the 2 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
 						["sym"] = {{"select","itemID",
 							-- Bijous
 							BLUE_HAKKARI_BIJOU,
@@ -219,7 +219,6 @@ root("Instances", tier(CATA_TIER, {
 					}),
 					i(HAKKARI_COIN),
 					i(203912, {	-- Penny Pouch o' Paragons
-						["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
 						["sym"] = {{"select","itemID",
 							-- Bijous
 							BLUE_HAKKARI_BIJOU,
@@ -254,7 +253,7 @@ root("Instances", tier(CATA_TIER, {
 					i(SKULLSPLITTER_COIN),
 					i(VILEBRANCH_COIN),
 					i(203742, {	-- Waterlooged Gurubashi Cache
-						["description"] = "You can fish only 1 out of the 3 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
+						["description"] = "You can fish only 1 out of the 2 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
 						["sym"] = {{"select","itemID",
 							-- Bijous
 							BLUE_HAKKARI_BIJOU,
@@ -293,12 +292,6 @@ root("Instances", tier(CATA_TIER, {
 					i(19767),	-- Primal Bat Leather
 				})),
 				n(QUESTS, {
-					q(74576, {	-- Restored Hakkari Bijou
-						["description"] = "|cFFFF0000This achievement is required to have any of the materials, bijous or recipes added in 10.0.7 drop.|r\n\nTo get the achievement, kill any two of the four bosses to unlock Jin'do & then enter the interior of the pyramid in the middle of the dungeon. The first Bijou named 'Fragmented Hakkari Bijou' is near one the gongs at roughly 48.6, 42.3 & the second Bijou is at the same spot, but during phase 2 of the Jin'do Boss Encounter. Collect both, combine them & deliver them to Rin'wosho in Zandalar at 55.0 86.8",
-						["provider"] = { "i", 203737 },	-- Restored Hakkari Bijou
-						["coord"] = { 55.0, 86.8, DAZARALOR },
-						["timeline"] = { ADDED_10_0_7 },
-					}),
 					q(29155, {	-- A Shiny Reward
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -366,9 +359,37 @@ root("Instances", tier(CATA_TIER, {
 					q(29175,  {	-- Break Their Spirits
 						["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
 					}),
+					q(74696, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Gurubashi, Vilebranch, and Witherbark Coins
+						["cost"] = {
+							{ "i", GURUBASHI_COIN, 1 },
+							{ "i", VILEBRANCH_COIN, 1 },
+							{ "i", WITHERBARK_COIN, 1 },
+						},
+						["repeatable"] = true,
+						["groups"] = {
+							i(ZANDALAR_BARGAINING_TOKEN),
+						},
+					})),
 					q(29242,  {	-- Putting a Price on Priceless
 						["provider"] = { "n", 53043 },			-- Briney Boltcutter
 					}),
+					q(74576, {	-- Restored Hakkari Bijou
+						["description"] = "|cFFFF0000This achievement is required to have any of the materials, bijous or recipes added in 10.0.7 drop.|r\n\nTo get the achievement, kill any two of the four bosses to unlock Jin'do & then enter the interior of the pyramid in the middle of the dungeon. The first Bijou named 'Fragmented Hakkari Bijou' is near one the gongs at roughly 48.6, 42.3 & the second Bijou is at the same spot, but during phase 2 of the Jin'do Boss Encounter. Collect both, combine them & deliver them to Rin'wosho in Zandalar at 55.0 86.8",
+						["provider"] = { "i", 203737 },	-- Restored Hakkari Bijou
+						["coord"] = { 55.0, 86.8, DAZARALOR },
+						["timeline"] = { ADDED_10_0_7 },
+					}),
+					q(74697, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
+						["cost"] = {
+							{ "i", BLOODSCALP_COIN, 1 },
+							{ "i", SANDFURY_COIN, 1 },
+							{ "i", SKULLSPLITTER_COIN, 1 },
+						},
+						["repeatable"] = true,
+						["groups"] = {
+							i(ZANDALAR_BARGAINING_TOKEN),
+						},
+					})),
 					q(29168,  {	-- Secondary Targets
 						["u"] = NEVER_IMPLEMENTED,
 					}),
@@ -386,33 +407,11 @@ root("Instances", tier(CATA_TIER, {
 						["isDaily"] = true,
 						["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
 					}),
-					q(74696, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Gurubashi, Vilebranch, and Witherbark Coins
-						["cost"] = {
-							{ "i", GURUBASHI_COIN, 1 },
-							{ "i", VILEBRANCH_COIN, 1 },
-							{ "i", WITHERBARK_COIN, 1 },
-						},
-						["repeatable"] = true,
-						["groups"] = {
-							i(ZANDALAR_BARGAINING_TOKEN),
-						},
-					})),
 					q(74695, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Zulian, Razzashi, and Hakkari Coins
 						["cost"] = {
 							{ "i", HAKKARI_COIN, 1 },
 							{ "i", RAZZASHI_COIN, 1 },
 							{ "i", ZULIAN_COIN, 1 },
-						},
-						["repeatable"] = true,
-						["groups"] = {
-							i(ZANDALAR_BARGAINING_TOKEN),
-						},
-					})),
-					q(74697, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
-						["cost"] = {
-							{ "i", BLOODSCALP_COIN, 1 },
-							{ "i", SANDFURY_COIN, 1 },
-							{ "i", SKULLSPLITTER_COIN, 1 },
 						},
 						["repeatable"] = true,
 						["groups"] = {
@@ -758,14 +757,6 @@ root("Instances", tier(CATA_TIER, {
 					}),
 				})),
 				n(ZONE_DROPS, {
-					i(69802, {	-- Band of the Gurubashi Berserker
-					}),
-					i(69803, {	-- Gurubashi Punisher
-					}),
-					i(69800, {	-- Spiritguard Drape
-					}),
-					i(69796, {	-- Spiritcaller Cloak
-					}),
 					-- "Mini Bosses"
 					n(52442, {	-- Florawing Hive Queen
 						["questID"] = 53809,	-- KillID
@@ -793,11 +784,49 @@ root("Instances", tier(CATA_TIER, {
 						i(69818),	-- Giant Sack
 					}),
 					n(52414),	-- Tor-Tun
+					i(69802, {	-- Band of the Gurubashi Berserker
+					}),
+					i(69803, {	-- Gurubashi Punisher
+					}),
+					i(69800, {	-- Spiritguard Drape
+					}),
+					i(69796, {	-- Spiritcaller Cloak
+					}),
 				}),
 				n(ZONE_DROPS, bubbleDown({ ["timeline"] = { ADDED_10_0_7 }, ["modID"] = 0, }, {
 					i(BLOODSCALP_COIN),
 					i(GURUBASHI_COIN),
 					i(HAKKARI_COIN),
+					i(203912, {	-- Penny Pouch o' Paragons
+						["sym"] = {{"select","itemID",
+							-- Bijous
+							BLUE_HAKKARI_BIJOU,
+							BRONZE_HAKKARI_BIJOU,
+							GOLD_HAKKARI_BIJOU,
+							GREEN_HAKKARI_BIJOU,
+							ORANGE_HAKKARI_BIJOU,
+							PURPLE_HAKKARI_BIJOU,
+							RED_HAKKARI_BIJOU,
+							SILVER_HAKKARI_BIJOU,
+							YELLOW_HAKKARI_BIJOU,
+							-- Coins
+							BLOODSCALP_COIN,
+							GURUBASHI_COIN,
+							HAKKARI_COIN,
+							RAZZASHI_COIN,
+							SANDFURY_COIN,
+							SKULLSPLITTER_COIN,
+							VILEBRANCH_COIN,
+							WITHERBARK_COIN,
+							ZULIAN_COIN,
+							-- Items
+							19945,	-- Lizardscale Eyepatch
+							19947,	-- Nat Pagle's Broken Reel
+							19944,	-- Nat Pagle's Fish Terminator
+							19946,	-- Tigule's Harpoon
+							22739,	-- Tome of Polymorph Turtle
+						}},
+					}),
 					i(19943),	-- Massive Mojo
 					i(RAZZASHI_COIN),
 					i(SANDFURY_COIN),
