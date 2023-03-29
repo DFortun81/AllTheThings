@@ -3604,20 +3604,20 @@ local ResolveFunctions = {
 				-- SourceQuest
 				if criteriaType == 27 then
 					cache = app.SearchForField("questID", assetID);
-					for _,o in ipairs(cache) do
-						criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID});
-						tinsert(searchResults, criteriaObject);
-						NestObject(o, criteriaObject);
-						BuildGroups(o);
+					for _,c in ipairs(cache) do
+						-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
+						criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID}, true);
+						NestObject(c, criteriaObject);
+						BuildGroups(c);
 						app.CacheFields(criteriaObject);
-						app.DirectGroupUpdate(o);
-						-- app.PrintDebug("Add-Crit",achievementID,id,"=>",o.hash)
+						app.DirectGroupUpdate(c);
+						-- app.PrintDebug("Add-Crit",achievementID,id,"=>",c.hash)
 					end
 					-- added to the quest(s) groups, not added to achievement
 					criteriaObject = nil;
 				-- Items
 				elseif criteriaType == 36 or criteriaType == 42 then
-					criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID});
+					criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID}, true);
 					criteriaObject.providers = {{ "i", assetID }};
 				elseif criteriaType == 110	-- Casting spells on specific target
 					or criteriaType == 29 or criteriaType == 69	-- Buff Gained
@@ -4145,9 +4145,9 @@ end
 local function ResolveSymlinkGroupAsync(group)
 	-- app.PrintDebug("RSGa",group.hash)
 	local groups = ResolveSymbolicLink(group);
+	group.sym = nil;
 	if groups then
 		PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
-		group.sym = nil;
 		-- app.PrintDebug("RSGa",group.g and #group.g,group.hash)
 		-- newly added group data needs to be checked again for further content to fill, since it will not have been recursively checked
 		-- on the initial pass due to the async nature
@@ -9132,10 +9132,10 @@ end
 local function GetParentAchievementInfo(t, key)
 	local achievement = app.SearchForObject("achievementID", t.achievementID, "key");
 	if achievement then
-		rawset(t, "c", achievement["c"]);
-		rawset(t, "classID", achievement["classID"]);
-		rawset(t, "races", achievement["races"]);
-		rawset(t, "r", achievement["r"]);
+		rawset(t, "c", achievement.c);
+		rawset(t, "classID", achievement.classID);
+		rawset(t, "races", achievement.races);
+		rawset(t, "r", achievement.r);
 		return rawget(t, key);
 	end
 	DelayedCallback(app.report, 1, "Missing Referenced Achievement!",t.achievementID);
@@ -9260,7 +9260,13 @@ local criteriaFields = {
 criteriaFields.collectible = fields.collectible;
 criteriaFields.icon = fields.icon;
 app.BaseAchievementCriteria = app.BaseObjectFields(criteriaFields, "BaseAchievementCriteria");
-app.CreateAchievementCriteria = function(id, t)
+app.CreateAchievementCriteria = function(id, t, init)
+	if init then
+		t = setmetatable(constructor(id, t, "criteriaID"), app.BaseAchievementCriteria);
+		GetParentAchievementInfo(t, "");
+		-- app.PrintDebug("CreateAchievementCriteria.Init",t.hash)
+		return t;
+	end
 	return setmetatable(constructor(id, t, "criteriaID"), app.BaseAchievementCriteria);
 end
 
@@ -14762,20 +14768,21 @@ local function SetGroupVisibility(parent, group)
 	end
 end
 local function SetThingVisibility(parent, group)
-	-- if app.DEBUG_PRINT then print("SetThingVisibility",group.key,group[group.key]) end
+	-- local debug = group.criteriaID == 2204;
+	-- if debug then print("TV",group.key,group[group.key]) end
 	local forceShowParent;
 	if group.total > 0 then
 		-- If we've collected the item, use the "Show Collected Items" filter.
 		group.visible = group.progress < group.total or app.CollectedItemVisibilityFilter(group);
-		-- if app.DEBUG_PRINT then print("SetThingVisibility.total",group.progress,group.total,group.visible) end
+		-- if debug then print("TV.total",group.progress,group.total,group.visible) end
 	elseif app.ShowTrackableThings(group) then
 		-- If this group is trackable, then we should show it.
 		group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
 		forceShowParent = group.visible;
-		-- if app.DEBUG_PRINT then print("SetThingVisibility.trackable",group.progress,group.total,group.visible) end
+		-- if debug then print("TV.trackable",group.progress,group.total,group.visible) end
 	else
 		group.visible = app.DefaultThingFilter();
-		-- if app.DEBUG_PRINT then print("SetThingVisibility.default",group.progress,group.total,group.visible) end
+		-- if debug then print("TV.default",group.progress,group.total,group.visible) end
 	end
 	if parent and forceShowParent then
 		parent.forceShow = forceShowParent;
@@ -14783,7 +14790,8 @@ local function SetThingVisibility(parent, group)
 end
 local UpdateGroups;
 local function UpdateGroup(parent, group)
-	-- if group.key == "runeforgePowerID" and group[group.key] == 134 then app.DEBUG_PRINT = 134; end
+	-- local debug = group.criteriaID == 2204;
+	-- if debug then print("UG",group.hash,group.__type) end
 	-- if not app.DEBUG_PRINT and shouldLog then
 	-- 	app.DEBUG_PRINT = shouldLog;
 	-- end
@@ -14803,20 +14811,19 @@ local function UpdateGroup(parent, group)
 	-- end
 
 	group.visible = nil;
-	-- if app.DEBUG_PRINT then print("UpdateGroup",group.key,group.key and group[group.key],group.__type) end
 	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
 	local valid;
 	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
 	-- so need to verify filtering based on that instead of only itself
 	if group.sourceParent then
 		valid = app.RecursiveGroupRequirementsFilter(group);
+		-- if debug then print("UG.RGRF",valid,"=>",group.sourceParent.hash) end
 	else
 		valid = app.GroupRequirementsFilter(group) and app.GroupFilter(group);
+		-- if debug then print("UG.GRF/GF",valid) end
 	end
 
 	if valid then
-		-- if app.DEBUG_PRINT then print("UpdateGroup.GroupRequirementsFilter",group.key,group.key and group[group.key],group.__type) end
-		-- if app.DEBUG_PRINT then print("UpdateGroup.GroupFilter",group.key,group.key and group[group.key],group.__type) end
 		-- Set total/progress for this object using its cost/custom information if any
 		local costTotal = group.costTotal or 0;
 		local costProgress = costTotal > 0 and group.costProgress or 0;
@@ -14824,7 +14831,7 @@ local function UpdateGroup(parent, group)
 		local customProgress = customTotal > 0 and group.customProgress or 0;
 		local total, progress = costTotal + customTotal, costProgress + customProgress;
 
-		-- if app.DEBUG_PRINT then print("UpdateGroup.Initial",group.key,group.key and group[group.key],group.progress,group.total,group.__type) end
+		-- if debug then print("UG.Init","cost",costProgress,costTotal,"custom",customProgress,customTotal,"=>",progress,total) end
 
 		-- If this item is collectible, then mark it as such.
 		if group.collectible then
@@ -14835,6 +14842,7 @@ local function UpdateGroup(parent, group)
 		end
 
 		-- Set the total/progress on the group
+		-- if debug then print("UG.prog",progress,total,group.collectible) end
 		group.progress = progress;
 		group.total = total;
 
@@ -14954,7 +14962,7 @@ local function DirectGroupUpdate(group, got)
 	end
 	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
 	if not app.RecursiveDirectGroupRequirementsFilter(group) then
-		-- app.PrintDebug("DGU:Filtered",group.hash,group.parent.text)
+		-- app.PrintDebug("DGU:Filtered",group.hash,group.parent and group.parent.text)
 		return;
 	end
 	local prevTotal, prevProg = group.total or 0, group.progress or 0;
