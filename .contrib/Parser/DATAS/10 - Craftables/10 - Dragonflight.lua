@@ -765,85 +765,85 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			["requireSkill"] = ENCHANTING,
 		},{
 			-- Cloak Enchantments
-			q(71403, { ["name"] = "First Craft: Graceful Avoidance", }),
-			q(71407, { ["name"] = "First Craft: Homebound Avoidance", }),
-			q(71405, { ["name"] = "First Craft: Renegenerative Leech", }),
-			q(71402, { ["name"] = "First Craft: Writ of Avoidance", }),
-			q(71404, { ["name"] = "First Craft: Writ of Leech", }),
-			q(71406, { ["name"] = "First Craft: Writ of Speed", }),
+			FirstCraft(71403, 389403);	-- Graceful Avoidance
+			FirstCraft(71407, 389405);	-- Homebound Speed
+			FirstCraft(71405, 389404);	-- Regenerative Leech
+			FirstCraft(71402, 389397);	-- Writ of Avoidance
+			FirstCraft(71404, 389398);	-- Writ of Leech
+			FirstCraft(71406, 389400);	-- Writ of Speed
 			-- Chest Enchantments
-			q(71398, { ["name"] = "First Craft: Accelerated Agility", }),
-			q(71399, { ["name"] = "First Craft: Reserved Intellect", }),
-			q(71401, { ["name"] = "First Craft: Sustained Strength", }),
-			q(71400, { ["name"] = "First Craft: Waking Stats", }),
+			FirstCraft(71398, 389416);	-- Accelerated Agility
+			FirstCraft(71399, 389417);	-- Reserve of Intellect
+			FirstCraft(71401, 389419);	-- Sustained Strength
+			FirstCraft(71400, 389410);	-- Waking Stats
 			-- Bracer Enchantments
-			q(71393, { ["name"] = "First Craft: Devotion of Avoidance", }),
-			q(71395, { ["name"] = "First Craft: Devotion of Leech", }),
-			q(71397, { ["name"] = "First Craft: Devotion of Speed", }),
-			q(71392, { ["name"] = "First Craft: Writ of Avoidance", }),
-			q(71394, { ["name"] = "First Craft: Writ of Leech", }),
-			q(71396, { ["name"] = "First Craft: Writ of Speed", }),
+			FirstCraft(71393, 389301);	-- Devotion of Avoidance
+			FirstCraft(71395, 389303);	-- Devotion of Leech
+			FirstCraft(71397, 389304);	-- Devotion of Speed
+			FirstCraft(71392, 389297);	-- Writ of Avoidance
+			FirstCraft(71394, 389298);	-- Writ of Leech
+			FirstCraft(71396, 389300);	-- Writ of Speed
 			-- Boot Enchantments
-			q(71390, { ["name"] = "First Craft: Plainsrunner's Breeze", }),
-			q(71389, { ["name"] = "First Craft: Rider's Reassurance", }),
-			q(71391, { ["name"] = "First Craft: Watcher's Loam", }),
+			FirstCraft(71390, 389479);	-- Plainsrunner's Breeze
+			FirstCraft(71389, 389480);	-- Rider's Reassurance
+			FirstCraft(71391, 389484);	-- Watcher's Loam
 			-- Ring Enchantments
-			q(71409, { ["name"] = "First Craft: Devotion of Critical Strike", }),
-			q(71411, { ["name"] = "First Craft: Devotion of Haste", }),
-			q(71413, { ["name"] = "First Craft: Devotion of Mastery", }),
-			q(71415, { ["name"] = "First Craft: Devotion of Versatility", }),
-			q(71408, { ["name"] = "First Craft: Writ of Critical Strike", }),
-			q(71410, { ["name"] = "First Craft: Writ of Haste", }),
-			q(71412, { ["name"] = "First Craft: Writ of Mastery", }),
-			q(71414, { ["name"] = "First Craft: Writ of Versatility", }),
+			FirstCraft(71409, 389292);	-- Devotion of Critical Strike
+			FirstCraft(71411, 389293);	-- Devotion of Haste
+			FirstCraft(71413, 389294);	-- Devotion of Mastery
+			FirstCraft(71415, 389295);	-- Devotion of Versatility
+			FirstCraft(71408, 388930);	-- Writ of Critical Strike
+			FirstCraft(71410, 389135);	-- Writ of Haste
+			FirstCraft(71412, 389136);	-- Writ of Mastery
+			FirstCraft(71414, 389151);	-- Writ of Versatility
 			-- Weapon Enchantments
-			q(71426, { ["name"] = "First Craft: Burning Devotion", }),
-			q(71425, { ["name"] = "First Craft: Burning Writ", }),
-			q(71424, { ["name"] = "First Craft: Earthen Devotion", }),
-			q(71423, { ["name"] = "First Craft: Earthen Writ", }),
-			q(71428, { ["name"] = "First Craft: Frozen Devotion", }),
-			q(71427, { ["name"] = "First Craft: Frozen Writ", }),
-			q(71430, { ["name"] = "First Craft: Sophic Devotion", }),
-			q(71429, { ["name"] = "First Craft: Sophic Writ", }),
-			q(71422, { ["name"] = "First Craft: Wafting Devotion", }),
-			q(71421, { ["name"] = "First Craft: Wafting Writ", }),
+			FirstCraft(71426, 389547);	-- Burning Devotion
+			FirstCraft(71425, 389537);	-- Burning Writ
+			FirstCraft(71424, 389549);	-- Earthen Devotion
+			FirstCraft(71423, 389540);	-- Earthen Writ
+			FirstCraft(71428, 389551);	-- Frozen Devotion
+			FirstCraft(71427, 389543);	-- Frozen Writ
+			FirstCraft(71430, 389550);	-- Sophic Devotion
+			FirstCraft(71429, 389542);	-- Sophic Writ
+			FirstCraft(71422, 389558);	-- Wafting Devotion
+			FirstCraft(71421, 389546);	-- Wafting Writ
 			-- Profession Tool Enchantments
-			q(71416, { ["name"] = "First Craft: Draconic Detness", }),
-			q(71417, { ["name"] = "First Craft: Draconic Finess", }),
-			q(71418, { ["name"] = "First Craft: Draconic Inspiration", }),
-			q(71419, { ["name"] = "First Craft: Draconic Perception", }),
-			q(71420, { ["name"] = "First Craft: Draconic Resourcefulness", }),
+			FirstCraft(71416, 389508);	-- Draconic Deftness
+			FirstCraft(71417, 389513);	-- Draconic Finess
+			FirstCraft(71418, 389519);	-- Draconic Inspiration
+			FirstCraft(71419, 389525);	-- Draconic Perception
+			FirstCraft(71420, 389530);	-- Draconic Resourcefulness
 			-- Rods and Wands
-			q(71435, { ["name"] = "First Craft: Enchanted Writhebark Rod", }),
-			q(71433, { ["name"] = "First Craft: Runed Draconium Rod", }),
-			q(71434, { ["name"] = "First Craft: Runed Khaz'gorite", }),
-			q(71945, { ["name"] = "First Craft: Runed Serevite Rod", }),
-			q(71436, { ["name"] = "First Craft: Torch of Primal Awakening", }),
+			FirstCraft(71435, 391176);	-- Enchanted Writhebark Wand
+			FirstCraft(71433, 390823);	-- Runed Draconium Rod
+			FirstCraft(71434, 390825);	-- Runed Khaz'gorite
+			FirstCraft(71945, 394189);	-- Runed Serevite Rod
+			FirstCraft(71436, 391179);	-- Torch of Primal Awakening
 			-- Illusory Goods
-			q(71875, { ["name"] = "First Craft: Illusion: Primal Air", }),
-			q(71874, { ["name"] = "First Craft: Illusion: Primal Earth", }),
-			q(71873, { ["name"] = "First Craft: Illusion: Primal Fire", }),
-			q(71871, { ["name"] = "First Craft: Illusion: Primal Frost", }),
-			q(71870, { ["name"] = "First Craft: Illusion: Primal Mastery", }),
-			q(71931, { ["name"] = "First Craft: Illusory Adornment: Air", }),
-			q(71932, { ["name"] = "First Craft: Illusory Adornment: Earth", }),
-			q(71432, { ["name"] = "First Craft: Illusory Adornment: Fire", }),
-			q(71930, { ["name"] = "First Craft: Illusory Adornment: Frost", }),
-			q(71933, { ["name"] = "First Craft: Illusory Adornment: Order", }),
-			q(71876, { ["name"] = "First Craft: Khadgar's Disenchanting Rod", }),
-			q(71431, { ["name"] = "First Craft: Primal Invocation Extract", }),
-			q(71886, { ["name"] = "First Craft: Scepter of Spectacle: Air", }),
-			q(71884, { ["name"] = "First Craft: Scepter of Spectacle: Earth", }),
-			q(71883, { ["name"] = "First Craft: Scepter of Spectacle: Fire", }),
-			q(71881, { ["name"] = "First Craft: Scepter of Spectacle: Frost", }),
-			q(71880, { ["name"] = "First Craft: Scepter of Spectacle: Order", }),
+			FirstCraft(71875, 391813);	-- Illusion: Primal Air
+			FirstCraft(71874, 391814);	-- Illusion: Primal Earth
+			FirstCraft(71873, 391815);	-- Illusion: Primal Fire
+			FirstCraft(71871, 391816);	-- Illusion: Primal Frost
+			FirstCraft(71870, 390839);	-- Illusion: Primal Mastery
+			FirstCraft(71931, 391810);	-- Illusory Adornment: Air
+			FirstCraft(71932, 391811);	-- Illusory Adornment: Earth
+			FirstCraft(71432, 390951);	-- Illusory Adornment: Fire
+			FirstCraft(71930, 391809);	-- Illusory Adornment: Frost
+			FirstCraft(71933, 391812);	-- Illusory Adornment: Order
+			FirstCraft(71876, 390855);	-- Khadgar's Disenchanting Rod
+			FirstCraft(71431, 391185);	-- Primal Invocation Extract
+			FirstCraft(71886, 391806);	-- Scepter of Spectacle: Air
+			FirstCraft(71884, 391807);	-- Scepter of Spectacle: Earth
+			FirstCraft(71883, 391196);	-- Scepter of Spectacle: Fire
+			FirstCraft(71881, 391197);	-- Scepter of Spectacle: Frost
+			FirstCraft(71880, 391808);	-- Scepter of Spectacle: Order
 			-- Magical Merchandise
-			q(71878, { ["name"] = "First Craft: Sophic Amalgamation", }),
+			FirstCraft(71878, 390831);	-- Sophic Amalgamation
 			-- Disenchanting Mystic items, these quests are NOT tied to the specific item disenchanted, but unsure what their logic is.
 			q(71934, { ["name"] = "Disenchant ? Mystic items", }),
 			q(71935, { ["name"] = "Disenchant ? Mystic items", }),
 			-- Artisan Curios
-			q(74310, { ["name"] = "First Craft: Glowing Crystal Bookmark", ["timeline"] = {ADDED_10_0_7}}),
+			FirstCraft(74310, 400809, ADDED_10_0_7);	-- Glowing Crystal Bookmark
 		})),
 		filter(ILLUSIONS, {
 			i(200883),	-- Illusion: Primal Air
@@ -1006,57 +1006,57 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF
 			["requireSkill"] = ENGINEERING,
 		},{
 			-- Parts --
-			q(71482, { ["name"] = "First Craft: Arclight Capacitor", }),
-			q(71484, { ["name"] = "First Craft: Assorted Safety Fuses", }),
-			q(71480, { ["name"] = "First Craft: Everburning Blasting Powder", }),
-			q(71481, { ["name"] = "First Craft: Greased-Up Gears", }),
-			q(71478, { ["name"] = "First Craft: Handful of Serevite Bolts", }),
-			q(71483, { ["name"] = "First Craft: Reinforced Machine Chassis", }),
-			q(71479, { ["name"] = "First Craft: Shock-Spring Coil", }),
+			FirstCraft(71482, 382379);	-- Arclight Capacitor
+			FirstCraft(71484, 382345);	-- Assorted Safety Fuses
+			FirstCraft(71480, 382377);	-- Everburning Blasting Powder
+			FirstCraft(71481, 382378);	-- Greased-Up Gears
+			FirstCraft(71478, 382375);	-- Handful of Serevite Bolts
+			FirstCraft(71483, 382380);	-- Reinforced Machine Chassis
+			FirstCraft(71479, 382376);	-- Shock-Spring Coil
 			-- Finishing Reagents
-			q(71468, { ["name"] = "First Craft: Haphazardly Tethered Wires", }),
-			q(71469, { ["name"] = "First Craft: Overcharged Overclocker", }),
+			FirstCraft(71468, 382346);	-- Haphazardly Tethered Wires
+			FirstCraft(71469, 382348);	-- Overcharged Overclocker
 			-- Optional Reagents
-			q(71476, { ["name"] = "First Craft: Calibrated Safety Switch", }),
-			q(71477, { ["name"] = "First Craft: Critical Failure Prevention Unit", }),
-			q(71474, { ["name"] = "First Craft: Magazine of Healing Darts", }),
-			q(71475, { ["name"] = "First Craft: Spring-Loaded Capacitor Casing", }),
+			FirstCraft(71476, 382350);	-- Calibrated Safety Switch
+			FirstCraft(71477, 382349);	-- Critical Failure Prevention Unit
+			FirstCraft(71474, 382351);	-- Magazine of Healing Darts
+			FirstCraft(71475, 384491);	-- Spring-Loaded Capacitor Casing
 			-- Tinker
-			q(71501, { ["name"] = "First Craft: Tinker: Alarm-O-Turret", }),
-			q(71944, { ["name"] = "First Craft: Tinker: Arclight Vital Correctors", }),
-			q(71502, { ["name"] = "First Craft: Tinker: Breath of Neltharion", }),
-			q(71506, { ["name"] = "First Craft: Tinker: Grounded Circuitry", }),
-			q(71503, { ["name"] = "First Craft: Tinker: Plane Displacer", }),
-			q(71505, { ["name"] = "First Craft: Tinker: Polarity Amplifier", }),
-			q(71504, { ["name"] = "First Craft: Tinker: Supercollide-O-Tron", }),
+			FirstCraft(71501, 382334);	-- Tinker: Alarm-O-Turret
+			FirstCraft(71944, 393796);	-- Tinker: Arclight Vital Correctors
+			FirstCraft(71502, 382324);	-- Tinker: Breath of Neltharion
+			FirstCraft(71506, 382344);	-- Tinker: Grounded Circuitry
+			FirstCraft(71503, 382401);	-- Tinker: Plane Displacer
+			FirstCraft(71505, 386667);	-- Tinker: Polarity Amplifier
+			FirstCraft(71504, 382359);	-- Tinker: Supercollide-O-Tron
 			-- Googles
-			q(71444, { ["name"] = "First Craft: Battle-Ready Binoculars", }),
-			q(71448, { ["name"] = "First Craft: Deadline Deadeyes", }),
-			q(71441, { ["name"] = "First Craft: Lightweight Ocular Lenses", }),
-			q(71447, { ["name"] = "First Craft: Milestone Magnifiers", }),
-			q(71443, { ["name"] = "First Craft: Oscillating Wilderness Opticals", }),
-			q(71442, { ["name"] = "First Craft: Peripheral Vision Projectors", }),
-			q(71446, { ["name"] = "First Craft: Quality-Assured Optics", }),
-			q(71449, { ["name"] = "First Craft: Sentry's Stabilized Specs", }),
+			FirstCraft(71444, 382391);	-- Battle-Ready Binoculars
+			FirstCraft(71448, 382385);	-- Deadline Deadeyes
+			FirstCraft(71441, 382388);	-- Lightweight Ocular Lenses
+			FirstCraft(71447, 382384);	-- Milestone Magnifiers
+			FirstCraft(71443, 382390);	-- Oscillating Wilderness Opticals
+			FirstCraft(71442, 382389);	-- Peripheral Vision Projectors
+			FirstCraft(71446, 382383);	-- Quality-Assured Optics
+			FirstCraft(71449, 382386);	-- Sentry's Stabilized Specs
 			-- Armor
-			q(71450, { ["name"] = "First Craft: Complicated Cuffs", }),
-			q(71451, { ["name"] = "First Craft: Difficult Wrist Protectors", }),
-			q(71445, { ["name"] = "First Craft: Needlessy Complex Wristguards", }),
-			q(71440, { ["name"] = "First Craft: Overengineered Sleeve Extenders", }),
+			FirstCraft(71450, 382319);	-- Complicated Cuffs
+			FirstCraft(71451, 382320);	-- Difficult Wrist Protectors
+			FirstCraft(71445, 382318);	-- Needlessly Complex Wristguards
+			FirstCraft(71440, 382317);	-- Overengineered Sleeve Extenders
 			-- Weapons
-			q(71511, { ["name"] = "First Craft: P.E.W. x2", }),
-			q(71510, { ["name"] = "First Craft: Sophisticated Problem Solver", }),
+			FirstCraft(71511, 382387);	-- P.E.W. x2
+			FirstCraft(71510, 382321);	-- Sophisticated Problem Solver
 			-- Cogwheels
-			q(71472, { ["name"] = "First Craft: Meticulously-Tuned Gear", }),
-			q(71509, { ["name"] = "First Craft: One-Size-Fits-All", }),
-			q(71470, { ["name"] = "First Craft: Rapidly Ticking Gear", }),
-			q(71455, { ["name"] = "First Craft: Razor-Sharp Gear", }),
+			FirstCraft(71472, 382363);	-- Meticulously-Tuned Gear
+			FirstCraft(71509, 382364);	-- One-Size-Fits-All
+			FirstCraft(71470, 382362);	-- Rapidly Ticking Gear
+			FirstCraft(71455, 382361);	-- Razor-Sharp Gear
 			-- Scopes & Ammo
-			q(71438, { ["name"] = "First Craft: Completely Safe Rockets", }),
-			q(71439, { ["name"] = "First Craft: Endless Stack of Needles", }),
-			q(71512, { ["name"] = "First Craft: Gyroscopic Kaleidoscope", }),
-			q(71508, { ["name"] = "First Craft: High Intensity Thermal Scanner", }),
-			q(71507, { ["name"] = "First Craft: Projectile Propulsion Pinion", }),
+			FirstCraft(71438, 382365);	-- Completely Safe Rockets
+			FirstCraft(71439, 382366);	-- Endless Stack of Needles
+			FirstCraft(71512, 382402);	-- Gyroscopic Kaleidoscope
+			FirstCraft(71508, 382326);	-- High Intensity Thermal Scanner
+			FirstCraft(71507, 382325);	-- Projectile Propulsion Pinion
 			-- Fireworks
 			q(71869, { ["name"] = "First Craft: Black Fireflight", }),
 			q(71872, { ["name"] = "First Craft: Blue Fireflight", }),
