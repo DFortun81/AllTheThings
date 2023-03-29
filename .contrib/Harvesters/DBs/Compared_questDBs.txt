@@ -98,11 +98,11 @@ Comparing .\questDB-20221201.json
 0 Brand New IDs in the New DB compared to the Old DB.
 
 ------
-Comparing .\questDB-20230128.json
-156 Missing IDs in the New DB compared to the Old DB.
-8330, 8336, 8345, 8346, 25134, 38306, 38344, 38345, 38346, 38394, 38395, 38396, 38397, 38402, 38404, 41778, 41783, 42732, 46810, 46946, 48375, 48376, 49813, 49816, 49817, 49846, 49851, 49852, 49860, 49862, 49863, 49864, 49865, 49866, 51403, 52946, 53030, 53031, 53032, 53033, 53034, 53035, 53036, 53037, 53038, 53039, 54084, 54995, 57671, 57681, 57682, 57683, 57684, 57685, 57820, 57821, 57896, 57961, 57962, 58261, 58377, 58378, 58399, 58954, 58991, 59168, 59169, 59204, 59318, 59320, 59324, 59539, 59548, 59549, 59550, 59551, 59552, 59606, 59608, 60093, 60130, 60134, 60137, 60140, 60141, 60232, 60233, 60234, 60235, 60499, 60757, 60769, 60885, 60888, 60902, 61324, 61325, 61440, 61495, 61508, 61513, 61515, 61554, 61608, 61630, 61690, 61881, 62284, 62285, 62286, 62287, 62288, 62457, 62631, 62632, 62633, 62634, 62635, 62636, 62637, 62638, 62639, 62640, 62696, 62886, 62910, 62911, 63024, 63025, 63026, 63027, 63101, 63735, 64304, 64571, 64709, 64981, 65106, 65283, 65324, 65372, 65649, 65773, 65775, 66109, 66682, 66970, 67017, 67743, 69903, 70167, 70173, 70844, 70846, 70852, 71147
-61 Brand New IDs in the New DB compared to the Old DB.
-66858, 66925, 66959, 67074, 67075, 67076, 67077, 67078, 67079, 67081, 67084, 68794, 70703, 72384, 72681, 72700, 72705, 72706, 72707, 72734, 72735, 72736, 72739, 72740, 72750, 72754, 72760, 72769, 72792, 72793, 72794, 72795, 72796, 72797, 72799, 72800, 72801, 72802, 72803, 72805, 72807, 72972, 72982, 72984, 72985, 73169, 73170, 73172, 73192, 73716, 73717, 73848, 73858, 73859, 73860, 73861, 74120, 74376, 74382, 74436, 74437
+Comparing .\questDB-20230328.json
+157 Missing IDs in the New DB compared to the Old DB.
+241, 8330, 8336, 8345, 8346, 25134, 38306, 38344, 38345, 38346, 38394, 38395, 38396, 38397, 38402, 38404, 41778, 41783, 42732, 46810, 46946, 48375, 48376, 49813, 49816, 49817, 49846, 49851, 49852, 49860, 49862, 49863, 49864, 49865, 49866, 51403, 52946, 53030, 53031, 53032, 53033, 53034, 53035, 53036, 53037, 53038, 53039, 54084, 54995, 57671, 57681, 57682, 57683, 57684, 57685, 57820, 57821, 57896, 57961, 57962, 58261, 58377, 58378, 58399, 58954, 58991, 59168, 59169, 59204, 59318, 59320, 59324, 59539, 59548, 59549, 59550, 59551, 59552, 59606, 59608, 60093, 60130, 60134, 60137, 60140, 60141, 60232, 60233, 60234, 60235, 60499, 60757, 60769, 60885, 60888, 60902, 61324, 61325, 61440, 61495, 61508, 61513, 61515, 61554, 61608, 61630, 61690, 61881, 62284, 62285, 62286, 62287, 62288, 62457, 62631, 62632, 62633, 62634, 62635, 62636, 62637, 62638, 62639, 62640, 62696, 62886, 62910, 62911, 63024, 63025, 63026, 63027, 63101, 63735, 64304, 64571, 64709, 64981, 65106, 65283, 65324, 65372, 65649, 65773, 65775, 66109, 66682, 66970, 67017, 67743, 69903, 70167, 70173, 70844, 70846, 70852, 71147
+264 Brand New IDs in the New DB compared to the Old DB.
+66858, 66925, 66959, 67074, 67075, 67076, 67077, 67078, 67079, 67081, 67084, 68794, 70703, 72384, 72405, 72408, 72409, 72424, 72426, 72430, 72431, 72432, 72445, 72446, 72449, 72450, 72451, 72452, 72453, 72462, 72463, 72464, 72465, 72466, 72467, 72474, 72475, 72476, 72477, 72478, 72479, 72545, 72546, 72547, 72551, 72552, 72553, 72554, 72558, 72559, 72586, 72587, 72588, 72589, 72590, 72591, 72592, 72593, 72594, 72595, 72597, 72598, 72599, 72600, 72601, 72602, 72603, 72604, 72605, 72606, 72607, 72609, 72611, 72644, 72662, 72663, 72681, 72700, 72705, 72706, 72707, 72712, 72713, 72714, 72715, 72717, 72734, 72735, 72736, 72739, 72740, 72750, 72754, 72760, 72769, 72792, 72793, 72794, 72795, 72796, 72797, 72799, 72800, 72801, 72802, 72803, 72805, 72807, 72941, 72944, 72945, 72952, 72953, 72954, 72955, 72956, 72972, 72982, 72984, 72985, 73017, 73018, 73019, 73020, 73023, 73024, 73025, 73027, 73028, 73029, 73030, 73031, 73032, 73033, 73034, 73035, 73052, 73061, 73062, 73065, 73071, 73076, 73089, 73094, 73107, 73108, 73109, 73110, 73113, 73114, 73115, 73137, 73139, 73140, 73141, 73142, 73155, 73156, 73157, 73159, 73160, 73169, 73170, 73172, 73178, 73179, 73189, 73190, 73191, 73192, 73194, 73226, 73398, 73550, 73692, 73694, 73703, 73704, 73715, 73716, 73717, 73848, 73858, 73859, 73860, 73861, 74117, 74118, 74119, 74120, 74282, 74293, 74294, 74355, 74359, 74374, 74376, 74379, 74381, 74382, 74389, 74390, 74391, 74415, 74433, 74436, 74437, 74442, 74443, 74447, 74493, 74502, 74503, 74576, 74581, 74695, 74696, 74697, 74769, 74771, 74774, 74795, 74796, 74847, 74866, 74869, 74871, 74875, 74880, 74883, 74896, 74900, 74901, 74902, 74903, 74908, 74909, 74910, 74911, 74946, 74955, 74983, 74984, 74994, 74996, 75024, 75025, 75026, 75050, 75065, 75154, 75164, 75165, 75166, 75167, 75189, 75190, 75237, 75258, 75259, 75261, 75263, 75265, 75444
 
 == Per Item Differences Breakdown ==
 #2
@@ -94803,7 +94803,7 @@ Comparing .\questDB-20230128.json
 - CHANGE: lvl: 110 --> 45
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
-.\questDB-20230128.json
+.\questDB-20230328.json
 - ADDED: races = [1,2,3,4,5,6,7,8,9,10,11,22,24,25,26,27,28,29,30,31,32,34,35,36,37]
 #48442
 .\questDB-20201014.json
@@ -101390,6 +101390,8 @@ Comparing .\questDB-20230128.json
 - CHANGE: lvl: [35] --> [30]
 .\questDB-20221026.json
 - CHANGE: races: [1,3,4,7,11,22,24,25,29,30,32,34,37] --> [1,3,4,7,11,22,24,25,29,30,32,34,37,52]
+.\questDB-20230328.json
+- OVERRIDE: races => r
 #51207
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -110732,7 +110734,7 @@ Comparing .\questDB-20230128.json
 - ADDED: lvl = [60]
 .\questDB-20210629.json
 - CHANGE: g: [{"itemID":168195},{"itemID":168197},{"itemID":168196}] --> [{"itemID":168195},{"itemID":168196}]
-.\questDB-20230128.json
+.\questDB-20230328.json
 - CHANGE: lvl: [60] --> [70]
 #55661
 .\questDB-20201014.json
@@ -125405,11 +125407,11 @@ Comparing .\questDB-20230128.json
 #66119
 .\questDB-20221130.json
 - ADDED: _type = "Dungeon"
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66211
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 - CHANGE: lvl: [65] --> [66]
@@ -125462,7 +125464,7 @@ Comparing .\questDB-20230128.json
 .\questDB-20221130.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon", _type = "Dungeon"
-.\questDB-20230128.json
+.\questDB-20230328.json
 - CHANGE: lvl: [62] --> [63]
 #66363
 .\questDB-20221130.json
@@ -125495,7 +125497,7 @@ Comparing .\questDB-20230128.json
 #66458
 .\questDB-20221130.json
 - CHANGE: lvl: [60] --> [70]
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66465
@@ -125518,7 +125520,7 @@ Comparing .\questDB-20230128.json
 #66586
 .\questDB-20221130.json
 - CHANGE: lvl: [60] --> [70]
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66622
@@ -125551,67 +125553,67 @@ Comparing .\questDB-20230128.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
 #66860
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66861
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66862
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66863
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66864
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66865
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66866
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66867
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66868
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66869
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66870
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66871
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66872
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66873
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66874
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66875
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #66884
@@ -125705,7 +125707,7 @@ Comparing .\questDB-20230128.json
 - EMPTY: isDaily
 - CHANGE: _area: "The Waking Shores" --> "Obsidian Citadel"
 #67064
-.\questDB-20230128.json
+.\questDB-20230328.json
 - CHANGE: _area: "The Waking Shores" --> "Ohn'ahran Plains"
 #67067
 .\questDB-20221130.json
@@ -125747,10 +125749,10 @@ Comparing .\questDB-20230128.json
 .\questDB-20221130.json
 - CHANGE: _area: "Lost Ruins" --> "The Azure Span"
 #69093
-.\questDB-20230128.json
+.\questDB-20230328.json
 - CHANGE: lvl: [60] --> [70]
 #69097
-.\questDB-20230128.json
+.\questDB-20230328.json
 - CHANGE: lvl: [60] --> [70]
 #69915
 .\questDB-20221130.json
@@ -125849,13 +125851,13 @@ Comparing .\questDB-20230128.json
 #70168
 .\questDB-20221130.json
 - ADDED: _type = "Dungeon"
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #70170
 .\questDB-20221130.json
 - ADDED: _type = "Dungeon"
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #70175
@@ -126207,7 +126209,7 @@ Comparing .\questDB-20230128.json
 - EMPTY: _area
 - ADDED: _category = "Engine of Innovation", g = [{"itemID":199197}]
 - CHANGE: lvl: [70] --> [68]
-.\questDB-20230128.json
+.\questDB-20230328.json
 - CHANGE: _category: "Engine of Innovation" --> "Dungeon"
 #70882
 .\questDB-20221130.json
@@ -126246,12 +126248,12 @@ Comparing .\questDB-20230128.json
 #70997
 .\questDB-20221130.json
 - ADDED: _type = "Dungeon"
-.\questDB-20230128.json
+.\questDB-20230328.json
 - CHANGE: _category: "Dragonscale Expedition" --> "Dungeon"
 #71001
 .\questDB-20221130.json
 - ADDED: _type = "Dungeon"
-.\questDB-20230128.json
+.\questDB-20230328.json
 - CHANGE: _category: "Dragonscale Expedition" --> "Dungeon"
 #71028
 .\questDB-20221130.json
@@ -126275,14 +126277,14 @@ Comparing .\questDB-20230128.json
 .\questDB-20221130.json
 - EMPTY: r
 - CHANGE: lvl: [60] --> [70]
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #71138
 .\questDB-20221130.json
 - CHANGE: _area: "The Waking Shores" --> "Ohn'ahran Plains"
 #71155
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #71161
@@ -126316,7 +126318,7 @@ Comparing .\questDB-20230128.json
 .\questDB-20221130.json
 - ADDED: _category = "Primalist Storms"
 #72063
-.\questDB-20230128.json
+.\questDB-20230328.json
 - ADDED: _area = "Ohn'ahran Plains"
 #72068
 .\questDB-20221130.json
@@ -126337,7 +126339,7 @@ Comparing .\questDB-20230128.json
 .\questDB-20221130.json
 - ADDED: _type = "Dungeon"
 - CHANGE: lvl: [60] --> [70]
-.\questDB-20230128.json
+.\questDB-20230328.json
 - EMPTY: _area
 - ADDED: _category = "Dungeon"
 #72155
@@ -126379,8 +126381,8 @@ Comparing .\questDB-20230128.json
 .\questDB-20221130.json
 - CHANGE: _area: "Passage of Time" --> "Thaldraszus"
 #72399
-.\questDB-20230128.json
+.\questDB-20230328.json
 - ADDED: _area = "Thaldraszus"
 #72406
-.\questDB-20230128.json
+.\questDB-20230328.json
 - CHANGE: lvl: [60] --> [68]
