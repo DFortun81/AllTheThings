@@ -764,10 +764,38 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3019, {	-- Delgo Ragetotem <Axe Merchant>
 					["coord"] = { 53.8, 57.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 2522 },    -- Crescent Axe
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 2530 },    -- Francisca
+						{"select", "itemID", 2531 },    -- Great Axe
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 12249 },    -- Merciless Axe
+						{"select", "itemID", 1196 },    -- Tabar
+					},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(3020, {	-- Etu Ragetotem
+					["coord"] = { 58.2, 52.0, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 925 },    -- Flail
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 924 },    -- Maul
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
 					},
 				}),
 				-- #if AFTER CATA
@@ -791,6 +819,60 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16059),	-- Common Brown Shirt
 						i(3428),	-- Common Grey Shirt
 						i(16060),	-- Common White Shirt
+					},
+				}),
+				n(2997, {	-- Jyn Stonehoof
+					["coord"] = { 41.6, 62.0, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2025 }, -- bearded axe
+						{"select", "itemID", 1194 }, -- bastard sword
+						{"select", "itemID", 2479 }, -- broad axe
+						{"select", "itemID", 1198 }, -- claymore
+						{"select", "itemID", 2130 }, -- club
+						{"select", "itemID", 2029 }, -- cleaver
+						{"select", "itemID", 2492 }, -- cudgel
+						{"select", "itemID", 851 }, -- cutlass
+						{"select", "itemID", 2139 }, -- dirk
+						{"select", "itemID", 2024 }, -- espadon
+						{"select", "itemID", 2488 }, -- gladius
+						{"select", "itemID", 2030 }, -- gnarled staff
+						{"select", "itemID", 1197 }, -- giant mace
+						{"select", "itemID", 2134 }, -- hand axe
+						{"select", "itemID", 853 }, -- hatchet
+						{"select", "itemID", 2511 }, -- hunters boomstick
+						{"select", "itemID", 2207 }, -- jambiya
+						{"select", "itemID", 2491 }, -- large axe
+						{"select", "itemID", 2480 }, -- large club
+						{"select", "itemID", 852 }, -- mace
+						{"select", "itemID", 2509 }, -- ornate blunderbuss
+						{"select", "itemID", 2208 }, -- poniard
+						{"select", "itemID", 854 }, -- quarter staff
+						{"select", "itemID", 2026 }, -- rock hammer
+						{"select", "itemID", 2027 }, -- scimitar
+						{"select", "itemID", 2132 }, -- short staff
+						{"select", "itemID", 2131 }, -- shortsword
+						{"select", "itemID", 2494 } -- stiletto
+					},
+				}),
+				n(3021, {	-- Kard Ragetotem
+					["coord"] = { 53.6, 56.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
 					},
 				}),
 				n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
@@ -886,6 +968,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					},
+				}),
+				n(8398, {	-- Ohanko <Blade Vendor>
+					["coord"] = { 53.6, 56.8, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2523 },	-- bullova
+						{"select", "itemID", 2531 },	-- great axe
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2525 },	-- war hammer
+						{"select", "itemID", 2533 },	-- war maul
+						{"select", "itemID", 2529 },	-- zweihander
 					},
 				}),
 				n(8364, {	-- Pakwa <Bag Vendor>

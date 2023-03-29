@@ -880,6 +880,48 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(VENDORS, {
+				n(4234, {	-- Andrus <Staff Merchant>
+					["coord"] = { 54.6, 83.2, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+					-- all done
+						{"select", "itemID", 2527 },	-- Battle Staff
+						{"select", "itemID", 2535 },	-- War Staff
+					},
+				}),
+				n(4203, {	-- Ariyell Skyshadow
+					["coord"] = { 56.6, 52.8, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+					-- all done
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 15905 },	-- brass knuckles
+						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 851 },		-- cutlass
+						{"select", "itemID", 922 },		-- dacian falx
+						{"select", "itemID", 927 },		-- double axe
+						{"select", "itemID", 15904 },	-- deadly fist blades
+						{"select", "itemID", 2024 },	-- espadon
+						{"select", "itemID", 925 },		-- flail
+						{"select", "itemID", 1197 },	-- giant mace
+						{"select", "itemID", 2030 },	-- gnarled staff
+						{"select", "itemID", 853 },		-- hatchet
+						{"select", "itemID", 2028 },	-- hammer
+						{"select", "itemID", 2207 },	-- jambiya
+						{"select", "itemID", 2209 },	-- kris
+						{"select", "itemID", 2507 },	-- laminated recurve bow
+						{"select", "itemID", 928 },		-- long staff
+						{"select", "itemID", 924 },		-- maul
+						{"select", "itemID", 852 },		-- mace
+						{"select", "itemID", 854 },		-- quarter staff
+						{"select", "itemID", 3026 },	-- reinforced bow
+						{"select", "itemID", 2026 },	-- rock hammer
+						{"select", "itemID", 2027 },	-- scimitar
+						{"select", "itemID", 15903 },	-- slicing claw
+						{"select", "itemID", 1196 },	-- tabar
+					},
+				}),
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["coord"] = { 48.2, 21.8, DARNASSUS },
 					["timeline"] = { "added 4.3.0.14732" },
@@ -915,6 +957,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(4180, {	-- Ealyshia Dewwhisper
+					["coord"] = { 57.8, 71.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2521 },    -- Flamberge
+						{"select", "itemID", 2531 },    -- Great Axe
+						{"select", "itemID", 2525 },    -- War Hammer
+						{"select", "itemID", 2533 },    -- War Maul
+						{"select", "itemID", 2529 },    -- Zweihander
+					},
+				}),
 				n(4223, {	-- Fyldan <Cooking Supplies> [TBC+] / Fyldan <Cooking Supplier>
 					-- #if AFTER CATA
 					["coord"] = { 49.6, 36.6, DARNASSUS },
@@ -937,10 +991,68 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.2, 59.0, DARNASSUS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 2522 },    -- Crescent Axe
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 2530 },    -- Francisca
+						{"select", "itemID", 2531 },    -- Great Axe
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 12249 },    -- Merciless Axe
+						{"select", "itemID", 1196 },    -- Tabar
+					},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(4231, {	-- Kieran <Weapon Merchant>
+					["coord"] = { 61.0, 63.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 1194 },	-- bastard sword
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 2479 },	-- broad axe
+						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 2130 },	-- club
+						{"select", "itemID", 2492 },	-- cudgel
+						{"select", "itemID", 851 },	-- cutlass
+						{"select", "itemID", 2139 },	-- dirk
+						{"select", "itemID", 2024 },	-- espadon
+						{"select", "itemID", 1197 },	-- giant mace
+						{"select", "itemID", 2488 },	-- gladius
+						{"select", "itemID", 2030 },	-- gnarled staff
+						{"select", "itemID", 2134 },	-- hand axe
+						{"select", "itemID", 2028 },	-- hammer
+						{"select", "itemID", 853 },	-- hatchet
+						{"select", "itemID", 2207 },	-- jambiya
+						{"select", "itemID", 2491 },	-- large axe
+						{"select", "itemID", 2480 },	-- large club
+						{"select", "itemID", 852 },	-- mace
+						{"select", "itemID", 2208 },	-- poniard
+						{"select", "itemID", 854 },	-- quarter staff
+						{"select", "itemID", 2026 },	-- rock hammer
+						{"select", "itemID", 2027 },	-- scimitar
+						{"select", "itemID", 2131 },	-- shortsword
+						{"select", "itemID", 2132 },	-- short staff
+						{"select", "itemID", 2494 },	-- stiletto
+						{"select", "itemID", 1196 },	-- tabar
+						{"select", "itemID", 2490 },	-- tomahawk
+						{"select", "itemID", 2495 },	-- walking stick
+						{"select", "itemID", 2493 },	-- wooden mallet
+					},
+				}),
+				n(3561, {	-- Kyrai   
+					["coord"] = { 38.8, 35.4, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
 					},
 				}),
 				n(4173, {	-- Landria <Bow Merchant>
@@ -1022,6 +1134,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(4171, {	-- Merelyssa
+					["coord"] = { 61.6, 63.8, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
+					},
+				}),
 				n(50305, {	-- Moon Priestess Lasara <Darnassus Quartermaster>
 					["coord"] = { 36.17, 48.49, DARNASSUS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1063,6 +1195,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16217, {	-- Formula: Enchant Shield - Greater Stamina (RECIPE!)
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(4233, {	-- Mythidan
+					["coord"] = { 60.4, 63.4, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 925 },    -- Flail
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 924 },    -- Maul
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
 					},
 				}),
 				n(4225, {	-- Saenorion <Leatherworking Supplies>

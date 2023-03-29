@@ -241,6 +241,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								i(199216),	-- A Box of Rocks
 							},
 						}),
+						o(398770, {	-- Box of Rocks
+							["questID"] = 75484,
+							["g"] = {
+								i(199216),	-- A Box of Rocks
+							},
+						}),
 						o(386427, {	-- Cart of Crushed Stone
 							["coord"] = { 26.8, 53.7, THE_FORBIDDEN_REACH },
 							["questID"] = 74401,
@@ -286,6 +292,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								i(204246),	-- Journal Entry: Silence [H]
 							},
 						}),
+						o(390560, {	-- Locked Research Chest
+							["questID"] = 75153,
+						}),
 						o(389564, {	-- Mindless Slime
 							["questID"] = 75053,
 							["g"] = {
@@ -319,6 +328,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 74506,
 							["g"] = {
 								i(203701),	-- Neltharion Gift Token
+							},
+						}),
+						o(388905, {	-- Neltharion Toolkit
+							["questID"] = 74993,
+							["g"] = {
+								i(204278),	-- Nelthation's Toolkit
 							},
 						}),
 						o(385028, {	-- Powerful Flask of Renewal
@@ -682,6 +697,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 28.2, 56.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75178,
 						}),
+						o(387500, {	-- Chilly Snowman
+							["questID"] = 74757,
+							["g"] = {
+								i(17202),	-- Snowball
+							},
+						}),
 						o(398778, {	-- Disgusting Vat
 							["description"] = "You must fish when interacting with this.",
 							["g"] = {
@@ -816,6 +837,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386454, {	-- Chest of Ice
 							["coord"] = { 28.3, 55.6, THE_FORBIDDEN_REACH },
 							["questID"] = 74420,
+						}),
+						o(398200, {	-- Forgotten Lockbox
+							["questID"] = 75436,
+							["g"] = {
+								i(204439),	-- Research Chest Key
+							},
 						}),
 						o(386432, {	-- Hardened Chest
 							["coord"] = { 30.5, 55.1, THE_FORBIDDEN_REACH },
@@ -1023,6 +1050,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 
 		q(74513),	-- When using Stone Dissolver to Open Shattered Crystals
 		q(74431),	-- When Completed Quest: 72953 Zskera Vault: Az
+		q(74473),	-- Triggered when accepting 'The Scary Vault of Ur'
 		q(74748),	-- Triggered when looting Recipe Rat along with 74509
 		q(75127),	-- Triggered when earning "Every Door, Everywhere, All At Once"
 		q(75490),	-- Triggered when fishing up Dormant Primordial Fragment from Disgusting Vat

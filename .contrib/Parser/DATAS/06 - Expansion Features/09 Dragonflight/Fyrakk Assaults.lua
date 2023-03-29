@@ -3,6 +3,20 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(FYRAKK_ASSAULTS, {
+		n(QUESTS, {
+			q(75375, {	-- Burning Ice
+				["provider"] = { "n", 203603 },	-- Brena
+				["coord"] = { 58.6, 34.3, THE_AZURE_SPAN },
+			}),
+			q(75383, {	-- Hideaway No More
+				["provider"] = { "n", 203604 },	-- Old Grimtusk
+				["coord"] = { 58.4, 33.4, THE_AZURE_SPAN },
+			}),
+			q(75377, {	-- Maintaining the Barricade
+				["provider"] = { "n", 203522 },	-- Archmage Khadgar
+				["coord"] = { 58.4, 34.4, THE_AZURE_SPAN },
+			}),
+		}),
 		n(REWARDS, {
 			i(204737),	-- Suffused Warglaive
 			i(204738),	-- Suffused Staff
@@ -64,7 +78,20 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(204897),	-- Suffused Cloak
 			i(204898),	-- Suffused Drape
 		}),
+		n(TREASURES, {
+			o(386559, {	-- Secured Shipment
+				["coord"] = { 53.8, 33.8, THE_AZURE_SPAN },
+				["questID"] = 74526,
+				["cost"] = { { "i", 203710, 3 } },	-- 3xEverburning Key
+			}),
+		}),
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, }, {
+			q(75280, {	-- Suffusion Camp: Frostburn
+				["coord"] = { 56.2, 27.3, THE_AZURE_SPAN },
+			}),
 		})),
+		n(ZONE_DROPS, {
+			i(203710),	-- Everburning Key
+		}),
 	}),
 })));

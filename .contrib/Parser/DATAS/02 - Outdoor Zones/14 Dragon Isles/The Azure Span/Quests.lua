@@ -1282,7 +1282,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["collectible"] = false,
 				["g"] = {
 					q(71233, {	-- Falling Water
-						["sourceQuests"] = { 66239 },	-- Spreading Decay
 						["provider"] = { "n", 194613 },	-- Unkimi
 						["coord"] = { 28.5, 35.1, THE_AZURE_SPAN },
 						["isBreadcrumb"] = true,

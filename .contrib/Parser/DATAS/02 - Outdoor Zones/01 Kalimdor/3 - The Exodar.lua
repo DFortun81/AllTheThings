@@ -288,6 +288,27 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["groups"] = EGOMIS_GROUPS,
 				}),
+				n(16765, {	-- Ellomin
+					["coord"] = { 73.4, 84.6, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 925 },    -- Flail
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 924 },    -- Maul
+						{"select", "itemID", 2532 },    -- Morning Star
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
+						{"select", "itemID", 2524 },    -- Truncheon
+						{"select", "itemID", 2525 },    -- War Hammer
+						{"select", "itemID", 2533 },    -- War Maul
+						{"select", "itemID", 2535 },    -- War Staff
+					},
+				}),
 				n(16657, {	-- Feera <Engineering Supplies>
 					["coord"] = { 53.6, 90.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
@@ -304,6 +325,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(23811, {	-- Schematic: White Smoke Flare
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(20121, {	-- Fingin 
+					["coord"] = { 52.2, 84.6, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
 					},
 				}),
 				n(16716, {	-- Gornii <Cloth Armor Merchant>
@@ -399,6 +427,32 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(28481),	-- Brown Elekk (MOUNT!)
 						i(29743),	-- Purple Elekk (MOUNT!)
 						i(29744),	-- Gray Elekk (MOUNT!)
+					},
+				}),
+				n(16714, {	-- Ven
+					["coord"] = { 69.8, 89.4, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 926 },		-- battle axe
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 927 },		-- Double Axe
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 852 },		-- Hatched
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
+						{"select", "itemID", 1196 },	-- Tabar
 					},
 				}),
 			}),

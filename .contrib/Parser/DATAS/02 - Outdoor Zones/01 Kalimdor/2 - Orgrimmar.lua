@@ -5051,9 +5051,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.0, 37.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(2521),	-- Flamberge
 						i(73210, {	-- Trainee's Sword
 							["timeline"] = { ADDED_10_0_7 },
 						}),
+						i(2525),	-- War Hammer
+						i(2529),	-- Zweihander
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -5259,6 +5262,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
+				n(3331, {	-- Kareth
+					["coord"] = { 46.8, 63.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
+					},
+				}),
 				n(3346, {	-- Kithas <Enchanting Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 53.2, 48.8, ORGRIMMAR },
@@ -5297,6 +5320,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6523),	-- Buckled Harness
 						i(6525),	-- Grunt's Harness
 						i(6524),	-- Studded Leather Harness
+					},
+				}),
+				n(3360, {	-- Koru 
+					["coord"] = { 76.2, 37.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 925 },    -- Flail
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 854 },    -- Quarter Staff
+					},
+					["groups"] = {
+						i(924),	-- Maul
+						i(2026),	-- Rock Hammer
 					},
 				}),
 				n(3348, {	-- Kor'geld <Alchemy Supplies>
@@ -6144,8 +6184,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 
 						-- ??? --
-						i(6126),	-- Trapper's Pants
-						i(6127),	-- Trapper's Boots
+						i(52556, {	-- Initiate's Boots
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(6126, {	-- Trapper's Pants
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(6127, {	-- Trapper's Boots
+							["timeline"] = { ADDED_10_0_5 }
+						}),
 						-- #endif
 					},
 				}),
@@ -6217,6 +6264,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cost"] = PVP_MOUNT_COST,
 						}),
 					}),
+				}),
+				n(3334, {	-- Rekkul 
+					["coord"] = { 44.0, 58.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(4565),	-- Simple Dagger
+					},
 				}),
 				n(52033, {	-- Rogoc <Bloodthirsty Gladiator>
 					["coord"] = { 37.8, 71.6, ORGRIMMAR },
@@ -6436,6 +6490,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso
 						chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle
 						chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo
+					},
+				}),
+				n(3361, {	-- Shoma <Weapon Vendor>
+					["coord"] = { 76.0, 37.8, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(2520),	-- Broadsword
+						i(1198),	-- Claymore
+						i(851),		-- Cutlass
+						i(922),		-- Dacian Falx
+						i(2024),	-- Espadon
+						i(2528),	-- falchion
+						i(2209),	-- Kris
+						i(2526),	-- Main Gauche
+						i(2208),	-- Poniad
+						i(2534),	-- Rondel
+						i(2027),	-- Scimitar
 					},
 				}),
 				n(3413, {	-- Sovik <Engineering Supplies>
@@ -6934,9 +7005,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.4, 68.6, ORGRIMMAR },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					--["groups"] = {
-					--
-					--},
+					["sym"] = {
+						{"select", "itemID", 851 },		-- Cutlass
+					},
+					["groups"] = {
+						i(1194),	-- Bastard Sword
+						i(2479),	-- Broad Axe
+						i(1198),	-- Claymore
+						i(2130),	-- Club
+						i(2492),	-- cudgel
+						i(2139),	-- Dirk
+						i(1197),	-- Giant Mace
+						i(2134),	-- Hand Axe
+						i(2488),	-- Gladius
+						i(853),		-- Hatched
+						i(2207),	-- Jambiya
+						i(2491),	-- Large Axe
+						i(2480),	-- Large Club
+						i(852),		-- Mace
+						i(854),		-- Quarter Staff
+						i(2131),	-- Shortsword
+						i(2132),	-- Short Staff
+						i(2494),	-- Stiletto
+						i(1196),	-- Tabar
+						i(2490),	-- Tomahawk
+						i(2489),	-- Two-handed Sword
+						i(2495),	-- Walking Stick
+						i(2493),	-- Wooden Mallet
+					},
 				}),
 				n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
 					["coord"] = { 36.6, 86.8, ORGRIMMAR },
@@ -6976,6 +7072,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
+					},
+				}),
+				n(3405, {	-- Zeal'aya
+					["coord"] = { 34.6, 63.2, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
+				}),
+				n(3409, {	-- Zendo'jian <Weapon Vendor>
+					["coord"] = { 75.0, 36.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+						{"select", "itemID", 1196 },    -- Tabar
+						{"select", "itemID", 2495 },    -- Walking Stick
 					},
 				}),
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>

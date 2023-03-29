@@ -24,7 +24,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					}),
 					n(FEET, {
 						i(57529),	-- Fur-Lined Slippers
-						i(52556),	-- Initiate's Boots
 					}),
 				}),
 				filter(LEATHER, {

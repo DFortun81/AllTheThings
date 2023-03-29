@@ -24,6 +24,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197124),	-- Highland Drake: Swept Horns (DM!)
 					i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
 				})),
+				i(205226,	-- Cavern Racer's Purse
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+				})),
 				i(200609),	-- Dragon Racing Purse - First Place
 				i(200610),	-- Dragon Racing Purse - Second Place
 				i(200611),	-- Dragon Racing Purse - Third Place
@@ -135,6 +138,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					q(73082, {	-- Dragonrider Racing - Southern Reach Route
 						["coord"] = { 63.5, 83.6, THE_FORBIDDEN_REACH },
 						["timeline"] = { ADDED_10_0_7 },
+					}),
+
+						-- Zaralek Cavern --
+					q(75121, {	-- Dragonrider Racing - Brimstone Scramble
+						["coord"] = { 54.3, 24.0, ZARALEK_CAVERN },
+						["timeline"] = { ADDED_10_1_0 },
+					}),
+					q(75122, {	-- Dragonrider Racing - Shimmering Slalom
+						["coord"] = { 58.6, 45.0, ZARALEK_CAVERN },
+						["timeline"] = { ADDED_10_1_0 },
+					}),
+					q(75124, {	-- Dragonrider Racing - Sulfur Sprint
+						["coord"] = { 51.3, 46.6, ZARALEK_CAVERN },
+						["timeline"] = { ADDED_10_1_0 },
+					}),
+					q(75123, {	-- Dragonrider Racing - Zaralek Zigzag
+						["coord"] = { 58.1, 57.6, ZARALEK_CAVERN },
+						["timeline"] = { ADDED_10_1_0 },
 					}),
 				}),
 			}),

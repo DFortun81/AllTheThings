@@ -1252,6 +1252,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(4602, {	-- Benijah Fenner
+					["coord"] = { 58.6, 32.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 15808 },    -- Fine Light Crossbow
+						{"select", "itemID", 925 },    -- Flail
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 15809 },    -- Heavy Crossbow
+						{"select", "itemID", 15807 },    -- Light Crossbow
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 924 },    -- Maul
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
+					},
+				}),
 				n(50304, {	-- Captain Donald Adams <Undercity Quartermaster>
 					["coords"] = {
 						{ 63.6, 48.8, UNDERCITY },
@@ -1277,6 +1295,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(45583, {	-- Undercity Tabard
 							["timeline"] = { "added 3.1.0.9626" },
 						}),
+					},
+				}),
+				n(4569, {	-- Charles Seaton <Blade Merchant>
+					["coord"] = { 77.0, 50.0, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2027 },	-- Scimitar
 					},
 				}),
 				n(4561, {	-- Daniel Bartlett <Trade Supplies> [TBC+] / Daniel Bartlett <General Trade Supplier>
@@ -1457,6 +1491,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(4585, {	-- Ezekiel  
+					["coord"] = { 75.6, 51.6, UNDERCITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
+				}),
 				n(4775, {	-- Felicia Doan <Trade Supplies>
 					["coord"] = { 64.1, 50.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -1465,6 +1506,60 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 2.0.1.6180" },
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(4601, {	-- Francis Eliot
+					["coord"] = { 58.6, 32.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 15811 },    -- Heavy Spear
+						{"select", "itemID", 15810 },    -- Short Spear
+						{"select", "itemID", 1196 },    -- Tabar
+					},
+				}),
+				n(4600, {	-- Geoffrey Hartwell
+					["coord"] = { 58.4, 32.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 2523 },	-- Bullova
+						{"select", "itemID", 2528 },	-- Falchion
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2531 },	-- Great axe
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2525 },	-- War Hammer
+						{"select", "itemID", 2533 },	-- War Maul
+						{"select", "itemID", 2529 },	-- Zweihander
+					},
+				}),
+				n(4556, {	-- Gordon Wendham
+					["coord"] = { 61.4, 41.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 1194 },	-- Bastard Sword
+						{"select", "itemID", 2479 },	-- Broad Axe
+						{"select", "itemID", 2130 },	-- Club
+						{"select", "itemID", 2492 },	-- Cudgel
+						{"select", "itemID", 2139 },	-- Dirk
+						{"select", "itemID", 2488 },	-- Gladius
+						{"select", "itemID", 2134 },	-- Hand Axe
+						{"select", "itemID", 2491 },	-- Large Axe
+						{"select", "itemID", 2480 },	-- Large Club
+						{"select", "itemID", 2132 },	-- Short Staff
+						{"select", "itemID", 2131 },	-- Shortsword
+						{"select", "itemID", 2494 },	-- Stiletto
+						{"select", "itemID", 2490 },	-- Tomahawk
+						{"select", "itemID", 2489 },	-- Two-Handed Sword
+						{"select", "itemID", 2495 },	-- Walking Stick
+						{"select", "itemID", 2493 },	-- Wooden Mallet
 					},
 				}),
 				n(8403, {	-- Jeremiah Payson <Cockroach Vendor>
@@ -1504,6 +1599,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6328),	-- Recipe: Longjaw Mud Snapper
 						i(17062),	-- Recipe: Mithril Head Trout
 						i(6369),	-- Recipe: Rockscale Cod
+					},
+				}),
+				n(4557, {	-- Louis Warren
+					["coord"] = { 62.0, 41.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 851 },	-- cutlass
+						{"select", "itemID", 2024 },	-- espadon
+						{"select", "itemID", 1197 },	-- giant mace
+						{"select", "itemID", 2030 },	-- gnarled staff
+						{"select", "itemID", 2028 },	-- hammer
+						{"select", "itemID", 853 },	-- hatched
+						{"select", "itemID", 2207 },	-- jambiya
+						{"select", "itemID", 852 },	-- mace
+						{"select", "itemID", 2208 },	-- Poniard
+						{"select", "itemID", 854 },	-- quarter staff
+						{"select", "itemID", 2026 },	-- rock hammer
+						{"select", "itemID", 2027 },	-- scimitar
+						{"select", "itemID", 1196 },	-- tabar
 					},
 				}),
 				n(5190, {	-- Merill Pleasance <Tabard Vendor>

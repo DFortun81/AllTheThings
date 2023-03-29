@@ -1087,7 +1087,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["groups"] = {
 						i(1262, {	-- Keg of Thunderbrew
-							["timeline"] = { "removed 4.0.3" },
+							--["timeline"] = { "removed 4.0.3" },	-- Reported as existing on retail 10.0.5, maybe renamed to "Keg of Thunderbrew Lager"?
 							["races"] = ALLIANCE_ONLY,
 						}),
 					},

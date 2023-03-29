@@ -14,6 +14,23 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
+			n(137431, {	-- Annie Lacier
+				["coord"] = { 50.6, 49.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["sym"] = {
+				-- all done
+					{"select", "itemID", 15905 },	-- brass knucles
+					{"select", "itemID", 2130 },	-- club
+					{"select", "itemID", 851 },		-- Cutlass
+					{"select", "itemID", 2139 },	-- dirk
+					{"select", "itemID", 927 },		-- double axe
+					{"select", "itemID", 2028 },	-- hammer
+					{"select", "itemID", 2134 },	-- hand axe
+					{"select", "itemID", 852 },		-- mace
+					{"select", "itemID", 2027 },	-- Scimitar
+					{"select", "itemID", 2131 },	-- shortsword
+				},
+			}),
 			n(142165, {	-- Arwin Blakemore <Thrift Goods>
 				["coord"] = { 66.5, 40.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,

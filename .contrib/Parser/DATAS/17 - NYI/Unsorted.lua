@@ -1743,6 +1743,522 @@ root(ROOTS.Unsorted, {
 				i(205254),	-- Honorary Explorer's Compass
 				i(205255),	-- Niffen Diggin' Mits
 				i(205256),	-- Satchel of Pilfered Recipes
+				i(192779),	-- Seething Slug
+				i(201957),	-- Thrall's Hearthstone
+				i(202025),	-- Keg of Ancestral Ale
+				i(202026),	-- Durotar Coast Crab
+				i(202027),	-- Fresh Talbuk Steak
+				i(202028),	-- Southfury Salmon
+				i(202029),	-- Isle Lemon
+				i(202030),	-- Ground Gorgrond Pepper
+				i(202031),	-- Farahlon Fenugreek
+				i(202032),	-- Feast for the Ancestors
+				i(202106),	-- Chewed Piece of Journal
+				i(202238),	-- Enforcer Grant's Signet
+				i(202267),	-- Clessington Signet
+				i(202401),	-- Cactus Apple Surprise
+				i(202402),	-- Bag of Cactus Apples
+				i(202569),	-- Djaruun, Pillar of the Elder Flame
+				i(202594),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WRIST 1
+				i(202655),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 1
+				i(202706),	-- Zandali Piri Piri
+				i(202707),	-- Un'goro Coconut
+				i(202708),	-- Curried Coconut Crab
+				i(202709),	-- Spicy Seared Talbuk Steak
+				i(202710),	-- Grilled Southfury Salmon
+				i(203152),	-- Lionguard Pauldrons
+				i(203153),	-- Lionguard Greathelm
+				i(203154),	-- Lionguard Greathelm
+				i(203155),	-- Lionguard Pauldrons
+				i(203156),	-- Lionguard Pauldrons
+				i(203157),	-- Lionguard Greathelm
+				i(203158),	-- Lionguard Chestplate
+				i(203159),	-- Lionguard Chestplate
+				i(203160),	-- Lionguard Chestplate
+				i(203161),	-- Lionguard Greatbelt
+				i(203162),	-- Lionguard Greatbelt
+				i(203163),	-- Lionguard Greatbelt
+				i(203164),	-- Lionguard Legguards
+				i(203165),	-- Lionguard Legguards
+				i(203166),	-- Lionguard Legguards
+				i(203167),	-- Lionguard Warboots
+				i(203168),	-- Lionguard Warboots
+				i(203169),	-- Lionguard Warboots
+				i(203170),	-- Lionguard Bracers
+				i(203171),	-- Lionguard Bracers
+				i(203172),	-- Lionguard Bracers
+				i(203173),	-- Lionguard Gauntlets
+				i(203174),	-- Lionguard Gauntlets
+				i(203175),	-- Lionguard Gauntlets
+				i(203176),	-- Lionguard Robe
+				i(203177),	-- Lionguard Robe
+				i(203178),	-- Lionguard Robe
+				i(203179),	-- Kosh'aka Casque
+				i(203180),	-- Kosh'aka Casque
+				i(203181),	-- Kosh'aka Casque
+				i(203185),	-- Kosh'aka Spaulders
+				i(203186),	-- Kosh'aka Spaulders
+				i(203187),	-- Kosh'aka Spaulders
+				i(203188),	-- Kosh'aka Cheststraps
+				i(203189),	-- Kosh'aka Cheststraps
+				i(203190),	-- Kosh'aka Cheststraps
+				i(203191),	-- Kosh'aka Girdle
+				i(203192),	-- Kosh'aka Girdle
+				i(203193),	-- Kosh'aka Girdle
+				i(203194),	-- Kosh'aka Legstraps
+				i(203195),	-- Kosh'aka Legstraps
+				i(203196),	-- Kosh'aka Legstraps
+				i(203197),	-- Kosh'aka Greaves
+				i(203198),	-- Kosh'aka Greaves
+				i(203199),	-- Kosh'aka Greaves
+				i(203200),	-- Kosh'aka Armbands
+				i(203201),	-- Kosh'aka Armbands
+				i(203202),	-- Kosh'aka Armbands
+				i(203203),	-- Kosh'aka Grips
+				i(203204),	-- Kosh'aka Grips
+				i(203205),	-- Kosh'aka Grips
+				i(203207),	-- Kosh'aka Drape
+				i(203208),	-- Kosh'aka Drape
+				i(203209),	-- Kosh'aka Drape
+				i(203395),	-- Research Journal
+				i(203475),	-- Urgent Stormwind Summons
+				i(203679),	-- Ancestral Bloodhoof Totem
+				i(203689),	-- Horn Signet of Tetsos
+				i(203692),	-- Horn Signet of Arrosh
+				i(203697),	-- Horn Signet of Ekrati
+				i(203698),	-- Horn Signet of Talon Hermin
+				i(203725),	-- Display of Strength
+				i(204063),	-- Windsor's Journal
+				i(204084),	-- Ancestor's Might
+				i(204170),	-- Clan Banner
+				i(204171),	-- Enforcer Jennive's Signet
+				i(204172),	-- Enforcer Tera's Signet
+				i(204173),	-- Enforcer Horb's Signet
+				i(204214),	-- Drakefire Amulet
+				i(204461),	-- Shakeel's Remembrance
+				i(204712),	-- Brimming Loamm Niffen Supply Satchel
+				i(204793),	-- Suja's Sweet Salt
+				i(204858),	-- Vantus Rune: Aberrus, the Shadowed Crucible
+				i(204909),	-- Statuette of the Forethoughtful Fiend
+				i(205027),	-- Explorer's Banner
+				i(205034),	-- Enormous Ball of Yarn
+				i(205115),	-- Statuette of the Forethoughtful Fiend
+				i(205120),	-- Thimblerig
+				i(205138),	-- Pattern: Medical Wrap Kit
+				i(205170),	-- Statuette of the Forethoughtful Fiend
+				i(205203),	-- Cobalt Shalewing
+				i(205205),	-- Scoria-Clad Sporebat
+				i(205207),	-- Morsel Sniffer
+				i(205209),	-- Boulder Hauler
+				i(205217),	-- Sharpbeak's Feed
+				i(205229),	-- Magma Serpent Lure
+				i(205233),	-- Obsidian Gladiator's Slitherdrake
+				i(205255),	-- Niffen Diggin' Mitts
+				i(205262),	-- Magmaclaw Lure
+				i(205263),	-- Empowered Flightstone
+				i(205264),	-- Speleothemic Footguards
+				i(205265),	-- Sulfuric Crystal Boots
+				i(205269),	-- Scent-Masking Moccasins
+				i(205270),	-- Mycelial Fabric Sandals
+				i(205271),	-- Speleothemic Cataphract
+				i(205272),	-- Scent-Masking Vest
+				i(205273),	-- Sulfuric Crystal Breastmail
+				i(205275),	-- Mycelial Fabric Tunic
+				i(205276),	-- Deepflayer Lure
+				i(205277),	-- Stolen Key
+				i(205278),	-- Obsidian Combatant's Cloth Goggles
+				i(205279),	-- Obsidian Combatant's Leather Goggles
+				i(205280),	-- Obsidian Combatant's Mail Goggles
+				i(205281),	-- Obsidian Combatant's Plate Goggles
+				i(205282),	-- Schematic: Obsidian Combatant's Cloth Goggles
+				i(205283),	-- Schematic: Obsidian Combatant's Leather Goggles
+				i(205284),	-- Schematic: Obsidian Combatant's Mail Goggles
+				i(205285),	-- Schematic: Obsidian Combatant's Plate Goggles
+				i(205286),	-- Loamm Niffen Tabard
+				i(205288),	-- Buried Niffen Collection
+				i(205289),	-- Crimson Equipment Chest
+				i(205290),	-- Greatcloak of Spun Marrow
+				i(205291),	-- Garrison General's Cape
+				i(205292),	-- Kairoktra's Mane
+				i(205293),	-- Emberdusk's Embrace
+				i(205294),	-- Sandals of Molten Scorn
+				i(205295),	-- Sediment Sifters
+				i(205296),	-- Goopal's Visage
+				i(205297),	-- Flamewielder's Trousers
+				i(205298),	-- Belt of Floating Stone
+				i(205299),	-- Rudiment Cuffs
+				i(205300),	-- Magma Waders
+				i(205301),	-- Hardened Lava Handwraps
+				i(205302),	-- Underlight Headwrap
+				i(205303),	-- Leggings of Flowing Flame
+				i(205304),	-- Snareguard Sash
+				i(205305),	-- Zaralek Arachnid Armbands
+				i(205306),	-- Aquiferous Raiment
+				i(205307),	-- Kob'rok's Scale Sabatons
+				i(205308),	-- Clacking Clawguards
+				i(205309),	-- Loyal Attendant's Gaze
+				i(205310),	-- Legguards of Kaprachu
+				i(205311),	-- Magmascale Pauldrons
+				i(205312),	-- Subterrax's Stout Waistguard
+				i(205313),	-- Brulsef's Wristbraces
+				i(205314),	-- Greathelm of the Emissary
+				i(205315),	-- Colossian Cuirass
+				i(205316),	-- Crystal Stompers
+				i(205317),	-- Crystalpod Gauntlets
+				i(205318),	-- Guardian Golem's Legplates
+				i(205319),	-- Deepflayer Shoulderguards
+				i(205320),	-- Greatbelt of the Stronk
+				i(205321),	-- Brimstone Bracers
+				i(205322),	-- Algeth'ar Exile's Frock
+				i(205323),	-- Rock-Lined Pauldrons
+				i(205324),	-- Moth Queen Mantle
+				i(205325),	-- Crystal Wing Shield
+				i(205326),	-- Crystalweb Chelicera
+				i(205327),	-- Shard of the Veridian King
+				i(205328),	-- Earthen Emissasry's Edge
+				i(205329),	-- Loop of Burning Invocation
+				i(205330),	-- Signet of Colossal Mastery
+				i(205331),	-- Zskorran Cleaver
+				i(205332),	-- Fist of the Demolisher
+				i(205333),	-- Obsidian Amulet of Transmutation
+				i(205334),	-- Flowfy's Smoldering Chain
+				i(205335),	-- Talisman of the Dusk
+				i(205336),	-- Glowing Veridian Necklace
+				i(205337),	-- Formula: Titan Training Matrix V
+				i(205338),	-- Formula: Enchanted Whelpling's Shadowflame Crest
+				i(205339),	-- Formula: Enchanted Wyrm's Shadowflame Crest
+				i(205340),	-- Formula: Enchanted Aspect's Shadowflame Crest
+				i(205341),	-- Winding Slitherdrake: Heavy Scales
+				i(205342),	-- Loamm Niffen Insignia
+				i(205343),	-- Crude Seal of Mak'aru
+				i(205346),	-- Hidden Niffen Treasure
+				i(205347),	-- Gathered Niffen Resources
+				i(205348),	-- Niffen Notebook of Jewelcrafting Knowledge
+				i(205349),	-- Niffen Notebook of Engineering Knowledge
+				i(205350),	-- Niffen Notebook of Leatherworking Knowledge
+				i(205351),	-- Niffen Notebook of Enchanting Knowledge
+				i(205352),	-- Niffen Notebook of Blacksmithing Knowledge
+				i(205353),	-- Niffen Notebook of Alchemy Knowledge
+				i(205354),	-- Niffen Notebook of Inscription Knowledge
+				i(205355),	-- Niffen Notebook of Tailoring Knowledge
+				i(205356),	-- Niffen Notebook of Mining Knowledge
+				i(205357),	-- Niffen Notebook of Skinning Knowledge
+				i(205358),	-- Niffen Notebook of Herbalism Knowledge
+				i(205361),	-- Obsidian Gladiator's Prestigious Cloak
+				i(205362),	-- Obsidian Gladiator's Tabard
+				i(205363),	-- Ensemble: Ornate Black Dragon Labwear
+				i(205365),	-- Loamm Niffen Insignia
+				i(205366),	-- Soupy Clay Pot
+				i(205367),	-- Indebted Researcher's Gift
+				i(205368),	-- Thankful Researcher's Gift
+				i(205369),	-- Appreciative Researcher's Gift
+				i(205370),	-- Researcher's Gift
+				i(205371),	-- Appreciative Researcher's Scrounged Goods
+				i(205372),	-- Indebted Researcher's Scrounged Goods
+				i(205373),	-- Researcher's Scrounged Goods
+				i(205374),	-- Thankful Researcher's Scrounged Goods
+				i(205375),	-- Obsidian Gladiator's Silk Tunic
+				i(205376),	-- Obsidian Gladiator's Silk Blouse
+				i(205377),	-- Obsidian Gladiator's Silk Slippers
+				i(205378),	-- Obsidian Gladiator's Silk Treads
+				i(205379),	-- Obsidian Gladiator's Silk Gloves
+				i(205380),	-- Obsidian Gladiator's Silk Handwraps
+				i(205381),	-- Obsidian Gladiator's Silk Hood
+				i(205382),	-- Obsidian Gladiator's Silk Guise
+				i(205383),	-- Obsidian Gladiator's Silk Leggings
+				i(205384),	-- Obsidian Gladiator's Silk Trousers
+				i(205385),	-- Obsidian Gladiator's Silk Mantle
+				i(205386),	-- Obsidian Gladiator's Silk Amice
+				i(205387),	-- Obsidian Gladiator's Silk Cord
+				i(205388),	-- Obsidian Gladiator's Silk Belt
+				i(205389),	-- Obsidian Gladiator's Silk Wristwraps
+				i(205390),	-- Obsidian Gladiator's Silk Armbands
+				i(205391),	-- Obsidian Gladiator's Chain Vest
+				i(205392),	-- Obsidian Gladiator's Chain Tunic
+				i(205393),	-- Obsidian Gladiator's Chain Sabatons
+				i(205394),	-- Obsidian Gladiator's Chain Boots
+				i(205395),	-- Obsidian Gladiator's Chain Gauntlets
+				i(205396),	-- Obsidian Gladiator's Chain Handguards
+				i(205397),	-- Obsidian Gladiator's Chain Helm
+				i(205398),	-- Obsidian Gladiator's Chain Faceguard
+				i(205399),	-- Obsidian Gladiator's Chain Leggings
+				i(205400),	-- Obsidian Gladiator's Chain Breeches
+				i(205401),	-- Obsidian Gladiator's Chain Monnion
+				i(205402),	-- Obsidian Gladiator's Chain Shoulderguard
+				i(205403),	-- Obsidian Gladiator's Chain Belt
+				i(205404),	-- Obsidian Gladiator's Chain Girdle
+				i(205405),	-- Obsidian Gladiator's Chain Wristguards
+				i(205406),	-- Obsidian Gladiator's Chain Bracers
+				i(205407),	-- Obsidian Gladiator's Cloak
+				i(205408),	-- Obsidian Gladiator's Drape
+				i(205409),	-- Obsidian Gladiator's Shawl
+				i(205410),	-- Pungent Morsel
+				i(205411),	-- Medical Wrap Kit
+				i(205412),	-- Jangly Key
+				i(205413),	-- Obsidian Cobraskin
+				i(205414),	-- Ornate Black Dragon Labwear Coat
+				i(205415),	-- Ornate Black Dragon Labwear Mantle
+				i(205416),	-- Ornate Black Dragon Labwear Cloak
+				i(205417),	-- Fungishine
+				i(205418),	-- Blazing Shadowflame Cinder
+				i(205419),	-- Jrumm's Drum
+				i(205421),	-- Ponzo's Scheming Topper
+				i(205423),	-- Shadowflame Residue Sack
+				i(205424),	-- Bartered Jewelcrafting Notes
+				i(205425),	-- Bartered Engineering Notes
+				i(205426),	-- Bartered Leatherworking Notes
+				i(205427),	-- Bartered Enchanting Notes
+				i(205428),	-- Bartered Blacksmithing Notes
+				i(205429),	-- Bartered Alchemy Notes
+				i(205430),	-- Bartered Inscription Notes
+				i(205431),	-- Bartered Tailoring Notes
+				i(205432),	-- Bartered Mining Notes
+				i(205433),	-- Bartered Skinning Notes
+				i(205434),	-- Bartered Herbalism Notes
+				i(205435),	-- Bartered Jewelcrafting Journal
+				i(205436),	-- Bartered Engineering Journal
+				i(205437),	-- Bartered Leatherworking Journal
+				i(205438),	-- Bartered Enchanting Journal
+				i(205439),	-- Bartered Blacksmithing Journal
+				i(205440),	-- Bartered Alchemy Journal
+				i(205441),	-- Bartered Inscription Journal
+				i(205442),	-- Bartered Tailoring Journal
+				i(205443),	-- Bartered Mining Journal
+				i(205444),	-- Bartered Skinning Journal
+				i(205445),	-- Bartered Herbalism Journal
+				i(205446),	-- Obsidian Gladiator's Cloak
+				i(205447),	-- Obsidian Gladiator's Drape
+				i(205448),	-- Obsidian Gladiator's Shawl
+				i(205451),	-- Flawless Crystal Scale
+				i(205452),	-- Ponzo's Cream
+				i(205453),	-- Glimmerogg Timeshare Voucher
+				i(205454),	-- Researchers Wheel Barrow
+				i(205456),	-- Lost Dragonscale
+				i(205457),	-- Delicate Crystal Shell
+				i(205458),	-- Lost Dragonscale
+				i(205459),	-- Luminous Gloop
+				i(205460),	-- Pulverized Living Earth
+				i(205461),	-- Vicious Stoneclaw
+				i(205462),	-- Scavenged Djaradin Relic
+				i(205463),	-- Skornace's Molten Pocket
+				i(205464),	-- Granite Scales
+				i(205465),	-- Gleaming Rock Viper Eye
+				i(205466),	-- Regurgitated Spores
+				i(205467),	-- Preserved Krolusk Crest
+				i(205468),	-- Hooked Tail Claw
+				i(205469),	-- Serrated Sporebat Spine
+				i(205470),	-- Torn Deep Scales
+				i(205471),	-- Slimy Deepfish Fin
+				i(205472),	-- Wad of Sparkling Somethings
+				i(205473),	-- Obsidian Gladiator's Plate Chestguard
+				i(205474),	-- Obsidian Gladiator's Plate Chestplate
+				i(205475),	-- Obsidian Gladiator's Plate Warboots
+				i(205476),	-- Obsidian Gladiator's Plate Stompers
+				i(205477),	-- Obsidian Gladiator's Plate Gauntlets
+				i(205478),	-- Obsidian Gladiator's Plate Handguards
+				i(205479),	-- Obsidian Gladiator's Plate Helm
+				i(205480),	-- Obsidian Gladiator's Plate Helmet
+				i(205481),	-- Obsidian Gladiator's Plate Legguards
+				i(205482),	-- Obsidian Gladiator's Plate Wargreaves
+				i(205483),	-- Obsidian Gladiator's Plate Shoulders
+				i(205484),	-- Obsidian Gladiator's Plate Pauldrons
+				i(205485),	-- Obsidian Gladiator's Plate Girdle
+				i(205486),	-- Obsidian Gladiator's Plate Greatbelt
+				i(205487),	-- Obsidian Gladiator's Plate Wristguards
+				i(205488),	-- Obsidian Gladiator's Plate Vambraces
+				i(205489),	-- Obsidian Gladiator's Silk Robe
+				i(205490),	-- Obsidian Gladiator's Silk Vestments
+				i(205491),	-- Obsidian Gladiator's Silk Slippers
+				i(205492),	-- Obsidian Gladiator's Silk Treads
+				i(205493),	-- Obsidian Gladiator's Silk Gloves
+				i(205494),	-- Obsidian Gladiator's Silk Handwraps
+				i(205495),	-- Obsidian Gladiator's Silk Hood
+				i(205496),	-- Obsidian Gladiator's Silk Guise
+				i(205497),	-- Obsidian Gladiator's Silk Leggings
+				i(205498),	-- Obsidian Gladiator's Silk Trousers
+				i(205499),	-- Obsidian Gladiator's Silk Mantle
+				i(205500),	-- Obsidian Gladiator's Silk Amice
+				i(205501),	-- Obsidian Gladiator's Silk Cord
+				i(205502),	-- Obsidian Gladiator's Silk Belt
+				i(205503),	-- Obsidian Gladiator's Silk Wristwraps
+				i(205504),	-- Obsidian Gladiator's Silk Armbands
+				i(205505),	-- Obsidian Gladiator's Silk Robe
+				i(205506),	-- Obsidian Gladiator's Silk Vestments
+				i(205507),	-- Obsidian Gladiator's Silk Slippers
+				i(205508),	-- Obsidian Gladiator's Silk Treads
+				i(205509),	-- Obsidian Gladiator's Silk Gloves
+				i(205510),	-- Obsidian Gladiator's Silk Handwraps
+				i(205511),	-- Obsidian Gladiator's Silk Hood
+				i(205512),	-- Obsidian Gladiator's Silk Guise
+				i(205513),	-- Obsidian Gladiator's Silk Leggings
+				i(205514),	-- Obsidian Gladiator's Silk Trousers
+				i(205515),	-- Obsidian Gladiator's Silk Mantle
+				i(205516),	-- Obsidian Gladiator's Silk Amice
+				i(205517),	-- Obsidian Gladiator's Silk Cord
+				i(205518),	-- Obsidian Gladiator's Silk Belt
+				i(205519),	-- Obsidian Gladiator's Silk Wristwraps
+				i(205520),	-- Obsidian Gladiator's Silk Armbands
+				i(205521),	-- Obsidian Gladiator's Leather Vest
+				i(205522),	-- Obsidian Gladiator's Leather Jerkin
+				i(205523),	-- Obsidian Gladiator's Leather Boots
+				i(205524),	-- Obsidian Gladiator's Leather Treads
+				i(205525),	-- Obsidian Gladiator's Leather Gloves
+				i(205526),	-- Obsidian Gladiator's Leather Grips
+				i(205527),	-- Obsidian Gladiator's Leather Helm
+				i(205528),	-- Obsidian Gladiator's Leather Mask
+				i(205529),	-- Obsidian Gladiator's Leather Breeches
+				i(205530),	-- Obsidian Gladiator's Leather Legwraps
+				i(205531),	-- Obsidian Gladiator's Leather Spaulders
+				i(205532),	-- Obsidian Gladiator's Leather Shoulderpads
+				i(205533),	-- Obsidian Gladiator's Leather Belt
+				i(205534),	-- Obsidian Gladiator's Leather Strap
+				i(205535),	-- Obsidian Gladiator's Leather Wristwraps
+				i(205536),	-- Obsidian Gladiator's Leather Wristguards
+				i(205537),	-- Obsidian Gladiator's Leather Vest
+				i(205538),	-- Obsidian Gladiator's Leather Jerkin
+				i(205539),	-- Obsidian Gladiator's Leather Boots
+				i(205540),	-- Obsidian Gladiator's Leather Treads
+				i(205541),	-- Obsidian Gladiator's Leather Gloves
+				i(205542),	-- Obsidian Gladiator's Leather Grips
+				i(205543),	-- Obsidian Gladiator's Leather Helm
+				i(205544),	-- Obsidian Gladiator's Leather Mask
+				i(205545),	-- Obsidian Gladiator's Leather Breeches
+				i(205546),	-- Obsidian Gladiator's Leather Legwraps
+				i(205547),	-- Obsidian Gladiator's Leather Spaulders
+				i(205548),	-- Obsidian Gladiator's Leather Shoulderpads
+				i(205549),	-- Obsidian Gladiator's Leather Belt
+				i(205550),	-- Obsidian Gladiator's Leather Strap
+				i(205551),	-- Obsidian Gladiator's Leather Wristwraps
+				i(205552),	-- Obsidian Gladiator's Leather Wristguards
+				i(205553),	-- Obsidian Gladiator's Leather Vest
+				i(205554),	-- Obsidian Gladiator's Leather Jerkin
+				i(205555),	-- Obsidian Gladiator's Leather Boots
+				i(205556),	-- Obsidian Gladiator's Leather Treads
+				i(205557),	-- Obsidian Gladiator's Leather Gloves
+				i(205558),	-- Obsidian Gladiator's Leather Grips
+				i(205559),	-- Obsidian Gladiator's Leather Helm
+				i(205560),	-- Obsidian Gladiator's Leather Mask
+				i(205561),	-- Obsidian Gladiator's Leather Breeches
+				i(205562),	-- Obsidian Gladiator's Leather Legwraps
+				i(205563),	-- Obsidian Gladiator's Leather Spaulders
+				i(205564),	-- Obsidian Gladiator's Leather Shoulderpads
+				i(205565),	-- Obsidian Gladiator's Leather Belt
+				i(205566),	-- Obsidian Gladiator's Leather Strap
+				i(205567),	-- Obsidian Gladiator's Leather Wristwraps
+				i(205568),	-- Obsidian Gladiator's Leather Wristguards
+				i(205569),	-- Obsidian Gladiator's Leather Vest
+				i(205570),	-- Obsidian Gladiator's Leather Jerkin
+				i(205571),	-- Obsidian Gladiator's Leather Boots
+				i(205572),	-- Obsidian Gladiator's Leather Treads
+				i(205573),	-- Obsidian Gladiator's Leather Gloves
+				i(205574),	-- Obsidian Gladiator's Leather Grips
+				i(205575),	-- Obsidian Gladiator's Leather Helm
+				i(205576),	-- Obsidian Gladiator's Leather Mask
+				i(205577),	-- Obsidian Gladiator's Leather Breeches
+				i(205578),	-- Obsidian Gladiator's Leather Legwraps
+				i(205579),	-- Obsidian Gladiator's Leather Spaulders
+				i(205580),	-- Obsidian Gladiator's Leather Shoulderpads
+				i(205581),	-- Obsidian Gladiator's Leather Belt
+				i(205582),	-- Obsidian Gladiator's Leather Strap
+				i(205583),	-- Obsidian Gladiator's Leather Wristwraps
+				i(205584),	-- Obsidian Gladiator's Leather Wristguards
+				i(205585),	-- Obsidian Gladiator's Chain Vest
+				i(205586),	-- Obsidian Gladiator's Chain Tunic
+				i(205587),	-- Obsidian Gladiator's Chain Sabatons
+				i(205588),	-- Obsidian Gladiator's Chain Boots
+				i(205589),	-- Obsidian Gladiator's Chain Gauntlets
+				i(205590),	-- Obsidian Gladiator's Chain Handguards
+				i(205591),	-- Obsidian Gladiator's Chain Helm
+				i(205592),	-- Obsidian Gladiator's Chain Faceguard
+				i(205593),	-- Obsidian Gladiator's Chain Leggings
+				i(205594),	-- Obsidian Gladiator's Chain Breeches
+				i(205595),	-- Obsidian Gladiator's Chain Monnion
+				i(205596),	-- Obsidian Gladiator's Chain Shoulderguard
+				i(205597),	-- Obsidian Gladiator's Chain Belt
+				i(205598),	-- Obsidian Gladiator's Chain Girdle
+				i(205599),	-- Obsidian Gladiator's Chain Wristguards
+				i(205600),	-- Obsidian Gladiator's Chain Bracers
+				i(205601),	-- Obsidian Gladiator's Chain Vestments
+				i(205602),	-- Obsidian Gladiator's Chain Robe
+				i(205603),	-- Obsidian Gladiator's Chain Sabatons
+				i(205604),	-- Obsidian Gladiator's Chain Boots
+				i(205605),	-- Obsidian Gladiator's Chain Gauntlets
+				i(205606),	-- Obsidian Gladiator's Chain Handguards
+				i(205607),	-- Obsidian Gladiator's Chain Helm
+				i(205608),	-- Obsidian Gladiator's Chain Faceguard
+				i(205609),	-- Obsidian Gladiator's Chain Leggings
+				i(205610),	-- Obsidian Gladiator's Chain Breeches
+				i(205611),	-- Obsidian Gladiator's Chain Monnion
+				i(205612),	-- Obsidian Gladiator's Chain Shoulderguard
+				i(205613),	-- Obsidian Gladiator's Chain Belt
+				i(205614),	-- Obsidian Gladiator's Chain Girdle
+				i(205615),	-- Obsidian Gladiator's Chain Wristguards
+				i(205616),	-- Obsidian Gladiator's Plate Chestguard
+				i(205617),	-- Obsidian Gladiator's Plate Chestplate
+				i(205618),	-- Obsidian Gladiator's Plate Warboots
+				i(205619),	-- Obsidian Gladiator's Plate Stompers
+				i(205620),	-- Obsidian Gladiator's Plate Gauntlets
+				i(205621),	-- Obsidian Gladiator's Plate Handguards
+				i(205622),	-- Obsidian Gladiator's Plate Helm
+				i(205623),	-- Obsidian Gladiator's Plate Helmet
+				i(205624),	-- Obsidian Gladiator's Plate Legguards
+				i(205625),	-- Obsidian Gladiator's Plate Wargreaves
+				i(205626),	-- Obsidian Gladiator's Plate Shoulders
+				i(205627),	-- Obsidian Gladiator's Plate Pauldrons
+				i(205628),	-- Obsidian Gladiator's Plate Girdle
+				i(205629),	-- Obsidian Gladiator's Plate Greatbelt
+				i(205630),	-- Obsidian Gladiator's Plate Wristguards
+				i(205631),	-- Obsidian Gladiator's Plate Vambraces
+				i(205632),	-- Obsidian Gladiator's Plate Chestguard
+				i(205633),	-- Obsidian Gladiator's Plate Chestplate
+				i(205634),	-- Obsidian Gladiator's Plate Warboots
+				i(205635),	-- Obsidian Gladiator's Plate Stompers
+				i(205636),	-- Obsidian Gladiator's Plate Gauntlets
+				i(205637),	-- Obsidian Gladiator's Plate Handguards
+				i(205638),	-- Obsidian Gladiator's Plate Helm
+				i(205639),	-- Obsidian Gladiator's Plate Helmet
+				i(205640),	-- Obsidian Gladiator's Plate Legguards
+				i(205641),	-- Obsidian Gladiator's Plate Wargreaves
+				i(205642),	-- Obsidian Gladiator's Plate Shoulders
+				i(205643),	-- Obsidian Gladiator's Plate Pauldrons
+				i(205644),	-- Obsidian Gladiator's Plate Girdle
+				i(205645),	-- Obsidian Gladiator's Plate Greatbelt
+				i(205646),	-- Obsidian Gladiator's Plate Wristguards
+				i(205647),	-- Obsidian Gladiator's Plate Vambraces
+				i(205648),	-- Obsidian Gladiator's Chain Bracers
+				i(205649),	-- Obsidian Gladiator's Cloak
+				i(205650),	-- Obsidian Gladiator's Drape
+				i(205651),	-- Obsidian Gladiator's Shawl
+				i(205652),	-- Obsidian Gladiator's Cloak
+				i(205653),	-- Obsidian Gladiator's Drape
+				i(205654),	-- Obsidian Gladiator's Shawl
+				i(205655),	-- Obsidian Gladiator's Cloak
+				i(205656),	-- Obsidian Gladiator's Drape
+				i(205657),	-- Obsidian Gladiator's Shawl
+				i(205658),	-- Obsidian Gladiator's Cloak
+				i(205659),	-- Obsidian Gladiator's Drape
+				i(205660),	-- Obsidian Gladiator's Shawl
+				i(205661),	-- Obsidian Gladiator's Cloak
+				i(205662),	-- Obsidian Gladiator's Drape
+				i(205663),	-- Obsidian Gladiator's Shawl
+				i(205664),	-- Obsidian Gladiator's Cloak
+				i(205665),	-- Obsidian Gladiator's Drape
+				i(205666),	-- Obsidian Gladiator's Shawl
+				i(205667),	-- Obsidian Gladiator's Cloak
+				i(205668),	-- Obsidian Gladiator's Drape
+				i(205669),	-- Obsidian Gladiator's Shawl
+				i(205670),	-- Obsidian Gladiator's Cloak
+				i(205671),	-- Obsidian Gladiator's Drape
+				i(205672),	-- Obsidian Gladiator's Shawl
+				i(205673),	-- Obsidian Gladiator's Cloak
+				i(205674),	-- Obsidian Gladiator's Drape
+				i(205675),	-- Obsidian Gladiator's Shawl
+				i(205676),	-- Obsidian Gladiator's Cloak
+				i(205677),	-- Obsidian Gladiator's Drape
+				i(205678),	-- Obsidian Gladiator's Shawl
+				i(205679),	-- Obsidian Gladiator's Cloak
+				i(205680),	-- Obsidian Gladiator's Drape
+				i(205681),	-- Obsidian Gladiator's Shawl
 			}),
 			n(QUESTS, {
 				-- 10.1.0.48480
@@ -2577,7 +3093,6 @@ root(ROOTS.Unsorted, {
 				i(204330),	-- Inert Primordial Fragments
 				i(114942),	-- Cracked Draenic Mortar
 				i(204343),	-- Trusty Dragonkin Rake
-				i(204439),	-- Research Chest Key
 				i(204442),	-- Clump of Tar
 				i(204443),	-- Blacksteel Hammer
 				i(204561),	-- Primalist Cache Key
@@ -2589,10 +3104,7 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				-- JC
-				i(204406),	-- Ancient Design: Square Holders (RECIPE!)
 				i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
-				-- JC
-				i(204404),	-- Square Holders
 				--
 				i(204224),	-- Speck of Arcane Awareness
 				i(204225),	-- Perfect Windfeather
@@ -2690,7 +3202,6 @@ root(ROOTS.Unsorted, {
 				q(74434),
 				q(74435),
 				q(74472),
-				q(74473),
 				q(74478),
 				q(74479),
 				q(74480),
@@ -2706,7 +3217,6 @@ root(ROOTS.Unsorted, {
 				q(74712),
 				q(74713),
 				q(74714),
-				q(74757),
 				q(74760),
 				q(74761),
 				q(74762),
@@ -2746,7 +3256,6 @@ root(ROOTS.Unsorted, {
 				q(74974),
 				q(74978),
 				q(74983),
-				q(74993),
 				q(74994),
 				q(74996),
 				q(74997),
@@ -2767,7 +3276,6 @@ root(ROOTS.Unsorted, {
 				q(75065),
 				q(75130),
 				q(75146),
-				q(75153),
 				-- 10.0.7.48076
 				q(75161),
 				q(75163),
@@ -2803,10 +3311,8 @@ root(ROOTS.Unsorted, {
 				q(75427),
 				q(75428),
 				q(75432),
-				q(75436),
 				q(75457),
 				-- 10.0.7.48439
-				q(75484),
 				q(75520),
 				q(75521),
 				q(75522),

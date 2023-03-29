@@ -4,298 +4,440 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(QUESTS, {
-				-- Chapter 1
-			q(72975, {	-- The Land Beneath: Zaralek Cavern!
-				["maps"] = { VALDRAKKEN },
-			}),
-			q(72976, {	-- A Crack in the World
-				["sourceQuests"] = { 72975 },	-- The Land Beneath: Zaralek Cavern!
-				["provider"] = { "n", 201281 },	-- Ebyssian
-				["coord"] = { 61.4, 42.3, VALDRAKKEN },
-			}),
-			q(72977, {	-- Where the Flames Fell
-				["sourceQuests"] = { 72976 },	-- A Crack in the World
-				["provider"] = { "n", 201281 },	-- Ebyssian
-				["coord"] = { 58.9, 38.4, VALDRAKKEN },
-			}),
-			q(72978, {	-- Scar of Earth and Fire
-				["sourceQuests"] = { 72977 },	-- Where the Flames Fell
-				["provider"] = { "n", 201311 },	-- Wrathion
-				["coord"] = { 87.2, 27.8, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(204461),	-- Shakeel's Rememberance
-				},
-			}),
-			q(72981, {	-- The Patience of Princes
-				["sourceQuests"] = { 72978 },	-- Scar of Earth and Fire
-				["provider"] = { "n", 200085 },	-- Sabellian
-				["coord"] = { 87.4, 27.5, OHNAHRAN_PLAINS },
-				["maps"] = { 2165 },	-- The Throughway (Scenario Map)
-				["g"] = {
-					i(204389),	-- Stone Breaker (TOY!)
-				},
-			}),
-			q(72872, {	-- Culling the Deep
-				["sourceQuests"] = { 72981 },	-- The Patience of Princes
-				["provider"] = { "n", 200116 },	-- Elder Honeypelt
-				["coord"] = { 64.7, 37.6, ZARALEK_CAVERN },
-			}),
-			q(72873, {	-- It Was Not Enough
-				["sourceQuests"] = { 72981 },	-- The Patience of Princes
-				["provider"] = { "n", 200116 },	-- Elder Honeypelt
-				["coord"] = { 64.7, 37.6, ZARALEK_CAVERN },
-			}),
-			q(72970, {	-- Niffin and Goliath
-				["sourceQuests"] = {
-					72872,	-- Culling the Deep
-					72873,	-- It Was Not Enough
-				},
-				["provider"] = { "n", 201587 },	-- Elder Honeypelt
-				["coord"] = { 60.2, 37.8, ZARALEK_CAVERN },
-				["g"] = {
-					i(204604),	-- Cyclonic Bracers
-				},
-			}),
-			q(72980, {	-- Brother's Keeper
-				["sourceQuests"] = { 72970 },	-- Niffin and Goliath
-				["provider"] = { "n", 201583 },	-- Wrathion
-				["coord"] = { 60.1, 37.5, ZARALEK_CAVERN },
-			}),
-			q(72874, {	-- Secrets From Our Father
-				["sourceQuests"] = { 72980 },	-- Brother's Keeper
-				["provider"] = { "n", 201589 },	-- Sabellian
-				["coord"] = { 60.6, 40.1, ZARALEK_CAVERN },
-			}),
-			q(72979, {	-- The Earth Gives Way
-				["sourceQuests"] = { 72874 },	-- Secrets From Our Father
-				["provider"] = { "n", 201589 },	-- Sabellian
-				["coord"] = { 60.6, 40.1, ZARALEK_CAVERN },
-			}),
-			q(72973, {	-- Follow Your Nose
-				["sourceQuests"] = { 72979 },	-- The Earth Gives Way
-				["provider"] = { "n", 201584 },	-- Elder Honeypelt
-				["coord"] = { 57.0, 38.2, ZARALEK_CAVERN },
-			}),
-			q(75643, {	-- Orientation: Loamm Niffen
-				["sourceQuests"] = { 72973 },	-- Follow Your Nose
-				["provider"] = { "n", 204522 },	-- Aurantia
-				["coord"] = { 56.9, 55.7, ZARALEK_CAVERN },
-			}),
-			q(72974, {	-- Welcome to the City of Smells
-				["sourceQuests"] = { 72973 },	-- Follow Your Nose
-				["provider"] = { "n", 200054 },	-- Elder Honeypelt
-				["coord"] = { 57.0, 55.8, ZARALEK_CAVERN },
-				["g"] = {
-					i(204449),	-- Fist of the Treasure Seeker
-					i(204456),	-- Galerider Crescent
-					i(204457),	-- Squallbreaker Shield
-					i(204452),	-- Stormbender Rod
-				},
-			}),
-			q(75644, {	-- Six Hundred Feet Under
-				["sourceQuests"] = { 75643 },	-- Orientation: Loamm Niffen
-				["provider"] = { "n", 200052 },	-- Aurantia
-				["coord"] = { 54.6, 54.7, ZARALEK_CAVERN },
-			}),
-				-- Chapter 2
-			q(74334, {	-- Future Aspects
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				["provider"] = { "n", 201366 },	-- Ebyssian
-				["coord"] = { 54.7, 54.5, ZARALEK_CAVERN },
-			}),
-			q(74375, {	-- Collating Their Research
-				["sourceQuests"] = { 74334 },	-- Future Aspects
-				["provider"] = { "n", 200049 },	-- Scalecommander Emberthal
-				["coord"] = { 59.4, 68.9, ZARALEK_CAVERN },
-				["g"] = {
-					i(204599),	-- Cyclonic Gauntlets
-				},
-			}),
-			q(72958, {	-- Save-A-Mole
-				["sourceQuests"] = { 74334 },	-- Future Aspects
-				["provider"] = { "n", 200049 },	-- Scalecommander Emberthal
-				["coord"] = { 59.4, 68.9, ZARALEK_CAVERN },
-				["g"] = {
-					i(204603),	-- Cyclonic Cinch
-				},
-			}),
-			q(72959, {	-- Whose Vault Is It Anyway?
-				["sourceQuests"] = {
-					74375,	-- Collating Their Research
-					72958,	-- Save-A-Mole
-				},
-				["provider"] = { "n", 200049 },	-- Scalecommander Emberthal
-				["coord"] = { 59.4, 68.9, ZARALEK_CAVERN },
-			}),
-			q(72961, {	-- Charging Up
-				["sourceQuests"] = { 72959 },	-- Whose Vault Is It Anyway?
-				["provider"] = { "n", 200074 },	-- Rannan Korren
-				["coord"] = { 62.6, 73.3, ZARALEK_CAVERN },
-				["g"] = {
-					i(204387),	-- Buzzing Orb Core
-				},
-			}),
-			q(72962, {	-- Open That Door!
-				["sourceQuests"] = { 72961 },	-- Charging Up
-				["provider"] = { "n", 201619 },	-- Scalecommander Emberthal
-				["coord"] = { 62.6, 73.2, ZARALEK_CAVERN },
-			}),
-			q(75419, {	-- Sundered Flames
-				["sourceQuests"] = { 72962 },	-- Open That Door!
-				["provider"] = { "n", 200075 },	-- Scalecommander Emberthal
-				["coord"] = { 62.8, 73.6, ZARALEK_CAVERN },
-			}),
-			q(72693, {	-- The Upper Hand
-				["sourceQuests"] = { 75419 },	-- Sundered Flames
-				["provider"] = { "n", 202857 },	-- Scalecommander Emberthal
-				["coord"] = { 63.0, 74.0, ZARALEK_CAVERN },
-				["g"] = {
-					i(204598),	-- Cyclonic Striders
-				},
-			}),
-			q(72694, {	-- Singed
-				["sourceQuests"] = { 72693 },	-- The Upper Hand
-				["provider"] = { "n", 204571 },	-- Scalecommander Emberthal
-				["coord"] = { 63.4, 74.6, ZARALEK_CAVERN },
-			}),
-			q(72694, {	-- Aspects of Our Legacy
-				["sourceQuests"] = { 72694 },	-- Singed
-				["provider"] = { "n", 202670 },	-- Ebyssian
-				["coord"] = { 63.4, 74.7, ZARALEK_CAVERN },
-				["g"] = {
-					i(204601),	-- Cyclonic Kilt
-				},
-			}),
+			header(HEADERS.Achievement, 17739, {	-- Embers of Neltharion
+					-- Chapter 1 --
+				q(75528, {	-- A Tester's Guide to Entering Zaralek [Probably NYI on live?]
+					["provider"] = { "n", 204252 },	-- Questaniffen
+					["coord"] = { 49.7, 55.3, VALDRAKKEN },
+				}),
+				q(72975, {	-- The Land Beneath: Zaralek Cavern!
+					["maps"] = { VALDRAKKEN },
+				}),
+				q(72976, {	-- A Crack in the World
+					["sourceQuests"] = { 72975 },	-- The Land Beneath: Zaralek Cavern!
+					["provider"] = { "n", 201281 },	-- Ebyssian
+					["coord"] = { 61.4, 42.3, VALDRAKKEN },
+				}),
+				q(72977, {	-- Where the Flames Fell
+					["sourceQuests"] = { 72976 },	-- A Crack in the World
+					["provider"] = { "n", 201281 },	-- Ebyssian
+					["coord"] = { 58.9, 38.4, VALDRAKKEN },
+				}),
+				q(72978, {	-- Scar of Earth and Fire
+					["sourceQuests"] = { 72977 },	-- Where the Flames Fell
+					["provider"] = { "n", 201311 },	-- Wrathion
+					["coord"] = { 87.2, 27.8, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(204461),	-- Shakeel's Rememberance
+					},
+				}),
+				q(72981, {	-- The Patience of Princes
+					["sourceQuests"] = { 72978 },	-- Scar of Earth and Fire
+					["provider"] = { "n", 200085 },	-- Sabellian
+					["coord"] = { 87.4, 27.5, OHNAHRAN_PLAINS },
+					["maps"] = { 2165 },	-- The Throughway (Scenario Map)
+					["g"] = {
+						i(204389),	-- Stone Breaker (TOY!)
+					},
+				}),
+				q(72872, {	-- Culling the Deep
+					["sourceQuests"] = { 72981 },	-- The Patience of Princes
+					["provider"] = { "n", 200116 },	-- Elder Honeypelt
+					["coord"] = { 64.7, 37.6, ZARALEK_CAVERN },
+				}),
+				q(72873, {	-- It Was Not Enough
+					["sourceQuests"] = { 72981 },	-- The Patience of Princes
+					["provider"] = { "n", 200116 },	-- Elder Honeypelt
+					["coord"] = { 64.7, 37.6, ZARALEK_CAVERN },
+				}),
+				q(72970, {	-- Niffin and Goliath
+					["sourceQuests"] = {
+						72872,	-- Culling the Deep
+						72873,	-- It Was Not Enough
+					},
+					["provider"] = { "n", 201587 },	-- Elder Honeypelt
+					["coord"] = { 60.2, 37.8, ZARALEK_CAVERN },
+					["g"] = {
+						i(185670),	-- Dust Devil Wristbands
+						i(204604),	-- Cyclonic Bracers
+					},
+				}),
+				q(72980, {	-- Brother's Keeper
+					["sourceQuests"] = { 72970 },	-- Niffin and Goliath
+					["provider"] = { "n", 201583 },	-- Wrathion
+					["coord"] = { 60.1, 37.5, ZARALEK_CAVERN },
+				}),
+				q(72874, {	-- Secrets From Our Father
+					["sourceQuests"] = { 72980 },	-- Brother's Keeper
+					["provider"] = { "n", 201589 },	-- Sabellian
+					["coord"] = { 60.6, 40.1, ZARALEK_CAVERN },
+				}),
+				q(72979, {	-- The Earth Gives Way
+					["sourceQuests"] = { 72874 },	-- Secrets From Our Father
+					["provider"] = { "n", 201589 },	-- Sabellian
+					["coord"] = { 60.6, 40.1, ZARALEK_CAVERN },
+				}),
+				q(72973, {	-- Follow Your Nose
+					["sourceQuests"] = { 72979 },	-- The Earth Gives Way
+					["provider"] = { "n", 201584 },	-- Elder Honeypelt
+					["coord"] = { 57.0, 38.2, ZARALEK_CAVERN },
+				}),
+				q(75643, {	-- Orientation: Loamm Niffen
+					["sourceQuests"] = { 72973 },	-- Follow Your Nose
+					["provider"] = { "n", 204522 },	-- Aurantia
+					["coord"] = { 56.9, 55.7, ZARALEK_CAVERN },
+				}),
+				q(72974, {	-- Welcome to the City of Smells
+					["sourceQuests"] = { 72973 },	-- Follow Your Nose
+					["provider"] = { "n", 200054 },	-- Elder Honeypelt
+					["coord"] = { 57.0, 55.8, ZARALEK_CAVERN },
+					["g"] = {
+						i(185599),	-- Beheader's Poleaxe
+						i(204449),	-- Fist of the Treasure Seeker
+						i(204456),	-- Galerider Crescent
+						i(204457),	-- Squallbreaker Shield
+						i(204452),	-- Stormbender Rod
+						i(185604),	-- Stormbender Scroll
+						i(204455),	-- Tomb Raider's Shank
+					},
+				}),
+				q(75644, {	-- Six Hundred Feet Under
+					["sourceQuests"] = { 75643 },	-- Orientation: Loamm Niffen
+					["provider"] = { "n", 200052 },	-- Aurantia
+					["coord"] = { 54.6, 54.7, ZARALEK_CAVERN },
+				}),
+					-- Chapter 2
+				q(74334, {	-- Future Aspects
+					["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+					["provider"] = { "n", 201366 },	-- Ebyssian
+					["coord"] = { 54.7, 54.5, ZARALEK_CAVERN },
+				}),
+				q(74375, {	-- Collating Their Research
+					["sourceQuests"] = { 74334 },	-- Future Aspects
+					["provider"] = { "n", 200049 },	-- Scalecommander Emberthal
+					["coord"] = { 59.4, 68.9, ZARALEK_CAVERN },
+					["g"] = {
+						i(204599),	-- Cyclonic Gauntlets
+					},
+				}),
+				q(72958, {	-- Save-A-Mole
+					["sourceQuests"] = { 74334 },	-- Future Aspects
+					["provider"] = { "n", 200049 },	-- Scalecommander Emberthal
+					["coord"] = { 59.4, 68.9, ZARALEK_CAVERN },
+					["g"] = {
+						i(204603),	-- Cyclonic Cinch
+					},
+				}),
+				q(72959, {	-- Whose Vault Is It Anyway?
+					["sourceQuests"] = {
+						74375,	-- Collating Their Research
+						72958,	-- Save-A-Mole
+					},
+					["provider"] = { "n", 200049 },	-- Scalecommander Emberthal
+					["coord"] = { 59.4, 68.9, ZARALEK_CAVERN },
+				}),
+				q(72961, {	-- Charging Up
+					["sourceQuests"] = { 72959 },	-- Whose Vault Is It Anyway?
+					["provider"] = { "n", 200074 },	-- Rannan Korren
+					["coord"] = { 62.6, 73.3, ZARALEK_CAVERN },
+					["g"] = {
+						i(204387),	-- Buzzing Orb Core
+					},
+				}),
+				q(72962, {	-- Open That Door!
+					["sourceQuests"] = { 72961 },	-- Charging Up
+					["provider"] = { "n", 201619 },	-- Scalecommander Emberthal
+					["coord"] = { 62.6, 73.2, ZARALEK_CAVERN },
+				}),
+				q(75419, {	-- Sundered Flames
+					["sourceQuests"] = { 72962 },	-- Open That Door!
+					["provider"] = { "n", 200075 },	-- Scalecommander Emberthal
+					["coord"] = { 62.8, 73.6, ZARALEK_CAVERN },
+				}),
+				q(72693, {	-- The Upper Hand
+					["sourceQuests"] = { 75419 },	-- Sundered Flames
+					["provider"] = { "n", 202857 },	-- Scalecommander Emberthal
+					["coord"] = { 63.0, 74.0, ZARALEK_CAVERN },
+					["g"] = {
+						i(204598),	-- Cyclonic Striders
+					},
+				}),
+				q(72694, {	-- Singed
+					["sourceQuests"] = { 72693 },	-- The Upper Hand
+					["provider"] = { "n", 204571 },	-- Scalecommander Emberthal
+					["coord"] = { 63.4, 74.6, ZARALEK_CAVERN },
+				}),
+				q(72694, {	-- Aspects of Our Legacy
+					["sourceQuests"] = { 72694 },	-- Singed
+					["provider"] = { "n", 202670 },	-- Ebyssian
+					["coord"] = { 63.4, 74.7, ZARALEK_CAVERN },
+					["g"] = {
+						i(204601),	-- Cyclonic Kilt
+					},
+				}),
 
-				-- Chapter 3 --
-			q(72966, {	-- Where There's Smoke, There's Fire
-				["sourceQuests"] = { 72694 },	-- Aspects of Our Legacy
-				["provider"] = { "n", 199849 },	-- Sabellian
-				["coord"] = { 56.6, 56.7, ZARALEK_CAVERN },
-			}),
-			q(72908, {	-- Sight Beyond Sight
-				["sourceQuests"] = { 72966 },	-- Where There's Smoke, There's Fire
-				["provider"] = { "n", 200080 },	-- Ebyssian
-				["coord"] = { 40.9, 41.7, ZARALEK_CAVERN },
-				["g"] = {
-					i(204602),	-- Cyclonic Spaulders
-				},
-			}),
-			q(72910, {	-- Know Thy Enemy
-				["sourceQuests"] = { 72908 },	-- Sight Beyond Sight
-				["provider"] = { "n", 199851 },	-- Sabellian
-				["coord"] = { 35.4, 41.9, ZARALEK_CAVERN },
-				["g"] = {
-					i(204459),	-- Dagger of Shifting Stone
-					i(204620),	-- Fist of the Fortune Seeker
-					i(204454),	-- Galerider Mallet
-					i(204630),	-- Squallbreaker Wall
-				},
-			}),
-			q(72909, {	-- Legends of the Zaqali
-				["sourceQuests"] = { 72908 },	-- Sight Beyond Sight
-				["provider"] = { "n", 199852 },	-- Ebyssian
-				["coord"] = { 35.5, 41.8, ZARALEK_CAVERN },
-			}),
-			q(72911, {	-- Take Out The Head
-				["sourceQuests"] = {
-					72910,	-- Know Thy Enemy
-					72909,	-- Legends of the Zaqali
-				},
-				["provider"] = { "n", 199949 },	-- Sabellian
-				["coord"] = { 30.3, 40.9, ZARALEK_CAVERN },
-			}),
-			q(72912, {	-- Consequences
-				["sourceQuests"] = { 72911 },	-- Take Out The Head
-				["provider"] = { "n", 199863 },	-- Ebyssian
-				["coord"] = { 38.2, 48.5, ZARALEK_CAVERN },
-			}),
-			q(72913, {	-- Battlefield Triage
-				["sourceQuests"] = { 72912 },	-- Consequences
-				["provider"] = { "n", 199863 },	-- Ebyssian
-				["coord"] = { 38.2, 48.5, ZARALEK_CAVERN },
-			}),
-			q(72914, {	-- Rushing Quality
-				["sourceQuests"] = { 72912 },	-- Consequences
-				["provider"] = { "n", 201578 },	-- Ebyssian
-				["coord"] = { 37.0, 47.0, ZARALEK_CAVERN },
-				["g"] = {
-					i(204386),	-- Pocket Darkened Elemental Core
-				},
-			}),
-			q(72915, {	-- Alliance of Convenience
-				["sourceQuests"] = { 72914 },	-- Rushing Quality
-				["providers"] = {
-					{ "n", 199950 },	-- Sabellian
-					{ "n", 201647 },	-- Sabellian
-				},
-				["coord"] = { 33.2, 50.8, ZARALEK_CAVERN },
-				["g"] = {
-					i(204616),	-- Cloudburst Wrap
-					i(204618),	-- Cyclonic Drape
-					i(204619),	-- Dust Devil Cloak
-					i(204617),	-- Firestorm Cape
-				},
-			}),
-			q(72916, {	-- Shut Them Down
-				["sourceQuests"] = { 72914 },	-- Rushing Quality
-				["providers"] = {
-					{ "n", 201581 },	-- Ebyssian
-					{ "n", 201646 },	-- Ebyssian
-				},
-				["coord"] = { 33.1, 50.9, ZARALEK_CAVERN },
-			}),
-			q(74494, {	-- A Scale for a Scale
-				["sourceQuests"] = {
-					72915,	-- Alliance of Convenience
-					72916,	-- Shut Them Down
-				},
-				["provider"] = { "n", 201647 },	-- Sabellian
-				["coord"] = { 29.3, 54.6, ZARALEK_CAVERN },
-			}),
-			q(72917, {	-- From Hell's Heart
-				["sourceQuests"] = { 74494 },	-- A Scale for a Scale
-				["provider"] = { "n", 199952 },	-- Sabellian
-				["coord"] = { 29.6, 49.7, ZARALEK_CAVERN },
-				["g"] = {
-					i(204597),	-- Cyclonic Chainmail
-				},
-			}),
-			q(72918, {	-- No Dragon Left Behind
-				["sourceQuests"] = { 72917 },	-- From Hell's Heart
-				["provider"] = { "n", 199877 },	-- Ebyssian
-				["coord"] = { 41.1, 59.9, ZARALEK_CAVERN },
-				["g"] = {
-					i(204388),	-- Draconic Cauterizing Magma
-				},
-			}),
-			q(72919, {	-- Raked Over the Coals
-				["sourceQuests"] = { 72918 },	-- No Dragon Left Behind
-				["provider"] = { "n", 199877 },	-- Ebyssian
-				["coord"] = { 41.1, 59.9, ZARALEK_CAVERN },
-			}),
-			q(72920, {	-- The Endless Burning Sky
-				["sourceQuests"] = { 72919 },	-- Raked Over the Coals
-				["provider"] = { "n", 199958 },	-- Ebyssian
-				["coord"] = { 56.0, 54.3, ZARALEK_CAVERN },
-			}),
-			q(75145, {	-- In the Wake of the Ashes
-				["sourceQuests"] = { 72920 },	-- The Endless Burning Sky
-				["provider"] = { "n", 201784 },	-- Ebyssian
-				["coord"] = { 56.1, 54.5, ZARALEK_CAVERN },
-				["g"] = {
-					i(204584),	-- Cloudburst Hood
-					i(204600),	-- Cyclonic Cowl
-					i(204592),	-- Dust Devil Mask
-					i(204608),	-- Firestorm Greathelm
-					-- Zaralek WQ
-				},
-			}),
-				-- Chapter 4 --
-			q(72987, {	-- Here We Go Again
-				["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
-				["provider"] = { "n", 203965 },	-- Ebyssian
-				["coord"] = { 61.9, 41.2, VALDRAKKEN },
+					-- Chapter 3 --
+				q(72966, {	-- Where There's Smoke, There's Fire
+					["sourceQuests"] = { 72694 },	-- Aspects of Our Legacy
+					["provider"] = { "n", 199849 },	-- Sabellian
+					["coord"] = { 56.6, 56.7, ZARALEK_CAVERN },
+				}),
+				q(72908, {	-- Sight Beyond Sight
+					["sourceQuests"] = { 72966 },	-- Where There's Smoke, There's Fire
+					["provider"] = { "n", 200080 },	-- Ebyssian
+					["coord"] = { 40.9, 41.7, ZARALEK_CAVERN },
+					["g"] = {
+						i(204602),	-- Cyclonic Spaulders
+					},
+				}),
+				q(72910, {	-- Know Thy Enemy
+					["sourceQuests"] = { 72908 },	-- Sight Beyond Sight
+					["provider"] = { "n", 199851 },	-- Sabellian
+					["coord"] = { 35.4, 41.9, ZARALEK_CAVERN },
+					["g"] = {
+						i(204459),	-- Dagger of Shifting Stone
+						i(204620),	-- Fist of the Fortune Seeker
+						i(204454),	-- Galerider Mallet
+						i(204630),	-- Squallbreaker Wall
+					},
+				}),
+				q(72909, {	-- Legends of the Zaqali
+					["sourceQuests"] = { 72908 },	-- Sight Beyond Sight
+					["provider"] = { "n", 199852 },	-- Ebyssian
+					["coord"] = { 35.5, 41.8, ZARALEK_CAVERN },
+				}),
+				q(72911, {	-- Take Out The Head
+					["sourceQuests"] = {
+						72910,	-- Know Thy Enemy
+						72909,	-- Legends of the Zaqali
+					},
+					["provider"] = { "n", 199949 },	-- Sabellian
+					["coord"] = { 30.3, 40.9, ZARALEK_CAVERN },
+				}),
+				q(72912, {	-- Consequences
+					["sourceQuests"] = { 72911 },	-- Take Out The Head
+					["provider"] = { "n", 199863 },	-- Ebyssian
+					["coord"] = { 38.2, 48.5, ZARALEK_CAVERN },
+				}),
+				q(72913, {	-- Battlefield Triage
+					["sourceQuests"] = { 72912 },	-- Consequences
+					["provider"] = { "n", 199863 },	-- Ebyssian
+					["coord"] = { 38.2, 48.5, ZARALEK_CAVERN },
+				}),
+				q(72914, {	-- Rushing Quality
+					["sourceQuests"] = { 72912 },	-- Consequences
+					["provider"] = { "n", 201578 },	-- Ebyssian
+					["coord"] = { 37.0, 47.0, ZARALEK_CAVERN },
+					["g"] = {
+						i(204386),	-- Pocket Darkened Elemental Core
+					},
+				}),
+				q(72915, {	-- Alliance of Convenience
+					["sourceQuests"] = { 72914 },	-- Rushing Quality
+					["providers"] = {
+						{ "n", 199950 },	-- Sabellian
+						{ "n", 201647 },	-- Sabellian
+					},
+					["coord"] = { 33.2, 50.8, ZARALEK_CAVERN },
+					["g"] = {
+						i(204616),	-- Cloudburst Wrap
+						i(204618),	-- Cyclonic Drape
+						i(204619),	-- Dust Devil Cloak
+						i(204617),	-- Firestorm Cape
+					},
+				}),
+				q(72916, {	-- Shut Them Down
+					["sourceQuests"] = { 72914 },	-- Rushing Quality
+					["providers"] = {
+						{ "n", 201581 },	-- Ebyssian
+						{ "n", 201646 },	-- Ebyssian
+					},
+					["coord"] = { 33.1, 50.9, ZARALEK_CAVERN },
+				}),
+				q(74494, {	-- A Scale for a Scale
+					["sourceQuests"] = {
+						72915,	-- Alliance of Convenience
+						72916,	-- Shut Them Down
+					},
+					["provider"] = { "n", 201647 },	-- Sabellian
+					["coord"] = { 29.3, 54.6, ZARALEK_CAVERN },
+				}),
+				q(72917, {	-- From Hell's Heart
+					["sourceQuests"] = { 74494 },	-- A Scale for a Scale
+					["provider"] = { "n", 199952 },	-- Sabellian
+					["coord"] = { 29.6, 49.7, ZARALEK_CAVERN },
+					["g"] = {
+						i(204597),	-- Cyclonic Chainmail
+					},
+				}),
+				q(72918, {	-- No Dragon Left Behind
+					["sourceQuests"] = { 72917 },	-- From Hell's Heart
+					["provider"] = { "n", 199877 },	-- Ebyssian
+					["coord"] = { 41.1, 59.9, ZARALEK_CAVERN },
+					["g"] = {
+						i(204388),	-- Draconic Cauterizing Magma
+					},
+				}),
+				q(72919, {	-- Raked Over the Coals
+					["sourceQuests"] = { 72918 },	-- No Dragon Left Behind
+					["provider"] = { "n", 199877 },	-- Ebyssian
+					["coord"] = { 41.1, 59.9, ZARALEK_CAVERN },
+				}),
+				q(72920, {	-- The Endless Burning Sky
+					["sourceQuests"] = { 72919 },	-- Raked Over the Coals
+					["provider"] = { "n", 199958 },	-- Ebyssian
+					["coord"] = { 56.0, 54.3, ZARALEK_CAVERN },
+				}),
+				q(75145, {	-- In the Wake of the Ashes
+					["sourceQuests"] = { 72920 },	-- The Endless Burning Sky
+					["provider"] = { "n", 201784 },	-- Ebyssian
+					["coord"] = { 56.1, 54.5, ZARALEK_CAVERN },
+					["g"] = {
+						i(204584),	-- Cloudburst Hood
+						i(204600),	-- Cyclonic Cowl
+						i(204592),	-- Dust Devil Mask
+						i(204608),	-- Firestorm Greathelm
+						-- Zaralek WQ
+					},
+				}),
+					-- Chapter 4 --
+				q(72987, {	-- Here We Go Again
+					["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
+					["provider"] = { "n", 203965 },	-- Ebyssian
+					["coord"] = { 61.9, 41.2, VALDRAKKEN },
+				}),
+				q(75367, {	-- The Obsidian Rest
+					["sourceQuests"] = { 72987 },	-- Here We Go Again
+					["provider"] = { "n", 200046 },	-- Ebyssian
+					["coord"] = { 49.9, 27.6, ZARALEK_CAVERN },
+				}),
+				q(74393, {	-- Report: Battlefield Ruins
+					["sourceQuests"] = { 75367 },	-- The Obsidian Rest
+					["provider"] = { "n", 200046 },	-- Ebyssian
+					["coord"] = { 49.9, 27.6, ZARALEK_CAVERN },
+				}),
+				q(74538, {	-- Blow It Up
+					["sourceQuests"] = { 74393 },	-- Report: Battlefield Ruins
+					["provider"] = { "n", 200051 },	-- Field Commander Ignax
+					["coord"] = { 46.7, 29.6, ZARALEK_CAVERN },
+				}),
+				q(74540, {	-- Intercepting Communications
+					["sourceQuests"] = { 74393 },	-- Report: Battlefield Ruins
+					["provider"] = { "n", 200051 },	-- Field Commander Ignax
+					["coord"] = { 46.7, 29.6, ZARALEK_CAVERN },
+				}),
+				q(74539, {	-- Thinning Their Defenses
+					["sourceQuests"] = { 74393 },	-- Report: Battlefield Ruins
+					["provider"] = { "n", 200051 },	-- Field Commander Ignax
+					["coord"] = { 46.7, 29.6, ZARALEK_CAVERN },
+				}),
+				q(74542, {	-- Air Superiority
+					["sourceQuests"] = {
+						74538,	-- Blow It Up
+						74540,	-- Intercepting Communications
+						74539,	-- Thinning Their Defenses
+					},
+					["provider"] = { "n", 200051 },	-- Field Commander Ignax
+					["coord"] = { 46.7, 29.6, ZARALEK_CAVERN },
+					["g"] = {
+						i(204193),	-- Whelpling's Shadowflame Crest
+					},
+				}),
+				q(74557, {	-- Investigating the Unknown
+					["sourceQuests"] = { 74542 },	-- Air Superiority
+					["provider"] = { "n", 202523 },	-- Ebyssian
+					["coord"] = { 53.6, 30.2, ZARALEK_CAVERN },
+				}),
+				q(74562, {	-- Break Them Out
+					["sourceQuests"] = { 74557 },	-- Investigating the Unknown
+					["provider"] = { "n", 202523 },	-- Ebyssian
+					["coord"] = { 53.6, 30.2, ZARALEK_CAVERN },
+					["g"] = {
+						i(203330),	-- Winding Slitherdrake: Swept Horns (DM!)
+					},
+				}),
+				q(74563, {	-- Worst of the Worst
+					["sourceQuests"] = { 74557 },	-- Investigating the Unknown
+					["provider"] = { "n", 202523 },	-- Ebyssian
+					["coord"] = { 53.6, 30.2, ZARALEK_CAVERN },
+					["g"] = {
+						ach(17779),	-- A Serpentine Discovery
+						i(204361),	-- Winding Slitherdrake (MOUNT!)
+					},
+				}),
+					-- Chapter 5 --
+				q(72922, {	-- Fading Embers
+					["sourceQuests"] = {
+						74562,	-- Break Them Out
+						74563,	-- Worst of the Worst
+					},
+					["provider"] = { "n", 202995 },	-- Ebyssian
+					["coord"] = { 53.4, 30.2, ZARALEK_CAVERN },
+				}),
+				q(72923, {	-- A Whisper to Sabellian
+					["sourceQuests"] = { 72922 },	-- Fading Embers
+					["provider"] = { "n", 199965 },	-- Ebyssian
+					["coord"] = { 46.0, 26.6, ZARALEK_CAVERN },
+				}),
+				q(72924, {	-- Appealing to the Black Prince
+					["sourceQuests"] = { 72923 },	-- A Whisper to Sabellian
+					["provider"] = { "n", 199965 },	-- Ebyssian
+					["coord"] = { 46.8, 29.7, ZARALEK_CAVERN },
+				}),
+				q(72925, {	-- With Our Powers Combined
+					["sourceQuests"] = { 72924 },	-- Appealing to the Black Prince
+					["provider"] = { "n", 199965 },	-- Ebyssian
+					["coord"] = { 51.5, 25.8, ZARALEK_CAVERN },
+					["g"] = {
+						i(204447),	-- Ensemble: Black Flight's Vestments
+					},
+				}),
+				q(72931, {	-- Forward Camp
+					["sourceQuests"] = { 72925 },	-- With Our Powers Combined
+					["provider"] = { "n", 199965 },	-- Ebyssian
+					["coord"] = { 47.2, 27.9, ZARALEK_CAVERN },
+				}),
+				q(72926, {	-- In The Right Hands
+					["sourceQuests"] = { 72925 },	-- With Our Powers Combined
+					["provider"] = { "n", 200101 },	-- Wrathion
+					["coord"] = { 47.2, 27.8, ZARALEK_CAVERN },
+				}),
+				q(72928, {	-- Wipe Them Out
+					["sourceQuests"] = { 72925 },	-- With Our Powers Combined
+					["provider"] = { "n", 199973 },	-- Sabellian
+					["coord"] = { 47.1, 27.1, ZARALEK_CAVERN },
+					["g"] = {
+						i(204193),	-- Whelpling's Shadowflame Crest
+					},
+				}),
+				q(72927, {	-- Finding Sarkareth
+					["sourceQuests"] = {
+						72931,	-- Forward Camp
+						72926,	-- In The Right Hands
+						72928,	-- Wipe Them Out
+					},
+					["provider"] = { "n", 199965 },	-- Ebyssian
+					["coord"] = { 44.0, 15.6, ZARALEK_CAVERN },
+				}),
+				q(72929, {	-- Cracking His Shell
+					["sourceQuests"] = { 72927 },	-- Finding Sarkareth
+					["provider"] = { "n", 199964 },	-- Scalecommander Emberthal
+					["coord"] = { 47.4, 15.6, ZARALEK_CAVERN },
+				}),
+				q(72930, {	-- Stopping Sarkareth
+					["sourceQuests"] = { 72929 },	-- Cracking His Shell
+					["provider"] = { "n", 199964 },	-- Scalecommander Emberthal
+					["coord"] = { 47.4, 15.6, ZARALEK_CAVERN },
+					["g"] = {
+						i(204195),	-- Drake's Shadowflame Crest
+					},
+				}),
+					-- Chapter 6 --
+				q(72694, {	-- Aberrus, the Shadowed Crucible: Sarkareth
+					["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
+					["provider"] = { "n", 199965 },	-- Ebyssian
+					["coord"] = { 47.9, 15.0, ZARALEK_CAVERN },
+				}),
 			}),
 
 
@@ -329,7 +471,50 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204717),	-- Splintered Spark of Shadowflame
 				},
 			}),
-				-- 4 --
+
+
+
+
+				-- 6 --
+			q(74787, {	-- Come Snail Away
+				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["provider"] = { "n", 201752 },	-- Briggul
+				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
+				["g"] = {
+					i(203708),	-- Conch Whistle
+				},
+			}),
+			q(74520, {	-- Less Cargo
+				["sourceQuests"] = { 74787 },	-- Come Snail Away
+				["provider"] = { "n", 201752 },	-- Briggul
+				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
+			}),
+			q(74786, {	-- Shimmershell Snail [Need Level 25 Shimmershell Snail Battle Pet]
+				["sourceQuests"] = { 74787 },	-- Come Snail Away
+				["provider"] = { "n", 201752 },	-- Briggul
+				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
+			}),
+			q(74519, {	-- Good for Goo
+				["sourceQuests"] = {
+					74520,	-- Less Cargo
+					74786,	-- Shimmershell Snail
+				},
+				["provider"] = { "n", 201752 },	-- Briggul
+				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
+			}),
+
+				-- 7 --
+			q(75233, {	-- Flesh to Bone
+				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["provider"] = { "n", 203378 },	-- Gorgul
+				["coord"] = { 43.2, 84.1, ZARALEK_CAVERN },
+			}),
+
+
+
+
+
+				-- Incense Questline --
 			q(72878, {	-- Slime Time Live
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 200054 },	-- Elder Honeypelt
@@ -340,8 +525,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "n", 200055 },	-- Citros
 				["coord"] = { 57.3, 55.9, ZARALEK_CAVERN },
 			}),
-				-- Bugged?
-				-- 5 --
+			q(72880, {	-- Smells like Kith Spirit
+				["sourceQuests"] = { 72879 },	-- Smells like Kith Spirit
+				["provider"] = { "n", 200055 },	-- Citros
+				["coord"] = { 56.8, 54.1, ZARALEK_CAVERN },
+				["g"] = {
+					i(205249),	-- Pugent Niffen Incense
+				},
+			}),
+
+
+				-- Imposter Questline --
 			q(72881, {	-- A Swallow's Tale
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 200053 },	-- Effervesta
@@ -365,28 +559,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "n", 200052 },	-- Aurantia
 				["coord"] = { 54.7, 54.7, ZARALEK_CAVERN },
 			}),
-				-- Bugger?
-
-				-- 6 --
-			q(74787, {	-- Come Snail Away
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				["provider"] = { "n", 201752 },	-- Briggul
-				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
+			q(72886, {	-- Suss Out the Imposter
+				["sourceQuests"] = { 72884 },	-- Expedition Effervesta
+				["provider"] = { "n", 200052 },	-- Aurantia
+				["coord"] = { 58.1, 54.2, ZARALEK_CAVERN },
 				["g"] = {
-					i(203708),	-- Conch Whistle
+					i(205250),	-- Gift of the High Redolence
 				},
 			}),
-			q(74520, {	-- Less Cargo
-				["sourceQuests"] = { 74787 },	-- Come Snail Away
-				["provider"] = { "n", 201752 },	-- Briggul
-				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-			}),
-			q(74786, {	-- Shimmershell Snail [Need Level 25 Shimmershell Snail Battle Pet]
-				["sourceQuests"] = { 74787 },	-- Come Snail Away
-				["provider"] = { "n", 201752 },	-- Briggul
-				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-			}),
-				-- 7 --
+
+
+				-- Snail Race Questline (One New Quest Per Week?) --
 			q(75662, {	-- A Race To The Finish
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 201099 },	-- Gorgul
@@ -395,13 +578,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205119),	-- Bashful (PET!)
 				},
 			}),
-				-- 7 --
-			q(75233, {	-- Flesh to Bone
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				["provider"] = { "n", 203378 },	-- Gorgul
-				["coord"] = { 43.2, 84.1, ZARALEK_CAVERN },
+			q(75707, {	-- A Race To The Finish
+				["sourceQuests"] = { 75662 },	-- A Race To The Finish
+				["provider"] = { "n", 201099 },	-- Gorgul
+				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
+				["g"] = {
+					i(205123),	-- Brulee (PET!)
+				},
 			}),
-				-- 8 --
+
+
+				-- Mouse Friend Questline --
 			q(74857, {	-- Mouse Detective
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 202597 },	-- Yarren
@@ -423,7 +610,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 				["coord"] = { 50.4, 76.4, ZARALEK_CAVERN },
 			}),
-				-- 9 -- Chap 3
+			q(74860, {	-- A Friendly Introduction
+				["sourceQuests"] = {
+					74858,	-- Argulculture
+					74859,	-- Sporemoth Exterminator
+				},
+				["provider"] = { "n", 202600 },	-- Agrul
+				["coord"] = { 50.4, 76.4, ZARALEK_CAVERN },
+			}),
+			q(74861, {	-- An Unfriendly Confrontation
+				["sourceQuests"] = { 74860 },	-- A Friendly Introduction
+				["provider"] = { "n", 202587 },	-- Yarren
+				["coord"] = { 51.0, 74.1, ZARALEK_CAVERN },
+			}),
+			q(74862, {	-- Mouse Rescuers
+				["sourceQuests"] = { 74861 },	-- An Unfriendly Confrontation
+				["provider"] = { "n", 202600 },	-- Agrul
+				["coord"] = { 46.9, 79.6, ZARALEK_CAVERN },
+				["g"] = {
+					i(205253),	-- Farmhand's Abudant Harvest
+				},
+			}),
+
+
+				-- Dragonscale Expedition Side Questline --
 			q(73037, {	-- Healing Crystals
 				["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 				["provider"] = { "n", 200291 },	-- Rupert, the Gentleman Elemental
@@ -479,6 +689,63 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "n", 200953 },	-- Earthmender Narvra
 				["coord"] = { 40.1, 68.3, ZARALEK_CAVERN },
 			}),
+			q(73043, {	-- A Ghastly Legacy
+				["sourceQuests"] = { 73042 },	-- A Tower Yonder
+				["provider"] = { "n", 200298 },	-- Veritistrasz
+				["coord"] = { 48.9, 45.5, ZARALEK_CAVERN },
+			}),
+			q(73044, {	-- Cataloging Horror
+				["sourceQuests"] = { 73042 },	-- A Tower Yonder
+				["provider"] = { "n", 200290 },	-- Voraxian
+				["coord"] = { 48.9, 45.4, ZARALEK_CAVERN },
+				["g"] = {
+					i(204698),	-- Cataloging Camera
+				},
+			}),
+			q(73039, {	-- Restless Death
+				["sourceQuests"] = { 73042 },	-- A Tower Yonder
+				["provider"] = { "n", 200953 },	-- Earthmender Narvra
+				["coord"] = { 48.9, 45.5, ZARALEK_CAVERN },
+			}),
+			q(73045, {	-- Stain Removal
+				["sourceQuests"] = {
+					73043,	-- A Ghastly Legacy
+					73044,	-- Cataloging Horror
+					73039,	-- Restless Death
+				},
+				["provider"] = { "n", 200953 },	-- Earthmender Narvra
+				["coord"] = { 48.3, 32.8, ZARALEK_CAVERN },
+				["g"] = {
+					i(205254),	-- Honoary Explorer's Compass
+				},
+			}),
+
+			n(BONUS_OBJECTIVES, sharedData({ ["repeatable"] = true }, {
+				q(75455, {	-- Conspiracy of Flames
+					["coord"] = { 32.1, 42.7, ZARALEK_CAVERN },
+				}),
+				q(75451, {	-- Imperfect Balance
+					["coord"] = { 36.3, 52.2, ZARALEK_CAVERN },
+				}),
+				q(75454, {	-- Mortar Warfare
+					["coord"] = { 39.8, 43.7, ZARALEK_CAVERN },
+				}),
+				q(75450, {	-- Seismic Ceremony
+					["coord"] = { 34.1, 47.1, ZARALEK_CAVERN },
+				}),
+				q(75222, {	-- Shellfire
+					["coord"] = { 58.1, 49.5, ZARALEK_CAVERN },
+				}),
+				q(75370, {	-- Smellincense
+					["coord"] = { 60.8, 55.5, ZARALEK_CAVERN },
+				}),
+				q(75441, {	-- Smelly Scramble
+					["coord"] = { 57.6, 57.1, ZARALEK_CAVERN },
+				}),
+				q(75156, {	-- Stress Express
+					["coord"] = { 64.5, 51.4, ZARALEK_CAVERN },
+				}),
+			})),
 		}),
 	}),
 })));

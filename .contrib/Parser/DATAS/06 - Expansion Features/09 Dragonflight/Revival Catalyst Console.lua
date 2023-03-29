@@ -559,6 +559,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						currency(2166),	-- Revival Catalyst Account-Wide Currency
 					},
 				}),
+				q(75497, {	-- The Catalyst's Boon
+					["provider"] = { "n", 196499 },	-- Therazal
+					["coord"] = { 50.2, 55.8, VALDRAKKEN },
+					["timeline"] = { ADDED_10_1_0 },
+				}),
 			}),
 		},
 	}),

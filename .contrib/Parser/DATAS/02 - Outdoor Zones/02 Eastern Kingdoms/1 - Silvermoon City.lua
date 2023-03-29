@@ -486,6 +486,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16683, {	-- Darlia <Poison Supplies>
 					["coord"] = { 80.4, 51.0, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
 					["groups"] = {
 						i(24285, {	-- Crepuscular Powder
 							["cost"] = { { "g", 1500000 } },	-- 150g
@@ -587,6 +590,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["groups"] = QUELIS_GROUPS,
 				}),
+				n(16678, {	-- Rahein <Blade Vendor>
+					["coord"] = { 52.6, 64.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 2520 },	-- broadsword
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2526 },	-- main-gauche
+						{"select", "itemID", 2534 },	-- rondel
+						{"select", "itemID", 2529 },	-- zweihander
+					},
+				}),
 				n(16442, {	-- Vinemaster Suntouched <Wine & Spirits Merchant>
 					["coord"] = { 79.5, 58.5, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
@@ -610,6 +626,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23811, {	-- Schematic: White Smoke Flare
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(16637, {	-- Welethelon 
+					["coord"] = { 56.2, 60.2, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 2532 },    -- Morning Star
+						{"select", "itemID", 2524 },    -- Truncheon
+						{"select", "itemID", 2525 },    -- War Hammer
+						{"select", "itemID", 2533 },    -- War Maul
+						{"select", "itemID", 2535 },    -- War Staff
 					},
 				}),
 				n(16611, {	-- Zalle <Reagents>

@@ -504,13 +504,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(15809),	-- Heavy Crossbow	-- sold by many vendors
 				i(15807),	-- Light Crossbow	-- sold by many vendors
 			}),
-			filter(DAGGERS, {
-				i(2209),	-- Kris	-- sold by many vendors
-				i(2526),	-- Main Gauche	-- sold by many vendors
-				i(2208),	-- Poniard	-- sold by many vendors
-				i(2534),	-- Rondel	-- sold by many vendors
-				i(4565),	-- Simple Dagger	-- sold by many vendors
-			}),
 			filter(PROF_EQUIP, {	-- Fishing Poles
 				i(6366),	-- Darkwood Fishing Pole	-- fished up in many zones
 				i(6365),	-- Strong Fishing Pole	-- sold by many vendors
@@ -555,9 +548,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(2524),	-- Truncheon	-- sold by many vendors
 			}),
 			filter(TWO_HANDED_MACES, {
-				i(924),		-- Maul	-- sold by many vendors
-				i(2026),	-- Rock Hammer	-- sold by many vendors
-				i(2525),	-- War Hammer	-- sold by many vendors
 				i(2533),	-- War Maul	-- sold by many vendors
 			}),
 			filter(MISC, {
@@ -601,18 +591,11 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(2535),	-- War Staff	-- sold by many vendors
 			}),
 			filter(ONE_HANDED_SWORDS, {
-				i(2520),	-- Broadsword	-- sold by many vendors
 				i(30749),	-- Draenic Sparring Blade	-- sold by many vendors
-				i(2528),	-- Falchion	-- sold by many vendors
 				i(923),		-- Longsword	-- sold by many vendors
-				i(2027),	-- Scimitar	-- sold by many vendors
 			}),
 			filter(TWO_HANDED_SWORDS, {
-				i(922),		-- Dacian Falx	-- sold by many vendors
 				i(30750),	-- Draenic Warblade	-- sold by many vendors
-				i(2024),	-- Espadon	-- sold by many vendors
-				i(2521),	-- Flamberge	-- sold by many vendors
-				i(2529),	-- Zweihander	-- sold by many vendors
 			}),
 			filter(WANDS, {
 				i(5239),	-- Blackbone Wand	-- sold by many vendors
@@ -625,28 +608,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(5208),	-- Smoldering Wand	-- sold by many vendors
 			}),
 			---
-			i(2131),	-- Shortsword
-			i(1194),	-- Bastard Sword
-			i(2134),	-- Hand Axe
-			i(2479),	-- Broad Axe
-			i(2130),	-- Club
-			i(2480),	-- Large Club
-			i(2139),	-- Dirk
-			i(2132),	-- Short Staff
-			i(2489),	-- Two-Handed Sword
-			i(2492),	-- Cudgel
-			i(2491),	-- Large Axe
-			i(2494),	-- Stiletto
-			i(2495),	-- Walking Stick
-			i(2488),	-- Gladius
-			i(2490),	-- Tomahawk
-			i(2493),	-- Wooden Mallet
-			i(851),		-- Cutlass
-			i(1198),	-- Claymore
-			i(853),		-- Hatchet
-			i(1196),	-- Tabar
-			i(852),		-- Mace
-			i(1197),	-- Giant Mace
 			i(2207),	-- Jambiya
 			i(854),		-- Quarter Staff
 		}),

@@ -189,7 +189,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			q(67007, {	-- Archival Assistance
 				["provider"] = { "o", 381687 },	-- Discarded Note
 				["coord"] = { 47.8, 46.6, VALDRAKKEN },
-				["isBreadcrumb"] = true,
 			}),
 			q(72585, {	-- Open Orientation
 				["provider"] = { "n", 196499 },	-- Therazal
@@ -228,6 +227,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["cost"] = { { "i", 190455, 10 } },	-- 10x Concentrated Primal Focus
 				["repeatable"] = true,
 				["timeline"] = { ADDED_10_0_7 },
+			}),
+
+			-- New Questline?
+			q(72411, {	-- Cause Without a Rebel
+				-- ["sourceQuests"] = {  },	--
+				["provider"] = { "n", 189842 },	-- Captain Drine
+				["coord"] = { 56.5, 40.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 },
 			}),
 		}),
 		n(QUESTS, sharedData({

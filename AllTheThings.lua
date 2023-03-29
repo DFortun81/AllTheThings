@@ -13221,6 +13221,8 @@ local function GetAutomaticHeaderData(id, type)
 		end
 	end
 end
+-- Allows for directly accessing the Automatic Header Name logic for a specific ID/Type combination
+app.GetAutomaticHeaderData = GetAutomaticHeaderData;
 local cache = app.CreateCache("headerCode");
 local function CacheInfo(t, field)
 	local type = t.type;
@@ -13299,8 +13301,6 @@ app.BaseAutomaticHeader = app.BaseObjectFields(fields, "BaseAutomaticHeader");
 app.CreateHeader = function(id, t)
 	return setmetatable(constructor(id, t, "headerID"), app.BaseAutomaticHeader);
 end
--- Allows for directly accessing the Automatic Header Name logic for a specific ID/Type combination
-app.GetAutomaticHeaderData = GetAutomaticHeaderData;
 app.CreateNPC = function(id, t)
 	if t then
 		-- TEMP: clean MoH tagging from random Vendors

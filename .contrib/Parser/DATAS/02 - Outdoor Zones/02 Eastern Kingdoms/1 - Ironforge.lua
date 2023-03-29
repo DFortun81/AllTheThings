@@ -1289,6 +1289,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(VENDORS, {
+				n(5152, {	-- Bingus 
+					["coord"] = { 23.2, 17.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 2532 },    -- Morning Star
+						{"select", "itemID", 2524 },    -- Truncheon
+						{"select", "itemID", 2525 },    -- War Hammer
+						{"select", "itemID", 2533 },    -- War Maul
+						{"select", "itemID", 2535 },    -- War Staff
+					},
+				}),
 				n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
 					["coord"] = { 40.2, 33.4, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -1299,6 +1311,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18731, {	-- Pattern: Heavy Leather Ball
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(5120, {	-- Brenwyn Wintersteel
+					["coord"] = { 61.8, 88.8, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2529 },	-- zweihander
 					},
 				}),
 				n(5163, {	-- Burbik Gearspanner <Trade Supplies>
@@ -1335,6 +1369,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(64898, {	-- Shroud of Ironforge
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
+					},
+				}),
+				n(5102, {	-- Dolman Steelfury
+					["coord"] = { 36.6, 66.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2492 },	-- Cudgel
+						{"select", "itemID", 2493 },	-- Wooden Mallet
+					},
+					["groups"] = {
+						i(1194),	-- Bastard Sword
+						i(2479),	-- Broad Axe
+						i(2130),	-- Club
+						i(2139),	-- Dirk
+						i(2488),	-- Gladius
+						i(2134),	-- Hand Axe
+						i(2491),	-- Large Axe
+						i(2480),	-- Large Club
+						i(2132),	-- Short Staff
+						i(2131),	-- Shortsword
+						i(2494),	-- Stiletto
+						i(2490),	-- Tomahawk
+						i(2489),	-- Two-Handed Sword
+						i(2495),	-- Walking Stick
 					},
 				}),
 				n(5160, {	-- Emrul Riknussun <Cooking Supplier>
@@ -1374,6 +1432,79 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 							-- #endif
 						}),
+					},
+				}),
+				n(5103, {	-- Grenil Steelfury
+					["coord"] = { 36.4, 66.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 1198 },    -- Claymore
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 851 },    -- Cutlass
+						{"select", "itemID", 2024 },    -- Espadon
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 2207 },    -- Jambiya
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 2208 },    -- Poniard
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
+						{"select", "itemID", 2027 },    -- Scimitar
+						{"select", "itemID", 1196 },    -- Tabar
+					},
+				}),
+				n(5119, {	-- Hegnar Swiftaxe
+					["coord"] = { 61.8, 88.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 2522 },    -- Crescent Axe
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 2530 },    -- Francisca
+						{"select", "itemID", 2531 },    -- Great Axe
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 1196 },    -- Tabar
+					},
+				}),
+				n(5170, {	-- Hjoldir Stoneblade
+					["coord"] = { 45.8, 7.0, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 2520 },	-- broadsword
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2521 },	-- flamberge
+						{"select", "itemID", 2526 },	-- gauche
+						{"select", "itemID", 2534 },	-- rondel
+						{"select", "itemID", 2529 },	-- zweihander
+					},
+				}),
+				n(5121, {	-- Kelomir Ironhand
+					["coord"] = { 61.4, 88.4, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 925 },    -- Flail
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 924 },    -- Maul
+						{"select", "itemID", 2532 },    -- Morning Star
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
+						{"select", "itemID", 2524 },    -- Truncheon
+						{"select", "itemID", 2525 },    -- War Hammer
+						{"select", "itemID", 2533 },    -- War Maul
+						{"select", "itemID", 2535 },    -- War Staff
 					},
 				}),
 				-- #if AFTER 6.1.0
@@ -1669,6 +1800,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					},
+				}),
+				n(5169, {	-- Tynnus Venomsprout 
+					["coord"] = { 52.8, 13.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
 					},
 				}),
 			}),

@@ -660,3 +660,9 @@ i(203473);	-- Geyser Flower
 i(204235);	-- Kaldorei Fruitcake
 i(204816);	-- Mysterious Almanac
 i(204812);	-- Seared Book
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+-- Quest Items --
+i(203442);	-- Snail Slime

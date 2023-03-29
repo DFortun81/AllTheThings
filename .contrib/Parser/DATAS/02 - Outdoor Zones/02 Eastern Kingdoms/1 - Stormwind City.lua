@@ -6225,6 +6225,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(23349, {	-- Battleworn Shoes
 							["timeline"] = { ADDED_10_0_5 }
 						}),
+						i(23472, {	-- Rugged Trapper's Boots
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(23471, {	-- Rugged Trapper's Pants
+							["timeline"] = { ADDED_10_0_5 }
+						}),
 						i(6118, {	-- Squire's Pants
 							["timeline"] = { ADDED_10_0_5 }
 						}),
@@ -6713,9 +6719,73 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.2, 57.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(2521),	-- Flamberge
 						i(73210, {	-- Trainee's Sword
 							["timeline"] = { ADDED_10_0_7 },
 						}),
+						i(2525),	-- War Hammer
+						i(2529),	-- Zweihander
+					},
+				}),
+				n(1348, {	-- Gregory Ardus
+					["coord"] = { 48.2, 54.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 1197 },	-- Giant Mace
+						{"select", "itemID", 2030 },	-- Gnarled Staff
+						{"select", "itemID", 852 },	-- Mace
+						{"select", "itemID", 924 },	-- Maul
+						{"select", "itemID", 854 },	-- Quarter Staff
+						{"select", "itemID", 2026 },	-- Rock Hammer
+					},
+					["groups"] = {
+						i(2492),	-- Cudgel
+						i(925),	-- Flail
+						i(2028),	-- Hammer
+						i(928),	-- Long Staff
+						i(2493),	-- Wooden Mallet
+					},
+				}),
+				n(1289, {	-- Gunther Weller <Weapons Merchant>
+					["coord"] = { 64.0, 68.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+					-- added all
+						i(926),		-- battle axe
+						i(2025),	-- bearded axe
+						i(1198),	-- claymore
+						i(2029),	-- cleaver
+						i(851),		-- cutlass
+						i(922),		-- dacian falx
+						i(927),		-- double axe
+						i(2024),	-- espadon
+						i(925),		-- flail
+						i(1197),	-- giant mace
+						i(2030),	-- gnarled staff
+						i(2028),	-- hammer	
+						i(853),		-- hatchet
+						i(15811),	-- heavy spear
+						i(2207),	-- jambiya
+						i(2209),	-- kris
+						i(923),		-- longsword
+						i(928),		-- long staff
+						i(852),		-- mace
+						i(924),		-- maul
+						i(2208),	-- poniard
+						i(854),		-- quarter staff
+						i(2027),	-- scimitar
+						i(2026),	-- rock hammer
+						i(15810),	-- short spear
+					},
+				}),
+				n(1324, {	-- Heinrich Stone
+					["coord"] = { 77.0, 57.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2520),	-- Broadsword
+						i(2528),	-- falchion
+						i(2526),	-- Main Gauche
+						i(2534),	-- Rondel
 					},
 				}),
 				n(110034, {	-- Historian Llore <The Timewalkers>
@@ -6737,6 +6807,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["sym"] = {{ "sub", "common_recipes_vendor", 50482 }}, -- Marith Lazuria <Jewelcrafting Supplies>
 					["races"] = ALLIANCE_ONLY,
+				}),
+				n(1325, {	-- Jasper Fel
+					["coord"] = { 80.6, 61.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
 				}),
 				n(1318, {	-- Jessara Cordell <Enchanting Supplies>
 					-- #if AFTER WRATH
@@ -7207,6 +7284,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(1287, {	-- Marda Weller <Weapons Merchant>
+					["coord"] = { 64.0, 68.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 926 },		-- battle axe
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 851 },		-- cutlass
+						{"select", "itemID", 922 },		-- dacian falx
+						{"select", "itemID", 927 },		-- double axe
+						{"select", "itemID", 2024 },	-- espadon
+						{"select", "itemID", 925 },		-- flail
+						{"select", "itemID", 15808 },	-- fine light crossbow
+						{"select", "itemID", 2030 },	-- gnarled staff
+						{"select", "itemID", 1197 },	-- giant mace
+						{"select", "itemID", 853 },		-- hatchet
+						{"select", "itemID", 15809 },	-- heavy crossbow
+						{"select", "itemID", 2207 },	-- jambiya
+						{"select", "itemID", 2209 },	-- kris
+						{"select", "itemID", 928 },		-- long staff
+						{"select", "itemID", 852 },		-- mace
+						{"select", "itemID", 924 },		-- maul
+						{"select", "itemID", 2208 },	-- poniard
+						{"select", "itemID", 854 },		-- quarter staff
+						{"select", "itemID", 2026 },	-- rock hammer
+						{"select", "itemID", 2027 },	-- scimitar
+					},
+				}),
 				n(12781, {	-- Master Sergeant Biggins <Accessories Quartermaster> [WRATH+] / Master Sergeant Biggins <Officer Accessories Quartermaster>
 					-- #if BEFORE TBC
 					["description"] = "Found within the Champion's Hall.",
@@ -7253,6 +7360,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 3.0.1.8634" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(4565),	-- Simple Dagger
 						i(38579, {	-- Venomous Tome
 							["timeline"] = { "created 2.4.2", "added 3.0.1.8634" },
 							["isLimited"] = true,
@@ -7645,6 +7753,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(1326, {	-- Sloan McCoy
+					["coord"] = { 81.2, 62.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
+				}),
 				n(30730, {	-- Stanly McCormick
 					["coord"] = { 49.6, 74.8, STORMWIND_CITY },
 					["timeline"] = { "added 3.0.2.8905" },
