@@ -94,24 +94,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 76.6, 38.6, THE_FORBIDDEN_REACH },
 			}),
 			--
-			q(73694, {	-- Stuck in Stasis
-				["sourceQuests"] = {
-					75050,	-- An Eclectic Accord
-					74769,	-- Stemming the Irontide
-					73157,	--  Wings of Mercy
-				},
-				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
-				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
-			}),
-			q(73178, {	-- Hands Off Our Booty!
-				["sourceQuests"] = {
-					75050,	-- An Eclectic Accord
-					74769,	-- Stemming the Irontide
-					73157,	--  Wings of Mercy
-				},
-				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
-				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
-			}),
 			q(74359, {	-- Plunder Siege
 				["sourceQuests"] = {
 					75050,	-- An Eclectic Accord
@@ -120,15 +102,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 				["provider"] = { "n", 200010 },	-- Atrenosh Hailstone
 				["coord"] = { 34.7, 57.6, THE_FORBIDDEN_REACH },
-			}),
-			q(73191, {	-- Snake Wrangling
-				["sourceQuests"] = {
-					75050,	-- An Eclectic Accord
-					74769,	-- Stemming the Irontide
-					73157,	--  Wings of Mercy
-				},
-				["provider"] = { "n", 201291 },	-- Cataloger Coralie
-				["coord"] = { 34.4, 59.3, THE_FORBIDDEN_REACH },
 			}),
 			q(74379, {	-- Still Within Reach
 				["sourceQuests"] = {
@@ -180,8 +153,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "i", 204251 },	-- Sending Stone: Protest [H]
 				["races"] = HORDE_ONLY,
 			}),
-			--
-			-- Not confirmed --
 			-- Envoy
 			-- Dragonscale
 			q(74908, {	-- New Adventures
@@ -254,7 +225,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(BONUS_OBJECTIVES, sharedData({ ["isDaily"] = true }, {
 				q(74331, {	-- Agni Blazehoof
 					["provider"] = { "n", 200740 },	-- Agni Blazehoof
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 56.0, 39.6, THE_FORBIDDEN_REACH },
 				}),
 				q(74333, {	-- Amephyst
 					["provider"] = { "n", 200743 },	-- Amephyst
@@ -262,7 +233,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 				q(74328, {	-- Arcantrix
 					["provider"] = { "n", 200737 },	-- Arcantrix
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 49.2, 41.8, THE_FORBIDDEN_REACH },
 				}),
 				q(74341, {	-- Bonesifter Marwak
 					["provider"] = { "n", 200681 },	-- Bonesifter Marwak
@@ -274,11 +245,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 				q(74322, {	-- Faunos
 					["provider"] = { "n", 200725 },	-- Faunos <Lord of Fleece>
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 45.0, 36.6, THE_FORBIDDEN_REACH },
 				}),
 				q(74330, {	-- Fimbol
 					["provider"] = { "n", 200739 },	-- Fimbol
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 61.2, 26.8, THE_FORBIDDEN_REACH },
 				}),
 				q(74337, {	-- Gahz'raxes
 					["provider"] = { "n", 200537 },	-- Gahz'raxes
@@ -290,7 +261,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 				q(74321, {	-- Gareed
 					["provider"] = { "n", 200722 },	-- Gareed
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 31.2, 53.6, THE_FORBIDDEN_REACH },
 				}),
 				q(74343, {	-- Grugoth the Hullcrusher <Scource of the Coast>
 					["provider"] = { "n", 200721 },	-- Grugoth the Hullcrusher <Scource of the Coast>
@@ -302,7 +273,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 				q(74329, {	-- Kangalo
 					["provider"] = { "n", 200738 },	-- Kangalo
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 56.6, 59.0, THE_FORBIDDEN_REACH },
 				}),
 				q(74344, {	-- Lady Shaz'ra
 					["provider"] = { "n", 200885 },	-- Lady Shaz'ra
@@ -322,7 +293,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 				q(74306, {	-- Manathema
 					["provider"] = { "n", 200621 },	-- Manathema
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 55.4, 36.4, THE_FORBIDDEN_REACH },
 				}),
 				q(74349, {	-- Ookbeard
 					["provider"] = { "n", 200956 },	-- Ookbeard <Irontide "Captain">
@@ -338,19 +309,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 				q(74305, {	-- Sir Pinchalot
 					["provider"] = { "n", 200620 },	-- Sir Pinchalot
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 23.6, 66.4, THE_FORBIDDEN_REACH },
 				}),
 				q(74307, {	-- Snarfang
 					["provider"] = { "n", 200622 },	-- Snarfang
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 37.0, 47.0, THE_FORBIDDEN_REACH },
 				}),
 				q(74300, {	-- Tectonus
 					["provider"] = { "n", 200619 },	-- Tectonus
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 43.2, 49.6, THE_FORBIDDEN_REACH },
 				}),
 				q(74325, {	-- Tidesmith Zarviss
 					["provider"] = { "n", 200730 },	-- Tidesmith Zarviss
-					-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+					["coord"] = { 80.0, 59.0, THE_FORBIDDEN_REACH },
 				}),
 				q(74345, {	-- Veltrax
 					["provider"] = { "n", 200904 },	-- Veltrax
@@ -374,62 +345,66 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 			})),
 		}),
-		n(QUESTS, sharedData({ ["isWeekly"] = true }, {
-			q(73142, {	-- Busting Blues
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
-				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
-				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
-			}),
-			q(73715, {	-- Driftwood Derby
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
-				["provider"] = { "n", 200558 },	-- Tukkaraq
-				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
-			}),
-			q(73179, {	-- Soupocalypse Now!
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
-				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
-				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
-			}),
-			-- Not Confirmed --
+		n(QUESTS, sharedData({ ["isWeekly"] = true, ["sourceQuests"] = { 74381 } }, {
 			q(75025, {	-- A Good Day for Rolling
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 201291 },	-- Cataloger Coralie
 				["coord"] = { 34.4, 59.3, THE_FORBIDDEN_REACH },
 			}),
+			q(73142, {	-- Busting Blues
+				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
+				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+			}),
 			q(73189, {	-- Creche Cache
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 200727 },	-- Volethi
 				["coord"] = { 32.4, 52.9, THE_FORBIDDEN_REACH },
 			}),
 			q(73139, {	-- Deep Sea Supplies
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["provider"] = { "n", 200558 },	-- Tukkaraq
+				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
+			}),
+			q(73715, {	-- Driftwood Derby
 				["provider"] = { "n", 200558 },	-- Tukkaraq
 				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
 			}),
 			q(73141, {	-- Everburning Embers
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 200558 },	-- Tukkaraq
 				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
 			}),
+			q(73178, {	-- Hands Off Our Booty!
+				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
+				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
+			}),
+			q(73191, {	-- Snake Wrangling
+				["provider"] = { "n", 201291 },	-- Cataloger Coralie
+				["coord"] = { 34.4, 59.3, THE_FORBIDDEN_REACH },
+			}),
+			q(73179, {	-- Soupocalypse Now!
+				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
+				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+			}),
 			q(73140, {	-- Sunder the Crater
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
 				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
 			}),
 			q(75024, {	-- Sneaky Pebbles
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 200727 },	-- Volethi
 				["coord"] = { 32.4, 52.9, THE_FORBIDDEN_REACH },
 			}),
+			q(73694, {	-- Stuck in Stasis
+				["provider"] = { "n", 199201 },	-- Scalecommander Viridia
+				["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+			}),
 			q(73398, {	-- Too Far Forward
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
 				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
 			}),
 			q(73190, {	-- Toxic Infestation
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
 				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+			}),
+			q(75026, {	-- Up to the Highest Height!
+				["provider"] = { "n", 200558 },	-- Tukkaraq
+				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
 			}),
 		})),
 	}),
