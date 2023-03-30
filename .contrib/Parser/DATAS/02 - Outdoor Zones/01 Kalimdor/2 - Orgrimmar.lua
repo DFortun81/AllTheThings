@@ -6068,9 +6068,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3330, {	-- Muragus  
 					["coord"] = { 46.0, 57.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 2527 },    -- Battle Staff
-						{"select", "itemID", 2535 },    -- War Staff
+					["groups"] = {
+						i(2527),	-- Battle Staff
+						i(2535),	-- War Staff
 					},
 				}),
 				n(46512, {	-- Naros <Plate Armor Merchant>
@@ -7061,20 +7061,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(850),   -- Chainmail Gloves
 						i(848),   -- Chainmail Pants
 						i(2451),    -- Crested Heater Shield
-						i(6226),    -- Grunts Chain Belt
-						i(6226),    -- Grunts Chain Boots
-						i(6226),    -- Grunts Chain Bracers
-						i(6226),    -- Grunts Chain Circlet
-						i(6226),    -- Grunts Chain Gloves
-						i(6226), 	  -- Grunts Chain Leggings
-						i(6226),    -- Grunts Chain Vest
-						i(6225),    -- Grunts Plate Armor
-						i(6225),    -- Grunts Plate Belt
-						i(6225),    -- Grunts Plate Boots
-						i(6225),    -- Grunts Plate Bracers
-						i(6225),    -- Grunts Plate Gloves
-						i(6225),    -- Grunts Plate Helm
-						i(6225),    -- Grunts Plate Leggings
+						i(62260),    -- Grunts Chain Belt
+						i(62261),    -- Grunts Chain Boots
+						i(62262),    -- Grunts Chain Bracers
+						i(62266),    -- Grunts Chain Circlet
+						i(62263),    -- Grunts Chain Gloves
+						i(62264), 	  -- Grunts Chain Leggings
+						i(62265),    -- Grunts Chain Vest
+						i(62253),    -- Grunts Plate Armor
+						i(62255),    -- Grunts Plate Belt
+						i(62255),    -- Grunts Plate Boots
+						i(62256),    -- Grunts Plate Bracers
+						i(62257),    -- Grunts Plate Gloves
+						i(62259),    -- Grunts Plate Helm
+						i(62258),    -- Grunts Plate Leggings
 						i(2448),    -- Heavy Pavise
 						i(2446),    -- Kite Shield
 						i(2392),    -- Light Mail Armor
@@ -7083,21 +7083,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2396),    -- Light Mail Bracers
 						i(2397),    -- Light Mail Gloves
 						i(2394),    -- Light Mail Leggings
-						i(1718),    -- Metal Buckler
-						i(1719),    -- Ornate Buckler
+						i(17189),    -- Metal Buckler
+						i(17190),    -- Ornate Buckler
 						i(2148),    -- Polished Scale Belt
 						i(2149),    -- Polished Scale Boots
 						i(2150),    -- Polished Scale Bracers
 						i(2151),    -- Polished Scale Gloves
 						i(2152),    -- Polished Scale Leggings
 						i(2153),    -- Polished Scale Vest
-						i(1719),    -- Reinforced Targe
+						i(17192),    -- Reinforced Targe
 						i(1853),    -- Scalemail Belt
-						i(287 ),   -- Scalemail Boots
+						i(287),   -- Scalemail Boots
 						i(1852),    -- Scalemail Bracers
-						i(718 ),   -- Scalemail Gloves
-						i(286 ),   -- Scalemail Pants
-						i(285 ),   -- Scalemail Vest
+						i(718),   -- Scalemail Gloves
+						i(286),   -- Scalemail Pants
+						i(285),   -- Scalemail Vest
 					},
 				}),
 				-- #endif

@@ -648,6 +648,8 @@ i(5956);	-- Blacksmith Hammer
 i(85663);	-- Herbalist's Spade
 i(2901);	-- Mining Pick
 i(7005);	-- Skinning Knife
+-- White Items
+i(16967);	-- Feralas Ahi
 
 ------------------
 -- PATCH 10.0.7 --

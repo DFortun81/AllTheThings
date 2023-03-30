@@ -5998,8 +5998,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2451),    -- Crested Heater Shield
 						i(2448),    -- Heavy Pavise
 						i(2446),    -- Kite Shield
-						i(1718),    -- Metal Buckler
-						i(1719),    -- Ornate Buckler
+						i(17189),    -- Metal Buckler
+						i(17190),    -- Ornate Buckler
 						i(8094),    -- Platemail Armor
 						i(8088),    -- Platemail Belt
 						i(8089),    -- Platemail Boots
@@ -6013,7 +6013,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2151),    -- Polished Scale Gloves
 						i(2152),    -- Polished Scale Leggings
 						i(2153),    -- Polished Scale Vest
-						i(1719),    -- Reinforced Targe
+						i(17192),    -- Reinforced Targe
 
 						-- Now any class and race can buy this
 						-- PALADIN --
@@ -6931,6 +6931,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2027),	-- scimitar
 						i(2026),	-- rock hammer
 						i(15810),	-- short spear
+						i(1196),	-- Tabar
 					},
 				}),
 				n(1324, {	-- Heinrich Stone
