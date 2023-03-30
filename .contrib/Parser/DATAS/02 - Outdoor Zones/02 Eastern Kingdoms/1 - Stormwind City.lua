@@ -5729,11 +5729,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
-						-- Now any class and race can buy this
-						-- HUNTER --
+						i(847),    -- Chainmail Armor
+						i(1845),    -- Chainmail Belt
+						i(849),    -- Chainmail Boots
+						i(1846),    -- Chainmail Bracers
+						i(850),    -- Chainmail Gloves
+						i(848),    -- Chainmail Pants
+						i(2392),    -- Light Mail Armor
+						i(2393),    -- Light Mail Belt
+						i(2395),    -- Light Mail Boots
+						i(2396),    -- Light Mail Bracers
+						i(2397),    -- Light Mail Gloves
+						i(2394),    -- Light Mail Leggings
 						i(129),	-- Rugged Trapper's Boots
 						i(147),	-- Rugged Trapper's Pants
 						i(58232),	-- Rugged Trapper's Vest
+						i(1853),    -- Scalemail Belt
+						i(287),    -- Scalemail Boots
+						i(1852),    -- Scalemail Bracers
+						i(718),    -- Scalemail Gloves
+						i(286),    -- Scalemail Pants
+						i(285),    -- Scalemail Vest
 						i(23348),	-- Scout's Boots
 						i(23344),	-- Scout's Pants
 						i(58240),	-- Scout's Vest
@@ -6108,11 +6124,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 2451 },    -- Crested Heater Shield
 						{"select", "itemID", 2448 },    -- Heavy Pavise
 						{"select", "itemID", 2446 },    -- Kite Shield
-						{"select", "itemID", 2445 },    -- Large Metal Shield
 						{"select", "itemID", 17189 },    -- Metal Buckler
 						{"select", "itemID", 17190 },    -- Ornate Buckler
 						{"select", "itemID", 17192 },    -- Reinforced Targe
-						{"select", "itemID", 17188 },    -- Ringed Buckler
+					},
+					["groups"] = {
+						i(2445),	-- Large Metal Shield
+						i(17188),	-- Ringed Buckler
 					},
 				}),
 				n(69975, {	-- Captain Dirgehammer <Cataclysmic Gladiator>
@@ -8027,6 +8045,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.3.0.14890" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = TIER_ELEVEN_GROUPS,
+				}),
+				n(1341, {	-- Wilhelm Strang
+					["coord"] = { 77.4, 61.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2148 },    -- Polished Scale Belt
+						{"select", "itemID", 2149 },    -- Polished Scale Boots
+						{"select", "itemID", 2150 },    -- Polished Scale Bracers
+						{"select", "itemID", 2151 },    -- Polished Scale Gloves
+						{"select", "itemID", 2152 },    -- Polished Scale Leggings
+						{"select", "itemID", 2153 },    -- Polished Scale Vest
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 285 },    -- Scalemail Vest
+					},
 				}),
 			}),
 		},

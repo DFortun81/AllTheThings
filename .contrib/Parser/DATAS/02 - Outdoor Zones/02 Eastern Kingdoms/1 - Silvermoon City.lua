@@ -578,6 +578,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				n(16625, {	-- Keeli  
+					["coord"] = { 61.2, 86.4, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 2398 },    -- Light Chain Armor
+						{"select", "itemID", 2399 },    -- Light Chain Belt
+						{"select", "itemID", 2401 },    -- Light Chain Boots
+						{"select", "itemID", 2402 },    -- Light Chain Bracers
+						{"select", "itemID", 2403 },    -- Light Chain Gloves
+						{"select", "itemID", 2400 },    -- Light Chain Leggings
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 285 },    -- Scalemail Vest
+					},
+				}),
 				--[[ Crieve has to approve but these the tabards should have timelines
 				n(16610, {	-- Kredis <Tabard Vendor>
 					["coord"] = { 78.6, 84.6, SILVERMOON_CITY },
@@ -679,6 +703,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						i(2532),	-- Morning Star
 						i(2524),	-- Truncheon
+					},
+				}),
+				n(16693, {	-- Winthren  
+					["coord"] = { 60.6, 86.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 17187 },    -- Banded Buckler
+						{"select", "itemID", 2446 },    -- Kite Shield
+						{"select", "itemID", 2445 },    -- Large Metal Shield
+						{"select", "itemID", 2398 },    -- Light Chain Armor
+						{"select", "itemID", 2399 },    -- Light Chain Belt
+						{"select", "itemID", 2401 },    -- Light Chain Boots
+						{"select", "itemID", 2402 },    -- Light Chain Bracers
+						{"select", "itemID", 2403 },    -- Light Chain Gloves
+						{"select", "itemID", 2400 },    -- Light Chain Leggings
+						{"select", "itemID", 17192 },    -- Reinforced Targe
+						{"select", "itemID", 17188 },    -- Ringed Buckler
+						{"select", "itemID", 17185 },    -- Round Buckler
+						{"select", "itemID", 1202 },    -- Wall Shield
+						{"select", "itemID", 2376 },    -- Worn Heater Shield
+					},
+					["groups"] = {
+						i(17183),	-- Dented Buckler
+						i(1200),	-- Large Wooden Shield
 					},
 				}),
 				n(16782, {	-- Yatheon <Engineering Supplies>

@@ -351,57 +351,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 			}),
 			filter(MAIL, {	-- Common Vendor Items
 				---
-				i(847),		-- Chainmail Armor
-				i(1845),	-- Chainmail Belt
-				i(848),		-- Chainmail Pants
-				i(849),		-- Chainmail Boots
-				i(1846),	-- Chainmail Bracers
-				i(850),		-- Chainmail Gloves
-				---
-				i(62260),	-- Grunt's Chain Belt
-				i(62261),	-- Grunt's Chain Boots
-				i(62262),	-- Grunt's Chain Bracers
-				i(62266),	-- Grunt's Chain Circlet
-				i(62263),	-- Grunt's Chain Gloves
-				i(62264),	-- Grunt's Chain Leggings
-				i(62265),	-- Grunt's Chain Vest
-				---
-				i(2398),	-- Light Chain Armor
-				i(2399),	-- Light Chain Belt
-				i(2400),	-- Light Chain Leggings
-				i(2401),	-- Light Chain Boots
-				i(2402),	-- Light Chain Bracers
-				i(2403),	-- Light Chain Gloves
-				---
-				i(2392),	-- Light Mail Armor
-				i(2393),	-- Light Mail Belt
-				i(2395),	-- Light Mail Boots
-				i(2396),	-- Light Mail Bracers
-				i(2397),	-- Light Mail Gloves
-				i(2394),	-- Light Mail Leggings
-				---
 				i(30781),	-- Mag'hari Chain Vest
-				---
-				i(2387),	-- Rusted Chain Belt
-				i(2390),	-- Rusted Chain Bracers
-				i(2389),	-- Rusted Chain Boots
-				i(2391),	-- Rusted Chain Gloves
-				i(2388),	-- Rusted Chain Leggings
-				i(2386),	-- Rusted Chain Vest
-				---
-				i(1853),	-- Scalemail Belt
-				i(287),		-- Scalemail Boots
-				i(1852),	-- Scalemail Bracers
-				i(718),		-- Scalemail Gloves
-				i(286),		-- Scalemail Pants
-				i(285),		-- Scalemail Vest
-				---
-				i(2380),	-- Tarnished Chain Belt
-				i(2384),	-- Tarnished Chain Bracers
-				i(2383),	-- Tarnished Chain Boots
-				i(2385),	-- Tarnished Chain Gloves
-				i(2381),	-- Tarnished Chain Leggings
-				i(2379),	-- Tarnished Chain Vest
 				---
 				i(30784),	-- Worn Mag'hari Gauntlets
 				---
@@ -409,14 +359,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 			filter(PLATE, {	-- Common Vendor Items
 				---
 				i(30777),	-- Aldor Heavy Belt
-				---
-				i(62253),	-- Grunt's Plate Armor
-				i(62254),	-- Grunt's Plate Belt
-				i(62255),	-- Grunt's Plate Boots
-				i(62256),	-- Grunt's Plate Bracers
-				i(62257),	-- Grunt's Plate Gloves
-				i(62259),	-- Grunt's Plate Helm
-				i(62258),	-- Grunt's Plate Leggings
 				---
 				i(30771),	-- Heavy Draenic Bracers
 				i(30765),	-- Heavy Draenic Breastplate
@@ -440,25 +382,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 		}),
 		n(WEAPONS, {
 			filter(SHIELDS, {
-				i(17183),	-- Dented Buckler	-- sold by many vendors
-				i(1201),	-- Dull Heater Shield	-- sold by many vendors
-				i(2448),	-- Heavy Pavise	-- sold by many vendors
-				i(2446),	-- Kite Shield	-- sold by many vendors
-				i(2129),	-- Large Round Shield	-- sold by many vendors
-				i(1200),	-- Large Wooden Shield	-- sold by many vendors
 				i(30775),	-- Layered Bone Shield	-- sold by many vendors
-				i(17189),	-- Metal Buckler	-- sold by many vendors
-				i(17190),	-- Ornate Buckler	-- sold by many vendors
-				i(17192),	-- Reinforced Targe	-- sold by many vendors
-				i(17184),	-- Small Shield	-- sold by many vendors
-				i(17186),	-- Small Targe	-- sold by many vendors
-				---
-				i(17185),	-- Round Buckler
-				i(2376),	-- Worn Heater Shield
-				i(17187),	-- Banded Buckler
-				i(1202),	-- Wall Shield
-				i(17188),	-- Ringed Buckler
-				i(2445),	-- Large Metal Shield
 			}),
 		}),
 	}),

@@ -783,6 +783,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(8360, {	-- Elki 
+					["coord"] = { 45.2, 56.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 17187 },    -- Banded Buckler
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 2445 },    -- Large Metal Shield
+						{"select", "itemID", 17188 },    -- Ringed Buckler
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 285 },    -- Scalemail Vest
+						{"select", "itemID", 1202 },    -- Wall Shield
+					},
+				}),
 				n(3020, {	-- Etu Ragetotem
 					["coord"] = { 58.2, 52.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,

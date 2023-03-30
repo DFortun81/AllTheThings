@@ -954,13 +954,57 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 2448 },    -- Heavy Pavise
 						{"select", "itemID", 2446 },    -- Kite Shield
 						{"select", "itemID", 2445 },    -- Large Metal Shield
-						{"select", "itemID", 2129 },    -- Large Round Shield
 						{"select", "itemID", 17189 },    -- Metal Buckler
 						{"select", "itemID", 17190 },    -- Ornate Buckler
 						{"select", "itemID", 17192 },    -- Reinforced Targe
 						{"select", "itemID", 17188 },    -- Ringed Buckler
-						{"select", "itemID", 17184 },    -- Small Shield
 						{"select", "itemID", 17186 },    -- Small Targe
+					},
+					["groups"] = {
+						i(2129),	-- Large Round Shield
+						i(17184),	-- Small Shield
+					},
+				}),
+				n(4164, {	-- Cylania      
+					["coord"] = { 56.8, 53.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+						{"select", "itemID", 3602 },    -- Knitted Belt
+						{"select", "itemID", 3603 },    -- Knitted Bracers
+						{"select", "itemID", 793 },    -- Knitted Gloves
+						{"select", "itemID", 794 },    -- Knitted Pants
+						{"select", "itemID", 792 },    -- Knitted Sandals
+						{"select", "itemID", 795 },    -- Knitted Tunic
+						{"select", "itemID", 2392 },    -- Light Mail Armor
+						{"select", "itemID", 2393 },    -- Light Mail Belt
+						{"select", "itemID", 2395 },    -- Light Mail Boots
+						{"select", "itemID", 2396 },    -- Light Mail Bracers
+						{"select", "itemID", 2397 },    -- Light Mail Gloves
+						{"select", "itemID", 2394 },    -- Light Mail Leggings
+						{"select", "itemID", 1839 },    -- Rough Leather Belt
+						{"select", "itemID", 796 },    -- Rough Leather Boots
+						{"select", "itemID", 1840 },    -- Rough Leather Bracers
+						{"select", "itemID", 797 },    -- Rough Leather Gloves
+						{"select", "itemID", 798 },    -- Rough Leather Pants
+						{"select", "itemID", 799 },    -- Rough Leather Vest
+						{"select", "itemID", 1843 },    -- Tanned Leather Belt
+						{"select", "itemID", 843 },    -- Tanned Leather Boots
+						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
+						{"select", "itemID", 844 },    -- Tanned Leather Gloves
+						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
+						{"select", "itemID", 845 },    -- Tanned Leather Pants
 					},
 				}),
 				n(4168, {	-- Elynna <Tailoring Supplies>
@@ -1218,12 +1262,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 718 },    -- Scalemail Gloves
 						{"select", "itemID", 286 },    -- Scalemail Pants
 						{"select", "itemID", 285 },    -- Scalemail Vest
-						{"select", "itemID", 2380 },    -- Tarnished Chain Belt
-						{"select", "itemID", 2383 },    -- Tarnished Chain Boots
-						{"select", "itemID", 2384 },    -- Tarnished Chain Bracers
-						{"select", "itemID", 2385 },    -- Tarnished Chain Gloves
-						{"select", "itemID", 2381 },    -- Tarnished Chain Leggings
-						{"select", "itemID", 2379 },    -- Tarnished Chain Vest
+					},
+					["groups"] = {
+						i(2380),    -- Tarnished Chain Belt
+						i(2383),    -- Tarnished Chain Boots
+						i(2384),    -- Tarnished Chain Bracers
+						i(2385),    -- Tarnished Chain Gloves
+						i(2381),    -- Tarnished Chain Leggings
+						i(2379),    -- Tarnished Chain Vest
 					},
 				}),
 				n(4171, {	-- Merelyssa

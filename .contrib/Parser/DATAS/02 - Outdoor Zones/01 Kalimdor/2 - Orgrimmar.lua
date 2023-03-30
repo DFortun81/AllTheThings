@@ -6379,7 +6379,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3319, {	-- Sana <Mail Armor Merchant>
 					["coord"] = { 45.6, 77.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 2445 },    -- Large Metal Shield
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 285 },    -- Scalemail Vest
+					},
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
+						i(17187),	-- Banded Buckler
+						i(2445),	-- Large Metal Shield
+						i(2398),    -- Light Chain Armor
+						i(2399),    -- Light Chain Belt
+						i(2401),    -- Light Chain Boots
+						i(2402),    -- Light Chain Bracers
+						i(2403),    -- Light Chain Gloves
+						i(2400),    -- Light Chain Leggings
+						i(17185),	-- Round Buckler
+						i(17188),	-- Ringed Buckler
+						i(1202),	-- Wall Shield
+						i(2376),	-- Worn Heater Shield
 						-- Now any class and race can buy this
 						-- HUNTER --
 						i(129),	-- Rugged Trapper's Boots

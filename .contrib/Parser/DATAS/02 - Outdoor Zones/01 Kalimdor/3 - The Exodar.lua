@@ -490,6 +490,22 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(29744),	-- Gray Elekk (MOUNT!)
 					},
 				}),
+				n(16762, {	-- Treall 
+					["coord"] = { 68.2, 96.2, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 17187 },    -- Banded Buckler
+						{"select", "itemID", 1201 },    -- Dull Heater Shield
+						{"select", "itemID", 2446 },    -- Kite Shield
+						{"select", "itemID", 2445 },    -- Large Metal Shield
+						{"select", "itemID", 2129 },    -- Large Round Shield
+						{"select", "itemID", 17192 },    -- Reinforced Targe
+						{"select", "itemID", 17188 },    -- Ringed Buckler
+						{"select", "itemID", 17184 },    -- Small Shield
+						{"select", "itemID", 17186 },    -- Small Targe
+						{"select", "itemID", 1202 },    -- Wall Shield
+					},
+				}),
 				n(16714, {	-- Ven
 					["coord"] = { 69.8, 89.4, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
@@ -514,6 +530,30 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						{"select", "itemID", 2534 },	-- Rondel
 						{"select", "itemID", 2027 },	-- Scimitar
 						{"select", "itemID", 1196 },	-- Tabar
+					},
+				}),
+				n(16750, {	-- Yil 
+					["coord"] = { 67.6, 94.6, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 2392 },    -- Light Mail Armor
+						{"select", "itemID", 2393 },    -- Light Mail Belt
+						{"select", "itemID", 2395 },    -- Light Mail Boots
+						{"select", "itemID", 2396 },    -- Light Mail Bracers
+						{"select", "itemID", 2397 },    -- Light Mail Gloves
+						{"select", "itemID", 2394 },    -- Light Mail Leggings
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 285 },    -- Scalemail Vest
 					},
 				}),
 			}),

@@ -1779,6 +1779,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 2535 },    -- War Staff
 					},
 				}),
+				n(4559, {	-- Timothy Weldon  
+					["coord"] = { 63.6, 39.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 17187 },    -- Banded Buckler
+						{"select", "itemID", 17183 },    -- Dented Buckler
+						{"select", "itemID", 1200 },    -- Large Wooden Shield
+						{"select", "itemID", 2398 },    -- Light Chain Armor
+						{"select", "itemID", 2399 },    -- Light Chain Belt
+						{"select", "itemID", 2401 },    -- Light Chain Boots
+						{"select", "itemID", 2402 },    -- Light Chain Bracers
+						{"select", "itemID", 2403 },    -- Light Chain Gloves
+						{"select", "itemID", 2400 },    -- Light Chain Leggings
+						{"select", "itemID", 17185 },    -- Round Buckler
+						{"select", "itemID", 1202 },    -- Wall Shield
+						{"select", "itemID", 2376 },    -- Worn Heater Shield
+					},
+					["groups"] = {
+						i(2387),    -- Rusted Chain Belt
+						i(2389),    -- Rusted Chain Boots
+						i(2390),    -- Rusted Chain Bracers
+						i(2391),    -- Rusted Chain Gloves
+						i(2388),    -- Rusted Chain Leggings
+						i(2386),    -- Rusted Chain Vest
+					},
+				}),
 				n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
 					["sym"] = { {"sub", "common_recipes_vendor", 3346 } }, -- Kithas <Enchanting Supplies>
 					["coord"] = { 62.0, 60.8, UNDERCITY },
@@ -1793,6 +1819,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					},
+				}),
+				n(4560, {	-- Walter Ellingson
+					["coord"] = { 62.8, 39.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 17187 },    -- Banded Buckler
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 1202 },    -- Wall Shield
 					},
 				}),
 				n(5754, {	-- Zane Bradford

@@ -1344,6 +1344,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 2510 },    -- Solid Blunderbuss
 					},
 				}),
+				n(5106, {	-- Bromiir Ormsen
+					["coord"] = { 32.6, 58.2, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2392 },    -- Light Mail Armor
+						{"select", "itemID", 2393 },    -- Light Mail Belt
+						{"select", "itemID", 2395 },    -- Light Mail Boots
+						{"select", "itemID", 2396 },    -- Light Mail Bracers
+						{"select", "itemID", 2397 },    -- Light Mail Gloves
+						{"select", "itemID", 2394 },    -- Light Mail Leggings
+					},
+					["groups"] = {
+						i(1201),	-- Dull Heater Shield
+						i(17186),	-- Small Targe
+					},
+				}),
 				n(5163, {	-- Burbik Gearspanner <Trade Supplies>
 					["coord"] = { 46.6, 27.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -1378,6 +1394,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(64898, {	-- Shroud of Ironforge
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
+					},
+				}),
+				n(5125, {	-- Dolkin Craghelm
+					["coord"] = { 54.8, 88.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2419 },    -- Augmented Chain Belt
+						{"select", "itemID", 2420 },    -- Augmented Chain Boots
+						{"select", "itemID", 2421 },    -- Augmented Chain Bracers
+						{"select", "itemID", 2422 },    -- Augmented Chain Gloves
+						{"select", "itemID", 3891 },    -- Augmented Chain Helm
+						{"select", "itemID", 2418 },    -- Augmented Chain Leggings
+						{"select", "itemID", 2417 },    -- Augmented Chain Vest
+						{"select", "itemID", 2448 },    -- Heavy Pavise
+						{"select", "itemID", 17189 },    -- Metal Buckler
+						{"select", "itemID", 2148 },    -- Polished Scale Belt
+						{"select", "itemID", 2149 },    -- Polished Scale Boots
+						{"select", "itemID", 2150 },    -- Polished Scale Bracers
+						{"select", "itemID", 2151 },    -- Polished Scale Gloves
+						{"select", "itemID", 2152 },    -- Polished Scale Leggings
+						{"select", "itemID", 2153 },    -- Polished Scale Vest
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 285 },    -- Scalemail Vest
 					},
 				}),
 				n(5102, {	-- Dolman Steelfury
@@ -1723,6 +1766,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(64897, {	-- Shroud of Gnomeregan
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
+					},
+				}),
+				n(5107, {	-- Mangorn Flinthammer
+					["coord"] = { 32.0, 58.8, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+					},
+					["groups"] = {
+						i(17187),	-- Banded Buckler
+						i(1202),	-- Wall Shield
 					},
 				}),
 				n(5126, {	-- Olthran Craghelm   
