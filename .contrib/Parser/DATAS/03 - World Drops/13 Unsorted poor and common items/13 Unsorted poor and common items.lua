@@ -479,9 +479,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(2507),	-- Laminated Recurve Bow	-- sold by many vendors
 				i(30759),	-- Mag'hari Light Recurve	-- sold by many vendors
 				i(2505),	-- Polished Shortbow	-- sold by many vendors
-				i(12449),	-- Primitive Bow	-- where is this from?
 				i(3026),	-- Reinforced Bow	-- sold by many vendors
-				i(12447),	-- Thistlewood Bow	-- where is this from?
 			}),
 			filter(CROSSBOWS, {
 				i(30757),	-- Draenic Light Crossbow	-- sold by many vendors

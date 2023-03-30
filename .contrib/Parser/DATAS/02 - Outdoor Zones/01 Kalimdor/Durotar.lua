@@ -1483,6 +1483,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								objective(1, {	-- 0/12 Vile Familiar
 									["provider"] = { "n", 3101 },	-- Vile Familiar
 								}),
+								i(12449, {	-- Primitive Bow
+									["timeline"] = { "removed 1.0.7" },
+								}),
 								i(4924, {	-- Primitive Club
 									["timeline"] = { "removed 4.0.3" },
 								}),
