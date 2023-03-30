@@ -280,6 +280,21 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				n(16715, {	-- Avelii  
+					["coord"] = { 48.6, 90.2, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 15808 },    -- Fine Light Crossbow
+						{"select", "itemID", 15809 },    -- Heavy Crossbow
+						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
+						{"select", "itemID", 2506 },    -- Hornwood Recurve Bow
+						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
+						{"select", "itemID", 15807 },    -- Light Crossbow
+						{"select", "itemID", 2505 },    -- Polished Shortbow
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+						{"select", "itemID", 2504 },    -- Worn Shortbow
+					},
+				}),
 				n(16722, {	-- Egomis <Enchanting Supplies>
 					["coord"] = { 39.9, 40.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
@@ -391,6 +406,20 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(21896),	-- Pattern: Netherweave Robe
 						i(21897),	-- Pattern: Netherweave Tunic
+					},
+				}),
+				n(16632, {	-- Oss
+					["coord"] = { 46.8, 60.4, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 5239 },    -- Blackbone Wand
+						{"select", "itemID", 5210 },    -- Burning Wand
+						{"select", "itemID", 5236 },    -- Combustible Wand
+						{"select", "itemID", 5211 },    -- Dusk Wand
+						{"select", "itemID", 5209 },    -- Gloom Wand
+						{"select", "itemID", 5347 },    -- Pestilent Wand
+						{"select", "itemID", 5238 },    -- Pitchwood Wand
+						{"select", "itemID", 5208 },    -- Smoldering Wand
 					},
 				}),
 				n(16718, {	-- Phea <Cooking Supplies>

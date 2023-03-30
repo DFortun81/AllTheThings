@@ -2283,7 +2283,6 @@ root(ROOTS.Zones, {
 					n(19047, {	-- Lissaf
 						["coord"] = { 51.8, 17.8, SHATTRATH_CITY },
 						["sym"] = {
-						-- added all
 							{"select", "itemID", 15905 },	-- Brass Knuckles
 							{"select", "itemID", 2520 },	-- Broadsword
 							{"select", "itemID", 15904 },	-- Deadly fist blades
@@ -2293,6 +2292,17 @@ root(ROOTS.Zones, {
 							{"select", "itemID", 2534 },	-- Rondel
 							{"select", "itemID", 15903 },	-- slicing claw
 							{"select", "itemID", 2529 },	-- zweihander
+						},
+						["groups"] = {
+							i(15906, {	-- Left-Handed Brass Knuckles
+								["timeline"] = { "removed 6.0.2" },
+							}),
+							i(15909, {	-- Left-Handed Blades
+								["timeline"] = { "removed 6.0.2" },
+							}),
+							i(15907, {	-- Left-Handed Claw
+								["timeline"] = { "removed 6.0.2" },
+							}),
 						},
 					}),
 					-- #if AFTER CATA
@@ -2661,6 +2671,19 @@ root(ROOTS.Zones, {
 							i(31780),	-- Scryers Tabard
 							i(29133),	-- Seer's Cane
 							i(29126),	-- Seer's Signet
+						},
+					}),
+					n(19236, {	-- Quelama Lightblade
+						["coord"] = { 44.6, 76.0, SHATTRATH_CITY },
+						["sym"] = {
+							{"select", "itemID", 5239 },    -- Blackbone Wand
+							{"select", "itemID", 5210 },    -- Burning Wand
+							{"select", "itemID", 5236 },    -- Combustible Wand
+							{"select", "itemID", 5211 },    -- Dusk Wand
+							{"select", "itemID", 5209 },    -- Gloom Wand
+							{"select", "itemID", 5347 },    -- Pestilent Wand
+							{"select", "itemID", 5238 },    -- Pitchwood Wand
+							{"select", "itemID", 5208 },    -- Smoldering Wand
 						},
 					}),
 					n(20807, {	-- Scribe Saalyn <Aldor Inscriptions>

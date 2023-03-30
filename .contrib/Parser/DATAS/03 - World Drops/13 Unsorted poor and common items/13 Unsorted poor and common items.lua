@@ -473,31 +473,9 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 			}),
 		}),
 		n(WEAPONS, {
-			filter(BOWS, {
-				i(3027),	-- Heavy Recurve Bow	-- sold by many vendors
-				i(2506),	-- Hornwood Recurve Bow	-- sold by many vendors
-				i(2507),	-- Laminated Recurve Bow	-- sold by many vendors
-				i(30759),	-- Mag'hari Light Recurve	-- sold by many vendors
-				i(2505),	-- Polished Shortbow	-- sold by many vendors
-				i(3026),	-- Reinforced Bow	-- sold by many vendors
-			}),
-			filter(CROSSBOWS, {
-				i(30757),	-- Draenic Light Crossbow	-- sold by many vendors
-				i(15808),	-- Fine Light Crossbow	-- sold by many vendors
-				i(15809),	-- Heavy Crossbow	-- sold by many vendors
-				i(15807),	-- Light Crossbow	-- sold by many vendors
-			}),
 			filter(PROF_EQUIP, {	-- Fishing Poles
 				i(6366),	-- Darkwood Fishing Pole	-- fished up in many zones
 				i(6365),	-- Strong Fishing Pole	-- sold by many vendors
-			}),
-			filter(FIST_WEAPONS, {
-				i(15905),	-- Brass Knuckles	-- sold by many vendors
-				i(15904),	-- Deadly Fist Blades	-- sold by many vendors
-				i(15909),	-- Left-Handed Blades	-- where is this from?
-				i(15906),	-- Left-Handed Brass Knuckles	-- where is this from?
-				i(15907),	-- Left-Handed Claw	-- where is this from?
-				i(15903),	-- Slicing Claw	-- sold by many vendors
 			}),
 			filter(GUNS, {
 				i(30758),	-- Aldor Guardian Rifle	-- sold by many vendors
@@ -549,16 +527,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(1202),	-- Wall Shield
 				i(17188),	-- Ringed Buckler
 				i(2445),	-- Large Metal Shield
-			}),
-			filter(WANDS, {
-				i(5239),	-- Blackbone Wand	-- sold by many vendors
-				i(5210),	-- Burning Wand	-- sold by many vendors
-				i(5236),	-- Combustible Wand	-- sold by many vendors
-				i(5211),	-- Dusk Wand	-- sold by many vendors
-				i(5209),	-- Gloom Wand	-- sold by many vendors
-				i(5347),	-- Pestilent Wand	-- sold by many vendors
-				i(5238),	-- Pitchwood Wand	-- sold by many vendors
-				i(5208),	-- Smoldering Wand	-- sold by many vendors
 			}),
 		}),
 	}),

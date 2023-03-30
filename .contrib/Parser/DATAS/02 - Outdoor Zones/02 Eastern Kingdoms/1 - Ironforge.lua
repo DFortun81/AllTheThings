@@ -1455,6 +1455,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 1196 },    -- Tabar
 					},
 				}),
+				n(5133, {	-- Harick Boulderdrum
+					["coord"] = { 22.8, 16.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 5239 },    -- Blackbone Wand
+						{"select", "itemID", 5210 },    -- Burning Wand
+						{"select", "itemID", 5236 },    -- Combustible Wand
+						{"select", "itemID", 5211 },    -- Dusk Wand
+						{"select", "itemID", 5209 },    -- Gloom Wand
+						{"select", "itemID", 5347 },    -- Pestilent Wand
+						{"select", "itemID", 5238 },    -- Pitchwood Wand
+						{"select", "itemID", 5208 },    -- Smoldering Wand
+					},
+				}),
 				n(5119, {	-- Hegnar Swiftaxe
 					["coord"] = { 61.8, 88.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -1741,6 +1755,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5122, {	-- Skolmin Goldfury <Bow Merchant>
 					["coord"] = { 71.6, 66.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },	-- Heavy Recurve Bow
+						{"select", "itemID", 3026 },	-- Reinforced Bow
+					},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,
@@ -1773,6 +1791,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(17062),	-- Recipe: Mithril Head Trout
 						i(6369),	-- Recipe: Rockscale Cod
 						i(6326),	-- Recipe: Slitherskin Mackerel
+					},
+				}),
+				n(7976, {	-- Thalgus Thunderfist
+					["coord"] = { 61.8, 90.0, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 15905 },    -- Brass Knuckles
+						{"select", "itemID", 15904 },    -- Deadly Fist Blades
+						{"select", "itemID", 15808 },    -- Fine Light Crossbow
+						{"select", "itemID", 15809 },    -- Heavy Crossbow
+						{"select", "itemID", 2511 },    -- Hunters Boomstick
+						{"select", "itemID", 15807 },    -- Light Crossbow
+						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
+					},
+					["groups"] = {
+						i(15904),	-- Deadly Fist Blades
+						i(15906, {	-- Left-Handed Brass Knuckles
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15909, {	-- Left-Handed Blades
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15907, {	-- Left-Handed Claw
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15903),	-- Slicing Claw
 					},
 				}),
 				n(4259, {	-- Thurgrum Deepforge <Blacksmithing Supplies>

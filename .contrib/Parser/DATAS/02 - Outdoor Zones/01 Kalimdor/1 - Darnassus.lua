@@ -920,6 +920,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 15903 },	-- slicing claw
 						{"select", "itemID", 1196 },	-- tabar
 					},
+					["groups"] = {
+						i(15906, {	-- Left-Handed Brass Knuckles
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15909, {	-- Left-Handed Blades
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15907, {	-- Left-Handed Claw
+							["timeline"] = { "removed 6.0.2" },
+						}),
+					},
 				}),
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["coord"] = { 48.2, 21.8, DARNASSUS },
@@ -1013,7 +1024,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 61.0, 63.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-					-- added all
 						{"select", "itemID", 1194 },	-- bastard sword
 						{"select", "itemID", 2025 },	-- bearded axe
 						{"select", "itemID", 2479 },	-- broad axe
@@ -1061,6 +1071,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 63.3, 66.3, DARNASSUS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },	-- Heavy Recurve Bow
+						{"select", "itemID", 3026 },	-- Reinforced Bow
+					},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,

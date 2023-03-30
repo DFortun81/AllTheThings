@@ -878,6 +878,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
 					["coord"] = { 46.8, 45.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+					},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,

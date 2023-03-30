@@ -5954,6 +5954,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				n(1315, {	-- Allan Hafgan
 					["coord"] = { 49.6, 49.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(2527),	-- Battle Staff
 						i(2535),	-- War Staff
@@ -5987,6 +5988,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if AFTER 8.0.1
+				n(1312, {	-- Ardwyn Cailen
+					["coord"] = { 52.8, 75.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(5239),    -- Blackbone Wand
+						i(5210),    -- Burning Wand
+						i(5236),    -- Combustible Wand
+						i(5211),    -- Dusk Wand
+						i(5209),    -- Gloom Wand
+						i(5347),    -- Pestilent Wand
+						i(5238),    -- Pitchwood Wand
+						i(5208),    -- Smoldering Wand
+					},
+				}),
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 52.4, 8.2, STORMWIND_CITY },
@@ -6710,6 +6725,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 50.3, 57.7, STORMWIND_CITY },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+					},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,
@@ -7243,6 +7262,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 					},
 				}),
+				n(1297, {	-- Lina Stover
+					["coord"] = { 58.6, 68.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(3024),    -- Bkp 2700 Enforcer
+						i(3027),    -- Heavy Recurve Bow
+						i(2506),    -- Hornwood Recurve Bow
+						i(2511),    -- Hunters Boomstick
+						i(2507),    -- Laminated Recurve Bow
+						i(3023),    -- Large Bore Blunderbuss
+						i(2509),    -- Ornate Blunderbuss
+						i(2505),    -- Polished Shortbow
+						i(3026),    -- Reinforced Bow
+						i(2504),    -- Worn Shortbow
+					},
+				}),
 				n(1299, {	-- Lisbeth Schneider <Clothier>
 					-- #if AFTER WRATH
 					["coord"] = { 58.2, 67.6, STORMWIND_CITY },
@@ -7320,11 +7355,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 927 },		-- double axe
 						{"select", "itemID", 2024 },	-- espadon
 						{"select", "itemID", 925 },		-- flail
-						{"select", "itemID", 15808 },	-- fine light crossbow
 						{"select", "itemID", 2030 },	-- gnarled staff
 						{"select", "itemID", 1197 },	-- giant mace
 						{"select", "itemID", 853 },		-- hatchet
-						{"select", "itemID", 15809 },	-- heavy crossbow
 						{"select", "itemID", 2207 },	-- jambiya
 						{"select", "itemID", 2209 },	-- kris
 						{"select", "itemID", 928 },		-- long staff
@@ -7334,6 +7367,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 854 },		-- quarter staff
 						{"select", "itemID", 2026 },	-- rock hammer
 						{"select", "itemID", 2027 },	-- scimitar
+					},
+					["groups"] = {
+						i(15808),	-- Fine Light Crossbow
+						i(15809),	-- Heavy Crossbow
+						i(15807),	-- Light Crossbow
 					},
 				}),
 				n(12781, {	-- Master Sergeant Biggins <Accessories Quartermaster> [WRATH+] / Master Sergeant Biggins <Officer Accessories Quartermaster>

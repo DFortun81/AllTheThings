@@ -1780,6 +1780,15 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					n(19021, {	-- Nancila 
+						["coord"] = { 55.2, 70.6, NAGRAND },
+						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{"select", "itemID", 30758 },    -- Aldor Guardian Rifle
+							{"select", "itemID", 30757 },    -- Draenic Light Crossbow
+							{"select", "itemID", 30759 },    -- Maghari Light Recurve
+						},
+					}),
 					n(20097, {	-- Nula the Butcher <Cooking Supplies>
 						["coord"] = { 58.0, 35.6, NAGRAND },
 						["races"] = HORDE_ONLY,

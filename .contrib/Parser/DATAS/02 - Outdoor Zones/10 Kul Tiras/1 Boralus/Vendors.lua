@@ -18,8 +18,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 50.6, 49.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["sym"] = {
-				-- all done
-					{"select", "itemID", 15905 },	-- brass knucles
 					{"select", "itemID", 2130 },	-- club
 					{"select", "itemID", 851 },		-- Cutlass
 					{"select", "itemID", 2139 },	-- dirk
@@ -29,6 +27,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					{"select", "itemID", 852 },		-- mace
 					{"select", "itemID", 2027 },	-- Scimitar
 					{"select", "itemID", 2131 },	-- shortsword
+				},
+				["g"] = {
+					i(15905),	-- Brass Knuckles
 				},
 			}),
 			n(142165, {	-- Arwin Blakemore <Thrift Goods>

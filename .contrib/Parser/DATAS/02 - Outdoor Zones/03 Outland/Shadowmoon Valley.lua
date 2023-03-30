@@ -2089,6 +2089,15 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					n(19339, {	-- Korthul 
+						["coord"] = { 30.0, 31.0, SHADOWMOON_VALLEY },
+						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{"select", "itemID", 30758 },	-- Aldor Guardian Rifle
+							{"select", "itemID", 30757 },	-- Draenic Light Crossbow
+							{"select", "itemID", 30759 },	-- Mag'hari Light Recurve
+						},
+					}),
 					n(19342, {	-- Krek Cragcrush <Blacksmithing Supplies>
 						["coord"] = { 29.2, 31.0, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,

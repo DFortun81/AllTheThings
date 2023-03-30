@@ -1228,6 +1228,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4604, {	-- Abigail Sawyer <Bow Merchant>
 					["coord"] = { 54.8, 38.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+					},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,
@@ -1256,18 +1260,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 58.6, 32.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 15808 },    -- Fine Light Crossbow
 						{"select", "itemID", 925 },    -- Flail
 						{"select", "itemID", 1197 },    -- Giant Mace
 						{"select", "itemID", 2030 },    -- Gnarled Staff
 						{"select", "itemID", 2028 },    -- Hammer
-						{"select", "itemID", 15809 },    -- Heavy Crossbow
-						{"select", "itemID", 15807 },    -- Light Crossbow
 						{"select", "itemID", 928 },    -- Long Staff
 						{"select", "itemID", 852 },    -- Mace
 						{"select", "itemID", 924 },    -- Maul
 						{"select", "itemID", 854 },    -- Quarter Staff
 						{"select", "itemID", 2026 },    -- Rock Hammer
+					},
+					["groups"] = {
+						i(15808),	-- Fine Light Crossbow
+						i(15809),	-- Heavy Crossbow
+						i(15807),	-- Light Crossbow
 					},
 				}),
 				n(50304, {	-- Captain Donald Adams <Undercity Quartermaster>
@@ -1655,6 +1661,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(4592, {	-- Nathaniel Steenwick
+					["coord"] = { 77.2, 50.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
+						{"select", "itemID", 2506 },    -- Hornwood Recurve Bow
+						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
+						{"select", "itemID", 2505 },    -- Polished Shortbow
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+						{"select", "itemID", 2504 },    -- Worn Shortbow
+					},
+				}),
 				n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
 					["coord"] = { 62.3, 43.1, UNDERCITY },
 					-- #if AFTER CATA
@@ -1709,6 +1727,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					},
+				}),
+				n(5754, {	-- Zane Bradford
+					["coord"] = { 70.0, 27.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 5239 },    -- Blackbone Wand
+						{"select", "itemID", 5210 },    -- Burning Wand
+						{"select", "itemID", 5236 },    -- Combustible Wand
+						{"select", "itemID", 5211 },    -- Dusk Wand
+						{"select", "itemID", 5209 },    -- Gloom Wand
+						{"select", "itemID", 5347 },    -- Pestilent Wand
+						{"select", "itemID", 5238 },    -- Pitchwood Wand
+						{"select", "itemID", 5208 },    -- Smoldering Wand
 					},
 				}),
 			}),

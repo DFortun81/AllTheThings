@@ -483,6 +483,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["groups"] = ANDRA_ZYANDREL_GROUPS,
 				}),
+				n(16619, {	-- Celana 
+					["coord"] = { 86.0, 36.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
+						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+						{"select", "itemID", 2504 },    -- Worn Shortbow
+					},
+					["groups"] = {
+						i(2506),	-- Hornwood Recurve Bow
+						i(2505),	-- Polished Shortbow
+					},
+				}),
 				n(16683, {	-- Darlia <Poison Supplies>
 					["coord"] = { 80.4, 51.0, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
@@ -691,6 +705,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["isLimited"] = true,
 							["f"] = RECIPES,
 						}),
+					},
+				}),
+				n(16636, {	-- Zathanna 
+					["coord"] = { 69.8, 65.8, SHATTRATH_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 5239 },    -- Blackbone Wand
+						{"select", "itemID", 5210 },    -- Burning Wand
+						{"select", "itemID", 5236 },    -- Combustible Wand
+						{"select", "itemID", 5211 },    -- Dusk Wand
+						{"select", "itemID", 5209 },    -- Gloom Wand
+						{"select", "itemID", 5347 },    -- Pestilent Wand
+						{"select", "itemID", 5238 },    -- Pitchwood Wand
+						{"select", "itemID", 5208 },    -- Smoldering Wand
 					},
 				}),
 				n(16623, {	-- Zyandrel <Cloth Armor Merchant>

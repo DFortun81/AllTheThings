@@ -5217,6 +5217,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 49.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(3024),    -- Bkp 2700 Enforcer
+						i(3025),    -- Bkp 42 Ultra
+						i(3027),    -- Heavy Recurve Bow
+						i(2511),    -- Hunters Boomstick
+						i(3023),    -- Large Bore Blunderbuss
+						i(2509),    -- Ornate Blunderbuss
+						i(3026),    -- Reinforced Bow
 						-- #if AFTER CATA
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,
@@ -5228,19 +5235,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						-- #endif
-					},
-				}),
-				n(168623, {	-- Kazak Darkscream <Warlock Trainer>
-					["coord"] = { 74.6, 47.2, ORGRIMMAR },
-					["timeline"] = { ADDED_9_0_1 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(189719, {	-- Barbed Collar of the Incubus
-							["timeline"] = { ADDED_9_2_0 },
-						}),
-						i(189720, {	-- Barbed Collar of the Succubus
-							["timeline"] = { ADDED_9_2_0 },
-						}),
 					},
 				}),
 				n(48510, {	-- Kall Worthaton <Trike Dealer>
@@ -5282,6 +5276,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 2208 },	-- Poniad
 						{"select", "itemID", 2534 },	-- Rondel
 						{"select", "itemID", 2027 },	-- Scimitar
+					},
+				}),
+				n(5816, {	-- Katis
+					["coord"] = { 45.8, 57.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(5239),    -- Blackbone Wand
+						i(5210),    -- Burning Wand
+						i(5236),    -- Combustible Wand
+						i(5211),    -- Dusk Wand
+						i(5209),    -- Gloom Wand
+						i(5347),    -- Pestilent Wand
+						i(5238),    -- Pitchwood Wand
+						i(5208),    -- Smoldering Wand
+					},
+				}),
+				n(168623, {	-- Kazak Darkscream <Warlock Trainer>
+					["coord"] = { 74.6, 47.2, ORGRIMMAR },
+					["timeline"] = { ADDED_9_0_1 },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(189719, {	-- Barbed Collar of the Incubus
+							["timeline"] = { ADDED_9_2_0 },
+						}),
+						i(189720, {	-- Barbed Collar of the Succubus
+							["timeline"] = { ADDED_9_2_0 },
+						}),
 					},
 				}),
 				n(3346, {	-- Kithas <Enchanting Supplies>
@@ -6014,18 +6035,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				-- #endif
-				n(30723, {	-- Xantili 
-					["coord"] = { 36.2, 69.8, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(79740),	-- Plain Wooden Staff
-					},
-				}),
 				n(46718, {	-- Moraka
 					["coord"] = { 55.8, 55.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"select", "itemID", 79740 },    -- Plain Wooden Staff
+					},
+				}),
+				n(3330, {	-- Muragus  
+					["coord"] = { 46.0, 57.8, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 2535 },    -- War Staff
 					},
 				}),
 				n(46512, {	-- Naros <Plate Armor Merchant>
@@ -6512,19 +6534,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.0, 37.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(15905),	-- Brass Knuckles
 						i(2520),	-- Broadsword
 						i(1198),	-- Claymore
 						i(851),		-- Cutlass
 						i(922),		-- Dacian Falx
+						i(15904),	-- Deadly Fist Blades
 						i(2024),	-- Espadon
 						i(2528),	-- falchion
 						i(2207),	-- Jambiya
 						i(2209),	-- Kris
+						i(15906, {	-- Left-Handed Brass Knuckles
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15909, {	-- Left-Handed Blades
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15907, {	-- Left-Handed Claw
+							["timeline"] = { "removed 6.0.2" },
+						}),
 						i(923),		-- Longsword
 						i(2526),	-- Main Gauche
 						i(2208),	-- Poniad
 						i(2534),	-- Rondel
 						i(2027),	-- Scimitar
+						i(15903),	-- Slicing Claw
 					},
 				}),
 				n(3413, {	-- Sovik <Engineering Supplies>
@@ -7123,6 +7157,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2029),	-- Cleaver
 						i(927),		-- Double Axe
 						i(2030),	-- Gnarled Staff
+						i(2507),	-- Laminated Recurve Bow
 						i(928),		-- Long Staff
 					},
 				}),
