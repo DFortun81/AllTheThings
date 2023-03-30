@@ -1808,6 +1808,12 @@ applyData = function(data, t)
 end
 -- Applies a copy of the provided data into the tables of the provided array/group
 sharedData = function(data, t)
+	if not data then
+		print("sharedData: No Shared Data")
+	end
+	if not t then
+		print("sharedData: No Source 't'")
+	end
 	if t then
 		for _,group in ipairs(t) do
 			applyData(data, group);
@@ -1822,6 +1828,12 @@ sharedData = function(data, t)
 end
 -- Performs sharedData logic but also applies the data to the top-level table
 sharedDataSelf = function(data, t)
+	if not data then
+		print("sharedDataSelf: No Shared Data")
+	end
+	if not t then
+		print("sharedDataSelf: No Source 't'")
+	end
 	-- if this is an array, convert to .groups container first to prevent merge confusion
 	t = togroups(t);
 	-- then apply the data to itself
@@ -1831,11 +1843,21 @@ sharedDataSelf = function(data, t)
 end
 -- Applies a copy of the provided data into all sub-groups of the provided table/array
 bubbleDown = function(data, t)
+	if not data then
+		print("bubbleDown: No Bubble Data")
+	end
+	if not t then
+		print("bubbleDown: No Source 't'")
+	end
 	if t then
 		if t.g or t.groups then
 			applyData(data, t);
-			bubbleDown(data, t.groups);
-			bubbleDown(data, t.g);
+			if t.groups then
+				bubbleDown(data, t.groups);
+			end
+			if t.g then
+				bubbleDown(data, t.g);
+			end
 		elseif isarray(t) then
 			for _,group in ipairs(t) do
 				bubbleDown(data, group);
@@ -1885,6 +1907,12 @@ bubbleDownAndReplace = function(data, t)
 end
 -- Performs bubbleDown logic but also applies the data to the top-level table
 bubbleDownSelf = function(data, t)
+	if not data then
+		print("bubbleDownSelf: No Bubble Data")
+	end
+	if not t then
+		print("bubbleDownSelf: No Source 't'")
+	end
 	-- if this is an array, convert to .g container first to prevent merge confusion
 	t = togroups(t);
 	-- then apply regular bubbleDown on the group
