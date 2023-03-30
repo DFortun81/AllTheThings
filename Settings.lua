@@ -1394,7 +1394,7 @@ settings.SkipAutoRefreshCheckbox = f;
 f = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 f:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8);
 f:SetJustifyH("RIGHT");
-f:SetText("v" .. GetAddOnMetadata("AllTheThings", "Version"));
+f:SetText("v" .. C_AddOns.GetAddOnMetadata("AllTheThings", "Version"));
 f:Show();
 settings.version = f;
 

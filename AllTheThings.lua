@@ -23707,7 +23707,7 @@ end
 
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
-	local v = GetAddOnMetadata("AllTheThings", "Version");
+	local v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
 	-- if placeholder exists as the Version tag, then assume we are not on the Release version
 	if string.match(v, "version") then
 		app.Version = "[Git]";
