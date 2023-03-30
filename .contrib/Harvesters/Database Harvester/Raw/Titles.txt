@@ -621,10 +621,11 @@
 494@@@%s the Key Master
 10.0.7.48220
 495@@@%s the Forbidden
+10.0.7.48749
+493@@@Lionguard %s
 10.1.0.48480
 498@@@%s the Reconciler
 10.1.0.48661
-493@@@Lionguard %s
 499@@@Obsidian Gladiator %s
 500@@@Obsidian Legend %s
 501@@@Smelly %s

@@ -62,6 +62,11 @@ ach(17340),	-- Ahead of the Curve: Yogg-Saron
 ach(17341),	-- Cutting Edge: Ulduar
 4.0.1.12911
 ach(5020),	-- Observed - Guild Edition \\ He Feeds On Your Tears - Guild Edition
+10.0.0.45661
+ach(16639),	-- Keystone Hero: Uldaman: Legacy of Tyr
+ach(16642),	-- Keystone Hero: Brackenhide Hollow
+ach(16644),	-- Keystone Hero: Neltharus
+ach(16646),	-- Keystone Hero: Halls of Infusion
 10.0.2.45779
 ach(16729),	-- To All the Squirrels Hidden Til Now \\ To All the Squirrels Hidden Till Now
 10.0.5.48526
@@ -76,17 +81,11 @@ ach(17323),	-- <DNT> Hearthfire Fellowship Rank 2
 ach(17324),	-- <DNT> Hearthfire Fellowship Rank 3
 ach(17325),	-- <DNT> Hearthfire Fellowship Rank 4
 ach(17409),	-- <Hidden> ACCOUNT: Treasure Room Local Quest Completed
-ach(17410),	-- Craftsman of the Zandalar Tribe
-ach(17412),	-- Craftsman of the Argent Dawn
 ach(17422),	-- <DNT> Artisan's Consortium Reputation is Preferred (Rank 1)
 ach(17423),	-- <DNT> Artisan's Consortium Reputation is Respected (Rank 2)
 ach(17424),	-- <DNT> Artisan's Consortium Reputation is Valued (Rank 3)
 10.0.7.47983
 ach(17428),	-- <Hidden> Winterpelt Language - Send Mailer from Sonova
-ach(17496),	-- Renowned Weaponsmith
-ach(17497),	-- Renowned Armorsmith
-ach(17498),	-- Renowned Leatherworking Specialist \\ Renowned Dragonscale Leatherworker
-ach(17499),	-- Renowned Tailoring Specialist \\ Renowned Elemental Leatherworker
 ach(17500),	-- Renowned Tribal Leatherworker
 ach(17501),	-- Renowned Mooncloth Tailor
 ach(17502),	-- Renowned Spellfire Tailor
@@ -94,6 +93,8 @@ ach(17503),	-- Renowned Shadoweave Tailor
 10.0.7.48076
 ach(17533),	-- <Hidden> Travel Network - Node Unlock: Forbidden Reach - Morqut Islet
 ach(17535),	-- <DNT> Complete the "Return to the Reach" questline.
+10.0.7.48749
+ach(17536),	-- <DNT> Complete the "A Creche Divided" questline.
 10.1.0.48480
 ach(17429),	-- Crystal Circuit: Bronze
 ach(17430),	-- Crystal Circuit: Silver
@@ -189,29 +190,28 @@ ach(17737),	-- Flame Warden of the Dragon Isles
 ach(17738),	-- Flame Keeper of the Dragon Isles
 ach(17739),	-- Embers of Neltharion
 ach(17740),	-- Gladiator: Dragonflight Season 2
-ach(17741),	-- Slow And Steady Wins The Race
-ach(17742),	-- <DNT> Loamm Niffen Rank 01
-ach(17743),	-- <DNT> Loamm Niffen Rank 02
-ach(17744),	-- <DNT> Loamm Niffen Rank 03
-ach(17745),	-- <DNT> Loamm Niffen Rank 04
-ach(17746),	-- <DNT> Loamm Niffen Rank 05
-ach(17747),	-- <DNT> Loamm Niffen Rank 06
-ach(17748),	-- <DNT> Loamm Niffen Rank 07
-ach(17749),	-- <DNT> Loamm Niffen Rank 08
-ach(17750),	-- <DNT> Loamm Niffen Rank 09
-ach(17751),	-- <DNT> Loamm Niffen Rank 10
-ach(17752),	-- <DNT> Loamm Niffen Rank 11
-ach(17753),	-- <DNT> Loamm Niffen Rank 12
-ach(17754),	-- <DNT> Loamm Niffen Rank 13
-ach(17755),	-- <DNT> Loamm Niffen Rank 14
-ach(17756),	-- <DNT> Loamm Niffen Rank 15
-ach(17757),	-- <DNT> Loamm Niffen Rank 16
-ach(17758),	-- <DNT> Loamm Niffen Rank 17
-ach(17759),	-- <DNT> Loamm Niffen Rank 18
-ach(17760),	-- <DNT> Loamm Niffen Rank 19
-ach(17761),	-- <DNT> Loamm Niffen Rank 20
+ach(17741),	-- Slow and Steady Wins the Race \\ Slow And Steady Wins The Race
+ach(17742),	-- <DNT> Loamm Niffen Rank 01 (Account) \\ <DNT> Loamm Niffen Rank 01
+ach(17743),	-- <DNT> Loamm Niffen Rank 02 (Account) \\ <DNT> Loamm Niffen Rank 02
+ach(17744),	-- <DNT> Loamm Niffen Rank 03 (Account) \\ <DNT> Loamm Niffen Rank 03
+ach(17745),	-- <DNT> Loamm Niffen Rank 04 (Account) \\ <DNT> Loamm Niffen Rank 04
+ach(17746),	-- <DNT> Loamm Niffen Rank 05 (Account) \\ <DNT> Loamm Niffen Rank 05
+ach(17747),	-- <DNT> Loamm Niffen Rank 06 (Account) \\ <DNT> Loamm Niffen Rank 06
+ach(17748),	-- <DNT> Loamm Niffen Rank 07 (Account) \\ <DNT> Loamm Niffen Rank 07
+ach(17749),	-- <DNT> Loamm Niffen Rank 08 (Account) \\ <DNT> Loamm Niffen Rank 08
+ach(17750),	-- <DNT> Loamm Niffen Rank 09 (Account) \\ <DNT> Loamm Niffen Rank 09
+ach(17751),	-- <DNT> Loamm Niffen Rank 10 (Account) \\ <DNT> Loamm Niffen Rank 10
+ach(17752),	-- <DNT> Loamm Niffen Rank 11 (Account) \\ <DNT> Loamm Niffen Rank 11
+ach(17753),	-- <DNT> Loamm Niffen Rank 12 (Account) \\ <DNT> Loamm Niffen Rank 12
+ach(17754),	-- <DNT> Loamm Niffen Rank 13 (Account) \\ <DNT> Loamm Niffen Rank 13
+ach(17755),	-- <DNT> Loamm Niffen Rank 14 (Account) \\ <DNT> Loamm Niffen Rank 14
+ach(17756),	-- <DNT> Loamm Niffen Rank 15 (Account) \\ <DNT> Loamm Niffen Rank 15
+ach(17757),	-- <DNT> Loamm Niffen Rank 16 (Account) \\ <DNT> Loamm Niffen Rank 16
+ach(17758),	-- <DNT> Loamm Niffen Rank 17 (Account) \\ <DNT> Loamm Niffen Rank 17
+ach(17759),	-- <DNT> Loamm Niffen Rank 18 (Account) \\ <DNT> Loamm Niffen Rank 18
+ach(17760),	-- <DNT> Loamm Niffen Rank 19 (Account) \\ <DNT> Loamm Niffen Rank 19
+ach(17761),	-- <DNT> Loamm Niffen Rank 20 (Account) \\ <DNT> Loamm Niffen Rank 20
 10.1.0.48661
-ach(17536),	-- <DNT> Complete the "A Creche Divided" questline.
 ach(17763),	-- There's No Place Like Loamm
 ach(17764),	-- Obsidian Gladiator: Dragonflight Season 2
 ach(17765),	-- What We Wear In The Shadowflame
@@ -255,3 +255,43 @@ ach(17849),	-- Keystone Hero: The Underrot
 ach(17850),	-- Keystone Hero: Neltharion's Lair
 ach(17851),	-- Tour of Duty: Zaralek Cavern
 ach(17852),	-- Elemental Conjuror
+10.1.0.48776
+ach(17877),	-- We'll Never See That Again, Surely
+ach(17878),	-- The Forbidden Flounder
+ach(17879),	-- Zaralek Cavern Safari
+ach(17880),	-- Battle in Zaralek Cavern
+ach(17881),	-- Aquatic Battler of Zaralek Cavern
+ach(17882),	-- Beast Battler of Zaralek Cavern
+ach(17883),	-- Critter Battler of Zaralek Cavern
+ach(17890),	-- Dragonkin Battler of Zaralek Cavern
+ach(17904),	-- Elemental Battler of Zaralek Cavern
+ach(17905),	-- Flying Battler of Zaralek Cavern
+ach(17915),	-- Humanoid Battler of Zaralek Cavern
+ach(17916),	-- Magic Battler of Zaralek Cavern
+ach(17917),	-- Mechanical Battler of Zaralek Cavern
+ach(17918),	-- Undead Battler of Zaralek Caverm
+ach(17934),	-- Family Battler of Zaralek Cavern
+ach(17977),	-- Stones Can Try To Fly!
+ach(17978),	-- Stones Can Fly!
+ach(18027),	-- Dragonflight Season 2 Master
+ach(18100),	-- Cavern Clawbbering
+ach(18129),	-- <DNT> Loamm Niffen Rank 01 (Character)
+ach(18130),	-- <DNT> Loamm Niffen Rank 02 (Character)
+ach(18131),	-- <DNT> Loamm Niffen Rank 03 (Character)
+ach(18132),	-- <DNT> Loamm Niffen Rank 04 (Character)
+ach(18133),	-- <DNT> Loamm Niffen Rank 05 (Character)
+ach(18134),	-- <DNT> Loamm Niffen Rank 06 (Character)
+ach(18135),	-- <DNT> Loamm Niffen Rank 07 (Character)
+ach(18136),	-- <DNT> Loamm Niffen Rank 08 (Character)
+ach(18137),	-- <DNT> Loamm Niffen Rank 09 (Character)
+ach(18138),	-- <DNT> Loamm Niffen Rank 10 (Character)
+ach(18139),	-- <DNT> Loamm Niffen Rank 11 (Character)
+ach(18140),	-- <DNT> Loamm Niffen Rank 12 (Character)
+ach(18141),	-- <DNT> Loamm Niffen Rank 13 (Character)
+ach(18142),	-- <DNT> Loamm Niffen Rank 14 (Character)
+ach(18143),	-- <DNT> Loamm Niffen Rank 15 (Character)
+ach(18144),	-- <DNT> Loamm Niffen Rank 16 (Character)
+ach(18145),	-- <DNT> Loamm Niffen Rank 17 (Character)
+ach(18146),	-- <DNT> Loamm Niffen Rank 18 (Character)
+ach(18147),	-- <DNT> Loamm Niffen Rank 19 (Character)
+ach(18148),	-- <DNT> Loamm Niffen Rank 20 (Character)

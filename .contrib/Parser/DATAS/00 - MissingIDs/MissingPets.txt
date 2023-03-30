@@ -770,9 +770,7 @@ p(414),	-- Scorpid
 p(415),	-- Fire Beetle
 p(416),	-- Scorpling
 p(417),	-- Rat
-p(418),	-- Water Snake
 p(419),	-- Small Frog
-p(420),	-- Toad
 p(421),	-- Crimson Moth
 p(422),	-- Moccasin
 p(423),	-- Lava Crab
@@ -797,7 +795,6 @@ p(444),	-- PattyMack 2.0 - WildBattlePet Test
 p(445),	-- Tiny Twister
 p(446),	-- Jade Oozeling
 p(447),	-- Fawn
-p(448),	-- Hare
 p(449),	-- Brown Marmot
 p(450),	-- Maggot
 p(452),	-- Red-Tailed Chipmunk
@@ -814,9 +811,6 @@ p(462),	-- Jacob the Test Seagull
 p(463),	-- Spirit Crab
 p(464),	-- Grey Moth
 p(465),	-- Ravager Hatchling
-p(466),	-- Spiny Lizard
-p(467),	-- Dung Beetle
-p(468),	-- Creepy Crawly
 p(469),	-- Twilight Beetle
 p(470),	-- Twilight Spider
 p(471),	-- Robo-Chick
@@ -917,7 +911,6 @@ p(631),	-- Emerald Boa
 p(632),	-- Ash Lizard
 p(633),	-- Mountain Skunk
 p(634),	-- Crystal Spider
-p(635),	-- Adder
 p(637),	-- Skittering Cavern Crawler
 p(638),	-- Nether Roach
 p(639),	-- Borean Marmot

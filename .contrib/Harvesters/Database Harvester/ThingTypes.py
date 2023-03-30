@@ -214,7 +214,9 @@ class Pets(Thing):
 
     @staticmethod
     def extract_existing_info(line: str) -> str | None:
-        if match := re.search("pet\\(\\d+, (\\d+)", line):
+        if match := re.search("i\\(\\d+, (\\d+)", line):
+            return match.group(1)
+        elif match := re.search("n\\(\\d+, (\\d+)", line):
             return match.group(1)
         else:
             return None

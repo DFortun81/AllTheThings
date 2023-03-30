@@ -111,6 +111,8 @@ mount(408655),	-- Morsel Sniffer
 mount(408977),	-- Obsidian Gladiator's Slitherdrake
 mount(409032),	-- Vicious War Snail
 mount(409034),	-- Vicious War Snail
+10.1.0.48776
+mount(408649),	-- Scoria-Clad Sporebat
 
 
 
@@ -232,3 +234,5 @@ mount(408655),	-- Morsel Sniffer
 mount(408977),	-- Obsidian Gladiator's Slitherdrake
 mount(409032),	-- Vicious War Snail
 mount(409034),	-- Vicious War Snail
+10.1.0.48776
+mount(408649),	-- Scoria-Clad Sporebat

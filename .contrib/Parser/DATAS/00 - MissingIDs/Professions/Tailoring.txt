@@ -110,7 +110,7 @@ r(408304),	-- Reserve Parachute
 r(408305),	-- Enourmous Ball of Yarn
 r(408316),	-- Spore-Infused Combat Bandage
 r(408318),	-- Undulating Sporecloak
-r(408319),	-- Explorer's Banner of Comradery
+r(408319),	-- Explorer's Banner \\ Explorer's Banner of Comradery
 10.1.0.48661
 r(409839),	-- Medical Wrap Kit
 
@@ -1281,6 +1281,6 @@ r(408304),	-- Reserve Parachute
 r(408305),	-- Enourmous Ball of Yarn
 r(408316),	-- Spore-Infused Combat Bandage
 r(408318),	-- Undulating Sporecloak
-r(408319),	-- Explorer's Banner of Comradery
+r(408319),	-- Explorer's Banner \\ Explorer's Banner of Comradery
 10.1.0.48661
 r(409839),	-- Medical Wrap Kit
