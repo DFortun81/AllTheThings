@@ -1115,8 +1115,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75069),	-- On Primordial Earth Cache 389789
 		q(75070),	-- On Primordial Earth Cache 389902
 
-		q(75146),	-- After looting Stuffed Bear?
-		q(75007),	-- ???
+		q(75146),	-- After looting Stuffed Bear
+		qNYI(75007),	-- ???
 		q(74971),	-- During Second Time Is The Charm (dialgoue)
 		--
 		q(74874),	-- Pop when completing Primordial Answers (74869)
