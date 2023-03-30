@@ -5328,15 +5328,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.2, 37.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 925 },    -- Flail
 						{"select", "itemID", 1197 },    -- Giant Mace
 						{"select", "itemID", 2030 },    -- Gnarled Staff
-						{"select", "itemID", 2028 },    -- Hammer
 						{"select", "itemID", 928 },    -- Long Staff
 						{"select", "itemID", 852 },    -- Mace
 						{"select", "itemID", 854 },    -- Quarter Staff
 					},
 					["groups"] = {
+						i(925),		-- Flail
+						i(2028),	-- Hammer
 						i(924),	-- Maul
 						i(2026),	-- Rock Hammer
 					},
@@ -6014,12 +6014,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				-- #endif
-				n(3330, {	-- Muragus
-					["coord"] = { 46.0, 57.8, ORGRIMMAR },
+				n(30723, {	-- Xantili 
+					["coord"] = { 36.2, 69.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(2527),	-- Battle Staff
-						i(2535),	-- War Staff
+						i(79740),	-- Plain Wooden Staff
+					},
+				}),
+				n(46718, {	-- Moraka
+					["coord"] = { 55.8, 55.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 79740 },    -- Plain Wooden Staff
 					},
 				}),
 				n(46512, {	-- Naros <Plate Armor Merchant>
@@ -7018,13 +7024,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["sym"] = {
+						{"select", "itemID", 1198 },		-- Claymore
 						{"select", "itemID", 851 },		-- Cutlass
 						{"select", "itemID", 2207 },	-- Jambiya
 					},
 					["groups"] = {
 						i(1194),	-- Bastard Sword
 						i(2479),	-- Broad Axe
-						i(1198),	-- Claymore
 						i(2130),	-- Club
 						i(2492),	-- cudgel
 						i(2139),	-- Dirk
@@ -7074,6 +7080,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(10392),	-- Crimson Snake
 					},
 				}),
+				n(30723, {	-- Xantili 
+					["coord"] = { 36.2, 69.8, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(79740),	-- Plain Wooden Staff
+					},
+				}),
 				n(3400, {	-- Xen'to <Cooking Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 32.6, 68.6, ORGRIMMAR },
@@ -7097,10 +7110,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 75.0, 36.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2030 },    -- Gnarled Staff
 						{"select", "itemID", 853 },    -- Hatchet
 						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
-						{"select", "itemID", 928 },    -- Long Staff
 						{"select", "itemID", 854 },    -- Quarter Staff
 						{"select", "itemID", 3026 },    -- Reinforced Bow
 						{"select", "itemID", 1196 },    -- Tabar
@@ -7111,6 +7122,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2025),	-- Bearded Axe
 						i(2029),	-- Cleaver
 						i(927),		-- Double Axe
+						i(2030),	-- Gnarled Staff
+						i(928),		-- Long Staff
 					},
 				}),
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>

@@ -3023,6 +3023,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 26.4, 60.2, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							i(30754),	-- Ancient Bone Mace
 							i(30750),	-- Draenic Warblade
 							i(30749),	-- Draenic Sparring Blade
 							i(30755, {	-- Mag'hari Fighting Claw
@@ -3367,6 +3368,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 23.2, 40.0, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							i(30754),	-- Ancient Bone Mace
 							i(30749),	-- Draenic Sparring Blade
 							i(30750),	-- Draenic Warblade
 							i(30755, {	-- Mag'hari Fighting Claw

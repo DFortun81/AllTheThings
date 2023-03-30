@@ -6741,8 +6741,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 48.2, 54.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
+						{"select", "itemID", 925 },	-- Flail
 						{"select", "itemID", 1197 },	-- Giant Mace
 						{"select", "itemID", 2030 },	-- Gnarled Staff
+						{"select", "itemID", 2028 },	-- Hammer
+						{"select", "itemID", 928 },		-- Long Staff
 						{"select", "itemID", 852 },	-- Mace
 						{"select", "itemID", 924 },	-- Maul
 						{"select", "itemID", 854 },	-- Quarter Staff
@@ -6750,9 +6753,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(2492),	-- Cudgel
-						i(925),	-- Flail
-						i(2028),	-- Hammer
-						i(928),	-- Long Staff
 						i(2493),	-- Wooden Mallet
 					},
 				}),
@@ -7787,6 +7787,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 3.0.2.8905" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(79740),	-- Plain Wooden Staff
 						i(39489, {	-- Scribe's Satchel
 							["isLimited"] = true,
 						}),

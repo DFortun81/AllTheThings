@@ -1497,13 +1497,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 928 },    -- Long Staff
 						{"select", "itemID", 852 },    -- Mace
 						{"select", "itemID", 924 },    -- Maul
-						{"select", "itemID", 2532 },    -- Morning Star
 						{"select", "itemID", 854 },    -- Quarter Staff
 						{"select", "itemID", 2026 },    -- Rock Hammer
-						{"select", "itemID", 2524 },    -- Truncheon
 						{"select", "itemID", 2525 },    -- War Hammer
 						{"select", "itemID", 2533 },    -- War Maul
 						{"select", "itemID", 2535 },    -- War Staff
+					},
+					["groups"] = {
+						i(2532),	-- Morning Star
+						i(2524),	-- Truncheon
 					},
 				}),
 				-- #if AFTER 6.1.0

@@ -1337,7 +1337,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(52532, {	-- Worn Wood Chopper
 		--	["classes"] = { HUNTER },
 		--	["races"] = { GOBLIN, HUMAN, UNDEAD, WORGEN },
-			["description"] = "Former Starter Weapon for Goblin, Human, Undead & Worgen Hunters",
+			["description"] = "Former Starter Weapon for Goblin, Human, Undead & Worgen Hunters.",
 			["timeline"] = { "added 4.0.3", "removed 5.0.4" }
 		}),
 	}),

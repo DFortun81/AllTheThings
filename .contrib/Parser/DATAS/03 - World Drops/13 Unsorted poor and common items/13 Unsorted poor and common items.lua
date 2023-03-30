@@ -524,14 +524,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(33012),	-- Terokkar Lilac	-- where is this from?
 				i(8625),	-- White Sparkler	-- sold by many vendors
 			}),
-			filter(ONE_HANDED_MACES, {
-				i(30754),	-- Ancient Bone Mace	-- sold by many vendors
-				i(6651),	-- Broken Wine Bottle	-- fished up in The Barrens - Sludge Fen
-				i(925),		-- Flail	-- sold by many vendors
-				i(2028),	-- Hammer	-- sold by many vendors
-				i(2532),	-- Morning Star	-- sold by many vendors
-				i(2524),	-- Truncheon	-- sold by many vendors
-			}),
 			filter(MISC, {
 				i(5956),	-- Blacksmith Hammer	-- sold by many vendors
 				i(85663),	-- Herbalist's Spade	-- sold by many vendors
@@ -559,11 +551,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(1202),	-- Wall Shield
 				i(17188),	-- Ringed Buckler
 				i(2445),	-- Large Metal Shield
-			}),
-			filter(STAVES, {
-				i(2030),	-- Gnarled Staff	-- sold by many vendors
-				i(928),		-- Long Staff	-- sold by many vendors
-				i(79740),	-- Plain Wooden Staff	-- sold by many vendors
 			}),
 			filter(WANDS, {
 				i(5239),	-- Blackbone Wand	-- sold by many vendors

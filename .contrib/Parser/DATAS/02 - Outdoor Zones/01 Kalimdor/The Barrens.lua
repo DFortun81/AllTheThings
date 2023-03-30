@@ -116,6 +116,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
+			prof(FISHING,
+				i(6651, {	-- Broken Wine Bottle
+					["description"] = "Drops from fishing in the Sludge Fen.",
+				}),
+			}),
 			n(QUESTS, {
 				q(1153, {	-- A New Ore Sample
 					["qg"] = 3433,	-- Tatternack Steelforge
