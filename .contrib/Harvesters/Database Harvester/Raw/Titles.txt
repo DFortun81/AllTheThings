@@ -621,5 +621,14 @@
 494@@@%s the Key Master
 10.0.7.48220
 495@@@%s the Forbidden
+10.0.7.48749
+493@@@Lionguard %s
 10.1.0.48480
 498@@@%s the Reconciler
+10.1.0.48661
+499@@@Obsidian Gladiator %s
+500@@@Obsidian Legend %s
+501@@@Smelly %s
+502@@@%s, Barter Boss
+503@@@%s the <PH Season 2 Title>
+504@@@%s the <PH Season 2 Hero Title>

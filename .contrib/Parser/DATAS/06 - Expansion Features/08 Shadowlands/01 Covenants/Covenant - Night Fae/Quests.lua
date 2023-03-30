@@ -120,10 +120,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["description"] = "Requires Renown 22.",
 				["provider"] = { "n", 176096 },	-- Laurel
 				["coord"] = { 34.0, 37.0, THE_TRUNK },
-				["timeline"] = {
-					"added 9.0.2.36734",
-					"removed 9.1.0.39226",
-				},
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64085, {	-- Night Fae Tactician #2
 				["description"] = "Requires Renown 59.",
@@ -135,10 +132,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["description"] = "Requires Renown 7.",
 				["provider"] = { "n", 176096 },	-- Laurel
 				["coord"] = { 34.0, 37.0, THE_TRUNK },
-				["timeline"] = {
-					"added 9.0.2.36734",
-					"removed 9.1.0.39226",
-				},
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64322, {	-- Night Fae Veteran #2
 				["description"] = "Requires Renown 43.",
@@ -168,7 +162,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["isWeekly"] = true,
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
-				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 			}),
 			q(62858, {	-- Return Lost Souls (10 soul version)
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -176,7 +170,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["isWeekly"] = true,
-				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 			}),
 			q(62859, {	-- Return Lost Souls (15 soul version)
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -184,7 +178,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["isWeekly"] = true,
-				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 			}),
 			q(62860, {	-- Return Lost Souls (20 soul version)
 				["sourceQuests"] = { 58104 },	-- Show, Don't Tell
@@ -194,22 +188,22 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["isWeekly"] = true,
 				["g"] = {
 					i(177698, {	-- Untamed Spirit Ardenweald (Uncommon)
-						["timeline"] = { "added 9.0", "removed 9.1.5" },
+						["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 					}),
 					i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
 					i(177700),	-- Greater Untamed Spirit Ardenweald (Epic)
 					i(178881, {	-- Dutiful Spirit Bastion (Uncommon)
-						["timeline"] = { "added 9.0", "removed 9.1.5" },
+						["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 					}),
 					i(178880),	-- Divine Dutiful Spirit (Rare)
 					i(178879),	-- Greater Dutiful Spirit (Epic)
 					i(178874, {	-- Martial Spirit Maldraxxus (Uncommon)
-						["timeline"] = { "added 9.0", "removed 9.1.5" },
+						["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 					}),
 					i(178877),	-- Divine Martial Spirit (Rare)
 					i(178878),	-- Greater Martial Spirit (Epic)
 					i(178882, {	-- Prideful Spirit Revendreth (Uncommon)
-						["timeline"] = { "added 9.0", "removed 9.1.5" },
+						["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 					}),
 					i(178883),	-- Divine Prideful Spirit (Rare)
 					i(178884),	-- Greater Prideful Spirit (Epic)
@@ -220,9 +214,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["repeatable"] = true,
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
-			q(72113, bubbleDownSelf({ ["timeline"] = { ADDED_DF_PRE } }, {	-- Shapes Beyond the Veil
+			q(72113, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- Shapes Beyond the Veil
 				-- ["sourceQuests"] = {  },	-- Unknown
 				["provider"] = { "n", 174209 },	-- Lady Muunn
 				["coord"] = { 38.2, 24.4, THE_TRUNK },

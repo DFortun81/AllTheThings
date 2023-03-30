@@ -27,10 +27,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(141030),	-- Technique: Glyph of Cracked Ice (RECIPE!)
 					i(141037),	-- Technique: Glyph of Mana Touched Souls (RECIPE!)
 					i(184099, {	-- Technique: Glyph of the Aerial Chameleon (RECIPE!)
-						["timeline"] = { "added 9.0.2" },
+						["timeline"] = { ADDED_9_0_2 },
 					}),
 					i(184098, {	-- Technique: Glyph of the Aquatic Chameleon (RECIPE!)
-						["timeline"] = { "added 9.0.2" },
+						["timeline"] = { ADDED_9_0_2 },
 					}),
 					i(141068),	-- Technique: Glyph of the Blazing Savior (RECIPE!)
 					i(141033),	-- Technique: Glyph of the Crimson Shell (RECIPE!)
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(141040),	-- Technique: Glyph of the Feral Chameleon (RECIPE!)
 					i(141062),	-- Technique: Glyph of the Inquisitor's Eye (RECIPE!)
 					i(184095, {	-- Technique: Glyph of the Swift Chameleon (RECIPE!)
-						["timeline"] = { "added 9.0.2" },
+						["timeline"] = { ADDED_9_0_2 },
 					}),
 					i(141055),	-- Technique: Glyph of Yu'lon's Grace (RECIPE!)
 				},

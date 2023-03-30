@@ -1016,6 +1016,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				q(7621, {	-- A Warning
+					["qg"] = 14494,	-- Eris Havenfire
+					-- #if AFTER WRATH
+					["coord"] = { 17.6, 14.1, EASTERN_PLAGUELANDS },
+					-- #else
+					["coord"] = { 20.8, 18.4, EASTERN_PLAGUELANDS },
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { PRIEST },
+					["lvl"] = 60,
+				}),
 				q(27539, {	-- Add'em to the Pile
 					["qg"] = 45831,	-- Crusader Kevin Frost
 					["coord"] = { 27.6, 20.8, EASTERN_PLAGUELANDS },
@@ -2554,26 +2565,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(7622, {	-- The Balance of Light and Shadow
-					["qg"] = 14494,	-- Eris Havenfire
+					["providers"] = {
+						{ "n", 14494 },	-- Eris Havenfire
+						{ "i", 18659 },	-- Splinter of Nordrassil
+					},
+					["sourceQuest"] = 7621,	-- A Warning
+					-- #if AFTER WRATH
+					["coord"] = { 17.6, 14.1, EASTERN_PLAGUELANDS },
+					-- #else
 					["coord"] = { 20.8, 18.4, EASTERN_PLAGUELANDS },
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
+					["cost"] = {
+						{ "i", 18646, 1 },	-- The Eye of Divinity
+						{ "i", 18665, 1 },	-- The Eye of Shadow
+					},
 					["classes"] = { PRIEST },
 					["lvl"] = 60,
 					["groups"] = {
-						i(18659, {	-- Splinter of Nordrassil
+						i(18609, {	-- Anathema
 							["timeline"] = { "removed 4.0.3" },
-							["cost"] = {
-								{ "i", 18646, 1 },	-- The Eye of Divinity
-								{ "i", 18665, 1 },	-- The Eye of Shadow
-							},
-							["groups"] = {
-								i(18609, {	-- Anathema
-									["timeline"] = { "removed 4.0.3" },
-								}),
-								i(18608, {	-- Benediction
-									["timeline"] = { "removed 4.0.3" },
-								}),
-							},
+						}),
+						i(18608, {	-- Benediction
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),

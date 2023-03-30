@@ -116,7 +116,7 @@ local MERCHANT_GROUPS = {
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
 	i(187997, {	-- Eternal Heirloom Armor Casing
-		["timeline"] = { "added 9.1.5.40871" },
+		["timeline"] = { ADDED_9_1_5 },
 		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
 		["sym"] = { { "fill" } },	-- simply fill this item
 	}),

@@ -14,6 +14,9 @@ _.Factions =
 			faction(1134),	-- Gilneas
 			faction(54),	-- Gnomeregan
 			faction(47),	-- Ironforge
+			faction(2524, {-- Obsidian Warders
+				["timeline"] = { ADDED_10_0_2 },
+			}),
 			faction(72),	-- Stormwind
 			faction(1353),	-- Tushui Pandaren
 		})),
@@ -61,6 +64,9 @@ _.Factions =
 	n(FACTION_HEADER_HORDE, {
 		n(-6014, sharedData({["races"] = HORDE_ONLY,}, {	-- Cities
 			faction(1133),	-- Bilgewater Cartel
+			faction(2523, {	-- Dark Talons
+				["timeline"] = { ADDED_10_0_2 },
+			}),
 			faction(530),	-- Darkspear Trolls
 			faction(1352),	-- Huojin Pandaren
 			faction(76),	-- Orgrimmar

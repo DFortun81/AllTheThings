@@ -2,7 +2,7 @@
 --     T R A D I N G   P O S T     --
 -------------------------------------
 local TRADERS_TENDER = 2032;
-root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
+root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(ACHIEVEMENTS, {
 		ach(17334, {	-- Trading Post Enthusiast
 			i(203431),	-- Ensemble: Burden of Unrelenting Justice
@@ -181,14 +181,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {
 		-- These don't trigger when using ensembles, but they are listed on Wowhead
 		q(65502),	-- Ensemble: Fel-Automaton Exoplate
 		q(65533),	-- Ensemble: Vestment of the Honored Valarjar
 		q(65570),	-- Ensemble: Vagabond's Midnight Threads
 		q(65648),	-- Ensemble: Wanderer's Midnight Trappings
 		q(65673),	-- Ensemble: Wanderer's Violet Trappings
-		q(65677),	-- Ensemble: Wanderer's Rosy/Azure/Snowy Trappings
+		q(65677),	-- Ensemble: Wanderer's Azure Trappings
 		q(65678),	-- Ensemble: Vagabond's Azure Threads
 		q(65720),	-- Ensemble: Swashbuckling Buccaneer's Slops
 		q(65737),	-- Ensemble: Vagabond's Rosy Threads
@@ -197,16 +197,18 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(65718),	-- Ensemble: Slumbering Caldera Regalia
 		q(65721),	-- Ensemble: Wanderer's Crimson Trappings
 		q(65723),	-- Ensemble: Vagabond's Crimson Trappings
-		-- q(65737),	-- Ensemble: Vagabond's Snowy Threads	-- Wowhead has same id as Rosy Threads
+		q(65736),	-- Ensemble: Wanderer's Snowy Trappings
 		q(72070),	-- Ensemble: Glorious Dragonrider's Mail
 		q(72080),	-- Ensemble: Corrupted Runelord's Regalia
 		q(72086),	-- Ensemble: Tidecaller's Chainmail
 		q(72132),	-- Ensemble: Kvaldir Scout Leathers
 		q(72133),	-- Ensemble: Helarjar Berserker Warplate
+		q(72811),	-- Ensemble: Wanderer's Rosy Trappings
+		q(72812),	-- Ensemble: Vagabond's Snowy Threads
 	})),
 });
 root(ROOTS.NeverImplemented, {
-	tier(DF_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { ADDED_DF_0_5 }, }, {
+	tier(DF_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { ADDED_10_0_5 }, }, {
 		n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Trader's Tender in the month." }, {
 			i(190164),	-- Arsenal: Blades of Elune
 			-- i(XXXXXX),	-- The Battlespoon (2H Staff)
@@ -251,43 +253,81 @@ root(ROOTS.NeverImplemented, {
 				i(190725, {	-- Ensemble: Battlewraps of the Honored Valarjar
 					["cost"] = { { "c", TRADERS_TENDER, 850 }, },
 					["g"] = {
-						-- i(),	--
-						-- i(),	--
+						i(190716),	-- Shoulderpads of the Honored Valarjar
+						i(190717),	-- Wristguards of the Honored Valarjar
+						i(190718),	-- Drape of the Honored Valarjar
+						i(190719),	-- Hood of the Honored Valarjar
+						i(190720),	-- Leggings of the Honored Valarjar
+						i(190721),	-- Strap of the Honored Valarjar
+						i(190722),	-- Boots of the Honored Valarjar
+						i(190723),	-- Grips of the Honored Valarjar
+						i(190724),	-- Tunic of the Honored Valarjar
 					},
 				}),
 				i(200909, {	-- Ensemble: Corrupted Runelord's Regalia
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 					["g"] = {
-						-- i(),	--
-						-- i(),	--
+						i(189875),	-- Corrupted Runelord's Sash
+						i(189876),	-- Corrupted Runelord's Handguards
+						i(189879),	-- Corrupted Runelord's Leggings
+						i(189880),	-- Corrupted Runelord's Mantle
+						i(190206),	-- Corrupted Runelord's Glyphbands
+						i(190207),	-- Corrupted Runelord's Slippers
+						i(190210),	-- Corrupted Runelord's Cowl
+						i(190211),	-- Corrupted Runelord's Robe
 					},
 				}),
 				i(201230, {	-- Ensemble: Helarjar Berserker Warplate
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 					["g"] = {
-						-- i(),	--
-						-- i(),	--
+						i(190134),	-- Helarjar Berserker Warboots
+						i(190135),	-- Helarjar Berserker Gauntlets
+						i(190138),	-- Helarjar Berserker Horns
+						i(190139),	-- Helarjar Berserker Greaves
+						i(190550),	-- Helarjar Berserker Girdle
+						i(190551),	-- Helarjar Berserker Bracers
+						i(190553),	-- Helarjar Berserker Cuirass
+						i(190554),	-- Helarjar Berserker Pauldrons
 					},
 				}),
 				i(201229, {	-- Ensemble: Kvaldir Scout Leathers
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 					["g"] = {
-						-- i(),	--
-						-- i(),	--
+						i(190136),	-- Kvaldir Scout Treads
+						i(190137),	-- Kvaldir Scout Grips
+						i(190140),	-- Kvaldir Scout Trousers
+						i(190141),	-- Kvaldir Scout Chestguard
+						i(190548),	-- Kvaldir Scout Belt
+						i(190549),	-- Kvaldir Scout Wristguard
+						i(190552),	-- Kvaldir Scout Shoulderpads
+						i(190574),	-- Kvaldir Scout Hood
 					},
 				}),
 				i(190796, {	-- Ensemble: Slumbering Caldera Regalia
 					["cost"] = { { "c", TRADERS_TENDER, 850 }, },
 					["g"] = {
-						-- i(),	--
-						-- i(),	--
+						i(190774),	-- Slumbering Caldera Robe
+						i(190775),	-- Slumbering Caldera Gauntlets
+						i(190776),	-- Slumbering Caldera Girdle
+						i(190777),	-- Slumbering Caldera Pauldrons
+						i(190778),	-- Slumbering Caldera Legguards
+						i(190779),	-- Slumbering Caldera Sabatons
+						i(190780),	-- Slumbering Caldera Crown
+						i(190781),	-- Slumbering Caldera Bracers
+						i(190782),	-- Slumbering Caldera Hauberk
 					},
 				}),
 				i(200917, {	-- Ensemble: Tidecaller's Chainmail
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 					["g"] = {
-						-- i(),	--
-						-- i(),	--
+						i(190432),	-- Tidecaller's Bracers
+						i(190440),	-- Tidecaller's Crown
+						i(190067),	-- Tidecaller's Grips
+						i(190072),	-- Tidecaller's Hauberk
+						i(190556),	-- Tidecaller's Legguards
+						i(190700),	-- Tidecaller's Boots
+						i(190709),	-- Tidecaller's Pauldrons
+						i(190806),	-- Tidecaller's Cinch
 					},
 				}),
 				i(190540, {	-- Ensemble: Trapper's Munitions
@@ -333,10 +373,17 @@ root(ROOTS.NeverImplemented, {
 				-- 	},
 				-- }),
 				i(190095, {	-- Ensemble: Vestment of the Honored Valarjar
-					["cost"] = { { "c", TRADERS_TENDER, 850 }, },
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 					["g"] = {
-						-- i(),	--
-						-- i(),	--
+						i(190081),	-- Mantle of the Honored Valarjar
+						i(190082),	-- Cloak of the Honored Valarjar
+						i(190083),	-- Robe of the Honored Valarjar
+						i(190084),	-- Bracers of the Honored Valarjar
+						i(190085),	-- Sash of the Honored Valarjar
+						i(190086),	-- Sandals of the Honored Valarjar
+						i(190087),	-- Pantaloons of the Honored Valarjar
+						i(190088),	-- Circlet of the Honored Valarjar
+						i(190089),	-- Gloves of the Honored Valarjar
 					},
 				}),
 				i(190577, {	-- Ensemble: Wanderer's Azure Trappings

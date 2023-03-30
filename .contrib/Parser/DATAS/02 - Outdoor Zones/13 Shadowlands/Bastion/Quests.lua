@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(BASTION, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14281, {	-- The Path to Ascension
@@ -979,7 +979,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 						i(181596),	-- Forgehand's Handguards
 						i(181608),	-- Shieldguard's Gauntlets
 					},
-					["timeline"] = { ADDED_SL_REL, REMOVED_DF_PRE2 },
+					["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 				}),
 				q(59015, {	-- Hostile Recollection
 				}),
@@ -990,7 +990,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					["g"] = {
 						i(181703),	-- Skychime Necklace
 					},
-					["timeline"] = { ADDED_SL_REL, REMOVED_DF_PRE2 },
+					["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 				}),
 				q(62732, {	-- Locus Focus (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -1002,7 +1002,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 						i(181603),	-- Forgehand's Chain
 						i(181612),	-- Shieldguard's Girdle
 					},
-					["timeline"] = { ADDED_SL_REL, REMOVED_DF_PRE2 },
+					["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 				}),
 				q(62736, {	-- Maldraxxi Eviction Notice (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -1013,7 +1013,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 						i(181591),	-- Forgehand's Hauberk
 						i(181605),	-- Shieldguard's Breastplate
 					},
-					["timeline"] = { ADDED_SL_REL, REMOVED_DF_PRE2 },
+					["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 				}),
 				q(62705, {	-- Scour the Temple (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -1022,7 +1022,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					["g"] = {
 						i(181721),	-- Ascendent Valor Signet
 					},
-					["timeline"] = { ADDED_SL_REL, REMOVED_DF_PRE2 },
+					["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 				}),
 			}),
 		}),

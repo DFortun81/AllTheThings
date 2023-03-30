@@ -431,7 +431,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scorpid Shoulders",
-					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_DF_0_5 },
+					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_10_0_5 },
 					["recipeID"] = 19100,
 				},
 				{
@@ -941,7 +941,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scorpid Gauntlets",
-					["timeline"] = { "removed 4.0.3", ADDED_DF_0_5 },
+					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 					["recipeID"] = 19064,
 				},
 				{
@@ -1251,7 +1251,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Heavy Scorpid Leggings",
-					["timeline"] = { "removed 4.0.3", ADDED_DF_0_5 },
+					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 					["recipeID"] = 19075,
 				},
 				{
@@ -4899,7 +4899,7 @@ profession(LEATHERWORKING, {
 				{
 					["name"] = "Impressive Burnished Essence",
 					["recipeID"] = 397862,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Relic of the Past I",
@@ -4924,7 +4924,7 @@ profession(LEATHERWORKING, {
 				{
 					["name"] = "Remarkable Burnished Essence",
 					["recipeID"] = 397863,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 			},
 		},
@@ -4976,7 +4976,7 @@ profession(LEATHERWORKING, {
 			["groups"] = {
 				{
 					["recipeID"] = 171286,	-- Burnished Essence
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 				},
 				{
 					["name"] = "Leather Refurbishing Kit",
@@ -4984,11 +4984,11 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["recipeID"] = 187489,	-- Mighty Burnished Essence
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 				},
 				{
 					["recipeID"] = 187513,	-- Savage Burnished Essence
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 				},
 			},
 		},
@@ -5394,7 +5394,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Dreadleather Shoulderguard  [Rank 3]",
-					["timeline"] = { "removed 8.0.1" },	-- rank 3 used to drop from RBG wins but not available after Legion
+					["timeline"] = { "removed 8.0.1", ADDED_10_0_7 },
 					["previousRecipeID"] = 194721,
 					["recipeID"] = 194729,
 				},
@@ -5789,7 +5789,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Gravenscale Spaulders [Rank 3]",
-					["timeline"] = { "removed 8.0.1" },	-- rank 3 used to drop from RBG wins but not available after Legion
+					["timeline"] = { "removed 8.0.1", ADDED_10_0_7 },
 					["previousRecipeID"] = 194761,
 					["recipeID"] = 194769,
 				},

@@ -64,7 +64,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(14942, {							-- WoW's 17th Anniversary
 			["timeline"] = {
 				"created 9.1.0",
-				"added 9.1.5",
+				ADDED_9_1_0,
 			},
 		}),
 		ach(15218),	-- WoW's 18th Anniversary

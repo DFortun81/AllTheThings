@@ -2,7 +2,7 @@
 root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(LEGION_TIER, {
 		i(187906, {	-- Owl Serpent Soul
-			["timeline"] = { "added 9.1.5" },
+			["timeline"] = { ADDED_9_1_5 },
 		}),
 		inst_tw(740, {	-- Black Rook Hold
 			e(1518, {	-- Amalgam of Souls

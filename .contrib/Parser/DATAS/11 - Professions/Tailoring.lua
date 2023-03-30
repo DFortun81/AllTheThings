@@ -3300,7 +3300,7 @@ profession(TAILORING, {
 				{
 					["name"] = "Impressive Hexweave Essence",
 					["recipeID"] = 397864,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Relic of the Past I",
@@ -3325,7 +3325,7 @@ profession(TAILORING, {
 				{
 					["name"] = "Remarkable Hexweave Essence",
 					["recipeID"] = 397865,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 			}
 		},
@@ -3397,17 +3397,17 @@ profession(TAILORING, {
 				{
 					["name"] = "Hexweave Essence",
 					["recipeID"] = 168855,
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 				},
 				{
 					["name"] = "Mighty Hexweave Essence",
 					["recipeID"] = 187492,
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 				},
 				{
 					["name"] = "Savage Hexweave Essence",
 					["recipeID"] = 187516,
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 				},
 			}
 		},
@@ -3650,7 +3650,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Imbued Silkweave Epaulets",	-- Rank 3
-					["timeline"] = { "removed 8.0.1" },	-- rank 3 used to drop from RBG wins but not available after Legion
+					["timeline"] = { "removed 8.0.1", ADDED_10_0_7 },
 					["previousRecipeID"] = 185948,
 					["recipeID"] = 185956
 				},

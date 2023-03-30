@@ -36,7 +36,7 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 					title(43),				-- Elder
 				},
 			}),
-			ach(17321, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Elders of the Dragon Isles
+			ach(17321, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Elders of the Dragon Isles
 				crit(1, {
 					["_quests"] = { 73848 },	-- Iskaara Elder Shomkol
 				}),
@@ -443,7 +443,7 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			q(73170, {	-- The Lunar Festival (H)
 				["provider"] = { "n", 199261},	-- Holiday Enthusiast
@@ -451,7 +451,7 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			q(8883, {	-- Valadar Starsong
 				["qg"] = 15895,	-- Lunar Festival Harbinger
@@ -477,49 +477,49 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 			q(73716, {	-- Aylaag Elder
 				["provider"] = { "n", 201129 },	-- Aylaag Elder
 				["coord"] = { 44.3, 63.7, THE_WAKING_SHORES },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73860, {	-- Elder Dekidig
 				["provider"] = { "n", 201141 },	-- Elder Dekidig
 				["coord"] = { 67.4, 49.4, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73861, {	-- Elder Razlok
 				["provider"] = { "n", 201143 },	-- Elder Razlok
 				["coord"] = { 50, 66.5, THALDRASZUS },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73858, {	-- Iskaara Elder Nemaglek
 				["provider"] = { "n", 201139 },	-- Iskaara Elder Nemaglek
 				["coord"] = { 12.8, 49, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73859, {	-- Iskaara Elder Sik'ek
 				["provider"] = { "n", 201140 },	-- Iskaara Elder Sik'ek
 				["coord"] = { 54.8, 43.4, THALDRASZUS },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73848, {	-- Iskaara Elder Shomkol
 				["provider"] = { "n", 201137 },	-- Iskaara Elder Shomkol
 				["coord"] = { 46.6, 31.3, THE_WAKING_SHORES },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73717, {	-- Ohn'ir Elder
 				["provider"] = { "n", 201132 },	-- Ohn'ir Elder
 				["coord"] = { 58.4, 31.4, OHNAHRAN_PLAINS },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 				["isYearly"] = true,
 			}),
 			q(73172, {	-- Shikaar Elder
 				["provider"] = { "n", 200747 },	-- Shikaar Elder
 				["coord"] = { 83.8, 48.0, OHNAHRAN_PLAINS },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 				["isYearly"] = true,
 			}),
 
@@ -1245,7 +1245,7 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(187997, {	-- Eternal Heirloom Armor Casing
-						["timeline"] = { "added 9.1.5.40871" },
+						["timeline"] = { ADDED_9_1_5 },
 						["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),

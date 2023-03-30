@@ -173,7 +173,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 			ach(1683, {	-- Brewmaster (H)
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {{"meta_achievement",
-					-- #if BEFORE 8.2.0 
+					-- #if BEFORE 8.2.0
 					1186,				-- Down With The Dark Iron
 					-- #endif
 					1185,				-- The Brewfest Diet
@@ -1853,7 +1853,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 						}),
 						i(187998, {	-- Eternal Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
-							["timeline"] = { "added 9.1.5.40871" },
+							["timeline"] = { ADDED_9_1_5 },
 							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
@@ -2024,7 +2024,7 @@ root(ROOTS.Holidays, applyholiday(BREWFEST, {
 						}),
 						i(187998, {	-- Eternal Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
-							["timeline"] = { "added 9.1.5.40871" },
+							["timeline"] = { ADDED_9_1_5 },
 							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard

@@ -764,17 +764,101 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3019, {	-- Delgo Ragetotem <Axe Merchant>
 					["coord"] = { 53.8, 57.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 2522 },    -- Crescent Axe
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 2530 },    -- Francisca
+						{"select", "itemID", 2531 },    -- Great Axe
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 12249 },    -- Merciless Axe
+						{"select", "itemID", 1196 },    -- Tabar
+					},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
 							["isLimited"] = true,
 						}),
 					},
 				}),
+				n(8360, {	-- Elki 
+					["coord"] = { 45.2, 56.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 17187 },    -- Banded Buckler
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 2445 },    -- Large Metal Shield
+						{"select", "itemID", 17188 },    -- Ringed Buckler
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 285 },    -- Scalemail Vest
+						{"select", "itemID", 1202 },    -- Wall Shield
+					},
+				}),
+				n(3020, {	-- Etu Ragetotem
+					["coord"] = { 58.2, 52.0, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 925 },    -- Flail
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 924 },    -- Maul
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
+					},
+				}),
 				-- #if AFTER CATA
 				n(3095, {	-- Fela <Heavy Armor Merchant>
 					["coord"] = { 42.8, 44.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = { { "sub", "common_vendor", 46512 } },	-- Naros <Plate Armor Merchant>
+					["sym"] = {
+						{"select", "itemID", 2419 },    -- Augmented Chain Belt
+						{"select", "itemID", 2420 },    -- Augmented Chain Boots
+						{"select", "itemID", 2421 },    -- Augmented Chain Bracers
+						{"select", "itemID", 2422 },    -- Augmented Chain Gloves
+						{"select", "itemID", 3891 },    -- Augmented Chain Helm
+						{"select", "itemID", 2418 },    -- Augmented Chain Leggings
+						{"select", "itemID", 2417 },    -- Augmented Chain Vest
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 62260 },    -- Grunts Chain Belt
+						{"select", "itemID", 62261 },    -- Grunts Chain Boots
+						{"select", "itemID", 62262 },    -- Grunts Chain Bracers
+						{"select", "itemID", 62266 },    -- Grunts Chain Circlet
+						{"select", "itemID", 62263 },    -- Grunts Chain Gloves
+						{"select", "itemID", 62264 },    -- Grunts Chain Leggings
+						{"select", "itemID", 62265 },    -- Grunts Chain Vest
+						{"select", "itemID", 62253 },    -- Grunts Plate Armor
+						{"select", "itemID", 62254 },    -- Grunts Plate Belt
+						{"select", "itemID", 62255 },    -- Grunts Plate Boots
+						{"select", "itemID", 62256 },    -- Grunts Plate Bracers
+						{"select", "itemID", 62257 },    -- Grunts Plate Gloves
+						{"select", "itemID", 62259 },    -- Grunts Plate Helm
+						{"select", "itemID", 62258 },    -- Grunts Plate Leggings
+						{"select", "itemID", 2448 },    -- Heavy Pavise
+						{"select", "itemID", 2446 },    -- Kite Shield
+						{"select", "itemID", 17189 },    -- Metal Buckler
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+						{"select", "itemID", 2148 },    -- Polished Scale Belt
+						{"select", "itemID", 2149 },    -- Polished Scale Boots
+						{"select", "itemID", 2150 },    -- Polished Scale Bracers
+						{"select", "itemID", 2151 },    -- Polished Scale Gloves
+						{"select", "itemID", 2152 },    -- Polished Scale Leggings
+						{"select", "itemID", 2153 },    -- Polished Scale Vest
+						{"select", "itemID", 17192 },    -- Reinforced Targe
+					},
 				}),
 				-- #endif
 				n(8401, {	-- Halpa <Prairie Dog Vendor>
@@ -793,9 +877,80 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16060),	-- Common White Shirt
 					},
 				}),
+				n(3018, {	-- Hogor Thunderhoof
+					["coord"] = { 55.6, 56.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
+						{"select", "itemID", 2511 },    -- Hunter's Boomstick
+						{"select", "itemID", 3023 },    -- Large Bore Blunderbuss
+						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
+					},
+					["groups"] = {
+						i(2510),	-- Solid Blunderbuss
+					},
+				}),
+				n(2997, {	-- Jyn Stonehoof
+					["coord"] = { 41.6, 62.0, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2025 }, -- bearded axe
+						{"select", "itemID", 1194 }, -- bastard sword
+						{"select", "itemID", 2479 }, -- broad axe
+						{"select", "itemID", 1198 }, -- claymore
+						{"select", "itemID", 2130 }, -- club
+						{"select", "itemID", 2029 }, -- cleaver
+						{"select", "itemID", 2492 }, -- cudgel
+						{"select", "itemID", 851 }, -- cutlass
+						{"select", "itemID", 2139 }, -- dirk
+						{"select", "itemID", 2024 }, -- espadon
+						{"select", "itemID", 2488 }, -- gladius
+						{"select", "itemID", 2030 }, -- gnarled staff
+						{"select", "itemID", 1197 }, -- giant mace
+						{"select", "itemID", 2134 }, -- hand axe
+						{"select", "itemID", 853 }, -- hatchet
+						{"select", "itemID", 2511 }, -- hunters boomstick
+						{"select", "itemID", 2207 }, -- jambiya
+						{"select", "itemID", 2491 }, -- large axe
+						{"select", "itemID", 2480 }, -- large club
+						{"select", "itemID", 852 }, -- mace
+						{"select", "itemID", 2509 }, -- ornate blunderbuss
+						{"select", "itemID", 2208 }, -- poniard
+						{"select", "itemID", 854 }, -- quarter staff
+						{"select", "itemID", 2026 }, -- rock hammer
+						{"select", "itemID", 2027 }, -- scimitar
+						{"select", "itemID", 2132 }, -- short staff
+						{"select", "itemID", 2131 }, -- shortsword
+						{"select", "itemID", 2494 } -- stiletto
+					},
+				}),
+				n(3021, {	-- Kard Ragetotem
+					["coord"] = { 53.6, 56.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
+					},
+				}),
 				n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
 					["coord"] = { 46.8, 45.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+					},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,
@@ -888,6 +1043,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
+				n(8398, {	-- Ohanko <Blade Vendor>
+					["coord"] = { 53.6, 56.8, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2523 },	-- bullova
+						{"select", "itemID", 2531 },	-- great axe
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2525 },	-- war hammer
+						{"select", "itemID", 2533 },	-- war maul
+						{"select", "itemID", 2529 },	-- zweihander
+					},
+				}),
 				n(8364, {	-- Pakwa <Bag Vendor>
 					["coord"] = { 39.31, 64.28, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -947,6 +1114,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						-- #endif
+					},
+				}),
+				n(3022, {	-- Sunn Ragetotem
+					["coord"] = { 49.6, 49.8, THUNDER_BLUFF },
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 2535 },    -- War Staff
 					},
 				}),
 				n(3023, {	-- Sura Wildmane <War Harness Vendor>

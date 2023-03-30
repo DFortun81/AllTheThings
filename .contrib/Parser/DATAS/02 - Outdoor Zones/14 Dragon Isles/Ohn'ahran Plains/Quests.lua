@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(OHNAHRAN_PLAINS, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 15394, {	-- Ohn'a'Roll
@@ -1085,12 +1085,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74466, {	-- Huntmaster Yrgena
 					["provider"] = { "n", 201538 },	-- Huntmaster Yrgena
 					["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(74463, {	-- Groffnar
 					["provider"] = { "n", 201537 },	-- Groffnar
 					["coord"] = { 35.1, 40.8, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(66356, {	-- Irontree
 					["provider"] = { "n", 193128 },	-- Irontree
@@ -1099,7 +1099,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74464, {	-- Lurgan
 					["provider"] = { "n", 201540 },	-- Lurgan
 					["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(69871, {	-- Malsegan
 					["provider"] = { "n", 193212 },	-- Malsegan
@@ -1112,7 +1112,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69968, {	-- Prozela Galeshot
 					["provider"] = { "n", 193669 },	-- Prozela Galeshot
 					["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(70698, {	-- Researcher Sneakwing
 					["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
@@ -1121,7 +1121,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69851, {	-- Ripsaw the Stalker
 					["provider"] = { "n", 193153 },	-- Ripsaw the Stalker
 					["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69878, {	-- Ronsak the Decimator
 					["provider"] = { "n", 193227 },	-- Ronsak the Decimator
@@ -1130,7 +1130,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(70783, {	-- Skaara
 					["provider"] = { "n", 192949 },	-- Skaara
 					["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69667, {	-- Steamgill
 					["provider"] = { "n", 193123 },	-- Steamgill
@@ -1139,33 +1139,33 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(74465, {	-- Stormcaller Narkena
 					["provider"] = { "n", 201539 },
 					["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(69837, {	-- Sunscale Behemoth
 					["provider"] = { "n", 193133 },	-- Sunscale Behemoth
 					["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69852, {	-- Territorial Coastling
 					["provider"] = { "n", 193163 },	-- Territorial Coastling
 					["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(65892, {	-- The Sundered Asunder
 					-- ["sourceQuests"] = {  },	--
 					["coord"] = { 64.0, 17.8, OHNAHRAN_PLAINS },
 					["description"] = "You must be at least level 62 for this to pop up. It does not appear you need to accept any quests.",
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(66421, {	-- The Storm Scar
 					["sourceQuests"] = { 66331 },	-- The Primalist Front
 					["coord"] = { 25.7, 40.5, OHNAHRAN_PLAINS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(66970, {	-- Ty'foon the Ascended
 					["provider"] = { "n", 191354 },	-- Ty'foon the Ascended
 					["coord"] = { 26.1, 34.2, OHNAHRAN_PLAINS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69857, {	-- Mikrin of the Raging Winds
 					["provider"] = { "n", 193173 },	-- Mikrin of the Raging Winds
@@ -1179,24 +1179,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(67717, {	-- Web-Queen Ashkaz
 					["provider"] = { "n", 192983 },	-- Web-Queen Ashkaz
 					["coord"] = { 43.3, 47.2, OHNAHRAN_PLAINS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(74440, {	-- Windseeker Avash
 					["provider"] = { "n", 192045 },	-- Windseeker Avash
 					["coord"] = { 58.9, 67.5, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(72364, {	-- Zarizz
 					["provider"] = { "n", 193140 },	-- Zarizz
 					["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 			})),
 		}),
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(OHNAHRAN_PLAINS, {
 		q(73701),	-- triggered during 'Unwelcome Outsider' (66021)
 		q(71203),	-- daily lockout for 'To Tame A Thunderspine' series
@@ -1228,7 +1228,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		-- --
 		-- q(69813),	-- Triggered when Prozela Killed
 		-- --
-		-- q(69834),	-- Triggered when Ripaw the Stalker is killed
 		-- --
 		-- Has to do with the Chest Event In the South
 		--q(70511),	-- complete??

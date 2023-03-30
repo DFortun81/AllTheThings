@@ -11,7 +11,7 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 			["description"] = "Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",
 		}),
 		n(QUESTS, {
-			q(58274, bubbleDownSelf({["timeline"] = { "added 8.3.0.33062", "removed 9.0.5" } },{	-- Servant of N'Zoth
+			q(58274, bubbleDownSelf({["timeline"] = { "added 8.3.0.33062", REMOVED_9_0_1 } },{	-- Servant of N'Zoth
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "Granted upon killing 10 Horde players without dying after you became an Assassin.",
 				["g"] = {
@@ -20,7 +20,7 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 					i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 				},
 			})),
-			q(58273, bubbleDownSelf({["timeline"] = { "added 8.3.0.33062", "removed 9.0.5" } },{	-- Servant of N'Zoth
+			q(58273, bubbleDownSelf({["timeline"] = { "added 8.3.0.33062", REMOVED_9_0_1 } },{	-- Servant of N'Zoth
 				["races"] = HORDE_ONLY,
 				["description"] = "Granted upon killing 10 Alliance players without dying after you became an Assassin.",
 				["g"] = {
@@ -45,12 +45,12 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 			}),
 		}),
 	})),
-	tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+	tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 		n(-243,	{	-- Bounty (for later). Contains every aspirant gear as well
 			i(184810),	-- Plundered Supplies [Shadowlands-Maldraxxus-(Ore)]
 		}),
 	})),
-	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 		n(ACHIEVEMENTS, {
 			ach(16599, {	-- A Champion's Pursuit
 				crit(1, {	-- Krolkoth the Mountain
@@ -82,13 +82,13 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 			}),
 			ach(17335, {	-- Airborne Tumbler (x1)
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			ach(17336, {	-- Airborne Tumbler (x10)
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
-			ach(17345, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 }, }, {	-- Airborne Tumbler (x50)
+			ach(17345, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 }, }, {	-- Airborne Tumbler (x50)
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["g"] =	{
 					title(492),	-- Skyscourge <Name>
@@ -176,7 +176,7 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 })));
 
 root(ROOTS.PVP, pvp(n(-10058, {	-- World
-	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 		q(72376),	-- looting first War Crate of the day
 		q(72377, {	-- looting first War Crate of the day
 			["name"] = "Warmode Crate Looted",

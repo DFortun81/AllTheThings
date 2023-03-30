@@ -21,7 +21,7 @@ local SUNDERED_ONYX = 192847;
 local TALLSTRIDER_SINEW = 201404;
 local VIBRANT_EMERALD = 192844;
 local WILDERCLOTH = 193050;
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(VENDORS, {
 			n(195770, {	-- Armorsmith Terisk
@@ -524,7 +524,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["g"] = {
 						-- RENOWN 9 --
 					i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
@@ -546,7 +546,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					}),
 						-- RENOWN 15 --
 					i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 100 },
 						},
@@ -562,7 +562,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						},
 					}),
 					i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 100 },
 						},
@@ -758,7 +758,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				},
 			}),
 			n(195769, {	-- Weaponsmith Koref
-				["coord"] = { 32.6, 52.0, VALDRAKKEN },
+				["coord"] = { 36.2, 51.9, VALDRAKKEN },
 				["g"] = {
 						-- RENOWN 29 --
 					i(199736, {	-- Amber Dragonflame Blade

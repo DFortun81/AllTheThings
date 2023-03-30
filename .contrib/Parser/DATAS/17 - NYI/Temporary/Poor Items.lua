@@ -2,27 +2,6 @@
 --       P O O R   Q U A L I T Y   I T E M S   M O D U L E       --
 -------------------------------------------------------------------
 
-local f = root(ROOTS.PoorQualityItems, {
-
-});
-
-local OnUpdateForPoorQualityItems = [[function(t)
-	if not t.initialized then
-		t.initialized = 1;
-		function f(g)
-			if g.itemID then
-				setmetatable(g, _.BaseCommonItem);
-			elseif g.g then
-				for i,o in ipairs(g.g) do f(o); end
-			end
-		end
-		f(t);
-	end
-end]];
-for i,o in ipairs(f) do
-	o.OnUpdate = OnUpdateForPoorQualityItems;
-end
-
 -- Never Implemented Poor Items --
 -- Do not move this elsewhere, please leave it here for now. -Darkal
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
@@ -708,7 +687,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				filter(ONE_HANDED_SWORDS, {
 					i(3278),	-- Aura Proc Damage Sword
-					i(5555),	-- Fast Test 1H Sword, 
+					i(5555),	-- Fast Test 1H Sword,
 					i(14085),	-- Monster - Glaive Vol'jin
 					i(5305),	-- Monster - Sword, Broadsword Silver Hilt
 					i(13504),	-- Monster - Sword, Doomguard
@@ -933,7 +912,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(40183),	-- Monster - Dagger, Northrend B01 Red (Red Flame)
 					i(43598),	-- Monster - Dagger, Northrend D02 Red (Red Flame)
 					i(49154),	-- Monster - Dagger, Zul'aman D02 (Dark)
-					i(49152),	-- Monster - Dagger, Zul'aman D03 (Black) 
+					i(49152),	-- Monster - Dagger, Zul'aman D03 (Black)
 					i(51029),	-- Monster - Icecrown Raid Blood Prince Trash - 1H Dagger
 					i(46841),	-- Monster - Spear, Rusty (1H)
 				}),
@@ -1140,7 +1119,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					}),
 				}),
 				filter(MAIL, {
-					
+
 					n(HEAD, {
 						i(43735),	-- Cryptstalker Headpiece
 						i(43763),	-- Earthshatter Faceguard
@@ -1430,7 +1409,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(50143),	-- Monster - Axe1H, Goblin B01 Brown
 					i(50144),	-- Monster - Axe1H, Goblin B01 Green
 					i(50145),	-- Monster - Axe1H, Goblin B01 Orange
-					i(50146),	-- Monster - Axe1H, Goblin B01 Teal 
+					i(50146),	-- Monster - Axe1H, Goblin B01 Teal
 					i(49673),	-- Monster - Dagger A 04 Dark
 					i(56807),	-- Monster - Dagger B03 Black
 					i(57195),	-- Monster - Dagger Horde A01 Obsidian Flint
@@ -1470,7 +1449,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(50152),	-- Monster - Sword1H, Goblin B01 Blue
 					i(50153),	-- Monster - Sword1H, Goblin B01 Dark
 					i(50154),	-- Monster - Sword1H, Goblin B01 Orange
-					i(50155),	-- Monster - Sword1H, Goblin B01 Teal 
+					i(50155),	-- Monster - Sword1H, Goblin B01 Teal
 					i(77365),	-- Monster - Tyrande's Dagger
 					i(58270),	-- Monster - Wand, Horde A 02 Black (Lightning Enchant)
 				}),

@@ -722,28 +722,28 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		cat(361, {	-- Item Enhancers
 			r(187519, {	-- Savage Ensorcelled Tarot
-				["timeline"] = { "removed 9.0.1" },
+				["timeline"] = { REMOVED_9_0_1 },
 			}),
 			r(187518, {	-- Savage Weapon Crystal
-				["timeline"] = { "removed 9.0.1" },
+				["timeline"] = { REMOVED_9_0_1 },
 			}),
 			r(187495, {	-- Mighty Ensorcelled Tarot
-				["timeline"] = { "removed 9.0.1" },
+				["timeline"] = { REMOVED_9_0_1 },
 			}),
 			r(187494, {	-- Mighty Weapon Crystal
-				["timeline"] = { "removed 9.0.1" },
+				["timeline"] = { REMOVED_9_0_1 },
 			}),
 			r(178248, {	-- Ensorcelled Tarot
-				["timeline"] = { "removed 9.0.1" },
+				["timeline"] = { REMOVED_9_0_1 },
 			}),
 			r(166366, {	-- Weapon Crystal
-				["timeline"] = { "removed 9.0.1" },
+				["timeline"] = { REMOVED_9_0_1 },
 			}),
 			r(397866, {	-- Impressive Weapon Crystal
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			r(397867, {	-- Remarkable Weapon Crystal
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			r(166432),	-- Volatile Crystal
 		}),
@@ -860,7 +860,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(192848, {["timeline"]={"added 7.0.3","removed 8.0.1"}}),	-- Glyph of the Wraith Walker
 			r(225559, {["timeline"]={"added 7.2.0"}}),	-- Glyph of Wrathguard
 			r(225547),	-- Glyph of Yu'lon's Grace
-			r(360882, {["timeline"]={"added 9.1.5"}}),	-- Mark of the Duskwing Raven
+			r(360882, {["timeline"]={ADDED_9_1_5}}),	-- Mark of the Duskwing Raven
 		}),
 		cat(492, {	-- Mass Milling
 			r(209658),	-- Mass Mill Aethril
@@ -1461,13 +1461,13 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { "added 8.1.0" },
 			}),
-			r(344341, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Aerial Chameleon
-			r(344340, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Aquatic Chameleon
+			r(344341, {["timeline"]={ADDED_9_0_2_LAUNCH}}),  -- Glyph of the Aerial Chameleon
+			r(344340, {["timeline"]={ADDED_9_0_2_LAUNCH}}),  -- Glyph of the Aquatic Chameleon
 			r(304036, {["timeline"]={"added 8.2.0"}}),	-- Glyph of the Cold Waves
 			r(304030, {["timeline"]={"added 8.2.0"}}),	-- Glyph of the Dark Depths
 			r(276059),	-- Glyph of the Dolphin
 			r(276121),	-- Glyph of the Humble Flyer
-			r(344335, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Swift Chameleon
+			r(344335, {["timeline"]={ADDED_9_0_2_LAUNCH}}),  -- Glyph of the Swift Chameleon
 			r(289313, {["timeline"]={"added 8.1.0"}}),	-- Glyph of the Tides
 			r(276088),	-- Glyph of the Tideskipper
 		}),
@@ -1494,13 +1494,13 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 8.1.0", "removed 9.0.1" },	-- Might no be correct removed patch
+				["timeline"] = { "added 8.1.0", REMOVED_9_0_1 },	-- Might no be correct removed patch
 			}),
 			q(54478, {	-- Inscribed Methods (H)
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
 				["coord"] = { 42.3, 39.7, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 8.1.0", "removed 9.0.1" },	-- Might no be correct removed patch
+				["timeline"] = { "added 8.1.0", REMOVED_9_0_1 },	-- Might no be correct removed patch
 			}),
 			q(40537, { --Drawing Blood (A)
 				["description"] = "This quest chain requires 150 skill in Kul Tiran Inscription.",
@@ -1612,16 +1612,16 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 	}))),
 	--[[
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 		cat(1410, {	-- Contracts
-			r(354000, {["timeline"]={"added 9.1.0"}}),	-- Contract: Death's Advance
+			r(354000, {["timeline"]={ADDED_9_1_0}}),	-- Contract: Death's Advance
 			r(311412),	-- Contract: Court of Harvesters
 			r(311409),	-- Contract: The Ascended
 			r(359786, {["timeline"]={"added 9.2.0"}}),	-- Contract: The Enlightened
 			r(311411),	-- Contract: The Undying Army
 			r(311410),	-- Contract: The Wild Hunt
 		}),
-		cat(786, sharedDataSelf({ ["timeline"] = { "added 9.1.5" }},{	-- Glyphs
+		cat(786, sharedDataSelf({ ["timeline"] = { ADDED_9_1_5 }},{	-- Glyphs
 			r(367389, {["timeline"]={"added 9.2.0"}}),	-- Glyph of the Spectral Lupine
 			r(367393, {["timeline"]={"added 9.2.0"}}),	-- Glyph of the Spectral Vulpine
 			r(362412),	-- Glyph of the Wild Mushroom
@@ -1680,7 +1680,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		cat(1416, {	-- Vantus Runes
 			r(311453),	-- Vantus Rune: Castle Nathria
-			r(354394, {["timeline"]={"added 9.1.0"}}),	-- Vantus Rune: Sanctum of Domination
+			r(354394, {["timeline"]={ADDED_9_1_0}}),	-- Vantus Rune: Sanctum of Domination
 			r(359890, {["timeline"]={"added 9.2.0"}}),	-- Vantus Rune: Sepulcher of the First Ones
 		}),
 	}))),

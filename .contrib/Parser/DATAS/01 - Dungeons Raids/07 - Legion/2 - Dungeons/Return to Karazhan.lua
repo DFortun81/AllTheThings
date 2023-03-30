@@ -167,7 +167,7 @@ _.Instances = { tier(LEGION_TIER, {
 				115406,	-- Knight
 				115407,	-- Rook
 				115395,	-- Queen
-			}, }), {
+			}},{
 				i(143665),	-- Broken Girdle of Treachery
 				i(143674),	-- Creaking Legplates of the Innocent
 				i(143672),	-- Dented Triptych Shield
@@ -179,7 +179,7 @@ _.Instances = { tier(LEGION_TIER, {
 				i(143668),	-- Tarnished Mithril Chain of Heroism
 				i(143670),	-- Thin-Soled Fiend Slayer Boots
 				i(143667),	-- Worn Battlescar Boots
-			}),
+			})),
 			d(HEROIC_DUNGEON, {
 				e(1820, {	-- Opera Hall: Wikket
 					["crs"] = {

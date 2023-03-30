@@ -2,7 +2,7 @@
 root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(CATA_TIER, {
 		i(185053, {	-- Kodo Serpent Soul
-			["timeline"] = { "added 9.1.5" },
+			["timeline"] = { ADDED_9_1_5 },
 		}),
 		-- #if AFTER 8.2.5.31958
 		inst_tw(78, {	-- Firelands
@@ -265,7 +265,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 			},
 		}),
 		-- #endif
-		inst_tw(66, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- Blackrock Caverns
+		inst_tw(66, bubbleDown({ ["timeline"] = { ADDED_9_1_5 }},{	-- Blackrock Caverns
 			cr(39665, e(105, {	-- Rom'ogg Boncrusher
 				i(188520),	-- Groundrumble Boots
 				i(188506),	-- Inquisition Robes
@@ -371,7 +371,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				i(133420),	-- Arrow of Time
 			})),
 		}),
-		inst_tw(71, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Grim Batol
+		inst_tw(71, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", REMOVED_9_1_5 }},{	-- Grim Batol
 			cr(39625, e(131, {	-- General Umbriss
 				i(133283),	-- Modgud's Blade
 				i(133285),	-- Wildhammer Riding Helm

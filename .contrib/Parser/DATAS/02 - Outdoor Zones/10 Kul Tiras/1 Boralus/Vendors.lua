@@ -14,6 +14,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
+			n(137431, {	-- Annie Lacier
+				["coord"] = { 50.6, 49.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 2130 },	-- club
+					{"select", "itemID", 851 },		-- Cutlass
+					{"select", "itemID", 2139 },	-- dirk
+					{"select", "itemID", 927 },		-- double axe
+					{"select", "itemID", 2028 },	-- hammer
+					{"select", "itemID", 2134 },	-- hand axe
+					{"select", "itemID", 852 },		-- mace
+					{"select", "itemID", 2027 },	-- Scimitar
+					{"select", "itemID", 2131 },	-- shortsword
+				},
+				["g"] = {
+					i(15905),	-- Brass Knuckles
+				},
+			}),
 			n(142165, {	-- Arwin Blakemore <Thrift Goods>
 				["coord"] = { 66.5, 40.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -2340,6 +2358,20 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					{"sub", "common_vendor", 29491},	-- Karandonna <Clothier>
 				},
 			}),
+			n(123675, {	-- Patrick Markson
+				["coord"] = { 74.0, 16.2, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
+					{"select", "itemID", 2511 },	-- Hunter's Boomstick
+					{"select", "itemID", 3023 },	-- Large Bore Blunderbuss
+					{"select", "itemID", 2509 },	-- Ornate Blunderbuss
+					{"select", "itemID", 2510 },	-- Solid Blunderbuss
+				},
+				["g"] = {
+					i(3025),	-- BKP 42 "Ultra"
+				},
+			}),
 			n(135808, {	-- Provisioner Fray <Proudmoore Admiralty Emissary>
 				["coord"] = { 67.5, 21.5, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -2528,7 +2560,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["g"] = {
 					i(163042, {	-- Mighty Caravan Brutosaur (MOUNT!)
 						["cost"] = 50000000000,	-- 5,000,000g
-						["timeline"] = { "added 8.0.1", "removed 9.0.1"}
+						["timeline"] = { "added 8.0.1", REMOVED_9_0_1 },
 					}),
 					i(163568, {	-- Lost Platysaur (PET!)
 						["cost"] = 1000000000,	-- 100,000g

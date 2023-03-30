@@ -179,7 +179,7 @@ root(ROOTS.WorldDrops, {
 				["timeline"] = { "added 9.2.0.42423" },
 			}),
 			i(186160, {	-- Locked Artifact Case
-				["timeline"] = { "added 9.1.0.39185" },
+				["timeline"] = { ADDED_9_1_0 },
 				["sym"] = { {
 					"select", "itemID",
 					-- Last Updated: 2022-05-02, Crieve. 28 items total, no exclusives.
@@ -225,10 +225,10 @@ root(ROOTS.WorldDrops, {
 			}),
 			i(5758),	-- Mithril Lockbox
 			i(180532, {	-- Oxxein Lockbox
-				["timeline"] = { "added 9.0.1.36216" },
+				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}),
 			i(180522, {	-- Phaedrum Lockbox
-				["timeline"] = { "added 9.0.1.36216" },
+				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}),
 			i(43575, {	-- Reinforced Junkbox
 				["timeline"] = { "added 3.0.2.8905" },
@@ -259,7 +259,7 @@ root(ROOTS.WorldDrops, {
 				i(3395),	-- Recipe: Limited Invulnerability Potion
 			}),
 			i(190954, {	-- Serevite Lockbox
-				["timeline"] = TIMELINE_DF_REL,
+				["timeline"] = TIMELINE_10_0_2_LAUNCH,
 				["sym"] = {{"select","itemID",
 					-- add notable Item IDs here
 					-- 12345,	-- Item name
@@ -269,7 +269,7 @@ root(ROOTS.WorldDrops, {
 				-- },
 			}),
 			i(180533, {	-- Solenium Lockbox
-				["timeline"] = { "added 9.0.1.36216" },
+				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}),
 			i(4637,  {	-- Steel Lockbox
 				i(11204),	-- Formula: Enchant Bracer - Greater Versatility / CLASSIC: Formula: Enchant Bracer - Greater Versatility (RECIPE!)
@@ -371,7 +371,7 @@ root(ROOTS.WorldDrops, {
 				i(12024),	-- Vanadium Talisman
 			}),
 			i(179311, {	-- Synvir Lockbox
-				["timeline"] = { "added 9.0.1.36216" },
+				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}),
 			i(5759, {	-- Thorium Lockbox
 

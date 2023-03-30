@@ -751,10 +751,10 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					["crs"] = { 158041 },
 					["g"] = {
 						ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
-							["timeline"] = { "added 8.3.0", "removed 9.0.1" },
+							["timeline"] = { "added 8.3.0", REMOVED_9_0_1 },
 						}),
 						i(174863, {	-- Spawn of Vexiona
-							["timeline"] = { "added 8.3.0", "removed 9.0.1" },
+							["timeline"] = { "added 8.3.0", REMOVED_9_0_1 },
 						}),
 						i(175062),	-- Malefic Core
 						i(174452),	-- Eye of Corruption (PET!)
@@ -984,25 +984,25 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					["crs"] = { 158041 },
 					["g"] = {
 						ach(14069, {	-- Cutting Edge: N'Zoth, the Corruptor
-							["timeline"] = { "added 8.3.0", "removed 9.0.1" },
+							["timeline"] = { "added 8.3.0", REMOVED_9_0_1 },
 						}),
 						ach(14055, {	-- Mythic: N'Zoth, the Corruptor
 							title(417),	-- the Uncorrupted
 						}),
 						ach(14040),	-- Mythic: N'Zoth the Corruptor Guild Run
-						ach(14071, bubbleDownSelf({["timeline"] = { "added 8.3.0", "removed 9.0.1" } }, {	-- Hall of Fame: N'Zoth the Corruptor (Alliance)
+						ach(14071, bubbleDownSelf({["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {	-- Hall of Fame: N'Zoth the Corruptor (Alliance)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(416),	-- <Name>, Famed Slayer of N'Zoth
 							},
 						})),
-						ach(14072, bubbleDownSelf({["timeline"] = { "added 8.3.0", "removed 9.0.1" } }, {	-- Hall of Fame: N'Zoth the Corruptor (Horde)
+						ach(14072, bubbleDownSelf({["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {	-- Hall of Fame: N'Zoth the Corruptor (Horde)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(416),	-- <Name>, Famed Slayer of N'Zoth
 							},
 						})),
-						i(173886, bubbleDownSelf({["timeline"] = { "added 8.3.0", "removed 9.0.1" } }, {	-- Bursting Void Droplet
+						i(173886, bubbleDownSelf({["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {	-- Bursting Void Droplet
 						})),
 						i(175062),	-- Malefic Core
 						i(174452),	-- Eye of Corruption (PET!)

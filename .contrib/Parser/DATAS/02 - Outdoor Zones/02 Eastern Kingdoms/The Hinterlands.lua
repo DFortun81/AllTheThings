@@ -1744,7 +1744,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(17050, {	-- Chan's Imperial Robes
-							["timeline"] = { "removed 4.0.3", "added 9.0.0" },
+							["timeline"] = { "removed 4.0.3", REMOVED_9_0_1 },
 						}),
 					},
 				}),

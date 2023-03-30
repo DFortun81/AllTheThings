@@ -412,7 +412,7 @@ _.Factions =
 				ach(6700),	-- Pandarian Mix Master
 				ach(5467),	-- Set the Oven to "Cataclysmic"
 				ach(5028, {	-- Skinnin' for a Livin'
-					["timeline"] = { REMOVED_DF_PRE2 },
+					["timeline"] = { ADDED_10_0_2 },
 				}),
 				ach(5036),	-- That's a Lot of Bait
 				ach(4860),	-- Working as a Team

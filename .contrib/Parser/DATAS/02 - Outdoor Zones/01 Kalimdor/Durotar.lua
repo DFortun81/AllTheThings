@@ -1483,6 +1483,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								objective(1, {	-- 0/12 Vile Familiar
 									["provider"] = { "n", 3101 },	-- Vile Familiar
 								}),
+								i(12449, {	-- Primitive Bow
+									["timeline"] = { "removed 1.7.0" },
+								}),
 								i(4924, {	-- Primitive Club
 									["timeline"] = { "removed 4.0.3" },
 								}),
@@ -1561,27 +1564,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(635, {	-- Adder
-					["crs"] = { 61325 },	-- Adder
-				}),
-				p(468, {	-- Creepy Crawly
-					["crs"] = { 62116 },	-- Creepy Crawly
-				}),
-				p(467, {	-- Dung Beetle
-					["crs"] = { 62115 },	-- Dung Beetle
-				}),
-				p(448, {	-- Hare
-					["crs"] = { 61751 },	-- Hare
-				}),
-				p(466, {	-- Spiny Lizard
-					["crs"] = { 62114 },	-- Spiny Lizard
-				}),
-				p(420, {	-- Toad
-					["crs"] = { 61369 },	-- Toad
-				}),
-				p(418, {	-- Water Snake
-					["crs"] = { 61367 },	-- Water Snake
-				}),
+				pet(635),	-- Adder
+				pet(468),	-- Creepy Crawly
+				pet(467),	-- Dung Beetle
+				pet(448),	-- Hare
+				pet(466),	-- Spiny Lizard
+				pet(420),	-- Toad
+				pet(418),	-- Water Snake
 			})),
 			-- #endif
 			-- #if ANYCLASSIC
@@ -2288,7 +2277,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25193, {	-- Lost But Not Forgotten
 					["qg"] = 3193,	-- Misha Tor'kren
-					["sourceQuest"] = 25187,	-- Lost in the Floods
+					["sourceQuest"] = 25188,	--  Watershed Patrol
 					["coord"] = { 43.3, 30.6, DUROTAR },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,

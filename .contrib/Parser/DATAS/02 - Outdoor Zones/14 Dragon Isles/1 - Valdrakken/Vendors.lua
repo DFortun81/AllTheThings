@@ -3,7 +3,7 @@
 ---------------------------------------------------
 local ARTISANS_METTLE = 190456;
 local ASPECTS_TOKEN_OF_MERIT = 201836;
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(VALDRAKKEN, {
 		n(VENDORS, {
 			n(198587, {	-- Andoris <Enchanting Supplies>
@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["g"] = {
 					i(204339, {	-- Satchel of Coalescing Chaos
 						["cost"] = { { "i", 190454, 80 }, },	-- 80x Primal Chaos
-						["timeline"] = { ADDED_DF_0_5 },
+						["timeline"] = { ADDED_10_0_5 },
 						["g"] = {
 							i(190454),	-- Primal Chaos
 						},

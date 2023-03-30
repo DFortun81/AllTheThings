@@ -4019,12 +4019,12 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Impressive Steelforged Essence",
 					["recipeID"] = 397853,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Impressive Truesteel Essence",
 					["recipeID"] = 397856,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Relic of the Past I",
@@ -4049,12 +4049,12 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Remarkable Steelforged Essence",
 					["recipeID"] = 397855,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Remarkable Truesteel Essence",
 					["recipeID"] = 397857,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 			},
 		},
@@ -4088,32 +4088,32 @@ profession(BLACKSMITHING, {
 			["groups"] = {
 				{
 					["name"] = "Savage Truesteel Essence",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187515,
 				},
 				{
 					["name"] = "Savage Steelforged Essence",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187514,
 				},
 				{
 					["name"] = "Mighty Truesteel Essence",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187491,
 				},
 				{
 					["name"] = "Mighty Steelforged Essence",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187490,
 				},
 				{
 					["name"] = "Steelforged Essence",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 171710,
 				},
 				{
 					["name"] = "Truesteel Essence",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 171708,
 				},
 				{
@@ -4547,7 +4547,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Demonsteel Pauldrons",
-					["u"] = REMOVED_FROM_GAME,	-- rank 3 used to drop from RBG wins but not available after Legion
+					["timeline"] = { "removed 8.0.1", ADDED_10_0_7 },
 					["previousRecipeID"] = 182976,
 					["recipeID"] = 182984,
 				},
@@ -5864,7 +5864,7 @@ profession(BLACKSMITHING, {
 			},
 		},
 	}))),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 		applytraining({
 			["name"] = "Quest Recipes",
 			["categoryID"] = 1522,

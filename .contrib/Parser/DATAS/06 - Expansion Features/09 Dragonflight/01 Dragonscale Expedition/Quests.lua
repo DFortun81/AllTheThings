@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(QUESTS, {
 				-- RENOWN 1 --
@@ -391,6 +391,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 188265 },	-- Rae'ana
 				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
 				["g"] = {
+					i(197358, {	-- Renewed Proto-Drake: Curved Spiked Brow (DM!)
+						["timeline"] = { ADDED_10_0_7 },
+					}),
 					i(197395),	-- Renewed Proto-Drake: Harrier Pattern (DM!)
 					i(197402),	-- Renewed Proto-Drake: Spiked Club Tail (DM!)
 					i(197374),	-- Renewed Proto-Drake: Swept Horns (DM!)
@@ -696,7 +699,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["isRepeatable"] = true,
 				["g"] = {
+					-- #if BEFORE 10.0.7
 					i(199472),	-- Overflowing Dragon Expedition Supply Pack
+					-- #else
+					i(204378, {	-- Brimming Dragonscale Expedition Supply Pack
+						["timeline"] = { ADDED_10_0_7 },
+					}),
+					-- #endif
 				},
 			}),
 
@@ -766,7 +775,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		q(72401),	-- Triggered immediately after reaching renown 13
 		q(72756),	-- Triggered with 'Next Steps' (66128)
@@ -807,7 +816,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TI
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		q(73696),	-- Flag at 24.4, 55.6, THE_FORBIDDEN_REACH
 		q(73699),	-- Flag at 55.3, 26.4, THE_FORBIDDEN_REACH

@@ -296,12 +296,14 @@ root(ROOTS.Zones, {
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
-					p(635, {	-- Adder
-						["cr"] = 61325,	-- Adder
-					}),
-					p(414, {	-- Scorpid
-						["cr"] = 61326,	-- Scorpid
-					}),
+					["sym"] = {{"select","speciesID",
+						635,	-- Adder
+					}},
+					["groups"] = {
+						p(414, {	-- Scorpid
+							["cr"] = 61326,	-- Scorpid
+						}),
+					},
 				})),
 				-- #endif
 				-- #if ANYCLASSIC
@@ -2642,14 +2644,14 @@ root(ROOTS.Zones, {
 					}),
 					q(49862, {	-- To Outland! [Alliance]
 						["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
-						["timeline"] = { "added 7.3.5.25600", "removed 9.0" },
+						["timeline"] = { "added 7.3.5.25600", REMOVED_9_0_1 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(49816, {	-- To Outland! [Horde]
 						["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
-						["timeline"] = { "added 7.3.5.25600", "removed 9.0" },
+						["timeline"] = { "added 7.3.5.25600", REMOVED_9_0_1 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -3021,9 +3023,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 26.4, 60.2, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							i(30754),	-- Ancient Bone Mace
+							i(30750),	-- Draenic Warblade
+							i(30749),	-- Draenic Sparring Blade
 							i(30755, {	-- Mag'hari Fighting Claw
 								["isLimited"] = true,
 							}),
+							i(30752),	-- Mag'hari Battleaxe
+							i(30751),	-- Mag'hari Light Axe
 							i(30753, {	-- Warphorn Spear
 								["isLimited"] = true,
 							}),
@@ -3361,9 +3368,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 23.2, 40.0, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							i(30754),	-- Ancient Bone Mace
+							i(30749),	-- Draenic Sparring Blade
+							i(30750),	-- Draenic Warblade
 							i(30755, {	-- Mag'hari Fighting Claw
 								["isLimited"] = true,
 							}),
+							i(30752),	-- Mag'hari Battleaxe
+							i(30751),	-- Mag'hari Light Axe
 							i(30753, {	-- Warphorn Spear
 								["isLimited"] = true,
 							}),

@@ -1,14 +1,13 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-
-root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.1" } }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	n(CONDUITS, {
 		i(187507, {	-- Adaptive Armor Fragment
-			["timeline"] = { "added 9.1.0" },
+			["timeline"] = { ADDED_9_1_0 },
 		}),
 		i(187506, {	-- Condensed Anima Sphere
-			["timeline"] = { "added 9.1.0" },
+			["timeline"] = { ADDED_9_1_0 },
 		}),
 		cl(DEATHKNIGHT, {
 			i(181848),	-- Accelerated Cold
@@ -111,7 +110,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
-		cl(EVOKER, bubbleDown({ ["timeline"] = { ADDED_DF_PRE } }, {
+		cl(EVOKER, bubbleDown({ ["timeline"] = { ADDED_10_0_0 } }, {
 			i(199454),	-- Bronze Acceleration
 			i(199457),	-- Circle of Life
 			i(199460),	-- Graceful Stride

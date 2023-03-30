@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(ISKAARA_TUSKARR, {
 		n(QUESTS, {
 				-- RENOWN 1 --
@@ -139,9 +139,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 196544 },	-- Norukk
 				["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
 				["g"] = {
-					i(197132),	-- Highland Drake: Spiked Cheek (DM!)
-					i(197114),	-- Highland Drake: Multi-Horned Head (DM!)
 					i(197101),	-- Highland Drake: Bushy Brow (DM!)
+					i(197155, {	-- Highland Drake: Finned Neck (DM!)
+						["timeline"] = { ADDED_10_0_7 },
+					}),
+					i(197114),	-- Highland Drake: Multi-Horned Head (DM!)
+					i(197132),	-- Highland Drake: Spiked Cheek (DM!)
 				},
 			}),
 			q(72388, {	-- Dragon Isles Supplies
@@ -703,9 +706,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 				["isRepeatable"] = true,
 				["g"] = {
+					-- #if BEFORE 10.0.7
 					i(199473, {	-- Overflowing Iskaaran Supply Pack
 						i(191850),	-- Broken Serevite Blade Tip
 					}),
+					-- #else
+					i(204379, {	-- Brimming Iskaaran Supply Pack
+						["timeline"] = { ADDED_10_0_7 },
+					}),
+					-- #endif
 				},
 			}),
 		}),

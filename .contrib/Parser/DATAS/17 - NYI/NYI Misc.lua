@@ -52,6 +52,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(201928),	-- Ohn'ir Windprayer Talisman
 				i(201251),	-- Pillaged Contender's Strongbox
 			})),
+			-- 10.0.7
+				i(203854),	-- ?? doesnt load
+				i(203798),	-- Copy Bag
 		}),
 	}),
 }));

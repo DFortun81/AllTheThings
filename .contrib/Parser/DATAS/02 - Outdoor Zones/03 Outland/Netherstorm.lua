@@ -2045,6 +2045,15 @@ root(ROOTS.Zones, {
 					}),
 					n(20112, {	-- Wind Trader Tuluman <Weapon Merchant>
 						["coord"] = { 34.6, 37.8, NETHERSTORM },
+						["sym"] = {
+							{"select", "itemID", 30754 },    -- Ancient Bone Mace
+							{"select", "itemID", 30749 },    -- Draenic Sparring Blade
+							{"select", "itemID", 30750 },    -- Draenic Warblade
+							{"select", "itemID", 30752 },    -- Maghari Battleaxe
+							{"select", "itemID", 30755 },    -- Maghari Fighting Claw
+							{"select", "itemID", 30751 },    -- Maghari Light Axe
+							{"select", "itemID", 30753 },    -- Warphorn Spear
+						},
 						["groups"] = {
 							i(30755, {	-- Mag'hari Fighting Claw
 								["isLimited"] = true,

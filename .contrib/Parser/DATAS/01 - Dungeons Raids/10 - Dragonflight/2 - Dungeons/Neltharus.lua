@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	inst(1199, {	-- Neltharus
 		["coord"] = { 25.5, 56.9, THE_WAKING_SHORES },
 		["maps"] = {
@@ -174,10 +174,4 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL 
 			}),
 		},
 	})
-})));
-
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
-	inst(1199, {	-- Neltharus
-		--q(70724),	-- first time entering dungeon as blacksmith // [From Errors: I pop for a mage In Ohn Plains] // [From Errors: got this for completing The Nokhud Offensive: Founders Keepers (66658) a warlock]
-	}),
 })));

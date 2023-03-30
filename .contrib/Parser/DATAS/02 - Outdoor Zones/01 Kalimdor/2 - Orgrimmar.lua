@@ -2790,7 +2790,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							r(404740, {	-- Cataclysm Crushing
-								["timeline"] = { ADDED_DF_0_7 },
+								["timeline"] = { ADDED_10_0_7 },
 							}),
 						},
 					}),
@@ -2899,7 +2899,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(62265, {	-- A New Adventure Awaits
 					["description"] = "This quest is automatically offered upon reaching the specified level.",
-					["timeline"] = { "created 9.0.2", ADDED_DF_PRE2 },
+					["timeline"] = { "created 9.0.2", ADDED_10_0_2 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25160, {	-- A Present for Lila
@@ -2928,6 +2928,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 					["groups"] = FISHING_AWARD_GROUPS,
 				}),
+				q(60360, {	-- An Urgent Meeting
+					["sourceQuests"] = { 60359 },	-- Home Is Where the Hearth Is
+					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
+					["coord"] = { 70.9, 49.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_9_0_1 },
+				}),
 				q(7832, {	-- Additional Runecloth [Darkspear Trolls]
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["sourceQuest"] = 7824,	-- A Donation of Runecloth
@@ -2953,7 +2960,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(62568, {	-- Adventurers Wanted: Chromie's Call
 					["qg"] = 168431,	-- Warlord Breka Grimaxe
 					["coord"] = { 48.3, 71.4, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3027,6 +3034,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				q(60361, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Battle for Azeroth: Mission Statement
+					["sourceQuests"] = { 60360 },	-- An Urgent Meeting
+					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
+					["coord"] = { 48.3, 71.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(178942),	-- War-Chain of the Horde
+					},
+				})),
 				q(1508, {	-- Blind Cazul
 					["qg"] = 5909,	-- Cazul
 					["sourceQuests"] = {
@@ -3097,7 +3113,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 60123,	-- Burning Crusade: To Outland!
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["repeatable"] = true,
@@ -3105,7 +3121,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60123, {	-- Burning Crusade: To Outland!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["isBreadcrumb"] = true,
@@ -3139,7 +3155,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60887, {	-- Cataclysm: Onward to Adventure in Kalimdor
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -3450,11 +3466,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 187758,	-- Zaa'je
 					["sourceQuest"] = 66253,	-- Stolen Shipments
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_9_2_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(191682, {	-- Explosive Pie
-							["timeline"] = { ADDED_SL_S4 },
+							["timeline"] = { ADDED_9_2_5 },
 						}),
 					},
 				}),
@@ -3580,7 +3596,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60970, {	-- Legion: Onward to Adventure in the Broken Isles
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["repeatable"] = true,
@@ -3659,7 +3675,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60964, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["repeatable"] = true,
@@ -3667,7 +3683,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60126, {	-- Mists of Pandaria: To Pandaria!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["isBreadcrumb"] = true,
@@ -3822,11 +3838,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(66253, {	-- Stolen Shipments
 					["qg"] = 187758,	-- Zaa'je
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_9_2_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(191408, {	-- Explosive Pie
-							["timeline"] = { ADDED_SL_S4 },
+							["timeline"] = { ADDED_9_2_5 },
 						}),
 					},
 				}),
@@ -4095,7 +4111,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE 9.1.0
 						i(63917, {	-- Truthbreaker Shield [Not listed, but awards on completing quest] [9.1: was NOT received when completed. 2021-09-25]
 							-- Crieve NOTE: This appears to have been an Alliance quest reward in SW.
-							["timeline"] = { "added 4.0.3.13277", "removed 9.1.0" },
+							["timeline"] = { "added 4.0.3.13277", REMOVED_9_1_0 },
 						}),
 						-- #endif
 					},
@@ -4154,7 +4170,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60968, {	-- Warlords of Draenor: Onward to Adventure in Draenor
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["repeatable"] = true,
@@ -4253,7 +4269,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["sourceQuest"] = 60097,	-- Wrath of the Lich King: To Northrend!
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["repeatable"] = true,
@@ -4261,7 +4277,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(60097, {	-- Wrath of the Lich King: To Northrend!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["isBreadcrumb"] = true,
 				}),
@@ -4330,9 +4346,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				n(175050, {	-- Aneka Melae
+				n(175050, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Aneka Melae
 					["coord"] = { 37.5, 71.4, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						n(PVP_ASPIRANT, {
@@ -4535,7 +4550,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							}),
 						}),
 					},
-				}),
+				})),
 				n(52809, {	-- Blax Bottlerocket <Toys and Novelties>
 					["coords"] = {
 						{ 58.2, 62.6, ORGRIMMAR },
@@ -4669,9 +4684,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
-				n(179897, {	-- Ca'nees
+				n(46742, {	-- Brunda 
+					["coord"] = { 54.6, 50.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { "added 4.0.1." },
+					["groups"] = {
+						i(3422),    -- Beautiful Wildflowers
+						i(3420),    -- Black Rose
+						i(3424),    -- Bouquet Of Black Roses
+						i(3423),    -- Bouquet Of White Roses
+						i(3419),    -- Red Rose
+						i(3421),    -- Simple Wildflowers
+					},
+				}),
+				n(179897, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Ca'nees
 					["coord"] = { 40.0, 61.0, ORGRIMMAR },
-					["timeline"] = { "added 9.1.0.39226" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(187009),	-- Dazzling Spectacles
@@ -4680,7 +4707,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(186090),	-- Simple Glasses
 						i(187010),	-- Tasteful Eyeglasses
 					},
-				}),
+				})),
 				n(50477, {	-- Champion Uru'zin <Darkspear Quartermaster>
 					["coord"] = { 49.9, 58.1, ORGRIMMAR },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -4723,16 +4750,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						vicioussaddle(i(140348)),	-- Vicious Warstrider (MOUNT!)
 						vicioussaddle(i(173713)),	-- Vicious White Bonesteed (MOUNT!)
 						vicioussaddle(i(184013, {	-- Vicious War Spider (H) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 						vicioussaddle(i(186179, {	-- Vicious War Gorm (H) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 						vicioussaddle(i(187680, {	-- Vicious War Gulper (H) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 						vicioussaddle(i(187642, {	-- Vicious Warstalker (H) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 					}),
 				}),
@@ -5033,6 +5060,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 					},
 				}),
+				n(4043, {	-- Galthuk <Two-Handed Weapons Merchant>
+					["coord"] = { 76.0, 37.2, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(2523),	-- Bullova
+						i(2521),	-- Flamberge
+						i(2531),	-- Great Axe
+						i(73210, {	-- Trainee's Sword
+							["timeline"] = { ADDED_10_0_7 },
+						}),
+						i(2525),	-- War Hammer
+						i(2533),	-- War Maul
+						i(2529),	-- Zweihander
+					},
+				}),
 				-- #if NOT ANYCLASSIC
 				-- CRIEVE NOTE: I've never been a fan of Tabard Vendors, they're too all encompassing.
 				-- Not including it in Classic for now, going to use a symlink instead at some point but don't have time right now. Just want this merge to be finished!
@@ -5188,6 +5230,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 49.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(3024),    -- Bkp 2700 Enforcer
+						i(3025),    -- Bkp 42 Ultra
+						i(3027),    -- Heavy Recurve Bow
+						i(2511),    -- Hunters Boomstick
+						i(3023),    -- Large Bore Blunderbuss
+						i(2509),    -- Ornate Blunderbuss
+						i(3026),    -- Reinforced Bow
 						-- #if AFTER CATA
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,
@@ -5199,19 +5248,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						-- #endif
-					},
-				}),
-				n(168623, {	-- Kazak Darkscream <Warlock Trainer>
-					["coord"] = { 74.6, 47.2, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36228" },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(189719, {	-- Barbed Collar of the Incubus
-							["timeline"] = { "added 9.2.0.42423" },
-						}),
-						i(189720, {	-- Barbed Collar of the Succubus
-							["timeline"] = { "added 9.2.0.42423" },
-						}),
 					},
 				}),
 				n(48510, {	-- Kall Worthaton <Trike Dealer>
@@ -5234,6 +5270,52 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
+					},
+				}),
+				n(3331, {	-- Kareth
+					["coord"] = { 46.8, 63.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
+					},
+				}),
+				n(5816, {	-- Katis
+					["coord"] = { 45.8, 57.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(5239),    -- Blackbone Wand
+						i(5210),    -- Burning Wand
+						i(5236),    -- Combustible Wand
+						i(5211),    -- Dusk Wand
+						i(5209),    -- Gloom Wand
+						i(5347),    -- Pestilent Wand
+						i(5238),    -- Pitchwood Wand
+						i(5208),    -- Smoldering Wand
+					},
+				}),
+				n(168623, {	-- Kazak Darkscream <Warlock Trainer>
+					["coord"] = { 74.6, 47.2, ORGRIMMAR },
+					["timeline"] = { ADDED_9_0_1 },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(189719, {	-- Barbed Collar of the Incubus
+							["timeline"] = { ADDED_9_2_0 },
+						}),
+						i(189720, {	-- Barbed Collar of the Succubus
+							["timeline"] = { ADDED_9_2_0 },
+						}),
 					},
 				}),
 				n(3346, {	-- Kithas <Enchanting Supplies>
@@ -5274,6 +5356,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6523),	-- Buckled Harness
 						i(6525),	-- Grunt's Harness
 						i(6524),	-- Studded Leather Harness
+					},
+				}),
+				n(8122, {	-- Kizzak Sparks
+					["coord"] = { 57.8, 56.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					["groups"] = {
+						i(8626),	-- Blue Sparkler
+						i(8625),	-- White Sparkler
+						i(8624),	-- Red Sparkler
+					},
+				}),
+				n(3360, {	-- Koru 
+					["coord"] = { 76.2, 37.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 854 },    -- Quarter Staff
+					},
+					["groups"] = {
+						i(925),		-- Flail
+						i(2028),	-- Hammer
+						i(924),	-- Maul
+						i(2026),	-- Rock Hammer
 					},
 				}),
 				n(3348, {	-- Kor'geld <Alchemy Supplies>
@@ -5929,7 +6038,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3321, {	-- Morgum <Leather Armor Merchant>
 					["coord"] = { 60.0, 55.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
+					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
 						-- Now any class and race can buy this
 						-- DRUID --
 						i(6124),	-- Novice's Pants
@@ -5949,57 +6058,90 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				-- #endif
+				n(46718, {	-- Moraka
+					["coord"] = { 55.8, 55.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 79740 },    -- Plain Wooden Staff
+					},
+				}),
+				n(3330, {	-- Muragus  
+					["coord"] = { 46.0, 57.8, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(2527),	-- Battle Staff
+						i(2535),	-- War Staff
+					},
+				}),
 				n(46512, {	-- Naros <Plate Armor Merchant>
 					["coord"] = { 45.0, 77.6, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 62260 },    -- Grunts Chain Belt
+						{"select", "itemID", 62261 },    -- Grunts Chain Boots
+						{"select", "itemID", 62262 },    -- Grunts Chain Bracers
+						{"select", "itemID", 62266 },    -- Grunts Chain Circlet
+						{"select", "itemID", 62263 },    -- Grunts Chain Gloves
+						{"select", "itemID", 62264 },    -- Grunts Chain Leggings
+						{"select", "itemID", 62265 },    -- Grunts Chain Vest
+						{"select", "itemID", 62253 },    -- Grunts Plate Armor
+						{"select", "itemID", 62254 },    -- Grunts Plate Belt
+						{"select", "itemID", 62255 },    -- Grunts Plate Boots
+						{"select", "itemID", 62256 },    -- Grunts Plate Bracers
+						{"select", "itemID", 62257 },    -- Grunts Plate Gloves
+						{"select", "itemID", 62259 },    -- Grunts Plate Helm
+						{"select", "itemID", 62258 },    -- Grunts Plate Leggings
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+					},
 					["groups"] = {
 						-- #if AFTER 10.0.5
 						-- Now any class and race can buy this
 						-- PALADIN --
 						i(24146, {	-- Initiate's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52549, {	-- Initiate's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(24145, {	-- Initiate's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(58248, {	-- Initiate's Vest
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(58237, {	-- Initiate's Vest
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 
 						-- WARRIOR --
 						i(140, {	-- Brawler's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(139, {	-- Brawler's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(58245, {	-- Brawler's Vest
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(40, {	-- Recruit's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(20903, {	-- Recruit's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(39, {	-- Recruit's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(20902, {	-- Recruit's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(20904, {	-- Recruit's Tunic
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(58231, {	-- Recruit's Vest
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						-- #endif
 					},
@@ -6039,6 +6181,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(44975, {	-- Old Umbehto
+					["coord"] = { 35.0, 67.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { "added 4.0.3." },
+					["sym"] = {
+						{"select", "itemID", 6365 },    -- Strong Fishing Pole
+					},
+				}),
 				n(3317, {	-- Ollanus <Cloth Armor Merchant>
 					["coord"] = { 60.6, 58.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -6050,86 +6200,92 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- Now any class and race can buy this
 						-- MAGE --
 						i(55, {	-- Apprentice's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(20895, {	-- Apprentice's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(1395, {	-- Apprentice's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52681, {	-- Apprentice's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(20894, {	-- Apprentice's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52546, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(6140, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(20893, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 
 						-- PRIEST --
 						i(1396, {	-- Acolyte's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(51, {	-- Neophyte's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52, {	-- Neophyte's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52680, {	-- Neophyte's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(6098, {	-- Neophyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(6144, {	-- Neophyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52547, {	-- Neophyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(20891, {	-- Neophyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 
 						-- WARLOCK --
 						i(1396, {	-- Acolyte's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52679, {	-- Acolyte's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52543, {	-- Acolyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(6129, {	-- Acolyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(20892, {	-- Acolyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(59, {	-- Acolyte's Shoes
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 
 						-- ??? --
-						i(6126),	-- Trapper's Pants
-						i(6127),	-- Trapper's Boots
+						i(52556, {	-- Initiate's Boots
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(6126, {	-- Trapper's Pants
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(6127, {	-- Trapper's Boots
+							["timeline"] = { ADDED_10_0_5 }
+						}),
 						-- #endif
 					},
 				}),
-				n(169166, {	-- Provisioner Jin'hake
+				n(169166, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Provisioner Jin'hake
 					["description"] = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
 					["coord"] = { 72.6, 44.6, ORGRIMMAR },
-					["timeline"] = { "added 9.0.1.36216" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(175161),	-- Expeditionary Axe
@@ -6140,7 +6296,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(175163),	-- Expeditionary Quarterstaff
 						i(175164),	-- Expeditionary Staff
 					},
-				}),
+				})),
 				n(46359, {	-- Punra <Blacksmithing Supplies>
 					["coord"] = { 45.0, 77.6, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },
@@ -6196,6 +6352,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					}),
 				}),
+				n(3334, {	-- Rekkul 
+					["coord"] = { 44.0, 58.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(4565),	-- Simple Dagger
+					},
+				}),
 				n(52033, {	-- Rogoc <Bloodthirsty Gladiator>
 					["coord"] = { 37.8, 71.6, ORGRIMMAR },
 					["timeline"] = { "added 4.0.6.13596" },
@@ -6216,7 +6379,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3319, {	-- Sana <Mail Armor Merchant>
 					["coord"] = { 45.6, 77.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
+					["sym"] = {
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 2445 },    -- Large Metal Shield
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 285 },    -- Scalemail Vest
+					},
+					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
+						i(17187),	-- Banded Buckler
+						i(2445),	-- Large Metal Shield
+						i(2398),    -- Light Chain Armor
+						i(2399),    -- Light Chain Belt
+						i(2401),    -- Light Chain Boots
+						i(2402),    -- Light Chain Bracers
+						i(2403),    -- Light Chain Gloves
+						i(2400),    -- Light Chain Leggings
+						i(17185),	-- Round Buckler
+						i(17188),	-- Ringed Buckler
+						i(1202),	-- Wall Shield
+						i(2376),	-- Worn Heater Shield
 						-- Now any class and race can buy this
 						-- HUNTER --
 						i(129),	-- Rugged Trapper's Boots
@@ -6378,6 +6568,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(17062),	-- Recipe: Mithril Head Trout
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 						i(6369),	-- Recipe: Rockscale Cod
+						i(6365),	-- Strong Fishing Pole
 					},
 				}),
 				n(49737, {	-- Shazdar <Sous Chef>
@@ -6414,6 +6605,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso
 						chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle
 						chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo
+					},
+				}),
+				n(3361, {	-- Shoma <Weapon Vendor>
+					["coord"] = { 76.0, 37.8, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(15905),	-- Brass Knuckles
+						i(2520),	-- Broadsword
+						i(1198),	-- Claymore
+						i(851),		-- Cutlass
+						i(922),		-- Dacian Falx
+						i(15904),	-- Deadly Fist Blades
+						i(2024),	-- Espadon
+						i(2528),	-- falchion
+						i(2207),	-- Jambiya
+						i(2209),	-- Kris
+						i(15906, {	-- Left-Handed Brass Knuckles
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15909, {	-- Left-Handed Blades
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15907, {	-- Left-Handed Claw
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(923),		-- Longsword
+						i(2526),	-- Main Gauche
+						i(2208),	-- Poniad
+						i(2534),	-- Rondel
+						i(2027),	-- Scimitar
+						i(15903),	-- Slicing Claw
 					},
 				}),
 				n(3413, {	-- Sovik <Engineering Supplies>
@@ -6583,7 +6805,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						currency(361, {	-- Illustrious Jewelcrafter's Token
 							["cost"] = { { "i", 204356, 10 }, },	-- 10x Illustrious Gemdust
-							["timeline"] = { ADDED_DF_0_7 },
+							["timeline"] = { ADDED_10_0_7 },
 						}),
 						i(71928, {	-- Design: Accurate Shadow Spinel
 							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
@@ -6823,8 +7045,60 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				n(5812, {	-- Tumi <Heavy Armor Merchant>
 					["coord"] = { 75.8, 35.2, ORGRIMMAR },
-					["sym"] = { { "sub", "common_vendor", 46512 } },	-- Naros <Plate Armor Merchant>
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(2419),    -- Augmented Chain Belt
+						i(2420),    -- Augmented Chain Boots
+						i(2421),    -- Augmented Chain Bracers
+						i(2422),    -- Augmented Chain Gloves
+						i(3891),    -- Augmented Chain Helm
+						i(2418),    -- Augmented Chain Leggings
+						i(2417),    -- Augmented Chain Vest
+						i(847),   -- Chainmail Armor
+						i(1845),    -- Chainmail Belt
+						i(849),   -- Chainmail Boots
+						i(1846),    -- Chainmail Bracers
+						i(850),   -- Chainmail Gloves
+						i(848),   -- Chainmail Pants
+						i(2451),    -- Crested Heater Shield
+						i(62260),    -- Grunts Chain Belt
+						i(62261),    -- Grunts Chain Boots
+						i(62262),    -- Grunts Chain Bracers
+						i(62266),    -- Grunts Chain Circlet
+						i(62263),    -- Grunts Chain Gloves
+						i(62264), 	  -- Grunts Chain Leggings
+						i(62265),    -- Grunts Chain Vest
+						i(62253),    -- Grunts Plate Armor
+						i(62255),    -- Grunts Plate Belt
+						i(62255),    -- Grunts Plate Boots
+						i(62256),    -- Grunts Plate Bracers
+						i(62257),    -- Grunts Plate Gloves
+						i(62259),    -- Grunts Plate Helm
+						i(62258),    -- Grunts Plate Leggings
+						i(2448),    -- Heavy Pavise
+						i(2446),    -- Kite Shield
+						i(2392),    -- Light Mail Armor
+						i(2393),    -- Light Mail Belt
+						i(2395),    -- Light Mail Boots
+						i(2396),    -- Light Mail Bracers
+						i(2397),    -- Light Mail Gloves
+						i(2394),    -- Light Mail Leggings
+						i(17189),    -- Metal Buckler
+						i(17190),    -- Ornate Buckler
+						i(2148),    -- Polished Scale Belt
+						i(2149),    -- Polished Scale Boots
+						i(2150),    -- Polished Scale Bracers
+						i(2151),    -- Polished Scale Gloves
+						i(2152),    -- Polished Scale Leggings
+						i(2153),    -- Polished Scale Vest
+						i(17192),    -- Reinforced Targe
+						i(1853),    -- Scalemail Belt
+						i(287),   -- Scalemail Boots
+						i(1852),    -- Scalemail Bracers
+						i(718),   -- Scalemail Gloves
+						i(286),   -- Scalemail Pants
+						i(285),   -- Scalemail Vest
+					},
 				}),
 				-- #endif
 				n(66022, bubbleDownSelf({ ["timeline"] = { "added 5.0.1.15799" }, }, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
@@ -6912,9 +7186,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.4, 68.6, ORGRIMMAR },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					--["groups"] = {
-					--
-					--},
+					["sym"] = {
+						{"select", "itemID", 1198 },		-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 2207 },	-- Jambiya
+					},
+					["groups"] = {
+						i(1194),	-- Bastard Sword
+						i(2479),	-- Broad Axe
+						i(2130),	-- Club
+						i(2492),	-- cudgel
+						i(2139),	-- Dirk
+						i(1197),	-- Giant Mace
+						i(2134),	-- Hand Axe
+						i(2488),	-- Gladius
+						i(853),		-- Hatched
+						i(2491),	-- Large Axe
+						i(2480),	-- Large Club
+						i(852),		-- Mace
+						i(854),		-- Quarter Staff
+						i(2131),	-- Shortsword
+						i(2132),	-- Short Staff
+						i(2494),	-- Stiletto
+						i(1196),	-- Tabar
+						i(2490),	-- Tomahawk
+						i(2489),	-- Two-handed Sword
+						i(2495),	-- Walking Stick
+						i(2493),	-- Wooden Mallet
+					},
 				}),
 				n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
 					["coord"] = { 36.6, 86.8, ORGRIMMAR },
@@ -6944,6 +7243,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(10392),	-- Crimson Snake
 					},
 				}),
+				n(30723, {	-- Xantili 
+					["coord"] = { 36.2, 69.8, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(79740),	-- Plain Wooden Staff
+					},
+				}),
 				n(3400, {	-- Xen'to <Cooking Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 32.6, 68.6, ORGRIMMAR },
@@ -6954,6 +7260,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
+					},
+				}),
+				n(3405, {	-- Zeal'aya
+					["coord"] = { 34.6, 63.2, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
+				}),
+				n(3409, {	-- Zendo'jian <Weapon Vendor>
+					["coord"] = { 75.0, 36.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+						{"select", "itemID", 1196 },    -- Tabar
+						{"select", "itemID", 2495 },    -- Walking Stick
+					},
+					["groups"] = {
+						i(926),		-- Battle Axe
+						i(2025),	-- Bearded Axe
+						i(2029),	-- Cleaver
+						i(927),		-- Double Axe
+						i(2030),	-- Gnarled Staff
+						i(2507),	-- Laminated Recurve Bow
+						i(928),		-- Long Staff
 					},
 				}),
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>

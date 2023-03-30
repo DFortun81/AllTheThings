@@ -2,7 +2,7 @@
 root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(TBC_TIER, {
 		i(187902, {	-- Sporebat Soul
-			["timeline"] = { "added 9.1.5" },
+			["timeline"] = { ADDED_9_1_5 },
 		}),
 		-- #if AFTER 7.2.5.23910
 		inst_tw(751, {	-- The Black Temple
@@ -346,7 +346,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 		}),
-		inst_tw(254, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- The Arcatraz
+		inst_tw(254, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", REMOVED_9_1_5 }},{	-- The Arcatraz
 			e(548, {	-- Zereketh the Unbound
 				["creatureID"] = 20870,
 				["groups"] = {
@@ -399,7 +399,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 		})),
-		inst_tw(255, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- The Black Morass
+		inst_tw(255, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", REMOVED_9_1_5 }},{	-- The Black Morass
 			e(552, {	-- Chrono Lord Deja
 				["creatureID"] = 17879,
 				["groups"] = {
@@ -462,7 +462,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 		})),
-		inst_tw(256, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- The Blood Furnace
+		inst_tw(256, bubbleDown({ ["timeline"] = { ADDED_9_1_5 }},{	-- The Blood Furnace
 			e(555, {	-- The Maker
 				["creatureID"] = 17381,
 				["groups"] = {
@@ -517,7 +517,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 		})),
-		inst_tw(257, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- The Botanica
+		inst_tw(257, bubbleDown({ ["timeline"] = { ADDED_9_1_5 }},{	-- The Botanica
 			e(558, {	-- Commander Sarannis
 				["creatureID"] = 17976,
 				["groups"] = {
@@ -632,7 +632,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 		}),
-		inst_tw(260, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- The Slave Pens
+		inst_tw(260, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", REMOVED_9_1_5 }},{	-- The Slave Pens
 			e(570, {	-- Mennu the Betrayer
 				["creatureID"] = 17941,
 				["groups"] = {
@@ -686,7 +686,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 		})),
-		inst_tw(262, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- The Underbog
+		inst_tw(262, bubbleDown({ ["timeline"] = { ADDED_9_1_5 }},{	-- The Underbog
 			e(576, {	-- Hungarfen
 				["creatureID"] = 17770,
 				["groups"] = {

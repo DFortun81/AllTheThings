@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
-
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(REVENDRETH, {
 		n(ZONE_DROPS, {
 			spell(921, {	-- Pickpocketing
@@ -17,7 +16,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					163245,	-- Maldraxxi Defector
 					163243,	-- Maldraxxi Defector
 				},
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(172957, {	-- Atonement Crypt Key
 				["description"] = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",
@@ -216,7 +215,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 			i(180487),	-- Stonefist's Knuckle Cover
 			i(187930, {	-- Technique: Mark of the Regal Dredbat (RECIPE!)
 				["description"] = "Drops from Evedweller bats in Dominance Keep.",
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 				["crs"] = {
 					158976,	-- Shrieking Evedweller
 					159178,	-- Dire Evedweller

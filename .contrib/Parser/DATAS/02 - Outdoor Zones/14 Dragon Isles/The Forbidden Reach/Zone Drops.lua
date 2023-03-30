@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(ZONE_DROPS, {
 			-- Artisan Curios
@@ -14,10 +14,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			i(203400),	-- Lackluster Spices
 			i(203405),	-- Pristine Pelt
 			i(203406),	-- Torn Morqut Kite
-
-
-
-
 
 			-- Sealed Scroll Maps
 			i(202667),	-- Sealed Artifact Scroll

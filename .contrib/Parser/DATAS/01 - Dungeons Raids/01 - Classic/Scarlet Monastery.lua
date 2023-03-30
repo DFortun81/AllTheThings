@@ -698,9 +698,27 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								}),
 								i(7719, {	-- Raging Berserker's Helm
 									["timeline"] = { "removed 5.0.4" },
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[function(t)
+										if _.Level >= 40 and _.ClassIndex ~= ]] .. HUNTER .. [[ and _.ClassIndex ~= ]] .. SHAMAN .. [[ then
+											t.f = ]] .. PLATE .. [[;
+										else
+											t.f = ]] .. MAIL .. [[;
+										end
+									end]],
+									-- #endif
 								}),
 								i(7718, {	-- Herod's Shoulder
 									["timeline"] = { "removed 5.0.4" },
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[function(t)
+										if _.Level >= 40 and _.ClassIndex ~= ]] .. HUNTER .. [[ and _.ClassIndex ~= ]] .. SHAMAN .. [[ then
+											t.f = ]] .. PLATE .. [[;
+										else
+											t.f = ]] .. MAIL .. [[;
+										end
+									end]],
+									-- #endif
 								}),
 								i(10330, {	-- Scarlet Leggings
 									["timeline"] = { "removed 5.0.4" },

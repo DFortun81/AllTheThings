@@ -814,7 +814,7 @@ root(ROOTS.Holidays, applyholiday(PILGRIMS_BOUNTY, {
 		n(ZONE_DROPS, {
 			i(189705, {	-- Turkey Soul
 				["description"] = "Gain the buff 'The Spirit of Sharing' by eating 5 stacks of each type of Pilgrim's Bounty food at the tables, then continue eating various foods.\nThe item will be auto-looted randomly when leaving a chair.",
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 				["customCollect"] = { "SL_COV_NFA" },	-- Night Fae Covenant
 				["maps"] = ALL_PILGIM_MAPS,
 				["crs"] = {

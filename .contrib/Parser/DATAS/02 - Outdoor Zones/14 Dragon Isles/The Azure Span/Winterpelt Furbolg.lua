@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 	m(THE_AZURE_SPAN, {
 		faction(2526, {	-- Winterpelt Furbolg
 			n(ACHIEVEMENTS, {
@@ -211,11 +211,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DF_0_7 }, {
 							}),
 						}),
 						filter(TOYS, {
-							i(202253, {	-- Primal Stave of Claw and Fur
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 400 },
-								},
-							}),
 							i(203734, {	-- Snow Blanket
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 200 },

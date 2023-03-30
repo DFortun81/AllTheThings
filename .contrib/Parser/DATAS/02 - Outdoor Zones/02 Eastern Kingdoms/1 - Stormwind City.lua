@@ -2735,7 +2735,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							r(404740, {	-- Cataclysm Crushing
-								["timeline"] = { ADDED_DF_0_7 },
+								["timeline"] = { ADDED_10_0_7 },
 							}),
 						},
 					}),
@@ -2863,7 +2863,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(62250, {	-- A New Adventure Awaits
 					["description"] = "This quest is automatically offered upon reaching the specified level.",
-					["timeline"] = { "created 9.0.2", ADDED_DF_PRE2 },
+					["timeline"] = { "created 9.0.2", ADDED_10_0_2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47202, {	-- A Personal Message
@@ -2940,6 +2940,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { DEMONHUNTER },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(58912, {	-- An Urgent Meeting
+					["sourceQuests"] = { 58911 },	-- Home Is Where the Hearth Is [A]
+					["provider"] = { "n", 163211 },	-- Henry Garrick
+					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_9_0_1 },
+				}),
 				q(7796, {	-- Additional Runecloth [Stormwind]
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["sourceQuest"] = 7795,	-- A Donation of Runecloth
@@ -2958,7 +2965,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(62567, {	-- Adventurers Wanted: Chromie's Call
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.6, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3153,6 +3160,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(58983, {	-- Battle for Azeroth: Tides of War
+					["sourceQuests"] = { 58912 },	-- An Urgent Meeting [A]
+					["provider"] = { "n", 163219 },	-- Captain Garrick
+					["coord"] = { 85.2, 32.1, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_9_0_1 },
+					["g"] = {
+						i(178941),	-- Alliance Dog Tags,
+					}
+				}),
 				-- #endif
 				q(1640, {	-- Beat Bartleby
 					["qg"] = 6090,	-- Bartleby
@@ -3247,7 +3264,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["sourceQuest"] = 60120,	-- Burning Crusade: To Outland!
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -3255,7 +3272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60120, {	-- Burning Crusade: To Outland!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3281,7 +3298,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60891, {	-- Cataclysm: Onward to Adventure in the Eastern Kingdoms
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -3745,11 +3762,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 188342,	-- Onnesa
 					["sourceQuest"] = 66390,	-- Missing Merchandise
 					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_9_2_5 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(191865, {	-- Bottle of Briny Seawater
-							["timeline"] = { ADDED_SL_S4 },
+							["timeline"] = { ADDED_9_2_5 },
 						}),
 					},
 				}),
@@ -4055,7 +4072,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60971, {	-- Legion: Onward to Adventure in the Broken Isles
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -4063,7 +4080,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(65896, {	-- Let the Healing Begin
 					["qg"] = 190830,	-- Otan Tennoh
 					["coord"] = { 44.2, 57.0, STORMWIND_CITY },
-					["timeline"] = { ADDED_DF_PRE2 },
+					["timeline"] = { ADDED_10_0_2 },
 					["races"] = { DRACTHYR_ALLIANCE },
 					["classes"] = { EVOKER },
 				}),
@@ -4132,7 +4149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44395,	-- Celestine of the Harvest
 					["coord"] = { 57.6, 24.8, STORMWIND_CITY },
 					["name"] = "Mark of the Nightwing Raven",	-- TODO: What is this?
-					["timeline"] = { "added 9.1.5" },
+					["timeline"] = { ADDED_9_1_5 },
 					["classes"] = { DRUID },
 				}),
 				q(1666, {	-- Marshal Haggard
@@ -4256,7 +4273,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(66390, {	-- Missing Merchandise
 					["qg"] = 188342,	-- Onnesa
 					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_9_2_5 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27038, {	-- Missing Parts
@@ -4281,7 +4298,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["lockCriteria"] = { 1, "lvl", 50 },
-					["timeline"] = { "added 9.0.1" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -4956,6 +4973,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 8.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(59641, {	-- The Nation of Kul Tiras
+					["sourceQuests"] = { 58983 },	-- Battle for Azeroth: Tides of War
+					["provider"] = { "n", 165395 },	-- Anduin Wrynn
+					["coord"] = { 85.8, 31.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_9_0_1 },
+				}),
 				q(27072, {	-- The Old Barracks
 					["qg"] = 50049,	-- Jack Bauden <SI:7 Agent>
 					["sourceQuest"] = 28807,	-- Expert Opinion
@@ -5525,7 +5549,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60969, {	-- Warlords of Draenor: Onward to Adventure in Draenor
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -5584,7 +5608,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["sourceQuest"] = 60096,	-- Wrath of the Lich King: To Northrend!
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1" },
+					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", 50 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -5704,12 +5728,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1294, {	-- Aldric Moore <Mail Armor Merchant>
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
-						-- Now any class and race can buy this
-						-- HUNTER --
+					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
+						i(847),    -- Chainmail Armor
+						i(1845),    -- Chainmail Belt
+						i(849),    -- Chainmail Boots
+						i(1846),    -- Chainmail Bracers
+						i(850),    -- Chainmail Gloves
+						i(848),    -- Chainmail Pants
+						i(2392),    -- Light Mail Armor
+						i(2393),    -- Light Mail Belt
+						i(2395),    -- Light Mail Boots
+						i(2396),    -- Light Mail Bracers
+						i(2397),    -- Light Mail Gloves
+						i(2394),    -- Light Mail Leggings
 						i(129),	-- Rugged Trapper's Boots
 						i(147),	-- Rugged Trapper's Pants
 						i(58232),	-- Rugged Trapper's Vest
+						i(1853),    -- Scalemail Belt
+						i(287),    -- Scalemail Boots
+						i(1852),    -- Scalemail Bracers
+						i(718),    -- Scalemail Gloves
+						i(286),    -- Scalemail Pants
+						i(285),    -- Scalemail Vest
 						i(23348),	-- Scout's Boots
 						i(23344),	-- Scout's Pants
 						i(58240),	-- Scout's Vest
@@ -5723,9 +5763,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				-- #endif
-				n(175051, {	-- Alice Fischer <Corrupted Aspirant Vendor>
+				n(175051, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Alice Fischer <Corrupted Aspirant Vendor>
 					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						n(PVP_ASPIRANT, {
@@ -5928,12 +5967,54 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 						}),
 					},
+				})),
+				n(1315, {	-- Allan Hafgan
+					["coord"] = { 49.6, 49.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2527),	-- Battle Staff
+						i(2535),	-- War Staff
+					},
 				}),
 				-- #if AFTER 10.0.5
 				n(53641, {	-- Allison Potts <Heavy Armor Merchant>
 					["coord"] = { 64.8, 48.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
+					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
+						i(2419),    -- Augmented Chain Belt
+						i(2420),    -- Augmented Chain Boots
+						i(2421),    -- Augmented Chain Bracers
+						i(2422),    -- Augmented Chain Gloves
+						i(3891),    -- Augmented Chain Helm
+						i(2418),    -- Augmented Chain Leggings
+						i(2417),    -- Augmented Chain Vest
+						i(2424),    -- Brigandine Belt
+						i(2426),    -- Brigandine Boots
+						i(2427),    -- Brigandine Bracers
+						i(2428),    -- Brigandine Gloves
+						i(3894),    -- Brigandine Helm
+						i(2425),    -- Brigandine Leggings
+						i(2423),    -- Brigandine Vest
+						i(2451),    -- Crested Heater Shield
+						i(2448),    -- Heavy Pavise
+						i(2446),    -- Kite Shield
+						i(17189),    -- Metal Buckler
+						i(17190),    -- Ornate Buckler
+						i(8094),    -- Platemail Armor
+						i(8088),    -- Platemail Belt
+						i(8089),    -- Platemail Boots
+						i(8090),    -- Platemail Bracers
+						i(8091),    -- Platemail Gloves
+						i(8092),    -- Platemail Helm
+						i(8093),    -- Platemail Leggings
+						i(2148),    -- Polished Scale Belt
+						i(2149),    -- Polished Scale Boots
+						i(2150),    -- Polished Scale Bracers
+						i(2151),    -- Polished Scale Gloves
+						i(2152),    -- Polished Scale Leggings
+						i(2153),    -- Polished Scale Vest
+						i(17192),    -- Reinforced Targe
+
 						-- Now any class and race can buy this
 						-- PALADIN --
 						i(43),	-- Squire's Boots
@@ -5956,6 +6037,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				-- #endif
+				n(1312, {	-- Ardwyn Cailen
+					["coord"] = { 52.8, 75.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(5239),    -- Blackbone Wand
+						i(5210),    -- Burning Wand
+						i(5236),    -- Combustible Wand
+						i(5211),    -- Dusk Wand
+						i(5209),    -- Gloom Wand
+						i(5347),    -- Pestilent Wand
+						i(5238),    -- Pitchwood Wand
+						i(5208),    -- Smoldering Wand
+					},
+				}),
 				-- #if AFTER 8.0.1
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["description"] = "Appears in Stormwind after War of Thorns.",
@@ -5971,6 +6066,73 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(1349, {	-- Agustus Moulaine
+					["coord"] = { 53.6, 57.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2419 },    -- Augmented Chain Belt
+						{"select", "itemID", 2420 },    -- Augmented Chain Boots
+						{"select", "itemID", 2421 },    -- Augmented Chain Bracers
+						{"select", "itemID", 2422 },    -- Augmented Chain Gloves
+						{"select", "itemID", 3891 },    -- Augmented Chain Helm
+						{"select", "itemID", 2418 },    -- Augmented Chain Leggings
+						{"select", "itemID", 2417 },    -- Augmented Chain Vest
+						{"select", "itemID", 2424 },    -- Brigandine Belt
+						{"select", "itemID", 2426 },    -- Brigandine Boots
+						{"select", "itemID", 2427 },    -- Brigandine Bracers
+						{"select", "itemID", 2428 },    -- Brigandine Gloves
+						{"select", "itemID", 3894 },    -- Brigandine Helm
+						{"select", "itemID", 2425 },    -- Brigandine Leggings
+						{"select", "itemID", 2423 },    -- Brigandine Vest
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 2448 },    -- Heavy Pavise
+						{"select", "itemID", 2446 },    -- Kite Shield
+						{"select", "itemID", 17189 },    -- Metal Buckler
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+						{"select", "itemID", 8094 },    -- Platemail Armor
+						{"select", "itemID", 8088 },    -- Platemail Belt
+						{"select", "itemID", 8089 },    -- Platemail Boots
+						{"select", "itemID", 8090 },    -- Platemail Bracers
+						{"select", "itemID", 8091 },    -- Platemail Gloves
+						{"select", "itemID", 8092 },    -- Platemail Helm
+						{"select", "itemID", 8093 },    -- Platemail Leggings
+						{"select", "itemID", 2148 },    -- Polished Scale Belt
+						{"select", "itemID", 2149 },    -- Polished Scale Boots
+						{"select", "itemID", 2150 },    -- Polished Scale Bracers
+						{"select", "itemID", 2151 },    -- Polished Scale Gloves
+						{"select", "itemID", 2152 },    -- Polished Scale Leggings
+						{"select", "itemID", 2153 },    -- Polished Scale Vest
+						{"select", "itemID", 17192 },    -- Reinforced Targe
+					},
+				}),
+				n(1302, {	-- Bernard Gump
+					["coord"] = { 69.6, 71.4, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(3422),    -- Beautiful Wildflowers
+						i(3420),    -- Black Rose
+						i(3424),    -- Bouquet Of Black Roses
+						i(3423),    -- Bouquet Of White Roses
+						i(3419),    -- Red Rose
+						i(3421),    -- Simple Wildflowers
+					},
+				}),
+				n(1319, {	-- Bryan Cross
+					["coord"] = { 69.6, 57.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 2448 },    -- Heavy Pavise
+						{"select", "itemID", 2446 },    -- Kite Shield
+						{"select", "itemID", 17189 },    -- Metal Buckler
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+						{"select", "itemID", 17192 },    -- Reinforced Targe
+					},
+					["groups"] = {
+						i(2445),	-- Large Metal Shield
+						i(17188),	-- Ringed Buckler
+					},
+				}),
 				n(69975, {	-- Captain Dirgehammer <Cataclysmic Gladiator>
 					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
 					["timeline"] = { "added 5.2.0.16577" },
@@ -6143,67 +6305,73 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- Now any class and race can buy this
 						-- MAGE --
 						i(55, {	-- Apprentice's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52554, {	-- Apprentice's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(1395, {	-- Apprentice's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(56, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52553, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(23478, {	-- Recruit's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(23479, {	-- Recruit's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 
 						-- PRIEST --
 						i(1396, {	-- Acolyte's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(23322, {	-- Acolyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(51, {	-- Neophyte's Boots
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(6098, {	-- Neophyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(6119, {	-- Neophyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 
 						-- WARLOCK --
 						i(1396, {	-- Acolyte's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(57, {	-- Acolyte's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(59, {	-- Acolyte's Shoes
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 
 						-- ??? --
 						i(6116, {	-- Apprentice's Robe
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(23350, {	-- Battleworn Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(23349, {	-- Battleworn Shoes
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(23472, {	-- Rugged Trapper's Boots
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(23471, {	-- Rugged Trapper's Pants
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(6118, {	-- Squire's Pants
-							["timeline"] = { ADDED_DF_0_5 }
+							["timeline"] = { ADDED_10_0_5 }
 						}),
 						-- #endif
 					},
@@ -6230,6 +6398,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6325),	-- Recipe: Brilliant Smallfish
 						i(6330),	-- Recipe: Bristle Whisker Catfish
 						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6365),	-- Strong Fishing Pole
 					},
 				}),
 				n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>
@@ -6412,13 +6581,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(164942, {	-- Evelyn Thorn <Warlock Trainer>
 					["coord"] = { 79.4, 69.8, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36228" },
+					["timeline"] = { ADDED_9_0_1 },
 					["groups"] = {
 						i(189719, {	-- Barbed Collar of the Incubus
-							["timeline"] = { "added 9.0.1.36228" },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 						i(189720, {	-- Barbed Collar of the Succubus
-							["timeline"] = { "added 9.0.1.36228" },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 					},
 				}),
@@ -6435,7 +6604,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						currency(361, {	-- Illustrious Jewelcrafter's Token
 							["cost"] = { { "i", 204356, 10 }, },	-- 10x Illustrious Gemdust
-							["timeline"] = { ADDED_DF_0_7 },
+							["timeline"] = { ADDED_10_0_7 },
 						}),
 						i(71928, {	-- Design: Accurate Shadow Spinel
 							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
@@ -6652,32 +6821,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.2, 60.6, STORMWIND_CITY },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3422 },    -- Beautiful Wildflowers
+						{"select", "itemID", 3420 },    -- Black Rose
+						{"select", "itemID", 3424 },    -- Bouquet Of Black Roses
+						{"select", "itemID", 3423 },    -- Bouquet Of White Roses
+						{"select", "itemID", 3419 },    -- Red Rose
+						{"select", "itemID", 3421 },    -- Simple Wildflowers
+					},
 					["groups"] = {
 						i(2665),	-- Stormwind Seasoning Herbs
 					},
 				}),
-				n(179896, {	-- Finn
+				n(179896, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Finn
 					["coord"] = { 61.0, 65.0, STORMWIND_CITY },
-					["timeline"] = { "added 9.1.0.39226" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(187009, {	-- Dazzling Spectacles
-							["timeline"] = { "added 9.1.0.39226" },
-						}),
-						i(186092, {	-- Historical Perspective Shifters
-							["timeline"] = { "added 9.1.0.39226" },
-						}),
-						i(186091, {	-- Onyx Glare-Reducers
-							["timeline"] = { "added 9.1.0.39226" },
-						}),
-						i(186090, {	-- Simple Glasses
-							["timeline"] = { "added 9.1.0.39226" },
-						}),
-						i(187010, {	-- Tasteful Eyeglasses
-							["timeline"] = { "added 9.1.0.39226" },
-						}),
+						i(187009),	-- Dazzling Spectacles
+						i(186092),	-- Historical Perspective Shifters
+						i(186091),	-- Onyx Glare-Reducers
+						i(186090),	-- Simple Glasses
+						i(187010),	-- Tasteful Eyeglasses
 					},
-				}),
+				})),
 				n(1298, {	-- Frederick Stover <Bow & Arrow Merchant>
 					-- #if AFTER WRATH
 					["coord"] = { 58.6, 69.0, STORMWIND_CITY },
@@ -6685,6 +6851,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 50.3, 57.7, STORMWIND_CITY },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+					},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,
@@ -6695,6 +6865,83 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(11306, {	-- Sturdy Recurve
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(1333, {	-- Gerik Koen <Two Handed Weapon Merchant>
+					["coord"] = { 73.2, 57.2, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2523),	-- Bullova
+						i(2521),	-- Flamberge
+						i(2531),	-- Great Axe
+						i(73210, {	-- Trainee's Sword
+							["timeline"] = { ADDED_10_0_7 },
+						}),
+						i(2525),	-- War Hammer
+						i(2533),	-- War Maul
+						i(2529),	-- Zweihander
+					},
+				}),
+				n(1348, {	-- Gregory Ardus
+					["coord"] = { 48.2, 54.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 925 },	-- Flail
+						{"select", "itemID", 1197 },	-- Giant Mace
+						{"select", "itemID", 2030 },	-- Gnarled Staff
+						{"select", "itemID", 2028 },	-- Hammer
+						{"select", "itemID", 928 },		-- Long Staff
+						{"select", "itemID", 852 },	-- Mace
+						{"select", "itemID", 924 },	-- Maul
+						{"select", "itemID", 854 },	-- Quarter Staff
+						{"select", "itemID", 2026 },	-- Rock Hammer
+					},
+					["groups"] = {
+						i(2492),	-- Cudgel
+						i(2493),	-- Wooden Mallet
+					},
+				}),
+				n(1289, {	-- Gunther Weller <Weapons Merchant>
+					["coord"] = { 64.0, 68.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+					-- added all
+						i(926),		-- battle axe
+						i(2025),	-- bearded axe
+						i(1198),	-- claymore
+						i(2029),	-- cleaver
+						i(851),		-- cutlass
+						i(922),		-- dacian falx
+						i(927),		-- double axe
+						i(2024),	-- espadon
+						i(925),		-- flail
+						i(1197),	-- giant mace
+						i(2030),	-- gnarled staff
+						i(2028),	-- hammer	
+						i(853),		-- hatchet
+						i(15811),	-- heavy spear
+						i(2207),	-- jambiya
+						i(2209),	-- kris
+						i(923),		-- longsword
+						i(928),		-- long staff
+						i(852),		-- mace
+						i(924),		-- maul
+						i(2208),	-- poniard
+						i(854),		-- quarter staff
+						i(2027),	-- scimitar
+						i(2026),	-- rock hammer
+						i(15810),	-- short spear
+						i(1196),	-- Tabar
+					},
+				}),
+				n(1324, {	-- Heinrich Stone
+					["coord"] = { 77.0, 57.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2520),	-- Broadsword
+						i(2528),	-- falchion
+						i(2526),	-- Main Gauche
+						i(2534),	-- Rondel
 					},
 				}),
 				n(110034, {	-- Historian Llore <The Timewalkers>
@@ -6716,6 +6963,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["sym"] = {{ "sub", "common_recipes_vendor", 50482 }}, -- Marith Lazuria <Jewelcrafting Supplies>
 					["races"] = ALLIANCE_ONLY,
+				}),
+				n(1325, {	-- Jasper Fel
+					["coord"] = { 80.6, 61.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
 				}),
 				n(1318, {	-- Jessara Cordell <Enchanting Supplies>
 					-- #if AFTER WRATH
@@ -6818,6 +7072,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18778),	-- Swift White Steed (MOUNT!)
 					},
 				}),
+				n(5509, {	-- Kathrum Axehand
+					["coord"] = { 59.6, 34.4, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2523 },	-- Bullova
+						{"select", "itemID", 2531 },	-- Great Axe
+					},
+					["groups"] = {
+						i(2522),	-- Crescent Axe
+						i(2530),	-- Francisca
+					},
+				}),
 				n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>
 					-- #if AFTER WRATH
 					["coord"] = { 76.4, 53.0, STORMWIND_CITY },
@@ -6892,7 +7158,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1295, {	-- Lara Moore <Leather Armor Merchant>
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = sharedData({ ["timeline"] = { ADDED_DF_0_5 } }, {
+					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
 						-- Now any class and race can buy this
 						-- DRUID --
 						i(6124),	-- Novice's Pants
@@ -7063,6 +7329,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(8118, {	-- Lillian Singh
+					["coord"] = { 62.6, 70.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					["groups"] = {
+						i(8626),	-- Blue Sparkler
+						i(8625),	-- White Sparkler
+						i(8624),	-- Red Sparkler
+					},
+				}),
 				n(52030, {	-- Liliana Emberfrost <Honor Heirlooms>
 					["coord"] = { 74.4, 67.6, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.6.13596" },
@@ -7121,6 +7397,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						moh(10, i(122366, {	-- Unpgraded Dwarven Hand Cannon
 							["timeline"] = { "added 6.1.0.19445" },
 						})),
+					},
+				}),
+				n(1297, {	-- Lina Stover
+					["coord"] = { 58.6, 68.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(3024),    -- Bkp 2700 Enforcer
+						i(3027),    -- Heavy Recurve Bow
+						i(2506),    -- Hornwood Recurve Bow
+						i(2511),    -- Hunters Boomstick
+						i(2507),    -- Laminated Recurve Bow
+						i(3023),    -- Large Bore Blunderbuss
+						i(2509),    -- Ornate Blunderbuss
+						i(2505),    -- Polished Shortbow
+						i(3026),    -- Reinforced Bow
+						i(2504),    -- Worn Shortbow
 					},
 				}),
 				n(1299, {	-- Lisbeth Schneider <Clothier>
@@ -7186,6 +7478,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(1287, {	-- Marda Weller <Weapons Merchant>
+					["coord"] = { 64.0, 68.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 926 },		-- battle axe
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 851 },		-- cutlass
+						{"select", "itemID", 922 },		-- dacian falx
+						{"select", "itemID", 927 },		-- double axe
+						{"select", "itemID", 2024 },	-- espadon
+						{"select", "itemID", 925 },		-- flail
+						{"select", "itemID", 2030 },	-- gnarled staff
+						{"select", "itemID", 1197 },	-- giant mace
+						{"select", "itemID", 853 },		-- hatchet
+						{"select", "itemID", 2207 },	-- jambiya
+						{"select", "itemID", 2209 },	-- kris
+						{"select", "itemID", 928 },		-- long staff
+						{"select", "itemID", 852 },		-- mace
+						{"select", "itemID", 924 },		-- maul
+						{"select", "itemID", 2208 },	-- poniard
+						{"select", "itemID", 854 },		-- quarter staff
+						{"select", "itemID", 2026 },	-- rock hammer
+						{"select", "itemID", 2027 },	-- scimitar
+					},
+					["groups"] = {
+						i(15808),	-- Fine Light Crossbow
+						i(15809),	-- Heavy Crossbow
+						i(15807),	-- Light Crossbow
+					},
+				}),
 				n(12781, {	-- Master Sergeant Biggins <Accessories Quartermaster> [WRATH+] / Master Sergeant Biggins <Officer Accessories Quartermaster>
 					-- #if BEFORE TBC
 					["description"] = "Found within the Champion's Hall.",
@@ -7232,6 +7557,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 3.0.1.8634" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(4565),	-- Simple Dagger
 						i(38579, {	-- Venomous Tome
 							["timeline"] = { "created 2.4.2", "added 3.0.1.8634" },
 							["isLimited"] = true,
@@ -7282,16 +7608,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						vicioussaddle(i(173714)),	-- Vicious White Warsaber (MOUNT!)
 						vicioussaddle(i(143648)),	-- Vicious War Turtle (A) (MOUNT!)
 						vicioussaddle(i(184014, {	-- Vicious War Spider (A) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 						vicioussaddle(i(186178, {	-- Vicious War Gorm (A) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 						vicioussaddle(i(187681, {	-- Vicious War Gulper (A) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 						vicioussaddle(i(187644, {	-- Vicious Warstalker (A) (MOUNT!)
-							["timeline"] = { ADDED_DF_REL },
+							["timeline"] = { ADDED_10_0_2_LAUNCH },
 						})),
 					}),
 				}),
@@ -7480,41 +7806,65 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})
 					},
 				}),
-				n(167429, {	-- Quartermaster Richter
+				n(167429, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {	-- Quartermaster Richter
 					["description"] = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
 					["coord"] = { 79.5, 69.0, STORMWIND_CITY },
-					["timeline"] = { "added 9.0.1.36216" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(175173, {  -- Expeditionary Cudgel
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
-						i(175172, {  -- Expeditionary Dagger
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
-						i(175166, {  -- Expeditionary Greatsword
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
-						i(175162, {  -- Expeditionary Longbow
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
-						i(175168, {  -- Expeditionary Quarterstaff
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
-						i(175170, {  -- Expeditionary Short Sword
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
-						i(175167, {  -- Expeditionary Staff
-							["timeline"] = { "added 9.0.1.36216" },
-						}),
+						i(175173),	-- Expeditionary Cudgel
+						i(175172),	-- Expeditionary Dagger
+						i(175166),	-- Expeditionary Greatsword
+						i(175162),	-- Expeditionary Longbow
+						i(175168),	-- Expeditionary Quarterstaff
+						i(175170),	-- Expeditionary Short Sword
+						i(175167),	-- Expeditionary Staff
 					},
-				}),
+				})),
 				n(53991, {	-- Quincy Cutler <Owner and Proprietor>
 					["timeline"] = { "added 4.2.0.14313" },
 					["coord"] = { 64.0, 46.2, STORMWIND_CITY },
 					["groups"] = {
 						i(44679),	-- Red Wine Glass
 						i(44678),	-- Wine Glass
+					},
+				}),
+				n(1323, {	-- Osric Strang
+					["coord"] = { 77.0, 61.2, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2419 },    -- Augmented Chain Belt
+						{"select", "itemID", 2420 },    -- Augmented Chain Boots
+						{"select", "itemID", 2421 },    -- Augmented Chain Bracers
+						{"select", "itemID", 2422 },    -- Augmented Chain Gloves
+						{"select", "itemID", 3891 },    -- Augmented Chain Helm
+						{"select", "itemID", 2418 },    -- Augmented Chain Leggings
+						{"select", "itemID", 2417 },    -- Augmented Chain Vest
+						{"select", "itemID", 2424 },    -- Brigandine Belt
+						{"select", "itemID", 2426 },    -- Brigandine Boots
+						{"select", "itemID", 2427 },    -- Brigandine Bracers
+						{"select", "itemID", 2428 },    -- Brigandine Gloves
+						{"select", "itemID", 3894 },    -- Brigandine Helm
+						{"select", "itemID", 2425 },    -- Brigandine Leggings
+						{"select", "itemID", 2423 },    -- Brigandine Vest
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 2448 },    -- Heavy Pavise
+						{"select", "itemID", 2446 },    -- Kite Shield
+						{"select", "itemID", 17189 },    -- Metal Buckler
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+						{"select", "itemID", 8094 },    -- Platemail Armor
+						{"select", "itemID", 8088 },    -- Platemail Belt
+						{"select", "itemID", 8089 },    -- Platemail Boots
+						{"select", "itemID", 8090 },    -- Platemail Bracers
+						{"select", "itemID", 8091 },    -- Platemail Gloves
+						{"select", "itemID", 8092 },    -- Platemail Helm
+						{"select", "itemID", 8093 },    -- Platemail Leggings
+						{"select", "itemID", 2148 },    -- Polished Scale Belt
+						{"select", "itemID", 2149 },    -- Polished Scale Boots
+						{"select", "itemID", 2150 },    -- Polished Scale Bracers
+						{"select", "itemID", 2151 },    -- Polished Scale Gloves
+						{"select", "itemID", 2152 },    -- Polished Scale Leggings
+						{"select", "itemID", 2153 },    -- Polished Scale Vest
+						{"select", "itemID", 17192 },    -- Reinforced Targe
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -7639,11 +7989,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(1326, {	-- Sloan McCoy
+					["coord"] = { 81.2, 62.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
+				}),
 				n(30730, {	-- Stanly McCormick
 					["coord"] = { 49.6, 74.8, STORMWIND_CITY },
 					["timeline"] = { "added 3.0.2.8905" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(79740),	-- Plain Wooden Staff
 						i(39489, {	-- Scribe's Satchel
 							["isLimited"] = true,
 						}),
@@ -7669,6 +8027,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),
+				n(5510, {	-- Thulman Flintcrag
+					["coord"] = { 61.8, 36.2, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2509 },	-- Ornate Blunderbuss
+					},
+					["groups"] = {
+						i(2510),	-- Solid Blunderbuss
+					},
+				}),
 				n(58154, {	-- Toren Landow <Legacy Justice Quartermaster>
 					-- #if AFTER 9.0.1
 					["coord"] = { 75.7, 65.9, STORMWIND_CITY },
@@ -7678,6 +8046,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.3.0.14890" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = TIER_ELEVEN_GROUPS,
+				}),
+				n(1341, {	-- Wilhelm Strang
+					["coord"] = { 77.4, 61.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2148 },    -- Polished Scale Belt
+						{"select", "itemID", 2149 },    -- Polished Scale Boots
+						{"select", "itemID", 2150 },    -- Polished Scale Bracers
+						{"select", "itemID", 2151 },    -- Polished Scale Gloves
+						{"select", "itemID", 2152 },    -- Polished Scale Leggings
+						{"select", "itemID", 2153 },    -- Polished Scale Vest
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 285 },    -- Scalemail Vest
+					},
 				}),
 			}),
 		},

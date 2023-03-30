@@ -1087,7 +1087,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["groups"] = {
 						i(1262, {	-- Keg of Thunderbrew
-							["timeline"] = { "removed 4.0.3" },
+							--["timeline"] = { "removed 4.0.3" },	-- Reported as existing on retail 10.0.5, maybe renamed to "Keg of Thunderbrew Lager"?
 							["races"] = ALLIANCE_ONLY,
 						}),
 					},
@@ -1350,7 +1350,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(TREASURES, {
-				o(357515, sharedDataSelf({ ["timeline"] = { ADDED_SL_REL } }, {	-- Sack of Oats
+				o(357515, sharedDataSelf({ ["timeline"] = { ADDED_9_0_2 } }, {	-- Sack of Oats
 					["coords"] = {
 						{ 43.1, 37.3, WESTFALL },
 						{ 44.9, 35.3, WESTFALL },

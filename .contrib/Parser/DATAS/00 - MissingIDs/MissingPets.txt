@@ -604,7 +604,6 @@ p(3422),	-- [DNT] Storm Pet Boss - Legendary
 p(3423),	-- [DNT] Storm Pet Fodder
 p(3424),	-- [DNT] Storm Pet Boss - Epic
 p(3425),	-- [DNT] Storm Pet Boss - Rare
-p(3427),	-- Driftling
 p(3429),	-- Vortex
 p(3430),	-- Tremblor
 p(3431),	-- Wildfire
@@ -621,10 +620,6 @@ p(3441),	-- Storm-Touched Ohuna
 p(3442),	-- Storm-Touched Skitterer
 p(3443),	-- Storm-Touched Slyvern
 p(3444),	-- Storm-Touched Swoglet
-p(3446),	-- Vortex
-p(3447),	-- Tremblor
-p(3448),	-- Wildfire
-p(3449),	-- Flow
 p(3450),	-- Feral Frogduck
 p(3451),	-- Lord Flappinsby
 p(3452),	-- Enchanted Tuskling
@@ -642,10 +637,6 @@ p(3471),	-- Gilded Mechafrog
 p(3472),	-- Lil' Algalon
 p(3473),	-- Cozmos
 p(3474),	-- Celastro
-10.0.7.47983
-p(3476),	-- Gilded Mechafrog
-10.0.7.48520
-p(3475),	-- Volatile Self-Driving Toolbox
 10.1.0.48480
 p(3477),	-- Puddlehopper
 p(3478),	-- Rock Martin
@@ -688,7 +679,7 @@ p(3533),	-- Brul
 p(3534),	-- Jerrie
 p(3535),	-- Diamondshell
 p(3536),	-- Bashful \\ Sapphireshell
-p(3537),	-- Emeraldshell
+p(3537),	-- Thimblerig \\ Emeraldshell
 p(3538),	-- Tricky \\ Ambershell
 p(3539),	-- Roseshell
 p(3540),	-- Brulee \\ Topazshell
@@ -713,6 +704,16 @@ p(3557),	-- Roggy
 p(3558),	-- Murrey
 p(3559),	-- Clawz
 p(3560),	-- Bassalt
+10.1.0.48661
+p(3565),	-- Fethres
+p(3566),	-- Beeks
+p(3567),	-- Talons
+p(3568),	-- Dustie
+p(3569),	-- Tempe
+p(3570),	-- Swoggy
+p(3571),	-- Brul'dan
+p(3572),	-- Lifft
+p(3573),	-- Swole
 
 
 
@@ -769,9 +770,7 @@ p(414),	-- Scorpid
 p(415),	-- Fire Beetle
 p(416),	-- Scorpling
 p(417),	-- Rat
-p(418),	-- Water Snake
 p(419),	-- Small Frog
-p(420),	-- Toad
 p(421),	-- Crimson Moth
 p(422),	-- Moccasin
 p(423),	-- Lava Crab
@@ -796,7 +795,6 @@ p(444),	-- PattyMack 2.0 - WildBattlePet Test
 p(445),	-- Tiny Twister
 p(446),	-- Jade Oozeling
 p(447),	-- Fawn
-p(448),	-- Hare
 p(449),	-- Brown Marmot
 p(450),	-- Maggot
 p(452),	-- Red-Tailed Chipmunk
@@ -813,9 +811,6 @@ p(462),	-- Jacob the Test Seagull
 p(463),	-- Spirit Crab
 p(464),	-- Grey Moth
 p(465),	-- Ravager Hatchling
-p(466),	-- Spiny Lizard
-p(467),	-- Dung Beetle
-p(468),	-- Creepy Crawly
 p(469),	-- Twilight Beetle
 p(470),	-- Twilight Spider
 p(471),	-- Robo-Chick
@@ -916,7 +911,6 @@ p(631),	-- Emerald Boa
 p(632),	-- Ash Lizard
 p(633),	-- Mountain Skunk
 p(634),	-- Crystal Spider
-p(635),	-- Adder
 p(637),	-- Skittering Cavern Crawler
 p(638),	-- Nether Roach
 p(639),	-- Borean Marmot
@@ -1960,8 +1954,6 @@ p(3218),	-- Enraged Poultrid
 p(3219),	-- Predatory Helicid \\ Predatory Gastropod
 9.2.0.41726
 p(3246),	-- Tezpet
-10.0.7.48520
-p(3475),	-- Volatile Self-Driving Toolbox
 10.1.0.48480
 p(3477),	-- Puddlehopper
 p(3478),	-- Rock Martin
@@ -2004,7 +1996,7 @@ p(3533),	-- Brul
 p(3534),	-- Jerrie
 p(3535),	-- Diamondshell
 p(3536),	-- Bashful \\ Sapphireshell
-p(3537),	-- Emeraldshell
+p(3537),	-- Thimblerig \\ Emeraldshell
 p(3538),	-- Tricky \\ Ambershell
 p(3539),	-- Roseshell
 p(3540),	-- Brulee \\ Topazshell
@@ -2029,3 +2021,13 @@ p(3557),	-- Roggy
 p(3558),	-- Murrey
 p(3559),	-- Clawz
 p(3560),	-- Bassalt
+10.1.0.48661
+p(3565),	-- Fethres
+p(3566),	-- Beeks
+p(3567),	-- Talons
+p(3568),	-- Dustie
+p(3569),	-- Tempe
+p(3570),	-- Swoggy
+p(3571),	-- Brul'dan
+p(3572),	-- Lifft
+p(3573),	-- Swole

@@ -144,7 +144,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" },	-- removed from the store again on Jan 2 2023
 		}),
 		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)
-			["timeline"] = { "added 10.0.2" },	-- Not sure when exactly it got added to the shop.
+			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.
 		}),
 		i(166775, {	-- Vulpine Familiar (MOUNT!)
 			["timeline"] = { "added 8.1.0.28724" },
@@ -173,7 +173,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
 		battlepet(156, {	-- Bananas
-			["timeline"] = { "added 9.0.5", "removed 9.1.5" },
+			["timeline"] = { ADDED_9_0_5, REMOVED_9_1_5 },
 		}),
 		pet(3153, {	-- Blinky
 			["timeline"] = { "added 9.1.5.41488" },
@@ -194,7 +194,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 5.1.0.16309" },
 		}),
 		battlepet(2780, {	-- Daisy
-			["timeline"] = { "added 9.0.5.37864" },
+			["timeline"] = { ADDED_9_0_5 },
 		}),
 		battlepet(2623, {	-- Dottie
 			["timeline"] = { "added 8.3.0.33062" },
@@ -217,7 +217,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 3.2.2.10505", "removed 10.0.2.47213" },
 		}),
 		p(3249, {	-- Lil' Ursoc (PET!)
-			["timeline"] = { ADDED_SL_S4 },
+			["timeline"] = { ADDED_9_2_5 },
 		}),
 		i(54847, {	-- Lil' XT
 			["timeline"] = { "added 3.3.3.11723", "removed 8.3.0" },

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THE_AZURE_SPAN, {
 		n(WORLD_QUESTS, {
 			["sourceQuests"] = {
@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- }),
 				petbattle(q(74836, {	-- A New Vocation
 					["coord"] = { 19.52, 24.61, THE_AZURE_SPAN },
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 				})),
 				q(70629, {	-- Assaulting the Shore
 					["coord"] = { 9.6, 42.4, THE_AZURE_SPAN },
@@ -43,9 +43,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(70068, {	-- Cobalt Catastrophe
 					["coord"] = { 49.3, 23.5, THE_AZURE_SPAN },
 				}),
-				q(70653, {	-- Cold Hard Science
-					["coord"] = { 47.9, 39.1, THE_AZURE_SPAN },
-				}),
 				q(70440, {	-- Dead Eyes
 					["coord"] = { 33.6, 44.4, THE_AZURE_SPAN },
 				}),
@@ -54,7 +51,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				petbattle(q(74835, {	-- Enok the Stinky
 					["coord"] = { 23.41, 53.56, THE_AZURE_SPAN },
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 				})),
 				q(70612, {	-- Feed Three-Falls
 					["coord"] = { 17.8, 27.6, THE_AZURE_SPAN },
@@ -105,6 +102,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 51.3, 24.6, THE_AZURE_SPAN },
 				})),
 				--[[
+				-- probably NYI
 				q(70037, {	-- Unpowered Tools [Cobalt]
 					["coord"] = { 47.4, 24.6, THE_AZURE_SPAN },
 				}),

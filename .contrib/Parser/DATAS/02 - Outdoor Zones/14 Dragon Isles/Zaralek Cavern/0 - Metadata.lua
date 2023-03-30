@@ -5,6 +5,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
 		-- ["icon"] = ,
 		-- ["lore"] = "",
-		["timeline"] = { ADDED_DF_S2 },
+		["timeline"] = { ADDED_10_1_0 },
+		["maps"] = {
+			2184,	-- Zaralek Cavern
+		},
 	}),
 }));

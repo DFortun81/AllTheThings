@@ -749,10 +749,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["crs"] = { 40987 },	-- Gnash
 						}),
-						q(25497, {	-- Back in the Saddle (In beta never added to game)
-							["races"] = ALLIANCE_ONLY,
-							["u"] = NEVER_IMPLEMENTED,
-						}),
 						q(25477, {	-- Better Late Than Dead
 							["qg"] = 41248,	-- Moanah Stormhoof
 							["sourceQuests"] = {
@@ -808,9 +804,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 39884,	-- Captain Samir
 							["sourceQuest"] = 25598,	-- Ain't Too Proud to Beg
 							["coord"] = { 57.3, 28.9, 201 },
-						}),
-						q(25413, {	-- Change of Plans (In beta never added to game)
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 						q(25884, {	-- Come Hell or High Water
 							["qg"] = 41344,	-- Rendel Firetongue
@@ -884,9 +877,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 39.0, 32.0, 201 },
 							["races"] = HORDE_ONLY,
-						}),
-						q(25666, {	-- Getting Your Hands Dirty (In beta never added to game)
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 						q(25587, {	-- Gimme Shelter
 							["qg"] = 39667,	-- Adarrah
@@ -995,14 +985,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 38.8, 31.6, 201 },
 							["races"] = HORDE_ONLY,
 						}),
-						q(25384, {	-- Raw Materials
-							["u"] = NEVER_IMPLEMENTED,
-							["groups"] = {
-								un(NEVER_IMPLEMENTED, i(59797)),	-- Abalone-Linked Robes
-								un(NEVER_IMPLEMENTED, i(59795)),	-- Harp Shell Shoulderpads
-								un(NEVER_IMPLEMENTED, i(59796)),	-- Tread of Decapod Death
-							},
-						}),
 						q(25405, {	-- Rest For the Weary (A)
 							["qg"] = 36915,	-- Erunak Stonespeaker
 							["sourceQuest"] = 25281,	-- Pay It Forward (A)
@@ -1027,9 +1009,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 38.7, 31.7, 201 },
 							["races"] = HORDE_ONLY,
 						}),
-						q(25498, {	-- Shark Bait (In beta never added to game.)
-							["u"] = NEVER_IMPLEMENTED,
-						}),
 						q(27699, {	-- Shark Weak
 							["description"] = "If you abandon this quest, leave the area and swim back to the boat. You must NOT use a mount.",
 							["sourceQuest"] = 25657,	-- Dah, Nunt.. Dah, Nunt...
@@ -1047,9 +1026,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 46.3, 46.8, 201 },
 							["races"] = HORDE_ONLY,
 						}),
-						q(25636, {	-- Starve a Fever, Feed a Cold (In beta never added to game.)
-							["u"] = NEVER_IMPLEMENTED,
-						}),
 						q(25564, {	-- Stormwind Elite Aquatic and Land Forces
 							["qg"] = 39887,	-- Captain Taylor
 							["sourceQuests"] = {
@@ -1058,9 +1034,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 44.7, 22.5, 201 },
 							["races"] = ALLIANCE_ONLY,
-						}),
-						q(25737, {	-- Tenuous Negotiatons (In beta never added to game.)
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 						q(25371, {	-- The Abyssal Ride
 							["qg"] = 41248,	-- Moanah Stormhoof
@@ -1122,9 +1095,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 63.8, 59.9, 201 },
 						}),
-						q(25742, {	-- What? This Old Thing? (In beta never added to game.)
-							["u"] = NEVER_IMPLEMENTED,
-						}),
 						q(25885, {	-- What? What? In My Gut...? (A)
 							["qg"] = 41340,	-- Private Pollard
 							["sourceQuest"] = 25887,	-- Wake of Destruction
@@ -1136,9 +1106,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 25887,	-- Wake of Destruction
 							["coord"] = { 63.9, 59.8, 201 },
 							["races"] = HORDE_ONLY,
-						}),
-						q(25573, {	-- Your Underwater Mount (Temp) -- NYI
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 					}),
 					n(RARES, {
@@ -1265,9 +1232,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 51.1, 62.9, 205 },
 							["races"] = HORDE_ONLY,
 						}),
-						q(25634, {	-- A Better Vantage (NYI)
-							["u"] = NEVER_IMPLEMENTED,
-						}),
 						q(26005, {	-- A Breath of Fresh Air (A)
 							["qg"] = 39881,	-- Wavespeaker Valoren
 							["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
@@ -1331,9 +1295,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(59712),	-- Legguards of Revelation
 								i(59711),	-- Improvisational Historian's Cloak
 							},
-						}),
-						q(25633, {	-- An Occupation of Time (NYI)
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 						q(25537, {	-- Art of Attraction
 							["qg"] = 40639,	-- Engineer Hexascrub
@@ -1447,9 +1408,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 25595,	-- Something Edible
 							["coord"] = { 51.1, 62.9, 205 },
 							["races"] = HORDE_ONLY,
-						}),
-						q(25631, {	-- Caught Off-Guard (NYI)
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 						q(25863, {	-- Chosen Burden
 							["provider"] = { "o", 203305 },	-- Crucible of Nazsharin
@@ -1960,9 +1918,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(59719),	-- Cowry-Shell Pendant
 							},
 						}),
-						q(25632, {	-- Swift Approach (NYI)
-							["u"] = NEVER_IMPLEMENTED,
-						}),
 						q(27393, {	-- The Call of the Blade (A)
 							["qg"] = 39881,	-- Wavespeaker Valoren
 							["sourceQuests"] = {
@@ -2064,9 +2019,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 40.4, 75.4, 205 },
 							["races"] = HORDE_ONLY,
-						}),
-						q(25635, {	-- Upon the Scene of Battle (NYI)
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 						q(25439, {	-- Vengeful Heart
 							["qg"] = 40221,	-- Toshe Chaosrender
@@ -2291,10 +2243,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(25455),	-- A Test of Wills
+		q(25497),	-- Back in the Saddle
 		q(25474),	-- BETA Once More, With Eeling [DEPRICATED]
+		q(25413),	-- Change of Plans
+		q(25666),	-- Getting Your Hands Dirty
 		q(25435),	-- Pressure is Mounting
+		q(25384, {	-- Raw Materials
+			["groups"] = {
+				un(NEVER_IMPLEMENTED, i(59797)),	-- Abalone-Linked Robes
+				un(NEVER_IMPLEMENTED, i(59795)),	-- Harp Shell Shoulderpads
+				un(NEVER_IMPLEMENTED, i(59796)),	-- Tread of Decapod Death
+			},
+		}),
 		q(25506),	-- Sea-Food Chain
-
+		q(25498),	-- Shark Bait
+		q(25636),	-- Starve a Fever, Feed a Cold
+		q(25737),	-- Tenuous Negotiatons
+		q(25742),	-- What? This Old Thing?
 	}),
 	tier(CATA_TIER, {
 		n(WEAPONS, {

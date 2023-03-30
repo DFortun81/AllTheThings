@@ -1,13 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THALDRASZUS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(193243, {	-- Acrosoth
 				["coord"] = { 40.5, 78.3, THALDRASZUS },
 				["questID"] = 72834,
-				["isDaily"] = false,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193664, {	-- Ancient Protector
 				["coord"] = { 59.5, 59.2, THALDRASZUS },
@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193229, {	-- Henlare
 				["coord"] = { 55.6, 77.4, THALDRASZUS },
 				["questID"] = 72814,
-				["isDaily"] = false,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193126, {	-- Innumerable Ruination
 				["description"] = "Patrols in a circle around the coordinates.",
@@ -57,12 +57,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193273, {	-- Liskron the Dazzling
 				["coord"] = { 36.7, 72.8, THALDRASZUS },
 				["questID"] = 72842,
-				["isDaily"] = false,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193668, {	-- Lookout Mordren
 				["coord"] = { 36.8, 85.6, THALDRASZUS },
 				["questID"] = 72813,
-				["isDaily"] = false,
+				["isDaily"] = IGNORED_VALUE,
 				["g"] = {
 					i(200182),	-- Riveted Drape
 				},
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			}),
 		--	n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
 			n(201549,	-- Morlash
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 62.1, 60.1, THALDRASZUS },
 				["questID"] = 74561,
 				["g"] = {
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			}),
 			n(201550,	-- Overloading Defense Matrix
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 59.6, 61.8, THALDRASZUS },
 				["questID"] = 74565,
 				["group"] = {
@@ -100,7 +100,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				},
 			})),
 			n(201552,	-- Overseer Stonetongue
-			bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 59.0, 56.0, THALDRASZUS },
 				["questID"] = 74566,
 				["g"] = {
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THALDRASZUS, {
 		n(RARES, {
 			q(72050),	-- first kill of Ancient Protector...? maybe. Quest name is Balgar.

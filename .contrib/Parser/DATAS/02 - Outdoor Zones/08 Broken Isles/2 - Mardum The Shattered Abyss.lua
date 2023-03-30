@@ -50,7 +50,7 @@ _.Zones =
 						["sourceQuests"] = { 40378 },	-- Enter the Illidar: Ashtongue
 						["g"] = {
 							i(201989, {	-- Twisted Heart
-								["timeline"] = TIMELINE_DF_REL,
+								["timeline"] = TIMELINE_10_0_2_LAUNCH,
 							}),
 						},
 					}),
@@ -78,7 +78,7 @@ _.Zones =
 						["sourceQuests"] = { 39050 },	-- Meeting With the Queen
 						["g"] = {
 							i(201989, {	-- Twisted Heart
-								["timeline"] = TIMELINE_DF_REL,
+								["timeline"] = TIMELINE_10_0_2_LAUNCH,
 							}),
 						},
 					}),
@@ -110,7 +110,7 @@ _.Zones =
 						["sourceQuests"] = { 39262 },	-- Give Me Sight Beyond Sight
 						["g"] = {
 							i(201989, {	-- Twisted Heart
-								["timeline"] = TIMELINE_DF_REL,
+								["timeline"] = TIMELINE_10_0_2_LAUNCH,
 							}),
 						},
 					}),
@@ -378,7 +378,7 @@ _.Zones =
 								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
 								["g"] = {
 									i(201989, {	-- Twisted Heart
-										["timeline"] = TIMELINE_DF_REL,
+										["timeline"] = TIMELINE_10_0_2_LAUNCH,
 									}),
 								},
 							}),
@@ -388,7 +388,7 @@ _.Zones =
 								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
 								["g"] = {
 									i(201989, {	-- Twisted Heart
-										["timeline"] = TIMELINE_DF_REL,
+										["timeline"] = TIMELINE_10_0_2_LAUNCH,
 									}),
 								},
 							}),
@@ -431,7 +431,7 @@ _.Zones =
 								["sourceQuests"] = { 40373 },	-- A New Direction
 								["g"] = {
 									i(201989, {	-- Twisted Heart
-										["timeline"] = TIMELINE_DF_REL,
+										["timeline"] = TIMELINE_10_0_2_LAUNCH,
 									}),
 								},
 							}),
@@ -441,7 +441,7 @@ _.Zones =
 								["sourceQuests"] = { 40373 },	-- A New Direction
 								["g"] = {
 									i(201989, {	-- Twisted Heart
-										["timeline"] = TIMELINE_DF_REL,
+										["timeline"] = TIMELINE_10_0_2_LAUNCH,
 									}),
 								},
 							}),
@@ -451,7 +451,7 @@ _.Zones =
 								["sourceQuests"] = { 40373 },	-- A New Direction
 								["g"] = {
 									i(201989, {	-- Twisted Heart
-										["timeline"] = TIMELINE_DF_REL,
+										["timeline"] = TIMELINE_10_0_2_LAUNCH,
 									}),
 								},
 							}),
@@ -461,7 +461,7 @@ _.Zones =
 								["sourceQuests"] = { 40373 },	-- A New Direction
 								["g"] = {
 									i(201989, {	-- Twisted Heart
-										["timeline"] = TIMELINE_DF_REL,
+										["timeline"] = TIMELINE_10_0_2_LAUNCH,
 									}),
 								},
 							}),

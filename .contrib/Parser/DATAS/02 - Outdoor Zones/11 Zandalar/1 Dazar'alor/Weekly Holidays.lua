@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					},
 				}),
 				i(175021, {	-- Cache of Ny'alothan Treasures (N)
-					["timeline"] = { "added 8.3.0", "removed 9.0.1" },
+					["timeline"] = { "added 8.3.0", REMOVED_9_0_1 },
 					["sym"] = {
 						{"select", "instanceID", 1180},			-- Ny'alothan, the Waking City
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					},
 				}),
 				i(175024, {	-- Cache of Ny'alothan Treasures (HC)
-					["timeline"] = { "added 8.3.0", "removed 9.0.1" },
+					["timeline"] = { "added 8.3.0", REMOVED_9_0_1 },
 					["sym"] = {
 						{"select", "instanceID", 1180},			-- Ny'alothan, the Waking City
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["u"] = REMOVED_FROM_GAME,
 				})),
 				pvp(i(167744, {	-- Aspirant's Equipment Cache
-					["timeline"] = { "added 8.1.0", "removed 9.0.2" },
+					["timeline"] = { "added 8.1.0", REMOVED_9_0_1 },
 					["sym"] = {
 						{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
 						{ "pop" },	-- discard Aspirant / Combatant Gear header

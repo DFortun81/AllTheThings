@@ -77,7 +77,7 @@ _.Zones =
 						}),
 						i(187932, {	-- Technique: Mark of the Duskwing Raven (RECIPE!)
 							["cost"] = 5500000,	-- 550g
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 						i(140745, {	-- Treasure Map: Val'sharah
 							["cost"] = 200000,	-- 20g

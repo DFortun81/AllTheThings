@@ -858,12 +858,12 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 								title(409),	-- <Name>, Famed Slayer of Azshara
 							},
 						})),
-						i(168538, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 9.0.1" } }, {	-- Dazzling Azerite Formation (Rank 4)
+						i(168538, bubbleDownSelf({["timeline"] = { "added 8.2.0", REMOVED_9_0_1 } }, {	-- Dazzling Azerite Formation (Rank 4)
 							["classes"] = TANKS,
 						})),
-						i(168857, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 9.0.1" } }, {	-- Sparkling Elemental Heart (Rank 4)
+						i(168857, bubbleDownSelf({["timeline"] = { "added 8.2.0", REMOVED_9_0_1 } }, {	-- Sparkling Elemental Heart (Rank 4)
 						})),
-						i(168944, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 9.0.1" } }, {	-- Web of Unbridled Vitality (Rank 4)
+						i(168944, bubbleDownSelf({["timeline"] = { "added 8.2.0", REMOVED_9_0_1 } }, {	-- Web of Unbridled Vitality (Rank 4)
 							["classes"] = HEALERS,
 						})),
 						i(169348),	-- Zanj'ir Poker

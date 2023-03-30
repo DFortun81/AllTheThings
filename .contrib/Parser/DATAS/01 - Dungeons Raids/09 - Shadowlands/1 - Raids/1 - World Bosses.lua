@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 14,
@@ -72,7 +72,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 					i(187882),	-- Alpaca Soul
 				},
 			}),
-			e(2468, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3 } }, {	-- Antros <Keeper of the Antecedents>
+			e(2468, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {	-- Antros <Keeper of the Antecedents>
 				["crs"] = {
 					182466,	-- Antros
 					182863,	-- Sav'thul
@@ -104,13 +104,13 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 				},
 			}),
 			q(66619, {	-- Antros (Fated)
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select","encounterID",2468,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
 				},
 			}),
-			e(2456, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S2 } }, {	-- Mor'geth <Tormentor of the Damned>
+			e(2456, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Mor'geth <Tormentor of the Damned>
 				["questID"] = 64547,
 				["coord"] = { 69.1, 44.2, THE_MAW },
 				["maps"] = { 1820, 1821, 1822, 1823 },	-- all maps in the Maw
@@ -136,7 +136,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 				},
 			}),
 			q(66618, {	-- Mor'geth (Fated)
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select","encounterID",2456,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -164,7 +164,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 				},
 			}),
 			q(66617, {	-- Mortanis (Fated)
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select","encounterID",2431,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -192,7 +192,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 				},
 			}),
 			q(66615, {	-- Nurgash Muckfromed (Fated)
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select","encounterID",2433,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -220,7 +220,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 				},
 			}),
 			q(66616, {	-- Oranomonos the Everbranching (Fated WQ)
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select","encounterID",2432,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
@@ -248,7 +248,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 				},
 			}),
 			q(66614, {	-- Valinor, the Light of Eons (Fated WQ)
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select","encounterID",2430,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'

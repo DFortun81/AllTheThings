@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(QUESTS, {
 			n(REWARDS, {
@@ -774,7 +774,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, 
 						i(190471),	-- Cinch of Unity
 						i(190466),	-- Clasp of Unity
 						i(190473),	-- Clasp of Unity
-						i(199551, {["timeline"] = { ADDED_DF_PRE }, }),	-- Clasp of Unity
+						i(199551, {["timeline"] = { ADDED_10_0_0 }, }),	-- Clasp of Unity
 						i(190464),	-- Cord of Unity
 						i(190468),	-- Cord of Unity
 						i(190469),	-- Cord of Unity
@@ -820,7 +820,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, 
 					["sourceQuests"] = { 65297 },	-- Penance and Renewal
 					["provider"] = { "n", 187436 },	-- Dori'thur <Tyrande's Companion>
 					["coord"] = { 46.6, 55.9, 1671 },
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_9_2_5 },
 				}),
 					-- The End --
 			}),
@@ -1047,7 +1047,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, 
 			}),
 		}),
 		n(QUESTS, sharedData({ ["repeatable"] = true }, {
-			q(65324, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, "removed 9.2.0.42538"} }, {	-- Patterns Within Patterns
+			q(65324, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, "removed 9.2.0.42538"} }, {	-- Patterns Within Patterns
 				["sourceQuests"] = { 65305 },	-- The Way Forwards
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },

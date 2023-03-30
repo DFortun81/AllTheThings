@@ -46,11 +46,6 @@ r(308422),	-- Bastion Zonewich
 r(308423),	-- Maldraxxus Zonewich
 r(308424),	-- Revendreth Zonewich
 r(309830),	-- Shadowlands Cooking
-10.0.7.47910
-r(399034),	-- 
-r(399035),	-- 
-r(399038),	-- 
-r(399040),	-- 
 10.1.0.48480
 r(407066),	-- Rocks on the Rocks
 r(407100),	-- Charitable Cheddar

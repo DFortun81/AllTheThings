@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.36216", "removed 8.0.1.36577" } }, {	-- Expansion Prelaunch Events
+root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOVED_9_0_2_LAUNCH } }, {	-- Expansion Prelaunch Events
 	tier(SL_TIER, {
 		n(ACHIEVEMENTS, {
 			ach(14750, {	-- Death Rising
@@ -826,6 +826,107 @@ root(ROOTS.WorldEvents, n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.36216
 					i(180454),	-- Anti-Doom Broom
 					i(183621, {	-- Putrid Geist
 						["cost"] = { { "c", 1754, 20 } },
+					}),
+				}),
+			}),
+			n(173791, {	-- Crusader Adevald Ironbeard
+				["description"] = "Sells gear from the Shadowlands Pre-Launch event but you must have leftover tokens from the event to buy them.",
+				["coord"] = { 69.4, 23.3, ICECROWN },
+				["groups"] = sharedData({ ["cost"] = { { "c", 1754, 15 } } }, {	-- 15x Argent Commendation
+				-- Alliance items
+					i(183524, {	-- Argent Conscript's Drape
+						["classes"] = { MAGE, PRIEST, WARLOCK },
+					}),
+					i(183525),	-- Argent Conscript's Robe
+					i(183526),	-- Argent Conscript's Tunic
+					i(183527),	-- Argent Conscript's Treads
+					i(183528),	-- Argent Conscript's Grips
+					i(183529),	-- Argent Conscript's Leggings
+					i(183530),	-- Argent Conscript's Pants
+					i(183531),	-- Argent Conscript's Leggings
+					i(183532),	-- Argent Conscript's Bracers
+					i(183533),	-- Argent Conscript's Wristclamps
+					i(183534),	-- Argent Conscript's Wriststraps
+					i(183545),	-- Argent Conscript's Mantle
+					i(183546),	-- Argent Conscript's Circlet
+					i(183547),	-- Argent Conscript's Gloves
+					i(183548),	-- Argent Conscript's Cord
+					i(183549, {	-- Argent Conscript's Cloak
+						["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
+					}),
+					i(183550, {	-- Argent Conscript's Cape
+						["classes"] = { HUNTER, SHAMAN },
+					}),
+					i(183551, {	-- Argent Conscript's Lined Cloak
+						["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+					}),
+					i(183556),	-- Argent Conscript's Pauldrons
+					i(183557),	-- Argent Conscript's Cowl
+					i(183558),	-- Argent Conscript's Boots
+					i(183559),	-- Argent Conscript's Belt
+					i(183560),	-- Argent Conscript's Shoulderguards
+					i(183561),	-- Argent Conscript's Helmet
+					i(183562),	-- Argent Conscript's Overgloves
+					i(183563),	-- Argent Conscript's Mail Shirt
+					i(183564),	-- Argent Conscript's Folded Boots
+					i(183565),	-- Argent Conscript's Cinch
+					i(183566),	-- Argent Conscript's Wristplates
+					i(183567),	-- Argent Conscript's Spaulders
+					i(183568),	-- Argent Conscript's Greaves
+					i(183569),	-- Argent Conscript's Greathelm
+					i(183570),	-- Argent Conscript's Gauntlets
+					i(183571),	-- Argent Conscript's Breastplate
+					i(183572),	-- Argent Conscript's Greaves
+					i(183573),	-- Argent Conscript's Buckle
+				-- Horde items
+					i(183552, {	-- Argent Conscript's Drape
+						["classes"] = { MAGE, PRIEST, WARLOCK },
+					}),
+					i(183553, {	-- Argent Conscript's Cloak
+						["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
+					}),
+					i(183554, {	-- Argent Conscript's Lined Cloak
+						["classes"] = { HUNTER, SHAMAN },
+					}),
+					i(183555, {	-- Argent Conscript's Cape
+						["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+					}),
+					i(183538),	-- Argent Conscript's Treads
+					i(183576),	-- Argent Conscript's Gloves
+					i(183575),	-- Argent Conscript's Skullcap
+					i(183539),	-- Argent Conscript's Leggings
+					i(183535),	-- Argent Conscript's Robe
+					i(183574),	-- Argent Conscript's Mantle
+					i(183577),	-- Argent Conscript's Cord
+					i(183541),	-- Argent Conscript's Bracers
+					i(183537),	-- Argent Conscript's Tunic
+					i(183581),	-- Argent Conscript's Boots
+					i(183580),	-- Argent Conscript's Grips
+					i(183579),	-- Argent Conscript's Mask
+					i(183540),	-- Argent Conscript's Leggings
+					i(183578),	-- Argent Conscript's Pauldrons
+					i(183582),	-- Argent Conscript's Belt
+					i(183544),	-- Argent Conscript's Wriststraps
+					i(183536),	-- Argent Conscript's Mail Shirt
+					i(183587),	-- Argent Conscript's Folded Boots
+					i(183586),	-- Argent Conscript's Overgloves
+					i(183585),	-- Argent Conscript's Helmet
+					i(183584),	-- Argent Conscript's Pants
+					i(183583),	-- Argent Conscript's Shoulderguards
+					i(183588),	-- Argent Conscript's Cinch
+					i(183543),	-- Argent Conscript's Wristclamps
+					i(183593),	-- Argent Conscript's Breastplate
+					i(183594),	-- Argent Conscript's Greaves
+					i(183592),	-- Argent Conscript's Gauntlets
+					i(183591),	-- Argent Conscript's Tuskhelm
+					i(183590),	-- Argent Conscript's Greaves
+					i(183589),	-- Argent Conscript's Spaulders
+					i(183595),	-- Argent Conscript's Buckle
+					i(183542),	-- Argent Conscript's Wristplates
+				-- Misc Items
+					i(180454),	-- Anti-Doom Broom
+					i(183621, {	-- Putrid Geist
+						["cost"] = { { "c", 1754, 20 } },	-- 20x Argent Commendation
 					}),
 				}),
 			}),

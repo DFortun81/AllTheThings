@@ -19,16 +19,16 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		["timeline"] = { "added 8.1.5.29701" },
 	}),
 	i(187997, {	-- Eternal Heirloom Armor Casing
-		["timeline"] = { "added 9.1.5.40871" },
+		["timeline"] = { ADDED_9_1_5 },
 	}),
 	i(187998, {	-- Eternal Heirloom Scabbard
-		["timeline"] = { "added 9.1.5.40871" },
+		["timeline"] = { ADDED_9_1_5 },
 	}),
 	i(204336, {	-- Awakened Heirloom Armor Casing
-		["timeline"] = { ADDED_DF_0_7 },
+		["timeline"] = { ADDED_10_0_7 },
 	}),
 	i(204337, {	-- Awakened Heirloom Scabbard
-		["timeline"] = { ADDED_DF_0_7 },
+		["timeline"] = { ADDED_10_0_7 },
 	}),
 	n(ACHIEVEMENTS, {
 		ach(9909, {	-- Heirloom Hoarder (35)
@@ -219,7 +219,7 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 			-- TODO: more accurate timeline updates
 			["timeline"] = {
 				"added 7.2", "removed 8.0",
-				"added 8.2", "removed 9.0",
+				"added 8.2", REMOVED_9_0_1,
 			},
 		}),
 		un(REMOVED_FROM_GAME, i(79131)),	-- Burnished Warden Staff

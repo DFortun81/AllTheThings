@@ -19,7 +19,7 @@ local TEMPORAL_DRAGONHEAD = 194969;
 local THOUSANDBITE_PIRANHA = 194966;
 local TUFT_OF_PRIMAL_WOOL = 201405;
 local WILDERCLOTH = 193050;
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(ISKAARA_TUSKARR, {
 		n(VENDORS, {
 			n(186449, {	-- Arvik
@@ -320,7 +320,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						},
 					}),
 					i(197155, {	-- Highland Drake: Finned Neck (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},

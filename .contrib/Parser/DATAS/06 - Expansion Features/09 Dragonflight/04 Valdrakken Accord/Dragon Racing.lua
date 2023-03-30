@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(DRAGONRIDING_RACING, {
 			n(REWARDS, {
@@ -16,9 +16,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
 					i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
 					i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
+					i(197594),	-- Windborne Velocidrake: Small Ears (DM!)
 				}),
-				i(204359, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_7 } }, {	-- Reach Racer's Purse
+				i(204359,	-- Reach Racer's Purse
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+					i(197002),	-- Cliffside Wylderdrake: Flared Cheek (DM!)
+					i(197124),	-- Highland Drake: Swept Horns (DM!)
 					i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
+				})),
+				i(205226,	-- Cavern Racer's Purse
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 				})),
 				i(200609),	-- Dragon Racing Purse - First Place
 				i(200610),	-- Dragon Racing Purse - Second Place
@@ -122,15 +129,33 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						-- The Forbidden Reach --
 					q(73083, {	-- Dragonrider Racing - Caldera Climb
 						["coord"] = { 41.2, 14.3, THE_FORBIDDEN_REACH },
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					q(73084, {	-- Dragonrider Racing - Forbidden Reach Rush
 						["coord"] = { 66.9, 5.6, THE_FORBIDDEN_REACH },
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 					}),
 					q(73082, {	-- Dragonrider Racing - Southern Reach Route
 						["coord"] = { 63.5, 83.6, THE_FORBIDDEN_REACH },
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
+					}),
+
+						-- Zaralek Cavern --
+					q(75121, {	-- Dragonrider Racing - Brimstone Scramble
+						["coord"] = { 54.3, 24.0, ZARALEK_CAVERN },
+						["timeline"] = { ADDED_10_1_0 },
+					}),
+					q(75122, {	-- Dragonrider Racing - Shimmering Slalom
+						["coord"] = { 58.6, 45.0, ZARALEK_CAVERN },
+						["timeline"] = { ADDED_10_1_0 },
+					}),
+					q(75124, {	-- Dragonrider Racing - Sulfur Sprint
+						["coord"] = { 51.3, 46.6, ZARALEK_CAVERN },
+						["timeline"] = { ADDED_10_1_0 },
+					}),
+					q(75123, {	-- Dragonrider Racing - Zaralek Zigzag
+						["coord"] = { 58.1, 57.6, ZARALEK_CAVERN },
+						["timeline"] = { ADDED_10_1_0 },
 					}),
 				}),
 			}),

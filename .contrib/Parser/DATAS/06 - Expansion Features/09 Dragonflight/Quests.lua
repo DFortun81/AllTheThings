@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2 }, {
 	n(HIDDEN_QUESTS, {
 		q(72285, {	-- Stay awhile and listen: Scalecommander Azurathel
 			["name"] = "Stay awhile and listen: Scalecommander Azurathel",
@@ -122,13 +122,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		q(70197, {	-- The Call of the Isles [A]
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
-			["timeline"] = TIMELINE_DF_REL,
+			["timeline"] = TIMELINE_10_0_2_LAUNCH,
 			["isBreadcrumb"] = true,
 		}),
 		q(70198, {	-- The Call of the Isles [H]
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
-			["timeline"] = TIMELINE_DF_REL,
+			["timeline"] = TIMELINE_10_0_2_LAUNCH,
 			["isBreadcrumb"] = true,
 		}),
 		q(67700, {	-- To The Dragon Isles! [A]
@@ -139,7 +139,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["provider"] = { "n", 189077 },	-- Toddy Whiskers
 			["coord"] = { 22.7, 55.6, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
-			["timeline"] = TIMELINE_DF_REL,
+			["timeline"] = TIMELINE_10_0_2_LAUNCH,
 		}),
 		q(65444, {	-- To the Dragon Isles! [H]
 			["sourceQuests"] = {
@@ -149,7 +149,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["provider"] = { "n", 197279 },	-- Naleidea Rivergleam
 			["coord"] = { 55.8, 12.7, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["timeline"] = TIMELINE_DF_REL,
+			["timeline"] = TIMELINE_10_0_2_LAUNCH,
 		}),
 		q(66458, {	-- Legacy of Tyr: Secrets of the Past [A]
 			["sourceQuests"] = { 66596 },	-- Whispers on the Winds [A]
@@ -218,33 +218,33 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			["provider"] = { "n", 193889 },	-- Kodethi
 			["coord"] = { 55.9, 12.7, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["timeline"] = TIMELINE_DF_REL,
+			["timeline"] = TIMELINE_10_0_2_LAUNCH,
 		}),
 		q(70044, {    -- Truths and Revelations [A]
             ["sourceQuests"] = { 66596 },	-- Whispers on the Winds [A]
             ["provider"] = { "n", 193890 },	-- Dervishian
             ["coord"] = { 23.1, 56.2, STORMWIND_CITY },
             ["races"] = ALLIANCE_ONLY,
-			["timeline"] = TIMELINE_DF_REL,
+			["timeline"] = TIMELINE_10_0_2_LAUNCH,
 		}),
 		q(70053, {    -- Lessons From Our Past [A]
             ["sourceQuests"] = { 70044 },	-- Truths and Revelations [A]
             ["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
             ["coord"] = { 40.6, 49.7, STORMWIND_CITY },
             ["races"] = ALLIANCE_ONLY,
-			["timeline"] = TIMELINE_DF_REL,
+			["timeline"] = TIMELINE_10_0_2_LAUNCH,
 		}),
 		q(70054, {	-- Lessons From Our Past [H]
 			["sourceQuests"] = { 70045 },	-- Truths and Revelations [H]
 			["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
 			["coord"] = { 49.2, 73.8, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
-			["timeline"] = TIMELINE_DF_REL,
+			["timeline"] = TIMELINE_10_0_2_LAUNCH,
 		}),
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(QUESTS, {
 		q(72751),	-- Triggers whenever you collect one of the Coin quests from your Adventurer's Journal.
 	}),

@@ -32,16 +32,9 @@ r(53690),	-- Verdant Tundra Shoulderpads
 3.0.1.8874
 r(55243),	-- Bracers of Deflection
 3.1.0.9767
-r(57683),	-- Fur Lining - Attack Power
-r(57690),	-- Fur Lining - Stamina
-r(57691),	-- Fur Lining - Spell Power
 r(57692),	-- Fur Lining - Fire Resist
-r(57694),	-- Fur Lining - Frost Resist
-r(57696),	-- Fur Lining - Shadow Resist
 r(57699),	-- Fur Lining - Nature Resist
 r(57701),	-- Fur Lining - Arcane Resist
-r(60583),	-- Jormungar Leg Reinforcements
-r(60584),	-- Nerubian Leg Reinforcements
 4.0.1.12911
 r(74493),	-- Savage Leather
 r(78400),	-- Windbound Bracers
@@ -194,6 +187,9 @@ r(406214),	-- Lambent Armor Kit
 r(406266),	-- Spore Colony Shoulderguards
 r(406267),	-- Adaptive Dracothyst Armguards
 r(406275),	-- Shadowflame-Tempered Armor Patch
+10.1.0.48661
+r(409555),	-- Lustrous Scaled Drums
+r(409557),	-- Hide-Bound Drums
 
 
 
@@ -1925,3 +1921,6 @@ r(406214),	-- Lambent Armor Kit
 r(406266),	-- Spore Colony Shoulderguards
 r(406267),	-- Adaptive Dracothyst Armguards
 r(406275),	-- Shadowflame-Tempered Armor Patch
+10.1.0.48661
+r(409555),	-- Lustrous Scaled Drums
+r(409557),	-- Hide-Bound Drums

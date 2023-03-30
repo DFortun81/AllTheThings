@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	inst(1194, {	-- Tazavesh, the Veiled Market
 		["coord"] = { 88.9, 44.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
 		["maps"] = {
@@ -180,7 +180,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 					}),
 				},
 			}),
-			d(HEROIC_DUNGEON, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
+			d(HEROIC_DUNGEON, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
 					["g"] = {
@@ -408,10 +408,10 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 						i(185845),	-- First Class Healing Distributor
 						i(185846),	-- Miniscule Mailemental in an Envelope
 						i(185844, {	-- Ticking Sack of Terror
-							["timeline"] = { ADDED_SL_S2 , REMOVED_SL_S3 },
+							["timeline"] = { ADDED_9_1_0 , REMOVED_9_2_0 },
 							}),
 						i(190652, {	-- Ticking Sack of Terror
-							["timeline"] = { ADDED_SL_S3 },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 					},
 				}),
@@ -439,7 +439,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 				e(2451, {	-- So'azmi
 					["crs"] = { 175806 },	-- So'azmi
 					["g"] = {
-						ach(15650, {["timeline"] = { ADDED_SL_S4 }}),	-- Mythic: Streets of Wonder
+						ach(15650, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: Streets of Wonder
 						i(181707),	-- Diverted Energy
 						i(182449),	-- Resolute Barrier
 						i(182605),	-- Tactical Retreat
@@ -500,7 +500,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 						}),
 						ach(15177),	-- Tazavesh, the Veiled Market
 						ach(15185),	-- Mythic: Tazavesh, the Veiled Market Guild Run
-						ach(15652, {["timeline"] = { ADDED_SL_S4 }}),	-- Mythic: So'leah's Gambit
+						ach(15652, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: So'leah's Gambit
 						i(186638),	-- Cartel Master's Gearglider (MOUNT!)
 						i(181838),	-- Charitable Soul
 						i(182304),	-- Divine Call
@@ -517,10 +517,10 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } 
 						i(185799),	-- Hyperlight Leggings
 						i(185813),	-- Signet of Collapsing Stars
 						i(185818, {	-- So'leah's Secret Technique
-							["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 },
+							["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
 						}),
 						i(190958, {	-- So'leah's Secret Technique
-							["timeline"] = { ADDED_SL_S3 },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 						i(185047, {	-- Yak Soul
 							["description"] = "Drops on Hard Mode or M+.",

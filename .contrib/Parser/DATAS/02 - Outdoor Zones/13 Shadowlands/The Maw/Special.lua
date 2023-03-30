@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(THE_MAW, {
 		n(SPECIAL, {
 			header(HEADERS.Achievement, 14738, {	-- Hunting Party
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					["isWeekly"] = true,
 				}),
 			}),
-			header(HEADERS.Quest, 64305, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S2 } }, {	-- The Tormentors of Torghast
+			header(HEADERS.Quest, 64305, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- The Tormentors of Torghast
 				["description"] = "You can only get the cache once a week, but you can continue to participate in the events for achievement credit individual boss loot.",
 				["icon"] = "Interface\\Icons\\ui_torghast",
 				["questID"] = 63854,
@@ -323,7 +323,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					{ "i", 186187, 1 },	-- Lil'Abom Spare Arm
 					{ "i", 186184, 1 },	-- Lil'Abom Torso
 				},
-				["timeline"] = { ADDED_SL_S2 },
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 		}),
 	}),

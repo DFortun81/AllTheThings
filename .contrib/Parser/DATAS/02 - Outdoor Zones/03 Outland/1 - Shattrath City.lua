@@ -1697,13 +1697,29 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					n(33630, {	-- Aelthin <Alchemy Trainer>
+						["coord"] = { 38.6, 71.8, SHATTRATH_CITY },
+						["sym"] = {
+							{"select", "itemID", 4565 },	-- Simple Dagger
+						},
+					}),
 					n(19043, {	-- Ahemen <Staff Vendor>
 						["coord"] = { 34.2, 20.0, SHATTRATH_CITY },
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["sym"] = {
+							{"select", "itemID", 2527 },    -- Battle Staff
+							{"select", "itemID", 2535 },    -- War Staff
+						},
 						["groups"] = {
 							i(12251, {	-- Big Stick
 								["isLimited"] = true,
 							}),
+						},
+					}),
+					n(33674, {	-- Alchemist  Kanhu  <Alchemy Trainer>
+						["coord"] = { 38.6, 30.0, SHATTRATH_CITY },
+						["sym"] = {
+							{"select", "itemID", 4565 },	-- Simple Dagger
 						},
 					}),
 					n(21432, {	-- Almaador <Sha'tari Quartermaster>
@@ -2142,6 +2158,9 @@ root(ROOTS.Zones, {
 						i(27978),	-- Soap on a Rope
 						i(27979),	-- Stone of Stupendous Springing Strides
 						i(27944),	-- Talisman of True Treasure Tracking
+						i(33012, {	-- Terokkar Lilac
+							["timeline"] = { "added 2.2.0.6983", "removed 2.3.0" },
+						}),
 						i(156726, {	-- Yellow Crystal Monocle
 							["sourceQuest"] = 50183,	-- Star-Touched Chest
 							["timeline"] = { "added 8.1.028768" },
@@ -2233,6 +2252,12 @@ root(ROOTS.Zones, {
 							i(21099),	-- Recipe: Smoked Sagefish
 						},
 					}),
+					n(19049, {	-- Karokka  <Alchemy Trainer>
+						["coord"] = { 45.6, 19.8, SHATTRATH_CITY },
+						["sym"] = {
+							{"select", "itemID", 4565 },	-- Simple Dagger
+						},
+					}),
 					n(21906, {	-- Kelara <Keeper of Sha'tari Heirlooms>
 						["coord"] = { 24.8, 27.0, SHATTRATH_CITY },
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
@@ -2258,6 +2283,31 @@ root(ROOTS.Zones, {
 						})),
 					}),
 					-- #endif
+					n(19047, {	-- Lissaf
+						["coord"] = { 51.8, 17.8, SHATTRATH_CITY },
+						["sym"] = {
+							{"select", "itemID", 15905 },	-- Brass Knuckles
+							{"select", "itemID", 2520 },	-- Broadsword
+							{"select", "itemID", 15904 },	-- Deadly fist blades
+							{"select", "itemID", 2528 },	-- falchion
+							{"select", "itemID", 2521 },	-- Flamberge
+							{"select", "itemID", 2526 },	-- Main Gauche
+							{"select", "itemID", 2534 },	-- Rondel
+							{"select", "itemID", 15903 },	-- slicing claw
+							{"select", "itemID", 2529 },	-- zweihander
+						},
+						["groups"] = {
+							i(15906, {	-- Left-Handed Brass Knuckles
+								["timeline"] = { "removed 6.0.2" },
+							}),
+							i(15909, {	-- Left-Handed Blades
+								["timeline"] = { "removed 6.0.2" },
+							}),
+							i(15907, {	-- Left-Handed Claw
+								["timeline"] = { "removed 6.0.2" },
+							}),
+						},
+					}),
 					-- #if AFTER CATA
 					n(52278, {	-- Linsa <Tabard Vendor>
 						["coord"] = { 58.8, 46.4, SHATTRATH_CITY },
@@ -2315,6 +2365,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					-- #endif
+					n(19239, {	-- Mahir Redstroke
+						["coord"] = { 54.6, 82.6, SHATTRATH_CITY },
+						["sym"] = {
+						-- added all
+							{"select", "itemID", 2526 },	-- Main Gauche
+							{"select", "itemID", 2534 },	-- Rondel
+							{"select", "itemID", 4565 },	-- Simple Dagger
+						},
+					}),
 					n(21655, {	-- Nakodu <Lower City Quartermaster>
 						["coord"] = { 62.6, 69.0, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
@@ -2617,6 +2676,19 @@ root(ROOTS.Zones, {
 							i(29126),	-- Seer's Signet
 						},
 					}),
+					n(19236, {	-- Quelama Lightblade
+						["coord"] = { 44.6, 76.0, SHATTRATH_CITY },
+						["sym"] = {
+							{"select", "itemID", 5239 },    -- Blackbone Wand
+							{"select", "itemID", 5210 },    -- Burning Wand
+							{"select", "itemID", 5236 },    -- Combustible Wand
+							{"select", "itemID", 5211 },    -- Dusk Wand
+							{"select", "itemID", 5209 },    -- Gloom Wand
+							{"select", "itemID", 5347 },    -- Pestilent Wand
+							{"select", "itemID", 5238 },    -- Pitchwood Wand
+							{"select", "itemID", 5208 },    -- Smoldering Wand
+						},
+					}),
 					n(20807, {	-- Scribe Saalyn <Aldor Inscriptions>
 						["coord"] = { 48.6, 26.6, SHATTRATH_CITY },
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
@@ -2677,6 +2749,18 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					n(19240, {	-- Selanam the Blade
+						["coord"] = { 42.0, 75.2, SHATTRATH_CITY },
+						["sym"] = {
+						-- added all
+							{"select", "itemID", 2520 },	-- Boardsword
+							{"select", "itemID", 2528 },	-- falchion
+							{"select", "itemID", 2521 },	-- Flamberge
+							{"select", "itemID", 2526 },	-- Main Gauche
+							{"select", "itemID", 2534 },	-- Rondel
+							{"select", "itemID", 2529 },	-- zweihander
+						},
+					}),
 					n(19074, {	-- Skreah <Alchemy Supplies>
 						["coord"] = { 45.8, 20.8, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
@@ -2689,6 +2773,15 @@ root(ROOTS.Zones, {
 					n(19238, {	-- Urumir Stavebright <Staff Vendor>
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 						["coord"] = { 49.6, 79.0, SHATTRATH_CITY },
+						["sym"] = {
+							{"select", "itemID", 2527 },    -- Battle Staff
+							{"select", "itemID", 2030 },    -- Gnarled Staff
+							{"select", "itemID", 928 },    -- Long Staff
+							{"select", "itemID", 854 },    -- Quarter Staff
+							{"select", "itemID", 12252 },    -- Staff Of Protection
+							{"select", "itemID", 2495 },    -- Walking Stick
+							{"select", "itemID", 2535 },    -- War Staff
+						},
 						["groups"] = {
 							i(12252, {	-- Staff of Protection
 								["isLimited"] = true,

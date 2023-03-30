@@ -11530,6 +11530,8 @@
 17404@@@Dragon Glyphs: Talonlords' Perch
 10.0.7.48520
 17426@@@Toolbox Trouble
+10.0.7.48749
+17536@@@<DNT> Complete the "A Creche Divided" questline.
 10.1.0.48480
 17429@@@Crystal Circuit: Bronze
 17430@@@Crystal Circuit: Silver
@@ -11646,3 +11648,110 @@
 17759@@@<DNT> Loamm Niffen Rank 18
 17760@@@<DNT> Loamm Niffen Rank 19
 17761@@@<DNT> Loamm Niffen Rank 20
+10.1.0.48661
+17511@@@Dragon Glyphs: Nal Ks'kol
+17514@@@Dragon Glyphs: Slitherdrake Roost
+17763@@@There's No Place Like Loamm
+17764@@@Obsidian Gladiator: Dragonflight Season 2
+17765@@@What We Wear In The Shadowflame
+17766@@@Explore Zaralek Cavern
+17767@@@Obsidian Legend: Dragonflight Season 2
+17768@@@Hero of the Alliance: Obsidian
+17772@@@Hero of the Horde: Obsidian
+17778@@@Obsidian Gladiator's Slitherdrake
+17779@@@A Serpentine Discovery
+17781@@@The Smell of Money
+17783@@@Adventurer of Zaralek Cavern
+17785@@@Que Zara(lek), Zara(lek)
+17786@@@Treasures of Zaralek Cavern
+17788@@@Current Patch - Login Video [DNT] (Updated Every Patch)
+17794@@@Duelist: Dragonflight Season 2
+17795@@@Rival I: Dragonflight Season 2
+17796@@@Rival II: Dragonflight Season 2
+17797@@@Challenger I: Dragonflight Season 2
+17798@@@Challenger II: Dragonflight Season 2
+17799@@@Combatant I: Dragonflight Season 2
+17800@@@Combatant II: Dragonflight Season 2
+17801@@@Legend: Dragonflight Season 2
+17830@@@Stones Can't Fly!
+17831@@@Elite: Dragonflight Season 2
+17832@@@Sniffen Around
+17833@@@Sniffen Sage
+17836@@@Flightstones earned
+17837@@@Whelpling's Shadowflame Crest Fragments earned
+17838@@@Drake's Shadowflame Crest Fragments earned
+17839@@@Wyrm's Shadowflame Crest Fragments earned
+17840@@@Aspect's Shadowflame Crest Fragments earned
+17841@@@Pyramid Scheme
+17842@@@Dragonflight Keystone Explorer: Season Two
+17843@@@Dragonflight Keystone Conqueror: Season Two
+17844@@@Dragonflight Keystone Master: Season Two
+17845@@@Dragonflight Keystone Hero: Season Two
+17846@@@<PH> Hero: Dragonflight Season 2
+17847@@@Keystone Hero: The Vortex Pinnacle
+17848@@@Keystone Hero: Freehold
+17849@@@Keystone Hero: The Underrot
+17850@@@Keystone Hero: Neltharion's Lair
+17851@@@Tour of Duty: Zaralek Cavern
+17852@@@Elemental Conjuror
+10.1.0.48776
+17741@@@Slow and Steady Wins the Race
+17742@@@<DNT> Loamm Niffen Rank 01 (Account)
+17743@@@<DNT> Loamm Niffen Rank 02 (Account)
+17744@@@<DNT> Loamm Niffen Rank 03 (Account)
+17745@@@<DNT> Loamm Niffen Rank 04 (Account)
+17746@@@<DNT> Loamm Niffen Rank 05 (Account)
+17747@@@<DNT> Loamm Niffen Rank 06 (Account)
+17748@@@<DNT> Loamm Niffen Rank 07 (Account)
+17749@@@<DNT> Loamm Niffen Rank 08 (Account)
+17750@@@<DNT> Loamm Niffen Rank 09 (Account)
+17751@@@<DNT> Loamm Niffen Rank 10 (Account)
+17752@@@<DNT> Loamm Niffen Rank 11 (Account)
+17753@@@<DNT> Loamm Niffen Rank 12 (Account)
+17754@@@<DNT> Loamm Niffen Rank 13 (Account)
+17755@@@<DNT> Loamm Niffen Rank 14 (Account)
+17756@@@<DNT> Loamm Niffen Rank 15 (Account)
+17757@@@<DNT> Loamm Niffen Rank 16 (Account)
+17758@@@<DNT> Loamm Niffen Rank 17 (Account)
+17759@@@<DNT> Loamm Niffen Rank 18 (Account)
+17760@@@<DNT> Loamm Niffen Rank 19 (Account)
+17761@@@<DNT> Loamm Niffen Rank 20 (Account)
+17877@@@We'll Never See That Again, Surely
+17878@@@The Forbidden Flounder
+17879@@@Zaralek Cavern Safari
+17880@@@Battle in Zaralek Cavern
+17881@@@Aquatic Battler of Zaralek Cavern
+17882@@@Beast Battler of Zaralek Cavern
+17883@@@Critter Battler of Zaralek Cavern
+17890@@@Dragonkin Battler of Zaralek Cavern
+17904@@@Elemental Battler of Zaralek Cavern
+17905@@@Flying Battler of Zaralek Cavern
+17915@@@Humanoid Battler of Zaralek Cavern
+17916@@@Magic Battler of Zaralek Cavern
+17917@@@Mechanical Battler of Zaralek Cavern
+17918@@@Undead Battler of Zaralek Caverm
+17934@@@Family Battler of Zaralek Cavern
+17977@@@Stones Can Try To Fly!
+17978@@@Stones Can Fly!
+18027@@@Dragonflight Season 2 Master
+18100@@@Cavern Clawbbering
+18129@@@<DNT> Loamm Niffen Rank 01 (Character)
+18130@@@<DNT> Loamm Niffen Rank 02 (Character)
+18131@@@<DNT> Loamm Niffen Rank 03 (Character)
+18132@@@<DNT> Loamm Niffen Rank 04 (Character)
+18133@@@<DNT> Loamm Niffen Rank 05 (Character)
+18134@@@<DNT> Loamm Niffen Rank 06 (Character)
+18135@@@<DNT> Loamm Niffen Rank 07 (Character)
+18136@@@<DNT> Loamm Niffen Rank 08 (Character)
+18137@@@<DNT> Loamm Niffen Rank 09 (Character)
+18138@@@<DNT> Loamm Niffen Rank 10 (Character)
+18139@@@<DNT> Loamm Niffen Rank 11 (Character)
+18140@@@<DNT> Loamm Niffen Rank 12 (Character)
+18141@@@<DNT> Loamm Niffen Rank 13 (Character)
+18142@@@<DNT> Loamm Niffen Rank 14 (Character)
+18143@@@<DNT> Loamm Niffen Rank 15 (Character)
+18144@@@<DNT> Loamm Niffen Rank 16 (Character)
+18145@@@<DNT> Loamm Niffen Rank 17 (Character)
+18146@@@<DNT> Loamm Niffen Rank 18 (Character)
+18147@@@<DNT> Loamm Niffen Rank 19 (Character)
+18148@@@<DNT> Loamm Niffen Rank 20 (Character)

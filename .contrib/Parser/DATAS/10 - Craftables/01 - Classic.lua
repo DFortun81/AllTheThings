@@ -7,7 +7,10 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(9210),	-- Ghost Dye
 			i(9061),	-- Goblin Rocket Fuel
 			applyclassicphase(PHASE_FOUR, i(19931, {	-- Gurubashi Mojo Madness
-				["timeline"] = { "removed 4.0.3.14732" },
+				["timeline"] = { "removed 4.0.3.14732", ADDED_10_0_7  },
+				-- #if after 10.0.7
+				["description"] = "Has to be used near the 'Brazier of Madness' Toy to receive the 'Succumbed to Madness' Buff.",
+				-- #endif
 			})),
 		}),
 		category(638, {	-- Potions
@@ -225,9 +228,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7915),	-- Barbaric Iron Helm
 			i(7913),	-- Barbaric Iron Shoulders
 			applyclassicphase(PHASE_FIVE, i(22194)),	-- Black Grasp of the Destroyer
-			applyclassicphase(PHASE_FOUR, i(19690, {["timeline"]={"removed 4.0.3"}})),	-- Bloodsoul Breastplate
-			applyclassicphase(PHASE_FOUR, i(19692, {["timeline"]={"removed 4.0.3"}})),	-- Bloodsoul Gauntlets
-			applyclassicphase(PHASE_FOUR, i(19691, {["timeline"]={"removed 4.0.3"}})),	-- Bloodsoul Shoulders
+			applyclassicphase(PHASE_FOUR, i(19690, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Bloodsoul Breastplate
+			applyclassicphase(PHASE_FOUR, i(19692, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Bloodsoul Gauntlets
+			applyclassicphase(PHASE_FOUR, i(19691, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Bloodsoul Shoulders
 			i(2853),	-- Copper Bracers
 			i(2851),	-- Copper Chain Belt
 			i(3469),	-- Copper Chain Boots
@@ -239,9 +242,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_FOUR, i(20550)),	-- Darkrune Breastplate
 			applyclassicphase(PHASE_FOUR, i(20549)),	-- Darkrune Gauntlets
 			applyclassicphase(PHASE_FOUR, i(20551)),	-- Darkrune Helm
-			applyclassicphase(PHASE_FOUR, i(19693, {["timeline"]={"removed 4.0.3"}})),	-- Darksoul Breastplate
-			applyclassicphase(PHASE_FOUR, i(19694, {["timeline"]={"removed 4.0.3"}})),	-- Darksoul Leggings
-			applyclassicphase(PHASE_FOUR, i(19695, {["timeline"]={"removed 4.0.3"}})),	-- Darksoul Shoulders
+			applyclassicphase(PHASE_FOUR, i(19693, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Darksoul Breastplate
+			applyclassicphase(PHASE_FOUR, i(19694, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Darksoul Leggings
+			applyclassicphase(PHASE_FOUR, i(19695, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Darksoul Shoulders
 			applyclassicphase(TBC_PHASE_ONE, i(12625, {["timeline"]={"added 2.0.1"}})),	-- Dawnbringer Shoulders
 			i(3474),	-- Gemmed Copper Gauntlets
 			applyclassicphase(PHASE_THREE, i(19051)),	-- Girdle of the Dawn
@@ -260,6 +263,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(3836),	-- Green Iron Helm
 			i(3842),	-- Green Iron Leggings
 			i(3840),	-- Green Iron Shoulders
+			i(203817, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Headplate
 			i(7933),	-- Heavy Mithril Boots
 			i(7930),	-- Heavy Mithril Breastplate
 			i(7919),	-- Heavy Mithril Gauntlet
@@ -396,6 +400,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		n(WEAPONS, {
 			i(7945),	-- Big Black Mace
 			i(3848),	-- Big Bronze Knife
+			i(203790, {["timeline"] = {ADDED_10_0_7 }}),	-- Bloodherald
+			i(203793, {["timeline"] = {ADDED_10_0_7 }}),	-- Bloodlord's Reaver
 			i(7942),	-- Blue Glittering Axe
 			i(2849),	-- Bronze Axe
 			i(7958),	-- Bronze Battle Axe
@@ -413,9 +419,17 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7947),	-- Ebon Shiv
 			i(17704),	-- Edge of Winter
 			applyclassicphase(TBC_PHASE_ONE, i(29203, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Enchanted Thorium Blades
+			i(203813, {["timeline"] = {ADDED_10_0_7 }}),	-- Fiery Vengeance
 			i(3854),	-- Frost Tiger Blade
 			i(12259),	-- Glinting Steel Dagger
 			i(3852),	-- Golden Iron Destroyer
+			i(203810, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Carver
+			i(203806, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Crusher
+			i(203805, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Grasp
+			i(203809, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Grinder
+			i(203797, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi HexXxer
+			i(203812, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Poker
+			i(203801, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Slicer
 			i(3849),	-- Hardened Iron Shortsword
 			i(3491),	-- Heavy Bronze Mace
 			i(3487),	-- Heavy Copper Broadsword
@@ -431,6 +445,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(3492),	-- Mighty Iron Hammer
 			i(3853),	-- Moonsteel Broadsword
 			i(12773),	-- Ornate Thorium Handaxe
+			i(203811, {["timeline"] = {ADDED_10_0_7 }}),	-- Pitchfork of Madness
 			i(5540),	-- Pearl-handled Dagger
 			i(9718, {	-- Reforged Blade of Heroes
 				["cost"] = {
@@ -443,14 +458,19 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			}),
 			i(7946),	-- Runed Mithril Hammer
 			i(12260),	-- Searing Golden Blade
+			i(203804, {["timeline"] = {ADDED_10_0_7 }}),	-- Sceptre of Hexing
 			i(3856),	-- Shadow Crescent Axe
 			i(3851),	-- Solid Iron Maul
 			i(17193),	-- Sulfuron Hammer
 			applyclassicphase(TBC_PHASE_ONE, i(29201, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Thick Bronze Darts
 			i(3489),	-- Thick War Axe
+			i(203802, {["timeline"] = {ADDED_10_0_7 }}),	-- Venomfang
+			i(203860, {["timeline"] = {ADDED_10_0_7 }}),	-- Venomreaver
 			i(12792, {	-- Volcanic Hammer
-				["timeline"] = { "added 1.0.0", "removed 4.0.3" },	-- NOTE: This had a 7.3.5 removed tag, but I don't trust posters on WoWHead sometimes and this is one of those times where I'll go with my gut and say "PROVE IT" when Cataclysm comes around.
+				["timeline"] = { "added 1.0.0", "removed 4.0.3" },    -- NOTE: This had a 7.3.5 removed tag, but I don't trust posters on WoWHead sometimes and this is one of those times where I'll go with my gut and say "PROVE IT" when Cataclysm comes around.
 			}),
+			i(203791, {["timeline"] = {ADDED_10_0_7 }}),	-- Warblades of the Hakkari, Reborn (MH)
+			i(203792, {["timeline"] = {ADDED_10_0_7 }}),	-- Warblades of the Hakkari, Reborn (OH)
 			i(7943),	-- Wicked Mithril Blade
 			applyclassicphase(TBC_PHASE_ONE, i(29202, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Whirling Steel Axes
 			-- #if AFTER TBC
@@ -557,10 +577,10 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(12212),	-- Jungle Stew
 			i(5472),	-- Kaldorei Spider Kabob
 			i(5480, {	-- Lean Venison
-				["timeline"] = { "removed 4.0.3", "added 9.1" },
+				["timeline"] = { "removed 4.0.3", ADDED_9_1_0 },
 			}),
 			i(12209, {	-- Lean Wolf Steak
-				["timeline"] = { "removed 5.0.4", "added 9.1" },
+				["timeline"] = { "removed 5.0.4", ADDED_9_1_0 },
 			}),
 			-- #if AFTER WOD
 			applyclassicphase(WOD_PHASE_ONE, i(126934)),	-- Lemon Herb Filet
@@ -773,7 +793,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(38885),	-- Enchant Gloves - Threat
 			-- #endif
 		}))),
-		applyclassicphase(LEGION_PHASE_ONE, filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
+		applyclassicphase(LEGION_PHASE_ONE, filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
 			i(138787, {	-- Tome of Illusions: Azeroth
 				ill(803),	-- Fiery Weapon
 				ill(1899),	-- Unholy Weapon
@@ -783,6 +803,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		applyclassicphase(PHASE_FIVE, cat(699, {	-- Oils
 			i(20748, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Mana Oil / 10.0.7: Expired Mana Oil
 			i(20749, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Wizard Oil / 10.0.7: Expired Wizard Oil
+			i(203862, {["timeline"]={ADDED_10_0_7}}),	-- Brilliant Mana Oil
+			i(203865, {["timeline"]={ADDED_10_0_7}}),	-- Brilliant Wizard Oil
 			i(20747),	-- Lesser Mana Oil
 			i(20746),	-- Lesser Wizard Oil
 			i(20745),	-- Minor Mana Oil
@@ -821,6 +843,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(11290),	-- Greater Mystic Wand
 			i(11287),	-- Lesser Magic Wand
 			i(11289),	-- Lesser Mystic Wand
+			i(203808, {["timeline"]={ADDED_10_0_7}}),	-- Mindslave's Reach
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, cat(695, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Weapon Enchantments
 			i(38880),	-- Enchant Weapon - Agility
@@ -1045,12 +1068,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(19026),	-- Snake Burst Firework
 		}),
 		category(185, {	-- Goggles
-			applyclassicphase(PHASE_FOUR, i(19999, {	-- Bloodvine Goggles
-				["timeline"] = { "removed 4.0.3" },
-			})),
-			applyclassicphase(PHASE_FOUR, i(19998, {	-- Bloodvine Lens
-				["timeline"] = { "removed 4.0.3" },
-			})),
+			applyclassicphase(PHASE_FOUR, i(19999, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Bloodvine Goggles
+			applyclassicphase(PHASE_FOUR, i(19998, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7}})),	-- Bloodvine Lens
 			i(10499),	-- Bright-Eye Goggles
 			i(10501),	-- Catseye Ultra Goggles
 			i(4393),	-- Craftsman's Monocle
@@ -1220,6 +1239,19 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(13874),	-- Heavy Crate
 			i(6357),	-- Sealed Crate
 			i(6352),	-- Waterlogged Crate
+		}),
+		filter(PROF_EQUIP, {	-- Fishing Poles
+			i(6366, {	-- Darkwood Fishing Pole
+				["description"] = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",
+				["maps"] = {
+					ASHENVALE,
+					ARATHI_HIGHLANDS,
+					HILLSBRAD_FOOTHILLS,
+					NORTHERN_STRANGLETHORN,
+					REDRIDGE_MOUNTAINS,
+					WETLANDS,
+				},
+			}),
 		}),
 		-- #if AFTER TBC
 		filter(RECIPES, {
@@ -1564,12 +1596,17 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(43661),	-- Book of Stars
 			i(43655),	-- Book of Survival
 			i(43660),	-- Fire Eater's Guide
+			i(203807, {["timeline"]={ADDED_10_0_7}}),	-- Gurubashi Hoodoo Stick
 			i(43664),	-- Manual of Clouds
 			i(43515),	-- Mystic Tome
 			i(43657),	-- Royal Guide of Escape Routes
 			i(43663),	-- Stormbound Tome
 			i(43656),	-- Tome of Kings
 			i(43654),	-- Tome of the Dawn
+		}),
+		filter(STAVES, {
+			i(203815, {["timeline"]={ADDED_10_0_7}}),	-- Gurubashi Ceremonial Staff
+			i(203795, {["timeline"]={ADDED_10_0_7}}),	-- Judgment of the Gurubashi
 		}),
 	}),
 	-- #endif
@@ -1643,6 +1680,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(21774),	-- Emerald Crown of Destruction
 			i(20832),	-- Moonsoul Crown
 			i(20969),	-- Ruby Crown of Restoration
+		}),
+		filter(COSMETIC, {
+			i(204404, {["timeline"]={ADDED_10_0_7}}),	-- Square Holders
 		}),
 		filter(TRINKET_F, {
 			i(21784),	-- Figurine - Black Diamond Crab
@@ -1922,9 +1962,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			}),
 			category(252, {	-- Shoulder
 				i(5964),	-- Barbaric Shoulders
-				applyclassicphase(PHASE_FOUR, i(19689, {	-- Blood Tiger Shoulders
-					["timeline"] = { "removed 4.0.3" },
-				})),
+				applyclassicphase(PHASE_FOUR, i(19689, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Blood Tiger Shoulders
 				i(4252),	-- Dark Leather Shoulders
 				i(7352),	-- Earthen Leather Shoulders
 				applyclassicphase(PHASE_THREE, i(19058)),	-- Golden Mantle of the Dawn
@@ -1947,9 +1985,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(5739),	-- Barbaric Harness
 				i(8200),	-- Big Voodoo Robe
 				i(20575),	-- Black Whelp Tunic
-				applyclassicphase(PHASE_FOUR, i(19688, {	-- Blood Tiger Breastplate
-					["timeline"] = { "removed 4.0.3" },
-				})),
+				applyclassicphase(PHASE_FOUR, i(19688, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Blood Tiger Breastplate
 				-- #if AFTER TBC
 				i(15075),	-- Chimeric Vest
 				-- #endif
@@ -1984,9 +2020,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				applyclassicphase(PHASE_SIX, i(22661, {	-- Polar Tunic
 					["timeline"] = { "removed 3.0.1" },
 				})),
-				applyclassicphase(PHASE_FOUR, i(19685, {	-- Primal Batskin Jerkin
-					["timeline"] = { "removed 4.0.3" },
-				})),
+				applyclassicphase(PHASE_FOUR, i(19685, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Primal Batskin Jerkin
 				{
 					["itemID"] = 4455,	-- Raptor Hide Harness (Horde only)
 					["races"] = HORDE_ONLY,
@@ -2021,9 +2055,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				applyclassicphase(PHASE_SIX, i(22663, {	-- Polar Bracers
 					["timeline"] = { "removed 3.0.1" },
 				})),
-				applyclassicphase(PHASE_FOUR, i(19687, {	-- Primal Batskin Bracers
-					["timeline"] = { "removed 4.0.3" },
-				})),
+				applyclassicphase(PHASE_FOUR, i(19687, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Primal Batskin Bracers
 				i(15092),	-- Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
 				i(15084),	-- Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
 			}),
@@ -2059,9 +2091,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				applyclassicphase(PHASE_SIX, i(22662, {	-- Polar Gloves
 					["timeline"] = { "removed 3.0.1" },
 				})),
-				applyclassicphase(PHASE_FOUR, i(19686, {	-- Primal Batskin Gloves
-					["timeline"] = { "removed 4.0.3" },
-				})),
+				applyclassicphase(PHASE_FOUR, i(19686, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Primal Batskin Gloves
 				i(7284),	-- Red Whelp Gloves
 				i(15091),	-- Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
 				i(18238),	-- Shadowskin Gloves
@@ -2106,6 +2136,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15088),	-- Wicked Leather Belt (Trainable now, old Pattern id 15768 used to teach this.)
 			}),
 			category(257, {	-- Pants
+				i(203794, {["timeline"]={ADDED_10_0_7}}),	-- Animist's Legguards
 				i(5963),	-- Barbaric Leggings
 				i(8202),	-- Big Voodoo Pants
 				-- #if AFTER CATA
@@ -2153,6 +2184,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				-- #endif
 			}),
 			category(258, {	-- Boots
+				i(203799, {["timeline"]={ADDED_10_0_7}}),	-- Animist's Footwraps
 				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22760)),	-- Bramblewood Boots
 				-- #if AFTER TBC
 				i(15073),	-- Chimeric Boots
@@ -2191,7 +2223,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				i(15081, {	-- Heavy Scorpid Shoulders
-					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_DF_0_5 },
+					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_10_0_5 },
 				}),
 				i(8207),	-- Tough Scorpid Shoulders
 			}),
@@ -2211,7 +2243,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15045),	-- Green Dragonscale Breastplate
 				-- #endif
 				i(15076, {	-- Heavy Scorpid Vest
-					["timeline"] = { "removed 4.0.3", ADDED_DF_0_5 },
+					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 				}),
 				applyclassicphase(PHASE_SIX, i(22664, {	-- Icy Scale Breastplate
 					["timeline"] = { "removed 3.0.1" },
@@ -2247,21 +2279,24 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				i(7348),	-- Fletcher's Gloves
+				i(203819, {["timeline"]={ADDED_10_0_7}}),	-- Gloves of the Tormentor
 				-- #if AFTER TBC
 				i(20296),	-- Green Dragonscale Gauntlets
 				-- #endif
 				i(15078, {	-- Heavy Scorpid Gauntlets
-					["timeline"] = { "removed 4.0.3", ADDED_DF_0_5 },
+					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 				}),
 				applyclassicphase(PHASE_SIX, i(22666, {	-- Icy Scale Gauntlets
 					["timeline"] = { "removed 3.0.1" },
 				})),
+				i(203814, {["timeline"]={ADDED_10_0_7}}),	-- Junglefury Gauntlets
 				applyclassicphase(PHASE_FOUR, i(20477)),	-- Sandstalker Gauntlets
 				applyclassicphase(PHASE_FOUR, i(20480)),	-- Spitfire Gauntlets
 				i(8204),	-- Tough Scorpid Gloves
 				i(8187),	-- Turtle Scale Gloves
 			}),
 			category(256, {	-- Belts
+				i(203966, {["timeline"]={ADDED_10_0_7}}),	-- Cord of Shriveled Heads
 				i(15082),	-- Heavy Scorpid Belt
 			}),
 			category(257, {	-- Pants
@@ -2274,8 +2309,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15046),	-- Green Dragonscale Leggings
 				-- #endif
 				i(15079, {	-- Heavy Scorpid Leggings
-					["timeline"] = { "removed 4.0.3", ADDED_DF_0_5 },
+					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
 				}),
+				i(203816, {["timeline"]={ADDED_10_0_7}}),	-- Junglefury Leggings
 				i(8206),	-- Tough Scorpid Leggings
 				i(8185),	-- Turtle Scale Leggings
 			}),
@@ -2431,12 +2467,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(2319),	-- Medium Leather
 			i(11512),	-- Patch of Tainted Skin
 			i(6471),	-- Perfect Deviate Scale
-			applyclassicphase(PHASE_FOUR, i(19767, {	-- Primal Bat Leather
-				["timeline"] = { "removed 4.0.3" },
-			})),
-			applyclassicphase(PHASE_FOUR, i(19768, {	-- Primal Tiger Leather
-				["timeline"] = { "removed 4.0.3" },
-			})),
+			applyclassicphase(PHASE_FOUR, i(19767, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Primal Bat Leather
+			applyclassicphase(PHASE_FOUR, i(19768, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Primal Tiger Leather
 			i(12731, {	-- Pristine Hide of the Beast
 				["timeline"] = { "removed 6.0.2" },
 			}),
@@ -2497,6 +2529,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(10041),	-- Dreamweave Circlet
 			i(4322),	-- Enchanter's Cowl
 			i(14111),	-- Felcloth Hood
+			i(203820, {["timeline"]={ADDED_10_0_7}}),	--  Gurubashi Headdress
 			i(14140),	-- Mooncloth Circlet
 			i(10033),	-- Red Mageweave Headband
 			i(13866),	-- Runecloth Headband
@@ -2534,9 +2567,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(2578),	-- Barbaric Linen Vest
 			i(10001),	-- Black Mageweave Robe
 			i(9998),	-- Black Mageweave Vest
-			applyclassicphase(PHASE_FOUR, i(19682, {	-- Bloodvine Vest
-				["timeline"] = { "removed 4.0.3" },
-			})),
+			applyclassicphase(PHASE_FOUR, i(19682, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Bloodvine Vest
 			i(6242),	-- Blue Linen Robe
 			i(6240),	-- Blue Linen Vest
 			i(6263),	-- Blue Overalls
@@ -2667,9 +2698,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		category(240, {	-- Pants
 			i(7046),	-- Azure Silk Pants
 			i(9999),	-- Black Mageweave Leggings
-			applyclassicphase(PHASE_FOUR, i(19683, {	-- Bloodvine Leggings
-				["timeline"] = { "removed 4.0.3" },
-			})),
+			applyclassicphase(PHASE_FOUR, i(19683, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Bloodvine Leggings
 			i(14104),	-- Brightcloth Pants
 			i(4343),	-- Brown Linen Pants
 			i(14045),	-- Cindercloth Pants
@@ -2687,6 +2716,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(14137),	-- Mooncloth Leggings
 			i(4317),	-- Phoenix Pants
 			i(10009),	-- Red Mageweave Pants
+			i(203800, {["timeline"]={ADDED_10_0_7}}),	-- Ritualistic Legwarmers
 			i(13865),	-- Runecloth Pants
 			applyclassicphase(PHASE_FOUR, i(20538)),	-- Runed Stygian Leggings
 			i(10002),	-- Shadoweave Pants
@@ -2698,9 +2728,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		category(241, {	-- Boots
 			applyclassicphase(PHASE_THREE, i(19056)),	-- Argent Boots
 			i(10026),	-- Black Mageweave Boots
-			applyclassicphase(PHASE_FOUR, i(19684, {	-- Bloodvine Boots
-				["timeline"] = { "removed 4.0.3" },
-			})),
+			applyclassicphase(PHASE_FOUR, i(19684, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Bloodvine Boots
 			i(4325),	-- Boots of the Enchanter
 			i(10044),	-- Cindercloth Boots
 			i(6836),	-- Dress Shoes
@@ -2720,6 +2748,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		category(242, {	-- Cloaks
 			i(7053),	-- Azure Silk Cloak
 			i(14103),	-- Brightcloth Cloak
+			i(203796, {["timeline"]={ADDED_10_0_7}}),	-- Bloodlords Embrace
 			i(14044),	-- Cindercloth Cloak
 			i(14134),	-- Cloak of Fire
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18413, {	-- Cloak of Warding
@@ -2730,6 +2759,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_SIX, i(22658, {	-- Glacial Cloak
 				["timeline"] = { "removed 3.0.1" },
 			})),
+			i(203803, {["timeline"]={ADDED_10_0_7}}),	-- Gurubashi Tigerhide Cloak
 			i(4311),	-- Heavy Woolen Cloak
 			i(4327),	-- Icy Cloak
 			i(2570),	-- Linen Cloak

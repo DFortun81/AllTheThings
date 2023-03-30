@@ -1853,6 +1853,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(12809, {	-- Guardian Stone
 					["cr"] = 6560,	-- Stone Guardian
 				}),
+				i(199092, {	-- Inert Phoenix Ash
+					["timeline"] = { ADDED_10_0_7 },
+					["cr"] = 6520,	-- Scorching Elemental
+					["coords"] = {
+						{ 52.8, 42.4, UNGORO_CRATER },
+						{ 46.0, 46.6, UNGORO_CRATER },
+						{ 47.6, 53.2, UNGORO_CRATER },
+						{ 51.0, 47.2, UNGORO_CRATER },
+						{ 55.6, 58.0, UNGORO_CRATER },
+					},
+				}),
 				i(20768, {	-- Oozing Bag
 					["crs"] = {
 						9477,	-- Cloned Ooze

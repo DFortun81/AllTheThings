@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(ACHIEVEMENTS, {
 		petbattle(ach(16464, {	-- Battle on the Dragon Isles
 			crit(1, {	-- Eye of the Stormling
@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				17204,	-- Thaldraszus Reverse: Bronze
 				17195,	-- Waking Shores Reverse: Bronze
 			}},
-			["timeline"] = { ADDED_DF_0_5 },
+			["timeline"] = { ADDED_10_0_5 },
 		}),
 		ach(17331, {	-- Reverse Racer: Silver
 			-- Meta Achievement
@@ -104,9 +104,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				17205,	-- Thaldraszus Reverse: Silver
 				17196,	-- Waking Shores Reverse: Silver
 			}},
-			["timeline"] = { ADDED_DF_0_5 },
+			["timeline"] = { ADDED_10_0_5 },
 		}),
-		ach(17332, bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {	-- Reverse Racer: Gold
+		ach(17332, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Reverse Racer: Gold
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				17203,	-- Azure Span Reverse: Gold

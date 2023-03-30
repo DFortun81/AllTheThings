@@ -2,8 +2,7 @@
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 local CURRENT_EXPAC_INK_ITEMID = 173058;	-- Umbral Ink
-
-root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	prof(ALCHEMY, {
 		n(HEAD, {
 			i(180751),	-- Red Noggin Candle
@@ -173,7 +172,7 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 			i(172363),	-- Enchant Ring - Tenet of Mastery
 			i(172364),	-- Enchant Ring - Tenet of Versatility
 		}),
-		filter(TOYS, sharedDataSelf({ ["timeline"] = { "added 9.1.0" } }, {
+		filter(TOYS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 			i(186973),	-- Anima-ted Leash (TOY!)
 		})),
 		filter(WANDS, {

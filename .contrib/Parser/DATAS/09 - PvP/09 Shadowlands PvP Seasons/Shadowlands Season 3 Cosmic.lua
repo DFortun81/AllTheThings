@@ -3,11 +3,11 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(tier(SL_TIER, {
 	header(HEADERS.Achievement, SEASON_COSMIC, bubbleDownSelf({
-		["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4, ADDED_DF_REL },
+		["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
 	},{
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount_red",
 		["g"] = {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 				ach(15347, {	-- Cosmic Combatant [A]
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
@@ -45,17 +45,17 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				}),
 				--Fashion
 				ach(15408, {	-- Cosmic Chic
-					["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4, ADDED_DF_REL },
+					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
 				}),
 			})),
-			filter(MOUNTS, {
+			filter(MOUNTS, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH } }, {
 				i(187681, {	-- Vicious War Gulper [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(187680, {	-- Vicious War Gulper [H] (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
-			}),
+			})),
 			filter(TITLES, bubbleDown({ ["collectible"] = false, },{
 				title(78),	-- Combatant <Name>
 				title(32),	-- Challenger <Name>
@@ -75,7 +75,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				title(398),	-- <Name> the Elite Warrior
 				title(29),	-- Gladiator <Name>
 			})),
-			n(PVP_ASPIRANT, {
+			n(PVP_ASPIRANT, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH } }, {
 				filter(CLOAKS, {
 					i(186944),	-- Cosmic Aspirant's Cape
 					i(186873),	-- Cosmic Aspirant's Cloak
@@ -99,7 +99,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(186910),	-- Cosmic Aspirant's Silk Vest
 					i(186902),	-- Cosmic Aspirant's Silk Wristwraps
 				}),
-				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					i(186937),	-- Cosmic Aspirant's Band
 					i(186901),	-- Cosmic Aspirant's Ring
 					i(186945),	-- Cosmic Aspirant's Signet
@@ -140,7 +140,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(186927),	-- Cosmic Aspirant's Chain Wargreaves
 					i(186904),	-- Cosmic Aspirant's Chain Wristwraps
 				}),
-				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					i(186943),	-- Cosmic Aspirant's Choker
 					i(186907),	-- Cosmic Aspirant's Necklace
 					i(186947),	-- Cosmic Aspirant's Pendant
@@ -163,7 +163,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(186878),	-- Cosmic Aspirant's Plate Warboots
 					i(186925),	-- Cosmic Aspirant's Plate Wargreaves
 				}),
-				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					i(186906),	-- Cosmic Aspirant's Badge of Ferocity
 					i(186946),	-- Cosmic Aspirant's Emblem
 					i(186942),	-- Cosmic Aspirant's Insignia of Alacrity
@@ -191,8 +191,8 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(186953),	-- Cosmic Aspirant's Sword
 					i(186957),	-- Cosmic Aspirant's Warglaive
 				}),
-			}),
-			n(PVP_GLADIATOR, {
+			})),
+			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH } }, {
 				n(CLASSES,{
 					["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
 					["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
@@ -354,7 +354,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(186791),	-- Cosmic Gladiator's Silk Vestments
 					i(186804),	-- Cosmic Gladiator's Silk Wristwraps
 				}),
-				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					i(186785),	-- Cosmic Gladiator's Band
 					i(186784),	-- Cosmic Gladiator's Ring
 					i(186786),	-- Cosmic Gladiator's Signet
@@ -395,7 +395,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(186822),	-- Cosmic Gladiator's Chain Vest
 					i(186836),	-- Cosmic Gladiator's Chain Wristguards
 				}),
-				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					i(186789),	-- Cosmic Gladiator's Amulet
 					i(186787),	-- Cosmic Gladiator's Necklace
 					i(186788),	-- Cosmic Gladiator's Pendant
@@ -418,7 +418,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(186847),	-- Cosmic Gladiator's Plate Wargreaves
 					i(186852),	-- Cosmic Gladiator's Plate Wristguards
 				}),
-				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					i(186866),	-- Cosmic Gladiator's Badge of Ferocity
 					i(188778),	-- Cosmic Gladiator's Devouring Malediction
 					i(188691),	-- Cosmic Gladiator's Echoing Resolve
@@ -455,8 +455,8 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					i(186861),	-- Cosmic Gladiator's Warglaive
 					i(186860),	-- Cosmic Gladiator's Xiphos
 				}),
-			}),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 }, ["modID"] = 14, ["bonusID"] = 7551 }, {
+			})),
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 }, ["modID"] = 14, ["bonusID"] = 7551 }, {
 				n(CLASSES,{
 					["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
 					["g"] = bubbleDown({ ["bonusID"] = 7532 }, {

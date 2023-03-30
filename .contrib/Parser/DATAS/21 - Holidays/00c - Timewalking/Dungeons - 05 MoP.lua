@@ -2,7 +2,7 @@
 root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(MOP_TIER, {
 		i(187904, {	-- Cloud Serpent Soul
-			["timeline"] = { "added 9.1.5" },
+			["timeline"] = { ADDED_9_1_5 },
 		}),
 		inst_tw(303, {	-- Gate of the Setting Sun
 			cr(56906, e(655, {	-- Saboteur Kip'tilak
@@ -82,7 +82,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				},
 			}),
 		}),
-		inst_tw(246, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- Scholomance
+		inst_tw(246, bubbleDown({ ["timeline"] = { ADDED_9_1_5 }},{	-- Scholomance
 			e(659,   {	-- Instructor Chillheart
 				["crs"] = {
 					58633,	-- Instructor Chillheart
@@ -184,7 +184,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				i(144132),	-- Seal of Hateful Meditation
 			})),
 		}),
-		inst_tw(324, bubbleDown({ ["timeline"] = { "added 7.1.5.23360", "removed 9.1.5", }},{	-- Siege of Niuzao Temple
+		inst_tw(324, bubbleDown({ ["timeline"] = { "added 7.1.5.23360", REMOVED_9_1_5 }},{	-- Siege of Niuzao Temple
 			cr(61567, e(693, {	-- Vizier Jin'bak
 				i(144022),	-- Hood of Viridian Residue
 				i(144162),	-- Engraved Amber Pendant

@@ -26,7 +26,6 @@ end
 -- PATCH 10.0.0 --
 ------------------
 -- TRAINER --
-i(0, 366264);	-- Dragon Isles Mining
 i(0, 366260);	-- Mining
 i(0, 396169);	-- Elementally-Charged Stone
 i(0, 395269);	-- Iridescent Ore

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(OHNAHRAN_PLAINS, {
 		n(WORLD_QUESTS, {
 			["sourceQuests"] = {
@@ -38,14 +38,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				petbattle(q(74838, {	-- Lyver
 					["coord"] = { 73.38, 68, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 				})),
 				q(70780, {	-- Ohn'ahran Banners
 					["coord"] = { 85.3, 45.3, OHNAHRAN_PLAINS }
 				}),
 				petbattle(q(74837, {	-- Paws of Thunder
 					["coord"] = { 36.15, 52.57, OHNAHRAN_PLAINS },
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 				})),
 				q(70074, {	-- Plunder the Sundered
 					["coord"] = { 46.2, 65.2, OHNAHRAN_PLAINS }
@@ -55,9 +55,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				q(70649, {	-- Swab Swog
 					["coord"] = { 81.4, 71.1, OHNAHRAN_PLAINS },
-				}),
-				q(70652, {	-- Take One Down, Pass It Around
-					["coord"] = { 24.5, 34.7, OHNAHRAN_PLAINS }
 				}),
 				q(71154, {	-- Talon Toss: Shooting 101
 					["coord"] = { 60.5, 25.7, OHNAHRAN_PLAINS }

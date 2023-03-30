@@ -44,7 +44,7 @@ local SymRaid = function(ClassID, ModID)
 	}
 	return SymLink
 end
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	o(382621, {	-- Revival Catalyst Console
 		["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
 		["coord"] = { 60.6, 53.8, THALDRASZUS },
@@ -558,6 +558,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						currency(2166),	-- Revival Catalyst Account-Wide Currency
 					},
+				}),
+				q(75497, {	-- The Catalyst's Boon
+					["provider"] = { "n", 196499 },	-- Therazal
+					["coord"] = { 50.2, 55.8, VALDRAKKEN },
+					["timeline"] = { ADDED_10_1_0 },
 				}),
 			}),
 		},

@@ -10,10 +10,10 @@ local function FatedItem(modItemID, modID)
 	local item = i(math.floor(modItemID));
 	item.modID = modID;
 	item.sym = {{"select","itemID",modItemID}};	-- Base Version
-	item.timeline = { ADDED_SL_S4 };
+	item.timeline = { ADDED_9_2_5 };
 	return item;
 end
-root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	inst(1190, {	-- Castle Nathria
 		["isRaid"] = true,
 		["coord"] = { 46.1, 41.5, REVENDRETH },
@@ -128,7 +128,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 				}),
 				ach(14614),		-- Castle Vain
 				-- Fated
-				ach(15663, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Fate of Nathria
+				ach(15663, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Fate of Nathria
 					crit(1, { -- Shriekwing
 						["_encounter"] = { 2393, LFR_RAID },
 					}),
@@ -160,7 +160,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 						["_encounter"] = { 2424, LFR_RAID },
 					}),
 				})),
-				ach(15664, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of Nathria
+				ach(15664, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of Nathria
 					crit(1, { -- Shriekwing
 						["_encounter"] = { 2393, HEROIC_RAID },
 					}),
@@ -192,7 +192,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 						["_encounter"] = { 2424, HEROIC_RAID },
 					}),
 				})),
-				ach(15665, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of Nathria
+				ach(15665, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of Nathria
 					crit(1, { -- Shriekwing
 						["_encounter"] = { 2393, MYTHIC_RAID },
 					}),
@@ -608,13 +608,13 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 			n(WORLD_QUESTS, {
 				q(66693, {	-- Tempting Fate: Castle Nathria
 					["isWorldQuest"] = true,
-					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(180453),	-- She Had a Stone Heart
 			}),
-			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_DF_REL }, {
+			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_10_0_2_LAUNCH }, {
 				n(ZONE_DROPS, {
 					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
@@ -1216,7 +1216,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 						crit(10, {	-- Sire Denathrius
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14460, {["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 }}),	-- Ahead of the Curve: Sire Denathrius
+						ach(14460, {["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 }}),	-- Ahead of the Curve: Sire Denathrius
 						ig(179358),	-- Remornia
 						ig(182169),	-- Veilwing Soul (SS!)
 						ig(183395),	-- Pommel Jewel of Remornia (PET!)
@@ -1426,14 +1426,14 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 						168156,	-- Remornia
 					},
 					["g"] = {
-						ach(14461, {["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 }}),	-- Cutting Edge: Sire Denathrius
-						ach(14649, bubbleDownSelf({["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {	-- Hall of Fame: Sire Denathrius (Alliance)
+						ach(14461, {["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 }}),	-- Cutting Edge: Sire Denathrius
+						ach(14649, bubbleDownSelf({["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {	-- Hall of Fame: Sire Denathrius (Alliance)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(440),	-- <Name>, Famed Slayer of Denathrius
 							},
 						})),
-						ach(14650, bubbleDownSelf({["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {	-- Hall of Fame: Sire Denathrius (Horde)
+						ach(14650, bubbleDownSelf({["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {	-- Hall of Fame: Sire Denathrius (Horde)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(440),	-- <Name>, Famed Slayer of Denathrius

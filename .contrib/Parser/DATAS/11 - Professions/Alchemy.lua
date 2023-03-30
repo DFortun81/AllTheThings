@@ -2068,7 +2068,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["recipeID"] = 188676,	-- Elemental Distillate
-					["timeline"] = { "added 6.2.0", "removed 9.0.1" },
+					["timeline"] = { "added 6.2.0", REMOVED_9_0_1 },
 				},
 				{
 					["name"] = "Stone of Fire",
@@ -2088,7 +2088,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["recipeID"] = 188674,	-- Wildswater
-					["timeline"] = { "added 6.2.0", "removed 9.0.1" },
+					["timeline"] = { "added 6.2.0", REMOVED_9_0_1 },
 				},
 			}
 		}
@@ -3428,7 +3428,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			}
 		}
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 		r(309822),	-- Shadowlands Alchemy
 		cat(1303, {	-- Anti-Venoms
 			r(307100),	-- Spiritual Anti-Venom
@@ -3460,9 +3460,9 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 		cat(1299, {	-- Optional Reagents
 			r(343679),	-- Crafter's Mark I
 			r(343678),	-- Crafter's Mark II
-			r(343677, {["timeline"] = { "added 9.1.0" }}),	-- Crafter's Mark III
+			r(343677, {["timeline"] = { ADDED_9_1_0 }}),	-- Crafter's Mark III
 			r(359666, {["timeline"] = { "added 9.2.0" }}),	-- Crafter's Mark IV
-			r(343676, {["timeline"] = { "added 9.1.0" }}),	-- Crafter's Mark of the Chained Isle
+			r(343676, {["timeline"] = { ADDED_9_1_0 }}),	-- Crafter's Mark of the Chained Isle
 			r(359673, {["timeline"] = { "added 9.2.0" }}),	-- Crafter's Mark of the First Ones
 			r(360014, {["timeline"] = { "added 9.2.0" }}),	-- Infusion: Corpse Purification
 			r(343675),	-- Novice Crafter's Mark
@@ -3478,7 +3478,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			r(307122),	-- Ground Widowbloom
 			r(307118),	-- Shadowcore Oil
 		}),
-		cat(1517, sharedDataSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Other
+		cat(1517, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Other
 			r(354885),	-- Blossom Burst
 			r(354881),	-- Glory Burst
 			r(354880),	-- Marrow Burst
@@ -3502,7 +3502,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 		cat(1300, {	-- Transmutation
 			r(307143),	-- Shadestone
 			r(307142),	-- Shadowghast Ingot
-			r(307144, {["timeline"] = { "added 9.1.0" }}),	-- Stones to Ore
+			r(307144, {["timeline"] = { ADDED_9_1_0 }}),	-- Stones to Ore
 		}),
 		cat(1301, { -- Trinkets
 			r(307200),	-- Spiritual Alchemy Stone

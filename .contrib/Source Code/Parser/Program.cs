@@ -42,6 +42,8 @@ namespace ATT
                 }
             }
 
+            Framework.ApplyConfigSettings();
+
             try
             {
                 PreProcessorTags = Framework.Config["PreProcessorTags"] ?? Array.Empty<string>();
@@ -96,6 +98,7 @@ namespace ATT
                 // link the Lua 'print' function to instead perform a Trace print
                 lua.RegisterFunction("print", typeof(Program).GetMethod(nameof(LuaPrintAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
                 lua.DoString(ProcessContent(File.ReadAllText(mainFileName)));
+                Framework.IgnoredValue = lua.GetString("IGNORED_VALUE");
 
                 // Try to Copy in the Alliance Only / Horde Only lists
                 try
@@ -176,19 +179,35 @@ namespace ATT
                 Trace.WriteLine("Exporting Addon DB...");
                 Framework.Export();
 
+                foreach (KeyValuePair<string, HashSet<decimal>> idSet in Framework.OutputSets)
+                {
+                    StringBuilder output = new StringBuilder();
+                    foreach (var id in idSet.Value
+                        .Where(v => v > 1)
+                        .OrderBy(i => i))
+                    {
+                        output.Append(id).Append(",");
+                    }
+
+                    if (output.Length > 0)
+                        Framework.Log($"{idSet.Key}: " + output.ToString());
+                }
+
                 // Notify of duplicate object listings
                 foreach (string key in Framework.TypeUseCounts.Keys)
                 {
                     StringBuilder dupeIDs = new StringBuilder();
                     Dictionary<decimal, int> idCounts = Framework.TypeUseCounts[key];
-                    IEnumerable<decimal> duplicateIDs = idCounts.Where(kvp => kvp.Value > 1).Select(kvp => kvp.Key).OrderBy(i => i);
-                    foreach (decimal id in duplicateIDs)
+                    foreach (var id in idCounts
+                        .Where(kvp => kvp.Value > 1)
+                        .Select(kvp => kvp.Key)
+                        .OrderBy(i => i))
                     {
-                        dupeIDs.Append(id.ToString()).Append(",");
+                        dupeIDs.Append(id).Append(",");
                     }
 
                     if (dupeIDs.Length > 0)
-                        Trace.WriteLine($"Duplicate {key} Usage: " + dupeIDs.ToString());
+                        Framework.Log($"Duplicate {key} Usage: " + dupeIDs.ToString());
                 }
 
                 // Update the .TOC with the Parser Run Date

@@ -1768,12 +1768,12 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Impressive Linkgrease Locksprocket",
 					["recipeID"] = 397858,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Impressive True Iron Trigger",
 					["recipeID"] = 397860,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Primal Welding",
@@ -1782,12 +1782,12 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Remarkable Linkgrease Locksprocket",
 					["recipeID"] = 397859,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Remarkable True Iron Trigger",
 					["recipeID"] = 397861,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				},
 				{
 					["name"] = "Secrets of Draenor Engineering",
@@ -1823,12 +1823,12 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Advanced Muzzlesprocket",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187496,
 				},
 				{
 					["name"] = "Bi-Directional Fizzle Reducer",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187497,
 				},
 				{
@@ -1849,12 +1849,12 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Infrablue-Blocker Lenses",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187521,
 				},
 				{
 					["name"] = "Linkgrease Locksprocket",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 169076,
 				},
 				{
@@ -1891,12 +1891,12 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Taladite Firing Pin",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 187520,
 				},
 				{
 					["name"] = "True Iron Trigger",
-					["timeline"] = { "removed 9.0.1" },
+					["timeline"] = { REMOVED_9_0_1 },
 					["recipeID"] = 177363,
 				},
 				{

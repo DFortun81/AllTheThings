@@ -2830,7 +2830,7 @@ _.Zones =
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
-									["timeline"] = { REMOVED_DF_0_5 },
+									["timeline"] = { REMOVED_10_0_5 },
 								}),
 								i(116349, {	-- Recipe: Burnished Inscription Bag
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
@@ -2846,7 +2846,7 @@ _.Zones =
 								}),
 								i(202232, {	-- Recipe: Impressive Burnished Essence
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
-									["timeline"] = { ADDED_DF_0_5 },
+									["timeline"] = { ADDED_10_0_5 },
 								}),
 								i(116325, {	-- Recipe: Leather Refurbishing Kit
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
@@ -2859,7 +2859,7 @@ _.Zones =
 								}),
 								i(202233, {	-- Recipe: Remarkable Burnished Essence
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
-									["timeline"] = { ADDED_DF_0_5 },
+									["timeline"] = { ADDED_10_0_5 },
 								}),
 								i(116350, {	-- Recipe: Riding Harness
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
@@ -3781,11 +3781,11 @@ _.Zones =
 								}),
 								i(202236, {	-- Technique: Impressive Weapon Crystal
 									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
-									["timeline"] = { ADDED_DF_0_5 },
+									["timeline"] = { ADDED_10_0_5 },
 								}),
 								i(202237, {	-- Technique: Remarkable Weapon Crystal
 									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
-									["timeline"] = { ADDED_DF_0_5 },
+									["timeline"] = { ADDED_10_0_5 },
 								}),
 								i(118613, {	-- Technique: Shadowtome
 									["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
@@ -3800,7 +3800,7 @@ _.Zones =
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
-									["timeline"] = { REMOVED_DF_0_5 },
+									["timeline"] = { REMOVED_10_0_5 },
 								}),
 								un(NEVER_IMPLEMENTED, i(118608)),	-- Technique: Greater Weapon Crystal
 								un(NEVER_IMPLEMENTED, i(120266)),	-- Technique: Greater Ensorcelled Tarot
@@ -3866,11 +3866,11 @@ _.Zones =
 								}),
 								i(202228, {	-- Schematic: Impressive Linkgrease Locksprocket
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
-									["timeline"] = { ADDED_DF_0_5 },
+									["timeline"] = { ADDED_10_0_5 },
 								}),
 								i(202230, {	-- Schematic: Impressive True Iron Trigger
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
-									["timeline"] = { ADDED_DF_0_5 },
+									["timeline"] = { ADDED_10_0_5 },
 								}),
 								i(118485, {	-- Schematic: Lifelike Mechanical Frostboar
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
@@ -3879,7 +3879,7 @@ _.Zones =
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
-									["timeline"] = { REMOVED_DF_0_5 },
+									["timeline"] = { REMOVED_10_0_5 },
 								}),
 								i(118484, {	-- Schematic: Mechanical Axebeak
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
@@ -3907,11 +3907,11 @@ _.Zones =
 								}),
 								i(202229, {	-- Schematic: Remarkable Linkgrease Locksprocket
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
-									["timeline"] = { ADDED_DF_0_5 },
+									["timeline"] = { ADDED_10_0_5 },
 								}),
 								i(202231, {	-- Schematic: Remarkable True Iron Trigger
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
-									["timeline"] = { ADDED_DF_0_5 },
+									["timeline"] = { ADDED_10_0_5 },
 								}),
 								i(118476, {	-- Schematic: Shrediron's Shredder
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
@@ -3923,7 +3923,7 @@ _.Zones =
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
-									["timeline"] = { REMOVED_DF_0_5 },
+									["timeline"] = { REMOVED_10_0_5 },
 								}),
 								i(118481, {	-- Schematic: World Shrinker
 									["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
@@ -3987,7 +3987,7 @@ _.Zones =
 								}),
 								i(202234, {	-- Pattern: Impressive Hexweave Essence
 									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-									["timeline"] = { ADDED_DF_0_5 },
+									["timeline"] = { ADDED_10_0_5 },
 								}),
 								i(114862, {	-- Pattern: Nimble Hexweave Cloak
 									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
@@ -3997,13 +3997,13 @@ _.Zones =
 								}),
 								i(202235, {	-- Pattern: Remarkable Hexweave Essence
 									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-									["timeline"] = { ADDED_DF_0_5 },
+									["timeline"] = { ADDED_10_0_5 },
 								}),
 								i(114871, {	-- Recipe: Hexweave Essence
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-									["timeline"] = { REMOVED_DF_0_5 },
+									["timeline"] = { REMOVED_10_0_5 },
 								}),
 							},
 						}),

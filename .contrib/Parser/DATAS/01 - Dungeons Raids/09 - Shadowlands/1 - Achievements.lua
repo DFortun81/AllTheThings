@@ -1,9 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	n(ACHIEVEMENTS, {
-		ach(15684, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Fates of the Shadowlands Raids
+		ach(15684, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Fates of the Shadowlands Raids
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				15663, 	-- Fate of Nathria
@@ -14,7 +14,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 				i(190170),	-- Jigglesworth Sr. (MOUNT!)
 			},
 		})),
-		ach(15685, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Heroic: Fates of the Shadowlands Raids
+		ach(15685, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Heroic: Fates of the Shadowlands Raids
 			["sym"] = {{"meta_achievement",
 				15664, 	-- Heroic: Fate of Nathria
 				15668, 	-- Heroic: Fate of Domination
@@ -24,7 +24,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 				title(464),	-- <Name>, Hero of Fate (TITLE!)
 			},
 		})),
-		ach(15687, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Mythic: Fates of the Shadowlands Raids
+		ach(15687, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Mythic: Fates of the Shadowlands Raids
 			["sym"] = {{"meta_achievement",
 				15665, 	-- Mythic: Fate of Nathria
 				15669, 	-- Mythic: Fate of Domination
@@ -37,7 +37,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }
 			},
 		})),
 		ach(15651, {	-- Myths of the Shadowlands Dungeons
-			["timeline"] = { ADDED_SL_S4 },
+			["timeline"] = { ADDED_9_2_5 },
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				14368,	-- Mythic: The Necrotic Wake

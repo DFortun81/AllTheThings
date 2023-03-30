@@ -2,7 +2,7 @@
 root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, {
 	tier(WOTLK_TIER, {
 		i(187903, {	-- Jormungar Soul
-			["timeline"] = { "added 9.1.5" },
+			["timeline"] = { ADDED_9_1_5 },
 		}),
 		-- #if AFTER 7.3.5.25600
 		inst_tw(759, {	-- Ulduar
@@ -494,7 +494,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 			},
 		}),
 		-- #endif
-		inst_tw(271, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Ahn'kahet: The Old Kingdom
+		inst_tw(271, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", REMOVED_9_1_5 }},{	-- Ahn'kahet: The Old Kingdom
 			cr(29309, e(580, {	-- Elder Nadox
 				i(127607),	-- Blade of Nadox
 				i(127619),	-- Brood Plague Helmet
@@ -547,7 +547,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				i(127629),	-- Greaves of Ancient Evil
 			})),
 		})),
-		inst_tw(272, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- Azjol-Nerub
+		inst_tw(272, bubbleDown({ ["timeline"] = { ADDED_9_1_5 }},{	-- Azjol-Nerub
 			cr(28684, e(585, {	-- Krik'thir the Gatewatcher
 				i(188403),	-- Aura Focused Gauntlets
 				i(188402),	-- Cobweb Machete
@@ -669,7 +669,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				i(127522),	-- Woven Bracae Leggings
 			})),
 		}),
-		inst_tw(278, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Pit of Saron
+		inst_tw(278, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", REMOVED_9_1_5 }},{	-- Pit of Saron
 			cr(36494, e(608, {	-- Forgemaster Garfrost
 				i(133486),	-- Garfrost's Two-Ton Hammer
 				i(133485),	-- Unspeakable Secret
@@ -702,7 +702,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				i(133499),	-- Shaggy Wyrmleather Leggings
 			}))
 		})),
-		inst_tw(280, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- The Forge of Souls
+		inst_tw(280, bubbleDown({ ["timeline"] = { ADDED_9_1_5 }},{	-- The Forge of Souls
 			cr(36497, e(615, {	-- Brojahm
 				i(50316),	-- Papa's Brand New Bag
 				i(50317),	-- Papa's New Bag
@@ -807,7 +807,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				i(127595),	-- Dragon Slayer's Sabatons
 			})),
 		}),
-		inst_tw(285, bubbleDown({ ["timeline"] = { "added 9.1.5", }},{	-- Utgarde Keep
+		inst_tw(285, bubbleDown({ ["timeline"] = { ADDED_9_1_5 }},{	-- Utgarde Keep
 			cr(23953, e(638, {	-- Prince Keleseth <The San'layn>
 				i(188441),	-- Battlemap Hide Helm
 				i(188430),	-- Dragon Stabler's Gauntlets
@@ -846,7 +846,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 				i(188446),	-- Unsmashable Heavy Band
 			})),
 		})),
-		inst_tw(286, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", "removed 9.1.5", }},{	-- Utgarde Pinnacle
+		inst_tw(286, bubbleDown({ ["timeline"] = { "added 6.2.3.20601", REMOVED_9_1_5 }},{	-- Utgarde Pinnacle
 			cr(26668, e(641, {	-- Svala Sorrowgrave
 				i(127458),	-- Ritualistic Arthame
 				i(127459),	-- Brazier Igniter

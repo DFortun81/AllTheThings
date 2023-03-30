@@ -483,9 +483,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["groups"] = ANDRA_ZYANDREL_GROUPS,
 				}),
+				n(16619, {	-- Celana 
+					["coord"] = { 86.0, 36.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
+						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+						{"select", "itemID", 2504 },    -- Worn Shortbow
+					},
+					["groups"] = {
+						i(2506),	-- Hornwood Recurve Bow
+						i(2505),	-- Polished Shortbow
+					},
+				}),
 				n(16683, {	-- Darlia <Poison Supplies>
 					["coord"] = { 80.4, 51.0, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
 					["groups"] = {
 						i(24285, {	-- Crepuscular Powder
 							["cost"] = { { "g", 1500000 } },	-- 150g
@@ -530,6 +547,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				n(16666, {	-- Feledis <Axe Vendor>
+					["coord"] = { 52.6, 63.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2522 },    -- Crescent Axe
+						{"select", "itemID", 2530 },    -- Francisca
+						{"select", "itemID", 2531 },    -- Great Axe
+					},
+				}),
 				n(16624, {	-- Gelanthis <Jewelcrafting Supplies>
 					["coord"] = { 90.8, 73.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
@@ -551,6 +578,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				n(16625, {	-- Keeli  
+					["coord"] = { 61.2, 86.4, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 2398 },    -- Light Chain Armor
+						{"select", "itemID", 2399 },    -- Light Chain Belt
+						{"select", "itemID", 2401 },    -- Light Chain Boots
+						{"select", "itemID", 2402 },    -- Light Chain Bracers
+						{"select", "itemID", 2403 },    -- Light Chain Gloves
+						{"select", "itemID", 2400 },    -- Light Chain Leggings
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 285 },    -- Scalemail Vest
+					},
+				}),
 				--[[ Crieve has to approve but these the tabards should have timelines
 				n(16610, {	-- Kredis <Tabard Vendor>
 					["coord"] = { 78.6, 84.6, SILVERMOON_CITY },
@@ -570,6 +621,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["groups"] = LYNA_GROUPS,
 				}),
+				n(16620, {	-- Mathaleron 
+					["coord"] = { 86.0, 39.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
+						{"select", "itemID", 2511 },    -- Hunter's Boomstick
+						{"select", "itemID", 3023 },    -- Large Bore Blunderbuss
+						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
+					},
+				}),
 				n(16641, {	-- Melaris <Alchemy Supplies>
 					["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
@@ -587,11 +648,85 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["groups"] = QUELIS_GROUPS,
 				}),
+				n(16678, {	-- Rahein <Blade Vendor>
+					["coord"] = { 52.6, 64.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2520 },	-- broadsword
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2526 },	-- main-gauche
+						{"select", "itemID", 2534 },	-- rondel
+						{"select", "itemID", 2529 },	-- zweihander
+					},
+				}),
+				n(16626, {	-- Tynna 
+					["coord"] = { 60.8, 86.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+					},
+					["groups"] = {
+						i(2424),    -- Brigandine Belt
+						i(2426),    -- Brigandine Boots
+						i(2427),    -- Brigandine Bracers
+						i(2428),    -- Brigandine Gloves
+						i(3894),    -- Brigandine Helm
+						i(2425),    -- Brigandine Leggings
+						i(2423),    -- Brigandine Vest
+						i(8094),    -- Platemail Armor
+						i(8088),    -- Platemail Belt
+						i(8089),    -- Platemail Boots
+						i(8090),    -- Platemail Bracers
+						i(8091),    -- Platemail Gloves
+						i(8092),    -- Platemail Helm
+						i(8093),    -- Platemail Leggings
+					},
+				}),
 				n(16442, {	-- Vinemaster Suntouched <Wine & Spirits Merchant>
 					["coord"] = { 79.5, 58.5, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(22775),	-- Suntouched Special Reserve
+					},
+				}),
+				n(16637, {	-- Welethelon 
+					["coord"] = { 56.2, 60.2, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 2525 },    -- War Hammer
+						{"select", "itemID", 2533 },    -- War Maul
+						{"select", "itemID", 2535 },    -- War Staff
+					},
+					["groups"] = {
+						i(2532),	-- Morning Star
+						i(2524),	-- Truncheon
+					},
+				}),
+				n(16693, {	-- Winthren  
+					["coord"] = { 60.6, 86.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 17187 },    -- Banded Buckler
+						{"select", "itemID", 2446 },    -- Kite Shield
+						{"select", "itemID", 2445 },    -- Large Metal Shield
+						{"select", "itemID", 2398 },    -- Light Chain Armor
+						{"select", "itemID", 2399 },    -- Light Chain Belt
+						{"select", "itemID", 2401 },    -- Light Chain Boots
+						{"select", "itemID", 2402 },    -- Light Chain Bracers
+						{"select", "itemID", 2403 },    -- Light Chain Gloves
+						{"select", "itemID", 2400 },    -- Light Chain Leggings
+						{"select", "itemID", 17192 },    -- Reinforced Targe
+						{"select", "itemID", 17188 },    -- Ringed Buckler
+						{"select", "itemID", 17185 },    -- Round Buckler
+						{"select", "itemID", 1202 },    -- Wall Shield
+						{"select", "itemID", 2376 },    -- Worn Heater Shield
+					},
+					["groups"] = {
+						i(17183),	-- Dented Buckler
+						i(1200),	-- Large Wooden Shield
 					},
 				}),
 				n(16782, {	-- Yatheon <Engineering Supplies>
@@ -651,6 +786,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["isLimited"] = true,
 							["f"] = RECIPES,
 						}),
+					},
+				}),
+				n(16636, {	-- Zathanna 
+					["coord"] = { 69.8, 65.8, SHATTRATH_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 5239 },    -- Blackbone Wand
+						{"select", "itemID", 5210 },    -- Burning Wand
+						{"select", "itemID", 5236 },    -- Combustible Wand
+						{"select", "itemID", 5211 },    -- Dusk Wand
+						{"select", "itemID", 5209 },    -- Gloom Wand
+						{"select", "itemID", 5347 },    -- Pestilent Wand
+						{"select", "itemID", 5238 },    -- Pitchwood Wand
+						{"select", "itemID", 5208 },    -- Smoldering Wand
 					},
 				}),
 				n(16623, {	-- Zyandrel <Cloth Armor Merchant>

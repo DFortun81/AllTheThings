@@ -315,24 +315,26 @@ root(ROOTS.Zones, {
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
-					p(635, {	-- Adder
-						["crs"] = { 61325 },	-- Adder
-					}),
-					p(518, {	-- Clefthoof Runt
-						["crs"] = { 62620 },	-- Clefthoof Runt
-					}),
-					p(386, {	-- Prairie Dog
-						["crs"] = { 61141 },	-- Prairie Dog
-					}),
-					p(417, {	-- Rat
-						["crs"] = { 61366 },	-- Rat
-					}),
-					p(379, {	-- Squirrel
-						["crs"] = { 61081 },	-- Squirrel
-					}),
-					p(420, {	-- Toad
-						["crs"] = { 61369 },	-- Toad
-					}),
+					["sym"] = {{"select","speciesID",
+						635,	-- Adder
+					}},
+					["groups"] = {
+						p(518, {	-- Clefthoof Runt
+							["crs"] = { 62620 },	-- Clefthoof Runt
+						}),
+						p(386, {	-- Prairie Dog
+							["crs"] = { 61141 },	-- Prairie Dog
+						}),
+						p(417, {	-- Rat
+							["crs"] = { 61366 },	-- Rat
+						}),
+						p(379, {	-- Squirrel
+							["crs"] = { 61081 },	-- Squirrel
+						}),
+						p(420, {	-- Toad
+							["crs"] = { 61369 },	-- Toad
+						}),
+					},
 				})),
 				-- #endif
 				-- #if ANYCLASSIC
@@ -1635,6 +1637,10 @@ root(ROOTS.Zones, {
 						["description"] = "This vendor is only accessible when the Alliance controls Halaa.",
 						["coord"] = { 42.8, 42.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+						["sym"] = {
+							{"select", "itemID", 30749 },    -- Draenic Sparring Blade
+							{"select", "itemID", 30750 },	-- Draenic Warblade
+						},
 						["groups"] = pvp({
 							i(24208, {	-- Design: Mystic Dawnstone
 								["isLimited"] = true,
@@ -1772,6 +1778,15 @@ root(ROOTS.Zones, {
 							i(21902, {	-- Pattern: Soulcloth Gloves
 								["isLimited"] = true,
 							}),
+						},
+					}),
+					n(19021, {	-- Nancila 
+						["coord"] = { 55.2, 70.6, NAGRAND },
+						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{"select", "itemID", 30758 },    -- Aldor Guardian Rifle
+							{"select", "itemID", 30757 },    -- Draenic Light Crossbow
+							{"select", "itemID", 30759 },    -- Maghari Light Recurve
 						},
 					}),
 					n(20097, {	-- Nula the Butcher <Cooking Supplies>

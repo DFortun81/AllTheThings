@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(ANCIENT_WAYGATES, {
 			n(ACHIEVEMENTS, {
@@ -268,7 +268,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 				}),
 				q(75154, {	-- Waygate: Morqut Islet
 					-- TODO: ["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
@@ -278,16 +278,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["DisablePartySync"] = true,
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 					["g"] = {
-
+						i(204438),	-- Enchanted Arcana Vessel
 					},
 				}),
 			}),
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		q(71183),	-- triggered together with 'Continued Waygate Exploration' (70702)
 		q(71185),	-- triggered together with 'Continued Waygate Exploration' (71146)

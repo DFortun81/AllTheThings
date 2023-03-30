@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
 						"added 6.1.0.19480",
-						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -496,7 +496,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
 						"added 6.1.0.19480",
-						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -799,7 +799,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
 						"added 6.1.0.19480",
-						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1066,7 +1066,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
 						"added 6.1.0.19480",
-						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1289,6 +1289,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(VENDORS, {
+				n(5152, {	-- Bingus 
+					["coord"] = { 23.2, 17.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 2532 },    -- Morning Star
+						{"select", "itemID", 2524 },    -- Truncheon
+						{"select", "itemID", 2525 },    -- War Hammer
+						{"select", "itemID", 2533 },    -- War Maul
+						{"select", "itemID", 2535 },    -- War Staff
+					},
+				}),
 				n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
 					["coord"] = { 40.2, 33.4, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -1299,6 +1311,53 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18731, {	-- Pattern: Heavy Leather Ball
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(5120, {	-- Brenwyn Wintersteel
+					["coord"] = { 61.8, 88.8, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2529 },	-- zweihander
+					},
+				}),
+				n(5123, {	-- Bretta Goldfury
+					["coord"] = { 72.8, 64.8, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
+						{"select", "itemID", 3023 },    -- Large Bore Blunderbuss
+						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
+						{"select", "itemID", 2510 },    -- Solid Blunderbuss
+					},
+				}),
+				n(5106, {	-- Bromiir Ormsen
+					["coord"] = { 32.6, 58.2, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2392 },    -- Light Mail Armor
+						{"select", "itemID", 2393 },    -- Light Mail Belt
+						{"select", "itemID", 2395 },    -- Light Mail Boots
+						{"select", "itemID", 2396 },    -- Light Mail Bracers
+						{"select", "itemID", 2397 },    -- Light Mail Gloves
+						{"select", "itemID", 2394 },    -- Light Mail Leggings
+					},
+					["groups"] = {
+						i(1201),	-- Dull Heater Shield
+						i(17186),	-- Small Targe
 					},
 				}),
 				n(5163, {	-- Burbik Gearspanner <Trade Supplies>
@@ -1335,6 +1394,57 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(64898, {	-- Shroud of Ironforge
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
+					},
+				}),
+				n(5125, {	-- Dolkin Craghelm
+					["coord"] = { 54.8, 88.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2419 },    -- Augmented Chain Belt
+						{"select", "itemID", 2420 },    -- Augmented Chain Boots
+						{"select", "itemID", 2421 },    -- Augmented Chain Bracers
+						{"select", "itemID", 2422 },    -- Augmented Chain Gloves
+						{"select", "itemID", 3891 },    -- Augmented Chain Helm
+						{"select", "itemID", 2418 },    -- Augmented Chain Leggings
+						{"select", "itemID", 2417 },    -- Augmented Chain Vest
+						{"select", "itemID", 2448 },    -- Heavy Pavise
+						{"select", "itemID", 17189 },    -- Metal Buckler
+						{"select", "itemID", 2148 },    -- Polished Scale Belt
+						{"select", "itemID", 2149 },    -- Polished Scale Boots
+						{"select", "itemID", 2150 },    -- Polished Scale Bracers
+						{"select", "itemID", 2151 },    -- Polished Scale Gloves
+						{"select", "itemID", 2152 },    -- Polished Scale Leggings
+						{"select", "itemID", 2153 },    -- Polished Scale Vest
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 285 },    -- Scalemail Vest
+					},
+				}),
+				n(5102, {	-- Dolman Steelfury
+					["coord"] = { 36.6, 66.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2492 },	-- Cudgel
+						{"select", "itemID", 2493 },	-- Wooden Mallet
+					},
+					["groups"] = {
+						i(1194),	-- Bastard Sword
+						i(2479),	-- Broad Axe
+						i(2130),	-- Club
+						i(2139),	-- Dirk
+						i(2488),	-- Gladius
+						i(2134),	-- Hand Axe
+						i(2491),	-- Large Axe
+						i(2480),	-- Large Club
+						i(2132),	-- Short Staff
+						i(2131),	-- Shortsword
+						i(2494),	-- Stiletto
+						i(2490),	-- Tomahawk
+						i(2489),	-- Two-Handed Sword
+						i(2495),	-- Walking Stick
 					},
 				}),
 				n(5160, {	-- Emrul Riknussun <Cooking Supplier>
@@ -1374,6 +1484,95 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 							-- #endif
 						}),
+					},
+				}),
+				n(5103, {	-- Grenil Steelfury
+					["coord"] = { 36.4, 66.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 1198 },    -- Claymore
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 851 },    -- Cutlass
+						{"select", "itemID", 2024 },    -- Espadon
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 2207 },    -- Jambiya
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 2208 },    -- Poniard
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
+						{"select", "itemID", 2027 },    -- Scimitar
+						{"select", "itemID", 1196 },    -- Tabar
+					},
+				}),
+				n(5133, {	-- Harick Boulderdrum
+					["coord"] = { 22.8, 16.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 5239 },    -- Blackbone Wand
+						{"select", "itemID", 5210 },    -- Burning Wand
+						{"select", "itemID", 5236 },    -- Combustible Wand
+						{"select", "itemID", 5211 },    -- Dusk Wand
+						{"select", "itemID", 5209 },    -- Gloom Wand
+						{"select", "itemID", 5347 },    -- Pestilent Wand
+						{"select", "itemID", 5238 },    -- Pitchwood Wand
+						{"select", "itemID", 5208 },    -- Smoldering Wand
+					},
+				}),
+				n(5119, {	-- Hegnar Swiftaxe
+					["coord"] = { 61.8, 88.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 2522 },    -- Crescent Axe
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 2530 },    -- Francisca
+						{"select", "itemID", 2531 },    -- Great Axe
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 1196 },    -- Tabar
+					},
+				}),
+				n(5170, {	-- Hjoldir Stoneblade
+					["coord"] = { 45.8, 7.0, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 2520 },	-- broadsword
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2521 },	-- flamberge
+						{"select", "itemID", 2526 },	-- gauche
+						{"select", "itemID", 2534 },	-- rondel
+						{"select", "itemID", 2529 },	-- zweihander
+					},
+				}),
+				n(5121, {	-- Kelomir Ironhand
+					["coord"] = { 61.4, 88.4, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 925 },    -- Flail
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 924 },    -- Maul
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
+						{"select", "itemID", 2525 },    -- War Hammer
+						{"select", "itemID", 2533 },    -- War Maul
+						{"select", "itemID", 2535 },    -- War Staff
+					},
+					["groups"] = {
+						i(2532),	-- Morning Star
+						i(2524),	-- Truncheon
 					},
 				}),
 				-- #if AFTER 6.1.0
@@ -1459,31 +1658,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(187997, {	-- Eternal Heirloom Armor Casing
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(187998, {	-- Eternal Heirloom Scabbard
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(204336, {	-- Awakened Heirloom Armor Casing
-								["timeline"] = { ADDED_DF_0_7 },
+								["timeline"] = { ADDED_10_0_7 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(204337, {	-- Awakened Heirloom Scabbard
-								["timeline"] = { ADDED_DF_0_7 },
+								["timeline"] = { ADDED_10_0_7 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 						}),
 						filter(TOYS, {
 							gold(10000, i(187896, {	-- Scouting Map: A Stormstout's Guide to Pandaria (TOY!)
-							["timeline"] = { "added 9.1.5.40871" },
+							["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187897, {	-- Scouting Map: Cataclysm's Consequences (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187869, {	-- Scouting Map: Into the Shadowlands (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(150746, {	-- Scouting Map: Modern Provisioning of the Eastern Kingdoms (TOY!)
 								["timeline"] = { "added 7.2.5.23910" },
@@ -1494,19 +1693,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["races"] = ALLIANCE_ONLY,
 							})),
 							gold(10000, i(187895, {	-- Scouting Map: The Dangers of Draenor (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187899, {	-- Scouting Map: The Many Curiosities of Outland (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187900, {	-- Scouting Map: The Wonders of Kul Tiras and Zandalar (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187898, {	-- Scouting Map: True Cost of the Northrend Campaign (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187875, {	-- Scouting Map: United Fronts of the Broken Isles (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 						}),
 						n(WEAPONS, {
@@ -1569,6 +1768,50 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(5107, {	-- Mangorn Flinthammer
+					["coord"] = { 32.0, 58.8, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+					},
+					["groups"] = {
+						i(17187),	-- Banded Buckler
+						i(1202),	-- Wall Shield
+					},
+				}),
+				n(5126, {	-- Olthran Craghelm   
+					["coord"] = { 55.0, 88.4, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2424 },    -- Brigandine Belt
+						{"select", "itemID", 2426 },    -- Brigandine Boots
+						{"select", "itemID", 2427 },    -- Brigandine Bracers
+						{"select", "itemID", 2428 },    -- Brigandine Gloves
+						{"select", "itemID", 3894 },    -- Brigandine Helm
+						{"select", "itemID", 2425 },    -- Brigandine Leggings
+						{"select", "itemID", 2423 },    -- Brigandine Vest
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 2448 },    -- Heavy Pavise
+						{"select", "itemID", 2446 },    -- Kite Shield
+						{"select", "itemID", 2445 },    -- Large Metal Shield
+						{"select", "itemID", 17189 },    -- Metal Buckler
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+						{"select", "itemID", 8094 },    -- Platemail Armor
+						{"select", "itemID", 8088 },    -- Platemail Belt
+						{"select", "itemID", 8089 },    -- Platemail Boots
+						{"select", "itemID", 8090 },    -- Platemail Bracers
+						{"select", "itemID", 8091 },    -- Platemail Gloves
+						{"select", "itemID", 8092 },    -- Platemail Helm
+						{"select", "itemID", 8093 },    -- Platemail Leggings
+						{"select", "itemID", 17192 },    -- Reinforced Targe
+						{"select", "itemID", 17188 },    -- Ringed Buckler
+					},
+				}),
 				n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
 					["coord"] = { 43.0, 29.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -1609,6 +1852,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5122, {	-- Skolmin Goldfury <Bow Merchant>
 					["coord"] = { 71.6, 66.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },	-- Heavy Recurve Bow
+						{"select", "itemID", 3026 },	-- Reinforced Bow
+					},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,
@@ -1643,6 +1890,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6326),	-- Recipe: Slitherskin Mackerel
 					},
 				}),
+				n(7976, {	-- Thalgus Thunderfist
+					["coord"] = { 61.8, 90.0, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 15905 },    -- Brass Knuckles
+						{"select", "itemID", 15904 },    -- Deadly Fist Blades
+						{"select", "itemID", 15808 },    -- Fine Light Crossbow
+						{"select", "itemID", 15809 },    -- Heavy Crossbow
+						{"select", "itemID", 2511 },    -- Hunters Boomstick
+						{"select", "itemID", 15807 },    -- Light Crossbow
+						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
+					},
+					["groups"] = {
+						i(15904),	-- Deadly Fist Blades
+						i(15906, {	-- Left-Handed Brass Knuckles
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15909, {	-- Left-Handed Blades
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15907, {	-- Left-Handed Claw
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15903),	-- Slicing Claw
+					},
+				}),
 				n(4259, {	-- Thurgrum Deepforge <Blacksmithing Supplies>
 					["coord"] = { 51.8, 41.2, IRONFORGE },
 					-- #if AFTER CATA
@@ -1669,6 +1942,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					},
+				}),
+				n(5169, {	-- Tynnus Venomsprout 
+					["coord"] = { 52.8, 13.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
+				}),
+				n(8117, {	-- Wizbang Booms
+					["coord"] = { 31.8, 63.4, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					["sym"] = {
+						{"select", "itemID", 8626 },	-- Blue Sparkler
+						{"select", "itemID", 8625 },	-- White Sparkler
+						{"select", "itemID", 8624 },	-- Red Sparkler
 					},
 				}),
 			}),

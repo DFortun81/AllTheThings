@@ -113,7 +113,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					["qg"] = 142930,	-- Halford Wyrmbane
 					["sourceQuest"] = 51795,	-- The Battle for Lordaeron
 					["coord"] = { 27.7, 21.5, STORMWIND_CITY },
-					["timeline"] = { "added 8.0.1.27291", "removed 9.0.1" },
+					["timeline"] = { "added 8.0.1.27291", REMOVED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53028, {	-- A Dying World (A/H)
@@ -231,7 +231,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				q(58991, {	-- Curious Corruption
 					["description"] = "Automatically granted when you get your first corrupted item.",
 					["altQuests"] = { 59000 },	-- Elements of Corruption
-					["timeline"] = { "removed 9.1" },
+					["timeline"] = { REMOVED_9_1_0 },
 				}),
 				q(57362, {	-- Deeper Into the Darkness
 					["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },

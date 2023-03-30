@@ -706,7 +706,7 @@ _.Zones =
 					["g"] = {
 						i(200666, {	-- Storm-Imbued Pole
 							["classes"] = { EVOKER },
-							["timeline"] = ADDED_DF_PRE2,
+							["timeline"] = ADDED_10_0_2,
 						}),
 						i(132781),	-- Archived Record of Might
 						i(132786),	-- Archived Record of Valor

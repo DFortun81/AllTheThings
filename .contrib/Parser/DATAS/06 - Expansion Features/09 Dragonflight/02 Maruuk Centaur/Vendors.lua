@@ -12,7 +12,7 @@ local TALLSTRIDER_SINEW = 201404;
 local DRACONIUM_ORE = 188658;
 local RUNED_WRITHEBARK = 194863;
 local LARGE_STURDY_FEMUR = 201402;
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(MARUUK_CENTAUR, {
 		n(VENDORS, {
 			n(195547, {	-- Farrier Rondare
@@ -231,7 +231,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					}),
 						-- RENOWN 5 --
 					i(197630, {	-- Windborne Velocidrake: Feathered Neck (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
@@ -242,7 +242,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						},
 					}),
 					i(197604, {	-- Windborne Velocidrake: Ox Horns (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
 						},
@@ -345,13 +345,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						},
 					}),
 					i(197587, {	-- Windborne Velocidrake: Feathered Back (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 100 },
 						},
 					}),
 					i(197591, {	-- Windborne Velocidrake: Hairy Head (DM!)
-						["timeline"] = { ADDED_DF_0_7 },
+						["timeline"] = { ADDED_10_0_7 },
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 100 },
 						},

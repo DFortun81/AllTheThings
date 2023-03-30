@@ -9,7 +9,7 @@ applyclassicphase(WRATH_PHASE_ONE, profession(960, {	-- Runeforging
 		},
 		{
 			["recipeID"] = 326911,	-- Rune of Hysteria
-			["timeline"] = { "added 9.0.1" },
+			["timeline"] = { ADDED_9_0_1 },
 		},
 		{
 			["recipeID"] = 53331,	-- Rune of Lichbane
@@ -21,7 +21,7 @@ applyclassicphase(WRATH_PHASE_ONE, profession(960, {	-- Runeforging
 		},
 		{
 			["recipeID"] = 326805,	-- Rune of Sanguination
-			["timeline"] = { "added 9.0.1" },
+			["timeline"] = { ADDED_9_0_1 },
 		},
 		{
 			["recipeID"] = 54447,	-- Rune of Spellbreaking
@@ -33,7 +33,7 @@ applyclassicphase(WRATH_PHASE_ONE, profession(960, {	-- Runeforging
 		},
 		{
 			["recipeID"] = 326855,	-- Rune of Spellwarding
-			["timeline"] = { "added 9.0.1" },
+			["timeline"] = { ADDED_9_0_1 },
 		},
 		{
 			["recipeID"] = 54446,	-- Rune of Swordbreaking
@@ -45,14 +45,14 @@ applyclassicphase(WRATH_PHASE_ONE, profession(960, {	-- Runeforging
 		},
 		{
 			["recipeID"] = 327082,	-- Rune of the Apocalypse
-			["timeline"] = { "added 9.0.1" },
+			["timeline"] = { ADDED_9_0_1 },
 		},
 		{
 			["recipeID"] = 53344,	-- Rune of the Fallen Crusader
 			["timeline"] = { "added 3.0.2" },
 		},
 		{
-			["recipeID"] = 70164,	-- Rune of the Nerubian Carapace 
+			["recipeID"] = 70164,	-- Rune of the Nerubian Carapace
 			["timeline"] = { "added 3.3.0", "deleted 6.0.2" },
 		},
 		{
@@ -61,7 +61,7 @@ applyclassicphase(WRATH_PHASE_ONE, profession(960, {	-- Runeforging
 		},
 		{
 			["recipeID"] = 326977,	-- Rune of Unending Thirst
-			["timeline"] = { "added 9.0.1" },
+			["timeline"] = { ADDED_9_0_1 },
 		},
 	},
 }));

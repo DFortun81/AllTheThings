@@ -36,14 +36,9 @@ r(49383),	-- Engineering
 r(51306),	-- Engineering
 r(53280),	-- 
 3.0.1.8874
-r(54998),	-- Hand-Mounted Pyro Rocket
-r(54999),	-- Hyperspeed Accelerators
 r(56273),	-- Wormhole: Gadgetzan
 r(56474),	-- Mammoth Cutters
 r(56475),	-- Saronite Razorheads
-3.1.0.9767
-r(63765),	-- Springy Arachnoweave
-r(63770),	-- Reticulated Armor Webbing
 3.3.5.12340
 r(67790),	-- Dimensional Folder: K3
 r(72952),	-- Shatter Rounds
@@ -120,6 +115,11 @@ r(407005),	-- Polarity Bomb
 r(407006),	-- EZ-Thro Polarity Bomb
 r(408052),	-- Tinker: Shadowflame Rockets
 r(408230),	-- Quackomancy Cannon
+10.1.0.48661
+r(409351),	-- Obsidian Combatant's Cloth Goggles
+r(409353),	-- Obsidian Combatant's Leather Goggles
+r(409355),	-- Obsidian Combatant's Mail Goggles
+r(409356),	-- Obsidian Combatant's Plate Goggles
 
 
 
@@ -936,3 +936,8 @@ r(407005),	-- Polarity Bomb
 r(407006),	-- EZ-Thro Polarity Bomb
 r(408052),	-- Tinker: Shadowflame Rockets
 r(408230),	-- Quackomancy Cannon
+10.1.0.48661
+r(409351),	-- Obsidian Combatant's Cloth Goggles
+r(409353),	-- Obsidian Combatant's Leather Goggles
+r(409355),	-- Obsidian Combatant's Mail Goggles
+r(409356),	-- Obsidian Combatant's Plate Goggles

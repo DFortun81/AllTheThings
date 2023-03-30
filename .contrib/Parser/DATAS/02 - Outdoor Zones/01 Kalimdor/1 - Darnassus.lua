@@ -880,6 +880,58 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(VENDORS, {
+				n(4234, {	-- Andrus <Staff Merchant>
+					["coord"] = { 54.6, 83.2, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2527 },	-- Battle Staff
+						{"select", "itemID", 2535 },	-- War Staff
+					},
+				}),
+				n(4203, {	-- Ariyell Skyshadow
+					["coord"] = { 56.6, 52.8, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+					-- all done
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 15905 },	-- brass knuckles
+						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 851 },		-- cutlass
+						{"select", "itemID", 922 },		-- dacian falx
+						{"select", "itemID", 927 },		-- double axe
+						{"select", "itemID", 15904 },	-- deadly fist blades
+						{"select", "itemID", 2024 },	-- espadon
+						{"select", "itemID", 925 },		-- flail
+						{"select", "itemID", 1197 },	-- giant mace
+						{"select", "itemID", 2030 },	-- gnarled staff
+						{"select", "itemID", 853 },		-- hatchet
+						{"select", "itemID", 2028 },	-- hammer
+						{"select", "itemID", 2207 },	-- jambiya
+						{"select", "itemID", 2209 },	-- kris
+						{"select", "itemID", 2507 },	-- laminated recurve bow
+						{"select", "itemID", 928 },		-- long staff
+						{"select", "itemID", 924 },		-- maul
+						{"select", "itemID", 852 },		-- mace
+						{"select", "itemID", 854 },		-- quarter staff
+						{"select", "itemID", 3026 },	-- reinforced bow
+						{"select", "itemID", 2026 },	-- rock hammer
+						{"select", "itemID", 2027 },	-- scimitar
+						{"select", "itemID", 15903 },	-- slicing claw
+						{"select", "itemID", 1196 },	-- tabar
+					},
+					["groups"] = {
+						i(15906, {	-- Left-Handed Brass Knuckles
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15909, {	-- Left-Handed Blades
+							["timeline"] = { "removed 6.0.2" },
+						}),
+						i(15907, {	-- Left-Handed Claw
+							["timeline"] = { "removed 6.0.2" },
+						}),
+					},
+				}),
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["coord"] = { 48.2, 21.8, DARNASSUS },
 					["timeline"] = { "added 4.3.0.14732" },
@@ -891,6 +943,68 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(73839, {	-- Swift Mountain Horse (MOUNT!)
 							["timeline"] = { "added 4.3.0.14732" },
 						}),
+					},
+				}),
+				n(4240, {	-- Caynrus     
+					["coord"] = { 55.4, 74.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 1201 },    -- Dull Heater Shield
+						{"select", "itemID", 2448 },    -- Heavy Pavise
+						{"select", "itemID", 2446 },    -- Kite Shield
+						{"select", "itemID", 2445 },    -- Large Metal Shield
+						{"select", "itemID", 17189 },    -- Metal Buckler
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+						{"select", "itemID", 17192 },    -- Reinforced Targe
+						{"select", "itemID", 17188 },    -- Ringed Buckler
+						{"select", "itemID", 17186 },    -- Small Targe
+					},
+					["groups"] = {
+						i(2129),	-- Large Round Shield
+						i(17184),	-- Small Shield
+					},
+				}),
+				n(4164, {	-- Cylania      
+					["coord"] = { 56.8, 53.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+						{"select", "itemID", 3602 },    -- Knitted Belt
+						{"select", "itemID", 3603 },    -- Knitted Bracers
+						{"select", "itemID", 793 },    -- Knitted Gloves
+						{"select", "itemID", 794 },    -- Knitted Pants
+						{"select", "itemID", 792 },    -- Knitted Sandals
+						{"select", "itemID", 795 },    -- Knitted Tunic
+						{"select", "itemID", 2392 },    -- Light Mail Armor
+						{"select", "itemID", 2393 },    -- Light Mail Belt
+						{"select", "itemID", 2395 },    -- Light Mail Boots
+						{"select", "itemID", 2396 },    -- Light Mail Bracers
+						{"select", "itemID", 2397 },    -- Light Mail Gloves
+						{"select", "itemID", 2394 },    -- Light Mail Leggings
+						{"select", "itemID", 1839 },    -- Rough Leather Belt
+						{"select", "itemID", 796 },    -- Rough Leather Boots
+						{"select", "itemID", 1840 },    -- Rough Leather Bracers
+						{"select", "itemID", 797 },    -- Rough Leather Gloves
+						{"select", "itemID", 798 },    -- Rough Leather Pants
+						{"select", "itemID", 799 },    -- Rough Leather Vest
+						{"select", "itemID", 1843 },    -- Tanned Leather Belt
+						{"select", "itemID", 843 },    -- Tanned Leather Boots
+						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
+						{"select", "itemID", 844 },    -- Tanned Leather Gloves
+						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
+						{"select", "itemID", 845 },    -- Tanned Leather Pants
 					},
 				}),
 				n(4168, {	-- Elynna <Tailoring Supplies>
@@ -915,6 +1029,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(4180, {	-- Ealyshia Dewwhisper
+					["coord"] = { 57.8, 71.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2521 },    -- Flamberge
+						{"select", "itemID", 2531 },    -- Great Axe
+						{"select", "itemID", 2525 },    -- War Hammer
+						{"select", "itemID", 2533 },    -- War Maul
+						{"select", "itemID", 2529 },    -- Zweihander
+					},
+				}),
 				n(4223, {	-- Fyldan <Cooking Supplies> [TBC+] / Fyldan <Cooking Supplier>
 					-- #if AFTER CATA
 					["coord"] = { 49.6, 36.6, DARNASSUS },
@@ -937,10 +1063,67 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.2, 59.0, DARNASSUS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2523 },    -- Bullova
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 2522 },    -- Crescent Axe
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 2530 },    -- Francisca
+						{"select", "itemID", 2531 },    -- Great Axe
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 12249 },    -- Merciless Axe
+						{"select", "itemID", 1196 },    -- Tabar
+					},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(4231, {	-- Kieran <Weapon Merchant>
+					["coord"] = { 61.0, 63.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 1194 },	-- bastard sword
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 2479 },	-- broad axe
+						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 2130 },	-- club
+						{"select", "itemID", 2492 },	-- cudgel
+						{"select", "itemID", 851 },	-- cutlass
+						{"select", "itemID", 2139 },	-- dirk
+						{"select", "itemID", 2024 },	-- espadon
+						{"select", "itemID", 1197 },	-- giant mace
+						{"select", "itemID", 2488 },	-- gladius
+						{"select", "itemID", 2030 },	-- gnarled staff
+						{"select", "itemID", 2134 },	-- hand axe
+						{"select", "itemID", 2028 },	-- hammer
+						{"select", "itemID", 853 },	-- hatchet
+						{"select", "itemID", 2207 },	-- jambiya
+						{"select", "itemID", 2491 },	-- large axe
+						{"select", "itemID", 2480 },	-- large club
+						{"select", "itemID", 852 },	-- mace
+						{"select", "itemID", 2208 },	-- poniard
+						{"select", "itemID", 854 },	-- quarter staff
+						{"select", "itemID", 2026 },	-- rock hammer
+						{"select", "itemID", 2027 },	-- scimitar
+						{"select", "itemID", 2131 },	-- shortsword
+						{"select", "itemID", 2132 },	-- short staff
+						{"select", "itemID", 2494 },	-- stiletto
+						{"select", "itemID", 1196 },	-- tabar
+						{"select", "itemID", 2490 },	-- tomahawk
+						{"select", "itemID", 2495 },	-- walking stick
+						{"select", "itemID", 2493 },	-- wooden mallet
+					},
+				}),
+				n(3561, {	-- Kyrai   
+					["coord"] = { 38.8, 35.4, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
 					},
 				}),
 				n(4173, {	-- Landria <Bow Merchant>
@@ -950,6 +1133,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 63.3, 66.3, DARNASSUS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },	-- Heavy Recurve Bow
+						{"select", "itemID", 3026 },	-- Reinforced Bow
+					},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,
@@ -1022,6 +1209,89 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(4177, {	-- Melea    
+					["coord"] = { 55.6, 75.0, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2419 },    -- Augmented Chain Belt
+						{"select", "itemID", 2420 },    -- Augmented Chain Boots
+						{"select", "itemID", 2421 },    -- Augmented Chain Bracers
+						{"select", "itemID", 2422 },    -- Augmented Chain Gloves
+						{"select", "itemID", 3891 },    -- Augmented Chain Helm
+						{"select", "itemID", 2418 },    -- Augmented Chain Leggings
+						{"select", "itemID", 2417 },    -- Augmented Chain Vest
+						{"select", "itemID", 2424 },    -- Brigandine Belt
+						{"select", "itemID", 2426 },    -- Brigandine Boots
+						{"select", "itemID", 2427 },    -- Brigandine Bracers
+						{"select", "itemID", 2428 },    -- Brigandine Gloves
+						{"select", "itemID", 3894 },    -- Brigandine Helm
+						{"select", "itemID", 2425 },    -- Brigandine Leggings
+						{"select", "itemID", 2423 },    -- Brigandine Vest
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 2448 },    -- Heavy Pavise
+						{"select", "itemID", 17189 },    -- Metal Buckler
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+						{"select", "itemID", 2392 },    -- Light Mail Armor
+						{"select", "itemID", 2393 },    -- Light Mail Belt
+						{"select", "itemID", 2395 },    -- Light Mail Boots
+						{"select", "itemID", 2396 },    -- Light Mail Bracers
+						{"select", "itemID", 2397 },    -- Light Mail Gloves
+						{"select", "itemID", 2394 },    -- Light Mail Leggings
+						{"select", "itemID", 2149 },    -- Polished Scale Boots
+						{"select", "itemID", 2150 },    -- Polished Scale Bracers
+						{"select", "itemID", 2151 },    -- Polished Scale Gloves
+						{"select", "itemID", 2152 },    -- Polished Scale Leggings
+						{"select", "itemID", 2153 },    -- Polished Scale Vest
+						{"select", "itemID", 8094 },    -- Platemail Armor
+						{"select", "itemID", 8088 },    -- Platemail Belt
+						{"select", "itemID", 8089 },    -- Platemail Boots
+						{"select", "itemID", 8090 },    -- Platemail Bracers
+						{"select", "itemID", 8091 },    -- Platemail Gloves
+						{"select", "itemID", 8092 },    -- Platemail Helm
+						{"select", "itemID", 8093 },    -- Platemail Leggings
+						{"select", "itemID", 2148 },    -- Polished Scale Belt
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 285 },    -- Scalemail Vest
+					},
+					["groups"] = {
+						i(2380),    -- Tarnished Chain Belt
+						i(2383),    -- Tarnished Chain Boots
+						i(2384),    -- Tarnished Chain Bracers
+						i(2385),    -- Tarnished Chain Gloves
+						i(2381),    -- Tarnished Chain Leggings
+						i(2379),    -- Tarnished Chain Vest
+					},
+				}),
+				n(4171, {	-- Merelyssa
+					["coord"] = { 61.6, 63.8, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2528 },	-- falchion
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2027 },	-- Scimitar
+					},
+				}),
 				n(50305, {	-- Moon Priestess Lasara <Darnassus Quartermaster>
 					["coord"] = { 36.17, 48.49, DARNASSUS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1063,6 +1333,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16217, {	-- Formula: Enchant Shield - Greater Stamina (RECIPE!)
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(4233, {	-- Mythidan
+					["coord"] = { 60.4, 63.4, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 925 },    -- Flail
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 924 },    -- Maul
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
 					},
 				}),
 				n(4225, {	-- Saenorion <Leatherworking Supplies>

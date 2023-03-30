@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THE_AZURE_SPAN, {
 		n(DRAGONRIDING_RACING, {
 			header(HEADERS.Achievement, 15941, {	-- Dragon Racing Completionist: Gold
@@ -209,7 +209,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					}),
 				})),
 			}),
-			header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_DF_0_5 }, {	-- Reverse Racer: Gold
+			header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
 				n(ACHIEVEMENTS, {
 					ach(17201, {	-- Azure Span Reverse: Bronze
 						-- Meta Achievement

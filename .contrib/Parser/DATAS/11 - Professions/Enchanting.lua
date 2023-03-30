@@ -998,7 +998,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(287494),	-- Iwen's Enchanting Rod
 		})),
 	}))),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 		r(309832),	-- Shadowlands Enchanting
 		cat(1365, {	-- Boot Enchantments
 			r(309532),	-- Agile Soulwalker
@@ -1036,7 +1036,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(360007, {["timeline"] = { "added 9.2.0" }}),	-- Magically Regulated Automa Core
 			r(343680),	-- Novice Crafter's Mark
 		}),
-		cat(354, sharedDataSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Other
+		cat(354, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Other
 			r(355184),	-- Anima-ted Leash
 		})),
 		cat(1527, sharedDataSelf({ ["u"] = 15 }, {	-- Quest Recipes

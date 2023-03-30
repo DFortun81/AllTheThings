@@ -5,13 +5,13 @@ root(ROOTS.Instances, tier(SL_TIER, {
 	n(MYTHIC_PLUS, {
 		n(ACHIEVEMENTS, {
 			header(HEADERS.Achievement, SEASON_PROUD, bubbleDownSelf({
-				["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 },
+				["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },
 			},{
 				ach(14662,	{	-- Realm First! Shadowlands Keystone Master
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				ach(14938, {	-- Shadowlands Keystone Explorer: Season One
-					["timeline"] = { ADDED_SL_0_5, REMOVED_SL_S2 },
+					["timeline"] = { ADDED_9_0_5, REMOVED_9_1_0 },
 				}),
 				ach(14531, {	-- Shadowlands Keystone Conqueror: Season One
 					title(431),	-- <Name> the Proud (TITLE!)
@@ -21,7 +21,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 				}),
 			})),
 			header(HEADERS.Achievement, SEASON_TORMENTED, bubbleDownSelf({
-				["timeline"] = { "added 9.1.0", "removed 9.2.0" },
+				["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
 			},{
 				ach(15073),		-- Shadowlands Keystone Explorer: Season Two
 				ach(15077, {	-- Shadowlands Keystone Conqueror: Season Two
@@ -44,7 +44,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 				ach(15050),	-- Keystone Hero: Theater of Pain
 			})),
 			header(HEADERS.Achievement, SEASON_CRYPTIC, bubbleDownSelf({
-				["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+				["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 			},{
 				ach(15496),		-- Shadowlands Keystone Explorer: Season Three
 				ach(15498, {	-- Shadowlands Keystone Conqueror: Season Three
@@ -72,7 +72,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 				ach(15050),		-- Keystone Hero: Theater of Pain
 			})),
 			header(HEADERS.Achievement, SEASON_SHROUDED, bubbleDownSelf({
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 },
 			},{
 				ach(15688),		-- Shadowlands Keystone Explorer: Season Four
 				ach(15689, {	-- Shadowlands Keystone Conqueror: Season Four
@@ -102,7 +102,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 			})),
 		}),
 		n(SOULSHAPES, {
-			i(182173, {["timeline"] = { ADDED_SL_REL, REMOVED_DF_REL }}),	-- Hyena Soul
+			i(182173, {["timeline"] = { ADDED_9_0_2, REMOVED_10_0_2_LAUNCH }}),	-- Hyena Soul
 		}),
 	}),
 }));

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(ARDENWEALD, {
 		n(SPECIAL, {
 			i(182599, {	-- Bucket of Clean Water
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(180727),		-- Shimmermist Runner (MOUNT!)
 				},
 			}),
-			n(181694, bubbleDownSelf({ ["timeline"] = { ADDED_SL_1_5 } }, {	-- Lost Soul (Cat)
+			n(181694, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Lost Soul (Cat)
 				["description"] = "This soul is found in the crotch of one of the six super trees in Ardenweald. Target and use /soothe on the Lost Soul to receive the quest.",
 				["coords"] = {
 					{ 37.6, 36.3, ARDENWEALD },

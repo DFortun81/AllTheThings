@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local STYGIA = 1767;
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(THE_MAW, {
 		n(VENDORS, {
 			n(162804, {	-- Ve'nari
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(185350, {	-- Partial Rune Codex
 						["description"] = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters with maxed Ven'ari reputation.",
 						["cost"] = { { "c", STYGIA, 2000 } },	-- 2,000x Stygia
-						["timeline"] = { ADDED_SL_0_5 },
+						["timeline"] = { ADDED_9_0_5 },
 					}),
 					i(184652, {	-- Phantasmic Infuser
 						["cost"] = { { "c", STYGIA, 3760 } },
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 					i(184870, {	-- Stygia Dowser
 						["description"] = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters with maxed Ven'ari reputation.",
 						["cost"] = { { "c", STYGIA, 1500 } },
-						["timeline"] = { ADDED_SL_0_5 },
+						["timeline"] = { ADDED_9_0_5 },
 					}),
 					i(184359, {	-- Unbound Reality Fragment
 						["cost"] = { { "c", STYGIA, 1900 } },

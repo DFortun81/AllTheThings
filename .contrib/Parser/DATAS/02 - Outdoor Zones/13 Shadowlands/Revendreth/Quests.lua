@@ -1,7 +1,7 @@
  ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(REVENDRETH, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 13878, {	-- The Master of Revendreth
@@ -847,7 +847,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 			q(64963, {	-- A Defector's Request
 				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 				["provider"] = { "i", 187822 },	-- A Defector's Request
-				["timeline"] = { ADDED_SL_1_5 },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			q(58062, {	-- A Very Special Guest
 				["description"] = "Unlocks the Black Market Auction House and item drops for Favor quests.",
@@ -987,7 +987,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 			}, bubbleDown({
-				["timeline"] = { ADDED_SL_REL, REMOVED_DF_PRE2 },
+				["timeline"] = { ADDED_9_0_2, ADDED_10_0_2 },
 			}, {
 				q(62781, {	-- Ash You Like It [Pre-60]
 					i(181334),	-- Essence Extractor

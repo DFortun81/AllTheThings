@@ -2226,7 +2226,7 @@ Lihuvim's geomental creations are the most majestic of walking rock piles.,|cFFF
 Looks like Ben'jin and Maka'fon have kept busy since you last saw them. Maka'jin is ready for adventure but will settle for a large pile of leafy greens.,|cFFFFD200Trading Post|r,3242,185322,366833,1881827,7,16466,2,6,7,0
 He has a heart of gold. Literally. These shiny good-boys are all the rage with affluent gnomes everywhere.,|cFFFFD200Trading Post|r,3243,183686,366841,1567069,9,16466,2,6,7,0
 "Fooled aeons ago by the clever loa of death into a bargain of unceasing service, this tiny ancient being carries out his duties eternally red with rage.",|cFFFFD200Trading Post|r,3244,185324,366842,2027568,3,16466,2,6,7,0
-,,3246,185475,0,236446,2,33840,-1,6,7,0
+,,3246,185475,0,236446,2,17520,-1,6,7,0
 "This isn't the real Pocopoc, but it provided this replica to you for use outside Zereth Mortis. Its details are so accurate as to be utterly convincing to anyone who hasn't spent lots of time with the real one.",|cFFFFD200Vendor: |rOlea Manu|n|cFFFFD200Zone: |rZereth Mortis|n|cFFFFD200Cost: |r500|Hcurrency:1979|h|TInterface\ICONS\INV_Trinket_ProgenitorRaid_02_Blue.BLP:0|t|h,3247,185477,367376,4327611,5,147,2,41,7,0
 "Ichabod began his existence as a prototype for the fearsome harvest golems terrorizing the farmers of Westfall, but a little gnomish ingenuity has since made him far less likely to attack your knees.",|cFFFFD200Promotion|r |n,3248,183638,367696,4206469,9,16466,9,6,7,0
 "Before he was known as one of the Wild Gods, Ursoc roamed the Grizzly Hills as a cub.",|cFFFFD200In-Game Shop|r|n,3249,185586,367702,4208901,7,82,9,6,7,0
@@ -2238,9 +2238,9 @@ Siege training begins early for kodo calflings that show a predilection for viol
 His pink antlers make him the life of any party.,|cFFFFD200Trading Post|r,3255,185756,368314,2481371,7,16466,2,6,7,0
 The master jewelcrafters of the Dragon Isles have perfected their craft so much that their gemmed statues can be brought to life. This whelp forged of obsidian is now not to be trifled with.,|cFFFFD200Profession:|r Jewelcrafting|n,3256,186844,369723,4397690,1,2,3,6,7,0
 ,,3257,186884,0,3922922,4,56,-1,6,7,0
-"There was a time when she was just a normal rabbit. That time might be in the past or the future, but no one really knows for sure.",,3259,188709,371534,3733064,4,16416,-1,6,7,0
+This little rabbit is cute from the tip of her button nose to the tips of her deadly claws.,|cFFFFD200Treasure: |rSack of Oddities,3259,188709,371534,3733064,4,2,0,6,7,0
 "Nearly invisible, this creature leaps from tree to snow-covered tree.",|cFFFFD200Pet Battle: |rThe Azure Span,3260,188792,0,4528721,4,26,4,6,7,0
-"Hope, like this phoenix, rises from the ashes of shattered dreams.",,3261,188821,371594,4007138,5,16416,-1,6,7,0
+"Hope, like this phoenix, rises from the ashes of shattered dreams.",|cFFFFD200Drop: |rWarden Entrix|n|cFFFFD200Zone: |rThe Forbidden Reach,3261,188821,371594,4007138,5,2,0,6,7,0
 Some very clever wizard or dragon or other magical being thought they were being clever when they decided to color an ice elemental purple for a very elaborate bit of wordplay. They were probably right.,|cFFFFD200Achievement:|r What Can I Say? They Love Me.|n,3262,188849,371621,4572524,7,82,5,6,7,0
 It looks like a duck and it smells like a duck and it quacks like a duck... what's a duck?,|cFFFFD200Achievement:|r Proven Pet Parent,3263,188861,371636,4533201,8,82,5,6,7,0
 "A shard of a fragment of a piece of a sliver of a piece of crystal, but walking around like it owns the place. Good thing it likes you.",|cFFFFD200Achievement:|r Many More Mini Minions,3264,188885,371655,133244,5,82,5,6,7,0
@@ -2263,15 +2263,15 @@ This little racing enthusiast has never missed a race and has never met a racer 
 "The reverberating sound of an adult hornswog's belch can be heard for leagues. Less far-reaching, but far more musical, is the dainty sound of a swoglet belching.","|cFFFFD200Pet Battle: |rOhn'ahran Plains, Thaldraszus, The Azure Span, The Waking Shores",3282,189104,0,1802889,8,26,4,6,7,0
 "When you feel a chill run down your spine, don't be afraid. It's probably just your pet snowlemental.","|cFFFFD200Pet Battle: |rThe Azure Span, The Waking Shores",3283,189107,0,4554460,6,26,4,6,7,0
 "Baby ottuks spend their days swimming, chasing butterflies, and practicing their intimidating roars.",|cFFFFD200Faction: |rIskaara Tuskarr|n|cFFFFD200Renown: |r9|n|cFFFFD200Vendor: |rJiq|n|cFFFFD200Location: |rIskaara,3284,189105,374889,3751919,8,18,2,6,7,0
-In its big eyes you can see your own reflection. You also see everything else because its eyes are so big.,,3285,189106,374895,3751920,8,16416,-1,6,7,0
+In its big eyes you can see your own reflection. You also see everything else because its eyes are so big.,|cFFFFD200Drop: |rLuttrok|n|cFFFFD200Zone: |rThe Forbidden Reach,3285,189106,374895,3751920,8,2,0,6,7,0
 His name is Mister Toots because of the melodious sounds he can make with his trunk.,|cFFFFD200Quest: |rSo How Did It Go?|n|cFFFFD200Zone: |rThe Waking Shores,3286,189108,374998,3946881,7,82,1,6,7,0
 A dream of the memory of fire.,|cFFFFD200Vendor: |rMythressa|n|cFFFFD200Zone: |rValdrakken|n|cFFFFD200Cost: |r1000|Hcurrency:2118|h|TInterface\ICONS\INV_Misc_Powder_Thorium.blp:0|t|h,3287,189111,375035,4554439,3,2,2,6,7,0
 "While their tiny tusks may not help much in a fight, the trunkalumpfs make up for it in sheer weight.","|cFFFFD200Pet Battle: |rOhn'ahran Plains, The Azure Span",3288,189110,0,3946882,7,26,4,6,7,0
 "A spark can become an ember. An ember can become a raging fire. This creature was never a spark or an ember, it has only ever been a raging fire.","|cFFFFD200Drop:|r World Drop|n|cFFFFD200Weather:|r Elemental Storm (Fire)|n|cFFFFD200Zone:|r The Waking Shores, Ohn'ahran Plains, The Azure Span, Thaldraszus",3289,189112,389363,4554438,6,2,0,6,7,0
-"It sits anywhere it wants to, but it prefers to sit on laps.",,3290,189113,375045,3946885,7,16416,-1,6,7,0
-I's tail is in tomorrow but its trunk is in next week.,,3291,189115,375047,3946886,7,16416,-1,6,7,0
+"It sits anywhere it wants to, but it prefers to sit on laps.",|cFFFFD200Quest: |rPrimordial Answers|n|cFFFFD200Zone: |rThe Forbidden Reach,3290,189113,375045,3946885,7,2,1,6,7,0
+Scruffles' lust for battle runs deep.,|cFFFFD200Drop: |rVraken the Hunter|n|cFFFFD200Zone: |rThe Forbidden Reach,3291,189115,375047,3946886,7,2,0,6,7,0
 Some think this creature is smoldering because it is on fire. In truth it's because of its burning gaze.,,3292,189117,375084,4007139,5,16416,-1,6,7,0
-Red for the fires in which it was born.,,3293,189118,375085,4007140,5,16416,-1,6,7,0
+Red for the fires in which it was born.,|cFFFFD200Drop: |rBonesifter Marwak|n|cFFFFD200Zone: |rThe Forbidden Reach,3293,189118,375085,4007140,5,2,0,6,7,0
 Is it possible to rise from the ashes of time? This creature thinks so.,,3294,189119,375089,4007141,5,16416,-1,6,7,0
 "An Igneoid is formed when magma makes it to Azeroth's surface and is infused with dark elemental magic. The resulting creature is tiny, fierce, and very cute.","|cFFFFD200Pet Battle: |rThaldraszus, The Azure Span, The Waking Shores",3295,189121,0,1016245,6,26,4,6,7,0
 This salamanther wants to be your best friend.,"|cFFFFD200Pet Battle: |rOhn'ahran Plains, Thaldraszus, The Azure Span, The Waking Shores",3296,189122,0,4056158,8,26,4,6,7,0
@@ -2298,20 +2298,20 @@ Who's the cutest little monster? You are!,"|cFFFFD200Quest:|r Oh Where, Oh Where
 These critters' white coats help them hide in the snow when  predators are around.,|cFFFFD200Pet Battle: |rThe Azure Span,3320,189209,0,4215002,2,26,4,6,7,0
 There is no fury quite like that of a mother Blackfeather defending her nest.,|cFFFFD200Treasure:|r Blackfeather Nester|n|cFFFFD200Zone:|r The Azure Span|n,3321,189156,375413,3998670,2,2,0,6,7,0
 "These birds use their sharp beaks and dragon-like talons to forage for prey on tree trunks and branches. They communicate with each other by drumming on the trees with their beaks, which makes a sound that can be heard over great distances.","|cFFFFD200Pet Battle: |rOhn'ahran Plains, The Azure Span",3322,189157,0,3998673,2,26,4,6,7,0
-It's got bright feathers. What else is there to say?,,3323,189158,375448,3998672,2,16416,-1,6,7,0
+It has bright feathers. What else is there to say?,,3323,189158,375448,3998672,2,2,-1,6,7,0
 "Faithful and ferocious, this bakar is a hero's best friend.",,3325,189159,389503,1033494,7,82,-1,6,7,0
 "When not lazily floating down a river, this Timbertooth is fond of snacks and snuggles.",|cFFFFD200Faction: |rIskaara Tuskarr|n|cFFFFD200Renown: |r9|n|cFFFFD200Vendor: |rJiq|n|cFFFFD200Location: |rIskaara,3326,189655,375473,4227787,7,18,2,6,7,0
 Hunters value these critters more for their companionship than their pelts.,|cFFFFD200Pet Battle: |rOhn'ahran Plains,3327,189657,0,4227788,7,26,4,6,7,0
-As good as good and better. These little guys are quite frail but exceedingly brave. - Bob Bigheart,"|cFFFFD200Pet Battle: |rOhn'ahran Plains, The Azure Span",3328,189658,0,4227789,7,26,4,6,7,0
+As good as gold and better. These little guys are quite frail but exceedingly brave. - Bob Bigheart,"|cFFFFD200Pet Battle: |rOhn'ahran Plains, The Azure Span",3328,189658,0,4227789,7,26,4,6,7,0
 A timbertooth with lighting inside? Shocking!,|cFFFFD200Pet Battle: |rOhn'ahran Plains,3329,189660,0,4227790,7,26,4,6,7,0
-Gnawing at the roots of magic trees have given this creature the ability to transcend time itself., ,3330,189661,375499,4227791,7,16416,-1,6,7,0
-Is it normal for a fish to have fangs?,,3331,189694,375511,4539688,8,16416,-1,6,7,0
-This frillfish is a no-frills kind of frillfish.,,3332,189696,375536,4539690,8,16416,-1,6,7,0
-The vorquin of the dragon isles have manes that come in a variety of stunning colors.,,3333,191287,375553,4218747,7,16416,-1,6,7,0
+Gnawing at the roots of magic trees have given this creature the ability to transcend time itself.,|cFFFFD200Vendor: |rTurik|n|cFFFFD200Zone: |rThe Forbidden Reach|n|cFFFFD200Cost: |r25000|Hcurrency:2118|h|TInterface\ICONS\INV_Misc_Powder_Thorium.blp:0|t|h,3330,189661,375499,4227791,7,2,2,6,7,0
+Is it normal for a fish to have fangs?,"|cFFFFD200Profession: |rFishing|n|cFFFFD200Zone: |rZskera Vaults, The Forbidden Reach|n",3331,189694,375511,4539688,8,2,3,6,7,0
+This frillfish is a no-frills kind of frillfish.,,3332,189696,375536,4539690,8,2,-1,6,7,0
+The vorquin of the dragon isles have manes that come in a variety of stunning colors.,,3333,191287,375553,4218747,7,2,-1,6,7,0
 It's quite possible this creature is aging backwards. It looks a bit younger every time you see it.,|cFFFFD200Vendor:|r Brendormi|n|cFFFFD200Cost:|r 105|Hitem:202039|h|TInterface\ICONS\inv_misc_stormlordsfavor.blp:0|t|h 1500|Hcurrency:2118|h|TInterface\ICONS\INV_Misc_Powder_Thorium.blp:0|t|h,3334,191298,375567,4218748,7,18,2,6,7,0
 Behold! A pale vorquin.,|cFFFFD200Pet Battle: |rThe Azure Span,3335,191316,0,4218751,7,26,4,6,7,0
 It will probably grow bigger. Probably.,"|cFFFFD200Pet Battle: |rThaldraszus, The Azure Span, The Waking Shores",3336,191323,0,4218749,7,26,4,6,7,0
-"Sharp crystal needles protrude from this creature's back, and yet it still wants you to pet it somehow.",,3338,191435,375642,4572405,5,16416,-1,6,7,0
+"Sharp crystal needles protrude from this creature's back, and yet it still wants you to pet it somehow.",|cFFFFD200Treasure: |rAnimate Crystalspine|n|cFFFFD200Zone: |rThe Forbidden Reach,3338,191435,375642,4572405,5,2,0,6,7,0
 This little dragon is all fired up! It looks like he's got some things to do.,|cFFFFD200Quest:|r A Dragon's Day Off|n,3342,191381,375707,4572403,1,16466,1,6,7,0
 Sometimes you can see blue light flickering deep inside the gems that make up this strange creature.,|cFFFFD200Profession:|r Jewelcrafting,3344,191383,375709,4397609,1,2,3,6,7,0
 The hardest part to shape was the whelpling's cute little snout.,|cFFFFD200Profession:|r Jewelcrafting|n,3345,191384,375710,4397692,1,2,3,6,7,0
@@ -2376,3 +2376,46 @@ I wish that I could bind the tides and bend them to my will. But in its depths t
 Cubbly's extended proximity to time magic has given him powers far beyond the average bear.,|cFFFFD200NPC:|r Strange Bear Cub,3415,198480,374887,4532349,7,82,0,6,7,0
 Do you dare to open this book of draconic secrets?,|cFFFFD200Vendor: |rPatchu|n|cFFFFD200Zone: |rThe Azure Span|n|cFFFFD200Cost: |r200|Hitem:163036|h|TInterface\ICONS\INV_Currency_PetBattle.BLP:0|t|h,3416,198511,375036,4549126,5,2,2,6,7,0
 "With her distinctive coloration and impeccable work ethic, Pinkie has propelled herself to the top of the tallstrider fashion world.",|cFFFFD200Vendor: |rPatchu|n|cFFFFD200Zone: |rThe Azure Span|n|cFFFFD200Cost: |r500|Hitem:163036|h|TInterface\ICONS\INV_Currency_PetBattle.BLP:0|t|h,3417,198543,375043,4037556,7,2,2,6,7,0
+,,3422,199938,0,2399293,8,33840,-1,6,7,0
+,,3423,199940,0,2399293,8,32816,-1,6,7,0
+,,3424,200003,0,2399293,8,33840,-1,6,7,0
+,,3425,200004,0,2399293,8,50200,-1,6,7,0
+"This creature is usually known to be quite docile, but try to stick a carrot in its face and YOU WILL lose feeling in your fingers.",|cFFFFD200Reputation:|r Winterpelt Furbolg|n|cFFFFD200Zone:|r Winterpelt Hollow|n,3427,200259,398170,4905304,6,18,2,6,7,0
+,,3429,200684,0,237007,6,33840,-1,6,7,0
+,,3430,200692,0,237008,6,33840,-1,6,7,0
+,,3431,200688,0,237009,6,33840,-1,6,7,0
+,,3432,200696,0,237012,6,33840,-1,6,7,0
+,,3433,200682,0,237007,6,33840,-1,6,7,0
+,,3434,200690,0,237008,6,33840,-1,6,7,0
+,,3435,200686,0,237009,6,33840,-1,6,7,0
+,,3436,200694,0,237012,6,33840,-1,6,7,0
+,,3437,200685,0,237007,6,50192,-1,6,7,0
+,,3438,200693,0,237008,6,50192,-1,6,7,0
+,,3439,200689,0,237009,6,50192,-1,6,7,0
+,,3440,200697,0,237012,6,50192,-1,6,7,0
+,,3441,200680,0,4080564,2,32816,-1,6,7,0
+,,3442,200679,0,2027918,8,32816,-1,6,7,0
+,,3443,200678,0,4215003,2,32816,-1,6,7,0
+,,3444,200677,0,2399293,8,32816,-1,6,7,0
+"Arrogant from a past life in the stormy Forbidden Reach, pines after the good old days when the elements controlled the land. Bit of a blow hard really.",|cFFFFD200Quest:|r Cutting Wind |n|n|cFFFFD200Zone: |rThe Forbidden Reach,3446,200769,0,237007,6,16402,1,6,7,0
+"Claims to be from a long lost land from the remnants of a massive volcano, but that story seems a little shaky.",|cFFFFD200Quest:|r Shifting Ground|n|n|cFFFFD200Zone: |rThe Forbidden Reach,3447,200770,0,237008,6,16402,1,6,7,0
+The flames surrounding it burn more intensely during combat. Could even say that pet battles get it stoked.,|cFFFFD200Quest:|r Combustible Vegetation|n|n|cFFFFD200Zone: |rThe Forbidden Reach,3448,200771,0,237009,6,16402,1,6,7,0
+Perks it's head up when hearing conversation as it likes to stay current on world affairs.,|cFFFFD200Quest:|r Flood Warning |n|n|cFFFFD200Zone: |rThe Forbidden Reach,3449,200772,0,237012,6,16402,1,6,7,0
+,,3450,201840,0,4533201,8,32,-1,6,7,0
+,,3451,201842,0,2103802,5,32,-1,6,7,0
+,,3452,201845,0,3946883,7,32,-1,6,7,0
+,,3453,201849,0,4622499,1,33824,-1,6,7,0
+,,3454,201858,0,4218759,4,33824,-1,6,7,0
+,,3455,201884,0,652138,1,32,-1,6,7,0
+,,3456,201888,0,3953210,3,32,-1,6,7,0
+,,3457,201889,0,2027946,6,32,-1,6,7,0
+,,3458,201900,0,3953209,6,32,-1,6,7,0
+,,3459,201901,0,3995637,2,32,-1,6,7,0
+,,3460,201904,0,3998673,2,32,-1,6,7,0
+,,3465,202440,0,252780,0,33824,-1,6,7,0
+,,3466,202452,0,4038107,9,33824,-1,6,7,0
+,,3472,202492,0,645203,0,32,-1,6,7,0
+,,3473,202493,0,1338949,4,32,-1,6,7,0
+,,3474,202494,0,656166,1,32,-1,6,7,0
+Who needs a toolbelt when a handy robot can follow you around! Just don't bump into it too hard.,|cFFFFD200Promotion:|r Recruit-A-Friend,3475,202548,403243,4679804,9,16466,7,6,7,0
+An old and dangerous discarded toy.,"|cFFFFD200Treasure:|r Tattered Gift Package|n|cFFFFD200NPC:|r Prototype Tinker-Tron|n|cFFFFD200Zone:|r Zskera Vaults, The Forbidden Reach|n",3476,202484,403072,2399252,9,2,0,6,7,0

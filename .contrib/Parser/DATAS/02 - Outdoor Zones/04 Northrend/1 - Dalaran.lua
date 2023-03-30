@@ -3823,6 +3823,12 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(VENDORS, {
+						n(29535, {	-- Alchemist Cinesra
+							["coord"] = { 63.2, 11.4, NORTHREND_THE_UNDERBELLY },
+							["sym"] = {
+								{"select", "itemID", 4565 },	-- Simple Dagger
+							},
+						}),
 						n(30885, {	-- Blazik Fireclaw <Hateful Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+] / Blazik Fireclaw <Water Vendor> [WRATH]
 							["coord"] = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },
 							-- #if AFTER LEGION
@@ -5917,7 +5923,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 3.3.3.11573" },
 							}),
 							i(192099, {  -- Earpieces of Tranquil Focus (TOY!)
-								["timeline"] = { ADDED_SL_S4 },
+								["timeline"] = { ADDED_9_2_5 },
 							}),
 							i(104324, {	-- Foot Ball (TOY!)
 								["timeline"] = { "added 5.4.0.17227" },
@@ -6518,6 +6524,18 @@ root(ROOTS.Zones, {
 							i(44642),	-- Dalaran Axe
 							i(44640),	-- Dalaran Great Axe
 							i(44654),	-- Dalaran Spear
+						},
+					}),
+					n(32253, {	-- Kyunghee 
+						["coord"] = { 71.6, 31.8, NORTHREND_DALARAN },
+						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{"select", "itemID", 2523 },    -- Bullova
+							{"select", "itemID", 2531 },	-- Great Axe
+						},
+						["groups"] = {
+							i(2522),	-- Crescent Axe
+							i(2530),	-- Francisca
 						},
 					}),
 					n(29511, {	-- Lalla Brightweave <Spellfire Tailoring Specialist>

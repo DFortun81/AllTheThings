@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(QUESTS, {
 				-- RENOWN 1 --
@@ -153,6 +153,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185561 },	-- Kaestrasz
 				["coord"] = { 46.8, 78.8, VALDRAKKEN },
 				["g"] = {
+					i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
+						["timeline"] = { ADDED_10_0_7 },
+					}),
 					i(196972),	-- Cliffside Wylderdrake: Plated Brow (DM!)
 					i(197003),	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
 					i(196977),	-- Cliffside Wylderdrake: Split Head Horns (DM!)
@@ -356,9 +359,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 185561 },	-- Kaestrasz
 				["coord"] = { 46.8, 78.8, VALDRAKKEN },
 				["g"] = {
+					i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (DM!)
+						["timeline"] = { ADDED_10_0_7 },
+					}),
 					i(196998),	-- Cliffside Wylderdrake: Hook Horns (DM!)
 					i(197009),	-- Cliffside Wylderdrake: Scaled Pattern (DM!)
 					i(197020),	-- Cliffside Wylderdrake: Spear Tail (DM!)
+					i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (DM!)
+						["timeline"] = { ADDED_10_0_7 },
+					}),
 				},
 			}),
 			q(72283, {	-- Renown Supplies
@@ -887,14 +896,20 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
 				["repeatable"] = true,
 				["g"] = {
+					-- #if BEFORE 10.0.7
 					i(199475),	-- Overflowing Valdrakken Accord Supply Pack
+					-- #else
+					i(204381, {	-- Brimming Valdrakken Accord Supply Pack
+						["timeline"] = { ADDED_10_0_7 },
+					}),
+					-- #endif
 				},
 			}),
 		}),
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(VALDRAKKEN_ACCORD, {
 		q(72403),	-- triggered when reaching renown 12 with Valdrakken Accord
 		q(72404),	-- triggered when reaching renown 19 with Valdrakken Accord

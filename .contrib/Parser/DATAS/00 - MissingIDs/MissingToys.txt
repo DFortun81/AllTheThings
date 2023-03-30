@@ -1,26 +1,19 @@
-10.0.7.47910
-i(202253),	-- Primal Stave of Claw and Fur
-i(202283),	-- Reading Glasses
-i(202360),	-- Dented Can
-i(203734),	-- Snow Blanket
-i(203757),	-- Brazier of Madness
-i(204220),	-- Hraxian's Unbreakable Will
-i(204256),	-- Holoviewer: The Scarlet Queen
-i(204257),	-- Holoviewer: The Lady of Dreams
-i(204262),	-- Holoviewer: The Timeless One
-10.0.7.47983
-i(203852),	-- Spore-Bound Essence \\ Vial of Spore-Bound Essence
-10.0.7.48076
-i(201930),	-- H.E.L.P.
-i(204675),	-- A Drake's Big Basket of Eggs
-10.0.7.48220
-i(204687),	-- Obsidian Battle Horn \\ Lost Battle Horn
 10.1.0.48480
 i(204389),	-- Stone Breaker
 i(204818),	-- Quackomancy Cannon
 i(205045),	-- B.B.F. Fist
 10.1.0.48537
-i(205255),	-- Niffen Diggin' Mits
+i(205255),	-- Niffen Diggin' Mitts \\ Niffen Diggin' Mits
+10.1.0.48661
+i(205027),	-- Explorer's Banner \\ Explorer's Banner of Comradery
+i(205034),	-- Enormous Ball of Yarn \\ Enourmous Ball of Yarn
+i(205418),	-- Blazing Shadowflame Cinder
+i(205419),	-- Jrumm's Drum
+i(205463),	-- Skornace's Molten Pocket
+10.1.0.48776
+i(205688),	-- Glutinous Glitterscale Glob
+i(205796),	-- Molten Lava Pack
+i(205904),	-- Vibrant Clacking Claw
 
 
 
@@ -32,4 +25,14 @@ i(204389),	-- Stone Breaker
 i(204818),	-- Quackomancy Cannon
 i(205045),	-- B.B.F. Fist
 10.1.0.48537
-i(205255),	-- Niffen Diggin' Mits
+i(205255),	-- Niffen Diggin' Mitts \\ Niffen Diggin' Mits
+10.1.0.48661
+i(205027),	-- Explorer's Banner \\ Explorer's Banner of Comradery
+i(205034),	-- Enormous Ball of Yarn \\ Enourmous Ball of Yarn
+i(205418),	-- Blazing Shadowflame Cinder
+i(205419),	-- Jrumm's Drum
+i(205463),	-- Skornace's Molten Pocket
+10.1.0.48776
+i(205688),	-- Glutinous Glitterscale Glob
+i(205796),	-- Molten Lava Pack
+i(205904),	-- Vibrant Clacking Claw

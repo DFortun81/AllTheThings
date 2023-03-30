@@ -4,7 +4,7 @@
 local PRIMEVAL_ESSENCE = 199211;
 
 root(ROOTS.WorldEvents, n(-520,	-- Expansion Prelaunch Events
-	bubbleDown({ ["timeline"] = { CREATED_DF_PRE, ADDED_DF_PRE2, REMOVED_DF_REL } }, {
+	bubbleDown({ ["timeline"] = { CREATED_10_0_0, ADDED_10_0_2, REMOVED_10_0_2_LAUNCH } }, {
 	tier(DF_TIER, {
 		n(ACHIEVEMENTS, {
 			ach(16431, {	-- Against the Elements
@@ -312,7 +312,7 @@ root(ROOTS.WorldEvents, n(-520,	-- Expansion Prelaunch Events
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, n(-520, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {	-- Expansion Prelaunch Events
+root(ROOTS.HiddenQuestTriggers, n(-520, bubbleDown({ ["timeline"] = TIMELINE_10_0_2 }, {	-- Expansion Prelaunch Events
 	tier(DF_TIER, {
 		q(74363),	-- Cloudburst Regalia transmog set
 		q(74364),	-- Dust Devil Armor transmog set

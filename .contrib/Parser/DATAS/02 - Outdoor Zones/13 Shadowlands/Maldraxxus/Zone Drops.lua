@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(MALDRAXXUS, {
 		n(ZONE_DROPS, {
 			filter(REAGENTS, {
@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } },
 				["_drop"] = { "spellID" },
 			}),
 			i(186727, {	-- Seal Breaker Key
-				["timeline"] = {"added 9.1.0"}
+				["timeline"] = { ADDED_9_1_0 },
 			}),
 		}),
 	}),

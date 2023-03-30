@@ -257,7 +257,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 36.7, 72.6, ZULDRAK },
 						["provider"] = { "o", 190535 },	-- Zim'Abwa
 						["repeatable"] = true,
-						["sourceQuest"] = 125565,	-- The Blessing of Zim'Abwa
+						["sourceQuest"] = 12565,	-- The Blessing of Zim'Abwa
 					}),
 					q(12656, {	-- Blessing of Zim'Rhuk
 						["coord"] = { 59.2, 44.7, ZULDRAK },
@@ -566,7 +566,7 @@ root(ROOTS.Zones, {
 					q(12508, {	-- Mopping Up
 						["coord"] = { 40.3, 48.2, ZULDRAK },
 						["qg"] = 28099,	-- Corporal Maga
-						["sourceQuest"] = 125055,	-- New Orders for Sergeant Stackhammer
+						["sourceQuest"] = 12505,	-- New Orders for Sergeant Stackhammer
 					}),
 					q(12514, {	-- Mushroom Mixer
 						["coord"] = { 40.5, 65.6, ZULDRAK },

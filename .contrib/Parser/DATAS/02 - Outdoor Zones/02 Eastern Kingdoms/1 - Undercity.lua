@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = {
 						"added 6.1.0.19480",
-						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -318,7 +318,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = {
 						"added 6.1.0.19480",
-						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -752,7 +752,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = {
 						"added 6.1.0.19480",
-						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1088,7 +1088,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = {
 						"added 6.1.0.19480",
-						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+						REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1190,7 +1190,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1841, {	-- Velora Nitely and the Brutal Legguards
 					["qg"] = 5878,	-- Thun'grim Firegaze
-					["sourceQuest"] = 18382,	-- Brutal Armor
+					["sourceQuest"] = 1838,	-- Brutal Armor
 					["coord"] = { 257.2, 30.2, THE_BARRENS },
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARRIOR },
@@ -1228,6 +1228,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4604, {	-- Abigail Sawyer <Bow Merchant>
 					["coord"] = { 54.8, 38.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+					},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
 							["isLimited"] = true,
@@ -1250,6 +1254,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(13477, {	-- Recipe: Superior Mana Potion
 							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainers
 						}),
+					},
+				}),
+				n(4602, {	-- Benijah Fenner
+					["coord"] = { 58.6, 32.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 925 },    -- Flail
+						{"select", "itemID", 1197 },    -- Giant Mace
+						{"select", "itemID", 2030 },    -- Gnarled Staff
+						{"select", "itemID", 2028 },    -- Hammer
+						{"select", "itemID", 928 },    -- Long Staff
+						{"select", "itemID", 852 },    -- Mace
+						{"select", "itemID", 924 },    -- Maul
+						{"select", "itemID", 854 },    -- Quarter Staff
+						{"select", "itemID", 2026 },    -- Rock Hammer
+					},
+					["groups"] = {
+						i(15808),	-- Fine Light Crossbow
+						i(15809),	-- Heavy Crossbow
+						i(15807),	-- Light Crossbow
 					},
 				}),
 				n(50304, {	-- Captain Donald Adams <Undercity Quartermaster>
@@ -1277,6 +1301,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(45583, {	-- Undercity Tabard
 							["timeline"] = { "added 3.1.0.9626" },
 						}),
+					},
+				}),
+				n(4569, {	-- Charles Seaton <Blade Merchant>
+					["coord"] = { 77.0, 50.0, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						-- added all
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 922 },		-- Dacian Falx
+						{"select", "itemID", 2024 },	-- Espadon
+						{"select", "itemID", 2207 },	-- Jambiya
+						{"select", "itemID", 2209 },	-- Kris
+						{"select", "itemID", 923 },		-- Longsword
+						{"select", "itemID", 2208 },	-- Poniad
+						{"select", "itemID", 2027 },	-- Scimitar
 					},
 				}),
 				n(4561, {	-- Daniel Bartlett <Trade Supplies> [TBC+] / Daniel Bartlett <General Trade Supplier>
@@ -1380,50 +1420,50 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(187997, {	-- Eternal Heirloom Armor Casing
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(187998, {	-- Eternal Heirloom Scabbard
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(204336, {	-- Awakened Heirloom Armor Casing
-								["timeline"] = { ADDED_DF_0_7 },
+								["timeline"] = { ADDED_10_0_7 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(204337, {	-- Awakened Heirloom Scabbard
-								["timeline"] = { ADDED_DF_0_7 },
+								["timeline"] = { ADDED_10_0_7 },
 								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 						}),
 						filter(TOYS, {
 							gold(10000, i(187896, {	-- Scouting Map: A Stormstout's Guide to Pandaria (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187897, {	-- Scouting Map: Cataclysm's Consequences (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187869, {	-- Scouting Map: Into the Shadowlands (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187895, {	-- Scouting Map: The Dangers of Draenor (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(150745, {	-- Scouting Map: The Eastern Kingdoms Campaign (TOY!)
 								["timeline"] = { "added 7.2.5.23910" },
 								["races"] = HORDE_ONLY,
 							})),
 							gold(10000, i(187899, {	-- Scouting Map: The Many Curiosities of Outland (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187900, {	-- Scouting Map: The Wonders of Kul Tiras and Zandalar (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187898, {	-- Scouting Map: True Cost of the Northrend Campaign (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(187875, {	-- Scouting Map: United Fronts of the Broken Isles (TOY!)
-								["timeline"] = { "added 9.1.5.40871" },
+								["timeline"] = { ADDED_9_1_5 },
 							})),
 							gold(10000, i(150744, {	-- Scouting Map: Walking Kalimdor with the Earthmother (TOY!)
 								["timeline"] = { "added 7.2.5.23910" },
@@ -1457,6 +1497,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(4585, {	-- Ezekiel  
+					["coord"] = { 75.6, 51.6, UNDERCITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 4565 },	-- Simple Dagger
+					},
+				}),
 				n(4775, {	-- Felicia Doan <Trade Supplies>
 					["coord"] = { 64.1, 50.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -1465,6 +1512,61 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 2.0.1.6180" },
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(4601, {	-- Francis Eliot
+					["coord"] = { 58.6, 32.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 926 },    -- Battle Axe
+						{"select", "itemID", 2025 },    -- Bearded Axe
+						{"select", "itemID", 2029 },    -- Cleaver
+						{"select", "itemID", 927 },    -- Double Axe
+						{"select", "itemID", 853 },    -- Hatchet
+						{"select", "itemID", 1196 },    -- Tabar
+					},
+					["groups"] = {
+						i(15811),	-- Heavy Spear
+						i(15810),	-- Short Spear
+					},
+				}),
+				n(4600, {	-- Geoffrey Hartwell
+					["coord"] = { 58.4, 32.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2520 },	-- Broadsword
+						{"select", "itemID", 2523 },	-- Bullova
+						{"select", "itemID", 2528 },	-- Falchion
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2531 },	-- Great axe
+						{"select", "itemID", 2526 },	-- Main Gauche
+						{"select", "itemID", 2534 },	-- Rondel
+						{"select", "itemID", 2525 },	-- War Hammer
+						{"select", "itemID", 2533 },	-- War Maul
+						{"select", "itemID", 2529 },	-- Zweihander
+					},
+				}),
+				n(4556, {	-- Gordon Wendham
+					["coord"] = { 61.4, 41.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 1194 },	-- Bastard Sword
+						{"select", "itemID", 2479 },	-- Broad Axe
+						{"select", "itemID", 2130 },	-- Club
+						{"select", "itemID", 2492 },	-- Cudgel
+						{"select", "itemID", 2139 },	-- Dirk
+						{"select", "itemID", 2488 },	-- Gladius
+						{"select", "itemID", 2134 },	-- Hand Axe
+						{"select", "itemID", 2491 },	-- Large Axe
+						{"select", "itemID", 2480 },	-- Large Club
+						{"select", "itemID", 2132 },	-- Short Staff
+						{"select", "itemID", 2131 },	-- Shortsword
+						{"select", "itemID", 2494 },	-- Stiletto
+						{"select", "itemID", 2490 },	-- Tomahawk
+						{"select", "itemID", 2489 },	-- Two-Handed Sword
+						{"select", "itemID", 2495 },	-- Walking Stick
+						{"select", "itemID", 2493 },	-- Wooden Mallet
 					},
 				}),
 				n(8403, {	-- Jeremiah Payson <Cockroach Vendor>
@@ -1506,6 +1608,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6369),	-- Recipe: Rockscale Cod
 					},
 				}),
+				n(4557, {	-- Louis Warren
+					["coord"] = { 62.0, 41.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+					-- added all
+						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 851 },	-- cutlass
+						{"select", "itemID", 2024 },	-- espadon
+						{"select", "itemID", 1197 },	-- giant mace
+						{"select", "itemID", 2030 },	-- gnarled staff
+						{"select", "itemID", 2028 },	-- hammer
+						{"select", "itemID", 853 },	-- hatched
+						{"select", "itemID", 2207 },	-- jambiya
+						{"select", "itemID", 852 },	-- mace
+						{"select", "itemID", 2208 },	-- Poniard
+						{"select", "itemID", 854 },	-- quarter staff
+						{"select", "itemID", 2026 },	-- rock hammer
+						{"select", "itemID", 2027 },	-- scimitar
+						{"select", "itemID", 1196 },	-- tabar
+					},
+				}),
 				n(5190, {	-- Merill Pleasance <Tabard Vendor>
 					-- #if AFTER 8.0.1.26297
 					["crs"] = { 130966 },	-- Merill Pleasance <Tabard Vendor>
@@ -1534,6 +1659,84 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(10321, {	-- Pattern: Tuxedo Shirt
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(5819, {	-- Mirelle Tremayne
+					["coord"] = { 61.6, 28.4, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2419 },    -- Augmented Chain Belt
+						{"select", "itemID", 2420 },    -- Augmented Chain Boots
+						{"select", "itemID", 2421 },    -- Augmented Chain Bracers
+						{"select", "itemID", 2422 },    -- Augmented Chain Gloves
+						{"select", "itemID", 3891 },    -- Augmented Chain Helm
+						{"select", "itemID", 2418 },    -- Augmented Chain Leggings
+						{"select", "itemID", 2417 },    -- Augmented Chain Vest
+						{"select", "itemID", 2424 },    -- Brigandine Belt
+						{"select", "itemID", 2426 },    -- Brigandine Boots
+						{"select", "itemID", 2427 },    -- Brigandine Bracers
+						{"select", "itemID", 2428 },    -- Brigandine Gloves
+						{"select", "itemID", 3894 },    -- Brigandine Helm
+						{"select", "itemID", 2425 },    -- Brigandine Leggings
+						{"select", "itemID", 2423 },    -- Brigandine Vest
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 2448 },    -- Heavy Pavise
+						{"select", "itemID", 2446 },    -- Kite Shield
+						{"select", "itemID", 2392 },    -- Light Mail Armor
+						{"select", "itemID", 2393 },    -- Light Mail Belt
+						{"select", "itemID", 2395 },    -- Light Mail Boots
+						{"select", "itemID", 2396 },    -- Light Mail Bracers
+						{"select", "itemID", 2397 },    -- Light Mail Gloves
+						{"select", "itemID", 2394 },    -- Light Mail Leggings
+						{"select", "itemID", 17189 },    -- Metal Buckler
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+						{"select", "itemID", 8094 },    -- Platemail Armor
+						{"select", "itemID", 8088 },    -- Platemail Belt
+						{"select", "itemID", 8089 },    -- Platemail Boots
+						{"select", "itemID", 8090 },    -- Platemail Bracers
+						{"select", "itemID", 8091 },    -- Platemail Gloves
+						{"select", "itemID", 8092 },    -- Platemail Helm
+						{"select", "itemID", 8093 },    -- Platemail Leggings
+						{"select", "itemID", 2148 },    -- Polished Scale Belt
+						{"select", "itemID", 2149 },    -- Polished Scale Boots
+						{"select", "itemID", 2150 },    -- Polished Scale Bracers
+						{"select", "itemID", 2151 },    -- Polished Scale Gloves
+						{"select", "itemID", 2152 },    -- Polished Scale Leggings
+						{"select", "itemID", 2153 },    -- Polished Scale Vest
+						{"select", "itemID", 17192 },    -- Reinforced Targe
+						{"select", "itemID", 1853 },    -- Scalemail Belt
+						{"select", "itemID", 287 },    -- Scalemail Boots
+						{"select", "itemID", 1852 },    -- Scalemail Bracers
+						{"select", "itemID", 718 },    -- Scalemail Gloves
+						{"select", "itemID", 286 },    -- Scalemail Pants
+					},
+				}),
+				n(4592, {	-- Nathaniel Steenwick
+					["coord"] = { 77.2, 50.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
+						{"select", "itemID", 2506 },    -- Hornwood Recurve Bow
+						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
+						{"select", "itemID", 2505 },    -- Polished Shortbow
+						{"select", "itemID", 3026 },    -- Reinforced Bow
+						{"select", "itemID", 2504 },    -- Worn Shortbow
+					},
+				}),
+				n(4603, {	-- Nicholas Atwood
+					["coord"] = { 62.2, 27.0, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
+						{"select", "itemID", 3023 },    -- Large Bore Blunderbuss
+						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
+						{"select", "itemID", 2510 },    -- Solid Blunderbuss
 					},
 				}),
 				n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
@@ -1569,6 +1772,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,
 				}),
+				n(4570, {	-- Sydney Upton
+					["coord"] = { 69.8, 27.4, UNDERCITY },
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 2535 },    -- War Staff
+					},
+				}),
+				n(4559, {	-- Timothy Weldon  
+					["coord"] = { 63.6, 39.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 17187 },    -- Banded Buckler
+						{"select", "itemID", 17183 },    -- Dented Buckler
+						{"select", "itemID", 1200 },    -- Large Wooden Shield
+						{"select", "itemID", 2398 },    -- Light Chain Armor
+						{"select", "itemID", 2399 },    -- Light Chain Belt
+						{"select", "itemID", 2401 },    -- Light Chain Boots
+						{"select", "itemID", 2402 },    -- Light Chain Bracers
+						{"select", "itemID", 2403 },    -- Light Chain Gloves
+						{"select", "itemID", 2400 },    -- Light Chain Leggings
+						{"select", "itemID", 17185 },    -- Round Buckler
+						{"select", "itemID", 1202 },    -- Wall Shield
+						{"select", "itemID", 2376 },    -- Worn Heater Shield
+					},
+					["groups"] = {
+						i(2387),    -- Rusted Chain Belt
+						i(2389),    -- Rusted Chain Boots
+						i(2390),    -- Rusted Chain Bracers
+						i(2391),    -- Rusted Chain Gloves
+						i(2388),    -- Rusted Chain Leggings
+						i(2386),    -- Rusted Chain Vest
+					},
+				}),
 				n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
 					["sym"] = { {"sub", "common_recipes_vendor", 3346 } }, -- Kithas <Enchanting Supplies>
 					["coord"] = { 62.0, 60.8, UNDERCITY },
@@ -1583,6 +1819,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+					},
+				}),
+				n(4560, {	-- Walter Ellingson
+					["coord"] = { 62.8, 39.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 17187 },    -- Banded Buckler
+						{"select", "itemID", 847 },    -- Chainmail Armor
+						{"select", "itemID", 1845 },    -- Chainmail Belt
+						{"select", "itemID", 849 },    -- Chainmail Boots
+						{"select", "itemID", 1846 },    -- Chainmail Bracers
+						{"select", "itemID", 850 },    -- Chainmail Gloves
+						{"select", "itemID", 848 },    -- Chainmail Pants
+						{"select", "itemID", 1202 },    -- Wall Shield
+					},
+				}),
+				n(5754, {	-- Zane Bradford
+					["coord"] = { 70.0, 27.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 5239 },    -- Blackbone Wand
+						{"select", "itemID", 5210 },    -- Burning Wand
+						{"select", "itemID", 5236 },    -- Combustible Wand
+						{"select", "itemID", 5211 },    -- Dusk Wand
+						{"select", "itemID", 5209 },    -- Gloom Wand
+						{"select", "itemID", 5347 },    -- Pestilent Wand
+						{"select", "itemID", 5238 },    -- Pitchwood Wand
+						{"select", "itemID", 5208 },    -- Smoldering Wand
 					},
 				}),
 			}),

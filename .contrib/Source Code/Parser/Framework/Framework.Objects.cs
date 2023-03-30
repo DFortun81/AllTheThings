@@ -80,12 +80,12 @@ namespace ATT
             /// <summary>
             /// Allows capturing various objects which should be merged-into the sub-content of another object
             /// </summary>
-            public static IDictionary<string, Dictionary<object, List<Dictionary<string, object>>>> PostProcessMergeIntos { get; } = new Dictionary<string, Dictionary<object, List<Dictionary<string, object>>>>();
+            public static IDictionary<string, Dictionary<decimal, List<Dictionary<string, object>>>> PostProcessMergeIntos { get; } = new Dictionary<string, Dictionary<decimal, List<Dictionary<string, object>>>>();
 
             /// <summary>
             /// Used to track what actual key/keyValues were used to merge data
             /// </summary>
-            private static IDictionary<string, HashSet<object>> PostProcessMergedKeyValues { get; } = new Dictionary<string, HashSet<object>>();
+            private static IDictionary<string, HashSet<decimal>> PostProcessMergedKeyValues { get; } = new Dictionary<string, HashSet<decimal>>();
 
             /// <summary>
             /// All of the SourceID's harvested for Legion Artifacts
@@ -515,14 +515,15 @@ namespace ATT
             /// <param name="key"></param>
             /// <param name="keyValue"></param>
             /// <param name="data"></param>
-            internal static void PostProcessMerge(string key, object keyValue, Dictionary<string, object> data)
+            internal static void PostProcessMerge(string key, decimal keyValue, Dictionary<string, object> data)
             {
-                if (!PostProcessMergeIntos.TryGetValue(key, out Dictionary<object, List<Dictionary<string, object>>> typeObjects))
-                    PostProcessMergeIntos[key] = typeObjects = new Dictionary<object, List<Dictionary<string, object>>>();
+                if (!PostProcessMergeIntos.TryGetValue(key, out Dictionary<decimal, List<Dictionary<string, object>>> typeObjects))
+                    PostProcessMergeIntos[key] = typeObjects = new Dictionary<decimal, List<Dictionary<string, object>>>();
 
                 if (!typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
                     typeObjects[keyValue] = mergeObjects = new List<Dictionary<string, object>>();
 
+                //LogDebug($"Post Process Merge Added: {key}:{keyValue} <= {MiniJSON.Json.Serialize(data)}");
                 mergeObjects.Add(data);
             }
 
@@ -536,37 +537,43 @@ namespace ATT
                 // questID : { 123, [ obj1, obj2, obj3 ] }
                 // questID:123
                 // get the appropriate merge objects for this data based on the matching keys
-                foreach (string key in PostProcessMergeIntos.Keys)
+                foreach (var mergeKvp in PostProcessMergeIntos)
                 {
+                    string key = mergeKvp.Key;
                     // merge into anything that's not an Achievement, or into Achievements which are not within the Achievements category
-                    if (key != "achID" || !ProcessingAchievementCategory)
+                    if (!ProcessingAchievementCategory || key != "achID")
                     {
                         // does this data contain the key?
-                        if (data.TryGetValue(key, out object keyValue))
+                        if (data.TryGetValue(key, out decimal keyValue))
                         {
+                            var typeObjects = mergeKvp.Value;
+                            //LogDebug($"Post Process MergeInto Matched: {key}:{keyValue}");
                             // get the container for objects of this key
-                            if (PostProcessMergeIntos.TryGetValue(key, out Dictionary<object, List<Dictionary<string, object>>> typeObjects) && typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
+                            if (typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
                             {
                                 // track the data which is actually being merged into another group
                                 TrackPostProcessMergeKey(key, keyValue);
 
                                 // merge the objects into the data object
                                 foreach (Dictionary<string, object> mergeObject in mergeObjects)
+                                {
                                     // copy the actual object when merging under another Source, since it may merge into multiple Sources
                                     Merge(data, "g", mergeObject);
+                                }
                             }
                         }
                     }
                 }
             }
 
-            private static void TrackPostProcessMergeKey(string key, object value)
+            private static void TrackPostProcessMergeKey(string key, decimal value)
             {
-                if (!PostProcessMergedKeyValues.TryGetValue(key, out HashSet<object> keyValues))
+                if (!PostProcessMergedKeyValues.TryGetValue(key, out HashSet<decimal> keyValues))
                 {
-                    PostProcessMergedKeyValues[key] = keyValues = new HashSet<object>();
+                    PostProcessMergedKeyValues[key] = keyValues = new HashSet<decimal>();
                 }
 
+                //LogDebug($"Post Process MergeInto Performed: {key}:{value}");
                 keyValues.Add(value);
             }
 
@@ -574,7 +581,7 @@ namespace ATT
             {
                 foreach (var keyGroup in PostProcessMergedKeyValues)
                 {
-                    if (PostProcessMergeIntos.TryGetValue(keyGroup.Key, out Dictionary<object, List<Dictionary<string, object>>> keyValueDatas))
+                    if (PostProcessMergeIntos.TryGetValue(keyGroup.Key, out Dictionary<decimal, List<Dictionary<string, object>>> keyValueDatas))
                     {
                         foreach (var keyGroupValue in keyGroup.Value)
                         {
@@ -588,7 +595,7 @@ namespace ATT
                 {
                     foreach (var keyValueMergeSet in keyGroup.Value)
                     {
-                        LogDebug($"Failed to merge data which requires a Source: [{keyGroup.Key}]:[{keyValueMergeSet.Key}]");
+                        LogDebug($"WARN: Failed to merge data which requires a Source: [{keyGroup.Key}]:[{keyValueMergeSet.Key}]");
                     }
                 }
             }
@@ -1229,6 +1236,30 @@ end
                 string content = locale.ToString();
                 if (!File.Exists(filename) || File.ReadAllText(filename) != content) File.WriteAllText(filename, content);
             }
+
+            public static void ExportAutoItemSources(string directory)
+            {
+                var sourcesDir = Path.Combine(directory, "DATAS", "00 - Item Database", "Source IDs");
+                var filename = Path.Combine(sourcesDir, "__auto-sources.lua");
+
+                foreach (string sourceFile in Directory.EnumerateFiles(sourcesDir, "*.lua"))
+                {
+                    if (sourceFile != filename)
+                    {
+                        File.Delete(sourceFile);
+                        //File.Move(sourceFile, sourceFile + ".old");
+                    }
+                }
+
+                StringBuilder data = new StringBuilder(10000);
+                data.AppendLine("--   WARNING: This file is dynamically generated   --");
+                data.AppendLine("root(\"Items.SOURCES\",");
+                data.AppendLine(ATT.Export.ExportCompressedLua(Items.AllItemSourceIDs).ToString());
+                data.AppendLine(");");
+
+                string content = data.ToString();
+                if (!File.Exists(filename) || File.ReadAllText(filename) != content) File.WriteAllText(filename, content);
+            }
             #endregion
 
             #region Export DB
@@ -1621,6 +1652,9 @@ end
             /// <param name="value">The value of the merged field.</param>
             public static void Merge(Dictionary<string, object> item, string field, object value)
             {
+                if (value is string v && v == IgnoredValue)
+                    return;
+
                 // Convert the name of the field to something more standardized.
                 switch (field = ConvertFieldName(field))
                 {
@@ -1688,7 +1722,7 @@ end
                     // String/Integer Data Type Fields
                     case "icon":
                         {
-                            if (value is String)
+                            if (value is string)
                             {
                                 item[field] = ATT.Export.ToString(value).Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\", "\\\\");
                             }
@@ -1853,10 +1887,6 @@ end
                         break;
 
                     // Sub-Dictionary Data Type Fields (stored as Dictionary<int, int> for usability reasons)
-                    case "modIDs":
-                    case "bonusIDs":
-                        MergeSpecificItemDataDictionary(item, field, value);
-                        break;
                     case "aqd":
                     case "hqd":
                         {

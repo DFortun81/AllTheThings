@@ -2011,6 +2011,9 @@ root(ROOTS.Zones, {
 					n(19351, {	-- Daggle Ironshaper
 						["coord"] = { 36.8, 54.4, SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
+						["sym"] = {
+							{"select", "itemID", 30758 },	-- Aldor Guardian Rifle
+						},
 						["groups"] = {
 							i(23807, {	-- Schematic: Adamantite Scope
 								["isLimited"] = true,
@@ -2054,6 +2057,13 @@ root(ROOTS.Zones, {
 					n(19526, {	-- Dunaman <Weapons Vendor>
 						["coord"] = { 63.2, 30.6, SHADOWMOON_VALLEY },
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["sym"] = {
+							{"select", "itemID", 30754 },    -- Ancient Bone Mace
+							{"select", "itemID", 30749 },    -- Draenic Sparring Blade
+							{"select", "itemID", 30750 },    -- Draenic Warblade
+							{"select", "itemID", 30752 },    -- Maghari Battleaxe
+							{"select", "itemID", 30751 },    -- Maghari Light Axe
+						},
 						["groups"] = {
 							i(30755, {	-- Mag'hari Fighting Claw
 								["isLimited"] = true,
@@ -2066,6 +2076,13 @@ root(ROOTS.Zones, {
 					n(19333, {	-- Grokom Deatheye <Weaponsmith>
 						["coord"] = { 29.8, 31.2, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{"select", "itemID", 30754 },    -- Ancient Bone Mace
+							{"select", "itemID", 30749 },    -- Draenic Sparring Blade
+							{"select", "itemID", 30750 },    -- Draenic Warblade
+							{"select", "itemID", 30752 },    -- Maghari Battleaxe
+							{"select", "itemID", 30751 },    -- Maghari Light Axe
+						},
 						["groups"] = {
 							i(30755, {	-- Mag'hari Fighting Claw
 								["isLimited"] = true,
@@ -2073,6 +2090,15 @@ root(ROOTS.Zones, {
 							i(30753, {	-- Warphorn Spear
 								["isLimited"] = true,
 							}),
+						},
+					}),
+					n(19339, {	-- Korthul 
+						["coord"] = { 30.0, 31.0, SHADOWMOON_VALLEY },
+						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{"select", "itemID", 30758 },	-- Aldor Guardian Rifle
+							{"select", "itemID", 30757 },	-- Draenic Light Crossbow
+							{"select", "itemID", 30759 },	-- Mag'hari Light Recurve
 						},
 					}),
 					n(19342, {	-- Krek Cragcrush <Blacksmithing Supplies>

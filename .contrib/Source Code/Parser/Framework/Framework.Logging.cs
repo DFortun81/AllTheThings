@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
 namespace ATT
 {
@@ -9,13 +8,13 @@ namespace ATT
     public static partial class Framework
     {
         /// <summary>
-        /// Outputs the message to the Trace only if DebugMode is enabled
+        /// Outputs the message to the Trace only if DebugMode is enabled, including the serialized data if provided
         /// </summary>
         /// <param name="message"></param>
-        public static void LogDebug(string message)
+        public static void LogDebug(string message, object data = null)
         {
             if (DebugMode)
-                Trace.WriteLine(message);
+                Trace.WriteLine(message + (data != null ? (" " + ToJSON(data)) : string.Empty));
         }
 
         /// <summary>
@@ -32,20 +31,20 @@ namespace ATT
         /// Outputs the message to the Trace
         /// </summary>
         /// <param name="message"></param>
-        public static void Log(string message)
+        public static void Log(string message, object data = null)
         {
             if (!DebugMode && !string.IsNullOrEmpty(CurrentFileName))
                 Trace.WriteLine("FILE: " + CurrentFileName);
-            Trace.WriteLine(message);
+            Trace.WriteLine(message + (data != null ? (" " + ToJSON(data)) : string.Empty));
         }
 
         /// <summary>
         /// Outputs the message to the Trace which requires User intervention
         /// </summary>
         /// <param name="message"></param>
-        public static void LogError(string message)
+        public static void LogError(string message, object data = null)
         {
-            Log("ERROR: " + message);
+            Log("ERROR: " + message + (data != null ? (" " + ToJSON(data)) : string.Empty));
         }
     }
 }

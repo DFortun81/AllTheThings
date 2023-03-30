@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THALDRASZUS, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 16363, {	-- Just Don't Ask Me to Spell It
@@ -252,7 +252,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 186931 },	-- Nozdormu
 					["coord"] = { 60.1, 82.4, THALDRASZUS },
 					["g"] = {
-						currency(2118),	-- Elemental Overflow
+					--	currency(2118),	-- Elemental Overflow
+					-- dont need to show 60x one time reward when rares drop 1k+ in 10.0.7
 					},
 				}),
 				q(66029, {	-- Temporal Tuning
@@ -269,7 +270,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 186953 },	-- Possible Future You
 					["coord"] = { 61.4, 50.2, THE_PRIMALIST_FUTURE },
 					["g"] = {
-						currency(2118),	-- Elemental Overflow
+					--	currency(2118),	-- Elemental Overflow
+					-- dont need to show 60x one time reward when rares drop 1k+ in 10.0.7
 						i(195185),	-- Annihilation Warder's Cloak
 					},
 				}),
@@ -278,7 +280,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 183860 },	-- Soridormi
 					["coord"] = { 61.1, 50.8, THE_PRIMALIST_FUTURE },
 					["g"] = {
-						currency(2118),	-- Elemental Overflow
+					--	currency(2118),	-- Elemental Overflow
+					-- dont need to show 60x one time reward when rares drop 1k+ in 10.0.7
 						i(192467),	-- Bandages
 					},
 				}),
@@ -1049,7 +1052,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(72114, {	-- Acrosoth
 					["provider"] = { "n", 193243 },	-- Acrosoth
 					["coord"] = { 39.0, 78.0, THALDRASZUS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69963, {	-- Ancient Protector
 					["provider"] = { "n", 193664 },	-- Ancient Protector
@@ -1074,22 +1077,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(69873, {	-- Henlare
 					["provider"] = { "n", 193229 },	-- Henlare
 					["coord"] = { 55.6, 77.4, THALDRASZUS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(74450, {	-- Morlash
 					["provider"] = { "n", 201549 },	-- Morlash
 					["coord"] = { 62.1, 60.1, THALDRASZUS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(72116, {	-- Liskron the Dazzling
 					["provider"] = { "n", 193273 },	-- Liskron the Dazzling
 					["coord"] = { 36.4, 72.8, THALDRASZUS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69967, {	-- Lookout Mordren
 					["provider"] = { "n", 193668 },	-- Lookout Mordren
 					["coord"] = { 36.8, 85.6, THALDRASZUS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69882, {	-- Lord Epochbrgl
 					["provider"] = { "n", 193241 },	-- Lord Epochbrgl
@@ -1103,12 +1106,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["provider"] = { "n", 201550 },	-- Overloading Defense Matrix
 					["coord"] = { 59.8, 61.6, THALDRASZUS },
 					["isDaily"] = true,
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(74448, {	-- Overseer Stonetongue
 					["provider"] = { "n", 201552 },	-- Overseer Stonetongue
 					["coord"] = { 59.0, 56.0, THALDRASZUS },
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				qNYI(69976, {	-- Phenran
 					["provider"] = { "n", 193688 },	-- Phenran
@@ -1121,7 +1124,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(70986, {	-- Private Shikzar
 					["provider"] = { "n", 193127 },	-- Private Shikzar
 					["coord"] = { 37.6, 84.7, THALDRASZUS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69880, {	-- Riverwalker Tamopo
 					["provider"] = { "n", 193240 },	-- Riverwalker Tamopo
@@ -1146,7 +1149,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				q(72121, {	-- The Great Shellkhan
 					["provider"] = { "n", 191305 },	-- The Great Shellkhan
 					["coord"] = { 38.4, 68.2, THALDRASZUS },
-					["isDaily"] = false,
+					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(70947, {	-- Treasure-Mad Trambladd
 					["provider"] = { "n", 193146 },	-- Treasure-Mad Trambladd

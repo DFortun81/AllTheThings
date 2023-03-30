@@ -885,3 +885,11 @@ Treasure: Overgrown Skeleton|n|cFFFFD200Zone: |rThe Zskera Vaults,1308,203852,0,
 |cFFFFD200Profession:|r Dragon Isles Engineering|n,1314,204818,0,3
 |cFFFFD200Profession:|r Dragon Isles Jewelcrafting|n,1315,205045,0,3
 Niffen Renown,1316,205255,4,-1
+|cFFFFD200Treasure:|r Blazing Shadowflame Chest|n|n|cFFFFD200Zone: |rZaralek Cavern,1317,205418,0,-1
+|cFFFFD200Drop:|r Tailoring,1318,205027,0,3
+|cFFFFD200Drop:|r Tailoring,1319,205034,0,3
+|cFFFFD200Drop:|r Jrumm|n|cFFFFD200Zone:|r Zaralek Cavern,1320,205419,0,0
+|cFFFFD200Drop:|r Skornace|n|cFFFFD200Zone:|r Zaralek Cavern,1321,205463,0,0
+|cFFFFD200World Quest: |rAll That Glitter,1322,205688,0,-1
+|cFFFFD200Drop: |rInvohq|n|cFFFFD200Zone: |rZaralek Cavern,1323,205796,0,0
+|cFFFFD200Achievement:|r Cavern Clawbbering|n|cFFFFD200Category:|r Dragonflight,1325,205904,0,-1

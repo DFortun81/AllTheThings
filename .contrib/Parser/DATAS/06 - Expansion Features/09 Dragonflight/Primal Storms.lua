@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 local ELEMENTAL_OVERFLOW = 2118;
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(PRIMAL_STORMS, {
 		["maps"] = { VALDRAKKEN },
 		["g"] = {
@@ -204,7 +204,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(74459, {	-- Graniteclaw
 					["qg"] = 201557,	-- Graniteclaw
-					["timeline"] = { ADDED_DF_0_5 },
+					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(69960, {	-- Gravlion
 					["qg"] = 193654,	-- Gravlion
@@ -239,7 +239,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(74462, {	-- Shiobhan Waterborn
 					["qg"] = 201559,	-- Shiobhan Waterborn
-					["timeline"] = { ADDED_DF_0_5 }
+					["timeline"] = { ADDED_10_0_5 }
 				}),
 				q(69969, {	-- Voraazka
 					["qg"] = 193674,	-- Voraazka
@@ -422,7 +422,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 				}),
 				n(201557,	-- Graniteclaw
-				bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["coord"] = { 58.3, 69.0, THE_AZURE_SPAN },
 					["questID"] = 74532,
 					["g"] = {
@@ -494,7 +494,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					--},
 				}),
 				n(201559,	-- Shiobhan Waterborn
-				bubbleDownSelf({ ["timeline"] = { ADDED_DF_0_5 } }, {
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["coord"] = { 59.9, 67.5, THE_AZURE_SPAN },
 					["questID"] = 74533,
 					["g"] = {

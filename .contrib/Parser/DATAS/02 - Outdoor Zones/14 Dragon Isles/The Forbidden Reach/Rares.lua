@@ -1,9 +1,49 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
-		n(RARES, {
+		n(RARES, sharedData({
+			["isDaily"] = true,
+		},{
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					200740,	-- Agni Blazehoof
+					200743,	-- Amephyst
+					200737,	-- Arcantrix
+					200681,	-- Bonesifter Marwak
+					200610,	-- Duzalgor <Guardian of the Noxious Brood>
+					200725,	-- Faunos <Lord of Fleece>
+					200739,	-- Fimbol
+					200537,	-- Gahz'raxes
+					200717,	-- Galakhad
+					200722,	-- Gareed
+					200721,	-- Grugoth the Hullcrusher <Scource of the Coast>
+					200579,	-- Ishyra
+					200738,	-- Kangalo
+					200885,	-- Lady Shaz'ra
+					203353,	-- Loot Specialist <Venture Co. Acquisitions>
+					200742,	-- Luttrok
+					201181,	-- Mad-Eye Carrey
+					200621,	-- Manathema
+					200956,	-- Ookbeard <Irontide "Captain">
+					200978,	-- Pyrachniss
+					200600,	-- Reisa the Drowned
+					200620,	-- Sir Pinchalot
+					200622,	-- Snarfang
+					200619,	-- Tectonus
+					200730,	-- Tidesmith Zarviss
+					200904,	-- Veltrax
+					200584,	-- Vraken The Hunter
+					200911,	-- Volcanakk
+					200960,	-- Warden Entrix
+					201013,	-- Wyrmslayer Angvardi
+				},
+				["isDaily"] = IGNORED_VALUE,
+				["g"] = {
+					i(192772),	-- Ancient Salamanther (MOUNT!)
+				},
+			}),
 			n(200740, {	-- Agni Blazehoof
 				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
 				-- ["questID"] = ,
@@ -12,11 +52,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				-- },
 			}),
 			n(200743, {	-- Amephyst
-				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				["coord"] = { 31.0, 60.0, THE_FORBIDDEN_REACH },
 				-- ["questID"] = ,
 				["cost"] = { { "i", 203413, 1 }, },	-- 1x Crystal Tuning Fork
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(204222),	-- Conductive Ametrine Shard
+					i(204219),	-- Design: Unstable Elementium (RECIPE!)
+				},
 			}),
 			n(200737, {	-- Arcantrix
 				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
@@ -28,8 +70,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			n(200681, {	-- Bonesifter Marwak
 				["coord"] = { 41.9, 57.1, THE_FORBIDDEN_REACH },
 				["questID"] = 73150,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(193374),	-- Ashenwing (PET!)
+				},
 			}),
 			n(200610, {	-- Duzalgor <Guardian of the Noxious Brood>
 				["description"] = "Inside The Support Creche.",
@@ -40,7 +83,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			}),
 			n(200725, {	-- Faunos <Lord of Fleece>
 				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
-				-- ["questID"] = ,
+				["questID"] = 73158,
 				["cost"] = { { "i", 203417, 1 }, },	-- 1x Razor-Sharp Animal Bone
 				-- ["g"] = {
 				-- },
@@ -94,8 +137,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			n(200885, {	-- Lady Shaz'ra
 				["coord"] = { 62.0, 54.0, THE_FORBIDDEN_REACH },
 				["questID"] = 73222,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(197628),	-- Windborne Velocidrake: Plated Neck (DM!)
+				},
 			}),
 			n(203353, {	-- Loot Specialist <Venture Co. Acquisitions>
 				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
@@ -104,11 +148,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				-- },
 			}),
 			n(200742, {	-- Luttrok
-				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				["coord"] = { 56.0, 51.6, THE_FORBIDDEN_REACH },
 				-- ["questID"] = ,
 				["cost"] = { { "i", 203409, 1 }, },	-- 1x Sparkling Spice Pouch
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(193235),	-- Luvvy (PET!)
+				},
 			}),
 			n(201181, {	-- Mad-Eye Carrey
 				["crs"] = {
@@ -130,15 +175,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 			n(200956, {	-- Ookbeard <Irontide "Captain">
 				["coord"] = { 26.6, 41.5, THE_FORBIDDEN_REACH },
 				["questID"] = 73366,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(197636),	-- Windborne Velocidrake: Shrieker Pattern (DM!)
+				},
 			}),
 			n(200978, {	-- Pyrachniss
 				["description"] = "Inside the War Creche.",
-				["coord"] = { 74.4, 48.7, 2102 },
+				["coord"] = { 67.3, 56.3, 2102 },
 				["questID"] = 73385,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(197590),	-- Windborne Velocidrake: Small Head Fin (DM!)
+				},
 			}),
 			n(200600, {	-- Reisa the Drowned
 				["description"] = "In a cave.",
@@ -172,41 +219,46 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
 				-- ["questID"] = ,
 				["cost"] = { { "i", 203408, 1 }, },	-- 1x Ancient Ceremonial Trident
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(204230),	-- Dense Seaforged Javelin
+				},
 			}),
 			n(200904, {	-- Veltrax
 				["coord"] = { 76.4, 64.6, THE_FORBIDDEN_REACH },
-				["questID"] = 74345,	-- Check if correct??
+				["questID"] = 73229,
 				-- ["g"] = {
 				-- },
 			}),
 			n(200584, {	-- Vraken The Hunter
 				["coord"] = { 59.9, 42.9, THE_FORBIDDEN_REACH },
 				["questID"] = 73111,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(193364),	-- Scruffles (PET!)
+				},
 			}),
 			n(200911, {	-- Volcanakk
 				["coord"] = { 53.6, 43.8, THE_FORBIDDEN_REACH },
 				["questID"] = 73225,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(197617),	-- Windborne Velocidrake: Heavy Scales (DM!)
+				},
 			}),
 			n(200960, {	-- Warden Entrix
 				["description"] = "Inside the War Creche.",
 				["coord"] = { 42.0, 83.8, 2102 },
 				["questID"] = 73367,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(191930),	-- Wakyn (PET!)
+				},
 			}),
 			n(201013, {	-- Wyrmslayer Angvardi
 				["crs"] = { 201310 },	-- Nidharr
 				["coord"] = { 63.6, 25.5, THE_FORBIDDEN_REACH },
 				["questID"] = 73409,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					i(197609),	-- Windborne Velocidrake: White Horns (DM!)
+				},
 			}),
-		}),
+		})),
 	}),
 })));

@@ -235,130 +235,129 @@ root(ROOTS.Holidays, applyholiday(MICRO_HOLIDAY, holiday(TRIAL_OF_STYLE, bubbleD
 			--
 			i(188237, {	-- Conjuror's Slippers
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 7 }, },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(188249, {	-- Freezing Footguards
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(188236, {	-- Patroller's Footwear
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 7 }, },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(188248, {	-- Searing Stompers
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(188243, {	-- Shadow-Stitched Stalkers
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 10 }, },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			i(188244, {	-- Virulent Gravetreaders
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 10 }, },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 
 			--
 			i(202308, {	-- Alley Skulker's Bandana
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(190686, {	-- Anetheron's Edge
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 50 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(202295, {	-- Anointed Crusader's Claymore
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 50 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(189870, {	-- Arcanofire Wrap
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(190697, {	-- Boots of a Broken World
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(190429, {	-- Clasp of Ursine Rage
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(202303, {	-- Crimson Beanie
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(202296, {	-- Deathmantle Ripper
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 50 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(202306, {	-- Dread Captain's Chapeau
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(190888, {	-- Embrace of the Great Dark Beyond
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(202301, {	-- Focalized Mana Accelerator
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 50 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(190858, {	-- Girdle of Chilled Embers
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(202304, {	-- Green Beanie
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(202297, {	-- Jade Arcus
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 50 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(190803, {	-- Lost Acolyte's Boots
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(190830, {	-- Mad Thief's Boots
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(190202, {	-- Scoundrel's Missing Boots
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(202305, {	-- Stevedore's Skullcap
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(202298, {	-- Trader's Bicorne
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 }, },
-				["timeline"] = { ADDED_DF_0_5 },
-				["description"] = "You will get this hat for free if you participate in the Trial of Style between March 20th and March 24th 2023.",	--TODO: remove this line after the event is over
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(190544, {	-- Ultramafic Girdle
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(190167, {	-- Vault Stalker's Greaves
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(190673, {	-- Waistguard of the Infernal Eye
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(202307, {	-- Well-Worn Tricorne
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 25 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(190064, {	-- Ymirjar Berserker's Girdle
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			i(202300, {	-- Zealot's Prayer Staff
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 50 }, },
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 		},
 	}),

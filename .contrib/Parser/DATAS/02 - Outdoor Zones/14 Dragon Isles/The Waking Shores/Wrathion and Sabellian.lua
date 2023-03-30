@@ -13,7 +13,7 @@ local RAINBOW_PEARL = 198397;
 local SEREVITE_ORE = 190396;
 local TALLSTRIDER_SINEW = 201404;
 local WILDERCLOTH = 193050;
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
 			n(ACHIEVEMENTS, {
@@ -296,7 +296,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 				}),
 				q(66895, {	-- Same as the Old Boss
-					["sourceQuest"] = 66362,	-- First Completion of 'Unlocking our Past' (Igys the Believer)
 					["provider"] = { "n", 191310 },	-- Doventhal the Chosen
 					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
@@ -485,17 +484,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					["coord"] = { 24.8, 60.5, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
-
-				-- o(XXXXXX, {	-- Grand Obsidian Cache
+				o(389471, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Grand Obsidian Cache
 					-- ["questID"] = ,
-					-- ["coord"] = { 35.8, 48.0, THE_WAKING_SHORES },
-					-- ["cost"] = { { "i", 204278, 1} },	-- 1x Neltharion's Toolkit
-					-- ["g"] = {
-						i(202278, {	-- Renewed Proto-Drake: Antlers (DM!)
-							["timeline"] = { ADDED_DF_0_7 },
-						}),
-					-- },
-				-- }),
+					["coord"] = { 35.8, 48.0, THE_WAKING_SHORES },
+					["cost"] = { { "i", 204278, 1} },	-- 1x Neltharion's Toolkit
+					["g"] = {
+						i(202278),	-- Renewed Proto-Drake: Antlers (DM!)
+					},
+				})),
 			}),
 			n(VENDORS, {
 				n(193310, {	-- Dealer Vexil <Food and Drink>
@@ -680,7 +676,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 					},
 				}),
 				n(188623, {	-- Samia Inkling
-					["coord"] = { 25.2, 55.8, THE_WAKING_SHORES },
+					["coord"] = { 24.7, 56.8, THE_WAKING_SHORES },
 					["g"] = {
 						i(200952, {	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
 							["cost"] = {
@@ -908,7 +904,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
 			q(64277),	-- Triggered when choosing anyone in Allegiance To One (66419) -- triggered for both in 2 weeks

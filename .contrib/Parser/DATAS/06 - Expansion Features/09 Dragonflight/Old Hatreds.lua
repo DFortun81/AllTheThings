@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	header(HEADERS.Achievement, 17546, {	-- A New Beginning
 		q(72591, {	-- A Debt That Must Be Paid
 			["sourceQuests"] = { 66783 },	-- Renewal of Vows
@@ -46,7 +46,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["provider"] = { "n", 200831 },	-- Baine Bloodhoof
 			["coord"] = { 72.8, 55.8, OHNAHRAN_PLAINS },
 		}),
-		q(72660, {	-- A Proper Shikaar Send-Off
+		q(72600, {	-- A Proper Shikaar Send-Off
 			["sourceQuests"] = { 72663 },	-- Pinewood Trail
 			["provider"] = { "n", 200933 },	-- Scout Tomul
 			["coord"] = { 80.9, 57.7, OHNAHRAN_PLAINS },
@@ -61,7 +61,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		q(72601, {	-- Bovan's Last Hope
 			["sourceQuests"] = {
-				72660,	-- A Proper Shikaar Send-Off
+				72600,	-- A Proper Shikaar Send-Off
 				72599,	-- Joint Rescue Operation
 			},
 			["provider"] = { "n", 200938 },	-- Scout Tomul
@@ -109,5 +109,25 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["provider"] = { "n", 201566 },	-- Baine Bloodhoof
 			["coord"] = { 72.7, 56.1, OHNAHRAN_PLAINS },
 		}),
+		q(75258, {	-- A Final Word
+			["sourceQuests"] = { 72611 },	-- 72611
+			["provider"] = { "n", 203204 },	-- Baine Bloodhoof
+			["g"] = {
+				i(203679, {	-- Ancestral Bloodhoof Totem
+					["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
+				}),
+				ach(17546),	-- A New Beginning
+				i(203725),	-- Display of Strength (TOY!)
+				-- To be confirmed
+				-- i(204084),	-- Ancestor's Might
+			},
+		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_10_0_7 }, {
+	n(QUESTS, {
+		q(72610),	-- After getting the achievement "A New Beginning"
+	}),
+})));
+

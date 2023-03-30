@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
+root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	inst(1195, {	-- Sepulcher of the First Ones
 		["isRaid"] = true,
 		["coord"] = { 80.9, 53.4, ZERETH_MORTIS },
@@ -165,7 +165,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 				}),
 				ach(15409),	-- First Wonders
 				-- Fated
-				ach(15681, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Fate of the Sepulcher
+				ach(15681, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Fate of the Sepulcher
 					crit(1, { -- Vigilant Guardian
 						["_encounter"] = { 2458, LFR_RAID },
 					}),
@@ -200,7 +200,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 						["_encounter"] = { 2464, LFR_RAID },
 					}),
 				})),
-				ach(15682, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of the Sepulcher
+				ach(15682, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of the Sepulcher
 					crit(1, { -- Vigilant Guardian
 						["_encounter"] = { 2458, HEROIC_RAID },
 					}),
@@ -235,7 +235,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 						["_encounter"] = { 2464, HEROIC_RAID },
 					}),
 				})),
-				ach(15683, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of the Sepulcher
+				ach(15683, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of the Sepulcher
 					crit(1, { -- Vigilant Guardian
 						["_encounter"] = { 2458, MYTHIC_RAID },
 					}),
@@ -588,10 +588,10 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 			n(WORLD_QUESTS, {
 				q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
 					["isWorldQuest"] = true,
-					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				}),
 			}),
-			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_DF_REL }, {
+			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_10_0_2_LAUNCH }, {
 				n(ZONE_DROPS, {
 					i(190629),	-- Cartel's Larcenous Toecaps
 					i(190630),	-- Devouring Pellicle Shoulderpads
@@ -1218,7 +1218,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 			d(HEROIC_RAID, {
 				n(QUESTS, {
 					q(65717, bubbleDownSelf({	-- Final Shape
-						["timeline"] = { ADDED_SL_S3, REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 					},{
 						["provider"] = { "i", 190773 },	-- Carcinized Protoform
 						["g"] = {
@@ -1484,7 +1484,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 				e(2467, {	-- Rygelon
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
-						ach(15468, {["timeline"] = { ADDED_SL_2_7, REMOVED_DF_REL }}),	-- We Are All Made of Stars [Heroic]
+						ach(15468, {["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH }}),	-- We Are All Made of Stars [Heroic]
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
 						i(189851),	-- Devastated Worldshard
@@ -1520,7 +1520,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 				e(2464, {	-- The Jailer
 					["crs"] = { 185421 },	-- Zovaal <The Jailer>
 					["g"] = {
-						ach(15470, {["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 }}),	-- Ahead of the Curve: The Jailer
+						ach(15470, {["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 }}),	-- Ahead of the Curve: The Jailer
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination
 						i(189818),	-- Domination's Deliverance
@@ -1532,7 +1532,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 						i(188253),	-- Scars of Fraternal Strife
 						i(189859),	-- Worldkiller Iris
 						i(189861),	-- Zovastrum, the Unmaking
-						i(190773, {["timeline"] = { ADDED_SL_S3, REMOVED_DF_REL }}),	-- Carcinized Protoform (MOUNT! - QUEST)
+						i(190773, {["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH }}),	-- Carcinized Protoform (MOUNT! - QUEST)
 						i(189982),	-- Silithid Soul
 					},
 				}),
@@ -1808,7 +1808,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
 						ach(15488),	-- Mythic: Rygelon
-						ach(15469, {["timeline"] = { ADDED_SL_2_7, REMOVED_DF_REL }}),	-- We Are All Made of Stars [Mythic]
+						ach(15469, {["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH }}),	-- We Are All Made of Stars [Mythic]
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
 						i(189851),	-- Devastated Worldshard
@@ -1847,19 +1847,19 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } 
 						ach(15489, {	-- Mythic: The Jailer
 							title(455),	-- <Name>, Guardian of the Pattern
 						}),
-						ach(15476, bubbleDownSelf({["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {	-- Hall of Fame: The Jailer (A)
+						ach(15476, bubbleDownSelf({["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {	-- Hall of Fame: The Jailer (A)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(454),	-- <Name>, Famed Slayer of The Banished One
 							},
 						})),
-						ach(15475, bubbleDownSelf({["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {	-- Hall of Fame: The Jailer (H)
+						ach(15475, bubbleDownSelf({["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {	-- Hall of Fame: The Jailer (H)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(454),	-- <Name>, Famed Slayer of The Banished One
 							},
 						})),
-						ach(15471, {["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 }}),	-- Cutting Edge: The Jailer
+						ach(15471, {["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 }}),	-- Cutting Edge: The Jailer
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination
 						i(189818),	-- Domination's Deliverance

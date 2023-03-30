@@ -253,7 +253,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 			i(153541),	-- Tottle
 		},
 	}),
-	tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE, ["timeline"] = { "added 9.0.1" }, }, {
+	tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE, ["timeline"] = { ADDED_9_0_1 }, }, {
 		["description"] = "These rewards are available to anyone who purchases Shadowlands Heroic Edition.",
 		["groups"] = {
 			ach(14283, { -- Heroic Edition: Ensorcelled Everwyrm
@@ -289,7 +289,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 	})),
 	tier(DF_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["description"] = "These rewards are available to anyone who purchases Dragonflight Heroic Edition.",
-		["timeline"] = { ADDED_SL_S4 },
+		["timeline"] = { ADDED_9_2_5 },
 		["groups"] = {
 			p(3177, {	-- Drakks (PET!)
 				["description"] = "This is a pre-order bonus only available before the launch of Dragonflight.",
@@ -298,7 +298,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 			mount(359843),	-- Tangled Dreamweaver (MOUNT!)
 			ach(17314),	-- Heroic Edition: Tangled Dreamweaver
 			ach(17305, {	-- Trading Post: Dragonflight
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 			}),
 			n(REWARDS, {
 				["description"] = "The following additional rewards were only available if you purchased Dragonflight Epic Edition.",

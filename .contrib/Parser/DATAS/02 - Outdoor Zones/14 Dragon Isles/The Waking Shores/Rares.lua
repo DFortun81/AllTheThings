@@ -1,14 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THE_WAKING_SHORES, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 		--	n(193132),	-- Amethyzar the Glittering // under DF/Timed Based Rare
 			n(187111, {	-- Ancient Hornswog
 				["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
 				["questID"] = 72835,
-				["isDaily"] = false,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(187945, {	-- Anhydros the Tidetaker
 				["coord"] = { 58.7, 40.3, THE_WAKING_SHORES },
@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(191611, {	-- Dragonhunter Igordan
 				["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
 				["questID"] = 72838,
-				["isDaily"] = false,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193217, {	-- Drakewing
 				["description"] = "Spawns at the top right of the river & follows it all the way down to the Dragonscale Basecamp. Once there, he cycles back to his spawnpoint, again following the river. Coordinates roughly show his path.",
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(195915, {	-- Firava the Rekindler
 				["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
 				["questID"] = 72839,
-				["isDaily"] = false,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193154, {	-- Forgotten Gryphon
 				["coord"] = { 33.1, 76.3, THE_WAKING_SHORES },
@@ -89,7 +89,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(187209, {	-- Klozicc the Ascended
 				["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
 				["questID"] = 72841,
-				["isDaily"] = false,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193266, {	-- Lepidoralia the Resplendent
 				["description"] = "Talk to Collector Zik at the entrance to the cave and get a net. Start catching butterflies- no really, like, 200-400 butterflies. You'll be here a while.\n\nYou can talk to Collector Zik and select chat option 3: 'How many shimmerwings have you collected so far?' to get a hint toward your progress:\n0-33% I've only just started.\n34-66%We're making good progress.\n67-99%We're close to a discovery.",
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(184853, {	-- Primal Scythid Queen
 				["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
 				["questID"] = 72843,
-				["isDaily"] = false,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(192737, {	-- Qalashi War Mammoth
 				["description"] = "Marked with an icon on the map if they are up.",
@@ -165,7 +165,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			n(193171, {	-- Terillod the Devout
 				["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
 				["questID"] = 72850,
-				["isDaily"] = false,
+				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193148, {	-- Thunderous Matriarch
 				["coord"] = { 45.4, 35.6, THE_WAKING_SHORES },
@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THE_WAKING_SHORES, {
 		q(74000),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
 		q(74033),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)

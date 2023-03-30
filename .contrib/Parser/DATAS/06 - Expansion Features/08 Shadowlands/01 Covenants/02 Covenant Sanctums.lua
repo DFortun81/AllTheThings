@@ -46,7 +46,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				ach(15647, sharedDataSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Dead Men Tell Some Tales
+				ach(15647, sharedDataSelf({ ["timeline"] = { ADDED_9_2_5 } }, {	-- Dead Men Tell Some Tales
 					crit(1, {	--  Kyrian Campaign
 						["sourceQuests"] = { 62557 },	-- Our Realm Reclaimed
 					}),
@@ -65,10 +65,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 				ach(14630),	-- Becoming a Hero
 				ach(14631),	-- Champion of the Covenant
 				ach(15241, {	-- Renowned
-					["timeline"] = { "added 9.1.5" },
+					["timeline"] = { ADDED_9_1_5 },
 				}),
 				ach(15646, {	-- Re-Re-Re-Renowned
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_9_2_5 },
 				}),
 				ach(14632),		-- Conducting Anima
 				ach(14639),		-- Dedication to the Restoration
@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 				ach(15024),	-- Denying the Drought
 				ach(15025),	-- Sanctum Superior
 				ach(15649, {	-- Shadowlands Dilettante
-					["timeline"] = { ADDED_SL_S4},
+					["timeline"] = { ADDED_9_2_5},
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {
 						{"meta_achievement",
@@ -107,37 +107,37 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					}),
 					-- Follower XP Items
 					i(187413, {	-- Crystalline Memory Repository
-						["timeline"] = { "added 9.1.0.38312", "removed 9.1.5" },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_1_5 },
 					}),
 					i(188655, {	-- Crystalline Memory Repository
-						["timeline"] = { "added 9.1.5" },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 					i(187414, {	-- Fractal Thoughtbinder
-						["timeline"] = { "added 9.1.0.38312", "removed 9.1.5" },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_1_5 },
 					}),
 					i(188656, {	-- Fractal Thoughtbinder
-						["timeline"] = { "added 9.1.5" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(187415, {	-- Mind-Expanding Prism
-						["timeline"] = { "added 9.1.0.38312", "removed 9.1.5" },
+						["timeline"] = { ADDED_9_1_0, REMOVED_9_1_5 },
 					}),
 					i(188657, {	-- Mind-Expanding Prism
-						["timeline"] = { "added 9.1.5" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(188650, {	-- Grimoire of Knowledge
-						["timeline"] = { "added 9.1.5" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(188651, {	-- Grimoire of Knowledge (Drops from the early Campaign Missions) [Night Fae as noticed]
-						["timeline"] = { "added 9.1.5" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(188652, {	-- Grimoire of Knowledge (Drops from the Campaign Missions) [Night Fae as noticed]
-						["timeline"] = { "added 9.1.5" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(188653, {	-- Grimoire of Knowledge (Drops from the Campaign Missions) [Night Fae as noticed]
-						["timeline"] = { "added 9.1.5" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(188654, {	-- Grimoire of Knowledge (Drops from the Campaign Missions) [Night Fae as noticed]
-						["timeline"] = { "added 9.1.5" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					-- Mounts
 					i(183617),	-- Chittering Animite (MOUNT!)
@@ -159,16 +159,16 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					i(184636),	-- Adventurer's Skinning Cache
 					i(184630),	-- Adventurer's Tailoring Cache
 					i(187573, {	-- Broker's Enchanting Mote of Potentiation
-						["timeline"] = { "added 9.1.0.38312" },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 					i(187572, {	-- Broker's Herbalism Mote of Potentiation
-						["timeline"] = { "added 9.1.0.38312" },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 					i(187569, {	-- Broker's Tailoring Mote of Potentiation
-						["timeline"] = { "added 9.1.0.38312" },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 					i(187574, {	-- Broker's Overflowing Bucket
-						["timeline"] = { "added 9.1.0.38312" },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 					i(184643),	-- Champion's Enchanting Cache
 					i(184632),	-- Champion's Fish Cache
@@ -185,13 +185,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					i(184645),	-- Hero's Skinning Cache
 					i(184644),	-- Hero's Tailoring Cache
 					i(187575, {	-- Korthian Fishing Cache
-						["timeline"] = { "added 9.1.0.39185" },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 					i(187577, {	-- Korthian Meat Cache
-						["timeline"] = { "added 9.1.0.39185" },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 					i(187576, {	-- Korthian Skinning Cache
-						["timeline"] = { "added 9.1.0.39185" },
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 					i(181468),	-- Veiled Augment Rune
 					-- Gear
@@ -252,7 +252,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["description"] = "Rewarded by completing a Calling based in Ardenweald.",
 					["g"] = {
 						i(187840, {	-- Sparkle Wings (TOY!)
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 						i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
 							["timeline"] = { "added 9.2.0" },
@@ -264,7 +264,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["g"] = {
 						i(180248),	-- Ambassador's Reserve (Ember Court Bonus Time)
 						i(187512, {	-- Tome of Small Sins (TOY!)
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 					},
 				}),
@@ -279,7 +279,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 							}),
 						}),
 						i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 					},
 				}),
@@ -287,7 +287,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["description"] = "Rewarded by completing a Calling based in Bastion.",
 					["g"] = {
 						i(187419, {	-- Steward's First Feather (TOY!)
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 					},
 				}),
@@ -297,7 +297,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["description"] = "Rewarded by completing a 'Challenges' Calling based in Ardenweald.",
 					["g"] = {
 						i(187840, {	-- Sparkle Wings (TOY!)
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 						i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
 							["timeline"] = { "added 9.2.0" },
@@ -309,7 +309,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["g"] = {
 						i(176850),	-- Blank Invitation
 						i(187512, {	-- Tome of Small Sins (TOY!)
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 					},
 				}),
@@ -324,7 +324,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 							}),
 						}),
 						i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 					},
 				}),
@@ -332,7 +332,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["description"] = "Rewarded by completing a 'Challenges' Calling based in Bastion.",
 					["g"] = {
 						i(187419, {	-- Steward's First Feather (TOY!)
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_9_1_5 },
 						}),
 					},
 				}),

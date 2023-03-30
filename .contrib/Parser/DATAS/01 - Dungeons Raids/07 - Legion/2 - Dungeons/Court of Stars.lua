@@ -29,7 +29,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
-			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 } }, {
+			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				i(201995),	-- Crux of Blind Faith
 				i(201996),	-- Edge of the First Blade
 				i(201994),	-- Felsworn Covenant Crossbow

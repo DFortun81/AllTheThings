@@ -1691,7 +1691,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			}),
 		}),
 		n(SEASON_CORRUPTED, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 8.3.0", "removed 9.0.0" } }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {
 				ach(13959),	-- Challenger: Battle for Azeroth Season 4
 				ach(13962),	-- Combatant: Battle for Azeroth Season 4
 				ach(13957, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
@@ -2102,7 +2102,7 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 					i(174472),	-- Corrupted Gladiator's Spite
 				}),
 			}),
-			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6376, ["timeline"] = { "added 8.3.0", "removed 9.0.0" } }, { -- Elite/Duelist Gear. Do not use more filters, Elite Gear
+			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6376, ["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, { -- Elite/Duelist Gear. Do not use more filters, Elite Gear
 				filter(CLOTH, {
 					i(172568),	-- Corrupted Gladiator's Silk Hood (A)
 					i(172526),	-- Corrupted Gladiator's Silk Hood (H)
@@ -2209,14 +2209,14 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = {
 						"added 8.3.0",
-						"removed 9.0.0"
+						REMOVED_9_0_1,
 					},
 				}),
 				i(173713, {	-- Vicious White Bonesteed (MOUNT!)
 					["races"] = HORDE_ONLY,
 					["timeline"] = {
 						"added 8.3.0",
-						"removed 9.0.0"
+						REMOVED_9_0_1,
 					},
 				}),
 			}),

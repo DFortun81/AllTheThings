@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THE_WAKING_SHORES, {
 		n(WORLD_QUESTS, {
 			["sourceQuests"] = {
@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				-- }),
 				petbattle(q(74841, { -- Adinakon
 					["coord"] = { 51.90, 72.39, THE_WAKING_SHORES },
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 				})),
 				q(70636, {	-- Ancient Protodragons
 					["coord"] = { 35.1, 81.6, THE_WAKING_SHORES },
@@ -61,13 +61,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				}),
 				petbattle(q(74840, { -- Sharp as Flint
 					["coord"] = { 68.96, 46.78, THE_WAKING_SHORES },
-					["timeline"] = { ADDED_DF_0_7 },
+					["timeline"] = { ADDED_10_0_7 },
 				})),
 				q(67024, {	-- Smoldering Reinforcement
 					["coord"] = { 53.9, 27.0, THE_WAKING_SHORES },
-				}),
-				q(70651, {	-- Stolen Luggage
-					["coord"] = { 61.6, 49.5, THE_WAKING_SHORES },
 				}),
 				petbattle(q(66588, {	-- Swog the Elder
 					["coord"] = { 25.6, 92.1, THE_WAKING_SHORES },

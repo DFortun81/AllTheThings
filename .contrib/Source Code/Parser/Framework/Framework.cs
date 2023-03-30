@@ -21,6 +21,11 @@ namespace ATT
         public static bool DebugMode = false;
 
         /// <summary>
+        /// Used to represent a Lua object value which will be ignored by the Parser
+        /// </summary>
+        public static string IgnoredValue { get; set; }
+
+        /// <summary>
         /// The CustomConfiguration for the Parser
         /// </summary>
         internal static CustomConfiguration Config { get; set; }
@@ -294,6 +299,11 @@ namespace ATT
         };
 
         /// <summary>
+        /// A Dictionary of key-ID types and how many times each value of key-type has been referenced in the final DB
+        /// </summary>
+        public static Dictionary<string, HashSet<decimal>> OutputSets { get; } = new Dictionary<string, HashSet<decimal>>();
+
+        /// <summary>
         /// A Dictionary of key-ID types and the respective objects which contain the specified key which will be captured and output during Debug runs</para>
         /// NOTE: Each key name/value may contain multiple sets of data due to duplication of individual listings
         /// </summary>
@@ -322,13 +332,21 @@ namespace ATT
         {
             if (Config == null)
             {
+                Log($"Using config: {filepath}");
                 Config = new CustomConfiguration(filepath);
             }
             else
             {
+                Log($"Added config: {filepath}");
                 Config.ApplyFile(filepath);
             }
-            Log($"config: {filepath}");
+        }
+
+        /// <summary>
+        /// After multiple calls to InitConfigSettings have been completed, this method is used to apply the config settings into the Parser
+        /// </summary>
+        public static void ApplyConfigSettings()
+        {
             CURRENT_RELEASE_PHASE_NAME = Config["DataPhase"] ?? CURRENT_RELEASE_PHASE_NAME;
             int[] configPatch = Config["DataPatch"];
             if (configPatch != null)
@@ -474,9 +492,6 @@ namespace ATT
             }
             else
             {
-                // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
-                Objects.PostProcessMergeInto(data);
-
                 if (!DataConsolidation(data))
                     return false;
             }
@@ -489,7 +504,7 @@ namespace ATT
             if (data.TryGetValue("g", out List<object> groups))
             {
                 var previousParent = CurrentParentGroup;
-                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object objKeyValue))
+                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
                     CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
                 var previousDifficultyRoot = DifficultyRoot;
                 var previousDifficulty = NestedDifficultyID;
@@ -619,7 +634,7 @@ namespace ATT
             {
                 if (data.TryGetValue("npcID", out object dupeNpcID))
                 {
-                    LogError($"Both CreatureID {creatureID} and NPCID {dupeNpcID}?{Environment.NewLine}-- {ToJSON(data)}");
+                    LogError($"Both CreatureID {creatureID} and NPCID {dupeNpcID}? --", data);
                 }
                 data["npcID"] = creatureID;
                 NPCS_WITH_REFERENCES[creatureID] = true;
@@ -873,8 +888,6 @@ namespace ATT
                 }
             }
 
-            ObjectData.TryFindAndConvertDataByObjectType(data);
-
             // Certain automatic header types may be converted from raw Lua data
             //if (data.TryGetValue("headerID", out decimal headerID) && data.TryGetValue("type", out string type))
             //{
@@ -906,6 +919,64 @@ namespace ATT
             Objects.Merge(data);
 
             return true;
+        }
+
+        private static void Validate_SourceQuests(Dictionary<string, object> data)
+        {
+            if (data.TryGetValue("sourceQuests", out List<object> sourceQuests))
+            {
+                foreach (var sourceQuestRef in sourceQuests)
+                {
+                    if (!sourceQuestRef.TryConvert(out long sourceQuestID))
+                    {
+                        LogError($"Non-number 'sourceQuests' value used: {sourceQuestRef}");
+                        continue;
+                    }
+
+                    if (!Objects.AllQuests.TryGetValue(sourceQuestID, out Dictionary<string, object> sourceQuest))
+                    {
+                        // Source Quest not in database
+                        LogError($"Referenced Source Quest {sourceQuestID} has not been Sourced");
+                        continue;
+                    }
+
+                    // source quest of this data is considered a breadcrumb, so note in the source quest it has a specific follow up
+                    if (sourceQuest.TryGetValue("isBreadcrumb", out bool isBreadcrumb) && isBreadcrumb)
+                    {
+                        // Source Quest is a breadcrumb, add current quest into breadcrumb's next quests list
+                        if (!sourceQuest.TryGetValue("nextQuests", out List<object> nextQuests))
+                        {
+                            sourceQuest.Add("nextQuests", nextQuests = new List<object>());
+                        }
+
+                        if (data.TryGetValue("questID", out long questID) && !nextQuests.Contains(questID))
+                        {
+                            nextQuests.Add(questID);
+                        }
+                    }
+                }
+            }
+        }
+
+        private static void Validate_AltQuests(Dictionary<string, object> data)
+        {
+            if (data.TryGetValue("altQuests", out List<object> altQuests))
+            {
+                foreach (var altQuestRef in altQuests)
+                {
+                    if (!altQuestRef.TryConvert(out long altQuestID))
+                    {
+                        LogError($"Non-number 'altQuests' value used: {altQuestRef}");
+                        continue;
+                    }
+
+                    if (!Objects.AllQuests.TryGetValue(altQuestID, out Dictionary<string, object> altQuest))
+                    {
+                        // Source Quest not in database
+                        LogDebug($"WARN: Referenced Alternate Quest {altQuestID} has not been Sourced");
+                    }
+                }
+            }
         }
 
         private static void Validate_Encounter(Dictionary<string, object> data)
@@ -1215,6 +1286,9 @@ namespace ATT
             Items.MergeInto(data);
             Objects.MergeInto(data);
 
+            // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
+            Objects.PostProcessMergeInto(data);
+
             // verify the timeline data of Merged data (can prevent keeping the data in the data container)
             if (!CheckTimeline(data))
                 return false;
@@ -1236,12 +1310,12 @@ namespace ATT
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
             TryFindRecipeID(data);
-
             CheckRequireSkill(data);
-
             CheckHeirloom(data);
-
-            ObjectData.TryDataConversion(data);
+            Validate_SourceQuests(data);
+            Validate_AltQuests(data);
+            Items.DetermineSourceID(data);
+            CheckObjectConversion(data);
 
             //VerifyListContentOrdering(data);
 
@@ -1289,7 +1363,7 @@ namespace ATT
             }
 
             // clean up any Parser metadata tags
-            List<string> removeKeys = new List<string>(data.Keys.Where(k => k.StartsWith("_")));
+            List<string> removeKeys = new List<string>();
 
             foreach (KeyValuePair<string, object> dataKvp in data)
             {
@@ -1306,6 +1380,17 @@ namespace ATT
             }
 
             return true;
+        }
+
+        private static void CheckObjectConversion(Dictionary<string, object> data)
+        {
+            if (ObjectData.TryFindObjectConversion(data, out ObjectData conversionObject, out object convertValue))
+            {
+                LogDebug($"INFO: Type Conversion {conversionObject.ConvertedKey}=>{conversionObject.ObjectType} ({convertValue})");
+                data.Remove("type");
+                data.Remove(conversionObject.ConvertedKey);
+                data[conversionObject.ObjectType] = convertValue;
+            }
         }
 
         /// <summary>
@@ -1818,7 +1903,7 @@ namespace ATT
             if (!MergeItemData) return;
 
             var groupIDs = Objects.CompressToList(groups) ?? new List<object> { groups };
-            if (groupIDs != null && ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object _))
+            if (groupIDs != null && ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object _))
             {
                 switch (objectData.ObjectType)
                 {
@@ -1917,7 +2002,14 @@ namespace ATT
             // duplicate the data into the sourced data by type
             foreach (object dupeGroupID in groupIDs)
             {
-                Objects.PostProcessMerge(type, dupeGroupID, data);
+                if (dupeGroupID.TryConvert(out decimal groupID))
+                {
+                    Objects.PostProcessMerge(type, groupID, data);
+                }
+                else
+                {
+                    Log($"WARN: Trying to Post-Process Merge using a non-numeric key: {dupeGroupID} for type {type}");
+                }
             }
         }
 
@@ -2109,6 +2201,7 @@ namespace ATT
                                             {"itemID", itemID },
                                         };
                                         Items.MergeInto(itemID, item, newItem);
+                                        Items.DetermineSourceID(newItem);
                                         listing.Add(newItem);
                                     }
                                     break;
@@ -2140,6 +2233,7 @@ namespace ATT
                                             {"itemID", itemID },
                                         };
                                         Items.MergeInto(itemID, item, newItem);
+                                        Items.DetermineSourceID(newItem);
                                         listing.Add(newItem);
                                     }
                                     break;
@@ -2169,57 +2263,21 @@ namespace ATT
             }
 
             // Include in breadcrumb quests the list of next quests that may make the breadcrumb unable to complete
-            bool isBreadcrumb;
-            HashSet<long> orphanedBreadcrumbs = new HashSet<long>();
-            foreach (var pair in Objects.AllQuests)
-            {
-                if (pair.Value.TryGetValue("sourceQuests", out List<object> sourceQuests))
-                {
-                    foreach (var sourceQuestRef in sourceQuests)
-                    {
-                        var sourceQuestID = Convert.ToInt64(sourceQuestRef);
-                        if (Objects.AllQuests.TryGetValue(sourceQuestID, out Dictionary<string, object> sourceQuest))
-                        {
-                            if (sourceQuest.TryGetValue("isBreadcrumb", out isBreadcrumb) && isBreadcrumb)
-                            {
-                                // Source Quest is a breadcrumb, add current quest into breadcrumb's next quests list
-                                if (sourceQuest.TryGetValue("nextQuests", out List<object> nextQuests))
-                                {
-                                    if (!nextQuests.Contains(pair.Key)) nextQuests.Add(pair.Key);
-                                }
-                                else
-                                {
-                                    sourceQuest.Add("nextQuests", new List<object>() { pair.Key });
-                                }
-                            }
-                        }
-                        else
-                        {
-                            // Source Quest not in database
-                        }
-                    }
-                }
-            }
+            //bool isBreadcrumb;
+            HashSet<decimal> orphanedBreadcrumbs = new HashSet<decimal>();
+            OutputSets.Add("Orphaned Breadcrumbs", orphanedBreadcrumbs);
 
             // check for orphaned breadcrumbs
             foreach (var pair in Objects.AllQuests)
             {
-                if (pair.Value.TryGetValue("isBreadcrumb", out isBreadcrumb) && isBreadcrumb)
+                if (pair.Value.TryGetValue("isBreadcrumb", out bool isBreadcrumb)
+                    && isBreadcrumb
+                    && !pair.Value.TryGetValue("nextQuests", out object nextQuests))
                 {
-                    if (!pair.Value.TryGetValue("nextQuests", out List<object> nextQuests))
-                    {
-                        // Breadcrumb quest without next quests information
-                        orphanedBreadcrumbs.Add(pair.Key);
-                    }
+                    // Breadcrumb quest without next quests information
+                    orphanedBreadcrumbs.Add(pair.Key);
                 }
             }
-            var sortedOrphanedBreadcrumbs = new SortedList<long, long>();
-            foreach (long q in orphanedBreadcrumbs)
-            {
-                sortedOrphanedBreadcrumbs.Add(q, q);
-            }
-            var sortedList = new List<long>(sortedOrphanedBreadcrumbs.Values);
-            Log($"Orphaned Breadcrumb Quests:{Environment.NewLine}{ToJSON(sortedList)}");
 
             if (QUESTS.Any())
             {
@@ -2320,8 +2378,13 @@ namespace ATT
                         }
                     }
                 }
+
+                Objects.AllContainers.Remove("Uncollectible");
             }
 
+            // Clean out any temporary containers
+            string[] temporaryKeys = Objects.AllContainers.Keys.Where(k => k.StartsWith("_")).ToArray();
+            temporaryKeys.All(k => Objects.AllContainers.Remove(k));
 
             // Merge conditional data
             ProcessingMergeData = true;
@@ -3005,7 +3068,7 @@ namespace ATT
         public static void Merge(LuaTable table)
         {
             // Parse the contents of the table into a generic object.
-            var dict = ParseAsDictionary(table);
+            var dict = ParseAsStringDictionary(table);
             if (dict == null) return;
 
             // Iterate through the pairs and determine what goes where.
@@ -3029,7 +3092,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("IllusionDB not in the correct format!");
+                                LogError("IllusionDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;
@@ -3050,7 +3113,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3066,7 +3129,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3074,7 +3137,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemDB not in the correct format!");
+                                LogError("ItemDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             ProcessingMergeData = false;
@@ -3095,7 +3158,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3111,7 +3174,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3119,7 +3182,20 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemDB not in the correct format!");
+                                LogError("ItemDB not in the correct format!");
+                                Console.ReadLine();
+                            }
+                        }
+                        break;
+                    case "Items.SOURCES":
+                        {
+                            if (pair.Value is Dictionary<decimal, object> db)
+                            {
+                                db.AsParallel().ForAll(Items.AddItemSourceID);
+                            }
+                            else
+                            {
+                                LogError($"{pair.Key} not in the correct format!");
                                 Console.ReadLine();
                             }
                         }
@@ -3138,7 +3214,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("RecipeDB not in the correct format!");
+                                        LogError("RecipeDB not in the correct format!");
                                         Console.WriteLine(ToJSON(recipeValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3154,7 +3230,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        LogError("ItemDB not in the correct format!");
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3162,7 +3238,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemDB not in the correct format!");
+                                LogError("ItemDB not in the correct format!");
                                 Console.ReadLine();
                             }
                         }
@@ -3181,7 +3257,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemMountDB not in the correct format!");
+                                        LogError("ItemMountDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3189,7 +3265,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemMountDB not in the correct format!");
+                                LogError("ItemMountDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;
@@ -3209,7 +3285,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemSpeciesDB not in the correct format!");
+                                        LogError("ItemSpeciesDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3217,7 +3293,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemSpeciesDB not in the correct format!");
+                                LogError("ItemSpeciesDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;
@@ -3236,7 +3312,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        Console.WriteLine("ItemToyDB not in the correct format!");
+                                        LogError("ItemToyDB not in the correct format!");
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3244,7 +3320,7 @@ namespace ATT
                             }
                             else
                             {
-                                Console.WriteLine("ItemToyDB not in the correct format!");
+                                LogError("ItemToyDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;
@@ -3426,24 +3502,44 @@ namespace ATT
         {
             if (table.Keys.Count > 0)
             {
-                // Determine if we're dealing with a <string,object> dictionary.
+                // Determine most-necessary key type
+                bool useDecimal = false, useLong = false;
                 var keyList = new List<object>();
                 foreach (var key in table.Keys)
                 {
-                    if (key.GetType().ToString() == "System.String")
+                    var keyType = key.GetType();
+                    if (keyType == typeof(string))
                     {
-                        if (table[key].GetType().ToString() == "NLua.LuaFunction") continue;
-                        return ParseAsDictionary(table);
+                        if (table[key].GetType() == typeof(LuaFunction)) continue;
+                        return ParseAsStringDictionary(table);
+                    }
+                    else if (!useDecimal && keyType.IsDecimal())
+                    {
+                        useDecimal = true;
+                    }
+                    else if (!useDecimal && !useLong && keyType.IsNumeric())
+                    {
+                        useLong = true;
                     }
                     keyList.Add(key);
                 }
-                keyList.Sort();
+                //keyList.Sort();
 
                 // Determine if we're dealing with a <long,object> dictionary.
                 for (int i = 1; i <= keyList.Count; ++i)
                 {
                     var key = keyList[i - 1];
-                    if (Convert.ToInt32(key) != i) return ParseAsTable(table);
+                    if (key.TryConvert(out int index) && (index != i || index > keyList.Count))
+                    {
+                        if (useDecimal)
+                        {
+                            return ParseAsDictionary<decimal>(table);
+                        }
+                        else
+                        {
+                            return ParseAsDictionary<long>(table);
+                        }
+                    }
                 }
 
                 // Create an ordered list from the table.
@@ -3458,14 +3554,24 @@ namespace ATT
             return new List<object>();
         }
 
-        static Dictionary<long, object> ParseAsTable(LuaTable table)
+        static Dictionary<TKey, object> ParseAsDictionary<TKey>(LuaTable table)
         {
-            var dict = new Dictionary<long, object>();
-            foreach (var key in table.Keys) dict[Convert.ToInt64(key)] = ParseObject(table[key]);
+            var dict = new Dictionary<TKey, object>();
+            foreach (var key in table.Keys)
+            {
+                if (key.TryConvert(out TKey tKey))
+                {
+                    dict[tKey] = ParseObject(table[key]);
+                }
+                else
+                {
+                    LogError($"Failed to convert {key} to type {typeof(TKey).GetType().Name}");
+                }
+            }
             return dict;
         }
 
-        static Dictionary<string, object> ParseAsDictionary(LuaTable table)
+        static Dictionary<string, object> ParseAsStringDictionary(LuaTable table)
         {
             var dict = new Dictionary<string, object>();
             foreach (var key in table.Keys) dict[ConvertFieldName(key.ToString())] = ParseObject(table[key]);
@@ -3511,6 +3617,7 @@ namespace ATT
             return null;
         }
         #endregion
+
         #region Export (Clean)
         /// <summary>
         /// Export the data to the builder in a clean, longhand format.
@@ -3826,7 +3933,7 @@ namespace ATT
                         }
 
                         // Export the Mount DB file.
-                        var mounts = Framework.Items.AllIDs;
+                        var mounts = Items.AllIDs;
                         if (mounts.Any())
                         {
                             var builder = new StringBuilder("-----------------------------------------------------\n--   M O U N T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
@@ -3834,7 +3941,7 @@ namespace ATT
                             keys.Sort();
                             foreach (var itemID in keys)
                             {
-                                var item = Framework.Items.GetNull(itemID);
+                                var item = Items.GetNull(itemID);
                                 if (item != null)
                                 {
                                     if (item.TryGetValue("mountID", out long spellID))
@@ -3954,11 +4061,12 @@ namespace ATT
                 }
 
                 // Export various debug information to the output folder.
-                ATT.Export.IncludeRawNewlines = false;
+                IncludeRawNewlines = false;
                 Objects.Export(outputFolder.FullName);
-                ATT.Export.IncludeRawNewlines = true;
+                IncludeRawNewlines = true;
 
 #if RETAIL
+                Objects.ExportAutoItemSources(Config["root-data"]);
                 Objects.ExportAutoLocale(outputFolder.FullName);
 #endif
             }

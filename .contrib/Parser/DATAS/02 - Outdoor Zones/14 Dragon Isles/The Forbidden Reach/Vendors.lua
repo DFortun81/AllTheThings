@@ -3,7 +3,7 @@
 ---------------------------------------------------
 local ARTISANS_METTLE = 190456;
 local ELEMENTAL_OVERFLOW = 2118;
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(VENDORS, {
 			n(200566, {	-- Cataloger Daela
@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					}),
 					i(197136, {	-- Highland Drake: Tapered Nose (DM!)
 						["cost"] = {
-							{ "c", ELEMENTAL_OVERFLOW, 10000 },
+							{ "c", ELEMENTAL_OVERFLOW, 2500 },
 						},
 					}),
 					i(198356),	-- Honey Snack
@@ -51,14 +51,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					}),
 					i(197626, {	-- Windborne Velocidrake: Exposed Finned Neck (DM!)
 						["cost"] = {
-							{ "c", ELEMENTAL_OVERFLOW, 10000 },
+							{ "c", ELEMENTAL_OVERFLOW, 2500 },
 						},
 					}),
 				},
 			}),
 			n(203341, {	-- Researcher Baneflare
 				["coord"] = { 35.7, 59.4, THE_FORBIDDEN_REACH },
-				["g"] = bubbleDown({ ["cost"] = { { "i", 204276, 1 } } }, {
+				["g"] = bubbleDown({
+					["cost"] = { { "i", 204276, 1 } },	-- Untapped Forbidden Knowledge
+					["modID"] = 14,
+					["bonusID"] = 9344,
+				},{
 					n(BACK, {
 						i(199450),	-- Cape of Raging Tempests
 						i(199451),	-- Cloak of Raging Tempests
@@ -236,47 +240,47 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				["g"] = {
 					i(203426, {	-- Design: Crystal Tuning Fork (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203423, {	-- Formula: Glowing Crystal Bookmark (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203427, {	-- Pattern: Reinforced Pristine Leather (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203428, {	-- Pattern: Traditional Morqut Kite (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203421, {	-- Plans: Ancient Ceremonial Trident (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203420, {	-- Recipe: Draconic Suppression Powder (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203422, {	-- Recipe: Sparkling Spice Pouch (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203424, {	-- Schematic: Gnomish Voicebox (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 					i(203425, {	-- Technique: Arcane Dispelling Rune (RECIPE!)
 						["cost"] = {
-							{ "c", ARTISANS_METTLE, 10 },
+							{ "i", ARTISANS_METTLE, 10 },
 						},
 					}),
 				},
@@ -328,7 +332,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 					}),
 					-- Pre Event Gear
 					i(203693, {	-- Ensemble: Cloudburst Regalia
-						["questID"] = 74363,
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 10000 },
 						},
@@ -345,7 +348,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						},
 					}),
 					i(203694, {	-- Ensemble: Cyclonic Battlegear
-						["questID"] = 74365,
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 10000 },
 						},
@@ -362,7 +364,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						},
 					}),
 					i(203696, {	-- Ensemble: Dust Devil Armor
-						["questID"] = 74364,
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 10000 },
 						},
@@ -379,7 +380,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 						},
 					}),
 					i(203695, {	-- Ensemble: Firestorm Armor
-						["questID"] = 74366,
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 10000 },
 						},
@@ -427,5 +427,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF_0_7 } }
 				},
 			}),
 		}),
+	}),
+})));
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+	n(THE_FORBIDDEN_REACH, {
+		q(74363),	-- Ensemble: Cloudburst Regalia
+		q(74364),	-- Ensemble: Dust Devil Armor
+		q(74365),	-- Ensemble: Cyclonic Battlegear
+		q(74366),	-- Ensemble: Firestorm Armor
 	}),
 })));

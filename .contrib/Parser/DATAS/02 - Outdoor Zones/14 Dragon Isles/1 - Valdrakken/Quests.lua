@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(VALDRAKKEN, {
 		n(REWARDS, {
 			i(200452, {	-- Dragonscale Expedition Insignia
@@ -189,7 +189,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 			q(67007, {	-- Archival Assistance
 				["provider"] = { "o", 381687 },	-- Discarded Note
 				["coord"] = { 47.8, 46.6, VALDRAKKEN },
-				["isBreadcrumb"] = true,
 			}),
 			q(72585, {	-- Open Orientation
 				["provider"] = { "n", 196499 },	-- Therazal
@@ -205,25 +204,37 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL },
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 200686, 2 } },	-- 2x Primal Focus
-				["timeline"] = { ADDED_DF_0_7 },
+				["repeatable"] = true,
+				["timeline"] = { ADDED_10_0_7 },
 			}),
 			q(75166, {	-- In Need of Many Primal Foci
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 200686, 10 } },	-- 10x Primal Focus
-				["timeline"] = { ADDED_DF_0_7 },
+				["repeatable"] = true,
+				["timeline"] = { ADDED_10_0_7 },
 			}),
 			q(75165, {	-- In Need of Concentrated Primal Foci
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 200686, 1 } },	-- 1x Concentrated Primal Focus
-				["timeline"] = { ADDED_DF_0_7 },
+				["repeatable"] = true,
+				["timeline"] = { ADDED_10_0_7 },
 			}),
 			q(75167, {	-- In Need of Many Concentrated Primal Foci
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 190455, 10 } },	-- 10x Concentrated Primal Focus
-				["timeline"] = { ADDED_DF_0_7 },
+				["repeatable"] = true,
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+
+			-- New Questline?
+			q(72411, {	-- Cause Without a Rebel
+				-- ["sourceQuests"] = {  },	--
+				["provider"] = { "n", 189842 },	-- Captain Drine
+				["coord"] = { 56.5, 40.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 },
 			}),
 		}),
 		n(QUESTS, sharedData({

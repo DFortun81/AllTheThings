@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(tier(DF_TIER, {
 	header(HEADERS.Achievement, SEASON_CRIMSON, bubbleDownSelf({
-		["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 },
+		["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 	},{
 		["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
 		["g"] = {
@@ -23,10 +23,10 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, {
 				ach(15952),		-- Rival I: Dragonflight Season 1
 				ach(15953),		-- Rival II: Dragonflight Season 1
 				ach(15954, {	-- Duelist: Dragonflight Season 1
-					i(202089, {["timeline"] = { ADDED_DF_0_5 }}),	-- Crimson Gladiator's Prestigious Cloak
+					i(202089, {["timeline"] = { ADDED_10_0_5 }}),	-- Crimson Gladiator's Prestigious Cloak
 				}),
 				ach(15984, {	-- Elite: Dragonflight Season 1
-					i(202090, {["timeline"] = { ADDED_DF_0_5 }}),	-- Crimson Gladiator's Tabard
+					i(202090, {["timeline"] = { ADDED_10_0_5 }}),	-- Crimson Gladiator's Tabard
 				}),
 				ach(15957, {	-- Gladiator: Dragonflight Season 1
 					i(202086),	-- Crimson Gladiator's Drake (MOUNT!)
@@ -44,7 +44,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, {
 					["races"] = HORDE_ONLY,
 				}),
 				-- Solo
-				ach(17339),		-- Legend: Dragonflight Season 1
+				ach(17339),		-- Crimson Legend: Dragonflight Season 1
 				ach(16734, {	-- Crimson Soloist: Dragonflight Season 1
 					title(482),	-- Crimson Soloist <Name>
 				}),

@@ -26,6 +26,8 @@ i(200788);	-- Mantacorn Horns
 i(200843);	-- Severely Chipped Broadsword
 i(200801);	-- Gilded Statuette
 i(200779);	-- Lava Jars
+i(203988);	-- Warshard of the Hakkari, Unborn
+i(203989);	-- Warshard of the Hakkari, Unborn
 
 -- SL
 i(179293);	-- Glimmering Facial Cream
@@ -639,8 +641,27 @@ i(191862);	-- Whalebone Fragment
 i(193372);	-- Wood
 
 ------------------
+-- PATCH 10.0.5 --
+------------------
+-- Profession White Items
+i(5956);	-- Blacksmith Hammer
+i(85663);	-- Herbalist's Spade
+i(2901);	-- Mining Pick
+i(7005);	-- Skinning Knife
+-- White Items
+i(16967);	-- Feralas Ahi
+
+------------------
 -- PATCH 10.0.7 --
 ------------------
+-- Quest Items --
+i(202362);	-- Arcane Focus
+i(203463);	-- Atrenosh's Journal
+i(202713);	-- Scattered Supplies
+-- Stupid Stuff
+i(204308);	-- Sturdy Bone
+i(204873);	-- Tied-up Envelope
+--
 i(204814);	-- Aged Journal
 i(204815);	-- Ambiguous Compendium
 i(204813);	-- Blank Tome
@@ -650,3 +671,9 @@ i(203473);	-- Geyser Flower
 i(204235);	-- Kaldorei Fruitcake
 i(204816);	-- Mysterious Almanac
 i(204812);	-- Seared Book
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+-- Quest Items --
+i(203442);	-- Snail Slime

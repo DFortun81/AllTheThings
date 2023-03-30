@@ -1600,8 +1600,22 @@
 400733@@@Rocket Shredder 9001
 10.0.7.48076
 349935@@@Noble Bruffalon
+10.0.7.48749
+374090@@@Ancient Salamanther
+374157@@@Gooey Snailemental
+374194@@@Mossy Mammoth
 10.1.0.48480
 408313@@@Big Slick in the City
 10.1.0.48537
 406637@@@Inferno Armoredon
 408647@@@Api Biru Sporebat
+10.1.0.48661
+374138@@@Seething Slug
+408647@@@Cobalt Shalewing
+408653@@@Boulder Hauler
+408655@@@Morsel Sniffer
+408977@@@Obsidian Gladiator's Slitherdrake
+409032@@@Vicious War Snail
+409034@@@Vicious War Snail
+10.1.0.48776
+408649@@@Scoria-Clad Sporebat

@@ -1347,63 +1347,7 @@ root(ROOTS.Unsorted, {
 				i(204729),	-- Freshly Squeezed Mosswater
 				i(204730),	-- Grub Grub
 				i(204731),	-- Arclight Welcome Letter
-				i(204732),	-- Suffused Choker
-				i(204733),	-- Suffused Shawl
-				i(204735),	-- Suffused Band
 				i(204736),	-- Heatbound Medallion
-				i(204737),	-- Suffused Warglaive
-				i(204738),	-- Suffused Staff
-				i(204739),	-- Suffused Halberd
-				i(204740),	-- Suffused Cudgel
-				i(204741),	-- Suffused Mallet
-				i(204742),	-- Suffused Censer
-				i(204743),	-- Suffused Cleaver
-				i(204744),	-- Suffused Hacker
-				i(204745),	-- Suffused Signet
-				i(204746),	-- Suffused Loop
-				i(204747),	-- Suffused Greatsword
-				i(204748),	-- Suffused Blade
-				i(204749),	-- Suffused Sword
-				i(204750),	-- Suffused Kris
-				i(204751),	-- Suffused Shank
-				i(204752),	-- Suffused Spellblade
-				i(204753),	-- Suffused Rifle
-				i(204754),	-- Suffused Polearm
-				i(204755),	-- Suffused Wand
-				i(204756),	-- Suffused Scepter
-				i(204757),	-- Suffused Barrier
-				i(204758),	-- Suffused Shoulderpads
-				i(204759),	-- Suffused Epaulets
-				i(204760),	-- Suffused Vest
-				i(204761),	-- Suffused Armplates
-				i(204762),	-- Suffused Girdle
-				i(204763),	-- Suffused Mantle
-				i(204764),	-- Suffused Legguards
-				i(204765),	-- Suffused Gauntlets
-				i(204766),	-- Suffused Sabatons
-				i(204767),	-- Suffused Breastplate
-				i(204768),	-- Suffused Helm
-				i(204769),	-- Suffused Bracers
-				i(204770),	-- Suffused Cinch
-				i(204771),	-- Suffused Shoulderguards
-				i(204772),	-- Suffused Greaves
-				i(204773),	-- Suffused Coif
-				i(204774),	-- Suffused Grips
-				i(204775),	-- Suffused Striders
-				i(204776),	-- Suffused Chainmail
-				i(204777),	-- Suffused Bindings
-				i(204778),	-- Suffused Sash
-				i(204779),	-- Suffused Breeches
-				i(204780),	-- Suffused Helm
-				i(204781),	-- Suffused Grips
-				i(204782),	-- Suffused Waders
-				i(204783),	-- Suffused Cuffs
-				i(204784),	-- Suffused Cord
-				i(204785),	-- Suffused Leggings
-				i(204786),	-- Suffused Cowl
-				i(204787),	-- Suffused Handwraps
-				i(204788),	-- Suffused Sandals
-				i(204789),	-- Suffused Vestment
 				i(204790),	-- Strong Sniffin' Soup for Niffen
 				i(204791),	-- Squishy Snack
 				i(204792),	-- Nightlight Conkerbell Sample
@@ -1454,9 +1398,6 @@ root(ROOTS.Unsorted, {
 				i(204892),	-- Time-Lost Brie
 				i(204893),	-- Three-Cheese Cake
 				i(204894),	-- Roland
-				i(204896),	-- Suffused Greatcloak
-				i(204897),	-- Suffused Cloak
-				i(204898),	-- Suffused Drape
 				i(204901),	-- Firecaller's Focus
 				i(204909),	-- 10.1 Precognition Embellishment [PH]
 				i(204911),	-- Propagated Spore
@@ -1712,11 +1653,6 @@ root(ROOTS.Unsorted, {
 				i(202171),	-- Obsidian Flightstone
 				i(202610),	-- Dragonfire Bomb Dispenser
 				i(203963),	-- Beacon to the Beyond
-				i(204081),	-- Shredderizing Glove
-				i(204082),	-- Sappy Buddy
-				i(204086),	-- S.C.A.N.N.E.R. Mk3
-				i(204091),	-- Rocket Shredder 9001
-				i(204183),	-- Volatile Self-Driving Toolbox
 				i(204462),	-- Dracothyst Shard
 				i(204721),	-- Whelpling's Small Chest
 				i(204722),	-- Whelpling's Bountiful Chest
@@ -1807,6 +1743,946 @@ root(ROOTS.Unsorted, {
 				i(205254),	-- Honorary Explorer's Compass
 				i(205255),	-- Niffen Diggin' Mits
 				i(205256),	-- Satchel of Pilfered Recipes
+				i(192779),	-- Seething Slug
+				i(201957),	-- Thrall's Hearthstone
+				i(202025),	-- Keg of Ancestral Ale
+				i(202026),	-- Durotar Coast Crab
+				i(202027),	-- Fresh Talbuk Steak
+				i(202028),	-- Southfury Salmon
+				i(202029),	-- Isle Lemon
+				i(202030),	-- Ground Gorgrond Pepper
+				i(202031),	-- Farahlon Fenugreek
+				i(202032),	-- Feast for the Ancestors
+				i(202106),	-- Chewed Piece of Journal
+				i(202238),	-- Enforcer Grant's Signet
+				i(202267),	-- Clessington Signet
+				i(202401),	-- Cactus Apple Surprise
+				i(202402),	-- Bag of Cactus Apples
+				i(202569),	-- Djaruun, Pillar of the Elder Flame
+				i(202594),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WRIST 1
+				i(202655),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 1
+				i(202706),	-- Zandali Piri Piri
+				i(202707),	-- Un'goro Coconut
+				i(202708),	-- Curried Coconut Crab
+				i(202709),	-- Spicy Seared Talbuk Steak
+				i(202710),	-- Grilled Southfury Salmon
+				i(203152),	-- Lionguard Pauldrons
+				i(203153),	-- Lionguard Greathelm
+				i(203154),	-- Lionguard Greathelm
+				i(203155),	-- Lionguard Pauldrons
+				i(203156),	-- Lionguard Pauldrons
+				i(203157),	-- Lionguard Greathelm
+				i(203158),	-- Lionguard Chestplate
+				i(203159),	-- Lionguard Chestplate
+				i(203160),	-- Lionguard Chestplate
+				i(203161),	-- Lionguard Greatbelt
+				i(203162),	-- Lionguard Greatbelt
+				i(203163),	-- Lionguard Greatbelt
+				i(203164),	-- Lionguard Legguards
+				i(203165),	-- Lionguard Legguards
+				i(203166),	-- Lionguard Legguards
+				i(203167),	-- Lionguard Warboots
+				i(203168),	-- Lionguard Warboots
+				i(203169),	-- Lionguard Warboots
+				i(203170),	-- Lionguard Bracers
+				i(203171),	-- Lionguard Bracers
+				i(203172),	-- Lionguard Bracers
+				i(203173),	-- Lionguard Gauntlets
+				i(203174),	-- Lionguard Gauntlets
+				i(203175),	-- Lionguard Gauntlets
+				i(203176),	-- Lionguard Robe
+				i(203177),	-- Lionguard Robe
+				i(203178),	-- Lionguard Robe
+				i(203179),	-- Kosh'aka Casque
+				i(203180),	-- Kosh'aka Casque
+				i(203181),	-- Kosh'aka Casque
+				i(203185),	-- Kosh'aka Spaulders
+				i(203186),	-- Kosh'aka Spaulders
+				i(203187),	-- Kosh'aka Spaulders
+				i(203188),	-- Kosh'aka Cheststraps
+				i(203189),	-- Kosh'aka Cheststraps
+				i(203190),	-- Kosh'aka Cheststraps
+				i(203191),	-- Kosh'aka Girdle
+				i(203192),	-- Kosh'aka Girdle
+				i(203193),	-- Kosh'aka Girdle
+				i(203194),	-- Kosh'aka Legstraps
+				i(203195),	-- Kosh'aka Legstraps
+				i(203196),	-- Kosh'aka Legstraps
+				i(203197),	-- Kosh'aka Greaves
+				i(203198),	-- Kosh'aka Greaves
+				i(203199),	-- Kosh'aka Greaves
+				i(203200),	-- Kosh'aka Armbands
+				i(203201),	-- Kosh'aka Armbands
+				i(203202),	-- Kosh'aka Armbands
+				i(203203),	-- Kosh'aka Grips
+				i(203204),	-- Kosh'aka Grips
+				i(203205),	-- Kosh'aka Grips
+				i(203207),	-- Kosh'aka Drape
+				i(203208),	-- Kosh'aka Drape
+				i(203209),	-- Kosh'aka Drape
+				i(203395),	-- Research Journal
+				i(203475),	-- Urgent Stormwind Summons
+				i(203679),	-- Ancestral Bloodhoof Totem
+				i(203689),	-- Horn Signet of Tetsos
+				i(203692),	-- Horn Signet of Arrosh
+				i(203697),	-- Horn Signet of Ekrati
+				i(203698),	-- Horn Signet of Talon Hermin
+				i(203725),	-- Display of Strength
+				i(204063),	-- Windsor's Journal
+				i(204084),	-- Ancestor's Might
+				i(204170),	-- Clan Banner
+				i(204171),	-- Enforcer Jennive's Signet
+				i(204172),	-- Enforcer Tera's Signet
+				i(204173),	-- Enforcer Horb's Signet
+				i(204214),	-- Drakefire Amulet
+				i(204461),	-- Shakeel's Remembrance
+				i(204712),	-- Brimming Loamm Niffen Supply Satchel
+				i(204793),	-- Suja's Sweet Salt
+				i(204858),	-- Vantus Rune: Aberrus, the Shadowed Crucible
+				i(204909),	-- Statuette of the Forethoughtful Fiend
+				i(205027),	-- Explorer's Banner
+				i(205034),	-- Enormous Ball of Yarn
+				i(205115),	-- Statuette of the Forethoughtful Fiend
+				i(205120),	-- Thimblerig
+				i(205138),	-- Pattern: Medical Wrap Kit
+				i(205170),	-- Statuette of the Forethoughtful Fiend
+				i(205203),	-- Cobalt Shalewing
+				i(205205),	-- Scoria-Clad Sporebat
+				i(205207),	-- Morsel Sniffer
+				i(205209),	-- Boulder Hauler
+				i(205217),	-- Sharpbeak's Feed
+				i(205229),	-- Magma Serpent Lure
+				i(205233),	-- Obsidian Gladiator's Slitherdrake
+				i(205255),	-- Niffen Diggin' Mitts
+				i(205262),	-- Magmaclaw Lure
+				i(205263),	-- Empowered Flightstone
+				i(205264),	-- Speleothemic Footguards
+				i(205265),	-- Sulfuric Crystal Boots
+				i(205269),	-- Scent-Masking Moccasins
+				i(205270),	-- Mycelial Fabric Sandals
+				i(205271),	-- Speleothemic Cataphract
+				i(205272),	-- Scent-Masking Vest
+				i(205273),	-- Sulfuric Crystal Breastmail
+				i(205275),	-- Mycelial Fabric Tunic
+				i(205276),	-- Deepflayer Lure
+				i(205277),	-- Stolen Key
+				i(205278),	-- Obsidian Combatant's Cloth Goggles
+				i(205279),	-- Obsidian Combatant's Leather Goggles
+				i(205280),	-- Obsidian Combatant's Mail Goggles
+				i(205281),	-- Obsidian Combatant's Plate Goggles
+				i(205282),	-- Schematic: Obsidian Combatant's Cloth Goggles
+				i(205283),	-- Schematic: Obsidian Combatant's Leather Goggles
+				i(205284),	-- Schematic: Obsidian Combatant's Mail Goggles
+				i(205285),	-- Schematic: Obsidian Combatant's Plate Goggles
+				i(205286),	-- Loamm Niffen Tabard
+				i(205288),	-- Buried Niffen Collection
+				i(205289),	-- Crimson Equipment Chest
+				i(205290),	-- Greatcloak of Spun Marrow
+				i(205291),	-- Garrison General's Cape
+				i(205292),	-- Kairoktra's Mane
+				i(205293),	-- Emberdusk's Embrace
+				i(205294),	-- Sandals of Molten Scorn
+				i(205295),	-- Sediment Sifters
+				i(205296),	-- Goopal's Visage
+				i(205297),	-- Flamewielder's Trousers
+				i(205298),	-- Belt of Floating Stone
+				i(205299),	-- Rudiment Cuffs
+				i(205300),	-- Magma Waders
+				i(205301),	-- Hardened Lava Handwraps
+				i(205302),	-- Underlight Headwrap
+				i(205303),	-- Leggings of Flowing Flame
+				i(205304),	-- Snareguard Sash
+				i(205305),	-- Zaralek Arachnid Armbands
+				i(205306),	-- Aquiferous Raiment
+				i(205307),	-- Kob'rok's Scale Sabatons
+				i(205308),	-- Clacking Clawguards
+				i(205309),	-- Loyal Attendant's Gaze
+				i(205310),	-- Legguards of Kaprachu
+				i(205311),	-- Magmascale Pauldrons
+				i(205312),	-- Subterrax's Stout Waistguard
+				i(205313),	-- Brulsef's Wristbraces
+				i(205314),	-- Greathelm of the Emissary
+				i(205315),	-- Colossian Cuirass
+				i(205316),	-- Crystal Stompers
+				i(205317),	-- Crystalpod Gauntlets
+				i(205318),	-- Guardian Golem's Legplates
+				i(205319),	-- Deepflayer Shoulderguards
+				i(205320),	-- Greatbelt of the Stronk
+				i(205321),	-- Brimstone Bracers
+				i(205322),	-- Algeth'ar Exile's Frock
+				i(205323),	-- Rock-Lined Pauldrons
+				i(205324),	-- Moth Queen Mantle
+				i(205325),	-- Crystal Wing Shield
+				i(205326),	-- Crystalweb Chelicera
+				i(205327),	-- Shard of the Veridian King
+				i(205328),	-- Earthen Emissasry's Edge
+				i(205329),	-- Loop of Burning Invocation
+				i(205330),	-- Signet of Colossal Mastery
+				i(205331),	-- Zskorran Cleaver
+				i(205332),	-- Fist of the Demolisher
+				i(205333),	-- Obsidian Amulet of Transmutation
+				i(205334),	-- Flowfy's Smoldering Chain
+				i(205335),	-- Talisman of the Dusk
+				i(205336),	-- Glowing Veridian Necklace
+				i(205337),	-- Formula: Titan Training Matrix V
+				i(205338),	-- Formula: Enchanted Whelpling's Shadowflame Crest
+				i(205339),	-- Formula: Enchanted Wyrm's Shadowflame Crest
+				i(205340),	-- Formula: Enchanted Aspect's Shadowflame Crest
+				i(205341),	-- Winding Slitherdrake: Heavy Scales
+				i(205342),	-- Loamm Niffen Insignia
+				i(205343),	-- Crude Seal of Mak'aru
+				i(205346),	-- Hidden Niffen Treasure
+				i(205347),	-- Gathered Niffen Resources
+				i(205348),	-- Niffen Notebook of Jewelcrafting Knowledge
+				i(205349),	-- Niffen Notebook of Engineering Knowledge
+				i(205350),	-- Niffen Notebook of Leatherworking Knowledge
+				i(205351),	-- Niffen Notebook of Enchanting Knowledge
+				i(205352),	-- Niffen Notebook of Blacksmithing Knowledge
+				i(205353),	-- Niffen Notebook of Alchemy Knowledge
+				i(205354),	-- Niffen Notebook of Inscription Knowledge
+				i(205355),	-- Niffen Notebook of Tailoring Knowledge
+				i(205356),	-- Niffen Notebook of Mining Knowledge
+				i(205357),	-- Niffen Notebook of Skinning Knowledge
+				i(205358),	-- Niffen Notebook of Herbalism Knowledge
+				i(205361),	-- Obsidian Gladiator's Prestigious Cloak
+				i(205362),	-- Obsidian Gladiator's Tabard
+				i(205363),	-- Ensemble: Ornate Black Dragon Labwear
+				i(205365),	-- Loamm Niffen Insignia
+				i(205366),	-- Soupy Clay Pot
+				i(205367),	-- Indebted Researcher's Gift
+				i(205368),	-- Thankful Researcher's Gift
+				i(205369),	-- Appreciative Researcher's Gift
+				i(205370),	-- Researcher's Gift
+				i(205371),	-- Appreciative Researcher's Scrounged Goods
+				i(205372),	-- Indebted Researcher's Scrounged Goods
+				i(205373),	-- Researcher's Scrounged Goods
+				i(205374),	-- Thankful Researcher's Scrounged Goods
+				i(205375),	-- Obsidian Gladiator's Silk Tunic
+				i(205376),	-- Obsidian Gladiator's Silk Blouse
+				i(205377),	-- Obsidian Gladiator's Silk Slippers
+				i(205378),	-- Obsidian Gladiator's Silk Treads
+				i(205379),	-- Obsidian Gladiator's Silk Gloves
+				i(205380),	-- Obsidian Gladiator's Silk Handwraps
+				i(205381),	-- Obsidian Gladiator's Silk Hood
+				i(205382),	-- Obsidian Gladiator's Silk Guise
+				i(205383),	-- Obsidian Gladiator's Silk Leggings
+				i(205384),	-- Obsidian Gladiator's Silk Trousers
+				i(205385),	-- Obsidian Gladiator's Silk Mantle
+				i(205386),	-- Obsidian Gladiator's Silk Amice
+				i(205387),	-- Obsidian Gladiator's Silk Cord
+				i(205388),	-- Obsidian Gladiator's Silk Belt
+				i(205389),	-- Obsidian Gladiator's Silk Wristwraps
+				i(205390),	-- Obsidian Gladiator's Silk Armbands
+				i(205391),	-- Obsidian Gladiator's Chain Vest
+				i(205392),	-- Obsidian Gladiator's Chain Tunic
+				i(205393),	-- Obsidian Gladiator's Chain Sabatons
+				i(205394),	-- Obsidian Gladiator's Chain Boots
+				i(205395),	-- Obsidian Gladiator's Chain Gauntlets
+				i(205396),	-- Obsidian Gladiator's Chain Handguards
+				i(205397),	-- Obsidian Gladiator's Chain Helm
+				i(205398),	-- Obsidian Gladiator's Chain Faceguard
+				i(205399),	-- Obsidian Gladiator's Chain Leggings
+				i(205400),	-- Obsidian Gladiator's Chain Breeches
+				i(205401),	-- Obsidian Gladiator's Chain Monnion
+				i(205402),	-- Obsidian Gladiator's Chain Shoulderguard
+				i(205403),	-- Obsidian Gladiator's Chain Belt
+				i(205404),	-- Obsidian Gladiator's Chain Girdle
+				i(205405),	-- Obsidian Gladiator's Chain Wristguards
+				i(205406),	-- Obsidian Gladiator's Chain Bracers
+				i(205407),	-- Obsidian Gladiator's Cloak
+				i(205408),	-- Obsidian Gladiator's Drape
+				i(205409),	-- Obsidian Gladiator's Shawl
+				i(205410),	-- Pungent Morsel
+				i(205411),	-- Medical Wrap Kit
+				i(205412),	-- Jangly Key
+				i(205413),	-- Obsidian Cobraskin
+				i(205414),	-- Ornate Black Dragon Labwear Coat
+				i(205415),	-- Ornate Black Dragon Labwear Mantle
+				i(205416),	-- Ornate Black Dragon Labwear Cloak
+				i(205417),	-- Fungishine
+				i(205418),	-- Blazing Shadowflame Cinder
+				i(205419),	-- Jrumm's Drum
+				i(205421),	-- Ponzo's Scheming Topper
+				i(205423),	-- Shadowflame Residue Sack
+				i(205424),	-- Bartered Jewelcrafting Notes
+				i(205425),	-- Bartered Engineering Notes
+				i(205426),	-- Bartered Leatherworking Notes
+				i(205427),	-- Bartered Enchanting Notes
+				i(205428),	-- Bartered Blacksmithing Notes
+				i(205429),	-- Bartered Alchemy Notes
+				i(205430),	-- Bartered Inscription Notes
+				i(205431),	-- Bartered Tailoring Notes
+				i(205432),	-- Bartered Mining Notes
+				i(205433),	-- Bartered Skinning Notes
+				i(205434),	-- Bartered Herbalism Notes
+				i(205435),	-- Bartered Jewelcrafting Journal
+				i(205436),	-- Bartered Engineering Journal
+				i(205437),	-- Bartered Leatherworking Journal
+				i(205438),	-- Bartered Enchanting Journal
+				i(205439),	-- Bartered Blacksmithing Journal
+				i(205440),	-- Bartered Alchemy Journal
+				i(205441),	-- Bartered Inscription Journal
+				i(205442),	-- Bartered Tailoring Journal
+				i(205443),	-- Bartered Mining Journal
+				i(205444),	-- Bartered Skinning Journal
+				i(205445),	-- Bartered Herbalism Journal
+				i(205446),	-- Obsidian Gladiator's Cloak
+				i(205447),	-- Obsidian Gladiator's Drape
+				i(205448),	-- Obsidian Gladiator's Shawl
+				i(205451),	-- Flawless Crystal Scale
+				i(205452),	-- Ponzo's Cream
+				i(205453),	-- Glimmerogg Timeshare Voucher
+				i(205454),	-- Researchers Wheel Barrow
+				i(205456),	-- Lost Dragonscale
+				i(205457),	-- Delicate Crystal Shell
+				i(205458),	-- Lost Dragonscale
+				i(205459),	-- Luminous Gloop
+				i(205460),	-- Pulverized Living Earth
+				i(205461),	-- Vicious Stoneclaw
+				i(205462),	-- Scavenged Djaradin Relic
+				i(205463),	-- Skornace's Molten Pocket
+				i(205464),	-- Granite Scales
+				i(205465),	-- Gleaming Rock Viper Eye
+				i(205466),	-- Regurgitated Spores
+				i(205467),	-- Preserved Krolusk Crest
+				i(205468),	-- Hooked Tail Claw
+				i(205469),	-- Serrated Sporebat Spine
+				i(205470),	-- Torn Deep Scales
+				i(205471),	-- Slimy Deepfish Fin
+				i(205472),	-- Wad of Sparkling Somethings
+				i(205473),	-- Obsidian Gladiator's Plate Chestguard
+				i(205474),	-- Obsidian Gladiator's Plate Chestplate
+				i(205475),	-- Obsidian Gladiator's Plate Warboots
+				i(205476),	-- Obsidian Gladiator's Plate Stompers
+				i(205477),	-- Obsidian Gladiator's Plate Gauntlets
+				i(205478),	-- Obsidian Gladiator's Plate Handguards
+				i(205479),	-- Obsidian Gladiator's Plate Helm
+				i(205480),	-- Obsidian Gladiator's Plate Helmet
+				i(205481),	-- Obsidian Gladiator's Plate Legguards
+				i(205482),	-- Obsidian Gladiator's Plate Wargreaves
+				i(205483),	-- Obsidian Gladiator's Plate Shoulders
+				i(205484),	-- Obsidian Gladiator's Plate Pauldrons
+				i(205485),	-- Obsidian Gladiator's Plate Girdle
+				i(205486),	-- Obsidian Gladiator's Plate Greatbelt
+				i(205487),	-- Obsidian Gladiator's Plate Wristguards
+				i(205488),	-- Obsidian Gladiator's Plate Vambraces
+				i(205489),	-- Obsidian Gladiator's Silk Robe
+				i(205490),	-- Obsidian Gladiator's Silk Vestments
+				i(205491),	-- Obsidian Gladiator's Silk Slippers
+				i(205492),	-- Obsidian Gladiator's Silk Treads
+				i(205493),	-- Obsidian Gladiator's Silk Gloves
+				i(205494),	-- Obsidian Gladiator's Silk Handwraps
+				i(205495),	-- Obsidian Gladiator's Silk Hood
+				i(205496),	-- Obsidian Gladiator's Silk Guise
+				i(205497),	-- Obsidian Gladiator's Silk Leggings
+				i(205498),	-- Obsidian Gladiator's Silk Trousers
+				i(205499),	-- Obsidian Gladiator's Silk Mantle
+				i(205500),	-- Obsidian Gladiator's Silk Amice
+				i(205501),	-- Obsidian Gladiator's Silk Cord
+				i(205502),	-- Obsidian Gladiator's Silk Belt
+				i(205503),	-- Obsidian Gladiator's Silk Wristwraps
+				i(205504),	-- Obsidian Gladiator's Silk Armbands
+				i(205505),	-- Obsidian Gladiator's Silk Robe
+				i(205506),	-- Obsidian Gladiator's Silk Vestments
+				i(205507),	-- Obsidian Gladiator's Silk Slippers
+				i(205508),	-- Obsidian Gladiator's Silk Treads
+				i(205509),	-- Obsidian Gladiator's Silk Gloves
+				i(205510),	-- Obsidian Gladiator's Silk Handwraps
+				i(205511),	-- Obsidian Gladiator's Silk Hood
+				i(205512),	-- Obsidian Gladiator's Silk Guise
+				i(205513),	-- Obsidian Gladiator's Silk Leggings
+				i(205514),	-- Obsidian Gladiator's Silk Trousers
+				i(205515),	-- Obsidian Gladiator's Silk Mantle
+				i(205516),	-- Obsidian Gladiator's Silk Amice
+				i(205517),	-- Obsidian Gladiator's Silk Cord
+				i(205518),	-- Obsidian Gladiator's Silk Belt
+				i(205519),	-- Obsidian Gladiator's Silk Wristwraps
+				i(205520),	-- Obsidian Gladiator's Silk Armbands
+				i(205521),	-- Obsidian Gladiator's Leather Vest
+				i(205522),	-- Obsidian Gladiator's Leather Jerkin
+				i(205523),	-- Obsidian Gladiator's Leather Boots
+				i(205524),	-- Obsidian Gladiator's Leather Treads
+				i(205525),	-- Obsidian Gladiator's Leather Gloves
+				i(205526),	-- Obsidian Gladiator's Leather Grips
+				i(205527),	-- Obsidian Gladiator's Leather Helm
+				i(205528),	-- Obsidian Gladiator's Leather Mask
+				i(205529),	-- Obsidian Gladiator's Leather Breeches
+				i(205530),	-- Obsidian Gladiator's Leather Legwraps
+				i(205531),	-- Obsidian Gladiator's Leather Spaulders
+				i(205532),	-- Obsidian Gladiator's Leather Shoulderpads
+				i(205533),	-- Obsidian Gladiator's Leather Belt
+				i(205534),	-- Obsidian Gladiator's Leather Strap
+				i(205535),	-- Obsidian Gladiator's Leather Wristwraps
+				i(205536),	-- Obsidian Gladiator's Leather Wristguards
+				i(205537),	-- Obsidian Gladiator's Leather Vest
+				i(205538),	-- Obsidian Gladiator's Leather Jerkin
+				i(205539),	-- Obsidian Gladiator's Leather Boots
+				i(205540),	-- Obsidian Gladiator's Leather Treads
+				i(205541),	-- Obsidian Gladiator's Leather Gloves
+				i(205542),	-- Obsidian Gladiator's Leather Grips
+				i(205543),	-- Obsidian Gladiator's Leather Helm
+				i(205544),	-- Obsidian Gladiator's Leather Mask
+				i(205545),	-- Obsidian Gladiator's Leather Breeches
+				i(205546),	-- Obsidian Gladiator's Leather Legwraps
+				i(205547),	-- Obsidian Gladiator's Leather Spaulders
+				i(205548),	-- Obsidian Gladiator's Leather Shoulderpads
+				i(205549),	-- Obsidian Gladiator's Leather Belt
+				i(205550),	-- Obsidian Gladiator's Leather Strap
+				i(205551),	-- Obsidian Gladiator's Leather Wristwraps
+				i(205552),	-- Obsidian Gladiator's Leather Wristguards
+				i(205553),	-- Obsidian Gladiator's Leather Vest
+				i(205554),	-- Obsidian Gladiator's Leather Jerkin
+				i(205555),	-- Obsidian Gladiator's Leather Boots
+				i(205556),	-- Obsidian Gladiator's Leather Treads
+				i(205557),	-- Obsidian Gladiator's Leather Gloves
+				i(205558),	-- Obsidian Gladiator's Leather Grips
+				i(205559),	-- Obsidian Gladiator's Leather Helm
+				i(205560),	-- Obsidian Gladiator's Leather Mask
+				i(205561),	-- Obsidian Gladiator's Leather Breeches
+				i(205562),	-- Obsidian Gladiator's Leather Legwraps
+				i(205563),	-- Obsidian Gladiator's Leather Spaulders
+				i(205564),	-- Obsidian Gladiator's Leather Shoulderpads
+				i(205565),	-- Obsidian Gladiator's Leather Belt
+				i(205566),	-- Obsidian Gladiator's Leather Strap
+				i(205567),	-- Obsidian Gladiator's Leather Wristwraps
+				i(205568),	-- Obsidian Gladiator's Leather Wristguards
+				i(205569),	-- Obsidian Gladiator's Leather Vest
+				i(205570),	-- Obsidian Gladiator's Leather Jerkin
+				i(205571),	-- Obsidian Gladiator's Leather Boots
+				i(205572),	-- Obsidian Gladiator's Leather Treads
+				i(205573),	-- Obsidian Gladiator's Leather Gloves
+				i(205574),	-- Obsidian Gladiator's Leather Grips
+				i(205575),	-- Obsidian Gladiator's Leather Helm
+				i(205576),	-- Obsidian Gladiator's Leather Mask
+				i(205577),	-- Obsidian Gladiator's Leather Breeches
+				i(205578),	-- Obsidian Gladiator's Leather Legwraps
+				i(205579),	-- Obsidian Gladiator's Leather Spaulders
+				i(205580),	-- Obsidian Gladiator's Leather Shoulderpads
+				i(205581),	-- Obsidian Gladiator's Leather Belt
+				i(205582),	-- Obsidian Gladiator's Leather Strap
+				i(205583),	-- Obsidian Gladiator's Leather Wristwraps
+				i(205584),	-- Obsidian Gladiator's Leather Wristguards
+				i(205585),	-- Obsidian Gladiator's Chain Vest
+				i(205586),	-- Obsidian Gladiator's Chain Tunic
+				i(205587),	-- Obsidian Gladiator's Chain Sabatons
+				i(205588),	-- Obsidian Gladiator's Chain Boots
+				i(205589),	-- Obsidian Gladiator's Chain Gauntlets
+				i(205590),	-- Obsidian Gladiator's Chain Handguards
+				i(205591),	-- Obsidian Gladiator's Chain Helm
+				i(205592),	-- Obsidian Gladiator's Chain Faceguard
+				i(205593),	-- Obsidian Gladiator's Chain Leggings
+				i(205594),	-- Obsidian Gladiator's Chain Breeches
+				i(205595),	-- Obsidian Gladiator's Chain Monnion
+				i(205596),	-- Obsidian Gladiator's Chain Shoulderguard
+				i(205597),	-- Obsidian Gladiator's Chain Belt
+				i(205598),	-- Obsidian Gladiator's Chain Girdle
+				i(205599),	-- Obsidian Gladiator's Chain Wristguards
+				i(205600),	-- Obsidian Gladiator's Chain Bracers
+				i(205601),	-- Obsidian Gladiator's Chain Vestments
+				i(205602),	-- Obsidian Gladiator's Chain Robe
+				i(205603),	-- Obsidian Gladiator's Chain Sabatons
+				i(205604),	-- Obsidian Gladiator's Chain Boots
+				i(205605),	-- Obsidian Gladiator's Chain Gauntlets
+				i(205606),	-- Obsidian Gladiator's Chain Handguards
+				i(205607),	-- Obsidian Gladiator's Chain Helm
+				i(205608),	-- Obsidian Gladiator's Chain Faceguard
+				i(205609),	-- Obsidian Gladiator's Chain Leggings
+				i(205610),	-- Obsidian Gladiator's Chain Breeches
+				i(205611),	-- Obsidian Gladiator's Chain Monnion
+				i(205612),	-- Obsidian Gladiator's Chain Shoulderguard
+				i(205613),	-- Obsidian Gladiator's Chain Belt
+				i(205614),	-- Obsidian Gladiator's Chain Girdle
+				i(205615),	-- Obsidian Gladiator's Chain Wristguards
+				i(205616),	-- Obsidian Gladiator's Plate Chestguard
+				i(205617),	-- Obsidian Gladiator's Plate Chestplate
+				i(205618),	-- Obsidian Gladiator's Plate Warboots
+				i(205619),	-- Obsidian Gladiator's Plate Stompers
+				i(205620),	-- Obsidian Gladiator's Plate Gauntlets
+				i(205621),	-- Obsidian Gladiator's Plate Handguards
+				i(205622),	-- Obsidian Gladiator's Plate Helm
+				i(205623),	-- Obsidian Gladiator's Plate Helmet
+				i(205624),	-- Obsidian Gladiator's Plate Legguards
+				i(205625),	-- Obsidian Gladiator's Plate Wargreaves
+				i(205626),	-- Obsidian Gladiator's Plate Shoulders
+				i(205627),	-- Obsidian Gladiator's Plate Pauldrons
+				i(205628),	-- Obsidian Gladiator's Plate Girdle
+				i(205629),	-- Obsidian Gladiator's Plate Greatbelt
+				i(205630),	-- Obsidian Gladiator's Plate Wristguards
+				i(205631),	-- Obsidian Gladiator's Plate Vambraces
+				i(205632),	-- Obsidian Gladiator's Plate Chestguard
+				i(205633),	-- Obsidian Gladiator's Plate Chestplate
+				i(205634),	-- Obsidian Gladiator's Plate Warboots
+				i(205635),	-- Obsidian Gladiator's Plate Stompers
+				i(205636),	-- Obsidian Gladiator's Plate Gauntlets
+				i(205637),	-- Obsidian Gladiator's Plate Handguards
+				i(205638),	-- Obsidian Gladiator's Plate Helm
+				i(205639),	-- Obsidian Gladiator's Plate Helmet
+				i(205640),	-- Obsidian Gladiator's Plate Legguards
+				i(205641),	-- Obsidian Gladiator's Plate Wargreaves
+				i(205642),	-- Obsidian Gladiator's Plate Shoulders
+				i(205643),	-- Obsidian Gladiator's Plate Pauldrons
+				i(205644),	-- Obsidian Gladiator's Plate Girdle
+				i(205645),	-- Obsidian Gladiator's Plate Greatbelt
+				i(205646),	-- Obsidian Gladiator's Plate Wristguards
+				i(205647),	-- Obsidian Gladiator's Plate Vambraces
+				i(205648),	-- Obsidian Gladiator's Chain Bracers
+				i(205649),	-- Obsidian Gladiator's Cloak
+				i(205650),	-- Obsidian Gladiator's Drape
+				i(205651),	-- Obsidian Gladiator's Shawl
+				i(205652),	-- Obsidian Gladiator's Cloak
+				i(205653),	-- Obsidian Gladiator's Drape
+				i(205654),	-- Obsidian Gladiator's Shawl
+				i(205655),	-- Obsidian Gladiator's Cloak
+				i(205656),	-- Obsidian Gladiator's Drape
+				i(205657),	-- Obsidian Gladiator's Shawl
+				i(205658),	-- Obsidian Gladiator's Cloak
+				i(205659),	-- Obsidian Gladiator's Drape
+				i(205660),	-- Obsidian Gladiator's Shawl
+				i(205661),	-- Obsidian Gladiator's Cloak
+				i(205662),	-- Obsidian Gladiator's Drape
+				i(205663),	-- Obsidian Gladiator's Shawl
+				i(205664),	-- Obsidian Gladiator's Cloak
+				i(205665),	-- Obsidian Gladiator's Drape
+				i(205666),	-- Obsidian Gladiator's Shawl
+				i(205667),	-- Obsidian Gladiator's Cloak
+				i(205668),	-- Obsidian Gladiator's Drape
+				i(205669),	-- Obsidian Gladiator's Shawl
+				i(205670),	-- Obsidian Gladiator's Cloak
+				i(205671),	-- Obsidian Gladiator's Drape
+				i(205672),	-- Obsidian Gladiator's Shawl
+				i(205673),	-- Obsidian Gladiator's Cloak
+				i(205674),	-- Obsidian Gladiator's Drape
+				i(205675),	-- Obsidian Gladiator's Shawl
+				i(205676),	-- Obsidian Gladiator's Cloak
+				i(205677),	-- Obsidian Gladiator's Drape
+				i(205678),	-- Obsidian Gladiator's Shawl
+				i(205679),	-- Obsidian Gladiator's Cloak
+				i(205680),	-- Obsidian Gladiator's Drape
+				i(205681),	-- Obsidian Gladiator's Shawl
+				i(193377),	-- Gerald
+				i(202180),	-- Pipsee Cheese Snack
+				i(202438),	-- Manteau of the Onyx Crucible
+				i(202439),	-- Warbands of the Onyx Crucible
+				i(202440),	-- Insignia of the Onyx Crucible
+				i(202441),	-- Pauldrons of the Onyx Crucible
+				i(202442),	-- Legplates of the Onyx Crucible
+				i(202443),	-- Thraexhelm of the Onyx Crucible
+				i(202444),	-- Handguards of the Onyx Crucible
+				i(202445),	-- Ironstriders of the Onyx Crucible
+				i(202446),	-- Battlechest of the Onyx Crucible
+				i(202447),	-- Heartfire Sentinel's Pelerine
+				i(202448),	-- Heartfire Sentinel's Blessed Bindings
+				i(202449),	-- Heartfire Sentinel's Waistguard
+				i(202450),	-- Heartfire Sentinel's Steelwings
+				i(202451),	-- Heartfire Sentinel's Cuisses
+				i(202452),	-- Heartfire Sentinel's Forgehelm
+				i(202453),	-- Heartfire Sentinel's Protectors
+				i(202454),	-- Heartfire Sentinel's Greatboots
+				i(202455),	-- Heartfire Sentinel's Cassock
+				i(202456),	-- Lingering Phantom's Drape
+				i(202457),	-- Lingering Phantom's Vambraces
+				i(202458),	-- Lingering Phantom's Deathlink
+				i(202459),	-- Lingering Phantom's Shoulderplates
+				i(202460),	-- Lingering Phantom's Schynbalds
+				i(202461),	-- Lingering Phantom's Dreadhorns
+				i(202462),	-- Lingering Phantom's Gauntlets
+				i(202463),	-- Lingering Phantom's Stompers
+				i(202464),	-- Lingering Phantom's Plackart
+				i(202465),	-- Pelisse of the Cinderwolf
+				i(202466),	-- Runebraces of the Cinderwolf
+				i(202467),	-- Faulds of the Cinderwolf
+				i(202468),	-- Thunderpads of the Cinderwolf
+				i(202469),	-- Braies of the Cinderwolf
+				i(202470),	-- Spangenhelm of the Cinderwolf
+				i(202471),	-- Knuckles of the Cinderwolf
+				i(202472),	-- Sollerets of the Cinderwolf
+				i(202473),	-- Adornments of the Cinderwolf
+				i(202474),	-- Ashen Predator's Cloak
+				i(202475),	-- Ashen Predator's Skinwraps
+				i(202476),	-- Ashen Predator's Strap
+				i(202477),	-- Ashen Predator's Trophy
+				i(202478),	-- Ashen Predator's Poleyns
+				i(202479),	-- Ashen Predator's Faceguard
+				i(202480),	-- Ashen Predator's Skinners
+				i(202481),	-- Ashen Predator's Chasers
+				i(202482),	-- Ashen Predator's Sling Vest
+				i(202483),	-- Crest of Obsidian Secrets
+				i(202484),	-- Scalebands of Obsidian Secrets
+				i(202485),	-- Lasso of Obsidian Secrets
+				i(202486),	-- Wingspan of Obsidian Secrets
+				i(202487),	-- Chausses of Obsidian Secrets
+				i(202488),	-- Crown of Obsidian Secrets
+				i(202489),	-- Claws of Obsidian Secrets
+				i(202490),	-- Greatboots of Obsidian Secrets
+				i(202491),	-- Hauberk of Obsidian Secrets
+				i(202492),	-- Lurking Specter's Capelet
+				i(202493),	-- Lurking Specter's Armwraps
+				i(202494),	-- Lurking Specter's Edgeband
+				i(202495),	-- Lurking Specter's Shoulderblades
+				i(202496),	-- Lurking Specter's Tights
+				i(202497),	-- Lurking Specter's Visage
+				i(202498),	-- Lurking Specter's Handgrips
+				i(202499),	-- Lurking Specter's Tabi
+				i(202500),	-- Lurking Specter's Brigandine
+				i(202501),	-- Drape of Forged Vermillion
+				i(202502),	-- Forged Vermillion Coils
+				i(202503),	-- Forged Vermillion Blackbelt
+				i(202504),	-- Forged Vermillion Spines
+				i(202505),	-- Forged Vermillion Pantaloons
+				i(202506),	-- Forged Vermillion Cover
+				i(202507),	-- Forged Vermillion Fists
+				i(202508),	-- Forged Vermillion Footpads
+				i(202509),	-- Forged Vermillion Cuirass
+				i(202510),	-- Foliage of the Autumn Blaze
+				i(202511),	-- Bands of the Autumn Blaze
+				i(202512),	-- Garland of the Autumn Blaze
+				i(202513),	-- Mantle of the Autumn Blaze
+				i(202514),	-- Pants of the Autumn Blaze
+				i(202515),	-- Bough of the Autumn Blaze
+				i(202516),	-- Handguards of the Autumn Blaze
+				i(202517),	-- Hooves of the Autumn Blaze
+				i(202518),	-- Chestroots of the Autumn Blaze
+				i(202519),	-- Kinslayer's Shawl
+				i(202520),	-- Kinslayer's Bindings
+				i(202521),	-- Kinslayer's Sash
+				i(202522),	-- Kinslayer's Tainted Spaulders
+				i(202523),	-- Kinslayer's Legguards
+				i(202524),	-- Kinslayer's Hood
+				i(202525),	-- Kinslayer's Bloodstained Grips
+				i(202526),	-- Kinslayer's Gaiters
+				i(202527),	-- Kinslayer's Vest
+				i(202528),	-- Shawl of the Sinister Savant
+				i(202529),	-- Wristwraps of the Sinister Savant
+				i(202530),	-- Skullstrap of the Sinister Savant
+				i(202531),	-- Amice of the Sinister Savant
+				i(202532),	-- Leggings of the Sinister Savant
+				i(202533),	-- Grimhorns of the Sinister Savant
+				i(202534),	-- Grips of the Sinister Savant
+				i(202535),	-- Sandals of the Sinister Savant
+				i(202536),	-- Cursed Robes of the Sinister Savant
+				i(202537),	-- Shroud of The Furnace Seraph
+				i(202538),	-- Cuffs of The Furnace Seraph
+				i(202539),	-- Sash of The Furnace Seraph
+				i(202540),	-- Devotion of The Furnace Seraph
+				i(202541),	-- Breeches of The Furnace Seraph
+				i(202542),	-- Mask of The Furnace Seraph
+				i(202543),	-- Grasp of The Furnace Seraph
+				i(202544),	-- Sabatons of The Furnace Seraph
+				i(202545),	-- Command of The Furnace Seraph
+				i(202546),	-- Underlight Conjurer's Cape
+				i(202547),	-- Underlight Conjurer's Bracelets
+				i(202548),	-- Underlight Conjurer's Charmbelt
+				i(202549),	-- Underlight Conjurer's Aurora
+				i(202550),	-- Underlight Conjurer's Trousers
+				i(202551),	-- Underlight Conjurer's Arcanocowl
+				i(202552),	-- Underlight Conjurer's Gloves
+				i(202553),	-- Underlight Conjurer's Treads
+				i(202554),	-- Underlight Conjurer's Vestment
+				i(204448),	-- Stone Spitter
+				i(204449),	-- Black Earth Glaive
+				i(204450),	-- Draconic Cleaver
+				i(204451),	-- Earth-Bound Saber
+				i(204452),	-- Earth Warding Spire
+				i(204453),	-- Black Dragon's Reach
+				i(204454),	-- Dragon Maul
+				i(204455),	-- Scaled Titan's Claw
+				i(204456),	-- Proto-Drake Slicer
+				i(204457),	-- Almost Immovable Wall
+				i(204458),	-- Centered Stone Focus
+				i(204459),	-- Wand of Shifting Stone
+				i(204461),	-- Shalkeel's Remembrance
+				i(204581),	-- Endowed Robes
+				i(204582),	-- Endowed Slippers
+				i(204583),	-- Endowed Mitts
+				i(204584),	-- Endowed Hood
+				i(204585),	-- Endowed Breeches
+				i(204586),	-- Endowed Mantle
+				i(204587),	-- Endowed Sash
+				i(204588),	-- Endowed Bindings
+				i(204589),	-- Inherited Raiment
+				i(204590),	-- Inherited Treads
+				i(204591),	-- Inherited Gloves
+				i(204592),	-- Inherited Mask
+				i(204593),	-- Inherited Leggings
+				i(204594),	-- Inherited Epaulets
+				i(204595),	-- Inherited Cincture
+				i(204596),	-- Inherited Wristbands
+				i(204597),	-- Bequeathed Chainmail
+				i(204598),	-- Bequeathed Striders
+				i(204599),	-- Bequeathed Gauntlets
+				i(204600),	-- Bequeathed Cowl
+				i(204601),	-- Bequeathed Tassets
+				i(204602),	-- Bequeathed Spaulders
+				i(204603),	-- Bequeathed Cinch
+				i(204604),	-- Bequeathed Bracers
+				i(204605),	-- Bestowed Chestplate
+				i(204606),	-- Bestowed Stompers
+				i(204607),	-- Bestowed Crushers
+				i(204608),	-- Bestowed Greathelm
+				i(204609),	-- Bestowed Greaves
+				i(204610),	-- Bestowed Pauldrons
+				i(204611),	-- Bestowed Girdle
+				i(204612),	-- Bestowed Vambraces
+				i(204616),	-- Endowed Wrap
+				i(204617),	-- Bestowed Cape
+				i(204618),	-- Bequeathed Drape
+				i(204619),	-- Inherited Cloak
+				i(204620),	-- Dark Earth Glaive
+				i(204624),	-- Staff of the Unlit Sky
+				i(204625),	-- Dark Nail
+				i(204626),	-- Rock Shooter
+				i(204627),	-- Proto-Drake Ripper
+				i(204628),	-- Scaled Titan's Tooth
+				i(204629),	-- Grounded Stone Focus
+				i(204630),	-- Nearly Unbreakable Wall
+				i(204859),	-- Vantus Rune: Aberrus, the Shadowed Crucible
+				i(204860),	-- Vantus Rune: Aberrus, the Shadowed Crucible
+				i(205141),	-- Pattern: Explorer's Banner
+				i(205366),	-- Dripping Clay Pot
+				i(205471),	-- Slimy Deepsea Fin
+				i(205489),	-- Obsidian Gladiator's Silk Tunic
+				i(205490),	-- Obsidian Gladiator's Silk Blouse
+				i(205601),	-- Obsidian Gladiator's Chain Vest
+				i(205602),	-- Obsidian Gladiator's Chain Tunic
+				i(205616),	-- Obsidian Gladiator's Plate Battlerobe
+				i(205682),	-- Large Shadowflame Residue Sack
+				i(205684),	-- Forbidden Flounder
+				i(205686),	-- Clacking Claw
+				i(205688),	-- Glutinous Glitterscale Glob
+				i(205689),	-- Earthen Key
+				i(205690),	-- Barter-B-Q
+				i(205691),	-- Hypnotic Murloc Lure
+				i(205692),	-- Stellaviatori Soup
+				i(205693),	-- Latticed Stinkhorn
+				i(205695),	-- Dense Salamanther Skull
+				i(205696),	-- Amethyst Deceiver Mushroom
+				i(205697),	-- Gelatinous Egg Mass
+				i(205698),	-- Mangled Niffen Pack
+				i(205699),	-- Rock Worm Frills
+				i(205700),	-- Sensitive Scotopic Eye
+				i(205702),	-- Obsidian Gladiator's Ring
+				i(205703),	-- Obsidian Gladiator's Band
+				i(205704),	-- Obsidian Gladiator's Signet
+				i(205705),	-- Obsidian Gladiator's Necklace
+				i(205706),	-- Obsidian Gladiator's Pendant
+				i(205707),	-- Obsidian Gladiator's Amulet
+				i(205708),	-- Obsidian Gladiator's Badge of Ferocity
+				i(205709),	-- Obsidian Gladiator's Insignia of Alacrity
+				i(205710),	-- Obsidian Gladiator's Emblem
+				i(205711),	-- Obsidian Gladiator's Medallion
+				i(205712),	-- Obsidian Gladiator's Sigil of Adaptation
+				i(205714),	-- Obsidian Aspirant's Plate Helm
+				i(205715),	-- Obsidian Aspirant's Silk Robe
+				i(205716),	-- Obsidian Aspirant's Plate Chestplate
+				i(205717),	-- Obsidian Aspirant's Chain Vest
+				i(205718),	-- Obsidian Aspirant's Leather Vest
+				i(205719),	-- Obsidian Aspirant's Plate Warboots
+				i(205720),	-- Obsidian Aspirant's Silk Treads
+				i(205721),	-- Obsidian Aspirant's Chain Sabatons
+				i(205722),	-- Obsidian Aspirant's Leather Boots
+				i(205723),	-- Obsidian Aspirant's Leather Gloves
+				i(205724),	-- Obsidian Aspirant's Plate Gauntlets
+				i(205725),	-- Obsidian Aspirant's Silk Gloves
+				i(205726),	-- Obsidian Aspirant's Chain Gauntlets
+				i(205727),	-- Obsidian Aspirant's Silk Hood
+				i(205728),	-- Obsidian Aspirant's Chain Helm
+				i(205729),	-- Obsidian Aspirant's Leather Helm
+				i(205730),	-- Obsidian Aspirant's Plate Legguards
+				i(205731),	-- Obsidian Aspirant's Silk Leggings
+				i(205732),	-- Obsidian Aspirant's Chain Leggings
+				i(205733),	-- Obsidian Aspirant's Leather Breeches
+				i(205734),	-- Obsidian Aspirant's Leather Spaulders
+				i(205735),	-- Obsidian Aspirant's Plate Shoulders
+				i(205736),	-- Obsidian Aspirant's Silk Mantle
+				i(205737),	-- Obsidian Aspirant's Chain Spaulders
+				i(205738),	-- Obsidian Aspirant's Plate Girdle
+				i(205739),	-- Obsidian Aspirant's Silk Cord
+				i(205740),	-- Obsidian Aspirant's Chain Belt
+				i(205741),	-- Obsidian Aspirant's Leather Belt
+				i(205742),	-- Obsidian Aspirant's Silk Wristwraps
+				i(205743),	-- Obsidian Aspirant's Plate Cuffs
+				i(205744),	-- Obsidian Aspirant's Chain Wristwraps
+				i(205745),	-- Obsidian Aspirant's Leather Wristwraps
+				i(205746),	-- Obsidian Aspirant's Plate Headguard
+				i(205747),	-- Obsidian Aspirant's Silk Vestments
+				i(205748),	-- Obsidian Aspirant's Plate Armor
+				i(205749),	-- Obsidian Aspirant's Chain Tunic
+				i(205750),	-- Obsidian Aspirant's Leather Tunic
+				i(205751),	-- Obsidian Aspirant's Plate Stompers
+				i(205752),	-- Obsidian Aspirant's Silk Footwraps
+				i(205753),	-- Obsidian Aspirant's Chain Stompers
+				i(205754),	-- Obsidian Aspirant's Leather Footpads
+				i(205755),	-- Obsidian Aspirant's Leather Grips
+				i(205756),	-- Obsidian Aspirant's Plate Handguards
+				i(205757),	-- Obsidian Aspirant's Silk Handwraps
+				i(205758),	-- Obsidian Aspirant's Chain Handguards
+				i(205759),	-- Obsidian Aspirant's Silk Cover
+				i(205760),	-- Obsidian Aspirant's Chain Headguard
+				i(205761),	-- Obsidian Aspirant's Leather Mask
+				i(205762),	-- Obsidian Aspirant's Plate Wargreaves
+				i(205763),	-- Obsidian Aspirant's Silk Legwraps
+				i(205764),	-- Obsidian Aspirant's Chain Wargreaves
+				i(205765),	-- Obsidian Aspirant's Leather Leggings
+				i(205766),	-- Obsidian Aspirant's Leather Mantle
+				i(205767),	-- Obsidian Aspirant's Plate Pauldrons
+				i(205768),	-- Obsidian Aspirant's Silk Shawl
+				i(205769),	-- Obsidian Aspirant's Chain Shoulderguards
+				i(205770),	-- Obsidian Aspirant's Plate Greatbelt
+				i(205771),	-- Obsidian Aspirant's Silk Belt
+				i(205772),	-- Obsidian Aspirant's Chain Clasp
+				i(205773),	-- Obsidian Aspirant's Leather Cord
+				i(205774),	-- Obsidian Aspirant's Silk Bindings
+				i(205775),	-- Obsidian Aspirant's Plate Armguards
+				i(205776),	-- Obsidian Aspirant's Chain Bracer
+				i(205777),	-- Obsidian Aspirant's Leather Armguards
+				i(205778),	-- Obsidian Aspirant's Badge of Ferocity
+				i(205779),	-- Obsidian Aspirant's Medallion
+				i(205780),	-- Obsidian Aspirant's Insignia of Alacrity
+				i(205781),	-- Obsidian Aspirant's Emblem
+				i(205782),	-- Obsidian Aspirant's Sigil of Adaptation
+				i(205783),	-- Obsidian Aspirant's Ring
+				i(205784),	-- Obsidian Aspirant's Band
+				i(205785),	-- Obsidian Aspirant's Signet
+				i(205786),	-- Obsidian Aspirant's Necklace
+				i(205787),	-- Obsidian Aspirant's Choker
+				i(205788),	-- Obsidian Aspirant's Pendant
+				i(205789),	-- Obsidian Aspirant's Cloak
+				i(205790),	-- Obsidian Aspirant's Drape
+				i(205791),	-- Obsidian Aspirant's Cape
+				i(205792),	-- Obsidian Aspirant's Greatcloak
+				i(205793),	-- Skitter Souf-fly
+				i(205794),	-- Beetle Juice
+				i(205795),	-- Wriggling Worm
+				i(205796),	-- Molten Lava Pack
+				i(205797),	-- Filthy Bundle
+				i(205798),	-- PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
+				i(205799),	-- PVP Upgrade - Class Sets - Warrior - Armor - Plate - Legs
+				i(205800),	-- PVP Upgrade - Class Sets - Warrior - Armor - Plate - Head
+				i(205801),	-- PVP Upgrade - Class Sets - Warrior - Armor - Plate - Hand
+				i(205802),	-- PVP Upgrade - Class Sets - Warrior - Armor - Plate - Chest
+				i(205803),	-- PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
+				i(205804),	-- PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
+				i(205805),	-- PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
+				i(205806),	-- PVP Upgrade - Class Sets - Paladin - Armor - Plate - Hand
+				i(205807),	-- PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
+				i(205808),	-- PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Shoulder
+				i(205809),	-- PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Legs
+				i(205810),	-- PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Head
+				i(205811),	-- PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Hand
+				i(205812),	-- PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Chest
+				i(205813),	-- PVP Upgrade - Class Sets - Shaman - Armor - Mail - Shoulder
+				i(205814),	-- PVP Upgrade - Class Sets - Shaman - Armor - Mail - Legs
+				i(205815),	-- PVP Upgrade - Class Sets - Shaman - Armor - Mail - Head
+				i(205816),	-- PVP Upgrade - Class Sets - Shaman - Armor - Mail - Hand
+				i(205817),	-- PVP Upgrade - Class Sets - Shaman - Armor - Mail - Chest
+				i(205818),	-- PVP Upgrade - Class Sets - Hunter - Armor - Mail - Shoulder
+				i(205819),	-- PVP Upgrade - Class Sets - Hunter - Armor - Mail - Legs
+				i(205820),	-- PVP Upgrade - Class Sets - Hunter - Armor - Mail - Head
+				i(205821),	-- PVP Upgrade - Class Sets - Hunter - Armor - Mail - Hand
+				i(205822),	-- PVP Upgrade - Class Sets - Hunter - Armor - Mail - Chest
+				i(205823),	-- PVP Upgrade - Class Sets - Evoker - Armor - Mail - Shoulder
+				i(205824),	-- PVP Upgrade - Class Sets - Evoker - Armor - Mail - Legs
+				i(205825),	-- PVP Upgrade - Class Sets - Evoker - Armor - Mail - Head
+				i(205826),	-- PVP Upgrade - Class Sets - Evoker - Armor - Mail - Hand
+				i(205827),	-- PVP Upgrade - Class Sets - Evoker - Armor - Mail - Chest
+				i(205828),	-- PVP Upgrade - Class Sets - Rogue - Armor - Leather - Shoulder
+				i(205829),	-- PVP Upgrade - Class Sets - Rogue - Armor - Leather - Legs
+				i(205830),	-- PVP Upgrade - Class Sets - Rogue - Armor - Leather - Head
+				i(205831),	-- PVP Upgrade - Class Sets - Rogue - Armor - Leather - Hand
+				i(205832),	-- PVP Upgrade - Class Sets - Rogue - Armor - Leather - Chest
+				i(205833),	-- PVP Upgrade - Class Sets - Monk - Armor - Leather - Shoulder
+				i(205834),	-- PVP Upgrade - Class Sets - Monk - Armor - Leather - Legs
+				i(205835),	-- PVP Upgrade - Class Sets - Monk - Armor - Leather - Head
+				i(205836),	-- PVP Upgrade - Class Sets - Monk - Armor - Leather - Hand
+				i(205837),	-- PVP Upgrade - Class Sets - Monk - Armor - Leather - Chest
+				i(205838),	-- PVP Upgrade - Class Sets - Druid - Armor - Leather - Shoulder
+				i(205839),	-- PVP Upgrade - Class Sets - Druid - Armor - Leather - Legs
+				i(205840),	-- PVP Upgrade - Class Sets - Druid - Armor - Leather - Head
+				i(205841),	-- PVP Upgrade - Class Sets - Druid - Armor - Leather - Hand
+				i(205842),	-- PVP Upgrade - Class Sets - Druid - Armor - Leather - Chest
+				i(205843),	-- PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Shoulder
+				i(205844),	-- PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Legs
+				i(205845),	-- PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Head
+				i(205846),	-- PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Hand
+				i(205847),	-- PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Chest
+				i(205848),	-- PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Shoulder
+				i(205849),	-- PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Legs
+				i(205850),	-- PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Head
+				i(205851),	-- PVP Upgrade - Class Sets - Warlock - Armor - Cloth -  Hand
+				i(205852),	-- PVP Upgrade - Class Sets - Warlock - Armor - Cloth - Robe
+				i(205853),	-- PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Shoulder
+				i(205854),	-- PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Legs
+				i(205855),	-- PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Head
+				i(205856),	-- PVP Upgrade - Class Sets - Priest - Armor - Cloth -  Hand
+				i(205857),	-- PVP Upgrade - Class Sets - Priest - Armor - Cloth - Robe
+				i(205858),	-- PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Shoulder
+				i(205859),	-- PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Legs
+				i(205860),	-- PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Head
+				i(205861),	-- PVP Upgrade - Class Sets - Mage - Armor - Cloth -  Hand
+				i(205862),	-- PVP Upgrade - Class Sets - Mage - Armor - Cloth - Chest
+				i(205865),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator
+				i(205866),	-- Rough Coiled Horns
+				i(205867),	-- Steaming Drake Heart
+				i(205868),	-- Cracked Chitin Carapace
+				i(205869),	-- Aromatic Royal Jelly
+				i(205870),	-- Glittering Spore Dust
+				i(205871),	-- Glowing Underlight Wings
+				i(205872),	-- Earthvermin Fluff
+				i(205873),	-- Foraged Rare Fungi
+				i(205875),	-- Massive Deepstrider Femur
+				i(205876),	-- Highland Drake: Embodiment of the Elementium Drake
+				i(205877),	-- Adventurer's Footlocker
+				i(205878),	-- Obsidian Aspect Earthstone
+				i(205879),	-- Obsidian Aspirant's Battleaxe
+				i(205880),	-- Obsidian Aspirant's Dagger
+				i(205881),	-- Obsidian Aspirant's Mace
+				i(205882),	-- Obsidian Aspirant's Polearm
+				i(205883),	-- Obsidian Aspirant's Staff
+				i(205884),	-- Obsidian Aspirant's Greatsword
+				i(205885),	-- Obsidian Aspirant's Torch
+				i(205886),	-- Obsidian Aspirant's Warglaive
+				i(205887),	-- Obsidian Aspirant's Gavel
+				i(205888),	-- Obsidian Aspirant's Shield
+				i(205889),	-- Obsidian Aspirant's Ripper
+				i(205890),	-- Obsidian Aspirant's Recurve
+				i(205891),	-- Obsidian Aspirant's Longspear
+				i(205892),	-- Obsidian Aspirant's Hammer
+				i(205893),	-- Obsidian Aspirant's Knife
+				i(205894),	-- Obsidian Aspirant's Sword
+				i(205895),	-- Obsidian Aspirant's Pulverizer
+				i(205896),	-- Obsidian Aspirant's Blade
+				i(205898),	-- Niffen Cave Dive Key and shield disabled
+				i(205900),	-- Shimmering Draconic Gem
+				i(205901),	-- Crunchy Beetle
+				i(205902),	-- Deepflayer Claw
+				i(205903),	-- Barter Pebble
+				i(205904),	-- Vibrant Clacking Claw
+				i(205906),	-- Feathered Friend
+				i(205907),	-- Soaked Totem
+				i(205909),	-- Stretched Canvas
+				i(205910),	-- Bubbling Elixir
+				i(205911),	-- Mysterious Incense
+				i(205912),	-- Leather-Wrapped Flask
+				i(205913),	-- Blank Notebook
+				i(205914),	-- Obsidian Gladiator's Splitter
+				i(205915),	-- Obsidian Gladiator's Dagger
+				i(205916),	-- Obsidian Gladiator's Warglaive
+				i(205917),	-- Obsidian Gladiator's Spear
+				i(205918),	-- Obsidian Gladiator's Staff
+				i(205919),	-- Obsidian Gladiator's Rifle
+				i(205921),	-- Obsidian Gladiator's Scepter
+				i(205922),	-- Obsidian Gladiator's Rod
+				i(205923),	-- Obsidian Gladiator's Shield
+				i(205924),	-- Obsidian Gladiator's Axe
+				i(205925),	-- Obsidian Gladiator's Knife
+				i(205926),	-- Obsidian Gladiator's Mace
+				i(205927),	-- Obsidian Gladiator's Polearm
+				i(205928),	-- Obsidian Gladiator's Claws
+				i(205929),	-- Obsidian Gladiator's Bow
+				i(205930),	-- Obsidian Gladiator's Talons
+				i(205933),	-- Add Keystone Affix: Entangling
+				i(205934),	-- Add Keystone Affix: Afflicted
+				i(205935),	-- Add Keystone Affix: Incorporeal
 			}),
 			n(QUESTS, {
 				-- 10.1.0.48480
@@ -2495,6 +3371,250 @@ root(ROOTS.Unsorted, {
 				q(75666),
 				q(75680),
 				q(75694),
+				-- 10.1.0.48661
+				q(72405),
+				q(72408),
+				q(72409),
+				q(72424),
+				q(72426),
+				q(72430),
+				q(72431),
+				q(72432),
+				q(72445),
+				q(72446),
+				q(72449),
+				q(72450),
+				q(72451),
+				q(72452),
+				q(72453),
+				q(72462),
+				q(72463),
+				q(72464),
+				q(72465),
+				q(72466),
+				q(72467),
+				q(72468),
+				q(72469),
+				q(72470),
+				q(72471),
+				q(72472),
+				q(72473),
+				q(72474),
+				q(72475),
+				q(72476),
+				q(72477),
+				q(72478),
+				q(72479),
+				q(72545),
+				q(72644),
+				q(72712),
+				q(72713),
+				q(72714),
+				q(72715),
+				q(72717),
+				q(73094),
+				q(73137),
+				q(73156),
+				q(73177),
+				q(73394),
+				q(73396),
+				q(73397),
+				q(73549),
+				q(73703),
+				q(73705),
+				q(74374),
+				q(74415),
+				q(74541),
+				q(74581),
+				q(74672),
+				q(74677),
+				q(74894),
+				q(75258),
+				q(75265),
+				q(75706),
+				q(75707),
+				q(75708),
+				q(75710),
+				q(75715),
+				q(75716),
+				q(75717),
+				q(75718),
+				q(75719),
+				q(75720),
+				q(75721),
+				q(75722),
+				q(75723),
+				q(75724),
+				q(75725),
+				q(75726),
+				q(75727),
+				q(75728),
+				q(75730),
+				q(75731),
+				q(75732),
+				q(75733),
+				q(75734),
+				q(75735),
+				q(75736),
+				q(75737),
+				q(75738),
+				q(75739),
+				q(75740),
+				q(75741),
+				q(75742),
+				q(75743),
+				q(75744),
+				q(75745),
+				q(75747),
+				q(75748),
+				q(75749),
+				q(75750),
+				q(75751),
+				q(75752),
+				q(75753),
+				q(75754),
+				q(75755),
+				q(75756),
+				q(75757),
+				q(75758),
+				q(75759),
+				q(75760),
+				q(75761),
+				q(75762),
+				q(75763),
+				q(75764),
+				q(75765),
+				q(75766),
+				q(75767),
+				q(75768),
+				q(75769),
+				q(75770),
+				q(75771),
+				q(75772),
+				q(75773),
+				q(75774),
+				q(75775),
+				q(75814),
+				q(75818),
+				q(75819),
+				q(75831),
+				q(75832),
+				q(75833),
+				q(75834),
+				q(75835),
+				q(75836),
+				q(75837),
+				q(75838),
+				q(75839),
+				q(75840),
+				q(75841),
+				q(75842),
+				q(75843),
+				q(75844),
+				q(75845),
+				q(75846),
+				q(75847),
+				q(75848),
+				q(75849),
+				q(75850),
+				q(75851),
+				q(75852),
+				q(75853),
+				q(75854),
+				q(75855),
+				q(75856),
+				q(75857),
+				q(75858),
+				q(75859),
+				q(75860),
+				q(75861),
+				q(75862),
+				q(75863),
+				q(75864),
+				q(75865),
+				q(75866),
+				q(75869),
+				q(75870),
+				q(75871),
+				q(75872),
+				q(75873),
+				q(75875),
+				q(75876),
+				q(75878),
+				q(75879),
+				q(75880),
+				q(75881),
+				q(75882),
+				q(75883),
+				q(75884),
+				q(75885),
+				-- 10.1.0.48776
+				q(75887),
+				q(75888),
+				q(75892),
+				q(75893),
+				q(75894),
+				q(75895),
+				q(75896),
+				q(75897),
+				q(75898),
+				q(75899),
+				q(75900),
+				q(75901),
+				q(75902),
+				q(75903),
+				q(75904),
+				q(75905),
+				q(75906),
+				q(75907),
+				q(75908),
+				q(75909),
+				q(75910),
+				q(75911),
+				q(75912),
+				q(75913),
+				q(75914),
+				q(75915),
+				q(75916),
+				q(75917),
+				q(75924),
+				q(75925),
+				q(75926),
+				q(75927),
+				q(75928),
+				q(75929),
+				q(75930),
+				q(75931),
+				q(75937),
+				q(75941),
+				q(75942),
+				q(75943),
+				q(75944),
+				q(75945),
+				q(75946),
+				q(75947),
+				q(75948),
+				q(75967),
+				q(75968),
+				q(75985),
+				q(75992),
+				q(75993),
+				q(75994),
+				q(75995),
+				q(75997),
+				q(75999),
+				q(76000),
+				q(76001),
+				q(76002),
+				q(76003),
+				q(76005),
+				q(76006),
+				q(76007),
+				q(76008),
+				q(76009),
+				q(76010),
+				q(76011),
+				q(76012),
 			}),
 		})),
 		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {
@@ -2508,18 +3628,9 @@ root(ROOTS.Unsorted, {
 				i(204268),	-- Gilnean Trainee's Cord
 				i(204269),	-- Gilnean Trainee's Wristwraps
 				--
-				i(203647),	-- Primalist Ring
-				i(203648),	-- Primalist Necklace
-				i(203649),	-- Primalist Trinket
 				--
 				i(204192),	-- Ascendancy
 				i(203680),	-- Totem Toss
-			}),
-			filter(BATTLE_PETS, {
-				i(202407),	-- Flow (PET!)
-				i(202411),	-- Tremblor (PET!)
-				i(202413),	-- Vortex (PET!)
-				i(202412),	-- Wildfire (PET!)
 			}),
 			filter(COSMETIC, {
 				i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
@@ -2534,7 +3645,6 @@ root(ROOTS.Unsorted, {
 				i(204863),	-- Lionguard Greatbelt
 				i(204865),	-- Lionguard Greatbelt
 				i(204866),	-- Lionguard Greatbelt
-				i(204182),	-- Cloak of Dark Descent
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
@@ -2551,7 +3661,6 @@ root(ROOTS.Unsorted, {
 				i(202202),	-- Revealing Mask
 				i(202294),	-- Recipe Pages
 				i(202361),	-- Farscale Supplies
-				i(202362),	-- Arcane Focus
 				i(202364),	-- Everburning Ember
 				i(202394),	-- Fresh Plains Meat
 				i(202396),	-- Plains Timber
@@ -2583,7 +3692,6 @@ root(ROOTS.Unsorted, {
 				i(202687),	-- [DNT] Valdrakken Accord Item 03
 				i(202688),	-- [DNT] Valdrakken Accord Item 04
 				i(202689),	-- [DNT] Valdrakken Accord Item 05
-				i(202713),	-- Scattered Supplies
 				i(202868),	-- Mender's Signal
 				i(202874),	-- Healing Draught
 				i(203210),	-- Dragonscale Supply Box
@@ -2592,25 +3700,15 @@ root(ROOTS.Unsorted, {
 				i(203223),	-- Valdrakken Supply Coffer
 				i(203381),	-- Sealed Letter to Neltharion
 			}),
-			filter(MOUNTS, {
-				i(192772),	-- Ancient Salamanther
-			}),
 			filter(MISC, {
-				i(203463),	-- Atrenosh's Journal
+				i(204008),	-- Prodigious Sand Stone
 				i(203464),	-- Sealed Spellsworn Scroll
 				i(203465),	-- Draconic Artifact
 				i(203466),	-- Dragonscale Surplus Crate
 				i(203651),	-- Saza's Blade
-				i(203656),	-- Odd Device
 				i(203657),	-- Toxin Antidote
 				i(203686),	-- Odd Round Object
 				i(203687),	-- Dusty Vase
-				i(203702),	-- Experimental Melder
-				i(203704),	-- Stone Dissolver
-				i(203715),	-- Oozing Gold
-				i(203718),	-- Vial of Flames
-				i(203720),	-- Restorative Water
-				i(203722),	-- Experimental Dragon Pack
 				i(203724),	-- Field Medic's Hazard Payout
 				i(203730),	-- Rustic Winterpelt Supplies
 				i(203997),	-- Raw Argali Flank
@@ -2655,9 +3753,7 @@ root(ROOTS.Unsorted, {
 				i(204303),	-- Rations: Westfall Stew
 				i(204304),	-- Rations: Dragonbreath Chili
 				--
-				i(204305),	-- Neltharion-Signed Notes
 				i(204307),	-- Ornate Bronze Lockbox
-				i(204308),	-- Sturdy Bone
 				i(204310),	-- Mycelial Threads
 				i(204311),	-- Fluorescent Veil
 				i(204312),	-- Ettin Skin
@@ -2665,36 +3761,19 @@ root(ROOTS.Unsorted, {
 				i(204330),	-- Inert Primordial Fragments
 				i(114942),	-- Cracked Draenic Mortar
 				i(204343),	-- Trusty Dragonkin Rake
-				i(204353),	-- Primordial Jeweler's Kit
-				i(204378),	-- Brimming Dragonscale Expedition Supply Pack
-				i(204379),	-- Brimming Iskaaran Supply Pack
-				i(204380),	-- Brimming Maruuk Centaur Supply Satchel
-				i(204381),	-- Brimming Valdrakken Accord Supply Pack
-				i(204405),	-- Stuffed Bear
-				i(204439),	-- Research Chest Key
 				i(204442),	-- Clump of Tar
 				i(204443),	-- Blacksteel Hammer
 				i(204561),	-- Primalist Cache Key
 				i(204632),	-- Tectonic Rock Fragment
 				i(204636),	-- Snarfang's Stomach Sac
-				i(204685),	-- Primordial Anvil
-				i(204802),	-- Scroll of Teleport: Zskera Vaults
 				i(202204),	-- Receiving Stone: Final Warning
 				i(202205),	-- Translated Journal of Adamanthia
 				i(204249),	-- Translated Correspondence of Black Dragons
-				i(204438),	-- Enchanted Arcana Vessel
-				i(204873),	-- Tied-up Envelope
 			}),
 			n(PROFESSIONS, {
 				-- JC
-				i(204406),	-- Ancient Design: Square Holders (RECIPE!)
 				i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
-				i(204219),	-- Design: Unstable Elementium (RECIPE!)
-				-- JC
-				i(204404),	-- Square Holders
-				i(204217),	-- Unstable Elementium
 				--
-				i(204222),	-- Conductive Ametrine Shard
 				i(204224),	-- Speck of Arcane Awareness
 				i(204225),	-- Perfect Windfeather
 				i(204226),	-- Blazehoof Ashes
@@ -2707,132 +3786,14 @@ root(ROOTS.Unsorted, {
 				i(204233),	-- Impenetrable Elemental Core
 			}),
 			filter(TOYS, {
-				i(204675),	-- A Drake's Big Basket of Eggs (TOY!)
-				i(203757),	-- Brazier of Madness (TOY!)
+				i(204170),	-- Clan Banner (TOY!)
 				i(202360),	-- Dented Can (TOY!)
-				i(204257),	-- Holoviewer: The Lady of Dreams (TOY!)
-				i(204262),	-- Holoviewer: The Timeless One (TOY!)
 				i(204220),	-- Hraxian's Unbreakable Will (TOY!)
 				i(204687),	-- Obsidian Battle Horn (TOY!)
-				i(203734),	-- Snow Blanket (TOY!)
-				i(203852),	-- Spore-Bound Essence (TOY!)
 			}),
 			n(WEAPONS, {
 				i(204674),	-- Cursed Demonbone Longbow
 				i(204677),	-- Ogre Mining Pick
-			}),
-			header(HEADERS.LFGDungeon, 334, {	-- Zul'Gurub
-				-- BS
-				i(203833),	-- Ancient Plans: Bloodherald (RECIPE!)
-				i(203834),	-- Ancient Plans: Bloodlord's Reaver (RECIPE!)
-				i(203835),	-- Ancient Plans: Fiery Vengeance (RECIPE!)
-				i(203825),	-- Ancient Plans: Gurubashi Carver (RECIPE!)
-				i(203831),	-- Ancient Plans: Gurubashi Crusher (RECIPE!)
-				i(203828),	-- Ancient Plans: Gurubashi Grinder (RECIPE!)
-				i(203824),	-- Ancient Plans: Gurubashi Headplate (RECIPE!)
-				i(203829),	-- Ancient Plans: Gurubashi Hexxer (RECIPE!)
-				i(203827),	-- Ancient Plans: Gurubashi Poker (RECIPE!)
-				i(203837),	-- Ancient Plans: Gurubashi Slicer (RECIPE!)
-				i(203832),	-- Ancient Plans: Pitchfork of Mojo Madness (RECIPE!)
-				i(203830),	-- Ancient Plans: Sceptre of Hexing (RECIPE!)
-				i(203826),	-- Ancient Plans: Venomfang (RECIPE!)
-				i(203861),	-- Ancient Plans: Venomreaver (RECIPE!)
-				i(203836),	-- Ancient Plans: Warblades of the Hakkari, Reborn (RECIPE!)
-				-- BS
-				i(203790),	-- Bloodherald
-				i(203793),	-- Bloodlord's Reaver
-				i(203813),	-- Fiery Vengeance
-				i(203810),	-- Gurubashi Carver
-				i(203806),	-- Gurubashi Crusher
-				i(203809),	-- Gurubashi Grinder
-				i(203817),	-- Gurubashi Headplate
-				i(203797),	-- Gurubashi Hexxer
-				i(203812),	-- Gurubashi Poker
-				i(203801),	-- Gurubashi Slicer
-				i(203811),	-- Pitchfork of Mojo Madness
-				i(203804),	-- Sceptre of Hexing
-				i(203802),	-- Venomfang
-				i(203860),	-- Venomreaver
-				i(203854),	-- Warblades of the Hakkari, Reborn
-				i(203791),	-- Warblade of the Hakkari, Reborn
-				i(203792),	-- Warblade of the Hakkari, Reborn
-				-- Ench
-				i(203838),	-- Ancient Formula: Mindslave's Reach (RECIPE!)
-				-- Ench
-				i(203808),	-- Mindslave's Reach
-				-- Ins
-				i(203841),	-- Ancient Technique: Gurubashi Ceremonial Staff (RECIPE!)
-				i(203839),	-- Ancient Technique: Gurubashi Hoodoo Stick (RECIPE!)
-				i(203840),	-- Ancient Technique: Judgment of the Gurubashi (RECIPE!)
-				-- Ins
-				i(203815),	-- Gurubashi Ceremonial Staff
-				i(203807),	-- Gurubashi Hoodoo Stick
-				i(203795),	-- Judgment of the Gurubashi
-				-- LW
-				i(203842),	-- Ancient Pattern: Animist's Footwraps (RECIPE!)
-				i(203843),	-- Ancient Pattern: Animist's Legguards (RECIPE!)
-				i(203968),	-- Ancient Pattern: Cord of Shriveled Heads (RECIPE!)
-				i(203844),	-- Ancient Pattern: Gloves of the Tormentor (RECIPE!)
-				i(203847),	-- Ancient Pattern: Gurubashi's Grasp (RECIPE!)
-				i(203845),	-- Ancient Pattern: Junglefury Gauntlets (RECIPE!)
-				i(203846),	-- Ancient Pattern: Junglefury Leggings (RECIPE!)
-				-- LW
-				i(203799),	-- Animist's Footwraps
-				i(203794),	-- Animist's Legguards
-				i(203966),	-- Cord of Shriveled Heads
-				i(203819),	-- Gloves of the Tormentor
-				i(203805),	-- Gurubashi's Grasp
-				i(203814),	-- Junglefury Gauntlets
-				i(203816),	-- Junglefury Leggings
-				-- Tailoring
-				i(203848),	-- Ancient Pattern: Bloodlord's Embrace (RECIPE!)
-				i(203850),	-- Ancient Pattern: Gurubashi Headdress (RECIPE!)
-				i(203849),	-- Ancient Pattern: Gurubashi Tigerhide Cloak (RECIPE!)
-				i(203851),	-- Ancient Pattern: Ritualistic Legwarmers (RECIPE!)
-				-- Tailoring
-				i(203796),	-- Bloodlord's Embrace
-				i(203820),	-- Gurubashi Headdress
-				i(203803),	-- Gurubashi Tigerhide Cloak
-				i(203800),	-- Ritualistic Legwarmers
-				--
-				i(203735),	-- Shattered Hakkari Bijou
-				i(203736),	-- Fragmented Hakkari Bijou
-				i(203737),	-- Restored Hakkari Bijou
-				i(203742),	-- Waterlogged Gurubashi Cache
-				i(203743),	-- Jostled Gurubashi Cache
-				i(203765),	-- Blue Hakkari Bijou
-				i(203766),	-- Bronze Hakkari Bijou
-				i(203767),	-- Gold Hakkari Bijou
-				i(203768),	-- Green Hakkari Bijou
-				i(203769),	-- Orange Hakkari Bijou
-				i(203770),	-- Purple Hakkari Bijou
-				i(203771),	-- Red Hakkari Bijou
-				i(203772),	-- Silver Hakkari Bijou
-				i(203773),	-- Yellow Hakkari Bijou
-				i(203774),	-- Big Bag o' Bijous
-				i(203798),	-- Copy Jin'do's Bag of Whammies
-				i(203862),	-- Brilliant Mana Oil
-				i(203865),	-- Brilliant Wizard Oil
-				i(203912),	-- Penny Pouch o' Paragons
-				i(203914),	-- Zandalar Bargaining Token
-				i(203959),	-- Gurubashi Tribute
-				i(203970),	-- Bloodtinged Hat
-				i(203971),	-- Bloodtinged Shoulders
-				i(203974),	-- Ensemble: Zandalar Haruspec
-				i(203975),	-- Ensemble: Zandalar Predator
-				i(203976),	-- Ensemble: Zandalar Illusionist
-				i(203977),	-- Ensemble: Zandalar Freethinker
-				i(203978),	-- Ensemble: Zandalar Confessor
-				i(203979),	-- Ensemble: Zandalar Madcap
-				i(203980),	-- Ensemble: Zandalar Augur
-				i(203981),	-- Ensemble: Zandalar Demoniac
-				i(203982),	-- Ensemble: Zandalar Vindicator
-				i(203983),	-- Ensemble: Bloodtinged Cloth
-				i(203984),	-- Ensemble: Blooddrenched Leather
-				i(203985),	-- Ensemble: Bloodstained Mail
-				i(203986),	-- Ensemble: Bloodsoaked Plate
-				i(203988),	-- Warshard of the Hakkari, Unborn
-				i(203989),	-- Warshard of the Hakkari, Unborn
 			}),
 			n(QUESTS, {
 				-- 10.0.7.47910
@@ -2840,96 +3801,31 @@ root(ROOTS.Unsorted, {
 				q(72520),
 				q(72521),
 				q(72531),
-				q(72546),
 				q(72551),
 				q(72552),
 				q(72553),
 				q(72558),
 				q(72590),
-				q(72591),
-				q(72592),
-				q(72593),
-				q(72594),
-				q(72595),
 				q(72597),
 				q(72598),
-				q(72599),
-				q(72600),
-				q(72601),
-				q(72602),
-				q(72603),
-				q(72604),
-				q(72605),
-				q(72606),
-				q(72607),
 				q(72608),
-				q(72609),
-				q(72610),
-				q(72611),
-				q(72662),
-				q(72663),
-				q(72710),
 				q(72716),
 				q(72718),
-				q(72888),
-				q(72889),
-				q(72890),
-				q(72901),
-				q(72902),
-				q(72903),
-				q(72904),
-				q(72905),
 				q(72906),
 				q(72907),
 				q(72941),
 				q(72945),
-				q(72952),
-				q(72953),
 				q(72954),
 				q(72955),
 				q(72956),
-				q(73017),
-				q(73018),
-				q(73019),
-				q(73020),
-				q(73023),
-				q(73024),
-				q(73025),
-				q(73027),
-				q(73028),
-				q(73029),
-				q(73030),
-				q(73032),
-				q(73033),
-				q(73034),
 				q(73035),
 				q(73048),
 				q(73049),
 				q(73050),
 				q(73051),
-				q(73052),
-				q(73054),
-				q(73055),
-				q(73056),
-				q(73057),
-				q(73058),
-				q(73059),
-				q(73060),
-				q(73061),
-				q(73062),
-				q(73065),
-				q(73066),
-				q(73067),
-				q(73068),
-				q(73070),
-				q(73071),
 				q(73078),
 				q(73079),
 				q(73080),
-				q(73083),
-				q(73084),
-				q(73089),
-				q(73112),
 				q(73127),
 				q(73129),
 				q(73136),
@@ -2937,13 +3833,7 @@ root(ROOTS.Unsorted, {
 				q(73143),
 				q(73144),
 				q(73145),
-				q(73148),
-				q(73149),
 				q(73153),
-				q(73155),
-				q(73157),
-				q(73158),
-				q(73159),
 				q(73161),
 				q(73163),
 				q(73164),
@@ -2951,184 +3841,52 @@ root(ROOTS.Unsorted, {
 				q(73166),
 				q(73167),
 				q(73168),
-				q(73176),
-				q(73178),
 				q(73184),
 				q(73185),
 				q(73186),
 				q(73187),
 				q(73194),
-				q(73200),
-				q(73201),
-				q(73202),
-				q(73203),
-				q(73204),
-				q(73205),
-				q(73206),
-				q(73207),
-				q(73208),
-				q(73209),
-				q(73210),
 				q(73211),
 				q(73212),
-				q(73214),
-				q(73215),
-				q(73217),
-				q(73218),
-				q(73219),
-				q(73226),
-				q(73229),
 				q(73547),
 				q(73550),
 				q(73692),
-				q(73696),
-				q(73699),
-				q(73700),
-				q(73702),
 				q(74116),
-				q(74282),
-				q(74293),
-				q(74294),
-				q(74300),
-				q(74305),
-				q(74306),
-				q(74307),
 				q(74308),
 				q(74309),
-				q(74310),
 				q(74312),
 				q(74314),
 				q(74316),
 				q(74317),
-				q(74318),
-				q(74321),
-				q(74322),
-				q(74328),
-				q(74329),
-				q(74330),
-				q(74331),
-				q(74332),
-				q(74333),
-				q(74355),
-				q(74357),
-				q(74358),
-				q(74359),
 				q(74360),
 				q(74361),
 				q(74362),
 				q(74377),
-				q(74379),
-				q(74381),
 				q(74384),
-				q(74394),
-				q(74395),
-				q(74396),
-				q(74397),
-				q(74398),
-				q(74400),
-				q(74401),
-				q(74402),
-				q(74403),
-				q(74404),
-				q(74405),
-				q(74406),
-				q(74407),
-				q(74408),
-				q(74409),
-				q(74410),
-				q(74412),
-				q(74413),
-				q(74414),
-				q(74417),
 				q(74418),
-				q(74419),
-				q(74420),
-				q(74421),
-				q(74422),
-				q(74423),
-				q(74424),
-				q(74425),
-				q(74426),
 				q(74427),
-				q(74428),
-				q(74429),
 				q(74433),
 				q(74434),
 				q(74435),
-				q(74439),
-				q(74443),
-				q(74447),
-				q(74469),
-				q(74470),
-				q(74471),
 				q(74472),
-				q(74473),
 				q(74478),
 				q(74479),
 				q(74480),
-				q(74481),
-				q(74482),
-				q(74483),
 				q(74484),
-				q(74485),
 				q(74486),
 				q(74487),
-				q(74493),
 				q(74495),
-				q(74496),
-				q(74497),
 				q(74500),
-				q(74502),
-				q(74504),
-				q(74505),
-				q(74506),
-				q(74507),
-				q(74508),
-				q(74509),
-				q(74511),
-				q(74512),
 				q(74527),
-				q(74529),
-				q(74530),
-				q(74574),
-				q(74575),
 				q(74576),
-				q(74579),
-				q(74589),
-				q(74609),
-				q(74610),
-				q(74611),
-				q(74612),
-				q(74613),
-				q(74636),
 				q(74711),
 				q(74712),
 				q(74713),
 				q(74714),
-				q(74720),
-				q(74721),
-				q(74722),
-				q(74723),
-				q(74724),
-				q(74725),
-				q(74726),
-				q(74727),
-				q(74728),
-				q(74730),
-				q(74732),
-				q(74733),
-				q(74734),
-				q(74745),
-				q(74748),
-				q(74757),
-				q(74758),
-				q(74759),
 				q(74760),
 				q(74761),
 				q(74762),
 				q(74763),
-				q(74769),
-				q(74771),
 				q(74773),
 				q(74774),
 				q(74776),
@@ -3142,14 +3900,7 @@ root(ROOTS.Unsorted, {
 				q(74789),
 				q(74795),
 				q(74796),
-				q(74862),
-				q(74864),
-				q(74865),
-				q(74869),
-				q(74871),
-				q(74874),
 				q(74875),
-				q(74881),
 				q(74890),
 				q(74891),
 				q(74926),
@@ -3165,16 +3916,11 @@ root(ROOTS.Unsorted, {
 				q(74936),
 				q(74937),
 				q(74938),
-				q(74946),
-				q(74947),
 				q(74955),
-				q(74969),
 				q(74970),
-				q(74971),
 				q(74974),
 				q(74978),
 				q(74983),
-				q(74993),
 				q(74994),
 				q(74996),
 				q(74997),
@@ -3184,75 +3930,23 @@ root(ROOTS.Unsorted, {
 				q(75001),
 				q(75002),
 				q(75003),
-				q(75004),
-				q(75005),
-				q(75006),
-				q(75007),
-				q(75008),
-				q(75009),
-				q(75010),
-				q(75011),
-				q(75012),
-				q(75013),
-				q(75014),
-				q(75020),
 				q(75026),
 				-- 10.0.7.47983
-				q(75031),
-				q(75032),
-				q(75033),
 				q(75034),
 				q(75046),
 				q(75047),
 				q(75049),
-				q(75050),
-				q(75051),
 				q(75052),
-				q(75053),
 				q(75065),
-				q(75066),
-				q(75068),
-				q(75069),
-				q(75070),
-				q(75125),
-				q(75127),
-				q(75129),
 				q(75130),
-				q(75136),
-				q(75146),
-				q(75152),
-				q(75153),
 				-- 10.0.7.48076
-				q(75154),
-				q(75158),
-				q(75159),
-				q(75161),
-				q(75163),
-				q(75169),
-				q(75170),
-				q(75171),
-				q(75172),
-				q(75173),
-				q(75174),
-				q(75175),
-				q(75176),
-				q(75177),
-				q(75178),
-				q(75179),
 				q(75185),
 				q(75189),
 				q(75190),
 				q(75202),
-				q(75212),
-				q(75214),
-				q(75215),
-				q(75216),
-				q(75217),
-				q(75218),
 				q(75224),
 				q(75236),
 				q(75237),
-				q(75245),
 				q(75246),
 				q(75247),
 				q(75248),
@@ -3263,43 +3957,22 @@ root(ROOTS.Unsorted, {
 				q(75253),
 				q(75254),
 				q(75255),
-				q(75257),
 				q(75259),
 				q(75260),
 				-- 10.0.7.48220
 				q(75263),
-				q(75283),
-				q(75381),
 				q(75392),
 				q(75399),
 				q(75400),
 				q(75401),
 				q(75402),
-				q(75403),
-				q(75404),
-				q(75405),
-				q(75406),
 				-- 10.0.7.48295
 				q(75426),
 				q(75427),
 				q(75428),
 				q(75432),
-				q(75436),
-				q(75444),
 				q(75457),
 				-- 10.0.7.48439
-				q(73076),
-				q(75484),
-				q(75488),
-				q(75489),
-				q(75490),
-				q(75498),
-				q(75499),
-				q(75500),
-				q(75501),
-				q(75503),
-				q(75504),
-				q(75505),
 				q(75520),
 				q(75521),
 				q(75522),
@@ -3332,31 +4005,8 @@ root(ROOTS.Unsorted, {
 					i(190076),	-- Granny's Old Hat
 					i(190144),	-- Irontide Raider's Bicorne
 					i(190428),	-- Regal Warcloak
-
-					-- Random
-					i(190718),	-- Drape of the Honored Valarjar [Probably Belongs to Leather Set since its the only one missing a piece /Braghe]
 				}),
 				n(SETS, {
-					-- Corrupted Runelord Set
-					i(189875),	-- Corrupted Runelord's Sash
-					i(189876),	-- Corrupted Runelord's Handguards
-					i(189879),	-- Corrupted Runelord's Leggings
-					i(189880),	-- Corrupted Runelord's Mantle
-					i(190206),	-- Corrupted Runelord's Glyphbands
-					i(190207),	-- Corrupted Runelord's Slippers
-					i(190210),	-- Corrupted Runelord's Cowl
-					i(190211),	-- Corrupted Runelord's Robe
-
-					-- Helarjar Berseker Set
-					i(190134),	-- Helarjar Berserker Warboots
-					i(190135),	-- Helarjar Berserker Gauntlets
-					i(190138),	-- Helarjar Berserker Horns
-					i(190139),	-- Helarjar Berserker Greaves
-					i(190550),	-- Helarjar Berserker Girdle
-					i(190551),	-- Helarjar Berserker Bracers
-					i(190553),	-- Helarjar Berserker Cuirass
-					i(190554),	-- Helarjar Berserker Pauldrons
-
 					-- Highborne Scholar Set
 					i(190435),	-- Highborne Scholar's Belt
 					i(190437),	-- Highborne Scholar's Collar
@@ -3367,16 +4017,6 @@ root(ROOTS.Unsorted, {
 					i(190868),	-- Highborne Scholar's Scrollmantle
 					i(190070),	-- Highborne Scholar's Gloves
 
-					-- Kvaldir Scout Set
-					i(190136),	-- Kvaldir Scout Treads
-					i(190137),	-- Kvaldir Scout Grips
-					i(190140),	-- Kvaldir Scout Trousers
-					i(190141),	-- Kvaldir Scout Chestguard
-					i(190548),	-- Kvaldir Scout Belt
-					i(190549),	-- Kvaldir Scout Wristguard
-					i(190552),	-- Kvaldir Scout Shoulderpads
-					i(190574),	-- Kvaldir Scout Hood
-
 					-- Sylvan Stalker Set
 					i(189873),	-- Sylvan Stalker's Boots
 					i(190073),	-- Sylvan Stalker's Hood
@@ -3386,16 +4026,6 @@ root(ROOTS.Unsorted, {
 					i(190810),	-- Sylvan Stalker's Handguards
 					i(190811),	-- Sylvan Stalker's Vest
 					i(190894),	-- Sylvan Stalker's Mantle
-
-					-- Tidecaller Set
-					i(190432),	-- Tidecaller's Bracers
-					i(190440),	-- Tidecaller's Crown
-					i(190067),	-- Tidecaller's Grips
-					i(190072),	-- Tidecaller's Hauberk
-					i(190556),	-- Tidecaller's Legguards
-					i(190700),	-- Tidecaller's Boots
-					i(190709),	-- Tidecaller's Pauldrons
-					i(190806),	-- Tidecaller's Cinch
 
 					-- Val'Sharah Protector Set
 					i(190547),	-- Val'Sharah Protector's Bracers
@@ -3511,7 +4141,6 @@ root(ROOTS.Unsorted, {
 				i(204277),	-- Ruby Whelp Treat
 			}),
 			filter(MOUNTS, {
-				mount(400733),	-- [PH] Goblin Shredder Rocket (MOUNT!)
 				mount(397406),	-- [PH] Magical Fish Mount (MOUNT!)
 				i(203226),	-- Stormfused Salamanther (MOUNT!)
 				mount(395095),	-- Whelpling (MOUNT!)
@@ -3549,8 +4178,6 @@ root(ROOTS.Unsorted, {
 				q(72123),	--
 				q(72124),	--
 				q(72384),	-- Valdrakken Tour
-				q(72811),	--
-				q(72812),	--
 				q(72829),	--
 				q(72830),	--
 				-- 10.0.5.47871
@@ -3596,8 +4223,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(QUESTS, {
 				-- 10.0.2.45779
-				q(72346),	--
-				q(72347),	--
 				q(72350),	--
 				q(72357),	--
 				q(72359),	--
@@ -3807,27 +4432,6 @@ root(ROOTS.Unsorted, {
 					i(190906),	-- Dashing Buccaneer's Breeches
 					i(190907),	-- Dashing Buccaneer's Boots
 
-					-- Honored Valarjar Set [Cloth]
-					i(190081),	-- Mantle of the Honored Valarjar
-					i(190082),	-- Cloak of the Honored Valarjar
-					i(190083),	-- Robe of the Honored Valarjar
-					i(190084),	-- Bracers of the Honored Valarjar
-					i(190085),	-- Sash of the Honored Valarjar
-					i(190086),	-- Sandals of the Honored Valarjar
-					i(190087),	-- Pantaloons of the Honored Valarjar
-					i(190088),	-- Circlet of the Honored Valarjar
-					i(190089),	-- Gloves of the Honored Valarjar
-
-					-- Honored Valarjar Set [Leather]
-					i(190716),	-- Shoulderpads of the Honored Valarjar
-					i(190717),	-- Wristguards of the Honored Valarjar
-					i(190719),	-- Hood of the Honored Valarjar
-					i(190720),	-- Leggings of the Honored Valarjar
-					i(190721),	-- Strap of the Honored Valarjar
-					i(190722),	-- Boots of the Honored Valarjar
-					i(190723),	-- Grips of the Honored Valarjar
-					i(190724),	-- Tunic of the Honored Valarjar
-
 					-- Honored Valarjar Set [Mail]
 					i(190563),	-- Armbands of the Honored Valarjar
 					i(190564),	-- Cape of the Honored Valarjar
@@ -3860,17 +4464,6 @@ root(ROOTS.Unsorted, {
 					i(190227),	-- Nightmare Forest Raiment
 					i(190228),	-- Nightmare Forest Mantle
 					i(190229),	-- Nightmare Forest Bindings
-
-					-- Slumbering Caldera Set
-					i(190774),	-- Slumbering Caldera Robe
-					i(190775),	-- Slumbering Caldera Gauntlets
-					i(190776),	-- Slumbering Caldera Girdle
-					i(190777),	-- Slumbering Caldera Pauldrons
-					i(190778),	-- Slumbering Caldera Legguards
-					i(190779),	-- Slumbering Caldera Sabatons
-					i(190780),	-- Slumbering Caldera Crown
-					i(190781),	-- Slumbering Caldera Bracers
-					i(190782),	-- Slumbering Caldera Hauberk
 
 					-- Twisted Arcanum Set
 					i(190156),	-- Twisted Arcanum Sash
@@ -3971,7 +4564,6 @@ root(ROOTS.Unsorted, {
 				q(65719),	--
 				q(65722),	--
 				q(65734),	--
-				q(65736),	--
 				q(65738),	--
 				q(65740),	--
 				q(65759),	--
@@ -4419,8 +5011,6 @@ root(ROOTS.Unsorted, {
 				q(70046),	--
 				q(70056),	--
 				q(70065),	--
-				q(70108),	--
-				q(70109),	--
 				q(70113),	--
 				q(70114),	--
 				q(70115),	--
@@ -4492,7 +5082,6 @@ root(ROOTS.Unsorted, {
 				q(70657),	--
 				q(70660),	--
 				q(70718),	--
-				q(70724),	--
 				q(70733),	--
 				-- 10.0.0.45141
 				q(70782),	--
@@ -4542,80 +5131,22 @@ root(ROOTS.Unsorted, {
 				q(71371),	--
 				q(71372),	--
 				q(71373),	--
-				q(71431),	--
-				q(71437),	--
 				q(71454),	--
 				q(71457),	--
-				q(71459),	--
-				q(71465),	--
-				q(71466),	--
-				q(71467),	--
 				q(71473),	--
-				q(71475),	--
-				q(71477),	--
-				q(71499),	--
 				q(71500),	--
 				q(71513),	--
-				q(71521),	--
-				q(71529),	--
-				q(71531),	--
-				q(71535),	--
 				q(71545),	--
-				q(71553),	--
 				q(71583),	--
-				q(71590),	--
-				q(71591),	--
-				q(71592),	--
-				q(71593),	--
-				q(71595),	--
-				q(71610),	--
-				q(71613),	--
-				q(71615),	--
-				q(71619),	--
-				q(71620),	--
 				q(71621),	--
-				q(71631),	--
-				q(71633),	--
-				q(71638),	--
-				q(71639),	--
-				q(71641),	--
-				q(71646),	--
 				q(71649),	--
-				q(71657),	--
 				q(71658),	--
-				q(71660),	--
-				q(71667),	--
-				q(71668),	--
-				q(71671),	--
-				q(71679),	--
-				q(71680),	--
-				q(71681),	--
-				q(71682),	--
-				q(71685),	--
-				q(71686),	--
-				q(71691),	--
-				q(71692),	--
-				q(71709),	--
-				q(71715),	--
-				q(71720),	--
-				q(71732),	--
-				q(71733),	--
-				q(71734),	--
-				q(71735),	--
-				q(71736),	--
-				q(71737),	--
-				q(71739),	--
-				q(71745),	--
 				q(71761),	--
 				q(71763),	--
-				q(71768),	--
-				q(71770),	--
 				q(71774),	--
 				q(71784),	--
 				q(71785),	--
 				q(71856),	--
-				q(71863),	--
-				q(71865),	--
 				q(71867),	--
 				q(71926),	--
 				q(71927),	--
@@ -4626,7 +5157,6 @@ root(ROOTS.Unsorted, {
 				q(71938),	--
 				q(71949),	--
 				q(71968),	--
-				q(71985),	--
 				-- 10.0.0.45454
 				q(71996),	--
 				q(72000),	--

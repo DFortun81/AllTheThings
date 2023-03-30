@@ -570,18 +570,18 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 			}),
 			ach(14931, {	-- Flying Festivities (2020)
 				["provider"] = { "i", 178530 },	-- Wreath-A-Rang (TOY!)
-				["timeline"] = { "added 9.0.5.37862" },
+				["timeline"] = { ADDED_9_0_5 },
 			}),
 			ach(15313, {	-- Rockin' Rollin' Racer (2021)
 				["providers"] = {
 					{ "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
 					{ "i", 187560 },	-- Rockin' Rollin' Racer Pack
 				},
-				["timeline"] = { "added 9.1.5.40871" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			ach(15181, {	-- Rock n' Roll (2021)
 				["provider"] = { "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
-				["timeline"] = { "added 9.1.5.40871" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 			ach(15645, {	-- To Catch Falling Stars (2022)
 				["provider"] = { "i", 191937 },	-- Falling Star Catcher (TOY!)
@@ -1082,7 +1082,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 172225 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2019.",
-				["timeline"] = { "added 8.2.5.31961", "removed 9.0.1.36230" },
+				["timeline"] = { "added 8.2.5.31961", "removed 9.0.1.36230" },	-- Should been removed earlier?
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["groups"] = {
@@ -1094,57 +1094,48 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(60238, { 	-- A Gently Shaken Gift (2020)
+			q(60238, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, "removed 9.0.2.37142" } }, { 	-- A Gently Shaken Gift (2020)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 178529 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2020.",
-				["timeline"] = { "added 9.0.1.36230", "removed 9.1.5.40871" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["groups"] = {
-					i(178530, {	-- Wreath-A-Rang (TOY!)
-						["timeline"] = { "added 9.0.1.36230" },
-					}),
+					i(178530),	-- Wreath-A-Rang (TOY!)
 					i(128768, {	-- Candy Cane
 						["timeline"] = { "added 6.2.2.20395" },
 					}),
 				},
-			}),
-			q(64581, { 	-- A Gently Shaken Gift (2021)
+			})),
+			q(64581, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, "removed 9.1.5.41793" } }, { 	-- A Gently Shaken Gift (2021)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 187520 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2021.",
-				["timeline"] = { "added 9.1.5.40871", "removed 9.1.5.41793" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["groups"] = {
-					i(187422, {	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
-						["timeline"] = { "added 9.1.5.40871" },
-					}),
+					i(187422),	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
 					i(128768, {	-- Candy Cane
 						["timeline"] = { "added 6.2.2.20395" },
 					}),
 				},
-			}),
-			q(66508, { 	-- A Gently Shaken Gift (2022)
+			})),
+			q(66508, bubbleDownSelf({ ["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" } }, { 	-- A Gently Shaken Gift (2022)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
 					{ "i", 192093 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2022.",
-				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["groups"] = {
-					i(191925, {	-- Falling Star Flinger (TOY!)
-						["timeline"] = { "added 10.0.2.47213" },
-					}),
+					i(191925),	-- Falling Star Flinger (TOY!)
 				},
-			}),
+			})),
 			q(8769, {	-- A Ticking Present
 				["providers"] = {
 					{ "o", 180748 },	-- Ticking Present
@@ -1417,7 +1408,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 172224 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2019.",
-				["timeline"] = { "added 8.2.5.31958", "removed 9.0.1.36216" },
+				["timeline"] = { "added 8.2.5.31958", "removed 9.0.1.36216" },	-- Should been removed earlier?
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["lvl"] = 10,
@@ -1432,54 +1423,45 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(60239, { 	-- A Winter Veil Gift (2020)
+			q(60239, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, "removed 9.0.2.37142" } }, { 	-- A Winter Veil Gift (2020)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 178528 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2020.",
-				["timeline"] = { "added 9.0.1.36216", "removed 9.1.5.40871" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
-					i(178533, {	-- Shaking Pet Carrier
-						["timeline"] = { "added 9.0.1.36216" },
-					}),
+					i(178533),	-- Shaking Pet Carrier
 				},
-			}),
-			q(64639, { 	-- A Winter Veil Gift (2021)
+			})),
+			q(64639, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, "removed 9.1.5.41793" } }, { 	-- A Winter Veil Gift (2021)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 187561 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2021.",
-				["timeline"] = { "added 9.1.5.40871", "removed 9.1.5.41793" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
-					i(187560, {	-- Rockin' Rollin' Racer Pack
-						["timeline"] = { "added 9.1.5.40871" },
-					}),
+					i(187560),	-- Rockin' Rollin' Racer Pack
 				},
-			}),
-			q(66507, { 	-- A Winter Veil Gift (2022)
+			})),
+			q(66507, bubbleDownSelf({ ["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" } }, { 	-- A Winter Veil Gift (2022)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 192094 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2022.",
-				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
-					i(191937, {	-- Falling Star Catcher (TOY!)
-						["timeline"] = { "added 10.0.2.47213" },
-					}),
+					i(191937),	-- Falling Star Catcher (TOY!)
 				},
-			}),
+			})),
 			q(7022, {	-- Greatfather Winter is Here! (Alliance)
 				["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				-- #if AFTER CATA
@@ -2032,7 +2014,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ 33.9, 68.1, IRONFORGE },
 					{ 52.9, 77.4, ORGRIMMAR },
 				},
-				["timeline"] = { "created 8.3.0", "added 9.0.1" },
+				["timeline"] = { "created 8.3.0", ADDED_9_0_1 },
 			}),
 		}),
 		-- #endif
@@ -2080,7 +2062,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 						["timeline"] = { "added 5.4.0.17227" },
 					}),
 					i(178533, {	-- Shaking Pet Carrier
-						["timeline"] = { "added 9.0.1.36216" },
+						["timeline"] = { ADDED_9_0_1 },
 					}),
 					-- Toys
 					i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
@@ -2148,7 +2130,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 					i(45057),	-- Wind-Up Train Wrecker (TOY!)
 					i(188680, {	-- Winter Veil Chorus Book (TOY!)
-						["timeline"] = { "added 9.1.5.40871" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					i(116691, {	-- Zhevra Lounge Cusion (TOY!)
 						["timeline"] = { "added 6.0.2" },
@@ -2235,7 +2217,7 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(17201),	-- Recipe: Winter Veil Egg Nog [CATA+] / Recipe: Egg Nog
 					-- #endif
 					i(188680, {	-- Winter Veil Chorus Book (TOY!)
-						["timeline"] = { "added 9.1.5.40871" },
+						["timeline"] = { ADDED_9_1_5 },
 					}),
 					-- #if AFTER 5.1.0
 					i(70923, {	-- Gaudy Winter Veil Sweater
@@ -2450,7 +2432,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	holiday(235485, {	-- Winter's Veil
 		q(45766, {["isYearly"]=true}),	-- finding Greatfather Winter in Highmountain (npc ID 104710)
 		q(64628, {	-- Triggered when learning the additional things for the Rockin' Rollin' Toy.
-			["timeline"] = { "added 9.1.5.40871" },
+			["timeline"] = { ADDED_9_1_5 },
 		}),
 	}),
 });

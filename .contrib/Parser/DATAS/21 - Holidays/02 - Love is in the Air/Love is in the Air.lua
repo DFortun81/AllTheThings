@@ -330,7 +330,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					i(49641, {	-- Faded Lovely Greeting Card [H]
 						["timeline"] = { "added 3.3.2.11403" },
 					}),
-					
+
 					-- #if ANYCLASSIC
 					i(54537, {	-- Heart-Shaped Box
 						["description"] = "This box doesn't actually exist without RDF. The loot normally contained within drop directly from the boss this year.",
@@ -536,7 +536,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							n(39679, {	-- Corla, Herald of Twilight
 								BOUQUET_RED,
 								i(188693, {	-- Pouch of Red Rose Petals
-									["timeline"] = { "added 9.1.5.40871" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							}),
 						}),
@@ -544,7 +544,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							n(39679, {	-- Corla, Herald of Twilight
 								BOUQUET_RED,
 								i(188693, {	-- Pouch of Red Rose Petals
-									["timeline"] = { "added 9.1.5.40871" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							}),
 						}),
@@ -662,7 +662,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							["crs"] = { 177269 },	-- So'leah
 							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { "added 9.1.5" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							},
 						}),
@@ -672,7 +672,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							["crs"] = { 177269 },	-- So'leah
 							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { "added 9.1.5" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							},
 						}),
@@ -684,7 +684,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							["crs"] = { 164266 },	-- Domina Venomblade
 							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { "added 9.1.5" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							},
 						}),
@@ -694,7 +694,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							["crs"] = { 164266 },	-- Domina Venomblade
 							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { "added 9.1.5" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							},
 						}),
@@ -704,7 +704,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 							["crs"] = { 164266 },	-- Domina Venomblade
 							["groups"] = {
 								i(188692, {	-- Pouch of Ebon Rose Petals
-									["timeline"] = { "added 9.1.5" },
+									["timeline"] = { ADDED_9_1_5 },
 								}),
 							},
 						}),
@@ -1549,7 +1549,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					{ 54.2, 60.0, VALDRAKKEN },
 					{ 55.0, 37.2, VALDRAKKEN },
 				},
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
@@ -1561,7 +1561,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					{ 54.2, 60.0, VALDRAKKEN },
 					{ 55.0, 37.2, VALDRAKKEN },
 				},
-				["timeline"] = { ADDED_DF_0_5 },
+				["timeline"] = { ADDED_10_0_5 },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
@@ -1774,7 +1774,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 					}),
 					i(187998, {	-- Eternal Heirloom Scabbard
 						["cost"] = { { "i", 49927, 450 } },	-- 450x Love Token
-						["timeline"] = { "added 9.1.5.40871" },
+						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(122341, {	-- Timeworn Heirloom Scabbard
@@ -2389,7 +2389,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 	},
 }));
 
-root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
+root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	q(74957),	-- daily tracker for Bad Luck Protection on Love Rocket drop
 }));
 

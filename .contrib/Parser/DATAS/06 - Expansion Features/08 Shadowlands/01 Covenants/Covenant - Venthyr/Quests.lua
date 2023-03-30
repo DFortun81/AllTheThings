@@ -132,7 +132,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 62920 },	-- A Conduit For Change
 				["provider"] = { "n", 161977 },	-- General Draven
 				["coord"] = { 46.1, 14.9, SINFALL_REACHES },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 				["g"] = {
 					follower(1209),	-- General Draven
 				},
@@ -406,7 +406,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 62920 },	-- A Conduit For Change
 				["provider"] = { "n", 161979 },	-- Theotar
 				["coord"] = { 50.5, 18, SINFALL_REACHES },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 				["g"] = {
 					follower(1210),	-- Theotar
 				},
@@ -577,10 +577,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["description"] = "Requires Renown 22.",
 				["provider"] = { "n", 175772 },	-- Rahel
 				["coord"] = { 54.0, 27.2, SINFALL_REACHES },
-				["timeline"] = {
-					"added 9.0.2.36734",
-					"removed 9.1.0.39226",
-				},
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64083, {	-- Sinfall Tactician #2
 				["description"] = "Requires Renown 59.",
@@ -592,10 +589,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["description"] = "Requires Renown 7.",
 				["provider"] = { "n", 175772 },	-- Rahel
 				["coord"] = { 54.1, 26.8, SINFALL_REACHES },
-				["timeline"] = {
-					"added 9.0.2.36734",
-					"removed 9.1.0.39226",
-				},
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64325, {	-- Sinfall Veteran #2
 				["description"] = "Requires Renown 43.",
@@ -819,7 +813,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["isWeekly"] = true,
 				["coord"] = { 46.0, 28.1, SINFALL_REACHES },
-				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 			}),
 			q(62867, {	-- Return Lost Souls (10)
 				-- ["sourceQuests"] = {  },	-- TODO
@@ -827,7 +821,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["isWeekly"] = true,
 				["coord"] = { 46.0, 28.1, SINFALL_REACHES },
-				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 			}),
 			q(62868, {	-- Return Lost Souls (15)
 				-- ["sourceQuests"] = {  },	-- TODO
@@ -835,7 +829,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["isWeekly"] = true,
 				["coord"] = { 46.0, 28.1, SINFALL_REACHES },
-				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 			}),
 			q(62869, {	-- Return Lost Souls (20)
 				-- ["sourceQuests"] = {  },	-- TODO
@@ -849,7 +843,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["coord"] = { 46.0, 28.1, SINFALL_REACHES },
 				["repeatable"] = true,
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_9_1_5 },
 			}),
 		}),
 	}),

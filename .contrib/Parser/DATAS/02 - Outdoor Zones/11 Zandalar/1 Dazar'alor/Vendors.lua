@@ -5,6 +5,16 @@
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(THE_GREAT_SEAL, {
 		n(VENDORS, {
+			n(141954, {	-- Arbo 
+				["coord"] = { 43.8, 24.4, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 2531 },    -- Great Axe
+					{"select", "itemID", 15811 },    -- Heavy Spear
+					{"select", "itemID", 8177 },    -- Practice Sword
+					{"select", "itemID", 15810 },    -- Short Spear
+				},
+			}),
 			n(132153, {	-- "Black Eye" Zenru
 				["coord"] = { 53.7, 85.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -25,8 +35,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					{"select", "itemID", 15811 },	-- Heavy Spear
 					{"select", "itemID", 15810 },	-- Short Spear
 					{"select", "itemID", 39987 },	-- Tuskarr Fishing Spear
-				},
-				["groups"] = {
 				},
 			}),
 			n(148923, {	-- Captain Zen'taga <Dubloons Trader>
@@ -879,6 +887,22 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
+			n(126329, {	-- Headhunter Lani
+				["coord"] = { 40.6, 16.8, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 2531 },    -- Great Axe
+					{"select", "itemID", 15811 },    -- Heavy Spear
+					{"select", "itemID", 8177 },    -- Practice Sword
+					{"select", "itemID", 15810 },    -- Short Spear
+				},
+			}),
+			n(122465, {	-- Koatini 
+				["coord"] = { 48.8, 91.0, DAZARALOR },
+				["groups"] = {
+					i(39987),	-- Tuskarr Fishing Spear
+				},
+			}),
 			n(131287, {	-- Natal'hakata <Zandalari Empire Emissary>
 				["coord"] = { 67.2, 71.7, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
@@ -1082,6 +1106,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
+			n(131255, {	-- Rawajo
+				["coord"] = { 50.6, 11.8, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 44654 },	-- Dalaran Spear
+					{"select", "itemID", 15811 },	-- Heavy Spear
+					{"select", "itemID", 15810 },	-- Short Spear
+					{"select", "itemID", 39987 },	-- Tuskarr Fishing Spear
+				},
+			}),
 			n(126330, {	-- Rakle the Wretched
 				["coord"] = { 34.7, 11.5, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -1207,6 +1241,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["groups"] = {
 				},
 			}),
+			n(143138, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
+				["coord"] = { 55.0, 86.8, DAZARALOR },
+				["sym"] = {{ "fill" }},	--
+			}),
 			n(122695, {	-- Seshuli <Jewelcrafting Trainer>
 				["coord"] = { 47.0, 37.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -1232,7 +1270,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["g"] = {
 					i(163042, {	-- Mighty Caravan Brutosaur (MOUNT!)
 						["cost"] = 50000000000,	-- 5,000,000g
-						["timeline"] = { "added 8.0.1", "removed 9.0.1"}
+						["timeline"] = { "added 8.0.1", REMOVED_9_0_1 },
 					}),
 					i(159139),	-- Lightweight Skyterror Barding
 					i(163568, {	-- Lost Platysaur (PET!)

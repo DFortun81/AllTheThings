@@ -1,11 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
-
-root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.1" } }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(TORGHAST, {
 		n(176761, {	-- Adamant Vault
-			n(COMMON_BOSS_DROPS, sharedData({ ["timeline"] = { "added 9.1.0" } }, {
+			n(COMMON_BOSS_DROPS, sharedData({ ["timeline"] = { ADDED_9_1_0 } }, {
 				["crs"] = {
 					179433,	-- Vault Aegis
 					176578,	-- Vault Sentinel
@@ -53,7 +52,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added
 				},
 			}),
 		})),
-		n(COMMON_BOSS_DROPS, sharedData({ ["timeline"] = { "added 9.1.0" } }, {
+		n(COMMON_BOSS_DROPS, sharedData({ ["timeline"] = { ADDED_9_1_0 } }, {
 			i(187096, {	-- Adamant Vault Shoulderplates
 				["crs"] = {
 					155945,	-- Gherus the Chained
@@ -177,7 +176,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added
 					153165,	-- Custodian Thonar
 					151329,	-- Warden Skoldus
 				},
-				["timeline"] = { "added 9.0.1" }
 			}),
 			i(183192, {	-- Frenzied Mawrat
 				["crs"] = {

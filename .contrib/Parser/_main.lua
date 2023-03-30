@@ -12,7 +12,6 @@ ROOTS = {
 	["Achievements"] = "Achievements",
 	["BlackMarket"] = "BlackMarket",
 	["Character"] = "Character",
-	["CommonQualityItems"] = "CommonQualityItems",
 	["Craftables"] = "Craftables",
 	["ExpansionFeatures"] = "ExpansionFeatures",
 	["Factions"] = "Factions",
@@ -27,7 +26,6 @@ ROOTS = {
 	["NeverImplemented"] = "NeverImplemented",
 	["PVP"] = "PVP",
 	["PetBattles"] = "PetBattles",
-	["PoorQualityItems"] = "PoorQualityItems",
 	["Professions"] = "Professions",
 	["Promotions"] = "Promotions",
 	["RecipeDB"] = "RecipeDB",
@@ -973,6 +971,7 @@ SEASON_TORMENTED = 15327;
 SEASON_CRYPTIC = 15691;
 SEASON_SHROUDED = 15756;
 SEASON_THUNDERING = 16429;
+SEASON_PH = 17846;
 
 -- Pet
 PET_BATTLE = -796;
@@ -1102,7 +1101,12 @@ LEGENDARY_QUESTLINE = -10066;
 	VALDRAKKEN_ACCORD = -1140;
 		SIEGE_ON_DRAGONBANE_KEEP = -1141;
 		DRAGONRIDING_RACING = -1142;
+	LOAMM_NIFFEN = -1150;
+		BARTERING = -1151;
 	ZSKERA_VAULTS = -1200;
+	RESEACRHERS = -1201;
+	FYRAKK_ASSAULTS = -1202;
+
 
 ALLIED_RACES = -254;
 HERITAGE = -255;
@@ -1377,48 +1381,82 @@ DF_PHASE_ONE = 100;
 -- #endif
 
 -- Timelines
-ADDED_BFA_REL = "added 8.0.1";							-- Battle for Azeroth Launch on August 14th, 2018
-ADDED_BFA_S2 = "added 8.1.0";							-- Battle for Azeroth Season 2 Start on December 11th, 2018
-REMOVED_BFA_S2 = "removed 8.1.0";						-- Battle for Azeroth Season 2 Start on December 11th, 2018
-ADDED_BFA_1_5 = "added 8.1.5";							-- Battle for Azeroth 8.1.5 Start on March 19th, 2019
-REMOVED_BFA_1_5 = "removed 8.1.5";						-- Battle for Azeroth 8.1.5 Start on March 19th, 2019
-ADDED_BFA_S3 = "added 8.2.0";							-- Battle for Azeroth Season 3 Start on June 25th, 2019
-REMOVED_BFA_S3 = "removed 8.2.0";						-- Battle for Azeroth Season 3 Start on June 25th, 2019
-ADDED_BFA_2_5 = "added 8.2.5";							-- Battle for Azeroth 8.2.5 Start on September 24th, 2019
-REMOVED_BFA_2_5 = "removed 8.2.5";						-- Battle for Azeroth 8.2.5 Start on September 24th, 2019
-ADDED_BFA_S4 = "added 8.3.0";							-- Battle for Azeroth Season 4 Start on January 14th, 2020
-REMOVED_BFA_S4 = "removed 8.3.0";						-- Battle for Azeroth Season 4 Start on January 14th, 2020
+ADDED_7_0_3 = "added 7.0.3.22248";						-- Legion 7.0.3/Pre-Patch Launch on July 19th, 2016
+REMOVED_7_0_3 = "removed 7.0.3.22248";					-- Legion 7.0.3/Pre-Patch Launch on July 19th, 2016
+ADDED_7_0_3_LAUNCH = "added 7.0.3.22566";				-- Legion Launch on August 30th, 2016
+REMOVED_7_0_3_LAUNCH = "removed 7.0.3.22566";			-- Legion Launch on August 30th, 2016
+ADDED_7_1_0 = "added 7.1.0.22900";						-- Legion 7.1.0 Launch on October 25th, 2016
+REMOVED_7_1_0 = "removed 7.1.0.22900";					-- Legion 7.1.0 Launch on October 25th, 2016
+ADDED_7_1_5 = "added 7.1.5.23360";						-- Legion 7.1.5 Launch on January 10th, 2017
+REMOVED_7_1_5 = "removed 7.1.5.23360";					-- Legion 7.1.5 Launch on January 10th, 2017
+ADDED_7_2_0 = "added 7.2.0.23835";						-- Legion 7.2.0 Launch on March 28th, 2017
+REMOVED_7_2_0 = "removed 7.2.0.23835";					-- Legion 7.2.0 Launch on March 28th, 2017
+ADDED_7_2_5 = "added 7.2.5.24330";						-- Legion 7.2.5 Launch on June 13th, 2017
+REMOVED_7_2_5 = "removed 7.2.5.24330";					-- Legion 7.2.5 Launch on June 13th, 2017
+ADDED_7_3_0 = "added 7.3.0.24920";						-- Legion 7.3.0 Launch on August 29th, 2017
+REMOVED_7_3_0 = "removed 7.3.0.24920";					-- Legion 7.3.0 Launch on August 29th, 2017
+ADDED_7_3_2 = "added 7.3.2.25326";						-- Legion 7.3.2 Launch on October 24th, 2017
+REMOVED_7_3_2 = "removed 7.3.2.25326";					-- Legion 7.3.2 Launch on October 24th, 2017
+ADDED_7_3_5 = "added 7.3.5.25848";						-- Legion 7.3.5 Launch on January 16th, 2018
+REMOVED_7_3_5 = "removed 7.3.5.25848";					-- Legion 7.3.5 Launch on January 16th, 2018
 --
-ADDED_SL_PRE = "added 9.0.1";							-- Shadowlands Pre-Patch on October 13th, 2020
-REMOVED_SL_PRE = "removed 9.0.1";						-- Shadowlands Pre-Patch on October 13th, 2020
-ADDED_SL_REL = "added 9.0.2";							-- Shadowlands Launch on November 23rd, 2020
-ADDED_SL_0_5 = "added 9.0.5";							-- Shadowlands 9.0.5 Start on March 9th, 2021
-ADDED_SL_S2 = "added 9.1.0.39185";						-- Shadowlands Season 2 Start on June 29th, 2021
-REMOVED_SL_S2 = "removed 9.1.0.39185";					-- Shadowlands Season 2 End on February 21st, 2022
-ADDED_SL_1_5 = "added 9.1.5";							-- Shadowlands 9.1.5 Start on November 2nd, 2021
-REMOVED_SL_1_5 = "removed 9.1.5";						-- Shadowlands 9.1.5 Start on November 2nd, 2021
-ADDED_SL_S3 = "added 9.2.0.42423";						-- Shadowlands Season 3 Start on February 22nd, 2022
-REMOVED_SL_S3 = "removed 9.2.0.42488";					-- Shadowlands Season 3 Start on February 22nd, 2022
-ADDED_SL_S4 = "added 9.2.5.43903";						-- Shadowlands Season 4 Start on May 31, 2022
-REMOVED_SL_S4 = "removed 9.2.5.43903";					-- Shadowlands Season 4 Start on May 31, 2022
-ADDED_SL_2_7 = "added 9.2.7.45114";						-- Shadowlands 9.2.7 Start on August 16, 2022
-REMOVED_SL_2_7 = "removed 9.2.7.45114";						-- Shadowlands 9.2.7 Start on August 16, 2022
+ADDED_8_0_1 = "added 8.0.1.27101";						-- Battle for Azeroth 8.0.1/Pre-Patch Launch on July 17th, 2018
+REMOVED_8_0_1 = "removed 8.0.1.27101";					-- Battle for Azeroth 8.0.1/Pre-Patch Launch on July 17th, 2018
+ADDED_8_0_1_LAUNCH = "added 8.0.1.27366";				-- Battle for Azeroth Launch on August 14th, 2018
+REMOVED_8_0_1_LAUNCH = "removed 8.0.1.27366";			-- Battle for Azeroth Launch on August 14th, 2018
+ADDED_8_1_0 = "added 8.1.0.28724";						-- Battle for Azeroth 8.1.0 Launch on December 11th, 2018
+REMOVED_8_1_0 = "removed 8.1.0.28724";					-- Battle for Azeroth 8.1.0 Launch on December 11th, 2018
+ADDED_8_1_5 = "added 8.1.5.29683";						-- Battle for Azeroth 8.1.5 Launch on March 12th, 2019
+REMOVED_8_1_5 = "removed 8.1.5.29683";					-- Battle for Azeroth 8.1.5 Launch on March 12th, 2019
+ADDED_8_2_0 = "added 8.2.0.30918";						-- Battle for Azeroth 8.2.0 Launch on June 25th, 2019
+REMOVED_8_2_0 = "removed 8.2.0.30918";					-- Battle for Azeroth 8.2.0 Launch on June 25th, 2019
+ADDED_8_2_5 = "added 8.2.5.31921";						-- Battle for Azeroth 8.2.5 Launch on September 24th, 2019
+REMOVED_8_2_5 = "removed 8.2.5.31921";					-- Battle for Azeroth 8.2.5 Launch on September 24th, 2019
+ADDED_8_3_0 = "added 8.3.0.33051";						-- Battle for Azeroth 8.3.0 Launch on January 14th, 2020
+REMOVED_8_3_0 = "removed 8.3.0.33051";					-- Battle for Azeroth 8.3.0 Launch on January 14th, 2020
+ADDED_8_3_7 = "added 8.3.7.35249";						-- Battle for Azeroth 8.3.7 Launch on July 21st, 2020
+REMOVED_8_3_7 = "removed 8.3.7.35249";					-- Battle for Azeroth 8.3.7 Launch on July 21st, 2020
 --
-CREATED_DF_PRE = "created 10.0.0.46293";				-- First phase of Dragonflight pre-patch on October 25th, 2022
-ADDED_DF_PRE = "added 10.0.0.46293";					-- First phase of Dragonflight pre-patch on October 25th, 2022
-REMOVED_DF_PRE = "removed 10.0.0.46293";				-- First phase of Dragonflight pre-patch on October 25th, 2022
-ADDED_DF_PRE2 = "added 10.0.2.46658"					-- Second phase of Dragonflight pre-patch on November 15th, 2022
-TIMELINE_DF_PRE2 = { CREATED_DF_PRE, ADDED_DF_PRE2 };	-- Second phase of Dragonflight pre-patch on November 15th, 2022
-REMOVED_DF_PRE2 = "removed 10.0.2.46658";				-- Second phase of Dragonflight pre-patch on November 15th, 2022
-ADDED_DF_REL = "added 10.0.2.46801";					-- Dragonflight Launch on November 28th, 2022
-TIMELINE_DF_REL = { CREATED_DF_PRE, ADDED_DF_REL };		-- Dragonflight Launch on November 28th, 2022
-REMOVED_DF_REL = "removed 10.0.2.46801";				-- Dragonflight Launch on November 28th, 2022
-ADDED_DF_0_5 = "added 10.0.5.47799";					-- Dragonflight 10.0.5 Launch on January 24th, 2023
-REMOVED_DF_0_5 = "removed 10.0.5.47799";				-- Dragonflight 10.0.5 Launch on January 24th, 2023
-ADDED_DF_0_7 = "added 10.0.7";							-- Dragonflight 10.0.7 Launch on March ??, 2023
-REMOVED_DF_0_7 = "removed 10.0.7";						-- Dragonflight 10.0.7 Launch on March ??, 2023
-ADDED_DF_S2 = "added 10.1.0";							-- Dragonflight Season 2 Start on
-REMOVED_DF_S2 = "removed 10.1.0";						-- Dragonflight Season 2 Start on
+ADDED_9_0_1 = "added 9.0.1.36216";						-- Shadowlands 9.0.1/Pre-Patch Launch on October 13th, 2020
+REMOVED_9_0_1 = "removed 9.0.1.36216";					-- Shadowlands 9.0.1/Pre-Patch Launch on October 13th, 2020
+ADDED_9_0_2 = "added 9.0.2.36639";						-- Shadowlands 9.0.2/Pre-Patch Launch on November 17th, 2020
+REMOVED_9_0_2 = "added 9.0.2.36639";					-- Shadowlands 9.0.2/Pre-Patch Launch on November 17th, 2020
+ADDED_9_0_2_LAUNCH = "added 9.0.2.36710";				-- Shadowlands Launch on November 23rd, 2020
+REMOVED_9_0_2_LAUNCH = "removed 9.0.2.36710";			-- Shadowlands Launch on November 23rd, 2020
+ADDED_9_0_5 = "added 9.0.5.37862";						-- Shadowlands 9.0.5 Launch on March 9th, 2021
+REMOVED_9_0_5 = "removed 9.0.5.37862";					-- Shadowlands 9.0.5 Launch on March 9th, 2021
+ADDED_9_1_0 = "added 9.1.0.39185";						-- Shadowlands 9.1.0 Launch on June 29th, 2021
+REMOVED_9_1_0 = "removed 9.1.0.39185";					-- Shadowlands 9.1.0 Launch on June 29th, 2021
+ADDED_9_1_5 = "added 9.1.5.40871";						-- Shadowlands 9.1.5 Launch on November 2nd, 2021
+REMOVED_9_1_5 = "removed 9.1.5.40871";					-- Shadowlands 9.1.5 Launch on November 2nd, 2021
+ADDED_9_2_0 = "added 9.2.0.42423";						-- Shadowlands 9.2.0 Launch on February 22nd, 2022
+REMOVED_9_2_0 = "removed 9.2.0.42488";					-- Shadowlands 9.2.0 Launch on February 22nd, 2022
+ADDED_9_2_5 = "added 9.2.5.43903";						-- Shadowlands 9.2.5 Launch on May 31st, 2022
+REMOVED_9_2_5 = "removed 9.2.5.43903";					-- Shadowlands 9.2.5 Launch on May 31st, 2022
+ADDED_9_2_7 = "added 9.2.7.45114";						-- Shadowlands 9.2.7 Launch on August 16th, 2022
+REMOVED_9_2_7 = "removed 9.2.7.45114";					-- Shadowlands 9.2.7 Launch on August 16th, 2022
+--
+CREATED_10_0_0 = "created 10.0.0.46293";				-- Dragonflight 10.0.0/Pre-Patch Launch on October 25th, 2022
+ADDED_10_0_0 = "added 10.0.0.46293";					-- Dragonflight 10.0.0/Pre-Patch Launch on October 25th, 2022
+REMOVED_10_0_0 = "removed 10.0.0.46293";				-- Dragonflight 10.0.0/Pre-Patch Launch on October 25th, 2022
+ADDED_10_0_2 = "added 10.0.2.46658"						-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
+REMOVED_10_0_2 = "removed 10.0.2.46658"					-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
+TIMELINE_10_0_2 = { CREATED_10_0_0, ADDED_10_0_2 };		-- Dragonflight 10.0.2/Pre-Patch Launch on November 15th, 2022
+ADDED_10_0_2_LAUNCH = "added 10.0.2.46801";				-- Dragonflight Launch on November 28th, 2022
+REMOVED_10_0_2_LAUNCH = "removed 10.0.2.46801";			-- Dragonflight Launch on November 28th, 2022
+TIMELINE_10_0_2_LAUNCH = { CREATED_10_0_0, ADDED_10_0_2_LAUNCH };		-- Dragonflight Launch on November 28th, 2022
+ADDED_10_0_5 = "added 10.0.5.47799";					-- Dragonflight 10.0.5 Launch on January 24th, 2023
+REMOVED_10_0_5 = "removed 10.0.5.47799";				-- Dragonflight 10.0.5 Launch on January 24th, 2023
+ADDED_10_0_7 = "added 10.0.7.48676";					-- Dragonflight 10.0.7 Launch on March 21st, 2023
+REMOVED_10_0_7 = "removed 10.0.7.48676";				-- Dragonflight 10.0.7 Launch on March 21st, 2023
+ADDED_10_1_0 = "added 10.1.0";							-- Dragonflight 10.1.0 Launch on
+REMOVED_10_1_0 = "removed 10.1.0";						-- Dragonflight 10.1.0 Launch on
+ADDED_10_1_5 = "added 10.1.5";							-- Dragonflight 10.1.5 Launch on
+REMOVED_10_1_5 = "removed 10.1.5";						-- Dragonflight 10.1.5 Launch on
+ADDED_10_1_7 = "added 10.1.7";							-- Dragonflight 10.1.7 Launch on
+REMOVED_10_1_7 = "removed 10.1.7";						-- Dragonflight 10.1.7 Launch on
+ADDED_10_2_0 = "added 10.2.0";							-- Dragonflight 10.2.0 Launch on
+REMOVED_10_2_0 = "removed 10.2.0";						-- Dragonflight 10.2.0 Launch on
 
 -- Holiday Filters
 BREWFEST = 1000;
@@ -1678,6 +1716,8 @@ ItemClassInfo = {
 };
 TIMEWALKING_DUNGEON_CREATURE_IDS = {};
 POST_PROCESSING_FUNCTIONS = {};
+-- A unique value which indicates the actual field within a group should not actually be Parsed (useful to bypass groups within sharedData/bubbleDown)
+IGNORED_VALUE = 'E9B4EEAE-88EA-44F8-B7DF-0831B5F99A44'
 
 -- Construct a commonly formatted object.
 struct = function(field, id, t)
@@ -2134,7 +2174,7 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	else
 		t = struct("achievementID", id, altID);
 	end
-	if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end
+	--if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end
 	return t;
 end
 achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
@@ -2604,7 +2644,8 @@ title_gendered = function(id_m, id_f, t)				-- Create a TITLE Object which is 't
 	return struct("titleID", id_m * id_f * 100, t);		-- Arbitrary titleID from the combination of both titleID's
 end
 v = function(id, t)										-- Create a VIGNETTE Object
-	return struct("vignetteID", id, t);
+	t.type = "vignetteID";
+	return struct("questID", id, t);
 end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
@@ -2674,7 +2715,7 @@ un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable w
 
 -- Used by the Harvester (Parser)
 function Harvest(things)
-	local itemDB = root(ROOTS.ItemDBConditional, {});
+	local itemDB = root(ROOTS.ItemDBConditional);
 	local thing;
 	for i,j in pairs(things) do
 		thing = itemDB[i];

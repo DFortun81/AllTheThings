@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(CLIMBING, {
 			n(ACHIEVEMENTS, {
@@ -65,10 +65,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				q(64768, {	-- Lightsprocket's Artifact Hunt
 					["coord"] = { 48.7, 36.8, THE_WAKING_SHORES },
 				}),
+				q(70651, {	-- Stolen Luggage
+					["coord"] = { 61.6, 49.5, THE_WAKING_SHORES },
+				}),
 
 					-- Ohn'ahran Plains --
 				q(70655, {	-- Leaves from the Vine
 					["coord"] = { 82.9, 31.8, OHNAHRAN_PLAINS },
+				}),
+				q(70652, {	-- Take One Down, Pass It Around
+					["coord"] = { 24.5, 34.7, OHNAHRAN_PLAINS }
 				}),
 
 					-- The Azure Span --
@@ -77,6 +83,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 				q(70658, {	-- Artifact or Fiction
 					["coord"] = { 71.5, 22.2, THE_AZURE_SPAN },
+				}),
+				q(70653, {	-- Cold Hard Science
+					["coord"] = { 47.9, 39.1, THE_AZURE_SPAN },
 				}),
 
 					-- Thaldraszus --
@@ -89,23 +98,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				q(70656, {	-- Not Mushroom For Error
 					["coord"] = { 56.7, 35.3, THALDRASZUS },
 				}),
-
-				--[[
-				WS
-				q(70651),	-- Stolen Luggage
-				OP
-				q(70652),	-- Take One Down, Pass It Around
-				q(70660),	-- Ohn'ahran Plains
-				AS
-				q(70653),	-- Cold Hard Science
-				T
-				--]]
 			})),
 		}),
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		q(72560),	-- Triggered after completing Climb Every Mountain (questID 65421)
 		q(71997),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (66070)

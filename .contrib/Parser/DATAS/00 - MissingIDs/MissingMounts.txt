@@ -99,14 +99,20 @@ mount(276112),	-- Darkforge Ram
 9.1.5.40622
 mount(363608),	-- Lightforged Ruinstrider
 10.0.0.44649
-mount(349935),	-- Noble Bruffalon \\ Noble Elderhorn \\ PH Moose Bull Black
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
-mount(374157),	-- PH Lava Snail Blue
 10.1.0.48480
 mount(408313),	-- Big Slick in the City
 10.1.0.48537
 mount(406637),	-- Inferno Armoredon
-mount(408647),	-- Api Biru Sporebat
+mount(408647),	-- Cobalt Shalewing \\ Api Biru Sporebat
+10.1.0.48661
+mount(408653),	-- Boulder Hauler
+mount(408655),	-- Morsel Sniffer
+mount(408977),	-- Obsidian Gladiator's Slitherdrake
+mount(409032),	-- Vicious War Snail
+mount(409034),	-- Vicious War Snail
+10.1.0.48776
+mount(408649),	-- Scoria-Clad Sporebat
 
 
 
@@ -221,4 +227,12 @@ mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Ea
 mount(408313),	-- Big Slick in the City
 10.1.0.48537
 mount(406637),	-- Inferno Armoredon
-mount(408647),	-- Api Biru Sporebat
+mount(408647),	-- Cobalt Shalewing \\ Api Biru Sporebat
+10.1.0.48661
+mount(408653),	-- Boulder Hauler
+mount(408655),	-- Morsel Sniffer
+mount(408977),	-- Obsidian Gladiator's Slitherdrake
+mount(409032),	-- Vicious War Snail
+mount(409034),	-- Vicious War Snail
+10.1.0.48776
+mount(408649),	-- Scoria-Clad Sporebat

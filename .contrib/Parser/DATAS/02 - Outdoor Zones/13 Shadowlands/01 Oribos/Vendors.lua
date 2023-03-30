@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local ATTENDANTS_TOKEN_OF_MERIT = 199202;	-- Shadowlands Season 4
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ORIBOS, {
 		n(VENDORS, {
 			n(169524, {	-- Acquirer Ta'gosh <Curiosity Vendor>
@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					}),
 					i(186684, {	-- Memories of Brigther Times
 						["collectible"] = false,
-						["timeline"] = { "added 9.1.0" }
+						["timeline"] = { ADDED_9_1_0 }
 					}),
 				},
 			}),
@@ -29,12 +29,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 							{"isnt","repeatable"},		-- Not Paragon quest
 							{"pop"}},
 			}),
-			n(182864, bubbleDownSelf({ ["timeline"] = { "added 9.1.5" } }, {	-- Au'Dara
+			n(182864, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Au'Dara
 				["description"] = "Next to the flightmaster.",
 				["coord"] = { 59.7, 70.6, ORIBOS },
 				["g"] = {
 					i(194118, {	-- Cosmic Equipment Chest
-						["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+						["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 						["cost"] = {
 							{ "c", 1602, 375 },	-- 375x Conquest
 						},
@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 						},
 					}),
 					i(194334, {	-- Encrypted Equipment Chest
-						["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
+						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 },
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500x Valor
 						},
@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 						},
 					}),
 					i(201355, {	-- Eternal Equipment Chest
-						["timeline"] = { ADDED_SL_2_7, REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
 						["cost"] = {
 							{ "c", 1602, 375 },	-- 375x Conquest
 						},
@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 						},
 					}),
 					i(201362, {	-- Fated Equipment Chest
-					["timeline"] = { ADDED_SL_2_7, REMOVED_DF_REL },
+					["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500x Valor
 						},
@@ -148,7 +148,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					i(187869),	-- Scouting Map: Into the Shadowlands (TOY!)
 					i(188673),	-- Timebound Runimations
 					i(188174, {	-- Unchained Equipment Cache
-						["timeline"] = { "added 9.1.5", "removed 9.2.0" },
+						["timeline"] = { ADDED_9_1_5, "removed 9.2.0" },
 						["cost"] = {
 							{ "c", 1602, 375 },	-- 375x Conquest
 						},
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 						},
 					}),
 					i(188173, {	-- Valorous Equipment Cache
-						["timeline"] = { "added 9.1.5", "removed 9.2.0" },
+						["timeline"] = { ADDED_9_1_5, "removed 9.2.0" },
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500x Valor
 						},
@@ -206,22 +206,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					i(180136),	-- The Brokers Angle'r
 				},
 			}),
-			n(176197, bubbleDownSelf({ ["timeline"] = { "added 9.1.5" } }, {	-- Griftah <Amazing Amulets>
-				i(188226), -- Boots o' Maw Walkin
-				i(188224), -- Darling Maldraxxi Doll
-				i(188217), -- De Purpose
-				i(188221), -- Eye of the Wailer
-				i(188219), -- Garlic Pendant of Fang-Warding
-				i(188218), -- Korthian Secret-Keeping Journal
-				i(188223), -- Stain of Domination
-				i(188222), -- Steward Wings
-				i(188220), -- Torghast Ash Globe
-				i(188225), -- Worneblade
+			n(176197, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Griftah <Amazing Amulets>
+				["coord"] = { 51.0, 43.4, ORIBOS },
+				["g"] = {
+					i(188226), -- Boots o' Maw Walkin
+					i(188224), -- Darling Maldraxxi Doll
+					i(188217), -- De Purpose
+					i(188221), -- Eye of the Wailer
+					i(188219), -- Garlic Pendant of Fang-Warding
+					i(188218), -- Korthian Secret-Keeping Journal
+					i(188223), -- Stain of Domination
+					i(188222), -- Steward Wings
+					i(188220), -- Torghast Ash Globe
+					i(188225), -- Worneblade
+				},
 			})),
 			n(156769, {	-- Keeper Ta'hult <Pet Vendor>
 				["coord"] = { 64.9, 67.3, ORIBOS },
-				["g"] = sharedData({ ["timeline"] = { "added 9.1.0" } }, {
-				--	TODO: verify costs if these make it to live
+				["g"] = sharedData({ ["timeline"] = { ADDED_9_1_0 } }, {
 					i(185919, {	-- Flawless Amethyst Baubleworm
 						["cost"] = { { "i", 163036, 10000 } },	-- 10,000x Polished Pet Charm
 					}),
@@ -253,7 +255,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 			}),
 			n(188391, {	-- Ko'ropo <Sire Supplier>
 				["coord"] = { 66.7, 31.6, ORIBOS },
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select", "instanceID", 1190},			-- Castle Nathria
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -265,23 +267,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					{"invtype", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 				},
 			}),
-			n(177829, bubbleDownSelf({ ["timeline"] = { "added 9.0.5" } }, {	-- Ko'tul <Exchange Specialist>
+			n(177829, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5 } }, {	-- Ko'tul <Exchange Specialist>
 				["coord"] = { 63.8, 36.0, ORIBOS },
 				["g"] = {
 					i(187254, {	-- Arrangement of Anima
 						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { "added 9.1.0", "removed 9.2.0" },
+						["timeline"] = { ADDED_9_1_0, "removed 9.2.0" },
 						["g"] = {
 							currency(ANIMA),	-- Reservoir Anima
 						},
 					}),
-					i(191302, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_DF_REL } }, {	-- Bottled Night Sky
+					i(191302, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_10_0_2_LAUNCH } }, {	-- Bottled Night Sky
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							i(188957),	-- Genesis Mote
 						},
 					})),
-					i(187503, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", REMOVED_DF_REL } }, {	-- Bundle of Archived Research
+					i(187503, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Bundle of Archived Research
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							currency(1931),	-- Cataloged Research
@@ -291,7 +293,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["timeline"] = { "added 9.2.0" }
 					}),
-					i(191030, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_DF_REL } }, {	-- Cosmic Flux Parcel
+					i(191030, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_10_0_2_LAUNCH } }, {	-- Cosmic Flux Parcel
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							currency(2009),	-- Cosmic Flux
@@ -299,19 +301,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					})),
 					i(191297, {	-- Ephemera-Infused Mesh
 						["cost"] = { { "i", 187219, 6 } },	-- 6x Attendant's Token of Merit
-						["timeline"] = { "added 9.2.0", REMOVED_SL_S4 },
+						["timeline"] = { "added 9.2.0", REMOVED_9_2_5 },
 					}),
 					i(199112, {	-- Fated Matter Fractalizer
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
-						["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 					}),
-					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", REMOVED_DF_REL } }, {	-- Korthite Crystal Geode
+					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
 						["g"] = {
 							i(186017),	-- Korthite Crystal
 						},
 					})),
-					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {	-- Korthite Crystal Geode
+					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, "removed 9.2.0" } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "c", 1191, 1500 } },	-- 1500x Valor
 						["g"] = {
 							i(186017),	-- Korthite Crystal
@@ -319,54 +321,54 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					})),
 					i(191303, {	-- Overflowing Chest of Riches
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
-						["timeline"] = { "added 9.2.0", REMOVED_DF_REL }
+						["timeline"] = { "added 9.2.0", REMOVED_10_0_2_LAUNCH }
 					}),
 					i(187707, {	-- Progentior Essentia
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
-						["timeline"] = { "added 9.2.0", REMOVED_DF_REL }
+						["timeline"] = { "added 9.2.0", REMOVED_10_0_2_LAUNCH }
 					}),
 					i(185832, {	-- Shipment of Elethium Ore
 						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
-						["timeline"] = { "added 9.0.5", REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH },
 						["g"] = {
 							i(171833),	-- Elethium Ore
 						},
 					}),
 					i(185765, {	-- Shipment of Heavy Callous Hide
 						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
-						["timeline"] = { "added 9.0.5", REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH },
 						["g"] = {
 							i(172097),	-- Heavy Callous Hide
 						},
 					}),
 					i(185833, {	-- Shipment of Lightless Silk
 						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
-						["timeline"] = { "added 9.0.5", REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH },
 						["g"] = {
 							i(173204),	-- Lightless Silk
 						},
 					}),
 					i(187221, {	-- Soul Ash Cache
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { "added 9.1.0", REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						["g"] = {
 							currency(1828),	-- Soul Ash
 						},
 					}),
 					i(187222, {	-- Stygic Singularity
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { "added 9.1.0", REMOVED_DF_REL },
+						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						["g"] = {
 							currency(1767),	-- Stygia
 						},
 					}),
-					i(191301, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_DF_REL } }, {	-- Treatise on Patterns in the Purpose
+					i(191301, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_10_0_2_LAUNCH } }, {	-- Treatise on Patterns in the Purpose
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							currency(1979),	-- Cyphers of the First Ones
 						},
 					})),
-					i(191299, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_DF_REL } }, {	-- Tribute of the Enlightened
+					i(191299, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_10_0_2_LAUNCH } }, {	-- Tribute of the Enlightened
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 					})),
 				},
@@ -379,7 +381,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 			}),
 			n(188377, {	-- So'turu <Fence of the First Ones>
 				["coord"] = { 67.0, 32.2, ORIBOS },
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -393,7 +395,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 			}),
 			n(188386, {	-- Ta'choso <Domination Dealer>
 				["coord"] = { 67.3, 32.7, ORIBOS },
-				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 				["sym"] = {
 					{"select", "instanceID", 1193},			-- Sanctum of Domination
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -413,10 +415,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					}),
 				},
 			}),
-			n(181681, bubbleDownSelf({ ["timeline"] = { "added 9.0.5" } }, {	-- Tu'kol <Anima Exchange Specialist>
+			n(181681, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5 } }, {	-- Tu'kol <Anima Exchange Specialist>
 				["coord"] = { 63.8, 36.0, ORIBOS },
 				["g"] = {
-					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Korthite Crystal Geode
+					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "c", ANIMA, 15000 } },
 						["g"] = {
 							i(186017),	-- Korthite Crystal
@@ -428,21 +430,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 					}),
 					i(185832, {	-- Shipment of Elethium Ore
 						["cost"] = { { "c", ANIMA, 7500 } },
-						["timeline"] = { "added 9.0.5" },
+						["timeline"] = { ADDED_9_0_5 },
 						["g"] = {
 							i(171833),	-- Elethium Ore
 						},
 					}),
 					i(185765, {	-- Shipment of Heavy Callous Hide
 						["cost"] = { { "c", ANIMA, 7500 } },
-						["timeline"] = { "added 9.0.5" },
+						["timeline"] = { ADDED_9_0_5 },
 						["g"] = {
 							i(172097),	-- Heavy Callous Hide
 						},
 					}),
 					i(185833, {	-- Shipment of Lightless Silk
 						["cost"] = { { "c", ANIMA, 7500 } },
-						["timeline"] = { "added 9.0.5" },
+						["timeline"] = { ADDED_9_0_5 },
 						["g"] = {
 							i(173204),	-- Lightless Silk
 						},

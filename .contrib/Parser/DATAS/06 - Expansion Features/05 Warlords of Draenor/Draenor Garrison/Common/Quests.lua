@@ -2824,7 +2824,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = {
 					"added 6.1.0.19480",
-					"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+					REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 				},
 			}),
 			q(38306, {	-- Mystery Notebook
@@ -2834,7 +2834,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["provider"] = { "n", 91072 },	-- Drix Bassbolter
 				["timeline"] = {
 					"added 6.1.0.19480",
-					"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+					REMOVED_9_0_1,	-- seems inadvertent, maybe blizzard will fix eventually
 				},
 			}),
 			q(38408, {	-- New Goods

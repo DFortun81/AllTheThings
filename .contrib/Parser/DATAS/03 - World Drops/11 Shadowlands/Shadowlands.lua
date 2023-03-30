@@ -1,11 +1,10 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-
-root(ROOTS.WorldDrops, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root(ROOTS.WorldDrops, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	filter(RECIPES, {
 		i(186995, {	-- Pattern: Shrouded Hand Towel
-			["timeline"] = { ADDED_SL_S2 },
+			["timeline"] = { ADDED_9_1_0 },
 		}),
 	}),
 	n(ARMOR, {
