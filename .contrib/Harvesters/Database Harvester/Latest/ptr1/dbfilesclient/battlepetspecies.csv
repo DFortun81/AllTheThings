@@ -2226,7 +2226,7 @@ Lihuvim's geomental creations are the most majestic of walking rock piles.,|cFFF
 Looks like Ben'jin and Maka'fon have kept busy since you last saw them. Maka'jin is ready for adventure but will settle for a large pile of leafy greens.,|cFFFFD200Trading Post|r,3242,185322,366833,1881827,7,16466,2,6,7,0
 He has a heart of gold. Literally. These shiny good-boys are all the rage with affluent gnomes everywhere.,|cFFFFD200Trading Post|r,3243,183686,366841,1567069,9,16466,2,6,7,0
 "Fooled aeons ago by the clever loa of death into a bargain of unceasing service, this tiny ancient being carries out his duties eternally red with rage.",|cFFFFD200Trading Post|r,3244,185324,366842,2027568,3,16466,2,6,7,0
-,,3246,185475,0,236446,2,17520,-1,6,7,0
+,,3246,185475,0,236446,7,16400,-1,6,7,0
 "This isn't the real Pocopoc, but it provided this replica to you for use outside Zereth Mortis. Its details are so accurate as to be utterly convincing to anyone who hasn't spent lots of time with the real one.",|cFFFFD200Vendor: |rOlea Manu|n|cFFFFD200Zone: |rZereth Mortis|n|cFFFFD200Cost: |r500|Hcurrency:1979|h|TInterface\ICONS\INV_Trinket_ProgenitorRaid_02_Blue.BLP:0|t|h,3247,185477,367376,4327611,5,147,2,41,7,0
 "Ichabod began his existence as a prototype for the fearsome harvest golems terrorizing the farmers of Westfall, but a little gnomish ingenuity has since made him far less likely to attack your knees.",|cFFFFD200Promotion|r |n,3248,183638,367696,4206469,9,16466,9,6,7,0
 "Before he was known as one of the Wild Gods, Ursoc roamed the Grizzly Hills as a cub.",|cFFFFD200In-Game Shop|r|n,3249,185586,367702,4208901,7,82,9,6,7,0
@@ -2272,7 +2272,7 @@ A dream of the memory of fire.,|cFFFFD200Vendor: |rMythressa|n|cFFFFD200Zone: |r
 Scruffles' lust for battle runs deep.,|cFFFFD200Drop: |rVraken the Hunter|n|cFFFFD200Zone: |rThe Forbidden Reach,3291,189115,375047,3946886,7,2,0,6,7,0
 Some think this creature is smoldering because it is on fire. In truth it's because of its burning gaze.,,3292,189117,375084,4007139,5,16416,-1,6,7,0
 Red for the fires in which it was born.,|cFFFFD200Drop: |rBonesifter Marwak|n|cFFFFD200Zone: |rThe Forbidden Reach,3293,189118,375085,4007140,5,2,0,6,7,0
-Is it possible to rise from the ashes of time? This creature thinks so.,,3294,189119,375089,4007141,5,16416,-1,6,7,0
+Is it possible to rise from the ashes of time? Gerald thinks so and he will not be denied.,,3294,189119,375089,4007141,5,2,-1,6,7,0
 "An Igneoid is formed when magma makes it to Azeroth's surface and is infused with dark elemental magic. The resulting creature is tiny, fierce, and very cute.","|cFFFFD200Pet Battle: |rThaldraszus, The Azure Span, The Waking Shores",3295,189121,0,1016245,6,26,4,6,7,0
 This salamanther wants to be your best friend.,"|cFFFFD200Pet Battle: |rOhn'ahran Plains, Thaldraszus, The Azure Span, The Waking Shores",3296,189122,0,4056158,8,26,4,6,7,0
 This Salamanther met itself while lost in time. The two hung out on a rock together for a few hours. It was nice.,,3297,189123,375235,4056156,8,16416,-1,6,7,0
@@ -2419,15 +2419,15 @@ Perks it's head up when hearing conversation as it likes to stay current on worl
 ,,3474,202494,0,656166,1,32,-1,6,7,0
 Who needs a toolbelt when a handy robot can follow you around! Just don't bump into it too hard.,|cFFFFD200Promotion:|r Recruit-A-Friend,3475,202548,403243,4679804,9,16466,7,6,7,0
 An old and dangerous discarded toy.,"|cFFFFD200Treasure:|r Tattered Gift Package|n|cFFFFD200NPC:|r Prototype Tinker-Tron|n|cFFFFD200Zone:|r Zskera Vaults, The Forbidden Reach|n",3476,202484,403072,2399252,9,2,0,6,7,0
-Puddlehoppers are known to eat bugs almost as large as they are. In one gulp!,,3477,203287,0,4879733,8,26,-1,6,7,0
+Puddlehoppers are known to eat bugs almost as large as they are. In one gulp!,|cFFFFD200Pet Battle: |rZaralek Cavern,3477,203287,0,4879733,8,26,4,6,7,0
 Rock martins make their nests out of scavenged pebbles.,|cFFFFD200Pet Battle: |rZaralek Cavern,3478,203288,0,4870957,2,26,4,6,7,0
-When these insects move in a swarm they look like a golden fog.,,3479,203289,0,3995641,2,26,-1,6,7,0
+When these insects move in a swarm they look like a golden fog.,|cFFFFD200Pet Battle: |rZaralek Cavern,3479,203289,0,3995641,2,26,4,6,7,0
 "This creature usually has a muddy appearance, but occasionally you may find one that shines a brilliant red.",|cFFFFD200Pet Battle: |rZaralek Cavern,3480,203292,0,5008150,4,26,4,6,7,0
-The bright glow of a stonewhisker's ears is said to be the result of eating magical cheeses. This may also explain its extremely bad breath.,,3481,203308,0,4616696,4,26,-1,6,7,0
-"Slimy, yet also gritty. It would not make a good meal.",,3482,203310,0,5003559,4,26,-1,6,7,0
-"Boulderfangs are known to make cozy nests in cabinets, shoes, and other inconvenient places.",,3483,203311,0,5045824,7,26,-1,6,7,0
-"Despite being made mostly of rock, these creatures can fly. Some attribute this to the strength of their wings, but most agree it's probably just magic.",,3484,203312,0,5009626,6,26,-1,6,7,0
-Not all moths spin silk. These moths spin lies.,,3485,203313,0,5015301,2,26,-1,6,7,0
+The bright glow of a stonewhisker's ears is said to be the result of eating magical cheeses. This may also explain its extremely bad breath.,|cFFFFD200Pet Battle: |rZaralek Cavern,3481,203308,0,4616696,4,26,4,6,7,0
+"Slimy, yet also gritty. It would not make a good meal.",|cFFFFD200Pet Battle: |rZaralek Cavern,3482,203310,0,5003559,4,26,4,6,7,0
+"Boulderfangs are known to make cozy nests in cabinets, shoes, and other inconvenient places.",|cFFFFD200Pet Battle: |rZaralek Cavern,3483,203311,0,5045824,7,26,4,6,7,0
+"Despite being made mostly of rock, these creatures can fly. Some attribute this to the strength of their wings, but most agree it's probably just magic.",|cFFFFD200Pet Battle: |rZaralek Cavern,3484,203312,0,5009626,6,26,4,6,7,0
+Not all moths spin silk. These moths spin lies.,|cFFFFD200Pet Battle: |rZaralek Cavern,3485,203313,0,5015301,2,26,4,6,7,0
 "The call of the lithengale is unique among birds in that it has a persistent, driving rhythm.",,3486,203358,0,4870956,2,26,-1,6,7,0
 "Because their dens tend to be close to drogbar settlements, these snails are both faster and stronger than those on the surface.",,3487,203364,0,5003562,4,26,-1,6,7,0
 The fire at the center of the world burns within its carapace.,,3488,203367,0,5009628,6,26,-1,6,7,0
@@ -2436,8 +2436,8 @@ A tiny sun seems to burn in its chest.,,3489,203372,0,5045825,7,26,-1,6,7,0
 "If Roland has taught you anything, it's that friendship comes at a price.
 
 That price is lots and lots of cheese.",|cFFFFD200Achievement: |rThe Gift of Cheese|n|cFFFFD200Category: |rCooking,3493,204036,407492,515993,4,82,5,6,7,0
-"Like a campfire, but it wants skritches.",,3511,204217,407918,4952368,6,2,-1,6,7,0
-Nothing sparked joy in Ambre's heart until it found the perfect match.,,3512,204221,407921,4952370,6,2,-1,6,7,0
+"Like a campfire, but it wants skritches.",|cFFFFD200Drop: |rFyrakk Assault ,3511,204217,407918,4952368,6,2,0,6,7,0
+Nothing sparked joy in Ambre's heart until it found the perfect match.,|cFFFFD200Drop: |rFyrakk Assault ,3512,204221,407921,4952370,6,2,0,6,7,0
 "Other frogs like to play, but this one is feeling too blue.",,3513,204222,407926,4879734,8,2,-1,6,7,0
 Being green is... not easy.,,3514,204224,407930,4879735,8,2,-1,6,7,0
 Karrit's distinctive coloration is the result of it eating nothing but orange dragonflies.,,3515,204225,407932,4879736,8,2,-1,6,7,0
@@ -2446,7 +2446,7 @@ Three years ago this swoglet was a fully grown adult.,,3517,204227,407935,487973
 Named after her favorite food.,,3518,204237,407946,4870955,2,2,-1,6,7,0
 Its insides are a raging inferno. Its outside is happy pup.,,3519,204240,407955,5041427,6,2,-1,6,7,0
 Imagine the size of the birds that eat these bugs.,,3520,204261,408023,3995639,2,2,-1,6,7,0
-Lord Stantley will arrive fashionably early to any party that serves shrimp.,|cFFFFD200Drop: |rKlakatak|n|cFFFFD200Zone: |rZaralek Cavern,3521,204263,408027,5008076,6,2,0,6,7,0
+Lord Stantley will arrive fashionably early to any party that serves shrimp.,|cFFFFD200Zone: |rZaralek Cavern,3521,204263,408027,5008076,6,2,0,6,7,0
 "It's not really all that savage, just a little crabby.",,3522,204266,408032,5008077,6,2,-1,6,7,0
 It got its name because its favorite food is fondue.,,3523,204268,408036,5008078,6,2,-1,6,7,0
 Fortunately it mainly devours pet treats.,,3524,204269,408039,5008079,6,2,-1,6,7,0
@@ -2460,12 +2460,12 @@ Rusty's powerful nose could smell a needle in a haystack.,,3531,204295,408106,50
 "Amador has a big heart and loves to help people, especially children and elders. He also likes belly rubs.",,3532,204296,408108,5008012,7,2,-1,6,7,0
 "Sure it's just a rock, but how much can it lift?",|cFFFFD200Treasure: |rChest of Massive Gains|n|cFFFFD200Zone: |rZaralek Cavern,3533,204303,408110,1322283,6,2,0,6,7,0
 "Jerrie was once an ordinary rock mouse. He still is, in fact.",,3534,204305,408130,4616693,4,2,-1,6,7,0
-These snails are especially prized by many drogbar snail-racers for being fast and looking fantastic.,,3535,204320,408150,5003559,4,2,-1,6,7,0
-"While not as fast as some of the other snails in the Zaralek Caverns, Bashful makes up for it with sheer power.",,3536,204321,408153,5003563,4,2,-1,6,7,0
+These snails are especially prized by many drogbar snail-racers for being fast and looking fantastic.,|cFFFFD200Vendor: |rSaccratros|n|cFFFFD200Zone: |rZaralek Cavern|n|cFFFFD200Cost: |r50|Hitem:204727|h|TInterface\ICONS\INV_Misc_CuriousCoin.BLP:0|t|h,3535,204320,408150,5003559,4,2,2,6,7,0
+"While not as fast as some of the other snails in the Zaralek Caverns, Bashful makes up for it with sheer power.",|cFFFFD200Quest: |rA Race To The Finish|n|cFFFFD200Zone: |rZaralek Cavern,3536,204321,408153,5003563,4,2,1,6,7,0
 Known to hide money in its shell.,|cFFFFD200Vendor: |rPonzo|n|cFFFFD200Zone: |rZaralek Cavern|n|cFFFFD200Cost: |r45|Hitem:205188|h|TInterface\ICONS\INV_Stone_WeightStone_08.blp:0|t|h,3537,204323,408158,5003560,4,2,2,6,7,0
-Layers of rocky skin make Ambershells very tough to hurt.,,3538,204324,408161,5003564,4,2,-1,6,7,0
+Layers of rocky skin make Ambershells very tough to hurt.,|cFFFFD200Quest: |rA Race To The Finish|n|cFFFFD200Zone: |rZaralek Cavern,3538,204324,408161,5003564,4,2,1,6,7,0
 "Rosheshells are known to be very agressive, but aren't very fast. So if you mess with one, prepare to be bitten in about five seconds.",,3539,204325,408163,5003561,4,2,-1,6,7,0
-Somehow pretty and gross at the same time.,,3540,204326,408165,5003563,4,2,-1,6,7,0
+Somehow pretty and gross at the same time.,|cFFFFD200Quest: |rA Race To The Finish|n|cFFFFD200Zone: |rZaralek Cavern,3540,204326,408165,5003563,4,2,1,6,7,0
 For a creature made of rocks it hovers quite effortlessly.,|cFFFFD200Drop: |rKob'rok|n|cFFFFD200Zone: |rZaralek Cavern,3541,204339,408251,5009625,6,2,0,6,7,0
 "This creature hunts by lurking in dark areas, then darting out to catch its prey as it wanders by.",,3542,204340,408252,5009629,6,2,-1,6,7,0
 This creature can eat twice its bodyweight at a single meal.,,3543,204341,408253,5009631,6,2,-1,6,7,0
