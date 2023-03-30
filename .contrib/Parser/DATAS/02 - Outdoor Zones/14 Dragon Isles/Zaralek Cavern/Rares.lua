@@ -22,10 +22,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			n(203621, {	-- Brulsef the Stronk
-				-- ["coord"] = { 53.1, 65.0, ZARALEK_CAVERN },
-				--["questID"] = 75326,
+				["coord"] = { 41.4, 86.1, ZARALEK_CAVERN },
+				["questID"] = 75325,
 				["g"] = {
-					--bo(75326, false),
+					bo(75326, false),
 				},
 			}),
 			n(204093, {	-- Colossian

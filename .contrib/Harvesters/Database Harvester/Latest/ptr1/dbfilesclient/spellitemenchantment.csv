@@ -4622,9 +4622,9 @@ ID,Name_lang,HordeName_lang,Duration,EffectArg[0],EffectArg[1],EffectArg[2],Effe
 6825,Shadowflame Wreathe |A:Professions-ChatIcon-Quality-Tier1:20:20|a,,0,405764,0,0,0,0,0,0,180,0,0,0,0,0,0,0,32,0,0,1,0,3,0,0,0,0,0,60,70
 6826,Shadowflame Wreathe |A:Professions-ChatIcon-Quality-Tier2:20:20|a,,0,405765,0,0,0,0,0,0,180,0,0,0,0,0,0,0,32,0,0,1,0,3,0,0,0,0,0,60,70
 6827,Shadowflame Wreathe |A:Professions-ChatIcon-Quality-Tier3:20:20|a,,0,405766,0,0,0,0,0,0,180,0,0,0,0,0,0,0,32,0,0,1,0,3,0,0,0,0,0,60,70
-6828,Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier1:20:20|a,,0,71,40,0,0.225,0.105,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
-6829,Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier2:20:20|a,,0,71,40,0,0.283,0.132,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
-6830,Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier3:20:20|a,,0,71,40,0,0.342,0.159,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
+6828,Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier1:20:20|a,,0,71,40,0,0.225,0.081,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
+6829,Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier2:20:20|a,,0,71,40,0,0.283,0.087,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
+6830,Lambent Armor Kit |A:Professions-ChatIcon-Quality-Tier3:20:20|a,,0,71,40,0,0.342,0.091,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
 6831,$spell@spelldesc407949,,0,407949,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,7,0,0,0,0,0,0,60
 6836,Shadow Flame,,0,0,0,0,0,0,0,1392911,0,0,0,0,0,0,0,633,0,0,0,1,0,0,0,0,0,0,0,0,70
 6837,Hissing Rune,,7200,49,0,0,0.58425,0,0,0,26,0,0,0,12,0,0,0,33,0,0,50,0,5,0,0,-7,0,0,61,70

@@ -19819,3 +19819,15 @@
 204974@@@Jrumm's Drum
 205007@@@Faceless Devourer
 205008@@@Narsysix
+10.1.0.48776
+189119@@@Gerald
+200111@@@Magmanesha
+205043@@@Zaqali Berserker
+205084@@@Webbed Creature
+205145@@@Billy Brightly
+205148@@@Bri Brightly
+205213@@@Scuttering Bettle
+205313@@@Sound Controller - Loamm Bell Chime
+205319@@@Scalecommander Sarkareth
+205328@@@Kazzara Lava Right
+205329@@@Kazzara Lava Left

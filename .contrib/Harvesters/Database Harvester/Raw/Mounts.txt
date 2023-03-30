@@ -1613,3 +1613,8 @@
 408977@@@Obsidian Gladiator's Slitherdrake
 409032@@@Vicious War Snail
 409034@@@Vicious War Snail
+10.1.0.48776
+374090@@@Ancient Salamanther
+374157@@@Gooey Snailemental
+374194@@@Mossy Mammoth
+408649@@@Scoria-Clad Sporebat
