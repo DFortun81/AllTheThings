@@ -354,6 +354,28 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = GORNII_GROUPS,
 				}),
+				n(16753, {	-- Gotaan  
+					["coord"] = { 67.6, 96.0, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2424 },    -- Brigandine Belt
+						{"select", "itemID", 2426 },    -- Brigandine Boots
+						{"select", "itemID", 2427 },    -- Brigandine Bracers
+						{"select", "itemID", 2428 },    -- Brigandine Gloves
+						{"select", "itemID", 3894 },    -- Brigandine Helm
+						{"select", "itemID", 2425 },    -- Brigandine Leggings
+						{"select", "itemID", 2423 },    -- Brigandine Vest
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+						{"select", "itemID", 8094 },    -- Platemail Armor
+						{"select", "itemID", 8088 },    -- Platemail Belt
+						{"select", "itemID", 8089 },    -- Platemail Boots
+						{"select", "itemID", 8090 },    -- Platemail Bracers
+						{"select", "itemID", 8091 },    -- Platemail Gloves
+						{"select", "itemID", 8092 },    -- Platemail Helm
+						{"select", "itemID", 8093 },    -- Platemail Leggings
+					},
+				}),
 				n(16748, {	-- Haferet <Leatherworking Supplies>
 					["coord"] = { 66.6, 73.7, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,

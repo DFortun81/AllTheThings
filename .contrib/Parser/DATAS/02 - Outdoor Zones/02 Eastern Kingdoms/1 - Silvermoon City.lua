@@ -628,13 +628,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 52.6, 64.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						-- added all
 						{"select", "itemID", 2520 },	-- broadsword
 						{"select", "itemID", 2528 },	-- falchion
 						{"select", "itemID", 2521 },	-- Flamberge
 						{"select", "itemID", 2526 },	-- main-gauche
 						{"select", "itemID", 2534 },	-- rondel
 						{"select", "itemID", 2529 },	-- zweihander
+					},
+				}),
+				n(16626, {	-- Tynna 
+					["coord"] = { 60.8, 86.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+					},
+					["groups"] = {
+						i(2424),    -- Brigandine Belt
+						i(2426),    -- Brigandine Boots
+						i(2427),    -- Brigandine Bracers
+						i(2428),    -- Brigandine Gloves
+						i(3894),    -- Brigandine Helm
+						i(2425),    -- Brigandine Leggings
+						i(2423),    -- Brigandine Vest
+						i(8094),    -- Platemail Armor
+						i(8088),    -- Platemail Belt
+						i(8089),    -- Platemail Boots
+						i(8090),    -- Platemail Bracers
+						i(8091),    -- Platemail Gloves
+						i(8092),    -- Platemail Helm
+						i(8093),    -- Platemail Leggings
 					},
 				}),
 				n(16442, {	-- Vinemaster Suntouched <Wine & Spirits Merchant>

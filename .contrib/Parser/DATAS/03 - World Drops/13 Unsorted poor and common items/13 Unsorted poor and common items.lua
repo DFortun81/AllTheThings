@@ -351,22 +351,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 			}),
 			filter(MAIL, {	-- Common Vendor Items
 				---
-				i(2419),	-- Augmented Chain Belt
-				i(2420),	-- Augmented Chain Boots
-				i(2421),	-- Augmented Chain Bracers
-				i(2422),	-- Augmented Chain Gloves
-				i(3891),	-- Augmented Chain Helm
-				i(2418),	-- Augmented Chain Leggings
-				i(2417),	-- Augmented Chain Vest
-				---
-				i(2424),	-- Brigandine Belt
-				i(2426),	-- Brigandine Boots
-				i(2427),	-- Brigandine Bracers
-				i(2428),	-- Brigandine Gloves
-				i(3894),	-- Brigandine Helm
-				i(2425),	-- Brigandine Leggings
-				i(2423),	-- Brigandine Vest
-				---
 				i(847),		-- Chainmail Armor
 				i(1845),	-- Chainmail Belt
 				i(848),		-- Chainmail Pants
@@ -397,13 +381,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(2394),	-- Light Mail Leggings
 				---
 				i(30781),	-- Mag'hari Chain Vest
-				---
-				i(2148),	-- Polished Scale Belt
-				i(2150),	-- Polished Scale Bracers
-				i(2149),	-- Polished Scale Boots
-				i(2151),	-- Polished Scale Gloves
-				i(2152),	-- Polished Scale Leggings
-				i(2153),	-- Polished Scale Vest
 				---
 				i(2387),	-- Rusted Chain Belt
 				i(2390),	-- Rusted Chain Bracers
@@ -444,14 +421,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(30771),	-- Heavy Draenic Bracers
 				i(30765),	-- Heavy Draenic Breastplate
 				---
-				i(8094),	-- Platemail Armor
-				i(8088),	-- Platemail Belt
-				i(8089),	-- Platemail Boots
-				i(8090),	-- Platemail Bracers
-				i(8091),	-- Platemail Gloves
-				i(8092),	-- Platemail Helm
-				i(8093),	-- Platemail Leggings
-				---
 			}),
 			filter(CLOAKS, {
 				i(53048),	-- Doomsday Message	-- TODO Cataclysm
@@ -471,7 +440,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 		}),
 		n(WEAPONS, {
 			filter(SHIELDS, {
-				i(2451),	-- Crested Heater Shield	-- sold by many vendors
 				i(17183),	-- Dented Buckler	-- sold by many vendors
 				i(1201),	-- Dull Heater Shield	-- sold by many vendors
 				i(2448),	-- Heavy Pavise	-- sold by many vendors

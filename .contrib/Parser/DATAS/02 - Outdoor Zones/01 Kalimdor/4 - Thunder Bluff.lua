@@ -802,7 +802,41 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3095, {	-- Fela <Heavy Armor Merchant>
 					["coord"] = { 42.8, 44.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = { { "sub", "common_vendor", 46512 } },	-- Naros <Plate Armor Merchant>
+					["sym"] = {
+						{"select", "itemID", 2419 },    -- Augmented Chain Belt
+						{"select", "itemID", 2420 },    -- Augmented Chain Boots
+						{"select", "itemID", 2421 },    -- Augmented Chain Bracers
+						{"select", "itemID", 2422 },    -- Augmented Chain Gloves
+						{"select", "itemID", 3891 },    -- Augmented Chain Helm
+						{"select", "itemID", 2418 },    -- Augmented Chain Leggings
+						{"select", "itemID", 2417 },    -- Augmented Chain Vest
+						{"select", "itemID", 2451 },    -- Crested Heater Shield
+						{"select", "itemID", 62260 },    -- Grunts Chain Belt
+						{"select", "itemID", 62261 },    -- Grunts Chain Boots
+						{"select", "itemID", 62262 },    -- Grunts Chain Bracers
+						{"select", "itemID", 62266 },    -- Grunts Chain Circlet
+						{"select", "itemID", 62263 },    -- Grunts Chain Gloves
+						{"select", "itemID", 62264 },    -- Grunts Chain Leggings
+						{"select", "itemID", 62265 },    -- Grunts Chain Vest
+						{"select", "itemID", 62253 },    -- Grunts Plate Armor
+						{"select", "itemID", 62254 },    -- Grunts Plate Belt
+						{"select", "itemID", 62255 },    -- Grunts Plate Boots
+						{"select", "itemID", 62256 },    -- Grunts Plate Bracers
+						{"select", "itemID", 62257 },    -- Grunts Plate Gloves
+						{"select", "itemID", 62259 },    -- Grunts Plate Helm
+						{"select", "itemID", 62258 },    -- Grunts Plate Leggings
+						{"select", "itemID", 2448 },    -- Heavy Pavise
+						{"select", "itemID", 2446 },    -- Kite Shield
+						{"select", "itemID", 17189 },    -- Metal Buckler
+						{"select", "itemID", 17190 },    -- Ornate Buckler
+						{"select", "itemID", 2148 },    -- Polished Scale Belt
+						{"select", "itemID", 2149 },    -- Polished Scale Boots
+						{"select", "itemID", 2150 },    -- Polished Scale Bracers
+						{"select", "itemID", 2151 },    -- Polished Scale Gloves
+						{"select", "itemID", 2152 },    -- Polished Scale Leggings
+						{"select", "itemID", 2153 },    -- Polished Scale Vest
+						{"select", "itemID", 17192 },    -- Reinforced Targe
+					},
 				}),
 				-- #endif
 				n(8401, {	-- Halpa <Prairie Dog Vendor>
