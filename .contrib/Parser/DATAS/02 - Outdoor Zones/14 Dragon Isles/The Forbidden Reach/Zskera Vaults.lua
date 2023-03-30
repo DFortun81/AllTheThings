@@ -95,6 +95,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
 				}),
 				-- Inside of Az
+				q(74795, {	-- An Odd Round Object
+					-- TODO: ["provider"] = { "n",  },	-- An Odd Round Object
+					["coord"] = { 30.8, 57.5, THE_FORBIDDEN_REACH },
+				}),
+				q(74493, {	-- Second Time Is The Charm
+					["provider"] = { "n", 201564 },	-- Voraxian
+					["coord"] = {85.5, 35, OHNAHRAN_PLAINS },
+				}),
 				q(74282, {	-- Authentic Authorization
 					["provider"] = { "n", 203381 },	-- Sealed Letter to Neltharion
 				}),
@@ -867,6 +875,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(388908, {	-- Inert Goo
 							["coord"] = { 27.8, 50.8, THE_FORBIDDEN_REACH },
 							["questID"] = 75020,
+							["g"] = {
+								i(193835),	-- Brigthfeather (PET!)
+							},
 						}),
 						o(387737, {	-- Living Book
 							["coord"] = { 29.8, 54.0, THE_FORBIDDEN_REACH },
@@ -1050,7 +1061,9 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(74320),
 		q(74323),
 		q(74324),
-		q(75125),
+		q(75125, {	-- Every Door, Everywhere, All At Once (Hidden Achievement Trigger)
+			["isWeekly"] = true,
+		}),
 		q(74327),
 		q(74496),
 		q(75032),
@@ -1102,6 +1115,9 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75069),	-- On Primordial Earth Cache 389789
 		q(75070),	-- On Primordial Earth Cache 389902
 
+		q(75146),	-- After looting Stuffed Bear?
+		q(75007),	-- ???
+		q(74971),	-- During Second Time Is The Charm (dialgoue)
 		--
 		q(74874),	-- Pop when completing Primordial Answers (74869)
 	}),
