@@ -821,6 +821,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16060),	-- Common White Shirt
 					},
 				}),
+				n(3018, {	-- Hogor Thunderhoof
+					["coord"] = { 55.6, 56.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
+						{"select", "itemID", 2511 },    -- Hunter's Boomstick
+						{"select", "itemID", 3023 },    -- Large Bore Blunderbuss
+						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
+					},
+					["groups"] = {
+						i(2510),	-- Solid Blunderbuss
+					},
+				}),
 				n(2997, {	-- Jyn Stonehoof
 					["coord"] = { 41.6, 62.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,

@@ -322,6 +322,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										2953,	-- Bristleback Shaman
 									},
 								}),
+								i(12448, {	-- Light Hunting Rifle
+									["timeline"] = { "removed 1.7.0" },
+								}),
 								i(1382, {	-- Rock Mace
 									["timeline"] = { "removed 4.0.3" },
 								}),

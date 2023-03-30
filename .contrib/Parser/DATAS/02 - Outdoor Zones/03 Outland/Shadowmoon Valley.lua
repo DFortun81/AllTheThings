@@ -2011,6 +2011,9 @@ root(ROOTS.Zones, {
 					n(19351, {	-- Daggle Ironshaper
 						["coord"] = { 36.8, 54.4, SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
+						["sym"] = {
+							{"select", "itemID", 30758 },	-- Aldor Guardian Rifle
+						},
 						["groups"] = {
 							i(23807, {	-- Schematic: Adamantite Scope
 								["isLimited"] = true,

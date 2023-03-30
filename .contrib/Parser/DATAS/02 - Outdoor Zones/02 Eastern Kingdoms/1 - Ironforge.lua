@@ -1334,6 +1334,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 2529 },	-- zweihander
 					},
 				}),
+				n(5123, {	-- Bretta Goldfury
+					["coord"] = { 72.8, 64.8, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
+						{"select", "itemID", 3023 },    -- Large Bore Blunderbuss
+						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
+						{"select", "itemID", 2510 },    -- Solid Blunderbuss
+					},
+				}),
 				n(5163, {	-- Burbik Gearspanner <Trade Supplies>
 					["coord"] = { 46.6, 27.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,

@@ -6163,6 +6163,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(44975, {	-- Old Umbehto
+					["coord"] = { 35.0, 67.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { "added 4.0.3." },
+					["sym"] = {
+						{"select", "itemID", 6365 },    -- Strong Fishing Pole
+					},
+				}),
 				n(3317, {	-- Ollanus <Cloth Armor Merchant>
 					["coord"] = { 60.6, 58.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -6515,6 +6523,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(17062),	-- Recipe: Mithril Head Trout
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 						i(6369),	-- Recipe: Rockscale Cod
+						i(6365),	-- Strong Fishing Pole
 					},
 				}),
 				n(49737, {	-- Shazdar <Sous Chef>

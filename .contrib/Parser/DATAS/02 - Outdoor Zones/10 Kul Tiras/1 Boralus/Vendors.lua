@@ -2358,6 +2358,20 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					{"sub", "common_vendor", 29491},	-- Karandonna <Clothier>
 				},
 			}),
+			n(123675, {	-- Patrick Markson
+				["coord"] = { 74.0, 16.2, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
+					{"select", "itemID", 2511 },	-- Hunter's Boomstick
+					{"select", "itemID", 3023 },	-- Large Bore Blunderbuss
+					{"select", "itemID", 2509 },	-- Ornate Blunderbuss
+					{"select", "itemID", 2510 },	-- Solid Blunderbuss
+				},
+				["g"] = {
+					i(3025),	-- BKP 42 "Ultra"
+				},
+			}),
 			n(135808, {	-- Provisioner Fray <Proudmoore Admiralty Emissary>
 				["coord"] = { 67.5, 21.5, BORALUS },
 				["races"] = ALLIANCE_ONLY,

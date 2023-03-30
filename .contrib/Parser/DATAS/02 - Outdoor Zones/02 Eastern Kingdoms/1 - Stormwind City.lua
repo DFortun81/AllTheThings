@@ -6293,6 +6293,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6325),	-- Recipe: Brilliant Smallfish
 						i(6330),	-- Recipe: Bristle Whisker Catfish
 						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6365),	-- Strong Fishing Pole
 					},
 				}),
 				n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>
@@ -7880,6 +7881,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
+				}),
+				n(5510, {	-- Thulman Flintcrag
+					["coord"] = { 61.8, 36.2, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2509 },	-- Ornate Blunderbuss
+					},
+					["groups"] = {
+						i(2510),	-- Solid Blunderbuss
+					},
 				}),
 				n(58154, {	-- Toren Landow <Legacy Justice Quartermaster>
 					-- #if AFTER 9.0.1

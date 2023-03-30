@@ -597,6 +597,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["groups"] = LYNA_GROUPS,
 				}),
+				n(16620, {	-- Mathaleron 
+					["coord"] = { 86.0, 39.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
+						{"select", "itemID", 2511 },    -- Hunter's Boomstick
+						{"select", "itemID", 3023 },    -- Large Bore Blunderbuss
+						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
+					},
+				}),
 				n(16641, {	-- Melaris <Alchemy Supplies>
 					["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,

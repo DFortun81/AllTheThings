@@ -456,9 +456,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 			filter(CLOAKS, {
 				i(53048),	-- Doomsday Message	-- TODO Cataclysm
 			}),
-			filter(COSMETIC, {
-				i(168004),	-- Gift of N'Zoth	-- TODO Battle for Azeroth
-			}),
 			filter(MISC, {
 				i(33105),	-- Budd's Guise of Zul'aman	-- something removed
 				i(43486),	-- Mohawk Mask	-- something removed
@@ -473,26 +470,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 			}),
 		}),
 		n(WEAPONS, {
-			filter(PROF_EQUIP, {	-- Fishing Poles
-				i(6366),	-- Darkwood Fishing Pole	-- fished up in many zones
-				i(6365),	-- Strong Fishing Pole	-- sold by many vendors
-			}),
-			filter(GUNS, {
-				i(30758),	-- Aldor Guardian Rifle	-- sold by many vendors
-				i(3025),	-- BKP 42 "Ultra"	-- sold by many vendors
-				i(3024),	-- BKP 2700 "Enforcer"	-- sold by many vendors
-				i(2511),	-- Hunter's Boomstick	-- sold by many vendors
-				i(3023),	-- Large Bore Blunderbuss	-- sold by many vendors
-				i(12448),	-- Light Hunting Rifle	-- where is this from?
-				i(2509),	-- Ornate Blunderbuss	-- sold by many vendors
-				i(2510),	-- Solid Blunderbuss	-- sold by many vendors
-			}),
-			filter(MISC, {
-				i(5956),	-- Blacksmith Hammer	-- sold by many vendors
-				i(85663),	-- Herbalist's Spade	-- sold by many vendors
-				i(2901),	-- Mining Pick	-- sold by many vendors
-				i(7005),	-- Skinning Knife	-- sold by many vendors
-			}),
 			filter(SHIELDS, {
 				i(2451),	-- Crested Heater Shield	-- sold by many vendors
 				i(17183),	-- Dented Buckler	-- sold by many vendors

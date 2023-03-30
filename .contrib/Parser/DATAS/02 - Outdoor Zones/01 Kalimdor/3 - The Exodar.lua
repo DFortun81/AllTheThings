@@ -393,6 +393,16 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(45580),	-- Exodar Tabard
 					},
 				}),
+				n(16735, {	-- Muhaa 
+					["coord"] = { 45.8, 89.2, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
+						{"select", "itemID", 3023 },    -- Large Bore Blunderbuss
+						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
+						{"select", "itemID", 2511 },    -- Hunter's Boomstick
+					},
+				}),
 				n(16767, {	-- Neii <Tailoring Supplies>
 					["coord"] = { 64.7, 68.5, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,

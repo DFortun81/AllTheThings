@@ -641,6 +641,15 @@ i(191862);	-- Whalebone Fragment
 i(193372);	-- Wood
 
 ------------------
+-- PATCH 10.0.5 --
+------------------
+-- Profession White Items
+i(5956);	-- Blacksmith Hammer
+i(85663);	-- Herbalist's Spade
+i(2901);	-- Mining Pick
+i(7005);	-- Skinning Knife
+
+------------------
 -- PATCH 10.0.7 --
 ------------------
 -- Quest Items --

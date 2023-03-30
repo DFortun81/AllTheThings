@@ -195,3 +195,15 @@ root(ROOTS.ExpansionFeatures, {
 		}),
 	}),
 });
+
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(BFA_TIER, {
+		n(ARMOR, {
+			-- You get the transmog attached to your head during 'Twist the Knife' but you dont get the item to learn the mog
+			-- Removed after the Quest 'His Eye Upon You'
+			i(168004, {	-- Gift of N'Zoth
+				["timeline"] = { "created 8.1.5" },
+			}),
+		}),
+	}),
+}));

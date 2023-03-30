@@ -1673,6 +1673,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 2504 },    -- Worn Shortbow
 					},
 				}),
+				n(4603, {	-- Nicholas Atwood
+					["coord"] = { 62.2, 27.0, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
+						{"select", "itemID", 3023 },    -- Large Bore Blunderbuss
+						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
+						{"select", "itemID", 2510 },    -- Solid Blunderbuss
+					},
+				}),
 				n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
 					["coord"] = { 62.3, 43.1, UNDERCITY },
 					-- #if AFTER CATA
