@@ -499,7 +499,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(5393),	-- Thistlewood Staff
 								i(5586),	-- Thistlewood Blade
 								i(12447, {	-- Thistlewood Bow
-									["timeline"] = { "removed 1.0.7" },
+									["timeline"] = { "removed 1.7.0" },
 								}),
 							},
 						}),
