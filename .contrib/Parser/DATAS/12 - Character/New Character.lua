@@ -1331,11 +1331,13 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 		}),
 		i(37, {	-- Worn Axe
-			["timeline"] = { REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
+			["description"] = "Former Starter Weapon for Orc, Troll & Worgen Rogues as well as Dwarf, Orc, Tauren & Troll Hunters.",
+			["timeline"] = { "added 1.11.0", "removed 7.3.5" },
 		}),
 		i(52532, {	-- Worn Wood Chopper
-			["classes"] = { HUNTER },
-			["races"] = { GOBLIN, HUMAN, UNDEAD, WORGEN },
+		--	["classes"] = { HUNTER },
+		--	["races"] = { GOBLIN, HUMAN, UNDEAD, WORGEN },
+			["description"] = "Former Starter Weapon for Goblin, Human, Undead & Worgen Hunters",
 			["timeline"] = { "added 4.0.3", "removed 5.0.4" }
 		}),
 	}),
