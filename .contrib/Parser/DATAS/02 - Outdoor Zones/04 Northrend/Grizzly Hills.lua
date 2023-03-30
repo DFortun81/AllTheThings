@@ -1766,6 +1766,15 @@ root(ROOTS.Zones, {
 								}),
 							},
 						}),
+						n(26229, {	-- Tiernan Anvilheart 
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 59.6, 27.8, GRIZZLY_HILLS },
+							["sym"] = {
+								{"select", "itemID", 30758 },    -- Aldor Guardian Rifle
+								{"select", "itemID", 30749 },    -- Draenic Sparring Blade
+								{"select", "itemID", 30750 },    -- Draenic Warblade
+							},
+						}),
 					},
 				}),
 				n(ZONE_DROPS, {

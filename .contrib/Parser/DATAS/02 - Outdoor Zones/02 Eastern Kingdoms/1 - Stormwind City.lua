@@ -5952,6 +5952,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
+				n(1315, {	-- Allan Hafgan
+					["coord"] = { 49.6, 49.8, STORMWIND_CITY },
+					["groups"] = {
+						i(2527),	-- Battle Staff
+						i(2535),	-- War Staff
+					},
+				}),
 				-- #if AFTER 10.0.5
 				n(53641, {	-- Allison Potts <Heavy Armor Merchant>
 					["coord"] = { 64.8, 48.0, STORMWIND_CITY },
@@ -6726,6 +6733,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_10_0_7 },
 						}),
 						i(2525),	-- War Hammer
+						i(2533),	-- War Maul
 						i(2529),	-- Zweihander
 					},
 				}),

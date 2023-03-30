@@ -1637,6 +1637,10 @@ root(ROOTS.Zones, {
 						["description"] = "This vendor is only accessible when the Alliance controls Halaa.",
 						["coord"] = { 42.8, 42.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+						["sym"] = {
+							{"select", "itemID", 30749 },    -- Draenic Sparring Blade
+							{"select", "itemID", 30750 },	-- Draenic Warblade
+						},
 						["groups"] = pvp({
 							i(24208, {	-- Design: Mystic Dawnstone
 								["isLimited"] = true,

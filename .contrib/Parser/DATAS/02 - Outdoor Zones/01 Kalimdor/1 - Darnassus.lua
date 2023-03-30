@@ -884,7 +884,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.6, 83.2, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-					-- all done
 						{"select", "itemID", 2527 },	-- Battle Staff
 						{"select", "itemID", 2535 },	-- War Staff
 					},

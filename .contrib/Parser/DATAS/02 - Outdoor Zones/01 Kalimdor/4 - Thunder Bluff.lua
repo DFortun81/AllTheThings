@@ -1043,6 +1043,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
+				n(3022, {	-- Sunn Ragetotem
+					["coord"] = { 49.6, 49.8, THUNDER_BLUFF },
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 2535 },    -- War Staff
+					},
+				}),
 				n(3023, {	-- Sura Wildmane <War Harness Vendor>
 					["coord"] = { 51.8, 54.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,

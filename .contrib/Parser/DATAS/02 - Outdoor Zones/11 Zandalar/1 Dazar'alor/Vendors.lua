@@ -36,8 +36,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					{"select", "itemID", 15810 },	-- Short Spear
 					{"select", "itemID", 39987 },	-- Tuskarr Fishing Spear
 				},
-				["groups"] = {
-				},
 			}),
 			n(148923, {	-- Captain Zen'taga <Dubloons Trader>
 				["coord"] = { 44.4, 94.4, DAZARALOR },
@@ -899,6 +897,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					{"select", "itemID", 15810 },    -- Short Spear
 				},
 			}),
+			n(122465, {	-- Koatini 
+				["coord"] = { 48.8, 91.0, DAZARALOR },
+				["groups"] = {
+					i(39987),	-- Tuskarr Fishing Spear
+				},
+			}),
 			n(131287, {	-- Natal'hakata <Zandalari Empire Emissary>
 				["coord"] = { 67.2, 71.7, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
@@ -1100,6 +1104,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(166547, {	-- War-Torn Crimson Cloak
 						["cost"] = { { "c", 1716, 50 }, },	-- 50x Honorbound Service Medal
 					}),
+				},
+			}),
+			n(131255, {	-- Rawajo
+				["coord"] = { 50.6, 11.8, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 44654 },	-- Dalaran Spear
+					{"select", "itemID", 15811 },	-- Heavy Spear
+					{"select", "itemID", 15810 },	-- Short Spear
+					{"select", "itemID", 39987 },	-- Tuskarr Fishing Spear
 				},
 			}),
 			n(126330, {	-- Rakle the Wretched

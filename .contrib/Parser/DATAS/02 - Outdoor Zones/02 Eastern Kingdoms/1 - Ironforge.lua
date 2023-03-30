@@ -1317,7 +1317,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.8, 88.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-					-- added all
 						{"select", "itemID", 2520 },	-- Broadsword
 						{"select", "itemID", 1198 },	-- Claymore
 						{"select", "itemID", 851 },		-- Cutlass

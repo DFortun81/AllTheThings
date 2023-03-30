@@ -1512,15 +1512,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 58.6, 32.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-					-- added all
 						{"select", "itemID", 926 },    -- Battle Axe
 						{"select", "itemID", 2025 },    -- Bearded Axe
 						{"select", "itemID", 2029 },    -- Cleaver
 						{"select", "itemID", 927 },    -- Double Axe
 						{"select", "itemID", 853 },    -- Hatchet
-						{"select", "itemID", 15811 },    -- Heavy Spear
-						{"select", "itemID", 15810 },    -- Short Spear
 						{"select", "itemID", 1196 },    -- Tabar
+					},
+					["groups"] = {
+						i(15811),	-- Heavy Spear
+						i(15810),	-- Short Spear
 					},
 				}),
 				n(4600, {	-- Geoffrey Hartwell
@@ -1686,6 +1687,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.2, 36.6, UNDERCITY },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,
+				}),
+				n(4570, {	-- Sydney Upton
+					["coord"] = { 69.8, 27.4, UNDERCITY },
+					["sym"] = {
+						{"select", "itemID", 2527 },    -- Battle Staff
+						{"select", "itemID", 2535 },    -- War Staff
+					},
 				}),
 				n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
 					["sym"] = { {"sub", "common_recipes_vendor", 3346 } }, -- Kithas <Enchanting Supplies>

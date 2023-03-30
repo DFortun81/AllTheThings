@@ -532,19 +532,11 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(2532),	-- Morning Star	-- sold by many vendors
 				i(2524),	-- Truncheon	-- sold by many vendors
 			}),
-			filter(TWO_HANDED_MACES, {
-				i(2533),	-- War Maul	-- sold by many vendors
-			}),
 			filter(MISC, {
 				i(5956),	-- Blacksmith Hammer	-- sold by many vendors
 				i(85663),	-- Herbalist's Spade	-- sold by many vendors
 				i(2901),	-- Mining Pick	-- sold by many vendors
 				i(7005),	-- Skinning Knife	-- sold by many vendors
-			}),
-			filter(POLEARMS, {
-				i(15811),	-- Heavy Spear	-- sold by many vendors
-				i(15810),	-- Short Spear	-- sold by many vendors
-				i(39987),	-- Tuskarr Fishing Spear	-- sold by many vendors
 			}),
 			filter(SHIELDS, {
 				i(2451),	-- Crested Heater Shield	-- sold by many vendors
@@ -569,18 +561,9 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(2445),	-- Large Metal Shield
 			}),
 			filter(STAVES, {
-				i(2527),	-- Battle Staff	-- sold by many vendors
 				i(2030),	-- Gnarled Staff	-- sold by many vendors
 				i(928),		-- Long Staff	-- sold by many vendors
 				i(79740),	-- Plain Wooden Staff	-- sold by many vendors
-				i(2535),	-- War Staff	-- sold by many vendors
-			}),
-			filter(ONE_HANDED_SWORDS, {
-				i(30749),	-- Draenic Sparring Blade	-- sold by many vendors
-				i(923),		-- Longsword	-- sold by many vendors
-			}),
-			filter(TWO_HANDED_SWORDS, {
-				i(30750),	-- Draenic Warblade	-- sold by many vendors
 			}),
 			filter(WANDS, {
 				i(5239),	-- Blackbone Wand	-- sold by many vendors
@@ -592,9 +575,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(5238),	-- Pitchwood Wand	-- sold by many vendors
 				i(5208),	-- Smoldering Wand	-- sold by many vendors
 			}),
-			---
-			i(2207),	-- Jambiya
-			i(854),		-- Quarter Staff
 		}),
 	}),
 }));

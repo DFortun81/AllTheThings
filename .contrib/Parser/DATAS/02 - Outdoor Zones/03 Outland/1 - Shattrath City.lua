@@ -1706,6 +1706,10 @@ root(ROOTS.Zones, {
 					n(19043, {	-- Ahemen <Staff Vendor>
 						["coord"] = { 34.2, 20.0, SHATTRATH_CITY },
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["sym"] = {
+							{"select", "itemID", 2527 },    -- Battle Staff
+							{"select", "itemID", 2535 },    -- War Staff
+						},
 						["groups"] = {
 							i(12251, {	-- Big Stick
 								["isLimited"] = true,
@@ -2744,7 +2748,13 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 						["coord"] = { 49.6, 79.0, SHATTRATH_CITY },
 						["sym"] = {
-							{"select", "itemID", 2495 },	-- Walking Stick
+							{"select", "itemID", 2527 },    -- Battle Staff
+							{"select", "itemID", 2030 },    -- Gnarled Staff
+							{"select", "itemID", 928 },    -- Long Staff
+							{"select", "itemID", 854 },    -- Quarter Staff
+							{"select", "itemID", 12252 },    -- Staff Of Protection
+							{"select", "itemID", 2495 },    -- Walking Stick
+							{"select", "itemID", 2535 },    -- War Staff
 						},
 						["groups"] = {
 							i(12252, {	-- Staff of Protection

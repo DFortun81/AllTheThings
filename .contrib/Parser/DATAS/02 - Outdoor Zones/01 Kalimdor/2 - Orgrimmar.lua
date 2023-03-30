@@ -5058,6 +5058,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_10_0_7 },
 						}),
 						i(2525),	-- War Hammer
+						i(2533),	-- War Maul
 						i(2529),	-- Zweihander
 					},
 				}),
@@ -5268,7 +5269,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.8, 63.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						-- added all
 						{"select", "itemID", 2520 },	-- Broadsword
 						{"select", "itemID", 1198 },	-- Claymore
 						{"select", "itemID", 851 },		-- Cutlass
@@ -6014,6 +6014,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				-- #endif
+				n(3330, {	-- Muragus
+					["coord"] = { 46.0, 57.8, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(2527),	-- Battle Staff
+						i(2535),	-- War Staff
+					},
+				}),
 				n(46512, {	-- Naros <Plate Armor Merchant>
 					["coord"] = { 45.0, 77.6, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },
@@ -6504,7 +6512,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(922),		-- Dacian Falx
 						i(2024),	-- Espadon
 						i(2528),	-- falchion
+						i(2207),	-- Jambiya
 						i(2209),	-- Kris
+						i(923),		-- Longsword
 						i(2526),	-- Main Gauche
 						i(2208),	-- Poniad
 						i(2534),	-- Rondel
@@ -7009,6 +7019,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"select", "itemID", 851 },		-- Cutlass
+						{"select", "itemID", 2207 },	-- Jambiya
 					},
 					["groups"] = {
 						i(1194),	-- Bastard Sword
@@ -7021,7 +7032,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2134),	-- Hand Axe
 						i(2488),	-- Gladius
 						i(853),		-- Hatched
-						i(2207),	-- Jambiya
 						i(2491),	-- Large Axe
 						i(2480),	-- Large Club
 						i(852),		-- Mace
