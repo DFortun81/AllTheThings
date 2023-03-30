@@ -172,6 +172,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			prof(FISHING, {
+				i(16967, {	-- Feralas Ahi
+					["coord"] = { 62.0, 52.0, FERALAS },
+					["description"] = "Best fished at 62.0 52.0",
+				}),
+			}),
 			n(QUESTS, {
 				q(25362, {	-- A Grim Discovery
 					["qg"] = 4544,	-- Krueg Skullsplitter

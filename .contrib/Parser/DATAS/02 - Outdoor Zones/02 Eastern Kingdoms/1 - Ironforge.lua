@@ -1854,6 +1854,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 4565 },	-- Simple Dagger
 					},
 				}),
+				n(8117, {	-- Wizbang Booms
+					["coord"] = { 31.8, 63.4, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					["sym"] = {
+						{"select", "itemID", 8626 },	-- Blue Sparkler
+						{"select", "itemID", 8625 },	-- White Sparkler
+						{"select", "itemID", 8624 },	-- Red Sparkler
+					},
+				}),
 			}),
 		},
 	}),

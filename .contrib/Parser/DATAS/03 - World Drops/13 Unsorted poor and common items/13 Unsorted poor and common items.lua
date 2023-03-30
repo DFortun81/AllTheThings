@@ -487,19 +487,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(2509),	-- Ornate Blunderbuss	-- sold by many vendors
 				i(2510),	-- Solid Blunderbuss	-- sold by many vendors
 			}),
-			filter(HELD_IN_OFF_HAND, {
-				i(3422),	-- Beautiful Wildflowers	-- sold by many vendors
-				i(3420),	-- Black Rose	-- sold by many vendors
-				i(8626),	-- Blue Sparkler	-- sold by many vendors
-				i(3424),	-- Bouquet of Black Roses	-- sold by many vendors
-				i(3423),	-- Bouquet of White Roses	-- sold by many vendors
-				i(16967),	-- Feralas Ahi	-- fished up in Feralas
-				i(3419),	-- Red Rose	-- sold by many vendors
-				i(8624),	-- Red Sparkler	-- sold by many vendors
-				i(3421),	-- Simple Wildflowers	-- sold by many vendors
-				i(33012),	-- Terokkar Lilac	-- where is this from?
-				i(8625),	-- White Sparkler	-- sold by many vendors
-			}),
 			filter(MISC, {
 				i(5956),	-- Blacksmith Hammer	-- sold by many vendors
 				i(85663),	-- Herbalist's Spade	-- sold by many vendors

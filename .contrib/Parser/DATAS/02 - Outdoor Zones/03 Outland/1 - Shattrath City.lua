@@ -2158,6 +2158,9 @@ root(ROOTS.Zones, {
 						i(27978),	-- Soap on a Rope
 						i(27979),	-- Stone of Stupendous Springing Strides
 						i(27944),	-- Talisman of True Treasure Tracking
+						i(33012, {	-- Terokkar Lilac
+							["timeline"] = { "added 2.2.0.6983", "removed 2.3.0" },
+						}),
 						i(156726, {	-- Yellow Crystal Monocle
 							["sourceQuest"] = 50183,	-- Star-Touched Chest
 							["timeline"] = { "added 8.1.028768" },

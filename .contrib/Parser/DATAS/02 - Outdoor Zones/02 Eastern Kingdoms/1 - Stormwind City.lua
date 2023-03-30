@@ -5987,7 +5987,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				-- #endif
-				-- #if AFTER 8.0.1
 				n(1312, {	-- Ardwyn Cailen
 					["coord"] = { 52.8, 75.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -6002,6 +6001,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5208),    -- Smoldering Wand
 					},
 				}),
+				-- #if AFTER 8.0.1
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 52.4, 8.2, STORMWIND_CITY },
@@ -6016,6 +6016,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(1302, {	-- Bernard Gump
+					["coord"] = { 69.6, 71.4, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(3422),    -- Beautiful Wildflowers
+						i(3420),    -- Black Rose
+						i(3424),    -- Bouquet Of Black Roses
+						i(3423),    -- Bouquet Of White Roses
+						i(3419),    -- Red Rose
+						i(3421),    -- Simple Wildflowers
+					},
+				}),
 				n(69975, {	-- Captain Dirgehammer <Cataclysmic Gladiator>
 					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
 					["timeline"] = { "added 5.2.0.16577" },
@@ -6703,6 +6715,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.2, 60.6, STORMWIND_CITY },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 3422 },    -- Beautiful Wildflowers
+						{"select", "itemID", 3420 },    -- Black Rose
+						{"select", "itemID", 3424 },    -- Bouquet Of Black Roses
+						{"select", "itemID", 3423 },    -- Bouquet Of White Roses
+						{"select", "itemID", 3419 },    -- Red Rose
+						{"select", "itemID", 3421 },    -- Simple Wildflowers
+					},
 					["groups"] = {
 						i(2665),	-- Stormwind Seasoning Herbs
 					},
@@ -7200,6 +7220,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(8489, {	-- Cat Carrier (White Kitten) (PET!)
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(8118, {	-- Lillian Singh
+					["coord"] = { 62.6, 70.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					["groups"] = {
+						i(8626),	-- Blue Sparkler
+						i(8625),	-- White Sparkler
+						i(8624),	-- Red Sparkler
 					},
 				}),
 				n(52030, {	-- Liliana Emberfrost <Honor Heirlooms>

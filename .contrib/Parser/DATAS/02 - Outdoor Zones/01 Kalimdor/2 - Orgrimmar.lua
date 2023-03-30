@@ -4684,6 +4684,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
+				n(46742, {	-- Brunda 
+					["coord"] = { 54.6, 50.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { "added 4.0.1." },
+					["groups"] = {
+						i(3422),    -- Beautiful Wildflowers
+						i(3420),    -- Black Rose
+						i(3424),    -- Bouquet Of Black Roses
+						i(3423),    -- Bouquet Of White Roses
+						i(3419),    -- Red Rose
+						i(3421),    -- Simple Wildflowers
+					},
+				}),
 				n(179897, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Ca'nees
 					["coord"] = { 40.0, 61.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -5343,6 +5356,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6523),	-- Buckled Harness
 						i(6525),	-- Grunt's Harness
 						i(6524),	-- Studded Leather Harness
+					},
+				}),
+				n(8122, {	-- Kizzak Sparks
+					["coord"] = { 57.8, 56.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					["groups"] = {
+						i(8626),	-- Blue Sparkler
+						i(8625),	-- White Sparkler
+						i(8624),	-- Red Sparkler
 					},
 				}),
 				n(3360, {	-- Koru 

@@ -2200,6 +2200,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(8116, {	-- Ziggle Sparks
+					["coord"] = { 41.6, 74.4, THE_CAPE_OF_STRANGLETHORN },
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					["sym"] = {
+						{"select", "itemID", 8626 },	-- Blue Sparkler
+						{"select", "itemID", 8625 },	-- White Sparkler
+						{"select", "itemID", 8624 },	-- Red Sparkler
+					},
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(5079, {	-- Cold Basilisk Eye
