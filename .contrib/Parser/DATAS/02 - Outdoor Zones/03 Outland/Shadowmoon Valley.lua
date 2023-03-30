@@ -2054,6 +2054,13 @@ root(ROOTS.Zones, {
 					n(19526, {	-- Dunaman <Weapons Vendor>
 						["coord"] = { 63.2, 30.6, SHADOWMOON_VALLEY },
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["sym"] = {
+							{"select", "itemID", 30754 },    -- Ancient Bone Mace
+							{"select", "itemID", 30749 },    -- Draenic Sparring Blade
+							{"select", "itemID", 30750 },    -- Draenic Warblade
+							{"select", "itemID", 30752 },    -- Maghari Battleaxe
+							{"select", "itemID", 30751 },    -- Maghari Light Axe
+						},
 						["groups"] = {
 							i(30755, {	-- Mag'hari Fighting Claw
 								["isLimited"] = true,
@@ -2066,6 +2073,13 @@ root(ROOTS.Zones, {
 					n(19333, {	-- Grokom Deatheye <Weaponsmith>
 						["coord"] = { 29.8, 31.2, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{"select", "itemID", 30754 },    -- Ancient Bone Mace
+							{"select", "itemID", 30749 },    -- Draenic Sparring Blade
+							{"select", "itemID", 30750 },    -- Draenic Warblade
+							{"select", "itemID", 30752 },    -- Maghari Battleaxe
+							{"select", "itemID", 30751 },    -- Maghari Light Axe
+						},
 						["groups"] = {
 							i(30755, {	-- Mag'hari Fighting Claw
 								["isLimited"] = true,

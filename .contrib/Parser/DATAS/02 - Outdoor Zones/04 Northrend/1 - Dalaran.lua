@@ -6526,6 +6526,18 @@ root(ROOTS.Zones, {
 							i(44654),	-- Dalaran Spear
 						},
 					}),
+					n(32253, {	-- Kyunghee 
+						["coord"] = { 71.6, 31.8, NORTHREND_DALARAN },
+						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{"select", "itemID", 2523 },    -- Bullova
+							{"select", "itemID", 2531 },	-- Great Axe
+						},
+						["groups"] = {
+							i(2522),	-- Crescent Axe
+							i(2530),	-- Francisca
+						},
+					}),
 					n(29511, {	-- Lalla Brightweave <Spellfire Tailoring Specialist>
 						["coord"] = { 36.6, 32.8, NORTHREND_DALARAN },
 						["groups"] = {

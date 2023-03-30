@@ -5051,7 +5051,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.0, 37.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(2523),	-- Bullova
 						i(2521),	-- Flamberge
+						i(2531),	-- Great Axe
 						i(73210, {	-- Trainee's Sword
 							["timeline"] = { ADDED_10_0_7 },
 						}),
@@ -7085,10 +7087,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 75.0, 36.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 926 },    -- Battle Axe
-						{"select", "itemID", 2025 },    -- Bearded Axe
-						{"select", "itemID", 2029 },    -- Cleaver
-						{"select", "itemID", 927 },    -- Double Axe
 						{"select", "itemID", 2030 },    -- Gnarled Staff
 						{"select", "itemID", 853 },    -- Hatchet
 						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
@@ -7097,6 +7095,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 3026 },    -- Reinforced Bow
 						{"select", "itemID", 1196 },    -- Tabar
 						{"select", "itemID", 2495 },    -- Walking Stick
+					},
+					["groups"] = {
+						i(926),		-- Battle Axe
+						i(2025),	-- Bearded Axe
+						i(2029),	-- Cleaver
+						i(927),		-- Double Axe
 					},
 				}),
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>

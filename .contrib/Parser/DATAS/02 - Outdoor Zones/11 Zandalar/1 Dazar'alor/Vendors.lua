@@ -5,6 +5,16 @@
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(THE_GREAT_SEAL, {
 		n(VENDORS, {
+			n(141954, {	-- Arbo 
+				["coord"] = { 43.8, 24.4, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 2531 },    -- Great Axe
+					{"select", "itemID", 15811 },    -- Heavy Spear
+					{"select", "itemID", 8177 },    -- Practice Sword
+					{"select", "itemID", 15810 },    -- Short Spear
+				},
+			}),
 			n(132153, {	-- "Black Eye" Zenru
 				["coord"] = { 53.7, 85.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -877,6 +887,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(163704, {	-- Tiny Mechanical Mouse (TOY!)
 						["cost"] = { { "i", 163036, 500 }, },	-- 500x Polished Pet Charm
 					}),
+				},
+			}),
+			n(126329, {	-- Headhunter Lani
+				["coord"] = { 40.6, 16.8, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 2531 },    -- Great Axe
+					{"select", "itemID", 15811 },    -- Heavy Spear
+					{"select", "itemID", 8177 },    -- Practice Sword
+					{"select", "itemID", 15810 },    -- Short Spear
 				},
 			}),
 			n(131287, {	-- Natal'hakata <Zandalari Empire Emissary>

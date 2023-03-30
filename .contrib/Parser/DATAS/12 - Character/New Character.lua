@@ -1333,6 +1333,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(37, {	-- Worn Axe
 			["timeline"] = { REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 		}),
+		i(52532, {	-- Worn Wood Chopper
+			["classes"] = { HUNTER },
+			["races"] = { GOBLIN, HUMAN, UNDEAD, WORGEN },
+			["timeline"] = { "added 4.0.3", "removed 5.0.4" }
+		}),
 	}),
 }));
 

@@ -6719,7 +6719,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.2, 57.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(2523),	-- Bullova
 						i(2521),	-- Flamberge
+						i(2531),	-- Great Axe
 						i(73210, {	-- Trainee's Sword
 							["timeline"] = { ADDED_10_0_7 },
 						}),
@@ -6914,6 +6916,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18777),	-- Swift Brown Steed (MOUNT!)
 						i(18776),	-- Swift Palomino (MOUNT!)
 						i(18778),	-- Swift White Steed (MOUNT!)
+					},
+				}),
+				n(5509, {	-- Kathrum Axehand
+					["coord"] = { 59.6, 34.4, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2523 },	-- Bullova
+						{"select", "itemID", 2531 },	-- Great Axe
+					},
+					["groups"] = {
+						i(2522),	-- Crescent Axe
+						i(2530),	-- Francisca
 					},
 				}),
 				n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>

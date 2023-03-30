@@ -3026,6 +3026,8 @@ root(ROOTS.Zones, {
 							i(30755, {	-- Mag'hari Fighting Claw
 								["isLimited"] = true,
 							}),
+							i(30752),	-- Mag'hari Battleaxe
+							i(30751),	-- Mag'hari Light Axe
 							i(30753, {	-- Warphorn Spear
 								["isLimited"] = true,
 							}),
@@ -3366,6 +3368,8 @@ root(ROOTS.Zones, {
 							i(30755, {	-- Mag'hari Fighting Claw
 								["isLimited"] = true,
 							}),
+							i(30752),	-- Mag'hari Battleaxe
+							i(30751),	-- Mag'hari Light Axe
 							i(30753, {	-- Warphorn Spear
 								["isLimited"] = true,
 							}),

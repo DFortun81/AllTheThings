@@ -473,21 +473,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 			}),
 		}),
 		n(WEAPONS, {
-			filter(ONE_HANDED_AXES, {
-				i(2029),	-- Cleaver	-- sold by many vendors
-				i(2522),	-- Crescent Axe	-- sold by many vendors
-				i(927),		-- Double Axe	-- sold by many vendors
-				i(2530),	-- Francisca	-- sold by many vendors
-				i(30751),	-- Mag'hari Light Axe	-- sold by many vendors
-			}),
-			filter(TWO_HANDED_AXES, {
-				i(926),	-- Battle Axe	-- sold by many vendors
-				i(2025),	-- Bearded Axe	-- sold by many vendors
-				i(2523),	-- Bullova	-- sold by many vendors
-				i(2531),	-- Great Axe	-- sold by many vendors
-				i(30752),	-- Mag'hari Battleaxe	-- sold by many vendors
-				i(52532),	-- Worn Wood Chopper	-- where is this from?
-			}),
 			filter(BOWS, {
 				i(3027),	-- Heavy Recurve Bow	-- sold by many vendors
 				i(2506),	-- Hornwood Recurve Bow	-- sold by many vendors
