@@ -176,8 +176,53 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			}),
 			-- #if AFTER 7.3.5
 			n(ZONE_DROPS, {
+				i(36574, {	-- Bone Cleaver
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36577, {	-- Disk Axe
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36575, {	-- Dragonflayer Hatchet
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36493, {	-- Furbolg Truncheon
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36547, {	-- Jester's Stick
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36519, {	-- Moonlit Katana
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36561, {	-- Mummified Paw
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36701, {	-- Pine Needle Staff
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36549, {	-- Pulsing Quarterstaff
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36602, {	-- Rust-Covered Polearm
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36491, {	-- Serrated maul
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36589, {	-- Segmenting Broadaxe
+					["timeline"] = { "added 10.0.7" },
+				}),
 				i(36659, {	-- Shivery Wand
-					["timeline"] = { ADDED_10_0_7 },	-- This item is weird.
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36618, {	-- Twisted Longbow
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36477, {	-- Twin-Edged Stiletto
+					["timeline"] = { "added 10.0.7" },
+				}),
+				i(36673, {	-- Wise Dagger
+					["timeline"] = { "added 10.0.7" },
 				}),
 				i(35616),	-- Spored Tendrils Spaulders
 			}),

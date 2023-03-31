@@ -607,7 +607,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36571),	-- Splicing Axe
 			i(36572),	-- Dinged Cleaver
 			i(36573),	-- Primeval Adze
-			i(36574),	-- Bone Cleaver
+			i(36574, {	-- Bone Cleaver
+				["timeline"] = { "removed 10.0.7" },
+			}),
 			i(36575, {	-- Dragonflayer Hatchet [Removed from Game - Crates Only!]
 				-- #if AFTER 6.0.1
 				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
@@ -615,7 +617,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 				["timeline"] = { "added 3.0.1.8770", "removed 7.0.1" },
 			}),
 			i(36576),	-- Beaked Axe
-			i(36577),	-- Disk Axe
+			i(36577, {	-- Disk Axe
+				["timeline"] = { "removed 10.0.7" },
+			}),	
 			i(36578),	-- Troll Chopper
 			i(36579),	-- Boreal Woodchopper
 			i(36580),	-- Dire Axe
@@ -630,7 +634,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36586),	-- Wreaking Battleaxe
 			i(36587),	-- Taunka Axe
 			i(36588),	-- Burning Battleaxe
-			i(36589),	-- Segmenting Broadaxe
+			i(36589, {	-- Segmenting Broadaxe
+				["timeline"] = { "removed 10.0.7" },
+			}),	
 			i(36590),	-- Bone Plate Axe
 			i(36591),	-- Winged Axe
 			i(36592),	-- Deforester Axe
@@ -648,7 +654,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36614),	-- Yew Bow
 			i(36615),	-- Expert's Longbow
 			i(36616),	-- Dutiful Longbow
-			i(36618),	-- Twisted Longbow
+			i(36618, {	-- Twisted Longbow
+				["timeline"] = { "removed 10.0.7" },
+			}),	
 			i(36619),	-- Astral Light Bow
 			i(36620),	-- Tracking Bow
 			i(36621),	-- Advanced Flatbow
@@ -680,7 +688,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36474),	-- Engraved Dagger
 			i(36475),	-- Seal Shortblade
 			i(36476),	-- Whale Ripper
-			i(36477),	-- Twin-Edged Stiletto
+			i(36477, {	-- Twin-Edged Stiletto
+				["timeline"] = { "removed 10.0.7" },
+			}),	
 			i(36478),	-- Frosty Talon
 			i(36479),	-- Snobold Ripper
 			i(36480),	-- Ebony Dagger
@@ -694,7 +704,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36670),	-- Gypsy Blade
 			i(36671),	-- Ominous Dagger
 			i(36672),	-- Strange Dagger
-			i(36673),	-- Wise Dagger
+			i(36673, {	-- Wise Dagger
+				["timeline"] = { "removed 10.0.7" },
+			}),	
 			i(36674),	-- Old Tooth
 			i(36675),	-- Sockeye Dagger
 			i(36676),	-- Water Blade
@@ -713,7 +725,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36558),	-- Curved Scratcher
 			i(36559),	-- Prized Handscythes
 			i(36560),	-- Fighter's Grip
-			i(36561),	-- Mummified Paw
+			i(36561, {	-- Mummified Paw
+				["timeline"] = { "removed 10.0.7" },
+			}),	
 			i(36562),	-- Blue-Nailed Claws
 			i(36563),	-- Gloved Talons
 			i(36564),	-- Spider Claw
@@ -747,9 +761,13 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36488),	-- Conifer Club
 			i(36489),	-- Iron Flanged Scepter
 			i(36490),	-- Tuskarr Cudgel
-			i(36491),	-- Serrated Maul
+			i(36491, {	-- Serrated Maul
+				["timeline"] = { "removed 10.0.7" },
+			}),	
 			i(36492),	-- Peaked Club
-			i(36493),	-- Furbolg Truncheon
+			i(36493, {	-- Furbolg Truncheon
+				["timeline"] = { "removed 10.0.7" },
+			}),	
 			i(36494),	-- Barbed Star
 			i(36495),	-- Ferrous Hammer
 			i(36496),	-- Brass-Bound Cudgel
@@ -795,7 +813,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36599),	-- Ocean Trident
 			i(36600),	-- Village Scythe
 			i(36601),	-- Patient Harpoon
-			i(36602),	-- Rust-Covered Polearm
+			i(36602, {	-- Rust-Covered Polearm
+				["timeline"] = { "removed 10.0.7" },
+			}),	
 			i(36604),	-- Grizzly Glaive
 			i(36605),	-- Wind Scythe
 			i(36606),	-- Rugged Polearm
@@ -813,9 +833,13 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36544),	-- Journeyed Staff
 			i(36545),	-- Branched Stick
 			i(36546),	-- Unusual Staff
-			i(36547),	-- Jester's Stick
+			i(36547, {	-- Jester's Stick
+				["timeline"] = { "removed 10.0.7" },
+			}),	
 			i(36548),	-- Promised Staff
-			i(36549),	-- Pulsing Quarterstaff
+			i(36549, {	-- Pulsing Quarterstaff
+				["timeline"] = { "removed 10.0.7" },
+			}),	
 			i(36550),	-- Refulgent Staff
 			i(36551),	-- Ritual Greatstaff
 			i(36552),	-- Spiked Greatstaff
@@ -846,7 +870,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36516),	-- Tribal Blade
 			i(36517),	-- Iron-Grip Shortsword
 			i(36518),	-- Tundra's Edge
-			i(36519),	-- Moonlit Katana
+			i(36519, {	-- Moonlit Katana
+				["timeline"] = { "removed 10.0.7" },
+			}),	
 			i(36520),	-- Chopping Wideblade
 			i(36521),	-- Shimmering Sabre
 			i(36522),	-- Scored Blade
