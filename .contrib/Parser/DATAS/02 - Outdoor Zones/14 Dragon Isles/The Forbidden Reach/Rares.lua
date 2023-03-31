@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				-- },
 			}),
 			n(200730, {	-- Tidesmith Zarviss
-				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				["coord"] = { 80.0, 59.0, THE_FORBIDDEN_REACH },
 				-- ["questID"] = ,
 				["cost"] = { { "i", 203408, 1 }, },	-- 1x Ancient Ceremonial Trident
 				["g"] = {

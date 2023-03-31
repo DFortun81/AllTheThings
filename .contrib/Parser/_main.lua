@@ -1358,6 +1358,8 @@ WRATH_PHASE_SIX = 35;
 -- NOTE: Reason for this is to show when stuff is going away eventually.
 -- Cataclysm Classic Phases
 CATA_PHASE_ONE = 40;
+CATA_PHASE_TWO = 41;
+CATA_PHASE_THREE = 42;
 
 -- Mists of Pandaria Classic Phases
 MOP_PHASE_ONE = 50;
