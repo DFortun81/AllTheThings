@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 							}),
 						}),
 						filter(TOYS, {
-							i(203734, {	-- Snow Blanket
+							i(203734, {	-- Snow Blanket (TOY!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 200 },
 								},

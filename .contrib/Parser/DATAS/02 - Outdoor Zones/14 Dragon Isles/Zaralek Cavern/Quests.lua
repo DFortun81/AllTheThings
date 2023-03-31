@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 201311 },	-- Wrathion
 					["coord"] = { 87.2, 27.8, OHNAHRAN_PLAINS },
 					["g"] = {
-						i(204461),	-- Shakeel's Rememberance
+						i(204461),	-- Shalkeel's Remembrance
 					},
 				}),
 				q(72981, {	-- The Patience of Princes
@@ -58,8 +58,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 201587 },	-- Elder Honeypelt
 					["coord"] = { 60.2, 37.8, ZARALEK_CAVERN },
 					["g"] = {
-						i(185670),	-- Dust Devil Wristbands
-						i(204604),	-- Cyclonic Bracers
+						i(204604),	-- Bequeathed Bracers
+						i(204612),	-- Bestowed Vambraces
+						i(204588),	-- Endowed Bindings
+						i(204596),	-- Inherited Wristbands
 					},
 				}),
 				q(72980, {	-- Brother's Keeper
@@ -92,13 +94,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 200054 },	-- Elder Honeypelt
 					["coord"] = { 57.0, 55.8, ZARALEK_CAVERN },
 					["g"] = {
-						i(185599),	-- Beheader's Poleaxe
-						i(204449),	-- Fist of the Treasure Seeker
-						i(204456),	-- Galerider Crescent
-						i(204457),	-- Squallbreaker Shield
-						i(204452),	-- Stormbender Rod
-						i(185604),	-- Stormbender Scroll
-						i(204455),	-- Tomb Raider's Shank
+						i(204457),	-- Almost Immovable Wall
+						i(204449),	-- Black Earth Glaive
+						i(204453),	-- Black Dragon's Reach
+						i(204458),	-- Centered Stone Focus
+						i(204450),	-- Draconic Cleaver
+						i(204452),	-- Earth Warding Spire
+						i(204451),	-- Earth-Bound Saber
+						i(204456),	-- Proto-Drake Slicer
+						i(204455),	-- Scaled Titan's Claw
+						i(204448),	-- Stone Spitter
 					},
 				}),
 				q(75644, {	-- Six Hundred Feet Under
@@ -117,7 +122,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 200049 },	-- Scalecommander Emberthal
 					["coord"] = { 59.4, 68.9, ZARALEK_CAVERN },
 					["g"] = {
-						i(204599),	-- Cyclonic Gauntlets
+						i(204599),	-- Bequeathed Gauntlets
+						i(204607),	-- Bestowed Crushers
+						i(204583),	-- Endowed Mitts
+						i(204591),	-- Inherited Gloves
 					},
 				}),
 				q(72958, {	-- Save-A-Mole
@@ -125,7 +133,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 200049 },	-- Scalecommander Emberthal
 					["coord"] = { 59.4, 68.9, ZARALEK_CAVERN },
 					["g"] = {
-						i(204603),	-- Cyclonic Cinch
+						i(204603),	-- Bequeathed Cinch
+						i(204611),	-- Bestowed Girdle
+						i(204595),	-- Inherited Cincture
+						i(204587),	-- Endowed Sash
 					},
 				}),
 				q(72959, {	-- Whose Vault Is It Anyway?
@@ -159,7 +170,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 202857 },	-- Scalecommander Emberthal
 					["coord"] = { 63.0, 74.0, ZARALEK_CAVERN },
 					["g"] = {
-						i(204598),	-- Cyclonic Striders
+						i(204598),	-- Bequeathed Striders
+						i(204606),	-- Bestowed Stompers
+						i(204582),	-- Endowed Slippers
+						i(204590),	-- Inherited Treads
 					},
 				}),
 				q(72694, {	-- Singed
@@ -172,7 +186,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 202670 },	-- Ebyssian
 					["coord"] = { 63.4, 74.7, ZARALEK_CAVERN },
 					["g"] = {
-						i(204601),	-- Cyclonic Kilt
+						i(204601),	-- Bequeathed Tassets
+						i(204609),	-- Bestowed Greaves
+						i(204585),	-- Endowed Breeches
+						i(204593),	-- Inherited Leggings
 					},
 				}),
 
@@ -187,7 +204,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 200080 },	-- Ebyssian
 					["coord"] = { 40.9, 41.7, ZARALEK_CAVERN },
 					["g"] = {
-						i(204602),	-- Cyclonic Spaulders
+						i(204602),	-- Bequeathed Spaulders
+						i(204610),	-- Bestowed Pauldrons
+						i(204586),	-- Endowed Mantle
+						i(204594),	-- Inherited Epaulets
 					},
 				}),
 				q(72910, {	-- Know Thy Enemy
@@ -195,10 +215,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 199851 },	-- Sabellian
 					["coord"] = { 35.4, 41.9, ZARALEK_CAVERN },
 					["g"] = {
-						i(204459),	-- Dagger of Shifting Stone
-						i(204620),	-- Fist of the Fortune Seeker
-						i(204454),	-- Galerider Mallet
-						i(204630),	-- Squallbreaker Wall
+						i(204620),	-- Dark Earth Glaive
+						i(204625),	-- Dark Nail
+						i(204454),	-- Dragon Maul
+						i(204629),	-- Grounded Stone Focus
+						i(204630),	-- Nearly Unbreakable Wall
+						i(204627),	-- Proto-Drake Ripper
+						i(204626),	-- Rock Shooter
+						i(204628),	-- Scaled Titan's Tooth
+						i(204624),	-- Staff of the Unlit Sky
+						i(204459),	-- Wand of Shifting Stone
 					},
 				}),
 				q(72909, {	-- Legends of the Zaqali
@@ -240,10 +266,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 					["coord"] = { 33.2, 50.8, ZARALEK_CAVERN },
 					["g"] = {
-						i(204616),	-- Cloudburst Wrap
-						i(204618),	-- Cyclonic Drape
-						i(204619),	-- Dust Devil Cloak
-						i(204617),	-- Firestorm Cape
+						i(204618),	-- Bequeathed Drape
+						i(204617),	-- Bestowed Cape
+						i(204616),	-- Endowed Wrap
+						i(204619),	-- Inherited Cloak
 					},
 				}),
 				q(72916, {	-- Shut Them Down
@@ -267,7 +293,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 199952 },	-- Sabellian
 					["coord"] = { 29.6, 49.7, ZARALEK_CAVERN },
 					["g"] = {
-						i(204597),	-- Cyclonic Chainmail
+						i(204597),	-- Bequeathed Chainmail
+						i(204605),	-- Bestowed Chestplate
+						i(204581),	-- Endowed Robes
+						i(204589),	-- Inherited Raiment
 					},
 				}),
 				q(72918, {	-- No Dragon Left Behind
@@ -293,10 +322,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 201784 },	-- Ebyssian
 					["coord"] = { 56.1, 54.5, ZARALEK_CAVERN },
 					["g"] = {
-						i(204584),	-- Cloudburst Hood
-						i(204600),	-- Cyclonic Cowl
-						i(204592),	-- Dust Devil Mask
-						i(204608),	-- Firestorm Greathelm
+						i(204600),	-- Bequeathed Cowl
+						i(204608),	-- Bestowed Greathelm
+						i(204584),	-- Endowed Hood
+						i(204592),	-- Inherited Mask
 						-- Zaralek WQ
 					},
 				}),
@@ -389,7 +418,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 199965 },	-- Ebyssian
 					["coord"] = { 51.5, 25.8, ZARALEK_CAVERN },
 					["g"] = {
-						i(204447),	-- Ensemble: Black Flight's Vestments
+						i(204447, {	-- Ensemble: Black Flight's Vestments
+							i(204444),	-- Black Flight's Spaulders
+							i(204445),	-- Black Flight's Tabard
+							i(204446),	-- Black Flight's Cape
+						}),
 					},
 				}),
 				q(72931, {	-- Forward Camp

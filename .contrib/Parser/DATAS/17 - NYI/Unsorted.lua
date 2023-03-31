@@ -168,6 +168,7 @@ root(ROOTS.Unsorted, {
 	tier(DF_TIER, {
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 10.1.0" } }, {
 			n(REWARDS, {
+				-- Blizzard Changed name on all these objects... If anyone has time..
 				i(87829),	-- Technique: Incarnadine Ink
 				i(87830),	-- Technique: Tigersblood Tincture
 				i(114851),	-- Pattern: Hexweave Cloth
@@ -669,131 +670,9 @@ root(ROOTS.Unsorted, {
 				i(171159),	-- Design: Uncanny Combatant's Intuitive Staff
 				i(172009),	-- Technique: Contract: Rajani
 				i(172011),	-- Technique: Contract: Uldum Accord
-				i(190454),	-- Depleted Primal Chaos
-				i(201254),	-- Cracked Medal of Honor
-				i(201255),	-- Cracked Medal of Honor
-				i(201956),	-- [DNT] Snakey Eyes
-				i(202180),	-- Uncomfortably Old Cheese
-				i(202206),	-- Thumper Part
-				i(202387),	-- Slightly Ruffled Top Hat
-				i(202438),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Generic - Cloak
-				i(202439),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Wrist
-				i(202440),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Waist
-				i(202441),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Shoulder
-				i(202442),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Legs
-				i(202443),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Head
-				i(202444),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Hand
-				i(202445),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Feet
-				i(202446),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warrior - Armor - Plate - Chest
-				i(202447),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Generic - Cloak
-				i(202448),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Wrist
-				i(202449),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Waist
-				i(202450),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Shoulder
-				i(202451),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Legs
-				i(202452),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Head
-				i(202453),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Hand
-				i(202454),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Feet
-				i(202455),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Chest
-				i(202456),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Generic - Cloak
-				i(202457),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Wrist
-				i(202458),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Waist
-				i(202459),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Shoulder
-				i(202460),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Legs
-				i(202461),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Head
-				i(202462),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Hand
-				i(202463),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Feet
-				i(202464),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Chest
-				i(202465),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Generic - Cloak
-				i(202466),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Wrist
-				i(202467),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Waist
-				i(202468),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Shoulder
-				i(202469),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Legs
-				i(202470),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Head
-				i(202471),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Hand
-				i(202472),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Feet
-				i(202473),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Shaman - Armor - Mail - Chest
-				i(202474),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Generic - Cloak
-				i(202475),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Wrist
-				i(202476),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Waist
-				i(202477),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Shoulder
-				i(202478),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Legs
-				i(202479),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Head
-				i(202480),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Hand
-				i(202481),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Feet
-				i(202482),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Hunter - Armor - Mail - Chest
-				i(202483),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Generic - Cloak
-				i(202484),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Wrist
-				i(202485),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Waist
-				i(202486),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Shoulder
-				i(202487),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Legs
-				i(202488),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Head
-				i(202489),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Hand
-				i(202490),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Feet
-				i(202491),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Evoker - Armor - Mail - Chest
-				i(202492),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Generic - Cloak
-				i(202493),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Wrist
-				i(202494),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Waist
-				i(202495),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Shoulder
-				i(202496),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Legs
-				i(202497),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Head
-				i(202498),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Hand
-				i(202499),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Feet
-				i(202500),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Rogue - Armor - Leather - Chest
-				i(202501),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Generic - Cloak
-				i(202502),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Wrist
-				i(202503),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Waist
-				i(202504),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Shoulder
-				i(202505),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Legs
-				i(202506),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Head
-				i(202507),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Hand
-				i(202508),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Feet
-				i(202509),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Monk - Armor - Leather - Chest
-				i(202510),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Generic - Cloak
-				i(202511),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Wrist
-				i(202512),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Waist
-				i(202513),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Shoulder
-				i(202514),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Legs
-				i(202515),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Head
-				i(202516),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Hand
-				i(202517),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Feet
-				i(202518),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Druid - Armor - Leather - Chest
-				i(202519),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Generic - Cloak
-				i(202520),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Wrist
-				i(202521),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Waist
-				i(202522),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-				i(202523),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Legs
-				i(202524),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Head
-				i(202525),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Hand
-				i(202526),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Feet
-				i(202527),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Demon Hunter - Armor - Leather - Chest
-				i(202528),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Generic - Cloak
-				i(202529),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Wrist
-				i(202530),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Waist
-				i(202531),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Shoulder
-				i(202532),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Legs
-				i(202533),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Head
-				i(202534),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth -  Hand
-				i(202535),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth - Feet
-				i(202536),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Warlock - Armor - Cloth - Robe
-				i(202537),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Generic - Cloak
-				i(202538),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Wrist
-				i(202539),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Waist
-				i(202540),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Shoulder
-				i(202541),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Legs
-				i(202542),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Head
-				i(202543),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth -  Hand
-				i(202544),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Feet
-				i(202545),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Priest - Armor - Cloth - Robe
-				i(202546),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Generic - Cloak
-				i(202547),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Wrist
-				i(202548),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Waist
-				i(202549),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Shoulder
-				i(202550),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Legs
-				i(202551),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Head
-				i(202552),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth -  Hand
-				i(202553),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth - Feet
-				i(202554),	-- 10.1 Raid - Black Dragon Labs - Class Sets - Mage - Armor - Cloth - Chest
-				i(202555),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonspawn Caretaker - Weapon - 1H Dagger INT
+			}),
+			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
+			i(202555),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonspawn Caretaker - Weapon - 1H Dagger INT
 				i(202557),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Weapon - 1H Dagger AGI
 				i(202558),	-- 10.1 Raid - Black Dragon Labs - Boss 08 - Faceless One - Weapon - Shield
 				i(202559),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Weapon - 2H - Polearm STR
@@ -844,7 +723,7 @@ root(ROOTS.Unsorted, {
 				i(202607),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Weapon - Bow
 				i(202608),	-- Power-Draining Spire
 				i(202609),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - Trinket - INT
-				i(202610),	-- PH - 10.1 Raid - Black Dragon Labs - Boss 06 - Trapmaster - Accessory - Trinket - AGI
+				i(202610),	-- Dragonfire Bomb Dispenser
 				i(202611),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - Trinket - Physical DPS
 				i(202612),	-- Seething Black Dragonscale
 				i(202613),	-- Zaqali Chaos Grapnel
@@ -891,6 +770,14 @@ root(ROOTS.Unsorted, {
 				i(202664),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - NECK 3
 				i(202665),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - FINGER 3
 				i(202666),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 3
+				i(203714),	-- Ward of Faceless Ire
+				i(203729),	-- PH - 10.1 Raid - Black Dragon Labs - Boss 4 - Dracthyr Evolution - Accessory - Trinket - Omni
+				i(203963),	-- Beacon to the Beyond
+				i(203996),	-- Igneous Flowstone
+				i(204064),	-- PH 10.1 Raid - Black Dragon Labs - Boss 9 - Sarkareth - Accessory - Trinket - Omni
+			}),
+			filter(MISC, {
+				-- Quest STuff
 				i(202698),	-- The Dragonkin Voice 4: Might & Right
 				i(202699),	-- The Dragonkin Voice 2: 100 Centuries Abandoned
 				i(202700),	-- The Dragonkin Voice 3: 100 Centuries Independent
@@ -904,6 +791,43 @@ root(ROOTS.Unsorted, {
 				i(203012),	-- Viridian Heartcrystal
 				i(203013),	-- Niffen Incense
 				i(203229),	-- Snail Slime
+				i(203383),	-- Notes on Dragonkin Equality
+				i(203385),	-- Flamesight Rune
+				i(203387),	-- Oddly Familiar Training Weapon
+				i(203388),	-- Gunky Insignia
+				i(203389),	-- Shiny Rock
+				i(203390),	-- Maldra's Ring of Elemental Binding
+				i(203391),	-- Dented Dwarven Pocketwatch
+				i(203392),	-- Old Mirror Shard
+				i(203393),	-- Spongy Loamshroom
+				i(203394),	-- Elementally Charged Orb
+				i(203395),	-- Research Notes
+				i(203396),	-- Displayed Armor Piece
+				i(203430),	-- Ward of Igira
+				i(203442),	-- Snail Slime
+				i(203453),	-- Dragonbone Totem
+				i(203454),	-- Zaqali Equipment
+				i(203455),	-- Draketooth Fetish
+				i(203456),	-- Obsidian Prayer Beads
+				i(203457),	-- Volcanic Herb Sachet
+				i(203458),	-- Black Dragonscale Robes
+				i(203653),	-- Vacant Elemental Core
+				i(203654),	-- Zaqali Flame Totem
+				i(203655),	-- Dusty Key
+				i(203682),	-- Darkened Elemental Core
+				i(203683),	-- Ward of Fyrakk
+				i(203706),	-- Hurricane Scepter
+				i(203707),	-- Water Bucket
+				i(203708),	-- Conch Whistle
+				i(203731),	-- Enchanted Bandage
+				i(204067),	-- Glowing Crystal
+				i(204069),	-- Sulfuric Crystal
+				i(204070),	-- Magma Crystal
+				i(204071),	-- Head of Kretchenwrath
+				i(204085),	-- Zaqali Dragonslayer's Spear
+				i(204088),	-- Quartzite Spore Bile
+			}),
+			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(203298),	-- Winding Slitherdrake: White and Gold Armor
 				i(203299),	-- Winding Slitherdrake: Green and Bronze Armor
 				i(203300),	-- Winding Slitherdrake: Blue and Silver Armor
@@ -971,54 +895,12 @@ root(ROOTS.Unsorted, {
 				i(203363),	-- Winding Slitherdrake: Large Finned Throat
 				i(203364),	-- Winding Slitherdrake: Small Finned Throat
 				i(203365),	-- Winding Slitherdrake: Hairy Throat
-				i(203383),	-- Notes on Dragonkin Equality
-				i(203385),	-- Flamesight Rune
-				i(203387),	-- Oddly Familiar Training Weapon
-				i(203388),	-- Gunky Insignia
-				i(203389),	-- Shiny Rock
-				i(203390),	-- Maldra's Ring of Elemental Binding
-				i(203391),	-- Dented Dwarven Pocketwatch
-				i(203392),	-- Old Mirror Shard
-				i(203393),	-- Spongy Loamshroom
-				i(203394),	-- Elementally Charged Orb
-				i(203395),	-- Research Notes
-				i(203396),	-- Displayed Armor Piece
-				i(203430),	-- Ward of Igira
-				i(203442),	-- Snail Slime
-				i(203453),	-- Dragonbone Totem
-				i(203454),	-- Zaqali Equipment
-				i(203455),	-- Draketooth Fetish
-				i(203456),	-- Obsidian Prayer Beads
-				i(203457),	-- Volcanic Herb Sachet
-				i(203458),	-- Black Dragonscale Robes
-				i(203653),	-- Vacant Elemental Core
-				i(203654),	-- Zaqali Flame Totem
-				i(203655),	-- Dusty Key
-				i(203682),	-- Darkened Elemental Core
-				i(203683),	-- Ward of Fyrakk
-				i(203706),	-- Hurricane Scepter
-				i(203707),	-- Water Bucket
-				i(203708),	-- Conch Whistle
-				i(203710),	-- Everburning Key
-				i(203714),	-- Ward of Faceless Ire
-				i(203729),	-- PH - 10.1 Raid - Black Dragon Labs - Boss 4 - Dracthyr Evolution - Accessory - Trinket - Omni
-				i(203731),	-- Enchanted Bandage
+			}),
+			n(PROFESSIONS, {
 				i(203762),	-- Glyph of the Chosen Glaive
 				i(203763),	-- Glyph of the Heaved Armament
-				i(203963),	-- Envoy to the Empty
-				i(203996),	-- Igneous Flowstone
-				i(204064),	-- PH 10.1 Raid - Black Dragon Labs - Boss 9 - Sarkareth - Accessory - Trinket - Omni
-				i(204067),	-- Glowing Crystal
-				i(204069),	-- Sulfuric Crystal
-				i(204070),	-- Magma Crystal
-				i(204071),	-- Head of Kretchenwrath
-				i(204075),	-- Whelpling's Shadowflame Crest Fragment
-				i(204076),	-- Drake's Shadowflame Crest Fragment
-				i(204077),	-- Wyrm's Shadowflame Crest Fragment
-				i(204078),	-- Aspect's Shadowflame Crest Fragment
-				i(204085),	-- Zaqali Dragonslayer's Spear
-				i(204087),	-- 10.1 Cloak Test Item
-				i(204088),	-- Quartzite Spore Bile
+
+				-- New PvP gear
 				i(204094),	-- Obsidian Combatant's Jeweled Signet
 				i(204095),	-- Obsidian Combatant's Jeweled Amulet
 				i(204096),	-- Obsidian Combatant's Resilient Boots
@@ -1095,60 +977,41 @@ root(ROOTS.Unsorted, {
 				i(204167),	-- Technique: Obsidian Combatant's Medallion
 				i(204168),	-- Technique: Obsidian Combatant's Insignia of Alacrity
 				i(204169),	-- Technique: Obsidian Combatant's Emblem
-				i(204175),	-- Unknown Core
-				i(204178),	-- Snailcatcher Net
-				i(204179),	-- Medal of Honor
-				i(204180),	-- Medal of Honor
-				i(204184),	-- Ebon Eviscerator
-				i(204186),	-- Greater Trophy of Conquest
-				i(204187),	-- Trophy of Conquest
-				i(204188),	-- Lesser Trophy of Conquest
-				i(204189),	-- Greater Crest of Honor
-				i(204190),	-- Crest of Honor
-				i(204191),	-- Lesser Crest of Honor
-				i(204193),	-- Whelpling's Shadowflame Crest
-				i(204194),	-- Aspect's Shadowflame Crest
-				i(204195),	-- Drake's Shadowflame Crest
-				i(204196),	-- Wyrm's Shadowflame Crest
-				i(204197),	-- Shard of an Earth Portal
-				i(204198),	-- Shard of an Fire Portal
+
+
+				-- New system
+
+			}),
+			n(REWARDS, {
+				i(190454),	-- Depleted Primal Chaos
+				i(201254),	-- Cracked Medal of Honor
+				i(201255),	-- Cracked Medal of Honor
+				i(201956),	-- [DNT] Snakey Eyes
+				i(202180),	-- Uncomfortably Old Cheese
+				i(202206),	-- Thumper Part
+				i(202387),	-- Slightly Ruffled Top Hat
+
+
+				i(204087),	-- 10.1 Cloak Test Item
+				i(204386),	-- Pocket Darkened Elemental Core
+				i(204387),	-- Buzzing Orb Core
+				i(204388),	-- Draconic Cauterizing Magma
+				i(204638),	-- Sunder Wing
+
+
+
+
+
+				-- raid
 				i(204201),	-- Idol of Chaotic Arrogance
 				i(204202),	-- Idol of Domineering Arrogance
 				i(204211),	-- Idol of Debilitating Arrogance
-				i(204238),	-- Draconic Phial Cauldron
-				i(204271),	-- Blacktalon Napalm
-				i(204273),	-- Stolen Supplies
 				i(204279),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Weapon - 1H Axe AGI
-
-				i(204314),	-- Corehound Hide
-				i(204315),	-- Zaqali Bone Needle
 				i(204318),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Dracthyr Evolution - Holdable - Offhand
 				i(204319),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Weapon - 1H Mace INT
 				i(204320),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonspawn Caretaker - Weapon - 1H Axe Str
 				i(204322),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonspawn Caretaker - Weapon - 2H Gun AGI
 				i(204324),	-- 10.1 Raid - Black Dragon Labs - Boss 08 - Faceless One - Holdable - Offhand
-				i(204325),	-- Crude Key Fragment
-				i(204326),	-- Strange Artifact
-				i(204327),	-- Titan Machine Part
-				i(204329),	-- Petrified Spider Leg
-				i(204331),	-- Djaradin Pillar Shard
-				i(204334),	-- Waste Disposal Notes
-				i(204336),	-- Awakened Heirloom Armor Casing
-				i(204337),	-- Awakened Heirloom Scabbard
-				i(204342),	-- Questionable Jerky
-				i(204344),	-- Conductive Lodestone
-				i(204345),	-- Note to Disposal Site
-				i(204347),	-- Pool Contaminant
-				i(204349),	-- Bigger Wrench
-				i(204351),	-- Animated Crystal Shard
-				i(204361),	-- Winding Slitherdrake
-				i(204365),	-- Bundle of Ebon Spears
-				i(204370),	-- Stinky Bright Potion
-				i(204377),	-- Glow Spores
-				i(204386),	-- Pocket Darkened Elemental Core
-				i(204387),	-- Buzzing Orb Core
-				i(204388),	-- Draconic Cauterizing Magma
-				i(204389),	-- Stone Breaker
 				i(204390),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Plate - WRIST 2
 				i(204391),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Leather - FEET 2
 				i(204392),	-- 10.1 Raid - Black Dragon Labs - Boss 08 - Neltharion's Twisted Mind - Armor - Cloth - FEET 2
@@ -1161,7 +1024,6 @@ root(ROOTS.Unsorted, {
 				i(204399),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Leather - WAIST 2
 				i(204400),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Plate - WAIST 2
 				i(204401),	-- Spore Keeper's Baton
-				i(204407),	-- Rebel Detonator
 				i(204408),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 				i(204409),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Feet
 				i(204410),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Cloth - WRIST 3
@@ -1187,101 +1049,88 @@ root(ROOTS.Unsorted, {
 				i(204430),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - FEET 2
 				i(204431),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Plate - SHOULDER 2
 				i(204432),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Plate - WAIST 3
+				i(204465),	-- Voice of the Silent Star
+				i(204466),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Accessory - FINGER 2
+				i(204467),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Accessory - CLOAK 2
+				-- Quest
+				i(204175),	-- Unknown Core
+				i(204178),	-- Snailcatcher Net
+				i(204184),	-- Ebon Eviscerator
+				i(204197),	-- Shard of an Earth Portal
+				i(204198),	-- Shard of an Fire Portal
+				i(204271),	-- Blacktalon Napalm
+				i(204273),	-- Stolen Supplies
+				i(204314),	-- Corehound Hide
+				i(204315),	-- Zaqali Bone Needle
+				i(204325),	-- Crude Key Fragment
+				i(204326),	-- Strange Artifact
+				i(204327),	-- Titan Machine Part
+				i(204329),	-- Petrified Spider Leg
+				i(204331),	-- Djaradin Pillar Shard
+				i(204334),	-- Waste Disposal Notes
+				i(204342),	-- Questionable Jerky
+				i(204344),	-- Conductive Lodestone
+				i(204345),	-- Note to Disposal Site
+				i(204347),	-- Pool Contaminant
+				i(204349),	-- Bigger Wrench
+				i(204351),	-- Animated Crystal Shard
+				i(204365),	-- Bundle of Ebon Spears
+				i(204370),	-- Stinky Bright Potion
+				i(204377),	-- Glow Spores
+				i(204407),	-- Rebel Detonator
 				i(204433),	-- Everburning Fireshard
 				i(204434),	-- Lava-Quenched Blade
 				i(204435),	-- Obsidian Tablet
 				i(204436),	-- Chipped Horn Signet
+				i(204473),	-- Element Siphoner
+				i(204637),	-- Boulder Chunk
+				i(204642),	-- Sheridon Hastle's Effects
+				i(204683),	-- Head of Shadeisethal
+				i(204694),	-- Greater Flamesight Rune
+				i(204698),	-- Cataloging Camera
+				-- Pvp
+				i(204179),	-- Medal of Honor
+				i(204180),	-- Medal of Honor
+				i(204186),	-- Greater Trophy of Conquest
+				i(204187),	-- Trophy of Conquest
+				i(204188),	-- Lesser Trophy of Conquest
+				i(204189),	-- Greater Crest of Honor
+				i(204190),	-- Crest of Honor
+				i(204191),	-- Lesser Crest of Honor
+				--new system
+				i(204075),	-- Whelpling's Shadowflame Crest Fragment
+				i(204076),	-- Drake's Shadowflame Crest Fragment
+				i(204077),	-- Wyrm's Shadowflame Crest Fragment
+				i(204078),	-- Aspect's Shadowflame Crest Fragment
+				i(204193),	-- Whelpling's Shadowflame Crest
+				i(204194),	-- Aspect's Shadowflame Crest
+				i(204195),	-- Drake's Shadowflame Crest
+				i(204196),	-- Wyrm's Shadowflame Crest
+
+				-- profession
+				i(204238),	-- Draconic Phial Cauldron
 				i(204440),	-- Spark of Shadowflame
-				i(204444),	-- Black Flight's Spaulders
-				i(204445),	-- Black Flight's Tabard
-				i(204446),	-- Black Flight's Cape
-				i(204447),	-- Ensemble: Black Flight's Vestments
-				i(204448),	-- Scarab Blaster
-				i(204449),	-- Fist of the Treasure Seeker
-				i(204450),	-- Squallbreaker Greatsword
-				i(204451),	-- Squallbreaker Longblade
-				i(204452),	-- Stormbender Rod
-				i(204453),	-- Beheader's Poleaxe
-				i(204454),	-- Galerider Mallet
-				i(204455),	-- Tomb Raider's Shank
-				i(204456),	-- Galerider Crescent
-				i(204457),	-- Squallbreaker Shield
-				i(204458),	-- Stormbender Scroll
-				i(204459),	-- Dagger of Shifting Stone
 				i(204460),	-- Zaralek Glowspores
-				i(204461),	-- Shakeel's Rememberance
 				i(204462),	-- Dracothyst Shards
 				i(204463),	-- Dracothyst
 				i(204464),	-- Shadowflame Essence
-				i(204465),	-- Voice of the Silent Star
-				i(204466),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Accessory - FINGER 2
-				i(204467),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Accessory - CLOAK 2
 				i(204469),	-- Misplaced Aberrus Outflow Blueprints
 				i(204470),	-- Haphazardly Discarded Bomb
 				i(204471),	-- Defective Survival Pack
-				i(204473),	-- Element Siphoner
 				i(204475),	-- Busted Wyrmhole Generator
 				i(204480),	-- Inconspicuous Data Miner
 				i(204565),	-- Illusory Adornment: Spores
 				i(204567),	-- Illusory Adornment: Spores
 				i(204568),	-- Illusory Adornment: Spores
-				i(204580),	-- Abnormal Brain
-				i(204581),	-- Cloudburst Robes
-				i(204582),	-- Cloudburst Slippers
-				i(204583),	-- Cloudburst Mitts
-				i(204584),	-- Cloudburst Hood
-				i(204585),	-- Cloudburst Breeches
-				i(204586),	-- Cloudburst Mantle
-				i(204587),	-- Cloudburst Sash
-				i(204588),	-- Cloudburst Bindings
-				i(204589),	-- Dust Devil Raiment
-				i(204590),	-- Dust Devil Treads
-				i(204591),	-- Dust Devil Gloves
-				i(204592),	-- Dust Devil Mask
-				i(204593),	-- Dust Devil Leggings
-				i(204594),	-- Dust Devil Epaulets
-				i(204595),	-- Dust Devil Cincture
-				i(204596),	-- Dust Devil Wristbands
-				i(204597),	-- Cyclonic Chainmail
-				i(204598),	-- Cyclonic Striders
-				i(204599),	-- Cyclonic Gauntlets
-				i(204600),	-- Cyclonic Cowl
-				i(204601),	-- Cyclonic Kilt
-				i(204602),	-- Cyclonic Spaulders
-				i(204603),	-- Cyclonic Cinch
-				i(204604),	-- Cyclonic Bracers
-				i(204605),	-- Firestorm Chestplate
-				i(204606),	-- Firestorm Stompers
-				i(204607),	-- Firestorm Crushers
-				i(204608),	-- Firestorm Greathelm
-				i(204609),	-- Firestorm Greaves
-				i(204610),	-- Firestorm Pauldrons
-				i(204611),	-- Firestorm Girdle
-				i(204612),	-- Firestorm Vambraces
 				i(204613),	-- Enchant Weapon - Spore Tender
 				i(204614),	-- Enchant Weapon - Spore Tender
 				i(204615),	-- Enchant Weapon - Spore Tender
-				i(204616),	-- Cloudburst Wrap
-				i(204617),	-- Firestorm Cape
-				i(204618),	-- Cyclonic Drape
-				i(204619),	-- Dust Devil Cloak
-				i(204620),	-- Fist of the Fortune Seeker
 				i(204621),	-- Enchant Weapon - Shadowflame Wreathe
 				i(204622),	-- Enchant Weapon - Shadowflame Wreathe
 				i(204623),	-- Enchant Weapon - Shadowflame Wreathe
-				i(204624),	-- Raider's Lost Spire
-				i(204625),	-- Galerider Poleaxe
-				i(204626),	-- Scarab Shooter
-				i(204627),	-- Galerider Ripper
-				i(204628),	-- Galerider Shank
-				i(204629),	-- Stormbender Focus
-				i(204630),	-- Squallbreaker Wall
 				i(204631),	-- Recipe: Transmute: Dracothyst
 				i(204633),	-- Cauldron of Extracted Putrescence
 				i(204634),	-- Rot Resistant Cauldron
-				i(204637),	-- Boulder Chunk
-				i(204638),	-- Sunder Wing
-				i(204642),	-- Sheridon Hastle's Effects
 				i(204643),	-- Fleeting Phial of the Eye in the Storm
 				i(204644),	-- Fleeting Phial of the Eye in the Storm
 				i(204645),	-- Fleeting Phial of the Eye in the Storm
@@ -1317,33 +1166,57 @@ root(ROOTS.Unsorted, {
 				i(204680),	-- Draconic Phial Cauldron
 				i(204681),	-- Enchanted Whelpling's Shadowflame Crest
 				i(204682),	-- Enchanted Wyrm's Shadowflame Crest
-				i(204683),	-- Head of Shadeisethal
-				i(204694),	-- Greater Flamesight Rune
 				i(204695),	-- Recipe: Cauldron of Extracted Putrescence
 				i(204696),	-- Recipe: Draconic Phial Cauldron
 				i(204697),	-- Enchanted Aspect's Shadowflame Crest
-				i(204698),	-- Cataloging Camera
 				i(204700),	-- Lambent Armor Kit
 				i(204701),	-- Lambent Armor Kit
 				i(204702),	-- Lambent Armor Kit
-				i(204704),	-- Adaptive Dracothyst Armguards
-				i(204706),	-- Spore Colony Shoulderguards
 				i(204708),	-- Shadowflame-Tempered Armor Patch
 				i(204709),	-- Shadowflame-Tempered Armor Patch
 				i(204710),	-- Shadowflame-Tempered Armor Patch
-				i(204712),	-- [PH] Brimming Loamm Niffen Supply Satchel
+				-- Mount
+				i(204361),	-- Winding Slitherdrake
+				filter(TOYS, {
+					i(205045),	-- B.B.F. Fist (TOY!)
+					i(205418),	-- Blazing Shadowflame Cinder (TOY!)
+					i(205034),	-- Enormous Ball of Yarn (TOY!)
+					i(205027),	-- Explorer's Banner (TOY!)
+					i(205688),	-- Glutinous Glitterscale Glob (TOY!)
+					i(205796),	-- Molten Lava Pack (TOY!)
+					i(205255),	-- Niffen Diggin' Mitts (TOY!)
+					i(204818),	-- Quackomancy Cannon (TOY!)
+					i(205904),	-- Vibrant Clacking Claw (TOY!)
+				}),
+
+
+				--??
+				i(204580),	-- Abnormal Brain
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				i(204704),	-- Adaptive Dracothyst Armguards
+				i(204706),	-- Spore Colony Shoulderguards
+
+				i(204712),	-- Brimming Loamm Niffen Supply Satchel
 				i(204713),	-- Sundered Flame Expedition Notes
 				i(204714),	-- Satchel of Healing Spores
-				i(204715),	-- Fragrant Unearthed Coin
+
 				i(204717),	-- Splintered Spark of Shadowflame
-				i(204721),	-- Small Whelpling Crest Fragment Chest
-				i(204722),	-- Bountiful Whelpling Crest Fragment Chest
-				i(204723),	-- Ample Whelpling Crest Fragment Chest
-				i(204724),	-- Small Drake Crest Fragment Chest
-				i(204725),	-- Ample Drake Crest Fragment Chest
-				i(204726),	-- Bountiful Drake Crest Fragment Chest
-				i(204727),	-- Coveted Bauble
-				i(204728),	-- Friendship Censer
+
+
 				i(204729),	-- Freshly Squeezed Mosswater
 				i(204730),	-- Grub Grub
 				i(204731),	-- Arclight Welcome Letter
@@ -1360,7 +1233,7 @@ root(ROOTS.Unsorted, {
 				i(204810),	-- Drogbar Rocks
 				i(204811),	-- Drogbar Stones
 				i(204817),	-- Underlight Cocoon Fibers
-				i(204818),	-- Quackomancy Cannon
+
 				i(204823),	-- Polarity Bomb
 				i(204824),	-- Torn Journal Entry
 				i(204825),	-- Polarity Bomb
@@ -1401,59 +1274,7 @@ root(ROOTS.Unsorted, {
 				i(204901),	-- Firecaller's Focus
 				i(204909),	-- 10.1 Precognition Embellishment [PH]
 				i(204911),	-- Propagated Spore
-				i(204914),	-- Deeprock Cloak
-				i(204915),	-- Deeprock Cape
-				i(204916),	-- Deeprock Loop
-				i(204917),	-- Deeprock Ring
-				i(204918),	-- Deeprock Signet
-				i(204919),	-- Deeprock Pendant
-				i(204920),	-- Moonless Robe
-				i(204921),	-- Moonless Slippers
-				i(204922),	-- Moonless Gloves
-				i(204923),	-- Moonless Hood
-				i(204924),	-- Moonless Trousers
-				i(204925),	-- Moonless Shoulderpads
-				i(204926),	-- Moonless Belt
-				i(204927),	-- Moonless Wristband
-				i(204928),	-- Sunless Tunic
-				i(204929),	-- Sunless Boots
-				i(204930),	-- Sunless Grips
-				i(204931),	-- Sunless Cowl
-				i(204932),	-- Sunless Pants
-				i(204933),	-- Sunless Spaulders
-				i(204934),	-- Sunless Wrap
-				i(204935),	-- Sunless Bracers
-				i(204936),	-- Skyless Blouse
-				i(204937),	-- Skyless Striders
-				i(204938),	-- Skyless Grips
-				i(204940),	-- Skyless Coif
-				i(204941),	-- Skyless Greaves
-				i(204942),	-- Skyless Epaulets
-				i(204943),	-- Skyless Chain
-				i(204944),	-- Skyless Cuffs
-				i(204945),	-- Starless Breastplate
-				i(204946),	-- Starless Warboots
-				i(204947),	-- Starless Gauntlets
-				i(204948),	-- Starless Fullhelm
-				i(204949),	-- Starless Legguards
-				i(204950),	-- Starless Mantle
-				i(204951),	-- Starless Girdle
-				i(204952),	-- Starless Armplates
-				i(204953),	-- Neltharic Shiv
-				i(204954),	-- Neltharic Ritual Knife
-				i(204955),	-- Neltharic Beatstick
-				i(204956),	-- Neltharic Smasher
-				i(204957),	-- Neltharic Saber
-				i(204958),	-- Neltharic Blade
-				i(204959),	-- Neltharic Blaster
-				i(204960),	-- Neltharic Spear
-				i(204961),	-- Neltharic Partisan
-				i(204962),	-- Neltharic Warstaff
-				i(204963),	-- Neltharic Staff
-				i(204964),	-- Neltharic Torch
-				i(204965),	-- Neltharic Shield
-				i(204966),	-- Neltharic Warglaive
-				i(204967),	-- Neltharic Greatsword
+
 				i(204968),	-- Pattern: Shadowflame-Tempered Armor Patch
 				i(204969),	-- Pattern: Spore Colony Shoulderguards
 				i(204970),	-- Pattern: Adaptive Dracothyst Armguards
@@ -1465,9 +1286,7 @@ root(ROOTS.Unsorted, {
 				i(204976),	-- Formula: Spore Keeper's Baton
 				i(204977),	-- Formula: Illusory Adornment: Spores
 				i(204978),	-- Formula: Enchant Weapon - Spore Tender
-				i(204979),	-- Neltharic Wingaxe
-				i(204980),	-- Neltharic Wingsplitter
-				i(204981),	-- Neltharic Wand
+
 				i(204984),	-- Recipe: Stinky Bright Potion
 				i(204985),	-- Barter Brick
 				i(204986),	-- Flame-Infused Scale Oil
@@ -1504,13 +1323,12 @@ root(ROOTS.Unsorted, {
 				i(205024),	-- Cheddar
 				i(205025),	-- Undulating Sporecloak
 				i(205026),	-- Devourer Lobstrok
-				i(205027),	-- Explorer's Banner of Comradery
 				i(205028),	-- Explorer's Banner of Comradery
 				i(205029),	-- Explorer's Banner of Comradery
 				i(205030),	-- Crawler Venom
 				i(205031),	-- Broodmother Venom
 				i(205032),	-- Bestial Lurker
-				i(205034),	-- Enourmous Ball of Yarn
+
 				i(205035),	-- Snapjaw Lurker
 				i(205036),	-- Schematic: Tinker: Shadowflame Rockets
 				i(205037),	-- Void Lurker
@@ -1521,7 +1339,7 @@ root(ROOTS.Unsorted, {
 				i(205042),	-- Hellsteel Belt Buckle
 				i(205043),	-- Hellsteel Belt Buckle
 				i(205044),	-- Hellsteel Belt Buckle
-				i(205045),	-- B.B.F. Fist
+
 				i(205046),	-- [DNT] Hellsteel Bunker Buster
 				i(205047),	-- Hellsteel Impact Guage
 				i(205048),	-- Hellsteel Impact Guage
@@ -1531,65 +1349,7 @@ root(ROOTS.Unsorted, {
 				i(205052),	-- Miloh
 				i(205053),	-- Rusty
 				i(205054),	-- Amador
-				i(205055),	-- Zaralek Surveyor's Drape
-				i(205056),	-- Zaralek Surveyor's Cloak
-				i(205057),	-- Zaralek Surveyor's Greatcloak
-				i(205058),	-- Zaralek Surveyor's Vestment
-				i(205059),	-- Zaralek Surveyor's Sandals
-				i(205060),	-- Zaralek Surveyor's Handwraps
-				i(205061),	-- Zaralek Surveyor's Cowl
-				i(205062),	-- Zaralek Surveyor's Leggings
-				i(205063),	-- Zaralek Surveyor's Cord
-				i(205064),	-- Zaralek Surveyor's Cuffs
-				i(205065),	-- Zaralek Surveyor's Waders
-				i(205066),	-- Zaralek Surveyor's Grips
-				i(205067),	-- Zaralek Surveyor's Helm
-				i(205068),	-- Zaralek Surveyor's Breeches
-				i(205069),	-- Zaralek Surveyor's Sash
-				i(205070),	-- Zaralek Surveyor's Bindings
-				i(205071),	-- Zaralek Surveyor's Chainmail
-				i(205072),	-- Zaralek Surveyor's Striders
-				i(205073),	-- Zaralek Surveyor's Grips
-				i(205074),	-- Zaralek Surveyor's Coif
-				i(205075),	-- Zaralek Surveyor's Greaves
-				i(205076),	-- Zaralek Surveyor's Shoulderguards
-				i(205077),	-- Zaralek Surveyor's Cinch
-				i(205078),	-- Zaralek Surveyor's Bracers
-				i(205079),	-- Zaralek Surveyor's Helm
-				i(205080),	-- Zaralek Surveyor's Breastplate
-				i(205081),	-- Zaralek Surveyor's Sabatons
-				i(205082),	-- Zaralek Surveyor's Gauntlets
-				i(205083),	-- Zaralek Surveyor's Legguards
-				i(205084),	-- Zaralek Surveyor's Mantle
-				i(205085),	-- Zaralek Surveyor's Girdle
-				i(205086),	-- Zaralek Surveyor's Armplates
-				i(205087),	-- Zaralek Surveyor's Vest
-				i(205088),	-- Zaralek Surveyor's Epaulets
-				i(205089),	-- Zaralek Surveyor's Shoulderpads
-				i(205090),	-- Zaralek Surveyor's Barrier
-				i(205091),	-- Zaralek Surveyor's Scepter
-				i(205092),	-- Zaralek Surveyor's Wand
-				i(205093),	-- Zaralek Surveyor's Polearm
-				i(205094),	-- Zaralek Surveyor's Rifle
-				i(205095),	-- Zaralek Surveyor's Spellblade
-				i(205096),	-- Zaralek Surveyor's Shank
-				i(205097),	-- Zaralek Surveyor's Kris
-				i(205098),	-- Zaralek Surveyor's Sword
-				i(205099),	-- Zaralek Surveyor's Blade
-				i(205100),	-- Zaralek Surveyor's Greatsword
-				i(205101),	-- Zaralek Surveyor's Loop
-				i(205102),	-- Zaralek Surveyor's Signet
-				i(205103),	-- Zaralek Surveyor's Hacker
-				i(205104),	-- Zaralek Surveyor's Cleaver
-				i(205105),	-- Zaralek Surveyor's Censer
-				i(205106),	-- Zaralek Surveyor's Mallet
-				i(205107),	-- Zaralek Surveyor's Cudgel
-				i(205108),	-- Zaralek Surveyor's Halberd
-				i(205109),	-- Zaralek Surveyor's Staff
-				i(205110),	-- Zaralek Surveyor's Warglaive
-				i(205111),	-- Zaralek Surveyor's Band
-				i(205112),	-- Zaralek Surveyor's Shawl
-				i(205113),	-- Zaralek Surveyor's Choker
+
 				i(205114),	-- Brul
 				i(205115),	-- 10.1 Precognition Embellishment [PH]
 				i(205116),	-- Jerrie
@@ -1651,8 +1411,7 @@ root(ROOTS.Unsorted, {
 				i(205185),	-- Muddy Key
 				i(205186),	-- Sticky Key
 				i(202171),	-- Obsidian Flightstone
-				i(202610),	-- Dragonfire Bomb Dispenser
-				i(203963),	-- Beacon to the Beyond
+
 				i(204462),	-- Dracothyst Shard
 				i(204721),	-- Whelpling's Small Chest
 				i(204722),	-- Whelpling's Bountiful Chest
@@ -1741,7 +1500,7 @@ root(ROOTS.Unsorted, {
 				i(205252),	-- Momento of Rekindled Bonds
 				i(205253),	-- Farmhand's Abundant Harvest
 				i(205254),	-- Honorary Explorer's Compass
-				i(205255),	-- Niffen Diggin' Mits
+
 				i(205256),	-- Satchel of Pilfered Recipes
 				i(192779),	-- Seething Slug
 				i(201957),	-- Thrall's Hearthstone
@@ -1766,60 +1525,7 @@ root(ROOTS.Unsorted, {
 				i(202708),	-- Curried Coconut Crab
 				i(202709),	-- Spicy Seared Talbuk Steak
 				i(202710),	-- Grilled Southfury Salmon
-				i(203152),	-- Lionguard Pauldrons
-				i(203153),	-- Lionguard Greathelm
-				i(203154),	-- Lionguard Greathelm
-				i(203155),	-- Lionguard Pauldrons
-				i(203156),	-- Lionguard Pauldrons
-				i(203157),	-- Lionguard Greathelm
-				i(203158),	-- Lionguard Chestplate
-				i(203159),	-- Lionguard Chestplate
-				i(203160),	-- Lionguard Chestplate
-				i(203161),	-- Lionguard Greatbelt
-				i(203162),	-- Lionguard Greatbelt
-				i(203163),	-- Lionguard Greatbelt
-				i(203164),	-- Lionguard Legguards
-				i(203165),	-- Lionguard Legguards
-				i(203166),	-- Lionguard Legguards
-				i(203167),	-- Lionguard Warboots
-				i(203168),	-- Lionguard Warboots
-				i(203169),	-- Lionguard Warboots
-				i(203170),	-- Lionguard Bracers
-				i(203171),	-- Lionguard Bracers
-				i(203172),	-- Lionguard Bracers
-				i(203173),	-- Lionguard Gauntlets
-				i(203174),	-- Lionguard Gauntlets
-				i(203175),	-- Lionguard Gauntlets
-				i(203176),	-- Lionguard Robe
-				i(203177),	-- Lionguard Robe
-				i(203178),	-- Lionguard Robe
-				i(203179),	-- Kosh'aka Casque
-				i(203180),	-- Kosh'aka Casque
-				i(203181),	-- Kosh'aka Casque
-				i(203185),	-- Kosh'aka Spaulders
-				i(203186),	-- Kosh'aka Spaulders
-				i(203187),	-- Kosh'aka Spaulders
-				i(203188),	-- Kosh'aka Cheststraps
-				i(203189),	-- Kosh'aka Cheststraps
-				i(203190),	-- Kosh'aka Cheststraps
-				i(203191),	-- Kosh'aka Girdle
-				i(203192),	-- Kosh'aka Girdle
-				i(203193),	-- Kosh'aka Girdle
-				i(203194),	-- Kosh'aka Legstraps
-				i(203195),	-- Kosh'aka Legstraps
-				i(203196),	-- Kosh'aka Legstraps
-				i(203197),	-- Kosh'aka Greaves
-				i(203198),	-- Kosh'aka Greaves
-				i(203199),	-- Kosh'aka Greaves
-				i(203200),	-- Kosh'aka Armbands
-				i(203201),	-- Kosh'aka Armbands
-				i(203202),	-- Kosh'aka Armbands
-				i(203203),	-- Kosh'aka Grips
-				i(203204),	-- Kosh'aka Grips
-				i(203205),	-- Kosh'aka Grips
-				i(203207),	-- Kosh'aka Drape
-				i(203208),	-- Kosh'aka Drape
-				i(203209),	-- Kosh'aka Drape
+
 				i(203395),	-- Research Journal
 				i(203475),	-- Urgent Stormwind Summons
 				i(203679),	-- Ancestral Bloodhoof Totem
@@ -1830,18 +1536,18 @@ root(ROOTS.Unsorted, {
 				i(203725),	-- Display of Strength
 				i(204063),	-- Windsor's Journal
 				i(204084),	-- Ancestor's Might
-				i(204170),	-- Clan Banner
+
 				i(204171),	-- Enforcer Jennive's Signet
 				i(204172),	-- Enforcer Tera's Signet
 				i(204173),	-- Enforcer Horb's Signet
 				i(204214),	-- Drakefire Amulet
-				i(204461),	-- Shakeel's Remembrance
-				i(204712),	-- Brimming Loamm Niffen Supply Satchel
+
+
 				i(204793),	-- Suja's Sweet Salt
 				i(204858),	-- Vantus Rune: Aberrus, the Shadowed Crucible
 				i(204909),	-- Statuette of the Forethoughtful Fiend
-				i(205027),	-- Explorer's Banner
-				i(205034),	-- Enormous Ball of Yarn
+
+
 				i(205115),	-- Statuette of the Forethoughtful Fiend
 				i(205120),	-- Thimblerig
 				i(205138),	-- Pattern: Medical Wrap Kit
@@ -1853,7 +1559,7 @@ root(ROOTS.Unsorted, {
 				i(205217),	-- Sharpbeak's Feed
 				i(205229),	-- Magma Serpent Lure
 				i(205233),	-- Obsidian Gladiator's Slitherdrake
-				i(205255),	-- Niffen Diggin' Mitts
+
 				i(205262),	-- Magmaclaw Lure
 				i(205263),	-- Empowered Flightstone
 				i(205264),	-- Speleothemic Footguards
@@ -2000,8 +1706,8 @@ root(ROOTS.Unsorted, {
 				i(205415),	-- Ornate Black Dragon Labwear Mantle
 				i(205416),	-- Ornate Black Dragon Labwear Cloak
 				i(205417),	-- Fungishine
-				i(205418),	-- Blazing Shadowflame Cinder
-				i(205419),	-- Jrumm's Drum
+
+
 				i(205421),	-- Ponzo's Scheming Topper
 				i(205423),	-- Shadowflame Residue Sack
 				i(205424),	-- Bartered Jewelcrafting Notes
@@ -2040,7 +1746,7 @@ root(ROOTS.Unsorted, {
 				i(205460),	-- Pulverized Living Earth
 				i(205461),	-- Vicious Stoneclaw
 				i(205462),	-- Scavenged Djaradin Relic
-				i(205463),	-- Skornace's Molten Pocket
+
 				i(205464),	-- Granite Scales
 				i(205465),	-- Gleaming Rock Viper Eye
 				i(205466),	-- Regurgitated Spores
@@ -2378,63 +2084,17 @@ root(ROOTS.Unsorted, {
 				i(202552),	-- Underlight Conjurer's Gloves
 				i(202553),	-- Underlight Conjurer's Treads
 				i(202554),	-- Underlight Conjurer's Vestment
-				i(204448),	-- Stone Spitter
-				i(204449),	-- Black Earth Glaive
-				i(204450),	-- Draconic Cleaver
-				i(204451),	-- Earth-Bound Saber
-				i(204452),	-- Earth Warding Spire
-				i(204453),	-- Black Dragon's Reach
-				i(204454),	-- Dragon Maul
-				i(204455),	-- Scaled Titan's Claw
-				i(204456),	-- Proto-Drake Slicer
-				i(204457),	-- Almost Immovable Wall
-				i(204458),	-- Centered Stone Focus
-				i(204459),	-- Wand of Shifting Stone
-				i(204461),	-- Shalkeel's Remembrance
-				i(204581),	-- Endowed Robes
-				i(204582),	-- Endowed Slippers
-				i(204583),	-- Endowed Mitts
-				i(204584),	-- Endowed Hood
-				i(204585),	-- Endowed Breeches
-				i(204586),	-- Endowed Mantle
-				i(204587),	-- Endowed Sash
-				i(204588),	-- Endowed Bindings
-				i(204589),	-- Inherited Raiment
-				i(204590),	-- Inherited Treads
-				i(204591),	-- Inherited Gloves
-				i(204592),	-- Inherited Mask
-				i(204593),	-- Inherited Leggings
-				i(204594),	-- Inherited Epaulets
-				i(204595),	-- Inherited Cincture
-				i(204596),	-- Inherited Wristbands
-				i(204597),	-- Bequeathed Chainmail
-				i(204598),	-- Bequeathed Striders
-				i(204599),	-- Bequeathed Gauntlets
-				i(204600),	-- Bequeathed Cowl
-				i(204601),	-- Bequeathed Tassets
-				i(204602),	-- Bequeathed Spaulders
-				i(204603),	-- Bequeathed Cinch
-				i(204604),	-- Bequeathed Bracers
-				i(204605),	-- Bestowed Chestplate
-				i(204606),	-- Bestowed Stompers
-				i(204607),	-- Bestowed Crushers
-				i(204608),	-- Bestowed Greathelm
-				i(204609),	-- Bestowed Greaves
-				i(204610),	-- Bestowed Pauldrons
-				i(204611),	-- Bestowed Girdle
-				i(204612),	-- Bestowed Vambraces
-				i(204616),	-- Endowed Wrap
-				i(204617),	-- Bestowed Cape
-				i(204618),	-- Bequeathed Drape
-				i(204619),	-- Inherited Cloak
-				i(204620),	-- Dark Earth Glaive
-				i(204624),	-- Staff of the Unlit Sky
-				i(204625),	-- Dark Nail
-				i(204626),	-- Rock Shooter
-				i(204627),	-- Proto-Drake Ripper
-				i(204628),	-- Scaled Titan's Tooth
-				i(204629),	-- Grounded Stone Focus
-				i(204630),	-- Nearly Unbreakable Wall
+
+
+
+
+
+
+
+
+
+
+
 				i(204859),	-- Vantus Rune: Aberrus, the Shadowed Crucible
 				i(204860),	-- Vantus Rune: Aberrus, the Shadowed Crucible
 				i(205141),	-- Pattern: Explorer's Banner
@@ -2448,7 +2108,7 @@ root(ROOTS.Unsorted, {
 				i(205682),	-- Large Shadowflame Residue Sack
 				i(205684),	-- Forbidden Flounder
 				i(205686),	-- Clacking Claw
-				i(205688),	-- Glutinous Glitterscale Glob
+
 				i(205689),	-- Earthen Key
 				i(205690),	-- Barter-B-Q
 				i(205691),	-- Hypnotic Murloc Lure
@@ -2553,7 +2213,7 @@ root(ROOTS.Unsorted, {
 				i(205793),	-- Skitter Souf-fly
 				i(205794),	-- Beetle Juice
 				i(205795),	-- Wriggling Worm
-				i(205796),	-- Molten Lava Pack
+
 				i(205797),	-- Filthy Bundle
 				i(205798),	-- PVP Upgrade - Class Sets - Warrior - Armor - Plate - Shoulder
 				i(205799),	-- PVP Upgrade - Class Sets - Warrior - Armor - Plate - Legs
@@ -2656,7 +2316,7 @@ root(ROOTS.Unsorted, {
 				i(205901),	-- Crunchy Beetle
 				i(205902),	-- Deepflayer Claw
 				i(205903),	-- Barter Pebble
-				i(205904),	-- Vibrant Clacking Claw
+
 				i(205906),	-- Feathered Friend
 				i(205907),	-- Soaked Totem
 				i(205909),	-- Stretched Canvas
