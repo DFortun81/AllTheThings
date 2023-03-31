@@ -34,6 +34,7 @@ _.ExpansionFeatures =
 							i(36533),	-- Adorned Broadsword
 							i(36603),	-- Archaic Longspear
 							i(25285),	-- Bloodwood Wand
+							i(36575),	-- Dragonflayer Hatchet
 							i(55631),	-- Frayfeather Belt
 							i(55568),	-- Frayfeather Bracers
 							i(55595),	-- Frayfeather Gauntlets
@@ -52,7 +53,10 @@ _.ExpansionFeatures =
 							i(55766),	-- Galardell Shoulderpads
 							i(55712),	-- Galardell Wristwraps
 							i(36631),	-- Horned Crossbow
+							i(36547),	-- Jester's Stick
 							i(25173),	-- Master's Bo Staff
+							i(36519),	-- Moonlit Katana
+							i(36561),	-- Mummified Paw
 							i(55640),	-- Nighthaven Bindings
 							i(55658),	-- Nighthaven Boots
 							i(55685),	-- Nighthaven Britches
@@ -76,6 +80,8 @@ _.ExpansionFeatures =
 							i(55307),	-- Rustmaul Bow
 							i(55298),	-- Rustmaul Broadaxe
 							i(55289),	-- Rustmaul Axe
+							i(36589),	-- Segmenting Broadaxe
+							i(36491),	-- Serrated Maul
 							i(36659),	-- Shivery Wand
 							i(55316),	-- Sorrowmurk Cloak
 							i(55379),	-- Sorrowmurk Crystal
@@ -92,6 +98,8 @@ _.ExpansionFeatures =
 							i(55496),	-- Steelgrill Vambraces
 							i(55433),	-- Steelgrill Shield
 							i(36645),	-- Tuskarr Boomstick
+							i(36477),	-- Twin-Edged Stiletto
+							i(36673),	-- Wise Dagger
 							i(36617),	-- Yielding Bow
 						}),
 					}),
