@@ -604,6 +604,12 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 	category(227, {	-- Weapons
 		filter(ONE_HANDED_AXES, {
 			i(33426),	-- Chipped Timber Axe
+			i(36575, {	-- Dragonflayer Hatchet [Removed from Game - Crates Only!]
+				-- #if AFTER 6.0.1
+				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+				-- #endif
+				["timeline"] = { "added 3.0.1.8770", "removed 7.0.1" },
+			}),
 			i(36571),	-- Splicing Axe
 			i(36572),	-- Dinged Cleaver
 			i(36573),	-- Primeval Adze
