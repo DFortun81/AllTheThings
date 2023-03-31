@@ -735,6 +735,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(VENDORS, {
+				n(8359, {	-- Ahanu 
+					["coord"] = { 45.6, 55.8, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 236 },    -- Cured Leather Armor
+						{"select", "itemID", 1849 },    -- Cured Leather Belt
+						{"select", "itemID", 238 },    -- Cured Leather Boots
+						{"select", "itemID", 1850 },    -- Cured Leather Bracers
+						{"select", "itemID", 239 },    -- Cured Leather Gloves
+						{"select", "itemID", 237 },    -- Cured Leather Pants
+						{"select", "itemID", 1843 },    -- Tanned Leather Belt
+						{"select", "itemID", 843 },    -- Tanned Leather Boots
+						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
+						{"select", "itemID", 844 },    -- Tanned Leather Gloves
+						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
+						{"select", "itemID", 845 },    -- Tanned Leather Pants
+					},
+				}),
 				n(50483, {	-- Brave Tuho <Thunder Bluff Quartermaster>
 					["coord"] = { 47.05, 50.23, THUNDER_BLUFF },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -861,6 +879,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
+				n(3093, {	-- Grod  
+					["coord"] = { 42.4, 43.2, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2371 },    -- Battered Leather Belt
+						{"select", "itemID", 2373 },    -- Battered Leather Boots
+						{"select", "itemID", 2374 },    -- Battered Leather Bracers
+						{"select", "itemID", 2375 },    -- Battered Leather Gloves
+						{"select", "itemID", 2370 },    -- Battered Leather Harness
+						{"select", "itemID", 2372 },    -- Battered Leather Pants
+						{"select", "itemID", 236 },    -- Cured Leather Armor
+						{"select", "itemID", 1849 },    -- Cured Leather Belt
+						{"select", "itemID", 238 },    -- Cured Leather Boots
+						{"select", "itemID", 1850 },    -- Cured Leather Bracers
+						{"select", "itemID", 239 },    -- Cured Leather Gloves
+						{"select", "itemID", 237 },    -- Cured Leather Pants
+						{"select", "itemID", 1843 },    -- Tanned Leather Belt
+						{"select", "itemID", 843 },    -- Tanned Leather Boots
+						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
+						{"select", "itemID", 844 },    -- Tanned Leather Gloves
+						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
+						{"select", "itemID", 845 },    -- Tanned Leather Pants
+					},
+				}),
 				n(8401, {	-- Halpa <Prairie Dog Vendor>
 					["coord"] = { 62.2, 58.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -1131,6 +1173,57 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6523),	-- Buckled Harness
 						i(6525),	-- Grunt's Harness
 						i(6524),	-- Studded Leather Harness
+					},
+				}),
+				n(3092, {	-- Tagain 
+					["coord"] = { 43.4, 43.8, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2617 },    -- Burning Robes
+						{"select", "itemID", 2615 },    -- Chromatic Robe
+						{"select", "itemID", 2613 },    -- Double Stitched Robes
+						{"select", "itemID", 2435 },    -- Embroidered Armor
+						{"select", "itemID", 3587 },    -- Embroidered Belt
+						{"select", "itemID", 2438 },    -- Embroidered Boots
+						{"select", "itemID", 3588 },    -- Embroidered Bracers
+						{"select", "itemID", 2440 },    -- Embroidered Gloves
+						{"select", "itemID", 3892 },    -- Embroidered Hat
+						{"select", "itemID", 2437 },    -- Embroidered Pants
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+						{"select", "itemID", 3602 },    -- Knitted Belt
+						{"select", "itemID", 3603 },    -- Knitted Bracers
+						{"select", "itemID", 793 },    -- Knitted Gloves
+						{"select", "itemID", 794 },    -- Knitted Pants
+						{"select", "itemID", 792 },    -- Knitted Sandals
+						{"select", "itemID", 795 },    -- Knitted Tunic
+						{"select", "itemID", 2160 },    -- Padded Armor
+						{"select", "itemID", 3591 },    -- Padded Belt
+						{"select", "itemID", 2156 },    -- Padded Boots
+						{"select", "itemID", 3592 },    -- Padded Bracers
+						{"select", "itemID", 2158 },    -- Padded Gloves
+						{"select", "itemID", 2159 },    -- Padded Pants
+						{"select", "itemID", 2612 },    -- Plain Robe
+						{"select", "itemID", 2614 },    -- Robe Of Apprenticeship
+						{"select", "itemID", 3593 },    -- Russet Belt
+						{"select", "itemID", 2432 },    -- Russet Boots
+						{"select", "itemID", 3594 },    -- Russet Bracers
+						{"select", "itemID", 2434 },    -- Russet Gloves
+						{"select", "itemID", 3889 },    -- Russet Hat
+						{"select", "itemID", 2431 },    -- Russet Pants
+						{"select", "itemID", 2429 },    -- Russet Vest
+						{"select", "itemID", 2616 },    -- Shimmering Silk Robes
+						{"select", "itemID", 2618 },    -- Silver Dress Robes
+						{"select", "itemID", 3597 },    -- Thick Cloth Belt
+						{"select", "itemID", 3598 },    -- Thick Cloth Bracers
+						{"select", "itemID", 203 },    -- Thick Cloth Gloves
+						{"select", "itemID", 201 },    -- Thick Cloth Pants
+						{"select", "itemID", 202 },    -- Thick Cloth Shoes
+						{"select", "itemID", 200 },    -- Thick Cloth Vest
 					},
 				}),
 				n(3016, {	-- Tand <Basket Weaver>

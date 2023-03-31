@@ -5184,6 +5184,48 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.8, 44.8, ORGRIMMAR },
 					-- #endif
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2142 },    -- Cuirboulli Belt
+						{"select", "itemID", 2143 },    -- Cuirboulli Boots
+						{"select", "itemID", 2144 },    -- Cuirboulli Bracers
+						{"select", "itemID", 2145 },    -- Cuirboulli Gloves
+						{"select", "itemID", 2146 },    -- Cuirboulli Pants
+						{"select", "itemID", 2141 },    -- Cuirboulli Vest
+						{"select", "itemID", 2435 },    -- Embroidered Armor
+						{"select", "itemID", 3587 },    -- Embroidered Belt
+						{"select", "itemID", 2438 },    -- Embroidered Boots
+						{"select", "itemID", 3588 },    -- Embroidered Bracers
+						{"select", "itemID", 2440 },    -- Embroidered Gloves
+						{"select", "itemID", 3892 },    -- Embroidered Hat
+						{"select", "itemID", 2437 },    -- Embroidered Pants
+						{"select", "itemID", 2160 },    -- Padded Armor
+						{"select", "itemID", 3591 },    -- Padded Belt
+						{"select", "itemID", 2156 },    -- Padded Boots
+						{"select", "itemID", 3592 },    -- Padded Bracers
+						{"select", "itemID", 2158 },    -- Padded Gloves
+						{"select", "itemID", 2159 },    -- Padded Pants
+						{"select", "itemID", 2471 },    -- Reinforced Leather Belt
+						{"select", "itemID", 2473 },    -- Reinforced Leather Boots
+						{"select", "itemID", 2474 },    -- Reinforced Leather Bracers
+						{"select", "itemID", 3893 },    -- Reinforced Leather Cap
+						{"select", "itemID", 2475 },    -- Reinforced Leather Gloves
+						{"select", "itemID", 2472 },    -- Reinforced Leather Pants
+						{"select", "itemID", 2470 },    -- Reinforced Leather Vest
+						{"select", "itemID", 3593 },    -- Russet Belt
+						{"select", "itemID", 2432 },    -- Russet Boots
+						{"select", "itemID", 3594 },    -- Russet Bracers
+						{"select", "itemID", 2434 },    -- Russet Gloves
+						{"select", "itemID", 3889 },    -- Russet Hat
+						{"select", "itemID", 2431 },    -- Russet Pants
+						{"select", "itemID", 2429 },    -- Russet Vest
+						{"select", "itemID", 2464 },    -- Studded Belt
+						{"select", "itemID", 2467 },    -- Studded Boots
+						{"select", "itemID", 2468 },    -- Studded Bracers
+						{"select", "itemID", 2463 },    -- Studded Doublet
+						{"select", "itemID", 2469 },    -- Studded Gloves
+						{"select", "itemID", 3890 },    -- Studded Hat
+						{"select", "itemID", 2465 },    -- Studded Pants
+					},
 					["groups"] = {
 						i(12256, {	-- Cindercloth Leggings
 							["isLimited"] = true,
@@ -6039,22 +6081,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.0, 55.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
-						-- Now any class and race can buy this
-						-- DRUID --
-						i(6124),	-- Novice's Pants
-						i(6139),	-- Novice's Robe
-
-						-- ROGUE --
-						i(20896),	-- Lookout's Pants
-						i(20898),	-- Lookout's Shoes
-						i(58238),	-- Lookout's Vest
-						i(121),	-- Thug Boots
-						i(120),	-- Thug Pants
-						i(58246),	-- Thug Vest
-
-						-- ??? --
-						i(153),		-- Primitive Kilt
-						i(6135),	-- Primitive Kilt
+						i(2371),    -- Battered Leather Belt
+						i(2373),    -- Battered Leather Boots
+						i(2374),    -- Battered Leather Bracers
+						i(2375),    -- Battered Leather Gloves
+						i(2370),    -- Battered Leather Harness
+						i(2372),    -- Battered Leather Pants
+						i(236),    -- Cured Leather Armor
+						i(1849),    -- Cured Leather Belt
+						i(238),    -- Cured Leather Boots
+						i(1850),    -- Cured Leather Bracers
+						i(239),    -- Cured Leather Gloves
+						i(237),    -- Cured Leather Pants
+						i(20896),    -- Lookouts Pants
+						i(20898),    -- Lookouts Shoes
+						i(58238),    -- Lookouts Vest
+						i(6124),    -- Novices Pants
+						i(6139),    -- Novices Robe
+						i(153),    -- Primitive Kilt
+						i(6135),    -- Primitive Kilt
+						i(1843),    -- Tanned Leather Belt
+						i(843),    -- Tanned Leather Boots
+						i(1844),    -- Tanned Leather Bracers
+						i(844),    -- Tanned Leather Gloves
+						i(846),    -- Tanned Leather Jerkin
+						i(845),    -- Tanned Leather Pants
+						i(121),    -- Thug Boots
+						i(120),    -- Thug Pants
+						i(58246),    -- Thug Vest
 					}),
 				}),
 				-- #endif
@@ -7037,9 +7091,56 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(2617),    -- Burning Robes
+						i(2615),    -- Chromatic Robe
+						i(2142),    -- Cuirboulli Belt
+						i(2143),    -- Cuirboulli Boots
+						i(2144),    -- Cuirboulli Bracers
+						i(2145),    -- Cuirboulli Gloves
+						i(2146),    -- Cuirboulli Pants
+						i(2141),    -- Cuirboulli Vest
+						i(2613),    -- Double Stitched Robes
+						i(2435),    -- Embroidered Armor
+						i(3587),    -- Embroidered Belt
+						i(2438),    -- Embroidered Boots
+						i(3588),    -- Embroidered Bracers
+						i(2440),    -- Embroidered Gloves
+						i(3892),    -- Embroidered Hat
+						i(2437),    -- Embroidered Pants
+						i(2160),    -- Padded Armor
+						i(3591),    -- Padded Belt
+						i(2156),    -- Padded Boots
+						i(3592),    -- Padded Bracers
+						i(2158),    -- Padded Gloves
+						i(2159),    -- Padded Pants
 						i(12255, {	-- Pale Leggings
 							["isLimited"] = true,
 						}),
+						i(2612),    -- Plain Robe
+						i(2471),    -- Reinforced Leather Belt
+						i(2473),    -- Reinforced Leather Boots
+						i(2474),    -- Reinforced Leather Bracers
+						i(3893),    -- Reinforced Leather Cap
+						i(2475),    -- Reinforced Leather Gloves
+						i(2472),    -- Reinforced Leather Pants
+						i(2470),    -- Reinforced Leather Vest
+						i(2614),    -- Robe Of Apprenticeship
+						i(3593),    -- Russet Belt
+						i(2432),    -- Russet Boots
+						i(3594),    -- Russet Bracers
+						i(2434),    -- Russet Gloves
+						i(3889),    -- Russet Hat
+						i(2431),    -- Russet Pants
+						i(2429),    -- Russet Vest
+						i(2616),    -- Shimmering Silk Robes
+						i(2618),    -- Silver Dress Robes
+						i(2464),    -- Studded Belt
+						i(2467),    -- Studded Boots
+						i(2468),    -- Studded Bracers
+						i(2463),    -- Studded Doublet
+						i(2469),    -- Studded Gloves
+						i(3890),    -- Studded Hat
+						i(2465),    -- Studded Pants
 					},
 				}),
 				-- #if AFTER CATA

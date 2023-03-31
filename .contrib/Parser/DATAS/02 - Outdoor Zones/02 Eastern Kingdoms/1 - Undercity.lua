@@ -1546,11 +1546,56 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 2529 },	-- Zweihander
 					},
 				}),
+				n(5820, {	-- Gillian Moore
+					["coord"] = { 70.6, 59.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2142 },    -- Cuirboulli Belt
+						{"select", "itemID", 2143 },    -- Cuirboulli Boots
+						{"select", "itemID", 2144 },    -- Cuirboulli Bracers
+						{"select", "itemID", 2145 },    -- Cuirboulli Gloves
+						{"select", "itemID", 2146 },    -- Cuirboulli Pants
+						{"select", "itemID", 2141 },    -- Cuirboulli Vest
+						{"select", "itemID", 236 },    -- Cured Leather Armor
+						{"select", "itemID", 1849 },    -- Cured Leather Belt
+						{"select", "itemID", 238 },    -- Cured Leather Boots
+						{"select", "itemID", 1850 },    -- Cured Leather Bracers
+						{"select", "itemID", 239 },    -- Cured Leather Gloves
+						{"select", "itemID", 237 },    -- Cured Leather Pants
+						{"select", "itemID", 2471 },    -- Reinforced Leather Belt
+						{"select", "itemID", 2473 },    -- Reinforced Leather Boots
+						{"select", "itemID", 2474 },    -- Reinforced Leather Bracers
+						{"select", "itemID", 3893 },    -- Reinforced Leather Cap
+						{"select", "itemID", 2475 },    -- Reinforced Leather Gloves
+						{"select", "itemID", 2472 },    -- Reinforced Leather Pants
+						{"select", "itemID", 2470 },    -- Reinforced Leather Vest
+						{"select", "itemID", 2464 },    -- Studded Belt
+						{"select", "itemID", 2467 },    -- Studded Boots
+						{"select", "itemID", 2468 },    -- Studded Bracers
+						{"select", "itemID", 2463 },    -- Studded Doublet
+						{"select", "itemID", 2469 },    -- Studded Gloves
+						{"select", "itemID", 3890 },    -- Studded Hat
+						{"select", "itemID", 2465 },    -- Studded Pants
+						{"select", "itemID", 1843 },    -- Tanned Leather Belt
+						{"select", "itemID", 843 },    -- Tanned Leather Boots
+						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
+						{"select", "itemID", 844 },    -- Tanned Leather Gloves
+						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
+						{"select", "itemID", 845 },    -- Tanned Leather Pants
+					},
+					["groups"] = {
+						i(1839),    -- Rough Leather Belt
+						i(796),    -- Rough Leather Boots
+						i(1840),    -- Rough Leather Bracers
+						i(797),    -- Rough Leather Gloves
+						i(798),    -- Rough Leather Pants
+						i(799),    -- Rough Leather Vest
+					},
+				}),
 				n(4556, {	-- Gordon Wendham
 					["coord"] = { 61.4, 41.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-					-- added all
 						{"select", "itemID", 1194 },	-- Bastard Sword
 						{"select", "itemID", 2479 },	-- Broad Axe
 						{"select", "itemID", 2130 },	-- Club
@@ -1592,10 +1637,48 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4558, {	-- Lauren Newcomb <Light Armor Merchant>
 					["coord"] = { 64.0, 38.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2371 },    -- Battered Leather Belt
+						{"select", "itemID", 2373 },    -- Battered Leather Boots
+						{"select", "itemID", 2374 },    -- Battered Leather Bracers
+						{"select", "itemID", 2375 },    -- Battered Leather Gloves
+						{"select", "itemID", 2370 },    -- Battered Leather Harness
+						{"select", "itemID", 2372 },    -- Battered Leather Pants
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+						{"select", "itemID", 1843 },    -- Tanned Leather Belt
+						{"select", "itemID", 843 },    -- Tanned Leather Boots
+						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
+						{"select", "itemID", 844 },    -- Tanned Leather Gloves
+						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
+						{"select", "itemID", 845 },    -- Tanned Leather Pants
+						{"select", "itemID", 3595 },    -- Tattered Cloth Belt
+						{"select", "itemID", 195 },    -- Tattered Cloth Boots
+						{"select", "itemID", 3596 },    -- Tattered Cloth Bracers
+						{"select", "itemID", 711 },    -- Tattered Cloth Gloves
+						{"select", "itemID", 194 },    -- Tattered Cloth Pants
+						{"select", "itemID", 193 },    -- Tattered Cloth Vest
+						{"select", "itemID", 3606 },    -- Woven Belt
+						{"select", "itemID", 2367 },    -- Woven Boots
+						{"select", "itemID", 3607 },    -- Woven Bracers
+						{"select", "itemID", 2369 },    -- Woven Gloves
+						{"select", "itemID", 2366 },    -- Woven Pants
+						{"select", "itemID", 2364 },    -- Woven Vest
+					},
 					["groups"] = {
 						i(16059),	-- Common Brown Shirt
 						i(3428),	-- Common Gray Shirt
 						i(16060),	-- Common White Shirt
+						i(1835),	-- Dirty Leather Belt
+						i(210),		-- Dirty Leather Boots
+						i(1836),	-- Dirty Leather Bracers
+						i(714),		-- Dirty Leather Gloves
+						i(209),		-- Dirty Leather Pants
+						i(85),		-- Dirty Leather Vest
 					},
 				}),
 				n(4574, {	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
@@ -1612,7 +1695,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.0, 41.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-					-- added all
 						{"select", "itemID", 2025 },	-- bearded axe
 						{"select", "itemID", 1198 },	-- claymore
 						{"select", "itemID", 2029 },	-- cleaver
@@ -1771,6 +1853,53 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.2, 36.6, UNDERCITY },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,
+				}),
+				n(5821, {	-- Sheldon Von Croy
+					["coord"] = { 70.6, 29.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 13896 },    -- Dark Green Wedding Hanbok
+						{"select", "itemID", 2435 },    -- Embroidered Armor
+						{"select", "itemID", 3587 },    -- Embroidered Belt
+						{"select", "itemID", 2438 },    -- Embroidered Boots
+						{"select", "itemID", 3588 },    -- Embroidered Bracers
+						{"select", "itemID", 2440 },    -- Embroidered Gloves
+						{"select", "itemID", 3892 },    -- Embroidered Hat
+						{"select", "itemID", 2437 },    -- Embroidered Pants
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+						{"select", "itemID", 3602 },    -- Knitted Belt
+						{"select", "itemID", 3603 },    -- Knitted Bracers
+						{"select", "itemID", 793 },    -- Knitted Gloves
+						{"select", "itemID", 794 },    -- Knitted Pants
+						{"select", "itemID", 792 },    -- Knitted Sandals
+						{"select", "itemID", 795 },    -- Knitted Tunic
+						{"select", "itemID", 2160 },    -- Padded Armor
+						{"select", "itemID", 3591 },    -- Padded Belt
+						{"select", "itemID", 2156 },    -- Padded Boots
+						{"select", "itemID", 3592 },    -- Padded Bracers
+						{"select", "itemID", 2158 },    -- Padded Gloves
+						{"select", "itemID", 2159 },    -- Padded Pants
+						{"select", "itemID", 13898 },    -- Royal Dangui
+						{"select", "itemID", 3593 },    -- Russet Belt
+						{"select", "itemID", 2432 },    -- Russet Boots
+						{"select", "itemID", 3594 },    -- Russet Bracers
+						{"select", "itemID", 2434 },    -- Russet Gloves
+						{"select", "itemID", 3889 },    -- Russet Hat
+						{"select", "itemID", 2431 },    -- Russet Pants
+						{"select", "itemID", 2429 },    -- Russet Vest
+						{"select", "itemID", 3597 },    -- Thick Cloth Belt
+						{"select", "itemID", 3598 },    -- Thick Cloth Bracers
+						{"select", "itemID", 203 },    -- Thick Cloth Gloves
+						{"select", "itemID", 201 },    -- Thick Cloth Pants
+						{"select", "itemID", 202 },    -- Thick Cloth Shoes
+						{"select", "itemID", 200 },    -- Thick Cloth Vest
+						{"select", "itemID", 13897 },    -- White Traditional Hanbok
+					},
 				}),
 				n(4570, {	-- Sydney Upton
 					["coord"] = { 69.8, 27.4, UNDERCITY },

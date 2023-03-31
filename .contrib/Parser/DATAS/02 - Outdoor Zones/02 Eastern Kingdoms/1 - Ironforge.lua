@@ -1552,6 +1552,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 2529 },	-- zweihander
 					},
 				}),
+				n(5155, {	-- Ingrys Stonebrow
+					["coord"] = { 39.2, 5.0, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2435 },    -- Embroidered Armor
+						{"select", "itemID", 3587 },    -- Embroidered Belt
+						{"select", "itemID", 2438 },    -- Embroidered Boots
+						{"select", "itemID", 3588 },    -- Embroidered Bracers
+						{"select", "itemID", 2440 },    -- Embroidered Gloves
+						{"select", "itemID", 3892 },    -- Embroidered Hat
+						{"select", "itemID", 2437 },    -- Embroidered Pants
+						{"select", "itemID", 3593 },    -- Russet Belt
+						{"select", "itemID", 2432 },    -- Russet Boots
+						{"select", "itemID", 3594 },    -- Russet Bracers
+						{"select", "itemID", 2434 },    -- Russet Gloves
+						{"select", "itemID", 3889 },    -- Russet Hat
+						{"select", "itemID", 2431 },    -- Russet Pants
+						{"select", "itemID", 2429 },    -- Russet Vest
+						{"select", "itemID", 3597 },    -- Thick Cloth Belt
+						{"select", "itemID", 3598 },    -- Thick Cloth Bracers
+						{"select", "itemID", 203 },    -- Thick Cloth Gloves
+						{"select", "itemID", 201 },    -- Thick Cloth Pants
+						{"select", "itemID", 202 },    -- Thick Cloth Shoes
+						{"select", "itemID", 200 },    -- Thick Cloth Vest
+					},
+				}),
 				n(5121, {	-- Kelomir Ironhand
 					["coord"] = { 61.4, 88.4, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -1741,6 +1767,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = { {"sub", "common_recipes_vendor", 50482} }, -- Marith Lazuria <Jewelcrafting Supplies>
 				}),
+				n(5129, {	-- Lissyphus Finespindle
+					["coord"] = { 54.6, 88.2, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2435 },    -- Embroidered Armor
+						{"select", "itemID", 3587 },    -- Embroidered Belt
+						{"select", "itemID", 2438 },    -- Embroidered Boots
+						{"select", "itemID", 3588 },    -- Embroidered Bracers
+						{"select", "itemID", 2440 },    -- Embroidered Gloves
+						{"select", "itemID", 3892 },    -- Embroidered Hat
+						{"select", "itemID", 2437 },    -- Embroidered Pants
+						{"select", "itemID", 2471 },    -- Reinforced Leather Belt
+						{"select", "itemID", 2473 },    -- Reinforced Leather Boots
+						{"select", "itemID", 2474 },    -- Reinforced Leather Bracers
+						{"select", "itemID", 3893 },    -- Reinforced Leather Cap
+						{"select", "itemID", 2475 },    -- Reinforced Leather Gloves
+						{"select", "itemID", 2472 },    -- Reinforced Leather Pants
+						{"select", "itemID", 2470 },    -- Reinforced Leather Vest
+						{"select", "itemID", 2464 },    -- Studded Belt
+						{"select", "itemID", 2467 },    -- Studded Boots
+						{"select", "itemID", 2468 },    -- Studded Bracers
+						{"select", "itemID", 2463 },    -- Studded Doublet
+						{"select", "itemID", 2469 },    -- Studded Gloves
+						{"select", "itemID", 3890 },    -- Studded Hat
+						{"select", "itemID", 2465 },    -- Studded Pants
+					},
+				}),
 				n(5049, {	-- Lyesa Steelbrow <Tabard Vendor>
 					["coord"] = { 36.4, 84.4, IRONFORGE },
 					["sym"] = { {"sub", "common_vendor", 5193} }, -- Rebecca Laughlin <Tabard Designer>
@@ -1843,6 +1896,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5108, {	-- Raena Flinthammer <Light Armor Merchant>
 					["coord"] = { 32.6, 58.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+						{"select", "itemID", 1843 },    -- Tanned Leather Belt
+						{"select", "itemID", 843 },    -- Tanned Leather Boots
+						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
+						{"select", "itemID", 844 },    -- Tanned Leather Gloves
+						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
+						{"select", "itemID", 845 },    -- Tanned Leather Pants
+					},
 					["groups"] = {
 						i(16059),	-- Common Brown Shirt
 						i(3428),	-- Common Gray Shirt

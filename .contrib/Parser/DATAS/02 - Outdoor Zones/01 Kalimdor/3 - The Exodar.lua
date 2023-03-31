@@ -415,6 +415,30 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(45580),	-- Exodar Tabard
 					},
 				}),
+				n(16747, {	-- Mahri  
+					["coord"] = { 70.6, 92.2, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 236 },    -- Cured Leather Armor
+						{"select", "itemID", 1849 },    -- Cured Leather Belt
+						{"select", "itemID", 238 },    -- Cured Leather Boots
+						{"select", "itemID", 1850 },    -- Cured Leather Bracers
+						{"select", "itemID", 239 },    -- Cured Leather Gloves
+						{"select", "itemID", 237 },    -- Cured Leather Pants
+						{"select", "itemID", 1839 },    -- Rough Leather Belt
+						{"select", "itemID", 796 },    -- Rough Leather Boots
+						{"select", "itemID", 1840 },    -- Rough Leather Bracers
+						{"select", "itemID", 797 },    -- Rough Leather Gloves
+						{"select", "itemID", 798 },    -- Rough Leather Pants
+						{"select", "itemID", 799 },    -- Rough Leather Vest
+						{"select", "itemID", 1843 },    -- Tanned Leather Belt
+						{"select", "itemID", 843 },    -- Tanned Leather Boots
+						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
+						{"select", "itemID", 844 },    -- Tanned Leather Gloves
+						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
+						{"select", "itemID", 845 },    -- Tanned Leather Pants
+					},
+				}),
 				n(16735, {	-- Muhaa 
 					["coord"] = { 45.8, 89.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,

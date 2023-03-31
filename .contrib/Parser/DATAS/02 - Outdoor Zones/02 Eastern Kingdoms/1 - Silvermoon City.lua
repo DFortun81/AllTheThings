@@ -643,6 +643,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				n(16691, {	-- Noraelath  
+					["coord"] = { 55.6, 62.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2371 },    -- Battered Leather Belt
+						{"select", "itemID", 2373 },    -- Battered Leather Boots
+						{"select", "itemID", 2374 },    -- Battered Leather Bracers
+						{"select", "itemID", 2375 },    -- Battered Leather Gloves
+						{"select", "itemID", 2370 },    -- Battered Leather Harness
+						{"select", "itemID", 2372 },    -- Battered Leather Pants
+						{"select", "itemID", 236 },    -- Cured Leather Armor
+						{"select", "itemID", 1849 },    -- Cured Leather Belt
+						{"select", "itemID", 238 },    -- Cured Leather Boots
+						{"select", "itemID", 1850 },    -- Cured Leather Bracers
+						{"select", "itemID", 239 },    -- Cured Leather Gloves
+						{"select", "itemID", 237 },    -- Cured Leather Pants
+						{"select", "itemID", 1843 },    -- Tanned Leather Belt
+						{"select", "itemID", 843 },    -- Tanned Leather Boots
+						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
+						{"select", "itemID", 844 },    -- Tanned Leather Gloves
+						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
+						{"select", "itemID", 845 },    -- Tanned Leather Pants
+					},
+				}),
 				n(16677, {	-- Quelis <Cooking Supplies>
 					["coord"] = { 69.6, 71.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,

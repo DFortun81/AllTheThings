@@ -215,14 +215,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(2616),	-- Shimmering Silk Robes
 				i(2618),	-- Silver Dress Robes
 				---
-				i(2435),	-- Embroidered Armor
-				i(3587),	-- Embroidered Belt
-				i(2438),	-- Embroidered Boots
-				i(3588),	-- Embroidered Bracers
-				i(2440),	-- Embroidered Gloves
-				i(3892),	-- Embroidered Hat
-				i(2437),	-- Embroidered Pants
-				---
 				i(837),	-- Heavy Weave Armor
 				i(3589),	-- Heavy Weave Belt
 				i(3590),	-- Heavy Weave Bracers
@@ -236,13 +228,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(794),	-- Knitted Pants
 				i(792),	-- Knitted Sandals
 				i(795),	-- Knitted Tunic
-				---
-				i(2160),	-- Padded Armor
-				i(3591),	-- Padded Belt
-				i(2156),	-- Padded Boots
-				i(3592),	-- Padded Bracers
-				i(2158),	-- Padded Gloves
-				i(2159),	-- Padded Pants
 				---
 				i(3593),	-- Russet Belt
 				i(2432),	-- Russet Boots
@@ -279,74 +264,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(2369),	-- Woven Gloves
 				i(2366),	-- Woven Pants
 				i(2364),	-- Woven Vest
-				---
-			}),
-			filter(LEATHER, {	-- Common Vendor Items
-				---
-				i(2371),	-- Battered Leather Belt
-				i(2373),	-- Battered Leather Boots
-				i(2374),	-- Battered Leather Bracers
-				i(2375),	-- Battered Leather Gloves
-				i(2370),	-- Battered Leather Harness
-				i(2372),	-- Battered Leather Pants
-				---
-				i(2122),	-- Cracked Leather Belt
-				i(2123),	-- Cracked Leather Boots
-				i(2124),	-- Cracked Leather Bracers
-				i(2125),	-- Cracked Leather Gloves
-				i(2126),	-- Cracked Leather Pants
-				i(2127),	-- Cracked Leather Vest
-				---
-				i(2142),	-- Cuirboulli Belt
-				i(2143),	-- Cuirboulli Boots
-				i(2144),	-- Cuirboulli Bracers
-				i(2145),	-- Cuirboulli Gloves
-				i(2146),	-- Cuirboulli Pants
-				i(2141),	-- Cuirboulli Vest
-				---
-				i(236),		-- Cured Leather Armor
-				i(1849),	-- Cured Leather Belt
-				i(238),		-- Cured Leather Boots
-				i(1850),	-- Cured Leather Bracers
-				i(239),		-- Cured Leather Gloves
-				i(237),		-- Cured Leather Pants
-				---
-				i(1835),	-- Dirty Leather Belt
-				i(210),		-- Dirty Leather Boots
-				i(1836),	-- Dirty Leather Bracers
-				i(714),		-- Dirty Leather Gloves
-				i(209),		-- Dirty Leather Pants
-				i(85),		-- Dirty Leather Vest
-				---
-				i(2471),	-- Reinforced Leather Belt
-				i(2473),	-- Reinforced Leather Boots
-				i(2474),	-- Reinforced Leather Bracers
-				i(3893),	-- Reinforced Leather Cap
-				i(2475),	-- Reinforced Leather Gloves
-				i(2472),	-- Reinforced Leather Pants
-				i(2470),	-- Reinforced Leather Vest
-				---
-				i(1839),	-- Rough Leather Belt
-				i(796),		-- Rough Leather Boots
-				i(1840),	-- Rough Leather Bracers
-				i(797),		-- Rough Leather Gloves
-				i(798),		-- Rough Leather Pants
-				i(799),		-- Rough Leather Vest
-				---
-				i(2464),	-- Studded Belt
-				i(2467),	-- Studded Boots
-				i(2468),	-- Studded Bracers
-				i(2463),	-- Studded Doublet
-				i(2469),	-- Studded Gloves
-				i(3890),	-- Studded Hat
-				i(2465),	-- Studded Pants
-				---
-				i(1843),	-- Tanned Leather Belt
-				i(843),		-- Tanned Leather Boots
-				i(1844),	-- Tanned Leather Bracers
-				i(844),		-- Tanned Leather Gloves
-				i(846),		-- Tanned Leather Jerkin
-				i(845),		-- Tanned Leather Pants
 				---
 			}),
 			filter(MAIL, {	-- Common Vendor Items

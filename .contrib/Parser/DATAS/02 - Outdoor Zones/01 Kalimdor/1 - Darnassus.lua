@@ -1007,6 +1007,58 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 845 },    -- Tanned Leather Pants
 					},
 				}),
+				n(4236, {	-- Cyridan       
+					["coord"] = { 52.6, 77.0, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2142 },    -- Cuirboulli Belt
+						{"select", "itemID", 2143 },    -- Cuirboulli Boots
+						{"select", "itemID", 2144 },    -- Cuirboulli Bracers
+						{"select", "itemID", 2145 },    -- Cuirboulli Gloves
+						{"select", "itemID", 2146 },    -- Cuirboulli Pants
+						{"select", "itemID", 2141 },    -- Cuirboulli Vest
+						{"select", "itemID", 236 },    -- Cured Leather Armor
+						{"select", "itemID", 1849 },    -- Cured Leather Belt
+						{"select", "itemID", 238 },    -- Cured Leather Boots
+						{"select", "itemID", 1850 },    -- Cured Leather Bracers
+						{"select", "itemID", 239 },    -- Cured Leather Gloves
+						{"select", "itemID", 237 },    -- Cured Leather Pants
+						{"select", "itemID", 2471 },    -- Reinforced Leather Belt
+						{"select", "itemID", 2473 },    -- Reinforced Leather Boots
+						{"select", "itemID", 2474 },    -- Reinforced Leather Bracers
+						{"select", "itemID", 3893 },    -- Reinforced Leather Cap
+						{"select", "itemID", 2475 },    -- Reinforced Leather Gloves
+						{"select", "itemID", 2472 },    -- Reinforced Leather Pants
+						{"select", "itemID", 2470 },    -- Reinforced Leather Vest
+						{"select", "itemID", 1839 },    -- Rough Leather Belt
+						{"select", "itemID", 796 },    -- Rough Leather Boots
+						{"select", "itemID", 1840 },    -- Rough Leather Bracers
+						{"select", "itemID", 797 },    -- Rough Leather Gloves
+						{"select", "itemID", 798 },    -- Rough Leather Pants
+						{"select", "itemID", 799 },    -- Rough Leather Vest
+						{"select", "itemID", 2464 },    -- Studded Belt
+						{"select", "itemID", 2467 },    -- Studded Boots
+						{"select", "itemID", 2468 },    -- Studded Bracers
+						{"select", "itemID", 2463 },    -- Studded Doublet
+						{"select", "itemID", 2469 },    -- Studded Gloves
+						{"select", "itemID", 3890 },    -- Studded Hat
+						{"select", "itemID", 2465 },    -- Studded Pants
+						{"select", "itemID", 1843 },    -- Tanned Leather Belt
+						{"select", "itemID", 843 },    -- Tanned Leather Boots
+						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
+						{"select", "itemID", 844 },    -- Tanned Leather Gloves
+						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
+						{"select", "itemID", 845 },    -- Tanned Leather Pants
+					},
+					["groups"] = {
+						i(2122),	-- Cracked Leather Belt
+						i(2123),	-- Cracked Leather Boots
+						i(2124),	-- Cracked Leather Bracers
+						i(2125),	-- Cracked Leather Gloves
+						i(2126),	-- Cracked Leather Pants
+						i(2127),	-- Cracked Leather Vest
+					},
+				}),
 				n(4168, {	-- Elynna <Tailoring Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 60.4, 36.8, DARNASSUS },
@@ -1459,6 +1511,52 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.7, 72.5, DARNASSUS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2435 },    -- Embroidered Armor
+						{"select", "itemID", 3587 },    -- Embroidered Belt
+						{"select", "itemID", 2438 },    -- Embroidered Boots
+						{"select", "itemID", 3588 },    -- Embroidered Bracers
+						{"select", "itemID", 2440 },    -- Embroidered Gloves
+						{"select", "itemID", 3892 },    -- Embroidered Hat
+						{"select", "itemID", 2437 },    -- Embroidered Pants
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+						{"select", "itemID", 3602 },    -- Knitted Belt
+						{"select", "itemID", 3603 },    -- Knitted Bracers
+						{"select", "itemID", 793 },    -- Knitted Gloves
+						{"select", "itemID", 794 },    -- Knitted Pants
+						{"select", "itemID", 792 },    -- Knitted Sandals
+						{"select", "itemID", 795 },    -- Knitted Tunic
+						{"select", "itemID", 2160 },    -- Padded Armor
+						{"select", "itemID", 3591 },    -- Padded Belt
+						{"select", "itemID", 2156 },    -- Padded Boots
+						{"select", "itemID", 3592 },    -- Padded Bracers
+						{"select", "itemID", 2158 },    -- Padded Gloves
+						{"select", "itemID", 2159 },    -- Padded Pants
+						{"select", "itemID", 3593 },    -- Russet Belt
+						{"select", "itemID", 2432 },    -- Russet Boots
+						{"select", "itemID", 3594 },    -- Russet Bracers
+						{"select", "itemID", 2434 },    -- Russet Gloves
+						{"select", "itemID", 3889 },    -- Russet Hat
+						{"select", "itemID", 2431 },    -- Russet Pants
+						{"select", "itemID", 2429 },    -- Russet Vest
+						{"select", "itemID", 3597 },    -- Thick Cloth Belt
+						{"select", "itemID", 3598 },    -- Thick Cloth Bracers
+						{"select", "itemID", 203 },    -- Thick Cloth Gloves
+						{"select", "itemID", 201 },    -- Thick Cloth Pants
+						{"select", "itemID", 202 },    -- Thick Cloth Shoes
+						{"select", "itemID", 200 },    -- Thick Cloth Vest
+						{"select", "itemID", 2121 },    -- Thin Cloth Armor
+						{"select", "itemID", 3599 },    -- Thin Cloth Belt
+						{"select", "itemID", 3600 },    -- Thin Cloth Bracers
+						{"select", "itemID", 2119 },    -- Thin Cloth Gloves
+						{"select", "itemID", 2120 },    -- Thin Cloth Pants
+						{"select", "itemID", 2117 },    -- Thin Cloth Shoes
+					},
 					["groups"] = {
 						i(12256, {	-- Cindercloth Leggings
 							["isLimited"] = true,
