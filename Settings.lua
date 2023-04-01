@@ -1459,6 +1459,38 @@ scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
 scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
 scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 4);
 
+-- Creates a Checkbox frame on the 'child', used to designate tracking the specified 'trackingOption', based on tracking of 'parentTrackingOption' if specified
+-- localeKey: The prefix of the locale lookup value (i.e. HEIRLOOMS_UPGRADES)
+-- thing: The settings lookup for this tracking option (i.e. 'HeirloomUpgrades')
+-- parentThing: The settings lookup which must be enabled for this tracking checkbox to be enabled (i.e. 'Heirlooms')
+child.CreateTrackingCheckbox = function(frame, localeKey, thing, parentThing)
+	local name = L[localeKey.."_CHECKBOX"];
+	local tooltip = L[localeKey.."_CHECKBOX_TOOLTIP"];
+	local trackingOption = "Thing:"..thing;
+	local parentTrackingOption;
+	if parentThing then
+		parentTrackingOption = "Thing:"..parentThing;
+	end
+	local cb = frame:CreateCheckBox(name,
+		function(self)
+			self:SetChecked(settings:Get(trackingOption));
+			if settings:Get("DebugMode") or (parentTrackingOption and not settings:Get(parentTrackingOption)) then
+				self:Disable();
+				self:SetAlpha(0.2);
+			else
+				self:Enable();
+				self:SetAlpha(1);
+			end
+		end,
+		function(self)
+			settings:Set(trackingOption, self:GetChecked());
+			settings:UpdateMode(1);
+		end
+	);
+	cb:SetATTTooltip(tooltip);
+	return cb;
+end
+
 local ModeLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ModeLabel:SetPoint("TOPLEFT", child, "TOPLEFT", 10, -8);
 ModeLabel:SetJustifyH("LEFT");
@@ -1612,40 +1644,10 @@ HeirloomsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\
 HeirloomsAccountWideCheckBox:SetPoint("TOP", MainOnlyModeCheckBox, "BOTTOM", 0, 4);
 HeirloomsAccountWideCheckBox:SetPoint("LEFT", TransmogAccountWideCheckBox, "LEFT", 0, 0);
 
-local HeirloomsCheckBox = child:CreateCheckBox(L["HEIRLOOMS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Heirlooms"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Heirlooms", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-HeirloomsCheckBox:SetATTTooltip(L["HEIRLOOMS_CHECKBOX_TOOLTIP"]);
+local HeirloomsCheckBox = child:CreateTrackingCheckbox("HEIRLOOMS", "Heirlooms");
 HeirloomsCheckBox:SetPoint("LEFT", HeirloomsAccountWideCheckBox, "RIGHT", -4, 0);
 
-local HeirloomUpgradesCheckBox = child:CreateCheckBox(L["HEIRLOOMS_UPGRADES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:HeirloomUpgrades"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Heirlooms") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:HeirloomUpgrades", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-HeirloomUpgradesCheckBox:SetATTTooltip(L["HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP"]);
+local HeirloomUpgradesCheckBox = child:CreateTrackingCheckbox("HEIRLOOMS_UPGRADES", "HeirloomUpgrades", "Heirlooms");
 HeirloomUpgradesCheckBox:SetPoint("TOP", HeirloomsCheckBox, "TOP", 0, 0);
 HeirloomUpgradesCheckBox:SetPoint("LEFT", HeirloomsCheckBox.Text, "RIGHT", 4, 0);
 
@@ -1658,22 +1660,7 @@ end);
 IllusionsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
 IllusionsAccountWideCheckBox:SetPoint("TOPLEFT", HeirloomsAccountWideCheckBox, "BOTTOMLEFT", 0, 4);
 
-local IllusionsCheckBox = child:CreateCheckBox(L["ILLUSIONS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Illusions"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Illusions", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-IllusionsCheckBox:SetATTTooltip(L["ILLUSIONS_CHECKBOX_TOOLTIP"]);
+local IllusionsCheckBox = child:CreateTrackingCheckbox("ILLUSIONS", "Illusions");
 IllusionsCheckBox:SetPoint("LEFT", IllusionsAccountWideCheckBox, "RIGHT", -4, 0);
 
 local MountsAccountWideCheckBox = child:CreateCheckBox("",
@@ -1685,22 +1672,7 @@ end);
 MountsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
 MountsAccountWideCheckBox:SetPoint("TOPLEFT", IllusionsAccountWideCheckBox, "BOTTOMLEFT", 0, 4);
 
-local MountsCheckBox = child:CreateCheckBox(L["MOUNTS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Mounts"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Mounts", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-MountsCheckBox:SetATTTooltip(L["MOUNTS_CHECKBOX_TOOLTIP"]);
+local MountsCheckBox = child:CreateTrackingCheckbox("MOUNTS", "Mounts");
 MountsCheckBox:SetPoint("LEFT", MountsAccountWideCheckBox, "RIGHT", -4, 0);
 
 local BattlePetsAccountWideCheckBox = child:CreateCheckBox("",
@@ -1712,22 +1684,7 @@ end);
 BattlePetsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
 BattlePetsAccountWideCheckBox:SetPoint("TOPLEFT", MountsAccountWideCheckBox, "BOTTOMLEFT", 0, 4);
 
-local BattlePetsCheckBox = child:CreateCheckBox(L["BATTLE_PETS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:BattlePets"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:BattlePets", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-BattlePetsCheckBox:SetATTTooltip(L["BATTLE_PETS_CHECKBOX_TOOLTIP"]);
+local BattlePetsCheckBox = child:CreateTrackingCheckbox("BATTLE_PETS", "BattlePets");
 BattlePetsCheckBox:SetPoint("LEFT", BattlePetsAccountWideCheckBox, "RIGHT", -4, 0);
 
 local ToysAccountWideCheckBox = child:CreateCheckBox("",
@@ -1739,22 +1696,7 @@ end);
 ToysAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
 ToysAccountWideCheckBox:SetPoint("TOPLEFT", BattlePetsAccountWideCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ToysCheckBox = child:CreateCheckBox(L["TOYS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Toys"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Toys", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-ToysCheckBox:SetATTTooltip(L["TOYS_CHECKBOX_TOOLTIP"]);
+local ToysCheckBox = child:CreateTrackingCheckbox("TOYS", "Toys");
 ToysCheckBox:SetPoint("LEFT", ToysAccountWideCheckBox, "RIGHT", -4, 0);
 
 local GeneralThingsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
@@ -1791,40 +1733,10 @@ AchievementsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThin
 AchievementsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"]);
 AchievementsAccountWideCheckBox:SetPoint("TOPLEFT", GeneralThingsLabel, "BOTTOMLEFT", -2, 0);
 
-local AchievementsCheckBox = child:CreateCheckBox(L["ACHIEVEMENTS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Achievements"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Achievements", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-AchievementsCheckBox:SetATTTooltip(L["ACHIEVEMENTS_CHECKBOX_TOOLTIP"]);
+local AchievementsCheckBox = child:CreateTrackingCheckbox("ACHIEVEMENTS", "Achievements");
 AchievementsCheckBox:SetPoint("LEFT", AchievementsAccountWideCheckBox, "RIGHT", -4, 0);
 
-local FlightPathsCheckBox = child:CreateCheckBox(L["FLIGHT_PATHS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:FlightPaths"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:FlightPaths", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-FlightPathsCheckBox:SetATTTooltip(L["FLIGHT_PATHS_CHECKBOX_TOOLTIP"]);
+local FlightPathsCheckBox = child:CreateTrackingCheckbox("FLIGHT_PATHS", "FlightPaths");
 FlightPathsCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local FlightPathsAccountWideCheckBox = child:CreateCheckBox("",
@@ -1846,22 +1758,7 @@ FlightPathsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThing
 FlightPathsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP"]);
 FlightPathsAccountWideCheckBox:SetPoint("RIGHT", FlightPathsCheckBox, "LEFT", 4, 0);
 
-local FollowersCheckBox = child:CreateCheckBox(L["FOLLOWERS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Followers"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Followers", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-FollowersCheckBox:SetATTTooltip(L["FOLLOWERS_CHECKBOX_TOOLTIP"]);
+local FollowersCheckBox = child:CreateTrackingCheckbox("FOLLOWERS", "Followers");
 FollowersCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local FollowersAccountWideCheckBox = child:CreateCheckBox("",
@@ -1883,40 +1780,10 @@ FollowersAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\
 FollowersAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_FOLLOWERS_TOOLTIP"]);
 FollowersAccountWideCheckBox:SetPoint("RIGHT", FollowersCheckBox, "LEFT", 4, 0);
 
-local QuestsCheckBox = child:CreateCheckBox(L["QUESTS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Quests"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Quests", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-QuestsCheckBox:SetATTTooltip(L["QUESTS_CHECKBOX_TOOLTIP"]);
+local QuestsCheckBox = child:CreateTrackingCheckbox("QUESTS", "Quests");
 QuestsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
 
-local QuestsLockedCheckBox = child:CreateCheckBox(L["QUESTS_LOCKED_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:QuestsLocked"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:QuestsLocked", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-QuestsLockedCheckBox:SetATTTooltip(L["QUESTS_LOCKED_CHECKBOX_TOOLTIP"]);
+local QuestsLockedCheckBox = child:CreateTrackingCheckbox("QUESTS_LOCKED", "QuestsLocked");
 QuestsLockedCheckBox:SetPoint("TOP", QuestsCheckBox, "TOP", 0, 0);
 QuestsLockedCheckBox:SetPoint("LEFT", QuestsCheckBox.Text, "RIGHT", 4, 0);
 
@@ -1940,22 +1807,7 @@ QuestsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\as
 QuestsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_QUESTS_TOOLTIP"]);
 QuestsAccountWideCheckBox:SetPoint("RIGHT", QuestsCheckBox, "LEFT", 4, 0);
 
-local RecipesCheckBox = child:CreateCheckBox(L["RECIPES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Recipes"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Recipes", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-RecipesCheckBox:SetATTTooltip(L["RECIPES_CHECKBOX_TOOLTIP"]);
+local RecipesCheckBox = child:CreateTrackingCheckbox("RECIPES", "Recipes");
 RecipesCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local RecipesAccountWideCheckBox = child:CreateCheckBox("",
@@ -1977,22 +1829,7 @@ RecipesAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\a
 RecipesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_RECIPES_TOOLTIP"]);
 RecipesAccountWideCheckBox:SetPoint("RIGHT", RecipesCheckBox, "LEFT", 4, 0);
 
-local ReputationsCheckBox = child:CreateCheckBox(L["REPUTATIONS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Reputations"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Reputations", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-ReputationsCheckBox:SetATTTooltip(L["REPUTATIONS_CHECKBOX_TOOLTIP"]);
+local ReputationsCheckBox = child:CreateTrackingCheckbox("REPUTATIONS", "Reputations");
 ReputationsCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ReputationsAccountWideCheckBox = child:CreateCheckBox("",
@@ -2014,22 +1851,7 @@ ReputationsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThing
 ReputationsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_REPUTATIONS_TOOLTIP"]);
 ReputationsAccountWideCheckBox:SetPoint("RIGHT", ReputationsCheckBox, "LEFT", 4, 0);
 
-local TitlesCheckBox = child:CreateCheckBox(L["TITLES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Titles"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Titles", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-TitlesCheckBox:SetATTTooltip(L["TITLES_CHECKBOX_TOOLTIP"]);
+local TitlesCheckBox = child:CreateTrackingCheckbox("TITLES", "Titles");
 TitlesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local TitlesAccountWideCheckBox = child:CreateCheckBox("",
@@ -2085,40 +1907,10 @@ MusicRollsAndSelfieFiltersAccountWideCheckBox:SetCheckedTexture("Interface\\AddO
 MusicRollsAndSelfieFiltersAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP"]);
 MusicRollsAndSelfieFiltersAccountWideCheckBox:SetPoint("TOPLEFT", ExpansionThingsLabel, "BOTTOMLEFT", -2, 0);
 
-local MusicRollsAndSelfieFiltersCheckBox = child:CreateCheckBox(L["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:MusicRollsAndSelfieFilters"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:MusicRollsAndSelfieFilters", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-MusicRollsAndSelfieFiltersCheckBox:SetATTTooltip(L["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP"]);
+local MusicRollsAndSelfieFiltersCheckBox = child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters");
 MusicRollsAndSelfieFiltersCheckBox:SetPoint("LEFT", MusicRollsAndSelfieFiltersAccountWideCheckBox, "RIGHT", -4, 0);
 
-local AzeriteEssencesCheckBox = child:CreateCheckBox(L["AZERITE_ESSENCES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:AzeriteEssences"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:AzeriteEssences", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-AzeriteEssencesCheckBox:SetATTTooltip(L["AZERITE_ESSENCES_CHECKBOX_TOOLTIP"]);
+local AzeriteEssencesCheckBox = child:CreateTrackingCheckbox("AZERITE_ESSENCES", "AzeriteEssences");
 AzeriteEssencesCheckBox:SetPoint("TOPLEFT", MusicRollsAndSelfieFiltersCheckBox, "BOTTOMLEFT", 0, 4);
 
 local AzeriteEssencesAccountWideCheckBox = child:CreateCheckBox("",
@@ -2140,22 +1932,7 @@ AzeriteEssencesAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheT
 AzeriteEssencesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP"]);
 AzeriteEssencesAccountWideCheckBox:SetPoint("RIGHT", AzeriteEssencesCheckBox, "LEFT", 4, 0);
 
-local SoulbindConduitsCheckBox = child:CreateCheckBox(L["SOULBINDCONDUITS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Conduits"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Conduits", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-SoulbindConduitsCheckBox:SetATTTooltip(L["SOULBINDCONDUITS_CHECKBOX_TOOLTIP"]);
+local SoulbindConduitsCheckBox = child:CreateTrackingCheckbox("SOULBINDCONDUITS", "Conduits");
 SoulbindConduitsCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local SoulbindConduitsAccountWideCheckBox = child:CreateCheckBox("",
@@ -2177,22 +1954,7 @@ SoulbindConduitsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllThe
 SoulbindConduitsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP"]);
 SoulbindConduitsAccountWideCheckBox:SetPoint("RIGHT", SoulbindConduitsCheckBox, "LEFT", 4, 0);
 
-local RuneforgeLegendariesCheckBox = child:CreateCheckBox(L["RUNEFORGELEGENDARIES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:RuneforgeLegendaries"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:RuneforgeLegendaries", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-RuneforgeLegendariesCheckBox:SetATTTooltip(L["RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP"]);
+local RuneforgeLegendariesCheckBox = child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries");
 RuneforgeLegendariesCheckBox:SetPoint("TOPLEFT", SoulbindConduitsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local RuneforgeLegendariesAccountWideCheckBox = child:CreateCheckBox("",
