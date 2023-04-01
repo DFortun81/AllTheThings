@@ -3288,7 +3288,6 @@ root(ROOTS.Unsorted, {
 				i(204268),	-- Gilnean Trainee's Cord
 				i(204269),	-- Gilnean Trainee's Wristwraps
 				--
-				--
 				i(204192),	-- Ascendancy
 				i(203680),	-- Totem Toss
 			}),
@@ -3433,17 +3432,6 @@ root(ROOTS.Unsorted, {
 			n(PROFESSIONS, {
 				-- JC
 				i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
-				--
-				i(204224),	-- Speck of Arcane Awareness
-				i(204225),	-- Perfect Windfeather
-				i(204226),	-- Blazehoof Ashes
-				i(204227),	-- Everflowing Antifreeze
-				i(204228),	-- Undigested Hochenblume Petal
-				i(204229),	-- Glimmering Rune of Arcantrix
-				i(204230),	-- Dense Seaforged Javelin
-				i(204231),	-- Kingly Sheepskin Pelt
-				i(204232),	-- Slyvern Alpha Claw
-				i(204233),	-- Impenetrable Elemental Core
 			}),
 			filter(TOYS, {
 				i(204170),	-- Clan Banner (TOY!)
@@ -3486,21 +3474,9 @@ root(ROOTS.Unsorted, {
 				q(73078),
 				q(73079),
 				q(73080),
-				q(73127),
-				q(73129),
-				q(73136),
-				q(73138),
 				q(73143),
 				q(73144),
 				q(73145),
-				q(73153),
-				q(73161),
-				q(73163),
-				q(73164),
-				q(73165),
-				q(73166),
-				q(73167),
-				q(73168),
 				q(73184),
 				q(73185),
 				q(73186),
@@ -3563,19 +3539,6 @@ root(ROOTS.Unsorted, {
 				q(74875),
 				q(74890),
 				q(74891),
-				q(74926),
-				q(74927),
-				q(74928),
-				q(74929),
-				q(74930),
-				q(74931),
-				q(74932),
-				q(74933),
-				q(74934),
-				q(74935),
-				q(74936),
-				q(74937),
-				q(74938),
 				q(74955),
 				q(74970),
 				q(74974),
