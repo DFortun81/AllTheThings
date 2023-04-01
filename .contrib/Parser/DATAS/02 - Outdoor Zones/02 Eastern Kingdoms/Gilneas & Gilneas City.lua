@@ -176,7 +176,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								14289,	-- Safety in Numbers [Priest]
 								14290,	-- Safety in Numbers [Hunter]
 								14291,	-- Safety in Numbers [Druid]
+								75189,	-- Safety in Numbers [Monk]
 							},
+						}),
+						q(75190, {	-- Ready and Abel
+							["provider"] = { "n", 34936 },	-- Gwen Armstead
+							["sourceQuest"] = 14099,	-- Royal Orders
+							["coord"] = { 59.57, 26.77, 202 },
+							["races"] = { WORGEN },
+							["classes"] = { MONK },
+							["timeline"] = { ADDED_DF_0_7 },
 						}),
 						q(14099, {	-- Royal Orders
 							["provider"] = { "n", 34913 },	-- Prince Liam Greymane
@@ -262,6 +271,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuests"] = {
 								14283,	-- Moonfire
 								14280,	-- The Winds Know Your Name... Apparently
+							},
+						}),
+						q(75189, {	-- Safety in Numbers (Monk)
+							["provider"] = { "n", 203258 },	-- Todd Abel
+							["coord"] = { 70.40, 65.57, 202 },
+							["races"] = { WORGEN },
+							["classes"] = { MONK },
+							["timeline"] = { ADDED_DF_0_7 },
+							["sourceQuests"] = {
+								75190,	-- Ready and Abel
 							},
 						}),
 						q(14094, {	-- Salvage the Supplies

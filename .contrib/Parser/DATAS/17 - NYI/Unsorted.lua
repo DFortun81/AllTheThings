@@ -3089,7 +3089,6 @@ root(ROOTS.Unsorted, {
 				q(74672),
 				q(74677),
 				q(74894),
-				q(75258),
 				q(75265),
 				q(75706),
 				q(75707),
@@ -3323,7 +3322,6 @@ root(ROOTS.Unsorted, {
 				i(202364),	-- Everburning Ember
 				i(202394),	-- Fresh Plains Meat
 				i(202396),	-- Plains Timber
-				i(202403),	-- Runic Wrench
 				i(202405),	-- Bloody Axe
 				i(202414),	-- Tauren Necklace
 				i(202415),	-- Unique Headdress
@@ -3357,7 +3355,6 @@ root(ROOTS.Unsorted, {
 				i(203218),	-- Iskaara Supply Pouch
 				i(203221),	-- Maruuk Supply Sack
 				i(203223),	-- Valdrakken Supply Coffer
-				i(203381),	-- Sealed Letter to Neltharion
 			}),
 			filter(MISC, {
 				i(204008),	-- Prodigious Sand Stone
@@ -3504,7 +3501,6 @@ root(ROOTS.Unsorted, {
 				q(74433),
 				q(74434),
 				q(74435),
-				q(74472),
 				q(74478),
 				q(74479),
 				q(74480),
@@ -3514,7 +3510,6 @@ root(ROOTS.Unsorted, {
 				q(74495),
 				q(74500),
 				q(74527),
-				q(74576),
 				q(74711),
 				q(74712),
 				q(74713),
@@ -3534,7 +3529,6 @@ root(ROOTS.Unsorted, {
 				q(74782),
 				q(74788),
 				q(74789),
-				q(74795),
 				q(74796),
 				q(74875),
 				q(74890),
@@ -3543,7 +3537,6 @@ root(ROOTS.Unsorted, {
 				q(74970),
 				q(74974),
 				q(74978),
-				q(74983),
 				q(74994),
 				q(74996),
 				q(74997),
@@ -3553,7 +3546,6 @@ root(ROOTS.Unsorted, {
 				q(75001),
 				q(75002),
 				q(75003),
-				q(75026),
 				-- 10.0.7.47983
 				q(75034),
 				q(75046),
@@ -3564,8 +3556,6 @@ root(ROOTS.Unsorted, {
 				q(75130),
 				-- 10.0.7.48076
 				q(75185),
-				q(75189),
-				q(75190),
 				q(75202),
 				q(75224),
 				q(75236),
@@ -3580,8 +3570,6 @@ root(ROOTS.Unsorted, {
 				q(75253),
 				q(75254),
 				q(75255),
-				q(75259),
-				q(75260),
 				-- 10.0.7.48220
 				q(75263),
 				q(75392),
