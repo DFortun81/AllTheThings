@@ -130,7 +130,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 			}),
 			header(HEADERS.Item, 202670, {	-- Sealed Knowledge Scroll
 				q(73216),
-				q(73217),	
+				q(73217),
 				q(73218),
 				q(73219),
 				-- q(73220),	-- guessed

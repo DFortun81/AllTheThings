@@ -1054,6 +1054,10 @@ namespace ATT
                     LogDebug($"INFO: Added _quests to Criteria {achID}:{criteriaID} with sourceQuest: {questID}");
                 }
                 data["_quests"] = new List<long> { questID };
+#if RETAIL
+                // can remove 'sourceQuests' from the criteria in Retail since it's going to be sourced under the required quest
+                data.Remove("sourceQuests");
+#endif
             }
 
             // TODO: can do this later when adding some way to verify that the criteria WAS actually moved under the NPC
@@ -2542,8 +2546,8 @@ namespace ATT
             // If neither has a name, then they are equal.
             return 0;
         }
-        #endregion
-        #region Field Conversion
+#endregion
+#region Field Conversion
         /// <summary>
         /// Convert the field name to a standardized field name.
         /// This helps prevent inconsistent naming conventions from breaking things.
@@ -3026,8 +3030,8 @@ namespace ATT
                     return field;
             }
         }
-        #endregion
-        #region JSON Conversion
+#endregion
+#region JSON Conversion
         /// <summary>
         /// Convert the JSON string to a Dictionary with string,object pairs.
         /// </summary>
@@ -3057,8 +3061,8 @@ namespace ATT
         {
             return MiniJSON.Json.Deserialize(jsonString);
         }
-        #endregion
-        #region Lua Conversion
+#endregion
+#region Lua Conversion
         /// <summary>
         /// Merge the contents of the lua table into the database.
         /// If the keys are whitelisted, then the data will be added.
@@ -3616,9 +3620,9 @@ namespace ATT
             }
             return null;
         }
-        #endregion
+#endregion
 
-        #region Export (Clean)
+#region Export (Clean)
         /// <summary>
         /// Export the data to the builder in a clean, longhand format.
         /// Standardized formatting without newlines applies here.
@@ -3782,7 +3786,7 @@ namespace ATT
             ExportClean(builder, list);
             return builder;
         }
-        #endregion
+#endregion
 
         /// <summary>
         /// Export the database.

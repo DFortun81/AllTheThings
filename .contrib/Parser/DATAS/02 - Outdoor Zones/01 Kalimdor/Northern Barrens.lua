@@ -50,13 +50,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						crit(2, {	-- Grol'dom Farm
 							["sourceQuests"] = {
-								13949,	-- Crossroads Caravan Pickup (verify)
 								13971,	-- The Kodo's Return
 							},
 						}),
 						crit(3, {	-- Defeating the Kolkar
 							["sourceQuests"] = {
-								13975,	-- Crossroads Caravan Delivery (verify)
 								4021,	-- Counterattack!
 							},
 						}),
@@ -75,13 +73,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						crit(6, {	-- Nozzlepot's Outpost
 							["sourceQuests"] = {
-								26769,	-- Raging River Ride (verify)
 								29094,	-- The Short Way Home
 							},
 						}),
 						crit(7, {	-- Inspiration and Hope
 							["sourceQuests"] = {
-								867,	-- Harpy Raiders (verify)
 								29111,	-- Mor'shan Caravan Delivery
 							},
 						}),
