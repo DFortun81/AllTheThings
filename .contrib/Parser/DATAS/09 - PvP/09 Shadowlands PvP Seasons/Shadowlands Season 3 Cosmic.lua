@@ -700,3 +700,28 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 		},
 	})),
 })));
+root(ROOTS.HiddenQuestTriggers, {
+	tier(SL_TIER, {
+		-- PvP Ensembles
+		q(74272),	-- Ensemble: Cosmic Aspirant's Cloth Armor
+		q(74271),	-- Ensemble: Cosmic Aspirant's Leather Armor
+		q(74270),	-- Ensemble: Cosmic Aspirant's Mail Armor
+		q(74269),	-- Ensemble: Cosmic Aspirant's Plate Armor
+		q(74268),	-- Ensemble: Cosmic Gladiator's Death Knight Armor
+		q(74267),	-- Ensemble: Cosmic Gladiator's Demon Hunter Armor
+		q(74266),	-- Ensemble: Cosmic Gladiator's Druid Armor
+		q(74265),	-- Ensemble: Cosmic Gladiator's Hunter Armor
+		q(74264),	-- Ensemble: Cosmic Gladiator's Mage Armor
+		q(74263),	-- Ensemble: Cosmic Gladiator's Monk Armor
+		q(74262),	-- Ensemble: Cosmic Gladiator's Paladin Armor
+		q(74261),	-- Ensemble: Cosmic Gladiator's Priest Armor
+		q(74260),	-- Ensemble: Cosmic Gladiator's Rogue Armor
+		q(74259),	-- Ensemble: Cosmic Gladiator's Shaman Armor
+		q(74258),	-- Ensemble: Cosmic Gladiator's Warlock Armor
+		q(74257),	-- Ensemble: Cosmic Gladiator's Warrior Armor
+
+		-- PvP Arsenals
+		q(74274),	-- Arsenal: Cosmic Aspirant's Weapons
+		q(74273),	-- Arsenal: Cosmic Gladiator's Weapons
+	}),
+});

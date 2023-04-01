@@ -479,3 +479,20 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 		},
 	})),
 })));
+root(ROOTS.HiddenQuestTriggers, {
+	tier(SL_TIER, {
+		-- PvP Ensembles
+		q(74255),	-- Ensemble: Unchained Aspirant's Cloth Armor
+		q(74253),	-- Ensemble: Unchained Aspirant's Leather Armor
+		q(74251),	-- Ensemble: Unchained Aspirant's Mail Armor
+		q(74249),	-- Ensemble: Unchained Aspirant's Plate Armor
+		q(74256),	-- Ensemble: Unchained Gladiator's Cloth Armor
+		q(74254),	-- Ensemble: Unchained Gladiator's Leather Armor
+		q(74252),	-- Ensemble: Unchained Gladiator's Mail Armor
+		q(74250),	-- Ensemble: Unchained Gladiator's Plate Armor
+
+		-- PvP Arsenals
+		q(74276),	-- Arsenal: Unchained Aspirant's Weapons
+		q(74275),	-- Arsenal: Unchained Gladiator's Weapons
+	}),
+});
