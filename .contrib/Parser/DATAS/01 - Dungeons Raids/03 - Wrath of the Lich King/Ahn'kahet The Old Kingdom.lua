@@ -196,7 +196,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				i(36589, {	-- Segmenting Broadaxe
 					["timeline"] = { "created 4.0.1", "added 10.0.7" }, -- Previously only available in WoD Salvage Crates (6.0-7.0)
 				}),
-				i(35616),	-- Spored Tendrils Spaulders
+				i(35616, {	-- Spored Tendrils Spaulders
 					["timeline"] = { "created 3.0.2", "added 7.3.5" },
 				}),
 				i(36659, {	-- Shivery Wand

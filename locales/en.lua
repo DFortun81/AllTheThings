@@ -1262,6 +1262,8 @@ app.L = {
 		[-583] = app.asset("Expansion_WOTLK"),												-- Northrend Epic Upgrade
 		[-584] = app.asset("Expansion_DF"),													-- Dragonflight Seasonal Promotions
 		[-585] = "Interface\\Icons\\DiabloAnniversary_HoradricCube",						-- Diablo IV
+		[-586] = 136101,																	-- Amazon Prime Gaming
+		
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
@@ -1803,6 +1805,7 @@ app.L = {
 		[-583] = "WotLK Classic Northrend Epic Upgrade",						-- WotLK Classic Northrend Epic Upgrade
 		[-584] = "Dragonflight Seasonal Promotions",							-- Dragonflight Seasonal Promotions
 		[-585] = "Diablo IV",													-- Diablo IV
+		[-586] = "Amazon Prime Gaming",											-- Amazon Prime Gaming
 	-- PvP Header
 		-- Special Season Tags
 		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons
