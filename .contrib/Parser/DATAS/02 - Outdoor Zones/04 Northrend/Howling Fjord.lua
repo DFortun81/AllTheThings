@@ -2275,7 +2275,7 @@ root(ROOTS.Zones, {
 							i(30775),    -- Layered Bone Shield
 							i(30781),    -- Maghari Chain Vest
 							i(30784),    -- Worn Maghari Gauntlets
-							-- These 6 items could be symlinked to 6 other vendors
+							-- These 6 items could be symlinked to 6 more vendors
 						},
 					}),
 					n(23735, {	-- Bartleby Armorfist
@@ -2288,7 +2288,7 @@ root(ROOTS.Zones, {
 							i(30775),    -- Layered Bone Shield
 							i(30781),    -- Maghari Chain Vest
 							i(30784),    -- Worn Maghari Gauntlets
-							-- These 6 items could be symlinked to 6 other vendors
+							-- These 6 items could be symlinked to 6 more vendors
 						},
 					}),
 					n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
