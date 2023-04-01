@@ -205,87 +205,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 	--]]
 	n(-123457, {	-- Common
 		n(ARMOR, {
-			filter(CLOTH, {	-- Common Vendor Items
-				---
-				i(2617),	-- Burning Robes
-				i(2615),	-- Chromatic Robe
-				i(2613),	-- Double-Stitched Robes
-				i(2612),	-- Plain Robe
-				i(2614),	-- Robe of Apprenticeship
-				i(2616),	-- Shimmering Silk Robes
-				i(2618),	-- Silver Dress Robes
-				---
-				i(837),	-- Heavy Weave Armor
-				i(3589),	-- Heavy Weave Belt
-				i(3590),	-- Heavy Weave Bracers
-				i(839),	-- Heavy Weave Gloves
-				i(838),	-- Heavy Weave Pants
-				i(840),	-- Heavy Weave Shoes
-				---
-				i(3602),	-- Knitted Belt
-				i(3603),	-- Knitted Bracers
-				i(793),	-- Knitted Gloves
-				i(794),	-- Knitted Pants
-				i(792),	-- Knitted Sandals
-				i(795),	-- Knitted Tunic
-				---
-				i(3593),	-- Russet Belt
-				i(2432),	-- Russet Boots
-				i(3594),	-- Russet Bracers
-				i(2434),	-- Russet Gloves
-				i(3889),	-- Russet Hat
-				i(2431),	-- Russet Pants
-				i(2429),	-- Russet Vest
-				---
-				i(3595),	-- Tattered Cloth Belt
-				i(195),		-- Tattered Cloth Boots
-				i(3596),	-- Tattered Cloth Bracers
-				i(711),		-- Tattered Cloth Gloves
-				i(194),		-- Tattered Cloth Pants
-				i(193),		-- Tattered Cloth Vest
-				---
-				i(3597),	-- Thick Cloth Belt
-				i(3598),	-- Thick Cloth Bracers
-				i(203),	-- Thick Cloth Gloves
-				i(201),	-- Thick Cloth Pants
-				i(202),	-- Thick Cloth Shoes
-				i(200),	-- Thick Cloth Vest
-				---
-				i(2121),	-- Thin Cloth Armor
-				i(3600),	-- Thin Cloth Bracers
-				i(3599),	-- Thin Cloth Belt
-				i(2119),	-- Thin Cloth Gloves
-				i(2120),	-- Thin Cloth Pants
-				i(2117),	-- Thin Cloth Shoes
-				---
-				i(3606),	-- Woven Belt
-				i(2367),	-- Woven Boots
-				i(3607),	-- Woven Bracers
-				i(2369),	-- Woven Gloves
-				i(2366),	-- Woven Pants
-				i(2364),	-- Woven Vest
-				---
-			}),
-			filter(MAIL, {	-- Common Vendor Items
-				---
-				i(30781),	-- Mag'hari Chain Vest
-				---
-				i(30784),	-- Worn Mag'hari Gauntlets
-				---
-			}),
-			filter(PLATE, {	-- Common Vendor Items
-				---
-				i(30777),	-- Aldor Heavy Belt
-				---
-				i(30771),	-- Heavy Draenic Bracers
-				i(30765),	-- Heavy Draenic Breastplate
-				---
-			}),
 			filter(CLOAKS, {
 				i(53048),	-- Doomsday Message	-- TODO Cataclysm
 			}),
 			filter(MISC, {
-				i(33105),	-- Budd's Guise of Zul'aman	-- something removed
 				i(43486),	-- Mohawk Mask	-- something removed
 			}),
 			filter(FINGER_F, {
@@ -295,11 +218,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(7338),	-- Mood Ring	-- sold by many vendors
 				i(7342),	-- Silver Piffeny Band	-- sold by many vendors
 				i(7337),	-- The Rock	-- sold by many vendors
-			}),
-		}),
-		n(WEAPONS, {
-			filter(SHIELDS, {
-				i(30775),	-- Layered Bone Shield	-- sold by many vendors
 			}),
 		}),
 	}),

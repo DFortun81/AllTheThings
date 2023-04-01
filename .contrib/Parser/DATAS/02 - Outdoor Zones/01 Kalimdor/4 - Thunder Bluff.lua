@@ -913,6 +913,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(8358, {	-- Hewa <Cloth Armor Merchant>
 					["coord"] = { 45.6, 56.7, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+						{"select", "itemID", 3597 },    -- Thick Cloth Belt
+						{"select", "itemID", 3598 },    -- Thick Cloth Bracers
+						{"select", "itemID", 203 },    -- Thick Cloth Gloves
+						{"select", "itemID", 201 },    -- Thick Cloth Pants
+						{"select", "itemID", 202 },    -- Thick Cloth Shoes
+						{"select", "itemID", 200 },    -- Thick Cloth Vest
+					},
 					["groups"] = {
 						i(16059),	-- Common Brown Shirt
 						i(3428),	-- Common Grey Shirt
@@ -1195,12 +1209,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 839 },    -- Heavy Weave Gloves
 						{"select", "itemID", 838 },    -- Heavy Weave Pants
 						{"select", "itemID", 840 },    -- Heavy Weave Shoes
-						{"select", "itemID", 3602 },    -- Knitted Belt
-						{"select", "itemID", 3603 },    -- Knitted Bracers
-						{"select", "itemID", 793 },    -- Knitted Gloves
-						{"select", "itemID", 794 },    -- Knitted Pants
-						{"select", "itemID", 792 },    -- Knitted Sandals
-						{"select", "itemID", 795 },    -- Knitted Tunic
 						{"select", "itemID", 2160 },    -- Padded Armor
 						{"select", "itemID", 3591 },    -- Padded Belt
 						{"select", "itemID", 2156 },    -- Padded Boots
@@ -1224,6 +1232,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 201 },    -- Thick Cloth Pants
 						{"select", "itemID", 202 },    -- Thick Cloth Shoes
 						{"select", "itemID", 200 },    -- Thick Cloth Vest
+					},
+					["groups"] = {
+						i(3602),	-- Knitted Belt
+						i(3603),	-- Knitted Bracers
+						i(793),	-- Knitted Gloves
+						i(794),	-- Knitted Pants
+						i(792),	-- Knitted Sandals
+						i(795),	-- Knitted Tunic
 					},
 				}),
 				n(3016, {	-- Tand <Basket Weaver>

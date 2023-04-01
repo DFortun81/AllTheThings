@@ -6301,6 +6301,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(16059),	-- Common Brown Shirt
 						i(3428),	-- Common Grey Shirt
 						i(16060),	-- Common White Shirt
+						i(837),	-- Heavy Weave Armor
+						i(3589),	-- Heavy Weave Belt
+						i(3590),	-- Heavy Weave Bracers
+						i(839),	-- Heavy Weave Gloves
+						i(838),	-- Heavy Weave Pants
+						i(840),	-- Heavy Weave Shoes
+						i(3602),	-- Knitted Belt
+						i(3603),	-- Knitted Bracers
+						i(793),	-- Knitted Gloves
+						i(794),	-- Knitted Pants
+						i(792),	-- Knitted Sandals
+						i(795),	-- Knitted Tunic
+						i(3597),	-- Thick Cloth Belt
+						i(3598),	-- Thick Cloth Bracers
+						i(203),	-- Thick Cloth Gloves
+						i(201),	-- Thick Cloth Pants
+						i(202),	-- Thick Cloth Shoes
+						i(200),	-- Thick Cloth Vest
 						-- #if AFTER 10.0.5
 						-- Now any class and race can buy this
 						-- MAGE --
@@ -8107,6 +8125,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),
+				n(1350, {	-- Theresa Moulaine
+					["coord"] = { 53.4, 58.0, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2617),	-- Burning Robes
+						i(2615),	-- Chromatic Robe
+						i(2613),	-- Double-Stitched Robes
+						i(2612),	-- Plain Robe
+						i(2614),	-- Robe of Apprenticeship
+						i(2616),	-- Shimmering Silk Robes
+						i(2618),	-- Silver Dress Robes
+					},
+				}),
 				n(5510, {	-- Thulman Flintcrag
 					["coord"] = { 61.8, 36.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -8143,6 +8174,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 718 },    -- Scalemail Gloves
 						{"select", "itemID", 286 },    -- Scalemail Pants
 						{"select", "itemID", 285 },    -- Scalemail Vest
+					},
+				}),
+				n(1309, {	-- Wynne Larson
+					["coord"] = { 52.0, 83.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2617 },    -- Burning Robes
+						{"select", "itemID", 2615 },    -- Chromatic Robe
+						{"select", "itemID", 2613 },    -- Double Stitched Robes
+						{"select", "itemID", 2612 },    -- Plain Robe
+						{"select", "itemID", 2614 },    -- Robe Of Apprenticeship
+						{"select", "itemID", 2616 },    -- Shimmering Silk Robes
+						{"select", "itemID", 2618 },    -- Silver Dress Robes
 					},
 				}),
 			}),

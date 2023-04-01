@@ -6250,6 +6250,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(3428),	-- Common Gray Shirt
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
+						i(837),	-- Heavy Weave Armor
+						i(3589),	-- Heavy Weave Belt
+						i(3590),	-- Heavy Weave Bracers
+						i(839),	-- Heavy Weave Gloves
+						i(838),	-- Heavy Weave Pants
+						i(840),	-- Heavy Weave Shoes
+						i(3597),	-- Thick Cloth Belt
+						i(3598),	-- Thick Cloth Bracers
+						i(203),	-- Thick Cloth Gloves
+						i(201),	-- Thick Cloth Pants
+						i(202),	-- Thick Cloth Shoes
+						i(200),	-- Thick Cloth Vest
+						i(3606),	-- Woven Belt
+						i(2367),	-- Woven Boots
+						i(3607),	-- Woven Bracers
+						i(2369),	-- Woven Gloves
+						i(2366),	-- Woven Pants
+						i(2364),	-- Woven Vest
 						-- #if AFTER 10.0.5
 						-- Now any class and race can buy this
 						-- MAGE --
@@ -6303,7 +6321,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20891, {	-- Neophyte's Robe
 							["timeline"] = { ADDED_10_0_5 }
 						}),
-
 						-- WARLOCK --
 						i(1396, {	-- Acolyte's Pants
 							["timeline"] = { ADDED_10_0_5 }

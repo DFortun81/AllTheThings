@@ -1799,6 +1799,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = { {"sub", "common_vendor", 5193} }, -- Rebecca Laughlin <Tabard Designer>
 					["races"] = ALLIANCE_ONLY,
 				}),
+				n(5156, {	-- Maeva Snowbraid 
+					["coord"] = { 38.8, 5.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2617 },    -- Burning Robes
+						{"select", "itemID", 2615 },    -- Chromatic Robe
+						{"select", "itemID", 2613 },    -- Double Stitched Robes
+						{"select", "itemID", 2612 },    -- Plain Robe
+						{"select", "itemID", 2614 },    -- Robe Of Apprenticeship
+						{"select", "itemID", 2616 },    -- Shimmering Silk Robes
+						{"select", "itemID", 2618 },    -- Silver Dress Robes
+					},
+				}),
 				n(50308, {	-- Master Tinker Trini <Gnomeregan Quartermaster>
 					["coord"] = { 55.8, 47.8, IRONFORGE },
 					["timeline"] = { "added 4.0.3.13277" },

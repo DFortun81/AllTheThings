@@ -888,6 +888,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 2535 },	-- War Staff
 					},
 				}),
+				n(4172, {	-- Anadyia 
+					["coord"] = { 54.6, 83.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2617 },    -- Burning Robes
+						{"select", "itemID", 2615 },    -- Chromatic Robe
+						{"select", "itemID", 2613 },    -- Double Stitched Robes
+						{"select", "itemID", 2612 },    -- Plain Robe
+						{"select", "itemID", 2614 },    -- Robe Of Apprenticeship
+						{"select", "itemID", 2616 },    -- Shimmering Silk Robes
+						{"select", "itemID", 2618 },    -- Silver Dress Robes
+					},
+				}),
 				n(4203, {	-- Ariyell Skyshadow
 					["coord"] = { 56.6, 52.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
@@ -1550,17 +1563,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 201 },    -- Thick Cloth Pants
 						{"select", "itemID", 202 },    -- Thick Cloth Shoes
 						{"select", "itemID", 200 },    -- Thick Cloth Vest
-						{"select", "itemID", 2121 },    -- Thin Cloth Armor
-						{"select", "itemID", 3599 },    -- Thin Cloth Belt
-						{"select", "itemID", 3600 },    -- Thin Cloth Bracers
-						{"select", "itemID", 2119 },    -- Thin Cloth Gloves
-						{"select", "itemID", 2120 },    -- Thin Cloth Pants
-						{"select", "itemID", 2117 },    -- Thin Cloth Shoes
 					},
 					["groups"] = {
 						i(12256, {	-- Cindercloth Leggings
 							["isLimited"] = true,
 						}),
+						i(2121),	-- Thin Cloth Armor
+						i(3600),	-- Thin Cloth Bracers
+						i(3599),	-- Thin Cloth Belt
+						i(2119),	-- Thin Cloth Gloves
+						i(2120),	-- Thin Cloth Pants
+						i(2117),	-- Thin Cloth Shoes
 					},
 				}),
 			}),

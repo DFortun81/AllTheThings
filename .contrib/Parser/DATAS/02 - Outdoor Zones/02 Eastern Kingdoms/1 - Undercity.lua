@@ -1656,12 +1656,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 844 },    -- Tanned Leather Gloves
 						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
 						{"select", "itemID", 845 },    -- Tanned Leather Pants
-						{"select", "itemID", 3595 },    -- Tattered Cloth Belt
-						{"select", "itemID", 195 },    -- Tattered Cloth Boots
-						{"select", "itemID", 3596 },    -- Tattered Cloth Bracers
-						{"select", "itemID", 711 },    -- Tattered Cloth Gloves
-						{"select", "itemID", 194 },    -- Tattered Cloth Pants
-						{"select", "itemID", 193 },    -- Tattered Cloth Vest
 						{"select", "itemID", 3606 },    -- Woven Belt
 						{"select", "itemID", 2367 },    -- Woven Boots
 						{"select", "itemID", 3607 },    -- Woven Bracers
@@ -1679,6 +1673,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(714),		-- Dirty Leather Gloves
 						i(209),		-- Dirty Leather Pants
 						i(85),		-- Dirty Leather Vest
+						i(3595),    -- Tattered Cloth Belt
+						i(195),    -- Tattered Cloth Boots
+						i(3596),    -- Tattered Cloth Bracers
+						i(711),    -- Tattered Cloth Gloves
+						i(194),    -- Tattered Cloth Pants
+						i(193),    -- Tattered Cloth Vest
 					},
 				}),
 				n(4574, {	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
@@ -1711,6 +1711,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 2026 },	-- rock hammer
 						{"select", "itemID", 2027 },	-- scimitar
 						{"select", "itemID", 1196 },	-- tabar
+					},
+				}),
+				n(4580, {	-- Lucille Castleton
+					["coord"] = { 71.4, 28.4, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2617 },    -- Burning Robes
+						{"select", "itemID", 2615 },    -- Chromatic Robe
+						{"select", "itemID", 2613 },    -- Double Stitched Robes
+						{"select", "itemID", 2612 },    -- Plain Robe
+						{"select", "itemID", 2614 },    -- Robe Of Apprenticeship
+						{"select", "itemID", 2616 },    -- Shimmering Silk Robes
+						{"select", "itemID", 2618 },    -- Silver Dress Robes
 					},
 				}),
 				n(5190, {	-- Merill Pleasance <Tabard Vendor>
@@ -1839,26 +1852,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.4, 30.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
-				n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>
-					["coord"] = { 70.6, 28.8, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(13896),	-- Dark Green Wedding Hanbok
-						i(13898),	-- Royal Dangui
-						i(13897),	-- White Traditional Hanbok
-					},
-				}),
 				n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
 					["sym"] = { {"sub", "common_recipes_vendor", 50482 } }, -- Marith Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 56.2, 36.6, UNDERCITY },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = HORDE_ONLY,
 				}),
-				n(5821, {	-- Sheldon Von Croy
-					["coord"] = { 70.6, 29.6, UNDERCITY },
+				n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>
+					["coord"] = { 70.6, 28.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 13896 },    -- Dark Green Wedding Hanbok
 						{"select", "itemID", 2435 },    -- Embroidered Armor
 						{"select", "itemID", 3587 },    -- Embroidered Belt
 						{"select", "itemID", 2438 },    -- Embroidered Boots
@@ -1884,7 +1887,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 3592 },    -- Padded Bracers
 						{"select", "itemID", 2158 },    -- Padded Gloves
 						{"select", "itemID", 2159 },    -- Padded Pants
-						{"select", "itemID", 13898 },    -- Royal Dangui
 						{"select", "itemID", 3593 },    -- Russet Belt
 						{"select", "itemID", 2432 },    -- Russet Boots
 						{"select", "itemID", 3594 },    -- Russet Bracers
@@ -1898,7 +1900,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 201 },    -- Thick Cloth Pants
 						{"select", "itemID", 202 },    -- Thick Cloth Shoes
 						{"select", "itemID", 200 },    -- Thick Cloth Vest
-						{"select", "itemID", 13897 },    -- White Traditional Hanbok
+					},
+					["groups"] = {
+						i(13896),	-- Dark Green Wedding Hanbok
+						i(13898),	-- Royal Dangui
+						i(13897),	-- White Traditional Hanbok
 					},
 				}),
 				n(4570, {	-- Sydney Upton

@@ -2265,6 +2265,32 @@ root(ROOTS.Zones, {
 							i(20918),	-- Unadorned Chain Leggings
 						},
 					}),
+					n(24347, {	-- Alexis Walker
+						["coord"] = { 79.2, 28.8, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(30777),    -- Aldor Heavy Belt
+							i(30771),    -- Heavy Draenic Bracers
+							i(30765),    -- Heavy Draenic Breastplate
+							i(30775),    -- Layered Bone Shield
+							i(30781),    -- Maghari Chain Vest
+							i(30784),    -- Worn Maghari Gauntlets
+							-- These 6 items could be symlinked to 6 other vendors
+						},
+					}),
+					n(23735, {	-- Bartleby Armorfist
+						["coord"] = { 59.6, 63.6, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(30777),    -- Aldor Heavy Belt
+							i(30771),    -- Heavy Draenic Bracers
+							i(30765),    -- Heavy Draenic Breastplate
+							i(30775),    -- Layered Bone Shield
+							i(30781),    -- Maghari Chain Vest
+							i(30784),    -- Worn Maghari Gauntlets
+							-- These 6 items could be symlinked to 6 other vendors
+						},
+					}),
 					n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
 						["coord"] = { 59.6, 63.8, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,

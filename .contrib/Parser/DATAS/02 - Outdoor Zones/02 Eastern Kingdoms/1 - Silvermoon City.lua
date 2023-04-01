@@ -481,7 +481,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16631, {	-- Andra <Clothier>
 					["coord"] = { 65.2, 47.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = ANDRA_ZYANDREL_GROUPS,
+					["sym"] = {
+						{"select", "itemID", 16059 },    -- Common Brown Shirt
+						{"select", "itemID", 3428 },    -- Common Gray Shirt
+						{"select", "itemID", 16060 },    -- Common White Shirt
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+					},
 				}),
 				n(16619, {	-- Celana 
 					["coord"] = { 86.0, 36.6, SILVERMOON_CITY },
@@ -829,7 +839,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16623, {	-- Zyandrel <Cloth Armor Merchant>
 					["coord"] = { 64.8, 48.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = ANDRA_ZYANDREL_GROUPS,
+					["sym"] = {
+						{"select", "itemID", 16059 },    -- Common Brown Shirt
+						{"select", "itemID", 3428 },    -- Common Gray Shirt
+						{"select", "itemID", 16060 },    -- Common White Shirt
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+						{"select", "itemID", 3597 },    -- Thick Cloth Belt
+						{"select", "itemID", 3598 },    -- Thick Cloth Bracers
+						{"select", "itemID", 203 },    -- Thick Cloth Gloves
+						{"select", "itemID", 201 },    -- Thick Cloth Pants
+						{"select", "itemID", 202 },    -- Thick Cloth Shoes
+						{"select", "itemID", 200 },    -- Thick Cloth Vest
+						{"select", "itemID", 3606 },    -- Woven Belt
+						{"select", "itemID", 2367 },    -- Woven Boots
+						{"select", "itemID", 3607 },    -- Woven Bracers
+						{"select", "itemID", 2369 },    -- Woven Gloves
+						{"select", "itemID", 2366 },    -- Woven Pants
+						{"select", "itemID", 2364 },    -- Woven Vest
+					},
 				}),
 			}),
 		},
