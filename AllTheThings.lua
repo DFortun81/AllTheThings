@@ -5379,8 +5379,9 @@ local function SkipFillingGroup(group, FillData)
 	if not app.MODE_DEBUG_OR_ACCOUNT then
 		-- only ignored filling saved 'quest' groups (unless it's an Item, which we ignore the ignore... :D)
 		if group.saved and group.questID and not group.itemID then return true; end
-		local parent = group.parent;
-		-- parent is a saved quest, then do not fill with stuff
+		-- root fills of a thing from a saved parent should still show their contains, so don't use .parent
+		local parent = rawget(group, "parent");
+		-- direct parent is a saved quest, then do not fill with stuff
 		if parent and parent.questID and parent.saved then return true; end
 	end
 
