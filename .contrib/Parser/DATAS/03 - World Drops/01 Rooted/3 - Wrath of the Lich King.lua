@@ -604,11 +604,8 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 	category(227, {	-- Weapons
 		filter(ONE_HANDED_AXES, {
 			i(33426),	-- Chipped Timber Axe
-			i(36575, {	-- Dragonflayer Hatchet [Removed from Game - Crates Only!]
-				-- #if AFTER 6.0.1
-				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
-				-- #endif
-				["timeline"] = { "added 3.0.1.8770", "removed 7.0.1" },
+			i(36575, {	-- Dragonflayer Hatchet 
+				["timeline"] = { "added 3.0.1.8770", "removed 10.0.7" },	-- Maybe still world drop, but best farmed in Ahn'Kahet
 			}),
 			i(36571),	-- Splicing Axe
 			i(36572),	-- Dinged Cleaver
@@ -675,6 +672,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		}),
 		filter(DAGGERS, {
 			i(33428),	-- Dulled Shiv
+			i(36477, {	-- Twin-Edged Stilletto
+				["timeline"] = { "added 3.0.1.8770", "removed 10.0.7" },	-- Maybe still world drop, but best farmed in Ahn'Kahet
+			}),
 			i(36473),	-- Pioneer's Dagger
 			i(36474),	-- Engraved Dagger
 			i(36475),	-- Seal Shortblade
@@ -804,6 +804,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		}),
 		filter(STAVES, {
 			i(33424),	-- Cracked Iron Staff
+			i(36547, {	-- Jester's Stick
+				["timeline"] = { "created 2.0.3", "added 3.0.1.8770", "removed 10.0.7" },	-- Maybe still world drop, but best farmed in Ahn'Kahet
+			}),
 			i(36543),	-- Survival Stick
 			i(36544),	-- Journeyed Staff
 			i(36545),	-- Branched Stick

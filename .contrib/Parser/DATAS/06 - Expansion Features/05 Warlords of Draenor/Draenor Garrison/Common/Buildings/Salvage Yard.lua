@@ -30,7 +30,7 @@ _.ExpansionFeatures =
 					i(114120, {	-- Big Crate of Salvage
 						["u"] = REMOVED_FROM_GAME,
 						["g"] = sharedData({["u"] = REMOVED_FROM_GAME},{
-							-- Only adding items where Salvage Crates was the only source
+							-- Only adding items where Salvage Crates was the realisticly the only source
 							i(36533),	-- Adorned Broadsword
 							i(36603),	-- Archaic Longspear
 							i(25285),	-- Bloodwood Wand
