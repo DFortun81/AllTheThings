@@ -3522,7 +3522,7 @@ for key,value in pairs({
 	[375988] = "Firim en el exilio, epílogo",	-- Firim in Exile, Epilogue
 	[376041] = "Alijo de claves camuflado",	-- Shrouded Cypher Cache
 	--TODO: [376123] = "Suspicious Bottle",	-- Suspicious Bottle
-	--TODO: [376124] = "Bag of Enchanted Wind",	-- Bag of Enchanted Wind
+	[376124] = "Bolsa de viento encantado",	-- Bag of Enchanted Wind
 	[376175] = "Cofre de suministros Todavela",	-- Fullsails Supply Chest
 	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
 	[376386] = "Túmulo revuelto",	-- Disturbed Dirt
@@ -3785,8 +3785,8 @@ for key,value in pairs({
 	[386633] = "Cofre de las tormentas",	-- Chest of Storms
 	[386648] = "Pergamino misterioso",	-- Mysterious Scroll
 	[386660] = "Montón de oro",	-- Gold Pile
-	--TODO: [386668] = "Shattered Hakkari Bijou",	-- Shattered Hakkari Bijou
-	--TODO: [386669] = "Fragmented Hakkari Bijou",	-- Fragmented Hakkari Bijou
+	[386668] = "Joya Hakkari destrozada",	-- Shattered Hakkari Bijou
+	[386669] = "Joya Hakkari fragmentada",	-- Fragmented Hakkari Bijou
 	[386680] = "Anuario misterioso",	-- Mysterious Almanac
 	[386683] = "Libro abrasado",	-- Seared Book
 	[386690] = "Compendio ambiguo",	-- Ambiguous Compendium
@@ -3803,7 +3803,7 @@ for key,value in pairs({
 	[388712] = "Cofre de la ópera",	-- Opera Chest
 	[388866] = "Olla de componentes",	-- Reagent Pot
 	[388876] = "Olla de componentes",	-- Reagent Pot
-	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388895] = "Garabatos aleatorios",	-- Random Scribblings
 	[388905] = "Juego de herramientas de Neltharion",	-- Neltharion Toolkit
 	[388908] = "Baba inerte",	-- Inert Goo
 	[389102] = "Fragmento prismático",	-- Prismatic Fragment
@@ -3820,8 +3820,8 @@ for key,value in pairs({
 	[389599] = "Púa de hielo",	-- Ice Spike
 	[389789] = "Alijo de tierra primordial",	-- Primordial Earth Cache
 	[389902] = "Alijo de tierra primordial",	-- Primordial Earth Cache
-	--TODO: [390008] = "Ice Spike",	-- Ice Spike
-	--TODO: [390009] = "Box of Rocks",	-- Box of Rocks
+	[390008] = "Hielo",	-- Ice
+	[390009] = "Caja de piedras",	-- Box of Rocks
 	[390074] = "Alijo de océano profundo primordial",	-- Primordial Deep Ocean Cache
 	--TODO: [390136] = "Spore-bound Essence",	-- Spore-bound Essence
 	[390257] = "Oso de peluche",	-- Stuffed Bear

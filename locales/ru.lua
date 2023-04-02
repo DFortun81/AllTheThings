@@ -3587,7 +3587,7 @@ for key,value in pairs({
 	[380604] = "Таинственное знамя",	-- Mysterious Banner
 	[380605] = "Контрабандное снадобье",	-- Contraband Concoction
 	[380607] = "Опаленная чужеземная ткань",	-- Itinerant Singed Fabric
-	--TODO: [380608] = "Silky Surprise",	-- Silky Surprise
+	[380608] = "Шелковый сюрприз",	-- Silky Surprise
 	[380610] = "Пульсирующая руна земли",	-- Pulsing Earth Rune
 	[380611] = "Фляга с подозрительной водой",	-- Canteen of Suspicious Water
 	[380612] = "Памятка по языку жестов",	-- Sign Language Reference Sheet
@@ -3615,7 +3615,7 @@ for key,value in pairs({
 	[380860] = "Кентаврский рог",	-- Centaur Horn
 	[380902] = "Поля Дикой Ярости",	-- Fields of Ferocity
 	[380918] = "Обломки украшенной узорами статуи",	-- Broken Ornamented Statue
-	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
+	[380991] = "Куча земли",	-- Dirt Mound
 	[381035] = "Великое хранилище",	-- The Great Vault
 	[381045] = "Золотой драконий кубок",	-- Golden Dragon Goblet
 	[381069] = "Полная сеть",	-- Full Fishing Net
@@ -3623,7 +3623,7 @@ for key,value in pairs({
 	[381107] = "Кучка песка",	-- Sand Pile
 	[381108] = "Карта Йенну",	-- Yennu's Map
 	[381110] = "Забытый ларчик самоцветов",	-- Forgotten Jewel Box
-	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
+	[381153] = "Друза рубинов",	-- Ruby Gem Cluster
 	[381157] = "Друза сапфиров",	-- Sapphire Gem Cluster
 	[381158] = "Цеп гнолла-изверга",	-- Gnoll Fiend Flail
 	[381160] = "Затерянный компас",	-- Lost Compass
@@ -3671,7 +3671,7 @@ for key,value in pairs({
 	[382166] = "Рубиновый Пир!",	-- The Ruby Feast!
 	[382180] = "Перегретый пруд лавазубов",	-- Overheated Magma Thresher Pool
 	[382193] = "Сундук стихий",	-- Chest of the Elements
-	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	[382325] = "Друза оникса",	-- Onyx Gem Cluster
 	[382621] = "Консоль катализатора возрождения",	-- Revival Catalyst Console
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
 	[383732] = "Клыкаррские рыболовные снасти",	-- Tuskarr Tacklebox
@@ -3790,7 +3790,7 @@ for key,value in pairs({
 	[388712] = "Оперный сундук",	-- Opera Chest
 	[388866] = "Котелок с реагентами",	-- Reagent Pot
 	[388876] = "Котелок с реагентами",	-- Reagent Pot
-	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388895] = "Небрежные записки",	-- Random Scribblings
 	[388905] = "Инструменты Нелтариона",	-- Neltharion Toolkit
 	[388908] = "Безжизненная слизь",	-- Inert Goo
 	[389102] = "Призматический осколок",	-- Prismatic Fragment
