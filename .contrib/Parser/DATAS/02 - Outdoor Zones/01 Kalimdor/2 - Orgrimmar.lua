@@ -2652,21 +2652,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(467, {	-- Dung Beetle
-					["crs"] = { 62115 },	-- Dung Beetle
-				}),
-				p(471, {	-- Robo-Chick
-					["crs"] = { 62119 },	-- Robo-Chick
-				}),
-				p(466, {	-- Spiny Lizard
-					["crs"] = { 62114 },	-- Spiny Lizard
-				}),
-				p(420, {	-- Toad
-					["crs"] = { 61369 },	-- Toad
-				}),
-				p(418, {	-- Water Snake
-					["crs"] = { 61367 },	-- Water Snake
-				}),
+				["sym"] = {{"select","speciesID",
+					467,	-- Dung Beetle
+					466,	-- Spiny Lizard
+					420,	-- Toad
+					418,	-- Water Snake
+				}},
+				["g"] = {
+					p(471, {	-- Robo-Chick
+						["crs"] = { 62119 },	-- Robo-Chick
+					}),
+				},
 			})),
 			-- #endif
 			n(FACTIONS, {
@@ -4684,7 +4680,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
-				n(46742, {	-- Brunda 
+				n(46742, {	-- Brunda
 					["coord"] = { 54.6, 50.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { "added 4.0.1." },
@@ -5410,7 +5406,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(8624),	-- Red Sparkler
 					},
 				}),
-				n(3360, {	-- Koru 
+				n(3360, {	-- Koru
 					["coord"] = { 76.2, 37.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -6119,7 +6115,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 79740 },    -- Plain Wooden Staff
 					},
 				}),
-				n(3330, {	-- Muragus  
+				n(3330, {	-- Muragus
 					["coord"] = { 46.0, 57.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -6423,7 +6419,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					}),
 				}),
-				n(3334, {	-- Rekkul 
+				n(3334, {	-- Rekkul
 					["coord"] = { 44.0, 58.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -7361,7 +7357,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(10392),	-- Crimson Snake
 					},
 				}),
-				n(30723, {	-- Xantili 
+				n(30723, {	-- Xantili
 					["coord"] = { 36.2, 69.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {

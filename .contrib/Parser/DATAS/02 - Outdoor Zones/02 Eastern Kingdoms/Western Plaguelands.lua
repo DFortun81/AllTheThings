@@ -73,24 +73,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(398, {	-- Black Rat
-					["crs"] = { 61257 },	-- Black Rat
-				}),
-				p(456, {	-- Blighthawk
-					["crs"] = { 61826 },	-- Blighthawk
-				}),
-				p(648, {	-- Huge Toad
-					["crs"] = { 61368 },	-- Huge Toad
-				}),
-				p(378, {	-- Rabbit
-					["crs"] = { 61080 },	-- Rabbit
-				}),
-				p(379, {	-- Squirrel
-					["crs"] = { 61081 },	-- Squirrel
-				}),
-				p(420, {	-- Toad
-					["crs"] = { 61369 },	-- Toad
-				}),
+				["sym"] = {{"select","speciesID",
+					378,	-- Rabbit
+					379,	-- Squirrel
+					420,	-- Toad
+				}},
+				["g"] = {
+					p(398, {	-- Black Rat
+						["crs"] = { 61257 },	-- Black Rat
+					}),
+					p(456, {	-- Blighthawk
+						["crs"] = { 61826 },	-- Blighthawk
+					}),
+					p(648, {	-- Huge Toad
+						["crs"] = { 61368 },	-- Huge Toad
+					}),
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

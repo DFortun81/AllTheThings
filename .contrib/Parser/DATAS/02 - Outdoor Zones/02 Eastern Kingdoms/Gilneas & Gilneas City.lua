@@ -185,7 +185,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 59.57, 26.77, 202 },
 							["races"] = { WORGEN },
 							["classes"] = { MONK },
-							["timeline"] = { ADDED_DF_0_7 },
+							["timeline"] = { ADDED_10_0_7 },
 						}),
 						q(14099, {	-- Royal Orders
 							["provider"] = { "n", 34913 },	-- Prince Liam Greymane
@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 70.40, 65.57, 202 },
 							["races"] = { WORGEN },
 							["classes"] = { MONK },
-							["timeline"] = { ADDED_DF_0_7 },
+							["timeline"] = { ADDED_10_0_7 },
 							["sourceQuests"] = {
 								75190,	-- Ready and Abel
 							},

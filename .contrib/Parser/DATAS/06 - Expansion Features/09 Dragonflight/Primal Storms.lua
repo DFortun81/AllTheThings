@@ -356,19 +356,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			}),
 			petbattle(filter(BATTLE_PETS, {
 				pet(3384, {	-- Storm-Touched Bluefeather (PET!)
-					["cr"] = 192259,	-- Storm-Touched Bluefeather
 					["maps"] = { THALDRASZUS },
 				}),
 				pet(3354, {	-- Storm-Touched Ottuk (PET!)
-					["cr"] = 192256,	-- Storm-Touched Ottuk
 					["maps"] = { THE_AZURE_SPAN },
 				}),
 				pet(3385, {	-- Storm-Touched Stomper (PET!)
-					["cr"] = 192029,	-- Storm-Touched Stomper
 					["maps"] = { THE_WAKING_SHORES },
 				}),
 				pet(3329, {	-- Storm-Touched Timbertooth (PET!)
-					["cr"] = 189660,	-- Storm-Touched Timbertooth
 					["maps"] = { OHNAHRAN_PLAINS },
 				}),
 			})),

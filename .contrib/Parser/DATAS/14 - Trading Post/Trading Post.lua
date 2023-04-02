@@ -36,8 +36,10 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			i(190488),	-- Darkmoon Harlequin's Visage
 		}),
 		-- APR 2023 --
-		i(190164),	-- Arsenal: Blades of Elune
-		
+		i(190164, {	-- Arsenal: Blades of Elune
+			i(190093),	-- Elune's Fury
+			i(190094),	-- Elune's Wrath
+		}),
 	})),
 	n(VENDORS, {
 		filter(BATTLE_PETS, {
@@ -224,10 +226,10 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 			i(190154, {	-- Tome of Sin'dorei Secrets
 				["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-			}),	
+			}),
 			i(189895, {	-- Watchman's Flare
 				["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-			}),			
+			}),
 		}),
 		filter(MOUNTS, {
 			-- FEB 2023 --
@@ -237,7 +239,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			-- APR 2023 --
 			i(189978, {	-- Magenta Cloud Serpent (MOUNT!)
 				["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-			}),	
+			}),
 		}),
 	}),
 }));

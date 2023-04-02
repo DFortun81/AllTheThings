@@ -1130,26 +1130,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(441, {	-- Alpine Hare
-					["crs"] = { 61690 },	-- Alpine Hare
-					-- #if AFTER CATA
-					["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },
-					-- #else
-					["maps"] = { COLDRIDGE_VALLEY },
-					-- #endif
-				}),
-				p(378, {	-- Rabbit
-					["crs"] = { 61080 },	-- Rabbit
-					["maps"] = { COLDRIDGE_VALLEY },
-				}),
-				p(440, {	-- Snow Cub
-					["crs"] = { 61689 },	-- Snow Cub
-					-- #if AFTER CATA
-					["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },
-					-- #else
-					["maps"] = { COLDRIDGE_VALLEY },
-					-- #endif
-				}),
+				["sym"] = {{"select","speciesID",
+					378,	-- Rabbit
+				}},
+				["g"] = {
+					p(441, {	-- Alpine Hare
+						["crs"] = { 61690 },	-- Alpine Hare
+						-- #if AFTER CATA
+						["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },
+						-- #else
+						["maps"] = { COLDRIDGE_VALLEY },
+						-- #endif
+					}),
+					p(440, {	-- Snow Cub
+						["crs"] = { 61689 },	-- Snow Cub
+						-- #if AFTER CATA
+						["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },
+						-- #else
+						["maps"] = { COLDRIDGE_VALLEY },
+						-- #endif
+					}),
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

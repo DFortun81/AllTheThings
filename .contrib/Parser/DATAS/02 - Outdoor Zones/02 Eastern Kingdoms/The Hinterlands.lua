@@ -77,24 +77,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(449, {	-- Brown Marmot
-					["crs"] = { 61752 },	-- Brown Marmot
-				}),
-				p(393, {	-- Cockroach
-					["crs"] = { 61384 },	-- Cockroach
-				}),
-				p(448, {	-- Hare
-					["crs"] = { 61751 },	-- Hare
-				}),
-				p(446, {	-- Jade Oozeling
-					["crs"] = { 61718 },	-- Jade Oozeling
-				}),
-				p(450, {	-- Maggot
-					["crs"] = { 61753 },	-- Maggot
-				}),
-				p(417, {	-- Rat
-					["crs"] = { 61366 },	-- Rat
-				}),
+				["sym"] = {{"select","speciesID",
+					448,	-- Hare
+				}},
+				["g"] = {
+					p(449, {	-- Brown Marmot
+						["crs"] = { 61752 },	-- Brown Marmot
+					}),
+					p(393, {	-- Cockroach
+						["crs"] = { 61384 },	-- Cockroach
+					}),
+					p(446, {	-- Jade Oozeling
+						["crs"] = { 61718 },	-- Jade Oozeling
+					}),
+					p(450, {	-- Maggot
+						["crs"] = { 61753 },	-- Maggot
+					}),
+					p(417, {	-- Rat
+						["crs"] = { 61366 },	-- Rat
+					}),
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

@@ -9,6 +9,7 @@ _.Zones =
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					635,	-- Adder
+					379,	-- Squirrel
 				}},
 				["groups"] = {
 					p(1462, {	-- Bloodsting Wasp
@@ -47,9 +48,6 @@ _.Zones =
 					}),
 					p(568,  {	-- Silkbead Snail
 						["crs"] = { 63001 },	-- Silkbead Snail
-					}),
-					p(379,  {	-- Squirrel
-						["crs"] = { 61081 },	-- Squirrel
 					}),
 					p(401,  {	-- Strand Crab
 						["crs"] = { 61312 },	-- Strand Crab

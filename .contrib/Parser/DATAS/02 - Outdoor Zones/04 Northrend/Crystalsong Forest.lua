@@ -25,18 +25,18 @@ root(ROOTS.Zones, {
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
-					p(385, {	-- Mouse
-						["crs"] = { 61143 },	-- Mouse
-					}),
-					p(378, {	-- Rabbit
-						["crs"] = { 61080 },	-- Rabbit
-					}),
-					p(379, {	-- Squirrel
-						["crs"] = { 61081 },	-- Squirrel
-					}),
-					p(1238, {	-- Unborn Val'kyr
-						["crs"] = { 71163 },	-- Unborn Val'kyr
-					}),
+					["sym"] = {{"select","speciesID",
+						378,	-- Rabbit
+						379,	-- Squirrel
+					}},
+					["g"] = {
+						p(385, {	-- Mouse
+							["crs"] = { 61143 },	-- Mouse
+						}),
+						p(1238, {	-- Unborn Val'kyr
+							["crs"] = { 71163 },	-- Unborn Val'kyr
+						}),
+					},
 				})),
 				-- #endif
 				-- #if ANYCLASSIC

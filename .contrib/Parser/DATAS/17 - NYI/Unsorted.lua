@@ -1965,7 +1965,6 @@ root(ROOTS.Unsorted, {
 				i(205679),	-- Obsidian Gladiator's Cloak
 				i(205680),	-- Obsidian Gladiator's Drape
 				i(205681),	-- Obsidian Gladiator's Shawl
-				i(193377),	-- Gerald
 				i(202180),	-- Pipsee Cheese Snack
 				i(202438),	-- Manteau of the Onyx Crucible
 				i(202439),	-- Warbands of the Onyx Crucible
@@ -3596,14 +3595,6 @@ root(ROOTS.Unsorted, {
 			})
 		})),
 		tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 10.0.5" } }, {
-			filter(BATTLE_PETS, {
-				pet(03255),	-- Buttercup (PET!)
-				i(190604),	-- Buzzworth (PET!)
-				pet(3253),	-- Crushhoof (PET!)
-				i(190176),	-- Drazka'zet the Wrathful (PET!)
-				i(190173),	-- Lil' Maka'jin (PET!)
-				pet(3254),	-- Watcher of the Huntress (PET!)
-			}),
 			filter(COSMETIC, {
 				n(ARMOR, {
 					-- Cloth
@@ -4090,8 +4081,6 @@ root(ROOTS.Unsorted, {
 				i(194318),	-- Book of Ancient Lore
 				i(193069),	-- Climber's Pack
 				i(194329),	-- Elaborate Reliquary Candelabra
-				i(190093),	-- Elune's Fury
-				i(190094),	-- Elune's Wrath
 				i(190674),	-- Leaky Bucket
 				i(194314),	-- Light of the Enlightened
 				i(194331),	-- Pristine Research Journal
