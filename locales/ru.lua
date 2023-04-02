@@ -77,7 +77,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 	L.PRESET_UPDATE_SUCCESS = "Группа обновлена успешно.";
 	L.SHOPPING_OP_MISSING_1 = "Группе не назначена операция 'Закупки'.";
 	L.SHOPPING_OP_MISSING_2 = "Введине '/tsm operations', чтобы создать или назначить оную.";
-	L.AUCTIONATOR_GROUPS = "Поиск по группам доступен только при использовании  Auctionator.";
+	L.AUCTIONATOR_GROUPS = "Поиск по группам доступен только при использовании Auctionator.";
 	L.TSM4_ERROR = "TSM4 пока что не совместим с ATT. Если Вы знаете, как создавать Группы, как мы делали это в TSM3, пожалуйста, свяжитесь с Crieve в Дискорде!";
 	L.QUEST_MAY_BE_REMOVED = "Ошибка при получении информации. Это задание, возможно, удалено из игры. ";
 	L.MINUMUM_STANDING = "Требуется отношение не менее, чем";
@@ -300,7 +300,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Включите для отслеживания Азеритовых Сущностей.\n\nПо умолчанию отслеживается на каждом персонаже отдельно.";
 		L.BATTLE_PETS_CHECKBOX_TOOLTIP = "Включите для отслеживания боевых питомцев и спутников. Могут быть обнаружены в открытом мире или в качестве добычи с боссов в различных Подземельях или Рейдах, равно как у торговцев и различных фракций.\n\nОтслеживается на Весь Аккаунт по умолчанию.";
 		L.FLIGHT_PATHS_CHECKBOX = "|cffADD8E6Полёты / Паромные Станции";
-		L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Включите для отслеживания  путей полётов и паромных станций.\n\nЧтобы *собрать* их, начните разговор с распорядителем полётов/паромной станции на каждом континенте.\n\nПримечание: Из-за технологии фазирования, Вам может потребоваться перейти в другую версию локации, чтобы засчитать эти достопримечательности.";
+		L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Включите для отслеживания путей полётов и паромных станций.\n\nЧтобы *собрать* их, начните разговор с распорядителем полётов/паромной станции на каждом континенте.\n\nПримечание: Из-за технологии фазирования, Вам может потребоваться перейти в другую версию локации, чтобы засчитать эти достопримечательности.";
 		L.FOLLOWERS_CHECKBOX_TOOLTIP = "Включите для отслеживания соратников и чемпионов.\n\nТо есть: Соратники в Гарнизоне, Чемпионы Оплота Класса в Легионе, Спутники Битвы за Азерот, а также Спутники из Тёмных Земель.";
 		L.HEIRLOOMS_CHECKBOX_TOOLTIP = "Включите для отслеживания разблокирования Наследства и его соответствующих Уровней Улучшения.\n\nНаследство, которое ассоциируется с Облком, фильтруется фильтром Обликов. (отключение обликов всё также отобразит Наследство)\n\nНекоторые предметы, имеющие качество Наследства, также помогают улучшать репутации и могут быть отфильтрованы фильтром Репутации.";
 		L.HEIRLOOMS_UPGRADES_CHECKBOX = "|cffADD8E6+Улучшения";
@@ -545,7 +545,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 	-- About tab
 		L.ABOUT = "Об аддоне";
 		L.ABOUT_1 = " |CFFFFFFFF- модификация для отслеживания коллекции, которая показывает Вам где и как получить всё в игре! У нас большое сообщество в Discord (ссылка внизу), где Вы можете спрашивать, оставлять предложения, а также сообщать об ошибках и пропавших предметах. Если Вы нашли предмет или задание, которые не задокументированы, Вы можете сказать нам в Discord, для более технически подкованных у нас Git, в котором Вы можете участвовать.\n\nПока мы стремимся к выполнению, есть множество вещей, что добавляются в игру с каждым патчем, и если что-то отсутствует, пожалуйста, поймите, у нас небольшая команда, пытающаяся держать темп с изменениями, в то же время собирая Штучки. :D\n\nНе стесняйтесь спрашивать меня во время трансляций, даже если вопрос не связан напрямую с ATT (стандартное программирование аддонов WoW тоже).\nПримечание переводчика: на английском языке.\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Зацените версию All The Things Classic и TBC Classic!\n\nНет, ATT не тот аддон, который ставит иконки в Ваших сумках. Это CanIMogIt и Caerdon Wardrobe!\n\nРекомендуем сайт для сравнения коллекций DataForAzeroth.com от shoogen!|r";
-		L.ABOUT_2 = "Дополнительные Участники: |CFFFFFFFF(в произвольном порядке)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag и весь остальной ALL THE THINGS Discord!\n\nОсобая Благодарность AmiYuy (CanIMogIt) и Caerdon (Caerdon Wardrobe).|r  ";
+		L.ABOUT_2 = "Дополнительные Участники: |CFFFFFFFF(в произвольном порядке)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag и весь остальной ALL THE THINGS Discord!\n\nОсобая Благодарность AmiYuy (CanIMogIt) и Caerdon (Caerdon Wardrobe).|r";
 		L.ABOUT_3 = "\n|CFFFFFFFFВы просто обязаны загрузить их аддоны для иконок коллекций в Ваших сумках!|r";
 
 	-- Binding Localizations
