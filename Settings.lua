@@ -1192,10 +1192,8 @@ settings.SetThingTracking = function(self, force)
 			app["Collectible"..thing] = self:Get("Thing:"..thing);
 		end
 	else
-		local accountWideThing;
 		for _,thing in ipairs(Things) do
-			accountWideThing = "AccountWide:"..thing;
-			app[accountWideThing] = self:Get(accountWideThing);
+			app["AccountWide"..thing] = self:Get("AccountWide:"..thing);
 			app["Collectible"..thing] = self:Get("Thing:"..thing);
 		end
 	end
