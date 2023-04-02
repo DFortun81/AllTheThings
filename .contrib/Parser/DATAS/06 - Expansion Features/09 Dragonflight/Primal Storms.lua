@@ -304,7 +304,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
 					["coord"] = { 24.6, 36.0, OHNAHRAN_PLAINS },
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201296, {	-- Docile Airy Soul
 							i(193921),	-- Airy Soul
@@ -319,7 +319,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
 					["coord"] = { 49.8, 32.8, THE_WAKING_SHORES },
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201297, {	-- Docile Earthen Soul
 							i(193920),	-- Earthen Soul
@@ -334,7 +334,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
 					["coord"] = { 78.4, 38.8, OHNAHRAN_PLAINS },
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201298, {	-- Docile Fiery Soul
 							i(193362),	-- Fiery Soul
@@ -349,7 +349,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
 					["coord"] = { 55.2, 76.6, OHNAHRAN_PLAINS },
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201299, {	-- Docile Frosty Soul
 							i(193919),	-- Frosty Soul
