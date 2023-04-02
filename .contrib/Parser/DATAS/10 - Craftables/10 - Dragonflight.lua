@@ -1431,118 +1431,118 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			["requireSkill"] = INSCRIPTION,
 		},{
 			-- Inks
-			q(71599, { ["name"] = "First Craft: Blazing Ink", }),
-			q(71597, { ["name"] = "First Craft: Burnished Ink", }),
-			q(71598, { ["name"] = "First Craft: Cosmic Ink", }),
-			q(71600, { ["name"] = "First Craft: Flourishing Ink", }),
-			q(71601, { ["name"] = "First Craft: Serene Ink", }),
+			FirstCraft(71599, 383786);	-- Blazing Ink
+			FirstCraft(71597, 383791);	-- Burnished Ink
+			FirstCraft(71598, 383790);	-- Cosmic Ink
+			FirstCraft(71600, 383787);	-- Flourishing Ink
+			FirstCraft(71601, 383788);	-- Serene Ink
 			-- Reagents
-			q(71569, { ["name"] = "First Craft: Chilled Rune", }),
-			q(71570, { ["name"] = "First Craft: Runed Writhebark", }),
+			FirstCraft(71569, 383531);	-- Chilled Rune
+			FirstCraft(71570, 383530);	-- Runed Writhebark
 			-- Missives
-			q(71558, { ["name"] = "First Craft: First Craft: Draconic Missive of the Aurora", }),
-			q(71564, { ["name"] = "First Craft: First Craft: Draconic Missive of the Feverflare", }),
-			q(71565, { ["name"] = "First Craft: First Craft: Draconic Missive of the Fireflash", }),
-			q(71566, { ["name"] = "First Craft: First Craft: Draconic Missive of the Harmonious", }),
-			q(71567, { ["name"] = "First Craft: First Craft: Draconic Missive of the Peerless", }),
-			q(71568, { ["name"] = "First Craft: First Craft: Draconic Missive of the Quickblade", }),
+			FirstCraft(71558, 383554);	-- Draconic Missive of the Aurora
+			FirstCraft(71564, 383555);	-- Draconic Missive of the Feverflare
+			FirstCraft(71565, 383556);	-- Draconic Missive of the Fireflash
+			FirstCraft(71566, 383560);	-- Draconic Missive of the Harmonious
+			FirstCraft(71567, 383561);	-- Draconic Missive of the Peerless
+			FirstCraft(71568, 383562);	-- Draconic Missive of the Quickblade
 			-- Crafting Tool Missives
-			q(71571, { ["name"] = "First Craft: Draconic Missive of Crafting Speed", }),
-			q(71572, { ["name"] = "First Craft: Draconic Missive of Inspiration", }),
-			q(71573, { ["name"] = "First Craft: Draconic Missive of Multicraft", }),
-			q(71574, { ["name"] = "First Craft: Draconic Missive of Resourcefulness", }),
+			FirstCraft(71571, 390850);	-- Draconic Missive of Crafting Speed
+			FirstCraft(71572, 390847);	-- Draconic Missive of Inspiration
+			FirstCraft(71573, 390849);	-- Draconic Missive of Multicraft
+			FirstCraft(71574, 390848);	-- Draconic Missive of Resourcefulness
 			-- Gathering Tool Missives
-			q(71575, { ["name"] = "First Craft: Draconic Missive of Deftness", }),
-			q(71576, { ["name"] = "First Craft: Draconic Missive of Finesse", }),
-			q(71577, { ["name"] = "First Craft: Draconic Missive of Perception", }),
+			FirstCraft(71575, 390853);	-- Draconic Missive of Deftness
+			FirstCraft(71576, 390851);	-- Draconic Missive of Finesse
+			FirstCraft(71577, 390852);	-- Draconic Missive of Perception
 			-- Runes and Sigil
-			q(71559, { ["name"] = "First Craft: Azurescale Sigil", }),
-			q(71560, { ["name"] = "First Craft: Bronzescale Sigil", }),
-			q(71555, { ["name"] = "First Craft: Buzzing Rune", }),
-			q(71556, { ["name"] = "First Craft: Chirping Rune", }),
-			q(71561, { ["name"] = "First Craft: Emberscale Sigil", }),
-			q(71557, { ["name"] = "First Craft: Howling Rune", }),
-			q(71562, { ["name"] = "First Craft: Jetscale Sigil+", }),
-			q(71563, { ["name"] = "First Craft: Sagescale Sigil", }),
-			q(71594, { ["name"] = "First Craft: Vantus Rune: Vault of the Incarnates", }),
+			FirstCraft(71559, 383533);	-- Azurescale Sigil
+			FirstCraft(71560, 383536);	-- Bronzescale Sigil
+			FirstCraft(71555, 383527);	-- Buzzing Rune
+			FirstCraft(71556, 383525);	-- Chirping Rune
+			FirstCraft(71561, 383535);	-- Emberscale Sigil
+			FirstCraft(71557, 383529);	-- Howling Rune
+			FirstCraft(71562, 383538);	-- Jetscale Sigil+
+			FirstCraft(71563, 383534);	-- Sagescale Sigil
+			FirstCraft(71594, 383546);	-- Vantus Rune: Vault of the Incarnates
 			-- Trinkets
 			q(74102, { ["name"] = "First Craft: Crimson Combatant's Medallion", ["timeline"] = {ADDED_10_0_5}}),
 			q(74103, { ["name"] = "First Craft: Crimson Combatant's Insignia", ["timeline"] = {ADDED_10_0_5}}),
 			q(74104, { ["name"] = "First Craft: Crimson Combatant's Emblem", ["timeline"] = {ADDED_10_0_5}}),
-			q(71592, { ["name"] = "First Craft: Darkmoon Deck Box: Dance", }),
-			q(71591, { ["name"] = "First Craft: Darkmoon Deck Box: Inferno", }),
-			q(71590, { ["name"] = "First Craft: Darkmoon Deck Box: Rime", }),
-			q(71593, { ["name"] = "First Craft: Darkmoon Deck Box: Watcher", }),
+			FirstCraft(71592, 383770);	-- Darkmoon Deck Box: Dance
+			FirstCraft(71591, 383325);	-- Darkmoon Deck Box: Inferno
+			FirstCraft(71590, 383767);	-- Darkmoon Deck Box: Rime
+			FirstCraft(71593, 383772);	-- Darkmoon Deck Box: Watcher
 			-- Weapons
-			q(71596, { ["name"] = "First Craft: Core Explorer's Compendium", }),
-			q(71595, { ["name"] = "First Craft: Cracking Codex of the Isles", }),
-			q(71515, { ["name"] = "First Craft: Illuminating Pillar of the Isles", }),
-			q(71514, { ["name"] = "First Craft: Kinetic Pillar of the Isles", }),
-			q(71518, { ["name"] = "First Craft: Overseer's Writhebark Stave", }),
-			q(71517, { ["name"] = "First Craft: Pioneer's Writhebark Stave", }),
-			q(71516, { ["name"] = "First Craft: Weathered Explorer's Stave", }),
+			FirstCraft(71596, 383539);	-- Core Explorer's Compendium
+			FirstCraft(71595, 383540);	-- Crackling Codex of the Isles
+			FirstCraft(71515, 383541);	-- Illuminating Pillar of the Isles
+			FirstCraft(71514, 383542);	-- Kinetic Pillar of the Isles
+			FirstCraft(71518, 383543);	-- Overseer's Writhebark Stave
+			FirstCraft(71517, 383544);	-- Pioneer's Writhebark Stave
+			FirstCraft(71516, 383545);	-- Weathered Explorer's Stave
 			-- Profession Equipment
-			q(71585, { ["name"] = "First Craft: Alchemist's Brilliant Mixing Rod", }),
-			q(71584, { ["name"] = "First Craft: Alchemist's Sturdy Mixing Rod", }),
-			q(71586, { ["name"] = "First Craft: Chef's Smooth Rolling Pin", }),
-			q(71587, { ["name"] = "First Craft: Chef's Splendid Rolling Pin", }),
-			q(71588, { ["name"] = "First Craft: Scribe's Fastened Quill", }),
-			q(71589, { ["name"] = "First Craft: Scribe's Resplendent Quill", }),
+			FirstCraft(71585, 383550);	-- Alchemist's Brilliant Mixing Rod
+			FirstCraft(71584, 383549);	-- Alchemist's Sturdy Mixing Rod
+			FirstCraft(71586, 383551);	-- Chef's Smooth Rolling Pin
+			FirstCraft(71587, 383552);	-- Chef's Splendid Rolling Pin
+			FirstCraft(71588, 383547);	-- Scribe's Fastened Quill
+			FirstCraft(71589, 383548);	-- Scribe's Resplendent Quill
 			-- Scrolls
-			q(71546, { ["name"] = "First Craft: Illusion Parchment: Aqua Torrent", }),
-			q(71547, { ["name"] = "First Craft: Illusion Parchment: Arcane Burst", }),
-			q(71548, { ["name"] = "First Craft: Illusion Parchment: Chilling Wind", }),
-			q(71549, { ["name"] = "First Craft: Illusion Parchment: Love Charm", }),
-			q(71550, { ["name"] = "First Craft: Illusion Parchment: Magma Missile", }),
-			q(71551, { ["name"] = "First Craft: Illusion Parchment: Shadow Orb", }),
-			q(71552, { ["name"] = "First Craft: Illusion Parchment: Spell Shield", }),
-			q(71553, { ["name"] = "First Craft: Illusion Parchment: Whirling Breeze", }),
-			q(71529, { ["name"] = "First Craft: Scroll of Sales", }),
+			FirstCraft(71546, 383567);	-- Illusion Parchment: Aqua Torrent
+			FirstCraft(71547, 383570);	-- Illusion Parchment: Arcane Burst
+			FirstCraft(71548, 383571);	-- Illusion Parchment: Chilling Wind
+			FirstCraft(71549, 384869);	-- Illusion Parchment: Love Charm
+			FirstCraft(71550, 383565);	-- Illusion Parchment: Magma Missile
+			FirstCraft(71551, 383573);	-- Illusion Parchment: Shadow Orb
+			FirstCraft(71552, 383572);	-- Illusion Parchment: Spell Shield
+			FirstCraft(71553, 383569);	-- Illusion Parchment: Whirling Breeze
+			FirstCraft(71529, 385197);	-- Scroll of Sales
 			-- Mysteries
 			q(71554, { ["name"] = "First Craft: Blazing Fortune / Flourishing Fortune / Setene Fortune", }),
-			q(71521, { ["name"] = "First Craft: Bundle O' Cards: Dragon Isles", }),
+			FirstCraft(71521, 383512);	-- Bundle O' Cards: Dragon Isles
 			-- Contracts
-			q(71579, { ["name"] = "First Craft: Contract: Artisan's Consortium", }),
-			q(71580, { ["name"] = "First Craft: Contract: Dragonscale Expedition", }),
-			q(71581, { ["name"] = "First Craft: Contract: Iskaara Tuskarr", }),
-			q(71578, { ["name"] = "First Craft: Contract: Maruuk Centaur", }),
-			q(71582, { ["name"] = "First Craft: Contract: Valdrakken Accord", }),
+			FirstCraft(71579, 383592);	-- Contract: Artisan's Consortium
+			FirstCraft(71580, 383593);	-- Contract: Dragonscale Expedition
+			FirstCraft(71581, 383588);	-- Contract: Iskaara Tuskarr
+			FirstCraft(71578, 383591);	-- Contract: Maruuk Centaur
+			FirstCraft(71582, 383590);	-- Contract: Valdrakken Accord
 			-- Profession Specialization
-			q(71519, { ["name"] = "First Craft: Draconic Treatise on Alchemy", }),
-			q(71520, { ["name"] = "First Craft: Draconic Treatise on Blacksmithing", }),
-			q(71522, { ["name"] = "First Craft: Draconic Treatise on Enchanting", }),
-			q(71523, { ["name"] = "First Craft: Draconic Treatise on Engineering", }),
-			q(71524, { ["name"] = "First Craft: Draconic Treatise on Herbalism", }),
-			q(71525, { ["name"] = "First Craft: Draconic Treatise on Inscription", }),
-			q(71526, { ["name"] = "First Craft: Draconic Treatise on Jewelcrafting", }),
-			q(71527, { ["name"] = "First Craft: Draconic Treatise on Leatherworking", }),
-			q(71528, { ["name"] = "First Craft: Draconic Treatise on Mining", }),	-- actually same ID as Skinning
-			q(71528, { ["name"] = "First Craft: Draconic Treatise on Skinning", }),	-- actually same ID as Mining
-			q(71530, { ["name"] = "First Craft: Draconic Treatise on Tailoring", }),
+			FirstCraft(71519, 383522);	-- Draconic Treatise on Alchemy
+			FirstCraft(71520, 383517);	-- Draconic Treatise on Blacksmithing
+			FirstCraft(71522, 383523);	-- Draconic Treatise on Enchanting
+			FirstCraft(71523, 383844);	-- Draconic Treatise on Engineering
+			FirstCraft(71524, 383515);	-- Draconic Treatise on Herbalism
+			FirstCraft(71525, 383759);	-- Draconic Treatise on Inscription
+			FirstCraft(71526, 383524);	-- Draconic Treatise on Jewelcrafting
+			FirstCraft(71527, 383519);	-- Draconic Treatise on Leatherworking
+			FirstCraft(71528, 383516);	-- Draconic Treatise on Mining	-- actually same ID as Skinning
+			FirstCraft(71528, 392944);	-- Draconic Treatise on Skinning	-- actually same ID as Mining
+			FirstCraft(71530, 383520);	-- Draconic Treatise on Tailoring
 			-- Dragonriding - Renewed Proto-Drake
-			q(71539, { ["name"] = "First Craft: Renewed Proto-Drake: Bovine Horns", }),
-			q(71538, { ["name"] = "First Craft: Renewed Proto-Drake: Predator Pattern", }),
-			q(71537, { ["name"] = "First Craft: Renewed Proto-Drake: Silver and Blue Armor", }),
-			q(71540, { ["name"] = "First Craft: Renewed Proto-Drake: Spined Crest", }),
-			q(71541, { ["name"] = "First Craft: Renewed Proto-Drake: Steel and Yellow Armor", }),
+			FirstCraft(71539, 383581);	-- Renewed Proto Drake: Bovine Horns	-- why no hyphen, Blizz, why
+			FirstCraft(71538, 383580);	-- Renewed Proto-Drake: Predator Pattern
+			FirstCraft(71537, 383586);	-- Renewed Proto-Drake: Silver and Blue Armor
+			FirstCraft(71540, 383582);	-- Renewed Proto-Drake: Spined Crest
+			FirstCraft(71541, 383587);	-- Renewed Proto-Drake: Steel and Yellow Armor
 			-- Dragonriding - Windborne Velocidrake
-			q(71542, { ["name"] = "First Craft: Windborne Velocidrake: Black Fur", }),
-			q(72013, { ["name"] = "First Craft: Windborne Velocidrake: Silver and Blue Armor", }),
-			q(71543, { ["name"] = "First Craft: Windborne Velocidrake: Spined Head", }),
-			q(72016, { ["name"] = "First Craft: Windborne Velocidrake: Steel and Orange Armor", }),
-			q(71544, { ["name"] = "First Craft: Windborne Velocidrake: Windswept Pattern", }),
+			FirstCraft(71542, 383583);	-- Windborne Velocidrake: Black Fur
+			FirstCraft(72013, 391832);	-- Windborne Velocidrake: Silver and Blue Armor
+			FirstCraft(71543, 383584);	-- Windborne Velocidrake: Spined Head
+			FirstCraft(72016, 391848);	-- Windborne Velocidrake: Steel and Orange Armor
+			FirstCraft(71544, 383585);	-- Windborne Velocidrake: Windswept Pattern
 			-- Dragonriding - Highland Drake
-			q(71534, { ["name"] = "First Craft: Highland Drake: Black Hair", }),
-			q(72014, { ["name"] = "First Craft: Highland Drake: Silver and Blue Armor", }),
-			q(71535, { ["name"] = "First Craft: Highland Drake: Spined Crest", }),
-			q(71536, { ["name"] = "First Craft: Highland Drake: Spined Neck", }),
-			q(72017, { ["name"] = "First Craft: Highland Drake: Steel and Yellow Armor", }),
+			FirstCraft(71534, 383577);	-- Highland Drake: Black Hair
+			FirstCraft(72014, 391834);	-- Highland Drake: Silver and Blue Armor
+			FirstCraft(71535, 383578);	-- Highland Drake: Spined Crest
+			FirstCraft(71536, 383579);	-- Highland Drake: Spined Neck
+			FirstCraft(72017, 391845);	-- Highland Drake: Steel and Yellow Armor
 			-- Dragonriding - Cliffside Wylderdrake
-			q(71531, { ["name"] = "First Craft: Cliffside Wylderdrake: Conical Head", }),
-			q(71532, { ["name"] = "First Craft: Cliffside Wylderdrake: Red Hair", }),
-			q(72015, { ["name"] = "First Craft: Cliffside Wylderdrake: Silver and Blue Armor", }),
-			q(72018, { ["name"] = "First Craft: Cliffside Wylderdrake: Steel and Yellow Armor", }),
-			q(71533, { ["name"] = "First Craft: Cliffside Wylderdrake: Triple Head Horns", }),
+			FirstCraft(71531, 383574);	-- Cliffside Wylderdrake: Conical Head
+			FirstCraft(71532, 383575);	-- Cliffside Wylderdrake: Red Hair
+			FirstCraft(72015, 391836);	-- Cliffside Wylderdrake: Silver and Blue Armor
+			FirstCraft(72018, 391846);	-- Cliffside Wylderdrake: Steel and Yellow Armor
+			FirstCraft(71533, 383576);	-- Cliffside Wylderdrake: Triple Head Horns
 			-- Artisan Curios
 			q(74481, { ["name"] = "First Craft: Arcane Dispelling Rune", ["timeline"] = {ADDED_10_0_7}}),
 		})),
