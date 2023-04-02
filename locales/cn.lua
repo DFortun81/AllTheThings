@@ -3802,6 +3802,7 @@ for key, value in pairs({
 	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
 	--TODO: [386762] = "Primordial Armor Cache",	-- Primordial Armor Cache
 	--TODO: [387493] = "Unique Fish",	-- Unique Fish
+	--TODO: [387500] = "Chilly Snowman",	-- Chilly Snowman
 	--TODO: [387501] = "Neltharion Gift Token",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
 	--TODO: [387728] = "Opera of the Aspects",	-- Opera of the Aspects
@@ -3813,6 +3814,7 @@ for key, value in pairs({
 	--TODO: [388866] = "Reagent Pot",	-- Reagent Pot
 	--TODO: [388876] = "Reagent Pot",	-- Reagent Pot
 	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	--TODO: [388905] = "Neltharion Toolkit",	-- Neltharion Toolkit
 	--TODO: [388908] = "Inert Goo",	-- Inert Goo
 	--TODO: [389102] = "Prismatic Fragment",	-- Prismatic Fragment
 	--TODO: [389104] = "Prismatic Fragment",	-- Prismatic Fragment
@@ -3835,6 +3837,7 @@ for key, value in pairs({
 	--TODO: [390257] = "Stuffed Bear",	-- Stuffed Bear
 	--TODO: [390258] = "Inert Goo",	-- Inert Goo
 	--TODO: [390559] = "Box of Rocks",	-- Box of Rocks
+	--TODO: [390560] = "Locked Research Chest",	-- Locked Research Chest
 	--TODO: [392569] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392570] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392571] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
@@ -3846,6 +3849,8 @@ for key, value in pairs({
 	--TODO: [393222] = "Supply Trunk",	-- Supply Trunk
 	--TODO: [393282] = "Balloon Box",	-- Balloon Box
 	--TODO: [393283] = "Balloon Box",	-- Balloon Box
+	--TODO: [398200] = "Forgotten Lockbox",	-- Forgotten Lockbox
+	--TODO: [398770] = "Box of Rocks",	-- Box of Rocks
 	--TODO: [398778] = "Disgusting Vat",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
