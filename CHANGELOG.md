@@ -3,9 +3,11 @@
 ## [DF-3.3.2](https://github.com/DFortun81/AllTheThings/tree/DF-3.3.2) (2023-04-02)
 [Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.3.1...DF-3.3.2) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
-### Twitch Drops
+### Promotions
 
 Earn the D.I.S.C.O. Toy 🕺 from March 21st, 10:00 a.m. PDT until April 2nd, 23:59 p.m. PDT. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23923488/dragonflight-twitch-drops-earn-the-disco-toy).
+
+Earn the Big Battle Bear 🐻 through Prime Gaming until April 27, 2023. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23922954).
 
 ### Logic fixes
 
