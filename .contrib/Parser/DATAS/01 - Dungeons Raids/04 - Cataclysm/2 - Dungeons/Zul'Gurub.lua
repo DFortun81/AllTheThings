@@ -859,7 +859,11 @@ root("Instances", tier(CATA_TIER, {
 						179,	-- Renataki
 						180,	-- Wushoolay
 					--]]
-					["description"] = "Requires 225 Archaeology to spawn.",
+					-- #if AFTER 10.0.7
+					["description"] = "Requires Archaeology (1) to spawn.",
+					-- #else
+					["description"] = "Requires Archaeology (225+) to spawn.",
+					-- #endif
 					["g"] = {
 						--[[ Using CRS // QGS doesn't apply the description.  Only applies to NPCID
 						{	-- Summon Artifacts
