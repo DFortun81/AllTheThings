@@ -1338,7 +1338,7 @@ for key, value in pairs({
 	[179913] = "作战公告！",	-- Call to Arms!	--TODO: This was taken from wotlk Wowhead
 	[180229] = "厄运巫毒堆",	-- Jinxed Hoodoo Pile	--TODO: This was taken from wotlk Wowhead
 	[180248] = "可口鱼",	-- School of Tastyfish	--TODO: This was taken from wotlk Wowhead
-	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
+	[180327] = "疯狂之缘的火盆",	-- Brazier of Madness	--TODO: this was manually translated
 	[180366] = "破碎的工具箱",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "疯狂石板",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
 	[180369] = "混浊的水",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
@@ -3803,7 +3803,7 @@ for key, value in pairs({
 	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
 	--TODO: [386762] = "Primordial Armor Cache",	-- Primordial Armor Cache
 	--TODO: [387493] = "Unique Fish",	-- Unique Fish
-	--TODO: [387496] = "Brazier of Madness",	-- Brazier of Madness
+	[387496] = "疯狂之缘的火盆",	-- Brazier of Madness	--TODO: this was manually translated
 	--TODO: [387500] = "Chilly Snowman",	-- Chilly Snowman
 	--TODO: [387501] = "Neltharion Gift Token",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion

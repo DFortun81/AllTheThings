@@ -1316,7 +1316,7 @@ for key,value in pairs({
 	[179913] = "Call to Arms!",	-- Call to Arms!	--TODO: This was taken from wotlk Wowhead
 	[180229] = "Jinxed Hoodoo Pile",	-- Jinxed Hoodoo Pile	--TODO: This was taken from wotlk Wowhead
 	[180248] = "School of Tastyfish",	-- School of Tastyfish	--TODO: This was taken from wotlk Wowhead
-	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
+	[180327] = "Braciere della Follia",	-- Brazier of Madness	--TODO: this was manually translated
 	[180366] = "Battered Tackle Box",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "Tablet of Madness",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
 	[180369] = "Muddy Churning Waters",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
@@ -3781,7 +3781,7 @@ for key,value in pairs({
 	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
 	[386762] = "Cassa dell'Armatura Primordiale",	-- Primordial Armor Cache
 	[387493] = "Pesce Unico",	-- Unique Fish
-	--TODO: [387496] = "Brazier of Madness",	-- Brazier of Madness
+	[387496] = "Braciere della Follia",	-- Brazier of Madness	--TODO: this was manually translated
 	[387500] = "Pupazzo di Neve Congelato",	-- Chilly Snowman
 	[387501] = "Emblema Dono di Neltharion",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion

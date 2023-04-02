@@ -1324,7 +1324,7 @@ for key,value in pairs({
 	[179913] = "전장으로!",	-- Call to Arms!	--TODO: This was taken from wotlk Wowhead
 	[180229] = "불길한 흑마술 더미",	-- Jinxed Hoodoo Pile	--TODO: This was taken from wotlk Wowhead
 	[180248] = "맛둥어 떼",	-- School of Tastyfish
-	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
+	[180327] = "광기의 화로",	-- Brazier of Madness	--TODO: this was manually translated
 	[180366] = "찌그러진 낚시상자",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "광기의 서판",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
 	[180369] = "거품이는 진흙탕물",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
@@ -3789,7 +3789,7 @@ for key,value in pairs({
 	[386690] = "모호한 전서",	-- Ambiguous Compendium
 	[386762] = "태고의 방어구 보관함",	-- Primordial Armor Cache
 	--TODO: [387493] = "Unique Fish",	-- Unique Fish
-	--TODO: [387496] = "Brazier of Madness",	-- Brazier of Madness
+	[387496] = "광기의 화로",	-- Brazier of Madness	--TODO: this was manually translated
 	[387500] = "싸늘한 눈사람",	-- Chilly Snowman
 	[387501] = "넬타리온 선물 징표",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion

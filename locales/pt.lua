@@ -1324,7 +1324,7 @@ for key,value in pairs({
 	[179913] = "Chamado às armas!",	-- Call to Arms!	--TODO: This was taken from wotlk Wowhead
 	[180229] = "Amontoado de Mandingas Azarentas",	-- Jinxed Hoodoo Pile	--TODO: This was taken from wotlk Wowhead
 	[180248] = "Cardume de Papas-finas",	-- School of Tastyfish
-	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
+	[180327] = "Braseiro da Loucura",	-- Brazier of Madness	--TODO: this was manually translated
 	[180366] = "Caixa de Ferramentas Desgastada",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "Tabuleta da Loucura",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
 	[180369] = "Águas Revoltas Barrentas",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
@@ -3789,7 +3789,7 @@ for key,value in pairs({
 	[386690] = "Compêndio Ambíguo",	-- Ambiguous Compendium
 	[386762] = "Baú de Armadura Arcano Primordial",	-- Primordial Armor Cache
 	[387493] = "Peixe Singular",	-- Unique Fish
-	--TODO: [387496] = "Brazier of Madness",	-- Brazier of Madness
+	[387496] = "Braseiro da LoucuraBrazier of Madness",	-- Brazier of Madness	--TODO: this was manually translated
 	[387500] = "Bonequinho de Neve",	-- Chilly Snowman
 	[387501] = "Ficha de Presente de Neltharion",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion

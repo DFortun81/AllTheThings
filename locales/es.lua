@@ -1328,7 +1328,7 @@ for key,value in pairs({
 	[179913] = "¡A las armas!",	-- Call to Arms!
 	[180229] = "Montón hudú maldito",	-- Jinxed Hoodoo Pile
 	[180248] = "Banco de pezricos",	-- School of Tastyfish
-	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
+	[180327] = "Blandón de la Locura",	-- Brazier of Madness	--TODO: this was manually translated
 	[180366] = "Caja de aparejos maltrecha",	-- Battered Tackle Box
 	[180368] = "Tablilla de Locura",	-- Tablet of Madness
 	[180369] = "Aguas fangosas",	-- Muddy Churning Waters
