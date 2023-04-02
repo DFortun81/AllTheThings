@@ -3736,6 +3736,7 @@ for key,value in pairs({
 	[386428] = "Cache de terre primordiale",	-- Primordial Earth Cache
 	[386429] = "Cache de terre primordiale",	-- Primordial Earth Cache
 	[386430] = "Coffre durci",	-- Hardened Chest
+	[386431] = "Cache de terre primordiale",	-- Primordial Earth Cache
 	[386432] = "Coffre durci",	-- Hardened Chest
 	[386433] = "Cache de vent primordial",	-- Primordial Wind Cache
 	[386441] = "Cache de vent primordial",	-- Primordial Wind Cache
@@ -3787,6 +3788,7 @@ for key,value in pairs({
 	[386690] = "Compendium ambigu",	-- Ambiguous Compendium
 	[386762] = "Cache d’armure primordiale",	-- Primordial Armor Cache
 	[387493] = "Poisson unique",	-- Unique Fish
+	[387496] = "Brasero de la Folie",	-- Brazier of Madness
 	[387500] = "Bonhomme de neige glacial",	-- Chilly Snowman
 	[387501] = "Jeton offert par Neltharion",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
@@ -3823,6 +3825,9 @@ for key,value in pairs({
 	[390258] = "Gelée inerte",	-- Inert Goo
 	[390559] = "Boîte de pierres",	-- Box of Rocks
 	[390560] = "Coffre de recherche verrouillé",	-- Locked Research Chest
+	[392025] = "Pièces moulées",	-- Molded Coins
+	[392026] = "Moulage de pièces de Neltharion",	-- Neltharion Coin Mold
+	[392335] = "Cache d’armure primordiale",	-- Primordial Armor Cache
 	[392569] = "Cache primordiale scellée par des chaînes",	-- Chain-Bound Primordial Cache
 	[392570] = "Cache primordiale scellée par des chaînes",	-- Chain-Bound Primordial Cache
 	[392571] = "Coffre-fort scellé par des chaînes",	-- Chain-Bound Strongbox

@@ -1328,7 +1328,7 @@ for key,value in pairs({
 	[179913] = "¡A las armas!",	-- Call to Arms!
 	[180229] = "Montón hudú maldito",	-- Jinxed Hoodoo Pile
 	[180248] = "Banco de pezricos",	-- School of Tastyfish
-	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
+	[180327] = "Blandón de la Locura",	-- Brazier of Madness	--TODO: this was manually translated
 	[180366] = "Caja de aparejos maltrecha",	-- Battered Tackle Box
 	[180368] = "Tablilla de Locura",	-- Tablet of Madness
 	[180369] = "Aguas fangosas",	-- Muddy Churning Waters
@@ -3741,6 +3741,7 @@ for key,value in pairs({
 	[386428] = "Alijo de tierra primordial",	-- Primordial Earth Cache
 	[386429] = "Alijo de tierra primordial",	-- Primordial Earth Cache
 	[386430] = "Cofre endurecido",	-- Hardened Chest
+	[386431] = "Alijo de tierra primordial",	-- Primordial Earth Cache
 	[386432] = "Cofre endurecido",	-- Hardened Chest
 	[386433] = "Alijo de viento primordial",	-- Primordial Wind Cache
 	[386441] = "Alijo de viento primordial",	-- Primordial Wind Cache
@@ -3792,6 +3793,7 @@ for key,value in pairs({
 	[386690] = "Compendio ambiguo",	-- Ambiguous Compendium
 	[386762] = "Alijo de armaduras primordiales",	-- Primordial Armor Cache
 	[387493] = "Pez único",	-- Unique Fish
+	[387496] = "Blandón de la Locura",	-- Brazier of Madness
 	[387500] = "Muñeco de nieve gélido",	-- Chilly Snowman
 	[387501] = "Vale de obsequio de Neltharion",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
@@ -3828,6 +3830,9 @@ for key,value in pairs({
 	[390258] = "Baba inerte",	-- Inert Goo
 	[390559] = "Caja de piedras",	-- Box of Rocks
 	[390560] = "Cofre de investigación cerrado",	-- Locked Research Chest
+	[392025] = "Monedas moldeadas",	-- Molded Coins
+	[392026] = "Molde de monedas de Neltharion",	-- Neltharion Coin Mold
+	[392335] = "Alijo de armaduras primordiales",	-- Primordial Armor Cache
 	[392569] = "Alijo primordial protegido con cadenas",	-- Chain-Bound Primordial Cache
 	[392570] = "Alijo primordial protegido con cadenas",	-- Chain-Bound Primordial Cache
 	[392571] = "Caja fuerte protegida con cadenas",	-- Chain-Bound Strongbox
