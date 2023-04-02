@@ -96,6 +96,27 @@ settings.AUDIO_REPORT_TABLE = {
 };
 
 -- Settings Class
+local Things = {
+	"Achievements",
+	"AzeriteEssences",
+	"BattlePets",
+	"Conduits",
+	"FlightPaths",
+	"Followers",
+	"Heirlooms",
+	"HeirloomUpgrades",
+	"Illusions",
+	"Mounts",
+	"MusicRollsAndSelfieFilters",
+	"Quests",
+	"QuestsLocked",
+	"Recipes",
+	"Reputations",
+	"RuneforgeLegendaries",
+	"Titles",
+	"Toys",
+	"Transmog",
+};
 local GeneralSettingsBase = {
 	__index = {
 		["AccountMode"] = false,
@@ -1158,6 +1179,27 @@ settings.ForceRefreshFromToggle = function(self)
 		self:UpdateMode("FORCE");
 	end
 end
+-- Setup tracking for all Things based on the Settings value, or whether it is forcibly tracked or forced AccountWide
+settings.SetThingTracking = function(self, force)
+	if force == "Debug" then
+		for _,thing in ipairs(Things) do
+			app["AccountWide"..thing] = true;
+			app["Collectible"..thing] = true;
+		end
+	elseif force == "Account" then
+		for _,thing in ipairs(Things) do
+			app["AccountWide"..thing] = true;
+			app["Collectible"..thing] = self:Get("Thing:"..thing);
+		end
+	else
+		local accountWideThing;
+		for _,thing in ipairs(Things) do
+			accountWideThing = "AccountWide:"..thing;
+			app[accountWideThing] = self:Get(accountWideThing);
+			app["Collectible"..thing] = self:Get("Thing:"..thing);
+		end
+	end
+end
 settings.UpdateMode = function(self, doRefresh)
 	if self:Get("Completionist") then
 		app.ItemSourceFilter = app.FilterItemSource;
@@ -1186,43 +1228,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.DefaultGroupFilter = self:Get("Show:CompletedGroups") and app.NoFilter or app.Filter;
 		app.DefaultThingFilter = self:Get("Show:CollectedThings") and app.NoFilter or app.Filter;
 
-		app.AccountWideAchievements = true;
-		app.AccountWideAzeriteEssences = true;
-		app.AccountWideBattlePets = true;
-		app.AccountWideConduits = true;
-		app.AccountWideFlightPaths = true;
-		app.AccountWideFollowers = true;
-		app.AccountWideIllusions = true;
-		app.AccountWideMounts = true;
-		app.AccountWideMusicRollsAndSelfieFilters = true;
-		app.AccountWideQuests = true;
-		app.AccountWideRecipes = true;
-		app.AccountWideReputations = true;
-		app.AccountWideSelfieFilters = true;
-		app.AccountWideTitles = true;
-		app.AccountWideToys = true;
-		app.AccountWideTransmog = true;
-
-		app.CollectibleAchievements = true;
-		app.CollectibleAzeriteEssences = true;
-		app.CollectibleBattlePets = true;
-		app.CollectibleConduits = true;
-		app.CollectibleFlightPaths = true;
-		app.CollectibleFollowers = true;
-		app.CollectibleHeirlooms = true;
-		app.CollectibleHeirloomUpgrades = true;
-		app.CollectibleIllusions = true;
-		app.CollectibleMounts = true;
-		app.CollectibleMusicRollsAndSelfieFilters = true;
-		app.CollectibleQuests = true;
-		app.CollectibleQuestsLocked = true;
-		app.CollectibleRecipes = true;
-		app.CollectibleReputations = true;
-		app.CollectibleRuneforgeLegendaries = true;
-		app.CollectibleTitles = true;
-		app.CollectibleToys = true;
-		app.CollectibleTransmog = true;
-
+		settings:SetThingTracking("Debug");
 		app.MODE_ACCOUNT = nil;
 		app.MODE_DEBUG = true;
 	else
@@ -1248,26 +1254,6 @@ settings.UpdateMode = function(self, doRefresh)
 			app.ShowTrackableThings = app.Filter;
 		end
 
-		app.CollectibleAchievements = self:Get("Thing:Achievements");
-		app.CollectibleAzeriteEssences = self:Get("Thing:AzeriteEssences");
-		app.CollectibleBattlePets = self:Get("Thing:BattlePets");
-		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
-		app.CollectibleFollowers = self:Get("Thing:Followers");
-		app.CollectibleConduits = self:Get("Thing:Conduits");
-		app.CollectibleHeirlooms = self:Get("Thing:Heirlooms");
-		app.CollectibleHeirloomUpgrades = self:Get("Thing:HeirloomUpgrades");
-		app.CollectibleIllusions = self:Get("Thing:Illusions");
-		app.CollectibleMounts = self:Get("Thing:Mounts");
-		app.CollectibleMusicRollsAndSelfieFilters = self:Get("Thing:MusicRollsAndSelfieFilters");
-		app.CollectibleQuests = self:Get("Thing:Quests");
-		app.CollectibleQuestsLocked = self:Get("Thing:QuestsLocked");
-		app.CollectibleRecipes = self:Get("Thing:Recipes");
-		app.CollectibleReputations = self:Get("Thing:Reputations");
-		app.CollectibleRuneforgeLegendaries = self:Get("Thing:RuneforgeLegendaries");
-		app.CollectibleTitles = self:Get("Thing:Titles");
-		app.CollectibleToys = self:Get("Thing:Toys");
-		app.CollectibleTransmog = self:Get("Thing:Transmog");
-
 		if self:Get("AccountMode") then
 			app.ItemTypeFilter = app.NoFilter;
 			app.ClassRequirementFilter = app.NoFilter;
@@ -1282,21 +1268,7 @@ settings.UpdateMode = function(self, doRefresh)
 			end
 
 			-- Force Account-Wide with Account Mode otherwise you get really dumb situations
-			app.AccountWideAchievements = true;
-			app.AccountWideAzeriteEssences = true;
-			app.AccountWideBattlePets = true;
-			app.AccountWideFlightPaths = true;
-			app.AccountWideFollowers = true;
-			app.AccountWideConduits = true;
-			app.AccountWideIllusions = true;
-			app.AccountWideMounts = true;
-			app.AccountWideMusicRollsAndSelfieFilters = true;
-			app.AccountWideQuests = true;
-			app.AccountWideRecipes = true;
-			app.AccountWideReputations = true;
-			app.AccountWideTitles = true;
-			app.AccountWideToys = true;
-			app.AccountWideTransmog = true;
+			settings:SetThingTracking("Account");
 		else
 			app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
 			app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
@@ -1305,22 +1277,7 @@ settings.UpdateMode = function(self, doRefresh)
 			app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 			app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
 
-			app.AccountWideAchievements = self:Get("AccountWide:Achievements");
-			app.AccountWideAzeriteEssences = self:Get("AccountWide:AzeriteEssences");
-			app.AccountWideBattlePets = self:Get("AccountWide:BattlePets");
-			app.AccountWideFlightPaths = self:Get("AccountWide:FlightPaths");
-			app.AccountWideFollowers = self:Get("AccountWide:Followers");
-			app.AccountWideConduits = self:Get("AccountWide:Conduits");
-			app.AccountWideIllusions = self:Get("AccountWide:Illusions");
-			app.AccountWideMounts = self:Get("AccountWide:Mounts");
-			app.AccountWideMusicRollsAndSelfieFilters = self:Get("AccountWide:MusicRollsAndSelfieFilters");
-			app.AccountWideQuests = self:Get("AccountWide:Quests");
-			app.AccountWideRecipes = self:Get("AccountWide:Recipes");
-			app.AccountWideReputations = self:Get("AccountWide:Reputations");
-			app.AccountWideTitles = self:Get("AccountWide:Titles");
-			app.AccountWideToys = self:Get("AccountWide:Toys");
-			app.AccountWideTransmog = self:Get("AccountWide:Transmog");
-
+			settings:SetThingTracking();
 			app.MODE_ACCOUNT = nil;
 		end
 
