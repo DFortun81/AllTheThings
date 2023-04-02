@@ -333,7 +333,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
-					["coord"] = { 78.4, 38.8, OHNAHRAN_PLAINS },
+					["coord"] = { 78.4, 38.8, THE_AZURE_SPAN },
 				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201298, {	-- Docile Fiery Soul
