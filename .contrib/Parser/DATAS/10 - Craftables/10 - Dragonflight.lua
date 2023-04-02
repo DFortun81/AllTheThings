@@ -1058,57 +1058,57 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71508, 382326);	-- High Intensity Thermal Scanner
 			FirstCraft(71507, 382325);	-- Projectile Propulsion Pinion
 			-- Fireworks
-			FirstCraft(71869, 384313); -- Black Fireflight
-			FirstCraft(71872, 382403); -- Blue Fireflight
-			FirstCraft(71877, 384314); -- Bronze Fireflight
-			FirstCraft(71868, 382327); -- Bundle of Fireworks
-			FirstCraft(71879, 382335); -- Green Fireflight
-			FirstCraft(71882, 382404); -- Red Fireflight
+			FirstCraft(71869, 384313);	-- Black Fireflight
+			FirstCraft(71872, 382403);	-- Blue Fireflight
+			FirstCraft(71877, 384314);	-- Bronze Fireflight
+			FirstCraft(71868, 382327);	-- Bundle of Fireworks
+			FirstCraft(71879, 382335);	-- Green Fireflight
+			FirstCraft(71882, 382404);	-- Red Fireflight
 			-- Explosives
-			FirstCraft(71462, 382330); -- Creature Combustion Canister
-			FirstCraft(71466, 382355); -- EZ-Thro Creature Combustion Canister
-			FirstCraft(71465, 382356); -- EZ-Thro Gravitational Displacer
-			FirstCraft(71459, 386670); -- EZ-Thro Grease Grenade
-			FirstCraft(71467, 382357); -- EZ-Thro Primal Deconstruction Charge
-			FirstCraft(71460, 382343); -- Gravitational Displacer
-			FirstCraft(71461, 382323); -- Grease Grenade
-			FirstCraft(71437, 382353); -- I.W.I.N Button Mk10
-			FirstCraft(71463, 382322); -- Primal Deconstruction Charge
-			FirstCraft(71464, 382333); -- Sticky Warp Grenade
-			FirstCraft(71453, 382358); -- Suspiciously Silent Crate
-			FirstCraft(71452, 382354); -- Suspiciously Ticking Crate
+			FirstCraft(71462, 382330);	-- Creature Combustion Canister
+			FirstCraft(71466, 382355);	-- EZ-Thro Creature Combustion Canister
+			FirstCraft(71465, 382356);	-- EZ-Thro Gravitational Displacer
+			FirstCraft(71459, 386670);	-- EZ-Thro Grease Grenade
+			FirstCraft(71467, 382357);	-- EZ-Thro Primal Deconstruction Charge
+			FirstCraft(71460, 382343);	-- Gravitational Displacer
+			FirstCraft(71461, 382323);	-- Grease Grenade
+			FirstCraft(71437, 382353);	-- I.W.I.N Button Mk10
+			FirstCraft(71463, 382322);	-- Primal Deconstruction Charge
+			FirstCraft(71464, 382333);	-- Sticky Warp Grenade
+			FirstCraft(71453, 382358);	-- Suspiciously Silent Crate
+			FirstCraft(71452, 382354);	-- Suspiciously Ticking Crate
 			-- Devices
-			FirstCraft(71866, 382408); -- Atomic Recalibrator
-			FirstCraft(71863, 382368); -- Centralized Precipitation Emitter
-			FirstCraft(71885, 382371); -- Element-Infused Rocket Helmet
-			FirstCraft(71865, 382369); -- Environmental Emulator
-			FirstCraft(71887, 382370); -- Giggle Goggles
-			FirstCraft(71499, 382336); -- H.E.L.P
-			FirstCraft(71891, 382407); -- Neural Silencer Mk3
-			FirstCraft(71889, 382338); -- Portable Alchemist's Lab Bench
-			FirstCraft(71890, 382337); -- Portable Tinker's Workbench
-			FirstCraft(71471, 382328); -- S.A.V.I.O.R
-			FirstCraft(72711, 396777); -- Tinker Removal Kit
-			FirstCraft(71888, 382367); -- Wyrmhole Generator: Dragon Isles
-			FirstCraft(71456, 387246); -- Zapthrottle Soul Inhaler
+			FirstCraft(71866, 382408);	-- Atomic Recalibrator
+			FirstCraft(71863, 382368);	-- Centralized Precipitation Emitter
+			FirstCraft(71885, 382371);	-- Element-Infused Rocket Helmet
+			FirstCraft(71865, 382369);	-- Environmental Emulator
+			FirstCraft(71887, 382370);	-- Giggle Goggles
+			FirstCraft(71499, 382336);	-- H.E.L.P
+			FirstCraft(71891, 382407);	-- Neural Silencer Mk3
+			FirstCraft(71889, 382338);	-- Portable Alchemist's Lab Bench
+			FirstCraft(71890, 382337);	-- Portable Tinker's Workbench
+			FirstCraft(71471, 382328);	-- S.A.V.I.O.R
+			FirstCraft(72711, 396777);	-- Tinker Removal Kit
+			FirstCraft(71888, 382367);	-- Wyrmhole Generator: Dragon Isles
+			FirstCraft(71456, 387246);	-- Zapthrottle Soul Inhaler
 			-- Profession Equipment
-			FirstCraft(71496, 382339); -- Bottomless Mireslush Ore Satchel
-			FirstCraft(71495, 382393); -- Bottomless Stonecrust Ore Satchel
-			FirstCraft(71485, 382398); -- Draconium Brainwave Amplifier
-			FirstCraft(71493, 382392); -- Draconium Delver's Helmet
-			FirstCraft(71487, 382397); -- Draconium Encased Samophlange
-			FirstCraft(71489, 382394); -- Draconium Fisherfriend
-			FirstCraft(71486, 382400); -- Khaz'gorite Brainwave Amplifier
-			FirstCraft(71494, 382341); -- Khaz'gorite Delver's Helmet
-			FirstCraft(71488, 382399); -- Khaz'gorite Encased Samophlange
-			FirstCraft(71490, 382329); -- Khaz'gorite Fisherfriend
-			FirstCraft(71491, 382395); -- Lapidary's Draconium Clamps
-			FirstCraft(71492, 382342); -- Lapidary's Khaz'gorite Clamps
-			FirstCraft(71497, 382396); -- Spring-Loaded Draconium Fabric Cutters
-			FirstCraft(71498, 382340); -- Spring-Loaded Khaz'gorite Fabric Cutters
+			FirstCraft(71496, 382339);	-- Bottomless Mireslush Ore Satchel
+			FirstCraft(71495, 382393);	-- Bottomless Stonecrust Ore Satchel
+			FirstCraft(71485, 382398);	-- Draconium Brainwave Amplifier
+			FirstCraft(71493, 382392);	-- Draconium Delver's Helmet
+			FirstCraft(71487, 382397);	-- Draconium Encased Samophlange
+			FirstCraft(71489, 382394);	-- Draconium Fisherfriend
+			FirstCraft(71486, 382400);	-- Khaz'gorite Brainwave Amplifier
+			FirstCraft(71494, 382341);	-- Khaz'gorite Delver's Helmet
+			FirstCraft(71488, 382399);	-- Khaz'gorite Encased Samophlange
+			FirstCraft(71490, 382329);	-- Khaz'gorite Fisherfriend
+			FirstCraft(71491, 382395);	-- Lapidary's Draconium Clamps
+			FirstCraft(71492, 382342);	-- Lapidary's Khaz'gorite Clamps
+			FirstCraft(71497, 382396);	-- Spring-Loaded Draconium Fabric Cutters
+			FirstCraft(71498, 382340);	-- Spring-Loaded Khaz'gorite Fabric Cutters
 			-- Robotics
-			FirstCraft(71458, 382331); -- D.U.C.K.O.Y
-			FirstCraft(71892, 382332); -- Quack-E
+			FirstCraft(71458, 382331);	-- D.U.C.K.O.Y
+			FirstCraft(71892, 382332);	-- Quack-E
 			-- Artisan Curios
 			--q(TODO, { ["name"] = "First Craft: Gnomish Voicebox", ["timeline"] = {ADDED_10_0_7}}),
 		})),
