@@ -862,7 +862,12 @@ for key,value in pairs({
 		[-1140] = "瓦德拉肯联军",										-- Valdrakken Accord
 		[-1143] = "每30分钟稀有",										-- TODO: DF Rare Rotation
 		[-1144] = "每周专业知识",										-- Weekly Profession Header
+		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
+		--TODO: [-1151] = "Bartering",								-- Bartering
+		--TODO: [-1152] = "First Crafts",							-- First Crafts
 		[-1200] = "兹斯克拉宝库",										-- Zskera Vaults
+		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
+		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
@@ -1338,7 +1343,7 @@ for key, value in pairs({
 	[179913] = "作战公告！",	-- Call to Arms!	--TODO: This was taken from wotlk Wowhead
 	[180229] = "厄运巫毒堆",	-- Jinxed Hoodoo Pile	--TODO: This was taken from wotlk Wowhead
 	[180248] = "可口鱼",	-- School of Tastyfish	--TODO: This was taken from wotlk Wowhead
-	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
+	[180327] = "疯狂之缘的火盆",	-- Brazier of Madness	--TODO: this was manually translated
 	[180366] = "破碎的工具箱",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "疯狂石板",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
 	[180369] = "混浊的水",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
@@ -3751,6 +3756,7 @@ for key, value in pairs({
 	--TODO: [386428] = "Primordial Earth Cache",	-- Primordial Earth Cache
 	--TODO: [386429] = "Primordial Earth Cache",	-- Primordial Earth Cache
 	--TODO: [386430] = "Hardened Chest",	-- Hardened Chest
+	--TODO: [386431] = "Primordial Earth Cache",	-- Primordial Earth Cache
 	--TODO: [386432] = "Hardened Chest",	-- Hardened Chest
 	--TODO: [386433] = "Primordial Wind Cache",	-- Primordial Wind Cache
 	--TODO: [386441] = "Primordial Wind Cache",	-- Primordial Wind Cache
@@ -3802,6 +3808,8 @@ for key, value in pairs({
 	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
 	--TODO: [386762] = "Primordial Armor Cache",	-- Primordial Armor Cache
 	--TODO: [387493] = "Unique Fish",	-- Unique Fish
+	[387496] = "疯狂之缘的火盆",	-- Brazier of Madness	--TODO: this was manually translated
+	--TODO: [387500] = "Chilly Snowman",	-- Chilly Snowman
 	--TODO: [387501] = "Neltharion Gift Token",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
 	--TODO: [387728] = "Opera of the Aspects",	-- Opera of the Aspects
@@ -3813,6 +3821,7 @@ for key, value in pairs({
 	--TODO: [388866] = "Reagent Pot",	-- Reagent Pot
 	--TODO: [388876] = "Reagent Pot",	-- Reagent Pot
 	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	--TODO: [388905] = "Neltharion Toolkit",	-- Neltharion Toolkit
 	--TODO: [388908] = "Inert Goo",	-- Inert Goo
 	--TODO: [389102] = "Prismatic Fragment",	-- Prismatic Fragment
 	--TODO: [389104] = "Prismatic Fragment",	-- Prismatic Fragment
@@ -3828,13 +3837,17 @@ for key, value in pairs({
 	--TODO: [389599] = "Ice Spike",	-- Ice Spike
 	--TODO: [389789] = "Primordial Earth Cache",	-- Primordial Earth Cache
 	--TODO: [389902] = "Primordial Earth Cache",	-- Primordial Earth Cache
-	--TODO: [390008] = "Ice Spike",	-- Ice Spike
+	--TODO: [390008] = "Ice",	-- Ice
 	--TODO: [390009] = "Box of Rocks",	-- Box of Rocks
 	--TODO: [390074] = "Primordial Deep Ocean Cache",	-- Primordial Deep Ocean Cache
 	--TODO: [390136] = "Spore-bound Essence",	-- Spore-bound Essence
 	--TODO: [390257] = "Stuffed Bear",	-- Stuffed Bear
 	--TODO: [390258] = "Inert Goo",	-- Inert Goo
 	--TODO: [390559] = "Box of Rocks",	-- Box of Rocks
+	--TODO: [390560] = "Locked Research Chest",	-- Locked Research Chest
+	--TODO: [392025] = "Molded Coins",	-- Molded Coins
+	--TODO: [392026] = "Neltharion Coin Mold",	-- Neltharion Coin Mold
+	--TODO: [392335] = "Primordial Armor Cache",	-- Primordial Armor Cache
 	--TODO: [392569] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392570] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392571] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
@@ -3846,6 +3859,8 @@ for key, value in pairs({
 	--TODO: [393222] = "Supply Trunk",	-- Supply Trunk
 	--TODO: [393282] = "Balloon Box",	-- Balloon Box
 	--TODO: [393283] = "Balloon Box",	-- Balloon Box
+	--TODO: [398200] = "Forgotten Lockbox",	-- Forgotten Lockbox
+	--TODO: [398770] = "Box of Rocks",	-- Box of Rocks
 	--TODO: [398778] = "Disgusting Vat",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone

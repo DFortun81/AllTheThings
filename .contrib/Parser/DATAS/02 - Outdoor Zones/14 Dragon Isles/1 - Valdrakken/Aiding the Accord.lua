@@ -74,5 +74,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
 		q(71243),	-- Weekly Quest?
 		q(72892),	-- After "Aiding the Accord" series
+		q(75260),	-- After "Aiding the Accord" series
 	}),
 }));

@@ -77,7 +77,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 	L.PRESET_UPDATE_SUCCESS = "Группа обновлена успешно.";
 	L.SHOPPING_OP_MISSING_1 = "Группе не назначена операция 'Закупки'.";
 	L.SHOPPING_OP_MISSING_2 = "Введине '/tsm operations', чтобы создать или назначить оную.";
-	L.AUCTIONATOR_GROUPS = "Поиск по группам доступен только при использовании  Auctionator.";
+	L.AUCTIONATOR_GROUPS = "Поиск по группам доступен только при использовании Auctionator.";
 	L.TSM4_ERROR = "TSM4 пока что не совместим с ATT. Если Вы знаете, как создавать Группы, как мы делали это в TSM3, пожалуйста, свяжитесь с Crieve в Дискорде!";
 	L.QUEST_MAY_BE_REMOVED = "Ошибка при получении информации. Это задание, возможно, удалено из игры. ";
 	L.MINUMUM_STANDING = "Требуется отношение не менее, чем";
@@ -300,7 +300,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Включите для отслеживания Азеритовых Сущностей.\n\nПо умолчанию отслеживается на каждом персонаже отдельно.";
 		L.BATTLE_PETS_CHECKBOX_TOOLTIP = "Включите для отслеживания боевых питомцев и спутников. Могут быть обнаружены в открытом мире или в качестве добычи с боссов в различных Подземельях или Рейдах, равно как у торговцев и различных фракций.\n\nОтслеживается на Весь Аккаунт по умолчанию.";
 		L.FLIGHT_PATHS_CHECKBOX = "|cffADD8E6Полёты / Паромные Станции";
-		L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Включите для отслеживания  путей полётов и паромных станций.\n\nЧтобы *собрать* их, начните разговор с распорядителем полётов/паромной станции на каждом континенте.\n\nПримечание: Из-за технологии фазирования, Вам может потребоваться перейти в другую версию локации, чтобы засчитать эти достопримечательности.";
+		L.FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Включите для отслеживания путей полётов и паромных станций.\n\nЧтобы *собрать* их, начните разговор с распорядителем полётов/паромной станции на каждом континенте.\n\nПримечание: Из-за технологии фазирования, Вам может потребоваться перейти в другую версию локации, чтобы засчитать эти достопримечательности.";
 		L.FOLLOWERS_CHECKBOX_TOOLTIP = "Включите для отслеживания соратников и чемпионов.\n\nТо есть: Соратники в Гарнизоне, Чемпионы Оплота Класса в Легионе, Спутники Битвы за Азерот, а также Спутники из Тёмных Земель.";
 		L.HEIRLOOMS_CHECKBOX_TOOLTIP = "Включите для отслеживания разблокирования Наследства и его соответствующих Уровней Улучшения.\n\nНаследство, которое ассоциируется с Облком, фильтруется фильтром Обликов. (отключение обликов всё также отобразит Наследство)\n\nНекоторые предметы, имеющие качество Наследства, также помогают улучшать репутации и могут быть отфильтрованы фильтром Репутации.";
 		L.HEIRLOOMS_UPGRADES_CHECKBOX = "|cffADD8E6+Улучшения";
@@ -545,7 +545,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 	-- About tab
 		L.ABOUT = "Об аддоне";
 		L.ABOUT_1 = " |CFFFFFFFF- модификация для отслеживания коллекции, которая показывает Вам где и как получить всё в игре! У нас большое сообщество в Discord (ссылка внизу), где Вы можете спрашивать, оставлять предложения, а также сообщать об ошибках и пропавших предметах. Если Вы нашли предмет или задание, которые не задокументированы, Вы можете сказать нам в Discord, для более технически подкованных у нас Git, в котором Вы можете участвовать.\n\nПока мы стремимся к выполнению, есть множество вещей, что добавляются в игру с каждым патчем, и если что-то отсутствует, пожалуйста, поймите, у нас небольшая команда, пытающаяся держать темп с изменениями, в то же время собирая Штучки. :D\n\nНе стесняйтесь спрашивать меня во время трансляций, даже если вопрос не связан напрямую с ATT (стандартное программирование аддонов WoW тоже).\nПримечание переводчика: на английском языке.\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Зацените версию All The Things Classic и TBC Classic!\n\nНет, ATT не тот аддон, который ставит иконки в Ваших сумках. Это CanIMogIt и Caerdon Wardrobe!\n\nРекомендуем сайт для сравнения коллекций DataForAzeroth.com от shoogen!|r";
-		L.ABOUT_2 = "Дополнительные Участники: |CFFFFFFFF(в произвольном порядке)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag и весь остальной ALL THE THINGS Discord!\n\nОсобая Благодарность AmiYuy (CanIMogIt) и Caerdon (Caerdon Wardrobe).|r  ";
+		L.ABOUT_2 = "Дополнительные Участники: |CFFFFFFFF(в произвольном порядке)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag и весь остальной ALL THE THINGS Discord!\n\nОсобая Благодарность AmiYuy (CanIMogIt) и Caerdon (Caerdon Wardrobe).|r";
 		L.ABOUT_3 = "\n|CFFFFFFFFВы просто обязаны загрузить их аддоны для иконок коллекций в Ваших сумках!|r";
 
 	-- Binding Localizations
@@ -841,7 +841,12 @@ for key,value in pairs({
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
 		[-1143] = "Редкие DF по расписанию",						-- DF Rare Rotation
 		[-1144] = "Еженедельные Очки Знаний Профессий",				-- Weekly Profession Header
+		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
+		--TODO: [-1151] = "Bartering",								-- Bartering
+		[-1152] = "Первые Крафты",									-- First Crafts
 		[-1200] = "Зкерские хранилища",								-- Zskera Vaults
+		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
+		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",
@@ -3587,7 +3592,7 @@ for key,value in pairs({
 	[380604] = "Таинственное знамя",	-- Mysterious Banner
 	[380605] = "Контрабандное снадобье",	-- Contraband Concoction
 	[380607] = "Опаленная чужеземная ткань",	-- Itinerant Singed Fabric
-	--TODO: [380608] = "Silky Surprise",	-- Silky Surprise
+	[380608] = "Шелковый сюрприз",	-- Silky Surprise
 	[380610] = "Пульсирующая руна земли",	-- Pulsing Earth Rune
 	[380611] = "Фляга с подозрительной водой",	-- Canteen of Suspicious Water
 	[380612] = "Памятка по языку жестов",	-- Sign Language Reference Sheet
@@ -3615,7 +3620,7 @@ for key,value in pairs({
 	[380860] = "Кентаврский рог",	-- Centaur Horn
 	[380902] = "Поля Дикой Ярости",	-- Fields of Ferocity
 	[380918] = "Обломки украшенной узорами статуи",	-- Broken Ornamented Statue
-	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
+	[380991] = "Куча земли",	-- Dirt Mound
 	[381035] = "Великое хранилище",	-- The Great Vault
 	[381045] = "Золотой драконий кубок",	-- Golden Dragon Goblet
 	[381069] = "Полная сеть",	-- Full Fishing Net
@@ -3623,7 +3628,7 @@ for key,value in pairs({
 	[381107] = "Кучка песка",	-- Sand Pile
 	[381108] = "Карта Йенну",	-- Yennu's Map
 	[381110] = "Забытый ларчик самоцветов",	-- Forgotten Jewel Box
-	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
+	[381153] = "Друза рубинов",	-- Ruby Gem Cluster
 	[381157] = "Друза сапфиров",	-- Sapphire Gem Cluster
 	[381158] = "Цеп гнолла-изверга",	-- Gnoll Fiend Flail
 	[381160] = "Затерянный компас",	-- Lost Compass
@@ -3671,7 +3676,7 @@ for key,value in pairs({
 	[382166] = "Рубиновый Пир!",	-- The Ruby Feast!
 	[382180] = "Перегретый пруд лавазубов",	-- Overheated Magma Thresher Pool
 	[382193] = "Сундук стихий",	-- Chest of the Elements
-	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	[382325] = "Друза оникса",	-- Onyx Gem Cluster
 	[382621] = "Консоль катализатора возрождения",	-- Revival Catalyst Console
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
 	[383732] = "Клыкаррские рыболовные снасти",	-- Tuskarr Tacklebox
@@ -3728,6 +3733,7 @@ for key,value in pairs({
 	[386428] = "Тайник изначальной земли",	-- Primordial Earth Cache
 	[386429] = "Тайник изначальной земли",	-- Primordial Earth Cache
 	[386430] = "Укрепленный сундук",	-- Hardened Chest
+	[386431] = "Тайник изначальной земли",	-- Primordial Earth Cache
 	[386432] = "Укрепленный сундук",	-- Hardened Chest
 	[386433] = "Тайник изначального ветра",	-- Primordial Wind Cache
 	[386441] = "Тайник изначального ветра",	-- Primordial Wind Cache
@@ -3779,6 +3785,8 @@ for key,value in pairs({
 	[386690] = "Сомнительный каталог",	-- Ambiguous Compendium
 	[386762] = "Изначальный тайник с доспехами",	-- Primordial Armor Cache
 	[387493] = "Необычная рыба",	-- Unique Fish
+	[387496] = "Жаровня Безумия",	-- Brazier of Madness
+	[387500] = "Замерзший снеговик",	-- Chilly Snowman
 	[387501] = "Подарочный жетон Нелтариона",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
 	[387728] = "Опера Аспектов",	-- Opera of the Aspects
@@ -3789,7 +3797,8 @@ for key,value in pairs({
 	[388712] = "Оперный сундук",	-- Opera Chest
 	[388866] = "Котелок с реагентами",	-- Reagent Pot
 	[388876] = "Котелок с реагентами",	-- Reagent Pot
-	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388895] = "Небрежные записки",	-- Random Scribblings
+	[388905] = "Инструменты Нелтариона",	-- Neltharion Toolkit
 	[388908] = "Безжизненная слизь",	-- Inert Goo
 	[389102] = "Призматический осколок",	-- Prismatic Fragment
 	[389104] = "Призматический осколок",	-- Prismatic Fragment
@@ -3812,6 +3821,10 @@ for key,value in pairs({
 	[390257] = "Чучело медведя",	-- Stuffed Bear
 	[390258] = "Безжизненная слизь",	-- Inert Goo
 	[390559] = "Ящик с камнями",	-- Box of Rocks
+	--TODO: [390560] = "Locked Research Chest",	-- Locked Research Chest
+	[392025] = "Отлитые монеты",	-- Molded Coins
+	[392026] = "Форма для монет Нелтариона",	-- Neltharion Coin Mold
+	[392335] = "Изначальный тайник с доспехами",	-- Primordial Armor Cache
 	[392569] = "Окованный цепями изначальный сундук",	-- Chain-Bound Primordial Cache
 	[392570] = "Окованный цепями изначальный сундук",	-- Chain-Bound Primordial Cache
 	[392571] = "Окованный цепями сейф",	-- Chain-Bound Strongbox
@@ -3823,6 +3836,8 @@ for key,value in pairs({
 	[393222] = "Коробка с припасами",	-- Supply Trunk
 	[393282] = "Ящик из шаров",	-- Balloon Box
 	[393283] = "Ящик из шаров",	-- Balloon Box
+	[398200] = "Позабытый ларец",	-- Forgotten Lockbox
+	[398770] = "Ящик с камнями",	-- Box of Rocks
 	[398778] = "Мерзкий чан",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone

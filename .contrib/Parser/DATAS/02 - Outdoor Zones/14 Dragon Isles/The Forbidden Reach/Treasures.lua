@@ -122,8 +122,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 			}),
 			header(HEADERS.Item, 202669, {	-- Sealed Fish Scroll
 				q(73210),
-				-- q(73211),	-- guessed
-				-- q(73212),	-- guessed
+				q(73211),	
+				q(73212),	
 				q(73213),
 				q(73214),
 				q(73215),

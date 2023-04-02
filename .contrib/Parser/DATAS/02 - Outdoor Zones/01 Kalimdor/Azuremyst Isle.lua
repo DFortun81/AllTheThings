@@ -618,19 +618,19 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(464, {	-- Grey Moth
-					["crs"] = { 62050 },	-- Grey Moth
-					["maps"] = { AMMEN_VALE },
-				}),
-				p(378, {	-- Rabbit
-					["crs"] = { 61080 },	-- Rabbit
-				}),
-				p(397, {	-- Skunk
-					["crs"] = { 61255 },	-- Skunk
-				}),
-				p(379, {	-- Squirrel
-					["crs"] = { 61081 },	-- Squirrel
-				}),
+				["sym"] = {{"select","speciesID",
+					378,	-- Rabbit
+					379,	-- Squirrel
+				}},
+				["g"] = {
+					p(464, {	-- Grey Moth
+						["crs"] = { 62050 },	-- Grey Moth
+						["maps"] = { AMMEN_VALE },
+					}),
+					p(397, {	-- Skunk
+						["crs"] = { 61255 },	-- Skunk
+					}),
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC
@@ -930,7 +930,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuests"] = {
 						9560,	-- Beasts of the Apocalypse
 						9562,	-- Murlocs... Why Here? Why Now?
-					},	
+					},
 					["coord"] = { 46.8, 21.2, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),

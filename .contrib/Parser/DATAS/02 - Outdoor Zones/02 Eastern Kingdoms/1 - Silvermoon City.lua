@@ -40,15 +40,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		["groups"] = {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(459, {	-- Cat
-					["crs"] = { 62019 },	-- Cat
-				}),
-				p(385, {	-- Mouse
-					["crs"] = { 61143 },	-- Mouse
-				}),
-				p(378, {	-- Rabbit
-					["crs"] = { 61080 },	-- Rabbit
-				}),
+				["sym"] = {{"select","speciesID",
+					378,	-- Rabbit
+				}},
+				["g"] = {
+					p(459, {	-- Cat
+						["crs"] = { 62019 },	-- Cat
+					}),
+					p(385, {	-- Mouse
+						["crs"] = { 61143 },	-- Mouse
+					}),
+				},
 			})),
 			-- #endif
 			n(FACTIONS, {
@@ -493,7 +495,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{"select", "itemID", 840 },    -- Heavy Weave Shoes
 					},
 				}),
-				n(16619, {	-- Celana 
+				n(16619, {	-- Celana
 					["coord"] = { 86.0, 36.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -588,7 +590,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				n(16625, {	-- Keeli  
+				n(16625, {	-- Keeli
 					["coord"] = { 61.2, 86.4, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -631,7 +633,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["groups"] = LYNA_GROUPS,
 				}),
-				n(16620, {	-- Mathaleron 
+				n(16620, {	-- Mathaleron
 					["coord"] = { 86.0, 39.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -694,7 +696,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{"select", "itemID", 2529 },	-- zweihander
 					},
 				}),
-				n(16626, {	-- Tynna 
+				n(16626, {	-- Tynna
 					["coord"] = { 60.8, 86.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -725,7 +727,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22775),	-- Suntouched Special Reserve
 					},
 				}),
-				n(16637, {	-- Welethelon 
+				n(16637, {	-- Welethelon
 					["coord"] = { 56.2, 60.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -739,7 +741,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(2524),	-- Truncheon
 					},
 				}),
-				n(16693, {	-- Winthren  
+				n(16693, {	-- Winthren
 					["coord"] = { 60.6, 86.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -822,7 +824,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				n(16636, {	-- Zathanna 
+				n(16636, {	-- Zathanna
 					["coord"] = { 69.8, 65.8, SHATTRATH_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {

@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 30.6, 57.2, THE_FORBIDDEN_REACH },
 							["questID"] = 75056,
 						}),
-						o(390008, {	-- Ice Spike
+						o(390008, {	-- Ice
 							["coord"] = { 30.8, 57.4, THE_FORBIDDEN_REACH },
 							["questID"] = 75117,
 						}),
@@ -1069,6 +1069,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75032),
 		-- Completed
 		q(74432),
+		q(74472),
 		q(74474),
 		q(74475),
 		q(74497),
@@ -1108,8 +1109,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		-- Chains
 		q(75173),	-- Pulled Chain First Floor
 		q(75172),	-- Pulled Chain Second Floor
-		q(75171),	-- Pulled Chain Third Floor
 		q(75170),	-- Pulled Chain Third Floor
+		q(75171),	-- Pulled Chain Fourth Floor
 		q(75174),	-- Pulled Chain Fourth Floor
 		-- Stone Dissolver
 		q(75069),	-- On Primordial Earth Cache 389789

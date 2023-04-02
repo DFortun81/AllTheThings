@@ -298,8 +298,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				p(471, {	-- Robo-Chick
 					["crs"] = { 62119 },	-- Robo-Chick
 				}),
-				p(69, {	-- Snowy Owl
-					["crs"] = { 7554 },	-- Snowy Owl
+				pet(69, {	-- Snowy Owl
 					["description"] = "Starts spawning December 21st. Stops spawning March 20th",
 				}),
 			})),

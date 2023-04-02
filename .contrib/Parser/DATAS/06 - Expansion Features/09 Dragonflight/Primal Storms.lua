@@ -298,12 +298,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			n(SPECIAL, {
 				-- TODO: these actually are not related to Primal Storms. maybe will move to Exp Features > Professions > Special
 				i(200932, {	-- Encaged Airy Soul
-					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					["coord"] = { 24.6, 36.0, OHNAHRAN_PLAINS },
+				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201296, {	-- Docile Airy Soul
 							i(193921),	-- Airy Soul
@@ -312,12 +313,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 				}),
 				i(200936, {	-- Encaged Earthen Soul
-					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					["coord"] = { 49.8, 32.8, THE_WAKING_SHORES },
+				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201297, {	-- Docile Earthen Soul
 							i(193920),	-- Earthen Soul
@@ -326,12 +328,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 				}),
 				i(200931, {	-- Encaged Firey Soul
-					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					["coord"] = { 78.4, 38.8, THE_AZURE_SPAN },
+				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201298, {	-- Docile Fiery Soul
 							i(193362),	-- Fiery Soul
@@ -340,12 +343,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 				}),
 				i(200934, {	-- Encaged Frosty Soul
-					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					["coord"] = { 55.2, 76.6, OHNAHRAN_PLAINS },
+				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201299, {	-- Docile Frosty Soul
 							i(193919),	-- Frosty Soul
@@ -356,19 +360,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			}),
 			petbattle(filter(BATTLE_PETS, {
 				pet(3384, {	-- Storm-Touched Bluefeather (PET!)
-					["cr"] = 192259,	-- Storm-Touched Bluefeather
 					["maps"] = { THALDRASZUS },
 				}),
 				pet(3354, {	-- Storm-Touched Ottuk (PET!)
-					["cr"] = 192256,	-- Storm-Touched Ottuk
 					["maps"] = { THE_AZURE_SPAN },
 				}),
 				pet(3385, {	-- Storm-Touched Stomper (PET!)
-					["cr"] = 192029,	-- Storm-Touched Stomper
 					["maps"] = { THE_WAKING_SHORES },
 				}),
 				pet(3329, {	-- Storm-Touched Timbertooth (PET!)
-					["cr"] = 189660,	-- Storm-Touched Timbertooth
 					["maps"] = { OHNAHRAN_PLAINS },
 				}),
 			})),

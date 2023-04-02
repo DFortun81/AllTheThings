@@ -226,7 +226,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							},
 						}),
 						i(201875, {	-- Arsenal: Cosmic Aspirant's Weapons
-							["questID"] = 74274,
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = {
@@ -254,35 +253,30 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							},
 						}),
 						i(201844, {	-- Ensemble: Cosmic Aspirant's Cloth Armor
-							["questID"] = 74272,
 							["classes"] = CLOTH_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilterDouble(PVP_ASPIRANT, CLOTH),
 						}),
 						i(201843, {	-- Ensemble: Cosmic Aspirant's Leather Armor
-							["questID"] = 74271,
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilterDouble(PVP_ASPIRANT, CLOTH, {192319, 186873}),
 						}),
 						i(201842, {	-- Ensemble: Cosmic Aspirant's Mail Armor
-							["questID"] = 74270,
 							["classes"] = MAIL_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilterDouble(PVP_ASPIRANT, MAIL, {192355, 186909}),
 						}),
 						i(201841, {	-- Ensemble: Cosmic Aspirant's Plate Armor
-							["questID"] = 74269,
 							["classes"] = PLATE_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilterDouble(PVP_ASPIRANT, PLATE, {192390, 186944}),
 						}),
 						i(201877, {	-- Arsenal: Unchained Aspirant's Weapons
-							["questID"] = 74276,
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = {
@@ -297,35 +291,30 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							},
 						}),
 						i(201860, {	-- Ensemble: Unchained Aspirant's Cloth Armor
-							["questID"] = 74255,
 							["classes"] = CLOTH_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, CLOTH),
 						}),
 						i(201859, {	-- Ensemble: Unchained Aspirant's Leather Armor
-							["questID"] = 74253,
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, CLOTH, 185128),
 						}),
 						i(201858, {	-- Ensemble: Unchained Aspirant's Mail Armor
-							["questID"] = 74251,
 							["classes"] = MAIL_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, MAIL, 185205),
 						}),
 						i(201857, {	-- Ensemble: Unchained Aspirant's Plate Armor
-							["questID"] = 74249,
 							["classes"] = PLATE_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, PLATE, 185240),
 						}),
 						i(201878, {	-- Arsenal: Sinful Aspirant's Weapons
-							["questID"] = 74281,
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = {
@@ -340,28 +329,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							},
 						}),
 						i(201868, {	-- Ensemble: Sinful Aspirant's Cloth Armor
-							["questID"] = 74248,
 							["classes"] = CLOTH_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, CLOTH),
 						}),
 						i(201867, {	-- Ensemble: Sinful Aspirant's Leather Armor
-							["questID"] = 74246,
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, CLOTH, 175851),
 						}),
 						i(201866, {	-- Ensemble: Sinful Aspirant's Mail Armor
-							["questID"] = 74244,
 							["classes"] = MAIL_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, MAIL, 178265),
 						}),
 						i(201865, {	-- Ensemble: Sinful Aspirant's Plate Armor
-							["questID"] = 74242,
 							["classes"] = PLATE_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
@@ -1590,7 +1575,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							i(182681),	-- Vengeful Shock
 						})),
 						i(201873, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Arsenal: Cosmic Gladiator's Weapons
-							["questID"] = 74273,
 							["cost"] = { { "i", MOH, 80 } },
 							["sym"] = {
 								{"select", "tierID", SL_TIER},			-- Select Shadowlands
@@ -1617,7 +1601,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							},
 						})),
 						i(201856, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor
-							["questID"] = 74268,
 							["classes"] = { DEATHKNIGHT },
 							["cost"] = { { "i", MOH, 12 } },
 							["sym"] = SymPvPClass(DEATHKNIGHT, {
@@ -1651,7 +1634,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							}),
 						})),
 						i(201855, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Demon Hunter Armor
-							["questID"] = 74267,
 							["classes"] = { DEMONHUNTER },
 							["cost"] = { { "i", MOH, 12 } },
 							["sym"] = SymPvPClass(DEMONHUNTER, {
@@ -1680,7 +1662,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							}),
 						})),
 						i(201854, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Druid Armor
-							["questID"] = 74266,
 							["classes"] = { DRUID },
 							["cost"] = { { "i", MOH, 12 } },
 							["sym"] = SymPvPClass(DRUID, {
@@ -1707,7 +1688,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							}),
 						})),
 						i(201853, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Hunter Armor
-							["questID"] = 74265,
 							["classes"] = { HUNTER },
 							["cost"] = { { "i", MOH, 12 } },
 							["sym"] = SymPvPClass(HUNTER, {
@@ -1744,7 +1724,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							}),
 						})),
 						i(201852, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Mage Armor
-							["questID"] = 74264,
 							["classes"] = { MAGE },
 							["cost"] = { { "i", MOH, 12 } },
 							["sym"] = SymPvPClass(MAGE, {
@@ -1771,7 +1750,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							}),
 						})),
 						i(201851, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Monk Armor
-							["questID"] = 74263,
 							["classes"] = { MONK },
 							["cost"] = { { "i", MOH, 12 } },
 							["sym"] = SymPvPClass(MONK, {
@@ -1797,7 +1775,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							}),
 						})),
 						i(201850, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Paladin Armor
-							["questID"] = 74262,
 							["classes"] = { PALADIN },
 							["cost"] = { { "i", MOH, 12 } },
 							["sym"] = SymPvPClass(PALADIN, {
@@ -1826,7 +1803,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							}),
 						})),
 						i(201849, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Priest Armor
-							["questID"] = 74261,
 							["classes"] = { PRIEST },
 							["cost"] = { { "i", MOH, 12 } },
 							["sym"] = SymPvPClass(PRIEST, {
@@ -1858,7 +1834,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							}),
 						})),
 						i(201848, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Rogue Armor
-							["questID"] = 74260,
 							["classes"] = { ROGUE },
 							["cost"] = { { "i", MOH, 12 } },
 							["sym"] = SymPvPClass(ROGUE, {
@@ -1885,7 +1860,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							}),
 						})),
 						i(201847, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Shaman Armor
-							["questID"] = 74259,
 							["classes"] = { SHAMAN },
 							["cost"] = { { "i", MOH, 12 } },
 							["sym"] = SymPvPClass(SHAMAN, {
@@ -1920,7 +1894,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							}),
 						})),
 						i(201846, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Warlock Armor
-							["questID"] = 74258,
 							["classes"] = { WARLOCK },
 							["cost"] = { { "i", MOH, 12 } },
 							["sym"] = SymPvPClass(WARLOCK, {
@@ -1952,7 +1925,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							}),
 						})),
 						i(201845, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Ensemble: Cosmic Gladiator's Warrior Armor
-							["questID"] = 74257,
 							["classes"] = { WARRIOR },
 							["cost"] = { { "i", MOH, 12 } },
 							["sym"] = SymPvPClass(WARRIOR, {
@@ -1980,7 +1952,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							}),
 						})),
 						i(201876, {	-- Arsenal: Unchained Gladiator's Weapons
-							["questID"] = 74275,
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = {
@@ -1995,35 +1966,30 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							},
 						}),
 						i(201864, {	-- Ensemble: Unchained Gladiator's Cloth Armor
-							["questID"] = 74256,
 							["classes"] = CLOTH_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_GLADIATOR, CLOTH, 185164),
 						}),
 						i(201863, {	-- Ensemble: Unchained Gladiator's Leather Armor
-							["questID"] = 74254,
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_GLADIATOR, CLOTH, 185245),
 						}),
 						i(201862, {	-- Ensemble: Unchained Gladiator's Mail Armor
-							["questID"] = 74252,
 							["classes"] = MAIL_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_GLADIATOR, MAIL, 185280),
 						}),
 						i(201861, {	-- Ensemble: Unchained Gladiator's Plate Armor
-							["questID"] = 74250,
 							["classes"] = PLATE_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_GLADIATOR, PLATE, 185313),
 						}),
 						i(201882, {	-- Arsenal: Sinful Gladiator's Ardenweald Weapons
-							["questID"] = 74280,
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = {
@@ -2040,7 +2006,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							},
 						}),
 						i(201881, {	-- Arsenal: Sinful Gladiator's Bastion Weapons
-							["questID"] = 74279,
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = {
@@ -2057,7 +2022,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							},
 						}),
 						i(201880, {	-- Arsenal: Sinful Gladiator's Maldraxxus Weapons
-							["questID"] = 74278,
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = {
@@ -2074,7 +2038,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							},
 						}),
 						i(201879, {	-- Arsenal: Sinful Gladiator's Revendreth Weapons
-							["questID"] = 74277,
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = {
@@ -2091,28 +2054,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 							},
 						}),
 						i(201872, {	-- Ensemble: Sinful Gladiator's Cloth Armor
-							["questID"] = 74241,
 							["classes"] = CLOTH_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_GLADIATOR, CLOTH, 175888),
 						}),
 						i(201871, {	-- Ensemble: Sinful Gladiator's Leather Armor
-							["questID"] = 74247,
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_GLADIATOR, CLOTH, 178353),
 						}),
 						i(201870, {	-- Ensemble: Sinful Gladiator's Mail Armor
-							["questID"] = 74245,
 							["classes"] = MAIL_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_GLADIATOR, MAIL, 178414),
 						}),
 						i(201869, {	-- Ensemble: Sinful Gladiator's Plate Armor
-							["questID"] = 74243,
 							["classes"] = PLATE_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },

@@ -140,30 +140,30 @@ root(ROOTS.Zones, {
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
-					p(449, {	-- Brown Marmot
-						["crs"] = { 61752 },	-- Brown Marmot
-					}),
-					p(1164, {	-- Cogblade Raptor
-						["crs"] = { 68841 },	-- Cogblade Raptor
-					}),
-					p(378, {	-- Rabbit
-						["crs"] = { 61080 },	-- Rabbit
-					}),
-					p(482, {	-- Rock Viper
-						["crs"] = { 62184 },	-- Rock Viper
-					}),
-					p(528, {	-- Scalded Basilisk Hatchling
-						["crs"] = { 62628 },	-- Scalded Basilisk Hatchling
-					}),
-					p(414, {	-- Scorpid
-						["crs"] = { 61326 },	-- Scorpid
-					}),
-					p(637, {	-- Skittering Cavern Crawler
-						["crs"] = { 62638 },		-- Skittering Cavern Crawler
-					}),
-					p(379, {	-- Squirrel
-						["crs"] = { 61081 },	-- Squirrel
-					}),
+					["sym"] = {{"select","speciesID",
+						378,	-- Rabbit
+						379,	-- Squirrel
+					}},
+					["g"] = {
+						p(449, {	-- Brown Marmot
+							["crs"] = { 61752 },	-- Brown Marmot
+						}),
+						p(1164, {	-- Cogblade Raptor
+							["crs"] = { 68841 },	-- Cogblade Raptor
+						}),
+						p(482, {	-- Rock Viper
+							["crs"] = { 62184 },	-- Rock Viper
+						}),
+						p(528, {	-- Scalded Basilisk Hatchling
+							["crs"] = { 62628 },	-- Scalded Basilisk Hatchling
+						}),
+						p(414, {	-- Scorpid
+							["crs"] = { 61326 },	-- Scorpid
+						}),
+						p(637, {	-- Skittering Cavern Crawler
+							["crs"] = { 62638 },		-- Skittering Cavern Crawler
+						}),
+					},
 				})),
 				-- #endif
 				-- #if ANYCLASSIC

@@ -994,7 +994,7 @@ app.L = {
 		[-2] = app.asset("Interface_Vendor"),												-- Vendors
 		[-3] = app.asset("Category_Holidays"),												-- Holidays
 		[-4] = app.asset("Category_Achievements"),											-- Achievement
-		[-7] = app.asset("Interface_World_boss"),				                            -- World Bosses
+		[-7] = app.asset("Interface_World_boss"),											-- World Bosses
 		[-9] = app.asset("Category_PvP"),													-- Player vs. Player
 		[-10] = "Interface\\Icons\\achievement_reputation_05",								-- Party Sync
 		[-11] = "Interface\\Icons\\inv_misc_crate04horde",									-- Common Box Drops
@@ -1016,7 +1016,7 @@ app.L = {
 		[-28] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",								-- Upper (Blackrock Spire)
 		[-31] = app.asset("Category_Promo"),												-- Promotions
 		[-32] = "Interface\\Icons\\inv_sword_48",											-- Honor Titles
-		[-34] = app.asset("Interface_WorldQuest"),							            	-- World Quests
+		[-34] = app.asset("Interface_WorldQuest"),											-- World Quests
 		[-36] = app.asset("Category_InGameShop"),											-- In-Game Shop
 		[-37] = "Interface\\Icons\\Garrison_Building_MageTower",							-- Discovery
 		[-38] = app.asset("Category_Professions"),											-- Professions
@@ -1107,13 +1107,13 @@ app.L = {
 	-- Junkboxes
 		[-165] = "Interface\\Icons\\inv_box_01",											-- Junkboxes
 	-- Emissary
-		[-169] = app.asset("Interface_Emissary_Callings"),								    -- Emissary Quests
+		[-169] = app.asset("Interface_Emissary_Callings"),									-- Emissary Quests
 	-- Events
 		[-176] = 3753381,																	-- Weekly Holidays
 	-- New Characters
 		[-211] = 1530081,																	-- New Character
 	-- Treasure Chest
-		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
+		[-212] = app.asset("Interface_Tchest"),												-- Treasure Chest
 	-- Dalaran Sub-Zone
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
 	-- PvP
@@ -1234,7 +1234,7 @@ app.L = {
 		[-531] = "Interface\\Icons\\inv_jewelry_amulet_03",									-- Spirit of Competition
 		[-532] = "Interface\\Icons\\ability_shaman_stormstrike",							-- Heroes of the Storm
 		[-533] = "Interface\\Icons\\Inv_misc_rune_01",										-- Hearthstone
-		[-534] = app.asset("Promotion_Collector"),  										-- Collector's Edition
+		[-534] = app.asset("Promotion_Collector"),											-- Collector's Edition
 		[-535] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_LADYLUCK",						-- Trading Card Game
 		[-536] = "Interface\\Icons\\Inv_misc_rune_01",										-- Hearthstone Mercenaries
 		[-537] = "Interface\\Icons\\diabloanniversary_achievement",							-- Diablo 20th Anniversary
@@ -1243,8 +1243,8 @@ app.L = {
 		[-540] = "Interface\\Icons\\inv_stone_02",											-- The Scourge Invasion
 		[-541] = "Interface\\Icons\\spell_holiday_tow_spicecloud",							-- The Silithyst Must Flow
 		[-542] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- The Opening of the Dark Portal
-		[-543] = app.asset("Interface_Linvas"),						                    	-- Legion Invasions
-		[-545] = app.asset("Promotion_Blizzcon"),               							-- Blizzcon
+		[-543] = app.asset("Interface_Linvas"),												-- Legion Invasions
+		[-545] = app.asset("Promotion_Blizzcon"),											-- Blizzcon
 		[-546] = "Interface\\Icons\\achievement_reputation_08",								-- Recruit A Friend
 		[-552] = "Interface\\Icons\\INV_Mace_1H_Doomhammer",								-- Warcraft 3 Spoils of War Edition
 		[-553] = "Interface\\Icons\\INV_Drink_33_BloodRedAle",								-- iCoke
@@ -1252,7 +1252,7 @@ app.L = {
 		[-565] = "Interface\\Icons\\Ability_pet_baneling",									-- Starcraft II: Heart of the Swarm
 		[-566] = "Interface\\Icons\\DiabloAnniversary_HoradricCube",						-- Diablo III
 		[-568] = "Interface\\Icons\\inv_pet_babywinston",									-- Overwatch: Origins
-		[-573] = app.asset("Promotion_Scroll_of_Rez"),      								-- Scroll of Resurrection
+		[-573] = app.asset("Promotion_Scroll_of_Rez"),										-- Scroll of Resurrection
 		[-575] = "Interface\\Icons\\DiabloAnniversary_HoradricCube",						-- Diablo III: Reaper of Souls
 		[-576] = "Interface\\Icons\\inv_archonpet",											-- StarCraft II: Legacy of the Void
 		[-577] = "Interface\\Icons\\INV_MISC_FILM_01",										-- Warcraft Movie
@@ -1265,7 +1265,6 @@ app.L = {
 		[-584] = app.asset("Expansion_DF"),													-- Dragonflight Seasonal Promotions
 		[-585] = "Interface\\Icons\\DiabloAnniversary_HoradricCube",						-- Diablo IV
 		[-586] = 136101,																	-- Amazon Prime Gaming
-
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed

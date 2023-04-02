@@ -9773,7 +9773,7 @@ local function CacheInfo(t, field)
 	-- speciesName, speciesIcon, petType, companionID, tooltipSource, tooltipDescription, isWild,
 	-- canBattle, isTradeable, isUnique, obtainable, creatureDisplayID = C_PetJournal.GetPetInfoBySpeciesID(speciesID)
 	local speciesName, speciesIcon, petType, _, _, tooltipDescription, _, _, _, _, _, creatureDisplayID = C_PetJournal_GetPetInfoBySpeciesID(id);
-	if speciesName then
+	if speciesName and speciesIcon and petType and tooltipDescription and creatureDisplayID then
 		_t.name = speciesName;
 		_t.icon = speciesIcon;
 		_t.petTypeID = petType;
@@ -9782,7 +9782,12 @@ local function CacheInfo(t, field)
 		if not t.itemID then
 			_t.text = "|cff0070dd"..speciesName.."|r";
 		end
-		if field then return _t[field]; end
+	else
+		_t.name = "Unknown";
+		if not t.itemID then
+			_t.text = "Unknown";
+		end
+	if field then return _t[field]; end
 	end
 end
 local function default_link(t)

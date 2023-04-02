@@ -100,54 +100,133 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		-- #endif
 		tier(SL_TIER, {
 			i(184034), -- Stony's Infused Ruby
-			tier(SL_TIER, 2.0, {
-				pet(3246),	-- Tezpet
-			}),
+
+			-- 9.2.0
+			tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
+				pet(3246, {	-- Tezpet
+					["modelID"] = 92261,
+				}),
+			})),
 		}),
 		tier(DF_TIER, {
-			tier(DF_TIER, 0.01, {
-				i(193614),	-- Groundshaker (PET!)
-				i(193373),	-- Phoenix Wishwing (PET!)
-				i(193380),	-- Pink Salamanther (PET!)
-				i(193587),	-- Time-Lost Duck (PET!)
-				i(193377),	-- Time-Lost Phoenix Hatchling (PET!)
-				i(193429),	-- Time-Lost Salamanther (PET!)
-				i(193620),	-- Time-Lost Slyvern (PET!)
-				i(193068),	-- Time-Lost Treeflitter (PET!)
-				p(3393),	-- Anubisath Idol (PET!)
-				p(3401),	-- Arcantus (PET!)
-				p(3339),	-- Black Dragon Whelp (PET!)
-				p(3387),	-- Bloodbiter (PET!)
-				p(3340),	-- Blue Dragon Whelp (PET!)
-				p(3343),	-- Bronze Dragon Whelp (PET!)
-				p(3398),	-- Cat (PET!)
-				p(3400),	-- Chicken (PET!)
-				p(3397),	-- Cockroach (PET!)
-				p(3361),	-- Diamond Crab (PET!)
-				p(3396),	-- Enyobon (PET!)
-				p(3386),	-- Faceripper (PET!)
-				p(3377),	-- Gwosh (PET!)
-				p(3394),	-- Mechanical Pandaren Dragonling (PET!)
-				p(3391),	-- Phantus (PET!)
-				p(3341),	-- Red Dragon Whelp (PET!)
-				p(3362),	-- Sapphire Crab (PET!)
-				p(3392),	-- Skritches (PET!)
-				p(3395),	-- Spectral Tiger Cub (PET!)
-				p(3402),	-- Stormamu (PET!)
-				p(3364),	-- Striped Snakebiter (PET!)
-				p(3268),	-- Swog (PET!)
-				p(3257),	-- Test Beetle (PET!)
-				p(3308),	-- Time-Lost Duckling (PET!)
-				p(3388),	-- Tina (PET!)
-				p(3363),	-- Truesilver Crab (PET!)
-				-- Only Items
-				i(191126),	-- Obsidian Whelpling (PET!)
-				i(192050),	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE] (PET!)
-				i(193863),	-- zzOld - [PH] Dark Baby Vorquin (REUSE) (PET!)
-				i(193063),	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE) (PET!)
-				i(193862),	-- zzOld - [PH] Pale Baby Vorquin (REUSE) (PET!)
-				i(191929),	-- zzOld - [PH] White Flying Squirrel (REUSE) (PET!)
-			}),
+			-- 10.0.0
+			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { "created 10.0.0" } }, {
+				pet(3339, {	-- Black Dragon Whelp (PET!)
+					["name"] = "Black Dragon Whelp",
+					["modelID"] = 107459,
+				}),
+				pet(3340, {	-- Blue Dragon Whelp (PET!)
+					["name"] = "Blue Dragon Whelp",
+					["modelID"] = 107460,
+				}),
+				pet(3343, {	-- Bronze Dragon Whelp (PET!)
+					["name"] = "Bronze Dragon Whelp",
+					["modelID"] = 107461,
+				}),
+				pet(3361, {	-- Diamond Crab (PET!)
+					["modelID"] = 107825,
+				}),
+				pet(3341, {	-- Red Dragon Whelp (PET!)
+					["name"] = "Red Dragon Whelp",
+					["modelID"] = 107464,
+				}),
+				pet(3362, {	-- Sapphire Crab (PET!)
+					["modelID"] = 107826,
+				}),
+				pet(3364, {	-- Striped Snakebiter (PET!)
+					["modelID"] = 107830,
+				}),
+				pet(3257, {	-- Test Beetle (PET!)
+					["modelID"] = 100375,
+				}),
+				pet(3308, {	-- Time-Lost Duckling (PET!)
+					["modelID"] = 106641,
+				}),
+				pet(3363, {	-- Truesilver Crab (PET!)
+					["modelID"] = 107827,
+				}),
+				-- With SpeciesID Attached
+				i(193614, {	-- Groundshaker (PET!)
+					["modelID"] = 106649,
+				}),
+				i(193380, {	-- Pink Salamanther (PET!)
+					["modelID"] = 106629,
+				}),
+				i(193587, {	-- Time-Lost Duck (PET!)
+					["modelID"] = 106635,
+				}),
+				i(193429, {	-- Time-Lost Salamanther (PET!)
+					["modelID"] = 106624,
+				}),
+				i(193620, {	-- Time-Lost Slyvern (PET!)
+					["modelID"] = 106661,
+				}),
+				i(193068, {	-- Time-Lost Treeflitter (PET!)
+					["modelID"] = 106606,
+				}),
+				-- Without SpeciesID Attached
+				i(191126, {	-- Obsidian Whelpling (PET!)
+					["modelID"] = 107454,
+				}),
+				i(192050, {	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE] (PET!)
+					-- ["modelID"] = ,
+				}),
+				i(193863, {	-- zzOld - [PH] Dark Baby Vorquin (REUSE) (PET!)
+					-- ["modelID"] = ,
+				}),
+				i(193063, {	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE) (PET!)
+					-- ["modelID"] = ,
+				}),
+				i(193862, {	-- zzOld - [PH] Pale Baby Vorquin (REUSE) (PET!)
+					-- ["modelID"] = ,
+				}),
+				i(191929, {	-- zzOld - [PH] White Flying Squirrel (REUSE) (PET!)
+					-- ["modelID"] = ,
+				}),
+			})),
+
+			-- 10.0.5
+			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { "created 10.0.5" } }, {
+				pet(3255, {	-- Buttercup (PET!)
+					["modelID"] = 105497,
+				}),
+				pet(3253, {	-- Crushhoof (PET!)
+					-- ["modelID"] = ,
+				}),
+				pet(3254, {	-- Watcher of the Huntress (PET!)
+					["modelID"] = 105429,
+				}),
+				-- With SpeciesID Attached
+				i(190604, {	-- Buzzworth (PET!)
+					["modelID"] = 111370,
+				}),
+				i(190176, {	-- Drazka'zet the Wrathful (PET!)
+					["modelID"] = 105301,
+				}),
+				i(190173, {	-- Lil' Maka'jin (PET!)
+					["modelID"] = 83638,
+				}),
+			})),
+
+			-- 10.0.7
+			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { "created 10.0.7" } }, {
+				pet(3424, {	-- [DNT] Storm Pet Boss - Epic
+					["modelID"] = 106894,
+				}),
+				pet(3422, {	-- [DNT] Storm Pet Boss - Legendary
+					["modelID"] = 106894,
+				}),
+				pet(3425, {	-- [DNT] Storm Pet Boss - Rare
+					["modelID"] = 106894,
+				}),
+				pet(3423, {	-- [DNT] Storm Pet Fodder
+					["modelID"] = 106894,
+				}),
+				pet(3471, {	-- Gilded Mechafrog
+					["name"] = "Gilded Mechafrog",
+					["modelID"] = 111667,
+				}),
+			})),
 		}),
 	}),
 }));

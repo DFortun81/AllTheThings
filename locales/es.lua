@@ -541,7 +541,7 @@ local L = app.L;
 	-- About tab
 		--TODO: L.ABOUT = "About";
 		--TODO: L.ABOUT_1 = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
-		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
+		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r";
 		--TODO: L.ABOUT_3 = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
 
 	-- Binding Localizations
@@ -857,7 +857,12 @@ for key,value in pairs({
 		[-1140] = "Acuerdo de Valdrakken",							-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
+		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
+		--TODO: [-1151] = "Bartering",								-- Bartering
+		--TODO: [-1152] = "First Crafts",							-- First Crafts
 		[-1200] = "Cámaras de Zskera",								-- Zskera Vaults
+		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
+		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
 	-- Warrior order hall lore items
 		[-2200] = "El gran Odyn y el Señor del Fuego",				-- Great Odyn and the Firelord
 		[-2201] = "El nómada y la serpiente",						-- The Wanderer and the Serpent
@@ -1328,7 +1333,7 @@ for key,value in pairs({
 	[179913] = "¡A las armas!",	-- Call to Arms!
 	[180229] = "Montón hudú maldito",	-- Jinxed Hoodoo Pile
 	[180248] = "Banco de pezricos",	-- School of Tastyfish
-	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
+	[180327] = "Blandón de la Locura",	-- Brazier of Madness	--TODO: this was manually translated
 	[180366] = "Caja de aparejos maltrecha",	-- Battered Tackle Box
 	[180368] = "Tablilla de Locura",	-- Tablet of Madness
 	[180369] = "Aguas fangosas",	-- Muddy Churning Waters
@@ -3522,7 +3527,7 @@ for key,value in pairs({
 	[375988] = "Firim en el exilio, epílogo",	-- Firim in Exile, Epilogue
 	[376041] = "Alijo de claves camuflado",	-- Shrouded Cypher Cache
 	--TODO: [376123] = "Suspicious Bottle",	-- Suspicious Bottle
-	--TODO: [376124] = "Bag of Enchanted Wind",	-- Bag of Enchanted Wind
+	[376124] = "Bolsa de viento encantado",	-- Bag of Enchanted Wind
 	[376175] = "Cofre de suministros Todavela",	-- Fullsails Supply Chest
 	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
 	[376386] = "Túmulo revuelto",	-- Disturbed Dirt
@@ -3741,6 +3746,7 @@ for key,value in pairs({
 	[386428] = "Alijo de tierra primordial",	-- Primordial Earth Cache
 	[386429] = "Alijo de tierra primordial",	-- Primordial Earth Cache
 	[386430] = "Cofre endurecido",	-- Hardened Chest
+	[386431] = "Alijo de tierra primordial",	-- Primordial Earth Cache
 	[386432] = "Cofre endurecido",	-- Hardened Chest
 	[386433] = "Alijo de viento primordial",	-- Primordial Wind Cache
 	[386441] = "Alijo de viento primordial",	-- Primordial Wind Cache
@@ -3785,13 +3791,15 @@ for key,value in pairs({
 	[386633] = "Cofre de las tormentas",	-- Chest of Storms
 	[386648] = "Pergamino misterioso",	-- Mysterious Scroll
 	[386660] = "Montón de oro",	-- Gold Pile
-	--TODO: [386668] = "Shattered Hakkari Bijou",	-- Shattered Hakkari Bijou
-	--TODO: [386669] = "Fragmented Hakkari Bijou",	-- Fragmented Hakkari Bijou
+	[386668] = "Joya Hakkari destrozada",	-- Shattered Hakkari Bijou
+	[386669] = "Joya Hakkari fragmentada",	-- Fragmented Hakkari Bijou
 	[386680] = "Anuario misterioso",	-- Mysterious Almanac
 	[386683] = "Libro abrasado",	-- Seared Book
 	[386690] = "Compendio ambiguo",	-- Ambiguous Compendium
 	[386762] = "Alijo de armaduras primordiales",	-- Primordial Armor Cache
 	[387493] = "Pez único",	-- Unique Fish
+	[387496] = "Blandón de la Locura",	-- Brazier of Madness
+	[387500] = "Muñeco de nieve gélido",	-- Chilly Snowman
 	[387501] = "Vale de obsequio de Neltharion",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
 	[387728] = "Ópera de los Aspectos",	-- Opera of the Aspects
@@ -3802,7 +3810,8 @@ for key,value in pairs({
 	[388712] = "Cofre de la ópera",	-- Opera Chest
 	[388866] = "Olla de componentes",	-- Reagent Pot
 	[388876] = "Olla de componentes",	-- Reagent Pot
-	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388895] = "Garabatos aleatorios",	-- Random Scribblings
+	[388905] = "Juego de herramientas de Neltharion",	-- Neltharion Toolkit
 	[388908] = "Baba inerte",	-- Inert Goo
 	[389102] = "Fragmento prismático",	-- Prismatic Fragment
 	[389104] = "Fragmento prismático",	-- Prismatic Fragment
@@ -3818,13 +3827,17 @@ for key,value in pairs({
 	[389599] = "Púa de hielo",	-- Ice Spike
 	[389789] = "Alijo de tierra primordial",	-- Primordial Earth Cache
 	[389902] = "Alijo de tierra primordial",	-- Primordial Earth Cache
-	--TODO: [390008] = "Ice Spike",	-- Ice Spike
-	--TODO: [390009] = "Box of Rocks",	-- Box of Rocks
+	[390008] = "Hielo",	-- Ice
+	[390009] = "Caja de piedras",	-- Box of Rocks
 	[390074] = "Alijo de océano profundo primordial",	-- Primordial Deep Ocean Cache
 	--TODO: [390136] = "Spore-bound Essence",	-- Spore-bound Essence
 	[390257] = "Oso de peluche",	-- Stuffed Bear
 	[390258] = "Baba inerte",	-- Inert Goo
 	[390559] = "Caja de piedras",	-- Box of Rocks
+	[390560] = "Cofre de investigación cerrado",	-- Locked Research Chest
+	[392025] = "Monedas moldeadas",	-- Molded Coins
+	[392026] = "Molde de monedas de Neltharion",	-- Neltharion Coin Mold
+	[392335] = "Alijo de armaduras primordiales",	-- Primordial Armor Cache
 	[392569] = "Alijo primordial protegido con cadenas",	-- Chain-Bound Primordial Cache
 	[392570] = "Alijo primordial protegido con cadenas",	-- Chain-Bound Primordial Cache
 	[392571] = "Caja fuerte protegida con cadenas",	-- Chain-Bound Strongbox
@@ -3836,6 +3849,8 @@ for key,value in pairs({
 	[393222] = "Baúl de suministros",	-- Supply Trunk
 	[393282] = "Caja de globos",	-- Balloon Box
 	[393283] = "Caja de globos",	-- Balloon Box
+	[398200] = "Arcón olvidado",	-- Forgotten Lockbox
+	[398770] = "Caja de piedras",	-- Box of Rocks
 	[398778] = "Cuba asquerosa",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone

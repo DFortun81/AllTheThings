@@ -206,10 +206,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 	n(-123457, {	-- Common
 		n(ARMOR, {
 			filter(CLOAKS, {
-				i(53048),	-- Doomsday Message	-- TODO Cataclysm
+			--	i(53048),	-- Doomsday Message	-- TODO Cataclysm
 			}),
 			filter(MISC, {
-				i(43486),	-- Mohawk Mask	-- something removed
+			--	i(43486),	-- Mohawk Mask	-- something removed
 			}),
 			filter(FINGER_F, {
 				i(7341),	-- Cubic Zirconia Ring	-- sold by many vendors

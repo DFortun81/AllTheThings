@@ -38215,6 +38215,7 @@ s(15251)/i(33075),	-- Test_NoseAndEars_Hidden(builtByBlue)
 s(15252)/i(33080),	-- Monster - Gun - Outland Raid D04
 s(15253)/i(33089),	-- Monster - Mutton
 s(15254)/i(33094),	-- Monster - Axe, Hatchet B01 Gold
+s(15255)/i(33105),	-- 's Guise of Zul'aman \\ Budd's Guise of Zul'aman
 s(15256)/i(33116),	-- Monster - Axe, 2H D04 Red w/Flames
 s(15257)/i(33118),	-- Socket Test Shoulders [PH] \\ Socket Testing Item
 s(15259)/i(33125),	-- Monster - Item, Tankard Metal (Red Glow)
@@ -65030,26 +65031,11 @@ s(183226)/i(201158),	-- Scepter of Spectacle: Order
 s(183227)/i(201160),	-- Scepter of Spectacle: Earth
 s(183228)/i(201161),	-- Scepter of Spectacle: Air
 10.0.2.46091
+s(184043)/i(201972),	-- Crimson Gladiator's Splitter
 s(184046)/i(201992),	-- Emissary's Flamewrought Seal \\ [PH] BoE Ring
 10.0.2.46259
 s(184086)/i(202041),	-- 
-s(184114)/i(202143),	-- Woven Stone Bracelets
-s(184116)/i(202143),	-- Woven Stone Bracelets
-s(184118)/i(202144),	-- Greathelm of Horned Fury
-s(184119)/i(202144),	-- Greathelm of Horned Fury
-s(184122)/i(202145),	-- Frozen Claw Mantle
-s(184124)/i(202145),	-- Frozen Claw Mantle
-s(184126)/i(202146),	-- Brawler's Earthen Cuirass
-s(184128)/i(202146),	-- Brawler's Earthen Cuirass
-s(184130)/i(202147),	-- Primal Seeker's Leggings
-s(184132)/i(202147),	-- Primal Seeker's Leggings
 s(184133)/i(202148),	-- Emissary's Flamewrought Seal
-s(184135)/i(202149),	-- Primalist Warden's Bracers
-s(184136)/i(202149),	-- Primalist Warden's Bracers
-s(184139)/i(202150),	-- Galvanic Gaiters
-s(184140)/i(202150),	-- Galvanic Gaiters
-s(184143)/i(202151),	-- Lavamancer's Ceremonial Waistguard
-s(184144)/i(202151),	-- Lavamancer's Ceremonial Waistguard
 s(184158)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
 s(184159)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
 10.0.2.46479
@@ -65127,62 +65113,7 @@ s(185914)/i(204876),	--
 s(185915)/i(204875),	-- 
 s(185916)/i(204874),	-- 
 10.0.7.48749
-s(184598)/i(203152),	-- Lionguard Pauldrons
-s(184599)/i(203153),	-- Lionguard Greathelm
-s(184600)/i(203154),	-- Lionguard Greathelm
-s(184601)/i(203155),	-- Lionguard Pauldrons
-s(184602)/i(203156),	-- Lionguard Pauldrons
-s(184603)/i(203157),	-- Lionguard Greathelm
-s(184604)/i(203158),	-- Lionguard Chestplate
-s(184605)/i(203159),	-- Lionguard Chestplate
-s(184606)/i(203160),	-- Lionguard Chestplate
-s(184607)/i(203161),	-- Lionguard Greatbelt
-s(184608)/i(203162),	-- Lionguard Greatbelt
-s(184609)/i(203163),	-- Lionguard Greatbelt
-s(184610)/i(203164),	-- Lionguard Legguards
-s(184611)/i(203165),	-- Lionguard Legguards
-s(184612)/i(203166),	-- Lionguard Legguards
-s(184613)/i(203167),	-- Lionguard Warboots
-s(184614)/i(203168),	-- Lionguard Warboots
-s(184615)/i(203169),	-- Lionguard Warboots
-s(184616)/i(203170),	-- Lionguard Bracers
-s(184617)/i(203171),	-- Lionguard Bracers
-s(184618)/i(203172),	-- Lionguard Bracers
-s(184619)/i(203173),	-- Lionguard Gauntlets
-s(184620)/i(203174),	-- Lionguard Gauntlets
-s(184621)/i(203175),	-- Lionguard Gauntlets
-s(184622)/i(203176),	-- Lionguard Robe
-s(184623)/i(203177),	-- Lionguard Robe
-s(184624)/i(203178),	-- Lionguard Robe
-s(184625)/i(203179),	-- Kosh'aka Casque
-s(184626)/i(203180),	-- Kosh'aka Casque
-s(184627)/i(203181),	-- Kosh'aka Casque
-s(184628)/i(203185),	-- Kosh'aka Spaulders
-s(184629)/i(203186),	-- Kosh'aka Spaulders
-s(184630)/i(203187),	-- Kosh'aka Spaulders
-s(184631)/i(203188),	-- Kosh'aka Cheststraps
-s(184632)/i(203189),	-- Kosh'aka Cheststraps
-s(184633)/i(203190),	-- Kosh'aka Cheststraps
-s(184634)/i(203191),	-- Kosh'aka Girdle
-s(184635)/i(203192),	-- Kosh'aka Girdle
-s(184636)/i(203193),	-- Kosh'aka Girdle
-s(184637)/i(203194),	-- Kosh'aka Legstraps
-s(184638)/i(203195),	-- Kosh'aka Legstraps
-s(184639)/i(203196),	-- Kosh'aka Legstraps
-s(184640)/i(203197),	-- Kosh'aka Greaves
-s(184641)/i(203198),	-- Kosh'aka Greaves
-s(184642)/i(203199),	-- Kosh'aka Greaves
-s(184643)/i(203200),	-- Kosh'aka Armbands
-s(184644)/i(203201),	-- Kosh'aka Armbands
-s(184645)/i(203202),	-- Kosh'aka Armbands
-s(184646)/i(203203),	-- Kosh'aka Grips
-s(184647)/i(203204),	-- Kosh'aka Grips
-s(184648)/i(203205),	-- Kosh'aka Grips
-s(184649)/i(203207),	-- Kosh'aka Drape
-s(184650)/i(203208),	-- Kosh'aka Drape
-s(184651)/i(203209),	-- Kosh'aka Drape
 s(185422)/i(204083),	-- 
-s(185423)/i(204084),	-- Ancestor's Might
 s(185609)/i(204482),	-- 
 10.1.0.48480
 s(184355)/i(202347),	-- 
@@ -67084,7 +67015,6 @@ s(187204)/i(205680),	-- Obsidian Gladiator's Drape
 s(187205)/i(205681),	-- Obsidian Gladiator's Shawl
 s(187206)/i(205681),	-- Obsidian Gladiator's Shawl
 10.1.0.48776
-s(184013)/i(201972),	-- Crimson Gladiator's Splitter
 s(187207)/i(205687),	-- 
 s(187208)/i(205714),	-- Obsidian Aspirant's Plate Helm
 s(187209)/i(205715),	-- Obsidian Aspirant's Silk Robe

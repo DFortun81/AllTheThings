@@ -2640,15 +2640,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(378, {	-- Rabbit
-					["crs"] = { 61080 },	-- Rabbit
-				}),
-				p(379, {	-- Squirrel
-					["crs"] = { 61081 },	-- Squirrel
-				}),
-				p(675, {	-- Stormwind Rat
-					["crs"] = { 62954 },	-- Stormwind Rat
-				}),
+				["sym"] = {{"select","speciesID",
+					378,	-- Rabbit
+					379,	-- Squirrel
+				}},
+				["g"] = {
+					p(675, {	-- Stormwind Rat
+						["crs"] = { 62954 },	-- Stormwind Rat
+					}),
+				},
 			})),
 			-- #endif
 			n(FACTIONS, {
@@ -6981,7 +6981,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(925),		-- flail
 						i(1197),	-- giant mace
 						i(2030),	-- gnarled staff
-						i(2028),	-- hammer	
+						i(2028),	-- hammer
 						i(853),		-- hatchet
 						i(15811),	-- heavy spear
 						i(2207),	-- jambiya

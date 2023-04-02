@@ -541,7 +541,7 @@ local L = app.L;
 	-- About tab
 		--TODO: L.ABOUT = "About";
 		--TODO: L.ABOUT_1 = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
-		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
+		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r";
 		--TODO: L.ABOUT_3 = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
 
 	-- Binding Localizations
@@ -845,7 +845,12 @@ for key,value in pairs({
 		[-1140] = "Accordo di Valdrakken",							-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
+		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
+		--TODO: [-1151] = "Bartering",								-- Bartering
+		--TODO: [-1152] = "First Crafts",							-- First Crafts
 		[-1200] = "Cripte di Zskera",								-- Zskera Vaults
+		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
+		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -1316,7 +1321,7 @@ for key,value in pairs({
 	[179913] = "Call to Arms!",	-- Call to Arms!	--TODO: This was taken from wotlk Wowhead
 	[180229] = "Jinxed Hoodoo Pile",	-- Jinxed Hoodoo Pile	--TODO: This was taken from wotlk Wowhead
 	[180248] = "School of Tastyfish",	-- School of Tastyfish	--TODO: This was taken from wotlk Wowhead
-	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
+	[180327] = "Braciere della Follia",	-- Brazier of Madness	--TODO: this was manually translated
 	[180366] = "Battered Tackle Box",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "Tablet of Madness",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
 	[180369] = "Muddy Churning Waters",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
@@ -3579,7 +3584,7 @@ for key,value in pairs({
 	[380591] = "Luccichio Gelosamente Custodito",	-- Closely Guarded Shiny
 	[380592] = "Corno del Vincolo della Tempesta",	-- Stormbound Horn
 	[380593] = "Borsa di Scaglie Decadute",	-- Bag of Decayed Scales
-	--TODO: [380595] = "Frosted Parchment",	-- Frosted Parchment
+	[380595] = "Cartapecora Gelata",	-- Frosted Parchment
 	[380597] = "Tappeto da Centauro Temprato dalla Battaglia",	-- Battle Hardened Centaur Carpet
 	--TODO: [380598] = "Singed Chest",	-- Singed Chest
 	[380600] = "Scheggia Terrestre Arricchita",	-- Enriched Earthen Shard
@@ -3598,7 +3603,7 @@ for key,value in pairs({
 	[380618] = "Flusso Draconico",	-- Draconic Flux
 	[380619] = "Lingotti bizzarri",	-- Curious Ingots
 	[380620] = "Scheggia di Lancia Antica",	-- Ancient Spear Shards
-	--TODO: [380623] = "Spelltouched Tongs",	-- Spelltouched Tongs
+	[380623] = "Pinze Toccate dalla Magia",	-- Spelltouched Tongs
 	[380643] = "Pergamena Congelata",	-- Flashfrozen Scroll
 	[380647] = "Tomo Arcano Dimenticato",	-- Forgotten Arcane Tomne
 	[380648] = "Libro Bizzarro",	-- Odd Book
@@ -3672,10 +3677,10 @@ for key,value in pairs({
 	[382166] = "Banchetto di Rubino!",	-- The Ruby Feast!
 	[382180] = "Banco di Plesiosauri del Magma Surriscaldato",	-- Overheated Magma Thresher Pool
 	[382193] = "Cassa degli Elementi",	-- Chest of the Elements
-	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	[382325] = "Formazione di Gemme d'Onice",	-- Onyx Gem Cluster
 	[382621] = "Console del Catalizzatore del Ripristino",	-- Revival Catalyst Console
 	[383625] = "Cassa di Pescilume Freschi",	-- Case of Fresh Gleamfish
-	--TODO: [383732] = "Tuskarr Tacklebox",	-- Tuskarr Tacklebox
+	[383732] = "Cassetta da Pescatore dei Tuskarr",	-- Tuskarr Tacklebox
 	[383733] = "Terra Smossa",	-- Disturbed Dirt
 	[383734] = "Terra Smossa",	-- Disturbed Dirt
 	[383735] = "Terra Smossa",	-- Disturbed Dirt
@@ -3729,6 +3734,7 @@ for key,value in pairs({
 	[386428] = "Cassa della Terra Primordiale",	-- Primordial Earth Cache
 	[386429] = "Cassa della Terra Primordiale",	-- Primordial Earth Cache
 	[386430] = "Cassa Indurita",	-- Hardened Chest
+	[386431] = "Cassa della Terra Primordiale",	-- Primordial Earth Cache
 	[386432] = "Cassa Indurita",	-- Hardened Chest
 	[386433] = "Cassa del Vento Primordiale",	-- Primordial Wind Cache
 	[386441] = "Cassa del Vento Primordiale",	-- Primordial Wind Cache
@@ -3780,17 +3786,20 @@ for key,value in pairs({
 	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
 	[386762] = "Cassa dell'Armatura Primordiale",	-- Primordial Armor Cache
 	[387493] = "Pesce Unico",	-- Unique Fish
+	[387496] = "Braciere della Follia",	-- Brazier of Madness	--TODO: this was manually translated
+	[387500] = "Pupazzo di Neve Congelato",	-- Chilly Snowman
 	[387501] = "Emblema Dono di Neltharion",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
 	[387728] = "Teatro degli Aspetti",	-- Opera of the Aspects
 	[387737] = "Libro Vivente",	-- Living Book
 	[387746] = "Cassa dello Spirito Primordiale",	-- Primordial Spirit Cache
-	--TODO: [387749] = "Animate Crystalspine",	-- Animate Crystalspine
+	[387749] = "Vetraculeo Animato",	-- Animate Crystalspine
 	[387853] = "Cristalli Infranti",	-- Shattered Crystals
 	[388712] = "Cassa del Teatro",	-- Opera Chest
 	[388866] = "Vaso dei Reagenti",	-- Reagent Pot
 	[388876] = "Vaso dei Reagenti",	-- Reagent Pot
-	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388895] = "Scarabocchi Casuali",	-- Random Scribblings
+	[388905] = "Set di Attrezzi di Neltharion",	-- Neltharion Toolkit
 	[388908] = "Poltiglia Inerte",	-- Inert Goo
 	[389102] = "Frammento Prismatico",	-- Prismatic Fragment
 	[389104] = "Frammento Prismatico",	-- Prismatic Fragment
@@ -3813,17 +3822,23 @@ for key,value in pairs({
 	[390257] = "Orso di Pezza",	-- Stuffed Bear
 	[390258] = "Poltiglia Inerte",	-- Inert Goo
 	[390559] = "Scatola di Rocce",	-- Box of Rocks
-	--TODO: [392569] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
-	--TODO: [392570] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
+	[390560] = "Cassa della Ricerca Chiusa",	-- Locked Research Chest
+	[392025] = "Monete Stampate",	-- Molded Coins
+	[392026] = "Stampo di Monete di Neltharion",	-- Neltharion Coin Mold
+	[392335] = "Cassa dell'Armatura Primordiale",	-- Primordial Armor Cache
+	[392569] = "Cassa Primordiale Incatenata",	-- Chain-Bound Primordial Cache
+	[392570] = "Cassa Primordiale Incatenata",	-- Chain-Bound Primordial Cache
 	[392571] = "Forziere Incatenato",	-- Chain-Bound Strongbox
 	[392572] = "Forziere Incatenato",	-- Chain-Bound Strongbox
-	--TODO: [392573] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
+	[392573] = "Forziere Incatenato",	-- Chain-Bound Strongbox
 	[393218] = "Cassa dell'Arcano Primordiale",	-- Primordial Arcane Cache
 	[393220] = "Cassa di Pittura Primordiale",	-- Primordial Paint Cache
 	[393221] = "Vaso dei Reagenti",	-- Reagent Pot
 	[393222] = "Baule di Rifornimenti",	-- Supply Trunk
 	[393282] = "Scatola di Palloncini",	-- Balloon Box
 	[393283] = "Scatola di Palloncini",	-- Balloon Box
+	[398200] = "Scrigno Dimenticato",	-- Forgotten Lockbox
+	[398770] = "Scatola di Rocce",	-- Box of Rocks
 	[398778] = "Tinozza Disgustosa",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone

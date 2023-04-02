@@ -599,44 +599,6 @@ p(3156),	-- Hornswoggle
 p(3158),	-- Missing1
 9.1.5.39977
 p(3188),	-- Trub'ul \\ Trouble
-10.0.7.47910
-p(3422),	-- [DNT] Storm Pet Boss - Legendary
-p(3423),	-- [DNT] Storm Pet Fodder
-p(3424),	-- [DNT] Storm Pet Boss - Epic
-p(3425),	-- [DNT] Storm Pet Boss - Rare
-p(3429),	-- Vortex
-p(3430),	-- Tremblor
-p(3431),	-- Wildfire
-p(3432),	-- Flow
-p(3433),	-- Vortex
-p(3434),	-- Tremblor
-p(3435),	-- Wildfire
-p(3436),	-- Flow
-p(3437),	-- Vortex
-p(3438),	-- Tremblor
-p(3439),	-- Wildfire
-p(3440),	-- Flow
-p(3441),	-- Storm-Touched Ohuna
-p(3442),	-- Storm-Touched Skitterer
-p(3443),	-- Storm-Touched Slyvern
-p(3444),	-- Storm-Touched Swoglet
-p(3450),	-- Feral Frogduck
-p(3451),	-- Lord Flappinsby
-p(3452),	-- Enchanted Tuskling
-p(3453),	-- Adinakon
-p(3454),	-- Lyver
-p(3455),	-- Yu'shor
-p(3456),	-- Drakeula
-p(3457),	-- Arctichnid
-p(3458),	-- Kazzquack
-p(3459),	-- Mothoroth
-p(3460),	-- Blu'jaeden
-p(3465),	-- Enok the Stinky
-p(3466),	-- Malfunctioning Matrix
-p(3471),	-- Gilded Mechafrog
-p(3472),	-- Lil' Algalon
-p(3473),	-- Cozmos
-p(3474),	-- Celastro
 10.1.0.48480
 p(3477),	-- Puddlehopper
 p(3478),	-- Rock Martin
@@ -722,7 +684,6 @@ Missing in PetDB.lua
 
 5.0.3.15882
 p(2),	-- Dumptruck \\ Xelnath
-p(69),	-- Snowy Owl
 p(71),	-- 
 p(73),	-- 
 p(154),	-- Lucky
@@ -731,10 +692,7 @@ p(257),	-- Murkimus the Gladiator
 p(344),	-- Green Balloon
 p(345),	-- Yellow Balloon
 p(354),	-- PattyMack - WildBattlePet Test
-p(374),	-- Black Lamb
 p(375),	-- The Gurkster
-p(378),	-- Rabbit
-p(379),	-- Squirrel
 p(380),	-- Bucktooth Flapper
 p(383),	-- Eternal Strider
 p(384),	-- Otter Pup
@@ -1929,31 +1887,12 @@ p(3156),	-- Hornswoggle
 p(3158),	-- Missing1
 9.1.5.39977
 p(3153),	-- Blinky
+p(3177),	-- Drakks
 p(3188),	-- Trub'ul \\ Trouble
 9.2.0.41089
-p(3173),	-- Bufonid Croaker
-p(3180),	-- Venomous Bufonid
-p(3190),	-- Vicious Leporid
-p(3191),	-- Timid Leporid
-p(3196),	-- Proto Avian Fledgling
-p(3200),	-- Scarlet Proto Avian
-p(3202),	-- Tarachnid Stalker
-p(3203),	-- Tarachnid Ambusher
-p(3205),	-- Metallic Scarabid
-p(3206),	-- Emerald Scarabid
-p(3208),	-- Red Viperid
-p(3209),	-- King Viperid
-p(3210),	-- Green Viperid
-p(3212),	-- Bloodsucker Vespoid
-p(3213),	-- Vombata Pup
-p(3214),	-- Momma Vombata
-p(3215),	-- Mawtouched Geomental
-p(3216),	-- Ambystan Snapper
-p(3217),	-- Aurelid Floater
-p(3218),	-- Enraged Poultrid
-p(3219),	-- Predatory Helicid \\ Predatory Gastropod
-9.2.0.41726
-p(3246),	-- Tezpet
+p(3175),	-- Murkastrasza
+9.2.5.42850
+p(3249),	-- Lil' Ursoc
 10.1.0.48480
 p(3477),	-- Puddlehopper
 p(3478),	-- Rock Martin

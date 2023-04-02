@@ -1965,7 +1965,6 @@ root(ROOTS.Unsorted, {
 				i(205679),	-- Obsidian Gladiator's Cloak
 				i(205680),	-- Obsidian Gladiator's Drape
 				i(205681),	-- Obsidian Gladiator's Shawl
-				i(193377),	-- Gerald
 				i(202180),	-- Pipsee Cheese Snack
 				i(202438),	-- Manteau of the Onyx Crucible
 				i(202439),	-- Warbands of the Onyx Crucible
@@ -3089,7 +3088,6 @@ root(ROOTS.Unsorted, {
 				q(74672),
 				q(74677),
 				q(74894),
-				q(75258),
 				q(75265),
 				q(75706),
 				q(75707),
@@ -3288,7 +3286,6 @@ root(ROOTS.Unsorted, {
 				i(204268),	-- Gilnean Trainee's Cord
 				i(204269),	-- Gilnean Trainee's Wristwraps
 				--
-				--
 				i(204192),	-- Ascendancy
 				i(203680),	-- Totem Toss
 			}),
@@ -3324,7 +3321,6 @@ root(ROOTS.Unsorted, {
 				i(202364),	-- Everburning Ember
 				i(202394),	-- Fresh Plains Meat
 				i(202396),	-- Plains Timber
-				i(202403),	-- Runic Wrench
 				i(202405),	-- Bloody Axe
 				i(202414),	-- Tauren Necklace
 				i(202415),	-- Unique Headdress
@@ -3358,7 +3354,6 @@ root(ROOTS.Unsorted, {
 				i(203218),	-- Iskaara Supply Pouch
 				i(203221),	-- Maruuk Supply Sack
 				i(203223),	-- Valdrakken Supply Coffer
-				i(203381),	-- Sealed Letter to Neltharion
 			}),
 			filter(MISC, {
 				i(204008),	-- Prodigious Sand Stone
@@ -3433,17 +3428,6 @@ root(ROOTS.Unsorted, {
 			n(PROFESSIONS, {
 				-- JC
 				i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
-				--
-				i(204224),	-- Speck of Arcane Awareness
-				i(204225),	-- Perfect Windfeather
-				i(204226),	-- Blazehoof Ashes
-				i(204227),	-- Everflowing Antifreeze
-				i(204228),	-- Undigested Hochenblume Petal
-				i(204229),	-- Glimmering Rune of Arcantrix
-				i(204230),	-- Dense Seaforged Javelin
-				i(204231),	-- Kingly Sheepskin Pelt
-				i(204232),	-- Slyvern Alpha Claw
-				i(204233),	-- Impenetrable Elemental Core
 			}),
 			filter(TOYS, {
 				i(204170),	-- Clan Banner (TOY!)
@@ -3486,21 +3470,9 @@ root(ROOTS.Unsorted, {
 				q(73078),
 				q(73079),
 				q(73080),
-				q(73127),
-				q(73129),
-				q(73136),
-				q(73138),
 				q(73143),
 				q(73144),
 				q(73145),
-				q(73153),
-				q(73161),
-				q(73163),
-				q(73164),
-				q(73165),
-				q(73166),
-				q(73167),
-				q(73168),
 				q(73184),
 				q(73185),
 				q(73186),
@@ -3528,7 +3500,6 @@ root(ROOTS.Unsorted, {
 				q(74433),
 				q(74434),
 				q(74435),
-				q(74472),
 				q(74478),
 				q(74479),
 				q(74480),
@@ -3538,7 +3509,6 @@ root(ROOTS.Unsorted, {
 				q(74495),
 				q(74500),
 				q(74527),
-				q(74576),
 				q(74711),
 				q(74712),
 				q(74713),
@@ -3558,29 +3528,14 @@ root(ROOTS.Unsorted, {
 				q(74782),
 				q(74788),
 				q(74789),
-				q(74795),
 				q(74796),
 				q(74875),
 				q(74890),
 				q(74891),
-				q(74926),
-				q(74927),
-				q(74928),
-				q(74929),
-				q(74930),
-				q(74931),
-				q(74932),
-				q(74933),
-				q(74934),
-				q(74935),
-				q(74936),
-				q(74937),
-				q(74938),
 				q(74955),
 				q(74970),
 				q(74974),
 				q(74978),
-				q(74983),
 				q(74994),
 				q(74996),
 				q(74997),
@@ -3590,7 +3545,6 @@ root(ROOTS.Unsorted, {
 				q(75001),
 				q(75002),
 				q(75003),
-				q(75026),
 				-- 10.0.7.47983
 				q(75034),
 				q(75046),
@@ -3601,8 +3555,6 @@ root(ROOTS.Unsorted, {
 				q(75130),
 				-- 10.0.7.48076
 				q(75185),
-				q(75189),
-				q(75190),
 				q(75202),
 				q(75224),
 				q(75236),
@@ -3617,8 +3569,6 @@ root(ROOTS.Unsorted, {
 				q(75253),
 				q(75254),
 				q(75255),
-				q(75259),
-				q(75260),
 				-- 10.0.7.48220
 				q(75263),
 				q(75392),
@@ -3645,14 +3595,6 @@ root(ROOTS.Unsorted, {
 			})
 		})),
 		tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 10.0.5" } }, {
-			filter(BATTLE_PETS, {
-				pet(03255),	-- Buttercup (PET!)
-				i(190604),	-- Buzzworth (PET!)
-				pet(3253),	-- Crushhoof (PET!)
-				i(190176),	-- Drazka'zet the Wrathful (PET!)
-				i(190173),	-- Lil' Maka'jin (PET!)
-				pet(3254),	-- Watcher of the Huntress (PET!)
-			}),
 			filter(COSMETIC, {
 				n(ARMOR, {
 					-- Cloth
@@ -4139,8 +4081,6 @@ root(ROOTS.Unsorted, {
 				i(194318),	-- Book of Ancient Lore
 				i(193069),	-- Climber's Pack
 				i(194329),	-- Elaborate Reliquary Candelabra
-				i(190093),	-- Elune's Fury
-				i(190094),	-- Elune's Wrath
 				i(190674),	-- Leaky Bucket
 				i(194314),	-- Light of the Enlightened
 				i(194331),	-- Pristine Research Journal

@@ -607,3 +607,23 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 }));
+root(ROOTS.HiddenQuestTriggers, {
+	tier(SL_TIER, {
+		-- PvP Ensembles
+		q(74248),	-- Ensemble: Sinful Aspirant's Cloth Armor
+		q(74246),	-- Ensemble: Sinful Aspirant's Leather Armor
+		q(74244),	-- Ensemble: Sinful Aspirant's Mail Armor
+		q(74242),	-- Ensemble: Sinful Aspirant's Plate Armor
+		q(74241),	-- Ensemble: Sinful Gladiator's Cloth Armor
+		q(74247),	-- Ensemble: Sinful Gladiator's Leather Armor
+		q(74245),	-- Ensemble: Sinful Gladiator's Mail Armor
+		q(74243),	-- Ensemble: Sinful Gladiator's Plate Armor
+
+		-- PvP Arsenals
+		q(74281),	-- Arsenal: Sinful Aspirant's Weapons
+		q(74280),	-- Arsenal: Sinful Gladiator's Ardenweald Weapons
+		q(74279),	-- Arsenal: Sinful Gladiator's Bastion Weapons
+		q(74278),	-- Arsenal: Sinful Gladiator's Maldraxxus Weapons
+		q(74277),	-- Arsenal: Sinful Gladiator's Revendreth Weapons
+	}),
+});
