@@ -1896,101 +1896,101 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			["requireSkill"] = JEWELCRAFTING,
 		},{
 			-- Reagents
-			q(71674, { ["name"] = "First Craft: Elemental Harmony", }),
-			q(71647, { ["name"] = "First Craft: Blotting Sand", }),
-			q(71648, { ["name"] = "First Craft: Pounce", }),
-			q(71862, { ["name"] = "First Craft: Empty Soul Cage", }),
-			q(71673, { ["name"] = "First Craft: Draconic Vial", }),
-			q(71675, { ["name"] = "First Craft: Frameless Lens", }),
-			q(71676, { ["name"] = "First Craft: Glossy Stone", }),
-			q(71672, { ["name"] = "First Craft: Shimmering Clasp", }),
+			FirstCraft(71674, 374553);	-- Elemental Harmony
+			FirstCraft(71647, 374483);	-- Blotting Sand
+			FirstCraft(71648, 374484);	-- Pounce
+			FirstCraft(71862, 392697);	-- Empty Soul Cage
+			FirstCraft(71673, 374477);	-- Draconic Vial
+			FirstCraft(71675, 374478);	-- Frameless Lens
+			FirstCraft(71676, 374480);	-- Glossy Stone
+			FirstCraft(71672, 374475);	-- Shimmering Clasp
 			-- Rudimentary Gems
-			q(71625, { ["name"] = "First Craft: Crafty Queen's Ruby", }),
-			q(71623, { ["name"] = "First Craft: Energized Vibrant Emerald", }),
-			q(71624, { ["name"] = "First Craft: Sensei's Sundered Onyx", }),
-			q(71622, { ["name"] = "First Craft: Solid Eternity Amber", }),
-			q(71626, { ["name"] = "First Craft: Zen Mystic Sapphire", }),
+			FirstCraft(71625, 374437);	-- Crafty Queen's Ruby
+			FirstCraft(71623, 374439);	-- Energized Vibrant Emerald
+			FirstCraft(71624, 374440);	-- Sensei's Sundered Onyx
+			FirstCraft(71622, 374441);	-- Solid Eternity Amber
+			FirstCraft(71626, 374438);	-- Zen Mystic Sapphire
 			-- Air Gems
-			q(71639, { ["name"] = "First Craft: Crafty Alexstraszite", }),
-			q(71643, { ["name"] = "First Craft: Energized Malygite", }),
-			q(71627, { ["name"] = "First Craft: Forceful Nozdorite", }),
-			q(71635, { ["name"] = "First Craft: Keen Neltharite", }),
-			q(71631, { ["name"] = "First Craft: Quick Ysemerald", }),
+			FirstCraft(71639, 374442);	-- Crafty Alexstraszite
+			FirstCraft(71643, 374447);	-- Energized Malygite
+			FirstCraft(71627, 374461);	-- Forceful Nozdorite
+			FirstCraft(71635, 374457);	-- Keen Neltharite
+			FirstCraft(71631, 374455);	-- Quick Ysemerald
 			-- Earth Gems
-			q(71636, { ["name"] = "First Craft: Fractured Neltharite", }),
-			q(71632, { ["name"] = "First Craft: Keen Ysemerald", }),
-			q(71628, { ["name"] = "First Craft: Puissant Nozdorite", }),
-			q(71640, { ["name"] = "First Craft: Sensei's Alexstraszite", }),
-			q(71644, { ["name"] = "First Craft: Zen Malygite", }),
+			FirstCraft(71636, 374459);	-- Fractured Neltharite
+			FirstCraft(71632, 374453);	-- Keen Ysemerald
+			FirstCraft(71628, 374462);	-- Puissant Nozdorite
+			FirstCraft(71640, 374443);	-- Sensei's Alexstraszite
+			FirstCraft(71644, 374448);	-- Zen Malygite
 			-- Fire Gems
-			q(71633, { ["name"] = "First Craft: Crafty Ysemerald", }),
-			q(71641, { ["name"] = "First Craft: Deadly Alexstraszite", }),
-			q(71629, { ["name"] = "First Craft: Jagged Nozdorite", }),
-			q(71645, { ["name"] = "First Craft: Radiant Malygite", }),
-			q(71637, { ["name"] = "First Craft: Sensei's Neltharite", }),
+			FirstCraft(71633, 374450);	-- Crafty Ysemerald
+			FirstCraft(71641, 374445);	-- Deadly Alexstraszite
+			FirstCraft(71629, 374460);	-- Jagged Nozdorite
+			FirstCraft(71645, 374446);	-- Radiant Malygite
+			FirstCraft(71637, 374456);	-- Sensei's Neltharite
 			-- Frost Gems
-			q(71634, { ["name"] = "First Craft: Energized Ysemerald", }),
-			q(71642, { ["name"] = "First Craft: Radiant Alexstraszite", }),
-			q(71630, { ["name"] = "First Craft: Steady Nozdorite", }),
-			q(71646, { ["name"] = "First Craft: Stormy Malygite", }),
-			q(71638, { ["name"] = "First Craft: Zen Neltharite", }),
+			FirstCraft(71634, 374454);	-- Energized Ysemerald
+			FirstCraft(71642, 374444);	-- Radiant Alexstraszite
+			FirstCraft(71630, 374463);	-- Steady Nozdorite
+			FirstCraft(71646, 374449);	-- Stormy Malygite
+			FirstCraft(71638, 374458);	-- Zen Neltharite
 			-- Primalist Gems
-			q(71617, { ["name"] = "First Craft: Fierce Illimited Diamond", }),
-			q(71619, { ["name"] = "First Craft: Inscribed Illimited Diamond", }),
-			q(71620, { ["name"] = "First Craft: Resplendent Illimited Diamond", }),
-			q(71618, { ["name"] = "First Craft: Skillful Illimited Diamond", }),
+			FirstCraft(71617, 374467);	-- Fierce Illimited Diamond
+			FirstCraft(71619, 374465);	-- Inscribed Illimited Diamond
+			FirstCraft(71620, 374470);	-- Resplendent Illimited Diamond
+			FirstCraft(71618, 374468);	-- Skillful Illimited Diamond
 			-- Misc
-			q(71657, { ["name"] = "First Craft: Tiered Medallion Setting", }),
+			FirstCraft(71657, 374472);	-- Tiered Medallion Setting
 			q(74881, { ["name"] = "First Craft: Unstable Elementium", ["timeline"] = {ADDED_10_0_7}}),
 			-- Trinkets
-			q(71679, { ["name"] = "First Craft: Idol of the Dreamer", }),
-			q(71680, { ["name"] = "First Craft: Idol of the Earth Warder", }),
-			q(71681, { ["name"] = "First Craft: Idol of the Lifebinder", }),
-			q(71682, { ["name"] = "First Craft: Idol of the Spellweaver", }),
+			FirstCraft(71679, 374490);	-- Idol of the Dreamer
+			FirstCraft(71680, 374493);	-- Idol of the Earth-Warder
+			FirstCraft(71681, 374486);	-- Idol of the Life-Binder
+			FirstCraft(71682, 374488);	-- Idol of the Spell-Weaver
 			-- Jewelry
-			q(71604, { ["name"] = "First Craft: Choker of Shielding", }),
-			q(71603, { ["name"] = "First Craft: Elemental Lariat", }),
-			q(71606, { ["name"] = "First Craft: Ring-Bound Hourglass", }),
-			q(71605, { ["name"] = "First Craft: Signet of Titanic Insight", }),
-			q(72349, { ["name"] = "First Craft: Torc of Passed Time", }),
-			q(71608, { ["name"] = "First Craft: Crimson Combatant's Jeweled Amulet", }),
-			q(71609, { ["name"] = "First Craft: Crimson Combatant's Jeweled Signet", }),
-			q(71607, { ["name"] = "First Craft: Band of New Beginnings", }),
-			q(71602, { ["name"] = "First Craft: Pendant of Impending Perils", }),
+			FirstCraft(71604, 374501);	-- Choker of Shielding
+			FirstCraft(71603, 374499);	-- Elemental Lariat
+			FirstCraft(71606, 374498);	-- Ring-Bound Hourglass
+			FirstCraft(71605, 374497);	-- Signet of Titanic Insight
+			FirstCraft(72349, 394621);	-- Torc of Passed Time
+			FirstCraft(71608, 374495);	-- Crimson Combatant's Jeweled Amulet
+			FirstCraft(71609, 374496);	-- Crimson Combatant's Jeweled Signet
+			FirstCraft(71607, 376233);	-- Band of New Beginnings
+			FirstCraft(71602, 374494);	-- Pendant of Impending Perils
 			-- Statues & Carvings
-			q(71614, { ["name"] = "First Craft: Djaradin's 'Pinata'", }),
-			q(71611, { ["name"] = "First Craft: Kalu'ak Figurine", }),
-			q(71613, { ["name"] = "First Craft: Narcissist's Sculpture", }),
-			q(71612, { ["name"] = "First Craft: Revitalizing Red Carving", }),
-			q(71610, { ["name"] = "First Craft: Statue of Tyr's Herald", }),
+			FirstCraft(71614, 374509);	-- Djaradin's "Pinata"
+			FirstCraft(71611, 377804);	-- Kalu'ak Figurine
+			FirstCraft(71613, 374502);	-- Narcissist's Sculpture
+			FirstCraft(71612, 374506);	-- Revitalizing Red Carving
+			FirstCraft(71610, 374508);	-- Statue of Tyr's Herald
 			-- Battle Pets
-			q(71667, { ["name"] = "First Craft: Jeweled Amber Whelpling", }),
-			q(71668, { ["name"] = "First Craft: Jeweled Emerald Whelpling", }),
-			q(71669, { ["name"] = "First Craft: Jeweled Onyx Whelpling", }),
-			q(71670, { ["name"] = "First Craft: Jeweled Ruby Whelpling", }),
-			q(71671, { ["name"] = "First Craft: Jeweled Sapphire Whelpling", }),
+			FirstCraft(71667, 374516);	-- Jeweled Amber Whelpling
+			FirstCraft(71668, 374511);	-- Jeweled Emerald Whelpling
+			FirstCraft(71669, 374514);	-- Jeweled Onyx Whelpling
+			FirstCraft(71670, 374510);	-- Jeweled Ruby Whelpling
+			FirstCraft(71671, 374512);	-- Jeweled Sapphire Whelpling
 			-- Novelties
-			q(71615, { ["name"] = "First Craft: 'Rhinestone' Sunglasses", }),
-			q(71678, { ["name"] = "First Craft: Convergent Prism", }),
-			q(71677, { ["name"] = "First Craft: Jeweled Offering", }),
-			q(71650, { ["name"] = "First Craft: Projection Prism", }),
-			q(71616, { ["name"] = "First Craft: Split-Lens Specs", }),
+			FirstCraft(71615, 375063);	-- "Rhinestone" Sunglasses
+			FirstCraft(71678, 374525);	-- Convergent Prism
+			FirstCraft(71677, 374522);	-- Jeweled Offering
+			FirstCraft(71650, 374518);	-- Projection Prism
+			FirstCraft(71616, 377960);	-- Split-Lens Specs
 			-- Profession Equipment
-			q(71666, { ["name"] = "First Craft: Alexstraszite Loupes", }),
-			q(71661, { ["name"] = "First Craft: Bold-Print Bifocals", }),
-			q(71659, { ["name"] = "First Craft: Chromatic Focus", }),
-			q(71663, { ["name"] = "First Craft: Fine-Print Trifocals", }),
-			q(71662, { ["name"] = "First Craft: Left-Handed Magnifying Glass", }),
-			q(71664, { ["name"] = "First Craft: Magnificent Margin Magnifier", }),
-			q(71660, { ["name"] = "First Craft: Resonant Focus", }),
-			q(71665, { ["name"] = "First Craft: Sundered Onyx Loupe", }),
+			FirstCraft(71666, 374542);	-- Alexstraszite Loupes
+			FirstCraft(71661, 374530);	-- Bold-Print Bifocals
+			FirstCraft(71659, 374537);	-- Chromatic Focus
+			FirstCraft(71663, 374538);	-- Fine-Print Trifocals
+			FirstCraft(71662, 374531);	-- Left-Handed Magnifying Glass
+			FirstCraft(71664, 374540);	-- Magnificent Margin Magnifier
+			FirstCraft(71660, 374543);	-- Resonant Focus
+			FirstCraft(71665, 374532);	-- Sundered Onyx Loupe
 			-- Extravagant Glasswares
-			q(71655, { ["name"] = "First Craft: Dreamer's Vision", }),
-			q(71651, { ["name"] = "First Craft: Earthwarden's Prize", }),
-			q(71654, { ["name"] = "First Craft: Jeweled Dragon's Heart", }),
-			q(71652, { ["name"] = "First Craft: Keeper's Glory", }),
-			q(71656, { ["name"] = "First Craft: Queen's Gift", }),
-			q(71653, { ["name"] = "First Craft: Timewatcher's Patience", }),
+			FirstCraft(71655, 374547);	-- Dreamer's Vision
+			FirstCraft(71651, 374549);	-- Earthwarden's Prize
+			FirstCraft(71654, 374551);	-- Jeweled Dragon's Heart
+			FirstCraft(71652, 374548);	-- Keeper's Glory
+			FirstCraft(71656, 374546);	-- Queen's Gift
+			FirstCraft(71653, 374550);	-- Timewatcher's Patience
 			-- Artisan Curios
 			q(74482, { ["name"] = "First Craft: Crystal Tuning Fork", ["timeline"] = {ADDED_10_0_7}}),
 		})),
