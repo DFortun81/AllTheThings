@@ -11991,6 +11991,18 @@ app.CreateConduit = function(id, t)
 end
 end)();
 
+-- Drakewatcher Manuscript Lib
+(function()
+-- copy base Item fields
+local fields = RawCloneData(itemFields);
+fields.collectible = function(t) return app.CollectibleDrakewatcherManuscripts; end;
+fields.collected = IsQuestFlaggedCompletedForObject;
+app.BaseDrakewatcherManuscript = app.BaseObjectFields(fields, "BaseDrakewatcherManuscript");
+app.CreateDrakewatcherManuscript = function(id, t)
+	return setmetatable(constructor(id, t, "itemID"), app.BaseDrakewatcherManuscript);
+end
+end)();
+
 -- Heirloom Lib
 (function()
 local C_Heirloom_GetHeirloomInfo = C_Heirloom.GetHeirloomInfo;

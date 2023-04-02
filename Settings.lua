@@ -101,6 +101,7 @@ local Things = {
 	"AzeriteEssences",
 	"BattlePets",
 	"Conduits",
+	"DrakewatcherManuscripts",
 	"FlightPaths",
 	"Followers",
 	"Heirlooms",
@@ -130,6 +131,7 @@ local GeneralSettingsBase = {
 		["AccountWide:AzeriteEssences"] = true,
 		-- ["AccountWide:BattlePets"] = true,
 		["AccountWide:Conduits"] = true,
+		-- ["AccountWide:DrakewatcherManuscripts"] = true,
 		["AccountWide:FlightPaths"] = true,
 		["AccountWide:Followers"] = true,
 		-- ["AccountWide:Heirlooms"] = true,
@@ -147,6 +149,7 @@ local GeneralSettingsBase = {
 		["Thing:AzeriteEssences"] = true,
 		["Thing:BattlePets"] = true,
 		["Thing:Conduits"] = true,
+		["Thing:DrakewatcherManuscripts"] = true,
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = true,
 		["Thing:Heirlooms"] = true,
@@ -1777,6 +1780,12 @@ RuneforgeLegendariesAccountWideCheckBox:AlignBelow(SoulbindConduitsAccountWideCh
 
 local RuneforgeLegendariesCheckBox = child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries");
 RuneforgeLegendariesCheckBox:AlignAfter(RuneforgeLegendariesAccountWideCheckBox);
+
+local DrakewatcherManuscriptsAccountWideCheckBox = child:CreateForcedAccountWideCheckbox();
+DrakewatcherManuscriptsAccountWideCheckBox:AlignBelow(RuneforgeLegendariesAccountWideCheckBox);
+
+local DrakewatcherManuscriptsCheckBox = child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts");
+DrakewatcherManuscriptsCheckBox:AlignAfter(DrakewatcherManuscriptsAccountWideCheckBox);
 
 local ExtraThingsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ExtraThingsLabel:SetPoint("TOP", ModeExplainLabel, "BOTTOM", 0, -2);
