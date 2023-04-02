@@ -298,11 +298,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			n(SPECIAL, {
 				-- TODO: these actually are not related to Primal Storms. maybe will move to Exp Features > Professions > Special
 				i(200932, {	-- Encaged Airy Soul
-					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
+					["coord"] = { 24.6, 36.0, OHNAHRAN_PLAINS },
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201296, {	-- Docile Airy Soul
@@ -312,11 +313,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 				}),
 				i(200936, {	-- Encaged Earthen Soul
-					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
+					["coord"] = { 49.8, 32.8, THE_WAKING_SHORES },
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201297, {	-- Docile Earthen Soul
@@ -326,11 +328,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 				}),
 				i(200931, {	-- Encaged Firey Soul
-					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
+					["coord"] = { 78.4, 38.8, OHNAHRAN_PLAINS },
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201298, {	-- Docile Fiery Soul
@@ -340,11 +343,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 				}),
 				i(200934, {	-- Encaged Frosty Soul
-					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
+					["coord"] = { 55.2, 76.6, OHNAHRAN_PLAINS },
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						i(201299, {	-- Docile Frosty Soul
