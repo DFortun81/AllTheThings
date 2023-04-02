@@ -3518,12 +3518,12 @@ for key,value in pairs({
 	[375988] = "피림의 추방기 후일담",	-- Firim in Exile, Epilogue
 	[376041] = "가려진 암호 보관함",	-- Shrouded Cypher Cache
 	--TODO: [376123] = "Suspicious Bottle",	-- Suspicious Bottle
-	--TODO: [376124] = "Bag of Enchanted Wind",	-- Bag of Enchanted Wind
+	[376124] = "마법의 바람이 담긴 배낭",	-- Bag of Enchanted Wind
 	[376175] = "풀세일 보급품 상자",	-- Fullsails Supply Chest
-	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
+	[376213] = "수수께끼의 지팡이",	-- Mysterious Wand
 	[376386] = "흐트러진 흙",	-- Disturbed Dirt
 	[376426] = "마법결속 보관함",	-- Magic-Bound Chest
-	--TODO: [376451] = "Bronze Stopwatch",	-- Bronze Stopwatch
+	[376451] = "청동 초시계",	-- Bronze Stopwatch
 	[376580] = "자라딘 상자",	-- Djaradin Cache
 	[376581] = "부족 보관함",	-- Clan Chest
 	[376582] = "투스카르 상자",	-- Tuskarr Chest
@@ -3531,7 +3531,7 @@ for key,value in pairs({
 	--TODO: [376657] = "Ancient Monument",	-- Ancient Monument
 	[376757] = "현상 수배: 프리젤루스",	-- WANTED: Frigellus
 	[377114] = "무거운 밧줄 똬리",	-- Coil of Heavy Rope
-	--TODO: [377233] = "Hessethiash's Poorly Hidden Treasure",	-- Hessethiash's Poorly Hidden Treasure
+	[377233] = "어설프게 숨긴 헤세티아쉬의 보물",	-- Hessethiash's Poorly Hidden Treasure
 	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
@@ -3657,7 +3657,7 @@ for key,value in pairs({
 	[381511] = "작살 머리",	-- Harpoon Head
 	[381512] = "목재 장대",	-- Wooden Pole
 	[381513] = "오래된 곡괭이",	-- Old Pickaxe
-	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
+	[381514] = "바닷물로 매끈해진 현무암",	-- Sea-Polished Basalt
 	--TODO: [381575] = "Duck Trap Kit",	-- Duck Trap Kit
 	[381579] = "기록관의 요청",	-- Archivists' Request
 	[381650] = "기록관의 요청",	-- Archivists' Request
@@ -3676,7 +3676,7 @@ for key,value in pairs({
 	[381701] = "현상 수배: 천둥의 마라나르",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "홍수의 보관함",	-- Chest of the Flood
 	[382029] = "흐트러진 흙",	-- Disturbed Dirt
-	[382071] = "완전한 낚시 그물",	-- Full Fishing Net	--TODO: this was manually translated
+	[382071] = "완전한 낚시 그물",	-- Full Fishing Net
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
 	[382180] = "과열된 용암 상어 떼",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
@@ -3785,7 +3785,7 @@ for key,value in pairs({
 	--TODO: [386669] = "Fragmented Hakkari Bijou",	-- Fragmented Hakkari Bijou
 	[386680] = "수수께끼의 연감",	-- Mysterious Almanac
 	[386683] = "그슬린 책",	-- Seared Book
-	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
+	[386690] = "모호한 전서",	-- Ambiguous Compendium
 	[386762] = "태고의 방어구 보관함",	-- Primordial Armor Cache
 	--TODO: [387493] = "Unique Fish",	-- Unique Fish
 	[387500] = "싸늘한 눈사람",	-- Chilly Snowman
@@ -3799,7 +3799,7 @@ for key,value in pairs({
 	[388712] = "가극 상자",	-- Opera Chest
 	[388866] = "재료 냄비",	-- Reagent Pot
 	[388876] = "재료 냄비",	-- Reagent Pot
-	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388895] = "아무렇게나 그린 낙서",	-- Random Scribblings
 	[388905] = "넬타리온의 도구",	-- Neltharion Toolkit
 	[388908] = "마력을 잃은 찐득이",	-- Inert Goo
 	[389102] = "오색 파편",	-- Prismatic Fragment

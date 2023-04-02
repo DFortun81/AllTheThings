@@ -3830,7 +3830,7 @@ for key, value in pairs({
 	--TODO: [389599] = "Ice Spike",	-- Ice Spike
 	--TODO: [389789] = "Primordial Earth Cache",	-- Primordial Earth Cache
 	--TODO: [389902] = "Primordial Earth Cache",	-- Primordial Earth Cache
-	--TODO: [390008] = "Ice Spike",	-- Ice Spike
+	--TODO: [390008] = "Ice",	-- Ice
 	--TODO: [390009] = "Box of Rocks",	-- Box of Rocks
 	--TODO: [390074] = "Primordial Deep Ocean Cache",	-- Primordial Deep Ocean Cache
 	--TODO: [390136] = "Spore-bound Essence",	-- Spore-bound Essence

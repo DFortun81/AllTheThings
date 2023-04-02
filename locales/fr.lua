@@ -3798,7 +3798,7 @@ for key,value in pairs({
 	[388712] = "Coffre d’opéra",	-- Opera Chest
 	[388866] = "Pot de composants",	-- Reagent Pot
 	[388876] = "Pot de composants",	-- Reagent Pot
-	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388895] = "Annotations diverses",	-- Random Scribblings
 	[388905] = "Outils de Neltharion",	-- Neltharion Toolkit
 	[388908] = "Gelée inerte",	-- Inert Goo
 	[389102] = "Fragment prismatique",	-- Prismatic Fragment

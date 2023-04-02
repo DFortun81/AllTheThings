@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 30.6, 57.2, THE_FORBIDDEN_REACH },
 							["questID"] = 75056,
 						}),
-						o(390008, {	-- Ice Spike
+						o(390008, {	-- Ice
 							["coord"] = { 30.8, 57.4, THE_FORBIDDEN_REACH },
 							["questID"] = 75117,
 						}),
