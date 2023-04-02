@@ -3751,6 +3751,7 @@ for key, value in pairs({
 	--TODO: [386428] = "Primordial Earth Cache",	-- Primordial Earth Cache
 	--TODO: [386429] = "Primordial Earth Cache",	-- Primordial Earth Cache
 	--TODO: [386430] = "Hardened Chest",	-- Hardened Chest
+	--TODO: [386431] = "Primordial Earth Cache",	-- Primordial Earth Cache
 	--TODO: [386432] = "Hardened Chest",	-- Hardened Chest
 	--TODO: [386433] = "Primordial Wind Cache",	-- Primordial Wind Cache
 	--TODO: [386441] = "Primordial Wind Cache",	-- Primordial Wind Cache
@@ -3802,6 +3803,7 @@ for key, value in pairs({
 	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
 	--TODO: [386762] = "Primordial Armor Cache",	-- Primordial Armor Cache
 	--TODO: [387493] = "Unique Fish",	-- Unique Fish
+	--TODO: [387496] = "Brazier of Madness",	-- Brazier of Madness
 	--TODO: [387500] = "Chilly Snowman",	-- Chilly Snowman
 	--TODO: [387501] = "Neltharion Gift Token",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
@@ -3838,6 +3840,9 @@ for key, value in pairs({
 	--TODO: [390258] = "Inert Goo",	-- Inert Goo
 	--TODO: [390559] = "Box of Rocks",	-- Box of Rocks
 	--TODO: [390560] = "Locked Research Chest",	-- Locked Research Chest
+	--TODO: [392025] = "Molded Coins",	-- Molded Coins
+	--TODO: [392026] = "Neltharion Coin Mold",	-- Neltharion Coin Mold
+	--TODO: [392335] = "Primordial Armor Cache",	-- Primordial Armor Cache
 	--TODO: [392569] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392570] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392571] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox

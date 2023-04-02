@@ -3728,6 +3728,7 @@ for key,value in pairs({
 	[386428] = "Тайник изначальной земли",	-- Primordial Earth Cache
 	[386429] = "Тайник изначальной земли",	-- Primordial Earth Cache
 	[386430] = "Укрепленный сундук",	-- Hardened Chest
+	[386431] = "Тайник изначальной земли",	-- Primordial Earth Cache
 	[386432] = "Укрепленный сундук",	-- Hardened Chest
 	[386433] = "Тайник изначального ветра",	-- Primordial Wind Cache
 	[386441] = "Тайник изначального ветра",	-- Primordial Wind Cache
@@ -3779,6 +3780,7 @@ for key,value in pairs({
 	[386690] = "Сомнительный каталог",	-- Ambiguous Compendium
 	[386762] = "Изначальный тайник с доспехами",	-- Primordial Armor Cache
 	[387493] = "Необычная рыба",	-- Unique Fish
+	[387496] = "Жаровня Безумия",	-- Brazier of Madness
 	[387500] = "Замерзший снеговик",	-- Chilly Snowman
 	[387501] = "Подарочный жетон Нелтариона",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
@@ -3815,6 +3817,9 @@ for key,value in pairs({
 	[390258] = "Безжизненная слизь",	-- Inert Goo
 	[390559] = "Ящик с камнями",	-- Box of Rocks
 	--TODO: [390560] = "Locked Research Chest",	-- Locked Research Chest
+	[392025] = "Отлитые монеты",	-- Molded Coins
+	[392026] = "Форма для монет Нелтариона",	-- Neltharion Coin Mold
+	[392335] = "Изначальный тайник с доспехами",	-- Primordial Armor Cache
 	[392569] = "Окованный цепями изначальный сундук",	-- Chain-Bound Primordial Cache
 	[392570] = "Окованный цепями изначальный сундук",	-- Chain-Bound Primordial Cache
 	[392571] = "Окованный цепями сейф",	-- Chain-Bound Strongbox

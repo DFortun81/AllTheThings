@@ -3729,6 +3729,7 @@ for key,value in pairs({
 	[386428] = "Cassa della Terra Primordiale",	-- Primordial Earth Cache
 	[386429] = "Cassa della Terra Primordiale",	-- Primordial Earth Cache
 	[386430] = "Cassa Indurita",	-- Hardened Chest
+	[386431] = "Cassa della Terra Primordiale",	-- Primordial Earth Cache
 	[386432] = "Cassa Indurita",	-- Hardened Chest
 	[386433] = "Cassa del Vento Primordiale",	-- Primordial Wind Cache
 	[386441] = "Cassa del Vento Primordiale",	-- Primordial Wind Cache
@@ -3780,6 +3781,7 @@ for key,value in pairs({
 	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
 	[386762] = "Cassa dell'Armatura Primordiale",	-- Primordial Armor Cache
 	[387493] = "Pesce Unico",	-- Unique Fish
+	--TODO: [387496] = "Brazier of Madness",	-- Brazier of Madness
 	[387500] = "Pupazzo di Neve Congelato",	-- Chilly Snowman
 	[387501] = "Emblema Dono di Neltharion",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
@@ -3816,6 +3818,9 @@ for key,value in pairs({
 	[390258] = "Poltiglia Inerte",	-- Inert Goo
 	[390559] = "Scatola di Rocce",	-- Box of Rocks
 	[390560] = "Cassa della Ricerca Chiusa",	-- Locked Research Chest
+	[392025] = "Monete Stampate",	-- Molded Coins
+	[392026] = "Stampo di Monete di Neltharion",	-- Neltharion Coin Mold
+	[392335] = "Cassa dell'Armatura Primordiale",	-- Primordial Armor Cache
 	[392569] = "Cassa Primordiale Incatenata",	-- Chain-Bound Primordial Cache
 	[392570] = "Cassa Primordiale Incatenata",	-- Chain-Bound Primordial Cache
 	[392571] = "Forziere Incatenato",	-- Chain-Bound Strongbox

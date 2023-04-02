@@ -3737,6 +3737,7 @@ for key,value in pairs({
 	[386428] = "태고의 대지 보관함",	-- Primordial Earth Cache
 	[386429] = "태고의 대지 보관함",	-- Primordial Earth Cache
 	[386430] = "경화된 보관함",	-- Hardened Chest
+	[386431] = "태고의 대지 보관함",	-- Primordial Earth Cache
 	[386432] = "경화된 보관함",	-- Hardened Chest
 	[386433] = "태고의 바람 보관함",	-- Primordial Wind Cache
 	[386441] = "태고의 바람 보관함",	-- Primordial Wind Cache
@@ -3788,6 +3789,7 @@ for key,value in pairs({
 	[386690] = "모호한 전서",	-- Ambiguous Compendium
 	[386762] = "태고의 방어구 보관함",	-- Primordial Armor Cache
 	--TODO: [387493] = "Unique Fish",	-- Unique Fish
+	--TODO: [387496] = "Brazier of Madness",	-- Brazier of Madness
 	[387500] = "싸늘한 눈사람",	-- Chilly Snowman
 	[387501] = "넬타리온 선물 징표",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
@@ -3824,6 +3826,9 @@ for key,value in pairs({
 	[390258] = "마력을 잃은 찐득이",	-- Inert Goo
 	[390559] = "돌멩이 상자",	-- Box of Rocks
 	[390560] = "잠긴 연구물 상자",	-- Locked Research Chest
+	--TODO: [392025] = "Molded Coins",	-- Molded Coins
+	[392026] = "넬타리온 주화 거푸집",	-- Neltharion Coin Mold
+	[392335] = "태고의 방어구 보관함",	-- Primordial Armor Cache
 	--TODO: [392569] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392570] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392571] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox

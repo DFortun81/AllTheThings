@@ -3738,6 +3738,7 @@ for key,value in pairs({
 	[386428] = "Urzeitliche Erdtruhe",	-- Primordial Earth Cache
 	[386429] = "Urzeitliche Erdtruhe",	-- Primordial Earth Cache
 	[386430] = "Gehärtete Truhe",	-- Hardened Chest
+	[386431] = "Urzeitliche Erdtruhe",	-- Primordial Earth Cache
 	[386432] = "Gehärtete Truhe",	-- Hardened Chest
 	[386433] = "Urzeitliche Windtruhe",	-- Primordial Wind Cache
 	[386441] = "Urzeitliche Windtruhe",	-- Primordial Wind Cache
@@ -3789,6 +3790,7 @@ for key,value in pairs({
 	[386690] = "Unklares Kompendium",	-- Ambiguous Compendium
 	[386762] = "Urzeitliche Rüstungstruhe",	-- Primordial Armor Cache
 	[387493] = "Einzigartiger Fisch",	-- Unique Fish
+	[387496] = "Kohlenpfanne des Wahnsinns",	-- Brazier of Madness
 	[387500] = "Frostiger Schneemann",	-- Chilly Snowman
 	[387501] = "Neltharions Geschenkmarke",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
@@ -3825,6 +3827,9 @@ for key,value in pairs({
 	[390258] = "Träger Glibber",	-- Inert Goo
 	[390559] = "Kasten mit Steinen",	-- Box of Rocks
 	[390560] = "Verschlossene Forschungstruhe",	-- Locked Research Chest
+	[392025] = "Geformte Münzen",	-- Molded Coins
+	[392026] = "Neltharions Münzform",	-- Neltharion Coin Mold
+	[392335] = "Urzeitliche Rüstungstruhe",	-- Primordial Armor Cache
 	[392569] = "Kettengebundene urzeitliche Truhe",	-- Chain-Bound Primordial Cache
 	[392570] = "Kettengebundene urzeitliche Truhe",	-- Chain-Bound Primordial Cache
 	[392571] = "Kettengebundene Schließkassette",	-- Chain-Bound Strongbox
