@@ -3792,6 +3792,7 @@ for key,value in pairs({
 	[386690] = "Compendio ambiguo",	-- Ambiguous Compendium
 	[386762] = "Alijo de armaduras primordiales",	-- Primordial Armor Cache
 	[387493] = "Pez único",	-- Unique Fish
+	[387500] = "Muñeco de nieve gélido",	-- Chilly Snowman
 	[387501] = "Vale de obsequio de Neltharion",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
 	[387728] = "Ópera de los Aspectos",	-- Opera of the Aspects
@@ -3803,6 +3804,7 @@ for key,value in pairs({
 	[388866] = "Olla de componentes",	-- Reagent Pot
 	[388876] = "Olla de componentes",	-- Reagent Pot
 	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388905] = "Juego de herramientas de Neltharion",	-- Neltharion Toolkit
 	[388908] = "Baba inerte",	-- Inert Goo
 	[389102] = "Fragmento prismático",	-- Prismatic Fragment
 	[389104] = "Fragmento prismático",	-- Prismatic Fragment
@@ -3825,6 +3827,7 @@ for key,value in pairs({
 	[390257] = "Oso de peluche",	-- Stuffed Bear
 	[390258] = "Baba inerte",	-- Inert Goo
 	[390559] = "Caja de piedras",	-- Box of Rocks
+	[390560] = "Cofre de investigación cerrado",	-- Locked Research Chest
 	[392569] = "Alijo primordial protegido con cadenas",	-- Chain-Bound Primordial Cache
 	[392570] = "Alijo primordial protegido con cadenas",	-- Chain-Bound Primordial Cache
 	[392571] = "Caja fuerte protegida con cadenas",	-- Chain-Bound Strongbox
@@ -3836,6 +3839,8 @@ for key,value in pairs({
 	[393222] = "Baúl de suministros",	-- Supply Trunk
 	[393282] = "Caja de globos",	-- Balloon Box
 	[393283] = "Caja de globos",	-- Balloon Box
+	[398200] = "Arcón olvidado",	-- Forgotten Lockbox
+	[398770] = "Caja de piedras",	-- Box of Rocks
 	[398778] = "Cuba asquerosa",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone

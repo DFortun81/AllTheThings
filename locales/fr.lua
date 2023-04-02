@@ -3787,6 +3787,7 @@ for key,value in pairs({
 	[386690] = "Compendium ambigu",	-- Ambiguous Compendium
 	[386762] = "Cache d’armure primordiale",	-- Primordial Armor Cache
 	[387493] = "Poisson unique",	-- Unique Fish
+	[387500] = "Bonhomme de neige glacial",	-- Chilly Snowman
 	[387501] = "Jeton offert par Neltharion",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
 	[387728] = "Opéra des Aspects",	-- Opera of the Aspects
@@ -3798,6 +3799,7 @@ for key,value in pairs({
 	[388866] = "Pot de composants",	-- Reagent Pot
 	[388876] = "Pot de composants",	-- Reagent Pot
 	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388905] = "Outils de Neltharion",	-- Neltharion Toolkit
 	[388908] = "Gelée inerte",	-- Inert Goo
 	[389102] = "Fragment prismatique",	-- Prismatic Fragment
 	[389104] = "Fragment prismatique",	-- Prismatic Fragment
@@ -3820,6 +3822,7 @@ for key,value in pairs({
 	[390257] = "Ours empaillé",	-- Stuffed Bear
 	[390258] = "Gelée inerte",	-- Inert Goo
 	[390559] = "Boîte de pierres",	-- Box of Rocks
+	[390560] = "Coffre de recherche verrouillé",	-- Locked Research Chest
 	[392569] = "Cache primordiale scellée par des chaînes",	-- Chain-Bound Primordial Cache
 	[392570] = "Cache primordiale scellée par des chaînes",	-- Chain-Bound Primordial Cache
 	[392571] = "Coffre-fort scellé par des chaînes",	-- Chain-Bound Strongbox
@@ -3831,6 +3834,8 @@ for key,value in pairs({
 	[393222] = "Malle de fournitures",	-- Supply Trunk
 	[393282] = "Boîte à ballons",	-- Balloon Box
 	[393283] = "Boîte à ballons",	-- Balloon Box
+	[398200] = "Coffret oublié",	-- Forgotten Lockbox
+	[398770] = "Boîte de pierres",	-- Box of Rocks
 	[398778] = "Cuve répugnante",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone

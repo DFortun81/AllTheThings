@@ -3779,6 +3779,7 @@ for key,value in pairs({
 	[386690] = "Сомнительный каталог",	-- Ambiguous Compendium
 	[386762] = "Изначальный тайник с доспехами",	-- Primordial Armor Cache
 	[387493] = "Необычная рыба",	-- Unique Fish
+	[387500] = "Замерзший снеговик",	-- Chilly Snowman
 	[387501] = "Подарочный жетон Нелтариона",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
 	[387728] = "Опера Аспектов",	-- Opera of the Aspects
@@ -3790,6 +3791,7 @@ for key,value in pairs({
 	[388866] = "Котелок с реагентами",	-- Reagent Pot
 	[388876] = "Котелок с реагентами",	-- Reagent Pot
 	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388905] = "Инструменты Нелтариона",	-- Neltharion Toolkit
 	[388908] = "Безжизненная слизь",	-- Inert Goo
 	[389102] = "Призматический осколок",	-- Prismatic Fragment
 	[389104] = "Призматический осколок",	-- Prismatic Fragment
@@ -3812,6 +3814,7 @@ for key,value in pairs({
 	[390257] = "Чучело медведя",	-- Stuffed Bear
 	[390258] = "Безжизненная слизь",	-- Inert Goo
 	[390559] = "Ящик с камнями",	-- Box of Rocks
+	--TODO: [390560] = "Locked Research Chest",	-- Locked Research Chest
 	[392569] = "Окованный цепями изначальный сундук",	-- Chain-Bound Primordial Cache
 	[392570] = "Окованный цепями изначальный сундук",	-- Chain-Bound Primordial Cache
 	[392571] = "Окованный цепями сейф",	-- Chain-Bound Strongbox
@@ -3823,6 +3826,8 @@ for key,value in pairs({
 	[393222] = "Коробка с припасами",	-- Supply Trunk
 	[393282] = "Ящик из шаров",	-- Balloon Box
 	[393283] = "Ящик из шаров",	-- Balloon Box
+	[398200] = "Позабытый ларец",	-- Forgotten Lockbox
+	[398770] = "Ящик с камнями",	-- Box of Rocks
 	[398778] = "Мерзкий чан",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone

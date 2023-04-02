@@ -3788,6 +3788,7 @@ for key,value in pairs({
 	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
 	[386762] = "태고의 방어구 보관함",	-- Primordial Armor Cache
 	--TODO: [387493] = "Unique Fish",	-- Unique Fish
+	[387500] = "싸늘한 눈사람",	-- Chilly Snowman
 	[387501] = "넬타리온 선물 징표",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
 	[387728] = "위상들의 가극",	-- Opera of the Aspects
@@ -3799,6 +3800,7 @@ for key,value in pairs({
 	[388866] = "재료 냄비",	-- Reagent Pot
 	[388876] = "재료 냄비",	-- Reagent Pot
 	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388905] = "넬타리온의 도구",	-- Neltharion Toolkit
 	[388908] = "마력을 잃은 찐득이",	-- Inert Goo
 	[389102] = "오색 파편",	-- Prismatic Fragment
 	[389104] = "오색 파편",	-- Prismatic Fragment
@@ -3821,6 +3823,7 @@ for key,value in pairs({
 	[390257] = "곰인형",	-- Stuffed Bear
 	[390258] = "마력을 잃은 찐득이",	-- Inert Goo
 	[390559] = "돌멩이 상자",	-- Box of Rocks
+	[390560] = "잠긴 연구물 상자",	-- Locked Research Chest
 	--TODO: [392569] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392570] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392571] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
@@ -3832,6 +3835,8 @@ for key,value in pairs({
 	[393222] = "보급품 보관함",	-- Supply Trunk
 	[393282] = "풍선 상자",	-- Balloon Box
 	[393283] = "풍선 상자",	-- Balloon Box
+	[398200] = "잊혀진 금고",	-- Forgotten Lockbox
+	[398770] = "돌멩이 상자",	-- Box of Rocks
 	[398778] = "역겨운 보관통",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
