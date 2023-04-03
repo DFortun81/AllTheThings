@@ -1632,7 +1632,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(69861, {	-- Trilvarus Loreweaver
 					["provider"] = { "n", 193196 },	-- Trilvarus Loreweaver
 					["coord"] = { 70.4, 25.0, THE_AZURE_SPAN },
-					["isDaily"] = IGNORED_VALUE,	-- remove if inaccurate
 				}),
 				q(69872, {	-- Vakril, the Strongest Tuskarr
 					["provider"] = { "n", 193223 },	-- Vakril

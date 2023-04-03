@@ -1110,7 +1110,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71458, 382331);	-- D.U.C.K.O.Y
 			FirstCraft(71892, 382332);	-- Quack-E
 			-- Artisan Curios
-			--q(TODO, { ["name"] = "First Craft: Gnomish Voicebox", ["timeline"] = {ADDED_10_0_7}}),
+			q(74312, { ["name"] = "First Craft: Gnomish Voicebox", ["timeline"] = {ADDED_10_0_7}}),
 		})),
 		filter(MISC, {
 			i(198549),	-- Black Fireflight

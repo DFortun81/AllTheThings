@@ -2935,6 +2935,7 @@ local keys = {
 		["74113"] = "Inscription Order: Leatherworking",
 		["74114"] = "Inscription Order: Skinning",
 		["74115"] = "Inscription Order: Tailoring",
+		["74312"] = "First Craft: Gnomish Voicebox",
 		["74318"] = "First Craft: Traditional Morqut Kite",
 		["74481"] = "First Craft: Arcane Dispelling Rune",
 		["74482"] = "First Craft: Crystal Tuning Fork",

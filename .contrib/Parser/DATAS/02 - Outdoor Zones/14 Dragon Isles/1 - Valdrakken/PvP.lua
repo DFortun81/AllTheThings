@@ -1739,10 +1739,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 									i(201766, {	-- Crimson Aspirant's Torch
 										["cost"] = { { "c", HONOR, 425 } },
 									}),
-									i(201775, {	-- Crimson Aspirant's Wand
-										["cost"] = {
-											{ "c", HONOR, 1 },
-										}}),
 									i(201767, {	-- Crimson Aspirant's Warglaive
 										["cost"] = { { "c", HONOR, 875 } },
 									}),

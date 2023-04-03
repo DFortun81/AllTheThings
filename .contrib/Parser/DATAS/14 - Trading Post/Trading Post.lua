@@ -18,6 +18,12 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["races"] = HORDE_ONLY,
 		}),
 		q(72681, {	-- Report to the Trading Post -- Last Month: Triggered after completing 66959 (and cross complete 66858)
+			["timeline"] = { ADDED_10_0_5, REMOVED_10_0_7 },
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isMonthly"] = true,
+		}),
+		q(75833, {	-- Report to the Trading Post
+			["timeline"] = { ADDED_10_0_7 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isMonthly"] = true,
 		}),

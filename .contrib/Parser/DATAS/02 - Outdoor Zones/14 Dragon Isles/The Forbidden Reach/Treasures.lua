@@ -126,9 +126,9 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 				q(73212),	
 				q(73213),
 				q(73214),
-				q(73215),
 			}),
 			header(HEADERS.Item, 202670, {	-- Sealed Knowledge Scroll
+				q(73215),
 				q(73216),
 				q(73217),
 				q(73218),

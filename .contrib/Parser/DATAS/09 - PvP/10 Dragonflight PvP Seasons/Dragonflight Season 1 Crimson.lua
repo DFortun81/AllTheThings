@@ -187,7 +187,6 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, {
 					i(201764),	-- Crimson Aspirant's Staff
 					i(201963),	-- Crimson Aspirant's Sword
 					i(201766),	-- Crimson Aspirant's Torch
-					i(201775),	-- Crimson Aspirant's Wand
 					i(201767),	-- Crimson Aspirant's Warglaive
 				}),
 			}),
