@@ -119,7 +119,7 @@ def sort_raw_file_recipes() -> None:
     """Sort raw files for recipes."""
     profession_dict = build_profession_dict()
     profession_dict["Other"] = 0
-    raw_path_dict = {
+    raw_path_dict: dict[str, Path] = {
         profession: Path("Raw", "Professions", f"{profession}.txt")
         for profession in profession_dict
     }
@@ -268,7 +268,7 @@ def create_missing_file(thing: type[Thing]) -> None:
                 missing_file.writelines(difference)
 
 
-def create_dict_from_raw(file_name: str) -> dict[str, list[str]]:
+def create_dict_from_raw(file_name: str, n: int) -> dict[str, list[str]]:
     """This function creates a dict of raw files"""
     raw_path = Path("Raw", file_name)
     item_dict: dict[str, list[str]] = {}
@@ -277,7 +277,7 @@ def create_dict_from_raw(file_name: str) -> dict[str, list[str]]:
         for line in lines:
             try:
                 key = line.split(DELIMITER)[0].strip()
-                value = line.split(DELIMITER)[1].strip()
+                value = line.split(DELIMITER)[n].strip()
             except IndexError:
                 continue
             if key in item_dict.keys():
@@ -291,7 +291,7 @@ def create_dict_from_raw(file_name: str) -> dict[str, list[str]]:
 
 def post_process_recipes() -> None:
     profession_dict: dict[str, int] = build_profession_dict()
-    spell_dict: dict[str, list[str]] = create_dict_from_raw("SpellNames.txt")
+    spell_dict: dict[str, list[str]] = create_dict_from_raw("SpellNames.txt", 1)
     for profession in profession_dict.keys() | {"Other"}:
         print(f"{profession}")
         missing_path = Path(
@@ -356,10 +356,43 @@ def post_process(thing: type[Thing]) -> None:
             missing_file.writelines(missing_lines)
         return
     elif thing == Followers:
-        # TODO:
-        raise NotImplementedError("Followers are not implemented yet.")
+        follower_horde_dict: dict[str, list[str]] = create_dict_from_raw("Followers.txt", 1)
+        follower_alliance_dict: dict[str, list[str]] = create_dict_from_raw("Followers.txt", 2)
+        creature_dict: dict[str, list[str]] = create_dict_from_raw("Creatures.txt", 1)
+        for index, follower_id in enumerate(missing_lines):
+            follower_id = re.sub("[^\\d^.]", "", follower_id.strip())
+            if follower_id.isdigit():
+                missing_lines[index] = f"{thing.new_prefix()}{follower_id}),\t-- "
+                name_horde_id = follower_alliance_dict[follower_id][0]
+                name_alliance_id = follower_horde_dict[follower_id][0]
+                if name_alliance_id == name_horde_id:
+                    name_id = name_alliance_id
+                    if name_id in creature_dict.keys():
+                        name_list = creature_dict[name_id].copy()
+                        name_list.reverse()
+                        missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                    else:
+                        missing_lines[index] += "\n"
+                else:
+                    if name_alliance_id in creature_dict.keys():
+                        name_list = creature_dict[name_alliance_id].copy()
+                        name_list.reverse()
+                        missing_lines[index] += "Alliance:"
+                        missing_lines[index] += " \\\\ ".join(name_list) + "\t"
+                    else:
+                        missing_lines[index] += "\n"
+                    if name_horde_id in creature_dict.keys():
+                        name_list = creature_dict[name_horde_id].copy()
+                        name_list.reverse()
+                        missing_lines[index] += "Horde:"
+                        missing_lines[index] += " \\\\ ".join(name_list) + "\n"
+                    else:
+                        missing_lines[index] += "\n"
+        with open(missing_path, "w") as missing_file:
+            missing_file.writelines(missing_lines)
+        return
     elif thing == Illusions:
-        spell_dict: dict[str, list[str]] = create_dict_from_raw("SpellItems.txt")
+        spell_dict: dict[str, list[str]] = create_dict_from_raw("SpellItems.txt", 1)
         for index, id in enumerate(missing_lines):
             id = re.sub("[^\\d^.]", "", id.strip())
             if id.isdigit():
@@ -376,8 +409,8 @@ def post_process(thing: type[Thing]) -> None:
     elif thing == Quests:
         get_quest_names()
     elif thing == Pets:
-        pet_dict: dict[str, list[str]] = create_dict_from_raw("Pets.txt")
-        creature_dict: dict[str, list[str]] = create_dict_from_raw("Creatures.txt")
+        pet_dict: dict[str, list[str]] = create_dict_from_raw("Pets.txt", 1)
+        creature_dict = create_dict_from_raw("Creatures.txt", 1)
         for index, pet_id in enumerate(missing_lines):
             pet_id = re.sub("[^\\d^.]", "", pet_id.strip())
             if pet_id.isdigit():
@@ -393,7 +426,7 @@ def post_process(thing: type[Thing]) -> None:
             missing_file.writelines(missing_lines)
         return
     elif thing == Toys:
-        item_dict: dict[str, list[str]] = create_dict_from_raw("Items.txt")
+        item_dict: dict[str, list[str]] = create_dict_from_raw("Items.txt", 1)
         for index, id in enumerate(missing_lines):
             id = re.sub("[^\\d^.]", "", id.strip())
             if id.isdigit():
@@ -408,8 +441,8 @@ def post_process(thing: type[Thing]) -> None:
             missing_file.writelines(missing_lines)
         return
     elif thing == Transmog:
-        item_dict = create_dict_from_raw("Items.txt")
-        transmog_dict: dict[str, list[str]] = create_dict_from_raw("Transmog.txt")
+        item_dict = create_dict_from_raw("Items.txt", 1)
+        transmog_dict: dict[str, list[str]] = create_dict_from_raw("Transmog.txt", 1)
         for index, transmog_id in enumerate(missing_lines):
             transmog_id = re.sub("[^\\d^.]", "", transmog_id.strip())
             if transmog_id.isdigit():
@@ -466,29 +499,7 @@ def create_missing_files() -> None:
     for thing in things:
         print(thing)
         create_missing_file(thing)
-
-
-def available_post_process() -> None:
-    """This iterates over Things (that are available) to process missing files"""
-    things: list[type[Thing]] = Thing.__subclasses__()
-    for thing in things:
-        print(thing)
-        if thing in (
-            Achievements,
-            Factions,
-            FlightPaths,
-            Illusions,
-            Mounts,
-            Pets,
-            Quests,
-            Recipes,
-            Titles,
-            Toys,
-            Transmog,
-        ):
-            post_process(thing)
-        else:
-            continue
+        post_process(thing)
 
 
 def give_name_item() -> None:
@@ -517,6 +528,5 @@ def give_name_item() -> None:
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
-"""Step 5: Run create_missing_files() and available_post_process() (you have to uncomment it)"""
-# create_missing_files()
-# available_post_process()
+"""Step 5: Run create_missing_files() and (you have to uncomment it)"""
+create_missing_files()

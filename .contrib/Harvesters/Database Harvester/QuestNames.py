@@ -84,14 +84,16 @@ def get_quest_names() -> None:
                     try:
                         name_dict[expansion] = existing_name_dict[expansion][missing_line][0].strip()
                     except KeyError:
-                        print(f"Have to get {missing_line}")
+                        print(f"Have to get {expansion}: {missing_line}")
                         name_dict[expansion] = get_name(expansion_dict[expansion], missing_line)
                         with open(raw_path_dict[expansion], "a") as expansion_file:
                             expansion_file.write(f"{missing_line}{DELIMITER}{name_dict[expansion]}\n")
                         continue
                 for expansion in name_dict:
                     if name_dict[expansion].strip() != "--":
-                        if expansion == "Retail":
+                        if expansion == "PTR" and "Retail" in expansion_dict.keys() and name_dict["Retail"] == name_dict["PTR"]:
+                            quest_name = quest_name
+                        elif expansion == "Retail":
                             quest_name = quest_name+f" {name_dict[expansion]}\t"
                         else:
                             quest_name = quest_name+f" {expansion}:{name_dict[expansion]}\t"
@@ -104,24 +106,35 @@ def get_quest_names() -> None:
                         "TBC": "tbc",
                         "WOTLK": "wotlk",
                     }
+                    print("Classic :", missing_line)
                 elif version.parse(missing_line) < version.parse("3.0.0.0"):
                     expansion_dict = {
                         "Retail": "",
                         "TBC": "tbc",
                         "WOTLK": "wotlk",
                     }
+                    print("TBC :", missing_line)
                 elif version.parse(missing_line) < version.parse("4.0.0.0"):
                     expansion_dict = {
                         "Retail": "",
                         "WOTLK": "wotlk",
                     }
-                elif version.parse(missing_line) < version.parse("10.0.7.99999"):
+                    print("Wotlk :", missing_line)
+                elif version.parse(missing_line) < version.parse("10.0.0.0"):
                     expansion_dict = {
                         "Retail": "",
                     }
-                else:
+                    print("Cata-BFA :", missing_line)
+                elif version.parse(missing_line) < version.parse("10.0.7.9999"):
+                    expansion_dict = {
+                        "Retail": "",
+                        "PTR": "ptr",
+                    }
+                    print("10.0.0-10.0.7 :", missing_line)
+                elif version.parse(missing_line) > version.parse("10.1.0.0"):
                     expansion_dict = {
                         "PTR": "ptr",
                     }
+                    print("10.1.0 :", missing_line)
     with open(missing_path, "w") as missing_file:
         missing_file.writelines(missing_lines)
