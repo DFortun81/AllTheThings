@@ -1686,21 +1686,6 @@ q(71776),	--
 10.0.5.47799
 q(74441),	-- Eaglemaster Niraak	
 10.0.7.48749
-q(72405),	-- An Unlikely Informant	
-q(72408),	-- A Window to the Past	
-q(72409),	-- Rotten Old Memories	
-q(72424),	-- Looking for Something Specific	
-q(72426),	-- The New Clessington Estate	
-q(72430),	-- Misdeeds in Moonbrook	
-q(72431),	-- A Hungry Heritage	
-q(72432),	-- Supply Only the Finest Goons	
-q(72445),	-- To Northshire	
-q(72446),	-- What's Their Problem?	
-q(72449),	-- Knock It Off!	
-q(72450),	-- The Clessington Will	
-q(72451),	-- Will to Survive	
-q(72452),	-- Go with Honor, Friend	
-q(72453),	-- Betrayal of the Brotherhood	
 q(72462),	-- A People in Need of Healing	
 q(72463),	-- Galgar's Cactus Apple Surprise...	
 q(72464),	-- The Kosh'harg	
@@ -1719,7 +1704,6 @@ q(72476),	-- The Blessing of the Ancestors
 q(72477),	-- Orcish Groceries	
 q(72478),	-- Honor and Glory	
 q(72479),	-- Aka'magosh	
-q(72644),	-- An Urgent Matter	
 q(73177),	--
 q(73394),	--
 q(73396),	--
@@ -1734,7 +1718,6 @@ q(74581),	-- The Long Knives
 q(74672),	--
 q(74677),	--
 q(74894),	--
-q(75265),	-- An Urgent Matter	
 q(75878),	--
 q(75879),	--
 q(75881),	--

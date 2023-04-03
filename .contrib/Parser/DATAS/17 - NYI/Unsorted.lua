@@ -1514,7 +1514,6 @@ root(ROOTS.Unsorted, {
 				i(202032),	-- Feast for the Ancestors
 				i(202106),	-- Chewed Piece of Journal
 				i(202238),	-- Enforcer Grant's Signet
-				i(202267),	-- Clessington Signet
 				i(202401),	-- Cactus Apple Surprise
 				i(202402),	-- Bag of Cactus Apples
 				i(202569),	-- Djaruun, Pillar of the Elder Flame
@@ -1527,7 +1526,6 @@ root(ROOTS.Unsorted, {
 				i(202710),	-- Grilled Southfury Salmon
 
 				i(203395),	-- Research Journal
-				i(203475),	-- Urgent Stormwind Summons
 				i(203679),	-- Ancestral Bloodhoof Totem
 				i(203689),	-- Horn Signet of Tetsos
 				i(203692),	-- Horn Signet of Arrosh
@@ -1540,7 +1538,6 @@ root(ROOTS.Unsorted, {
 				i(204171),	-- Enforcer Jennive's Signet
 				i(204172),	-- Enforcer Tera's Signet
 				i(204173),	-- Enforcer Horb's Signet
-				i(204214),	-- Drakefire Amulet
 
 
 				i(204793),	-- Suja's Sweet Salt
@@ -3031,21 +3028,6 @@ root(ROOTS.Unsorted, {
 				q(75680),
 				q(75694),
 				-- 10.1.0.48661
-				q(72405),
-				q(72408),
-				q(72409),
-				q(72424),
-				q(72426),
-				q(72430),
-				q(72431),
-				q(72432),
-				q(72445),
-				q(72446),
-				q(72449),
-				q(72450),
-				q(72451),
-				q(72452),
-				q(72453),
 				q(72462),
 				q(72463),
 				q(72464),
@@ -3065,7 +3047,6 @@ root(ROOTS.Unsorted, {
 				q(72478),
 				q(72479),
 				q(72545),
-				q(72644),
 				q(72712),
 				q(72713),
 				q(72714),
@@ -3087,8 +3068,6 @@ root(ROOTS.Unsorted, {
 				q(74581),
 				q(74672),
 				q(74677),
-				q(74894),
-				q(75265),
 				q(75706),
 				q(75707),
 				q(75708),
@@ -3290,18 +3269,13 @@ root(ROOTS.Unsorted, {
 				i(203680),	-- Totem Toss
 			}),
 			filter(COSMETIC, {
+				-- NYI Ensembles
 				i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
 				i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
 				i(203213),	-- Ensemble: Lion's Heritage White Armor Set
 				i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
 				i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
 				i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
-				i(204820),	-- Lionguard Greathelm
-				i(204821),	-- Lionguard Greathelm
-				i(204822),	-- Lionguard Greathelm
-				i(204863),	-- Lionguard Greatbelt
-				i(204865),	-- Lionguard Greatbelt
-				i(204866),	-- Lionguard Greatbelt
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
