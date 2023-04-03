@@ -1033,6 +1033,7 @@ i(181267, 2957);	-- Writhing Spine
 -----------------
 -- PATCH 9.1.0 --
 -----------------
+-- ITEM --
 i(186449, 3117);	-- Amaranthine Stinger
 i(186548, 3127);	-- Chompy
 i(186546, 3103);	-- Copperback Etherwyrm
@@ -1063,11 +1064,32 @@ i(184867, 3092);	-- Squibbles
 i(186556, 3100);	-- Timeless Mechanical Dragonling
 i(186535, 3106);	-- Topaz Baubleworm
 i(186536, 3105);	-- Turquoise Baubleworm
+-- NPC --
+n(179131, 3102);	-- Animite Broodling
+n(179248, 3134);	-- Anxious Nibbler
+n(179179, 3115);	-- Clinging Remains
+n(179164, 3108);	-- Curious Purrkin
+n(179167, 3111);	-- Damp Skrat
+n(179226, 3123);	-- Deathroach
+n(179256, 3139);	-- Devourling
+n(179229, 3126);	-- Eye of Affliction
+n(179219, 3120);	-- Grip of Terror
+n(179183, 3119);	-- Lost Limb
+n(179168, 3112);	-- Scavenging Skrat
+n(179182, 3118);	-- Scurrying Mawrat
+n(179165, 3109);	-- Silver Purrkin
+n(179227, 3124);	-- Vile Deathroach
+n(179329, 3141);	-- Wild Corpsefly
+n(179250, 3135);	-- Young Garnetgullet
 
 -----------------
 -- PATCH 9.1.5 --
 -----------------
+i(0, 3153);			-- Blinky
 i(186553, 3107);	-- Gurgl
+-- NYI --
+i(188837, 0);		-- Blinky Egg
+i(0, 3188);			-- Trub'ul
 
 -----------------
 -- PATCH 9.2.0 --
@@ -1131,6 +1153,15 @@ i(0, 3218);			-- Enraged Poultrid
 -- NYI --
 n(185475, 3246);	-- Tezpet
 
+-----------------
+-- PATCH 9.2.5 --
+-----------------
+i(0, 3249);			-- Lil' Ursoc
+i(0, 3177);			-- Drakks
+i(0, 3175);			-- Murkastrasza
+-- NYI --
+i(190586, 0);		-- Lil' Ursoc
+
 ------------------
 -- PATCH 10.0.0 --
 ------------------
@@ -1158,7 +1189,6 @@ i(201262, 3412);	-- Gale Spirit
 i(200173, 3287);	-- Ghostflame
 i(198725, 3381);	-- Gray Marmoni
 i(193618, 3317);	-- Hoofhelper
-i(190583, 3248); 	-- Ichabod
 i(192459, 3270);	-- Jean's Lucky Fish
 i(193885, 3345);	-- Jeweled Amber Whelpling
 i(193888, 3347);	-- Jeweled Emerald Whelpling
@@ -1234,6 +1264,7 @@ n(189136, 3301);	-- Wild Duckling
 n(189157, 3322);	-- Woodbiter Piculet
 -- Special --
 i(0, 3356);			-- Chalkshell Turtle
+i(0, 3248);			-- Ichabod
 i(0, 3320);			-- Whitewhisker
 -- NYI --
 i(0, 3339);			-- Black Dragon Whelp
@@ -1252,6 +1283,7 @@ i(193587, 3312);	-- Time-Lost Duck
 i(193429, 3297);	-- Time-Lost Salamanther
 i(193620, 3267);	-- Time-Lost Slyvern
 i(193068, 3277);	-- Time-Lost Treeflitter
+i(190583, 0); 		-- Ichabod
 i(191126, 0);		-- Obsidian Whelpling
 i(192050, 0);		-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
 i(193863, 0);		-- zzOld - [PH] Dark Baby Vorquin (REUSE)

@@ -101,11 +101,26 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		tier(SL_TIER, {
 			i(184034), -- Stony's Infused Ruby
 
+			-- 9.1.5
+			tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 9.1.5" } }, {
+				pet(3188, {	-- Trub'ul (PET!)
+					["modelID"] = 103091,
+				}),
+				-- Without SpeciesID Attached
+				i(188837),	-- Blinky Egg (PET!) [Item Never Available]
+			})),
+
 			-- 9.2.0
 			tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
-				pet(3246, {	-- Tezpet
+				pet(3246, {	-- Tezpet (PET!)
 					["modelID"] = 92261,
 				}),
+			})),
+
+			-- 9.2.5
+			tier(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 9.2.5" } }, {
+				-- Without SpeciesID Attached
+				i(190586),	-- Lil' Ursoc (PET!) [Item Never Available]
 			})),
 		}),
 		tier(DF_TIER, {
@@ -165,6 +180,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["modelID"] = 106606,
 				}),
 				-- Without SpeciesID Attached
+				i(190583),	-- Ichabod (PET!) [Item Never Available]
 				i(191126, {	-- Obsidian Whelpling (PET!)
 					["modelID"] = 107454,
 				}),
@@ -210,19 +226,19 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 10.0.7
 			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { "created 10.0.7" } }, {
-				pet(3424, {	-- [DNT] Storm Pet Boss - Epic
+				pet(3424, {	-- [DNT] Storm Pet Boss - Epic (PET!)
 					["modelID"] = 106894,
 				}),
-				pet(3422, {	-- [DNT] Storm Pet Boss - Legendary
+				pet(3422, {	-- [DNT] Storm Pet Boss - Legendary (PET!)
 					["modelID"] = 106894,
 				}),
-				pet(3425, {	-- [DNT] Storm Pet Boss - Rare
+				pet(3425, {	-- [DNT] Storm Pet Boss - Rare (PET!)
 					["modelID"] = 106894,
 				}),
-				pet(3423, {	-- [DNT] Storm Pet Fodder
+				pet(3423, {	-- [DNT] Storm Pet Fodder (PET!)
 					["modelID"] = 106894,
 				}),
-				pet(3471, {	-- Gilded Mechafrog
+				pet(3471, {	-- Gilded Mechafrog (PET!)
 					["name"] = "Gilded Mechafrog",
 					["modelID"] = 111667,
 				}),
