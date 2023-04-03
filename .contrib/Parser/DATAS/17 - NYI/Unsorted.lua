@@ -3924,7 +3924,7 @@ root(ROOTS.Unsorted, {
 				-- 10.0.0.45335
 				q(70993),	--
 				q(71186),	--
-				q(71201),	--
+				q(71201),	-- Hide and Sneak
 				q(71214),	--
 				q(71226),	-- Kill Rock Snails
 				q(71236),	--
