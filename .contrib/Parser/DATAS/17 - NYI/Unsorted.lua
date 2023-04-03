@@ -2669,8 +2669,6 @@ root(ROOTS.Unsorted, {
 				q(74581),	-- The Long Knives
 				q(74672),	--
 				q(74677),	--
-				q(75878),	--
-				q(75879),	--
 			})
 		})),
 		tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 10.0.5" } }, {
