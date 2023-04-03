@@ -39422,6 +39422,7 @@ s(26006)/i(53044),	--
 s(26007)/i(53045),	-- 
 s(26008)/i(53046),	-- 
 s(26009)/i(53047),	-- 
+s(26010)/i(53048),	-- sday Message \\ Doomsday Message
 s(26011)/i(53055),	-- Monster - Gnomeregan Bonechopper (Red)
 s(26012)/i(53056),	-- Monster - Gnomeregan Bonechopper (Blue)
 s(26013)/i(53096),	-- Monster - Mace, Gear

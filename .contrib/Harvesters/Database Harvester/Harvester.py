@@ -3,7 +3,7 @@ import csv
 import re
 from pathlib import Path
 from packaging import version
-
+from QuestNames import get_quest_names
 from ThingTypes import (
     DATAS_FOLDER,
     DELIMITER,
@@ -374,8 +374,7 @@ def post_process(thing: type[Thing]) -> None:
             missing_file.writelines(missing_lines)
         return
     elif thing == Quests:
-        # TODO:
-        raise NotImplementedError("Quests are not implemented yet.")
+        get_quest_names()
     elif thing == Pets:
         pet_dict: dict[str, list[str]] = create_dict_from_raw("Pets.txt")
         creature_dict: dict[str, list[str]] = create_dict_from_raw("Creatures.txt")
@@ -481,6 +480,7 @@ def available_post_process() -> None:
             Illusions,
             Mounts,
             Pets,
+            Quests,
             Recipes,
             Titles,
             Toys,
@@ -511,25 +511,12 @@ def give_name_item() -> None:
         missing_file.writelines(lines)
 
 
-def give_name_quest() -> None:
-    """Ugly Function Helped me during Beta to get names to item... Need to add to PostProcess Properly Soon"""
-    path: Path = Path("Fast.txt")
-    csv_list: list[str] = []
-    with open(path, "r+") as csv_file:
-        for line in csv_file:
-            q_line: str = "q("+line.split("\t")[0].strip() + "),\n"
-            csv_list.append(q_line)
-    with open(path, "w") as csv_file:
-        csv_file.writelines(csv_list)
-
-
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
 # add_latest_data("10.0.7.48749", "Retail")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
-"""Step 5: Run create_missing_files() (you have to uncomment it)"""
+"""Step 5: Run create_missing_files() and available_post_process() (you have to uncomment it)"""
 # create_missing_files()
-"""Step 6: Run available_post_process() (you have to uncomment it) This is still underwork and currently only Achievements, Factions, Flight Paths, Illusions, Mounts, Pets, Titles and Toys can be Post Processed"""
-# available_post_process()
+available_post_process()
