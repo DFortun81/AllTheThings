@@ -326,6 +326,42 @@ namespace ATT
         internal static List<Dictionary<string, object>> ConditionalItemData { get; } = new List<Dictionary<string, object>>();
 
         /// <summary>
+        /// Contains two Keys for sets of field names relating to a 'trackable' nature within ATT
+        /// Provided: fields whose data allows for in-game tracking capability
+        /// Required: fields whose data only makes sense if the data allows in-game tracking
+        /// </summary>
+        internal static Dictionary<string, HashSet<string>> TrackableFields { get; } = new Dictionary<string, HashSet<string>>
+        {
+            { "Provided", new HashSet<string>
+            {
+                "achID",
+                "azeriteEssenceID",
+                "conduitID",
+                "difficultyID",
+                "factionID",
+                "flightPathID",
+                "followerID",
+                "instanceID",
+                "heirloomUnlockID",
+                "heirloomLevelID",
+                "questID",
+                "questIDA",
+                "questIDH",
+                "runeforgePowerID",
+                "spellID",
+                "titleID",
+            } },
+            { "Required", new HashSet<string>
+            {
+                "isDaily",
+                "isWeekly",
+                "isMonthly",
+                "isYearly",
+                "repeatable"
+            } }
+        };
+
+        /// <summary>
         /// Allows the optional Parser Config file to overwrite some built-in values for non-compile required manipulation of the Parser
         /// </summary>
         public static void InitConfigSettings(string filepath)
@@ -1316,6 +1352,7 @@ namespace ATT
             TryFindRecipeID(data);
             CheckRequireSkill(data);
             CheckHeirloom(data);
+            CheckTrackableFields(data);
             Validate_SourceQuests(data);
             Validate_AltQuests(data);
             Items.DetermineSourceID(data);
@@ -1384,6 +1421,29 @@ namespace ATT
             }
 
             return true;
+        }
+
+        private static void CheckTrackableFields(Dictionary<string, object> data)
+        {
+            // This logic is fine, but might be intentional in some cases to have tooltips indicate 'daily' etc.
+            // even when the data itself has no way to actually 'track' completion. Maybe add this at some other time
+
+            //if (data.ContainsAnyKey(TrackableFields["Provided"]))
+            //{
+            //    // currently nothing to handle concerning trackable data
+            //}
+            //else
+            //{
+            //    string[] trackingRequiredKeys = data.Keys.Where(k => TrackableFields["Required"].Contains(k)).ToArray();
+            //    if (trackingRequiredKeys.Any())
+            //    {
+            //        LogDebug($"WARN: Tracking fields {ToJSON(trackingRequiredKeys)} removed from non-tracking data:", data);
+            //        foreach (string field in trackingRequiredKeys)
+            //        {
+            //            data.Remove(field);
+            //        }
+            //    }
+            //}
         }
 
         private static void CheckObjectConversion(Dictionary<string, object> data)
@@ -2546,8 +2606,8 @@ namespace ATT
             // If neither has a name, then they are equal.
             return 0;
         }
-#endregion
-#region Field Conversion
+        #endregion
+        #region Field Conversion
         /// <summary>
         /// Convert the field name to a standardized field name.
         /// This helps prevent inconsistent naming conventions from breaking things.
@@ -3030,8 +3090,8 @@ namespace ATT
                     return field;
             }
         }
-#endregion
-#region JSON Conversion
+        #endregion
+        #region JSON Conversion
         /// <summary>
         /// Convert the JSON string to a Dictionary with string,object pairs.
         /// </summary>
@@ -3040,6 +3100,16 @@ namespace ATT
         public static Dictionary<string, object> ToDictionary(string jsonString)
         {
             return ToObject(jsonString) is Dictionary<string, object> obj ? obj : null;
+        }
+
+        /// <summary>
+        /// Convert the Dictionary to JSON using Mini JSON.
+        /// </summary>
+        public static string ToJSON(IDictionary<string, object> data)
+        {
+            // typically we don't want to serialize the 'g' content of a given 'data' object
+            // bit clunky but minijson doesn't seem to have much functionality... hence 'mini'
+            return MiniJSON.Json.Serialize(data.AsEnumerable().Where(kvp => kvp.Key != "g").ToDictionary(kvp => kvp.Key, kvp => kvp.Value));
         }
 
         /// <summary>
@@ -3061,8 +3131,8 @@ namespace ATT
         {
             return MiniJSON.Json.Deserialize(jsonString);
         }
-#endregion
-#region Lua Conversion
+        #endregion
+        #region Lua Conversion
         /// <summary>
         /// Merge the contents of the lua table into the database.
         /// If the keys are whitelisted, then the data will be added.
@@ -3620,9 +3690,9 @@ namespace ATT
             }
             return null;
         }
-#endregion
+        #endregion
 
-#region Export (Clean)
+        #region Export (Clean)
         /// <summary>
         /// Export the data to the builder in a clean, longhand format.
         /// Standardized formatting without newlines applies here.
@@ -3786,7 +3856,7 @@ namespace ATT
             ExportClean(builder, list);
             return builder;
         }
-#endregion
+        #endregion
 
         /// <summary>
         /// Export the database.

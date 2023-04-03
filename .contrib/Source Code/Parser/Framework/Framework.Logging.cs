@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace ATT
 {
@@ -7,6 +8,16 @@ namespace ATT
     /// </summary>
     public static partial class Framework
     {
+        /// <summary>
+        /// Outputs the message to the Trace only if DebugMode is enabled, including the serialized data if provided
+        /// </summary>
+        /// <param name="message"></param>
+        public static void LogDebug(string message, IDictionary<string, object> data)
+        {
+            if (DebugMode)
+                Trace.WriteLine(message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+        }
+
         /// <summary>
         /// Outputs the message to the Trace only if DebugMode is enabled, including the serialized data if provided
         /// </summary>

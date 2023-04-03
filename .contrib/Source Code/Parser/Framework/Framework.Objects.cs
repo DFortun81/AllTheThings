@@ -2370,13 +2370,13 @@ end
                     {
                         if (data.Remove(dropObj.ToString()))
                         {
-                            LogDebug($"Removed key: '{dropObj}'{Environment.NewLine}{ToJSON(data)}");
+                            LogDebug($"Removed key: '{dropObj}'", data);
                         }
                     }
                 }
                 else
                 {
-                    LogError($"Invalid format for '_drop'{Environment.NewLine}{ToJSON(drops)}");
+                    LogError($"Invalid format for '_drop'", drops);
                     Console.ReadLine();
                 }
             }
@@ -2444,7 +2444,7 @@ end
                         }
                     }
 
-                    LogDebug($"Converted AQD type into single Quest for Retail. {ToJSON(data2)}");
+                    LogDebug($"Converted AQD type into single Quest for Retail.", data2);
                 }
 #endif
 
