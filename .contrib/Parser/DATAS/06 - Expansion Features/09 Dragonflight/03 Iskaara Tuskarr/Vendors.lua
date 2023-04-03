@@ -626,14 +626,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 							{ "i", LARGE_STURDY_FEMUR, 1 },
-							{ "i", 194967, 5 },
+							{ "i", 194967, 20 },
 						},
 					}),
 					i(198341, {	-- Tan Paw Pack
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 							{ "i", LARGE_STURDY_FEMUR, 1 },
-							{ "i", 194730, 5 },
+							{ "i", 194730, 20 },
 						},
 					}),
 				},

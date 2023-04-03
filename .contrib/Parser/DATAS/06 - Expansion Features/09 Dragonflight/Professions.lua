@@ -571,7 +571,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["coord"] = { 55.2, 30.5, THALDRASZUS },
 				["crs"] = 194855,	-- Docile Cub
 				["g"] = {
-					i(201003),	-- Furry Gloop
+					i(201003, {["timeline"] = {ADDED_10_0_2_LAUNCH, REMOVED_10_0_5}}),	-- Furry Gloop
+					i(203471, {["timeline"] = {ADDED_10_0_5}}),	-- Tasty Candy
 				},
 			}),
 			o(380605, {	-- Contraband Concoction

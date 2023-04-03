@@ -1141,31 +1141,30 @@ i(197961);	-- Whelps on Strings
 -- PATCH 10.0.5 --
 ------------------
 i(202020);	-- Chasing Storm
+i(202309);	-- Defective Doomsday Device
 i(202207);	-- Reusable Oversized Bobber
 i(203716);	-- Thundering Banner of the Aspects
--- NYI --
-i(202309);	-- Defective Doomsday Device
 
 ------------------
 -- PATCH 10.0.7 --
 ------------------
 i(204675);	-- A Drake's Big Basket of Eggs
 i(203757);	-- Brazier of Madness
+i(202360);	-- Dented Can
 i(203725);	-- Display of Strength
 i(202253);	-- Primal Stave of Claw and Fur
 i(201930);	-- H.E.L.P.
 i(204257);	-- Holoviewer: The Lady of Dreams
 i(204256);	-- Holoviewer: The Scarlet Queen
 i(204262);	-- Holoviewer: The Timeless One
+i(204687);	-- Obsidian Battle Horn
 i(202283);	-- Reading Glasses
 i(199900);	-- Secondhand Survey Tools
 i(203734);	-- Snow Blanket
 i(203852);	-- Spore-Bound Essence
 -- Unsorted --
 i(204170);	-- Clan Banner
-i(202360);	-- Dented Can
 i(204220);	-- Hraxian's Unbreakable Will
-i(204687);	-- Obsidian Battle Horn
 
 ------------------
 -- PATCH 10.1.0 --

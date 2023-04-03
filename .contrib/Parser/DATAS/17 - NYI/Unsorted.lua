@@ -3405,9 +3405,7 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(TOYS, {
 				i(204170),	-- Clan Banner (TOY!)
-				i(202360),	-- Dented Can (TOY!)
 				i(204220),	-- Hraxian's Unbreakable Will (TOY!)
-				i(204687),	-- Obsidian Battle Horn (TOY!)
 			}),
 			n(WEAPONS, {
 				i(204674),	-- Cursed Demonbone Longbow
@@ -3724,7 +3722,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				i(203382),	-- Peripheral Vision Projectors
-				i(203471),	-- Tasty Candy
 			}),
 			filter(QUEST_ITEMS, {
 				i(137295),	-- Bottle of Arcwine
@@ -3734,9 +3731,6 @@ root(ROOTS.Unsorted, {
 				i(191541),	-- Shikaar Supplies
 				i(193257),	-- Clump of Sacred Soil
 				i(203598),	-- Makko's Journal Cover
-			}),
-			filter(TOYS, {
-				i(202309),	-- Defective Doomsday Device (TOY!)
 			}),
 			n(QUESTS, {
 				-- 10.0.5.47799

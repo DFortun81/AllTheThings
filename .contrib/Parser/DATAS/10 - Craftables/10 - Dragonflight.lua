@@ -942,6 +942,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			r(382357),	-- EZ-Thro Primal Deconstruction Charge
 		}),
 		spell(382374, {	-- Rummage Through Scrap
+			i(202309, {["timeline"] = {ADDED_10_0_5}}),	-- Defective Doomsday Device (TOY!)
+			i(202360, {["timeline"] = {ADDED_10_0_7}}),	-- Dented Can (TOY!)
 			i(192495),	-- Malfunctioning Stealthman 54 (TOY!)
 			i(199554),	-- S.E.A.T. (TOY!)
 		}),

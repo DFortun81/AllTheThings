@@ -1016,10 +1016,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				i(204015),	-- Swirling Mojo Stone
 				i(204020),	-- Wild Spirit Stone
 				i(204030),	-- Wind Sculpted Stone
-				-- Unknown
-				i(204278),	-- Neltharion's Toolkit
+				-- Drops from any chest
 				i(204257),	-- Holoviewer: The Lady of Dreams (TOY!)
 				i(204262),	-- Holoviewer: The Timeless One (TOY!)
+				i(204687),	-- Obsidian Battle Horn (TOY!)
 			}),
 		}),
 	}),
