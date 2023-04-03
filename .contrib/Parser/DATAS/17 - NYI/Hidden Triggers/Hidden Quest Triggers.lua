@@ -1778,6 +1778,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(70583),	-- Thaldraszus 50.6, 55.5
 		q(70584),	-- Thaldraszus 70.3, 44.3
 		q(70585),	-- Thaldraszus 63.6, 77.1
+		q(73143),	-- The Forbidden Reach 31.7, 26.1
+		q(73144),	-- The Forbidden Reach 77.9, 51.1
+		q(73145),	-- The Forbidden Reach 39.9, 81.9
 	}),
 
 	--------------------
