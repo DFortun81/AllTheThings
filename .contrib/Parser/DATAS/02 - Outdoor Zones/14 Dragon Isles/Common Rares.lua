@@ -594,6 +594,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				i(200303, {	-- Dreamweaver Acolyte's Staff
 					["crs"] = RARE_GROUP_TITAN,
 				}),
+				i(200439, {	-- Earthpact Scepter
+					["crs"] = RARE_GROUP_FIVE,
+				}),
 				i(200684, {	-- Emerald Tailbone
 					["crs"] = RARE_GROUP_THREE,
 				}),

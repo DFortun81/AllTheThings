@@ -514,7 +514,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74038,
 					["g"] = {
 						i(199337),	-- Bag of Furious Winds (TOY!)
-						i(200439),	-- Earthpact Scepter
 						i(200136),	-- Monsoonic Armguards
 					},
 				}),

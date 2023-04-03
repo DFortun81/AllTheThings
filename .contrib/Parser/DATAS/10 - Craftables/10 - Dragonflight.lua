@@ -2844,6 +2844,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74198),	-- Skinning The Weeping Vilomah
 			q(74199),	-- Skinning Riverwalker Tamopo
 			q(74200),	-- Skinning Eldoren the Reborn
+			q(74201),	-- Skinning The Great Shelikhan
 			q(74203),	-- Skinning Henlare
 			q(74204),	-- Skinning Acrosoth
 			q(74205),	-- Skinning Razk'vex the Untamed
@@ -2867,6 +2868,9 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74551, {["timeline"] = {ADDED_10_0_5}}),	-- Skinning Bloodbeak the Ravenous
 			q(74555, {["timeline"] = {ADDED_10_0_5}}),	-- Skinning Shardwing
 			q(74559, {["timeline"] = {ADDED_10_0_5}}),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)
+			q(75878, {["timeline"] = {ADDED_10_0_7}}),	-- Skinning Luttrok
+			q(75879, {["timeline"] = {ADDED_10_0_7}}),	-- Skinning Snarfang
+			q(75881, {["timeline"] = {ADDED_10_0_7}}),	-- Skinning Faunos
 			q(75884, {["timeline"] = {ADDED_10_0_7}}),	-- Skinning Gahz'raxes
 		}),
 		prof(TAILORING, {

@@ -1181,7 +1181,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(67717, {	-- Web-Queen Ashkaz
 					["provider"] = { "n", 192983 },	-- Web-Queen Ashkaz
 					["coord"] = { 43.3, 47.2, OHNAHRAN_PLAINS },
-					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(74440, {	-- Windseeker Avash
 					["provider"] = { "n", 192045 },	-- Windseeker Avash
