@@ -926,23 +926,22 @@ i(180587, 2893);	-- Animated Tome
 i(184221, 3054);	-- Archivist's Quill
 i(183193, 3030);	-- Ashen Chomper
 i(181268, 2958);	-- Backbone
-i(183854, 3011);	-- Battie's Pendant // Battie
+i(183854, 3011);	-- Battie
 i(181315, 2965);	-- Bloodfeaster Spiderling
 i(182606, 3013);	-- Bloodlouse Larva
 i(180584, 2891);	-- Blushing Spiderling
 i(181172, 2948);	-- Boneweave Hatchling
-i(180585, 2897);	-- Bottled Up Emotions // Emotional Leecher
 i(180815, 2931);	-- Brightscale Hatchling
 i(181262, 2952);	-- Bubbling Pustule
-i(180588, 2896);	-- Bucket of Primordial Sludge // Primordial Bogling
+
 i(183114, 3025);	-- Carpal
 i(180643, 2908);	-- Chirpy Valeshrieker
 i(180642, 2909);	-- Cloudfeather Fledgling
 i(181265, 2955);	-- Corpselouse Larva
 i(181168, 2945);	-- Corpulent Bonetusk
 i(184400, 3065);	-- Courage
-i(180593, 2899);	-- Court Messenger Scroll // Court Messenger
-i(183859, 2900);	-- Dal's Courier Badge // Dal
+i(180593, 2899);	-- Court Messenger
+i(183859, 2900);	-- Dal
 i(183412, 3041);	-- Death Seeker
 i(183409, 3039);	-- Decaying Mawrat
 i(180629, 2922);	-- Devouring Animite
@@ -991,6 +990,7 @@ i(183107, 3024);	-- Pile of Ashen Dust // Char
 i(173891, 2798);	-- Plagueborn Slime
 i(181264, 2954);	-- Plaguelouse Larva
 i(183395, 3036);	-- Pommel Jewel of Remornia // Will of Remornia
+i(180588, 2896);	-- Primordial Bogling
 i(180859, 2935);	-- Purity
 i(182613, 3008);	-- Refilling Inkwell // Lost Quill
 i(175114, 2878);	-- Renny
@@ -1028,6 +1028,7 @@ i(180591, 2898);	-- Vial of Roiling Emotions // Raw Emotion
 i(180603, 2904);	-- Violet Dredwing Pup
 i(180636, 2915);	-- Willowbreeze
 i(184512, 3079);	-- Winterleaf Spriggan
+i(180585, 2897);	-- Wrathling
 i(181267, 2957);	-- Writhing Spine
 
 -----------------

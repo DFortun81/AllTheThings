@@ -676,7 +676,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 								},
 							},
 						}),
-						i(191039, {	-- Pocopoc Traveler
+						i(191039, {	-- Pocopoc Traveler (PET!)
 							["cost"] = { { "c", CYPHER, 500 }, },
 						}),
 						i(190739, {	-- Provis Wax

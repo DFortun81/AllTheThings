@@ -364,7 +364,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["questID"] = 59428,	-- 59429 also triggered simultaneously; adding it to HQT for now
 				["g"] = {
 					i(182607, {	-- Hairy Egg
-						i(182606),	-- Bloodlouse Larva
+						i(182606),	-- Bloodlouse Larva (PET!)
 					}),
 				},
 			}),

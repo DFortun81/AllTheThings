@@ -864,7 +864,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						["provider"] = { "n", 182346 },	-- Tamra
 						["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
 						["g"] = {
-							i(189585),	-- E'rnee
+							i(189585),	-- E'rnee (PET!)
 						}
 					}),
 				},

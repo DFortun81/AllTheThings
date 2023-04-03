@@ -224,24 +224,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(156769, {	-- Keeper Ta'hult <Pet Vendor>
 				["coord"] = { 64.9, 67.3, ORIBOS },
 				["g"] = sharedData({ ["timeline"] = { ADDED_9_1_0 } }, {
-					i(185919, {	-- Flawless Amethyst Baubleworm
+					i(185919, {	-- Flawless Amethyst Baubleworm (PET!)
 						["cost"] = { { "i", 163036, 10000 } },	-- 10,000x Polished Pet Charm
 					}),
-					i(186537, {	-- Ruby Baubleworm
+					i(186537, {	-- Ruby Baubleworm (PET!)
 						["cost"] = {
 							{ "i", 36812, 1 },	-- Ground Gear
 							{ "i", 62072, 1 },	-- Robble's Wobbly Staff
 							{ "i", 67410, 1 },	-- Very Unlucky Rock
 						},
 					}),
-					i(186535, {	-- Topaz Baubleworm
+					i(186535, {	-- Topaz Baubleworm (PET!)
 						["cost"] = {
 							{ "i", 11406, 1 },	-- Rotting Bear Carcass
 							{ "i", 11944, 1 },	-- Dark Iron Baby Booties
 							{ "i", 25402, 1 },	-- The Stoppable Force
 						},
 					}),
-					i(186536, {	-- Turquoise Baubleworm
+					i(186536, {	-- Turquoise Baubleworm (PET!)
 						["cost"] = {
 							{ "i", 3300, 1 },	-- Rabbit's Foot
 							{ "i", 3670, 1 },	-- Large Slimy Bone

@@ -128,10 +128,10 @@ local PHIXIN_GROUP = {
 	}),
 };
 local ZELESKOS_GROUP = {
-	i(181315, {	-- Bloodfeaster Spiderling
+	i(181315, {	-- Bloodfeaster Spiderling (PET!)
 		["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 	}),
-	i(181168, {	-- Corpulent Bonetusk
+	i(181168, {	-- Corpulent Bonetusk (PET!)
 		["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 	}),
 	i(180628, {	-- Pearlwing Heron

@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(179282, {	-- Court of Harvesters Tabard
 						["cost"] = 2500000, -- 250g
 					}),
-					i(180593, {	-- Court Messenger Scroll
+					i(180593, {	-- Court Messenger (PET!)
 						["cost"] = { { "i", 163036, 250 } },
 					}),
 					i(182668, {	-- Recipe: Feast of Gluttonous Hedonism

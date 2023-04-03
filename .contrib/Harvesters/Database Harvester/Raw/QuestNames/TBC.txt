@@ -503,3 +503,7 @@
 65285@@@Goblin Gumbo Kettle
 65561@@@Tabard of Flame
 65562@@@Tabard of Flame
+11691@@@Summon Ahune
+11883@@@Fire Dancing?
+12420@@@Brew of the Month Club
+12421@@@Brew of the Month Club

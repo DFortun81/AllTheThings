@@ -1679,48 +1679,6 @@ q(49761),	--
 q(49762),	--
 q(49763),	--
 q(49764),	--
-10.0.0.44649
-q(69556),	--
-10.0.0.45335
-q(71776),	--
-10.0.5.47799
-q(74441),	-- Eaglemaster Niraak	
-10.0.7.48749
-q(72462),	-- A People in Need of Healing	
-q(72463),	-- Galgar's Cactus Apple Surprise...	
-q(72464),	-- The Kosh'harg	
-q(72465),	-- The Blessing of the Land	
-q(72466),	-- The Spirit of Thunder Ridge	
-q(72467),	-- The Blessing of the Clan	
-q(72468),	--
-q(72469),	--
-q(72470),	--
-q(72471),	--
-q(72472),	--
-q(72473),	--
-q(72474),	-- Tracking a Killer	
-q(72475),	-- Cornering Gor'krosh	
-q(72476),	-- The Blessing of the Ancestors	
-q(72477),	-- Orcish Groceries	
-q(72478),	-- Honor and Glory	
-q(72479),	-- Aka'magosh	
-q(73177),	--
-q(73394),	--
-q(73396),	--
-q(73397),	--
-q(73549),	--
-q(73703),	-- A Summon to Orgrimmar	
-q(73705),	--
-q(74374),	-- An Important Heirloom	
-q(74415),	-- A Worthy Offering	
-q(74541),	--
-q(74581),	-- The Long Knives	
-q(74672),	--
-q(74677),	--
-q(74894),	--
-q(75878),	--
-q(75879),	--
-q(75881),	--
 10.1.0.48480
 q(71053),	-- PTR:Hermit Kill Quest	
 q(72027),	-- PTR:[DNT] Training Kill Quest JKP	
@@ -2476,7 +2434,6 @@ q(75818),	--
 q(75819),	--
 q(75831),	-- PTR:Barter Up	
 q(75832),	--
-q(75833),	-- PTR:Report to the Trading Post	
 q(75834),	--
 q(75835),	--
 q(75836),	--
