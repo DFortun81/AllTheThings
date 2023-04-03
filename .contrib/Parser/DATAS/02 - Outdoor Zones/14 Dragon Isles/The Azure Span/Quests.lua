@@ -1613,7 +1613,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(65841, {	-- Stop the Spread
 					["sourceQuests"] = {
 						66026,	-- Urgent Action Required
-						72366,	-- Account Dragonflight Campaign Completed
+						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 19.1, 36.2, THE_AZURE_SPAN },

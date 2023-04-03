@@ -104,6 +104,10 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 						i(171667),	-- Phoenix-Down Treads
 						i(171654),	-- Alysrazor's Band
 						i(171645),	-- Eye of Blazing Power
+						i(199099, {	-- Glittering Phoenix Ember
+							["description"] = "Guaranteed drop.",
+							["timeline"] = { ADDED_10_0_7 },
+						}),
 					},
 				}),
 				e(195, {	-- Shannox

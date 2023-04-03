@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						68795,	-- Dragonriding
-						72366,	-- Account Dragonflight Campaign Completed
+						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 				},{
 					q(66885, {	-- Emerald Garden Ascent
@@ -247,7 +247,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						68795,	-- Dragonriding
-						72366,	-- Account Dragonflight Campaign Completed
+						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 				},{
 					q(72805, {	-- Emerald Garden Ascent - Reverse

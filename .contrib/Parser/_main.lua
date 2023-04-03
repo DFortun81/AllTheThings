@@ -1481,6 +1481,9 @@ STRANGLETHORN_FISHING_EXTRAVAGANZA = 1015;
 TIMEWALKING = 1016;
 WOW_ANNIVERSARY = 1017;
 
+-- Special Values
+DF_ACCOUNT_CAMPAIGN_QUEST = 72366;	-- Account Dragonflight Campaign Completed
+
 -- Helper Tables
 local DifficultyDB = {
 	[1] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },

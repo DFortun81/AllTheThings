@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 		q(72482, {	-- The Waking Shores Advanced Tour
 			["sourceQuests"] = {
 				72487,	-- The Thaldraszus Tour
-				72366,	-- Account Dragonflight Campaign Completed
+				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
 			["sourceQuestNumRequired"] = 1,
 			["provider"] = { "n", 199120 },	-- Celormu

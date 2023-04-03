@@ -937,9 +937,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			}),
 				-- Fields of Ferocity --
 			q(70444, {	-- The Fields of Ferocity
-				-- TODO: add magic alt-unlock quest
+				["sourceQuests"] = {
+					DF_ACCOUNT_CAMPAIGN_QUEST,
+					65806,	-- Maruukai
+				},
 				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = { 65806 },	-- Maruukai
 				["provider"] = { "o", 380902 },	-- Fields of Ferocity
 				["coord"] = { 62.3, 42.3, OHNAHRAN_PLAINS },
 				["isBreadcrumb"] = true,
@@ -1012,7 +1014,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			q(71027, {	-- WANTED: Mara'nar the Thunderous
 				["sourceQuests"] = {
 					66201, 	-- Hooves of War
-					72366,	-- Account Dragonflight Campaign Completed
+					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "o", 381701 },	-- WANTED: Mara'nar the Thunderous
