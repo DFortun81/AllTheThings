@@ -79,7 +79,7 @@ def get_quest_names() -> None:
                 for expansion in expansion_dict
             }
             if missing_line.isdigit():
-                quest_name: str = f"q({missing_line})\t--"
+                quest_name: str = f"q({missing_line}),\t--"
                 for expansion in expansion_dict:
                     try:
                         name_dict[expansion] = existing_name_dict[expansion][missing_line][0].strip()
