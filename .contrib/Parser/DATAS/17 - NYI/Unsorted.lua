@@ -2382,9 +2382,6 @@ root(ROOTS.Unsorted, {
 				i(202364),	-- Everburning Ember
 				i(202394),	-- Fresh Plains Meat
 				i(202396),	-- Plains Timber
-				i(202405),	-- Bloody Axe
-				i(202414),	-- Tauren Necklace
-				i(202415),	-- Unique Headdress
 				i(202619),	-- Mender Supplies
 				i(202620),	-- Toxin Antidote
 				i(202642),	-- Proto-Killing Spear
@@ -2538,7 +2535,6 @@ root(ROOTS.Unsorted, {
 				q(73550),	-- Honeyfreeze Mead
 				q(73692),	-- Hive Maintenance
 				q(74116),	-- PTR:Reach North
-				q(74308),	--
 				q(74309),	--
 				q(74314),	--
 				q(74316),	--

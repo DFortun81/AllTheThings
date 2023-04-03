@@ -1459,7 +1459,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2490,	-- First Mate Crazz
 					["sourceQuests"] = {
 						26595,	-- Kill-Collect
-						26601,	-- Mok'rash the Cleaver
 						26606,	-- Mukla's Demise
 					},
 					["description"] = "You need to complete at least one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to pick up this quest.",

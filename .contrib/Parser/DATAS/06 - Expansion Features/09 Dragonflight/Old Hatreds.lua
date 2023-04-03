@@ -27,6 +27,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["sourceQuests"] = { 72593 },	-- A Tomul-tuous Beginning
 			["provider"] = { "n", 202707 },	-- Baine Bloodhoof
 			["coord"] = { 69.3, 47.7, OHNAHRAN_PLAINS },
+			["g"] = {
+				i(202405),	-- Bloody Axe
+				i(202414),	-- Tauren Necklace
+				i(202415),	-- Unique Headdress
+			},
 		}),
 		q(74946, {	-- A Place of Refuge
 			["sourceQuests"] = {

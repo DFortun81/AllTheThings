@@ -1036,6 +1036,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(74444),
 		q(74445),
 		q(74468),
+		q(74471),	-- Triggered after accepting Zskera Vault: Az
 		q(74784),
 		q(72897),
 		q(72896),

@@ -170,7 +170,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71246, 370677);	-- Alacritous Alchemist Stone
 			FirstCraft(71245, 370676);	-- Sustaining Alchemist Stone
 			-- Artisan Curios
-			-- FirstCraft(TODO, 400270, ADDED_10_0_7);	-- Steaming Phial of Finesse
+			FirstCraft(74308, 400270, ADDED_10_0_7);	-- Draconic Suppression Powder
 		})),
 		filter(MISC, {
 			i(191520),	-- Agitating Potion Augmentation+

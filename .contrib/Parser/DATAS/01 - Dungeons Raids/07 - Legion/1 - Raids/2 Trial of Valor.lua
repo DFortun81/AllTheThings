@@ -40,7 +40,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["provider"] = { "n", 114263 },	-- Odyn
 				}),
 				q(45088, {	-- Trial of Valor: The Lost Army
-					["sourceQuest"] = 44721,	-- Helya's Conquest (moved back 1 quest due to Discord report, maybe no pre-req at all?)
 					["provider"] = { "n", 114263 },	-- Odyn
 					["g"] = {
 						i(143506, {	-- Ensemble: Vestment of the Chosen Dead

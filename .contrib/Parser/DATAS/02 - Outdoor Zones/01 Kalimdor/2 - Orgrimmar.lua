@@ -3262,13 +3262,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 4.0.3.13277", "removed 6.0.2.18764" },
 						}),
 						i(119325, {	-- Bow of Ire
-							["timeline"] = { "removed 6.0.2.18764" },
+							["timeline"] = { "added 6.0.2.18764" },
 						}),
 						i(119326, {	-- Ring of Pardons
-							["timeline"] = { "removed 6.0.2.18764" },
+							["timeline"] = { "added 6.0.2.18764" },
 						}),
 						i(119327, {	-- Durak's Downfall
-							["timeline"] = { "removed 6.0.2.18764" },
+							["timeline"] = { "added 6.0.2.18764" },
 						}),
 					},
 				}),

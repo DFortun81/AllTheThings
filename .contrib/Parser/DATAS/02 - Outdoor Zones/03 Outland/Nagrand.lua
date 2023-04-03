@@ -1628,6 +1628,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				-- #if AFTER LEGION
+				n(SPECIAL, {
+					n(121086, {	-- Shawn
+						["timeline"] = { "added 7.2.0.23530" },
+						["coord"] = { 21.6, 53.4, NAGRAND },
+						["groups"] = {
+							i(147433),	-- Glowing Diamond Ring
+						},
+					}),
+				}),
+				-- #endif
 				n(VENDORS, {
 					n(21485, {	-- Aldraan <Blade Merchant>
 						["description"] = "This vendor is only accessible when the Alliance controls Halaa.",
