@@ -24281,6 +24281,18 @@ app.InitDataCoroutine = function()
 
 		-- Druid forms
 		65047, 	-- Mark of the Nightwing Raven
+
+		-- Heritage
+		51483,	-- Heritage o' the Dark Iron
+		49783,	-- Heritage of Highmountain
+		53722,	-- Heritage of the Kul Tiran
+		49782,	-- Heritage of the Lightforged
+		51484,	-- Heritage of the Mag'har
+		58436,	-- Heritage of the Mechagnome
+		49784,	-- Heritage of the Nightborne
+		49928,	-- Heritage of the Void
+		58435,	-- Heritage of the Vulpera
+		53721,	-- Heritage of the Zandalari
 		-- etc.
 	}) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
