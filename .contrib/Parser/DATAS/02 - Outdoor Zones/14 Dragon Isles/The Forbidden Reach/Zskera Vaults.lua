@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["cost"] = { { "i", 204340, 30 }, }, 	-- 30xTorn Recipe Scrap
 				}),
 				i(202252, {	-- Recipe Rat
-					["description"] = "Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotation.",
+					["description"] = "Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotatiating.\nIt is also possible to continue picking up and using the rat every 5 minutes while within the Vault to obtain scraps without using cheese.",
 					["crs"] = { 202982 },	-- Recipe Rat
 					["cost"] = { { "i", 3927, 200 }, }, 	-- 200x Fine Aged Cheddar
 					["g"] = {
@@ -238,9 +238,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				i(204374),	-- Emerald Dragon Brooch
 			}),
 			n(TREASURES, {
-				n(TIER_ONE, {
+				n(TIER_ONE, sharedData({
+					["isWeekly"] = true,
+				},{
 					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_white",
-					["description"] = "Requires 5 Keys.",
 					["g"] = {
 						o(390009, {	-- Box of Rocks
 							["coord"] = { 29.6, 58.1, THE_FORBIDDEN_REACH },
@@ -423,10 +424,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 74419,
 						}),
 					},
-				}),
-				n(TIER_TWO, {
+				})),
+				n(TIER_TWO, sharedData({
+					["isWeekly"] = true,
+				},{
 					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_wind",
-					["description"] = "Requires 8 Keys.",
 					["g"] = {
 						o(386690, {	-- Ambiguous Compendium
 							["coord"] = { 29.4, 58.1, THE_FORBIDDEN_REACH },
@@ -598,6 +600,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								i(204025),	-- Obscure Pastel Stone
 							},
 						}),
+						o(386442, {	-- Primordial Void Cache
+							["description"] = "Requires interacting with 'Mysterious Voidmark' to become visible.",
+							["questID"] = 74527,	-- (maybe on other one)
+						}),
+						-- o(386602, {	-- Primordial Void Cache
+						-- }),
 						o(386445, {	-- Primordial Water Chest
 							["coord"] = { 27.7, 50.5, THE_FORBIDDEN_REACH },
 							["questID"] = 74412,
@@ -654,6 +662,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 30.7, 55.1, THE_FORBIDDEN_REACH },
 							["questID"] = 75136,
 							["description"] = "Use Restorative Water on an Overgrown Skeleton.",
+							["cr"] = 202336,	-- Overgrown Skeleton
 							["g"] = {
 								i(203852),	-- Spore-bound Essence (TOY!)
 							},
@@ -663,6 +672,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						n(200777, {	-- Unleashed Earth
 							i(169872),	-- Key of Bound Earth
+						}),
+						o(387736, {	-- The Old Gods and the Ordering of Azeroth
+							["questID"] = 75392,
+							["g"] = {
+								i(204185),	-- The Old Gods and the Ordering of Azeroth (Annotated)
+							},
 						}),
 						o(385937, {	-- Titan Coffer
 							["coord"] = { 28.8, 54.8, THE_FORBIDDEN_REACH },
@@ -681,11 +696,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 					},
-				}),
-				n(TIER_THREE, {
+				})),
+				n(TIER_THREE, sharedData({
+					["isWeekly"] = true,
+				},{
 					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_frost",
-					["description"] = "Requires 8 Keys.",
-					["cost"] = { { "i", 203690, 1 }, },	-- 1x Pearlescent Bubble Key
 					["g"] = {
 						o(390559, {	-- Box of Rocks
 							["questID"] = 75152,
@@ -843,13 +858,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(386452, {	-- Void-Bound Strongbox
 							["questID"] = 75283,
+							["g"] = {
+								i(193835),	-- Brigthfeather (PET!)	(likely consolidate into rewards with symlinks on known objects?)
+							},
 						}),
 					},
-				}),
-				n(TIER_FOUR, {
+				})),
+				n(TIER_FOUR, sharedData({
+					["isWeekly"] = true,
+				},{
 					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_fire",
-					["description"] = "Requires 8 Keys.",
-					["cost"] = { { "i", 203690, 1 }, },	-- 1x Pearlescent Bubble Key
 					["g"] = {
 						o(387749, {	-- Animate Crystalspine
 							["coord"] = { 24.5, 51.0, THE_FORBIDDEN_REACH },
@@ -983,12 +1001,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								i(204199),	-- Ley-Infused Crystal
 							},
 						}),
+						o(392583, {	-- Void-Bound Strongbox
+							["description"] = "Requires interacting with 'Mysterious Voidmark' to become visible.",
+							["questID"] = 75185,
+						}),
 						o(386451, {	-- Wind-Bound Strongbox
 							["coord"] = { 25.7, 51.1, THE_FORBIDDEN_REACH },
 							["questID"] = 74417,
 						}),
 					},
-				}),
+				})),
 			}),
 			n(ZONE_DROPS, {
 				i(204012),	-- Cold Frost Stone

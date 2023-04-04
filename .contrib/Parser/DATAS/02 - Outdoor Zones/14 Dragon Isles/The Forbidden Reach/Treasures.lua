@@ -98,7 +98,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			i(204328),	-- Return of the Nightsquall
 			i(204321),	-- Lost Expedition Notes
 			i(204317),	-- Words of the Wyrmslayer
-			i(204185),	-- The Old Gods and the Ordering of Azeroth (Annotated)
 
 			-- TODO: Sealed Scroll Maps lead to these
 
@@ -122,8 +121,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 			}),
 			header(HEADERS.Item, 202669, {	-- Sealed Fish Scroll
 				q(73210),
-				q(73211),	
-				q(73212),	
+				q(73211),
+				q(73212),
 				q(73213),
 				q(73214),
 			}),
