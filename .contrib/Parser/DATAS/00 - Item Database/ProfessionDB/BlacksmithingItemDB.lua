@@ -2053,7 +2053,6 @@ i(202227, 397857);	-- Remarkable Truesteel Essence
 -- PATCH 10.0.7 --
 ------------------
 i(203421, 400808);	-- Ancient Ceremonial Trident
--- UNSORTED --
 i(203833, 402134);	-- Bloodherald
 i(203834, 402135);	-- Bloodlord's Reaver
 i(203835, 402136);	-- Fiery Vengeance

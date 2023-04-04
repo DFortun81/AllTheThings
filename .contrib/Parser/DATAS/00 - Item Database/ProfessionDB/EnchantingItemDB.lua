@@ -1188,5 +1188,4 @@ i(198779, 392407);	-- Crystal Magical Lockpick
 -- PATCH 10.0.7 --
 ------------------
 i(203423, 400809);	-- Glowing Crystal Bookmark
--- UNSORTED --
 i(203838, 402139);	-- Mindslave's Reach
