@@ -1619,3 +1619,7 @@
 409034@@@Vicious War Snail
 10.1.0.48776
 408649@@@Scoria-Clad Sporebat
+10.1.0.48898
+408627@@@Igneous Shalewing
+408649@@@Shadowflame Shalewing
+411565@@@Felcrystal Scorpion

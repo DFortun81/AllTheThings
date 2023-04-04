@@ -132,15 +132,15 @@ ach(17461),	-- Shimmering Slalom Advanced: Gold
 ach(17462),	-- Shimmering Slalom Reverse: Bronze
 ach(17463),	-- Shimmering Slalom Reverse: Silver
 ach(17464),	-- Shimmering Slalom Reverse: Gold
-ach(17465),	-- Zaralek Zigzag: Bronze
-ach(17466),	-- Zaralek Zigzag: Silver
-ach(17467),	-- Zaralek Zigzag: Gold
-ach(17468),	-- Zaralek Zigzag Advanced: Bronze
-ach(17469),	-- Zaralek Zigzag Advanced: Silver
-ach(17470),	-- Zaralek Zigzag Advanced: Gold
-ach(17471),	-- Zaralek Zigzag Reverse: Bronze
-ach(17472),	-- Zaralek Zigzag Reverse: Silver
-ach(17473),	-- Zaralek Zigzag Reverse: Gold
+ach(17465),	-- Loamm Roamm: Bronze \\ Zaralek Zigzag: Bronze
+ach(17466),	-- Loamm Roamm: Silver \\ Zaralek Zigzag: Silver
+ach(17467),	-- Loamm Roamm: Gold \\ Zaralek Zigzag: Gold
+ach(17468),	-- Loamm Roamm Advanced: Bronze \\ Zaralek Zigzag Advanced: Bronze
+ach(17469),	-- Loamm Roamm Advanced: Silver \\ Zaralek Zigzag Advanced: Silver
+ach(17470),	-- Loamm Roamm Advanced: Gold \\ Zaralek Zigzag Advanced: Gold
+ach(17471),	-- Loamm Roamm Reverse: Bronze \\ Zaralek Zigzag Reverse: Bronze
+ach(17472),	-- Loamm Roamm Reverse: Silver \\ Zaralek Zigzag Reverse: Silver
+ach(17473),	-- Loamm Roamm Reverse: Gold \\ Zaralek Zigzag Reverse: Gold
 ach(17474),	-- Sulfur Sprint: Bronze
 ach(17475),	-- Sulfur Sprint: Silver
 ach(17476),	-- Sulfur Sprint: Gold
@@ -164,13 +164,13 @@ ach(17493),	-- Zaralek Cavern Racing Completionist: Silver
 ach(17494),	-- Zaralek Cavern Racing Completionist: Gold
 ach(17506),	-- Still Standing in the Fire
 ach(17510),	-- Dragon Glyphs: Glimmerogg
-ach(17511),	-- Dragon Glyphs: Nal Ks'kol \\ Dragon Glyphs: Titan Vault
+ach(17511),	-- Dragon Glyphs: Nal ks'kol \\ Dragon Glyphs: Nal Ks'kol \\ Dragon Glyphs: Titan Vault
 ach(17512),	-- Dragon Glyphs: Loamm
-ach(17513),	-- Dragon Glyphs: Zaqili Caldera
+ach(17513),	-- Dragon Glyphs: Zaqali Caldera \\ Dragon Glyphs: Zaqili Caldera
 ach(17514),	-- Dragon Glyphs: Slitherdrake Roost \\ Dragon Glyphs: Dragon Nests
 ach(17515),	-- Dragon Glyphs: The Throughway
-ach(17516),	-- Dragon Glyphs: Sulfur Ravine
-ach(17517),	-- Dragon Glyphs: Brimstone Garrison
+ach(17516),	-- Dragon Glyphs: Acidbite Ravine \\ Dragon Glyphs: Sulfur Ravine
+ach(17517),	-- Dragon Glyphs: Aberrus Approach \\ Dragon Glyphs: Brimstone Garrison
 ach(17537),	-- Dragon Chase - WS01
 ach(17538),	-- Dragon Chase - WS02
 ach(17560),	-- Ancient Stones of the Dragon Isles
@@ -248,7 +248,7 @@ ach(17842),	-- Dragonflight Keystone Explorer: Season Two
 ach(17843),	-- Dragonflight Keystone Conqueror: Season Two
 ach(17844),	-- Dragonflight Keystone Master: Season Two
 ach(17845),	-- Dragonflight Keystone Hero: Season Two
-ach(17846),	-- <PH> Hero: Dragonflight Season 2
+ach(17846),	-- Smoldering Hero: Dragonflight Season 2 \\ <PH> Hero: Dragonflight Season 2
 ach(17847),	-- Keystone Hero: The Vortex Pinnacle
 ach(17848),	-- Keystone Hero: Freehold
 ach(17849),	-- Keystone Hero: The Underrot
@@ -257,7 +257,7 @@ ach(17851),	-- Tour of Duty: Zaralek Cavern
 ach(17852),	-- Elemental Conjuror
 10.1.0.48776
 ach(17877),	-- We'll Never See That Again, Surely
-ach(17878),	-- The Forbidden Flounder
+ach(17878),	-- Me Want Bite \\ The Forbidden Flounder
 ach(17879),	-- Zaralek Cavern Safari
 ach(17880),	-- Battle in Zaralek Cavern
 ach(17881),	-- Aquatic Battler of Zaralek Cavern
@@ -295,3 +295,110 @@ ach(18145),	-- <DNT> Loamm Niffen Rank 17 (Character)
 ach(18146),	-- <DNT> Loamm Niffen Rank 18 (Character)
 ach(18147),	-- <DNT> Loamm Niffen Rank 19 (Character)
 ach(18148),	-- <DNT> Loamm Niffen Rank 20 (Character)
+10.1.0.48898
+ach(17734),	-- Active Listening Skills
+ach(18149),	-- Objects in Transit May Shatter
+ach(18150),	-- Zaralek Cavern Glyph Hunter
+ach(18151),	-- Mythic: Kazzara, the Hellforged
+ach(18152),	-- Mythic: The Amalgamation Chamber
+ach(18153),	-- Mythic: The Forgotten Experiments
+ach(18154),	-- Mythic: Assault of the Zaqali
+ach(18155),	-- Mythic: Rashok, the Elder
+ach(18156),	-- Mythic: The Vigilant Steward, Zskarn
+ach(18157),	-- Mythic: Magmorax
+ach(18158),	-- Mythic: Echo of Neltharion
+ach(18159),	-- Mythic: Scalecommander Sarkareth
+ach(18160),	-- Aberrus, the Shadowed Crucible
+ach(18161),	-- Heroic: Aberrus, the Shadowed Crucible
+ach(18162),	-- Mythic: Aberrus, the Shadowed Crucible
+ach(18163),	-- Discarded Works
+ach(18164),	-- Fury of Giants
+ach(18165),	-- Neltharion's Shadow
+ach(18167),	-- Edge of the Void
+ach(18168),	-- I'll make my own Shadowflame
+ach(18169),	-- [DNT] Shimmershell Snail
+ach(18172),	-- Escar-Go-Go-Go
+ach(18173),	-- Tabula Rasa
+ach(18174),	-- Contaminant Cleaner
+ach(18176),	-- Hall of Fame: Scalecommander Sarkareth
+ach(18177),	-- Aberrus, the Shadowed Crucible Guild Run
+ach(18178),	-- Heroic: Aberrus, the Shadowed Crucible Guild Run
+ach(18179),	-- Mythic: Scalecommander Sarkareth Guild Run
+ach(18180),	-- Kazzara, the Hellforged kills (Raid Finder Aberrus, the Shadowed Crucible)
+ach(18181),	-- The Amalgamation Chamber kills (Raid Finder Aberrus, the Shadowed Crucible)
+ach(18182),	-- The Forgotten Experiments kills (Raid Finder Aberrus, the Shadowed Crucible)
+ach(18183),	-- Assault of the Zaqali kills (Raid Finder Aberrus, the Shadowed Crucible)
+ach(18184),	-- Rashok, the Elder kills (Raid Finder Aberrus, the Shadowed Crucible)
+ach(18185),	-- The Vigilant Steward, Zskarn kills (Raid Finder Aberrus, the Shadowed Crucible)
+ach(18186),	-- Magmorax kills (Raid Finder Aberrus, the Shadowed Crucible)
+ach(18187),	-- Scalecommander Sarkareth kills (Raid Finder Aberrus, the Shadowed Crucible)
+ach(18188),	-- Echo of Neltharion kills (Raid Finder Aberrus, the Shadowed Crucible)
+ach(18189),	-- Kazzara, the Hellforged kills (Normal Aberrus, the Shadowed Crucible)
+ach(18190),	-- The Amalgamation Chamber kills (Normal Aberrus, the Shadowed Crucible)
+ach(18191),	-- The Forgotten Experiments kills (Normal Aberrus, the Shadowed Crucible)
+ach(18192),	-- Assault of the Zaqali kills (Normal Aberrus, the Shadowed Crucible)
+ach(18193),	-- Eggscellent Eggsecution
+ach(18194),	-- Rashok, the Elder kills (Normal Aberrus, the Shadowed Crucible)
+ach(18195),	-- The Vigilant Steward, Zskarn kills (Normal Aberrus, the Shadowed Crucible)
+ach(18196),	-- Magmorax kills (Normal Aberrus, the Shadowed Crucible)
+ach(18197),	-- Echo of Neltharion kills (Normal Aberrus, the Shadowed Crucible)
+ach(18198),	-- Scalecommander Sarkareth kills (Normal Aberrus, the Shadowed Crucible)
+ach(18199),	-- Zaqali Ritual Buster
+ach(18200),	-- Cooling the Research Field
+ach(18201),	-- Lockdown Mystery
+ach(18202),	-- Rockin Research
+ach(18203),	-- A Research Sampler
+ach(18204),	-- Research Mishap
+ach(18205),	-- A Pillar of the Research Community
+ach(18206),	-- A Djaradin Puzzle
+ach(18207),	-- Hot Research Zone
+ach(18208),	-- The Small Disruptions
+ach(18209),	-- Nothing Stops the Research
+ach(18210),	-- Kazzara, the Hellforged kills (Heroic Aberrus, the Shadowed Crucible)
+ach(18211),	-- The Amalgamation Chamber kills (Heroic Aberrus, the Shadowed Crucible)
+ach(18212),	-- The Forgotten Experiments kills (Heroic Aberrus, the Shadowed Crucible)
+ach(18213),	-- Assault of the Zaqali kills (Heroic Aberrus, the Shadowed Crucible)
+ach(18214),	-- Rashok the Elder kills (Heroic Aberrus, the Shadowed Crucible)
+ach(18215),	-- The Vigilant Steward, Zskarn kills (Heroic Aberrus, the Shadowed Crucible)
+ach(18216),	-- Magmorax kills (Heroic Aberrus, the Shadowed Crucible)
+ach(18217),	-- Echo of Neltharion kills (Heroic Aberrus, the Shadowed Crucible)
+ach(18218),	-- Scalecommander Sarkareth kills (Heroic Aberrus, the Shadowed Crucible)
+ach(18219),	-- Kazzara, the Hellforge kills (Mythic Aberrus, the Shadowed Crucible)
+ach(18220),	-- The Amalgamation Chamber kills (Mythic Aberrus, the Shadowed Crucible)
+ach(18221),	-- The Forgotten Experiments kills (Mythic Aberrus, the Shadowed Crucible)
+ach(18222),	-- Assault of the Zaqali kills (Mythic Aberrus, the Shadowed Crucible)
+ach(18223),	-- Rashok, the Elder kills (Mythic Aberrus, the Shadowed Crucible)
+ach(18224),	-- The Vigilant Steward, Zskarn kills (Mythic Aberrus, the Shadowed Crucible)
+ach(18225),	-- Magmorax kills (Mythic Aberrus, the Shadowed Crucible)
+ach(18226),	-- Echo of Neltharion kills (Mythic Aberrus, the Shadowed Crucible)
+ach(18227),	-- Scalecommander Sarkareth kills (Mythic Aberrus, the Shadowed Crucible)
+ach(18228),	-- Are You Even Trying?
+ach(18229),	-- Cosplate
+ach(18230),	-- Whac-A-Swog
+ach(18231),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 1 (Character)
+ach(18232),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 2 (Character)
+ach(18233),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 4 (Character)
+ach(18234),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 8 (Character)
+ach(18235),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 11 (Character)
+ach(18236),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 12 (Character)
+ach(18237),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 14 (Character)
+ach(18238),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 16 (Character)
+ach(18239),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 17 (Character)
+ach(18240),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 18 (Character)
+ach(18241),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 20 (Character)
+ach(18242),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 23 (Character)
+ach(18243),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 24 (Character)
+ach(18244),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 25 (Character)
+ach(18245),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 26 (Character)
+ach(18246),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 27 (Character)
+ach(18247),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 28 (Character)
+ach(18248),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Tutorial Objectives (Character)
+ach(18249),	-- Obsidian Tie Event
+ach(18251),	-- Glory of the Aberrus Raider
+ach(18253),	-- Ahead of the Curve: Scalecommander Sarkareth
+ach(18254),	-- Cutting Edge: Scalecommander Sarkareth
+ach(18255),	-- Proof of Myrrit
+ach(18257),	-- Can You Dig It?
+ach(18258),	-- Little Lord of Lies
+ach(18271),	-- He'sSss All Mine
+ach(18284),	-- A Mole's Best Friend

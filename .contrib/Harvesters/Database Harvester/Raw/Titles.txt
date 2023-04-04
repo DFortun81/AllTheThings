@@ -632,3 +632,9 @@
 502@@@%s, Barter Boss
 503@@@%s the <PH Season 2 Title>
 504@@@%s the <PH Season 2 Hero Title>
+10.1.0.48898
+503@@@%s the Smoldering
+504@@@%s the Smoldering Hero
+505@@@%s, Heir to the Void
+506@@@%s, Famed Slayer of Sarkareth
+507@@@%s, Sniffenseeker

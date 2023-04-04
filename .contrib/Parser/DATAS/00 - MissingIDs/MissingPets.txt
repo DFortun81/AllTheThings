@@ -639,7 +639,7 @@ p(3541),	-- Ridged Shalewing
 p(3542),	-- Dread Shalewing
 p(3543),	-- Ravenous Shalewing
 p(3544),	-- Shalewing Devourer
-p(3545),	-- Jyfaar
+p(3545),	-- Salverun \\ Jyfaar
 p(3546),	-- Skaarn
 p(3547),	-- Mikah
 p(3548),	-- Aquapo
@@ -666,6 +666,9 @@ p(3570),	-- Swoggy
 p(3571),	-- Brul'dan
 p(3572),	-- Lifft
 p(3573),	-- Swole
+10.1.0.48898
+p(3578),	-- Newsy
+p(3580),	-- Baa'lial
 
 
 
@@ -1901,7 +1904,7 @@ p(3541),	-- Ridged Shalewing
 p(3542),	-- Dread Shalewing
 p(3543),	-- Ravenous Shalewing
 p(3544),	-- Shalewing Devourer
-p(3545),	-- Jyfaar
+p(3545),	-- Salverun \\ Jyfaar
 p(3546),	-- Skaarn
 p(3547),	-- Mikah
 p(3548),	-- Aquapo
@@ -1928,3 +1931,6 @@ p(3570),	-- Swoggy
 p(3571),	-- Brul'dan
 p(3572),	-- Lifft
 p(3573),	-- Swole
+10.1.0.48898
+p(3578),	-- Newsy
+p(3580),	-- Baa'lial

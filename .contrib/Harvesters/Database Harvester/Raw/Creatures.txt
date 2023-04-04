@@ -19832,3 +19832,25 @@
 205319@@@Scalecommander Sarkareth
 205328@@@Kazzara Lava Right
 205329@@@Kazzara Lava Left
+10.1.0.48898
+200111@@@Magtembo
+202477@@@Brynnsahce
+202873@@@Elder Honeypelt
+204055@@@Wrathion
+204057@@@Sabellian
+204287@@@Ebyssian
+204343@@@Salverun
+204524@@@Honeypelt's Wagon
+204525@@@Roquefort
+205345@@@[DNT] Kill Credit
+205359@@@Newsy
+205406@@@Djaradin Spirit
+205409@@@Merithra
+205426@@@[DNT][2]Kirin Tor Familiar
+205439@@@Djaradin Spirit
+205440@@@Djaradin Spirit
+205637@@@Baa'lial
+205640@@@Volcanic Deepstrider
+205641@@@Zaqali Heatbinder
+205642@@@Zaqali Spiritbreaker
+205647@@@Kalecgos

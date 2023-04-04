@@ -65297,7 +65297,7 @@ s(184537)/i(202563),	-- 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Ele
 s(184538)/i(202564),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Weapon - 1H Dagger AGI
 s(184539)/i(202565),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Weapon - 2H Staff INT
 s(184540)/i(202566),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Dracthyr Evolution - Weapon - Warglaives
-s(184542)/i(202568),	-- 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Elemental - Weapon - 1H Mace STR
+s(184542)/i(202568),	-- Scholar's Thinking Cudgel \\ 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Elemental - Weapon - 1H Mace STR
 s(184543)/i(202569),	-- Djaruun, Pillar of the Elder Flame \\ 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Weapon - 2H Polearm AGI
 s(184544)/i(202570),	-- 10.1 Raid - Black Dragon Labs - Boss 07 - Lava Hydra - Weapon - 1H Mace INT
 s(184545)/i(202571),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Dracthyr Evolution - Weapon - Shield
@@ -65318,7 +65318,7 @@ s(184559)/i(202586),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assau
 s(184560)/i(202587),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Leather - HAND 1
 s(184561)/i(202588),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Mail - FEET 1
 s(184562)/i(202589),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Cloth - WAIST 1
-s(184563)/i(202590),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Mail - SHOULDER 1
+s(184563)/i(202590),	-- Kazzara's Grafted Companion \\ 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Mail - SHOULDER 1
 s(184564)/i(202591),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - HEAD 1
 s(184565)/i(202592),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Plate - HEAD 1
 s(184566)/i(202593),	-- 10.1 Raid - Black Dragon Labs - Boss 02 - Shadowflame Elemental - Armor - Cloth - WRIST 1
@@ -65346,7 +65346,7 @@ s(184587)/i(202655),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder
 s(184588)/i(202656),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 2
 s(184589)/i(202657),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - FEET 2
 s(184590)/i(202658),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - WAIST 2
-s(184591)/i(202659),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
+s(184591)/i(202659),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Djaradin Elder - Armor - Mail - WRIST 2 \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
 s(184592)/i(202660),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - FEET 2
 s(184593)/i(202661),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WAIST 2
 s(184594)/i(202662),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WRIST 2
@@ -65406,9 +65406,9 @@ s(185499)/i(202564),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - We
 s(185500)/i(202555),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonspawn Caretaker - Weapon - 1H Dagger INT
 s(185501)/i(202555),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonspawn Caretaker - Weapon - 1H Dagger INT
 s(185502)/i(202555),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonspawn Caretaker - Weapon - 1H Dagger INT
-s(185503)/i(202568),	-- 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Elemental - Weapon - 1H Mace STR
-s(185504)/i(202568),	-- 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Elemental - Weapon - 1H Mace STR
-s(185505)/i(202568),	-- 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Elemental - Weapon - 1H Mace STR
+s(185503)/i(202568),	-- Scholar's Thinking Cudgel \\ 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Elemental - Weapon - 1H Mace STR
+s(185504)/i(202568),	-- Scholar's Thinking Cudgel \\ 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Elemental - Weapon - 1H Mace STR
+s(185505)/i(202568),	-- Scholar's Thinking Cudgel \\ 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Elemental - Weapon - 1H Mace STR
 s(185506)/i(202563),	-- 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Elemental - Weapon - 2H Staff AGI
 s(185507)/i(202563),	-- 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Elemental - Weapon - 2H Staff AGI
 s(185508)/i(202563),	-- 10.1 Raid - Black Dragon Labs - Boss 2 - Shadowflame Elemental - Weapon - 2H Staff AGI
@@ -65490,9 +65490,9 @@ s(185587)/i(204429),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - HE
 s(185588)/i(204430),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Plate - FEET 2
 s(185589)/i(204431),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Plate - SHOULDER 2
 s(185590)/i(204432),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Plate - WAIST 3
-s(185591)/i(204444),	-- Black Flight's Spaulders
-s(185592)/i(204445),	-- Black Flight's Tabard
-s(185593)/i(204446),	-- Black Flight's Cape
+s(185591)/i(204444),	-- Black Dragonflight's Spaulders \\ Black Flight's Spaulders
+s(185592)/i(204445),	-- Black Dragonflight's Tabard \\ Black Flight's Tabard
+s(185593)/i(204446),	-- Black Dragonflight's Cape \\ Black Flight's Cape
 s(185594)/i(204448),	-- Stone Spitter \\ Scarab Blaster
 s(185595)/i(204449),	-- Black Earth Glaive \\ Fist of the Treasure Seeker
 s(185596)/i(204450),	-- Draconic Cleaver \\ Squallbreaker Greatsword
@@ -66336,9 +66336,9 @@ s(186522)/i(202584),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Ar
 s(186523)/i(202583),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Mail - HAND 1
 s(186524)/i(202583),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Mail - HAND 1
 s(186525)/i(202583),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity - Armor - Mail - HAND 1
-s(186526)/i(202590),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Mail - SHOULDER 1
-s(186527)/i(202590),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Mail - SHOULDER 1
-s(186528)/i(202590),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Mail - SHOULDER 1
+s(186526)/i(202590),	-- Kazzara's Grafted Companion \\ 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Mail - SHOULDER 1
+s(186527)/i(202590),	-- Kazzara's Grafted Companion \\ 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Mail - SHOULDER 1
+s(186528)/i(202590),	-- Kazzara's Grafted Companion \\ 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Mail - SHOULDER 1
 s(186529)/i(202591),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - HEAD 1
 s(186530)/i(202591),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - HEAD 1
 s(186531)/i(202591),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - HEAD 1
@@ -66360,9 +66360,9 @@ s(186546)/i(204421),	-- 10.1 Raid - Black Dragon Labs - BoE, MYTHIC BoP - Armor 
 s(186547)/i(202604),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - WRIST 1
 s(186548)/i(202604),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - WRIST 1
 s(186549)/i(202604),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Armor - Mail - WRIST 1
-s(186550)/i(202659),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
-s(186551)/i(202659),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
-s(186552)/i(202659),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
+s(186550)/i(202659),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Djaradin Elder - Armor - Mail - WRIST 2 \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
+s(186551)/i(202659),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Djaradin Elder - Armor - Mail - WRIST 2 \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
+s(186552)/i(202659),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Djaradin Elder - Armor - Mail - WRIST 2 \\ 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Mail - WRIST 2
 s(186553)/i(202588),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Mail - FEET 1
 s(186554)/i(202588),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Mail - FEET 1
 s(186555)/i(202588),	-- 10.1 Raid - Black Dragon Labs - Boss 03 - Evolution of Dracthyr - Armor - Mail - FEET 1
@@ -67536,3 +67536,23 @@ s(187736)/i(205929),	-- Obsidian Gladiator's Bow
 s(187737)/i(205929),	-- Obsidian Gladiator's Bow
 s(187738)/i(205923),	-- Obsidian Gladiator's Shield
 s(187739)/i(205922),	-- Obsidian Gladiator's Rod
+10.1.0.48898
+s(168075)/i(189895),	-- Watchman's Flare
+s(168076)/i(189896),	-- Forsaken Cresset
+s(168298)/i(190153),	-- Libram of Righteous Light
+s(168299)/i(190154),	-- Tome of Sin'dorei Secrets
+s(169093)/i(190886),	-- Fine White Evening Gloves
+s(187740)/i(205955),	-- Azure Renewal Mantle
+s(187741)/i(205956),	-- Azure Renewal Cape
+s(187742)/i(205957),	-- Azure Renewal Tabard
+s(187743)/i(205971),	-- Rock Breaking Digger
+s(187744)/i(205972),	-- Decorative Niffen Sword
+s(187745)/i(205973),	-- Rod of Crystalline Energies
+s(187746)/i(205974),	-- Monstrous Gluttony
+s(187747)/i(205975),	-- Hate-Sculpted Magma
+s(187748)/i(205981),	-- Molten Primal Fang
+s(187749)/i(206004),	-- Enmity Cloak
+s(187750)/i(206005),	-- Wirt's Leg
+s(187751)/i(206007),	-- Treasure Nabbin' Bag
+s(187752)/i(206020),	-- Enmity Hood
+s(187762)/i(206044),	-- 
