@@ -418,7 +418,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			q(70355, {	-- Dragon Isles Alchemy [A]
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
+					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
+				["sourceQuestNumRequired"] = 1,
+				["isBreadcrumb"] = true,
+				["lockCriteria"] = { 1, "spellID", 366261 },	-- Dragon Isles Alchemy
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
 				["races"] = ALLIANCE_ONLY,
@@ -426,7 +430,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			q(72245, {	-- Dragon Isles Alchemy [H]
 				["sourceQuests"] = {
 					65444,	-- To the Dragon Isles! [H]
+					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
+				["sourceQuestNumRequired"] = 1,
+				["isBreadcrumb"] = true,
+				["lockCriteria"] = { 1, "spellID", 366261 },	-- Dragon Isles Alchemy
 				["provider"] = { "n", 198392 },	-- An'timon
 				["coord"] = { 76.2, 35.8, THE_WAKING_SHORES },
 				["races"] = HORDE_ONLY,
@@ -665,19 +673,25 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
 					65444,	-- To the Dragon Isles! [H]
+					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
+				["sourceQuestNumRequired"] = 1,
+				["isBreadcrumb"] = true,
+				["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
 				["provider"] = { "n", 192563 },	-- Kholmar Sunrunner
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
-				-- ["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
 			}),
 			q(70357, {	-- Dragon Isles Blacksmithing
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
 					65444,	-- To the Dragon Isles! [H]
+					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
+				["sourceQuestNumRequired"] = 1,
+				["isBreadcrumb"] = true,
+				["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
 				["provider"] = { "n", 192164 },	-- Gringot Coldsteel <Blacksmithing Trainer>
 				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
-				-- ["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
 			}),
 			q(70025, {	-- Artisan's Supply: Draconium Sickle
 				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },

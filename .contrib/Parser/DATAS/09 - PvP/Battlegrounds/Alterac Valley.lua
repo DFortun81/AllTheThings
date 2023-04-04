@@ -615,6 +615,17 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["timeline"] = { "added 1.5.0", "removed 1.8.0" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(19107, {	-- Bloodseeker
+							["timeline"] = { "added 1.5.0", "removed 1.8.0" },
+						}),
+						i(19106, {	-- Ice Barbed Spear
+							["timeline"] = { "added 1.5.0", "removed 1.8.0" },
+						}),
+						i(19108, {	-- Wand of Biting Cold
+							["timeline"] = { "added 1.5.0", "removed 1.8.0" },
+						}),
+					},
 				}),
 				q(7382, {	-- Korrak the Everliving
 					["qg"] = 13841,	-- Lieutenant Haggerdin
@@ -916,6 +927,17 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 13840,	-- Warmaster Laggrond
 					["timeline"] = { "added 1.5.0", "removed 1.8.0" },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(19107, {	-- Bloodseeker
+							["timeline"] = { "added 1.5.0", "removed 1.8.0" },
+						}),
+						i(19106, {	-- Ice Barbed Spear
+							["timeline"] = { "added 1.5.0", "removed 1.8.0" },
+						}),
+						i(19108, {	-- Wand of Biting Cold
+							["timeline"] = { "added 1.5.0", "removed 1.8.0" },
+						}),
+					},
 				}),
 				q(7121, {	-- The Quartermaster
 					["qg"] = 13797,	-- Mountaineer Boombellow
