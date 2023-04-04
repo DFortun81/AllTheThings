@@ -1316,7 +1316,6 @@ app.L = {
 		[-690] = "Interface\\Icons\\inv_protodrakegladiatormount_blue",						-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",					-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
-	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = app.asset("Pet_Dungeon"),													-- Pet Battle Dungeons
 		[-796] = app.asset("Category_PetBattles"),											-- Battle
@@ -1330,12 +1329,8 @@ app.L = {
 		[-801] = "Interface\\Icons\\inv_serpentmount_darkblue",								-- Riddler's Mind-Worm
 		[-802] = "Interface\\Icons\\inv_faeriedragon2_orange",								-- Sun Darter Hatchling
 		[-804] = "Interface\\Icons\\inv_misc_toy_02",										-- Uuna
-		[-805] = "Interface\\Icons\\inv_demongoat",											-- Baa'l
 		[-806] = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",						-- Waist of Time
 		[-807] = "Interface\\Icons\\inv_hivemind",											-- Hivemind
-		[-808] = 2998185,																	-- Bound Shadehound
-		[-809] = 3954409,																	-- Stored Wisdom Device
-	-- More Secrets are likely to come dont use IDs here
 	-- Chests
 		[-851] = "Interface\\Icons\\INV_Eng_Crate2",										-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Heart of Azeroth
@@ -1864,7 +1859,6 @@ app.L = {
 		[-690] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = select(2, GetAchievementInfo(13957)),							-- Corrupted Gladiator: Battle for Azeroth Season 4
-	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = "Pet Battle Dungeons",											-- Pet Battle Dungeons
 		[-796] = BATTLE_PET_SOURCE_5,											-- Pet Battle
@@ -1878,12 +1872,8 @@ app.L = {
 		[-801] = GetSpellInfo(243025),											-- Riddler's Mind-Worm
 		[-802] = GetSpellInfo(231215),											-- Sun Darter Hatchling
 		[-804] = GetSpellInfo(254763),											-- Uuna
-		[-805] = GetSpellInfo(277461),											-- Baa'l
 		[-806] = "Waist of Time",												-- Waist of Time
 		[-807] = GetSpellInfo(261395),											-- The Hivemind
-		[-808] = GetSpellInfo(344577),											-- Bound Shadehound
-		[-809] = GetSpellInfo(373230),											-- Stored Wisdom Device
-	-- More Secrets are likely to come dont use IDs here
 	-- Chests
 		[-851] = "Black Empire Cache",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Heart of Azeroth
