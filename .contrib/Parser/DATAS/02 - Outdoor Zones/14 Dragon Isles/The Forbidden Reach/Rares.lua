@@ -1,6 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local function bo(questID, isDaily)
+	return { ["questID"] = questID, ["isDaily"] = isDaily };
+end
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(RARES, sharedData({
@@ -48,6 +51,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["questID"] = 73166,
 				["cost"] = { { "i", 203407, 1 }, },	-- 1x Draconic Suppression Powder
 				["g"] = {
+					bo(74331, false),
 					i(204226),	-- Blazehoof Ashes
 				},
 			}),
@@ -56,6 +60,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["questID"] = 73168,
 				["cost"] = { { "i", 203413, 1 }, },	-- 1x Crystal Tuning Fork
 				["g"] = {
+					bo(74333, false),
 					i(204222),	-- Conductive Ametrine Shard
 					i(204219),	-- Design: Unstable Elementium (RECIPE!)
 				},
@@ -65,6 +70,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["questID"] = 73163,
 				["cost"] = { { "i", 203412, 1 }, },	-- 1x Arcane Dispelling Rune
 				["g"] = {
+					bo(74328, false),
 					i(204229),	-- Glimmering Rune of Arcantrix
 				},
 			}),
@@ -72,6 +78,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 41.9, 57.1, THE_FORBIDDEN_REACH },
 				["questID"] = 73150,
 				["g"] = {
+					bo(74341, false),
 					i(193374),	-- Ashenwing (PET!)
 				},
 			}),
@@ -79,14 +86,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["description"] = "Inside The Support Creche.",
 				["coord"] = { 41.1, 43.9, 2101 },
 				["questID"] = 73118,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					bo(74340, false),
+				},
 			}),
 			n(200725, {	-- Faunos <Lord of Fleece>
 				["coord"] = { 45.6, 37.2, THE_FORBIDDEN_REACH },
 				["questID"] = 73158,
 				["cost"] = { { "i", 203417, 1 }, },	-- 1x Razor-Sharp Animal Bone
 				["g"] = {
+					bo(74322, false),
 					i(204231),	-- Kingly Sheepskin Pelt
 				},
 			}),
@@ -95,47 +104,57 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["questID"] = 73165,
 				["cost"] = { { "i", 203411, 1 }, },	-- 1x Gnomish Voicebox
 				["g"] = {
+					bo(74330, false),
 					i(204227),	-- Everflowing Antifreeze
 				},
 			}),
 			n(200537, {	-- Gahz'raxes
-				["description"] = "Underwater Cave.",
-				["coord"] = { 24.6, 30.4, THE_FORBIDDEN_REACH },
+				["description"] = "In an underwater Cave. Western waypoint is the entrance.",
+				["coords"] = { 
+					{ 25.5, 38.0, THE_FORBIDDEN_REACH },	-- Gahz
+					{ 26.8, 41.3, THE_FORBIDDEN_REACH },	-- Cave Entrance
+				},
 				["questID"] = 73095,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					bo(74337, false),
+				},
 			}),
 			n(200717, {	-- Galakhad
 				["coord"] = { 44.0, 78.2, THE_FORBIDDEN_REACH },
 				["questID"] = 73152,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					bo(74342, false),
+				},
 			}),
 			n(200722, {	-- Gareed
 				["coord"] = { 31.2, 53.6, THE_FORBIDDEN_REACH },
 				["questID"] = 73153,
 				["cost"] = { { "i", 203415, 1 }, },	-- 1x Traditional Morqut Kite
 				["g"] = {
+					bo(74321, false),
 					i(204225),	-- Perfect Windfeather
 				},
 			}),
 			n(200721, {	-- Grugoth the Hullcrusher <Scource of the Coast>
 				["coord"] = { 42.9, 90.6, THE_FORBIDDEN_REACH },
 				["questID"] = 73154,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					bo(74343, false),
+				},
 			}),
 			n(200579, {	-- Ishyra
 				["coord"] = { 39.6, 2.4, THE_FORBIDDEN_REACH },
 				["questID"] = 73100,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					bo(74338, false),
+				},
 			}),
 			n(200738, {	-- Kangalo
 				["coord"] = { 56.6, 59.0, THE_FORBIDDEN_REACH },
 				["questID"] = 73164,
 				["cost"] = { { "i", 203416, 1 }, },	-- 1x Dormant Lifebloom Seeds
 				["g"] = {
+					bo(74329, false),
 					i(204228),	-- Undigested Hochenblume Petal
 				},
 			}),
@@ -143,10 +162,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 62.0, 54.0, THE_FORBIDDEN_REACH },
 				["questID"] = 73222,
 				["g"] = {
+					bo(74344, false),
 					i(197628),	-- Windborne Velocidrake: Plated Neck (DM!)
 				},
 			}),
 			n(203353, {	-- Loot Specialist <Venture Co. Acquisitions>
+				["description"] = "Can spawn anywhere on the isle.",
 				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
 				-- ["questID"] = ,
 				["g"] = {
@@ -158,6 +179,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["questID"] = 73167,
 				["cost"] = { { "i", 203409, 1 }, },	-- 1x Sparkling Spice Pouch
 				["g"] = {
+					bo(74332, false),
 					i(193235),	-- Luvvy (PET!)
 				},
 			}),
@@ -168,14 +190,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 				["coord"] = { 71.2, 39.1, THE_FORBIDDEN_REACH },
 				["questID"] = 74283,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					bo(74346, false),
+				},
 			}),
 			n(200621, {	-- Manathema
 				["coord"] = { 55.4, 36.4, THE_FORBIDDEN_REACH },
 				["questID"] = 73136,
 				["cost"] = { { "i", 203410, 1 }, },	-- 1x Glowing Crystal Bookmark
 				["g"] = {
+					bo(74306, false),
 					i(204224),	-- Speck of Arcane Awareness
 				},
 			}),
@@ -183,6 +207,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 26.6, 41.5, THE_FORBIDDEN_REACH },
 				["questID"] = 73366,
 				["g"] = {
+					bo(74349, false),
 					i(197636),	-- Windborne Velocidrake: Shrieker Pattern (DM!)
 				},
 			}),
@@ -191,6 +216,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 67.3, 56.3, 2102 },
 				["questID"] = 73385,
 				["g"] = {
+					bo(74350, false),
 					i(197590),	-- Windborne Velocidrake: Small Head Fin (DM!)
 				},
 			}),
@@ -198,21 +224,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["description"] = "In a cave.",
 				["coord"] = { 46.9, 9.8, THE_FORBIDDEN_REACH },
 				["questID"] = 73117,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					bo(74339, false),
+				},
 			}),
 			n(200620, {	-- Sir Pinchalot
 				["coord"] = { 23.6, 66.4, THE_FORBIDDEN_REACH },
 				["questID"] = 73129,
 				["cost"] = { { "i", 203419, 1 }, },	-- 1x Elusive Croaking Crab
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					bo(74305, false),
+				},
 			}),
 			n(200622, {	-- Snarfang
 				["coord"] = { 37.0, 47.0, THE_FORBIDDEN_REACH },
 				["questID"] = 73138,
 				["cost"] = { { "i", 203414, 1 }, },	-- 1x Reinforced Pristine Leather
 				["g"] = {
+					bo(74307, false),
 					i(204232),	-- Slyvern Alpha Claw
 				},
 			}),
@@ -221,6 +250,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["questID"] = 73127,
 				["cost"] = { { "i", 203418, 1 }, },	-- 1x Amplified Quaking Stone
 				["g"] = {
+					bo(74300, false),
 					i(204233),	-- Impenetrable Elemental Core
 				},
 			}),
@@ -229,19 +259,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["questID"] = 73161,
 				["cost"] = { { "i", 203408, 1 }, },	-- 1x Ancient Ceremonial Trident
 				["g"] = {
+					bo(74325, false),
 					i(204230),	-- Dense Seaforged Javelin
 				},
 			}),
 			n(200904, {	-- Veltrax
 				["coord"] = { 76.4, 64.6, THE_FORBIDDEN_REACH },
 				["questID"] = 73229,
-				-- ["g"] = {
-				-- },
+				["g"] = {
+					bo(74345, false),
+				},
 			}),
 			n(200584, {	-- Vraken The Hunter
 				["coord"] = { 59.9, 42.9, THE_FORBIDDEN_REACH },
 				["questID"] = 73111,
 				["g"] = {
+					bo(74336, false),
 					i(193364),	-- Scruffles (PET!)
 				},
 			}),
@@ -249,6 +282,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 53.6, 43.8, THE_FORBIDDEN_REACH },
 				["questID"] = 73225,
 				["g"] = {
+					bo(74351, false),
 					i(197617),	-- Windborne Velocidrake: Heavy Scales (DM!)
 				},
 			}),
@@ -257,6 +291,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 42.0, 83.8, 2102 },
 				["questID"] = 73367,
 				["g"] = {
+					bo(74348, false),
 					i(191930),	-- Wakyn (PET!)
 				},
 			}),
@@ -265,6 +300,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 63.6, 25.5, THE_FORBIDDEN_REACH },
 				["questID"] = 73409,
 				["g"] = {
+					bo(74347, false),
 					i(197609),	-- Windborne Velocidrake: White Horns (DM!)
 				},
 			}),

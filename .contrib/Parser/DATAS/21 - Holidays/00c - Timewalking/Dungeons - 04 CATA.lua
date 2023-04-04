@@ -435,10 +435,10 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					49045,	-- Augh
 				},
 				["g"] = {
+					i(133261),	-- Balkar's Waders
 					i(133259),	-- Resonant Kris
 					i(133260),	-- Tauntka's Necklace
 					i(133280),	-- Oasis Bracers
-					i(133261),	-- Balkar's Waders
 					i(133263),	-- Ring of the Darkest Day
 					i(133281),	-- Impetuous Query
 					i(133266),	-- Veneficial Band
@@ -458,6 +458,7 @@ root(ROOTS.Holidays, d(TIMEWALKING_DUNGEON, bubbleDown({ ["u"] = TIMEWALKING }, 
 					i(133279),	-- Mirage Ring
 					i(133268),	-- Heart of Solace
 					-- Swapped/Confirmed Drops
+					i(133261),	-- Balkar's Waders	-- 10.0.7, confirmed dropping here too on 04.04.2023
 					i(133259),	-- Resonant Kris	-- 8.3.7, confirmed dropping here too on 18.08.2020
 					i(133278),	-- Evelyn's Belt	 -- 9.1, confirmed dropping here too on 27.09.2021
 					i(133262),	-- Greaves of Wu the Younger	 -- 9.1, confirmed dropping here too on 27.09.2021
