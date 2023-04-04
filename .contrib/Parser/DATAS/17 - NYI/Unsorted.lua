@@ -2377,7 +2377,6 @@ root(ROOTS.Unsorted, {
 				i(202181),	-- Best-root Tuber
 				i(202185),	-- Chillwrought Worm Meat
 				i(202202),	-- Revealing Mask
-				i(202294),	-- Recipe Pages
 				i(202361),	-- Farscale Supplies
 				i(202364),	-- Everburning Ember
 				i(202394),	-- Fresh Plains Meat
@@ -2420,21 +2419,14 @@ root(ROOTS.Unsorted, {
 				i(203466),	-- Dragonscale Surplus Crate
 				i(203651),	-- Saza's Blade
 				i(203657),	-- Toxin Antidote
-				i(203686),	-- Odd Round Object
 				i(203687),	-- Dusty Vase
 				i(203724),	-- Field Medic's Hazard Payout
 				i(203730),	-- Rustic Winterpelt Supplies
 				i(203997),	-- Raw Argali Flank
 				i(203998),	-- Beetle Juice
-				i(204065),	-- Azerite Powder
-				i(204066),	-- Igniter Torch
 				i(204089),	-- Atrenosh's Spellsworn Sigil
 				i(204092),	-- Auric Fleece
 				i(204093),	-- Lunker Morsel
-				i(204208),	-- Primordial Earth Core
-				i(204209),	-- Primordial Flame Core
-				i(204210),	-- Primordial Storm Core
-				i(204212),	-- Primordial Water Core
 				i(204213),	-- Short-Range Teleport
 				i(204216),	-- Primordial Pulverizing
 				i(204239),	-- Shadowy Mojo Crystal
@@ -2515,7 +2507,6 @@ root(ROOTS.Unsorted, {
 				q(72907),	--
 				q(72941),	-- Ancestral Advice
 				q(72945),	-- Our Path Ahead
-				q(72954),	-- Zskera Vault: Ix
 				q(72955),	-- PTR:Zskera Vault: Kx
 				q(72956),	-- PTR:More Doors To Open
 				q(73035),	-- Path of Trust
@@ -2547,13 +2538,10 @@ root(ROOTS.Unsorted, {
 				q(74418),	--
 				q(74427),	--
 				q(74433),	-- Returning the Blade
-				q(74434),	--
-				q(74435),	--
 				q(74478),	--
 				q(74479),	--
 				q(74480),	--
 				q(74484),	--
-				q(74486),	--
 				q(74487),	--
 				q(74495),	--
 				q(74500),	--
@@ -2582,7 +2570,6 @@ root(ROOTS.Unsorted, {
 				q(74891),	--
 				q(74955),	-- An Egg-centric Discovery
 				q(74970),	--
-				q(74974),	--
 				q(74978),	--
 				q(74994),	--
 				q(74996),	--
@@ -2595,12 +2582,9 @@ root(ROOTS.Unsorted, {
 				q(75003),	--
 				-- 10.0.7.47983
 				q(75034),	--
-				q(75046),	--
 				q(75047),	--
-				q(75049),	--
 				q(75052),	--
 				q(75065),	-- Campaign Testing - Dummy Quest
-				q(75130),	--
 				-- 10.0.7.48076
 				q(75202),	--
 				q(75224),	--
@@ -2614,8 +2598,6 @@ root(ROOTS.Unsorted, {
 				q(75251),	--
 				q(75252),	--
 				q(75253),	--
-				q(75254),	--
-				q(75255),	--
 				-- 10.0.7.48220
 				q(75263),	-- PTR:Reach South
 				-- 10.0.7.48295

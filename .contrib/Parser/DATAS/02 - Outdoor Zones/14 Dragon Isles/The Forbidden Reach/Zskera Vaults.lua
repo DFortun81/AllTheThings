@@ -37,6 +37,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
 					["coord"] = { 25.8, 47.9, THE_FORBIDDEN_REACH },
 				}),
+				q(72954, {	-- Zskera Vault: Ix
+					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
+					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
+				}),
 				q(72952, {	-- The Scary Vault of Ur
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
@@ -96,7 +101,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 				-- Inside of Az
 				q(74795, {	-- An Odd Round Object
-					-- TODO: ["provider"] = { "n",  },	-- An Odd Round Object
+					["provider"] = { "i", 203686 },	-- An Odd Round Object
 					["coord"] = { 30.8, 57.5, THE_FORBIDDEN_REACH },
 				}),
 				q(74493, {	-- Second Time Is The Charm
@@ -137,6 +142,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 200456 },	-- Tapper Swindlekeg
 					["isWeekly"] = true,
 					["g"] = {
+						i(202294),	-- Recipe Pages
 						i(202196),	-- Zskera Vault Key
 					},
 				}),
@@ -145,6 +151,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 202627 },	-- Earthcaller Yevaa
 					["coord"] = { 25.5, 53.2, THE_FORBIDDEN_REACH },
 					["g"] = {
+						i(204208),	-- Primordial Earth Core
+						i(204209),	-- Primordial Flame Core
+						i(204210),	-- Primordial Storm Core
+						i(204212),	-- Primordial Water Core
 						i(193363),	-- Bunbo (PET!)
 						i(203701),	-- Neltharion Gift Token
 						i(202196),	-- Zskera Vault Key
@@ -243,6 +253,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},{
 					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_white",
 					["g"] = {
+						o(387507, {	-- Azerite Powder Barrel
+							["g"] = {
+								i(204065),	-- Azerite Powder
+							},
+						}),
 						o(390009, {	-- Box of Rocks
 							["coord"] = { 29.6, 58.1, THE_FORBIDDEN_REACH },
 							["questID"] = 75118,
@@ -271,6 +286,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 25.4, 53.5, THE_FORBIDDEN_REACH },
 							["questID"] = 74469,
 						}),
+						o(386470, {	-- Gold Pile
+							["questID"] = 74434,
+						}),
+						o(386472, { -- Gold Pile
+							["questID"] = 74435,
+						}),
 						o(385032, {	-- Gold Pile
 							["coord"] = { 25.3, 53.5, THE_FORBIDDEN_REACH },
 							["questID"] = 75013,
@@ -287,12 +308,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 30.7, 57.5, THE_FORBIDDEN_REACH },
 							["questID"] = 75057,
 						}),
+						o(387508, {	-- Igniter Torch
+							["g"] = {
+								i(204066),	-- Igniter Torch
+							},
+						}),
 						o(390258, {	-- Inert Goo
 							["coord"] = { 27.8, 50.8, THE_FORBIDDEN_REACH },
 							["questID"] = 75147,
 							["g"] = {
 								i(193854),	-- Berylmane (PET!)
 							},
+						}),
+						o(388873, {	-- Irontide Coin Bag
+							["questID"] = 74974,
 						}),
 						o(385837, {	-- Journal Entry: Silence
 							["coord"] = { 28.5, 55.6, THE_FORBIDDEN_REACH },
@@ -494,6 +523,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 26.5, 49.3, THE_FORBIDDEN_REACH },
 							["questID"] = 73068,
 						}),
+						o(393958, { -- Gold Pile
+							["questID"] = 75254,
+						}),
+						o(393958, {	-- Gold Pile
+							["questID"] = 75255,
+						}),
 						o(386354, {	-- Hardened Chest
 							["coord"] = { 30.1, 57.9, THE_FORBIDDEN_REACH },
 							["questID"] = 74358,
@@ -657,6 +692,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(385401, {	-- Searing Chest
 							["coord"] = { 28.5, 57.5, THE_FORBIDDEN_REACH },
 							["questID"] = 72890,
+						}),
+						o(389540, {	-- Slimy Goo
+							["questID"] = 75049,
 						}),
 						o(390136, {	-- Spore-bound Essence
 							["coord"] = { 30.7, 55.1, THE_FORBIDDEN_REACH },
@@ -1114,6 +1152,9 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75488),	-- Triggered when fishing up Emmah from Disgusting Vat
 		q(75158),	-- Triggered when fishing up Prismatic Fragment from Disgusting Vat
 		q(75489),	-- Triggered when fishing up Dormant Primordial Fragment #2 from Disgusting Vat
+		q(75130),	-- Triggered after firing the Irontide Cannon
+		q(74486),	-- Triggered after clicking the Perfumed Censer
+		q(75046),	-- Triggered after looting Dormant Primordial Fragment from Consumed Gem
 
 
 		-- TODO: See if these need to be associated with treasures
