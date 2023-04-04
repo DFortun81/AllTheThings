@@ -576,8 +576,8 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(203983, {	-- Ensemble: Bloodtinged Cloth
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", BLUE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", BLUE_HAKKARI_BIJOU, 4 },
 								},
 								["groups"] = {
 									i(19929),	-- Bloodtinged Gloves
@@ -588,8 +588,8 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(203984, {	-- Ensemble: Blooddrenched Leather
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", YELLOW_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", YELLOW_HAKKARI_BIJOU, 4 },
 								},
 								["groups"] = {
 									i(19906),	-- Blooddrenched Footpads
@@ -600,8 +600,8 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(203985, {	-- Ensemble: Bloodstained Mail
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", GREEN_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", GREEN_HAKKARI_BIJOU, 4 },
 								},
 								["groups"] = {
 									i(19875),	-- Bloodstained Coif
@@ -612,8 +612,8 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(203986, {	-- Ensemble: Bloodsoaked Plate
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", RED_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", RED_HAKKARI_BIJOU, 4 },
 								},
 								["groups"] = {
 									i(19894),	-- Bloodsoaked Gauntlets
@@ -666,32 +666,32 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(19771, {	-- Pattern: Primal Batskin Bracers (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", ORANGE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", ORANGE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(19770, {	-- Pattern: Primal Batskin Gloves (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", ORANGE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", ORANGE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(19769, {	-- Pattern: Primal Batskin Jerkin (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", ORANGE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", ORANGE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(19776, {	-- Plans: Bloodsoul Breastplate (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", BRONZE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", BRONZE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(19778, {	-- Plans: Bloodsoul Gauntlets (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", BRONZE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", BRONZE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(19777, {	-- Plans: Bloodsoul Shoulders (RECIPE!)
@@ -702,20 +702,20 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(19779, {	-- Plans: Darksoul Breastplate (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", BRONZE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", BRONZE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(19780, {	-- Plans: Darksoul Leggings (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 3 },
-									{ "i", BRONZE_HAKKARI_BIJOU, 7 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 7 },
+									{ "i", BRONZE_HAKKARI_BIJOU, 3 },
 								},
 							}),
 							i(19781, {	-- Plans: Darksoul Shoulders (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", BRONZE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", BRONZE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(20012, {	-- Recipe: Greater Dreamless Sleep Potion (RECIPE!)
