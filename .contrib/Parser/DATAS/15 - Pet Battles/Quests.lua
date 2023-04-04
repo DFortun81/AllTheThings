@@ -1152,14 +1152,16 @@ root(ROOTS.PetBattles, petbattle({
 			["coord"] = { 61.1, 87.5, DREAD_WASTES },
 			["provider"] = { "n", 68462 },	-- Flowing Pandaren Spirit
 			["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
-			["sym"] = {
-				{"select", "itemID", 89139 },	-- Chain Pet Leash
-				{"select", "itemID", 44820 },	-- Red Ribbon Pet Leash
-				{"select", "itemID", 37460 },	-- Rope Pet Leash
-			},
 			["g"] = {
 				i(93147, {	-- Pandaren Spirit Pet Supplies
-					i(90173),	-- Pandaren Water Spirit
+					["sym"] = {{"select","itemID",
+						89139,	-- Chain Pet Leash
+						44820,	-- Red Ribbon Pet Leash
+						37460,	-- Rope Pet Leash
+					}},
+					["g"] = {
+						i(90173),	-- Pandaren Water Spirit
+					},
 				})
 			},
 		}),
@@ -1177,7 +1179,8 @@ root(ROOTS.PetBattles, petbattle({
 				SACK_OF_PET_SUPPLIES
 			},
 		}),
-		q(63435, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Temple Throwdown
+		q(63435,	-- Temple Throwdown
+		bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 			["provider"] = { "n", 176655 },	-- Anthea <Carefree Pet Tamer>
 			["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
 			["g"] = {
@@ -1191,14 +1194,16 @@ root(ROOTS.PetBattles, petbattle({
 			["coord"] = { 64.9, 93.8, KUN_LAI_SUMMIT },
 			["provider"] = { "n", 68465 },	-- Thundering Pandaren Spirit
 			["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
-			["sym"] = {
-				{"select", "itemID", 89139 },	-- Chain Pet Leash
-				{"select", "itemID", 44820 },	-- Red Ribbon Pet Leash
-				{"select", "itemID", 37460 },	-- Rope Pet Leash
-			},
 			["g"] = {
 				i(93149, {	-- Pandaren Spirit Pet Supplies
-					i(92800),	-- Pandaren Earth Spirit
+					["sym"] = {{"select","itemID",
+						89139,	-- Chain Pet Leash
+						44820,	-- Red Ribbon Pet Leash
+						37460,	-- Rope Pet Leash
+					}},
+					["g"] = {
+						i(92800),	-- Pandaren Earth Spirit
+					},
 				}),
 			},
 		}),
@@ -1213,14 +1218,16 @@ root(ROOTS.PetBattles, petbattle({
 			["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
 			["provider"] = { "n", 68464 },	-- Whispering Pandaren Spirit
 			["coord"] = { 28.9, 36.0, THE_JADE_FOREST },
-			["sym"] = {
-				{"select", "itemID", 89139 },	-- Chain Pet Leash
-				{"select", "itemID", 44820 },	-- Red Ribbon Pet Leash
-				{"select", "itemID", 37460 },	-- Rope Pet Leash
-			},
 			["g"] = {
 				i(93148, {	-- Pandaren Spirit Pet Supplies
-					i(92799),	-- Pandaren Air Spirit
+					["sym"] = {{"select","itemID",
+						89139,	-- Chain Pet Leash
+						44820,	-- Red Ribbon Pet Leash
+						37460,	-- Rope Pet Leash
+					}},
+					["g"] = {
+						i(92799),	-- Pandaren Air Spirit
+					},
 				})
 			},
 		}),
@@ -1235,14 +1242,16 @@ root(ROOTS.PetBattles, petbattle({
 			["coord"] = { 57.2, 42.1, TOWNLONG_STEPPES },
 			["provider"] = { "n", 68463 },
 			["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
-			["sym"] = {
-				{"select", "itemID", 89139 },	-- Chain Pet Leash
-				{"select", "itemID", 44820 },	-- Red Ribbon Pet Leash
-				{"select", "itemID", 37460 },	-- Rope Pet Leash
-			},
 			["g"] = {
 				i(93146, {	-- Pandaren Spirit Pet Supplies
-					i(92798),	-- Pandaren Fire Spirit
+					["sym"] = {{"select","itemID",
+						89139,	-- Chain Pet Leash
+						44820,	-- Red Ribbon Pet Leash
+						37460,	-- Rope Pet Leash
+					}},
+					["g"] = {
+						i(92798),	-- Pandaren Fire Spirit
+					},
 				})
 			},
 		}),
@@ -1383,8 +1392,23 @@ root(ROOTS.PetBattles, petbattle({
 			},
 			["g"] = {
 				i(98095, {	-- Brawler's Pet Supplies
-					["sym"] = {{ "fill" }},
-				}),
+					["sym"] = {{"select","itemID",
+						89139,	-- Chain Pet Leash
+						44820,	-- Red Ribbon Pet Leash
+						37460,	-- Rope Pet Leash
+					}},
+					["g"] = {
+						i(92679),	-- Flawless Aquatic Battle-Stone
+						i(92675),	-- Flawless Beast Battle-Stone
+						i(92676),	-- Flawless Critter Battle-Stone
+						i(92665),	-- Flawless Elemental Battle-Stone
+						i(92677),	-- Flawless Flying Battle-Stone
+						i(92682),	-- Flawless Humanoid Battle-Stone
+						i(92678),	-- Flawless Magic Battle-Stone
+						i(92680),	-- Flawless Mechanical Battle-Stone
+						i(92681),	-- Flawless Undead Battle-Stone
+					},
+				})
 			},
 		})),
 	})),
