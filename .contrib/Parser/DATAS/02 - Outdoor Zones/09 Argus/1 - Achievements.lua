@@ -61,16 +61,21 @@ _.Zones =
 					}),
 				}),
 				ach(12083, {	-- Paragon of Argus
-					title(366),	-- <Name> the Lightbringer
-					ach(12028),	-- Envision Invasion Eradication
-					ach(12007),	-- Heroic: Seat of the Triumvirate
-					ach(12026),	-- Invasion Obliteration
-					ach(12073),	-- Locked and Loaded
-					ach(12081),	-- Officer of the Light
-					ach(12076),	-- Protector of the Argussian Reach
-					ach(11991),	-- Seat of the Pantheon
-					ach(12074),	-- Shoot First, Loot Later
-					ach(12066),	-- You Are Now Prepared!
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						12028,	-- Envision Invasion Eradication
+						12007,	-- Heroic: Seat of the Triumvirate
+						12026,	-- Invasion Obliteration
+						12073,	-- Locked and Loaded
+						12081,	-- Officer of the Light
+						12076,	-- Protector of the Argussian Reach
+						11991,	-- Seat of the Pantheon
+						12074,	-- Shoot First, Loot Later
+						12066,	-- You Are Now Prepared!
+					}},
+					["g"] = {
+						title(366),	-- <Name> the Lightbringer
+					},
 				}),
 				ach(12066, {	-- You Are Now Prepared!
 					crit(1, {	-- The Assault Begins

@@ -40,9 +40,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["coord"] = { 63.8, 28.8, AZSUNA },
 				["provider"] = { "n", 107245 },	-- Marius Felbane
 				["g"] = {
-					crit(1, {	-- Azsuna
-						["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
-					}),
 					i(121480),	-- Felblaze Chain
 					i(129171),	-- Band of Ingression
 				},

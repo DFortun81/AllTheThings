@@ -252,14 +252,6 @@ _.Zones =
 						i(139773),	-- Emerald Winds (TOY!)
 					},
 				}),
-				ach(10877, {	-- Pillars of Creation
-					["collectible"] = false,
-					["g"] = {
-						crit(4, {	-- Hammer of Khaz'goroth
-							["sourceQuests"] = { 42454 },	-- The Hammer of Khaz'goroth
-						}),
-					},
-				}),
 				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
 					["collectible"] = false,
 					["g"] = {

@@ -7,5 +7,24 @@ root(ROOTS.Zones, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\Achievement_Zone_Outland_01",
 		-- #endif
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(1262, {		-- Loremaster of Outland
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						1189,	-- To Hellfire and Back (Alliance)
+						1271,	-- To Hellfire and Back (Horde)
+						1190,	-- Mysteries of the Marsh
+						1191,	-- Terror of Terokkar (Alliance)
+						1272,	-- Terror of Terokkar (Horde)
+						1192,	-- Nagrand Slam (Alliance)
+						1273,	-- Nagrand Slam (Horde)
+						1193,	-- On the Blade's Edge
+						1194,	-- Into the Nether
+						1195,	-- Shadow of the Betrayer
+					}},
+				}),
+			}),
+		},
 	})),
 });

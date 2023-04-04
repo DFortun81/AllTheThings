@@ -325,6 +325,7 @@ _.Zones =
 				}),
 				ach(11260),		-- Treasures of Suramar
 				ach(11133, {	-- Why Can't I Hold All This Mana
+					-- TODO: can clean this up more... put actual objects, items in objects, sourceQuest the objects?, provider of the mana items
 					["sourceQuests"] = {
 						41138,	-- Feeding Shal'aran
 						42230,	-- The Valewalker's Burden

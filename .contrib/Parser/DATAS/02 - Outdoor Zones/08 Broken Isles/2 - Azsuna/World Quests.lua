@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
-			n(WORLD_QUESTS, bubbleDown({ ["isWorldQuest"] = true, },{
+			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, },{
 				q(42119),	-- A Cleansing Cocktail
 				q(42024),	-- A Friend of My Enemy
 				q(43803),	-- A Giant Murloc Problem

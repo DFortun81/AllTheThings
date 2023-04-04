@@ -887,10 +887,6 @@ _.Zones =
 					["provider"] = { "n", 108504 },	-- Marius Felbane
 					["coord"] = { 29.7, 40.1, HIGHMOUNTAIN },
 					["g"] = {
-					--	normally wouldn't attach crit to quests like this, but this is a super weird circumstance where every other criteria is killing a rare, so the criteria are attached to the NPCs there.  this is the only one that is started by a quest.  thanks, blizz.
-						crit(4, {	-- Stormheim
-							["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
-						}),
 						i(140726),	-- Hood of the Spurious Journey
 						i(140728),	-- Kuglaroth's Helm
 						i(140724),	-- Pit Lord Stompers

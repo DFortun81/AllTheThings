@@ -2430,6 +2430,10 @@ holiday = function(id, t)								-- Create an HOLIDAY Object
 	return struct("holidayID", id, t);
 end
 ho = holiday;											-- Create an HOLIDAY Object (alternative shortcut)
+hqt = function(id, t)									-- Create a HQT (Hidden Quest Tracker) Object
+	-- currently this is simply a 'Quest' but will soon be an actual new Type to track
+	return q(id, t);
+end
 illusion = function(id, t)								-- Create an ILLUSION Object (only necessary for illusions without itemIDs)
 	return struct("illusionID", id, t);
 end

@@ -135,14 +135,6 @@ _.Zones =
 						}),
 					},
 				})),
-				ach(10877, {	-- Pillars of Creation
-					["collectible"] = false,
-					["g"] = {
-						crit(2, {	-- Tidestone of Golganneth
-							["sourceQuests"] = { 42213 },	-- Eye of Azshara: The Tidestone of Golganneth
-						}),
-					},
-				}),
 				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
 					["collectible"] = false,
 					["g"] = {

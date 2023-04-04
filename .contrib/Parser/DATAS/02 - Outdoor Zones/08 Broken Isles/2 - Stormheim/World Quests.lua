@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
-			n(WORLD_QUESTS, bubbleDown({ ["isWorldQuest"] = true, },{
+			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, },{
 				q(43964),	-- A Jarl's Feast
 				q(42067),	-- All Howl, No Bite
 				q(41948),	-- All Pets Go to Heaven
