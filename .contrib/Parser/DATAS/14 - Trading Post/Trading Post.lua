@@ -221,6 +221,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			i(189896, {	-- Forsaken Cresset
 				["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 			}),
+			i(190145, {	-- Gilded Drakkonid Morningstar
+				["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+			}),
 			i(190133, {	-- Honed Bastard Sword
 				["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 			}),
@@ -539,9 +542,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 				i(190560, {	-- Apocalypse
 					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
-				}),
-				i(190145, {	-- Gilded Drakkonid Morningstar
-					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
 				}),
 				i(190578, {	-- Headmaster's Command
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
