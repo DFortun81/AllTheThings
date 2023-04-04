@@ -410,7 +410,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(390257, {	-- Stuffed Bear
 							["coord"] = { 30.5, 57.6, THE_FORBIDDEN_REACH },
-							["questID"] = 75164,
+							["questID"] = 75146,
 							["g"] = {
 								i(204405),	-- Stuffed Bear
 							},
@@ -1139,7 +1139,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75069),	-- On Primordial Earth Cache 389789
 		q(75070),	-- On Primordial Earth Cache 389902
 
-		q(75146),	-- After looting Stuffed Bear
 		qNYI(75007),	-- ???
 		q(74971),	-- During Second Time Is The Charm (dialgoue)
 		--

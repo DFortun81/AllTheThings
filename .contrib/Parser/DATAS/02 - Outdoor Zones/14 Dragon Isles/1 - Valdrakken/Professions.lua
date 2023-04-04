@@ -194,16 +194,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						r(396171),	-- Infused Pollen
 					},
 				}),
-				q(70613, {	-- Get Their Bark Before They Bite
-					["coord"] = { 37.7, 66.9, VALDRAKKEN },
-					["qg"] = 185549,	-- Agrikus
-					["isWeekly"] = true,
-				}),
-				q(70616, {	-- How Many??
-					["coord"] = { 37.7, 66.9, VALDRAKKEN },
-					["qg"] = 185549,	-- Agrikus
-					["isWeekly"] = true,
-				}),
 			})),
 			prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
 				n(185551, {	-- Hideshaper Koruz <Leatherworking Trainer>
@@ -327,20 +317,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						r(384692),	-- Serevite Deposit
 					},
 				}),
-				q(70618, {	-- The Call of the Forge
-					["qg"] = 185553,	-- Sekita the Burrower
-					["coord"] = { 39.0, 51.8, VALDRAKKEN },
-					["cost"] = {{"i",190395,16}},	-- 16x Severite Ore
-				}),
-				q(70617, {	-- All Mine, Mine, Mine
-					--["sourceQuests"] = {  },	--
-					["provider"] = { "n", 185553 },	-- Sekita the Burrower
-					["coord"] = { 76.3, 34.6, THE_WAKING_SHORES },
-					["cost"] = { { "i", 189143, 7 }, },	-- 7x Draconium Ore+
-					["g"] = {
-						i(190394),	-- Tyrivite Ore+++
-					}
-				}),
 			})),
 			prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
 				n(193846, {	-- Ralathor the Rugged <Skinning Trainer>
@@ -354,11 +330,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						r(396173),	-- Saturated Bone
 						r(392445),	-- Scale Skinning
 					},
-				}),
-				q(70620, {	-- Scaling Up
-					["qg"] = 193846,	-- Ralathor the Rugged
-					["coord"] = { 28.6, 60.4, VALDRAKKEN },
-					["isWeekly"] = true,
 				}),
 			})),
 			prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAILORING }, {
@@ -394,11 +365,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						r(376553),	-- Wildercloth Gardening Hat
 						r(376545),	-- Wildercloth Tailor's Coat
 					},
-				}),
-				q(70586, {	-- Sew Many Cooks
-					["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
-					["coord"] = { 31.8, 67.6, VALDRAKKEN },
-					["isWeekly"] = true,
 				}),
 			})),
 		}),

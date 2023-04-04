@@ -1223,15 +1223,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(71174),	-- Ohn'iri Springs Ancestor
 		q(71175),	-- Teerakai Ancestor
 		q(71176),	-- The Eternal Kurgans Ancestor
-		--
 		-- q(70141),	-- Triggered when killed Skaara
-		-- --
-		-- --
-		-- q(69813),	-- Triggered when Prozela Killed
-		-- --
-		-- --
-		-- Has to do with the Chest Event In the South
-		--q(70511),	-- complete??
-		q(70922),	-- Caravan Stages swapping
 	}),
 })))
