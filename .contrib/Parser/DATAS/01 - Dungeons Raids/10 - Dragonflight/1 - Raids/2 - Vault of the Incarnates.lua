@@ -729,8 +729,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 					},
 					["g"] = {
 						i(201740, {	-- Elemental Codex of Ultimate Power
-							r(370543),	-- Elemental Potion of Ultimate Power (RECIPE!)
-							r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
+							["collectible"] = false,
+							["g"] = {
+								r(370543),	-- Elemental Potion of Ultimate Power (RECIPE!)
+								r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
+							},
 						}),
 					},
 				}),
