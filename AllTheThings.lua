@@ -5385,8 +5385,11 @@ local function SkipFillingGroup(group, FillData)
 		if parent and parent.questID and parent.saved then return true; end
 	end
 
-	-- mark this group as being filled since it is not being skipped (unless it's a basic header)
-	if not group.headerID then
+	-- mark this group as being filled since it is not being skipped (unless it's a basic header/class header)
+	if not (
+		group.headerID or
+		group.classID
+	) then
 		if groupHash then included[groupHash] = true; end
 	end
 end
