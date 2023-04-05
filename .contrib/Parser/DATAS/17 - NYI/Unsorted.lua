@@ -2319,7 +2319,6 @@ root(ROOTS.Unsorted, {
 				i(203466),	-- Dragonscale Surplus Crate
 				i(203651),	-- Saza's Blade
 				i(203657),	-- Toxin Antidote
-				i(203687),	-- Dusty Vase
 				i(203724),	-- Field Medic's Hazard Payout
 				i(203730),	-- Rustic Winterpelt Supplies
 				i(203997),	-- Raw Argali Flank
@@ -2367,7 +2366,6 @@ root(ROOTS.Unsorted, {
 				i(114942),	-- Cracked Draenic Mortar
 				i(204343),	-- Trusty Dragonkin Rake
 				i(204442),	-- Clump of Tar
-				i(204443),	-- Blacksteel Hammer
 				i(204561),	-- Primalist Cache Key
 				i(204632),	-- Tectonic Rock Fragment
 				i(204636),	-- Snarfang's Stomach Sac
@@ -2464,25 +2462,17 @@ root(ROOTS.Unsorted, {
 				q(74782),	--
 				q(74788),	--
 				q(74789),	--
-				q(74796),	-- A Dusty Vase
 				q(74875),	--
 				q(74890),	--
 				q(74891),	--
 				q(74955),	-- An Egg-centric Discovery
 				q(74970),	--
-				q(74978),	--
 				q(74994),	--
 				q(74996),	--
-				q(74997),	--
 				q(74998),	--
 				q(74999),	--
-				q(75000),	--
-				q(75001),	--
-				q(75002),	--
-				q(75003),	--
 				-- 10.0.7.47983
 				q(75034),	--
-				q(75047),	--
 				q(75052),	--
 				q(75065),	-- Campaign Testing - Dummy Quest
 				-- 10.0.7.48076

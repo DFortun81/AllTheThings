@@ -485,7 +485,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["isWeekly"] = true,
 				}),
 				o(389471, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Grand Obsidian Cache
-					-- ["questID"] = ,
+					["questID"] = 75047,
 					["coord"] = { 35.8, 48.0, THE_WAKING_SHORES },
 					["cost"] = { { "i", 204278, 1} },	-- 1x Neltharion's Toolkit
 					["g"] = {

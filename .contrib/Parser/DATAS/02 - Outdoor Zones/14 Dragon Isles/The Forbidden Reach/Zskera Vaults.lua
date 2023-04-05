@@ -100,11 +100,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
 				}),
 				-- Inside of Az
+				q(74996, {	-- A Difficult Legacy
+					["sourceQuests"] = { 74796 },	-- A Dusty Vase
+					["provider"] = { "n", 201564 },	-- Voraxian
+					["coord"] = {85.5, 35, OHNAHRAN_PLAINS },
+				}),
+				q(74796, {	-- A Dusty Vase
+					["provider"] = { "i", 203687 },	-- Dusty Vase
+					["coord"] = { 28.3, 57.4, THE_FORBIDDEN_REACH },
+				}),
 				q(74795, {	-- An Odd Round Object
-					["provider"] = { "i", 203686 },	-- An Odd Round Object
+					["provider"] = { "i", 203686 },	-- Odd Round Object
 					["coord"] = { 30.8, 57.5, THE_FORBIDDEN_REACH },
 				}),
 				q(74493, {	-- Second Time Is The Charm
+					["sourceQuests"] = { 74795 },	-- An Odd Round Object
 					["provider"] = { "n", 201564 },	-- Voraxian
 					["coord"] = {85.5, 35, OHNAHRAN_PLAINS },
 				}),
@@ -120,6 +130,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72953 },	-- Zskera Vault: Az
 					["provider"] = { "n", 201714 },	-- Prototype Tinker-Tron
 					["coord"] = { 24.7, 52.0, THE_FORBIDDEN_REACH },
+					["isWeekly"] = true,
 					["g"] = {
 						i(203699),	-- Tattered Gift Package
 					},
@@ -426,16 +437,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(385398, {	-- Searing Chest
 							["questID"] = 72889,
 						}),
-						o(385011, {	-- Spun Webs
-							-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
-							-- ["questID"] = ,
-							["g"] = {
-								i(193363),	-- Bunbo (PET!)
-							},
+						o(398786, {	-- Spun Webs
+							["questID"] = 75498,
+						}),
+						o(398787, {	-- Spun Webs
+							["questID"] = 75499,
+						}),
+						o(398788, {	-- Spun Webs
+							["questID"] = 75501,
+						}),
+						o(398789, {	-- Spun Webs
+							["questID"] = 75503,
+						}),
+						o(398790, {	-- Spun Webs
+							["questID"] = 75503,
+						}),
+						o(385008, {	-- Spun Webs
+							["questID"] = 75504,
 						}),
 						o(385010, {	-- Spun Webs
-							-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
-							-- ["questID"] = ,
+							["questID"] = 75505,
 						}),
 						o(390257, {	-- Stuffed Bear
 							["coord"] = { 30.5, 57.6, THE_FORBIDDEN_REACH },
@@ -740,6 +761,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},{
 					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_frost",
 					["g"] = {
+						o(392030, {	-- Blacksteel Hammer
+							["g"] = {
+								i(204443),	-- Blacksteel Hammer
+							},
+						}),
 						o(390559, {	-- Box of Rocks
 							["questID"] = 75152,
 							["g"] = {
@@ -917,6 +943,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386454, {	-- Chest of Ice
 							["coord"] = { 28.3, 55.6, THE_FORBIDDEN_REACH },
 							["questID"] = 74420,
+						}),
+						o(386556, {	-- Dusty Vase
+							["coord"] = { 28.3, 57.4, THE_FORBIDDEN_REACH },
+							["g"] = {
+								i(203687),	-- Dusty Vase
+							},
 						}),
 						o(398200, {	-- Forgotten Lockbox
 							["questID"] = 75436,
@@ -1158,14 +1190,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 
 
 		-- TODO: See if these need to be associated with treasures
-		q(75500),	-- Looted spider cocoon in a vault room
-		q(75501),	-- Looted spider cocoon in a vault room
-		q(75503),	-- Looted spider cocoon in a vault room
-		q(75504),	-- Looted spider cocoon in a vault room
-		q(75505),	-- Looted spider cocoon in a vault room
-		q(75499),	-- Looted spider cocoon in a vault room
-		q(75498),	-- Looted spider cocoon in a vault room
-
 		q(74612),	-- Research Volume Spawn (201953)
 		q(74611),	-- Research Volume Spawn (201953)
 		q(74610),	-- Research Volume Spawn (201953)
@@ -1181,8 +1205,15 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75070),	-- On Primordial Earth Cache 389902
 
 		qNYI(75007),	-- ???
-		q(74971),	-- During Second Time Is The Charm (dialgoue)
+		q(74971),	-- During 'Second Time Is The Charm' (questID 74493)
+		q(74997),	-- During 'A Difficult Legacy' 1st part (questID 74996)
+		q(75000),	-- During 'A Difficult Legacy' 2nd part (questID 74996)
+		q(75001),	-- During 'A Difficult Legacy' 3rd part (questID 74996)
+		q(75002),	-- During 'A Difficult Legacy' 4th part (questID 74996)
+		q(75003),	-- During 'A Difficult Legacy' 5th part (questID 74996)
 		--
 		q(74874),	-- Pop when completing Primordial Answers (74869)
+		--
+		q(74978),	-- Repairing the Broken Waygate with Neltharion's Toolkit in The Waking Shores
 	}),
 })));
