@@ -2468,7 +2468,6 @@ root(ROOTS.Unsorted, {
 				q(74955),	-- An Egg-centric Discovery
 				q(74970),	--
 				q(74994),	--
-				q(74996),	--
 				q(74998),	--
 				q(74999),	--
 				-- 10.0.7.47983
