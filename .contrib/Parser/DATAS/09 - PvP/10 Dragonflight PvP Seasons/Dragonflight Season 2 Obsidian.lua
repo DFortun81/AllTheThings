@@ -1,13 +1,11 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
---[[root(ROOTS.PVP, pvp(tier(DF_TIER, {
-	header(HEADERS.Achievement, SEASON_CRIMSON, bubbleDownSelf({
-		["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
-	},{
-		["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
+root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
+	header(HEADERS.Achievement, SEASON_OBSIDIAN, {
+		["icon"] = "Interface\\Icons\\inv_serpentmountgladiator",
 		["g"] = {
-			n(ACHIEVEMENTS, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 				ach(15943, {	-- Obsidian Combatant [A]
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
@@ -28,13 +26,13 @@
 				ach(17831, {	-- Elite: Dragonflight Season 2
 					i(205362),	-- Obsidian Gladiator's Tabard
 				}),
-				ach(00000, {	-- Gladiator: Dragonflight Season 2
+				ach(17740, {	-- Gladiator: Dragonflight Season 2
 					i(205233),	-- Obsidian Gladiator's Slitherdrake (MOUNT!)
-					i(),	-- Highland Drake: Embodiment of the Obsidian Gladiator (DM!)
+					i(205865),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
 				}),
 				ach(17778),		-- Obsidian Gladiator's Drake
 				ach(17764, {	-- Obsidian Gladiator: Dragonflight Season 2
-					title(),	-- Obsidian Gladiator <Name>
+					title(499),	-- Obsidian Gladiator <Name>
 				}),
 				-- RBG
 				ach(17768, {	-- Hero of the Alliance: Obsidian
@@ -45,13 +43,13 @@
 				}),
 				-- Solo
 				ach(17767),		-- Obsidian Legend: Dragonflight Season 2
-				ach(00000, {	-- Obsidian Soloist: Dragonflight Season 2
-					title(),	-- Obsidian Soloist <Name>
-				}),
+				--ach(00000, {	-- Obsidian Soloist: Dragonflight Season 2
+				--	title(),	-- Obsidian Soloist <Name>
+				--}),
 				-- Fashion
-				ach(00000),		-- Obsidian Carpet Fashion
-			}),
-			filter(TITLES, bubbleDown({ ["collectible"] = false, },{
+				ach(18249),		-- Obsidian Tie Event
+			})),
+			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }, ["collectible"] = false }, {
 				title(78),	-- Combatant <Name>
 				title(32),	-- Challenger <Name>
 				title(31),	-- Rival <Name>
@@ -73,125 +71,130 @@
 				-- Solo
 				title(491),	-- Legend <Name>
 			})),
-			n(PVP_ASPIRANT, {
-				filter(CLOAKS, {
-					i(201752),	-- Obsidian Aspirant's Cape
-					i(201750),	-- Obsidian Aspirant's Cloak
-					i(201751),	-- Obsidian Aspirant's Drape
-					i(201753),	-- Obsidian Aspirant's Greatcloak
+			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+				n(199601, {	-- Seltherex
+					["coord"] = { 44.7, 37.0, VALDRAKKEN },
+					["g"] = {
+						filter(CLOAKS, {
+							i(205791),	-- Obsidian Aspirant's Cape
+							i(205789),	-- Obsidian Aspirant's Cloak
+							i(205790),	-- Obsidian Aspirant's Drape
+							i(205792),	-- Obsidian Aspirant's Greatcloak
+						}),
+						filter(CLOTH, {
+							i(205771),	-- Obsidian Aspirant's Silk Belt
+							i(205774),	-- Obsidian Aspirant's Silk Bindings
+							i(205739),	-- Obsidian Aspirant's Silk Cord
+							i(205759),	-- Obsidian Aspirant's Silk Cover
+							i(205752),	-- Obsidian Aspirant's Silk Footwraps
+							i(205725),	-- Obsidian Aspirant's Silk Gloves
+							i(205757),	-- Obsidian Aspirant's Silk Handwraps
+							i(205727),	-- Obsidian Aspirant's Silk Hood
+							i(205731),	-- Obsidian Aspirant's Silk Leggings
+							i(205763),	-- Obsidian Aspirant's Silk Legwraps
+							i(205736),	-- Obsidian Aspirant's Silk Mantle
+							i(205715),	-- Obsidian Aspirant's Silk Robe
+							i(205768),	-- Obsidian Aspirant's Silk Shawl
+							i(205720),	-- Obsidian Aspirant's Silk Treads
+							i(205747),	-- Obsidian Aspirant's Silk Vestments
+							i(205742),	-- Obsidian Aspirant's Silk Wristwraps
+						}),
+						filter(FINGER_F, {
+							i(205784),	-- Obsidian Aspirant's Band
+							i(205783),	-- Obsidian Aspirant's Ring
+							i(205785),	-- Obsidian Aspirant's Signet
+						}),
+						filter(LEATHER, {
+							i(205777),	-- Obsidian Aspirant's Leather Armguards
+							i(205741),	-- Obsidian Aspirant's Leather Belt
+							i(205722),	-- Obsidian Aspirant's Leather Boots
+							i(205733),	-- Obsidian Aspirant's Leather Breeches
+							i(205773),	-- Obsidian Aspirant's Leather Cord
+							i(205754),	-- Obsidian Aspirant's Leather Footpads
+							i(205723),	-- Obsidian Aspirant's Leather Gloves
+							i(205755),	-- Obsidian Aspirant's Leather Grips
+							i(205729),	-- Obsidian Aspirant's Leather Helm
+							i(205765),	-- Obsidian Aspirant's Leather Leggings
+							i(205766),	-- Obsidian Aspirant's Leather Mantle
+							i(205761),	-- Obsidian Aspirant's Leather Mask
+							i(205734),	-- Obsidian Aspirant's Leather Spaulders
+							i(205750),	-- Obsidian Aspirant's Leather Tunic
+							i(205718),	-- Obsidian Aspirant's Leather Vest
+							i(205745),	-- Obsidian Aspirant's Leather Wristwraps
+						}),
+						filter(MAIL, {
+							i(205740),	-- Obsidian Aspirant's Chain Belt
+							i(205776),	-- Obsidian Aspirant's Chain Bracer
+							i(205772),	-- Obsidian Aspirant's Chain Clasp
+							i(205726),	-- Obsidian Aspirant's Chain Gauntlets
+							i(205758),	-- Obsidian Aspirant's Chain Handguards
+							i(205760),	-- Obsidian Aspirant's Chain Headguard
+							i(205728),	-- Obsidian Aspirant's Chain Helm
+							i(205732),	-- Obsidian Aspirant's Chain Leggings
+							i(205721),	-- Obsidian Aspirant's Chain Sabatons
+							i(205769),	-- Obsidian Aspirant's Chain Shoulderguards
+							i(205737),	-- Obsidian Aspirant's Chain Spaulders
+							i(205753),	-- Obsidian Aspirant's Chain Stompers
+							i(205749),	-- Obsidian Aspirant's Chain Tunic
+							i(205717),	-- Obsidian Aspirant's Chain Vest
+							i(205764),	-- Obsidian Aspirant's Chain Wargreaves
+							i(205744),	-- Obsidian Aspirant's Chain Wristwraps
+						}),
+						filter(NECK_F, {
+							i(205787),	-- Obsidian Aspirant's Choker
+							i(205786),	-- Obsidian Aspirant's Necklace
+							i(205788),	-- Obsidian Aspirant's Pendant
+						}),
+						filter(PLATE, {
+							i(205775),	-- Obsidian Aspirant's Plate Armguards
+							i(205748),	-- Obsidian Aspirant's Plate Armor
+							i(205716),	-- Obsidian Aspirant's Plate Chestplate
+							i(205743),	-- Obsidian Aspirant's Plate Cuffs
+							i(205724),	-- Obsidian Aspirant's Plate Gauntlets
+							i(205738),	-- Obsidian Aspirant's Plate Girdle
+							i(205770),	-- Obsidian Aspirant's Plate Greatbelt
+							i(205756),	-- Obsidian Aspirant's Plate Handguards
+							i(205746),	-- Obsidian Aspirant's Plate Headguard
+							i(205714),	-- Obsidian Aspirant's Plate Helm
+							i(205730),	-- Obsidian Aspirant's Plate Legguards
+							i(205767),	-- Obsidian Aspirant's Plate Pauldrons
+							i(205735),	-- Obsidian Aspirant's Plate Shoulders
+							i(205751),	-- Obsidian Aspirant's Plate Stompers
+							i(205719),	-- Obsidian Aspirant's Plate Warboots
+							i(205762),	-- Obsidian Aspirant's Plate Wargreaves
+						}),
+						filter(TRINKET_F, {
+							i(205778),	-- Obsidian Aspirant's Badge of Ferocity
+							i(205781),	-- Obsidian Aspirant's Emblem
+							i(205780),	-- Obsidian Aspirant's Insignia of Alacrity
+							i(205779),	-- Obsidian Aspirant's Medallion
+							i(205782),	-- Obsidian Aspirant's Sigil of Adaptation
+						}),
+						n(WEAPONS, {
+							i(205879),	-- Obsidian Aspirant's Battleaxe
+							i(205896),	-- Obsidian Aspirant's Blade
+							i(205880),	-- Obsidian Aspirant's Dagger
+							i(205887),	-- Obsidian Aspirant's Gavel
+							i(205884),	-- Obsidian Aspirant's Greatsword
+							i(205892),	-- Obsidian Aspirant's Hammer
+							i(205893),	-- Obsidian Aspirant's Knife
+							i(205891),	-- Obsidian Aspirant's Longspear
+							i(205881),	-- Obsidian Aspirant's Mace
+							i(205882),	-- Obsidian Aspirant's Polearm
+							i(205895),	-- Obsidian Aspirant's Pulverizer
+							i(205890),	-- Obsidian Aspirant's Recurve
+							i(205889),	-- Obsidian Aspirant's Ripper
+							i(205888),	-- Obsidian Aspirant's Shield
+							i(205883),	-- Obsidian Aspirant's Staff
+							i(205894),	-- Obsidian Aspirant's Sword
+							i(205885),	-- Obsidian Aspirant's Torch
+							i(205886),	-- Obsidian Aspirant's Warglaive
+						}),
+					},
 				}),
-				filter(CLOTH, {
-					i(201151),	-- Obsidian Aspirant's Silk Belt
-					i(201154),	-- Obsidian Aspirant's Silk Bindings
-					i(201118),	-- Obsidian Aspirant's Silk Cord
-					i(201139),	-- Obsidian Aspirant's Silk Cover
-					i(201131),	-- Obsidian Aspirant's Silk Footwraps
-					i(201104),	-- Obsidian Aspirant's Silk Gloves
-					i(201137),	-- Obsidian Aspirant's Silk Handwraps
-					i(201106),	-- Obsidian Aspirant's Silk Hood
-					i(201110),	-- Obsidian Aspirant's Silk Leggings
-					i(201143),	-- Obsidian Aspirant's Silk Legwraps
-					i(201115),	-- Obsidian Aspirant's Silk Mantle
-					i(201148),	-- Obsidian Aspirant's Silk Shawl
-					i(201099),	-- Obsidian Aspirant's Silk Treads
-					i(201094),	-- Obsidian Aspirant's Silk Tunic
-					i(201126),	-- Obsidian Aspirant's Silk Vest
-					i(201121),	-- Obsidian Aspirant's Silk Wristwraps
-				}),
-				filter(FINGER_F, {
-					i(201745),	-- Obsidian Aspirant's Band
-					i(201744),	-- Obsidian Aspirant's Ring
-					i(201746),	-- Obsidian Aspirant's Signet
-				}),
-				filter(LEATHER, {
-					i(201157),	-- Obsidian Aspirant's Leather Armguards
-					i(201120),	-- Obsidian Aspirant's Leather Belt
-					i(201101),	-- Obsidian Aspirant's Leather Boots
-					i(201112),	-- Obsidian Aspirant's Leather Breeches
-					i(201153),	-- Obsidian Aspirant's Leather Cord
-					i(201133),	-- Obsidian Aspirant's Leather Footpads
-					i(201102),	-- Obsidian Aspirant's Leather Gloves
-					i(201135),	-- Obsidian Aspirant's Leather Grips
-					i(201108),	-- Obsidian Aspirant's Leather Helm
-					i(201145),	-- Obsidian Aspirant's Leather Leggings
-					i(201146),	-- Obsidian Aspirant's Leather Mantle
-					i(201141),	-- Obsidian Aspirant's Leather Mask
-					i(201113),	-- Obsidian Aspirant's Leather Spaulders
-					i(201129),	-- Obsidian Aspirant's Leather Tunic
-					i(201097),	-- Obsidian Aspirant's Leather Vest
-					i(201124),	-- Obsidian Aspirant's Leather Wristwraps
-				}),
-				filter(MAIL, {
-					i(201119),	-- Obsidian Aspirant's Chain Belt
-					i(201156),	-- Obsidian Aspirant's Chain Bracer
-					i(201152),	-- Obsidian Aspirant's Chain Clasp
-					i(201105),	-- Obsidian Aspirant's Chain Gauntlets
-					i(201138),	-- Obsidian Aspirant's Chain Handguards
-					i(201140),	-- Obsidian Aspirant's Chain Headguard
-					i(201107),	-- Obsidian Aspirant's Chain Helm
-					i(201111),	-- Obsidian Aspirant's Chain Leggings
-					i(201100),	-- Obsidian Aspirant's Chain Sabatons
-					i(201149),	-- Obsidian Aspirant's Chain Shoulderguards
-					i(201116),	-- Obsidian Aspirant's Chain Spaulders
-					i(201132),	-- Obsidian Aspirant's Chain Stompers
-					i(201128),	-- Obsidian Aspirant's Chain Tunic
-					i(201096),	-- Obsidian Aspirant's Chain Vest
-					i(201144),	-- Obsidian Aspirant's Chain Wargreaves
-					i(201123),	-- Obsidian Aspirant's Chain Wristwraps
-				}),
-				filter(NECK_F, {
-					i(201748),	-- Obsidian Aspirant's Choker
-					i(201747),	-- Obsidian Aspirant's Necklace
-					i(201749),	-- Obsidian Aspirant's Pendant
-				}),
-				filter(PLATE, {
-					i(201155),	-- Obsidian Aspirant's Plate Armguards
-					i(201127),	-- Obsidian Aspirant's Plate Armor
-					i(201095),	-- Obsidian Aspirant's Plate Chestplate
-					i(201122),	-- Obsidian Aspirant's Plate Cuffs
-					i(201103),	-- Obsidian Aspirant's Plate Gauntlets
-					i(201117),	-- Obsidian Aspirant's Plate Girdle
-					i(201150),	-- Obsidian Aspirant's Plate Greatbelt
-					i(201136),	-- Obsidian Aspirant's Plate Handguards
-					i(201125),	-- Obsidian Aspirant's Plate Headguard
-					i(201093),	-- Obsidian Aspirant's Plate Helm
-					i(201109),	-- Obsidian Aspirant's Plate Legguards
-					i(201147),	-- Obsidian Aspirant's Plate Pauldrons
-					i(201114),	-- Obsidian Aspirant's Plate Shoulders
-					i(201130),	-- Obsidian Aspirant's Plate Stompers
-					i(201098),	-- Obsidian Aspirant's Plate Warboots
-					i(201142),	-- Obsidian Aspirant's Plate Wargreaves
-				}),
-				filter(TRINKET_F, {
-					i(201449),	-- Obsidian Aspirant's Badge of Ferocity
-					i(201452),	-- Obsidian Aspirant's Emblem
-					i(201451),	-- Obsidian Aspirant's Insignia of Alacrity
-					i(201450),	-- Obsidian Aspirant's Medallion
-					i(201453),	-- Obsidian Aspirant's Sigil of Adaptation
-				}),
-				n(WEAPONS, {
-					i(201760),	-- Obsidian Aspirant's Battleaxe
-					i(201965),	-- Obsidian Aspirant's Blade
-					i(201761),	-- Obsidian Aspirant's Dagger
-					i(201768),	-- Obsidian Aspirant's Gavel
-					i(201765),	-- Obsidian Aspirant's Greatsword
-					i(201773),	-- Obsidian Aspirant's Hammer
-					i(201774),	-- Obsidian Aspirant's Knife
-					i(201772),	-- Obsidian Aspirant's Longspear
-					i(201762),	-- Obsidian Aspirant's Mace
-					i(201763),	-- Obsidian Aspirant's Polearm
-					i(201964),	-- Obsidian Aspirant's Pulverizer
-					i(201771),	-- Obsidian Aspirant's Recurve
-					i(201770),	-- Obsidian Aspirant's Ripper
-					i(201769),	-- Obsidian Aspirant's Shield
-					i(201764),	-- Obsidian Aspirant's Staff
-					i(201963),	-- Obsidian Aspirant's Sword
-					i(201766),	-- Obsidian Aspirant's Torch
-					i(201775),	-- Obsidian Aspirant's Wand
-					i(201767),	-- Obsidian Aspirant's Warglaive
-				}),
-			}),
-			n(PVP_GLADIATOR, {
+			})),
+			--[[
+			n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(201911),	-- Obsidian Gladiator's Cloak
@@ -501,8 +504,8 @@
 					i(201982),	-- Obsidian Gladiator's Wand
 					i(201974),	-- Obsidian Gladiator's Warglaive
 				}),
-			}),
-			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {
+			})),
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }, ["bonusID"] = 7532 }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(201911),	-- Obsidian Gladiator's Cloak
@@ -816,15 +819,17 @@
 					i(202132),	-- Obsidian Gladiator's Warhammer
 				}),
 			})),
-			filter(MOUNTS, {
-				i(201789, {	-- Vicious Sabertooth [A] (MOUNT!)
+			-]]
+			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+				i(205246, {	-- Vicious War Snail [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(201788, {	-- Vicious Sabertooth [H] (MOUNT!)
+				i(205245, {	-- Vicious War Snail [H] (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
+			})),
+			filter(RECIPES, {
 			}),
 		},
-	})),
-})));
---]]
+	}),
+}))));

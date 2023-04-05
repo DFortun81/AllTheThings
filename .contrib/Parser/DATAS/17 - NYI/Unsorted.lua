@@ -2085,85 +2085,27 @@ root(ROOTS.Unsorted, {
 				i(205710),	-- Obsidian Gladiator's Emblem
 				i(205711),	-- Obsidian Gladiator's Medallion
 				i(205712),	-- Obsidian Gladiator's Sigil of Adaptation
-				i(205714),	-- Obsidian Aspirant's Plate Helm
-				i(205715),	-- Obsidian Aspirant's Silk Robe
-				i(205716),	-- Obsidian Aspirant's Plate Chestplate
-				i(205717),	-- Obsidian Aspirant's Chain Vest
-				i(205718),	-- Obsidian Aspirant's Leather Vest
-				i(205719),	-- Obsidian Aspirant's Plate Warboots
-				i(205720),	-- Obsidian Aspirant's Silk Treads
-				i(205721),	-- Obsidian Aspirant's Chain Sabatons
-				i(205722),	-- Obsidian Aspirant's Leather Boots
-				i(205723),	-- Obsidian Aspirant's Leather Gloves
-				i(205724),	-- Obsidian Aspirant's Plate Gauntlets
-				i(205725),	-- Obsidian Aspirant's Silk Gloves
-				i(205726),	-- Obsidian Aspirant's Chain Gauntlets
-				i(205727),	-- Obsidian Aspirant's Silk Hood
-				i(205728),	-- Obsidian Aspirant's Chain Helm
-				i(205729),	-- Obsidian Aspirant's Leather Helm
-				i(205730),	-- Obsidian Aspirant's Plate Legguards
-				i(205731),	-- Obsidian Aspirant's Silk Leggings
-				i(205732),	-- Obsidian Aspirant's Chain Leggings
-				i(205733),	-- Obsidian Aspirant's Leather Breeches
-				i(205734),	-- Obsidian Aspirant's Leather Spaulders
-				i(205735),	-- Obsidian Aspirant's Plate Shoulders
-				i(205736),	-- Obsidian Aspirant's Silk Mantle
-				i(205737),	-- Obsidian Aspirant's Chain Spaulders
-				i(205738),	-- Obsidian Aspirant's Plate Girdle
-				i(205739),	-- Obsidian Aspirant's Silk Cord
-				i(205740),	-- Obsidian Aspirant's Chain Belt
-				i(205741),	-- Obsidian Aspirant's Leather Belt
-				i(205742),	-- Obsidian Aspirant's Silk Wristwraps
-				i(205743),	-- Obsidian Aspirant's Plate Cuffs
-				i(205744),	-- Obsidian Aspirant's Chain Wristwraps
-				i(205745),	-- Obsidian Aspirant's Leather Wristwraps
-				i(205746),	-- Obsidian Aspirant's Plate Headguard
-				i(205747),	-- Obsidian Aspirant's Silk Vestments
-				i(205748),	-- Obsidian Aspirant's Plate Armor
-				i(205749),	-- Obsidian Aspirant's Chain Tunic
-				i(205750),	-- Obsidian Aspirant's Leather Tunic
-				i(205751),	-- Obsidian Aspirant's Plate Stompers
-				i(205752),	-- Obsidian Aspirant's Silk Footwraps
-				i(205753),	-- Obsidian Aspirant's Chain Stompers
-				i(205754),	-- Obsidian Aspirant's Leather Footpads
-				i(205755),	-- Obsidian Aspirant's Leather Grips
-				i(205756),	-- Obsidian Aspirant's Plate Handguards
-				i(205757),	-- Obsidian Aspirant's Silk Handwraps
-				i(205758),	-- Obsidian Aspirant's Chain Handguards
-				i(205759),	-- Obsidian Aspirant's Silk Cover
-				i(205760),	-- Obsidian Aspirant's Chain Headguard
-				i(205761),	-- Obsidian Aspirant's Leather Mask
-				i(205762),	-- Obsidian Aspirant's Plate Wargreaves
-				i(205763),	-- Obsidian Aspirant's Silk Legwraps
-				i(205764),	-- Obsidian Aspirant's Chain Wargreaves
-				i(205765),	-- Obsidian Aspirant's Leather Leggings
-				i(205766),	-- Obsidian Aspirant's Leather Mantle
-				i(205767),	-- Obsidian Aspirant's Plate Pauldrons
-				i(205768),	-- Obsidian Aspirant's Silk Shawl
-				i(205769),	-- Obsidian Aspirant's Chain Shoulderguards
-				i(205770),	-- Obsidian Aspirant's Plate Greatbelt
-				i(205771),	-- Obsidian Aspirant's Silk Belt
-				i(205772),	-- Obsidian Aspirant's Chain Clasp
-				i(205773),	-- Obsidian Aspirant's Leather Cord
-				i(205774),	-- Obsidian Aspirant's Silk Bindings
-				i(205775),	-- Obsidian Aspirant's Plate Armguards
-				i(205776),	-- Obsidian Aspirant's Chain Bracer
-				i(205777),	-- Obsidian Aspirant's Leather Armguards
-				i(205778),	-- Obsidian Aspirant's Badge of Ferocity
-				i(205779),	-- Obsidian Aspirant's Medallion
-				i(205780),	-- Obsidian Aspirant's Insignia of Alacrity
-				i(205781),	-- Obsidian Aspirant's Emblem
-				i(205782),	-- Obsidian Aspirant's Sigil of Adaptation
-				i(205783),	-- Obsidian Aspirant's Ring
-				i(205784),	-- Obsidian Aspirant's Band
-				i(205785),	-- Obsidian Aspirant's Signet
-				i(205786),	-- Obsidian Aspirant's Necklace
-				i(205787),	-- Obsidian Aspirant's Choker
-				i(205788),	-- Obsidian Aspirant's Pendant
-				i(205789),	-- Obsidian Aspirant's Cloak
-				i(205790),	-- Obsidian Aspirant's Drape
-				i(205791),	-- Obsidian Aspirant's Cape
-				i(205792),	-- Obsidian Aspirant's Greatcloak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				i(205793),	-- Skitter Souf-fly
 				i(205794),	-- Beetle Juice
 				i(205795),	-- Wriggling Worm
@@ -2247,24 +2189,24 @@ root(ROOTS.Unsorted, {
 				i(205876),	-- Highland Drake: Embodiment of the Elementium Drake
 				i(205877),	-- Adventurer's Footlocker
 				i(205878),	-- Obsidian Aspect Earthstone
-				i(205879),	-- Obsidian Aspirant's Battleaxe
-				i(205880),	-- Obsidian Aspirant's Dagger
-				i(205881),	-- Obsidian Aspirant's Mace
-				i(205882),	-- Obsidian Aspirant's Polearm
-				i(205883),	-- Obsidian Aspirant's Staff
-				i(205884),	-- Obsidian Aspirant's Greatsword
-				i(205885),	-- Obsidian Aspirant's Torch
-				i(205886),	-- Obsidian Aspirant's Warglaive
-				i(205887),	-- Obsidian Aspirant's Gavel
-				i(205888),	-- Obsidian Aspirant's Shield
-				i(205889),	-- Obsidian Aspirant's Ripper
-				i(205890),	-- Obsidian Aspirant's Recurve
-				i(205891),	-- Obsidian Aspirant's Longspear
-				i(205892),	-- Obsidian Aspirant's Hammer
-				i(205893),	-- Obsidian Aspirant's Knife
-				i(205894),	-- Obsidian Aspirant's Sword
-				i(205895),	-- Obsidian Aspirant's Pulverizer
-				i(205896),	-- Obsidian Aspirant's Blade
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				i(205898),	-- Niffen Cave Dive Key and shield disabled
 				i(205900),	-- Shimmering Draconic Gem
 				i(205901),	-- Crunchy Beetle
