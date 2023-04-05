@@ -562,196 +562,196 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			n(CRAFTABLES, {
 				filter(BATTLE_PETS, {
-					i(189363, {	-- Ambystan Darter
+					i(189363, {	-- Ambystan Darter (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 250 },
 							{ "i", AMBYSTAN_LATTICE, 1},
 							{ "i", 189160, 1 },	-- 1x Glimmer of Focus
 						},
 					}),
-					i(189369, {	-- Archetype of Animation
+					i(189369, {	-- Archetype of Animation (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", GEOMENTAL_LATTICE, 1},
 							{ "i", 189157, 1 },	-- 1x Glimmer of Animation
 						},
 					}),
-					i(189380, {	-- Archetype of Cunning
+					i(189380, {	-- Archetype of Cunning (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", VIPERID_LATTICE, 1},
 							{ "i", 189158, 1 },	-- 1x Glimmer of Cunning
 						},
 					}),
-					i(187795, {	-- Archetype of Discovery
+					i(187795, {	-- Archetype of Discovery (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", VOMBATA_LATTICE, 1},
 							{ "i", 189159, 1 },	-- 1x Glimmer of Discovery
 						},
 					}),
-					i(187713, {	-- Archetype of Focus
+					i(187713, {	-- Archetype of Focus (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", UNFORMED_LATTICE, 1},
 							{ "i", 189160, 1 },	-- 1x Glimmer of Focus
 						},
 					}),
-					i(189383, {	-- Archetype of Malice
+					i(189383, {	-- Archetype of Malice (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", VESPOID_LATTICE, 1},
 							{ "i", 189161, 1 },	-- 1x Glimmer of Malice
 						},
 					}),
-					i(187928, {	-- Archetype of Metamorphosis
+					i(187928, {	-- Archetype of Metamorphosis (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", AMBYSTAN_LATTICE, 1},
 							{ "i", 189162, 1 },	-- 1x Glimmer of Metamorphosis
 						},
 					}),
-					i(187803, {	-- Archetype of Motion
+					i(187803, {	-- Archetype of Motion (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", PROTO_AVIAN_LATTICE, 1},
 							{ "i", 189163, 1 },	-- 1x Glimmer of Motion
 						},
 					}),
-					i(189375, {	-- Archetype of Multiplicity
+					i(189375, {	-- Archetype of Multiplicity (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", LEPROID_LATTICE, 1},
 							{ "i", 189164, 1 },	-- 1x Glimmer of Multiplicity
 						},
 					}),
-					i(189381, {	-- Archetype of Predation
+					i(189381, {	-- Archetype of Predation (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", TARRACHNID_LATTICE, 1},
 							{ "i", 189165, 1 },	-- 1x Glimmer of Predation
 						},
 					}),
-					i(189371, {	-- Archetype of Renewal
+					i(189371, {	-- Archetype of Renewal (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", AURELID_LATTICE, 1},
 							{ "i", 189166, 1 },	-- 1x Glimmer of Renewal
 						},
 					}),
-					i(189367, {	-- Archetype of Satisfaction
+					i(189367, {	-- Archetype of Satisfaction (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", POULTRID_LATTICE, 1},
 							{ "i", 189167, 1 },	-- 1x Glimmer of Satisfaction
 						},
 					}),
-					i(189382, {	-- Archetype of Serenity
+					i(189382, {	-- Archetype of Serenity (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", BUFONID_LATTICE, 1},
 							{ "i", 189168, 1 },	-- 1x Glimmer of Serenity
 						},
 					}),
-					i(189364, {	-- Archetype of Survival
+					i(189364, {	-- Archetype of Survival (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", SCARABID_LATTICE, 1},
 							{ "i", 189169, 1 },	-- 1x Glimmer of Survival
 						},
 					}),
-					i(189377, {	-- Archetype of Vigilance
+					i(189377, {	-- Archetype of Vigilance (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", HELICID_LATTICE, 1},
 							{ "i", 189170, 1 },	-- 1x Glimmer of Vigilance
 						},
 					}),
-					i(189365, {	-- Fierce Scarabid
+					i(189365, {	-- Fierce Scarabid (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 400 },
 							{ "i", SCARABID_LATTICE, 1},
 							{ "i", 189163, 1 },	-- 1x Glimmer of Motion
 						},
 					}),
-					i(189374, {	-- Leaping Leporid
+					i(189374, {	-- Leaping Leporid (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 250 },
 							{ "i", LEPROID_LATTICE, 1},
 							{ "i", 189166, 1 },	-- 1x Glimmer of Renewal
 						},
 					}),
-					i(189376, {	-- Microlicid
+					i(189376, {	-- Microlicid (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 150 },
 							{ "i", HELICID_LATTICE, 1},
 							{ "i", 189167, 1 },	-- 1x Glimmer of Satisfaction
 						},
 					}),
-					i(189368, {	-- Multichicken
+					i(189368, {	-- Multichicken (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 350 },
 							{ "i", POULTRID_LATTICE, 1},
 							{ "i", 189164, 1 },	-- 1x Glimmer of Multiplicity
 						},
 					}),
-					i(187734, {	-- Omnipotential Core
+					i(187734, {	-- Omnipotential Core (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 350 },
 							{ "i", UNFORMED_LATTICE, 1},
 							{ "i", 189157, 1 },	-- 1x Glimmer of Animation
 						},
 					}),
-					i(189373, {	-- Prototickles
+					i(189373, {	-- Prototickles (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 450 },
 							{ "i", AURELID_LATTICE, 1},
 							{ "i", 189159, 1 },	-- 1x Glimmer of Discovery
 						},
 					}),
-					i(187733, {	-- Resonant Echo
+					i(187733, {	-- Resonant Echo (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 250 },
 							{ "i", UNFORMED_LATTICE, 1},
 							{ "i", 189169, 1 },	-- 1x Glimmer of Survival
 						},
 					}),
-					i(189378, {	-- Shelly
+					i(189378, {	-- Shelly (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 400 },
 							{ "i", HELICID_LATTICE, 1},
 							{ "i", 189168, 1 },	-- 1x Glimmer of Serenity
 						},
 					}),
-					i(189370, {	-- Stabilized Geomental
+					i(189370, {	-- Stabilized Geomental (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 400 },
 							{ "i", GEOMENTAL_LATTICE, 1},
 							{ "i", 189162, 1 },	-- 1x Glimmer of Metamorphosis
 						},
 					}),
-					i(189372, {	-- Terror Jelly
+					i(189372, {	-- Terror Jelly (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 400 },
 							{ "i", AURELID_LATTICE, 1},
 							{ "i", 189165, 1 },	-- 1x Glimmer of Predation
 						},
 					}),
-					i(187798, {	-- Tunneling Vombata
+					i(187798, {	-- Tunneling Vombata (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 350 },
 							{ "i", VOMBATA_LATTICE, 1},
 							{ "i", 189158, 1 },	-- 1x Glimmer of Cunning
 						},
 					}),
-					i(189366, {	-- Violent Poultrid
+					i(189366, {	-- Violent Poultrid (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 200 },
 							{ "i", POULTRID_LATTICE, 1},
 							{ "i", 189161, 1 },	-- 1x Glimmer of Malice
 						},
 					}),
-					i(189379, {	-- Viperid Menace
+					i(189379, {	-- Viperid Menace (PET!)
 						["cost"] = {
 							{ "i", GENESIS, 150 },
 							{ "i", VIPERID_LATTICE, 1},

@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["coord"] = { 67.5, 82.2, REVENDRETH },
 				["questID"] = 59580,
 				["g"] = {
-					i(180585),	-- Bottled Up Rage (PET!)
+					i(180585),	-- Wrathling (PET!)
 					i(183736),	-- Pride Resistant Handwraps
 				},
 			}),

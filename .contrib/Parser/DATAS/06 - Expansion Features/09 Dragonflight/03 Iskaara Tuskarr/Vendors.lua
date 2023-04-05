@@ -5,7 +5,6 @@ local ALIERON_SEAMOTH = 194967;
 local AQUATIC_MAW = 201400;
 local AWAKENED_FROST = 190329;
 local CERULEAN_SPINEFISH = 194968;
-local CONTOURED_FOWLFEATHER = 193053;
 local LARGE_STURDY_FEMUR = 201402;
 local MASTODON_TUSK = 201403;
 local PRIMAL_BEAR_SPINE = 201399;
@@ -627,14 +626,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 							{ "i", LARGE_STURDY_FEMUR, 1 },
-							{ "i", 194967, 5 },
+							{ "i", 194967, 20 },
 						},
 					}),
 					i(198341, {	-- Tan Paw Pack
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 500 },
 							{ "i", LARGE_STURDY_FEMUR, 1 },
-							{ "i", 194730, 5 },
+							{ "i", 194730, 20 },
 						},
 					}),
 				},

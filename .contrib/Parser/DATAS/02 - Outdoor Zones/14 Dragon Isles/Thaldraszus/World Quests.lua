@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 		n(WORLD_QUESTS, {
 			["sourceQuests"] = {
 				71232,	-- Renown of the Dragon Isles
-				72366,	-- Account Dragonflight Campaign Completed
+				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 

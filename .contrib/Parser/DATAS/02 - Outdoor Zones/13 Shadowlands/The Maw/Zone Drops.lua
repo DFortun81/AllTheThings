@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			i(182771, {	-- Flickering Eviscerator
 				["crs"] = { 170694 },	-- Spectral Assassin
 			}),
-			i(186564, {	-- Golden Eye
+			i(186564, {	-- Golden Eye (PET!)
 				["crs"] = { 177132 },	-- Helsworn Soulseeker
 				["timeline"] = { ADDED_9_1_0 },
 			}),

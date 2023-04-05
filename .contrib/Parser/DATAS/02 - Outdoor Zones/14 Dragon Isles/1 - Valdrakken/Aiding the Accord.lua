@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["sourceQuestNumRequired"] = 1,
 				["sourceQuests"] = {
 					71232,	-- Renown of the Dragon Isles
-					72366,	-- Account Dragonflight Campaign Completed
+					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
 				["provider"] = { "n", 196499 },	-- Therazal
 				["coord"] = { 50.7, 58.0, VALDRAKKEN },
@@ -74,5 +74,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
 		q(71243),	-- Weekly Quest?
 		q(72892),	-- After "Aiding the Accord" series
+		q(75260),	-- After "Aiding the Accord" series
 	}),
 }));

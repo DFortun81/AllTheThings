@@ -217,6 +217,15 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 						}),
 					},
 				}),
+				n(VENDOR, {
+					n(23559, {	-- Budd
+						["groups"] = {
+							i(33105, {   -- Budd's Guise of Zul'aman	-- Technically not a vendor item. Clicking his dialog option did grant you the item
+								["timeline"] = { "added 2.3.0", "removed 3.0.1" }	-- Unsure when removed
+							}),
+						},
+					}),
+				}),
 				e(186, {	-- Akil'zon
 					["creatureID"] = 23574,
 					["groups"] = {

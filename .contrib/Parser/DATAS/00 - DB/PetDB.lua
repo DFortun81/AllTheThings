@@ -30,13 +30,16 @@ end
 -----------------
 -- NPC --
 n(61325, 635);	-- Adder
+n(60649, 374);	-- Black Lamb
 n(62116, 468);	-- Creepy Crawly
 n(62115, 467);	-- Dung Beetle
 n(61751, 448);	-- Hare
+n(61080, 378);	-- Rabbit
+n(7554, 69);	-- Snowy Owl
 n(62114, 466);	-- Spiny Lizard
+n(61081, 379);	-- Squirrel
 n(61369, 420);	-- Toad
 n(61367, 418);	-- Water Snake
-
 
 --------------
 -- UNSORTED --
@@ -923,25 +926,24 @@ i(180587, 2893);	-- Animated Tome
 i(184221, 3054);	-- Archivist's Quill
 i(183193, 3030);	-- Ashen Chomper
 i(181268, 2958);	-- Backbone
-i(183854, 3011);	-- Battie's Pendant // Battie
+i(183854, 3011);	-- Battie
 i(181315, 2965);	-- Bloodfeaster Spiderling
 i(182606, 3013);	-- Bloodlouse Larva
 i(180584, 2891);	-- Blushing Spiderling
 i(181172, 2948);	-- Boneweave Hatchling
-i(180585, 2897);	-- Bottled Up Emotions // Emotional Leecher
 i(180815, 2931);	-- Brightscale Hatchling
 i(181262, 2952);	-- Bubbling Pustule
-i(180588, 2896);	-- Bucket of Primordial Sludge // Primordial Bogling
 i(183114, 3025);	-- Carpal
 i(180643, 2908);	-- Chirpy Valeshrieker
 i(180642, 2909);	-- Cloudfeather Fledgling
 i(181265, 2955);	-- Corpselouse Larva
 i(181168, 2945);	-- Corpulent Bonetusk
 i(184400, 3065);	-- Courage
-i(180593, 2899);	-- Court Messenger Scroll // Court Messenger
-i(183859, 2900);	-- Dal's Courier Badge // Dal
+i(180593, 2899);	-- Court Messenger
+i(183859, 2900);	-- Dal
 i(183412, 3041);	-- Death Seeker
 i(183409, 3039);	-- Decaying Mawrat
+
 i(180629, 2922);	-- Devouring Animite
 i(180869, 2940);	-- Devoured Wader
 i(180645, 2905);	-- Dodger
@@ -988,6 +990,7 @@ i(183107, 3024);	-- Pile of Ashen Dust // Char
 i(173891, 2798);	-- Plagueborn Slime
 i(181264, 2954);	-- Plaguelouse Larva
 i(183395, 3036);	-- Pommel Jewel of Remornia // Will of Remornia
+i(180588, 2896);	-- Primordial Bogling
 i(180859, 2935);	-- Purity
 i(182613, 3008);	-- Refilling Inkwell // Lost Quill
 i(175114, 2878);	-- Renny
@@ -1025,11 +1028,13 @@ i(180591, 2898);	-- Vial of Roiling Emotions // Raw Emotion
 i(180603, 2904);	-- Violet Dredwing Pup
 i(180636, 2915);	-- Willowbreeze
 i(184512, 3079);	-- Winterleaf Spriggan
+i(180585, 2897);	-- Wrathling
 i(181267, 2957);	-- Writhing Spine
 
 -----------------
 -- PATCH 9.1.0 --
 -----------------
+-- ITEM --
 i(186449, 3117);	-- Amaranthine Stinger
 i(186548, 3127);	-- Chompy
 i(186546, 3103);	-- Copperback Etherwyrm
@@ -1060,17 +1065,37 @@ i(184867, 3092);	-- Squibbles
 i(186556, 3100);	-- Timeless Mechanical Dragonling
 i(186535, 3106);	-- Topaz Baubleworm
 i(186536, 3105);	-- Turquoise Baubleworm
+-- NPC --
+n(179131, 3102);	-- Animite Broodling
+n(179248, 3134);	-- Anxious Nibbler
+n(179179, 3115);	-- Clinging Remains
+n(179164, 3108);	-- Curious Purrkin
+n(179167, 3111);	-- Damp Skrat
+n(179226, 3123);	-- Deathroach
+n(179256, 3139);	-- Devourling
+n(179229, 3126);	-- Eye of Affliction
+n(179219, 3120);	-- Grip of Terror
+n(179183, 3119);	-- Lost Limb
+n(179168, 3112);	-- Scavenging Skrat
+n(179182, 3118);	-- Scurrying Mawrat
+n(179165, 3109);	-- Silver Purrkin
+n(179227, 3124);	-- Vile Deathroach
+n(179329, 3141);	-- Wild Corpsefly
+n(179250, 3135);	-- Young Garnetgullet
 
 -----------------
 -- PATCH 9.1.5 --
 -----------------
+i(0, 3153);			-- Blinky
 i(186553, 3107);	-- Gurgl
-
+-- NYI --
+i(188837, 0);		-- Blinky Egg
+i(0, 3188);			-- Trub'ul
 
 -----------------
 -- PATCH 9.2.0 --
 -----------------
--- Protoform Synthesis
+-- ITEM --
 i(189363, 3223);	-- Ambystan Darter
 i(189369, 3179);	-- Archetype of Animation
 i(189380, 3207);	-- Archetype of Cunning
@@ -1086,11 +1111,15 @@ i(189367, 3220);	-- Archetype of Satisfaction
 i(189382, 3181);	-- Archetype of Serenity
 i(189364, 3204);	-- Archetype of Survival
 i(189377, 3233);	-- Archetype of Vigilance
+i(189585, 3237);	-- E'rnee
 i(189365, 3224);	-- Fierce Scarabid
+i(187735, 3172);	-- Geordy
 i(189374, 3232);	-- Leaping Leporid
+i(188679, 3221);	-- Lightless Tormentor
 i(189376, 3235);	-- Microlicid
 i(189368, 3226);	-- Multichicken
 i(187734, 3171);	-- Omnipotential Core
+i(191039, 3247);	-- Pocopoc Traveler
 i(189373, 3231);	-- Prototickles
 i(187733, 3170);	-- Resonant Echo
 i(189378, 3222);	-- Shelly
@@ -1099,26 +1128,40 @@ i(189372, 3230);	-- Terror Jelly
 i(187798, 3176);	-- Tunneling Vombata
 i(189366, 3225);	-- Violent Poultrid
 i(189379, 3234);	-- Viperid Menace
+-- NPC --
+n(183277, 3216);	-- Ambystan Snapper
+n(183281, 3217);	-- Aurelid Floater
+n(182876, 3212);	-- Bloodsucker Vespoid
+n(181362, 3173);	-- Bufonid Croaker
+n(182691, 3206);	-- Emerald Scarabid
+n(182768, 3210);	-- Green Viperid
+n(182760, 3209);	-- King Viperid
+n(183231, 3215);	-- Mawtouched Geomental
+n(182568, 3205);	-- Metallic Scarabid
+n(183158, 3214);	-- Momma Vombata
+n(183292, 3219);	-- Predatory Helicid
+n(182260, 3196);	-- Proto Avian Fledgling
+n(182758, 3208);	-- Red Viperid
+n(182294, 3200);	-- Scarlet Proto Avian
+n(182437, 3202);	-- Tarachnid Stalker
+n(182473, 3203);	-- Tarachnid Ambusher
+n(182234, 3191);	-- Timid Leporid
+n(182019, 3180);	-- Venomous Bufonid
+n(182216, 3190);	-- Vicious Leporid
+n(183142, 3213);	-- Vombata Pup
+-- Special --
+i(0, 3218);			-- Enraged Poultrid
+-- NYI --
+n(185475, 3246);	-- Tezpet
 
--- Quest
-i(189585, 3237);	-- E'rnee
--- Torghast
-i(188679, 3221);	-- Lightless Tormentor
--- Treasure
-i(187735, 3172);	-- Geordy
--- Vendor
-i(191039, 3247);	-- Pocopoc Traveler
--- NOT SOURCED PROPERLY --
--- No Item related to them.
---[[
-3215
-3218
-3246
---
-i(0, 3177, {	-- Drakks (PET!)
-i(0, 3175);	-- Murkastrasza (PET!)
-i(0, 3249, {			-- Lil' Ursoc
---]]
+-----------------
+-- PATCH 9.2.5 --
+-----------------
+i(0, 3249);			-- Lil' Ursoc
+i(0, 3177);			-- Drakks
+i(0, 3175);			-- Murkastrasza
+-- NYI --
+i(190586, 0);		-- Lil' Ursoc
 
 ------------------
 -- PATCH 10.0.0 --
@@ -1147,7 +1190,6 @@ i(201262, 3412);	-- Gale Spirit
 i(200173, 3287);	-- Ghostflame
 i(198725, 3381);	-- Gray Marmoni
 i(193618, 3317);	-- Hoofhelper
-i(190583, 3248); 	-- Ichabod
 i(192459, 3270);	-- Jean's Lucky Fish
 i(193885, 3345);	-- Jeweled Amber Whelpling
 i(193888, 3347);	-- Jeweled Emerald Whelpling
@@ -1188,99 +1230,82 @@ i(193619, 3319);	-- Yipper
 n(192265, 3357);	-- Azure Crystalspine
 n(189160, 3266);	-- Black Slyvern Pup
 n(197629, 3403);	-- Blue Dasher
-i(0, 3356);	-- Chalkshell Turtle
-i(0, 3358);	-- Crimsonspine
-i(0, 3327);	-- Dusky Timbertooth
-i(0, 3367);	-- Emberling
-i(0, 3313);	-- Grassland Stomper
-i(0, 3351);	-- Grizzlefur Cub
-i(0, 3295);	-- Igneoid
-i(0, 3300);	-- Ironbeak Duck
-i(0, 3366);	-- Kindlet
-i(0, 3273);	-- Magma Slug
-i(0, 3296);	-- Palamanther
-i(0, 3335);	-- Pale Baby Vorquin
-i(0, 3307);	-- Plucky Duckling
-i(0, 3404);	-- Polliswog
-i(0, 3272);	-- Pricklefury Hare
-i(0, 3352);	-- Razortooth Bear Cub
-i(0, 3281);	-- Scruffy Ottuk
-i(0, 3280);	-- Shyfly
-i(0, 3283);	-- Snowlemental
-i(0, 3260);	-- Snowy Treeflitter
-i(0, 3353);	-- Stoneshell
-i(0, 3384);	-- Storm-Touched Bluefeather
-i(0, 3354);	-- Storm-Touched Ottuk
-i(0, 3385);	-- Storm-Touched Stomper
-i(0, 3329);	-- Storm-Touched Timbertooth
-i(0, 3282);	-- Swoglet
-i(0, 3389);	-- The Quackcestor
-i(0, 3318);	-- Thunderfoot Calf
-i(0, 3328);	-- Tiny Timbertooth
-i(0, 3276);	-- Treeflitter
-i(0, 3288);	-- Trunkalumpf
-i(0, 3336);	-- Vorquin Runt
-i(0, 3320);	-- Whitewhisker
-i(0, 3301);	-- Wild Duckling
-i(0, 3322);	-- Woodbiter Piculet
+n(192268, 3358);	-- Crimsonspine
+n(189657, 3327);	-- Dusky Timbertooth
+n(193024, 3367);	-- Emberling
+n(189153, 3313);	-- Grassland Stomper
+n(194720, 3351);	-- Grizzlefur Cub
+n(189121, 3295);	-- Igneoid
+n(189131, 3300);	-- Ironbeak Duck
+n(193000, 3366);	-- Kindlet
+n(189094, 3273);	-- Magma Slug
+n(189122, 3296);	-- Palamanther
+n(191316, 3335);	-- Pale Baby Vorquin
+n(189144, 3307);	-- Plucky Duckling
+n(197637, 3404);	-- Polliswog
+n(189093, 3272);	-- Pricklefury Hare
+n(192251, 3352);	-- Razortooth Bear Cub
+n(189103, 3281);	-- Scruffy Ottuk
+n(189102, 3280);	-- Shyfly
+n(189107, 3283);	-- Snowlemental
+n(188792, 3260);	-- Snowy Treeflitter
+n(192254, 3353);	-- Stoneshell
+n(192259, 3384);	-- Storm-Touched Bluefeather
+n(192256, 3354);	-- Storm-Touched Ottuk
+n(192029, 3385);	-- Storm-Touched Stomper
+n(189660, 3329);	-- Storm-Touched Timbertooth
+n(189104, 3282);	-- Swoglet
+n(197063, 3389);	-- The Quackcestor
+n(189155, 3318);	-- Thunderfoot Calf
+n(189658, 3328);	-- Tiny Timbertooth
+n(189097, 3276);	-- Treeflitter
+n(189110, 3288);	-- Trunkalumpf
+n(191323, 3336);	-- Vorquin Runt
+n(189136, 3301);	-- Wild Duckling
+n(189157, 3322);	-- Woodbiter Piculet
+-- Special --
+i(0, 3356);			-- Chalkshell Turtle
+i(0, 3248);			-- Ichabod
+i(0, 3320);			-- Whitewhisker
 -- NYI --
+i(0, 3339);			-- Black Dragon Whelp
+i(0, 3340);			-- Blue Dragon Whelp
+i(0, 3343);			-- Bronze Dragon Whelp
+i(0, 3361);			-- Diamond Crab
+i(0, 3341);			-- Red Dragon Whelp
+i(0, 3362);			-- Sapphire Crab
+i(0, 3364);			-- Striped Snakebiter
+i(0, 3257);			-- Test Beetle
+i(0, 3308);			-- Time-Lost Duckling
+i(0, 3363);			-- Truesilver Crab
 i(193614, 3314);	-- Groundshaker
-i(193373, 3292);	-- Phoenix Wishwing
 i(193380, 3298);	-- Pink Salamanther
 i(193587, 3312);	-- Time-Lost Duck
-i(193377, 3294);	-- Time-Lost Phoenix Hatchling
 i(193429, 3297);	-- Time-Lost Salamanther
 i(193620, 3267);	-- Time-Lost Slyvern
 i(193068, 3277);	-- Time-Lost Treeflitter
-i(0, 3393);	-- Anubisath Idol
-i(0, 3401);	-- Arcantus
-i(0, 3339);	-- Black Dragon Whelp
-i(0, 3387);	-- Bloodbiter
-i(0, 3340);	-- Blue Dragon Whelp
-i(0, 3343);	-- Bronze Dragon Whelp
-i(0, 3398);	-- Cat
-i(0, 3400);	-- Chicken
-i(0, 3397);	-- Cockroach
-i(0, 3361);	-- Diamond Crab
-i(0, 3396);	-- Enyobon
-i(0, 3386);	-- Faceripper
-i(0, 3377);	-- Gwosh
-i(0, 3394);	-- Mechanical Pandaren Dragonling
-i(0, 3391);	-- Phantus
-i(0, 3341);	-- Red Dragon Whelp
-i(0, 3362);	-- Sapphire Crab
-i(0, 3392);	-- Skritches
-i(0, 3395);	-- Spectral Tiger Cub
-i(0, 3402);	-- Stormamu
-i(0, 3364);	-- Striped Snakebiter
-i(0, 3268);	-- Swog
-i(0, 3257);	-- Test Beetle
-i(0, 3308);	-- Time-Lost Duckling
-i(0, 3388);	-- Tina
-i(0, 3363);	-- Truesilver Crab
-i(191126, 0);	-- Obsidian Whelpling
-i(192050, 0);	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
-i(193863, 0);	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
-i(193063, 0);	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
-i(193862, 0);	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
-i(191929, 0);	-- zzOld - [PH] White Flying Squirrel (REUSE)
-
+i(190583, 0); 		-- Ichabod
+i(191126, 0);		-- Obsidian Whelpling
+i(192050, 0);		-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
+i(193863, 0);		-- zzOld - [PH] Dark Baby Vorquin (REUSE)
+i(193063, 0);		-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
+i(193862, 0);		-- zzOld - [PH] Pale Baby Vorquin (REUSE)
+i(191929, 0);		-- zzOld - [PH] White Flying Squirrel (REUSE)
 
 ------------------
 -- PATCH 10.0.5 --
 ------------------
+i(190603, 3250);	-- Egbob
 i(190607, 3252);	-- Garrlok
 i(193855, 3334);	-- Time-Lost Vorquin Foal
 -- NYI --
--- Trading Post
-i(0, 3255);	-- Buttercup
+i(0, 3255);			-- Buttercup
+i(0, 3253);			-- Crushhoof
+i(0, 3254);			-- Watcher of the Huntress
 i(190604, 3251);	-- Buzzworth
-i(0, 3253);	-- Crushhoof
 i(190176, 3244);	-- Drazka'zet the Wrathful
-i(190603, 3250);	-- Egbob
 i(190173, 3242);	-- Lil' Maka'jin
 i(190175, 3243);	-- Pippin
-i(0, 3254);	-- Watcher of the Huntress
 
 ------------------
 -- PATCH 10.0.7 --
@@ -1297,6 +1322,7 @@ i(204079, 3476);	-- Gilded Mechafrog
 i(193908, 3338);	-- Kobaldt
 i(193235, 3285);	-- Luvvy
 i(193851, 3332);	-- Patos
+i(193373, 3292);	-- Phoenix Wishwing
 i(193364, 3291);	-- Scruffles
 i(191915, 3259);	-- Shaggy
 i(202411, 3447);	-- Tremblor
@@ -1304,55 +1330,17 @@ i(204183, 3475);	-- Volatile Self-Driving Toolbox
 i(202413, 3446);	-- Vortex
 i(191930, 3261);	-- Wakyn
 i(202412, 3448);	-- Wildfire
--- Unsorted
-
-
-i(0, 3432);	-- Flow
-i(0, 3436);	-- Flow
-i(0, 3440);	-- Flow
-i(0, 3430);	-- Tremblor
-i(0, 3434);	-- Tremblor
-i(0, 3438);	-- Tremblor
-
-i(0, 3429);	-- Vortex
-i(0, 3433);	-- Vortex
-i(0, 3437);	-- Vortex
-
-i(0, 3431);	-- Wildfire
-i(0, 3435);	-- Wildfire
-i(0, 3439);	-- Wildfire
+-- NYI --
+i(0, 3424);	-- [DNT] Storm Pet Boss - Epic
+i(0, 3422);	-- [DNT] Storm Pet Boss - Legendary
+i(0, 3425);	-- [DNT] Storm Pet Boss - Rare
+i(0, 3423);	-- [DNT] Storm Pet Fodder
 i(0, 3471);	-- Gilded Mechafrog
 
--- Needs Sorting
-i(0, 3422);	-- [DNT] Storm Pet Boss - Legendary
-i(0, 3423);	-- [DNT] Storm Pet Fodder
-i(0, 3424);	-- [DNT] Storm Pet Boss - Epic
-i(0, 3425);	-- [DNT] Storm Pet Boss - Rare
-
-
-i(0, 3441);	-- Storm-Touched Ohuna
-i(0, 3442);	-- Storm-Touched Skitterer
-i(0, 3443);	-- Storm-Touched Slyvern
-i(0, 3444);	-- Storm-Touched Swoglet
-
-i(0, 3450);	-- Feral Frogduck
-i(0, 3451);	-- Lord Flappinsby
-i(0, 3452);	-- Enchanted Tuskling
-i(0, 3453);	-- Adinakon
-i(0, 3454);	-- Lyver
-i(0, 3455);	-- Yu'shor
-i(0, 3456);	-- Drakeula
-i(0, 3457);	-- Arctichnid
-i(0, 3458);	-- Kazzquack
-i(0, 3459);	-- Mothoroth
-i(0, 3460);	-- Blu'jaeden
-i(0, 3465);	-- Enok the Stinky
-i(0, 3466);	-- Malfunctioning Matrix
-
-i(0, 3472);	-- Lil' Algalon
-i(0, 3473);	-- Cozmos
-i(0, 3474);	-- Celastro
-
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(193377, 3294);	-- Gerald
 
 
 -- #if ANYCLASSIC

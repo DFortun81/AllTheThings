@@ -112,7 +112,10 @@ mount(408977),	-- Obsidian Gladiator's Slitherdrake
 mount(409032),	-- Vicious War Snail
 mount(409034),	-- Vicious War Snail
 10.1.0.48776
-mount(408649),	-- Scoria-Clad Sporebat
+mount(408649),	-- Shadowflame Shalewing \\ Scoria-Clad Sporebat
+10.1.0.48898
+mount(408627),	-- Igneous Shalewing
+mount(411565),	-- Felcrystal Scorpion
 
 
 
@@ -235,4 +238,7 @@ mount(408977),	-- Obsidian Gladiator's Slitherdrake
 mount(409032),	-- Vicious War Snail
 mount(409034),	-- Vicious War Snail
 10.1.0.48776
-mount(408649),	-- Scoria-Clad Sporebat
+mount(408649),	-- Shadowflame Shalewing \\ Scoria-Clad Sporebat
+10.1.0.48898
+mount(408627),	-- Igneous Shalewing
+mount(411565),	-- Felcrystal Scorpion

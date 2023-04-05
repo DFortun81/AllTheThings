@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 170189 },	-- Penkle
 				["g"] = {
 					i(180270, {	-- Cage Key
-						i(183859),	-- Dal's Courier Badge (PET!)
+						i(183859),	-- Dal (PET!)
 					}),
 				},
 			}),
@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["isDaily"] = true,
 					["coord"] = { 35.8, 32.6, REVENDRETH },
 					["g"] = {
-						i(180588),	-- Bucket of Primordial Sludge (PET!)
+						i(180588),	-- Primordial Bogling (PET!)
 						i(180707),	-- Sticky Muck
 					},
 				}),
@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 49.8, 35.0, REVENDRETH },
 					["crs"] = { 169917 },	-- Avowed Ritualist
 					["g"] = {
-						i(180585),	-- Bottled Up Rage (PET!)
+						i(180585),	-- Wrathling (PET!)
 					},
 				}),
 			}),

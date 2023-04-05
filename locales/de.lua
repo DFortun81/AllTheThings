@@ -84,7 +84,7 @@ local L = app.L;
 	L.MIN_MAX_STANDING = "Erfordert einen Ruf zwischen";
 	L.AND_ = "und ";
 	L._AND = " und";
-	L._MORE = "  mehr";
+	L._MORE = " mehr";
 	L._OTHER_SOURCES = " andere Quellen";
 	L.DURING_WQ_ONLY = "Dies kann nur abgeschlossen werden, solange die Weltquest aktiv ist.";
 	L.COMPLETED_DAILY = "Dies kann täglich abgeschlossen werden.";
@@ -542,7 +542,7 @@ local L = app.L;
 	-- About tab
 		L.ABOUT = "Über";
 		--TODO: L.ABOUT_1 = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
-		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
+		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r";
 		--TODO: L.ABOUT_3 = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
 
 	-- Binding Localizations
@@ -854,7 +854,12 @@ for key,value in pairs({
 		[-1140] = "Valdrakkenabkommen",								-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
+		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
+		--TODO: [-1151] = "Bartering",								-- Bartering
+		--TODO: [-1152] = "First Crafts",							-- First Crafts
 		[-1200] = "Gewölbe von Zskera",								-- Zskera Vaults
+		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
+		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
 	-- Warrior order hall lore items
 		[-2200] = "Der große Odyn und der Feuerlord",				-- Great Odyn and the Firelord
 		[-2201] = "Der Wanderer und die Schlange",					-- The Wanderer and the Serpent
@@ -3738,6 +3743,7 @@ for key,value in pairs({
 	[386428] = "Urzeitliche Erdtruhe",	-- Primordial Earth Cache
 	[386429] = "Urzeitliche Erdtruhe",	-- Primordial Earth Cache
 	[386430] = "Gehärtete Truhe",	-- Hardened Chest
+	[386431] = "Urzeitliche Erdtruhe",	-- Primordial Earth Cache
 	[386432] = "Gehärtete Truhe",	-- Hardened Chest
 	[386433] = "Urzeitliche Windtruhe",	-- Primordial Wind Cache
 	[386441] = "Urzeitliche Windtruhe",	-- Primordial Wind Cache
@@ -3789,6 +3795,8 @@ for key,value in pairs({
 	[386690] = "Unklares Kompendium",	-- Ambiguous Compendium
 	[386762] = "Urzeitliche Rüstungstruhe",	-- Primordial Armor Cache
 	[387493] = "Einzigartiger Fisch",	-- Unique Fish
+	[387496] = "Kohlenpfanne des Wahnsinns",	-- Brazier of Madness
+	[387500] = "Frostiger Schneemann",	-- Chilly Snowman
 	[387501] = "Neltharions Geschenkmarke",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
 	[387728] = "Oper der Aspekte",	-- Opera of the Aspects
@@ -3799,7 +3807,8 @@ for key,value in pairs({
 	[388712] = "Operntruhe",	-- Opera Chest
 	[388866] = "Reagenzientopf",	-- Reagent Pot
 	[388876] = "Reagenzientopf",	-- Reagent Pot
-	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388895] = "Wahlloses Gekritzel",	-- Random Scribblings
+	[388905] = "Neltharions Werkzeugsatz",	-- Neltharion Toolkit
 	[388908] = "Träger Glibber",	-- Inert Goo
 	[389102] = "Prismatisches Fragment",	-- Prismatic Fragment
 	[389104] = "Prismatisches Fragment",	-- Prismatic Fragment
@@ -3822,6 +3831,10 @@ for key,value in pairs({
 	[390257] = "Plüschbär",	-- Stuffed Bear
 	[390258] = "Träger Glibber",	-- Inert Goo
 	[390559] = "Kasten mit Steinen",	-- Box of Rocks
+	[390560] = "Verschlossene Forschungstruhe",	-- Locked Research Chest
+	[392025] = "Geformte Münzen",	-- Molded Coins
+	[392026] = "Neltharions Münzform",	-- Neltharion Coin Mold
+	[392335] = "Urzeitliche Rüstungstruhe",	-- Primordial Armor Cache
 	[392569] = "Kettengebundene urzeitliche Truhe",	-- Chain-Bound Primordial Cache
 	[392570] = "Kettengebundene urzeitliche Truhe",	-- Chain-Bound Primordial Cache
 	[392571] = "Kettengebundene Schließkassette",	-- Chain-Bound Strongbox
@@ -3833,6 +3846,8 @@ for key,value in pairs({
 	[393222] = "Vorratskoffer",	-- Supply Trunk
 	[393282] = "Ballonkiste",	-- Balloon Box
 	[393283] = "Ballonkiste",	-- Balloon Box
+	[398200] = "Vergessene Schließkassette",	-- Forgotten Lockbox
+	[398770] = "Kasten mit Steinen",	-- Box of Rocks
 	[398778] = "Widerwärtiger Bottich",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone

@@ -241,23 +241,6 @@ _.Zones =
 						}),
 					}
 				}),
-				ach(10877, {	-- Pillars of Creation
-					crit(1, {	-- Aegis of Aggramar
-						["sourceQuest"] = 43349,	-- The Aegis of Aggramar
-					}),
-					crit(2, {	-- Tidestone of Golganneth
-						["sourceQuest"] = 42213,	-- Eye of Azshara: The Tidestone of Golganneth
-					}),
-					crit(3, {	-- Eye of Aman'Thul
-						["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
-					}),
-					crit(4, {	-- Hammer of Khaz'goroth
-						["sourceQuest"] = 42454,	-- The Hammer of Khaz'goroth
-					}),
-					crit(5, {	-- Tears of Elune
-						["sourceQuest"] = 40890,	-- The Tears of Elune
-					}),
-				}),
 			}),
 		}),
 	}),

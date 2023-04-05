@@ -2233,7 +2233,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									i(183843, {	-- Juvenile Dredbat Harness
 										["cost"] = { { "c", 1820, 70 } },	-- 70 Infused Ruby
 									}),
-									i(183854, {	-- Battie's Pendant
+									i(183854, {	-- Battie (PET!)
 										["cost"] = { { "i", 163036, 250 } },
 									}),
 									i(185741, {	-- Restock and Repair, Tips and Tricks for Keeping the Party Going

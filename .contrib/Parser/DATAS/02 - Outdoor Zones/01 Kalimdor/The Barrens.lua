@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			prof(FISHING,
+			prof(FISHING, {
 				i(6651, {	-- Broken Wine Bottle
 					["description"] = "Drops from fishing in the Sludge Fen.",
 				}),

@@ -2969,6 +2969,11 @@ _.Zones =
 						i(140274, {	-- River Calf (PET!)
 							["cost"] = { { "i", 116415, 50 }, },	-- 50x Pet Charm
 						}),
+						i(144346, {	-- Boon of the Zookeeper
+							i(144345, {	-- Pile of Pet Goodies
+								i(116415),	-- Shiny Pet Charm
+							}),
+						}),
 					},
 				}),
 				n(98724,  {	-- Giada Goldleash <Exotic Pets and Accessories>

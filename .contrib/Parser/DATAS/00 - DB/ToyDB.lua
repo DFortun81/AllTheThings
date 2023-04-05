@@ -1137,37 +1137,51 @@ i(199111);	-- Maestro Duck's Orchestrion
 i(199926);	-- Portable J.A.M.
 i(197961);	-- Whelps on Strings
 
-
 ------------------
 -- PATCH 10.0.5 --
 ------------------
 i(202020);	-- Chasing Storm
+i(202309);	-- Defective Doomsday Device
 i(202207);	-- Reusable Oversized Bobber
 i(203716);	-- Thundering Banner of the Aspects
--- NYI --
-i(202309);	-- Defective Doomsday Device
 
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+i(204675);	-- A Drake's Big Basket of Eggs
+i(203757);	-- Brazier of Madness
+i(202360);	-- Dented Can
 i(203725);	-- Display of Strength
 i(202253);	-- Primal Stave of Claw and Fur
 i(201930);	-- H.E.L.P.
 i(204257);	-- Holoviewer: The Lady of Dreams
 i(204256);	-- Holoviewer: The Scarlet Queen
 i(204262);	-- Holoviewer: The Timeless One
+i(204687);	-- Obsidian Battle Horn
 i(202283);	-- Reading Glasses
 i(199900);	-- Secondhand Survey Tools
--- Unsorted --
-i(204675);	-- A Drake's Big Basket of Eggs
-i(203757);	-- Brazier of Madness (ZG?)
-i(204170);	-- Clan Banner
-i(202360);	-- Dented Can
-i(204220);	-- Hraxian's Unbreakable Will
-i(204687);	-- Obsidian Battle Horn
 i(203734);	-- Snow Blanket
 i(203852);	-- Spore-Bound Essence
+-- Unsorted --
+i(204170);	-- Clan Banner
+i(204220);	-- Hraxian's Unbreakable Will
 
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(205419);	-- Jrumm's Drum
+i(205463);	-- Skornace's Molten Pocket
+i(204389);	-- Stone Breaker
+-- Unsorted --
+i(205045);	-- B.B.F. Fist
+i(205418);	-- Blazing Shadowflame Cinder
+i(205034);	-- Enormous Ball of Yarn
+i(205027);	-- Explorer's Banner
+i(205688);	-- Glutinous Glitterscale Glob
+i(205796);	-- Molten Lava Pack
+i(205255);	-- Niffen Diggin' Mitts
+i(204818);	-- Quackomancy Cannon
+i(205904);	-- Vibrant Clacking Claw
 
 -- #if ANYCLASSIC
 -----------------

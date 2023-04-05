@@ -13,5 +13,9 @@ title(499),	-- Obsidian Gladiator %s
 title(500),	-- Obsidian Legend %s
 title(501),	-- Smelly %s
 title(502),	-- %s, Barter Boss
-title(503),	-- %s the <PH Season 2 Title>
-title(504),	-- %s the <PH Season 2 Hero Title>
+title(503),	-- %s the Smoldering \\ %s the <PH Season 2 Title>
+title(504),	-- %s the Smoldering Hero \\ %s the <PH Season 2 Hero Title>
+10.1.0.48898
+title(505),	-- %s, Heir to the Void
+title(506),	-- %s, Famed Slayer of Sarkareth
+title(507),	-- %s, Sniffenseeker

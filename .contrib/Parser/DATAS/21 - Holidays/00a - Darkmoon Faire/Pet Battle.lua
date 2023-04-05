@@ -17,13 +17,17 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["provider"] = { "n", 85519 },	-- Christoph VonFeasel
 			["coord"] = { 47.4, 62.2, 407 },
 			["isDaily"] = true,
-			["pb"] = true,
 			["g"] = {
 				i(116062, {	-- Greater Darkmoon Pet Supplies
-					currency(515),	-- Darkmoon Prize Ticket
-					i(116064),	-- Syd the Squid
-					i(89139),	-- Chain Pet Leash (TOY!)
-					i(44820),	-- Red Ribbon Pet Leash (TOY!)
+					["sym"] = {{"select","itemID",
+						89139,	-- Chain Pet Leash
+						44820,	-- Red Ribbon Pet Leash
+						37460,	-- Rope Pet Leash
+					}},
+					["g"] = {
+						currency(515),	-- Darkmoon Prize Ticket
+						i(116064),	-- Syd the Squid
+					},
 				}),
 			},
 		})),
@@ -31,13 +35,17 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			["provider"] = { "n", 67370 },	-- Jeremy Feasel
 			["coord"] = { 47.8, 62.6, 407 },
 			["isDaily"] = true,
-			["pb"] = true,
 			["g"] = {
 				i(91086, {	-- Darkmoon Pet Supplies
-					currency(515),	-- Darkmoon Prize Ticket
-					i(91040),	-- Darkmoon Eye
-					i(89139),	-- Chain Pet Leash (TOY!)
-					i(44820),	-- Red Ribbon Pet Leash (TOY!)
+					["sym"] = {{"select","itemID",
+						89139,	-- Chain Pet Leash
+						44820,	-- Red Ribbon Pet Leash
+						37460,	-- Rope Pet Leash
+					}},
+					["g"] = {
+						currency(515),	-- Darkmoon Prize Ticket
+						i(91040),	-- Darkmoon Eye
+					},
 				}),
 			},
 		})),

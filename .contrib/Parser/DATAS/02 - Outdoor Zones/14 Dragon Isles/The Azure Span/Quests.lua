@@ -1613,7 +1613,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(65841, {	-- Stop the Spread
 					["sourceQuests"] = {
 						66026,	-- Urgent Action Required
-						72366,	-- Account Dragonflight Campaign Completed
+						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 19.1, 36.2, THE_AZURE_SPAN },
@@ -1632,7 +1632,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(69861, {	-- Trilvarus Loreweaver
 					["provider"] = { "n", 193196 },	-- Trilvarus Loreweaver
 					["coord"] = { 70.4, 25.0, THE_AZURE_SPAN },
-					["isDaily"] = IGNORED_VALUE,	-- remove if inaccurate
 				}),
 				q(69872, {	-- Vakril, the Strongest Tuskarr
 					["provider"] = { "n", 193223 },	-- Vakril

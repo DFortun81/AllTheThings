@@ -21,7 +21,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	-- Toys
-	i(204675, {	-- A Drake's Big Basket of Eggs
+	i(204675, {	-- A Drake's Big Basket of Eggs (TOY!)
 		["timeline"] = { ADDED_10_0_7 },
 	--	["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
 	}),

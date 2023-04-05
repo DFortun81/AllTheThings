@@ -98,7 +98,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			i(204328),	-- Return of the Nightsquall
 			i(204321),	-- Lost Expedition Notes
 			i(204317),	-- Words of the Wyrmslayer
-			i(204185),	-- The Old Gods and the Ordering of Azeroth (Annotated)
 
 			-- TODO: Sealed Scroll Maps lead to these
 
@@ -111,7 +110,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(TREASURES, {
-			q(74567),	-- Chest of Storms tracking quest
 			header(HEADERS.Item, 202667, {	-- Sealed Artifact Scroll
 				q(73200),
 				q(73201),
@@ -122,15 +120,15 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 			}),
 			header(HEADERS.Item, 202669, {	-- Sealed Fish Scroll
 				q(73210),
-				-- q(73211),	-- guessed
-				-- q(73212),	-- guessed
+				q(73211),
+				q(73212),
 				q(73213),
 				q(73214),
-				q(73215),
 			}),
 			header(HEADERS.Item, 202670, {	-- Sealed Knowledge Scroll
+				q(73215),
 				q(73216),
-				q(73217),	
+				q(73217),
 				q(73218),
 				q(73219),
 				-- q(73220),	-- guessed

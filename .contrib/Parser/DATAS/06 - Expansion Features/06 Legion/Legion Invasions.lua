@@ -21,13 +21,15 @@ _.ExpansionFeatures =
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(11544, {	-- Defender of the Broken Isles
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Battle for Azsuna
-							crit(2),	-- Battle for Highmountain
-							crit(3),	-- Battle for Stormheim
-							crit(4),	-- Battle for Val'sharah
-						},
+						crit(1),	-- Battle for Azsuna
+						crit(2),	-- Battle for Highmountain
+						crit(3),	-- Battle for Stormheim
+						crit(4),	-- Battle for Val'sharah
+					}),
+					ach(11240, {	-- Harbinger
+						crit(1),		-- Waterlogged Tome (Deadwind Pass - near Karazhan - Master's Cellar)
+						crit(2),		-- Fel-Ravaged Tome (Vault of the Wardens)
+						crit(3),		-- Cursed Tome (Shadowmoon Valley - D)
 					}),
 				}),
 				n(REWARDS, {
@@ -79,15 +81,31 @@ _.ExpansionFeatures =
 					}),
 					q(45838, {	-- Assault on Azsuna
 						["repeatable"] = true,
+						["g"] = {
+							-- Blizzard links this HQT as the criteria for 'Defender of the Broken Isles' (11544)
+							hqt(47193, {["name"] = "First Completion"}),
+						}
 					}),
 					q(45840, {	-- Assault on Highmountain
 						["repeatable"] = true,
+						["g"] = {
+							-- Blizzard links this HQT as the criteria for 'Defender of the Broken Isles' (11544)
+							hqt(47194, {["name"] = "First Completion"}),
+						}
 					}),
 					q(45839, {	-- Assault on Stormheim
 						["repeatable"] = true,
+						["g"] = {
+							-- Blizzard links this HQT as the criteria for 'Defender of the Broken Isles' (11544)
+							hqt(47195, {["name"] = "First Completion"}),
+						}
 					}),
 					q(45812, {	-- Assault on Val'sharah
 						["repeatable"] = true,
+						["g"] = {
+							-- Blizzard links this HQT as the criteria for 'Defender of the Broken Isles' (11544)
+							hqt(47196, {["name"] = "First Completion"}),
+						}
 					}),
 					q(46199, {	-- Battle for Azsuna
 						["sourceQuests"] = { 46205 },	-- A Conduit No More
@@ -210,10 +228,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46961),	-- Assault Treasure - Val'sharah
 		q(46962),	-- Assault Treasure - Val'sharah
 		q(46963),	-- Assault Treasure - Val'sharah
-		q(47193),	-- Battle for Azsuna - first completion
-		q(47194),	-- Battle for Highmountain - first completion
-		q(47195),	-- Battle for Stormheim - first completion
-		q(47196),	-- Battle for Val'sharah - first completion
 		q(46830),	-- Battlefield - Val'sharah
 		q(47185),	-- Invasion Boss Weekly Bonus
 		q(46795),	-- Ship - Azsuna - triggered after completing the criteria for "A Conduit No More" (questID 46205) and riding to Farondale

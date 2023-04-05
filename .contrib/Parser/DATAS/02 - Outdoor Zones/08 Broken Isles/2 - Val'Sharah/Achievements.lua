@@ -154,9 +154,6 @@ _.Zones =
 						}),
 					},
 				})),
-				ach(10877, {	-- Pillars of Creation
-					["sourceQuests"] = { 40890 },	-- The Tears of Elune
-				}),
 				ach(10698, {	-- That's Val'sharah Folks!
 					crit(1, {	-- Archdruid of the Vale
 						["sourceQuests"] = { 40573 },	-- The Nightmare Lord

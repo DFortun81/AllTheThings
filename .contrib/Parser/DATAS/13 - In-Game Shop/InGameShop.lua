@@ -216,7 +216,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 			["timeline"] = { "added 3.2.2.10505", "removed 10.0.2.47213" },
 		}),
-		p(3249, {	-- Lil' Ursoc (PET!)
+		pet(3249, {	-- Lil' Ursoc (PET!)
 			["timeline"] = { ADDED_9_2_5 },
 		}),
 		i(54847, {	-- Lil' XT

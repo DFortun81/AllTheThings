@@ -615,6 +615,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["timeline"] = { "added 1.5.0", "removed 1.8.0" },
 					["races"] = ALLIANCE_ONLY,
+					["_drop"] = { "g" },
 				}),
 				q(7382, {	-- Korrak the Everliving
 					["qg"] = 13841,	-- Lieutenant Haggerdin
@@ -916,6 +917,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 13840,	-- Warmaster Laggrond
 					["timeline"] = { "added 1.5.0", "removed 1.8.0" },
 					["races"] = HORDE_ONLY,
+					["_drop"] = { "g" },
 				}),
 				q(7121, {	-- The Quartermaster
 					["qg"] = 13797,	-- Mountaineer Boombellow

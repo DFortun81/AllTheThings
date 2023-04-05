@@ -154,6 +154,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			filter(FINGER_F, {
 				i(203647, {	-- Primalist Ring
+					["sym"] = {{"select","itemID",
+						201960,	-- Chronologically Unstable Loop
+					}},
 				}),
 			}),
 			filter(TRINKET_F, {

@@ -487,5 +487,8 @@ ID,Name_lang,Name1_lang,Mask_ID,Flags
 767,Obsidian Legend %s,Obsidian Legend %s,500,0
 768,Smelly %s,Smelly %s,501,0
 769,"%s, Barter Boss","%s, Barter Boss",502,0
-770,%s the <PH Season 2 Title>,%s the <PH Season 2 Title>,503,0
-771,%s the <PH Season 2 Hero Title>,%s the <PH Season 2 Hero Title>,504,0
+770,%s the Smoldering,%s the Smoldering,503,0
+771,%s the Smoldering Hero,%s the Smoldering Hero,504,0
+772,"%s, Heir to the Void","%s, Heir to the Void",505,0
+773,"%s, Famed Slayer of Sarkareth","%s, Famed Slayer of Sarkareth",506,0
+774,"%s, Sniffenseeker","%s, Sniffenseeker",507,0

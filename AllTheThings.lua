@@ -5379,8 +5379,9 @@ local function SkipFillingGroup(group, FillData)
 	if not app.MODE_DEBUG_OR_ACCOUNT then
 		-- only ignored filling saved 'quest' groups (unless it's an Item, which we ignore the ignore... :D)
 		if group.saved and group.questID and not group.itemID then return true; end
-		local parent = group.parent;
-		-- parent is a saved quest, then do not fill with stuff
+		-- root fills of a thing from a saved parent should still show their contains, so don't use .parent
+		local parent = rawget(group, "parent");
+		-- direct parent is a saved quest, then do not fill with stuff
 		if parent and parent.questID and parent.saved then return true; end
 	end
 
@@ -9772,7 +9773,7 @@ local function CacheInfo(t, field)
 	-- speciesName, speciesIcon, petType, companionID, tooltipSource, tooltipDescription, isWild,
 	-- canBattle, isTradeable, isUnique, obtainable, creatureDisplayID = C_PetJournal.GetPetInfoBySpeciesID(speciesID)
 	local speciesName, speciesIcon, petType, _, _, tooltipDescription, _, _, _, _, _, creatureDisplayID = C_PetJournal_GetPetInfoBySpeciesID(id);
-	if speciesName then
+	if speciesName and speciesIcon and petType and tooltipDescription and creatureDisplayID then
 		_t.name = speciesName;
 		_t.icon = speciesIcon;
 		_t.petTypeID = petType;
@@ -9781,7 +9782,12 @@ local function CacheInfo(t, field)
 		if not t.itemID then
 			_t.text = "|cff0070dd"..speciesName.."|r";
 		end
-		if field then return _t[field]; end
+	else
+		_t.name = "Unknown";
+		if not t.itemID then
+			_t.text = "Unknown";
+		end
+	if field then return _t[field]; end
 	end
 end
 local function default_link(t)
@@ -11987,6 +11993,18 @@ fields.lvl = function(t) return 60; end;
 app.BaseConduit = app.BaseObjectFields(fields, "BaseConduit");
 app.CreateConduit = function(id, t)
 	return setmetatable(constructor(id, t, "conduitID"), app.BaseConduit);
+end
+end)();
+
+-- Drakewatcher Manuscript Lib
+(function()
+-- copy base Item fields
+local fields = RawCloneData(itemFields);
+fields.collectible = function(t) return app.CollectibleDrakewatcherManuscripts; end;
+fields.collected = IsQuestFlaggedCompletedForObject;
+app.BaseDrakewatcherManuscript = app.BaseObjectFields(fields, "BaseDrakewatcherManuscript");
+app.CreateDrakewatcherManuscript = function(id, t)
+	return setmetatable(constructor(id, t, "itemID"), app.BaseDrakewatcherManuscript);
 end
 end)();
 
@@ -24267,6 +24285,18 @@ app.InitDataCoroutine = function()
 
 		-- Druid forms
 		65047, 	-- Mark of the Nightwing Raven
+
+		-- Heritage
+		51483,	-- Heritage o' the Dark Iron
+		49783,	-- Heritage of Highmountain
+		53722,	-- Heritage of the Kul Tiran
+		49782,	-- Heritage of the Lightforged
+		51484,	-- Heritage of the Mag'har
+		58436,	-- Heritage of the Mechagnome
+		49784,	-- Heritage of the Nightborne
+		49928,	-- Heritage of the Void
+		58435,	-- Heritage of the Vulpera
+		53721,	-- Heritage of the Zandalari
 		-- etc.
 	}) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character

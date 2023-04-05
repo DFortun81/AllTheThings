@@ -317,6 +317,8 @@ root(ROOTS.Zones, {
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",
 						635,	-- Adder
+						379,	-- Squirrel
+						420,	-- Toad
 					}},
 					["groups"] = {
 						p(518, {	-- Clefthoof Runt
@@ -327,12 +329,6 @@ root(ROOTS.Zones, {
 						}),
 						p(417, {	-- Rat
 							["crs"] = { 61366 },	-- Rat
-						}),
-						p(379, {	-- Squirrel
-							["crs"] = { 61081 },	-- Squirrel
-						}),
-						p(420, {	-- Toad
-							["crs"] = { 61369 },	-- Toad
 						}),
 					},
 				})),
@@ -1632,6 +1628,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				-- #if AFTER LEGION
+				n(SPECIAL, {
+					n(121086, {	-- Shawn
+						["timeline"] = { "added 7.2.0.23530" },
+						["coord"] = { 21.6, 53.4, NAGRAND },
+						["groups"] = {
+							i(147433),	-- Glowing Diamond Ring
+						},
+					}),
+				}),
+				-- #endif
 				n(VENDORS, {
 					n(21485, {	-- Aldraan <Blade Merchant>
 						["description"] = "This vendor is only accessible when the Alliance controls Halaa.",
@@ -1780,7 +1787,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					n(19021, {	-- Nancila 
+					n(19021, {	-- Nancila
 						["coord"] = { 55.2, 70.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sym"] = {

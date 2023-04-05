@@ -1398,9 +1398,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(374, {	-- Black Lamb
-					["crs"] = { 60649 },	-- Black Lamb
-				}),
+				pet(374),	-- Black Lamb
 				p(459, {	-- Cat
 					["crs"] = { 62019 },	-- Cat
 				}),
@@ -1410,15 +1408,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				p(447, {	-- Fawn
 					["crs"] = { 61165 },	-- Fawn
 				}),
-				p(378, {	-- Rabbit
-					["crs"] = { 61080 },	-- Rabbit
-				}),
+				pet(378),	-- Rabbit
 				p(419, {	-- Small Frog
 					["crs"] = { 61071 },	-- Small Frog
 				}),
-				p(379, {	-- Squirrel
-					["crs"] = { 61081 },	-- Squirrel
-				}),
+				pet(379),	-- Squirrel
 				p(675, {	-- Stormwind Rat
 					["crs"] = { 62954 },	-- Stormwind Rat
 				}),

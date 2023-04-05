@@ -1,0 +1,313 @@
+73@@@<TXT> No Reward
+137@@@<NYI> <TXT> Stormwind Commendation
+242@@@<UNUSED>
+259@@@<UNUSED>
+260@@@<UNUSED>
+352@@@<UNUSED>
+406@@@<UNUSED>
+462@@@<UNUSED>
+490@@@<UNUSED>
+497@@@<UNUSED>
+534@@@<UNUSED>
+548@@@<NYI> <TXT> Bloodstone Pendant
+612@@@<UNUSED>
+614@@@The Captain's Chest
+615@@@The Captain's Cutlass
+618@@@Facing Negolash
+620@@@The Monogrammed Sash
+636@@@Legends of the Earth <NYI>
+807@@@<UNUSED>
+810@@@<UNUSED>
+811@@@<UNUSED>
+814@@@<UNUSED>
+820@@@<UNUSED>
+839@@@<UNUSED>
+856@@@<UNUSED>
+934@@@Crown of the Earth
+946@@@<UNUSED>
+988@@@<UNUSED>
+989@@@<UNUSED>
+1155@@@<NYI> <TXT> bug crystal side quest
+1156@@@<NYI> <TXT> speak to alchemist pestlezugg
+1157@@@<NYI> <TXT> pestlezugg needs items
+1158@@@<NYI> <TXT> speak to rabine saturna
+1161@@@<NYI> <TXT> gossip shade of ambermoon
+1162@@@<NYI> <TXT> speak to hamuul runetotem
+1163@@@<NYI> <TXT> speak to tyrande whisperwind
+1277@@@<nyi> <TXT> The Centaur Hoofprints
+1278@@@<nyi> <TXT> The Grim Totem Clan
+1279@@@<nyi> <TXT>The Centaur Hoofprints
+1280@@@<nyi> <TXT>The Centaur Hoofprints
+1288@@@Vimes's Report
+1289@@@<nyi> Vimes's Report
+1290@@@<nyi> Investigating Mosarn
+1291@@@<nyi> <TXT> Centaur Hoofprints
+1292@@@<nyi><TXT> Centaur Hoofprints
+1293@@@<nyi> <TXT> Centaur Hoofprints
+1294@@@<nyi> <TXT>Centaur Sympathies
+1295@@@<nyi> <TXT> Course of Action
+1296@@@<nyi> <TXT> Course of Action
+1297@@@<nyi> <TXT> Course of Action
+1298@@@<nyi> <TXT> Thrall's Dirty Work
+1299@@@<nyi> <TXT> Thrall's Dirty Work
+1300@@@<nyi> <TXT> Lorn Grim Totem
+1390@@@<nyi> Oops, We Killed Them Again.
+1397@@@<nyi> Saved!
+1441@@@<UNUSED>
+1443@@@<nyi> The Shakedown
+1460@@@<UNUSED>
+1461@@@<UNUSED>
+1531@@@Call of Air
+1532@@@Call of Air
+1533@@@<NYI> Call of Air
+1537@@@<NYI> Call of Air
+1538@@@<NYI> Call of Air
+1659@@@<UNUSED>
+1660@@@<UNUSED>
+1662@@@<UNUSED>
+1663@@@<UNUSED>
+1664@@@<UNUSED>
+2000@@@Rokar Bladeshadow
+2018@@@Rokar's Test
+2019@@@Tools of the Trade
+2020@@@<UNUSED>
+2058@@@<UNUSED>
+2059@@@<UNUSED>
+2358@@@Horns of Nez'ra
+2868@@@<TXT> The Shriveled Heart
+2971@@@<UNUSED>
+2997@@@Tome of Divinity
+2999@@@Tome of Divinity
+3000@@@Tome of Divinity
+3023@@@<UNUSED>
+3111@@@<UNUSED> [DEPRECATED]
+3241@@@<NYI> <TXT><redux> Dreadmist Peak
+3383@@@<UNUSED>
+3384@@@<UNUSED>
+3401@@@<UNUSED>
+3403@@@<UNUSED>
+3404@@@<UNUSED>
+3405@@@<UNUSED>
+3422@@@<UNUSED>
+3423@@@<UNUSED>
+3424@@@<UNUSED>
+3425@@@<UNUSED>
+3482@@@<NYI> <TXT> The Pocked Black Box
+3515@@@<UNUSED>
+3516@@@<UNUSED>
+3529@@@<UNUSED>
+3530@@@<UNUSED>
+3531@@@<UNUSED>
+3622@@@<UNUSED>
+3623@@@<UNUSED>
+3624@@@<UNUSED>
+3885@@@<NYI> <TXT> The Gadgetzan Run
+3910@@@<NYI> <TXT> The Un'Goro Run
+4299@@@<NYI> <TXT>The Tomb of the Seven
+4323@@@<NYI> <TXT> Get those Hyenas!!!
+4541@@@<NYI> <TXT>
+4905@@@<UNUSED>
+5101@@@Lee's Ultimate Test Quest... of Doom!
+5205@@@<UNUSED>
+5207@@@<NYI> <TXT> The True Summoner
+5208@@@<NYI> <TXT> The Blessing of Evil
+5209@@@<UNUSED>
+5303@@@<UNUSED>
+5304@@@<UNUSED>
+5506@@@<UNUSED>
+5512@@@<UNUSED>
+5516@@@<UNUSED>
+5520@@@<UNUSED>
+5523@@@<UNUSED>
+5530@@@<NYI> <TXT> Necklace of the Dawn
+5532@@@<NYI> <TXT> Ring of the Dawn
+5628@@@Returning Home
+5629@@@Returning Home
+5630@@@Returning Home
+5631@@@Returning Home
+5632@@@Returning Home
+5633@@@Returning Home
+5635@@@Desperate Prayer
+5636@@@Desperate Prayer
+5637@@@Desperate Prayer
+5638@@@Desperate Prayer
+5639@@@Desperate Prayer
+5640@@@Desperate Prayer
+5641@@@A Lack of Fear
+5642@@@Shadowguard
+5643@@@Shadowguard
+5644@@@Devouring Plague
+5645@@@A Lack of Fear
+5646@@@Devouring Plague
+5647@@@A Lack of Fear
+5653@@@<NYI> Hex of Weakness
+5654@@@Hex of Weakness
+5655@@@Hex of Weakness
+5656@@@Hex of Weakness
+5657@@@Hex of Weakness
+5658@@@Touch of Weakness
+5659@@@<NYI> Touch of Weakness
+5660@@@Touch of Weakness
+5661@@@Touch of Weakness
+5662@@@Touch of Weakness
+5663@@@Touch of Weakness
+5664@@@<UNUSED>
+5665@@@<UNUSED>
+5666@@@<UNUSED>
+5667@@@<UNUSED>
+5668@@@<NYI> A Blessing of Light
+5669@@@<NYI> A Blessing of Light
+5670@@@<NYI> A Blessing of Light
+5671@@@<NYI> A Blessing of Light
+5673@@@Elune's Grace
+5674@@@Elune's Grace
+5675@@@Elune's Grace
+5677@@@Arcane Feedback
+5678@@@Arcane Feedback
+5681@@@<UNUSED>
+5682@@@<UNUSED>
+5683@@@<UNUSED>
+5684@@@<UNUSED>
+5685@@@<NYI> <TXT> The Light Protects You
+5686@@@<NYI> The Light Protects You
+5687@@@<NYI> The Light Protects You
+5688@@@<NYI> <TXT> A Touch of Voodoo
+5689@@@<NYI> A Touch of Voodoo
+5690@@@<NYI> <TXT> A Touch of Voodoo
+5691@@@<NYI> <TXT> In the Dark it was Created
+5692@@@<NYI> In the Dark It was Created
+5693@@@<NYI> In the Dark It was Created
+5694@@@<UNUSED>
+5695@@@<UNUSED>
+5696@@@<UNUSED>
+5697@@@<UNUSED>
+5698@@@<NYI> <TXT> A Small Amount of Hope
+5699@@@<NYI> A Small Amount of Hope
+5700@@@<NYI> A Small Amount of Hope
+5701@@@<NYI> <TXT> The Rites of Old
+5702@@@<NYI> The Rites of Old
+5703@@@<NYI> The Rites of Old
+5704@@@<NYI> <TXT> Undead Priest Robe
+5705@@@<NYI> No Longer a Shadow
+5706@@@<NYI> No Longer a Shadow
+5707@@@<NYI> <TXT> Flirting With Darkness
+5708@@@<NYI> Flirting With Darkness
+5709@@@<NYI> Flirting With Darkness
+5710@@@<NYI> <TXT> Troll Priest Robe
+5711@@@<NYI> The Lost Ways
+5712@@@<NYI> The Lost Ways
+6003@@@<nyi> <txt> Green With Envy
+6165@@@<NYI> <TXT> Archmage Timolain's Remains
+6201@@@<UNUSED> The Legacy of the Ashbringer
+6202@@@<UNUSED> Good and Evil
+6606@@@A Little Luck
+6702@@@[DEPRECATED] <TXT> SF, RFK, GNOMER, BF
+6704@@@[DEPRECATED] <TXT> SM, RFD, ULD
+6706@@@[DEPRECATED] <TXT> ZUL, ST, MAR
+6708@@@[DEPRECATED] <TXT> BRD, DM, BRS
+6710@@@[DEPRECATED] <TXT> UBRS, STRATH, SCHOL
+6841@@@<UNUSED>
+6843@@@Da Foo
+7384@@@<nyi> <txt> The Scale Crafters
+7487@@@Attunement to the Core
+7521@@@Thunderaan the Windseeker
+7522@@@Examine the Vessel
+7561@@@Rise, Thunderfury!
+7637@@@Emphasis on Sacrifice
+7638@@@Lord Grayson Shadowbreaker
+7639@@@To Show Due Judgment
+7640@@@Exorcising Terrordale
+7641@@@The Work of Grimand Elmore
+7642@@@Collection of Goods
+7643@@@Ancient Equine Spirit
+7644@@@Blessed Arcanite Barding
+7645@@@Manna-Enriched Horse Feed
+7646@@@The Divination Scryer
+7648@@@Grimand's Finest Work
+7670@@@Lord Grayson Shadowbreaker
+7681@@@Hunter test quest
+7682@@@Hunter test quest2
+7741@@@Praise from the Emerald Circle <NYI> <TXT>
+7788@@@Vanquish the Invaders!
+7789@@@Quell the Silverwing Usurpers
+7790@@@REUSE
+7869@@@test quest - do not use
+7870@@@test quest2 - do not use
+7871@@@Vanquish the Invaders!
+7872@@@Vanquish the Invaders!
+7873@@@Vanquish the Invaders!
+7874@@@Quell the Silverwing Usurpers
+7875@@@Quell the Silverwing Usurpers
+7876@@@Quell the Silverwing Usurpers
+7904@@@<UNUSED>
+8080@@@Arathi Basin Resources!
+8123@@@Cut Arathor Supply Lines
+8152@@@REUSE
+8154@@@Arathi Basin Resources!
+8155@@@Arathi Basin Resources!
+8156@@@Arathi Basin Resources!
+8160@@@Cut Arathor Supply Lines
+8161@@@Cut Arathor Supply Lines
+8162@@@Cut Arathor Supply Lines
+8230@@@Collin's Test Quest
+8247@@@<UNUSED>
+8248@@@<UNUSED>
+8266@@@Ribbons of Sacrifice
+8268@@@Ribbons of Sacrifice
+8290@@@Vanquish the Invaders
+8291@@@Vanquish the Invaders!
+8294@@@Quell the Silverwing Usurpers
+8295@@@Quell the Silverwing Usurpers
+8297@@@Arathi Basin Resources!
+8299@@@Cut Arathor Supply Lines
+8411@@@Mastering the Elements
+8444@@@<NYI> <TXT> gossip shade of ambermoon
+8445@@@<NYI> <TXT> gossip shade of ambermoon
+8459@@@<UNUSED>
+8530@@@The Alliance Needs Singed Corestones!
+8617@@@The Horde Needs Singed Corestones!
+8869@@@Sweet Serenity
+8973@@@REUSE
+9031@@@<TXT>Anthion's Parting Words
+9065@@@The "Chow" Quest (123)aa
+9378@@@--
+9411@@@<UNUSED>Infused Bandages
+9412@@@<UNUSED>Crystal Flake Throat Lozenge
+9413@@@<UNUSED>Crystal Flake Throat Lozenge
+9414@@@<UNUSED>Infused Bandages
+9556@@@To The Victor...
+55296@@@--
+60860@@@--
+60863@@@--
+60864@@@--
+60865@@@--
+60866@@@--
+60868@@@--
+60870@@@--
+61547@@@--
+63769@@@--
+8571@@@<UNUSED> Armor Kits
+65309@@@--
+65593@@@Hearts of the Lovers
+65597@@@The Binding
+65601@@@Love Hurts
+65602@@@What Is Love?
+65603@@@The Binding
+65604@@@The Binding
+65610@@@Wish You Were Here
+65616@@@--
+66145@@@--
+66193@@@--
+66281@@@--
+66286@@@--
+66287@@@--
+66288@@@--
+66289@@@--
+66290@@@--
+66291@@@--
+66292@@@--
+66293@@@--
+66294@@@--
+66295@@@--
+66317@@@--
+66318@@@--

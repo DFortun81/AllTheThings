@@ -541,7 +541,7 @@ local L = app.L;
 	-- About tab
 		--TODO: L.ABOUT = "About";
 		--TODO: L.ABOUT_1 = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
-		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
+		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r";
 		--TODO: L.ABOUT_3 = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
 
 	-- Binding Localizations
@@ -853,7 +853,12 @@ for key,value in pairs({
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
+		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
+		--TODO: [-1151] = "Bartering",								-- Bartering
+		--TODO: [-1152] = "First Crafts",							-- First Crafts
 		[-1200] = "지스케라 금고",										-- Zskera Vaults
+		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
+		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -1324,7 +1329,7 @@ for key,value in pairs({
 	[179913] = "전장으로!",	-- Call to Arms!	--TODO: This was taken from wotlk Wowhead
 	[180229] = "불길한 흑마술 더미",	-- Jinxed Hoodoo Pile	--TODO: This was taken from wotlk Wowhead
 	[180248] = "맛둥어 떼",	-- School of Tastyfish
-	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
+	[180327] = "광기의 화로",	-- Brazier of Madness	--TODO: this was manually translated
 	[180366] = "찌그러진 낚시상자",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "광기의 서판",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
 	[180369] = "거품이는 진흙탕물",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
@@ -3054,7 +3059,7 @@ for key,value in pairs({
 	[336415] = "버려진 두루마리",	-- Discarded Scroll
 	[337237] = "잃어버린 금고",	-- Lost Vault
 	[337241] = "장비 보관함",	-- Stashed Equipment
-	[339211] = "|cFFFFFFFFStep 2:|r 빈 그릇",	--|cFFFFFFFFStep 2:|r  Empty Dish
+	[339211] = "|cFFFFFFFFStep 2:|r 빈 그릇",	--|cFFFFFFFFStep 2:|r Empty Dish
 	[339243] = "감염된 금고",	-- Infested Strongbox
 	[339248] = "감염된 보관함",	-- Infested Cache
 	[339249] = "감염된 보관함",	-- Infested Cache
@@ -3518,12 +3523,12 @@ for key,value in pairs({
 	[375988] = "피림의 추방기 후일담",	-- Firim in Exile, Epilogue
 	[376041] = "가려진 암호 보관함",	-- Shrouded Cypher Cache
 	--TODO: [376123] = "Suspicious Bottle",	-- Suspicious Bottle
-	--TODO: [376124] = "Bag of Enchanted Wind",	-- Bag of Enchanted Wind
+	[376124] = "마법의 바람이 담긴 배낭",	-- Bag of Enchanted Wind
 	[376175] = "풀세일 보급품 상자",	-- Fullsails Supply Chest
-	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
+	[376213] = "수수께끼의 지팡이",	-- Mysterious Wand
 	[376386] = "흐트러진 흙",	-- Disturbed Dirt
 	[376426] = "마법결속 보관함",	-- Magic-Bound Chest
-	--TODO: [376451] = "Bronze Stopwatch",	-- Bronze Stopwatch
+	[376451] = "청동 초시계",	-- Bronze Stopwatch
 	[376580] = "자라딘 상자",	-- Djaradin Cache
 	[376581] = "부족 보관함",	-- Clan Chest
 	[376582] = "투스카르 상자",	-- Tuskarr Chest
@@ -3531,7 +3536,7 @@ for key,value in pairs({
 	--TODO: [376657] = "Ancient Monument",	-- Ancient Monument
 	[376757] = "현상 수배: 프리젤루스",	-- WANTED: Frigellus
 	[377114] = "무거운 밧줄 똬리",	-- Coil of Heavy Rope
-	--TODO: [377233] = "Hessethiash's Poorly Hidden Treasure",	-- Hessethiash's Poorly Hidden Treasure
+	[377233] = "어설프게 숨긴 헤세티아쉬의 보물",	-- Hessethiash's Poorly Hidden Treasure
 	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
@@ -3657,7 +3662,7 @@ for key,value in pairs({
 	[381511] = "작살 머리",	-- Harpoon Head
 	[381512] = "목재 장대",	-- Wooden Pole
 	[381513] = "오래된 곡괭이",	-- Old Pickaxe
-	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
+	[381514] = "바닷물로 매끈해진 현무암",	-- Sea-Polished Basalt
 	--TODO: [381575] = "Duck Trap Kit",	-- Duck Trap Kit
 	[381579] = "기록관의 요청",	-- Archivists' Request
 	[381650] = "기록관의 요청",	-- Archivists' Request
@@ -3676,7 +3681,7 @@ for key,value in pairs({
 	[381701] = "현상 수배: 천둥의 마라나르",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "홍수의 보관함",	-- Chest of the Flood
 	[382029] = "흐트러진 흙",	-- Disturbed Dirt
-	[382071] = "완전한 낚시 그물",	-- Full Fishing Net	--TODO: this was manually translated
+	[382071] = "완전한 낚시 그물",	-- Full Fishing Net
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
 	[382180] = "과열된 용암 상어 떼",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
@@ -3737,6 +3742,7 @@ for key,value in pairs({
 	[386428] = "태고의 대지 보관함",	-- Primordial Earth Cache
 	[386429] = "태고의 대지 보관함",	-- Primordial Earth Cache
 	[386430] = "경화된 보관함",	-- Hardened Chest
+	[386431] = "태고의 대지 보관함",	-- Primordial Earth Cache
 	[386432] = "경화된 보관함",	-- Hardened Chest
 	[386433] = "태고의 바람 보관함",	-- Primordial Wind Cache
 	[386441] = "태고의 바람 보관함",	-- Primordial Wind Cache
@@ -3785,9 +3791,11 @@ for key,value in pairs({
 	--TODO: [386669] = "Fragmented Hakkari Bijou",	-- Fragmented Hakkari Bijou
 	[386680] = "수수께끼의 연감",	-- Mysterious Almanac
 	[386683] = "그슬린 책",	-- Seared Book
-	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
+	[386690] = "모호한 전서",	-- Ambiguous Compendium
 	[386762] = "태고의 방어구 보관함",	-- Primordial Armor Cache
 	--TODO: [387493] = "Unique Fish",	-- Unique Fish
+	[387496] = "광기의 화로",	-- Brazier of Madness	--TODO: this was manually translated
+	[387500] = "싸늘한 눈사람",	-- Chilly Snowman
 	[387501] = "넬타리온 선물 징표",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
 	[387728] = "위상들의 가극",	-- Opera of the Aspects
@@ -3798,7 +3806,8 @@ for key,value in pairs({
 	[388712] = "가극 상자",	-- Opera Chest
 	[388866] = "재료 냄비",	-- Reagent Pot
 	[388876] = "재료 냄비",	-- Reagent Pot
-	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388895] = "아무렇게나 그린 낙서",	-- Random Scribblings
+	[388905] = "넬타리온의 도구",	-- Neltharion Toolkit
 	[388908] = "마력을 잃은 찐득이",	-- Inert Goo
 	[389102] = "오색 파편",	-- Prismatic Fragment
 	[389104] = "오색 파편",	-- Prismatic Fragment
@@ -3821,6 +3830,10 @@ for key,value in pairs({
 	[390257] = "곰인형",	-- Stuffed Bear
 	[390258] = "마력을 잃은 찐득이",	-- Inert Goo
 	[390559] = "돌멩이 상자",	-- Box of Rocks
+	[390560] = "잠긴 연구물 상자",	-- Locked Research Chest
+	--TODO: [392025] = "Molded Coins",	-- Molded Coins
+	[392026] = "넬타리온 주화 거푸집",	-- Neltharion Coin Mold
+	[392335] = "태고의 방어구 보관함",	-- Primordial Armor Cache
 	--TODO: [392569] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392570] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392571] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
@@ -3832,6 +3845,8 @@ for key,value in pairs({
 	[393222] = "보급품 보관함",	-- Supply Trunk
 	[393282] = "풍선 상자",	-- Balloon Box
 	[393283] = "풍선 상자",	-- Balloon Box
+	[398200] = "잊혀진 금고",	-- Forgotten Lockbox
+	[398770] = "돌멩이 상자",	-- Box of Rocks
 	[398778] = "역겨운 보관통",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone

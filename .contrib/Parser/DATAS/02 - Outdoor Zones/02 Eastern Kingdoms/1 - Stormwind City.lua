@@ -2640,15 +2640,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(378, {	-- Rabbit
-					["crs"] = { 61080 },	-- Rabbit
-				}),
-				p(379, {	-- Squirrel
-					["crs"] = { 61081 },	-- Squirrel
-				}),
-				p(675, {	-- Stormwind Rat
-					["crs"] = { 62954 },	-- Stormwind Rat
-				}),
+				["sym"] = {{"select","speciesID",
+					378,	-- Rabbit
+					379,	-- Squirrel
+				}},
+				["g"] = {
+					p(675, {	-- Stormwind Rat
+						["crs"] = { 62954 },	-- Stormwind Rat
+					}),
+				},
 			})),
 			-- #endif
 			n(FACTIONS, {
@@ -6301,6 +6301,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(16059),	-- Common Brown Shirt
 						i(3428),	-- Common Grey Shirt
 						i(16060),	-- Common White Shirt
+						i(837),	-- Heavy Weave Armor
+						i(3589),	-- Heavy Weave Belt
+						i(3590),	-- Heavy Weave Bracers
+						i(839),	-- Heavy Weave Gloves
+						i(838),	-- Heavy Weave Pants
+						i(840),	-- Heavy Weave Shoes
+						i(3602),	-- Knitted Belt
+						i(3603),	-- Knitted Bracers
+						i(793),	-- Knitted Gloves
+						i(794),	-- Knitted Pants
+						i(792),	-- Knitted Sandals
+						i(795),	-- Knitted Tunic
+						i(3597),	-- Thick Cloth Belt
+						i(3598),	-- Thick Cloth Bracers
+						i(203),	-- Thick Cloth Gloves
+						i(201),	-- Thick Cloth Pants
+						i(202),	-- Thick Cloth Shoes
+						i(200),	-- Thick Cloth Vest
 						-- #if AFTER 10.0.5
 						-- Now any class and race can buy this
 						-- MAGE --
@@ -6528,6 +6546,52 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(67387, {	-- "Carriage" Signature Bag
 							["timeline"] = { "added 4.0.1.12984" },
 						}),
+					},
+				}),
+				n(1314, {	-- Duncan Cullen
+					["coord"] = { 53.2, 81.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2142),    -- Cuirboulli Belt
+						i(2143),    -- Cuirboulli Boots
+						i(2144),    -- Cuirboulli Bracers
+						i(2145),    -- Cuirboulli Gloves
+						i(2146),    -- Cuirboulli Pants
+						i(2141),    -- Cuirboulli Vest
+						i(2435),    -- Embroidered Armor
+						i(3587),    -- Embroidered Belt
+						i(2438),    -- Embroidered Boots
+						i(3588),    -- Embroidered Bracers
+						i(2440),    -- Embroidered Gloves
+						i(3892),    -- Embroidered Hat
+						i(2437),    -- Embroidered Pants
+						i(2160),    -- Padded Armor
+						i(3591),    -- Padded Belt
+						i(2156),    -- Padded Boots
+						i(3592),    -- Padded Bracers
+						i(2158),    -- Padded Gloves
+						i(2159),    -- Padded Pants
+						i(2471),    -- Reinforced Leather Belt
+						i(2473),    -- Reinforced Leather Boots
+						i(2474),    -- Reinforced Leather Bracers
+						i(3893),    -- Reinforced Leather Cap
+						i(2475),    -- Reinforced Leather Gloves
+						i(2472),    -- Reinforced Leather Pants
+						i(2470),    -- Reinforced Leather Vest
+						i(3593),    -- Russet Belt
+						i(2432),    -- Russet Boots
+						i(3594),    -- Russet Bracers
+						i(2434),    -- Russet Gloves
+						i(3889),    -- Russet Hat
+						i(2431),    -- Russet Pants
+						i(2429),    -- Russet Vest
+						i(2464),    -- Studded Belt
+						i(2467),    -- Studded Boots
+						i(2468),    -- Studded Bracers
+						i(2463),    -- Studded Doublet
+						i(2469),    -- Studded Gloves
+						i(3890),    -- Studded Hat
+						i(2465),    -- Studded Pants						
 					},
 				}),
 				n(52029, {	-- Edlan Halsing <Bloodthirsty Gladiator> [LEGION+] / Edlan Halsing <Honor Trade Goods>
@@ -6917,7 +6981,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(925),		-- flail
 						i(1197),	-- giant mace
 						i(2030),	-- gnarled staff
-						i(2028),	-- hammer	
+						i(2028),	-- hammer
 						i(853),		-- hatchet
 						i(15811),	-- heavy spear
 						i(2207),	-- jambiya
@@ -7159,15 +7223,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
-						-- Now any class and race can buy this
-						-- DRUID --
-						i(6124),	-- Novice's Pants
-						i(6123),	-- Novice's Robe
-
-						-- ROGUE --
-						i(48),	-- Footpad's Pants
-						i(47),	-- Footpad's Shoes
-						i(58234),	-- Footpad's Vest
+						i(236),    -- Cured Leather Armor
+						i(1849),    -- Cured Leather Belt
+						i(238),    -- Cured Leather Boots
+						i(1850),    -- Cured Leather Bracers
+						i(239),    -- Cured Leather Gloves
+						i(237),    -- Cured Leather Pants
+						i(48),    -- Footpads Pants
+						i(47),    -- Footpads Shoes
+						i(58234),    -- Footpads Vest
+						i(6124),    -- Novices Pants
+						i(6123),    -- Novices Robe
+						i(1839),    -- Rough Leather Belt
+						i(796),    -- Rough Leather Boots
+						i(1840),    -- Rough Leather Bracers
+						i(797),    -- Rough Leather Gloves
+						i(798),    -- Rough Leather Pants
+						i(799),    -- Rough Leather Vest
+						i(1843),    -- Tanned Leather Belt
+						i(843),    -- Tanned Leather Boots
+						i(1844),    -- Tanned Leather Bracers
+						i(844),    -- Tanned Leather Gloves
+						i(846),    -- Tanned Leather Jerkin
+						i(845),    -- Tanned Leather Pants
 					}),
 				}),
 				-- #endif
@@ -7965,6 +8043,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(1941),	-- Cask of Merlot
 					},
 				}),
+				n(1320, {	-- Seoman Griffith
+					["coord"] = { 71.8, 62.2, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2471 },    -- Reinforced Leather Belt
+						{"select", "itemID", 2473 },    -- Reinforced Leather Boots
+						{"select", "itemID", 2474 },    -- Reinforced Leather Bracers
+						{"select", "itemID", 3893 },    -- Reinforced Leather Cap
+						{"select", "itemID", 2475 },    -- Reinforced Leather Gloves
+						{"select", "itemID", 2472 },    -- Reinforced Leather Pants
+						{"select", "itemID", 2470 },    -- Reinforced Leather Vest
+						{"select", "itemID", 2464 },    -- Studded Belt
+						{"select", "itemID", 2467 },    -- Studded Boots
+						{"select", "itemID", 2468 },    -- Studded Bracers
+						{"select", "itemID", 2463 },    -- Studded Doublet
+						{"select", "itemID", 2469 },    -- Studded Gloves
+						{"select", "itemID", 3890 },    -- Studded Hat
+						{"select", "itemID", 2465 },    -- Studded Pants
+					},
+				}),
 				n(12785, {	-- Sergeant Major Clate <Legacy Armor Quartermaster> [WRATH+] / Sergeant Major Clate <Armor Quartermaster>
 					["coord"] = { 75.4, 67.0, STORMWIND_CITY },
 					["timeline"] = { "added 2.0.1" },	-- Prior to TBC, was just a Food Vendor.
@@ -8027,6 +8125,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),
+				n(1350, {	-- Theresa Moulaine
+					["coord"] = { 53.4, 58.0, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2617),	-- Burning Robes
+						i(2615),	-- Chromatic Robe
+						i(2613),	-- Double-Stitched Robes
+						i(2612),	-- Plain Robe
+						i(2614),	-- Robe of Apprenticeship
+						i(2616),	-- Shimmering Silk Robes
+						i(2618),	-- Silver Dress Robes
+					},
+				}),
 				n(5510, {	-- Thulman Flintcrag
 					["coord"] = { 61.8, 36.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -8063,6 +8174,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 718 },    -- Scalemail Gloves
 						{"select", "itemID", 286 },    -- Scalemail Pants
 						{"select", "itemID", 285 },    -- Scalemail Vest
+					},
+				}),
+				n(1309, {	-- Wynne Larson
+					["coord"] = { 52.0, 83.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2617 },    -- Burning Robes
+						{"select", "itemID", 2615 },    -- Chromatic Robe
+						{"select", "itemID", 2613 },    -- Double Stitched Robes
+						{"select", "itemID", 2612 },    -- Plain Robe
+						{"select", "itemID", 2614 },    -- Robe Of Apprenticeship
+						{"select", "itemID", 2616 },    -- Shimmering Silk Robes
+						{"select", "itemID", 2618 },    -- Silver Dress Robes
 					},
 				}),
 			}),

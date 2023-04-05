@@ -235,6 +235,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(199933),	-- 10.0 Enchanting - Weapon - Wand 2
 					i(189140),	-- 10.0 QRP Template <Descriptor> Wand
 					i(201246),	-- Coiled Green Draketail
+					i(201775),	-- Crimson Aspirant's Wand
 				}),
 			}),
 		}),

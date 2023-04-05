@@ -68,9 +68,6 @@ _.Zones =
 					["questID"] = 38212,
 					["coord"] = { 59.2, 46.3, AZSUNA },
 					["g"] = {
-						crit(1, {	-- Azsuna
-							["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
-						}),
 						crit(16, {	-- Marius & Tehd versus a Fel Lord
 							["achievementID"] = 11261,	-- Adventurer of Azsuna
 						}),
@@ -152,9 +149,6 @@ _.Zones =
 					["questID"] = 38352,	-- Kazrok
 					["coord"] = { 43.4, 28.2, AZSUNA },
 					["g"] = {
-						crit(1, {	-- Azsuna
-							["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
-						}),
 						crit(17, {	-- Marius & Tehd versus a Doomlord
 							["achievementID"] = 11261,	-- Adventurer of Azsuna
 						}),
@@ -166,9 +160,6 @@ _.Zones =
 					["questID"] = 42069,
 					["coord"] = { 43.5, 24.6, AZSUNA },
 					["g"] = {
-						crit(1, {	-- Azsuna
-							["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
-						}),
 						crit(18, {	-- Marius & Tehd versus Felbats
 							["achievementID"] = 11261,	-- Adventurer of Azsuna
 						}),

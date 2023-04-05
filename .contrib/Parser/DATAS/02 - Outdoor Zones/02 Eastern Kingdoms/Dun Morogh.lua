@@ -685,7 +685,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 724,	-- Burly Rockjaw Trogg
 						}),
 						i(2054, {	-- Trogg Hand Axe
-							["timeline"] = { "removed 4.0.3" },
+							-- #if AFTER CATA
+							["coord"] = { 42.6, 66.0, DUN_MOROGH },
+							-- #else
+							["coord"] = { 35.6, 67.8, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 							["cr"] = 1718,	-- Rockjaw Raider
 						}),
 					}),
@@ -1125,26 +1130,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(441, {	-- Alpine Hare
-					["crs"] = { 61690 },	-- Alpine Hare
-					-- #if AFTER CATA
-					["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },
-					-- #else
-					["maps"] = { COLDRIDGE_VALLEY },
-					-- #endif
-				}),
-				p(378, {	-- Rabbit
-					["crs"] = { 61080 },	-- Rabbit
-					["maps"] = { COLDRIDGE_VALLEY },
-				}),
-				p(440, {	-- Snow Cub
-					["crs"] = { 61689 },	-- Snow Cub
-					-- #if AFTER CATA
-					["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },
-					-- #else
-					["maps"] = { COLDRIDGE_VALLEY },
-					-- #endif
-				}),
+				["sym"] = {{"select","speciesID",
+					378,	-- Rabbit
+				}},
+				["g"] = {
+					p(441, {	-- Alpine Hare
+						["crs"] = { 61690 },	-- Alpine Hare
+						-- #if AFTER CATA
+						["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },
+						-- #else
+						["maps"] = { COLDRIDGE_VALLEY },
+						-- #endif
+					}),
+					p(440, {	-- Snow Cub
+						["crs"] = { 61689 },	-- Snow Cub
+						-- #if AFTER CATA
+						["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },
+						-- #else
+						["maps"] = { COLDRIDGE_VALLEY },
+						-- #endif
+					}),
+				},
 			})),
 			-- #endif
 			-- #if ANYCLASSIC

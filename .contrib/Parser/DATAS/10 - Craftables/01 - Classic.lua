@@ -425,7 +425,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(3852),	-- Golden Iron Destroyer
 			i(203810, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Carver
 			i(203806, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Crusher
-			i(203805, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Grasp
 			i(203809, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Grinder
 			i(203797, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi HexXxer
 			i(203812, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi Poker
@@ -2321,6 +2320,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				-- #endif
 				i(8209),	-- Tough Scorpid Boots
 			}),
+		}),
+		n(WEAPONS, {
+			i(203805, {["timeline"] = {ADDED_10_0_7 }}),	-- Gurubashi's Grasp
 		}),
 	}),
 	prof(MINING, {

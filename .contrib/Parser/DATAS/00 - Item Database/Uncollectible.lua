@@ -6,29 +6,6 @@ local i = function(itemID)
 	return item;
 end
 
--- DF
-i(200842);	-- Power-Depleted Staff
-i(200785);	-- Argali Wool Rug
-i(200786);	-- Marbled Broadhoof Brisket
-i(200808);	-- Runestone Shards
-i(200795);	-- Sickly Egg Sacs
-i(200793);	-- Decorative Sail
-i(200800);	-- Fool's Gold
-i(200832);	-- Geode Splinters
-i(192648);	-- Pristine Beast Fur
-i(192644);	-- Aeriform Speck
-i(200841);	-- Miniature Prismatic Disc
-i(200794);	-- Fresh Critter Carcass
-i(200852);	-- Nourishing Fertilizer
-i(200816);	-- Partially Damp Measuring Stick
-i(200813);	-- Assorted Fractals
-i(200788);	-- Mantacorn Horns
-i(200843);	-- Severely Chipped Broadsword
-i(200801);	-- Gilded Statuette
-i(200779);	-- Lava Jars
-i(203988);	-- Warshard of the Hakkari, Unborn
-i(203989);	-- Warshard of the Hakkari, Unborn
-
 -- SL
 i(179293);	-- Glimmering Facial Cream
 i(180293);	-- Night Fae Insignia
@@ -639,6 +616,27 @@ i(197958);	-- Watcher Log
 i(191863);	-- Waterlogged Wood
 i(191862);	-- Whalebone Fragment
 i(193372);	-- Wood
+i(200842);	-- Power-Depleted Staff
+i(200785);	-- Argali Wool Rug
+i(200786);	-- Marbled Broadhoof Brisket
+i(200808);	-- Runestone Shards
+i(200795);	-- Sickly Egg Sacs
+i(200793);	-- Decorative Sail
+i(200800);	-- Fool's Gold
+i(200832);	-- Geode Splinters
+i(192648);	-- Pristine Beast Fur
+i(192644);	-- Aeriform Speck
+i(200841);	-- Miniature Prismatic Disc
+i(200794);	-- Fresh Critter Carcass
+i(200852);	-- Nourishing Fertilizer
+i(200816);	-- Partially Damp Measuring Stick
+i(200813);	-- Assorted Fractals
+i(200788);	-- Mantacorn Horns
+i(200843);	-- Severely Chipped Broadsword
+i(200801);	-- Gilded Statuette
+i(200779);	-- Lava Jars
+i(191850);	-- Broken Severite Blade Tip
+i(191851);	-- Dull Draconium Weapon Head
 
 ------------------
 -- PATCH 10.0.5 --
@@ -648,8 +646,6 @@ i(5956);	-- Blacksmith Hammer
 i(85663);	-- Herbalist's Spade
 i(2901);	-- Mining Pick
 i(7005);	-- Skinning Knife
--- White Items
-i(16967);	-- Feralas Ahi
 
 ------------------
 -- PATCH 10.0.7 --
@@ -671,9 +667,21 @@ i(203473);	-- Geyser Flower
 i(204235);	-- Kaldorei Fruitcake
 i(204816);	-- Mysterious Almanac
 i(204812);	-- Seared Book
+i(203988);	-- Warshard of the Hakkari, Unborn
+i(203989);	-- Warshard of the Hakkari, Unborn
 
 ------------------
 -- PATCH 10.1.0 --
 ------------------
 -- Quest Items --
+i(203458);	-- Black Dragonscale Robes
+i(203682);	-- Darkened Elemental Core
+i(203453);	-- Dragonbone Totem
+i(203385);	-- Flamesight Rune
+i(203456);	-- Obsidian Prayer Beads
 i(203442);	-- Snail Slime
+i(204713);	-- Sundered Flame Expedition Notes
+i(203653);	-- Vacant Elemental Core
+i(203457);	-- Volcanic Herb Sachet
+i(204085);	-- Zaqali Dragonslayer's Spear
+i(203654);	-- Zaqali Flame Totem

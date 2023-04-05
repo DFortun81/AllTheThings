@@ -11755,3 +11755,125 @@
 18146@@@<DNT> Loamm Niffen Rank 18 (Character)
 18147@@@<DNT> Loamm Niffen Rank 19 (Character)
 18148@@@<DNT> Loamm Niffen Rank 20 (Character)
+10.1.0.48898
+17465@@@Loamm Roamm: Bronze
+17466@@@Loamm Roamm: Silver
+17467@@@Loamm Roamm: Gold
+17468@@@Loamm Roamm Advanced: Bronze
+17469@@@Loamm Roamm Advanced: Silver
+17470@@@Loamm Roamm Advanced: Gold
+17471@@@Loamm Roamm Reverse: Bronze
+17472@@@Loamm Roamm Reverse: Silver
+17473@@@Loamm Roamm Reverse: Gold
+17511@@@Dragon Glyphs: Nal ks'kol
+17513@@@Dragon Glyphs: Zaqali Caldera
+17516@@@Dragon Glyphs: Acidbite Ravine
+17517@@@Dragon Glyphs: Aberrus Approach
+17734@@@Active Listening Skills
+17846@@@Smoldering Hero: Dragonflight Season 2
+17878@@@Me Want Bite
+18149@@@Objects in Transit May Shatter
+18150@@@Zaralek Cavern Glyph Hunter
+18151@@@Mythic: Kazzara, the Hellforged
+18152@@@Mythic: The Amalgamation Chamber
+18153@@@Mythic: The Forgotten Experiments
+18154@@@Mythic: Assault of the Zaqali
+18155@@@Mythic: Rashok, the Elder
+18156@@@Mythic: The Vigilant Steward, Zskarn
+18157@@@Mythic: Magmorax
+18158@@@Mythic: Echo of Neltharion
+18159@@@Mythic: Scalecommander Sarkareth
+18160@@@Aberrus, the Shadowed Crucible
+18161@@@Heroic: Aberrus, the Shadowed Crucible
+18162@@@Mythic: Aberrus, the Shadowed Crucible
+18163@@@Discarded Works
+18164@@@Fury of Giants
+18165@@@Neltharion's Shadow
+18167@@@Edge of the Void
+18168@@@I'll make my own Shadowflame
+18169@@@[DNT] Shimmershell Snail
+18172@@@Escar-Go-Go-Go
+18173@@@Tabula Rasa
+18174@@@Contaminant Cleaner
+18176@@@Hall of Fame: Scalecommander Sarkareth
+18177@@@Aberrus, the Shadowed Crucible Guild Run
+18178@@@Heroic: Aberrus, the Shadowed Crucible Guild Run
+18179@@@Mythic: Scalecommander Sarkareth Guild Run
+18180@@@Kazzara, the Hellforged kills (Raid Finder Aberrus, the Shadowed Crucible)
+18181@@@The Amalgamation Chamber kills (Raid Finder Aberrus, the Shadowed Crucible)
+18182@@@The Forgotten Experiments kills (Raid Finder Aberrus, the Shadowed Crucible)
+18183@@@Assault of the Zaqali kills (Raid Finder Aberrus, the Shadowed Crucible)
+18184@@@Rashok, the Elder kills (Raid Finder Aberrus, the Shadowed Crucible)
+18185@@@The Vigilant Steward, Zskarn kills (Raid Finder Aberrus, the Shadowed Crucible)
+18186@@@Magmorax kills (Raid Finder Aberrus, the Shadowed Crucible)
+18187@@@Scalecommander Sarkareth kills (Raid Finder Aberrus, the Shadowed Crucible)
+18188@@@Echo of Neltharion kills (Raid Finder Aberrus, the Shadowed Crucible)
+18189@@@Kazzara, the Hellforged kills (Normal Aberrus, the Shadowed Crucible)
+18190@@@The Amalgamation Chamber kills (Normal Aberrus, the Shadowed Crucible)
+18191@@@The Forgotten Experiments kills (Normal Aberrus, the Shadowed Crucible)
+18192@@@Assault of the Zaqali kills (Normal Aberrus, the Shadowed Crucible)
+18193@@@Eggscellent Eggsecution
+18194@@@Rashok, the Elder kills (Normal Aberrus, the Shadowed Crucible)
+18195@@@The Vigilant Steward, Zskarn kills (Normal Aberrus, the Shadowed Crucible)
+18196@@@Magmorax kills (Normal Aberrus, the Shadowed Crucible)
+18197@@@Echo of Neltharion kills (Normal Aberrus, the Shadowed Crucible)
+18198@@@Scalecommander Sarkareth kills (Normal Aberrus, the Shadowed Crucible)
+18199@@@Zaqali Ritual Buster
+18200@@@Cooling the Research Field
+18201@@@Lockdown Mystery
+18202@@@Rockin Research
+18203@@@A Research Sampler
+18204@@@Research Mishap
+18205@@@A Pillar of the Research Community
+18206@@@A Djaradin Puzzle
+18207@@@Hot Research Zone
+18208@@@The Small Disruptions
+18209@@@Nothing Stops the Research
+18210@@@Kazzara, the Hellforged kills (Heroic Aberrus, the Shadowed Crucible)
+18211@@@The Amalgamation Chamber kills (Heroic Aberrus, the Shadowed Crucible)
+18212@@@The Forgotten Experiments kills (Heroic Aberrus, the Shadowed Crucible)
+18213@@@Assault of the Zaqali kills (Heroic Aberrus, the Shadowed Crucible)
+18214@@@Rashok the Elder kills (Heroic Aberrus, the Shadowed Crucible)
+18215@@@The Vigilant Steward, Zskarn kills (Heroic Aberrus, the Shadowed Crucible)
+18216@@@Magmorax kills (Heroic Aberrus, the Shadowed Crucible)
+18217@@@Echo of Neltharion kills (Heroic Aberrus, the Shadowed Crucible)
+18218@@@Scalecommander Sarkareth kills (Heroic Aberrus, the Shadowed Crucible)
+18219@@@Kazzara, the Hellforge kills (Mythic Aberrus, the Shadowed Crucible)
+18220@@@The Amalgamation Chamber kills (Mythic Aberrus, the Shadowed Crucible)
+18221@@@The Forgotten Experiments kills (Mythic Aberrus, the Shadowed Crucible)
+18222@@@Assault of the Zaqali kills (Mythic Aberrus, the Shadowed Crucible)
+18223@@@Rashok, the Elder kills (Mythic Aberrus, the Shadowed Crucible)
+18224@@@The Vigilant Steward, Zskarn kills (Mythic Aberrus, the Shadowed Crucible)
+18225@@@Magmorax kills (Mythic Aberrus, the Shadowed Crucible)
+18226@@@Echo of Neltharion kills (Mythic Aberrus, the Shadowed Crucible)
+18227@@@Scalecommander Sarkareth kills (Mythic Aberrus, the Shadowed Crucible)
+18228@@@Are You Even Trying?
+18229@@@Cosplate
+18230@@@Whac-A-Swog
+18231@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 1 (Character)
+18232@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 2 (Character)
+18233@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 4 (Character)
+18234@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 8 (Character)
+18235@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 11 (Character)
+18236@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 12 (Character)
+18237@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 14 (Character)
+18238@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 16 (Character)
+18239@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 17 (Character)
+18240@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 18 (Character)
+18241@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 20 (Character)
+18242@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 23 (Character)
+18243@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 24 (Character)
+18244@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 25 (Character)
+18245@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 26 (Character)
+18246@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 27 (Character)
+18247@@@<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 28 (Character)
+18248@@@<DNT> Niffen Cave Dive - Completed At Least Once - Tutorial Objectives (Character)
+18249@@@Obsidian Tie Event
+18251@@@Glory of the Aberrus Raider
+18253@@@Ahead of the Curve: Scalecommander Sarkareth
+18254@@@Cutting Edge: Scalecommander Sarkareth
+18255@@@Proof of Myrrit
+18257@@@Can You Dig It?
+18258@@@Little Lord of Lies
+18271@@@He'sSss All Mine
+18284@@@A Mole's Best Friend

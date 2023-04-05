@@ -37,6 +37,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
 					["coord"] = { 25.8, 47.9, THE_FORBIDDEN_REACH },
 				}),
+				q(72954, {	-- Zskera Vault: Ix
+					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
+					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
+				}),
 				q(72952, {	-- The Scary Vault of Ur
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
@@ -96,7 +101,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 				-- Inside of Az
 				q(74795, {	-- An Odd Round Object
-					-- TODO: ["provider"] = { "n",  },	-- An Odd Round Object
+					["provider"] = { "i", 203686 },	-- An Odd Round Object
 					["coord"] = { 30.8, 57.5, THE_FORBIDDEN_REACH },
 				}),
 				q(74493, {	-- Second Time Is The Charm
@@ -137,6 +142,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 200456 },	-- Tapper Swindlekeg
 					["isWeekly"] = true,
 					["g"] = {
+						i(202294),	-- Recipe Pages
 						i(202196),	-- Zskera Vault Key
 					},
 				}),
@@ -145,6 +151,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 202627 },	-- Earthcaller Yevaa
 					["coord"] = { 25.5, 53.2, THE_FORBIDDEN_REACH },
 					["g"] = {
+						i(204208),	-- Primordial Earth Core
+						i(204209),	-- Primordial Flame Core
+						i(204210),	-- Primordial Storm Core
+						i(204212),	-- Primordial Water Core
 						i(193363),	-- Bunbo (PET!)
 						i(203701),	-- Neltharion Gift Token
 						i(202196),	-- Zskera Vault Key
@@ -197,7 +207,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["cost"] = { { "i", 204340, 30 }, }, 	-- 30xTorn Recipe Scrap
 				}),
 				i(202252, {	-- Recipe Rat
-					["description"] = "Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotation.",
+					["description"] = "Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotatiating.\nIt is also possible to continue picking up and using the rat every 5 minutes while within the Vault to obtain scraps without using cheese.",
 					["crs"] = { 202982 },	-- Recipe Rat
 					["cost"] = { { "i", 3927, 200 }, }, 	-- 200x Fine Aged Cheddar
 					["g"] = {
@@ -238,10 +248,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				i(204374),	-- Emerald Dragon Brooch
 			}),
 			n(TREASURES, {
-				n(TIER_ONE, {
+				n(TIER_ONE, sharedData({
+					["isWeekly"] = true,
+				},{
 					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_white",
-					["description"] = "Requires 5 Keys.",
 					["g"] = {
+						o(387507, {	-- Azerite Powder Barrel
+							["g"] = {
+								i(204065),	-- Azerite Powder
+							},
+						}),
 						o(390009, {	-- Box of Rocks
 							["coord"] = { 29.6, 58.1, THE_FORBIDDEN_REACH },
 							["questID"] = 75118,
@@ -270,6 +286,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 25.4, 53.5, THE_FORBIDDEN_REACH },
 							["questID"] = 74469,
 						}),
+						o(386470, {	-- Gold Pile
+							["questID"] = 74434,
+						}),
+						o(386472, { -- Gold Pile
+							["questID"] = 74435,
+						}),
 						o(385032, {	-- Gold Pile
 							["coord"] = { 25.3, 53.5, THE_FORBIDDEN_REACH },
 							["questID"] = 75013,
@@ -278,7 +300,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 30.6, 57.2, THE_FORBIDDEN_REACH },
 							["questID"] = 75056,
 						}),
-						o(390008, {	-- Ice Spike
+						o(390008, {	-- Ice
 							["coord"] = { 30.8, 57.4, THE_FORBIDDEN_REACH },
 							["questID"] = 75117,
 						}),
@@ -286,12 +308,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 30.7, 57.5, THE_FORBIDDEN_REACH },
 							["questID"] = 75057,
 						}),
+						o(387508, {	-- Igniter Torch
+							["g"] = {
+								i(204066),	-- Igniter Torch
+							},
+						}),
 						o(390258, {	-- Inert Goo
 							["coord"] = { 27.8, 50.8, THE_FORBIDDEN_REACH },
 							["questID"] = 75147,
 							["g"] = {
 								i(193854),	-- Berylmane (PET!)
 							},
+						}),
+						o(388873, {	-- Irontide Coin Bag
+							["questID"] = 74974,
 						}),
 						o(385837, {	-- Journal Entry: Silence
 							["coord"] = { 28.5, 55.6, THE_FORBIDDEN_REACH },
@@ -409,7 +439,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(390257, {	-- Stuffed Bear
 							["coord"] = { 30.5, 57.6, THE_FORBIDDEN_REACH },
-							["questID"] = 75164,
+							["questID"] = 75146,
 							["g"] = {
 								i(204405),	-- Stuffed Bear
 							},
@@ -423,10 +453,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 74419,
 						}),
 					},
-				}),
-				n(TIER_TWO, {
+				})),
+				n(TIER_TWO, sharedData({
+					["isWeekly"] = true,
+				},{
 					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_wind",
-					["description"] = "Requires 8 Keys.",
 					["g"] = {
 						o(386690, {	-- Ambiguous Compendium
 							["coord"] = { 29.4, 58.1, THE_FORBIDDEN_REACH },
@@ -491,6 +522,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(385801, {	-- Gold Pile
 							["coord"] = { 26.5, 49.3, THE_FORBIDDEN_REACH },
 							["questID"] = 73068,
+						}),
+						o(393958, { -- Gold Pile
+							["questID"] = 75254,
+						}),
+						o(393958, {	-- Gold Pile
+							["questID"] = 75255,
 						}),
 						o(386354, {	-- Hardened Chest
 							["coord"] = { 30.1, 57.9, THE_FORBIDDEN_REACH },
@@ -598,6 +635,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								i(204025),	-- Obscure Pastel Stone
 							},
 						}),
+						o(386442, {	-- Primordial Void Cache
+							["description"] = "Requires interacting with 'Mysterious Voidmark' to become visible.",
+							["questID"] = 74527,	-- (maybe on other one)
+						}),
+						-- o(386602, {	-- Primordial Void Cache
+						-- }),
 						o(386445, {	-- Primordial Water Chest
 							["coord"] = { 27.7, 50.5, THE_FORBIDDEN_REACH },
 							["questID"] = 74412,
@@ -650,10 +693,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 28.5, 57.5, THE_FORBIDDEN_REACH },
 							["questID"] = 72890,
 						}),
+						o(389540, {	-- Slimy Goo
+							["questID"] = 75049,
+						}),
 						o(390136, {	-- Spore-bound Essence
 							["coord"] = { 30.7, 55.1, THE_FORBIDDEN_REACH },
 							["questID"] = 75136,
 							["description"] = "Use Restorative Water on an Overgrown Skeleton.",
+							["cr"] = 202336,	-- Overgrown Skeleton
 							["g"] = {
 								i(203852),	-- Spore-bound Essence (TOY!)
 							},
@@ -663,6 +710,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						n(200777, {	-- Unleashed Earth
 							i(169872),	-- Key of Bound Earth
+						}),
+						o(387736, {	-- The Old Gods and the Ordering of Azeroth
+							["questID"] = 75392,
+							["g"] = {
+								i(204185),	-- The Old Gods and the Ordering of Azeroth (Annotated)
+							},
 						}),
 						o(385937, {	-- Titan Coffer
 							["coord"] = { 28.8, 54.8, THE_FORBIDDEN_REACH },
@@ -681,11 +734,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 					},
-				}),
-				n(TIER_THREE, {
+				})),
+				n(TIER_THREE, sharedData({
+					["isWeekly"] = true,
+				},{
 					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_frost",
-					["description"] = "Requires 8 Keys.",
-					["cost"] = { { "i", 203690, 1 }, },	-- 1x Pearlescent Bubble Key
 					["g"] = {
 						o(390559, {	-- Box of Rocks
 							["questID"] = 75152,
@@ -843,13 +896,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(386452, {	-- Void-Bound Strongbox
 							["questID"] = 75283,
+							["g"] = {
+								i(193835),	-- Brigthfeather (PET!)	(likely consolidate into rewards with symlinks on known objects?)
+							},
 						}),
 					},
-				}),
-				n(TIER_FOUR, {
+				})),
+				n(TIER_FOUR, sharedData({
+					["isWeekly"] = true,
+				},{
 					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_fire",
-					["description"] = "Requires 8 Keys.",
-					["cost"] = { { "i", 203690, 1 }, },	-- 1x Pearlescent Bubble Key
 					["g"] = {
 						o(387749, {	-- Animate Crystalspine
 							["coord"] = { 24.5, 51.0, THE_FORBIDDEN_REACH },
@@ -983,12 +1039,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								i(204199),	-- Ley-Infused Crystal
 							},
 						}),
+						o(392583, {	-- Void-Bound Strongbox
+							["description"] = "Requires interacting with 'Mysterious Voidmark' to become visible.",
+							["questID"] = 75185,
+						}),
 						o(386451, {	-- Wind-Bound Strongbox
 							["coord"] = { 25.7, 51.1, THE_FORBIDDEN_REACH },
 							["questID"] = 74417,
 						}),
 					},
-				}),
+				})),
 			}),
 			n(ZONE_DROPS, {
 				i(204012),	-- Cold Frost Stone
@@ -1016,10 +1076,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				i(204015),	-- Swirling Mojo Stone
 				i(204020),	-- Wild Spirit Stone
 				i(204030),	-- Wind Sculpted Stone
-				-- Unknown
-				i(204278),	-- Neltharion's Toolkit
+				-- Drops from any chest
 				i(204257),	-- Holoviewer: The Lady of Dreams (TOY!)
 				i(204262),	-- Holoviewer: The Timeless One (TOY!)
+				i(204687),	-- Obsidian Battle Horn (TOY!)
 			}),
 		}),
 	}),
@@ -1036,6 +1096,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(74444),
 		q(74445),
 		q(74468),
+		q(74471),	-- Triggered after accepting Zskera Vault: Az
 		q(74784),
 		q(72897),
 		q(72896),
@@ -1069,6 +1130,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75032),
 		-- Completed
 		q(74432),
+		q(74472),
 		q(74474),
 		q(74475),
 		q(74497),
@@ -1090,6 +1152,9 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75488),	-- Triggered when fishing up Emmah from Disgusting Vat
 		q(75158),	-- Triggered when fishing up Prismatic Fragment from Disgusting Vat
 		q(75489),	-- Triggered when fishing up Dormant Primordial Fragment #2 from Disgusting Vat
+		q(75130),	-- Triggered after firing the Irontide Cannon
+		q(74486),	-- Triggered after clicking the Perfumed Censer
+		q(75046),	-- Triggered after looting Dormant Primordial Fragment from Consumed Gem
 
 
 		-- TODO: See if these need to be associated with treasures
@@ -1108,14 +1173,13 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		-- Chains
 		q(75173),	-- Pulled Chain First Floor
 		q(75172),	-- Pulled Chain Second Floor
-		q(75171),	-- Pulled Chain Third Floor
 		q(75170),	-- Pulled Chain Third Floor
+		q(75171),	-- Pulled Chain Fourth Floor
 		q(75174),	-- Pulled Chain Fourth Floor
 		-- Stone Dissolver
 		q(75069),	-- On Primordial Earth Cache 389789
 		q(75070),	-- On Primordial Earth Cache 389902
 
-		q(75146),	-- After looting Stuffed Bear
 		qNYI(75007),	-- ???
 		q(74971),	-- During Second Time Is The Charm (dialgoue)
 		--

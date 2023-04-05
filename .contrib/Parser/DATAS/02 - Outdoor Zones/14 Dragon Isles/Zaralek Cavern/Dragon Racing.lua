@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						68795,	-- Dragonriding
-						72366,	-- Account Dragonflight Campaign Completed
+						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 				},{
 					q(74939, {	-- Brimstone Scramble

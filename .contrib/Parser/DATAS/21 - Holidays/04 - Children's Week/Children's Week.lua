@@ -100,7 +100,9 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 						1788,				-- Bad Example
 						1789,				-- Daily Chores
 						1792,				-- Aw, Isn't It Cute?
+						-- #if BEFORE 9.2.0
 						1786,				-- School of Hard Knocks
+						-- #endif
 						1790,				-- Hail To The King, Baby
 					},
 				},

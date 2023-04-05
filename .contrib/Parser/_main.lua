@@ -971,7 +971,7 @@ SEASON_TORMENTED = 15327;
 SEASON_CRYPTIC = 15691;
 SEASON_SHROUDED = 15756;
 SEASON_THUNDERING = 16429;
-SEASON_PH = 17846;
+SEASON_SMOLDERING = 17846;
 
 -- Pet
 PET_BATTLE = -796;
@@ -1358,6 +1358,8 @@ WRATH_PHASE_SIX = 35;
 -- NOTE: Reason for this is to show when stuff is going away eventually.
 -- Cataclysm Classic Phases
 CATA_PHASE_ONE = 40;
+CATA_PHASE_TWO = 41;
+CATA_PHASE_THREE = 42;
 
 -- Mists of Pandaria Classic Phases
 MOP_PHASE_ONE = 50;
@@ -1478,6 +1480,9 @@ PIRATES_DAY = 1011;
 STRANGLETHORN_FISHING_EXTRAVAGANZA = 1015;
 TIMEWALKING = 1016;
 WOW_ANNIVERSARY = 1017;
+
+-- Special Values
+DF_ACCOUNT_CAMPAIGN_QUEST = 72366;	-- Account Dragonflight Campaign Completed
 
 -- Helper Tables
 local DifficultyDB = {
@@ -1808,6 +1813,12 @@ applyData = function(data, t)
 end
 -- Applies a copy of the provided data into the tables of the provided array/group
 sharedData = function(data, t)
+	if not data then
+		print("sharedData: No Shared Data")
+	end
+	if not t then
+		print("sharedData: No Source 't'")
+	end
 	if t then
 		for _,group in ipairs(t) do
 			applyData(data, group);
@@ -1822,6 +1833,12 @@ sharedData = function(data, t)
 end
 -- Performs sharedData logic but also applies the data to the top-level table
 sharedDataSelf = function(data, t)
+	if not data then
+		print("sharedDataSelf: No Shared Data")
+	end
+	if not t then
+		print("sharedDataSelf: No Source 't'")
+	end
 	-- if this is an array, convert to .groups container first to prevent merge confusion
 	t = togroups(t);
 	-- then apply the data to itself
@@ -1831,11 +1848,21 @@ sharedDataSelf = function(data, t)
 end
 -- Applies a copy of the provided data into all sub-groups of the provided table/array
 bubbleDown = function(data, t)
+	if not data then
+		print("bubbleDown: No Bubble Data")
+	end
+	if not t then
+		print("bubbleDown: No Source 't'")
+	end
 	if t then
 		if t.g or t.groups then
 			applyData(data, t);
-			bubbleDown(data, t.groups);
-			bubbleDown(data, t.g);
+			if t.groups then
+				bubbleDown(data, t.groups);
+			end
+			if t.g then
+				bubbleDown(data, t.g);
+			end
 		elseif isarray(t) then
 			for _,group in ipairs(t) do
 				bubbleDown(data, group);
@@ -1885,6 +1912,12 @@ bubbleDownAndReplace = function(data, t)
 end
 -- Performs bubbleDown logic but also applies the data to the top-level table
 bubbleDownSelf = function(data, t)
+	if not data then
+		print("bubbleDownSelf: No Bubble Data")
+	end
+	if not t then
+		print("bubbleDownSelf: No Source 't'")
+	end
 	-- if this is an array, convert to .g container first to prevent merge confusion
 	t = togroups(t);
 	-- then apply regular bubbleDown on the group
@@ -2397,6 +2430,10 @@ holiday = function(id, t)								-- Create an HOLIDAY Object
 	return struct("holidayID", id, t);
 end
 ho = holiday;											-- Create an HOLIDAY Object (alternative shortcut)
+hqt = function(id, t)									-- Create a HQT (Hidden Quest Tracker) Object
+	-- currently this is simply a 'Quest' but will soon be an actual new Type to track
+	return q(id, t);
+end
 illusion = function(id, t)								-- Create an ILLUSION Object (only necessary for illusions without itemIDs)
 	return struct("illusionID", id, t);
 end

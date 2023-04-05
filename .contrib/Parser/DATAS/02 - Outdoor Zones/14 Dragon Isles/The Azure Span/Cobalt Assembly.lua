@@ -267,7 +267,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", RAINBOW_PEARL, 1 },
-									{ "i", SEREVITE_ORE, 10 },
+									{ "i", ADAMANT_SCALES, 10 },
 								},
 							}),
 						}),

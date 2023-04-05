@@ -27,7 +27,7 @@ root(ROOTS.WorldEvents, n(SEVENTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_
 		n(158061, {	-- Historian Ma'di
 			["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
 			["g"] = {
-				i(186556, {	-- Timeless Mechanical Dragonling
+				i(186556, {	-- Timeless Mechanical Dragonling (PET!)
 					["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 				}),
 			},

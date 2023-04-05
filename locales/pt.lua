@@ -541,7 +541,7 @@ local L = app.L;
 	-- About tab
 		--TODO: L.ABOUT = "About";
 		--TODO: L.ABOUT_1 = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
-		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
+		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r";
 		--TODO: L.ABOUT_3 = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
 
 	-- Binding Localizations
@@ -853,7 +853,12 @@ for key,value in pairs({
 		[-1140] = "Acordo de Valdrakken",							-- Valdrakken Accord
 		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
+		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
+		--TODO: [-1151] = "Bartering",								-- Bartering
+		--TODO: [-1152] = "First Crafts",							-- First Crafts
 		[-1200] = "Câmaras de Zskera",								-- Zskera Vaults
+		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
+		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
 	-- Warrior order hall lore items
 		[-2200] = "O Grande Odyn e o Senhor do Fogo",				-- Great Odyn and the Firelord
 		[-2201] = "O Andarilho e a Serpente",						-- The Wanderer and the Serpent
@@ -1324,7 +1329,7 @@ for key,value in pairs({
 	[179913] = "Chamado às armas!",	-- Call to Arms!	--TODO: This was taken from wotlk Wowhead
 	[180229] = "Amontoado de Mandingas Azarentas",	-- Jinxed Hoodoo Pile	--TODO: This was taken from wotlk Wowhead
 	[180248] = "Cardume de Papas-finas",	-- School of Tastyfish
-	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
+	[180327] = "Braseiro da Loucura",	-- Brazier of Madness	--TODO: this was manually translated
 	[180366] = "Caixa de Ferramentas Desgastada",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "Tabuleta da Loucura",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
 	[180369] = "Águas Revoltas Barrentas",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
@@ -3545,11 +3550,11 @@ for key,value in pairs({
 	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Cerveja Contracorrente",	-- Riptide Brew
 	[378088] = "Flor Cristalina",	-- Crystalline Flower
-	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
+	[378820] = "Ponche Popfizz",	-- Popfizz Punch
 	[378857] = "Baú de Obsidiana Perdido",	-- Lost Obsidian Cache
 	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
 	[379290] = "Estátua Ornamentada",	-- Ornamented Statue
-	--TODO: [379296] = "Broken Banding",	-- Broken Banding
+	[379296] = "Elo Quebrado",	-- Broken Banding
 	[379297] = "Gororoba de Bambu Batido",	-- Slam Bam Swill
 	[379314] = "Rede de Pesca Cheia",	-- Full Fishing Net
 	[379321] = "Pegada Misteriosa",	-- Mysterious Paw Print
@@ -3639,7 +3644,7 @@ for key,value in pairs({
 	[381216] = "Luneta do Topógrafo",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
 	[381277] = "Barril de Gostosuras Confiscadas",	-- Barrel of Confiscated Treats
-	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
+	[381296] = "Bagunça Horrível",	-- Horrible Mess
 	[381297] = "Bagagem Extraviada",	-- Misplaced Luggage
 	--TODO: [381353] = "Stone Dragontooth",	-- Stone Dragontooth
 	--TODO: [381354] = "Wrapped Gold Band",	-- Wrapped Gold Band
@@ -3657,7 +3662,7 @@ for key,value in pairs({
 	[381511] = "Cabeça de Arpão",	-- Harpoon Head
 	[381512] = "Vara de Madeira",	-- Wooden Pole
 	[381513] = "Picareta Velha",	-- Old Pickaxe
-	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
+	[381514] = "Basalto Polido do Mar",	-- Sea-Polished Basalt
 	[381575] = "Kit de Armadilha de Pato",	-- Duck Trap Kit
 	[381579] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "Pedido dos Arquivistas",	-- Archivists' Request
@@ -3680,10 +3685,10 @@ for key,value in pairs({
 	[382166] = "Banquete Rubi!",	-- The Ruby Feast!
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
-	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	[382325] = "Drusa de Gemas de Ônix",	-- Onyx Gem Cluster
 	[382621] = "Console de Catalisador de Revivescência",	-- Revival Catalyst Console
 	[383625] = "Caixa de Peixe-brilho Fresco",	-- Case of Fresh Gleamfish
-	--TODO: [383732] = "Tuskarr Tacklebox",	-- Tuskarr Tacklebox
+	[383732] = "Caixa de Pesca Morsana",	-- Tuskarr Tacklebox
 	[383733] = "Poeira Revolvida",	-- Disturbed Dirt
 	[383734] = "Poeira Revolvida",	-- Disturbed Dirt
 	[383735] = "Poeira Revolvida",	-- Disturbed Dirt
@@ -3737,24 +3742,25 @@ for key,value in pairs({
 	[386428] = "Baú Terrano Primordial",	-- Primordial Earth Cache
 	[386429] = "Baú Terrano Primordial",	-- Primordial Earth Cache
 	[386430] = "Baú Endurecido",	-- Hardened Chest
+	[386431] = "Baú Terrano Primordial",	-- Primordial Earth Cache
 	[386432] = "Baú Endurecido",	-- Hardened Chest
-	--TODO: [386433] = "Primordial Wind Cache",	-- Primordial Wind Cache
+	[386433] = "Baú Eólico Primordial",	-- Primordial Wind Cache
 	[386441] = "Baú Eólico Primordial",	-- Primordial Wind Cache
-	--TODO: [386442] = "Primordial Void Cache",	-- Primordial Void Cache
+	[386442] = "Baú Caótico Primordial",	-- Primordial Void Cache
 	[386443] = "Baú Eólico Primordial",	-- Primordial Wind Cache
 	[386444] = "Baú Aquático Primordial",	-- Primordial Water Cache
 	[386445] = "Baú Aquático Primordial",	-- Primordial Water Cache
 	[386447] = "Baú Aquático Primordial",	-- Primordial Water Cache
 	[386450] = "Baú Aquático Primordial",	-- Primordial Water Cache
 	[386451] = "Caixa-forte Atada ao Vento",	-- Wind-Bound Strongbox
-	--TODO: [386452] = "Void-Bound Strongbox",	-- Void-Bound Strongbox
-	--TODO: [386453] = "Wind-Bound Strongbox",	-- Wind-Bound Strongbox
+	[386452] = "Caixa-forte Atada ao Caos",	-- Void-Bound Strongbox
+	[386453] = "Caixa-forte Atada ao Vento",	-- Wind-Bound Strongbox
 	[386454] = "Baú de Gelo",	-- Chest of Ice
 	[386455] = "Baú Cascadura",	-- Hardshell Chest
 	[386456] = "Baú Cascadura",	-- Hardshell Chest
 	[386457] = "Cofre Congelado",	-- Frozen Coffer
 	[386458] = "Baú de Decomposição Primordial",	-- Primordial Decay Cache
-	[386459] = "Baú de Decomposição Primordial",	-- Primordial Decay Cache	--TODO: this was manually translated
+	[386459] = "Baú de Decomposição Primordial",	-- Primordial Decay Cache
 	[386460] = "Baú Arcano Primordial",	-- Primordial Arcane Cache	--TODO: this was manually translated
 	[386461] = "Baú Arcano Primordial",	-- Primordial Arcane Cache
 	[386462] = "Baú Arcano Primordial",	-- Primordial Blood Cache
@@ -3779,7 +3785,7 @@ for key,value in pairs({
 	[386605] = "Pilha de Ouro",	-- Gold Pile
 	[386632] = "Pacote de Dragão Experimental",	-- Experimental Dragon Pack
 	[386633] = "Baú das Tempestades",	-- Chest of Storms
-	--TODO: [386648] = "Mysterious Scroll",	-- Mysterious Scroll
+	[386648] = "Pergaminho Misterioso",	-- Mysterious Scroll
 	[386660] = "Pilha de Ouro",	-- Gold Pile
 	--TODO: [386668] = "Shattered Hakkari Bijou",	-- Shattered Hakkari Bijou
 	--TODO: [386669] = "Fragmented Hakkari Bijou",	-- Fragmented Hakkari Bijou
@@ -3788,6 +3794,8 @@ for key,value in pairs({
 	[386690] = "Compêndio Ambíguo",	-- Ambiguous Compendium
 	[386762] = "Baú de Armadura Arcano Primordial",	-- Primordial Armor Cache
 	[387493] = "Peixe Singular",	-- Unique Fish
+	[387496] = "Braseiro da LoucuraBrazier of Madness",	-- Brazier of Madness	--TODO: this was manually translated
+	[387500] = "Bonequinho de Neve",	-- Chilly Snowman
 	[387501] = "Ficha de Presente de Neltharion",	-- Neltharion Gift Token
 	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
 	[387728] = "Ópera dos Aspectos",	-- Opera of the Aspects
@@ -3798,16 +3806,17 @@ for key,value in pairs({
 	[388712] = "Baú da Ópera",	-- Opera Chest
 	[388866] = "Panela de Reagentes",	-- Reagent Pot
 	[388876] = "Panela de Reagentes",	-- Reagent Pot
-	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
+	[388895] = "Rabiscos Aleatórios",	-- Random Scribblings
+	[388905] = "Kit de Ferramentas de Neltharion",	-- Neltharion Toolkit
 	[388908] = "Gosma Inerte",	-- Inert Goo
 	[389102] = "Fragmento Prismático",	-- Prismatic Fragment
 	[389104] = "Fragmento Prismático",	-- Prismatic Fragment
 	[389105] = "Fragmento Prismático",	-- Prismatic Fragment
 	[389106] = "Fragmento Prismático",	-- Prismatic Fragment
 	[389107] = "Fragmento Prismático",	-- Prismatic Fragment
-	--TODO: [389108] = "Prismatic Fragment",	-- Prismatic Fragment
+	[389108] = "Fragmento Prismático",	-- Prismatic Fragment
 	[389173] = "Baú Arcano Primordial",	-- Primordial Blood Cache
-	--TODO: [389231] = "Primordial Music Cache",	-- Primordial Music Cache
+	[389231] = "Baú Musical Primordial",	-- Primordial Music Cache
 	[389471] = "Grande Baú de Obsidiana",	-- Grand Obsidian Cache
 	[389545] = "Baú Misterioso",	-- Mysterious Chest
 	[389564] = "Visgo Desmiolado",	-- Mindless Slime
@@ -3821,6 +3830,10 @@ for key,value in pairs({
 	[390257] = "Urso de Pelúcia",	-- Stuffed Bear
 	[390258] = "Gosma Inerte",	-- Inert Goo
 	[390559] = "Caixa de Rochas",	-- Box of Rocks
+	[390560] = "Baú de Pesquisa Trancado",	-- Locked Research Chest
+	[392025] = "Moedas Moldadas",	-- Molded Coins
+	[392026] = "Molde de Moeda de Neltharion",	-- Neltharion Coin Mold
+	[392335] = "Baú de Armadura Arcano Primordial",	-- Primordial Armor Cache
 	--TODO: [392569] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392570] = "Chain-Bound Primordial Cache",	-- Chain-Bound Primordial Cache
 	--TODO: [392571] = "Chain-Bound Strongbox",	-- Chain-Bound Strongbox
@@ -3832,6 +3845,8 @@ for key,value in pairs({
 	[393222] = "Baú de Suprimentos",	-- Supply Trunk
 	[393282] = "Caixa de Balão",	-- Balloon Box
 	[393283] = "Caixa de Balão",	-- Balloon Box
+	[398200] = "Cofre Esquecido",	-- Forgotten Lockbox
+	[398770] = "Caixa de Rochas",	-- Box of Rocks
 	[398778] = "Tanque Nojento",	-- Disgusting Vat
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone

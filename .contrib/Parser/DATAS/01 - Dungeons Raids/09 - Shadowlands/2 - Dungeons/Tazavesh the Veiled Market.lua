@@ -45,18 +45,10 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				}),
 			}),
 			petbattle(filter(BATTLE_PETS, {
-				pet(3108, {	-- Curious Purrkin
-					["cr"] = 179164,	-- Curious Purrkin
-				}),
-				pet(3111, {	-- Damp Skrat
-					["cr"] = 179167,	-- Damp Skrat
-				}),
-				pet(3112, {	-- Scavenging Skrat
-					["cr"] = 179168,	-- Scavenging Skrat
-				}),
-				pet(3109, {	-- Silver Purrkin
-					["cr"] = 179165,	-- Silver Purrkin
-				}),
+				pet(3108),	-- Curious Purrkin (PET!)
+				pet(3111),	-- Damp Skrat (PET!)
+				pet(3112),	-- Scavenging Skrat (PET!)
+				pet(3109),	-- Silver Purrkin (PET!)
 			})),
 			n(FLIGHT_PATHS, {
 				fp(2703, {	-- 9.1, Tazavesh (Broker Dungeon)

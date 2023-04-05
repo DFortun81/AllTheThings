@@ -273,7 +273,7 @@ _.Zones =
 					}),
 					o(244698, {	-- Small Treasure Chest
 						["questID"] = 39974,
-						["coord"] = { 66.9, 27.7, 672 },
+						["coord"] = { 66.9, 24.0, 672 },
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(245345, {	-- Small Treasure Chest

@@ -10,7 +10,41 @@ _.Zones =
 				n(ACHIEVEMENTS, {	-- Achievements
 					ach(11427, {	-- No Shellfish Endeavor
 						i(143660),	-- Mrgrglhjorn (TOY!)
+						crit(1),	-- Now That's Just Clawful!
+						crit(2),	-- Oh, the Clawdacity!
+						crit(3),	-- Claws for Alarm!
 					}),
+					ach(10877, {	-- Pillars of Creation
+						crit(1, {	-- Aegis of Aggramar
+							["sourceQuest"] = 43349,	-- The Aegis of Aggramar
+						}),
+						crit(2, {	-- Tidestone of Golganneth
+							["sourceQuest"] = 42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						}),
+						crit(3, {	-- Eye of Aman'Thul
+							["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
+						}),
+						crit(4, {	-- Hammer of Khaz'goroth
+							["sourceQuest"] = 42454,	-- The Hammer of Khaz'goroth
+						}),
+						crit(5, {	-- Tears of Elune
+							["sourceQuest"] = 40890,	-- The Tears of Elune
+						}),
+					}),
+					ach(11186, {	-- Tehd & Marius' Excellent Adventure
+						crit(1, {		-- Azsuna
+							["_quests"] = {
+								42367,	-- Arkethrax
+								38212,	-- Brogozog
+								38352,	-- Kazrok
+								42069,	-- Felwing
+							},
+						}),
+						crit(2),		-- Highmountain
+						crit(3),		-- Val'sharah
+						crit(4),		-- Stormheim
+					}),
+					ach(11189),		-- Variety is the Spice of Life
 				}),
 				header(HEADERS.Spell, 41341, {	-- Balance of Power
 					["description"] = "The only known requirement to start this questline is the completion of your class campaign.",
@@ -548,74 +582,79 @@ _.Zones =
 						}),
 					},
 				}),
-				o(247797, {	-- Lost Mail
-					["maps"] = {
-						LEGION_DALARAN, LEGION_THE_UNDERBELLY, 629,	-- Dalaran
-					},
-					["g"] = {
-						q(41368, {	-- Lost Mail
-							["description"] = "To get this quest, you must find a small envelope near a mailbox in Broken Isles Dalaran.  It can spawn in multiple places and has a long respawn timer.  If you don't want to wait, you can try to find Lost Mail for sale on the Auction House.",
-							["provider"] = { "o", 247797 },	-- Lost Mail
-						}),
-						q(41411, {	-- Lost Mail
-							["description"] = "If you don't want to camp out to start the questline, you can try to find Lost Mail for sale on the Auction House.  (Players who complete the questline will get a piece of mail that can be traded or sold.)",
-							["provider"] = { "i", 135479 },	-- Lost Mail
-						}),
-						q(46278, {	-- Return to Sender
-							["description"] = "After turning in the Lost Mail to Madam Goya in the Underbelly, you'll receive a letter from the Postmaster instructing you to report for duty!  Use the Mail Tube at the coordinates provided to head down to the mail room.",
-							["sourceQuests"] = { 41368, 41411 },	-- Lost Mail
-							["provider"] = { "n", 103976 },	-- The Postmaster
-							["coord"] = { 33.0, 31.7, LEGION_DALARAN },
-						}),
-						q(41397, {	-- A Huge Package
-							["sourceQuests"] = { 46278 },	-- Return to Sender
-							["provider"] = { "n", 103976 },	-- The Postmaster
-						}),
-						q(41367, {	-- Priority Delivery
-							["sourceQuests"] = { 41397 },	-- A Huge Package
-							["provider"] = { "n", 103976 },	-- The Postmaster
-							["maps"] = { 701 },	-- Icecrown Citadel (scenario version)
-							["cost"] = {
-								{ "i", 134857, 1 },	-- Invincible's Reins
-							},
-						}),
-						q(41394, {	-- Service with a Smile
-							["sourceQuests"] = { 41367 },	-- Priority Delivery
-							["provider"] = { "n", 52562 },	-- Johnny Awesome
-							["coord"] = { 68.6, 73.1, FERALAS },
-						}),
-						q(41395, {	-- Due Reward
-							["sourceQuests"] = { 41394 },	-- Service with a Smile
-							["provider"] = { "n", 52562 },	-- Johnny Awesome
-							["coord"] = { 68.6, 73.1, FERALAS },
-						}),
-						q(50247, {	-- The Mail Must Flow
-							["sourceQuests"] = { 41395 },	-- Due Reward
-							["description"] = "After you finish performing menial tasks for Johnny Awesome, you'll receive another letter from the Postmaster requesting your presence in the mail room.",
-							["provider"] = { "n", 103976 },	-- The Postmaster
-							["g"] = {
-								ach(12416),	-- The Total Package
-							},
-						}),
-						ach(12431, {	-- Post Haste
-							["sourceQuests"] = { 50247 },	-- The Mail Must Flow
-							["description"] = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
-							["g"] = {
-								i(156721),	-- Mailemental (PET!)
-								i(156836, {	-- Bulging Package
-									i(156833),	-- Katy's Stampwhistle (TOY!)
-									i(135479),	-- Lost Mail
-								}),
-							},
-						}),
-						ach(12439, {	-- Priority Mail
-							["sourceQuests"] = { 50247 },	-- The Mail Must Flow
-							["description"] = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
-							["g"] = {
-								title(372),	-- Postmaster %s
-							},
-						}),
-					},
+				header(HEADERS.Item, 135479, {	-- Lost Mail
+					o(247797, {	-- Lost Mail
+						["maps"] = {
+							LEGION_DALARAN, LEGION_THE_UNDERBELLY, 629,	-- Dalaran
+						},
+						["g"] = {
+							i(134859),	-- Lost Mail
+						},
+					}),
+					q(41368, {	-- Lost Mail
+						["description"] = "To get this quest, you must find a small envelope near a mailbox in Broken Isles Dalaran.  It can spawn in multiple places and has a long respawn timer.  If you don't want to wait, you can try to find Lost Mail for sale on the Auction House.",
+						["provider"] = { "i", 134859 },	-- Lost Mail
+					}),
+					q(41411, {	-- Lost Mail
+						["description"] = "If you don't want to camp out to start the questline, you can try to find Lost Mail for sale on the Auction House.  (Players who complete the questline will get a piece of mail that can be traded or sold.)",
+						["provider"] = { "i", 135479 },	-- Lost Mail
+					}),
+					q(46278, {	-- Return to Sender
+						["description"] = "After turning in the Lost Mail to Madam Goya in the Underbelly, you'll receive a letter from the Postmaster instructing you to report for duty!  Use the Mail Tube at the coordinates provided to head down to the mail room.",
+						["sourceQuests"] = { 41368, 41411 },	-- Lost Mail
+						["provider"] = { "n", 103976 },	-- The Postmaster
+						["coord"] = { 33.0, 31.7, LEGION_DALARAN },
+					}),
+					q(41397, {	-- A Huge Package
+						["sourceQuests"] = { 46278 },	-- Return to Sender
+						["provider"] = { "n", 103976 },	-- The Postmaster
+						["coord"] = { 38.6, 40.8, LEGION_DALARAN },
+					}),
+					q(41367, {	-- Priority Delivery
+						["sourceQuests"] = { 41397 },	-- A Huge Package
+						["provider"] = { "n", 103976 },	-- The Postmaster
+						["coord"] = { 38.6, 40.8, LEGION_DALARAN },
+						["maps"] = { 701 },	-- Icecrown Citadel (scenario version)
+						["g"] = {
+							i(134857),	-- Invincible's Reins
+						},
+					}),
+					q(41394, {	-- Service with a Smile
+						["sourceQuests"] = { 41367 },	-- Priority Delivery
+						["provider"] = { "n", 52562 },	-- Johnny Awesome
+						["coord"] = { 68.6, 73.1, FERALAS },
+					}),
+					q(41395, {	-- Due Reward
+						["sourceQuests"] = { 41394 },	-- Service with a Smile
+						["provider"] = { "n", 52562 },	-- Johnny Awesome
+						["coord"] = { 68.6, 73.1, FERALAS },
+					}),
+					q(50247, {	-- The Mail Must Flow
+						["sourceQuests"] = { 41395 },	-- Due Reward
+						["description"] = "After you finish performing menial tasks for Johnny Awesome, you'll receive another letter from the Postmaster requesting your presence in the mail room.",
+						["provider"] = { "n", 103976 },	-- The Postmaster
+						["g"] = {
+							ach(12416),	-- The Total Package
+						},
+					}),
+					ach(12431, {	-- Post Haste
+						["sourceQuests"] = { 50247 },	-- The Mail Must Flow
+						["description"] = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
+						["g"] = {
+							i(156721),	-- Mailemental (PET!)
+							i(156836, {	-- Bulging Package
+								i(156833),	-- Katy's Stampwhistle (TOY!)
+								i(135479),	-- Lost Mail
+							}),
+						},
+					}),
+					ach(12439, {	-- Priority Mail
+						["sourceQuests"] = { 50247 },	-- The Mail Must Flow
+						["description"] = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
+						["g"] = {
+							title(372),	-- Postmaster %s
+						},
+					}),
 				}),
 			},
 		}),

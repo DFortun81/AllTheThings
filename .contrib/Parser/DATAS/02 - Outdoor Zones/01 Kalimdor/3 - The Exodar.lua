@@ -352,7 +352,29 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(16716, {	-- Gornii <Cloth Armor Merchant>
 					["coord"] = { 71.5, 91.7, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = GORNII_GROUPS,
+					["sym"] = {
+						{"select", "itemID", 16059 },    -- Common Brown Shirt
+						{"select", "itemID", 3428 },    -- Common Gray Shirt
+						{"select", "itemID", 16060 },    -- Common White Shirt
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+						{"select", "itemID", 3602 },    -- Knitted Belt
+						{"select", "itemID", 3603 },    -- Knitted Bracers
+						{"select", "itemID", 793 },    -- Knitted Gloves
+						{"select", "itemID", 794 },    -- Knitted Pants
+						{"select", "itemID", 792 },    -- Knitted Sandals
+						{"select", "itemID", 795 },    -- Knitted Tunic
+						{"select", "itemID", 3597 },    -- Thick Cloth Belt
+						{"select", "itemID", 3598 },    -- Thick Cloth Bracers
+						{"select", "itemID", 203 },    -- Thick Cloth Gloves
+						{"select", "itemID", 201 },    -- Thick Cloth Pants
+						{"select", "itemID", 202 },    -- Thick Cloth Shoes
+						{"select", "itemID", 200 },    -- Thick Cloth Vest
+					},
 				}),
 				n(16753, {	-- Gotaan  
 					["coord"] = { 67.6, 96.0, THE_EXODAR },
@@ -413,6 +435,30 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(64891),	-- Shroud of Exodar
 						i(67527),	-- Exodar Satchel
 						i(45580),	-- Exodar Tabard
+					},
+				}),
+				n(16747, {	-- Mahri  
+					["coord"] = { 70.6, 92.2, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 236 },    -- Cured Leather Armor
+						{"select", "itemID", 1849 },    -- Cured Leather Belt
+						{"select", "itemID", 238 },    -- Cured Leather Boots
+						{"select", "itemID", 1850 },    -- Cured Leather Bracers
+						{"select", "itemID", 239 },    -- Cured Leather Gloves
+						{"select", "itemID", 237 },    -- Cured Leather Pants
+						{"select", "itemID", 1839 },    -- Rough Leather Belt
+						{"select", "itemID", 796 },    -- Rough Leather Boots
+						{"select", "itemID", 1840 },    -- Rough Leather Bracers
+						{"select", "itemID", 797 },    -- Rough Leather Gloves
+						{"select", "itemID", 798 },    -- Rough Leather Pants
+						{"select", "itemID", 799 },    -- Rough Leather Vest
+						{"select", "itemID", 1843 },    -- Tanned Leather Belt
+						{"select", "itemID", 843 },    -- Tanned Leather Boots
+						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
+						{"select", "itemID", 844 },    -- Tanned Leather Gloves
+						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
+						{"select", "itemID", 845 },    -- Tanned Leather Pants
 					},
 				}),
 				n(16735, {	-- Muhaa 

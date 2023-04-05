@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["sourceQuestNumRequired"] = 1,
 				["sourceQuests"] = {
 					68795,	-- Dragonriding
-					72366,	-- Account Dragonflight Campaign Completed
+					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
 			},{
 				q(73025, {	-- Aerie Chasm Cruise

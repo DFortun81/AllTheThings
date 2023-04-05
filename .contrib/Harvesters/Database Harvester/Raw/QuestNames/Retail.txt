@@ -1,0 +1,2873 @@
+73@@@<TXT> No Reward
+137@@@<NYI> <TXT> Stormwind Commendation
+242@@@<UNUSED>
+259@@@<UNUSED>
+260@@@<UNUSED>
+352@@@<UNUSED>
+406@@@<UNUSED>
+462@@@<UNUSED>
+490@@@<UNUSED>
+497@@@<UNUSED>
+534@@@<UNUSED>
+548@@@[DEPRECATED] <NYI> <TXT> Bloodstone Pendant
+612@@@<UNUSED>
+614@@@The Captain's Chest
+615@@@The Captain's Cutlass
+618@@@Facing Negolash
+620@@@The Monogrammed Sash
+636@@@Legends of the Earth <NYI>
+807@@@<UNUSED>
+810@@@<UNUSED>
+811@@@<UNUSED>
+814@@@<UNUSED>
+820@@@<UNUSED>
+839@@@<UNUSED>
+856@@@<UNUSED>
+934@@@Crown of the Earth
+946@@@<UNUSED>
+988@@@<UNUSED>
+989@@@<UNUSED>
+1155@@@<NYI> <TXT> bug crystal side quest
+1156@@@<NYI> <TXT> speak to alchemist pestlezugg
+1157@@@<NYI> <TXT> pestlezugg needs items
+1158@@@<NYI> <TXT> speak to rabine saturna
+1161@@@<NYI> <TXT> gossip shade of ambermoon
+1162@@@<NYI> <TXT> speak to hamuul runetotem
+1163@@@<NYI> <TXT> speak to tyrande whisperwind
+1277@@@<nyi> <TXT> The Centaur Hoofprints
+1278@@@<nyi> <TXT> The Grim Totem Clan
+1279@@@<nyi> <TXT>The Centaur Hoofprints
+1280@@@<nyi> <TXT>The Centaur Hoofprints
+1288@@@Vimes's Report
+1289@@@<nyi> Vimes's Report
+1290@@@<nyi> Investigating Mosarn
+1291@@@<nyi> <TXT> Centaur Hoofprints
+1292@@@<nyi><TXT> Centaur Hoofprints
+1293@@@<nyi> <TXT> Centaur Hoofprints
+1294@@@<nyi> <TXT>Centaur Sympathies
+1295@@@<nyi> <TXT> Course of Action
+1296@@@<nyi> <TXT> Course of Action
+1297@@@<nyi> <TXT> Course of Action
+1298@@@<nyi> <TXT> Thrall's Dirty Work
+1299@@@<nyi> <TXT> Thrall's Dirty Work
+1300@@@<nyi> <TXT> Lorn Grim Totem
+1390@@@<nyi> Oops, We Killed Them Again.
+1397@@@<nyi> Saved!
+1441@@@<UNUSED>
+1443@@@<nyi> The Shakedown
+1460@@@<UNUSED>
+1461@@@<UNUSED>
+1531@@@Call of Air
+1532@@@Call of Air
+1533@@@<NYI> Call of Air
+1537@@@<NYI> Call of Air
+1538@@@<NYI> Call of Air
+1659@@@<UNUSED>
+1660@@@<UNUSED>
+1662@@@<UNUSED>
+1663@@@<UNUSED>
+1664@@@<UNUSED>
+2000@@@Rokar Bladeshadow
+2018@@@Rokar's Test
+2019@@@Tools of the Trade
+2020@@@<UNUSED>
+2058@@@<UNUSED>
+2059@@@<UNUSED>
+2358@@@Horns of Nez'ra
+2868@@@<TXT> The Shriveled Heart
+2971@@@<UNUSED>
+2997@@@Tome of Divinity
+2999@@@Tome of Divinity
+3000@@@Tome of Divinity
+3023@@@<UNUSED>
+3111@@@<UNUSED> [DEPRECATED]
+3241@@@<NYI> <TXT><redux> Dreadmist Peak
+3383@@@<UNUSED>
+3384@@@<UNUSED>
+3401@@@<UNUSED>
+3403@@@<UNUSED>
+3404@@@<UNUSED>
+3405@@@<UNUSED>
+3422@@@<UNUSED>
+3423@@@<UNUSED>
+3424@@@<UNUSED>
+3425@@@<UNUSED>
+3482@@@<NYI> <TXT> The Pocked Black Box
+3515@@@<UNUSED>
+3516@@@<UNUSED>
+3529@@@<UNUSED>
+3530@@@<UNUSED>
+3531@@@<UNUSED>
+3622@@@<UNUSED>
+3623@@@<UNUSED>
+3624@@@<UNUSED>
+3885@@@<NYI> <TXT> The Gadgetzan Run
+3910@@@<NYI> <TXT> The Un'Goro Run
+4299@@@<NYI> <TXT>The Tomb of the Seven
+4323@@@<NYI> <TXT> Get those Hyenas!!!
+4541@@@<NYI> <TXT>
+4905@@@<UNUSED>
+5101@@@Lee's Ultimate Test Quest... of Doom!
+5205@@@<UNUSED>
+5207@@@<NYI> <TXT> The True Summoner
+5208@@@<NYI> <TXT> The Blessing of Evil
+5209@@@<UNUSED>
+5303@@@<UNUSED>
+5304@@@<UNUSED>
+5506@@@<UNUSED>
+5512@@@<UNUSED>
+5516@@@<UNUSED>
+5520@@@<UNUSED>
+5523@@@<UNUSED>
+5530@@@<NYI> <TXT> Necklace of the Dawn
+5532@@@<NYI> <TXT> Ring of the Dawn
+5628@@@Returning Home
+5629@@@Returning Home
+5630@@@Returning Home
+5631@@@Returning Home
+5632@@@Returning Home
+5633@@@Returning Home
+5635@@@Desperate Prayer
+5636@@@Desperate Prayer
+5637@@@Desperate Prayer
+5638@@@Desperate Prayer
+5639@@@Desperate Prayer
+5640@@@Desperate Prayer
+5641@@@A Lack of Fear
+5642@@@Shadowguard
+5643@@@Shadowguard
+5644@@@Devouring Plague
+5645@@@A Lack of Fear
+5646@@@Devouring Plague
+5647@@@A Lack of Fear
+5653@@@<NYI> Hex of Weakness
+5654@@@Hex of Weakness
+5655@@@Hex of Weakness
+5656@@@Hex of Weakness
+5657@@@Hex of Weakness
+5658@@@Touch of Weakness
+5659@@@<NYI> Touch of Weakness
+5660@@@Touch of Weakness
+5661@@@Touch of Weakness
+5662@@@Touch of Weakness
+5663@@@Touch of Weakness
+5664@@@<UNUSED>
+5665@@@<UNUSED>
+5666@@@<UNUSED>
+5667@@@<UNUSED>
+5668@@@<NYI> A Blessing of Light
+5669@@@<NYI> A Blessing of Light
+5670@@@<NYI> A Blessing of Light
+5671@@@<NYI> A Blessing of Light
+5673@@@Elune's Grace
+5674@@@Elune's Grace
+5675@@@Elune's Grace
+5677@@@Arcane Feedback
+5678@@@Arcane Feedback
+5681@@@<UNUSED>
+5682@@@<UNUSED>
+5683@@@<UNUSED>
+5684@@@<UNUSED>
+5685@@@<NYI> <TXT> The Light Protects You
+5686@@@<NYI> The Light Protects You
+5687@@@<NYI> The Light Protects You
+5688@@@<NYI> <TXT> A Touch of Voodoo
+5689@@@<NYI> A Touch of Voodoo
+5690@@@<NYI> <TXT> A Touch of Voodoo
+5691@@@<NYI> <TXT> In the Dark it was Created
+5692@@@<NYI> In the Dark It was Created
+5693@@@<NYI> In the Dark It was Created
+5694@@@<UNUSED>
+5695@@@<UNUSED>
+5696@@@<UNUSED>
+5697@@@<UNUSED>
+5698@@@<NYI> <TXT> A Small Amount of Hope
+5699@@@<NYI> A Small Amount of Hope
+5700@@@<NYI> A Small Amount of Hope
+5701@@@<NYI> <TXT> The Rites of Old
+5702@@@<NYI> The Rites of Old
+5703@@@<NYI> The Rites of Old
+5704@@@<NYI> <TXT> Undead Priest Robe
+5705@@@<NYI> No Longer a Shadow
+5706@@@<NYI> No Longer a Shadow
+5707@@@<NYI> <TXT> Flirting With Darkness
+5708@@@<NYI> Flirting With Darkness
+5709@@@<NYI> Flirting With Darkness
+5710@@@<NYI> <TXT> Troll Priest Robe
+5711@@@<NYI> The Lost Ways
+5712@@@<NYI> The Lost Ways
+6003@@@<nyi> <txt> Green With Envy
+6165@@@<NYI> <TXT> Archmage Timolain's Remains
+6201@@@<UNUSED> The Legacy of the Ashbringer
+6202@@@<UNUSED> Good and Evil
+6606@@@A Little Luck
+6702@@@[DEPRECATED] <TXT> SF, RFK, GNOMER, BF
+6704@@@[DEPRECATED] <TXT> SM, RFD, ULD
+6706@@@[DEPRECATED] <TXT> ZUL, ST, MAR
+6708@@@[DEPRECATED] <TXT> BRD, DM, BRS
+6710@@@[DEPRECATED] <TXT> UBRS, STRATH, SCHOL
+6841@@@<UNUSED>
+6843@@@Da Foo
+7384@@@<nyi> <txt> The Scale Crafters
+7487@@@Attunement to the Core
+7521@@@Thunderaan the Windseeker
+7522@@@Examine the Vessel
+7561@@@Rise, Thunderfury!
+7637@@@Emphasis on Sacrifice
+7638@@@Lord Grayson Shadowbreaker
+7639@@@To Show Due Judgment
+7640@@@Exorcising Terrordale
+7641@@@The Work of Grimand Elmore
+7642@@@Collection of Goods
+7643@@@Ancient Equine Spirit
+7644@@@Blessed Arcanite Barding
+7645@@@Manna-Enriched Horse Feed
+7646@@@The Divination Scryer
+7648@@@Grimand's Finest Work
+7670@@@Lord Grayson Shadowbreaker
+7681@@@Hunter test quest
+7682@@@Hunter test quest2
+7741@@@Praise from the Emerald Circle <NYI> <TXT>
+7788@@@Vanquish the Invaders!
+7789@@@Quell the Silverwing Usurpers
+7790@@@The Written Word
+7869@@@test quest - do not use
+7870@@@test quest2 - do not use
+7871@@@Vanquish the Invaders!
+7872@@@Vanquish the Invaders!
+7873@@@Vanquish the Invaders!
+7874@@@Quell the Silverwing Usurpers
+7875@@@Quell the Silverwing Usurpers
+7876@@@Quell the Silverwing Usurpers
+7904@@@<UNUSED>
+8080@@@Arathi Basin Resources!
+8123@@@Cut Arathor Supply Lines
+8152@@@REUSE
+8154@@@Arathi Basin Resources!
+8155@@@Arathi Basin Resources!
+8156@@@Arathi Basin Resources!
+8160@@@Cut Arathor Supply Lines
+8161@@@Cut Arathor Supply Lines
+8162@@@Cut Arathor Supply Lines
+8230@@@Collin's Test Quest
+8247@@@<UNUSED>
+8248@@@<UNUSED>
+8266@@@Ribbons of Sacrifice
+8268@@@Ribbons of Sacrifice
+8290@@@Vanquish the Invaders
+8291@@@Vanquish the Invaders!
+8294@@@Quell the Silverwing Usurpers
+8295@@@Quell the Silverwing Usurpers
+8297@@@Arathi Basin Resources!
+8299@@@Cut Arathor Supply Lines
+8411@@@[DEPRECATED] Mastering the Elements
+8444@@@<NYI> <TXT> gossip shade of ambermoon
+8445@@@<NYI> <TXT> gossip shade of ambermoon
+8459@@@<UNUSED>
+8530@@@The Alliance Needs Singed Corestones!
+8617@@@The Horde Needs Singed Corestones!
+8869@@@Sweet Serenity
+8973@@@REUSE
+9031@@@<TXT>Anthion's Parting Words
+9065@@@The Pattymac Special
+9378@@@DND FLAG The Dread Citadel - Naxxramas
+9411@@@<UNUSED>Infused Bandages
+9412@@@<UNUSED>Crystal Flake Throat Lozenge
+9413@@@<UNUSED>Crystal Flake Throat Lozenge
+9414@@@<UNUSED>Infused Bandages
+9556@@@To The Victor...
+55296@@@--
+60860@@@--
+60863@@@--
+60864@@@--
+60865@@@--
+60866@@@--
+60868@@@--
+60870@@@--
+61547@@@--
+63769@@@--
+8571@@@<UNUSED> Armor Kits
+65309@@@--
+65593@@@--
+65597@@@--
+65601@@@--
+65602@@@--
+65603@@@--
+65604@@@--
+65610@@@--
+65616@@@--
+66145@@@--
+66193@@@--
+66281@@@--
+66286@@@--
+66287@@@--
+66288@@@--
+66289@@@--
+66290@@@--
+66291@@@--
+66292@@@--
+66293@@@--
+66294@@@--
+66295@@@--
+66317@@@--
+66318@@@--
+8337@@@<UNUSED>
+8339@@@Royalty of the Council <NYI> <TXT> UNUSED
+8340@@@Twilight Signet Ring <NYI> <TXT>
+8344@@@Windows to the Source
+9168@@@Heart of Deatholme
+9306@@@<DEPRECATED>Speak with Vindicator Aldar
+9307@@@<DEPRECATED>Compassion
+9308@@@<DEPRECATED>Blood Elf Remains?
+9316@@@[TXT] Goblin Savages
+9347@@@Voidwalkers Gone Wild
+9348@@@Ravager Roundup
+9350@@@A Peon's Work is Never Done
+9354@@@Searching for New Materials
+9379@@@Fortifying the Felhunter
+9384@@@<NYI>Harnessing the Light
+9432@@@Travel to Astranaar
+9445@@@<NYI><TXT>Placeholder: A Worthy Offering
+9460@@@Combining Forces
+9484@@@Taming the Beast
+9485@@@Taming the Beast
+9486@@@Taming the Beast
+9497@@@Emblem of the Fel Horde
+9507@@@<DEPRECATED>From the Desk of Mogul Razdunk
+9532@@@Find Keltus Darkleaf
+9546@@@Fulfilling a Promise
+9547@@@Call of Air
+9551@@@Call of Air
+9552@@@Call of Air
+9553@@@Call of Air
+9554@@@Call of Air
+9568@@@On the Offensive
+9577@@@DAILY TEST QUEST (PVP)
+9583@@@Omar's Test Quest bk
+9591@@@Taming the Beast
+9592@@@Taming the Beast
+9593@@@Taming the Beast
+9596@@@<DEPRECATED>Control
+9597@@@<UNUSED>
+9599@@@<UNUSED>
+9613@@@Deprecated: Keanna's Will
+9614@@@Deprecated: Reforge a Short Blade
+9615@@@Deprecated: Reforge a Long Blade
+9617@@@Seek the Farstriders
+9618@@@Return the Reports
+9650@@@Deprecated: Magical Augmentation
+9651@@@Deprecated: Magical Augmentation
+9652@@@Deprecated: Physical Enhancement
+9653@@@Deprecated: Physical Enhancement
+9654@@@Deprecated: A Well Rounded Defense
+9655@@@Deprecated: Healing Amplification
+9656@@@Deprecated: Lethality First
+9657@@@Deprecated: Offensive Channeling
+9658@@@Deprecated: Offensive Channeling
+9659@@@Deprecated: Healing Amplification
+9660@@@Deprecated: Lethality First
+9661@@@Deprecated: A Well Rounded Defense
+9662@@@Deprecated: Keanna's Freedom
+9679@@@<NYI>Return to Knight-Lord Bloodvalor
+9712@@@The Thalassian Warhorse
+9713@@@Glowcap Harvesting Enabling Flag
+9745@@@<DEPRECATED>Suppressing the Flame
+9754@@@
+9755@@@
+9757@@@Seek Huntress Kella Nightbow
+9767@@@Know Your Enemy
+9768@@@Coilfang Spellbooks
+9880@@@Hellfire Penninsula: -pn - A - ToWoW - Hellfire Turnin Cap
+9881@@@Hellfire Penninsula: -pn - H - ToWoW - Hellfire Turnin Cap
+9926@@@FLAG Shadow Council/Warmaul Questline
+10080@@@Forge Camps of the Legion
+10083@@@The Legion's Plans
+10181@@@Collector's Edition: -pn - E - FLAG
+10215@@@
+10217@@@Fossil Fuel
+10219@@@Walk the Dog
+10244@@@R.T.F.R.C.M.
+10260@@@Netherologist Coppernickels
+10292@@@More Power!
+10364@@@Caedmos
+10376@@@Symbol of Hope
+10377@@@Nothing to Fear
+10378@@@Consume Magic
+10379@@@Touch of Weakness
+10383@@@This is a Breadcrumb!
+10402@@@<TXT>
+10404@@@Against the Legion
+10452@@@DON'T USE [PH] Fel Orc 1
+10453@@@DON'T USE [PH] Fel Orc bread
+10491@@@Call of Air
+10529@@@The Hunter's Path
+10530@@@The Hunter's Path
+10532@@@Cut Arathor Supply Lines
+10534@@@Returning Home
+10535@@@Arathi Basin Resources!
+10539@@@Returning Home
+10591@@@DESTROY THIS QUEST!
+10605@@@Carendin Summons
+10616@@@<nyi>Breadcrumb
+10631@@@Back In Business
+10638@@@NOT A QUEST
+10716@@@Test Flight: Raven's Wood <needs reward>
+10743@@@[DEPRECATED]<txt>Hero of the Mok'Nathal
+10746@@@DEPRECATED Karazhan: LAB - E - Exalted Ring - Caster
+10779@@@The Hunter's Path
+10787@@@[DEPRECATED]<txt><nyi>The Dragons of Dragons' End
+10789@@@Return to Carendin Halgar
+10790@@@Return to Mordak Darkfist
+10844@@@Forge Camp: Anger
+10890@@@[UNUSED] <NYI>
+10931@@@Return to the Exodar
+10932@@@Return to the Exodar
+10933@@@Return to Silvermoon
+10934@@@Return to Silvermoon
+10999@@@One Shot, One Kill
+11121@@@DAILY TEST QUEST (RAID)
+11125@@@[PH] New Hinterlands Quest
+11127@@@<NYI>Thunderbrew Secrets
+11197@@@ZZOLD Upper Deck Promo - Ghost Wolf Mount OLD
+11226@@@Upper Deck Promo - Spectral Tiger Mount
+11335@@@Call to Arms: Arathi Basin
+11336@@@Call to Arms: Alterac Valley
+11337@@@Call to Arms: Eye of the Storm
+11338@@@Call to Arms: Warsong Gulch
+11339@@@Call to Arms: Arathi Basin
+11340@@@Call to Arms: Alterac Valley
+11341@@@Call to Arms: Eye of the Storm
+11342@@@Call to Arms: Warsong Gulch
+11353@@@FLAG: Got the work shirt
+11425@@@Test Quest - Craig
+11435@@@Gathered Pumpkins NYI
+11437@@@[PH] Beer Garden A
+11438@@@[PH] Beer Garden B
+11444@@@[PH] Beer Garden A
+11445@@@[PH] Beer Garden B
+11493@@@UNUSED
+11577@@@WoW Collector's Edition: - DEM - E - FLAG
+11588@@@REUSE
+11589@@@REUSE
+11874@@@Upper Deck Promo - Rocket Mount
+11974@@@[ph] Now, When I Grow Up...
+12186@@@FLAG: Winner
+12187@@@FLAG: Participant
+12600@@@Upper Deck Promo - Bear Mount
+63448@@@--
+63450@@@--
+63546@@@--
+63547@@@--
+63767@@@--
+63768@@@--
+63770@@@--
+63865@@@--
+63866@@@--
+63978@@@--
+64028@@@--
+64031@@@--
+64032@@@--
+64033@@@--
+64034@@@--
+64035@@@--
+64036@@@--
+64037@@@--
+64038@@@--
+64046@@@--
+64047@@@--
+64048@@@--
+64049@@@--
+64050@@@--
+64051@@@--
+64052@@@--
+64053@@@--
+64054@@@--
+64062@@@--
+64063@@@--
+64064@@@--
+64071@@@--
+64095@@@--
+64128@@@--
+64139@@@--
+64140@@@--
+64141@@@--
+64142@@@--
+64143@@@--
+64144@@@--
+64217@@@--
+64275@@@--
+64319@@@--
+9298@@@reuse
+10549@@@REUSE
+65284@@@--
+65285@@@--
+65561@@@--
+65562@@@--
+11189@@@One Last Time
+11402@@@Clayton's Quest: Extreme!!
+11461@@@DEPRECATED
+11462@@@Handsome Terry
+11463@@@Pirates of the North Seas
+11578@@@The "Chow" Quest (123)aa COPY
+11579@@@The "Chow" Quest (123)aa COPY
+11934@@@Unlocking Your Potential [PH]
+11992@@@Navigation Charts (Deprecated)
+11994@@@Juno's Flag Tester
+12001@@@zzOLDHunting Tarot: Lesser Beasts
+12015@@@Test Quest for Craig
+12018@@@Sweet Revenge
+12021@@@A Letter Home
+12023@@@Sweeter Revenge
+12024@@@Recording the Fallen
+12025@@@A Scarlet Among Us
+12087@@@A Little Help Here? DEPRECATED
+12108@@@DEPRECATED
+12156@@@DEPRECAED
+12162@@@Solstice Village
+12163@@@The Evil Below
+12313@@@UNUSED Save Brewfest!
+12426@@@DEPRECATED
+12445@@@
+12493@@@PvP Test
+12586@@@In Search of Bigger Game
+12601@@@The Alchemist's Apprentice
+12602@@@The Alchemist's Apprentice
+12625@@@Dominion Over Acherus
+12626@@@Company of the Damned
+12682@@@Uncharted Territory (DEPRECATED)
+12731@@@
+12764@@@The Secret to Kungaloosh
+12765@@@Kungaloosh
+12780@@@DEPRICATED>>Enemy of Our Enemy
+12825@@@Expressions of Gratitude
+12834@@@Not Rain, Nor Snow, Nor Exploding Plane
+12835@@@All Grown Up
+12837@@@Tore's Got the Goods
+12881@@@The Brothers Bronzebeard
+12923@@@UNUSED
+13123@@@WotLK Collector's Edition: - DEM - E - FLAG
+13173@@@Amidst the Confusion
+13210@@@Blizzard Account: - DEM - E - FLAG
+13299@@@ZZOLDWisp Cloak
+13303@@@The Panchurian Candidate
+13317@@@----
+13378@@@Chief Engineer Copperclaw
+13404@@@Static Shock Troops: the Bombardment
+13405@@@Call to Arms: Strand of the Ancients
+13406@@@Riding the Wavelength: The Bombardment
+13407@@@Call to Arms: Strand of the Ancients
+13427@@@Call to Arms: Alterac Valley
+13428@@@Call to Arms: Alterac Valley
+13476@@@For Great Honor
+13478@@@Concerted Efforts
+13649@@@Justin's Fun Test
+13914@@@Searing Roc Feathers
+13915@@@Hungry, Hungry Hatchling
+13916@@@Poached, Scrambled, Or Raw?
+13917@@@Gorishi Grub
+13990@@@Upper Deck Promo - Chicken Mount
+13997@@@If You're Reading This While I'm In Combat...
+14032@@@Kobold Camp Cleanup [Programming Test]
+14163@@@Call to Arms: Isle of Conquest
+14164@@@Call to Arms: Isle of Conquest
+14178@@@Call to Arms: Arathi Basin
+14179@@@Call to Arms: Eye of the Storm
+14180@@@Call to Arms: Warsong Gulch
+14181@@@Call to Arms: Arathi Basin
+14182@@@Call to Arms: Eye of the Storm
+14183@@@Call to Arms: Warsong Gulch
+14185@@@FLAG: Riding Trainer Advertisement (40)
+14186@@@FLAG: Riding Trainer Advertisement (60)
+14187@@@FLAG: Riding Trainer Advertisement (70)
+14200@@@Kickoff Mail Marker
+14349@@@The Call to Command
+14350@@@The Crimson Courier
+14351@@@[DEPRECATED] Battle of Hillsbrad
+14409@@@A Cautious Return
+14418@@@The Deathstalkers
+14419@@@The Deathstalkers
+14420@@@The Deathstalkers
+14421@@@The Deathstalkers
+14441@@@Garrosh's Autograph
+24216@@@Call to Arms: Warsong Gulch
+24217@@@Call to Arms: Warsong Gulch
+24218@@@Call to Arms: Warsong Gulch
+24219@@@Call to Arms: Warsong Gulch
+24220@@@Call to Arms: Arathi Basin
+24221@@@Call to Arms: Arathi Basin
+24222@@@Call to Arms: Eye of the Storm DEPRECATED
+24223@@@Call to Arms: Arathi Basin
+24224@@@Call to Arms: Warsong Gulch
+24225@@@Call to Arms: Warsong Gulch
+24226@@@Call to Arms: Arathi Basin
+24227@@@DEPRECATED
+24426@@@Call to Arms: Alterac Valley
+24427@@@Call to Arms: Alterac Valley
+24508@@@Temp Quest Record
+24509@@@Temp Quest Record
+24746@@@REUSE
+24869@@@Deprogramming
+24870@@@Securing the Ramparts
+24871@@@Securing the Ramparts
+24872@@@Respite for a Tormented Soul
+24873@@@Residue Rendezvous
+24874@@@Blood Quickening
+24875@@@Deprogramming
+24876@@@Securing the Ramparts
+24877@@@Securing the Ramparts
+24878@@@Residue Rendezvous
+24879@@@Blood Quickening
+24880@@@Respite for a Tormented Soul
+25238@@@Strength Ring Flag
+70349@@@--
+66990@@@--
+66991@@@--
+70354@@@--
+70356@@@--
+70395@@@--
+70396@@@--
+70397@@@--
+70398@@@--
+70401@@@--
+70411@@@--
+70448@@@--
+70449@@@--
+70663@@@--
+70664@@@--
+70665@@@--
+70666@@@--
+70667@@@--
+70668@@@--
+70669@@@--
+70670@@@--
+70671@@@--
+70672@@@--
+70673@@@--
+70674@@@--
+70675@@@--
+70676@@@--
+70677@@@--
+70678@@@--
+70679@@@--
+70680@@@--
+70681@@@--
+70682@@@--
+70683@@@--
+70684@@@--
+70685@@@--
+70686@@@--
+70687@@@--
+70688@@@--
+70689@@@--
+70690@@@--
+70691@@@--
+70692@@@--
+70693@@@--
+70694@@@--
+70695@@@--
+70696@@@--
+70734@@@--
+70735@@@--
+70736@@@--
+70737@@@--
+70760@@@--
+70761@@@--
+70762@@@--
+70764@@@--
+70765@@@--
+70855@@@--
+70860@@@--
+70861@@@--
+70862@@@--
+70863@@@--
+70865@@@--
+70868@@@--
+70869@@@--
+70870@@@--
+70998@@@--
+70999@@@--
+71098@@@--
+71099@@@--
+71100@@@--
+71101@@@--
+71102@@@--
+71103@@@--
+71104@@@--
+71105@@@--
+71106@@@--
+71107@@@--
+71108@@@--
+71109@@@--
+71110@@@--
+71111@@@--
+71112@@@--
+71113@@@--
+71114@@@--
+71115@@@--
+71116@@@--
+71117@@@--
+71118@@@--
+71119@@@--
+71120@@@--
+71121@@@--
+71122@@@--
+71123@@@--
+71124@@@--
+71125@@@--
+71126@@@--
+71127@@@--
+71128@@@--
+71129@@@--
+71130@@@--
+71131@@@--
+71132@@@--
+71133@@@--
+71134@@@--
+72433@@@--
+72522@@@--
+72523@@@--
+13574@@@Peering Into the Vortex (DEPRECATED)
+13608@@@Along for the Ride
+13637@@@Ram Delivery
+13802@@@The Goblin with Two Brains
+13804@@@To Catch a Fish-Thing
+13894@@@Marking the Kills (DEPRECATED)
+13939@@@Fel Moss Corruption
+13941@@@Vile Touch
+13972@@@Among Humans Again
+13978@@@Lurkers in the Mist
+13984@@@Tracking Our Every Move
+13993@@@You're the Bomb!
+13994@@@(DEPRECATED)
+13996@@@Can You Get This Quest While I'm In Combat?
+14000@@@Hunt or Be Hunted
+14002@@@A Job for a Bloodhound
+14007@@@Steady Shot
+14008@@@Frost Nova
+14009@@@Learning the Word
+14010@@@Eviscerate
+14011@@@Primal Strike
+14012@@@Corruption
+14013@@@Charge
+14015@@@Incomplete Cartography
+14020@@@The Curse
+14025@@@To the Frontlines
+14026@@@Off With a Bang
+14027@@@Face to Face
+14029@@@Breaking the Siege
+14097@@@Get That Merchant Out of Here!
+14133@@@The Way to a Mage's Heart
+14137@@@Class Training (Tracking Event)
+14156@@@Man on the Inside
+14298@@@Kill Cultists/Dragonflight
+14315@@@Liam's Stupor
+14317@@@Tremors
+14415@@@Apparitions in the Orchard
+14425@@@The First Quest
+14426@@@The Second Quest
+14427@@@Item Quest
+14450@@@Random Drop Test Progressive
+14451@@@Random Drop Flat Rate
+24460@@@Out of Order
+24462@@@Operation Item Get
+24494@@@Empowered Rune
+24526@@@Filling Up the Spellbook
+24527@@@Your Path Begins Here
+24530@@@Oh, A Hunter's Life For Me
+24531@@@Getting Battle-Ready
+24544@@@Paul Test Quest
+24640@@@The Arts of a Warrior
+24696@@@Un'Goro: PRK - E - Shizzle's Flyer 02 - Testing It Out
+24738@@@Williden's Journal
+24739@@@Expedition Salvation
+24760@@@The Arts of a Shaman
+24766@@@The Arts of a Druid
+24772@@@The Arts of a Rogue
+24778@@@The Arts of a Hunter
+24784@@@Learnin' tha Word
+24860@@@Profitable Preservation
+24867@@@[NOT USED] Lumberjack Slam Placeholder
+24900@@@Blueleaf Tubers
+24908@@@[NOT USED] Build the Fort Placeholder
+24909@@@[NOT USED] Protect the Pass Placeholder
+24935@@@Body And Soul
+24962@@@Trail-Worn Scroll
+24964@@@The Thrill of the Hunt
+24967@@@Stab!
+24968@@@Dark Deeds
+24969@@@Charging into Battle
+24984@@@The Prodigal Lich
+24985@@@Proving Allegiance
+24986@@@The Prodigal Lich Returns
+24987@@@Dark Lady, Watch Over Us
+25016@@@FLAG - Training Complete
+25076@@@Taming the Beast
+25077@@@Taming the Beast
+25078@@@Taming the Beast
+25083@@@Beast Training
+25096@@@Thunderdrome: Prince Mosh!
+25097@@@Little Sumpthin'
+25101@@@Friend of a Friend
+25113@@@[DEPRECATED]Scorpid Poaching: Dunestalkers
+25114@@@[DEPRECATED]Basilisk Poaching: Gazer Guts
+25116@@@[DEPRECATED]Hyena Poaching: Rabid Livers
+25119@@@Impulse Hunting
+25137@@@Valley of Trials: PRK - H - Warlock Pet Imp
+25138@@@Glyphic Parchment
+25139@@@Steady Shot
+25140@@@Swine Hunting
+25141@@@Eviscerate
+25142@@@Into the Shadows
+25143@@@Primal Strike
+25144@@@Rock Meets Flesh
+25145@@@Corruption
+25146@@@A Demonic Fire
+25147@@@Charge
+25148@@@Hone Your Holler
+25149@@@Frost Nova
+25150@@@Empowered Minds
+25189@@@Spirits Be Praised
+25225@@@Oil Change
+25231@@@Southseas Scum
+25302@@@Remnants of Battle
+25307@@@Eavesdropping
+25313@@@The Defector
+25318@@@Twilight Battle Plans
+25322@@@Fiery Inscriptions
+25326@@@Block Their Retreat
+25327@@@Awakening
+25335@@@Natural Materials
+25376@@@Gordunni Cobalt
+25501@@@Poaching for Dummies
+25508@@@A Brilliant Idea
+25557@@@Chief Ukorz
+25604@@@Hammering It Out
+25625@@@Piercing the Ruins
+25789@@@Hammering It Out
+25827@@@Lo'Gosh is Ready for Battle
+25828@@@Goldrinn's Message to Ysera
+25831@@@Hamuul's Message to Ysera
+25833@@@Aviana's Message to Ysera
+25902@@@Your First Totem!
+25903@@@It's Hot and it Might Explode
+26104@@@Our Aquatic Neigh-Bors
+26109@@@Land Ho!
+26123@@@When in Vashj'ir...
+26151@@@Dark Letter
+26198@@@The Arts of a Mage
+26200@@@The Arts of a Priest
+26201@@@The Power of a Warlock
+26204@@@The Arts of a Warrior
+26216@@@Stoleways
+26217@@@Overboard
+26218@@@Long Shot
+26231@@@Boarding Party
+26239@@@<PH>Wildhammer Totems
+26242@@@Deepholm, Plane of Earth
+26253@@@Preserve the Evidence
+26262@@@Twilight Armaments
+26274@@@The Arts of a Warlock
+26392@@@Voucher of Bravery
+26458@@@Twilight Falls
+26460@@@In Search of Thaelrid
+26471@@@Knowledge in the Deeps
+26559@@@[NYI] Breaking Out is Hard to Do
+26626@@@We Have a Situation
+26675@@@The Value of Trust
+26715@@@Malfurion Stormrage
+26716@@@A Bit of Privacy
+26789@@@You no take axe!
+26790@@@Magmadar Must Die!
+26841@@@Forbidden Sigil
+26847@@@The Quaking Fields
+26848@@@X Marks the Spot
+26849@@@The Axe of Earthly Sundering
+26850@@@Elemental Ore
+26851@@@One With the Ground
+26852@@@The Fragment's Inside
+26853@@@The Middle Fragment
+26859@@@Searching for the Lost Satchel
+26877@@@The Fragment's Inside
+26880@@@Gilneas City Unphase Cheat
+26891@@@Amongst the Ruins
+26900@@@Agamaggan
+26904@@@Corruption
+26940@@@Frost Nova
+26945@@@Learning New Techniques
+26946@@@A Rogue's Advantage
+26947@@@A Woodsman's Training
+26948@@@Moonfire
+27020@@@The First Lesson
+27021@@@The Hunter's Path
+27022@@@Extinguishing the Idol
+27023@@@The Way of the Sunwalkers
+27027@@@Primal Strike
+27029@@@Cure the Scourge
+27052@@@Lingering Twilight
+27066@@@Learning the Word
+27067@@@Moonfire
+27081@@@[DEPRECATED]Trusting the Traitor
+27137@@@Earth Girls Aren't So Easy
+27138@@@Earth Girls Aren't So Easy
+27149@@@School of the Damned
+27250@@@REUSE - BAD COPY
+27543@@@[TEMP PH] What We Have Done
+27678@@@The Platinum Discs
+27723@@@Kyle's Test Quest
+27819@@@TEST - RVM
+28016@@@Adventurers Wanted: Scarlet Monastery Graveyard
+28018@@@Adventurers Wanted: Scarlet Monastery Armory
+28020@@@Adventurers Wanted: Scarlet Monastery Graveyard
+28022@@@Adventurers Wanted: Scarlet Monastery Armory
+28095@@@Breadcrumb Out
+28110@@@Breadcrumb Out
+28371@@@[DND] ORKUS QUEST FLAG [DO NOT LOCALIZE]
+28412@@@Blessing of the Family
+28585@@@Polished
+28648@@@Frak's Wild Ride
+28739@@@Night Elf Class Skill Tracker Quest
+28754@@@Battle of Life and Death
+28835@@@Necessary Refreshment (Backup Groundspawn Quest)
+28844@@@[DEPRECATED] Hyena Harvest
+28851@@@[DEPRECATED] Sullah's Sideshow
+28890@@@Wasteland
+28891@@@The Spirits of Southwind
+28892@@@Hive in the Tower
+28893@@@Umber, Archivist
+28894@@@Uncovering Past Secrets
+28895@@@Befoulers of the Wind
+28896@@@Recalling
+28897@@@Baristolth's Plan
+28898@@@Secretion and Subterfuge
+28899@@@Riding in Plain Sight
+28900@@@Mysteries of the Twilight Hive
+28901@@@Prisoners of Madness
+28902@@@<PH>Hive'Zora B/C
+28903@@@<PH>Faceless
+28904@@@<PH>Bad Stuff
+28936@@@Diva Dilemma
+28937@@@Alliance Breadcrumb
+28938@@@Save the Children
+28939@@@Beware of Strangers
+28940@@@Get Antidote
+28941@@@Transformation
+28942@@@Revenge!
+29025@@@Samophlange Repair
+29041@@@Welcome to Paradise
+29042@@@Kitchen Clean-Up
+29043@@@Lunch Break
+29044@@@No Child of Mine
+29045@@@Fit for a King
+29046@@@Chef's Challenge: Steelback
+29047@@@Chef's Challenge: Faewing
+29048@@@Chef's Challenge: Grumpfin
+29049@@@So Sous Me
+29050@@@Out of Gas
+29055@@@Float My Boat
+29056@@@Fruit Round-Up
+29057@@@Firebeak
+29058@@@Roc Collection
+29059@@@Save 'Em
+29060@@@At Your Service
+29062@@@Finding the Cultist
+29063@@@Subversion
+29064@@@We Need a Boat
+29065@@@Out of This World
+29070@@@Twilight Plight
+29072@@@Last Resort, Literally
+29076@@@Kevin's Test Quest
+29077@@@What Hath Dodd Wrought
+29097@@@Mor'shan Caravan Rescue
+29098@@@Demon Seed
+29099@@@Mor'shan Caravan Delivery
+29108@@@Mor'shan Test Quest
+29140@@@Under the Skylord's Gaze
+29170@@@UNUSED
+29171@@@UNUSED
+29178@@@Oooh, Shinies!
+29180@@@Promises, Promises...
+29184@@@X Marks... Your Doom!
+29187@@@Tuskin' Raiders
+29212@@@[DEPRECATED] Fire Hawk Down
+29216@@@Malfurion's Breach
+29224@@@[DEPRICATED] NO LONGER USED
+29256@@@[DEPRECATED] Eat Your Heart Out
+29258@@@Meteorite Hunt
+29259@@@[DEPRECATED] Hide and Seek
+29260@@@[DEPRECATED] Enlighten Us
+29266@@@DEPRECATED Zul'Gurub Voodoo (NYI)
+29271@@@Bound for Warmer Weather
+29277@@@Druid Tree, Stage 3 Tracking
+29294@@@Animate Embers
+29372@@@Trouble in Podunk
+29373@@@Trouble in Podunk
+29441@@@From the Belly of the Beast
+29459@@@A Captured Banner
+29460@@@The Enemy's Insignia
+29461@@@The Captured Journal
+29473@@@Putting the Carnies Back Together Again
+29532@@@Dark Tidings
+29533@@@Dark Tidings
+29569@@@Warlord Kalithresh's Prized Possession
+29671@@@The Black Morass
+29853@@@Champion of the King
+30119@@@Well of Eternity RP Tracker
+30173@@@War Pigs!
+32961@@@Scary Ghosts and Nice Sprites - Tracking Quest
+8971@@@REUSE
+37042@@@--
+37139@@@--
+37200@@@--
+37258@@@--
+37267@@@--
+37337@@@Vignette: Strategist Ankor
+37519@@@--
+37527@@@--
+37529@@@--
+37643@@@--
+37846@@@--
+37854@@@--
+37929@@@--
+37931@@@--
+37936@@@--
+37954@@@--
+37971@@@--
+38011@@@--
+38012@@@--
+38016@@@--
+38027@@@--
+38055@@@--
+38056@@@--
+38063@@@Unlock "Legends of Azeroth."
+38064@@@Unlock "The Burning Legion."
+38065@@@Unlock "Wrath of the Lich King."
+38066@@@Unlock "The Shattering."
+38067@@@Unlock "Heart of Pandaria."
+38068@@@Unlock "A Siege of Worlds."
+38069@@@Unlock "Stormwind."
+38070@@@Unlock "Orgrimmar."
+38071@@@Unlock "High Seas."
+38072@@@Unlock "War March."
+38073@@@Unlock "Ironforge."
+38074@@@Unlock "Unlock Thunder Bluff."
+38075@@@Unlock "Cold Mountain."
+38076@@@Unlock "Mulgore Plains."
+38077@@@Unlock "Night Song."
+38078@@@Unlock "Undercity."
+38079@@@Unlock "Gnomeregan"
+38080@@@Unlock "Zul'Gurub Voo Doo"
+38081@@@Unlock "Tinkertown"
+38082@@@Unlock "The Zandalari"
+38083@@@Unlock "Exodar"
+38084@@@Unlock "Silvermoon"
+38085@@@Unlock "Curse of the Worgen"
+38086@@@Unlock "Rescue the Warchief"
+38087@@@Unlock "Angelic"
+38088@@@Unlock "Ghost"
+38089@@@Unlock "Mountains"
+38090@@@Unlock "Magic"
+38091@@@Unlock "The Black Temple"
+38092@@@Unlock "Invincible"
+38093@@@Unlock "Karazhan Opera House"
+38094@@@Unlock "The Argent Tournament"
+38095@@@Unlock "Lament of the Highborne"
+38096@@@Unlock "Faerie Dragon"
+38097@@@Unlock "Totems of the Grizzlemaw"
+38098@@@Unlock "Mountains of Thunder"
+38099@@@Unlock "Darkmoon Carousel"
+38100@@@Unlock "Shalandis Isle"
+38101@@@Unlock "Way of the Monk"
+38102@@@Unlock "Song of Liu Lang"
+38103@@@Gossip Test Case 1
+38104@@@Gossip Test Case 2
+38105@@@Gossip Test Case 3
+38106@@@Greeting Text Test Case 1
+38107@@@Greeting Text Test Case 2
+38108@@@Greeting Text Test Case 3
+38228@@@--
+38230@@@--
+38233@@@--
+38319@@@--
+38325@@@--
+38326@@@--
+38327@@@--
+38328@@@--
+38329@@@--
+38330@@@--
+38335@@@--
+38336@@@--
+38338@@@--
+38340@@@--
+38364@@@--
+38373@@@--
+38375@@@--
+38385@@@--
+38403@@@--
+38409@@@--
+38418@@@--
+38429@@@--
+38432@@@--
+38450@@@--
+38456@@@--
+38464@@@--
+38484@@@--
+38492@@@--
+38493@@@--
+38497@@@--
+38520@@@--
+38553@@@--
+38554@@@--
+38555@@@--
+38556@@@--
+38590@@@--
+38606@@@--
+38625@@@Hook & Sinker
+38627@@@Worgen Stalkers (Horde Only)
+38630@@@Horde Kill Squad (Alliance Only)
+38635@@@--
+38636@@@--
+38651@@@--
+38652@@@--
+38653@@@--
+38706@@@--
+38824@@@--
+38835@@@--
+38846@@@--
+38848@@@--
+38859@@@--
+38875@@@--
+38879@@@--
+38880@@@--
+38881@@@--
+38883@@@--
+38884@@@--
+38891@@@--
+38905@@@--
+38908@@@--
+38918@@@--
+38920@@@--
+38921@@@--
+38942@@@--
+38973@@@--
+38984@@@--
+38985@@@--
+38986@@@--
+38987@@@--
+38988@@@--
+38991@@@--
+38998@@@--
+38999@@@--
+39008@@@--
+39053@@@--
+39064@@@--
+39065@@@--
+39091@@@--
+39115@@@--
+39139@@@--
+39140@@@--
+39141@@@--
+39146@@@--
+39148@@@--
+39150@@@--
+39194@@@--
+39213@@@--
+39215@@@--
+39270@@@--
+39281@@@--
+39284@@@--
+39291@@@--
+39298@@@--
+39319@@@--
+39320@@@--
+39715@@@Menacing Grumplings
+39747@@@--
+39754@@@--
+39755@@@--
+39760@@@--
+39778@@@--
+39779@@@--
+39784@@@Beastmaster Pao'lek
+39797@@@Aponi Brightmane Slotted
+39838@@@Fire!
+39839@@@Mysterious Dust
+39840@@@The Council's Approval
+39841@@@Friends in Low Places
+39844@@@Cold Hard Coin
+39845@@@The Obliterum Forge
+39863@@@Trial By Fel Fire
+39888@@@--
+39893@@@--
+39894@@@--
+39897@@@--
+39898@@@--
+39899@@@--
+39901@@@--
+39902@@@--
+39908@@@--
+39909@@@--
+39911@@@--
+39912@@@--
+39913@@@--
+39915@@@--
+39917@@@--
+39922@@@--
+39924@@@--
+40027@@@--
+40098@@@--
+40101@@@--
+40128@@@--
+40150@@@--
+40226@@@--
+40239@@@--
+40271@@@--
+40275@@@--
+40281@@@--
+40283@@@--
+40284@@@--
+40285@@@--
+40286@@@--
+40287@@@--
+40289@@@--
+40290@@@--
+40291@@@--
+40292@@@--
+40294@@@--
+40295@@@--
+40309@@@--
+40318@@@--
+40387@@@--
+40413@@@Amateur Hunters
+40421@@@--
+40423@@@Unethical Adventurers
+40501@@@REUSEME_40501
+40548@@@--
+40549@@@--
+40550@@@--
+40551@@@--
+40552@@@--
+40554@@@--
+40555@@@--
+40563@@@--
+40564@@@Shoe Shine Kit Tracking Quest
+40566@@@--
+40592@@@--
+40648@@@--
+40789@@@--
+40799@@@--
+40800@@@--
+40802@@@--
+40809@@@--
+40826@@@--
+40836@@@--
+40887@@@--
+40895@@@The Haunted Mire
+40899@@@--
+40903@@@--
+40926@@@--
+40928@@@--
+40948@@@--
+40979@@@--
+40981@@@--
+40984@@@--
+40999@@@--
+41015@@@Artifacts Need Artificers
+41017@@@Empowering Your Artifact
+41020@@@--
+41046@@@--
+41061@@@--
+41088@@@--
+41092@@@Forge Guards Move
+41130@@@--
+41131@@@--
+41132@@@--
+41133@@@--
+41236@@@--
+41245@@@--
+41247@@@--
+41249@@@--
+41325@@@--
+41341@@@--
+41348@@@--
+41365@@@--
+41401@@@--
+41402@@@--
+41403@@@--
+41404@@@--
+41417@@@--
+41419@@@--
+41429@@@--
+41456@@@--
+41476@@@--
+41477@@@--
+41543@@@--
+41576@@@--
+41577@@@--
+41578@@@--
+41581@@@--
+41587@@@--
+41588@@@--
+41589@@@--
+41592@@@--
+41593@@@--
+41594@@@--
+41595@@@--
+41683@@@--
+41693@@@--
+41698@@@--
+41757@@@--
+41758@@@--
+41765@@@--
+41827@@@--
+41830@@@--
+41843@@@--
+41887@@@--
+41894@@@--
+41902@@@--
+41912@@@--
+41913@@@--
+41923@@@--
+41928@@@--
+41962@@@--
+41968@@@--
+41969@@@--
+41970@@@--
+41971@@@--
+41972@@@--
+41973@@@--
+41974@@@--
+41975@@@--
+41976@@@--
+41977@@@--
+42057@@@--
+42059@@@--
+42060@@@--
+42066@@@--
+42073@@@Boros Tracker Two
+42095@@@--
+42099@@@--
+42109@@@--
+42121@@@--
+42122@@@--
+42144@@@--
+42152@@@--
+42153@@@--
+42155@@@--
+42156@@@--
+42161@@@--
+42162@@@--
+42163@@@--
+42164@@@--
+42180@@@--
+42195@@@--
+42196@@@--
+42216@@@--
+42217@@@--
+42218@@@--
+42219@@@--
+42246@@@--
+42247@@@--
+42248@@@--
+42249@@@--
+42251@@@--
+42252@@@--
+42253@@@--
+42254@@@--
+42256@@@--
+42257@@@--
+42258@@@--
+42259@@@--
+42260@@@--
+42261@@@--
+42262@@@--
+42263@@@--
+42264@@@--
+42298@@@--
+42299@@@--
+42300@@@--
+42301@@@--
+42302@@@--
+42304@@@--
+42305@@@--
+42306@@@--
+42307@@@--
+42310@@@--
+42311@@@--
+42312@@@--
+42313@@@--
+42314@@@--
+42315@@@--
+42316@@@--
+42317@@@--
+42318@@@--
+42319@@@--
+42320@@@--
+42321@@@--
+42322@@@--
+42324@@@--
+42325@@@--
+42326@@@--
+42327@@@--
+42335@@@--
+42336@@@--
+42337@@@--
+42341@@@--
+42342@@@--
+42343@@@--
+42344@@@--
+42346@@@--
+42347@@@--
+42348@@@--
+42349@@@--
+42355@@@--
+42356@@@--
+42357@@@--
+42358@@@--
+42359@@@--
+42441@@@--
+42478@@@--
+42600@@@--
+42615@@@--
+42621@@@--
+42698@@@Selia, Master of Balefire
+42700@@@Quin'el, Master of Chillwind
+42710@@@--
+42715@@@Frost DK - Highmountain Event
+42716@@@Frost DK - Val'sharah Event
+42717@@@Frost DK - Stormheim Event
+42718@@@Frost DK - Azsuna Event
+42720@@@--
+42759@@@--
+42760@@@--
+42761@@@--
+42793@@@--
+42794@@@--
+42923@@@--
+42925@@@--
+43278@@@Felforged Plate Armor
+43279@@@Fel-Chain Mail Armor
+43280@@@Felshroud Leather Armor
+43281@@@Fel-Infused Cloth Armor
+43308@@@Treasure 071 - Outskirts
+43320@@@--
+43321@@@--
+43322@@@--
+43326@@@--
+43329@@@--
+43330@@@--
+43439@@@--
+43482@@@--
+43544@@@--
+43602@@@Vignette: Randril
+43725@@@Flag 2
+43727@@@Flag 3
+43728@@@Flag 4
+43739@@@--
+43754@@@--
+43757@@@--
+43768@@@--
+43770@@@--
+43773@@@--
+43779@@@--
+43931@@@--
+43997@@@Short-Supply Reward
+43998@@@Short-Supply Reward
+43999@@@Short-Supply Reward
+44000@@@Short-Supply Reward
+44001@@@Short-Supply Reward
+44020@@@--
+44068@@@Shaman Has Given Doomhammer to Oracle
+44069@@@Shaman Has Given Sharas'dal to Oracle
+44123@@@Druids of the Scythe - First Freed
+44125@@@Tracking Quest
+44126@@@Tracking Quest
+44127@@@Tracking Quest
+44128@@@Tracking Quest
+44129@@@Druids of the Scythe - 2
+44130@@@Druids of the Scythe - 3
+44131@@@Druids of the Scythe - 4
+44132@@@Druids of the Scythe - 5
+44133@@@Druids of the Scythe - 6
+44141@@@Tracking Quest
+44313@@@Tracking Quest
+44314@@@Tracking Quest
+44315@@@Tracking Quest
+44316@@@Tracking Quest
+44317@@@Tracking Quest
+44318@@@Tracking Quest
+44319@@@Tracking Quest
+44320@@@Tracking Quest
+44321@@@Tracking Quest
+44322@@@Tracking Quest
+44494@@@--
+44648@@@Tracking Quest: 7.0 Class Hall - Paladin - Pacing Mission 2B
+44649@@@Tracking Quest: 7.0 Class Hall - Priest - One-Time Quest Mission - Chapter 3 (JAP)
+44703@@@Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 1
+44704@@@Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 2
+44705@@@Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 3
+44706@@@Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 4
+44755@@@--
+44757@@@--
+44774@@@--
+44776@@@--
+44778@@@--
+44779@@@--
+44804@@@--
+44806@@@--
+44824@@@--
+44826@@@--
+44848@@@Ch 5 Available Tracking Quest
+44852@@@--
+44855@@@--
+44886@@@Unwanted Evidence
+44887@@@Uncovering Orders
+44912@@@7.1 Dungeon - Karazhan - Quest Item Reward
+44942@@@--
+44944@@@Aura of Uncertainty
+45029@@@Talon's Vengeance - Intro Complete
+45031@@@--
+45077@@@--
+45078@@@--
+45100@@@--
+45124@@@--
+45129@@@Appearance
+45130@@@Appearance
+45131@@@Appearance
+45161@@@7.1.5 Special - 850 - Special - Brawlers - Fight 01 - Tracking Quest
+45164@@@7.1.5 Special - 850 - Special - Brawlers - Fight 02 - Tracking Quest
+45165@@@7.1.5 Class Hall - Brawlers - Fight 01 - Overmax Reward Credit - Tracking Quest
+45170@@@Tracking Quest
+45303@@@7.1.5 Class Hall - Special - Brawlers - Fight 03 - Tracking Quest
+45309@@@7.1.5 Class Hall - Brawlers - Fight 02 - Overmax Reward Credit - Tracking Quest
+45310@@@7.1.5 Class Hall - Brawlers - Fight 03 - Overmax Reward Credit - Tracking Quest
+45315@@@7.1.5 Class Hall - Brawlers - Intro - Tracking Quest - Has Picked up Quest Item
+45336@@@--
+45338@@@--
+45352@@@Touch of a Titan
+45371@@@--
+45422@@@Edict of the God-King
+45517@@@Brinebeard the Risen
+45519@@@--
+45521@@@--
+45529@@@--
+45546@@@Free Attempt Used
+45558@@@--
+45606@@@--
+45636@@@Dual Boss - Free Attempt Used [DNT]
+45745@@@Legion 110 PvP
+45768@@@--
+45775@@@FLAG (DNT)
+45832@@@--
+45860@@@--
+45941@@@--
+45976@@@7.1.5 Class Hall - Investigate the Broken Shore - Mission Tracking Quest
+45978@@@7.1.5 Class Hall - All - Broken Shore Mission 01
+45979@@@7.1.5 Class Hall - All - Broken Shore Mission 02
+45980@@@7.1.5 Class Hall - All - Broken Shore Mission 03
+45981@@@7.1.5 Class Hall - All - Broken Shore Mission 04
+45982@@@7.1.5 Class Hall - All - Broken Shore Mission 05
+45983@@@7.1.5 Class Hall - All - Broken Shore Mission 05
+45984@@@7.1.5 Class Hall - Paladin - Investigate the Broken Shore - Q01 - See Dead Messenger
+46033@@@Healer - Free Attempt Used [DNT]
+46114@@@--
+46118@@@Larry test quest
+46181@@@--
+46289@@@--
+46303@@@--
+46306@@@--
+46307@@@--
+46706@@@--
+46803@@@--
+46806@@@--
+46872@@@--
+46873@@@--
+46874@@@--
+46875@@@--
+46876@@@--
+46877@@@--
+46878@@@--
+46879@@@--
+46880@@@--
+46881@@@--
+46882@@@--
+46883@@@--
+46884@@@--
+46885@@@--
+46886@@@--
+46887@@@--
+46888@@@--
+46889@@@--
+46890@@@--
+46891@@@--
+46892@@@--
+46893@@@--
+46894@@@--
+46895@@@--
+46896@@@--
+46897@@@--
+46898@@@--
+46899@@@--
+46900@@@--
+46901@@@--
+46902@@@--
+46903@@@--
+46905@@@--
+46906@@@--
+46907@@@--
+46908@@@--
+46909@@@--
+46910@@@--
+46911@@@--
+46912@@@--
+46913@@@--
+46914@@@--
+46915@@@--
+46916@@@--
+46917@@@--
+46918@@@--
+46919@@@--
+46920@@@--
+46921@@@--
+46922@@@--
+46925@@@--
+46934@@@--
+46936@@@--
+46937@@@--
+47149@@@Legion Season 3 and 4 - Gladiator's Plate Armor
+47187@@@--
+47190@@@--
+47192@@@--
+47265@@@--
+47417@@@--
+47626@@@--
+47655@@@--
+47658@@@DNT
+47842@@@--
+47875@@@--
+47876@@@--
+47886@@@--
+47893@@@--
+48220@@@--
+48457@@@Tracking Quest
+49760@@@--
+49761@@@--
+49762@@@--
+49763@@@--
+49764@@@--
+69556@@@--
+71776@@@--
+74441@@@Eaglemaster Niraak
+72405@@@An Unlikely Informant
+72408@@@A Window to the Past
+72409@@@Rotten Old Memories
+72424@@@Looking for Something Specific
+72426@@@The New Clessington Estate
+72430@@@Misdeeds in Moonbrook
+72431@@@A Hungry Heritage
+72432@@@Supply Only the Finest Goons
+72445@@@To Northshire
+72446@@@What's Their Problem?
+72449@@@Knock It Off!
+72450@@@The Clessington Will
+72451@@@Will to Survive
+72452@@@Go with Honor, Friend
+72453@@@Betrayal of the Brotherhood
+72462@@@A People in Need of Healing
+72463@@@Galgar's Cactus Apple Surprise...
+72464@@@The Kosh'harg
+72465@@@The Blessing of the Land
+72466@@@The Spirit of Thunder Ridge
+72467@@@The Blessing of the Clan
+72468@@@--
+72469@@@--
+72470@@@--
+72471@@@--
+72472@@@--
+72473@@@--
+72474@@@Tracking a Killer
+72475@@@Cornering Gor'krosh
+72476@@@The Blessing of the Ancestors
+72477@@@Orcish Groceries
+72478@@@Honor and Glory
+72479@@@Aka'magosh
+72644@@@An Urgent Matter
+73177@@@--
+73394@@@--
+73396@@@--
+73397@@@--
+73549@@@--
+73703@@@A Summon to Orgrimmar
+73705@@@--
+74374@@@An Important Heirloom
+74415@@@A Worthy Offering
+74541@@@--
+74581@@@The Long Knives
+74672@@@--
+74677@@@--
+74894@@@--
+75265@@@An Urgent Matter
+75878@@@--
+75879@@@--
+75881@@@--
+63520@@@Winging It
+64259@@@--
+64523@@@--
+64524@@@--
+64525@@@--
+64537@@@--
+64538@@@--
+64539@@@--
+64540@@@--
+64558@@@--
+64559@@@--
+64580@@@--
+64764@@@--
+64855@@@--
+65042@@@Dragons!
+65051@@@Who We Were
+65083@@@--
+65085@@@Primalist Rage
+65086@@@Second Thoughts
+65099@@@Neltharion's Final Command
+65296@@@--
+65365@@@--
+65369@@@--
+65428@@@--
+65442@@@--
+65446@@@--
+65454@@@--
+65458@@@--
+65459@@@--
+65568@@@--
+65569@@@--
+65596@@@--
+65599@@@--
+65639@@@Tarasek
+65654@@@--
+65671@@@--
+65675@@@--
+65676@@@--
+65692@@@--
+65710@@@--
+65712@@@--
+65714@@@--
+65716@@@--
+65719@@@--
+65722@@@--
+65734@@@--
+65738@@@--
+65740@@@--
+65759@@@--
+65765@@@--
+65766@@@--
+65781@@@--
+65786@@@--
+65787@@@--
+65790@@@--
+65797@@@--
+65799@@@--
+65800@@@--
+65807@@@--
+65808@@@--
+65809@@@--
+65835@@@--
+65843@@@--
+65851@@@--
+65853@@@--
+65876@@@Shiverweb Silk
+65884@@@--
+65885@@@--
+65889@@@--
+65894@@@[DNT] - Removed - Eggs Benediction
+65897@@@[DNT] - Removed - Focus Locus
+65912@@@--
+65915@@@--
+65917@@@--
+65919@@@--
+65922@@@--
+65923@@@--
+65924@@@--
+65927@@@--
+65931@@@--
+65932@@@--
+65933@@@--
+65934@@@--
+65936@@@Break the Storm
+65941@@@--
+65942@@@--
+65945@@@--
+65960@@@--
+65961@@@--
+65964@@@--
+66002@@@--
+66004@@@Galgresh
+66008@@@--
+66034@@@--
+66043@@@--
+66045@@@--
+66051@@@--
+66052@@@--
+66053@@@--
+66054@@@--
+66058@@@--
+66072@@@--
+66073@@@--
+66075@@@--
+66086@@@--
+66088@@@--
+66089@@@--
+66092@@@--
+66099@@@--
+66102@@@--
+66120@@@--
+66125@@@--
+66127@@@--
+66132@@@--
+66142@@@--
+66143@@@--
+66144@@@--
+66146@@@--
+66153@@@--
+66157@@@--
+66158@@@The Mountains Move [NYI]
+66161@@@For the Future [NYI]
+66162@@@Cataloging Wildlife
+66168@@@--
+66171@@@--
+66172@@@--
+66192@@@--
+66194@@@--
+66200@@@--
+66202@@@--
+66204@@@--
+66205@@@Spell It Out For Me
+66207@@@--
+66208@@@--
+66209@@@--
+66216@@@--
+66219@@@--
+66220@@@--
+66229@@@--
+66233@@@--
+66234@@@--
+66238@@@--
+66240@@@--
+66255@@@--
+66260@@@--
+66271@@@--
+66273@@@--
+66274@@@--
+66276@@@--
+66284@@@--
+66300@@@--
+66301@@@--
+66303@@@--
+66304@@@--
+66305@@@--
+66307@@@--
+66310@@@--
+66311@@@--
+66315@@@--
+66319@@@--
+66322@@@--
+66325@@@--
+66330@@@--
+66332@@@--
+66334@@@--
+66338@@@--
+66341@@@--
+66342@@@--
+66345@@@--
+66346@@@--
+66347@@@--
+66348@@@--
+66350@@@--
+66355@@@--
+66357@@@--
+66358@@@--
+66365@@@--
+66366@@@Overly Loud Pocketwatch
+66367@@@Elaborate Lace Cuff
+66370@@@--
+66371@@@--
+66372@@@--
+66403@@@--
+66404@@@--
+66405@@@--
+66407@@@--
+66408@@@--
+66424@@@Scraps to Upgrades
+66433@@@--
+66434@@@Ancient Sword Design
+66446@@@--
+66450@@@--
+66451@@@--
+66452@@@--
+66453@@@--
+66454@@@--
+66455@@@--
+66469@@@--
+66475@@@--
+66476@@@--
+66479@@@--
+66481@@@--
+66483@@@--
+66485@@@--
+66486@@@--
+66487@@@--
+66490@@@Dragons!
+66491@@@--
+66492@@@--
+66494@@@--
+66495@@@--
+66496@@@--
+66497@@@--
+66498@@@--
+66499@@@--
+66502@@@--
+66506@@@--
+66514@@@--
+66515@@@Sizzling Nuggets
+66518@@@Reinforced Scales
+66519@@@Azure Basilisk Belly
+66520@@@Stolen Weapon Mold
+66521@@@Stolen Valdrakken Weapon
+66522@@@Draconium Blade Sharpener
+66530@@@--
+66531@@@--
+66532@@@--
+66533@@@--
+66535@@@--
+66536@@@--
+66537@@@--
+66538@@@--
+66539@@@--
+66540@@@--
+66541@@@--
+66542@@@--
+66543@@@--
+66544@@@--
+66545@@@--
+66548@@@--
+66572@@@--
+66573@@@--
+66574@@@--
+66576@@@--
+66580@@@--
+66581@@@--
+66583@@@--
+66585@@@--
+66587@@@--
+66591@@@--
+66592@@@--
+66599@@@--
+66600@@@--
+66601@@@--
+66602@@@--
+66603@@@--
+66604@@@--
+66605@@@--
+66606@@@--
+66607@@@--
+66608@@@--
+66609@@@--
+66610@@@--
+66623@@@--
+66624@@@--
+66625@@@--
+66626@@@--
+66627@@@--
+66628@@@--
+66629@@@--
+66630@@@--
+66631@@@--
+66632@@@--
+66634@@@--
+66637@@@--
+66638@@@--
+66639@@@--
+66640@@@--
+66641@@@--
+66642@@@--
+66643@@@--
+66644@@@--
+66645@@@--
+66653@@@--
+66663@@@--
+66664@@@--
+66665@@@--
+66666@@@--
+66667@@@--
+66668@@@--
+66669@@@--
+66670@@@--
+66672@@@--
+66674@@@--
+66677@@@--
+66678@@@--
+66685@@@--
+66686@@@--
+66697@@@--
+66701@@@--
+66702@@@--
+66705@@@--
+66707@@@Calming the Storm
+66716@@@--
+66717@@@--
+66723@@@--
+66731@@@--
+66736@@@--
+66739@@@--
+66740@@@--
+66741@@@--
+66742@@@--
+66743@@@--
+66744@@@--
+66745@@@--
+66746@@@--
+66747@@@--
+66748@@@--
+66749@@@--
+66750@@@--
+66751@@@--
+66752@@@--
+66753@@@--
+66754@@@--
+66755@@@--
+66756@@@--
+66757@@@--
+66758@@@--
+66759@@@--
+66760@@@--
+66761@@@--
+66762@@@--
+66763@@@--
+66764@@@--
+66765@@@--
+66766@@@--
+66767@@@--
+66768@@@--
+66769@@@--
+66770@@@--
+66771@@@--
+66772@@@--
+66773@@@--
+66774@@@--
+66775@@@--
+66776@@@--
+66782@@@--
+66789@@@--
+66790@@@--
+66791@@@--
+66792@@@--
+66793@@@--
+66794@@@--
+66795@@@--
+66796@@@--
+66797@@@--
+66798@@@--
+66800@@@--
+66801@@@--
+66803@@@--
+66804@@@--
+66806@@@--
+66807@@@--
+66809@@@--
+66810@@@--
+66811@@@--
+66812@@@--
+66813@@@--
+66815@@@--
+66816@@@--
+66817@@@--
+66818@@@[DNT] The Windy Springs
+66819@@@--
+66820@@@--
+66821@@@--
+66822@@@--
+66823@@@--
+66824@@@[DNT] Curious Treasure
+66832@@@--
+66842@@@A Shard of the Past
+66849@@@--
+66850@@@--
+66851@@@--
+66852@@@--
+66853@@@--
+66857@@@--
+66859@@@--
+66926@@@--
+66927@@@--
+66928@@@--
+66930@@@--
+66954@@@--
+66955@@@--
+66976@@@--
+66977@@@--
+66978@@@--
+66979@@@--
+66980@@@--
+66981@@@--
+66982@@@The Queen of Dragons
+66986@@@--
+67000@@@[DNT] Game, Set, Match
+67001@@@--
+67016@@@--
+67019@@@--
+67020@@@--
+67022@@@--
+67023@@@--
+67025@@@--
+67028@@@--
+67029@@@--
+67037@@@--
+67040@@@--
+67042@@@--
+67045@@@--
+67052@@@--
+67054@@@Our Present, Our History
+67069@@@--
+67085@@@--
+67086@@@--
+67087@@@--
+67088@@@--
+67089@@@--
+67090@@@--
+67091@@@--
+67092@@@--
+67098@@@--
+67114@@@--
+67115@@@--
+67138@@@--
+67148@@@--
+67149@@@--
+67150@@@--
+67151@@@--
+67152@@@--
+67153@@@--
+67163@@@--
+67164@@@--
+67165@@@--
+67166@@@--
+67171@@@--
+67172@@@--
+67223@@@--
+67224@@@--
+67225@@@--
+67226@@@--
+67227@@@--
+67228@@@--
+67744@@@Shezra
+67749@@@--
+68086@@@--
+69292@@@PH
+69669@@@PH
+69840@@@Enraged Sapphire
+69841@@@Thunderous Matriarch
+69849@@@Enraged Steamburst Elemental
+69853@@@--
+69854@@@Solethus' Gravestone
+69860@@@--
+69863@@@Scav Notail
+69879@@@Spellwrought Snowman
+69881@@@--
+69887@@@Hanmuk
+69905@@@--
+69906@@@--
+69907@@@--
+69908@@@--
+69913@@@Towers of Earthen Power
+69917@@@--
+69920@@@--
+69945@@@--
+69947@@@--
+69948@@@Wilrive
+69977@@@--
+69978@@@--
+69982@@@--
+69985@@@--
+69989@@@--
+69996@@@--
+69997@@@--
+70008@@@--
+70010@@@New Moves
+70013@@@--
+70014@@@--
+70017@@@--
+70019@@@--
+70020@@@--
+70022@@@Tale of Korave
+70037@@@Unpowered Tools
+70038@@@--
+70046@@@--
+70056@@@--
+70065@@@--
+70113@@@--
+70114@@@--
+70115@@@--
+70116@@@--
+70117@@@--
+70118@@@--
+70119@@@--
+70120@@@--
+70121@@@--
+70130@@@--
+70131@@@--
+70140@@@--
+70141@@@--
+70142@@@--
+70143@@@--
+70144@@@--
+70145@@@--
+70147@@@--
+70151@@@--
+70153@@@Arcane Devourer
+70165@@@--
+70177@@@[DNT] Bird Watcher Test
+70205@@@--
+70213@@@Harkyn Grymstone
+70216@@@--
+70222@@@[DNT] Death to Onboarding
+70225@@@--
+70226@@@--
+70227@@@--
+70228@@@--
+70249@@@--
+70257@@@--
+70276@@@--
+70340@@@Professions Quest - Part 5 - Challenge 2
+70369@@@Blasting the Past
+70375@@@The Rewards of Onboarding
+70387@@@--
+70388@@@--
+70393@@@--
+70394@@@--
+70403@@@--
+70404@@@--
+70405@@@--
+70406@@@--
+70245@@@Studies of Wild Magic
+70443@@@--
+70447@@@--
+70508@@@Fueling the Engine: Second Spark
+70551@@@--
+70552@@@--
+70553@@@--
+70554@@@--
+70555@@@--
+70556@@@--
+70588@@@--
+70590@@@--
+70596@@@Essence of Arcana
+70597@@@--
+70626@@@--
+70628@@@--
+70630@@@Fueling the Engine: Third Spark
+70635@@@--
+70637@@@--
+70645@@@--
+70657@@@--
+70660@@@--
+70718@@@Gushgut the Beaksinker
+70733@@@Djaradin War Party
+70782@@@--
+70787@@@Caught In a Dusk Storm
+70898@@@--
+70923@@@--
+70949@@@--
+71054@@@--
+71055@@@--
+71056@@@--
+71057@@@--
+71059@@@--
+71061@@@--
+71062@@@--
+71063@@@--
+71064@@@--
+71065@@@--
+71068@@@--
+71069@@@--
+71070@@@--
+71071@@@--
+71072@@@--
+71076@@@--
+71077@@@--
+71078@@@--
+71080@@@--
+71081@@@--
+71082@@@--
+71084@@@--
+71086@@@--
+71087@@@--
+71088@@@--
+70993@@@--
+71186@@@--
+71201@@@--
+71214@@@--
+71236@@@--
+71237@@@--
+71262@@@--
+71311@@@--
+71312@@@--
+71339@@@--
+71356@@@--
+71359@@@--
+71371@@@--
+71372@@@--
+71373@@@--
+71454@@@--
+71457@@@--
+71473@@@--
+71500@@@--
+71513@@@--
+71545@@@--
+71583@@@--
+71621@@@--
+71649@@@--
+71658@@@--
+71761@@@--
+71763@@@--
+71774@@@--
+71784@@@--
+71785@@@--
+71856@@@--
+71867@@@--
+71926@@@--
+71927@@@--
+71928@@@--
+71929@@@--
+71936@@@--
+71937@@@--
+71938@@@--
+71949@@@--
+71968@@@--
+71996@@@--
+72000@@@--
+72004@@@--
+72012@@@--
+72061@@@Stormcaller Veldra
+72066@@@--
+72073@@@--
+72076@@@--
+72077@@@--
+72078@@@--
+72093@@@--
+72106@@@--
+72107@@@--
+72108@@@--
+72109@@@--
+72111@@@--
+72153@@@--
+72180@@@--
+72255@@@--
+72257@@@--
+72350@@@--
+72357@@@--
+72359@@@--
+72361@@@--
+72368@@@--
+72370@@@--
+72379@@@--
+72491@@@--
+72492@@@--
+72493@@@--
+72499@@@--
+72683@@@--
+72684@@@--
+72731@@@--
+72732@@@--
+72733@@@--
+72741@@@--
+72742@@@--
+72745@@@--
+72774@@@--
+72775@@@--
+72780@@@--
+72804@@@--
+72837@@@--
+73224@@@--
+72119@@@--
+73897@@@--
+73904@@@--
+73905@@@--
+73935@@@--
+73969@@@--
+73970@@@--
+73971@@@--
+73975@@@--
+73977@@@--
+73982@@@--
+73983@@@--
+73988@@@--
+73992@@@--
+74008@@@--
+74014@@@--
+74028@@@--
+74041@@@--
+74044@@@--
+74045@@@--
+74046@@@--
+74047@@@--
+74048@@@--
+74049@@@--
+74050@@@--
+74053@@@--
+74056@@@--
+74059@@@--
+74062@@@--
+74064@@@--
+74070@@@--
+74071@@@--
+74072@@@--
+74081@@@--
+74083@@@--
+74094@@@--
+74098@@@--
+74099@@@--
+74100@@@--
+74101@@@--
+67082@@@--
+67083@@@--
+74123@@@--
+74128@@@--
+74129@@@--
+74133@@@--
+74136@@@--
+74137@@@--
+74138@@@--
+74139@@@--
+74165@@@--
+74178@@@--
+74185@@@--
+74187@@@--
+74188@@@--
+74189@@@--
+74190@@@--
+74191@@@--
+74192@@@--
+74201@@@--
+74202@@@--
+74209@@@--
+74210@@@--
+74211@@@--
+74212@@@--
+74217@@@--
+74218@@@--
+74221@@@--
+74226@@@--
+74227@@@--
+74231@@@--
+74232@@@--
+74233@@@--
+74234@@@--
+74235@@@--
+74236@@@--
+74237@@@--
+74238@@@--
+74239@@@--
+74240@@@--
+66093@@@--
+66095@@@--
+66096@@@--
+66097@@@--
+66098@@@--
+69876@@@--
+74373@@@--
+71213@@@--
+74416@@@--
+72081@@@--
+72082@@@--
+72085@@@--
+72087@@@--
+72088@@@--
+72092@@@--
+72123@@@--
+72124@@@--
+72829@@@--
+72830@@@--
+74897@@@--
+74898@@@--
+72425@@@--
+72520@@@--
+72521@@@--
+72531@@@--
+72608@@@--
+72716@@@--
+72718@@@--
+72906@@@[DNT] Storm Pet Battle
+72907@@@--
+73048@@@--
+73049@@@--
+73050@@@--
+73051@@@--
+73078@@@--
+73079@@@--
+73080@@@--
+73143@@@--
+73144@@@--
+73145@@@--
+73184@@@--
+73185@@@--
+73186@@@--
+73187@@@--
+73547@@@--
+74116@@@--
+74308@@@--
+74309@@@--
+74312@@@--
+74314@@@--
+74316@@@--
+74317@@@--
+74360@@@--
+74361@@@--
+74362@@@--
+74377@@@Capsize a Crab
+74384@@@--
+74418@@@--
+74427@@@--
+74434@@@--
+74435@@@--
+74478@@@--
+74479@@@--
+74480@@@--
+74484@@@--
+74486@@@--
+74487@@@--
+74495@@@--
+74500@@@--
+74527@@@--
+74711@@@--
+74712@@@--
+74713@@@--
+74714@@@--
+74760@@@--
+74761@@@--
+74762@@@--
+74763@@@--
+74773@@@--
+74776@@@--
+74777@@@--
+74778@@@--
+74779@@@--
+74780@@@--
+74781@@@--
+74782@@@--
+74788@@@--
+74789@@@--
+74890@@@--
+74891@@@--
+74970@@@--
+74974@@@--
+74978@@@--
+74997@@@--
+74998@@@--
+74999@@@--
+75000@@@--
+75001@@@--
+75002@@@--
+75003@@@--
+75034@@@--
+75046@@@--
+75047@@@--
+75049@@@--
+75052@@@--
+75130@@@--
+75185@@@--
+75202@@@--
+75224@@@--
+75236@@@--
+75246@@@--
+75247@@@--
+75248@@@--
+75249@@@--
+75250@@@--
+75251@@@--
+75252@@@--
+75253@@@--
+75254@@@--
+75255@@@--
+75392@@@--
+75426@@@--
+75427@@@--
+75428@@@--
+75432@@@--
+75457@@@--
+75520@@@--
+75521@@@--
+75522@@@--
+75523@@@--
+75529@@@--
+75530@@@--
+75531@@@--
+75532@@@--
+75533@@@--
+11691@@@Summon Ahune
+11883@@@Fire Dancing?
+12420@@@Brew of the Month Club
+12421@@@Brew of the Month Club
+11621@@@The Tablet of Leviroth
+11622@@@Secrets of Riplash
+12590@@@Blahblah[PH]
+12816@@@Investigate the Scourge of Silvermoon
+12817@@@Investigate the Scourge of Exodar
+25286@@@Words for Delivery
+14454@@@The Captured Warrior
+24443@@@The Captured Hunter
+24444@@@The Captured Shaman
+24445@@@The Captured Druid
+24446@@@The Captured Sunwalker
+24447@@@The Captured Seer
+24464@@@Track Beasts
+24465@@@Mark of the Wild
+24466@@@Battle Shout
+24481@@@Rockbiter Weapon
+24482@@@Power Word: Fortitude
+24485@@@Seal of Righteousness
+25561@@@Circle the Wagons... er, Boats
+25562@@@Circle the Wagons... er, Boats
+25571@@@A Natural Occurrence
+25639@@@[DND] Test Rifts
+25738@@@Shallow End of the Gene Pool
+25773@@@A Natural Occurrence
+26054@@@Water They Up To?
+26990@@@Water They Up To?
+27122@@@Fired Up and Not So Good To Go.
+27127@@@Fired Up and Not So Good To Go.
+27207@@@This Blows
+27209@@@This Blows
+27546@@@Speak with Captain Anton
+28798@@@Waters of Elune
+28799@@@Might of the Earthen
+28800@@@Whispers of the Djinn
+28801@@@Tol'vir Hieroglyphics
+28802@@@Map of the Architects
+28803@@@Vengeance of the Wildhammer
+28804@@@Dark Iron Contingency Plan
+29261@@@Zul'Aman Voodoo
+29382@@@Thanks, But No Thanks
+29383@@@Thanks, But No Thanks
+29820@@@Into the Nexus
+37847@@@--
+38017@@@--
+38019@@@--
+38033@@@--
+38062@@@--
+38216@@@--
+38598@@@TEST: Craft Some Legplates
+38619@@@--
+38659@@@--
+38849@@@--
+38851@@@--
+39492@@@--
+39833@@@--
+39885@@@--
+39886@@@--
+39887@@@--
+39890@@@--
+39892@@@--
+39895@@@--
+39900@@@--
+39919@@@--
+40174@@@--
+40257@@@Demon Hunter Choice 1
+40259@@@Demon Hunter Choice 2
+40261@@@Demon Hunter Choice 3
+40602@@@--
+40660@@@--
+40665@@@--
+40677@@@--
+40679@@@--
+40682@@@--
+40801@@@--
+41774@@@The Rival Lords of Fire
+41981@@@Traversing the Heavens
+42130@@@--
+43181@@@Tracking Down the Scepter
+44196@@@--
+44197@@@--
+44198@@@--
+44199@@@--
+44201@@@--
+44236@@@Essence of Fate
+44241@@@--
+44242@@@--
+44578@@@Honor the Flame
+44747@@@--
+44749@@@--
+44750@@@--
+44883@@@--
+45030@@@--
+45033@@@--
+45037@@@--
+45098@@@--
+45099@@@--
+45101@@@--
+45132@@@--
+45133@@@--
+45167@@@REUSE ME
+45386@@@--
+45397@@@Fire the Cannons!
+45438@@@Armies of Legionfall [DEPRECATED]
+45458@@@--
+45527@@@Eyir's Forgiveness
+45534@@@A Common Enemy
+45746@@@Salvation
+47029@@@--
+47593@@@--
+47608@@@--
+48796@@@--
+48798@@@--
+48937@@@Create Netherwalker's Portal Generator
+64159@@@Repatriate Rare Supplies
+64162@@@Ritual Rival
+64163@@@Revenge Against Renegades
+64856@@@[DNT] A Little Pruning
+64981@@@--
+65106@@@[TEMP] Intro Cinematic
+65283@@@Zip Line Treasure
+65304@@@--
+65372@@@Hanging Marmoset Treasure
+65422@@@Treasure Hunting Ain't Easy
+65438@@@Awesome Quest Start
+65608@@@--
+65642@@@--
+65777@@@Mudcaked Necklace
+65863@@@--
+65865@@@They've Got Us Pinned Down!
+65874@@@A Rotten Revelation
+65877@@@--
+65878@@@--
+65879@@@--
+65880@@@--
+65881@@@--
+65882@@@--
+65883@@@--
+66109@@@Enchanted Compass
+66113@@@An Inconspicuous Conveyance
+66176@@@Elemental Experimentation
+66195@@@--
+66197@@@--
+66199@@@--
+66206@@@Nozdormu, I've Come to Bargain
+66214@@@--
+66215@@@--
+66241@@@Thaldraszus Rally
+66277@@@[DNT] Making Quest
+66306@@@--
+66312@@@--
+66349@@@Training Rock
+66466@@@--
+66474@@@--
+66477@@@--
+66482@@@Scout for Trophies: Terramaw
+66484@@@Know Your Enemy: Proto-Dragons
+66504@@@A Shard of Crystalized Mana
+66509@@@Paranoid 1
+66510@@@--
+66549@@@Waking Shores Rally
+66550@@@[PH] More Storms!
+66575@@@Item as Questgiver: Vial
+66611@@@Clearing the Skies
+66682@@@Centaur Legends
+66691@@@Waking Shores - Race 01 - Intermediate
+66706@@@[DNT]QuestNameHere
+66713@@@[DNT]QuestNameHere
+66714@@@[DNT]QuestNameHere
+66729@@@Conditionals
+66962@@@[DNT] 10.0 Explorers - Ch1 - Fake Quest Requirement (SMART)
+66987@@@[DNT] 10.0 Explorers - Ch2 - Fake Quest Requirement (SMART)
+67011@@@Tale of an Adventure: Molten Core
+67017@@@[DNT] Training: Nothing Like a Strider Wing
+67044@@@Tale of a Hero: Yanikk
+67070@@@[DNT] My First Quest
+67112@@@[DNT] Kill those Bandits
+67220@@@10.0 [DNT] [GAMEPLAY TEST] - [SPAWNTRACKING] (JSS)
+67743@@@Whelpling Hide 'n Seek
+69903@@@--
+69937@@@Sylvan Succor
+69939@@@Sylvan Succor
+69940@@@Sylvan Succor
+69950@@@Sylvan Succor
+69980@@@Seavine: Fisherman Tinnak's Gift
+70159@@@A Taste of Home
+70167@@@--
+70173@@@A Taste of Home
+70178@@@Expedition Supply Kit
+70390@@@(DNT) Chloe's Onboarding Kill Quest
+70446@@@A Personal History
+70526@@@Ohn'ahran Plains Rally
+70542@@@Azure Span Rally
+70640@@@WANTED: Boss
+70642@@@Clopper Wizbang's Lost Gear
+70643@@@Arcane Explosives
+70644@@@Taming the Wild Goat
+70706@@@Waygate: Shady Sanctuary
+70707@@@--
+70713@@@Highlands Fishing
+70715@@@Dragonflight (70) E
+70742@@@Runs in the Family
+70811@@@Expert Excavation Tools
+70816@@@Treasure Tracking Techniques
+70829@@@Cataloging Expeditions
+70830@@@Packing for a Climb
+70836@@@--
+70844@@@--
+70852@@@Tongue of Silver, Tongue of Flame
+70884@@@Taking Back
+70886@@@Now THIS is Dragon Racing!
+70890@@@I'm Going on an Adventure!
+70951@@@Tackling the Tackle Box
+66584@@@Additional Waygate Energy
+71143@@@The Horde Slayer
+71144@@@The Alliance Slayer
+71147@@@Continued Waygate Exploration
+71226@@@Kill Rock Snails
+72062@@@--
+72191@@@Short-Supply Reward
+72307@@@Thieving Gnolls
+72365@@@[test] Learn to spend talent points
+72434@@@Ruby Lifeshrine Loop
+72539@@@Dragonflight (61-69) E
+72544@@@Dragonflight (70) E
+72550@@@Dragonflight (61-69) E
+72557@@@Dragonflight (70) E
+72567@@@Dragonflight (70) E
+72572@@@Dragonflight (70) E
+72575@@@Dragonflight (70) E
+72580@@@Dragonflight (70) E
+72583@@@Dragonflight (70) E
+72623@@@Dragonflight (61-69) E
+72628@@@Dragonflight (70) E
+72631@@@Dragonflight (70) E
+72643@@@Dragon Isles Supplies
+72725@@@A Shrouded Path Through Time
+72810@@@A Shattered Path Through Time
+72817@@@Dragonflight (70) E
+72819@@@Shadowlands (60) E
+66925@@@[DNT] Boar-B-Q
+72384@@@Valdrakken Tour
+72551@@@A Living History
+72552@@@Gathering Together
+72553@@@More Effort, More Reward
+72558@@@Our Honored Ancestors
+72590@@@Ursol's Wisdom
+72597@@@Ursoc's Strength
+72598@@@Words of the Winterpelt
+72941@@@Ancestral Advice
+72945@@@Our Path Ahead
+72954@@@Zskera Vault: Ix
+72955@@@--
+72956@@@--
+73035@@@Path of Trust
+73194@@@--
+73550@@@Honeyfreeze Mead
+73692@@@Hive Maintenance
+74433@@@Returning the Blade
+74774@@@--
+74796@@@A Dusty Vase
+74875@@@--
+74955@@@An Egg-centric Discovery
+74994@@@--
+74996@@@--
+75065@@@Campaign Testing - Dummy Quest
+75237@@@Reach West
+75263@@@--

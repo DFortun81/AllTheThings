@@ -89,29 +89,9 @@ root("Instances", tier(CATA_TIER, {
 								VILEBRANCH_COIN,
 								WITHERBARK_COIN,
 								ZULIAN_COIN,
-								-- Rare Recipes
-								203842,	-- Ancient Pattern: Animist's Footwraps (RECIPE!)
-								203843,	-- Ancient Pattern: Animists Legguards (RECIPE!)
-								203848,	-- Ancient Pattern: Bloodlords Embrace (RECIPE!)
-								203968,	-- Ancient Pattern: Cord of Shriveled Heads (RECIPE!)
-								203844,	-- Ancient Pattern: Gloves of the Tormentor (RECIPE!)
-								203849,	-- Ancient Pattern: Gurubashi Tigerhide Cloak (RECIPE!)
-								203850,	-- Ancient Pattern: Gurubashi Headdress (RECIPE!)
-								203845,	-- Ancient Pattern: Junglefury Gauntlets (RECIPE!)
-								203846,	-- Ancient Pattern: Junglefury Leggings (RECIPE!)
-								203851,	-- Ancient Pattern: Ritualistic Legwarmers (RECIPE!)
-								203835,	-- Ancient Plans: Fiery Bengeance (RECIPE!)
-								203825,	-- Ancient Plans: Gurubashi Carver (RECIPE!)
-								203828,	-- Ancient Plans: Gurubashi Grinder (RECIPE!)
-								203824,	-- Ancient Plans: Gurubashi Headplate (RECIPE!)
-								203827,	-- Ancient Plans: Gurubashi Poker (RECIPE!)
-								203837,	-- Ancient Plans: Gurubashi Slicer (RECIPE!)
-								203832,	-- Ancient Plans: Pitchfork of Mojo Madness (RECIPE!)
-								203830,	-- Ancient Plans: Sceptre of Hexing (RECIPE!)
-								203841,	-- Ancient Technique: Gurubashi Ceremonial Staff (RECIPE!)
-								203839,	-- Ancient Technique: Gurubashi Hoodoo Stick (RECIPE!)
 							}},
 							["groups"] = {
+								-- Epic
 								i(203838),	-- Ancient Formula: Mindslave's Reach (RECIPE!)
 								i(203847),	-- Ancient Pattern: Gurubashis Grasp (RECIPE!)
 								i(203833),	-- Ancient Plans: Bloodherald (RECIPE!)
@@ -122,6 +102,27 @@ root("Instances", tier(CATA_TIER, {
 								i(203861),	-- Ancient Plans: Venomreaver (RECIPE!)
 								i(203836),	-- Ancient Plans: Warblades of the Hakkari Reborn (RECIPE!)
 								i(203840),	-- Ancient Technique: Judgment of the Gurubashi (RECIPE!)
+								-- Blue
+								i(203842),	-- Ancient Pattern: Animist's Footwraps (RECIPE!)
+								i(203843),	-- Ancient Pattern: Animists Legguards (RECIPE!)
+								i(203848),	-- Ancient Pattern: Bloodlords Embrace (RECIPE!)
+								i(203968),	-- Ancient Pattern: Cord of Shriveled Heads (RECIPE!)
+								i(203844),	-- Ancient Pattern: Gloves of the Tormentor (RECIPE!)
+								i(203849),	-- Ancient Pattern: Gurubashi Tigerhide Cloak (RECIPE!)
+								i(203850),	-- Ancient Pattern: Gurubashi Headdress (RECIPE!)
+								i(203845),	-- Ancient Pattern: Junglefury Gauntlets (RECIPE!)
+								i(203846),	-- Ancient Pattern: Junglefury Leggings (RECIPE!)
+								i(203851),	-- Ancient Pattern: Ritualistic Legwarmers (RECIPE!)
+								i(203835),	-- Ancient Plans: Fiery Bengeance (RECIPE!)
+								i(203825),	-- Ancient Plans: Gurubashi Carver (RECIPE!)
+								i(203828),	-- Ancient Plans: Gurubashi Grinder (RECIPE!)
+								i(203824),	-- Ancient Plans: Gurubashi Headplate (RECIPE!)
+								i(203827),	-- Ancient Plans: Gurubashi Poker (RECIPE!)
+								i(203837),	-- Ancient Plans: Gurubashi Slicer (RECIPE!)
+								i(203832),	-- Ancient Plans: Pitchfork of Mojo Madness (RECIPE!)
+								i(203830),	-- Ancient Plans: Sceptre of Hexing (RECIPE!)
+								i(203841),	-- Ancient Technique: Gurubashi Ceremonial Staff (RECIPE!)
+								i(203839),	-- Ancient Technique: Gurubashi Hoodoo Stick (RECIPE!)
 							},
 						}),
 					},
@@ -575,8 +576,8 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(203983, {	-- Ensemble: Bloodtinged Cloth
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", BLUE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", BLUE_HAKKARI_BIJOU, 4 },
 								},
 								["groups"] = {
 									i(19929),	-- Bloodtinged Gloves
@@ -587,8 +588,8 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(203984, {	-- Ensemble: Blooddrenched Leather
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", YELLOW_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", YELLOW_HAKKARI_BIJOU, 4 },
 								},
 								["groups"] = {
 									i(19906),	-- Blooddrenched Footpads
@@ -599,8 +600,8 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(203985, {	-- Ensemble: Bloodstained Mail
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", GREEN_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", GREEN_HAKKARI_BIJOU, 4 },
 								},
 								["groups"] = {
 									i(19875),	-- Bloodstained Coif
@@ -611,8 +612,8 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(203986, {	-- Ensemble: Bloodsoaked Plate
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", RED_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", RED_HAKKARI_BIJOU, 4 },
 								},
 								["groups"] = {
 									i(19894),	-- Bloodsoaked Gauntlets
@@ -665,32 +666,32 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(19771, {	-- Pattern: Primal Batskin Bracers (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", ORANGE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", ORANGE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(19770, {	-- Pattern: Primal Batskin Gloves (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", ORANGE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", ORANGE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(19769, {	-- Pattern: Primal Batskin Jerkin (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", ORANGE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", ORANGE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(19776, {	-- Plans: Bloodsoul Breastplate (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", BRONZE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", BRONZE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(19778, {	-- Plans: Bloodsoul Gauntlets (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", BRONZE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", BRONZE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(19777, {	-- Plans: Bloodsoul Shoulders (RECIPE!)
@@ -701,20 +702,20 @@ root("Instances", tier(CATA_TIER, {
 							}),
 							i(19779, {	-- Plans: Darksoul Breastplate (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", BRONZE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", BRONZE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(19780, {	-- Plans: Darksoul Leggings (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 3 },
-									{ "i", BRONZE_HAKKARI_BIJOU, 7 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 7 },
+									{ "i", BRONZE_HAKKARI_BIJOU, 3 },
 								},
 							}),
 							i(19781, {	-- Plans: Darksoul Shoulders (RECIPE!)
 								["cost"] = {
-									{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
-									{ "i", BRONZE_HAKKARI_BIJOU, 6 },
+									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
+									{ "i", BRONZE_HAKKARI_BIJOU, 4 },
 								},
 							}),
 							i(20012, {	-- Recipe: Greater Dreamless Sleep Potion (RECIPE!)
@@ -859,7 +860,11 @@ root("Instances", tier(CATA_TIER, {
 						179,	-- Renataki
 						180,	-- Wushoolay
 					--]]
-					["description"] = "Requires 225 Archaeology to spawn.",
+					-- #if AFTER 10.0.7
+					["description"] = "Requires Archaeology (1) to spawn.",
+					-- #else
+					["description"] = "Requires Archaeology (225+) to spawn.",
+					-- #endif
 					["g"] = {
 						--[[ Using CRS // QGS doesn't apply the description.  Only applies to NPCID
 						{	-- Summon Artifacts

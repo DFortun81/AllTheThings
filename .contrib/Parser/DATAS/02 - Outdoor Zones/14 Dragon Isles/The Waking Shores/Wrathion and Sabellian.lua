@@ -390,7 +390,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			n(WORLD_QUESTS, {
 				["sourceQuests"] = {
 					71232,	-- Renown of the Dragon Isles
-					72366,	-- Account Dragonflight Campaign Completed
+					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
 				["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 					q(70984, {	-- Surge Breaker
@@ -541,7 +541,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 								i(191801),	-- Obsidian Dracthyr Battlegear Monnion
 								i(191802),	-- Obsidian Dracthyr Battlegear Belt
 							},
-							["questID"] = 72112,
 						}),
 						i(200707, {	-- Armoire of Endless Cloaks (TOY!)
 							["cost"] = {
@@ -694,7 +693,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 								i(191801),	-- Obsidian Dracthyr Battlegear Monnion
 								i(191802),	-- Obsidian Dracthyr Battlegear Belt
 							},
-							["questID"] = 72112,
 						}),
 						i(200963, {	-- Ensemble: Sabellian's Battlegear Cloth Armor
 							["cost"] = {
@@ -912,6 +910,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 			q(66802),	-- Triggered when choosing Wrathion in Allegiance To One (66419) -- triggered for Wrathion only
 			q(67168),	-- Triggered with completion of 67051 'Dragon Eyes' (alternate version???)
 			q(72378),	-- Triggered when refusing to activate the Wrathion and Sabellian skip for alts
+			q(72112),	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
 		}),
 	}),
 })));

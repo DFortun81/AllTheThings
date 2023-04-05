@@ -134,9 +134,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						i(131391),	-- Frost-Encrusted Chain Boots
 					}),
 				}),
-				filter(FINGER_F, {
-					i(147433),	-- Glowing Diamond Ring
-				}),
 				filter(COSMETIC, {
 					i(135522),	-- Transmog UI Chest Item
 					i(135550),	-- Transmog UI Feet Item

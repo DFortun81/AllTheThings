@@ -30,19 +30,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 			ach(16641),		-- Keystone Hero: The Nokhud Offensive
 		})),
 		i(201471),	-- Story of a Spectacular Victory
-		header(HEADERS.Achievement, SEASON_PH, bubbleDownSelf({
+		header(HEADERS.Achievement, SEASON_SMOLDERING, bubbleDownSelf({
 			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 		},{
 			ach(17842),		-- Dragonflight Keystone Explorer: Season 2
 			ach(17843, {	-- Dragonflight Keystone Conqueror: Season 2
-				--title(503),	-- <Name> the <PH Season 2 Title>
+				title(503),	-- <Name> the Smoldering
 			}),
 			ach(17844, {	-- Dragonflight Keystone Master: Season 2
 				i(204798),	-- Inferno Armoredon (MOUNT!)
 			}),
 			ach(17845),		-- Dragonflight Keystone Hero: Season 2
 			ach(17846, {	-- Thundering Hero: Dragonflight Season 2
-				--title(504),	-- <Name> the <PH Season 2 Hero Title>
+				title(504),	-- <Name> the Smoldering Hero
 			}),
 			ach(16642),		-- Keystone Hero: Brackenhide Hollow
 			ach(17848),		-- Keystone Hero: Freehold

@@ -387,7 +387,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["sourceQuests"] = {
 						66221,	-- Moving On
 						72293,	-- Adventuring in the Dragon Isles
-						72366,	-- Account Dragonflight Campaign Completed
+						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
@@ -398,7 +398,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						66221,	-- Moving On
-						72366,	-- Account Dragonflight Campaign Completed
+						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 58.4, 35.4, VALDRAKKEN },
@@ -1178,7 +1178,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(72084),	-- Triggers during 'The Fog of Battle' (66246)
 		q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan'
 		q(72125),	-- Triggers during 'Tying Things Together' (66248)
-		-- q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?
 		-- Achievement Framing a New Perspective
 		q(72142),	-- The Seat of the Aspects
 		q(72143),	-- The Cascades

@@ -4373,7 +4373,7 @@ ID,Name_lang,HordeName_lang,Duration,EffectArg[0],EffectArg[1],EffectArg[2],Effe
 6488,Fierce Armor Kit |A:Professions-ChatIcon-Quality-Tier1:20:20|a,,0,7,72,0,0.1635,0.273529,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
 6489,Fierce Armor Kit |A:Professions-ChatIcon-Quality-Tier2:20:20|a,,0,7,72,0,0.1965,0.333088,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
 6490,Fierce Armor Kit |A:Professions-ChatIcon-Quality-Tier3:20:20|a,,0,7,72,0,0.2315,0.390441,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
-6491,Reinforced Armor Kit |A:Professions-ChatIcon-Quality-Tier1:20:20|a,,0,72,0,0,0.16323532,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70
+6491,Reinforced Armor Kit |A:Professions-ChatIcon-Quality-Tier1:20:20|a,,0,72,0,0,0.163235,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70
 6492,Reinforced Armor Kit |A:Professions-ChatIcon-Quality-Tier2:20:20|a,,0,72,0,0,0.198529,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70
 6493,Reinforced Armor Kit |A:Professions-ChatIcon-Quality-Tier3:20:20|a,,0,72,0,0,0.233824,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70
 6494,Frosted Armor Kit |A:Professions-ChatIcon-Quality-Tier1:20:20|a,,0,0,72,0,0.218382,0.273529,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,4,5,0,-7,0,0,61,70
@@ -4633,3 +4633,6 @@ ID,Name_lang,HordeName_lang,Duration,EffectArg[0],EffectArg[1],EffectArg[2],Effe
 6840,Shadowed Belt Buckle,,0,7,0,0,0.478425,0,0,0,26,0,0,0,12,0,0,0,33,0,0,50,0,5,0,0,-7,0,0,61,70
 6841,Shadowed Belt Buckle,,0,7,0,0,0.478425,0,0,0,26,0,0,0,12,0,0,0,33,0,0,50,0,5,0,0,-7,0,0,61,70
 6842,Shadowed Belt Buckle,,0,7,0,0,0.478425,0,0,0,26,0,0,0,12,0,0,0,33,0,0,50,0,5,0,0,-7,0,0,61,70
+6904,Shadowed Belt Buckle|A:Professions-ChatIcon-Quality-Tier3:20:20|a,,0,7,0,0,0.163235,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70
+6905,Shadowed Belt Buckle|A:Professions-ChatIcon-Quality-Tier2:20:20|a,,0,7,0,0,0.163235,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70
+6906,Shadowed Belt Buckle|A:Professions-ChatIcon-Quality-Tier1:20:20|a,,0,7,0,0,0.163235,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70

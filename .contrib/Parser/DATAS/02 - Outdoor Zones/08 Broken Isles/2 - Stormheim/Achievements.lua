@@ -155,15 +155,8 @@ _.Zones =
 					},
 				})),
 				ach(11232, {	-- Lock, Stock and Two Smoking Goblins
-					["sourceQuests"] = { 43331 },	-- Time to Collect
-				}),
-				ach(10877, {	-- Pillars of Creation
-					["collectible"] = false,
-					["groups"] = {
-						crit(1, {	-- Aegis of Aggramar
-							["sourceQuests"] = { 43349 },	-- The Aegis of Aggramar
-						}),
-					},
+					title(343),		-- the Gullible
+					crit(1),	-- Time to Collect
 				}),
 				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
 					["collectible"] = false,

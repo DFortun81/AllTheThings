@@ -937,9 +937,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			}),
 				-- Fields of Ferocity --
 			q(70444, {	-- The Fields of Ferocity
-				-- TODO: add magic alt-unlock quest
+				["sourceQuests"] = {
+					DF_ACCOUNT_CAMPAIGN_QUEST,
+					65806,	-- Maruukai
+				},
 				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = { 65806 },	-- Maruukai
 				["provider"] = { "o", 380902 },	-- Fields of Ferocity
 				["coord"] = { 62.3, 42.3, OHNAHRAN_PLAINS },
 				["isBreadcrumb"] = true,
@@ -1012,7 +1014,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			q(71027, {	-- WANTED: Mara'nar the Thunderous
 				["sourceQuests"] = {
 					66201, 	-- Hooves of War
-					72366,	-- Account Dragonflight Campaign Completed
+					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "o", 381701 },	-- WANTED: Mara'nar the Thunderous
@@ -1179,7 +1181,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(67717, {	-- Web-Queen Ashkaz
 					["provider"] = { "n", 192983 },	-- Web-Queen Ashkaz
 					["coord"] = { 43.3, 47.2, OHNAHRAN_PLAINS },
-					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(74440, {	-- Windseeker Avash
 					["provider"] = { "n", 192045 },	-- Windseeker Avash
@@ -1222,15 +1223,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(71174),	-- Ohn'iri Springs Ancestor
 		q(71175),	-- Teerakai Ancestor
 		q(71176),	-- The Eternal Kurgans Ancestor
-		--
 		-- q(70141),	-- Triggered when killed Skaara
-		-- --
-		-- --
-		-- q(69813),	-- Triggered when Prozela Killed
-		-- --
-		-- --
-		-- Has to do with the Chest Event In the South
-		--q(70511),	-- complete??
-		q(70922),	-- Caravan Stages swapping
 	}),
 })))

@@ -18,6 +18,12 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["races"] = HORDE_ONLY,
 		}),
 		q(72681, {	-- Report to the Trading Post -- Last Month: Triggered after completing 66959 (and cross complete 66858)
+			["timeline"] = { ADDED_10_0_5, REMOVED_10_0_7 },
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isMonthly"] = true,
+		}),
+		q(75833, {	-- Report to the Trading Post
+			["timeline"] = { ADDED_10_0_7 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 			["isMonthly"] = true,
 		}),
@@ -35,6 +41,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			i(190490),	-- Darkmoon Harlequin's Tunic
 			i(190488),	-- Darkmoon Harlequin's Visage
 		}),
+		-- APR 2023 --
+		i(190164, {	-- Arsenal: Blades of Elune
+			i(190093),	-- Elune's Fury
+			i(190094),	-- Elune's Wrath
+		}),
 	})),
 	n(VENDORS, {
 		filter(BATTLE_PETS, {
@@ -45,6 +56,10 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			-- MAR 2023 --
 			i(49665, {	-- Pandaren Monk (PET!)
 				["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+			}),
+			-- APR 2023 --
+			i(190603, {	-- Egbob (PET!)
+				["cost"] = { { "c", TRADERS_TENDER, 600 }, },
 			}),
 		}),
 		filter(COSMETIC, {
@@ -170,13 +185,70 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			i(190155, {	-- Trusty Treasure Trove
 				["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 			}),
+			-- APR 2023 --
+			i(190438, {	-- Crimson Nexus Crescent
+				["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+			}),
+			i(190130, {	-- Drape of Foreboding Mists
+				["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+			}),
+			i(200909, {	-- Ensemble: Corrupted Runelord's Regalia
+				["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				["g"] = {
+					i(189875),	-- Corrupted Runelord's Sash
+					i(189876),	-- Corrupted Runelord's Handguards
+					i(189879),	-- Corrupted Runelord's Leggings
+					i(189880),	-- Corrupted Runelord's Mantle
+					i(190206),	-- Corrupted Runelord's Glyphbands
+					i(190207),	-- Corrupted Runelord's Slippers
+					i(190210),	-- Corrupted Runelord's Cowl
+					i(190211),	-- Corrupted Runelord's Robe
+				},
+			}),
+			i(190540, {	-- Ensemble: Trapper's Munitions
+				["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				["g"] = {
+					i(190449),	-- Trapper's Fur-Lined Quiver
+					i(190448),	-- Trapper's Shot Pouch
+				},
+			}),
+			i(190886, {	-- Fine White Evening Gloves
+				["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+			}),
+			i(190842, {	-- Fists of Polar Fury
+				["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+			}),
+			i(189896, {	-- Forsaken Cresset
+				["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+			}),
+			i(190145, {	-- Gilded Drakkonid Morningstar
+				["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+			}),
+			i(190133, {	-- Honed Bastard Sword
+				["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+			}),
+			i(190153, {	-- Libram of Righteous Light
+				["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+			}),
+			i(190898, {	-- Red Pith Helmet
+				["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+			}),
+			i(190154, {	-- Tome of Sin'dorei Secrets
+				["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+			}),
+			i(189895, {	-- Watchman's Flare
+				["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+			}),
 		}),
 		filter(MOUNTS, {
 			-- FEB 2023 --
 			i(54811, {	-- Celestial Steed (MOUNT!) (FEB 2023)
 				["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 			}),
-			-- MAR 2023 --
+			-- APR 2023 --
+			i(189978, {	-- Magenta Cloud Serpent (MOUNT!)
+				["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+			}),
 		}),
 	}),
 }));
@@ -210,7 +282,6 @@ root(ROOTS.HiddenQuestTriggers, {
 root(ROOTS.NeverImplemented, {
 	tier(DF_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { ADDED_10_0_5 }, }, {
 		n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for earning 1000 Trader's Tender in the month." }, {
-			i(190164),	-- Arsenal: Blades of Elune
 			-- i(XXXXXX),	-- The Battlespoon (2H Staff)
 			i(190169),	-- Quawks (MOUNT!)
 			i(190613),	-- Savage Green Battle Turtle (MOUNT!)
@@ -228,9 +299,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 				i(190176, {	-- Drazka'zet the Wrathful (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
-				}),
-				i(190603, {	-- Egbob (PET!)
-					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
 				}),
 				i(49693, {	-- Lil' K.T. (PET!) Blizz promised this when removing from store in Jan 2023
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
@@ -262,19 +330,6 @@ root(ROOTS.NeverImplemented, {
 						i(190722),	-- Boots of the Honored Valarjar
 						i(190723),	-- Grips of the Honored Valarjar
 						i(190724),	-- Tunic of the Honored Valarjar
-					},
-				}),
-				i(200909, {	-- Ensemble: Corrupted Runelord's Regalia
-					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
-					["g"] = {
-						i(189875),	-- Corrupted Runelord's Sash
-						i(189876),	-- Corrupted Runelord's Handguards
-						i(189879),	-- Corrupted Runelord's Leggings
-						i(189880),	-- Corrupted Runelord's Mantle
-						i(190206),	-- Corrupted Runelord's Glyphbands
-						i(190207),	-- Corrupted Runelord's Slippers
-						i(190210),	-- Corrupted Runelord's Cowl
-						i(190211),	-- Corrupted Runelord's Robe
 					},
 				}),
 				i(201230, {	-- Ensemble: Helarjar Berserker Warplate
@@ -328,13 +383,6 @@ root(ROOTS.NeverImplemented, {
 						i(190700),	-- Tidecaller's Boots
 						i(190709),	-- Tidecaller's Pauldrons
 						i(190806),	-- Tidecaller's Cinch
-					},
-				}),
-				i(190540, {	-- Ensemble: Trapper's Munitions
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-					["g"] = {
-						i(190449),	-- Trapper's Fur-Lined Quiver
-						i(190448),	-- Trapper's Shot Pouch
 					},
 				}),
 				i(190576, {	-- Ensemble: Vagabond's Azure Threads
@@ -436,9 +484,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- Cloak
-				i(190130, {	-- Drape of Foreboding Mists
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				}),
 				i(190200, {	-- Feathered Drape of the Guardian
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
@@ -451,10 +496,6 @@ root(ROOTS.NeverImplemented, {
 
 
 				-- Gloves
-				i(190886, {	-- Fine White Evening Gloves
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				}),
-
 				-- Head
 				i(190216, {	-- Feathered Cowl of the Guardian
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
@@ -467,9 +508,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 				i(190215, {	-- Lost Crown of the Arcane
 					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
-				}),
-				i(190898, {	-- Red Pith Helmet
-					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
 				}),
 
 				-- Shirt
@@ -486,12 +524,6 @@ root(ROOTS.NeverImplemented, {
 					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
 				}),
 				i(190690, {	-- Flame-Forged Fel Fang
-					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
-				}),
-				i(190842, {	-- Fists of Polar Fury
-					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
-				}),
-				i(190145, {	-- Gilded Drakkonid Morningstar
 					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
 				}),
 				i(190546, {	-- Polished Shortsword
@@ -511,14 +543,8 @@ root(ROOTS.NeverImplemented, {
 				i(190560, {	-- Apocalypse
 					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
 				}),
-				i(190438, {	-- Crimson Nexus Crescent
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
 				i(190578, {	-- Headmaster's Command
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
-				}),
-				i(190133, {	-- Honed Bastard Sword
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
 				i(190439, {	-- Merciless Trapper's Staff
 					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
@@ -552,20 +578,8 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- Off-Hand
-				i(189896, {	-- Forsaken Cresset
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				}),
-				i(190153, {	-- Libram of Righteous Light
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
 				i(190443, {	-- Pustulent Demonheart Fetish
 					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
-				}),
-				i(190154, {	-- Tome of Sin'dorei Secrets
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
-				i(189895, {	-- Watchman's Flare
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
 
 				-- Shield
@@ -594,9 +608,6 @@ root(ROOTS.NeverImplemented, {
 					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 				}),
 				i(190168, {	-- Crusty Crawler (MOUNT!) (Unknown 2023)
-					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
-				}),
-				mount(366647, {	-- Magenta Cloud Serpent (MOUNT!)
 					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 				}),
 				i(69846, {	-- Winged Guardian (MOUNT!) Blizz promised this when removing from store in Jan 2023

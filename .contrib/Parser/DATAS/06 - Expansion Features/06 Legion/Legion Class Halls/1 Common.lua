@@ -127,6 +127,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				ach(11221),	-- Champions Rise
 				ach(11220),	-- Roster of Champions
 			}),
+			ach(11846, {	-- Champions of Legionfall (Broken Shore)
+				crit(1),		-- Complete 'Champions of Legionfall'
+			}),
 			ach(10461, {	-- Fighting with Style: Classic
 				crit(1),	-- Recover one of the Pillars of Creation
 				crit(2, {	-- Complete the quest, "Light's Charge"
@@ -522,6 +525,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				i(140362),	-- Dust from the Shadowlands
 				un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
 				un(REMOVED_FROM_GAME, i(142522)),	-- Rude Letter (removed until Brawler's Guild comes back someday)
+				i(116415),	-- Shiny Pet Charm
 				-- Dungeons
 				un(REMOVED_FROM_GAME, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
 				un(REMOVED_FROM_GAME, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair

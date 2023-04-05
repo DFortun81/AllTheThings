@@ -40,15 +40,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		["groups"] = {
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
-				p(459, {	-- Cat
-					["crs"] = { 62019 },	-- Cat
-				}),
-				p(385, {	-- Mouse
-					["crs"] = { 61143 },	-- Mouse
-				}),
-				p(378, {	-- Rabbit
-					["crs"] = { 61080 },	-- Rabbit
-				}),
+				["sym"] = {{"select","speciesID",
+					378,	-- Rabbit
+				}},
+				["g"] = {
+					p(459, {	-- Cat
+						["crs"] = { 62019 },	-- Cat
+					}),
+					p(385, {	-- Mouse
+						["crs"] = { 61143 },	-- Mouse
+					}),
+				},
 			})),
 			-- #endif
 			n(FACTIONS, {
@@ -481,9 +483,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16631, {	-- Andra <Clothier>
 					["coord"] = { 65.2, 47.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = ANDRA_ZYANDREL_GROUPS,
+					["sym"] = {
+						{"select", "itemID", 16059 },    -- Common Brown Shirt
+						{"select", "itemID", 3428 },    -- Common Gray Shirt
+						{"select", "itemID", 16060 },    -- Common White Shirt
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+					},
 				}),
-				n(16619, {	-- Celana 
+				n(16619, {	-- Celana
 					["coord"] = { 86.0, 36.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -578,7 +590,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				n(16625, {	-- Keeli  
+				n(16625, {	-- Keeli
 					["coord"] = { 61.2, 86.4, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -621,7 +633,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["groups"] = LYNA_GROUPS,
 				}),
-				n(16620, {	-- Mathaleron 
+				n(16620, {	-- Mathaleron
 					["coord"] = { 86.0, 39.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -643,6 +655,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				n(16691, {	-- Noraelath  
+					["coord"] = { 55.6, 62.6, SILVERMOON_CITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"select", "itemID", 2371 },    -- Battered Leather Belt
+						{"select", "itemID", 2373 },    -- Battered Leather Boots
+						{"select", "itemID", 2374 },    -- Battered Leather Bracers
+						{"select", "itemID", 2375 },    -- Battered Leather Gloves
+						{"select", "itemID", 2370 },    -- Battered Leather Harness
+						{"select", "itemID", 2372 },    -- Battered Leather Pants
+						{"select", "itemID", 236 },    -- Cured Leather Armor
+						{"select", "itemID", 1849 },    -- Cured Leather Belt
+						{"select", "itemID", 238 },    -- Cured Leather Boots
+						{"select", "itemID", 1850 },    -- Cured Leather Bracers
+						{"select", "itemID", 239 },    -- Cured Leather Gloves
+						{"select", "itemID", 237 },    -- Cured Leather Pants
+						{"select", "itemID", 1843 },    -- Tanned Leather Belt
+						{"select", "itemID", 843 },    -- Tanned Leather Boots
+						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
+						{"select", "itemID", 844 },    -- Tanned Leather Gloves
+						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
+						{"select", "itemID", 845 },    -- Tanned Leather Pants
+					},
+				}),
 				n(16677, {	-- Quelis <Cooking Supplies>
 					["coord"] = { 69.6, 71.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
@@ -660,7 +696,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{"select", "itemID", 2529 },	-- zweihander
 					},
 				}),
-				n(16626, {	-- Tynna 
+				n(16626, {	-- Tynna
 					["coord"] = { 60.8, 86.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -691,7 +727,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22775),	-- Suntouched Special Reserve
 					},
 				}),
-				n(16637, {	-- Welethelon 
+				n(16637, {	-- Welethelon
 					["coord"] = { 56.2, 60.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -705,7 +741,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(2524),	-- Truncheon
 					},
 				}),
-				n(16693, {	-- Winthren  
+				n(16693, {	-- Winthren
 					["coord"] = { 60.6, 86.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -788,7 +824,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				n(16636, {	-- Zathanna 
+				n(16636, {	-- Zathanna
 					["coord"] = { 69.8, 65.8, SHATTRATH_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -805,7 +841,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16623, {	-- Zyandrel <Cloth Armor Merchant>
 					["coord"] = { 64.8, 48.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = ANDRA_ZYANDREL_GROUPS,
+					["sym"] = {
+						{"select", "itemID", 16059 },    -- Common Brown Shirt
+						{"select", "itemID", 3428 },    -- Common Gray Shirt
+						{"select", "itemID", 16060 },    -- Common White Shirt
+						{"select", "itemID", 837 },    -- Heavy Weave Armor
+						{"select", "itemID", 3589 },    -- Heavy Weave Belt
+						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
+						{"select", "itemID", 839 },    -- Heavy Weave Gloves
+						{"select", "itemID", 838 },    -- Heavy Weave Pants
+						{"select", "itemID", 840 },    -- Heavy Weave Shoes
+						{"select", "itemID", 3597 },    -- Thick Cloth Belt
+						{"select", "itemID", 3598 },    -- Thick Cloth Bracers
+						{"select", "itemID", 203 },    -- Thick Cloth Gloves
+						{"select", "itemID", 201 },    -- Thick Cloth Pants
+						{"select", "itemID", 202 },    -- Thick Cloth Shoes
+						{"select", "itemID", 200 },    -- Thick Cloth Vest
+						{"select", "itemID", 3606 },    -- Woven Belt
+						{"select", "itemID", 2367 },    -- Woven Boots
+						{"select", "itemID", 3607 },    -- Woven Bracers
+						{"select", "itemID", 2369 },    -- Woven Gloves
+						{"select", "itemID", 2366 },    -- Woven Pants
+						{"select", "itemID", 2364 },    -- Woven Vest
+					},
 				}),
 			}),
 		},
