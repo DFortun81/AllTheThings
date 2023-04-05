@@ -2255,15 +2255,6 @@ root(ROOTS.Unsorted, {
 				i(204192),	-- Ascendancy
 				i(203680),	-- Totem Toss
 			}),
-			filter(COSMETIC, {
-				-- NYI Ensembles
-				i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
-				i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
-				i(203213),	-- Ensemble: Lion's Heritage White Armor Set
-				i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
-				i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
-				i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
-			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
 				i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
@@ -2285,26 +2276,6 @@ root(ROOTS.Unsorted, {
 				i(202620),	-- Toxin Antidote
 				i(202642),	-- Proto-Killing Spear
 				i(202647),	-- Stolen Goods
-				i(202663),	-- [DNT] Dragonscale Expedition Item 01
-				i(202671),	-- [DNT] Dragonscale Expedition Item 02
-				i(202672),	-- [DNT] Dragonscale Expedition Item 03
-				i(202673),	-- [DNT] Dragonscale Expedition Item 04
-				i(202674),	-- [DNT] Dragonscale Expedition Item 05
-				i(202675),	-- [DNT] Maruuk Centaur Item 01
-				i(202676),	-- [DNT] Maruuk Centaur Item 02
-				i(202677),	-- [DNT] Maruuk Centaur Item 03
-				i(202678),	-- [DNT] Maruuk Centaur Item 04
-				i(202679),	-- [DNT] Maruuk Centaur Item 05
-				i(202680),	-- [DNT] Iskaara Tuskarr Item 01
-				i(202681),	-- [DNT] Iskaara Tuskarr Item 02
-				i(202682),	-- [DNT] Iskaara Tuskarr Item 03
-				i(202683),	-- [DNT] Iskaara Tuskarr Item 04
-				i(202684),	-- [DNT] Iskaara Tuskarr Item 05
-				i(202685),	-- [DNT] Valdrakken Accord Item 01
-				i(202686),	-- [DNT] Valdrakken Accord Item 02
-				i(202687),	-- [DNT] Valdrakken Accord Item 03
-				i(202688),	-- [DNT] Valdrakken Accord Item 04
-				i(202689),	-- [DNT] Valdrakken Accord Item 05
 				i(202868),	-- Mender's Signal
 				i(202874),	-- Healing Draught
 				i(203210),	-- Dragonscale Supply Box
@@ -2331,31 +2302,6 @@ root(ROOTS.Unsorted, {
 				i(204239),	-- Shadowy Mojo Crystal
 				i(204244),	-- Breathing Mojo Crystal
 				i(204245),	-- Hateful Mojo Crystal
-				-- Community Feast
-				i(204281),	-- Thousandbite Piranha Collar
-				i(204282),	-- Lunker Bits
-				i(204283),	-- Skrog Liver Oil
-				i(204284),	-- Norukk's "All-Purpose" Fish Powder
-				i(204285),	-- Fermented Mackerel Paste
-				i(204286),	-- Deepsquid Ink
-				i(204287),	-- Island Crab Jerky
-				i(204288),	-- Eye of Bass
-				i(204289),	-- Seven Spices Bruffalon
-				i(204290),	-- Dragonflame Argali
-				i(204291),	-- Thrice-Charred Mammoth Ribs
-				i(204292),	-- "Volcano" Duck
-				i(204293),	-- Greenberry
-				i(204294),	-- Fresh Dragon Fruit
-				i(204295),	-- Juicy Bushfruit
-				i(204296),	-- Dried Coldsnap Sagittate
-				i(204297),	-- Exquisite Ohn'ahran Potato
-				i(204298),	-- Flaky Pastry Dough
-				i(204299),	-- Dark Thaldraszian Cocoa Powder
-				i(204300),	-- Four-Cheese Blend
-				i(204301),	-- Rations: Scorpid Surprise
-				i(204302),	-- Rations: Undermine Clam Chowder
-				i(204303),	-- Rations: Westfall Stew
-				i(204304),	-- Rations: Dragonbreath Chili
 				--
 				i(204307),	-- Ornate Bronze Lockbox
 				i(204310),	-- Mycelial Threads
