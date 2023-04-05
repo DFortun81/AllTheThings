@@ -1,6 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local function bo(questID, isDaily)
+    return { ["questID"] = questID, ["isDaily"] = isDaily };
+end
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THALDRASZUS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
@@ -13,11 +16,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 59.5, 59.2, THALDRASZUS },
 				["questID"] = 74055,
 				["cost"] = { { "i", 197733, 4 } },	-- 4x Unsustainable Containment Core
+				["g"] = {
+					bo(69963, true),
+				},
 			}),
+		--	n(193220),	-- Broodweaver Araznae // under DF/Timed Based Rare
 			n(193658, {	-- Corrupted Proto-Dragon
 				["coord"] = { 44.8, 69.0, THALDRASZUS },
 				["questID"] = 74060,
 				["g"] = {
+					bo(69962, true),
 					i(200166),	-- Corrupted Drake Horn
 				},
 			}),
@@ -25,6 +33,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 45.4, 85.2, THALDRASZUS },
 				["questID"] = 74061,
 				["g"] = {
+					bo(69964, true),
 					i(200298),	-- Stoneshaped Greatbelt
 				},
 			}),
@@ -72,6 +81,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 62.2, 81.7, THALDRASZUS },
 				["questID"] = 74066,
 				["g"] = {
+					bo(69882, true),
 					i(200185),	-- Grips of the Everflowing Ocean
 				},
 			}),
@@ -81,6 +91,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 62.1, 60.1, THALDRASZUS },
 				["questID"] = 74561,
 				["g"] = {
+					bo(74450, true),
 					i(203666),	-- Vinelashed Bracers
 				},
 			})),
@@ -96,6 +107,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 59.6, 61.8, THALDRASZUS },
 				["questID"] = 74565,
 				["group"] = {
+					bo(74449, true),
 					i(203677),	-- Watcher's 'Neck' Ring
 				},
 			})),
@@ -104,6 +116,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 59.0, 56.0, THALDRASZUS },
 				["questID"] = 74566,
 				["g"] = {
+					bo(74448, true),
 					i(203665),	-- Stonetongues Hood
 				},
 			})),
@@ -156,6 +169,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 47.9, 49.8, THALDRASZUS },
 				["crs"] = { 193156 },	-- Wooly Lamb
 				["questID"] = 74089,
+				["g"] = {
+					bo(69850, true),
+				},
 			}),
 		})),
 	}),
