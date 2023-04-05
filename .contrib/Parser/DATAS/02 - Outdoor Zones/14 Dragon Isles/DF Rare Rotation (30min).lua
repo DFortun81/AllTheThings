@@ -1,6 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local function bo(questID, isDaily)
+    return { ["questID"] = questID, ["isDaily"] = isDaily };
+end
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(RARES, {
 		n(-1143, {	-- DF Rare Rotation
@@ -14,6 +17,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["questID"] = 73994,
 					["isDaily"] = true,
 					["g"] = {
+						bo(69856, true),
 						i(200433),	-- Footwraps of Subjugation
 					},
 				}),
@@ -21,6 +25,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 72.2, 44.8, OHNAHRAN_PLAINS },
 					["questID"] = 74011,
 					["g"] = {
+						bo(69871, true),
 						i(200197),	-- Armoredon Herding Crook
 					},
 				}),
@@ -28,25 +33,36 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 62.8, 79.8, OHNAHRAN_PLAINS },
 					["questID"] = 74015,
 					["g"] = {
+						bo(69857, true),
 						i(200542),	-- Breezy Companion
 					},
 				}),
 				n(193235, {	-- Oshigol
 					["coord"] = { 60.8, 26.8, OHNAHRAN_PLAINS },
 					["questID"] = 74018,
+					["g"] = {
+						bo(69877, true),
+					},
 				}),
 				n(196010, {	-- Researcher Sneakwing <The Sundered Flame>
 					["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
 					["questID"] = 74023,
+					["g"] = {
+						bo(70698, true),
+					},
 				}),
 				n(193227, {	-- Ronsak the Decimator
 					["coord"] = { 43.3, 55.2, OHNAHRAN_PLAINS },
 					["questID"] = 74026,
+					["g"] = {
+						bo(69878, true),
+					},
 				}),
 				n(193123, {	-- Steamgill
 					["coord"] = { 53.6, 72.8, OHNAHRAN_PLAINS },
 					["questID"] = 74034,
 					["g"] = {
+						bo(69667, true),
 						i(200216),	-- Water Heating Cord
 					},
 				}),
