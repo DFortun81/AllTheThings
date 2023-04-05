@@ -340,9 +340,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 70, 49, TANARIS },
 							["cr"] = 9453,	-- Aquementas
 						}),
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This item is part of the quest objective above, not needed in Classic. If anywhere, it would ONLY be linked to this one quest. That said, I don't think this is necessary.
 						i(11522, {	-- Silver Totem of Aquementas
 							["timeline"] = { "removed 4.0.3" },
 						}),
+						-- #endif
 					},
 				}),
 				q(28372, {	-- Back to Business
