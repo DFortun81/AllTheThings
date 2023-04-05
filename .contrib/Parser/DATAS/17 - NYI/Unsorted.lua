@@ -792,7 +792,6 @@ root(ROOTS.Unsorted, {
 				i(203013),	-- Niffen Incense
 				i(203229),	-- Snail Slime
 				i(203383),	-- Notes on Dragonkin Equality
-				i(203385),	-- Flamesight Rune
 				i(203387),	-- Oddly Familiar Training Weapon
 				i(203388),	-- Gunky Insignia
 				i(203389),	-- Shiny Rock
@@ -805,16 +804,13 @@ root(ROOTS.Unsorted, {
 				i(203396),	-- Displayed Armor Piece
 				i(203430),	-- Ward of Igira
 				i(203442),	-- Snail Slime
-				i(203453),	-- Dragonbone Totem
+
 				i(203454),	-- Zaqali Equipment
 				i(203455),	-- Draketooth Fetish
-				i(203456),	-- Obsidian Prayer Beads
-				i(203457),	-- Volcanic Herb Sachet
-				i(203458),	-- Black Dragonscale Robes
-				i(203653),	-- Vacant Elemental Core
-				i(203654),	-- Zaqali Flame Totem
+
+
 				i(203655),	-- Dusty Key
-				i(203682),	-- Darkened Elemental Core
+
 				i(203683),	-- Ward of Fyrakk
 				i(203706),	-- Hurricane Scepter
 				i(203707),	-- Water Bucket
@@ -824,7 +820,7 @@ root(ROOTS.Unsorted, {
 				i(204069),	-- Sulfuric Crystal
 				i(204070),	-- Magma Crystal
 				i(204071),	-- Head of Kretchenwrath
-				i(204085),	-- Zaqali Dragonslayer's Spear
+
 				i(204088),	-- Quartzite Spore Bile
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
@@ -1211,7 +1207,7 @@ root(ROOTS.Unsorted, {
 				i(204706),	-- Spore Colony Shoulderguards
 
 				i(204712),	-- Brimming Loamm Niffen Supply Satchel
-				i(204713),	-- Sundered Flame Expedition Notes
+
 				i(204714),	-- Satchel of Healing Spores
 
 				i(204717),	-- Splintered Spark of Shadowflame

@@ -165,7 +165,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 200075 },	-- Scalecommander Emberthal
 					["coord"] = { 62.8, 73.6, ZARALEK_CAVERN },
 				}),
-				q(72693, {	-- The Upper Hand
+				q(72963, {	-- The Upper Hand
 					["sourceQuests"] = { 75419 },	-- Sundered Flames
 					["provider"] = { "n", 202857 },	-- Scalecommander Emberthal
 					["coord"] = { 63.0, 74.0, ZARALEK_CAVERN },
@@ -176,13 +176,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204590),	-- Inherited Treads
 					},
 				}),
-				q(72694, {	-- Singed
-					["sourceQuests"] = { 72693 },	-- The Upper Hand
+				q(72964, {	-- Singed
+					["sourceQuests"] = { 72963 },	-- The Upper Hand
 					["provider"] = { "n", 204571 },	-- Scalecommander Emberthal
 					["coord"] = { 63.4, 74.6, ZARALEK_CAVERN },
 				}),
-				q(72694, {	-- Aspects of Our Legacy
-					["sourceQuests"] = { 72694 },	-- Singed
+				q(72965, {	-- Aspects of Our Legacy
+					["sourceQuests"] = { 72964 },	-- Singed
 					["provider"] = { "n", 202670 },	-- Ebyssian
 					["coord"] = { 63.4, 74.7, ZARALEK_CAVERN },
 					["g"] = {
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 					-- Chapter 3 --
 				q(72966, {	-- Where There's Smoke, There's Fire
-					["sourceQuests"] = { 72694 },	-- Aspects of Our Legacy
+					["sourceQuests"] = { 72965 },	-- Aspects of Our Legacy
 					["provider"] = { "n", 199849 },	-- Sabellian
 					["coord"] = { 56.6, 56.7, ZARALEK_CAVERN },
 				}),
@@ -326,7 +326,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204608),	-- Bestowed Greathelm
 						i(204584),	-- Endowed Hood
 						i(204592),	-- Inherited Mask
-						-- Zaralek WQ
+						spell(408876),	-- Zaralek Cavern World Quests
 					},
 				}),
 					-- Chapter 4 --

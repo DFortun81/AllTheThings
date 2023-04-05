@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			n(203646, {	-- Jrumm
 				["coord"] = { 29.2, 50.7, ZARALEK_CAVERN },
-				["questID"] = 75564,
+				["questID"] = 75564,	-- 75352?
 				["g"] = {
 					bo(75353, false),
 					i(205419),	-- Jrumm's Drum (TOY!)
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			n(203662, {	-- Subterrax
 				["coord"] = { 38.8, 46.5, ZARALEK_CAVERN },
-				["questID"] = 75566,
+				["questID"] = 75566,	--75359?
 				["g"] = {
 					bo(75360, false),
 				},
