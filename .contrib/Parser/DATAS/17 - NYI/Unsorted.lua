@@ -1071,7 +1071,6 @@ root(ROOTS.Unsorted, {
 				i(204349),	-- Bigger Wrench
 				i(204351),	-- Animated Crystal Shard
 				i(204365),	-- Bundle of Ebon Spears
-				i(204370),	-- Stinky Bright Potion
 				i(204377),	-- Glow Spores
 				i(204407),	-- Rebel Detonator
 				i(204433),	-- Everburning Fireshard
@@ -1104,7 +1103,7 @@ root(ROOTS.Unsorted, {
 				i(204196),	-- Wyrm's Shadowflame Crest
 
 				-- profession
-				i(204238),	-- Draconic Phial Cauldron
+
 				i(204440),	-- Spark of Shadowflame
 				i(204460),	-- Zaralek Glowspores
 				i(204462),	-- Dracothyst Shards
@@ -1124,46 +1123,9 @@ root(ROOTS.Unsorted, {
 				i(204621),	-- Enchant Weapon - Shadowflame Wreathe
 				i(204622),	-- Enchant Weapon - Shadowflame Wreathe
 				i(204623),	-- Enchant Weapon - Shadowflame Wreathe
-				i(204631),	-- Recipe: Transmute: Dracothyst
-				i(204633),	-- Cauldron of Extracted Putrescence
-				i(204634),	-- Rot Resistant Cauldron
-				i(204643),	-- Fleeting Phial of the Eye in the Storm
-				i(204644),	-- Fleeting Phial of the Eye in the Storm
-				i(204645),	-- Fleeting Phial of the Eye in the Storm
-				i(204646),	-- Fleeting Phial of Still Air
-				i(204647),	-- Fleeting Phial of Still Air
-				i(204648),	-- Fleeting Phial of Still Air
-				i(204649),	-- Fleeting Phial of Icy Preservation
-				i(204650),	-- Fleeting Phial of Icy Preservation
-				i(204651),	-- Fleeting Phial of Icy Preservation
-				i(204652),	-- Fleeting Iced Phial of Corrupting Rage
-				i(204653),	-- Fleeting Iced Phial of Corrupting Rage
-				i(204654),	-- Fleeting Iced Phial of Corrupting Rage
-				i(204655),	-- Fleeting Phial of Charged Isolation
-				i(204656),	-- Fleeting Phial of Charged Isolation
-				i(204657),	-- Fleeting Phial of Charged Isolation
-				i(204658),	-- Fleeting Phial of Glacial Fury
-				i(204659),	-- Fleeting Phial of Glacial Fury
-				i(204660),	-- Fleeting Phial of Glacial Fury
-				i(204661),	-- Fleeting Phial of Static Empowerment
-				i(204662),	-- Fleeting Phial of Static Empowerment
-				i(204663),	-- Fleeting Phial of Static Empowerment
-				i(204664),	-- Fleeting Phial of Tepid Versatility
-				i(204665),	-- Fleeting Phial of Tepid Versatility
-				i(204666),	-- Fleeting Phial of Tepid Versatility
-				i(204667),	-- Fleeting Charged Phial of Alacrity
-				i(204668),	-- Fleeting Charged Phial of Alacrity
-				i(204669),	-- Fleeting Charged Phial of Alacrity
-				i(204670),	-- Fleeting Phial of Elemental Chaos
-				i(204671),	-- Fleeting Phial of Elemental Chaos
-				i(204672),	-- Fleeting Phial of Elemental Chaos
 				i(204673),	-- Titan Training Matrix V
-				i(204679),	-- Draconic Phial Cauldron
-				i(204680),	-- Draconic Phial Cauldron
 				i(204681),	-- Enchanted Whelpling's Shadowflame Crest
 				i(204682),	-- Enchanted Wyrm's Shadowflame Crest
-				i(204695),	-- Recipe: Cauldron of Extracted Putrescence
-				i(204696),	-- Recipe: Draconic Phial Cauldron
 				i(204697),	-- Enchanted Aspect's Shadowflame Crest
 				i(204700),	-- Lambent Armor Kit
 				i(204701),	-- Lambent Armor Kit
@@ -1283,7 +1245,7 @@ root(ROOTS.Unsorted, {
 				i(204977),	-- Formula: Illusory Adornment: Spores
 				i(204978),	-- Formula: Enchant Weapon - Spore Tender
 
-				i(204984),	-- Recipe: Stinky Bright Potion
+
 				i(204985),	-- Barter Brick
 				i(204986),	-- Flame-Infused Scale Oil
 				i(204987),	-- Lava-Forged Leatherworker's "Knife"

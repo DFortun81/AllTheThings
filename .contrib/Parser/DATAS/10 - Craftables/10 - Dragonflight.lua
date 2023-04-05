@@ -39,62 +39,66 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 		spell(370747, {	-- Advanced Phial Experimentation
 			["sym"] = {{"select","spellID",370746},{"extract","recipeID"}},	-- Basic Phial Experimentation -> Recipes
 			["g"] = {
-				i(193366, {	-- Advanced Phial Experimentation*
+				i(193366, {	-- Advanced Phial Experimentation
 					-- Move to Basic Phial Experimentation if possible discovery
-					r(370460),	-- Phial of Charged Isolation
-					r(370462),	-- Phial of Glacial Fury
-					r(370463),	-- Phial of Static Empowerment
-					r(370453),	-- Phial of Still Air
-					r(370438),	-- Phial of the Eye in the Storm
-					r(370473),	-- Steaming Phial of Finesse
+					r(370460),	-- Phial of Charged Isolation (RECIPE!)
+					r(370462),	-- Phial of Glacial Fury (RECIPE!)
+					r(370463),	-- Phial of Static Empowerment (RECIPE!)
+					r(370453),	-- Phial of Still Air (RECIPE!)
+					r(370438),	-- Phial of the Eye in the Storm (RECIPE!)
+					r(370473),	-- Steaming Phial of Finesse (RECIPE!)
 				}),
 			},
 		}),
 		spell(370745, {	-- Advanced Potion Experimentation
 			["sym"] = {{"select","spellID",370743},{"extract","recipeID"}},	-- Basic Potion Experimentation -> Recipes
 			["g"] = {
-				i(193367, {	-- Advanced Potion Experimentation*
+				i(193367, {	-- Advanced Potion Experimentation
 					-- Move to Basic Potion Experimentation if possible discovery
-					r(370478),	-- Potion of Frozen Fatality
-					r(370524),	-- Potion of Frozen Focus
-					r(370558),	-- Potion of Gusts
-					r(370561),	-- Potion of Shocking Disclosure
-					r(370556),	-- Potion of the Hushed Zephyr
-					r(370533),	-- Residual Neural Channeling Agent
+					r(370478),	-- Potion of Frozen Fatality (RECIPE!)
+					r(370524),	-- Potion of Frozen Focus (RECIPE!)
+					r(370558),	-- Potion of Gusts (RECIPE!)
+					r(370561),	-- Potion of Shocking Disclosure (RECIPE!)
+					r(370556),	-- Potion of the Hushed Zephyr (RECIPE!)
+					r(370533),	-- Residual Neural Channeling Agent (RECIPE!)
 					-- Decay
-					r(370521, {	-- Bottled Putrescence
-						["description"] = "Requires Decayology."
+					r(370521, {	-- Bottled Putrescence (RECIPE!)
+						["description"] = "Requires Decayology.",
 					}),
-					r(370536, {	-- Delicate Suspension of Spores
-						["description"] = "Requires Decayology."
+					r(370536, {	-- Delicate Suspension of Spores (RECIPE!)
+						["description"] = "Requires Decayology.",
 					}),
-					r(370525, {	-- Potion of Chilled Clarity
-						["description"] = "Requires Decayology."
+					r(370525, {	-- Potion of Chilled Clarity (RECIPE!)
+						["description"] = "Requires Decayology.",
 					}),
-					r(370528, {	-- Potion of Withering Vitality
-						["description"] = "Requires Decayology."
+					r(370528, {	-- Potion of Withering Vitality (RECIPE!)
+						["description"] = "Requires Decayology.",
+					}),
+					r(405832, {	-- Stinky Bright Potion (RECIPE!)
+						["description"] = "Requires Decayology.",
+						["timeline"] = { ADDED_10_1_0 },
 					}),
 				}),
 			},
 		}),
 		spell(370746, {	-- Basic Phial Experimentation
-			i(192180,{	-- Basic Phial Experimentation*
+			i(192180,{	-- Basic Phial Experimentation
 				-- Recipes Discoverable
-				r(370472),	-- Aerated Phial of Deftness
-				r(370476),	-- Charged Phial of Alacrity
-				r(370483),	-- Crystalline Phial of Perception
-				r(370504),	-- Phial of Elemental Chaos
+				r(370472),	-- Aerated Phial of Deftness (RECIPE!)
+				r(370476),	-- Charged Phial of Alacrity (RECIPE!)
+				r(370483),	-- Crystalline Phial of Perception (RECIPE!)
+				r(370504),	-- Phial of Elemental Chaos (RECIPE!)
 				-- Decay
-				r(370457, {	-- Iced Phial of Corrupting Rage
+				r(370457, {	-- Iced Phial of Corrupting Rage (RECIPE!)
 					["description"] = "Requires Decayology."
 				}),
-				r(370456, {	-- Phial of Icy Preservation
+				r(370456, {	-- Phial of Icy Preservation (RECIPE!)
 					["description"] = "Requires Decayology."
 				}),
 			}),
 		}),
 		spell(370743, {	-- Basic Potion Experimentation
-			i(193365,{	-- Basic Potion Experimentation*
+			i(193365,{	-- Basic Potion Experimentation
 				-- Recipes Discoverable
 			}),
 		}),
@@ -116,10 +120,13 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71293, 370561);	-- Potion of Shocking Disclosure
 			FirstCraft(71291, 370556);	-- Potion of the Hushed Zephyr
 			FirstCraft(71283, 370533);	-- Residual Neural Channeling Agent
+			--FirstCraft(x, 405832, ADDED_10_1_0);	-- Stinky Bright Potion
 			-- Cauldrons
+			--FirstCraft(x, 405879, ADDED_10_1_0);	-- Cauldron of Extracted Putrescence
+			FirstCraft(71247, 370673);	-- Cauldron of the Pooka
+			--FirstCraft(x, 406106, ADDED_10_1_0);	-- Draconic Phial Cauldron
 			FirstCraft(71295, 370672);	-- Potion Cauldron of Ultimate Power
 			FirstCraft(71296, 370668);	-- Potion Cauldron of Power
-			FirstCraft(71247, 370673);	-- Cauldron of the Pooka
 			-- Frost Potions
 			FirstCraft(71284, 370536);	-- Delicate Suspension of Spores
 			FirstCraft(71281, 370525);	-- Potion of Chilled Clarity
@@ -152,6 +159,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71299, 370707);	-- Transmute: Awakened Fire
 			FirstCraft(71300, 370708);	-- Transmute: Awakened Frost
 			FirstCraft(71301, 370714);	-- Transmute: Decay to Elements
+			--FirstCraft(x, 405847, ADDED_10_1_0);	-- Transmute: Dracothyst
 			FirstCraft(71302, 370715);	-- Transmute: Order to Elements
 			-- Optional Reagents
 			FirstCraft(71263, 370738);	-- Potion Absorption Inhibitor
@@ -215,7 +223,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(191497),	-- Omnium Draconis++
 			i(191498),	-- Omnium Draconis+++
 		}),
-		n(-386, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(191492),	-- Alacritous Alchemist Stone
 			i(191491),	-- Sustaining Alchemist Stone
 		}),
@@ -231,6 +239,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 		i(191360),	-- Bottled Putrescence+
 		i(191361),	-- Bottled Putrescence++
 		i(191362),	-- Bottled Putrescence+++
+		i(204633, {["timeline"] = {ADDED_10_1_0}}),	-- Cauldron of Extracted Putrescence
 		i(191488),	-- Cauldron of the Pooka+
 		i(191489),	-- Cauldron of the Pooka++
 		i(191490),	-- Cauldron of the Pooka+++
@@ -243,6 +252,42 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 		i(191375),	-- Delicate Suspension of Spores+
 		i(191376),	-- Delicate Suspension of Spores++
 		i(191377),	-- Delicate Suspension of Spores+++
+		i(204238, sharedDataSelf({["timeline"] = {ADDED_10_1_0}},{	-- Draconic Phial Cauldron+
+			i(204643),	-- Fleeting Phial of the Eye in the Storm+
+			i(204646),	-- Fleeting Phial of Still Air+
+			i(204649),	-- Fleeting Phial of Icy Preservation+
+			i(204652),	-- Fleeting Iced Phial of Corrupting Rage+
+			i(204655),	-- Fleeting Phial of Charged Isolation+
+			i(204658),	-- Fleeting Phial of Glacial Fury+
+			i(204661),	-- Fleeting Phial of Static Empowerment+
+			i(204664),	-- Fleeting Phial of Tepid Versatility+
+			i(204667),	-- Fleeting Charged Phial of Alacrity+
+			i(204670),	-- Fleeting Phial of Elemental Chaos+
+		})),
+		i(204679, sharedDataSelf({["timeline"] = {ADDED_10_1_0}},{	-- Draconic Phial Cauldron++
+			i(204644),	-- Fleeting Phial of the Eye in the Storm++
+			i(204647),	-- Fleeting Phial of Still Air++
+			i(204650),	-- Fleeting Phial of Icy Preservation++
+			i(204653),	-- Fleeting Iced Phial of Corrupting Rage++
+			i(204656),	-- Fleeting Phial of Charged Isolation++
+			i(204659),	-- Fleeting Phial of Glacial Fury++
+			i(204662),	-- Fleeting Phial of Static Empowerment++
+			i(204665),	-- Fleeting Phial of Tepid Versatility++
+			i(204668),	-- Fleeting Charged Phial of Alacrity++
+			i(204671),	-- Fleeting Phial of Elemental Chaos++
+		})),
+		i(204680, sharedDataSelf({["timeline"] = {ADDED_10_1_0}},{	-- Draconic Phial Cauldron+++
+			i(204645),	-- Fleeting Phial of the Eye in the Storm+++
+			i(204648),	-- Fleeting Phial of Still Air+++
+			i(204651),	-- Fleeting Phial of Icy Preservation+++
+			i(204654),	-- Fleeting Iced Phial of Corrupting Rage+++
+			i(204657),	-- Fleeting Phial of Charged Isolation+++
+			i(204660),	-- Fleeting Phial of Glacial Fury+++
+			i(204663),	-- Fleeting Phial of Static Empowerment+++
+			i(204666),	-- Fleeting Phial of Tepid Versatility+++
+			i(204669),	-- Fleeting Charged Phial of Alacrity+++
+			i(204672),	-- Fleeting Phial of Elemental Chaos+++
+		})),
 		i(191387),	-- Elemental Potion of Power+
 		i(191388),	-- Elemental Potion of Power++
 		i(191389),	-- Elemental Potion of Power+++
@@ -276,12 +321,24 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 		i(191318),	-- Phial of the Eye in the Storm+
 		i(191319),	-- Phial of the Eye in the Storm++
 		i(191320),	-- Phial of the Eye in the Storm+++
-		i(191482),	-- Potion Cauldron of Power+
-		i(191483),	-- Potion Cauldron of Power++
-		i(191484),	-- Potion Cauldron of Power+++
-		i(191485),	-- Potion Cauldron of Ultimate Power+
-		i(191486),	-- Potion Cauldron of Ultimate Power++
-		i(191487),	-- Potion Cauldron of Ultimate Power+++
+		i(191482, {	-- Potion Cauldron of Power+
+			i(191905),	-- Fleeting Elemental Potion of Power+
+		}),
+		i(191483, {	-- Potion Cauldron of Power++
+			i(191906),	-- Fleeting Elemental Potion of Power++
+		}),
+		i(191484, {	-- Potion Cauldron of Power+++
+			i(191907),	-- Fleeting Elemental Potion of Power+++
+		}),
+		i(191485, {	-- Potion Cauldron of Ultimate Power+
+			i(191912),	-- Fleeting Elemental Potion of Ultimate Power+
+		}),
+		i(191486, {	-- Potion Cauldron of Ultimate Power++
+			i(191913),	-- Fleeting Elemental Potion of Ultimate Power++
+		}),
+		i(191487, {	-- Potion Cauldron of Ultimate Power+++
+			i(191914),	-- Fleeting Elemental Potion of Ultimate Power+++
+		}),
 		i(191366),	-- Potion of Chilled Clarity+
 		i(191367),	-- Potion of Chilled Clarity++
 		i(191368),	-- Potion of Chilled Clarity+++
@@ -312,6 +369,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 		i(191345),	-- Steaming Phial of Finesse+
 		i(191346),	-- Steaming Phial of Finesse++
 		i(191347),	-- Steaming Phial of Finesse+++
+		i(204370, {["timeline"] = {ADDED_10_1_0}}),	-- Stinky Bright Potion
 		i(191917),	-- Suspiciously Fuzzy Drink+
 		i(191918),	-- Suspiciously Fuzzy Drink++
 		i(191919),	-- Suspiciously Fuzzy Drink+++

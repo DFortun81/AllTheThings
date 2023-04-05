@@ -44,6 +44,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			i(193883, {	-- Pattern: Venom-Steeped Stompers (RECIPE!)
 				["description"] = "Drops from Decayed Creatures around Bracken Hollow.",
 			}),
+			i(204695, {	-- Recipe: Cauldron of Extracted Putrescence (RECIPE!)
+				["description"] = "Drops from Decayed Creatures around Bracken Hollow.",
+				["timeline"] = { ADDED_10_1_0 },
+			}),
 			i(198907),	-- Technique: Illusion Parchment: Chilling Wind (RECIPE!)
 			i(201735),	-- Technique: Highland Drake: Silver and Blue Armor (RECIPE!)
 			i(201421, {	-- Tuskarr Jerky

@@ -461,11 +461,6 @@ i(0, 307147);		-- 9.0 Transmute: 06
 i(0, 307148);		-- 9.0 Transmute: 07
 i(0, 307149);		-- 9.0 Transmute: 08
 i(0, 307105);		-- Alchemist's Pouch
--- #if BEFORE 9.1.0
-i(0, 343677);		-- Crafter's Mark III
-i(0, 343676);		-- Crafter's Mark of the Chained Isle
-i(0, 307144);		-- Stones to Ore
--- #endif
 i(0, 307109);		-- Unknown
 i(0, 307110);		-- Unknown
 i(0, 307111);		-- Unknown
@@ -529,11 +524,11 @@ i(191545, 370676);	-- Sustaining Alchemist Stone
 i(191580, 370710);	-- Transmute: Awakened Earth
 i(191578, 370707);	-- Transmute: Awakened Fire
 i(191579, 370708);	-- Transmute: Awakened Frost
--- Special
+-- SPECIAL --
 i(0, 370543);	-- Elemental Potion of Ultimate Power [Shares item 201740]
 i(0, 370672);	-- Potion Cauldron of Ultimate Power [Shares item 201740]
 -- DISCOVERY --
--- Phial
+-- Phial --
 i(0, 370472);	-- Aerated Phial of Deftness
 i(0, 370476);	-- Charged Phial of Alacrity
 i(0, 370483);	-- Crystaline Phial of Perception
@@ -546,7 +541,7 @@ i(0, 370463);	-- Phial of Static Empowerment
 i(0, 370453);	-- Phial of Still Air
 i(0, 370438);	-- Phial of the Eye in the Storm
 i(0, 370473);	-- Steaming Phial of Finesse
--- Potion
+-- Potion --
 i(0, 370521);	-- Bottled Putrescence
 i(0, 370536);	-- Delicate Suspension of Spores
 i(0, 370525);	-- Potion of Chilled Clarity
@@ -624,3 +619,16 @@ i(191592, 0);	-- Writhefire Oil
 -- PATCH 10.0.7 --
 ------------------
 i(203420, 400270);	-- Draconic Suppression Powder
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+-- ITEM --
+i(204695, 405879);	-- Cauldron of Extracted Putrescence
+i(204696, 406106);	-- Draconic Phial Cauldron
+i(204631, 405847);	-- Transmute: Dracothyst
+-- DISCOVERY --
+-- Potion --
+i(0, 405832);	-- Stinky Bright Potion
+-- NYI --
+i(204984, 0);	-- Recipe: Stinky Bright Potion
