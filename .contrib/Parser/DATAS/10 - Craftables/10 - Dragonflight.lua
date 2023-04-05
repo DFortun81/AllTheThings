@@ -2315,118 +2315,118 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			["requireSkill"] = LEATHERWORKING,
 		},{
 			-- Leather Armor
-			q(71712, { ["name"] = "First Craft: Life-Bound Belt", }),
-			q(71713, { ["name"] = "First Craft: Life-Bound Binding", }),
-			q(71706, { ["name"] = "First Craft: Life-Bound Boots", }),
-			q(71709, { ["name"] = "First Craft: Life-Bound Cap", }),
-			q(71707, { ["name"] = "First Craft: Life-Bound Chestpiece", }),
-			q(71708, { ["name"] = "First Craft: Life-Bound Gloves", }),
-			q(71711, { ["name"] = "First Craft: Life-Bound Shoulderpads", }),
-			q(71710, { ["name"] = "First Craft: Life-Bound Trousers", }),
-			q(71704, { ["name"] = "First Craft: Pioneer's Leather Boots", }),
-			q(71703, { ["name"] = "First Craft: Pioneer's Leather Tunic", }),
-			q(72569, { ["name"] = "First Craft: Pioneer's Leather Wristguard", }),
-			q(72495, { ["name"] = "First Craft: Pioneer's Practiced Belt", }),
-			q(72505, { ["name"] = "First Craft: Pioneer's Practiced Cowl", }),
-			q(72496, { ["name"] = "First Craft: Pioneer's Practiced Gloves", }),
-			q(72497, { ["name"] = "First Craft: Pioneer's Practiced Leggings", }),
-			q(72498, { ["name"] = "First Craft: Pioneer's Practiced Shoulderpads", }),
+			FirstCraft(71712, 375115);	-- Life-Bound Belt
+			FirstCraft(71713, 375116);	-- Life-Bound Bindings
+			FirstCraft(71706, 375110);	-- Life-Bound Boots
+			FirstCraft(71709, 375112);	-- Life-Bound Cap
+			FirstCraft(71707, 375109);	-- Life-Bound Chestpiece
+			FirstCraft(71708, 375111);	-- Life-Bound Gloves
+			FirstCraft(71711, 375114);	-- Life-Bound Shoulderpads
+			FirstCraft(71710, 375113);	-- Life-Bound Trousers
+			FirstCraft(71704, 375103);	-- Pioneer's Leather Boots
+			FirstCraft(71703, 375105);	-- Pioneer's Leather Tunic
+			FirstCraft(72569, 375104);	-- Pioneer's Leather Wristguard
+			FirstCraft(72495, 395863);	-- Pioneer's Practiced Belt
+			FirstCraft(72505, 395864);	-- Pioneer's Practiced Cowl
+			FirstCraft(72496, 395865);	-- Pioneer's Practiced Gloves
+			FirstCraft(72497, 395867);	-- Pioneer's Practiced Leggings
+			FirstCraft(72498, 395868);	-- Pioneer's Practiced Shoulderpads
 			-- Mail Armor
-			q(71738, { ["name"] = "First Craft: Flame-Touched Chain", }),
-			q(71733, { ["name"] = "First Craft: Flame-Touched Chainmail", }),
-			q(71739, { ["name"] = "First Craft: Flame-Touched Cuffs", }),
-			q(71734, { ["name"] = "First Craft: Flame-Touched Handguards", }),
-			q(71735, { ["name"] = "First Craft: Flame-Touched Helmet", }),
-			q(71736, { ["name"] = "First Craft: Flame-Touched Legguards", }),
-			q(71737, { ["name"] = "First Craft: Flame-Touched Spaulders", }),
-			q(71732, { ["name"] = "First Craft: Flame-Touched Treads", }),
-			q(71730, { ["name"] = "First Craft: Trailblazer's Scale Boots", }),
-			q(71731, { ["name"] = "First Craft: Trailblazer's Scale Bracers", }),
-			q(71729, { ["name"] = "First Craft: Trailblazer's Scale Vest", }),
-			q(71705, { ["name"] = "First Craft: Trailblazer's Toughened Chainbelt", }),
-			q(72501, { ["name"] = "First Craft: Trailblazer's Toughened Coif", }),
-			q(72500, { ["name"] = "First Craft: Trailblazer's Toughened Grips", }),
-			q(72502, { ["name"] = "First Craft: Trailblazer's Toughened Legguards", }),
-			q(72503, { ["name"] = "First Craft: Trailblazer's Toughened Spikes", }),
+			FirstCraft(71738, 375123);	-- Flame-Touched Chain
+			FirstCraft(71733, 375117);	-- Flame-Touched Chainmail
+			FirstCraft(71739, 375124);	-- Flame-Touched Cuffs
+			FirstCraft(71734, 375119);	-- Flame-Touched Handguards
+			FirstCraft(71735, 375120);	-- Flame-Touched Helmet
+			FirstCraft(71736, 375121);	-- Flame-Touched Legguards
+			FirstCraft(71737, 375122);	-- Flame-Touched Spaulders
+			FirstCraft(71732, 375118);	-- Flame-Touched Treads
+			FirstCraft(71730, 375106);	-- Trailblazer's Scale Boots
+			FirstCraft(71731, 375107);	-- Trailblazer's Scale Bracers
+			FirstCraft(71729, 375108);	-- Trailblazer's Scale Vest
+			FirstCraft(71705, 395844);	-- Trailblazer's Toughened Chainbelt
+			FirstCraft(72501, 395839);	-- Trailblazer's Toughened Coif
+			FirstCraft(72500, 395845);	-- Trailblazer's Toughened Grips
+			FirstCraft(72502, 395847);	-- Trailblazer's Toughened Legguards
+			FirstCraft(72503, 395851);	-- Trailblazer's Toughened Spikes
 			-- Profession Equipment
-			q(71683, { ["name"] = "First Craft: Alchemist's Hat", }),
-			q(71767, { ["name"] = "First Craft: Durable Pack", }),
-			q(71684, { ["name"] = "First Craft: Expert Alchemist's Hat", }),
-			q(71770, { ["name"] = "First Craft: Expert Skinner's Cap", }),
-			q(71745, { ["name"] = "First Craft: Flameproof Apron", }),
-			q(71751, { ["name"] = "First Craft: Floral Basket", }),
-			q(71753, { ["name"] = "First Craft: Jeweler's Cover", }),
-			q(71752, { ["name"] = "First Craft: Lavish Floral Pack", }),
-			q(71756, { ["name"] = "First Craft: Masterwork Smock", }),
-			q(71749, { ["name"] = "First Craft: Protective Gloves", }),
-			q(71768, { ["name"] = "First Craft: Reinforced Pack", }),
-			q(71755, { ["name"] = "First Craft: Resilient Smock", }),
-			q(71754, { ["name"] = "First Craft: Resplendent Cover", }),
-			q(71750, { ["name"] = "First Craft: Shockproof Gloves", }),
-			q(71769, { ["name"] = "First Craft: Skinner's Cap", }),
-			q(71744, { ["name"] = "First Craft: Smithing Apron", }),
+			FirstCraft(71683, 375188);	-- Alchemist's Hat
+			FirstCraft(71767, 375182);	-- Durable Pack
+			FirstCraft(71684, 375196);	-- Expert Alchemist's Hat
+			FirstCraft(71770, 375191);	-- Expert Skinner's Cap
+			FirstCraft(71745, 375195);	-- Flameproof Apron
+			FirstCraft(71751, 375181);	-- Floral Basket
+			FirstCraft(71753, 375184);	-- Jeweler's Cover
+			FirstCraft(71752, 375189);	-- Lavish Floral Pack
+			FirstCraft(71756, 375194);	-- Masterwork Smock
+			FirstCraft(71749, 375185);	-- Protective Gloves
+			FirstCraft(71768, 375190);	-- Reinforced Pack
+			FirstCraft(71755, 375186);	-- Resilient Smock
+			FirstCraft(71754, 375192);	-- Resplendent Cover
+			FirstCraft(71750, 375193);	-- Shockproof Gloves
+			FirstCraft(71769, 375183);	-- Skinner's Cap
+			FirstCraft(71744, 375187);	-- Smithing Apron
 			-- Weapons
-			q(71777, { ["name"] = "First Craft: Bonewrought Crossbow", }),
+			FirstCraft(71777, 375102);	-- Bonewrought Crossbow
 			-- Elemental Patterns
-			q(71720, { ["name"] = "First Craft: Ancestor's Dew Drippers", }),
-			q(71702, { ["name"] = "First Craft: Flaring Cowl", }),
-			q(71691, { ["name"] = "First Craft: Old Spirit's Wristwraps", }),
-			q(71718, { ["name"] = "First Craft: Scale Rein Grips", }),
-			q(71693, { ["name"] = "First Craft: Snowball Makers", }),
-			q(71690, { ["name"] = "First Craft: String of Spiritual Knick-Knacks", }),
-			q(71719, { ["name"] = "First Craft: Wind Spirit's Lasso", }),
+			FirstCraft(71720, 375153);	-- Ancestor's Dew Drippers
+			FirstCraft(71702, 375197);	-- Flaring Cowl
+			FirstCraft(71691, 375145);	-- Old Spirit's Wristwraps
+			FirstCraft(71718, 375154);	-- Scale Rein Grips
+			FirstCraft(71693, 375146);	-- Snowball Makers
+			FirstCraft(71690, 375147);	-- String of Spiritual Knick-Knacks
+			FirstCraft(71719, 375152);	-- Wind Spirit's Lasso
 			-- Bestial Patterns
-			q(71692, { ["name"] = "First Craft: Allied Heartwarming Fur Coat", }),
-			q(71740, { ["name"] = "First Craft: Allied Legguards of Sansok Khan", }),
-			q(71775, { ["name"] = "First Craft: Bow of the Dragon Hunters", }),
-			q(71722, { ["name"] = "First Craft: Crimson Combatant's Adamant Chainmail", }),
-			q(71724, { ["name"] = "First Craft: Crimson Combatant's Adamant Cowl", }),
-			q(71728, { ["name"] = "First Craft: Crimson Combatant's Adamant Cuffs", }),
-			q(71726, { ["name"] = "First Craft: Crimson Combatant's Adamant Epaulettes", }),
-			q(71723, { ["name"] = "First Craft: Crimson Combatant's Adamant Gauntlets", }),
-			q(71727, { ["name"] = "First Craft: Crimson Combatant's Adamant Girdle", }),
-			q(71725, { ["name"] = "First Craft: Crimson Combatant's Adamant Leggings", }),
-			q(71721, { ["name"] = "First Craft: Crimson Combatant's Adamant Treads", }),
-			q(71700, { ["name"] = "First Craft: Crimson Combatant's Resilient Belt", }),
-			q(71694, { ["name"] = "First Craft: Crimson Combatant's Resilient Boots", }),
-			q(71695, { ["name"] = "First Craft: Crimson Combatant's Resilient Chestpiece", }),
-			q(71696, { ["name"] = "First Craft: Crimson Combatant's Resilient Gloves", }),
-			q(71697, { ["name"] = "First Craft: Crimson Combatant's Resilient Mask", }),
-			q(71699, { ["name"] = "First Craft: Crimson Combatant's Resilient Shoulderpads", }),
-			q(71698, { ["name"] = "First Craft: Crimson Combatant's Resilient Trousers", }),
-			q(71701, { ["name"] = "First Craft: Crimson Combatant's Resilient Wristwraps", }),
-			q(71716, { ["name"] = "First Craft: Infurious Boots of Reprieve", }),
-			q(71717, { ["name"] = "First Craft: Infurious Chainhelm Protector", }),
-			q(71688, { ["name"] = "First Craft: Infurious Footwraps of Indemnity", }),
-			q(71689, { ["name"] = "First Craft: Infurious Spirit's Hood", }),
+			FirstCraft(71692, 375144);	-- Allied Heartwarming Fur Coat
+			FirstCraft(71740, 375157);	-- Allied Legguards of Sansok Khan
+			FirstCraft(71775, 375125);	-- Bow of the Dragon Hunters
+			FirstCraft(71722, 375135);	-- Crimson Combatant's Adamant Chainmail
+			FirstCraft(71724, 375134);	-- Crimson Combatant's Adamant Cowl
+			FirstCraft(71728, 375140);	-- Crimson Combatant's Adamant Cuffs
+			FirstCraft(71726, 375137);	-- Crimson Combatant's Adamant Epaulettes
+			FirstCraft(71723, 375138);	-- Crimson Combatant's Adamant Gauntlets
+			FirstCraft(71727, 375141);	-- Crimson Combatant's Adamant Girdle
+			FirstCraft(71725, 375136);	-- Crimson Combatant's Adamant Leggings
+			FirstCraft(71721, 375139);	-- Crimson Combatant's Adamant Treads
+			FirstCraft(71700, 375133);	-- Crimson Combatant's Resilient Belt
+			FirstCraft(71694, 375131);	-- Crimson Combatant's Resilient Boots
+			FirstCraft(71695, 375127);	-- Crimson Combatant's Resilient Chestpiece
+			FirstCraft(71696, 375130);	-- Crimson Combatant's Resilient Gloves
+			FirstCraft(71697, 375126);	-- Crimson Combatant's Resilient Mask
+			FirstCraft(71699, 375129);	-- Crimson Combatant's Resilient Shoulderpads
+			FirstCraft(71698, 375128);	-- Crimson Combatant's Resilient Trousers
+			FirstCraft(71701, 375132);	-- Crimson Combatant's Resilient Wristwraps
+			FirstCraft(71716, 375155);	-- Infurious Boots of Reprieve
+			FirstCraft(71717, 375156);	-- Infurious Chainhelm Protector
+			FirstCraft(71688, 375149);	-- Infurious Footwraps of Indemnity
+			FirstCraft(71689, 375148);	-- Infurious Spirit's Hood
 			-- Decayed Patter
-			q(71715, { ["name"] = "First Craft: Acidic Hailstone Treads", }),
-			q(71686, { ["name"] = "First Craft: Slimy Expulsion Boots", }),
-			q(71687, { ["name"] = "First Craft: Toxic Thorn Footwraps", }),
-			q(71714, { ["name"] = "First Craft: Venom-Steeped Stompers", }),
-			q(71685, { ["name"] = "First Craft: Witherrot Tome", }),
+			FirstCraft(71715, 375151);	-- Acidic Hailstone Treads
+			FirstCraft(71686, 375142);	-- Slimy Expulsion Boots
+			FirstCraft(71687, 375143);	-- Toxic Thorn Footwraps
+			FirstCraft(71714, 375150);	-- Venom-Steeped Stompers
+			FirstCraft(71685, 375199);	-- Witherrot Tome
 			-- Reagents
-			q(71748, { ["name"] = "First Craft: Finished Prototype Explorer's Barding", }),
-			q(71747, { ["name"] = "First Craft: Finished Prototype Regal Barding", }),
-			q(71764, { ["name"] = "First Craft: Earthshine Scales", }),
-			q(71765, { ["name"] = "First Craft: Frostbite Scales", }),
-			q(71762, { ["name"] = "First Craft: Infurious Hide", }),
-			q(71766, { ["name"] = "First Craft: Infurious Scales", }),
-			q(71760, { ["name"] = "First Craft: Mireslush Hide", }),
-			q(71759, { ["name"] = "First Craft: Stonecrust Hide", }),
+			FirstCraft(71748, 381849);	-- Finished Prototype Explorer's Barding
+			FirstCraft(71747, 381848);	-- Finished Prototype Regal Barding
+			FirstCraft(71764, 375178);	-- Earthshine Scales
+			FirstCraft(71765, 375179);	-- Frostbite Scales
+			FirstCraft(71762, 375176);	-- Infurious Hide
+			FirstCraft(71766, 375180);	-- Infurious Scales
+			FirstCraft(71760, 375174);	-- Mireslush Hide
+			FirstCraft(71759, 375173);	-- Stonecrust Hide
 			-- Optional Reagents
-			q(71758, { ["name"] = "First Craft: Fang Adornments", }),
-			q(71757, { ["name"] = "First Craft: Toxified Armor Patch", }),
+			FirstCraft(71758, 375159);	-- Fang Adornments
+			FirstCraft(71757, 375160);	-- Toxified Armor Patch
 			-- Armor Kits
-			q(71741, { ["name"] = "First Craft: Fierce Armor Kit", }),
-			q(71742, { ["name"] = "First Craft: Frosted Armor Kit", }),
-			q(71743, { ["name"] = "First Craft: Reinforced Armor Kit", }),
+			FirstCraft(71741, 375162);	-- Fierce Armor Kit
+			FirstCraft(71742, 375161);	-- Frosted Armor Kit
+			FirstCraft(71743, 375164);	-- Reinforced Armor Kit
 			-- Drums
-			q(71746, { ["name"] = "First Craft: Feral Hide Drums", }),
+			FirstCraft(71746, 375168);	-- Feral Hide Drums
 			-- Toys
-			q(71771, { ["name"] = "First Craft: Artisan's Sign", }),
-			q(71772, { ["name"] = "First Craft: Gnoll Tent", }),
-			q(71773, { ["name"] = "First Craft: Tuskarr Beanbag", }),
+			FirstCraft(71771, 381547);	-- Artisan's Sign
+			FirstCraft(71772, 375171);	-- Gnoll Tent
+			FirstCraft(71773, 375172);	-- Tuskarr Beanbag
 			-- Artisan Curios
 			q(74483, { ["name"] = "First Craft: Reinforced Pristine Leather", ["timeline"] = {ADDED_10_0_7}}),
 		})),
