@@ -11,9 +11,6 @@ local function FirstCraft(questID, recipeID, added)
 	end
 	return t;
 end
--- replace regex
--- q\((\d+), \{ \["name"\] = "First Craft: ([^"]+)", \}\),
--- FirstCraft($1, RECIPEID);	-- $2
 local FIRST_CRAFT_HEADER = -1152;
 
 root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
@@ -1196,7 +1193,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71458, 382331);	-- D.U.C.K.O.Y
 			FirstCraft(71892, 382332);	-- Quack-E
 			-- Artisan Curios
-			q(74312, { ["name"] = "First Craft: Gnomish Voicebox", ["timeline"] = {ADDED_10_0_7}}),
+			FirstCraft(74312, 400810, ADDED_10_0_7);	-- Gnomish Voicebox
 		})),
 		filter(MISC, {
 			i(198549),	-- Black Fireflight
@@ -1553,9 +1550,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71563, 383534);	-- Sagescale Sigil
 			FirstCraft(71594, 383546);	-- Vantus Rune: Vault of the Incarnates
 			-- Trinkets
-			q(74102, { ["name"] = "First Craft: Crimson Combatant's Medallion", ["timeline"] = {ADDED_10_0_5}}),
-			q(74103, { ["name"] = "First Craft: Crimson Combatant's Insignia", ["timeline"] = {ADDED_10_0_5}}),
-			q(74104, { ["name"] = "First Craft: Crimson Combatant's Emblem", ["timeline"] = {ADDED_10_0_5}}),
+			FirstCraft(74102, 400026, ADDED_10_0_5);	-- Crimson Combatant's Medallion
+			FirstCraft(74103, 400027, ADDED_10_0_5);	-- Crimson Combatant's Insignia of Alacrity
+			FirstCraft(74104, 400028, ADDED_10_0_5);	-- Crimson Combatant's Emblem
 			FirstCraft(71592, 383770);	-- Darkmoon Deck Box: Dance
 			FirstCraft(71591, 383325);	-- Darkmoon Deck Box: Inferno
 			FirstCraft(71590, 383767);	-- Darkmoon Deck Box: Rime
@@ -1586,7 +1583,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71553, 383569);	-- Illusion Parchment: Whirling Breeze
 			FirstCraft(71529, 385197);	-- Scroll of Sales
 			-- Mysteries
-			q(71554, { ["name"] = "First Craft: Blazing Fortune / Flourishing Fortune / Setene Fortune", }),
+			FirstCraft(71554, 383563);	-- Blazing Fortune
+			FirstCraft(71554, 384948);	-- Flourishing Fortune
+			FirstCraft(71554, 384949);	-- Serene Fortune
 			FirstCraft(71521, 383512);	-- Bundle O' Cards: Dragon Isles
 			-- Contracts
 			FirstCraft(71579, 383592);	-- Contract: Artisan's Consortium
@@ -1631,7 +1630,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(72018, 391846);	-- Cliffside Wylderdrake: Steel and Yellow Armor
 			FirstCraft(71533, 383576);	-- Cliffside Wylderdrake: Triple Head Horns
 			-- Artisan Curios
-			q(74481, { ["name"] = "First Craft: Arcane Dispelling Rune", ["timeline"] = {ADDED_10_0_7}}),
+			FirstCraft(74481, 400811, ADDED_10_0_7);	-- Arcane Dispelling Rune
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
@@ -2028,7 +2027,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71618, 374468);	-- Skillful Illimited Diamond
 			-- Misc
 			FirstCraft(71657, 374472);	-- Tiered Medallion Setting
-			q(74881, { ["name"] = "First Craft: Unstable Elementium", ["timeline"] = {ADDED_10_0_7}}),
+			FirstCraft(74881, 403483, ADDED_10_0_7);	-- Unstable Elementium
 			-- Trinkets
 			FirstCraft(71679, 374490);	-- Idol of the Dreamer
 			FirstCraft(71680, 374493);	-- Idol of the Earth-Warder
@@ -2079,7 +2078,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71656, 374546);	-- Queen's Gift
 			FirstCraft(71653, 374550);	-- Timewatcher's Patience
 			-- Artisan Curios
-			q(74482, { ["name"] = "First Craft: Crystal Tuning Fork", ["timeline"] = {ADDED_10_0_7}}),
+			FirstCraft(74482, 400812, ADDED_10_0_7);	-- Crystal Tuning Fork
 		})),
 		filter(BATTLE_PETS, {
 			i(193885),	-- Jeweled Amber Whelpling (PET!)
@@ -2428,7 +2427,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71772, 375171);	-- Gnoll Tent
 			FirstCraft(71773, 375172);	-- Tuskarr Beanbag
 			-- Artisan Curios
-			q(74483, { ["name"] = "First Craft: Reinforced Pristine Leather", ["timeline"] = {ADDED_10_0_7}}),
+			FirstCraft(74483, 400814, ADDED_10_0_7);	-- Reinforced Pristine Leather
 		})),
 		filter(MISC, {
 			i(193468),	-- Fang Adornments+
@@ -2793,7 +2792,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71848, 376563);	-- Fiddle with Draconium Fabric Cutters
 			FirstCraft(71849, 376564);	-- Fiddle with Khaz'gorite Fabric Cutters
 			-- Artisan Curios
-			q(74318, { ["name"] = "First Craft: Traditional Morqut Kite", ["timeline"] = {ADDED_10_0_7}}),
+			FirstCraft(74318, 400815, ADDED_10_0_7);	-- Traditional Morqut Kite
 		})),
 	}),
 })));

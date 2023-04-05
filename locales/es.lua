@@ -859,7 +859,7 @@ for key,value in pairs({
 		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
 		--TODO: [-1151] = "Bartering",								-- Bartering
-		--TODO: [-1152] = "First Crafts",							-- First Crafts
+		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
 		[-1200] = "Cámaras de Zskera",								-- Zskera Vaults
 		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
 		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults

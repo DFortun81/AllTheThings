@@ -843,7 +843,7 @@ for key,value in pairs({
 		[-1144] = "Еженедельные Очки Знаний Профессий",				-- Weekly Profession Header
 		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
 		--TODO: [-1151] = "Bartering",								-- Bartering
-		[-1152] = "Первые Крафты",									-- First Crafts
+		[-1152] = "Первые Изделия",									-- First Crafts
 		[-1200] = "Зкерские хранилища",								-- Zskera Vaults
 		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
 		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
