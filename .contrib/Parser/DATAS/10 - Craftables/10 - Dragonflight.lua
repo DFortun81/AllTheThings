@@ -397,6 +397,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(190523),	-- Frostfire Legguards of Preparation
 			i(190522),	-- Infurious Helm of Vengeance
 			i(191985),	-- Infurious Warboots of Impunity
+			i(204128, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Draconium Armguards
+			i(204121, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Draconium Breastplate
+			i(204123, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Draconium Gauntlets
+			i(204125, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Draconium Greaves
+			i(204124, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Draconium Helm
+			i(204126, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Draconium Pauldrons
+			i(204122, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Draconium Sabatons
+			i(204127, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Draconium Waistguard
 			i(190495),	-- Primal Molten Breastplate
 			i(190497),	-- Primal Molten Gauntlets
 			i(190501),	-- Primal Molten Greatbelt
@@ -418,6 +426,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71355, 367714);	-- Infurious Alloy
 			FirstCraft(71354, 367713);	-- Obsidian Seared Alloy
 			FirstCraft(71352, 365735);	-- Primal Molten Alloy
+			--FirstCraft(x, 408282, ADDED_10_1_0);	-- Shadowed Alloy
 			-- Optional Reagent
 			FirstCraft(71358, 371349);	-- Armor Spikes
 			-- Armor
@@ -442,6 +451,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71305, 367619);	-- Frostfire Legguards of Preparation
 			FirstCraft(71308, 367617);	-- Infurious Helm of Vengeance
 			FirstCraft(71307, 367616);	-- Infurious Warboots of Impunity
+			--FirstCraft(x, 403158, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Armguards
+			--FirstCraft(x, 403159, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Breastplate
+			--FirstCraft(x, 403160, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Gauntlets
+			--FirstCraft(x, 403161, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Greaves
+			--FirstCraft(x, 403162, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Helm
+			--FirstCraft(x, 403163, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Pauldrons
+			--FirstCraft(x, 403164, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Sabatons
+			--FirstCraft(x, 403165, ADDED_10_1_0);	-- Obsidian Combatant's Draconium Waistguard
 			FirstCraft(71316, 367608);	-- Primal Molten Breastplate
 			FirstCraft(71318, 367606);	-- Primal Molten Gauntlets
 			FirstCraft(71322, 367602);	-- Primal Molten Greatbelt
@@ -453,8 +470,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71306, 367618);	-- Unstable Frostfire Belt
 			-- Shields
 			FirstCraft(72183, 393404);	-- Draconium Defender
-			FirstCraft(71303, 367623);	-- Shield of the Hearth
 			FirstCraft(71304, 367622);	-- Primal Molten Defender
+			FirstCraft(71303, 367623);	-- Shield of the Hearth
+			--FirstCraft(x, 408326, ADDED_10_1_0);	-- Shadowed Impact Buckler
 			-- Weapons
 			FirstCraft(71332, 367600);	-- Draconium Axe
 			FirstCraft(71336, 367596);	-- Draconium Dirk
@@ -477,6 +495,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71386, 365730);	-- Primal Molten Shortblade
 			FirstCraft(71385, 365731);	-- Primal Molten Spellblade
 			FirstCraft(71387, 365729);	-- Primal Molten Warglaive
+			--FirstCraft(x, 408283, ADDED_10_1_0);	-- Shadowed Razing Annihilator
 			-- Profession Tools and Accessories
 			FirstCraft(71360, 371372);	-- Black Dragon Touched Hammer
 			FirstCraft(71361, 371344);	-- Draconium Blacksmith's Hammer
@@ -496,6 +515,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71364, 371365);	-- Khaz'gorite Sickle
 			FirstCraft(71370, 371367);	-- Khaz'gorite Skinning Knife
 			-- Consumable Tools
+			--FirstCraft(x, 408299, ADDED_10_1_0);	-- Heat-Resistant Rescue Ring
 			FirstCraft(72262, 393853);	-- Master's Hammer
 			FirstCraft(71357, 371395);	-- Serevite Repair Hammer
 			FirstCraft(71344, 371394);	-- Serevite Skeleton Key
@@ -504,6 +524,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71338, 371682);	-- Primal Razorstone
 			FirstCraft(71340, 371674);	-- Primal Weightstone
 			FirstCraft(71341, 371650);	-- Primal Whetstone
+			--FirstCraft(x, 408288, ADDED_10_1_0);	-- Shadowed Belt Buckle
 			-- Pets
 			FirstCraft(71351, 371403);	-- Alvin The Anvil
 			-- Dragon Riding
@@ -517,6 +538,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(191250),	-- Armor Spikes+
 			i(191872),	-- Armor Spikes++
 			i(191873),	-- Armor Spikes+++
+			i(205038, {["timeline"] = {ADDED_10_1_0}}),	-- Heat-Resistant Rescue Ring
 			i(201366),	-- Master's Hammer
 			i(191948),	-- Primal Razorstone+
 			i(191949),	-- Primal Razorstone++
@@ -527,13 +549,12 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(191933),	-- Primal Whetstone+
 			i(191939),	-- Primal Whetstone++
 			i(191940),	-- Primal Whetstone+++
-			i(191304),	-- Sturdy Expedition Shovel
-			-- Unsure?
 			i(191260),	-- Serevite Repair Hammer
-			i(191882),	-- Serevite Repair Hammer
-			i(191883),	-- Serevite Repair Hammer
-			--
 			i(191256),	-- Serevite Skeleton Key
+			i(205043, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Belt Buckle+
+			i(205044, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Belt Buckle++
+			i(205039, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Belt Buckle+++
+			i(191304),	-- Sturdy Expedition Shovel
 		}),
 		filter(REAGENTS, {
 			i(190530),	-- Frostfire Alloy+
@@ -550,6 +571,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(189543),	-- Primal Molten Alloy+++
 			i(194542),	-- Prototype Explorer's Barding Framework
 			i(194541),	-- Prototype Regal Barding Framework
+			i(204995),	-- Shadowed Alloy+
+			i(204996),	-- Shadowed Alloy++
+			i(204994),	-- Shadowed Alloy+++
 		}),
 		n(WEAPONS, {
 			i(190487),	-- Draconium Axe
@@ -575,6 +599,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(190505),	-- Primal Molten Shortblade
 			i(190506),	-- Primal Molten Spellblade
 			i(190508),	-- Primal Molten Warglaive
+			i(205168, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Impact Buckler
+			i(205046, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Razing Annihilator
 			i(192081),	-- Shield of the Hearth
 			-- Tools
 			i(191228),	-- Black Dragon Touched Hammer
@@ -1337,6 +1363,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			["g"] = {
 				-- only known source is the Bottle
 				i(194671),	-- Design: "Rhinestone" Sunglasses (RECIPE!)
+				i(205161, {["timeline"] = {ADDED_10_1_0}}),	-- Plans: Heat-Resistant Rescue Ring (RECIPE!)
 				i(198714),	-- Plans: Prototype Regal Barding Framework (RECIPE!)
 				i(191544),	-- Recipe: Cauldron of the Pooka (RECIPE!)
 				i(198109),	-- Recipe: Churnbelly Tea (RECIPE!)

@@ -42,6 +42,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					i(193880),	-- Pattern: Wind Spirit's Lasso (RECIPE!)
 					i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
 					i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
+					i(205145),	-- Plans: Shadowed Impact Buckler (RECIPE!)
+					i(205144),	-- Plans: Shadowed Razing Annihilator (RECIPE!)
 					i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
 					i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
 				},

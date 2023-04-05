@@ -924,14 +924,6 @@ root(ROOTS.Unsorted, {
 				i(204118),	-- Obsidian Combatant's Wildercloth Tunic
 				i(204119),	-- Obsidian Combatant's Wildercloth Sash
 				i(204120),	-- Obsidian Combatant's Wildercloth Cloak
-				i(204121),	-- Obsidian Combatant's Draconium Breastplate
-				i(204122),	-- Obsidian Combatant's Draconium Sabatons
-				i(204123),	-- Obsidian Combatant's Draconium Gauntlets
-				i(204124),	-- Obsidian Combatant's Draconium Helm
-				i(204125),	-- Obsidian Combatant's Draconium Greaves
-				i(204126),	-- Obsidian Combatant's Draconium Pauldrons
-				i(204127),	-- Obsidian Combatant's Draconium Waistguard
-				i(204128),	-- Obsidian Combatant's Draconium Armguards
 				i(204129),	-- Pattern: Obsidian Combatant's Wildercloth Bands
 				i(204130),	-- Pattern: Obsidian Combatant's Wildercloth Cloak
 				i(204131),	-- Pattern: Obsidian Combatant's Wildercloth Gloves
@@ -941,14 +933,6 @@ root(ROOTS.Unsorted, {
 				i(204135),	-- Pattern: Obsidian Combatant's Wildercloth Shoulderpads
 				i(204136),	-- Pattern: Obsidian Combatant's Wildercloth Treads
 				i(204137),	-- Pattern: Obsidian Combatant's Wildercloth Tunic
-				i(204138),	-- Plans: Obsidian Combatant's Draconium Helm
-				i(204139),	-- Plans: Obsidian Combatant's Draconium Breastplate
-				i(204140),	-- Plans: Obsidian Combatant's Draconium Greaves
-				i(204141),	-- Plans: Obsidian Combatant's Draconium Pauldrons
-				i(204142),	-- Plans: Obsidian Combatant's Draconium Gauntlets
-				i(204143),	-- Plans: Obsidian Combatant's Draconium Sabatons
-				i(204144),	-- Plans: Obsidian Combatant's Draconium Armguards
-				i(204145),	-- Plans: Obsidian Combatant's Draconium Waistguard
 				i(204146),	-- Design: Obsidian Combatant's Jeweled Amulet
 				i(204147),	-- Design: Obsidian Combatant's Jeweled Signet
 				i(204148),	-- Pattern: Obsidian Combatant's Resilient Mask
@@ -1290,18 +1274,12 @@ root(ROOTS.Unsorted, {
 				i(205035),	-- Snapjaw Lurker
 				i(205036),	-- Schematic: Tinker: Shadowflame Rockets
 				i(205037),	-- Void Lurker
-				i(205038),	-- Heat-Resistant Rescue Ring
-				i(205039),	-- Hellsteel Belt Buckle
-				i(205040),	-- Hellsteel Belt Buckle
-				i(205041),	-- Hellsteel Belt Buckle
-				i(205042),	-- Hellsteel Belt Buckle
-				i(205043),	-- Hellsteel Belt Buckle
-				i(205044),	-- Hellsteel Belt Buckle
+
+
 
 				i(205046),	-- [DNT] Hellsteel Bunker Buster
-				i(205047),	-- Hellsteel Impact Guage
-				i(205048),	-- Hellsteel Impact Guage
-				i(205049),	-- Hellsteel Impact Guage
+
+
 				i(205050),	-- Scalebane Beetle
 				i(205051),	-- Leshtar
 				i(205052),	-- Miloh
@@ -1327,15 +1305,13 @@ root(ROOTS.Unsorted, {
 				i(205134),	-- Technique: Vantus Rune: Aberrus, the Shadowed Crucible
 				i(205135),	-- Technique: Hissing Rune
 				i(205136),	-- Technique: Contract: Loamm Niffen
-				i(205137),	-- Plans: Hellsteel Alloy
 				i(205138),	-- Pattern: Spore-Infused Combat Bandage
 				i(205139),	-- Pattern: Reserve Parachute
 				i(205140),	-- Pattern: Undulating Sporecloak
 				i(205141),	-- Pattern: Explorer's Banner of Comradery
 				i(205142),	-- Pattern: Enourmous Ball of Yarn
-				i(205143),	-- Plans: Hellsteel Belt Buckle
 				i(205144),	-- Plans: [PH] Hellsteel Bunker Buster
-				i(205145),	-- Plans: Hellsteel Impact Buckler
+
 				i(205147),	-- Ridged Shalewing
 				i(205148),	-- Dread Shalewing
 				i(205149),	-- Ravenous Shalewing
@@ -1349,13 +1325,13 @@ root(ROOTS.Unsorted, {
 				i(205157),	-- Undermoth
 				i(205159),	-- Teardrop Moth
 				i(205160),	-- Rithro
-				i(205161),	-- Plans: Heat-Resistant Rescue Ring
+
 				i(205162),	-- Nelthara
 				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
 				i(205164),	-- Senega
 				i(205165),	-- Axel
 				i(205166),	-- Kromos
-				i(205168),	-- Hellsteel Impact Buckler
+
 				i(205169),	-- Glimmer Mushroom
 				i(205170),	-- 10.1 Precognition Embellishment [PH]
 				i(205171),	-- 10.1 Not-Caster PvP Embellishment [PH] [NYI]
@@ -1378,16 +1354,13 @@ root(ROOTS.Unsorted, {
 				i(204725),	-- Drake's Hefty Chest
 				i(204726),	-- Drake's Bountiful Chest
 				i(204798),	-- Inferno Armoredon
-				i(204994),	-- Shadowed Alloy
-				i(204995),	-- Shadowed Alloy
-				i(204996),	-- Shadowed Alloy
-				i(205039),	-- Shadowed Belt Buckle
+
+
+
 				i(205040),	-- Shadowed Belt Buckle
 				i(205041),	-- Shadowed Belt Buckle
 				i(205042),	-- Shadowed Belt Buckle
-				i(205043),	-- Shadowed Belt Buckle
-				i(205044),	-- Shadowed Belt Buckle
-				i(205046),	-- Shadowed Razing Annihilator
+
 				i(205047),	-- Shadowed Impact Buckler
 				i(205048),	-- Shadowed Impact Buckler
 				i(205049),	-- Shadowed Impact Buckler
@@ -1396,12 +1369,10 @@ root(ROOTS.Unsorted, {
 				i(205119),	-- Bashful
 				i(205121),	-- Tricky
 				i(205123),	-- Brulee
-				i(205137),	-- Plans: Shadowed Alloy
 				i(205142),	-- Pattern: Enormous Ball of Yarn
-				i(205143),	-- Plans: Shadowed Belt Buckle
-				i(205144),	-- Plans: Shadowed Razing Annihilator
-				i(205145),	-- Plans: Shadowed Impact Buckler
-				i(205168),	-- Shadowed Impact Buckler
+
+
+
 				i(205187),	-- Artisan's Consortium Flier
 				i(205188),	-- Barter Boulder
 				i(205189),	-- Arclight Welcome Letter
@@ -3022,6 +2993,9 @@ root(ROOTS.Unsorted, {
 				i(194079),	-- Pure Serevite Nugget
 				i(194040),	-- Slateskin Hide
 				i(194061),	-- Suffocating Spores
+				--
+				i(191882),	-- Serevite Repair Hammer
+				i(191883),	-- Serevite Repair Hammer
 			}),
 			n(QUESTS, {
 				-- 10.0.0.44649

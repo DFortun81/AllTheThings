@@ -829,6 +829,14 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 			})),
 			filter(RECIPES, {
+				i(204144),	-- Plans: Obsidian Combatant's Draconium Armguards (RECIPE!)
+				i(204139),	-- Plans: Obsidian Combatant's Draconium Breastplate (RECIPE!)
+				i(204142),	-- Plans: Obsidian Combatant's Draconium Gauntlets (RECIPE!)
+				i(204140),	-- Plans: Obsidian Combatant's Draconium Greaves (RECIPE!)
+				i(204138),	-- Plans: Obsidian Combatant's Draconium Helm (RECIPE!)
+				i(204141),	-- Plans: Obsidian Combatant's Draconium Pauldrons (RECIPE!)
+				i(204143),	-- Plans: Obsidian Combatant's Draconium Sabatons (RECIPE!)
+				i(204145),	-- Plans: Obsidian Combatant's Draconium Waistguard (RECIPE!)
 			}),
 		},
 	}),
