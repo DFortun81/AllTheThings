@@ -32,7 +32,7 @@ jobs:
           git add --all
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
           commit-message: Sync localization
           title: Sync localization
