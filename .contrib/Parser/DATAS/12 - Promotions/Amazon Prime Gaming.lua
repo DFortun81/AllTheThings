@@ -9,7 +9,6 @@ root(ROOTS.Promotions, {
 			i(49282, {	-- Big Battle Bear
 				["description"] = "Amazon Prime Gaming reward from March 30th 2023 till April 27th 2023.",
 				["timeline"] = { "added 10.0.7" },
-				["f"] = BLIZZARD_BALANCE,
 			}),
 		},
 	}),
