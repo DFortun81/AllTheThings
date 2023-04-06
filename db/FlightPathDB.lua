@@ -1,3 +1,7 @@
+-- This file should 'ideally' be basically copy/paste from Saved Variables:AllTheThingsAD.FlightPathData
+-- Currently we still have various other extra data in this file that should be cleaned out and put into the respective Location file instead
+-- This file should really only contain 'name', 'r'/'faction', 'coord' fields since those are harvested in-game
+
 select(2, ...).FlightPathDB = {
 	-- Uncomment the global comment and /rl to see which Flight Paths are not properly Sourced (shows up as *NEW*)
 	--[[]]
@@ -2643,6 +2647,382 @@ select(2, ...).FlightPathDB = {
 	},
 	[2635] = {
 		["name"] = "Temple of Humility, Bastion",
+	},
+	[2862] = {
+		["name"] = "Morqut Islet, Forbidden Reach",
+		["coord"] = {
+			61.22, -- [1]
+			12.53, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2807] = {
+		["name"] = "Ruby Life Pools, The Waking Shores",
+		["coord"] = {
+			52.2, -- [1]
+			39.35, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2815] = {
+		["name"] = "Garden Shrine, Thaldraszus",
+		["coord"] = {
+			54.27, -- [1]
+			56.26, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2839] = {
+		["name"] = "Rusza'thar Reach, Ohn'ahran Plains",
+		["coord"] = {
+			49.76, -- [1]
+			52.89, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2784] = {
+		["name"] = "Camp Nowhere, Azure Span",
+		["coord"] = {
+			57.91, -- [1]
+			80.2, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2855] = {
+		["name"] = "Morqut Village, The Forbidden Reach",
+		["coord"] = {
+			62.41, -- [1]
+			11.94, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2800] = {
+		["name"] = "Uktulut Outpost, The Waking Shores",
+		["coord"] = {
+			39.57, -- [1]
+			45.82, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2808] = {
+		["name"] = "Obsidian Bulwark, The Waking Shores",
+		["coord"] = {
+			47.33, -- [1]
+			38.79, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2816] = {
+		["name"] = "Shifting Sands, Thaldraszus",
+		["coord"] = {
+			63, -- [1]
+			56.3, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2840] = {
+		["name"] = "Shady Sanctuary, Ohn'ahran Plains",
+		["coord"] = {
+			34.7, -- [1]
+			57.79, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2793] = {
+		["name"] = "Forkriver Crossing, Ohn'ahran Plains",
+		["coord"] = {
+			46.9, -- [1]
+			64.85, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2801] = {
+		["name"] = "Apex Observatory, The Waking Shores",
+		["coord"] = {
+			41.54, -- [1]
+			44.08, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2809] = {
+		["name"] = "Dragonscale Basecamp, The Waking Shores",
+		["coord"] = {
+			49.1, -- [1]
+			44.14, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2817] = {
+		["name"] = "Skytop Observatory, The Waking Shores",
+		["coord"] = {
+			56.89, -- [1]
+			34.3, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2825] = {
+		["name"] = "Ohn'iri Springs, Ohn'ahran Plains",
+		["coord"] = {
+			42.45, -- [1]
+			64.06, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2841] = {
+		["name"] = "Skytop Observatory, The Waking Shores",
+		["coord"] = {
+			57.67, -- [1]
+			35.89, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2786] = {
+		["name"] = "Rhonin's Shield, Azure Span",
+		["coord"] = {
+			59, -- [1]
+			65.99, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2794] = {
+		["name"] = "Teerakai, Ohn'ahran Plains",
+		["coord"] = {
+			37.49, -- [1]
+			59.51, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2802] = {
+		["name"] = "Obsidian Throne, The Waking Shores",
+		["coord"] = {
+			42.02, -- [1]
+			35.91, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2810] = {
+		["name"] = "Valdrakken, Thaldraszus",
+		["coord"] = {
+			55.68, -- [1]
+			49.73, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2818] = {
+		["name"] = "Vault of the Incarnates, Thaldraszus",
+		["coord"] = {
+			68.8, -- [1]
+			47.35, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2834] = {
+		["name"] = "Eon's Fringe, Thaldraszus",
+		["coord"] = {
+			60.92, -- [1]
+			56.12, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2842] = {
+		["name"] = "Rubyscale Outpost, The Waking Shores",
+		["coord"] = {
+			48.9, -- [1]
+			46.32, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2787] = {
+		["name"] = "Cobalt Assembly, Azure Span",
+		["coord"] = {
+			51.79, -- [1]
+			64.83, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2795] = {
+		["name"] = "Broadhoof Outpost, Ohn'ahran Plains",
+		["coord"] = {
+			39.42, -- [1]
+			53.59, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2803] = {
+		["name"] = "Uktulut Pier, The Waking Shores",
+		["coord"] = {
+			48.45, -- [1]
+			26.66, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2811] = {
+		["name"] = "Gelikyr Post, Thaldraszus",
+		["coord"] = {
+			60.43, -- [1]
+			51.54, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2788] = {
+		["name"] = "Theron's Watch, Azure Span",
+		["coord"] = {
+			58.73, -- [1]
+			62.12, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2796] = {
+		["name"] = "Shady Sanctuary, Ohn'ahran Plains",
+		["coord"] = {
+			34.45, -- [1]
+			58.46, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2804] = {
+		["name"] = "Uktulut Backwater, The Waking Shores",
+		["coord"] = {
+			51.1, -- [1]
+			29.6, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2812] = {
+		["name"] = "Temporal Conflux, Thaldraszus",
+		["coord"] = {
+			63.93, -- [1]
+			57.25, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2773] = {
+		["name"] = "Azure Archives, Azure Span",
+		["coord"] = {
+			46.65, -- [1]
+			81.12, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2789] = {
+		["name"] = "Three-Falls Lookout, Azure Span",
+		["coord"] = {
+			38.98, -- [1]
+			65.25, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2797] = {
+		["name"] = "Emberwatch, Ohn'ahran Plains",
+		["coord"] = {
+			45.46, -- [1]
+			48.8, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2805] = {
+		["name"] = "Wingrest Embassy, The Waking Shores",
+		["coord"] = {
+			57.9, -- [1]
+			29.01, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2813] = {
+		["name"] = "Algeth'era, Thaldraszus",
+		["coord"] = {
+			59.8, -- [1]
+			41.55, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2837] = {
+		["name"] = "Vakthros, Azure Span",
+		["coord"] = {
+			63.96, -- [1]
+			68.29, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2799] = {
+		["name"] = "Rusza'thar Reach, Ohn'ahran Plains",
+		["coord"] = {
+			50.76, -- [1]
+			52.29, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2790] = {
+		["name"] = "Timberstep Outpost, Ohn'ahran Plains",
+		["coord"] = {
+			50.93, -- [1]
+			48.46, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2798] = {
+		["name"] = "Pinewood Post, Ohn'ahran Plains",
+		["coord"] = {
+			49.51, -- [1]
+			58.53, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2806] = {
+		["name"] = "Life Vault Ruins, The Waking Shores",
+		["coord"] = {
+			54.46, -- [1]
+			36, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2814] = {
+		["name"] = "Veiled Ossuary, Thaldraszus",
+		["coord"] = {
+			64.81, -- [1]
+			32.42, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2836] = {
+		["name"] = "Algeth'era, Thaldraszus",
+		["coord"] = {
+			64.93, -- [1]
+			40.99, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2792] = {
+		["name"] = "Maruukai, Ohn'ahran Plains",
+		["coord"] = {
+			44.32, -- [1]
+			53.83, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2838] = {
+		["name"] = "Cobalt Assembly, Azure Span",
+		["coord"] = {
+			51.46, -- [1]
+			68.02, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2774] = {
+		["name"] = "Camp Antonidas, Azure Span",
+		["coord"] = {
+			50.78, -- [1]
+			72.05, -- [2]
+			1978, -- [3]
+		},
+	},
+	[2775] = {
+		["name"] = "Iskaara, Azure Span",
+		["coord"] = {
+			36.46, -- [1]
+			76, -- [2]
+			1978, -- [3]
+		},
 	},
 	--]]
 

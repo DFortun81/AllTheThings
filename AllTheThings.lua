@@ -10783,37 +10783,65 @@ end)();
 
 -- Flight Path Lib
 (function()
-local arrOfNodes = {
-	1,		-- Durotar (All of Kalimdor)
-	36,		-- Burning Steppes (All of Eastern Kingdoms)
-	94,		-- Eversong Woods (and Ghostlands + Isle of Quel'Danas)
-	97,		-- Azuremyst Isle (and Bloodmyst)
-	100,	-- Hellfire Peninsula (All of Outland)
-	118,	-- Icecrown (All of Northrend)
-	422,	-- Dread Wastes (All of Pandaria)
-	525,	-- Frostfire Ridge (All of Draenor)
-	630,	-- Azsuna (All of Broken Isles)
+local baseMapIDs = {
+	12,		-- Kalimdor
+	13,		-- Eastern Kingdoms
+	101,	-- Outland
+	113,	-- Northrend
+	424,	-- Pandaria
+	572,	-- Draenor
+	619,	-- Broken Isles
 	-- Argus only returns specific Flight Points per map
-	885,	-- Antoran Wastes
-	830,	-- Krokuun
-	882,	-- Eredath
-	831,	-- Upper Deck [The Vindicaar: Krokuun]
-	883,	-- Upper Deck [The Vindicaar: Eredath]
-	886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-
-	862,	-- Zuldazar
-	896,	-- Drustvar
+		830,	-- Krokuun
+		882,	-- Eredath
+		885,	-- Antoran Wastes
+		831,	-- Upper Deck [The Vindicaar: Krokuun]
+		883,	-- Upper Deck [The Vindicaar: Eredath]
+		886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+	875,	-- Zandalar
+	876,	-- Kul Tiras
 	1355,	-- Nazjatar
 	1550,	-- The Shadowlands
 	1409,	-- Exile's Reach
+	1978,	-- Dragon Isles
 };
-local C_TaxiMap_GetTaxiNodesForMap = C_TaxiMap.GetTaxiNodesForMap;
-local C_TaxiMap_GetAllTaxiNodes = C_TaxiMap.GetAllTaxiNodes;
-app.CacheFlightPathData = function()
-	if not app.CacheFlightPathData_Ran then
-		-- app.DEBUG_PRINT = true;
+local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes
+	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes;
+local cached;
+local function round(num, decimals)
+	local shift = math.pow(10, decimals);
+	return math.floor(num * shift + 0.5) / shift;
+end
+local function PopulateNode(node, nodeData, mapID)
+	if nodeData.name then
+		node.name = nodeData.name;
+	end
+	node.faction = nil;
+	if nodeData.faction and nodeData.faction ~= 0 then
+		node.r = nodeData.faction;
+	elseif nodeData.atlasName then
+		if nodeData.atlasName == "TaxiNode_Alliance" then
+			node.r = 2;
+		elseif nodeData.atlasName == "TaxiNode_Horde" then
+			node.r = 1;
+		end
+	end
+	if nodeData.position and nodeData.position.GetXY then
+		local x, y = nodeData.position:GetXY();
+		x = round(x * 100, 2);
+		y = round(y * 100, 2);
+		node.coord = { x, y, mapID };
+	end
+end
+AllTheThingsAD.FlightPathData = nil;
+-- Used to harvest missing Flight Path data from all maps
+-- /run AllTheThings.HarvestFlightPaths(1)	-- save all FPs
+-- /run AllTheThings.HarvestFlightPaths()	-- save missing FPs
+app.HarvestFlightPaths = function(all)
+	if not cached then
 		local newNodes, node = {};
-		for i,mapID in ipairs(arrOfNodes) do
+		SetDataMember("FlightPathData", newNodes);
+		for i,mapID in ipairs(baseMapIDs) do
 			-- if mapID == 882 then app.DEBUG_PRINT = true; end
 			local allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
 			if allNodeData then
@@ -10822,48 +10850,24 @@ app.CacheFlightPathData = function()
 					-- if app.DEBUG_PRINT then app.PrintTable(nodeData) end
 					node = app.FlightPathDB[nodeData.nodeID];
 					if node then
-						-- if app.DEBUG_PRINT then print("DB node") end
-						-- associate in-game or our own cached data with the Sourced FP
-						-- can only apply in-game data when it exists...
-						if nodeData.name then node.name = nodeData.name; end
-						if nodeData.faction then
-							node.faction = nodeData.faction;
-						elseif nodeData.atlasName then
-							if nodeData.atlasName == "TaxiNode_Alliance" then
-								node.faction = 2;
-							elseif nodeData.atlasName == "TaxiNode_Horde" then
-								node.faction = 1;
-							end
-						end
+						PopulateNode(node, nodeData, mapID);
 						-- if app.DEBUG_PRINT then app.PrintTable(node) end
-					elseif nodeData.name and true then	-- Turn this off when you're done harvesting.
-						-- if app.DEBUG_PRINT then print("*NEW* Node") end
-						node = {};
-						node.name = "*NEW* " .. nodeData.name;
-						if nodeData.faction then
-							node.faction = nodeData.faction;
-						elseif nodeData.atlasName then
-							if nodeData.atlasName == "TaxiNode_Alliance" then
-								node.faction = 2;
-							elseif nodeData.atlasName == "TaxiNode_Horde" then
-								node.faction = 1;
-							end
+						if all then
+							newNodes[nodeData.nodeID] = node;
 						end
+					elseif nodeData.name then
+						app.PrintDebug("*NEW* FP Node",nodeData.name)
+						node = {};
+						PopulateNode(node, nodeData, mapID);
 						-- app.PrintTable(node)
 						app.FlightPathDB[nodeData.nodeID] = node;
 						newNodes[nodeData.nodeID] = node;
 					end
-					-- app.DEBUG_PRINT = nil;
 				end
 			end
-			-- app.DEBUG_PRINT = nil;
 		end
-		app.CacheFlightPathData_Ran = true;
-		SetDataMember("NewFlightPathData", newNodes);
-		-- return if some new flight path was found
-		-- print("CacheFlightPathData Found new nodes?",foundNew)
-		-- app.PrintTable(newNodes);
-		-- app.DEBUG_PRINT = nil;
+		cached = true;
+		app.print("Harvested FlightPath Data. Check Saved Variables: AllTheThingsAD.FlightPathData")
 		return true;
 	end
 end
@@ -10887,11 +10891,7 @@ local fields = {
 	["icon"] = function(t)
 		local r = t.r;
 		if r then
-			if r == Enum.FlightPathFaction.Horde then
-				return app.asset("fp_horde");
-			else
-				return app.asset("fp_alliance");
-			end
+			return r == Enum.FlightPathFaction.Horde and app.asset("fp_horde") or app.asset("fp_alliance");
 		end
 		return app.asset("fp_neutral");
 	end,
@@ -10906,11 +10906,10 @@ local fields = {
 		return app.CollectibleFlightPaths;
 	end,
 	["collected"] = function(t)
-		if app.CurrentCharacter.FlightPaths[t.flightPathID] then return 1; end
+		if t.saved then return 1; end
 		if app.AccountWideFlightPaths and ATTAccountWideData.FlightPaths[t.flightPathID] then return 2; end
-		if app.MODE_DEBUG_OR_ACCOUNT then return false; end
 		if t.altQuests then
-			for i,questID in ipairs(t.altQuests) do
+			for _,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
 					return 2;
 				end
@@ -10928,7 +10927,7 @@ local fields = {
 		return t.info.c;
 	end,
 	["r"] = function(t)
-		local faction = t.info.faction;
+		local faction = t.info.faction or t.info.r;
 		if faction and faction > 0 then
 			return faction;
 		end
@@ -10937,7 +10936,10 @@ local fields = {
 		return t.info.u;
 	end,
 	["crs"] = function(t)
-		return t.info.qg and { t.info.qg };
+		if t.info.qg then
+			rawset(t, "crs", { t.info.qg });
+		end
+		return rawget(t, "crs");
 	end,
 	["mapID"] = function(t)
 		return t.info.mapID;
@@ -10963,11 +10965,15 @@ app.BaseFlightPath = app.BaseObjectFields(fields, "BaseFlightPath");
 app.CreateFlightPath = function(id, t)
 	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 end
+local cachedMaps = {};
 app.events.TAXIMAP_OPENED = function()
-	local allNodeData = C_TaxiMap_GetAllTaxiNodes(app.GetCurrentMapID());
+	local mapID = app.GetCurrentMapID();
+	if cachedMaps[mapID] then return; end
+	cachedMaps[mapID] = true;
+	local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID);
 	if allNodeData then
-		local newFPs, nodeID;
-		local currentCharFPs, acctFPs = app.CurrentCharacter.FlightPaths, ATTAccountWideData.FlightPaths;
+		local newFPs, nodeID, cache;
+		local currentCharFPs, acctFPs, fpDB = app.CurrentCharacter.FlightPaths, ATTAccountWideData.FlightPaths, app.FlightPathDB;
 		for j,nodeData in ipairs(allNodeData) do
 			if nodeData.state and nodeData.state < 2 then
 				nodeID = nodeData.nodeID;
@@ -10977,7 +10983,17 @@ app.events.TAXIMAP_OPENED = function()
 					if not newFPs then newFPs = { nodeID }
 					else tinsert(newFPs, nodeID); end
 				end
+				if not fpDB[nodeID] then
+					fpDB[nodeID] = {};
+				end
+				-- app.PrintDebug("Cached FP name",nodeData.name)
+				fpDB[nodeID].name = nodeData.name;
 			end
+			-- cache = app.SearchForObject("flightPathID", nodeID, "key");
+			-- if cache and not cache.name then
+			-- 	app.PrintDebug("Cached FP name",nodeData.name)
+			-- 	rawset(cache, "name", nodeData.name);
+			-- end
 		end
 		UpdateRawIDs("flightPathID", newFPs);
 	end
