@@ -7,23 +7,70 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 		-- ["coord"] = { 73.0, 55.7, ZARALEK_CAVERN },
 		["order"] = "02",
 		["maps"] = {
-			2166,	-- Abberus_Raid_A
-			2167,	-- Abberus_Raid_B
-			2168,	-- Abberus_Raid_C
-			2169,	-- Abberus_Raid_D
+			2166,	-- Molten Crucible
+			2167,	-- Onyx Laboratory
+			2168,	-- Defiant Ramparts
+			2169,	-- Neltharion's Sanctum
+			2170,	-- Edge of Oblivion
 		},
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				i(205205),	-- Shadowflame Shalewing (MOUNT!)
+			}),
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					201261,	-- Kazzara, the Hellforged
+					201774,	-- The Amalgamation Chamber - Essence of Shadow
+					201773,	-- The Amalgamation Chamber - Eternal Blaze
+					201934,	-- The Amalgamation Chamber - Shadowflame Amalgamation
+					200912,	-- The Forgotten Experiments - Neldris <Experiment 4>
+					200918,	-- The Forgotten Experiments - Rionthus <Experiment 328>
+					200913,	-- The Forgotten Experiments - Thadrion <Experiment 147>
+					202791,	-- Assault of the Zaqali - Ignara
+					199659,	-- Assault of the Zaqali - Warlord Kagni
+					201320,	-- Rashok, the Elder
+					202637,	-- Zskarn <the Vigilant Steward>
+					201579,	-- Magmorax
+					203133,	-- Echo of Neltharion
+					203284,	-- Scalecommander Sarkareth
+				},
+				["g"] = {
+					i(194642),	-- Design: Choker of Shielding (RECIPE!)
+					i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
+					i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
+					i(194260),	-- Pattern: Blue Dragon Soles (RECIPE!)
+					i(193873),	-- Pattern: Old Spirit's Wristwraps (RECIPE!)
+					i(193881),	-- Pattern: Scale Rein Grips (RECIPE!)
+					i(193872),	-- Pattern: String of Spiritual Knick-Knacks (RECIPE!)
+					i(193880),	-- Pattern: Wind Spirit's Lasso (RECIPE!)
+					i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
+					i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
+					i(205145),	-- Plans: Shadowed Impact Buckler (RECIPE!)
+					i(205144),	-- Plans: Shadowed Razing Annihilator (RECIPE!)
+					i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
+					i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
+				},
+			}),
+			n(DROPS, {
+				i(204696, {	-- Recipe: Draconic Phial Cauldron (RECIPE!)
+					["crs"] = {
+						201774,	-- The Amalgamation Chamber - Essence of Shadow
+						201773,	-- The Amalgamation Chamber - Eternal Blaze
+						201934,	-- The Amalgamation Chamber - Shadowflame Amalgamation
+					},
+				}),
+			}),
 			d(NORMAL_RAID, {
 				e(2522, {	-- Kazzara, the Hellforged
 					["crs"] = { 201261 },	-- Kazzara, the Hellforged
 					["g"] = {
 					},
 				}),
-				e(2529, {	-- Molgoth
+				e(2529, {	-- The Amalgamation Chamber
 					["crs"] = {
-						201774,	-- Krozgoth
-						201934,	-- Molgoth <Living Shadowflame>
-						201773,	-- Moltannia
+						201774,	-- Essence of Shadow
+						201773,	-- Eternal Blaze
+						201934,	-- Shadowflame Amalgamation
 					},
 					["g"] = {
 					},
@@ -46,7 +93,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					},
 				}),
 				e(2525, {	-- Rashok, the Elder
-					["crs"] = { 201320 },	-- Rashok
+					["crs"] = { 201320 },	-- Rashok, the Elder
 					["g"] = {
 					},
 				}),

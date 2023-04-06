@@ -7,7 +7,7 @@ root(ROOTS.Secrets, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_5 } },
 		["modelScale"] = 1.1,
 		["modelID"] = 92632,
 		["maps"] = { THE_MAW },
-		["cost"] = { "i", 184870, 1 },	-- 1x Stygia Dowser
+		["cost"] = {{ "i", 184870, 1 }},	-- 1x Stygia Dowser
 		["g"] = {
 			i(185618),	-- Stygia Dust
 			i(185617),	-- Stygia Sliver
@@ -95,7 +95,7 @@ root(ROOTS.Secrets, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_5 } },
 				},
 			}),
 			i(185475, {	-- Feral Shadehound
-				["sourceQuets"] = { 63666 },
+				["sourceQuests"] = { 63666 },
 				["cost"] = {
 					{ "i", 185474, 1 },	-- 1x Armored Husk
 					{ "i", 185471, 1 },	-- 1x Willing Wolf Soul

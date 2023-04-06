@@ -1,6 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local function bo(questID, isDaily)
+    return { ["questID"] = questID, ["isDaily"] = isDaily };
+end
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(RARES, {
 		n(-1143, {	-- DF Rare Rotation
@@ -14,6 +17,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["questID"] = 73994,
 					["isDaily"] = true,
 					["g"] = {
+						bo(69856, true),
 						i(200433),	-- Footwraps of Subjugation
 					},
 				}),
@@ -21,6 +25,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 72.2, 44.8, OHNAHRAN_PLAINS },
 					["questID"] = 74011,
 					["g"] = {
+						bo(69871, true),
 						i(200197),	-- Armoredon Herding Crook
 					},
 				}),
@@ -28,25 +33,36 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 62.8, 79.8, OHNAHRAN_PLAINS },
 					["questID"] = 74015,
 					["g"] = {
+						bo(69857, true),
 						i(200542),	-- Breezy Companion
 					},
 				}),
 				n(193235, {	-- Oshigol
 					["coord"] = { 60.8, 26.8, OHNAHRAN_PLAINS },
 					["questID"] = 74018,
+					["g"] = {
+						bo(69877, true),
+					},
 				}),
 				n(196010, {	-- Researcher Sneakwing <The Sundered Flame>
 					["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
 					["questID"] = 74023,
+					["g"] = {
+						bo(70698, true),
+					},
 				}),
 				n(193227, {	-- Ronsak the Decimator
 					["coord"] = { 43.3, 55.2, OHNAHRAN_PLAINS },
 					["questID"] = 74026,
+					["g"] = {
+						bo(69878, true),
+					},
 				}),
 				n(193123, {	-- Steamgill
 					["coord"] = { 53.6, 72.8, OHNAHRAN_PLAINS },
 					["questID"] = 74034,
 					["g"] = {
+						bo(69667, true),
 						i(200216),	-- Water Heating Cord
 					},
 				}),
@@ -55,6 +71,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 59.6, 70.1, THALDRASZUS },
 					["questID"] = 73987,
 					["g"] = {
+						bo(69868, true),
 						i(200147),	-- Web-Woven Robe
 					},
 				}),
@@ -62,6 +79,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 49.0, 51.0, THALDRASZUS },
 					["questID"] = 73990,
 					["g"] = {
+						bo(69875, true),
 						i(200284),	-- Phoenix Feather Pendant
 					},
 				}),
@@ -69,25 +87,36 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 52.6, 59.2, THALDRASZUS },
 					["questID"] = 74013,
 					["g"] = {
+						bo(69883, true),
 						i(200257),	-- Decay Infused Branch
 					},
 				}),
 				n(193210, {	-- Phleep <Time-Lost, Mind-Lost>
 					["coord"] = { 57.2, 84.2, THALDRASZUS },
 					["questID"] = 74021,
+					["g"] = {
+						bo(69866, true),
+					},
 				}),
 				n(193240, {	-- Riverwalker Tamopo <Terror of the Shallows>
 					["coord"] = { 39.8, 70.0, THALDRASZUS },
 					["questID"] = 74024,
+					["g"] = {
+						bo(69880, true),
+					},
 				}),
 				n(193666, {	-- Rokmur
 					["coord"] = { 50.0, 51.8, THALDRASZUS },
 					["questID"] = 74025,
+					["g"] = {
+						bo(69966, true),
+					},
 				}),
 				n(193176, {	-- Sandana the Tempest <Timesand Thief>
 					["coord"] = { 37.4, 77.9, THALDRASZUS },
 					["questID"] = 74029,
 					["g"] = {
+						bo(69859, true),
 						i(200202),	-- Tomorrow's Chains
 					},
 				}),
@@ -95,6 +124,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 48.8, 79.4, THALDRASZUS },
 					["questID"] = 74035,
 					["g"] = {
+						bo(69886, true),
 						i(200139),	-- Tempest Arc
 					},
 				}),
@@ -102,6 +132,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 35.0, 70.0, THALDRASZUS },
 					["questID"] = 74036,
 					["g"] = {
+						bo(70947, true),
 						i(196994),	-- Cliffside Wylderdrake: Short Horns (DM!)
 						i(200300),	-- Sack of Looted Treasures
 						i(200291),	-- Waterlogged Racing Grips

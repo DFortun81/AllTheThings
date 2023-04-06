@@ -775,7 +775,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["timeline"] = { CREATED_10_0_0, ADDED_10_0_7 },
 		}),
 		i(197140),	-- Highland Drake: Small Spotted Pattern (DM!)
-		unknown(i(197109)),	-- Highland Drake: Spiked Head
+		i(197109, {	-- Highland Drake: Spiked Head (DM!)
+			["timeline"] = { CREATED_10_0_0, ADDED_10_1_0 },
+		}),
 		i(197132),	-- Highland Drake: Spiked Cheek (DM!)
 		i(197150),	-- Highland Drake: Spiked Club Tail (DM!)
 		unknown(i(197134)),	-- Highland Drake: Spiked Legs

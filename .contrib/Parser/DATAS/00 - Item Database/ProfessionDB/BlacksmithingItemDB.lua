@@ -2068,3 +2068,21 @@ i(203830, 402129);	-- Sceptre of Hexing
 i(203826, 402124);	-- Venomfang
 i(203861, 402133);	-- Venomreaver
 i(203836, 402137);	-- Warblades of the Hakkari, Reborn
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+-- ITEM --
+i(205161, 408299);	-- Heat-Resistant Rescue Ring
+i(204144, 403158);	-- Obsidian Combatant's Draconium Armguards
+i(204139, 403159);	-- Obsidian Combatant's Draconium Breastplate
+i(204142, 403160);	-- Obsidian Combatant's Draconium Gauntlets
+i(204140, 403161);	-- Obsidian Combatant's Draconium Greaves
+i(204138, 403162);	-- Obsidian Combatant's Draconium Helm
+i(204141, 403163);	-- Obsidian Combatant's Draconium Pauldrons
+i(204143, 403164);	-- Obsidian Combatant's Draconium Sabatons
+i(204145, 403165);	-- Obsidian Combatant's Draconium Waistguard
+i(205137, 408282);	-- Shadowed Alloy
+i(205143, 408288);	-- Shadowed Belt Buckle
+i(205145, 408326);	-- Shadowed Impact Buckler
+i(205144, 408283);	-- Shadowed Razing Annihilator

@@ -45,8 +45,34 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						},
 					}),
 				}),
+				filter(REAGENTS, {
+					i(204292),	-- "Volcano" Duck
+					i(204299),	-- Dark Thaldraszian Cocoa Powder
+					i(204286),	-- Deepsquid Ink
+					i(204290),	-- Dragonflame Argali
+					i(204296),	-- Dried Coldsnap Sagittate
+					i(204297),	-- Exquisite Ohn'ahran Potato
+					i(204288),	-- Eye of Bass
+					i(204285),	-- Fermented Mackerel Paste
+					i(204298),	-- Flaky Pastry Dough
+					i(204300),	-- Four-Cheese Blend
+					i(204294),	-- Fresh Dragon Fruit
+					i(204293),	-- Greenberry
+					i(204287),	-- Island Crab Jerky
+					i(204295),	-- Juicy Bushfruit
+					i(204282),	-- Lunker Bits
+					i(204284),	-- Norukk's "All-Purpose" Fish Powder
+					i(204304),	-- Rations: Dragonbreath Chili
+					i(204301),	-- Rations: Scorpid Surprise
+					i(204302),	-- Rations: Undermine Clam Chowder
+					i(204303),	-- Rations: Westfall Stew
+					i(204289),	-- Seven Spices Bruffalon
+					i(204283),	-- Skrog Liver Oil
+					i(204281),	-- Thousandbite Piranha Collar
+					i(204291),	-- Thrice-Charred Mammoth Ribs
+				}),
 			},
-		})
+		}),
 	}),
 })));
 

@@ -505,13 +505,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(192804, {	-- Restless Hornstrider / Restless Hornstrider (MOUNT!)
 					--["modelID"] = ,
 				}),
-				i(192779, {	-- Scorchpath / Scorchpath(MOUNT!)
-					--["modelID"] = ,
-				}),
 				mount(372995, {	-- Swift Spectral Drake (MOUNT!)
-					--["modelID"] = ,
-				}),
-				mount(368893, {	-- Winding Slitherdrake (MOUNT!)
 					--["modelID"] = ,
 				}),
 				mount(376898, {	-- [PH] Black Armored River Otter (MOUNT!)

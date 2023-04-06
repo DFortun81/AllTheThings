@@ -52,9 +52,36 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(201928),	-- Ohn'ir Windprayer Talisman
 				i(201251),	-- Pillaged Contender's Strongbox
 			})),
-			-- 10.0.7
-				i(203854),	-- ?? doesnt load
-				i(203798),	-- Copy Bag
+			tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {
+				i(202663),	-- [DNT] Dragonscale Expedition Item 01
+				i(202671),	-- [DNT] Dragonscale Expedition Item 02
+				i(202672),	-- [DNT] Dragonscale Expedition Item 03
+				i(202673),	-- [DNT] Dragonscale Expedition Item 04
+				i(202674),	-- [DNT] Dragonscale Expedition Item 05
+				i(202675),	-- [DNT] Maruuk Centaur Item 01
+				i(202676),	-- [DNT] Maruuk Centaur Item 02
+				i(202677),	-- [DNT] Maruuk Centaur Item 03
+				i(202678),	-- [DNT] Maruuk Centaur Item 04
+				i(202679),	-- [DNT] Maruuk Centaur Item 05
+				i(202680),	-- [DNT] Iskaara Tuskarr Item 01
+				i(202681),	-- [DNT] Iskaara Tuskarr Item 02
+				i(202682),	-- [DNT] Iskaara Tuskarr Item 03
+				i(202683),	-- [DNT] Iskaara Tuskarr Item 04
+				i(202684),	-- [DNT] Iskaara Tuskarr Item 05
+				i(202685),	-- [DNT] Valdrakken Accord Item 01
+				i(202686),	-- [DNT] Valdrakken Accord Item 02
+				i(202687),	-- [DNT] Valdrakken Accord Item 03
+				i(202688),	-- [DNT] Valdrakken Accord Item 04
+				i(202689),	-- [DNT] Valdrakken Accord Item 05
+				i(203798),	-- Copy Jin'do's Bag of Whammies
+				i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
+				i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
+				i(203213),	-- Ensemble: Lion's Heritage White Armor Set
+				i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
+				i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
+				i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
+				i(203854),	-- Warblades of the Hakkari, Reborn
+			})),
 		}),
 	}),
 }));

@@ -395,6 +395,17 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(191779, {	-- Fireplume Halter
 			["timeline"] = { "added 10.0.2.47213" },
 		}),
+		i(204888,	-- Ensemble: Waveborne Diplomat's Regalia
+			bubbleDownSelf({ ["timeline"] = { "added 10.0.7.48892" } }, {
+			i(204882),	-- Waveborne Diplomat's Belt
+			i(204881),	-- Waveborne Diplomat's Cape
+			i(204874),	-- Waveborne Diplomat's Cavalier Hat
+			i(204878),	-- Waveborne Diplomat's Frilled Gloves
+			i(204880),	-- Waveborne Diplomat's Pantaloons
+			i(204875),	-- Waveborne Diplomat's Puffed Pauldrons
+			i(204876),	-- Waveborne Diplomat's Vestment
+			i(204879),	-- Waveborne Diplomat's Waders
+		})),
 	}),
 	-- #endif
 	-- #if AFTER 8.1.5.29737
@@ -411,4 +422,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	}),
 	-- #endif
 }));
+root(ROOTS.HiddenQuestTriggers, {
+	q(72082),	-- Ensemble: Waveborne Diplomat's Regalia
+});
 -- #endif

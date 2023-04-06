@@ -127,6 +127,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					}),
 
 						-- The Forbidden Reach --
+
+					q(73080, {	-- Dragonrider Racing - Aerie Chasm Cruise
+						["coord"] = { 63.3, 51.8, THE_FORBIDDEN_REACH },
+						["timeline"] = { ADDED_10_0_7 },
+					}),
 					q(73083, {	-- Dragonrider Racing - Caldera Climb
 						["coord"] = { 41.2, 14.3, THE_FORBIDDEN_REACH },
 						["timeline"] = { ADDED_10_0_7 },
@@ -135,14 +140,26 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 66.9, 5.6, THE_FORBIDDEN_REACH },
 						["timeline"] = { ADDED_10_0_7 },
 					}),
+					q(73079, {	-- Dragonrider Racing - Morqut Ascent
+						["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+						["timeline"] = { ADDED_10_0_7 },
+					}),
 					q(73082, {	-- Dragonrider Racing - Southern Reach Route
 						["coord"] = { 63.5, 83.6, THE_FORBIDDEN_REACH },
+						["timeline"] = { ADDED_10_0_7 },
+					}),
+					q(73078, {	-- Dragonrider Racing - Stormsunder Crater Circuit
+						["coord"] = { 76.3, 65.7, THE_FORBIDDEN_REACH },
 						["timeline"] = { ADDED_10_0_7 },
 					}),
 
 						-- Zaralek Cavern --
 					q(75121, {	-- Dragonrider Racing - Brimstone Scramble
 						["coord"] = { 54.3, 24.0, ZARALEK_CAVERN },
+						["timeline"] = { ADDED_10_1_0 },
+					}),
+					q(75120, {	-- Dragonrider Racing - Caldera Cruise
+						["coord"] = { 39.0, 49.8, ZARALEK_CAVERN },
 						["timeline"] = { ADDED_10_1_0 },
 					}),
 					q(75122, {	-- Dragonrider Racing - Shimmering Slalom

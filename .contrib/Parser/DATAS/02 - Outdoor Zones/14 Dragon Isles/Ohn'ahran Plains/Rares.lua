@@ -1,6 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local function bo(questID, isDaily)
+    return { ["questID"] = questID, ["isDaily"] = isDaily };
+end
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(OHNAHRAN_PLAINS, {
 		n(RARES, sharedData({ ["isDaily"] = true },{
@@ -13,6 +16,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["cr"] = 193222,	-- Archaeologist Koranir
 				["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
 				["questID"] = 74096,
+				["g"] = {
+					bo(73869, true),
+				},
 			}),
 			n(201535,	-- Bloodbeak the Ravenous
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
@@ -55,6 +61,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 35.0, 41.1, OHNAHRAN_PLAINS },
 				["questID"] = 74549,
 				["g"] = {
+					bo(74463, true),
 					i(203671),	-- Pack Leader's Pelt
 				},
 			})),
@@ -73,6 +80,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
 				["questID"] = 74548,
 				["g"] = {
+					bo(74466, true),
 					i(203672),	-- Master Huntmaster's Wristguards
 				},
 			})),
@@ -83,6 +91,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					{ 80.5, 37.8, OHNAHRAN_PLAINS },	-- Boss
 				},
 				["questID"] = 73967,
+				["g"] = {
+					bo(66356, true),
+					i(203672),	-- Master Huntmaster's Wristguards
+				},
 			}),
 			n(197009, {	-- Liskheszaera
 				["coord"] = { 87.4, 61.4, OHNAHRAN_PLAINS },
@@ -93,6 +105,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
 				["questID"] = 74546,
 				["g"] = {
+					bo(74464, true),
 					i(203674),	-- Brutal Tramplers
 				},
 			})),
@@ -173,6 +186,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["questID"] = 74073,
 				["cost"] = {{"i", 194681, 1}},	-- Sugarwing Cupcake
 				["g"] = {
+					bo(69865, true),
 					i(200735),	-- Magically Magical Faerie Flower
 				},
 			}),
@@ -219,6 +233,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
 				["questID"] = 74547,
 				["g"] = {
+					bo(74465, true),
 					i(203676),	-- Stormcaller's Grounding Shoes
 					i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
 				},
@@ -263,6 +278,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			n(192983, {	-- Web-Queen Ashkaz
 				["coord"] = { 43.3, 47.2, OHNAHRAN_PLAINS },
 				["questID"] = 74095,
+				["g"] = {
+					bo(67717, true),
+				},
 			}),
 			n(192364, {	-- Windscale the Stormborn
 				["description"] = "Only available if the Aylaag Camp is stationed at the south east.\nSpawns from the egg after killing 5 nearby egg channelers.",
@@ -275,6 +293,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 58.6, 68.2, OHNAHRAN_PLAINS },
 				["questID"] = 74088,
 				["g"] = {
+					bo(74440, true),
 					i(200141),	-- Wind Generating Band
 				},
 			})),

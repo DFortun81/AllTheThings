@@ -47,7 +47,19 @@ local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
 local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, sformat, strsplit
 	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, string.format, strsplit;
-local ATTAccountWideData;
+local ATTAccountWideData, IsRetrieving;
+do
+local RETRIEVING_DATA, RETRIEVING_ITEM_INFO = RETRIEVING_DATA, RETRIEVING_ITEM_INFO;
+local RETRIEVING = strsplit(" ", RETRIEVING_DATA);
+-- Returns whether the provided string matches a string which indicates the data is not yet loaded in the Client
+IsRetrieving = function(s)
+	return not s
+		or s == RETRIEVING_DATA
+		or s == RETRIEVING_ITEM_INFO
+		or s:find(RETRIEVING)
+		or s:find("%[%]");
+end
+end
 local ALLIANCE_ONLY = {
 	1,	-- Human
 	3,	-- Dwarf
@@ -1506,7 +1518,7 @@ RGBToHex = function(r, g, b)
 end
 -- Attempts to determine the colorized text for a given Group
 app.TryColorizeName = function(group, name)
-	if not name or name == RETRIEVING_DATA then return name; end
+	if IsRetrieving(name) then return name; end
 	-- raid headers
 	if group.isRaid then
 		return Colorize(name, app.Colors.Raid);
@@ -2891,7 +2903,7 @@ app.NPCNameFromID = setmetatable({}, { __index = function(t, id)
 			rawset(NPCTitlesFromID, id, AllTheThingsNPCHarvesterTextLeft2:GetText());
 		end
 		NPCHarvester:Hide();
-		if title and title ~= RETRIEVING_DATA then
+		if not IsRetrieving(title) then
 			rawset(t, id, title);
 			return title;
 		end
@@ -2920,8 +2932,7 @@ MergeObjects,
 NestObjects,
 -- Nests multiple Objects under another Object using an optional set of functions to determine priority on the adding of objects, only creating the 'g' group if necessary
 -- ex. PriorityNestObjects(parent, groups, newCreate, function1, function2, ...)
-PriorityNestObjects,
-RefreshAchievementCollection;
+PriorityNestObjects;
 app.searchCache = searchCache;
 (function()
 local keysByPriority = {	-- Sorted by frequency of use.
@@ -4202,7 +4213,7 @@ app.TooltipSourceFields = {
 };
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- app.PrintDebug("GetCachedSearchResults",search,method,paramA,paramB,...)
-	if not search or search:find("%[]") then return; end
+	if IsRetrieving(search) then return; end
 	local cache = searchCache[search];
 	if cache then return cache; end
 
@@ -4463,7 +4474,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												end
 												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
-												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
+												tinsert(info, { left = text	.. " |CFFFF0000(" .. (IsRetrieving(link) and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 											end
 										end
 									end
@@ -4547,7 +4558,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												end
 												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
-												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
+												tinsert(info, { left = text	.. " |CFFFF0000(" .. (IsRetrieving(link) and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 											end
 										end
 									end
@@ -4702,7 +4713,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				tinsert(listing, 1, L["AND_"] .. (count - maximum) .. L["_OTHER_SOURCES"] .. "...");
 			end
 			for _,text in ipairs(listing) do
-				if not working and text:find(RETRIEVING_DATA) then working = true; end
+				if not working and IsRetrieving(text) then working = true; end
 				local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
 				tinsert(info, 1, { left = left, right = right, wrap = wrap });
 			end
@@ -4966,7 +4977,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					item = entries[i];
 					entry = item.group;
 					left = entry.text or RETRIEVING_DATA;
-					if not working and (left == RETRIEVING_DATA or left:find("%[]")) then working = true; end
+					if not working and IsRetrieving(left) then working = true; end
 
 					-- If this entry has a specific Class requirement and is not itself a 'Class' header, tack that on as well
 					if entry.c and entry.key ~= "classID" and #entry.c == 1 then
@@ -5051,7 +5062,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 
-					if not working and (right == RETRIEVING_DATA or right:find(RETRIEVING_DATA) or right:find("%[]")) then working = true; end
+					if not working and IsRetrieving(right) then working = true; end
 
 					-- If this entry is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
 					if entry.criteriaID and entry.achievementID then
@@ -5385,8 +5396,11 @@ local function SkipFillingGroup(group, FillData)
 		if parent and parent.questID and parent.saved then return true; end
 	end
 
-	-- mark this group as being filled since it is not being skipped (unless it's a basic header)
-	if not group.headerID then
+	-- mark this group as being filled since it is not being skipped (unless it's a basic header/class header)
+	if not (
+		group.headerID or
+		group.classID
+	) then
 		if groupHash then included[groupHash] = true; end
 	end
 end
@@ -5414,14 +5428,9 @@ local function FillGroupsRecursive(group, FillData)
 
 	if group.g then
 		-- app.PrintDebug(".g",group.hash,#group.g)
-		-- local hash = group.hash;
 		-- Then nest anything further
 		for _,o in ipairs(group.g) do
-			-- never nest the same Thing under itself
-			-- (prospecting recipes list the input as the output)
-			-- if o.hash ~= hash then
-				FillGroupsRecursive(o, FillData);
-			-- end
+			FillGroupsRecursive(o, FillData);
 		end
 	end
 end
@@ -5454,16 +5463,11 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	end
 
 	if group.g then
-		local Runner = app.FunctionRunner;
+		local Run = app.FunctionRunner.Run;
 		-- app.PrintDebug(".g",group.hash,#group.g)
-		-- local hash = group.hash;
 		-- Then nest anything further
 		for _,o in ipairs(group.g) do
-			-- never nest the same Thing under itself
-			-- (prospecting recipes list the input as the output)
-			-- if o.hash ~= hash then
-			Runner.Run(FillGroupsRecursiveAsync, o, FillData);
-			-- end
+			Run(FillGroupsRecursiveAsync, o, FillData);
 		end
 	end
 end
@@ -7507,7 +7511,7 @@ local function RefreshCollections()
 	coroutine.yield();
 
 	-- Refresh Achievements
-	RefreshAchievementCollection();
+	app.RefreshAchievementCollection();
 	coroutine.yield();
 
 	-- Double check if any once-per-account quests which haven't been detected as being completed are completed by this character
@@ -8941,7 +8945,7 @@ local function BuildTextFromNPCIDs(t, npcIDs)
 	local textTbl = {};
 	for i,npcID in ipairs(npcIDs) do
 		name = app.NPCNameFromID[npcID];
-		retry = retry or not name or name == RETRIEVING_DATA;
+		retry = retry or IsRetrieving(name);
 		if not retry then
 			textTbl[i * 2 - 1] = name;
 			if i > 1 then
@@ -9541,7 +9545,7 @@ local function CheckAchievementCollectionStatus(achievementID)
 		end
 	end
 end
-RefreshAchievementCollection = function()
+app.RefreshAchievementCollection = function()
 	if ATTAccountWideData then
 		local maxid, achID = 0;
 		for achievementID,_ in pairs(fieldCache["achievementID"]) do
@@ -12366,7 +12370,8 @@ itemTooltipHarvesterFields.text = function(t)
 		-- a way to capture when the tooltip is giving information about something that is NOT the current ItemID
 		local isSubItem, craftName;
 		local lineCount = ItemHarvester:NumLines();
-		if ATTItemHarvesterTextLeft1:GetText() and ATTItemHarvesterTextLeft1:GetText() ~= RETRIEVING_DATA and lineCount > 0 then
+		local tooltipText = ATTItemHarvesterTextLeft1:GetText();
+		if not IsRetrieving(tooltipText) and lineCount > 0 then
 			-- local debugPrint = t.info._debug;
 			-- if debugPrint then print("Item Info:",t.info.itemID) end
 			for index=1,lineCount,1 do
@@ -12375,7 +12380,7 @@ itemTooltipHarvesterFields.text = function(t)
 					local text = line:GetText();
 					if text then
 						-- sub items within recipe tooltips show this text, need to wait until it loads
-						if text == RETRIEVING_ITEM_INFO then
+						if IsRetrieving(text) then
 							t.info.retries = (t.info.retries or 0) + 1;
 							-- 30 attempts to load the sub-item, otherwise just continue parsing tooltip without it
 							if t.info.retries < 30 then
@@ -15944,11 +15949,7 @@ local function SetRowData(self, row, data)
 	ClearRowData(row);
 	if data then
 		local text = data.text;
-		if not text or text == RETRIEVING_DATA then
-			text = RETRIEVING_DATA;
-			self.processingLinks = true;
-		elseif string.find(text, "%[%]") then
-			-- This means the link is still rendering
+		if IsRetrieving(text) then
 			text = RETRIEVING_DATA;
 			self.processingLinks = true;
 		-- WARNING: DEV ONLY START
@@ -16800,12 +16801,15 @@ RowOnEnter = function (self)
 		end
 		if reference.c and app.Settings:GetTooltipSetting("Enabled") and app.Settings:GetTooltipSetting("ClassRequirements") then
 			local str,colors = "",app.Settings:GetTooltipSetting("UseMoreColors");
+			local classInfo, classColor;
 			for i,cl in ipairs(reference.c) do
 				if i > 1 then str = str .. ", "; end
-				if colors then
-					str = str .. Colorize(C_CreatureInfo.GetClassInfo(cl).className, RAID_CLASS_COLORS[select(2, GetClassInfo(cl))].colorStr);
+				classInfo = C_CreatureInfo.GetClassInfo(cl);
+				classColor = RAID_CLASS_COLORS[select(2, GetClassInfo(cl))];
+				if colors and classColor then
+					str = str .. Colorize(classInfo and classInfo.className or UNKNOWN, classColor.colorStr);
 				else
-					str = str .. C_CreatureInfo.GetClassInfo(cl).className;
+					str = str .. (classInfo and classInfo.className or UNKNOWN);
 				end
 			end
 			GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
@@ -20218,7 +20222,7 @@ customWindowUpdates["SourceFinder"] = function(self)
 								t.fails = 0;
 								t.OnUpdate = function(source)
 									local text = source.text;
-									if text and text ~= RETRIEVING_DATA then
+									if not IsRetrieving(text) then
 										source.OnUpdate = function(source)
 											local itemID = source.itemID;
 											if itemID then
@@ -21492,7 +21496,7 @@ customWindowUpdates["list"] = function(self, force, got)
 			end,
 			text = function(o, key)
 				local text, key = o.text, o.key;
-				if text and text ~= RETRIEVING_DATA then
+				if not IsRetrieving(text) then
 					return "#"..(o[dataType] or o[key or 0] or "?")..": "..text;
 				end
 			end,
@@ -21517,7 +21521,7 @@ customWindowUpdates["list"] = function(self, force, got)
 			overrides.visible = function(o)
 				-- __o is set in the DLO when the object is built
 				-- app.PrintDebug(o.hash,o.text)
-				if o.text == RETRIEVING_DATA then return true; end
+				if IsRetrieving(o.text) then return true; end
 				return;
 			end
 		end
@@ -24013,6 +24017,7 @@ app.Startup = function()
 	app:RegisterEvent("BOSS_KILL");
 	app:RegisterEvent("CHAT_MSG_ADDON");
 	app:RegisterEvent("PLAYER_ENTERING_WORLD");
+	app:RegisterEvent("TOOLTIP_DATA_UPDATE");
 	app:RegisterEvent("NEW_PET_ADDED");
 	app:RegisterEvent("PET_JOURNAL_PET_DELETED");
 	app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
@@ -24800,6 +24805,14 @@ app.events.PLAYER_ENTERING_WORLD = function(...)
 	-- send a location trigger now that the character is 'in the world'
 	-- DelayedCallback(app.LocationTrigger, 3); -- maybe not necessary?
 end
+app.events.TOOLTIP_DATA_UPDATE = function(...)
+	if GameTooltip and GameTooltip:IsVisible() then
+		-- app.PrintDebug("Auto-refresh tooltip")
+		-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
+		GameTooltip.AttachComplete = nil;
+		GameTooltip:Show();
+	end
+end
 app.AddonLoadedTriggers = {
 	["AllTheThings"] = function()
 		app.Startup();
@@ -24811,7 +24824,7 @@ app.AddonLoadedTriggers = {
 		end
 	end,
 	["Blizzard_AchievementUI"] = function()
-		if app.IsReady then RefreshAchievementCollection(); end
+		if app.IsReady then app.RefreshAchievementCollection(); end
 	end,
 };
 app.events.ADDON_LOADED = function(addonName)

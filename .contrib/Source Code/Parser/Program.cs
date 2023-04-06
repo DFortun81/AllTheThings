@@ -198,16 +198,18 @@ namespace ATT
                 {
                     StringBuilder dupeIDs = new StringBuilder();
                     Dictionary<decimal, int> idCounts = Framework.TypeUseCounts[key];
+                    int count = 0;
                     foreach (var id in idCounts
                         .Where(kvp => kvp.Value > 1)
                         .Select(kvp => kvp.Key)
                         .OrderBy(i => i))
                     {
                         dupeIDs.Append(id).Append(",");
+                        count++;
                     }
 
                     if (dupeIDs.Length > 0)
-                        Framework.Log($"Duplicate {key} Usage: " + dupeIDs.ToString());
+                        Framework.Log($"Duplicate {key} Usage ({count}): " + dupeIDs.ToString());
                 }
 
                 // Update the .TOC with the Parser Run Date

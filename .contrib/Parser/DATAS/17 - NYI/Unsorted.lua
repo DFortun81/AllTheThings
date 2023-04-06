@@ -786,9 +786,9 @@ root(ROOTS.Unsorted, {
 				i(202705),	-- Snail Slime
 				i(202855),	-- Maldra's Ring of Elemental Binding
 				i(202869),	-- Scorching Key
-				i(202873),	-- Drooping Mushroom Cutting
+
 				i(202875),	-- Snail Lasso
-				i(203012),	-- Viridian Heartcrystal
+
 				i(203013),	-- Niffen Incense
 				i(203229),	-- Snail Slime
 				i(203383),	-- Notes on Dragonkin Equality
@@ -799,17 +799,15 @@ root(ROOTS.Unsorted, {
 				i(203391),	-- Dented Dwarven Pocketwatch
 				i(203392),	-- Old Mirror Shard
 				i(203393),	-- Spongy Loamshroom
-				i(203394),	-- Elementally Charged Orb
-				i(203395),	-- Research Notes
-				i(203396),	-- Displayed Armor Piece
+
+
+
 				i(203430),	-- Ward of Igira
 				i(203442),	-- Snail Slime
 
 				i(203454),	-- Zaqali Equipment
 				i(203455),	-- Draketooth Fetish
 
-
-				i(203655),	-- Dusty Key
 
 				i(203683),	-- Ward of Fyrakk
 				i(203706),	-- Hurricane Scepter
@@ -924,14 +922,6 @@ root(ROOTS.Unsorted, {
 				i(204118),	-- Obsidian Combatant's Wildercloth Tunic
 				i(204119),	-- Obsidian Combatant's Wildercloth Sash
 				i(204120),	-- Obsidian Combatant's Wildercloth Cloak
-				i(204121),	-- Obsidian Combatant's Draconium Breastplate
-				i(204122),	-- Obsidian Combatant's Draconium Sabatons
-				i(204123),	-- Obsidian Combatant's Draconium Gauntlets
-				i(204124),	-- Obsidian Combatant's Draconium Helm
-				i(204125),	-- Obsidian Combatant's Draconium Greaves
-				i(204126),	-- Obsidian Combatant's Draconium Pauldrons
-				i(204127),	-- Obsidian Combatant's Draconium Waistguard
-				i(204128),	-- Obsidian Combatant's Draconium Armguards
 				i(204129),	-- Pattern: Obsidian Combatant's Wildercloth Bands
 				i(204130),	-- Pattern: Obsidian Combatant's Wildercloth Cloak
 				i(204131),	-- Pattern: Obsidian Combatant's Wildercloth Gloves
@@ -941,14 +931,6 @@ root(ROOTS.Unsorted, {
 				i(204135),	-- Pattern: Obsidian Combatant's Wildercloth Shoulderpads
 				i(204136),	-- Pattern: Obsidian Combatant's Wildercloth Treads
 				i(204137),	-- Pattern: Obsidian Combatant's Wildercloth Tunic
-				i(204138),	-- Plans: Obsidian Combatant's Draconium Helm
-				i(204139),	-- Plans: Obsidian Combatant's Draconium Breastplate
-				i(204140),	-- Plans: Obsidian Combatant's Draconium Greaves
-				i(204141),	-- Plans: Obsidian Combatant's Draconium Pauldrons
-				i(204142),	-- Plans: Obsidian Combatant's Draconium Gauntlets
-				i(204143),	-- Plans: Obsidian Combatant's Draconium Sabatons
-				i(204144),	-- Plans: Obsidian Combatant's Draconium Armguards
-				i(204145),	-- Plans: Obsidian Combatant's Draconium Waistguard
 				i(204146),	-- Design: Obsidian Combatant's Jeweled Amulet
 				i(204147),	-- Design: Obsidian Combatant's Jeweled Signet
 				i(204148),	-- Pattern: Obsidian Combatant's Resilient Mask
@@ -983,7 +965,7 @@ root(ROOTS.Unsorted, {
 				i(201254),	-- Cracked Medal of Honor
 				i(201255),	-- Cracked Medal of Honor
 				i(201956),	-- [DNT] Snakey Eyes
-				i(202180),	-- Uncomfortably Old Cheese
+
 				i(202206),	-- Thumper Part
 				i(202387),	-- Slightly Ruffled Top Hat
 
@@ -1063,7 +1045,7 @@ root(ROOTS.Unsorted, {
 				i(204327),	-- Titan Machine Part
 				i(204329),	-- Petrified Spider Leg
 				i(204331),	-- Djaradin Pillar Shard
-				i(204334),	-- Waste Disposal Notes
+
 				i(204342),	-- Questionable Jerky
 				i(204344),	-- Conductive Lodestone
 				i(204345),	-- Note to Disposal Site
@@ -1071,7 +1053,6 @@ root(ROOTS.Unsorted, {
 				i(204349),	-- Bigger Wrench
 				i(204351),	-- Animated Crystal Shard
 				i(204365),	-- Bundle of Ebon Spears
-				i(204370),	-- Stinky Bright Potion
 				i(204377),	-- Glow Spores
 				i(204407),	-- Rebel Detonator
 				i(204433),	-- Everburning Fireshard
@@ -1104,7 +1085,7 @@ root(ROOTS.Unsorted, {
 				i(204196),	-- Wyrm's Shadowflame Crest
 
 				-- profession
-				i(204238),	-- Draconic Phial Cauldron
+
 				i(204440),	-- Spark of Shadowflame
 				i(204460),	-- Zaralek Glowspores
 				i(204462),	-- Dracothyst Shards
@@ -1124,46 +1105,9 @@ root(ROOTS.Unsorted, {
 				i(204621),	-- Enchant Weapon - Shadowflame Wreathe
 				i(204622),	-- Enchant Weapon - Shadowflame Wreathe
 				i(204623),	-- Enchant Weapon - Shadowflame Wreathe
-				i(204631),	-- Recipe: Transmute: Dracothyst
-				i(204633),	-- Cauldron of Extracted Putrescence
-				i(204634),	-- Rot Resistant Cauldron
-				i(204643),	-- Fleeting Phial of the Eye in the Storm
-				i(204644),	-- Fleeting Phial of the Eye in the Storm
-				i(204645),	-- Fleeting Phial of the Eye in the Storm
-				i(204646),	-- Fleeting Phial of Still Air
-				i(204647),	-- Fleeting Phial of Still Air
-				i(204648),	-- Fleeting Phial of Still Air
-				i(204649),	-- Fleeting Phial of Icy Preservation
-				i(204650),	-- Fleeting Phial of Icy Preservation
-				i(204651),	-- Fleeting Phial of Icy Preservation
-				i(204652),	-- Fleeting Iced Phial of Corrupting Rage
-				i(204653),	-- Fleeting Iced Phial of Corrupting Rage
-				i(204654),	-- Fleeting Iced Phial of Corrupting Rage
-				i(204655),	-- Fleeting Phial of Charged Isolation
-				i(204656),	-- Fleeting Phial of Charged Isolation
-				i(204657),	-- Fleeting Phial of Charged Isolation
-				i(204658),	-- Fleeting Phial of Glacial Fury
-				i(204659),	-- Fleeting Phial of Glacial Fury
-				i(204660),	-- Fleeting Phial of Glacial Fury
-				i(204661),	-- Fleeting Phial of Static Empowerment
-				i(204662),	-- Fleeting Phial of Static Empowerment
-				i(204663),	-- Fleeting Phial of Static Empowerment
-				i(204664),	-- Fleeting Phial of Tepid Versatility
-				i(204665),	-- Fleeting Phial of Tepid Versatility
-				i(204666),	-- Fleeting Phial of Tepid Versatility
-				i(204667),	-- Fleeting Charged Phial of Alacrity
-				i(204668),	-- Fleeting Charged Phial of Alacrity
-				i(204669),	-- Fleeting Charged Phial of Alacrity
-				i(204670),	-- Fleeting Phial of Elemental Chaos
-				i(204671),	-- Fleeting Phial of Elemental Chaos
-				i(204672),	-- Fleeting Phial of Elemental Chaos
 				i(204673),	-- Titan Training Matrix V
-				i(204679),	-- Draconic Phial Cauldron
-				i(204680),	-- Draconic Phial Cauldron
 				i(204681),	-- Enchanted Whelpling's Shadowflame Crest
 				i(204682),	-- Enchanted Wyrm's Shadowflame Crest
-				i(204695),	-- Recipe: Cauldron of Extracted Putrescence
-				i(204696),	-- Recipe: Draconic Phial Cauldron
 				i(204697),	-- Enchanted Aspect's Shadowflame Crest
 				i(204700),	-- Lambent Armor Kit
 				i(204701),	-- Lambent Armor Kit
@@ -1171,18 +1115,28 @@ root(ROOTS.Unsorted, {
 				i(204708),	-- Shadowflame-Tempered Armor Patch
 				i(204709),	-- Shadowflame-Tempered Armor Patch
 				i(204710),	-- Shadowflame-Tempered Armor Patch
-				-- Mount
-				i(204361),	-- Winding Slitherdrake
 				filter(TOYS, {
 					i(205045),	-- B.B.F. Fist (TOY!)
 					i(205418),	-- Blazing Shadowflame Cinder (TOY!)
 					i(205034),	-- Enormous Ball of Yarn (TOY!)
 					i(205027),	-- Explorer's Banner (TOY!)
+					i(206038),	-- Flamin' Ring of Flashiness (TOY!)
+					i(206043),	-- Fyrakk's Frenzy (TOY!)
 					i(205688),	-- Glutinous Glitterscale Glob (TOY!)
 					i(205796),	-- Molten Lava Pack (TOY!)
 					i(205255),	-- Niffen Diggin' Mitts (TOY!)
 					i(204818),	-- Quackomancy Cannon (TOY!)
+					i(205963),	-- Sniffin' Salts (TOY!)
 					i(205904),	-- Vibrant Clacking Claw (TOY!)
+				}),
+				filter(MOUNTS, {
+					i(205155),	-- Big Slick in the City (MOUNT!)
+					i(205209),	-- Boulder Hauler (MOUNT!)
+					i(205203),	-- Cobalt Shalewing (MOUNT!)
+					i(206027),	-- Felcrystal Scorpion (MOUNT!)
+					i(205197),	-- Igneous Shalewing (MOUNT!)
+					i(205207),	-- Morsel Sniffer (MOUNT!)
+					i(192779),	-- Seething Slug (MOUNT!)
 				}),
 
 
@@ -1222,7 +1176,7 @@ root(ROOTS.Unsorted, {
 				i(204792),	-- Nightlight Conkerbell Sample
 				i(204794),	-- Whelkshell Crystals
 				i(204796),	-- Deepflayer Dust
-				i(204798),	-- [PH] Primal Rhino Fire
+
 				i(204800),	-- Scaly Stone Hide
 				i(204801),	-- Gelcap Spores
 				i(204803),	-- Echoed Lurker Flesh
@@ -1252,7 +1206,7 @@ root(ROOTS.Unsorted, {
 				i(204858),	-- [PH] 10.1 Vantus Rune
 				i(204859),	-- [PH] 10.1 Vantus Rune
 				i(204860),	-- [PH] 10.1 Vantus Rune
-				i(204867),	-- Niffen Dive Key
+
 				i(204871),	-- Recipe Rat
 				i(204872),	-- Ripped Recipe Scrap
 				i(204877),	-- 'The Resting Blade'
@@ -1283,7 +1237,7 @@ root(ROOTS.Unsorted, {
 				i(204977),	-- Formula: Illusory Adornment: Spores
 				i(204978),	-- Formula: Enchant Weapon - Spore Tender
 
-				i(204984),	-- Recipe: Stinky Bright Potion
+
 				i(204985),	-- Barter Brick
 				i(204986),	-- Flame-Infused Scale Oil
 				i(204987),	-- Lava-Forged Leatherworker's "Knife"
@@ -1328,18 +1282,12 @@ root(ROOTS.Unsorted, {
 				i(205035),	-- Snapjaw Lurker
 				i(205036),	-- Schematic: Tinker: Shadowflame Rockets
 				i(205037),	-- Void Lurker
-				i(205038),	-- Heat-Resistant Rescue Ring
-				i(205039),	-- Hellsteel Belt Buckle
-				i(205040),	-- Hellsteel Belt Buckle
-				i(205041),	-- Hellsteel Belt Buckle
-				i(205042),	-- Hellsteel Belt Buckle
-				i(205043),	-- Hellsteel Belt Buckle
-				i(205044),	-- Hellsteel Belt Buckle
+
+
 
 				i(205046),	-- [DNT] Hellsteel Bunker Buster
-				i(205047),	-- Hellsteel Impact Guage
-				i(205048),	-- Hellsteel Impact Guage
-				i(205049),	-- Hellsteel Impact Guage
+
+
 				i(205050),	-- Scalebane Beetle
 				i(205051),	-- Leshtar
 				i(205052),	-- Miloh
@@ -1365,15 +1313,13 @@ root(ROOTS.Unsorted, {
 				i(205134),	-- Technique: Vantus Rune: Aberrus, the Shadowed Crucible
 				i(205135),	-- Technique: Hissing Rune
 				i(205136),	-- Technique: Contract: Loamm Niffen
-				i(205137),	-- Plans: Hellsteel Alloy
 				i(205138),	-- Pattern: Spore-Infused Combat Bandage
 				i(205139),	-- Pattern: Reserve Parachute
 				i(205140),	-- Pattern: Undulating Sporecloak
 				i(205141),	-- Pattern: Explorer's Banner of Comradery
 				i(205142),	-- Pattern: Enourmous Ball of Yarn
-				i(205143),	-- Plans: Hellsteel Belt Buckle
 				i(205144),	-- Plans: [PH] Hellsteel Bunker Buster
-				i(205145),	-- Plans: Hellsteel Impact Buckler
+
 				i(205147),	-- Ridged Shalewing
 				i(205148),	-- Dread Shalewing
 				i(205149),	-- Ravenous Shalewing
@@ -1382,18 +1328,18 @@ root(ROOTS.Unsorted, {
 				i(205152),	-- Skaarn
 				i(205153),	-- Mikah
 				i(205154),	-- Aquapo
-				i(205155),	-- Big Slick in the City
+
 				i(205156),	-- Heartseeker Moth
 				i(205157),	-- Undermoth
 				i(205159),	-- Teardrop Moth
 				i(205160),	-- Rithro
-				i(205161),	-- Plans: Heat-Resistant Rescue Ring
+
 				i(205162),	-- Nelthara
 				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
 				i(205164),	-- Senega
 				i(205165),	-- Axel
 				i(205166),	-- Kromos
-				i(205168),	-- Hellsteel Impact Buckler
+
 				i(205169),	-- Glimmer Mushroom
 				i(205170),	-- 10.1 Precognition Embellishment [PH]
 				i(205171),	-- 10.1 Not-Caster PvP Embellishment [PH] [NYI]
@@ -1404,8 +1350,7 @@ root(ROOTS.Unsorted, {
 				i(205176),	-- Design: 10.1 Not-Caster PvP Embellishment [PH]
 				i(205178),	-- Schematic: Quackomancy Cannon
 				i(205179),	-- Glimmerfish Scale
-				i(205185),	-- Muddy Key
-				i(205186),	-- Sticky Key
+
 				i(202171),	-- Obsidian Flightstone
 
 				i(204462),	-- Dracothyst Shard
@@ -1415,17 +1360,14 @@ root(ROOTS.Unsorted, {
 				i(204724),	-- Drake's Small Chest
 				i(204725),	-- Drake's Hefty Chest
 				i(204726),	-- Drake's Bountiful Chest
-				i(204798),	-- Inferno Armoredon
-				i(204994),	-- Shadowed Alloy
-				i(204995),	-- Shadowed Alloy
-				i(204996),	-- Shadowed Alloy
-				i(205039),	-- Shadowed Belt Buckle
+
+
+
+
 				i(205040),	-- Shadowed Belt Buckle
 				i(205041),	-- Shadowed Belt Buckle
 				i(205042),	-- Shadowed Belt Buckle
-				i(205043),	-- Shadowed Belt Buckle
-				i(205044),	-- Shadowed Belt Buckle
-				i(205046),	-- Shadowed Razing Annihilator
+
 				i(205047),	-- Shadowed Impact Buckler
 				i(205048),	-- Shadowed Impact Buckler
 				i(205049),	-- Shadowed Impact Buckler
@@ -1434,12 +1376,10 @@ root(ROOTS.Unsorted, {
 				i(205119),	-- Bashful
 				i(205121),	-- Tricky
 				i(205123),	-- Brulee
-				i(205137),	-- Plans: Shadowed Alloy
 				i(205142),	-- Pattern: Enormous Ball of Yarn
-				i(205143),	-- Plans: Shadowed Belt Buckle
-				i(205144),	-- Plans: Shadowed Razing Annihilator
-				i(205145),	-- Plans: Shadowed Impact Buckler
-				i(205168),	-- Shadowed Impact Buckler
+
+
+
 				i(205187),	-- Artisan's Consortium Flier
 				i(205188),	-- Barter Boulder
 				i(205189),	-- Arclight Welcome Letter
@@ -1450,28 +1390,27 @@ root(ROOTS.Unsorted, {
 				i(205194),	-- Fractured Crystalspine Quill
 				i(205195),	-- Drakeforged Magma Charm
 				i(205196),	-- Zaqali Hand Cauldron
-				i(205197),	-- Sporebat, Fire (Red) [PH]
+
 				i(205198),	-- Detailed Titan Key
 				i(205200),	-- Stirring Twilight Ember
 				i(205201),	-- Smoldering Howler Horn
 				i(205202),	-- Bright Titan Key
-				i(205203),	-- Api Biru Sporebat
+
 				i(205204),	-- Flaming sporebat - Subject  01
-				i(205205),	-- Sporebat, Fire (DeepRed) [PH]
+
 				i(205206),	-- Sporebat, Fire (Yellow) [PH]
-				i(205207),	-- Sporebat, Stone (Black) [PH]
+
 				i(205208),	-- Sporebat, Stone (Orange) [PH]
-				i(205209),	-- Sporebat, Stone (Red) [PH]
+
 				i(205211),	-- Nutrient Diluted Protofluid
 				i(205212),	-- Marrow-Ripened Slime
 				i(205213),	-- Suspicious Mold
 				i(205214),	-- Snubbed Snail Shells
 				i(205216),	-- Gently Jostled Jewels
-				i(205217),	-- Sharpbeaks Feed
+
 				i(205219),	-- Broken Barter Boulder
 				i(205220),	-- Corroded Key
 				i(205225),	-- Aspects' Token of Merit
-				i(205226),	-- Cavern Racer's Purse
 				i(205229),	-- Magma Lure
 				i(205231),	-- Roggy
 				i(205232),	-- [DNT] REUSE
@@ -1486,8 +1425,7 @@ root(ROOTS.Unsorted, {
 				i(205242),	-- Serrated Stone
 				i(205243),	-- Spare Bow String
 				i(205244),	-- Rain-soaked pelt
-				i(205245),	-- Vicious War Snail
-				i(205246),	-- Vicious War Snail
+
 				i(205247),	-- Clinking Dirt-Covered Pouch
 				i(205248),	-- Clanging Dirt-Covered Pouch
 				i(205249),	-- Pungent Niffen Incense
@@ -1498,7 +1436,7 @@ root(ROOTS.Unsorted, {
 				i(205254),	-- Honorary Explorer's Compass
 
 				i(205256),	-- Satchel of Pilfered Recipes
-				i(192779),	-- Seething Slug
+
 				i(201957),	-- Thrall's Hearthstone
 				i(202025),	-- Keg of Ancestral Ale
 				i(202026),	-- Durotar Coast Crab
@@ -1521,7 +1459,7 @@ root(ROOTS.Unsorted, {
 				i(202709),	-- Spicy Seared Talbuk Steak
 				i(202710),	-- Grilled Southfury Salmon
 
-				i(203395),	-- Research Journal
+
 				i(203679),	-- Ancestral Bloodhoof Totem
 				i(203689),	-- Horn Signet of Tetsos
 				i(203692),	-- Horn Signet of Arrosh
@@ -1545,13 +1483,13 @@ root(ROOTS.Unsorted, {
 				i(205120),	-- Thimblerig
 				i(205138),	-- Pattern: Medical Wrap Kit
 				i(205170),	-- Statuette of the Forethoughtful Fiend
-				i(205203),	-- Cobalt Shalewing
-				i(205205),	-- Scoria-Clad Sporebat
-				i(205207),	-- Morsel Sniffer
-				i(205209),	-- Boulder Hauler
-				i(205217),	-- Sharpbeak's Feed
+
+
+
+
+
 				i(205229),	-- Magma Serpent Lure
-				i(205233),	-- Obsidian Gladiator's Slitherdrake
+
 
 				i(205262),	-- Magmaclaw Lure
 				i(205263),	-- Empowered Flightstone
@@ -1574,11 +1512,11 @@ root(ROOTS.Unsorted, {
 				i(205284),	-- Schematic: Obsidian Combatant's Mail Goggles
 				i(205285),	-- Schematic: Obsidian Combatant's Plate Goggles
 				i(205286),	-- Loamm Niffen Tabard
-				i(205288),	-- Buried Niffen Collection
+
 				i(205289),	-- Crimson Equipment Chest
 				i(205290),	-- Greatcloak of Spun Marrow
 				i(205291),	-- Garrison General's Cape
-				i(205292),	-- Kairoktra's Mane
+
 				i(205293),	-- Emberdusk's Embrace
 				i(205294),	-- Sandals of Molten Scorn
 				i(205295),	-- Sediment Sifters
@@ -1600,7 +1538,6 @@ root(ROOTS.Unsorted, {
 				i(205311),	-- Magmascale Pauldrons
 				i(205312),	-- Subterrax's Stout Waistguard
 				i(205313),	-- Brulsef's Wristbraces
-				i(205314),	-- Greathelm of the Emissary
 				i(205315),	-- Colossian Cuirass
 				i(205316),	-- Crystal Stompers
 				i(205317),	-- Crystalpod Gauntlets
@@ -1630,8 +1567,8 @@ root(ROOTS.Unsorted, {
 				i(205341),	-- Winding Slitherdrake: Heavy Scales
 				i(205342),	-- Loamm Niffen Insignia
 				i(205343),	-- Crude Seal of Mak'aru
-				i(205346),	-- Hidden Niffen Treasure
-				i(205347),	-- Gathered Niffen Resources
+
+
 				i(205348),	-- Niffen Notebook of Jewelcrafting Knowledge
 				i(205349),	-- Niffen Notebook of Engineering Knowledge
 				i(205350),	-- Niffen Notebook of Leatherworking Knowledge
@@ -1958,7 +1895,7 @@ root(ROOTS.Unsorted, {
 				i(205679),	-- Obsidian Gladiator's Cloak
 				i(205680),	-- Obsidian Gladiator's Drape
 				i(205681),	-- Obsidian Gladiator's Shawl
-				i(202180),	-- Pipsee Cheese Snack
+
 				i(202438),	-- Manteau of the Onyx Crucible
 				i(202439),	-- Warbands of the Onyx Crucible
 				i(202440),	-- Insignia of the Onyx Crucible
@@ -2123,85 +2060,27 @@ root(ROOTS.Unsorted, {
 				i(205710),	-- Obsidian Gladiator's Emblem
 				i(205711),	-- Obsidian Gladiator's Medallion
 				i(205712),	-- Obsidian Gladiator's Sigil of Adaptation
-				i(205714),	-- Obsidian Aspirant's Plate Helm
-				i(205715),	-- Obsidian Aspirant's Silk Robe
-				i(205716),	-- Obsidian Aspirant's Plate Chestplate
-				i(205717),	-- Obsidian Aspirant's Chain Vest
-				i(205718),	-- Obsidian Aspirant's Leather Vest
-				i(205719),	-- Obsidian Aspirant's Plate Warboots
-				i(205720),	-- Obsidian Aspirant's Silk Treads
-				i(205721),	-- Obsidian Aspirant's Chain Sabatons
-				i(205722),	-- Obsidian Aspirant's Leather Boots
-				i(205723),	-- Obsidian Aspirant's Leather Gloves
-				i(205724),	-- Obsidian Aspirant's Plate Gauntlets
-				i(205725),	-- Obsidian Aspirant's Silk Gloves
-				i(205726),	-- Obsidian Aspirant's Chain Gauntlets
-				i(205727),	-- Obsidian Aspirant's Silk Hood
-				i(205728),	-- Obsidian Aspirant's Chain Helm
-				i(205729),	-- Obsidian Aspirant's Leather Helm
-				i(205730),	-- Obsidian Aspirant's Plate Legguards
-				i(205731),	-- Obsidian Aspirant's Silk Leggings
-				i(205732),	-- Obsidian Aspirant's Chain Leggings
-				i(205733),	-- Obsidian Aspirant's Leather Breeches
-				i(205734),	-- Obsidian Aspirant's Leather Spaulders
-				i(205735),	-- Obsidian Aspirant's Plate Shoulders
-				i(205736),	-- Obsidian Aspirant's Silk Mantle
-				i(205737),	-- Obsidian Aspirant's Chain Spaulders
-				i(205738),	-- Obsidian Aspirant's Plate Girdle
-				i(205739),	-- Obsidian Aspirant's Silk Cord
-				i(205740),	-- Obsidian Aspirant's Chain Belt
-				i(205741),	-- Obsidian Aspirant's Leather Belt
-				i(205742),	-- Obsidian Aspirant's Silk Wristwraps
-				i(205743),	-- Obsidian Aspirant's Plate Cuffs
-				i(205744),	-- Obsidian Aspirant's Chain Wristwraps
-				i(205745),	-- Obsidian Aspirant's Leather Wristwraps
-				i(205746),	-- Obsidian Aspirant's Plate Headguard
-				i(205747),	-- Obsidian Aspirant's Silk Vestments
-				i(205748),	-- Obsidian Aspirant's Plate Armor
-				i(205749),	-- Obsidian Aspirant's Chain Tunic
-				i(205750),	-- Obsidian Aspirant's Leather Tunic
-				i(205751),	-- Obsidian Aspirant's Plate Stompers
-				i(205752),	-- Obsidian Aspirant's Silk Footwraps
-				i(205753),	-- Obsidian Aspirant's Chain Stompers
-				i(205754),	-- Obsidian Aspirant's Leather Footpads
-				i(205755),	-- Obsidian Aspirant's Leather Grips
-				i(205756),	-- Obsidian Aspirant's Plate Handguards
-				i(205757),	-- Obsidian Aspirant's Silk Handwraps
-				i(205758),	-- Obsidian Aspirant's Chain Handguards
-				i(205759),	-- Obsidian Aspirant's Silk Cover
-				i(205760),	-- Obsidian Aspirant's Chain Headguard
-				i(205761),	-- Obsidian Aspirant's Leather Mask
-				i(205762),	-- Obsidian Aspirant's Plate Wargreaves
-				i(205763),	-- Obsidian Aspirant's Silk Legwraps
-				i(205764),	-- Obsidian Aspirant's Chain Wargreaves
-				i(205765),	-- Obsidian Aspirant's Leather Leggings
-				i(205766),	-- Obsidian Aspirant's Leather Mantle
-				i(205767),	-- Obsidian Aspirant's Plate Pauldrons
-				i(205768),	-- Obsidian Aspirant's Silk Shawl
-				i(205769),	-- Obsidian Aspirant's Chain Shoulderguards
-				i(205770),	-- Obsidian Aspirant's Plate Greatbelt
-				i(205771),	-- Obsidian Aspirant's Silk Belt
-				i(205772),	-- Obsidian Aspirant's Chain Clasp
-				i(205773),	-- Obsidian Aspirant's Leather Cord
-				i(205774),	-- Obsidian Aspirant's Silk Bindings
-				i(205775),	-- Obsidian Aspirant's Plate Armguards
-				i(205776),	-- Obsidian Aspirant's Chain Bracer
-				i(205777),	-- Obsidian Aspirant's Leather Armguards
-				i(205778),	-- Obsidian Aspirant's Badge of Ferocity
-				i(205779),	-- Obsidian Aspirant's Medallion
-				i(205780),	-- Obsidian Aspirant's Insignia of Alacrity
-				i(205781),	-- Obsidian Aspirant's Emblem
-				i(205782),	-- Obsidian Aspirant's Sigil of Adaptation
-				i(205783),	-- Obsidian Aspirant's Ring
-				i(205784),	-- Obsidian Aspirant's Band
-				i(205785),	-- Obsidian Aspirant's Signet
-				i(205786),	-- Obsidian Aspirant's Necklace
-				i(205787),	-- Obsidian Aspirant's Choker
-				i(205788),	-- Obsidian Aspirant's Pendant
-				i(205789),	-- Obsidian Aspirant's Cloak
-				i(205790),	-- Obsidian Aspirant's Drape
-				i(205791),	-- Obsidian Aspirant's Cape
-				i(205792),	-- Obsidian Aspirant's Greatcloak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				i(205793),	-- Skitter Souf-fly
 				i(205794),	-- Beetle Juice
 				i(205795),	-- Wriggling Worm
@@ -2285,24 +2164,24 @@ root(ROOTS.Unsorted, {
 				i(205876),	-- Highland Drake: Embodiment of the Elementium Drake
 				i(205877),	-- Adventurer's Footlocker
 				i(205878),	-- Obsidian Aspect Earthstone
-				i(205879),	-- Obsidian Aspirant's Battleaxe
-				i(205880),	-- Obsidian Aspirant's Dagger
-				i(205881),	-- Obsidian Aspirant's Mace
-				i(205882),	-- Obsidian Aspirant's Polearm
-				i(205883),	-- Obsidian Aspirant's Staff
-				i(205884),	-- Obsidian Aspirant's Greatsword
-				i(205885),	-- Obsidian Aspirant's Torch
-				i(205886),	-- Obsidian Aspirant's Warglaive
-				i(205887),	-- Obsidian Aspirant's Gavel
-				i(205888),	-- Obsidian Aspirant's Shield
-				i(205889),	-- Obsidian Aspirant's Ripper
-				i(205890),	-- Obsidian Aspirant's Recurve
-				i(205891),	-- Obsidian Aspirant's Longspear
-				i(205892),	-- Obsidian Aspirant's Hammer
-				i(205893),	-- Obsidian Aspirant's Knife
-				i(205894),	-- Obsidian Aspirant's Sword
-				i(205895),	-- Obsidian Aspirant's Pulverizer
-				i(205896),	-- Obsidian Aspirant's Blade
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				i(205898),	-- Niffen Cave Dive Key and shield disabled
 				i(205900),	-- Shimmering Draconic Gem
 				i(205901),	-- Crunchy Beetle
@@ -2335,6 +2214,130 @@ root(ROOTS.Unsorted, {
 				i(205933),	-- Add Keystone Affix: Entangling
 				i(205934),	-- Add Keystone Affix: Afflicted
 				i(205935),	-- Add Keystone Affix: Incorporeal
+				i(19442),	-- Recipe: Powerful Anti-Venom
+				i(111923),	-- Secret of Draenor Inscription
+				i(189895),	-- Watchman's Flare
+				i(189896),	-- Forsaken Cresset
+				i(189978),	-- Reins of the Magenta Cloud Serpent
+				i(190130),	-- Drape of Foreboding Mists
+				i(190133),	-- Honed Bastard Sword
+				i(190145),	-- Gilded Drakkonid Morningstar
+				i(190153),	-- Libram of Righteous Light
+				i(190154),	-- Tome of Sin'dorei Secrets
+				i(190164),	-- Arsenal: Blades of Elune
+				i(190438),	-- Crimson Nexus Crescent
+				i(190603),	-- Egbob
+				i(190842),	-- Fists of Polar Fury
+				i(190886),	-- Fine White Evening Gloves
+				i(190898),	-- Red Pith Helmet
+				i(200909),	-- Ensemble: Corrupted Runelord's Regalia
+				i(202568),	-- Scholar's Thinking Cudgel
+				i(202590),	-- Kazzara's Grafted Companion
+				i(202659),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Djaradin Elder - Armor - Mail - WRIST 2
+
+				i(204398),	-- Onyx Impostor's Birthright
+				i(204444),	-- Black Dragonflight's Spaulders
+				i(204445),	-- Black Dragonflight's Tabard
+				i(204446),	-- Black Dragonflight's Cape
+				i(204447),	-- Ensemble: Black Dragonflight's Vestments
+				i(204818),	-- Mallard Mortar
+
+				i(204909),	-- Statuette of Foreseen Power
+				i(204988),	-- Sulfur-Soaked Skins
+				i(205115),	-- Statuette of Foreseen Power
+				i(205151),	-- Salverun
+				i(205170),	-- Statuette of Foreseen Power
+				i(205171),	-- Figurine of the Gathering Storm
+				i(205172),	-- Figurine of the Gathering Storm
+				i(205173),	-- Figurine of the Gathering Storm
+				i(205175),	-- Design: Statuette of Foreseen Power
+				i(205176),	-- Design: Figurine of the Gathering Storm
+				i(205178),	-- Schematic: Mallard Mortar
+
+				i(205202),	-- Small Key
+				i(205204),	-- Flaming Shalewing - Subject  01
+
+				i(205207),	-- Morsel Sniffer Reins
+				i(205209),	-- Boulder Hauler Reins
+				i(205463),	-- Skornace's Lava Ball
+				i(205689),	-- Champion's Crystal
+				i(205876),	-- Highland Drake: Embodiment of the Hellforged
+				i(205878),	-- Obsidian Aspectral Earthstone
+				i(205898),	-- Metal Key and shield disabled
+				i(205936),	-- New Niffen No-Sniffin' Tonic
+				i(205937),	-- Newsy
+				i(205938),	-- Heated Titan Key
+				i(205939),	-- Iron Titan Key
+				i(205941),	-- Spit-covered Key
+				i(205954),	-- Three-Dimensional Compass
+				i(205955),	-- Azure Renewal Mantle
+				i(205956),	-- Azure Renewal Cape
+				i(205957),	-- Azure Renewal Tabard
+				i(205958),	-- Ensemble: Azure Renewal Finery
+				i(205962),	-- Echoing Storm Flightstone
+
+				i(205964),	-- Small Loammian Supply Pack
+				i(205965),	-- Large Loammian Supply Pack
+				i(205966),	-- Cache of Aberrus Treasures
+				i(205967),	-- Cache of Aberrus Treasures
+				i(205968),	-- Overflowing Loammian Supply Pack
+				i(205969),	-- Glowing Key
+				i(205970),	-- Azure Flightstone
+				i(205971),	-- Rock Breaking Digger
+				i(205972),	-- Decorative Niffen Sword
+				i(205973),	-- Rod of Crystalline Energies
+				i(205974),	-- Monstrous Gluttony
+				i(205975),	-- Hate-Sculpted Magma
+				i(205980),	-- Snail Lasso
+				i(205981),	-- Molten Primal Fang
+				i(205982),	-- Lost Dig Map
+				i(205983),	-- Scentsational Niffen Treasures
+				i(205984),	-- Bartered Dig Map
+				i(205985),	-- Loamm Niffen Insignia
+				i(205986),	-- Well-Worn Kiln
+				i(205987),	-- Brimstone Rescue Ring
+				i(205988),	-- Zaqali Elder Spear
+				i(205989),	-- Symbol of Friendship
+				i(205990),	-- Fierce Key
+				i(205991),	-- Shiny Token of Gratitude
+				i(205992),	-- Regurgitated Half-Digested Fish
+				i(205993),	-- Set Keystone Map: The Vortex Pinnacle
+				i(205994),	-- Tome of the Earth-Warder
+				i(205996),	-- Tome of the Earth-Warder
+				i(205997),	-- Tome of the Earth-Warder
+				i(205998),	-- Sign of Respect
+				i(205999),	-- Volcanic Sculptor
+				i(206003),	-- Horadric Haversack
+				i(206004),	-- Enmity Cloak
+				i(206005),	-- Wirt's Leg
+				i(206006),	-- Earth-Warder's Thanks
+				i(206007),	-- Treasure Nabbin' Bag
+				i(206008),	-- Nightmare Banner
+				i(206009),	-- Ouroboros Tablet
+				i(206010),	-- Designs of Flesh
+				i(206011),	-- Designs of Bone
+				i(206012),	-- Designs of Mind
+				i(206013),	-- Designs of Soul
+				i(206014),	-- Ouroboros Tablet
+				i(206015),	-- Ouroboros Tablet
+				i(206016),	-- Ouroboros Tablet
+				i(206017),	-- Ouroboros Tablet
+				i(206018),	-- Baa'lial Soulstone
+				i(206019),	-- Abandoned Reserve Chute
+				i(206020),	-- Enmity Hood
+				i(206021),	-- Kob'rok's Luminescent Scale
+				i(206025),	-- Used Medical Wrap Kit
+				i(206026),	-- Ensemble: Enmity Hood and Cloak
+
+				i(206028),	-- Chest of Gold
+				i(206030),	-- Exquisitely Embroidered Banner
+				i(206031),	-- Intricate Zaqali Runes
+				i(206034),	-- Hissing Rune Draft
+				i(206035),	-- Ancient Research
+				i(206037),	-- Ruby Flightstone
+
+				i(206039),	-- Enmity Bundle
+
 			}),
 		})),
 		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {
@@ -2351,15 +2354,6 @@ root(ROOTS.Unsorted, {
 				i(204192),	-- Ascendancy
 				i(203680),	-- Totem Toss
 			}),
-			filter(COSMETIC, {
-				-- NYI Ensembles
-				i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
-				i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
-				i(203213),	-- Ensemble: Lion's Heritage White Armor Set
-				i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
-				i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
-				i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
-			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
 				i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
@@ -2369,7 +2363,7 @@ root(ROOTS.Unsorted, {
 				i(198138),	-- Lightning-Infused Rock
 				i(198834),	-- Scribbled Bark Chunks
 				i(202075),	-- Temp Currency
-				i(202180),	-- Ripe Burcicle Berry
+
 				i(202181),	-- Best-root Tuber
 				i(202185),	-- Chillwrought Worm Meat
 				i(202202),	-- Revealing Mask
@@ -2381,26 +2375,6 @@ root(ROOTS.Unsorted, {
 				i(202620),	-- Toxin Antidote
 				i(202642),	-- Proto-Killing Spear
 				i(202647),	-- Stolen Goods
-				i(202663),	-- [DNT] Dragonscale Expedition Item 01
-				i(202671),	-- [DNT] Dragonscale Expedition Item 02
-				i(202672),	-- [DNT] Dragonscale Expedition Item 03
-				i(202673),	-- [DNT] Dragonscale Expedition Item 04
-				i(202674),	-- [DNT] Dragonscale Expedition Item 05
-				i(202675),	-- [DNT] Maruuk Centaur Item 01
-				i(202676),	-- [DNT] Maruuk Centaur Item 02
-				i(202677),	-- [DNT] Maruuk Centaur Item 03
-				i(202678),	-- [DNT] Maruuk Centaur Item 04
-				i(202679),	-- [DNT] Maruuk Centaur Item 05
-				i(202680),	-- [DNT] Iskaara Tuskarr Item 01
-				i(202681),	-- [DNT] Iskaara Tuskarr Item 02
-				i(202682),	-- [DNT] Iskaara Tuskarr Item 03
-				i(202683),	-- [DNT] Iskaara Tuskarr Item 04
-				i(202684),	-- [DNT] Iskaara Tuskarr Item 05
-				i(202685),	-- [DNT] Valdrakken Accord Item 01
-				i(202686),	-- [DNT] Valdrakken Accord Item 02
-				i(202687),	-- [DNT] Valdrakken Accord Item 03
-				i(202688),	-- [DNT] Valdrakken Accord Item 04
-				i(202689),	-- [DNT] Valdrakken Accord Item 05
 				i(202868),	-- Mender's Signal
 				i(202874),	-- Healing Draught
 				i(203210),	-- Dragonscale Supply Box
@@ -2415,7 +2389,6 @@ root(ROOTS.Unsorted, {
 				i(203466),	-- Dragonscale Surplus Crate
 				i(203651),	-- Saza's Blade
 				i(203657),	-- Toxin Antidote
-				i(203687),	-- Dusty Vase
 				i(203724),	-- Field Medic's Hazard Payout
 				i(203730),	-- Rustic Winterpelt Supplies
 				i(203997),	-- Raw Argali Flank
@@ -2428,31 +2401,6 @@ root(ROOTS.Unsorted, {
 				i(204239),	-- Shadowy Mojo Crystal
 				i(204244),	-- Breathing Mojo Crystal
 				i(204245),	-- Hateful Mojo Crystal
-				-- Community Feast
-				i(204281),	-- Thousandbite Piranha Collar
-				i(204282),	-- Lunker Bits
-				i(204283),	-- Skrog Liver Oil
-				i(204284),	-- Norukk's "All-Purpose" Fish Powder
-				i(204285),	-- Fermented Mackerel Paste
-				i(204286),	-- Deepsquid Ink
-				i(204287),	-- Island Crab Jerky
-				i(204288),	-- Eye of Bass
-				i(204289),	-- Seven Spices Bruffalon
-				i(204290),	-- Dragonflame Argali
-				i(204291),	-- Thrice-Charred Mammoth Ribs
-				i(204292),	-- "Volcano" Duck
-				i(204293),	-- Greenberry
-				i(204294),	-- Fresh Dragon Fruit
-				i(204295),	-- Juicy Bushfruit
-				i(204296),	-- Dried Coldsnap Sagittate
-				i(204297),	-- Exquisite Ohn'ahran Potato
-				i(204298),	-- Flaky Pastry Dough
-				i(204299),	-- Dark Thaldraszian Cocoa Powder
-				i(204300),	-- Four-Cheese Blend
-				i(204301),	-- Rations: Scorpid Surprise
-				i(204302),	-- Rations: Undermine Clam Chowder
-				i(204303),	-- Rations: Westfall Stew
-				i(204304),	-- Rations: Dragonbreath Chili
 				--
 				i(204307),	-- Ornate Bronze Lockbox
 				i(204310),	-- Mycelial Threads
@@ -2463,7 +2411,6 @@ root(ROOTS.Unsorted, {
 				i(114942),	-- Cracked Draenic Mortar
 				i(204343),	-- Trusty Dragonkin Rake
 				i(204442),	-- Clump of Tar
-				i(204443),	-- Blacksteel Hammer
 				i(204561),	-- Primalist Cache Key
 				i(204632),	-- Tectonic Rock Fragment
 				i(204636),	-- Snarfang's Stomach Sac
@@ -2510,9 +2457,6 @@ root(ROOTS.Unsorted, {
 				q(73049),	--
 				q(73050),	--
 				q(73051),	--
-				q(73078),	-- PTR:Dragonrider Racing - Stormsunder Crater Circuit
-				q(73079),	--
-				q(73080),	-- PTR:Dragonrider Racing - Aerie Chasm Cruise
 				q(73184),	--
 				q(73185),	--
 				q(73186),	--
@@ -2560,25 +2504,16 @@ root(ROOTS.Unsorted, {
 				q(74782),	--
 				q(74788),	--
 				q(74789),	--
-				q(74796),	-- A Dusty Vase
 				q(74875),	--
 				q(74890),	--
 				q(74891),	--
 				q(74955),	-- An Egg-centric Discovery
 				q(74970),	--
-				q(74978),	--
 				q(74994),	--
-				q(74996),	--
-				q(74997),	--
 				q(74998),	--
 				q(74999),	--
-				q(75000),	--
-				q(75001),	--
-				q(75002),	--
-				q(75003),	--
 				-- 10.0.7.47983
 				q(75034),	--
-				q(75047),	--
 				q(75052),	--
 				q(75065),	-- Campaign Testing - Dummy Quest
 				-- 10.0.7.48076
@@ -2594,8 +2529,6 @@ root(ROOTS.Unsorted, {
 				q(75251),	--
 				q(75252),	--
 				q(75253),	--
-				-- 10.0.7.48220
-				q(75263),	-- PTR:Reach South
 				-- 10.0.7.48295
 				q(75426),	--
 				q(75427),	--
@@ -2820,7 +2753,6 @@ root(ROOTS.Unsorted, {
 				-- 10.0.5.47799
 				q(66925),	-- [DNT] Boar-B-Q
 				q(72081),	--
-				q(72082),	--
 				q(72085),	--
 				q(72087),	--
 				q(72088),	--
@@ -2904,7 +2836,6 @@ root(ROOTS.Unsorted, {
 				q(72643),	-- Dragon Isles Supplies
 				q(72683),	--
 				q(72684),	--
-				q(72725),	-- A Shrouded Path Through Time
 				q(72731),	--
 				q(72732),	--
 				q(72733),	--
@@ -2915,7 +2846,6 @@ root(ROOTS.Unsorted, {
 				q(72775),	--
 				q(72780),	--
 				q(72804),	--
-				q(72810),	-- A Shattered Path Through Time
 				-- 10.0.2.46420
 				q(72817),	-- Dragonflight (70) E
 				q(72819),	-- Shadowlands (60) E
@@ -3184,6 +3114,9 @@ root(ROOTS.Unsorted, {
 				i(194079),	-- Pure Serevite Nugget
 				i(194040),	-- Slateskin Hide
 				i(194061),	-- Suffocating Spores
+				--
+				i(191882),	-- Serevite Repair Hammer
+				i(191883),	-- Serevite Repair Hammer
 			}),
 			n(QUESTS, {
 				-- 10.0.0.44649

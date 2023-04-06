@@ -430,11 +430,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
 					["lvl"] = lvlsquish(10, 10, 5),
+					-- #if NOT ANYCLASSIC
+					-- CRIEVE NOTE: This isn't collectible in Classic.
 					["groups"] = {
 						i(6653, {	-- Torch of the Dormant Flame
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
+					-- #endif
 				}),
 				q(1525, {	-- Call of Fire (3/5)
 					["qg"] = 5900,	-- Telf Joolam
@@ -483,9 +486,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 38.6, 58.2, DUROTAR },
 							["cr"] = 5893,	-- Minor Manifestation of Fire
 						}),
-						i(6653, {	-- Torch of the Dormant Flame
-							["timeline"] = { "removed 4.0.3" },
-						}),
 					},
 				}),
 				q(1527, {	-- Call of Fire (5/5)
@@ -504,9 +504,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(5176, {	-- Fire Totem
 							["description"] = "You must keep this in your bags forever.",
 						}),
+						-- #if NOT ANYCLASSIC
 						i(6654, {	-- Torch of the Eternal Flame
 							["timeline"] = { "removed 4.0.3" },
 						}),
+						-- #endif
 					},
 				}),
 				q(2985, {	-- Call of Water (1/9) [Durotar]

@@ -119,6 +119,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				}),
 			}),
 			n(VENDORS, {
+				--[[
 				n(199599, {	-- Calderax
 					["coord"] = { 44.3, 36.6, VALDRAKKEN },
 					["g"] = {
@@ -1054,6 +1055,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						})),
 					},
 				}),
+				--]]
 				n(197553, {	-- Fieldmaster Emberath
 					["coord"] = { 43.1, 42.4, VALDRAKKEN },
 					["g"] = {
@@ -1400,32 +1402,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						}),
 						filter(RECIPES, sharedData({
 							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
-							["timeline"] = { ADDED_10_0_5 },
+							["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
 						}, {
-							i(203380),	-- Technique: Crimson Combatant's Emblem
-							i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity
-							i(203378),	-- Technique: Crimson Combatant's Medallion
+							i(203380),	-- Technique: Crimson Combatant's Emblem (RECIPE!)
+							i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity (RECIPE!)
+							i(203378),	-- Technique: Crimson Combatant's Medallion (RECIPE!)
 						})),
 					},
 				}),
-				-- #IF BEFORE 10.0.5
-				n(196191, {	-- Malicia <Scourge of the Flightless>
-					["coord"] = { 43.4, 42.5, VALDRAKKEN },
-					["sym"] = {
-						{"select", "npcID", 197553 },	-- Select Fieldmaster Emberath
-						{"pop"},
-						{"not", "itemID", 202021 },		-- Not Breaker's Flag of Victory (TOY!)
-						{"not", "itemID", 201464 },		-- Not Flesh Parachute
-						{"not", "itemID", 198076 },		-- Not Pest Fogger
-						{"not", "itemID", 201414 },		-- Not Qalashi Wingshredder
-						{"not", "itemID", 202064 },		-- Not Warbanner of Ire
-						{"not", "itemID", 200953 },		-- Not Wild Dragon Fruit
-						{"not", "itemID", 200966 },		-- Not Wild Truffle
-						{"modID", 14}
-					},
-
-				}),
-				-- #ENDIF
+				--[[
 				n(199601, {	-- Seltherex
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {
@@ -1769,6 +1754,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						}),
 					},
 				}),
+				--]]
 			}),
 		})),
 	}),
