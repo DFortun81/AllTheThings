@@ -20,9 +20,11 @@ _.Zones =
 						{"select", "itemID", 3420 },    -- Black Rose
 						{"select", "itemID", 3424 },    -- Bouquet Of Black Roses
 						{"select", "itemID", 3423 },    -- Bouquet Of White Roses
-						{"select", "itemID", 142498 },    -- Purple Blossom
 						{"select", "itemID", 3419 },    -- Red Rose
 						{"select", "itemID", 3421 },    -- Simple Wildflowers
+					},
+					["groups"] = {
+						i(142498),	-- Purple Blossom
 					},
 				}),
 				n(92936,  {	-- Aimee <Pie, Pastry & Cakes>
