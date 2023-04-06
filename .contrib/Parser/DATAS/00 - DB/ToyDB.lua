@@ -1171,6 +1171,7 @@ i(204220);	-- Hraxian's Unbreakable Will
 ------------------
 i(205419);	-- Jrumm's Drum
 i(205463);	-- Skornace's Molten Pocket
+i(205963);	-- Sniffin' Salts
 i(204389);	-- Stone Breaker
 -- Unsorted --
 i(205045);	-- B.B.F. Fist
@@ -1183,7 +1184,6 @@ i(205688);	-- Glutinous Glitterscale Glob
 i(205796);	-- Molten Lava Pack
 i(205255);	-- Niffen Diggin' Mitts
 i(204818);	-- Quackomancy Cannon
-i(205963);	-- Sniffin' Salts
 i(205904);	-- Vibrant Clacking Claw
 
 

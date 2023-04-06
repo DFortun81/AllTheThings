@@ -6,11 +6,11 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 		["icon"] = "Interface\\Icons\\inv_serpentmountgladiator",
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
-				ach(15943, {	-- Obsidian Combatant [A]
+				ach(17727, {	-- Obsidian Combatant [A]
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
 				}),
-				ach(15942, {	-- Obsidian Combatant [H]
+				ach(17728, {	-- Obsidian Combatant [H]
 					["races"] = HORDE_ONLY,
 					["collectible"] = false,
 				}),
@@ -42,6 +42,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["races"] = HORDE_ONLY,
 				}),
 				-- Solo
+				ach(17801),		-- Legend: Dragonflight Season 2
 				ach(17767),		-- Obsidian Legend: Dragonflight Season 2
 				--ach(00000, {	-- Obsidian Soloist: Dragonflight Season 2
 				--	title(),	-- Obsidian Soloist <Name>

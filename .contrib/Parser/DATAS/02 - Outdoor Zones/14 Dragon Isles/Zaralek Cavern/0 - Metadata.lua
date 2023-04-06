@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
-		-- ["icon"] = ,
+		["icon"] = 5140838,
 		-- ["lore"] = "",
 		["timeline"] = { ADDED_10_1_0 },
 		["maps"] = {

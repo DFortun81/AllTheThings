@@ -681,6 +681,7 @@ i(202873);	-- Drooping Mushroom Cutting
 i(203396);	-- Displayed Armor Piece
 i(203394);	-- Elementally Charged Orb
 i(203385);	-- Flamesight Rune
+i(204694);	-- Greater Flamesight Rune
 i(203456);	-- Obsidian Prayer Beads
 i(202180);	-- Pipsee Cheese Snack
 i(205217);	-- Sharpbeak's Feed

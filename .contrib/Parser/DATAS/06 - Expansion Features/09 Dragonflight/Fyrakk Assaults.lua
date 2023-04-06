@@ -3,6 +3,10 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(FYRAKK_ASSAULTS, {
+		n(ACHIEVEMENTS, {
+			ach(17506),	-- Still Standing in the Fire
+			ach(17735),	-- We Didn't Start the Fire
+		}),
 		n(QUESTS, {
 			q(75375, {	-- Burning Ice
 				["provider"] = { "n", 203603 },	-- Brena

@@ -28,6 +28,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			ach(17513, {	-- Dragon Glyphs: Zaqali Caldera
 				["coord"] = { 30.5, 45.3, ZARALEK_CAVERN },
 			}),
+			pvp(ach(17851)),	-- Tour of Duty: Zaralek Cavern
 			ach(18150, {	-- Zaralek Caverns Glyph Hunter
 				["sym"] = {{"meta_achievement",
 					17517,	-- Dragon Glyphs: Aberrus Approach
@@ -40,9 +41,32 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					17513,	-- Dragon Glyphs: Zaqali Caldera
 				}},
 			}),
-			ach(17934, {	-- Family Battler of Zaralek Cavern
+
+			-- TODO:
+			battlepet(ach(17934, {	-- Family Battler of Zaralek Cavern
 				i(193377),	-- Gerald (PET!)
-			}),
+			})),
+			ach(17739),	-- Embers of Neltharion
+			ach(17741),	-- Slow and Steady Wins the Race
+			ach(17781),	-- The Smell of Money
+			ach(17766),	-- Explore Zaralek Cavern
+			ach(17783),	-- Adventurer of Zaralek Cavern
+			ach(17785),	-- Que Zara(lek), Zara(lek)
+			ach(17786),	-- Treasures of Zaralek Cavern
+			ach(17879),	-- Zaralek Cavern Safari
+			ach(17880),	-- Battle in Zaralek Cavern
+			ach(17881),	-- Aquatic Battler of Zaralek Cavern
+			ach(17882),	-- Beast Battler of Zaralek Cavern
+			ach(17883),	-- Critter Battler of Zaralek Cavern
+			ach(17890),	-- Dragonkin Battler of Zaralek Cavern
+			ach(17904),	-- Elemental Battler of Zaralek Cavern
+			ach(17905),	-- Flying Battler of Zaralek Cavern
+			ach(17915),	-- Humanoid Battler of Zaralek Cavern
+			ach(17916),	-- Magic Battler of Zaralek Cavern
+			ach(17917),	-- Mechanical Battler of Zaralek Cavern
+			ach(17918),	-- Undead Battler of Zaralek Caverm
+			ach(17934),	-- Family Battler of Zaralek Cavern
+			ach(18100),	-- Cavern Clawbbering
 		}),
 	}),
 })));

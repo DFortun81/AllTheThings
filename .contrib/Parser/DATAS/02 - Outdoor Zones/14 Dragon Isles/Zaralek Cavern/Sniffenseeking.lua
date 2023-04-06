@@ -4,69 +4,85 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(SNIFFENSEEKING, {
-			n(BONUS_OBJECTIVES, {
-				q(76084, {	-- Frostfire Finesse
-					["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
-					["g"] = {
-						i(206002),	-- Flame-Engulfed Key Fragment
-						i(206001),	-- Frost-Encased Key Fragment
-						i(206000),	-- Frostfire Key
-					},
+			["description"] = "",
+			["cost"] = {
+				{ "i", 205982, 1 },	-- 1x Lost Dig Map
+				{ "i", 205984, 1 },	-- 1x Bartered Dig Map
+			},
+			["g"] = {
+				n(ACHIEVEMENTS, {
+					-- TODO
+					ach(18255),	-- Proof of Myrrit
+					ach(18257),	-- Can You Dig It?
+					ach(18271),	-- He'sSss All Mine
+					ach(18284),	-- A Mole's Best Friend
+					ach(17832),	-- Sniffen Around
+					ach(17833),	-- Sniffen Sage
 				}),
-				q(75619, {	-- Thieving Critters
-					["coord"] = { 56.6, 58.5, ZARALEK_CAVERN },
-					["g"] = {
-						i(205185),	-- Muddy Key
-						i(205186),	-- Sticky Key
-					},
+				n(BONUS_OBJECTIVES, {
+					q(76084, {	-- Frostfire Finesse
+						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
+						["g"] = {
+							i(206002),	-- Flame-Engulfed Key Fragment
+							i(206001),	-- Frost-Encased Key Fragment
+							i(206000),	-- Frostfire Key
+						},
+					}),
+					q(75619, {	-- Thieving Critters
+						["coord"] = { 56.6, 58.5, ZARALEK_CAVERN },
+						["g"] = {
+							i(205185),	-- Muddy Key
+							i(205186),	-- Sticky Key
+						},
+					}),
+					q(75397, {	-- Those Rascally Worms
+						["coord"] = { 57.3, 51.4, ZARALEK_CAVERN },
+					}),
+					q(75390, {	-- Vertical Anomaly
+						["coord"] = { 54.6, 49.5, ZARALEK_CAVERN },
+						["g"] = {
+							i(203655),	-- Waterlogged Key
+						},
+					}),
 				}),
-				q(75397, {	-- Those Rascally Worms
-					["coord"] = { 57.3, 51.4, ZARALEK_CAVERN },
+				n(QUESTS, {
+					q(74876, {	-- The Buddy System
+						["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+						["provider"] = { "n", 201426 },	-- Myrrit
+						["coord"] = { 55.6, 57.4, ZARALEK_CAVERN },
+					}),
+					q(75459, {	-- Brand New Digs
+						["coord"] = { 55.9, 49.9, ZARALEK_CAVERN },
+						["g"] = {
+							i(204867),	-- Metal Key
+						},
+					}),
+					q(74877, {	-- Best Friends
+						["sourceQuests"] = {
+							74876,	-- The Buddy System
+							75459,	-- Brand New Digs
+						},
+						["provider"] = { "n", 201426 },	-- Myrrit
+						["coord"] = { 55.6, 57.4, ZARALEK_CAVERN },
+						["cost"] = { { "i", 204791, 1 } },	-- 1x Squishy Snack
+					}),
+					q(74953, {	-- The Heavy Crown
+						["sourceQuests"] = { 74877 },	-- Best Friends
+						["provider"] = { "n", 201426 },	-- Myrrit
+						["coord"] = { 55.6, 57.4, ZARALEK_CAVERN },
+					}),
+					q(74878, {	-- Old Friends, Dear Friends
+						["sourceQuests"] = { 74953 },	-- The Heavy Crown
+						["provider"] = { "n", 202766 },	-- Myrrit
+						["coord"] = { 54.6, 54.4, ZARALEK_CAVERN },
+					}),
 				}),
-				q(75390, {	-- Vertical Anomaly
-					["coord"] = { 54.6, 49.5, ZARALEK_CAVERN },
-					["g"] = {
-						i(203655),	-- Waterlogged Key
-					},
+				n(REWARDS, {
+					i(205288),	-- Buried Niffen Collection (Frostfire)
+					i(205347),	-- Gathered Niffen Resources (Thieving Critters)
+					i(205346),	-- Hidden Niffen Treasure (Wroms, Vertical)
 				}),
-			}),
-			n(QUESTS, {
-				q(74876, {	-- The Buddy System
-					["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-					["provider"] = { "n", 201426 },	-- Myrrit
-					["coord"] = { 55.6, 57.4, ZARALEK_CAVERN },
-				}),
-				q(75459, {	-- Brand New Digs
-					["coord"] = { 55.9, 49.9, ZARALEK_CAVERN },
-					["g"] = {
-						i(204867),	-- Metal Key
-					},
-				}),
-				q(74877, {	-- Best Friends
-					["sourceQuests"] = {
-						74876,	-- The Buddy System
-						75459,	-- Brand New Digs
-					},
-					["provider"] = { "n", 201426 },	-- Myrrit
-					["coord"] = { 55.6, 57.4, ZARALEK_CAVERN },
-					["cost"] = { { "i", 204791, 1 } },	-- 1x Squishy Snack
-				}),
-				q(74953, {	-- The Heavy Crown
-					["sourceQuests"] = { 74877 },	-- Best Friends
-					["provider"] = { "n", 201426 },	-- Myrrit
-					["coord"] = { 55.6, 57.4, ZARALEK_CAVERN },
-				}),
-				q(74878, {	-- Old Friends, Dear Friends
-					["sourceQuests"] = { 74953 },	-- The Heavy Crown
-					["provider"] = { "n", 202766 },	-- Myrrit
-					["coord"] = { 54.6, 54.4, ZARALEK_CAVERN },
-				}),
-			}),
-			n(REWARDS, {
-				i(205346),	-- Hidden Niffen Treasure (Wroms, Vertical)
-				i(205288),	-- Buried Niffen Collection (Frostfire)
-				i(205347),	-- Gathered Niffen Resources (Thieving Critters)
-			}),
+			},
 		}),
 	}),
 })));

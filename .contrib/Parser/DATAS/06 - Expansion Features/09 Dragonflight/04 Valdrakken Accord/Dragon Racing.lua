@@ -162,16 +162,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						["coord"] = { 39.0, 49.8, ZARALEK_CAVERN },
 						["timeline"] = { ADDED_10_1_0 },
 					}),
+					q(75123, {	-- Dragonrider Racing - Loamm Roamm
+						["coord"] = { 58.1, 57.6, ZARALEK_CAVERN },
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 					q(75122, {	-- Dragonrider Racing - Shimmering Slalom
 						["coord"] = { 58.6, 45.0, ZARALEK_CAVERN },
 						["timeline"] = { ADDED_10_1_0 },
 					}),
 					q(75124, {	-- Dragonrider Racing - Sulfur Sprint
 						["coord"] = { 51.3, 46.6, ZARALEK_CAVERN },
-						["timeline"] = { ADDED_10_1_0 },
-					}),
-					q(75123, {	-- Dragonrider Racing - Zaralek Zigzag
-						["coord"] = { 58.1, 57.6, ZARALEK_CAVERN },
 						["timeline"] = { ADDED_10_1_0 },
 					}),
 				}),

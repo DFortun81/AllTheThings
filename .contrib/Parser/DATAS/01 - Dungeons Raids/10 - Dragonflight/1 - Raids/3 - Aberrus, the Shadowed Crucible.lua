@@ -4,7 +4,7 @@
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	inst(1208, {	-- Aberrus, the Shadowed Crucible
 		["isRaid"] = true,
-		-- ["coord"] = { 73.0, 55.7, ZARALEK_CAVERN },
+		["coord"] = { 48.6, 10.2, ZARALEK_CAVERN },
 		["order"] = "02",
 		["maps"] = {
 			2166,	-- Molten Crucible
@@ -15,6 +15,39 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(17765),	-- What We Wear In The Shadowflame
+				ach(17877),	-- We'll Never See That Again, Surely
+				ach(18149),	-- Objects in Transit May Shatter
+				ach(18151),	-- Mythic: Kazzara, the Hellforged
+				ach(18152),	-- Mythic: The Amalgamation Chamber
+				ach(18153),	-- Mythic: The Forgotten Experiments
+				ach(18154),	-- Mythic: Assault of the Zaqali
+				ach(18155),	-- Mythic: Rashok, the Elder
+				ach(18156),	-- Mythic: The Vigilant Steward, Zskarn
+				ach(18157),	-- Mythic: Magmorax
+				ach(18158),	-- Mythic: Echo of Neltharion
+				ach(18159),	-- Mythic: Scalecommander Sarkareth
+				ach(18160),	-- Aberrus, the Shadowed Crucible
+				ach(18161),	-- Heroic: Aberrus, the Shadowed Crucible
+				ach(18162),	-- Mythic: Aberrus, the Shadowed Crucible
+				ach(18163),	-- Discarded Works
+				ach(18164),	-- Fury of Giants
+				ach(18165),	-- Neltharion's Shadow
+				ach(18167),	-- Edge of the Void
+				ach(18168),	-- I'll make my own Shadowflame
+				ach(18172),	-- Escar-Go-Go-Go
+				ach(18173),	-- Tabula Rasa
+				ach(18176),	-- Hall of Fame: Scalecommander Sarkareth
+				ach(18177),	-- Aberrus, the Shadowed Crucible Guild Run
+				ach(18178),	-- Heroic: Aberrus, the Shadowed Crucible Guild Run
+				ach(18179),	-- Mythic: Scalecommander Sarkareth Guild Run
+				ach(18193),	-- Eggscellent Eggsecution
+				ach(18251),	-- Glory of the Aberrus Raider
+				ach(18253),	-- Ahead of the Curve: Scalecommander Sarkareth
+				ach(18254),	-- Cutting Edge: Scalecommander Sarkareth
+				ach(18228),	-- Are You Even Trying?
+				ach(18229),	-- Cosplate
+				ach(18230),	-- Whac-A-Swog
 				i(205205),	-- Shadowflame Shalewing (MOUNT!)
 			}),
 			n(COMMON_BOSS_DROPS, {

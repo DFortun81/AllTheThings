@@ -1340,8 +1340,92 @@ i(0, 3471);	-- Gilded Mechafrog
 ------------------
 -- PATCH 10.1.0 --
 ------------------
+i(205119, 3536);	-- Bashful
+i(205123, 3540);	-- Brulee
+i(205118, 3535);	-- Diamondshell
 i(193377, 3294);	-- Gerald
+i(205050, 3528);	-- Paulie
+i(205051, 3529);	-- Rango
+i(205120, 3537);	-- Thimblerig
+-- UNSORTED --
+i(205054, 3532);	-- Amador
+i(205114, 3533);	-- Brul
+i(205116, 3534);	-- Jerrie
+i(205052, 3530);	-- Miloh
+i(205122, 3539);	-- Roseshell
+i(205053, 3531);	-- Rusty
+i(205121, 3538);	-- Tricky
+--[[
+p(3477),	-- Puddlehopper
+p(3478),	-- Rock Martin
+p(3479),	-- Yellabon
+p(3480),	-- Endmite
+p(3481),	-- Stonewhisker
+p(3482),	-- Cobbleshell
+p(3483),	-- Boulderfang
+p(3484),	-- Slabwing
+p(3485),	-- Hollow Moth
+p(3486),	-- Lithengale
+p(3487),	-- Scarlapod
+p(3488),	-- Deepridger
+p(3489),	-- Sunglow Cobra
+p(3490),	-- Ebonwing Moth
+p(3493),	-- Roland
+p(3511),	-- Blaise
+p(3512),	-- Ambre
+p(3513),	-- Azure Swoglet
+p(3514),	-- Emerald Swoglet
+p(3515),	-- Karrit
+p(3516),	-- Crimson Swoglet
+p(3517),	-- Bronze Swoglet
+p(3518),	-- Lettuce
+p(3519),	-- Byrn
+p(3520),	-- Jade Skitterbug
+p(3521),	-- Lord Stantley
+p(3522),	-- Savage Lobstrok
+p(3523),	-- Cheddar
+p(3524),	-- Devourer Lobstrok
+p(3525),	-- Bestial Lurker
+p(3526),	-- Snapjaw Lurker
+p(3527),	-- Void Lurker
 
+
+
+p(3541),	-- Ridged Shalewing
+p(3542),	-- Dread Shalewing
+p(3543),	-- Ravenous Shalewing
+p(3544),	-- Shalewing Devourer
+p(3545),	-- Salverun \\ Jyfaar
+p(3546),	-- Skaarn
+p(3547),	-- Mikah
+p(3548),	-- Aquapo
+p(3549),	-- Heartseeker Moth
+p(3550),	-- Undermoth
+p(3551),	-- Teardrop Moth
+p(3552),	-- Rithro
+p(3553),	-- Nelthara
+p(3554),	-- Senega
+p(3555),	-- Axel
+p(3556),	-- Kromos
+10.1.0.48537
+p(3557),	-- Roggy
+p(3558),	-- Murrey
+p(3559),	-- Clawz
+p(3560),	-- Bassalt
+10.1.0.48661
+p(3565),	-- Fethres [Trainer]
+p(3566),	-- Beeks [Trainer]
+p(3567),	-- Talons [Trainer]
+p(3568),	-- Dustie
+p(3569),	-- Tempe
+p(3570),	-- Swoggy
+p(3571),	-- Brul'dan
+p(3572),	-- Lifft
+p(3573),	-- Swole
+10.1.0.48898
+p(3578),	-- Newsy
+p(3580),	-- Baa'lial
+--]]
 
 -- #if ANYCLASSIC
 -----------------
