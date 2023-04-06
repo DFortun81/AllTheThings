@@ -20,16 +20,11 @@ end
 
 -- Performance Cache
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
-local C_Item_IsDressableItemByID = C_Item.IsDressableItemByID;
 local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
-local C_TransmogCollection_GetItemInfo = C_TransmogCollection.GetItemInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
-local SetPortraitTexture = _G["SetPortraitTexture"];
-local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
-local EJ_GetCreatureInfo = _G["EJ_GetCreatureInfo"];
 local EJ_GetEncounterInfo = _G["EJ_GetEncounterInfo"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
 local GetAchievementInfo = _G["GetAchievementInfo"];
@@ -39,7 +34,6 @@ local GetDifficultyInfo = _G["GetDifficultyInfo"];
 local GetFactionInfoByID = _G["GetFactionInfoByID"];
 local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
-local GetItemSpecInfo = _G["GetItemSpecInfo"];
 local PlayerHasToy = _G["PlayerHasToy"];
 local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
@@ -2162,7 +2156,11 @@ app.SlotByInventoryType = setmetatable({}, {
 	end
 })
 end)();
-local function GetSourceID(itemLink)
+local GetSourceID;
+do
+local C_Item_IsDressableItemByID = C_Item.IsDressableItemByID;
+local C_TransmogCollection_GetItemInfo = C_TransmogCollection.GetItemInfo;
+GetSourceID = function(itemLink)
 	if C_Item_IsDressableItemByID(itemLink) then
 		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
 		local sourceID = select(2, C_TransmogCollection_GetItemInfo(itemLink));
@@ -2195,6 +2193,7 @@ local function GetSourceID(itemLink)
 		return nil, true;
 	end
 	return nil, false;
+end
 end
 -- verifies that an item group either has no sourceID or that its sourceID matches what the in-game API returns
 -- based on the itemID and modID of the item
@@ -2325,50 +2324,6 @@ local function SetIndicatorIcon(self, data)
 	local texture = app.GetIndicatorIcon(data);
 	if texture then
 		self:SetTexture(texture);
-		return true;
-	end
-end
-local function SetPortraitIcon(self, data)
-	local displayID = GetDisplayID(data);
-	if displayID then
-		SetPortraitTextureFromDisplayID(self, displayID);
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
-	elseif data.unit and not data.icon then
-		SetPortraitTexture(self, data.unit);
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
-	end
-
-	-- Fallback to a traditional icon.
-	if data.atlas then
-		self:SetAtlas(data.atlas);
-		self:SetTexCoord(0, 1, 0, 1);
-		if data["atlas-background"] then
-			self.Background:SetAtlas(data["atlas-background"]);
-			self.Background:SetWidth(self:GetHeight());
-			self.Background:Show();
-		end
-		if data["atlas-border"] then
-			self.Border:SetAtlas(data["atlas-border"]);
-			self.Border:SetWidth(self:GetHeight());
-			self.Border:Show();
-			if data["atlas-color"] then
-				local swatches = data["atlas-color"];
-				self.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
-			else
-				self.Border:SetVertexColor(1, 1, 1, 1.0);
-			end
-		end
-		return true;
-	elseif data.icon then
-		self:SetTexture(data.icon);
-		local texcoord = data.texcoord;
-		if texcoord then
-			self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-		else
-			self:SetTexCoord(0, 1, 0, 1);
-		end
 		return true;
 	end
 end
@@ -2523,7 +2478,10 @@ local function GetSpecsString(specs, includeNames, trim)
 	return table.concat(icons);
 end
 -- Returns proper, class-filtered specs for a given itemID
-local function GetFixedItemSpecInfo(itemID)
+local GetFixedItemSpecInfo;
+do
+local GetItemSpecInfo = GetItemSpecInfo;
+GetFixedItemSpecInfo = function(itemID)
 	if itemID then
 		local specs = GetItemSpecInfo(itemID);
 		if not specs or #specs < 1 then
@@ -2551,6 +2509,7 @@ local function GetFixedItemSpecInfo(itemID)
 			return specs;
 		end
 	end
+end
 end
 
 -- Quest Completion Lib
@@ -9134,6 +9093,7 @@ app.CreateAchievementCategory = function(id, t)
 end
 
 -- Achievement Criteria Lib
+local EJ_GetCreatureInfo = EJ_GetCreatureInfo;
 local function GetParentAchievementInfo(t, key)
 	local achievement = app.SearchForObject("achievementID", t.achievementID, "key");
 	if achievement then
@@ -10352,6 +10312,7 @@ end)();
 
 -- Encounter Lib
 (function()
+local EJ_GetCreatureInfo = EJ_GetCreatureInfo;
 local cache = app.CreateCache("encounterID");
 local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
@@ -15939,6 +15900,52 @@ local function AdjustRowIndent(row, indentAdjust)
 		local _, _, _, x = row.Label:GetPoint(1);
 		-- print("row label at",x)
 		row.Label:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
+	end
+end
+local SetPortraitTexture, SetPortraitTextureFromDisplayID
+	= SetPortraitTexture, SetPortraitTextureFromCreatureDisplayID;
+local function SetPortraitIcon(self, data)
+	local displayID = GetDisplayID(data);
+	if displayID then
+		SetPortraitTextureFromDisplayID(self, displayID);
+		self:SetTexCoord(0, 1, 0, 1);
+		return true;
+	elseif data.unit and not data.icon then
+		SetPortraitTexture(self, data.unit);
+		self:SetTexCoord(0, 1, 0, 1);
+		return true;
+	end
+
+	-- Fallback to a traditional icon.
+	if data.atlas then
+		self:SetAtlas(data.atlas);
+		self:SetTexCoord(0, 1, 0, 1);
+		if data["atlas-background"] then
+			self.Background:SetAtlas(data["atlas-background"]);
+			self.Background:SetWidth(self:GetHeight());
+			self.Background:Show();
+		end
+		if data["atlas-border"] then
+			self.Border:SetAtlas(data["atlas-border"]);
+			self.Border:SetWidth(self:GetHeight());
+			self.Border:Show();
+			if data["atlas-color"] then
+				local swatches = data["atlas-color"];
+				self.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
+			else
+				self.Border:SetVertexColor(1, 1, 1, 1.0);
+			end
+		end
+		return true;
+	elseif data.icon then
+		self:SetTexture(data.icon);
+		local texcoord = data.texcoord;
+		if texcoord then
+			self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+		else
+			self:SetTexCoord(0, 1, 0, 1);
+		end
+		return true;
 	end
 end
 local function SetRowData(self, row, data)
