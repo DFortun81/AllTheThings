@@ -2329,9 +2329,6 @@ root(ROOTS.Unsorted, {
 				q(73049),	--
 				q(73050),	--
 				q(73051),	--
-				q(73078),	-- PTR:Dragonrider Racing - Stormsunder Crater Circuit
-				q(73079),	--
-				q(73080),	-- PTR:Dragonrider Racing - Aerie Chasm Cruise
 				q(73184),	--
 				q(73185),	--
 				q(73186),	--
