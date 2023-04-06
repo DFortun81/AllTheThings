@@ -926,6 +926,12 @@ namespace ATT
             /// </summary>
             public static void DetermineSourceID(Dictionary<string, object> data)
             {
+                // Ignore assigning a SourceID if this build doesn't have Transmog
+                if (CURRENT_RELEASE_VERSION < ADDED_TRANSMOG_VERSION)
+                {
+                    return;
+                }
+
                 const bool DoSpammyDebugLogging = false;
                 decimal sourceIDKey = GetSourceIDKey(data);
                 if (sourceIDKey == 0) return;
