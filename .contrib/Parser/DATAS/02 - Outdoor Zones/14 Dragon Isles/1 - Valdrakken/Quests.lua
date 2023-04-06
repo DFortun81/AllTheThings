@@ -22,6 +22,101 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			}),
 		}),
 		n(QUESTS, {
+			header(HEADERS.Achievement, 17734, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Active Listening Skills
+				q(72411, {	-- Cause Without a Rebel
+					-- ["sourceQuests"] = {  },	--
+					["provider"] = { "n", 189842 },	-- Captain Drine
+					["coord"] = { 56.5, 40.1, VALDRAKKEN },
+				}),
+				q(72412, {	-- Explosive Interruption
+					["sourceQuests"] = { 72411 },	-- Cause Without a Rebel
+					["provider"] = { "n", 200754 },	-- Captain Drine
+					["coord"] = { 55.5, 33.8, VALDRAKKEN },
+				}),
+				q(72413, {	-- Irreconcilable Differences
+					["sourceQuests"] = { 72412 },	-- Explosive Interruption
+					["provider"] = { "n", 199397 },	-- Investigator Erima
+					["coord"] = { 46.4, 50.8, VALDRAKKEN },
+				}),
+				q(72414, {	-- Know Prisoners!
+					["sourceQuests"] = { 72412 },	-- Explosive Interruption
+					["provider"] = { "n", 199396 },	-- Maldra Flametongue
+					["coord"] = { 46.3, 50.7, VALDRAKKEN },
+					["g"] = {
+						i(202855),	-- Maldra's Ring of Elemental Binding
+					},
+				}),
+				q(72415, {	-- Rebel Rousing Writings
+					["sourceQuests"] = { 72412 },	-- Explosive Interruption
+					["provider"] = { "n", 199396 },	-- Maldra Flametongue
+					["coord"] = { 46.3, 50.7, VALDRAKKEN },
+					["g"] = {
+						i(202702),	-- The Dragonkin Voice 1: A Dragonkin's Worth
+						i(202699),	-- The Dragonkin Voice 2: 100 Centuries Abandoned
+						i(202700),	-- The Dragonkin Voice 3: 100 Centuries Independent
+						i(202698),	-- The Dragonkin Voice 4: Might & Right
+						i(202701),	-- The Dragonkin Voice 5: The Rebel Code
+					},
+				}),
+				q(72416, {	-- Temporary Accommodations
+					["sourceQuests"] = {
+						72413,	-- Irreconcilable Differences
+						72414,	-- Know Prisoners!
+						72415,	-- Rebel Rousing Writings
+					},
+					["provider"] = { "n", 199396 },	-- Maldra Flametongue
+					["coord"] = { 46.3, 50.7, THALDRASZUS },
+				}),
+				q(72417, {	-- Persistent Dissidents
+					["sourceQuests"] = { 72416 },	-- Temporary Accommodations
+					["provider"] = { "n", 199382 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 38.8, 52.5, THALDRASZUS },
+				}),
+				q(72418, {	-- Solicited Opinions
+					["sourceQuests"] = { 72417 },	-- Persistent Dissidents
+					["provider"] = { "n", 201211 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 38.8, 52.5, THALDRASZUS },
+				}),
+				q(72419, {	-- Cleaning up the Cliffraff
+					["sourceQuests"] = { 72418 },	-- Solicited Opinions
+					["provider"] = { "n", 200788 },	-- Captain Drime
+					["coord"] = { 38.8, 52.6, THALDRASZUS },
+				}),
+				q(72422, {	-- Stop the Presses
+					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
+					--["provider"] = { "n", 199301 },	-- Investigator Erima
+					--["coord"] = { 46.4, 55.9, THALDRASZUS },
+					["g"] = {
+						i(203390),	-- Maldra's Ring of Elemental Binding
+					},
+				}),
+				q(72421, {	-- The Quill to Power
+					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
+					--["provider"] = { "n", 199301 },	-- Investigator Erima
+					--["coord"] = { 46.4, 55.9, THALDRASZUS },
+				}),
+				q(72420, {	-- Wreckonciliation
+					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
+					["provider"] = { "n", 199301 },	-- Investigator Erima
+					["coord"] = { 46.4, 55.9, THALDRASZUS },
+					["g"] = {
+						i(203383),	-- Notes on Dragonkin Equality
+					},
+				}),
+				q(75230, {	-- Reconcilable Dissidents
+					["sourceQuests"] = {
+						72422,	-- Stop the Presses
+						72421,	-- The Quill to Power
+						72420,	-- Wreckonciliation
+					},
+					["provider"] = { "n", 200839 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 76.8, 33.5, VALDRAKKEN },
+					["g"] = {
+						ach(17734),	-- Active Listening Skills
+						title(498),	-- <Name> the Reconciler
+					},
+				}),
+			})),
 			header(HEADERS.Achievement, 16556, {	-- Great Gourmand of The Ruby Feast
 				["description"] = "Every Day a new sequence of Quests will appear.",
 				["g"] = {
@@ -228,14 +323,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["repeatable"] = true,
 				["timeline"] = { ADDED_10_0_7 },
 			}),
-
-			-- New Questline?
-			q(72411, {	-- Cause Without a Rebel
-				-- ["sourceQuests"] = {  },	--
-				["provider"] = { "n", 189842 },	-- Captain Drine
-				["coord"] = { 56.5, 40.1, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 },
-			}),
 		}),
 		n(QUESTS, sharedData({
 				["isWeekly"] = true,
@@ -244,66 +331,82 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy
 				["provider"] = { "n", 191957 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66864, {	-- Relic Recovery: Brackenhide Hollow
 				["provider"] = { "n", 191958 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66866, {	-- Relic Recovery: Halls of Infusion
 				["provider"] = { "n", 191957 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66860, {	-- Relic Recovery: Legacy of Tyr
 				["provider"] = { "n", 191958 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66861, {	-- Relic Recovery: Neltharus
 				["provider"] = { "n", 191958 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66865, {	-- Relic Recovery: The Azure Vault
 				["provider"] = { "n", 191957 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66863, {	-- Relic Recovery: The Nokhud Offensive
 				["provider"] = { "n", 191957 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66862, {	-- Relic Recovery: Ruby Life Pools
 				["provider"] = { "n", 191957 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66875, {	-- Preserving the Past: Algeth'ar Academy
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66872, {	-- Preserving the Past: Brackenhide Hollow
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66874, {	-- Preserving the Past: Halls of Infusion
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66868, {	-- Preserving the Past: Legacy of Tyr
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66869, {	-- Preserving the Past: Neltharus
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66870, {	-- Preserving the Past: Ruby Life Pools
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66873, {	-- Preserving the Past: The Azure Vault
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 			q(66871, {	-- Preserving the Past: The Nokhud Offensive
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 			}),
 		})),
 	}),
@@ -325,6 +428,18 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(67061),	-- triggered after 'Anything But a Breeze' (67068)
 		q(72010),	-- triggered after 'What a Long, Sweet Trip It's Been' (67071)
 		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel
+		-- During Solicited Opinions (72418)
+		q(75199),    -- Solicited Opinions question 3 answer 3
+		q(75198),    -- Solicited Opinions question 3 answer 2
+		q(75197),    -- Solicited Opinions question 3 answer 1
+		q(75196),    -- Solicited Opinions question 2 answer 3
+		q(75195),    -- Solicited Opinions question 2 answer 2
+		q(75194),    -- Solicited Opinions question 2 answer 1
+		q(75193),    -- Solicited Opinions question 1 answer 3
+		q(75192),    -- Solicited Opinions question 1 answer 2
+		q(75191),    -- Solicited Opinions question 1 answer 1
+		-- Stay awhile Listening
+		q(73960),	--
 	}),
 }));
 

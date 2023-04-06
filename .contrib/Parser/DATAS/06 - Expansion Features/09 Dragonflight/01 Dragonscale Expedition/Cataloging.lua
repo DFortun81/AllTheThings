@@ -80,31 +80,37 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 
 					-- The Waking Shores --
 				q(70075, {	-- Cataloging the Waking Shores
-					["coord"] = { 64.1, 58.3, THE_WAKING_SHORES }
+					["coord"] = { 64.1, 58.3, THE_WAKING_SHORES },
 				}),
 				q(70632, {	-- Cataloging the Waking Shores
-					["coord"] = { 55.9, 55.8, THE_WAKING_SHORES }
+					["coord"] = { 55.9, 55.8, THE_WAKING_SHORES },
 				}),
 
 					-- Ohn'ahran Plains --
 				q(70079, {	-- Cataloging the Ohn'ahran Plains
-					["coord"] = { 52.0, 56.8, OHNAHRAN_PLAINS }
+					["coord"] = { 52.0, 56.8, OHNAHRAN_PLAINS },
 				}),
 				q(70659, {	-- Cataloging the Ohn'ahran Plains
-					["coord"] = { 72.9, 72.8, OHNAHRAN_PLAINS }
+					["coord"] = { 72.9, 72.8, OHNAHRAN_PLAINS },
 				}),
 
 					-- The Azure Span --
 				q(70100, {	-- Cataloging the Azure Span
-					["coord"] = { 44.1, 60, THE_AZURE_SPAN }
+					["coord"] = { 44.1, 60.0, THE_AZURE_SPAN },
 				}),
 
 					-- Thaldraszus --
-				q(70110, {	-- Cataloging Thaldraszus
-					["coord"] = { 51, 42, THALDRASZUS }
-				}),
-				q(70699, {	-- Cataloging Thaldraszus
-					["coord"] = { 51, 42, THALDRASZUS }
+				--q(70110, {	-- Cataloging Thaldraszus
+				--	["coord"] = { 51, 42, THALDRASZUS },
+				--}),
+				--q(70699, {	-- Cataloging Thaldraszus
+				--	["coord"] = { 51, 42, THALDRASZUS },
+				--}),
+
+					-- Zaralek Cavern --
+				q(75126, {	-- Cataloging Zaralek Cavern
+					["coord"] = { 42.4, 73.8, ZARALEK_CAVERN },
+					["timeline"] = { ADDED_10_1_0 },
 				}),
 			})),
 		}),

@@ -107,7 +107,6 @@ i(197091, 69291);	-- Highland Drake: Silver and Blue Armor
 i(197093, 69294);	-- Highland Drake: Silver and Purple Armor
 i(197112, 69313);	-- Highland Drake: Single Horned Head
 i(197140, 69341);	-- Highland Drake: Small Spotted Pattern
-i(197109, 69310);	-- Highland Drake: Spiked Head
 i(197132, 69333);	-- Highland Drake: Spiked Cheek
 i(197150, 69351);	-- Highland Drake: Spiked Club Tail
 i(197134, 69335);	-- Highland Drake: Spiked Legs
@@ -287,3 +286,8 @@ i(197629, 69835);	-- Windborne Velocidrake: Spiked Neck
 i(202277, 73057);	-- Renewed Proto-Drake: Bruiser Horns
 i(202275, 73059);	-- Renewed Proto-Drake: Plated Jaw
 i(202280, 73060);	-- Renewed Proto-Drake: Pronged Tail
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(197109, 69310);	-- Highland Drake: Spiked Head

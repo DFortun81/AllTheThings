@@ -16,11 +16,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(202714),	-- M.U.S.T
 						},
 					}),
+					petbattle(q(75750, {	-- Are They Not Beautiful?
+						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
+					})),
 					q(75063, {	-- Ambergrease
 						["coord"] = { 50.4, 74.1, ZARALEK_CAVERN },
 					}),
 					q(75030, {	-- Crystal Catastrophe!
 						["coord"] = { 59.0, 45.6, ZARALEK_CAVERN },
+					}),
+					q(75344, {	-- Crystal Cracker
+						["coord"] = { 58.3, 62.3, ZARALEK_CAVERN },
 					}),
 					q(74292, {	-- Deephollow Mysteries
 						["coord"] = { 60.9, 53.8, ZARALEK_CAVERN },
@@ -40,6 +46,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(204344),	-- Conductive Lodestone
 						},
 					}),
+					q(74985, {	-- Like Moths to a Flame
+						["coord"] = { 49.1, 50.1, ZARALEK_CAVERN },
+					}),
 					q(75061, {	-- No Mushroom For Ever
 						["coord"] = { 54.1, 66.4, ZARALEK_CAVERN },
 					}),
@@ -48,6 +57,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75151, {	-- Redistributing the Remnants
 						["coord"] = { 52.9, 21.5, ZARALEK_CAVERN },
+					}),
+					q(75663, {	-- Restless Torment
+						["coord"] = { 51.2, 42.8, ZARALEK_CAVERN },
 					}),
 					q(75067, {	-- Rock Viper Roundup
 						["coord"] = { 45.2, 68.1, ZARALEK_CAVERN },
@@ -61,8 +73,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75155, {	-- Shadowflame Snuffer
 						["coord"] = { 52.9, 21.5, ZARALEK_CAVERN },
 					}),
+					q(75345, {	-- Shell Corporation
+						["coord"] = { 57.8, 61.0, ZARALEK_CAVERN },
+					}),
 					q(75128, {	-- Slime Ranching
 						["coord"] = { 51.3, 23.6, ZARALEK_CAVERN },
+					}),
+					q(73408, {	-- Sniffen 'em Out!
+						["coord"] = { 58.8, 39.9, ZARALEK_CAVERN },
+						["g"] = {
+							i(203013),	-- Niffen Incense
+						},
 					}),
 					q(75071, {	-- Sniffing Mice are Nice
 						["coord"] = { 51.3, 73.9, ZARALEK_CAVERN },

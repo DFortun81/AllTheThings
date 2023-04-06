@@ -1422,6 +1422,7 @@ app.L = {
 		[-1200] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_ring_4_omni",					-- Zskera Vaults
 		[-1201] = "Interface\\Icons\\inv_shadowflame_missile",										-- Researchers Under Fire Scenario
 		[-1202] = "Interface\\Icons\\inv_fyrakk_dragonbreath",										-- Fyrakk Assaults
+		[-1203] = "Interface\\Icons\\inv_pet_mole",													-- Sniffenseeking
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1972,6 +1973,7 @@ app.L = {
 		[-1200] = "Zskera Vaults",													-- Zskera Vaults
 		[-1201] = "Researchers Under Fire Scenario",								-- Researchers Under Fire Scenario
 		[-1202] = "Fyrakk Assaults",												-- Fyrakk Assaults
+		[-1203] = "Sniffenseeking",													-- Sniffenseeking
  	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",

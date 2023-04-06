@@ -7,6 +7,16 @@ local VOUCHER = 205453;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(VENDORS, {
+			n(203293, {	-- Floressa <Innkeeper>
+				["coord"] = { 56.2, 56.3, ZARALEK_CAVERN },
+				["g"] = {
+					i(204729),	-- Freshly Squeezed Mosswater
+					i(204730),	-- Grub Grub
+					i(205936),	-- New Niffen No-Sniffin' Tonic
+					i(204791),	-- Squishy Snack
+					i(204790),	-- Strong Sniffin' Soup Niffen
+				},
+			}),
 			n(203170, {	-- Kilnmaster Crubus
 				["coord"] = { 57.1, 55.0, ZARALEK_CAVERN },
 				["g"] = {
@@ -30,9 +40,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203615, {	-- Saccratros
 				["coord"] = { 55.9, 55.4, ZARALEK_CAVERN },
 				["g"] = {
-					i(205203, {	-- Api Biru Sporebat (MOUNT!)
-						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
-					}),
 					i(205118, {	-- Diamondshell (PET!)
 						["cost"] = { { "i", COVETED_BAUBLE, 50 } },
 					}),

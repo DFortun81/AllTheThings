@@ -1534,9 +1534,7 @@ i(0, 371571);		-- Dragon Isles Drake Model Test
 i(194106, 0);		-- Highland Drake
 i(192770, 0);		-- Noble Elderhorn				/	[PH] Moose Bull Black
 i(192804, 374263);	-- Restless Hornstrider			/	Restless Hornstrider
-i(192779, 374138);	-- Scorchpath					/	Scorchpath
 i(0, 372995);		-- Swift Spectral Drake
-i(0, 368893);		-- Winding Slitherdrake
 i(0, 376898);		-- [PH] Black Armored River Otter
 i(0, 376909);		-- [PH] Blue Armored River Otter
 i(198823, 385253);	-- [PH] Brown Wind Eagle		/	[PH] Brown Wind Eagle
@@ -1607,7 +1605,23 @@ i(192790, 374194);	-- Mossy Mammoth
 i(204382, 349935);	-- Noble Bruffalon
 i(204091, 400733);	-- Rocket Shredder 9001
 
-
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(204798, 406637);	-- Inferno Armoredon
+i(205233, 408977);	-- Obsidian Gladiator's Slitherdrake
+i(205205, 408649);	-- Shadowflame Shalewing
+i(205246, 409034);	-- Vicious War Snail [A]
+i(205245, 409032);	-- Vicious War Snail [H]
+i(204361, 368893);	-- Winding Slitherdrake
+-- Unsorted --
+i(205155, 408313);	-- Big Slick in the City
+i(205209, 408653);	-- Boulder Hauler
+i(205203, 408647);	-- Cobalt Shalewing
+i(206027, 411565);	-- Felcrystal Scorpion
+i(205197, 408627);	-- Igneous Shalewing
+i(205207, 408655);	-- Morsel Sniffer
+i(192779, 374138);	-- Seething Slug
 
 -- #if ANYCLASSIC
 -----------------

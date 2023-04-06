@@ -488,6 +488,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(202171),	-- Obsidian Flightstone
 				},
 			}),
+			q(75506, {	-- Shadowflame Crests
+				["sourceQuests"] = { 72658 },	-- Flightstones
+				["provider"] = { "n", 203404 },	-- Vaskarn
+				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
+				["g"] = {
+					i(204728),	-- Friendship Censer
+					i(202171),	-- Obsidian Flightstone
+				},
+			}),
 				-- 2 --
 			q(75665, {	-- A Worthy Ally: Loamm Niffen
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
@@ -653,10 +662,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			q(74861, {	-- An Unfriendly Confrontation
 				["sourceQuests"] = { 74860 },	-- A Friendly Introduction
-				["provider"] = { "n", 202587 },	-- Yarren
+				["provider"] = { "n", 202597 },	-- Yarren
 				["coord"] = { 51.0, 74.1, ZARALEK_CAVERN },
 			}),
-			q(74862, {	-- Mouse Rescuers
+			q(75462, {	-- Mouse Rescuers
 				["sourceQuests"] = { 74861 },	-- An Unfriendly Confrontation
 				["provider"] = { "n", 202600 },	-- Agrul
 				["coord"] = { 46.9, 79.6, ZARALEK_CAVERN },
@@ -695,6 +704,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 73046 },	-- Cavernous Capers
 				["provider"] = { "n", 200290 },	-- Voraxian
 				["coord"] = { 53.6, 79.5, ZARALEK_CAVERN },
+				["g"] = {
+					i(203395),	-- Research Journal
+				},
 			}),
 			q(73040, {	-- Bringing Disorder to Order
 				["sourceQuests"] = { 73046 },	-- Cavernous Capers
@@ -721,6 +733,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 73041 },	-- Respite
 				["provider"] = { "n", 200953 },	-- Earthmender Narvra
 				["coord"] = { 40.1, 68.3, ZARALEK_CAVERN },
+				["g"] = {
+					i(204334),	-- Waste Disposal Notes
+				},
 			}),
 			q(73043, {	-- A Ghastly Legacy
 				["sourceQuests"] = { 73042 },	-- A Tower Yonder
@@ -753,32 +768,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 
-			n(BONUS_OBJECTIVES, sharedData({ ["repeatable"] = true }, {
-				q(75455, {	-- Conspiracy of Flames
-					["coord"] = { 32.1, 42.7, ZARALEK_CAVERN },
-				}),
-				q(75451, {	-- Imperfect Balance
-					["coord"] = { 36.3, 52.2, ZARALEK_CAVERN },
-				}),
-				q(75454, {	-- Mortar Warfare
-					["coord"] = { 39.8, 43.7, ZARALEK_CAVERN },
-				}),
-				q(75450, {	-- Seismic Ceremony
-					["coord"] = { 34.1, 47.1, ZARALEK_CAVERN },
-				}),
-				q(75222, {	-- Shellfire
-					["coord"] = { 58.1, 49.5, ZARALEK_CAVERN },
-				}),
-				q(75370, {	-- Smellincense
-					["coord"] = { 60.8, 55.5, ZARALEK_CAVERN },
-				}),
-				q(75441, {	-- Smelly Scramble
-					["coord"] = { 57.6, 57.1, ZARALEK_CAVERN },
-				}),
-				q(75156, {	-- Stress Express
-					["coord"] = { 64.5, 51.4, ZARALEK_CAVERN },
-				}),
-			})),
+
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
+	m(ZARALEK_CAVERN, {
+		q(75658),	-- WQ Unlock?
+	}),
+}));

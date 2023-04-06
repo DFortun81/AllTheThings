@@ -14,6 +14,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 			2170,	-- Edge of Oblivion
 		},
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				i(205205),	-- Shadowflame Shalewing (MOUNT!)
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					201261,	-- Kazzara, the Hellforged

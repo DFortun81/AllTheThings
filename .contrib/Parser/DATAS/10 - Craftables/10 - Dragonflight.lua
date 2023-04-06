@@ -2956,6 +2956,11 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(75879, {["timeline"] = {ADDED_10_0_7}}),	-- Skinning Snarfang
 			q(75881, {["timeline"] = {ADDED_10_0_7}}),	-- Skinning Faunos
 			q(75884, {["timeline"] = {ADDED_10_0_7}}),	-- Skinning Gahz'raxes
+			q(74237, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Kob'rok
+			q(74236, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Magtembo
+			q(75873, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Emberdusk
+			q(75872, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Flowfy
+			q(74238, {["timeline"] = {ADDED_10_1_0}}),	-- Skinning Karokta
 		}),
 		prof(TAILORING, {
 			q(71946),	-- Timeweaving unlocked

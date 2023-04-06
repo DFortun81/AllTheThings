@@ -1177,11 +1177,15 @@ i(205045);	-- B.B.F. Fist
 i(205418);	-- Blazing Shadowflame Cinder
 i(205034);	-- Enormous Ball of Yarn
 i(205027);	-- Explorer's Banner
+i(206038);	-- Flamin' Ring of Flashiness
+i(206043);	-- Fyrakk's Frenzy
 i(205688);	-- Glutinous Glitterscale Glob
 i(205796);	-- Molten Lava Pack
 i(205255);	-- Niffen Diggin' Mitts
 i(204818);	-- Quackomancy Cannon
+i(205963);	-- Sniffin' Salts
 i(205904);	-- Vibrant Clacking Claw
+
 
 -- #if ANYCLASSIC
 -----------------
