@@ -22,7 +22,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			q(74775, {	-- Disciple of Fyrakk: Kretchenwrath
 				["provider"] = { "i", 204071 },	-- Head of Kretchenwrath
-				["maps"] = { THE_AZURE_SPAN },
+				["maps"] = { OHNAHRAN_PLAINS },
 				["g"] = {
 					i(204195),	-- Drake's Shadowflame Crest
 				}
@@ -41,7 +41,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 58.6, 34.3, THE_AZURE_SPAN },
 			}),
 			q(75239, {	-- Disciple of Fyrakk: Shadeisethal
-				["provider"] = { "i", i204683  },	-- Head of Shadeisethal
+				["provider"] = { "i", 204683 },	-- Head of Shadeisethal
 				["maps"] = { THE_AZURE_SPAN },
 				["g"] = {
 					i(204195),	-- Drake's Shadowflame Crest
@@ -74,7 +74,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		n(REWARDS, {
 			i(204076),	-- Drake's Shadowflame Crest Fragments
-			filter(BACK, {
+			n(BACK, {
 				i(204897),	-- Suffused Cloak
 				i(204898),	-- Suffused Drape
 				i(204896),	-- Suffused Greatcloak
@@ -183,7 +183,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 })));
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	m(ZARALEK_CAVERN, {
+	n(FYRAKK_ASSAULTS, {
 		q(75448),	-- Ward of Ingira Elite
 		q(75447),	-- Ward of Fyrakk Elite
 		--q(75887),	-- Fyrakk Activated?
