@@ -504,9 +504,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(5176, {	-- Fire Totem
 							["description"] = "You must keep this in your bags forever.",
 						}),
+						-- #if NOT ANYCLASSIC
 						i(6654, {	-- Torch of the Eternal Flame
 							["timeline"] = { "removed 4.0.3" },
 						}),
+						-- #endif
 					},
 				}),
 				q(2985, {	-- Call of Water (1/9) [Durotar]
