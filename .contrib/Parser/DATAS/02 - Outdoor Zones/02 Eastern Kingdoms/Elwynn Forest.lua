@@ -991,7 +991,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = 2,
 							["groups"] = {
 								objective(1, {	-- 0/8 Milly's Harvest
-									["provider"] = { "i", 11119 },	-- Milly's Harvest
+									["providers"] = {
+										{ "o", 161557 },	-- Milly's Harvest
+										{ "i",  11119 },	-- Milly's Harvest
+									},
 								}),
 							},
 						}),
