@@ -65,6 +65,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							},
 						}),
 						i(205984, {	-- Bartered Dig Map
+							["questID"] = 76077,
+							--["isWeekly"] = true,
 							["cost"] = {
 								{ "i", BARTER_BRICK, 2 },
 								{ "i", BARTER_PEBBLE, 99 },

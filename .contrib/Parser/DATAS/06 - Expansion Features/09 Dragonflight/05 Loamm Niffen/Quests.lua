@@ -12,7 +12,20 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["isWeekly"] = true,
 				["g"] = {
 					i(205983, {	-- Scentsational Niffen Treasures
-						i(205982),	-- Lost Dig Map
+						["sym"] = {
+							{"select", "mapID", ZARALEK_CAVERN },
+							{"pop"},
+							{"where", "headerID", WORLD_QUESTS },
+							{"pop"},
+							{"where", "headerID", REWARDS },
+							{"pop"},
+						},
+						["g"] = {
+							i(205982, {	-- Lost Dig Map
+								["questID"] = 75882,
+								--["isWeekly"] = true,
+							}),
+						},
 					}),
 				}
 			}),

@@ -851,27 +851,25 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(203430),	-- Ward of Igira
+
 				i(203442),	-- Snail Slime
 
 				i(203454),	-- Zaqali Equipment
 				i(203455),	-- Draketooth Fetish
 
 
-				i(203683),	-- Ward of Fyrakk
+
 				i(203706),	-- Hurricane Scepter
 				i(203707),	-- Water Bucket
 				i(203708),	-- Conch Whistle
 				i(203731),	-- Enchanted Bandage
-				i(204067),	-- Glowing Crystal
-				i(204069),	-- Sulfuric Crystal
-				i(204070),	-- Magma Crystal
+
 				i(204071),	-- Head of Kretchenwrath
 
 				i(204088),	-- Quartzite Spore Bile
 				i(204175),	-- Unknown Core
 				i(204178),	-- Snailcatcher Net
-				i(204184),	-- Ebon Eviscerator
+
 				i(204197),	-- Shard of an Earth Portal
 				i(204198),	-- Shard of an Fire Portal
 				i(204271),	-- Blacktalon Napalm
@@ -884,7 +882,7 @@ root(ROOTS.Unsorted, {
 				i(204329),	-- Petrified Spider Leg
 				i(204331),	-- Djaradin Pillar Shard
 
-				i(204342),	-- Questionable Jerky
+
 				i(204344),	-- Conductive Lodestone
 				i(204345),	-- Note to Disposal Site
 				i(204347),	-- Pool Contaminant
@@ -1211,7 +1209,6 @@ root(ROOTS.Unsorted, {
 
 				i(204871),	-- Recipe Rat
 				i(204872),	-- Ripped Recipe Scrap
-				i(204877),	-- 'The Resting Blade'
 				i(204883),	-- Titan Mining Tool
 				i(204884),	-- Titan Control Card
 				i(204885),	-- Boulder Breakdown Mixture
@@ -1345,17 +1342,7 @@ root(ROOTS.Unsorted, {
 				i(205175),	-- Design: 10.1 Precognition Embellishment [PH]
 				i(205176),	-- Design: 10.1 Not-Caster PvP Embellishment [PH]
 				i(205178),	-- Schematic: Quackomancy Cannon
-				i(205179),	-- Glimmerfish Scale
 
-				i(202171),	-- Obsidian Flightstone
-
-				i(204462),	-- Dracothyst Shard
-				i(204721),	-- Whelpling's Small Chest
-				i(204722),	-- Whelpling's Bountiful Chest
-				i(204723),	-- Whelpling's Hefty Chest
-				i(204724),	-- Drake's Small Chest
-				i(204725),	-- Drake's Hefty Chest
-				i(204726),	-- Drake's Bountiful Chest
 
 
 
@@ -1623,20 +1610,20 @@ root(ROOTS.Unsorted, {
 
 				i(205454),	-- Researchers Wheel Barrow
 				i(205456),	-- Lost Dragonscale
-				i(205457),	-- Delicate Crystal Shell
+
 				i(205458),	-- Lost Dragonscale
-				i(205459),	-- Luminous Gloop
-				i(205460),	-- Pulverized Living Earth
+
+
+
 				i(205461),	-- Vicious Stoneclaw
 				i(205462),	-- Scavenged Djaradin Relic
 
-				i(205464),	-- Granite Scales
-				i(205465),	-- Gleaming Rock Viper Eye
+
 				i(205466),	-- Regurgitated Spores
 				i(205467),	-- Preserved Krolusk Crest
 				i(205468),	-- Hooked Tail Claw
-				i(205469),	-- Serrated Sporebat Spine
-				i(205470),	-- Torn Deep Scales
+
+
 				i(205471),	-- Slimy Deepfish Fin
 				i(205472),	-- Wad of Sparkling Somethings
 				i(205473),	-- Obsidian Gladiator's Plate Chestguard
@@ -1999,9 +1986,9 @@ root(ROOTS.Unsorted, {
 				i(205695),	-- Dense Salamanther Skull
 				i(205696),	-- Amethyst Deceiver Mushroom
 				i(205697),	-- Gelatinous Egg Mass
-				i(205698),	-- Mangled Niffen Pack
+
 				i(205699),	-- Rock Worm Frills
-				i(205700),	-- Sensitive Scotopic Eye
+
 				i(205702),	-- Obsidian Gladiator's Ring
 				i(205703),	-- Obsidian Gladiator's Band
 				i(205704),	-- Obsidian Gladiator's Signet
@@ -2109,7 +2096,7 @@ root(ROOTS.Unsorted, {
 				i(205867),	-- Steaming Drake Heart
 				i(205868),	-- Cracked Chitin Carapace
 				i(205869),	-- Aromatic Royal Jelly
-				i(205870),	-- Glittering Spore Dust
+
 				i(205871),	-- Glowing Underlight Wings
 				i(205872),	-- Earthvermin Fluff
 				i(205873),	-- Foraged Rare Fungi
@@ -2257,7 +2244,6 @@ root(ROOTS.Unsorted, {
 				i(205994),	-- Tome of the Earth-Warder
 				i(205996),	-- Tome of the Earth-Warder
 				i(205997),	-- Tome of the Earth-Warder
-				i(205998),	-- Sign of Respect
 				i(205999),	-- Volcanic Sculptor
 				i(206003),	-- Horadric Haversack
 				i(206004),	-- Enmity Cloak

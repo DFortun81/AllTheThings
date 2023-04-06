@@ -64,7 +64,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 			})),
 			n(REWARDS, {
-				i(205248),	-- Clanging Dirt-Covered Pouch
+				i(205248, {	-- Clanging Dirt-Covered Pouch
+					i(204715),	-- Fragrant Unearthed Coin
+				}),
 				i(205247, {	-- Clinking Dirt-Covered Pouch
 					i(204715),	-- Fragrant Unearthed Coin
 				}),

@@ -674,21 +674,40 @@ i(203989);	-- Warshard of the Hakkari, Unborn
 -- PATCH 10.1.0 --
 ------------------
 -- Quest Items --
+i(204877);	-- 'The Resting Blade'
 i(203458);	-- Black Dragonscale Robes
 i(203682);	-- Darkened Elemental Core
 i(203453);	-- Dragonbone Totem
 i(202873);	-- Drooping Mushroom Cutting
 i(203396);	-- Displayed Armor Piece
+i(204184);	-- Ebon Eviscerator
 i(203394);	-- Elementally Charged Orb
 i(203385);	-- Flamesight Rune
+i(205179);	-- Glimmerfish Scale
+i(204067);	-- Glowing Crystal
 i(204694);	-- Greater Flamesight Rune
 i(203456);	-- Obsidian Prayer Beads
+i(204070);	-- Magma Crystal
 i(202180);	-- Pipsee Cheese Snack
 i(205217);	-- Sharpbeak's Feed
 i(203442);	-- Snail Slime
+i(204069);	-- Sulfuric Crystal
 i(204713);	-- Sundered Flame Expedition Notes
 i(203653);	-- Vacant Elemental Core
 i(203012);	-- Viridian Heartcrystal
 i(203457);	-- Volcanic Herb Sachet
 i(204085);	-- Zaqali Dragonslayer's Spear
 i(203654);	-- Zaqali Flame Totem
+-- Poor Trash --
+i(205457);	-- Delicate Crystal Shell
+i(205465);	-- Gleaming Rock Viper Eye
+i(205870);	-- Glittering Spore Dust
+i(205464);	-- Granite Scales
+i(205459);	-- Luminous Gloop
+i(205698);	-- Mangled Niffen Pack
+i(205460);	-- Pulverized Living Earth
+i(205700);	-- Sensitive Scotopic Eye
+i(205469);	-- Serrated Sporebat Spine
+i(205470);	-- Torn Deep Scales
+-- Common Trash --
+i(204342);	-- Questionable Jerky

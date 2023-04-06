@@ -18,6 +18,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				ach(18208),	-- The Small Disruptions
 				ach(18209),	-- Nothing Stops the Research
 			}),
+			n(QUESTS, {
+				q(74906),	-- Researchers Under Fire (Keeps unflagging? Might use as header?)
+				q(75948),	-- Killed 202309 (Cavern Flayer Matriarch)
+			}),
 		}),
 	}),
 })));

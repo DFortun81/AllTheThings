@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 
 			-- TODO:
-			battlepet(ach(17934, {	-- Family Battler of Zaralek Cavern
+			petbattle(ach(17934, {	-- Family Battler of Zaralek Cavern
 				i(193377),	-- Gerald (PET!)
 			})),
 			ach(17739),	-- Embers of Neltharion
@@ -65,7 +65,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			ach(17916),	-- Magic Battler of Zaralek Cavern
 			ach(17917),	-- Mechanical Battler of Zaralek Cavern
 			ach(17918),	-- Undead Battler of Zaralek Caverm
-			ach(17934),	-- Family Battler of Zaralek Cavern
 			ach(18100),	-- Cavern Clawbbering
 		}),
 	}),

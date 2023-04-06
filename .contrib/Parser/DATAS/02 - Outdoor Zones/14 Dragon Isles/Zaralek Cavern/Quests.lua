@@ -419,9 +419,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 51.5, 25.8, ZARALEK_CAVERN },
 					["g"] = {
 						i(204447, {	-- Ensemble: Black Flight's Vestments
-							i(204444),	-- Black Flight's Spaulders
-							i(204445),	-- Black Flight's Tabard
-							i(204446),	-- Black Flight's Cape
+							["questID"] = 76038,
+							["g"] = {
+								i(204446),	-- Black Flight's Cape
+								i(204444),	-- Black Flight's Spaulders
+								i(204445),	-- Black Flight's Tabard
+							},
 						}),
 					},
 				}),
@@ -463,13 +466,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 47.4, 15.6, ZARALEK_CAVERN },
 					["g"] = {
 						i(204195),	-- Drake's Shadowflame Crest
+						i(205998),	-- Sign of Respect
 					},
 				}),
 					-- Chapter 6 --
-				q(72694, {	-- Aberrus, the Shadowed Crucible: Sarkareth
+				q(75694, {	-- Aberrus, the Shadowed Crucible: Sarkareth
 					["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
 					["provider"] = { "n", 199965 },	-- Ebyssian
 					["coord"] = { 47.9, 15.0, ZARALEK_CAVERN },
+					["g"] = {
+						i(204682),	-- Enchanted Wyrm's Shadowflame Crest
+					},
 				}),
 
 					-- Unknown --
@@ -576,6 +583,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75506 },	-- Shadowflame Crests
 				["provider"] = { "n", 203404 },	-- Vaskarn
 				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
+				["g"] = {
+					i(202171),	-- Obsidian Flightstone
+					i(204075),	-- Whelpling's Shadowflame Crest Fragment
+				},
 			}),
 
 				-- Incense Questline --
@@ -774,5 +785,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
 		q(75658),	-- WQ Unlock?
+		--
+		--q(75511),	-- Login? Weekly?
+		--q(75764),	-- Login?
+		--q(75863),	-- Two Aiding Accord?
+		--q(73793),	-- Fly Through Azure Exit
+
+		--q(76013),	-- after turn in [72930]
 	}),
 }));

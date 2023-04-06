@@ -5,6 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 	m(ZARALEK_CAVERN, {
 		n(ZONE_REWARDS, {
 			i(204075),	-- Whelpling's Shadowflame Crest Fragment
+			i(204460),	-- Zaralek Glowspores
 			n(BACK, {
 				i(205056),	-- Zaralek Surveyor's Cloak
 				i(205055),	-- Zaralek Surveyor's Drape

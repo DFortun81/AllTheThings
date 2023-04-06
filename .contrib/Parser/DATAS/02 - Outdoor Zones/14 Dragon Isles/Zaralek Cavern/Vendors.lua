@@ -30,21 +30,33 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 55.9, 55.5, ZARALEK_CAVERN },
 				["g"] = {
 					i(204726, {	-- Drake's Bountiful Chest
+						["questID"] = 75329,
+						--["isWeekly"] = true,
 						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
 					}),
 					i(204725, {	-- Drake's Hefty Chest
+						["questID"] = 75328,
+						--["isWeekly"] = true,
 						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
 					}),
 					i(204724, {	-- Drake's Small Chest
+						["questID"] = 75327,
+						--["isWeekly"] = true,
 						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
 					}),
 					i(204722, {	-- Whelpling's Bountiful Chest
+						["questID"] = 75323,
+						--["isWeekly"] = true,
 						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
 					}),
 					i(204723, {	-- Whelpling's Hefty Chest
+						["questID"] = 75324,
+						--["isWeekly"] = true,
 						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
 					}),
 					i(204721, {	-- Whelpling's Small Chest
+						["questID"] = 75306,
+						--["isWeekly"] = true,
 						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
 					}),
 					i(COVETED_BAUBLE, {
