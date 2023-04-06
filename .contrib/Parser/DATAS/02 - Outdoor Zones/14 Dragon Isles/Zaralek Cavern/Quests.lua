@@ -419,9 +419,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 51.5, 25.8, ZARALEK_CAVERN },
 					["g"] = {
 						i(204447, {	-- Ensemble: Black Flight's Vestments
-							i(204444),	-- Black Flight's Spaulders
-							i(204445),	-- Black Flight's Tabard
-							i(204446),	-- Black Flight's Cape
+							["questID"] = 76038,
+							["g"] = {
+								i(204446),	-- Black Flight's Cape
+								i(204444),	-- Black Flight's Spaulders
+								i(204445),	-- Black Flight's Tabard
+							},
 						}),
 					},
 				}),
@@ -463,46 +466,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 47.4, 15.6, ZARALEK_CAVERN },
 					["g"] = {
 						i(204195),	-- Drake's Shadowflame Crest
+						i(205998),	-- Sign of Respect
 					},
 				}),
 					-- Chapter 6 --
-				q(72694, {	-- Aberrus, the Shadowed Crucible: Sarkareth
+				q(75694, {	-- Aberrus, the Shadowed Crucible: Sarkareth
 					["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
 					["provider"] = { "n", 199965 },	-- Ebyssian
 					["coord"] = { 47.9, 15.0, ZARALEK_CAVERN },
+					["g"] = {
+						i(204682),	-- Enchanted Wyrm's Shadowflame Crest
+					},
 				}),
-			}),
 
-
-
-
-
-
-				-- Sides --
-				-- 1 --
-			q(72658, {	-- Flightstones
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				["provider"] = { "n", 203404 },	-- Vaskarn
-				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
-				["g"] = {
-					i(202171),	-- Obsidian Flightstone
-				},
-			}),
-			q(75506, {	-- Shadowflame Crests
-				["sourceQuests"] = { 72658 },	-- Flightstones
-				["provider"] = { "n", 203404 },	-- Vaskarn
-				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
-				["g"] = {
-					i(204728),	-- Friendship Censer
-					i(202171),	-- Obsidian Flightstone
-				},
-			}),
-				-- 2 --
-			q(75665, {	-- A Worthy Ally: Loamm Niffen
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				["provider"] = { "n", 204254 },	-- Mimuup
-				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
-				["isWeekly"] = true,
+					-- Unknown --
+				q(76101, {	-- Tougher Down Under
+					--["sourceQuests"] = {  },	--
+					["provider"] = { "n", 204522 },	-- Aurantia
+					["coord"] = { 56.9, 55.6, ZARALEK_CAVERN },
+				}),
 			}),
 				-- 3 --
 			q(75641, {	-- The Power of the Whole
@@ -514,8 +496,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 
-
-
+				-- Glimrogg Stuff ------
+			q(73707, {	-- TICKET: Glimmerogg Games
+				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
+				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
+				["isBreadcrumb"] = true,
+			}),
 
 				-- 6 --
 			q(74787, {	-- Come Snail Away
@@ -552,9 +539,55 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 43.2, 84.1, ZARALEK_CAVERN },
 			}),
 
+			-- Snail Race Questline (One New Quest Per Week?) --
+			q(75662, {	-- A Race To The Finish
+				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["provider"] = { "n", 201099 },	-- Gorgul
+				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
+				["g"] = {
+					i(205119),	-- Bashful (PET!)
+				},
+			}),
+			q(75707, {	-- A Race To The Finish
+				["sourceQuests"] = { 75662 },	-- A Race To The Finish
+				["provider"] = { "n", 201099 },	-- Gorgul
+				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
+				["g"] = {
+					i(205123),	-- Brulee (PET!)
+				},
+			}),
 
 
+				-- Complete Stuff Below --
 
+
+				-- Teaches New System --
+			q(72658, {	-- Flightstones
+				["sourceQuests"] = { 76101 },	-- Tougher Down Under
+				["provider"] = { "n", 203404 },	-- Vaskarn
+				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
+				["g"] = {
+					i(202171),	-- Obsidian Flightstone
+				},
+			}),
+			q(75506, {	-- Shadowflame Crests
+				["sourceQuests"] = { 72658 },	-- Flightstones
+				["provider"] = { "n", 203404 },	-- Vaskarn
+				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
+				["g"] = {
+					i(204728),	-- Friendship Censer
+					i(202171),	-- Obsidian Flightstone
+				},
+			}),
+			q(75507, {	-- Catching Up with Friends
+				["sourceQuests"] = { 75506 },	-- Shadowflame Crests
+				["provider"] = { "n", 203404 },	-- Vaskarn
+				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
+				["g"] = {
+					i(202171),	-- Obsidian Flightstone
+					i(204075),	-- Whelpling's Shadowflame Crest Fragment
+				},
+			}),
 
 				-- Incense Questline --
 			q(72878, {	-- Slime Time Live
@@ -575,7 +608,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205249),	-- Pugent Niffen Incense
 				},
 			}),
-
 
 				-- Imposter Questline --
 			q(72881, {	-- A Swallow's Tale
@@ -609,26 +641,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205250),	-- Gift of the High Redolence
 				},
 			}),
-
-
-				-- Snail Race Questline (One New Quest Per Week?) --
-			q(75662, {	-- A Race To The Finish
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				["provider"] = { "n", 201099 },	-- Gorgul
-				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
-				["g"] = {
-					i(205119),	-- Bashful (PET!)
-				},
-			}),
-			q(75707, {	-- A Race To The Finish
-				["sourceQuests"] = { 75662 },	-- A Race To The Finish
-				["provider"] = { "n", 201099 },	-- Gorgul
-				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
-				["g"] = {
-					i(205123),	-- Brulee (PET!)
-				},
-			}),
-
 
 				-- Mouse Friend Questline --
 			q(74857, {	-- Mouse Detective
@@ -673,7 +685,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205253),	-- Farmhand's Abudant Harvest
 				},
 			}),
-
 
 				-- Dragonscale Expedition Side Questline --
 			q(73037, {	-- Healing Crystals
@@ -767,8 +778,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205254),	-- Honoary Explorer's Compass
 				},
 			}),
-
-
 		}),
 	}),
 })));
@@ -776,5 +785,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
 		q(75658),	-- WQ Unlock?
+		--
+		--q(75511),	-- Login? Weekly?
+		--q(75764),	-- Login?
+		--q(75863),	-- Two Aiding Accord?
+		--q(73793),	-- Fly Through Azure Exit
+
+		--q(76013),	-- after turn in [72930]
 	}),
 }));

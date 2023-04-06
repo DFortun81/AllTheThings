@@ -12,9 +12,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17447,	-- Brimstone Scramble: Bronze
 							17438,	-- Caldera Cruise: Bronze
 							17429,	-- Crystal Circuit: Bronze
+							17465,	-- Loamm Roamm: Bronze
 							17456,	-- Shimmering Slalom: Bronze
 							17474,	-- Sulfur Sprint: Bronze
-							17465,	-- Zaralek Zigzag: Bronze
 						}},
 					}),
 					ach(17484, {	-- Zaralek Cavern: Silver
@@ -23,9 +23,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17448,	-- Brimstone Scramble: Silver
 							17439,	-- Caldera Cruise: Silver
 							17430,	-- Crystal Circuit: Silver
+							17466,	-- Loamm Roamm: Silver
 							17457,	-- Shimmering Slalom: Silver
 							17475,	-- Sulfur Sprint: Silver
-							17466,	-- Zaralek Zigzag: Silver
 						}},
 					}),
 					ach(17485, {	-- Zaralek Cavern: Gold
@@ -34,9 +34,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17449,	-- Brimstone Scramble: Gold
 							17440,	-- Caldera Cruise: Gold
 							17431,	-- Crystal Circuit: Gold
+							17467,	-- Loamm Roamm: Gold
 							17458,	-- Shimmering Slalom: Gold
 							17476,	-- Sulfur Sprint: Gold
-							17467,	-- Zaralek Zigzag: Gold
 						}},
 					}),
 					ach(17486, {	-- Zaralek Cavern Advanced: Bronze
@@ -45,9 +45,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17450,	-- Brimstone Scramble Advanced: Bronze
 							17441,	-- Caldera Cruise Advanced: Bronze
 							17432,	-- Crystal Circuit Advanced: Bronze
+							17468,	-- Loamm Roamm Advanced: Bronze
 							17459,	-- Shimmering Slalom Advanced: Bronze
 							17477,	-- Sulfur Sprint Advanced: Bronze
-							17468,	-- Zaralek Zigzag Advanced: Bronze
 						}},
 					}),
 					ach(17487, {	-- Zaralek Cavern Advanced: Silver
@@ -56,9 +56,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17451,	-- Brimstone Scramble Advanced: Silver
 							17442,	-- Caldera Cruise Advanced: Silver
 							17433,	-- Crystal Circuit Advanced: Silver
+							17469,	-- Loamm Roamm Advanced: Silver
 							17460,	-- Shimmering Slalom Advanced: Silver
 							17478,	-- Sulfur Sprint Advanced: Silver
-							17469,	-- Zaralek Zigzag Advanced: Silver
 						}},
 					}),
 					ach(17488, {	-- Zaralek Cavern Advanced: Gold
@@ -67,9 +67,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17452,	-- Brimstone Scramble Advanced: Gold
 							17443,	-- Caldera Cruise Advanced: Gold
 							17434,	-- Crystal Circuit Advanced: Gold
+							17470,	-- Loamm Roamm Advanced: Gold
 							17461,	-- Shimmering Slalom Advanced: Gold
 							17479,	-- Sulfur Sprint Advanced: Gold
-							17470,	-- Zaralek Zigzag Advanced: Gold
 						}},
 					}),
 					ach(17489, {	-- Zaralek Cavern Reverse: Bronze
@@ -78,9 +78,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17453,	-- Brimstone Scramble Reverse: Bronze
 							17444,	-- Caldera Cruise Reverse: Bronze
 							17435,	-- Crystal Circuit Reverse: Bronze
+							17471,	-- Loamm Roamm Reverse: Bronze
 							17462,	-- Shimmering Slalom Reverse: Bronze
 							17480,	-- Sulfur Sprint Reverse: Bronze
-							17471,	-- Zaralek Zigzag Reverse: Bronze
 						}},
 					}),
 					ach(17490, {	-- Zaralek Cavern Reverse: Silver
@@ -89,9 +89,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17454,	-- Brimstone Scramble Reverse: Silver
 							17445,	-- Caldera Cruise Reverse: Silver
 							17436,	-- Crystal Circuit Reverse: Silver
+							17472,	-- Loamm Roamm Reverse: Silver
 							17463,	-- Shimmering Slalom Reverse: Silver
 							17481,	-- Sulfur Sprint Reverse: Silver
-							17472,	-- Zaralek Zigzag Reverse: Silver
 						}},
 					}),
 					ach(17491, {	-- Zaralek Cavern Reverse: Gold
@@ -100,9 +100,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17455,	-- Brimstone Scramble Reverse: Gold
 							17446,	-- Caldera Cruise Reverse: Gold
 							17437,	-- Crystal Circuit Reverse: Gold
+							17473,	-- Loamm Roamm Reverse: Gold
 							17464,	-- Shimmering Slalom Reverse: Gold
 							17482,	-- Sulfur Sprint Reverse: Gold
-							17473,	-- Zaralek Zigzag Reverse: Gold
 						}},
 					}),
 					ach(17492, {	-- Zaralek Cavern Racing Completionist
@@ -291,34 +291,34 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							ach(17482),	-- Sulfur Sprint Reverse: Gold
 						},
 					}),
-					q(74972, {	-- Zaralek Zigzag
+					q(74972, {	-- Loamm Roamm
 						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
 						["coord"] = { 58.0, 57.6, ZARALEK_CAVERN },
 						["g"] = {
 							i(191140),	-- Bronze Timepiece
-							ach(17465),	-- Zaralek Zigzag: Bronze
-							ach(17466),	-- Zaralek Zigzag: Silver
-							ach(17467),	-- Zaralek Zigzag: Gold
+							ach(17465),	-- Loamm Roamm: Bronze
+							ach(17466),	-- Loamm Roamm: Silver
+							ach(17467),	-- Loamm Roamm: Gold
 						},
 					}),
-					q(74975, {	-- Zaralek Zigzag - Advanced
+					q(74975, {	-- Loamm Roamm - Advanced
 						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
 						["coord"] = { 58.0, 57.6, ZARALEK_CAVERN },
 						["g"] = {
 							i(191140),	-- Bronze Timepiece
-							ach(17468),	-- Zaralek Zigzag Advanced: Bronze
-							ach(17469),	-- Zaralek Zigzag Advanced: Silver
-							ach(17470),	-- Zaralek Zigzag Advanced: Gold
+							ach(17468),	-- Loamm Roamm Advanced: Bronze
+							ach(17469),	-- Loamm Roamm Advanced: Silver
+							ach(17470),	-- Loamm Roamm Advanced: Gold
 						},
 					}),
-					q(74977, {	-- Zaralek Zigzag - Reverse
+					q(74977, {	-- Loamm Roamm - Reverse
 						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
 						["coord"] = { 58.0, 57.6, ZARALEK_CAVERN },
 						["g"] = {
 							i(191140),	-- Bronze Timepiece
-							ach(17471),	-- Zaralek Zigzag Reverse: Bronze
-							ach(17472),	-- Zaralek Zigzag Reverse: Silver
-							ach(17473),	-- Zaralek Zigzag Reverse: Gold
+							ach(17471),	-- Loamm Roamm Reverse: Bronze
+							ach(17472),	-- Loamm Roamm Reverse: Silver
+							ach(17473),	-- Loamm Roamm Reverse: Gold
 						},
 					}),
 				})),

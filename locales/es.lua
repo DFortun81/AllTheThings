@@ -863,6 +863,7 @@ for key,value in pairs({
 		[-1200] = "Cámaras de Zskera",								-- Zskera Vaults
 		--TODO: [-1201] = "Researchers Under Fire Scenario",		-- Researchers Under Fire Scenario
 		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
+		--TODO: [-1203] = "Sniffenseeking",							-- Sniffenseeking
 	-- Warrior order hall lore items
 		[-2200] = "El gran Odyn y el Señor del Fuego",				-- Great Odyn and the Firelord
 		[-2201] = "El nómada y la serpiente",						-- The Wanderer and the Serpent

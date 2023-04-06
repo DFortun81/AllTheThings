@@ -328,6 +328,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["isWeekly"] = true,
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 			}, {
+			q(76122, {	-- Fighting Is Its Own Reward
+				["provider"] = { "n", 189973 },	-- Kemora
+				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 },
+			}),
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy
 				["provider"] = { "n", 191957 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },

@@ -99,7 +99,6 @@ i(197139, 69340);	-- Highland Drake: Large Spotted Pattern
 i(197103, 69304);	-- Highland Drake: Maned Chin
 i(197111, 69312);	-- Highland Drake: Maned Head
 i(197114, 69315);	-- Highland Drake: Multi-Horned Head
-i(197120, 69321);	-- Highland Drake: Ornate Helm
 i(197110, 69311);	-- Highland Drake: Plated Head
 i(197144, 69345);	-- Highland Drake: Red Scales
 i(197141, 69342);	-- Highland Drake: Scaled Pattern
@@ -290,4 +289,5 @@ i(202280, 73060);	-- Renewed Proto-Drake: Pronged Tail
 ------------------
 -- PATCH 10.1.0 --
 ------------------
+i(197120, 69321);	-- Highland Drake: Ornate Helm
 i(197109, 69310);	-- Highland Drake: Spiked Head

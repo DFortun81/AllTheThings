@@ -764,7 +764,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		i(197103),	-- Highland Drake: Maned Chin (DM!)
 		i(197111),	-- Highland Drake: Maned Head (DM!)
 		i(197114),	-- Highland Drake: Multi-Horned Head (DM!)
-		unknown(i(197120)),	-- Highland Drake: Ornate Helm
+		i(197120, {	-- Highland Drake: Ornate Helm (DM!)
+			["timeline"] = { CREATED_10_0_0, ADDED_10_1_0 },
+		}),
 		i(197110),	-- Highland Drake: Plated Head (DM!)
 		i(197144),	-- Highland Drake: Red Scales (DM!)
 		i(197141),	-- Highland Drake: Scaled Pattern (DM!)

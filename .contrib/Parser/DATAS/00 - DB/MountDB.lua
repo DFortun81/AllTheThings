@@ -1608,7 +1608,10 @@ i(204091, 400733);	-- Rocket Shredder 9001
 ------------------
 -- PATCH 10.1.0 --
 ------------------
+i(205209, 408653);	-- Boulder Hauler
+i(205197, 408627);	-- Igneous Shalewing
 i(204798, 406637);	-- Inferno Armoredon
+i(205207, 408655);	-- Morsel Sniffer
 i(205233, 408977);	-- Obsidian Gladiator's Slitherdrake
 i(205205, 408649);	-- Shadowflame Shalewing
 i(205246, 409034);	-- Vicious War Snail [A]
@@ -1616,11 +1619,8 @@ i(205245, 409032);	-- Vicious War Snail [H]
 i(204361, 368893);	-- Winding Slitherdrake
 -- Unsorted --
 i(205155, 408313);	-- Big Slick in the City
-i(205209, 408653);	-- Boulder Hauler
 i(205203, 408647);	-- Cobalt Shalewing
 i(206027, 411565);	-- Felcrystal Scorpion
-i(205197, 408627);	-- Igneous Shalewing
-i(205207, 408655);	-- Morsel Sniffer
 i(192779, 374138);	-- Seething Slug
 
 -- #if ANYCLASSIC
