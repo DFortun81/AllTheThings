@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
-			q(74392, {	-- Reach South
+			q(75263, {	-- Reach South
 				["sourceQuests"] = { 74911 },	-- New Horizons
 				["sourceQuestNumRequired"] = 0,
 				["provider"] = { "n", 200563 },	-- Kraxxus
