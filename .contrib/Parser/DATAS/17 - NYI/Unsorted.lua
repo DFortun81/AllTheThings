@@ -2713,7 +2713,6 @@ root(ROOTS.Unsorted, {
 				q(72643),	-- Dragon Isles Supplies
 				q(72683),	--
 				q(72684),	--
-				q(72725),	-- A Shrouded Path Through Time
 				q(72731),	--
 				q(72732),	--
 				q(72733),	--
@@ -2724,7 +2723,6 @@ root(ROOTS.Unsorted, {
 				q(72775),	--
 				q(72780),	--
 				q(72804),	--
-				q(72810),	-- A Shattered Path Through Time
 				-- 10.0.2.46420
 				q(72817),	-- Dragonflight (70) E
 				q(72819),	-- Shadowlands (60) E

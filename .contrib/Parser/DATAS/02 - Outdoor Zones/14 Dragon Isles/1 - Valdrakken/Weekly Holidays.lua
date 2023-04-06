@@ -58,6 +58,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(72719),					-- A Fel Path Through Time
 				q(72726),					-- A Frozen Path Through Time
 				q(72727),					-- A Burning Path Through Time
+				q(72725),					-- A Shrouded Path Through Time
+				q(72810),					-- A Shattered Path Through Time
 				pvp(q(72720)),				-- The Arena Calls
 				petbattle(pvp(q(72721))),	-- The Very Best
 			})),
