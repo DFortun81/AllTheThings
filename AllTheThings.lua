@@ -16797,12 +16797,15 @@ RowOnEnter = function (self)
 		end
 		if reference.c and app.Settings:GetTooltipSetting("Enabled") and app.Settings:GetTooltipSetting("ClassRequirements") then
 			local str,colors = "",app.Settings:GetTooltipSetting("UseMoreColors");
+			local classInfo, classColor;
 			for i,cl in ipairs(reference.c) do
 				if i > 1 then str = str .. ", "; end
-				if colors then
-					str = str .. Colorize(C_CreatureInfo.GetClassInfo(cl).className, RAID_CLASS_COLORS[select(2, GetClassInfo(cl))].colorStr);
+				classInfo = C_CreatureInfo.GetClassInfo(cl);
+				classColor = RAID_CLASS_COLORS[select(2, GetClassInfo(cl))];
+				if colors and classColor then
+					str = str .. Colorize(classInfo and classInfo.className or UNKNOWN, classColor.colorStr);
 				else
-					str = str .. C_CreatureInfo.GetClassInfo(cl).className;
+					str = str .. (classInfo and classInfo.className or UNKNOWN);
 				end
 			end
 			GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
