@@ -1024,7 +1024,7 @@ app.L = {
 		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY",										-- Cache of Madness
 		[-42] = app.asset("Category_Crafting"),												-- Crafted Item
 		[-43] = 618859,																		-- Proving Grounds [achievement_challengemode_platinum]
-	-- World Events (These are used by ATT CLassic)
+	-- World Events (These are used by ATT Classic)
 		[-47] = "Interface\\Icons\\achievement_worldevent_lunar",							-- Lunar Festival
 		[-52] = "Interface\\Icons\\inv_misc_toy_04",										-- Children's Week
 		[-53] = "Interface\\Icons\\inv_summerfest_symbol_high",								-- Midsummer Fire Festival
@@ -1561,7 +1561,7 @@ app.L = {
 		[-41] = "Cache of Madness",												-- Cache of Madness
 		[-42] = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,					-- Crafted Item
 		[-43] = TRACKER_HEADER_PROVINGGROUNDS,									-- Proving Grounds
-	-- World Events (These are used by ATT CLassic)
+	-- World Events (These are used by ATT Classic)
 		[-47] = select(1,GetCategoryInfo(160)),									-- Lunar Festival
 		[-52] = select(1,GetCategoryInfo(163)),									-- Children's Week
 		[-53] = "Midsummer Fire Festival",										-- Midsummer Fire Festival
@@ -1974,6 +1974,8 @@ app.L = {
 		[-1201] = "Researchers Under Fire Scenario",								-- Researchers Under Fire Scenario
 		[-1202] = "Fyrakk Assaults",												-- Fyrakk Assaults
 		[-1203] = "Sniffenseeking",													-- Sniffenseeking
+		[-1204] = AVAILABLE,														-- Available
+		[-1205] = UNAVAILABLE,														-- Unavailable
  	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",
@@ -2177,10 +2179,10 @@ app.L = {
 		[1010] = {4, "|CFF00FFDEThis requires the Noblegarden Holiday to be Active.|r", "Noblegarden"},
 		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "Pilgrim's Bounty"},
 		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "Pirates' Day"},
-		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "Stranglethorn Fishing Extravaganza"},
-		[1016] = {4, "|CFF00FFDEThis requires the Timewalking Event to be active.|r", "Timewalking"},
-		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "WoW's Anniversary"},
-		[1018] = {4, "|CFF00FFDEThis requires the Kalu'ak Fishing Derby to be active.|r", "Kalu'ak Fishing Derby"},
+		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be Active.|r", "Stranglethorn Fishing Extravaganza"},
+		[1016] = {4, "|CFF00FFDEThis requires the Timewalking Event to be Active.|r", "Timewalking"},
+		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be Active.|r", "WoW's Anniversary"},
+		[1018] = {4, "|CFF00FFDEThis requires the Kalu'ak Fishing Derby to be Active.|r", "Kalu'ak Fishing Derby"},
 	};
 
 	["CUSTOM_COLLECTS_REASONS"] = {
