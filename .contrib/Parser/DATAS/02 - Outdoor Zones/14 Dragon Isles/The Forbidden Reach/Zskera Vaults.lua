@@ -161,12 +161,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72953 },	-- Zskera Vault: Az
 					["provider"] = { "n", 202627 },	-- Earthcaller Yevaa
 					["coord"] = { 25.5, 53.2, THE_FORBIDDEN_REACH },
+					["isWeekly"] = true,
 					["g"] = {
 						i(204208),	-- Primordial Earth Core
 						i(204209),	-- Primordial Flame Core
 						i(204210),	-- Primordial Storm Core
 						i(204212),	-- Primordial Water Core
-						i(193363),	-- Bunbo (PET!)
 						i(203701),	-- Neltharion Gift Token
 						i(202196),	-- Zskera Vault Key
 					},
@@ -285,9 +285,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386427, {	-- Cart of Crushed Stone
 							["coord"] = { 26.8, 53.7, THE_FORBIDDEN_REACH },
 							["questID"] = 74401,
-							["g"] = {
-								i(193835),	-- Brigthfeather (PET!)
-							},
+							["sym"] = {{"select","itemID",
+								193835,	-- Brightfeather (PET!)
+							}},
 						}),
 						o(386484, {	-- Gold Pile
 							["coord"] = { 25.3, 53.3, THE_FORBIDDEN_REACH },
@@ -327,9 +327,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(390258, {	-- Inert Goo
 							["coord"] = { 27.8, 50.8, THE_FORBIDDEN_REACH },
 							["questID"] = 75147,
-							["g"] = {
-								i(193854),	-- Berylmane (PET!)
-							},
+							["sym"] = {{"select","itemID",
+								193854,	-- Berylmane (PET!)
+							}},
 						}),
 						o(388873, {	-- Irontide Coin Bag
 							["questID"] = 74974,
@@ -346,9 +346,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(389564, {	-- Mindless Slime
 							["questID"] = 75053,
-							["g"] = {
-								i(193363),	-- Bunbo (PET!)
-							},
+							["sym"] = {{"select","itemID",
+								193363,	-- Bunbo (PET!)
+							}},
 						}),
 						o(384980, {	-- Mysterious Chest
 							["coord"] = { 28.7, 57.8, THE_FORBIDDEN_REACH },
@@ -553,10 +553,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386354, {	-- Hardened Chest
 							["coord"] = { 30.1, 57.9, THE_FORBIDDEN_REACH },
 							["questID"] = 74358,
-							["g"] = {
-								i(193363),	-- Bunbo (PET!)
-								i(204369),	-- Scrap of Black Dragonscales
-							},
+							["sym"] = {{"select","itemID",
+								193854,	-- Berylmane (PET!)
+								193363,	-- Bunbo (PET!)
+								204369,	-- Scrap of Black Dragonscales
+							}},
 						}),
 						o(386353, {	-- Hardened Chest
 							["coord"] = { 27.0, 53.8, THE_FORBIDDEN_REACH },
@@ -575,9 +576,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386456, {	-- Hardshell Chest
 							["coord"] = { 27.4, 50.0, THE_FORBIDDEN_REACH },
 							["questID"] = 74422,
-							["g"] = {
-								i(193835),	-- Brigthfeather (PET!)
-							},
+							["sym"] = {{"select","itemID",
+								193835,	-- Brightfeather (PET!)
+							}},
 						}),
 						o(386455, {	-- Hardshell Chest
 							["coord"] = { 30.9, 56.8, THE_FORBIDDEN_REACH },
@@ -922,9 +923,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(386452, {	-- Void-Bound Strongbox
 							["questID"] = 75283,
-							["g"] = {
-								i(193835),	-- Brigthfeather (PET!)	(likely consolidate into rewards with symlinks on known objects?)
-							},
+							["sym"] = {{"select","itemID",
+								193835,	-- Brightfeather (PET!)
+							}},
 						}),
 					},
 				})),
@@ -943,6 +944,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386454, {	-- Chest of Ice
 							["coord"] = { 28.3, 55.6, THE_FORBIDDEN_REACH },
 							["questID"] = 74420,
+							["sym"] = {{"select","itemID",
+								193835,	-- Brightfeather (PET!)
+							}},
 						}),
 						o(386556, {	-- Dusty Vase
 							["coord"] = { 28.3, 57.4, THE_FORBIDDEN_REACH },
@@ -963,9 +967,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(388908, {	-- Inert Goo
 							["coord"] = { 27.8, 50.8, THE_FORBIDDEN_REACH },
 							["questID"] = 75020,
-							["g"] = {
-								i(193835),	-- Brigthfeather (PET!)
-							},
+							["sym"] = {{"select","itemID",
+								193835,	-- Brightfeather (PET!)
+							}},
 						}),
 						o(387737, {	-- Living Book
 							["coord"] = { 29.8, 54.0, THE_FORBIDDEN_REACH },
@@ -986,6 +990,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 74947,
 							["g"] = {
 								i(204256),	-- Holoviewer: The Scarlet Queen (TOY!)
+								i(204257),	-- Holoviewer: The Lady of Dreams (TOY!)
+								i(204262),	-- Holoviewer: The Timeless One (TOY!)
 							},
 						}),
 						o(387728, {	-- Opera of the Aspects
@@ -1009,9 +1015,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(386459, {	-- Primordial Decay Cache
 							["questID"] = 74425,
-							["g"] = {
-								i(204021),	-- Necromantic Death Stone
-							},
 						}),
 						o(389789, {	-- Primordial Earth Cache
 							["description"] = "Use Stone Dissolver.",
@@ -1109,8 +1112,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				i(204020),	-- Wild Spirit Stone
 				i(204030),	-- Wind Sculpted Stone
 				-- Drops from any chest
-				i(204257),	-- Holoviewer: The Lady of Dreams (TOY!)
-				i(204262),	-- Holoviewer: The Timeless One (TOY!)
+				i(193835),	-- Brightfeather (PET!)
+				i(193363),	-- Bunbo (PET!)
 				i(204687),	-- Obsidian Battle Horn (TOY!)
 			}),
 		}),
