@@ -628,3 +628,205 @@ root(ROOTS.NeverImplemented, {
 		})
 	})),
 });
+---------------------------
+--     H I S T O R Y     --
+---------------------------
+--[[
+-----------------------
+-- FEB/FEBRUARY 2023 --
+-----------------------
+i(190071, {	-- Azure Scalesworn Longbow
+	["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+}),
+i(54811, {	-- Celestial Steed (MOUNT!) (FEB 2023)
+	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+}),
+i(190799, {	-- Ensemble: Swashbuckling Buccaneer's Slops
+	["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+	["g"] = {
+i(190786),	-- Swashbuckling Buccaneer's Boots
+i(190785),	-- Swashbuckling Buccaneer's Breeches
+i(190784),	-- Swashbuckling Buccaneer's Sash
+i(190783),	-- Swashbuckling Buccaneer's Tunic
+	},
+}),
+i(202170, {	-- Ensemble: Vagabond's Rosy Threads
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+	["g"] = {
+i(202168),	-- Vagabond's Rosy Cape
+i(202169),	-- Vagabond's Rosy Hood
+	},
+}),
+i(202167, {	-- Ensemble: Wanderer's Rosy Trappings
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+	["g"] = {
+i(202166),	-- Wanderer's Rosy Cloak
+i(202165),	-- Wanderer's Rosy Scarf
+	},
+}),
+i(190856, {	-- Fetid Bouquet
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+}),
+i(189898, {	-- Fury of the Firelord
+	["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+}),
+i(190607, {	-- Garrlok (PET!)
+	["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+}),
+i(189897, {	-- Infiltrator's Bandolier
+	["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+}),
+i(190434, {	-- Iridescent Warcloak
+	["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+}),
+i(190599, {	-- Operative's Bandolier
+	["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+}),
+i(190855, {	-- Rosy Corsage
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+}),
+i(190143, {	-- Shard of Frozen Secrets
+	["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+}),
+i(190846, {	-- Shattered Voidspire
+	["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+}),
+i(189871, {	-- Squire's Etched Warhammer
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+}),
+--------------------
+-- MAR/MARCH 2023 --
+--------------------
+i(189882, {	-- Dread Admiral's Bicorne
+	["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+}),
+i(189938, {	-- Ensemble: Fel-Automaton Exoplate
+	["cost"] = { { "c", TRADERS_TENDER, 850 }, },
+	["g"] = {
+i(189887),	-- Fel-Automaton Coreguard
+i(189891),	-- Fel-Automaton Cranioplate
+i(189890),	-- Fel-Automaton Manipulators
+i(189892),	-- Fel-Automaton Mobilizers
+i(189893),	-- Fel-Automaton Pauldrons
+i(189889),	-- Fel-Automaton Plating
+i(189894),	-- Fel-Automaton Stabilizers
+i(189888),	-- Fel-Automaton Stompers
+	},
+}),
+i(200884, {	-- Ensemble: Glorious Dragonrider's Mail
+	["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+	["g"] = {
+i(190209),	-- Glorious Dragonrider's Chains
+i(190230),	-- Glorious Dragonrider's Cuisses
+i(190212),	-- Glorious Dragonrider's Hood
+i(189792),	-- Glorious Dragonrider's Grips
+i(189878),	-- Glorious Dragonrider's Runeward
+i(190208),	-- Glorious Dragonrider's Sabatons
+i(189877),	-- Glorious Dragonrider's Spaulders
+i(189874),	-- Glorious Dragonrider's Wristguards
+	},
+}),
+i(190166, {	-- Ensemble: Vagabond's Midnight Threads
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+	["g"] = {
+i(190376),	-- Vagabond's Midnight Cape
+i(190150),	-- Vagabond's Midnight Hood
+	},
+}),
+i(190377, {	-- Ensemble: Wanderer's Midnight Trappings
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+	["g"] = {
+i(190149),	-- Wanderer's Midnight Cloak
+i(190151),	-- Wanderer's Midnight Scarf
+	},
+}),
+i(190097, {	-- Fabulously Flashy Finery
+	["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+}),
+i(190876, {	-- Filigreed Lion's Maw
+	["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+}),
+i(202248, {	-- Frozen Shadow
+	["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+}),
+i(190065, {	-- Gnomish Liquid Transfer Apparatus
+	["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+}),
+i(190063, {	-- Greatcloak of the Virtuous Protector
+	["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+}),
+i(49665, {	-- Pandaren Monk (PET!)
+	["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+}),
+i(190600, {	-- Shadowy Blademaster's Greatsword
+	["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+}),
+i(190092, {	-- Triumphant Blademaster's Greatsword
+	["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+}),
+i(190155, {	-- Trusty Treasure Trove
+	["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+}),
+--------------------
+-- APR/APRIL 2023 --
+--------------------
+i(190438, {	-- Crimson Nexus Crescent
+	["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+}),
+i(190130, {	-- Drape of Foreboding Mists
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+}),
+i(190603, {	-- Egbob (PET!)
+	["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+}),
+i(200909, {	-- Ensemble: Corrupted Runelord's Regalia
+	["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+	["g"] = {
+i(189875),	-- Corrupted Runelord's Sash
+i(189876),	-- Corrupted Runelord's Handguards
+i(189879),	-- Corrupted Runelord's Leggings
+i(189880),	-- Corrupted Runelord's Mantle
+i(190206),	-- Corrupted Runelord's Glyphbands
+i(190207),	-- Corrupted Runelord's Slippers
+i(190210),	-- Corrupted Runelord's Cowl
+i(190211),	-- Corrupted Runelord's Robe
+	},
+}),
+i(190540, {	-- Ensemble: Trapper's Munitions
+	["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+	["g"] = {
+i(190449),	-- Trapper's Fur-Lined Quiver
+i(190448),	-- Trapper's Shot Pouch
+	},
+}),
+i(190886, {	-- Fine White Evening Gloves
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+}),
+i(190842, {	-- Fists of Polar Fury
+	["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+}),
+i(189896, {	-- Forsaken Cresset
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+}),
+i(190145, {	-- Gilded Drakkonid Morningstar
+	["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+}),
+i(190133, {	-- Honed Bastard Sword
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+}),
+i(190153, {	-- Libram of Righteous Light
+	["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+}),
+i(189978, {	-- Magenta Cloud Serpent (MOUNT!)
+	["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+}),
+i(190898, {	-- Red Pith Helmet
+	["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+}),
+i(190154, {	-- Tome of Sin'dorei Secrets
+	["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+}),
+i(189895, {	-- Watchman's Flare
+	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+}),
+--]]
