@@ -1,6 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local function bo(questID, isDaily)
+    return { ["questID"] = questID, ["isDaily"] = isDaily };
+end
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THE_WAKING_SHORES, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
@@ -26,6 +30,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 26.9, 76.1, THE_WAKING_SHORES },
 				["questID"] = 73075,
 				["g"] = {
+					bo(72127, true),
 					i(200286),	-- Dragonbane Lance
 				},
 			}),
@@ -61,6 +66,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["cost"] = {{"i",201092,1}},	-- Lava Spices
 				["questID"] = 73072,
 				["g"] = {
+					bo(72128, true),
 					i(200167),	-- Regurgitated Stone Handaxe
 				},
 			}),
@@ -73,6 +79,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 33.1, 76.3, THE_WAKING_SHORES },
 				["questID"] = 73073,
 				["g"] = {
+					bo(72130, true),
 					i(200858),	-- Plume of the Forgotten
 				},
 			}),
@@ -95,6 +102,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["description"] = "Talk to Collector Zik at the entrance to the cave and get a net. Start catching butterflies- no really, like, 200-400 butterflies. You'll be here a while.\n\nYou can talk to Collector Zik and select chat option 3: 'How many shimmerwings have you collected so far?' to get a hint toward your progress:\n0-33% I've only just started.\n34-66%We're making good progress.\n67-99%We're close to a discovery.",
 				["coord"] = { 33.8, 85.8, THE_WAKING_SHORES },
 				["questID"] = 74065,
+				["g"] = {
+					bo(69891, true),
+				},
 			}),
 		--	n(186827),	-- Magmaton // under DF/Timed Based Rare
 		--	n(193152),	-- Massive Magmashell // under DF/Timed Based Rare
@@ -138,6 +148,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 47.3, 73.9, THE_WAKING_SHORES },
 				["questID"] = 74076,
 				["g"] = {
+					bo(70719, true),
 					i(200152),	-- Gleaming Blade of Insight
 				},
 			}),
@@ -158,6 +169,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["questID"] = 74079,
 				["cost"] = {{"i",201033,1}},	-- 1x Magical Salt Crystal
 				["g"] = {
+					bo(72126, true),
 					i(200189),	-- Hydroforged Shell Helm
 				},
 			}),
