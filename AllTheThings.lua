@@ -10837,32 +10837,27 @@ local function PopulateNode(node, nodeData, mapID)
 end
 AllTheThingsAD.FlightPathData = nil;
 -- Used to harvest missing Flight Path data from all maps
--- /run AllTheThings.HarvestFlightPaths(1)	-- save all FPs
 -- /run AllTheThings.HarvestFlightPaths()	-- save missing FPs
-app.HarvestFlightPaths = function(all)
+app.HarvestFlightPaths = function()
 	if not cached then
 		local newNodes, node = {};
 		SetDataMember("FlightPathData", newNodes);
-		for i,mapID in ipairs(baseMapIDs) do
+		for _,mapID in ipairs(baseMapIDs) do
 			-- if mapID == 882 then app.DEBUG_PRINT = true; end
 			local allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
 			if allNodeData then
 				for j,nodeData in ipairs(allNodeData) do
 					-- if nodeData.nodeID == 63 then app.DEBUG_PRINT = true; end
 					-- if app.DEBUG_PRINT then app.PrintTable(nodeData) end
-					node = app.FlightPathDB[nodeData.nodeID];
+					node = app.SearchForObject("flightPathID", nodeData.nodeID, "key");
 					if node then
 						PopulateNode(node, nodeData, mapID);
 						-- if app.DEBUG_PRINT then app.PrintTable(node) end
-						if all then
-							newNodes[nodeData.nodeID] = node;
-						end
 					elseif nodeData.name then
-						app.PrintDebug("*NEW* FP Node",nodeData.name)
+						print("*NEW* ",nodeData.name)
 						node = {};
 						PopulateNode(node, nodeData, mapID);
 						-- app.PrintTable(node)
-						app.FlightPathDB[nodeData.nodeID] = node;
 						newNodes[nodeData.nodeID] = node;
 					end
 				end
@@ -10976,7 +10971,7 @@ app.events.TAXIMAP_OPENED = function()
 	local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID);
 	if allNodeData then
 		local newFPs, nodeID, cache;
-		local currentCharFPs, acctFPs, fpDB = app.CurrentCharacter.FlightPaths, ATTAccountWideData.FlightPaths, app.FlightPathDB;
+		local currentCharFPs, acctFPs = app.CurrentCharacter.FlightPaths, ATTAccountWideData.FlightPaths;
 		for j,nodeData in ipairs(allNodeData) do
 			if nodeData.state and nodeData.state < 2 then
 				nodeID = nodeData.nodeID;
@@ -10986,17 +10981,12 @@ app.events.TAXIMAP_OPENED = function()
 					if not newFPs then newFPs = { nodeID }
 					else tinsert(newFPs, nodeID); end
 				end
-				if not fpDB[nodeID] then
-					fpDB[nodeID] = {};
-				end
-				-- app.PrintDebug("Cached FP name",nodeData.name)
-				fpDB[nodeID].name = nodeData.name;
 			end
-			-- cache = app.SearchForObject("flightPathID", nodeID, "key");
-			-- if cache and not cache.name then
-			-- 	app.PrintDebug("Cached FP name",nodeData.name)
-			-- 	rawset(cache, "name", nodeData.name);
-			-- end
+			cache = app.SearchForObject("flightPathID", nodeID, "key");
+			if cache and not cache.name then
+				app.PrintDebug("Cached FP name",nodeData.name)
+				rawset(cache, "name", nodeData.name);
+			end
 		end
 		UpdateRawIDs("flightPathID", newFPs);
 	end
