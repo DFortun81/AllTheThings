@@ -264,6 +264,16 @@ namespace ATT
             "sourceIgnored",
         };
 
+        private static HashSet<string> _autoLocalizeTypes;
+        private static bool AutoLocalizeType(string type)
+        {
+            if (_autoLocalizeTypes == null)
+            {
+                _autoLocalizeTypes = new HashSet<string>((string[])Config["AutoLocalizeTypes"]);
+            }
+            return _autoLocalizeTypes.Contains(type);
+        }
+
         /// <summary>
         /// Represents that data will be merged into the base dictionaries.
         /// This should only be performed on the first processing pass, allowing the second processing pass to sync all Item info in nested group references
@@ -1390,16 +1400,11 @@ namespace ATT
                     }
                     names[id] = name;
 
-#if RETAIL
-                    switch (objectData.ObjectType)
+                    // only certain types we will auto-localize, so remove the raw 'name' field
+                    if (AutoLocalizeType(objectData.ObjectType))
                     {
-                        // only certain types we will auto-localize, so remove the raw 'name' field
-                        case "questID":
-                        case "itemID":
-                            data.Remove("name");
-                            break;
+                        data.Remove("name");
                     }
-#endif
                 }
             }
 

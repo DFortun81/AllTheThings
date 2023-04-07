@@ -10808,10 +10808,10 @@ local baseMapIDs = {
 local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes
 	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes;
 local cached;
-local function round(num, decimals)
-	local shift = math.pow(10, decimals);
-	return math.floor(num * shift + 0.5) / shift;
-end
+-- local function round(num, decimals)
+-- 	local shift = math.pow(10, decimals);
+-- 	return math.floor(num * shift + 0.5) / shift;
+-- end
 local function PopulateNode(node, nodeData, mapID)
 	if nodeData.name then
 		node.name = nodeData.name;
@@ -10826,12 +10826,14 @@ local function PopulateNode(node, nodeData, mapID)
 			node.r = 1;
 		end
 	end
-	if nodeData.position and nodeData.position.GetXY then
-		local x, y = nodeData.position:GetXY();
-		x = round(x * 100, 2);
-		y = round(y * 100, 2);
-		node.coord = { x, y, mapID };
-	end
+	node.coord = nil;
+	-- ugh, position is based on the whole map used to pull FPs, so it's pointless to store
+	-- if nodeData.position and nodeData.position.GetXY then
+	-- 	local x, y = nodeData.position:GetXY();
+	-- 	x = round(x * 100, 2);
+	-- 	y = round(y * 100, 2);
+	-- 	node.coord = { x, y, mapID };
+	-- end
 end
 AllTheThingsAD.FlightPathData = nil;
 -- Used to harvest missing Flight Path data from all maps
@@ -10875,6 +10877,7 @@ local fields = {
 	["key"] = function(t)
 		return "flightPathID";
 	end,
+	-- will probably deprecate this in favor of auto-locale from raw name in Location files since its only purpose would be to store the name...
 	["info"] = function(t)
 		local info = app.FlightPathDB[t.flightPathID];
 		if info then
@@ -10886,7 +10889,7 @@ local fields = {
 		return app.EmptyTable;
 	end,
 	["name"] = function(t)
-		return t.info.name or L["VISIT_FLIGHT_MASTER"];
+		return L["FLIGHTPATH_NAMES"][t.flightPathID] or t.info.name or L["VISIT_FLIGHT_MASTER"];
 	end,
 	["icon"] = function(t)
 		local r = t.r;

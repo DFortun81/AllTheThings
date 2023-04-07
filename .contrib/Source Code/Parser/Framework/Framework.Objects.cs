@@ -1204,15 +1204,10 @@ namespace ATT
 
                 foreach (var localeKey in NAMES_BY_TYPE)
                 {
-                    switch (localeKey.Key)
+                    if (AutoLocalizeType(localeKey.Key))
                     {
-                        // only certain types we will auto-localize
-                        case "questID":
-                            AllLocaleTypes.Add("QUEST_NAMES", new SortedDictionary<long, object>(localeKey.Value));
-                            break;
-                        case "itemID":
-                            AllLocaleTypes.Add("ITEM_NAMES", new SortedDictionary<long, object>(localeKey.Value));
-                            break;
+                        string localeDictionaryName = localeKey.Key.Replace("ID", string.Empty).ToUpper() + "_NAMES";
+                        AllLocaleTypes.Add(localeDictionaryName, new SortedDictionary<long, object>(localeKey.Value));
                     }
                 }
 
