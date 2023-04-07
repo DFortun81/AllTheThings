@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["g"] = {
 					i(180646, {	-- Supplies of the Undying Army
 						i(184495),	-- Infested Arachnid Casing (TOY!)
-						i(181269),	-- Micromancer's Mystical Cowl (PET!)
+						i(181269),	-- Micromancer (PET!)
 						i(182081),	-- Colossal Slaughterclaw (MOUNT!)
 					}),
 				},

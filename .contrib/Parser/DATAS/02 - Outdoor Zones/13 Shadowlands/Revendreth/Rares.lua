@@ -17,8 +17,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["coord"] = { 25.3, 48.5, REVENDRETH },
 				["questID"] = 59584,
 				["g"] = {
+					i(180586),	-- Bound Lightspawn (PET!)
 					i(180688),	-- Infused Remnant of Light
-					i(180586),	-- Lightbinders (PET!)
 					i(179925),	-- Light-Infused Breastplate
 					i(179653),	-- Light-Infused Hauberk
 					i(179924),	-- Light-Infused Jacket

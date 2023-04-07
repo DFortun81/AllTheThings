@@ -258,7 +258,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									["maps"] = { REVENDRETH },
 									["g"] = {
 										i(183798),	-- Battle Gargon Silessa (MOUNT!)
-										i(183855),	-- Stony's Infused Ruby (PET!)
+										i(183855),	-- Stony (PET!)
 										i(183707),	-- Mantle of Burnished Blades
 										i(183711),	-- Burnished Crypt Keeper's Mantle
 										i(183710),	-- Burnished Sinstone Chain

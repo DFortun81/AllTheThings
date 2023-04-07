@@ -608,7 +608,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						["provider"] = { "n", 164640 },	-- Kowalskos
 						["coord"] = { 42.8, 42.7, BASTION },
 						["g"] = {
-							i(180839)	-- Helpful Glimmerfly (PET!)
+							i(180839),	-- Helpful Glimmerfly (PET!)
 						},
 					}),
 					q(59865, {	-- Glimmerflight

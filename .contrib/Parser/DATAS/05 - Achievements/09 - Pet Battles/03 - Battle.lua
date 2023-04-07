@@ -5,7 +5,7 @@
 root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 	petbattle(achcat(ACHIEVEMENT_CATEGORY_BATTLE, {
 		ach(14881, {	-- Abhorrent Adversaries of the Afterlife
-			i(184512),	-- Winterleaf Spriggan
+			i(184512),	-- Winterleaf Spriggan (PET!)
 			crit(1,  {	-- Crystalsnap
 				["coord"] = { 52.7, 74.2, BASTION },
 				["crs"] = { 175777 },	-- Crystalsnap
@@ -585,7 +585,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					14877,	-- Unholy Undead
 				}},
 			["groups"] = {
-				i(184509),	-- Spriggan Trickster
+				i(184509),	-- Spriggan Trickster (PET!)
 				ach(14868, {	-- Aquatic Apparitions
 					crit(1,  {	-- Sylla
 						["coord"] = { 39.8, 52.4, REVENDRETH },

@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(REVENDRETH, {
 		n(TREASURES, {
-			i(180866),	-- Gilded Wader (looks like this may just be an overall shared drop from treasures.  i got it from the Bleakwood Chest, there is drop data for it from Stoneborn Satchel, someone says they got it from the Venthyr Greed's Desire... so far only history from Revendreth/Bastion but it may come from other zones as well.  TODO: check back to see if this needs to be put in other zones)
+			i(180866),	-- Gilded Wader (PET!)
 			o(349797, {	-- Abandoned Curios
 				["description"] = "You can reach it with Door of Shadows or by jumping down from the road above.",
 				["sourceQuests"] = { 57159 },	-- A Reflection of Truth
@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["questID"] = 61990,
 				["g"] = {
 					i(182475),	-- Forbidden Ink
-					i(182613),	-- Refilling Inkwell
+					i(182613),	-- Lost Quill (PET!)
 				},
 			}),
 			o(357565, {	-- Forgotten Angler's Rod
@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["questID"] = 60197,
 				["isDaily"] = true,	-- repeatable??
 				["g"] = {
-					i(180589),	-- Soullocked Sinstone (PET!)
+					i(180589),	-- Burdened Soul (PET!)
 					i(180400),	-- Inquisitions Final Judgment
 					i(180395),	-- Nathrezim Crusader's Hauberk
 					i(180339),	-- Shadow-Lined Chalice
@@ -751,7 +751,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["questID"] = 62063,
 				["cost"] = { { "c", 1820, 99 } },	-- 99x Infused Ruby
 				["g"] = {
-					i(182612),	-- The Count's Pendant (PET!)
+					i(182612),	-- The Count (PET!)
 				},
 			}),
 			o(352703, {	-- The Harvest

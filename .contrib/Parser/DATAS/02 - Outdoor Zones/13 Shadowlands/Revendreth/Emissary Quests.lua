@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["repeatable"] = true,
 				["g"] = {
 					i(180648, {	-- Court of Harvesters Supplies
-						i(180601),	-- Stonewing Dredwing Pup
+						i(180601),	-- Stoneskin Dredwing Pup (PET!)
 					}),
 				},
 			}),

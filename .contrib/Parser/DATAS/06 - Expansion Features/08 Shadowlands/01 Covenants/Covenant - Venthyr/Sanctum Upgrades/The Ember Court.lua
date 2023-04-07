@@ -66,7 +66,7 @@ local KORAYN_GROUP = {
 local KLEIA_AND_PELAGOS_GROUP = {
 	i(181233),	-- Bellringer's Hammer
 	i(181230),	-- Pugilist's Chakram
-	i(180814),	-- Sable (PET!) - got when i hit Best Friend, not sure if it was just luck
+	i(180814),	-- Sable (PET!)
 	i(181226),	-- Bronze Dual-Bladed Glaive
 	i(181225),	-- Crossbow of Contemplative Calm
 	i(181232),	-- Cupbearer's Claymore
@@ -1649,7 +1649,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["provider"] = { "n", 157846 },	-- Rendle
 									["coord"] = { 72.5, 73.2, REVENDRETH },
 									["g"] = {
-										i(182683),	-- Dredger Butler's Contract (PET!)
+										i(182683),	-- Dredger Butler (PET!)
 									},
 								}),
 								q(62180, {	-- Green Muck Dye

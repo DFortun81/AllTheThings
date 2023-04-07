@@ -188,7 +188,7 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 	}),
 	prof(ENGINEERING, {
 		filter(BATTLE_PETS, {
-			i(180208),	-- PHA7-YNX
+			i(180208),	-- PHA7-YNX (PET!)
 		}),
 		filter(CONSUMABLES, {
 			i(172921),	-- Infra-green Reflex Sight

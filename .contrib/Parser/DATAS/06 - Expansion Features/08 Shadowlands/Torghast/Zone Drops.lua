@@ -177,21 +177,21 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					151329,	-- Warden Skoldus
 				},
 			}),
-			i(183192, {	-- Frenzied Mawrat
+			i(183192, {	-- Frenzied Mawrat (PET!)
 				["crs"] = {
 					151331,	-- Cellblock Sentinel
 					153165,	-- Custodian Thonar
 					151329,	-- Warden Skoldus
 				},
 			}),
-			i(183116, {	-- Hissing Deathroach
+			i(183116, {	-- Hissing Deathroach (PET!)
 				["crs"] = {
 					156239,	-- Dark Ascended Corrus
 					155250,	-- Decayspeaker
 					155251,	-- Elder Longbranch
 				},
 			}),
-			i(183191, {	-- Maw Crawler
+			i(183191, {	-- Maw Crawler (PET!)
 				["crs"] = {
 					153165,	-- Custodian Thonar
 					155945,	-- Gherus the Chained
@@ -200,7 +200,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					156015,	-- Writhing Soulmass
 				},
 			}),
-			i(183194, {	-- Maw Stalker
+			i(183194, {	-- Maw Stalker (PET!)
 				["crs"] = {
 					171422,	-- Arch-Suppressor Laguas
 					151331,	-- Cellblock Sentinel
@@ -208,7 +208,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					159755,	-- The Grand Malleare
 				},
 			}),
-			i(183117, {	-- Severs
+			i(183117, {	-- Severs (PET!)
 				["crs"] = {
 					171422,	-- Arch-Suppressor Laguas
 					155945,	-- Gherus the Chained
@@ -217,7 +217,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					159190,	-- Synod
 				},
 			}),
-			i(183195, {	-- Torghast Lurker
+			i(183195, {	-- Torghast Lurker (PET!)
 				["crs"] = {
 					153011,	-- Binder Baritas
 					170418,	-- Goxul the Devourer
@@ -226,7 +226,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					153174,	-- Watchers of Death
 				},
 			}),
-			i(183115, {	-- Tower Deathroach
+			i(183115, {	-- Tower Deathroach (PET!)
 				["crs"] = {
 					156239,	-- Dark Ascended Corrus
 					155250,	-- Decayspeaker

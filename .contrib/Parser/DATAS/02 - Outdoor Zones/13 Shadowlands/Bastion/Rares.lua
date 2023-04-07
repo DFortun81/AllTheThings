@@ -148,7 +148,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["questID"] = 62650,
 				["g"] = {
 					o(344588, {	-- Stewart's Stewpendous Stew
-						i(180856)	-- Silvershell Snapper (PET!)
+						i(180856),	-- Silvershell Snapper (PET!)
 					}),
 				},
 			}),
