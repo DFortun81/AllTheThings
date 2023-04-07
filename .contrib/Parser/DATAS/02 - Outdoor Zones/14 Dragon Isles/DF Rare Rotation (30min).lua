@@ -143,6 +143,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 32.7, 29.2, THE_AZURE_SPAN },
 					["questID"] = 69885,
 					["g"] = {
+						bo(74001, true),
 						i(200755),	-- Gruffy's Dented Horn
 					},
 				}),
@@ -151,6 +152,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["questID"] = 74002,
 					["isDaily"] = true,
 					["g"] = {
+						bo(69892, true),
 						i(200206),	-- Behemoth Slayer Greatbow
 					},
 				}),
@@ -158,6 +160,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 26.7, 49.0, THE_AZURE_SPAN },
 					["questID"] = 74030,
 					["g"] = {
+						bo(72154, true),
 						i(200279),	-- Competitive Throwing Gauntlets
 					},
 				}),

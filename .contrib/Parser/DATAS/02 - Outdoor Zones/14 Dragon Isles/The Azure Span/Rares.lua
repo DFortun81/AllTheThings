@@ -1,6 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local function bo(questID, isDaily)
+    return { ["questID"] = questID, ["isDaily"] = isDaily };
+end
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	m(THE_AZURE_SPAN, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
@@ -23,6 +27,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
 				["questID"] = 74058,
 				["g"] = {
+					bo(69858, true),
 					i(197404),	-- Renewed Proto-Drake: Finned Tail (DM!)
 				},
 			}),
@@ -99,6 +104,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 56.0, 67.6, THE_AZURE_SPAN },
 				["questID"] = 74531,
 				["g"] = {
+					bo(74461, true),
 					i(203660),	-- Rockknell's Groundpounders
 				},
 			})),
@@ -106,14 +112,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 40.4, 48.4, THE_AZURE_SPAN },
 				["questID"] = 73884,
 			}),
-			n(201561,	-- Motivator Krathos
-			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
-				["coord"] = { 43.9, 30.9, THE_AZURE_SPAN },
-				["questID"] = 74544,
-				["g"] = {
-					i(203675),	-- Legplates of the Brutal Motivator
-				},
-			})),
 			n(193201, {	-- Mucka the Raker
 				["description"] = "In order to fully kill this rare and not have her reset on you, you have to kill two Mucklings in the area. They like to get stuck in rocks.",
 				["coord"] = { 57.2, 53.6, THE_AZURE_SPAN },
@@ -155,6 +153,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				},
 				["questID"] = 74082,
 				["g"] = {
+					bo(73064, true),
 					i(200211),	-- Snowman's Icy Gaze
 				},
 			}),
@@ -180,6 +179,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				},
 				["questID"] = 74087,
 				["g"] = {
+					bo(69861, true),
 					i(200549),	-- Restored Titan Artifact
 				},
 			}),
@@ -196,6 +196,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 57.2, 64.6, THE_AZURE_SPAN },
 				["questID"] = 74535,
 				["g"] = {
+					bo(74460, true),
 					i(203659),	-- Waterpot's Halfpot Deflector
 				},
 			})),
