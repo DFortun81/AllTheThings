@@ -42,7 +42,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							illusion(5397),		-- Primal Victory
+							ill(5397),		-- Primal Victory
 						})),
 					},
 					-- #endif
@@ -77,7 +77,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							illusion(5397),		-- Primal Victory
+							ill(5397),		-- Primal Victory
 						})),
 					},
 					-- #endif
@@ -87,7 +87,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							illusion(5397),		-- Primal Victory
+							ill(5397),		-- Primal Victory
 						})),
 					},
 					-- #endif
@@ -3302,7 +3302,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							illusion(5397),		-- Primal Victory
+							ill(5397),		-- Primal Victory
 						})),
 					},
 					-- #endif
@@ -3337,7 +3337,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							illusion(5397),		-- Primal Victory
+							ill(5397),		-- Primal Victory
 						})),
 					},
 					-- #endif
@@ -3347,7 +3347,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							illusion(5397),		-- Primal Victory
+							ill(5397),		-- Primal Victory
 						})),
 					},
 					-- #endif
@@ -6618,7 +6618,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							illusion(5397),		-- Primal Victory
+							ill(5397),		-- Primal Victory
 						})),
 					},
 					-- #endif
@@ -6653,7 +6653,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							illusion(5397),		-- Primal Victory
+							ill(5397),		-- Primal Victory
 						})),
 					},
 					-- #endif
@@ -6663,7 +6663,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							illusion(5397),		-- Primal Victory
+							ill(5397),		-- Primal Victory
 						})),
 					},
 					-- #endif
@@ -10054,7 +10054,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(43221),	-- Primal Gladiator's Scaled Armor (Paladin - Horde)
 		q(43222),	-- Primal Gladiator's Silk Armor (Mage - Alliance)
 		q(43223),	-- Primal Gladiator's Silk Armor (Mage - Horde)
-		
+
 		-- PvP Arsenals
 		q(43235),	-- Primal Combatant's Arsenal (Alliance)
 		q(43236),	-- Primal Combatant's Arsenal (Horde)

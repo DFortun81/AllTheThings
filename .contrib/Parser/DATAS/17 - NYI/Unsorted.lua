@@ -1095,6 +1095,9 @@ root(ROOTS.Unsorted, {
 				i(206027),	-- Felcrystal Scorpion (MOUNT!)
 				i(192779),	-- Seething Slug (MOUNT!)
 			}),
+			filter(ILLUSIONS, {
+				ill(6836),	-- Shadow Flame
+			}),
 			filter(BATTLE_PETS, {
 				i(205054),	-- Amador (PET!)
 				i(205114),	-- Brul (PET!)
