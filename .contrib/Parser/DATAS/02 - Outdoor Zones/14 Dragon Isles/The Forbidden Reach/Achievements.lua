@@ -8,32 +8,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				-- identical criteria as full achievement
 				["sym"] = { { "select", "achievementID", 17525 } },	-- Champion of the Forbidden Reach
 			}),
-			petbattle(ach(17406, {	-- Battle on the Dragon Isles II
-				crit(1, {	-- Adinakon
-					["_quests"] = { 74841 },
-				}),
-				crit(2, {	-- Lyver
-					["_quests"] = { 74838 },
-				}),
-				crit(3, {	-- Enok the Stinky
-					["_quests"] = { 74835 },
-				}),
-				crit(4, {	-- Right Twice a Day
-					["_quests"] = { 74794 },
-				}),
-				crit(5, {	-- Sharp as Flint
-					["_quests"] = { 74840 },
-				}),
-				crit(6, {	-- Paws of Thunder
-					["_quests"] = { 74837 },
-				}),
-				crit(7, {	-- A New Vocation
-					["_quests"] = { 74836 },
-				}),
-				crit(8, {	-- They're Full of Stars!
-					["_quests"] = { 74792 },
-				}),
-			})),
 			ach(17525, {	-- Champion of the Forbidden Reach
 				crit(1, {
 					["_npcs"] = { 200584 },	-- Vraken the Hunter

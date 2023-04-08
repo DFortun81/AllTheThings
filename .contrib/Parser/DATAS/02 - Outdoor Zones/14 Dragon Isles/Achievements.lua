@@ -29,6 +29,32 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["_quests"] = { 71180 },
 			}),
 		})),
+		petbattle(ach(17406, {	-- Battle on the Dragon Isles II
+			crit(1, {	-- Adinakon
+				["_quests"] = { 74841 },
+			}),
+			crit(2, {	-- Lyver
+				["_quests"] = { 74838 },
+			}),
+			crit(3, {	-- Enok the Stinky
+				["_quests"] = { 74835 },
+			}),
+			crit(4, {	-- Right Twice a Day
+				["_quests"] = { 74794 },
+			}),
+			crit(5, {	-- Sharp as Flint
+				["_quests"] = { 74840 },
+			}),
+			crit(6, {	-- Paws of Thunder
+				["_quests"] = { 74837 },
+			}),
+			crit(7, {	-- A New Vocation
+				["_quests"] = { 74836 },
+			}),
+			crit(8, {	-- They're Full of Stars!
+				["_quests"] = { 74792 },
+			}),
+		})),
 		ach(16761, {	-- Dragon Isles Explorer
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
