@@ -44,6 +44,7 @@ i(0, 803);					-- Fiery Weapon
 i(0, 5388);					-- Greater Spellpower
 i(0, 4084);					-- Heartsong
 i(0, 5360);					-- Hide Weapon Enchant
+i(0, 1894);					-- Icy Chill
 i(138805, 4442, 42906);		-- Jade Spirit
 i(0, 4099);					-- Landslide
 i(0, 1898);					-- Lifestealing
@@ -138,3 +139,15 @@ i(200905, 6676);			-- Primal Earth
 i(200906, 6677);			-- Primal Fire
 i(200907, 6678);			-- Primal Frost
 i(200470, 6672);			-- Primal Mastery
+
+------------------
+-- PATCH 10.0.7 --
+------------------
+-- NYI --
+i(0, 6786);					-- Primal Storm
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+-- UNSORTED --
+i(0, 6836);					-- Shadow Flame

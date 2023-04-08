@@ -1,6 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local function bo(questID, isDaily)
+    return { ["questID"] = questID, ["isDaily"] = isDaily };
+end
+
 local ADAMANT_SCALES = 193214;
 local AWAKENED_FROST = 190329;
 local DRACONIUM_ORE = 188658;
@@ -16,20 +20,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				ach(16569),	-- Cobalt Enthusiast
 				ach(16537),	-- Maximum Power!
 			}),
-			n(BONUS_OBJECTIVES, sharedData({
-				["isDaily"] = true,
-			},{
-				q(74457, {	-- Grand Artificer Zeerak
-					["coord"] = { 47.5, 23.6, THE_AZURE_SPAN },
-					["provider"] = { "n", 201553 },	-- Grand Artificer Zeerak
-					["timeline"] = { ADDED_10_0_5 },
-				}),
-				q(74455, {	-- Unstable Arcanogolem
-					["coord"] = { 47.0, 25.3, THE_AZURE_SPAN },
-					["provider"] = { "n", 201554 },	-- Unstable Arcanogolem
-					["timeline"] = { ADDED_10_0_5 },
-				}),
-			})),
+			n(BONUS_OBJECTIVES, {
+			}),
 			n(QUESTS, {
 				q(71094, {	-- Help Is Our Way!
 					["sourceQuests"] = { 72435 },	-- Welcome to the Assembly
@@ -74,7 +66,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 47.5, 23.6, THE_AZURE_SPAN },
 					["questID"] = 74545,
 					["groups"] = {
+						bo(74457, true),
 						i(203664),	-- Wild Magic Insulating Bands
+					},
+				})),
+				n(201561,	-- Motivator Krathos
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
+					["coord"] = { 43.9, 30.9, THE_AZURE_SPAN },
+					["questID"] = 74544,
+					["g"] = {
+						bo(74456, true),
+						i(203675),	-- Legplates of the Brutal Motivator
 					},
 				})),
 				n(201555,	-- Srivantor
@@ -82,6 +84,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 47.0, 22.0, THE_AZURE_SPAN },
 					["questID"] = 74543,
 					["g"] = {
+						bo(74458, true),
 						i(203663),	-- Cinch of the Sundered Flame
 					},
 				})),
@@ -90,6 +93,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 47.0, 25.3, THE_AZURE_SPAN },
 					["questID"] = 74536,
 					["g"] = {
+						bo(74455, true),
 						i(203662),	-- Arcanogolem Crystalblade
 					},
 				})),

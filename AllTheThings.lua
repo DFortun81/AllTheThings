@@ -20,16 +20,11 @@ end
 
 -- Performance Cache
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
-local C_Item_IsDressableItemByID = C_Item.IsDressableItemByID;
 local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
-local C_TransmogCollection_GetItemInfo = C_TransmogCollection.GetItemInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
-local SetPortraitTexture = _G["SetPortraitTexture"];
-local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
-local EJ_GetCreatureInfo = _G["EJ_GetCreatureInfo"];
 local EJ_GetEncounterInfo = _G["EJ_GetEncounterInfo"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
 local GetAchievementInfo = _G["GetAchievementInfo"];
@@ -39,7 +34,6 @@ local GetDifficultyInfo = _G["GetDifficultyInfo"];
 local GetFactionInfoByID = _G["GetFactionInfoByID"];
 local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
-local GetItemSpecInfo = _G["GetItemSpecInfo"];
 local PlayerHasToy = _G["PlayerHasToy"];
 local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
@@ -2162,7 +2156,11 @@ app.SlotByInventoryType = setmetatable({}, {
 	end
 })
 end)();
-local function GetSourceID(itemLink)
+local GetSourceID;
+do
+local C_Item_IsDressableItemByID = C_Item.IsDressableItemByID;
+local C_TransmogCollection_GetItemInfo = C_TransmogCollection.GetItemInfo;
+GetSourceID = function(itemLink)
 	if C_Item_IsDressableItemByID(itemLink) then
 		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
 		local sourceID = select(2, C_TransmogCollection_GetItemInfo(itemLink));
@@ -2195,6 +2193,7 @@ local function GetSourceID(itemLink)
 		return nil, true;
 	end
 	return nil, false;
+end
 end
 -- verifies that an item group either has no sourceID or that its sourceID matches what the in-game API returns
 -- based on the itemID and modID of the item
@@ -2325,50 +2324,6 @@ local function SetIndicatorIcon(self, data)
 	local texture = app.GetIndicatorIcon(data);
 	if texture then
 		self:SetTexture(texture);
-		return true;
-	end
-end
-local function SetPortraitIcon(self, data)
-	local displayID = GetDisplayID(data);
-	if displayID then
-		SetPortraitTextureFromDisplayID(self, displayID);
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
-	elseif data.unit and not data.icon then
-		SetPortraitTexture(self, data.unit);
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
-	end
-
-	-- Fallback to a traditional icon.
-	if data.atlas then
-		self:SetAtlas(data.atlas);
-		self:SetTexCoord(0, 1, 0, 1);
-		if data["atlas-background"] then
-			self.Background:SetAtlas(data["atlas-background"]);
-			self.Background:SetWidth(self:GetHeight());
-			self.Background:Show();
-		end
-		if data["atlas-border"] then
-			self.Border:SetAtlas(data["atlas-border"]);
-			self.Border:SetWidth(self:GetHeight());
-			self.Border:Show();
-			if data["atlas-color"] then
-				local swatches = data["atlas-color"];
-				self.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
-			else
-				self.Border:SetVertexColor(1, 1, 1, 1.0);
-			end
-		end
-		return true;
-	elseif data.icon then
-		self:SetTexture(data.icon);
-		local texcoord = data.texcoord;
-		if texcoord then
-			self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-		else
-			self:SetTexCoord(0, 1, 0, 1);
-		end
 		return true;
 	end
 end
@@ -2523,7 +2478,10 @@ local function GetSpecsString(specs, includeNames, trim)
 	return table.concat(icons);
 end
 -- Returns proper, class-filtered specs for a given itemID
-local function GetFixedItemSpecInfo(itemID)
+local GetFixedItemSpecInfo;
+do
+local GetItemSpecInfo = GetItemSpecInfo;
+GetFixedItemSpecInfo = function(itemID)
 	if itemID then
 		local specs = GetItemSpecInfo(itemID);
 		if not specs or #specs < 1 then
@@ -2551,6 +2509,7 @@ local function GetFixedItemSpecInfo(itemID)
 			return specs;
 		end
 	end
+end
 end
 
 -- Quest Completion Lib
@@ -9134,6 +9093,7 @@ app.CreateAchievementCategory = function(id, t)
 end
 
 -- Achievement Criteria Lib
+local EJ_GetCreatureInfo = EJ_GetCreatureInfo;
 local function GetParentAchievementInfo(t, key)
 	local achievement = app.SearchForObject("achievementID", t.achievementID, "key");
 	if achievement then
@@ -10352,6 +10312,7 @@ end)();
 
 -- Encounter Lib
 (function()
+local EJ_GetCreatureInfo = EJ_GetCreatureInfo;
 local cache = app.CreateCache("encounterID");
 local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
@@ -10822,87 +10783,88 @@ end)();
 
 -- Flight Path Lib
 (function()
-local arrOfNodes = {
-	1,		-- Durotar (All of Kalimdor)
-	36,		-- Burning Steppes (All of Eastern Kingdoms)
-	94,		-- Eversong Woods (and Ghostlands + Isle of Quel'Danas)
-	97,		-- Azuremyst Isle (and Bloodmyst)
-	100,	-- Hellfire Peninsula (All of Outland)
-	118,	-- Icecrown (All of Northrend)
-	422,	-- Dread Wastes (All of Pandaria)
-	525,	-- Frostfire Ridge (All of Draenor)
-	630,	-- Azsuna (All of Broken Isles)
+local baseMapIDs = {
+	12,		-- Kalimdor
+	13,		-- Eastern Kingdoms
+	101,	-- Outland
+	113,	-- Northrend
+	424,	-- Pandaria
+	572,	-- Draenor
+	619,	-- Broken Isles
 	-- Argus only returns specific Flight Points per map
-	885,	-- Antoran Wastes
-	830,	-- Krokuun
-	882,	-- Eredath
-	831,	-- Upper Deck [The Vindicaar: Krokuun]
-	883,	-- Upper Deck [The Vindicaar: Eredath]
-	886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-
-	862,	-- Zuldazar
-	896,	-- Drustvar
+		830,	-- Krokuun
+		882,	-- Eredath
+		885,	-- Antoran Wastes
+		831,	-- Upper Deck [The Vindicaar: Krokuun]
+		883,	-- Upper Deck [The Vindicaar: Eredath]
+		886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+	875,	-- Zandalar
+	876,	-- Kul Tiras
 	1355,	-- Nazjatar
 	1550,	-- The Shadowlands
 	1409,	-- Exile's Reach
+	1978,	-- Dragon Isles
 };
-local C_TaxiMap_GetTaxiNodesForMap = C_TaxiMap.GetTaxiNodesForMap;
-local C_TaxiMap_GetAllTaxiNodes = C_TaxiMap.GetAllTaxiNodes;
-app.CacheFlightPathData = function()
-	if not app.CacheFlightPathData_Ran then
-		-- app.DEBUG_PRINT = true;
+local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes
+	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes;
+local cached;
+-- local function round(num, decimals)
+-- 	local shift = math.pow(10, decimals);
+-- 	return math.floor(num * shift + 0.5) / shift;
+-- end
+local function PopulateNode(node, nodeData, mapID)
+	if nodeData.name then
+		node.name = nodeData.name;
+	end
+	node.faction = nil;
+	if nodeData.faction and nodeData.faction ~= 0 then
+		node.r = nodeData.faction;
+	elseif nodeData.atlasName then
+		if nodeData.atlasName == "TaxiNode_Alliance" then
+			node.r = 2;
+		elseif nodeData.atlasName == "TaxiNode_Horde" then
+			node.r = 1;
+		end
+	end
+	node.coord = nil;
+	-- ugh, position is based on the whole map used to pull FPs, so it's pointless to store
+	-- if nodeData.position and nodeData.position.GetXY then
+	-- 	local x, y = nodeData.position:GetXY();
+	-- 	x = round(x * 100, 2);
+	-- 	y = round(y * 100, 2);
+	-- 	node.coord = { x, y, mapID };
+	-- end
+end
+AllTheThingsAD.FlightPathData = nil;
+-- Used to harvest missing Flight Path data from all maps
+-- /run AllTheThings.HarvestFlightPaths()	-- save missing FPs
+app.HarvestFlightPaths = function()
+	if not cached then
 		local newNodes, node = {};
-		for i,mapID in ipairs(arrOfNodes) do
+		SetDataMember("FlightPathData", newNodes);
+		for _,mapID in ipairs(baseMapIDs) do
 			-- if mapID == 882 then app.DEBUG_PRINT = true; end
 			local allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
 			if allNodeData then
 				for j,nodeData in ipairs(allNodeData) do
 					-- if nodeData.nodeID == 63 then app.DEBUG_PRINT = true; end
 					-- if app.DEBUG_PRINT then app.PrintTable(nodeData) end
-					node = app.FlightPathDB[nodeData.nodeID];
+					node = app.SearchForObject("flightPathID", nodeData.nodeID, "key");
 					if node then
-						-- if app.DEBUG_PRINT then print("DB node") end
-						-- associate in-game or our own cached data with the Sourced FP
-						-- can only apply in-game data when it exists...
-						if nodeData.name then node.name = nodeData.name; end
-						if nodeData.faction then
-							node.faction = nodeData.faction;
-						elseif nodeData.atlasName then
-							if nodeData.atlasName == "TaxiNode_Alliance" then
-								node.faction = 2;
-							elseif nodeData.atlasName == "TaxiNode_Horde" then
-								node.faction = 1;
-							end
-						end
+						PopulateNode(node, nodeData, mapID);
 						-- if app.DEBUG_PRINT then app.PrintTable(node) end
-					elseif nodeData.name and true then	-- Turn this off when you're done harvesting.
-						-- if app.DEBUG_PRINT then print("*NEW* Node") end
+					elseif nodeData.name then
+						print("*NEW* ",nodeData.name)
 						node = {};
-						node.name = "*NEW* " .. nodeData.name;
-						if nodeData.faction then
-							node.faction = nodeData.faction;
-						elseif nodeData.atlasName then
-							if nodeData.atlasName == "TaxiNode_Alliance" then
-								node.faction = 2;
-							elseif nodeData.atlasName == "TaxiNode_Horde" then
-								node.faction = 1;
-							end
-						end
+						PopulateNode(node, nodeData, mapID);
 						-- app.PrintTable(node)
-						app.FlightPathDB[nodeData.nodeID] = node;
 						newNodes[nodeData.nodeID] = node;
 					end
-					-- app.DEBUG_PRINT = nil;
 				end
 			end
-			-- app.DEBUG_PRINT = nil;
 		end
-		app.CacheFlightPathData_Ran = true;
-		SetDataMember("NewFlightPathData", newNodes);
-		-- return if some new flight path was found
-		-- print("CacheFlightPathData Found new nodes?",foundNew)
-		-- app.PrintTable(newNodes);
-		-- app.DEBUG_PRINT = nil;
+		cached = true;
+		app.print("Harvested FlightPath Data. Check Saved Variables: AllTheThingsAD.FlightPathData")
 		return true;
 	end
 end
@@ -10910,6 +10872,7 @@ local fields = {
 	["key"] = function(t)
 		return "flightPathID";
 	end,
+	-- will probably deprecate this in favor of auto-locale from raw name in Location files since its only purpose would be to store the name...
 	["info"] = function(t)
 		local info = app.FlightPathDB[t.flightPathID];
 		if info then
@@ -10921,16 +10884,12 @@ local fields = {
 		return app.EmptyTable;
 	end,
 	["name"] = function(t)
-		return t.info.name or L["VISIT_FLIGHT_MASTER"];
+		return L["FLIGHTPATH_NAMES"][t.flightPathID] or t.info.name or L["VISIT_FLIGHT_MASTER"];
 	end,
 	["icon"] = function(t)
 		local r = t.r;
 		if r then
-			if r == Enum.FlightPathFaction.Horde then
-				return app.asset("fp_horde");
-			else
-				return app.asset("fp_alliance");
-			end
+			return r == Enum.FlightPathFaction.Horde and app.asset("fp_horde") or app.asset("fp_alliance");
 		end
 		return app.asset("fp_neutral");
 	end,
@@ -10945,11 +10904,10 @@ local fields = {
 		return app.CollectibleFlightPaths;
 	end,
 	["collected"] = function(t)
-		if app.CurrentCharacter.FlightPaths[t.flightPathID] then return 1; end
+		if t.saved then return 1; end
 		if app.AccountWideFlightPaths and ATTAccountWideData.FlightPaths[t.flightPathID] then return 2; end
-		if app.MODE_DEBUG_OR_ACCOUNT then return false; end
 		if t.altQuests then
-			for i,questID in ipairs(t.altQuests) do
+			for _,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
 					return 2;
 				end
@@ -10967,7 +10925,7 @@ local fields = {
 		return t.info.c;
 	end,
 	["r"] = function(t)
-		local faction = t.info.faction;
+		local faction = t.info.faction or t.info.r;
 		if faction and faction > 0 then
 			return faction;
 		end
@@ -10976,7 +10934,10 @@ local fields = {
 		return t.info.u;
 	end,
 	["crs"] = function(t)
-		return t.info.qg and { t.info.qg };
+		if t.info.qg then
+			rawset(t, "crs", { t.info.qg });
+		end
+		return rawget(t, "crs");
 	end,
 	["mapID"] = function(t)
 		return t.info.mapID;
@@ -11002,10 +10963,14 @@ app.BaseFlightPath = app.BaseObjectFields(fields, "BaseFlightPath");
 app.CreateFlightPath = function(id, t)
 	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 end
+local cachedMaps = {};
 app.events.TAXIMAP_OPENED = function()
-	local allNodeData = C_TaxiMap_GetAllTaxiNodes(app.GetCurrentMapID());
+	local mapID = app.GetCurrentMapID();
+	if cachedMaps[mapID] then return; end
+	cachedMaps[mapID] = true;
+	local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID);
 	if allNodeData then
-		local newFPs, nodeID;
+		local newFPs, nodeID, cache;
 		local currentCharFPs, acctFPs = app.CurrentCharacter.FlightPaths, ATTAccountWideData.FlightPaths;
 		for j,nodeData in ipairs(allNodeData) do
 			if nodeData.state and nodeData.state < 2 then
@@ -11016,6 +10981,11 @@ app.events.TAXIMAP_OPENED = function()
 					if not newFPs then newFPs = { nodeID }
 					else tinsert(newFPs, nodeID); end
 				end
+			end
+			cache = app.SearchForObject("flightPathID", nodeID, "key");
+			if cache and not cache.name then
+				app.PrintDebug("Cached FP name",nodeData.name)
+				rawset(cache, "name", nodeData.name);
 			end
 		end
 		UpdateRawIDs("flightPathID", newFPs);
@@ -15943,6 +15913,52 @@ local function AdjustRowIndent(row, indentAdjust)
 		local _, _, _, x = row.Label:GetPoint(1);
 		-- print("row label at",x)
 		row.Label:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
+	end
+end
+local SetPortraitTexture, SetPortraitTextureFromDisplayID
+	= SetPortraitTexture, SetPortraitTextureFromCreatureDisplayID;
+local function SetPortraitIcon(self, data)
+	local displayID = GetDisplayID(data);
+	if displayID then
+		SetPortraitTextureFromDisplayID(self, displayID);
+		self:SetTexCoord(0, 1, 0, 1);
+		return true;
+	elseif data.unit and not data.icon then
+		SetPortraitTexture(self, data.unit);
+		self:SetTexCoord(0, 1, 0, 1);
+		return true;
+	end
+
+	-- Fallback to a traditional icon.
+	if data.atlas then
+		self:SetAtlas(data.atlas);
+		self:SetTexCoord(0, 1, 0, 1);
+		if data["atlas-background"] then
+			self.Background:SetAtlas(data["atlas-background"]);
+			self.Background:SetWidth(self:GetHeight());
+			self.Background:Show();
+		end
+		if data["atlas-border"] then
+			self.Border:SetAtlas(data["atlas-border"]);
+			self.Border:SetWidth(self:GetHeight());
+			self.Border:Show();
+			if data["atlas-color"] then
+				local swatches = data["atlas-color"];
+				self.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
+			else
+				self.Border:SetVertexColor(1, 1, 1, 1.0);
+			end
+		end
+		return true;
+	elseif data.icon then
+		self:SetTexture(data.icon);
+		local texcoord = data.texcoord;
+		if texcoord then
+			self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+		else
+			self:SetTexCoord(0, 1, 0, 1);
+		end
+		return true;
 	end
 end
 local function SetRowData(self, row, data)

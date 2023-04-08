@@ -77,29 +77,46 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(136902),	-- Toxic Whelpling (wild pet catchable, item was never used)
 		i(136921),	-- Trigger (132519 is crafted from engineering, doesn't appear this version was ever used)
 		i(67600),	-- Lil' Alexstrasza (Never added in Game)
-		-- SL
-		i(186545),	-- REUSE
-		i(180841),	-- Olive Dragon Turtle
-		-- Pets
-		i(180838),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
-		i(180837),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
-		i(181259),	-- Clutch (wild pet in game, item was never used)
-		i(184461),	-- Clutch (wild pet in game, item was never used)
-		i(180590),	-- Lost Soul (wild pet in game, item was never used)
-		i(180860),	-- Orange Vulpin (Copperfur Kit is the equivalent wild pet in game, item was never used)
-		i(180840),	-- Pink Glimmerfly (Vibrant Glimmerfly is the equivalent wild pet in game, item was never used)
-		i(180861),	-- Red Vulpin (Rustfur Kit is the equivalent wild pet in game, item was never used)
-		i(180867),	-- Silver Crane (Wader Chick is the equivalent wild pet in game, item was never used)
-		i(180813),	-- Silver Teroclaw (Fledgling Teroclaw is the equivalent wild pet in game, item was never used)
-		i(183853),	-- Sinfall Screecher
-		i(183714),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
 		p(2341),		-- Feathers (possibly tied to a quest?)
 		i(166358),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform. A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
 		-- #if BEFORE 7.0.3
 		i(23712),	-- White Tiger Cub -- later reused for Ash'ana.
 		-- #endif
 		tier(SL_TIER, {
-			i(184034), -- Stony's Infused Ruby
+			-- 9.0.1
+			tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
+				pet(2951, {	-- PH Slime
+					-- ["modelID"] = ,
+				}),
+				-- Without SpeciesID Attached
+				i(180838),	-- Blue Etherwyrm (PET!) [Wild Etherwyrm, item was never used]
+				i(180837),	-- Blue Glimmerfly (PET!) [Fluttering Glimmerfly, item was never used]
+				i(181259),	-- Clutch (PET!) [Wild Pet, item was never used]
+				i(180590),	-- Lost Soul (PET!) [Wild Pet, item was never used]
+				i(180860),	-- Orange Vulpin (PET!) [Copperfur Kit, item was never used]
+				i(180841),	-- Olive Dragon Turtle (PET!) [Glimmerpool Hatchling, item never used]
+				i(180840),	-- Pink Glimmerfly (PET!) [Vibrant Glimmerfly, item was never used]
+				i(180861),	-- Red Vulpin (PET!) [Rustfur Kit, item was never used]
+				i(180867),	-- Silver Crane (PET!) [Wader Chick, item was never used]
+				i(180813),	-- Silver Teroclaw (PET!) [Fledgling Teroclaw, item was never used]
+				i(183853),	-- Sinfall Screecher (PET!) [Sinfall Screecher, item was never used]
+				i(184034),	-- Stony's Infused Ruby (PET!) [Stony, item was never used]
+				i(183714),	-- Swamp Reed (PET!) [Withering Creeper, item was never used]
+			})),
+
+			-- 9.0.2
+			tier(SL_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 9.0.2" } }, {
+				-- Without SpeciesID Attached
+				i(184461),	-- Clutch (PET!) [Wild Pet, item was never used]
+			})),
+
+			-- 9.1.0
+			tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 9.1.0" } }, {
+				-- Without SpeciesID Attached
+				i(186545, {	-- REUSE (PET!)
+					-- ["modelID"] = ,
+				}),
+			})),
 
 			-- 9.1.5
 			tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 9.1.5" } }, {
@@ -180,7 +197,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["modelID"] = 106606,
 				}),
 				-- Without SpeciesID Attached
-				i(190583),	-- Ichabod (PET!) [Item Never Available]
 				i(191126, {	-- Obsidian Whelpling (PET!)
 					["modelID"] = 107454,
 				}),
@@ -199,6 +215,12 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(191929, {	-- zzOld - [PH] White Flying Squirrel (REUSE) (PET!)
 					-- ["modelID"] = ,
 				}),
+			})),
+
+			-- 10.0.2
+			tier(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 10.0.2" } }, {
+				-- Without SpeciesID Attached
+				i(190583),	-- Ichabod (PET!) [Item Never Available]
 			})),
 
 			-- 10.0.5

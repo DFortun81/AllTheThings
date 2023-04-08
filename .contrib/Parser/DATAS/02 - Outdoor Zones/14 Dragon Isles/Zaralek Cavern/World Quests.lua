@@ -76,6 +76,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75345, {	-- Shell Corporation
 						["coord"] = { 57.8, 61.0, ZARALEK_CAVERN },
 					}),
+					q(75064, {	-- Shrooming for a Living
+						["coord"] = { 51.0, 74.1, ZARALEK_CAVERN },
+					}),
 					q(75128, {	-- Slime Ranching
 						["coord"] = { 51.3, 23.6, ZARALEK_CAVERN },
 					}),

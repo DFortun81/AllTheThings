@@ -442,184 +442,169 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					},
 				}),
 			}),
-			crit(2, {	-- Initiate's Day Out
-				["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-				["collectible"] = false,
-				["g"] = {
-					q(65906, {	-- A Disgruntled Initiate
-						["sourceQuests"] = { 65779 },	-- Into the Plains
-						["provider"] = { "n", 195302 },	-- Windsage Ordven
-						["coord"] = { 63.1, 34.1, OHNAHRAN_PLAINS },
-						["isBreadcrumb"] = true,
-					}),
-					q(65901, {	-- Sneaking Out
-						["sourceQuests"] = { 65906 },	-- A Disgruntled Initiate
-						["provider"] = { "n", 190014 },	-- Initiate Radiya
-						["coord"] = { 56.3, 76.0, OHNAHRAN_PLAINS },
-					}),
-					q(65907, {	-- Favorite Fruit
-						["sourceQuests"] = { 65901 },	-- Sneaking Out
-						["provider"] = { "n", 190014 },	-- Initiate Radiya
-						["coord"] = { 54.8, 66.4, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(192743),	-- Wild Bushfruit
-						},
-					}),
-					q(65770, {	-- A Promise Is A Promise
-						["sourceQuests"] = { 65907 },	-- Favorite Fruit
-						["provider"] = { "n", 190014 },	-- Initiate Radiya
-						["coord"] = { 54.8, 66.4, OHNAHRAN_PLAINS },
-					}),
-					q(65761, {	-- More Adventure Than Expected
-						["sourceQuests"] = { 65770 },	-- A Promise Is A Promise
-						["provider"] = { "n", 190022 },	-- Godoloto
-						["coord"] = { 52.1, 63.2, OHNAHRAN_PLAINS },
-					}),
-					q(65711, {	-- Stealing Its Thunder
-						["sourceQuests"] = { 65761 },	-- More Adventure Than Expected
-						["provider"] = { "n", 190014 },	-- Initiate Radiya
-						["coord"] = { 47.5, 54.1, OHNAHRAN_PLAINS },
-					}),
-					q(66676, {	-- Sneaking In
-						["sourceQuests"] = { 65711 },	-- Stealing Its Thunder
-						["provider"] = { "n", 190014 },	-- Initiate Radiya
-						["coord"] = { 48.3, 56.5, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(200277),	-- Embroidered Broadhoof Footwraps
-							i(200275),	-- Geyserwalker Sandals
-							i(200272),	-- Keratin-Reinforced Boots
-							i(200274),	-- Spearbreaker Footguards
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16405.02, {	-- Initiate's Day Out
+				q(65906, {	-- A Disgruntled Initiate
+					["sourceQuests"] = { 65779 },	-- Into the Plains
+					["provider"] = { "n", 195302 },	-- Windsage Ordven
+					["coord"] = { 63.1, 34.1, OHNAHRAN_PLAINS },
+					["isBreadcrumb"] = true,
+				}),
+				q(65901, {	-- Sneaking Out
+					["sourceQuests"] = { 65906 },	-- A Disgruntled Initiate
+					["provider"] = { "n", 190014 },	-- Initiate Radiya
+					["coord"] = { 56.3, 76.0, OHNAHRAN_PLAINS },
+				}),
+				q(65907, {	-- Favorite Fruit
+					["sourceQuests"] = { 65901 },	-- Sneaking Out
+					["provider"] = { "n", 190014 },	-- Initiate Radiya
+					["coord"] = { 54.8, 66.4, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(192743),	-- Wild Bushfruit
+					},
+				}),
+				q(65770, {	-- A Promise Is A Promise
+					["sourceQuests"] = { 65907 },	-- Favorite Fruit
+					["provider"] = { "n", 190014 },	-- Initiate Radiya
+					["coord"] = { 54.8, 66.4, OHNAHRAN_PLAINS },
+				}),
+				q(65761, {	-- More Adventure Than Expected
+					["sourceQuests"] = { 65770 },	-- A Promise Is A Promise
+					["provider"] = { "n", 190022 },	-- Godoloto
+					["coord"] = { 52.1, 63.2, OHNAHRAN_PLAINS },
+				}),
+				q(65711, {	-- Stealing Its Thunder
+					["sourceQuests"] = { 65761 },	-- More Adventure Than Expected
+					["provider"] = { "n", 190014 },	-- Initiate Radiya
+					["coord"] = { 47.5, 54.1, OHNAHRAN_PLAINS },
+				}),
+				q(66676, {	-- Sneaking In
+					["sourceQuests"] = { 65711 },	-- Stealing Its Thunder
+					["provider"] = { "n", 190014 },	-- Initiate Radiya
+					["coord"] = { 48.3, 56.5, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(200277),	-- Embroidered Broadhoof Footwraps
+						i(200275),	-- Geyserwalker Sandals
+						i(200272),	-- Keratin-Reinforced Boots
+						i(200274),	-- Spearbreaker Footguards
+					},
+				}),
 			}),
-			crit(3, {	-- Lilac Ramble
-				["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-				["collectible"] = false,
-				["g"] = {
-					q(65899, {	-- Find Theramus
-						["sourceQuests"] = { 70220 },	-- Shady Sanctuary
-						["provider"] = { "n", 186303 },	-- Celina Crunchyleaves
-						["coord"] = { 25.1, 56.9, OHNAHRAN_PLAINS },
-					}),
-					q(65903, {	-- Can't Beat Fluffy
-						["sourceQuests"] = { 65899 },	-- Find Theramus
-						["provider"] = { "n", 186303 },	-- Celina Crunchyleaves
-						["coord"] = { 24.4, 63.0, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(191134),	-- Versatile Longnet
-						},
-					}),
-					q(65900, {	-- Suspiciously Spiced Steak
-						["sourceQuests"] = { 65899 },	-- Find Theramus
-						["provider"] = { "n", 185726 },	-- Felina Starrunner
-						["coord"] = { 24.4, 63.1, OHNAHRAN_PLAINS },
-					}),
-					q(65902, {	-- Food or Floof
-						["sourceQuests"] = {
-							65903,	-- Can't Beat Fluffy
-							65900,	-- Suspiciously Spiced Steak
-						},
-						["provider"] = { "n", 185726 },	-- Felina Starrunner
-						["coord"] = { 24.4, 63.1, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(192098),	-- Herbed Turtle Meat
-						},
-					}),
-					q(65905, {	-- More Than Weeds
-						["sourceQuests"] = { 65902 },	-- Food or Floof
-						["provider"] = { "n", 185726 },	-- Felina Starrunner
-						["coord"] = { 24.4, 63.1, OHNAHRAN_PLAINS },
-					}),
-					q(65937, {	-- Proof of Negligence
-						["sourceQuests"] = { 65902 },	-- Food or Floof
-						["provider"] = { "n", 186303 },	-- Celina Crunchyleaves
-						["coord"] = { 24.4, 63.0, OHNAHRAN_PLAINS },
-					}),
-					q(65904, {	-- Enough Is Enough
-						["sourceQuests"] = {
-							65905,	-- More Than Weeds
-							65937,	-- Proof of Negligence
-						},
-						["provider"] = { "n", 186303 },	-- Celina Crunchyleaves
-						["coord"] = { 24.4, 63.0, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(197890),	-- Embroidered Broadhoof Coat
-							i(197886),	-- Geyserwalker Robes
-							i(197894),	-- Keratin-Reinforced Harness
-							i(197898),	-- Spearbreaker Chestguard
-						},
-					}),
-					q(66011, {	-- In Memory of Ysera
-						["sourceQuests"] = { 65904 },	-- Enough Is Enough
-						["provider"] = { "n", 185726 },	-- Felina Starrunner
-						["coord"] = { 24.4, 64.0, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(199693),	-- Memory of Ysera
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16405.03, {	-- Lilac Ramble
+				q(65899, {	-- Find Theramus
+					["sourceQuests"] = { 70220 },	-- Shady Sanctuary
+					["provider"] = { "n", 186303 },	-- Celina Crunchyleaves
+					["coord"] = { 25.1, 56.9, OHNAHRAN_PLAINS },
+				}),
+				q(65903, {	-- Can't Beat Fluffy
+					["sourceQuests"] = { 65899 },	-- Find Theramus
+					["provider"] = { "n", 186303 },	-- Celina Crunchyleaves
+					["coord"] = { 24.4, 63.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(191134),	-- Versatile Longnet
+					},
+				}),
+				q(65900, {	-- Suspiciously Spiced Steak
+					["sourceQuests"] = { 65899 },	-- Find Theramus
+					["provider"] = { "n", 185726 },	-- Felina Starrunner
+					["coord"] = { 24.4, 63.1, OHNAHRAN_PLAINS },
+				}),
+				q(65902, {	-- Food or Floof
+					["sourceQuests"] = {
+						65903,	-- Can't Beat Fluffy
+						65900,	-- Suspiciously Spiced Steak
+					},
+					["provider"] = { "n", 185726 },	-- Felina Starrunner
+					["coord"] = { 24.4, 63.1, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(192098),	-- Herbed Turtle Meat
+					},
+				}),
+				q(65905, {	-- More Than Weeds
+					["sourceQuests"] = { 65902 },	-- Food or Floof
+					["provider"] = { "n", 185726 },	-- Felina Starrunner
+					["coord"] = { 24.4, 63.1, OHNAHRAN_PLAINS },
+				}),
+				q(65937, {	-- Proof of Negligence
+					["sourceQuests"] = { 65902 },	-- Food or Floof
+					["provider"] = { "n", 186303 },	-- Celina Crunchyleaves
+					["coord"] = { 24.4, 63.0, OHNAHRAN_PLAINS },
+				}),
+				q(65904, {	-- Enough Is Enough
+					["sourceQuests"] = {
+						65905,	-- More Than Weeds
+						65937,	-- Proof of Negligence
+					},
+					["provider"] = { "n", 186303 },	-- Celina Crunchyleaves
+					["coord"] = { 24.4, 63.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(197890),	-- Embroidered Broadhoof Coat
+						i(197886),	-- Geyserwalker Robes
+						i(197894),	-- Keratin-Reinforced Harness
+						i(197898),	-- Spearbreaker Chestguard
+					},
+				}),
+				q(66011, {	-- In Memory of Ysera
+					["sourceQuests"] = { 65904 },	-- Enough Is Enough
+					["provider"] = { "n", 185726 },	-- Felina Starrunner
+					["coord"] = { 24.4, 64.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(199693),	-- Memory of Ysera
+					},
+				}),
 			}),
-			crit(4, {	-- Pinewood Post
-				["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-				["collectible"] = false,
-				["g"] = {
-					q(65837, {	-- Trouble In The Pines
-						["sourceQuests"] = { 65779 },	-- Into the Plains
-						["provider"] = { "n", 195524 },	-- Beastmaster Tirren
-						["coord"] = { 62.0, 41.8, OHNAHRAN_PLAINS },
-						["isBreadcrumb"] = true,
-					}),
-					q(66680, {	-- Counting Sheep
-						["sourceQuests"] = { 65837 },	-- Trouble In The Pines
-						["provider"] = { "n", 190025 },	-- Scout Watu
-						["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 193890, 1 }, },	-- Diced Meat
-						["g"] = {
-							i(193892),	-- Wish's Whistle
-						},
-					}),
-					q(66681, {	-- Tempests Abound
-						["sourceQuests"] = { 65779 },	-- Into the Plains
-						["provider"] = { "n", 190024 },	-- Sentinel Olekk
-						["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
-					}),
-					q(66689, {	-- More Than a Rock
-						["sourceQuests"] = { 66681 },	-- Tempests Abound
-						["provider"] = { "i", 194031 },	-- Stormtouched Shards
-						["coord"] = { 82.9, 63.5, OHNAHRAN_PLAINS },
-					}),
-					q(66683, {	-- Last Resort Analysis
-						["sourceQuests"] = {
-							66680,	-- Counting Sheep
-							66681,	-- Tempests Abound
-							66689,	-- More Than a Rock
-						},
-						["provider"] = { "n", 190025 },	-- Scout Watu
-						["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
-					}),
-					q(65836, {	-- Show of Storm
-						["sourceQuests"] = { 66683 },	-- Last Resort Analysis
-						["provider"] = { "n", 190025 },	-- Scout Watu
-						["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
-					}),
-					q(66684, {	-- Storm Chasing
-						["sourceQuests"] = { 65836 },	-- Show of Storm
-						["provider"] = { "n", 190025 },	-- Scout Watu
-						["coord"] = { 84.0, 60.7, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(197893),	-- Embroidered Broadhoof Wristband
-							i(197887),	-- Geyserwalker Bindings
-							i(197896),	-- Keratin-Reinforced Wristguards
-							i(197901),	-- Spearbreaker Vambraces
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16405.04, {	-- Pinewood Post
+				q(65837, {	-- Trouble In The Pines
+					["sourceQuests"] = { 65779 },	-- Into the Plains
+					["provider"] = { "n", 195524 },	-- Beastmaster Tirren
+					["coord"] = { 62.0, 41.8, OHNAHRAN_PLAINS },
+					["isBreadcrumb"] = true,
+				}),
+				q(66680, {	-- Counting Sheep
+					["sourceQuests"] = { 65837 },	-- Trouble In The Pines
+					["provider"] = { "n", 190025 },	-- Scout Watu
+					["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
+					["cost"] = { { "i", 193890, 1 }, },	-- Diced Meat
+					["g"] = {
+						i(193892),	-- Wish's Whistle
+					},
+				}),
+				q(66681, {	-- Tempests Abound
+					["sourceQuests"] = { 65779 },	-- Into the Plains
+					["provider"] = { "n", 190024 },	-- Sentinel Olekk
+					["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
+				}),
+				q(66689, {	-- More Than a Rock
+					["sourceQuests"] = { 66681 },	-- Tempests Abound
+					["provider"] = { "i", 194031 },	-- Stormtouched Shards
+					["coord"] = { 82.9, 63.5, OHNAHRAN_PLAINS },
+				}),
+				q(66683, {	-- Last Resort Analysis
+					["sourceQuests"] = {
+						66680,	-- Counting Sheep
+						66681,	-- Tempests Abound
+						66689,	-- More Than a Rock
+					},
+					["provider"] = { "n", 190025 },	-- Scout Watu
+					["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
+				}),
+				q(65836, {	-- Show of Storm
+					["sourceQuests"] = { 66683 },	-- Last Resort Analysis
+					["provider"] = { "n", 190025 },	-- Scout Watu
+					["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
+				}),
+				q(66684, {	-- Storm Chasing
+					["sourceQuests"] = { 65836 },	-- Show of Storm
+					["provider"] = { "n", 190025 },	-- Scout Watu
+					["coord"] = { 84.0, 60.7, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(197893),	-- Embroidered Broadhoof Wristband
+						i(197887),	-- Geyserwalker Bindings
+						i(197896),	-- Keratin-Reinforced Wristguards
+						i(197901),	-- Spearbreaker Vambraces
+					},
+				}),
 			}),
-			crit(5, {	-- Elder Nazuun
-				["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-				["collectible"] = false,
-				["g"] = {
+			header(HEADERS.AchCriteria, 16405.05, {	-- Elder Nazuun
 					q(66687, {	-- Land of the Apex
 						["sourceQuests"] = { 66201 },	-- Hooves of War
 						["provider"] = { "n", 190164 },	-- Elder Nazuun
@@ -641,197 +626,201 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						["coord"] = { 49.3, 49.4, OHNAHRAN_PLAINS },
 					}),
 						-- (Cont. Dungeon) --
-				},
 			}),
-			crit(6, {	-- The Eternal Kurgans
-				["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-				["collectible"] = false,
-				["g"] = {
-					q(66651, {	-- Up to No-khud
-						["sourceQuests"] = { 66201 },	-- Hooves of War
-						["provider"] = { "n", 188224 },	-- Elder Yuvari
-						["coord"] = { 40.9, 61.6, OHNAHRAN_PLAINS },
-						["isBreadcrumb"] = true,
-					}),
-					q(66652, {	-- Return to Mender
-						["sourceQuests"] = { 66651 },	-- Up to No-khud
-						["provider"] = { "n", 188225 },	-- Initiate Zorig
-						["coord"] = { 39.1, 66.0, OHNAHRAN_PLAINS },
-					}),
-					q(66654, {	-- Desecrator Annihilator
-						["sourceQuests"] = { 66652 },	-- Return to Mender
-						["provider"] = { "n", 188225 },	-- Initiate Zorig
-						["coord"] = { 39.1, 66.0, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(198074),	-- Josanak, the Certain Victory
-							i(198073),	-- Karha, the Serene Wind
-							i(198075),	-- Tsegzaya, the Brambled Bow
-						},
-					}),
-					q(66655, {	-- Reagents of De-Necromancy
-						["sourceQuests"] = { 66652 },	-- Return to Mender
-						["provider"] = { "n", 188225 },	-- Initiate Zorig
-						["coord"] = { 39.1, 66.0, OHNAHRAN_PLAINS },
-					}),
-					q(69936, {	-- Zambul, Head Vandal
-						["sourceQuests"] = {
-							66654,	-- Desecrator Annihilator
-							66655,	-- Reagents of De-Necromancy
-						},
-						["provider"] = { "n", 189858 },	-- Initiate Zorig
-						["coord"] = { 33.8, 65.4, OHNAHRAN_PLAINS },
-					}),
-					q(66656, {	-- Definitely Eternal Slumber
-						["sourceQuests"] = { 69936 },	-- Zambul, Head Vandal
-						["provider"] = { "n", 189858 },	-- Initiate Zorig
-						["coord"] = { 33.8, 65.4, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(194447),	-- Totem of Respite
-						},
-					}),
-					q(66657, {	-- And Stay Dead!
-						["sourceQuests"] = { 66656 },	-- Definitely Eternal Slumber
-						["provider"] = { "n", 193985 },	-- Initiate Zorig
-						["coord"] = { 31.4, 71.0, OHNAHRAN_PLAINS },	-- Follows you
-						["g"] = {
-							i(197892),	-- Embroidered Broadhoof Waistband
-							i(197888),	-- Geyserwalker Cord
-							i(197895),	-- Keratin-Reinforced Girdle
-							i(197900),	-- Spearbreaker Belt
-						},
-					}),
-						-- (Cont. Dungeon) --
-				},
+			header(HEADERS.AchCriteria, 16405.06, {	-- The Eternal Kurgans
+				q(66651, {	-- Up to No-khud
+					["sourceQuests"] = { 66201 },	-- Hooves of War
+					["provider"] = { "n", 188224 },	-- Elder Yuvari
+					["coord"] = { 40.9, 61.6, OHNAHRAN_PLAINS },
+					["isBreadcrumb"] = true,
+				}),
+				q(66652, {	-- Return to Mender
+					["sourceQuests"] = { 66651 },	-- Up to No-khud
+					["provider"] = { "n", 188225 },	-- Initiate Zorig
+					["coord"] = { 39.1, 66.0, OHNAHRAN_PLAINS },
+				}),
+				q(66654, {	-- Desecrator Annihilator
+					["sourceQuests"] = { 66652 },	-- Return to Mender
+					["provider"] = { "n", 188225 },	-- Initiate Zorig
+					["coord"] = { 39.1, 66.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(198074),	-- Josanak, the Certain Victory
+						i(198073),	-- Karha, the Serene Wind
+						i(198075),	-- Tsegzaya, the Brambled Bow
+					},
+				}),
+				q(66655, {	-- Reagents of De-Necromancy
+					["sourceQuests"] = { 66652 },	-- Return to Mender
+					["provider"] = { "n", 188225 },	-- Initiate Zorig
+					["coord"] = { 39.1, 66.0, OHNAHRAN_PLAINS },
+				}),
+				q(69936, {	-- Zambul, Head Vandal
+					["sourceQuests"] = {
+						66654,	-- Desecrator Annihilator
+						66655,	-- Reagents of De-Necromancy
+					},
+					["provider"] = { "n", 189858 },	-- Initiate Zorig
+					["coord"] = { 33.8, 65.4, OHNAHRAN_PLAINS },
+				}),
+				q(66656, {	-- Definitely Eternal Slumber
+					["sourceQuests"] = { 69936 },	-- Zambul, Head Vandal
+					["provider"] = { "n", 189858 },	-- Initiate Zorig
+					["coord"] = { 33.8, 65.4, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(194447),	-- Totem of Respite
+					},
+				}),
+				q(66657, {	-- And Stay Dead!
+					["sourceQuests"] = { 66656 },	-- Definitely Eternal Slumber
+					["provider"] = { "n", 193985 },	-- Initiate Zorig
+					["coord"] = { 31.4, 71.0, OHNAHRAN_PLAINS },	-- Follows you
+					["g"] = {
+						i(197892),	-- Embroidered Broadhoof Waistband
+						i(197888),	-- Geyserwalker Cord
+						i(197895),	-- Keratin-Reinforced Girdle
+						i(197900),	-- Spearbreaker Belt
+					},
+				}),
+					-- (Cont. Dungeon) --
 			}),
-			crit(7, {	-- Mudfin Village
-				["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-				["collectible"] = false,
-				["g"] = {
-					q(65951, {	-- Sole Supplier
-						["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
-						["provider"] = { "n", 186653 },	-- Apprentice Ehri
-						["coord"] = { 84.4, 25.0, OHNAHRAN_PLAINS },
-					}),
-					q(65950, {	-- Thieving Gorlocs
-						["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
-						["provider"] = { "n", 186650 },	-- Farrier Roscha
-						["coord"] = { 84.4, 25.0, OHNAHRAN_PLAINS },
-					}),
-					q(65955, {	-- A Centaur's Best Friend
-						["sourceQuests"] = {
-							65951,	-- Sole Supplier
-							65950,	-- Thieving Gorlocs
-						},
-						["provider"] = { "n", 186649 },	-- Khasar
-						["coord"] = { 80.6, 30.7, OHNAHRAN_PLAINS },
-					}),
-					q(65954, {	-- Release the Hounds
-						["sourceQuests"] = {
-							65951,	-- Sole Supplier
-							65950,	-- Thieving Gorlocs
-						},
-						["provider"] = { "n", 186649 },	-- Khasar
-						["coord"] = { 80.6, 30.7, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(197960),	-- Bag of Biscuits
-						},
-					}),
-					q(65953, {	-- The Ora-cull
-						["sourceQuests"] = {
-							65951,	-- Sole Supplier
-							65950,	-- Thieving Gorlocs
-						},
-						["provider"] = { "n", 186649 },	-- Khasar
-						["coord"] = { 80.6, 30.7, OHNAHRAN_PLAINS },
-					}),
-					q(65952, {	-- A Chief of Legends
-						["sourceQuests"] = {
-							65955, 	-- A Centaur's Best Friend
-							65954,	-- Release the Hounds
-							65953,	-- The Ora-cull
-						},
-						["provider"] = { "n", 186649 },	-- Khasar
-						["coord"] = { 83.4, 32.3, OHNAHRAN_PLAINS },
-					}),
-					q(66006, {	-- Return to Roscha
-						["sourceQuests"] = { 65952 },	-- A Chief of Legends
-						["provider"] = { "n", 186649 },	-- Khasar
-						["coord"] = { 83.4, 32.3, OHNAHRAN_PLAINS },
-					}),
-					q(66005, {	-- Medallion of a Fallen Friend
-						-- ["sourceQuests"] = {  },	--
-						["provider"] = { "i", 191127 },	-- Medallion of a Fallen Friend
-						["coord"] = { 82.0, 31.4, OHNAHRAN_PLAINS },
-					}),
-					q(65949, {	-- The Sole Mender
-						["sourceQuests"] = { 66005 },	-- Medallion of a Fallen Friend
-						["provider"] = { "n", 186649 },	-- Khasar
-						["coord"] = { 83.4, 32.3, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(197668),	-- Roscha's Band of Remembrance
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16405.07, {	-- Mudfin Village
+				q(65951, {	-- Sole Supplier
+					["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
+					["provider"] = { "n", 186653 },	-- Apprentice Ehri
+					["coord"] = { 84.4, 25.0, OHNAHRAN_PLAINS },
+				}),
+				q(65950, {	-- Thieving Gorlocs
+					["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
+					["provider"] = { "n", 186650 },	-- Farrier Roscha
+					["coord"] = { 84.4, 25.0, OHNAHRAN_PLAINS },
+				}),
+				q(65955, {	-- A Centaur's Best Friend
+					["sourceQuests"] = {
+						65951,	-- Sole Supplier
+						65950,	-- Thieving Gorlocs
+					},
+					["provider"] = { "n", 186649 },	-- Khasar
+					["coord"] = { 80.6, 30.7, OHNAHRAN_PLAINS },
+				}),
+				q(65954, {	-- Release the Hounds
+					["sourceQuests"] = {
+						65951,	-- Sole Supplier
+						65950,	-- Thieving Gorlocs
+					},
+					["provider"] = { "n", 186649 },	-- Khasar
+					["coord"] = { 80.6, 30.7, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(197960),	-- Bag of Biscuits
+					},
+				}),
+				q(65953, {	-- The Ora-cull
+					["sourceQuests"] = {
+						65951,	-- Sole Supplier
+						65950,	-- Thieving Gorlocs
+					},
+					["provider"] = { "n", 186649 },	-- Khasar
+					["coord"] = { 80.6, 30.7, OHNAHRAN_PLAINS },
+				}),
+				q(65952, {	-- A Chief of Legends
+					["sourceQuests"] = {
+						65955, 	-- A Centaur's Best Friend
+						65954,	-- Release the Hounds
+						65953,	-- The Ora-cull
+					},
+					["provider"] = { "n", 186649 },	-- Khasar
+					["coord"] = { 83.4, 32.3, OHNAHRAN_PLAINS },
+				}),
+				q(66006, {	-- Return to Roscha
+					["sourceQuests"] = { 65952 },	-- A Chief of Legends
+					["provider"] = { "n", 186649 },	-- Khasar
+					["coord"] = { 83.4, 32.3, OHNAHRAN_PLAINS },
+				}),
+				q(66005, {	-- Medallion of a Fallen Friend
+					-- ["sourceQuests"] = {  },	--
+					["provider"] = { "i", 191127 },	-- Medallion of a Fallen Friend
+					["coord"] = { 82.0, 31.4, OHNAHRAN_PLAINS },
+				}),
+				q(65949, {	-- The Sole Mender
+					["sourceQuests"] = { 66005 },	-- Medallion of a Fallen Friend
+					["provider"] = { "n", 186649 },	-- Khasar
+					["coord"] = { 83.4, 32.3, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(197668),	-- Roscha's Band of Remembrance
+					},
+				}),
 			}),
-			crit(8, {	-- Nelthazan Ruins
-				["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-				["collectible"] = false,
-				["g"] = {
-					q(70337, {	-- Emberwatch
-						["sourceQuests"] = { 65806 },	-- Maruukai
-						["provider"] = { "n", 195239 },	-- Windsage Kven
-						["coord"] = { 62.1, 36.4, OHNAHRAN_PLAINS },
-						["isBreadcrumb"] = true,
-					}),
-					q(65890, {	-- The Nelthazan Ruins
-						["sourceQuests"] = { 70337 },	-- Emberwatch
-						["provider"] = { "n", 190089 },	-- Telemancer Aerilyn
-						["coord"] = { 66.0, 25.1, OHNAHRAN_PLAINS },
-						["isBreadcrumb"] = true,
-					}),
-					q(65893, {	-- The Relic Inquiry
-						["sourceQuests"] = { 65890 },	-- The Nelthazan Ruins
-						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
-						["coord"] = { 64.0, 18.3, OHNAHRAN_PLAINS },
-					}),
-					q(65891, {	-- Tools of the Trade
-						["sourceQuests"] = { 65890 },	-- The Nelthazan Ruins
-						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
-						["coord"] = { 64.0, 18.3, OHNAHRAN_PLAINS },
-					}),
-					q(65895, {	-- Competing Company
-						["sourceQuests"] = {
-							65893,	-- The Relic Inquiry
-							65891,	-- Tools of the Trade
-						},
-						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
-						["coord"] = { 64.0, 18.3, OHNAHRAN_PLAINS },
-					}),
-					q(66719, {	-- One Step Backwards
-						["sourceQuests"] = { 65895 },	-- Competing Company
-						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
-						["coord"] = { 62.1, 16.3, OHNAHRAN_PLAINS },
-						["classes"] = { EVOKER },
-					}),
-					q(65898, {	-- Proto Problems
-						["sourceQuests"] = { 65895 },	-- Competing Company
-						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
-						["coord"] = { 62.1, 16.3, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(193601),	-- The Black Locus
-						},
-					}),
-					q(66700, {	-- The Black Lotus
-						["sourceQuests"] = { 65898 },	-- Proto Problems
-						["provider"] = { "n", 191154 },	-- Skyscribe Adenedal
-						["coord"] = { 66.3, 24.3, OHNAHRAN_PLAINS },
-						["g"] = {
-							i(200278),	-- Drake Archaeologist's Shawl
-							i(197407),	-- Renewed Proto-Drake: Spiked Throat (DM!)
-							i(198354),	-- The Black Locus
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 16405.08, {	-- Nelthazan Ruins
+				q(70337, {	-- Emberwatch
+					["sourceQuests"] = { 65806 },	-- Maruukai
+					["provider"] = { "n", 195239 },	-- Windsage Kven
+					["coord"] = { 62.1, 36.4, OHNAHRAN_PLAINS },
+					["isBreadcrumb"] = true,
+				}),
+				q(65890, {	-- The Nelthazan Ruins
+					["sourceQuests"] = { 70337 },	-- Emberwatch
+					["provider"] = { "n", 190089 },	-- Telemancer Aerilyn
+					["coord"] = { 66.0, 25.1, OHNAHRAN_PLAINS },
+					["isBreadcrumb"] = true,
+				}),
+				q(65893, {	-- The Relic Inquiry
+					["sourceQuests"] = { 65890 },	-- The Nelthazan Ruins
+					["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
+					["coord"] = { 64.0, 18.3, OHNAHRAN_PLAINS },
+				}),
+				q(65891, {	-- Tools of the Trade
+					["sourceQuests"] = { 65890 },	-- The Nelthazan Ruins
+					["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
+					["coord"] = { 64.0, 18.3, OHNAHRAN_PLAINS },
+				}),
+				q(65895, {	-- Competing Company
+					["sourceQuests"] = {
+						65893,	-- The Relic Inquiry
+						65891,	-- Tools of the Trade
+					},
+					["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
+					["coord"] = { 64.0, 18.3, OHNAHRAN_PLAINS },
+				}),
+				q(66719, {	-- One Step Backwards
+					["sourceQuests"] = { 65895 },	-- Competing Company
+					["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
+					["coord"] = { 62.1, 16.3, OHNAHRAN_PLAINS },
+					["classes"] = { EVOKER },
+				}),
+				q(65898, {	-- Proto Problems
+					["sourceQuests"] = { 65895 },	-- Competing Company
+					["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
+					["coord"] = { 62.1, 16.3, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(193601),	-- The Black Locus
+					},
+				}),
+				q(66700, {	-- The Black Lotus
+					["sourceQuests"] = { 65898 },	-- Proto Problems
+					["provider"] = { "n", 191154 },	-- Skyscribe Adenedal
+					["coord"] = { 66.3, 24.3, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(200278),	-- Drake Archaeologist's Shawl
+						i(197407),	-- Renewed Proto-Drake: Spiked Throat (DM!)
+						i(198354),	-- The Black Locus
+					},
+				}),
+			}),
+			header(HEADERS.Item, 198821, {	-- Divine Kiss of Ohn'ahra
+				q(72512, {	-- A Whispering Breeze
+					["minReputation"] = { 2503, 25 },	-- Maruuk Centaur Renown 25
+					["description"] = "Speak to Godoloto to get the clues then gather the cost objects.",
+					["sourceQuests"] = { 66676 },	-- Sneaking In
+					["provider"] = { "n", 190022 },	-- Godoloto
+					["coord"] = { 56.5, 73.3, OHNAHRAN_PLAINS },
+					["cost"] = {
+						{ "i", 201929, 3 },	-- 3xStolen Breath of Ohn'ahra
+						{ "i", 201323, 1 },	-- 1xEssence of Awakening
+						{ "i", 191507, 1 },	-- 1xExultant Incense+++
+					},
+					["g"] = {
+						i(198821),	-- Divine Kiss of Ohn'ahra (MOUNT!)
+					},
+				}),
 			}),
 			header(HEADERS.Item, 192799, {	-- Lizi, Thunderspine Tramper
 				q(71196, {	-- To Tame A Thunderspine
@@ -889,26 +878,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					},
 				}),
 			}),
-			header(HEADERS.Item, 193484, {	-- Pilot
-				q(70062, {	-- Some Call Me Bug Catcher
-					["sourceQuests"] = { 70220 },	-- Shady Sanctuary
-					["provider"] = { "n", 186503 },	-- Gracus
-					["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
-				}),
-				q(70069, {	-- Others Call Me Duck Herder
-					["sourceQuests"] = { 70062 },	-- Some Call Me Bug Catcher
-					["provider"] = { "n", 186503 },	-- Gracus
-					["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
-				}),
-				q(70070, {	-- But... I Am the Hero of Ducks
-					["sourceQuests"] = { 70069 },	-- Others Call Me Duck Herder
-					["provider"] = { "n", 186503 },	-- Gracus
-					["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
-					["g"] = {
-						i(193484),	-- Pilot (PET!)
-					},
-				}),
-			}),
 			header(HEADERS.Item, 200597, {	-- Lover's Bouquet
 				q(70739, {	-- Bloodlines, Sweets, and Teraai
 					["sourceQuests"] = { 65806 },	-- Maruukai
@@ -935,58 +904,79 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					},
 				}),
 			}),
-				-- Fields of Ferocity --
-			q(70444, {	-- The Fields of Ferocity
-				["sourceQuests"] = {
-					DF_ACCOUNT_CAMPAIGN_QUEST,
-					65806,	-- Maruukai
-				},
-				["sourceQuestNumRequired"] = 1,
-				["provider"] = { "o", 380902 },	-- Fields of Ferocity
-				["coord"] = { 62.3, 42.3, OHNAHRAN_PLAINS },
-				["isBreadcrumb"] = true,
+			header(HEADERS.Item, 193484, {	-- Pilot
+				q(70062, {	-- Some Call Me Bug Catcher
+					["sourceQuests"] = { 70220 },	-- Shady Sanctuary
+					["provider"] = { "n", 186503 },	-- Gracus
+					["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
+				}),
+				q(70069, {	-- Others Call Me Duck Herder
+					["sourceQuests"] = { 70062 },	-- Some Call Me Bug Catcher
+					["provider"] = { "n", 186503 },	-- Gracus
+					["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
+				}),
+				q(70070, {	-- But... I Am the Hero of Ducks
+					["sourceQuests"] = { 70069 },	-- Others Call Me Duck Herder
+					["provider"] = { "n", 186503 },	-- Gracus
+					["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
+					["g"] = {
+						i(193484),	-- Pilot (PET!)
+					},
+				}),
 			}),
-			q(66459, {	-- The Fields of Ferocity: Terror of the Swamp!
-				["sourceQuests"] = { 70444 },	-- The Fields of Ferocity
-				["provider"] = { "n", 188868 },	-- Gurgthock
-				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
-			}),
-			q(66460, {	-- The Fields of Ferocity: Lord of Decay!
-				["sourceQuests"] = { 66459 },	-- The Fields of Ferocity: Terror of the Swamp!
-				["provider"] = { "n", 188868 },	-- Gurgthock
-				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
-			}),
-			q(66461, {	-- The Fields of Ferocity: Foe from the Volcano!
-				["sourceQuests"] = { 66460 },	-- The Fields of Ferocity: Lord of Decay!
-				["provider"] = { "n", 188868 },	-- Gurgthock
-				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
-			}),
-			q(66462, {	-- The Fields of Ferocity: Lost in the Dream!
-				["sourceQuests"] = { 66461 },	-- The Fields of Ferocity: Foe from the Volcano!
-				["provider"] = { "n", 188868 },	-- Gurgthock
-				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
-			}),
-			q(66463, {	-- The Fields of Ferocity: Elemental Revenge Round!
-				["sourceQuests"] = { 66462 },	-- The Fields of Ferocity: Lost in the Dream!
-				["provider"] = { "n", 188868 },	-- Gurgthock
-				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
-			}),
-			q(66464, {	-- The Fields of Ferocity: Master of the Hunt!
-				["sourceQuests"] = { 66463 },	-- The Fields of Ferocity: Elemental Revenge Round!
-				["provider"] = { "n", 188868 },	-- Gurgthock
-				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(197691),	-- Amaa's Golden Mace
-					i(197684),	-- Argali Shearing Blade
-					i(197703),	-- Ceeqa's Toothpick
-					i(197699),	-- Nokhud Skullcrusher
-					i(197677),	-- Plainswalking Stick
-					i(197679),	-- Rockfang Uppercut
-					i(197904),	-- Shikaar Hunting Knife
-					i(197693),	-- Shikaar Hunter's Crossbow
-					i(197690),	-- Staff of the Windsage
-					i(197903),	-- Waterback Culling Axe
-				},
+			header(HEADERS.Quest, 70444, {	-- The Fields of Ferocity
+				q(70444, {	-- The Fields of Ferocity
+					["sourceQuests"] = {
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+						65806,	-- Maruukai
+					},
+					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "o", 380902 },	-- Fields of Ferocity
+					["coord"] = { 62.3, 42.3, OHNAHRAN_PLAINS },
+					["isBreadcrumb"] = true,
+				}),
+				q(66459, {	-- The Fields of Ferocity: Terror of the Swamp!
+					["sourceQuests"] = { 70444 },	-- The Fields of Ferocity
+					["provider"] = { "n", 188868 },	-- Gurgthock
+					["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
+				}),
+				q(66460, {	-- The Fields of Ferocity: Lord of Decay!
+					["sourceQuests"] = { 66459 },	-- The Fields of Ferocity: Terror of the Swamp!
+					["provider"] = { "n", 188868 },	-- Gurgthock
+					["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
+				}),
+				q(66461, {	-- The Fields of Ferocity: Foe from the Volcano!
+					["sourceQuests"] = { 66460 },	-- The Fields of Ferocity: Lord of Decay!
+					["provider"] = { "n", 188868 },	-- Gurgthock
+					["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
+				}),
+				q(66462, {	-- The Fields of Ferocity: Lost in the Dream!
+					["sourceQuests"] = { 66461 },	-- The Fields of Ferocity: Foe from the Volcano!
+					["provider"] = { "n", 188868 },	-- Gurgthock
+					["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
+				}),
+				q(66463, {	-- The Fields of Ferocity: Elemental Revenge Round!
+					["sourceQuests"] = { 66462 },	-- The Fields of Ferocity: Lost in the Dream!
+					["provider"] = { "n", 188868 },	-- Gurgthock
+					["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
+				}),
+				q(66464, {	-- The Fields of Ferocity: Master of the Hunt!
+					["sourceQuests"] = { 66463 },	-- The Fields of Ferocity: Elemental Revenge Round!
+					["provider"] = { "n", 188868 },	-- Gurgthock
+					["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(197691),	-- Amaa's Golden Mace
+						i(197684),	-- Argali Shearing Blade
+						i(197703),	-- Ceeqa's Toothpick
+						i(197699),	-- Nokhud Skullcrusher
+						i(197677),	-- Plainswalking Stick
+						i(197679),	-- Rockfang Uppercut
+						i(197904),	-- Shikaar Hunting Knife
+						i(197693),	-- Shikaar Hunter's Crossbow
+						i(197690),	-- Staff of the Windsage
+						i(197903),	-- Waterback Culling Axe
+					},
+				}),
 			}),
 				-- MISC --
 			q(70155, {	-- Look, Listen, and Breathe
@@ -1000,7 +990,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 84.5, 25.3, OHNAHRAN_PLAINS },
 			}),
 			q(66226, {	-- Emotional Support Companions
-				--["sourceQuests"] = {  },	--
 				["provider"] = { "n", 187796 },	-- Initiate Kittileg
 				["coord"] = { 47.0, 71.2, OHNAHRAN_PLAINS },
 				["g"] = {
@@ -1026,47 +1015,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 34.2, 54.0, OHNAHRAN_PLAINS },
 			}),
 			q(72063, {	-- Return Yennu's Toy Boat
-				-- ["sourceQuests"] = {  },	--
 				["provider"] = { "i", 200876 },	-- Yennu's Toy Boat
 				["coord"] = { 52.0, 58.3, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(200878),	-- Wheeled Floaty Boaty Controller (TOY!)
 				},
 			}),
-			q(72512, {	-- A Whispering Breeze
-				["minReputation"] = { 2503, 25 },	-- Maruuk Centaur Renown 25
-				["description"] = "Speak to Godoloto to get the clues then gather the cost objects.",
-				["sourceQuests"] = { 66676 },	-- Sneaking In
-				["provider"] = { "n", 190022 },	-- Godoloto
-				["coord"] = { 56.5, 73.3, OHNAHRAN_PLAINS },
-				["cost"] = {
-					{ "i", 201929, 3 },	-- 3xStolen Breath of Ohn'ahra
-					{ "i", 201323, 1 },	-- 1xEssence of Awakening
-					{ "i", 191507, 1 },	-- 1xExultant Incense+++
-				},
-				["g"] = {
-					i(198821),	-- Divine Kiss of Ohn'ahra (MOUNT!)
-				},
-			}),
-			q(70766, {	-- The Fractured Flame
-				["sourceQuests"] = { 70507 },	-- The Insight of Tyr
-				["provider"] = { "i", 199790 },	-- Makko's Journal Cover
-				["coord"] = { 44, 66, OHNAHRAN_PLAINS },
-				["description"] = "Drops from entrhalled Murlocs during |cffffff00The Insight of Tyr|r.",
-				["g"] = {
-					i(200295),	-- Makko's Complete Journal
-					i(199792),	-- Makko's Journal - Page One
-					i(199793),	-- Makko's Journal - Page Two
-					i(199794),	-- Makko's Journal - Page Three
-					i(199795),	-- Makko's Journal - Page Four
-					i(199796),	-- Makko's Journal - Page Five
-					i(199797),	-- Makko's Journal - Page Six
-				},
-			}),
 			q(70370, {	-- Occupation Examination
+				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
 				["provider"] = { "n", 192498 },	-- Hephaesta
 				["coord"] = { 71.8, 78.7, OHNAHRAN_PLAINS },
-				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
 				["classes"] = { EVOKER },
 			}),
 			n(BONUS_OBJECTIVES, {	-- All of these are One-Time

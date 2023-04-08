@@ -160,10 +160,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										i(181305, {	-- Faewoven Bulb
 											["cost"] = { { "c", ANIMA, 3500 } },
 										}),
-										i(182661, {	-- Fun Guss
+										i(182661, {	-- Fun Guss (PET!)
 											["cost"] = { { "i", 163036, 250 } },
 										}),
-										i(180638, {	-- Fuzzy Shimmermoth
+										i(180638, {	-- Fuzzy Shimmermoth (PET!)
 											["cost"] = { { "i", 163036, 250 } },
 										}),
 										i(181303, {	-- Night Courtier's Branches

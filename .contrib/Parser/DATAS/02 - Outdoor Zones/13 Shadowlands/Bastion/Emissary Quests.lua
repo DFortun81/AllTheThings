@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["repeatable"] = true,
 				["g"] = {
 					i(180647, {	-- Ascended Supplies
-						i(184399),	-- Larion Cub
+						i(184399),	-- Larion Cub (PET!)
 						i(184396),	-- Malfunctioning Goliath Gauntlet (TOY!)
 						i(184435),	-- Mark of Purity (TOY!)
 						currency(1819, {	-- Medallion of Service

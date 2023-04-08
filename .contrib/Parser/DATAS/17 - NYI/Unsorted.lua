@@ -855,7 +855,7 @@ root(ROOTS.Unsorted, {
 				i(203442),	-- Snail Slime
 
 				i(203454),	-- Zaqali Equipment
-				i(203455),	-- Draketooth Fetish
+
 
 
 
@@ -889,7 +889,7 @@ root(ROOTS.Unsorted, {
 				i(204349),	-- Bigger Wrench
 				i(204351),	-- Animated Crystal Shard
 				i(204365),	-- Bundle of Ebon Spears
-				i(204377),	-- Glow Spores
+
 				i(204407),	-- Rebel Detonator
 				i(204433),	-- Everburning Fireshard
 				i(204434),	-- Lava-Quenched Blade
@@ -897,7 +897,7 @@ root(ROOTS.Unsorted, {
 				i(204436),	-- Chipped Horn Signet
 				i(204473),	-- Element Siphoner
 				i(204637),	-- Boulder Chunk
-				i(204642),	-- Sheridon Hastle's Effects
+
 				i(204683),	-- Head of Shadeisethal
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
@@ -1095,6 +1095,9 @@ root(ROOTS.Unsorted, {
 				i(206027),	-- Felcrystal Scorpion (MOUNT!)
 				i(192779),	-- Seething Slug (MOUNT!)
 			}),
+			filter(ILLUSIONS, {
+				ill(6836),	-- Shadow Flame
+			}),
 			filter(BATTLE_PETS, {
 				i(205054),	-- Amador (PET!)
 				i(205114),	-- Brul (PET!)
@@ -1116,7 +1119,7 @@ root(ROOTS.Unsorted, {
 
 				i(204087),	-- 10.1 Cloak Test Item
 
-				i(204387),	-- Buzzing Orb Core
+
 				i(204388),	-- Draconic Cauterizing Magma
 				i(204638),	-- Sunder Wing
 
@@ -1179,7 +1182,7 @@ root(ROOTS.Unsorted, {
 
 				i(204800),	-- Scaly Stone Hide
 				i(204801),	-- Gelcap Spores
-				i(204803),	-- Echoed Lurker Flesh
+
 				i(204810),	-- Drogbar Rocks
 				i(204811),	-- Drogbar Stones
 				i(204817),	-- Underlight Cocoon Fibers
@@ -1238,9 +1241,7 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(204986),	-- Flame-Infused Scale Oil
-				i(204987),	-- Lava-Forged Leatherworker's "Knife"
-				i(204988),	-- Sulfur Soaked Skins
+
 				i(204990),	-- Lava-Drenched Shadow Crystal
 				i(204991),	-- Contract: Loamm Niffen
 				i(204992),	-- Contract: Loamm Niffen
@@ -1274,8 +1275,7 @@ root(ROOTS.Unsorted, {
 				i(205026),	-- Devourer Lobstrok
 				i(205028),	-- Explorer's Banner of Comradery
 				i(205029),	-- Explorer's Banner of Comradery
-				i(205030),	-- Crawler Venom
-				i(205031),	-- Broodmother Venom
+
 				i(205032),	-- Bestial Lurker
 
 				i(205035),	-- Snapjaw Lurker
@@ -1333,7 +1333,7 @@ root(ROOTS.Unsorted, {
 				i(205165),	-- Axel
 				i(205166),	-- Kromos
 
-				i(205169),	-- Glimmer Mushroom
+
 				i(205170),	-- 10.1 Precognition Embellishment [PH]
 				i(205171),	-- 10.1 Not-Caster PvP Embellishment [PH] [NYI]
 				i(205172),	-- 10.1 Not-Caster PvP Embellishment [PH] [NYI]
@@ -1383,10 +1383,10 @@ root(ROOTS.Unsorted, {
 				i(205208),	-- Sporebat, Stone (Orange) [PH]
 
 				i(205211),	-- Nutrient Diluted Protofluid
-				i(205212),	-- Marrow-Ripened Slime
-				i(205213),	-- Suspicious Mold
-				i(205214),	-- Snubbed Snail Shells
-				i(205216),	-- Gently Jostled Jewels
+
+
+
+
 
 				i(205219),	-- Broken Barter Boulder
 				i(205220),	-- Corroded Key
@@ -1410,7 +1410,7 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(205251),	-- Champion's Rock Bar
+
 				i(205252),	-- Momento of Rekindled Bonds
 
 
@@ -1418,27 +1418,11 @@ root(ROOTS.Unsorted, {
 				i(205256),	-- Satchel of Pilfered Recipes
 
 				i(201957),	-- Thrall's Hearthstone
-				i(202025),	-- Keg of Ancestral Ale
-				i(202026),	-- Durotar Coast Crab
-				i(202027),	-- Fresh Talbuk Steak
-				i(202028),	-- Southfury Salmon
-				i(202029),	-- Isle Lemon
-				i(202030),	-- Ground Gorgrond Pepper
-				i(202031),	-- Farahlon Fenugreek
-				i(202032),	-- Feast for the Ancestors
 				i(202106),	-- Chewed Piece of Journal
 				i(202238),	-- Enforcer Grant's Signet
-				i(202401),	-- Cactus Apple Surprise
-				i(202402),	-- Bag of Cactus Apples
 				i(202569),	-- Djaruun, Pillar of the Elder Flame
 				i(202594),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WRIST 1
 				i(202655),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 1
-				i(202706),	-- Zandali Piri Piri
-				i(202707),	-- Un'goro Coconut
-				i(202708),	-- Curried Coconut Crab
-				i(202709),	-- Spicy Seared Talbuk Steak
-				i(202710),	-- Grilled Southfury Salmon
-
 
 				i(203679),	-- Ancestral Bloodhoof Totem
 				i(203689),	-- Horn Signet of Tetsos
@@ -1454,7 +1438,6 @@ root(ROOTS.Unsorted, {
 				i(204173),	-- Enforcer Horb's Signet
 
 
-				i(204793),	-- Suja's Sweet Salt
 				i(204858),	-- Vantus Rune: Aberrus, the Shadowed Crucible
 				i(204909),	-- Statuette of the Forethoughtful Fiend
 
@@ -2183,7 +2166,7 @@ root(ROOTS.Unsorted, {
 				i(204818),	-- Mallard Mortar
 
 				i(204909),	-- Statuette of Foreseen Power
-				i(204988),	-- Sulfur-Soaked Skins
+
 				i(205115),	-- Statuette of Foreseen Power
 				i(205151),	-- Salverun
 				i(205170),	-- Statuette of Foreseen Power
@@ -2361,7 +2344,6 @@ root(ROOTS.Unsorted, {
 				i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
 			}),
 			filter(TOYS, {
-				i(204170),	-- Clan Banner (TOY!)
 				i(204220),	-- Hraxian's Unbreakable Will (TOY!)
 			}),
 			n(WEAPONS, {
@@ -2448,8 +2430,6 @@ root(ROOTS.Unsorted, {
 				q(74955),	-- An Egg-centric Discovery
 				q(74970),	--
 				q(74994),	--
-				q(74998),	--
-				q(74999),	--
 				-- 10.0.7.47983
 				q(75034),	--
 				q(75052),	--
@@ -2484,35 +2464,12 @@ root(ROOTS.Unsorted, {
 				q(75532),	--
 				q(75533),	--
 				-- 10.0.7.48749
-				q(72462),	-- A People in Need of Healing
-				q(72463),	-- Galgar's Cactus Apple Surprise...
-				q(72464),	-- The Kosh'harg
-				q(72465),	-- The Blessing of the Land
-				q(72466),	-- The Spirit of Thunder Ridge
-				q(72467),	-- The Blessing of the Clan
-				q(72468),	--
-				q(72469),	--
-				q(72470),	--
-				q(72471),	--
-				q(72472),	--
-				q(72473),	--
-				q(72474),	-- Tracking a Killer
-				q(72475),	-- Cornering Gor'krosh
-				q(72476),	-- The Blessing of the Ancestors
-				q(72477),	-- Orcish Groceries
-				q(72478),	-- Honor and Glory
-				q(72479),	-- Aka'magosh
 				q(73177),	--
 				q(73394),	--
 				q(73396),	--
 				q(73397),	--
 				q(73549),	--
-				q(73703),	-- A Summon to Orgrimmar
-				q(73705),	--
-				q(74374),	-- An Important Heirloom
-				q(74415),	-- A Worthy Offering
 				q(74541),	--
-				q(74581),	-- The Long Knives
 				q(74672),	--
 				q(74677),	--
 			})

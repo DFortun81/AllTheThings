@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(BASTION, {
 		n(TREASURES, {
-			i(180866),	-- Gilded Wader
+			i(180866),	-- Gilded Wader (PET!)
 			o(354202, {	-- Abandoned Stockpile
 				["description"] = "Coordinates are for a cave entrance hidden by plants.",
 				["coord"] = { 46.4, 46.5, BASTION },

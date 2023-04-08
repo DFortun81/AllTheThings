@@ -5526,7 +5526,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							illusion(5396),		-- Glorious Tyranny
+							ill(5396),		-- Glorious Tyranny
 						})),
 					},
 					-- #endif
@@ -5552,7 +5552,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							illusion(5396),		-- Glorious Tyranny
+							ill(5396),		-- Glorious Tyranny
 						})),
 					},
 					-- #endif
@@ -5562,7 +5562,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							illusion(5396),		-- Glorious Tyranny
+							ill(5396),		-- Glorious Tyranny
 						})),
 					},
 					-- #endif
@@ -8753,7 +8753,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							illusion(5396),		-- Glorious Tyranny
+							ill(5396),		-- Glorious Tyranny
 						})),
 					},
 					-- #endif
@@ -8766,7 +8766,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							illusion(5396),		-- Glorious Tyranny
+							ill(5396),		-- Glorious Tyranny
 						})),
 					},
 					-- #endif
@@ -8776,7 +8776,7 @@ _.PVP =
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							illusion(5396),		-- Glorious Tyranny
+							ill(5396),		-- Glorious Tyranny
 						})),
 					},
 					-- #endif
@@ -10272,7 +10272,7 @@ _.PVP =
 					}),
 				},
 			}),
-			n(PVP_ELITE, {	
+			n(PVP_ELITE, {
 				-- Original Sources are:
 				-- n73147 Ethan Natice in Valley of the Four Winds (Alliance)
 				-- n73145 Acon Deathwielder in Area Kun-Lai Summit (Horde)

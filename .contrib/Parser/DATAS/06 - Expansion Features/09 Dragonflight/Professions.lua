@@ -239,126 +239,159 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
 				["coord"] = { 84.9, 54.4, VALDRAKKEN },
 			}),
-
-			-- In Tyr's Footsteps chapter 1
-			q(72773, {	-- Learning Ingenuity
-				["provider"] = { "n", 196499 },	-- Therazal
-				["coord"] = { 50.2, 55.9, VALDRAKKEN },
-				["isBreadcrumb"] = true,	-- unconfirmed
+			header(HEADERS.Achievement, 16683, {	-- In Tyr's Footsteps
+					-- Chapter 1 --
+				q(72773, {	-- Learning Ingenuity
+					["provider"] = { "n", 196499 },	-- Therazal
+					["coord"] = { 50.2, 55.9, VALDRAKKEN },
+					["isBreadcrumb"] = true,	-- unconfirmed
+				}),
+				q(70180, {	-- Jump-Start? Jump-Starting!
+					["sourceQuests"] = { 72773 },	-- Learning Ingenuity
+					["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
+					["coord"] = { 84.2, 54.4, VALDRAKKEN },
+				}),
+					-- Chapter 2 --
+				q(70845, {	-- In Tyr's Footsteeps
+					["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["coord"] = { 84.3, 53.5, VALDRAKKEN },
+				}),
+				q(70181, {	-- First Challenge of Tyr: Finesse
+					["sourceQuests"] = { 70845 },	-- In Tyr's Footsteeps
+					["provider"] = { "o", 379290 },	-- Ornamented Statue
+					["coord"] = { 67.2, 30.8, THE_AZURE_SPAN },
+					["g"] = {
+						i(199197),	-- Bottled Essence
+					},
+				}),
+				q(70182, {	-- The Sweet Taste of Victory
+					["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
+					["provider"] = { "n", 195827 },	-- Maiden of Inspiration
+					["coord"] = { 67.1, 30.9, THE_AZURE_SPAN },
+				}),
+				q(70633, {	-- Fueling the Engine
+					["sourceQuests"] = { 70182 },	-- The Sweet Taste of Victory
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["coord"] = { 84.3, 53.5, VALDRAKKEN },
+				}),
+					-- Chapter 3 --
+				q(70339, {	-- In Tyr's Footsteps: The Ohn'ahran Plains
+					["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["coord"] = { 84.3, 53.5, VALDRAKKEN },
+				}),
+				q(70376, {	-- Second Challenge of Tyr: Might
+					["sourceQuests"] = { 70339 },	-- In Tyr's Footsteps: The Ohn'ahran Plains
+					["provider"] = { "o", 380540 },	-- Ornamented Statue
+					["coord"] = { 66.2, 55.3, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(199197),	-- Bottled Essence
+					},
+				}),
+				q(70341, {	-- Well Earned Vicotry
+					["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
+					["provider"] = { "n", 195924 },	-- Maiden of Inspiration
+					["coord"] = { 66.3, 55.3, VALDRAKKEN },
+				}),
+					-- Chapter 4 --
+				q(70650, {	-- In Tyr's Footsteps: The Waking Shores
+					["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["coord"] = { 84.3, 53.5, VALDRAKKEN },
+				}),
+				q(70509, {	-- Third Challenge of Tyr: Persistence
+					["sourceQuests"] = { 70650 },	-- In Tyr's Footsteps: The Waking Shores
+					["provider"] = { "o", 380918 },	-- Broken Ornamented Statue
+					["coord"] = { 63.9, 41.5, THE_WAKING_SHORES },
+				}),
+				q(70621, {	-- Third Challenge of Tyr: Persistence Embodied
+					["sourceQuests"] = { 70509 },	-- Third Challenge of Tyr: Persistence
+					["provider"] = { "n", 195737 },	-- Maiden of Inspiration
+					["coord"] = { 64, 41.3, THE_WAKING_SHORES },
+					["g"] = {
+						i(199197),	-- Bottled Essence
+					},
+				}),
+				q(70510, {	-- Victorious
+					["sourceQuests"] = { 70621 },	-- Third Challenge of Tyr: Persistence Embodied
+					["provider"] = { "n", 195737 },	-- Maiden of Inspiration
+					["coord"] = { 64, 41.3, THE_WAKING_SHORES },
+				}),
+					-- Chapter 5 --
+				q(70881, {	-- Fourth Challenge of Tyr: Resourcefulness
+					["sourceQuests"] = { 70510 },	-- Victorious
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["coord"] = { 83.9, 53.2, VALDRAKKEN },
+					["g"] = {
+						i(199197),	-- Bottled Essence
+					},
+				}),
+					-- Chapter 6 --
+				q(70899, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Fifth Challenge of Tyr: Ingenuity
+					["sourceQuests"] = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["coord"] = { 83.9, 53.2, VALDRAKKEN },
+					["g"] = {
+						i(199197),	-- Bottled Essence
+						i(200120),	-- Irideus' Power Core
+					},
+				})),
+				q(70900, {	-- Innovating the Engine
+					["sourceQuests"] = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["coord"] = { 83.9, 53.2, VALDRAKKEN },
+					["timeline"] = { ADDED_10_0_5 },
+				}),
+					-- Alt Skip --
+				q(72339, {	-- Engine of Innovation
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["coord"] = { 83.9, 53.2, VALDRAKKEN },
+					["altQuests"] = { 70900 },	-- Innovating the Engine
+					["DisablePartySync"] = true,
+					["timeline"] = { ADDED_10_0_5 },
+					["sym"] = {{"select","itemID",199197}},	-- Bottled Essence x5
+				}),
 			}),
-			q(70180, {	-- Jump-Start? Jump-Starting!
-				["sourceQuests"] = { 72773 },	-- Learning Ingenuity
-				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
-				["coord"] = { 84.2, 54.4, VALDRAKKEN },
-			}),
-
-			-- In Tyr's Footsteps chapter 2
-			q(70845, {	-- In Tyr's Footsteeps
-				["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
-				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-				["coord"] = { 84.3, 53.5, VALDRAKKEN },
-			}),
-			q(70181, {	-- First Challenge of Tyr: Finesse
-				["sourceQuests"] = { 70845 },	-- In Tyr's Footsteeps
-				["provider"] = { "o", 379290 },	-- Ornamented Statue
-				["coord"] = { 67.2, 30.8, THE_AZURE_SPAN },
-				["g"] = {
-					i(199197),	-- Bottled Essence
-				},
-			}),
-			q(70182, {	-- The Sweet Taste of Victory
-				["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
-				["provider"] = { "n", 195827 },	-- Maiden of Inspiration
-				["coord"] = { 67.1, 30.9, THE_AZURE_SPAN },
-			}),
-			q(70633, {	-- Fueling the Engine
-				["sourceQuests"] = { 70182 },	-- The Sweet Taste of Victory
-				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-				["coord"] = { 84.3, 53.5, VALDRAKKEN },
-			}),
-
-			-- In Tyr's Footsteps chapter 3
-			q(70339, {	-- In Tyr's Footsteps: The Ohn'ahran Plains
-				["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
-				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-				["coord"] = { 84.3, 53.5, VALDRAKKEN },
-			}),
-			q(70376, {	-- Second Challenge of Tyr: Might
-				["sourceQuests"] = { 70339 },	-- In Tyr's Footsteps: The Ohn'ahran Plains
-				["provider"] = { "o", 380540 },	-- Ornamented Statue
-				["coord"] = { 66.2, 55.3, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(199197),	-- Bottled Essence
-				},
-			}),
-			q(70341, {	-- Well Earned Vicotry
-				["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
-				["provider"] = { "n", 195924 },	-- Maiden of Inspiration
-				["coord"] = { 66.3, 55.3, VALDRAKKEN },
-			}),
-			-- In Tyr's Footsteps chapter 4
-			q(70650, {	-- In Tyr's Footsteps: The Waking Shores
-				["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
-				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-				["coord"] = { 84.3, 53.5, VALDRAKKEN },
-			}),
-			q(70509, {	-- Third Challenge of Tyr: Persistence
-				["sourceQuests"] = { 70650 },	-- In Tyr's Footsteps: The Waking Shores
-				["provider"] = { "o", 380918 },	-- Broken Ornamented Statue
-				["coord"] = { 63.9, 41.5, THE_WAKING_SHORES },
-			}),
-			q(70621, {	-- Third Challenge of Tyr: Persistence Embodied
-				["sourceQuests"] = { 70509 },	-- Third Challenge of Tyr: Persistence
-				["provider"] = { "n", 195737 },	-- Maiden of Inspiration
-				["coord"] = { 64, 41.3, THE_WAKING_SHORES },
-				["g"] = {
-					i(199197),	-- Bottled Essence
-				},
-			}),
-			q(70510, {	-- Victorious
-				["sourceQuests"] = { 70621 },	-- Third Challenge of Tyr: Persistence Embodied
-				["provider"] = { "n", 195737 },	-- Maiden of Inspiration
-				["coord"] = { 64, 41.3, THE_WAKING_SHORES },
-			}),
-			-- In Tyr's Footsteps chapter 5
-			q(70881, {	-- Fourth Challenge of Tyr: Resourcefulness
-				["sourceQuests"] = { 70510 },	-- Victorious
-				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-				["coord"] = { 83.9, 53.2, VALDRAKKEN },
-				["g"] = {
-					i(199197),	-- Bottled Essence
-				},
-			}),
-			-- In Tyr's Footsteps chapter 6 --
-			q(70899, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Fifth Challenge of Tyr: Ingenuity
-				["sourceQuests"] = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
-				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-				["coord"] = { 83.9, 53.2, VALDRAKKEN },
-				["g"] = {
-					i(199197),	-- Bottled Essence
-					i(200120),	-- Irideus' Power Core
-				},
-			})),
-			q(70900, {	-- Innovating the Engine
-				["sourceQuests"] = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
-				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-				["coord"] = { 83.9, 53.2, VALDRAKKEN },
-				["timeline"] = { ADDED_10_0_5 },
-			}),
-			-- Alt Skip --
-			q(72339,	-- Engine of Innovation
-			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
-				--["sourceQuests"] = { },
-				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-				["coord"] = { 83.9, 53.2, VALDRAKKEN },
-				["altQuests"] = { 70900 },	-- Innovating the Engine
-				["DisablePartySync"] = true,
-				["sym"] = {{"select","itemID",199197}},	-- Bottled Essence x5
-			})),
 		}),
-		prof(ALCHEMY, sharedData({
+		prof(ALCHEMY, bubbleDown({
 			["requireSkill"] = ALCHEMY,
 		},{
+			n(QUESTS, {
+				q(70355, {	-- Dragon Isles Alchemy [A]
+					["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
+					["provider"] = { "n", 191893 },	-- Zherrak
+					["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(72245, {	-- Dragon Isles Alchemy [H]
+					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
+					["provider"] = { "n", 198392 },	-- An'timon
+					["coord"] = { 76.2, 35.8, THE_WAKING_SHORES },
+					["races"] = HORDE_ONLY,
+				}),
+				q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
+					["provider"] = { "n", 191893 },	-- Zherrak
+					["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
+					["cost"] = { { "i", 191570, 2 } },	-- 2x Dragon's Alchemical Solution
+					["_drop"] = { "g" },
+				}),
+				q(70247, {	-- Hidden Profession Master Alchemy
+					["name"] = "Hidden Profession Master: Alchemy",
+					["provider"] = { "n", 194829 },	-- Grigori Vialtry
+					["coord"] = { 60.9, 75.8, THE_WAKING_SHORES },
+				}),
+				q(70183, { -- Specialized Secrets: Alchemy
+					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+					["provider"] = { "n", 193110 },	-- Khadin
+					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
+					["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
+					["isRepeatable"] = true,
+					["g"] = {
+						i(190456),	-- Artisan's Mettle
+					},
+				}),
+			}),
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -372,26 +405,94 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					r(370714),	-- Transmute: Decay to Elements
 				},
 			}),
-			n(-1144, {	-- Weekly Profession Knowledge
+			n(TREASURES, {
+				o(380611, {	-- Canteen of Suspicious Water
+					["description"] = "Inside cave.",
+					["coord"] = { 79.2, 83.8, OHNAHRAN_PLAINS },
+					["questID"] = 70305,
+					["g"] = {
+						i(198710),	-- Canteen of Suspicious Water
+					},
+				}),
+				o(380605, {	-- Contraband Concoction
+					["description"] = "Hidden in some bushes, hard to see.",
+					["coord"] = { 59.5, 38.4, THALDRASZUS },
+					["questID"] = 70301,
+					["g"] = {
+						i(198697),	-- Contraband Concoction
+					},
+				}),
+				o(380457, {	-- Experimental Decay Cauldron
+					["coord"] = { 16.4, 38.5, THE_AZURE_SPAN },
+					["questID"] = 70208,
+					["g"] = {
+						i(198599),	-- Experimental Decay Sample
+					},
+				}),
+				o(380559, {	-- Frostforged Potion
+					["coord"] = { 55.0, 81.0, THE_WAKING_SHORES },
+					["questID"] = 70274,
+					["g"] = {
+						i(198663),	-- Frostforged Potion
+					},
+				}),
+				o(380586, {	-- Mysterious Cauldrons
+					["description"] = "Grab and drop a Discarded Toy in each of these, then you can collect the treasure.",
+					["coord"] = { 55.2, 30.5, THALDRASZUS },
+					["questID"] = 70278,
+					["g"] = {
+						i(201003, {["timeline"] = {ADDED_10_0_2_LAUNCH, REMOVED_10_0_5}}),	-- Furry Gloop
+						i(203471, {["timeline"] = {ADDED_10_0_5}}),	-- Tasty Candy
+					},
+				}),
+				o(401236, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Malnourished Specimen
+					["coord"] = { 52.6, 18.3, ZARALEK_CAVERN },
+					["questID"] = 75646,
+				})),
+				o(401238, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Marrow-Ripened Slime
+					["coord"] = { 62.1, 41.1, ZARALEK_CAVERN },
+					["questID"] = 75649,
+					["g"] = {
+						i(205212),	-- Marrow-Ripened Slime
+					},
+				})),
+				o(380616, {	-- Small Basket of Firewater Powder
+					["coord"] = { 67.0, 13.2, THE_AZURE_SPAN },
+					["questID"] = 70309,
+					["g"] = {
+						i(198712),	-- Firewater Powder Sample
+					},
+				}),
+				o(401240, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Suspicious Mold
+					["coord"] = { 40.4, 59.2, ZARALEK_CAVERN },
+					["questID"] = 75651,
+					["g"] = {
+						i(205213),	-- Suspicious Mold
+					},
+				})),
+				o(380590, {	-- Well Insulated Mug
+					["coord"] = { 25.1, 73.3, THE_WAKING_SHORES },
+					["questID"] = 70289,
+					["g"] = {
+						i(198685),	-- Well Insulated Mug
+					},
+				}),
+			}),
+			n(-1144, sharedData({ ["isWeekly"] = true }, {	-- Weekly Profession Knowledge
 				q(74108, {	-- Inscription Order: Alchemy
 					["name"] = "Inscription Order: Alchemy",
 					["description"] = "Requires a crafting order from Inscription.",
 					["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(66373, {	-- Weekly Alchemy Knowledgepoint #1
 					["name"] = "Alchemy Treasure #1",
 					["provider"] = { "i", 193891 },		-- Experimental Substance
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(66374, {	-- Weekly Alchemy Knowledgepoint #2
 					["name"] = "Alchemy Treasure #2",
 					["provider"] = { "i", 193897 },		-- Reawakened Catalyst
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70504, {	-- Weekly Alchemy Knowledgepoint #3
@@ -400,8 +501,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["crs"] = { 186361 },	-- Rotting Treant
 					["coord"] = { 18.6, 38.4, THE_AZURE_SPAN },
 					["provider"] = { "i", 198963 },		-- Decaying Phlegm
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70511, {	-- Weekly Alchemy Knowledgepoint #4
@@ -410,185 +509,80 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["crs"] = { 191712 },	-- Hissing Springsoul
 					["coord"] = { 80.2, 75.6, OHNAHRAN_PLAINS },
 					["provider"] = { "i", 198964 },		-- Elementious Splinter
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
-			}),
-			q(70355, {	-- Dragon Isles Alchemy [A]
-				["sourceQuests"] = {
-					67700,	-- To The Dragon Isles! [A]
-				},
-				["provider"] = { "n", 191893 },	-- Zherrak
-				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(72245, {	-- Dragon Isles Alchemy [H]
-				["sourceQuests"] = {
-					65444,	-- To the Dragon Isles! [H]
-				},
-				["provider"] = { "n", 198392 },	-- An'timon
-				["coord"] = { 76.2, 35.8, THE_WAKING_SHORES },
-				["races"] = HORDE_ONLY,
-			}),
-			q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
-				-- ["sourceQuests"] = { },
-				["provider"] = { "n", 191893 },	-- Zherrak
-				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
-				["cost"] = { { "i", 191570, 2 }, },	-- 2x Dragon's Alchemical Solution
-				["_drop"] = { "g" },
-			}),
-			q(70183, { -- Specialized Secrets: Alchemy
-				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
-				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
-				["isRepeatable"] = true,
-				["g"] = {
-					i(190456),	-- Artisan's Mettle
-				},
-			}),
-			q(66940, {	-- Elixir Experiment
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.6, 63.6, VALDRAKKEN },
-				["provider"] = { "n", 191002 },	-- Dhurrel
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198608),	-- Alchemy Notes
-				},
-			}),
-			q(66938, {	-- Mammoth Marrow
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.6, 63.6, VALDRAKKEN },
-				["provider"] = { "n", 191002 },	-- Dhurrel
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198608),	-- Alchemy Notes
-				},
-			}),
-			q(72427, {	-- Animated Infusion
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.6, 63.6, VALDRAKKEN },
-				["provider"] = { "n", 191002 },	-- Dhurrel
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198608),	-- Alchemy Notes
-				},
-			}),
-			q(66937, {	-- Decaying News
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.6, 62.6, VALDRAKKEN },
-				["provider"] = { "n", 191000 },	-- Dothenos
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198608),	-- Alchemy Notes
-				},
-			}),
-			q(70533, {	-- Decaying News
-				["description"] = "Requires 45 Skill.",
-				["coord"] = { 36.4, 71.4, VALDRAKKEN },
-				["provider"] = { "n", 185545 },	-- Conflago
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198608),	-- Alchemy Notes
-				},
-			}),
-			q(70532, {	-- Aiding the Raiding
-				["description"] = "Requires 45 Skill.",
-				["coord"] = { 36.4, 71.4, VALDRAKKEN },
-				["provider"] = { "n", 185545 },	-- Conflago
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198608),	-- Alchemy Notes
-				},
-			}),
-			q(70531, {	-- Mana Markets
-				["description"] = "Requires 45 Skill.",
-				["coord"] = { 36.4, 71.4, VALDRAKKEN },
-				["provider"] = { "n", 185545 },	-- Conflago
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198608),	-- Alchemy Notes
-				},
-			}),
-			q(70530, {	-- Examination Week
-				["description"] = "Requires 45 Skill.",
-				["coord"] = { 36.4, 71.4, VALDRAKKEN },
-				["provider"] = { "n", 185545 },	-- Conflago
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198608),	-- Alchemy Notes
-				},
-			}),
-			o(380590, {	-- Well Insulated Mug
-				["questID"] = 70289,
-				["coord"] = { 25.1, 73.3, THE_WAKING_SHORES },
-				["g"] = {
-					i(198685),	-- Well Insulated Mug
-				},
-			}),
-			o(380559, {	-- Frostforged Potion
-				["questID"] = 70274,
-				["coord"] = { 55.0, 81.0, THE_WAKING_SHORES },
-				["g"] = {
-					i(198663),	-- Frostforged Potion
-				},
-			}),
-			o(380457, {	-- Experimental Decay Cauldron
-				["questID"] = 70208,
-				["coord"] = { 16.4, 38.5, THE_AZURE_SPAN },
-				["g"] = {
-					i(198599),	-- Experimental Decay Sample
-				},
-			}),
-			o(380616, {	-- Small Basket of Firewater Powder
-				["questID"] = 70309,
-				["coord"] = { 67.0, 13.2, THE_AZURE_SPAN },
-				["g"] = {
-					i(198712),	-- Firewater Powder Sample
-				},
-			}),
-			o(380611, {	-- Canteen of Suspicious Water
-				["description"] = "Inside cave.",
-				["questID"] = 70305,
-				["coord"] = { 79.2, 83.8, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(198710),	-- Canteen of Suspicious Water
-				},
-			}),
-			o(380586, {	-- Mysterious Cauldrons
-				-- Interact with objects 380551, 380552, 380553
-				["description"] = "Grab and drop a Docile Cub in each of these, then you can collect the treasure.",
-				["questID"] = 70278,
-				["coord"] = { 55.2, 30.5, THALDRASZUS },
-				["crs"] = 194855,	-- Docile Cub
-				["g"] = {
-					i(201003, {["timeline"] = {ADDED_10_0_2_LAUNCH, REMOVED_10_0_5}}),	-- Furry Gloop
-					i(203471, {["timeline"] = {ADDED_10_0_5}}),	-- Tasty Candy
-				},
-			}),
-			o(380605, {	-- Contraband Concoction
-				["description"] = "Hidden in some bushes, hard to see.",
-				["questID"] = 70301,
-				["coord"] = { 59.5, 38.4, THALDRASZUS },
-				["g"] = {
-					i(198697),	-- Contraband Concoction
-				},
-			}),
-			q(70247, {	-- Hidden Profession Master Alchemy
-				["name"] = "Hidden Profession Master: Alchemy",
-				["provider"] = { "n", 194829 },	-- Grigori Vialtry
-				["coord"] = { 60.9, 75.8, THE_WAKING_SHORES },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
+				q(66940, {	-- Elixir Experiment
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 191002 },	-- Dhurrel
+					["coord"] = { 36.6, 63.6, VALDRAKKEN },
+					["g"] = {
+						i(198608),	-- Alchemy Notes
+					},
+				}),
+				q(66938, {	-- Mammoth Marrow
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 191002 },	-- Dhurrel
+					["coord"] = { 36.6, 63.6, VALDRAKKEN },
+					["g"] = {
+						i(198608),	-- Alchemy Notes
+					},
+				}),
+				q(72427, {	-- Animated Infusion
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 191002 },	-- Dhurrel
+					["coord"] = { 36.6, 63.6, VALDRAKKEN },
+					["g"] = {
+						i(198608),	-- Alchemy Notes
+					},
+				}),
+				q(66937, {	-- Decaying News
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 191000 },	-- Dothenos
+					["coord"] = { 36.6, 62.6, VALDRAKKEN },
+					["g"] = {
+						i(198608),	-- Alchemy Notes
+					},
+				}),
+				q(70533, {	-- Decaying News
+					["description"] = "Requires 45 Skill.",
+					["provider"] = { "n", 185545 },	-- Conflago
+					["coord"] = { 36.4, 71.4, VALDRAKKEN },
+					["g"] = {
+						i(198608),	-- Alchemy Notes
+					},
+				}),
+				q(70532, {	-- Aiding the Raiding
+					["description"] = "Requires 45 Skill.",
+					["provider"] = { "n", 185545 },	-- Conflago
+					["coord"] = { 36.4, 71.4, VALDRAKKEN },
+					["g"] = {
+						i(198608),	-- Alchemy Notes
+					},
+				}),
+				q(70531, {	-- Mana Markets
+					["description"] = "Requires 45 Skill.",
+					["provider"] = { "n", 185545 },	-- Conflago
+					["coord"] = { 36.4, 71.4, VALDRAKKEN },
+					["g"] = {
+						i(198608),	-- Alchemy Notes
+					},
+				}),
+				q(70530, {	-- Examination Week
+					["description"] = "Requires 45 Skill.",
+					["provider"] = { "n", 185545 },	-- Conflago
+					["coord"] = { 36.4, 71.4, VALDRAKKEN },
+					["g"] = {
+						i(198608),	-- Alchemy Notes
+					},
+				}),
+				q(75363, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Deepflayer Dust
+					["provider"] = { "n", 203516 },	-- Kayann
+					["coord"] = { 36.5, 62.5, VALDRAKKEN },
+					["g"] = {
+						i(198608),	-- Alchemy Notes
+					},
+				})),
+			})),
 		})),
 		prof(BLACKSMITHING, sharedData({
 			["requireSkill"] = BLACKSMITHING,
@@ -645,8 +639,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						196168, -- Springs Heater
 						196171, -- Flame Boiler
 					},
-					["coord"] = { 39.0, 48.8, THALDRASZUS },
 					["provider"] = { "i", 198966 },	-- Molten Globule
+					["coord"] = { 39.0, 48.8, THALDRASZUS },
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -654,9 +648,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["name"] = "Blacksmithing Drop #2: Earth Elemental",
 					["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = EARTH_ELEMENTAL.crs,
-					["coords"] = EARTH_ELEMENTAL.coords,
 					["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
+					["coords"] = EARTH_ELEMENTAL.coords,
 					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
@@ -680,87 +673,78 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				-- ["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
 			}),
 			q(70025, {	-- Artisan's Supply: Draconium Sickle
+				["provider"] = { "n", 192164 },	-- Gringot Coldsteel
 				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
-				["qg"] = 192164,	-- Gringot Coldsteel
-				["requireSkill"] = BLACKSMITHING,
 				["cost"] = {{"i",191241,1}},	-- Draconium Sickle
-				-- ["sourceQuest"] = ,
 				["_drop"] = { "g" },
 			}),
 			q(66897, {	-- Fuel for the Forge
 				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
 				["g"] = {
 					i(198606),	-- Blacksmith's Writ
 				},
 			}),
 			q(66941, {	-- Tremendous Tools
 				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
 				["g"] = {
 					i(198606),	-- Blacksmith's Writ
 				},
 			}),
 			q(72398, {	-- Rock and Stone
 				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
 				["g"] = {
 					i(198606),	-- Blacksmith's Writ
 				},
 			}),
 			q(70235, {	-- Repair Bill
 				["description"] = "Requires 45 Skill.",
-				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
+				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
 				["g"] = {
 					i(198606),	-- Blacksmith's Writ
 				},
 			}),
 			q(70234, {	-- All this Hammering
 				["description"] = "Requires 45 Skill.",
-				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
+				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
 				["g"] = {
 					i(198606),	-- Blacksmith's Writ
 				},
 			}),
 			q(70233, {	-- Axe Shortage
 				["description"] = "Requires 45 Skill.",
-				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
+				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
 				["g"] = {
 					i(198606),	-- Blacksmith's Writ
 				},
 			}),
 			q(70211, {	-- Stomping Explorers
 				["description"] = "Requires 45 Skill.",
-				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
+				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
 				["g"] = {
 					i(198606),	-- Blacksmith's Writ
 				},
 			}),
 			q(66517, { -- A New Source of Weapons
 				["description"] = "Requires 45 Skill.",
-				["coord"] = { 36.8, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
+				["coord"] = { 36.8, 63.6, VALDRAKKEN },
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
 				["g"] = {
@@ -769,8 +753,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			}),
 			q(70589, {	-- Blacksmithing Services Requested
 				["description"] = "Requires 25 Skill.",
-				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["provider"] = { "n", 194026 },	-- Azley
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
@@ -789,69 +773,69 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				},
 			}),
 			o(380620, {	-- Ancient Spear Shards
-				["questID"] = 70313,
 				["coord"] = { 81.1, 37.9, OHNAHRAN_PLAINS },
+				["questID"] = 70313,
 				["g"] = {
 					i(201004),	-- Ancient Spear Shards
 				},
 			}),
 			o(380619, {	-- Curious Ingots
-				["questID"] = 70312,
 				["coord"] = { 65.6, 25.7, THE_WAKING_SHORES },
+				["questID"] = 70312,
 				["g"] = {
 					i(201005),	-- Curious Ingots
 				},
 			}),
 			o(380598, {	-- Molten Ingot
-				["questID"] = 70296,
 				["coord"] = { 35.6, 64.5, THE_WAKING_SHORES },
+				["questID"] = 70296,
 				["g"] = {
 					i(201008),	-- Molten Ingot
 				},
 			}),
 			o(380617, {	-- Qalashi Weapon Diagram
-				["questID"] = 70310,
 				["coord"] = { 34.5, 67.1, THE_WAKING_SHORES },
+				["questID"] = 70310,
 				["g"] = {
 					i(201010),	-- Qalashi Weapon Diagram
 				},
 			}),
 			o(376657, {	-- Ancient Monument
 				["description"] = "Kill NPCs and loot the sword. If you receive no loot, check your mail!",
-				["questID"] = 70246,
-				["coord"] = { 22.3, 87.7, THE_WAKING_SHORES },
 				["crs"] = { 188648 },	-- Enchanted Bulwark
+				["coord"] = { 22.3, 87.7, THE_WAKING_SHORES },
+				["questID"] = 70246,
 				["g"] = {
 					i(201007),	-- Ancient Monument
 				},
 			}),
 			o(380516, {	-- Glimmer of Wisdom
 				["description"] = "Craft a Primal Molten Alloy or a Frostfire Alloy next to the Dim Forge. A sparkle will appear in the deposit box, which you can click to grab the treasure.",
-				["sourceQuest"] = 70232, -- This triggers when crafting the Alloy, which makes the treasure appear.
-				["questID"] = 70230,
+				["sourceQuests"] = { 70232 }, -- This triggers when crafting the Alloy, which makes the treasure appear.
 				["coord"] = { 56.4, 19.5, THE_WAKING_SHORES },
+				["questID"] = 70230,
 				["g"] = {
 					i(198791),	-- Glimmer of Blacksmithing Wisdom
 				},
 			}),
 			o(380623, {	-- Spelltouched Tongs
 				["description"] = "If you do not have Mining to clear the Rock Wall, try dying. Ghosts can walk through it.",
-				["questID"] = 70314,
 				["coord"] = { 53.1, 66.1, THE_AZURE_SPAN },
+				["questID"] = 70314,
 				["g"] = {
 					i(201011),	-- Spelltouched Tongs
 				},
 			}),
 			o(380709, {	-- Falconer Gauntlet Drawings
-				["questID"] = 70353,
 				["coord"] = { 50.9, 66.5, OHNAHRAN_PLAINS },
+				["questID"] = 70353,
 				["g"] = {
 					i(201009),	-- Falconer Gauntlet Drawings
 				},
 			}),
 			o(380618, {	-- Draconic Flux
-				["questID"] = 70311,
 				["coord"] = { 52.2, 80.5, THALDRASZUS },
+				["questID"] = 70311,
 				["g"] = {
 					i(201006),	-- Draconic Flux
 				},
@@ -1794,9 +1778,49 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),
-		prof(JEWELCRAFTING, sharedData({
+		prof(JEWELCRAFTING, bubbleDown({
 			["requireSkill"] = JEWELCRAFTING,
 		},{
+			n(QUESTS, {
+				q(70365, {	-- To the Dragon Isles: Jewelcrafting
+					["sourceQuests"] = {
+						67700,	-- To The Dragon Isles! [A]
+						65444,	-- To the Dragon Isles! [H]
+					},
+					["provider"] = { "n", 192121 },	-- Falron Greygold
+					["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
+				}),
+				q(72247, {	-- To the Dragon Isles: Jewelcrafting
+					["sourceQuests"] = {
+						67700,	-- To The Dragon Isles! [A]
+						65444,	-- To the Dragon Isles! [H]
+					},
+					["provider"] = { "n", 198398 },	-- Misty Catseye
+					["coord"] = { 76.2, 33.6, THE_WAKING_SHORES },
+				}),
+				q(70032, {	-- Artisan's Supply: Jeweler's Specs
+					["sourceQuests"] = { 70365 },	-- To the Dragon Isles: Jewelcrafting
+					["provider"] = { "n", 192121 },	-- Falron Greygold
+					["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
+					["cost"] = { { "i", 193037, 1 }, },	-- Sundered Onyx Loupe
+					["_drop"] = { "g" },
+				}),
+				q(70255, {	-- Hidden Profession Master Jewelcrafting
+					["name"] = "Hidden Profession Master: Jewelcrafting",
+					["provider"] = { "n", 194841 },	-- Pluutar
+					["coord"] = { 46.2, 40.8, THE_AZURE_SPAN },
+				}),
+				q(70189, { -- Specialized Secrets: Jewelcrafting
+					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+					["provider"] = { "n", 193110 },	-- Khadin
+					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
+					["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
+					["isRepeatable"] = true,
+					["g"] = {
+						i(190456),	-- Artisan's Mettle
+					},
+				}),
+			}),
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1831,26 +1855,97 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					r(374458),	-- Zen Neltharite
 				},
 			}),
-			n(-1144, {	-- Weekly Profession Knowledge
+			n(TREASURES, {
+				o(380591, {	-- Closely Guarded Shiny
+					["questID"] = 70292,
+					["coord"] = { 50.4, 45.1, THE_WAKING_SHORES },
+					["g"] = {
+						i(198687),	-- Closely Guarded Shiny
+					},
+				}),
+				o(380569, {	-- Crystalline Overgrowth
+					["questID"] = 70277,
+					["coord"] = { 45.01, 61.3, THE_AZURE_SPAN },
+					["g"] = {
+						i(198664),	-- Crystalline Overgrowth
+					},
+				}),
+				o(380585, {	-- Erupted Alexstraszite Cluster
+					["questID"] = 70285,
+					["coord"] = { 59.8, 65.2, THALDRASZUS },
+					["g"] = {
+						i(198682),	-- Alexstraszite Cluster
+					},
+				}),
+				o(380548, {	-- Forgotten Jewelry Box
+					["questID"] = 70263,
+					["coord"] = { 61.8, 13.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(198657),	-- Forgotten Jewelry Box
+						i(198660),	-- Fragmented Key
+					},
+				}),
+				o(401292, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Gently Jostled Jewels
+					["coord"] = { 34.5, 45.5, ZARALEK_CAVERN },
+					["questID"] = 75653,
+					["g"] = {
+						i(205216),	-- Gently Jostled Jewels
+					},
+				})),
+				o(380556, {	-- Harmonic Chest
+					["description"] = "Click the key next to the chest, then click the three crystals in the same lake. Return to the chest to collect the treasure.",
+					["questID"] = 70271,
+					["coord"] = { 44.6, 61.2, THE_AZURE_SPAN },
+					["g"] = {
+						i(201016),	-- Harmonic Crystal Harmonizer
+					},
+				}),
+				o(380822, {	-- Igneous Gem
+					["description"] = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
+					["questID"] = 70273,
+					["coord"] = { 33.9, 63.7, THE_WAKING_SHORES },
+					["g"] = {
+						i(201017),	-- Igneous Gem
+					},
+				}),
+				o(380577, {	-- Lofty Malygite
+					["questID"] = 70282,
+					["coord"] = { 25.2, 34.8, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(198670),	-- Lofty Malygite
+					},
+				}),
+				o(380545, {	-- Painter's Pretty Jewel
+					["description"] = "Inside the foilage of a lantern, very small! May also be bugged in War Mode.",
+					["questID"] = 70261,
+					["coord"] = { 56.9, 43.7, THALDRASZUS },
+					["g"] = {
+						i(198656),	-- Painter's Pretty Jewel
+					},
+				}),
+				o(401241, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Snubbed Snail Shells
+					["coord"] = { 40.4, 80.7, ZARALEK_CAVERN },
+					["questID"] = 75652,
+					["g"] = {
+						i(205214),	-- Snubbed Snail Shells
+					},
+				})),
+			}),
+			n(-1144, sharedData({ ["isWeekly"] = true }, {	-- Weekly Profession Knowledge
 				q(74112, {	-- Inscription Order: Jewelcrafting
 					["name"] = "Inscription Order: Jewelcrafting",
 					["description"] = "Requires a crafting order from Inscription.",
 					["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(66388, {	-- Weekly Jewelcrafting Knowledgepoint #1
 					["name"] = "Jewelcrafting Treasure #1",
 					["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(66389, {	-- Weekly Jewelcrafting Knowledgepoint #2
 					["name"] = "Jewelcrafting Treasure #2",
 					["provider"] = { "i", 193907 },		-- Chipped Tyrstone
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #3
@@ -1862,220 +1957,153 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						195063,	-- Rebel Conjurer
 						195060,	-- Rebel Mender
 					},
+					["provider"] = { "i", 198974 },	-- Elegantly Engraved Embellishment
 					["coords"] = {
 						{ 46.8, 59.6, THALDRASZUS },
 						{ 45.8 ,58.2, THALDRASZUS },
 					},
-					["provider"] = { "i", 198974 },	-- Elegantly Engraved Embellishment
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #4
 					["name"] = "Jewelcrafting Drop #2: Earth Elemental",
 					["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = EARTH_ELEMENTAL.crs,
-					["coords"] = EARTH_ELEMENTAL.coords,
 					["provider"] = { "i", 198973 },	-- Incandescent Curio
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
-					["isWeekly"] = true,
+					["coords"] = EARTH_ELEMENTAL.coords,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
-			}),
-			q(70365, {	-- To the Dragon Isles: Jewelcrafting
-				["sourceQuests"] = {
-					67700,	-- To The Dragon Isles! [A]
-					65444,	-- To the Dragon Isles! [H]
-				},
-				["provider"] = { "n", 192121 },	-- Falron Greygold
-				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
-			}),
-			q(72247, {	-- To the Dragon Isles: Jewelcrafting
-				["sourceQuests"] = {
-					67700,	-- To The Dragon Isles! [A]
-					65444,	-- To the Dragon Isles! [H]
-				},
-				["provider"] = { "n", 198398 },	-- Misty Catseye
-				["coord"] = { 76.2, 33.6, THE_WAKING_SHORES },
-			}),
-			q(70032, {	-- Artisan's Supply: Jeweler's Specs
-				-- TODO: Available 64??
-				["sourceQuests"] = { 70365 },	-- To the Dragon Isles: Jewelcrafting
-				["provider"] = { "n", 192121 },	-- Falron Greygold
-				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
-				["_drop"] = { "g" },
-			}),
-			q(70189, { -- Specialized Secrets: Jewelcrafting
-				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
-				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
-				["isRepeatable"] = true,
-				["g"] = {
-					i(190456),	-- Artisan's Mettle
-				},
-			}),
-			q(72428, {	-- Hornswog Hoarders
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.8, 62.8, VALDRAKKEN },
-				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198612),	-- Jeweler's Cuts
-				},
-			}),
-			q(66516, {	-- Mundane Gems, I Think not!
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.8, 62.8, VALDRAKKEN },
-				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198612),	-- Jeweler's Cuts
-				},
-			}),
-			q(66950, {	-- Heart of a Giant
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				["provider"] = { "n", 191004 },	-- Temnaayu
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198612),	-- Jeweler's Cuts
-				},
-			}),
-			q(66949, {	-- Trinket Bandits
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				["provider"] = { "n", 191004 },	-- Temnaayu
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198612),	-- Jeweler's Cuts
-				},
-			}),
-			q(70565, {	-- Separation by Saturation
-				["description"] = "Requires 45 Skill.",
-				["coord"] = { 40.6, 61.2, VALDRAKKEN },
-				["provider"] = { "n", 190094 },	-- Tuluradormi
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198612),	-- Jeweler's Cuts
-				},
-			}),
-			q(70564, {	-- Spectacular
-				["description"] = "Requires 45 Skill.",
-				["coord"] = { 40.6, 61.2, VALDRAKKEN },
-				["provider"] = { "n", 190094 },	-- Tuluradormi
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198612),	-- Jeweler's Cuts
-				},
-			}),
-			q(70563, {	-- The Exhibition
-				["description"] = "Requires 45 Skill.",
-				["coord"] = { 40.6, 61.2, VALDRAKKEN },
-				["provider"] = { "n", 190094 },	-- Tuluradormi
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198612),	-- Jeweler's Cuts
-				},
-			}),
-			q(70562, {	-- The Plumbers, Mason
-				["description"] = "Requires 45 Skill.",
-				["coord"] = { 40.6, 61.2, VALDRAKKEN },
-				["provider"] = { "n", 190094 },	-- Tuluradormi
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198612),	-- Jeweler's Cuts
-				},
-			}),
-			q(70593, {	-- Jewelcrafting Services Requested
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 35.6, 58.8, VALDRAKKEN },
-				["provider"] = { "n", 194026 },	-- Azley
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198612),	-- Jeweler's Cuts
-				},
-			}),
-			o(380822, {	-- Igneous Gem
-				["description"] = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
-				["questID"] = 70273,
-				["coord"] = { 33.9, 63.7, THE_WAKING_SHORES },
-				["g"] = {
-					i(201017),	-- Igneous Gem
-				},
-			}),
-			o(380591, {	-- Closely Guarded Shiny
-				["questID"] = 70292,
-				["coord"] = { 50.4, 45.1, THE_WAKING_SHORES },
-				["g"] = {
-					i(198687),	-- Closely Guarded Shiny
-				},
-			}),
-			o(380556, {	-- Harmonic Chest
-				["description"] = "Click the key next to the chest, then click the three crystals in the same lake. Return to the chest to collect the treasure.",
-				["questID"] = 70271,
-				["coord"] = { 44.6, 61.2, THE_AZURE_SPAN },
-				["g"] = {
-					i(201016),	-- Harmonic Crystal Harmonizer
-				},
-			}),
-			o(380569, {	-- Crystalline Overgrowth
-				["questID"] = 70277,
-				["coord"] = { 45.01, 61.3, THE_AZURE_SPAN },
-				["g"] = {
-					i(198664),	-- Crystalline Overgrowth
-				},
-			}),
-			o(380577, {	-- Lofty Malygite
-				["questID"] = 70282,
-				["coord"] = { 25.2, 34.8, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(198670),	-- Lofty Malygite
-				},
-			}),
-			o(380548, {	-- Forgotten Jewelry Box
-				["questID"] = 70263,
-				["coord"] = { 61.8, 13.0, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(198657),	-- Forgotten Jewelry Box
-					i(198660),	-- Fragmented Key
-				},
-			}),
-			o(380545, {	-- Painter's Pretty Jewel
-				["description"] = "Inside the foilage of a lantern, very small! May also be bugged in War Mode.",
-				["questID"] = 70261,
-				["coord"] = { 56.9, 43.7, THALDRASZUS },
-				["g"] = {
-					i(198656),	-- Painter's Pretty Jewel
-				},
-			}),
-			o(380585, {	-- Erupted Alexstraszite Cluster
-				["questID"] = 70285,
-				["coord"] = { 59.8, 65.2, THALDRASZUS },
-				["g"] = {
-					i(198682),	-- Alexstraszite Cluster
-				},
-			}),
-			q(70255, {	-- Hidden Profession Master Jewelcrafting
-				["name"] = "Hidden Profession Master: Jewelcrafting",
-				["provider"] = { "n", 194841 },	-- Pluutar
-				["coord"] = { 46.2, 40.8, THE_AZURE_SPAN },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
+				q(72428, {	-- Hornswog Hoarders
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+					["coord"] = { 36.8, 62.8, VALDRAKKEN },
+					["g"] = {
+						i(198612),	-- Jeweler's Cuts
+					},
+				}),
+				q(66516, {	-- Mundane Gems, I Think not!
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+					["coord"] = { 36.8, 62.8, VALDRAKKEN },
+					["g"] = {
+						i(198612),	-- Jeweler's Cuts
+					},
+				}),
+				q(66950, {	-- Heart of a Giant
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 191004 },	-- Temnaayu
+					["coord"] = { 36.8, 62.4, VALDRAKKEN },
+					["g"] = {
+						i(198612),	-- Jeweler's Cuts
+					},
+				}),
+				q(66949, {	-- Trinket Bandits
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 191004 },	-- Temnaayu
+					["coord"] = { 36.8, 62.4, VALDRAKKEN },
+					["g"] = {
+						i(198612),	-- Jeweler's Cuts
+					},
+				}),
+				q(70565, {	-- Separation by Saturation
+					["description"] = "Requires 45 Skill.",
+					["provider"] = { "n", 190094 },	-- Tuluradormi
+					["coord"] = { 40.6, 61.2, VALDRAKKEN },
+					["g"] = {
+						i(198612),	-- Jeweler's Cuts
+					},
+				}),
+				q(70564, {	-- Spectacular
+					["description"] = "Requires 45 Skill.",
+					["provider"] = { "n", 190094 },	-- Tuluradormi
+					["coord"] = { 40.6, 61.2, VALDRAKKEN },
+					["g"] = {
+						i(198612),	-- Jeweler's Cuts
+					},
+				}),
+				q(70563, {	-- The Exhibition
+					["description"] = "Requires 45 Skill.",
+					["provider"] = { "n", 190094 },	-- Tuluradormi
+					["coord"] = { 40.6, 61.2, VALDRAKKEN },
+					["g"] = {
+						i(198612),	-- Jeweler's Cuts
+					},
+				}),
+				q(70562, {	-- The Plumbers, Mason
+					["description"] = "Requires 45 Skill.",
+					["provider"] = { "n", 190094 },	-- Tuluradormi
+					["coord"] = { 40.6, 61.2, VALDRAKKEN },
+					["g"] = {
+						i(198612),	-- Jeweler's Cuts
+					},
+				}),
+				q(75362, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Cephalo-Crystalization
+					["provider"] = { "n", 203516 },	-- Kayann
+					["coord"] = { 36.5, 62.5, VALDRAKKEN },
+					["g"] = {
+						i(198612),	-- Jeweler's Cuts
+					},
+				})),
+				q(70593, {	-- Jewelcrafting Services Requested
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 194026 },	-- Azley
+					["coord"] = { 35.6, 58.8, VALDRAKKEN },
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+					["g"] = {
+						i(198612),	-- Jeweler's Cuts
+					},
+				}),
+			})),
 		})),
-		prof(LEATHERWORKING, sharedData({
+		prof(LEATHERWORKING, bubbleDown({
 			["requireSkill"] = LEATHERWORKING,
 		},{
+			n(QUESTS, {
+				q(70362, {	-- Dragon Isles Leatherworking
+					["sourceQuests"] = {
+						67700,	-- To The Dragon Isles! [A]
+						65444,	-- To the Dragon Isles! [H]
+					},
+					["provider"] = { "n", 192048 },	-- Deidre Flemmin
+					["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
+				}),
+				q(70033, {	-- Artisan's Supply: Pioneer's Leather Boots
+					["sourceQuests"] = {
+						70362,	-- Dragon Isles Leatherworking
+						72293,	-- Adventuring in the Dragon Isles
+					},
+					["sourceQuestNumRequired"] = 1,
+					["providers"] = {
+						{ "n", 192027 },	-- Dokhusek
+						{ "n", 192048 },	-- Deirdre Flemmin
+						{ "n", 195785 },	-- Samar
+						{ "n", 196628 },	-- Ekhi
+					},
+					["coords"] = {
+						{ 57.9, 68.1, THE_WAKING_SHORES },	-- Deirdre Flemmin
+						{ 80.8, 59.4, OHNAHRAN_PLAINS },	-- Dokhusek
+						{ 29.0, 61.0, VALDRAKKEN },			-- Samar
+						{ 39.4, 55.4, OHNAHRAN_PLAINS },	-- Ekhi
+					},
+					["cost"] = { { "i", 193386, 1 } },	-- Pioneer's Leather Boots
+					["_drop"] = { "g" },
+				}),
+				q(70256, {	-- Hidden Profession Master Leatherworking
+					["name"] = "Hidden Profession Master: Leatherworking",
+					["provider"] = { "n", 194842 },	-- Erden
+					["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70191, { -- Specialized Secrets: Leatherworking
+					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+					["provider"] = { "n", 193110 },	-- Khadin
+					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
+					["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
+					["isRepeatable"] = true,
+					["g"] = {
+						i(190456),	-- Artisan's Mettle
+					},
+				}),
+			}),
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -2103,26 +2131,94 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					r(375199),	-- Witherrot Tome
 				},
 			}),
-			n(-1144, {	-- Weekly Profession Knowledge
+			n(TREASURES, {
+				o(380593, {	-- Bag of Decayed Scales
+					["questID"] = 70294,
+					["coord"] = { 56.8, 30.5, THALDRASZUS },
+					["g"] = {
+						i(198690),	-- Decayed Scales
+					},
+				}),
+				o(380587, {	-- Crate of Treated Hides
+					["questID"] = 70286,
+					["coord"] = { 57.5, 41.3, THE_AZURE_SPAN },
+					["g"] = {
+						i(198683),	-- Treated Hides
+					},
+				}),
+				o(380547, {	-- Decay-Infused Tanning Oil
+					["questID"] = 70266,
+					["coord"] = { 16.77, 38.83, THE_AZURE_SPAN },
+					["g"] = {
+						i(198658),	-- Decay-Infused Tanning Oil
+					},
+				}),
+				o(398783, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Flame-Infused Scale Oil
+					["coord"] = { 41.2, 48.7, ZARALEK_CAVERN },
+					["questID"] = 75495,
+					["g"] = {
+						i(204986),	-- Flame-Infused Scale Oil
+					},
+				})),
+				o(398785, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Lava-Forged Leatherworker's "Knife"
+					["coord"] = { 45.2, 21.0, ZARALEK_CAVERN },
+					["questID"] = 75496,
+					["g"] = {
+						i(204987),	-- Lava-Forged Leatherworker's "Knife"
+					},
+				})),
+				o(380615, {	-- Poacher's Pack
+					["questID"] = 70308,
+					["coord"] = { 39.4, 86.3, THE_WAKING_SHORES },
+					["g"] = {
+						i(198711),	-- Poacher's Pack
+					},
+				}),
+				o(380579, {	-- Spare Djaradin Tools
+					["questID"] = 70280,
+					["coord"] = { 64.3, 25.4, THE_WAKING_SHORES },
+					["g"] = {
+						i(198667),	-- Spare Djaradin Tools
+					},
+				}),
+				o(398791, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Sulfur-Soaked Skins
+					["coord"] = { 49.5, 54.8, ZARALEK_CAVERN },
+					["questID"] = 75502,
+					["g"] = {
+						i(204988),	-- Sulfur-Soaked Skins
+					},
+				})),
+				o(380554, {	-- Well-Danced Drum
+					["description"] = "Fix the drum by interacting with it, wait for the little Tuskarr to finish dancing, then you can loot the treasure.",
+					["questID"] = 70269,
+					["coord"] = { 12.5, 49.4, THE_AZURE_SPAN },
+					["g"] = {
+						i(201018),	-- Well-Danced Drum
+					},
+				}),
+				o(380602, {	-- Wind-Blessed Hide
+					["questID"] = 70300,
+					["coord"] = { 86.4, 53.7, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(198696),	-- Wind-Blessed Hide
+					},
+				}),
+			}),
+			n(-1144, sharedData({ ["isWeekly"] = true }, {	-- Weekly Profession Knowledge
 				q(74113, {	-- Inscription Order: Leatherworking
 					["name"] = "Inscription Order: Leatherworking",
 					["description"] = "Requires a crafting order from Inscription.",
 					["provider"] = { "i", 194700 },	-- Draconic Treatise on Leatherworking
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(66384, {	-- Weekly Leatherworking Knowledgepoint #1
 					["name"] = "Leatherworking Treasure #1",
 					["provider"] = { "i", 193910 },		-- Molten Dragon Scales
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(66385, {	-- Weekly Leatherworking Knowledgepoint #2
 					["name"] = "Leatherworking Treasure #2",
 					["provider"] = { "i", 193913 },		-- Preserved Animal Parts
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70522, {	-- Weekly Leatherworking Knowledgepoint #3
@@ -2132,13 +2228,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						196420,	-- Cavern Hunter (Thaldraszus)
 						190056,	-- Primal Proto-Drake
 					},
+					["provider"] = { "i", 198975 },		-- Ossified Hide
 					["coords"] = {
 						{ 80.6, 33.8, THE_WAKING_SHORES },
 						{ 79.4, 32.5, THE_WAKING_SHORES },
 					},
-					["provider"] = { "i", 198975 },		-- Ossified Hide
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70523, {	-- Weekly Leatherworking Knowledgepoint #4
@@ -2149,208 +2243,88 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						191317,	-- Creekside Grazer
 						191203,	-- Pleasant Hart
 					},
+					["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
 					["coords"] = {
 						{ 36.6, 72.8, THALDRASZUS },
 						{ 35.4, 72.8, THALDRASZUS },
 						{ 32.4, 73.5, THALDRASZUS },
 						{ 31.3, 76.5, THALDRASZUS },
 					},
-					["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
-					["isWeekly"] = true,
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
-			}),
-			q(70362, {	-- Dragon Isles Leatherworking
-				["sourceQuests"] = {
-					67700,	-- To The Dragon Isles! [A]
-					65444,	-- To the Dragon Isles! [H]
-				},
-				["provider"] = { "n", 192048 },	-- Deidre Flemmin
-				["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
-			}),
-			--[[q(TODO, {    -- Dragon Isles Leatherworking
-			--["sourceQuests"] = {  },	-- Unknown
-			["provider"] = { "n", 192048 },    -- Deirdre Flemmin
-			["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
-			),--]]
-			q(70191, { -- Specialized Secrets: Leatherworking
-				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
-				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
-				["isRepeatable"] = true,
-				["g"] = {
-					i(190456),	-- Artisan's Mettle
-				},
-			}),
-			q(70033, {	-- Artisan's Supply: Pioneer's Leather Boots
-				["sourceQuests"] = {
-					70362,	-- Dragon Isles Leatherworking
-					72293,	-- Adventuring in the Dragon Isles
-				},
-				["sourceQuestNumRequired"] = 1,
-				["providers"] = {
-					{ "n", 192027 },	-- Dokhusek
-					{ "n", 192048 },	-- Deirdre Flemmin
-					{ "n", 195785 },	-- Samar
-					{ "n", 196628 },	-- Ekhi
-				},
-				["coords"] = {
-					{ 57.9, 68.1, THE_WAKING_SHORES },	-- Deirdre Flemmin
-					{ 80.8, 59.4, OHNAHRAN_PLAINS },	-- Dokhusek
-					{ 29.0, 61.0, VALDRAKKEN },			-- Samar
-					{ 39.4, 55.4, OHNAHRAN_PLAINS },	-- Ekhi
-				},
-				["_drop"] = { "g" },
-			}),
-			q(66363, {	-- Basilisk Bucklers
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.8, 63.6, VALDRAKKEN },
-				["provider"] = { "n", 191002 },	-- Dhurrel
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			}),
-			q(66364, {	-- To Fly a Kite
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				["provider"] = { "n", 191004 },	-- Temnaayu
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			}),
-			q(66951, {	-- Population Control
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				["provider"] = { "n", 191004 },	-- Temnaayu
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			}),
-			q(72407, {	-- Soaked in Success
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				["provider"] = { "n", 191004 },	-- Temnaayu
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			}),
-			q(70569, {	-- For Trisket, a Task Kit
-				["description"] = "Requires 45 Skill.",
-				["coord"] = { 28.6, 61.4, VALDRAKKEN },
-				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			}),
-			q(70567, {	-- When You Give Bakar a Bone
-				["description"] = "Requires 45 Skill.",
-				["coord"] = { 28.6, 61.4, VALDRAKKEN },
-				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			}),
-			q(70571, {	-- Drums Here!
-				["description"] = "Requires 45 Skill.",
-				["coord"] = { 28.6, 61.4, VALDRAKKEN },
-				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			}),
-			q(70568, {	-- Tipping the Scales
-				["description"] = "Requires 45 Skill.",
-				["coord"] = { 28.6, 61.4, VALDRAKKEN },
-				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
-				["isWeekly"] = true,
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			}),
-			q(70594, {	-- Leatherworking Services Requested
-				["description"] = "Requires 25 Skill.",
-				["coord"] = { 35.6, 58.8, VALDRAKKEN },
-				["provider"] = { "n", 194026 },	-- Azley
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-				-- ["sourceQuest"] = ,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			}),
-			o(380615, {	-- Poacher's Pack
-				["questID"] = 70308,
-				["coord"] = { 39.4, 86.3, THE_WAKING_SHORES },
-				["g"] = {
-					i(198711),	-- Poacher's Pack
-				},
-			}),
-			o(380554, {	-- Well-Danced Drum
-				["description"] = "Fix the drum by interacting with it, wait for the little Tuskarr to finish dancing, then you can loot the treasure.",
-				["questID"] = 70269,
-				["coord"] = { 12.5, 49.4, THE_AZURE_SPAN },
-				["g"] = {
-					i(201018),	-- Well-Danced Drum
-				},
-			}),
-			o(380579, {	-- Spare Djaradin Tools
-				["questID"] = 70280,
-				["coord"] = { 64.3, 25.4, THE_WAKING_SHORES },
-				["g"] = {
-					i(198667),	-- Spare Djaradin Tools
-				},
-			}),
-			o(380547, {	-- Decay-Infused Tanning Oil
-				["questID"] = 70266,
-				["coord"] = { 16.77, 38.83, THE_AZURE_SPAN },
-				["g"] = {
-					i(198658),	-- Decay-Infused Tanning Oil
-				},
-			}),
-			o(380587, {	-- Crate of Treated Hides
-				["questID"] = 70286,
-				["coord"] = { 57.5, 41.3, THE_AZURE_SPAN },
-				["g"] = {
-					i(198683),	-- Treated Hides
-				},
-			}),
-			o(380602, {	-- Wind-Blessed Hide
-				["questID"] = 70300,
-				["coord"] = { 86.4, 53.7, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(198696),	-- Wind-Blessed Hide
-				},
-			}),
-			o(380593, {	-- Bag of Decayed Scales
-				["questID"] = 70294,
-				["coord"] = { 56.8, 30.5, THALDRASZUS },
-				["g"] = {
-					i(198690),	-- Decayed Scales
-				},
-			}),
-			q(70256, {	-- Hidden Profession Master Leatherworking
-				["name"] = "Hidden Profession Master: Leatherworking",
-				["provider"] = { "n", 194842 },	-- Erden
-				["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
+				q(66363, {	-- Basilisk Bucklers
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 191002 },	-- Dhurrel
+					["coord"] = { 36.8, 63.6, VALDRAKKEN },
+					["g"] = {
+						i(198613),	-- Leatherworking Designs
+					},
+				}),
+				q(66364, {	-- To Fly a Kite
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 191004 },	-- Temnaayu
+					["coord"] = { 36.8, 62.4, VALDRAKKEN },
+					["g"] = {
+						i(198613),	-- Leatherworking Designs
+					},
+				}),
+				q(66951, {	-- Population Control
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 191004 },	-- Temnaayu
+					["coord"] = { 36.8, 62.4, VALDRAKKEN },
+					["g"] = {
+						i(198613),	-- Leatherworking Designs
+					},
+				}),
+				q(72407, {	-- Soaked in Success
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 191004 },	-- Temnaayu
+					["coord"] = { 36.8, 62.4, VALDRAKKEN },
+					["g"] = {
+						i(198613),	-- Leatherworking Designs
+					},
+				}),
+				q(70569, {	-- For Trisket, a Task Kit
+					["description"] = "Requires 45 Skill.",
+					["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+					["coord"] = { 28.6, 61.4, VALDRAKKEN },
+					["g"] = {
+						i(198613),	-- Leatherworking Designs
+					},
+				}),
+				q(70567, {	-- When You Give Bakar a Bone
+					["description"] = "Requires 45 Skill.",
+					["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+					["coord"] = { 28.6, 61.4, VALDRAKKEN },
+					["g"] = {
+						i(198613),	-- Leatherworking Designs
+					},
+				}),
+				q(70571, {	-- Drums Here!
+					["description"] = "Requires 45 Skill.",
+					["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+					["coord"] = { 28.6, 61.4, VALDRAKKEN },
+					["g"] = {
+						i(198613),	-- Leatherworking Designs
+					},
+				}),
+				q(70568, {	-- Tipping the Scales
+					["description"] = "Requires 45 Skill.",
+					["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+					["coord"] = { 28.6, 61.4, VALDRAKKEN },
+					["g"] = {
+						i(198613),	-- Leatherworking Designs
+					},
+				}),
+				q(70594, {	-- Leatherworking Services Requested
+					["description"] = "Requires 25 Skill.",
+					["provider"] = { "n", 194026 },	-- Azley
+					["coord"] = { 35.6, 58.8, VALDRAKKEN },
+					["g"] = {
+						i(198613),	-- Leatherworking Designs
+					},
+				}),
+			})),
 		})),
 		prof(MINING, sharedData({
 			["requireSkill"] = MINING,
@@ -2887,6 +2861,64 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),
+		n(SPECIAL, {
+			i(200932, {	-- Encaged Airy Soul
+				["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+				["cost"] = {
+					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
+					{ "i", 199414, 1 },	-- 1x Zapthrottle Soul Inhaler
+				},
+				["coord"] = { 24.6, 36.0, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(201296, {	-- Docile Airy Soul
+						i(193921),	-- Airy Soul
+						i(201262),	-- Gale Spirit (PET!)
+					}),
+				},
+			}),
+			i(200936, {	-- Encaged Earthen Soul
+				["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+				["cost"] = {
+					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
+					{ "i", 199414, 1 },	-- 1x Zapthrottle Soul Inhaler
+				},
+				["coord"] = { 49.8, 32.8, THE_WAKING_SHORES },
+				["g"] = {
+					i(201297, {	-- Docile Earthen Soul
+						i(193920),	-- Earthen Soul
+						i(201260),	-- Dust Spirit (PET!)
+					}),
+				},
+			}),
+			i(200931, {	-- Encaged Firey Soul
+				["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+				["cost"] = {
+					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
+					{ "i", 199414, 1 },	-- 1x Zapthrottle Soul Inhaler
+				},
+				["coord"] = { 78.4, 38.8, THE_AZURE_SPAN },
+				["g"] = {
+					i(201298, {	-- Docile Fiery Soul
+						i(193362),	-- Fiery Soul
+						i(201261),	-- Blaze Spirit (PET!)
+					}),
+				},
+			}),
+			i(200934, {	-- Encaged Frosty Soul
+				["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+				["cost"] = {
+					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
+					{ "i", 199414, 1 },	-- 1x Zapthrottle Soul Inhaler
+				},
+				["coord"] = { 55.2, 76.6, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(201299, {	-- Docile Frosty Soul
+						i(193919),	-- Frosty Soul
+						i(201265),	-- Tide Spirit (PET!)
+					}),
+				},
+			}),
+		}),
 	}),
 })));
 

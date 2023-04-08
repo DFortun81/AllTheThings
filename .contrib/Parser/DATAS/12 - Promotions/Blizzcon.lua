@@ -135,7 +135,7 @@ root(ROOTS.Promotions, n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bl
 	mount(341821, {	-- Snowstorm (MOUNT!)
 		["timeline"] = { "added 9.0.2.37176", "removed 9.2.0" },
 	}),
-	pet(3053, {	-- Moon-Touched Netherwhelp
+	pet(3053, {	-- Moon-Touched Netherwhelp (PET!)
 		["timeline"] = { "added 9.0.2.37176", "removed 9.2.0" },
 	}),
 	ach(14904, {	-- Netherwhelp Online

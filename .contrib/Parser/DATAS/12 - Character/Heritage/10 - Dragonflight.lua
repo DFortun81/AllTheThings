@@ -106,6 +106,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 198983 },	-- Master Mathias Shaw
 					["coord"] = { 36.7, 51.1, NORTHSHIRE_VALLEY },
 					["g"] = {
+						title(493),	-- Lionguard %s
 						i(203153),	-- Lionguard Greathelm
 						i(203154),	-- Lionguard Greathelm
 						i(203157),	-- Lionguard Greathelm
@@ -143,42 +144,183 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 			}),
 		}),
-		-- race(ORC, bubbleDownSelf({ ["races"] = { ORC },
-			-- ["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dark Iron Dwarf|r and completed |cFFFFD700 Heritage o' the Dark Iron|r, The Dark Iron Dwarf Heritage Quest.",
-			-- ["g"] = sharedData({ ["minReputation"] = { 76, EXALTED } }, {
-				i(203179),	-- Kosh'aka Casque
-				i(203180),	-- Kosh'aka Casque
-				i(203181),	-- Kosh'aka Casque
-				i(203185),	-- Kosh'aka Spaulders
-				i(203186),	-- Kosh'aka Spaulders
-				i(203187),	-- Kosh'aka Spaulders
-				i(203188),	-- Kosh'aka Cheststraps
-				i(203189),	-- Kosh'aka Cheststraps
-				i(203190),	-- Kosh'aka Cheststraps
-				i(203191),	-- Kosh'aka Girdle
-				i(203192),	-- Kosh'aka Girdle
-				i(203193),	-- Kosh'aka Girdle
-				i(203194),	-- Kosh'aka Legstraps
-				i(203195),	-- Kosh'aka Legstraps
-				i(203196),	-- Kosh'aka Legstraps
-				i(203197),	-- Kosh'aka Greaves
-				i(203198),	-- Kosh'aka Greaves
-				i(203199),	-- Kosh'aka Greaves
-				i(203200),	-- Kosh'aka Armbands
-				i(203201),	-- Kosh'aka Armbands
-				i(203202),	-- Kosh'aka Armbands
-				i(203203),	-- Kosh'aka Grips
-				i(203204),	-- Kosh'aka Grips
-				i(203205),	-- Kosh'aka Grips
-				i(203207),	-- Kosh'aka Drape
-				i(203208),	-- Kosh'aka Drape
-				i(203209),	-- Kosh'aka Drape
-			-- }),
-		-- })),
+		race(ORC, { 
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Orc|r with a standing of |cFFFFFFFFExalted|r with Orgrimmar.",
+			["g"] = sharedData({ ["races"] = { ORC }, ["minReputation"] = { 76, EXALTED } }, {
+				q(73703, {	-- A Summon to Orgrimmar
+
+				}),
+				q(72462, {	-- A People in Need of Healing
+					["sourceQuests"] = { 73703 },	-- A Summon to Orgrimmar
+					["provider"] = { "n", 3144 },	-- Eitrigg
+					["coord"] = { 49.2, 72.3, ORGRIMMAR },
+				}),
+				q(72464, {	-- The Kosh'harg
+					["sourceQuests"] = { 72462 },	-- A People in Need of Healing
+					["provider"] = { "n", 200244 },	-- Aggra
+					["coord"] = { 54.4, 78.6, ORGRIMMAR },
+				}),
+				q(72465, {	-- The Blessing of the Land
+					["sourceQuests"] = { 72464 },	-- The Kosh'harg
+					["provider"] = { "n", 199148 },	-- Farseer Aggralan
+					["coord"] = { 52.2, 43.0, DUROTAR },
+				}),
+				q(72467, {	-- The Blessing of the Clan
+					["sourceQuests"] = { 72464 },	-- The Kosh'harg
+					["provider"] = { "n", 199148 },	-- Farseer Aggralan
+					["coord"] = { 52.2, 43.0, DUROTAR },
+				}),
+				q(72476, {	-- The Blessing of the Ancestors
+					["sourceQuests"] = { 72464 },	-- The Kosh'harg
+					["provider"] = { "n", 199148 },	-- Farseer Aggralan
+					["coord"] = { 52.2, 43.0, DUROTAR },
+				}),
+				q(72466, {	-- The Spirit of Thunder Ridge
+					["sourceQuests"] = { 72465 },	-- The Blessing of the Land
+					["provider"] = { "n", 199165 },	-- The Spirit of Thunder Ridge
+					["coord"] = { 40.6, 26.8, DUROTAR },
+				}),
+				q(74581, {	-- The Long Knives
+					["sourceQuests"] = { 72467 },	-- The Blessing of the Clan
+					["providers"] = {
+						{ "n", 199173 },	-- Thrall
+						-- maybe given by who you chose in previous quest?
+						-- { "n", TODO },	-- Eitrigg
+						-- { "n", TODO },	-- Jorin Deadeye
+						-- { "n", TODO },	-- Gorgonna
+						-- { "n", TODO },	-- Gorfax Angerfang
+						-- { "n", TODO },	-- Thega Graveblade
+					},
+					["coord"] = { 52.3, 42.9, DUROTAR },
+				}),
+				q(72474, {	-- Tracking a Killer
+					["sourceQuests"] = { 74581 },	-- The Long Knives
+					["provider"] = { "n", 10176 },	-- Kaltunk
+					["coord"] = { 45.2, 68.4, DUROTAR },
+				}),
+				q(72463, {	-- Galgar's Cactus Apple Surprise...
+					["sourceQuests"] = { 74581 },	-- The Long Knives
+					["provider"] = { "n", 200760 },	-- Bag of Cactus Apples
+					["coord"] = { 50.0, 60.0, DUROTAR },
+					["isBreadcrumb"] = true,
+					["g"] = {
+						i(202402),	-- Bag of Cactus Apples
+						i(202401),	-- Cactus Apple Surprise
+					},
+				}),
+				q(72475, {	-- Cornering Gor'krosh
+					["sourceQuests"] = { 72474 },	-- Tracking a Killer
+					["provider"] = { "n", 10176 },	-- Kaltunk
+					["coord"] = { 45.2, 68.4, DUROTAR },
+				}),
+				q(74374, {	-- An Important Heirloom
+					["sourceQuests"] = { 72476 },	-- The Blessing of the Ancestors
+					["provider"] = { "n", 199383 },	-- Cook Torka
+					["coord"] = { 50.7, 42.7, DUROTAR },
+				}),
+				q(72477, {	-- Orcish Groceries
+					["sourceQuests"] = { 74374 },	-- An Important Heirloom
+					["provider"] = { "n", 199383 },	-- Cook Torka
+					["coord"] = { 50.7, 42.7, DUROTAR },
+					["g"] = {
+						-- recipes
+						r(399034, {["u"]=TRAINING}),	-- Curried Coconut Crab (RECIPE!)
+						r(399040, {["u"]=TRAINING}),	-- Feast for the Ancestors (RECIPE!)
+						r(399035, {["u"]=TRAINING}),	-- Grilled Southfury Salmon (RECIPE!)
+						r(399038, {["u"]=TRAINING}),	-- Spicy Seared Talbuk Steak (RECIPE!)
+						-- items
+						i(202026),	-- Durotar Coast Crab
+						i(202031),	-- Farahlon Fenugreek
+						i(202027),	-- Fresh Talbuk Steak
+						i(202030),	-- Ground Gorgrond Pepper
+						i(202029),	-- Isle Lemon
+						i(202025),	-- Keg of Ancestral Ale
+						i(202707),	-- Un'goro Coconut
+						i(202028),	-- Southfury Salmon
+						i(204793),	-- Suja's Sweet Salt
+						i(202706),	-- Zandali Piri Piri
+					},
+				}),
+				q(74415, {	-- A Worthy Offering
+					["sourceQuests"] = { 72477 },	-- Orcish Groceries
+					["provider"] = { "n", 201361 },	-- Durak
+					["coord"] = { 50.8, 42.6, DUROTAR },
+					["g"] = {
+						-- items
+						i(202026),	-- Durotar Coast Crab
+						i(202031),	-- Farahlon Fenugreek
+						i(202027),	-- Fresh Talbuk Steak
+						i(202030),	-- Ground Gorgrond Pepper
+						i(202029),	-- Isle Lemon
+						i(202025),	-- Keg of Ancestral Ale
+						i(202707),	-- Un'goro Coconut
+						i(202028),	-- Southfury Salmon
+						i(204793),	-- Suja's Sweet Salt
+						i(202706),	-- Zandali Piri Piri
+						-- after cooking
+						i(202708),	-- Curried Coconut Crab
+						i(202032),	-- Feast for the Ancestors
+						i(202710),	-- Grilled Southfury Salmon
+						i(202709),	-- Spicy Seared Talbuk Steak
+					},
+				}),
+				q(72478, {	-- Honor and Glory
+					["sourceQuests"] = {
+						72466,	-- The Spirit of Thunder Ridge
+						72475,	-- Cornering Gor'krosh
+						74415,	-- A Worthy Offering
+					},
+					["provider"] = { "n", 199148 },	-- Farseer Aggralan
+					["coord"] = { 52.2, 43.0, DUROTAR },
+				}),
+				q(72479, {	-- Aka'magosh
+					["sourceQuests"] = { 72478 },	-- Honor and Glory
+					["provider"] = { "n", 200437 },	-- Thrall
+					["coord"] = { 52.3, 43.4, DUROTAR },
+					["g"] = {
+						i(204170),	-- Clan Banner (TOY!)
+						i(203179),	-- Kosh'aka Casque
+						i(203180),	-- Kosh'aka Casque
+						i(203181),	-- Kosh'aka Casque
+						i(203185),	-- Kosh'aka Spaulders
+						i(203186),	-- Kosh'aka Spaulders
+						i(203187),	-- Kosh'aka Spaulders
+						i(203188),	-- Kosh'aka Cheststraps
+						i(203189),	-- Kosh'aka Cheststraps
+						i(203190),	-- Kosh'aka Cheststraps
+						i(203191),	-- Kosh'aka Girdle
+						i(203192),	-- Kosh'aka Girdle
+						i(203193),	-- Kosh'aka Girdle
+						i(203194),	-- Kosh'aka Legstraps
+						i(203195),	-- Kosh'aka Legstraps
+						i(203196),	-- Kosh'aka Legstraps
+						i(203197),	-- Kosh'aka Greaves
+						i(203198),	-- Kosh'aka Greaves
+						i(203199),	-- Kosh'aka Greaves
+						i(203200),	-- Kosh'aka Armbands
+						i(203201),	-- Kosh'aka Armbands
+						i(203202),	-- Kosh'aka Armbands
+						i(203203),	-- Kosh'aka Grips
+						i(203204),	-- Kosh'aka Grips
+						i(203205),	-- Kosh'aka Grips
+						i(203207),	-- Kosh'aka Drape
+						i(203208),	-- Kosh'aka Drape
+						i(203209),	-- Kosh'aka Drape
+					},
+				}),
+			}),
+		}),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(DF_TIER, {
-		q(74894), -- triggers after the scene ends after 'Go with Honor, Friend' (questID 72452)
+		q(74894),	-- triggers after the scene ends after 'Go with Honor, Friend' (questID 72452)
+		q(73705),	-- triggers right after accepting 'The Kosh'harg' (questID 72464)
+		q(72468),	-- choosing Thrall (Forstworlf clan) during 'The Blessing of the Clan' (questID 72467)
+		q(72470),	-- choosing Eitrigg (Blackrock clan) during 'The Blessing of the Clan' (questID 72467)
+		q(72472),	-- choosing Jorin Deadeye (Bleeding Hollow clan) during 'The Blessing of the Clan' (questID 72467)
+		q(72469),	-- choosing Gorgonna (Warsong clan) during 'The Blessing of the Clan' (questID 72467)
+		q(72473),	-- choosing Gorfax Angerfang (Dragonmaw clan) during 'The Blessing of the Clan' (questID 72467)
+		q(72471),	-- choosing Thega Graveblade (Shattered Hand clan) during 'The Blessing of the Clan' (questID 72467)
 	}),
 });

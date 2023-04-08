@@ -143,6 +143,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 32.7, 29.2, THE_AZURE_SPAN },
 					["questID"] = 69885,
 					["g"] = {
+						bo(74001, true),
 						i(200755),	-- Gruffy's Dented Horn
 					},
 				}),
@@ -151,6 +152,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["questID"] = 74002,
 					["isDaily"] = true,
 					["g"] = {
+						bo(69892, true),
 						i(200206),	-- Behemoth Slayer Greatbow
 					},
 				}),
@@ -158,6 +160,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 26.7, 49.0, THE_AZURE_SPAN },
 					["questID"] = 74030,
 					["g"] = {
+						bo(72154, true),
 						i(200279),	-- Competitive Throwing Gauntlets
 					},
 				}),
@@ -166,6 +169,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 63.4, 54.8, THE_WAKING_SHORES },
 					["questID"] = 73981,
 					["g"] = {
+						bo(69838, true),
 						i(200156),	-- Amethyzarite Geode
 					},
 				}),
@@ -173,6 +177,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
 					["questID"] = 73984,
 					["g"] = {
+						bo(69839, true),
 						i(200229),	-- Slightly Digested Leggings
 					},
 				}),
@@ -181,6 +186,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 78.6, 50.0, THE_WAKING_SHORES },
 					["questID"] = 73997,
 					["g"] = {
+						bo(69874, true),
 						i(200281),	-- Gorjo's Riding Crop
 					},
 				}),
@@ -202,22 +208,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				n(186827, {	-- Magmaton
 					["coord"] = { 40.0, 64.5, THE_WAKING_SHORES },
 					["questID"] = 74010,
+					["g"] = {
+						bo(70979, true),
+					},
 				}),
 				n(193152, {	-- Massive Magmashell
 					["coord"] = { 21.7, 76.2, THE_WAKING_SHORES },
 					["questID"] = 74012,
 					["g"] = {
+						bo(69848, true),
 						i(200192),	-- Handheld Geyser
 					},
 				}),
 				n(193118, {	-- O'nank Shorescour
 					["coord"] = { 82.2, 49.4, THE_WAKING_SHORES },
 					["questID"] = 74017,
+					["g"] = {
+						bo(70983, true),
+					},
 				}),
 				n(193120, {	-- Smogswog the Firebreather
 					["coord"] = { 69.0, 64.8, THE_WAKING_SHORES },
 					["questID"] = 74031,
 					["g"] = {
+						bo(69668, true),
 						i(200209),	-- Firebreather's Cowl
 					},
 				}),

@@ -1204,15 +1204,10 @@ namespace ATT
 
                 foreach (var localeKey in NAMES_BY_TYPE)
                 {
-                    switch (localeKey.Key)
+                    if (AutoLocalizeType(localeKey.Key))
                     {
-                        // only certain types we will auto-localize
-                        case "questID":
-                            AllLocaleTypes.Add("QUEST_NAMES", new SortedDictionary<long, object>(localeKey.Value));
-                            break;
-                        case "itemID":
-                            AllLocaleTypes.Add("ITEM_NAMES", new SortedDictionary<long, object>(localeKey.Value));
-                            break;
+                        string localeDictionaryName = localeKey.Key.Replace("ID", string.Empty).ToUpper() + "_NAMES";
+                        AllLocaleTypes.Add(localeDictionaryName, new SortedDictionary<long, object>(localeKey.Value));
                     }
                 }
 
@@ -2445,6 +2440,23 @@ end
                     }
 
                     LogDebug($"Converted AQD type into single Quest for Retail.", data2);
+                }
+#else
+                if (data2.TryGetValue("aqd", out Dictionary<string, object> aqd)
+                    && aqd.TryGetValue("questID", out long aQuestID))
+                {
+                    if (!AllQuests.ContainsKey(aQuestID))
+                    {
+                        AllQuests.Add(aQuestID, aqd);
+                    }
+                }
+                if (data2.TryGetValue("hqd", out Dictionary<string, object> hqd)
+                    && hqd.TryGetValue("questID", out long hQuestID))
+                {
+                    if (!AllQuests.ContainsKey(hQuestID))
+                    {
+                        AllQuests.Add(hQuestID, hqd);
+                    }
                 }
 #endif
 

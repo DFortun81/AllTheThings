@@ -535,60 +535,6 @@ p(2860),	-- Baruk Stone Defender
 p(2861),	-- Vil'thik Hatchling
 8.3.0.32593
 p(2871),	-- Pet Training Dummy
-9.0.1.34199
-p(2885),	-- Whipper
-p(2886),	-- Snipper
-p(2887),	-- Flipper
-9.0.1.34902
-p(2951),	-- PH Slime
-9.0.1.35256
-p(2968),	-- Jawbone
-p(2969),	-- Sunset Glimmerfly
-p(2970),	-- Plains Peachick
-p(2971),	-- Golden Grazer
-p(2972),	-- Shelby
-p(2973),	-- Tinyhoof
-p(2974),	-- Glitterwing
-p(2975),	-- Battery
-p(2976),	-- Slasher
-p(2977),	-- Pounder
-p(2978),	-- Gorgemouth
-p(2979),	-- Scorch
-p(2980),	-- Bloog
-p(2981),	-- Bone Crusher
-p(2982),	-- Chipper
-p(2983),	-- Leftovers
-p(2984),	-- Leftovers
-p(2985),	-- Leftovers
-p(2986),	-- Whirly
-p(2987),	-- Stinkdust
-p(2988),	-- Trailblazer
-p(2989),	-- Ash
-p(2990),	-- Fang
-p(2991),	-- Swarm
-p(2992),	-- Boneclaw
-p(2993),	-- Spindler
-p(2994),	-- Rocko
-p(2996),	-- Wretch
-p(2998),	-- Nightfang
-p(2999),	-- Rascal
-p(3000),	-- Slugger
-p(3001),	-- Runehoof
-p(3002),	-- Duster
-p(3003),	-- Star Tail
-p(3004),	-- Needlenose
-p(3005),	-- Brite
-9.0.2.36165
-p(3068),	-- Crystalsnap
-p(3070),	-- Briarpaw
-p(3071),	-- Chittermaw
-p(3072),	-- Mistwing
-p(3073),	-- Sewer Creeper
-p(3074),	-- The Countess
-p(3075),	-- Digallo
-p(3076),	-- Gelatinous
-p(3077),	-- Kostos
-p(3078),	-- Glurp
 10.1.0.48480
 p(3477),	-- Puddlehopper
 p(3478),	-- Rock Martin
@@ -1766,94 +1712,6 @@ p(2779),	-- Anima Wyrmling
 8.3.0.32593
 p(2623),	-- Dottie
 p(2871),	-- Pet Training Dummy
-9.0.1.34199
-p(2885),	-- Whipper
-p(2886),	-- Snipper
-p(2887),	-- Flipper
-9.0.1.34714
-p(2895),	-- Lost Soul
-p(2902),	-- Dusky Dredwing Pup
-p(2919),	-- Gorm Rootstinger \\ Yellow Gorm Wasp
-p(2924),	-- Tranquil Wader \\ Teal Crane
-9.0.1.34821
-p(2926),	-- Fledgling Teroclaw \\ Silver Teroclaw
-p(2927),	-- Fluttering Glimmerfly \\ Blue Glimmerfly
-p(2929),	-- Vibrant Glimmerfly \\ Pink Glimmerfly
-p(2930),	-- Glimmerpool Hatchling \\ Olive Dragon Turtle
-p(2936),	-- Copperfur Kit \\ Orange Vulpin
-p(2937),	-- Rustfur Kit \\ Red Vulpin
-p(2939),	-- Wader Chick \\ Silver Crane
-p(2943),	-- Wild Etherwyrm \\ Blue Etherwyrm
-9.0.1.34902
-p(2950),	-- Clutch \\ Grabby Hand \\ PH Skeletal Hand
-p(2951),	-- PH Slime
-9.0.1.35256
-p(2968),	-- Jawbone
-p(2969),	-- Sunset Glimmerfly
-p(2970),	-- Plains Peachick
-p(2971),	-- Golden Grazer
-p(2972),	-- Shelby
-p(2973),	-- Tinyhoof
-p(2974),	-- Glitterwing
-p(2975),	-- Battery
-p(2976),	-- Slasher
-p(2977),	-- Pounder
-p(2978),	-- Gorgemouth
-p(2979),	-- Scorch
-p(2980),	-- Bloog
-p(2981),	-- Bone Crusher
-p(2982),	-- Chipper
-p(2983),	-- Leftovers
-p(2984),	-- Leftovers
-p(2985),	-- Leftovers
-p(2986),	-- Whirly
-p(2987),	-- Stinkdust
-p(2988),	-- Trailblazer
-p(2989),	-- Ash
-p(2990),	-- Fang
-p(2991),	-- Swarm
-p(2992),	-- Boneclaw
-p(2993),	-- Spindler
-p(2994),	-- Rocko
-p(2996),	-- Wretch
-p(2998),	-- Nightfang
-p(2999),	-- Rascal
-p(3000),	-- Slugger
-p(3001),	-- Runehoof
-p(3002),	-- Duster
-p(3003),	-- Star Tail
-p(3004),	-- Needlenose
-p(3005),	-- Brite
-9.0.1.35360
-p(3007),	-- Rosetipped Spiderling \\ Scarlet Tip Spiderling
-p(3014),	-- Mire Creeper \\ Juvenile Mire Creeper
-p(3015),	-- Withering Creeper \\ Withering Mire Creeper
-p(3021),	-- Deepwood Leaper \\ Misty Leaper \\ Dark Ardenweald Squirrel
-9.0.1.35598
-p(3047),	-- Spinebug
-9.0.1.35755
-p(3049),	-- Pulsating Maggot
-p(3050),	-- Bleak Skitterer
-p(3051),	-- Animated Cruor
-p(3052),	-- Necroray Spawnling
-9.0.2.35854
-p(3053),	-- Moon-Touched Netherwhelp
-9.0.2.36165
-p(3068),	-- Crystalsnap
-p(3070),	-- Briarpaw
-p(3071),	-- Chittermaw
-p(3072),	-- Mistwing
-p(3073),	-- Sewer Creeper
-p(3074),	-- The Countess
-p(3075),	-- Digallo
-p(3076),	-- Gelatinous
-p(3077),	-- Kostos
-p(3078),	-- Glurp
-9.0.2.36294
-p(3080),	-- Verdant Kit
-p(3081),	-- Decay Grub
-p(3082),	-- Starmoth
-p(3083),	-- Crawbat
 10.1.0.48480
 p(3477),	-- Puddlehopper
 p(3478),	-- Rock Martin
@@ -1887,19 +1745,6 @@ p(3524),	-- Devourer Lobstrok
 p(3525),	-- Bestial Lurker
 p(3526),	-- Snapjaw Lurker
 p(3527),	-- Void Lurker
-p(3528),	-- Paulie \\ Scalebane Beetle
-p(3529),	-- Rango \\ Leshtar
-p(3530),	-- Miloh
-p(3531),	-- Rusty
-p(3532),	-- Amador
-p(3533),	-- Brul
-p(3534),	-- Jerrie
-p(3535),	-- Diamondshell
-p(3536),	-- Bashful \\ Sapphireshell
-p(3537),	-- Thimblerig \\ Emeraldshell
-p(3538),	-- Tricky \\ Ambershell
-p(3539),	-- Roseshell
-p(3540),	-- Brulee \\ Topazshell
 p(3541),	-- Ridged Shalewing
 p(3542),	-- Dread Shalewing
 p(3543),	-- Ravenous Shalewing

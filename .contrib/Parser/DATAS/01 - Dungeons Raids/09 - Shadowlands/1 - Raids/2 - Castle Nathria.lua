@@ -491,6 +491,20 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 					},
 				}),
 			}),
+			n(DROPS, {
+				i(179358, {	-- Remornia
+					["crs"] = {
+						167406,	-- Sire Denathrius
+						168156,	-- Remornia
+					},
+				}),
+				i(183395, {	-- Will of Remornia (PET!)
+					["crs"] = {
+						167406,	-- Sire Denathrius
+						168156,	-- Remornia
+					},
+				}),
+			}),
 			n(LEGENDARIES, {
 				e(2429, {	-- Huntsman Altimor
 					["crs"] = {
@@ -778,8 +792,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 						168156,	-- Remornia
 					},
 					["g"] = {
-						ig(179358),	-- Remornia
-						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 83,
 						}),
@@ -987,8 +999,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 					},
 					["g"] = {
 						ach(14610),	-- Clear Conscience
-						ig(179358),	-- Remornia
-						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 82,
 						}),
@@ -1217,9 +1227,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14460, {["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 }}),	-- Ahead of the Curve: Sire Denathrius
-						ig(179358),	-- Remornia
 						ig(182169),	-- Veilwing Soul (SS!)
-						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 84,
 						}),
@@ -1443,9 +1451,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 							title(432),	-- Sinbreaker <Name>
 						}),
 						ach(14610),	-- Clear Conscience
-						ig(179358),	-- Remornia
 						ig(182169),	-- Veilwing Soul (SS!)
-						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 85,
 						}),

@@ -145,10 +145,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					i(183618),	-- Highwind Darkmane (MOUNT!)
 					i(183615),	-- Warstitched Darkhound (MOUNT!)
 					-- Pets
-					i(180629),	-- Devouring Animite
-					i(181170),	-- Pernicious Bonetusk
-					i(182671),	-- Runelight Leaper
-					i(180872),	-- Spirited Skyfoal
+					i(180629),	-- Devouring Animite (PET!)
+					i(181170),	-- Pernicious Bonetusk (PET!)
+					i(182671),	-- Runelight Leaper (PET!)
+					i(180872),	-- Spirited Skyfoal (PET!)
 					-- Misc.
 					i(184650),	-- Adventure Campaign Progress
 					i(184631),	-- Adventurer's Enchanting Cache
@@ -222,7 +222,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 						-- 170039,	-- Popo [Kyrian]
 					},
 					["g"] = {
-						i(184507),	-- Lucy's Lost Collar (PET!)
+						i(184507),	-- Lucy (PET!)
 						i(184505),	-- "Adorable Ascended" Costume
 						i(184506),	-- "Flying Faerie" Costume
 						i(184503),	-- Attendant's Pocket Portal: Ardenweald

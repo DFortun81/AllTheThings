@@ -1,6 +1,22 @@
 --   WARNING: This file is dynamically generated   --
 local _, app = ...;
 local keys = {
+	["FLIGHTPATH_NAMES"] = {
+		["2712"] = "Immortal Hearth",
+		["2713"] = "Genesis Cradle Alpha",
+		["2714"] = "Genesis Cradle Beta",
+		["2715"] = "Ephemeral Plains Alpha",
+		["2716"] = "Ephemeral Plains Omega",
+		["2724"] = "Haven, Zereth Mortis",
+		["2725"] = "Faith's Repose, Zereth Mortis",
+		["2728"] = "Pilgrim's Grace, Zereth Mortis",
+		["2731"] = "Domination's Grasp",
+		["2733"] = "Zovaal's Grasp, Zereth Mortis",
+		["2734"] = "Antecedent Isle, Zereth Mortis",
+		["2736"] = "Sepulcher Overlook, Zereth Mortis",
+		["2737"] = "Sepulcher of the First Ones, Zereth Mortis",
+		["2757"] = "Genesis Cradle Omega",
+	},
 	["ITEM_NAMES"] = {
 		["2404"] = "Deprecated Pattern: Light Winter Cloak",
 		["2405"] = "Deprecated Pattern: Light Winter Boots",

@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 			}),
 			n(200885, {	-- Lady Shaz'ra
-				["coord"] = { 62.0, 54.0, THE_FORBIDDEN_REACH },
+				["coord"] = { 59.8, 58.8, THE_FORBIDDEN_REACH },
 				["questID"] = 73222,
 				["g"] = {
 					bo(74344, true),

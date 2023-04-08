@@ -368,7 +368,7 @@ _.Factions =
 				ach(5240),	-- Now That's Teamwork
 				ach(5241),	-- Stick Together Team
 
-				-- DUNGEONS & RAIDS -- WIP
+				-- DUNGEONS & RAIDS
 				ach(5009),	-- A Legendary Collection
 				ach(4955),	-- Are You Not Entertained?
 				ach(6182),	-- Fangs of the Father - Guild Edition

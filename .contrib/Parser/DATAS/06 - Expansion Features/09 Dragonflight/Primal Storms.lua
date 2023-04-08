@@ -1,6 +1,10 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local function bo(questID, isWeekly)
+    return { ["questID"] = questID, ["isWeekly"] = isWeekly };
+end
+
 local ELEMENTAL_OVERFLOW = 2118;
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(PRIMAL_STORMS, {
@@ -183,71 +187,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["maps"] = { THE_WAKING_SHORES },
 				}),
 			}),
-			n(BONUS_OBJECTIVES, sharedData({
-				["isWeekly"] = true,
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-			},{
-				q(69951, {	-- Bouldron
-					["qg"] = 193644,	-- Bouldron
-				}),
-				q(69952, {	-- Crystalus
-					["qg"] = 193645,	-- Crystalus
-				}),
-				q(69955, {	-- Emblazion
-					["qg"] = 193650,	-- Emblazion
-				}),
-				q(69961, {	-- Frozion
-					["qg"] = 193655,	-- Frozion
-				}),
-				q(69959, {	-- Gaelzion
-					["qg"] = 193653,	-- Gaelzion
-				}),
-				q(74459, {	-- Graniteclaw
-					["qg"] = 201557,	-- Graniteclaw
-					["timeline"] = { ADDED_10_0_5 },
-				}),
-				q(69960, {	-- Gravlion
-					["qg"] = 193654,	-- Gravlion
-				}),
-				q(69956, {	-- Grizzlerock
-					["qg"] = 193652,	-- Grizzlerock
-				}),
-				q(69970, {	-- Kain Firebrand
-					["qg"] = 193675,	-- Kain Firebrand
-				}),
-				q(69953, {	-- Karantun
-					["qg"] = 193647,	-- Karantun
-				}),
-				q(69971, {	-- Iceblade Trio
-					["qgs"] = {
-						193677,	-- Maeleera <First Iceblade>
-						193678,	-- Fieraan <Second Iceblade>
-						193679,	-- Leerain <Third Iceblade>
-					},
-				}),
-				q(69954, {	-- Infernum
-					["qg"] = 193648,	-- Infernum
-				}),
-				q(69975, {	-- Neela Firebane
-					["qg"] = 193686,	-- Neela Firebane
-				}),
-				q(69974, {	-- Pipspark Thundersnap
-					["qg"] = 193684,	-- Pipspark Thundersnap
-				}),
-				q(69973, {	-- Rouen Icewind
-					["qg"] = 193682,	-- Rouen Icewind
-				}),
-				q(74462, {	-- Shiobhan Waterborn
-					["qg"] = 201559,	-- Shiobhan Waterborn
-					["timeline"] = { ADDED_10_0_5 }
-				}),
-				q(69969, {	-- Voraazka
-					["qg"] = 193674,	-- Voraazka
-				}),
-				q(69972, {	-- Zurgaz Corebreaker
-					["qg"] = 193680,	-- Zurgaz Corebreaker
-				}),
-			})),
 			n(COMMON_BOSS_DROPS, {
 				["description"] = "These drops appear to be available from any Rare (Primal or not) which spawns within an area affected by a Primal Storm.",
 				["crs"] = {
@@ -295,69 +234,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 				}),
 			}),
-			n(SPECIAL, {
-				-- TODO: these actually are not related to Primal Storms. maybe will move to Exp Features > Professions > Special
-				i(200932, {	-- Encaged Airy Soul
-					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
-					["cost"] = {
-						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
-						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
-					},
-					["coord"] = { 24.6, 36.0, OHNAHRAN_PLAINS },
-				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-					["g"] = {
-						i(201296, {	-- Docile Airy Soul
-							i(193921),	-- Airy Soul
-							i(201262),	-- Gale Spirit (PET!)
-						}),
-					},
-				}),
-				i(200936, {	-- Encaged Earthen Soul
-					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
-					["cost"] = {
-						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
-						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
-					},
-					["coord"] = { 49.8, 32.8, THE_WAKING_SHORES },
-				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-					["g"] = {
-						i(201297, {	-- Docile Earthen Soul
-							i(193920),	-- Earthen Soul
-							i(201260),	-- Dust Spirit (PET!)
-						}),
-					},
-				}),
-				i(200931, {	-- Encaged Firey Soul
-					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
-					["cost"] = {
-						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
-						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
-					},
-					["coord"] = { 78.4, 38.8, THE_AZURE_SPAN },
-				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-					["g"] = {
-						i(201298, {	-- Docile Fiery Soul
-							i(193362),	-- Fiery Soul
-							i(201261),	-- Blaze Spirit (PET!)
-						}),
-					},
-				}),
-				i(200934, {	-- Encaged Frosty Soul
-					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
-					["cost"] = {
-						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
-						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
-					},
-					["coord"] = { 55.2, 76.6, OHNAHRAN_PLAINS },
-				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-					["g"] = {
-						i(201299, {	-- Docile Frosty Soul
-							i(193919),	-- Frosty Soul
-							i(201265),	-- Tide Spirit (PET!)
-						}),
-					},
-				}),
-			}),
 			petbattle(filter(BATTLE_PETS, {
 				pet(3384, {	-- Storm-Touched Bluefeather (PET!)
 					["maps"] = { THALDRASZUS },
@@ -379,6 +255,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 26.2, 75.6, THE_WAKING_SHORES },
 					["questID"] = 73986,
 					["g"] = {
+						bo(69951, true),
 						i(200231),	-- Flaming Stonescale Bulwark
 					},
 				}),
@@ -386,6 +263,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 36.1, 36.1, OHNAHRAN_PLAINS },
 					["questID"] = 73989,
 					["g"] = {
+						bo(69952, true),
 						i(200301),	-- Reclaimed Tuskarr Harpoon
 					},
 				}),
@@ -393,20 +271,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 29.6, 53.8, THE_WAKING_SHORES },
 					["questID"] = 73991,
 					["g"] = {
+						bo(69955, true),
 						i(200307),	-- Viciously Hooked Cleaver
 					},
-				}),
-				n(193678, {	-- Fieraan <Second Iceblade>
-					-- ["coord"] = { X, Y, MAP },
-					-- questID shared with Maeleera, don't duplicate
-					-- ["g"] = {
-
-					--},
 				}),
 				n(193655, {	-- Frozion <Progeny of Water>
 					["coord"] = { 22.8, 71.8, THE_WAKING_SHORES },
 					["questID"] = 73993,
 					["g"] = {
+						bo(69961, true),
 						i(200311),	-- Bonespike Mallet
 					},
 				}),
@@ -417,6 +290,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					},
 					["questID"] = 73995,
 					["g"] = {
+						bo(69959, true),
 						i(199337),	-- Bag of Furious Winds (TOY!)
 						i(200180),	-- Crystallized Lightning Staff
 					},
@@ -426,27 +300,49 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 58.3, 69.0, THE_AZURE_SPAN },
 					["questID"] = 74532,
 					["g"] = {
+						bo(74459, true),
 						i(203658),	-- Graniteclaw's Vest
 					},
 				})),
 				n(193654, {	-- Gravlion <Progeny of Earth>
 					["coord"] = { 60.7, 56.3, THALDRASZUS },
 					["questID"] = 73998,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						bo(69960, true),
+					},
 				}),
 				n(193652, {	-- Grizzlerock
 					["coord"] = { 59.4, 61.6, THALDRASZUS },
 					["questID"] = 73999,
 					["g"] = {
+						bo(69956, true),
 						i(200145),	-- Hilted Monolith
 					},
+				}),
+				-- Iceblade Trio
+				n(193677, {	-- Maeleera <First Iceblade>
+					["coord"] = { 48.6, 25.2, THE_AZURE_SPAN },
+					["crs"] = {
+						193678, -- Fieraan <Second Iceblade>
+						193679,	-- Leerain <Third Iceblade>
+					},
+					["questID"] = 74009,
+					["g"] = {
+						bo(69971, true),
+						i(200250),	-- Frost Tipped Glaive
+					},
+				}),
+				n(193678, {	-- Fieraan <Second Iceblade>
+					-- questID shared with Maeleera/Leerain, don't duplicate
+				}),
+				n(193679, {	-- Leerain <Third Iceblade>
+					-- questID shared with Maeleera/Fieraan, don't duplicate
 				}),
 				n(193648, {	-- Infernum
 					["coord"] = { 58.8, 68.4, THE_AZURE_SPAN },
 					["questID"] = 74005,
 					["g"] = {
+						bo(69954, true),
 						i(200150),	-- Infernum's Furnace
 					},
 				}),
@@ -454,6 +350,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 64.0, 72.2, THE_WAKING_SHORES },
 					["questID"] = 74006,
 					["g"] = {
+						bo(69970, true),
 						i(200155),	-- Haphazardly Welded Protector
 					},
 				}),
@@ -461,58 +358,49 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 26.8, 75.4, THE_WAKING_SHORES },
 					["questID"] = 74007,
 					["g"] = {
+						bo(69953, true),
 						i(199337),	-- Bag of Furious Winds (TOY!)
 						i(200170),	-- Stormbringer Bow
-					},
-				}),
-				n(193679, {	-- Leerain <Third Iceblade>
-					["coord"] = { 48.4, 25.4, THE_AZURE_SPAN },
-					-- questID shared with Maeleera, don't duplicate
-					-- ["g"] = {
-
-					--},
-				}),
-				n(193677, {	-- Maeleera <First Iceblade>
-					["coord"] = { 48.6, 25.2, THE_AZURE_SPAN },
-					["questID"] = 74009,
-					["g"] = {
-						i(200250),	-- Frost Tipped Glaive
 					},
 				}),
 				n(193686, {	-- Neela Firebane
 					["coord"] = { 67.6, 27.0, THE_WAKING_SHORES },
 					["questID"] = 74016,
 					["g"] = {
+						bo(69975, true),
 						i(200181),	-- Blade of Blazing Torment
+					},
+				}),
+				n(193684, {	-- Pipspark Thundersnap
+					["coord"] = { 53.4, 26.2, THE_PRIMALIST_FUTURE },
+					["questID"] = 74022,
+					["g"] = {
+						bo(69974, true),
+						i(199337),	-- Bag of Furious Winds (TOY!)
+						i(200741),	-- Pipspark's Prestigious Pendant of Protection
 					},
 				}),
 				n(193682, {	-- Rouen Icewind
 					["coord"] = { 61.4, 60.6, THALDRASZUS },
 					["questID"] = 74027,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						bo(69973, true),
+					},
 				}),
 				n(201559,	-- Shiobhan Waterborn
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["coord"] = { 59.9, 67.5, THE_AZURE_SPAN },
 					["questID"] = 74533,
 					["g"] = {
+						bo(74462, true),
 						i(203661),	-- Watercaller's Mantle
 					},
 				})),
-				n(193684, {	-- Pipspark Thundersnap
-					["coord"] = { 53.4, 26.2, THE_PRIMALIST_FUTURE },
-					["questID"] = 74022,
-					["g"] = {
-						i(199337),	-- Bag of Furious Winds (TOY!)
-						i(200741),	-- Pipspark's Prestigious Pendant of Protection
-					},
-				}),
 				n(193674, {	-- Voraazka
 					["coord"] = { 27.7, 72.6, THE_WAKING_SHORES },
 					["questID"] = 74038,
 					["g"] = {
+						bo(69969, true),
 						i(199337),	-- Bag of Furious Winds (TOY!)
 						i(200136),	-- Monsoonic Armguards
 					},
@@ -520,9 +408,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				n(193680, {	-- Zurgaz Corebreaker
 					["coord"] = { 24.3, 75.5, THE_WAKING_SHORES },
 					["questID"] = 74039,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						bo(69972, true),
+					},
 				}),
 			})),
 			n(QUESTS, {

@@ -78,18 +78,6 @@ root("Instances", tier(CATA_TIER, {
 					["groups"] = {
 						i(203959, {	-- Gurubashi Tribute
 							["description"] = "Behind the 4 Main Bosses is an offering bonepile. It can only be interacted with the 'Succumbed to Madness' Buff, received by using the Gurubashi Mojo Madness potion near the Brazier of Madness Toy. With the buff, you can sacrifice bijous to receive 1-2 recipes and/or 3-7 coins.\n\nVenoxis' available offerings: 2x Silver Bijou / 3x Green Bijou / 3x Gold Bijou. Coords: 51.5, 55.8 Behind the Boss\n\nMandokir's available offerings: 2x Bronze Bijou / 3x Red Bijou / 3x Gold Bijou. Coords: 60.8, 80.9 Right side of Boss\n\nKilnara's available offerings: 2x Orange Bijou / 3x Yellow Bijou / 3x Gold Bijou. Coords: 47.5, 22.1 Behind Boss at the wall\n\nZanzil's available offerings: 2x Purple Bijou / 3x Blue Bijou / 3x Gold Bijou. Coords: 30.4, 19.9 North side of the Boss room, at the left wall.",
-							["sym"] = {{"select","itemID",
-								-- Coins
-								BLOODSCALP_COIN,
-								GURUBASHI_COIN,
-								HAKKARI_COIN,
-								RAZZASHI_COIN,
-								SANDFURY_COIN,
-								SKULLSPLITTER_COIN,
-								VILEBRANCH_COIN,
-								WITHERBARK_COIN,
-								ZULIAN_COIN,
-							}},
 							["groups"] = {
 								-- Epic
 								i(203838),	-- Ancient Formula: Mindslave's Reach (RECIPE!)
@@ -157,7 +145,7 @@ root("Instances", tier(CATA_TIER, {
 						i(203841),	-- Ancient Technique: Gurubashi Ceremonial Staff (RECIPE!)
 						i(203839),	-- Ancient Technique: Gurubashi Hoodoo Stick (RECIPE!)
 						i(203774, {	-- Big Bag o' Bijous
-							["sym"] = {{"select","itemID",
+						--[[["sym"] = {{"select","itemID",
 								BLUE_HAKKARI_BIJOU,
 								BRONZE_HAKKARI_BIJOU,
 								GOLD_HAKKARI_BIJOU,
@@ -168,6 +156,7 @@ root("Instances", tier(CATA_TIER, {
 								SILVER_HAKKARI_BIJOU,
 								YELLOW_HAKKARI_BIJOU,
 							}},
+						--]]
 						}),
 						i(BLUE_HAKKARI_BIJOU),
 						i(BRONZE_HAKKARI_BIJOU),
@@ -190,26 +179,6 @@ root("Instances", tier(CATA_TIER, {
 					i(203743, {	-- Jostled Gurubashi Cache
 						["description"] = "You can fish only 1 out of the 2 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
 						["sym"] = {{"select","itemID",
-							-- Bijous
-							BLUE_HAKKARI_BIJOU,
-							BRONZE_HAKKARI_BIJOU,
-							GOLD_HAKKARI_BIJOU,
-							GREEN_HAKKARI_BIJOU,
-							ORANGE_HAKKARI_BIJOU,
-							PURPLE_HAKKARI_BIJOU,
-							RED_HAKKARI_BIJOU,
-							SILVER_HAKKARI_BIJOU,
-							YELLOW_HAKKARI_BIJOU,
-							-- Coins
-							BLOODSCALP_COIN,
-							GURUBASHI_COIN,
-							HAKKARI_COIN,
-							RAZZASHI_COIN,
-							SANDFURY_COIN,
-							SKULLSPLITTER_COIN,
-							VILEBRANCH_COIN,
-							WITHERBARK_COIN,
-							ZULIAN_COIN,
 							-- Items
 							19945,	-- Lizardscale Eyepatch
 							19947,	-- Nat Pagle's Broken Reel
@@ -221,26 +190,6 @@ root("Instances", tier(CATA_TIER, {
 					i(HAKKARI_COIN),
 					i(203912, {	-- Penny Pouch o' Paragons
 						["sym"] = {{"select","itemID",
-							-- Bijous
-							BLUE_HAKKARI_BIJOU,
-							BRONZE_HAKKARI_BIJOU,
-							GOLD_HAKKARI_BIJOU,
-							GREEN_HAKKARI_BIJOU,
-							ORANGE_HAKKARI_BIJOU,
-							PURPLE_HAKKARI_BIJOU,
-							RED_HAKKARI_BIJOU,
-							SILVER_HAKKARI_BIJOU,
-							YELLOW_HAKKARI_BIJOU,
-							-- Coins
-							BLOODSCALP_COIN,
-							GURUBASHI_COIN,
-							HAKKARI_COIN,
-							RAZZASHI_COIN,
-							SANDFURY_COIN,
-							SKULLSPLITTER_COIN,
-							VILEBRANCH_COIN,
-							WITHERBARK_COIN,
-							ZULIAN_COIN,
 							-- Items
 							19945,	-- Lizardscale Eyepatch
 							19947,	-- Nat Pagle's Broken Reel
@@ -255,28 +204,6 @@ root("Instances", tier(CATA_TIER, {
 					i(VILEBRANCH_COIN),
 					i(203742, {	-- Waterlooged Gurubashi Cache
 						["description"] = "You can fish only 1 out of the 2 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
-						["sym"] = {{"select","itemID",
-							-- Bijous
-							BLUE_HAKKARI_BIJOU,
-							BRONZE_HAKKARI_BIJOU,
-							GOLD_HAKKARI_BIJOU,
-							GREEN_HAKKARI_BIJOU,
-							ORANGE_HAKKARI_BIJOU,
-							PURPLE_HAKKARI_BIJOU,
-							RED_HAKKARI_BIJOU,
-							SILVER_HAKKARI_BIJOU,
-							YELLOW_HAKKARI_BIJOU,
-							-- Coins
-							BLOODSCALP_COIN,
-							GURUBASHI_COIN,
-							HAKKARI_COIN,
-							RAZZASHI_COIN,
-							SANDFURY_COIN,
-							SKULLSPLITTER_COIN,
-							VILEBRANCH_COIN,
-							WITHERBARK_COIN,
-							ZULIAN_COIN,
-						}},
 						["groups"] = {
 							i(19945),	-- Lizardscale Eyepatch
 							i(19947),	-- Nat Pagle's Broken Reel
@@ -795,31 +722,20 @@ root("Instances", tier(CATA_TIER, {
 					}),
 				}),
 				n(ZONE_DROPS, bubbleDown({ ["timeline"] = { ADDED_10_0_7 }, ["modID"] = 0, }, {
+					i(BLUE_HAKKARI_BIJOU),
+					i(BRONZE_HAKKARI_BIJOU),
+					i(GOLD_HAKKARI_BIJOU),
+					i(GREEN_HAKKARI_BIJOU),
+					i(ORANGE_HAKKARI_BIJOU),
+					i(PURPLE_HAKKARI_BIJOU),
+					i(RED_HAKKARI_BIJOU),
+					i(SILVER_HAKKARI_BIJOU),
+					i(YELLOW_HAKKARI_BIJOU),
 					i(BLOODSCALP_COIN),
 					i(GURUBASHI_COIN),
 					i(HAKKARI_COIN),
 					i(203912, {	-- Penny Pouch o' Paragons
 						["sym"] = {{"select","itemID",
-							-- Bijous
-							BLUE_HAKKARI_BIJOU,
-							BRONZE_HAKKARI_BIJOU,
-							GOLD_HAKKARI_BIJOU,
-							GREEN_HAKKARI_BIJOU,
-							ORANGE_HAKKARI_BIJOU,
-							PURPLE_HAKKARI_BIJOU,
-							RED_HAKKARI_BIJOU,
-							SILVER_HAKKARI_BIJOU,
-							YELLOW_HAKKARI_BIJOU,
-							-- Coins
-							BLOODSCALP_COIN,
-							GURUBASHI_COIN,
-							HAKKARI_COIN,
-							RAZZASHI_COIN,
-							SANDFURY_COIN,
-							SKULLSPLITTER_COIN,
-							VILEBRANCH_COIN,
-							WITHERBARK_COIN,
-							ZULIAN_COIN,
 							-- Items
 							19945,	-- Lizardscale Eyepatch
 							19947,	-- Nat Pagle's Broken Reel

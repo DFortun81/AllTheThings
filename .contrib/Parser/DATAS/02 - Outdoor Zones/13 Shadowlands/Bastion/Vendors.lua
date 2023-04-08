@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 						["cost"] = 11000000, -- 1,100g
 						["modID"] = 14,
 					}),
-					i(180857, {	-- Goldenpaw Kit
+					i(180857, {	-- Goldenpaw Kit (PET!)
 						["cost"] = { { "i", 163036, 250 } },
 					}),
 					i(184351),	-- Illusion: Devoted Spirit

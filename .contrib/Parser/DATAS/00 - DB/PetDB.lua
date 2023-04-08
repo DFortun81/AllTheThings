@@ -367,7 +367,6 @@ i(21301, 119);	-- Green Helper Box (Father WInter's Helper)
 i(72134, 333);	-- Grell Moss (Gregarious Grell)
 i(118517, 1602);	-- Grommloc
 i(122105, 1622);	-- Grotesque Statue (Grotesque)
-i(180633, 2918);	-- Grubby
 i(169679, 2747);	-- Gruesome Belcher
 i(128770, 1725);	-- Grumpling
 i(128354, 1705);	-- Grumpy
@@ -921,9 +920,9 @@ i(166455, 2550);	-- Zur'aj the Depleted
 -----------------
 -- PATCH 9.0.1 --
 -----------------
+-- ITEM --
 i(180640, 2911);	-- Amber Glitterwing
 i(180587, 2893);	-- Animated Tome
-i(184221, 3054);	-- Archivist's Quill
 i(183193, 3030);	-- Ashen Chomper
 i(181268, 2958);	-- Backbone
 i(183854, 3011);	-- Battie
@@ -931,24 +930,25 @@ i(181315, 2965);	-- Bloodfeaster Spiderling
 i(182606, 3013);	-- Bloodlouse Larva
 i(180584, 2891);	-- Blushing Spiderling
 i(181172, 2948);	-- Boneweave Hatchling
+i(180586, 2892);	-- Bound Lightspawn
 i(180815, 2931);	-- Brightscale Hatchling
 i(181262, 2952);	-- Bubbling Pustule
+i(180589, 2894);	-- Burdened Soul
 i(183114, 3025);	-- Carpal
+i(183107, 3024);	-- Char
 i(180643, 2908);	-- Chirpy Valeshrieker
 i(180642, 2909);	-- Cloudfeather Fledgling
 i(181265, 2955);	-- Corpselouse Larva
 i(181168, 2945);	-- Corpulent Bonetusk
-i(184400, 3065);	-- Courage
 i(180593, 2899);	-- Court Messenger
 i(183859, 2900);	-- Dal
 i(183412, 3041);	-- Death Seeker
 i(183409, 3039);	-- Decaying Mawrat
-
 i(180629, 2922);	-- Devouring Animite
 i(180869, 2940);	-- Devoured Wader
 i(180645, 2905);	-- Dodger
 i(183407, 3037);	-- Dread
-i(182683, 2967);	-- Dredger Butler's Contract // Dredger Butler
+i(182683, 2967);	-- Dredger Butler
 i(180639, 2912);	-- Dusty Sporeflutterer
 i(181266, 2956);	-- Feasting Larva
 i(180641, 2910);	-- Floofa
@@ -970,29 +970,23 @@ i(180871, 2941);	-- Indigo
 i(181270, 2960);	-- Invertebrate Oil
 i(183515, 3045);	-- Iridescent Ooze
 i(183601, 3043);	-- Jiggles
-i(184399, 3064);	-- Larion Cub
-i(184401, 3063);	-- Larion Pouncer
 i(183196, 3035);	-- Lavender Nibbler
 i(182662, 3017);	-- Leafadore
-i(180586, 2892);	-- Lightbinders // Bound Lightspawn
-i(184397, 3062);	-- Lost Featherling
-i(184507, 3066);	-- Lucy's Lost Collar // Lucy
+i(182613, 3008);	-- Lost Quill
 i(181171, 2947);	-- Luminous Webspinner
 i(183191, 3029);	-- Maw Crawler
 i(183194, 3033);	-- Maw Stalker
-i(181269, 2959);	-- Micromancer's Mystical Cowl // Micromancer
+i(181269, 2959);	-- Micromancer
 i(181282, 2963);	-- Mu'dud
 i(181164, 2944);	-- Oonar's Arm
 i(180628, 2923);	-- Pearlwing Heron
 i(181170, 2946);	-- Pernicious Bonetusk
 i(180208, 2889);	-- PHA7-YNX
-i(183107, 3024);	-- Pile of Ashen Dust // Char
 i(173891, 2798);	-- Plagueborn Slime
 i(181264, 2954);	-- Plaguelouse Larva
-i(183395, 3036);	-- Pommel Jewel of Remornia // Will of Remornia
 i(180588, 2896);	-- Primordial Bogling
 i(180859, 2935);	-- Purity
-i(182613, 3008);	-- Refilling Inkwell // Lost Quill
+i(180591, 2898);	-- Raw Emotion
 i(175114, 2878);	-- Renny
 i(180644, 2907);	-- Rocky
 i(184350, 3042);	-- Ruffle
@@ -1007,29 +1001,86 @@ i(181555, 2966);	-- Sinheart
 i(182674, 3023);	-- Sir Reginald
 i(181173, 2949);	-- Skittering Venomspitter
 i(181271, 2961);	-- Sludge Feeler
-i(180589, 2894);	-- Soullocked Sinstone // Burdened Soul
 i(183623, 3044);	-- Spinemaw Gormling
 i(180872, 2942);	-- Spirited Skyfoal
-i(184509, 3067);	-- Spriggan Trickster
 i(180637, 2914);	-- Starry Dreamfoal
 i(182664, 3019);	-- Stemmins
-i(184398, 3061);	-- Steward Featherling
-i(180601, 3006);	-- Stonewing Dredwing Pup // Stoneskin Dredwing Pup
-i(183855, 3012);	-- Stony's Infused Ruby // Stony
-i(182612, 3009);	-- The Count's Pendant // The Count
-i(180629, 2922);	-- Thumbbiter
+i(180601, 3006);	-- Stoneskin Dredwing Pup
+i(183855, 3012);	-- Stony
+i(182612, 3009);	-- The Count
 i(181272, 2962);	-- Toenail
 i(183195, 3034);	-- Torghast Lurker
 i(183115, 3026);	-- Tower Deathroach
 i(180592, 2901);	-- Trapped Stonefiend
 i(182663, 3018);	-- Trootie
 i(183408, 3038);	-- Undying Deathroach
-i(180591, 2898);	-- Vial of Roiling Emotions // Raw Emotion
 i(180603, 2904);	-- Violet Dredwing Pup
+i(183395, 3036);	-- Will of Remornia
 i(180636, 2915);	-- Willowbreeze
-i(184512, 3079);	-- Winterleaf Spriggan
 i(180585, 2897);	-- Wrathling
 i(181267, 2957);	-- Writhing Spine
+-- NPC --
+n(175023, 3051);	-- Animated Cruor
+n(175022, 3050);	-- Bleak Skitterer
+n(172130, 2950);	-- Clutch
+n(171702, 2936);	-- Copperfur Kit
+n(173590, 3021);	-- Deepwood Leaper
+n(171149, 2902);	-- Dusky Dredwing Pup
+n(171567, 2926);	-- Fledgling Teroclaw
+n(171664, 2927);	-- Fluttering Glimmerfly
+n(171670, 2930);	-- Glimmerpool Hatchling
+n(171229, 2919);	-- Gorm Rootstinger
+n(171123, 2895);	-- Lost Soul
+n(173555, 3014);	-- Mire Creeper
+n(175024, 3052);	-- Necroray Spawnling
+n(175021, 3049);	-- Pulsating Maggot
+n(173506, 3007);	-- Rosetipped Spiderling
+n(171703, 2937);	-- Rustfur Kit
+n(171228, 2924);	-- Tranquil Wader
+n(171668, 2929);	-- Vibrant Glimmerfly
+n(171712, 2939);	-- Wader Chick
+n(171666, 2943);	-- Wild Etherwyrm
+n(173556, 3015);	-- Withering Creeper
+-- Special --
+i(0, 3047);			-- Spinebug
+-- NYI --
+i(0, 2951);			-- PH Slime
+i(180838, 0);		-- Blue Etherwyrm
+i(180837, 0);		-- Blue Glimmerfly
+i(181259, 0);		-- Clutch
+i(180590, 0);		-- Lost Soul
+i(180860, 0);		-- Orange Vulpin
+i(180841, 0);		-- Olive Dragon Turtle
+i(180840, 0);		-- Pink Glimmerfly
+i(180861, 0);		-- Red Vulpin
+i(180867, 0);		-- Silver Crane
+i(180813, 0);		-- Silver Teroclaw
+i(183853, 0);		-- Sinfall Screecher
+i(184034, 0);		-- Stony's Infused Ruby
+i(183714, 0);		-- Swamp Reed
+
+-----------------
+-- PATCH 9.0.2 --
+-----------------
+-- ITEM --
+i(184221, 3054);	-- Archivist's Quill
+i(184400, 3065);	-- Courage
+i(184397, 3062);	-- Lost Featherling
+i(184399, 3064);	-- Larion Cub
+i(184401, 3063);	-- Larion Pouncer
+i(184507, 3066);	-- Lucy
+i(184398, 3061);	-- Steward Featherling
+i(184509, 3067);	-- Spriggan Trickster
+i(184512, 3079);	-- Winterleaf Spriggan
+-- NPC --
+n(176024, 3083);	-- Crawbat
+n(176020, 3081);	-- Decay Grub
+n(176021, 3082);	-- Starmoth
+n(176019, 3080);	-- Verdant Kit
+-- Special --
+i(0, 3053);			-- Moon-Touched Netherwhelp
+-- NYI --
+i(0, 184461);		-- Clutch
 
 -----------------
 -- PATCH 9.1.0 --
@@ -1082,6 +1133,8 @@ n(179165, 3109);	-- Silver Purrkin
 n(179227, 3124);	-- Vile Deathroach
 n(179329, 3141);	-- Wild Corpsefly
 n(179250, 3135);	-- Young Garnetgullet
+-- NYI --
+i(0, 186545);	-- REUSE
 
 -----------------
 -- PATCH 9.1.5 --
@@ -1284,13 +1337,20 @@ i(193587, 3312);	-- Time-Lost Duck
 i(193429, 3297);	-- Time-Lost Salamanther
 i(193620, 3267);	-- Time-Lost Slyvern
 i(193068, 3277);	-- Time-Lost Treeflitter
-i(190583, 0); 		-- Ichabod
 i(191126, 0);		-- Obsidian Whelpling
 i(192050, 0);		-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
 i(193863, 0);		-- zzOld - [PH] Dark Baby Vorquin (REUSE)
 i(193063, 0);		-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
 i(193862, 0);		-- zzOld - [PH] Pale Baby Vorquin (REUSE)
 i(191929, 0);		-- zzOld - [PH] White Flying Squirrel (REUSE)
+
+------------------
+-- PATCH 10.0.2 --
+------------------
+-- Special --
+i(0, 3248);			-- Ichabod
+-- NYI --
+i(190583, 0); 		-- Ichabod
 
 ------------------
 -- PATCH 10.0.5 --

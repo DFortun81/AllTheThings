@@ -1549,66 +1549,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["provider"] = { "n", 186755 },	-- Tyrnokos Sunstrike
 				["coord"] = { 65.6, 16.2, THE_AZURE_SPAN },
 			}),
-			n(BONUS_OBJECTIVES, sharedData({
-				["isDaily"] = true,
-			},{
-				q(69858, {	-- Blightfur
-					["provider"] = { "n", 193178 },	-- Blightfur
-					["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
-				}),
+			n(BONUS_OBJECTIVES, {
 				q(72358, {	-- Cascade
 					["provider"] = { "n", 186962 },	-- Cascade
 					["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
-					["isDaily"] = IGNORED_VALUE,
-				}),
-				q(74001, {	-- Gruffy
-					["provider"] = { "n", 193251 },	-- Gruffy
-					["coord"] = { 32.5, 29.2, THE_AZURE_SPAN },
-					["timeline"] = { ADDED_10_0_5 },
-				}),
-				q(69892, {	-- Grumbletrunk
-					["provider"] = { "n", 193269 },	-- Grumbletrunk
-					["coord"] = { 19.1, 43.6, THE_AZURE_SPAN },
 				}),
 				q(72254, {	-- Fisherman Tinnak's Ghost
 					["provider"] = { "n", 193691 },	-- Fisherman Tinnak <Angered Ghost>
 					["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
-					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69864, {	-- Forgotten Creation
 					["provider"] = { "n", 193214 },	-- Forgotten Creation
 					["coord"] = { 38.2, 59.0, THE_AZURE_SPAN },
-					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(66718, {	-- Gnolls Must Die
 					["sourceQuests"] = { 66709 },	-- Field Medic 101
 					["coord"] = { 58.1, 42.3, THE_AZURE_SPAN },
-					["isDaily"] = IGNORED_VALUE,
-				}),
-				q(74461, {	-- Malgain Rockknell
-					["provider"] = { "n", 201558 },	-- Malgain Rockknell
-					["coord"] = { 56.0, 67.4, THE_AZURE_SPAN },
-					["timeline"] = { ADDED_10_0_5 },
-				}),
-				q(74456, {	-- Motivator Krathos
-					["provider"] = { "n", 201561 },	-- Motivator Krathos
-					["coord"] = { 44.0, 30.8, THE_AZURE_SPAN },
-					["timeline"] = { ADDED_10_0_5 },
-				}),
-				q(72154, {	-- Skag the Thrower
-					["provider"] = { "n", 193149 },	-- Skag the Thrower
-					["coord"] = { 26.7, 49.0, THE_AZURE_SPAN },
-				}),
-				q(73064, {	-- Spellwrought Snowman
-					["provider"] = { "n", 193238 },	-- Spellwrought Snowman
-					["coord"] = { 54.8, 33.8, THE_AZURE_SPAN },
-					["isDaily"] = true,
-				}),
-				q(74458, {	-- Srivantor
-					["provider"] = { "n", 201555 },	-- Srivantor
-					["coord"] = { 46.7, 21.9, THE_AZURE_SPAN },
-					["isDaily"] = true,
-					["timeline"] = { ADDED_10_0_5 },
 				}),
 				q(65841, {	-- Stop the Spread
 					["sourceQuests"] = {
@@ -1617,33 +1573,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					},
 					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 19.1, 36.2, THE_AZURE_SPAN },
-					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(69895, {	-- Summoned Destroyer
 					["provider"] = { "n", 193288 },	-- Summoned Destroyer
 					["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
-					["isDaily"] = IGNORED_VALUE,
 				}),
 				q(67173, {	-- Thieving Gnolls
 					["provider"] = { "n", 192749 },	-- Sharpfang
 					["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
-					["isDaily"] = IGNORED_VALUE,
-				}),
-				q(69861, {	-- Trilvarus Loreweaver
-					["provider"] = { "n", 193196 },	-- Trilvarus Loreweaver
-					["coord"] = { 70.4, 25.0, THE_AZURE_SPAN },
 				}),
 				q(69872, {	-- Vakril, the Strongest Tuskarr
 					["provider"] = { "n", 193223 },	-- Vakril
 					["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },
-					["isDaily"] = IGNORED_VALUE,
 				}),
-				q(74460, {	-- Waterpots
-					["provider"] = { "n", 201556 },	-- Waterpots
-					["coord"] = { 57.3, 64.3, THE_AZURE_SPAN },
-					["timeline"] = { ADDED_10_0_5 },
-				}),
-			})),
+			}),
 			n(HIDDEN_QUESTS, {
 				-- Moved temporarily to HQTs
 			}),

@@ -222,7 +222,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 				e(2421, {	-- Grand Proctor Beryllia
 					["crs"] = { 162102 },	-- Grand Proctor Beryllia
 					["g"] = {
-						i(180591),	-- Vial of Roiling Emotions (PET!)
+						i(180591),	-- Raw Emotion (PET!)
 						i(178852),	-- Vessel of Shining Radiance
 						i(178847),	-- Radiant Light Binders
 						i(178841),	-- Iron Spiked Handgrips

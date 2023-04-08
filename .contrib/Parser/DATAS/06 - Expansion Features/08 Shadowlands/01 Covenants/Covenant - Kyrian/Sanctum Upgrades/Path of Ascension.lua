@@ -134,13 +134,13 @@ local ZELESKOS_GROUP = {
 	i(181168, {	-- Corpulent Bonetusk (PET!)
 		["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 	}),
-	i(180628, {	-- Pearlwing Heron
+	i(180628, {	-- Pearlwing Heron (PET!)
 		["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 	}),
-	i(180814, {	-- Sable
+	i(180814, {	-- Sable (PET!)
 		["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 	}),
-	i(180603, {	-- Violet Dredwing Pup
+	i(180603, {	-- Violet Dredwing Pup (PET!)
 		["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 	}),
 };
@@ -1148,7 +1148,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["crs"] = { 172409 },	-- Myn'ir
 										["g"] = {
 											n(WISDOM, {
-												i(180871),	-- Indigo
+												i(180871),	-- Indigo (PET!)
 											}),
 										},
 									}),
@@ -1625,7 +1625,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							n(171981, {	-- Zeleskos <Pet Vendor>
 								["coord"] = { 31.1, 47.3, ARCHONS_RISE },
 								["g"] = appendGroups(ZELESKOS_GROUP, {
-									i(184398, {	-- Steward Featherling
+									i(184398, {	-- Steward Featherling (PET!)
 										["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 									}),
 								}),

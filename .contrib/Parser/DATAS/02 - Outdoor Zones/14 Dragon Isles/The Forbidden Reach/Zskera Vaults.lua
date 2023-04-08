@@ -1209,11 +1209,13 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 
 		qNYI(75007),	-- ???
 		q(74971),	-- During 'Second Time Is The Charm' (questID 74493)
-		q(74997),	-- During 'A Difficult Legacy' 1st part (questID 74996)
-		q(75000),	-- During 'A Difficult Legacy' 2nd part (questID 74996)
-		q(75001),	-- During 'A Difficult Legacy' 3rd part (questID 74996)
-		q(75002),	-- During 'A Difficult Legacy' 4th part (questID 74996)
-		q(75003),	-- During 'A Difficult Legacy' 5th part (questID 74996)
+		q(74997),	-- During 'A Difficult Legacy' (questID 74996)
+		q(74998),	-- During 'A Difficult Legacy' (questID 74996)
+		q(74999),	-- During 'A Difficult Legacy' (questID 74996)
+		q(75000),	-- During 'A Difficult Legacy' (questID 74996)
+		q(75001),	-- During 'A Difficult Legacy' (questID 74996)
+		q(75002),	-- During 'A Difficult Legacy' (questID 74996)
+		q(75003),	-- During 'A Difficult Legacy' (questID 74996)
 		--
 		q(74874),	-- Pop when completing Primordial Answers (74869)
 		--

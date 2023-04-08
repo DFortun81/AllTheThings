@@ -974,7 +974,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 		filter(TOYS, {
 			i(200469),	-- Khadgar's Disenchanting Rod (TOY!)
 			i(200636, {	-- Primal Invocation Quintessence (TOY!)
-				["description"] = "You need to use 18xPrimal Invocation Extract Rank 3 or 26xPrimal Invocation Extract Rank 2 or 51xPrimal Invocation Extract Rank 1",
+				["description"] = "You need to accumulate 2600 points. Each Primal Invocation Extract gives you a set amount of points based on its quality:\n\nRank 1: 51 points - (51 extracts)\nRank 2: 100 points - (26 extracts)\nRank 3: 150 points - (18 extracts)\n\nAs Extracts can only be used once every hour, it's recommended to buy 17x Rank 3 extracts, which will give you a total of 2550 points.\nProceed to buy the cheapest one available, no matter what quality it is, it will give you the toy.\nThey all must be used on the same character.\nYou don't need to accumulate the buff for 360 minutes.",
 				["cost"] = {
 					{ "i", 200618, 51 },	-- 51x Primal Invocation Extract+
 					{ "i", 200633, 26 },	-- 26x Primal Invocation Extract++
@@ -2836,6 +2836,9 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(72344),	-- First Overload Titan-Touched Herb
 			q(72345),	-- First Overload Decayed Herb
 			q(72348),	-- First Overload Infurious Herb
+
+			q(75141, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambant Hochenblume
+			q(75143, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Saxifrage
 			--
 			q(74121),	-- Herbing Enraged Sprout
 			q(74230),	-- Herbing Azra's Prized Peony

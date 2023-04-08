@@ -339,6 +339,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72987 },	-- Here We Go Again
 					["provider"] = { "n", 200046 },	-- Ebyssian
 					["coord"] = { 49.9, 27.6, ZARALEK_CAVERN },
+					["g"] = {
+						i(204819),	-- Flight Master's Report
+					},
 				}),
 				q(74393, {	-- Report: Battlefield Ruins
 					["sourceQuests"] = { 75367 },	-- The Obsidian Rest
@@ -495,6 +498,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204717),	-- Splintered Spark of Shadowflame
 				},
 			}),
+				-- 4 --
+			q(75232, {	-- Fallen Effects
+				--["sourceQuests"] = {  },
+				["provider"] = { "i", 204642 },	-- Sheridon Hastle's Effects
+				["coord"] = { 42.9, 60.3, ZARALEK_CAVERN },
+			}),
 
 				-- Glimrogg Stuff ------
 			q(73707, {	-- TICKET: Glimmerogg Games
@@ -502,6 +511,32 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
 				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 				["isBreadcrumb"] = true,
+			}),
+			q(73709, {	-- Favor on the Side
+				["sourceQuests"] = { 73707 },	-- TICKET: Glimmerogg Games
+				["provider"] = { "n", 201098 },	-- Brogg the Beast
+				["coord"] = { 43.7, 82.9, ZARALEK_CAVERN },
+			}),
+			q(73708, {	-- Pay to Play
+				["sourceQuests"] = { 73707 },	-- TICKET: Glimmerogg Games
+				["provider"] = { "n", 201098 },	-- Brogg the Beast
+				["coord"] = { 43.7, 82.9, ZARALEK_CAVERN },
+			}),
+			q(73710, {	-- Rock By Rock
+				["sourceQuests"] = {
+					73709,	-- Favor on the Side
+					73708,	-- Pay to Play
+				},
+				["provider"] = { "n", 201100 },	-- Storul Heavystone
+				["coord"] = { 44.9, 83.2, ZARALEK_CAVERN },
+			}),
+			q(73711, {	-- Marked Champion
+				["sourceQuests"] = { 73710 },	-- Rock By Rock
+				["provider"] = { "n", 201100 },	-- Storul Heavystone
+				["coord"] = { 44.9, 83.2, ZARALEK_CAVERN },
+				["g"] = {
+					i(205251),	-- Champion's Rock Bar
+				},
 			}),
 
 				-- 6 --
@@ -531,6 +566,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "n", 201752 },	-- Briggul
 				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 			}),
+			q(74518, {	-- Resistance Training
+				["sourceQuests"] = { 74519 },	-- Good for Goo
+				["provider"] = { "n", 201752 },	-- Briggul
+				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
+			}),
 
 				-- 7 --
 			q(75233, {	-- Flesh to Bone
@@ -548,7 +588,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205119),	-- Bashful (PET!)
 				},
 			}),
-			q(75707, {	-- A Race To The Finish
+			q(75707, {	-- A Race To The Finish [Unflagged later??]
 				["sourceQuests"] = { 75662 },	-- A Race To The Finish
 				["provider"] = { "n", 201099 },	-- Gorgul
 				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
@@ -632,6 +672,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 				["provider"] = { "n", 200052 },	-- Aurantia
 				["coord"] = { 54.7, 54.7, ZARALEK_CAVERN },
+				["g"] = {
+					i(204998),	-- Effervesta's Clue 3
+				},
 			}),
 			q(72886, {	-- Suss Out the Imposter
 				["sourceQuests"] = { 72884 },	-- Expedition Effervesta
@@ -792,5 +835,18 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(73793),	-- Fly Through Azure Exit
 
 		--q(76013),	-- after turn in [72930]
+		--q(75706),	-- Some Tracker vid Glimrogg
+		--q(75708),	-- Some Tracker vid Glimrogg / Snail Treats for Corry?
+		--q(75710),	-- Some Tracker vid Glimrogg
+		--
+		-- Talk to npc during Respite (73041)
+		q(75425),    -- Tellywin Sharpfizzle
+		q(75424),    -- Chef Butterfingers
+		q(75423),    -- Earthmender Narvra
+		q(75422),    -- Rupert
+		q(75421),    -- Veritistrasz
+		q(75420),    -- Voraxian
+		-- RP after Stain Removal (73045)
+		q(75219),	-- Voraxian
 	}),
 }));
