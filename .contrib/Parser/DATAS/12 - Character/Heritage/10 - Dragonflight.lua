@@ -106,6 +106,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 198983 },	-- Master Mathias Shaw
 					["coord"] = { 36.7, 51.1, NORTHSHIRE_VALLEY },
 					["g"] = {
+						title(493),	-- Lionguard %s
 						i(203153),	-- Lionguard Greathelm
 						i(203154),	-- Lionguard Greathelm
 						i(203157),	-- Lionguard Greathelm
