@@ -278,6 +278,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 191159 },	-- Toddy Whiskers
 				["coord"] = { 40.0, 67.5, OHNAHRAN_PLAINS },
 			}),
+			q(70766, {	-- The Fractured Flame
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
+				["sourceQuests"] = { 70507 },	-- The Insight of Tyr
+				["provider"] = { "i", 199790 },	-- Makko's Journal Cover
+				["coord"] = { 44, 66, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(200295),	-- Makko's Complete Journal
+					i(199792),	-- Makko's Journal - Page One
+					i(199793),	-- Makko's Journal - Page Two
+					i(199794),	-- Makko's Journal - Page Three
+					i(199795),	-- Makko's Journal - Page Four
+					i(199796),	-- Makko's Journal - Page Five
+					i(199797),	-- Makko's Journal - Page Six
+				},
+			}),
 			q(70503, {	-- The Vigilance of Tyr
 				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 				["sourceQuests"] = { 70784 },	-- The Abandoned Outpost

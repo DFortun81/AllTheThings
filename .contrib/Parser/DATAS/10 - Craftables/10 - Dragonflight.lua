@@ -2836,6 +2836,9 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(72344),	-- First Overload Titan-Touched Herb
 			q(72345),	-- First Overload Decayed Herb
 			q(72348),	-- First Overload Infurious Herb
+
+			q(75141, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambant Hochenblume
+			q(75143, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Saxifrage
 			--
 			q(74121),	-- Herbing Enraged Sprout
 			q(74230),	-- Herbing Azra's Prized Peony

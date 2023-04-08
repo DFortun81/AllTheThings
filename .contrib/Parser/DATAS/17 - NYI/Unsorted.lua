@@ -855,7 +855,7 @@ root(ROOTS.Unsorted, {
 				i(203442),	-- Snail Slime
 
 				i(203454),	-- Zaqali Equipment
-				i(203455),	-- Draketooth Fetish
+
 
 
 
@@ -889,7 +889,7 @@ root(ROOTS.Unsorted, {
 				i(204349),	-- Bigger Wrench
 				i(204351),	-- Animated Crystal Shard
 				i(204365),	-- Bundle of Ebon Spears
-				i(204377),	-- Glow Spores
+
 				i(204407),	-- Rebel Detonator
 				i(204433),	-- Everburning Fireshard
 				i(204434),	-- Lava-Quenched Blade
@@ -897,7 +897,7 @@ root(ROOTS.Unsorted, {
 				i(204436),	-- Chipped Horn Signet
 				i(204473),	-- Element Siphoner
 				i(204637),	-- Boulder Chunk
-				i(204642),	-- Sheridon Hastle's Effects
+
 				i(204683),	-- Head of Shadeisethal
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
@@ -1119,7 +1119,7 @@ root(ROOTS.Unsorted, {
 
 				i(204087),	-- 10.1 Cloak Test Item
 
-				i(204387),	-- Buzzing Orb Core
+
 				i(204388),	-- Draconic Cauterizing Magma
 				i(204638),	-- Sunder Wing
 
@@ -1182,7 +1182,7 @@ root(ROOTS.Unsorted, {
 
 				i(204800),	-- Scaly Stone Hide
 				i(204801),	-- Gelcap Spores
-				i(204803),	-- Echoed Lurker Flesh
+
 				i(204810),	-- Drogbar Rocks
 				i(204811),	-- Drogbar Stones
 				i(204817),	-- Underlight Cocoon Fibers
@@ -1241,9 +1241,7 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(204986),	-- Flame-Infused Scale Oil
-				i(204987),	-- Lava-Forged Leatherworker's "Knife"
-				i(204988),	-- Sulfur Soaked Skins
+
 				i(204990),	-- Lava-Drenched Shadow Crystal
 				i(204991),	-- Contract: Loamm Niffen
 				i(204992),	-- Contract: Loamm Niffen
@@ -1277,8 +1275,7 @@ root(ROOTS.Unsorted, {
 				i(205026),	-- Devourer Lobstrok
 				i(205028),	-- Explorer's Banner of Comradery
 				i(205029),	-- Explorer's Banner of Comradery
-				i(205030),	-- Crawler Venom
-				i(205031),	-- Broodmother Venom
+
 				i(205032),	-- Bestial Lurker
 
 				i(205035),	-- Snapjaw Lurker
@@ -1336,7 +1333,7 @@ root(ROOTS.Unsorted, {
 				i(205165),	-- Axel
 				i(205166),	-- Kromos
 
-				i(205169),	-- Glimmer Mushroom
+
 				i(205170),	-- 10.1 Precognition Embellishment [PH]
 				i(205171),	-- 10.1 Not-Caster PvP Embellishment [PH] [NYI]
 				i(205172),	-- 10.1 Not-Caster PvP Embellishment [PH] [NYI]
@@ -1386,10 +1383,10 @@ root(ROOTS.Unsorted, {
 				i(205208),	-- Sporebat, Stone (Orange) [PH]
 
 				i(205211),	-- Nutrient Diluted Protofluid
-				i(205212),	-- Marrow-Ripened Slime
-				i(205213),	-- Suspicious Mold
-				i(205214),	-- Snubbed Snail Shells
-				i(205216),	-- Gently Jostled Jewels
+
+
+
+
 
 				i(205219),	-- Broken Barter Boulder
 				i(205220),	-- Corroded Key
@@ -1413,7 +1410,7 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(205251),	-- Champion's Rock Bar
+
 				i(205252),	-- Momento of Rekindled Bonds
 
 
@@ -2169,7 +2166,7 @@ root(ROOTS.Unsorted, {
 				i(204818),	-- Mallard Mortar
 
 				i(204909),	-- Statuette of Foreseen Power
-				i(204988),	-- Sulfur-Soaked Skins
+
 				i(205115),	-- Statuette of Foreseen Power
 				i(205151),	-- Salverun
 				i(205170),	-- Statuette of Foreseen Power

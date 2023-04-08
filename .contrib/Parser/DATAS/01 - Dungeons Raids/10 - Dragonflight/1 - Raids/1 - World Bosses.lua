@@ -88,6 +88,25 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 					{"select","encounterID",2518,},{"pop"},	-- Original WB
 				},
 			}),
+			e(2531, {	-- The Zaqali Elders
+				["crs"] = {
+					199853,	-- Gholna
+					199855,	-- Vakan
+				},
+				["coord"] = { 27.5, 44.4, ZARALEK_CAVERN },
+				--["questID"] = ,
+				--["g"] = sharedData({
+				--	["modID"] = 3,
+				--},{
+
+				--}),
+			}),
+			q(74892, {	-- Zaqali Elders (WQ)
+				["coord"] = { 27.5, 44.4, ZARALEK_CAVERN },
+				["sym"] = {
+					{"select","encounterID",2531,},{"pop"},	-- Original WB
+				},
+			}),
 		}),
 	}),
 })));

@@ -676,13 +676,20 @@ i(203989);	-- Warshard of the Hakkari, Unborn
 -- Quest Items --
 i(204877);	-- 'The Resting Blade'
 i(203458);	-- Black Dragonscale Robes
+i(205031);	-- Broodmother Venom
+i(204833);	-- Buzzing Orb Core
+i(205030);	-- Crawler Venom
 i(203682);	-- Darkened Elemental Core
 i(203453);	-- Dragonbone Totem
+i(204437);	-- Drakeforged Armaments
+i(203455);	-- Draketooth Fetish
 i(202873);	-- Drooping Mushroom Cutting
 i(203396);	-- Displayed Armor Piece
 i(204184);	-- Ebon Eviscerator
+i(204803);	-- Echoed Lurker Flesh
 i(203394);	-- Elementally Charged Orb
 i(203385);	-- Flamesight Rune
+i(205169);	-- Glimmer Mushroom
 i(205179);	-- Glimmerfish Scale
 i(204067);	-- Glowing Crystal
 i(204694);	-- Greater Flamesight Rune
