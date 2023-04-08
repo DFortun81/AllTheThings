@@ -109,7 +109,7 @@ i(202249, 13028);	-- Goldthorn Tea
 i(202289, 398438);	-- Firewater Sorbet
 i(204073, 403018);	-- Deviously Deviled Eggs
 i(203422, 400807);	-- Sparkling Spice Pouch
--- NYI --
+-- Quest --
 i(0, 399034);	--
 i(0, 399035);	--
 i(0, 399038);	--

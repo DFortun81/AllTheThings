@@ -1421,27 +1421,11 @@ root(ROOTS.Unsorted, {
 				i(205256),	-- Satchel of Pilfered Recipes
 
 				i(201957),	-- Thrall's Hearthstone
-				i(202025),	-- Keg of Ancestral Ale
-				i(202026),	-- Durotar Coast Crab
-				i(202027),	-- Fresh Talbuk Steak
-				i(202028),	-- Southfury Salmon
-				i(202029),	-- Isle Lemon
-				i(202030),	-- Ground Gorgrond Pepper
-				i(202031),	-- Farahlon Fenugreek
-				i(202032),	-- Feast for the Ancestors
 				i(202106),	-- Chewed Piece of Journal
 				i(202238),	-- Enforcer Grant's Signet
-				i(202401),	-- Cactus Apple Surprise
-				i(202402),	-- Bag of Cactus Apples
 				i(202569),	-- Djaruun, Pillar of the Elder Flame
 				i(202594),	-- 10.1 Raid - Black Dragon Labs - Boss 01 - Elementium Monstrosity  - Armor - Leather - WRIST 1
 				i(202655),	-- 10.1 Raid - Black Dragon Labs - Boss 05 - Djaradin Elder - Armor - Leather - WAIST 1
-				i(202706),	-- Zandali Piri Piri
-				i(202707),	-- Un'goro Coconut
-				i(202708),	-- Curried Coconut Crab
-				i(202709),	-- Spicy Seared Talbuk Steak
-				i(202710),	-- Grilled Southfury Salmon
-
 
 				i(203679),	-- Ancestral Bloodhoof Totem
 				i(203689),	-- Horn Signet of Tetsos
@@ -1457,7 +1441,6 @@ root(ROOTS.Unsorted, {
 				i(204173),	-- Enforcer Horb's Signet
 
 
-				i(204793),	-- Suja's Sweet Salt
 				i(204858),	-- Vantus Rune: Aberrus, the Shadowed Crucible
 				i(204909),	-- Statuette of the Forethoughtful Fiend
 
@@ -2364,7 +2347,6 @@ root(ROOTS.Unsorted, {
 				i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
 			}),
 			filter(TOYS, {
-				i(204170),	-- Clan Banner (TOY!)
 				i(204220),	-- Hraxian's Unbreakable Will (TOY!)
 			}),
 			n(WEAPONS, {
@@ -2487,35 +2469,12 @@ root(ROOTS.Unsorted, {
 				q(75532),	--
 				q(75533),	--
 				-- 10.0.7.48749
-				q(72462),	-- A People in Need of Healing
-				q(72463),	-- Galgar's Cactus Apple Surprise...
-				q(72464),	-- The Kosh'harg
-				q(72465),	-- The Blessing of the Land
-				q(72466),	-- The Spirit of Thunder Ridge
-				q(72467),	-- The Blessing of the Clan
-				q(72468),	--
-				q(72469),	--
-				q(72470),	--
-				q(72471),	--
-				q(72472),	--
-				q(72473),	--
-				q(72474),	-- Tracking a Killer
-				q(72475),	-- Cornering Gor'krosh
-				q(72476),	-- The Blessing of the Ancestors
-				q(72477),	-- Orcish Groceries
-				q(72478),	-- Honor and Glory
-				q(72479),	-- Aka'magosh
 				q(73177),	--
 				q(73394),	--
 				q(73396),	--
 				q(73397),	--
 				q(73549),	--
-				q(73703),	-- A Summon to Orgrimmar
-				q(73705),	--
-				q(74374),	-- An Important Heirloom
-				q(74415),	-- A Worthy Offering
 				q(74541),	--
-				q(74581),	-- The Long Knives
 				q(74672),	--
 				q(74677),	--
 			})

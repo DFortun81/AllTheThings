@@ -735,6 +735,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				},
 			}),
 				-- MISC --
+			q(57284, {	-- Blade of Blades
+				["description"] = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
+				["sourceQuests"] = { 57245 },	-- Ani-Matter Animator
+				["provider"] = { "n", 157168 },	-- Stubborn Animate
+				["coord"] = { 27.1, 51.7, MALDRAXXUS },
+			}),
+			q(57278, {	-- Bring Me Their Heads
+				["description"] = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
+				["sourceQuests"] = { 57245 },	-- Ani-Matter Animator
+				["provider"] = { "n", 157168 },	-- Stubborn Animate
+				["coord"] = { 29.8, 49.7, MALDRAXXUS },
+			}),
 			q(62804, {	-- Filling the Tanks
 				["provider"] = { "i", 184155 },	-- Recovered Containment Pack
 				["coord"] = { 58.6, 74.2, MALDRAXXUS },
@@ -785,20 +797,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				}),
 			}))),
 		}),
-		n(QUESTS, sharedData({ ["isDaily"] = true }, {
-			q(57284, {	-- Blade of Blades
-				["description"] = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
-				["sourceQuests"] = { 57245 },	-- Ani-Matter Animator
-				["provider"] = { "n", 157168 },	-- Stubborn Animate
-				["coord"] = { 27.1, 51.7, MALDRAXXUS },
-			}),
-			q(57278, {	-- Bring Me Their Heads
-				["description"] = "Has a chance to be offered by a Recruitable Animate when using the |cffffffffAni-Matter Orb|r provided by 'Synder Sixfold' at |cffffffff26.3, 42.7|r.",
-				["sourceQuests"] = { 57245 },	-- Ani-Matter Animator
-				["provider"] = { "n", 157168 },	-- Stubborn Animate
-				["coord"] = { 29.8, 49.7, MALDRAXXUS },
-			}),
-		})),
 		n(QUESTS, sharedData({ ["isWeekly"] = true }, {
 			q(57245, {	-- Ani-Matter Animator
 				["provider"] = { "n", 157076 },	-- Synder Sixfold

@@ -42,14 +42,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						i(198092),	-- Recipe: Twice-Baked Potato (RECIPE!)
 						i(198107),	-- Recipe: Zesty Water (RECIPE!)
 					})),
-
-					-- 10.0.7
-					tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {
-						r(399034),	--
-						r(399035),	--
-						r(399038),	--
-						r(399040),	--
-					})),
 				}),
 			}),
 		}),
