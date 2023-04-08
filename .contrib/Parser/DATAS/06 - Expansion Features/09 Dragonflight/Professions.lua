@@ -575,6 +575,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(198608),	-- Alchemy Notes
 					},
 				}),
+				q(75363, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Deepflayer Dust
+					["provider"] = { "n", 203516 },	-- Kayann
+					["coord"] = { 36.5, 62.5, VALDRAKKEN },
+					["g"] = {
+						i(198608),	-- Alchemy Notes
+					},
+				})),
 			})),
 		})),
 		prof(BLACKSMITHING, sharedData({
@@ -2029,6 +2036,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(198612),	-- Jeweler's Cuts
 					},
 				}),
+				q(75362, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Cephalo-Crystalization
+					["provider"] = { "n", 203516 },	-- Kayann
+					["coord"] = { 36.5, 62.5, VALDRAKKEN },
+					["g"] = {
+						i(198612),	-- Jeweler's Cuts
+					},
+				})),
 				q(70593, {	-- Jewelcrafting Services Requested
 					["description"] = "Requires 25 Skill.",
 					["provider"] = { "n", 194026 },	-- Azley

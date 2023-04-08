@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				-- Contains
 				-- Objects
 				o(396020, {	-- Stolen Stash
-					["coords"] = { 63.7, 82.6, 2184 },
+					["coord"] = { 63.7, 82.6, 2184 },
 					["questID"] = 75303,
 					["isDaily"] = true,
 				}),

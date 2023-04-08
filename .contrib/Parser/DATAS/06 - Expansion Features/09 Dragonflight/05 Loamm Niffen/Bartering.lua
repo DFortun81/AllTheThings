@@ -13,16 +13,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					title(502),	-- <Name>, Barter Boss
 				}),
 			}),
-			n(QUESTS, {
-				q(75885, {	-- Get Rich Quick
-					["minReputation"] = { 2564, 3 },	-- Loamm Niffen Renown 3
-					["provider"] = { "n", 204693 },	-- Ponzo
-					["coord"] = { 58.0, 53.8, ZARALEK_CAVERN },
-					["g"] = {
-						i(BARTER_BRICK),
-					},
+			n(QUESTS, sharedData({
+				["provider"] = { "n", 203516 },	-- Kayann
+				["coord"] = { 36.5, 62.5, VALDRAKKEN },
+				["isWeekly"] = true,
+				["g"] = {
+					i(BARTER_BRICK),
+				}
+			}, {
+				q(75309, {	-- If a Gem Isn't Pretty
+					["requireSkill"] = ALCHEMY,
 				}),
-			}),
+				q(75301, {	-- Mistie's Mix Magic
+					["requireSkill"] = JEWELCRAFTING,
+				}),
+			})),
 			n(VENDORS, {
 				n(203170, {	-- Kilnmaster Crubus
 					["coord"] = { 57.1, 55.0, ZARALEK_CAVERN },

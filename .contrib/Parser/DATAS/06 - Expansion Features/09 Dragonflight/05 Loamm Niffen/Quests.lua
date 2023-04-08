@@ -45,6 +45,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				["isBreadcrumb"] = true,
 			}),
+			q(75885, {	-- Get Rich Quick
+				["minReputation"] = { 2564, 3 },	-- Loamm Niffen Renown 3
+				["provider"] = { "n", 204693 },	-- Ponzo
+				["coord"] = { 58.0, 53.8, ZARALEK_CAVERN },
+				["g"] = {
+					i(204985),	-- Barter Brick
+				},
+			}),
 				-- RENOWN 4 --
 			q(75722, {	-- Drake's Shadowflame Crest
 				["minReputation"] = { 2564, 4 },	-- Loamm Niffen Renown 4
