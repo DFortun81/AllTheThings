@@ -302,6 +302,7 @@ root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 				--["questID"] = 25485, -- NOTE: This is what it should be, but it's not checking off correctly.
 				-- #else
 				["questID"] = 14488,	-- You've Been Served
+				["isDaily"] = true,
 				-- #endif
 				["timeline"] = { "added 3.3.0" },
 				["maps"] = {
