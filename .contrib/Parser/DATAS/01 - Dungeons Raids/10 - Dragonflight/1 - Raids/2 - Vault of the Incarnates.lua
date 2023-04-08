@@ -165,7 +165,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 				ach(16357),		-- Heroic: Vault of the Incarnates Guild Run
 				ach(16358),		-- Mythic: Raszageth the Storm-Eater Guild Run
 			}),
-			n(COMMON_BOSS_DROPS, {
+			n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				["crs"] = {
 					184972,	-- Eranog
 					190496,	-- Terros
@@ -193,7 +193,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 					i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
 					i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
 				},
-			}),
+			})),
 			n(DROPS, {
 				i(201790, {	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 					["crs"] = { 193909 },	-- Raszageth the Storm-Eater
