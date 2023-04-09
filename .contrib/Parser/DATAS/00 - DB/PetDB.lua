@@ -1447,42 +1447,37 @@ i(205026, 3524);	-- Devourer Lobstrok
 i(205032, 3525);	-- Bestial Lurker
 i(205035, 3526);	-- Snapjaw Lurker
 i(205037, 3527);	-- Void Lurker
---[[
-p(3541),	-- Ridged Shalewing
-p(3542),	-- Dread Shalewing
-p(3543),	-- Ravenous Shalewing
-p(3544),	-- Shalewing Devourer
-p(3545),	-- Salverun \\ Jyfaar
-p(3546),	-- Skaarn
-p(3547),	-- Mikah
-p(3548),	-- Aquapo
-p(3549),	-- Heartseeker Moth
-p(3550),	-- Undermoth
-p(3551),	-- Teardrop Moth
-p(3552),	-- Rithro
-p(3553),	-- Nelthara
-p(3554),	-- Senega
-p(3555),	-- Axel
-p(3556),	-- Kromos
-10.1.0.48537
-p(3557),	-- Roggy
-p(3558),	-- Murrey
-p(3559),	-- Clawz
-p(3560),	-- Bassalt
-10.1.0.48661
-p(3565),	-- Fethres [Trainer]
-p(3566),	-- Beeks [Trainer]
-p(3567),	-- Talons [Trainer]
-p(3568),	-- Dustie
-p(3569),	-- Tempe
-p(3570),	-- Swoggy
-p(3571),	-- Brul'dan
-p(3572),	-- Lifft
-p(3573),	-- Swole
-10.1.0.48898
-p(3578),	-- Newsy
-p(3580),	-- Baa'lial
---]]
+i(205147, 3541);	-- Ridged Shalewing
+i(205148, 3542);	-- Dread Shalewing
+i(205149, 3543);	-- Ravenous Shalewing
+i(205150, 3544);	-- Shalewing Devourer
+i(205151, 3545);	-- Salverun \\ Jyfaar
+i(205152, 3546);	-- Skaarn
+i(205153, 3547);	-- Mikah
+i(205154, 3548);	-- Aquapo
+i(205156, 3549);	-- Heartseeker Moth
+i(205157, 3550);	-- Undermoth
+i(205159, 3551);	-- Teardrop Moth
+i(205160, 3552);	-- Rithro
+i(205162, 3553);	-- Nelthara
+i(205164, 3554);	-- Senega
+i(205165, 3555);	-- Axel
+i(205166, 3556);	-- Kromos
+i(205231, 3557);	-- Roggy
+i(205937, 3578);	-- Newsy
+i(206018, 3580);	-- Baa'lial
+n(204692, 3558);	-- Murrey [Trainer?]
+n(204694, 3559);	-- Clawz [Trainer?]
+n(204695, 3560);	-- Bassalt [Trainer?]
+n(204795, 3565);	-- Fethres [Trainer]
+n(204796, 3566);	-- Beeks [Trainer]
+n(204797, 3567);	-- Talons [Trainer]
+n(204929, 3568);	-- Dustie [Trainer]
+n(204930, 3569);	-- Tempe [Trainer]
+n(204933, 3570);	-- Swoggy [Trainer]
+n(204936, 3571);	-- Brul'dan [Trainer]
+n(204938, 3572);	-- Lifft [Trainer]
+n(204939, 3573);	-- Swole [Trainer]
 
 -- #if ANYCLASSIC
 -----------------
