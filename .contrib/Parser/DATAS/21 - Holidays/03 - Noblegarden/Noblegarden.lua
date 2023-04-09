@@ -83,6 +83,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(44793, {	-- Tome of Polymorph: Rabbit
+		["recipeID"] = 61721,	-- Polymorph (Rabbit)
 		["timeline"] = { "added 3.1.0.9733" },
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 		["classes"] = { MAGE },
