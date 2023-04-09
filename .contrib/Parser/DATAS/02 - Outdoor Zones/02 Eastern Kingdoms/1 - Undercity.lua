@@ -1229,8 +1229,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 54.8, 38.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
-						{"select", "itemID", 3026 },    -- Reinforced Bow
+						{"select", "itemID", 3027 },	-- Heavy Recurve Bow
+						{"select", "itemID", 3026 },	-- Reinforced Bow
 					},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
@@ -1260,15 +1260,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 58.6, 32.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 925 },    -- Flail
-						{"select", "itemID", 1197 },    -- Giant Mace
-						{"select", "itemID", 2030 },    -- Gnarled Staff
-						{"select", "itemID", 2028 },    -- Hammer
-						{"select", "itemID", 928 },    -- Long Staff
-						{"select", "itemID", 852 },    -- Mace
-						{"select", "itemID", 924 },    -- Maul
-						{"select", "itemID", 854 },    -- Quarter Staff
-						{"select", "itemID", 2026 },    -- Rock Hammer
+						{"select", "itemID", 925 },	-- Flail
+						{"select", "itemID", 1197 },	-- Giant Mace
+						{"select", "itemID", 2030 },	-- Gnarled Staff
+						{"select", "itemID", 2028 },	-- Hammer
+						{"select", "itemID", 928 },	-- Long Staff
+						{"select", "itemID", 852 },	-- Mace
+						{"select", "itemID", 924 },	-- Maul
+						{"select", "itemID", 854 },	-- Quarter Staff
+						{"select", "itemID", 2026 },	-- Rock Hammer
 					},
 					["groups"] = {
 						i(15808),	-- Fine Light Crossbow
@@ -1497,7 +1497,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
-				n(4585, {	-- Ezekiel  
+				n(4585, {	-- Ezekiel
 					["coord"] = { 75.6, 51.6, UNDERCITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -1518,12 +1518,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 58.6, 32.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 926 },    -- Battle Axe
-						{"select", "itemID", 2025 },    -- Bearded Axe
-						{"select", "itemID", 2029 },    -- Cleaver
-						{"select", "itemID", 927 },    -- Double Axe
-						{"select", "itemID", 853 },    -- Hatchet
-						{"select", "itemID", 1196 },    -- Tabar
+						{"select", "itemID", 926 },	-- Battle Axe
+						{"select", "itemID", 2025 },	-- Bearded Axe
+						{"select", "itemID", 2029 },	-- Cleaver
+						{"select", "itemID", 927 },	-- Double Axe
+						{"select", "itemID", 853 },	-- Hatchet
+						{"select", "itemID", 1196 },	-- Tabar
 					},
 					["groups"] = {
 						i(15811),	-- Heavy Spear
@@ -1550,46 +1550,46 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 70.6, 59.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2142 },    -- Cuirboulli Belt
-						{"select", "itemID", 2143 },    -- Cuirboulli Boots
-						{"select", "itemID", 2144 },    -- Cuirboulli Bracers
-						{"select", "itemID", 2145 },    -- Cuirboulli Gloves
-						{"select", "itemID", 2146 },    -- Cuirboulli Pants
-						{"select", "itemID", 2141 },    -- Cuirboulli Vest
-						{"select", "itemID", 236 },    -- Cured Leather Armor
-						{"select", "itemID", 1849 },    -- Cured Leather Belt
-						{"select", "itemID", 238 },    -- Cured Leather Boots
-						{"select", "itemID", 1850 },    -- Cured Leather Bracers
-						{"select", "itemID", 239 },    -- Cured Leather Gloves
-						{"select", "itemID", 237 },    -- Cured Leather Pants
-						{"select", "itemID", 2471 },    -- Reinforced Leather Belt
-						{"select", "itemID", 2473 },    -- Reinforced Leather Boots
-						{"select", "itemID", 2474 },    -- Reinforced Leather Bracers
-						{"select", "itemID", 3893 },    -- Reinforced Leather Cap
-						{"select", "itemID", 2475 },    -- Reinforced Leather Gloves
-						{"select", "itemID", 2472 },    -- Reinforced Leather Pants
-						{"select", "itemID", 2470 },    -- Reinforced Leather Vest
-						{"select", "itemID", 2464 },    -- Studded Belt
-						{"select", "itemID", 2467 },    -- Studded Boots
-						{"select", "itemID", 2468 },    -- Studded Bracers
-						{"select", "itemID", 2463 },    -- Studded Doublet
-						{"select", "itemID", 2469 },    -- Studded Gloves
-						{"select", "itemID", 3890 },    -- Studded Hat
-						{"select", "itemID", 2465 },    -- Studded Pants
-						{"select", "itemID", 1843 },    -- Tanned Leather Belt
-						{"select", "itemID", 843 },    -- Tanned Leather Boots
-						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
-						{"select", "itemID", 844 },    -- Tanned Leather Gloves
-						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
-						{"select", "itemID", 845 },    -- Tanned Leather Pants
+						{"select", "itemID", 2142 },	-- Cuirboulli Belt
+						{"select", "itemID", 2143 },	-- Cuirboulli Boots
+						{"select", "itemID", 2144 },	-- Cuirboulli Bracers
+						{"select", "itemID", 2145 },	-- Cuirboulli Gloves
+						{"select", "itemID", 2146 },	-- Cuirboulli Pants
+						{"select", "itemID", 2141 },	-- Cuirboulli Vest
+						{"select", "itemID", 236 },	-- Cured Leather Armor
+						{"select", "itemID", 1849 },	-- Cured Leather Belt
+						{"select", "itemID", 238 },	-- Cured Leather Boots
+						{"select", "itemID", 1850 },	-- Cured Leather Bracers
+						{"select", "itemID", 239 },	-- Cured Leather Gloves
+						{"select", "itemID", 237 },	-- Cured Leather Pants
+						{"select", "itemID", 2471 },	-- Reinforced Leather Belt
+						{"select", "itemID", 2473 },	-- Reinforced Leather Boots
+						{"select", "itemID", 2474 },	-- Reinforced Leather Bracers
+						{"select", "itemID", 3893 },	-- Reinforced Leather Cap
+						{"select", "itemID", 2475 },	-- Reinforced Leather Gloves
+						{"select", "itemID", 2472 },	-- Reinforced Leather Pants
+						{"select", "itemID", 2470 },	-- Reinforced Leather Vest
+						{"select", "itemID", 2464 },	-- Studded Belt
+						{"select", "itemID", 2467 },	-- Studded Boots
+						{"select", "itemID", 2468 },	-- Studded Bracers
+						{"select", "itemID", 2463 },	-- Studded Doublet
+						{"select", "itemID", 2469 },	-- Studded Gloves
+						{"select", "itemID", 3890 },	-- Studded Hat
+						{"select", "itemID", 2465 },	-- Studded Pants
+						{"select", "itemID", 1843 },	-- Tanned Leather Belt
+						{"select", "itemID", 843 },	-- Tanned Leather Boots
+						{"select", "itemID", 1844 },	-- Tanned Leather Bracers
+						{"select", "itemID", 844 },	-- Tanned Leather Gloves
+						{"select", "itemID", 846 },	-- Tanned Leather Jerkin
+						{"select", "itemID", 845 },	-- Tanned Leather Pants
 					},
 					["groups"] = {
-						i(1839),    -- Rough Leather Belt
-						i(796),    -- Rough Leather Boots
-						i(1840),    -- Rough Leather Bracers
-						i(797),    -- Rough Leather Gloves
-						i(798),    -- Rough Leather Pants
-						i(799),    -- Rough Leather Vest
+						i(1839),	-- Rough Leather Belt
+						i(796),	-- Rough Leather Boots
+						i(1840),	-- Rough Leather Bracers
+						i(797),	-- Rough Leather Gloves
+						i(798),	-- Rough Leather Pants
+						i(799),	-- Rough Leather Vest
 					},
 				}),
 				n(4556, {	-- Gordon Wendham
@@ -1638,30 +1638,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.0, 38.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2371 },    -- Battered Leather Belt
-						{"select", "itemID", 2373 },    -- Battered Leather Boots
-						{"select", "itemID", 2374 },    -- Battered Leather Bracers
-						{"select", "itemID", 2375 },    -- Battered Leather Gloves
-						{"select", "itemID", 2370 },    -- Battered Leather Harness
-						{"select", "itemID", 2372 },    -- Battered Leather Pants
-						{"select", "itemID", 837 },    -- Heavy Weave Armor
-						{"select", "itemID", 3589 },    -- Heavy Weave Belt
-						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
-						{"select", "itemID", 839 },    -- Heavy Weave Gloves
-						{"select", "itemID", 838 },    -- Heavy Weave Pants
-						{"select", "itemID", 840 },    -- Heavy Weave Shoes
-						{"select", "itemID", 1843 },    -- Tanned Leather Belt
-						{"select", "itemID", 843 },    -- Tanned Leather Boots
-						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
-						{"select", "itemID", 844 },    -- Tanned Leather Gloves
-						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
-						{"select", "itemID", 845 },    -- Tanned Leather Pants
-						{"select", "itemID", 3606 },    -- Woven Belt
-						{"select", "itemID", 2367 },    -- Woven Boots
-						{"select", "itemID", 3607 },    -- Woven Bracers
-						{"select", "itemID", 2369 },    -- Woven Gloves
-						{"select", "itemID", 2366 },    -- Woven Pants
-						{"select", "itemID", 2364 },    -- Woven Vest
+						{"select", "itemID", 2371 },	-- Battered Leather Belt
+						{"select", "itemID", 2373 },	-- Battered Leather Boots
+						{"select", "itemID", 2374 },	-- Battered Leather Bracers
+						{"select", "itemID", 2375 },	-- Battered Leather Gloves
+						{"select", "itemID", 2370 },	-- Battered Leather Harness
+						{"select", "itemID", 2372 },	-- Battered Leather Pants
+						{"select", "itemID", 837 },	-- Heavy Weave Armor
+						{"select", "itemID", 3589 },	-- Heavy Weave Belt
+						{"select", "itemID", 3590 },	-- Heavy Weave Bracers
+						{"select", "itemID", 839 },	-- Heavy Weave Gloves
+						{"select", "itemID", 838 },	-- Heavy Weave Pants
+						{"select", "itemID", 840 },	-- Heavy Weave Shoes
+						{"select", "itemID", 1843 },	-- Tanned Leather Belt
+						{"select", "itemID", 843 },	-- Tanned Leather Boots
+						{"select", "itemID", 1844 },	-- Tanned Leather Bracers
+						{"select", "itemID", 844 },	-- Tanned Leather Gloves
+						{"select", "itemID", 846 },	-- Tanned Leather Jerkin
+						{"select", "itemID", 845 },	-- Tanned Leather Pants
+						{"select", "itemID", 3606 },	-- Woven Belt
+						{"select", "itemID", 2367 },	-- Woven Boots
+						{"select", "itemID", 3607 },	-- Woven Bracers
+						{"select", "itemID", 2369 },	-- Woven Gloves
+						{"select", "itemID", 2366 },	-- Woven Pants
+						{"select", "itemID", 2364 },	-- Woven Vest
 					},
 					["groups"] = {
 						i(16059),	-- Common Brown Shirt
@@ -1673,12 +1673,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(714),		-- Dirty Leather Gloves
 						i(209),		-- Dirty Leather Pants
 						i(85),		-- Dirty Leather Vest
-						i(3595),    -- Tattered Cloth Belt
-						i(195),    -- Tattered Cloth Boots
-						i(3596),    -- Tattered Cloth Bracers
-						i(711),    -- Tattered Cloth Gloves
-						i(194),    -- Tattered Cloth Pants
-						i(193),    -- Tattered Cloth Vest
+						i(3595),	-- Tattered Cloth Belt
+						i(195),	-- Tattered Cloth Boots
+						i(3596),	-- Tattered Cloth Bracers
+						i(711),	-- Tattered Cloth Gloves
+						i(194),	-- Tattered Cloth Pants
+						i(193),	-- Tattered Cloth Vest
 					},
 				}),
 				n(4574, {	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
@@ -1695,9 +1695,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.0, 41.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2025 },	-- bearded axe
-						{"select", "itemID", 1198 },	-- claymore
-						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 2025 },	-- Bearded Axe
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 2029 },	-- Cleaver
 						{"select", "itemID", 851 },	-- cutlass
 						{"select", "itemID", 2024 },	-- espadon
 						{"select", "itemID", 1197 },	-- giant mace
@@ -1717,13 +1717,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 71.4, 28.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2617 },    -- Burning Robes
-						{"select", "itemID", 2615 },    -- Chromatic Robe
-						{"select", "itemID", 2613 },    -- Double Stitched Robes
-						{"select", "itemID", 2612 },    -- Plain Robe
-						{"select", "itemID", 2614 },    -- Robe Of Apprenticeship
-						{"select", "itemID", 2616 },    -- Shimmering Silk Robes
-						{"select", "itemID", 2618 },    -- Silver Dress Robes
+						{"select", "itemID", 2617 },	-- Burning Robes
+						{"select", "itemID", 2615 },	-- Chromatic Robe
+						{"select", "itemID", 2613 },	-- Double Stitched Robes
+						{"select", "itemID", 2612 },	-- Plain Robe
+						{"select", "itemID", 2614 },	-- Robe Of Apprenticeship
+						{"select", "itemID", 2616 },	-- Shimmering Silk Robes
+						{"select", "itemID", 2618 },	-- Silver Dress Robes
 					},
 				}),
 				n(5190, {	-- Merill Pleasance <Tabard Vendor>
@@ -1760,78 +1760,78 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.6, 28.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2419 },    -- Augmented Chain Belt
-						{"select", "itemID", 2420 },    -- Augmented Chain Boots
-						{"select", "itemID", 2421 },    -- Augmented Chain Bracers
-						{"select", "itemID", 2422 },    -- Augmented Chain Gloves
-						{"select", "itemID", 3891 },    -- Augmented Chain Helm
-						{"select", "itemID", 2418 },    -- Augmented Chain Leggings
-						{"select", "itemID", 2417 },    -- Augmented Chain Vest
-						{"select", "itemID", 2424 },    -- Brigandine Belt
-						{"select", "itemID", 2426 },    -- Brigandine Boots
-						{"select", "itemID", 2427 },    -- Brigandine Bracers
-						{"select", "itemID", 2428 },    -- Brigandine Gloves
-						{"select", "itemID", 3894 },    -- Brigandine Helm
-						{"select", "itemID", 2425 },    -- Brigandine Leggings
-						{"select", "itemID", 2423 },    -- Brigandine Vest
-						{"select", "itemID", 847 },    -- Chainmail Armor
-						{"select", "itemID", 1845 },    -- Chainmail Belt
-						{"select", "itemID", 849 },    -- Chainmail Boots
-						{"select", "itemID", 1846 },    -- Chainmail Bracers
-						{"select", "itemID", 850 },    -- Chainmail Gloves
-						{"select", "itemID", 848 },    -- Chainmail Pants
-						{"select", "itemID", 2451 },    -- Crested Heater Shield
-						{"select", "itemID", 2448 },    -- Heavy Pavise
-						{"select", "itemID", 2446 },    -- Kite Shield
-						{"select", "itemID", 2392 },    -- Light Mail Armor
-						{"select", "itemID", 2393 },    -- Light Mail Belt
-						{"select", "itemID", 2395 },    -- Light Mail Boots
-						{"select", "itemID", 2396 },    -- Light Mail Bracers
-						{"select", "itemID", 2397 },    -- Light Mail Gloves
-						{"select", "itemID", 2394 },    -- Light Mail Leggings
-						{"select", "itemID", 17189 },    -- Metal Buckler
-						{"select", "itemID", 17190 },    -- Ornate Buckler
-						{"select", "itemID", 8094 },    -- Platemail Armor
-						{"select", "itemID", 8088 },    -- Platemail Belt
-						{"select", "itemID", 8089 },    -- Platemail Boots
-						{"select", "itemID", 8090 },    -- Platemail Bracers
-						{"select", "itemID", 8091 },    -- Platemail Gloves
-						{"select", "itemID", 8092 },    -- Platemail Helm
-						{"select", "itemID", 8093 },    -- Platemail Leggings
-						{"select", "itemID", 2148 },    -- Polished Scale Belt
-						{"select", "itemID", 2149 },    -- Polished Scale Boots
-						{"select", "itemID", 2150 },    -- Polished Scale Bracers
-						{"select", "itemID", 2151 },    -- Polished Scale Gloves
-						{"select", "itemID", 2152 },    -- Polished Scale Leggings
-						{"select", "itemID", 2153 },    -- Polished Scale Vest
-						{"select", "itemID", 17192 },    -- Reinforced Targe
-						{"select", "itemID", 1853 },    -- Scalemail Belt
-						{"select", "itemID", 287 },    -- Scalemail Boots
-						{"select", "itemID", 1852 },    -- Scalemail Bracers
-						{"select", "itemID", 718 },    -- Scalemail Gloves
-						{"select", "itemID", 286 },    -- Scalemail Pants
+						{"select", "itemID", 2419 },	-- Augmented Chain Belt
+						{"select", "itemID", 2420 },	-- Augmented Chain Boots
+						{"select", "itemID", 2421 },	-- Augmented Chain Bracers
+						{"select", "itemID", 2422 },	-- Augmented Chain Gloves
+						{"select", "itemID", 3891 },	-- Augmented Chain Helm
+						{"select", "itemID", 2418 },	-- Augmented Chain Leggings
+						{"select", "itemID", 2417 },	-- Augmented Chain Vest
+						{"select", "itemID", 2424 },	-- Brigandine Belt
+						{"select", "itemID", 2426 },	-- Brigandine Boots
+						{"select", "itemID", 2427 },	-- Brigandine Bracers
+						{"select", "itemID", 2428 },	-- Brigandine Gloves
+						{"select", "itemID", 3894 },	-- Brigandine Helm
+						{"select", "itemID", 2425 },	-- Brigandine Leggings
+						{"select", "itemID", 2423 },	-- Brigandine Vest
+						{"select", "itemID", 847 },	-- Chainmail Armor
+						{"select", "itemID", 1845 },	-- Chainmail Belt
+						{"select", "itemID", 849 },	-- Chainmail Boots
+						{"select", "itemID", 1846 },	-- Chainmail Bracers
+						{"select", "itemID", 850 },	-- Chainmail Gloves
+						{"select", "itemID", 848 },	-- Chainmail Pants
+						{"select", "itemID", 2451 },	-- Crested Heater Shield
+						{"select", "itemID", 2448 },	-- Heavy Pavise
+						{"select", "itemID", 2446 },	-- Kite Shield
+						{"select", "itemID", 2392 },	-- Light Mail Armor
+						{"select", "itemID", 2393 },	-- Light Mail Belt
+						{"select", "itemID", 2395 },	-- Light Mail Boots
+						{"select", "itemID", 2396 },	-- Light Mail Bracers
+						{"select", "itemID", 2397 },	-- Light Mail Gloves
+						{"select", "itemID", 2394 },	-- Light Mail Leggings
+						{"select", "itemID", 17189 },	-- Metal Buckler
+						{"select", "itemID", 17190 },	-- Ornate Buckler
+						{"select", "itemID", 8094 },	-- Platemail Armor
+						{"select", "itemID", 8088 },	-- Platemail Belt
+						{"select", "itemID", 8089 },	-- Platemail Boots
+						{"select", "itemID", 8090 },	-- Platemail Bracers
+						{"select", "itemID", 8091 },	-- Platemail Gloves
+						{"select", "itemID", 8092 },	-- Platemail Helm
+						{"select", "itemID", 8093 },	-- Platemail Leggings
+						{"select", "itemID", 2148 },	-- Polished Scale Belt
+						{"select", "itemID", 2149 },	-- Polished Scale Boots
+						{"select", "itemID", 2150 },	-- Polished Scale Bracers
+						{"select", "itemID", 2151 },	-- Polished Scale Gloves
+						{"select", "itemID", 2152 },	-- Polished Scale Leggings
+						{"select", "itemID", 2153 },	-- Polished Scale Vest
+						{"select", "itemID", 17192 },	-- Reinforced Targe
+						{"select", "itemID", 1853 },	-- Scalemail Belt
+						{"select", "itemID", 287 },	-- Scalemail Boots
+						{"select", "itemID", 1852 },	-- Scalemail Bracers
+						{"select", "itemID", 718 },	-- Scalemail Gloves
+						{"select", "itemID", 286 },	-- Scalemail Pants
 					},
 				}),
 				n(4592, {	-- Nathaniel Steenwick
 					["coord"] = { 77.2, 50.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
-						{"select", "itemID", 2506 },    -- Hornwood Recurve Bow
-						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
-						{"select", "itemID", 2505 },    -- Polished Shortbow
-						{"select", "itemID", 3026 },    -- Reinforced Bow
-						{"select", "itemID", 2504 },    -- Worn Shortbow
+						{"select", "itemID", 3027 },	-- Heavy Recurve Bow
+						{"select", "itemID", 2506 },	-- Hornwood Recurve Bow
+						{"select", "itemID", 2507 },	-- Laminated Recurve Bow
+						{"select", "itemID", 2505 },	-- Polished Shortbow
+						{"select", "itemID", 3026 },	-- Reinforced Bow
+						{"select", "itemID", 2504 },	-- Worn Shortbow
 					},
 				}),
 				n(4603, {	-- Nicholas Atwood
 					["coord"] = { 62.2, 27.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
-						{"select", "itemID", 3023 },    -- Large Bore Blunderbuss
-						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
-						{"select", "itemID", 2510 },    -- Solid Blunderbuss
+						{"select", "itemID", 3024 },	-- Bkp 2700 Enforcer
+						{"select", "itemID", 3023 },	-- Large Bore Blunderbuss
+						{"select", "itemID", 2509 },	-- Ornate Blunderbuss
+						{"select", "itemID", 2510 },	-- Solid Blunderbuss
 					},
 				}),
 				n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
@@ -1862,44 +1862,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 70.6, 28.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2435 },    -- Embroidered Armor
-						{"select", "itemID", 3587 },    -- Embroidered Belt
-						{"select", "itemID", 2438 },    -- Embroidered Boots
-						{"select", "itemID", 3588 },    -- Embroidered Bracers
-						{"select", "itemID", 2440 },    -- Embroidered Gloves
-						{"select", "itemID", 3892 },    -- Embroidered Hat
-						{"select", "itemID", 2437 },    -- Embroidered Pants
-						{"select", "itemID", 837 },    -- Heavy Weave Armor
-						{"select", "itemID", 3589 },    -- Heavy Weave Belt
-						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
-						{"select", "itemID", 839 },    -- Heavy Weave Gloves
-						{"select", "itemID", 838 },    -- Heavy Weave Pants
-						{"select", "itemID", 840 },    -- Heavy Weave Shoes
-						{"select", "itemID", 3602 },    -- Knitted Belt
-						{"select", "itemID", 3603 },    -- Knitted Bracers
-						{"select", "itemID", 793 },    -- Knitted Gloves
-						{"select", "itemID", 794 },    -- Knitted Pants
-						{"select", "itemID", 792 },    -- Knitted Sandals
-						{"select", "itemID", 795 },    -- Knitted Tunic
-						{"select", "itemID", 2160 },    -- Padded Armor
-						{"select", "itemID", 3591 },    -- Padded Belt
-						{"select", "itemID", 2156 },    -- Padded Boots
-						{"select", "itemID", 3592 },    -- Padded Bracers
-						{"select", "itemID", 2158 },    -- Padded Gloves
-						{"select", "itemID", 2159 },    -- Padded Pants
-						{"select", "itemID", 3593 },    -- Russet Belt
-						{"select", "itemID", 2432 },    -- Russet Boots
-						{"select", "itemID", 3594 },    -- Russet Bracers
-						{"select", "itemID", 2434 },    -- Russet Gloves
-						{"select", "itemID", 3889 },    -- Russet Hat
-						{"select", "itemID", 2431 },    -- Russet Pants
-						{"select", "itemID", 2429 },    -- Russet Vest
-						{"select", "itemID", 3597 },    -- Thick Cloth Belt
-						{"select", "itemID", 3598 },    -- Thick Cloth Bracers
-						{"select", "itemID", 203 },    -- Thick Cloth Gloves
-						{"select", "itemID", 201 },    -- Thick Cloth Pants
-						{"select", "itemID", 202 },    -- Thick Cloth Shoes
-						{"select", "itemID", 200 },    -- Thick Cloth Vest
+						{"select", "itemID", 2435 },	-- Embroidered Armor
+						{"select", "itemID", 3587 },	-- Embroidered Belt
+						{"select", "itemID", 2438 },	-- Embroidered Boots
+						{"select", "itemID", 3588 },	-- Embroidered Bracers
+						{"select", "itemID", 2440 },	-- Embroidered Gloves
+						{"select", "itemID", 3892 },	-- Embroidered Hat
+						{"select", "itemID", 2437 },	-- Embroidered Pants
+						{"select", "itemID", 837 },	-- Heavy Weave Armor
+						{"select", "itemID", 3589 },	-- Heavy Weave Belt
+						{"select", "itemID", 3590 },	-- Heavy Weave Bracers
+						{"select", "itemID", 839 },	-- Heavy Weave Gloves
+						{"select", "itemID", 838 },	-- Heavy Weave Pants
+						{"select", "itemID", 840 },	-- Heavy Weave Shoes
+						{"select", "itemID", 3602 },	-- Knitted Belt
+						{"select", "itemID", 3603 },	-- Knitted Bracers
+						{"select", "itemID", 793 },	-- Knitted Gloves
+						{"select", "itemID", 794 },	-- Knitted Pants
+						{"select", "itemID", 792 },	-- Knitted Sandals
+						{"select", "itemID", 795 },	-- Knitted Tunic
+						{"select", "itemID", 2160 },	-- Padded Armor
+						{"select", "itemID", 3591 },	-- Padded Belt
+						{"select", "itemID", 2156 },	-- Padded Boots
+						{"select", "itemID", 3592 },	-- Padded Bracers
+						{"select", "itemID", 2158 },	-- Padded Gloves
+						{"select", "itemID", 2159 },	-- Padded Pants
+						{"select", "itemID", 3593 },	-- Russet Belt
+						{"select", "itemID", 2432 },	-- Russet Boots
+						{"select", "itemID", 3594 },	-- Russet Bracers
+						{"select", "itemID", 2434 },	-- Russet Gloves
+						{"select", "itemID", 3889 },	-- Russet Hat
+						{"select", "itemID", 2431 },	-- Russet Pants
+						{"select", "itemID", 2429 },	-- Russet Vest
+						{"select", "itemID", 3597 },	-- Thick Cloth Belt
+						{"select", "itemID", 3598 },	-- Thick Cloth Bracers
+						{"select", "itemID", 203 },	-- Thick Cloth Gloves
+						{"select", "itemID", 201 },	-- Thick Cloth Pants
+						{"select", "itemID", 202 },	-- Thick Cloth Shoes
+						{"select", "itemID", 200 },	-- Thick Cloth Vest
 					},
 					["groups"] = {
 						i(13896),	-- Dark Green Wedding Hanbok
@@ -1910,34 +1910,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4570, {	-- Sydney Upton
 					["coord"] = { 69.8, 27.4, UNDERCITY },
 					["sym"] = {
-						{"select", "itemID", 2527 },    -- Battle Staff
-						{"select", "itemID", 2535 },    -- War Staff
+						{"select", "itemID", 2527 },	-- Battle Staff
+						{"select", "itemID", 2535 },	-- War Staff
 					},
 				}),
-				n(4559, {	-- Timothy Weldon  
+				n(4559, {	-- Timothy Weldon
 					["coord"] = { 63.6, 39.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 17187 },    -- Banded Buckler
-						{"select", "itemID", 17183 },    -- Dented Buckler
-						{"select", "itemID", 1200 },    -- Large Wooden Shield
-						{"select", "itemID", 2398 },    -- Light Chain Armor
-						{"select", "itemID", 2399 },    -- Light Chain Belt
-						{"select", "itemID", 2401 },    -- Light Chain Boots
-						{"select", "itemID", 2402 },    -- Light Chain Bracers
-						{"select", "itemID", 2403 },    -- Light Chain Gloves
-						{"select", "itemID", 2400 },    -- Light Chain Leggings
-						{"select", "itemID", 17185 },    -- Round Buckler
-						{"select", "itemID", 1202 },    -- Wall Shield
-						{"select", "itemID", 2376 },    -- Worn Heater Shield
+						{"select", "itemID", 17187 },	-- Banded Buckler
+						{"select", "itemID", 17183 },	-- Dented Buckler
+						{"select", "itemID", 1200 },	-- Large Wooden Shield
+						{"select", "itemID", 2398 },	-- Light Chain Armor
+						{"select", "itemID", 2399 },	-- Light Chain Belt
+						{"select", "itemID", 2401 },	-- Light Chain Boots
+						{"select", "itemID", 2402 },	-- Light Chain Bracers
+						{"select", "itemID", 2403 },	-- Light Chain Gloves
+						{"select", "itemID", 2400 },	-- Light Chain Leggings
+						{"select", "itemID", 17185 },	-- Round Buckler
+						{"select", "itemID", 1202 },	-- Wall Shield
+						{"select", "itemID", 2376 },	-- Worn Heater Shield
 					},
 					["groups"] = {
-						i(2387),    -- Rusted Chain Belt
-						i(2389),    -- Rusted Chain Boots
-						i(2390),    -- Rusted Chain Bracers
-						i(2391),    -- Rusted Chain Gloves
-						i(2388),    -- Rusted Chain Leggings
-						i(2386),    -- Rusted Chain Vest
+						i(2387),	-- Rusted Chain Belt
+						i(2389),	-- Rusted Chain Boots
+						i(2390),	-- Rusted Chain Bracers
+						i(2391),	-- Rusted Chain Gloves
+						i(2388),	-- Rusted Chain Leggings
+						i(2386),	-- Rusted Chain Vest
 					},
 				}),
 				n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
@@ -1960,28 +1960,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.8, 39.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 17187 },    -- Banded Buckler
-						{"select", "itemID", 847 },    -- Chainmail Armor
-						{"select", "itemID", 1845 },    -- Chainmail Belt
-						{"select", "itemID", 849 },    -- Chainmail Boots
-						{"select", "itemID", 1846 },    -- Chainmail Bracers
-						{"select", "itemID", 850 },    -- Chainmail Gloves
-						{"select", "itemID", 848 },    -- Chainmail Pants
-						{"select", "itemID", 1202 },    -- Wall Shield
+						{"select", "itemID", 17187 },	-- Banded Buckler
+						{"select", "itemID", 847 },	-- Chainmail Armor
+						{"select", "itemID", 1845 },	-- Chainmail Belt
+						{"select", "itemID", 849 },	-- Chainmail Boots
+						{"select", "itemID", 1846 },	-- Chainmail Bracers
+						{"select", "itemID", 850 },	-- Chainmail Gloves
+						{"select", "itemID", 848 },	-- Chainmail Pants
+						{"select", "itemID", 1202 },	-- Wall Shield
 					},
 				}),
 				n(5754, {	-- Zane Bradford
 					["coord"] = { 70.0, 27.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 5239 },    -- Blackbone Wand
-						{"select", "itemID", 5210 },    -- Burning Wand
-						{"select", "itemID", 5236 },    -- Combustible Wand
-						{"select", "itemID", 5211 },    -- Dusk Wand
-						{"select", "itemID", 5209 },    -- Gloom Wand
-						{"select", "itemID", 5347 },    -- Pestilent Wand
-						{"select", "itemID", 5238 },    -- Pitchwood Wand
-						{"select", "itemID", 5208 },    -- Smoldering Wand
+						{"select", "itemID", 5239 },	-- Blackbone Wand
+						{"select", "itemID", 5210 },	-- Burning Wand
+						{"select", "itemID", 5236 },	-- Combustible Wand
+						{"select", "itemID", 5211 },	-- Dusk Wand
+						{"select", "itemID", 5209 },	-- Gloom Wand
+						{"select", "itemID", 5347 },	-- Pestilent Wand
+						{"select", "itemID", 5238 },	-- Pitchwood Wand
+						{"select", "itemID", 5208 },	-- Smoldering Wand
 					},
 				}),
 			}),
