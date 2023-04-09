@@ -2354,9 +2354,6 @@ root(ROOTS.Unsorted, {
 				q(72520),	--
 				q(72521),	--
 				q(72531),	--
-				q(72590),	-- Ursol's Wisdom
-				q(72597),	-- Ursoc's Strength
-				q(72598),	-- Words of the Winterpelt
 				q(72608),	--
 				q(72716),	--
 				q(72718),	--
