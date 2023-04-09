@@ -75,6 +75,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					i(193873),	-- Pattern: Old Spirit's Wristwraps (RECIPE!)
 					i(193881),	-- Pattern: Scale Rein Grips (RECIPE!)
 					i(193872),	-- Pattern: String of Spiritual Knick-Knacks (RECIPE!)
+					i(205140),	-- Pattern: Undulating Sporecloak (RECIPE!)
 					i(193880),	-- Pattern: Wind Spirit's Lasso (RECIPE!)
 					i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
 					i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
@@ -87,6 +88,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 			n(DROPS, {
 				i(204975, {	-- Formula: Enchant Weapon - Shadowflame Wreathe (RECIPE!)
 					["crs"] = { 201579 },	-- Magmorax
+				}),
+				i(204968, {	-- Pattern: Shadowflame-Tempered Armor Patch (RECIPE!)
+					["crs"] = { 203133 },	-- Echo of Neltharion
 				}),
 				i(204696, {	-- Recipe: Draconic Phial Cauldron (RECIPE!)
 					["crs"] = {

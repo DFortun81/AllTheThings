@@ -60,6 +60,20 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 					},
 				}),
+				n(203644, {	-- Garram
+					["coord"] = { 57.3, 55.9, ZARALEK_CAVERN },
+					["g"] = {
+						i(204970, {	-- Pattern: Adaptive Dracothyst Armguards (RECIPE!)
+							["cost"] = { { "i", VOUCHER, 1 } },
+						}),
+						i(204974, {	-- Pattern: Lambent Armor Kit (RECIPE!)
+							["cost"] = { { "i", VOUCHER, 1 } },
+						}),
+						i(204969, {	-- Pattern: Spore Colony Shoulderguards (RECIPE!)
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+						}),
+					},
+				}),
 				n(203170, {	-- Kilnmaster Crubus
 					["coord"] = { 57.1, 55.0, ZARALEK_CAVERN },
 					["g"] = {
@@ -75,6 +89,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				n(203607, {	-- Mistie
 					["coord"] = { 56.0, 56.5, ZARALEK_CAVERN },
 					["g"] = {
+						i(204984, {	-- Recipe: Stinky Bright Potion (RECIPE!)
+							["cost"] = { { "i", VOUCHER, 1 } },
+						}),
 						i(204631, {	-- Recipe: Transmute: Dracothyst (RECIPE!)
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
@@ -272,6 +289,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							},
 						}),
 					},
+				}),
+				n(203608, { 	-- Rossmar
+					["coord"] = { 56.1, 56.7, ZARALEK_CAVERN },
+					["g"] = {
+						i(205139, {	-- Pattern: Reserve Parachute (RECIPE!)
+							["cost"] = { { "i", VOUCHER, 1 } }
+						}),
+					}
 				}),
 				n(203171, {	-- Scridorsa the Chiseler
 					["coord"] = { 55.8, 55.7, ZARALEK_CAVERN },

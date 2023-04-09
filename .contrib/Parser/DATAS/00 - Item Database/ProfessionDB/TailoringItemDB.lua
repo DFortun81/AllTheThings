@@ -152,3 +152,24 @@ i(203849, 402152);	-- Gurubashi Tigerhide Cloak
 i(204678, 405974);	-- Paw-Made Winterpelt Reagent Bag
 i(203851, 402156);	-- Ritualistic Legwarmers
 i(203428, 400815);	-- Traditional Morqut Kite
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+-- ITEM --
+i(204129, 403157);	-- Obsidian Combatant's Wildercloth Bands
+i(204130, 403149);	-- Obsidian Combatant's Wildercloth Cloak
+i(204131, 403152);	-- Obsidian Combatant's Wildercloth Gloves
+i(204132, 403153);	-- Obsidian Combatant's Wildercloth Hood
+i(204133, 403154);	-- Obsidian Combatant's Wildercloth Leggings
+i(204134, 403156);	-- Obsidian Combatant's Wildercloth Sash
+i(204135, 403155);	-- Obsidian Combatant's Wildercloth Shoulderpads
+i(204136, 403151);	-- Obsidian Combatant's Wildercloth Treads
+i(204137, 403150);	-- Obsidian Combatant's Wildercloth Tunic
+i(205139, 408304);	-- Reserve Parachute
+i(205140, 408318);	-- Undulating Sporecloak
+-- Weird --
+i(205141, 408319);	-- Explorer's Banner [NYI?]
+i(205034, 408305);	-- Enormous Ball of Yarn [Think NYI?]
+i(0, 408316);	-- Spore-Infused Combat Bandage [NYI?] Switch itemID to Medical Wrap Kit?
+i(205138, 409839);	-- Medical Wrap Kit [NYI]

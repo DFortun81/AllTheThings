@@ -207,8 +207,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						r(375168),	-- Feral Hide Drums
 						r(375181),	-- Floral Basket
 						r(375179),	-- Frostbite Scales
+						r(409557, {["timeline"]={ADDED_10_1_0}}),	-- Hide-Bound Drums
 						r(375184),	-- Jeweler's Cover
 						r(375174),	-- Mireslush Hide
+						r(409555, {["timeline"]={ADDED_10_1_0}}),	-- Lustrous Scaled Drums
 						r(375103),	-- Pioneer's Leather Boots
 						r(375104),	-- Pioneer's Leather Wristguards
 						r(375105),	-- Pioneer's Leather Tunic

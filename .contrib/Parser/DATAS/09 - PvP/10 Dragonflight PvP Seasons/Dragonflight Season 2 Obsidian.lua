@@ -832,6 +832,34 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			filter(RECIPES, {
 				i(204146),	-- Design: Obsidian Combatant's Jeweled Amulet (RECIPE!)
 				i(204147),	-- Design: Obsidian Combatant's Jeweled Signet (RECIPE!)
+				i(204157),	-- Pattern: Obsidian Combatant's Adamant Chainmail (RECIPE!)
+				i(204156),	-- Pattern: Obsidian Combatant's Adamant Cowl (RECIPE!)
+				i(204162),	-- Pattern: Obsidian Combatant's Adamant Cuffs (RECIPE!)
+				i(204159),	-- Pattern: Obsidian Combatant's Adamant Epaulettes (RECIPE!)
+				i(204161),	-- Pattern: Obsidian Combatant's Adamant Gauntlets (RECIPE!)
+				i(204163),	-- Pattern: Obsidian Combatant's Adamant Girdle (RECIPE!)
+				i(204158),	-- Pattern: Obsidian Combatant's Adamant Leggings (RECIPE!)
+				i(204160),	-- Pattern: Obsidian Combatant's Adamant Treads (RECIPE!)
+				i(204155),	-- Pattern: Obsidian Combatant's Resilient Belt (RECIPE!)
+				i(204152),	-- Pattern: Obsidian Combatant's Resilient Boots (RECIPE!)
+				i(204149),	-- Pattern: Obsidian Combatant's Resilient Chestpiece (RECIPE!)
+				i(204153),	-- Pattern: Obsidian Combatant's Resilient Gloves (RECIPE!)
+				i(204148),	-- Pattern: Obsidian Combatant's Resilient Mask (RECIPE!)
+				i(204151),	-- Pattern: Obsidian Combatant's Resilient Shoulderpads (RECIPE!)
+				i(204150),	-- Pattern: Obsidian Combatant's Resilient Trousers (RECIPE!)
+				i(204154),	-- Pattern: Obsidian Combatant's Resilient Wristwraps (RECIPE!)
+
+				i(204129),	-- Pattern: Obsidian Combatant's Wildercloth Bands
+				i(204130),	-- Pattern: Obsidian Combatant's Wildercloth Cloak
+				i(204131),	-- Pattern: Obsidian Combatant's Wildercloth Gloves
+				i(204132),	-- Pattern: Obsidian Combatant's Wildercloth Hood
+				i(204133),	-- Pattern: Obsidian Combatant's Wildercloth Leggings
+				i(204134),	-- Pattern: Obsidian Combatant's Wildercloth Sash
+				i(204135),	-- Pattern: Obsidian Combatant's Wildercloth Shoulderpads
+				i(204136),	-- Pattern: Obsidian Combatant's Wildercloth Treads
+				i(204137),	-- Pattern: Obsidian Combatant's Wildercloth Tunic
+
+
 				i(204144),	-- Plans: Obsidian Combatant's Draconium Armguards (RECIPE!)
 				i(204139),	-- Plans: Obsidian Combatant's Draconium Breastplate (RECIPE!)
 				i(204142),	-- Plans: Obsidian Combatant's Draconium Gauntlets (RECIPE!)

@@ -2332,6 +2332,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
 			i(193466),	-- Acidic Hailstone Treads
+			i(204704, {["timeline"] = {ADDED_10_1_0}}),	-- Adaptive Dracothyst Armguards
 			i(193453),	-- Allied Heartwarming Fur Coat
 			i(193464),	-- Allied Legguards of Sansok Khan
 			i(193459),	-- Ancestor's Dew Drippers
@@ -2372,6 +2373,22 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(193418),	-- Life-Bound Gloves
 			i(193406),	-- Life-Bound Shoulderpads
 			i(193408),	-- Life-Bound Trousers
+			i(204105, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Chainmail
+			i(204106, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Cowl
+			i(204111, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Cuffs
+			i(204107, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Epaulettes
+			i(204110, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Gauntlets
+			i(204108, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Girdle
+			i(204109, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Leggings
+			i(204104, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Treads
+			i(204100, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Belt
+			i(204096, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Boots
+			i(204097, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Chestpiece
+			i(204102, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Gloves
+			i(204098, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Mask
+			i(204099, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Shoulderpads
+			i(204101, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Trousers
+			i(204103, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Resilient Wristwraps
 			i(193454),	-- Old Spirit's Wristwraps
 			i(193386),	-- Pioneer's Leather Boots
 			i(193388),	-- Pioneer's Leather Wristguards
@@ -2384,6 +2401,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(193465),	-- Scale Rein Grips
 			i(193451),	-- Slimy Expulsion Boots
 			i(193458),	-- Snowball Makers
+			i(204706, {["timeline"] = {ADDED_10_1_0}}),	-- Spore Colony Shoulderguards
 			i(193457),	-- String of Spiritual Knick-Knacks
 			i(193452),	-- Toxic Thorn Footwraps
 			i(193392),	-- Trailblazer's Scale Boots
@@ -2434,7 +2452,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(72496, 395865);	-- Pioneer's Practiced Gloves
 			FirstCraft(72497, 395867);	-- Pioneer's Practiced Leggings
 			FirstCraft(72498, 395868);	-- Pioneer's Practiced Shoulderpads
+			--FirstCraft(x, 406266, ADDED_10_1_0);	-- Spore Colony Shoulderguards
 			-- Mail Armor
+			--FirstCraft(x, 406267, ADDED_10_1_0);	-- Adaptive Dracothyst Armguards
 			FirstCraft(71738, 375123);	-- Flame-Touched Chain
 			FirstCraft(71733, 375117);	-- Flame-Touched Chainmail
 			FirstCraft(71739, 375124);	-- Flame-Touched Cuffs
@@ -2502,6 +2522,22 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71717, 375156);	-- Infurious Chainhelm Protector
 			FirstCraft(71688, 375149);	-- Infurious Footwraps of Indemnity
 			FirstCraft(71689, 375148);	-- Infurious Spirit's Hood
+			--FirstCraft(x, 403142, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Chainmail
+			--FirstCraft(x, 403141, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Cowl
+			--FirstCraft(x, 403147, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Cuffs
+			--FirstCraft(x, 403144, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Epaulettes
+			--FirstCraft(x, 403145, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Gauntlets
+			--FirstCraft(x, 403148, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Girdle
+			--FirstCraft(x, 403143, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Leggings
+			--FirstCraft(x, 403146, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Treads
+			--FirstCraft(x, 403140, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Belt
+			--FirstCraft(x, 403138, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Boots
+			--FirstCraft(x, 403134, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Chestpiece
+			--FirstCraft(x, 403137, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Gloves
+			--FirstCraft(x, 403133, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Mask
+			--FirstCraft(x, 403136, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Shoulderpads
+			--FirstCraft(x, 403135, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Trousers
+			--FirstCraft(x, 403139, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Wristwraps
 			-- Decayed Patter
 			FirstCraft(71715, 375151);	-- Acidic Hailstone Treads
 			FirstCraft(71686, 375142);	-- Slimy Expulsion Boots
@@ -2519,10 +2555,12 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71759, 375173);	-- Stonecrust Hide
 			-- Optional Reagents
 			FirstCraft(71758, 375159);	-- Fang Adornments
+			--FirstCraft(x, 406275, ADDED_10_1_0);	-- Shadowflame-Tempered Armor Patch
 			FirstCraft(71757, 375160);	-- Toxified Armor Patch
 			-- Armor Kits
 			FirstCraft(71741, 375162);	-- Fierce Armor Kit
 			FirstCraft(71742, 375161);	-- Frosted Armor Kit
+			--FirstCraft(x, 406214, ADDED_10_1_0);	-- Lambent Armor Kit
 			FirstCraft(71743, 375164);	-- Reinforced Armor Kit
 			-- Drums
 			FirstCraft(71746, 375168);	-- Feral Hide Drums
@@ -2544,10 +2582,16 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(193556),	-- Frosted Armor Kit+
 			i(193560),	-- Frosted Armor Kit++
 			i(193564),	-- Frosted Armor Kit+++
+			i(204700, {["timeline"]={ADDED_10_1_0}}),	-- Lambent Armor Kit+
+			i(204701, {["timeline"]={ADDED_10_1_0}}),	-- Lambent Armor Kit++
+			i(204702, {["timeline"]={ADDED_10_1_0}}),	-- Lambent Armor Kit+++
 			i(193559),	-- Reinforced Armor Kit+
 			i(193563),	-- Reinforced Armor Kit++
 			i(193567),	-- Reinforced Armor Kit+++
 			i(203414, {["timeline"]={ADDED_10_0_7}}),	-- Reinforced Pristine Leather
+			i(204708, {["timeline"]={ADDED_10_1_0}}),	-- Shadowflame-Tempered Armor Patch+
+			i(204709, {["timeline"]={ADDED_10_1_0}}),	-- Shadowflame-Tempered Armor Patch++
+			i(204710, {["timeline"]={ADDED_10_1_0}}),	-- Shadowflame-Tempered Armor Patch+++
 			i(193469),	-- Toxified Armor Patch+
 			i(193552),	-- Toxified Armor Patch++
 			i(193555),	-- Toxified Armor Patch+++
@@ -2690,15 +2734,15 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(193521),	-- Hood of Surging Time
 			i(193513),	-- Infurious Handwraps of Gesticulation
 			i(193524),	-- Infurious Legwraps of Possibility
-			i(193516),	-- Vibrant Wildercloth Girdle
-			i(193504),	-- Vibrant Wildercloth Handwraps
-			i(193523),	-- Vibrant Wildercloth Headcover
-			i(193511),	-- Vibrant Wildercloth Shawl
-			i(193508),	-- Vibrant Wildercloth Shoulderspikes
-			i(193518),	-- Vibrant Wildercloth Slacks
-			i(193519),	-- Vibrant Wildercloth Slippers
-			i(193509),	-- Vibrant Wildercloth Vestments
-			i(193510),	-- Vibrant Wildercloth Wristwraps
+			i(204115, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Bands
+			i(204120, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Cloak
+			i(204117, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Gloves
+			i(204116, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Hood
+			i(204112, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Leggings
+			i(204119, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Sash
+			i(204113, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Shoulderpads
+			i(204114, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Treads
+			i(204118, {["timeline"]={ADDED_10_1_0}}),	-- Obsidian Combatant's Wildercloth Tunic
 			i(193497),	-- Surveyor's Cloth Bands
 			i(193515),	-- Surveyor's Cloth Robe
 			i(193498),	-- Surveyor's Cloth Treads
@@ -2708,6 +2752,15 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(201939),	-- Surveyor's Seasoned Pants
 			i(201937),	-- Surveyor's Seasoned Shoulders
 			i(193500),	-- Surveyor's Tailored Cloak
+			i(193516),	-- Vibrant Wildercloth Girdle
+			i(193504),	-- Vibrant Wildercloth Handwraps
+			i(193523),	-- Vibrant Wildercloth Headcover
+			i(193511),	-- Vibrant Wildercloth Shawl
+			i(193508),	-- Vibrant Wildercloth Shoulderspikes
+			i(193518),	-- Vibrant Wildercloth Slacks
+			i(193519),	-- Vibrant Wildercloth Slippers
+			i(193509),	-- Vibrant Wildercloth Vestments
+			i(193510),	-- Vibrant Wildercloth Wristwraps
 			-- Profession Accessory
 			i(193540),	-- Dragoncloth Tailoring Vestments
 			i(193544),	-- Master's Wildercloth Alchemist's Robe
@@ -2751,6 +2804,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(194012),	-- Frozen Spellthread++
 			i(194013),	-- Frozen Spellthread+++
 			i(202287, {["timeline"]={ADDED_10_0_7}}),	-- Paw-Made Winterpelt Reagent Bag
+			i(205012, {["timeline"]={ADDED_10_1_0}}),	-- Reserve Parachute
 			i(193962),	-- Shimmering Embroidery Thread+
 			i(193963),	-- Shimmering Embroidery Thread++
 			i(193964),	-- Shimmering Embroidery Thread+++
@@ -2759,6 +2813,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(194015),	-- Temporal Spellthread++
 			i(194016),	-- Temporal Spellthread+++
 			i(203415, {["timeline"]={ADDED_10_0_7}}),	-- Traditional Morqut Kite
+			i(205025, {["timeline"]={ADDED_10_1_0}}),	-- Undulating Sporecloak
 			i(193953),	-- Vibrant Polishing Cloth+
 			i(193954),	-- Vibrant Polishing Cloth++
 			i(193955),	-- Vibrant Polishing Cloth+++
@@ -2816,6 +2871,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			-- Optional Reagents --
 			FirstCraft(71827, 376541);	-- Blue Silken Lining
 			FirstCraft(71828, 376542);	-- Bronzed Grip Wrappings
+			--FirstCraft(x, 376542, ADDED_10_1_0);	-- Reserve Parachute
 			-- Finishing Reagents --
 			FirstCraft(71819, 376533);	-- Abrasive Polishing Cloth
 			FirstCraft(71820, 376534);	-- Vibrant Polishing Cloth
@@ -2832,15 +2888,15 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71811, 376525);	-- Crimson Combatant's Wildercloth Shoulderpads
 			FirstCraft(71807, 376521);	-- Crimson Combatant's Wildercloth Treads
 			FirstCraft(71806, 376520);	-- Crimson Combatant's Wildercloth Tunic
-			FirstCraft(71803, 376517);	-- Vibrant Wildercloth Girdle
-			FirstCraft(71799, 376513);	-- Vibrant Wildercloth Handwraps
-			FirstCraft(71800, 376514);	-- Vibrant Wildercloth Headcover
-			FirstCraft(71796, 376510);	-- Vibrant Wildercloth Shawl
-			FirstCraft(71802, 376516);	-- Vibrant Wildercloth Shoulderspikes
-			FirstCraft(71801, 376515);	-- Vibrant Wildercloth Slacks
-			FirstCraft(71798, 376512);	-- Vibrant Wildercloth Slippers
-			FirstCraft(71797, 376511);	-- Vibrant Wildercloth Vestments
-			FirstCraft(71804, 376518);	-- Vibrant Wildercloth Wristwrap
+			--FirstCraft(x, 403157, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Bands
+			--FirstCraft(x, 403149, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Cloak
+			--FirstCraft(x, 403152, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Gloves
+			--FirstCraft(x, 403153, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Hood
+			--FirstCraft(x, 403154, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Leggings
+			--FirstCraft(x, 403156, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Sash
+			--FirstCraft(x, 403155, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Shoulderpads
+			--FirstCraft(x, 403151, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Treads
+			--FirstCraft(x, 403150, ADDED_10_1_0);	-- Obsidian Combatant's Wildercloth Tunic
 			FirstCraft(71795, 376509);	-- Surveyor's Cloth Bands
 			FirstCraft(71793, 376507);	-- Surveyor's Cloth Robe
 			FirstCraft(71794, 376508);	-- Surveyor's Cloth Treads
@@ -2850,6 +2906,16 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(72508, 395814);	-- Surveyor's Seasoned Pants
 			FirstCraft(72509, 395815);	-- Surveyor's Seasoned Shoulders
 			FirstCraft(71792, 376506);	-- Surveyor's Tailored Cloak
+			--FirstCraft(x, 376506, ADDED_10_1_0);	-- Undulating Sporecloak
+			FirstCraft(71803, 376517);	-- Vibrant Wildercloth Girdle
+			FirstCraft(71799, 376513);	-- Vibrant Wildercloth Handwraps
+			FirstCraft(71800, 376514);	-- Vibrant Wildercloth Headcover
+			FirstCraft(71796, 376510);	-- Vibrant Wildercloth Shawl
+			FirstCraft(71802, 376516);	-- Vibrant Wildercloth Shoulderspikes
+			FirstCraft(71801, 376515);	-- Vibrant Wildercloth Slacks
+			FirstCraft(71798, 376512);	-- Vibrant Wildercloth Slippers
+			FirstCraft(71797, 376511);	-- Vibrant Wildercloth Vestments
+			FirstCraft(71804, 376518);	-- Vibrant Wildercloth Wristwrap
 			-- Azureweave Garments --
 			FirstCraft(71779, 376493);	-- Amice of the Blue
 			FirstCraft(71788, 376502);	-- Azureweave Mantle

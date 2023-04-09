@@ -176,3 +176,31 @@ i(203844, 402146);	-- Gloves of the Tormentor
 i(203847, 402150);	-- Gurubashi's Grasp
 i(203845, 402147);	-- Junglefury Gauntlets
 i(203846, 402148);	-- Junglefury Leggings
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+-- TRAINER --
+i(0, 409557);	-- Hide-Bound Drums
+i(0, 409555);	-- Lustrous Scaled Drums
+-- ITEM --
+i(204970, 406267);	-- Adaptive Dracothyst Armguards
+i(204974, 406214);	-- Lambent Armor Kit
+i(204157, 403142);	-- Obsidian Combatant's Adamant Chainmail
+i(204156, 403141);	-- Obsidian Combatant's Adamant Cowl
+i(204162, 403147);	-- Obsidian Combatant's Adamant Cuffs
+i(204159, 403144);	-- Obsidian Combatant's Adamant Epaulettes
+i(204161, 403145);	-- Obsidian Combatant's Adamant Gauntlets
+i(204163, 403148);	-- Obsidian Combatant's Adamant Girdle
+i(204158, 403143);	-- Obsidian Combatant's Adamant Leggings
+i(204160, 403146);	-- Obsidian Combatant's Adamant Treads
+i(204155, 403140);	-- Obsidian Combatant's Resilient Belt
+i(204152, 403138);	-- Obsidian Combatant's Resilient Boots
+i(204149, 403134);	-- Obsidian Combatant's Resilient Chestpiece
+i(204153, 403137);	-- Obsidian Combatant's Resilient Gloves
+i(204148, 403133);	-- Obsidian Combatant's Resilient Mask
+i(204151, 403136);	-- Obsidian Combatant's Resilient Shoulderpads
+i(204150, 403135);	-- Obsidian Combatant's Resilient Trousers
+i(204154, 403139);	-- Obsidian Combatant's Resilient Wristwraps
+i(204968, 406275);	-- Shadowflame-Tempered Armor Patch
+i(204969, 406266);	-- Spore Colony Shoulderguards

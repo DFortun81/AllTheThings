@@ -972,63 +972,6 @@ root(ROOTS.Unsorted, {
 			n(PROFESSIONS, {
 
 
-
-				-- New PvP gear
-
-				i(204096),	-- Obsidian Combatant's Resilient Boots
-				i(204097),	-- Obsidian Combatant's Resilient Chestpiece
-				i(204098),	-- Obsidian Combatant's Resilient Mask
-				i(204099),	-- Obsidian Combatant's Resilient Shoulderpads
-				i(204100),	-- Obsidian Combatant's Resilient Belt
-				i(204101),	-- Obsidian Combatant's Resilient Trousers
-				i(204102),	-- Obsidian Combatant's Resilient Gloves
-				i(204103),	-- Obsidian Combatant's Resilient Wristwraps
-				i(204104),	-- Obsidian Combatant's Adamant Treads
-				i(204105),	-- Obsidian Combatant's Adamant Chainmail
-				i(204106),	-- Obsidian Combatant's Adamant Cowl
-				i(204107),	-- Obsidian Combatant's Adamant Epaulettes
-				i(204108),	-- Obsidian Combatant's Adamant Girdle
-				i(204109),	-- Obsidian Combatant's Adamant Leggings
-				i(204110),	-- Obsidian Combatant's Adamant Gauntlets
-				i(204111),	-- Obsidian Combatant's Adamant Cuffs
-				i(204112),	-- Obsidian Combatant's Wildercloth Leggings
-				i(204113),	-- Obsidian Combatant's Wildercloth Shoulderpads
-				i(204114),	-- Obsidian Combatant's Wildercloth Treads
-				i(204115),	-- Obsidian Combatant's Wildercloth Bands
-				i(204116),	-- Obsidian Combatant's Wildercloth Hood
-				i(204117),	-- Obsidian Combatant's Wildercloth Gloves
-				i(204118),	-- Obsidian Combatant's Wildercloth Tunic
-				i(204119),	-- Obsidian Combatant's Wildercloth Sash
-				i(204120),	-- Obsidian Combatant's Wildercloth Cloak
-				i(204129),	-- Pattern: Obsidian Combatant's Wildercloth Bands
-				i(204130),	-- Pattern: Obsidian Combatant's Wildercloth Cloak
-				i(204131),	-- Pattern: Obsidian Combatant's Wildercloth Gloves
-				i(204132),	-- Pattern: Obsidian Combatant's Wildercloth Hood
-				i(204133),	-- Pattern: Obsidian Combatant's Wildercloth Leggings
-				i(204134),	-- Pattern: Obsidian Combatant's Wildercloth Sash
-				i(204135),	-- Pattern: Obsidian Combatant's Wildercloth Shoulderpads
-				i(204136),	-- Pattern: Obsidian Combatant's Wildercloth Treads
-				i(204137),	-- Pattern: Obsidian Combatant's Wildercloth Tunic
-
-				i(204148),	-- Pattern: Obsidian Combatant's Resilient Mask
-				i(204149),	-- Pattern: Obsidian Combatant's Resilient Chestpiece
-				i(204150),	-- Pattern: Obsidian Combatant's Resilient Trousers
-				i(204151),	-- Pattern: Obsidian Combatant's Resilient Shoulderpads
-				i(204152),	-- Pattern: Obsidian Combatant's Resilient Boots
-				i(204153),	-- Pattern: Obsidian Combatant's Resilient Gloves
-				i(204154),	-- Pattern: Obsidian Combatant's Resilient Wristwraps
-				i(204155),	-- Pattern: Obsidian Combatant's Resilient Belt
-				i(204156),	-- Pattern: Obsidian Combatant's Adamant Cowl
-				i(204157),	-- Pattern: Obsidian Combatant's Adamant Chainmail
-				i(204158),	-- Pattern: Obsidian Combatant's Adamant Leggings
-				i(204159),	-- Pattern: Obsidian Combatant's Adamant Epaulettes
-				i(204160),	-- Pattern: Obsidian Combatant's Adamant Treads
-				i(204161),	-- Pattern: Obsidian Combatant's Adamant Gauntlets
-				i(204162),	-- Pattern: Obsidian Combatant's Adamant Cuffs
-				i(204163),	-- Pattern: Obsidian Combatant's Adamant Girdle
-
-
-
 				i(204440),	-- Spark of Shadowflame
 				i(204460),	-- Zaralek Glowspores
 				i(204462),	-- Dracothyst Shards
@@ -1041,18 +984,16 @@ root(ROOTS.Unsorted, {
 				i(204480),	-- Inconspicuous Data Miner
 
 
-
-
-
-
-
-				i(204700),	-- Lambent Armor Kit
-				i(204701),	-- Lambent Armor Kit
-				i(204702),	-- Lambent Armor Kit
-				i(204708),	-- Shadowflame-Tempered Armor Patch
-				i(204709),	-- Shadowflame-Tempered Armor Patch
-				i(204710),	-- Shadowflame-Tempered Armor Patch
-
+				-- NYI --?
+				i(205138),	-- Pattern: Medical Wrap Kit
+				i(205005),	-- Spore-infused Combat Bandage
+				i(205006),	-- Spore-infused Combat Bandage
+				i(205007),	-- Spore-infused Combat Bandage
+				i(205142),	-- Pattern: Enormous Ball of Yarn [Think is NYI?]
+				i(205411),	-- Medical Wrap Kit
+				i(205141),	-- Pattern: Explorer's Banner
+				i(205028),	-- Explorer's Banner of Comradery
+				i(205029),	-- Explorer's Banner of Comradery
 			}),
 			n(PVP, {
 				i(204179),	-- Medal of Honor
@@ -1146,8 +1087,8 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(204704),	-- Adaptive Dracothyst Armguards
-				i(204706),	-- Spore Colony Shoulderguards
+
+
 
 				i(204712),	-- Brimming Loamm Niffen Supply Satchel
 
@@ -1208,11 +1149,11 @@ root(ROOTS.Unsorted, {
 
 				i(204911),	-- Propagated Spore
 
-				i(204968),	-- Pattern: Shadowflame-Tempered Armor Patch
-				i(204969),	-- Pattern: Spore Colony Shoulderguards
-				i(204970),	-- Pattern: Adaptive Dracothyst Armguards
 
-				i(204974),	-- Pattern: Lambent Armor Kit
+
+
+
+
 
 
 
@@ -1231,14 +1172,12 @@ root(ROOTS.Unsorted, {
 				i(205002),	-- Blaise
 				i(205003),	-- Ambre
 				i(205004),	-- Azure Swoglet
-				i(205005),	-- Spore-infused Combat Bandage
-				i(205006),	-- Spore-infused Combat Bandage
-				i(205007),	-- Spore-infused Combat Bandage
+
 				i(205008),	-- Emerald Swoglet
 				i(205009),	-- Karrit
 				i(205010),	-- Crimson Swoglet
 				i(205011),	-- Bronze Swoglet
-				i(205012),	-- Reserve Parachute
+
 				i(205013),	-- Lettuce
 
 				i(205017),	-- Byrn
@@ -1246,10 +1185,9 @@ root(ROOTS.Unsorted, {
 				i(205021),	-- Lord Stantley
 				i(205023),	-- Savage Lobstrok
 				i(205024),	-- Cheddar
-				i(205025),	-- Undulating Sporecloak
+
 				i(205026),	-- Devourer Lobstrok
-				i(205028),	-- Explorer's Banner of Comradery
-				i(205029),	-- Explorer's Banner of Comradery
+
 
 				i(205032),	-- Bestial Lurker
 
@@ -1263,28 +1201,6 @@ root(ROOTS.Unsorted, {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				i(205138),	-- Pattern: Spore-Infused Combat Bandage
-				i(205139),	-- Pattern: Reserve Parachute
-				i(205140),	-- Pattern: Undulating Sporecloak
-				i(205141),	-- Pattern: Explorer's Banner of Comradery
-				i(205142),	-- Pattern: Enourmous Ball of Yarn
 				i(205144),	-- Plans: [PH] Hellsteel Bunker Buster
 
 				i(205147),	-- Ridged Shalewing
@@ -1325,7 +1241,7 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(205142),	-- Pattern: Enormous Ball of Yarn
+
 
 
 
@@ -1411,7 +1327,7 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(205138),	-- Pattern: Medical Wrap Kit
+
 
 
 
@@ -1537,7 +1453,7 @@ root(ROOTS.Unsorted, {
 				i(205408),	-- Obsidian Gladiator's Drape
 				i(205409),	-- Obsidian Gladiator's Shawl
 				i(205410),	-- Pungent Morsel
-				i(205411),	-- Medical Wrap Kit
+
 				i(205412),	-- Jangly Key
 				i(205413),	-- Obsidian Cobraskin
 
@@ -1908,7 +1824,7 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(205141),	-- Pattern: Explorer's Banner
+
 				i(205366),	-- Dripping Clay Pot
 				i(205471),	-- Slimy Deepsea Fin
 				i(205489),	-- Obsidian Gladiator's Silk Tunic
