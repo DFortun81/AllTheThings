@@ -2927,6 +2927,7 @@ _.ObjectNames = {
 	[393222] = "Supply Trunk",
 	[393282] = "Balloon Box",
 	[393283] = "Balloon Box",
+	[393957] = "Gold Pile",
 	[393958] = "Gold Pile",
 	[398200] = "Forgotten Lockbox",
 	[398770] = "Box of Rocks",

@@ -434,6 +434,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 25.7, 51.1, THE_FORBIDDEN_REACH },
 							["questID"] = 74969,
 						}),
+						o(389546, {	-- Reagent Pot
+							["coord"] = { 29.8, 58.4, THE_FORBIDDEN_REACH },
+							["questID"] = 75052,
+						}),
 						o(385398, {	-- Searing Chest
 							["questID"] = 72889,
 						}),
@@ -544,7 +548,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 26.5, 49.3, THE_FORBIDDEN_REACH },
 							["questID"] = 73068,
 						}),
-						o(393958, { -- Gold Pile
+						o(393957, { -- Gold Pile
 							["questID"] = 75254,
 						}),
 						o(393958, {	-- Gold Pile
