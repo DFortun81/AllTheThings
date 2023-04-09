@@ -1407,6 +1407,20 @@ i(193377, 3294);	-- Gerald
 i(205050, 3528);	-- Paulie
 i(205051, 3529);	-- Rango
 i(205120, 3537);	-- Thimblerig
+n(203287, 3477);	-- Puddlehopper
+n(203288, 3478);	-- Rock Martin
+n(203289, 3479);	-- Yellabon
+n(203292, 3480);	-- Endmite
+n(203308, 3481);	-- Stonewhisker
+n(203310, 3482);	-- Cobbleshell
+n(203311, 3483);	-- Boulderfang
+n(203312, 3484);	-- Slabwing
+n(203313, 3485);	-- Hollow Moth
+n(203358, 3486);	-- Lithengale
+n(203364, 3487);	-- Scarlapod
+n(203367, 3488);	-- Deepridger
+n(203372, 3489);	-- Sunglow Cobra
+n(203377, 3490);	-- Ebonwing Moth
 -- UNSORTED --
 i(205054, 3532);	-- Amador
 i(205114, 3533);	-- Brul
@@ -1416,20 +1430,6 @@ i(205122, 3539);	-- Roseshell
 i(205053, 3531);	-- Rusty
 i(205121, 3538);	-- Tricky
 --[[
-p(3477),	-- Puddlehopper
-p(3478),	-- Rock Martin
-p(3479),	-- Yellabon
-p(3480),	-- Endmite
-p(3481),	-- Stonewhisker
-p(3482),	-- Cobbleshell
-p(3483),	-- Boulderfang
-p(3484),	-- Slabwing
-p(3485),	-- Hollow Moth
-p(3486),	-- Lithengale
-p(3487),	-- Scarlapod
-p(3488),	-- Deepridger
-p(3489),	-- Sunglow Cobra
-p(3490),	-- Ebonwing Moth
 p(3493),	-- Roland
 p(3511),	-- Blaise
 p(3512),	-- Ambre
