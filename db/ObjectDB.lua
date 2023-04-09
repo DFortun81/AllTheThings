@@ -2191,6 +2191,7 @@ _.ObjectNames = {
 	[352596] = "Sprouting Growth",
 	[352703] = "The Harvest",
 	[352754] = "Silver Strongbox",
+	[352909] = "Glimmerfin Scale",
 	[353019] = "Silver Strongbox",
 	[353205] = "Silver Strongbox",
 	[353231] = "Bonebound Chest",
