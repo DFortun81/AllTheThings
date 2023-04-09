@@ -16576,6 +16576,7 @@ RowOnEnter = function (self)
 		end
 
 		-- Miscellaneous fields
+		local missingMiscData;
 		-- app.PrintDebug("Adding misc fields");
 		if app.Settings:GetTooltipSetting("Progress") then
 			if reference.total and reference.total >= 2 then
@@ -16745,30 +16746,42 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.providers then
-			local counter = 0;
+			local first = true;
+			local providerType, providerID, providerString, providerTypeName, addId;
 			for i,provider in pairs(reference.providers) do
-				local providerType = provider[1];
-				local providerID = provider[2] or 0;
-				local providerString = UNKNOWN;
+				providerType = provider[1];
+				providerID = provider[2] or 0;
+				providerString = nil;
+				addId = nil;
 				if providerType == "o" then
-					providerString = app.ObjectNames[providerID] or reference.text or ("Object: " .. RETRIEVING_DATA)
-					if app.Settings:GetTooltipSetting("objectID") then
-						providerString = providerString .. ' (' .. providerID .. ')';
-					end
+					providerTypeName = "Object: ";
+					providerString = app.ObjectNames[providerID];
+					addId = app.Settings:GetTooltipSetting("objectID");
 				elseif providerType == "n" then
-					providerString = (providerID > 0 and app.NPCNameFromID[providerID]) or ("Creature: " .. RETRIEVING_DATA)
-					if app.Settings:GetTooltipSetting("creatureID") then
-						providerString = providerString .. ' (' .. providerID .. ')';
-					end
+					providerTypeName = "Creature: ";
+					providerString = providerID > 0 and app.NPCNameFromID[providerID];
+					addId = app.Settings:GetTooltipSetting("creatureID");
 				elseif providerType == "i" then
 					local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(providerID);
-					providerString = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or ("Item: " .. RETRIEVING_DATA));
-					if app.Settings:GetTooltipSetting("itemID") then
-						providerString = providerString .. ' (' .. providerID .. ')';
+					if name then
+						providerTypeName = "Item: ";
+						if icon then
+							providerTypeName = providerTypeName .. "|T" .. icon .. ":0|t";
+						end
+						providerString = name;
+						addId = app.Settings:GetTooltipSetting("itemID");
 					end
 				end
-				GameTooltip:AddDoubleLine(counter == 0 and L.PROVIDERS or " ", providerString);
-				counter = counter + 1;
+				if providerString then
+					if addId then
+						providerString = providerString .. " (" .. providerID .. ")";
+					end
+					GameTooltip:AddDoubleLine(first and L.PROVIDERS or " ", providerTypeName .. providerString);
+				else
+					GameTooltip:AddDoubleLine(first and L.PROVIDERS or " ", RETRIEVING_DATA);
+					missingMiscData = true;
+				end
+				first = nil;
 			end
 		end
 		if reference.coord and app.Settings:GetTooltipSetting("Coordinates") then
@@ -16902,6 +16915,7 @@ RowOnEnter = function (self)
 						icon = nil;
 						amount = GetMoneyString(v[2]);
 					end
+					missingMiscData = missingMiscData or not name;
 					GameTooltip:AddDoubleLine(k == 1 and L["COST"] or " ", amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA));
 				end
 			else
@@ -17384,7 +17398,7 @@ RowOnEnter = function (self)
 		GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
 		-- END DEBUGGING]]
 
-		GameTooltip.MiscFieldsComplete = true;
+		GameTooltip.MiscFieldsComplete = not missingMiscData;
 		-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
 		GameTooltip:Show();
 		-- app.PrintDebug("OnRowEnter-Return");
