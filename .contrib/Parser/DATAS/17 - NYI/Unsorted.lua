@@ -2308,7 +2308,6 @@ root(ROOTS.Unsorted, {
 				i(203464),	-- Sealed Spellsworn Scroll
 				i(203465),	-- Draconic Artifact
 				i(203466),	-- Dragonscale Surplus Crate
-				i(203651),	-- Saza's Blade
 				i(203657),	-- Toxin Antidote
 				i(203724),	-- Field Medic's Hazard Payout
 				i(203730),	-- Rustic Winterpelt Supplies
@@ -2334,7 +2333,6 @@ root(ROOTS.Unsorted, {
 				i(204442),	-- Clump of Tar
 				i(204561),	-- Primalist Cache Key
 				i(204632),	-- Tectonic Rock Fragment
-				i(204636),	-- Snarfang's Stomach Sac
 				i(202204),	-- Receiving Stone: Final Warning
 				i(202205),	-- Translated Journal of Adamanthia
 				i(204249),	-- Translated Correspondence of Black Dragons
@@ -2356,10 +2354,6 @@ root(ROOTS.Unsorted, {
 				q(72520),	--
 				q(72521),	--
 				q(72531),	--
-				q(72551),	-- A Living History
-				q(72552),	-- Gathering Together
-				q(72553),	-- More Effort, More Reward
-				q(72558),	-- Our Honored Ancestors
 				q(72590),	-- Ursol's Wisdom
 				q(72597),	-- Ursoc's Strength
 				q(72598),	-- Words of the Winterpelt
@@ -2368,23 +2362,10 @@ root(ROOTS.Unsorted, {
 				q(72718),	--
 				q(72906),	-- [DNT] Storm Pet Battle
 				q(72907),	--
-				q(72941),	-- Ancestral Advice
-				q(72945),	-- Our Path Ahead
 				q(72955),	-- PTR:Zskera Vault: Kx
 				q(72956),	-- PTR:More Doors To Open
-				q(73035),	-- Path of Trust
-				q(73048),	--
-				q(73049),	--
-				q(73050),	--
-				q(73051),	--
-				q(73184),	--
-				q(73185),	--
-				q(73186),	--
-				q(73187),	--
 				q(73194),	-- PTR:Up Close and Personal
 				q(73547),	--
-				q(73550),	-- Honeyfreeze Mead
-				q(73692),	-- Hive Maintenance
 				q(74116),	-- PTR:Reach North
 				q(74309),	--
 				q(74314),	--
@@ -2396,7 +2377,6 @@ root(ROOTS.Unsorted, {
 				q(74384),	--
 				q(74418),	--
 				q(74427),	--
-				q(74433),	-- Returning the Blade
 				q(74478),	--
 				q(74479),	--
 				q(74480),	--

@@ -243,6 +243,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["g"] = {
 					bo(74307, true),
 					i(204232),	-- Slyvern Alpha Claw
+					i(204636),	-- Snarfang's Stomach Sac
 				},
 			}),
 			n(200619, {	-- Tectonus

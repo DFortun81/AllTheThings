@@ -38,8 +38,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 						72588,	-- Primalist Pillagers
 					},
 					["minReputation"] = { 2526, UNFRIENDLY+2050 },	-- Winterpelt Furbolg Unfriendly + 2050
-					["provider"] = { "n", 189401 },	-- Sonova Snowden
-					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
+					["provider"] = { "n", 201065 },	-- Sonova Snowden
+					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 					["cost"] = { { "i", 202017, 5 } },	-- 5x Liberated Furbolg Artifacts
 				}),
 				q(72586, {	-- Additional Academic Acquisitions
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 						72547,	-- Academic Acquisitions
 					},
 					["minReputation"] = { 2526, UNFRIENDLY+2050 },	-- Winterpelt Furbolg Unfriendly + 2050
-					["provider"] = { "n", 189401 },	-- Sonova Snowden
+					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 					["repeatable"] = true,
 					["cost"] = { { "i", 202017, 5 } },	-- 5x Liberated Furbolg Artifacts
@@ -56,12 +56,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					}
 				}),
 				q(72587, {	-- Astonishing Academic Acquisitions
-					-- Check This is true?
 					["sourceQuests"] = {
 						72547,	-- Academic Acquisitions
 					},
 					["minReputation"] = { 2526, UNFRIENDLY+2050 },	-- Winterpelt Furbolg Unfriendly + 2050
-					["provider"] = { "n", 189401 },	-- Sonova Snowden
+					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 					["repeatable"] = true,
 					["cost"] = { { "i", 202018, 1 } },	-- 1x Intact Scribe Stick
@@ -70,47 +69,144 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					}
 				}),
 
-				-- Reputation ranks
+				-- Language Furbolg 25
+				q(73550, {	-- Honeyfreeze Mead
+					["sourceQuests"] = { 
+						72589,	-- Honor Their Sacrifice
+						72588,	-- Primalist Pillagers
+					 },
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 25
+					["provider"] = { "n", 201065 },	-- Sonova Snowden
+					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
+				}),
+				q(73692, {	-- Hive Maintenance
+					["sourceQuests"] = { 
+						72589,	-- Honor Their Sacrifice
+						72588,	-- Primalist Pillagers
+					},
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 25
+					["provider"] = { "n", 201065 },	-- Sonova Snowden
+					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
+				}),
 				q(73704, {	-- Local Flavors
 					["sourceQuests"] = {
-						72547,	-- Academic Acquisitions
+						73550,	-- Honeyfreeze Mead
+						73692,	-- Hive Maintenance
 					},
-					["minReputation"] = { 2526, FRIENDLY },
-					["provider"] = { "n", 189401 },	-- Sonova Snowden
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 25
+					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 					["g"] = {
 						i(202268),	-- Winterpelt Totem
 					},
 				}),
+
+				-- Language Furbolg 50
+				q(72551, {	-- A Living History
+					["sourceQuests"] = { 73704 },	-- Local Flavors
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
+					["provider"] = { "n", 199266 },	-- Garz
+					["coord"] = { 66.9, 13.0, THE_AZURE_SPAN },
+				}),
+				q(72552, {	-- Gathering Together
+					["sourceQuests"] = { 72551 },	-- A Living History
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
+					["provider"] = { "n", 199271 },	-- Elder Mhaz
+					["coord"] = { 57.4, 21.1, THE_AZURE_SPAN },
+				}),
+				q(72553, {	-- More Effort, More Reward
+					["sourceQuests"] = { 72551 },	-- A Living History
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
+					["provider"] = { "n", 199272 },	-- Matron Fherg
+					["coord"] = { 57.4, 20.9, THE_AZURE_SPAN },
+				}),
 				q(72554, {	-- Break Him
 					["sourceQuests"] = {
-						73704,	-- Local Flavors
+						72552,	-- Gathering Together
+						72553,	-- More Effort, More Reward
 					},
-					["minReputation"] = { 2526, HONORED },
-					["provider"] = { "n", 189401 },	-- Sonova Snowden
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
+					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 					["g"] = {
 						i(202283),	-- Reading Glasses (TOY!)
 					},
 				}),
-				q(72559, {	-- History Heist
+				q(74433, {	-- Returning the Blade
 					["sourceQuests"] = {
-						72554,	-- Break Him
+						72552,	-- Gathering Together
+						72553,	-- More Effort, More Reward
 					},
-					["minReputation"] = { 2526, REVERED },
-					["provider"] = { "n", 189401 },	-- Sonova Snowden
+					["minReputation"] = { 2526, HONORED },
+					["provider"] = { "i", 203651 },	-- Saza's Blade
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
+					["g"] = {
+						i(202283),	-- Reading Glasses (TOY!)
+					},
+				}),
+
+				-- Language Furbolg 75
+				q(73035, {	-- Path of Trust
+					["sourceQuests"] = { 72554 },	-- Break Him
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
+					["provider"] = { "n", 199266 },	-- Garz
+					["coord"] = { 66.9, 13.0, THE_AZURE_SPAN },
+				}),
+				q(72558, {	-- Our Honored Ancestors
+					["sourceQuests"] = { 73035 },	-- Path of Trust
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
+					["provider"] = { "n", 199267 },	-- Radze Thunderclaw
+					["coord"] = { 66.0, 12.6, THE_AZURE_SPAN },
+				}),
+				q(72941, {	-- Ancestral Advice
+					["sourceQuests"] = { 72558 },	-- Our Honored Ancestors
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
+					["provider"] = { "n", 199996 },	-- Ancestor Brazzok
+					["coord"] = { 66.0, 12.7, THE_AZURE_SPAN },
+				}),
+				q(72945, {	-- Our Path Ahead
+					["sourceQuests"] = { 72558 },	-- Our Honored Ancestors
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
+					["provider"] = { "n", 199996 },	-- Ancestor Brazzok
+					["coord"] = { 66.0, 12.7, THE_AZURE_SPAN },
+				}),
+				q(72559, {	-- History Heist
+					["sourceQuests"] = { 72558 },	-- Our Honored Ancestors
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
+					["provider"] = { "n", 199299 },	-- Jhagaze the Wordkeeper
+					["coord"] = { 67.0, 11.9, THE_AZURE_SPAN },
 					["g"] = {
 						i(202264),	-- Defender of the Winterpelt
 					},
 				}),
+
+				-- Language Furbolg 100
+				q(72598, {	-- Words of the Winterpelt 
+					["sourceQuests"] = { 72559 },	-- History Heist
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
+					["provider"] = { "n", 201065 },	-- Sonova Snowden
+					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
+				}),
+				q(72590, {	-- Ursol's Wisdom
+					["sourceQuests"] = { 72598 },	-- Words of the Winterpelt 
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
+					["provider"] = { "n", 189394 },	-- Kranac Sagesnow
+					["coord"] = { 65.9, 10.7, THE_AZURE_SPAN },
+				}),
+				q(72597, {	-- Ursoc's Strength
+					["sourceQuests"] = { 72598 },	-- Words of the Winterpelt 
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
+					["provider"] = { "n", 189394 },	-- Kranac Sagesnow
+					["coord"] = { 65.9, 10.7, THE_AZURE_SPAN },
+				}),
 				q(73031, {	-- Champion of the Winterpelt
 					["sourceQuests"] = {
-						72559,	-- History Heist
+						72590,	-- Ursol's Wisdom
+						72597,	-- Ursoc's Strength
 					},
-					["minReputation"] = { 2526, EXALTED },
-					["provider"] = { "n", 189401 },	-- Sonova Snowden
-					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
+					["provider"] = { "n", 189394 },	-- Kranac Sagesnow
+					["coord"] = { 65.9, 10.7, THE_AZURE_SPAN },
 					["g"] = {
 						i(202253),	-- Primal Stave of Claw and Fur (TOY!)
 					},
@@ -230,12 +326,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 			n(ZONE_DROPS, {
 				i(202017),	-- Liberated Furbolg Artifacts
 				i(202018),	-- Intact Scribe Stick
+				i(203651, {	-- Saza's Blade
+					["crs"] = { 199279 },	-- Icebreaker
+				}),
 			}),
 		}),
 	}),
 })));
 
--- root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
--- 	m(THE_AZURE_SPAN, {
--- 	}),
--- }));
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
+	m(THE_AZURE_SPAN, {
+		q(73048),	-- Tell Little Toz 'Make sure to marry Fuzzy Feet immediately' during 'Ancestral Advice' (questID 72941)
+		q(73049),	-- Tell Little Toz 'Make sure to marry Bring Fur immediately' during 'Ancestral Advice' (questID 72941)
+		q(73050),	-- Tell Little Toz 'Make sure to murder Fuzzy Feet immediately' during 'Ancestral Advice' (questID 72941)
+		q(73051),	-- Tell Little Toz 'Make sure to murder Bring Fur immediately' during 'Ancestral Advice' (questID 72941)
+		q(73184),	-- Tell Kranac Sagesnow 'The Winterpelt must obtain riches' during 'Our Path Ahead' (questID 72945)
+		q(73185),	-- Tell Kranac Sagesnow 'The Winterpelt must obtain weapons' during 'Our Path Ahead' (questID 72945)
+		q(73186),	-- Tell Kranac Sagesnow 'The Winterpelt must obtain a new home' during 'Our Path Ahead' (questID 72945)
+		q(73187),	-- Tell Kranac Sagesnow 'The Winterpelt must obtain allies' during 'Our Path Ahead' (questID 72945)
+	}),
+}));
