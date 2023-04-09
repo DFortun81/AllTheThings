@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 						72552,	-- Gathering Together
 						72553,	-- More Effort, More Reward
 					},
-					["minReputation"] = { 2526, HONORED },
+					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
 					["provider"] = { "i", 203651 },	-- Saza's Blade
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 					["g"] = {
