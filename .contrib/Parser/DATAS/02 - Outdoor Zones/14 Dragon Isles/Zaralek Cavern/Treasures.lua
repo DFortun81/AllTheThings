@@ -4,6 +4,18 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(TREASURES, {
+			i(205337),	-- Formula: Titan Training Matrix V (RECIPE!)
+			i(205338),	-- Formula: Enchanted Whelpling's Shadowflame Crest (RECIPE!)
+			i(205339),	-- Formula: Enchanted Wyrm's Shadowflame Crest (RECIPE!)
+			i(205340),	-- Formula: Enchanted Aspect's Shadowflame Crest (RECIPE!)
+
+
+			i(204849, {	-- Ratcipe: Charitable Cheddar (RECIPE!)
+				["cost"] = { { "i", 204872, 30 }, }, 	-- 30x Ripped Recipe Scrap
+			}),
+			i(204871),	-- Recipe Rat [Dont know where he is atm..]
+
+			i(204847),	-- Recipe: Rocks on the Rocks (RECIPE!) [Massive Gains Chest]
 			o(396339, {	-- Moth-Pilfered Pouch
 				["description"] = "Go to his position, he will fly up a bit, go under his shadow on earth and 'help' him until he get 5 stacks of buff. After that - he will fly around a bit and reveal pouch.",
 				["crs"] = { 203225 },

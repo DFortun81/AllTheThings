@@ -830,6 +830,8 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 			})),
 			filter(RECIPES, {
+				i(204146),	-- Design: Obsidian Combatant's Jeweled Amulet (RECIPE!)
+				i(204147),	-- Design: Obsidian Combatant's Jeweled Signet (RECIPE!)
 				i(204144),	-- Plans: Obsidian Combatant's Draconium Armguards (RECIPE!)
 				i(204139),	-- Plans: Obsidian Combatant's Draconium Breastplate (RECIPE!)
 				i(204142),	-- Plans: Obsidian Combatant's Draconium Gauntlets (RECIPE!)
@@ -838,6 +840,13 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				i(204141),	-- Plans: Obsidian Combatant's Draconium Pauldrons (RECIPE!)
 				i(204143),	-- Plans: Obsidian Combatant's Draconium Sabatons (RECIPE!)
 				i(204145),	-- Plans: Obsidian Combatant's Draconium Waistguard (RECIPE!)
+				i(205282),	-- Schematic: Obsidian Combatant's Cloth Goggles (RECIPE!)
+				i(205283),	-- Schematic: Obsidian Combatant's Leather Goggles (RECIPE!)
+				i(205284),	-- Schematic: Obsidian Combatant's Mail Goggles (RECIPE!)
+				i(205285),	-- Schematic: Obsidian Combatant's Plate Goggles (RECIPE!)
+				i(204169),	-- Technique: Obsidian Combatant's Emblem (RECIPE!)
+				i(204168),	-- Technique: Obsidian Combatant's Insignia of Alacrity (RECIPE!)
+				i(204167),	-- Technique: Obsidian Combatant's Medallion (RECIPE!)
 			}),
 		},
 	}),

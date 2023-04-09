@@ -795,7 +795,7 @@ root(ROOTS.Unsorted, {
 				i(204398),	-- 10.1 Raid - Black Dragon Labs - Boss 08 - Neltharion's Twisted Mind - Accessory - FINGER 3
 				i(204399),	-- 10.1 Raid - Black Dragon Labs - Boss 09 - Sarkareth - Armor - Leather - WAIST 2
 				i(204400),	-- 10.1 Raid - Black Dragon Labs - Boss 06 - Dragonkin Trapmaster - Armor - Plate - WAIST 2
-				i(204401),	-- Spore Keeper's Baton
+
 				i(204408),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Legs
 				i(204409),	-- 10.1 Raid - World Boss - Djaradin Duo - Armor - Cloth - Feet
 				i(204410),	-- 10.1 Raid - Black Dragon Labs - BoE - Armor - Cloth - WRIST 3
@@ -970,12 +970,11 @@ root(ROOTS.Unsorted, {
 				i(203365),	-- Winding Slitherdrake: Hairy Throat
 			}),
 			n(PROFESSIONS, {
-				i(203762),	-- Glyph of the Chosen Glaive
-				i(203763),	-- Glyph of the Heaved Armament
+
+
 
 				-- New PvP gear
-				i(204094),	-- Obsidian Combatant's Jeweled Signet
-				i(204095),	-- Obsidian Combatant's Jeweled Amulet
+
 				i(204096),	-- Obsidian Combatant's Resilient Boots
 				i(204097),	-- Obsidian Combatant's Resilient Chestpiece
 				i(204098),	-- Obsidian Combatant's Resilient Mask
@@ -1010,8 +1009,7 @@ root(ROOTS.Unsorted, {
 				i(204135),	-- Pattern: Obsidian Combatant's Wildercloth Shoulderpads
 				i(204136),	-- Pattern: Obsidian Combatant's Wildercloth Treads
 				i(204137),	-- Pattern: Obsidian Combatant's Wildercloth Tunic
-				i(204146),	-- Design: Obsidian Combatant's Jeweled Amulet
-				i(204147),	-- Design: Obsidian Combatant's Jeweled Signet
+
 				i(204148),	-- Pattern: Obsidian Combatant's Resilient Mask
 				i(204149),	-- Pattern: Obsidian Combatant's Resilient Chestpiece
 				i(204150),	-- Pattern: Obsidian Combatant's Resilient Trousers
@@ -1028,12 +1026,8 @@ root(ROOTS.Unsorted, {
 				i(204161),	-- Pattern: Obsidian Combatant's Adamant Gauntlets
 				i(204162),	-- Pattern: Obsidian Combatant's Adamant Cuffs
 				i(204163),	-- Pattern: Obsidian Combatant's Adamant Girdle
-				i(204164),	-- Obsidian Combatant's Medallion
-				i(204165),	-- Obsidian Combatant's Insignia of Alacrity
-				i(204166),	-- Obsidian Combatant's Emblem
-				i(204167),	-- Technique: Obsidian Combatant's Medallion
-				i(204168),	-- Technique: Obsidian Combatant's Insignia of Alacrity
-				i(204169),	-- Technique: Obsidian Combatant's Emblem
+
+
 
 				i(204440),	-- Spark of Shadowflame
 				i(204460),	-- Zaralek Glowspores
@@ -1045,19 +1039,13 @@ root(ROOTS.Unsorted, {
 				i(204471),	-- Defective Survival Pack
 				i(204475),	-- Busted Wyrmhole Generator
 				i(204480),	-- Inconspicuous Data Miner
-				i(204565),	-- Illusory Adornment: Spores
-				i(204567),	-- Illusory Adornment: Spores
-				i(204568),	-- Illusory Adornment: Spores
-				i(204613),	-- Enchant Weapon - Spore Tender
-				i(204614),	-- Enchant Weapon - Spore Tender
-				i(204615),	-- Enchant Weapon - Spore Tender
-				i(204621),	-- Enchant Weapon - Shadowflame Wreathe
-				i(204622),	-- Enchant Weapon - Shadowflame Wreathe
-				i(204623),	-- Enchant Weapon - Shadowflame Wreathe
-				i(204673),	-- Titan Training Matrix V
-				i(204681),	-- Enchanted Whelpling's Shadowflame Crest
-				i(204682),	-- Enchanted Wyrm's Shadowflame Crest
-				i(204697),	-- Enchanted Aspect's Shadowflame Crest
+
+
+
+
+
+
+
 				i(204700),	-- Lambent Armor Kit
 				i(204701),	-- Lambent Armor Kit
 				i(204702),	-- Lambent Armor Kit
@@ -1077,7 +1065,6 @@ root(ROOTS.Unsorted, {
 				i(204191),	-- Lesser Crest of Honor
 			}),
 			filter(TOYS, {
-				i(205045),	-- B.B.F. Fist (TOY!)
 				i(205418),	-- Blazing Shadowflame Cinder (TOY!)
 				i(205034),	-- Enormous Ball of Yarn (TOY!)
 				i(205027),	-- Explorer's Banner (TOY!)
@@ -1086,7 +1073,6 @@ root(ROOTS.Unsorted, {
 				i(205688),	-- Glutinous Glitterscale Glob (TOY!)
 				i(205796),	-- Molten Lava Pack (TOY!)
 				i(205255),	-- Niffen Diggin' Mitts (TOY!)
-				i(204818),	-- Quackomancy Cannon (TOY!)
 				i(205904),	-- Vibrant Clacking Claw (TOY!)
 			}),
 			filter(MOUNTS, {
@@ -1187,28 +1173,23 @@ root(ROOTS.Unsorted, {
 				i(204811),	-- Drogbar Stones
 				i(204817),	-- Underlight Cocoon Fibers
 
-				i(204823),	-- Polarity Bomb
+
 				i(204824),	-- Torn Journal Entry
-				i(204825),	-- Polarity Bomb
-				i(204826),	-- Polarity Bomb
-				i(204827),	-- EZ-Thro Polarity Bomb
-				i(204828),	-- EZ-Thro Polarity Bomb
-				i(204829),	-- EZ-Thro Polarity Bomb
+
+
 				i(204830),	-- Shattered Horn Signet
 				i(204843),	-- Draconic Mark of Mastery
-				i(204844),	-- Schematic: Polarity Bomb
-				i(204845),	-- Rocks on the Rocks
+
+
 				i(204846),	-- Conjured Rocks on the Rocks
-				i(204847),	-- Recipe: Rocks on the Rocks
-				i(204848),	-- Charitable Cheddar
-				i(204849),	-- Ratcipe: Charitable Cheddar
+
+
+
 				i(204850),	-- Handful of Khaz'gorite Bolts
 				i(204851),	-- Oblong Brass Sculpture
 				i(204853),	-- Discarded Dracothyst Drill
 				i(204855),	-- Overclocked Determination Core
-				i(204858),	-- [PH] 10.1 Vantus Rune
-				i(204859),	-- [PH] 10.1 Vantus Rune
-				i(204860),	-- [PH] 10.1 Vantus Rune
+
 
 				i(204871),	-- Recipe Rat
 				i(204872),	-- Ripped Recipe Scrap
@@ -1222,30 +1203,26 @@ root(ROOTS.Unsorted, {
 				i(204891),	-- Tempered Embershard
 				i(204892),	-- Time-Lost Brie
 				i(204893),	-- Three-Cheese Cake
-				i(204894),	-- Roland
+
 				i(204901),	-- Firecaller's Focus
-				i(204909),	-- 10.1 Precognition Embellishment [PH]
+
 				i(204911),	-- Propagated Spore
 
 				i(204968),	-- Pattern: Shadowflame-Tempered Armor Patch
 				i(204969),	-- Pattern: Spore Colony Shoulderguards
 				i(204970),	-- Pattern: Adaptive Dracothyst Armguards
-				i(204971),	-- Hissing Rune
-				i(204972),	-- Hissing Rune
-				i(204973),	-- Hissing Rune
+
 				i(204974),	-- Pattern: Lambent Armor Kit
-				i(204975),	-- Formula: Enchant Weapon - Shadowflame Wreathe
-				i(204976),	-- Formula: Spore Keeper's Baton
-				i(204977),	-- Formula: Illusory Adornment: Spores
-				i(204978),	-- Formula: Enchant Weapon - Spore Tender
+
+
+
 
 
 
 
 				i(204990),	-- Lava-Drenched Shadow Crystal
-				i(204991),	-- Contract: Loamm Niffen
-				i(204992),	-- Contract: Loamm Niffen
-				i(204993),	-- Contract: Loamm Niffen
+
+
 				i(204994),	-- Hellsteel Alloy
 				i(204995),	-- Hellsteel Alloy
 				i(204996),	-- Hellsteel Alloy
@@ -1263,9 +1240,7 @@ root(ROOTS.Unsorted, {
 				i(205011),	-- Bronze Swoglet
 				i(205012),	-- Reserve Parachute
 				i(205013),	-- Lettuce
-				i(205014),	-- Tinker: Shadowflame Rockets
-				i(205015),	-- Tinker: Shadowflame Rockets
-				i(205016),	-- Tinker: Shadowflame Rockets
+
 				i(205017),	-- Byrn
 				i(205018),	-- Jade Skitterbug
 				i(205021),	-- Lord Stantley
@@ -1279,7 +1254,7 @@ root(ROOTS.Unsorted, {
 				i(205032),	-- Bestial Lurker
 
 				i(205035),	-- Snapjaw Lurker
-				i(205036),	-- Schematic: Tinker: Shadowflame Rockets
+
 				i(205037),	-- Void Lurker
 
 
@@ -1291,21 +1266,20 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(205115),	-- 10.1 Precognition Embellishment [PH]
 
 
 
 
-				i(205127),	-- Technique: Winding Slitherdrake: Blue and Silver Armor
-				i(205128),	-- Technique: Winding Slitherdrake: Yellow and Silver Armor
-				i(205129),	-- Technique: Winding Slitherdrake: Curved Chin Horn
-				i(205130),	-- Technique: Winding Slitherdrake: White Hair
-				i(205131),	-- Technique: Winding Slitherdrake: Small Finned Throat
-				i(205132),	-- Technique: Glyph of the Chosen Glaive
-				i(205133),	-- Technique: Glyph of the Heaved Armament
-				i(205134),	-- Technique: Vantus Rune: Aberrus, the Shadowed Crucible
-				i(205135),	-- Technique: Hissing Rune
-				i(205136),	-- Technique: Contract: Loamm Niffen
+
+
+
+
+
+
+
+
+
+
 				i(205138),	-- Pattern: Spore-Infused Combat Bandage
 				i(205139),	-- Pattern: Reserve Parachute
 				i(205140),	-- Pattern: Undulating Sporecloak
@@ -1334,14 +1308,8 @@ root(ROOTS.Unsorted, {
 				i(205166),	-- Kromos
 
 
-				i(205170),	-- 10.1 Precognition Embellishment [PH]
-				i(205171),	-- 10.1 Not-Caster PvP Embellishment [PH] [NYI]
-				i(205172),	-- 10.1 Not-Caster PvP Embellishment [PH] [NYI]
-				i(205173),	-- 10.1 Not-Caster PvP Embellishment [PH] [NYI]
-				i(205174),	-- Design: B.B.F. Fist
-				i(205175),	-- Design: 10.1 Precognition Embellishment [PH]
-				i(205176),	-- Design: 10.1 Not-Caster PvP Embellishment [PH]
-				i(205178),	-- Schematic: Quackomancy Cannon
+
+
 
 
 
@@ -1438,14 +1406,13 @@ root(ROOTS.Unsorted, {
 				i(204173),	-- Enforcer Horb's Signet
 
 
-				i(204858),	-- Vantus Rune: Aberrus, the Shadowed Crucible
-				i(204909),	-- Statuette of the Forethoughtful Fiend
 
 
-				i(205115),	-- Statuette of the Forethoughtful Fiend
+
+
 
 				i(205138),	-- Pattern: Medical Wrap Kit
-				i(205170),	-- Statuette of the Forethoughtful Fiend
+
 
 
 
@@ -1455,19 +1422,13 @@ root(ROOTS.Unsorted, {
 
 
 				i(205262),	-- Magmaclaw Lure
-				i(205263),	-- Empowered Flightstone
+
 
 
 				i(205276),	-- Deepflayer Lure
 				i(205277),	-- Stolen Key
-				i(205278),	-- Obsidian Combatant's Cloth Goggles
-				i(205279),	-- Obsidian Combatant's Leather Goggles
-				i(205280),	-- Obsidian Combatant's Mail Goggles
-				i(205281),	-- Obsidian Combatant's Plate Goggles
-				i(205282),	-- Schematic: Obsidian Combatant's Cloth Goggles
-				i(205283),	-- Schematic: Obsidian Combatant's Leather Goggles
-				i(205284),	-- Schematic: Obsidian Combatant's Mail Goggles
-				i(205285),	-- Schematic: Obsidian Combatant's Plate Goggles
+
+
 				i(205286),	-- Loamm Niffen Tabard
 
 				i(205289),	-- Crimson Equipment Chest
@@ -1517,10 +1478,10 @@ root(ROOTS.Unsorted, {
 				i(205334),	-- Flowfy's Smoldering Chain
 				i(205335),	-- Talisman of the Dusk
 				i(205336),	-- Glowing Veridian Necklace
-				i(205337),	-- Formula: Titan Training Matrix V
-				i(205338),	-- Formula: Enchanted Whelpling's Shadowflame Crest
-				i(205339),	-- Formula: Enchanted Wyrm's Shadowflame Crest
-				i(205340),	-- Formula: Enchanted Aspect's Shadowflame Crest
+
+
+
+
 				i(205341),	-- Winding Slitherdrake: Heavy Scales
 				i(205342),	-- Loamm Niffen Insignia
 				i(205343),	-- Crude Seal of Mak'aru
@@ -1947,8 +1908,6 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(204859),	-- Vantus Rune: Aberrus, the Shadowed Crucible
-				i(204860),	-- Vantus Rune: Aberrus, the Shadowed Crucible
 				i(205141),	-- Pattern: Explorer's Banner
 				i(205366),	-- Dripping Clay Pot
 				i(205471),	-- Slimy Deepsea Fin
@@ -2163,19 +2122,15 @@ root(ROOTS.Unsorted, {
 				i(204445),	-- Black Dragonflight's Tabard
 				i(204446),	-- Black Dragonflight's Cape
 				i(204447),	-- Ensemble: Black Dragonflight's Vestments
-				i(204818),	-- Mallard Mortar
 
-				i(204909),	-- Statuette of Foreseen Power
 
-				i(205115),	-- Statuette of Foreseen Power
+
 				i(205151),	-- Salverun
-				i(205170),	-- Statuette of Foreseen Power
-				i(205171),	-- Figurine of the Gathering Storm
-				i(205172),	-- Figurine of the Gathering Storm
-				i(205173),	-- Figurine of the Gathering Storm
-				i(205175),	-- Design: Statuette of Foreseen Power
-				i(205176),	-- Design: Figurine of the Gathering Storm
-				i(205178),	-- Schematic: Mallard Mortar
+
+
+
+
+
 
 				i(205202),	-- Small Key
 				i(205204),	-- Flaming Shalewing - Subject  01

@@ -1541,3 +1541,20 @@ i(203425, 400811);	-- Arcane Dispelling Rune
 i(203841, 402142);	-- Gurubashi Ceremonial Staff
 i(203839, 402140);	-- Gurubashi Hoodoo Stick
 i(203840, 402141);	-- Judgment of the Gurubashi
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(205136, 408278);	-- Contract: Loamm Niffen
+i(205132, 408277);	-- Glyph of the Chosen Glaive
+i(205133, 408273);	-- Glyph of the Heaved Armament
+i(205135, 408271);	-- Hissing Rune
+i(204169, 403168);	-- Obsidian Combatant's Emblem
+i(204168, 403167);	-- Obsidian Combatant's Insignia of Alacrity
+i(204167, 403166);	-- Obsidian Combatant's Medallion
+i(205134, 408272);	-- Vantus Rune: Aberrus, the Shadowed Crucible
+i(205127, 408218);	-- Winding Slitherdrake: Blue and Silver Armor
+i(205129, 408222);	-- Winding Slitherdrake: Curved Chin Horn
+i(205131, 408223);	-- Winding Slitherdrake: Small Finned Throat
+i(205130, 408221);	-- Winding Slitherdrake: White Hair
+i(205128, 408220);	-- Winding Slitherdrake: Yellow and Silver Armor

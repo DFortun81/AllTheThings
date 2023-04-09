@@ -29,6 +29,37 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			})),
 			n(VENDORS, {
+				n(203172, {	-- Dustmonger Topuiz
+					["coord"] = { 55.9, 56.8, ZARALEK_CAVERN },
+					["g"] = {
+						i(204978, {	-- Formula: Enchant Weapon - Spore Tender (RECIPE!)
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+						}),
+						i(204977, {	-- Formula: Illusory Adornment: Spores (RECIPE!)
+							["cost"] = { { "i", VOUCHER, 1 } },
+						}),
+						i(204976, {	-- Formula: Spore Keeper's Baton (RECIPE!)
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+						}),
+						i(205263, {	-- Empowered Flightstone
+							["cost"] = { { "c", 2245, 150 } },
+						}),
+					},
+				}),
+				n(203612, {	-- Fanilly
+					["coord"] = { 56.7, 55.3, ZARALEK_CAVERN },
+					["g"] = {
+						i(205174, {	-- Design: B.B.F. Fist (RECIPE!)
+							["cost"] = { { "i", VOUCHER, 1 } },
+						}),
+						i(205176, {	-- Design: Figurine of the Gathering Storm (RECIPE!)
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+						}),
+						i(205175, {	-- Design: Statuette of Foreseen Power (RECIPE!)
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+						}),
+					},
+				}),
 				n(203170, {	-- Kilnmaster Crubus
 					["coord"] = { 57.1, 55.0, ZARALEK_CAVERN },
 					["g"] = {
@@ -239,6 +270,43 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								{ "i", BARTER_BRICK, 34 },
 								{ "i", BARTER_PEBBLE, 99 },
 							},
+						}),
+					},
+				}),
+				n(203171, {	-- Scridorsa the Chiseler
+					["coord"] = { 55.8, 55.7, ZARALEK_CAVERN },
+					["g"] = {
+						i(205136, {	-- Technique: Contract: Loamm Niffen (RECIPE!)
+							["cost"] = { { "i", VOUCHER, 1 } },
+						}),
+						i(205132, {	-- Technique: Glyph of the Chosen Glaive (RECIPE!)
+							["cost"] = { { "i", VOUCHER, 1 } },
+						}),
+						i(205133, {	-- Technique: Glyph of the Heaved Armament (RECIPE!)
+							["cost"] = { { "i", VOUCHER, 1 } },
+						}),
+						i(205135, {	-- Technique: Hissing Rune (RECIPE!)
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+						}),
+						i(205134, {	-- Technique: Vantus Rune: Aberrus, the Shadowed Crucible (RECIPE!)
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+						}),
+						i(205131, {	-- Technique: Winding Slitherdrake: Small Finned Throat (RECIPE!)
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+						}),
+						i(205130, {	-- Technique: Winding Slitherdrake: White Hair (RECIPE!)
+							["cost"] = { { "i", VOUCHER, 1 } },
+						}),
+					},
+				}),
+				n(203610, {	-- Scrybbil
+					["coord"] = { 55.8, 55.9, ZARALEK_CAVERN },
+					["g"] = {
+						i(205178, {	-- Schematic: Mallard Mortar (RECIPE!)
+							["cost"] = { { "i", VOUCHER, 1 } },
+						}),
+						i(204844, {	-- Schematic: Polarity Bomb (RECIPE!)
+							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
 					},
 				}),

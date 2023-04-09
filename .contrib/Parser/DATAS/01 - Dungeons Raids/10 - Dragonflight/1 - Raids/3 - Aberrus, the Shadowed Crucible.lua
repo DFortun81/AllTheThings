@@ -85,12 +85,18 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				},
 			}),
 			n(DROPS, {
+				i(204975, {	-- Formula: Enchant Weapon - Shadowflame Wreathe (RECIPE!)
+					["crs"] = { 201579 },	-- Magmorax
+				}),
 				i(204696, {	-- Recipe: Draconic Phial Cauldron (RECIPE!)
 					["crs"] = {
 						201774,	-- The Amalgamation Chamber - Essence of Shadow
 						201773,	-- The Amalgamation Chamber - Eternal Blaze
 						201934,	-- The Amalgamation Chamber - Shadowflame Amalgamation
 					},
+				}),
+				i(205036, {	-- Schematic: Tinker: Shadowflame Rockets (RECIPE!)
+					["crs"] = { 202637 },	-- Zskarn <the Vigilant Steward>
 				}),
 			}),
 			d(NORMAL_RAID, {

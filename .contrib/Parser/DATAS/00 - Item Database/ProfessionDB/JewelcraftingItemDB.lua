@@ -202,3 +202,12 @@ i(204406, 405205);	-- Square Holders
 i(204219, 403483);	-- Unstable Elementium
 -- UNSORTED --
 i(204218, 403464);	-- Primordial Pulverizing
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(205174, 408231);	-- B.B.F. Fist
+i(205176, 408398);	-- Figurine of the Gathering Storm
+i(204146, 403131);	-- Obsidian Combatant's Jeweled Amulet
+i(204147, 403132);	-- Obsidian Combatant's Jeweled Signet
+i(205175, 408397);	-- Statuette of Foreseen Power

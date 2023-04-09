@@ -63,3 +63,15 @@ i(0, 383792);	-- Refine Serevite+++
 i(0, 377987);	-- Heart in a Bottle
 -- NYI --
 i(0, 382586);	-- Opening
+
+------------------
+-- PATCH 10.0.5 --
+------------------
+i(0, 388213);	-- Overload Elemental Deposit
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(0, 405121);	-- Metamorphic Draconium Deposit
+i(0, 405120);	-- Metamorphic Serevite Deposit
+i(0, 405131);	-- Overload Metamorphic Deposit

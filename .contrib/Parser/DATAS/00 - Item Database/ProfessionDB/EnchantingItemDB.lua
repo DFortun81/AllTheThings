@@ -1189,3 +1189,15 @@ i(198779, 392407);	-- Crystal Magical Lockpick
 ------------------
 i(203423, 400809);	-- Glowing Crystal Bookmark
 i(203838, 402139);	-- Mindslave's Reach
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(205340, 406418);	-- Enchanted Aspect's Shadowflame Crest
+i(205338, 406108);	-- Enchanted Whelpling's Shadowflame Crest
+i(205339, 406413);	-- Enchanted Wyrm's Shadowflame Crest
+i(204977, 405650);	-- Illusory Adornment: Spores
+i(204975, 405076);	-- Shadowflame Wreathe
+i(204976, 405803);	-- Spore Keeper's Baton
+i(204978, 404859);	-- Spore Tender
+i(205337, 405937);	-- Titan Training Matrix V

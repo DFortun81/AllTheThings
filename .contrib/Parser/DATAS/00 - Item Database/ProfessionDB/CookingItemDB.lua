@@ -110,7 +110,13 @@ i(202289, 398438);	-- Firewater Sorbet
 i(204073, 403018);	-- Deviously Deviled Eggs
 i(203422, 400807);	-- Sparkling Spice Pouch
 -- Quest --
-i(0, 399034);	--
-i(0, 399035);	--
-i(0, 399038);	--
-i(0, 399040);	--
+i(0, 399034);	-- Curried Coconut Crab
+i(0, 399040);	-- Feast for the Ancestors
+i(0, 399035);	-- Grilled Southfury Salmon
+i(0, 399038);	-- Spicy Seared Talbuk Steak
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(204849, 407100);	-- Charitable Cheddar
+i(204847, 407066);	-- Rocks on the Rocks

@@ -33,6 +33,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					i(200598),	-- Meluun's Green Curry
 				},
 			}),
+			n(196834, {	-- Relothina <General Supplies>
+				["coord"] = { 35.6, 42.2, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(194690),	-- Horn o' Mead
+				},
+			}),
 			n(191397, {	-- Sondo
 				["coord"] = { 80.7, 58.7, OHNAHRAN_PLAINS },
 				["g"] = {

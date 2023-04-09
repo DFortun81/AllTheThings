@@ -1169,12 +1169,13 @@ i(204220);	-- Hraxian's Unbreakable Will
 ------------------
 -- PATCH 10.1.0 --
 ------------------
+i(205045);	-- B.B.F. Fist
 i(205419);	-- Jrumm's Drum
+i(204818);	-- Mallard Mortar
 i(205463);	-- Skornace's Molten Pocket
 i(205963);	-- Sniffin' Salts
 i(204389);	-- Stone Breaker
 -- Unsorted --
-i(205045);	-- B.B.F. Fist
 i(205418);	-- Blazing Shadowflame Cinder
 i(205034);	-- Enormous Ball of Yarn
 i(205027);	-- Explorer's Banner
@@ -1183,7 +1184,6 @@ i(206043);	-- Fyrakk's Frenzy
 i(205688);	-- Glutinous Glitterscale Glob
 i(205796);	-- Molten Lava Pack
 i(205255);	-- Niffen Diggin' Mitts
-i(204818);	-- Quackomancy Cannon
 i(205904);	-- Vibrant Clacking Claw
 
 

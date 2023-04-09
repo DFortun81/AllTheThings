@@ -89,3 +89,12 @@ i(0, 382582);	-- Opening
 -- PATCH 10.0.5 --
 ------------------
 i(0, 390392);	-- Overload Elemental Herb
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(0, 405124);	-- Lambent Bubble Poppy
+i(0, 405123);	-- Lambent Hochenblume
+i(0, 405126);	-- Lambent Saxifrage
+i(0, 405127);	-- Lambent Writhebark
+i(0, 405134);	-- Overload Lambent Herb
