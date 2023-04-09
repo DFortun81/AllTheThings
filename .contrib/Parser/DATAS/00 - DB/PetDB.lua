@@ -1421,6 +1421,9 @@ n(203364, 3487);	-- Scarlapod
 n(203367, 3488);	-- Deepridger
 n(203372, 3489);	-- Sunglow Cobra
 n(203377, 3490);	-- Ebonwing Moth
+i(204894, 3493);	-- Roland
+i(205002, 3511);	-- Blaise
+i(205003, 3512);	-- Ambre
 -- UNSORTED --
 i(205054, 3532);	-- Amador
 i(205114, 3533);	-- Brul
@@ -1429,28 +1432,22 @@ i(205052, 3530);	-- Miloh
 i(205122, 3539);	-- Roseshell
 i(205053, 3531);	-- Rusty
 i(205121, 3538);	-- Tricky
+i(205004, 3513);	-- Azure Swoglet
+i(205008, 3514);	-- Emerald Swoglet
+i(205009, 3515);	-- Karrit
+i(205010, 3516);	-- Crimson Swoglet
+i(205011, 3517);	-- Bronze Swoglet
+i(205013, 3518);	-- Lettuce
+i(205017, 3519);	-- Byrn
+i(205018, 3520);	-- Jade Skitterbug
+i(205021, 3521);	-- Lord Stantley
+i(205023, 3522);	-- Savage Lobstrok
+i(205024, 3523);	-- Cheddar
+i(205026, 3524);	-- Devourer Lobstrok
+i(205032, 3525);	-- Bestial Lurker
+i(205035, 3526);	-- Snapjaw Lurker
+i(205037, 3527);	-- Void Lurker
 --[[
-p(3493),	-- Roland
-p(3511),	-- Blaise
-p(3512),	-- Ambre
-p(3513),	-- Azure Swoglet
-p(3514),	-- Emerald Swoglet
-p(3515),	-- Karrit
-p(3516),	-- Crimson Swoglet
-p(3517),	-- Bronze Swoglet
-p(3518),	-- Lettuce
-p(3519),	-- Byrn
-p(3520),	-- Jade Skitterbug
-p(3521),	-- Lord Stantley
-p(3522),	-- Savage Lobstrok
-p(3523),	-- Cheddar
-p(3524),	-- Devourer Lobstrok
-p(3525),	-- Bestial Lurker
-p(3526),	-- Snapjaw Lurker
-p(3527),	-- Void Lurker
-
-
-
 p(3541),	-- Ridged Shalewing
 p(3542),	-- Dread Shalewing
 p(3543),	-- Ravenous Shalewing

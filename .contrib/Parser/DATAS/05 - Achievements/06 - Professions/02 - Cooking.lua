@@ -272,6 +272,9 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ [
 			crit(21, { ["provider"] = { "i", 111442 } } ),		-- Sturgeon Stew
 			crit(22, { ["provider"] = { "i", 111447 } } ),		-- Talador Surf and Turf
 		}),
+		ach(17736, {	-- The Gift of Cheese
+			i(204894),	-- Roland (PET!)
+		}),
 		ach(12744, {	-- The Kul Tiran Menu
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
