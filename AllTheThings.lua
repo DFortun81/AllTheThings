@@ -12018,10 +12018,7 @@ local armorTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor02",
 	"Interface/ICONS/Inv_leather_draenordungeon_c_01shoulder",
 	"Interface/ICONS/inv_mail_draenorquest90_b_01shoulder",
-	"Interface/ICONS/inv_leather_warfrontsalliance_c_01_shoulder",
-	-- #if AFTER 10.1.0
-	"Interface/ICONS/inv_shoulder_armor_dragonspawn_c_02",
-	-- #endif
+	"Interface/ICONS/inv_leather_warfrontsalliance_c_01_shoulder"
 };
 local weaponTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon01",
@@ -12029,9 +12026,6 @@ local weaponTextures = {
 	"Interface/ICONS/inv_weapon_shortblade_112",
 	"Interface/ICONS/inv_weapon_shortblade_111",
 	"Interface/ICONS/inv_weapon_shortblade_102",
-	-- #if AFTER 10.1.0
-	"Interface/ICONS/inv_weapon_shortblade_84",
-	-- #endif
 };
 local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
 local fields = {
@@ -12145,9 +12139,6 @@ app.CacheHeirlooms = function()
 
 	-- setup the armor tokens which will contain the upgrades for the heirlooms
 	local armorTokens = {
-		-- #if AFTER 10.1.0
-		app.CreateItem(204336),	-- Awakened Heirloom Armor Casing
-		-- #endif
 		app.CreateItem(187997),	-- Eternal Heirloom Armor Casing
 		app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
 		app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
@@ -12155,9 +12146,6 @@ app.CacheHeirlooms = function()
 		app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
 	};
 	local weaponTokens = {
-		-- #if AFTER 10.1.0
-		app.CreateItem(204337),	-- Awakened Heirloom Scabbard
-		-- #endif
 		app.CreateItem(187998),	-- Eternal Heirloom Scabbard
 		app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
 		app.CreateItem(151615),	-- Weathered Heirloom Scabbard
@@ -23762,11 +23750,7 @@ end
 
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
-	-- #if AFTER 10.1.0
-	local v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
-	-- #else
 	local v = GetAddOnMetadata("AllTheThings", "Version");
-	-- #endif
 	-- if placeholder exists as the Version tag, then assume we are not on the Release version
 	if string.match(v, "version") then
 		app.Version = "[Git]";
