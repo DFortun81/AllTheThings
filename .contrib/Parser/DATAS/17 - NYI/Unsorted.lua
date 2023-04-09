@@ -2393,7 +2393,6 @@ root(ROOTS.Unsorted, {
 				q(74360),	-- PTR:Signed, Sealed, Delivered
 				q(74361),	-- PTR:Deprecated Quest
 				q(74362),	-- PTR:Deprecated Quest
-				q(74377),	-- Capsize a Crab
 				q(74384),	--
 				q(74418),	--
 				q(74427),	--

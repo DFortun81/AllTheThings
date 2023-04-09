@@ -444,10 +444,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 75499,
 						}),
 						o(398788, {	-- Spun Webs
-							["questID"] = 75501,
+							["questID"] = 75500,
 						}),
 						o(398789, {	-- Spun Webs
-							["questID"] = 75503,
+							["questID"] = 75501,
 						}),
 						o(398790, {	-- Spun Webs
 							["questID"] = 75503,

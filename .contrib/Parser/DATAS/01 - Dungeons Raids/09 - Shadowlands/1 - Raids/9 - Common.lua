@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, tier(SL_TIER, {
-	n(COMMON_BOSS_DROPS, bubbledown({["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },},{
+	n(COMMON_BOSS_DROPS, bubbleDown({["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },},{
 		d(HEROIC_RAID, {
 			i(191910, {	-- Confounding Antique Cypher
 				["description"] = "Drops from Fated Heroic Shadowlands Raid bosses.",
@@ -21,7 +21,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(QUESTS, bubbledown({["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },},{
+	n(QUESTS, bubbleDown({["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },},{
 		q(66648, {	-- Crossing Fate
 			["description"] = "Auto-accepted by entering any 'Fated' Shadowlands Raid.",
 			["maps"] = {
