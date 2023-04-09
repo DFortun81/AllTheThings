@@ -96,9 +96,12 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 	-- #else
 	["holidayID"] = 235477,
 	-- #endif
-	-- #if AFTER WRATH
-	["description"] = "Start: 04/18 at 10:00 AM\nEnd: 04/25 at 10:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 18, 4, 25); end]],
+	-- #if NOT ANYCLASSIC
+	["description"] = "Start: 04/10 at 10:00 AM\nEnd: 04/17 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 10, 4, 17); end]],
+	-- #elseif AFTER WRATH
+	["description"] = "Start: 04/09 at 12:00 AM\nEnd: 04/16 at 12:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 9, 4, 16); end]],
 	-- #else
 	["description"] = "Start: 04/17 at 12:00 AM\nEnd: 04/18 at 12:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 17, 4, 18); end]],
@@ -234,19 +237,19 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 				["provider"] = { "i", 44800 },	-- Spring Robes
 				-- #endif
 				["groups"] = {
-					crit(1, {	-- The Badlands
-						["maps"] = { BADLANDS },
-					}),
-					crit(2, {	-- Desolace
+					crit(9139, {	-- Desolace
 						["maps"] = { DESOLACE },
 					}),
-					crit(3, {	-- Silithus
+					crit(9142, {	-- Silithus
 						["maps"] = { SILITHUS },
 					}),
-					crit(4, {	-- Tanaris
+					crit(9140, {	-- Tanaris
 						["maps"] = { TANARIS },
 					}),
-					crit(5, {	-- Thousand Needles
+					crit(9138, {	-- The Badlands
+						["maps"] = { BADLANDS },
+					}),
+					crit(9141, {	-- Thousand Needles
 						["maps"] = { THOUSAND_NEEDLES },
 					}),
 				},
@@ -266,16 +269,16 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 				["provider"] = { "n", 32791 },	-- Spring Rabbit
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
-					crit(1, {	-- Azure Watch
+					crit(9121, {	-- Azure Watch
 						["maps"] = { AZUREMYST_ISLE },
 					}),
-					crit(2, {	-- Dolanaar
+					crit(9199, {	-- Dolanaar
 						["maps"] = { TELDRASSIL },
 					}),
-					crit(3, {	-- Goldshire
+					crit(9200, {	-- Goldshire
 						["maps"] = { ELWYNN_FOREST },
 					}),
-					crit(4, {	-- Kharanos
+					crit(9201, {	-- Kharanos
 						["maps"] = { DUN_MOROGH },
 					}),
 				}),
@@ -284,16 +287,16 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 				["provider"] = { "n", 32791 },	-- Spring Rabbit
 				["races"] = HORDE_ONLY,
 				["groups"] = bubbleDown({ ["races"] = HORDE_ONLY }, {
-					crit(1, {	-- Bloodhoof Village
+					crit(9202, {	-- Bloodhoof Village
 						["maps"] = { MULGORE },	-- Bloodhoof Village
 					}),
-					crit(2, {	-- Brill
+					crit(9203, {	-- Brill
 						["maps"] = { TIRISFAL_GLADES },
 					}),
-					crit(3, {	-- Falconwing Square
+					crit(9204, {	-- Falconwing Square
 						["maps"] = { EVERSONG_WOODS },
 					}),
-					crit(4, {	-- Razor Hill
+					crit(9205, {	-- Razor Hill
 						["maps"] = { DUROTAR },
 					}),
 				}),
@@ -310,20 +313,7 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 			}),
 			ach(2422, {	-- Shake Your Bunny-Maker
 				["provider"] = { "i", 45073 },	-- Spring Flowers
-				["groups"] = {
-					crit(1),	-- Blood Elf
-					crit(2),	-- Draenei
-					crit(3),	-- Dwarf
-					crit(4),	-- Gnome
-					crit(5),	-- Goblin
-					crit(6),	-- Human
-					crit(7),	-- Night Elf
-					crit(8),	-- Orc
-					crit(9),	-- Tauren
-					crit(10),	-- Troll
-					crit(11),	-- Undead
-					crit(12),	-- Worgen
-				},
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(248, {	-- Sunday's Finest
 				["cost"] = {
