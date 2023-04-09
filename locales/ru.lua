@@ -3759,8 +3759,8 @@ for key,value in pairs({
 	[386461] = "Тайник изначальных чар",	-- Primordial Arcane Cache
 	[386462] = "Тайник изначальной крови",	-- Primordial Blood Cache
 	[386463] = "Тайник изначального золота",	-- Primordial Gold Cache
-	--TODO: [386470] = "Gold Pile",	-- Gold Pile
-	--TODO: [386472] = "Gold Pile",	-- Gold Pile
+	[386470] = "Груда золота",	-- Gold Pile	--TODO: this was manually translated
+	[386472] = "Груда золота",	-- Gold Pile	--TODO: this was manually translated
 	[386484] = "Груда золота",	-- Gold Pile
 	[386531] = "Груда золота",	-- Gold Pile
 	[386532] = "Тайник изначального золота",	-- Primordial Gold Cache
@@ -3805,7 +3805,7 @@ for key,value in pairs({
 	[387853] = "Разбитые кристаллы",	-- Shattered Crystals
 	[388712] = "Оперный сундук",	-- Opera Chest
 	[388866] = "Котелок с реагентами",	-- Reagent Pot
-	--TODO: [388873] = "Irontide Coin Bag",	-- Irontide Coin Bag
+	[388873] = "Мешок с сокровищами братства Стальных Волн",	-- Irontide Coin Bag	--TODO: this was manually translated
 	[388876] = "Котелок с реагентами",	-- Reagent Pot
 	[388895] = "Небрежные записки",	-- Random Scribblings
 	[388905] = "Инструменты Нелтариона",	-- Neltharion Toolkit

@@ -3769,8 +3769,8 @@ for key,value in pairs({
 	[386461] = "Urzeitliche Arkantruhe",	-- Primordial Arcane Cache
 	[386462] = "Urzeitliche Bluttruhe",	-- Primordial Blood Cache
 	[386463] = "Urzeitliche Goldtruhe",	-- Primordial Gold Cache
-	--TODO: [386470] = "Gold Pile",	-- Gold Pile
-	--TODO: [386472] = "Gold Pile",	-- Gold Pile
+	[386470] = "Goldhaufen",	-- Gold Pile	--TODO: this was manually translated
+	[386472] = "Goldhaufen",	-- Gold Pile	--TODO: this was manually translated
 	[386484] = "Goldhaufen",	-- Gold Pile
 	[386531] = "Goldhaufen",	-- Gold Pile
 	[386532] = "Urzeitliche Goldtruhe",	-- Primordial Gold Cache
@@ -3815,7 +3815,7 @@ for key,value in pairs({
 	[387853] = "Zertrümmerte Kristalle",	-- Shattered Crystals
 	[388712] = "Operntruhe",	-- Opera Chest
 	[388866] = "Reagenzientopf",	-- Reagent Pot
-	--TODO: [388873] = "Irontide Coin Bag",	-- Irontide Coin Bag
+	[388873] = "Goldbeutel der Eisenfluträuber",	-- Irontide Coin Bag	--TODO: this was manually translated
 	[388876] = "Reagenzientopf",	-- Reagent Pot
 	[388895] = "Wahlloses Gekritzel",	-- Random Scribblings
 	[388905] = "Neltharions Werkzeugsatz",	-- Neltharion Toolkit

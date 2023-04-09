@@ -3768,8 +3768,8 @@ for key,value in pairs({
 	[386461] = "Baú Arcano Primordial",	-- Primordial Arcane Cache
 	[386462] = "Baú Arcano Primordial",	-- Primordial Blood Cache
 	[386463] = "Baú Áureo Primordial",	-- Primordial Gold Cache
-	--TODO: [386470] = "Gold Pile",	-- Gold Pile
-	--TODO: [386472] = "Gold Pile",	-- Gold Pile
+	[386470] = "Pilha de Ouro",	-- Gold Pile	--TODO: this was manually translated
+	[386472] = "Pilha de Ouro",	-- Gold Pile	--TODO: this was manually translated
 	[386484] = "Pilha de Ouro",	-- Gold Pile
 	[386531] = "Pilha de Ouro",	-- Gold Pile
 	[386532] = "Baú Áureo Primordial",	-- Primordial Gold Cache
@@ -3814,7 +3814,7 @@ for key,value in pairs({
 	[387853] = "Cristais Estilhaçados",	-- Shattered Crystals
 	[388712] = "Baú da Ópera",	-- Opera Chest
 	[388866] = "Panela de Reagentes",	-- Reagent Pot
-	--TODO: [388873] = "Irontide Coin Bag",	-- Irontide Coin Bag
+	[388873] = "Bolsa de Moedas Maré-férrea",	-- Irontide Coin Bag	--TODO: this was manually translated
 	[388876] = "Panela de Reagentes",	-- Reagent Pot
 	[388895] = "Rabiscos Aleatórios",	-- Random Scribblings
 	[388905] = "Kit de Ferramentas de Neltharion",	-- Neltharion Toolkit

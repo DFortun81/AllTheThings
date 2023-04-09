@@ -3760,8 +3760,8 @@ for key,value in pairs({
 	[386461] = "Cassa dell'Arcano Primordiale",	-- Primordial Arcane Cache
 	[386462] = "Cassa del Sangue Primordiale",	-- Primordial Blood Cache
 	[386463] = "Cassa dell'Oro primordiale",	-- Primordial Gold Cache
-	--TODO: [386470] = "Gold Pile",	-- Gold Pile
-	--TODO: [386472] = "Gold Pile",	-- Gold Pile
+	[386470] = "Mucchio d'Oro",	-- Gold Pile	--TODO: this was manually translated
+	[386472] = "Mucchio d'Oro",	-- Gold Pile	--TODO: this was manually translated
 	[386484] = "Mucchio d'Oro",	-- Gold Pile
 	[386531] = "Mucchio d'Oro",	-- Gold Pile
 	[386532] = "Cassa dell'Oro primordiale",	-- Primordial Gold Cache
@@ -3806,7 +3806,7 @@ for key,value in pairs({
 	[387853] = "Cristalli Infranti",	-- Shattered Crystals
 	[388712] = "Cassa del Teatro",	-- Opera Chest
 	[388866] = "Vaso dei Reagenti",	-- Reagent Pot
-	--TODO: [388873] = "Irontide Coin Bag",	-- Irontide Coin Bag
+	[388873] = "Borsellino dei Marferreo",	-- Irontide Coin Bag	--TODO: this was manually translated
 	[388876] = "Vaso dei Reagenti",	-- Reagent Pot
 	[388895] = "Scarabocchi Casuali",	-- Random Scribblings
 	[388905] = "Set di Attrezzi di Neltharion",	-- Neltharion Toolkit

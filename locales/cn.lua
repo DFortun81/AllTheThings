@@ -3828,7 +3828,7 @@ for key, value in pairs({
 	--TODO: [387853] = "Shattered Crystals",	-- Shattered Crystals
 	--TODO: [388712] = "Opera Chest",	-- Opera Chest
 	--TODO: [388866] = "Reagent Pot",	-- Reagent Pot
-	--TODO: [388873] = "Irontide Coin Bag",	-- Irontide Coin Bag
+	[388873] = "铁潮金币袋",	-- Irontide Coin Bag	--TODO: this was manually translated
 	--TODO: [388876] = "Reagent Pot",	-- Reagent Pot
 	--TODO: [388895] = "Random Scribblings",	-- Random Scribblings
 	--TODO: [388905] = "Neltharion Toolkit",	-- Neltharion Toolkit

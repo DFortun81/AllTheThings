@@ -3767,8 +3767,8 @@ for key,value in pairs({
 	[386461] = "Cache des arcanes primordiales",	-- Primordial Arcane Cache
 	[386462] = "Cache de sang primordial",	-- Primordial Blood Cache
 	[386463] = "Cache d’or primordial",	-- Primordial Gold Cache
-	--TODO: [386470] = "Gold Pile",	-- Gold Pile
-	--TODO: [386472] = "Gold Pile",	-- Gold Pile
+	[386470] = "Pile d’or",	-- Gold Pile	--TODO: this was manually translated
+	[386472] = "Pile d’or",	-- Gold Pile	--TODO: this was manually translated
 	[386484] = "Pile d’or",	-- Gold Pile
 	[386531] = "Pile d’or",	-- Gold Pile
 	[386532] = "Cache d’or primordial",	-- Primordial Gold Cache
@@ -3813,7 +3813,7 @@ for key,value in pairs({
 	[387853] = "Cristaux brisés",	-- Shattered Crystals
 	[388712] = "Coffre d’opéra",	-- Opera Chest
 	[388866] = "Pot de composants",	-- Reagent Pot
-	--TODO: [388873] = "Irontide Coin Bag",	-- Irontide Coin Bag
+	[388873] = "Sac de pièces des Lamineurs",	-- Irontide Coin Bag	--TODO: this was manually translated
 	[388876] = "Pot de composants",	-- Reagent Pot
 	[388895] = "Annotations diverses",	-- Random Scribblings
 	[388905] = "Outils de Neltharion",	-- Neltharion Toolkit

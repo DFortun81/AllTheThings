@@ -3768,8 +3768,8 @@ for key,value in pairs({
 	[386461] = "태고의 비전 보관함",	-- Primordial Arcane Cache
 	[386462] = "태고의 핏빛 보관함",	-- Primordial Blood Cache
 	[386463] = "태고의 황금 보관함",	-- Primordial Gold Cache
-	--TODO: [386470] = "Gold Pile",	-- Gold Pile
-	--TODO: [386472] = "Gold Pile",	-- Gold Pile
+	[386470] = "황금 더미",	-- Gold Pile	--TODO: this was manually translated
+	[386472] = "황금 더미",	-- Gold Pile	--TODO: this was manually translated
 	[386484] = "황금 더미",	-- Gold Pile
 	[386531] = "황금 더미",	-- Gold Pile
 	[386532] = "태고의 황금 보관함",	-- Primordial Gold Cache
@@ -3814,7 +3814,7 @@ for key,value in pairs({
 	[387853] = "조각난 수정",	-- Shattered Crystals
 	[388712] = "가극 상자",	-- Opera Chest
 	[388866] = "재료 냄비",	-- Reagent Pot
-	--TODO: [388873] = "Irontide Coin Bag",	-- Irontide Coin Bag
+	[388873] = "무쇠파도 주화 가방",	-- Irontide Coin Bag	--TODO: this was manually translated
 	[388876] = "재료 냄비",	-- Reagent Pot
 	[388895] = "아무렇게나 그린 낙서",	-- Random Scribblings
 	[388905] = "넬타리온의 도구",	-- Neltharion Toolkit
