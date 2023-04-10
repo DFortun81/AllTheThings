@@ -1116,6 +1116,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				i(204020),	-- Wild Spirit Stone
 				i(204030),	-- Wind Sculpted Stone
 				-- Drops from any chest
+				i(193854),	-- Berylmane (PET!)
 				i(193835),	-- Brightfeather (PET!)
 				i(193363),	-- Bunbo (PET!)
 				i(204687),	-- Obsidian Battle Horn (TOY!)
