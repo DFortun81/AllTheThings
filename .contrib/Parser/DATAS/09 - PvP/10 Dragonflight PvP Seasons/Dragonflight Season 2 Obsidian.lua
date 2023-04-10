@@ -200,13 +200,13 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["g"] = {
 						n(CLASSES, {
 							cl(DEATHKNIGHT, {
-								i(201911, {	-- Obsidian Gladiator's Cloak
+								i(205673, {	-- Obsidian Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201912, {	-- Obsidian Gladiator's Drape
+								i(205674, {	-- Obsidian Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201913, {	-- Obsidian Gladiator's Shawl
+								i(205675, {	-- Obsidian Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 								i(205473, {	-- Obsidian Gladiator's Plate Chestguard
@@ -259,13 +259,13 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								}),
 							}),
 							cl(DEMONHUNTER, {
-								i(201890, {	-- Obsidian Gladiator's Cloak
+								i(205655, {	-- Obsidian Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201891, {	-- Obsidian Gladiator's Drape
+								i(205656, {	-- Obsidian Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201892, {	-- Obsidian Gladiator's Shawl
+								i(205657, {	-- Obsidian Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 								i(205533, {	-- Obsidian Gladiator's Leather Belt
@@ -318,13 +318,13 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								}),
 							}),
 							cl(DRUID, {
-								i(201893, {	-- Obsidian Gladiator's Cloak
+								i(205658, {	-- Obsidian Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201894, {	-- Obsidian Gladiator's Drape
+								i(205659, {	-- Obsidian Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201895, {	-- Obsidian Gladiator's Shawl
+								i(205660, {	-- Obsidian Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 								i(205549, {	-- Obsidian Gladiator's Leather Belt
@@ -436,6 +436,15 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								}),
 							}),
 							cl(HUNTER, {
+								i(205667, {	-- Obsidian Gladiator's Cloak
+									["cost"] = { { "c", CONQUEST, 525 } },
+								}),
+								i(205668, {	-- Obsidian Gladiator's Drape
+									["cost"] = { { "c", CONQUEST, 525 } },
+								}),
+								i(205669, {	-- Obsidian Gladiator's Shawl
+									["cost"] = { { "c", CONQUEST, 525 } },
+								}),
 								i(205597, {	-- Obsidian Gladiator's Chain Belt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
@@ -482,15 +491,6 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
 								i(205599, {	-- Obsidian Gladiator's Chain Wristguards
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(201905, {	-- Obsidian Gladiator's Cloak
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(201906, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(201907, {	-- Obsidian Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 							}),
@@ -554,10 +554,13 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								}),
 							}),
 							cl(MONK, {
-								i(201896, {	-- Obsidian Gladiator's Cloak
+								i(205661, {	-- Obsidian Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201897, {	-- Obsidian Gladiator's Drape
+								i(205662, {	-- Obsidian Gladiator's Drape
+									["cost"] = { { "c", CONQUEST, 525 } },
+								}),
+								i(205663, {	-- Obsidian Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 								i(205565, {	-- Obsidian Gladiator's Leather Belt
@@ -608,15 +611,15 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								i(205567, {	-- Obsidian Gladiator's Leather Wristwraps
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201898, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
 							}),
 							cl(PALADIN, {
-								i(201914, {	-- Obsidian Gladiator's Cloak
+								i(205676, {	-- Obsidian Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201915, {	-- Obsidian Gladiator's Drape
+								i(205677, {	-- Obsidian Gladiator's Drape
+									["cost"] = { { "c", CONQUEST, 525 } },
+								}),
+								i(205678, {	-- Obsidian Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 								i(205616, {	-- Obsidian Gladiator's Plate Battlerobe
@@ -667,18 +670,15 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								i(205630, {	-- Obsidian Gladiator's Plate Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201916, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
 							}),
 							cl(PRIEST, {
-								i(201884, {	-- Obsidian Gladiator's Cloak
+								i(205649, {	-- Obsidian Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201885, {	-- Obsidian Gladiator's Drape
+								i(205650, {	-- Obsidian Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201886, {	-- Obsidian Gladiator's Shawl
+								i(205651, {	-- Obsidian Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 								i(205500, {	-- Obsidian Gladiator's Silk Amice
@@ -731,10 +731,13 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								}),
 							}),
 							cl(ROGUE, {
-								i(201899, {	-- Obsidian Gladiator's Cloak
+								i(205664, {	-- Obsidian Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201900, {	-- Obsidian Gladiator's Drape
+								i(205665, {	-- Obsidian Gladiator's Drape
+									["cost"] = { { "c", CONQUEST, 525 } },
+								}),
+								i(205666, {	-- Obsidian Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 								i(205581, {	-- Obsidian Gladiator's Leather Belt
@@ -785,11 +788,17 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								i(205583, {	-- Obsidian Gladiator's Leather Wristwraps
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201901, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
 							}),
 							cl(SHAMAN, {
+								i(205670, {	-- Obsidian Gladiator's Cloak
+									["cost"] = { { "c", CONQUEST, 525 } },
+								}),
+								i(205671, {	-- Obsidian Gladiator's Drape
+									["cost"] = { { "c", CONQUEST, 525 } },
+								}),
+								i(205672, {	-- Obsidian Gladiator's Shawl
+									["cost"] = { { "c", CONQUEST, 525 } },
+								}),
 								i(205613, {	-- Obsidian Gladiator's Chain Belt
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
@@ -838,24 +847,15 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								i(205615, {	-- Obsidian Gladiator's Chain Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201908, {	-- Obsidian Gladiator's Cloak
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(201909, {	-- Obsidian Gladiator's Drape
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
-								i(201910, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
 							}),
 							cl(WARLOCK, {
-								i(201887, {	-- Obsidian Gladiator's Cloak
+								i(205652, {	-- Obsidian Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201888, {	-- Obsidian Gladiator's Drape
+								i(205653, {	-- Obsidian Gladiator's Drape
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201889, {	-- Obsidian Gladiator's Shawl
+								i(205654, {	-- Obsidian Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 								i(205516, {	-- Obsidian Gladiator's Silk Amice
@@ -908,10 +908,13 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								}),
 							}),
 							cl(WARRIOR, {
-								i(201917, {	-- Obsidian Gladiator's Cloak
+								i(205679, {	-- Obsidian Gladiator's Cloak
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201918, {	-- Obsidian Gladiator's Drape
+								i(205680, {	-- Obsidian Gladiator's Drape
+									["cost"] = { { "c", CONQUEST, 525 } },
+								}),
+								i(205681, {	-- Obsidian Gladiator's Shawl
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
 								i(205632, {	-- Obsidian Gladiator's Plate Chestguard
@@ -962,57 +965,55 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 								i(205646, {	-- Obsidian Gladiator's Plate Wristguards
 									["cost"] = { { "c", CONQUEST, 525 } },
 								}),
-								i(201919, {	-- Obsidian Gladiator's Shawl
-									["cost"] = { { "c", CONQUEST, 525 } },
-								}),
 							}),
 						}),
 						filter(FINGER_F, {
-							i(201802, {	-- Obsidian Gladiator's Band
+							i(205703, {	-- Obsidian Gladiator's Band
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
-							i(201801, {	-- Obsidian Gladiator's Ring
+							i(205702, {	-- Obsidian Gladiator's Ring
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
-							i(201803, {	-- Obsidian Gladiator's Signet
+							i(205704, {	-- Obsidian Gladiator's Signet
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
 						}),
 						filter(NECK_F, {
-							i(201806, {	-- Obsidian Gladiator's Amulet
+							i(205707, {	-- Obsidian Gladiator's Amulet
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
-							i(201804, {	-- Obsidian Gladiator's Necklace
+							i(205705, {	-- Obsidian Gladiator's Necklace
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
-							i(201805, {	-- Obsidian Gladiator's Pendant
+							i(205706, {	-- Obsidian Gladiator's Pendant
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
 						}),
 						filter(TRINKET_F, {
-							i(201807, {	-- Obsidian Gladiator's Badge of Ferocity
+							i(205708, {	-- Obsidian Gladiator's Badge of Ferocity
 								["cost"] = { { "c", CONQUEST, 700 } },
 							}),
-							i(201809, {	-- Obsidian Gladiator's Emblem
+							i(205710, {	-- Obsidian Gladiator's Emblem
 								["cost"] = { { "c", CONQUEST, 700 } },
 							}),
-							i(201808, {	-- Obsidian Gladiator's Insignia of Alacrity
+							i(205709, {	-- Obsidian Gladiator's Insignia of Alacrity
 								["cost"] = { { "c", CONQUEST, 700 } },
 							}),
-							i(201810, {	-- Obsidian Gladiator's Medallion
+							i(205711, {	-- Obsidian Gladiator's Medallion
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
-							i(201811, {	-- Obsidian Gladiator's Sigil of Adaptation
+							i(205712, {	-- Obsidian Gladiator's Sigil of Adaptation
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
 						}),
 						n(WEAPONS, {
-							i(201983, {	-- Obsidian Gladiator's Axe
+							i(205924, {	-- Obsidian Gladiator's Axe
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
-							i(201973, {	-- Obsidian Gladiator's Dagger
+							i(205915, {	-- Obsidian Gladiator's Dagger
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
+							--[[
 							i(201979, {	-- Obsidian Gladiator's Gavel
 								["cost"] = { { "c", CONQUEST, 1350 } },
 							}),
@@ -1025,33 +1026,37 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(201980, {	-- Obsidian Gladiator's Horn
 								["cost"] = { { "c", CONQUEST, 450 } },
 							}),
-							i(201984, {	-- Obsidian Gladiator's Knife
+							--]]
+							i(205925, {	-- Obsidian Gladiator's Knife
 								["cost"] = { { "c", CONQUEST, 1350 } },
 							}),
-							i(201985, {	-- Obsidian Gladiator's Mace
+							i(205926, {	-- Obsidian Gladiator's Mace
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
-							i(201987, {	-- Obsidian Gladiator's Polearm
+							i(205927, {	-- Obsidian Gladiator's Polearm
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
-							i(201981, {	-- Obsidian Gladiator's Shield
+							i(205923, {	-- Obsidian Gladiator's Shield
 								["cost"] = { { "c", CONQUEST, 450 } },
 							}),
-							i(201975, {	-- Obsidian Gladiator's Spear
+							i(205917, {	-- Obsidian Gladiator's Spear
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
-							i(201972, {	-- Obsidian Gladiator's Splitter
+							i(205914, {	-- Obsidian Gladiator's Splitter
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
-							i(201976, {	-- Obsidian Gladiator's Staff
+							i(205918, {	-- Obsidian Gladiator's Staff
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
-							i(201982, {	-- Obsidian Gladiator's Wand
-								["cost"] = { { "c", CONQUEST, 1350 } },
-							}),
-							i(201974, {	-- Obsidian Gladiator's Warglaive
+							i(205916, {	-- Obsidian Gladiator's Warglaive
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
+							i(205919),	-- Obsidian Gladiator's Rifle
+							i(205921),	-- Obsidian Gladiator's Scepter
+							i(205922),	-- Obsidian Gladiator's Rod
+							i(205928),	-- Obsidian Gladiator's Claws
+							i(205929),	-- Obsidian Gladiator's Bow
+							i(205930),	-- Obsidian Gladiator's Talons
 						}),
 					},
 				}),
@@ -1059,9 +1064,9 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }, ["bonusID"] = 7532 }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
-						i(201911),	-- Obsidian Gladiator's Cloak
-						i(201912),	-- Obsidian Gladiator's Drape
-						i(201913),	-- Obsidian Gladiator's Shawl
+						i(205673),	-- Obsidian Gladiator's Cloak
+						i(205674),	-- Obsidian Gladiator's Drape
+						i(205675),	-- Obsidian Gladiator's Shawl
 						i(205473),	-- Obsidian Gladiator's Plate Chestguard
 						i(205474),	-- Obsidian Gladiator's Plate Chestplate
 						i(205477),	-- Obsidian Gladiator's Plate Gauntlets
@@ -1080,8 +1085,8 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205487),	-- Obsidian Gladiator's Plate Wristguards
 					}),
 					cl(DEMONHUNTER, {
-						i(201890),	-- Obsidian Gladiator's Cloak
-						i(201891),	-- Obsidian Gladiator's Drape
+						i(205655),	-- Obsidian Gladiator's Cloak
+						i(205656),	-- Obsidian Gladiator's Drape
 						i(205533),	-- Obsidian Gladiator's Leather Belt
 						i(205523),	-- Obsidian Gladiator's Leather Boots
 						i(205529),	-- Obsidian Gladiator's Leather Breeches
@@ -1098,11 +1103,11 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205521),	-- Obsidian Gladiator's Leather Vest
 						i(205536),	-- Obsidian Gladiator's Leather Wristguards
 						i(205535),	-- Obsidian Gladiator's Leather Wristwraps
-						i(201892),	-- Obsidian Gladiator's Shawl
+						i(205657),	-- Obsidian Gladiator's Shawl
 					}),
 					cl(DRUID, {
-						i(201893),	-- Obsidian Gladiator's Cloak
-						i(201894),	-- Obsidian Gladiator's Drape
+						i(205658),	-- Obsidian Gladiator's Cloak
+						i(205659),	-- Obsidian Gladiator's Drape
 						i(205549),	-- Obsidian Gladiator's Leather Belt
 						i(205539),	-- Obsidian Gladiator's Leather Boots
 						i(205545),	-- Obsidian Gladiator's Leather Breeches
@@ -1119,7 +1124,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205537),	-- Obsidian Gladiator's Leather Vest
 						i(205552),	-- Obsidian Gladiator's Leather Wristguards
 						i(205551),	-- Obsidian Gladiator's Leather Wristwraps
-						i(201895),	-- Obsidian Gladiator's Shawl
+						i(205660),	-- Obsidian Gladiator's Shawl
 					}),
 					cl(EVOKER, {
 						i(205407),	-- Obsidian Gladiator's Cloak
@@ -1159,9 +1164,9 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205586),	-- Obsidian Gladiator's Chain Tunic
 						i(205585),	-- Obsidian Gladiator's Chain Vest
 						i(205599),	-- Obsidian Gladiator's Chain Wristguards
-						i(201905),	-- Obsidian Gladiator's Cloak
-						i(201906),	-- Obsidian Gladiator's Drape
-						i(201907),	-- Obsidian Gladiator's Shawl
+						i(205667),	-- Obsidian Gladiator's Cloak
+						i(205668),	-- Obsidian Gladiator's Drape
+						i(205669),	-- Obsidian Gladiator's Shawl
 					}),
 					cl(MAGE, {
 						i(205446),	-- Obsidian Gladiator's Cloak
@@ -1185,8 +1190,8 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205389),	-- Obsidian Gladiator's Silk Wristwraps
 					}),
 					cl(MONK, {
-						i(201896),	-- Obsidian Gladiator's Cloak
-						i(201897),	-- Obsidian Gladiator's Drape
+						i(205661),	-- Obsidian Gladiator's Cloak
+						i(205662),	-- Obsidian Gladiator's Drape
 						i(205565),	-- Obsidian Gladiator's Leather Belt
 						i(205555),	-- Obsidian Gladiator's Leather Boots
 						i(205561),	-- Obsidian Gladiator's Leather Breeches
@@ -1203,11 +1208,11 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205553),	-- Obsidian Gladiator's Leather Vest
 						i(205568),	-- Obsidian Gladiator's Leather Wristguards
 						i(205567),	-- Obsidian Gladiator's Leather Wristwraps
-						i(201898),	-- Obsidian Gladiator's Shawl
+						i(205663),	-- Obsidian Gladiator's Shawl
 					}),
 					cl(PALADIN, {
-						i(201914),	-- Obsidian Gladiator's Cloak
-						i(201915),	-- Obsidian Gladiator's Drape
+						i(205676),	-- Obsidian Gladiator's Cloak
+						i(205677),	-- Obsidian Gladiator's Drape
 						i(205616),	-- Obsidian Gladiator's Plate Battlerobe
 						i(205617),	-- Obsidian Gladiator's Plate Chestplate
 						i(205620),	-- Obsidian Gladiator's Plate Gauntlets
@@ -1224,12 +1229,12 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205618),	-- Obsidian Gladiator's Plate Warboots
 						i(205625),	-- Obsidian Gladiator's Plate Wargreaves
 						i(205630),	-- Obsidian Gladiator's Plate Wristguards
-						i(201916),	-- Obsidian Gladiator's Shawl
+						i(205678),	-- Obsidian Gladiator's Shawl
 					}),
 					cl(PRIEST, {
-						i(201884),	-- Obsidian Gladiator's Cloak
-						i(201885),	-- Obsidian Gladiator's Drape
-						i(201886),	-- Obsidian Gladiator's Shawl
+						i(205649),	-- Obsidian Gladiator's Cloak
+						i(205650),	-- Obsidian Gladiator's Drape
+						i(205651),	-- Obsidian Gladiator's Shawl
 						i(205500),	-- Obsidian Gladiator's Silk Amice
 						i(205504),	-- Obsidian Gladiator's Silk Armbands
 						i(205502),	-- Obsidian Gladiator's Silk Belt
@@ -1248,8 +1253,8 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205503),	-- Obsidian Gladiator's Silk Wristwraps
 					}),
 					cl(ROGUE, {
-						i(201899),	-- Obsidian Gladiator's Cloak
-						i(201900),	-- Obsidian Gladiator's Drape
+						i(205664),	-- Obsidian Gladiator's Cloak
+						i(205665),	-- Obsidian Gladiator's Drape
 						i(205581),	-- Obsidian Gladiator's Leather Belt
 						i(205571),	-- Obsidian Gladiator's Leather Boots
 						i(205577),	-- Obsidian Gladiator's Leather Breeches
@@ -1266,7 +1271,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205569),	-- Obsidian Gladiator's Leather Vest
 						i(205584),	-- Obsidian Gladiator's Leather Wristguards
 						i(205583),	-- Obsidian Gladiator's Leather Wristwraps
-						i(201901),	-- Obsidian Gladiator's Shawl
+						i(205666),	-- Obsidian Gladiator's Shawl
 					}),
 					cl(SHAMAN, {
 						i(205613),	-- Obsidian Gladiator's Chain Belt
@@ -1285,14 +1290,14 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205602),	-- Obsidian Gladiator's Chain Tunic
 						i(205601),	-- Obsidian Gladiator's Chain Vest
 						i(205615),	-- Obsidian Gladiator's Chain Wristguards
-						i(201908),	-- Obsidian Gladiator's Cloak
-						i(201909),	-- Obsidian Gladiator's Drape
-						i(201910),	-- Obsidian Gladiator's Shawl
+						i(205670),	-- Obsidian Gladiator's Cloak
+						i(205671),	-- Obsidian Gladiator's Drape
+						i(205672),	-- Obsidian Gladiator's Shawl
 					}),
 					cl(WARLOCK, {
-						i(201887),	-- Obsidian Gladiator's Cloak
-						i(201888),	-- Obsidian Gladiator's Drape
-						i(201889),	-- Obsidian Gladiator's Shawl
+						i(205652),	-- Obsidian Gladiator's Cloak
+						i(205653),	-- Obsidian Gladiator's Drape
+						i(205654),	-- Obsidian Gladiator's Shawl
 						i(205516),	-- Obsidian Gladiator's Silk Amice
 						i(205520),	-- Obsidian Gladiator's Silk Armbands
 						i(205518),	-- Obsidian Gladiator's Silk Belt
@@ -1311,8 +1316,8 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205519),	-- Obsidian Gladiator's Silk Wristwraps
 					}),
 					cl(WARRIOR, {
-						i(201917),	-- Obsidian Gladiator's Cloak
-						i(201918),	-- Obsidian Gladiator's Drape
+						i(205679),	-- Obsidian Gladiator's Cloak
+						i(205680),	-- Obsidian Gladiator's Drape
 						i(205632),	-- Obsidian Gladiator's Plate Chestguard
 						i(205633),	-- Obsidian Gladiator's Plate Chestplate
 						i(205636),	-- Obsidian Gladiator's Plate Gauntlets
@@ -1329,45 +1334,45 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205634),	-- Obsidian Gladiator's Plate Warboots
 						i(205641),	-- Obsidian Gladiator's Plate Wargreaves
 						i(205646),	-- Obsidian Gladiator's Plate Wristguards
-						i(201919),	-- Obsidian Gladiator's Shawl
+						i(205681),	-- Obsidian Gladiator's Shawl
 					}),
 				}),
 				filter(FINGER_F, {
-					i(201802),	-- Obsidian Gladiator's Band
-					i(201801),	-- Obsidian Gladiator's Ring
-					i(201803),	-- Obsidian Gladiator's Signet
+					i(205703),	-- Obsidian Gladiator's Band
+					i(205702),	-- Obsidian Gladiator's Ring
+					i(205704),	-- Obsidian Gladiator's Signet
 				}),
 				filter(NECK_F, {
-					i(201806),	-- Obsidian Gladiator's Amulet
-					i(201804),	-- Obsidian Gladiator's Necklace
-					i(201805),	-- Obsidian Gladiator's Pendant
+					i(205707),	-- Obsidian Gladiator's Amulet
+					i(205705),	-- Obsidian Gladiator's Necklace
+					i(205706),	-- Obsidian Gladiator's Pendant
 				}),
 				filter(TRINKET_F, {
-					i(201807),	-- Obsidian Gladiator's Badge of Ferocity
-					i(201809),	-- Obsidian Gladiator's Emblem
-					i(201808),	-- Obsidian Gladiator's Insignia of Alacrity
-					i(201810),	-- Obsidian Gladiator's Medallion
-					i(201811),	-- Obsidian Gladiator's Sigil of Adaptation
+					i(205708),	-- Obsidian Gladiator's Badge of Ferocity
+					i(205710),	-- Obsidian Gladiator's Emblem
+					i(205709),	-- Obsidian Gladiator's Insignia of Alacrity
+					i(205711),	-- Obsidian Gladiator's Medallion
+					i(205712),	-- Obsidian Gladiator's Sigil of Adaptation
 				}),
 				n(WEAPONS, {
-					i(202129),	-- Obsidian Gladiator's Barrier
-					i(202133),	-- Obsidian Gladiator's Blade
-					i(202130),	-- Obsidian Gladiator's Bulwark
-					i(202127),	-- Obsidian Gladiator's Censer
-					i(202140),	-- Obsidian Gladiator's Claw
-					i(202124),	-- Obsidian Gladiator's Crossbow
-					i(202134),	-- Obsidian Gladiator's Glaive
-					i(202137),	-- Obsidian Gladiator's Greataxe
-					i(202123),	-- Obsidian Gladiator's Greatbow
-					i(202138),	-- Obsidian Gladiator's Greatmace
-					i(202125),	-- Obsidian Gladiator's Greatstaff
-					i(202135),	-- Obsidian Gladiator's Poleaxe
-					i(202136),	-- Obsidian Gladiator's Quarterstaff
-					i(202128),	-- Obsidian Gladiator's Rod
-					i(202139),	-- Obsidian Gladiator's Scepter
-					i(202126),	-- Obsidian Gladiator's Spellblade
-					i(202131),	-- Obsidian Gladiator's Sword
-					i(202132),	-- Obsidian Gladiator's Warhammer
+					--i(202129),	-- Obsidian Gladiator's Barrier
+					--i(202133),	-- Obsidian Gladiator's Blade
+					--i(202130),	-- Obsidian Gladiator's Bulwark
+					--i(202127),	-- Obsidian Gladiator's Censer
+					--i(205928),	-- Obsidian Gladiator's Claws
+					--i(202124),	-- Obsidian Gladiator's Crossbow
+					--i(202134),	-- Obsidian Gladiator's Glaive
+					--i(202137),	-- Obsidian Gladiator's Greataxe
+					--i(202123),	-- Obsidian Gladiator's Greatbow
+					--i(202138),	-- Obsidian Gladiator's Greatmace
+					--i(202125),	-- Obsidian Gladiator's Greatstaff
+					--i(202135),	-- Obsidian Gladiator's Poleaxe
+					--i(202136),	-- Obsidian Gladiator's Quarterstaff
+					--i(202128),	-- Obsidian Gladiator's Rod
+					--i(202139),	-- Obsidian Gladiator's Scepter
+					--i(202126),	-- Obsidian Gladiator's Spellblade
+					--i(202131),	-- Obsidian Gladiator's Sword
+					--i(202132),	-- Obsidian Gladiator's Warhammer
 				}),
 			})),
 			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {

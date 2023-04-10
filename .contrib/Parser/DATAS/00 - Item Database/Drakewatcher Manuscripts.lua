@@ -308,7 +308,6 @@ i(203314, 73802);	-- Winding Slitherdrake: Curved Chin Horn
 i(203335, 73825);	-- Winding Slitherdrake: Curved Horns
 i(203349, 73840);	-- Winding Slitherdrake: Curved Nose Horn
 i(203320, 73808);	-- Winding Slitherdrake: Ears
-i(205865, 75941);	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator
 i(203319, 73807);	-- Winding Slitherdrake: Finned Cheek
 i(203361, 73853);	-- Winding Slitherdrake: Finned Tip Tail
 i(203310, 73798);	-- Winding Slitherdrake: Grand Chin Thorn
@@ -321,6 +320,7 @@ i(203343, 73834);	-- Winding Slitherdrake: Hairy Jaw
 i(203362, 73854);	-- Winding Slitherdrake: Hairy Tail
 i(203365, 73857);	-- Winding Slitherdrake: Hairy Throat
 i(203329, 73817);	-- Winding Slitherdrake: Heavy Horns
+i(205341, 75743);	-- Winding Slitherdrake: Heavy Scales
 i(203326, 73814);	-- Winding Slitherdrake: Helm
 i(203306, 73794);	-- Winding Slitherdrake: Horned Brow
 i(203339, 73830);	-- Winding Slitherdrake: Impaler Horns
@@ -359,3 +359,6 @@ i(203328, 73816);	-- Winding Slitherdrake: White Horns
 i(203354, 73845);	-- Winding Slitherdrake: White Scales
 i(203304, 73792);	-- Winding Slitherdrake: Yellow and Silver Armor
 i(203355, 73846);	-- Winding Slitherdrake: Yellow Scales
+-- Special --
+i(205876, 75967);	-- Highland Drake: Embodiment of the Hellforged
+i(205865, 75941);	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator

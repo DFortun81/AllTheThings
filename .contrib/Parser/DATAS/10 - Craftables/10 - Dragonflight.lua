@@ -33,6 +33,12 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 	-- Crafting
 	i(191529),	-- Illustrious Insight
 	i(191526),	-- Lesser Illustrious Insight
+	-- Unknown
+	i(204463, {	-- Dracothyst
+		["cost"] = { { "i", 204462, 10 } },	-- 10x Dracothyst Shards
+	}),
+	i(204462),	-- Dracothyst Shards
+	i(204464),	-- Shadowflame Essence
 	prof(ALCHEMY, {
 		spell(370747, {	-- Advanced Phial Experimentation
 			["sym"] = {{"select","spellID",370746},{"extract","recipeID"}},	-- Basic Phial Experimentation -> Recipes

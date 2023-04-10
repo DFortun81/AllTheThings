@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				crit(4, {	-- Roggy wins
 					-- TODO: ["sourceQuests"] = {  },	-- A Race To The Finish
 				}),
-				i(205231),	-- Roggy
+				i(205231),	-- Roggy (PET!)
 			}),
 			pvp(ach(17851)),	-- Tour of Duty: Zaralek Cavern
 			ach(18150, {	-- Zaralek Caverns Glyph Hunter
@@ -90,7 +90,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			ach(17916),	-- Magic Battler of Zaralek Cavern
 			ach(17917),	-- Mechanical Battler of Zaralek Cavern
 			ach(17918),	-- Undead Battler of Zaralek Caverm
-			ach(18100),	-- Cavern Clawbbering
+			ach(18100, {	-- Cavern Clawbbering
+				i(205904),	-- Vibrant Clacking Claw (TOY!)
+			}),
 		}),
 	}),
 })));

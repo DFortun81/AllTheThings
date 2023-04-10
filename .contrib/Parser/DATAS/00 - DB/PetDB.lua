@@ -1400,13 +1400,26 @@ i(0, 3471);	-- Gilded Mechafrog
 ------------------
 -- PATCH 10.1.0 --
 ------------------
+-- ITEM --
+i(205003, 3512);	-- Ambre
+i(205154, 3548);	-- Aquapo
+i(205002, 3511);	-- Blaise
 i(205119, 3536);	-- Bashful
 i(205123, 3540);	-- Brulee
+i(205026, 3524);	-- Devourer Lobstrok
 i(205118, 3535);	-- Diamondshell
 i(193377, 3294);	-- Gerald
+i(205052, 3530);	-- Miloh
 i(205050, 3528);	-- Paulie
 i(205051, 3529);	-- Rango
+i(205147, 3541);	-- Ridged Shalewing
+i(205231, 3557);	-- Roggy
+i(204894, 3493);	-- Roland
+i(205152, 3546);	-- Skaarn
+i(205159, 3551);	-- Teardrop Moth
 i(205120, 3537);	-- Thimblerig
+i(205121, 3538);	-- Tricky
+-- NPC --
 n(203287, 3477);	-- Puddlehopper
 n(203288, 3478);	-- Rock Martin
 n(203289, 3479);	-- Yellabon
@@ -1421,63 +1434,40 @@ n(203364, 3487);	-- Scarlapod
 n(203367, 3488);	-- Deepridger
 n(203372, 3489);	-- Sunglow Cobra
 n(203377, 3490);	-- Ebonwing Moth
-i(204894, 3493);	-- Roland
-i(205002, 3511);	-- Blaise
-i(205003, 3512);	-- Ambre
-i(205052, 3530);	-- Miloh
-i(205121, 3538);	-- Tricky
-i(205026, 3524);	-- Devourer Lobstrok
-i(205147, 3541);	-- Ridged Shalewing
-i(205152, 3546);	-- Skaarn
-i(205154, 3548);	-- Aquapo
-i(205159, 3551);	-- Teardrop Moth
-i(205231, 3557);	-- Roggy
 -- UNSORTED --
+i(205165, 3555);	-- Axel
+i(205004, 3513);	-- Azure Swoglet
 i(205054, 3532);	-- Amador
+i(206018, 3580);	-- Baa'lial
+i(205032, 3525);	-- Bestial Lurker
+i(205011, 3517);	-- Bronze Swoglet
 i(205114, 3533);	-- Brul
+i(205017, 3519);	-- Byrn
+i(205024, 3523);	-- Cheddar
+i(205010, 3516);	-- Crimson Swoglet
+i(205008, 3514);	-- Emerald Swoglet
+i(205148, 3542);	-- Dread Shalewing
+i(205156, 3549);	-- Heartseeker Moth
+i(205018, 3520);	-- Jade Skitterbug
 i(205116, 3534);	-- Jerrie
+i(205009, 3515);	-- Karrit
+i(205166, 3556);	-- Kromos
+i(205013, 3518);	-- Lettuce
+i(205021, 3521);	-- Lord Stantley
+i(205153, 3547);	-- Mikah
+i(205162, 3553);	-- Nelthara
+i(205937, 3578);	-- Newsy
+i(205149, 3543);	-- Ravenous Shalewing
+i(205160, 3552);	-- Rithro
 i(205122, 3539);	-- Roseshell
 i(205053, 3531);	-- Rusty
-i(205004, 3513);	-- Azure Swoglet
-i(205008, 3514);	-- Emerald Swoglet
-i(205009, 3515);	-- Karrit
-i(205010, 3516);	-- Crimson Swoglet
-i(205011, 3517);	-- Bronze Swoglet
-i(205013, 3518);	-- Lettuce
-i(205017, 3519);	-- Byrn
-i(205018, 3520);	-- Jade Skitterbug
-i(205021, 3521);	-- Lord Stantley
+i(205151, 3545);	-- Salverun
 i(205023, 3522);	-- Savage Lobstrok
-i(205024, 3523);	-- Cheddar
-i(205032, 3525);	-- Bestial Lurker
-i(205035, 3526);	-- Snapjaw Lurker
-i(205037, 3527);	-- Void Lurker
-i(205148, 3542);	-- Dread Shalewing
-i(205149, 3543);	-- Ravenous Shalewing
-i(205150, 3544);	-- Shalewing Devourer
-i(205151, 3545);	-- Salverun \\ Jyfaar
-i(205153, 3547);	-- Mikah
-i(205156, 3549);	-- Heartseeker Moth
-i(205157, 3550);	-- Undermoth
-i(205160, 3552);	-- Rithro
-i(205162, 3553);	-- Nelthara
 i(205164, 3554);	-- Senega
-i(205165, 3555);	-- Axel
-i(205166, 3556);	-- Kromos
-i(205937, 3578);	-- Newsy
-i(206018, 3580);	-- Baa'lial
-n(204692, 3558);	-- Murrey [Trainer?]
-n(204694, 3559);	-- Clawz [Trainer?]
-n(204695, 3560);	-- Bassalt [Trainer?]
-n(204795, 3565);	-- Fethres [Trainer]
-n(204796, 3566);	-- Beeks [Trainer]
-n(204797, 3567);	-- Talons [Trainer]
-n(204929, 3568);	-- Dustie [Trainer]
-n(204930, 3569);	-- Tempe [Trainer]
-n(204933, 3570);	-- Swoggy [Trainer]
-n(204936, 3571);	-- Brul'dan [Trainer]
-n(204938, 3572);	-- Lifft [Trainer]
-n(204939, 3573);	-- Swole [Trainer]
+i(205150, 3544);	-- Shalewing Devourer
+i(205035, 3526);	-- Snapjaw Lurker
+i(205157, 3550);	-- Undermoth
+i(205037, 3527);	-- Void Lurker
 
 -- #if ANYCLASSIC
 -----------------

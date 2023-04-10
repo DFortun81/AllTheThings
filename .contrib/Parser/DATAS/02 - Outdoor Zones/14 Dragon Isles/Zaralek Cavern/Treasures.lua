@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			i(205339),	-- Formula: Enchanted Wyrm's Shadowflame Crest (RECIPE!)
 			i(205340),	-- Formula: Enchanted Aspect's Shadowflame Crest (RECIPE!)
 
-
+			i(205418),	-- Blazing Shadowflame Cinder (TOY!) [Blazing Shadowflame Chest]
 			i(204849, {	-- Ratcipe: Charitable Cheddar (RECIPE!)
 				["cost"] = { { "i", 204872, 30 }, }, 	-- 30x Ripped Recipe Scrap
 			}),

@@ -967,6 +967,79 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		pvp(i(201792)),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
 		i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 	}),
+	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
+		i(203338),	-- Winding Slitherdrake: Antler Horns
+		i(203305),	-- Winding Slitherdrake: Armor
+		i(203322),	-- Winding Slitherdrake: Blonde Hair
+		i(203300),	-- Winding Slitherdrake: Blue and Silver Armor (DM!)
+		i(203350),	-- Winding Slitherdrake: Blue Scales
+		i(203351),	-- Winding Slitherdrake: Bronze Scales
+		i(203323),	-- Winding Slitherdrake: Brown Hair (DM!)
+		i(203312),	-- Winding Slitherdrake: Cluster Chin Horn
+		i(203331),	-- Winding Slitherdrake: Cluster Horns
+		i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns
+		i(203321),	-- Winding Slitherdrake: Curled Cheek Horn
+		i(203334),	-- Winding Slitherdrake: Curled Horns
+		i(203346),	-- Winding Slitherdrake: Curled Nose (DM!)
+		i(203314), 	-- Winding Slitherdrake: Curved Chin Horn (DM!)
+		i(203335),	-- Winding Slitherdrake: Curved Horns (DM!)
+		i(203349),	-- Winding Slitherdrake: Curved Nose Horn
+		i(203320),	-- Winding Slitherdrake: Ears
+		i(203319),	-- Winding Slitherdrake: Finned Cheek
+		i(203361),	-- Winding Slitherdrake: Finned Tip Tail
+		i(203310),	-- Winding Slitherdrake: Grand Chin Thorn
+		i(203299),	-- Winding Slitherdrake: Green and Bronze Armor
+		i(203352),	-- Winding Slitherdrake: Green Scales
+		i(203308),	-- Winding Slitherdrake: Hairy Brow (DM!)
+		i(203311),	-- Winding Slitherdrake: Hairy Chin
+		i(203318),	-- Winding Slitherdrake: Hairy Crest
+		i(203343),	-- Winding Slitherdrake: Hairy Jaw
+		i(203362),	-- Winding Slitherdrake: Hairy Tail (DM!)
+		i(203365),	-- Winding Slitherdrake: Hairy Throat (DM!)
+		i(203329),	-- Winding Slitherdrake: Heavy Horns
+		i(205341),	-- Winding Slitherdrake: Heavy Scales
+		i(203326),	-- Winding Slitherdrake: Helm
+		i(203306),	-- Winding Slitherdrake: Horned Brow
+		i(203339),	-- Winding Slitherdrake: Impaler Horns
+		i(203316),	-- Winding Slitherdrake: Large Finned Crest (DM!)
+		i(203360),	-- Winding Slitherdrake: Large Finned Tail
+		i(203363),	-- Winding Slitherdrake: Large Finned Throat
+		i(203347),	-- Winding Slitherdrake: Large Spiked Nose (DM!)
+		i(203301),	-- Winding Slitherdrake: Light Blue and Copper Armor
+		i(203309),	-- Winding Slitherdrake: Long Chin Horn
+		i(203341),	-- Winding Slitherdrake: Long Jaw Horns (DM!)
+		i(203336),	-- Winding Slitherdrake: Paired Horns
+		i(203307),	-- Winding Slitherdrake: Plated Brow
+		i(203348),	-- Winding Slitherdrake: Pointed Nose
+		i(203302),	-- Winding Slitherdrake: Purple and Silver Armor
+		i(203303),	-- Winding Slitherdrake: Red and Gold Armor
+		i(203325),	-- Winding Slitherdrake: Red Hair
+		i(203353),	-- Winding Slitherdrake: Red Scales
+		i(203327),	-- Winding Slitherdrake: Tan Horns (DM!)
+		i(203337),	-- Winding Slitherdrake: Thorn Horns
+		i(203342),	-- Winding Slitherdrake: Triple Jaw Horns
+		i(203359),	-- Winding Slitherdrake: Shark Finned Tail
+		i(203333),	-- Winding Slitherdrake: Short Horns
+		i(203344),	-- Winding Slitherdrake: Single Jaw Horn
+		i(203317),	-- Winding Slitherdrake: Small Finned Crest
+		i(203358),	-- Winding Slitherdrake: Small Finned Tail (DM!)
+		i(203364),	-- Winding Slitherdrake: Small Finned Throat (DM!)
+		i(203315),	-- Winding Slitherdrake: Small Spiked Crest
+		i(203313),	-- Winding Slitherdrake: Spiked Chin
+		i(203332),	-- Winding Slitherdrake: Spiked Horns
+		i(203357),	-- Winding Slitherdrake: Spiked Tail
+		i(203345),	-- Winding Slitherdrake: Split Jaw Horns
+		i(203330),	-- Winding Slitherdrake: Swept Horns (DM!)
+		i(203298),	-- Winding Slitherdrake: White and Gold Armor
+		i(203324),	-- Winding Slitherdrake: White Hair (DM!)
+		i(203328),	-- Winding Slitherdrake: White Horns
+		i(203354),	-- Winding Slitherdrake: White Scales
+		i(203304),	-- Winding Slitherdrake: Yellow and Silver Armor (DM!)
+		i(203355),	-- Winding Slitherdrake: Yellow Scales
+		-- Special --
+		i(205876),	-- Highland Drake: Embodiment of the Hellforged
+		i(205865),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
+	})),
 })));
 
 root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {

@@ -78,6 +78,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75558,	-- 75335
 				["g"] = {
 					bo(75336, true),
+					i(205796),	-- Molten Lava Pack (TOY!)
 				},
 			}),
 			n(203625, {	-- Karokta
@@ -85,6 +86,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75557,	-- 75333
 				["g"] = {
 					bo(75334, true),
+					i(205203),	-- Cobalt Shalewing (MOUNT!)
 					i(205292),	-- Karokta's Mane
 					i(203358),	-- Winding Slitherdrake: Small Finned Tail (DM!)
 				},
