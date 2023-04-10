@@ -3,6 +3,15 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(ACHIEVEMENTS, {
+		ach(17560, {    -- Ancient Stones of the Dragon Isles
+			["sym"] = {{"meta_achievement",
+				17561,    -- Ancient Stones of the Waking Shores
+				17562,    -- Ancient Stones of the Ohn'ahran Plains
+				17563,    -- Ancient Stones of the Azure Span
+				17564,    -- Ancient Stones of Thaldraszus
+			}},
+			["timeline"] = { ADDED_10_1_0 },
+		}),
 		petbattle(ach(16464, {	-- Battle on the Dragon Isles
 			crit(1, {	-- Eye of the Stormling
 				["_quests"] = { 71206 },

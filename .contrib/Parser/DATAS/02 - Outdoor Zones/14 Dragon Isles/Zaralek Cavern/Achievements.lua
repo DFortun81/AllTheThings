@@ -4,6 +4,17 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(ACHIEVEMENTS, {
+			ach(17567, {    -- Ancient Stones of Zaralek
+				crit(1, {    -- Demanding Perfection
+					["coord"] = { 43.3, 23.7, ZARALEK_CAVERN },
+				}),
+				crit(2, {    -- Binding Oaths
+					["coord"] = { 61.2, 71.8, ZARALEK_CAVERN },
+				}),
+				crit(3, {    -- Primal Power
+					["coord"] = { 47.4, 48.6, ZARALEK_CAVERN },
+				}),
+			}),
 			ach(17517, {	-- Dragon Glyphs: Aberrus Approach
 				["coord"] = { 48.4, 7.0, ZARALEK_CAVERN },
 			}),
@@ -28,6 +39,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			ach(17513, {	-- Dragon Glyphs: Zaqali Caldera
 				["coord"] = { 30.5, 45.3, ZARALEK_CAVERN },
 			}),
+			ach(17741, {	-- Slow and Steady Wins the Race
+				crit(1, { 	-- Bashful wins
+					-- Confirm: ["sourceQuests"] = { 75662 },	-- A Race To The Finish
+				}),
+				crit(2, {	-- Tricky wins
+					-- TODO: ["sourceQuests"] = {  },	-- A Race To The Finish
+				}),
+				crit(3, {	-- Brulee wins
+					-- Confirm: ["sourceQuests"] = { 75707 },	-- A Race To The Finish
+				}),
+				crit(4, {	-- Roggy wins
+					-- TODO: ["sourceQuests"] = {  },	-- A Race To The Finish
+				}),
+				i(205231),	-- Roggy (PET!)
+			}),
 			pvp(ach(17851)),	-- Tour of Duty: Zaralek Cavern
 			ach(18150, {	-- Zaralek Caverns Glyph Hunter
 				["sym"] = {{"meta_achievement",
@@ -47,7 +73,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				i(193377),	-- Gerald (PET!)
 			})),
 			ach(17739),	-- Embers of Neltharion
-			ach(17741),	-- Slow and Steady Wins the Race
 			ach(17781),	-- The Smell of Money
 			ach(17766),	-- Explore Zaralek Cavern
 			ach(17783),	-- Adventurer of Zaralek Cavern
@@ -65,7 +90,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			ach(17916),	-- Magic Battler of Zaralek Cavern
 			ach(17917),	-- Mechanical Battler of Zaralek Cavern
 			ach(17918),	-- Undead Battler of Zaralek Caverm
-			ach(18100),	-- Cavern Clawbbering
+			ach(18100, {	-- Cavern Clawbbering
+				i(205904),	-- Vibrant Clacking Claw (TOY!)
+			}),
 		}),
 	}),
 })));

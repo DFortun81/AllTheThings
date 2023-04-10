@@ -3687,7 +3687,7 @@ _.Zones =
 						n(87063, {	-- Joao Calhandro <Inscription Recipes>
 							["coord"] = { 62.0, 33.5, STORMSHIELD },
 							["g"] = {
-								i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
+								i(111923, {	-- Secret of Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 									["filterID"] = MISC,
 									["g"] = {
 										i(120136),		-- Recipe: Secrets of Draenor Inscription

@@ -2,37 +2,6 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 local NOBLEGARDEN_VENDOR_GROUPS = {
-	-- Mounts
-	i(72145, {	-- Swift Springstrider (MOUNT!)
-		["timeline"] = { "added 4.3.0.15005" },
-		["cost"] = { { "i", 44791, 500 } },	-- 500x Noblegarden Chocolate
-	}),
-	-- Pets
-	i(141532, {	-- Noblegarden Bunny
-		["timeline"] = { "added 7.1.0.22731" },
-		["cost"] = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
-	}),
-	i(116258, {	-- Mystical Spring Bouquet
-		["timeline"] = { "added 6.0.1.18566" },
-		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
-	}),
-	i(44794, {	-- Spring Rabbit's Foot
-		["timeline"] = { "added 3.1.0.9733" },
-		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
-	}),
-	-- Toys
-	i(204675, {	-- A Drake's Big Basket of Eggs (TOY!)
-		["timeline"] = { ADDED_10_0_7 },
-	--	["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
-	}),
-	i(165802, {	-- Noble Gardener's Hearthstone (TOY!)
-		["timeline"] = { "added 8.1.5.29701" },
-		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
-	}),
-	i(188694, {	-- Spring Florist's Pouch (TOY!)
-		["timeline"] = { ADDED_9_1_5 },
-		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
-	}),
 	-- Appearances
 	i(74282, {	-- Black Spring Circlet
 		["timeline"] = { "added 4.3.0.15005" },
@@ -73,6 +42,11 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["timeline"] = { "added 8.1.5.29701" },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
+	-- Mounts
+	i(72145, {	-- Swift Springstrider (MOUNT!)
+		["timeline"] = { "added 4.3.0.15005" },
+		["cost"] = { { "i", 44791, 500 } },	-- 500x Noblegarden Chocolate
+	}),
 	-- Other
 	i(44792, {	-- Blossoming Branch
 		["timeline"] = { "added 3.1.0.9733" },
@@ -83,10 +57,37 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(44793, {	-- Tome of Polymorph: Rabbit
+		["recipeID"] = 61721,	-- Polymorph (Rabbit)
 		["timeline"] = { "added 3.1.0.9733" },
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 		["classes"] = { MAGE },
 		["f"] = RECIPES,
+	}),
+	-- Pets
+	i(141532, {	-- Noblegarden Bunny
+		["timeline"] = { "added 7.1.0.22731" },
+		["cost"] = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
+	}),
+	i(116258, {	-- Mystical Spring Bouquet
+		["timeline"] = { "added 6.0.1.18566" },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+	}),
+	i(44794, {	-- Spring Rabbit's Foot
+		["timeline"] = { "added 3.1.0.9733" },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+	}),
+	-- Toys
+	i(204675, {	-- A Drake's Big Basket of Eggs (TOY!)
+		["timeline"] = { ADDED_10_0_7 },
+		["cost"] = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
+	}),
+	i(165802, {	-- Noble Gardener's Hearthstone (TOY!)
+		["timeline"] = { "added 8.1.5.29701" },
+		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
+	}),
+	i(188694, {	-- Spring Florist's Pouch (TOY!)
+		["timeline"] = { ADDED_9_1_5 },
+		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 };
 root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
@@ -95,9 +96,12 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 	-- #else
 	["holidayID"] = 235477,
 	-- #endif
-	-- #if AFTER WRATH
-	["description"] = "Start: 04/18 at 10:00 AM\nEnd: 04/25 at 10:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 18, 4, 25); end]],
+	-- #if NOT ANYCLASSIC
+	["description"] = "Start: 04/10 at 10:00 AM\nEnd: 04/17 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 10, 4, 17); end]],
+	-- #elseif AFTER WRATH
+	["description"] = "Start: 04/09 at 12:00 AM\nEnd: 04/16 at 12:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 9, 4, 16); end]],
 	-- #else
 	["description"] = "Start: 04/17 at 12:00 AM\nEnd: 04/18 at 12:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. NOBLEGARDEN .. [[, 4, 17, 4, 18); end]],
@@ -147,7 +151,9 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 					["timeline"] = { "added 4.3.0.15005" },
 				}),
 
-				i(19028),	-- Elegant Dress
+				i(19028, {	-- Elegant Dress
+					["timeline"] = { "removed 7.2.5.24163" },
+				}),
 				i(6835, {	-- Black Tuxedo Pants
 					["timeline"] = { "removed 7.2.5.24163" },
 				}),
@@ -233,19 +239,19 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 				["provider"] = { "i", 44800 },	-- Spring Robes
 				-- #endif
 				["groups"] = {
-					crit(1, {	-- The Badlands
-						["maps"] = { BADLANDS },
-					}),
-					crit(2, {	-- Desolace
+					crit(9139, {	-- Desolace
 						["maps"] = { DESOLACE },
 					}),
-					crit(3, {	-- Silithus
+					crit(9142, {	-- Silithus
 						["maps"] = { SILITHUS },
 					}),
-					crit(4, {	-- Tanaris
+					crit(9140, {	-- Tanaris
 						["maps"] = { TANARIS },
 					}),
-					crit(5, {	-- Thousand Needles
+					crit(9138, {	-- The Badlands
+						["maps"] = { BADLANDS },
+					}),
+					crit(9141, {	-- Thousand Needles
 						["maps"] = { THOUSAND_NEEDLES },
 					}),
 				},
@@ -265,16 +271,16 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 				["provider"] = { "n", 32791 },	-- Spring Rabbit
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
-					crit(1, {	-- Azure Watch
+					crit(9121, {	-- Azure Watch
 						["maps"] = { AZUREMYST_ISLE },
 					}),
-					crit(2, {	-- Dolanaar
+					crit(9199, {	-- Dolanaar
 						["maps"] = { TELDRASSIL },
 					}),
-					crit(3, {	-- Goldshire
+					crit(9200, {	-- Goldshire
 						["maps"] = { ELWYNN_FOREST },
 					}),
-					crit(4, {	-- Kharanos
+					crit(9201, {	-- Kharanos
 						["maps"] = { DUN_MOROGH },
 					}),
 				}),
@@ -283,16 +289,16 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 				["provider"] = { "n", 32791 },	-- Spring Rabbit
 				["races"] = HORDE_ONLY,
 				["groups"] = bubbleDown({ ["races"] = HORDE_ONLY }, {
-					crit(1, {	-- Bloodhoof Village
+					crit(9202, {	-- Bloodhoof Village
 						["maps"] = { MULGORE },	-- Bloodhoof Village
 					}),
-					crit(2, {	-- Brill
+					crit(9203, {	-- Brill
 						["maps"] = { TIRISFAL_GLADES },
 					}),
-					crit(3, {	-- Falconwing Square
+					crit(9204, {	-- Falconwing Square
 						["maps"] = { EVERSONG_WOODS },
 					}),
-					crit(4, {	-- Razor Hill
+					crit(9205, {	-- Razor Hill
 						["maps"] = { DUROTAR },
 					}),
 				}),
@@ -309,20 +315,7 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 			}),
 			ach(2422, {	-- Shake Your Bunny-Maker
 				["provider"] = { "i", 45073 },	-- Spring Flowers
-				["groups"] = {
-					crit(1),	-- Blood Elf
-					crit(2),	-- Draenei
-					crit(3),	-- Dwarf
-					crit(4),	-- Gnome
-					crit(5),	-- Goblin
-					crit(6),	-- Human
-					crit(7),	-- Night Elf
-					crit(8),	-- Orc
-					crit(9),	-- Tauren
-					crit(10),	-- Troll
-					crit(11),	-- Undead
-					crit(12),	-- Worgen
-				},
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(248, {	-- Sunday's Finest
 				["cost"] = {
@@ -336,6 +329,22 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 			}),
 		}),
 		n(QUESTS, {
+			q(74120, {	-- A Spring Awakening [Alliance]
+				["qg"] = 199261,	-- Holiday Enthusiast
+				["coord"] = { 31.6, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_7 },
+				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
+				["isYearly"] = true,
+			}),
+			q(74875, {	-- A Spring Awakening [Horde]
+				["qg"] = 199261,	-- Holiday Enthusiast
+				["coord"] = { 31.6, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_7 },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+				["isYearly"] = true,
+			}),
 			q(13502, {	-- A Tisket, a Tasket, a Noblegarden Basket [Alliance]
 				["qg"] = 32836,	-- Noblegarden Vendor
 				["coords"] = {
@@ -573,14 +582,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(235477, {	-- Noblegarden
 		-- Classic Stuff
 		i(6834),	-- Black Tuxedo
-		n(QUESTS, {
-			q(73192, {	-- PH [DNT]
-				["timeline"] = { "created 10.0.5" },
-			}),
-			q(74120, {	-- A Spring Awakening
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "created 10.0.5" },
-			}),
-		}),
 	}),
 }));

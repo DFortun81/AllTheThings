@@ -111,6 +111,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["_npcs"] = { 196350 },	-- Old Stormhide
 				}),
 			}),
+			ach(17562, {    -- Ancient Stones of the Ohn'ahran Plains
+				["timeline"] = { ADDED_10_1_0 },
+				["g"] = {
+					crit(1, {    -- The Gnoll Wars
+						["coord"] = { 43.5, 56.5, OHNAHRAN_PLAINS },
+					}),
+					crit(2, {    -- Your Dreamer
+						["coord"] = { 24.7, 65.9, OHNAHRAN_PLAINS },
+					}),
+					crit(3, {    -- Dreams in Emerald
+						["coord"] = { 32.3, 51.3, OHNAHRAN_PLAINS },
+					}),
+					crit(4, {    -- The First Kurnal
+						["coord"] = { 67.0, 43.7, OHNAHRAN_PLAINS },
+					}),
+					crit(5, {    -- Wind, Wood, Water
+						["coord"] = { 38.6, 66.7, OHNAHRAN_PLAINS },
+					}),
+				},
+			}),
 			ach(16061, {	-- Dragon Glyphs: Dragonsprings Summit
 				["coord"] = { 84.1, 77.4, OHNAHRAN_PLAINS },
 			}),

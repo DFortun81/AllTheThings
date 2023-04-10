@@ -847,24 +847,34 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),
-		prof(COOKING, sharedData({
+		prof(COOKING, bubbleDown({
 			["requireSkill"] = COOKING,
 		},{
-			q(72251, {	-- Dragon Isles Cooking
-				["sourceQuests"] = {
-					67700,	-- To The Dragon Isles! [A]
-					65444,	-- To the Dragon Isles! [H]
-				},
-				["provider"] = { "n", 193121 },	-- Head Chef Stacks
-				["coord"] = { 47.1, 82.7, THE_WAKING_SHORES },
+			n(ACHIEVEMENTS, {
+				ach(17736, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- The Gift of Cheese
+					["cost"] = { { "i", 204848, 50 } },	-- 50x Charitable Cheddar
+					["g"] = {
+						i(204894),	-- Roland (PET!)
+					},
+				})),
 			}),
-			q(72250, {	-- Dragon Isles Cooking
-				["sourceQuests"] = {
-					67700,	-- To The Dragon Isles! [A]
-					65444,	-- To the Dragon Isles! [H]
-				},
-				["provider"] = { "n", 198094 },	-- Head Chef Stacks
-				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
+			n(QUESTS, {
+				q(72251, {	-- Dragon Isles Cooking
+					["sourceQuests"] = {
+						67700,	-- To The Dragon Isles! [A]
+						65444,	-- To the Dragon Isles! [H]
+					},
+					["provider"] = { "n", 193121 },	-- Head Chef Stacks
+					["coord"] = { 47.1, 82.7, THE_WAKING_SHORES },
+				}),
+				q(72250, {	-- Dragon Isles Cooking
+					["sourceQuests"] = {
+						67700,	-- To The Dragon Isles! [A]
+						65444,	-- To the Dragon Isles! [H]
+					},
+					["provider"] = { "n", 198094 },	-- Head Chef Stacks
+					["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
+				}),
 			}),
 		})),
 		prof(ENCHANTING, sharedData({

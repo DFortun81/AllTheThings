@@ -32,12 +32,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			n(199605, {	-- Evantkis <Token Exchange>
 				["coord"] = { 58.6, 57.6, VALDRAKKEN },
 				["g"] = {
-					i(202122, {	-- Primal Chaos Cluster
+					i(202122, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Primal Chaos Cluster
 						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT, 3 }, },
 						["g"] = {
-							i(190454),	-- Primal Chaos
+							i(190454),	-- Depleted Primal Chaos
 						},
-					}),
+					})),
 					i(202152, {	-- Storm-Charged Manipulator
 						["cost"] = { { "i", ASPECTS_TOKEN_OF_MERIT, 6 }, },
 					}),
@@ -84,13 +84,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			n(194057, {	-- Rabul
 				["coord"] = { 35.4, 59.1, VALDRAKKEN },
 				["g"] = {
-					i(204339, {	-- Satchel of Coalescing Chaos
-						["cost"] = { { "i", 190454, 80 }, },	-- 80x Primal Chaos
-						["timeline"] = { ADDED_10_0_5 },
+					i(204339, bubbleDown({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 } }, {	-- Satchel of Coalescing Chaos
+						["cost"] = { { "i", 190454, 80 }, },	-- 80x Depleted Primal Chaos
 						["g"] = {
-							i(190454),	-- Primal Chaos
+							i(190454),	-- Depleted Primal Chaos
 						},
-					}),
+					})),
 					i(198802),	-- Artisan's Consortium Tabard
 					i(198615),	-- Pentagold Seal
 					-- Dusty

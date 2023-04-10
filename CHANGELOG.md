@@ -1,30 +1,32 @@
 # AllTheThings
 
-## [DF-3.3.2](https://github.com/DFortun81/AllTheThings/tree/DF-3.3.2) (2023-04-02)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.3.1...DF-3.3.2) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.3.3](https://github.com/DFortun81/AllTheThings/tree/DF-3.3.3) (2023-04-09)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.3.2...DF-3.3.3) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 ### Promotions
 
-Earn the D.I.S.C.O. Toy 🕺 from March 21st, 10:00 a.m. PDT until April 2nd, 23:59 p.m. PDT. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23923488/dragonflight-twitch-drops-earn-the-disco-toy).
-
 Earn the Big Battle Bear 🐻 through Prime Gaming until April 27, 2023. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23922954).
+
+### Logic changes
+
+- Added an event to track when tooltips need to be refreshed to hopefully make ATT tooltips more responsive when server data is retrieved while the tooltip is already displayed (please report if you notice any abnormal/detrimental behavior with tooltips).
 
 ### Logic fixes
 
-- Fixed Lua error (that broke Settings) when you have custom events in your Calendar. Thanks, @Kocki0810!
-- Fixed a Faction/Class filtering issue for dynamically-created Achievement Criteria groups.
-- Fixed a logic issue where the tooltip of a Thing would not show any 'Contains' content if the Thing had a single source under a saved Quest (i.e. Lightning Steel Ingot).
+- Internal rewrite of Settings which fixed Account-Wide toggles when not in Debug/Account Modes. This will also make it easier for us to add new settings (Drakewatcher Manuscripts are _almost_ ready, Hidden Quest Triggers are less ready).
+- Fixed some internals to fix an issue where under Catalyst it would only fill LFR with class requirement and then skip the same class in other difficulties.
+- Fixed a tooltip Lua bug for Items that Blizzard has assigned the 'Adventurer' class (whatever that is).
 
 ### Data additions/fixes
 
-- Trading Post rewards for April 2023.
-- Added new Worgen monk quests (what? yes!).
-- Fixes to Forbidden Reach content.
-- Fixes to new Zul'Gurub content.
-- Added many more First Craft quests for all crazy people who care about them.
-- Some of the First Craft quests will be localized now. WIP.
-- Fixed various quest lines throughout different expansions (leveraging new internal tech).
-- Argent Tournament Daily quest are no longer forcibly hidden (even in Debug mode) until picked up.
-- Sorted more Common (White) items.
-- Mostly cleaned up Achievements>Quests>Kalimdor.
+- Added Human and Orc heritage quest lines, fixed some other heritage quest lines.
+- Vaults and other 10.0.7 fixes and additions.
+- New Zul'Gurub adjustments
+- Various Rare fixes.
+- Added Waveborne Diplomat’s Regalia.
+- Trading Post will be organized as follows from now on: Available rewards for this month and Unavailable rewards from previous months that should return in future months.
+- Added Dragonflight Flight Points.
+- Various quest fixes here and there.
+- Cleaned up lots of Achievements to adhere to current standard. Mainly Quest and Pet Battle categories.
+- Reorganized Secrets category.
 - Other fixes.

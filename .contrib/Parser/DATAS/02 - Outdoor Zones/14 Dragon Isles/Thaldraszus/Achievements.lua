@@ -72,6 +72,32 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["_npcs"] = { 193664 },	-- Ancient Protector
 				}),
 			}),
+			ach(17564, {    -- Ancient Stones of Thaldraszus
+				["timeline"] = { ADDED_10_1_0 },
+				["g"] = {
+					crit(1, {    -- Mighty Ducks
+						["coord"] = { 42.8, 70.4, THALDRASZUS },
+					}),
+					crit(2, {    -- A Timely Message
+						["coord"] = { 60.1, 85.0, THALDRASZUS },
+					}),
+					crit(3, {    -- Keeper's Blessing
+						["coord"] = { 58.2, 58.1, THALDRASZUS },
+					}),
+					crit(4, {    -- Guardian Wings
+						["coord"] = { 52.4, 38.8, THALDRASZUS },
+					}),
+					crit(5, {    -- Together Bound
+						["coord"] = { 58.4, 67.8, THALDRASZUS },
+					}),
+					crit(6, {    -- Caretaker's Notes
+						["coord"] = { 62.4, 15.9, THALDRASZUS },
+					}),
+					crit(7, {    -- Valdrakken
+						["coord"] = { 57.1, 81.4, VALDRAKKEN },
+					}),
+				},
+			}),
 			ach(16104, {	-- Dragon Glyphs: Algeth'ar Academy
 				["coord"] = { 62.4, 40.4, THALDRASZUS },
 			}),

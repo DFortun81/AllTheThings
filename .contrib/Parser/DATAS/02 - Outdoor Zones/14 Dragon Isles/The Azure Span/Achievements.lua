@@ -108,6 +108,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["_npcs"] = { 197411 },	-- Astray Splasher <Lunker>
 				}),
 			}),
+			ach(17563, {    -- Ancient Stones of the Azure Span
+				["timeline"] = { ADDED_10_1_0 },
+				["g"] = {
+					crit(1, {    -- Im'bunata's Blessing
+						["coord"] = { 56.7, 70.4, THE_AZURE_SPAN },
+					}),
+					crit(2, {    -- A Solid Foundation
+						["coord"] = { 8.0, 45.6, THE_AZURE_SPAN },
+					}),
+					crit(3, {    -- Attention: Immediate Evacuation
+						["coord"] = { 66.4, 61.1, THE_AZURE_SPAN },
+					}),
+					crit(4, {    -- The Vow
+						["coord"] = { 60.3, 49.7, THE_AZURE_SPAN },
+					}),
+					crit(5, {    -- Vakthros Maintenance
+						["coord"] = { 77.4, 31.1, THE_AZURE_SPAN},
+					}),
+				},
+			}),
 			ach(16577, {	-- Azure Span Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",

@@ -127,7 +127,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					}),
 
 						-- The Forbidden Reach --
-
 					q(73080, {	-- Dragonrider Racing - Aerie Chasm Cruise
 						["coord"] = { 63.3, 51.8, THE_FORBIDDEN_REACH },
 						["timeline"] = { ADDED_10_0_7 },

@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			n(SPECIAL, {
 				i(204073, {	-- Ratcipe: Deviously Deviled Eggs (RECIPE!)
-					["cost"] = { { "i", 204340, 30 }, }, 	-- 30xTorn Recipe Scrap
+					["cost"] = { { "i", 204340, 30 }, }, 	-- 30x Torn Recipe Scrap
 				}),
 				i(202252, {	-- Recipe Rat
 					["description"] = "Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotatiating.\nIt is also possible to continue picking up and using the rat every 5 minutes while within the Vault to obtain scraps without using cheese.",
@@ -434,6 +434,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 25.7, 51.1, THE_FORBIDDEN_REACH },
 							["questID"] = 74969,
 						}),
+						o(389546, {	-- Reagent Pot
+							["coord"] = { 29.8, 58.4, THE_FORBIDDEN_REACH },
+							["questID"] = 75052,
+						}),
 						o(385398, {	-- Searing Chest
 							["questID"] = 72889,
 						}),
@@ -444,10 +448,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 75499,
 						}),
 						o(398788, {	-- Spun Webs
-							["questID"] = 75501,
+							["questID"] = 75500,
 						}),
 						o(398789, {	-- Spun Webs
-							["questID"] = 75503,
+							["questID"] = 75501,
 						}),
 						o(398790, {	-- Spun Webs
 							["questID"] = 75503,
@@ -544,7 +548,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 26.5, 49.3, THE_FORBIDDEN_REACH },
 							["questID"] = 73068,
 						}),
-						o(393958, { -- Gold Pile
+						o(393957, { -- Gold Pile
 							["questID"] = 75254,
 						}),
 						o(393958, {	-- Gold Pile
@@ -1112,6 +1116,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				i(204020),	-- Wild Spirit Stone
 				i(204030),	-- Wind Sculpted Stone
 				-- Drops from any chest
+				i(193854),	-- Berylmane (PET!)
 				i(193835),	-- Brightfeather (PET!)
 				i(193363),	-- Bunbo (PET!)
 				i(204687),	-- Obsidian Battle Horn (TOY!)

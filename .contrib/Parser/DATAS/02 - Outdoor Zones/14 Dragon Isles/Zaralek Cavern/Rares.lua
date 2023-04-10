@@ -19,6 +19,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75547,	-- 75270
 				["g"] = {
 					bo(75271, true),
+					i(205154),	-- Aquapo (PET!)
 				},
 			}),
 			n(203621, {	-- Brulsef the Stronk
@@ -77,6 +78,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75558,	-- 75335
 				["g"] = {
 					bo(75336, true),
+					i(205796),	-- Molten Lava Pack (TOY!)
 				},
 			}),
 			n(203625, {	-- Karokta
@@ -84,6 +86,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75557,	-- 75333
 				["g"] = {
 					bo(75334, true),
+					i(205203),	-- Cobalt Shalewing (MOUNT!)
 					i(205292),	-- Karokta's Mane
 					i(203358),	-- Winding Slitherdrake: Small Finned Tail (DM!)
 				},
@@ -107,6 +110,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75545,	-- 75266
 				["g"] = {
 					bo(75267, true),
+					i(205147),	-- Ridged Shalewing	(PET!)
+					i(205152),	-- Skaarn (PET!)
 				},
 			}),
 			n(200111, {	-- Magmanesha
@@ -128,7 +133,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75563,	-- 75348
 				["g"] = {
 					bo(75349, true),
-					i(205463),	-- Skornace's Molten Pocket (TOY!)
+					i(205463),	-- Skornace's Lava Ball (TOY!)
 				},
 			}),
 			n(203480, {	-- Spinmarrow
@@ -151,6 +156,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75553,
 				["g"] = {
 					bo(75298, true),
+					i(205159),	-- Teardrop Moth (PET!)
 				},
 			}),
 			n(201029, {	-- Viridian King

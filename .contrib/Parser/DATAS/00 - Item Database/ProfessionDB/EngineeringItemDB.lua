@@ -232,3 +232,17 @@ i(202231, 397861);	-- Remarkable True Iron Trigger
 -- PATCH 10.0.7 --
 ------------------
 i(203424, 400810);	-- Gnomish Voicebox
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+-- ITEM --
+i(205282, 409351);	-- Obsidian Combatant's Cloth Goggles
+i(205283, 409353);	-- Obsidian Combatant's Leather Goggles
+i(205284, 409355);	-- Obsidian Combatant's Mail Goggles
+i(205285, 409356);	-- Obsidian Combatant's Plate Goggles
+i(205178, 408230);	-- Mallard Mortar
+i(204844, 407005);	-- Polarity Bomb
+i(205036, 408052);	-- Tinker: Shadowflame Rockets
+-- DISCOVERY --
+i(0, 407006);	-- EZ-Thro Polarity Bomb

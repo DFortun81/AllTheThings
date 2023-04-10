@@ -2131,7 +2131,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(19447), 	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 						i(19446), 	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
-						i(19442), 	-- Formula: Powerful Anti-Venom
+						i(19442), 	-- Recipe: Powerful Anti-Venom
 						i(19216), 	-- Pattern: Argent Boots
 						i(19217), 	-- Pattern: Argent Shoulders
 						i(19328), 	-- Pattern: Dawn Treaders

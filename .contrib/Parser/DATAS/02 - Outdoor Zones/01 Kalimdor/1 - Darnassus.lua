@@ -38,19 +38,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = FISHING,
 					["groups"] = {
-						crit(1, { -- Happy as a Clam Digger
+						crit(1, {	-- Happy as a Clam Digger
 							["_quests"] = { 29321 },
 						}),
-						crit(2, { -- Stocking Up
+						crit(2, {	-- Stocking Up
 							["_quests"] = { 29323 },
 						}),
-						crit(3, { -- The Sister's Pendant
+						crit(3, {	-- The Sister's Pendant
 							["_quests"] = { 29324 },
 						}),
-						crit(4, { -- A Slippery Snack
+						crit(4, {	-- A Slippery Snack
 							["_quests"] = { 29325 },
 						}),
-						crit(5, { -- An Old Favorite
+						crit(5, {	-- An Old Favorite
 							["_quests"] = { 29359 },
 						}),
 					},
@@ -60,19 +60,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						crit(1, { -- The Secret to Perfect Kimchi
+						crit(1, {	-- The Secret to Perfect Kimchi
 							["_quests"] = { 29313 },
 						}),
-						crit(2, { -- Remembering the Ancestors
+						crit(2, {	-- Remembering the Ancestors
 							["_quests"] = { 29314 },
 						}),
-						crit(3, { -- Back to Basics
+						crit(3, {	-- Back to Basics
 							["_quests"] = { 29316 },
 						}),
-						crit(4, { -- Ribs for the Sentinels
+						crit(4, {	-- Ribs for the Sentinels
 							["_quests"] = { 29318 },
 						}),
-						crit(5, { -- Spice Bread Aplenty
+						crit(5, {	-- Spice Bread Aplenty
 							["_quests"] = { 29357 },
 						}),
 					},
@@ -806,7 +806,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Horn of Vorlus
-							["provider"] = { "i", 6805 }, -- Horn of Vorlus
+							["provider"] = { "i", 6805 },	-- Horn of Vorlus
 							["coord"] = { 47.2, 63.6, TELDRASSIL },
 							["cr"] = 6128,	-- Vorlus Vilehoof
 						}),
@@ -846,11 +846,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(67414, {	-- Bag of Shiny Things
 					["provider"] = { "n", 4156 },	-- Astaia
 					["sourceQuests"] = {
-						29325, -- A Slippery Snack
-						29359, -- An Old Favorite
-						29321, -- Happy as a Clam Digger
-						29323, -- Stocking Up
-						29324, -- The Sister's Pendant
+						29325,	-- A Slippery Snack
+						29359,	-- An Old Favorite
+						29321,	-- Happy as a Clam Digger
+						29323,	-- Stocking Up
+						29324,	-- The Sister's Pendant
 					},
 					["description"] = "Fishing Daily Quest Reward",
 					["timeline"] = { "added 4.0.1.12984" },
@@ -888,17 +888,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 2535 },	-- War Staff
 					},
 				}),
-				n(4172, {	-- Anadyia 
+				n(4172, {	-- Anadyia
 					["coord"] = { 54.6, 83.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2617 },    -- Burning Robes
-						{"select", "itemID", 2615 },    -- Chromatic Robe
-						{"select", "itemID", 2613 },    -- Double Stitched Robes
-						{"select", "itemID", 2612 },    -- Plain Robe
-						{"select", "itemID", 2614 },    -- Robe Of Apprenticeship
-						{"select", "itemID", 2616 },    -- Shimmering Silk Robes
-						{"select", "itemID", 2618 },    -- Silver Dress Robes
+						{"select", "itemID", 2617 },	-- Burning Robes
+						{"select", "itemID", 2615 },	-- Chromatic Robe
+						{"select", "itemID", 2613 },	-- Double Stitched Robes
+						{"select", "itemID", 2612 },	-- Plain Robe
+						{"select", "itemID", 2614 },	-- Robe Of Apprenticeship
+						{"select", "itemID", 2616 },	-- Shimmering Silk Robes
+						{"select", "itemID", 2618 },	-- Silver Dress Robes
 					},
 				}),
 				n(4203, {	-- Ariyell Skyshadow
@@ -906,10 +906,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 					-- all done
-						{"select", "itemID", 2025 },	-- bearded axe
-						{"select", "itemID", 15905 },	-- brass knuckles
-						{"select", "itemID", 1198 },	-- claymore
-						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 2025 },	-- Bearded Axe
+						{"select", "itemID", 15905 },	-- Brass Knuckles
+						{"select", "itemID", 1198 },	-- Claymore
+						{"select", "itemID", 2029 },	-- Cleaver
 						{"select", "itemID", 851 },		-- cutlass
 						{"select", "itemID", 922 },		-- dacian falx
 						{"select", "itemID", 927 },		-- double axe
@@ -958,110 +958,110 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				n(4240, {	-- Caynrus     
+				n(4240, {	-- Caynrus
 					["coord"] = { 55.4, 74.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2451 },    -- Crested Heater Shield
-						{"select", "itemID", 1201 },    -- Dull Heater Shield
-						{"select", "itemID", 2448 },    -- Heavy Pavise
-						{"select", "itemID", 2446 },    -- Kite Shield
-						{"select", "itemID", 2445 },    -- Large Metal Shield
-						{"select", "itemID", 17189 },    -- Metal Buckler
-						{"select", "itemID", 17190 },    -- Ornate Buckler
-						{"select", "itemID", 17192 },    -- Reinforced Targe
-						{"select", "itemID", 17188 },    -- Ringed Buckler
-						{"select", "itemID", 17186 },    -- Small Targe
+						{"select", "itemID", 2451 },	-- Crested Heater Shield
+						{"select", "itemID", 1201 },	-- Dull Heater Shield
+						{"select", "itemID", 2448 },	-- Heavy Pavise
+						{"select", "itemID", 2446 },	-- Kite Shield
+						{"select", "itemID", 2445 },	-- Large Metal Shield
+						{"select", "itemID", 17189 },	-- Metal Buckler
+						{"select", "itemID", 17190 },	-- Ornate Buckler
+						{"select", "itemID", 17192 },	-- Reinforced Targe
+						{"select", "itemID", 17188 },	-- Ringed Buckler
+						{"select", "itemID", 17186 },	-- Small Targe
 					},
 					["groups"] = {
 						i(2129),	-- Large Round Shield
 						i(17184),	-- Small Shield
 					},
 				}),
-				n(4164, {	-- Cylania      
+				n(4164, {	-- Cylania
 					["coord"] = { 56.8, 53.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 847 },    -- Chainmail Armor
-						{"select", "itemID", 1845 },    -- Chainmail Belt
-						{"select", "itemID", 849 },    -- Chainmail Boots
-						{"select", "itemID", 1846 },    -- Chainmail Bracers
-						{"select", "itemID", 850 },    -- Chainmail Gloves
-						{"select", "itemID", 848 },    -- Chainmail Pants
-						{"select", "itemID", 837 },    -- Heavy Weave Armor
-						{"select", "itemID", 3589 },    -- Heavy Weave Belt
-						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
-						{"select", "itemID", 839 },    -- Heavy Weave Gloves
-						{"select", "itemID", 838 },    -- Heavy Weave Pants
-						{"select", "itemID", 840 },    -- Heavy Weave Shoes
-						{"select", "itemID", 3602 },    -- Knitted Belt
-						{"select", "itemID", 3603 },    -- Knitted Bracers
-						{"select", "itemID", 793 },    -- Knitted Gloves
-						{"select", "itemID", 794 },    -- Knitted Pants
-						{"select", "itemID", 792 },    -- Knitted Sandals
-						{"select", "itemID", 795 },    -- Knitted Tunic
-						{"select", "itemID", 2392 },    -- Light Mail Armor
-						{"select", "itemID", 2393 },    -- Light Mail Belt
-						{"select", "itemID", 2395 },    -- Light Mail Boots
-						{"select", "itemID", 2396 },    -- Light Mail Bracers
-						{"select", "itemID", 2397 },    -- Light Mail Gloves
-						{"select", "itemID", 2394 },    -- Light Mail Leggings
-						{"select", "itemID", 1839 },    -- Rough Leather Belt
-						{"select", "itemID", 796 },    -- Rough Leather Boots
-						{"select", "itemID", 1840 },    -- Rough Leather Bracers
-						{"select", "itemID", 797 },    -- Rough Leather Gloves
-						{"select", "itemID", 798 },    -- Rough Leather Pants
-						{"select", "itemID", 799 },    -- Rough Leather Vest
-						{"select", "itemID", 1843 },    -- Tanned Leather Belt
-						{"select", "itemID", 843 },    -- Tanned Leather Boots
-						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
-						{"select", "itemID", 844 },    -- Tanned Leather Gloves
-						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
-						{"select", "itemID", 845 },    -- Tanned Leather Pants
+						{"select", "itemID", 847 },	-- Chainmail Armor
+						{"select", "itemID", 1845 },	-- Chainmail Belt
+						{"select", "itemID", 849 },	-- Chainmail Boots
+						{"select", "itemID", 1846 },	-- Chainmail Bracers
+						{"select", "itemID", 850 },	-- Chainmail Gloves
+						{"select", "itemID", 848 },	-- Chainmail Pants
+						{"select", "itemID", 837 },	-- Heavy Weave Armor
+						{"select", "itemID", 3589 },	-- Heavy Weave Belt
+						{"select", "itemID", 3590 },	-- Heavy Weave Bracers
+						{"select", "itemID", 839 },	-- Heavy Weave Gloves
+						{"select", "itemID", 838 },	-- Heavy Weave Pants
+						{"select", "itemID", 840 },	-- Heavy Weave Shoes
+						{"select", "itemID", 3602 },	-- Knitted Belt
+						{"select", "itemID", 3603 },	-- Knitted Bracers
+						{"select", "itemID", 793 },	-- Knitted Gloves
+						{"select", "itemID", 794 },	-- Knitted Pants
+						{"select", "itemID", 792 },	-- Knitted Sandals
+						{"select", "itemID", 795 },	-- Knitted Tunic
+						{"select", "itemID", 2392 },	-- Light Mail Armor
+						{"select", "itemID", 2393 },	-- Light Mail Belt
+						{"select", "itemID", 2395 },	-- Light Mail Boots
+						{"select", "itemID", 2396 },	-- Light Mail Bracers
+						{"select", "itemID", 2397 },	-- Light Mail Gloves
+						{"select", "itemID", 2394 },	-- Light Mail Leggings
+						{"select", "itemID", 1839 },	-- Rough Leather Belt
+						{"select", "itemID", 796 },	-- Rough Leather Boots
+						{"select", "itemID", 1840 },	-- Rough Leather Bracers
+						{"select", "itemID", 797 },	-- Rough Leather Gloves
+						{"select", "itemID", 798 },	-- Rough Leather Pants
+						{"select", "itemID", 799 },	-- Rough Leather Vest
+						{"select", "itemID", 1843 },	-- Tanned Leather Belt
+						{"select", "itemID", 843 },	-- Tanned Leather Boots
+						{"select", "itemID", 1844 },	-- Tanned Leather Bracers
+						{"select", "itemID", 844 },	-- Tanned Leather Gloves
+						{"select", "itemID", 846 },	-- Tanned Leather Jerkin
+						{"select", "itemID", 845 },	-- Tanned Leather Pants
 					},
 				}),
-				n(4236, {	-- Cyridan       
+				n(4236, {	-- Cyridan
 					["coord"] = { 52.6, 77.0, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2142 },    -- Cuirboulli Belt
-						{"select", "itemID", 2143 },    -- Cuirboulli Boots
-						{"select", "itemID", 2144 },    -- Cuirboulli Bracers
-						{"select", "itemID", 2145 },    -- Cuirboulli Gloves
-						{"select", "itemID", 2146 },    -- Cuirboulli Pants
-						{"select", "itemID", 2141 },    -- Cuirboulli Vest
-						{"select", "itemID", 236 },    -- Cured Leather Armor
-						{"select", "itemID", 1849 },    -- Cured Leather Belt
-						{"select", "itemID", 238 },    -- Cured Leather Boots
-						{"select", "itemID", 1850 },    -- Cured Leather Bracers
-						{"select", "itemID", 239 },    -- Cured Leather Gloves
-						{"select", "itemID", 237 },    -- Cured Leather Pants
-						{"select", "itemID", 2471 },    -- Reinforced Leather Belt
-						{"select", "itemID", 2473 },    -- Reinforced Leather Boots
-						{"select", "itemID", 2474 },    -- Reinforced Leather Bracers
-						{"select", "itemID", 3893 },    -- Reinforced Leather Cap
-						{"select", "itemID", 2475 },    -- Reinforced Leather Gloves
-						{"select", "itemID", 2472 },    -- Reinforced Leather Pants
-						{"select", "itemID", 2470 },    -- Reinforced Leather Vest
-						{"select", "itemID", 1839 },    -- Rough Leather Belt
-						{"select", "itemID", 796 },    -- Rough Leather Boots
-						{"select", "itemID", 1840 },    -- Rough Leather Bracers
-						{"select", "itemID", 797 },    -- Rough Leather Gloves
-						{"select", "itemID", 798 },    -- Rough Leather Pants
-						{"select", "itemID", 799 },    -- Rough Leather Vest
-						{"select", "itemID", 2464 },    -- Studded Belt
-						{"select", "itemID", 2467 },    -- Studded Boots
-						{"select", "itemID", 2468 },    -- Studded Bracers
-						{"select", "itemID", 2463 },    -- Studded Doublet
-						{"select", "itemID", 2469 },    -- Studded Gloves
-						{"select", "itemID", 3890 },    -- Studded Hat
-						{"select", "itemID", 2465 },    -- Studded Pants
-						{"select", "itemID", 1843 },    -- Tanned Leather Belt
-						{"select", "itemID", 843 },    -- Tanned Leather Boots
-						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
-						{"select", "itemID", 844 },    -- Tanned Leather Gloves
-						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
-						{"select", "itemID", 845 },    -- Tanned Leather Pants
+						{"select", "itemID", 2142 },	-- Cuirboulli Belt
+						{"select", "itemID", 2143 },	-- Cuirboulli Boots
+						{"select", "itemID", 2144 },	-- Cuirboulli Bracers
+						{"select", "itemID", 2145 },	-- Cuirboulli Gloves
+						{"select", "itemID", 2146 },	-- Cuirboulli Pants
+						{"select", "itemID", 2141 },	-- Cuirboulli Vest
+						{"select", "itemID", 236 },	-- Cured Leather Armor
+						{"select", "itemID", 1849 },	-- Cured Leather Belt
+						{"select", "itemID", 238 },	-- Cured Leather Boots
+						{"select", "itemID", 1850 },	-- Cured Leather Bracers
+						{"select", "itemID", 239 },	-- Cured Leather Gloves
+						{"select", "itemID", 237 },	-- Cured Leather Pants
+						{"select", "itemID", 2471 },	-- Reinforced Leather Belt
+						{"select", "itemID", 2473 },	-- Reinforced Leather Boots
+						{"select", "itemID", 2474 },	-- Reinforced Leather Bracers
+						{"select", "itemID", 3893 },	-- Reinforced Leather Cap
+						{"select", "itemID", 2475 },	-- Reinforced Leather Gloves
+						{"select", "itemID", 2472 },	-- Reinforced Leather Pants
+						{"select", "itemID", 2470 },	-- Reinforced Leather Vest
+						{"select", "itemID", 1839 },	-- Rough Leather Belt
+						{"select", "itemID", 796 },	-- Rough Leather Boots
+						{"select", "itemID", 1840 },	-- Rough Leather Bracers
+						{"select", "itemID", 797 },	-- Rough Leather Gloves
+						{"select", "itemID", 798 },	-- Rough Leather Pants
+						{"select", "itemID", 799 },	-- Rough Leather Vest
+						{"select", "itemID", 2464 },	-- Studded Belt
+						{"select", "itemID", 2467 },	-- Studded Boots
+						{"select", "itemID", 2468 },	-- Studded Bracers
+						{"select", "itemID", 2463 },	-- Studded Doublet
+						{"select", "itemID", 2469 },	-- Studded Gloves
+						{"select", "itemID", 3890 },	-- Studded Hat
+						{"select", "itemID", 2465 },	-- Studded Pants
+						{"select", "itemID", 1843 },	-- Tanned Leather Belt
+						{"select", "itemID", 843 },	-- Tanned Leather Boots
+						{"select", "itemID", 1844 },	-- Tanned Leather Bracers
+						{"select", "itemID", 844 },	-- Tanned Leather Gloves
+						{"select", "itemID", 846 },	-- Tanned Leather Jerkin
+						{"select", "itemID", 845 },	-- Tanned Leather Pants
 					},
 					["groups"] = {
 						i(2122),	-- Cracked Leather Belt
@@ -1080,7 +1080,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
 					},
 					["groups"] = {
 						i(6272, {	-- Pattern: Blue Linen Robe
@@ -1098,12 +1098,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 57.8, 71.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2523 },    -- Bullova
-						{"select", "itemID", 2521 },    -- Flamberge
-						{"select", "itemID", 2531 },    -- Great Axe
-						{"select", "itemID", 2525 },    -- War Hammer
-						{"select", "itemID", 2533 },    -- War Maul
-						{"select", "itemID", 2529 },    -- Zweihander
+						{"select", "itemID", 2523 },	-- Bullova
+						{"select", "itemID", 2521 },	-- Flamberge
+						{"select", "itemID", 2531 },	-- Great Axe
+						{"select", "itemID", 2525 },	-- War Hammer
+						{"select", "itemID", 2533 },	-- War Maul
+						{"select", "itemID", 2529 },	-- Zweihander
 					},
 				}),
 				n(4223, {	-- Fyldan <Cooking Supplies> [TBC+] / Fyldan <Cooking Supplier>
@@ -1114,7 +1114,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
-					["sym"] = {{"sub", "common_recipes_vendor", 49701}}, -- Jon Casper <Sous Chef>
+					["sym"] = {{"sub", "common_recipes_vendor", 49701}},	-- Jon Casper <Sous Chef>
 					-- #endif
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -1129,17 +1129,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 926 },    -- Battle Axe
-						{"select", "itemID", 2025 },    -- Bearded Axe
-						{"select", "itemID", 2523 },    -- Bullova
-						{"select", "itemID", 2029 },    -- Cleaver
-						{"select", "itemID", 2522 },    -- Crescent Axe
-						{"select", "itemID", 927 },    -- Double Axe
-						{"select", "itemID", 2530 },    -- Francisca
-						{"select", "itemID", 2531 },    -- Great Axe
-						{"select", "itemID", 853 },    -- Hatchet
-						{"select", "itemID", 12249 },    -- Merciless Axe
-						{"select", "itemID", 1196 },    -- Tabar
+						{"select", "itemID", 926 },	-- Battle Axe
+						{"select", "itemID", 2025 },	-- Bearded Axe
+						{"select", "itemID", 2523 },	-- Bullova
+						{"select", "itemID", 2029 },	-- Cleaver
+						{"select", "itemID", 2522 },	-- Crescent Axe
+						{"select", "itemID", 927 },	-- Double Axe
+						{"select", "itemID", 2530 },	-- Francisca
+						{"select", "itemID", 2531 },	-- Great Axe
+						{"select", "itemID", 853 },	-- Hatchet
+						{"select", "itemID", 12249 },	-- Merciless Axe
+						{"select", "itemID", 1196 },	-- Tabar
 					},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
@@ -1152,9 +1152,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"select", "itemID", 1194 },	-- bastard sword
-						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 2025 },	-- Bearded Axe
 						{"select", "itemID", 2479 },	-- broad axe
-						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 1198 },	-- Claymore
 						{"select", "itemID", 2029 },	-- cleaver
 						{"select", "itemID", 2130 },	-- club
 						{"select", "itemID", 2492 },	-- cudgel
@@ -1184,7 +1184,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"select", "itemID", 2493 },	-- wooden mallet
 					},
 				}),
-				n(3561, {	-- Kyrai   
+				n(3561, {	-- Kyrai
 					["coord"] = { 38.8, 35.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -1219,7 +1219,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+						{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
 					},
 					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
@@ -1274,67 +1274,67 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				n(4177, {	-- Melea    
+				n(4177, {	-- Melea
 					["coord"] = { 55.6, 75.0, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2419 },    -- Augmented Chain Belt
-						{"select", "itemID", 2420 },    -- Augmented Chain Boots
-						{"select", "itemID", 2421 },    -- Augmented Chain Bracers
-						{"select", "itemID", 2422 },    -- Augmented Chain Gloves
-						{"select", "itemID", 3891 },    -- Augmented Chain Helm
-						{"select", "itemID", 2418 },    -- Augmented Chain Leggings
-						{"select", "itemID", 2417 },    -- Augmented Chain Vest
-						{"select", "itemID", 2424 },    -- Brigandine Belt
-						{"select", "itemID", 2426 },    -- Brigandine Boots
-						{"select", "itemID", 2427 },    -- Brigandine Bracers
-						{"select", "itemID", 2428 },    -- Brigandine Gloves
-						{"select", "itemID", 3894 },    -- Brigandine Helm
-						{"select", "itemID", 2425 },    -- Brigandine Leggings
-						{"select", "itemID", 2423 },    -- Brigandine Vest
-						{"select", "itemID", 847 },    -- Chainmail Armor
-						{"select", "itemID", 1845 },    -- Chainmail Belt
-						{"select", "itemID", 849 },    -- Chainmail Boots
-						{"select", "itemID", 1846 },    -- Chainmail Bracers
-						{"select", "itemID", 850 },    -- Chainmail Gloves
-						{"select", "itemID", 848 },    -- Chainmail Pants
-						{"select", "itemID", 2451 },    -- Crested Heater Shield
-						{"select", "itemID", 2448 },    -- Heavy Pavise
-						{"select", "itemID", 17189 },    -- Metal Buckler
-						{"select", "itemID", 17190 },    -- Ornate Buckler
-						{"select", "itemID", 2392 },    -- Light Mail Armor
-						{"select", "itemID", 2393 },    -- Light Mail Belt
-						{"select", "itemID", 2395 },    -- Light Mail Boots
-						{"select", "itemID", 2396 },    -- Light Mail Bracers
-						{"select", "itemID", 2397 },    -- Light Mail Gloves
-						{"select", "itemID", 2394 },    -- Light Mail Leggings
-						{"select", "itemID", 2149 },    -- Polished Scale Boots
-						{"select", "itemID", 2150 },    -- Polished Scale Bracers
-						{"select", "itemID", 2151 },    -- Polished Scale Gloves
-						{"select", "itemID", 2152 },    -- Polished Scale Leggings
-						{"select", "itemID", 2153 },    -- Polished Scale Vest
-						{"select", "itemID", 8094 },    -- Platemail Armor
-						{"select", "itemID", 8088 },    -- Platemail Belt
-						{"select", "itemID", 8089 },    -- Platemail Boots
-						{"select", "itemID", 8090 },    -- Platemail Bracers
-						{"select", "itemID", 8091 },    -- Platemail Gloves
-						{"select", "itemID", 8092 },    -- Platemail Helm
-						{"select", "itemID", 8093 },    -- Platemail Leggings
-						{"select", "itemID", 2148 },    -- Polished Scale Belt
-						{"select", "itemID", 1853 },    -- Scalemail Belt
-						{"select", "itemID", 287 },    -- Scalemail Boots
-						{"select", "itemID", 1852 },    -- Scalemail Bracers
-						{"select", "itemID", 718 },    -- Scalemail Gloves
-						{"select", "itemID", 286 },    -- Scalemail Pants
-						{"select", "itemID", 285 },    -- Scalemail Vest
+						{"select", "itemID", 2419 },	-- Augmented Chain Belt
+						{"select", "itemID", 2420 },	-- Augmented Chain Boots
+						{"select", "itemID", 2421 },	-- Augmented Chain Bracers
+						{"select", "itemID", 2422 },	-- Augmented Chain Gloves
+						{"select", "itemID", 3891 },	-- Augmented Chain Helm
+						{"select", "itemID", 2418 },	-- Augmented Chain Leggings
+						{"select", "itemID", 2417 },	-- Augmented Chain Vest
+						{"select", "itemID", 2424 },	-- Brigandine Belt
+						{"select", "itemID", 2426 },	-- Brigandine Boots
+						{"select", "itemID", 2427 },	-- Brigandine Bracers
+						{"select", "itemID", 2428 },	-- Brigandine Gloves
+						{"select", "itemID", 3894 },	-- Brigandine Helm
+						{"select", "itemID", 2425 },	-- Brigandine Leggings
+						{"select", "itemID", 2423 },	-- Brigandine Vest
+						{"select", "itemID", 847 },	-- Chainmail Armor
+						{"select", "itemID", 1845 },	-- Chainmail Belt
+						{"select", "itemID", 849 },	-- Chainmail Boots
+						{"select", "itemID", 1846 },	-- Chainmail Bracers
+						{"select", "itemID", 850 },	-- Chainmail Gloves
+						{"select", "itemID", 848 },	-- Chainmail Pants
+						{"select", "itemID", 2451 },	-- Crested Heater Shield
+						{"select", "itemID", 2448 },	-- Heavy Pavise
+						{"select", "itemID", 17189 },	-- Metal Buckler
+						{"select", "itemID", 17190 },	-- Ornate Buckler
+						{"select", "itemID", 2392 },	-- Light Mail Armor
+						{"select", "itemID", 2393 },	-- Light Mail Belt
+						{"select", "itemID", 2395 },	-- Light Mail Boots
+						{"select", "itemID", 2396 },	-- Light Mail Bracers
+						{"select", "itemID", 2397 },	-- Light Mail Gloves
+						{"select", "itemID", 2394 },	-- Light Mail Leggings
+						{"select", "itemID", 2149 },	-- Polished Scale Boots
+						{"select", "itemID", 2150 },	-- Polished Scale Bracers
+						{"select", "itemID", 2151 },	-- Polished Scale Gloves
+						{"select", "itemID", 2152 },	-- Polished Scale Leggings
+						{"select", "itemID", 2153 },	-- Polished Scale Vest
+						{"select", "itemID", 8094 },	-- Platemail Armor
+						{"select", "itemID", 8088 },	-- Platemail Belt
+						{"select", "itemID", 8089 },	-- Platemail Boots
+						{"select", "itemID", 8090 },	-- Platemail Bracers
+						{"select", "itemID", 8091 },	-- Platemail Gloves
+						{"select", "itemID", 8092 },	-- Platemail Helm
+						{"select", "itemID", 8093 },	-- Platemail Leggings
+						{"select", "itemID", 2148 },	-- Polished Scale Belt
+						{"select", "itemID", 1853 },	-- Scalemail Belt
+						{"select", "itemID", 287 },	-- Scalemail Boots
+						{"select", "itemID", 1852 },	-- Scalemail Bracers
+						{"select", "itemID", 718 },	-- Scalemail Gloves
+						{"select", "itemID", 286 },	-- Scalemail Pants
+						{"select", "itemID", 285 },	-- Scalemail Vest
 					},
 					["groups"] = {
-						i(2380),    -- Tarnished Chain Belt
-						i(2383),    -- Tarnished Chain Boots
-						i(2384),    -- Tarnished Chain Bracers
-						i(2385),    -- Tarnished Chain Gloves
-						i(2381),    -- Tarnished Chain Leggings
-						i(2379),    -- Tarnished Chain Vest
+						i(2380),	-- Tarnished Chain Belt
+						i(2383),	-- Tarnished Chain Boots
+						i(2384),	-- Tarnished Chain Bracers
+						i(2385),	-- Tarnished Chain Gloves
+						i(2381),	-- Tarnished Chain Leggings
+						i(2379),	-- Tarnished Chain Vest
 					},
 				}),
 				n(4171, {	-- Merelyssa
@@ -1404,15 +1404,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.4, 63.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 925 },    -- Flail
-						{"select", "itemID", 1197 },    -- Giant Mace
-						{"select", "itemID", 2030 },    -- Gnarled Staff
-						{"select", "itemID", 2028 },    -- Hammer
-						{"select", "itemID", 928 },    -- Long Staff
-						{"select", "itemID", 852 },    -- Mace
-						{"select", "itemID", 924 },    -- Maul
-						{"select", "itemID", 854 },    -- Quarter Staff
-						{"select", "itemID", 2026 },    -- Rock Hammer
+						{"select", "itemID", 925 },	-- Flail
+						{"select", "itemID", 1197 },	-- Giant Mace
+						{"select", "itemID", 2030 },	-- Gnarled Staff
+						{"select", "itemID", 2028 },	-- Hammer
+						{"select", "itemID", 928 },	-- Long Staff
+						{"select", "itemID", 852 },	-- Mace
+						{"select", "itemID", 924 },	-- Maul
+						{"select", "itemID", 854 },	-- Quarter Staff
+						{"select", "itemID", 2026 },	-- Rock Hammer
 					},
 				}),
 				n(4225, {	-- Saenorion <Leatherworking Supplies>
@@ -1423,7 +1423,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
+						{"sub", "common_recipes_vendor", 3366},	-- Tamar <Leatherworking Supplies>
 					},
 					["groups"] = {
 						i(18949, {	-- Pattern: Barbaric Bracers
@@ -1442,7 +1442,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "common_vendor", 5193}, -- Rebecca Laughlin <Tabard Designer>
+						{"sub", "common_vendor", 5193},	-- Rebecca Laughlin <Tabard Designer>
 					},
 				}),
 				n(8665, {	-- Shylenai <Owl Trainer>
@@ -1462,7 +1462,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
+						{"sub", "common_recipes_vendor", 50482},	-- Marith Lazuria <Jewelcrafting Supplies>
 					},
 				}),
 				n(4235, {	-- Turian <Thrown Weapons Merchant>
@@ -1504,7 +1504,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.6, 14.7, DARNASSUS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = { { "sub", "common_recipes_vendor", 1318 } }, -- Jessara Cordell <Enchanting Supplies>
+					["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
 					["groups"] = {
 						-- #if BEFORE CATA
 						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
@@ -1525,44 +1525,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2435 },    -- Embroidered Armor
-						{"select", "itemID", 3587 },    -- Embroidered Belt
-						{"select", "itemID", 2438 },    -- Embroidered Boots
-						{"select", "itemID", 3588 },    -- Embroidered Bracers
-						{"select", "itemID", 2440 },    -- Embroidered Gloves
-						{"select", "itemID", 3892 },    -- Embroidered Hat
-						{"select", "itemID", 2437 },    -- Embroidered Pants
-						{"select", "itemID", 837 },    -- Heavy Weave Armor
-						{"select", "itemID", 3589 },    -- Heavy Weave Belt
-						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
-						{"select", "itemID", 839 },    -- Heavy Weave Gloves
-						{"select", "itemID", 838 },    -- Heavy Weave Pants
-						{"select", "itemID", 840 },    -- Heavy Weave Shoes
-						{"select", "itemID", 3602 },    -- Knitted Belt
-						{"select", "itemID", 3603 },    -- Knitted Bracers
-						{"select", "itemID", 793 },    -- Knitted Gloves
-						{"select", "itemID", 794 },    -- Knitted Pants
-						{"select", "itemID", 792 },    -- Knitted Sandals
-						{"select", "itemID", 795 },    -- Knitted Tunic
-						{"select", "itemID", 2160 },    -- Padded Armor
-						{"select", "itemID", 3591 },    -- Padded Belt
-						{"select", "itemID", 2156 },    -- Padded Boots
-						{"select", "itemID", 3592 },    -- Padded Bracers
-						{"select", "itemID", 2158 },    -- Padded Gloves
-						{"select", "itemID", 2159 },    -- Padded Pants
-						{"select", "itemID", 3593 },    -- Russet Belt
-						{"select", "itemID", 2432 },    -- Russet Boots
-						{"select", "itemID", 3594 },    -- Russet Bracers
-						{"select", "itemID", 2434 },    -- Russet Gloves
-						{"select", "itemID", 3889 },    -- Russet Hat
-						{"select", "itemID", 2431 },    -- Russet Pants
-						{"select", "itemID", 2429 },    -- Russet Vest
-						{"select", "itemID", 3597 },    -- Thick Cloth Belt
-						{"select", "itemID", 3598 },    -- Thick Cloth Bracers
-						{"select", "itemID", 203 },    -- Thick Cloth Gloves
-						{"select", "itemID", 201 },    -- Thick Cloth Pants
-						{"select", "itemID", 202 },    -- Thick Cloth Shoes
-						{"select", "itemID", 200 },    -- Thick Cloth Vest
+						{"select", "itemID", 2435 },	-- Embroidered Armor
+						{"select", "itemID", 3587 },	-- Embroidered Belt
+						{"select", "itemID", 2438 },	-- Embroidered Boots
+						{"select", "itemID", 3588 },	-- Embroidered Bracers
+						{"select", "itemID", 2440 },	-- Embroidered Gloves
+						{"select", "itemID", 3892 },	-- Embroidered Hat
+						{"select", "itemID", 2437 },	-- Embroidered Pants
+						{"select", "itemID", 837 },	-- Heavy Weave Armor
+						{"select", "itemID", 3589 },	-- Heavy Weave Belt
+						{"select", "itemID", 3590 },	-- Heavy Weave Bracers
+						{"select", "itemID", 839 },	-- Heavy Weave Gloves
+						{"select", "itemID", 838 },	-- Heavy Weave Pants
+						{"select", "itemID", 840 },	-- Heavy Weave Shoes
+						{"select", "itemID", 3602 },	-- Knitted Belt
+						{"select", "itemID", 3603 },	-- Knitted Bracers
+						{"select", "itemID", 793 },	-- Knitted Gloves
+						{"select", "itemID", 794 },	-- Knitted Pants
+						{"select", "itemID", 792 },	-- Knitted Sandals
+						{"select", "itemID", 795 },	-- Knitted Tunic
+						{"select", "itemID", 2160 },	-- Padded Armor
+						{"select", "itemID", 3591 },	-- Padded Belt
+						{"select", "itemID", 2156 },	-- Padded Boots
+						{"select", "itemID", 3592 },	-- Padded Bracers
+						{"select", "itemID", 2158 },	-- Padded Gloves
+						{"select", "itemID", 2159 },	-- Padded Pants
+						{"select", "itemID", 3593 },	-- Russet Belt
+						{"select", "itemID", 2432 },	-- Russet Boots
+						{"select", "itemID", 3594 },	-- Russet Bracers
+						{"select", "itemID", 2434 },	-- Russet Gloves
+						{"select", "itemID", 3889 },	-- Russet Hat
+						{"select", "itemID", 2431 },	-- Russet Pants
+						{"select", "itemID", 2429 },	-- Russet Vest
+						{"select", "itemID", 3597 },	-- Thick Cloth Belt
+						{"select", "itemID", 3598 },	-- Thick Cloth Bracers
+						{"select", "itemID", 203 },	-- Thick Cloth Gloves
+						{"select", "itemID", 201 },	-- Thick Cloth Pants
+						{"select", "itemID", 202 },	-- Thick Cloth Shoes
+						{"select", "itemID", 200 },	-- Thick Cloth Vest
 					},
 					["groups"] = {
 						i(12256, {	-- Cindercloth Leggings

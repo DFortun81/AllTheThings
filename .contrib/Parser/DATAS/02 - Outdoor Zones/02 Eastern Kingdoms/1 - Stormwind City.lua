@@ -5651,7 +5651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(3581, {  -- Sewer Beast
+				n(3581, {	-- Sewer Beast
 					-- #if AFTER CATA
 					["coords"] = {
 						{ 48.4, 61.8, STORMWIND_CITY },
@@ -5729,27 +5729,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
-						i(847),    -- Chainmail Armor
-						i(1845),    -- Chainmail Belt
-						i(849),    -- Chainmail Boots
-						i(1846),    -- Chainmail Bracers
-						i(850),    -- Chainmail Gloves
-						i(848),    -- Chainmail Pants
-						i(2392),    -- Light Mail Armor
-						i(2393),    -- Light Mail Belt
-						i(2395),    -- Light Mail Boots
-						i(2396),    -- Light Mail Bracers
-						i(2397),    -- Light Mail Gloves
-						i(2394),    -- Light Mail Leggings
+						i(847),	-- Chainmail Armor
+						i(1845),	-- Chainmail Belt
+						i(849),	-- Chainmail Boots
+						i(1846),	-- Chainmail Bracers
+						i(850),	-- Chainmail Gloves
+						i(848),	-- Chainmail Pants
+						i(2392),	-- Light Mail Armor
+						i(2393),	-- Light Mail Belt
+						i(2395),	-- Light Mail Boots
+						i(2396),	-- Light Mail Bracers
+						i(2397),	-- Light Mail Gloves
+						i(2394),	-- Light Mail Leggings
 						i(129),	-- Rugged Trapper's Boots
 						i(147),	-- Rugged Trapper's Pants
 						i(58232),	-- Rugged Trapper's Vest
-						i(1853),    -- Scalemail Belt
-						i(287),    -- Scalemail Boots
-						i(1852),    -- Scalemail Bracers
-						i(718),    -- Scalemail Gloves
-						i(286),    -- Scalemail Pants
-						i(285),    -- Scalemail Vest
+						i(1853),	-- Scalemail Belt
+						i(287),	-- Scalemail Boots
+						i(1852),	-- Scalemail Bracers
+						i(718),	-- Scalemail Gloves
+						i(286),	-- Scalemail Pants
+						i(285),	-- Scalemail Vest
 						i(23348),	-- Scout's Boots
 						i(23344),	-- Scout's Pants
 						i(58240),	-- Scout's Vest
@@ -5981,39 +5981,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.8, 48.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
-						i(2419),    -- Augmented Chain Belt
-						i(2420),    -- Augmented Chain Boots
-						i(2421),    -- Augmented Chain Bracers
-						i(2422),    -- Augmented Chain Gloves
-						i(3891),    -- Augmented Chain Helm
-						i(2418),    -- Augmented Chain Leggings
-						i(2417),    -- Augmented Chain Vest
-						i(2424),    -- Brigandine Belt
-						i(2426),    -- Brigandine Boots
-						i(2427),    -- Brigandine Bracers
-						i(2428),    -- Brigandine Gloves
-						i(3894),    -- Brigandine Helm
-						i(2425),    -- Brigandine Leggings
-						i(2423),    -- Brigandine Vest
-						i(2451),    -- Crested Heater Shield
-						i(2448),    -- Heavy Pavise
-						i(2446),    -- Kite Shield
-						i(17189),    -- Metal Buckler
-						i(17190),    -- Ornate Buckler
-						i(8094),    -- Platemail Armor
-						i(8088),    -- Platemail Belt
-						i(8089),    -- Platemail Boots
-						i(8090),    -- Platemail Bracers
-						i(8091),    -- Platemail Gloves
-						i(8092),    -- Platemail Helm
-						i(8093),    -- Platemail Leggings
-						i(2148),    -- Polished Scale Belt
-						i(2149),    -- Polished Scale Boots
-						i(2150),    -- Polished Scale Bracers
-						i(2151),    -- Polished Scale Gloves
-						i(2152),    -- Polished Scale Leggings
-						i(2153),    -- Polished Scale Vest
-						i(17192),    -- Reinforced Targe
+						i(2419),	-- Augmented Chain Belt
+						i(2420),	-- Augmented Chain Boots
+						i(2421),	-- Augmented Chain Bracers
+						i(2422),	-- Augmented Chain Gloves
+						i(3891),	-- Augmented Chain Helm
+						i(2418),	-- Augmented Chain Leggings
+						i(2417),	-- Augmented Chain Vest
+						i(2424),	-- Brigandine Belt
+						i(2426),	-- Brigandine Boots
+						i(2427),	-- Brigandine Bracers
+						i(2428),	-- Brigandine Gloves
+						i(3894),	-- Brigandine Helm
+						i(2425),	-- Brigandine Leggings
+						i(2423),	-- Brigandine Vest
+						i(2451),	-- Crested Heater Shield
+						i(2448),	-- Heavy Pavise
+						i(2446),	-- Kite Shield
+						i(17189),	-- Metal Buckler
+						i(17190),	-- Ornate Buckler
+						i(8094),	-- Platemail Armor
+						i(8088),	-- Platemail Belt
+						i(8089),	-- Platemail Boots
+						i(8090),	-- Platemail Bracers
+						i(8091),	-- Platemail Gloves
+						i(8092),	-- Platemail Helm
+						i(8093),	-- Platemail Leggings
+						i(2148),	-- Polished Scale Belt
+						i(2149),	-- Polished Scale Boots
+						i(2150),	-- Polished Scale Bracers
+						i(2151),	-- Polished Scale Gloves
+						i(2152),	-- Polished Scale Leggings
+						i(2153),	-- Polished Scale Vest
+						i(17192),	-- Reinforced Targe
 
 						-- Now any class and race can buy this
 						-- PALADIN --
@@ -6041,14 +6041,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 52.8, 75.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5239),    -- Blackbone Wand
-						i(5210),    -- Burning Wand
-						i(5236),    -- Combustible Wand
-						i(5211),    -- Dusk Wand
-						i(5209),    -- Gloom Wand
-						i(5347),    -- Pestilent Wand
-						i(5238),    -- Pitchwood Wand
-						i(5208),    -- Smoldering Wand
+						i(5239),	-- Blackbone Wand
+						i(5210),	-- Burning Wand
+						i(5236),	-- Combustible Wand
+						i(5211),	-- Dusk Wand
+						i(5209),	-- Gloom Wand
+						i(5347),	-- Pestilent Wand
+						i(5238),	-- Pitchwood Wand
+						i(5208),	-- Smoldering Wand
 					},
 				}),
 				-- #if AFTER 8.0.1
@@ -6070,63 +6070,63 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 53.6, 57.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2419 },    -- Augmented Chain Belt
-						{"select", "itemID", 2420 },    -- Augmented Chain Boots
-						{"select", "itemID", 2421 },    -- Augmented Chain Bracers
-						{"select", "itemID", 2422 },    -- Augmented Chain Gloves
-						{"select", "itemID", 3891 },    -- Augmented Chain Helm
-						{"select", "itemID", 2418 },    -- Augmented Chain Leggings
-						{"select", "itemID", 2417 },    -- Augmented Chain Vest
-						{"select", "itemID", 2424 },    -- Brigandine Belt
-						{"select", "itemID", 2426 },    -- Brigandine Boots
-						{"select", "itemID", 2427 },    -- Brigandine Bracers
-						{"select", "itemID", 2428 },    -- Brigandine Gloves
-						{"select", "itemID", 3894 },    -- Brigandine Helm
-						{"select", "itemID", 2425 },    -- Brigandine Leggings
-						{"select", "itemID", 2423 },    -- Brigandine Vest
-						{"select", "itemID", 2451 },    -- Crested Heater Shield
-						{"select", "itemID", 2448 },    -- Heavy Pavise
-						{"select", "itemID", 2446 },    -- Kite Shield
-						{"select", "itemID", 17189 },    -- Metal Buckler
-						{"select", "itemID", 17190 },    -- Ornate Buckler
-						{"select", "itemID", 8094 },    -- Platemail Armor
-						{"select", "itemID", 8088 },    -- Platemail Belt
-						{"select", "itemID", 8089 },    -- Platemail Boots
-						{"select", "itemID", 8090 },    -- Platemail Bracers
-						{"select", "itemID", 8091 },    -- Platemail Gloves
-						{"select", "itemID", 8092 },    -- Platemail Helm
-						{"select", "itemID", 8093 },    -- Platemail Leggings
-						{"select", "itemID", 2148 },    -- Polished Scale Belt
-						{"select", "itemID", 2149 },    -- Polished Scale Boots
-						{"select", "itemID", 2150 },    -- Polished Scale Bracers
-						{"select", "itemID", 2151 },    -- Polished Scale Gloves
-						{"select", "itemID", 2152 },    -- Polished Scale Leggings
-						{"select", "itemID", 2153 },    -- Polished Scale Vest
-						{"select", "itemID", 17192 },    -- Reinforced Targe
+						{"select", "itemID", 2419 },	-- Augmented Chain Belt
+						{"select", "itemID", 2420 },	-- Augmented Chain Boots
+						{"select", "itemID", 2421 },	-- Augmented Chain Bracers
+						{"select", "itemID", 2422 },	-- Augmented Chain Gloves
+						{"select", "itemID", 3891 },	-- Augmented Chain Helm
+						{"select", "itemID", 2418 },	-- Augmented Chain Leggings
+						{"select", "itemID", 2417 },	-- Augmented Chain Vest
+						{"select", "itemID", 2424 },	-- Brigandine Belt
+						{"select", "itemID", 2426 },	-- Brigandine Boots
+						{"select", "itemID", 2427 },	-- Brigandine Bracers
+						{"select", "itemID", 2428 },	-- Brigandine Gloves
+						{"select", "itemID", 3894 },	-- Brigandine Helm
+						{"select", "itemID", 2425 },	-- Brigandine Leggings
+						{"select", "itemID", 2423 },	-- Brigandine Vest
+						{"select", "itemID", 2451 },	-- Crested Heater Shield
+						{"select", "itemID", 2448 },	-- Heavy Pavise
+						{"select", "itemID", 2446 },	-- Kite Shield
+						{"select", "itemID", 17189 },	-- Metal Buckler
+						{"select", "itemID", 17190 },	-- Ornate Buckler
+						{"select", "itemID", 8094 },	-- Platemail Armor
+						{"select", "itemID", 8088 },	-- Platemail Belt
+						{"select", "itemID", 8089 },	-- Platemail Boots
+						{"select", "itemID", 8090 },	-- Platemail Bracers
+						{"select", "itemID", 8091 },	-- Platemail Gloves
+						{"select", "itemID", 8092 },	-- Platemail Helm
+						{"select", "itemID", 8093 },	-- Platemail Leggings
+						{"select", "itemID", 2148 },	-- Polished Scale Belt
+						{"select", "itemID", 2149 },	-- Polished Scale Boots
+						{"select", "itemID", 2150 },	-- Polished Scale Bracers
+						{"select", "itemID", 2151 },	-- Polished Scale Gloves
+						{"select", "itemID", 2152 },	-- Polished Scale Leggings
+						{"select", "itemID", 2153 },	-- Polished Scale Vest
+						{"select", "itemID", 17192 },	-- Reinforced Targe
 					},
 				}),
 				n(1302, {	-- Bernard Gump
 					["coord"] = { 69.6, 71.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(3422),    -- Beautiful Wildflowers
-						i(3420),    -- Black Rose
-						i(3424),    -- Bouquet Of Black Roses
-						i(3423),    -- Bouquet Of White Roses
-						i(3419),    -- Red Rose
-						i(3421),    -- Simple Wildflowers
+						i(3422),	-- Beautiful Wildflowers
+						i(3420),	-- Black Rose
+						i(3424),	-- Bouquet Of Black Roses
+						i(3423),	-- Bouquet Of White Roses
+						i(3419),	-- Red Rose
+						i(3421),	-- Simple Wildflowers
 					},
 				}),
 				n(1319, {	-- Bryan Cross
 					["coord"] = { 69.6, 57.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2451 },    -- Crested Heater Shield
-						{"select", "itemID", 2448 },    -- Heavy Pavise
-						{"select", "itemID", 2446 },    -- Kite Shield
-						{"select", "itemID", 17189 },    -- Metal Buckler
-						{"select", "itemID", 17190 },    -- Ornate Buckler
-						{"select", "itemID", 17192 },    -- Reinforced Targe
+						{"select", "itemID", 2451 },	-- Crested Heater Shield
+						{"select", "itemID", 2448 },	-- Heavy Pavise
+						{"select", "itemID", 2446 },	-- Kite Shield
+						{"select", "itemID", 17189 },	-- Metal Buckler
+						{"select", "itemID", 17190 },	-- Ornate Buckler
+						{"select", "itemID", 17192 },	-- Reinforced Targe
 					},
 					["groups"] = {
 						i(2445),	-- Large Metal Shield
@@ -6552,46 +6552,46 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 53.2, 81.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(2142),    -- Cuirboulli Belt
-						i(2143),    -- Cuirboulli Boots
-						i(2144),    -- Cuirboulli Bracers
-						i(2145),    -- Cuirboulli Gloves
-						i(2146),    -- Cuirboulli Pants
-						i(2141),    -- Cuirboulli Vest
-						i(2435),    -- Embroidered Armor
-						i(3587),    -- Embroidered Belt
-						i(2438),    -- Embroidered Boots
-						i(3588),    -- Embroidered Bracers
-						i(2440),    -- Embroidered Gloves
-						i(3892),    -- Embroidered Hat
-						i(2437),    -- Embroidered Pants
-						i(2160),    -- Padded Armor
-						i(3591),    -- Padded Belt
-						i(2156),    -- Padded Boots
-						i(3592),    -- Padded Bracers
-						i(2158),    -- Padded Gloves
-						i(2159),    -- Padded Pants
-						i(2471),    -- Reinforced Leather Belt
-						i(2473),    -- Reinforced Leather Boots
-						i(2474),    -- Reinforced Leather Bracers
-						i(3893),    -- Reinforced Leather Cap
-						i(2475),    -- Reinforced Leather Gloves
-						i(2472),    -- Reinforced Leather Pants
-						i(2470),    -- Reinforced Leather Vest
-						i(3593),    -- Russet Belt
-						i(2432),    -- Russet Boots
-						i(3594),    -- Russet Bracers
-						i(2434),    -- Russet Gloves
-						i(3889),    -- Russet Hat
-						i(2431),    -- Russet Pants
-						i(2429),    -- Russet Vest
-						i(2464),    -- Studded Belt
-						i(2467),    -- Studded Boots
-						i(2468),    -- Studded Bracers
-						i(2463),    -- Studded Doublet
-						i(2469),    -- Studded Gloves
-						i(3890),    -- Studded Hat
-						i(2465),    -- Studded Pants						
+						i(2142),	-- Cuirboulli Belt
+						i(2143),	-- Cuirboulli Boots
+						i(2144),	-- Cuirboulli Bracers
+						i(2145),	-- Cuirboulli Gloves
+						i(2146),	-- Cuirboulli Pants
+						i(2141),	-- Cuirboulli Vest
+						i(2435),	-- Embroidered Armor
+						i(3587),	-- Embroidered Belt
+						i(2438),	-- Embroidered Boots
+						i(3588),	-- Embroidered Bracers
+						i(2440),	-- Embroidered Gloves
+						i(3892),	-- Embroidered Hat
+						i(2437),	-- Embroidered Pants
+						i(2160),	-- Padded Armor
+						i(3591),	-- Padded Belt
+						i(2156),	-- Padded Boots
+						i(3592),	-- Padded Bracers
+						i(2158),	-- Padded Gloves
+						i(2159),	-- Padded Pants
+						i(2471),	-- Reinforced Leather Belt
+						i(2473),	-- Reinforced Leather Boots
+						i(2474),	-- Reinforced Leather Bracers
+						i(3893),	-- Reinforced Leather Cap
+						i(2475),	-- Reinforced Leather Gloves
+						i(2472),	-- Reinforced Leather Pants
+						i(2470),	-- Reinforced Leather Vest
+						i(3593),	-- Russet Belt
+						i(2432),	-- Russet Boots
+						i(3594),	-- Russet Bracers
+						i(2434),	-- Russet Gloves
+						i(3889),	-- Russet Hat
+						i(2431),	-- Russet Pants
+						i(2429),	-- Russet Vest
+						i(2464),	-- Studded Belt
+						i(2467),	-- Studded Boots
+						i(2468),	-- Studded Bracers
+						i(2463),	-- Studded Doublet
+						i(2469),	-- Studded Gloves
+						i(3890),	-- Studded Hat
+						i(2465),	-- Studded Pants
 					},
 				}),
 				n(52029, {	-- Edlan Halsing <Bloodthirsty Gladiator> [LEGION+] / Edlan Halsing <Honor Trade Goods>
@@ -6886,12 +6886,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 3422 },    -- Beautiful Wildflowers
-						{"select", "itemID", 3420 },    -- Black Rose
-						{"select", "itemID", 3424 },    -- Bouquet Of Black Roses
-						{"select", "itemID", 3423 },    -- Bouquet Of White Roses
-						{"select", "itemID", 3419 },    -- Red Rose
-						{"select", "itemID", 3421 },    -- Simple Wildflowers
+						{"select", "itemID", 3422 },	-- Beautiful Wildflowers
+						{"select", "itemID", 3420 },	-- Black Rose
+						{"select", "itemID", 3424 },	-- Bouquet Of Black Roses
+						{"select", "itemID", 3423 },	-- Bouquet Of White Roses
+						{"select", "itemID", 3419 },	-- Red Rose
+						{"select", "itemID", 3421 },	-- Simple Wildflowers
 					},
 					["groups"] = {
 						i(2665),	-- Stormwind Seasoning Herbs
@@ -6916,8 +6916,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
-						{"select", "itemID", 3026 },    -- Reinforced Bow
+						{"select", "itemID", 3027 },	-- Heavy Recurve Bow
+						{"select", "itemID", 3026 },	-- Reinforced Bow
 					},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
@@ -6971,9 +6971,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 					-- added all
 						i(926),		-- battle axe
-						i(2025),	-- bearded axe
-						i(1198),	-- claymore
-						i(2029),	-- cleaver
+						i(2025),	-- Bearded Axe
+						i(1198),	-- Claymore
+						i(2029),	-- Cleaver
 						i(851),		-- cutlass
 						i(922),		-- dacian falx
 						i(927),		-- double axe
@@ -7223,29 +7223,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
-						i(236),    -- Cured Leather Armor
-						i(1849),    -- Cured Leather Belt
-						i(238),    -- Cured Leather Boots
-						i(1850),    -- Cured Leather Bracers
-						i(239),    -- Cured Leather Gloves
-						i(237),    -- Cured Leather Pants
-						i(48),    -- Footpads Pants
-						i(47),    -- Footpads Shoes
-						i(58234),    -- Footpads Vest
-						i(6124),    -- Novices Pants
-						i(6123),    -- Novices Robe
-						i(1839),    -- Rough Leather Belt
-						i(796),    -- Rough Leather Boots
-						i(1840),    -- Rough Leather Bracers
-						i(797),    -- Rough Leather Gloves
-						i(798),    -- Rough Leather Pants
-						i(799),    -- Rough Leather Vest
-						i(1843),    -- Tanned Leather Belt
-						i(843),    -- Tanned Leather Boots
-						i(1844),    -- Tanned Leather Bracers
-						i(844),    -- Tanned Leather Gloves
-						i(846),    -- Tanned Leather Jerkin
-						i(845),    -- Tanned Leather Pants
+						i(236),	-- Cured Leather Armor
+						i(1849),	-- Cured Leather Belt
+						i(238),	-- Cured Leather Boots
+						i(1850),	-- Cured Leather Bracers
+						i(239),	-- Cured Leather Gloves
+						i(237),	-- Cured Leather Pants
+						i(48),	-- Footpads Pants
+						i(47),	-- Footpads Shoes
+						i(58234),	-- Footpads Vest
+						i(6124),	-- Novices Pants
+						i(6123),	-- Novices Robe
+						i(1839),	-- Rough Leather Belt
+						i(796),	-- Rough Leather Boots
+						i(1840),	-- Rough Leather Bracers
+						i(797),	-- Rough Leather Gloves
+						i(798),	-- Rough Leather Pants
+						i(799),	-- Rough Leather Vest
+						i(1843),	-- Tanned Leather Belt
+						i(843),	-- Tanned Leather Boots
+						i(1844),	-- Tanned Leather Bracers
+						i(844),	-- Tanned Leather Gloves
+						i(846),	-- Tanned Leather Jerkin
+						i(845),	-- Tanned Leather Pants
 					}),
 				}),
 				-- #endif
@@ -7481,16 +7481,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 58.6, 68.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(3024),    -- Bkp 2700 Enforcer
-						i(3027),    -- Heavy Recurve Bow
-						i(2506),    -- Hornwood Recurve Bow
-						i(2511),    -- Hunters Boomstick
-						i(2507),    -- Laminated Recurve Bow
-						i(3023),    -- Large Bore Blunderbuss
-						i(2509),    -- Ornate Blunderbuss
-						i(2505),    -- Polished Shortbow
-						i(3026),    -- Reinforced Bow
-						i(2504),    -- Worn Shortbow
+						i(3024),	-- Bkp 2700 Enforcer
+						i(3027),	-- Heavy Recurve Bow
+						i(2506),	-- Hornwood Recurve Bow
+						i(2511),	-- Hunters Boomstick
+						i(2507),	-- Laminated Recurve Bow
+						i(3023),	-- Large Bore Blunderbuss
+						i(2509),	-- Ornate Blunderbuss
+						i(2505),	-- Polished Shortbow
+						i(3026),	-- Reinforced Bow
+						i(2504),	-- Worn Shortbow
 					},
 				}),
 				n(1299, {	-- Lisbeth Schneider <Clothier>
@@ -7562,9 +7562,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {
 					-- added all
 						{"select", "itemID", 926 },		-- battle axe
-						{"select", "itemID", 2025 },	-- bearded axe
-						{"select", "itemID", 2029 },	-- cleaver
-						{"select", "itemID", 1198 },	-- claymore
+						{"select", "itemID", 2025 },	-- Bearded Axe
+						{"select", "itemID", 2029 },	-- Cleaver
+						{"select", "itemID", 1198 },	-- Claymore
 						{"select", "itemID", 851 },		-- cutlass
 						{"select", "itemID", 922 },		-- dacian falx
 						{"select", "itemID", 927 },		-- double axe
@@ -7910,39 +7910,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 77.0, 61.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2419 },    -- Augmented Chain Belt
-						{"select", "itemID", 2420 },    -- Augmented Chain Boots
-						{"select", "itemID", 2421 },    -- Augmented Chain Bracers
-						{"select", "itemID", 2422 },    -- Augmented Chain Gloves
-						{"select", "itemID", 3891 },    -- Augmented Chain Helm
-						{"select", "itemID", 2418 },    -- Augmented Chain Leggings
-						{"select", "itemID", 2417 },    -- Augmented Chain Vest
-						{"select", "itemID", 2424 },    -- Brigandine Belt
-						{"select", "itemID", 2426 },    -- Brigandine Boots
-						{"select", "itemID", 2427 },    -- Brigandine Bracers
-						{"select", "itemID", 2428 },    -- Brigandine Gloves
-						{"select", "itemID", 3894 },    -- Brigandine Helm
-						{"select", "itemID", 2425 },    -- Brigandine Leggings
-						{"select", "itemID", 2423 },    -- Brigandine Vest
-						{"select", "itemID", 2451 },    -- Crested Heater Shield
-						{"select", "itemID", 2448 },    -- Heavy Pavise
-						{"select", "itemID", 2446 },    -- Kite Shield
-						{"select", "itemID", 17189 },    -- Metal Buckler
-						{"select", "itemID", 17190 },    -- Ornate Buckler
-						{"select", "itemID", 8094 },    -- Platemail Armor
-						{"select", "itemID", 8088 },    -- Platemail Belt
-						{"select", "itemID", 8089 },    -- Platemail Boots
-						{"select", "itemID", 8090 },    -- Platemail Bracers
-						{"select", "itemID", 8091 },    -- Platemail Gloves
-						{"select", "itemID", 8092 },    -- Platemail Helm
-						{"select", "itemID", 8093 },    -- Platemail Leggings
-						{"select", "itemID", 2148 },    -- Polished Scale Belt
-						{"select", "itemID", 2149 },    -- Polished Scale Boots
-						{"select", "itemID", 2150 },    -- Polished Scale Bracers
-						{"select", "itemID", 2151 },    -- Polished Scale Gloves
-						{"select", "itemID", 2152 },    -- Polished Scale Leggings
-						{"select", "itemID", 2153 },    -- Polished Scale Vest
-						{"select", "itemID", 17192 },    -- Reinforced Targe
+						{"select", "itemID", 2419 },	-- Augmented Chain Belt
+						{"select", "itemID", 2420 },	-- Augmented Chain Boots
+						{"select", "itemID", 2421 },	-- Augmented Chain Bracers
+						{"select", "itemID", 2422 },	-- Augmented Chain Gloves
+						{"select", "itemID", 3891 },	-- Augmented Chain Helm
+						{"select", "itemID", 2418 },	-- Augmented Chain Leggings
+						{"select", "itemID", 2417 },	-- Augmented Chain Vest
+						{"select", "itemID", 2424 },	-- Brigandine Belt
+						{"select", "itemID", 2426 },	-- Brigandine Boots
+						{"select", "itemID", 2427 },	-- Brigandine Bracers
+						{"select", "itemID", 2428 },	-- Brigandine Gloves
+						{"select", "itemID", 3894 },	-- Brigandine Helm
+						{"select", "itemID", 2425 },	-- Brigandine Leggings
+						{"select", "itemID", 2423 },	-- Brigandine Vest
+						{"select", "itemID", 2451 },	-- Crested Heater Shield
+						{"select", "itemID", 2448 },	-- Heavy Pavise
+						{"select", "itemID", 2446 },	-- Kite Shield
+						{"select", "itemID", 17189 },	-- Metal Buckler
+						{"select", "itemID", 17190 },	-- Ornate Buckler
+						{"select", "itemID", 8094 },	-- Platemail Armor
+						{"select", "itemID", 8088 },	-- Platemail Belt
+						{"select", "itemID", 8089 },	-- Platemail Boots
+						{"select", "itemID", 8090 },	-- Platemail Bracers
+						{"select", "itemID", 8091 },	-- Platemail Gloves
+						{"select", "itemID", 8092 },	-- Platemail Helm
+						{"select", "itemID", 8093 },	-- Platemail Leggings
+						{"select", "itemID", 2148 },	-- Polished Scale Belt
+						{"select", "itemID", 2149 },	-- Polished Scale Boots
+						{"select", "itemID", 2150 },	-- Polished Scale Bracers
+						{"select", "itemID", 2151 },	-- Polished Scale Gloves
+						{"select", "itemID", 2152 },	-- Polished Scale Leggings
+						{"select", "itemID", 2153 },	-- Polished Scale Vest
+						{"select", "itemID", 17192 },	-- Reinforced Targe
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -8047,20 +8047,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 71.8, 62.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2471 },    -- Reinforced Leather Belt
-						{"select", "itemID", 2473 },    -- Reinforced Leather Boots
-						{"select", "itemID", 2474 },    -- Reinforced Leather Bracers
-						{"select", "itemID", 3893 },    -- Reinforced Leather Cap
-						{"select", "itemID", 2475 },    -- Reinforced Leather Gloves
-						{"select", "itemID", 2472 },    -- Reinforced Leather Pants
-						{"select", "itemID", 2470 },    -- Reinforced Leather Vest
-						{"select", "itemID", 2464 },    -- Studded Belt
-						{"select", "itemID", 2467 },    -- Studded Boots
-						{"select", "itemID", 2468 },    -- Studded Bracers
-						{"select", "itemID", 2463 },    -- Studded Doublet
-						{"select", "itemID", 2469 },    -- Studded Gloves
-						{"select", "itemID", 3890 },    -- Studded Hat
-						{"select", "itemID", 2465 },    -- Studded Pants
+						{"select", "itemID", 2471 },	-- Reinforced Leather Belt
+						{"select", "itemID", 2473 },	-- Reinforced Leather Boots
+						{"select", "itemID", 2474 },	-- Reinforced Leather Bracers
+						{"select", "itemID", 3893 },	-- Reinforced Leather Cap
+						{"select", "itemID", 2475 },	-- Reinforced Leather Gloves
+						{"select", "itemID", 2472 },	-- Reinforced Leather Pants
+						{"select", "itemID", 2470 },	-- Reinforced Leather Vest
+						{"select", "itemID", 2464 },	-- Studded Belt
+						{"select", "itemID", 2467 },	-- Studded Boots
+						{"select", "itemID", 2468 },	-- Studded Bracers
+						{"select", "itemID", 2463 },	-- Studded Doublet
+						{"select", "itemID", 2469 },	-- Studded Gloves
+						{"select", "itemID", 3890 },	-- Studded Hat
+						{"select", "itemID", 2465 },	-- Studded Pants
 					},
 				}),
 				n(12785, {	-- Sergeant Major Clate <Legacy Armor Quartermaster> [WRATH+] / Sergeant Major Clate <Armor Quartermaster>
@@ -8162,31 +8162,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 77.4, 61.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2148 },    -- Polished Scale Belt
-						{"select", "itemID", 2149 },    -- Polished Scale Boots
-						{"select", "itemID", 2150 },    -- Polished Scale Bracers
-						{"select", "itemID", 2151 },    -- Polished Scale Gloves
-						{"select", "itemID", 2152 },    -- Polished Scale Leggings
-						{"select", "itemID", 2153 },    -- Polished Scale Vest
-						{"select", "itemID", 1853 },    -- Scalemail Belt
-						{"select", "itemID", 287 },    -- Scalemail Boots
-						{"select", "itemID", 1852 },    -- Scalemail Bracers
-						{"select", "itemID", 718 },    -- Scalemail Gloves
-						{"select", "itemID", 286 },    -- Scalemail Pants
-						{"select", "itemID", 285 },    -- Scalemail Vest
+						{"select", "itemID", 2148 },	-- Polished Scale Belt
+						{"select", "itemID", 2149 },	-- Polished Scale Boots
+						{"select", "itemID", 2150 },	-- Polished Scale Bracers
+						{"select", "itemID", 2151 },	-- Polished Scale Gloves
+						{"select", "itemID", 2152 },	-- Polished Scale Leggings
+						{"select", "itemID", 2153 },	-- Polished Scale Vest
+						{"select", "itemID", 1853 },	-- Scalemail Belt
+						{"select", "itemID", 287 },	-- Scalemail Boots
+						{"select", "itemID", 1852 },	-- Scalemail Bracers
+						{"select", "itemID", 718 },	-- Scalemail Gloves
+						{"select", "itemID", 286 },	-- Scalemail Pants
+						{"select", "itemID", 285 },	-- Scalemail Vest
 					},
 				}),
 				n(1309, {	-- Wynne Larson
 					["coord"] = { 52.0, 83.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2617 },    -- Burning Robes
-						{"select", "itemID", 2615 },    -- Chromatic Robe
-						{"select", "itemID", 2613 },    -- Double Stitched Robes
-						{"select", "itemID", 2612 },    -- Plain Robe
-						{"select", "itemID", 2614 },    -- Robe Of Apprenticeship
-						{"select", "itemID", 2616 },    -- Shimmering Silk Robes
-						{"select", "itemID", 2618 },    -- Silver Dress Robes
+						{"select", "itemID", 2617 },	-- Burning Robes
+						{"select", "itemID", 2615 },	-- Chromatic Robe
+						{"select", "itemID", 2613 },	-- Double Stitched Robes
+						{"select", "itemID", 2612 },	-- Plain Robe
+						{"select", "itemID", 2614 },	-- Robe Of Apprenticeship
+						{"select", "itemID", 2616 },	-- Shimmering Silk Robes
+						{"select", "itemID", 2618 },	-- Silver Dress Robes
 					},
 				}),
 			}),

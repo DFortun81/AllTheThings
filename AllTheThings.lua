@@ -12029,6 +12029,14 @@ local weaponTextures = {
 	"Interface/ICONS/inv_weapon_shortblade_102",
 	"Interface/ICONS/inv_weapon_shortblade_84",
 };
+
+local toc = select(4, GetBuildInfo());
+local v = "";
+if toc >= 100100 then
+	table.insert(armorTextures, "Interface/ICONS/inv_shoulder_armor_dragonspawn_c_02");
+	table.insert(weaponTextures, "Interface/ICONS/inv_weapon_shortblade_84");
+end
+
 local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
 local fields = {
 	["key"] = function(t)
@@ -12157,6 +12165,12 @@ app.CacheHeirlooms = function()
 		app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
 		app.CreateItem(122339),	-- Ancient Heirloom Scabbard
 	};
+
+	local toc = select(4, GetBuildInfo());
+	if toc >= 100100 then
+		table.insert(armorTokens, app.CreateItem(204336)); 	-- Awakened Heirloom Armor Casing
+		table.insert(weaponTokens, app.CreateItem(204337));	-- Awakened Heirloom Scabbard
+	end
 
 	-- cache the heirloom upgrade tokens
 	for i,item in ipairs(armorTokens) do
@@ -16580,6 +16594,7 @@ RowOnEnter = function (self)
 		end
 
 		-- Miscellaneous fields
+		local missingMiscData;
 		-- app.PrintDebug("Adding misc fields");
 		if app.Settings:GetTooltipSetting("Progress") then
 			if reference.total and reference.total >= 2 then
@@ -16749,30 +16764,42 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.providers then
-			local counter = 0;
+			local first = true;
+			local providerType, providerID, providerString, providerTypeName, addId;
 			for i,provider in pairs(reference.providers) do
-				local providerType = provider[1];
-				local providerID = provider[2] or 0;
-				local providerString = UNKNOWN;
+				providerType = provider[1];
+				providerID = provider[2] or 0;
+				providerString = nil;
+				addId = nil;
 				if providerType == "o" then
-					providerString = app.ObjectNames[providerID] or reference.text or ("Object: " .. RETRIEVING_DATA)
-					if app.Settings:GetTooltipSetting("objectID") then
-						providerString = providerString .. ' (' .. providerID .. ')';
-					end
+					providerTypeName = "Object: ";
+					providerString = app.ObjectNames[providerID];
+					addId = app.Settings:GetTooltipSetting("objectID");
 				elseif providerType == "n" then
-					providerString = (providerID > 0 and app.NPCNameFromID[providerID]) or ("Creature: " .. RETRIEVING_DATA)
-					if app.Settings:GetTooltipSetting("creatureID") then
-						providerString = providerString .. ' (' .. providerID .. ')';
-					end
+					providerTypeName = "Creature: ";
+					providerString = providerID > 0 and app.NPCNameFromID[providerID];
+					addId = app.Settings:GetTooltipSetting("creatureID");
 				elseif providerType == "i" then
 					local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(providerID);
-					providerString = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or ("Item: " .. RETRIEVING_DATA));
-					if app.Settings:GetTooltipSetting("itemID") then
-						providerString = providerString .. ' (' .. providerID .. ')';
+					if name then
+						providerTypeName = "Item: ";
+						if icon then
+							providerTypeName = providerTypeName .. "|T" .. icon .. ":0|t";
+						end
+						providerString = name;
+						addId = app.Settings:GetTooltipSetting("itemID");
 					end
 				end
-				GameTooltip:AddDoubleLine(counter == 0 and L.PROVIDERS or " ", providerString);
-				counter = counter + 1;
+				if providerString then
+					if addId then
+						providerString = providerString .. " (" .. providerID .. ")";
+					end
+					GameTooltip:AddDoubleLine(first and L.PROVIDERS or " ", providerTypeName .. providerString);
+				else
+					GameTooltip:AddDoubleLine(first and L.PROVIDERS or " ", RETRIEVING_DATA);
+					missingMiscData = true;
+				end
+				first = nil;
 			end
 		end
 		if reference.coord and app.Settings:GetTooltipSetting("Coordinates") then
@@ -16906,6 +16933,7 @@ RowOnEnter = function (self)
 						icon = nil;
 						amount = GetMoneyString(v[2]);
 					end
+					missingMiscData = missingMiscData or not name;
 					GameTooltip:AddDoubleLine(k == 1 and L["COST"] or " ", amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA));
 				end
 			else
@@ -17388,7 +17416,7 @@ RowOnEnter = function (self)
 		GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
 		-- END DEBUGGING]]
 
-		GameTooltip.MiscFieldsComplete = true;
+		GameTooltip.MiscFieldsComplete = not missingMiscData;
 		-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
 		GameTooltip:Show();
 		-- app.PrintDebug("OnRowEnter-Return");
@@ -23740,7 +23768,13 @@ end
 
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
-	local v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
+	local toc = select(4, GetBuildInfo());
+	local v = "";
+	if toc < 100100 then
+		v = GetAddOnMetadata("AllTheThings", "Version");
+	else
+		v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
+	end
 	-- if placeholder exists as the Version tag, then assume we are not on the Release version
 	if string.match(v, "version") then
 		app.Version = "[Git]";

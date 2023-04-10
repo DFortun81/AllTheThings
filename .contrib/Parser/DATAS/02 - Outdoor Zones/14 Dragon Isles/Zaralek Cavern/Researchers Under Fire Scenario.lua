@@ -22,6 +22,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				q(74906),	-- Researchers Under Fire (Keeps unflagging? Might use as header?)
 				q(75948),	-- Killed 202309 (Cavern Flayer Matriarch)
 			}),
+			n(ZONE_DROPS, {
+				i(205026),	-- Devourer Lobstrok (PET!)
+			}),
 		}),
 	}),
 })));

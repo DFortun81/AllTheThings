@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 61.3, 89.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 3356 } }, -- Sumi <Blacksmithing Supplies>
+					["sym"] = { { "sub", "common_recipes_vendor", 3356 } },	-- Sumi <Blacksmithing Supplies>
 					-- #endif
 					["groups"] = {
 						i(23591, {	-- Plans: Adamantite Cleaver (RECIPE!)
@@ -263,7 +263,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 45.5, 25.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 50482 } }, -- Marith Lazuria <Jewelcrafting Supplies>
+					["sym"] = { { "sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
 					-- #endif
 					["groups"] = {
 						i(20854, {	-- Design: Amulet of the Moon
@@ -280,26 +280,26 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				n(16715, {	-- Avelii  
+				n(16715, {	-- Avelii
 					["coord"] = { 48.6, 90.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 15808 },    -- Fine Light Crossbow
-						{"select", "itemID", 15809 },    -- Heavy Crossbow
-						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
-						{"select", "itemID", 2506 },    -- Hornwood Recurve Bow
-						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
-						{"select", "itemID", 15807 },    -- Light Crossbow
-						{"select", "itemID", 2505 },    -- Polished Shortbow
-						{"select", "itemID", 3026 },    -- Reinforced Bow
-						{"select", "itemID", 2504 },    -- Worn Shortbow
+						{"select", "itemID", 15808 },	-- Fine Light Crossbow
+						{"select", "itemID", 15809 },	-- Heavy Crossbow
+						{"select", "itemID", 3027 },	-- Heavy Recurve Bow
+						{"select", "itemID", 2506 },	-- Hornwood Recurve Bow
+						{"select", "itemID", 2507 },	-- Laminated Recurve Bow
+						{"select", "itemID", 15807 },	-- Light Crossbow
+						{"select", "itemID", 2505 },	-- Polished Shortbow
+						{"select", "itemID", 3026 },	-- Reinforced Bow
+						{"select", "itemID", 2504 },	-- Worn Shortbow
 					},
 				}),
 				n(16722, {	-- Egomis <Enchanting Supplies>
 					["coord"] = { 39.9, 40.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 1318 } }, -- Jessara Cordell <Enchanting Supplies>
+					["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
 					-- #endif
 					["groups"] = EGOMIS_GROUPS,
 				}),
@@ -307,21 +307,21 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 73.4, 84.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2527 },    -- Battle Staff
-						{"select", "itemID", 925 },    -- Flail
-						{"select", "itemID", 1197 },    -- Giant Mace
-						{"select", "itemID", 2030 },    -- Gnarled Staff
-						{"select", "itemID", 2028 },    -- Hammer
-						{"select", "itemID", 928 },    -- Long Staff
-						{"select", "itemID", 852 },    -- Mace
-						{"select", "itemID", 924 },    -- Maul
-						{"select", "itemID", 2532 },    -- Morning Star
-						{"select", "itemID", 854 },    -- Quarter Staff
-						{"select", "itemID", 2026 },    -- Rock Hammer
-						{"select", "itemID", 2524 },    -- Truncheon
-						{"select", "itemID", 2525 },    -- War Hammer
-						{"select", "itemID", 2533 },    -- War Maul
-						{"select", "itemID", 2535 },    -- War Staff
+						{"select", "itemID", 2527 },	-- Battle Staff
+						{"select", "itemID", 925 },	-- Flail
+						{"select", "itemID", 1197 },	-- Giant Mace
+						{"select", "itemID", 2030 },	-- Gnarled Staff
+						{"select", "itemID", 2028 },	-- Hammer
+						{"select", "itemID", 928 },	-- Long Staff
+						{"select", "itemID", 852 },	-- Mace
+						{"select", "itemID", 924 },	-- Maul
+						{"select", "itemID", 2532 },	-- Morning Star
+						{"select", "itemID", 854 },	-- Quarter Staff
+						{"select", "itemID", 2026 },	-- Rock Hammer
+						{"select", "itemID", 2524 },	-- Truncheon
+						{"select", "itemID", 2525 },	-- War Hammer
+						{"select", "itemID", 2533 },	-- War Maul
+						{"select", "itemID", 2535 },	-- War Staff
 					},
 				}),
 				n(16657, {	-- Feera <Engineering Supplies>
@@ -342,7 +342,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				n(20121, {	-- Fingin 
+				n(20121, {	-- Fingin
 					["coord"] = { 52.2, 84.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -353,56 +353,56 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 71.5, 91.7, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 16059 },    -- Common Brown Shirt
-						{"select", "itemID", 3428 },    -- Common Gray Shirt
-						{"select", "itemID", 16060 },    -- Common White Shirt
-						{"select", "itemID", 837 },    -- Heavy Weave Armor
-						{"select", "itemID", 3589 },    -- Heavy Weave Belt
-						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
-						{"select", "itemID", 839 },    -- Heavy Weave Gloves
-						{"select", "itemID", 838 },    -- Heavy Weave Pants
-						{"select", "itemID", 840 },    -- Heavy Weave Shoes
-						{"select", "itemID", 3602 },    -- Knitted Belt
-						{"select", "itemID", 3603 },    -- Knitted Bracers
-						{"select", "itemID", 793 },    -- Knitted Gloves
-						{"select", "itemID", 794 },    -- Knitted Pants
-						{"select", "itemID", 792 },    -- Knitted Sandals
-						{"select", "itemID", 795 },    -- Knitted Tunic
-						{"select", "itemID", 3597 },    -- Thick Cloth Belt
-						{"select", "itemID", 3598 },    -- Thick Cloth Bracers
-						{"select", "itemID", 203 },    -- Thick Cloth Gloves
-						{"select", "itemID", 201 },    -- Thick Cloth Pants
-						{"select", "itemID", 202 },    -- Thick Cloth Shoes
-						{"select", "itemID", 200 },    -- Thick Cloth Vest
+						{"select", "itemID", 16059 },	-- Common Brown Shirt
+						{"select", "itemID", 3428 },	-- Common Gray Shirt
+						{"select", "itemID", 16060 },	-- Common White Shirt
+						{"select", "itemID", 837 },	-- Heavy Weave Armor
+						{"select", "itemID", 3589 },	-- Heavy Weave Belt
+						{"select", "itemID", 3590 },	-- Heavy Weave Bracers
+						{"select", "itemID", 839 },	-- Heavy Weave Gloves
+						{"select", "itemID", 838 },	-- Heavy Weave Pants
+						{"select", "itemID", 840 },	-- Heavy Weave Shoes
+						{"select", "itemID", 3602 },	-- Knitted Belt
+						{"select", "itemID", 3603 },	-- Knitted Bracers
+						{"select", "itemID", 793 },	-- Knitted Gloves
+						{"select", "itemID", 794 },	-- Knitted Pants
+						{"select", "itemID", 792 },	-- Knitted Sandals
+						{"select", "itemID", 795 },	-- Knitted Tunic
+						{"select", "itemID", 3597 },	-- Thick Cloth Belt
+						{"select", "itemID", 3598 },	-- Thick Cloth Bracers
+						{"select", "itemID", 203 },	-- Thick Cloth Gloves
+						{"select", "itemID", 201 },	-- Thick Cloth Pants
+						{"select", "itemID", 202 },	-- Thick Cloth Shoes
+						{"select", "itemID", 200 },	-- Thick Cloth Vest
 					},
 				}),
-				n(16753, {	-- Gotaan  
+				n(16753, {	-- Gotaan
 					["coord"] = { 67.6, 96.0, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 2424 },    -- Brigandine Belt
-						{"select", "itemID", 2426 },    -- Brigandine Boots
-						{"select", "itemID", 2427 },    -- Brigandine Bracers
-						{"select", "itemID", 2428 },    -- Brigandine Gloves
-						{"select", "itemID", 3894 },    -- Brigandine Helm
-						{"select", "itemID", 2425 },    -- Brigandine Leggings
-						{"select", "itemID", 2423 },    -- Brigandine Vest
-						{"select", "itemID", 2451 },    -- Crested Heater Shield
-						{"select", "itemID", 17190 },    -- Ornate Buckler
-						{"select", "itemID", 8094 },    -- Platemail Armor
-						{"select", "itemID", 8088 },    -- Platemail Belt
-						{"select", "itemID", 8089 },    -- Platemail Boots
-						{"select", "itemID", 8090 },    -- Platemail Bracers
-						{"select", "itemID", 8091 },    -- Platemail Gloves
-						{"select", "itemID", 8092 },    -- Platemail Helm
-						{"select", "itemID", 8093 },    -- Platemail Leggings
+						{"select", "itemID", 2424 },	-- Brigandine Belt
+						{"select", "itemID", 2426 },	-- Brigandine Boots
+						{"select", "itemID", 2427 },	-- Brigandine Bracers
+						{"select", "itemID", 2428 },	-- Brigandine Gloves
+						{"select", "itemID", 3894 },	-- Brigandine Helm
+						{"select", "itemID", 2425 },	-- Brigandine Leggings
+						{"select", "itemID", 2423 },	-- Brigandine Vest
+						{"select", "itemID", 2451 },	-- Crested Heater Shield
+						{"select", "itemID", 17190 },	-- Ornate Buckler
+						{"select", "itemID", 8094 },	-- Platemail Armor
+						{"select", "itemID", 8088 },	-- Platemail Belt
+						{"select", "itemID", 8089 },	-- Platemail Boots
+						{"select", "itemID", 8090 },	-- Platemail Bracers
+						{"select", "itemID", 8091 },	-- Platemail Gloves
+						{"select", "itemID", 8092 },	-- Platemail Helm
+						{"select", "itemID", 8093 },	-- Platemail Leggings
 					},
 				}),
 				n(16748, {	-- Haferet <Leatherworking Supplies>
 					["coord"] = { 66.6, 73.7, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 3366 } }, -- Tamar <Leatherworking Supplies>
+					["sym"] = { { "sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
 					-- #endif
 					["groups"] = {
 						i(25726, {	-- Pattern: Comfortable Insoles
@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 53.8, 67.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER WRATH
-					["sym"] = { { "sub", "common_vendor", 5193 } }, -- Rebecca Laughlin <Tabard Designer>
+					["sym"] = { { "sub", "common_vendor", 5193 } },	-- Rebecca Laughlin <Tabard Designer>
 					-- #endif
 				}),
 				n(50306, {	-- Kadu <Exodar Quartermaster>
@@ -437,45 +437,45 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(45580),	-- Exodar Tabard
 					},
 				}),
-				n(16747, {	-- Mahri  
+				n(16747, {	-- Mahri
 					["coord"] = { 70.6, 92.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 236 },    -- Cured Leather Armor
-						{"select", "itemID", 1849 },    -- Cured Leather Belt
-						{"select", "itemID", 238 },    -- Cured Leather Boots
-						{"select", "itemID", 1850 },    -- Cured Leather Bracers
-						{"select", "itemID", 239 },    -- Cured Leather Gloves
-						{"select", "itemID", 237 },    -- Cured Leather Pants
-						{"select", "itemID", 1839 },    -- Rough Leather Belt
-						{"select", "itemID", 796 },    -- Rough Leather Boots
-						{"select", "itemID", 1840 },    -- Rough Leather Bracers
-						{"select", "itemID", 797 },    -- Rough Leather Gloves
-						{"select", "itemID", 798 },    -- Rough Leather Pants
-						{"select", "itemID", 799 },    -- Rough Leather Vest
-						{"select", "itemID", 1843 },    -- Tanned Leather Belt
-						{"select", "itemID", 843 },    -- Tanned Leather Boots
-						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
-						{"select", "itemID", 844 },    -- Tanned Leather Gloves
-						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
-						{"select", "itemID", 845 },    -- Tanned Leather Pants
+						{"select", "itemID", 236 },	-- Cured Leather Armor
+						{"select", "itemID", 1849 },	-- Cured Leather Belt
+						{"select", "itemID", 238 },	-- Cured Leather Boots
+						{"select", "itemID", 1850 },	-- Cured Leather Bracers
+						{"select", "itemID", 239 },	-- Cured Leather Gloves
+						{"select", "itemID", 237 },	-- Cured Leather Pants
+						{"select", "itemID", 1839 },	-- Rough Leather Belt
+						{"select", "itemID", 796 },	-- Rough Leather Boots
+						{"select", "itemID", 1840 },	-- Rough Leather Bracers
+						{"select", "itemID", 797 },	-- Rough Leather Gloves
+						{"select", "itemID", 798 },	-- Rough Leather Pants
+						{"select", "itemID", 799 },	-- Rough Leather Vest
+						{"select", "itemID", 1843 },	-- Tanned Leather Belt
+						{"select", "itemID", 843 },	-- Tanned Leather Boots
+						{"select", "itemID", 1844 },	-- Tanned Leather Bracers
+						{"select", "itemID", 844 },	-- Tanned Leather Gloves
+						{"select", "itemID", 846 },	-- Tanned Leather Jerkin
+						{"select", "itemID", 845 },	-- Tanned Leather Pants
 					},
 				}),
-				n(16735, {	-- Muhaa 
+				n(16735, {	-- Muhaa
 					["coord"] = { 45.8, 89.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
-						{"select", "itemID", 3023 },    -- Large Bore Blunderbuss
-						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
-						{"select", "itemID", 2511 },    -- Hunter's Boomstick
+						{"select", "itemID", 3024 },	-- Bkp 2700 Enforcer
+						{"select", "itemID", 3023 },	-- Large Bore Blunderbuss
+						{"select", "itemID", 2509 },	-- Ornate Blunderbuss
+						{"select", "itemID", 2511 },	-- Hunter's Boomstick
 					},
 				}),
 				n(16767, {	-- Neii <Tailoring Supplies>
 					["coord"] = { 64.7, 68.5, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 3364 } }, -- Borya <Tailoring Supplies>
+					["sym"] = { { "sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
 					-- #endif
 					["groups"] = {
 						i(21892),	-- Pattern: Bolt of Imbued Netherweave
@@ -490,14 +490,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 46.8, 60.4, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 5239 },    -- Blackbone Wand
-						{"select", "itemID", 5210 },    -- Burning Wand
-						{"select", "itemID", 5236 },    -- Combustible Wand
-						{"select", "itemID", 5211 },    -- Dusk Wand
-						{"select", "itemID", 5209 },    -- Gloom Wand
-						{"select", "itemID", 5347 },    -- Pestilent Wand
-						{"select", "itemID", 5238 },    -- Pitchwood Wand
-						{"select", "itemID", 5208 },    -- Smoldering Wand
+						{"select", "itemID", 5239 },	-- Blackbone Wand
+						{"select", "itemID", 5210 },	-- Burning Wand
+						{"select", "itemID", 5236 },	-- Combustible Wand
+						{"select", "itemID", 5211 },	-- Dusk Wand
+						{"select", "itemID", 5209 },	-- Gloom Wand
+						{"select", "itemID", 5347 },	-- Pestilent Wand
+						{"select", "itemID", 5238 },	-- Pitchwood Wand
+						{"select", "itemID", 5208 },	-- Smoldering Wand
 					},
 				}),
 				n(16718, {	-- Phea <Cooking Supplies>
@@ -536,20 +536,20 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(29744),	-- Gray Elekk (MOUNT!)
 					},
 				}),
-				n(16762, {	-- Treall 
+				n(16762, {	-- Treall
 					["coord"] = { 68.2, 96.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 17187 },    -- Banded Buckler
-						{"select", "itemID", 1201 },    -- Dull Heater Shield
-						{"select", "itemID", 2446 },    -- Kite Shield
-						{"select", "itemID", 2445 },    -- Large Metal Shield
-						{"select", "itemID", 2129 },    -- Large Round Shield
-						{"select", "itemID", 17192 },    -- Reinforced Targe
-						{"select", "itemID", 17188 },    -- Ringed Buckler
-						{"select", "itemID", 17184 },    -- Small Shield
-						{"select", "itemID", 17186 },    -- Small Targe
-						{"select", "itemID", 1202 },    -- Wall Shield
+						{"select", "itemID", 17187 },	-- Banded Buckler
+						{"select", "itemID", 1201 },	-- Dull Heater Shield
+						{"select", "itemID", 2446 },	-- Kite Shield
+						{"select", "itemID", 2445 },	-- Large Metal Shield
+						{"select", "itemID", 2129 },	-- Large Round Shield
+						{"select", "itemID", 17192 },	-- Reinforced Targe
+						{"select", "itemID", 17188 },	-- Ringed Buckler
+						{"select", "itemID", 17184 },	-- Small Shield
+						{"select", "itemID", 17186 },	-- Small Targe
+						{"select", "itemID", 1202 },	-- Wall Shield
 					},
 				}),
 				n(16714, {	-- Ven
@@ -558,10 +558,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sym"] = {
 						-- added all
 						{"select", "itemID", 926 },		-- battle axe
-						{"select", "itemID", 2025 },	-- bearded axe
+						{"select", "itemID", 2025 },	-- Bearded Axe
 						{"select", "itemID", 2520 },	-- Broadsword
 						{"select", "itemID", 1198 },	-- Claymore
-						{"select", "itemID", 2029 },	-- cleaver
+						{"select", "itemID", 2029 },	-- Cleaver
 						{"select", "itemID", 851 },		-- Cutlass
 						{"select", "itemID", 922 },		-- Dacian Falx
 						{"select", "itemID", 927 },		-- Double Axe
@@ -578,28 +578,28 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						{"select", "itemID", 1196 },	-- Tabar
 					},
 				}),
-				n(16750, {	-- Yil 
+				n(16750, {	-- Yil
 					["coord"] = { 67.6, 94.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "itemID", 847 },    -- Chainmail Armor
-						{"select", "itemID", 1845 },    -- Chainmail Belt
-						{"select", "itemID", 849 },    -- Chainmail Boots
-						{"select", "itemID", 1846 },    -- Chainmail Bracers
-						{"select", "itemID", 850 },    -- Chainmail Gloves
-						{"select", "itemID", 848 },    -- Chainmail Pants
-						{"select", "itemID", 2392 },    -- Light Mail Armor
-						{"select", "itemID", 2393 },    -- Light Mail Belt
-						{"select", "itemID", 2395 },    -- Light Mail Boots
-						{"select", "itemID", 2396 },    -- Light Mail Bracers
-						{"select", "itemID", 2397 },    -- Light Mail Gloves
-						{"select", "itemID", 2394 },    -- Light Mail Leggings
-						{"select", "itemID", 1853 },    -- Scalemail Belt
-						{"select", "itemID", 287 },    -- Scalemail Boots
-						{"select", "itemID", 1852 },    -- Scalemail Bracers
-						{"select", "itemID", 718 },    -- Scalemail Gloves
-						{"select", "itemID", 286 },    -- Scalemail Pants
-						{"select", "itemID", 285 },    -- Scalemail Vest
+						{"select", "itemID", 847 },	-- Chainmail Armor
+						{"select", "itemID", 1845 },	-- Chainmail Belt
+						{"select", "itemID", 849 },	-- Chainmail Boots
+						{"select", "itemID", 1846 },	-- Chainmail Bracers
+						{"select", "itemID", 850 },	-- Chainmail Gloves
+						{"select", "itemID", 848 },	-- Chainmail Pants
+						{"select", "itemID", 2392 },	-- Light Mail Armor
+						{"select", "itemID", 2393 },	-- Light Mail Belt
+						{"select", "itemID", 2395 },	-- Light Mail Boots
+						{"select", "itemID", 2396 },	-- Light Mail Bracers
+						{"select", "itemID", 2397 },	-- Light Mail Gloves
+						{"select", "itemID", 2394 },	-- Light Mail Leggings
+						{"select", "itemID", 1853 },	-- Scalemail Belt
+						{"select", "itemID", 287 },	-- Scalemail Boots
+						{"select", "itemID", 1852 },	-- Scalemail Bracers
+						{"select", "itemID", 718 },	-- Scalemail Gloves
+						{"select", "itemID", 286 },	-- Scalemail Pants
+						{"select", "itemID", 285 },	-- Scalemail Vest
 					},
 				}),
 			}),

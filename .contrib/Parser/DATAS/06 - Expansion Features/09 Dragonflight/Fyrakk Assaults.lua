@@ -171,6 +171,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		})),
 		n(ZONE_DROPS, {
+			i(205003),	-- Ambre (PET!)
+			i(205002),	-- Blaise (PET!)
 			i(203710, {	-- Everburning Key
 				["cost"] = { { "i", 203683, 5 } },	-- 5x Ward of Fyrakk
 			}),

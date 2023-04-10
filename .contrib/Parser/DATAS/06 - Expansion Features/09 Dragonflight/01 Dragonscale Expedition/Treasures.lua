@@ -24,7 +24,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(199067, {	-- Precious Plans
 				["questID"] = 70536,
 			}),
-			i(190454),	-- Primal Chaos
 			i(199062, {	-- Ruby Gem Cluster Map
 				["questID"] = 70528,
 			}),

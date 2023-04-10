@@ -794,7 +794,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(111815),	-- Scribe's Quarters, Level 1
-						i(111923, {	-- Draenor Inscription
+						i(111923, {	-- Secret of Draenor Inscription
 							["filterID"] = MISC,
 							["g"] = {
 								i(120136),		-- Recipe: Secrets of Draenor Inscription

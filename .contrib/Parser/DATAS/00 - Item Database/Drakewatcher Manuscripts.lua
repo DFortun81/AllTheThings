@@ -291,3 +291,74 @@ i(202280, 73060);	-- Renewed Proto-Drake: Pronged Tail
 ------------------
 i(197120, 69321);	-- Highland Drake: Ornate Helm
 i(197109, 69310);	-- Highland Drake: Spiked Head
+i(203338, 73829);	-- Winding Slitherdrake: Antler Horns
+i(203305, 73793);	-- Winding Slitherdrake: Armor
+i(203322, 73810);	-- Winding Slitherdrake: Blonde Hair
+i(203300, 73788);	-- Winding Slitherdrake: Blue and Silver Armor
+i(203350, 73841);	-- Winding Slitherdrake: Blue Scales
+i(203351, 73842);	-- Winding Slitherdrake: Bronze Scales
+i(203323, 73811);	-- Winding Slitherdrake: Brown Hair
+i(203312, 73800);	-- Winding Slitherdrake: Cluster Chin Horn
+i(203331, 73820);	-- Winding Slitherdrake: Cluster Horns
+i(203340, 73831);	-- Winding Slitherdrake: Cluster Jaw Horns
+i(203321, 73809);	-- Winding Slitherdrake: Curled Cheek Horn
+i(203334, 73824);	-- Winding Slitherdrake: Curled Horns
+i(203346, 73837);	-- Winding Slitherdrake: Curled Nose
+i(203314, 73802);	-- Winding Slitherdrake: Curved Chin Horn
+i(203335, 73825);	-- Winding Slitherdrake: Curved Horns
+i(203349, 73840);	-- Winding Slitherdrake: Curved Nose Horn
+i(203320, 73808);	-- Winding Slitherdrake: Ears
+i(203319, 73807);	-- Winding Slitherdrake: Finned Cheek
+i(203361, 73853);	-- Winding Slitherdrake: Finned Tip Tail
+i(203310, 73798);	-- Winding Slitherdrake: Grand Chin Thorn
+i(203299, 73787);	-- Winding Slitherdrake: Green and Bronze Armor
+i(203352, 73843);	-- Winding Slitherdrake: Green Scales
+i(203308, 73796);	-- Winding Slitherdrake: Hairy Brow
+i(203311, 73799);	-- Winding Slitherdrake: Hairy Chin
+i(203318, 73806);	-- Winding Slitherdrake: Hairy Crest
+i(203343, 73834);	-- Winding Slitherdrake: Hairy Jaw
+i(203362, 73854);	-- Winding Slitherdrake: Hairy Tail
+i(203365, 73857);	-- Winding Slitherdrake: Hairy Throat
+i(203329, 73817);	-- Winding Slitherdrake: Heavy Horns
+i(205341, 75743);	-- Winding Slitherdrake: Heavy Scales
+i(203326, 73814);	-- Winding Slitherdrake: Helm
+i(203306, 73794);	-- Winding Slitherdrake: Horned Brow
+i(203339, 73830);	-- Winding Slitherdrake: Impaler Horns
+i(203316, 73804);	-- Winding Slitherdrake: Large Finned Crest
+i(203360, 73852);	-- Winding Slitherdrake: Large Finned Tail
+i(203363, 73855);	-- Winding Slitherdrake: Large Finned Throat
+i(203347, 73838);	-- Winding Slitherdrake: Large Spiked Nose
+i(203301, 73789);	-- Winding Slitherdrake: Light Blue and Copper Armor
+i(203309, 73797);	-- Winding Slitherdrake: Long Chin Horn
+i(203341, 73832);	-- Winding Slitherdrake: Long Jaw Horns
+i(203336, 73826);	-- Winding Slitherdrake: Paired Horns
+i(203307, 73795);	-- Winding Slitherdrake: Plated Brow
+i(203348, 73839);	-- Winding Slitherdrake: Pointed Nose
+i(203302, 73790);	-- Winding Slitherdrake: Purple and Silver Armor
+i(203303, 73791);	-- Winding Slitherdrake: Red and Gold Armor
+i(203325, 73813);	-- Winding Slitherdrake: Red Hair
+i(203353, 73844);	-- Winding Slitherdrake: Red Scales
+i(203327, 73815);	-- Winding Slitherdrake: Tan Horns
+i(203337, 73827);	-- Winding Slitherdrake: Thorn Horns
+i(203342, 73833);	-- Winding Slitherdrake: Triple Jaw Horns
+i(203359, 73851);	-- Winding Slitherdrake: Shark Finned Tail
+i(203333, 73822);	-- Winding Slitherdrake: Short Horns
+i(203344, 73835);	-- Winding Slitherdrake: Single Jaw Horn
+i(203317, 73805);	-- Winding Slitherdrake: Small Finned Crest
+i(203358, 73850);	-- Winding Slitherdrake: Small Finned Tail
+i(203364, 73856);	-- Winding Slitherdrake: Small Finned Throat
+i(203315, 73803);	-- Winding Slitherdrake: Small Spiked Crest
+i(203313, 73801);	-- Winding Slitherdrake: Spiked Chin
+i(203332, 73821);	-- Winding Slitherdrake: Spiked Horns
+i(203357, 73849);	-- Winding Slitherdrake: Spiked Tail
+i(203345, 73836);	-- Winding Slitherdrake: Split Jaw Horns
+i(203330, 73818);	-- Winding Slitherdrake: Swept Horns
+i(203298, 73786);	-- Winding Slitherdrake: White and Gold Armor
+i(203324, 73812);	-- Winding Slitherdrake: White Hair
+i(203328, 73816);	-- Winding Slitherdrake: White Horns
+i(203354, 73845);	-- Winding Slitherdrake: White Scales
+i(203304, 73792);	-- Winding Slitherdrake: Yellow and Silver Armor
+i(203355, 73846);	-- Winding Slitherdrake: Yellow Scales
+-- Special --
+i(205876, 75967);	-- Highland Drake: Embodiment of the Hellforged
+i(205865, 75941);	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator

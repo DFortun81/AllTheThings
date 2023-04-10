@@ -230,6 +230,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
+			n(BONUS_OBJECTIVES, {
+				q(74377, {	-- Capsize a Crab
+					["coord"] = { 37.4, 81.7, THE_FORBIDDEN_REACH },
+				}),
+			}),
 		}),
 		n(QUESTS, sharedData({ ["isWeekly"] = true, ["sourceQuests"] = { 74381 } }, {
 			q(75025, {	-- A Good Day for Rolling

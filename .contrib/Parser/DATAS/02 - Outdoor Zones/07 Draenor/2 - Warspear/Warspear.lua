@@ -3748,7 +3748,7 @@ _.Zones =
 						n(87551, {	-- Maru'sa <Inscription Recipes>
 							["coord"] = { 75.3, 47.6, WARSPEAR },
 							["g"] = {
-								i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
+								i(111923, {	-- Secret of Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 									["filterID"] = MISC,
 									["g"] = {
 										i(120136),		-- Recipe: Secrets of Draenor Inscription
