@@ -28,6 +28,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			ach(17513, {	-- Dragon Glyphs: Zaqali Caldera
 				["coord"] = { 30.5, 45.3, ZARALEK_CAVERN },
 			}),
+			ach(17741, {	-- Slow and Steady Wins the Race
+				crit(1, { 	-- Bashful wins
+					-- Confirm: ["sourceQuests"] = { 75662 },	-- A Race To The Finish
+				}),
+				crit(2, {	-- Tricky wins
+					-- TODO: ["sourceQuests"] = {  },	-- A Race To The Finish
+				}),
+				crit(3, {	-- Brulee wins
+					-- Confirm: ["sourceQuests"] = { 75707 },	-- A Race To The Finish
+				}),
+				crit(4, {	-- Roggy wins
+					-- TODO: ["sourceQuests"] = {  },	-- A Race To The Finish
+				}),
+				i(205231),	-- Roggy
+			}),
 			pvp(ach(17851)),	-- Tour of Duty: Zaralek Cavern
 			ach(18150, {	-- Zaralek Caverns Glyph Hunter
 				["sym"] = {{"meta_achievement",
@@ -47,7 +62,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				i(193377),	-- Gerald (PET!)
 			})),
 			ach(17739),	-- Embers of Neltharion
-			ach(17741),	-- Slow and Steady Wins the Race
 			ach(17781),	-- The Smell of Money
 			ach(17766),	-- Explore Zaralek Cavern
 			ach(17783),	-- Adventurer of Zaralek Cavern

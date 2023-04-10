@@ -19,6 +19,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75547,	-- 75270
 				["g"] = {
 					bo(75271, true),
+					i(205154),	-- Aquapo (PET!)
 				},
 			}),
 			n(203621, {	-- Brulsef the Stronk
@@ -107,6 +108,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75545,	-- 75266
 				["g"] = {
 					bo(75267, true),
+					i(205147),	-- Ridged Shalewing	(PET!)
+					i(205152),	-- Skaarn (PET!)
 				},
 			}),
 			n(200111, {	-- Magmanesha
@@ -151,6 +154,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75553,
 				["g"] = {
 					bo(75298, true),
+					i(205159),	-- Teardrop Moth (PET!)
 				},
 			}),
 			n(201029, {	-- Viridian King

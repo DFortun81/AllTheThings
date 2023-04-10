@@ -596,6 +596,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205123),	-- Brulee (PET!)
 				},
 			}),
+			-- TODO: q(, {	-- A Race To The Finish
+			-- 	["sourceQuests"] = {  },	--
+			-- 	["provider"] = { "n", 201099 },	-- Gorgul
+			-- 	["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
+			-- 	["g"] = {
+			-- 		i(205121),	-- Tricky (PET!)
+			-- 	},
+			-- }),
 
 
 				-- Complete Stuff Below --

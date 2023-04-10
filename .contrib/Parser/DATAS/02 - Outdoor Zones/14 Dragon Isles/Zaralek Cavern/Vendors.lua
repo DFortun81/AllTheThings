@@ -5,6 +5,14 @@ local COVETED_BAUBLE = 204727;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(VENDORS, {
+			n(201004, {	-- Explorer Bezzert <Intrepid Pet Trainer>
+				-- TODO: ["coord"] = { 0, 0, ZARALEK_CAVERN },
+				["g"] = {
+					i(205052, {	-- Miloh (PET!)
+						-- TODO: ["cost"] = { { "i", 163036, "TBD" } },	-- Polished Pet Charm
+					}),
+				},
+			}),
 			n(203293, {	-- Floressa <Innkeeper>
 				["coord"] = { 56.2, 56.3, ZARALEK_CAVERN },
 				["g"] = {
