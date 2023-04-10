@@ -199,5 +199,8 @@ _.WorldDrops =
 				i(67101),	-- Unquenchable Flame
 			}),
 		}),
+		filter(MISC, {
+			i(68729),	-- Elementium Lockbox
+		}),
 	}),
 };

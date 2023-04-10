@@ -722,7 +722,6 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 							i(55646),	-- Dandred Jerkin
 							i(55691),	-- Dandred Shoulders
 							i(55700),	-- Dandred Waistband
-							i(68729),	-- Elementium Lockbox
 							i(55772),	-- Everstill Cord
 							i(55745),	-- Everstill Cowl
 							i(55736),	-- Everstill Handwraps
