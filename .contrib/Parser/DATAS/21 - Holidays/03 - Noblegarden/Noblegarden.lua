@@ -327,6 +327,22 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 			}),
 		}),
 		n(QUESTS, {
+			q(74120, {	-- A Spring Awakening [Alliance]
+				["qg"] = 199261,	-- Holiday Enthusiast
+				["coord"] = { 31.6, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_7 },
+				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
+				["isYearly"] = true,
+			}),
+			q(74875, {	-- A Spring Awakening [Horde]
+				["qg"] = 199261,	-- Holiday Enthusiast
+				["coord"] = { 31.6, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_7 },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+				["isYearly"] = true,
+			}),
 			q(13502, {	-- A Tisket, a Tasket, a Noblegarden Basket [Alliance]
 				["qg"] = 32836,	-- Noblegarden Vendor
 				["coords"] = {
