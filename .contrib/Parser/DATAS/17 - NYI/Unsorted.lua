@@ -894,8 +894,8 @@ root(ROOTS.Unsorted, {
 				i(204637),	-- Boulder Chunk
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
-				i(205865),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator
 				i(205876),	-- Highland Drake: Embodiment of the Hellforged
+				i(205865),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator
 				i(203298),	-- Winding Slitherdrake: White and Gold Armor
 				i(203299),	-- Winding Slitherdrake: Green and Bronze Armor
 				i(203300),	-- Winding Slitherdrake: Blue and Silver Armor
