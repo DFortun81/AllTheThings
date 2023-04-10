@@ -286,6 +286,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 				["cost"] = { { "i", 197769, 1 }, },	-- 1x Tasty Hatchling's Treat
 				["isDaily"] = true,
+				["timeline"] = { ADDED_10_0_5 },
 				["g"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,
