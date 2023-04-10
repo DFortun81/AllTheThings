@@ -2,37 +2,6 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 local NOBLEGARDEN_VENDOR_GROUPS = {
-	-- Mounts
-	i(72145, {	-- Swift Springstrider (MOUNT!)
-		["timeline"] = { "added 4.3.0.15005" },
-		["cost"] = { { "i", 44791, 500 } },	-- 500x Noblegarden Chocolate
-	}),
-	-- Pets
-	i(141532, {	-- Noblegarden Bunny
-		["timeline"] = { "added 7.1.0.22731" },
-		["cost"] = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
-	}),
-	i(116258, {	-- Mystical Spring Bouquet
-		["timeline"] = { "added 6.0.1.18566" },
-		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
-	}),
-	i(44794, {	-- Spring Rabbit's Foot
-		["timeline"] = { "added 3.1.0.9733" },
-		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
-	}),
-	-- Toys
-	i(204675, {	-- A Drake's Big Basket of Eggs (TOY!)
-		["timeline"] = { ADDED_10_0_7 },
-	--	["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
-	}),
-	i(165802, {	-- Noble Gardener's Hearthstone (TOY!)
-		["timeline"] = { "added 8.1.5.29701" },
-		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
-	}),
-	i(188694, {	-- Spring Florist's Pouch (TOY!)
-		["timeline"] = { ADDED_9_1_5 },
-		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
-	}),
 	-- Appearances
 	i(74282, {	-- Black Spring Circlet
 		["timeline"] = { "added 4.3.0.15005" },
@@ -73,6 +42,11 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["timeline"] = { "added 8.1.5.29701" },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
+	-- Mounts
+	i(72145, {	-- Swift Springstrider (MOUNT!)
+		["timeline"] = { "added 4.3.0.15005" },
+		["cost"] = { { "i", 44791, 500 } },	-- 500x Noblegarden Chocolate
+	}),
 	-- Other
 	i(44792, {	-- Blossoming Branch
 		["timeline"] = { "added 3.1.0.9733" },
@@ -88,6 +62,32 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 		["classes"] = { MAGE },
 		["f"] = RECIPES,
+	}),
+	-- Pets
+	i(141532, {	-- Noblegarden Bunny
+		["timeline"] = { "added 7.1.0.22731" },
+		["cost"] = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
+	}),
+	i(116258, {	-- Mystical Spring Bouquet
+		["timeline"] = { "added 6.0.1.18566" },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+	}),
+	i(44794, {	-- Spring Rabbit's Foot
+		["timeline"] = { "added 3.1.0.9733" },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+	}),
+	-- Toys
+	i(204675, {	-- A Drake's Big Basket of Eggs (TOY!)
+		["timeline"] = { ADDED_10_0_7 },
+		["cost"] = { { "i", 44791, 200 } },	-- 250x Noblegarden Chocolate
+	}),
+	i(165802, {	-- Noble Gardener's Hearthstone (TOY!)
+		["timeline"] = { "added 8.1.5.29701" },
+		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
+	}),
+	i(188694, {	-- Spring Florist's Pouch (TOY!)
+		["timeline"] = { ADDED_9_1_5 },
+		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 };
 root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
