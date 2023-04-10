@@ -4,6 +4,17 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(ACHIEVEMENTS, {
+			ach(17567, {    -- Ancient Stones of Zaralek
+				crit(1, {    -- Demanding Perfection
+					["coord"] = { 43.3, 23.7, ZARALEK_CAVERN },
+				}),
+				crit(2, {    -- Binding Oaths
+					["coord"] = { 61.2, 71.8, ZARALEK_CAVERN },
+				}),
+				crit(3, {    -- Primal Power
+					["coord"] = { 47.4, 48.6, ZARALEK_CAVERN },
+				}),
+			}),
 			ach(17517, {	-- Dragon Glyphs: Aberrus Approach
 				["coord"] = { 48.4, 7.0, ZARALEK_CAVERN },
 			}),
