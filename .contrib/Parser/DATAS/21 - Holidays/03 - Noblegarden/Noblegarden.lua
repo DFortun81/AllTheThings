@@ -79,7 +79,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 	-- Toys
 	i(204675, {	-- A Drake's Big Basket of Eggs (TOY!)
 		["timeline"] = { ADDED_10_0_7 },
-		["cost"] = { { "i", 44791, 200 } },	-- 250x Noblegarden Chocolate
+		["cost"] = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
 	}),
 	i(165802, {	-- Noble Gardener's Hearthstone (TOY!)
 		["timeline"] = { "added 8.1.5.29701" },
@@ -564,14 +564,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(235477, {	-- Noblegarden
 		-- Classic Stuff
 		i(6834),	-- Black Tuxedo
-		n(QUESTS, {
-			q(73192, {	-- PH [DNT]
-				["timeline"] = { "created 10.0.5" },
-			}),
-			q(74120, {	-- A Spring Awakening
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "created 10.0.5" },
-			}),
-		}),
 	}),
 }));

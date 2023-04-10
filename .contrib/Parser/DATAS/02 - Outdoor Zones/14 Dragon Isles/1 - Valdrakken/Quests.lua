@@ -273,13 +273,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
-				["cost"] = { { "i", 197769, 1 }, },	-- 1xTasty Hatchling's Treat
+				["cost"] = { { "i", 197769, 1 }, },	-- 1x Tasty Hatchling's Treat
 				["g"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,
 					}),
 				},
 			}),
+			q(69937),	-- Sylvan Succor
+				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
+				["provider"] = { "n", 192522 },	-- Thalendra
+				["coord"] = { 72.8, 66.2, VALDRAKKEN },
+				["cost"] = { { "i", 197769, 1 }, },	-- 1x Tasty Hatchling's Treat
+				["isDaily"] = true,
+				["g"] = {
+					title(467, {	-- <Name>, Honorary Dryad
+						["collectible"] = false,
+					}),
+				},
 			-- MISC
 			q(67007, {	-- Archival Assistance
 				["provider"] = { "o", 381687 },	-- Discarded Note
@@ -420,7 +431,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
 		q(72596),	-- After Open Orientation
-		q(69935),	-- triggered with 'A Dryadic Remedy' (67606)
+		q(69935),	-- triggered with 'A Dryadic Remedy' (questID 67606 & 69937)
 		q(72011),	-- triggeres when accepting 'The Ruby Feast!' (71238)
 		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
 		q(72258, {["name"] = "Ruby Feast Daily Lockout",["isDaily"] = true}),	-- daily lockout of Ruby Feast quest progression

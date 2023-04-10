@@ -6642,6 +6642,18 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.2.5.43810
 				-- 9.2.7.43810
 			})),
+
+			-- 10.0.5
+			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { "created 10.0.5" } }, {
+				q(73192, { ["_drop"] = { "g" }, }),	-- An Egg-centric Discovery
+				q(74120),	-- A Spring Awakening
+			})),
+
+			-- 10.0.7
+			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { "created 10.0.7" } }, {
+				q(74955, { ["_drop"] = { "g" }, }),	-- An Egg-centric Discovery
+				q(74875),	-- A Spring Awakening
+			})),
 		}),
 	}),
 }));
