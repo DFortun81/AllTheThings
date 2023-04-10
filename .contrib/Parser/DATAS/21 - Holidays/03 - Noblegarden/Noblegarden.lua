@@ -151,7 +151,9 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 					["timeline"] = { "added 4.3.0.15005" },
 				}),
 
-				i(19028),	-- Elegant Dress
+				i(19028, {	-- Elegant Dress
+					["timeline"] = { "removed 7.2.5.24163" },
+				}),
 				i(6835, {	-- Black Tuxedo Pants
 					["timeline"] = { "removed 7.2.5.24163" },
 				}),
