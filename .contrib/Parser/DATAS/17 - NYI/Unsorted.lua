@@ -734,26 +734,11 @@ root(ROOTS.Unsorted, {
 				i(202616),	-- Fortified Dreadslab
 				i(202617),	-- Elementium Pocket Anvil
 				i(202618),	-- 10.1 Raid - Black Dragon Labs - Boss 04 - Djaradin Assault - Accessory - NECK 1
-				i(202621),	-- 10.1 Raid - Black Dragon Labs - Shoulder Token - Boss 08 -  Neltharion - DK/DH/Warlock
-				i(202622),	-- 10.1 Raid - Black Dragon Labs - Shoulder Token - Boss 08 - Neltharion - Mage/Druid/Hunter
-				i(202623),	-- 10.1 Raid - Black Dragon Labs - Shoulder Token - Boss 08 -  Neltharion - Priest/Paladin/Shaman
-				i(202624),	-- 10.1 Raid - Black Dragon Labs - Hand Token - Boss 03 - Evolution of Dracthyr - DK/DH/Warlock
-				i(202625),	-- 10.1 Raid - Black Dragon Labs - Hand Token - Boss 03 - Evolution of Dracthyr - Mage/Druid/Hunter
-				i(202626),	-- 10.1 Raid - Black Dragon Labs - Hand Token - Boss 03 - Evolution of Dracthyr - Priest/Paladin/Shaman
-				i(202627),	-- 10.1 Raid - Black Dragon Labs - Helm Token - Boss 07 - Lava Hydra - DK/DH/Warlock
-				i(202628),	-- 10.1 Raid - Black Dragon Labs - Helm Token - Boss 07 - Lava Hydra - Mage/Druid/Hunter
-				i(202629),	-- 10.1 Raid - Black Dragon Labs - Helm Token - Boss 07 - Lava Hydra - Priest/Paladin/Shaman
-				i(202630),	-- 10.1 Raid - Black Dragon Labs - Helm Token - Boss 07 - Lava Hydra - Warrior/Rogue/Monk/Evoker
-				i(202631),	-- 10.1 Raid - Black Dragon Labs -  Chest Token - Boss 06 - Dragonspawn Trapmaster - DK/DH/Warlock
-				i(202632),	-- 10.1 Raid - Black Dragon Labs - Chest Token - Boss 06 - Dragonspawn Trapmaster - Mage/Druid/Hunter
-				i(202633),	-- 10.1 Raid - Black Dragon Labs - Chest Token - Boss 06 -  Trapmaster - Priest/Paladin/Shaman
-				i(202634),	-- 10.1 Raid - Black Dragon Labs -  Leg Token - Boss 05 - Djaradin Elder - DK/DH/Warlock
-				i(202635),	-- 10.1 Raid - Black Dragon Labs -  Leg Token - Boss 05 - Djaradin Elder - Mage/Druid/Hunter
-				i(202636),	-- 10.1 Raid - Black Dragon Labs -  Leg Token - Boss 05 - Djaradin Elder - Priest/Paladin/Shaman
-				i(202637),	-- 10.1 Raid - Black Dragon Labs - Shoulder Token - Boss 08 - Neltharion - Warrior/Rogue/Monk/Evoker
-				i(202638),	-- 10.1 Raid - Black Dragon Labs - Hand Token - Boss 03 - Evolution - Warrior/Rogue/Monk/Evoker
-				i(202639),	-- 10.1 Raid - Black Dragon Labs - Chest Token - Boss 06 - Trapmaster - War/Rogue/Monk/Evoker
-				i(202640),	-- 10.1 Raid - Black Dragon Labs -  Leg Token - Boss 05 -  Elder - Warrior/Rogue/Monk/Evoker
+
+
+
+
+
 				i(202648),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 2
 				i(202649),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - FINGER 2
 				i(202650),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - NECK 2
@@ -1303,123 +1288,7 @@ root(ROOTS.Unsorted, {
 				i(205680),	-- Obsidian Gladiator's Drape
 				i(205681),	-- Obsidian Gladiator's Shawl
 
-				i(202438),	-- Manteau of the Onyx Crucible
-				i(202439),	-- Warbands of the Onyx Crucible
-				i(202440),	-- Insignia of the Onyx Crucible
-				i(202441),	-- Pauldrons of the Onyx Crucible
-				i(202442),	-- Legplates of the Onyx Crucible
-				i(202443),	-- Thraexhelm of the Onyx Crucible
-				i(202444),	-- Handguards of the Onyx Crucible
-				i(202445),	-- Ironstriders of the Onyx Crucible
-				i(202446),	-- Battlechest of the Onyx Crucible
-				i(202447),	-- Heartfire Sentinel's Pelerine
-				i(202448),	-- Heartfire Sentinel's Blessed Bindings
-				i(202449),	-- Heartfire Sentinel's Waistguard
-				i(202450),	-- Heartfire Sentinel's Steelwings
-				i(202451),	-- Heartfire Sentinel's Cuisses
-				i(202452),	-- Heartfire Sentinel's Forgehelm
-				i(202453),	-- Heartfire Sentinel's Protectors
-				i(202454),	-- Heartfire Sentinel's Greatboots
-				i(202455),	-- Heartfire Sentinel's Cassock
-				i(202456),	-- Lingering Phantom's Drape
-				i(202457),	-- Lingering Phantom's Vambraces
-				i(202458),	-- Lingering Phantom's Deathlink
-				i(202459),	-- Lingering Phantom's Shoulderplates
-				i(202460),	-- Lingering Phantom's Schynbalds
-				i(202461),	-- Lingering Phantom's Dreadhorns
-				i(202462),	-- Lingering Phantom's Gauntlets
-				i(202463),	-- Lingering Phantom's Stompers
-				i(202464),	-- Lingering Phantom's Plackart
-				i(202465),	-- Pelisse of the Cinderwolf
-				i(202466),	-- Runebraces of the Cinderwolf
-				i(202467),	-- Faulds of the Cinderwolf
-				i(202468),	-- Thunderpads of the Cinderwolf
-				i(202469),	-- Braies of the Cinderwolf
-				i(202470),	-- Spangenhelm of the Cinderwolf
-				i(202471),	-- Knuckles of the Cinderwolf
-				i(202472),	-- Sollerets of the Cinderwolf
-				i(202473),	-- Adornments of the Cinderwolf
-				i(202474),	-- Ashen Predator's Cloak
-				i(202475),	-- Ashen Predator's Skinwraps
-				i(202476),	-- Ashen Predator's Strap
-				i(202477),	-- Ashen Predator's Trophy
-				i(202478),	-- Ashen Predator's Poleyns
-				i(202479),	-- Ashen Predator's Faceguard
-				i(202480),	-- Ashen Predator's Skinners
-				i(202481),	-- Ashen Predator's Chasers
-				i(202482),	-- Ashen Predator's Sling Vest
-				i(202483),	-- Crest of Obsidian Secrets
-				i(202484),	-- Scalebands of Obsidian Secrets
-				i(202485),	-- Lasso of Obsidian Secrets
-				i(202486),	-- Wingspan of Obsidian Secrets
-				i(202487),	-- Chausses of Obsidian Secrets
-				i(202488),	-- Crown of Obsidian Secrets
-				i(202489),	-- Claws of Obsidian Secrets
-				i(202490),	-- Greatboots of Obsidian Secrets
-				i(202491),	-- Hauberk of Obsidian Secrets
-				i(202492),	-- Lurking Specter's Capelet
-				i(202493),	-- Lurking Specter's Armwraps
-				i(202494),	-- Lurking Specter's Edgeband
-				i(202495),	-- Lurking Specter's Shoulderblades
-				i(202496),	-- Lurking Specter's Tights
-				i(202497),	-- Lurking Specter's Visage
-				i(202498),	-- Lurking Specter's Handgrips
-				i(202499),	-- Lurking Specter's Tabi
-				i(202500),	-- Lurking Specter's Brigandine
-				i(202501),	-- Drape of Forged Vermillion
-				i(202502),	-- Forged Vermillion Coils
-				i(202503),	-- Forged Vermillion Blackbelt
-				i(202504),	-- Forged Vermillion Spines
-				i(202505),	-- Forged Vermillion Pantaloons
-				i(202506),	-- Forged Vermillion Cover
-				i(202507),	-- Forged Vermillion Fists
-				i(202508),	-- Forged Vermillion Footpads
-				i(202509),	-- Forged Vermillion Cuirass
-				i(202510),	-- Foliage of the Autumn Blaze
-				i(202511),	-- Bands of the Autumn Blaze
-				i(202512),	-- Garland of the Autumn Blaze
-				i(202513),	-- Mantle of the Autumn Blaze
-				i(202514),	-- Pants of the Autumn Blaze
-				i(202515),	-- Bough of the Autumn Blaze
-				i(202516),	-- Handguards of the Autumn Blaze
-				i(202517),	-- Hooves of the Autumn Blaze
-				i(202518),	-- Chestroots of the Autumn Blaze
-				i(202519),	-- Kinslayer's Shawl
-				i(202520),	-- Kinslayer's Bindings
-				i(202521),	-- Kinslayer's Sash
-				i(202522),	-- Kinslayer's Tainted Spaulders
-				i(202523),	-- Kinslayer's Legguards
-				i(202524),	-- Kinslayer's Hood
-				i(202525),	-- Kinslayer's Bloodstained Grips
-				i(202526),	-- Kinslayer's Gaiters
-				i(202527),	-- Kinslayer's Vest
-				i(202528),	-- Shawl of the Sinister Savant
-				i(202529),	-- Wristwraps of the Sinister Savant
-				i(202530),	-- Skullstrap of the Sinister Savant
-				i(202531),	-- Amice of the Sinister Savant
-				i(202532),	-- Leggings of the Sinister Savant
-				i(202533),	-- Grimhorns of the Sinister Savant
-				i(202534),	-- Grips of the Sinister Savant
-				i(202535),	-- Sandals of the Sinister Savant
-				i(202536),	-- Cursed Robes of the Sinister Savant
-				i(202537),	-- Shroud of The Furnace Seraph
-				i(202538),	-- Cuffs of The Furnace Seraph
-				i(202539),	-- Sash of The Furnace Seraph
-				i(202540),	-- Devotion of The Furnace Seraph
-				i(202541),	-- Breeches of The Furnace Seraph
-				i(202542),	-- Mask of The Furnace Seraph
-				i(202543),	-- Grasp of The Furnace Seraph
-				i(202544),	-- Sabatons of The Furnace Seraph
-				i(202545),	-- Command of The Furnace Seraph
-				i(202546),	-- Underlight Conjurer's Cape
-				i(202547),	-- Underlight Conjurer's Bracelets
-				i(202548),	-- Underlight Conjurer's Charmbelt
-				i(202549),	-- Underlight Conjurer's Aurora
-				i(202550),	-- Underlight Conjurer's Trousers
-				i(202551),	-- Underlight Conjurer's Arcanocowl
-				i(202552),	-- Underlight Conjurer's Gloves
-				i(202553),	-- Underlight Conjurer's Treads
-				i(202554),	-- Underlight Conjurer's Vestment
+
 
 
 
