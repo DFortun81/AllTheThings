@@ -23,10 +23,10 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["sym"] = {
 								{"select","npcID",87063},{"pop"},	-- Joao Calhandro <Inscription Recipes> (A)
-								{"exclude", "itemID", 111923 },	-- Draenor Inscription
+								{"exclude", "itemID", 111923 },	-- Secret of Draenor Inscription
 							},
 							["g"] = {
-								i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
+								i(111923, {	-- Secret of Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 									["filterID"] = MISC,
 									["g"] = {
 										i(120136),		-- Recipe: Secrets of Draenor Inscription
@@ -49,10 +49,10 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["sym"] = {
 								{"select","npcID",87551},{"pop"},	-- Maru'sa <Inscription Recipes> (H)
-								{"exclude", "itemID", 111923 },	-- Draenor Inscription
+								{"exclude", "itemID", 111923 },	-- Secret of Draenor Inscription
 							},
 							["g"] = {
-								i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
+								i(111923, {	-- Secret of Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 									["filterID"] = MISC,
 									["g"] = {
 										i(120136),		-- Recipe: Secrets of Draenor Inscription

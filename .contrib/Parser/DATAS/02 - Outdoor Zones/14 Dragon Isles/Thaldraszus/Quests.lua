@@ -420,7 +420,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["maps"] = { 2119, 2120, 2121, 2122, 2123, 2124, 2125, 2126, 2135, },	-- Vault of the Incarnates
 					["g"] = {
 						i(197921),	-- Primal Infusion
-						i(190454),	-- Primal Chaos
 					},
 				}),
 				q(72380, {	-- Together We Are Unstoppable

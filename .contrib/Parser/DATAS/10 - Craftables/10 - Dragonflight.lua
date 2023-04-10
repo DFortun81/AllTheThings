@@ -22,13 +22,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 	i(198056),	-- Titan Training Matrix II
 	i(198058),	-- Titan Training Matrix III
 	i(198059),	-- Titan Training Matrix IV
-	i(190454),	-- Primal Chaos
+	i(190454, {["timeline"] = {ADDED_10_0_2_LAUNCH, ADDED_10_1_0}}),	-- Depleted Primal Chaos
 	i(200686),	-- Primal Focus
 	i(197921),	-- Primal Infusion
 	-- VENDORS
 	i(201832),	-- Smudged Lens
 	-- Weekly Quest
 	i(190453),	-- Spark of Ingenuity
+	i(204440, {["timeline"] = {ADDED_10_1_0}}),	-- Spark of Shadowflame
 	-- Crafting
 	i(191529),	-- Illustrious Insight
 	i(191526),	-- Lesser Illustrious Insight

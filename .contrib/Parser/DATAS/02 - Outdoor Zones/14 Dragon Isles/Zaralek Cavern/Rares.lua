@@ -128,7 +128,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75563,	-- 75348
 				["g"] = {
 					bo(75349, true),
-					i(205463),	-- Skornace's Molten Pocket (TOY!)
+					i(205463),	-- Skornace's Lava Ball (TOY!)
 				},
 			}),
 			n(203480, {	-- Spinmarrow

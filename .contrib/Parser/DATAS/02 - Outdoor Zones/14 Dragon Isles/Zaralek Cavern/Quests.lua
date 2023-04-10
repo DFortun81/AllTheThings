@@ -421,12 +421,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 199965 },	-- Ebyssian
 					["coord"] = { 51.5, 25.8, ZARALEK_CAVERN },
 					["g"] = {
-						i(204447, {	-- Ensemble: Black Flight's Vestments
+						i(204447, {	-- Ensemble: Black Dragonflight's Vestments
 							["questID"] = 76038,
 							["g"] = {
-								i(204446),	-- Black Flight's Cape
-								i(204444),	-- Black Flight's Spaulders
-								i(204445),	-- Black Flight's Tabard
+								i(204446),	-- Black Dragonflight's Cape
+								i(204444),	-- Black Dragonflight's Spaulders
+								i(204445),	-- Black Dragonflight's Tabard
 							},
 						}),
 					},

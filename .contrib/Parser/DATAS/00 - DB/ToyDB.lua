@@ -1172,7 +1172,7 @@ i(204220);	-- Hraxian's Unbreakable Will
 i(205045);	-- B.B.F. Fist
 i(205419);	-- Jrumm's Drum
 i(204818);	-- Mallard Mortar
-i(205463);	-- Skornace's Molten Pocket
+i(205463);	-- Skornace's Lava Ball
 i(205963);	-- Sniffin' Salts
 i(204389);	-- Stone Breaker
 -- Unsorted --
