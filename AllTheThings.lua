@@ -12027,6 +12027,14 @@ local weaponTextures = {
 	"Interface/ICONS/inv_weapon_shortblade_111",
 	"Interface/ICONS/inv_weapon_shortblade_102",
 };
+
+local toc = select(4, GetBuildInfo());
+local v = "";
+if toc >= 100100 then
+	table.insert(armorTextures, "Interface/ICONS/inv_shoulder_armor_dragonspawn_c_02");
+	table.insert(weaponTextures, "Interface/ICONS/inv_weapon_shortblade_84");
+end
+
 local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
 local fields = {
 	["key"] = function(t)
@@ -12152,6 +12160,12 @@ app.CacheHeirlooms = function()
 		app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
 		app.CreateItem(122339),	-- Ancient Heirloom Scabbard
 	};
+
+	local toc = select(4, GetBuildInfo());
+	if toc >= 100100 then
+		table.insert(armorTokens, app.CreateItem(204336)); 	-- Awakened Heirloom Armor Casing
+		table.insert(weaponTokens, app.CreateItem(204337));	-- Awakened Heirloom Scabbard
+	end
 
 	-- cache the heirloom upgrade tokens
 	for i,item in ipairs(armorTokens) do
@@ -23750,7 +23764,13 @@ end
 
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
-	local v = GetAddOnMetadata("AllTheThings", "Version");
+	local toc = select(4, GetBuildInfo());
+	local v = "";
+	if toc < 100100 then
+		v = GetAddOnMetadata("AllTheThings", "Version");
+	else
+		v = C_AddOns.GetAddOnMetadata("AllTheThings", "Version");
+	end
 	-- if placeholder exists as the Version tag, then assume we are not on the Release version
 	if string.match(v, "version") then
 		app.Version = "[Git]";
