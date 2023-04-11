@@ -621,6 +621,10 @@ root(ROOTS.NeverImplemented, {
 				i(190168, {	-- Crusty Crawler (MOUNT!) (Unknown 2023)
 					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 				}),
+				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
+					["timeline"] = { "added 10.1.0" },
+					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
+				}),
 				i(69846, {	-- Winged Guardian (MOUNT!) Blizz promised this when removing from store in Jan 2023
 					["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 				}),

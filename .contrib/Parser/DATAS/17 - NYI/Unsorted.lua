@@ -1002,7 +1002,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(205155),	-- Big Slick in the City (MOUNT!)
-				i(206027),	-- Felcrystal Scorpion (MOUNT!)
 				i(192779),	-- Seething Slug (MOUNT!)
 				-- Not Attached --
 				i(205204),	-- Flaming Shalewing - Subject  01 (MOUNT!)
