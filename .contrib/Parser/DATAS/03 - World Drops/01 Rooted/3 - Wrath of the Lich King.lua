@@ -803,6 +803,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(37813),	-- Banner Slicer
 		}),
 		filter(STAVES, {
+			i(36603, {	-- Archaic Longspear
+				["timeline"] = { "created 4.0.1", "added 10.0.7" },	-- Might have dropped since 4.0.1. Unsure
+			}),
 			i(33424),	-- Cracked Iron Staff
 			i(36547, {	-- Jester's Stick
 				["timeline"] = { "created 2.0.3", "added 3.0.1.8770", "removed 10.0.7" },	-- Maybe still world drop, but best farmed in Ahn'Kahet
