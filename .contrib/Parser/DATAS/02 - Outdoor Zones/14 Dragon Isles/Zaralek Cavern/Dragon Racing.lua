@@ -27,6 +27,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17457,	-- Shimmering Slalom: Silver
 							17475,	-- Sulfur Sprint: Silver
 						}},
+						["g"] = {
+							i(203325),	-- Winding Slitherdrake: Red Hair (DM!)
+						},
 					}),
 					ach(17485, {	-- Zaralek Cavern: Gold
 						-- Meta Achievement
@@ -60,6 +63,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17460,	-- Shimmering Slalom Advanced: Silver
 							17478,	-- Sulfur Sprint Advanced: Silver
 						}},
+						["g"] = {
+							i(203303),	-- Winding Slitherdrake: Red and Gold Armor (DM!)
+						},
 					}),
 					ach(17488, {	-- Zaralek Cavern Advanced: Gold
 						-- Meta Achievement

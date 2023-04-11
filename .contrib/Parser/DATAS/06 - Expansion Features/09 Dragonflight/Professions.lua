@@ -381,7 +381,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 194829 },	-- Grigori Vialtry
 					["coord"] = { 60.9, 75.8, THE_WAKING_SHORES },
 				}),
-				q(70183, { -- Specialized Secrets: Alchemy
+				q(70183, {	-- Specialized Secrets: Alchemy
 					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 					["provider"] = { "n", 193110 },	-- Khadin
 					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
@@ -468,7 +468,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(198608),	-- Alchemy Notes
 					},
 				}),
-				
+
 				-- Requires ?? Skill - Patch 10.1.0.
 				q(75363, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Deepflayer Dust
 					["provider"] = { "n", 203516 },	-- Kayann
@@ -488,7 +488,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					r(370745),	-- Advanced Potion Experimentation
 					r(370730),	-- Brood Salt
 					r(370735),	-- Illustrious Insight
-					r(390392, {["timeline"] = { ADDED_10_0_5 }}),	-- Overload Elemental Herb
+					r(390392, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Herb
 					r(370668),	-- Potion Cauldron of Power
 					r(370715),	-- Transmute: Order to Elements
 					r(370714),	-- Transmute: Decay to Elements
@@ -573,6 +573,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					currency(2024),	-- Dragon Isles Alchemy Knowledge
 				},
 			 }, {
+				i(198608),	-- Alchemy Notes
 				q(74108, {	-- Inscription Order: Alchemy
 					["name"] = "Inscription Order: Alchemy",
 					["description"] = "Requires a crafting order from Inscription.",
@@ -627,7 +628,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				q(70025, {	-- Artisan's Supply: Draconium Sickle
 					["provider"] = { "n", 192164 },	-- Gringot Coldsteel
 					["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
-					["cost"] = {{"i",191241,1}},	-- Draconium Sickle
+					["cost"] = { { "i", 191241, 1 } },	-- Draconium Sickle
 					["_drop"] = { "g" },
 				}),
 				q(70250, {	-- Hidden Profession Master Blacksmith
@@ -635,7 +636,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 194836 },	-- Grekka Anvilsmash
 					["coord"] = { 43.2, 66.6, THE_WAKING_SHORES },
 				}),
-				q(70184, { -- Specialized Secrets: Blacksmithing
+				q(70184, {	-- Specialized Secrets: Blacksmithing
 					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 					["provider"] = { "n", 193110 },	-- Khadin
 					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
@@ -835,6 +836,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					currency(2023),	-- Dragon Isles Blacksmithing Knowledge
 				},
 			},{
+				i(198606),	-- Blacksmith's Writ
 				q(74109, {	-- Inscription Order: Blacksmith
 					["name"] = "Inscription Order: Blacksmith",
 					["description"] = "Requires a crafting order from Inscription.",
@@ -921,7 +923,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						{ 41.4, 61.0, OHNAHRAN_PLAINS },
 						{ 56.8, 75.6, OHNAHRAN_PLAINS },
 					},
-					["cost"] = { { "i", 201601, 2 }, },	-- 2xRuned Serevite Rod
+					["cost"] = { { "i", 201601, 2 } },	-- 2xRuned Serevite Rod
 					["_drop"] = { "g" },
 				}),
 				q(70251, {	-- Hidden Profession Master Enchanting
@@ -929,7 +931,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
 					["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
 				}),
-				q(70186, { -- Specialized Secrets: Enchanting
+				q(70186, {	-- Specialized Secrets: Enchanting
 					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 					["provider"] = { "n", 193110 },	-- Khadin
 					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
@@ -944,40 +946,36 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				-- Requires 25 Skill
 				q(66935, {	-- Crystal Quill Pens
 					["description"] = "Requires 25 Skill.",
-					["coord"] = { 36.8, 62.8, VALDRAKKEN },
 					["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+					["coord"] = { 36.8, 62.8, VALDRAKKEN },
 					["isWeekly"] = true,
-					-- ["sourceQuest"] = ,
 					["g"] = {
 						i(198610),	-- Enchanter's Script
 					},
 				}),
 				q(66900, {	-- Enchanted Relics
 					["description"] = "Requires 25 Skill.",
-					["coord"] = { 36.8, 62.4, VALDRAKKEN },
 					["provider"] = { "n", 191004 },	-- Temnaayu
+					["coord"] = { 36.8, 62.4, VALDRAKKEN },
 					["isWeekly"] = true,
-					-- ["sourceQuest"] = ,
 					["g"] = {
 						i(198610),	-- Enchanter's Script
 					},
 				}),
 				q(66884, {	-- Fireproof Gear
 					["description"] = "Requires 25 Skill.",
-					["coord"] = { 36.8, 62.4, VALDRAKKEN },
 					["provider"] = { "n", 191004 },	-- Temnaayu
+					["coord"] = { 36.8, 62.4, VALDRAKKEN },
 					["isWeekly"] = true,
-					-- ["sourceQuest"] = ,
 					["g"] = {
 						i(198610),	-- Enchanter's Script
 					},
 				}),
 				q(72423, {	-- Weathering the Storm
 					["description"] = "Requires 25 Skill.",
-					["coord"] = { 36.8, 62.4, VALDRAKKEN },
 					["provider"] = { "n", 191004 },	-- Temnaayu
+					["coord"] = { 36.8, 62.4, VALDRAKKEN },
 					["isWeekly"] = true,
-					-- ["sourceQuest"] = ,
 					["groups"] = {
 						i(198610),	-- Enchanter's Script
 					},
@@ -986,40 +984,36 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				-- Requires 45 Skill
 				q(72175, {	-- A Scept-acular Time
 					["description"] = "Requires 45 Skill.",
-					["coord"] = { 30.8, 61.4, VALDRAKKEN },
 					["provider"] = { "n", 193744 },	-- Soragosa
+					["coord"] = { 30.8, 61.4, VALDRAKKEN },
 					["isWeekly"] = true,
-					-- ["sourceQuest"] = ,
 					["g"] = {
 						i(198610),	-- Enchanter's Script
 					},
 				}),
 				q(72173, {	-- Braced for Enchantment
 					["description"] = "Requires 45 Skill.",
-					["coord"] = { 30.8, 61.4, VALDRAKKEN },
 					["provider"] = { "n", 193744 },	-- Soragosa
+					["coord"] = { 30.8, 61.4, VALDRAKKEN },
 					["isWeekly"] = true,
-					-- ["sourceQuest"] = ,
 					["g"] = {
 						i(198610),	-- Enchanter's Script
 					},
 				}),
 				q(72172, {	-- Essence, Shards, and Chromatic Dust
 					["description"] = "Requires 45 Skill.",
-					["coord"] = { 30.8, 61.4, VALDRAKKEN },
 					["provider"] = { "n", 193744 },	-- Soragosa
+					["coord"] = { 30.8, 61.4, VALDRAKKEN },
 					["isWeekly"] = true,
-					-- ["sourceQuest"] = ,
 					["g"] = {
 						i(198610),	-- Enchanter's Script
 					},
 				}),
 				q(72155, {	-- Spread the Enchantment
 					["description"] = "Requires 45 Skill.",
-					["coord"] = { 30.8, 61.4, VALDRAKKEN },
 					["provider"] = { "n", 193744 },	-- Soragosa
+					["coord"] = { 30.8, 61.4, VALDRAKKEN },
 					["isWeekly"] = true,
-					-- ["sourceQuest"] = ,
 					["g"] = {
 						i(198610),	-- Enchanter's Script
 					},
@@ -1120,6 +1114,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					currency(2030),	-- Dragon Isles Enchanting Knowledge
 				},
 			},{
+				i(198610),	-- Enchanter's Script
 				q(74110, {	-- Inscription Order: Enchanting
 					["name"] = "Inscription Order: Enchanting",
 					["description"] = "Requires a crafting order from Inscription.",
@@ -1137,15 +1132,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["name"] = "Enchanting Drop #1: Primalist",
 					["description"] = "Drops from any mob with Primalist in the name.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = { 194656 },	-- Primalist Surgecrusher
-					["coord"] = { 53.4, 56.2, THALDRASZUS },
 					["provider"] = { "i", 198968 },	-- Primalist Charm
+					["coord"] = { 53.4, 56.2, THALDRASZUS },
 				}),
 				q(70514, {	-- Weekly Enchanting Knowledgepoint #4
 					["name"] = "Enchanting Drop #2: Arcane Elemental",
 					["description"] = "Drops from any Arcane Elemental.\nCoordinates link to the spot(s) we found best.",
 					["crs"] = { 181536 },	-- Destabilized Elemental
-					["coord"] = { 40.6, 60.8, THE_AZURE_SPAN },
 					["provider"] = { "i", 198967 },	-- Primordial Aether
+					["coord"] = { 40.6, 60.8, THE_AZURE_SPAN },
 				}),
 			})),
 		})),
@@ -1257,7 +1252,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(198611),	-- Engineering Details
 					},
 				}),
-				
+
 				-- Requires 45 Skill
 				q(70540, {	-- An Engineer's Best Friend
 					["description"] = "Requires 45 Skill.",
@@ -2207,7 +2202,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 						i(198613),	-- Leatherworking Designs
 					},
 				}),
-				
+
 				-- Requires 45 Skill
 				q(70571, {	-- Drums Here!
 					["description"] = "Requires 45 Skill.",

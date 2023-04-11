@@ -11,7 +11,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 56.4, 73.3, ZARALEK_CAVERN },
 				["questID"] = 75550,
 				["g"] = {
-					bo(75285, true)
+					bo(75285, true),
+					i(203307),	-- Winding Slitherdrake: Plated Brow (DM!)
 				},
 			}),
 			n(203468, {	-- Aquifon
@@ -34,6 +35,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75572,	-- 75475
 				["g"] = {
 					bo(75476, true),
+					i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (DM!)
 				},
 			}),
 			n(203646, {	-- Dinn
@@ -164,6 +166,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75570,	-- 75365
 				["g"] = {
 					bo(75366, true),
+					i(203345),	-- Winding Slitherdrake: Split Jaw Horns (DM!)
 				},
 			}),
 		})),

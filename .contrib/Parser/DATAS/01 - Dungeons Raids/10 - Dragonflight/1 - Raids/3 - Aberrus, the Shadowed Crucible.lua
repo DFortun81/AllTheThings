@@ -86,6 +86,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				},
 			}),
 			n(DROPS, {
+				i(205876, {	-- Highland Drake: Embodiment of the Hellforged (DM!)
+					["crs"] = { 201261 },	-- Kazzara, the Hellforged
+				}),
 				i(204975, {	-- Formula: Enchant Weapon - Shadowflame Wreathe (RECIPE!)
 					["crs"] = { 201579 },	-- Magmorax
 				}),

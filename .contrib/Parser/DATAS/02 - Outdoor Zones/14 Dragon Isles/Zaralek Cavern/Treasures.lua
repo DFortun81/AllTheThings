@@ -97,6 +97,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			o_repeated({	-- Ritual Offerings
 				-- Contains
+				i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
 				-- Objects
 				o(386088, {	-- Ritual Offerings
 					["coords"] = {

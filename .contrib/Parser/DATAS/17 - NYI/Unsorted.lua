@@ -1314,11 +1314,6 @@ root(ROOTS.Unsorted, {
 				i(204192),	-- Ascendancy
 				i(203680),	-- Totem Toss
 			}),
-			n(DRAKEWATCHER_MANUSCRIPTS, {
-				i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
-				i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
-				i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
-			}),
 			filter(MISC, {
 				i(198138),	-- Lightning-Infused Rock
 				i(198834),	-- Scribbled Bark Chunks
