@@ -16,7 +16,7 @@ i(122207, 38081);		-- Music Roll: Tinkertown (Unlocks The Zandalari)
 i(122216, 38082);		-- Music Roll: The Zandalari (Unlocks Tinkertown)
 i(122208, 38083);		-- Music Roll: Exodar (Unlocks Silvermoon)
 i(122217, 38084);		-- Music Roll: Silvermoon (Unlocks Exodar)
---i(122217, 38348);		-- Music Roll: Silvermoon (Unlocks Exodar)   [Note: Not sure why it unlocks to separate ID's]
+--i(122217, 38348);		-- Music Roll: Silvermoon (Unlocks Exodar)   [Note: Not sure why it unlocks two separate ID's]
 i(122209, 38085);		-- Music Roll: Curse of the Worgen (Unlocks Rescue the Warchief)
 i(122218, 38086);		-- Music Roll: Rescue the Warchief (Unlocks Curse of the Worgen)
 i(122219, 38101);		-- Music Roll: Way of the Monk

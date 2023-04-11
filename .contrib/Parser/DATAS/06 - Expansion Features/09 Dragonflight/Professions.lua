@@ -2522,13 +2522,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			["requireSkill"] = SKINNING,
 		},{
 			n(QUESTS, {
-				q(70034, {	-- Artisan's Supply: Salamanther Scale
-					--["sourceQuests"] = {  },	-- To the Dragon Isles:
-					["provider"] = { "n", 192558 },	-- Toninaar
-					["coord"] = { 76.6, 34.8, THE_WAKING_SHORES },
-					["cost"] = { { "i", 193252, 4 }, },	-- 3xSalamanther Scales
-					["_drop"] = { "g" },
-				}),
 				q(70363, {	-- Dragon Isles Skinning
 					["description"] = "DO NOT SKIN ANYTHING or you will lock yourself out of this quest.",
 					["sourceQuests"] = {
@@ -2538,6 +2531,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 192558 },    -- Toninaar
 					["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
 					["isBreadcrumb"] = true,
+				}),
+				q(70034, {	-- Artisan's Supply: Salamanther Scale
+					--["sourceQuests"] = {  },	-- To the Dragon Isles:
+					["provider"] = { "n", 192558 },	-- Toninaar
+					["coord"] = { 76.6, 34.8, THE_WAKING_SHORES },
+					["cost"] = { { "i", 193252, 4 }, },	-- 3xSalamanther Scales
+					["_drop"] = { "g" },
 				}),
 				q(70259, {	-- Hidden Profession Master Skinning
 					["name"] = "Hidden Profession Master: Skinning",
