@@ -1393,7 +1393,6 @@ root(ROOTS.Unsorted, {
 				q(72718),	--
 				q(72906),	-- [DNT] Storm Pet Battle
 				q(72907),	--
-				q(72955),	-- PTR:Zskera Vault: Kx
 				q(72956),	-- PTR:More Doors To Open
 				q(73194),	-- PTR:Up Close and Personal
 				q(73547),	--

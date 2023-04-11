@@ -42,6 +42,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
 					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
 				}),
+				q(72955, {	-- Zskera Vault: Kx
+					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
+					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
+				}),
 				q(72952, {	-- The Scary Vault of Ur
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
