@@ -24,18 +24,17 @@ _.Zones =
 				n(VENDORS, {
 					n(106056, {	-- Charles Seaton
 						["coord"] = { 74.2, 54.8, LEGION_THE_UNDERBELLY },
-						["sym"] = {
-						-- added all
-							{"select", "itemID", 1198 },	-- Claymore
-							{"select", "itemID", 851 },		-- Cutlass
-							{"select", "itemID", 922 },		-- Dacian Falx
-							{"select", "itemID", 2024 },	-- Espadon
-							{"select", "itemID", 2207 },	-- Jambiya
-							{"select", "itemID", 2209 },	-- Kris
-							{"select", "itemID", 923 },		-- Longsword
-							{"select", "itemID", 2208 },	-- Poniad
-							{"select", "itemID", 2027 },	-- Scimitar
-						},
+						["sym"] = {{"select", "itemID",
+							1198,	-- Claymore
+							851,	-- Cutlass
+							922,	-- Dacian Falx
+							2024,	-- Espadon
+							2207,	-- Jambiya
+							2209,	-- Kris
+							923,	-- Longsword
+							2208,	-- Poniad
+							2027,	-- Scimitar
+						}},
 					}),
 					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 						["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
@@ -74,22 +73,21 @@ _.Zones =
 					}),
 					n(106054, {	-- Kareth
 						["coord"] = { 75.2, 57.0, LEGION_THE_UNDERBELLY },
-						["sym"] = {
-						-- added all
-							{"select", "itemID", 2520 },	-- Broadsword
-							{"select", "itemID", 1198 },	-- Claymore
-							{"select", "itemID", 851 },		-- Cutlass
-							{"select", "itemID", 922 },		-- Dacian Falx
-							{"select", "itemID", 2024 },	-- Espadon
-							{"select", "itemID", 2528 },	-- falchion
-							{"select", "itemID", 2207 },	-- Jambiya
-							{"select", "itemID", 2209 },	-- Kris
-							{"select", "itemID", 923 },		-- Longsword
-							{"select", "itemID", 2526 },	-- Main Gauche
-							{"select", "itemID", 2208 },	-- Poniad
-							{"select", "itemID", 2534 },	-- Rondel
-							{"select", "itemID", 2027 },	-- Scimitar
-						},
+						["sym"] = {{"select", "itemID",
+							2520,	-- Broadsword
+							1198,	-- Claymore
+							851,	-- Cutlass
+							922,	-- Dacian Falx
+							2024,	-- Espadon
+							2528,	-- falchion
+							2207,	-- Jambiya
+							2209,	-- Kris
+							923,	-- Longsword
+							2526,	-- Main Gauche
+							2208,	-- Poniad
+							2534,	-- Rondel
+							2027,	-- Scimitar
+						}},
 					}),
 					n(97363, {	-- K'huta <Portals and Jujus>
 						["coord"] = { 66.0, 79.9, LEGION_THE_UNDERBELLY },

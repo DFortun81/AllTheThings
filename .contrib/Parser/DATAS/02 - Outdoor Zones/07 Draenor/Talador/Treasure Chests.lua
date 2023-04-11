@@ -2,71 +2,71 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-local COMMON_TREASURE_SYM = {
+local COMMON_TREASURE_SYM = {{"select","itemID",
 	-- Weapons
-	{"select","itemID",116542},	-- Auchenai Axe
-	{"select","itemID",116544},	-- Auchenai Bow
-	{"select","itemID",116543},	-- Auchenai Broadaxe
-	{"select","itemID",116545},	-- Auchenai Crossbow
-	{"select","itemID",116546},	-- Auchenai Dagger
-	{"select","itemID",116557},	-- Auchenai Greatsword
-	{"select","itemID",116549},	-- Auchenai Gun
-	{"select","itemID",116552},	-- Auchenai Hammer
-	{"select","itemID",116548},	-- Auchenai Knuckles
-	{"select","itemID",116550},	-- Auchenai Mace
-	{"select","itemID",116553},	-- Auchenai Spear
-	{"select","itemID",116555},	-- Auchenai Staff
-	{"select","itemID",116554},	-- Auchenai Staff
-	{"select","itemID",116556},	-- Auchenai Sword
-	{"select","itemID",116709},	-- Soulkeeper Ledger
-	{"select","itemID",116551},	-- Soulkeeper Scepter
-	{"select","itemID",116547},	-- Soulkeeper Spellblade
-	{"select","itemID",116558},	-- Soulkeeper Wand
-	{"select","itemID",106562},	-- Stonebreaker Shield
+	116542,	-- Auchenai Axe
+	116544,	-- Auchenai Bow
+	116543,	-- Auchenai Broadaxe
+	116545,	-- Auchenai Crossbow
+	116546,	-- Auchenai Dagger
+	116557,	-- Auchenai Greatsword
+	116549,	-- Auchenai Gun
+	116552,	-- Auchenai Hammer
+	116548,	-- Auchenai Knuckles
+	116550,	-- Auchenai Mace
+	116553,	-- Auchenai Spear
+	116555,	-- Auchenai Staff
+	116554,	-- Auchenai Staff
+	116556,	-- Auchenai Sword
+	116709,	-- Soulkeeper Ledger
+	116551,	-- Soulkeeper Scepter
+	116547,	-- Soulkeeper Spellblade
+	116558,	-- Soulkeeper Wand
+	106562,	-- Stonebreaker Shield
 	-- Head
-	{"select","itemID",106584},	-- Deathweb Helm
-	{"select","itemID",106573},	-- Gordunni Cowl
-	{"select","itemID",106558},	-- Stonebreaker Helm
-	{"select","itemID",106568},	-- Teroclaw Hood
+	106584,	-- Deathweb Helm
+	106573,	-- Gordunni Cowl
+	106558,	-- Stonebreaker Helm
+	106568,	-- Teroclaw Hood
 	-- Shoulders
-	{"select","itemID",106586},	-- Deathweb Spaulders
-	{"select","itemID",106578},	-- Gordunni Shoulderpads
-	{"select","itemID",106560},	-- Stonebreaker Pauldrons
-	{"select","itemID",106570},	-- Teroclaw Shoulders
+	106586,	-- Deathweb Spaulders
+	106578,	-- Gordunni Shoulderpads
+	106560,	-- Stonebreaker Pauldrons
+	106570,	-- Teroclaw Shoulders
 	-- Back
-	{"select","itemID",116708},	-- Soulkeeper Cloak
+	116708,	-- Soulkeeper Cloak
 	-- Chest
-	{"select","itemID",106587},	-- Deathweb Vest
-	{"select","itemID",106576},	-- Gordunni Robe
-	{"select","itemID",106555},	-- Stonebreaker Breastplate
-	{"select","itemID",106569},	-- Teroclaw Jerkin
+	106587,	-- Deathweb Vest
+	106576,	-- Gordunni Robe
+	106555,	-- Stonebreaker Breastplate
+	106569,	-- Teroclaw Jerkin
 	-- Wrist
-	{"select","itemID",106579},	-- Gordunni Wristwraps
-	{"select","itemID",106563},	-- Stonebreaker Vambraces
-	{"select","itemID",106564},	-- Teroclaw Bindings
+	106579,	-- Gordunni Wristwraps
+	106563,	-- Stonebreaker Vambraces
+	106564,	-- Teroclaw Bindings
 	-- Hands
-	{"select","itemID",106582},	-- Deathweb Gauntlets
-	{"select","itemID",106574},	-- Gordunni Handwraps
-	{"select","itemID",106556},	-- Stonebreaker Gauntlets
-	{"select","itemID",106567},	-- Teroclaw Gloves
+	106582,	-- Deathweb Gauntlets
+	106574,	-- Gordunni Handwraps
+	106556,	-- Stonebreaker Gauntlets
+	106567,	-- Teroclaw Gloves
 	-- Waist
-	{"select","itemID",106580},	-- Deathweb Belt
-	{"select","itemID",106572},	-- Gordunni Cord
-	{"select","itemID",106557},	-- Stonebreaker Girdle
-	{"select","itemID",106571},	-- Teroclaw Waistband
+	106580,	-- Deathweb Belt
+	106572,	-- Gordunni Cord
+	106557,	-- Stonebreaker Girdle
+	106571,	-- Teroclaw Waistband
 	-- Legs
-	{"select","itemID",106585},	-- Deathweb Legguards
-	{"select","itemID",106575},	-- Gordunni Leggings
-	{"select","itemID",106559},	-- Stonebreaker Legplates
-	{"select","itemID",106566},	-- Teroclaw Britches
+	106585,	-- Deathweb Legguards
+	106575,	-- Gordunni Leggings
+	106559,	-- Stonebreaker Legplates
+	106566,	-- Teroclaw Britches
 	-- Feet
-	{"select","itemID",106583},	-- Deathweb Greaves
-	{"select","itemID",106577},	-- Gordunni Sandals
-	{"select","itemID",106561},	-- Stonebreaker Sabatons
-	{"select","itemID",106565},	-- Teroclaw Boots
+	106583,	-- Deathweb Greaves
+	106577,	-- Gordunni Sandals
+	106561,	-- Stonebreaker Sabatons
+	106565,	-- Teroclaw Boots
 	-- Junkbox
-	{"select","itemID",116920},	-- True Steel Lockbox
-};
+	116920,	-- True Steel Lockbox
+}};
 
 _.Zones =
 {

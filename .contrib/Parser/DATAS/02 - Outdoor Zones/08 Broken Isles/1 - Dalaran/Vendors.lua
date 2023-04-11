@@ -15,14 +15,14 @@ _.Zones =
 				}),
 				n(96780,  {	-- Aerith Primrose
 					["coord"] = { 57.2, 52.4, LEGION_DALARAN },
-					["sym"] = {
-						{"select", "itemID", 3422 },    -- Beautiful Wildflowers
-						{"select", "itemID", 3420 },    -- Black Rose
-						{"select", "itemID", 3424 },    -- Bouquet Of Black Roses
-						{"select", "itemID", 3423 },    -- Bouquet Of White Roses
-						{"select", "itemID", 3419 },    -- Red Rose
-						{"select", "itemID", 3421 },    -- Simple Wildflowers
-					},
+					["sym"] = {{"select", "itemID",
+						3422,	-- Beautiful Wildflowers
+						3420,	-- Black Rose
+						3424,	-- Bouquet Of Black Roses
+						3423,	-- Bouquet Of White Roses
+						3419,	-- Red Rose
+						3421,	-- Simple Wildflowers
+					}},
 					["groups"] = {
 						i(142498),	-- Purple Blossom
 					},

@@ -29,45 +29,45 @@ root(ROOTS.Zones, {
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(157831, {	-- Scuffed Krokul Cache
-								["sym"] = {
-									{"select", "itemID", 152740},	-- Unsullied Cloak
-									{"select", "itemID", 152738},	-- Unsullied Cloth Cap
-									{"select", "itemID", 152734},	-- Unsullied Cloth Mantle
-									{"select", "itemID", 153135},	-- Unsullied Cloth Robes
-									{"select", "itemID", 152742},	-- Unsullied Cloth Cuffs
-									{"select", "itemID", 153141},	-- Unsullied Cloth Mitts
-									{"select", "itemID", 153156},	-- Unsullied Cloth Sash
-									{"select", "itemID", 153154},	-- Unsullied Cloth Leggings
-									{"select", "itemID", 153144},	-- Unsullied Cloth Slippers
-									{"select", "itemID", 153139},	-- Unsullied Leather Headgear
-									{"select", "itemID", 153145},	-- Unsullied Leather Spaulders
-									{"select", "itemID", 153151},	-- Unsullied Leather Tunic
-									{"select", "itemID", 153142},	-- Unsullied Leather Armbands
-									{"select", "itemID", 152739},	-- Unsullied Leather Grips
-									{"select", "itemID", 153148},	-- Unsullied Leather Belt
-									{"select", "itemID", 152737},	-- Unsullied Leather Trousers
-									{"select", "itemID", 153136},	-- Unsullied Leather Treads
-									{"select", "itemID", 153147},	-- Unsullied Mail Coif
-									{"select", "itemID", 153137},	-- Unsullied Mail Spaulders
-									{"select", "itemID", 152741},	-- Unsullied Mail Chestguard
-									{"select", "itemID", 153158},	-- Unsullied Mail Bracers
-									{"select", "itemID", 153149},	-- Unsullied Mail Gloves
-									{"select", "itemID", 152744},	-- Unsullied Mail Girdle
-									{"select", "itemID", 153138},	-- Unsullied Mail Legguards
-									{"select", "itemID", 153152},	-- Unsullied Mail Boots
-									{"select", "itemID", 153155},	-- Unsullied Plate Helmet
-									{"select", "itemID", 153153},	-- Unsullied Plate Pauldrons
-									{"select", "itemID", 153143},	-- Unsullied Plate Breasplate
-									{"select", "itemID", 153150},	-- Unsullied Plate Vambraces
-									{"select", "itemID", 153157},	-- Unsullied Plate Gauntlets
-									{"select", "itemID", 153140},	-- Unsullied Plate Waistplate
-									{"select", "itemID", 153146},	-- Unsullied Plate Greaves
-									{"select", "itemID", 152743},	-- Unsullied Plate Sabatons
-									{"select", "itemID", 152736},	-- Unsullied Necklace
-									{"select", "itemID", 152735},	-- Unsullied Ring
-									{"select", "itemID", 152733},	-- Unsullied Trinket
-									{"select", "itemID", 152799},	-- Unsullied Relic
-								},
+								["sym"] = {{"select", "itemID",
+									152740,	-- Unsullied Cloak
+									152738,	-- Unsullied Cloth Cap
+									152734,	-- Unsullied Cloth Mantle
+									153135,	-- Unsullied Cloth Robes
+									152742,	-- Unsullied Cloth Cuffs
+									153141,	-- Unsullied Cloth Mitts
+									153156,	-- Unsullied Cloth Sash
+									153154,	-- Unsullied Cloth Leggings
+									153144,	-- Unsullied Cloth Slippers
+									153139,	-- Unsullied Leather Headgear
+									153145,	-- Unsullied Leather Spaulders
+									153151,	-- Unsullied Leather Tunic
+									153142,	-- Unsullied Leather Armbands
+									152739,	-- Unsullied Leather Grips
+									153148,	-- Unsullied Leather Belt
+									152737,	-- Unsullied Leather Trousers
+									153136,	-- Unsullied Leather Treads
+									153147,	-- Unsullied Mail Coif
+									153137,	-- Unsullied Mail Spaulders
+									152741,	-- Unsullied Mail Chestguard
+									153158,	-- Unsullied Mail Bracers
+									153149,	-- Unsullied Mail Gloves
+									152744,	-- Unsullied Mail Girdle
+									153138,	-- Unsullied Mail Legguards
+									153152,	-- Unsullied Mail Boots
+									153155,	-- Unsullied Plate Helmet
+									153153,	-- Unsullied Plate Pauldrons
+									153143,	-- Unsullied Plate Breasplate
+									153150,	-- Unsullied Plate Vambraces
+									153157,	-- Unsullied Plate Gauntlets
+									153140,	-- Unsullied Plate Waistplate
+									153146,	-- Unsullied Plate Greaves
+									152743,	-- Unsullied Plate Sabatons
+									152736,	-- Unsullied Necklace
+									152735,	-- Unsullied Ring
+									152733,	-- Unsullied Trinket
+									152799,	-- Unsullied Relic
+								}},
 							}),
 							un(REMOVED_FROM_GAME, i(152650, {	-- Scuffed Krokul Cache
 								["sym"] = {
@@ -86,45 +86,45 @@ root(ROOTS.Zones, {
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(157829, {	-- Gilded Trunk
-								["sym"] = {
-									{"select", "itemID", 152740},	-- Unsullied Cloak
-									{"select", "itemID", 152738},	-- Unsullied Cloth Cap
-									{"select", "itemID", 152734},	-- Unsullied Cloth Mantle
-									{"select", "itemID", 153135},	-- Unsullied Cloth Robes
-									{"select", "itemID", 152742},	-- Unsullied Cloth Cuffs
-									{"select", "itemID", 153141},	-- Unsullied Cloth Mitts
-									{"select", "itemID", 153156},	-- Unsullied Cloth Sash
-									{"select", "itemID", 153154},	-- Unsullied Cloth Leggings
-									{"select", "itemID", 153144},	-- Unsullied Cloth Slippers
-									{"select", "itemID", 153139},	-- Unsullied Leather Headgear
-									{"select", "itemID", 153145},	-- Unsullied Leather Spaulders
-									{"select", "itemID", 153151},	-- Unsullied Leather Tunic
-									{"select", "itemID", 153142},	-- Unsullied Leather Armbands
-									{"select", "itemID", 152739},	-- Unsullied Leather Grips
-									{"select", "itemID", 153148},	-- Unsullied Leather Belt
-									{"select", "itemID", 152737},	-- Unsullied Leather Trousers
-									{"select", "itemID", 153136},	-- Unsullied Leather Treads
-									{"select", "itemID", 153147},	-- Unsullied Mail Coif
-									{"select", "itemID", 153137},	-- Unsullied Mail Spaulders
-									{"select", "itemID", 152741},	-- Unsullied Mail Chestguard
-									{"select", "itemID", 153158},	-- Unsullied Mail Bracers
-									{"select", "itemID", 153149},	-- Unsullied Mail Gloves
-									{"select", "itemID", 152744},	-- Unsullied Mail Girdle
-									{"select", "itemID", 153138},	-- Unsullied Mail Legguards
-									{"select", "itemID", 153152},	-- Unsullied Mail Boots
-									{"select", "itemID", 153155},	-- Unsullied Plate Helmet
-									{"select", "itemID", 153153},	-- Unsullied Plate Pauldrons
-									{"select", "itemID", 153143},	-- Unsullied Plate Breasplate
-									{"select", "itemID", 153150},	-- Unsullied Plate Vambraces
-									{"select", "itemID", 153157},	-- Unsullied Plate Gauntlets
-									{"select", "itemID", 153140},	-- Unsullied Plate Waistplate
-									{"select", "itemID", 153146},	-- Unsullied Plate Greaves
-									{"select", "itemID", 152743},	-- Unsullied Plate Sabatons
-									{"select", "itemID", 152736},	-- Unsullied Necklace
-									{"select", "itemID", 152735},	-- Unsullied Ring
-									{"select", "itemID", 152733},	-- Unsullied Trinket
-									{"select", "itemID", 152799},	-- Unsullied Relic
-								},
+								["sym"] = {{"select", "itemID",
+									152740,	-- Unsullied Cloak
+									152738,	-- Unsullied Cloth Cap
+									152734,	-- Unsullied Cloth Mantle
+									153135,	-- Unsullied Cloth Robes
+									152742,	-- Unsullied Cloth Cuffs
+									153141,	-- Unsullied Cloth Mitts
+									153156,	-- Unsullied Cloth Sash
+									153154,	-- Unsullied Cloth Leggings
+									153144,	-- Unsullied Cloth Slippers
+									153139,	-- Unsullied Leather Headgear
+									153145,	-- Unsullied Leather Spaulders
+									153151,	-- Unsullied Leather Tunic
+									153142,	-- Unsullied Leather Armbands
+									152739,	-- Unsullied Leather Grips
+									153148,	-- Unsullied Leather Belt
+									152737,	-- Unsullied Leather Trousers
+									153136,	-- Unsullied Leather Treads
+									153147,	-- Unsullied Mail Coif
+									153137,	-- Unsullied Mail Spaulders
+									152741,	-- Unsullied Mail Chestguard
+									153158,	-- Unsullied Mail Bracers
+									153149,	-- Unsullied Mail Gloves
+									152744,	-- Unsullied Mail Girdle
+									153138,	-- Unsullied Mail Legguards
+									153152,	-- Unsullied Mail Boots
+									153155,	-- Unsullied Plate Helmet
+									153153,	-- Unsullied Plate Pauldrons
+									153143,	-- Unsullied Plate Breasplate
+									153150,	-- Unsullied Plate Vambraces
+									153157,	-- Unsullied Plate Gauntlets
+									153140,	-- Unsullied Plate Waistplate
+									153146,	-- Unsullied Plate Greaves
+									152743,	-- Unsullied Plate Sabatons
+									152736,	-- Unsullied Necklace
+									152735,	-- Unsullied Ring
+									152733,	-- Unsullied Trinket
+									152799,	-- Unsullied Relic
+								}},
 							}),
 							un(REMOVED_FROM_GAME, i(154912, {	-- Gilded Trunk
 								["sym"] = {

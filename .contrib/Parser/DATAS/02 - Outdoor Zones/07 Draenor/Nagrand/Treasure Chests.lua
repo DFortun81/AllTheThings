@@ -2,74 +2,74 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-local COMMON_TREASURE_SYM = {
+local COMMON_TREASURE_SYM = {{"select","itemID",
 	-- Weapons
-	{"select","itemID",116627},	-- Howling Axe
-	{"select","itemID",116629},	-- Howling Bow
-	{"select","itemID",116628},	-- Howling Broadaxe
-	{"select","itemID",116630},	-- Howling Crossbow
-	{"select","itemID",116631},	-- Howling Dagger
-	{"select","itemID",116642},	-- Howling Greatsword
-	{"select","itemID",116634},	-- Howling Gun
-	{"select","itemID",116637},	-- Howling Hammer
-	{"select","itemID",116633},	-- Howling Knuckles
-	{"select","itemID",116635},	-- Howling Mace
-	{"select","itemID",116638},	-- Howling Spear
-	{"select","itemID",116640},	-- Howling Staff
-	{"select","itemID",116639},	-- Howling Staff
-	{"select","itemID",116641},	-- Howling Sword
-	{"select","itemID",116724},	-- Oshu'gun Basin
-	{"select","itemID",116636},	-- Oshu'gun Scepter
-	{"select","itemID",116632},	-- Oshu'gun Spellblade
-	{"select","itemID",116643},	-- Oshu'gun Wand
-	{"select","itemID",106727},	-- Stonecrag Shield
+	116627,	-- Howling Axe
+	116629,	-- Howling Bow
+	116628,	-- Howling Broadaxe
+	116630,	-- Howling Crossbow
+	116631,	-- Howling Dagger
+	116642,	-- Howling Greatsword
+	116634,	-- Howling Gun
+	116637,	-- Howling Hammer
+	116633,	-- Howling Knuckles
+	116635,	-- Howling Mace
+	116638,	-- Howling Spear
+	116640,	-- Howling Staff
+	116639,	-- Howling Staff
+	116641,	-- Howling Sword
+	116724,	-- Oshu'gun Basin
+	116636,	-- Oshu'gun Scepter
+	116632,	-- Oshu'gun Spellblade
+	116643,	-- Oshu'gun Wand
+	106727,	-- Stonecrag Shield
 	-- Head
-	{"select","itemID",106738},	-- Dark Star Cowl
-	{"select","itemID",106733},	-- Meadowstomper Hood
-	{"select","itemID",106749},	-- Packrunner Helm
-	{"select","itemID",106723},	-- Stonecrag Helm
+	106738,	-- Dark Star Cowl
+	106733,	-- Meadowstomper Hood
+	106749,	-- Packrunner Helm
+	106723,	-- Stonecrag Helm
 	-- Neck
-	{"select","itemID",116687},	-- Oshu'gun Amulet
+	116687,	-- Oshu'gun Amulet
 	-- Shoulders
-	{"select","itemID",106743},	-- Dark Star Shoulderpads
-	{"select","itemID",106735},	-- Meadowstomper Shoulders
-	{"select","itemID",106751},	-- Packrunner Spaulders
-	{"select","itemID",106725},	-- Stonecrag Pauldrons
+	106743,	-- Dark Star Shoulderpads
+	106735,	-- Meadowstomper Shoulders
+	106751,	-- Packrunner Spaulders
+	106725,	-- Stonecrag Pauldrons
 	-- Back
-	{"select","itemID",116723},	-- Oshu'gun Cloak
+	116723,	-- Oshu'gun Cloak
 	-- Chest
-	{"select","itemID",106741},	-- Dark Star Robe
-	{"select","itemID",106734},	-- Meadowstomper Jerkin
-	{"select","itemID",106752},	-- Packrunner Vest
-	{"select","itemID",106720},	-- Stonecrag Breastplate
+	106741,	-- Dark Star Robe
+	106734,	-- Meadowstomper Jerkin
+	106752,	-- Packrunner Vest
+	106720,	-- Stonecrag Breastplate
 	-- Wrist
-	{"select","itemID",106744},	-- Dark Star Wristwraps
-	{"select","itemID",106729},	-- Meadowstomper Bindings
-	{"select","itemID",106746},	-- Packrunner Bracers
-	{"select","itemID",106728},	-- Stonecrag Vambraces
+	106744,	-- Dark Star Wristwraps
+	106729,	-- Meadowstomper Bindings
+	106746,	-- Packrunner Bracers
+	106728,	-- Stonecrag Vambraces
 	-- Hands
-	{"select","itemID",106739},	-- Dark Star Handwraps
-	{"select","itemID",106732},	-- Meadowstomper Gloves
-	{"select","itemID",106747},	-- Packrunner Gauntlets
-	{"select","itemID",106721},	-- Stonecrag Gauntlets
+	106739,	-- Dark Star Handwraps
+	106732,	-- Meadowstomper Gloves
+	106747,	-- Packrunner Gauntlets
+	106721,	-- Stonecrag Gauntlets
 	-- Waist
-	{"select","itemID",106737},	-- Dark Star Cord
-	{"select","itemID",106736},	-- Meadowstomper Waistband
-	{"select","itemID",106745},	-- Packrunner Belt
-	{"select","itemID",106722},	-- Stonecrag Girdle
+	106737,	-- Dark Star Cord
+	106736,	-- Meadowstomper Waistband
+	106745,	-- Packrunner Belt
+	106722,	-- Stonecrag Girdle
 	-- Legs
-	{"select","itemID",106740},	-- Dark Star Leggings
-	{"select","itemID",106731},	-- Meadowstomper Britches
-	{"select","itemID",106750},	-- Packrunner Legguards
-	{"select","itemID",106724},	-- Stonecrag Legplates
+	106740,	-- Dark Star Leggings
+	106731,	-- Meadowstomper Britches
+	106750,	-- Packrunner Legguards
+	106724,	-- Stonecrag Legplates
 	-- Feet
-	{"select","itemID",106742},	-- Dark Star Sandals
-	{"select","itemID",106730},	-- Meadowstomper Boots
-	{"select","itemID",106748},	-- Packrunner Greaves
-	{"select","itemID",106726},	-- Stonecrag Sabatons
+	106742,	-- Dark Star Sandals
+	106730,	-- Meadowstomper Boots
+	106748,	-- Packrunner Greaves
+	106726,	-- Stonecrag Sabatons
 	-- Junkbox
-	{"select","itemID",116920},	-- True Steel Lockbox
-};
+	116920,	-- True Steel Lockbox
+}};
 
 root(ROOTS.Zones, {
 	m(DRAENOR, {

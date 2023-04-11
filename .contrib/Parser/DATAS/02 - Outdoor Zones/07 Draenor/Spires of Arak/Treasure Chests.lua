@@ -2,76 +2,76 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-local COMMON_TREASURE_SYM = {
+local COMMON_TREASURE_SYM = {{"select","itemID",
 	-- Weapons
-	{"select","itemID",116593},	-- Bloodmane Axe
-	{"select","itemID",116595},	-- Bloodmane Bow
-	{"select","itemID",116594},	-- Bloodmane Broadaxe
-	{"select","itemID",116596},	-- Bloodmane Crossbow
-	{"select","itemID",116597},	-- Bloodmane Dagger
-	{"select","itemID",116608},	-- Bloodmane Greatsword
-	{"select","itemID",116600},	-- Bloodmane Gun
-	{"select","itemID",116603},	-- Bloodmane Hammer
-	{"select","itemID",116599},	-- Bloodmane Knuckles
-	{"select","itemID",116601},	-- Bloodmane Mace
-	{"select","itemID",116604},	-- Bloodmane Spear
-	{"select","itemID",116605},	-- Bloodmane Staff
-	{"select","itemID",116606},	-- Bloodmane Staff
-	{"select","itemID",116607},	-- Bloodmane Sword
-	{"select","itemID",116718},	-- Ruhkmari Bowl
-	{"select","itemID",116602},	-- Ruhkmari Scepter
-	{"select","itemID",116598},	-- Ruhkmari Spellblade
-	{"select","itemID",116609},	-- Ruhkmari Wand
-	{"select","itemID",106661},	-- Talon Guard Shield
+	116593,	-- Bloodmane Axe
+	116595,	-- Bloodmane Bow
+	116594,	-- Bloodmane Broadaxe
+	116596,	-- Bloodmane Crossbow
+	116597,	-- Bloodmane Dagger
+	116608,	-- Bloodmane Greatsword
+	116600,	-- Bloodmane Gun
+	116603,	-- Bloodmane Hammer
+	116599,	-- Bloodmane Knuckles
+	116601,	-- Bloodmane Mace
+	116604,	-- Bloodmane Spear
+	116605,	-- Bloodmane Staff
+	116606,	-- Bloodmane Staff
+	116607,	-- Bloodmane Sword
+	116718,	-- Ruhkmari Bowl
+	116602,	-- Ruhkmari Scepter
+	116598,	-- Ruhkmari Spellblade
+	116609,	-- Ruhkmari Wand
+	106661,	-- Talon Guard Shield
 	-- Head
-	{"select","itemID",106667},	-- Breezestrider Hood
-	{"select","itemID",106683},	-- Snarlthorn Helm
-	{"select","itemID",106657},	-- Talon Guard Helm
-	{"select","itemID",106672},	-- Windswept Cowl
+	106667,	-- Breezestrider Hood
+	106683,	-- Snarlthorn Helm
+	106657,	-- Talon Guard Helm
+	106672,	-- Windswept Cowl
 	-- Neck
-	{"select","itemID",116685},	-- Ruhkmari Amulet
+	116685,	-- Ruhkmari Amulet
 	-- Shoulders
-	{"select","itemID",106669},	-- Breezestrider Shoulders
-	{"select","itemID",106685},	-- Snarlthorn Spaulders
-	{"select","itemID",106659},	-- Talon Guard Pauldrons
-	{"select","itemID",106677},	-- Windswept Shoulderpads
+	106669,	-- Breezestrider Shoulders
+	106685,	-- Snarlthorn Spaulders
+	106659,	-- Talon Guard Pauldrons
+	106677,	-- Windswept Shoulderpads
 	-- Back
-	{"select","itemID",116717},	-- Ruhkmari Cloak
+	116717,	-- Ruhkmari Cloak
 	-- Chest
-	{"select","itemID",106668},	-- Breezestrider Jerkin
-	{"select","itemID",106686},	-- Snarlthorn Vest
-	{"select","itemID",106654},	-- Talon Guard Breastplate
-	{"select","itemID",106675},	-- Windswept Robe
+	106668,	-- Breezestrider Jerkin
+	106686,	-- Snarlthorn Vest
+	106654,	-- Talon Guard Breastplate
+	106675,	-- Windswept Robe
 	-- Wrist
-	{"select","itemID",106663},	-- Breezestrider Bindings
-	{"select","itemID",106680},	-- Snarlthorn Bracers
-	{"select","itemID",106662},	-- Talon Guard Vambraces
-	{"select","itemID",106678},	-- Windswept Wristwraps
+	106663,	-- Breezestrider Bindings
+	106680,	-- Snarlthorn Bracers
+	106662,	-- Talon Guard Vambraces
+	106678,	-- Windswept Wristwraps
 	-- Hands
-	{"select","itemID",106666},	-- Breezestrider Gloves
-	{"select","itemID",106681},	-- Snarlthorn Gauntlets
-	{"select","itemID",106655},	-- Talon Guard Gauntlets
-	{"select","itemID",106673},	-- Windswept Handwraps
+	106666,	-- Breezestrider Gloves
+	106681,	-- Snarlthorn Gauntlets
+	106655,	-- Talon Guard Gauntlets
+	106673,	-- Windswept Handwraps
 	-- Waist
-	{"select","itemID",106670},	-- Breezestrider Waistband
-	{"select","itemID",106679},	-- Snarlthorn Belt
-	{"select","itemID",106656},	-- Talon Guard Girdle
-	{"select","itemID",106671},	-- Windswept Cord
+	106670,	-- Breezestrider Waistband
+	106679,	-- Snarlthorn Belt
+	106656,	-- Talon Guard Girdle
+	106671,	-- Windswept Cord
 	-- Legs
-	{"select","itemID",106665},	-- Breezestrider Britches
-	{"select","itemID",106684},	-- Snarlthorn Legguards
-	{"select","itemID",106658},	-- Talon Guard Legplates
-	{"select","itemID",106674},	-- Windswept Leggings
+	106665,	-- Breezestrider Britches
+	106684,	-- Snarlthorn Legguards
+	106658,	-- Talon Guard Legplates
+	106674,	-- Windswept Leggings
 	-- Feet
-	{"select","itemID",106664},	-- Breezestrider Boots
-	{"select","itemID",106682},	-- Snarlthorn Greaves
-	{"select","itemID",106660},	-- Talon Guard Sabatons
-	{"select","itemID",106676},	-- Windswept Sandals
+	106664,	-- Breezestrider Boots
+	106682,	-- Snarlthorn Greaves
+	106660,	-- Talon Guard Sabatons
+	106676,	-- Windswept Sandals
 	-- Finger
-	{"select","itemID",116719},	-- Ruhkmari Ring
+	116719,	-- Ruhkmari Ring
 	-- Junkbox
-	{"select","itemID",116920},	-- True Steel Lockbox
-};
+	116920,	-- True Steel Lockbox
+}};
 
 _.Zones =
 {

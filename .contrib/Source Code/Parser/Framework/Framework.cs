@@ -738,6 +738,8 @@ namespace ATT
             Validate_Quest(data);
             bool cloned = Validate_DataCloning(data);
 
+            Validate_Sym(data);
+
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
             if (cloned && data.ContainsKey("criteriaID"))
                 return false;
@@ -965,6 +967,40 @@ namespace ATT
             Objects.Merge(data);
 
             return true;
+        }
+
+        private static void Validate_Sym(Dictionary<string, object> data)
+        {
+            if (data.TryGetValue("sym", out List<object> symObject))
+            {
+                string previousType = null;
+                // some logic to check for duplicate 'select' commands of the same type
+                foreach (object cmdObj in symObject)
+                {
+                    cmdObj.TryConvert(out List<object> command);
+                    // check various commands
+                    if (command.Count > 0 && command[0].TryConvert(out string commandName))
+                    {
+                        if (commandName == "select")
+                        {
+                            if (command.Count > 1 && command[1].TryConvert(out string commandType))
+                            {
+                                if (previousType == commandType)
+                                {
+                                    LogDebug($"WARN: 'sym' can likely be cleaned up", data);
+                                    break;
+                                }
+
+                                previousType = commandType;
+                            }
+                        }
+                        else
+                        {
+                            previousType = null;
+                        }
+                    }
+                }
+            }
         }
 
         private static void Validate_SourceQuests(Dictionary<string, object> data)
