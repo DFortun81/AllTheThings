@@ -5205,30 +5205,32 @@ end
 local function DetermineCraftedGroups(group, FillData)
 	local itemID = group.itemID;
 	if not itemID then return; end
-	local reagentCache = app.GetDataSubMember("Reagents", itemID);
-	if not reagentCache then return; end
+	local itemRecipes = app.ReagentsDB[itemID];
+	if not itemRecipes then return; end
 
 	-- check if the item is BoP and needs skill filtering for current character, or debug mode
 	local filterSkill = not app.MODE_DEBUG and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
 
 	local craftableItemIDs = {};
 	-- item is BoP
-	if filterSkill then
-		local craftedItemID, searchRecipes, recipe, skillID;
-		-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
-		-- If the reagent itself is BOP, then only show things you can make.
-		-- find recipe(s) which creates this item
-		for recipeID,info in pairs(reagentCache[1]) do
-			craftedItemID = info[1];
-			-- print(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID);
-			-- TODO: review how this can be nil
-			if craftedItemID and not craftableItemIDs[craftedItemID] then
-				-- print("recipeID",recipeID);
+	-- if filterSkill then
+	local craftedItemID, searchRecipes, recipe, skillID;
+	-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
+	-- If the reagent itself is BOP, then only show things you can make.
+	-- find recipe(s) which creates this item
+	for recipeID,info in pairs(itemRecipes) do
+		craftedItemID = info[1];
+		-- app.PrintDebug(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID);
+		-- TODO: review how this can be nil
+		if craftedItemID and not craftableItemIDs[craftedItemID] then
+			-- app.PrintDebug("recipeID",recipeID);
+			-- item is BoP
+			if filterSkill then
 				searchRecipes = app.SearchForField("spellID", recipeID);
 				if searchRecipes and #searchRecipes > 0 then
 					recipe = searchRecipes[1];
 					skillID = GetRelativeValue(recipe, "skillID");
-					-- print(recipeID,"requires",skillID);
+					-- app.PrintDebug(recipeID,"requires",skillID,"and known:",skillID and knownSkills[skillID]);
 
 					-- ensure this character can craft the recipe
 					if skillID then
@@ -5240,13 +5242,8 @@ local function DetermineCraftedGroups(group, FillData)
 						craftableItemIDs[craftedItemID] = true;
 					end
 				end
-			end
-		end
-	-- item is BoE
-	else
-		-- Can otherwise simply iterate over the set of crafted items and add them
-		for craftedItemID,count in pairs(reagentCache[2]) do
-			if craftedItemID then
+			-- item is BoE
+			else
 				craftableItemIDs[craftedItemID] = true;
 			end
 		end
@@ -21593,9 +21590,8 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 	if not self.initialized then
 		-- cache some common functions
 		local C_TradeSkillUI = C_TradeSkillUI;
-		local C_TradeSkillUI_GetCategoryInfo = C_TradeSkillUI.GetCategoryInfo;
-		local C_TradeSkillUI_GetRecipeInfo = C_TradeSkillUI.GetRecipeInfo;
-		local C_TradeSkillUI_GetRecipeSchematic = C_TradeSkillUI.GetRecipeSchematic;
+		local C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic
+			= C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo, C_TradeSkillUI.GetRecipeSchematic;
 
 		self.initialized = true;
 		self.SkillsInit = {};
@@ -21619,21 +21615,23 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			['g'] = { },
 		});
 
+		AllTheThingsAD.Reagents = nil;
 		-- Adds the pertinent information about a given recipeID to the reagentcache
-		local function CacheRecipeSchematic(recipeID, skipcaching, reagentCache)
+		local function CacheRecipeSchematic(recipeID)
 			-- TODO: this can be called successfilly without tradeskillUI open... potentially use function runner
 			local schematic = C_TradeSkillUI_GetRecipeSchematic(recipeID, false);
 			local craftedItemID = schematic.outputItemID;
-			-- Tag's attempt to fix an error when opening Enchanting
-			if craftedItemID == nil then return end
+			if not craftedItemID then return end
 			-- app.PrintDebug("Recipe",recipeID,"==>",craftedItemID)
-			local reagentItem, reagentCount, reagentItemID;
 			-- Recipes now have Slots for available Regeants...
 			-- TODO: schematic.reagentSlotSchematics is often EMPTY on first query??
 			if #schematic.reagentSlotSchematics == 0 then
 				-- Milling Recipes...
 				app.PrintDebug("EMPTY SCHEMATICS",recipeID)
+				return;
 			end
+			local reagentCache = GetDataMember("Reagents", app.ReagentsDB);
+			local itemRecipes, reagentCount, reagentItemID;
 			for _,reagentSlot in ipairs(schematic.reagentSlotSchematics) do
 				-- reagentType: 1 = required, 0 = optional
 				if reagentSlot.reagentType == 1 then
@@ -21641,39 +21639,31 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 					-- Each available Reagent for the Slot can be associated to the Recipe/Output Item
 					for _,reagentSlotSchematic in ipairs(reagentSlot.reagents) do
 						reagentItemID = reagentSlotSchematic.itemID;
-						-- Make sure a cache table exists for this item.
-						-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
-						-- Index 2: The Crafted Item IDs => reagentCount
-						-- TODO: potentially re-design this structure
-						-- current:
-						-- reagentCache[reagentItemID][1][<recipeID>] = { craftedItemID, reagentCount }
-						-- reagentCache[reagentItemID][2][craftedItemID] = reagentCount
-						-- 2 table design due to many - many - many relationships
-						-- reagentCache["reagent"][<itemID>][<recipeID>] = Count
-						-- reagentCache["recipe"][<recipeID>][<craftedItemID>] = Count
+						-- only requirement is Reagent -> Recipe -> Crafted | Reagent Count
+						-- Minimum Structure
+						-- reagentCache[reagentItemID][<recipeID>] = { craftedItemID, reagentCount }
 						if reagentItemID then
-							reagentItem = reagentCache[reagentItemID];
-							if skipcaching then
-								-- remove any existing cached recipes
-								if reagentItem then
-									-- app.PrintDebug("removing reagent cache info",reagentItemID,recipeID,craftedItemID)
-									reagentItem[1][recipeID] = nil;
-									reagentItem[2][craftedItemID] = nil;
-								end
-							else
-								if not reagentItem then
-									reagentItem = { {}, {} };
-									reagentCache[reagentItemID] = reagentItem;
-								end
-								-- app.PrintDebug("reagentItemID",reagentItemID,"craft",craftedItemID,"using",reagentCount,"via",recipeID)
-								reagentItem[1][recipeID] = { craftedItemID, reagentCount };
-								reagentItem[2][craftedItemID] = reagentCount;
+							itemRecipes = reagentCache[reagentItemID];
+							if not itemRecipes then
+								itemRecipes = { };
+								reagentCache[reagentItemID] = itemRecipes;
 							end
+							app.PrintDebug("Reagent",reagentItemID,"x",reagentCount,"=>",craftedItemID,"via",recipeID)
+							itemRecipes[recipeID] = { craftedItemID, reagentCount };
 						end
-
 					end
 				end
 			end
+		end
+		app.HarvestRecipes = function()
+			app.FunctionRunner.SetPerFrame(100);
+			local Run = app.FunctionRunner.Run;
+			for spellID,data in pairs(app.SearchForFieldContainer("spellID")) do
+				Run(CacheRecipeSchematic, spellID);
+			end
+			app.FunctionRunner.OnEnd(function()
+				app.print("Harvested all Sourced Recipes & Reagents => [Reagents]")
+			end);
 		end
 		local function UpdateLocalizedCategories(self, updates)
 			if not updates["Categories"] then
@@ -21698,16 +21688,15 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				-- app.PrintDebug("UpdateLearnedRecipes",self.lastTradeSkillID)
 				updates["Recipes"] = true;
 				local learned, recipeID = {};
-				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
-				local skipcaching, spellRecipeInfo, categoryData, cachedRecipe, currentCategoryID;
+				local spellRecipeInfo, categoryData, currentCategoryID;
 				local categories = AllTheThingsAD.LocalizedCategoryNames;
-				-- print("Scanning recipes",#recipeIDs)
+				-- app.PrintDebug("Scanning recipes",#recipeIDs)
 				for i = 1,#recipeIDs do
 					spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeIDs[i]);
+					-- app.PrintDebug("Recipe",recipeIDs[i])
 					if spellRecipeInfo then
-						skipcaching = nil;
 						recipeID = spellRecipeInfo.recipeID;
 						currentCategoryID = spellRecipeInfo.categoryID;
 						if not categories[currentCategoryID] then
@@ -21715,10 +21704,6 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 							if categoryData then
 								categories[currentCategoryID] = categoryData.name;
 							end
-						end
-						-- cannot be crafted, so don't cache the outputs for reagent tooltips
-						if spellRecipeInfo.disabled then
-							skipcaching = true;
 						end
 						-- recipe is learned, so cache that it's learned regardless of being craftable
 						if spellRecipeInfo.learned then
@@ -21745,22 +21730,11 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 								-- local link = app:Linkify(recipeID, app.Colors.ChatLink, "search:spellID:"..recipeID);
 								-- app.PrintDebug("Unlearned Recipe", link);
 							end
-							-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
-							-- also, don't remove the data if *any* character on the account is marked as knowing the recipe
-							if not spellRecipeInfo.disabled and not acctSpells[recipeID] then
-								-- print("unlearned, enabled RecipeID",recipeID)
-								cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
-								-- verify the merged cached version is not 'super' unobtainable
-								if cachedRecipe and cachedRecipe.u and cachedRecipe.u < 3 then
-									-- print("Ignoring Unobtainable RecipeID",recipeID,cachedRecipe.u)
-									skipcaching = true;
-								end
-							end
 						end
 
-						-- Does this Recipe craft an Item?
-						if spellRecipeInfo.createsItem then
-							CacheRecipeSchematic(recipeID, skipcaching, reagentCache);
+						-- moved to stand-alone on-demand function across all known professions, or called if DEBUG_PRINT is enabled to harvest un-sourced recipes
+						if app.DEBUG_PRINT then
+							CacheRecipeSchematic(recipeID);
 						end
 					end
 				end
@@ -23504,7 +23478,7 @@ app.ProcessAuctionData = function()
 	end
 
 	-- Process the Non-Collectible Items for Reagents
-	local reagentCache = app.GetDataMember("Reagents");
+	local reagentCache = app.ReagentsDB;
 	if reagentCache and searchResultsByKey.itemID then
 		local cachedItems = searchResultsByKey.itemID;
 		searchResultsByKey.itemID = {};
@@ -24043,7 +24017,6 @@ app.Startup = function()
 		--"LocalizedFlightPathDB",
 		"Position",
 		"RandomSearchFilter",
-		"Reagents",
 	}) do
 		rawset(oldsettings, key, rawget(AllTheThingsAD, key));
 	end
@@ -24179,14 +24152,6 @@ app.InitDataCoroutine = function()
 
 	-- Harvest the Spell IDs for Conversion.
 	app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
-
-	-- Verify that reagent cache is of the correct format by checking a special key
-	local reagentCache, reagentCacheVer = app.GetDataMember("Reagents", {}), 2;
-	if not reagentCache[-1] or reagentCache[-1] < reagentCacheVer then
-		C_Timer.After(30, function() app.print(L["REAGENT_CACHE_OUT_OF_DATE"]); end);
-		wipe(reagentCache);
-		reagentCache[-1] = reagentCacheVer;
-	end
 
 	-- Assign DGU OnUpdates
 	AssignDirectGroupOnUpdates();
