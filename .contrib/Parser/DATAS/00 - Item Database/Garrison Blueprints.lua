@@ -1,4 +1,3 @@
---[[
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
 local Items = root(ROOTS.ItemDBConditional);
 local i = function(itemID, questID)
@@ -19,10 +18,9 @@ i(128252, 39360);	-- Equipment Blueprint: True Iron Rudder
 i(128491, 39359);	-- Equipment Blueprint: Tuskarr Fishing Net
 i(128489, 39358);	-- Equipment Blueprint: Unsinkable
 -- NYI --
---q(0, 39370);	-- Equipment Blueprint: Ammo Reserves
---q(0, 39369);	-- Equipment Blueprint: Automated Sky Scanner
-q(128260, 39368);	-- Equipment Blueprint: Blast Furnace
---q(0, 39367);	-- Equipment Blueprint: Extra Quarters
---q(0, 39362);	-- Equipment Blueprint: Q-43 Noisemaker Mines
---q(0, 39361);	-- Equipment Blueprint: Sonic Amplification Field
-]]--
+i(0, 39370);	-- Equipment Blueprint: Ammo Reserves
+i(0, 39369);	-- Equipment Blueprint: Automated Sky Scanner
+i(128260, 39368);	-- Equipment Blueprint: Blast Furnace
+i(0, 39367);	-- Equipment Blueprint: Extra Quarters
+i(0, 39362);	-- Equipment Blueprint: Q-43 Noisemaker Mines
+i(0, 39361);	-- Equipment Blueprint: Sonic Amplification Field

@@ -1,4 +1,3 @@
---[[
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
 local Items = root(ROOTS.ItemDBConditional);
 local i = function(itemID, questID, repeatable)
@@ -20,4 +19,3 @@ i(128666, 39616);	-- Imported Trees
 i(128667, 39767);	-- Little Helpers
 i(128669, 39712);	-- Old Box of Decorations
 i(128668, 39671, true);	-- Festive Outfits
-]]--

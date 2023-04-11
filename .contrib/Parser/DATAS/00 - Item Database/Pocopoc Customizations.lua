@@ -1,4 +1,3 @@
---[[
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
 local Items = root(ROOTS.ItemDBConditional);
 local i = function(itemID, questID)
@@ -30,4 +29,3 @@ i(189717, 65483);	-- Pocopoc's Shielded Core
 i(189712, 65477);	-- Pocopoc's Silver and Beryllium Components
 i(189718, 65484);	-- Pocopoc's Upgraded Core
 i(190062, 65530);	-- Wicked Pocopoc
-]]--

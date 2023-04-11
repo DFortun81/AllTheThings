@@ -1,4 +1,3 @@
---[[
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
 local Items = root(ROOTS.ItemDBConditional);
 local i = function(itemID, questID)
@@ -46,4 +45,3 @@ i(127867, 39267);	-- A Tiny Ninja Shroud
 i(127870, 39268);	-- A Tiny Pirate Hat
 i(127869, 39266);	-- A Tiny Plated Helm
 i(127865, 39265);	-- A Tiny Viking Helmet
-]]--
