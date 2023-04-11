@@ -769,6 +769,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				}),
 			}),
+			n(140139, {	-- Spearmon Kol
+				["coord"] = { 77.0, 16.6, ZULDAZAR },
+				["races"] = HORDE_ONLY,
+				["sym"] = {
+					{"select", "itemID", 2531 },    -- Great Axe
+					{"select", "itemID", 15811 },    -- Heavy Spear
+					{"select", "itemID", 8177 },    -- Practice Sword
+					{"select", "itemID", 49395 },    -- Rigging Slicer
+					{"select", "itemID", 15810 },    -- Short Spear
+				},
+			}),
 			n(143555, {	-- Xander Silberman
 				["coord"] = { 51.6, 58.2, ZULDAZAR },
 				["itemID"] = 137642,	-- Mark of Honor

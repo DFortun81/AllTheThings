@@ -11,8 +11,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["sym"] = {
 					{"select", "itemID", 2531 },    -- Great Axe
 					{"select", "itemID", 15811 },    -- Heavy Spear
-					{"select", "itemID", 8177 },    -- Practice Sword
 					{"select", "itemID", 15810 },    -- Short Spear
+				},
+				["g"] = {
+					i(8177),	-- Practice Sword
+					i(49395),	-- Rigging Slicer
 				},
 			}),
 			n(132153, {	-- "Black Eye" Zenru
@@ -894,6 +897,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					{"select", "itemID", 2531 },    -- Great Axe
 					{"select", "itemID", 15811 },    -- Heavy Spear
 					{"select", "itemID", 8177 },    -- Practice Sword
+					{"select", "itemID", 49395 },    -- Rigging Slicer
 					{"select", "itemID", 15810 },    -- Short Spear
 				},
 			}),
