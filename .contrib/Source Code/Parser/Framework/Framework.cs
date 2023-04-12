@@ -987,8 +987,19 @@ namespace ATT
                             {
                                 if (previousType == commandType)
                                 {
-                                    LogDebug($"WARN: 'sym' can likely be cleaned up", data);
+                                    LogDebug($"WARN: 'sym-select' can be cleaned up", data);
                                     break;
+                                }
+                                else
+                                {
+                                    List<object> selections = command.Skip(2).ToList();
+                                    List<decimal> selectionValues = selections.AsDataList<decimal>().ToList();
+
+                                    // verify all select values are decimals
+                                    if (selections.Count != selectionValues.Count)
+                                    {
+                                        LogError($"'sym-select' contains non-numeric selection values", data);
+                                    }
                                 }
 
                                 previousType = commandType;
