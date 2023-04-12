@@ -423,7 +423,7 @@ _.Zones =
 								i(133843),	-- Recipe: Nightborne Delicacy Platter [Rank 2]
 								i(133863),	-- Recipe: Nightborne Delicacy Platter [Rank 3]
 							}),
-							sharedData({["sym"]={{"select", "itemID",
+							sharedData({["sym"]={{"select","itemID",
 									133842,	-- Recipe: Azshari Salad [Rank 2]
 									133862,	-- Recipe: Azshari Salad [Rank 3]
 									133838,	-- Recipe: Barracuda Mrglgagh [Rank 2]

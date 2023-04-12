@@ -6,66 +6,66 @@
 -- the 'cost' on the Tier items sold for gold since it would make it appear that they are sold using the Tier Token, when they are not.
 
 local HELM_CONQ = i(71675, {	-- Helm of the Fiery Conqueror
-	["sym"] = {
-		{"select","itemID",71282},	-- Balespider's Hood
-		{"select","itemID",71272},	-- Cowl of the Cleansing Flame
-		{"select","itemID",71277},	-- Hood of the Cleansing Flame
-		{"select","itemID",70948},	-- Immolation Faceguard
-		{"select","itemID",71093},	-- Immolation Headguard
-		{"select","itemID",71065},	-- Immolation Helmet
-	},
+	["sym"] = {{"select","itemID",
+		71282,    -- Balespider's Hood
+		71272,    -- Cowl of the Cleansing Flame
+		71277,    -- Hood of the Cleansing Flame
+		70948,    -- Immolation Faceguard
+		71093,    -- Immolation Headguard
+		71065,    -- Immolation Helmet
+	}},
 });
 local HELM_PROT = i(71682, {	-- Helm of the Fiery Protector
-	["sym"] = {
-		{"select","itemID",71298},	-- Erupting Volcanic Faceguard
-		{"select","itemID",71293},	-- Erupting Volcanic Headpiece
-		{"select","itemID",71303},	-- Erupting Volcanic Helmet
-		{"select","itemID",70944},	-- Faceguard of the Molten Giant
-		{"select","itemID",71051},	-- Flamewaker's Headguard
-		{"select","itemID",71070},	-- Helmet of the Molten Giant
-	},
+	["sym"] = {{"select","itemID",
+		71298,    -- Erupting Volcanic Faceguard
+		71293,    -- Erupting Volcanic Headpiece
+		71303,    -- Erupting Volcanic Helmet
+		70944,    -- Faceguard of the Molten Giant
+		71051,    -- Flamewaker's Headguard
+		71070,    -- Helmet of the Molten Giant
+	}},
 });
 local HELM_VANQ = i(71668, {	-- Helm of the Fiery Vanquisher
-	["sym"] = {
-		{"select","itemID",71047},	-- Dark Phoenix Helmet
-		{"select","itemID",70954},	-- Elementium Deathplate Faceguard
-		{"select","itemID",71060},	-- Elementium Deathplate Helmet
-		{"select","itemID",71287},	-- Firehawk Hood
-		{"select","itemID",71108},	-- Obsidian Arborweave Cover
-		{"select","itemID",71098},	-- Obsidian Arborweave Headpiece
-		{"select","itemID",71103},	-- Obsidian Arborweave Helm
-	},
+	["sym"] = {{"select","itemID",
+		71047,    -- Dark Phoenix Helmet
+		70954,    -- Elementium Deathplate Faceguard
+		71060,    -- Elementium Deathplate Helmet
+		71287,    -- Firehawk Hood
+		71108,    -- Obsidian Arborweave Cover
+		71098,    -- Obsidian Arborweave Headpiece
+		71103,    -- Obsidian Arborweave Helm
+	}},
 });
 local SHOULDER_CONQ = i(71681, {	-- Mantle of the Fiery Conqueror
-	["sym"] = {
-		{"select","itemID",71285},	-- Balespider's Mantle
-		{"select","itemID",71095},	-- Immolation Mantle
-		{"select","itemID",71067},	-- Immolation Pauldrons
-		{"select","itemID",70946},	-- Immolation Shoulderguards
-		{"select","itemID",71275},	-- Mantle of the Cleansing Flame
-		{"select","itemID",71280},	-- Shoulderwraps of the Cleansing Flame
-	},
+	["sym"] = {{"select","itemID",
+		71285,    -- Balespider's Mantle
+		71095,    -- Immolation Mantle
+		71067,    -- Immolation Pauldrons
+		70946,    -- Immolation Shoulderguards
+		71275,    -- Mantle of the Cleansing Flame
+		71280,    -- Shoulderwraps of the Cleansing Flame
+	}},
 });
 local SHOULDER_PROT = i(71688, {	-- Mantle of the Fiery Protector
-	["sym"] = {
-		{"select","itemID",71300},	-- Erupting Volcanic Mantle
-		{"select","itemID",71295},	-- Erupting Volcanic Shoulderwraps
-		{"select","itemID",71305},	-- Erupting Volcanic Spaulders
-		{"select","itemID",71053},	-- Flamewaker's Spaulders
-		{"select","itemID",71072},	-- Pauldrons of the Molten Giant
-		{"select","itemID",70941},	-- Shoulderguards of the Molten Giant
-	},
+	["sym"] = {{"select","itemID",
+		71300,    -- Erupting Volcanic Mantle
+		71295,    -- Erupting Volcanic Shoulderwraps
+		71305,    -- Erupting Volcanic Spaulders
+		71053,    -- Flamewaker's Spaulders
+		71072,    -- Pauldrons of the Molten Giant
+		70941,    -- Shoulderguards of the Molten Giant
+	}},
 });
 local SHOULDER_VANQ = i(71674, {	-- Mantle of the Fiery Vanquisher
-	["sym"] = {
-		{"select","itemID",71049},	-- Dark Phoenix Spaulders
-		{"select","itemID",71062},	-- Elementium Deathplate Pauldrons
-		{"select","itemID",70951},	-- Elementium Deathplate Shoulderguards
-		{"select","itemID",71290},	-- Firehawk Mantle
-		{"select","itemID",71106},	-- Obsidian Arborweave Mantle
-		{"select","itemID",71111},	-- Obsidian Arborweave Shoulderwraps
-		{"select","itemID",71101},	-- Obsidian Arborweave Spaulders
-	},
+	["sym"] = {{"select","itemID",
+		71049,    -- Dark Phoenix Spaulders
+		71062,    -- Elementium Deathplate Pauldrons
+		70951,    -- Elementium Deathplate Shoulderguards
+		71290,    -- Firehawk Mantle
+		71106,    -- Obsidian Arborweave Mantle
+		71111,    -- Obsidian Arborweave Shoulderwraps
+		71101,    -- Obsidian Arborweave Spaulders
+	}},
 });
 
 root(ROOTS.Instances, tier(CATA_TIER, {

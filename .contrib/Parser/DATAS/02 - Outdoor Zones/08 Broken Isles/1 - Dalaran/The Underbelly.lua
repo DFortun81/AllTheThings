@@ -24,7 +24,7 @@ _.Zones =
 				n(VENDORS, {
 					n(106056, {	-- Charles Seaton
 						["coord"] = { 74.2, 54.8, LEGION_THE_UNDERBELLY },
-						["sym"] = {{"select", "itemID",
+						["sym"] = {{"select","itemID",
 							1198,	-- Claymore
 							851,	-- Cutlass
 							922,	-- Dacian Falx
@@ -73,7 +73,7 @@ _.Zones =
 					}),
 					n(106054, {	-- Kareth
 						["coord"] = { 75.2, 57.0, LEGION_THE_UNDERBELLY },
-						["sym"] = {{"select", "itemID",
+						["sym"] = {{"select","itemID",
 							2520,	-- Broadsword
 							1198,	-- Claymore
 							851,	-- Cutlass

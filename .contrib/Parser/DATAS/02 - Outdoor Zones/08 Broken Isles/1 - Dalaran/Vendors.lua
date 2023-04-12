@@ -15,7 +15,7 @@ _.Zones =
 				}),
 				n(96780,  {	-- Aerith Primrose
 					["coord"] = { 57.2, 52.4, LEGION_DALARAN },
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						3422,	-- Beautiful Wildflowers
 						3420,	-- Black Rose
 						3424,	-- Bouquet Of Black Roses

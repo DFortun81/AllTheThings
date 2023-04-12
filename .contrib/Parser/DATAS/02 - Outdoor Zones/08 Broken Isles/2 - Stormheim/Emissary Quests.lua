@@ -25,24 +25,24 @@ _.Zones =
 							},
 						}),
 						un(REMOVED_FROM_GAME, i(154905, {	-- Valarjar Cache
-							["sym"] = {
-								{"select", "itemID", 157824},	-- Valarjar Cache
-							},
+							["sym"] = {{"select","itemID",
+								157824,    -- Valarjar Cache
+							}},
 						})),
 						un(REMOVED_FROM_GAME, i(151466, {	-- Valarjar Cache
-							["sym"] = {
-								{"select", "itemID", 157824},	-- Valarjar Cache
-							},
+							["sym"] = {{"select","itemID",
+								157824,    -- Valarjar Cache
+							}},
 						})),
 						un(REMOVED_FROM_GAME, i(146749, {	-- Valarjar Cache
-							["sym"] = {
-								{"select", "itemID", 157824},	-- Valarjar Cache
-							},
+							["sym"] = {{"select","itemID",
+								157824,    -- Valarjar Cache
+							}},
 						})),
 						un(REMOVED_FROM_GAME, i(137562, {	-- Valarjar Cache
-							["sym"] = {
-								{"select", "itemID", 157824},	-- Valarjar Cache
-							},
+							["sym"] = {{"select","itemID",
+								157824,    -- Valarjar Cache
+							}},
 						})),
 					},
 				}),

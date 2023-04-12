@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			n(137431, {	-- Annie Lacier
 				["coord"] = { 50.6, 49.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select", "itemID",
+				["sym"] = {{"select","itemID",
 					2130,	-- club
 					851,	-- Cutlass
 					2139,	-- dirk
@@ -2361,8 +2361,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			n(123675, {	-- Patrick Markson
 				["coord"] = { 74.0, 16.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["sym"] = {{"select", "itemID",
-					3024,	   -- Bkp 2700 Enforcer
+				["sym"] = {{"select","itemID",
+					3024,	-- Bkp 2700 Enforcer
 					2511,	-- Hunter's Boomstick
 					3023,	-- Large Bore Blunderbuss
 					2509,	-- Ornate Blunderbuss

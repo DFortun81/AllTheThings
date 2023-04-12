@@ -1278,9 +1278,9 @@ root(ROOTS.Zones, {
 					n(28040, {	-- Mardan Thunderhoof <Gunsmith>
 						["classes"] = { HUNTER },
 						["coord"] = { 27.2, 59.6, SHOLAZAR_BASIN },
-						["sym"] = {
-							{"select", "itemID", 30758 },	-- Aldor Guardian Rifle
-						},
+						["sym"] = {{"select","itemID",
+							30758,	-- Aldor Guardian Rifle
+						}},
 						["groups"] = {
 							i(136855, {	-- Hunter's Call (TOY!)
 								["timeline"] = { "added 7.0.3.22248" },

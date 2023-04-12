@@ -778,9 +778,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			o(141979, {	-- Ancient Treasure
 				["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",
 				["modelScale"] = 3,
-				["sym"] = {	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
-					{"select","itemID",8029},	-- Plans: Wicked Mithril Bade
-				},
+				["sym"] = {{"select","itemID",	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
+					8029,    -- Plans: Wicked Mithril Bade
+				}},
 			}),
 			o(131474, {	-- The Discs of Norgannon
 				["description"] = "Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",

@@ -1608,16 +1608,16 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(37936, {	-- Morgan Dayblaze
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 3422 },    -- Beautiful Wildflowers
-						{"select", "itemID", 3420 },    -- Black Rose
-						{"select", "itemID", 3424 },    -- Bouquet Of Black Roses
-						{"select", "itemID", 3423 },    -- Bouquet Of White Roses
-						{"select", "itemID", 30749 },    -- Draenic Sparring Blade
-						{"select", "itemID", 30750 },    -- Draenic Warblade
-						{"select", "itemID", 3419 },    -- Red Rose
-						{"select", "itemID", 3421 },    -- Simple Wildflowers
-					},
+					["sym"] = {{"select","itemID",
+						3422,    -- Beautiful Wildflowers
+						3420,    -- Black Rose
+						3424,    -- Bouquet Of Black Roses
+						3423,    -- Bouquet Of White Roses
+						30749,    -- Draenic Sparring Blade
+						30750,    -- Draenic Warblade
+						3419,    -- Red Rose
+						3421,    -- Simple Wildflowers
+					}},
 				}),
 				n(38182, {	-- Niby the Almighty <Warlock Armor>
 					["races"] = ALLIANCE_ONLY,
@@ -1955,10 +1955,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 				n(37903, {	-- Shely Steelbowels
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 30749 },    -- Draenic Sparring Blade
-						{"select", "itemID", 30750 },	-- Draenic Warblade
-					},
+					["sym"] = {{"select","itemID",
+						30749,    -- Draenic Sparring Blade
+						30750,    -- Draenic Warblade
+					}},
 				}),
 				n(37998, {	-- Talan Moonstrike <Hunter Armor>
 					["races"] = ALLIANCE_ONLY,

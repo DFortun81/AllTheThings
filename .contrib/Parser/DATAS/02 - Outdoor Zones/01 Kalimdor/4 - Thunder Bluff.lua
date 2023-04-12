@@ -740,7 +740,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(8359, {	-- Ahanu
 					["coord"] = { 45.6, 55.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						236,	-- Cured Leather Armor
 						1849,	-- Cured Leather Belt
 						238,	-- Cured Leather Boots
@@ -784,7 +784,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3019, {	-- Delgo Ragetotem <Axe Merchant>
 					["coord"] = { 53.8, 57.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						926,	-- Battle Axe
 						2025,	-- Bearded Axe
 						2523,	-- Bullova
@@ -806,7 +806,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(8360, {	-- Elki
 					["coord"] = { 45.2, 56.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						17187,	-- Banded Buckler
 						847,	-- Chainmail Armor
 						1845,	-- Chainmail Belt
@@ -828,7 +828,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3020, {	-- Etu Ragetotem
 					["coord"] = { 58.2, 52.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						925,	-- Flail
 						1197,	-- Giant Mace
 						2030,	-- Gnarled Staff
@@ -844,7 +844,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3095, {	-- Fela <Heavy Armor Merchant>
 					["coord"] = { 42.8, 44.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						2419,	-- Augmented Chain Belt
 						2420,	-- Augmented Chain Boots
 						2421,	-- Augmented Chain Bracers
@@ -884,7 +884,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3093, {	-- Grod
 					["coord"] = { 42.4, 43.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						2371,	-- Battered Leather Belt
 						2373,	-- Battered Leather Boots
 						2374,	-- Battered Leather Bracers
@@ -915,7 +915,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(8358, {	-- Hewa <Cloth Armor Merchant>
 					["coord"] = { 45.6, 56.7, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						837,	-- Heavy Weave Armor
 						3589,	-- Heavy Weave Belt
 						3590,	-- Heavy Weave Bracers
@@ -938,7 +938,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3018, {	-- Hogor Thunderhoof
 					["coord"] = { 55.6, 56.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						3024,	-- Bkp 2700 Enforcer
 						2511,	-- Hunter's Boomstick
 						3023,	-- Large Bore Blunderbuss
@@ -951,7 +951,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(2997, {	-- Jyn Stonehoof
 					["coord"] = { 41.6, 62.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						2025,	-- Bearded Axe
 						1194,	-- bastard sword
 						2479,	-- broad axe
@@ -985,7 +985,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3021, {	-- Kard Ragetotem
 					["coord"] = { 53.6, 56.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						2520,	-- Broadsword
 						1198,	-- Claymore
 						851,	-- Cutlass
@@ -1004,7 +1004,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
 					["coord"] = { 46.8, 45.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						3027,	-- Heavy Recurve Bow
 						3026,	-- Reinforced Bow
 					}},
@@ -1103,7 +1103,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(8398, {	-- Ohanko <Blade Vendor>
 					["coord"] = { 53.6, 56.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						2523,	-- bullova
 						2531,	-- great axe
 						2521,	-- Flamberge
@@ -1175,7 +1175,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(3022, {	-- Sunn Ragetotem
 					["coord"] = { 49.6, 49.8, THUNDER_BLUFF },
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						2527,	-- Battle Staff
 						2535,	-- War Staff
 					}},
@@ -1183,7 +1183,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3023, {	-- Sura Wildmane <War Harness Vendor>
 					["coord"] = { 51.8, 54.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						6526,	-- Battle Harness
 						6523,	-- Buckled Harness
 						6525,	-- Grunt's Harness
@@ -1193,7 +1193,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3092, {	-- Tagain
 					["coord"] = { 43.4, 43.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
+					["sym"] = {{"select","itemID",
 						2617,	-- Burning Robes
 						2615,	-- Chromatic Robe
 						2613,	-- Double Stitched Robes

@@ -977,7 +977,12 @@ namespace ATT
                 // some logic to check for duplicate 'select' commands of the same type
                 foreach (object cmdObj in symObject)
                 {
-                    cmdObj.TryConvert(out List<object> command);
+                    if (!cmdObj.TryConvert(out List<object> command))
+                    {
+                        LogError("Incorrect 'sym' command structure encountered", data);
+                        break;
+                    }
+
                     // check various commands
                     if (command.Count > 0 && command[0].TryConvert(out string commandName))
                     {

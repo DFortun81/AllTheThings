@@ -29,7 +29,7 @@ root(ROOTS.Zones, {
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(157831, {	-- Scuffed Krokul Cache
-								["sym"] = {{"select", "itemID",
+								["sym"] = {{"select","itemID",
 									152740,	-- Unsullied Cloak
 									152738,	-- Unsullied Cloth Cap
 									152734,	-- Unsullied Cloth Mantle
@@ -70,14 +70,14 @@ root(ROOTS.Zones, {
 								}},
 							}),
 							un(REMOVED_FROM_GAME, i(152650, {	-- Scuffed Krokul Cache
-								["sym"] = {
-									{"select", "itemID", 157831},	-- Scuffed Krokul Cache
-								},
+								["sym"] = {{"select","itemID",
+									157831,    -- Scuffed Krokul Cache
+								}},
 							})),
 							un(REMOVED_FROM_GAME, i(154911, {	-- Scuffed Krokul Cache
-								["sym"] = {
-									{"select", "itemID", 157831},	-- Scuffed Krokul Cache
-								},
+								["sym"] = {{"select","itemID",
+									157831,    -- Scuffed Krokul Cache
+								}},
 							})),
 						},
 					}),
@@ -86,7 +86,7 @@ root(ROOTS.Zones, {
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(157829, {	-- Gilded Trunk
-								["sym"] = {{"select", "itemID",
+								["sym"] = {{"select","itemID",
 									152740,	-- Unsullied Cloak
 									152738,	-- Unsullied Cloth Cap
 									152734,	-- Unsullied Cloth Mantle
@@ -127,14 +127,14 @@ root(ROOTS.Zones, {
 								}},
 							}),
 							un(REMOVED_FROM_GAME, i(154912, {	-- Gilded Trunk
-								["sym"] = {
-									{"select", "itemID", 157829},	-- Gilded Trunk
-								},
+								["sym"] = {{"select","itemID",
+									157829,    -- Gilded Trunk
+								}},
 							})),
 							un(REMOVED_FROM_GAME, i(152652, {	-- Gilded Trunk
-								["sym"] = {
-									{"select", "itemID", 157829},	-- Gilded Trunk
-								},
+								["sym"] = {{"select","itemID",
+									157829,    -- Gilded Trunk
+								}},
 							})),
 						},
 					}),

@@ -9,6 +9,11 @@ namespace ATT
     public static partial class Framework
     {
         /// <summary>
+        /// Represents whether any Error logging has occurred
+        /// </summary>
+        public static bool IsErrored { get; private set; }
+
+        /// <summary>
         /// Outputs the message to the Trace only if DebugMode is enabled, including the serialized data if provided
         /// </summary>
         /// <param name="message"></param>
@@ -55,6 +60,7 @@ namespace ATT
         /// <param name="message"></param>
         public static void LogError(string message, object data = null)
         {
+            IsErrored = true;
             Log("ERROR: " + message + (data != null ? (" " + ToJSON(data)) : string.Empty));
         }
     }

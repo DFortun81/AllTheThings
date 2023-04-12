@@ -1938,16 +1938,16 @@ root(ROOTS.Zones, {
 					n(19499, {	-- Cahill <Weaponsmith>
 						["coord"] = { 37.6, 63.8, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{"select", "itemID", 30754 },    -- Ancient Bone Mace
-							{"select", "itemID", 30749 },    -- Draenic Sparring Blade
-							{"select", "itemID", 30750 },    -- Draenic Warblade
-							{"select", "itemID", 30752 },    -- Maghari Battleaxe
-							{"select", "itemID", 30755 },    -- Maghari Fighting Claw
-							{"select", "itemID", 30751 },    -- Maghari Light Axe
-							{"select", "itemID", 11308 },    -- Sylvan Shortbow
-							{"select", "itemID", 30753 },    -- Warphorn Spear
-						},
+						["sym"] = {{"select","itemID",
+							30754,	-- Ancient Bone Mace
+							30749,	-- Draenic Sparring Blade
+							30750,	-- Draenic Warblade
+							30752,	-- Maghari Battleaxe
+							30755,	-- Maghari Fighting Claw
+							30751,	-- Maghari Light Axe
+							11308,	-- Sylvan Shortbow
+							30753,	-- Warphorn Spear
+						}},
 						["groups"] = {
 							i(30758),	-- Aldor Guardian Rifle
 							i(30757),	-- Draenic Light Crossbow
@@ -2083,15 +2083,15 @@ root(ROOTS.Zones, {
 					}),
 					n(20917, {	-- Zinyen Swiftstrider <Weapon Vendor>
 						["coord"] = { 61.6, 38.4, BLADES_EDGE_MOUNTAINS },
-						["sym"] = {
-							{"select", "itemID", 30754 },    -- Ancient Bone Mace
-							{"select", "itemID", 30749 },    -- Draenic Sparring Blade
-							{"select", "itemID", 30750 },    -- Draenic Warblade
-							{"select", "itemID", 30752 },    -- Maghari Battleaxe
-							{"select", "itemID", 30755 },    -- Maghari Fighting Claw
-							{"select", "itemID", 30751 },    -- Maghari Light Axe
-							{"select", "itemID", 30753 },    -- Warphorn Spear
-						},
+						["sym"] = {{"select", "itemID",
+							30754,	-- Ancient Bone Mace
+							30749,	-- Draenic Sparring Blade
+							30750,	-- Draenic Warblade
+							30752,	-- Maghari Battleaxe
+							30755,	-- Maghari Fighting Claw
+							30751,	-- Maghari Light Axe
+							30753,	-- Warphorn Spear
+						}},
 						["groups"] = {
 							i(30755, {	-- Mag'hari Fighting Claw
 								["isLimited"] = true,

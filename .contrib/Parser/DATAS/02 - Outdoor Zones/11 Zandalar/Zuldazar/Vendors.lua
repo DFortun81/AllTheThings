@@ -772,7 +772,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			n(140139, {	-- Spearmon Kol
 				["coord"] = { 77.0, 16.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["sym"] = {{"select", "itemID",
+				["sym"] = {{"select","itemID",
 					2531,	-- Great Axe
 					15811,	-- Heavy Spear
 					8177,	-- Practice Sword

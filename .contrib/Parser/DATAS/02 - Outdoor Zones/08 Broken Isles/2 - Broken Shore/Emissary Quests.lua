@@ -13,7 +13,7 @@ _.Zones =
 					["coord"] = { 42.2, 58.8, BROKEN_SHORE },
 					["g"] = {
 						i(157830, {	-- Legionfall Spoils
-							["sym"] = {{"select", "itemID",
+							["sym"] = {{"select","itemID",
 								147216,	-- Dauntless Hood
 								147221,	-- Dauntless Choker
 								147218,	-- Dauntless Spaulders
@@ -29,14 +29,14 @@ _.Zones =
 							}},
 						}),
 						un(REMOVED_FROM_GAME, i(154910, {	-- Legionfall Spoils
-							["sym"] = {
-								{"select", "itemID", 157830},	-- Legionfall Spoils
-							},
+							["sym"] = {{"select","itemID",
+								157830,    -- Legionfall Spoils
+							}},
 						})),
 						un(REMOVED_FROM_GAME, i(152649, {	-- Legionfall Spoils
-							["sym"] = {
-								{"select", "itemID", 157830},	-- Legionfall Spoils
-							},
+							["sym"] = {{"select","itemID",
+								157830,    -- Legionfall Spoils
+							}},
 						})),
 					},
 				}),
