@@ -88,7 +88,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR },
-						{"exclude", "itemID", 146647 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(42557),	-- Savage Gladiator's Barrier
@@ -134,7 +133,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, DEATHKNIGHT },
-						{"exclude", "itemID", 146580 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40779, {	-- Savage Gladiator's Dreadplate Chestpiece
@@ -159,7 +157,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, DRUID },
-						{"exclude", "itemID", 146579 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41770, {	-- Savage Gladiator's Dragonhide Gloves
@@ -214,7 +211,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, HUNTER },
-						{"exclude", "itemID", 146578 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41084, {	-- Savage Gladiator's Chain Armor
@@ -239,7 +235,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, MAGE },
-						{"exclude", "itemID", 146587 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41962, {	-- Savage Gladiator's Silk Amice
@@ -264,7 +259,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, PALADIN },
-						{"exclude", "itemID", 146586 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40898, {	-- Savage Gladiator's Ornamented Chestguard
@@ -304,7 +298,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, PRIEST },
-						{"exclude", "itemID", 146585 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41847, {	-- Savage Gladiator's Mooncloth Gloves
@@ -344,7 +337,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, ROGUE },
-						{"exclude", "itemID", 146582 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41643, {	-- Savage Gladiator's Leather Gloves
@@ -369,7 +361,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, SHAMAN },
-						{"exclude", "itemID", 146584 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41078, {	-- Savage Gladiator's Linked Armor
@@ -424,7 +415,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, WARLOCK },
-						{"exclude", "itemID", 146581 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(42008, {	-- Savage Gladiator's Felweave Amice
@@ -449,7 +439,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, WARRIOR },
-						{"exclude", "itemID", 146583 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40778, {	-- Savage Gladiator's Plate Chestpiece
@@ -494,7 +483,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },
-						{"exclude", "itemID", 146646 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(42563, {	-- Hateful Gladiator's Barrier
@@ -621,7 +609,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 147583 },	-- Hateful Gladiator's Bracers of Victory
 						{"select", "itemID", 147584 },	-- Hateful Gladiator's Girdle of Victory
 						{"select", "itemID", 147585 },	-- Hateful Gladiator's Greaves of Victory
-						{"exclude", "itemID", 146560 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40781, {	-- Hateful Gladiator's Dreadplate Chestpiece
@@ -652,7 +639,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41332 },	-- Hateful Gladiator's Armwraps of Salvation
 						{"select", "itemID", 41330 },	-- Hateful Gladiator's Belt of Salvation
 						{"select", "itemID", 41331 },	-- Hateful Gladiator's Boots of Salvation
-						{"exclude", "itemID", 146559 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41771, {	-- Hateful Gladiator's Dragonhide Gloves
@@ -710,7 +696,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41223 },	-- Hateful Gladiator's Wristguards of Triumph
 						{"select", "itemID", 41233 },	-- Hateful Gladiator's Waistguard of Triumph
 						{"select", "itemID", 41228 },	-- Hateful Gladiator's Sabatons of Triumph
-						{"exclude", "itemID", 146558 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41085, {	-- Hateful Gladiator's Chain Armor
@@ -738,7 +723,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41907 },	-- Hateful Gladiator's Cuffs of Dominance
 						{"select", "itemID", 41896 },	-- Hateful Gladiator's Cord of Dominance
 						{"select", "itemID", 41901 },	-- Hateful Gladiator's Slippers of Dominance
-						{"exclude", "itemID", 146567 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41963, {	-- Hateful Gladiator's Silk Amice
@@ -766,7 +750,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 40972 },	-- Hateful Gladiator's Bracers of Salvation
 						{"select", "itemID", 40966 },	-- Hateful Gladiator's Girdle of Salvation
 						{"select", "itemID", 40973 },	-- Hateful Gladiator's Greaves of Salvation
-						{"exclude", "itemID", 146566 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40904, {	-- Hateful Gladiator's Ornamented Chestguard
@@ -809,7 +792,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41878 },	-- Hateful Gladiator's Cuffs of Salvation
 						{"select", "itemID", 41877 },	-- Hateful Gladiator's Cord of Salvation
 						{"select", "itemID", 41879 },	-- Hateful Gladiator's Slippers of Salvation
-						{"exclude", "itemID", 146565 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41872, {	-- Hateful Gladiator's Mooncloth Gloves
@@ -852,7 +834,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41830 },	-- Hateful Gladiator's Armwraps of Triumph
 						{"select", "itemID", 41827 },	-- Hateful Gladiator's Belt of Triumph
 						{"select", "itemID", 41828 },	-- Hateful Gladiator's Boots of Triumph
-						{"exclude", "itemID", 146562 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41765, {	-- Hateful Gladiator's Leather Gloves
@@ -883,7 +864,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41047 },	-- Hateful Gladiator's Wristguards of Salvation
 						{"select", "itemID", 41050 },	-- Hateful Gladiator's Waistguard of Salvation
 						{"select", "itemID", 41049 },	-- Hateful Gladiator's Sabatons of Salvation
-						{"exclude", "itemID", 146564 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41079, {	-- Hateful Gladiator's Linked Armor
@@ -941,7 +921,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 147586 },	-- Hateful Gladiator's Cuffs of Ascendancy
 						{"select", "itemID", 147587 },	-- Hateful Gladiator's Cord of Ascendancy
 						{"select", "itemID", 147588 },	-- Hateful Gladiator's Slippers of Ascendancy
-						{"exclude", "itemID", 146561 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(42009, {	-- Hateful Gladiator's Felweave Amice
@@ -969,7 +948,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 40887 },	-- Hateful Gladiator's Bracers of Triumph
 						{"select", "itemID", 40877 },	-- Hateful Gladiator's Girdle of Triumph
 						{"select", "itemID", 40878 },	-- Hateful Gladiator's Greaves of Triumph
-						{"exclude", "itemID", 146563 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40783, {	-- Hateful Gladiator's Plate Chestpiece
@@ -1178,7 +1156,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },
-						{"exclude", "itemID", 146645 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(42564, {	-- Deadly Gladiator's Barrier
@@ -1305,7 +1282,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 147589 },	-- Deadly Gladiator's Bracers of Victory
 						{"select", "itemID", 147590 },	-- Deadly Gladiator's Girdle of Victory
 						{"select", "itemID", 147591 },	-- Deadly Gladiator's Greaves of Victory
-						{"exclude", "itemID", 146540 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40784, {	-- Deadly Gladiator's Dreadplate Chestpiece
@@ -1336,7 +1312,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41624 },	-- Deadly Gladiator's Armwraps of Salvation
 						{"select", "itemID", 41616 },	-- Deadly Gladiator's Belt of Salvation
 						{"select", "itemID", 41620 },	-- Deadly Gladiator's Boots of Salvation
-						{"exclude", "itemID", 146539 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41772, {	-- Deadly Gladiator's Dragonhide Gloves
@@ -1394,7 +1369,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41224 },	-- Deadly Gladiator's Wristguards of Triumph
 						{"select", "itemID", 41234 },	-- Deadly Gladiator's Waistguard of Triumph
 						{"select", "itemID", 41229 },	-- Deadly Gladiator's Sabatons of Triumph
-						{"exclude", "itemID", 146538 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41086, {	-- Deadly Gladiator's Chain Armor
@@ -1422,7 +1396,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41908 },	-- Deadly Gladiator's Cuffs of Dominance
 						{"select", "itemID", 41897 },	-- Deadly Gladiator's Cord of Dominance
 						{"select", "itemID", 41902 },	-- Deadly Gladiator's Treads of Dominance
-						{"exclude", "itemID", 146547 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41964, {	-- Deadly Gladiator's Silk Amice
@@ -1450,7 +1423,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 40982 },	-- Deadly Gladiator's Bracers of Salvation
 						{"select", "itemID", 40974 },	-- Deadly Gladiator's Girdle of Salvation
 						{"select", "itemID", 40975 },	-- Deadly Gladiator's Greaves of Salvation
-						{"exclude", "itemID", 146546 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40905, {	-- Deadly Gladiator's Ornamented Chestguard
@@ -1493,7 +1465,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41892 },	-- Deadly Gladiator's Cuffs of Salvation
 						{"select", "itemID", 41880 },	-- Deadly Gladiator's Cord of Salvation
 						{"select", "itemID", 41884 },	-- Deadly Gladiator's Treads of Salvation
-						{"exclude", "itemID", 146545 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41873, {	-- Deadly Gladiator's Mooncloth Gloves
@@ -1536,7 +1507,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41839 },	-- Deadly Gladiator's Armwraps of Triumph
 						{"select", "itemID", 41831 },	-- Deadly Gladiator's Belt of Triumph
 						{"select", "itemID", 41835 },	-- Deadly Gladiator's Boots of Triumph
-						{"exclude", "itemID", 146542 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41766, {	-- Deadly Gladiator's Leather Gloves
@@ -1567,7 +1537,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41059 },	-- Deadly Gladiator's Wristguards of Salvation
 						{"select", "itemID", 41048 },	-- Deadly Gladiator's Waistguard of Salvation
 						{"select", "itemID", 41054 },	-- Deadly Gladiator's Sabatons of Salvation
-						{"exclude", "itemID", 146544 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41080, {	-- Deadly Gladiator's Linked Armor
@@ -1625,7 +1594,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 147592 },	-- Deadly Gladiator's Cuffs of Ascendancy
 						{"select", "itemID", 147593 },	-- Deadly Gladiator's Cord of Ascendancy
 						{"select", "itemID", 147594 },	-- Deadly Gladiator's Treads of Ascendancy
-						{"exclude", "itemID", 146541 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(42010, {	-- Deadly Gladiator's Felweave Amice
@@ -1653,7 +1621,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 40888 },	-- Deadly Gladiator's Bracers of Triumph
 						{"select", "itemID", 40879 },	-- Deadly Gladiator's Girdle of Triumph
 						{"select", "itemID", 40880 },	-- Deadly Gladiator's Greaves of Triumph
-						{"exclude", "itemID", 146543 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40786, {	-- Deadly Gladiator's Plate Chestpiece
@@ -1900,7 +1867,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },
-						{"exclude", "itemID", 146644 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(42565, {	-- Furious Gladiator's Barrier
@@ -2027,7 +1993,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 40889 },	-- Furious Gladiator's Bracers of Triumph
 						{"select", "itemID", 40881 },	-- Furious Gladiator's Girdle of Triumph
 						{"select", "itemID", 40882 },	-- Furious Gladiator's Greaves of Triumph
-						{"exclude", "itemID", 146550 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40787, {	-- Furious Gladiator's Dreadplate Chestpiece
@@ -2058,7 +2023,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41625 },	-- Furious Gladiator's Armwraps of Salvation
 						{"select", "itemID", 41617 },	-- Furious Gladiator's Belt of Salvation
 						{"select", "itemID", 41621 },	-- Furious Gladiator's Boots of Salvation
-						{"exclude", "itemID", 146549 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41773, {	-- Furious Gladiator's Dragonhide Gloves
@@ -2116,7 +2080,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41225 },	-- Furious Gladiator's Wristguards of Triumph
 						{"select", "itemID", 41235 },	-- Furious Gladiator's Waistguard of Triumph
 						{"select", "itemID", 41230 },	-- Furious Gladiator's Sabatons of Triumph
-						{"exclude", "itemID", 146548 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41087, {	-- Furious Gladiator's Chain Armor
@@ -2144,7 +2107,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 147595 },	-- Furious Gladiator's Cuffs of Ascendancy
 						{"select", "itemID", 147596 },	-- Furious Gladiator's Cord of Ascendancy
 						{"select", "itemID", 147597 },	-- Furious Gladiator's Slippers of Ascendancy
-						{"exclude", "itemID", 146557 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41965, {	-- Furious Gladiator's Silk Amice
@@ -2172,7 +2134,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 40983 },	-- Furious Gladiator's Bracers of Salvation
 						{"select", "itemID", 40976 },	-- Furious Gladiator's Girdle of Salvation
 						{"select", "itemID", 40977 },	-- Furious Gladiator's Greaves of Salvation
-						{"exclude", "itemID", 146556 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40907, {	-- Furious Gladiator's Ornamented Chestguard
@@ -2215,7 +2176,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41893 },	-- Furious Gladiator's Cuffs of Salvation
 						{"select", "itemID", 41881 },	-- Furious Gladiator's Cord of Salvation
 						{"select", "itemID", 41885 },	-- Furious Gladiator's Treads of Salvation
-						{"exclude", "itemID", 146555 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41874, {	-- Furious Gladiator's Mooncloth Gloves
@@ -2258,7 +2218,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41840 },	-- Furious Gladiator's Armwraps of Triumph
 						{"select", "itemID", 41832 },	-- Furious Gladiator's Belt of Triumph
 						{"select", "itemID", 41836 },	-- Furious Gladiator's Boots of Triumph
-						{"exclude", "itemID", 146552 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41767, {	-- Furious Gladiator's Leather Gloves
@@ -2289,7 +2248,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41060 },	-- Furious Gladiator's Wristguards of Salvation
 						{"select", "itemID", 41051 },	-- Furious Gladiator's Waistguard of Salvation
 						{"select", "itemID", 41055 },	-- Furious Gladiator's Sabatons of Salvation
-						{"exclude", "itemID", 146554 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41081, {	-- Furious Gladiator's Linked Armor
@@ -2347,7 +2305,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41909 },	-- Furious Gladiator's Cuffs of Dominance
 						{"select", "itemID", 41898 },	-- Furious Gladiator's Cord of Dominance
 						{"select", "itemID", 41903 },	-- Furious Gladiator's Slippers of Dominance
-						{"exclude", "itemID", 146551 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(42011, {	-- Furious Gladiator's Felweave Amice
@@ -2375,7 +2332,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 147598 },	-- Furious Gladiator's Bracers of Victory
 						{"select", "itemID", 147599 },	-- Furious Gladiator's Girdle of Victory
 						{"select", "itemID", 147600 },	-- Furious Gladiator's Greaves of Victory
-						{"exclude", "itemID", 146553 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40789, {	-- Furious Gladiator's Plate Chestpiece
@@ -2645,7 +2601,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },
-						{"exclude", "itemID", 146643 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(42566, {	-- Relentless Gladiator's Barrier
@@ -2783,7 +2738,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 40890 },	-- Relentless Gladiator's Bracers of Triumph
 						{"select", "itemID", 40883 },	-- Relentless Gladiator's Girdle of Triumph
 						{"select", "itemID", 147601 },	-- Relentless Gladiator's Greaves of Victory
-						{"exclude", "itemID", 146570 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40791, {	-- Relentless Gladiator's Dreadplate Chestpiece
@@ -2814,7 +2768,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41626 },	-- Relentless Gladiator's Armwraps of Salvation
 						{"select", "itemID", 41618 },	-- Relentless Gladiator's Belt of Salvation
 						{"select", "itemID", 41622 },	-- Relentless Gladiator's Boots of Salvation
-						{"exclude", "itemID", 146569 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41774, {	-- Relentless Gladiator's Dragonhide Gloves
@@ -2872,7 +2825,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41226 },	-- Relentless Gladiator's Wristguards of Triumph
 						{"select", "itemID", 41236 },	-- Relentless Gladiator's Waistguard of Triumph
 						{"select", "itemID", 41231 },	-- Relentless Gladiator's Sabatons of Triumph
-						{"exclude", "itemID", 146568 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41088, {	-- Relentless Gladiator's Chain Armor
@@ -2901,7 +2853,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41899 },	-- Relentless Gladiator's Cord of Dominance
 						{"select", "itemID", 41904 },	-- Relentless Gladiator's Treads of Dominance
 						{"select", "itemID", 49181 },	-- Relentless Gladiator's Cuffs of Alacrity
-						{"exclude", "itemID", 146577 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41966, {	-- Relentless Gladiator's Silk Amice
@@ -2929,7 +2880,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 40984 },	-- Relentless Gladiator's Bracers of Salvation
 						{"select", "itemID", 40978 },	-- Relentless Gladiator's Girdle of Salvation
 						{"select", "itemID", 40979 },	-- Relentless Gladiator's Greaves of Salvation
-						{"exclude", "itemID", 146576 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40910, {	-- Relentless Gladiator's Ornamented Chestguard
@@ -2973,7 +2923,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41882 },	-- Relentless Gladiator's Cord of Salvation
 						{"select", "itemID", 41886 },	-- Relentless Gladiator's Treads of Salvation
 						{"select", "itemID", 49179 },	-- Relentless Gladiator's Cord of Alacrity
-						{"exclude", "itemID", 146575 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41875, {	-- Relentless Gladiator's Mooncloth Gloves
@@ -3016,7 +2965,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41841 },	-- Relentless Gladiator's Armwraps of Triumph
 						{"select", "itemID", 41833 },	-- Relentless Gladiator's Belt of Triumph
 						{"select", "itemID", 41837 },	-- Relentless Gladiator's Boots of Triumph
-						{"exclude", "itemID", 146572 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41768, {	-- Relentless Gladiator's Leather Gloves
@@ -3047,7 +2995,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 41061 },	-- Relentless Gladiator's Wristguards of Salvation
 						{"select", "itemID", 41052 },	-- Relentless Gladiator's Waistguard of Salvation
 						{"select", "itemID", 41056 },	-- Relentless Gladiator's Sabatons of Salvation
-						{"exclude", "itemID", 146574 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(41082, {	-- Relentless Gladiator's Linked Armor
@@ -3104,7 +3051,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR, WARLOCK },
 						{"select", "itemID", 147602 },	-- Relentless Gladiator's Cuffs of Ascendancy
 						{"select", "itemID", 49183 },	-- Relentless Gladiator's Treads of Alacrity
-						{"exclude", "itemID", 146571 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(42012, {	-- Relentless Gladiator's Felweave Amice
@@ -3132,7 +3078,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 147603 },	-- Relentless Gladiator's Bracers of Victory
 						{"select", "itemID", 147604 },	-- Relentless Gladiator's Girdle of Victory
 						{"select", "itemID", 40884 },	-- Relentless Gladiator's Greaves of Triumph
-						{"exclude", "itemID", 146573 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40790, {	-- Relentless Gladiator's Plate Chestpiece
@@ -3408,7 +3353,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR },
-						{"exclude", "itemID", 146642 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(51452, {	-- Wrathful Gladiator's Barrier
@@ -3541,7 +3485,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 51364 },	-- Wrathful Gladiator's Bracers of Triumph
 						{"select", "itemID", 51362 },	-- Wrathful Gladiator's Girdle of Triumph
 						{"select", "itemID", 51363 },	-- Wrathful Gladiator's Greaves of Triumph
-						{"exclude", "itemID", 146590 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(51413, {	-- Wrathful Gladiator's Dreadplate Chestpiece
@@ -3572,7 +3515,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 51342 },	-- Wrathful Gladiator's Armwraps of Salvation
 						{"select", "itemID", 51340 },	-- Wrathful Gladiator's Belt of Salvation
 						{"select", "itemID", 51341 },	-- Wrathful Gladiator's Boots of Salvation
-						{"exclude", "itemID", 146589 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(51426, {	-- Wrathful Gladiator's Dragonhide Gloves
@@ -3630,7 +3572,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 51352 },	-- Wrathful Gladiator's Wristguards of Triumph
 						{"select", "itemID", 51350 },	-- Wrathful Gladiator's Waistguard of Triumph
 						{"select", "itemID", 51351 },	-- Wrathful Gladiator's Sabatons of Triumph
-						{"exclude", "itemID", 146588 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(51458, {	-- Wrathful Gladiator's Chain Armor
@@ -3659,7 +3600,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 51327 },	-- Wrathful Gladiator's Cord of Dominance
 						{"select", "itemID", 51328 },	-- Wrathful Gladiator's Treads of Dominance
 						{"select", "itemID", 51339 },	-- Wrathful Gladiator's Cuffs of Alacrity
-						{"exclude", "itemID", 146597 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(51467, {	-- Wrathful Gladiator's Silk Amice
@@ -3687,7 +3627,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 51361 },	-- Wrathful Gladiator's Bracers of Salvation
 						{"select", "itemID", 51359 },	-- Wrathful Gladiator's Girdle of Salvation
 						{"select", "itemID", 51360 },	-- Wrathful Gladiator's Greaves of Salvation
-						{"exclude", "itemID", 146596 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(51468, {	-- Wrathful Gladiator's Ornamented Chestguard
@@ -3731,7 +3670,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 51365 },	-- Wrathful Gladiator's Cord of Salvation
 						{"select", "itemID", 51366 },	-- Wrathful Gladiator's Treads of Salvation
 						{"select", "itemID", 51337 },	-- Wrathful Gladiator's Cord of Alacrity
-						{"exclude", "itemID", 146595 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(51483, {	-- Wrathful Gladiator's Mooncloth Gloves
@@ -3774,7 +3712,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 51370 },	-- Wrathful Gladiator's Armwraps of Triumph
 						{"select", "itemID", 51368 },	-- Wrathful Gladiator's Belt of Triumph
 						{"select", "itemID", 51369 },	-- Wrathful Gladiator's Boots of Triumph
-						{"exclude", "itemID", 146592 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(51493, {	-- Wrathful Gladiator's Leather Gloves
@@ -3805,7 +3742,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 51373 },	-- Wrathful Gladiator's Wristguards of Salvation
 						{"select", "itemID", 51371 },	-- Wrathful Gladiator's Waistguard of Salvation
 						{"select", "itemID", 51372 },	-- Wrathful Gladiator's Sabatons of Salvation
-						{"exclude", "itemID", 146594 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(51503, {	-- Wrathful Gladiator's Linked Armor
@@ -3863,7 +3799,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 147605 },	-- Wrathful Gladiator's Cuffs of Ascendancy
 						{"select", "itemID", 147606 },	-- Wrathful Gladiator's Cord of Ascendancy
 						{"select", "itemID", 51338 },	-- Wrathful Gladiator's Treads of Alacrity
-						{"exclude", "itemID", 146591 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(51540, {	-- Wrathful Gladiator's Felweave Amice
@@ -3891,7 +3826,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						{"select", "itemID", 147607 },	-- Wrathful Gladiator's Bracers of Victory
 						{"select", "itemID", 147608 },	-- Wrathful Gladiator's Girdle of Victory
 						{"select", "itemID", 51363 },	-- Wrathful Gladiator's Greaves of Triumph
-						{"exclude", "itemID", 146593 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(51541, {	-- Wrathful Gladiator's Plate Chestpiece

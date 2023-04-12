@@ -370,7 +370,6 @@ _.Zones =
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_weapons_faction_ensemble", WOD_TIER, SEASON_WILD, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-											{"exclude", "itemID", 138633 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124675, {	-- Wild Gladiator's Cleaver
@@ -472,7 +471,6 @@ _.Zones =
 											{"select", "itemID", 124809 },	-- Wild Gladiator's Armplates of Cruelty (A)
 											{"select", "itemID", 124803 },	-- Wild Gladiator's Girdle of Cruelty (A)
 											{"select", "itemID", 124808 },	-- Wild Gladiator's Warboots of Victory (A)
-											{"exclude", "itemID", 138515 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124711, {	-- Wild Gladiator's Dreadplate Chestpiece (A)
@@ -499,7 +497,6 @@ _.Zones =
 											{"select", "itemID", 124758 },	-- Wild Gladiator's Bindings of Victory (A)
 											{"select", "itemID", 124752 },	-- Wild Gladiator's Belt of Victory (A)
 											{"select", "itemID", 124754 },	-- Wild Gladiator's Boots of Prowess (A)
-											{"exclude", "itemID", 138523 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124716, {	-- Wild Gladiator's Dragonhide Gloves (A)
@@ -529,7 +526,6 @@ _.Zones =
 											{"select", "itemID", 124774 },	-- Wild Gladiator's Waistguard of Cruelty (A)
 											{"select", "itemID", 124776 },	-- Wild Gladiator's Waistguard of Victory (A)
 											{"select", "itemID", 124778 },	-- Wild Gladiator's Footguards of Prowess (A)
-											{"exclude", "itemID", 138521 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124721, {	-- Wild Gladiator's Chain Armor (A)
@@ -556,7 +552,6 @@ _.Zones =
 											{"select", "itemID", 124698 },	-- Wild Gladiator's Cuffs of Prowess (A)
 											{"select", "itemID", 124692 },	-- Wild Gladiator's Cord of Cruelty (A)
 											{"select", "itemID", 124696 },	-- Wild Gladiator's Treads of Prowess (A)
-											{"exclude", "itemID", 138529 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124773, {	-- Wild Gladiator's Silk Amice (A)
@@ -583,7 +578,6 @@ _.Zones =
 											{"select", "itemID", 124756 },	-- Wild Gladiator's Bindings of Cruelty (A)
 											{"select", "itemID", 124750 },	-- Wild Gladiator's Belt of Prowess (A)
 											{"select", "itemID", 124755 },	-- Wild Gladiator's Boots of Victory (A)
-											{"exclude", "itemID", 138525 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124793, {	-- Wild Gladiator's Ironskin Gloves (A)
@@ -610,7 +604,6 @@ _.Zones =
 											{"select", "itemID", 124811 },	-- Wild Gladiator's Armplates of Victory (A)
 											{"select", "itemID", 124805 },	-- Wild Gladiator's Girdle of Victory (A)
 											{"select", "itemID", 124807 },	-- Wild Gladiator's Warboots of Prowess (A)
-											{"exclude", "itemID", 138517 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124798, {	-- Wild Gladiator's Scaled Chestpiece (A)
@@ -637,7 +630,6 @@ _.Zones =
 											{"select", "itemID", 124700 },	-- Wild Gladiator's Cuffs of Victory (A)
 											{"select", "itemID", 124694 },	-- Wild Gladiator's Cord of Victory (A)
 											{"select", "itemID", 124695 },	-- Wild Gladiator's Treads of Cruelty (A)
-											{"exclude", "itemID", 138531 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124822, {	-- Wild Gladiator's Satin Gloves (A)
@@ -664,7 +656,6 @@ _.Zones =
 											{"select", "itemID", 124757 },	-- Wild Gladiator's Bindings of Prowess (A)
 											{"select", "itemID", 124751 },	-- Wild Gladiator's Belt of Cruelty (A)
 											{"select", "itemID", 124753 },	-- Wild Gladiator's Boots of Cruelty (A)
-											{"exclude", "itemID", 138527 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124828, {	-- Wild Gladiator's Leather Gloves (A)
@@ -692,7 +683,6 @@ _.Zones =
 											{"select", "itemID", 124775 },	-- Wild Gladiator's Waistguard of Prowess (A)
 											{"select", "itemID", 124777 },	-- Wild Gladiator's Footguards of Cruelty (A)
 											{"select", "itemID", 124779 },	-- Wild Gladiator's Footguards of Victory (A)
-											{"exclude", "itemID", 138519 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124832, {	-- Wild Gladiator's Ringmail Armor (A)
@@ -719,7 +709,6 @@ _.Zones =
 											{"select", "itemID", 124699 },	-- Wild Gladiator's Cuffs of Cruelty (A)
 											{"select", "itemID", 124693 },	-- Wild Gladiator's Cord of Prowess (A)
 											{"select", "itemID", 124697 },	-- Wild Gladiator's Treads of Victory (A)
-											{"exclude", "itemID", 138533 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124879, {	-- Wild Gladiator's Felweave Amice (A)
@@ -746,7 +735,6 @@ _.Zones =
 											{"select", "itemID", 124810 },	-- Wild Gladiator's Armplates of Prowess (A)
 											{"select", "itemID", 124804 },	-- Wild Gladiator's Girdle of Prowess (A)
 											{"select", "itemID", 124806 },	-- Wild Gladiator's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138513 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124880, {	-- Wild Gladiator's Plate Chestpiece (A)
@@ -1059,7 +1047,6 @@ _.Zones =
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_weapons_faction_ensemble", WOD_TIER, SEASON_PRIMAL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT },
-											{"exclude", "itemID", 138625 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115083, {	-- Primal Combatant's Barrier (A)
@@ -1152,7 +1139,6 @@ _.Zones =
 											{"select", "itemID", 115115 },	-- Primal Combatant's Armplates of Cruelty (A)
 											{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
 											{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138613 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115049, {	-- Primal Combatant's Dreadplate Chestpiece (A)
@@ -1179,7 +1165,6 @@ _.Zones =
 											{"select", "itemID", 115088 },	-- Primal Combatant's Bindings of Cruelty (A)
 											{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
 											{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
-											{"exclude", "itemID", 138617 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115054, {	-- Primal Combatant's Dragonhide Gloves (A)
@@ -1206,7 +1191,6 @@ _.Zones =
 											{"select", "itemID", 115100 },	-- Primal Combatant's Armbands of Cruelty (A)
 											{"select", "itemID", 115095 },	-- Primal Combatant's Waistguard of Cruelty (A)
 											{"select", "itemID", 115097 },	-- Primal Combatant's Footguards of Cruelty (A)
-											{"exclude", "itemID", 138579 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115059, {	-- Primal Combatant's Chain Armor (A)
@@ -1233,7 +1217,6 @@ _.Zones =
 											{"select", "itemID", 115048 },	-- Primal Combatant's Cuffs of Cruelty (A)
 											{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
 											{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
-											{"exclude", "itemID", 138581 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115094, {	-- Primal Combatant's Silk Amice (A)
@@ -1260,7 +1243,6 @@ _.Zones =
 											{"select", "itemID", 115088 },	-- Primal Combatant's Bindings of Cruelty (A)
 											{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
 											{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
-											{"exclude", "itemID", 138619 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115101, {	-- Primal Combatant's Ironskin Gloves (A)
@@ -1287,7 +1269,6 @@ _.Zones =
 											{"select", "itemID", 115115 },	-- Primal Combatant's Armplates of Cruelty (A)
 											{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
 											{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138615 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115106, {	-- Primal Combatant's Scaled Chestpiece (A)
@@ -1314,7 +1295,6 @@ _.Zones =
 											{"select", "itemID", 115048 },	-- Primal Combatant's Cuffs of Cruelty (A)
 											{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
 											{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
-											{"exclude", "itemID", 138583 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115117, {	-- Primal Combatant's Satin Gloves (A)
@@ -1341,7 +1321,6 @@ _.Zones =
 											{"select", "itemID", 115088 },	-- Primal Combatant's Bindings of Cruelty (A)
 											{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
 											{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
-											{"exclude", "itemID", 138621 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115123, {	-- Primal Combatant's Leather Gloves (A)
@@ -1368,7 +1347,6 @@ _.Zones =
 											{"select", "itemID", 115100 },	-- Primal Combatant's Armbands of Cruelty (A)
 											{"select", "itemID", 115095 },	-- Primal Combatant's Waistguard of Cruelty (A)
 											{"select", "itemID", 115097 },	-- Primal Combatant's Footguards of Cruelty (A)
-											{"exclude", "itemID", 138577 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115127, {	-- Primal Combatant's Ringmail Armor (A)
@@ -1395,7 +1373,6 @@ _.Zones =
 											{"select", "itemID", 115048 },	-- Primal Combatant's Cuffs of Cruelty (A)
 											{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
 											{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
-											{"exclude", "itemID", 138585 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115165, {	-- Primal Combatant's Felweave Amice (A)
@@ -1422,7 +1399,6 @@ _.Zones =
 											{"select", "itemID", 115115 },	-- Primal Combatant's Armplates of Cruelty (A)
 											{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
 											{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138611 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115166, {	-- Primal Combatant's Plate Chestpiece (A)
@@ -2349,7 +2325,6 @@ _.Zones =
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_weapons_faction_ensemble", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-											{"exclude", "itemID", 138635 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125863, {	-- Warmongering Gladiator's Barrier (A)
@@ -2448,7 +2423,6 @@ _.Zones =
 											{"select", "itemID", 125923 },	-- Warmongering Gladiator's Armplates of Cruelty (A)
 											{"select", "itemID", 125917 },	-- Warmongering Gladiator's Girdle of Cruelty (A)
 											{"select", "itemID", 125922 },	-- Warmongering Gladiator's Warboots of Victory (A)
-											{"exclude", "itemID", 138493 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125825, {	-- Warmongering Gladiator's Dreadplate Chestpiece (A)
@@ -2475,7 +2449,6 @@ _.Zones =
 											{"select", "itemID", 125872 },	-- Warmongering Gladiator's Bindings of Victory (A)
 											{"select", "itemID", 125866 },	-- Warmongering Gladiator's Belt of Victory (A)
 											{"select", "itemID", 125868 },	-- Warmongering Gladiator's Boots of Prowess (A)
-											{"exclude", "itemID", 138501 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125830, {	-- Warmongering Gladiator's Dragonhide Gloves (A)
@@ -2505,7 +2478,6 @@ _.Zones =
 											{"select", "itemID", 125888 },	-- Warmongering Gladiator's Waistguard of Cruelty (A)
 											{"select", "itemID", 125890 },	-- Warmongering Gladiator's Waistguard of Victory (A)
 											{"select", "itemID", 125892 },	-- Warmongering Gladiator's Footguards of Prowess (A)
-											{"exclude", "itemID", 138499 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125835, {	-- Warmongering Gladiator's Chain Armor (A)
@@ -2532,7 +2504,6 @@ _.Zones =
 											{"select", "itemID", 125812 },	-- Warmongering Gladiator's Cuffs of Prowess (A)
 											{"select", "itemID", 125806 },	-- Warmongering Gladiator's Cord of Cruelty (A)
 											{"select", "itemID", 125810 },	-- Warmongering Gladiator's Treads of Prowess (A)
-											{"exclude", "itemID", 138507 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125887, {	-- Warmongering Gladiator's Silk Amice (A)
@@ -2559,7 +2530,6 @@ _.Zones =
 											{"select", "itemID", 125870 },	-- Warmongering Gladiator's Bindings of Cruelty (A)
 											{"select", "itemID", 125864 },	-- Warmongering Gladiator's Belt of Prowess (A)
 											{"select", "itemID", 125869 },	-- Warmongering Gladiator's Boots of Victory (A)
-											{"exclude", "itemID", 138503 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125907, {	-- Warmongering Gladiator's Ironskin Gloves (A)
@@ -2586,7 +2556,6 @@ _.Zones =
 											{"select", "itemID", 125925 },	-- Warmongering Gladiator's Armplates of Victory (A)
 											{"select", "itemID", 125919 },	-- Warmongering Gladiator's Girdle of Victory (A)
 											{"select", "itemID", 125921 },	-- Warmongering Gladiator's Warboots of Prowess (A)
-											{"exclude", "itemID", 138495 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125912, {	-- Warmongering Gladiator's Scaled Chestpiece (A)
@@ -2613,7 +2582,6 @@ _.Zones =
 											{"select", "itemID", 125814 },	-- Warmongering Gladiator's Cuffs of Victory (A)
 											{"select", "itemID", 125808 },	-- Warmongering Gladiator's Cord of Victory (A)
 											{"select", "itemID", 125809 },	-- Warmongering Gladiator's Treads of Cruelty (A)
-											{"exclude", "itemID", 138509 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125936, {	-- Warmongering Gladiator's Satin Gloves (A)
@@ -2640,7 +2608,6 @@ _.Zones =
 											{"select", "itemID", 125871 },	-- Warmongering Gladiator's Bindings of Prowess (A)
 											{"select", "itemID", 125865 },	-- Warmongering Gladiator's Belt of Cruelty (A)
 											{"select", "itemID", 125867 },	-- Warmongering Gladiator's Boots of Cruelty (A)
-											{"exclude", "itemID", 138505 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125942, {	-- Warmongering Gladiator's Leather Gloves (A)
@@ -2667,7 +2634,6 @@ _.Zones =
 											{"select", "itemID", 139031 },	-- Warmongering Gladiator's Armbands of Alacrity (A)
 											{"select", "itemID", 125889 },	-- Warmongering Gladiator's Waistguard of Prowess (A)
 											{"select", "itemID", 125891 },	-- Warmongering Gladiator's Footguards of Cruelty (A)
-											{"exclude", "itemID", 138497 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125946, {	-- Warmongering Gladiator's Ringmail Armor (A)
@@ -2694,7 +2660,6 @@ _.Zones =
 											{"select", "itemID", 125813 },	-- Warmongering Gladiator's Cuffs of Cruelty (A)
 											{"select", "itemID", 125807 },	-- Warmongering Gladiator's Cord of Prowess (A)
 											{"select", "itemID", 125811 },	-- Warmongering Gladiator's Treads of Victory (A)
-											{"exclude", "itemID", 138511 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125993, {	-- Warmongering Gladiator's Felweave Amice (A)
@@ -2721,7 +2686,6 @@ _.Zones =
 											{"select", "itemID", 125924 },	-- Warmongering Gladiator's Armplates of Prowess (A)
 											{"select", "itemID", 125918 },	-- Warmongering Gladiator's Girdle of Prowess (A)
 											{"select", "itemID", 125920 },	-- Warmongering Gladiator's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138491 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125994, {	-- Warmongering Gladiator's Plate Chestpiece (A)
@@ -3027,7 +2991,6 @@ _.Zones =
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_weapons_faction_ensemble", WOD_TIER, SEASON_PRIMAL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-											{"exclude", "itemID", 138631 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115594, {	-- Primal Gladiator's Cleaver
@@ -3120,7 +3083,6 @@ _.Zones =
 											{"select", "itemID", 115707 },	-- Primal Gladiator's Armplates of Cruelty (A)
 											{"select", "itemID", 115701 },	-- Primal Gladiator's Girdle of Cruelty (A)
 											{"select", "itemID", 115704 },	-- Primal Gladiator's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138557 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115629, {	-- Primal Gladiator's Dreadplate Chestpiece
@@ -3147,7 +3109,6 @@ _.Zones =
 											{"select", "itemID", 115674 },	-- Primal Gladiator's Bindings of Cruelty (A)
 											{"select", "itemID", 115669 },	-- Primal Gladiator's Belt of Cruelty (A)
 											{"select", "itemID", 115671 },	-- Primal Gladiator's Boots of Cruelty (A)
-											{"exclude", "itemID", 138565 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115634, {	-- Primal Gladiator's Dragonhide Gloves (A)
@@ -3174,7 +3135,6 @@ _.Zones =
 											{"select", "itemID", 115689 },	-- Primal Gladiator's Armbands  of Cruelty (A)
 											{"select", "itemID", 115682 },	-- Primal Gladiator's Waistguard of Cruelty (A)
 											{"select", "itemID", 115685 },	-- Primal Gladiator's Footguards of Cruelty (A)
-											{"exclude", "itemID", 138563 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115639, {	-- Primal Gladiator's Chain Armor
@@ -3201,7 +3161,6 @@ _.Zones =
 											{"select", "itemID", 115627 },	-- Primal Gladiator's Cuffs of Cruelty (A)
 											{"select", "itemID", 115620 },	-- Primal Gladiator's Cord of Cruelty (A)
 											{"select", "itemID", 115623 },	-- Primal Gladiator's Treads of Cruelty (A)
-											{"exclude", "itemID", 138571 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115677, {	-- Primal Gladiator's Silk Handguards
@@ -3228,7 +3187,6 @@ _.Zones =
 											{"select", "itemID", 115674 },	-- Primal Gladiator's Bindings of Cruelty (A)
 											{"select", "itemID", 115669 },	-- Primal Gladiator's Belt of Cruelty (A)
 											{"select", "itemID", 115671 },	-- Primal Gladiator's Boots of Cruelty (A)
-											{"exclude", "itemID", 138567 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115691, {	-- Primal Gladiator's Ironskin Gloves
@@ -3255,7 +3213,6 @@ _.Zones =
 											{"select", "itemID", 115707 },	-- Primal Gladiator's Armplates of Cruelty (A)
 											{"select", "itemID", 115701 },	-- Primal Gladiator's Girdle of Cruelty (A)
 											{"select", "itemID", 115704 },	-- Primal Gladiator's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138559 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115696, {	-- Primal Gladiator's Scaled Chestpiece
@@ -3282,7 +3239,6 @@ _.Zones =
 											{"select", "itemID", 115627 },	-- Primal Gladiator's Cuffs of Cruelty (A)
 											{"select", "itemID", 115620 },	-- Primal Gladiator's Cord of Cruelty (A)
 											{"select", "itemID", 115623 },	-- Primal Gladiator's Treads of Cruelty (A)
-											{"exclude", "itemID", 138573 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115710, {	-- Primal Gladiator's Satin Gloves
@@ -3309,7 +3265,6 @@ _.Zones =
 											{"select", "itemID", 115674 },	-- Primal Gladiator's Bindings of Cruelty (A)
 											{"select", "itemID", 115669 },	-- Primal Gladiator's Belt of Cruelty (A)
 											{"select", "itemID", 115671 },	-- Primal Gladiator's Boots of Cruelty (A)
-											{"exclude", "itemID", 138569 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115715, {	-- Primal Gladiator's Leather Tunic
@@ -3336,7 +3291,6 @@ _.Zones =
 											{"select", "itemID", 115689 },	-- Primal Gladiator's Armbands  of Cruelty (A)
 											{"select", "itemID", 115682 },	-- Primal Gladiator's Waistguard of Cruelty (A)
 											{"select", "itemID", 115685 },	-- Primal Gladiator's Footguards of Cruelty (A)
-											{"exclude", "itemID", 138561 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115720, {	-- Primal Gladiator's Ringmail Armor
@@ -3363,7 +3317,6 @@ _.Zones =
 											{"select", "itemID", 115627 },	-- Primal Gladiator's Cuffs of Cruelty (A)
 											{"select", "itemID", 115620 },	-- Primal Gladiator's Cord of Cruelty (A)
 											{"select", "itemID", 115623 },	-- Primal Gladiator's Treads of Cruelty (A)
-											{"exclude", "itemID", 138575 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115761, {	-- Primal Gladiator's Felweave Handguards
@@ -3390,7 +3343,6 @@ _.Zones =
 											{"select", "itemID", 115707 },	-- Primal Gladiator's Armplates of Cruelty (A)
 											{"select", "itemID", 115701 },	-- Primal Gladiator's Girdle of Cruelty (A)
 											{"select", "itemID", 115704 },	-- Primal Gladiator's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138555 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(115766, {	-- Primal Gladiator's Plate Chestpiece
@@ -3970,7 +3922,6 @@ _.Zones =
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_weapons_faction_ensemble", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT },
-											{"exclude", "itemID", 138628 },	-- Exclude itself to stop duplicating
 										 },
 									}),
 									i(126065, {	-- Warmongering Combatant's Barrier (A)
@@ -4072,7 +4023,6 @@ _.Zones =
 											{"select", "itemID", 126107 },	-- Warmongering Combatant's Armplates of Cruelty (A)
 											{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
 											{"select", "itemID", 126105 },	-- Warmongering Combatant's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138589 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126027, {	-- Warmongering Combatant's Dreadplate Chestpiece (A)
@@ -4099,7 +4049,6 @@ _.Zones =
 											{"select", "itemID", 126070 },	-- Warmongering Combatant's Bindings of Cruelty (A)
 											{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
 											{"select", "itemID", 126068 },	-- Warmongering Combatant's Boots of Cruelty (A)
-											{"exclude", "itemID", 138593 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126032, {	-- Warmongering Combatant's Dragonhide Gloves (A)
@@ -4126,7 +4075,6 @@ _.Zones =
 											{"select", "itemID", 126087 },	-- Warmongering Combatant's Armbands of Cruelty (A)
 											{"select", "itemID", 126082 },	-- Warmongering Combatant's Waistguard of Cruelty (A)
 											{"select", "itemID", 126084 },	-- Warmongering Combatant's Footguards of Cruelty (A)
-											{"exclude", "itemID", 138537 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126037, {	-- Warmongering Combatant's Chain Armor (A)
@@ -4153,7 +4101,6 @@ _.Zones =
 											{"select", "itemID", 126021 },	-- Warmongering Combatant's Cuffs of Cruelty (A)
 											{"select", "itemID", 126016 },	-- Warmongering Combatant's Cord of Cruelty (A)
 											{"select", "itemID", 126018 },	-- Warmongering Combatant's Treads of Cruelty (A)
-											{"exclude", "itemID", 138539 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126081, {	-- Warmongering Combatant's Silk Amice (A)
@@ -4180,7 +4127,6 @@ _.Zones =
 											{"select", "itemID", 126070 },	-- Warmongering Combatant's Bindings of Cruelty (A)
 											{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
 											{"select", "itemID", 126068 },	-- Warmongering Combatant's Boots of Cruelty (A)
-											{"exclude", "itemID", 138595 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126093, {	-- Warmongering Combatant's Ironskin Gloves (A)
@@ -4207,7 +4153,6 @@ _.Zones =
 											{"select", "itemID", 126107 },	-- Warmongering Combatant's Armplates of Cruelty (A)
 											{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
 											{"select", "itemID", 126105 },	-- Warmongering Combatant's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138591 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126098, {	-- Warmongering Combatant's Scaled Chestpiece (A)
@@ -4234,7 +4179,6 @@ _.Zones =
 											{"select", "itemID", 126021 },	-- Warmongering Combatant's Cuffs of Cruelty (A)
 											{"select", "itemID", 126016 },	-- Warmongering Combatant's Cord of Cruelty (A)
 											{"select", "itemID", 126018 },	-- Warmongering Combatant's Treads of Cruelty (A)
-											{"exclude", "itemID", 138541 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126114, {	-- Warmongering Combatant's Satin Gloves (A)
@@ -4261,7 +4205,6 @@ _.Zones =
 											{"select", "itemID", 126070 },	-- Warmongering Combatant's Bindings of Cruelty (A)
 											{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
 											{"select", "itemID", 126068 },	-- Warmongering Combatant's Boots of Cruelty (A)
-											{"exclude", "itemID", 138597 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126120, {	-- Warmongering Combatant's Leather Gloves (A)
@@ -4288,7 +4231,6 @@ _.Zones =
 											{"select", "itemID", 126087 },	-- Warmongering Combatant's Armbands of Cruelty (A)
 											{"select", "itemID", 126082 },	-- Warmongering Combatant's Waistguard of Cruelty (A)
 											{"select", "itemID", 126084 },	-- Warmongering Combatant's Footguards of Cruelty (A)
-											{"exclude", "itemID", 138535 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126124, {	-- Warmongering Combatant's Ringmail Armor (A)
@@ -4315,7 +4257,6 @@ _.Zones =
 											{"select", "itemID", 126021 },	-- Warmongering Combatant's Cuffs of Cruelty (A)
 											{"select", "itemID", 126016 },	-- Warmongering Combatant's Cord of Cruelty (A)
 											{"select", "itemID", 126018 },	-- Warmongering Combatant's Treads of Cruelty (A)
-											{"exclude", "itemID", 138453 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126171, {	-- Warmongering Combatant's Felweave Amice (A)
@@ -4342,7 +4283,6 @@ _.Zones =
 											{"select", "itemID", 126107 },	-- Warmongering Combatant's Armplates of Cruelty (A)
 											{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
 											{"select", "itemID", 126105 },	-- Warmongering Combatant's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138587 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126172, {	-- Warmongering Combatant's Plate Chestpiece (A)
@@ -4603,7 +4543,6 @@ _.Zones =
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_weapons_faction_ensemble", WOD_TIER, SEASON_WILD, FACTION_HEADER_ALLIANCE, PVP_COMBATANT },
-											{"exclude", "itemID", 138630 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124951, {	-- Wild Combatant's Barrier (A)
@@ -4705,7 +4644,6 @@ _.Zones =
 											{"select", "itemID", 124993 },	-- Wild Combatant's Armplates of Cruelty (A)
 											{"select", "itemID", 124989 },	-- Wild Combatant's Girdle of Cruelty (A)
 											{"select", "itemID", 124991 },	-- Wild Combatant's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138601 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124913, {	-- Wild Combatant's Dreadplate Chestpiece (A)
@@ -4732,7 +4670,6 @@ _.Zones =
 											{"select", "itemID", 124956 },	-- Wild Combatant's Bindings of Cruelty (A)
 											{"select", "itemID", 124953 },	-- Wild Combatant's Belt of Cruelty (A)
 											{"select", "itemID", 124954 },	-- Wild Combatant's Boots of Cruelty (A)
-											{"exclude", "itemID", 138605 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124918, {	-- Wild Combatant's Dragonhide Gloves (A)
@@ -4759,7 +4696,6 @@ _.Zones =
 											{"select", "itemID", 124956 },	-- Wild Combatant's Bindings of Cruelty (A)
 											{"select", "itemID", 124953 },	-- Wild Combatant's Belt of Cruelty (A)
 											{"select", "itemID", 124954 },	-- Wild Combatant's Boots of Cruelty (A)
-											{"exclude", "itemID", 138547 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124923, {	-- Wild Combatant's Chain Armor (A)
@@ -4786,7 +4722,6 @@ _.Zones =
 											{"select", "itemID", 124907 },	-- Wild Combatant's Cuffs of Cruelty (A)
 											{"select", "itemID", 124902 },	-- Wild Combatant's Cord of Cruelty (A)
 											{"select", "itemID", 124904 },	-- Wild Combatant's Treads of Cruelty (A)
-											{"exclude", "itemID", 138549 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124967, {	-- Wild Combatant's Silk Amice (A)
@@ -4813,7 +4748,6 @@ _.Zones =
 											{"select", "itemID", 124956 },	-- Wild Combatant's Bindings of Cruelty (A)
 											{"select", "itemID", 124953 },	-- Wild Combatant's Belt of Cruelty (A)
 											{"select", "itemID", 124954 },	-- Wild Combatant's Boots of Cruelty (A)
-											{"exclude", "itemID", 138607 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124979, {	-- Wild Combatant's Ironskin Gloves (A)
@@ -4840,7 +4774,6 @@ _.Zones =
 											{"select", "itemID", 124993 },	-- Wild Combatant's Armplates of Cruelty (A)
 											{"select", "itemID", 124989 },	-- Wild Combatant's Girdle of Cruelty (A)
 											{"select", "itemID", 124991 },	-- Wild Combatant's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138603 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(124984, {	-- Wild Combatant's Scaled Chestpiece (A)
@@ -4867,7 +4800,6 @@ _.Zones =
 											{"select", "itemID", 124907 },	-- Wild Combatant's Cuffs of Cruelty (A)
 											{"select", "itemID", 124902 },	-- Wild Combatant's Cord of Cruelty (A)
 											{"select", "itemID", 124904 },	-- Wild Combatant's Treads of Cruelty (A)
-											{"exclude", "itemID", 138551 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125000, {	-- Wild Combatant's Satin Gloves (A)
@@ -4894,7 +4826,6 @@ _.Zones =
 											{"select", "itemID", 124956 },	-- Wild Combatant's Bindings of Cruelty (A)
 											{"select", "itemID", 124953 },	-- Wild Combatant's Belt of Cruelty (A)
 											{"select", "itemID", 124954 },	-- Wild Combatant's Boots of Cruelty (A)
-											{"exclude", "itemID", 138609 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125006, {	-- Wild Combatant's Leather Gloves (A)
@@ -4921,7 +4852,6 @@ _.Zones =
 											{"select", "itemID", 124973 },	-- Wild Combatant's Armbands of Cruelty (A)
 											{"select", "itemID", 124968 },	-- Wild Combatant's Waistguard of Cruelty (A)
 											{"select", "itemID", 124970 },	-- Wild Combatant's Footguards of Cruelty  (A)
-											{"exclude", "itemID", 138545 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125010, {	-- Wild Combatant's Ringmail Armor (A)
@@ -4948,7 +4878,6 @@ _.Zones =
 											{"select", "itemID", 124907 },	-- Wild Combatant's Cuffs of Cruelty (A)
 											{"select", "itemID", 124902 },	-- Wild Combatant's Cord of Cruelty (A)
 											{"select", "itemID", 124904 },	-- Wild Combatant's Treads of Cruelty (A)
-											{"exclude", "itemID", 138553 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125057, {	-- Wild Combatant's Felweave Amice (A)
@@ -4975,7 +4904,6 @@ _.Zones =
 											{"select", "itemID", 124993 },	-- Wild Combatant's Armplates of Cruelty (A)
 											{"select", "itemID", 124989 },	-- Wild Combatant's Girdle of Cruelty (A)
 											{"select", "itemID", 124991 },	-- Wild Combatant's Warboots of Cruelty (A)
-											{"exclude", "itemID", 138599 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125058, {	-- Wild Combatant's Plate Chestpiece (A)

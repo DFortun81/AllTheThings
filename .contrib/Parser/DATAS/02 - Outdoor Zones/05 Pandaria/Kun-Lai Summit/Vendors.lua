@@ -47,7 +47,6 @@ _.Zones =
 									{"select", "itemID", 102802 },	-- Grievous Gladiator's Slicer
 									{"select", "itemID", 102791 },	-- Grievous Gladiator's Spellblade
 									{"select", "itemID", 102790 },	-- Grievous Gladiator's Staff
-									{"exclude", "itemID", 144251 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(102982, {	-- Grievous Gladiator's Barrier
@@ -145,7 +144,6 @@ _.Zones =
 									{"select", "itemID", 102910 },	-- Grievous Gladiator's Dreadplate Helm
 									{"select", "itemID", 102848 },	-- Grievous Gladiator's Dreadplate Legguards
 									{"select", "itemID", 102849 },	-- Grievous Gladiator's Dreadplate Shoulders
-									{"exclude", "itemID", 138662 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(102873, {	-- Grievous Gladiator's Dreadplate Chestpiece
@@ -196,7 +194,6 @@ _.Zones =
 									{"select", "itemID", 102964 },	-- Grievous Gladiator's Wyrmhide Legguards
 									{"select", "itemID", 102811 },	-- Grievous Gladiator's Wyrmhide Robes
 									{"select", "itemID", 102897 },	-- Grievous Gladiator's Wyrmhide Spaulders
-									{"exclude", "itemID", 138670 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(102936, {	-- Grievous Gladiator's Dragonhide Gloves
@@ -267,7 +264,6 @@ _.Zones =
 									{"select", "itemID", 102887 },	-- Grievous Gladiator's Chain Helm
 									{"select", "itemID", 102867 },	-- Grievous Gladiator's Chain Leggings
 									{"select", "itemID", 102931 },	-- Grievous Gladiator's Chain Spaulders
-									{"exclude", "itemID", 138668 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(102886, {	-- Grievous Gladiator's Chain Armor
@@ -302,7 +298,6 @@ _.Zones =
 									{"select", "itemID", 102932 },	-- Grievous Gladiator's Silk Handguards
 									{"select", "itemID", 102912 },	-- Grievous Gladiator's Silk Robe
 									{"select", "itemID", 102845 },	-- Grievous Gladiator's Silk Trousers
-									{"exclude", "itemID", 138676 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(102870, {	-- Grievous Gladiator's Silk Amice
@@ -342,7 +337,6 @@ _.Zones =
 									{"select", "itemID", 102853 },	-- Grievous Gladiator's Ironskin Legguards
 									{"select", "itemID", 102823 },	-- Grievous Gladiator's Ironskin Spaulders
 									{"select", "itemID", 102917 },	-- Grievous Gladiator's Ironskin Tunic
-									{"exclude", "itemID", 138672 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(102824, {	-- Grievous Gladiator's Copperskin Gloves
@@ -403,7 +397,6 @@ _.Zones =
 									{"select", "itemID", 102976 },	-- Grievous Gladiator's Scaled Helm
 									{"select", "itemID", 102977 },	-- Grievous Gladiator's Scaled Legguards
 									{"select", "itemID", 102941 },	-- Grievous Gladiator's Scaled Shoulders
-									{"exclude", "itemID", 138664 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(102829, {	-- Grievous Gladiator's Ornamented Chestguard
@@ -458,7 +451,6 @@ _.Zones =
 									{"select", "itemID", 102818 },	-- Grievous Gladiator's Satin Leggings
 									{"select", "itemID", 102868 },	-- Grievous Gladiator's Satin Mantle
 									{"select", "itemID", 102819 },	-- Grievous Gladiator's Satin Robe
-									{"exclude", "itemID", 138678 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(102812, {	-- Grievous Gladiator's Mooncloth Gloves
@@ -508,7 +500,6 @@ _.Zones =
 									{"select", "itemID", 102927 },	-- Grievous Gladiator's Leather Legguards
 									{"select", "itemID", 102928 },	-- Grievous Gladiator's Leather Spaulders
 									{"select", "itemID", 102924 },	-- Grievous Gladiator's Leather Tunic
-									{"exclude", "itemID", 138674 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(102860, {	-- Grievous Gladiator's Leather Gloves
@@ -559,7 +550,6 @@ _.Zones =
 									{"select", "itemID", 102915 },	-- Grievous Gladiator's Ringmail Helm
 									{"select", "itemID", 102916 },	-- Grievous Gladiator's Ringmail Leggings
 									{"select", "itemID", 102852 },	-- Grievous Gladiator's Ringmail Spaulders
-									{"exclude", "itemID", 138666 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(102956, {	-- Grievous Gladiator's Linked Armor
@@ -624,7 +614,6 @@ _.Zones =
 									{"select", "itemID", 102922 },	-- Grievous Gladiator's Felweave Handguards
 									{"select", "itemID", 102858 },	-- Grievous Gladiator's Felweave Raiment
 									{"select", "itemID", 102952 },	-- Grievous Gladiator's Felweave Trousers
-									{"exclude", "itemID", 143826 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(102879, {	-- Grievous Gladiator's Felweave Amice
@@ -659,7 +648,6 @@ _.Zones =
 									{"select", "itemID", 102816 },	-- Grievous Gladiator's Plate Helm
 									{"select", "itemID", 102929 },	-- Grievous Gladiator's Plate Legguards
 									{"select", "itemID", 102882 },	-- Grievous Gladiator's Plate Shoulders
-									{"exclude", "itemID", 138660 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(102925, {	-- Grievous Gladiator's Plate Chestpiece
@@ -886,7 +874,6 @@ _.Zones =
 									{"exclude", "itemID", 84961 },	-- Malevolent Gladiator's Spellblade
 									{"exclude", "itemID", 84789 },	-- Malevolent Gladiator's Staff
 									{"exclude", "itemID", 84894 },	-- Malevolent Gladiator's Slasher
-									{"exclude", "itemID", 144243 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							-- S12 Tag
@@ -1012,7 +999,6 @@ _.Zones =
 									{"select", "itemID", 91504 },	-- Malevolent Gladiator's Dreadplate Helm
 									{"select", "itemID", 91506 },	-- Malevolent Gladiator's Dreadplate Legguards
 									{"select", "itemID", 91508 },	-- Malevolent Gladiator's Dreadplate Shoulders
-									{"exclude", "itemID", 138704 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84795),	-- Malevolent Gladiator's Dreadplate Chestpiece
@@ -1070,7 +1056,6 @@ _.Zones =
 									{"select", "itemID", 91546 },	-- Malevolent Gladiator's Wyrmhide Legguards
 									{"select", "itemID", 91548 },	-- Malevolent Gladiator's Wyrmhide Robes
 									{"select", "itemID", 91550 },	-- Malevolent Gladiator's Wyrmhide Spaulders
-									{"exclude", "itemID", 138708 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84832),	-- Malevolent Gladiator's Dragonhide Gloves
@@ -1158,7 +1143,6 @@ _.Zones =
 									{"select", "itemID", 91579 },	-- Malevolent Gladiator's Chain Helm
 									{"select", "itemID", 91581 },	-- Malevolent Gladiator's Chain Leggings
 									{"select", "itemID", 91583 },	-- Malevolent Gladiator's Chain Spaulders
-									{"exclude", "itemID", 138707 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84796),	-- Malevolent Gladiator's Chain Armor
@@ -1200,7 +1184,6 @@ _.Zones =
 									{"select", "itemID", 91585 },	-- Malevolent Gladiator's Silk Handguards
 									{"select", "itemID", 91591 },	-- Malevolent Gladiator's Silk Robe
 									{"select", "itemID", 91589 },	-- Malevolent Gladiator's Silk Trousers
-									{"exclude", "itemID", 138711 },	-- Exclude itself to stop duplicating
 									{"exclude", "itemID", 97925 },	-- Malevolent Gladiator's Silk Amice
 									{"exclude", "itemID", 97835 },	-- Malevolent Gladiator's Silk Amice
 									{"exclude", "itemID", 97923 },	-- Malevolent Gladiator's Silk Cowl
@@ -1257,7 +1240,6 @@ _.Zones =
 									{"select", "itemID", 91604 },	-- Malevolent Gladiator's Ironskin Legguards
 									{"select", "itemID", 91606 },	-- Malevolent Gladiator's Ironskin Spaulders
 									{"select", "itemID", 91608 },	-- Malevolent Gladiator's Ironskin Tunic
-									{"exclude", "itemID", 138709 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84836),	-- Malevolent Gladiator's Copperskin Gloves
@@ -1330,7 +1312,6 @@ _.Zones =
 									{"select", "itemID", 91624 },	-- Malevolent Gladiator's Scaled Helm
 									{"select", "itemID", 91626 },	-- Malevolent Gladiator's Scaled Legguards
 									{"select", "itemID", 91628 },	-- Malevolent Gladiator's Scaled Shoulders
-									{"exclude", "itemID", 138705 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84793),	-- Malevolent Gladiator's Ornamented Chestguard
@@ -1397,7 +1378,6 @@ _.Zones =
 									{"select", "itemID", 91676 },	-- Malevolent Gladiator's Satin Leggings
 									{"select", "itemID", 91680 },	-- Malevolent Gladiator's Satin Mantle
 									{"select", "itemID", 91678 },	-- Malevolent Gladiator's Satin Robe
-									{"exclude", "itemID", 138712 },	-- Exclude itself to stop duplicating
 									{"exclude", "itemID", 97515 },	-- Malevolent Gladiator's Mooncloth Helm
 									{"exclude", "itemID", 97522 },	-- Malevolent Gladiator's Satin Gloves
 									{"exclude", "itemID", 97525 },	-- Malevolent Gladiator's Satin Leggings
@@ -1464,7 +1444,6 @@ _.Zones =
 									{"select", "itemID", 91699 },	-- Malevolent Gladiator's Leather Legguards
 									{"select", "itemID", 91701 },	-- Malevolent Gladiator's Leather Spaulders
 									{"select", "itemID", 91693 },	-- Malevolent Gladiator's Leather Tunic
-									{"exclude", "itemID", 138710 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84830),	-- Malevolent Gladiator's Leather Gloves
@@ -1522,7 +1501,6 @@ _.Zones =
 									{"select", "itemID", 91715 },	-- Malevolent Gladiator's Ringmail Helm
 									{"select", "itemID", 91717 },	-- Malevolent Gladiator's Ringmail Leggings
 									{"select", "itemID", 91719 },	-- Malevolent Gladiator's Ringmail Spaulders
-									{"exclude", "itemID", 138706 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84799),	-- Malevolent Gladiator's Linked Armor
@@ -1604,7 +1582,6 @@ _.Zones =
 									{"select", "itemID", 91773 },	-- Malevolent Gladiator's Felweave Handguards
 									{"select", "itemID", 91779 },	-- Malevolent Gladiator's Felweave Raiment
 									{"select", "itemID", 91777 },	-- Malevolent Gladiator's Felweave Trousers
-									{"exclude", "itemID", 138713 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84923),	-- Malevolent Gladiator's Felweave Amice
@@ -1646,7 +1623,6 @@ _.Zones =
 									{"select", "itemID", 91787 },	-- Malevolent Gladiator's Plate Helm
 									{"select", "itemID", 91789 },	-- Malevolent Gladiator's Plate Legguards
 									{"select", "itemID", 91791 },	-- Malevolent Gladiator's Plate Shoulders
-									{"exclude", "itemID", 138703 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84797),	-- Malevolent Gladiator's Plate Chestpiece
@@ -1867,7 +1843,6 @@ _.Zones =
 									{"select", "itemID", 84438 },	-- Dreadful Gladiator's Armplates of Proficiency
 									{"select", "itemID", 84434 },	-- Dreadful Gladiator's Girdle of Accuracy
 									{"select", "itemID", 84436 },	-- Dreadful Gladiator's Warboots of Cruelty
-									{"exclude", "itemID", 138715 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84372, {	-- Dreadful Gladiator's Dreadplate Chestpiece
@@ -1897,7 +1872,6 @@ _.Zones =
 									{"select", "itemID", 84382 },	-- Dreadful Gladiator's Belt of Meditation
 									{"select", "itemID", 84391 },	-- Dreadful Gladiator's Footguards of Alacrity (Leather)
 									{"select", "itemID", 84383 },	-- Dreadful Gladiator's Footguards of Meditation (Leather)
-									{"exclude", "itemID", 138719 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84377, {	-- Dreadful Gladiator's Dragonhide Gloves
@@ -1957,7 +1931,6 @@ _.Zones =
 									{"select", "itemID", 84402 },	-- Dreadful Gladiator's Links of Cruelty
 									{"select", "itemID", 84405 },	-- Dreadful Gladiator's Sabatons of Alacrity
 									{"select", "itemID", 84404 },	-- Dreadful Gladiator's Sabatons of Cruelty
-									{"exclude", "itemID", 138718 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84408, {	-- Dreadful Gladiator's Chain Armor
@@ -1984,7 +1957,6 @@ _.Zones =
 									{"select", "itemID", 84360 },	-- Dreadful Gladiator's Cuffs of Prowess
 									{"select", "itemID", 84353 },	-- Dreadful Gladiator's Cord of Cruelty
 									{"select", "itemID", 84356 },	-- Dreadful Gladiator's Treads of Cruelty
-									{"exclude", "itemID", 138722 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84417, {	-- Dreadful Gladiator's Silk Amice
@@ -2011,7 +1983,6 @@ _.Zones =
 									{"select", "itemID", 84461 },	-- Dreadful Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 84456 },	-- Dreadful Gladiator's Waistband of Cruelty
 									{"select", "itemID", 84459 },	-- Dreadful Gladiator's Boots of Alacrity
-									{"exclude", "itemID", 138720 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84548, {	-- Dreadful Gladiator's Copperskin Gloves
@@ -2056,7 +2027,6 @@ _.Zones =
 									{"select", "itemID", 84424 },	-- Dreadful Gladiator's Clasp of Meditation
 									{"select", "itemID", 84425 },	-- Dreadful Gladiator's Greaves of Alacrity
 									{"select", "itemID", 84426 },	-- Dreadful Gladiator's Greaves of Meditation
-									{"exclude", "itemID", 138716 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84429, {	-- Dreadful Gladiator's Ornamented Chestguard
@@ -2098,7 +2068,6 @@ _.Zones =
 									{"select", "itemID", 84361 },	-- Dreadful Gladiator's Cuffs of Meditation
 									{"select", "itemID", 84355 },	-- Dreadful Gladiator's Cord of Meditation
 									{"select", "itemID", 84358 },	-- Dreadful Gladiator's Treads of Meditation
-									{"exclude", "itemID", 138723 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84440, {	-- Dreadful Gladiator's Mooncloth Gloves
@@ -2140,7 +2109,6 @@ _.Zones =
 									{"select", "itemID", 84460 },	-- Dreadful Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 84457 },	-- Dreadful Gladiator's Waistband of Accuracy
 									{"select", "itemID", 84458 },	-- Dreadful Gladiator's Boots of Cruelty
-									{"exclude", "itemID", 138721 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84463, {	-- Dreadful Gladiator's Leather Gloves
@@ -2170,7 +2138,6 @@ _.Zones =
 									{"select", "itemID", 84467 },	-- Dreadful Gladiator's Waistguard of Meditation
 									{"select", "itemID", 84468 },	-- Dreadful Gladiator's Footguards of Alacrity (Mail)
 									{"select", "itemID", 84469 },	-- Dreadful Gladiator's Footguards of Meditation (Mail)
-									{"exclude", "itemID", 138717 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84477, {	-- Dreadful Gladiator's Linked Armor
@@ -2227,7 +2194,6 @@ _.Zones =
 									{"select", "itemID", 84359 },	-- Dreadful Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 84354 },	-- Dreadful Gladiator's Cord of Accuracy
 									{"select", "itemID", 84357 },	-- Dreadful Gladiator's Treads of Alacrity
-									{"exclude", "itemID", 138724 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84503, {	-- Dreadful Gladiator's Felweave Amice
@@ -2254,7 +2220,6 @@ _.Zones =
 									{"select", "itemID", 84439 },	-- Dreadful Gladiator's Armplates of Alacrity
 									{"select", "itemID", 84435 },	-- Dreadful Gladiator's Girdle of Prowess
 									{"select", "itemID", 84437 },	-- Dreadful Gladiator's Warboots of Alacrity
-									{"exclude", "itemID", 138714 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84504, {	-- Dreadful Gladiator's Plate Chestpiece
@@ -2478,7 +2443,6 @@ _.Zones =
 									{"select", "itemID", 99979 },	-- Tyrannical Gladiator's Slicer
 									{"select", "itemID", 99967 },	-- Tyrannical Gladiator's Spellblade
 									{"select", "itemID", 99968 },	-- Tyrannical Gladiator's Staff
-									{"exclude", "itemID", 144245 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(100171, {	-- Tyrannical Gladiator's Barrier
@@ -2567,7 +2531,6 @@ _.Zones =
 									{"select", "itemID", 100099 },	-- Tyrannical Gladiator's Dreadplate Helm
 									{"select", "itemID", 100035 },	-- Tyrannical Gladiator's Dreadplate Legguards
 									{"select", "itemID", 100036 },	-- Tyrannical Gladiator's Dreadplate Shoulders
-									{"exclude", "itemID", 138684 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(100062, {	-- Tyrannical Gladiator's Dreadplate Chestpiece
@@ -2618,7 +2581,6 @@ _.Zones =
 									{"select", "itemID", 100153 },	-- Tyrannical Gladiator's Wyrmhide Legguards
 									{"select", "itemID", 99988 },	-- Tyrannical Gladiator's Wyrmhide Robes
 									{"select", "itemID", 100086 },	-- Tyrannical Gladiator's Wyrmhide Spaulders
-									{"exclude", "itemID", 138692 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(100125, {	-- Tyrannical Gladiator's Dragonhide Gloves
@@ -2689,7 +2651,6 @@ _.Zones =
 									{"select", "itemID", 100076 },	-- Tyrannical Gladiator's Chain Helm
 									{"select", "itemID", 100054 },	-- Tyrannical Gladiator's Chain Leggings
 									{"select", "itemID", 100120 },	-- Tyrannical Gladiator's Chain Spaulders
-									{"exclude", "itemID", 138690 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(100075, {	-- Tyrannical Gladiator's Chain Armor
@@ -2724,7 +2685,6 @@ _.Zones =
 									{"select", "itemID", 100121 },	-- Tyrannical Gladiator's Silk Handguards
 									{"select", "itemID", 100101 },	-- Tyrannical Gladiator's Silk Robe
 									{"select", "itemID", 100032 },	-- Tyrannical Gladiator's Silk Trousers
-									{"exclude", "itemID", 138698 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(100059, {	-- Tyrannical Gladiator's Silk Amice
@@ -2764,7 +2724,6 @@ _.Zones =
 									{"select", "itemID", 100040 },	-- Tyrannical Gladiator's Ironskin Legguards
 									{"select", "itemID", 100009 },	-- Tyrannical Gladiator's Ironskin Spaulders
 									{"select", "itemID", 100106 },	-- Tyrannical Gladiator's Ironskin Tunic
-									{"exclude", "itemID", 138694 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(100010, {	-- Tyrannical Gladiator's Copperskin Gloves
@@ -2825,7 +2784,6 @@ _.Zones =
 									{"select", "itemID", 100165 },	-- Tyrannical Gladiator's Scaled Helm
 									{"select", "itemID", 100166 },	-- Tyrannical Gladiator's Scaled Legguards
 									{"select", "itemID", 100130 },	-- Tyrannical Gladiator's Scaled Shoulders
-									{"exclude", "itemID", 138686 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(100015, {	-- Tyrannical Gladiator's Ornamented Chestguard
@@ -2880,7 +2838,6 @@ _.Zones =
 									{"select", "itemID", 99996 },	-- Tyrannical Gladiator's Satin Leggings
 									{"select", "itemID", 100055 },	-- Tyrannical Gladiator's Satin Mantle
 									{"select", "itemID", 99998 },	-- Tyrannical Gladiator's Satin Robe
-									{"exclude", "itemID", 138700 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(99989, {	-- Tyrannical Gladiator's Mooncloth Gloves
@@ -2930,7 +2887,6 @@ _.Zones =
 									{"select", "itemID", 100116 },	-- Tyrannical Gladiator's Leather Legguards
 									{"select", "itemID", 100117 },	-- Tyrannical Gladiator's Leather Spaulders
 									{"select", "itemID", 100113 },	-- Tyrannical Gladiator's Leather Tunic
-									{"exclude", "itemID", 138696 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(100047, {	-- Tyrannical Gladiator's Leather Gloves
@@ -2981,7 +2937,6 @@ _.Zones =
 									{"select", "itemID", 100104 },	-- Tyrannical Gladiator's Ringmail Helm
 									{"select", "itemID", 100105 },	-- Tyrannical Gladiator's Ringmail Leggings
 									{"select", "itemID", 100039 },	-- Tyrannical Gladiator's Ringmail Spaulders
-									{"exclude", "itemID", 138688 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(100145, {	-- Tyrannical Gladiator's Linked Armor
@@ -3046,7 +3001,6 @@ _.Zones =
 									{"select", "itemID", 100111 },	-- Tyrannical Gladiator's Felweave Handguards
 									{"select", "itemID", 100045 },	-- Tyrannical Gladiator's Felweave Raiment
 									{"select", "itemID", 100141 },	-- Tyrannical Gladiator's Felweave Trousers
-									{"exclude", "itemID", 138702 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(100068, {	-- Tyrannical Gladiator's Felweave Amice
@@ -3081,7 +3035,6 @@ _.Zones =
 									{"select", "itemID", 99993 },	-- Tyrannical Gladiator's Plate Helm
 									{"select", "itemID", 100118 },	-- Tyrannical Gladiator's Plate Legguards
 									{"select", "itemID", 100071 },	-- Tyrannical Gladiator's Plate Shoulders
-									{"exclude", "itemID", 138682 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(100114, {	-- Tyrannical Gladiator's Plate Chestpiece
@@ -3277,7 +3230,6 @@ _.Zones =
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_weapons_ensemble", MOP_TIER, SEASON_PRIDEFUL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-									{"exclude", "itemID", 144250 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(103364, {	-- Prideful Gladiator's Barrier
@@ -3367,7 +3319,6 @@ _.Zones =
 									{"select", "itemID", 103460 },	-- Prideful Gladiator's Armplates of Alacrity
 									{"select", "itemID", 103455 },	-- Prideful Gladiator's Girdle of Accuracy
 									{"select", "itemID", 103458 },	-- Prideful Gladiator's Warboots of Alacrity
-									{"exclude", "itemID", 138640 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(103376, {	-- Prideful Gladiator's Dreadplate Chestpiece
@@ -3397,7 +3348,6 @@ _.Zones =
 									{"select", "itemID", 103386 },	-- Prideful Gladiator's Belt of Meditation
 									{"select", "itemID", 103396 },	-- Prideful Gladiator's Footguards of Alacrity (Leather)
 									{"select", "itemID", 103387 },	-- Prideful Gladiator's Footguards of Meditation (Leather)
-									{"exclude", "itemID", 138648 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(103381, {	-- Prideful Gladiator's Dragonhide Gloves
@@ -3457,7 +3407,6 @@ _.Zones =
 									{"select", "itemID", 103410 },	-- Prideful Gladiator's Links of Cruelty
 									{"select", "itemID", 103413 },	-- Prideful Gladiator's Sabatons of Alacrity
 									{"select", "itemID", 103412 },	-- Prideful Gladiator's Sabatons of Cruelty
-									{"exclude", "itemID", 138646 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(103416, {	-- Prideful Gladiator's Chain Armor
@@ -3484,7 +3433,6 @@ _.Zones =
 									{"select", "itemID", 103358 },	-- Prideful Gladiator's Cuffs of Prowess
 									{"select", "itemID", 103351 },	-- Prideful Gladiator's Cord of Cruelty
 									{"select", "itemID", 103354 },	-- Prideful Gladiator's Treads of Cruelty
-									{"exclude", "itemID", 138654 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(103425, {	-- Prideful Gladiator's Silk Amice
@@ -3511,7 +3459,6 @@ _.Zones =
 									{"select", "itemID", 103428 },	-- Prideful Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 103426 },	-- Prideful Gladiator's Waistband of Cruelty
 									{"select", "itemID", 103427 },	-- Prideful Gladiator's Boots of Alacrity
-									{"exclude", "itemID", 138650 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(103434, {	-- Prideful Gladiator's Copperskin Gloves
@@ -3556,7 +3503,6 @@ _.Zones =
 									{"select", "itemID", 103445 },	-- Prideful Gladiator's Clasp of Meditation
 									{"select", "itemID", 103446 },	-- Prideful Gladiator's Greaves of Alacrity
 									{"select", "itemID", 103447 },	-- Prideful Gladiator's Greaves of Meditation
-									{"exclude", "itemID", 138642 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(103450, {	-- Prideful Gladiator's Ornamented Chestguard
@@ -3599,7 +3545,6 @@ _.Zones =
 									{"select", "itemID", 103353 },	-- Prideful Gladiator's Cord of Meditation
 									{"select", "itemID", 147362 },	-- Prideful Gladiator's Cord of Prowess
 									{"select", "itemID", 103356 },	-- Prideful Gladiator's Treads of Meditation
-									{"exclude", "itemID", 138656 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(103462, {	-- Prideful Gladiator's Mooncloth Gloves
@@ -3641,7 +3586,6 @@ _.Zones =
 									{"select", "itemID", 103428 },	-- Prideful Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 103472 },	-- Prideful Gladiator's Waistband of Accuracy
 									{"select", "itemID", 103473 },	-- Prideful Gladiator's Boots of Cruelty
-									{"exclude", "itemID", 138652 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(103476, {	-- Prideful Gladiator's Leather Gloves
@@ -3671,7 +3615,6 @@ _.Zones =
 									{"select", "itemID", 103480 },	-- Prideful Gladiator's Waistguard of Meditation
 									{"select", "itemID", 103481 },	-- Prideful Gladiator's Footguards of Alacrity (Mail)
 									{"select", "itemID", 103482 },	-- Prideful Gladiator's Footguards of Meditation (Mail)
-									{"exclude", "itemID", 138644 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(103490, {	-- Prideful Gladiator's Linked Armor
@@ -3728,7 +3671,6 @@ _.Zones =
 									{"select", "itemID", 103357 },	-- Prideful Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 103352 },	-- Prideful Gladiator's Cord of Accuracy
 									{"select", "itemID", 103355 },	-- Prideful Gladiator's Treads of Alacrity
-									{"exclude", "itemID", 138658 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(103524, {	-- Prideful Gladiator's Felweave Amice
@@ -3755,7 +3697,6 @@ _.Zones =
 									{"select", "itemID", 103459 },	-- Prideful Gladiator's Armplates of Proficiency
 									{"select", "itemID", 103456 },	-- Prideful Gladiator's Girdle of Prowess
 									{"select", "itemID", 103457 },	-- Prideful Gladiator's Warboots of Cruelty
-									{"exclude", "itemID", 138638 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(103525, {	-- Prideful Gladiator's Plate Chestpiece
