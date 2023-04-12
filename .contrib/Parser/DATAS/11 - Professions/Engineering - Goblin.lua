@@ -34,7 +34,7 @@ profession(ENGINEERING, {
 						["name"] = "Goblin Jumper Cables XL",
 						["recipeID"] = 23078,
 					},
-					-- #if AFTER MOP
+					-- #if AFTER WRATH
 					{
 						["name"] = "Goblin Rocket Boots",
 						["recipeID"] = 8895,

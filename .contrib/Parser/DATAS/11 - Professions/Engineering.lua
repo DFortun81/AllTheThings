@@ -100,7 +100,7 @@ profession(ENGINEERING, {
 					["name"] = "Goblin Jumper Cables",
 					["recipeID"] = 9273,
 				},
-				-- #if BEFORE MOP
+				-- #if BEFORE WRATH
 				{
 					["name"] = "Goblin Rocket Boots",
 					["description"] = "Can be learned from a recipe, but is taught naturally to Goblin Engineers.",
