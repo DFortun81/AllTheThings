@@ -299,20 +299,42 @@ namespace ATT
         }
 
         /// <summary>
-        /// Finds an object from a List of object datas which contains the specified value for the given key
+        /// Finds an object from a List of object datas which contains the specified key/value pair
         /// </summary>
         public static Dictionary<string, object> FindObject<T>(this List<object> list, string key, T value)
         {
             if (list == null || list.Count == 0) return null;
 
-            // We need to look for the ID type.
             foreach (var obj in list)
             {
-                // Cache the container entry for comparisons.
                 if (obj is Dictionary<string, object> thing &&
                     thing.TryGetValue(key, out object thingVal) &&
                     thingVal.TryConvert(out T thingKeyVal) &&
                     thingKeyVal.Equals(value))
+                {
+                    return thing;
+                }
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Finds an object from a List of object datas which contains both specified key/value pairs
+        /// </summary>
+        public static Dictionary<string, object> FindObject<T1, T2>(this List<object> list, string key1, T1 value1, string key2, T2 value2)
+        {
+            if (list == null || list.Count == 0) return null;
+
+            foreach (var obj in list)
+            {
+                if (obj is Dictionary<string, object> thing &&
+                    thing.TryGetValue(key1, out object thingVal1) &&
+                    thing.TryGetValue(key2, out object thingVal2) &&
+                    thingVal1.TryConvert(out T1 thingKeyVal1) &&
+                    thingVal2.TryConvert(out T2 thingKeyVal2) &&
+                    thingKeyVal1.Equals(value1) &&
+                    thingKeyVal2.Equals(value2))
                 {
                     return thing;
                 }
