@@ -554,7 +554,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 			}),
 			header(HEADERS.AchCriteria, 16405.04, {	-- Pinewood Post
 				q(65837, {	-- Trouble In The Pines
-					["sourceQuests"] = { 65779 },	-- Into the Plains
+					["sourceQuests"] = {
+						65779,	-- Into the Plains
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 195524 },	-- Beastmaster Tirren
 					["coord"] = { 62.0, 41.8, OHNAHRAN_PLAINS },
 					["isBreadcrumb"] = true,

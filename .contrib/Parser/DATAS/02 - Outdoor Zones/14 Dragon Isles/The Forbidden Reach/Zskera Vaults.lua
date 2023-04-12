@@ -95,6 +95,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 201180 },	-- Cataloger Wulferd
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
+					["isWeekly"] = true,
 					["g"] = {
 						i(204305),	-- Neltharion Signed Notes
 					},

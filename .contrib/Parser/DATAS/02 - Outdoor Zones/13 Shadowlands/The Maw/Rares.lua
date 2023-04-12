@@ -1,6 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local function bo(questID)
+    return { ["questID"] = questID, ["isDaily"] = true };
+end
+
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
 	m(THE_MAW, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
@@ -62,6 +66,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					i(186616, {	-- Bindings of Screaming Death
 						["timeline"] = { ADDED_9_1_0 },
 					}),
+					bo(61136),	-- Agonix bonus objective
 				},
 			}),
 			n(170787, {	-- Akros <Death's Hammer>
@@ -71,6 +76,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					i(186617, {	-- Death's Hammer Stompers
 						["timeline"] = { ADDED_9_1_0 },
 					}),
+					bo(60920),	-- Akros bonus objective
 				},
 			}),
 			n(170301, {	-- Apholeias, Herald of Loss
@@ -146,6 +152,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["questID"] = 63373,
 				["g"] = {
 					i(186619),	-- Bloodspattered Shoulders of the Flayer
+					bo(59230),	-- Dartanos bonus objective
 				},
 			}),
 			n(162844, {	-- Dath Rezara
@@ -156,6 +163,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					i(183067),	-- Korrath's Grimoire: Belidir
 					i(183068),	-- Korrath's Grimoire: Gyadrek
 					i(186620),	-- Rezara's Fencing Grips
+					bo(61140),	-- Dath Rezara bonus objective
 				},
 			}),
 			n(179779, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Deomen the Vortex
@@ -183,6 +191,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					i(186622, {	-- Robe of Drifting Sorrow
 						["timeline"] = { ADDED_9_1_0 },
 					}),
+					bo(59183),	-- Drifting Sorrow bonus objective
 				},
 			}),
 			n(170774, {	-- Eketra <The Impaler>
@@ -236,6 +245,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["questID"] = 63385,
 				["g"] = {
 					i(186224),	-- Beastwarren Houndmaster's Treads
+					bo(62209),	-- Houndmaster Vasanok bonus objective
 				},
 			}),
 			n(162965, {	-- Huwerath
@@ -260,6 +270,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["questID"] = 63381,
 				["g"] = {
 					i(186624),	-- Death Wing Drape
+					bo(60903),	-- Krala bonus objective
 				},
 			}),
 			n(171316, {	-- Malevolent Stygia
@@ -269,6 +280,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					i(186625, {	-- Hood of Malevolence
 						["timeline"] = { ADDED_9_1_0 },
 					}),
+					bo(61125),	-- Malevolent Stygia bonus objective
 				},
 			}),
 			n(162849, {	-- Morguliax <Lord of Decapitation>
@@ -308,6 +320,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["questID"] = 63413,
 				["g"] = {
 					i(183061),	-- Wailing Coin
+					bo(62618),	-- Odalrik bonus objective
 				},
 			}),
 			n(162845, {	-- Orrholyn <Lord of Bloodletting>
@@ -317,6 +330,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					i(186626, {	-- Bloodwicking Bands
 						["timeline"] = { ADDED_9_1_0 },
 					}),
+					bo(60991),	-- Orrholyn bonus objective
 				},
 			}),
 			n(172577, {	-- Orophea
@@ -342,6 +356,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["g"] = {
 					i(186627),	-- Belt of Ten Thousand Tails
 					i(183136),	-- Incendiary Mawrat
+					bo(63044),	-- Ratgusher bonus objective
 				},
 			}),
 			n(162829, {	-- Razkazzar
@@ -349,6 +364,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["questID"] = 63374,
 				["g"] = {
 					i(186628),	-- Razkazzar's Axe Grippers
+					bo(60992),	-- Razkazzar bonus objective
 				},
 			}),
 			n(172521, {	-- Sanngror the Torturer
@@ -387,6 +403,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					i(186240, {	-- Broodmotherhide Cloak
 						["timeline"] = { ADDED_9_1_0 },
 					}),
+					bo(62211),	-- Skittering Broodmother bonus objective
 				},
 			}),
 			n(166398, {	-- Soulforger Rhovus
@@ -404,6 +421,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["questID"] = 63377,
 				["g"] = {
 					i(186630),	-- Spark-Deflecting Girdle
+					bo(59441),	-- Soulsmith Yol-Mattar bonus objective
 				},
 			}),
 			n(156203, {	-- Stygian Incinerator
@@ -413,6 +431,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					i(186631, {	-- Emberfused Band
 						["timeline"] = { ADDED_9_1_0 },
 					}),
+					bo(62539),	-- Stygian Incinerator bonus objective
 				},
 			}),
 			n(170302, {	-- Talaporas, Herald of Pain
@@ -463,6 +482,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					n(174812, {	-- Rune of Cruelty (3)
 						["description"] = "Click 3rd.",
 					}),
+					bo(61728),	-- Valis bonus objective
 				},
 			}),
 			n(172862, {	-- Yero the Skittish
@@ -516,25 +536,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, {
-	q(61136),	-- Agonix bonus objective
-	q(60920),	-- Akros bonus objective
-	q(59230),	-- Dartanos bonus objective
-	q(61140),	-- Dath Rezara bonus objective
-	q(59183),	-- Drifting Sorrow bonus objective
-	q(62209),	-- Houndmaster Vasanok bonus objective
-	q(60903),	-- Krala bonus objective
-	q(61125),	-- Malevolent Stygia bonus objective
-	q(62618),	-- Odalrik bonus objective
-	q(60991),	-- Orrholyn bonus objective
-	q(63044),	-- Ratgusher bonus objective
-	q(60992),	-- Razkazzar bonus objective
-	q(62211),	-- Skittering Broodmother bonus objective
-	q(59441),	-- Soulsmith Yol-Mattar bonus objective
-	q(62539),	-- Stygian Incinerator bonus objective
-	q(61728),	-- Valis bonus objective
-
-	-- q(64258),	-- Carriage Crusher / Traitor Balthier
-	-- q(64439),	-- Carriage Crusher / Traitor Balthier
-	q(64701),	-- Stolen Anima Supplies 2nd trigger ?
-});
+root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+	m(THE_MAW, {
+		-- q(64258),	-- Carriage Crusher / Traitor Balthier
+		-- q(64439),	-- Carriage Crusher / Traitor Balthier
+		q(64701),	-- Stolen Anima Supplies 2nd trigger ?
+	})
+})));
