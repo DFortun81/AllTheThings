@@ -369,6 +369,7 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 					}),
 					i(44802, {	-- Borrowed Egg Basket
 						["timeline"] = { "added 3.1.0.9733" },
+						["collectible"] = false,
 					}),
 					i(188698, {	-- Eagger Basket (TOY!)
 						["timeline"] = { ADDED_9_1_5 },
@@ -403,6 +404,7 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 					}),
 					i(44802, {	-- Borrowed Egg Basket
 						["timeline"] = { "added 3.1.0.9733" },
+						["collectible"] = false,
 					}),
 					i(188698, {	-- Eagger Basket (TOY!)
 						["timeline"] = { ADDED_9_1_5 },
