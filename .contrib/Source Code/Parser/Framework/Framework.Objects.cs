@@ -2474,10 +2474,10 @@ end
                 }
 
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out object objKeyValue))
+                if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out decimal id))
                 {
                     // If there is no most significant ID field, then complain.
-                    LogError($"No Most Significant ID!{Environment.NewLine}{ToJSON(data2)}");
+                    LogError($"No Most Significant ID!", data2);
                 }
                 else
                 {
@@ -2487,88 +2487,24 @@ end
                     if (objectData.ConstructorShortcut == "toy")
                         mostSignificantID = "itemID";
 
-                    if (objKeyValue.GetType().IsNumeric())
+                    // Iterate through the list and search for an entry that matches the data
+                    if (mostSignificantID == "itemID")
                     {
-                        var id = objKeyValue;
-
-                        // Iterate through the list and search for an entry that matches the data
-                        if (mostSignificantID == "itemID")
+                        // For Items, also keep track of the Bonus IDs to allow more than one per list.
+                        if (data2.TryGetValue("rank", out object fieldRef))
                         {
-                            // For Items, also keep track of the Bonus IDs to allow more than one per list.
-                            if (data2.TryGetValue("rank", out object fieldRef))
+                            // The data we're merging has a Rank. (we only want to merge them if they're the same!)
+                            var rank = Convert.ToInt64(fieldRef);
+                            foreach (var entryRef in container)
                             {
-                                // The data we're merging has a Rank. (we only want to merge them if they're the same!)
-                                var rank = Convert.ToInt64(fieldRef);
-                                foreach (var entryRef in container)
-                                {
-                                    // Cache the container entry for comparisons.
-                                    var temp = entryRef as Dictionary<string, object>;
-                                    if (temp == null) continue;
+                                // Cache the container entry for comparisons.
+                                var temp = entryRef as Dictionary<string, object>;
+                                if (temp == null) continue;
 
-                                    // Compare the most significant IDs and if they match, this is what I'm looking for!
-                                    if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
-                                    {
-                                        if (temp.TryGetValue("rank", out fieldRef) && fieldRef.Equals(rank))
-                                        {
-                                            entry = temp;
-                                            break;
-                                        }
-                                    }
-                                }
-                            }
-                            else if (data2.TryGetValue("bonusID", out fieldRef))
-                            {
-                                // The data we're merging has a Bonus ID. (we only want to merge them if they're the same!)
-                                var bonusID = Convert.ToInt64(fieldRef);
-                                foreach (var entryRef in container)
+                                // Compare the most significant IDs and if they match, this is what I'm looking for!
+                                if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
                                 {
-                                    // Cache the container entry for comparisons.
-                                    var temp = entryRef as Dictionary<string, object>;
-                                    if (temp == null) continue;
-
-                                    // Compare the most significant IDs and if they match, this is what I'm looking for!
-                                    if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
-                                    {
-                                        if (temp.TryGetValue("bonusID", out fieldRef) && fieldRef.Equals(bonusID))
-                                        {
-                                            entry = temp;
-                                            break;
-                                        }
-                                    }
-                                }
-                            }
-                            else if (data2.TryGetValue("modID", out fieldRef))
-                            {
-                                // The data we're merging has a Mod ID. (we only want to merge them if they're the same!)
-                                var modID = Convert.ToInt64(fieldRef);
-                                foreach (var entryRef in container)
-                                {
-                                    // Cache the container entry for comparisons.
-                                    var temp = entryRef as Dictionary<string, object>;
-                                    if (temp == null) continue;
-
-                                    // Compare the most significant IDs and if they match, this is what I'm looking for!
-                                    if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
-                                    {
-                                        if (temp.TryGetValue("modID", out fieldRef) && fieldRef.Equals(modID))
-                                        {
-                                            entry = temp;
-                                            break;
-                                        }
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                // The item does not have a Bonus ID or a Mod ID, so we can simply merge with the first one.
-                                foreach (var entryRef in container)
-                                {
-                                    // Cache the container entry for comparisons.
-                                    var temp = entryRef as Dictionary<string, object>;
-                                    if (temp == null) continue;
-
-                                    // Compare the most significant IDs and if they match, this is what I'm looking for!
-                                    if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                    if (temp.TryGetValue("rank", out fieldRef) && fieldRef.Equals(rank))
                                     {
                                         entry = temp;
                                         break;
@@ -2576,109 +2512,168 @@ end
                                 }
                             }
                         }
-                        else if (mostSignificantID == "criteriaID")
+                        else if (data2.TryGetValue("bonusID", out fieldRef))
                         {
-                            // For criteria, also keep track of the Item IDs to allow more than one per list.
-                            if (data2.TryGetValue("itemID", out object fieldRef))
+                            // The data we're merging has a Bonus ID. (we only want to merge them if they're the same!)
+                            var bonusID = Convert.ToInt64(fieldRef);
+                            foreach (var entryRef in container)
                             {
-                                // The data we're merging has a Item ID. (we only want to merge them if they're the same!)
-                                var achievementID = Convert.ToInt64(fieldRef);
-                                foreach (var entryRef in container)
-                                {
-                                    // Cache the container entry for comparisons.
-                                    var temp = entryRef as Dictionary<string, object>;
-                                    if (temp == null) continue;
+                                // Cache the container entry for comparisons.
+                                var temp = entryRef as Dictionary<string, object>;
+                                if (temp == null) continue;
 
-                                    // Compare the most significant IDs and if they match, this is what I'm looking for!
-                                    if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
-                                    {
-                                        if (temp.TryGetValue("itemID", out fieldRef) && fieldRef.Equals(achievementID))
-                                        {
-                                            entry = temp;
-                                            break;
-                                        }
-                                    }
-                                }
-                            }
-                            else if (data2.TryGetValue("achID", out fieldRef))
-                            {
-                                // The data we're merging has a Achievement ID. (we only want to merge them if they're the same!)
-                                var achievementID = Convert.ToInt64(fieldRef);
-                                foreach (var entryRef in container)
+                                // Compare the most significant IDs and if they match, this is what I'm looking for!
+                                if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
                                 {
-                                    // Cache the container entry for comparisons.
-                                    var temp = entryRef as Dictionary<string, object>;
-                                    if (temp == null) continue;
-
-                                    // Compare the most significant IDs and if they match, this is what I'm looking for!
-                                    if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                    if (temp.TryGetValue("bonusID", out fieldRef) && fieldRef.Equals(bonusID))
                                     {
-                                        if (temp.TryGetValue("achID", out fieldRef) && fieldRef.Equals(achievementID))
-                                        {
-                                            entry = temp;
-                                            break;
-                                        }
+                                        entry = temp;
+                                        break;
                                     }
                                 }
                             }
                         }
-                        else if (mostSignificantID == "objectiveID")
+                        else if (data2.TryGetValue("modID", out fieldRef))
                         {
-                            if (data2.TryGetValue("questID", out object fieldRef))
+                            // The data we're merging has a Mod ID. (we only want to merge them if they're the same!)
+                            var modID = Convert.ToInt64(fieldRef);
+                            foreach (var entryRef in container)
                             {
-                                // The data we're merging has a Quest ID. (we only want to merge them if they're the same!)
-                                var q = Convert.ToInt64(fieldRef);
-                                foreach (var entryRef in container)
-                                {
-                                    // Cache the container entry for comparisons.
-                                    var temp = entryRef as Dictionary<string, object>;
-                                    if (temp == null) continue;
+                                // Cache the container entry for comparisons.
+                                var temp = entryRef as Dictionary<string, object>;
+                                if (temp == null) continue;
 
-                                    // Compare the most significant IDs and if they match, this is what I'm looking for!
-                                    if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                // Compare the most significant IDs and if they match, this is what I'm looking for!
+                                if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                {
+                                    if (temp.TryGetValue("modID", out fieldRef) && fieldRef.Equals(modID))
                                     {
-                                        if (temp.TryGetValue("questID", out fieldRef) && fieldRef.Equals(q))
-                                        {
-                                            entry = temp;
-                                            break;
-                                        }
+                                        entry = temp;
+                                        break;
                                     }
                                 }
                             }
                         }
-                        else if (mostSignificantID == "azeriteEssenceID" || mostSignificantID == "spellID")
+                        else
                         {
-                            // For Essences, also keep track of the ranks to allow more than one per list.
-                            if (data2.TryGetValue("rank", out object fieldRef))
+                            // The item does not have a Bonus ID or a Mod ID, so we can simply merge with the first one.
+                            foreach (var entryRef in container)
                             {
-                                // The data we're merging has a Rank. (we only want to merge them if they're the same!)
-                                var rank = Convert.ToInt64(fieldRef);
-                                foreach (var entryRef in container)
-                                {
-                                    // Cache the container entry for comparisons.
-                                    var temp = entryRef as Dictionary<string, object>;
-                                    if (temp == null) continue;
+                                // Cache the container entry for comparisons.
+                                var temp = entryRef as Dictionary<string, object>;
+                                if (temp == null) continue;
 
-                                    // Compare the most significant IDs and if they match, this is what I'm looking for!
-                                    if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                // Compare the most significant IDs and if they match, this is what I'm looking for!
+                                if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                {
+                                    entry = temp;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    else if (mostSignificantID == "criteriaID")
+                    {
+                        // For criteria, also keep track of the Item IDs to allow more than one per list.
+                        if (data2.TryGetValue("itemID", out object fieldRef))
+                        {
+                            // The data we're merging has a Item ID. (we only want to merge them if they're the same!)
+                            var achievementID = Convert.ToInt64(fieldRef);
+                            foreach (var entryRef in container)
+                            {
+                                // Cache the container entry for comparisons.
+                                var temp = entryRef as Dictionary<string, object>;
+                                if (temp == null) continue;
+
+                                // Compare the most significant IDs and if they match, this is what I'm looking for!
+                                if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                {
+                                    if (temp.TryGetValue("itemID", out fieldRef) && fieldRef.Equals(achievementID))
                                     {
-                                        if (temp.TryGetValue("rank", out fieldRef) && fieldRef.Equals(rank))
-                                        {
-                                            entry = temp;
-                                            break;
-                                        }
+                                        entry = temp;
+                                        break;
                                     }
                                 }
                             }
-                            else
+                        }
+                        else if (data2.TryGetValue("achID", out fieldRef))
+                        {
+                            // The data we're merging has a Achievement ID. (we only want to merge them if they're the same!)
+                            var achievementID = Convert.ToInt64(fieldRef);
+                            foreach (var entryRef in container)
                             {
-                                entry = container.FindObject(mostSignificantID, id);
+                                // Cache the container entry for comparisons.
+                                var temp = entryRef as Dictionary<string, object>;
+                                if (temp == null) continue;
+
+                                // Compare the most significant IDs and if they match, this is what I'm looking for!
+                                if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                {
+                                    if (temp.TryGetValue("achID", out fieldRef) && fieldRef.Equals(achievementID))
+                                    {
+                                        entry = temp;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else if (mostSignificantID == "objectiveID")
+                    {
+                        if (data2.TryGetValue("questID", out object fieldRef))
+                        {
+                            // The data we're merging has a Quest ID. (we only want to merge them if they're the same!)
+                            var q = Convert.ToInt64(fieldRef);
+                            foreach (var entryRef in container)
+                            {
+                                // Cache the container entry for comparisons.
+                                var temp = entryRef as Dictionary<string, object>;
+                                if (temp == null) continue;
+
+                                // Compare the most significant IDs and if they match, this is what I'm looking for!
+                                if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                {
+                                    if (temp.TryGetValue("questID", out fieldRef) && fieldRef.Equals(q))
+                                    {
+                                        entry = temp;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else if (mostSignificantID == "azeriteEssenceID" || mostSignificantID == "spellID")
+                    {
+                        // For Essences, also keep track of the ranks to allow more than one per list.
+                        if (data2.TryGetValue("rank", out object fieldRef))
+                        {
+                            // The data we're merging has a Rank. (we only want to merge them if they're the same!)
+                            var rank = Convert.ToInt64(fieldRef);
+                            foreach (var entryRef in container)
+                            {
+                                // Cache the container entry for comparisons.
+                                var temp = entryRef as Dictionary<string, object>;
+                                if (temp == null) continue;
+
+                                // Compare the most significant IDs and if they match, this is what I'm looking for!
+                                if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                {
+                                    if (temp.TryGetValue("rank", out fieldRef) && fieldRef.Equals(rank))
+                                    {
+                                        entry = temp;
+                                        break;
+                                    }
+                                }
                             }
                         }
                         else
                         {
                             entry = container.FindObject(mostSignificantID, id);
                         }
+                    }
+                    else
+                    {
+                        entry = container.FindObject(mostSignificantID, id);
                     }
                 }
 

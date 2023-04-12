@@ -25,11 +25,6 @@ namespace ATT
             private static readonly IDictionary<string, ObjectData> OBJECT_CONSTRUCTORS = new Dictionary<string, ObjectData>();
 
             /// <summary>
-            /// All of the conersion fields and corresponding keys => ObjectData types
-            /// </summary>
-            private static readonly IDictionary<string, Dictionary<object, ObjectData>> OBJECT_CONVERSIONS = new Dictionary<string, Dictionary<object, ObjectData>>();
-
-            /// <summary>
             /// Create an object data container.
             /// </summary>
             /// <param name="objectType">The object type.</param>
@@ -113,27 +108,19 @@ namespace ATT
             /// <param name="data">The data.</param>
             /// <param name="objectData">The object data container.</param>
             /// <returns>Whether or not the most signficant object type was found.</returns>
-            public static bool TryGetMostSignificantObjectType(IDictionary<string, object> data, out ObjectData objectData, out object objKeyValue)
+            public static bool TryGetMostSignificantObjectType(IDictionary<string, object> data, out ObjectData objectData, out decimal objKeyValue)
             {
-                ObjectData defaultValue = null;
-                objKeyValue = null;
                 foreach (var objectType in ALL_OBJECTS)
                 {
-                    if (data.TryGetValue(objectType.ObjectType, out objKeyValue))
+                    if (data.TryGetValue(objectType.ObjectType, out objKeyValue) && objKeyValue.TryConvert(out objKeyValue))
                     {
-                        if (objKeyValue.GetType().IsNumeric() && Convert.ToInt64(objKeyValue) == 0) defaultValue = objectType;
-                        else
-                        {
-                            objectData = objectType;
-                            return true;
-                        }
+                        objectData = objectType;
+                        return true;
                     }
                 }
-                objectData = defaultValue;
-                if (objectData == null) return false;
-                // grab the associated key value before returning
-                objKeyValue = data[objectData.ObjectType];
-                return true;
+                objectData = default;
+                objKeyValue = default;
+                return false;
             }
 
             /// <summary>

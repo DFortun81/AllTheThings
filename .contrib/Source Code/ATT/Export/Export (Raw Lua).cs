@@ -84,7 +84,7 @@ namespace ATT
             data2.Remove("name");
 
             // Write the shortcut with the highest priority
-            bool useShortcut = ObjectData.TryGetMostSignificantObjectType(data2, out ObjectData objectType, out object objKeyValue);
+            bool useShortcut = ObjectData.TryGetMostSignificantObjectType(data2, out ObjectData objectType, out decimal objKeyValue);
             if (useShortcut)
             {
                 // Write the shortcut for the object type.

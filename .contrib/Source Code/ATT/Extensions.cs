@@ -298,7 +298,10 @@ namespace ATT
             return false;
         }
 
-        public static Dictionary<string, object> FindObject(this List<object> list, string key, object value)
+        /// <summary>
+        /// Finds an object from a List of object datas which contains the specified value for the given key
+        /// </summary>
+        public static Dictionary<string, object> FindObject<T>(this List<object> list, string key, T value)
         {
             if (list == null || list.Count == 0) return null;
 
@@ -306,7 +309,10 @@ namespace ATT
             foreach (var obj in list)
             {
                 // Cache the container entry for comparisons.
-                if (obj is Dictionary<string, object> thing && thing.TryGetValue(key, out object thingVal) && value.Equals(thingVal))
+                if (obj is Dictionary<string, object> thing &&
+                    thing.TryGetValue(key, out object thingVal) &&
+                    thingVal.TryConvert(out T thingKeyVal) &&
+                    thingKeyVal.Equals(value))
                 {
                     return thing;
                 }
