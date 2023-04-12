@@ -2899,6 +2899,7 @@ _.ObjectNames = {
 	[389471] = "Grand Obsidian Cache",
 	[389540] = "Slimy Goo",
 	[389545] = "Mysterious Chest",
+	[389546] = "Reagent Pot",
 	[389564] = "Mindless Slime",
 	[389599] = "Ice Spike",
 	[389789] = "Primordial Earth Cache",
