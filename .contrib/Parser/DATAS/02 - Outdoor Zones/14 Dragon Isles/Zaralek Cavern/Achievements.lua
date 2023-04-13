@@ -4,6 +4,71 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(ACHIEVEMENTS, {
+			ach(17783, {	-- Adventurer of Zaralek Cavern
+				crit(1, {
+					["_npcs"] = { 203515 },	-- Alcanon
+				}),
+				crit(2, {
+					["_npcs"] = { 203468 },	-- Aquifon
+				}),
+				crit(3, {
+					["_npcs"] = { 203621 },	-- Brulsef the Stronk
+				}),
+				crit(4, {
+					["_npcs"] = { 204093 },	-- Colossian
+				}),
+				crit(5, {
+					["_npcs"] = { 203664 },	-- Emberdusk
+				}),
+				crit(6, {
+					["_npcs"] = { 203660 },	-- Flowfy
+				}),
+				crit(7, {
+					["_npcs"] = { 203592 },	-- General Zskorro
+				}),
+				crit(8, {
+					["_npcs"] = { 203477 },	-- Goopal
+				}),
+				crit(9, {
+					["_npcs"] = { 203627 },	-- Invohq
+				}),
+				crit(10, {
+					["_npcs"] = { 203646 },	-- Jrumm
+				}),
+				crit(11, {
+					["_npcs"] = { 203625 },	-- Karokta
+				}),
+				crit(12, {
+					["_npcs"] = { 203466 },	-- Kaprachu
+				}),
+				crit(13, {
+					["_npcs"] = { 203618 },	-- Klakatak
+				}),
+				crit(14, {
+					["_npcs"] = { 203462 },	-- Kob'rok
+				}),
+				crit(15, {
+					["_npcs"] = { 200111 },	-- Magmanesha
+				}),
+				crit(16, {
+					["_npcs"] = { 203521 },	-- Professor Gastrinax
+				}),
+				crit(17, {
+					["_npcs"] = { 203643 },	-- Skornak
+				}),
+				crit(18, {
+					["_npcs"] = { 203480 },	-- Spinmarrow
+				}),
+				crit(19, {
+					["_npcs"] = { 203662 },	-- Subterrax
+				}),
+				crit(20, {
+					["_npcs"] = { 203593 },	-- Underlight Queen
+				}),
+				crit(21, {
+					["_npcs"] = { 201029 },	-- Viridian King
+				}),
+			}),
 			ach(17567, {    -- Ancient Stones of Zaralek
 				crit(1, {    -- Demanding Perfection
 					["coord"] = { 43.3, 23.7, ZARALEK_CAVERN },
@@ -30,6 +95,72 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					-- TODO: ["_quests"] = {  },	-- ???
 				}),
 			})),
+			ach(18100, {	-- Cavern Clawbbering
+				i(205904),	-- Vibrant Clacking Claw (TOY!)
+				crit(1, {
+					["_npcs"] = { 203515 },	-- Alcanon
+				}),
+				crit(2, {
+					["_npcs"] = { 203468 },	-- Aquifon
+				}),
+				crit(3, {
+					["_npcs"] = { 203621 },	-- Brulsef the Stronk
+				}),
+				crit(4, {
+					["_npcs"] = { 204093 },	-- Colossian
+				}),
+				crit(5, {
+					["_npcs"] = { 203664 },	-- Emberdusk
+				}),
+				crit(6, {
+					["_npcs"] = { 203660 },	-- Flowfy
+				}),
+				crit(7, {
+					["_npcs"] = { 203592 },	-- General Zskorro
+				}),
+				crit(8, {
+					["_npcs"] = { 203477 },	-- Goopal
+				}),
+				crit(9, {
+					["_npcs"] = { 203627 },	-- Invohq
+				}),
+				crit(10, {
+					["_npcs"] = { 203646 },	-- Jrumm
+				}),
+				crit(11, {
+					["_npcs"] = { 203625 },	-- Karokta
+				}),
+				crit(12, {
+					["_npcs"] = { 203466 },	-- Kaprachu
+				}),
+				crit(13, {
+					["_npcs"] = { 203618 },	-- Klakatak
+				}),
+				crit(14, {
+					["_npcs"] = { 203462 },	-- Kob'rok
+				}),
+				crit(15, {
+					["_npcs"] = { 200111 },	-- Magmanesha
+				}),
+				crit(16, {
+					["_npcs"] = { 203521 },	-- Professor Gastrinax
+				}),
+				crit(17, {
+					["_npcs"] = { 203643 },	-- Skornak
+				}),
+				crit(18, {
+					["_npcs"] = { 203480 },	-- Spinmarrow
+				}),
+				crit(19, {
+					["_npcs"] = { 203662 },	-- Subterrax
+				}),
+				crit(20, {
+					["_npcs"] = { 203593 },	-- Underlight Queen
+				}),
+				crit(21, {
+					["_npcs"] = { 201029 },	-- Viridian King
+				}),
+			}),
 			ach(17517, {	-- Dragon Glyphs: Aberrus Approach
 				["coord"] = { 48.4, 7.0, ZARALEK_CAVERN },
 			}),
@@ -289,6 +420,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
 				}),
 			})),
+			ach(17785, {	-- Que Zara(lek), Zara(lek)
+				["sym"] = {{"meta_achievement",
+					17783,	-- Adventurer of Zaralek Cavern
+					17739,	-- Embers of Neltharion
+					17766,	-- Explore Zaralek Cavern
+					17832,	-- Sniffen Around
+					17830,	-- Stones Can't Fly!
+					17781,	-- The Smell of Money
+					17786,	-- Treasures of Zaralek Cavern
+					17763,	-- There's No Place Like Loamm
+					-- TODO: 17773,	--
+				}},
+			}),
 			ach(17741, {	-- Slow and Steady Wins the Race
 				crit(1, { 	-- Bashful wins
 					-- Confirm: ["sourceQuests"] = { 75662 },	-- A Race To The Finish
@@ -403,15 +547,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				crit(8),	-- Slabwing
 				crit(9),	-- Hollow Moth
 			})),
-
-			-- TODO:
-
-			ach(17783),	-- Adventurer of Zaralek Cavern
-			ach(18100, {	-- Cavern Clawbbering
-				i(205904),	-- Vibrant Clacking Claw (TOY!)
-			}),
-
-			ach(17785),	-- Que Zara(lek), Zara(lek)
 		}),
 	}),
 })));
