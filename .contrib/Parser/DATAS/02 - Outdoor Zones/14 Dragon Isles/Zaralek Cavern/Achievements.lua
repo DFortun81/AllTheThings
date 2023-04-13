@@ -54,6 +54,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				i(205231),	-- Roggy (PET!)
 			}),
+			ach(18361, {	-- To All the Squirrels Burrowed Beneath
+				crit(1, {	-- Hissing Dustmoth
+					["crs"] = { 201124 },	-- Hissing Dustmoth
+					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+				}),
+				crit(2, {	-- Pygmy Dawdler
+					["crs"] = { 201120 },	-- Pygmy Dawdler
+					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+				}),
+				crit(3, {	-- Rock Martin
+					["crs"] = { 204673 },	-- Rock Martin
+					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+				}),
+				crit(4, {	-- Skittering Pincher
+					["crs"] = { 204780 },	-- Skittering Pincher
+					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+				}),
+				crit(5, {	-- Hatchling Dawdler
+					["crs"] = { 204785 },	-- Hatchling Dawdler
+					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+				}),
+				crit(6,	{	-- Aimless Snail
+					["crs"] = { 201875 },	-- Aimless Snail
+					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+				}),
+				crit(7, {	-- Incense Cinder
+					["crs"] = { 204801 },	-- Incense Cinder
+					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+				}),
+				crit(8, {	-- Magma Bubble
+					["crs"] = { 204802 },	-- Magma Bubble
+					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+				}),
+				crit(9, {	-- Phoenix Hatchling
+					["crs"] = { 192135 },	-- Phoenix Hatchling
+					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+				}),
+				crit(10, {	-- Scuttering Bettle
+					["crs"] = { 205213 },	-- Scuttering Bettle
+					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+				}),
+			}),
 			pvp(ach(17851)),	-- Tour of Duty: Zaralek Cavern
 			ach(18150, {	-- Zaralek Caverns Glyph Hunter
 				["sym"] = {{"meta_achievement",
