@@ -2954,6 +2954,7 @@ _.ObjectNames = {
 	[387746] = "Primordial Spirit Cache",
 	[387749] = "Animate Crystalspine",
 	[387853] = "Shattered Crystals",
+	[388471] = "Pillaged Primordial Cache",
 	[388712] = "Opera Chest",
 	[388866] = "Reagent Pot",
 	[388873] = "Irontide Coin Bag",
