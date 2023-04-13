@@ -25,7 +25,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(7933),    -- And... It's Good!
 		{	-- Anything You Can Do, I Can Do Better...
 			["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
 			["groups"] = {
@@ -51,7 +50,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(8073),    -- Cage Match
 		{	-- Can't Touch This
 			["achievementID"] = 8087,	-- Can't Touch This
 			["g"] = {
@@ -77,7 +75,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(6936),    -- Candle in the Wind
 		{	-- Celestial Challenge
 			["achievementID"] = 8535,	-- Celestial Challenge
 			["groups"] = {
@@ -109,8 +106,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(8038),    -- Cretaceous Collector
-		ach(8529),    -- Criss Cross
 		{	-- Downfall
 			["achievementID"] = 8462,	-- Downfall
 			["g"] = {
@@ -128,9 +123,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(6517),    -- Extinction Event
-		ach(6824),    -- Face Clutchers
-		ach(8520),    -- Fire in the Hole!
 		{	-- Forgotten Depths
 			["achievementID"] = 8070,	-- Forgotten Depths
 			["g"] = {
@@ -148,8 +140,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(8086),    -- From Dusk 'til Dawn
-		ach(8448),    -- Gamon Will Save Us!
 		{	-- Gates of Retribution
 			["achievementID"] = 8459,	-- Gates of Retribution
 			["g"] = {
@@ -171,10 +161,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(8037),    -- Genetically Unmodified Organism
-		ach(6687),    -- Getting Hot In Here
-		ach(8527),    -- Giant Dinosaur vs. Mega Snail
-		ach(8528),    -- Go Long
 		{	-- Guardians of Mogu'shan
 			["achievementID"] = 6458,	-- Guardians of Mogu'shan
 			["groups"] = {
@@ -226,22 +212,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(6729),    -- Heroic: Amber-Shaper Un'sok
-		ach(6726),    -- Heroic: Blade Lord Ta'yak
-		ach(8058),    -- Heroic: Council of Elders
-		ach(8064),    -- Heroic: Dark Animus
-		ach(8062),    -- Heroic: Durumu the Forgotten
-		ach(6723),    -- Heroic: Elegon
-		ach(6720),    -- Heroic: Feng the Accursed
-		ach(6722),    -- Heroic: Four Kings
-		ach(6721),    -- Heroic: Gara'jal the Spiritbinder
-		ach(6727),    -- Heroic: Garalon
-		ach(6730),    -- Heroic: Grand Empress Shek'zeer
-		ach(8057),    -- Heroic: Horridon
-		ach(6725),    -- Heroic: Imperial Vizier Zor'lok
-		ach(8065),    -- Heroic: Iron Qon
-		ach(8061),    -- Heroic: Ji-Kun
-		ach(8056),    -- Heroic: Jin'rokh the Breaker
 		{	-- Heroic: Lei Shen
 			["achievementID"] = 8067,	-- Heroic: Lei Shen
 			["g"] = {
@@ -250,11 +220,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(6733),    -- Heroic: Lei Shi
-		ach(8060),    -- Heroic: Megaera
-		ach(8063),    -- Heroic: Primordius
-		ach(6731),    -- Heroic: Protectors of the Endless
-		ach(8068),    -- Heroic: Ra-den
 		{	-- Heroic: Sha of Fear
 			["achievementID"] = 6734,	-- Heroic: Sha of Fear
 			["groups"] = {
@@ -263,10 +228,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(6719),    -- Heroic: Stone Guard
-		ach(8059),    -- Heroic: Tortos
-		ach(6732),    -- Heroic: Tsulong
-		ach(8066),    -- Heroic: Twin Empyreans
 		{	-- Heroic: Will of the Emperor
 			["achievementID"] = 6724,	-- Heroic: Will of the Emperor
 			["groups"] = {
@@ -275,8 +236,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(6728),    -- Heroic: Wind Lord Mel'jarak
-		ach(6518),    -- I Heard You Like Amber...
 		{	-- Lasers and Magnets and Drills! Oh My!
 			["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
 			["g"] = {
@@ -315,7 +274,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(6683),    -- Less Than Three
 		{	-- Liberator of Orgrimmar
 			["achievementID"] = 8680,	-- Liberator of Orgrimmar
 			["races"] = HORDE_ONLY,
@@ -326,12 +284,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(8094),    -- Lightning Overload
-		ach(6553),    -- Like an Arrow to the Face
-		ach(8123),    -- Millions of Years of Evolution vs. My Fist
-		ach(6823),    -- Must Love Dogs
-		ach(8465),    -- Mythic: Fallen Protectors
-		ach(8468),    -- Mythic: Galakras
 		{	-- Mythic: Garrosh Hellscream
 			["achievementID"] = 8482,	-- Mythic: Garrosh Hellscream
 			["g"] = {
@@ -340,17 +292,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(8471),    -- Mythic: General Nazgrim
-		ach(8463),    -- Mythic: Immerseus
-		ach(8469),    -- Mythic: Iron Juggernaut
-		ach(8470),    -- Mythic: Kor'kron Dark Shaman
-		ach(8472),    -- Mythic: Malkorok
-		ach(8466),    -- Mythic: Norushen
-		ach(8481),    -- Mythic: Paragons of the Klaxxi
-		ach(8467),    -- Mythic: Sha of Pride
-		ach(8480),    -- Mythic: Siegecrafter Blackfuse
-		ach(8478),    -- Mythic: Spoils of Pandaria
-		ach(8479),    -- Mythic: Thok the Bloodthirsty
 		{	-- Nightmare of Shek'zeer
 			["achievementID"] = 6845,	-- Nightmare of Shek'zeer
 			["groups"] = {
@@ -368,11 +309,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(8536),    -- No More Tears
-		ach(8532),    -- None Shall Pass
-		ach(8531),    -- Now We are the Paragon
-		ach(8077),    -- One-Up
-		ach(6937),    -- Overzealous
 		{	-- Pinnacle of Storms
 			["achievementID"] = 8072,	-- Pinnacle of Storms
 			["g"] = {
@@ -407,8 +343,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(8028),    -- Praise the Sun!
-		ach(8453),    -- Rescue Raiders
 		{	-- Ritualist Who?
 			["achievementID"] = 8081,	-- Ritualist Who?
 			["groups"] = {
@@ -510,13 +444,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(6480),    -- Settle Down, Bro
-		ach(6455),    -- Show Me Your Moves!
-		ach(8097),    -- Soft Hands
-		ach(7056),    -- Sorry, Were You Looking for This?
-		ach(6686),    -- Straight Six
-		ach(8537),    -- Strike!
-		ach(8521),    -- Swallow Your Pride
 		{	-- Terrace of Endless Spring
 			["achievementID"] = 6689,	-- Terrace of Endless Spring
 			["groups"] = {
@@ -555,8 +482,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(8530),    -- The Immortal Vanguard
-		ach(6825),    -- The Mind-Killer
 		{	-- The Underhold
 			["achievementID"] = 8461,	-- The Underhold
 			["g"] = {
@@ -605,7 +530,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(8538),    -- Unlimited Potential
 		{	-- Vale of Eternal Sorrows
 			["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 			["g"] = {
@@ -627,7 +551,5 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		ach(6933),    -- Who's Got Two Green Thumbs?
-		ach(8098),    -- You Said Crossing the Streams Was Bad
 	}),
 }));
