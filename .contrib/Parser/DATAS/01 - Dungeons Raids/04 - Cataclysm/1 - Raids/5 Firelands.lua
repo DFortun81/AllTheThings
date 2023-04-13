@@ -75,8 +75,32 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		["maps"] = { 367, 368, 369 },
 		["lvl"] = 85,
 		["g"] = {
-			ach(5802),	-- Firelands
-			ach(5983),	-- Firelands Guild Run
+			n(ACHIEVEMENTS, {
+				ach(5802, {	-- Firelands
+					crit(1, {	-- Beth'tilac
+						["_encounter"] = { 192, NORMAL_RAID },
+					}),
+					crit(2, {	-- Lord Rhyolith
+						["_encounter"] = { 193, NORMAL_RAID },
+					}),
+					crit(3, {	-- Alysrazor
+						["_encounter"] = { 194, NORMAL_RAID },
+					}),
+					crit(4, {	-- Shannox
+						["_encounter"] = { 195, NORMAL_RAID },
+					}),
+					crit(5, {	-- Baleroc, the Gatekeeper
+						["_encounter"] = { 196, NORMAL_RAID },
+					}),
+					crit(6, {	-- Majordomo Staghelm
+						["_encounter"] = { 197, NORMAL_RAID },
+					}),
+					crit(7, {	-- Ragnaros
+						["_encounter"] = { 198, NORMAL_RAID },
+					}),
+				}),
+				ach(5983),	-- Firelands Guild Run
+			}),
 			n(LEGENDARY_QUESTLINE, {
 				["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
 				["title"] = "Dragonwrath, Tarecgosa's Rest",
@@ -684,7 +708,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					e(192, {	-- Beth'tilac
 						["creatureID"] = 52498,
 						["g"] = {
-							ach(5821),	-- Death from Above
 							ach(5807),	-- Heroic: Beth'tilac
 							i(152976),	-- Cinderweb Egg (PET!)
 							i(71409),	-- Funeral Pyre
@@ -707,7 +730,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 52558,
 						["g"] = {
 							ach(5808),	-- Heroic: Lord Rhyolith
-							ach(5810),	-- Not an Ambi-Turner
 							i(71422),	-- Volcanospike
 							i(71414),	-- Arbalest of Erupting Fury
 							i(71421),	-- Flickering Cowl
@@ -726,12 +748,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					e(194, {	-- Alysrazor
 						["creatureID"] = 52530,
 						["g"] = {
-							ach(5813, {	-- Do a Barrel Roll!
-								crit(1),	-- Brushfire
-								crit(2),	-- Lava Spew
-								crit(3),	-- Incendiary Cloud
-								crit(4),	-- Fiery Tornado
-							}),
 							ach(5809),	-- Heroic: Alysrazor
 							i(71679),	-- Chest of the Fiery Conqueror
 							i(71686),	-- Chest of the Fiery Protector
@@ -756,13 +772,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					e(195, {	-- Shannox
 						["creatureID"] = 53691,
 						["g"] = {
-							ach(5829, {	-- Bucket List
-								crit(1),	-- Beth'tilac's Lair
-								crit(2),	-- Flamebreach
-								crit(3),	-- Path of Corruption
-								crit(4),	-- The Ridge of Ancient Flame
-								crit(5),	-- Shatterstone
-							}),
 							ach(5806),	-- Heroic: Shannox
 							i(71678),	-- Leggings of the Fiery Conqueror
 							i(71685),	-- Leggings of the Fiery Protector
@@ -788,7 +797,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 53494,
 						["g"] = {
 							ach(5805),	-- Heroic: Baleroc
-							ach(5830),	-- Share the Pain
 							i(71676),	-- Gauntlets of the Fiery Conqueror
 							i(71683),	-- Gauntlets of the Fiery Protector
 							i(71669),	-- Gauntlets of the Fiery Vanquisher
@@ -812,9 +820,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 52571,
 						["g"] = {
 							ach(5804),	-- Heroic: Majordomo Fandral Staghelm
-							ach(5799, {	-- Only the Penitent...
-								["description"] = "This achievement requires a group of 2.",
-							}),
 							i(152978),	-- Fandral's Pet Carrier (PET!)
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
 							i(71680),	-- Shoulders of the Fiery Conqueror
@@ -842,7 +847,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 								title(190),	-- Firelord
 							}),
 							ach(5984),	-- Heroic: Ragnaros Guild Run
-							ach(5855),	-- Ragnar-O's
 							un(REMOVED_FROM_GAME, ach(5985)),	-- Realm First! Ragnaros
 							i(71677),	-- Crown of the Fiery Conqueror
 							i(71684),	-- Crown of the Fiery Protector

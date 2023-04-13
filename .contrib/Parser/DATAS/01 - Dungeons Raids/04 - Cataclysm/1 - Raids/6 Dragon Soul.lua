@@ -22,6 +22,34 @@ _.Instances = { tier(CATA_TIER, {
 		},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(6106, {	-- Siege of Wyrmrest Temple
+					crit(1, {	-- Morchok
+						["_encounter"] = { 311, 7 },	-- LFR
+					}),
+					crit(2, {	-- Warlord Zon'ozz
+						["_encounter"] = { 324, 7 },	-- LFR
+					}),
+					crit(3, {	-- Yor'sahj the Unsleeping
+						["_encounter"] = { 325, 7 },	-- LFR
+					}),
+					crit(4, {	-- Hagara the Stormbinder
+						["_encounter"] = { 317, 7 },	-- LFR
+					}),
+				}),
+				ach(6107, {	-- Fall of Deathwing
+					crit(1, {	-- Ultraxion
+						["_encounter"] = { 331, 7 },	-- LFR
+					}),
+					crit(2, {	-- Warmaster Blackthorn
+						["_encounter"] = { 332, 7 },	-- LFR
+					}),
+					crit(3, {	-- Spine of Deathwing
+						["_encounter"] = { 318, 7 },	-- LFR
+					}),
+					crit(4, {	-- Madness of Deathwing
+						["_encounter"] = { 333, 7 },	-- LFR
+					}),
+				}),
 				ach(6123),	-- Dragon Soul Guild Run
 			}),
 			n(LEGENDARY_QUESTLINE, {
@@ -214,7 +242,7 @@ _.Instances = { tier(CATA_TIER, {
 							currency(614),	-- Mote of Darkness
 						},
 					}),
-					ach(6106, {	-- Siege of Wyrmrest Temple
+					header(HEADERS.Achievement, 6106, {	-- Siege of Wyrmrest Temple
 						["crs"] = {
 							80675,	-- Auridormi <Raid Finder Guardian>
 						},
@@ -266,7 +294,7 @@ _.Instances = { tier(CATA_TIER, {
 							})),
 						},
 					}),
-					ach(6107, {	-- Fall of Deathwing
+					header(HEADERS.Achievement, 6107, {	-- Fall of Deathwing
 						["crs"] = {
 							80675,	-- Auridormi <Raid Finder Guardian>
 						},
@@ -424,27 +452,17 @@ _.Instances = { tier(CATA_TIER, {
 						i(77204),	-- Seal of the Seven Signs
 					})),
 					cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-						{	-- Taste the Rainbow!
-							["achievementID"] = 6129,	-- Taste the Rainbow!
-							["g"] = {
-								{	-- Taste the Rainbow!: Black and Blue
-									["achievementID"] = 6129,	-- Taste the Rainbow!
-									["criteriaID"] = 3,	-- Black and Blue
-								},
-								{	-- Taste the Rainbow!: Black and Yellow
-									["achievementID"] = 6129,	-- Taste the Rainbow!
-									["criteriaID"] = 1,	-- Black and Yellow
-								},
-								{	-- Taste the Rainbow!: Purple and Yellow
-									["achievementID"] = 6129,	-- Taste the Rainbow!
-									["criteriaID"] = 4,	-- Purple and Yellow
-								},
-								{	-- Taste the Rainbow!: Red and Green
-									["achievementID"] = 6129,	-- Taste the Rainbow!
-									["criteriaID"] = 2,	-- Red and Green
-								},
-							},
-						},
+						ach(6129, {	-- Taste the Rainbow!
+							-- TODO: [crs] or what?
+							crit(1, {	-- Black and Yellow
+							}),
+							crit(2, {	-- Red and Green
+							}),
+							crit(3, {	-- Black and Blue
+							}),
+							crit(4, {	-- Purple and Yellow
+							}),
+						}),
 						i(78181),	-- Leggings of the Corrupted Conqueror
 						i(78176),	-- Leggings of the Corrupted Protector
 						i(78171),	-- Leggings of the Corrupted Vanquisher
@@ -479,10 +497,6 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 					})),
 					cr(55294, e(331, {	-- Ultraxion
-						{	-- Fall of Deathwing: Ultraxion
-							["achievementID"] = 6107,	-- Fall of Deathwing
-							["criteriaID"] = 1,	-- Ultraxion
-						},
 						{	-- Minutes to Midnight
 							["achievementID"] = 6084,	-- Minutes to Midnight
 						},
@@ -504,10 +518,6 @@ _.Instances = { tier(CATA_TIER, {
 						{	-- Deck Defender
 							["achievementID"] = 6105,	-- Deck Defender
 						},
-						{	-- Fall of Deathwing: Warmaster Blackhorn
-							["achievementID"] = 6107,	-- Fall of Deathwing
-							["criteriaID"] = 2,	-- Warmaster Blackhorn
-						},
 						i(78182),	-- Crown of the Corrupted Conqueror
 						i(78177),	-- Crown of the Corrupted Protector
 						i(78172),	-- Crown of the Corrupted Vanquisher
@@ -522,10 +532,6 @@ _.Instances = { tier(CATA_TIER, {
 						i(77202),	-- Starcatcher Compass
 					})),
 					cr(53879, e(318, {	-- Spine of Deathwing
-						{	-- Fall of Deathwing: Spine of Deathwing
-							["achievementID"] = 6107,	-- Fall of Deathwing
-							["criteriaID"] = 3,	-- Spine of Deathwing
-						},
 						{	-- Maybe He'll Get Dizzy...
 							["achievementID"] = 6133,	-- Maybe He'll Get Dizzy...
 						},
@@ -542,39 +548,20 @@ _.Instances = { tier(CATA_TIER, {
 						i(77197),	-- Wrath of Unchaining
 					})),
 					cr(56173, e(333, {	-- Madness of Deathwing
-						{	-- Chromatic Champion
-							["achievementID"] = 6180,	-- Chromatic Champion
-							["g"] = {
-								{	-- Alexstrasza Assaulted First
-									["achievementID"] = 6180,	-- Chromatic Champion
-									["criteriaID"] = 1,	-- Alexstrasza Assaulted First
-								},
-								{	-- Kalecgos Assaulted First
-									["achievementID"] = 6180,	-- Chromatic Champion
-									["criteriaID"] = 2,	-- Kalecgos Assaulted First
-								},
-								{	-- Nozdormu Assaulted First
-									["achievementID"] = 6180,	-- Chromatic Champion
-									["criteriaID"] = 3,	-- Nozdormu Assaulted First
-								},
-								{	-- Ysera Assaulted First
-									["achievementID"] = 6180,	-- Chromatic Champion
-									["criteriaID"] = 4,	-- Ysera Assaulted First
-								},
-							},
-						},
-						{	-- Destroyer's End
-							["achievementID"] = 6177,	-- Destroyer's End
-							["g"] = {
-								{	-- , Destroyer's End
-									["titleID"] = 196,	-- , Destroyer's End
-								},
-							},
-						},
-						{	-- Fall of Deathwing: Madness of Deathwing
-							["achievementID"] = 6107,	-- Fall of Deathwing
-							["criteriaID"] = 4,	-- Madness of Deathwing
-						},
+						ach(6180, {	-- Chromatic Champion
+							-- TODO: [cr] maybe
+							crit(1, {	-- Alexstrasza Assaulted First
+							}),
+							crit(2, {	-- Kalecgos Assaulted First
+							}),
+							crit(3, {	-- Nozdormu Assaulted First
+							}),
+							crit(4, {	-- Ysera Assaulted First
+							}),
+						}),
+						ach(6177, {	-- Destroyer's End
+							title(196),	-- , Destroyer's End
+						}),
 						i(77067),	-- Blazing Drake (MOUNT!)
 						i(152981),	-- Severed Tentacle (PET)!
 						i(77191),	-- Gurthalak, Voice of the Deeps
@@ -658,9 +645,6 @@ _.Instances = { tier(CATA_TIER, {
 						},
 					}),
 					cr(55265, e(311, {	-- Morchok
-						{	-- Don't Stand So Close to Me
-							["achievementID"] = 6174,	-- Don't Stand So Close to Me
-						},
 						{	-- Heroic: Morchok
 							["achievementID"] = 6109,	-- Heroic: Morchok
 						},
@@ -681,9 +665,6 @@ _.Instances = { tier(CATA_TIER, {
 						{	-- Heroic: Warlord Zon'ozz
 							["achievementID"] = 6110,	-- Heroic: Warlord Zon'ozz
 						},
-						{	-- Ping Pong Champion
-							["achievementID"] = 6128,	-- Ping Pong Champion
-						},
 						i(78853),	-- Gauntlets of the Corrupted Conqueror
 						i(78854),	-- Gauntlets of the Corrupted Protector
 						i(78855),	-- Gauntlets of the Corrupted Vanquisher
@@ -699,27 +680,6 @@ _.Instances = { tier(CATA_TIER, {
 					cr(55312, e(325, {	-- Yor'sahj the Unsleeping
 						{	-- Heroic: Yor'sahj the Unsleeping
 							["achievementID"] = 6111,	-- Heroic: Yor'sahj the Unsleeping
-						},
-						{	-- Taste the Rainbow!
-							["achievementID"] = 6129,	-- Taste the Rainbow!
-							["g"] = {
-								{	-- Taste the Rainbow!: Black and Blue
-									["achievementID"] = 6129,	-- Taste the Rainbow!
-									["criteriaID"] = 3,	-- Black and Blue
-								},
-								{	-- Taste the Rainbow!: Black and Yellow
-									["achievementID"] = 6129,	-- Taste the Rainbow!
-									["criteriaID"] = 1,	-- Black and Yellow
-								},
-								{	-- Taste the Rainbow!: Purple and Yellow
-									["achievementID"] = 6129,	-- Taste the Rainbow!
-									["criteriaID"] = 4,	-- Purple and Yellow
-								},
-								{	-- Taste the Rainbow!: Red and Green
-									["achievementID"] = 6129,	-- Taste the Rainbow!
-									["criteriaID"] = 2,	-- Red and Green
-								},
-							},
 						},
 						i(78856),	-- Leggings of the Corrupted Conqueror
 						i(78857),	-- Leggings of the Corrupted Protector
@@ -738,9 +698,6 @@ _.Instances = { tier(CATA_TIER, {
 						{	-- Heroic: Hagara the Stormbinder
 							["achievementID"] = 6112,	-- Heroic: Hagara the Stormbinder
 						},
-						{	-- Holding Hands
-							["achievementID"] = 6175,	-- Holding Hands
-						},
 						i(78859),	-- Shoulders of the Corrupted Conqueror
 						i(78860),	-- Shoulders of the Corrupted Protector
 						i(78861),	-- Shoulders of the Corrupted Vanquisher
@@ -758,15 +715,8 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 					})),
 					cr(55294, e(331, {	-- Ultraxion
-						{	-- Fall of Deathwing: Ultraxion
-							["achievementID"] = 6107,	-- Fall of Deathwing
-							["criteriaID"] = 1,	-- Ultraxion
-						},
 						{	-- Heroic: Ultraxion
 							["achievementID"] = 6113,	-- Heroic: Ultraxion
-						},
-						{	-- Minutes to Midnight
-							["achievementID"] = 6084,	-- Minutes to Midnight
 						},
 						i(78847),	-- Chest of the Corrupted Conqueror
 						i(78848),	-- Chest of the Corrupted Protector
@@ -783,13 +733,6 @@ _.Instances = { tier(CATA_TIER, {
 						i(77992),	-- Creche of the Final Dragon
 					})),
 					cr(56427, e(332, {	-- Warmaster Blackthorn
-						{	-- Deck Defender
-							["achievementID"] = 6105,	-- Deck Defender
-						},
-						{	-- Fall of Deathwing: Warmaster Blackhorn
-							["achievementID"] = 6107,	-- Fall of Deathwing
-							["criteriaID"] = 2,	-- Warmaster Blackhorn
-						},
 						{	-- Heroic: Warmaster Blackhorn
 							["achievementID"] = 6114,	-- Heroic: Warmaster Blackhorn
 						},
@@ -807,15 +750,8 @@ _.Instances = { tier(CATA_TIER, {
 						i(77993),	-- Starcatcher Compass
 					})),
 					cr(53879, e(318, {	-- Spine of Deathwing
-						{	-- Fall of Deathwing: Spine of Deathwing
-							["achievementID"] = 6107,	-- Fall of Deathwing
-							["criteriaID"] = 3,	-- Spine of Deathwing
-						},
 						{	-- Heroic: Spine of Deathwing
 							["achievementID"] = 6115,	-- Heroic: Spine of Deathwing
-						},
-						{	-- Maybe He'll Get Dizzy...
-							["achievementID"] = 6133,	-- Maybe He'll Get Dizzy...
 						},
 						i(152980),	-- Elementium Back Plate (PET!)
 						i(78465),	-- Backbreaker Spaulders
@@ -830,47 +766,9 @@ _.Instances = { tier(CATA_TIER, {
 						i(77994),	-- Wrath of Unchaining
 					})),
 					cr(56173, e(333, {	-- Madness of Deathwing
-						{	-- Chromatic Champion
-							["achievementID"] = 6180,	-- Chromatic Champion
-							["g"] = {
-								{	-- Alexstrasza Assaulted First
-									["achievementID"] = 6180,	-- Chromatic Champion
-									["criteriaID"] = 1,	-- Alexstrasza Assaulted First
-								},
-								{	-- Kalecgos Assaulted First
-									["achievementID"] = 6180,	-- Chromatic Champion
-									["criteriaID"] = 2,	-- Kalecgos Assaulted First
-								},
-								{	-- Nozdormu Assaulted First
-									["achievementID"] = 6180,	-- Chromatic Champion
-									["criteriaID"] = 3,	-- Nozdormu Assaulted First
-								},
-								{	-- Ysera Assaulted First
-									["achievementID"] = 6180,	-- Chromatic Champion
-									["criteriaID"] = 4,	-- Ysera Assaulted First
-								},
-							},
-						},
-						{	-- Destroyer's End
-							["achievementID"] = 6177,	-- Destroyer's End
-							["g"] = {
-								{	-- , Destroyer's End
-									["titleID"] = 196,	-- , Destroyer's End
-								},
-							},
-						},
-						{	-- Fall of Deathwing: Madness of Deathwing
-							["achievementID"] = 6107,	-- Fall of Deathwing
-							["criteriaID"] = 4,	-- Madness of Deathwing
-						},
-						{	-- Heroic: Madness of Deathwing
-							["achievementID"] = 6116,	-- Heroic: Madness of Deathwing
-							["g"] = {
-								{	-- , Savior of Azeroth
-									["titleID"] = 194,	-- , Savior of Azeroth
-								},
-							},
-						},
+						ach(6116, {	-- Heroic: Madness of Deathwing
+							title(194),	-- , Savior of Azeroth
+						}),
 						ach(6125),	-- Heroic: Deathwing Guild Run
 						un(REMOVED_FROM_GAME, ach(6126)),	-- Realm First! Deathwing
 						i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
