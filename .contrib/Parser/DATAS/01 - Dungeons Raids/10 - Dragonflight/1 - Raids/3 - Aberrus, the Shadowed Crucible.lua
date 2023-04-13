@@ -202,7 +202,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				}),
 			}),
 			d(LFR_RAID, {
-				n(ZONE_DROP, {
+				n(ZONE_DROPS, {
 					i(204410),	-- Bands of Purified Purpose
 					i(204411),	-- Crucible Curator's Wingspan
 					i(204429),	-- Devoted Warden's Gaze
@@ -473,7 +473,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				}),
 			}),
 			d(NORMAL_RAID, {
-				n(ZONE_DROP, {
+				n(ZONE_DROPS, {
 					i(204410),	-- Bands of Purified Purpose
 					i(204411),	-- Crucible Curator's Wingspan
 					i(204429),	-- Devoted Warden's Gaze
@@ -745,7 +745,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				}),
 			}),
 			d(HEROIC_RAID, {
-				n(ZONE_DROP, {
+				n(ZONE_DROPS, {
 					i(204410),	-- Bands of Purified Purpose
 					i(204411),	-- Crucible Curator's Wingspan
 					i(204429),	-- Devoted Warden's Gaze
@@ -1009,7 +1009,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				}),
 			}),
 			d(MYTHIC_RAID, {
-				n(ZONE_DROP, {
+				n(ZONE_DROPS, {
 					i(204413),	-- Bands of Purified Purpose
 					i(204412),	-- Crucible Curator's Wingspan
 					i(204427),	-- Devoted Warden's Gaze
