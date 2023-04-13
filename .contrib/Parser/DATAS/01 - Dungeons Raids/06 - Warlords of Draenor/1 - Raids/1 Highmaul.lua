@@ -149,58 +149,14 @@ _.Instances = { tier(WOD_TIER, {
 			}),
 			d(NORMAL_RAID, {
 				n(ZONE_DROPS, {
-					i(119343, {	-- Eye-Blinder Greatcloak
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-							82900,	-- Gorian Enforcer
-							86073,	-- Lokk
-						},
-					}),
-					i(119347, {	-- Gill's Glorious Windcloak
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-						},
-					}),
-					i(119346, {	-- Kyu-Sy's Tarflame Doomcloak
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-							85246,	-- Greater Void Aberration
-							87619,	-- Gorian Warden
-							87910,	-- Gorian Rune-Mender
-						},
-					}),
-					i(119344, {	-- Magic-Breaker Cape
-						["crs"] = {
-							82534,	-- Spike
-							85246,	-- Greater Void Aberration
-						},
-					}),
-					i(119345, {	-- Milenah's Intricate Cloak
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-							87619,	-- Gorian Warden
-							87910,	-- Gorian Rune-Mender
-							82534,	-- Spike
-						},
-					}),
-					i(119336, {	-- Cord of Winsome Sorrows
-						["crs"] = {
-							87619,	-- Gorian Warden
-							85240,	-- Night-Twisted Soothsayer
-						},
-					}),
-					i(119335, {	-- Eyeripper Girdle
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-							87619,	-- Gorian Warden
-							82534,	-- Spike
-						},
-					}),
-					i(119338, {	-- Belt of Inebriated Sorrows
-						["crs"] = {
-							87619,	-- Gorian Warden
-						},
-					}),
+					i(119343),	-- Eye-Blinder Greatcloak
+					i(119347),	-- Gill's Glorious Windcloak
+					i(119346),	-- Kyu-Sy's Tarflame Doomcloak
+					i(119344),	-- Magic-Breaker Cape
+					i(119345),	-- Milenah's Intricate Cloak
+					i(119336),	-- Cord of Winsome Sorrows
+					i(119335),	-- Eyeripper Girdle
+					i(119338),	-- Belt of Inebriated Sorrows
 					i(119337),	-- Ripswallow Plate Belt
 					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
 						["crs"] = {
@@ -351,58 +307,14 @@ _.Instances = { tier(WOD_TIER, {
 			}),
 			d(HEROIC_RAID, {
 				n(ZONE_DROPS, {
-					i(119343, {	-- Eye-Blinder Greatcloak
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-							82900,	-- Gorian Enforcer
-							86073,	-- Lokk
-						},
-					}),
-					i(119347, {	-- Gill's Glorious Windcloak
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-						},
-					}),
-					i(119346, {	-- Kyu-Sy's Tarflame Doomcloak
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-							85246,	-- Greater Void Aberration
-							87619,	-- Gorian Warden
-							87910,	-- Gorian Rune-Mender
-						},
-					}),
-					i(119344, {	-- Magic-Breaker Cape
-						["crs"] = {
-							82534,	-- Spike
-							85246,	-- Greater Void Aberration
-						},
-					}),
-					i(119345, {	-- Milenah's Intricate Cloak
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-							87619,	-- Gorian Warden
-							87910,	-- Gorian Rune-Mender
-							82534,	-- Spike
-						},
-					}),
-					i(119336, {	-- Cord of Winsome Sorrows
-						["crs"] = {
-							87619,	-- Gorian Warden
-							85240,	-- Night-Twisted Soothsayer
-						},
-					}),
-					i(119335, {	-- Eyeripper Girdle
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-							87619,	-- Gorian Warden
-							82534,	-- Spike
-						},
-					}),
-					i(119338, {	-- Belt of Inebriated Sorrows
-						["crs"] = {
-							87619,	-- Gorian Warden
-						},
-					}),
+					i(119343),	-- Eye-Blinder Greatcloak
+					i(119347),	-- Gill's Glorious Windcloak
+					i(119346),	-- Kyu-Sy's Tarflame Doomcloak
+					i(119344),	-- Magic-Breaker Cape
+					i(119345),	-- Milenah's Intricate Cloak
+					i(119336),	-- Cord of Winsome Sorrows
+					i(119335),	-- Eyeripper Girdle
+					i(119338),	-- Belt of Inebriated Sorrows
 					i(119337),	-- Ripswallow Plate Belt
 					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
 						["crs"] = {
@@ -554,58 +466,14 @@ _.Instances = { tier(WOD_TIER, {
 			}),
 			d(MYTHIC_RAID, {
 				n(ZONE_DROPS, {
-					i(119343, {	-- Eye-Blinder Greatcloak
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-							82900,	-- Gorian Enforcer
-							86073,	-- Lokk
-						},
-					}),
-					i(119347, {	-- Gill's Glorious Windcloak
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-						},
-					}),
-					i(119346, {	-- Kyu-Sy's Tarflame Doomcloak
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-							85246,	-- Greater Void Aberration
-							87619,	-- Gorian Warden
-							87910,	-- Gorian Rune-Mender
-						},
-					}),
-					i(119344, {	-- Magic-Breaker Cape
-						["crs"] = {
-							82534,	-- Spike
-							85246,	-- Greater Void Aberration
-						},
-					}),
-					i(119345, {	-- Milenah's Intricate Cloak
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-							87619,	-- Gorian Warden
-							87910,	-- Gorian Rune-Mender
-							82534,	-- Spike
-						},
-					}),
-					i(119336, {	-- Cord of Winsome Sorrows
-						["crs"] = {
-							87619,	-- Gorian Warden
-							85240,	-- Night-Twisted Soothsayer
-						},
-					}),
-					i(119335, {	-- Eyeripper Girdle
-						["crs"] = {
-							86290,	-- Underbelly Vagrant
-							87619,	-- Gorian Warden
-							82534,	-- Spike
-						},
-					}),
-					i(119338, {	-- Belt of Inebriated Sorrows
-						["crs"] = {
-							87619,	-- Gorian Warden
-						},
-					}),
+					i(119343),	-- Eye-Blinder Greatcloak
+					i(119347),	-- Gill's Glorious Windcloak
+					i(119346),	-- Kyu-Sy's Tarflame Doomcloak
+					i(119344),	-- Magic-Breaker Cape
+					i(119345),	-- Milenah's Intricate Cloak
+					i(119336),	-- Cord of Winsome Sorrows
+					i(119335),	-- Eyeripper Girdle
+					i(119338),	-- Belt of Inebriated Sorrows
 					i(119337),	-- Ripswallow Plate Belt
 					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
 						["crs"] = {
