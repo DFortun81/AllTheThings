@@ -43,8 +43,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				ach(18179),	-- Mythic: Scalecommander Sarkareth Guild Run
 				ach(18193),	-- Eggscellent Eggsecution
 				ach(18251),	-- Glory of the Aberrus Raider
-				ach(18253),	-- Ahead of the Curve: Scalecommander Sarkareth
-				ach(18254),	-- Cutting Edge: Scalecommander Sarkareth
+				ach(18253, {	-- Ahead of the Curve: Scalecommander Sarkareth
+					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+				}),
+				ach(18254, {	-- Cutting Edge: Scalecommander Sarkareth
+					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+				}),
 				ach(18228),	-- Are You Even Trying?
 				ach(18229),	-- Cosplate
 				ach(18230),	-- Whac-A-Swog
