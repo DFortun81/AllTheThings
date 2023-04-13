@@ -25,9 +25,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- And... It's Good!
-			["achievementID"] = 7933,	-- And... It's Good!
-		},
+		ach(7933),    -- And... It's Good!
 		{	-- Anything You Can Do, I Can Do Better...
 			["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
 			["groups"] = {
@@ -53,9 +51,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Cage Match
-			["achievementID"] = 8073,	-- Cage Match
-		},
+		ach(8073),    -- Cage Match
 		{	-- Can't Touch This
 			["achievementID"] = 8087,	-- Can't Touch This
 			["g"] = {
@@ -81,9 +77,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Candle in the Wind
-			["achievementID"] = 6936,	-- Candle in the Wind
-		},
+		ach(6936),    -- Candle in the Wind
 		{	-- Celestial Challenge
 			["achievementID"] = 8535,	-- Celestial Challenge
 			["groups"] = {
@@ -115,12 +109,8 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Cretaceous Collector
-			["achievementID"] = 8038,	-- Cretaceous Collector
-		},
-		{	-- Criss Cross
-			["achievementID"] = 8529,	-- Criss Cross
-		},
+		ach(8038),    -- Cretaceous Collector
+		ach(8529),    -- Criss Cross
 		{	-- Downfall
 			["achievementID"] = 8462,	-- Downfall
 			["g"] = {
@@ -138,15 +128,9 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Extinction Event
-			["achievementID"] = 6517,	-- Extinction Event
-		},
-		{	-- Face Clutchers
-			["achievementID"] = 6824,	-- Face Clutchers
-		},
-		{	-- Fire in the Hole!
-			["achievementID"] = 8520,	-- Fire in the Hole!
-		},
+		ach(6517),    -- Extinction Event
+		ach(6824),    -- Face Clutchers
+		ach(8520),    -- Fire in the Hole!
 		{	-- Forgotten Depths
 			["achievementID"] = 8070,	-- Forgotten Depths
 			["g"] = {
@@ -164,12 +148,8 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- From Dusk 'til Dawn
-			["achievementID"] = 8086,	-- From Dusk 'til Dawn
-		},
-		{	-- Gamon Will Save Us!
-			["achievementID"] = 8448,	-- Gamon Will Save Us!
-		},
+		ach(8086),    -- From Dusk 'til Dawn
+		ach(8448),    -- Gamon Will Save Us!
 		{	-- Gates of Retribution
 			["achievementID"] = 8459,	-- Gates of Retribution
 			["g"] = {
@@ -191,18 +171,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Genetically Unmodified Organism
-			["achievementID"] = 8037,	-- Genetically Unmodified Organism
-		},
-		{	-- Getting Hot In Here
-			["achievementID"] = 6687,	-- Getting Hot In Here
-		},
-		{	-- Giant Dinosaur vs. Mega Snail
-			["achievementID"] = 8527,	-- Giant Dinosaur vs. Mega Snail
-		},
-		{	-- Go Long
-			["achievementID"] = 8528,	-- Go Long
-		},
+		ach(8037),    -- Genetically Unmodified Organism
+		ach(6687),    -- Getting Hot In Here
+		ach(8527),    -- Giant Dinosaur vs. Mega Snail
+		ach(8528),    -- Go Long
 		{	-- Guardians of Mogu'shan
 			["achievementID"] = 6458,	-- Guardians of Mogu'shan
 			["groups"] = {
@@ -254,54 +226,22 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Heroic: Amber-Shaper Un'sok
-			["achievementID"] = 6729,	-- Heroic: Amber-Shaper Un'sok
-		},
-		{	-- Heroic: Blade Lord Ta'yak
-			["achievementID"] = 6726,	-- Heroic: Blade Lord Ta'yak
-		},
-		{	-- Heroic: Council of Elders
-			["achievementID"] = 8058,	-- Heroic: Council of Elders
-		},
-		{	-- Heroic: Dark Animus
-			["achievementID"] = 8064,	-- Heroic: Dark Animus
-		},
-		{	-- Heroic: Durumu the Forgotten
-			["achievementID"] = 8062,	-- Heroic: Durumu the Forgotten
-		},
-		{	-- Heroic: Elegon
-			["achievementID"] = 6723,	-- Heroic: Elegon
-		},
-		{	-- Heroic: Feng the Accursed
-			["achievementID"] = 6720,	-- Heroic: Feng the Accursed
-		},
-		{	-- Heroic: Four Kings
-			["achievementID"] = 6722,	-- Heroic: Four Kings
-		},
-		{	-- Heroic: Gara'jal the Spiritbinder
-			["achievementID"] = 6721,	-- Heroic: Gara'jal the Spiritbinder
-		},
-		{	-- Heroic: Garalon
-			["achievementID"] = 6727,	-- Heroic: Garalon
-		},
-		{	-- Heroic: Grand Empress Shek'zeer
-			["achievementID"] = 6730,	-- Heroic: Grand Empress Shek'zeer
-		},
-		{	-- Heroic: Horridon
-			["achievementID"] = 8057,	-- Heroic: Horridon
-		},
-		{	-- Heroic: Imperial Vizier Zor'lok
-			["achievementID"] = 6725,	-- Heroic: Imperial Vizier Zor'lok
-		},
-		{	-- Heroic: Iron Qon
-			["achievementID"] = 8065,	-- Heroic: Iron Qon
-		},
-		{	-- Heroic: Ji-Kun
-			["achievementID"] = 8061,	-- Heroic: Ji-Kun
-		},
-		{	-- Heroic: Jin'rokh the Breaker
-			["achievementID"] = 8056,	-- Heroic: Jin'rokh the Breaker
-		},
+		ach(6729),    -- Heroic: Amber-Shaper Un'sok
+		ach(6726),    -- Heroic: Blade Lord Ta'yak
+		ach(8058),    -- Heroic: Council of Elders
+		ach(8064),    -- Heroic: Dark Animus
+		ach(8062),    -- Heroic: Durumu the Forgotten
+		ach(6723),    -- Heroic: Elegon
+		ach(6720),    -- Heroic: Feng the Accursed
+		ach(6722),    -- Heroic: Four Kings
+		ach(6721),    -- Heroic: Gara'jal the Spiritbinder
+		ach(6727),    -- Heroic: Garalon
+		ach(6730),    -- Heroic: Grand Empress Shek'zeer
+		ach(8057),    -- Heroic: Horridon
+		ach(6725),    -- Heroic: Imperial Vizier Zor'lok
+		ach(8065),    -- Heroic: Iron Qon
+		ach(8061),    -- Heroic: Ji-Kun
+		ach(8056),    -- Heroic: Jin'rokh the Breaker
 		{	-- Heroic: Lei Shen
 			["achievementID"] = 8067,	-- Heroic: Lei Shen
 			["g"] = {
@@ -310,21 +250,11 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Heroic: Lei Shi
-			["achievementID"] = 6733,	-- Heroic: Lei Shi
-		},
-		{	-- Heroic: Megaera
-			["achievementID"] = 8060,	-- Heroic: Megaera
-		},
-		{	-- Heroic: Primordius
-			["achievementID"] = 8063,	-- Heroic: Primordius
-		},
-		{	-- Heroic: Protectors of the Endless
-			["achievementID"] = 6731,	-- Heroic: Protectors of the Endless
-		},
-		{	-- Heroic: Ra-den
-			["achievementID"] = 8068,	-- Heroic: Ra-den
-		},
+		ach(6733),    -- Heroic: Lei Shi
+		ach(8060),    -- Heroic: Megaera
+		ach(8063),    -- Heroic: Primordius
+		ach(6731),    -- Heroic: Protectors of the Endless
+		ach(8068),    -- Heroic: Ra-den
 		{	-- Heroic: Sha of Fear
 			["achievementID"] = 6734,	-- Heroic: Sha of Fear
 			["groups"] = {
@@ -333,18 +263,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Heroic: Stone Guard
-			["achievementID"] = 6719,	-- Heroic: Stone Guard
-		},
-		{	-- Heroic: Tortos
-			["achievementID"] = 8059,	-- Heroic: Tortos
-		},
-		{	-- Heroic: Tsulong
-			["achievementID"] = 6732,	-- Heroic: Tsulong
-		},
-		{	-- Heroic: Twin Empyreans
-			["achievementID"] = 8066,	-- Heroic: Twin Empyreans
-		},
+		ach(6719),    -- Heroic: Stone Guard
+		ach(8059),    -- Heroic: Tortos
+		ach(6732),    -- Heroic: Tsulong
+		ach(8066),    -- Heroic: Twin Empyreans
 		{	-- Heroic: Will of the Emperor
 			["achievementID"] = 6724,	-- Heroic: Will of the Emperor
 			["groups"] = {
@@ -353,12 +275,8 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Heroic: Wind Lord Mel'jarak
-			["achievementID"] = 6728,	-- Heroic: Wind Lord Mel'jarak
-		},
-		{	-- I Heard You Like Amber...
-			["achievementID"] = 6518,	-- I Heard You Like Amber...
-		},
+		ach(6728),    -- Heroic: Wind Lord Mel'jarak
+		ach(6518),    -- I Heard You Like Amber...
 		{	-- Lasers and Magnets and Drills! Oh My!
 			["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
 			["g"] = {
@@ -397,9 +315,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Less Than Three
-			["achievementID"] = 6683,	-- Less Than Three
-		},
+		ach(6683),    -- Less Than Three
 		{	-- Liberator of Orgrimmar
 			["achievementID"] = 8680,	-- Liberator of Orgrimmar
 			["races"] = HORDE_ONLY,
@@ -410,24 +326,12 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Lightning Overload
-			["achievementID"] = 8094,	-- Lightning Overload
-		},
-		{	-- Like an Arrow to the Face
-			["achievementID"] = 6553,	-- Like an Arrow to the Face
-		},
-		{	-- Millions of Years of Evolution vs. My Fist
-			["achievementID"] = 8123,	-- Millions of Years of Evolution vs. My Fist
-		},
-		{	-- Must Love Dogs
-			["achievementID"] = 6823,	-- Must Love Dogs
-		},
-		{	-- Mythic: Fallen Protectors
-			["achievementID"] = 8465,	-- Mythic: Fallen Protectors
-		},
-		{	-- Mythic: Galakras
-			["achievementID"] = 8468,	-- Mythic: Galakras
-		},
+		ach(8094),    -- Lightning Overload
+		ach(6553),    -- Like an Arrow to the Face
+		ach(8123),    -- Millions of Years of Evolution vs. My Fist
+		ach(6823),    -- Must Love Dogs
+		ach(8465),    -- Mythic: Fallen Protectors
+		ach(8468),    -- Mythic: Galakras
 		{	-- Mythic: Garrosh Hellscream
 			["achievementID"] = 8482,	-- Mythic: Garrosh Hellscream
 			["g"] = {
@@ -436,39 +340,17 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Mythic: General Nazgrim
-			["achievementID"] = 8471,	-- Mythic: General Nazgrim
-		},
-		{	-- Mythic: Immerseus
-			["achievementID"] = 8463,	-- Mythic: Immerseus
-		},
-		{	-- Mythic: Iron Juggernaut
-			["achievementID"] = 8469,	-- Mythic: Iron Juggernaut
-		},
-		{	-- Mythic: Kor'kron Dark Shaman
-			["achievementID"] = 8470,	-- Mythic: Kor'kron Dark Shaman
-		},
-		{	-- Mythic: Malkorok
-			["achievementID"] = 8472,	-- Mythic: Malkorok
-		},
-		{	-- Mythic: Norushen
-			["achievementID"] = 8466,	-- Mythic: Norushen
-		},
-		{	-- Mythic: Paragons of the Klaxxi
-			["achievementID"] = 8481,	-- Mythic: Paragons of the Klaxxi
-		},
-		{	-- Mythic: Sha of Pride
-			["achievementID"] = 8467,	-- Mythic: Sha of Pride
-		},
-		{	-- Mythic: Siegecrafter Blackfuse
-			["achievementID"] = 8480,	-- Mythic: Siegecrafter Blackfuse
-		},
-		{	-- Mythic: Spoils of Pandaria
-			["achievementID"] = 8478,	-- Mythic: Spoils of Pandaria
-		},
-		{	-- Mythic: Thok the Bloodthirsty
-			["achievementID"] = 8479,	-- Mythic: Thok the Bloodthirsty
-		},
+		ach(8471),    -- Mythic: General Nazgrim
+		ach(8463),    -- Mythic: Immerseus
+		ach(8469),    -- Mythic: Iron Juggernaut
+		ach(8470),    -- Mythic: Kor'kron Dark Shaman
+		ach(8472),    -- Mythic: Malkorok
+		ach(8466),    -- Mythic: Norushen
+		ach(8481),    -- Mythic: Paragons of the Klaxxi
+		ach(8467),    -- Mythic: Sha of Pride
+		ach(8480),    -- Mythic: Siegecrafter Blackfuse
+		ach(8478),    -- Mythic: Spoils of Pandaria
+		ach(8479),    -- Mythic: Thok the Bloodthirsty
 		{	-- Nightmare of Shek'zeer
 			["achievementID"] = 6845,	-- Nightmare of Shek'zeer
 			["groups"] = {
@@ -486,21 +368,11 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- No More Tears
-			["achievementID"] = 8536,	-- No More Tears
-		},
-		{	-- None Shall Pass
-			["achievementID"] = 8532,	-- None Shall Pass
-		},
-		{	-- Now We are the Paragon
-			["achievementID"] = 8531,	-- Now We are the Paragon
-		},
-		{	-- One-Up
-			["achievementID"] = 8077,	-- One-Up
-		},
-		{	-- Overzealous
-			["achievementID"] = 6937,	-- Overzealous
-		},
+		ach(8536),    -- No More Tears
+		ach(8532),    -- None Shall Pass
+		ach(8531),    -- Now We are the Paragon
+		ach(8077),    -- One-Up
+		ach(6937),    -- Overzealous
 		{	-- Pinnacle of Storms
 			["achievementID"] = 8072,	-- Pinnacle of Storms
 			["g"] = {
@@ -535,12 +407,8 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Praise the Sun!
-			["achievementID"] = 8028,	-- Praise the Sun!
-		},
-		{	-- Rescue Raiders
-			["achievementID"] = 8453,	-- Rescue Raiders
-		},
+		ach(8028),    -- Praise the Sun!
+		ach(8453),    -- Rescue Raiders
 		{	-- Ritualist Who?
 			["achievementID"] = 8081,	-- Ritualist Who?
 			["groups"] = {
@@ -642,27 +510,13 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Settle Down, Bro
-			["achievementID"] = 6480,	-- Settle Down, Bro
-		},
-		{	-- Show Me Your Moves!
-			["achievementID"] = 6455,	-- Show Me Your Moves!
-		},
-		{	-- Soft Hands
-			["achievementID"] = 8097,	-- Soft Hands
-		},
-		{	-- Sorry, Were You Looking for This?
-			["achievementID"] = 7056,	-- Sorry, Were You Looking for This?
-		},
-		{	-- Straight Six
-			["achievementID"] = 6686,	-- Straight Six
-		},
-		{	-- Strike!
-			["achievementID"] = 8537,	-- Strike!
-		},
-		{	-- Swallow Your Pride
-			["achievementID"] = 8521,	-- Swallow Your Pride
-		},
+		ach(6480),    -- Settle Down, Bro
+		ach(6455),    -- Show Me Your Moves!
+		ach(8097),    -- Soft Hands
+		ach(7056),    -- Sorry, Were You Looking for This?
+		ach(6686),    -- Straight Six
+		ach(8537),    -- Strike!
+		ach(8521),    -- Swallow Your Pride
 		{	-- Terrace of Endless Spring
 			["achievementID"] = 6689,	-- Terrace of Endless Spring
 			["groups"] = {
@@ -701,12 +555,8 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- The Immortal Vanguard
-			["achievementID"] = 8530,	-- The Immortal Vanguard
-		},
-		{	-- The Mind-Killer
-			["achievementID"] = 6825,	-- The Mind-Killer
-		},
+		ach(8530),    -- The Immortal Vanguard
+		ach(6825),    -- The Mind-Killer
 		{	-- The Underhold
 			["achievementID"] = 8461,	-- The Underhold
 			["g"] = {
@@ -755,9 +605,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Unlimited Potential
-			["achievementID"] = 8538,	-- Unlimited Potential
-		},
+		ach(8538),    -- Unlimited Potential
 		{	-- Vale of Eternal Sorrows
 			["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 			["g"] = {
@@ -779,11 +627,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Who's Got Two Green Thumbs?
-			["achievementID"] = 6933,	-- Who's Got Two Green Thumbs?
-		},
-		{	-- You Said Crossing the Streams Was Bad
-			["achievementID"] = 8098,	-- You Said Crossing the Streams Was Bad
-		},
+		ach(6933),    -- Who's Got Two Green Thumbs?
+		ach(8098),    -- You Said Crossing the Streams Was Bad
 	}),
 }));

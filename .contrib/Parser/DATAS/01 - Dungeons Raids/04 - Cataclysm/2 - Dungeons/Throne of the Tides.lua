@@ -104,9 +104,7 @@ _.Instances = { tier(CATA_TIER, {
 					un(REMOVED_FROM_GAME, i(55237)),	-- Porcelain Crab (7.3.5 - Removed from Game!)
 				})),
 				cr(44566, e(104, {	-- Ozumat
-					{	-- Throne of the Tides
-						["achievementID"] = 4839,	-- Throne of the Tides
-					},
+					ach(4839),	-- Throne of the Tides
 					i(56284),	-- Whitefin Axe
 					i(56289),	-- Bioluminescent Lamp
 					i(56288),	-- Pipefish Cord
@@ -134,9 +132,7 @@ _.Instances = { tier(CATA_TIER, {
 				["lvl"] = 85,
 				["groups"] = {
 					cr(40586, e(101, {	-- Lady Naz'jar
-						{	-- Old Faithful
-							["achievementID"] = 5285,	-- Old Faithful
-						},
+						ach(5285),	-- Old Faithful
 						i(56266),	-- Lightning Whelk Axe
 						i(56269),	-- Aurelian Mitre
 						i(157587),	-- Old One Eye's Cowl
@@ -160,13 +156,9 @@ _.Instances = { tier(CATA_TIER, {
 						i(56280),	-- Porcelain Crab
 					})),
 					cr(44566, e(104, {	-- Ozumat
-						{	-- Heroic: Throne of the Tides
-							["achievementID"] = 5061,	-- Heroic: Throne of the Tides
-						},
+						ach(5061),	-- Heroic: Throne of the Tides
 						ach(5135),	-- Heroic: Throne of the Tides Guild Run
-						{	-- Prince of Tides
-							["achievementID"] = 5286,	-- Prince of Tides
-						},
+						ach(5286),	-- Prince of Tides
 						i(56284),	-- Whitefin Axe
 						i(56289),	-- Bioluminescent Lamp
 						i(56288),	-- Pipefish Cord

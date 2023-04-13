@@ -419,9 +419,7 @@ _.Instances = { tier(CATA_TIER, {
 						},
 					}),
 					cr(55265, e(311, {	-- Morchok
-						{	-- Don't Stand So Close to Me
-							["achievementID"] = 6174,	-- Don't Stand So Close to Me
-						},
+						ach(6174),    -- Don't Stand So Close to Me
 						i(77212),	-- Hand of Morchok
 						i(77214),	-- Vagaries of Time
 						i(77262),	-- Petrified Fungal Heart
@@ -436,9 +434,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(77265),	-- Pillarfoot Greaves
 					})),
 					cr(55308, e(324, {	-- Warlord Zon'ozz
-						{	-- Ping Pong Champion
-							["achievementID"] = 6128,	-- Ping Pong Champion
-						},
+						ach(6128),	-- Ping Pong Champion
 						i(78183),	-- Gauntlets of the Corrupted Conqueror
 						i(78178),	-- Gauntlets of the Corrupted Protector
 						i(78173),	-- Gauntlets of the Corrupted Vanquisher
@@ -477,9 +473,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(77206),	-- Soulshifter Vortex
 					})),
 					cr(55689, e(317, {	-- Hagara the Stormbinder
-						{	-- Holding Hands
-							["achievementID"] = 6175,	-- Holding Hands
-						},
+						ach(6175),	-- Holding Hands
 						i(78180),	-- Shoulders of the Corrupted Conqueror
 						i(78175),	-- Shoulders of the Corrupted Protector
 						i(78170),	-- Shoulders of the Corrupted Vanquisher
@@ -497,9 +491,7 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 					})),
 					cr(55294, e(331, {	-- Ultraxion
-						{	-- Minutes to Midnight
-							["achievementID"] = 6084,	-- Minutes to Midnight
-						},
+						ach(6084),	-- Minutes to Midnight
 						i(78184),	-- Chest of the Corrupted Conqueror
 						i(78179),	-- Chest of the Corrupted Protector
 						i(78174),	-- Chest of the Corrupted Vanquisher
@@ -515,9 +507,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(77205),	-- Creche of the Final Dragon
 					})),
 					cr(56427, e(332, {	-- Warmaster Blackthorn
-						{	-- Deck Defender
-							["achievementID"] = 6105,	-- Deck Defender
-						},
+						ach(6105),	-- Deck Defender
 						i(78182),	-- Crown of the Corrupted Conqueror
 						i(78177),	-- Crown of the Corrupted Protector
 						i(78172),	-- Crown of the Corrupted Vanquisher
@@ -532,9 +522,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(77202),	-- Starcatcher Compass
 					})),
 					cr(53879, e(318, {	-- Spine of Deathwing
-						{	-- Maybe He'll Get Dizzy...
-							["achievementID"] = 6133,	-- Maybe He'll Get Dizzy...
-						},
+						ach(6133),    -- Maybe He'll Get Dizzy...
 						i(152980),	-- Elementium Back Plate (PET!)
 						i(77236),	-- Backbreaker Spaulders
 						i(77235),	-- Gauntlets of the Golden Thorn
@@ -645,9 +633,7 @@ _.Instances = { tier(CATA_TIER, {
 						},
 					}),
 					cr(55265, e(311, {	-- Morchok
-						{	-- Heroic: Morchok
-							["achievementID"] = 6109,	-- Heroic: Morchok
-						},
+						ach(6109),	-- Heroic: Morchok
 						i(78371),	-- Hand of Morchok
 						i(78363),	-- Vagaries of Time
 						i(78364),	-- Petrified Fungal Heart
@@ -662,9 +648,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(78361),	-- Pillarfoot Greaves
 					})),
 					cr(55308, e(324, {	-- Warlord Zon'ozz
-						{	-- Heroic: Warlord Zon'ozz
-							["achievementID"] = 6110,	-- Heroic: Warlord Zon'ozz
-						},
+						ach(6110),    -- Heroic: Warlord Zon'ozz
 						i(78853),	-- Gauntlets of the Corrupted Conqueror
 						i(78854),	-- Gauntlets of the Corrupted Protector
 						i(78855),	-- Gauntlets of the Corrupted Vanquisher
@@ -678,9 +662,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(77989),	-- Seal of the Seven Signs
 					})),
 					cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-						{	-- Heroic: Yor'sahj the Unsleeping
-							["achievementID"] = 6111,	-- Heroic: Yor'sahj the Unsleeping
-						},
+						ach(6111),    -- Heroic: Yor'sahj the Unsleeping
 						i(78856),	-- Leggings of the Corrupted Conqueror
 						i(78857),	-- Leggings of the Corrupted Protector
 						i(78858),	-- Leggings of the Corrupted Vanquisher
@@ -695,9 +677,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(77990),	-- Soulshifter Vortex
 					})),
 					cr(55689, e(317, {	-- Hagara the Stormbinder
-						{	-- Heroic: Hagara the Stormbinder
-							["achievementID"] = 6112,	-- Heroic: Hagara the Stormbinder
-						},
+						ach(6112),	-- Heroic: Hagara the Stormbinder
 						i(78859),	-- Shoulders of the Corrupted Conqueror
 						i(78860),	-- Shoulders of the Corrupted Protector
 						i(78861),	-- Shoulders of the Corrupted Vanquisher
@@ -715,9 +695,7 @@ _.Instances = { tier(CATA_TIER, {
 						}),
 					})),
 					cr(55294, e(331, {	-- Ultraxion
-						{	-- Heroic: Ultraxion
-							["achievementID"] = 6113,	-- Heroic: Ultraxion
-						},
+						ach(6113),	-- Heroic: Ultraxion
 						i(78847),	-- Chest of the Corrupted Conqueror
 						i(78848),	-- Chest of the Corrupted Protector
 						i(78849),	-- Chest of the Corrupted Vanquisher
@@ -733,9 +711,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(77992),	-- Creche of the Final Dragon
 					})),
 					cr(56427, e(332, {	-- Warmaster Blackthorn
-						{	-- Heroic: Warmaster Blackhorn
-							["achievementID"] = 6114,	-- Heroic: Warmaster Blackhorn
-						},
+						ach(6114),	-- Heroic: Warmaster Blackhorn
 						i(78850),	-- Crown of the Corrupted Conqueror
 						i(78851),	-- Crown of the Corrupted Protector
 						i(78852),	-- Crown of the Corrupted Vanquisher
@@ -750,9 +726,7 @@ _.Instances = { tier(CATA_TIER, {
 						i(77993),	-- Starcatcher Compass
 					})),
 					cr(53879, e(318, {	-- Spine of Deathwing
-						{	-- Heroic: Spine of Deathwing
-							["achievementID"] = 6115,	-- Heroic: Spine of Deathwing
-						},
+						ach(6115),	-- Heroic: Spine of Deathwing
 						i(152980),	-- Elementium Back Plate (PET!)
 						i(78465),	-- Backbreaker Spaulders
 						i(78464),	-- Gauntlets of the Golden Thorn

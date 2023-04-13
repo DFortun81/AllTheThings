@@ -1122,9 +1122,7 @@ _.Instances = { tier(MOP_TIER, {
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
 						["g"] = {
-							{	-- From Dusk 'til Dawn
-								["achievementID"] = 8086,	-- From Dusk 'til Dawn
-							},
+							ach(8086),    -- From Dusk 'til Dawn
 							i(95577),	-- Helm of the Crackling Conqueror
 							i(95582),	-- Helm of the Crackling Protector
 							i(95571),	-- Helm of the Crackling Vanquisher
@@ -1742,9 +1740,7 @@ _.Instances = { tier(MOP_TIER, {
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
 						["g"] = {
-							{	-- From Dusk 'til Dawn
-								["achievementID"] = 8086,	-- From Dusk 'til Dawn
-							},
+							ach(8086),    -- From Dusk 'til Dawn
 							ach(8066),	-- Heroic: Twin Empyreans
 							i(96624),	-- Helm of the Crackling Conqueror
 							i(96625),	-- Helm of the Crackling Protector
