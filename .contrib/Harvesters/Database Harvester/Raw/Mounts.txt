@@ -1623,3 +1623,6 @@
 408627@@@Igneous Shalewing
 408649@@@Shadowflame Shalewing
 411565@@@Felcrystal Scorpion
+10.1.0.49092
+371176@@@Subterranean Magmammoth
+408651@@@Cataloged Shalewing

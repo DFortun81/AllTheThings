@@ -315,7 +315,7 @@ ach(18163),	-- Discarded Works
 ach(18164),	-- Fury of Giants
 ach(18165),	-- Neltharion's Shadow
 ach(18167),	-- Edge of the Void
-ach(18168),	-- I'll make my own Shadowflame
+ach(18168),	-- I'll Make My Own Shadowflame \\ I'll make my own Shadowflame
 ach(18169),	-- [DNT] Shimmershell Snail
 ach(18172),	-- Escar-Go-Go-Go
 ach(18173),	-- Tabula Rasa
@@ -402,3 +402,6 @@ ach(18257),	-- Can You Dig It?
 ach(18258),	-- Little Lord of Lies
 ach(18271),	-- He'sSss All Mine
 ach(18284),	-- A Mole's Best Friend
+10.1.0.49092
+ach(18359),	-- <Hidden> Account has completed 10.1 Upgrade System tutorial quests
+ach(18361),	-- To All the Squirrels Burrowed Beneath

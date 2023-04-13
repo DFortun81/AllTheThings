@@ -888,10 +888,12 @@ Niffen Renown,1316,205255,4,-1
 |cFFFFD200Treasure:|r Blazing Shadowflame Chest|n|n|cFFFFD200Zone: |rZaralek Cavern,1317,205418,0,-1
 |cFFFFD200Drop:|r Tailoring,1319,205034,0,3
 |cFFFFD200Drop:|r Jrumm|n|cFFFFD200Zone:|r Zaralek Cavern,1320,205419,0,0
-|cFFFFD200Drop:|r Skornace|n|cFFFFD200Zone:|r Zaralek Cavern,1321,205463,0,0
+|cFFFFD200Drop:|r Skornak|n|cFFFFD200Zone:|r Zaralek Cavern,1321,205463,0,0
 |cFFFFD200World Quest: |rAll That Glitter,1322,205688,0,-1
 |cFFFFD200Drop: |rInvohq|n|cFFFFD200Zone: |rZaralek Cavern,1323,205796,0,0
 |cFFFFD200Achievement:|r Cavern Clawbbering|n|cFFFFD200Category:|r Dragonflight,1325,205904,0,-1
 ,1326,205963,0,-1
 |cFFFFD200Drop: |rDisciples of Fyrakk,1327,206043,0,-1
-,1328,206038,4,-1
+|cFFFFD200Vendor: |rMidsummer Merchant|n|cFFFFD200Zone: |rTirisfal Glades|n|cFFFFD200Zone: |rOrgrimmar|n|cFFFFD200Zone: |rThunder Bluff|n|cFFFFD200Zone: |rSilvermoon City|n|cFFFFD200Cost: |r500|Hitem:23247|h|TInterface\ICONS\INV_SummerFest_FireFlower.blp:0|t|h|n|n|cFFFFD200Vendor: |rMidsummer Supplier|n|cFFFFD200Zone: |rDun Morogh|n|cFFFFD200Zone: |rTeldrassil|n|cFFFFD200Zone: |rStormwind City|n|cFFFFD200Zone: |rThe Exodar|n|cFFFFD200Cost: |r500|Hitem:23247|h|TInterface\ICONS\INV_SummerFest_FireFlower.blp:0|t|h,1328,206038,4,2
+|cFFFFD200Achievement: |rLegend: Dragonflight Season 2|n|cFFFFD200Category: |rArena,1330,206267,0,5
+|cFFFFD200Event: |rA Greedy Emissary,1331,206008,2,6

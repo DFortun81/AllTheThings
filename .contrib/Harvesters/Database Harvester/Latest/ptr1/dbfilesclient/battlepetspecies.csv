@@ -2455,22 +2455,22 @@ Fortunately it mainly devours pet treats.,|cFFFFD200Drop:|r Researchers Under Fi
 "How exactly does one swim through a void? This creature knows, but isn't telling.",|cFFFFD200Profession:|r Fishing|n,3527,204276,408063,2921474,8,16386,3,6,7,0
 This type of beetle feeds on dragon scales. Its bright coloration warns predators against attack.,|cFFFFD200Vendor: |rHarlowe Marl|n|cFFFFD200Zone: |rZaralek Cavern|n|cFFFFD200Cost: |r200|Hcurrency:2003|h|TInterface\ICONS\INV_Faction_WarResources.BLP:0|t|h|n,3528,204286,408081,5008154,4,2,2,6,7,0
 "If bananas grew in caves, they would be Rango's favorite food.",|cFFFFD200Vendor: |rHarlowe Marl|n|cFFFFD200Zone: |rZaralek Cavern|n|cFFFFD200Cost: |r150|Hcurrency:2003|h|TInterface\ICONS\INV_Faction_WarResources.BLP:0|t|h,3529,204288,408088,5008157,4,2,2,6,7,0
-Miloh likes naps. Also snacks.,|cFFFFD200Vendor:|r Explorer Bezzert|n|cFFFFD200Cost: |rTBD |Hitem:163036|h|TInterface\ICONS\INV_Currency_PetBattle.BLP:0|t|h,3530,204293,408100,5008008,7,2,2,6,7,0
+Miloh likes naps. Also snacks.,|cFFFFD200Vendor: |rExplorer Bezzert|n|cFFFFD200Zone: |rZaralek Cavern|n|cFFFFD200Cost: |r2500|Hitem:163036|h|TInterface\ICONS\INV_Currency_PetBattle.BLP:0|t|h|n|n|cFFFFD200Vendor: |rPatchu|n|cFFFFD200Zone: |rThe Azure Span|n|cFFFFD200Cost: |r2500|Hitem:163036|h|TInterface\ICONS\INV_Currency_PetBattle.BLP:0|t|h,3530,204293,408100,5008008,7,2,2,6,7,0
 Rusty's powerful nose could smell a needle in a haystack.,,3531,204295,408106,5008010,7,16386,-1,6,7,0
 "Amador has a big heart and loves to help people, especially children and elders. He also likes belly rubs.",,3532,204296,408108,5008012,7,16386,-1,6,7,0
 "Sure it's just a rock, but how much can it lift?",|cFFFFD200Treasure: |rChest of Massive Gains|n|cFFFFD200Zone: |rZaralek Cavern,3533,204303,408110,1322283,6,2,0,6,7,0
 "Jerrie was once an ordinary rock mouse. He still is, in fact.",,3534,204305,408130,4616693,4,16386,-1,6,7,0
 These snails are especially prized by many drogbar snail-racers for being fast and looking fantastic.,|cFFFFD200Vendor: |rSaccratros|n|cFFFFD200Zone: |rZaralek Cavern|n|cFFFFD200Cost: |r50|Hitem:204727|h|TInterface\ICONS\INV_Misc_CuriousCoin.BLP:0|t|h,3535,204320,408150,5003559,4,2,2,6,7,0
-"While not as fast as some of the other snails in the Zaralek Cavern, Bashful makes up for it with sheer power.",|cFFFFD200Quest: |rA Race To The Finish|n|cFFFFD200Zone: |rZaralek Cavern,3536,204321,408153,5003563,4,2,1,6,7,0
+"While not as fast as some of the other snails in the Zaralek Cavern, Bashful makes up for it with sheer power.",|cFFFFD200Quest: |rA Race To The Finish|n|cFFFFD200Zone: |rZaralek Cavern,3536,204321,408153,5003563,4,82,1,6,7,0
 Known to hide money in its shell.,|cFFFFD200Vendor: |rPonzo|n|cFFFFD200Zone: |rZaralek Cavern|n|cFFFFD200Cost: |r45|Hitem:205188|h|TInterface\ICONS\INV_Stone_WeightStone_08.blp:0|t|h,3537,204323,408158,5003560,4,2,2,6,7,0
-Layers of rocky skin make Ambershells very tough to hurt.,|cFFFFD200Quest: |rA Race To The Finish|n|cFFFFD200Zone: |rZaralek Cavern,3538,204324,408161,5003564,4,2,1,6,7,0
+Layers of rocky skin make Ambershells very tough to hurt.,|cFFFFD200Quest: |rA Race To The Finish|n|cFFFFD200Zone: |rZaralek Cavern,3538,204324,408161,5003564,4,82,1,6,7,0
 "Roseshells are known to be very agressive, but aren't very fast. So if you mess with one, prepare to be bitten in about five seconds.",,3539,204325,408163,5003561,4,16386,-1,6,7,0
-Somehow pretty and gross at the same time.,|cFFFFD200Quest: |rA Race To The Finish|n|cFFFFD200Zone: |rZaralek Cavern,3540,204326,408165,5003563,4,2,1,6,7,0
+Somehow pretty and gross at the same time.,|cFFFFD200Quest: |rA Race To The Finish|n|cFFFFD200Zone: |rZaralek Cavern,3540,204326,408165,5003563,4,82,1,6,7,0
 For a creature made of rocks it hovers quite effortlessly.,|cFFFFD200Drop: |rKob'rok|n|cFFFFD200Zone: |rZaralek Cavern,3541,204339,408251,5009625,6,2,0,6,7,0
 "This creature hunts by lurking in dark areas, then darting out to catch its prey as it wanders by.",,3542,204340,408252,5009629,6,16386,-1,6,7,0
 This creature can eat twice its bodyweight at a single meal.,,3543,204341,408253,5009631,6,16386,-1,6,7,0
 It doesn't even bother to chew its food.,,3544,204342,408254,5009630,6,16386,-1,6,7,0
-Perhaps you'd like to see how snakelike it can be!,|cFFFFD200Treasure: |rOuroboros Tablet and Kob'rok's Luminescent Scale|n,3545,204343,408257,5045822,7,82,0,6,7,0
+Perhaps you'd like to see how snakelike it can be!,|cFFFFD200Treasure: |rOuroboros Tablet and Kob'rok's Luminescent Scale|n,3545,204343,408257,5045822,5,82,0,6,7,0
 Skaarn likes to coil up inside of your backpack.,|cFFFFD200Drop: |rKob'rok|n|cFFFFD200Zone: |rZaralek Cavern,3546,204345,408264,5015299,7,2,0,6,7,0
 "He doesn't want you to know this, but Mikah's favorite food is broccoli.",,3547,204354,408265,5015300,7,16386,-1,6,7,0
 The fury of the sea in the packge of a puddle.,|cFFFFD200Drop: |rAquifon|n|cFFFFD200Zone: |rZaralek Cavern,3548,204359,408308,5041294,6,2,0,6,7,0
@@ -2496,4 +2496,4 @@ Kromos can often be found napping in sandboxes.,,3556,204370,408332,4719557,1,16
 ,,3572,204938,0,5003559,4,32,-1,6,7,0
 ,,3573,204939,0,5003562,4,32,-1,6,7,0
 Newsy delivers mail all around the Dragon Isles. She is so quick and reliable that the small holes on the letters she delivers are negligible.,"|cFFFFD200Quest: |rSigned, Sealed, and Self Delivered",3578,205359,411110,5003562,4,82,1,6,7,0
-"Also known as the Lord of Lies, Baa'lial is a master of deceit.",|cFFFFD200Promotion:|r|n,3580,205637,411791,1722953,5,16466,7,6,7,0
+"Also known as the Lord of Lies, Baa'lial is a master of deceit.",|cFFFFD200Promotion:|r|n,3580,205637,411791,5159899,5,16466,7,6,7,0

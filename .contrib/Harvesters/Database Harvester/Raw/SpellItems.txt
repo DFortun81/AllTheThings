@@ -11163,3 +11163,10 @@
 6904@@@Shadowed Belt Buckle|A:Professions-ChatIcon-Quality-Tier3:20:20|a
 6905@@@Shadowed Belt Buckle|A:Professions-ChatIcon-Quality-Tier2:20:20|a
 6906@@@Shadowed Belt Buckle|A:Professions-ChatIcon-Quality-Tier1:20:20|a
+10.1.0.49092
+6840@@@Shadowed Belt Clasp
+6841@@@Shadowed Belt Clasp
+6842@@@Shadowed Belt Clasp
+6904@@@Shadowed Belt Clasp|A:Professions-ChatIcon-Quality-Tier3:20:20|a
+6905@@@Shadowed Belt Clasp|A:Professions-ChatIcon-Quality-Tier2:20:20|a
+6906@@@Shadowed Belt Clasp|A:Professions-ChatIcon-Quality-Tier1:20:20|a

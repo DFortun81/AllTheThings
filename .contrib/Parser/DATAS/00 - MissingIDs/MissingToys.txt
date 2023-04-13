@@ -8,7 +8,7 @@ i(205255),	-- Niffen Diggin' Mitts \\ Niffen Diggin' Mits
 i(205027),	-- Explorer's Banner \\ Explorer's Banner of Comradery
 i(205418),	-- Blazing Shadowflame Cinder
 i(205419),	-- Jrumm's Drum
-i(205463),	-- Skornace's Lava Ball \\ Skornace's Molten Pocket
+i(205463),	-- Skornak's Lava Ball \\ Skornace's Lava Ball \\ Skornace's Molten Pocket
 10.1.0.48776
 i(205688),	-- Glutinous Glitterscale Glob
 i(205796),	-- Molten Lava Pack
@@ -17,6 +17,15 @@ i(205904),	-- Vibrant Clacking Claw
 i(205963),	-- Sniffin' Salts
 i(206038),	-- Flamin' Ring of Flashiness
 i(206043),	-- Fyrakk's Frenzy
+10.1.0.49092
+i(206008),	-- Nightmare Banner
+i(206267),	-- Obsidian Legend's Pennant
 
 
-Nothing is Missing in ToyDB.lua! Good Work!
+
+
+Missing in ToyDB.lua
+
+10.1.0.49092
+i(206008),	-- Nightmare Banner
+i(206267),	-- Obsidian Legend's Pennant

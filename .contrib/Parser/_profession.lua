@@ -733,6 +733,7 @@ COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedDa
 		["timeline"] = { ADDED_10_0_5 },
 	}),
 }));
+
 ----------------
 -- ENCHANTING --
 ----------------

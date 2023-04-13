@@ -1298,6 +1298,325 @@ root(ROOTS.Unsorted, {
 				i(206026),	-- Ensemble: Enmity Hood and Cloak
 				i(206028),	-- Chest of Gold
 				i(206039),	-- Enmity Bundle
+				-- New Stuff
+				i(190199),	-- Well-Worn Grimskull Cinch
+				i(190439),	-- Merciless Trapper's Staff
+				i(190921),	-- Ensemble: Wanderer's Snowy Trappings
+				i(190922),	-- Ensemble: Vagabond's Snowy Threads
+				i(191838),	-- Subterranean Magmammoth
+				i(202311),	-- Sunbleached Grimskull Cinch
+				i(202501),	-- Drape of the Vermillion Forge
+				i(202502),	-- Coils of the Vermillion Forge
+				i(202503),	-- Blackbelt of the Vermillion Forge
+				i(202504),	-- Spines of the Vermillion Forge
+				i(202505),	-- Pantaloons of the Vermillion Forge
+				i(202506),	-- Cover of the Vermillion Forge
+				i(202507),	-- Fists of the Vermillion Forge
+				i(202508),	-- Footpads of the Vermillion Forge
+				i(202509),	-- Cuirass of the Vermillion Forge
+				i(202537),	-- Shroud of the Furnace Seraph
+				i(202538),	-- Cuffs of the Furnace Seraph
+				i(202539),	-- Sash of the Furnace Seraph
+				i(202540),	-- Devotion of the Furnace Seraph
+				i(202541),	-- Breeches of the Furnace Seraph
+				i(202542),	-- Mask of the Furnace Seraph
+				i(202543),	-- Grasp of the Furnace Seraph
+				i(202544),	-- Sabatons of the Furnace Seraph
+				i(202545),	-- Command of the Furnace Seraph
+				i(202555),	-- Zskarn's Autopsy Scalpel
+				i(202557),	-- Hellsteel Mutilator
+				i(202558),	-- Calamity's Herald
+				i(202559),	-- Infernal Shadelance
+				i(202560),	-- Claws of the Blazing Behemoth
+				i(202563),	-- Obsidian Stirring Staff
+				i(202564),	-- Fang of the Sundered Flame
+				i(202565),	-- Erethos, the Empty Promise
+				i(202566),	-- Rionthus's Bladed Visage
+				i(202570),	-- Lavaflow Control Rod
+				i(202571),	-- Experiment 1, Kitewing
+				i(202572),	-- Entropic Convergence Loop
+				i(202573),	-- Etchings of the Captive Revenant
+				i(202574),	-- Flamebound Huntsman's Footpads
+				i(202575),	-- Neldris's Sinewy Scapula
+				i(202576),	-- Dreadrift Stompers
+				i(202577),	-- Seal of the Defiant Hordes
+				i(202578),	-- Phoenix-Plume Gloves
+				i(202579),	-- Attendant's Concocting Cover
+				i(202580),	-- Mystic's Scalding Frame
+				i(202582),	-- Manacles of Cruel Progress
+				i(202583),	-- Grasps of Welded Anguish
+				i(202584),	-- Scalecommander's Ebon Schynbalds
+				i(202585),	-- Coattails of the Rightful Heir
+				i(202586),	-- Warlord's Volcanic Vest
+				i(202587),	-- Oathbreaker's Obsessive Gauntlets
+				i(202588),	-- Exacting Augmenter's Sabatons
+				i(202589),	-- Sash of Abandoned Hope
+				i(202591),	-- Gatecrasher Giant's Coif
+				i(202592),	-- Unyielding Goliath's Burgonet
+				i(202593),	-- Unstable Vial Handlers
+				i(202594),	-- Bloodstench Skinguards
+				i(202595),	-- Shoulderplates of Planar Isolation
+				i(202596),	-- Tassets of Blistering Twilight
+				i(202597),	-- Obsidian Guard's Chausses
+				i(202598),	-- Cuirass of Meticulous Mixture
+				i(202599),	-- Sarkareth's Abyssal Embrace
+				i(202600),	-- Reanimator's Wicked Cassock
+				i(202601),	-- Twisted Vision's Demigaunts
+				i(202602),	-- Violent Gravemask
+				i(202603),	-- Sandals of Ancient Fury
+				i(202604),	-- Boulder-Tossing Bands
+				i(202605),	-- Gloomfused Chemistry Belt
+				i(202607),	-- Brutal Dragonslayer's Trophy
+				i(202612),	-- Screaming Black Dragonscale
+				i(202616),	-- Enduring Dreadplate
+				i(202618),	-- Kagni's Scorching Talisman
+				i(202621),	-- Dreadful Corrupting Fluid
+				i(202622),	-- Mystic Corrupting Fluid
+				i(202623),	-- Venerated Corrupting Fluid
+				i(202624),	-- Dreadful Mixing Fluid
+				i(202625),	-- Mystic Mixing Fluid
+				i(202626),	-- Venerated Mixing Fluid
+				i(202627),	-- Dreadful Melting Fluid
+				i(202628),	-- Mystic Melting Fluid
+				i(202629),	-- Venerated Melting Fluid
+				i(202630),	-- Zenith Melting Fluid
+				i(202631),	-- Dreadful Ventilation Fluid
+				i(202632),	-- Mystic Ventilation Fluid
+				i(202633),	-- Venerated Ventilation Fluid
+				i(202634),	-- Dreadful Cooling Fluid
+				i(202635),	-- Mystic Cooling Fluid
+				i(202636),	-- Venerated Cooling Fluid
+				i(202637),	-- Zenith Corrupting Fluid
+				i(202638),	-- Zenith Mixing Fluid
+				i(202639),	-- Zenith Ventilation Fluid
+				i(202640),	-- Zenith Cooling Fluid
+				i(202652),	-- Discarded Creation's Restraint
+				i(202655),	-- Elder's Volcanic Binding
+				i(202659),	-- Shackles of the Shadowed Bastille
+				i(203729),	-- Ominous Chromatic Essence
+				i(204201),	-- Neltharion's Call to Chaos
+				i(204202),	-- Neltharion's Call to Dominance
+				i(204211),	-- Neltharion's Call to Suffering
+				i(204279),	-- Wallclimber's Incursion Hatchet
+				i(204318),	-- Thadrion's Erratic Arcanotrode
+				i(204319),	-- Bloodfire Extraction Conduit
+				i(204320),	-- Proctor's Tactical Cleaver
+				i(204322),	-- Failure Disposal Cannon
+				i(204324),	-- Echo's Maddening Volume
+				i(204390),	-- Bonds of Desperate Ascension
+				i(204391),	-- Failed Applicant's Footpads
+				i(204392),	-- Treads of Fractured Realities
+				i(204393),	-- Clasps of the Diligent Steward
+				i(204394),	-- Cuffs of the Savage Serpent
+				i(204395),	-- Hydratooth Girdle
+				i(204396),	-- Spittle-Resistant Sollerets
+				i(204397),	-- Magmorax's Fourth Collar
+				i(204399),	-- Oblivion's Immortal Coil
+				i(204400),	-- Recycled Golemskin Waistguard
+				i(204408),	-- Gholna's Lavaborne Legwraps
+				i(204409),	-- Heatbinder's Burning Slippers
+				i(204410),	-- Bands of Purified Purpose
+				i(204411),	-- Crucible Curator's Wingspan
+				i(204412),	-- Crucible Curator's Wingspan
+				i(204413),	-- Bands of Purified Purpose
+				i(204414),	-- Laboratory Assistant's Abductors
+				i(204415),	-- Mantle of Sunless Kindling
+				i(204416),	-- Laboratory Assistant's Abductors
+				i(204417),	-- Mantle of Sunless Kindling
+				i(204418),	-- Ashen Zaralek Cuirass
+				i(204419),	-- Cavernous Foliage Wristbands
+				i(204420),	-- Sundered Edgelord's Breastplate
+				i(204421),	-- Faulds of Failed Experiments
+				i(204422),	-- Sundered Edgelord's Breastplate
+				i(204423),	-- Faulds of Failed Experiments
+				i(204424),	-- Crechebound Soldier's Boots
+				i(204425),	-- Crown of the Twin Elders
+				i(204426),	-- Blazestalker's Smelted Cleats
+				i(204427),	-- Devoted Warden's Gaze
+				i(204428),	-- Sanctum Guard's Forgewalkers
+				i(204429),	-- Devoted Warden's Gaze
+				i(204430),	-- Sanctum Guard's Forgewalkers
+				i(204431),	-- Epaulettes of Draconic Conquest
+				i(204432),	-- Vakan's Shale Greatbelt
+				i(204466),	-- Tormentor's Siphoning Signet
+				i(204467),	-- Drape of the Dracthyr Trials
+				i(204715),	-- Unearthed Fragrant Coin
+				i(204874),	-- Waveborne Diplomat's Cavalier Hat
+				i(204875),	-- Waveborne Diplomat's Puffed Pauldrons
+				i(204876),	-- Waveborne Diplomat's Vestment
+				i(204878),	-- Waveborne Diplomat's Frilled Gloves
+				i(204879),	-- Waveborne Diplomat's Waders
+				i(204880),	-- Waveborne Diplomat's Pantaloons
+				i(204881),	-- Waveborne Diplomat's Cape
+				i(204882),	-- Waveborne Diplomat's Belt
+				i(204888),	-- Ensemble: Waveborne Diplomat's Regalia
+				i(205039),	-- Shadowed Belt Clasp
+				i(205043),	-- Shadowed Belt Clasp
+				i(205044),	-- Shadowed Belt Clasp
+				i(205143),	-- Plans: Shadowed Belt Clasp
+				i(205204),	-- Flaming Shalewing Subject 01
+				i(205313),	-- Brullo's Wristbraces
+				i(205462),	-- Royal Nerubian Capsa
+				i(205463),	-- Skornak's Lava Ball
+				i(205798),	-- Pauldrons of the Onyx Crucible
+				i(205799),	-- Legplates of the Onyx Crucible
+				i(205800),	-- Thraexhelm of the Onyx Crucible
+				i(205801),	-- Handguards  of the Onyx Crucible
+				i(205802),	-- Battlechest of the Onyx Crucible
+				i(205803),	-- Heartfire Sentinel's Steelwings
+				i(205804),	-- Heartfire Sentinel's Cuisses
+				i(205805),	-- Heartfire Sentinel's Forgehelm
+				i(205806),	-- Heartfire Sentinel's Protectors
+				i(205807),	-- Heartfire Sentinel's Cassock
+				i(205808),	-- Lingering Phantom's Shoulderplates
+				i(205809),	-- Lingering Phantom's Schynbalds
+				i(205810),	-- Lingering Phantom's Dreadhorns
+				i(205811),	-- Lingering Phantom's Gauntlets
+				i(205812),	-- Lingering Phantom's Plackart
+				i(205813),	-- Thunderpads of the Cinderwolf
+				i(205814),	-- Braies of the Cinderwolf
+				i(205815),	-- Spangenhelm of the Cinderwolf
+				i(205816),	-- Knuckles of the Cinderwolf
+				i(205817),	-- Adornments of the Cinderwolf
+				i(205818),	-- Ashen Predator's Trophy
+				i(205819),	-- Ashen Predator's Poleyn
+				i(205820),	-- Ashen Predator's Faceguard
+				i(205821),	-- Ashen Predator's Skinners
+				i(205822),	-- Ashen Predator's Sling Vest
+				i(205823),	-- Wingspan of Obsidian Secrets
+				i(205824),	-- Chausses of Obsidian Secrets
+				i(205825),	-- Crown of Obsidian Secrets
+				i(205826),	-- Claws of Obsidian Secrets
+				i(205827),	-- Hauberk of Obsidian Secrets
+				i(205828),	-- Lurking Specter's Shoulderblades
+				i(205829),	-- Lurking Specter's Tights
+				i(205830),	-- Lurking Specter's Visage
+				i(205831),	-- Lurking Specter's Handgrips
+				i(205832),	-- Lurking Specter's Brigandine
+				i(205833),	-- Spines of the Vermillion Forge
+				i(205834),	-- Pantaloons of the Vermillion Forge
+				i(205835),	-- Cover of the Vermillion Forge
+				i(205836),	-- Fists of the Vermillion Forge
+				i(205837),	-- Cuirass of the Vermillion Forge
+				i(205838),	-- Mantle of the Autumn Blaze
+				i(205839),	-- Pants of the Autumn Blaze
+				i(205840),	-- Bough of the Autumn Blaze
+				i(205841),	-- Handguards of the Autumn Blaze
+				i(205842),	-- Chestroots of the Autumn Blaze
+				i(205843),	-- Kinslayer's Tainted Spaulders
+				i(205844),	-- Kinslayer's Legguards
+				i(205845),	-- Kinslayer's Hood
+				i(205846),	-- Kinslayer's Bloodstained Grips
+				i(205847),	-- Kinslayer's Vest
+				i(205848),	-- Amice of the Sinister Savant
+				i(205849),	-- Leggings of the Sinister Savant
+				i(205850),	-- Grimhorns of the Sinister Savant
+				i(205851),	-- Grips of the Sinister Savant
+				i(205852),	-- Cursed Robes of the Sinister Savant
+				i(205853),	-- Devotion of the Furnace Seraph
+				i(205854),	-- Breeches of the Furnace Seraph
+				i(205855),	-- Mask of the Furnace Seraph
+				i(205856),	-- Grasp of the Furnace Seraph
+				i(205857),	-- Command of the Furnace Seraph
+				i(205858),	-- Underlight Conjurer's Aurora
+				i(205859),	-- Underlight Conjurer's Trousers
+				i(205860),	-- Underlight Conjurer's Arcanocowl
+				i(205861),	-- Underlight Conjurer's Gloves
+				i(205862),	-- Underlight Conjurer's Vestment
+				i(206044),	-- Obsidian Gladiator's Axe
+				i(206046),	-- Void-Touched Curio
+				i(206135),	-- Heroic Dungeon Delver's Trophy Chest
+				i(206136),	-- Heroic Dungeon Delver's Trophy Crest
+				i(206137),	-- Obsidian Gladiator's Dagger
+				i(206138),	-- Scalewarden's Pennant
+				i(206139),	-- Volatile Crimson Embers
+				i(206140),	-- Soothing Emerald Tea
+				i(206141),	-- Prismatic Snail Mucus
+				i(206142),	-- Gritty Stone Potion
+				i(206143),	-- Energized Temporal Spores
+				i(206144),	-- Curious Primordial Fungus
+				i(206146),	-- Obsidian Gladiator's Warglaive
+				i(206147),	-- Obsidian Gladiator's Polearm
+				i(206148),	-- Obsidian Gladiator's Staff
+				i(206149),	-- Obsidian Gladiator's Rifle
+				i(206150),	-- Obsidian Gladiator's Mace
+				i(206151),	-- Obsidian Gladiator's Rod
+				i(206152),	-- Obsidian Gladiator's Shield
+				i(206153),	-- Obsidian Gladiator's Claws
+				i(206154),	-- Obsidian Gladiator's Bow
+				i(206158),	-- Add Keystone Affix: Shielding
+				i(206180),	-- Choker of Stolen Thunder
+				i(206181),	-- Ionized Choker
+				i(206182),	-- Red Sky Pendant
+				i(206183),	-- Amulet of Tender Breath
+				i(206184),	-- Skyshard Ring
+				i(206185),	-- Ring of Frozen Rain
+				i(206197),	-- Breastplate of Arterial Protection
+				i(206198),	-- Gore-Splattered Vest
+				i(206199),	-- Blood-Drenched Robes
+				i(206200),	-- Obsidian Equipment Chest
+				i(206205),	-- Scalewarden's Cloth Garb
+				i(206206),	-- Scalewarden's Cloth Slippers
+				i(206207),	-- Scalewarden's Cloth Gloves
+				i(206208),	-- Scalewarden's Crown
+				i(206209),	-- Scalewarden's Cloth Pants
+				i(206210),	-- Scalewarden's Cloth Cord
+				i(206212),	-- Scalewarden's Cloth Bindings
+				i(206213),	-- Scalewarden's Cloth Mantle
+				i(206214),	-- Scalewarden's Leather Boots
+				i(206215),	-- Scalewarden's Leather Handwraps
+				i(206216),	-- Scalewarden's Hood
+				i(206217),	-- Scalewarden's Leather Breeches
+				i(206218),	-- Scalewarden's Leather Belt
+				i(206219),	-- Scalewarden's Leather Wraps
+				i(206220),	-- Scalewarden's Leather Jerkin
+				i(206221),	-- Scalewarden's Leather Shoulderguard
+				i(206222),	-- Scalewarden's Faceplate
+				i(206223),	-- Scalewarden's Plate Cuirass
+				i(206224),	-- Scalewarden's Plate Sabatons
+				i(206225),	-- Scalewarden's Plate Gauntlets
+				i(206226),	-- Scalewarden's Plate Legguards
+				i(206227),	-- Scalewarden's Plate Spaulders
+				i(206228),	-- Scalewarden's Plate Clasp
+				i(206229),	-- Scalewarden's Plate Bracers
+				i(206230),	-- Scalewarden's Chain Armor
+				i(206231),	-- Scalewarden's Chain Greaves
+				i(206232),	-- Scalewarden's Chain Grips
+				i(206233),	-- Scalewarden's Helm
+				i(206234),	-- Scalewarden's Chain Leggings
+				i(206235),	-- Scalewarden's Chain Epaulets
+				i(206236),	-- Scalewarden's Chain Cinch
+				i(206237),	-- Scalewarden's Chain Armguards
+				i(206238),	-- Scalewarden's Cape
+				i(206239),	-- Scalewarden's Shawl
+				i(206240),	-- Scalewarden's Cloak
+				i(206241),	-- Scalewarden's Drape
+				i(206242),	-- Scalewarden's Battleaxe
+				i(206243),	-- Scalewarden's Hatchet
+				i(206244),	-- Scalewarden's Carver
+				i(206245),	-- Scalewarden's Handcannon
+				i(206246),	-- Scalewarden's Twinblade
+				i(206247),	-- Scalewarden's Spellblade
+				i(206248),	-- Scalewarden's Shortsword
+				i(206249),	-- Scalewarden's Flame
+				i(206250),	-- Scalewarden's Spire
+				i(206251),	-- Scalewarden's Battlestaff
+				i(206252),	-- Scalewarden's Greatsword
+				i(206253),	-- Scalewarden's Broadsword
+				i(206254),	-- Scalewarden's Club
+				i(206255),	-- Scalewarden's Hammer
+				i(206256),	-- Scalewarden's Cudgel
+				i(206257),	-- Scalewarden's Aegis
+				i(206258),	-- Scalewarden's Impaler
+				i(206259),	-- Scalewarden's Spear
+				i(206260),	-- Scalewarden's Wand
+				i(206261),	-- Scalewarden's Mace
+				i(206262),	-- Scalewarden's Crusher
+				i(206263),	-- Scalewarden's Scepter
+				i(206265),	-- Scalewarden's Sabre
+				i(206267),	-- Obsidian Legend's Pennant
+				i(206270),	-- Volcanic Equipment Chest
+				i(206271),	-- Malicia's Hoard
 			}),
 		})),
 		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { "created 10.0.7" } }, {
