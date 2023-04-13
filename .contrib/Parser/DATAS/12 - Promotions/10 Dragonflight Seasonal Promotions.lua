@@ -74,6 +74,15 @@ root(ROOTS.Promotions, {
 			i(38301, {	-- D.I.S.C.O. (TOY!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between February 21st, 10:00 a.m. & April 2nd, 11:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_10_0_7 },
+				["u"] = REMOVED_FROM_GAME, -- 2nd April 2023
+			}),
+			i(203716, {		-- Thundering Banner of the Aspects (TOY!)
+				["description"] = "Break the Meta: DF Season 1\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 1 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFRaider.io/break-the-meta-2023/signups|r and complete 2 or more eligible timed keystones at level 15 or higher during BTM S1, and the Thundering Banner of the Aspects will be automatically added to your collection in-game within 30 days of the conclusion of the event.\n\nThe Event starts on April 18th for US, April 19th for EU & April 20th for KR/TW & lasts for 2 entire resets of your region.",
+				["timeline"] = {
+					"added 10.0.7",
+					"removed 10.1.0",
+				},
+			--	["u"] = REMOVED_FROM_GAME, -- Removed again on May 2nd 2023
 			}),
 		},
 	}),
