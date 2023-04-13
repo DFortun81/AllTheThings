@@ -4,27 +4,6 @@
 -- TODO: reformat this file
 root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 	achcat(ACHIEVEMENT_CATEGORY_PANDARIA_RAID, {
-		{	-- A Complete Circuit
-			["achievementID"] = 8090,	-- A Complete Circuit
-			["g"] = {
-				{	-- Bouncing Bolt Conduit Disabled First
-					["achievementID"] = 8090,	-- A Complete Circuit
-					["criteriaID"] = 4,	-- Bouncing Bolt Conduit Disabled First
-				},
-				{	-- Diffusion Chain Conduit Disabled First
-					["achievementID"] = 8090,	-- A Complete Circuit
-					["criteriaID"] = 2,	-- Diffusion Chain Conduit Disabled First
-				},
-				{	-- Overcharge Conduit Disabled First
-					["achievementID"] = 8090,	-- A Complete Circuit
-					["criteriaID"] = 3,	-- Overcharge Conduit Disabled First
-				},
-				{	-- Static Shock Conduit Disabled First
-					["achievementID"] = 8090,	-- A Complete Circuit
-					["criteriaID"] = 1,	-- Static Shock Conduit Disabled First
-				},
-			},
-		},
 		{	-- Anything You Can Do, I Can Do Better...
 			["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
 			["groups"] = {
@@ -93,16 +72,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				{	-- Yu'lon
 					["achievementID"] = 8535,	-- Celestial Challenge
 					["criteriaID"] = 4,	-- Yu'lon
-				},
-			},
-		},
-		{	-- Conqueror of Orgrimmar
-			["achievementID"] = 8679,	-- Conqueror of Orgrimmar
-			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				{	-- Conqueror of Orgrimmar
-					["titleID"] = 211,	-- Conqueror of Orgrimmar [Alliance]
-					["races"] = ALLIANCE_ONLY,
 				},
 			},
 		},
@@ -212,30 +181,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- Heroic: Lei Shen
-			["achievementID"] = 8067,	-- Heroic: Lei Shen
-			["g"] = {
-				{	-- , Storm's End
-					["titleID"] = 222,	-- , Storm's End
-				},
-			},
-		},
-		{	-- Heroic: Sha of Fear
-			["achievementID"] = 6734,	-- Heroic: Sha of Fear
-			["groups"] = {
-				{	-- the Fearless
-					["titleID"] = 198,	-- the Fearless
-				},
-			},
-		},
-		{	-- Heroic: Will of the Emperor
-			["achievementID"] = 6724,	-- Heroic: Will of the Emperor
-			["groups"] = {
-				{	-- , Delver of the Vaults
-					["titleID"] = 204,	-- , Delver of the Vaults
-				},
-			},
-		},
 		{	-- Lasers and Magnets and Drills! Oh My!
 			["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
 			["g"] = {
@@ -271,24 +216,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				{	-- Last Stand of the Zandalari: Jin'rokh the Breaker
 					["achievementID"] = 8069,	-- Last Stand of the Zandalari
 					["criteriaID"] = 1,	-- Jin'rokh the Breaker
-				},
-			},
-		},
-		{	-- Liberator of Orgrimmar
-			["achievementID"] = 8680,	-- Liberator of Orgrimmar
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				{	-- , Liberator of Orgrimmar
-					["titleID"] = 212,	-- , Liberator of Orgrimmar
-					["races"] = HORDE_ONLY,
-				},
-			},
-		},
-		{	-- Mythic: Garrosh Hellscream
-			["achievementID"] = 8482,	-- Mythic: Garrosh Hellscream
-			["g"] = {
-				{	-- , Hellscream's Downfall
-					["titleID"] = 214,	-- , Hellscream's Downfall
 				},
 			},
 		},

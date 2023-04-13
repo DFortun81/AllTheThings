@@ -471,14 +471,9 @@ _.Instances = { tier(MOP_TIER, {
 						i(87167),	-- Terror in the Mists
 					})),
 					cr(60999, e(709, {	-- Sha of Fear
-						{	-- Heroic: Sha of Fear
-							["achievementID"] = 6734,	-- Heroic: Sha of Fear
-							["g"] = {
-								{	-- the Fearless
-									["titleID"] = 198,	-- the Fearless
-								},
-							},
-						},
+						ach(6734, {	-- Heroic: Sha of Fear
+							title(198),	-- the Fearless
+						}),
 						ach(6676),	-- Heroic: Sha of Fear Guild Run
 						un(REMOVED_FROM_GAME, ach(6678)),	-- Realm First! Sha of Fear
 						ach(6825),	-- The Mind-Killer
