@@ -111,9 +111,7 @@ _.Instances = { tier(CATA_TIER, {
 					un(REMOVED_FROM_GAME, i(57862)),	-- Chaotic Wrappings (7.3.5 - Removed from Game!)
 				})),
 				cr(39378, e(130, {	-- Rajh, Construct of Sun
-					{	-- Halls of Origination
-						["achievementID"] = 4841,	-- Halls of Origination
-					},
+					ach(4841),	-- Halls of Origination
 					i(56433),	-- Blade of the Burning Sun
 					i(56430),	-- Sun Strike
 					i(56434),	-- Solar Wind Cloak

@@ -359,36 +359,9 @@ r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
 10.1.0.48480
-r(403166),	-- Obsidian Combatant's Medallion
-r(403167),	-- Obsidian Combatant's Insignia of Alacrity
-r(403168),	-- Obsidian Combatant's Emblem
 r(408218),	-- Deciphering \\ Winding Slitherdrake: Blue and Silver Armor
 r(408220),	-- Deciphering \\ Winding Slitherdrake: Yellow and Silver Armor
-r(408221),	-- Deciphering \\ Winding Slitherdrake: White Hair
 r(408222),	-- Deciphering \\ Winding Slitherdrake: Curved Chin Horn
-r(408223),	-- Deciphering \\ Winding Slitherdrake: Small Finned Throat
-r(408271),	-- Hissing Rune
-r(408272),	-- Vantus Rune: Aberrus, the Shadowed Crucible
-r(408273),	-- Glyph of the Heaved Armament
-r(408277),	-- Glyph of the Chosen Glaive
-r(408278),	-- Contract: Loamm Niffen
 
 
-
-
-Missing in InscriptionItemDB.lua
-
-10.1.0.48480
-r(403166),	-- Obsidian Combatant's Medallion
-r(403167),	-- Obsidian Combatant's Insignia of Alacrity
-r(403168),	-- Obsidian Combatant's Emblem
-r(408218),	-- Deciphering \\ Winding Slitherdrake: Blue and Silver Armor
-r(408220),	-- Deciphering \\ Winding Slitherdrake: Yellow and Silver Armor
-r(408221),	-- Deciphering \\ Winding Slitherdrake: White Hair
-r(408222),	-- Deciphering \\ Winding Slitherdrake: Curved Chin Horn
-r(408223),	-- Deciphering \\ Winding Slitherdrake: Small Finned Throat
-r(408271),	-- Hissing Rune
-r(408272),	-- Vantus Rune: Aberrus, the Shadowed Crucible
-r(408273),	-- Glyph of the Heaved Armament
-r(408277),	-- Glyph of the Chosen Glaive
-r(408278),	-- Contract: Loamm Niffen
+Nothing is Missing in InscriptionItemDB.lua! Good Work!

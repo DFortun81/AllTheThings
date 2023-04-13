@@ -266,9 +266,7 @@ _.Instances = { tier(MOP_TIER, {
 							59915,	-- Jasper Guardian
 						},
 						["groups"] = {
-							{	-- Must Love Dogs
-								["achievementID"] = 6823,	-- Must Love Dogs
-							},
+							ach(6823),	-- Must Love Dogs
 							i(167047),	-- Stoneclaw (PET!)
 							i(85924),	-- Dagger of the Seven Stars
 							i(85976),	-- Sixteen-Fanged Crown
@@ -333,9 +331,7 @@ _.Instances = { tier(MOP_TIER, {
 					e(682, {	-- Gara'jal the Spiritbinder
 						["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
 						["g"] = {
-							{	-- Sorry, Were You Looking for This?
-								["achievementID"] = 7056,	-- Sorry, Were You Looking for This?
-							},
+							ach(7056),    -- Sorry, Were You Looking for This?
 							i(167048),	-- Wayward Spirit (PET!)
 							i(85994),	-- Gara'kal, Fist of the Spiritbinder
 							i(85996),	-- Eye of the Ancient Spirit
@@ -360,9 +356,7 @@ _.Instances = { tier(MOP_TIER, {
 							60701,	-- Zian of the Endless Shadow
 						},
 						["g"] = {
-							{	-- Getting Hot In Here
-								["achievementID"] = 6687,	-- Getting Hot In Here
-							},
+							ach(6687),	-- Getting Hot In Here
 							i(86071),	-- Screaming Tiger, Qiang's Unbreakable Polearm
 							i(86075),	-- Steelskin, Qiang's Impervious Shield
 							i(86129),	-- Hood of Blind Eyes
@@ -379,15 +373,11 @@ _.Instances = { tier(MOP_TIER, {
 							i(86084),	-- Meng's Treads of Insanity
 						},
 					}),
-					{	-- And... It's Good!
-						["achievementID"] = 7933,	-- And... It's Good!
-					},
+					ach(7933),    -- And... It's Good!
 					e(726, {	-- Elegon
 						["crs"] = { 60410 },	-- Elegon
 						["g"] = {
-							{	-- Straight Six
-								["achievementID"] = 6686,	-- Straight Six
-							},
+							ach(6686),	-- Straight Six
 							i(87777),	-- Astral Cloud Serpent (MOUNT!)
 							i(167049),	-- Celestial Gift (PET!)
 							i(86140),	-- Starshatter
@@ -412,9 +402,7 @@ _.Instances = { tier(MOP_TIER, {
 							60399,	-- Qin-xi <Emperor's Closed Fist>
 						},
 						["groups"] = {
-							{	-- Show Me Your Moves!
-								["achievementID"] = 6455,	-- Show Me Your Moves!
-							},
+							ach(6455),    -- Show Me Your Moves!
 							i(167050),	-- Mogu Statue (PET!)
 							i(138804),	-- Illusion: Colossus
 							i(86148),	-- Tihan, Scepter of the Sleeping Emperor
@@ -469,12 +457,7 @@ _.Instances = { tier(MOP_TIER, {
 							59915,	-- Jasper Guardian
 						},
 						["g"] = {
-							{	-- Heroic: Stone Guard
-								["achievementID"] = 6719,	-- Heroic: Stone Guard
-							},
-							{	-- Must Love Dogs
-								["achievementID"] = 6823,	-- Must Love Dogs
-							},
+							ach(6719),	-- Heroic: Stone Guard
 							i(167047),	-- Stoneclaw (PET!)
 							i(87012),	-- Dagger of the Seven Stars
 							i(87020),	-- Sixteen-Fanged Crown
@@ -495,34 +478,7 @@ _.Instances = { tier(MOP_TIER, {
 					e(689, {	-- Feng the Accursed
 						["crs"] = { 60009 },	-- Feng the Accursed
 						["g"] = {
-							{	-- Heroic: Feng the Accursed
-								["achievementID"] = 6720,	-- Heroic: Feng the Accursed
-							},
-							{	-- Anything You Can Do, I Can Do Better...
-								["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-								["groups"] = {
-									{	-- Arcane Resonance
-										["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-										["criteriaID"] = 5,	-- Arcane Resonance
-									},
-									{	-- Arcane Velocity
-										["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-										["criteriaID"] = 4,	-- Arcane Velocity
-									},
-									{	-- Epicenter
-										["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-										["criteriaID"] = 1,	-- Epicenter
-									},
-									{	-- Lightning Fists
-										["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-										["criteriaID"] = 2,	-- Lightning Fists
-									},
-									{	-- Wildfire Spark
-										["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-										["criteriaID"] = 3,	-- Wildfire Spark
-									},
-								},
-							},
+							ach(6720),	-- Heroic: Feng the Accursed
 							i(89425),	-- Fan of Fiery Winds
 							i(87029),	-- Hood of Cursed Dreams
 							i(87024),	-- Nullification Greathelm
@@ -542,12 +498,7 @@ _.Instances = { tier(MOP_TIER, {
 					e(682, {	-- Gara'jal the Spiritbinder
 						["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
 						["g"] = {
-							{	-- Heroic: Gara'jal the Spiritbinder
-								["achievementID"] = 6721,	-- Heroic: Gara'jal the Spiritbinder
-							},
-							{	-- Sorry, Were You Looking for This?
-								["achievementID"] = 7056,	-- Sorry, Were You Looking for This?
-							},
+							ach(6721),    -- Heroic: Gara'jal the Spiritbinder
 							i(167048),	-- Wayward Spirit (PET!)
 							i(87032),	-- Gara'kal, Fist of the Spiritbinder
 							i(87039),	-- Eye of the Ancient Spirit
@@ -572,12 +523,7 @@ _.Instances = { tier(MOP_TIER, {
 							60701,	-- Zian of the Endless Shadow
 						},
 						["g"] = {
-							{	-- Heroic: Four Kings
-								["achievementID"] = 6722,	-- Heroic: Four Kings
-							},
-							{	-- Getting Hot In Here
-								["achievementID"] = 6687,	-- Getting Hot In Here
-							},
+							ach(6722),	-- Heroic: Four Kings
 							i(87046),	-- Screaming Tiger, Qiang's Unbreakable Polearm
 							i(87050),	-- Steelskin, Qiang's Impervious Shield
 							i(87051),	-- Hood of Blind Eyes
@@ -594,18 +540,11 @@ _.Instances = { tier(MOP_TIER, {
 							i(87055),	-- Meng's Treads of Insanity
 						},
 					}),
-					{	-- And... It's Good!
-						["achievementID"] = 7933,	-- And... It's Good!
-					},
+					ach(7933),    -- And... It's Good!
 					e(726, {	-- Elegon
 						["crs"] = { 60410 },	-- Elegon
 						["g"] = {
-							{	-- Heroic: Elegon
-								["achievementID"] = 6723,	-- Heroic: Elegon
-							},
-							{	-- Straight Six
-								["achievementID"] = 6686,	-- Straight Six
-							},
+							ach(6723),	-- Heroic: Elegon
 							i(87777),	-- Astral Cloud Serpent (MOUNT!)
 							i(167049),	-- Celestial Gift (PET!)
 							i(87061),	-- Starshatter
@@ -630,18 +569,10 @@ _.Instances = { tier(MOP_TIER, {
 							60399,	-- Qin-xi <Emperor's Closed Fist>
 						},
 						["g"] = {
-							{	-- Heroic: Will of the Emperor
-								["achievementID"] = 6724,	-- Heroic: Will of the Emperor
-								["g"] = {
-									{	-- , Delver of the Vaults
-										["titleID"] = 204,	-- , Delver of the Vaults
-									},
-								},
-							},
+							ach(6724, {	-- Heroic: Will of the Emperor
+								title(204),	-- , Delver of the Vaults
+							}),
 							ach(6675),	-- Heroic: Will of the Emperor Guild Run
-							{	-- Show Me Your Moves!
-								["achievementID"] = 6455,	-- Show Me Your Moves!
-							},
 							un(REMOVED_FROM_GAME, ach(6680)),	-- Realm First! Will of the Emperor
 							i(167050),	-- Mogu Statue (PET!)
 							i(138804),	-- Illusion: Colossus

@@ -1,16 +1,5 @@
-10.0.7.47910
-ill(6786),	-- Primal Storm
 10.1.0.48661
 ill(6836),	-- Shadow Flame
 
 
-
-
-Missing in IllusionDB.lua
-
-9.0.1.34365
-ill(1894),	-- Icy Chill \\ Icy Weapon
-10.0.7.47910
-ill(6786),	-- Primal Storm
-10.1.0.48661
-ill(6836),	-- Shadow Flame
+Nothing is Missing in IllusionDB.lua! Good Work!

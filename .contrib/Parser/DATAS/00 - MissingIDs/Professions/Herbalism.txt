@@ -152,9 +152,3 @@ r(298143),	-- Zin'anthid
 r(298144),	-- Zin'anthid
 9.0.1.33978
 r(309780),	-- Herb Gathering
-10.1.0.48480
-r(405123),	-- Lambent Hochenblume
-r(405124),	-- Lambent Bubble Poppy
-r(405126),	-- Lambent Saxifrage
-r(405127),	-- Lambent Writhebark
-r(405134),	-- Overload Lambent Herb

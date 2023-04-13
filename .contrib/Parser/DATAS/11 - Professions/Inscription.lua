@@ -1064,6 +1064,17 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
 				["coord"] = { 43.2, 43.2, AZSUNA },
 			}),
+			q(39940, {	-- Runes of Power
+				["sourceQuests"] = {
+					40061,	-- To Know Your Enemy (DH)
+					39939,	-- Scribal Knowledge (non-DH)
+				},
+				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+				["g"] = {
+					r(192850),	-- Glyph of Crackling Flames
+				},
+			}),
 			q(40063, {	-- Control is Key (DH)
 				["classes"] = { DEMONHUNTER },
 				["sourceQuests"] = { 40061 },	-- To Know Your Enemy (DH)
@@ -1075,17 +1086,6 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["sourceQuests"] = { 39939 },	-- Scribal Knowledge (non-DH)
 				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
 				["coord"] = { 43.2, 43.2, AZSUNA },
-			}),
-			q(39940, {	-- Runes of Power
-				["sourceQuests"] = {
-					40063,	-- Control is Key (DH)
-					39941,	-- Control is Key (non-DH)
-				},
-				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
-				["coord"] = { 43.2, 43.2, AZSUNA },
-				["g"] = {
-					r(192850),	-- Glyph of Crackling Flames
-				},
 			}),
 			q(39943, {	-- The Burdens of Hunting
 				["sourceQuests"] = {

@@ -699,11 +699,6 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 }))));
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(PROFESSIONS, {
-		prof(ENCHANTING, {
-			tier(CATA_TIER, {
-				i(72070),	-- Enchant Gloves - Assault
-			}),
-		}),
 		prof(JEWELCRAFTING, {
 			tier(CATA_TIER, {
 				i(52107),	-- Resolute Hessonite

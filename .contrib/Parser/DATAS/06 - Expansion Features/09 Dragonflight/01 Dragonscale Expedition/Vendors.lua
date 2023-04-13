@@ -551,6 +551,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 							{ "i", AWAKENED_FIRE, 1 },
 						},
 					}),
+					i(203353, {	-- Winding Slitherdrake: Red Scales (DM!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 400 },
+							{ "i", AWAKENED_FIRE, 1 },
+						},
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 				},
 			}),
 		}),

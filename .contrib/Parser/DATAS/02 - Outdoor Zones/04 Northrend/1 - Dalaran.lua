@@ -3825,9 +3825,9 @@ root(ROOTS.Zones, {
 					n(VENDORS, {
 						n(29535, {	-- Alchemist Cinesra
 							["coord"] = { 63.2, 11.4, NORTHREND_THE_UNDERBELLY },
-							["sym"] = {
-								{"select", "itemID", 4565 },	-- Simple Dagger
-							},
+							["sym"] = {{"select","itemID",
+								4565,    -- Simple Dagger
+							}},
 						}),
 						n(30885, {	-- Blazik Fireclaw <Hateful Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+] / Blazik Fireclaw <Water Vendor> [WRATH]
 							["coord"] = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },
@@ -6526,13 +6526,13 @@ root(ROOTS.Zones, {
 							i(44654),	-- Dalaran Spear
 						},
 					}),
-					n(32253, {	-- Kyunghee 
+					n(32253, {	-- Kyunghee
 						["coord"] = { 71.6, 31.8, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
-						["sym"] = {
-							{"select", "itemID", 2523 },    -- Bullova
-							{"select", "itemID", 2531 },	-- Great Axe
-						},
+						["sym"] = {{"select","itemID",
+							2523,	-- Bullova
+							2531,	-- Great Axe
+						}},
 						["groups"] = {
 							i(2522),	-- Crescent Axe
 							i(2530),	-- Francisca

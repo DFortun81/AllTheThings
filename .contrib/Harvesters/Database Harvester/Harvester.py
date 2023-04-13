@@ -198,15 +198,18 @@ def create_missing_recipes() -> None:
                 set(raw_lines) - set(get_existing_ids(Recipes)) - set(excluded_recipes),
                 key=raw_lines.index,
             )
-            difference = remove_empty_builds(difference)
-            missing_file.writelines(difference)
-            if not (difference := get_itemdb_difference(profession, raw_lines)):
+            if (difference := remove_empty_builds(difference)):
+                missing_file.writelines(difference)
+            else:
+                missing_file.write("Good Work! Nothing to do here!")
+            if not (difference := get_itemdb_difference(profession, raw_lines, excluded_recipes)):
+                missing_file.write(f"\n\nNothing is Missing in {profession}ItemDB.lua! Good Work!")
                 continue
             missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
             missing_file.writelines(difference)
 
 
-def get_itemdb_difference(profession: str, raw_lines: list[str]) -> list[str]:
+def get_itemdb_difference(profession: str, raw_lines: list[str], excluded_recipes: list[str]) -> list[str]:
     itemdb_list = list[str]()
     itemdb_path = Path(
         DATAS_FOLDER,
@@ -223,7 +226,7 @@ def get_itemdb_difference(profession: str, raw_lines: list[str]) -> list[str]:
                     line = ""
                 line = remove_non_digits(line)
                 itemdb_list.append(line + "\n")
-            difference = sorted(set(raw_lines) - set(itemdb_list), key=raw_lines.index)
+            difference = sorted(set(raw_lines) - set(itemdb_list) - set(excluded_recipes), key=raw_lines.index)
             difference = remove_empty_builds(difference)
             return difference
     except FileNotFoundError:
@@ -250,8 +253,10 @@ def create_missing_file(thing: type[Thing]) -> None:
             set(raw_ids) - set(get_existing_ids(thing)) - set(excluded_ids),
             key=raw_ids.index,
         )
-        difference = remove_empty_builds(difference)
-        missing_file.writelines(difference)
+        if (difference := remove_empty_builds(difference)):
+            missing_file.writelines(difference)
+        else:
+            missing_file.write("Good Work! Nothing to do here!")
         if thing.db_path:
             existing_things = list[str]()
             with open(thing.db_path) as db_file:
@@ -263,6 +268,7 @@ def create_missing_file(thing: type[Thing]) -> None:
                     key=raw_ids.index,
                 )
                 if not (difference := remove_empty_builds(difference)):
+                    missing_file.write(f"\n\nNothing is Missing in {thing.db_path.name}! Good Work!")
                     return
                 missing_file.write(f"\n\n\n\nMissing in {thing.db_path.name}\n\n")
                 missing_file.writelines(difference)
@@ -524,7 +530,7 @@ def give_name_item() -> None:
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-# add_latest_data("10.1.0.48898", "PTR1")
+# add_latest_data("10.1.0.49092", "PTR1")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()

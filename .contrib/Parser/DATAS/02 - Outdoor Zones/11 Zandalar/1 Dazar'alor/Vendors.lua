@@ -5,14 +5,17 @@
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(THE_GREAT_SEAL, {
 		n(VENDORS, {
-			n(141954, {	-- Arbo 
+			n(141954, {	-- Arbo
 				["coord"] = { 43.8, 24.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["sym"] = {
-					{"select", "itemID", 2531 },    -- Great Axe
-					{"select", "itemID", 15811 },    -- Heavy Spear
-					{"select", "itemID", 8177 },    -- Practice Sword
-					{"select", "itemID", 15810 },    -- Short Spear
+				["sym"] = {{"select","itemID",
+					2531,	-- Great Axe
+					15811,	-- Heavy Spear
+					15810,	-- Short Spear
+				}},
+				["g"] = {
+					i(8177),	-- Practice Sword
+					i(49395),	-- Rigging Slicer
 				},
 			}),
 			n(132153, {	-- "Black Eye" Zenru
@@ -30,12 +33,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			n(128078, {	-- Bri'tani <Spears>
 				["coord"] = { 39.4, 17.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["sym"] = {
-					{"select", "itemID", 44654 },	-- Dalaran Spear
-					{"select", "itemID", 15811 },	-- Heavy Spear
-					{"select", "itemID", 15810 },	-- Short Spear
-					{"select", "itemID", 39987 },	-- Tuskarr Fishing Spear
-				},
+				["sym"] = {{"select","itemID",
+					44654,	-- Dalaran Spear
+					15811,	-- Heavy Spear
+					15810,	-- Short Spear
+					39987,	-- Tuskarr Fishing Spear
+				}},
 			}),
 			n(148923, {	-- Captain Zen'taga <Dubloons Trader>
 				["coord"] = { 44.4, 94.4, DAZARALOR },
@@ -890,14 +893,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			n(126329, {	-- Headhunter Lani
 				["coord"] = { 40.6, 16.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["sym"] = {
-					{"select", "itemID", 2531 },    -- Great Axe
-					{"select", "itemID", 15811 },    -- Heavy Spear
-					{"select", "itemID", 8177 },    -- Practice Sword
-					{"select", "itemID", 15810 },    -- Short Spear
-				},
+				["sym"] = {{"select","itemID",
+					2531,	-- Great Axe
+					15811,	-- Heavy Spear
+					8177,	-- Practice Sword
+					49395,	-- Rigging Slicer
+					15810,	-- Short Spear
+				}},
 			}),
-			n(122465, {	-- Koatini 
+			n(122465, {	-- Koatini
 				["coord"] = { 48.8, 91.0, DAZARALOR },
 				["groups"] = {
 					i(39987),	-- Tuskarr Fishing Spear
@@ -1106,16 +1110,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
-			n(131255, {	-- Rawajo
-				["coord"] = { 50.6, 11.8, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["sym"] = {
-					{"select", "itemID", 44654 },	-- Dalaran Spear
-					{"select", "itemID", 15811 },	-- Heavy Spear
-					{"select", "itemID", 15810 },	-- Short Spear
-					{"select", "itemID", 39987 },	-- Tuskarr Fishing Spear
-				},
-			}),
 			n(126330, {	-- Rakle the Wretched
 				["coord"] = { 34.7, 11.5, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -1232,14 +1226,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			n(131255, {	-- Rawajo <Spears Vendor>
 				["coord"] = { 50.6, 11.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["sym"] = {
-					{"select", "itemID", 44654 },	-- Dalaran Spear
-					{"select", "itemID", 15811 },	-- Heavy Spear
-					{"select", "itemID", 15810 },	-- Short Spear
-					{"select", "itemID", 39987 },	-- Tuskarr Fishing Spear
-				},
-				["groups"] = {
-				},
+				["sym"] = {{"select","itemID",
+					44654,	-- Dalaran Spear
+					15811,	-- Heavy Spear
+					15810,	-- Short Spear
+					39987,	-- Tuskarr Fishing Spear
+				}},
 			}),
 			n(143138, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 				["coord"] = { 55.0, 86.8, DAZARALOR },

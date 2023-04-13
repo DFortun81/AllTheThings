@@ -87,46 +87,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					},
 				}),
 			}));
-			prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
+			prof(ENCHANTING, {
 				n(193744, {	-- Soragosa <Enchanting Trainer>
 					["coord"] = { 30.8, 61.4, VALDRAKKEN },
-					["g"] = {
-						r(366255),	-- Dragon Isles Enchanting
-						r(392888),	-- Disenchant
-						r(389537),	-- Burning Writ
-						r(389292),	-- Devotion of Critical Strike
-						r(389293),	-- Devotion of Haste
-						r(389294),	-- Devotion of Mastery
-						r(389295),	-- Devotion of Versatility
-						r(389540),	-- Earthen Writ
-						r(391176),	-- Enchanted Writhebark Wand
-						r(389543),	-- Frozen Writ
-						r(391810),	-- Illusory Adornment: Air
-						r(391811),	-- Illusory Adornment: Earth
-						r(390951),	-- Illusory Adornment: Fire
-						r(391809),	-- Illusory Adornment: Frost
-						r(389191),	-- Recraft Equipment
-						r(390823),	-- Runed Draconium Rod
-						r(394189),	-- Runed Serevite Rod
-						r(391806),	-- Scepter of Spectacle: Air
-						r(391807),	-- Scepter of Spectacle: Earth
-						r(391196),	-- Scepter of Spectacle: Fire
-						r(391197),	-- Scepter of Spectacle: Frost
-						r(389542),	-- Sophic Writ
-						r(389546),	-- Wafting Writ
-						r(389297),	-- Writ of Avoidance [Bracers]
-						r(389397),	-- Writ of Avoidance [Cloak]
-						r(388930),	-- Writ of Critical Strike
-						r(389135),	-- Writ of Haste
-						r(389298),	-- Writ of Leech [Bracers]
-						r(389398),	-- Writ of Leech [Cloak]
-						r(389136),	-- Writ of Mastery
-						r(389300),	-- Writ of Speed [Bracers]
-						r(389400),	-- Writ of Speed [Cloak]
-						r(389151),	-- Writ of Versatility
-					},
+					["g"] = DF_ENCHANTING,
 				}),
-			})),
+			}),
 			prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = ENGINEERING }, {
 				n(185548, {	-- Clinkyclick Shatterboom <Engineering Trainer>
 					["coord"] = { 42.2, 48.8, VALDRAKKEN },

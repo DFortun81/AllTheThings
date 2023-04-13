@@ -1,3 +1,4 @@
+-- #if ANYCLASSIC
 profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	tier(CLASSIC_TIER, {
 		r(7411, {	-- Enchanting (Apprentice)
@@ -1377,3 +1378,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		-- #endif
 	}),
 }));
+-- #endif

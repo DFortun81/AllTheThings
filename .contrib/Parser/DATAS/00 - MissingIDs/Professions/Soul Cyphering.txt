@@ -41,3 +41,6 @@ r(335279),	-- The Maw - Pet Cosmetic - NYI
 r(335284),	-- The Maw - POI Unlock - NYI
 r(335286),	-- The Maw - Torghast Unlock - NYI
 r(335287),	-- The Maw - Consumable Power - NYI
+
+
+Nothing is Missing in Soul CypheringItemDB.lua! Good Work!

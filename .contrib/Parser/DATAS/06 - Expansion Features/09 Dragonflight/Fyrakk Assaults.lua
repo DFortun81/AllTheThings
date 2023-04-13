@@ -73,6 +73,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		}),
 		n(REWARDS, {
+			i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
 			i(204076),	-- Drake's Shadowflame Crest Fragments
 			n(BACK, {
 				i(204897),	-- Suffused Cloak

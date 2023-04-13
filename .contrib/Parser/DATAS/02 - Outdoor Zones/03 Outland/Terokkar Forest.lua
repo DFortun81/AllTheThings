@@ -1522,11 +1522,11 @@ root(ROOTS.Zones, {
 					n(18962, {	-- Bar Talet
 						["coord"] = { 49.2, 45.4, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
-						["sym"] = {
-							{"select", "itemID", 30758 },	-- Aldor Guardian Rifle
-							{"select", "itemID", 30757 },	-- Draenic Light Crossbow
-							{"select", "itemID", 30759 },	-- Mag'hari Light Recurve
-						},
+						["sym"] = {{"select","itemID",
+							30758,	-- Aldor Guardian Rifle
+							30757,	-- Draenic Light Crossbow
+							30759,	-- Mag'hari Light Recurve
+						}},
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, n(23367, {	-- Grella <Skyguard Quartermaster>
 						["coord"] = { 64.3, 66.2, TEROKKAR_FOREST },

@@ -13,8 +13,29 @@ _.Instances = { tier(CATA_TIER, {
 		},
 		["coord"] = { 47.54, 68.93, EASTERN_KINGDOMS },	-- Blackwing Descent (This is the metamap it uses, don't change!)
 		["groups"] = {
-			ach(4842),	-- Blackwing Descent
-			ach(4985),	-- Blackwing Descent Guild Run
+			n(ACHIEVEMENTS, {
+				ach(4842, {	-- Blackwing Descent
+					crit(1, {
+						["_encounter"] = { 170, NORMAL_DUNGEON },	-- Magmaw
+					}),
+					crit(2, {
+						["_encounter"] = { 169, NORMAL_DUNGEON },	-- Omnotron Defense System
+					}),
+					crit(3, {
+						["_encounter"] = { 173, NORMAL_DUNGEON },	-- Maloriak
+					}),
+					crit(4, {
+						["_encounter"] = { 171, NORMAL_DUNGEON },	-- Atramedes
+					}),
+					crit(5, {
+						["_encounter"] = { 172, NORMAL_DUNGEON },	-- Chimaeron
+					}),
+					crit(6, {
+						["_encounter"] = { 174, NORMAL_DUNGEON },	-- Nefarian's End
+					}),
+				}),
+				ach(4985),	-- Blackwing Descent Guild Run
+			}),
 			n(ZONE_DROPS, {
 				["groups"] = {
 					i(59466),	-- Ironstar's Impenetrable Cover
@@ -55,7 +76,12 @@ _.Instances = { tier(CATA_TIER, {
 					e(169, {	-- Omnotron Defense System
 						["creatureID"] = 42179,
 						["groups"] = {
-							ach(5307),	-- Achieve-a-tron
+							ach(5307, {	-- Achieve-a-tron
+								crit(1),	-- No player hit by Static Shock
+								crit(2),	-- No player hit by Poison Bomb
+								crit(3),	-- No player hit by Arcane Annihilator
+								crit(4),	-- No more than one player hit by each Flamethrower
+							}),
 							i(152966),	-- Rought-Hewn Remote (PET!)
 							i(59122),	-- Organic Lifeform Inverter
 							i(59219),	-- Power Generator Hood
@@ -163,7 +189,6 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 41570,
 						["groups"] = {
 							ach(5094),	-- Heroic: Magmaw
-							ach(5306),	-- Parasite Evening
 							i(67429),	-- Gauntlets of the Forlorn Conqueror
 							i(67430),	-- Gauntlets of the Forlorn Protector
 							i(67431),	-- Gauntlets of the Forlorn Vanquisher
@@ -185,7 +210,6 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 42179,
 						["groups"] = {
 							ach(5107),	-- Heroic: Omnotron Defense System
-							ach(5307),	-- Achieve-a-tron
 							i(152966),	-- Rought-Hewn Remote (PET!)
 							i(65081),	-- Organic Lifeform Inverter
 							i(65077),	-- Power Generator Hood
@@ -205,7 +229,6 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 41378,
 						["groups"] = {
 							ach(5108),	-- Heroic: Maloriak
-							ach(5310),	-- Aberrant Behavior
 							title(147, {	-- <Name>, Slayer of Stupid, Incompetent and Disappointing Minions
 								["collectible"] = false,
 							}),
@@ -231,7 +254,6 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 41442,
 						["groups"] = {
 							ach(5109),	-- Heroic: Atramedes
-							ach(5308),	-- Silence is Golden
 							i(65058),	-- Themios the Darkbringer
 							i(65052),	-- Kingdom's Heart
 							i(65066),	-- Helm of the Blind See
@@ -250,7 +272,6 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 43296,
 						["groups"] = {
 							ach(5115),	-- Heroic: Chimaeron
-							ach(5309),	-- Full of Sound and Fury
 							i(65064),	-- Pip's Solution Agitator
 							i(65067),	-- Burden of Mortality
 							i(65068),	-- Chaos Beast Bracers
@@ -272,7 +293,6 @@ _.Instances = { tier(CATA_TIER, {
 								title(187),	-- , Blackwing's Bane
 							}),
 							ach(5462),	-- Heroic: Nefarian Guild Run
-							ach(4849),	-- Keeping it in the Family
 							un(REMOVED_FROM_GAME, ach(5409)),	-- Realm First! Nefarian
 							i(65001),	-- Crown of the Forlorn Conqueror
 							i(65000),	-- Crown of the Forlorn Protector

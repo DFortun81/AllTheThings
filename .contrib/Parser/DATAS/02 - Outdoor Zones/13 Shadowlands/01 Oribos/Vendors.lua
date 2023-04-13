@@ -52,18 +52,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500x Valor
 						},
-						["sym"] = {
+						["sym"] = {{"select", "instanceID",
 							-- Dungeons
-							{"select", "instanceID", 1188},			-- De Other Side
-							{"select", "instanceID", 1185},			-- Halls of Atonement
-							{"select", "instanceID", 1184},			-- Mists of Tirna Scithe
-							{"select", "instanceID", 1182},			-- Necrotic Wake
-							{"select", "instanceID", 1183},			-- Plaguefall
-							{"select", "instanceID", 1189},			-- Sanguine Depths
-							{"select", "instanceID", 1186},			-- Spires of Ascension
-							{"select", "instanceID", 1194},			-- Tazavesh, the Veiled Market
-							{"select", "instanceID", 1187},			-- Theater of Pain
-
+							1188,	-- De Other Side
+							1185,	-- Halls of Atonement
+							1184,	-- Mists of Tirna Scithe
+							1182,	-- Necrotic Wake
+							1183,	-- Plaguefall
+							1189,	-- Sanguine Depths
+							1186,	-- Spires of Ascension
+							1194,	-- Tazavesh, the Veiled Market
+							1187,	-- Theater of Pain
+							},
 							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
 							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
@@ -91,18 +91,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500x Valor
 						},
-						["sym"] = {
+						["sym"] = {{"select", "instanceID",
 							-- Dungeons
-							{"select", "instanceID", 1188},			-- De Other Side
-							{"select", "instanceID", 1185},			-- Halls of Atonement
-							{"select", "instanceID", 1184},			-- Mists of Tirna Scithe
-							{"select", "instanceID", 1182},			-- Necrotic Wake
-							{"select", "instanceID", 1183},			-- Plaguefall
-							{"select", "instanceID", 1189},			-- Sanguine Depths
-							{"select", "instanceID", 1186},			-- Spires of Ascension
-							{"select", "instanceID", 1194},			-- Tazavesh, the Veiled Market
-							{"select", "instanceID", 1187},			-- Theater of Pain
-
+							1188,	-- De Other Side
+							1185,	-- Halls of Atonement
+							1184,	-- Mists of Tirna Scithe
+							1182,	-- Necrotic Wake
+							1183,	-- Plaguefall
+							1189,	-- Sanguine Depths
+							1186,	-- Spires of Ascension
+							1194,	-- Tazavesh, the Veiled Market
+							1187,	-- Theater of Pain
+							},
 							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
 							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
@@ -166,18 +166,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500x Valor
 						},
-						["sym"] = {
+						["sym"] = {{"select", "instanceID",
 							-- Dungeons
-							{"select", "instanceID", 1188},			-- De Other Side
-							{"select", "instanceID", 1185},			-- Halls of Atonement
-							{"select", "instanceID", 1184},			-- Mists of Tirna Scithe
-							{"select", "instanceID", 1182},			-- Necrotic Wake
-							{"select", "instanceID", 1183},			-- Plaguefall
-							{"select", "instanceID", 1189},			-- Sanguine Depths
-							{"select", "instanceID", 1186},			-- Spires of Ascension
-							{"select", "instanceID", 1194},			-- Tazavesh, the Veiled Market
-							{"select", "instanceID", 1187},			-- Theater of Pain
-
+							1188,	-- De Other Side
+							1185,	-- Halls of Atonement
+							1184,	-- Mists of Tirna Scithe
+							1182,	-- Necrotic Wake
+							1183,	-- Plaguefall
+							1189,	-- Sanguine Depths
+							1186,	-- Spires of Ascension
+							1194,	-- Tazavesh, the Veiled Market
+							1187,	-- Theater of Pain
+							},
 							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
 							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.

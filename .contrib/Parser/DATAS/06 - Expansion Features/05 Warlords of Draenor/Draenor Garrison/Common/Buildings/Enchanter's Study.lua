@@ -46,14 +46,14 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					n(88611, {	-- Enchanting Follower
 						["description"] = "You have to build Level 3 Enchanter's Study and hire an enchanter there in order to use these spells.",
 						["g"] = sharedData({["u"] = 15,},{	-- Not permanently learnable
-						r(173716),	-- Illusion: Agility
-						r(173717),	-- Illusion: Battlemaster
-						r(173718),	-- Illusion: Berserking
-						r(174979),	-- Illusion: Blood Draining
-						r(173720),	-- Illusion: Crusader
-						r(175076, {	-- Illusion: Earthliving
-							["classes"] = { SHAMAN },
-						}),
+							r(173716),	-- Illusion: Agility
+							r(173717),	-- Illusion: Battlemaster
+							r(173718),	-- Illusion: Berserking
+							r(174979),	-- Illusion: Blood Draining
+							r(173720),	-- Illusion: Crusader
+							r(175076, {	-- Illusion: Earthliving
+								["classes"] = { SHAMAN },
+							}),
 							r(173721),	-- Illusion: Elemental Force
 							r(173722),	-- Illusion: Executioner
 							r(173723),	-- Illusion: Fiery Weapon
@@ -84,6 +84,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 							r(175074, {	-- Illusion: Windfury
 								["classes"] = { SHAMAN },
 							}),
+							r(177355),	-- Remove Illusion
 						}),
 					}),
 					n(79821, {	-- Yukla Greenshadow [Horde]

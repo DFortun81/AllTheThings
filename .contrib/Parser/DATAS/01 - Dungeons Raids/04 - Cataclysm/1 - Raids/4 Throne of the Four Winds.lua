@@ -10,8 +10,17 @@ _.Instances = { tier(CATA_TIER, {
 		["mapID"] = 328,
 		["coord"] = { 38.37, 80.63, ULDUM },	-- Throne of the Four Winds
 		["groups"] = {
-			ach(4851),	-- Throne of the Four Winds
-			ach(4987),	-- Throne of the Four Winds Guild Run
+			n(ACHIEVEMENTS, {
+				ach(4851, {		-- Throne of the Four Winds
+					crit(1, {	-- Conclave of Wind
+						["_encounter"] = { 154, NORMAL_DUNGEON },
+					}),
+					crit(2, {	-- Al'Akir
+						["_encounter"] = { 155, NORMAL_DUNGEON },
+					}),
+				}),
+				ach(4987),	-- Throne of the Four Winds Guild Run
+			}),
 			d(NORMAL_DUNGEON, {
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
@@ -79,7 +88,6 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 45871,
 						["groups"] = {
 							ach(5122),	-- Heroic: Conclave of Wind
-							ach(5304),	-- Stay Chill
 							i(152974),	-- Breezy Essence (PET!)
 							i(65374),	-- Gale Rouser Belt
 							i(65377),	-- Lightning Well Belt
@@ -97,8 +105,9 @@ _.Instances = { tier(CATA_TIER, {
 					e(155, {	-- Al'Akir
 						["creatureID"] = 46753,
 						["groups"] = {
-							ach(5305),	-- Four Play
-							ach(5123),	-- Heroic: Al'Akir
+							ach(5123, {	-- Heroic: Al'Akir
+								title(151),	-- of the Four Winds
+							}),
 							ach(5463),	-- Heroic: Al'Akir Guild Run
 							un(REMOVED_FROM_GAME, ach(5410)),	-- Realm First! Al'Akir
 							i(65001),	-- Crown of the Forlorn Conqueror

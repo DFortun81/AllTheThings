@@ -13,30 +13,30 @@ _.Zones =
 					["coord"] = { 42.2, 58.8, BROKEN_SHORE },
 					["g"] = {
 						i(157830, {	-- Legionfall Spoils
-							["sym"] = {
-								{"select", "itemID", 147216},	-- Dauntless Hood
-								{"select", "itemID", 147221},	-- Dauntless Choker
-								{"select", "itemID", 147218},	-- Dauntless Spaulders
-								{"select", "itemID", 147222},	-- Dauntless Cloak
-								{"select", "itemID", 147213},	-- Dauntless Tunic
-								{"select", "itemID", 147212},	-- Dauntless Bracers
-								{"select", "itemID", 147215},	-- Dauntless Gauntlets
-								{"select", "itemID", 147219},	-- Dauntless Girdle
-								{"select", "itemID", 147217},	-- Dauntless Leggings
-								{"select", "itemID", 147214},	-- Dauntless Treads
-								{"select", "itemID", 147220},	-- Dauntless Ring
-								{"select", "itemID", 147223},	-- Dauntless Trinket
-							},
+							["sym"] = {{"select","itemID",
+								147216,	-- Dauntless Hood
+								147221,	-- Dauntless Choker
+								147218,	-- Dauntless Spaulders
+								147222,	-- Dauntless Cloak
+								147213,	-- Dauntless Tunic
+								147212,	-- Dauntless Bracers
+								147215,	-- Dauntless Gauntlets
+								147219,	-- Dauntless Girdle
+								147217,	-- Dauntless Leggings
+								147214,	-- Dauntless Treads
+								147220,	-- Dauntless Ring
+								147223,	-- Dauntless Trinket
+							}},
 						}),
 						un(REMOVED_FROM_GAME, i(154910, {	-- Legionfall Spoils
-							["sym"] = {
-								{"select", "itemID", 157830},	-- Legionfall Spoils
-							},
+							["sym"] = {{"select","itemID",
+								157830,    -- Legionfall Spoils
+							}},
 						})),
 						un(REMOVED_FROM_GAME, i(152649, {	-- Legionfall Spoils
-							["sym"] = {
-								{"select", "itemID", 157830},	-- Legionfall Spoils
-							},
+							["sym"] = {{"select","itemID",
+								157830,    -- Legionfall Spoils
+							}},
 						})),
 					},
 				}),

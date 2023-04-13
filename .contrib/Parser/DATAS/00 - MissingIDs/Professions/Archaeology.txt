@@ -248,3 +248,6 @@ r(196483),	-- Orb of Inner Chaos
 r(196484),	-- Houndstooth Hauberk
 8.0.1.26624
 r(278910),	-- Archaeology
+
+
+Nothing is Missing in ArchaeologyItemDB.lua! Good Work!

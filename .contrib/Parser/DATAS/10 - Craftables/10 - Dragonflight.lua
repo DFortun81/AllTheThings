@@ -528,7 +528,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			FirstCraft(71338, 371682);	-- Primal Razorstone
 			FirstCraft(71340, 371674);	-- Primal Weightstone
 			FirstCraft(71341, 371650);	-- Primal Whetstone
-			--FirstCraft(x, 408288, ADDED_10_1_0);	-- Shadowed Belt Buckle
+			--FirstCraft(x, 408288, ADDED_10_1_0);	-- Shadowed Belt Clasp
 			-- Pets
 			FirstCraft(71351, 371403);	-- Alvin The Anvil
 			-- Dragon Riding
@@ -555,9 +555,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(191940),	-- Primal Whetstone+++
 			i(191260),	-- Serevite Repair Hammer
 			i(191256),	-- Serevite Skeleton Key
-			i(205043, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Belt Buckle+
-			i(205044, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Belt Buckle++
-			i(205039, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Belt Buckle+++
+			i(205043, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Belt Clasp+
+			i(205044, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Belt Clasp++
+			i(205039, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowed Belt Clasp+++
 			i(191304),	-- Sturdy Expedition Shovel
 		}),
 		filter(REAGENTS, {

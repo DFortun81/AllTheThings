@@ -627,7 +627,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						un(REMOVED_FROM_GAME, i(105677)),	-- Hellscream's War Staff
 						un(REMOVED_FROM_GAME, i(105670)),	-- Hellscream's Warbow
 						un(REMOVED_FROM_GAME, i(105675)),	-- Hellscream's Warmace
-						
+
 						un(REMOVED_FROM_GAME, i(104899)),	-- Belt of the Broken Pact Normal
 						un(REMOVED_FROM_GAME, i(104901)),	-- Black Blood of Y'Shaarj Normal
 						un(REMOVED_FROM_GAME, i(104890)),	-- Chestguard of Relentless Tyranny Normal
@@ -1166,7 +1166,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						un(REMOVED_FROM_GAME, i(104406)),	-- Hellscream's War Staff
 						un(REMOVED_FROM_GAME, i(104399)),	-- Hellscream's Warbow
 						un(REMOVED_FROM_GAME, i(104402)),	-- Hellscream's Warmace
-						
+
 						un(REMOVED_FROM_GAME, i(103856)),	-- Belt of the Broken Pact Heroic
 						un(REMOVED_FROM_GAME, i(105397)),	-- Belt of the Broken Pact Heroic WF
 						un(REMOVED_FROM_GAME, i(102310)),	-- Black Blood of Y'Shaarj Heroic
@@ -1730,7 +1730,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						un(REMOVED_FROM_GAME, i(105690)),	-- Hellscream's War Staff
 						un(REMOVED_FROM_GAME, i(105683)),	-- Hellscream's Warbow
 						un(REMOVED_FROM_GAME, i(105688)),	-- Hellscream's Warmace
-						
+
 						un(REMOVED_FROM_GAME, i(104650)),	-- Belt of the Broken Pact Mythic
 						un(REMOVED_FROM_GAME, i(105646)),	-- Belt of the Broken Pact Mythic WF
 						un(REMOVED_FROM_GAME, i(104652)),	-- Black Blood of Y'Shaarj Mythic
@@ -3165,22 +3165,14 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						["achievementID"] = 8462,	-- Downfall
 					}),
 					ach(8511),	-- Heroic: Garrosh Hellscream Guild Run
-					ach(8679, {	-- Conqueror of Orgrimmar
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							title(211, {	-- Conqueror of Orgrimmar
-								["races"] = ALLIANCE_ONLY,
-							}),
-						},
-					}),
-					ach(8680, {	-- Liberator of Orgrimmar
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							title(212, {	-- Liberator of Orgrimmar
-								["races"] = HORDE_ONLY,
-							}),
-						},
-					}),
+					ach(8679,	-- Conqueror of Orgrimmar
+					bubbleDownSelf({["races"] = ALLIANCE_ONLY,},{
+						title(211),	-- Conqueror of Orgrimmar
+					})),
+					ach(8680, 	-- Liberator of Orgrimmar
+					bubbleDownSelf({["races"] = HORDE_ONLY,},{
+						title(212),	-- Liberator of Orgrimmar
+					})),
 					ach(8537),	-- Strike!
 					i(105858, {	-- Essence of the Cursed Conqueror
 						["classes"] = {

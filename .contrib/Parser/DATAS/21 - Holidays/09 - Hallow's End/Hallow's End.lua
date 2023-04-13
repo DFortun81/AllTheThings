@@ -1810,12 +1810,14 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 				{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
 				{ "exclude", "itemID", 20392 },	-- Exclude Gnome Female Mask?
 				{ "exclude", "itemID", 20413 },	-- Exclude Hallowed Wand - Random
-				{ "select", "itemID", 37585 },	-- Chewy Fel Taffy
-				{ "select", "itemID", 37583 },	-- G.N.E.R.D.S.
-				{ "select", "itemID", 37582 },	-- Pyroblast Cinnamon Ball
-				{ "select", "itemID", 37584 },	-- Soothing Spearmint Candy
-				{ "select", "itemID", 37606 },	-- Penny Pouch
-				{ "select", "itemID", 37604 },	-- Tooth Pick
+				{"select","itemID",
+					37585,    -- Chewy Fel Taffy
+					37583,    -- G.N.E.R.D.S.
+					37582,    -- Pyroblast Cinnamon Ball
+					37584,    -- Soothing Spearmint Candy
+					37606,    -- Penny Pouch
+					37604,    -- Tooth Pick
+				},
 			},
 			-- #endif
 			-- Minimum level that can queue for event
@@ -4278,8 +4280,10 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 					{ "exclude", "itemID", 20393, 34077 },	-- Treat Bag & Crudely Wrapped Gift
 					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
 					{ "finalize" },	-- Push the processed items on to the finalized stack and ignore further queries on them.
-					{ "select", "itemID", 33292 },	-- Hallowed Helm
-					{ "select", "itemID", 33154 },	-- Sinister Squashling (PET!)
+					{"select","itemID",
+						33292,    -- Hallowed Helm
+						33154,    -- Sinister Squashling (PET!)
+					},
 				},
 				-- #endif
 				["groups"] = {
@@ -4314,8 +4318,10 @@ root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
 					{ "exclude", "itemID", 20413 },	-- Exclude Hallowed Wand - Random
 					{ "finalize" },	-- Push the processed items on to the finalized stack and ignore further queries on them.
-					{ "select", "itemID", 33292 },	-- Hallowed Helm
-					{ "select", "itemID", 33154 },	-- Sinister Squashling (PET!)
+					{"select","itemID",
+						33292,    -- Hallowed Helm
+						33154,    -- Sinister Squashling (PET!)
+					},
 					-- #else
 					-- Before 4.2.0 these bags were super boring.
 					{ "select", "itemID", 37585, 37583, 37582, 37584 },	-- G.N.E.R.D.S., Pyroblast Cinnamon Ball, Soothing Spearmint Candy, and Chewy Fel Taffy

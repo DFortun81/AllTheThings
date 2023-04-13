@@ -1339,9 +1339,6 @@ fp(2741),	-- Skytop Lookout (QD), The Waking Shores
 fp(2752),	-- Ruby Lifeshrine, The Waking Shores
 fp(2770),	-- Brackenhide Outskirts, The Azure Span
 fp(2771),	-- Emerald Gardens, Ohn'ahran Plains
-fp(2773),	-- Azure Archives, Azure Span
-fp(2774),	-- Camp Antonidas, Azure Span
-fp(2775),	-- Iskaara, Azure Span
 fp(2776),	-- Life Pools - top to bottom, Waking Shores - Begin
 fp(2777),	-- Life Pools - top to bottom, Waking Shores - End
 fp(2778),	-- Dragonscale Basecamp (QD), The Waking Shores
@@ -1349,39 +1346,10 @@ fp(2779),	-- Wingrest Embassy (QD), The Waking Shores
 fp(2780),	-- 10.0 Explorers - Travel Network - Hub
 fp(2782),	-- Quest Path 8851: 10.0 Plains - Emerald Hub - Taxi Down to Portal Grove (RMV)
 fp(2783),	-- Quest Path 8852: 10.0 Plains - Emerald Hub - Taxi Up to Shady Snctuary (RMV)
-fp(2784),	-- Camp Nowhere, Azure Span
-fp(2786),	-- Rhonin's Shield, Azure Span \\ Ronin's Shield, Azure Span
-fp(2787),	-- Cobalt Assembly, Azure Span
-fp(2788),	-- Theron's Watch, Azure Span
-fp(2789),	-- Three-Falls Lookout, Azure Span
-fp(2790),	-- Timberstep Outpost, Ohn'ahran Plains
-fp(2792),	-- Maruukai, Ohn'ahran Plains
-fp(2793),	-- Forkriver Crossing, Ohn'ahran Plains
-fp(2794),	-- Teerakai, Ohn'ahran Plains
-fp(2795),	-- Broadhoof Outpost, Ohn'ahran Plains
-fp(2796),	-- Shady Sanctuary, Ohn'ahran Plains
-fp(2797),	-- Emberwatch, Ohn'ahran Plains
-fp(2798),	-- Pinewood Post, Ohn'ahran Plains
-fp(2799),	-- Rusza'thar Reach, Ohn'ahran Plains
-fp(2800),	-- Uktulut Outpost, The Waking Shores \\ Apex Canopy, The Waking Shores
-fp(2801),	-- Apex Observatory, The Waking Shores
-fp(2802),	-- Obsidian Throne, The Waking Shores
-fp(2803),	-- Uktulut Pier, The Waking Shores
-fp(2804),	-- Uktulut Backwater, The Waking Shores
 fp(2805),	-- Wingrest Embassy, The Waking Shores
 fp(2806),	-- Life Vault Ruins, The Waking Shores
 fp(2807),	-- Ruby Life Pools, The Waking Shores
-fp(2808),	-- Obsidian Bulwark, The Waking Shores
-fp(2809),	-- Dragonscale Basecamp, The Waking Shores
-fp(2810),	-- Valdrakken, Thaldraszus
-fp(2811),	-- Gelikyr Post, Thaldraszus
-fp(2812),	-- Temporal Conflux, Thaldraszus
-fp(2813),	-- Algeth'era, Thaldraszus
-fp(2814),	-- Veiled Ossuary, Thaldraszus
-fp(2815),	-- Garden Shrine, Thaldraszus
-fp(2816),	-- Shifting Sands, Thaldraszus
 fp(2817),	-- Skytop Observatory, The Waking Shores
-fp(2818),	-- Vault of the Incarnates, Thaldraszus
 10.0.0.44707
 fp(2820),	-- Quest Path 9123: 10.0 Plains - Merithra's Watch - Taxi Down to Shady Sanctuary (RMV)
 fp(2821),	-- Quest Path 9124: 10.0 Plains - Emerald Hub - Taxi Up to Merithra's Watch (RMV)
@@ -1389,19 +1357,10 @@ fp(2822),	-- Quest Path 9125: 10.0 Plains - Emerald Hub - Taxi to Lunedane (RMV)
 fp(2823),	-- Quest Path 9126: 10.0 Plains - Lunedane - Taxi to Shady Sanctuary (RMV)
 10.0.0.44795
 fp(2824),	-- Quest Path 9147: 10.0 Plains - Emerald Hub - Taxi to Lunedane - PERSONAL (RMV)
-fp(2825),	-- Ohn'iri Springs, Ohn'ahran Plains
 10.0.0.44895
 fp(2832),	-- Cobalt Assembly, The Azure Span
 10.0.0.44999
-fp(2834),	-- Eon's Fringe, Thaldraszus
 fp(2835),	-- [Hidden] 10.0 Travel Network - Destination Input
-fp(2836),	-- Algeth'era, Thaldraszus
-fp(2837),	-- Vakthros, Azure Span
-fp(2838),	-- Cobalt Assembly, Azure Span
-fp(2839),	-- Rusza'thar Reach, Ohn'ahran Plains
-fp(2840),	-- Shady Sanctuary, Ohn'ahran Plains \\ Emerald Gardens, Ohn'ahran Plains
-fp(2841),	-- Skytop Observatory, The Waking Shores
-fp(2842),	-- Rubyscale Outpost, The Waking Shores \\ Dragonscale Basecamp, The Waking Shores
 fp(2843),	-- [Hidden] 10.0 Travel Network - Destination Output
 10.0.2.46259
 fp(2847),	-- Maruukai, The Nokhud Offensive
@@ -1410,11 +1369,8 @@ fp(2849),	-- The Battle of Spears, The Nokhud Offensive
 fp(2850),	-- Teerakai, The Nokhud Offensive \\ The Eternal Kurgans, The Nokhud Offensive
 fp(2851),	-- Ohn'iri Springs, The Nokhud Offensive
 10.0.7.47910
-fp(2855),	-- Morqut Village, The Forbidden Reach
 fp(2856),	-- Quest Path 9315: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Up - EJC
 fp(2857),	-- Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC
-10.0.7.48076
-fp(2862),	-- Morqut Islet, Forbidden Reach
 10.1.0.48480
 fp(2860),	-- 10.1 UG - Campaign - Ch6 - Aberrus Upper Platform (SMART)
 fp(2863),	-- Loamm, Zaralek Cavern

@@ -50,9 +50,7 @@ _.Instances = { tier(MOP_TIER, {
 				})),
 				cr(56877, e(649, {	-- Raigonn
 					ach(10010),	-- Gate of the Setting Sun
-					{	-- Mantid Swarm
-						["achievementID"] = 6945,	-- Mantid Swarm
-					},
+					ach(6945),	-- Mantid Swarm
 					i(144101),	-- Carapace Breaker
 					i(144218),	-- Klatith, Fangs of the Swarm
 					i(144140),	-- Impervious Carapace
@@ -114,9 +112,7 @@ _.Instances = { tier(MOP_TIER, {
 						ach(10010),	-- Gate of the Setting Sun
 						ach(6759),	-- Heroic: Gate of the Setting Sun
 						ach(6768),	-- Heroic: Gate of the Setting Sun Guild Run
-						{	-- Mantid Swarm
-							["achievementID"] = 6945,	-- Mantid Swarm
-						},
+						ach(6945),	-- Mantid Swarm
 						i(144101),	-- Carapace Breaker
 						i(144218),	-- Klatith, Fangs of the Swarm
 						i(144140),	-- Impervious Carapace

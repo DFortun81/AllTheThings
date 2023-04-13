@@ -42,9 +42,11 @@ local SymPvPFilterDouble = function(HeaderID, FilterID, Extra)
 		{"merge"},								-- Merge the Queue
 	}
 	if Extra then
+		local extraCmd = {"select", "itemID" };
 		for _,v in ipairs(Extra) do
-			table.insert(SymLink, {"select", "itemID", v })
+			table.insert(extraCmd, v)
 		end
+		table.insert(SymLink, extraCmd)
 	end
 	return SymLink
 end
@@ -77,9 +79,11 @@ local SymPvPClass = function(ClassID, Extra)
 		{"merge"},								-- Merge the Queue
 	}
 	if Extra then
+		local extraCmd = {"select", "itemID" };
 		for _,v in ipairs(Extra) do
-			table.insert(SymLink, {"select", "itemID", v })
+			table.insert(extraCmd, v)
 		end
+		table.insert(SymLink, extraCmd)
 		table.insert(SymLink, {"not", "bonusID", 7532, 7551 })
 	end
 	return SymLink

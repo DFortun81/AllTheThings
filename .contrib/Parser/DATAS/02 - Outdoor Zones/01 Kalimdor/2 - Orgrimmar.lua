@@ -5180,48 +5180,48 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.8, 44.8, ORGRIMMAR },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 2142 },    -- Cuirboulli Belt
-						{"select", "itemID", 2143 },    -- Cuirboulli Boots
-						{"select", "itemID", 2144 },    -- Cuirboulli Bracers
-						{"select", "itemID", 2145 },    -- Cuirboulli Gloves
-						{"select", "itemID", 2146 },    -- Cuirboulli Pants
-						{"select", "itemID", 2141 },    -- Cuirboulli Vest
-						{"select", "itemID", 2435 },    -- Embroidered Armor
-						{"select", "itemID", 3587 },    -- Embroidered Belt
-						{"select", "itemID", 2438 },    -- Embroidered Boots
-						{"select", "itemID", 3588 },    -- Embroidered Bracers
-						{"select", "itemID", 2440 },    -- Embroidered Gloves
-						{"select", "itemID", 3892 },    -- Embroidered Hat
-						{"select", "itemID", 2437 },    -- Embroidered Pants
-						{"select", "itemID", 2160 },    -- Padded Armor
-						{"select", "itemID", 3591 },    -- Padded Belt
-						{"select", "itemID", 2156 },    -- Padded Boots
-						{"select", "itemID", 3592 },    -- Padded Bracers
-						{"select", "itemID", 2158 },    -- Padded Gloves
-						{"select", "itemID", 2159 },    -- Padded Pants
-						{"select", "itemID", 2471 },    -- Reinforced Leather Belt
-						{"select", "itemID", 2473 },    -- Reinforced Leather Boots
-						{"select", "itemID", 2474 },    -- Reinforced Leather Bracers
-						{"select", "itemID", 3893 },    -- Reinforced Leather Cap
-						{"select", "itemID", 2475 },    -- Reinforced Leather Gloves
-						{"select", "itemID", 2472 },    -- Reinforced Leather Pants
-						{"select", "itemID", 2470 },    -- Reinforced Leather Vest
-						{"select", "itemID", 3593 },    -- Russet Belt
-						{"select", "itemID", 2432 },    -- Russet Boots
-						{"select", "itemID", 3594 },    -- Russet Bracers
-						{"select", "itemID", 2434 },    -- Russet Gloves
-						{"select", "itemID", 3889 },    -- Russet Hat
-						{"select", "itemID", 2431 },    -- Russet Pants
-						{"select", "itemID", 2429 },    -- Russet Vest
-						{"select", "itemID", 2464 },    -- Studded Belt
-						{"select", "itemID", 2467 },    -- Studded Boots
-						{"select", "itemID", 2468 },    -- Studded Bracers
-						{"select", "itemID", 2463 },    -- Studded Doublet
-						{"select", "itemID", 2469 },    -- Studded Gloves
-						{"select", "itemID", 3890 },    -- Studded Hat
-						{"select", "itemID", 2465 },    -- Studded Pants
-					},
+					["sym"] = {{"select","itemID",
+						2142,    -- Cuirboulli Belt
+						2143,    -- Cuirboulli Boots
+						2144,    -- Cuirboulli Bracers
+						2145,    -- Cuirboulli Gloves
+						2146,    -- Cuirboulli Pants
+						2141,    -- Cuirboulli Vest
+						2435,    -- Embroidered Armor
+						3587,    -- Embroidered Belt
+						2438,    -- Embroidered Boots
+						3588,    -- Embroidered Bracers
+						2440,    -- Embroidered Gloves
+						3892,    -- Embroidered Hat
+						2437,    -- Embroidered Pants
+						2160,    -- Padded Armor
+						3591,    -- Padded Belt
+						2156,    -- Padded Boots
+						3592,    -- Padded Bracers
+						2158,    -- Padded Gloves
+						2159,    -- Padded Pants
+						2471,    -- Reinforced Leather Belt
+						2473,    -- Reinforced Leather Boots
+						2474,    -- Reinforced Leather Bracers
+						3893,    -- Reinforced Leather Cap
+						2475,    -- Reinforced Leather Gloves
+						2472,    -- Reinforced Leather Pants
+						2470,    -- Reinforced Leather Vest
+						3593,    -- Russet Belt
+						2432,    -- Russet Boots
+						3594,    -- Russet Bracers
+						2434,    -- Russet Gloves
+						3889,    -- Russet Hat
+						2431,    -- Russet Pants
+						2429,    -- Russet Vest
+						2464,    -- Studded Belt
+						2467,    -- Studded Boots
+						2468,    -- Studded Bracers
+						2463,    -- Studded Doublet
+						2469,    -- Studded Gloves
+						3890,    -- Studded Hat
+						2465,    -- Studded Pants
+					}},
 					["groups"] = {
 						i(12256, {	-- Cindercloth Leggings
 							["isLimited"] = true,
@@ -5313,21 +5313,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3331, {	-- Kareth
 					["coord"] = { 46.8, 63.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 2520 },	-- Broadsword
-						{"select", "itemID", 1198 },	-- Claymore
-						{"select", "itemID", 851 },		-- Cutlass
-						{"select", "itemID", 922 },		-- Dacian Falx
-						{"select", "itemID", 2024 },	-- Espadon
-						{"select", "itemID", 2528 },	-- falchion
-						{"select", "itemID", 2207 },	-- Jambiya
-						{"select", "itemID", 2209 },	-- Kris
-						{"select", "itemID", 923 },		-- Longsword
-						{"select", "itemID", 2526 },	-- Main Gauche
-						{"select", "itemID", 2208 },	-- Poniad
-						{"select", "itemID", 2534 },	-- Rondel
-						{"select", "itemID", 2027 },	-- Scimitar
-					},
+					["sym"] = {{"select","itemID",
+						2520,    -- Broadsword
+						1198,    -- Claymore
+						851,    -- Cutlass
+						922,    -- Dacian Falx
+						2024,    -- Espadon
+						2528,    -- falchion
+						2207,    -- Jambiya
+						2209,    -- Kris
+						923,    -- Longsword
+						2526,    -- Main Gauche
+						2208,    -- Poniad
+						2534,    -- Rondel
+						2027,    -- Scimitar
+					}},
 				}),
 				n(5816, {	-- Katis
 					["coord"] = { 45.8, 57.6, ORGRIMMAR },
@@ -5409,13 +5409,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3360, {	-- Koru
 					["coord"] = { 76.2, 37.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 1197 },    -- Giant Mace
-						{"select", "itemID", 2030 },    -- Gnarled Staff
-						{"select", "itemID", 928 },    -- Long Staff
-						{"select", "itemID", 852 },    -- Mace
-						{"select", "itemID", 854 },    -- Quarter Staff
-					},
+					["sym"] = {{"select","itemID",
+						1197,    -- Giant Mace
+						2030,    -- Gnarled Staff
+						928,    -- Long Staff
+						852,    -- Mace
+						854,    -- Quarter Staff
+					}},
 					["groups"] = {
 						i(925),		-- Flail
 						i(2028),	-- Hammer
@@ -6111,9 +6111,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(46718, {	-- Moraka
 					["coord"] = { 55.8, 55.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 79740 },    -- Plain Wooden Staff
-					},
+					["sym"] = {{"select","itemID",
+						79740,    -- Plain Wooden Staff
+					}},
 				}),
 				n(3330, {	-- Muragus
 					["coord"] = { 46.0, 57.8, ORGRIMMAR },
@@ -6127,24 +6127,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.0, 77.6, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 2451 },    -- Crested Heater Shield
-						{"select", "itemID", 62260 },    -- Grunts Chain Belt
-						{"select", "itemID", 62261 },    -- Grunts Chain Boots
-						{"select", "itemID", 62262 },    -- Grunts Chain Bracers
-						{"select", "itemID", 62266 },    -- Grunts Chain Circlet
-						{"select", "itemID", 62263 },    -- Grunts Chain Gloves
-						{"select", "itemID", 62264 },    -- Grunts Chain Leggings
-						{"select", "itemID", 62265 },    -- Grunts Chain Vest
-						{"select", "itemID", 62253 },    -- Grunts Plate Armor
-						{"select", "itemID", 62254 },    -- Grunts Plate Belt
-						{"select", "itemID", 62255 },    -- Grunts Plate Boots
-						{"select", "itemID", 62256 },    -- Grunts Plate Bracers
-						{"select", "itemID", 62257 },    -- Grunts Plate Gloves
-						{"select", "itemID", 62259 },    -- Grunts Plate Helm
-						{"select", "itemID", 62258 },    -- Grunts Plate Leggings
-						{"select", "itemID", 17190 },    -- Ornate Buckler
-					},
+					["sym"] = {{"select","itemID",
+						2451,    -- Crested Heater Shield
+						62260,    -- Grunts Chain Belt
+						62261,    -- Grunts Chain Boots
+						62262,    -- Grunts Chain Bracers
+						62266,    -- Grunts Chain Circlet
+						62263,    -- Grunts Chain Gloves
+						62264,    -- Grunts Chain Leggings
+						62265,    -- Grunts Chain Vest
+						62253,    -- Grunts Plate Armor
+						62254,    -- Grunts Plate Belt
+						62255,    -- Grunts Plate Boots
+						62256,    -- Grunts Plate Bracers
+						62257,    -- Grunts Plate Gloves
+						62259,    -- Grunts Plate Helm
+						62258,    -- Grunts Plate Leggings
+						17190,    -- Ornate Buckler
+					}},
 					["groups"] = {
 						-- #if AFTER 10.0.5
 						-- Now any class and race can buy this
@@ -6235,9 +6235,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.0, 67.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { "added 4.0.3." },
-					["sym"] = {
-						{"select", "itemID", 6365 },    -- Strong Fishing Pole
-					},
+					["sym"] = {{"select","itemID",
+						6365,    -- Strong Fishing Pole
+					}},
 				}),
 				n(3317, {	-- Ollanus <Cloth Armor Merchant>
 					["coord"] = { 60.6, 58.6, ORGRIMMAR },
@@ -6446,21 +6446,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3319, {	-- Sana <Mail Armor Merchant>
 					["coord"] = { 45.6, 77.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 847 },    -- Chainmail Armor
-						{"select", "itemID", 1845 },    -- Chainmail Belt
-						{"select", "itemID", 849 },    -- Chainmail Boots
-						{"select", "itemID", 1846 },    -- Chainmail Bracers
-						{"select", "itemID", 850 },    -- Chainmail Gloves
-						{"select", "itemID", 848 },    -- Chainmail Pants
-						{"select", "itemID", 2445 },    -- Large Metal Shield
-						{"select", "itemID", 1853 },    -- Scalemail Belt
-						{"select", "itemID", 287 },    -- Scalemail Boots
-						{"select", "itemID", 1852 },    -- Scalemail Bracers
-						{"select", "itemID", 718 },    -- Scalemail Gloves
-						{"select", "itemID", 286 },    -- Scalemail Pants
-						{"select", "itemID", 285 },    -- Scalemail Vest
-					},
+					["sym"] = {{"select","itemID",
+						847,    -- Chainmail Armor
+						1845,    -- Chainmail Belt
+						849,    -- Chainmail Boots
+						1846,    -- Chainmail Bracers
+						850,    -- Chainmail Gloves
+						848,    -- Chainmail Pants
+						2445,    -- Large Metal Shield
+						1853,    -- Scalemail Belt
+						287,    -- Scalemail Boots
+						1852,    -- Scalemail Bracers
+						718,    -- Scalemail Gloves
+						286,    -- Scalemail Pants
+						285,    -- Scalemail Vest
+					}},
 					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(17187),	-- Banded Buckler
 						i(2445),	-- Large Metal Shield
@@ -7300,11 +7300,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.4, 68.6, ORGRIMMAR },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 1198 },		-- Claymore
-						{"select", "itemID", 851 },		-- Cutlass
-						{"select", "itemID", 2207 },	-- Jambiya
-					},
+					["sym"] = {{"select","itemID",
+						1198,    -- Claymore
+						851,    -- Cutlass
+						2207,    -- Jambiya
+					}},
 					["groups"] = {
 						i(1194),	-- Bastard Sword
 						i(2479),	-- Broad Axe
@@ -7379,21 +7379,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3405, {	-- Zeal'aya
 					["coord"] = { 34.6, 63.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 4565 },	-- Simple Dagger
-					},
+					["sym"] = {{"select","itemID",
+						4565,    -- Simple Dagger
+					}},
 				}),
 				n(3409, {	-- Zendo'jian <Weapon Vendor>
 					["coord"] = { 75.0, 36.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 853 },    -- Hatchet
-						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
-						{"select", "itemID", 854 },    -- Quarter Staff
-						{"select", "itemID", 3026 },    -- Reinforced Bow
-						{"select", "itemID", 1196 },    -- Tabar
-						{"select", "itemID", 2495 },    -- Walking Stick
-					},
+					["sym"] = {{"select","itemID",
+						853,    -- Hatchet
+						2507,    -- Laminated Recurve Bow
+						854,    -- Quarter Staff
+						3026,    -- Reinforced Bow
+						1196,    -- Tabar
+						2495,    -- Walking Stick
+					}},
 					["groups"] = {
 						i(926),		-- Battle Axe
 						i(2025),	-- Bearded Axe

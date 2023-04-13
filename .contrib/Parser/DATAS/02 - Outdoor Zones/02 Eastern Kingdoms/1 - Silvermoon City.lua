@@ -483,27 +483,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16631, {	-- Andra <Clothier>
 					["coord"] = { 65.2, 47.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 16059 },    -- Common Brown Shirt
-						{"select", "itemID", 3428 },    -- Common Gray Shirt
-						{"select", "itemID", 16060 },    -- Common White Shirt
-						{"select", "itemID", 837 },    -- Heavy Weave Armor
-						{"select", "itemID", 3589 },    -- Heavy Weave Belt
-						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
-						{"select", "itemID", 839 },    -- Heavy Weave Gloves
-						{"select", "itemID", 838 },    -- Heavy Weave Pants
-						{"select", "itemID", 840 },    -- Heavy Weave Shoes
-					},
+					["sym"] = {{"select","itemID",
+						16059,    -- Common Brown Shirt
+						3428,    -- Common Gray Shirt
+						16060,    -- Common White Shirt
+						837,    -- Heavy Weave Armor
+						3589,    -- Heavy Weave Belt
+						3590,    -- Heavy Weave Bracers
+						839,    -- Heavy Weave Gloves
+						838,    -- Heavy Weave Pants
+						840,    -- Heavy Weave Shoes
+					}},
 				}),
 				n(16619, {	-- Celana
 					["coord"] = { 86.0, 36.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 3027 },    -- Heavy Recurve Bow
-						{"select", "itemID", 2507 },    -- Laminated Recurve Bow
-						{"select", "itemID", 3026 },    -- Reinforced Bow
-						{"select", "itemID", 2504 },    -- Worn Shortbow
-					},
+					["sym"] = {{"select","itemID",
+						3027,    -- Heavy Recurve Bow
+						2507,    -- Laminated Recurve Bow
+						3026,    -- Reinforced Bow
+						2504,    -- Worn Shortbow
+					}},
 					["groups"] = {
 						i(2506),	-- Hornwood Recurve Bow
 						i(2505),	-- Polished Shortbow
@@ -512,9 +512,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16683, {	-- Darlia <Poison Supplies>
 					["coord"] = { 80.4, 51.0, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 4565 },	-- Simple Dagger
-					},
+					["sym"] = {{"select","itemID",
+						4565,    -- Simple Dagger
+					}},
 					["groups"] = {
 						i(24285, {	-- Crepuscular Powder
 							["cost"] = { { "g", 1500000 } },	-- 150g
@@ -562,12 +562,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16666, {	-- Feledis <Axe Vendor>
 					["coord"] = { 52.6, 63.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 2523 },    -- Bullova
-						{"select", "itemID", 2522 },    -- Crescent Axe
-						{"select", "itemID", 2530 },    -- Francisca
-						{"select", "itemID", 2531 },    -- Great Axe
-					},
+					["sym"] = {{"select","itemID",
+						2523,    -- Bullova
+						2522,    -- Crescent Axe
+						2530,    -- Francisca
+						2531,    -- Great Axe
+					}},
 				}),
 				n(16624, {	-- Gelanthis <Jewelcrafting Supplies>
 					["coord"] = { 90.8, 73.6, SILVERMOON_CITY },
@@ -593,26 +593,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16625, {	-- Keeli
 					["coord"] = { 61.2, 86.4, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 847 },    -- Chainmail Armor
-						{"select", "itemID", 1845 },    -- Chainmail Belt
-						{"select", "itemID", 849 },    -- Chainmail Boots
-						{"select", "itemID", 1846 },    -- Chainmail Bracers
-						{"select", "itemID", 850 },    -- Chainmail Gloves
-						{"select", "itemID", 848 },    -- Chainmail Pants
-						{"select", "itemID", 2398 },    -- Light Chain Armor
-						{"select", "itemID", 2399 },    -- Light Chain Belt
-						{"select", "itemID", 2401 },    -- Light Chain Boots
-						{"select", "itemID", 2402 },    -- Light Chain Bracers
-						{"select", "itemID", 2403 },    -- Light Chain Gloves
-						{"select", "itemID", 2400 },    -- Light Chain Leggings
-						{"select", "itemID", 1853 },    -- Scalemail Belt
-						{"select", "itemID", 287 },    -- Scalemail Boots
-						{"select", "itemID", 1852 },    -- Scalemail Bracers
-						{"select", "itemID", 718 },    -- Scalemail Gloves
-						{"select", "itemID", 286 },    -- Scalemail Pants
-						{"select", "itemID", 285 },    -- Scalemail Vest
-					},
+					["sym"] = {{"select","itemID",
+						847,    -- Chainmail Armor
+						1845,    -- Chainmail Belt
+						849,    -- Chainmail Boots
+						1846,    -- Chainmail Bracers
+						850,    -- Chainmail Gloves
+						848,    -- Chainmail Pants
+						2398,    -- Light Chain Armor
+						2399,    -- Light Chain Belt
+						2401,    -- Light Chain Boots
+						2402,    -- Light Chain Bracers
+						2403,    -- Light Chain Gloves
+						2400,    -- Light Chain Leggings
+						1853,    -- Scalemail Belt
+						287,    -- Scalemail Boots
+						1852,    -- Scalemail Bracers
+						718,    -- Scalemail Gloves
+						286,    -- Scalemail Pants
+						285,    -- Scalemail Vest
+					}},
 				}),
 				--[[ Crieve has to approve but these the tabards should have timelines
 				n(16610, {	-- Kredis <Tabard Vendor>
@@ -636,12 +636,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16620, {	-- Mathaleron
 					["coord"] = { 86.0, 39.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 3024 },    -- Bkp 2700 Enforcer
-						{"select", "itemID", 2511 },    -- Hunter's Boomstick
-						{"select", "itemID", 3023 },    -- Large Bore Blunderbuss
-						{"select", "itemID", 2509 },    -- Ornate Blunderbuss
-					},
+					["sym"] = {{"select","itemID",
+						3024,    -- Bkp 2700 Enforcer
+						2511,    -- Hunter's Boomstick
+						3023,    -- Large Bore Blunderbuss
+						2509,    -- Ornate Blunderbuss
+					}},
 				}),
 				n(16641, {	-- Melaris <Alchemy Supplies>
 					["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
@@ -655,29 +655,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				n(16691, {	-- Noraelath  
+				n(16691, {	-- Noraelath
 					["coord"] = { 55.6, 62.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 2371 },    -- Battered Leather Belt
-						{"select", "itemID", 2373 },    -- Battered Leather Boots
-						{"select", "itemID", 2374 },    -- Battered Leather Bracers
-						{"select", "itemID", 2375 },    -- Battered Leather Gloves
-						{"select", "itemID", 2370 },    -- Battered Leather Harness
-						{"select", "itemID", 2372 },    -- Battered Leather Pants
-						{"select", "itemID", 236 },    -- Cured Leather Armor
-						{"select", "itemID", 1849 },    -- Cured Leather Belt
-						{"select", "itemID", 238 },    -- Cured Leather Boots
-						{"select", "itemID", 1850 },    -- Cured Leather Bracers
-						{"select", "itemID", 239 },    -- Cured Leather Gloves
-						{"select", "itemID", 237 },    -- Cured Leather Pants
-						{"select", "itemID", 1843 },    -- Tanned Leather Belt
-						{"select", "itemID", 843 },    -- Tanned Leather Boots
-						{"select", "itemID", 1844 },    -- Tanned Leather Bracers
-						{"select", "itemID", 844 },    -- Tanned Leather Gloves
-						{"select", "itemID", 846 },    -- Tanned Leather Jerkin
-						{"select", "itemID", 845 },    -- Tanned Leather Pants
-					},
+					["sym"] = {{"select","itemID",
+						2371,    -- Battered Leather Belt
+						2373,    -- Battered Leather Boots
+						2374,    -- Battered Leather Bracers
+						2375,    -- Battered Leather Gloves
+						2370,    -- Battered Leather Harness
+						2372,    -- Battered Leather Pants
+						236,    -- Cured Leather Armor
+						1849,    -- Cured Leather Belt
+						238,    -- Cured Leather Boots
+						1850,    -- Cured Leather Bracers
+						239,    -- Cured Leather Gloves
+						237,    -- Cured Leather Pants
+						1843,    -- Tanned Leather Belt
+						843,    -- Tanned Leather Boots
+						1844,    -- Tanned Leather Bracers
+						844,    -- Tanned Leather Gloves
+						846,    -- Tanned Leather Jerkin
+						845,    -- Tanned Leather Pants
+					}},
 				}),
 				n(16677, {	-- Quelis <Cooking Supplies>
 					["coord"] = { 69.6, 71.2, SILVERMOON_CITY },
@@ -687,22 +687,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16678, {	-- Rahein <Blade Vendor>
 					["coord"] = { 52.6, 64.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 2520 },	-- broadsword
-						{"select", "itemID", 2528 },	-- falchion
-						{"select", "itemID", 2521 },	-- Flamberge
-						{"select", "itemID", 2526 },	-- main-gauche
-						{"select", "itemID", 2534 },	-- rondel
-						{"select", "itemID", 2529 },	-- zweihander
-					},
+					["sym"] = {{"select","itemID",
+						2520,    -- broadsword
+						2528,    -- falchion
+						2521,    -- Flamberge
+						2526,    -- main-gauche
+						2534,    -- rondel
+						2529,    -- zweihander
+					}},
 				}),
 				n(16626, {	-- Tynna
 					["coord"] = { 60.8, 86.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 2451 },    -- Crested Heater Shield
-						{"select", "itemID", 17190 },    -- Ornate Buckler
-					},
+					["sym"] = {{"select","itemID",
+						2451,    -- Crested Heater Shield
+						17190,    -- Ornate Buckler
+					}},
 					["groups"] = {
 						i(2424),    -- Brigandine Belt
 						i(2426),    -- Brigandine Boots
@@ -730,12 +730,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16637, {	-- Welethelon
 					["coord"] = { 56.2, 60.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 2527 },    -- Battle Staff
-						{"select", "itemID", 2525 },    -- War Hammer
-						{"select", "itemID", 2533 },    -- War Maul
-						{"select", "itemID", 2535 },    -- War Staff
-					},
+					["sym"] = {{"select","itemID",
+						2527,    -- Battle Staff
+						2525,    -- War Hammer
+						2533,    -- War Maul
+						2535,    -- War Staff
+					}},
 					["groups"] = {
 						i(2532),	-- Morning Star
 						i(2524),	-- Truncheon
@@ -744,22 +744,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16693, {	-- Winthren
 					["coord"] = { 60.6, 86.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 17187 },    -- Banded Buckler
-						{"select", "itemID", 2446 },    -- Kite Shield
-						{"select", "itemID", 2445 },    -- Large Metal Shield
-						{"select", "itemID", 2398 },    -- Light Chain Armor
-						{"select", "itemID", 2399 },    -- Light Chain Belt
-						{"select", "itemID", 2401 },    -- Light Chain Boots
-						{"select", "itemID", 2402 },    -- Light Chain Bracers
-						{"select", "itemID", 2403 },    -- Light Chain Gloves
-						{"select", "itemID", 2400 },    -- Light Chain Leggings
-						{"select", "itemID", 17192 },    -- Reinforced Targe
-						{"select", "itemID", 17188 },    -- Ringed Buckler
-						{"select", "itemID", 17185 },    -- Round Buckler
-						{"select", "itemID", 1202 },    -- Wall Shield
-						{"select", "itemID", 2376 },    -- Worn Heater Shield
-					},
+					["sym"] = {{"select","itemID",
+						17187,    -- Banded Buckler
+						2446,    -- Kite Shield
+						2445,    -- Large Metal Shield
+						2398,    -- Light Chain Armor
+						2399,    -- Light Chain Belt
+						2401,    -- Light Chain Boots
+						2402,    -- Light Chain Bracers
+						2403,    -- Light Chain Gloves
+						2400,    -- Light Chain Leggings
+						17192,    -- Reinforced Targe
+						17188,    -- Ringed Buckler
+						17185,    -- Round Buckler
+						1202,    -- Wall Shield
+						2376,    -- Worn Heater Shield
+					}},
 					["groups"] = {
 						i(17183),	-- Dented Buckler
 						i(1200),	-- Large Wooden Shield
@@ -827,43 +827,43 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16636, {	-- Zathanna
 					["coord"] = { 69.8, 65.8, SHATTRATH_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 5239 },    -- Blackbone Wand
-						{"select", "itemID", 5210 },    -- Burning Wand
-						{"select", "itemID", 5236 },    -- Combustible Wand
-						{"select", "itemID", 5211 },    -- Dusk Wand
-						{"select", "itemID", 5209 },    -- Gloom Wand
-						{"select", "itemID", 5347 },    -- Pestilent Wand
-						{"select", "itemID", 5238 },    -- Pitchwood Wand
-						{"select", "itemID", 5208 },    -- Smoldering Wand
-					},
+					["sym"] = {{"select","itemID",
+						5239,    -- Blackbone Wand
+						5210,    -- Burning Wand
+						5236,    -- Combustible Wand
+						5211,    -- Dusk Wand
+						5209,    -- Gloom Wand
+						5347,    -- Pestilent Wand
+						5238,    -- Pitchwood Wand
+						5208,    -- Smoldering Wand
+					}},
 				}),
 				n(16623, {	-- Zyandrel <Cloth Armor Merchant>
 					["coord"] = { 64.8, 48.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "itemID", 16059 },    -- Common Brown Shirt
-						{"select", "itemID", 3428 },    -- Common Gray Shirt
-						{"select", "itemID", 16060 },    -- Common White Shirt
-						{"select", "itemID", 837 },    -- Heavy Weave Armor
-						{"select", "itemID", 3589 },    -- Heavy Weave Belt
-						{"select", "itemID", 3590 },    -- Heavy Weave Bracers
-						{"select", "itemID", 839 },    -- Heavy Weave Gloves
-						{"select", "itemID", 838 },    -- Heavy Weave Pants
-						{"select", "itemID", 840 },    -- Heavy Weave Shoes
-						{"select", "itemID", 3597 },    -- Thick Cloth Belt
-						{"select", "itemID", 3598 },    -- Thick Cloth Bracers
-						{"select", "itemID", 203 },    -- Thick Cloth Gloves
-						{"select", "itemID", 201 },    -- Thick Cloth Pants
-						{"select", "itemID", 202 },    -- Thick Cloth Shoes
-						{"select", "itemID", 200 },    -- Thick Cloth Vest
-						{"select", "itemID", 3606 },    -- Woven Belt
-						{"select", "itemID", 2367 },    -- Woven Boots
-						{"select", "itemID", 3607 },    -- Woven Bracers
-						{"select", "itemID", 2369 },    -- Woven Gloves
-						{"select", "itemID", 2366 },    -- Woven Pants
-						{"select", "itemID", 2364 },    -- Woven Vest
-					},
+					["sym"] = {{"select","itemID",
+						16059,    -- Common Brown Shirt
+						3428,    -- Common Gray Shirt
+						16060,    -- Common White Shirt
+						837,    -- Heavy Weave Armor
+						3589,    -- Heavy Weave Belt
+						3590,    -- Heavy Weave Bracers
+						839,    -- Heavy Weave Gloves
+						838,    -- Heavy Weave Pants
+						840,    -- Heavy Weave Shoes
+						3597,    -- Thick Cloth Belt
+						3598,    -- Thick Cloth Bracers
+						203,    -- Thick Cloth Gloves
+						201,    -- Thick Cloth Pants
+						202,    -- Thick Cloth Shoes
+						200,    -- Thick Cloth Vest
+						3606,    -- Woven Belt
+						2367,    -- Woven Boots
+						3607,    -- Woven Bracers
+						2369,    -- Woven Gloves
+						2366,    -- Woven Pants
+						2364,    -- Woven Vest
+					}},
 				}),
 			}),
 		},

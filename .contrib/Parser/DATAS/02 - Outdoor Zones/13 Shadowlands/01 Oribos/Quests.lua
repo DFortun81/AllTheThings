@@ -211,6 +211,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					MALDRAXXUS,
 					REVENDRETH,
 				},
+				["_drop"] = { "isDaily" },
 			}),
 			q(62457, {	-- The Great Vault
 				["provider"] = { "n", 173350 },	-- Ba'vol

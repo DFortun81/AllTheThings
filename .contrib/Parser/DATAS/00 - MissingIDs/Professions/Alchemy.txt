@@ -45,9 +45,7 @@ r(264255),	-- Kul Tiran Alchemy
 r(265787),	-- Zandalari Alchemy
 10.1.0.48480
 r(405832),	-- Stinky Bright Potion
-r(405847),	-- Transmute: Dracothyst
 r(405879),	-- Cauldron of Extracted Putrescence
-r(406106),	-- Draconic Phial Cauldron
 
 
 
@@ -466,8 +464,3 @@ r(156591),	-- Primal Alchemy
 r(156592),	-- Alchemical Catalyst - Orchid
 r(156593),	-- Alchemical Catalyst - Lotus
 r(156606),	-- Alchemy
-10.1.0.48480
-r(405832),	-- Stinky Bright Potion
-r(405847),	-- Transmute: Dracothyst
-r(405879),	-- Cauldron of Extracted Putrescence
-r(406106),	-- Draconic Phial Cauldron

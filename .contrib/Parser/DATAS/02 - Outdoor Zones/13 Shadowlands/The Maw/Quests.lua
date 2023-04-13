@@ -390,9 +390,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
 			}),
-			n(BONUS_OBJECTIVES, {
+			n(BONUS_OBJECTIVES, sharedData({
+				["isDaily"] = true,
+			},{
 				q(59007),	-- Soul Well
-			}),
+			})),
 		})),
 		n(QUESTS, sharedData({ ["isWeekly"] = true }, {
 			q(61075, {	-- A Spark of Light

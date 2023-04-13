@@ -979,7 +979,7 @@ profession(HERBALISM, {
 			q(51404, {	-- What Happens Next
 				["provider"] = { "i", 160117 },	-- Fully Charged Lightning Pod
 				["description"] = "This can drop from |cFFFFD700Akunda's Bite|r at Level 150 Kul Tiran / Zandalari Herbalism.",
-				["sourceQuest"] = 53142,	-- Foul Harvest
+				["sourceQuest"] = 51408,	-- Giving Back to Nature
 				["requireSkill"] = HERBALISM,
 				["g"] = {
 					recipe(252413),	-- Akunda's Bite (Rank 3)

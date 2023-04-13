@@ -239,7 +239,7 @@ namespace ATT
         /// <summary>
         /// Represents the current parent group when processing the 'g' subgroup
         /// </summary>
-        private static KeyValuePair<string, object>? CurrentParentGroup { get; set; }
+        private static KeyValuePair<string, decimal>? CurrentParentGroup { get; set; }
 
         /// <summary>
         /// Represents the file currently being processed
@@ -550,8 +550,8 @@ namespace ATT
             if (data.TryGetValue("g", out List<object> groups))
             {
                 var previousParent = CurrentParentGroup;
-                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
-                    CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
+                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out decimal objKeyValue))
+                    CurrentParentGroup = new KeyValuePair<string, decimal>(objectData.ObjectType, objKeyValue);
                 var previousDifficultyRoot = DifficultyRoot;
                 var previousDifficulty = NestedDifficultyID;
 
@@ -737,6 +737,8 @@ namespace ATT
             Validate_Criteria(data);
             Validate_Quest(data);
             bool cloned = Validate_DataCloning(data);
+
+            Validate_Sym(data);
 
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
             if (cloned && data.ContainsKey("criteriaID"))
@@ -965,6 +967,56 @@ namespace ATT
             Objects.Merge(data);
 
             return true;
+        }
+
+        private static void Validate_Sym(Dictionary<string, object> data)
+        {
+            if (data.TryGetValue("sym", out List<object> symObject))
+            {
+                string previousType = null;
+                // some logic to check for duplicate 'select' commands of the same type
+                foreach (object cmdObj in symObject)
+                {
+                    if (!cmdObj.TryConvert(out List<object> command))
+                    {
+                        LogError("Incorrect 'sym' command structure encountered", data);
+                        break;
+                    }
+
+                    // check various commands
+                    if (command.Count > 0 && command[0].TryConvert(out string commandName))
+                    {
+                        if (commandName == "select")
+                        {
+                            if (command.Count > 1 && command[1].TryConvert(out string commandType))
+                            {
+                                if (previousType == commandType)
+                                {
+                                    LogDebug($"WARN: 'sym-select' can be cleaned up", data);
+                                    break;
+                                }
+                                else
+                                {
+                                    List<object> selections = command.Skip(2).ToList();
+                                    List<decimal> selectionValues = selections.AsDataList<decimal>().ToList();
+
+                                    // verify all select values are decimals
+                                    if (selections.Count != selectionValues.Count)
+                                    {
+                                        LogError($"'sym-select' contains non-numeric selection values", data);
+                                    }
+                                }
+
+                                previousType = commandType;
+                            }
+                        }
+                        else
+                        {
+                            previousType = null;
+                        }
+                    }
+                }
+            }
         }
 
         private static void Validate_SourceQuests(Dictionary<string, object> data)
@@ -1390,7 +1442,7 @@ namespace ATT
             if (data.TryGetValue("name", out string name))
             {
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
+                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out decimal objKeyValue))
                 {
                     long id = Convert.ToInt64(objKeyValue);
                     // Store the name of this object (or whatever it is) in our table.
@@ -1972,7 +2024,7 @@ namespace ATT
             if (!MergeItemData) return;
 
             var groupIDs = Objects.CompressToList(groups) ?? new List<object> { groups };
-            if (groupIDs != null && ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object _))
+            if (groupIDs != null && ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out decimal _))
             {
                 switch (objectData.ObjectType)
                 {

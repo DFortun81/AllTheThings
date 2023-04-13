@@ -16,3 +16,6 @@ r(327090),	-- Restore Construct
 r(327091),	-- Abominable Backup
 9.0.1.34615
 r(333550),	-- Lure 10
+
+
+Nothing is Missing in Ascension CraftingItemDB.lua! Good Work!

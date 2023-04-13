@@ -79,9 +79,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } 
 				},
 				["questID"] = 65695,
 				["coord"] = { 48, 5, ZERETH_MORTIS },
-				["sym"] = {
-					{"select","itemID",187882},	-- Alpaca Soul
-				},
+				["sym"] = {{"select","itemID",
+					187882,    -- Alpaca Soul
+				}},
 				["g"] = bubbleDown({ ["modID"] = 3 }, {
 					i(187507),	-- Adaptive Armor Fragment
 					i(187506),	-- Condensed Anima Sphere

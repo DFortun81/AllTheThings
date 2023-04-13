@@ -25,24 +25,24 @@ _.Zones =
 							},
 						}),
 						un(REMOVED_FROM_GAME, i(137561, {	-- Highmountain Tribute
-							["sym"] = {
-								{"select", "itemID", 157823},	-- Highmountain Tribute
-							},
+							["sym"] = {{"select","itemID",
+								157823,    -- Highmountain Tribute
+							}},
 						})),
 						un(REMOVED_FROM_GAME, i(154904, {	-- Highmountain Tribute
-							["sym"] = {
-								{"select", "itemID", 157823},	-- Highmountain Tribute
-							},
+							["sym"] = {{"select","itemID",
+								157823,    -- Highmountain Tribute
+							}},
 						})),
 						un(REMOVED_FROM_GAME, i(146748, {	-- Highmountain Tribute
-							["sym"] = {
-								{"select", "itemID", 157823},	-- Highmountain Tribute
-							},
+							["sym"] = {{"select","itemID",
+								157823,    -- Highmountain Tribute
+							}},
 						})),
 						un(REMOVED_FROM_GAME, i(151465, {	-- Highmountain Tribute
-							["sym"] = {
-								{"select", "itemID", 157823},	-- Highmountain Tribute
-							},
+							["sym"] = {{"select","itemID",
+								157823,    -- Highmountain Tribute
+							}},
 						})),
 					},
 				}),

@@ -7988,15 +7988,15 @@ Obtain silver in all races in the Dragon Isles.,Dragon Racing Completionist: Sil
 Obtain gold in all races in the Dragon Isles.,Dragon Racing Completionist: Gold,Title Reward: Isles Racer,15941,-1,-1,15940,15462,0,20,0,3,1100022,0,136846,0,0
 ,Crimson Combatant,,15942,-1,0,0,15270,0,0,1179648,10,236538,201788,136870,0,0
 ,Crimson Combatant,,15943,-1,1,0,15270,0,0,1179648,57,236538,201789,136872,0,0
-End Dragonflight PvP Season 1 in the top 0.1% of the 3v3 arena ladder (requires 150 games won on your current faction in Dragonflight Season 1).,Crimson Gladiator: Dragonflight Season 1,Title Reward: Crimson Gladiator,15951,-1,-1,0,15270,0,0,14336,241,236540,0,0,0,0
+End Dragonflight PvP Season 1 in the top 0.1% of the 3v3 arena ladder (requires 150 games won in Dragonflight Season 1).,Crimson Gladiator: Dragonflight Season 1,Title Reward: Crimson Gladiator,15951,-1,-1,0,15270,0,0,14336,241,236540,0,0,0,0
 Earn the rank of Rival I during Dragonflight Season 1.,Rival I: Dragonflight Season 1,Title Reward: Rival,15952,-1,-1,0,15270,0,0,14336,269,236542,0,136882,0,0
 Earn the rank of Rival II during Dragonflight Season 1.,Rival II: Dragonflight Season 1,,15953,-1,-1,0,15270,0,0,14336,274,236542,0,136886,0,0
 Earn the rank of Duelist during Dragonflight Season 1.,Duelist: Dragonflight Season 1,Title Reward: Duelist,15954,-1,-1,0,15270,0,0,17053696,284,236542,0,136892,0,0
 Earn the rank of Challenger I during Dragonflight Season 1.,Challenger I: Dragonflight Season 1,Title Reward: Challenger,15955,-1,-1,0,15270,0,0,14336,319,236542,0,136874,0,0
 Earn the rank of Challenger II during Dragonflight Season 1.,Challenger II: Dragonflight Season 1,,15956,-1,-1,0,15270,0,0,14336,324,236542,0,136878,0,0
 Win 50 3v3 games while at Elite rank during Dragonflight Season 1.,Gladiator: Dragonflight Season 1,"Reward: Gladiator Mount, Gladiator Title, Drakewatcher Manuscript",15957,-1,-1,0,15270,0,0,12288,401,236542,202086,136890,0,0
-End Dragonflight Season 1 in the top 0.5% of the rated battleground ladder (requires 50 games won on your current faction in Dragonflight Season 1).,Hero of the Horde: Crimson,,15958,-1,0,0,15270,0,0,14336,346,236629,0,0,0,0
-End Dragonflight Season 1 in the top 0.5% of the rated battleground ladder (requires 50 games won on your current faction in Dragonflight Season 1).,Hero of the Alliance: Crimson,,15959,-1,1,0,15270,0,0,14336,360,236593,0,0,0,0
+End Dragonflight Season 1 in the top 0.5% of the rated battleground ladder (requires 50 games won  in Dragonflight Season 1).,Hero of the Horde: Crimson,,15958,-1,0,0,15270,0,0,14336,346,236629,0,0,0,0
+End Dragonflight Season 1 in the top 0.5% of the rated battleground ladder (requires 50 games won  in Dragonflight Season 1).,Hero of the Alliance: Crimson,,15959,-1,1,0,15270,0,0,14336,360,236593,0,0,0,0
 Earn the rank of Combatant I during Dragonflight Season 1.,Combatant I: Dragonflight Season 1,Title Reward: Combatant,15960,-1,-1,0,15270,0,0,2048,304,236543,0,136896,0,0
 Earn the rank of Combatant II during Dragonflight Season 1.,Combatant II: Dragonflight Season 1,,15961,-1,-1,0,15270,0,0,2048,309,236543,0,136900,0,0
 Earn the rank of Elite during Dragonflight Season 1.,Elite: Dragonflight Season 1,Title Reward: the Elite,15984,-1,-1,0,15270,0,0,17053696,294,236542,0,136946,0,0
@@ -8356,40 +8356,40 @@ Defeat Magmatusk after it has been mutated with Draconic Tincture in Neltharus o
 "Explore the Ohn'ahran Plains, revealing the covered areas of the world map.",Explore the Ohn'ahran Plains,,16457,-1,-1,0,15465,0,10,2097152,9,4672498,0,138602,0,0
 "Defeat Dathea, Ascended after collecting 8 Condensed Gales in Vault of the Incarnates on Normal difficulty or higher.",Nothing But Air,,16458,2522,-1,0,15468,0,10,0,19,135863,0,138653,0,0
 "Explore the Azure Span, revealing the covered areas of the world map.",Explore the Azure Span,,16460,-1,-1,0,15465,0,10,2097152,10,4672495,0,138622,0,0
-Defeat 8 special creatures during storm events in the Dragon Isles.,Stormed Off,,16461,-1,-1,0,15465,0,10,0,59,237589,0,138634,0,0
+Defeat 8 special creatures during storm events in the Dragon Isles.,Stormed Off,,16461,-1,-1,0,15465,0,10,0,60,237589,0,138634,0,0
 Defend Clan Aylaag between all three of their camp locations.,The Ohn'ahran Trail,,16462,-1,-1,0,15465,0,10,0,40,237385,0,138655,0,0
-Defeat creatures empowered with elemental air during a storm event in The Waking Shores.,Thunderstorms in The Waking Shores,,16463,-1,-1,0,15465,0,5,0,62,132845,0,138659,0,0
+Defeat creatures empowered with elemental air during a storm event in The Waking Shores.,Thunderstorms in The Waking Shores,,16463,-1,-1,0,15465,0,5,0,63,132845,0,138659,0,0
 Complete 8 Pet Battle World Quests on the Dragon Isles with a full team of level 25 pets.,Battle on the Dragon Isles,,16464,-1,-1,0,15119,0,10,135168,3,652174,0,138662,0,0
-Defeat creatures empowered with elemental earth during a storm event in The Waking Shores.,Sandstorms in The Waking Shores,,16465,-1,-1,0,15465,0,5,0,63,451165,0,138667,0,0
-Defeat creatures empowered with elemental fire during a storm event in The Waking Shores.,Firestorms in The Waking Shores,,16466,-1,-1,0,15465,0,5,0,64,460952,0,138673,0,0
-Defeat creatures empowered with elemental water during a storm event in The Waking Shores.,Snowstorms in The Waking Shores,,16467,-1,-1,0,15465,0,5,0,65,135783,0,138675,0,0
-Complete the Waking Shore storm achievements below.,Chasing Storms in The Waking Shores,,16468,-1,-1,0,15465,0,10,0,61,4672500,0,138677,0,0
+Defeat creatures empowered with elemental earth during a storm event in The Waking Shores.,Sandstorms in The Waking Shores,,16465,-1,-1,0,15465,0,5,0,64,451165,0,138667,0,0
+Defeat creatures empowered with elemental fire during a storm event in The Waking Shores.,Firestorms in The Waking Shores,,16466,-1,-1,0,15465,0,5,0,65,460952,0,138673,0,0
+Defeat creatures empowered with elemental water during a storm event in The Waking Shores.,Snowstorms in The Waking Shores,,16467,-1,-1,0,15465,0,5,0,66,135783,0,138675,0,0
+Complete the Waking Shore storm achievements below.,Chasing Storms in The Waking Shores,,16468,-1,-1,0,15465,0,10,0,62,4672500,0,138677,0,0
 Build a snowman in the Azure Span.,Do You Wanna Build a Snowman?,,16474,-1,-1,0,15465,0,5,0,44,655957,0,138682,0,0
-Defeat creatures empowered with elemental air during a storm event in the Ohn'ahran Plains.,Thunderstorms in the Ohn'ahran Plains,,16475,-1,-1,0,15465,0,5,0,67,132845,0,138684,0,0
-Complete the Ohn'ahran Plains storm achievements below.,Chasing Storms in the Ohn'ahran Plains,,16476,-1,-1,0,15465,0,10,0,66,4672498,0,138692,0,0
-Defeat creatures empowered with elemental earth during a storm event in the Ohn'ahran Plains.,Sandstorms in the Ohn'ahran Plains,,16477,-1,-1,0,15465,0,5,0,68,451165,0,138686,0,0
-Defeat creatures empowered with elemental fire during a storm event in the Ohn'ahran Plains.,Firestorms in the Ohn'ahran Plains,,16478,-1,-1,0,15465,0,5,0,69,460952,0,138688,0,0
-Defeat creatures empowered with elemental water during a storm event in the Ohn'ahran Plains.,Snowstorms in the Ohn'ahran Plains,,16479,-1,-1,0,15465,0,5,0,70,135783,0,138690,0,0
-Defeat creatures empowered with elemental air during a storm event in The Azure Span.,Thunderstorms in The Azure Span,,16480,-1,-1,0,15465,0,5,0,72,132845,0,138697,0,0
-Defeat creatures empowered with elemental earth during a storm event in The Azure Span.,Sandstorms in The Azure Span,,16481,-1,-1,0,15465,0,5,0,73,451165,0,138699,0,0
-Defeat creatures empowered with elemental fire during a storm event in The Azure Span.,Firestorms in The Azure Span,,16482,-1,-1,0,15465,0,5,0,74,460952,0,138701,0,0
-Defeat creatures empowered with elemental water during a storm event in The Azure Span.,Snowstorms in The Azure Span,,16483,-1,-1,0,15465,0,5,0,75,135783,0,138703,0,0
-Complete the Azure Span storm achievements below.,Chasing Storms in The Azure Span,,16484,-1,-1,0,15465,0,10,0,71,4672495,0,138705,0,0
-Defeat creatures empowered with elemental air during a storm event in Thaldraszus.,Thunderstorms in Thaldraszus,,16485,-1,-1,0,15465,0,5,0,77,132845,0,138710,0,0
-Defeat creatures empowered with elemental earth during a storm event in Thaldraszus.,Sandstorms in Thaldraszus,,16486,-1,-1,0,15465,0,5,0,78,451165,0,138712,0,0
-Defeat creatures empowered with elemental fire during a storm event in Thaldraszus.,Firestorms in Thaldraszus,,16487,-1,-1,0,15465,0,5,0,79,460952,0,138714,0,0
-Defeat creatures empowered with elemental water during a storm event in Thaldraszus.,Snowstorms in Thaldraszus,,16488,-1,-1,0,15465,0,5,0,80,135783,0,138716,0,0
-Complete the Thaldraszus storm achievements below.,Chasing Storms in Thaldraszus,,16489,-1,-1,0,15465,0,10,0,76,4672499,0,138718,0,0
-Complete the storm achievements below.,Storm Chaser,,16490,-1,-1,0,15465,0,10,0,60,572029,0,138723,0,0
-Complete the storm achievements below.,Into the Storm,,16492,-1,-1,0,15465,0,20,0,55,538566,0,138728,0,0
+Defeat creatures empowered with elemental air during a storm event in the Ohn'ahran Plains.,Thunderstorms in the Ohn'ahran Plains,,16475,-1,-1,0,15465,0,5,0,68,132845,0,138684,0,0
+Complete the Ohn'ahran Plains storm achievements below.,Chasing Storms in the Ohn'ahran Plains,,16476,-1,-1,0,15465,0,10,0,67,4672498,0,138692,0,0
+Defeat creatures empowered with elemental earth during a storm event in the Ohn'ahran Plains.,Sandstorms in the Ohn'ahran Plains,,16477,-1,-1,0,15465,0,5,0,69,451165,0,138686,0,0
+Defeat creatures empowered with elemental fire during a storm event in the Ohn'ahran Plains.,Firestorms in the Ohn'ahran Plains,,16478,-1,-1,0,15465,0,5,0,70,460952,0,138688,0,0
+Defeat creatures empowered with elemental water during a storm event in the Ohn'ahran Plains.,Snowstorms in the Ohn'ahran Plains,,16479,-1,-1,0,15465,0,5,0,71,135783,0,138690,0,0
+Defeat creatures empowered with elemental air during a storm event in The Azure Span.,Thunderstorms in The Azure Span,,16480,-1,-1,0,15465,0,5,0,73,132845,0,138697,0,0
+Defeat creatures empowered with elemental earth during a storm event in The Azure Span.,Sandstorms in The Azure Span,,16481,-1,-1,0,15465,0,5,0,74,451165,0,138699,0,0
+Defeat creatures empowered with elemental fire during a storm event in The Azure Span.,Firestorms in The Azure Span,,16482,-1,-1,0,15465,0,5,0,75,460952,0,138701,0,0
+Defeat creatures empowered with elemental water during a storm event in The Azure Span.,Snowstorms in The Azure Span,,16483,-1,-1,0,15465,0,5,0,76,135783,0,138703,0,0
+Complete the Azure Span storm achievements below.,Chasing Storms in The Azure Span,,16484,-1,-1,0,15465,0,10,0,72,4672495,0,138705,0,0
+Defeat creatures empowered with elemental air during a storm event in Thaldraszus.,Thunderstorms in Thaldraszus,,16485,-1,-1,0,15465,0,5,0,78,132845,0,138710,0,0
+Defeat creatures empowered with elemental earth during a storm event in Thaldraszus.,Sandstorms in Thaldraszus,,16486,-1,-1,0,15465,0,5,0,79,451165,0,138712,0,0
+Defeat creatures empowered with elemental fire during a storm event in Thaldraszus.,Firestorms in Thaldraszus,,16487,-1,-1,0,15465,0,5,0,80,460952,0,138714,0,0
+Defeat creatures empowered with elemental water during a storm event in Thaldraszus.,Snowstorms in Thaldraszus,,16488,-1,-1,0,15465,0,5,0,81,135783,0,138716,0,0
+Complete the Thaldraszus storm achievements below.,Chasing Storms in Thaldraszus,,16489,-1,-1,0,15465,0,10,0,77,4672499,0,138718,0,0
+Complete the storm achievements below.,Storm Chaser,,16490,-1,-1,0,15465,0,10,0,61,572029,0,138723,0,0
+Complete the storm achievements below.,Into the Storm,,16492,-1,-1,0,15465,0,20,0,56,538566,0,138728,0,0
 Ride the tame baby mammoths from the following areas to Mammoth-Tamer Tavok in the Emberflow.,Petty Theft Mammoth,,16493,-1,-1,0,15465,0,5,0,47,4034836,0,139400,0,0
 Reach the maximum friendship with Wrathion at the Obsidian Throne.,Loyalty to the Prince,Title Reward: Agent of the Black Prince,16494,-1,-1,0,15466,0,10,131072,280,132768,0,139397,0,0
 Turn in a total of 30 Obsidian Keys to individuals around the Obsidian Citadel.,Obsidian Keymaster,,16495,-1,-1,0,15465,0,10,0,48,1379238,0,139390,0,0
 Complete the following special encounters at the Obsidian Citadel and adjacent lava fields.,Obsidian Champion,,16496,-1,-1,0,15465,0,5,0,49,236326,0,139392,0,0
 Ensure that you always come out on top by turning in Obsidian Keys to each of these individuals at the Obsidian Citadel.,I'm Playing All Sides,,16497,-1,-1,0,15465,0,5,0,50,236352,0,139381,0,0
-Obtain 1000 Elemental Overflow,Elemental Overflow,,16498,-1,-1,0,15465,0,5,0,56,134388,0,138758,0,0
-Obtain 2500 Elemental Overflow,Elemental Overflowing,,16499,-1,-1,16498,15465,0,5,0,57,134388,0,138760,0,0
-Obtain 5000 Elemental Overflow,Elemental Overload,,16500,-1,-1,16499,15465,0,10,0,58,134388,0,138762,0,0
+Obtain 1000 Elemental Overflow,Elemental Overflow,,16498,-1,-1,0,15465,0,5,0,57,134388,0,138758,0,0
+Obtain 2500 Elemental Overflow,Elemental Overflowing,,16499,-1,-1,16498,15465,0,5,0,58,134388,0,138760,0,0
+Obtain 5000 Elemental Overflow,Elemental Overload,,16500,-1,-1,16499,15465,0,10,0,59,134388,0,138762,0,0
 Defeat the elite pets and trainers of the Dragon Isles with a team of all level 25 Aquatic pets.,Aquatic Battler of the Dragon Isles,,16501,-1,-1,0,15119,0,5,131072,107,618981,0,138769,0,0
 Collect an armor set from the Primal Storms.,Storming the Runway,,16502,-1,-1,0,15259,0,10,131072,78,4628908,0,138767,0,0
 Defeat the elite pets and trainers of the Dragon Isles with a team of all level 25 Beast pets.,Beast Battler of the Dragon Isles,,16503,-1,-1,0,15119,0,5,131072,108,618972,0,138778,0,0
@@ -8556,7 +8556,7 @@ Collect the following cosmetic back and tail unlocks for the Cliffside Wylderdra
 Collect the following cosmetic head unlocks for the Cliffside Wylderdrake.,Cliffside Wylderdrake Head Features,,16727,-1,-1,0,15478,0,5,131072,19,4622502,0,140333,0,0
 "The critters of the Dragon Isles have gone 10,000 years without anyone to show them /love.",To All the Squirrels Hidden Til Now,,16729,-1,-1,0,15465,0,10,0,54,237182,0,140360,0,0
 Obtain the Crimson Gladiator's Drake from Dragonflight Season 1.,Crimson Gladiator's Drake,,16730,-1,-1,0,15269,1,0,145408,51,4571779,0,140414,0,0
-End Dragonflight PvP Season 1 in the top 0.1% of the Solo Shuffle ladder (requires 50 games won on your current faction in Dragonflight Season 1).,Crimson Legend: Dragonflight Season 1,Title Reward: Crimson Legend,16734,-1,-1,0,15270,0,0,14336,243,236540,0,0,0,0
+End Dragonflight PvP Season 1 in the top 0.1% of the Solo Shuffle ladder (requires 50 games won in Dragonflight Season 1).,Crimson Legend: Dragonflight Season 1,Title Reward: Crimson Legend,16734,-1,-1,0,15270,0,0,14336,243,236540,0,0,0,0
 ,10.0.5 Trading Post - Tutorial Quest - Objective: Tenders Claimed - JZB <DND>,,16735,-1,-1,0,92,0,0,3276804,94,136243,0,0,0,0
 Liberate a Qalashi magmammoth... permanently.,Grand Theft Mammoth,,16736,-1,-1,0,15248,0,10,0,9,4034835,0,140652,0,0
 ,10.0.5 Trading Post - Tutorial Quest - Completed (Reward for Player) - JZB <DND>,,16737,-1,-1,0,92,0,0,3276804,96,136243,0,140712,0,0
@@ -9038,7 +9038,7 @@ Owner of any Dragonflight edition.,Trading Post: Dragonflight,Reward: 500 Trader
 ,10.0 Prologue - Storms - Dimmed Primeval Earth,,17312,-1,-1,0,15466,0,0,3276804,503,136243,0,142545,0,0
 ,10.0 Prologue - Storms - Dimmed Primeval Storm,,17313,-1,-1,0,15466,0,0,3276804,504,136243,0,142547,0,0
 Owner of the Dragonflight Heroic Edition Tangled Dreamweaver mount.,Heroic Edition: Tangled Dreamweaver,,17314,-1,-1,0,15268,1,0,133120,38,4096390,0,142551,0,0
-Deliver the following items to the Scalecommanders at the Forbidden Reach.,While We Were Sleeping,,17315,-1,-1,0,15465,0,10,0,87,134422,0,143322,0,0
+Deliver the following items to the Scalecommanders at the Forbidden Reach.,While We Were Sleeping,,17315,-1,-1,0,15465,0,10,0,88,134422,0,143322,0,0
 Honor the Elders which are located in the Dragon Isles.,Elders of the Dragon Isles,,17321,2574,-1,0,160,0,10,0,14,135982,0,142615,0,0
 Complete all reverse races in the Dragon Isles.,Reverse Racer: Bronze,,17330,-1,-1,0,15462,0,10,0,324,1002572,0,142658,0,0
 Obtain silver in all reverse races in the Dragon Isles.,Reverse Racer: Silver,,17331,-1,-1,17330,15462,0,10,0,325,1002575,0,142663,0,0
@@ -9054,7 +9054,7 @@ Use Whirling Surge to dismount 50 enemy players in War Mode.,Airborne Tumbler,Ti
 ,<Hidden> 10.0 Professions Onboarding Skip Completed [DNT],,17365,-1,-1,0,15455,0,0,3145732,38,136243,0,142945,0,0
 Delivered a Restored Hakkari Bijou to someone with a great interest in such artifacts.,Relics of a Fallen Empire,Unlocks ancient secrets within Zul'Gurub,17366,-1,-1,0,14777,0,10,131072,27,132528,0,142996,0,0
 Fish up a Gurubashi Cache in Zul'Gurub.,Deadliest Cache,,17367,-1,-1,0,171,0,10,0,77,132595,0,143003,0,0
-Unlock 50 doors within the Zskera Vaults using Zskera Vault Keys.,Door To Door,,17397,-1,-1,0,15465,0,10,131072,88,4909720,0,143163,0,0
+Unlock 50 doors within the Zskera Vaults using Zskera Vault Keys.,Door To Door,,17397,-1,-1,0,15465,0,10,131072,89,4909720,0,143163,0,0
 Collect the dragon glyph near Winglord's Perch.,Dragon Glyphs: Winglord's Perch,,17398,-1,-1,0,15462,0,0,1179648,393,4728198,0,0,0,0
 Collect the dragon glyph near Talon's Watch.,Dragon Glyphs: Talon's Watch,,17399,-1,-1,0,15462,0,0,1179648,394,4728198,0,0,0,0
 Collect the dragon glyph near Froststone Peak.,Dragon Glyphs: Froststone Peak,,17400,-1,-1,0,15462,0,0,1179648,395,4728198,0,0,0,0
@@ -9068,7 +9068,7 @@ Complete 8 Pet Battle World Quests on the Dragon Isles with a full team of level
 Aided in the Zandalar Tribe's incursion into Zul'Gurub with your crafting skills prior to the Cataclysm.,Craftsman of the Zandalar Tribe,,17410,-1,-1,0,172,0,0,2048,23,134232,0,0,0,0
 Find the following dragon glyphs in the Forbidden Reach.,Forbidden Reach Glyph Hunter,,17411,-1,-1,0,15462,0,20,131072,188,4672496,0,143219,0,0
 Aided in the Argent Dawn's assault against Naxxramas with your crafting skills prior to the expedition on Northrend.,Craftsman of the Argent Dawn,,17412,-1,-1,0,172,0,0,2048,22,134499,0,0,0,0
-Unlock 150 doors within the Zskera Vaults using Zskera Vault Keys.,Door Buster,Title Reward: the Key Master,17413,-1,-1,17397,15465,0,15,131072,89,4909720,0,143230,0,0
+Unlock 150 doors within the Zskera Vaults using Zskera Vault Keys.,Door Buster,Title Reward: the Key Master,17413,-1,-1,17397,15465,0,15,131072,90,4909720,0,143230,0,0
 ,Trial of Tyr Ineligible For Spark Skip [DNT],,17420,-1,-1,0,169,0,0,1048580,93,136243,0,143312,0,0
 ,<DNT> Artisan's Consortium Reputation is Preferred (Rank 1),,17422,-1,-1,0,15466,0,0,3145732,450,134446,0,143320,0,0
 ,<DNT> Artisan's Consortium Reputation is Respected (Rank 2),,17423,-1,-1,0,15466,0,0,3145732,451,134446,0,143318,0,0
@@ -9148,7 +9148,7 @@ Equipped Azeroth's heroes as an Armorsmith during war efforts prior to the Catac
 Equipped Azeroth's heroes as a specialized Leatherworker during war efforts prior to the Cataclysm.,Renowned Leatherworking Specialist,,17498,-1,-1,0,172,0,0,2048,26,133611,0,0,0,0
 Equipped Azeroth's heroes as a specialized Tailor during war efforts prior to the Cataclysm.,Renowned Tailoring Specialist,,17499,-1,-1,0,172,0,0,2048,27,136249,0,0,0,0
 Get killed by Fyrakk.,Still Standing in the Fire,,17506,-1,-1,0,15465,0,10,0,1,4914672,0,143602,0,0
-Unlock every door in a single Zskera Vault within one week.,"Every Door, Everywhere, All At Once",,17509,-1,-1,0,15465,0,0,0,90,237538,0,0,0,0
+Unlock every door in a single Zskera Vault within one week.,"Every Door, Everywhere, All At Once",,17509,-1,-1,0,15465,0,0,0,91,237538,0,0,0,0
 Collect the dragon glyph near Glimmerogg.,Dragon Glyphs: Glimmerogg,,17510,-1,-1,0,15462,0,0,1179648,467,4728198,0,0,0,0
 Collect the dragon glyph near Nal ks'kol.,Dragon Glyphs: Nal ks'kol,,17511,-1,-1,0,15462,0,0,1179648,468,4728198,0,0,0,0
 Collect the dragon glyph near Loamm.,Dragon Glyphs: Loamm,,17512,-1,-1,0,15462,0,0,1179648,469,4728198,0,0,0,0
@@ -9160,12 +9160,12 @@ Collect the dragon glyph near Aberrus Approach.,Dragon Glyphs: Aberrus Approach,
 Complete 10 of the following special encounters in the post-storm Forbidden Reach.,Adventurer of the Forbidden Reach,,17524,-1,-1,0,15465,0,5,0,19,4638396,0,143672,0,0
 Complete all of the following special encounters in the post-storm Forbidden Reach.,Champion of the Forbidden Reach,,17525,-1,-1,17524,15465,0,15,0,20,4046656,0,143702,0,0
 Discover the hidden treasures within the post-storm Forbidden Reach.,Treasures of the Forbidden Reach,,17526,-1,-1,0,15465,0,5,0,29,1542852,0,143732,0,0
-Open 20 small treasures around the post-storm Forbidden Reach.,Scavenger of the Forbidden Reach,,17527,-1,-1,0,15465,0,5,0,81,1542844,0,143745,0,0
-Open 100 small treasures around the post-storm Forbidden Reach.,Hoarder of the Forbidden Reach,,17528,-1,-1,17527,15465,0,10,0,82,1542848,0,143757,0,0
-Open 10 Forbidden Hoards around the post-storm Forbidden Reach.,Forbidden Spoils,,17529,-1,-1,0,15465,0,10,0,83,4638544,0,143759,0,0
-Collect each of the following books found in the post-storm Forbidden Reach.,Librarian of the Reach,,17530,-1,-1,0,15465,0,10,0,86,4549135,0,143761,0,0
-Find treasures from 10 Sealed Scroll maps in the post-storm Forbidden Reach.,X Marks the Spot,,17531,-1,-1,0,15465,0,10,0,84,1064187,0,143769,0,0
-Find treasures from 50 Sealed Scroll maps in the post-storm Forbidden Reach.,Scroll Hunter,,17532,-1,-1,17531,15465,0,10,0,85,4549192,0,143771,0,0
+Open 20 small treasures around the post-storm Forbidden Reach.,Scavenger of the Forbidden Reach,,17527,-1,-1,0,15465,0,5,0,82,1542844,0,143745,0,0
+Open 100 small treasures around the post-storm Forbidden Reach.,Hoarder of the Forbidden Reach,,17528,-1,-1,17527,15465,0,10,0,83,1542848,0,143757,0,0
+Open 10 Forbidden Hoards around the post-storm Forbidden Reach.,Forbidden Spoils,,17529,-1,-1,0,15465,0,10,0,84,4638544,0,143759,0,0
+Collect each of the following books found in the post-storm Forbidden Reach.,Librarian of the Reach,,17530,-1,-1,0,15465,0,10,0,87,4549135,0,143761,0,0
+Find treasures from 10 Sealed Scroll maps in the post-storm Forbidden Reach.,X Marks the Spot,,17531,-1,-1,0,15465,0,10,0,85,1064187,0,143769,0,0
+Find treasures from 50 Sealed Scroll maps in the post-storm Forbidden Reach.,Scroll Hunter,,17532,-1,-1,17531,15465,0,10,0,86,4549192,0,143771,0,0
 ,<Hidden> Travel Network - Node Unlock: Forbidden Reach - Morqut Islet,,17533,-1,-1,0,15455,0,0,1179648,32,136243,0,143794,0,0
 "Explore the post-storm Forbidden Reach, revealing the covered areas of the world map.",Explore the Forbidden Reach,,17534,-1,-1,0,15465,0,10,0,13,4672496,0,143799,0,0
 ,"<DNT> Complete the ""Return to the Reach"" questline.",,17535,-1,-1,0,15455,0,10,3276800,3,136243,0,143806,0,0
@@ -9174,9 +9174,9 @@ Find treasures from 50 Sealed Scroll maps in the post-storm Forbidden Reach.,Scr
 ,Dragon Chase - WS02,,17538,-1,-1,0,15462,0,0,1048576,477,1394953,0,0,0,0
 Complete a Froststone Vault Primal Storm of every element.,Under the Weather,,17540,-1,-1,0,15465,0,15,0,12,463562,0,143863,0,0
 "Defeat Vortex, Tremblor, Wildfire, and Flow in a Pet Battle.",Global Swarming,,17541,-1,-1,0,15119,0,15,0,118,136099,0,143868,0,0
-Complete all of the Forbidden Reach achievements listed below.,You Know How to Reach Me,Title Reward: The Forbidden,17543,-1,-1,0,15465,0,25,131072,91,4616662,0,143908,0,0
+Complete all of the Forbidden Reach achievements listed below.,You Know How to Reach Me,Title Reward: The Forbidden,17543,-1,-1,0,15465,0,25,131072,92,4616662,0,143908,0,0
 Complete the Old Hatreds questline in the Ohn'ahran Plains.,A New Beginning,,17546,-1,-1,0,15455,0,5,0,2,236555,0,143992,0,0
-Uncover the mysteries of the ancient stones across the Dragon Isles.,Ancient Stones of the Dragon Isles,,17560,-1,-1,0,15465,0,20,131072,92,4632794,0,144202,0,0
+Uncover the mysteries of the ancient stones across the Dragon Isles.,Ancient Stones of the Dragon Isles,,17560,-1,-1,0,15465,0,20,131072,93,4632794,0,144202,0,0
 Uncover the mysteries of the ancient stones throughout the Waking Shores.,Ancient Stones of the Waking Shores,,17561,-1,-1,0,15465,0,5,2097152,3,134461,0,144207,0,0
 Uncover the mysteries of the ancient stones throughout the Ohn'ahran Plains.,Ancient Stones of the Ohn'ahran Plains,,17562,-1,-1,0,15465,0,5,2097152,4,134461,0,144213,0,0
 Uncover the mysteries of the ancient stones throughout the Azure Span.,Ancient Stones of the Azure Span,,17563,-1,-1,0,15465,0,5,2097152,5,134461,0,144219,0,0
@@ -9217,16 +9217,16 @@ Win 50 3v3 games while at Elite rank during Dragonflight Season 2.,Gladiator: Dr
 Reach Renown level 20 with the Loamm Niffen.,There's No Place Like Loamm,,17763,-1,-1,0,15466,0,5,0,505,5140835,0,144725,0,0
 End Dragonflight PvP Season 2 in the top 0.1% of the 3v3 arena ladder (requires 150 games won in Dragonflight Season 2).,Obsidian Gladiator: Dragonflight Season 2,Title Reward: Obsidian Gladiator,17764,-1,-1,0,15270,0,0,14336,242,236540,0,0,0,0
 "Collect an armor set from Aberrus, the Shadowed Crucible.",What We Wear In The Shadowflame,,17765,-1,-1,0,15259,0,10,131072,47,4678246,0,144729,0,0
-"Explore Zaralek Cavern, revealing the covered areas of the world map.",Explore Zaralek Cavern,,17766,-1,-1,0,15465,0,10,2097152,93,5140838,0,144731,0,0
+"Explore Zaralek Cavern, revealing the covered areas of the world map.",Explore Zaralek Cavern,,17766,-1,-1,0,15465,0,10,2097152,94,5140838,0,144731,0,0
 End Dragonflight PvP Season 2 in the top 0.1% of the Solo Shuffle ladder (requires 50 games won in Dragonflight Season 2).,Obsidian Legend: Dragonflight Season 2,Title Reward: Obsidian Legend,17767,-1,-1,0,15270,0,0,14336,244,236540,0,0,0,0
 End Dragonflight Season 2 in the top 0.5% of the rated battleground ladder (requires 50 games won in Dragonflight Season 2).,Hero of the Alliance: Obsidian,,17768,-1,1,0,15270,0,0,14336,361,236593,0,0,0,0
 End Dragonflight Season 2 in the top 0.5% of the rated battleground ladder (requires 50 games won in Dragonflight Season 2).,Hero of the Horde: Obsidian,,17772,-1,0,0,15270,0,0,14336,347,236629,0,0,0,0
 Obtain the Obsidian Gladiator's Slitherdrake from Dragonflight Season 2.,Obsidian Gladiator's Slitherdrake,,17778,-1,-1,0,15269,1,0,145408,52,5114749,0,144727,0,0
 Unlock the Winding Slitherdrake.,A Serpentine Discovery,,17779,-1,-1,0,15455,0,10,131072,11,4922469,0,144841,0,0
-Earn 200 Fragrant Unearthed Coins from Public Objectives in Zaralek Cavern.,The Smell of Money,,17781,-1,-1,0,15465,0,5,0,94,646678,0,144845,0,0
-Complete 10 of the following special encounters in Zaralek Cavern.,Adventurer of Zaralek Cavern,,17783,-1,-1,0,15465,0,5,0,95,5140838,0,144859,0,0
+Earn 200 Unearthed Fragrant Coins from Public Objectives in Zaralek Cavern.,The Smell of Money,,17781,-1,-1,0,15465,0,5,0,95,646678,0,144845,0,0
+Complete 10 of the following special encounters in Zaralek Cavern.,Adventurer of Zaralek Cavern,,17783,-1,-1,0,15465,0,5,0,96,5140838,0,144859,0,0
 Complete all of the Zaralek Cavern achievements listed below.,"Que Zara(lek), Zara(lek)",,17785,-1,-1,0,15455,0,25,0,55,5140837,0,144885,0,0
-Discover the hidden treasures within Zaralek Cavern.,Treasures of Zaralek Cavern,,17786,-1,-1,0,15465,0,5,0,96,1542855,0,144892,0,0
+Discover the hidden treasures within Zaralek Cavern.,Treasures of Zaralek Cavern,,17786,-1,-1,0,15465,0,5,0,97,1542855,0,144892,0,0
 ,Current Patch - Login Video [DNT] (Updated Every Patch),,17788,-1,-1,0,92,0,0,18087940,55,136243,0,144904,0,0
 Earn the rank of Duelist during Dragonflight Season 2.,Duelist: Dragonflight Season 2,Title Reward: Duelist,17794,-1,-1,0,15270,0,0,17053696,285,236542,0,144740,0,0
 Earn the rank of Rival I during Dragonflight Season 2.,Rival I: Dragonflight Season 2,Title Reward: Rival,17795,-1,-1,0,15270,0,0,14336,270,236542,0,144750,0,0
@@ -9235,11 +9235,11 @@ Earn the rank of Challenger I during Dragonflight Season 2.,Challenger I: Dragon
 Earn the rank of Challenger II during Dragonflight Season 2.,Challenger II: Dragonflight Season 2,,17798,-1,-1,0,15270,0,0,14336,325,236542,0,144755,0,0
 Earn the rank of Combatant I during Dragonflight Season 2.,Combatant I: Dragonflight Season 2,Title Reward: Combatant,17799,-1,-1,0,15270,0,0,2048,305,236543,0,144770,0,0
 Earn the rank of Combatant II during Dragonflight Season 2.,Combatant II: Dragonflight Season 2,,17800,-1,-1,0,15270,0,0,2048,310,236543,0,144765,0,0
-Win 100 Rated Solo Shuffle rounds while at Elite rank during Dragonflight Season 2.,Legend: Dragonflight Season 2,Title Reward: Legend,17801,-1,-1,0,165,0,0,12288,221,236537,0,144918,0,0
-Earn 2000 Flightstones.,Stones Can't Fly!,,17830,-1,-1,0,15465,0,10,0,97,5063845,204195,144914,0,0
+Win 100 Rated Solo Shuffle rounds while at Elite rank during Dragonflight Season 2.,Legend: Dragonflight Season 2,Reward: Legend Title and Pennant,17801,-1,-1,0,165,0,0,12288,221,236537,206267,144918,0,0
+Earn 2000 Flightstones.,Stones Can't Fly!,,17830,-1,-1,0,15465,0,10,0,98,5063845,204195,144914,0,0
 Earn the rank of Elite during Dragonflight Season 2.,Elite: Dragonflight Season 2,Title Reward: the Elite,17831,-1,-1,0,15270,0,0,17053696,295,236542,0,144922,0,0
-Sniff out five special items while exploring caves alongside a niffen companion.,Sniffen Around,,17832,-1,-1,0,15465,0,5,0,100,5140835,0,144927,0,0
-Sniff out all possible special items while exploring caves alongside a niffen companion.,Sniffen Sage,,17833,-1,-1,17832,15465,0,10,0,101,5140835,0,144937,0,0
+Sniff out five special items while exploring caves alongside a niffen companion.,Sniffen Around,,17832,-1,-1,0,15465,0,5,0,101,5140835,0,144927,0,0
+Sniff out all possible special items while exploring caves alongside a niffen companion.,Sniffen Sage,,17833,-1,-1,17832,15465,0,10,0,102,5140835,0,144937,0,0
 ,Flightstones earned,,17836,-1,-1,0,130,0,0,1,71,136243,0,144947,0,0
 ,Whelpling's Shadowflame Crest Fragments earned,,17837,-1,-1,0,130,0,0,5,72,136243,0,144949,0,0
 ,Drake's Shadowflame Crest Fragments earned,,17838,-1,-1,0,130,0,0,5,73,136243,0,144951,0,0
@@ -9272,10 +9272,10 @@ Defeat the pet trainers of Zaralek Cavern with a team of all level 25 Magic pets
 Defeat the pet trainers of Zaralek Cavern with a team of all level 25 Mechanical pets.,Mechanical Battler of Zaralek Cavern,,17917,-1,-1,0,15119,0,5,131072,127,618979,0,145154,0,0
 Defeat the pet trainers of Zaralek Cavern with a team of all level 25 Undead pets.,Undead Battler of Zaralek Caverm,,17918,-1,-1,0,15119,0,5,131072,128,618980,0,145159,0,0
 Complete the following achievements.,Family Battler of Zaralek Cavern,Reward: Gerald,17934,-1,-1,0,15119,0,10,135168,129,4007141,193377,145164,0,0
-Earn 5000 Flightstones.,Stones Can Try To Fly!,,17977,-1,-1,17830,15465,0,10,0,98,5063845,0,145183,0,0
-Earn 20000 Flightstones.,Stones Can Fly!,,17978,-1,-1,17977,15465,0,10,0,99,5063845,0,145185,0,0
+Earn 5000 Flightstones.,Stones Can Try To Fly!,,17977,-1,-1,17830,15465,0,10,0,99,5063845,0,145183,0,0
+Earn 20000 Flightstones.,Stones Can Fly!,,17978,-1,-1,17977,15465,0,10,0,100,5063845,0,145185,0,0
 Complete one of the achievements listed below.,Dragonflight Season 2 Master,Reward: Draconic Mark of Mastery,18027,-1,-1,0,81,0,0,0,2,5144428,204843,145205,0,0
-Complete all of the following special encounters in Zaralek Cavern while under the effect of a Clacking Claw.,Cavern Clawbbering,Toy Reward: Vibrant Clacking Claw,18100,-1,-1,0,15465,0,10,131072,123,1508491,0,145307,0,0
+Complete all of the following special encounters in Zaralek Cavern while under the effect of a Clacking Claw.,Cavern Clawbbering,Toy Reward: Vibrant Clacking Claw,18100,-1,-1,0,15465,0,10,131072,124,1508491,0,145307,0,0
 ,<DNT> Loamm Niffen Rank 01 (Character),,18129,-1,-1,0,15466,0,0,3145728,400,136243,0,145343,0,0
 ,<DNT> Loamm Niffen Rank 02 (Character),,18130,-1,-1,0,15466,0,0,3145728,402,136243,0,145346,0,0
 ,<DNT> Loamm Niffen Rank 03 (Character),,18131,-1,-1,0,15466,0,0,3145728,404,136243,0,145349,0,0
@@ -9298,31 +9298,31 @@ Complete all of the following special encounters in Zaralek Cavern while under t
 ,<DNT> Loamm Niffen Rank 20 (Character),,18148,-1,-1,0,15466,0,0,3145728,438,136243,0,145400,0,0
 "Defeat the Echo of Neltharion after players smash through walls of Twisted Earth while carrying the Expired Experiment, the Stack of Scrolls, the Neverburning Ebon Candle, and the ""Portable"" Ebon Anvil in Aberrus, the Shadowed Crucible on Normal difficulty or higher.",Objects in Transit May Shatter,,18149,2569,-1,0,15468,0,10,0,46,986484,0,145412,0,0
 Find the following dragon glyphs in Zaralek Cavern.,Zaralek Cavern Glyph Hunter,,18150,-1,-1,0,15462,0,20,131072,475,5140838,0,145419,0,0
-"Defeat Kazzara, the Hellforged in Aberrus, the Shadowed Crucible on Mythic difficulty.","Mythic: Kazzara, the Hellforged",,18151,2569,-1,0,15468,0,10,4096,30,136243,0,145485,0,0
-"Defeat The Amalgamation Chamber in Aberrus, the Shadowed Crucible on Mythic difficulty.",Mythic: The Amalgamation Chamber,,18152,2569,-1,0,15468,0,10,4096,31,136243,0,0,0,0
-"Defeat The Forgotten Experiments in Aberrus, the Shadowed Crucible on Mythic difficulty.",Mythic: The Forgotten Experiments,,18153,-1,-1,0,15468,0,10,4096,32,136243,0,145490,0,0
-"Defeat Assault of the Zaqali in Aberrus, the Shadowed Crucible on Mythic difficulty.",Mythic: Assault of the Zaqali,,18154,-1,-1,0,15468,0,10,4096,33,136243,0,145492,0,0
-"Defeat Rashok, the Elder in Aberrus, the Shadowed Crucible on Mythic difficulty.","Mythic: Rashok, the Elder",,18155,-1,-1,0,15468,0,10,4096,34,136243,0,145494,0,0
-"Defeat The Vigilant Steward, Zskarn in Aberrus, the Shadowed Crucible on Mythic difficulty.","Mythic: The Vigilant Steward, Zskarn",,18156,-1,-1,0,15468,0,10,4096,35,136243,0,145496,0,0
-"Defeat Magmorax in Aberrus, the Shadowed Crucible on Mythic difficulty.",Mythic: Magmorax,,18157,-1,-1,0,15468,0,10,4096,36,136243,0,145498,0,0
-"Defeat Echo of Neltharion in Aberrus, the Shadowed Crucible on Mythic difficulty.",Mythic: Echo of Neltharion,,18158,-1,-1,0,15468,0,10,4096,37,136243,0,145500,0,0
-"Defeat Scalecommander Sarkareth in Aberrus, the Shadowed Crucible on Mythic difficulty.",Mythic: Scalecommander Sarkareth,Title: Heir to the Void,18159,-1,-1,0,15468,0,10,4096,38,136243,0,145489,0,0
-Defeat the following bosses on any difficulty.,"Aberrus, the Shadowed Crucible",,18160,2569,-1,0,15468,0,10,0,23,136243,0,145503,0,0
-Defeat the following bosses on Heroic difficulty.,"Heroic: Aberrus, the Shadowed Crucible",,18161,2569,-1,18160,15468,0,10,0,24,136243,0,145513,0,0
-Defeat the following bosses on Mythic difficulty.,"Mythic: Aberrus, the Shadowed Crucible",,18162,2569,-1,18161,15468,0,10,0,25,136243,0,145523,0,0
-"Defeat the following bosses in the experimental laboratories of Aberrus, the Shadowed Crucible.",Discarded Works,,18163,2569,-1,0,15468,0,10,0,26,136243,0,145533,0,0
-"Defeat the following bosses in the wing of Aberrus, the Shadowed Crucible.",Fury of Giants,,18164,2569,-1,0,15468,0,10,0,27,136243,0,145537,0,0
-"Defeat the following bosses in the depths of Aberrus, the Shadowed Crucible.",Neltharion's Shadow,,18165,2569,-1,0,15468,0,10,0,28,136243,0,145541,0,0
-"Descend to the edge of reality and confront Scalecommander Sarkareth within Aberrus, the Shadowed Crucible.",Edge of the Void,,18167,2569,-1,0,15468,0,10,0,29,136243,0,145544,0,0
-"Defeat the Shadowflame Amalgamation after using Umbral Detonation, Fiery Meteor and Blistering Twilight on a Forgotten Specimen Tank to create and extinguish a Shadowflame Remnant in Aberrus, the Shadowed Crucible on Normal difficulty or higher.",I'll make my own Shadowflame,,18168,2569,-1,0,15468,0,10,0,40,4952369,0,145799,0,0
+"Defeat Kazzara, the Hellforged in Aberrus, the Shadowed Crucible on Mythic difficulty.","Mythic: Kazzara, the Hellforged",,18151,2569,-1,0,15468,0,10,4096,30,5161745,0,145485,0,0
+"Defeat The Amalgamation Chamber in Aberrus, the Shadowed Crucible on Mythic difficulty.",Mythic: The Amalgamation Chamber,,18152,2569,-1,0,15468,0,10,4096,31,5161743,0,0,0,0
+"Defeat The Forgotten Experiments in Aberrus, the Shadowed Crucible on Mythic difficulty.",Mythic: The Forgotten Experiments,,18153,-1,-1,0,15468,0,10,4096,32,5161744,0,145490,0,0
+"Defeat Assault of the Zaqali in Aberrus, the Shadowed Crucible on Mythic difficulty.",Mythic: Assault of the Zaqali,,18154,-1,-1,0,15468,0,10,4096,33,5161751,0,145492,0,0
+"Defeat Rashok, the Elder in Aberrus, the Shadowed Crucible on Mythic difficulty.","Mythic: Rashok, the Elder",,18155,-1,-1,0,15468,0,10,4096,34,5161749,0,145494,0,0
+"Defeat The Vigilant Steward, Zskarn in Aberrus, the Shadowed Crucible on Mythic difficulty.","Mythic: The Vigilant Steward, Zskarn",,18156,-1,-1,0,15468,0,10,4096,35,5161752,0,145496,0,0
+"Defeat Magmorax in Aberrus, the Shadowed Crucible on Mythic difficulty.",Mythic: Magmorax,,18157,-1,-1,0,15468,0,10,4096,36,5161746,0,145498,0,0
+"Defeat Echo of Neltharion in Aberrus, the Shadowed Crucible on Mythic difficulty.",Mythic: Echo of Neltharion,,18158,-1,-1,0,15468,0,10,4096,37,5161747,0,145500,0,0
+"Defeat Scalecommander Sarkareth in Aberrus, the Shadowed Crucible on Mythic difficulty.",Mythic: Scalecommander Sarkareth,Title: Heir to the Void,18159,-1,-1,0,15468,0,10,4096,38,5161750,0,145489,0,0
+Defeat the following bosses on any difficulty.,"Aberrus, the Shadowed Crucible",,18160,2569,-1,0,15468,0,10,0,23,5161748,0,145503,0,0
+Defeat the following bosses on Heroic difficulty.,"Heroic: Aberrus, the Shadowed Crucible",,18161,2569,-1,18160,15468,0,10,0,24,5161748,0,145513,0,0
+Defeat the following bosses on Mythic difficulty.,"Mythic: Aberrus, the Shadowed Crucible",,18162,2569,-1,18161,15468,0,10,0,25,5161748,0,145523,0,0
+"Defeat the following bosses in the experimental laboratories of Aberrus, the Shadowed Crucible.",Discarded Works,,18163,2569,-1,0,15468,0,10,0,26,5161744,0,145533,0,0
+"Defeat the following bosses in the wing of Aberrus, the Shadowed Crucible.",Fury of Giants,,18164,2569,-1,0,15468,0,10,0,27,5161752,0,145537,0,0
+"Defeat the following bosses in the depths of Aberrus, the Shadowed Crucible.",Neltharion's Shadow,,18165,2569,-1,0,15468,0,10,0,28,5161747,0,145541,0,0
+"Descend to the edge of reality and confront Scalecommander Sarkareth within Aberrus, the Shadowed Crucible.",Edge of the Void,,18167,2569,-1,0,15468,0,10,0,29,5161750,0,145544,0,0
+"Defeat the Shadowflame Amalgamation after using Umbral Detonation, Fiery Meteor and Blistering Twilight on a Forgotten Specimen Tank to create and extinguish a Shadowflame Remnant in Aberrus, the Shadowed Crucible on Normal difficulty or higher.",I'll Make My Own Shadowflame,,18168,2569,-1,0,15468,0,10,0,40,4952369,0,145799,0,0
 Hidden tracking achievement for 10.1 Snailies. [DNT],[DNT] Shimmershell Snail,,18169,-1,-1,0,15118,0,0,3276804,2,136243,0,145552,0,0
 "Defeat Magmorax after feeding him 20 Spicy Lava Snails in Aberrus, the Shadowed Crucible on Normal difficulty or higher.",Escar-Go-Go-Go,,18172,2569,-1,0,15468,0,10,0,45,3996704,0,145591,0,0
 "Defeat The Forgotten Experiments after Nutraal is hit 3 times by Rending Charge, Volatile Spew, and Deep Breath in Aberrus, the Shadowed Crucible on Normal difficulty or higher.",Tabula Rasa,,18173,2569,-1,0,15468,0,10,0,41,4616665,0,145593,0,0
-Defeat the Animated Contaminant during the Researchers Under Fire: Titan Lockdown event.,Contaminant Cleaner,,18174,-1,-1,0,15465,0,10,0,124,651081,0,145609,0,0
-Among the first two hundred guilds worldwide to defeat Scalecommander Sarkareth on Mythic difficulty.,Hall of Fame: Scalecommander Sarkareth,Title Reward: Famed Slayer of Sarkareth,18176,2569,-1,0,15093,0,0,4258304,47,136243,0,145615,0,0
-"Defeat the following bosses in Aberrus, the Shadowed Crucible on Normal difficulty or higher while in a guild group.","Aberrus, the Shadowed Crucible Guild Run",,18177,2569,-1,0,15471,0,10,61440,4,136243,0,145617,0,0
-"Defeat the following bosses in Aberrus, the Shadowed Crucible on Heroic difficulty or higher while in a guild group.","Heroic: Aberrus, the Shadowed Crucible Guild Run",,18178,2569,-1,0,15471,0,10,61440,5,136243,0,145627,0,0
-Defeat Scalecommander Sarkareth in Vault of the Incarnates on Mythic Difficulty while in a guild group.,Mythic: Scalecommander Sarkareth Guild Run,,18179,2522,-1,0,15471,0,10,61440,6,136243,0,145637,0,0
+Defeat the Animated Contaminant during the Researchers Under Fire: Titan Lockdown event.,Contaminant Cleaner,,18174,-1,-1,0,15465,0,10,0,125,651081,0,145609,0,0
+Among the first two hundred guilds worldwide to defeat Scalecommander Sarkareth on Mythic difficulty.,Hall of Fame: Scalecommander Sarkareth,Title Reward: Famed Slayer of Sarkareth,18176,2569,-1,0,15093,0,0,4258304,47,5161750,0,145615,0,0
+"Defeat the following bosses in Aberrus, the Shadowed Crucible on Normal difficulty or higher while in a guild group.","Aberrus, the Shadowed Crucible Guild Run",,18177,2569,-1,0,15471,0,10,61440,4,5161748,0,145617,0,0
+"Defeat the following bosses in Aberrus, the Shadowed Crucible on Heroic difficulty or higher while in a guild group.","Heroic: Aberrus, the Shadowed Crucible Guild Run",,18178,2569,-1,0,15471,0,10,61440,5,5161748,0,145627,0,0
+Defeat Scalecommander Sarkareth in Vault of the Incarnates on Mythic Difficulty while in a guild group.,Mythic: Scalecommander Sarkareth Guild Run,,18179,2522,-1,0,15471,0,10,61440,6,5161750,0,145637,0,0
 ,"Kazzara, the Hellforged kills (Raid Finder Aberrus, the Shadowed Crucible)",,18180,2569,-1,0,15469,0,0,1,57,136243,0,145639,0,0
 ,"The Amalgamation Chamber kills (Raid Finder Aberrus, the Shadowed Crucible)",,18181,2569,-1,0,15469,0,0,1,58,136243,0,145641,0,0
 ,"The Forgotten Experiments kills (Raid Finder Aberrus, the Shadowed Crucible)",,18182,2569,-1,0,15469,0,0,1,59,136243,0,145643,0,0
@@ -9336,23 +9336,23 @@ Defeat Scalecommander Sarkareth in Vault of the Incarnates on Mythic Difficulty 
 ,"The Amalgamation Chamber kills (Normal Aberrus, the Shadowed Crucible)",,18190,2569,-1,0,15469,0,0,1,67,136243,0,145659,0,0
 ,"The Forgotten Experiments kills (Normal Aberrus, the Shadowed Crucible)",,18191,2569,-1,0,15469,0,0,1,68,136243,0,145661,0,0
 ,"Assault of the Zaqali kills (Normal Aberrus, the Shadowed Crucible)",,18192,2569,-1,0,15469,0,0,1,69,136243,0,145663,0,0
-"Defeat The Vigilant Steward, Zskarn while a member of your raid is carrying the Delicate Experimental Egg in Aberrus, the Shadowed Crucible on Normal difficulty or higher.",Eggscellent Eggsecution,,18193,2569,-1,0,15468,0,0,0,44,4509413,0,0,0,0
+"Defeat The Vigilant Steward, Zskarn while a member of your raid is carrying the Delicate Experimental Egg in Aberrus, the Shadowed Crucible on Normal difficulty or higher.",Eggscellent Eggsecution,,18193,2569,-1,0,15468,0,0,0,44,4509413,0,146254,0,0
 ,"Rashok, the Elder kills (Normal Aberrus, the Shadowed Crucible)",,18194,2569,-1,0,15469,0,0,1,70,136243,0,145665,0,0
 ,"The Vigilant Steward, Zskarn kills (Normal Aberrus, the Shadowed Crucible)",,18195,2569,-1,0,15469,0,0,1,71,136243,0,145667,0,0
 ,"Magmorax kills (Normal Aberrus, the Shadowed Crucible)",,18196,2569,-1,0,15469,0,0,1,72,136243,0,145669,0,0
 ,"Echo of Neltharion kills (Normal Aberrus, the Shadowed Crucible)",,18197,2569,-1,0,15469,0,0,1,73,136243,0,145671,0,0
 ,"Scalecommander Sarkareth kills (Normal Aberrus, the Shadowed Crucible)",,18198,2569,-1,0,15469,0,0,1,74,136243,0,145673,0,0
-Defeat Ritualmaster Skarna and the Elder Magma Worm during the Researchers Under Fire: Zaqali Ruin Investigation event.,Zaqali Ritual Buster,,18199,-1,-1,0,15465,0,10,0,125,4237659,0,145675,0,0
-Complete the following achievements during the Researchers Under Fire event located in the Zaralek Cavern.,Cooling the Research Field,,18200,-1,-1,0,15465,0,15,131072,126,413575,0,145726,0,0
-Defeat the Contaminated Titan Watcher during the Researchers Under Fire: Titan Lockdown event.,Lockdown Mystery,,18201,-1,-1,0,15465,0,10,0,127,254117,0,145692,0,0
-Destory 100 boulders during the Researchers Under Fire: Titan Lockdown event.,Rockin Research,,18202,-1,-1,0,15465,0,10,0,128,962047,0,0,0,0
-Gather 100 Titan Parts and 100 Curious Ore Samples during the Researchers Under Fire: Titan Lockdown event.,A Research Sampler,,18203,-1,-1,0,15465,0,10,0,129,2915723,0,0,0,0
-Defeat the Monstrous Magmaclaw Snapper during the Researchers Under Fire: Zaqali Ruin Investigation event.,Research Mishap,,18204,-1,-1,0,15465,0,10,0,130,2027886,0,145694,0,0
-Restore 100 Djaradin Pillar Shards during the Researchers Under Fire: Zaqali Ruin Investigation event.,A Pillar of the Research Community,,18205,-1,-1,0,15465,0,10,0,131,1016245,0,0,0,0
-Restore 50 Resilient Stones to the Zaqali altar during the Researchers Under Fire: Zaqali Ruin Investigation event.,A Djaradin Puzzle,,18206,-1,-1,0,15465,0,10,0,132,1029027,0,0,0,0
-Kill 500 hostile creatures during either of the Researchers Under Fire events.,Hot Research Zone,,18207,-1,-1,0,15465,0,10,0,134,236734,0,0,0,0
-Stomp on 200 Magmaclaw Snappers during the Researchers Under Fire: Zaqali Ruin Investigation event.,The Small Disruptions,,18208,-1,-1,0,15465,0,10,0,135,1508496,0,0,0,0
-Defeat the Sundered Flame leader Captain Reykal during either of the Researchers Under Fire events.,Nothing Stops the Research,,18209,-1,-1,0,15465,0,10,0,133,4700796,0,145696,0,0
+Defeat Ritualmaster Skarna and the Elder Magma Worm during the Researchers Under Fire: Zaqali Ruin Investigation event.,Zaqali Ritual Buster,,18199,-1,-1,0,15465,0,10,0,126,4237659,0,145675,0,0
+Complete the following achievements during the Researchers Under Fire event located in Zaralek Cavern.,Cooling the Research Field,Title: Field Researcher,18200,-1,-1,0,15465,0,15,131072,127,413575,0,145726,0,0
+Defeat the Contaminated Titan Watcher during the Researchers Under Fire: Titan Lockdown event.,Lockdown Mystery,,18201,-1,-1,0,15465,0,5,0,128,254117,0,145692,0,0
+Destroy 100 boulders during the Researchers Under Fire: Titan Lockdown event.,Rockin Research,,18202,-1,-1,0,15465,0,10,0,129,962047,0,146210,0,0
+Gather 100 Curious Ore Samples during the Researchers Under Fire: Titan Lockdown event.,A Research Sampler,,18203,-1,-1,0,15465,0,5,0,130,4661456,0,146220,0,0
+Defeat the Monstrous Magmaclaw Snapper during the Researchers Under Fire: Zaqali Ruin Investigation event.,Research Mishap,,18204,-1,-1,0,15465,0,5,0,131,2027886,0,145694,0,0
+Restore 100 Djaradin Pillar Shards during the Researchers Under Fire: Zaqali Ruin Investigation event.,A Pillar of the Research Community,,18205,-1,-1,0,15465,0,5,0,132,1016245,0,146216,0,0
+Restore 50 Resilient Stones to the Zaqali altar during the Researchers Under Fire: Zaqali Ruin Investigation event.,A Djaradin Puzzle,,18206,-1,-1,0,15465,0,10,0,133,1029027,0,146218,0,0
+Kill 500 hostile creatures during either of the Researchers Under Fire events.,Hot Research Zone,,18207,-1,-1,0,15465,0,10,0,135,236734,0,146227,0,0
+Stomp on 200 Magmaclaw Snappers during the Researchers Under Fire: Zaqali Ruin Investigation event.,The Small Disruptions,,18208,-1,-1,0,15465,0,10,0,136,1508496,0,146225,0,0
+Defeat the Sundered Flame leader Captain Reykal during either of the Researchers Under Fire events.,Nothing Stops the Research,,18209,-1,-1,0,15465,0,5,0,134,4700796,0,145696,0,0
 ,"Kazzara, the Hellforged kills (Heroic Aberrus, the Shadowed Crucible)",,18210,2569,-1,0,15469,0,0,1,75,136243,0,145680,0,0
 ,"The Amalgamation Chamber kills (Heroic Aberrus, the Shadowed Crucible)",,18211,2569,-1,0,15469,0,0,1,76,136243,0,145682,0,0
 ,"The Forgotten Experiments kills (Heroic Aberrus, the Shadowed Crucible)",,18212,2569,-1,0,15469,0,0,1,77,136243,0,145684,0,0
@@ -9372,32 +9372,34 @@ Defeat the Sundered Flame leader Captain Reykal during either of the Researchers
 ,"Echo of Neltharion kills (Mythic Aberrus, the Shadowed Crucible)",,18226,2522,-1,0,15469,0,0,1,91,136243,0,145761,0,0
 ,"Scalecommander Sarkareth kills (Mythic Aberrus, the Shadowed Crucible)",,18227,2522,-1,0,15469,0,0,1,92,136243,0,145763,0,0
 "Defeat the Assault of the Zaqali after hitting the following creatures with a Cave Pebble in Aberrus, the Shadowed Crucible on Normal difficulty or higher.",Are You Even Trying?,,18228,2569,-1,0,15468,0,10,0,42,1385913,0,145806,0,0
-"Defeat Kazzara, the Hellforged after all players have shattered their own Hellsteel Plating in Aberrus, the Shadowed Crucible on Normal difficulty or higher.",Cosplate,,18229,2569,-1,0,15468,0,10,0,39,574790,0,145808,0,0
-"Defeat Rashok, the Elder after hitting the Lost Lunker with Searing Slam 5 times in Aberrus, the Shadowed Crucible on Normal difficulty or higher.",Whac-A-Swog,,18230,2569,-1,0,15468,0,0,0,43,4879737,0,0,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 1 (Character),,18231,-1,-1,0,15465,0,0,1048580,105,136243,0,145818,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 2 (Character),,18232,-1,-1,0,15465,0,0,1048580,106,136243,0,145820,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 4 (Character),,18233,-1,-1,0,15465,0,0,1048580,107,136243,0,145822,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 8 (Character),,18234,-1,-1,0,15465,0,0,1048580,108,136243,0,145824,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 11 (Character),,18235,-1,-1,0,15465,0,0,1048580,109,136243,0,145826,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 12 (Character),,18236,-1,-1,0,15465,0,0,1048580,110,136243,0,145828,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 14 (Character),,18237,-1,-1,0,15465,0,0,1048580,111,136243,0,145830,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 16 (Character),,18238,-1,-1,0,15465,0,0,1048580,112,136243,0,145832,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 17 (Character),,18239,-1,-1,0,15465,0,0,1048580,113,136243,0,145834,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 18 (Character),,18240,-1,-1,0,15465,0,0,1048580,114,136243,0,145836,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 20 (Character),,18241,-1,-1,0,15465,0,0,1048580,115,136243,0,145838,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 23 (Character),,18242,-1,-1,0,15465,0,0,1048580,116,136243,0,145840,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 24 (Character),,18243,-1,-1,0,15465,0,0,1048580,117,136243,0,145842,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 25 (Character),,18244,-1,-1,0,15465,0,0,1048580,118,136243,0,145844,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 26 (Character),,18245,-1,-1,0,15465,0,0,1048580,119,136243,0,145846,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 27 (Character),,18246,-1,-1,0,15465,0,0,1048580,120,136243,0,145848,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 28 (Character),,18247,-1,-1,0,15465,0,0,1048580,121,136243,0,145850,0,0
-,<DNT> Niffen Cave Dive - Completed At Least Once - Tutorial Objectives (Character),,18248,-1,-1,0,15465,0,0,1048580,122,136243,0,145852,0,0
+"Defeat Kazzara, the Hellforged after shattering your own Hellsteel Plating in Aberrus, the Shadowed Crucible on Normal difficulty or higher.",Cosplate,,18229,2569,-1,0,15468,0,10,0,39,574790,0,145808,0,0
+"Defeat Rashok, the Elder after hitting the Lost Lunker with Searing Slam 5 times in Aberrus, the Shadowed Crucible on Normal difficulty or higher.",Whac-A-Swog,,18230,2569,-1,0,15468,0,10,0,43,4879737,0,146176,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 1 (Character),,18231,-1,-1,0,15465,0,0,1048580,106,136243,0,145818,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 2 (Character),,18232,-1,-1,0,15465,0,0,1048580,107,136243,0,145820,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 4 (Character),,18233,-1,-1,0,15465,0,0,1048580,108,136243,0,145822,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 8 (Character),,18234,-1,-1,0,15465,0,0,1048580,109,136243,0,145824,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 11 (Character),,18235,-1,-1,0,15465,0,0,1048580,110,136243,0,145826,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 12 (Character),,18236,-1,-1,0,15465,0,0,1048580,111,136243,0,145828,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 14 (Character),,18237,-1,-1,0,15465,0,0,1048580,112,136243,0,145830,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 16 (Character),,18238,-1,-1,0,15465,0,0,1048580,113,136243,0,145832,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 17 (Character),,18239,-1,-1,0,15465,0,0,1048580,114,136243,0,145834,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 18 (Character),,18240,-1,-1,0,15465,0,0,1048580,115,136243,0,145836,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 20 (Character),,18241,-1,-1,0,15465,0,0,1048580,116,136243,0,145838,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 23 (Character),,18242,-1,-1,0,15465,0,0,1048580,117,136243,0,145840,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 24 (Character),,18243,-1,-1,0,15465,0,0,1048580,118,136243,0,145842,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 25 (Character),,18244,-1,-1,0,15465,0,0,1048580,119,136243,0,145844,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 26 (Character),,18245,-1,-1,0,15465,0,0,1048580,120,136243,0,145846,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 27 (Character),,18246,-1,-1,0,15465,0,0,1048580,121,136243,0,145848,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Puzzle 28 (Character),,18247,-1,-1,0,15465,0,0,1048580,122,136243,0,145850,0,0
+,<DNT> Niffen Cave Dive - Completed At Least Once - Tutorial Objectives (Character),,18248,-1,-1,0,15465,0,0,1048580,123,136243,0,145852,0,0
 Collect any armor set from Dragonflight PvP Season 2.,Obsidian Tie Event,,18249,-1,-1,0,15259,0,10,131072,77,4279078,0,145881,0,0
 "Complete the Aberrus, the Shadowed Crucible raid achievements listed below.",Glory of the Aberrus Raider,Mount Reward: Shadowflame Shalewing,18251,2569,-1,0,168,0,25,143360,59,4630363,205205,145901,0,0
-"Defeat Scalecommander Sarkareth in Aberrus, the Shadowed Crucible on Heroic difficulty or higher, before the release of the next raid tier.",Ahead of the Curve: Scalecommander Sarkareth,,18253,2569,-1,0,15271,0,0,6144,81,136243,0,145937,0,0
-"Defeat  Scalecommander Sarkareth in Aberrus, the Shadowed Crucible on Mythic difficulty, before the release of the next raid tier.",Cutting Edge: Scalecommander Sarkareth,,18254,2569,-1,18253,15271,0,0,6144,82,4630364,0,145940,0,0
-Complete the following Sniffenseek digs alongside a niffen companion.,Proof of Myrrit,,18255,-1,-1,0,15465,0,5,0,102,648644,0,145942,0,0
-Complete 50 Sniffenseek digs alongside a niffen companion.,Can You Dig It?,,18257,-1,-1,0,15465,0,5,0,103,1060570,0,145972,0,0
+"Defeat Scalecommander Sarkareth in Aberrus, the Shadowed Crucible on Heroic difficulty or higher, before the release of the next raid tier.",Ahead of the Curve: Scalecommander Sarkareth,,18253,2569,-1,0,15271,0,0,6144,81,5161750,0,145937,0,0
+"Defeat  Scalecommander Sarkareth in Aberrus, the Shadowed Crucible on Mythic difficulty, before the release of the next raid tier.",Cutting Edge: Scalecommander Sarkareth,,18254,2569,-1,18253,15271,0,0,6144,82,5161750,0,145940,0,0
+Complete the following Sniffenseek digs alongside a niffen companion.,Proof of Myrrit,,18255,-1,-1,0,15465,0,5,0,103,648644,0,145942,0,0
+Complete 50 Sniffenseek digs alongside a niffen companion.,Can You Dig It?,,18257,-1,-1,0,15465,0,5,0,104,1060570,0,145972,0,0
 Owner of the Baal'ial pet.,Little Lord of Lies,,18258,-1,-1,0,15268,1,0,133120,46,1722953,0,145974,0,0
 Acquire Salverun.,He'sSss All Mine,,18271,-1,-1,0,169,0,15,131072,92,132160,0,145978,0,0
-Complete the following Sniffenseek achievements.,A Mole's Best Friend,Title Reward: Sniffenseeker,18284,-1,-1,0,15465,0,0,0,104,1786409,0,145982,0,0
+Complete the following Sniffenseek achievements.,A Mole's Best Friend,Title Reward: Sniffenseeker,18284,-1,-1,0,15465,0,0,0,105,1786409,0,145982,0,0
+,<Hidden> Account has completed 10.1 Upgrade System tutorial quests,,18359,-1,-1,0,15455,0,0,3276804,61,136243,0,146132,0,0
+"The critters of Zaralek Cavern avoid the light of the sun, but not the light of your /love.",To All the Squirrels Burrowed Beneath,,18361,-1,-1,0,15465,0,10,0,55,237182,0,146197,0,0

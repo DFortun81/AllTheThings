@@ -42,6 +42,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
 					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
 				}),
+				q(72955, {	-- Zskera Vault: Kx
+					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
+					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
+				}),
 				q(72952, {	-- The Scary Vault of Ur
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
@@ -90,6 +95,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 201180 },	-- Cataloger Wulferd
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
+					["isWeekly"] = true,
 					["g"] = {
 						i(204305),	-- Neltharion Signed Notes
 					},
@@ -384,6 +390,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["g"] = {
 								i(204278),	-- Nelthation's Toolkit
 							},
+						}),
+						o(388471, {	-- Pillaged Primordial Cache
+							["coord"] = { 29.6, 56.6, THE_FORBIDDEN_REACH },
+							["questID"] = 74874,
 						}),
 						o(385028, {	-- Powerful Flask of Renewal
 							["coord"] = { 24.6, 52.1, THE_FORBIDDEN_REACH },
@@ -1207,7 +1217,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75172),	-- Pulled Chain Second Floor
 		q(75170),	-- Pulled Chain Third Floor
 		q(75171),	-- Pulled Chain Fourth Floor
-		q(75174),	-- Pulled Chain Fourth Floor
+		q(75174),	-- Pulled Chain Third Floor
 		-- Stone Dissolver
 		q(75069),	-- On Primordial Earth Cache 389789
 		q(75070),	-- On Primordial Earth Cache 389902
@@ -1221,8 +1231,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75001),	-- During 'A Difficult Legacy' (questID 74996)
 		q(75002),	-- During 'A Difficult Legacy' (questID 74996)
 		q(75003),	-- During 'A Difficult Legacy' (questID 74996)
-		--
-		q(74874),	-- Pop when completing Primordial Answers (74869)
 		--
 		q(74978),	-- Repairing the Broken Waygate with Neltharion's Toolkit in The Waking Shores
 	}),

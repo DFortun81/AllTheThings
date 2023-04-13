@@ -17,6 +17,7 @@ db\CategoryDB.lua
 db\FlightPathDB.lua
 db\ObjectDB.lua
 db\RaceDB.lua
+db\ReagentsDB.lua
 locales\en.lua
 locales\en_auto.lua
 locales\es.lua

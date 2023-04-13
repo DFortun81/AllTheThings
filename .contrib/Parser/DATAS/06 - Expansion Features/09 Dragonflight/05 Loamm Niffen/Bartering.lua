@@ -80,7 +80,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(205137, {	-- Plans: Shadowed Alloy (RECIPE!)
 							["cost"] = { { "i", PONZOS_CREAM, 1 } },
 						}),
-						i(205143, {	-- Plans: Shadowed Belt Buckle (RECIPE!)
+						i(205143, {	-- Plans: Shadowed Belt Clasp (RECIPE!)
 							["cost"] = { { "i", VOUCHER, 1 } },
 						}),
 						i(204634),	-- Rot Resistant Cauldron

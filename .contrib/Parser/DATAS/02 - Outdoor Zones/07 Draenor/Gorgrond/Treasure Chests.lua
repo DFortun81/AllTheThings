@@ -2,74 +2,74 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-local COMMON_TREASURE_SYM = {
+local COMMON_TREASURE_SYM = {{"select","itemID",
 	-- Weapons
-	{"select","itemID",116508},	-- Creeperclaw Axe
-	{"select","itemID",116510},	-- Creeperclaw Bow
-	{"select","itemID",116509},	-- Creeperclaw Broadaxe
-	{"select","itemID",116511},	-- Creeperclaw Crossbow
-	{"select","itemID",116512},	-- Creeperclaw Dagger
-	{"select","itemID",116523},	-- Creeperclaw Greatsword
-	{"select","itemID",116515},	-- Creeperclaw Gun
-	{"select","itemID",116518},	-- Creeperclaw Hammer
-	{"select","itemID",116514},	-- Creeperclaw Knuckles
-	{"select","itemID",116516},	-- Creeperclaw Mace
-	{"select","itemID",116519},	-- Creeperclaw Spear
-	{"select","itemID",116521},	-- Creeperclaw Staff
-	{"select","itemID",116520},	-- Creeperclaw Staff
-	{"select","itemID",116522},	-- Creeperclaw Sword
-	{"select","itemID",116517},	-- Evermorn Scepter
-	{"select","itemID",116513},	-- Evermorn Spellblade
-	{"select","itemID",116703},	-- Evermorn Twig
-	{"select","itemID",116524},	-- Evermorn Wand
-	{"select","itemID",106496},	-- Shardback Shield
+	116508,	-- Creeperclaw Axe
+	116510,	-- Creeperclaw Bow
+	116509,	-- Creeperclaw Broadaxe
+	116511,	-- Creeperclaw Crossbow
+	116512,	-- Creeperclaw Dagger
+	116523,	-- Creeperclaw Greatsword
+	116515,	-- Creeperclaw Gun
+	116518,	-- Creeperclaw Hammer
+	116514,	-- Creeperclaw Knuckles
+	116516,	-- Creeperclaw Mace
+	116519,	-- Creeperclaw Spear
+	116521,	-- Creeperclaw Staff
+	116520,	-- Creeperclaw Staff
+	116522,	-- Creeperclaw Sword
+	116517,	-- Evermorn Scepter
+	116513,	-- Evermorn Spellblade
+	116703,	-- Evermorn Twig
+	116524,	-- Evermorn Wand
+	106496,	-- Shardback Shield
 	-- Head
-	{"select","itemID",106518},	-- Highland Helm
-	{"select","itemID",106507},	-- Mandragoran Cowl
-	{"select","itemID",106492},	-- Shardback Helm
-	{"select","itemID",106502},	-- Steamscar Hood
+	106518,	-- Highland Helm
+	106507,	-- Mandragoran Cowl
+	106492,	-- Shardback Helm
+	106502,	-- Steamscar Hood
 	-- Neck
-	{"select","itemID",116680},	-- Evermorn Amulet
+	116680,	-- Evermorn Amulet
 	-- Shoulders
-	{"select","itemID",106520},	-- Highland Spaulders
-	{"select","itemID",106512},	-- Mandragoran Shoulderpads
-	{"select","itemID",106494},	-- Shardback Pauldrons
-	{"select","itemID",106504},	-- Steamscar Shoulders
+	106520,	-- Highland Spaulders
+	106512,	-- Mandragoran Shoulderpads
+	106494,	-- Shardback Pauldrons
+	106504,	-- Steamscar Shoulders
 	-- Bacj
-	{"select","itemID",116702},	-- Evermorn Cloak
+	116702,	-- Evermorn Cloak
 	-- Chest
-	{"select","itemID",106521},	-- Highland Vest
-	{"select","itemID",106510},	-- Mandragoran Robe
-	{"select","itemID",106489},	-- Shardback Breastplate
-	{"select","itemID",106503},	-- Steamscar Jerkin
+	106521,	-- Highland Vest
+	106510,	-- Mandragoran Robe
+	106489,	-- Shardback Breastplate
+	106503,	-- Steamscar Jerkin
 	-- Wrist
-	{"select","itemID",106515},	-- Highland Bracers
-	{"select","itemID",106513},	-- Mandragoran Wristwraps
-	{"select","itemID",106497},	-- Shardback Vambraces
-	{"select","itemID",106498},	-- Steamscar Bindings
+	106515,	-- Highland Bracers
+	106513,	-- Mandragoran Wristwraps
+	106497,	-- Shardback Vambraces
+	106498,	-- Steamscar Bindings
 	-- Hands
-	{"select","itemID",106516},	-- Highland Gauntlets
-	{"select","itemID",106508},	-- Mandragoran Handwraps
-	{"select","itemID",106490},	-- Shardback Gauntlets
-	{"select","itemID",106501},	-- Steamscar Gloves
+	106516,	-- Highland Gauntlets
+	106508,	-- Mandragoran Handwraps
+	106490,	-- Shardback Gauntlets
+	106501,	-- Steamscar Gloves
 	-- Waist
-	{"select","itemID",106514},	-- Highland Belt
-	{"select","itemID",106506},	-- Mandragoran Cord
-	{"select","itemID",106491},	-- Shardback Girdle
-	{"select","itemID",106505},	-- Steamscar Waistband
+	106514,	-- Highland Belt
+	106506,	-- Mandragoran Cord
+	106491,	-- Shardback Girdle
+	106505,	-- Steamscar Waistband
 	-- Legs
-	{"select","itemID",106519},	-- Highland Legguards
-	{"select","itemID",106509},	-- Mandragoran Leggings
-	{"select","itemID",106493},	-- Shardback Legplates
-	{"select","itemID",106500},	-- Steamscar Britches
+	106519,	-- Highland Legguards
+	106509,	-- Mandragoran Leggings
+	106493,	-- Shardback Legplates
+	106500,	-- Steamscar Britches
 	-- Feet
-	{"select","itemID",106517},	-- Highland Greaves
-	{"select","itemID",106511},	-- Mandragoran Sandals
-	{"select","itemID",106495},	-- Shardback Sabatons
-	{"select","itemID",106499},	-- Steamscar Boots
+	106517,	-- Highland Greaves
+	106511,	-- Mandragoran Sandals
+	106495,	-- Shardback Sabatons
+	106499,	-- Steamscar Boots
 	-- Finger
-	{"select","itemID",116704},	-- Evermorn Ring
-};
+	116704,	-- Evermorn Ring
+}};
 
 _.Zones =
 {

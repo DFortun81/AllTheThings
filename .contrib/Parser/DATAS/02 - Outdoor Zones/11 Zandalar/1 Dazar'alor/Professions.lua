@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				n(122702, {	-- Enchantress Quinni <Enchanting Trainer>
 					["coord"] = { 47.0, 35.8, THE_GREAT_SEAL },
 					["races"] = HORDE_ONLY,
-					["g"] = bubbleDown({ ["requireSkill"] = ENCHANTING, ["races"] = HORDE_ONLY }, appendGroups(BFA_ENCHANTING, {
+					["g"] = appendGroups(BFA_ENCHANTING, {
 						r(265805),	-- Zandalari Enchanting
 						cat(657, {	-- Armor Enchantments
 							r(267495),	-- Swift Hearthing
@@ -100,7 +100,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 							r(267486),	-- Zandalari Skinning
 							r(267490),	-- Zandalari Surveying
 						}),
-					})),
+					}),
 				}),
 			}),
 			prof(ENGINEERING, {

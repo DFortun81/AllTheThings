@@ -15,3 +15,6 @@ r(388252),	-- Draconium Net Weights
 r(388253),	-- Dense Draconium Net Weights
 r(388254),	-- Imbu Knot
 r(388255),	-- Double Imbu Knot
+
+
+Nothing is Missing in Tuskarr Fishing GearItemDB.lua! Good Work!

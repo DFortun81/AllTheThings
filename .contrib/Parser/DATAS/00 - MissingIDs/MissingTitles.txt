@@ -17,3 +17,6 @@ title(504),	-- %s the Smoldering Hero \\ %s the <PH Season 2 Hero Title>
 title(505),	-- %s, Heir to the Void
 title(506),	-- %s, Famed Slayer of Sarkareth
 title(507),	-- %s, Sniffenseeker
+10.1.0.49092
+title(508),	-- Field Researcher %s
+title(509),	-- Zaralek Cavern Racer %s

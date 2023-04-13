@@ -2373,9 +2373,9 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { TALADOR },
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37813, {	-- Death to Amethon!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
@@ -2383,18 +2383,18 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["maps"] = { TALADOR },
 				["isDaily"] = true,
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37774, {	-- Death to Gor'thul!
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { SPIRES_OF_ARAK },
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37814, {	-- Death to Gor'thul!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
@@ -2402,18 +2402,18 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["maps"] = { SPIRES_OF_ARAK },
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37778, {	-- Death to Hivelord Ik'rix!
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { FROSTFIRE_RIDGE },
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37818, {	-- Death to Hivelord Ik'rix!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
@@ -2421,18 +2421,18 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["maps"] = { FROSTFIRE_RIDGE },
 				["isDaily"] = true,
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37775, {	-- Death to Nullifier Darkoor!
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { DRAENOR_NAGRAND },
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37815, {	-- Death to Nullifier Darkoor!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
@@ -2440,18 +2440,18 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["maps"] = { DRAENOR_NAGRAND },
 				["isDaily"] = true,
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37948, {	-- Death to Nullifier Darkoor!
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { DRAENOR_NAGRAND },
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37949, {	-- Death to Nullifier Darkoor!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
@@ -2459,18 +2459,18 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["maps"] = { DRAENOR_NAGRAND },
 				["isDaily"] = true,
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37777, {	-- Death to Tremor!
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { GORGROND },
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37817, {	-- Death to Tremor!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
@@ -2478,18 +2478,18 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["maps"] = { GORGROND },
 				["isDaily"] = true,
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37776, {	-- Death to Undertow!
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(37816, {	-- Death to Undertow!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
@@ -2497,9 +2497,9 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
 				["isDaily"] = true,
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-				["sym"] = {
-					{"select","itemID",122191},	-- Bloody Sack of Invitations
-				},
+				["sym"] = {{"select","itemID",
+					122191,    -- Bloody Sack of Invitations
+				}},
 			}),
 			q(34692, {	-- Delegating on Draenor
 				["sourceQuests"] = { 34646 },	-- Qiana Moonshadow

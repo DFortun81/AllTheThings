@@ -109,7 +109,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 2
-								{"exclude", "itemID", 146164 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135905),	-- Vindictive Combatant's Dreadcloak (A)
@@ -140,7 +139,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 2
-								{"exclude", "itemID", 146264 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136893),	-- Vindictive Combatant's Demonthread Cloak (A)
@@ -171,7 +169,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 2
-								{"exclude", "itemID", 146168 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135831),	-- Vindictive Combatant's Dragonhide Belt (A)
@@ -202,7 +199,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 2
-								{"exclude", "itemID", 146154 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135840),	-- Vindictive Combatant's Chain Armband (A)
@@ -233,7 +229,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 2
-								{"exclude", "itemID", 146156 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135846),	-- Vindictive Combatant's Silk Amice (A)
@@ -264,7 +259,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 2
-								{"exclude", "itemID", 146170 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135855),	-- Vindictive Combatant's Ironskin Belt (A)
@@ -295,7 +289,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 2
-								{"exclude", "itemID", 146166 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135914),	-- Vindictive Combatant's Greatcloak of Faith (A)
@@ -326,7 +319,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 2
-								{"exclude", "itemID", 146158 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136867),	-- Vindictive Combatant's Drape of Piety (A)
@@ -357,7 +349,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 2
-								{"exclude", "itemID", 146172 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135879),	-- Vindictive Combatant's Leather Belt (A)
@@ -388,7 +379,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 2
-								{"exclude", "itemID", 146152 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135888),	-- Vindictive Combatant's Ringmail Armband (A)
@@ -419,7 +409,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 2
-								{"exclude", "itemID", 146160 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135894),	-- Vindictive Combatant's Felweave Amice (A)
@@ -450,7 +439,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 2
-								{"exclude", "itemID", 146162 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136887),	-- Vindictive Combatant's Cloak of Battle (A)
@@ -508,7 +496,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 2
-								{"exclude", "itemID", 146132 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135679),	-- Vindictive Gladiator's Dreadcloak (A)
@@ -539,7 +526,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 2
-								{"exclude", "itemID", 146262 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136891),	-- Vindictive Gladiator's Demonthread Cloak (A)
@@ -570,7 +556,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 2
-								{"exclude", "itemID", 146140 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135605),	-- Vindictive Gladiator's Dragonhide Belt (A)
@@ -601,7 +586,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 2
-								{"exclude", "itemID", 146138 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135614),	-- Vindictive Gladiator's Chain Armband (A)
@@ -632,7 +616,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 2
-								{"exclude", "itemID", 146146 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135620),	-- Vindictive Gladiator's Silk Amice (A)
@@ -663,7 +646,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 2
-								{"exclude", "itemID", 146142 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135629),	-- Vindictive Gladiator's Ironskin Belt (A)
@@ -694,7 +676,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 2
-								{"exclude", "itemID", 146134 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135688),	-- Vindictive Gladiator's Greatcloak of Faith (A)
@@ -725,7 +706,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 2
-								{"exclude", "itemID", 146148 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136861),	-- Vindictive Gladiator's Drape of Piety (A)
@@ -756,7 +736,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 2
-								{"exclude", "itemID", 146144 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135653),	-- Vindictive Gladiator's Leather Belt (A)
@@ -787,7 +766,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 2
-								{"exclude", "itemID", 146136 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135662),	-- Vindictive Gladiator's Ringmail Armband (A)
@@ -818,7 +796,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 2
-								{"exclude", "itemID", 146150 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135668),	-- Vindictive Gladiator's Felweave Amice (A)
@@ -849,7 +826,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 2
-								{"exclude", "itemID", 146130 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136885),	-- Vindictive Gladiator's Cloak of Battle (A)
@@ -907,7 +883,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 2
-								{"exclude", "itemID", 146220 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136131)),	-- Vindictive Gladiator's Dreadcloak (A)
@@ -938,7 +913,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 2
-								{"exclude", "itemID", 146270 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136895)),	-- Vindictive Gladiator's Demonthread Cloak (A)
@@ -969,7 +943,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 2
-								{"exclude", "itemID", 146228 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136057)),	-- Vindictive Gladiator's Dragonhide Belt (A)
@@ -1000,7 +973,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 2
-								{"exclude", "itemID", 146226 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136066)),	-- Vindictive Gladiator's Chain Armband (A)
@@ -1031,7 +1003,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 2
-								{"exclude", "itemID", 146234 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136072)),	-- Vindictive Gladiator's Silk Amice (A)
@@ -1062,7 +1033,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 2
-								{"exclude", "itemID", 146230 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136081)),	-- Vindictive Gladiator's Ironskin Belt (A)
@@ -1093,7 +1063,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 2
-								{"exclude", "itemID", 146222 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136140)),	-- Vindictive Gladiator's Greatcloak of Faith (A)
@@ -1124,7 +1093,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 2
-								{"exclude", "itemID", 146236 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136873)),	-- Vindictive Gladiator's Drape of Piety (A)
@@ -1155,7 +1123,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 2
-								{"exclude", "itemID", 146232 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136105)),	-- Vindictive Gladiator's Leather Belt (A)
@@ -1186,7 +1153,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 2
-								{"exclude", "itemID", 146224 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136114)),	-- Vindictive Gladiator's Ringmail Armband (A)
@@ -1217,7 +1183,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 2
-								{"exclude", "itemID", 146238 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136120)),	-- Vindictive Gladiator's Felweave Amice (A)
@@ -1248,7 +1213,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 2
-								{"exclude", "itemID", 146218 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136889)),	-- Vindictive Gladiator's Cloak of Battle (A)
@@ -1308,7 +1272,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 2
-								{"exclude", "itemID", 146165 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136018),	-- Vindictive Combatant's Dreadcloak (H)
@@ -1339,7 +1302,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 2
-								{"exclude", "itemID", 146265 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136894),	-- Vindictive Combatant's Demonthread Cloak (H)
@@ -1370,7 +1332,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 2
-								{"exclude", "itemID", 146169 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135944),	-- Vindictive Combatant's Dragonhide Belt (H)
@@ -1401,7 +1362,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 2
-								{"exclude", "itemID", 146155 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135953),	-- Vindictive Combatant's Chain Armband (H)
@@ -1432,7 +1392,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 2
-								{"exclude", "itemID", 146157 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135959),	-- Vindictive Combatant's Silk Amice (H)
@@ -1463,7 +1422,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 2
-								{"exclude", "itemID", 146171 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135968),	-- Vindictive Combatant's Ironskin Belt (H)
@@ -1494,7 +1452,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 2
-								{"exclude", "itemID", 146167 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136027),	-- Vindictive Combatant's Greatcloak of Faith (H)
@@ -1525,7 +1482,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 2
-								{"exclude", "itemID", 146159 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136870),	-- Vindictive Combatant's Drape of Piety (H)
@@ -1556,7 +1512,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 2
-								{"exclude", "itemID", 146173 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135992),	-- Vindictive Combatant's Leather Belt (H)
@@ -1587,7 +1542,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 2
-								{"exclude", "itemID", 146153 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136001),	-- Vindictive Combatant's Ringmail Armband (H)
@@ -1618,7 +1572,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 2
-								{"exclude", "itemID", 146161 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136007),	-- Vindictive Combatant's Felweave Amice (H)
@@ -1649,7 +1602,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 2
-								{"exclude", "itemID", 146163 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136888),	-- Vindictive Combatant's Cloak of Battle (H)
@@ -1707,7 +1659,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 2
-								{"exclude", "itemID", 146133 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135792),	-- Vindictive Gladiator's Dreadcloak (H)
@@ -1738,7 +1689,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 2
-								{"exclude", "itemID", 146263 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136892),	-- Vindictive Gladiator's Demonthread Cloak (H)
@@ -1769,7 +1719,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 2
-								{"exclude", "itemID", 146141 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135718),	-- Vindictive Gladiator's Dragonhide Belt (H)
@@ -1800,7 +1749,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 2
-								{"exclude", "itemID", 146139 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135727),	-- Vindictive Gladiator's Chain Armband (H)
@@ -1831,7 +1779,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 2
-								{"exclude", "itemID", 146147 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135733),	-- Vindictive Gladiator's Silk Amice (H)
@@ -1862,7 +1809,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 2
-								{"exclude", "itemID", 146143 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135742),	-- Vindictive Gladiator's Ironskin Belt (H)
@@ -1893,7 +1839,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 2
-								{"exclude", "itemID", 146135 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135801),	-- Vindictive Gladiator's Greatcloak of Faith (H)
@@ -1924,7 +1869,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 2
-								{"exclude", "itemID", 146149 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136864),	-- Vindictive Gladiator's Drape of Piety (H)
@@ -1955,7 +1899,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 2
-								{"exclude", "itemID", 146145 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135766),	-- Vindictive Gladiator's Leather Belt (H)
@@ -1986,7 +1929,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 2
-								{"exclude", "itemID", 146137 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136866),	-- Vindictive Gladiator's Totemic Cloak (H)
@@ -2017,7 +1959,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 2
-								{"exclude", "itemID", 146151 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135781),	-- Vindictive Gladiator's Felweave Amice (H)
@@ -2048,7 +1989,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 2
-								{"exclude", "itemID", 146131 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136886),	-- Vindictive Gladiator's Cloak of Battle (H)
@@ -2106,7 +2046,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 2
-								{"exclude", "itemID", 146221 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136244)),	-- Vindictive Gladiator's Dreadcloak (H)
@@ -2137,7 +2076,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 2
-								{"exclude", "itemID", 146271 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136896)),	-- Vindictive Gladiator's Demonthread Cloak (H)
@@ -2168,7 +2106,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 2
-								{"exclude", "itemID", 146229 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136170)),	-- Vindictive Gladiator's Dragonhide Belt (H)
@@ -2199,7 +2136,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 2
-								{"exclude", "itemID", 146227 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136179)),	-- Vindictive Gladiator's Chain Armband (H)
@@ -2230,7 +2166,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 2
-								{"exclude", "itemID", 146235 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136185)),	-- Vindictive Gladiator's Silk Amice (H)
@@ -2261,7 +2196,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 2
-								{"exclude", "itemID", 146231 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136194)),	-- Vindictive Gladiator's Ironskin Belt (H)
@@ -2292,7 +2226,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 2
-								{"exclude", "itemID", 146223 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136253)),	-- Vindictive Gladiator's Greatcloak of Faith (H)
@@ -2323,7 +2256,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 2
-								{"exclude", "itemID", 146237 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136876)),	-- Vindictive Gladiator's Drape of Piety (H)
@@ -2354,7 +2286,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 2
-								{"exclude", "itemID", 146233 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136218)),	-- Vindictive Gladiator's Leather Belt (H)
@@ -2385,7 +2316,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 2
-								{"exclude", "itemID", 146225 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136227)),	-- Vindictive Gladiator's Ringmail Armband (H)
@@ -2416,7 +2346,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 2
-								{"exclude", "itemID", 146239 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136233)),	-- Vindictive Gladiator's Felweave Amice (H)
@@ -2447,7 +2376,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEARLESS, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 2
-								{"exclude", "itemID", 146219 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(136890)),	-- Vindictive Gladiator's Cloak of Battle (H)
@@ -3657,7 +3585,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 4
-								{"exclude", "itemID", 147677 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145026),	-- Cruel Combatant's Dreadcloak (A)
@@ -3688,7 +3615,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 4
-								{"exclude", "itemID", 147680 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145028),	-- Cruel Combatant's Demonthread Cloak (A)
@@ -3719,7 +3645,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 4
-								{"exclude", "itemID", 147675 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145094),	-- Cruel Combatant's Dragonhide Belt (A)
@@ -3750,7 +3675,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 4
-								{"exclude", "itemID", 147689 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145112),	-- Cruel Combatant's Chain Armband (A)
@@ -3781,7 +3705,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 4
-								{"exclude", "itemID", 147696 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145124),	-- Cruel Combatant's Silk Amice (A)
@@ -3812,7 +3735,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 4
-								{"exclude", "itemID", 147684 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145142),	-- Cruel Combatant's Ironskin Belt (A)
@@ -3843,7 +3765,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 4
-								{"exclude", "itemID", 147693 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145038),	-- Cruel Combatant's Greatcloak of Faith (A)
@@ -3874,7 +3795,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 4
-								{"exclude", "itemID", 147688 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145040),	-- Cruel Combatant's Drape of Piety (A)
@@ -3905,7 +3825,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 4
-								{"exclude", "itemID", 147685 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145202),	-- Cruel Combatant's Leather Belt (A)
@@ -3936,7 +3855,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 4
-								{"exclude", "itemID", 147674 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145220),	-- Cruel Combatant's Ringmail Armband (A)
@@ -3967,7 +3885,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 4
-								{"exclude", "itemID", 147682 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145250),	-- Cruel Combatant's Felweave Amice (A)
@@ -3998,7 +3915,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 4
-								{"exclude", "itemID", 147692 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145048),	-- Cruel Combatant's Cloak of Battle (A)
@@ -4084,7 +4000,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 4
-								{"exclude", "itemID", 147650 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144534),	-- Cruel Gladiator's Dreadcloak (A)
@@ -4115,7 +4030,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 4
-								{"exclude", "itemID", 147651 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144536),	-- Cruel Gladiator's Demonthread Cloak (A)
@@ -4146,7 +4060,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 4
-								{"exclude", "itemID", 147647 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144602),	-- Cruel Gladiator's Dragonhide Belt (A)
@@ -4177,7 +4090,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 4
-								{"exclude", "itemID", 147646}, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144620),	-- Cruel Gladiator's Chain Armband (A)
@@ -4208,7 +4120,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 4
-								{"exclude", "itemID", 147668 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144632),	-- Cruel Gladiator's Silk Amice (A)
@@ -4239,7 +4150,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 4
-								{"exclude", "itemID", 147656 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144650),	-- Cruel Gladiator's Ironskin Belt (A)
@@ -4270,7 +4180,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 4
-								{"exclude", "itemID", 147665 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144546),	-- Cruel Gladiator's Greatcloak of Faith (A)
@@ -4301,7 +4210,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 4
-								{"exclude", "itemID", 147663 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144548),	-- Cruel Gladiator's Drape of Piety (A)
@@ -4332,7 +4240,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 4
-								{"exclude", "itemID", 147657 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144710),	-- Cruel Gladiator's Leather Belt (A)
@@ -4363,7 +4270,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 4
-								{"exclude", "itemID", 147661 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144728),	-- Cruel Gladiator's Ringmail Armband (A)
@@ -4394,7 +4300,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 4
-								{"exclude", "itemID", 147653 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144758),	-- Cruel Gladiator's Felweave Amice (A)
@@ -4425,7 +4330,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 4
-								{"exclude", "itemID", 147660 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144556),	-- Cruel Gladiator's Cloak of Battle (A)
@@ -4481,7 +4385,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 4
-								{"exclude", "itemID", 147625 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144780)),	-- Cruel Gladiator's Dreadcloak (A)
@@ -4512,7 +4415,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 4
-								{"exclude", "itemID", 147627 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144782)),	-- Cruel Gladiator's Demonthread Cloak (A)
@@ -4543,7 +4445,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 4
-								{"exclude", "itemID", 147623 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144848)),	-- Cruel Gladiator's Dragonhide Belt (A)
@@ -4574,7 +4475,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 4
-								{"exclude", "itemID", 147621 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144866)),	-- Cruel Gladiator's Chain Armband (A)
@@ -4605,7 +4505,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 4
-								{"exclude", "itemID", 147644 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144878)),	-- Cruel Gladiator's Silk Amice (A)
@@ -4636,7 +4535,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 4
-								{"exclude", "itemID", 147632 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144896)),	-- Cruel Gladiator's Ironskin Belt (A)
@@ -4667,7 +4565,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 4
-								{"exclude", "itemID", 147642 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144792)),	-- Cruel Gladiator's Greatcloak of Faith (A)
@@ -4698,7 +4595,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 4
-								{"exclude", "itemID", 147640 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144794)),	-- Cruel Gladiator's Drape of Piety (A)
@@ -4729,7 +4625,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 4
-								{"exclude", "itemID", 147634 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144956)),	-- Cruel Gladiator's Leather Belt (A)
@@ -4760,7 +4655,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 4
-								{"exclude", "itemID", 147637 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144974)),	-- Cruel Gladiator's Ringmail Armband (A)
@@ -4791,7 +4685,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 4
-								{"exclude", "itemID", 147629 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(145004)),	-- Cruel Gladiator's Felweave Amice (A)
@@ -4822,7 +4715,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 4
-								{"exclude", "itemID", 147636 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144802)),	-- Cruel Gladiator's Cloak of Battle (A)
@@ -4878,7 +4770,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 4
-								{"exclude", "itemID", 147678 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145027),	-- Cruel Combatant's Dreadcloak (H)
@@ -4909,7 +4800,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 4
-								{"exclude", "itemID", 147679 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145073),	-- Cruel Combatant's Felskin Helm (H)
@@ -4940,7 +4830,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 4
-								{"exclude", "itemID", 147676 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145095),	-- Cruel Combatant's Dragonhide Belt (H)
@@ -4971,7 +4860,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 4
-								{"exclude", "itemID", 147690 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145113),	-- Cruel Combatant's Chain Armband (H)
@@ -5002,7 +4890,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 4
-								{"exclude", "itemID", 147695 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145125),	-- Cruel Combatant's Silk Amice (H)
@@ -5033,7 +4920,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 4
-								{"exclude", "itemID", 147683 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145143),	-- Cruel Combatant's Ironskin Belt (H)
@@ -5064,7 +4950,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 4
-								{"exclude", "itemID", 147694 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145039),	-- Cruel Combatant's Greatcloak of Faith (H)
@@ -5095,7 +4980,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 4
-								{"exclude", "itemID", 147687 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145041),	-- Cruel Combatant's Drape of Piety (H)
@@ -5126,7 +5010,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 4
-								{"exclude", "itemID", 147686 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145203),	-- Cruel Combatant's Leather Belt (H)
@@ -5157,7 +5040,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 4
-								{"exclude", "itemID", 147673 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145221),	-- Cruel Combatant's Ringmail Armband (H)
@@ -5188,7 +5070,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 4
-								{"exclude", "itemID", 147681 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145251),	-- Cruel Combatant's Felweave Amice (H)
@@ -5219,7 +5100,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 4
-								{"exclude", "itemID", 147691 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145049),	-- Cruel Combatant's Cloak of Battle (H)
@@ -5305,7 +5185,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 4
-								{"exclude", "itemID", 147649 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144535),	-- Cruel Gladiator's Dreadcloak (H)
@@ -5336,7 +5215,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 4
-								{"exclude", "itemID", 147652 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144537),	-- Cruel Gladiator's Demonthread Cloak (H)
@@ -5367,7 +5245,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 4
-								{"exclude", "itemID", 147648 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144603),	-- Cruel Gladiator's Dragonhide Belt (H)
@@ -5398,7 +5275,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 4
-								{"exclude", "itemID", 147645 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144621),	-- Cruel Gladiator's Chain Armband (H)
@@ -5429,7 +5305,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 4
-								{"exclude", "itemID", 147667 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144633),	-- Cruel Gladiator's Silk Amice (H)
@@ -5460,7 +5335,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 4
-								{"exclude", "itemID", 147655 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144651),	-- Cruel Gladiator's Ironskin Belt (H)
@@ -5491,7 +5365,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 4
-								{"exclude", "itemID", 147666 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144547),	-- Cruel Gladiator's Greatcloak of Faith (H)
@@ -5522,7 +5395,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 4
-								{"exclude", "itemID", 147664 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144549),	-- Cruel Gladiator's Drape of Piety (H)
@@ -5553,7 +5425,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 4
-								{"exclude", "itemID", 147658 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144711),	-- Cruel Gladiator's Leather Belt (H)
@@ -5584,7 +5455,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 4
-								{"exclude", "itemID", 147662 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144729),	-- Cruel Gladiator's Ringmail Armband (H)
@@ -5615,7 +5485,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 4
-								{"exclude", "itemID", 147654 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144759),	-- Cruel Gladiator's Felweave Amice (H)
@@ -5646,7 +5515,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 4
-								{"exclude", "itemID", 147659 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(144557),	-- Cruel Gladiator's Cloak of Battle (H)
@@ -5702,7 +5570,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 6	},	-- Season 4
-								{"exclude", "itemID", 147626 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144781)),	-- Cruel Gladiator's Dreadcloak (H)
@@ -5733,7 +5600,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 4
-								{"exclude", "itemID", 147628 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144783)),	-- Cruel Gladiator's Demonthread Cloak (H)
@@ -5764,7 +5630,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 4
-								{"exclude", "itemID", 147624 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144849)),	-- Cruel Gladiator's Dragonhide Belt (H)
@@ -5795,7 +5660,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 4
-								{"exclude", "itemID", 147622 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144867)),	-- Cruel Gladiator's Chain Armband (H)
@@ -5826,7 +5690,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 8	},	-- Season 4
-								{"exclude", "itemID", 147643 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144879)),	-- Cruel Gladiator's Silk Amice (H)
@@ -5857,7 +5720,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 4
-								{"exclude", "itemID", 147631 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144897)),	-- Cruel Gladiator's Ironskin Belt (H)
@@ -5888,7 +5750,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 2	},	-- Season 4
-								{"exclude", "itemID", 147641 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144793)),	-- Cruel Gladiator's Greatcloak of Faith (H)
@@ -5919,7 +5780,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 5	},	-- Season 4
-								{"exclude", "itemID", 147639 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144795)),	-- Cruel Gladiator's Drape of Piety (H)
@@ -5950,7 +5810,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 4	},	-- Season 4
-								{"exclude", "itemID", 147633 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144957)),	-- Cruel Gladiator's Leather Belt (H)
@@ -5981,7 +5840,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 4
-								{"exclude", "itemID", 147638 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144975)),	-- Cruel Gladiator's Ringmail Armband (H)
@@ -6012,7 +5870,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 9	},	-- Season 4
-								{"exclude", "itemID", 147630 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(145005)),	-- Cruel Gladiator's Felweave Amice (H)
@@ -6043,7 +5900,6 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FEROCIOUS, FACTION_HEADER_HORDE, PVP_ELITE, 1	},	-- Season 4
-								{"exclude", "itemID", 147635 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(144803)),	-- Cruel Gladiator's Cloak of Battle (H)
@@ -7358,7 +7214,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 7
-								{"exclude", "itemID", 150252 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149505),	-- Fierce Combatant's Dreadcloak (A)
@@ -7399,7 +7254,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 7
-								{"exclude", "itemID", 150255 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149507),	-- Fierce Combatant's Demonthread Cloak (A)
@@ -7440,7 +7294,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 7
-								{"exclude", "itemID", 150250 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149573),	-- Fierce Combatant's Dragonhide Belt (A)
@@ -7481,7 +7334,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 7
-								{"exclude", "itemID", 150264 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149592),	-- Fierce Combatant's Chain Armband (A)
@@ -7522,7 +7374,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 7
-								{"exclude", "itemID", 150271 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149604),	-- Fierce Combatant's Silk Amice (A)
@@ -7563,7 +7414,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 7
-								{"exclude", "itemID", 150259 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149622),	-- Fierce Combatant's Ironskin Belt (A)
@@ -7604,7 +7454,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 7
-								{"exclude", "itemID", 150268 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149517),	-- Fierce Combatant's Greatcloak of Faith (A)
@@ -7645,7 +7494,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 7
-								{"exclude", "itemID", 150263 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149519),	-- Fierce Combatant's Drape of Piety (A)
@@ -7686,7 +7534,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 7
-								{"exclude", "itemID", 150260 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149682),	-- Fierce Combatant's Leather Belt (A)
@@ -7727,7 +7574,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 7
-								{"exclude", "itemID", 150249 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149700),	-- Fierce Combatant's Ringmail Armband (A)
@@ -7768,7 +7614,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 7
-								{"exclude", "itemID", 150257 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149730),	-- Fierce Combatant's Felweave Amice (A)
@@ -7809,7 +7654,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 7
-								{"exclude", "itemID", 150267 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149527),	-- Fierce Combatant's Cloak of Battle (A)
@@ -7905,7 +7749,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 7
-								{"exclude", "itemID", 149483 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147909),	-- Fierce Gladiator's Dreadcloak (A)
@@ -7946,7 +7789,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 7
-								{"exclude", "itemID", 149484 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147911),	-- Fierce Gladiator's Demonthread Cloak (A)
@@ -7987,7 +7829,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 7
-								{"exclude", "itemID", 149480 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147977),	-- Fierce Gladiator's Dragonhide Belt (A)
@@ -8028,7 +7869,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 7
-								{"exclude", "itemID", 149479 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147995),	-- Fierce Gladiator's Chain Armband (A)
@@ -8069,7 +7909,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 7
-								{"exclude", "itemID", 149501 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(148007),	-- Fierce Gladiator's Silk Amice (A)
@@ -8110,7 +7949,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 7
-								{"exclude", "itemID", 149489 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(148025),	-- Fierce Gladiator's Ironskin Belt (A)
@@ -8151,7 +7989,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 7
-								{"exclude", "itemID", 149498 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147921),	-- Fierce Gladiator's Greatcloak of Faith (A)
@@ -8192,7 +8029,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 7
-								{"exclude", "itemID", 149496 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147923),	-- Fierce Gladiator's Drape of Piety (A)
@@ -8233,7 +8069,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 7
-								{"exclude", "itemID", 149490 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(148085),	-- Fierce Gladiator's Leather Belt (A)
@@ -8274,7 +8109,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 7
-								{"exclude", "itemID", 149494 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(148103),	-- Fierce Gladiator's Ringmail Armband (A)
@@ -8315,7 +8149,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 7
-								{"exclude", "itemID", 149486 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(148133),	-- Fierce Gladiator's Felweave Amice (A)
@@ -8356,7 +8189,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 7
-								{"exclude", "itemID", 149493 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147931),	-- Fierce Gladiator's Cloak of Battle (A)
@@ -8422,7 +8254,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 7
-								{"exclude", "itemID", 149458 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148155)),	-- Fierce Gladiator's Dreadcloak (A)
@@ -8463,7 +8294,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 7
-								{"exclude", "itemID", 149460 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148157)),	-- Fierce Gladiator's Demonthread Cloak (A)
@@ -8504,7 +8334,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 7
-								{"exclude", "itemID", 149456 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148223)),	-- Fierce Gladiator's Dragonhide Belt (A)
@@ -8545,7 +8374,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 7
-								{"exclude", "itemID", 149454 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148241)),	-- Fierce Gladiator's Chain Armband (A)
@@ -8586,7 +8414,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 7
-								{"exclude", "itemID", 149477 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148253)),	-- Fierce Gladiator's Silk Amice (A)
@@ -8627,7 +8454,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 7
-								{"exclude", "itemID", 149465 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148271)),	-- Fierce Gladiator's Ironskin Belt (A)
@@ -8668,7 +8494,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 7
-								{"exclude", "itemID", 149475 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148167)),	-- Fierce Gladiator's Greatcloak of Faith (A)
@@ -8709,7 +8534,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 7
-								{"exclude", "itemID", 149473 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148169)),	-- Fierce Gladiator's Drape of Piety (A)
@@ -8750,7 +8574,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 7
-								{"exclude", "itemID", 149467 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148331)),	-- Fierce Gladiator's Leather Belt (A)
@@ -8791,7 +8614,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 7
-								{"exclude", "itemID", 149470 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148349)),	-- Fierce Gladiator's Ringmail Armband (A)
@@ -8832,7 +8654,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 7
-								{"exclude", "itemID", 149462 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148379)),	-- Fierce Gladiator's Felweave Amice (A)
@@ -8873,7 +8694,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 7
-								{"exclude", "itemID", 149469 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148177)),	-- Fierce Gladiator's Cloak of Battle (A)
@@ -8939,7 +8759,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 7
-								{"exclude", "itemID", 150253 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149506),	-- Fierce Combatant's Dreadcloak (H)
@@ -8980,7 +8799,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 7
-								{"exclude", "itemID", 150254 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149508),	-- Fierce Combatant's Demonthread Cloak (H)
@@ -9021,7 +8839,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 7
-								{"exclude", "itemID", 150251 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149575),	-- Fierce Combatant's Dragonhide Belt (H)
@@ -9062,7 +8879,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 7
-								{"exclude", "itemID", 150265 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149593),	-- Fierce Combatant's Chain Armband (H)
@@ -9103,7 +8919,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 7
-								{"exclude", "itemID", 150270 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149605),	-- Fierce Combatant's Silk Amice (H)
@@ -9144,7 +8959,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 7
-								{"exclude", "itemID", 150258 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149623),	-- Fierce Combatant's Ironskin Belt (H)
@@ -9185,7 +8999,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 7
-								{"exclude", "itemID", 150269 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149518),	-- Fierce Combatant's Greatcloak of Faith (H)
@@ -9226,7 +9039,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 7
-								{"exclude", "itemID", 150262 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149520),	-- Fierce Combatant's Drape of Piety (H)
@@ -9267,7 +9079,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 7
-								{"exclude", "itemID", 150261 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149683),	-- Fierce Combatant's Leather Belt (H)
@@ -9308,7 +9119,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 7
-								{"exclude", "itemID", 150248 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149701),	-- Fierce Combatant's Ringmail Armband (H)
@@ -9349,7 +9159,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 7
-								{"exclude", "itemID", 150256 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149731),	-- Fierce Combatant's Felweave Amice (H)
@@ -9390,7 +9199,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 7
-								{"exclude", "itemID", 150266 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149751),	-- Fierce Combatant's Plate Wristplates (H)
@@ -9486,7 +9294,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 7
-								{"exclude", "itemID", 149482 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147910),	-- Fierce Gladiator's Dreadcloak (H)
@@ -9527,7 +9334,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 7
-								{"exclude", "itemID", 149485 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147912),	-- Fierce Gladiator's Demonthread Cloak (H)
@@ -9568,7 +9374,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 7
-								{"exclude", "itemID", 149481 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147978),	-- Fierce Gladiator's Dragonhide Belt (H)
@@ -9609,7 +9414,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 7
-								{"exclude", "itemID", 149478 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147996),	-- Fierce Gladiator's Chain Armband (H)
@@ -9650,7 +9454,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 7
-								{"exclude", "itemID", 149500 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(148008),	-- Fierce Gladiator's Silk Amice (H)
@@ -9691,7 +9494,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 7
-								{"exclude", "itemID", 149488 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(148026),	-- Fierce Gladiator's Ironskin Belt (H)
@@ -9732,7 +9534,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 7
-								{"exclude", "itemID", 149499 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147922),	-- Fierce Gladiator's Greatcloak of Faith (H)
@@ -9773,7 +9574,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 7
-								{"exclude", "itemID", 149497 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147924),	-- Fierce Gladiator's Drape of Piety (H)
@@ -9814,7 +9614,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 7
-								{"exclude", "itemID", 149491 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(148086),	-- Fierce Gladiator's Leather Belt (H)
@@ -9855,7 +9654,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 7
-								{"exclude", "itemID", 149495 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(148104),	-- Fierce Gladiator's Ringmail Armband (H)
@@ -9896,7 +9694,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 7
-								{"exclude", "itemID", 149487 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(148134),	-- Fierce Gladiator's Felweave Amice (H)
@@ -9937,7 +9734,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 7
-								{"exclude", "itemID", 149492 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(147932),	-- Fierce Gladiator's Cloak of Battle (H)
@@ -10003,7 +9799,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 7
-								{"exclude", "itemID", 149459 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148156)),	-- Fierce Gladiator's Dreadcloak (H)
@@ -10044,7 +9839,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 7
-								{"exclude", "itemID", 149461 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148158)),	-- Fierce Gladiator's Demonthread Cloak (H)
@@ -10085,7 +9879,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 7
-								{"exclude", "itemID", 149457 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148224)),	-- Fierce Gladiator's Dragonhide Belt (H)
@@ -10126,7 +9919,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 7
-								{"exclude", "itemID", 149455 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148242)),	-- Fierce Gladiator's Chain Armband (H)
@@ -10167,7 +9959,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, MAGE	},	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, MAGE	},	-- Season 7
-								{"exclude", "itemID", 149476 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148254)),	-- Fierce Gladiator's Silk Amice (H)
@@ -10208,7 +9999,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 7
-								{"exclude", "itemID", 149464 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148272)),	-- Fierce Gladiator's Ironskin Belt (H)
@@ -10249,7 +10039,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 7
-								{"exclude", "itemID", 149474 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148168)),	-- Fierce Gladiator's Greatcloak of Faith (H)
@@ -10290,7 +10079,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST	},	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST	},	-- Season 7
-								{"exclude", "itemID", 149472 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148170)),	-- Fierce Gladiator's Drape of Piety (H)
@@ -10331,7 +10119,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE	},	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 7
-								{"exclude", "itemID", 149466 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148332)),	-- Fierce Gladiator's Leather Belt (H)
@@ -10372,7 +10159,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 7
-								{"exclude", "itemID", 149471 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148350)),	-- Fierce Gladiator's Ringmail Armband (H)
@@ -10413,7 +10199,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 7
-								{"exclude", "itemID", 149463 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148380)),	-- Fierce Gladiator's Felweave Amice (H)
@@ -10454,7 +10239,6 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 7
-								{"exclude", "itemID", 149468 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								un(ELITE_PVP_REQUIREMENT, i(148178)),	-- Fierce Gladiator's Cloak of Battle (H)

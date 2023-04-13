@@ -669,7 +669,32 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				["coord"] = { 31.5, 63.9, OHNAHRAN_PLAINS },
 			}),
 		}),
-		ach(16519),	-- Dragon Isles Safari
+		petbattle(ach(16519, {	-- Dragon Isles Safari
+			crit(1),	-- Azure Crystalspine
+			crit(2),	-- Blue Dasher
+			crit(3),	-- Crimsonspine
+			crit(4),	-- Emberling
+			crit(5),	-- Grassland Stomper
+			crit(6),	-- Grizzlefur Cub
+			crit(7),	-- Igneoid
+			crit(8),	-- Ironbeak Duck
+			crit(9),	-- Kindlet
+			crit(10),	-- Magma Slug
+			crit(11),	-- Palamanther
+			crit(12),	-- Polliswog
+			crit(13),	-- Pricklefury Hare
+			crit(14),	-- Scruffy Ottuk
+			crit(15),	-- Shyfly
+			crit(16),	-- Snowlemental
+			crit(17),	-- Stoneshell
+			crit(18),	-- Swoglet
+			crit(19),	-- Tiny Timbertooth
+			crit(20),	-- Treeflitter
+			crit(21),	-- Trunkalumpf
+			crit(22),	-- Vorquin Runt
+			crit(23),	-- Wild Duckling
+			crit(24),	-- Woodbiter Piculet
+		})),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {

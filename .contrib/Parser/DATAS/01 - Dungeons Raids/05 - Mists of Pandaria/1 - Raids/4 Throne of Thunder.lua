@@ -1122,9 +1122,7 @@ _.Instances = { tier(MOP_TIER, {
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
 						["g"] = {
-							{	-- From Dusk 'til Dawn
-								["achievementID"] = 8086,	-- From Dusk 'til Dawn
-							},
+							ach(8086),    -- From Dusk 'til Dawn
 							i(95577),	-- Helm of the Crackling Conqueror
 							i(95582),	-- Helm of the Crackling Protector
 							i(95571),	-- Helm of the Crackling Vanquisher
@@ -1155,7 +1153,16 @@ _.Instances = { tier(MOP_TIER, {
 						},
 					})),
 					cr(68397, e(832, {	-- Lei Shen
-						ach(8090),	-- A Complete Circuit
+						ach(8090, {	-- A Complete Circuit
+							crit(1, {	-- Static Shock Conduit Disabled First
+							}),
+							crit(2, {	-- Diffusion Chain Conduit Disabled First
+							}),
+							crit(3, {	-- Overcharge Conduit Disabled First
+							}),
+							crit(4, {	-- Bouncing Bolt Conduit Disabled First
+							}),
+						}),
 						un(REMOVED_FROM_GAME, ach(8249)),	-- Ahead of the Curve: Lei Shen
 						i(94983),	-- Shan-Dun, Breaker of Hope
 						i(94982),	-- Uroe, Harbinger of Terror
@@ -1742,9 +1749,7 @@ _.Instances = { tier(MOP_TIER, {
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
 						["g"] = {
-							{	-- From Dusk 'til Dawn
-								["achievementID"] = 8086,	-- From Dusk 'til Dawn
-							},
+							ach(8086),    -- From Dusk 'til Dawn
 							ach(8066),	-- Heroic: Twin Empyreans
 							i(96624),	-- Helm of the Crackling Conqueror
 							i(96625),	-- Helm of the Crackling Protector
@@ -1776,16 +1781,10 @@ _.Instances = { tier(MOP_TIER, {
 						},
 					})),
 					cr(68397, e(832, {	-- Lei Shen
-						ach(8090),	-- A Complete Circuit
 						un(REMOVED_FROM_GAME, ach(8238)),	-- Cutting Edge: Lei Shen
-						{	-- Heroic: Lei Shen
-							["achievementID"] = 8067,	-- Heroic: Lei Shen
-							["g"] = {
-								{	-- , Storm's End
-									["titleID"] = 222,	-- , Storm's End
-								},
-							},
-						},
+						ach(8067, {	-- Heroic: Lei Shen
+							title(222),	-- , Storm's End
+						}),
 						ach(8139),	-- Heroic: Lei Shen Guild Run
 						i(96547),	-- Shan-Dun, Breaker of Hope
 						i(96553),	-- Uroe, Harbinger of Terror

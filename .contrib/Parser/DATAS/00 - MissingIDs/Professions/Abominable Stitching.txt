@@ -76,3 +76,6 @@ r(344797),	-- Underpowered Gravity Pack
 r(344798),	-- Shoulder Sprouts
 9.0.2.36294
 r(347024),	-- Tighter Stitching
+
+
+Nothing is Missing in Abominable StitchingItemDB.lua! Good Work!

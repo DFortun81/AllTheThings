@@ -25,24 +25,24 @@ _.Zones =
 							},
 						}),
 						un(REMOVED_FROM_GAME, i(137563, {	-- Farondis Lockbox
-							["sym"] = {
-								{"select", "itemID", 157825},	-- Farondis Lockbox
-							},
+							["sym"] = {{"select","itemID",
+								157825,    -- Farondis Lockbox
+							}},
 						})),
 						un(REMOVED_FROM_GAME, i(146750, {	-- Farondis Lockbox
-							["sym"] = {
-								{"select", "itemID", 157825},	-- Farondis Lockbox
-							},
+							["sym"] = {{"select","itemID",
+								157825,    -- Farondis Lockbox
+							}},
 						})),
 						un(REMOVED_FROM_GAME, i(151467, {	-- Farondis Lockbox
-							["sym"] = {
-								{"select", "itemID", 157825},	-- Farondis Lockbox
-							},
+							["sym"] = {{"select","itemID",
+								157825,    -- Farondis Lockbox
+							}},
 						})),
 						un(REMOVED_FROM_GAME, i(154906, {	-- Farondis Lockbox
-							["sym"] = {
-								{"select", "itemID", 157825},	-- Farondis Lockbox
-							},
+							["sym"] = {{"select","itemID",
+								157825,    -- Farondis Lockbox
+							}},
 						})),
 					},
 				}),

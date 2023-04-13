@@ -11,8 +11,23 @@ _.Instances = { tier(CATA_TIER, {
 		["maps"] = { 295, 296 },
 		["lvl"] = 85,
 		["groups"] = {
-			ach(4850),	-- The Bastion of Twilight
-			ach(4986),	-- The Bastion of Twilight Guild Run
+			n(ACHIEVEMENTS, {
+				ach(4850, {	-- The Bastion of Twilight
+					crit(1, {	-- Halfus Wyrmbreaker
+						["_encounter"] = { 156, NORMAL_DUNGEON },
+					}),
+					crit(2, {	-- Valiona and Theralion
+						["_encounter"] = { 157, NORMAL_DUNGEON },
+					}),
+					crit(3, {	-- Ascendant Council
+						["_encounter"] = { 158, NORMAL_DUNGEON },
+					}),
+					crit(4, {	-- Cho'gall
+						["_encounter"] = { 167, NORMAL_DUNGEON },
+					}),
+				}),
+				ach(4986),	-- The Bastion of Twilight Guild Run
+			}),
 			n(ZONE_DROPS, {
 				["groups"] = {
 					i(60211),	-- Bracers of the Dark Pool
@@ -52,7 +67,12 @@ _.Instances = { tier(CATA_TIER, {
 							45993,	-- Theralion
 						},
 						["groups"] = {
-							ach(4852),	-- Double Dragon
+							ach(4852, {	-- Double Dragon
+								crit(1),	-- Valiona and Theralion
+								crit(2, {	-- Twilight Fiends killed
+									["cr"] = 49864,	-- Twilight Fiend
+								}),
+							}),
 							i(152969),	-- Odd Twilight Egg (PET!)
 							i(63536),	-- Blade of the Witching Hour
 							i(63533),	-- Fang of Twilight
@@ -131,7 +151,6 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 44600,
 						["groups"] = {
 							ach(5118),	-- Heroic: Halfus Wyrmbreaker
-							ach(5300),	-- The Only Escape
 							i(67423),	-- Chest of the Forlorn Conqueror
 							i(67424),	-- Chest of the Forlorn Protector
 							i(67425),	-- Chest of the Forlorn Vanquisher
@@ -156,7 +175,6 @@ _.Instances = { tier(CATA_TIER, {
 						},
 						["groups"] = {
 							ach(5117),	-- Heroic: Valiona and Theralion
-							ach(4852),	-- Double Dragon
 							i(152969),	-- Odd Twilight Egg (PET!)
 							i(65091),	-- Blade of the Witching Hour
 							i(65094),	-- Fang of Twilight
@@ -182,7 +200,6 @@ _.Instances = { tier(CATA_TIER, {
 						},
 						["groups"] = {
 							ach(5119),	-- Heroic: Ascendant Council
-							ach(5311),	-- Elementary
 							i(152970),	-- Lesser Circle of Binding (PET!)
 							i(65111),	-- Scepter of Ice
 							i(65120),	-- Arion's Crown
@@ -204,7 +221,6 @@ _.Instances = { tier(CATA_TIER, {
 						["groups"] = {
 							ach(5120),	-- Heroic: Cho'gall
 							ach(5461),	-- Heroic: Cho'gall Guild Run
-							ach(5312),	-- The Abyss Will Gaze Back Into You
 							i(65088),	-- Shoulders of the Forlorn Conqueror
 							i(65087),	-- Shoulders of the Forlorn Protector
 							i(65089),	-- Shoulders of the Forlorn Vanquisher
@@ -232,7 +248,7 @@ _.Instances = { tier(CATA_TIER, {
 								title(186),	-- Dragonslayer
 							}),
 							un(REMOVED_FROM_GAME, ach(5464)),	-- Heroic: Sinestra Guild Run
-							ach(5411),	-- Realm First! Sinestra
+							un(REMOVED_FROM_GAME, ach(5411)),	-- Realm First! Sinestra
 							i(60237),	-- Crown of the Twilight Queen
 							i(60227),	-- Caelestrasz's Will
 							i(60232),	-- Shroud of Endless Grief

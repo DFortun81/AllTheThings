@@ -103,9 +103,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				q(70110, {	-- Cataloging Thaldraszus
 					["coord"] = { 36.3, 68.8, THALDRASZUS },
 				}),
-				--q(70699, {	-- Cataloging Thaldraszus
-				--	["coord"] = { 51, 42, THALDRASZUS },
-				--}),
+				q(70699, {	-- Cataloging Thaldraszus
+					["coord"] = { 51.0, 42.0, THALDRASZUS },
+				}),
 
 					-- Zaralek Cavern --
 				q(75126, {	-- Cataloging Zaralek Cavern

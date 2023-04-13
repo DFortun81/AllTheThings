@@ -379,7 +379,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					},
 					["sym"] = {
 						{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },
-						{"exclude", "itemID", 146651 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(28302, {	-- Gladiator's Bonecracker
@@ -476,7 +475,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 31597 },	-- Marshal's Kodohide Boots
 						{"select", "itemID", 29004 },   -- Marshal's Wyrmhide Belt
 						{"select", "itemID", 29005 },	-- Marshal's Wyrmhide Boots
-						{"exclude", "itemID", 146609 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(28127, {	-- Gladiator's Dragonhide Helm
@@ -537,7 +535,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 28449 },	-- General's Chain Sabatons
 						{"select", "itemID", 28974 },	-- Marshal's Chain Girdle
 						{"select", "itemID", 28975 },	-- Marshal's Chain Sabatons
-						{"exclude", "itemID", 146608 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(28331, {	-- Gladiator's Chain Helm
@@ -566,7 +563,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 29001 },	-- Marshal's Silk Belt
 						{"select", "itemID", 28410 },	-- General's Silk Footguards
 						{"select", "itemID", 29003 },	-- Marshal's Silk Footguards
-						{"exclude", "itemID", 146617 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(25855, {	-- Gladiator's Silk Cowl
@@ -603,7 +599,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 32987 },	-- Marshal's Ornamented Greaves
 						{"select", "itemID", 28998 },   -- Marshal's Scaled Belt
 						{"select", "itemID", 29000 },	-- Marshal's Scaled Greaves
-						{"exclude", "itemID", 146616 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(27704, {	-- Gladiator's Lamellar Helm
@@ -663,7 +658,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 147613 },	-- General's Satin Cord
 						{"select", "itemID", 147614 },	-- General's Satin Slippers
 						{"select", "itemID", 147771 },	-- General's Satin Cuffs
-						{"exclude", "itemID", 146615 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(31410, {	-- Gladiator's Mooncloth Hood
@@ -708,7 +702,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 28422 },   -- General's Leather Boots
 						{"select", "itemID", 28986 },	-- Marshal's Leather Belt
 						{"select", "itemID", 28987 },	-- Marshal's Leather Boots
-						{"exclude", "itemID", 146612 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(25830, {	-- Gladiator's Leather Helm
@@ -745,7 +738,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 28994 },	-- Marshal's Mail Sabatons
 						{"select", "itemID", 32995 },   -- Marshal's Ringmail Girdle
 						{"select", "itemID", 32996 },	-- Marshal's Ringmail Sabatons
-						{"exclude", "itemID", 146614 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(25998, {	-- Gladiator's Linked Helm
@@ -809,7 +801,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 147615 },	-- General's Felweave Belt
 						{"select", "itemID", 147616 },	-- General's Felweave Boots
 						{"select", "itemID", 147772 },  -- General's Felweave Cuffs
-						{"exclude", "itemID", 146611 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(24553, {	-- Gladiator's Dreadweave Hood
@@ -854,7 +845,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 28383 },	-- General's Plate Greaves
 						{"select", "itemID", 28995 },	-- Marshal's Plate Belt
 						{"select", "itemID", 28997 },	-- Marshal's Plate Greaves
-						{"exclude", "itemID", 146613 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(24545, {	-- Gladiator's Plate Helm
@@ -1334,7 +1324,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },
 						{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },
 						{"exclude", "itemID", 146651 },	-- Arsenal: Gladiator's Weapons
-						{"exclude", "itemID", 146650 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(33313, {	-- Merciless Gladiator's Barrier
@@ -1434,7 +1423,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 32821 },	-- Veteran's Wyrmhide Bracers
 						{"select", "itemID", 32808 },	-- Veteran's Wyrmhide Belt
 						{"select", "itemID", 32796 },   -- Veteran's Wyrmhide Boots
-						{"exclude", "itemID", 146619 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(31968, {	-- Merciless Gladiator's Dragonhide Helm
@@ -1494,7 +1482,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 32809 },	-- Veteran's Chain Bracers
 						{"select", "itemID", 32797 },	-- Veteran's Chain Girdle
 						{"select", "itemID", 32785 },	-- Veteran's Chain Sabatons
-						{"exclude", "itemID", 146618 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(31962, {	-- Merciless Gladiator's Chain Helm
@@ -1522,7 +1509,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 32820 },	-- Veteran's Silk Cuffs
 						{"select", "itemID", 32807 },	-- Veteran's Silk Belt
 						{"select", "itemID", 32795 },	-- Veteran's Silk Footguards
-						{"exclude", "itemID", 146627 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(32048, {	-- Merciless Gladiator's Silk Cowl
@@ -1556,7 +1542,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 32819 },	-- Veteran's Scaled Bracers
 						{"select", "itemID", 32806 },	-- Veteran's Scaled Belt
 						{"select", "itemID", 32794 },   -- Veteran's Scaled Greaves
-						{"exclude", "itemID", 146626 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(31997, {	-- Merciless Gladiator's Lamellar Helm
@@ -1616,7 +1601,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 32980 },	-- Veteran's Mooncloth Cuffs
 						{"select", "itemID", 32979 },	-- Veteran's Mooncloth Belt
 						{"select", "itemID", 147609 },	-- Veteran's Satin Slippers
-						{"exclude", "itemID", 146625 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(32016, {	-- Merciless Gladiator's Mooncloth Hood
@@ -1660,7 +1644,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 147612 },	-- Veteran's Leather Wristguards
 						{"select", "itemID", 147610 },	-- Veteran's Leather Waistband
 						{"select", "itemID", 147611 },	-- Veteran's Leather Footguards
-						{"exclude", "itemID", 146622 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(31999, {	-- Merciless Gladiator's Leather Helm
@@ -1694,7 +1677,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 32997 },	-- Veteran's Ringmail Bracers
 						{"select", "itemID", 32998 },	-- Veteran's Ringmail Girdle
 						{"select", "itemID", 32999 },   -- Veteran's Ringmail Sabatons
-						{"exclude", "itemID", 146624 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(32004, {	-- Merciless Gladiator's Linked Armor
@@ -1754,7 +1736,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 32811 },	-- Veteran's Dreadweave Cuffs
 						{"select", "itemID", 32799 },	-- Veteran's Dreadweave Belt
 						{"select", "itemID", 32787 },	-- Veteran's Dreadweave Stalkers
-						{"exclude", "itemID", 146621 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(31974, {	-- Merciless Gladiator's Dreadweave Hood
@@ -1798,7 +1779,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 32818 },	-- Veteran's Plate Bracers
 						{"select", "itemID", 32805 },	-- Veteran's Plate Bel
 						{"select", "itemID", 32793 },	-- Veteran's Plate Greaves
-						{"exclude", "itemID", 146623 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(30488, {	-- Merciless Gladiator's Plate Helm
@@ -2061,7 +2041,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },
-						{"exclude", "itemID", 146649 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(33661, {	-- Vengeful Gladiator's Barrier
@@ -2191,7 +2170,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 33917 },	-- Vindicator's Wyrmhide Bracers
 						{"select", "itemID", 33915 },	-- Vindicator's Wyrmhide Belt
 						{"select", "itemID", 33916 },   -- Vindicator's Wyrmhide Boots
-						{"exclude", "itemID", 146629 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(33672, {	-- Vengeful Gladiator's Dragonhide Helm
@@ -2251,7 +2229,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 33876 },	-- Vindicator's Chain Bracers
 						{"select", "itemID", 33877 },	-- Vindicator's Chain Girdle
 						{"select", "itemID", 33878 },	-- Vindicator's Chain Sabatons
-						{"exclude", "itemID", 146628 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(33666, {	-- Vengeful Gladiator's Chain Helm
@@ -2279,7 +2256,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 33913 },	-- Vindicator's Silk Cuffs
 						{"select", "itemID", 33912 },	-- Vindicator's Silk Belt
 						{"select", "itemID", 33914 },	-- Vindicator's Silk Footguards
-						{"exclude", "itemID", 146637 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(33758, {	-- Vengeful Gladiator's Silk Cowl
@@ -2313,7 +2289,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 33910 },	-- Vindicator's Scaled Bracers
 						{"select", "itemID", 33909 },	-- Vindicator's Scaled Belt
 						{"select", "itemID", 33911 },   -- Vindicator's Scaled Greaves
-						{"exclude", "itemID", 146636 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(33697, {	-- Vengeful Gladiator's Lamellar Helm
@@ -2373,7 +2348,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 33901 },	-- Vindicator's Mooncloth Cuffs
 						{"select", "itemID", 33900 },	-- Vindicator's Mooncloth Belt
 						{"select", "itemID", 33902 },	-- Vindicator's Mooncloth Slippers
-						{"exclude", "itemID", 146635 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(33718, {	-- Vengeful Gladiator's Mooncloth Hood
@@ -2417,7 +2391,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 33891 },	-- Vindicator's Leather Belt
 						{"select", "itemID", 33892 },	-- Vindicator's Leather Boots
 						{"select", "itemID", 147670 },	-- Vindicator's Leather Wristguards
-						{"exclude", "itemID", 146632 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(33701, {	-- Vengeful Gladiator's Leather Helm
@@ -2451,7 +2424,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 33906 },	-- Vindicator's Ringmail Bracers
 						{"select", "itemID", 33907 },	-- Vindicator's Ringmail Girdle
 						{"select", "itemID", 33908 },   -- Vindicator's Ringmail Sabatons
-						{"exclude", "itemID", 146634 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(33708, {	-- Vengeful Gladiator's Linked Helm
@@ -2511,7 +2483,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 33883 },	-- Vindicator's Dreadweave Cuffs
 						{"select", "itemID", 33882 },	-- Vindicator's Dreadweave Belt
 						{"select", "itemID", 33884 },	-- Vindicator's Dreadweave Stalkers
-						{"exclude", "itemID", 146631 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(33677, {	-- Vengeful Gladiator's Dreadweave Hood
@@ -2555,7 +2526,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 33813 },	-- Vindicator's Plate Bracers
 						{"select", "itemID", 33811 },	-- Vindicator's Plate Belt
 						{"select", "itemID", 33812 },	-- Vindicator's Plate Greaves
-						{"exclude", "itemID", 146633 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(33730, {	-- Vengeful Gladiator's Plate Helm
@@ -2832,7 +2802,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },
-						{"exclude", "itemID", 146648 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(34986, {	-- Brutal Gladiator's Barrier
@@ -2965,7 +2934,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
 						{"select", "itemID", 35161 },	-- Guardian's Plate Belt
 						{"select", "itemID", 35146 },	-- Guardian's Plate Greaves
-						{"exclude", "itemID", 146600 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(40440, {	-- Brutal Gladiator's Dreadplate Chestpiece
@@ -2999,7 +2967,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35180 },	-- Guardian's Wyrmhide Bracers
 						{"select", "itemID", 35165 },	-- Guardian's Wyrmhide Belt
 						{"select", "itemID", 35150 },   -- Guardian's Wyrmhide Boots
-						{"exclude", "itemID", 146599 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(34999, {	-- Brutal Gladiator's Dragonhide Helm
@@ -3059,7 +3026,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35166 },	-- Guardian's Chain Bracers
 						{"select", "itemID", 35151 },	-- Guardian's Chain Girdle
 						{"select", "itemID", 35136 },	-- Guardian's Chain Sabatons
-						{"exclude", "itemID", 146598 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(34992, {	-- Brutal Gladiator's Chain Helm
@@ -3087,7 +3053,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35179 },	-- Guardian's Silk Cuffs
 						{"select", "itemID", 35164 },	-- Guardian's Silk Belt
 						{"select", "itemID", 35149 },	-- Guardian's Silk Footguards
-						{"exclude", "itemID", 146607 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(35097, {	-- Brutal Gladiator's Silk Cowl
@@ -3121,7 +3086,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35178 },	-- Guardian's Scaled Bracers
 						{"select", "itemID", 35163 },	-- Guardian's Scaled Belt
 						{"select", "itemID", 35148 },   -- Guardian's Scaled Greaves
-						{"exclude", "itemID", 146606 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(35029, {	-- Brutal Gladiator's Lamellar Helm
@@ -3181,7 +3145,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35174 },	-- Guardian's Mooncloth Cuffs
 						{"select", "itemID", 35159 },	-- Guardian's Mooncloth Belt
 						{"select", "itemID", 35144 },	-- Guardian's Mooncloth Slippers
-						{"exclude", "itemID", 146605 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(35054, {	-- Brutal Gladiator's Mooncloth Hood
@@ -3225,7 +3188,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35171 },	-- Guardian's Leather Bracers
 						{"select", "itemID", 35156 },	-- Guardian's Leather Belt
 						{"select", "itemID", 35141 },	-- Guardian's Leather Boots
-						{"exclude", "itemID", 146602 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(35033, {	-- Brutal Gladiator's Leather Helm
@@ -3259,7 +3221,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35177 },	-- Guardian's Ringmail Bracers
 						{"select", "itemID", 35162 },	-- Guardian's Ringmail Girdle
 						{"select", "itemID", 35147 },   -- Guardian's Ringmail Sabatons
-						{"exclude", "itemID", 146604 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(35044, {	-- Brutal Gladiator's Linked Helm
@@ -3319,7 +3280,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35168 },	-- Guardian's Dreadweave Cuffs
 						{"select", "itemID", 35153 },	-- Guardian's Dreadweave Belt
 						{"select", "itemID", 35138 },	-- Guardian's Dreadweave Stalkers
-						{"exclude", "itemID", 146601 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(35004, {	-- Brutal Gladiator's Dreadweave Hood
@@ -3363,7 +3323,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
 						{"select", "itemID", 35161 },	-- Guardian's Plate Belt
 						{"select", "itemID", 35146 },	-- Guardian's Plate Greaves
-						{"exclude", "itemID", 146603 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(35068, {	-- Brutal Gladiator's Plate Helm

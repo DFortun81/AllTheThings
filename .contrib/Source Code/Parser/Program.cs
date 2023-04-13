@@ -175,6 +175,13 @@ namespace ATT
                 Trace.Write(Framework.Items.Count);
                 Trace.WriteLine(" Items loaded in the database.");
 
+                if (Framework.IsErrored)
+                {
+                    Trace.WriteLine("-- Errors encountered during Parse. Please fix them to allow exporting addon DB properly.");
+                    Console.ReadLine();
+                    return;
+                }
+
                 // Export all of the data for the Framework.
                 Trace.WriteLine("Exporting Addon DB...");
                 Framework.Export();

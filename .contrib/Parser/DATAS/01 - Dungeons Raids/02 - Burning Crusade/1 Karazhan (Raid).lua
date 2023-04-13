@@ -649,12 +649,15 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(25903),	-- Design: Bracing Earthstorm Diamond
 						i(25902),	-- Design: Powerful Earthstorm Diamond
 						i(22535, {	-- Formula: Enchant Ring - Striking (RECIPE!)
-							-- #if AFTER BFA
+							-- #if AFTER 6.0.2
 							["description"] = "This grey item is now needed for the second half of the secret involving the battle pet Baa'l.",
 							["f"] = MISC,
 							["_drop"] = { "requireSkill" },
 							-- #endif
 						}),
+						-- #if AFTER 6.0.2
+						r(27920,{["timeline"] = {"added 2.0.1","removed 6.0.2"}}),    -- Striking
+						-- #endif
 					},
 				}),
 			}),

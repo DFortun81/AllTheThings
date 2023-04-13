@@ -15,3 +15,6 @@ r(300288),	-- TK42[DNT] \\ TK42
 r(300289),	-- TK43[DNT] \\ TK43
 r(300290),	-- TK44[DNT] \\ TK44
 r(300465),	-- Pocket-Sized Computation Device
+
+
+Nothing is Missing in Junkyard TinkeringItemDB.lua! Good Work!
