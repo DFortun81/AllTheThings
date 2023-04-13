@@ -376,16 +376,16 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 					i(202548),	-- Underlight Conjurer's Charmbelt
 				}),
 				cl(MONK, {
-					i(202506),	-- Forged Vermillion Cover
-					i(202504),	-- Forged Vermillion Spines
+					i(202506),	-- Cover of the Vermillion Forge
+					i(202504),	-- Spines of the Vermillion Forge
 				}),
 				cl(PALADIN, {
 					i(202452),	-- Heartfire Sentinel's Forgehelm
 					i(202450),	-- Heartfire Sentinel's Steelwings
 				}),
 				cl(PRIEST, {
-					i(202545),	-- Command of The Furnace Seraph
-					i(202542),	-- Mask of The Furnace Seraph
+					i(202545),	-- Command of the Furnace Seraph
+					i(202542),	-- Mask of the Furnace Seraph
 				}),
 				cl(ROGUE, {
 					i(202495),	-- Lurking Specter's Shoulderblades
@@ -433,16 +433,16 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 					i(202548),	-- Underlight Conjurer's Charmbelt
 				}),
 				cl(MONK, {
-					i(202506),	-- Forged Vermillion Cover
-					i(202504),	-- Forged Vermillion Spines
+					i(202506),	-- Cover of the Vermillion Forge
+					i(202504),	-- Spines of the Vermillion Forge
 				}),
 				cl(PALADIN, {
 					i(202452),	-- Heartfire Sentinel's Forgehelm
 					i(202450),	-- Heartfire Sentinel's Steelwings
 				}),
 				cl(PRIEST, {
-					i(202545),	-- Command of The Furnace Seraph
-					i(202542),	-- Mask of The Furnace Seraph
+					i(202545),	-- Command of the Furnace Seraph
+					i(202542),	-- Mask of the Furnace Seraph
 				}),
 				cl(ROGUE, {
 					i(202495),	-- Lurking Specter's Shoulderblades
@@ -490,16 +490,16 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 					i(202548),	-- Underlight Conjurer's Charmbelt
 				}),
 				cl(MONK, {
-					i(202506),	-- Forged Vermillion Cover
-					i(202504),	-- Forged Vermillion Spines
+					i(202506),	-- Cover of the Vermillion Forge
+					i(202504),	-- Spines of the Vermillion Forge
 				}),
 				cl(PALADIN, {
 					i(202452),	-- Heartfire Sentinel's Forgehelm
 					i(202450),	-- Heartfire Sentinel's Steelwings
 				}),
 				cl(PRIEST, {
-					i(202545),	-- Command of The Furnace Seraph
-					i(202542),	-- Mask of The Furnace Seraph
+					i(202545),	-- Command of the Furnace Seraph
+					i(202542),	-- Mask of the Furnace Seraph
 				}),
 				cl(ROGUE, {
 					i(202495),	-- Lurking Specter's Shoulderblades
@@ -547,16 +547,16 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 					i(202548),	-- Underlight Conjurer's Charmbelt
 				}),
 				cl(MONK, {
-					i(202506),	-- Forged Vermillion Cover
-					i(202504),	-- Forged Vermillion Spines
+					i(202506),	-- Cover of the Vermillion Forge
+					i(202504),	-- Spines of the Vermillion Forge
 				}),
 				cl(PALADIN, {
 					i(202452),	-- Heartfire Sentinel's Forgehelm
 					i(202450),	-- Heartfire Sentinel's Steelwings
 				}),
 				cl(PRIEST, {
-					i(202545),	-- Command of The Furnace Seraph
-					i(202542),	-- Mask of The Furnace Seraph
+					i(202545),	-- Command of the Furnace Seraph
+					i(202542),	-- Mask of the Furnace Seraph
 				}),
 				cl(ROGUE, {
 					i(202495),	-- Lurking Specter's Shoulderblades
@@ -604,16 +604,16 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 					i(202548),	-- Underlight Conjurer's Charmbelt
 				}),
 				cl(MONK, {
-					i(202506),	-- Forged Vermillion Cover
-					i(202504),	-- Forged Vermillion Spines
+					i(202506),	-- Cover of the Vermillion Forge
+					i(202504),	-- Spines of the Vermillion Forge
 				}),
 				cl(PALADIN, {
 					i(202452),	-- Heartfire Sentinel's Forgehelm
 					i(202450),	-- Heartfire Sentinel's Steelwings
 				}),
 				cl(PRIEST, {
-					i(202545),	-- Command of The Furnace Seraph
-					i(202542),	-- Mask of The Furnace Seraph
+					i(202545),	-- Command of the Furnace Seraph
+					i(202542),	-- Mask of the Furnace Seraph
 				}),
 				cl(ROGUE, {
 					i(202495),	-- Lurking Specter's Shoulderblades
@@ -661,16 +661,16 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 					i(202548),	-- Underlight Conjurer's Charmbelt
 				}),
 				cl(MONK, {
-					i(202506),	-- Forged Vermillion Cover
-					i(202504),	-- Forged Vermillion Spines
+					i(202506),	-- Cover of the Vermillion Forge
+					i(202504),	-- Spines of the Vermillion Forge
 				}),
 				cl(PALADIN, {
 					i(202452),	-- Heartfire Sentinel's Forgehelm
 					i(202450),	-- Heartfire Sentinel's Steelwings
 				}),
 				cl(PRIEST, {
-					i(202545),	-- Command of The Furnace Seraph
-					i(202542),	-- Mask of The Furnace Seraph
+					i(202545),	-- Command of the Furnace Seraph
+					i(202542),	-- Mask of the Furnace Seraph
 				}),
 				cl(ROGUE, {
 					i(202495),	-- Lurking Specter's Shoulderblades

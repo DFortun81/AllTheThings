@@ -1174,7 +1174,7 @@ i(205419);	-- Jrumm's Drum
 i(205418);	-- Blazing Shadowflame Cinder
 i(204818);	-- Mallard Mortar
 i(205796);	-- Molten Lava Pack
-i(205463);	-- Skornace's Lava Ball
+i(205463);	-- Skornak's Lava Ball
 i(205963);	-- Sniffin' Salts
 i(204389);	-- Stone Breaker
 i(205904);	-- Vibrant Clacking Claw

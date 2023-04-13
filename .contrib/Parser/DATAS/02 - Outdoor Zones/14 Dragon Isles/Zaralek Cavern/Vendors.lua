@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
 					}),
 					i(COVETED_BAUBLE, {
-						["cost"] = { { "i", 204715, 1 } },	-- 1x Fragrant Unearthed Coin
+						["cost"] = { { "i", 204715, 1 } },	-- 1x Unearthed Fragrant Coin
 					}),
 				},
 			}),

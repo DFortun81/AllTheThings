@@ -95,11 +95,18 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 				},
 				["coord"] = { 27.5, 44.4, ZARALEK_CAVERN },
 				--["questID"] = ,
-				--["g"] = sharedData({
-				--	["modID"] = 3,
-				--},{
-
-				--}),
+				["g"] = sharedData({
+					["modID"] = 3,
+				},{
+					i(204418),	-- Ashen Zaralek Cuirass
+					i(204426),	-- Blazestalker's Smelted Cleats
+					i(204419),	-- Cavernous Foliage Wristbands
+					i(204425),	-- Crown of the Twin Elders
+					i(204431),	-- Epaulettes of Draconic Conquest
+					i(204408),	-- Gholna's Lavaborne Legwraps
+					i(204409),	-- Heatbinder's Burning Slippers
+					i(204432),	-- Vakan's Shale Greatbelt
+				}),
 			}),
 			q(74892, {	-- Zaqali Elders (WQ)
 				["coord"] = { 27.5, 44.4, ZARALEK_CAVERN },

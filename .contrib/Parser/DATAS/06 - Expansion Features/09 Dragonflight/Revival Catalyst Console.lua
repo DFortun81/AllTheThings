@@ -49,35 +49,35 @@ end
 local SymRaidAberrus = function(ClassID, ModID)
 	if ClassID == DEATHKNIGHT or ClassID == WARLOCK or ClassID == DEMONHUNTER then
 		TierList = {"select", "itemID",
-			202634,	-- Dreadful Jade Forgestone [Leg]
-			202624,	-- Dreadful Garnet Forgestone [Hand]
-			202631,	-- Dreadful Amethyst Forgestone [Chest]
-			202621,	-- Dreadful Lapis Forgestone [Shoulder]
-			202627,	-- Dreadful Topaz Forgestone [Helm]
+			202634,	-- Dreadful Cooling Fluid [Leg]
+			202624,	-- Dreadful Mixing Fluid [Hand]
+			202631,	-- Dreadful Ventilation Fluid [Chest]
+			202621,	-- Dreadful Corrupting Fluid [Shoulder]
+			202627,	-- Dreadful Melting Fluid [Helm]
 		}
 	elseif ClassID == HUNTER or ClassID == MAGE or ClassID == DRUID then
 		TierList = {"select", "itemID",
-			202635,	-- Mystic Jade Forgestone [Leg]
-			202625,	-- Mystic Garnet Forgestone [Hand]
-			202632,	-- Mystic Amethyst Forgestone [Chest]
-			202622,	-- Mystic Lapis Forgestone [Shoulder]
-			202628,	-- Mystic Topaz Forgestone [Helm]
+			202635,	-- Mystic Cooling Fluid [Leg]
+			202625,	-- Mystic Mixing Fluid [Hand]
+			202632,	-- Mystic Ventilation Fluid [Chest]
+			202622,	-- Mystic Corrupting Fluid [Shoulder]
+			202628,	-- Mystic Melting Fluid [Helm]
 		}
 	elseif ClassID == PALADIN or ClassID == PRIEST or ClassID == SHAMAN then
 		TierList = {"select", "itemID",
-			202636,	-- Venerated Jade Forgestone [Leg]
-			202626,	-- Venerated Garnet Forgestone [Hand]
-			202633,	-- Venerated Amethyst Forgestone [Chest]
-			202623,	-- Venerated Lapis Forgestone [Shoulder]
-			202629,	-- Venerated Topaz Forgestone [Helm]
+			202636,	-- Venerated Cooling Fluid [Leg]
+			202626,	-- Venerated Mixing Fluid [Hand]
+			202633,	-- Venerated Ventilation Fluid [Chest]
+			202623,	-- Venerated Corrupting Fluid [Shoulder]
+			202629,	-- Venerated Melting Fluid [Helm]
 		}
 	else	-- Evoker, Monk, Rogue, Warrior
 		TierList = {"select", "itemID",
-			202640,	-- Zenith Jade Forgestone [Leg]
-			202638,	-- Zenith Garnet Forgestone [Hand]
-			202639,	-- Zenith Amethyst Forgestone [Chest]
-			202637,	-- Zenith Lapis Forgestone [Shoulder]
-			202630,	-- Zenith Topaz Forgestone [Helm]
+			202640,	-- Zenith Cooling Fluid [Leg]
+			202638,	-- Zenith Mixing Fluid [Hand]
+			202639,	-- Zenith Ventilation Fluid [Chest]
+			202637,	-- Zenith Corrupting Fluid [Shoulder]
+			202630,	-- Zenith Melting Fluid [Helm]
 		}
 	end
 	SymLink = {
@@ -646,10 +646,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						cl(MONK, {
 							["sym"] = SymRaidAberrus(MONK, 4),
 							["g"] = {
-								i(202501),	-- Drape of Forged Vermillion
-								i(202503),	-- Forged Vermillion Blackbelt
-								i(202502),	-- Forged Vermillion Coils
-								i(202508),	-- Forged Vermillion Footpads
+								i(202501),	-- Drape of the Vermillion Forge
+								i(202503),	-- Blackbelt of the Vermillion Forge
+								i(202502),	-- Coils of the Vermillion Forge
+								i(202508),	-- Footpads of the Vermillion Forge
 							},
 						}),
 						cl(PALADIN, {
@@ -664,10 +664,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						cl(PRIEST, {
 							["sym"] = SymRaidAberrus(PRIEST, 4),
 							["g"] = {
-								i(202538),	-- Cuffs of The Furnace Seraph
-								i(202544),	-- Sabatons of The Furnace Seraph
-								i(202539),	-- Sash of The Furnace Seraph
-								i(202537),	-- Shroud of The Furnace Seraph
+								i(202538),	-- Cuffs of the Furnace Seraph
+								i(202544),	-- Sabatons of the Furnace Seraph
+								i(202539),	-- Sash of the Furnace Seraph
+								i(202537),	-- Shroud of the Furnace Seraph
 							},
 						}),
 						cl(ROGUE, {
@@ -768,10 +768,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						cl(MONK, {
 							["sym"] = SymRaidAberrus(MONK, 3),
 							["g"] = {
-								i(202501),	-- Drape of Forged Vermillion
-								i(202503),	-- Forged Vermillion Blackbelt
-								i(202502),	-- Forged Vermillion Coils
-								i(202508),	-- Forged Vermillion Footpads
+								i(202501),	-- Drape of the Vermillion Forge
+								i(202503),	-- Blackbelt of the Vermillion Forge
+								i(202502),	-- Coils of the Vermillion Forge
+								i(202508),	-- Footpads of the Vermillion Forge
 							},
 						}),
 						cl(PALADIN, {
@@ -786,10 +786,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						cl(PRIEST, {
 							["sym"] = SymRaidAberrus(PRIEST, 3),
 							["g"] = {
-								i(202538),	-- Cuffs of The Furnace Seraph
-								i(202544),	-- Sabatons of The Furnace Seraph
-								i(202539),	-- Sash of The Furnace Seraph
-								i(202537),	-- Shroud of The Furnace Seraph
+								i(202538),	-- Cuffs of the Furnace Seraph
+								i(202544),	-- Sabatons of the Furnace Seraph
+								i(202539),	-- Sash of the Furnace Seraph
+								i(202537),	-- Shroud of the Furnace Seraph
 							},
 						}),
 						cl(ROGUE, {
@@ -890,10 +890,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						cl(MONK, {
 							["sym"] = SymRaidAberrus(MONK, 5),
 							["g"] = {
-								i(202501),	-- Drape of Forged Vermillion
-								i(202503),	-- Forged Vermillion Blackbelt
-								i(202502),	-- Forged Vermillion Coils
-								i(202508),	-- Forged Vermillion Footpads
+								i(202501),	-- Drape of the Vermillion Forge
+								i(202503),	-- Blackbelt of the Vermillion Forge
+								i(202502),	-- Coils of the Vermillion Forge
+								i(202508),	-- Footpads of the Vermillion Forge
 							},
 						}),
 						cl(PALADIN, {
@@ -908,10 +908,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						cl(PRIEST, {
 							["sym"] = SymRaidAberrus(PRIEST, 5),
 							["g"] = {
-								i(202538),	-- Cuffs of The Furnace Seraph
-								i(202544),	-- Sabatons of The Furnace Seraph
-								i(202539),	-- Sash of The Furnace Seraph
-								i(202537),	-- Shroud of The Furnace Seraph
+								i(202538),	-- Cuffs of the Furnace Seraph
+								i(202544),	-- Sabatons of the Furnace Seraph
+								i(202539),	-- Sash of the Furnace Seraph
+								i(202537),	-- Shroud of the Furnace Seraph
 							},
 						}),
 						cl(ROGUE, {
@@ -1012,10 +1012,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						cl(MONK, {
 							["sym"] = SymRaidAberrus(MONK, 6),
 							["g"] = {
-								i(202501),	-- Drape of Forged Vermillion
-								i(202503),	-- Forged Vermillion Blackbelt
-								i(202502),	-- Forged Vermillion Coils
-								i(202508),	-- Forged Vermillion Footpads
+								i(202501),	-- Drape of the Vermillion Forge
+								i(202503),	-- Blackbelt of the Vermillion Forge
+								i(202502),	-- Coils of the Vermillion Forge
+								i(202508),	-- Footpads of the Vermillion Forge
 							},
 						}),
 						cl(PALADIN, {
@@ -1030,10 +1030,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						cl(PRIEST, {
 							["sym"] = SymRaidAberrus(PRIEST, 6),
 							["g"] = {
-								i(202538),	-- Cuffs of The Furnace Seraph
-								i(202544),	-- Sabatons of The Furnace Seraph
-								i(202539),	-- Sash of The Furnace Seraph
-								i(202537),	-- Shroud of The Furnace Seraph
+								i(202538),	-- Cuffs of the Furnace Seraph
+								i(202544),	-- Sabatons of the Furnace Seraph
+								i(202539),	-- Sash of the Furnace Seraph
+								i(202537),	-- Shroud of the Furnace Seraph
 							},
 						}),
 						cl(ROGUE, {
