@@ -15,6 +15,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 47.4, 48.6, ZARALEK_CAVERN },
 				}),
 			}),
+			petbattle(ach(17880, {	-- Battle in Zaralek Cavern
+				crit(1, {	-- To a Land Down Under
+					-- TODO: ["_quests"] = {  },	-- ???
+				}),
+				crit(2, {	-- Are They Not Beautiful?
+					["_quests"] = { 75750 },	-- Are They Not Beautiful?
+				}),
+				crit(3, {	-- Delver Mardei
+					-- TODO: ["_quests"] = {  },	-- ???
+
+				}),
+				crit(4, {	-- Do you Even Train?
+					-- TODO: ["_quests"] = {  },	-- ???
+				}),
+			})),
 			ach(17517, {	-- Dragon Glyphs: Aberrus Approach
 				["coord"] = { 48.4, 7.0, ZARALEK_CAVERN },
 			}),
@@ -66,6 +81,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					-- Confirm + TODO: ["sourceQuests"] = { 75417 },	-- ???
 				}),
 			}),
+			ach(17766, {	-- Explore Zaralek Cavern
+				crit(1),	-- Aberrus Approach
+				crit(2),	-- Buried Vault
+				crit(3),	-- Glimmerogg
+				crit(4),	-- Loamm
+				crit(5),	-- Nal ks'kol
+				crit(6),	-- Sulfur Wastes
+				crit(7),	-- The Throughway
+				crit(8),	-- Zaqali Caldera
+			}),
 			petbattle(ach(17934, {	-- Family Battler of Zaralek Cavern
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -91,7 +116,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(2, {	-- Shinmura
 					["crs"] = { 204792 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
@@ -109,7 +134,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(2, {	-- Shinmura
 					["crs"] = { 204792 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
@@ -127,7 +152,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(2, {	-- Shinmura
 					["crs"] = { 204792 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
@@ -145,7 +170,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(2, {	-- Shinmura
 					["crs"] = { 204792 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
@@ -163,7 +188,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(2, {	-- Shinmura
 					["crs"] = { 204792 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
@@ -181,7 +206,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(2, {	-- Shinmura
 					["crs"] = { 204792 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
@@ -199,7 +224,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(2, {	-- Shinmura
 					["crs"] = { 204792 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
@@ -217,7 +242,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(2, {	-- Shinmura
 					["crs"] = { 204792 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
@@ -235,7 +260,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(2, {	-- Shinmura
 					["crs"] = { 204792 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
@@ -253,7 +278,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(2, {	-- Shinmura
 					["crs"] = { 204792 },
-					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
 				crit(3, {	-- Delver Mardei
 					["crs"] = { 204926 },
@@ -322,6 +347,38 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					-- TODO: ["coord"] = { , ZARALEK_CAVERN },
 				}),
 			}),
+			ach(17786, {	-- Treasures of Zaralek Cavern
+				crit(1, {	-- Ancient Zaqali Chest
+					-- TODO: ["_quests"] = {  },
+				}),
+				crit(2, {	-- Blazing Shadowflame Chest
+					-- TODO: ["_quests"] = {  },
+				}),
+				crit(3, {	-- Bloody Body
+					-- TODO: ["_quests"] = {  },
+				}),
+				crit(4, {	-- Charred Egg
+					["_quests"] = { 73706 },
+				}),
+				crit(5, {	-- Chest of the Flights
+					-- TODO: ["_quests"] = {  },
+				}),
+				crit(6, {	-- Crystal-Encased Chest
+					["_quests"] = { 73697 },
+				}),
+				crit(7, {	-- Long-Lost Cache
+					["_quests"] = { 75019 },
+				}),
+				crit(8, {	-- Old Trunk
+					-- TODO: ["_quests"] = {  },
+				}),
+				crit(9, {	-- Seething Cache
+					["_quests"] = { 49341 },
+				}),
+				crit(10, {	-- Well-Chewed Chest
+					-- TODO: ["_quests"] = {  },
+				}),
+			}),
 			pvp(ach(17851)),	-- Tour of Duty: Zaralek Cavern
 			ach(18150, {	-- Zaralek Caverns Glyph Hunter
 				["sym"] = {{"meta_achievement",
@@ -335,17 +392,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					17513,	-- Dragon Glyphs: Zaqali Caldera
 				}},
 			}),
+			petbattle(ach(17879, {	-- Zaralek Cavern Safari
+				crit(1),	-- Puddlehopper
+				crit(2),	-- Rock Martin
+				crit(3),	-- Yellabon
+				crit(4),	-- Endmite
+				crit(5),	-- Stonewhisker
+				crit(6),	-- Cobbleshell
+				crit(7),	-- Boulderfang
+				crit(8),	-- Slabwing
+				crit(9),	-- Hollow Moth
+			})),
 
 			-- TODO:
-			ach(17766),	-- Explore Zaralek Cavern
+
 			ach(17783),	-- Adventurer of Zaralek Cavern
-			ach(17785),	-- Que Zara(lek), Zara(lek)
-			ach(17786),	-- Treasures of Zaralek Cavern
-			ach(17879),	-- Zaralek Cavern Safari
-			ach(17880),	-- Battle in Zaralek Cavern
 			ach(18100, {	-- Cavern Clawbbering
 				i(205904),	-- Vibrant Clacking Claw (TOY!)
 			}),
+
+			ach(17785),	-- Que Zara(lek), Zara(lek)
 		}),
 	}),
 })));
