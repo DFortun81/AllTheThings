@@ -26181,8 +26181,6 @@ s(170096)/i(34072),	--
 s(170097)/i(34079),	-- Monster - Staff, Northrend Runed
 s(170098)/i(34080),	-- Monster - Axe, 1H Broad, Spiked Blade
 s(170099)/i(34082),	-- ng Helm \\ Diving Helm
-s(170100)/i(34138),	-- anted White Wand \\ Enchanted White Wand
-s(170101)/i(34139),	-- anted Crimson Wand \\ Enchanted Crimson Wand
 s(170102)/i(34144),	-- ch of Destruction \\ Branch of Destruction
 s(170103)/i(34145),	-- of Devastation \\ Rod of Devastation
 s(170104)/i(34146),	-- Death \\ Red Death
@@ -38282,8 +38280,6 @@ s(15746)/i(34079),	-- Monster - Staff, Northrend Runed
 s(15747)/i(34080),	-- Monster - Axe, 1H Broad, Spiked Blade
 s(15748)/i(34082),	-- ng Helm \\ Diving Helm
 s(15752)/i(34098),	-- Monster - Gun, Blood Elf Red
-s(15754)/i(34138),	-- anted White Wand \\ Enchanted White Wand
-s(15755)/i(34139),	-- anted Crimson Wand \\ Enchanted Crimson Wand
 s(15757)/i(34144),	-- ch of Destruction \\ Branch of Destruction
 s(15758)/i(34145),	-- of Devastation \\ Rod of Devastation
 s(15759)/i(34146),	-- Death \\ Red Death

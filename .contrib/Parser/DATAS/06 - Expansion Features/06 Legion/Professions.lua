@@ -955,6 +955,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["timeline"]={ "added 7.0.3", "removed 8.0.1" },
 						["collectible"] = false,
 					}),
+					applyclassicphase(BFA_PHASE_ONE, r(302694, {	-- Disenchant
+						["collectible"] = false,
+						["timeline"] = { "added 8.0.1" },
+					})),
 					r(264471, {["timeline"]={"added 8.0.1"}}),	-- Legion Enchanting
 					r(190869),	-- Word of Versatility [Rank 1]
 				},

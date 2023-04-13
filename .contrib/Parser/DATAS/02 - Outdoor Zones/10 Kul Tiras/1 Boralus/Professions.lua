@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				n(136041, {	-- Emily Fairweather <Enchanting Trainer>
 					--["coord"] = { }
 					["races"] = ALLIANCE_ONLY,
-					["g"] = bubbleDown({ ["requireSkill"] = ENCHANTING, ["races"] = ALLIANCE_ONLY }, appendGroups(BFA_ENCHANTING, {
+					["g"] = appendGroups(BFA_ENCHANTING, {
 						r(264473),	-- Kul Tiran Enchanting
 						cat(657, {	-- Armor Enchantments
 							r(255070),	-- Kul Tiran Crafting
@@ -111,7 +111,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 							r(255066),	-- Kul Tiran Surveying
 							r(255068),	-- Swift Hearthing
 						}),
-					})),
+					}),
 				}),
 			}),
 			prof(ENGINEERING, {

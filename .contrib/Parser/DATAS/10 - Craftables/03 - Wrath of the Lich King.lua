@@ -921,12 +921,6 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 }))));
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(PROFESSIONS, {
-		prof(ENCHANTING, {
-			tier(WOTLK_TIER, {
-				i(34138),	-- Enchanted White Wand
-				i(34139),	-- Enchanted Crimson Wand
-			}),
-		}),
 		prof(ENGINEERING, {
 			tier(WOTLK_TIER, {
 				i(48945),	-- Gnomish Thinking Cap (Mind Amplification Disk was added for it)

@@ -166,27 +166,6 @@ r(309292),	-- Bonerivetted Waistguard \\ Necrolord Scale Waistguard
 r(309293),	-- Bonerivetted Armguards \\ Necrolord Scale Armguards
 9.0.1.35167
 r(338261),	-- Almost Thing
-10.1.0.48480
-r(403133),	-- Obsidian Combatant's Resilient Mask
-r(403134),	-- Obsidian Combatant's Resilient Chestpiece
-r(403135),	-- Obsidian Combatant's Resilient Trousers
-r(403136),	-- Obsidian Combatant's Resilient Shoulderpads
-r(403137),	-- Obsidian Combatant's Resilient Gloves
-r(403138),	-- Obsidian Combatant's Resilient Boots
-r(403139),	-- Obsidian Combatant's Resilient Wristwraps
-r(403140),	-- Obsidian Combatant's Resilient Belt
-r(403141),	-- Obsidian Combatant's Adamant Cowl
-r(403142),	-- Obsidian Combatant's Adamant Chainmail
-r(403143),	-- Obsidian Combatant's Adamant Leggings
-r(403144),	-- Obsidian Combatant's Adamant Epaulettes
-r(403145),	-- Obsidian Combatant's Adamant Gauntlets
-r(403146),	-- Obsidian Combatant's Adamant Treads
-r(403147),	-- Obsidian Combatant's Adamant Cuffs
-r(403148),	-- Obsidian Combatant's Adamant Girdle
-r(406214),	-- Lambent Armor Kit
-r(406266),	-- Spore Colony Shoulderguards
-r(406267),	-- Adaptive Dracothyst Armguards
-r(406275),	-- Shadowflame-Tempered Armor Patch
 10.1.0.48661
 r(409555),	-- Lustrous Scaled Drums
 r(409557),	-- Hide-Bound Drums
@@ -1900,27 +1879,3 @@ r(355354),	-- Elusive Pet Treat
 r(359662),	-- Crafter's Mark IV
 r(359669),	-- Crafter's Mark of the First Ones
 r(359702),	-- Vestige of the Eternal
-10.1.0.48480
-r(403133),	-- Obsidian Combatant's Resilient Mask
-r(403134),	-- Obsidian Combatant's Resilient Chestpiece
-r(403135),	-- Obsidian Combatant's Resilient Trousers
-r(403136),	-- Obsidian Combatant's Resilient Shoulderpads
-r(403137),	-- Obsidian Combatant's Resilient Gloves
-r(403138),	-- Obsidian Combatant's Resilient Boots
-r(403139),	-- Obsidian Combatant's Resilient Wristwraps
-r(403140),	-- Obsidian Combatant's Resilient Belt
-r(403141),	-- Obsidian Combatant's Adamant Cowl
-r(403142),	-- Obsidian Combatant's Adamant Chainmail
-r(403143),	-- Obsidian Combatant's Adamant Leggings
-r(403144),	-- Obsidian Combatant's Adamant Epaulettes
-r(403145),	-- Obsidian Combatant's Adamant Gauntlets
-r(403146),	-- Obsidian Combatant's Adamant Treads
-r(403147),	-- Obsidian Combatant's Adamant Cuffs
-r(403148),	-- Obsidian Combatant's Adamant Girdle
-r(406214),	-- Lambent Armor Kit
-r(406266),	-- Spore Colony Shoulderguards
-r(406267),	-- Adaptive Dracothyst Armguards
-r(406275),	-- Shadowflame-Tempered Armor Patch
-10.1.0.48661
-r(409555),	-- Lustrous Scaled Drums
-r(409557),	-- Hide-Bound Drums

@@ -111,15 +111,7 @@ r(310542),	-- Shadowlands Engineering
 9.0.1.35432
 r(340534),	-- Interact
 10.1.0.48480
-r(407005),	-- Polarity Bomb
 r(407006),	-- EZ-Thro Polarity Bomb
-r(408052),	-- Tinker: Shadowflame Rockets
-r(408230),	-- Quackomancy Cannon
-10.1.0.48661
-r(409351),	-- Obsidian Combatant's Cloth Goggles
-r(409353),	-- Obsidian Combatant's Leather Goggles
-r(409355),	-- Obsidian Combatant's Mail Goggles
-r(409356),	-- Obsidian Combatant's Plate Goggles
 
 
 
@@ -931,13 +923,3 @@ r(359664),	-- Crafter's Mark IV
 r(359674),	-- Crafter's Mark of the First Ones
 r(360088),	-- Pure-Air Sail Extensions
 r(360126),	-- Erratic Genesis Matrix
-10.1.0.48480
-r(407005),	-- Polarity Bomb
-r(407006),	-- EZ-Thro Polarity Bomb
-r(408052),	-- Tinker: Shadowflame Rockets
-r(408230),	-- Quackomancy Cannon
-10.1.0.48661
-r(409351),	-- Obsidian Combatant's Cloth Goggles
-r(409353),	-- Obsidian Combatant's Leather Goggles
-r(409355),	-- Obsidian Combatant's Mail Goggles
-r(409356),	-- Obsidian Combatant's Plate Goggles

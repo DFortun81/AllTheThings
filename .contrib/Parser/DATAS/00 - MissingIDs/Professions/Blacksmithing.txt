@@ -117,36 +117,7 @@ r(322644),	-- Sinsteel Shanker
 r(322645),	-- Sinsteel Spear
 r(322646),	-- Sinsteel Warglaive
 10.1.0.48480
-r(403158),	-- Obsidian Combatant's Draconium Armguards
-r(403159),	-- Obsidian Combatant's Draconium Breastplate
-r(403160),	-- Obsidian Combatant's Draconium Gauntlets
-r(403161),	-- Obsidian Combatant's Draconium Greaves
-r(403162),	-- Obsidian Combatant's Draconium Helm
-r(403163),	-- Obsidian Combatant's Draconium Pauldrons
-r(403164),	-- Obsidian Combatant's Draconium Sabatons
-r(403165),	-- Obsidian Combatant's Draconium Waistguard
-r(408282),	-- Shadowed Alloy \\ Hellsteel Alloy
-r(408283),	-- Shadowed Razing Annihilator \\ [DNT] Hellsteel Bunker Buster
-r(408288),	-- Shadowed Belt Buckle \\ Hellsteel Belt Buckle
 r(408299),	-- Heat-Resistant Rescue Ring
-r(408326),	-- Shadowed Impact Buckler \\ Hellsteel Impact Buckler
 
 
-
-
-Missing in BlacksmithingItemDB.lua
-
-10.1.0.48480
-r(403158),	-- Obsidian Combatant's Draconium Armguards
-r(403159),	-- Obsidian Combatant's Draconium Breastplate
-r(403160),	-- Obsidian Combatant's Draconium Gauntlets
-r(403161),	-- Obsidian Combatant's Draconium Greaves
-r(403162),	-- Obsidian Combatant's Draconium Helm
-r(403163),	-- Obsidian Combatant's Draconium Pauldrons
-r(403164),	-- Obsidian Combatant's Draconium Sabatons
-r(403165),	-- Obsidian Combatant's Draconium Waistguard
-r(408282),	-- Shadowed Alloy \\ Hellsteel Alloy
-r(408283),	-- Shadowed Razing Annihilator \\ [DNT] Hellsteel Bunker Buster
-r(408288),	-- Shadowed Belt Buckle \\ Hellsteel Belt Buckle
-r(408299),	-- Heat-Resistant Rescue Ring
-r(408326),	-- Shadowed Impact Buckler \\ Hellsteel Impact Buckler
+Nothing is Missing in BlacksmithingItemDB.lua! Good Work!

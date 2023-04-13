@@ -135,12 +135,6 @@ r(382978),	-- Cataclysm Prospecting
 r(382979),	-- Northrend Prospecting
 r(382980),	-- Outland Prospecting
 r(382995),	-- Classic Prospecting
-10.1.0.48480
-r(403131),	-- Obsidian Combatant's Jeweled Amulet
-r(403132),	-- Obsidian Combatant's Jeweled Signet
-r(408231),	-- B.B.F. Fist
-r(408397),	-- Statuette of Foreseen Power \\ Statuette of the Forethoughtful Fiend \\ [PH] Precognition Reagent
-r(408398),	-- Figurine of the Gathering Storm \\ [PH] Melee Reagent
 
 
 
@@ -1510,9 +1504,3 @@ r(359672),	-- Crafter's Mark of the First Ones
 r(359701),	-- Vestige of the Eternal
 r(360016),	-- Aealic Harmonizing Stone \\ Ephemera Harmonizing Stone
 r(360317),	-- Devourer Essence Stone
-10.1.0.48480
-r(403131),	-- Obsidian Combatant's Jeweled Amulet
-r(403132),	-- Obsidian Combatant's Jeweled Signet
-r(408231),	-- B.B.F. Fist
-r(408397),	-- Statuette of Foreseen Power \\ Statuette of the Forethoughtful Fiend \\ [PH] Precognition Reagent
-r(408398),	-- Figurine of the Gathering Storm \\ [PH] Melee Reagent

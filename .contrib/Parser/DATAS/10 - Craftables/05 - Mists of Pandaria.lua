@@ -1037,11 +1037,6 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(82901),	-- Spiritguard Boots
 			}),
 		}),
-		prof(ENCHANTING, {
-			tier(MOP_TIER, {
-				i(74251),	-- Greater Mysterious Essence
-			}),
-		}),
 		prof(ENGINEERING, {
 			tier(MOP_TIER, {
 				i(81143),	-- Avanced Deepdive Helmet (Mop Beta Only)

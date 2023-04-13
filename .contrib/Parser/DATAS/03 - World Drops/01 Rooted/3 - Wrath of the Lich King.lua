@@ -604,7 +604,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 	category(227, {	-- Weapons
 		filter(ONE_HANDED_AXES, {
 			i(33426),	-- Chipped Timber Axe
-			i(36575, {	-- Dragonflayer Hatchet 
+			i(36575, {	-- Dragonflayer Hatchet
 				["timeline"] = { "added 3.0.1.8770", "removed 10.0.7" },	-- Maybe still world drop, but best farmed in Ahn'Kahet
 			}),
 			i(36571),	-- Splicing Axe
@@ -678,7 +678,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36473),	-- Pioneer's Dagger
 			i(36474),	-- Engraved Dagger
 			i(36475),	-- Seal Shortblade
-			i(36476),	-- Whale Ripper	
+			i(36476),	-- Whale Ripper
 			i(36478),	-- Frosty Talon
 			i(36479),	-- Snobold Ripper
 			i(36480),	-- Ebony Dagger
@@ -1081,30 +1081,6 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(43510),	-- Recipe: Haunted Herring
 			i(43508),	-- Recipe: Last Week's Mammoth
 			i(43507),	-- Recipe: Tasty Cupcake
-		}),
-		prof(ENCHANTING, {
-			-- TODO: Look more closely into these.
-			i(37341, {	-- Formula: Enchant Boots - Superior Agility
-				["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
-			}),
-			i(37346, {	-- Formula: Enchant Bracer - Expertise
-				["u"] = REMOVED_FROM_GAME,	-- formula was removed from game when expertise went away
-			}),
-			i(37337, {	-- Formula: Enchant Bracer - Greater Stats
-				["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
-			}),
-			i(37336, {	-- Formula: Enchant Chest - Greater Dodge
-				["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
-			}),
-			i(37348, {	-- Formula: Enchant Cloak - Haste
-				["u"] = REMOVED_FROM_GAME,	-- was replaced by Enchant Cloak - Greater Speed
-			}),
-			i(37343, {	-- Formula: Enchant Weapon - Exceptional Agility
-				["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
-			}),
-			i(37329, {	-- Formula: Enchant Weapon - Exceptional Versatility
-				["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
-			}),
 		}),
 		-- #if BEFORE 8.0.1.10000
 		prof(FIRST_AID, {

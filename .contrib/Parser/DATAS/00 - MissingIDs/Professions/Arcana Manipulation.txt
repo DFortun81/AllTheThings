@@ -16,3 +16,6 @@ r(300290),	-- TK44[DNT] \\ TK44
 r(300465),	-- Pocket-Sized Computation Device
 r(364624),	-- Arcane-Infused Trinket
 r(364632),	-- Enchanted Staff
+
+
+Nothing is Missing in Arcana ManipulationItemDB.lua! Good Work!

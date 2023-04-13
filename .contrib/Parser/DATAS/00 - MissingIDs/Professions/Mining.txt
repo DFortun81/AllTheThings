@@ -83,8 +83,6 @@ r(389462),	-- Primal Serevite Deposit \\ Primal Tyrivite Deposit
 r(389463),	-- Hardened Serevite Deposit \\ Hardened Tyrivite Deposit
 r(389464),	-- Infurious Serevite Deposit \\ Bloody Tyrivite Deposit
 r(389465),	-- Serevite Seam \\ Tyrivite Seam
-10.0.5.47871
-r(388213),	-- Overload Elemental Deposit \\ Overload Mining Node \\ Overload Element
 10.1.0.48480
 r(405120),	-- Metamorphic Serevite Deposit
 r(405121),	-- Metamorphic Draconium Deposit
@@ -250,9 +248,3 @@ r(308151),	-- Phaedrum Ore
 r(308152),	-- Sinvyr Ore
 r(308153),	-- Elethium Ore \\ Elethium Ingot
 r(309835),	-- Mining
-10.0.5.47871
-r(388213),	-- Overload Elemental Deposit \\ Overload Mining Node \\ Overload Element
-10.1.0.48480
-r(405120),	-- Metamorphic Serevite Deposit
-r(405121),	-- Metamorphic Draconium Deposit
-r(405131),	-- Overload Metamorphic Deposit

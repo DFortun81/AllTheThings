@@ -100,6 +100,7 @@ mount(276112),	-- Darkforge Ram
 mount(363608),	-- Lightforged Ruinstrider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
+mount(368893),	-- Winding Slitherdrake
 10.1.0.48480
 mount(408313),	-- Big Slick in the City
 10.1.0.48537
@@ -226,19 +227,3 @@ mount(363608),	-- Lightforged Ruinstrider
 mount(370770),	-- Tuskarr Shoreglider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
-10.1.0.48480
-mount(408313),	-- Big Slick in the City
-10.1.0.48537
-mount(406637),	-- Inferno Armoredon
-mount(408647),	-- Cobalt Shalewing \\ Api Biru Sporebat
-10.1.0.48661
-mount(408653),	-- Boulder Hauler
-mount(408655),	-- Morsel Sniffer
-mount(408977),	-- Obsidian Gladiator's Slitherdrake
-mount(409032),	-- Vicious War Snail
-mount(409034),	-- Vicious War Snail
-10.1.0.48776
-mount(408649),	-- Shadowflame Shalewing \\ Scoria-Clad Sporebat
-10.1.0.48898
-mount(408627),	-- Igneous Shalewing
-mount(411565),	-- Felcrystal Scorpion

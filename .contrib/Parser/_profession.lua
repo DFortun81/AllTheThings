@@ -763,6 +763,10 @@ APPRENTICE_JOURNEYMAN_ENCHANTING = {
 		["rank"] = 3,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264455, {["timeline"]={"added 8.0.1"}})),	-- Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(300381, {	-- Disenchant
+		["collectible"] = false,
+		["timeline"] = { "added 8.0.1" },
+	})),
 	r(13262, {	-- Disenchant
 		["collectible"] = false,
 	}),
@@ -884,6 +888,10 @@ TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 		["rank"] = 5,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264460, {["timeline"]={"added 8.0.1"}})),	-- Outland Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(300382, {	-- Disenchant
+		["collectible"] = false,
+		["timeline"] = { "added 8.0.1" },
+	})),
 	cat(ARMOR_ENCHANTMENTS, {
 		r(33996),	-- Assault
 		r(33993),	-- Blasting
@@ -920,6 +928,10 @@ WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] 
 		["rank"] = 6,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264462, {["timeline"]={"added 8.0.1"}})),	-- Northrend Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(302690, {	-- Disenchant
+		["collectible"] = false,
+		["timeline"] = { "added 8.0.1" },
+	})),
 	cat(ARMOR_ENCHANTMENTS, {
 		r(60606, {["timeline"]={"added 3.1.0"}}),	-- Assault[Boot]
 		r(44645, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Assault[Ring]
@@ -979,6 +991,10 @@ CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = 
 		["rank"] = 7,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264464, {["timeline"]={"added 8.0.1"}})),	-- Cataclysm Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(302691, {	-- Disenchant
+		["collectible"] = false,
+		["timeline"] = { "added 8.0.1" },
+	})),
 	cat(ARMOR_ENCHANTMENTS, {
 		r(74216, {["timeline"]={"added 4.0.3","removed 6.0.2"}}),	-- Agility
 		r(74201),	-- Critical Strike[Bracer]
@@ -1076,6 +1092,10 @@ MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 		["rank"] = 8,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264467, {["timeline"]={"added 8.0.1"}})),	-- Pandaria Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(302692, {	-- Disenchant
+		["collectible"] = false,
+		["timeline"] = { "added 8.0.1" },
+	})),
 	cat(ARMOR_ENCHANTMENTS, {
 		r(104398),	-- Accuracy
 		r(104409),	-- Blurred Speed
@@ -1129,6 +1149,10 @@ DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({
 			["rank"] = 9,
 		}),
 		applyclassicphase(BFA_PHASE_ONE, r(264469, {["timeline"]={"added 8.0.1"}})),	-- Draenor Enchanting
+		applyclassicphase(BFA_PHASE_ONE, r(302693, {	-- Disenchant
+		["collectible"] = false,
+		["timeline"] = { "added 8.0.1" },
+	})),
 		r(158907),	-- Breath of Critical Strike
 		r(158908),	-- Breath of Haste
 		r(158909),	-- Breath of Mastery
@@ -1246,6 +1270,7 @@ COMMON_DRAENOR_ENCHANTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData(
 	}),
 }));
 BFA_ENCHANTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { "added 8.0.1" } }, {
+	r(302695),	-- Disenchant
 	cat(ARMOR_ENCHANTMENTS, {
 		r(271433),	-- Cooled Hearthing
 		r(255075),	-- Pact of Critical Strike [Rank 1]
@@ -1374,6 +1399,47 @@ SL_ENCHANTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline
 		r(309621),	-- Eternal Grace
 		r(309620),	-- Lightless Force
 		r(309623),	-- Sinful Revelation
+	}),
+}));
+DF_ENCHANTING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+	r(366255),	-- Dragon Isles Enchanting
+	r(392888, {["collectible"] = false}),	-- Disenchant
+	cat(ARMOR_ENCHANTMENTS, {
+		r(389292),	-- Devotion of Critical Strike
+		r(389293),	-- Devotion of Haste
+		r(389294),	-- Devotion of Mastery
+		r(389295),	-- Devotion of Versatility
+		r(389297),	-- Writ of Avoidance [Bracers]
+		r(389397),	-- Writ of Avoidance [Cloak]
+		r(388930),	-- Writ of Critical Strike
+		r(389135),	-- Writ of Haste
+		r(389298),	-- Writ of Leech [Bracers]
+		r(389398),	-- Writ of Leech [Cloak]
+		r(389136),	-- Writ of Mastery
+		r(389300),	-- Writ of Speed [Bracers]
+		r(389400),	-- Writ of Speed [Cloak]
+		r(389151),	-- Writ of Versatility
+	}),
+	cat(OTHER, {
+		r(391176),	-- Enchanted Writhebark Wand
+		r(391810),	-- Illusory Adornment: Air
+		r(391811),	-- Illusory Adornment: Earth
+		r(390951),	-- Illusory Adornment: Fire
+		r(391809),	-- Illusory Adornment: Frost
+		r(389191),	-- Recraft Equipment
+		r(390823),	-- Runed Draconium Rod
+		r(394189),	-- Runed Serevite Rod
+		r(391806),	-- Scepter of Spectacle: Air
+		r(391807),	-- Scepter of Spectacle: Earth
+		r(391196),	-- Scepter of Spectacle: Fire
+		r(391197),	-- Scepter of Spectacle: Frost
+	}),
+	cat(WEAPON_ENCHANTMENTS, {
+		r(389537),	-- Burning Writ
+		r(389540),	-- Earthen Writ
+		r(389543),	-- Frozen Writ
+		r(389542),	-- Sophic Writ
+		r(389546),	-- Wafting Writ
 	}),
 }));
 
