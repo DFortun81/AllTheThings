@@ -1684,6 +1684,8 @@ namespace ATT
                         break;
                     // Deleted
                     case 4:
+                        data["u"] = 2;
+                        return false;
                     // Removed From Game
                     case 2:
                         data["u"] = 2;
