@@ -269,7 +269,12 @@ namespace ATT
         {
             if (_autoLocalizeTypes == null)
             {
-                _autoLocalizeTypes = new HashSet<string>((string[])Config["AutoLocalizeTypes"]);
+                var types = Config["AutoLocalizeTypes"];
+                if (types != null)
+                {
+                    _autoLocalizeTypes = new HashSet<string>((string[])Config["AutoLocalizeTypes"]);
+                }
+                else _autoLocalizeTypes = new HashSet<string>();
             }
             return _autoLocalizeTypes.Contains(type);
         }

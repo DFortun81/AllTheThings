@@ -2477,7 +2477,7 @@ end
                 if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out decimal id))
                 {
                     // If there is no most significant ID field, then complain.
-                    LogError($"No Most Significant ID!", data2);
+                    if (!data2.ContainsKey("aqd")) LogError($"No Most Significant ID!", data2);
                 }
                 else
                 {
