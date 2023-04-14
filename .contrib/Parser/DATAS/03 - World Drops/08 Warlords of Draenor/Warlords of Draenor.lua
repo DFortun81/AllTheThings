@@ -868,6 +868,36 @@ root(ROOTS.WorldDrops, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3
 		}),
 	}),
 	filter(RECIPES, {
+		q(36239, {	-- A Mysterious Satchel
+			["provider"] = { "i", 114984 },	-- Mysterious Satchel
+			["description"] = "This item can drop from any Draenor mob.",
+			["maps"] = {
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+			["requireSkill"] = INSCRIPTION,
+			["races"] = ALLIANCE_ONLY,
+			["lvl"] = 90,
+		}),
+		q(36435, {	-- Unintelligible Intelligence
+			["provider"] = { "i", 115593 },	-- Illegible Sootstained Notes
+			["description"] = "This item can drop from any Draenor mob.",
+			["requireSkill"] = INSCRIPTION,
+			["maps"] = {
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+			["races"] = HORDE_ONLY,
+			["lvl"] = 90,
+		}),
 		i(116438),		-- Burned-Out Hand Cannon
 		i(114972),		-- Cryptic Tome of Tailoring
 		i(114877),		-- Dirty Note

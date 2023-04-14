@@ -2728,6 +2728,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 				}),
+				-- #if AFTER WRATH
+				prof(INSCRIPTION, {
+					n(30713, {	-- Catarina Stanford <Inscription Trainer>
+						-- #if AFTER LEGION
+						["coord"] = { 49.8, 74.0, STORMWIND_CITY },
+						-- #else
+						["coord"] = { 49.8, 74.6, STORMWIND_CITY },
+						-- #endif
+						["timeline"] = { "added 3.0.2.8905" },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = CLASSIC_INSCRIPTION,
+					}),
+				}),
+				-- #endif
 				prof(JEWELCRAFTING, {
 					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
 						["coord"] = { 63.6, 61.6, STORMWIND_CITY },
