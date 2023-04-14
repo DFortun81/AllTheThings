@@ -448,6 +448,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				i(205231),	-- Roggy (PET!)
 			}),
+			ach(17830),		-- Stones Can't Fly!
 			ach(17781),		-- The Smell of Money
 			ach(18361, {	-- To All the Squirrels Burrowed Beneath
 				crit(1, {	-- Hissing Dustmoth
