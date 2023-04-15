@@ -12,6 +12,28 @@ _.Instances = { tier(MOP_TIER, {
 		["coord"] = { 39.0, 34.9, DREAD_WASTES },	-- Heart of Fear
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(6718, {	-- The Dread Approach
+					crit(1, {	-- Imperial Vizier Zor'lok
+						["_encounter"] = { 745, 7 },
+					}),
+					crit(2, {	-- Blade Lord Ta'yak
+						["_encounter"] = { 744, 7 },
+					}),
+					crit(3, {	-- Garalon
+						["_encounter"] = { 713, 7 },
+					}),
+				}),
+				ach(6845, {	-- Nightmare of Shek'zeer
+					crit(1, {	-- Wind Lord Mel'jarak
+						["_encounter"] = { 741, 7 },
+					}),
+					crit(2, {	-- Amber-Shaper Un'sok
+						["_encounter"] = { 737, 7 },
+					}),
+					crit(3, {	-- Grand Empress Shek'zeer
+						["_encounter"] = { 743, 7 },
+					}),
+				}),
 				ach(6669),	-- Heart of Fear Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
@@ -97,7 +119,7 @@ _.Instances = { tier(MOP_TIER, {
 							})),
 						},
 					}),
-					ach(6718, {	-- The Dread Approach
+					header(HEADERS.Achievement, 6718, {	-- The Dread Approach
 						cr(62980, e(745, {	-- Imperial Vizier Zor'lok
 							i(167058),	-- Kor'thik Swarmling
 							i(89952),	-- Pheromone-Coated Choker
@@ -150,7 +172,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(86830),	-- Ring of the Shattered Shell
 						})),
 					}),
-					ach(6845, {	-- Nightmare of Shek'zeer
+					header(HEADERS.Achievement, 6845, {	-- Nightmare of Shek'zeer
 						cr(62397, e(741, {	-- Wind Lord Mel'jarak
 							i(89271, {	-- Gauntlets of the Shadowy Conqueror
 								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -325,7 +347,13 @@ _.Instances = { tier(MOP_TIER, {
 						i(86211),	-- Seal of the Profane
 					})),
 					cr(62837, e(743, {	-- Grand Empress Shek'zeer
-						ach(6922),	-- Timing is Everything
+						ach(6922, {	-- Timing is Everything
+							crit(1, {	-- Defeat 2 Kor'thik Reavers within 10 seconds of each other
+								["cr"] = 63591,	-- Kor'thik Reaver
+							}),
+							crit(2, {	-- Defeat Grand Empress Shek'zeer
+							}),
+						}),
 						i(167056),	-- Essence of Pride
 						i(89237, {	-- Chest of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -385,7 +413,6 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 					cr(62980, e(745, {	-- Imperial Vizier Zor'lok
 						ach(6725),	-- Heroic: Imperial Vizier Zor'lok
-						ach(6937),	-- Overzealous
 						i(167058),	-- Kor'thik Swarmling
 						i(89917),	-- Pheromone-Coated Choker
 						i(86945),	-- Hisek's Chrysanthemum Cape
@@ -403,7 +430,6 @@ _.Instances = { tier(MOP_TIER, {
 						i(86946),	-- Vizier's Ruby Signet
 					})),
 					cr(62543, e(744, {  -- Blade Lord Ta'yak
-						ach(6936),	-- Candle in the Wind
 						ach(6726),	-- Heroic: Blade Lord Ta'yak
 						i(167053),	-- Tiny Amber Wings
 						i(86960),	-- Tornado-Summoning Censer
@@ -423,7 +449,6 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62164, e(713, {	-- Garalon
 						ach(6727),	-- Heroic: Garalon
-						ach(6553),	-- Like an Arrow to the Face
 						i(167054),	-- Spawn of Garalon
 						i(86966),	-- Garalon's Hollow Skull
 						i(86970),	-- Xaril's Hood of Intoxicating Vapors
@@ -442,7 +467,6 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62397, e(741, {	-- Wind Lord Mel'jarak
 						ach(6728),	-- Heroic: Wind Lord Mel'jarak
-						ach(6683),	-- Less Than Three
 						i(89256, {	-- Gauntlets of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 						}),
@@ -458,7 +482,6 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62511, e(737, {	-- Amber-Shaper Un'sok
 						ach(6729),	-- Heroic: Amber-Shaper Un'sok
-						ach(6518),	-- I Heard You Like Amber...
 						i(167055),	-- Amber Goo Puddle
 						i(89253, {	-- Leggings of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -477,7 +500,6 @@ _.Instances = { tier(MOP_TIER, {
 						ach(6730),	-- Heroic: Grand Empress Shek'zeer
 						ach(6677),	-- Heroic: Grand Empress Shek'zeer Guild Run
 						un(REMOVED_FROM_GAME, ach(6679)),	-- Realm First! Grand Empress Shek'zeer
-						ach(6922),	-- Timing is Everything
 						i(167056),	-- Essence of Pride
 						i(89250, {	-- Chest of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",

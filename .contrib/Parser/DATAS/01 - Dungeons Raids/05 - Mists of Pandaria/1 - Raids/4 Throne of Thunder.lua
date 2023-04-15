@@ -20,6 +20,50 @@ _.Instances = { tier(MOP_TIER, {
 		["coord"] = { 63.4, 32.6, ISLE_OF_THUNDER },	-- Throne of Thunder
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(8069, {	-- Last Stand of the Zandalari
+					crit(1, {	-- Jin'rokh the Breaker
+						["_encounter"] = { 827, 7 },
+					}),
+					crit(2, {	-- Horridon
+						["_encounter"] = { 819, 7 },
+					}),
+					crit(3, {	-- Council of Elders
+						["_encounter"] = { 816, 7 },
+					}),
+				}),
+				ach(8070, {	-- Forgotten Depths
+					crit(1, {	-- Tortos
+						["_encounter"] = { 825, 7 },
+					}),
+					crit(2, {	-- Megaera
+						["_encounter"] = { 821, 7 },
+					}),
+					crit(3, {	-- Ji-Kun
+						["_encounter"] = { 828, 7 },
+					}),
+				}),
+				ach(8071, {	-- Halls of Flesh-Shaping
+					crit(1, {	-- Durumu the Forgotten
+						["_encounter"] = { 818, 7 },
+					}),
+					crit(2, {	-- Primordius
+						["_encounter"] = { 820, 7 },
+					}),
+					crit(3, {	-- Dark Animus
+						["_encounter"] = { 824, 7 },
+					}),
+				}),
+				ach(8072, {	-- Pinnacle of Storms
+					crit(1, {	-- Iron Qon
+						["_encounter"] = { 817, 7 },
+					}),
+					crit(2, {	-- Twin Empyreans
+						["_encounter"] = { 829, 7 },
+					}),
+					crit(3, {	-- Lei Shen
+						["_encounter"] = { 832, 7 },
+					}),
+				}),
 				ach(8140),	-- Throne of Thunder Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
@@ -283,7 +327,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(95872),	-- Reconstructed Holy Shoulderplates
 						},
 					}),
-					ach(8069, {	-- Last Stand of the Zandalari
+					header(HEADERS.Achievement, 8069, {	-- Last Stand of the Zandalari
 						cr(69465, e(827, {	-- Jin'rokh the Breaker
 							i(95343),	-- Treasures of the Thunder King
 							i(95640),	-- Soulblade of the Breaking Storm
@@ -360,7 +404,7 @@ _.Instances = { tier(MOP_TIER, {
 							},
 						})),
 					}),
-					ach(8070, {	-- Forgotten Depths
+					header(HEADERS.Achievement, 8070, {	-- Forgotten Depths
 						i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
 							["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 						}),
@@ -442,7 +486,7 @@ _.Instances = { tier(MOP_TIER, {
 							i(95727),	-- Ji-Kun's Rising Winds
 						})),
 					}),
-					ach(8071, {	-- Halls of Flesh-Shaping
+					header(HEADERS.Achievement, 8071, {	-- Halls of Flesh-Shaping
 						cr(68036, e(818, {	-- Durumu the Forgotten
 							i(95343),	-- Treasures of the Thunder King
 							i(95743),	-- Ritual Dagger of the Mind's Eye
@@ -516,7 +560,7 @@ _.Instances = { tier(MOP_TIER, {
 							},
 						})),
 					}),
-					ach(8072, {	-- Pinnacle of Storms
+					header(HEADERS.Achievement, 8072, {	-- Pinnacle of Storms
 						cr(68078, e(817, {	-- Iron Qon
 							["crs"] = {
 								68081,	-- Dam'ren <The Frozen Sage>
@@ -868,7 +912,17 @@ _.Instances = { tier(MOP_TIER, {
 							70247,	-- Venomous Head <Head of Megaera>
 						},
 						["g"] = {
-							ach(8082),	-- Head Case
+							ach(8082, {	-- Head Case
+								crit(1, {	-- Flaming
+									["cr"] = 70212,
+								}),
+								crit(2, {	-- Frozen
+									["cr"] = 70235,
+								}),
+								crit(3, {	-- Venomous
+									["cr"] = 70247,
+								}),
+							}),
 							i(94788),	-- Megaera's Poisoned Fang
 							i(94796),	-- Fetish of the Hydra
 							i(94800),	-- Hood of Smoldering Flesh
@@ -1047,7 +1101,80 @@ _.Instances = { tier(MOP_TIER, {
 							69756,	-- Anima Orb
 						},
 						["g"] = {
-							ach(8081),	-- Ritualist Who?
+							ach(8081, {	-- Ritualist Who?
+								crit(1, {	-- Aridian
+									["cr"] = 69726,
+								}),
+								crit(2, {	-- Auton
+									["cr"] = 69718,
+								}),
+								crit(3, {	-- Bandril
+									["cr"] = 69728,
+								}),
+								crit(4, {	-- Drahvin
+									["cr"] = 69727,
+								}),
+								crit(5, {	-- Drashig
+									["cr"] = 69731,
+								}),
+								crit(6, {	-- Fendahl
+									["cr"] = 69734,
+								}),
+								crit(7, {	-- Gond
+									["cr"] = 69729,
+								}),
+								crit(8, {	-- Jagaroth
+									["cr"] = 69721,
+								}),
+								crit(9, {	-- Kroll
+									["cr"] = 69710,
+								}),
+								crit(10, {	-- Kitling
+									["cr"] = 69716,
+								}),
+								crit(11, {	-- Malus
+									["cr"] = 69733,
+								}),
+								crit(12, {	-- Mandrel
+									["cr"] = 69737,
+								}),
+								crit(13, {	-- Megara
+									["cr"] = 69719,
+								}),
+								crit(14, {	-- Morok
+									["cr"] = 69722,
+								}),
+								crit(15, {	-- Ogri
+									["cr"] = 69735,
+								}),
+								crit(16, {	-- Ogron
+									["cr"] = 69730,
+								}),
+								crit(17, {	-- Rill
+									["cr"] = 69725,
+								}),
+								crit(18, {	-- Rutan
+									["cr"] = 69736,
+								}),
+								crit(19, {	-- Sirian
+									["cr"] = 69720,
+								}),
+								crit(20, {	-- Tetrap
+									["cr"] = 69738,
+								}),
+								crit(21, {	-- Thal
+									["cr"] = 69709,
+								}),
+								crit(22, {	-- Voord
+									["cr"] = 69723,
+								}),
+								crit(23, {	-- Wirrn
+									["cr"] = 69732,
+								}),
+								crit(24, {	-- Xeron
+									["cr"] = 69724,
+								}),
+							}),
 							i(95574),	-- Chest of the Crackling Conqueror
 							i(95579),	-- Chest of the Crackling Protector
 							i(95569),	-- Chest of the Crackling Vanquisher
@@ -1086,7 +1213,18 @@ _.Instances = { tier(MOP_TIER, {
 							68079,	-- Ro'shak <The Molten Flare>
 						},
 						["g"] = {
-							ach(8087),	-- Can't Touch This
+							ach(8087, {	-- Can't Touch This
+								crit(1, {	-- Burning Cinders
+								}),
+								crit(2, {	-- Frozen Blood
+								}),
+								crit(3, {	-- Storm Cloud
+								}),
+								crit(4, {	-- Frozen Solid!
+								}),
+								crit(5, {	-- Rushing Winds
+								}),
+							}),
 							i(95578),	-- Shoulders of the Crackling Conqueror
 							i(95583),	-- Shoulders of the Crackling Protector
 							i(95573),	-- Shoulders of the Crackling Vanquisher
@@ -1292,7 +1430,6 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 					cr(69465, e(827, {	-- Jin'rokh the Breaker
 						ach(8056),	-- Heroic: Jin'rokh the Breaker
-						ach(8094),	-- Lightning Overload
 						i(96384),	-- Soulblade of the Breaking Storm
 						i(96376),	-- Worldbreaker's Stormscythe
 						i(96370),	-- Lightning-Eye Hood
@@ -1337,7 +1474,6 @@ _.Instances = { tier(MOP_TIER, {
 						}),
 					})),
 					cr(68476, e(819, {	-- Horridon
-						ach(8038),	-- Cretaceous Collector
 						ach(8057),	-- Heroic: Horridon
 						i(94574),	-- Pygmy Direhorn (PET!)
 						i(93666),	-- Spawn of Horridon (MOUNT!)
@@ -1397,7 +1533,6 @@ _.Instances = { tier(MOP_TIER, {
 							69078,	-- Sul the Sandrawler
 						},
 						["g"] = {
-							ach(8073),	-- Cage Match
 							ach(8058),	-- Heroic: Council of Elders
 							i(96600),	-- Gauntlets of the Crackling Conqueror
 							i(96601),	-- Gauntlets of the Crackling Protector
@@ -1437,7 +1572,6 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 					cr(67977, e(825, {	-- Tortos
 						ach(8059),	-- Heroic: Tortos
-						ach(8077),	-- One-Up
 						i(96430),	-- Shellsplitter Greataxe
 						i(96422),	-- Shattered Tortoiseshell Longbow
 						i(96436),	-- Tortos' Discarded Shell
@@ -1489,7 +1623,6 @@ _.Instances = { tier(MOP_TIER, {
 							70247,	-- Venomous Head <Head of Megaera>
 						},
 						["g"] = {
-							ach(8082),	-- Head Case
 							ach(8060),	-- Heroic: Megaera
 							i(96442),	-- Megaera's Poisoned Fang
 							i(96454),	-- Fetish of the Hydra
@@ -1541,7 +1674,6 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 					cr(69712, e(828, {	-- Ji-Kun
 						ach(8061),	-- Heroic: Ji-Kun
-						ach(8097),	-- Soft Hands
 						i(95059),	-- Clutch of Ji-Kun (MOUNT!)
 						i(94835),	-- Ji-Kun Hatchling (PET!)
 						i(96632),	-- Leggings of the Crackling Conqueror
@@ -1574,7 +1706,6 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(68036, e(818, {	-- Durumu the Forgotten
 						ach(8062),	-- Heroic: Durumu the Forgotten
-						ach(8098),	-- You Said Crossing the Streams Was Bad
 						i(96487),	-- Ritual Dagger of the Mind's Eye
 						i(96472),	-- Durumu's Baleful Gaze
 						i(96484),	-- Chilblain Spaulders
@@ -1619,7 +1750,6 @@ _.Instances = { tier(MOP_TIER, {
 						}),
 					})),
 					cr(69017, e(820, {	-- Primordius
-						ach(8037),	-- Genectically Unmodified Organism
 						ach(8063),	-- Heroic: Primordius
 						i(97960),	-- Dark Quivering Blob (PET!)
 						i(96502),	-- Acid-Spine Bonemace
@@ -1673,7 +1803,6 @@ _.Instances = { tier(MOP_TIER, {
 						},
 						["g"] = {
 							ach(8064),	-- Heroic: Dark Animus
-							ach(8081),	-- Ritualist Who?
 							i(96567),	-- Chest of the Crackling Conqueror
 							i(96568),	-- Chest of the Crackling Protector
 							i(96566),	-- Chest of the Crackling Vanquisher
@@ -1712,7 +1841,6 @@ _.Instances = { tier(MOP_TIER, {
 							68079,	-- Ro'shak <The Molten Flare>
 						},
 						["g"] = {
-							ach(8087),	-- Can't Touch This
 							ach(8065),	-- Heroic: Iron Qon
 							i(96700),	-- Shoulders of the Crackling Conqueror
 							i(96701),	-- Shoulders of the Crackling Protector
@@ -1749,7 +1877,6 @@ _.Instances = { tier(MOP_TIER, {
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
 						["g"] = {
-							ach(8086),    -- From Dusk 'til Dawn
 							ach(8066),	-- Heroic: Twin Empyreans
 							i(96624),	-- Helm of the Crackling Conqueror
 							i(96625),	-- Helm of the Crackling Protector
