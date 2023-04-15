@@ -556,11 +556,6 @@ namespace ATT
                                 // track the data which is actually being merged into another group
                                 TrackPostProcessMergeKey(key, keyValue);
 
-                                if (key == "achievementCategoryID" && keyValue == 15231)
-                                {
-
-                                }
-
                                 // merge the objects into the data object
                                 foreach (Dictionary<string, object> mergeObject in mergeObjects)
                                 {
@@ -1752,13 +1747,33 @@ end
                             break;
                         }
 
+                    // Decimal Data Type Fields (requires higher precision than float)
+                    case "headerID":
+                        {
+                            if (value.TryConvert(out decimal vDecimal))
+                            {
+                                item[field] = vDecimal;
+                            }
+                            else
+                            {
+                                LogError($"Invalid Numeric Format for Merge - {field}:{value}");
+                            }
+                            break;
+                        }
+
                     // Float Data Type Fields (field conversions)
                     //case "dr":
                     case "modelRotation":
                     case "modelScale":
-                    case "headerID":
                         {
-                            item[field] = Convert.ToSingle(value);
+                            if (value.TryConvert(out float vFloat))
+                            {
+                                item[field] = vFloat;
+                            }
+                            else
+                            {
+                                LogError($"Invalid Numeric Format for Merge - {field}:{value}");
+                            }
                             break;
                         }
 
@@ -1981,7 +1996,17 @@ end
                             var newcoord = new List<object>();
                             try
                             {
-                                foreach (var entry in newList) newcoord.Add(Convert.ToSingle(entry));
+                                foreach (var entry in newList)
+                                {
+                                    if (entry.TryConvert(out float eFloat))
+                                    {
+                                        newcoord.Add(eFloat);
+                                    }
+                                    else
+                                    {
+                                        LogError($"Invalid Numeric Format for Merge - {field}:{entry}");
+                                    }
+                                }
                             }
                             catch
                             {
