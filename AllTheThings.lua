@@ -9977,15 +9977,16 @@ local fields = {
 		return "classID";
 	end,
 	["text"] = function(t)
-		local text = cache.GetCachedField(t, "text", CacheInfo);
+		local text = t.name;
 		if t.mapID then
 			text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
 		elseif t.maps then
 			text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
 		end
-		text = "|c" .. t.classColorCode .. text .. "|r";
-		rawset(t, "text", text);
-		return text;
+		return "|c" .. t.classColorCode .. text .. "|r";
+	end,
+	["name"] = function(t)
+		return cache.GetCachedField(t, "text", CacheInfo);
 	end,
 	["icon"] = function(t)
 		return cache.GetCachedField(t, "icon", CacheInfo);
@@ -13187,6 +13188,7 @@ app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseNPCWithAc
 
 local HeaderTypeAbbreviations = {
 	["a"] = "achievementID",
+	["c"] = "classID",
 	["m"] = "mapID",
 	["n"] = "npcID",
 	["i"] = "itemID",

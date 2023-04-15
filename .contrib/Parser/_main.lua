@@ -41,6 +41,7 @@ ROOTS = {
 -- Automatic Header Constants (verify if supported against AllTheThings.lua::HeaderTypeAbbreviations)
 HEADERS = {
 	Achievement = "a",
+	Class = "c",
 	Item = "i",
 	Map = "m",
 	NPC = "n",
@@ -2292,6 +2293,11 @@ cl = function(id, specc, t)								-- Create a CHARACTER CLASS Object
 		t = togroups(t)
 	end;
 	return struct("classID", id, t);
+end
+clWithoutLock = function(id, t)							-- Create a CHARACTER CLASS Object without a Classi Lock
+	t = struct("headerID", id, t);
+	t.type = HEADERS.Class;
+	return t;
 end
 creature = function(id, t)								-- Create a CREATURE Object
 	return struct("creatureID", id, t);
