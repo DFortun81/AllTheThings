@@ -381,7 +381,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					}),
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
 					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
 					i(142540),	-- Mantle of the Victorious Dead
@@ -405,7 +404,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						114323,	-- Guarm
 					},
 					["g"] = {
-						ach(11386),	-- Boneafide Tri Tip
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
 						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
 						i(142412),	-- Windwhipped Sailcloth
@@ -427,7 +425,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					ach(11581, {	-- Ahead of the Curve: Helya
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					ach(11377),	-- Patient Zero
 					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
 					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
 					i(142428),	-- Sea Fan Pendant
@@ -454,7 +451,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				}),
 				cr(114263, e(1819, {	-- Odyn
 					ach(11396),	-- Mythic: Odyn
-					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
 					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
 					i(142540),	-- Mantle of the Victorious Dead
@@ -479,7 +475,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(11397),	-- Mythic: Guarm
-						ach(11386),	-- Boneafide Tri Tip
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
 						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
 						i(142412),	-- Windwhipped Sailcloth
@@ -506,7 +501,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					}),
 					ach(11398),	-- Mythic: Helya
 					ach(11404),	-- Mythic: Helya Guild Run
-					ach(11377),	-- Patient Zero
 					ach(11405, {	-- Realm First! Helya
 						["u"] = REMOVED_FROM_GAME,
 					}),

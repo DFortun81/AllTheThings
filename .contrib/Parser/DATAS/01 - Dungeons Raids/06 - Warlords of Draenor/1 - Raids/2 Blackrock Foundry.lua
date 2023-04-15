@@ -11,6 +11,44 @@ _.Instances = { tier(WOD_TIER, {
 		["coord"] = { 51.55, 27.23, GORGROND },
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(8989, {	-- Slagworks
+					crit(1, {	-- Oregorger
+						["_encounter"] = { 1202, LFR_RAID },
+					}),
+					crit(2, {	-- Gruul
+						["_encounter"] = { 1161, LFR_RAID },
+					}),
+					crit(3, {	-- The Blast Furnace
+						["_encounter"] = { 1154, LFR_RAID },
+					}),
+				}),
+				ach(8990, {	-- Black Forge
+					crit(1, {	-- Hans'gar and Franzok
+						["_encounter"] = { 1155, LFR_RAID },
+					}),
+					crit(2, {	-- Flamebender Ka'graz
+						["_encounter"] = { 1123, LFR_RAID },
+					}),
+					crit(3, {	-- Kromog
+						["_encounter"] = { 1162, LFR_RAID },
+					}),
+				}),
+				ach(8991, {	-- Iron Assembly
+					crit(1, {	-- Beastlord Darmac
+						["_encounter"] = { 1122, LFR_RAID },
+					}),
+					crit(2, {	-- Operator Thogar
+						["_encounter"] = { 1147, LFR_RAID },
+					}),
+					crit(3, {	-- The Iron Maidens
+						["_encounter"] = { 1203, LFR_RAID },
+					}),
+				}),
+				ach(8992, {	-- Blackhand's Crucible
+					crit(1, {	-- Blackhand
+						["_encounter"] = { 959, LFR_RAID },
+					}),
+				}),
 				ach(9417),	-- Blackrock Foundry Guild Run
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
 					["collectible"] = false,
@@ -298,9 +336,6 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 				cr(77182, e(1202, {	-- Oregorger
 					ach(8979),	-- He Shoots, He Ores
-					crit(2, {	-- Oregorger
-						["achievementID"] = 8989,	-- Slagworks
-					}),
 					i(119448),	-- Head-Lopper Skullscythe
 					i(113874),	-- Oregorger's Acid-Etched Gutripper
 					i(113879),	-- Caged Living Ooze
@@ -317,9 +352,6 @@ _.Instances = { tier(WOD_TIER, {
 				})),
 				cr(76877, e(1161, {	-- Gruul
 					ach(8978),	-- The Iron Price
-					crit(1, {	-- Gruul
-						["achievementID"] = 8989,	-- Slagworks
-					}),
 					i(113869),	-- Inferno-Flame Staff
 					i(113862),	-- Taner's Terrible Spine
 					i(113868),	-- Flare-Eyed Hood
@@ -337,9 +369,6 @@ _.Instances = { tier(WOD_TIER, {
 				})),
 				cr(76806, e(1154, {	-- The Blast Furnace
 					ach(8930),	-- Ya, We've Got Time...
-					crit(3, {	-- Blast Furnace
-						["achievementID"] = 8989,	-- Slagworks
-					}),
 					i(115569),	-- Legplates of Guiding Light
 					i(115587),	-- Shadow Council's Leggings
 					i(115564),	-- Soul Priest's Leggings
@@ -367,9 +396,6 @@ _.Instances = { tier(WOD_TIER, {
 				})),
 				cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
 					ach(8980),	-- Stamp Stamp Revolution
-					crit(1, {	-- Hans'gar and Franzok
-						["achievementID"] = 8990,	-- Black Forge
-					}),
 					i(113904),	-- Franzok's Headsmasher
 					i(113897),	-- Hans'gar's Forgehammer
 					i(113910),	-- Hardened Greathelm
@@ -387,9 +413,6 @@ _.Instances = { tier(WOD_TIER, {
 				cr(76814, e(1123, {	-- Flamebender Ka'graz
 					ach(8929, {	-- The Steel Has Been Brought
 						follower(225),	-- Aknor Steelbringer
-					}),
-					crit(2, {	-- Flamebender Ka'graz
-						["achievementID"] = 8990,	-- Black Forge
 					}),
 					i(115566),	-- Battleplate of Guiding Light
 					i(115588),	-- Shadow Council's Robes
@@ -421,9 +444,6 @@ _.Instances = { tier(WOD_TIER, {
 				})),
 				cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 					ach(8983),	-- Would You Give Me a Hand?
-					crit(3, {	-- Kromog
-						["achievementID"] = 8990,	-- Black Forge
-					}),
 					i(115568),	-- Helmet of Guiding Light
 					i(115586),	-- Shadow Council's Hood
 					i(115563),	-- Soul Priest's Hood
@@ -461,9 +481,6 @@ _.Instances = { tier(WOD_TIER, {
 							["creatureID"] = 76884,	-- Cruelfang
 						}),
 					}),
-					crit(1, {	-- Beastlord Darmac
-						["achievementID"] = 8991,	-- Iron Assembly
-					}),
 					i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
 					i(113946),	-- Heart of the Clefthoof
 					i(113952),	-- Choker of Bestial Force
@@ -482,9 +499,6 @@ _.Instances = { tier(WOD_TIER, {
 				})),
 				cr(76906, e(1147, {	-- Operator Thogar
 					ach(8982),	-- There's Always a Bigger Train
-					crit(2, {	-- Operator Thogar
-						["achievementID"] = 8991,	-- Iron Assembly
-					}),
 					i(115565),	-- Pauldrons of Guiding Light
 					i(115589),	-- Shadow Council's Mantle
 					i(115561),	-- Soul Priest's Shoulderguards
@@ -517,9 +531,6 @@ _.Instances = { tier(WOD_TIER, {
 					},
 					["g"] = {
 						ach(8984),	-- Be Quick or Be Dead
-						crit(3, {	-- The Iron Maidens
-							["achievementID"] = 8991,	-- Iron Assembly
-						}),
 						i(115567),	-- Gauntlets of Guiding Light
 						i(115585),	-- Shadow Council's Gloves
 						i(115562),	-- Soul Priest's Gloves
@@ -828,10 +839,6 @@ _.Instances = { tier(WOD_TIER, {
 					})),
 				}),
 				cr(77182, e(1202, {	-- Oregorger
-					ach(8979),	-- He Shoots, He Ores
-					crit(2, {	-- Oregorger
-						["achievementID"] = 8989,	-- Slagworks
-					}),
 					i(119448),	-- Head-Lopper Skullscythe
 					i(113874),	-- Oregorger's Acid-Etched Gutripper
 					i(113879),	-- Caged Living Ooze
@@ -847,10 +854,6 @@ _.Instances = { tier(WOD_TIER, {
 					i(119194),	-- Goren Soul Repository
 				})),
 				cr(76877, e(1161, {	-- Gruul
-					ach(8978),	-- The Iron Price
-					crit(1, {	-- Gruul
-						["achievementID"] = 8989,	-- Slagworks
-					}),
 					i(113869),	-- Inferno-Flame Staff
 					i(113862),	-- Taner's Terrible Spine
 					i(113868),	-- Flare-Eyed Hood
@@ -867,10 +870,6 @@ _.Instances = { tier(WOD_TIER, {
 					i(118114),	-- Meaty Dragonspine Trophy
 				})),
 				cr(76806, e(1154, {	-- The Blast Furnace
-					ach(8930),	-- Ya, We've Got Time...
-					crit(3, {	-- Blast Furnace
-						["achievementID"] = 8989,	-- Slagworks
-					}),
 					i(115569),	-- Legplates of Guiding Light
 					i(115587),	-- Shadow Council's Leggings
 					i(115564),	-- Soul Priest's Leggings
@@ -897,10 +896,6 @@ _.Instances = { tier(WOD_TIER, {
 					un(REMOVED_FROM_GAME, i(115479)),	-- Heart of the Fury
 				})),
 				cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
-					ach(8980),	-- Stamp Stamp Revolution
-					crit(1, {	-- Hans'gar and Franzok
-						["achievementID"] = 8990,	-- Black Forge
-					}),
 					i(113904),	-- Franzok's Headsmasher
 					i(113897),	-- Hans'gar's Forgehammer
 					i(113910),	-- Hardened Greathelm
@@ -916,12 +911,6 @@ _.Instances = { tier(WOD_TIER, {
 					i(113905),	-- Tablet of Turnbuckle Teamwork
 				})),
 				cr(76814, e(1123, {	-- Flamebender Ka'graz
-					ach(8929, {	-- The Steel Has Been Brought
-						follower(225),	-- Aknor Steelbringer
-					}),
-					crit(2, {	-- Flamebender Ka'graz
-						["achievementID"] = 8990,	-- Black Forge
-					}),
 					i(115566),	-- Battleplate of Guiding Light
 					i(115588),	-- Shadow Council's Robes
 					i(115560),	-- Soul Priest's Raiment
@@ -951,10 +940,6 @@ _.Instances = { tier(WOD_TIER, {
 					un(REMOVED_FROM_GAME, i(115493)),	-- Flamebender's Tome
 				})),
 				cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
-					ach(8983),	-- Would You Give Me a Hand?
-					crit(3, {	-- Kromog
-						["achievementID"] = 8990,	-- Black Forge
-					}),
 					i(115568),	-- Helmet of Guiding Light
 					i(115586),	-- Shadow Council's Hood
 					i(115563),	-- Soul Priest's Hood
@@ -981,20 +966,6 @@ _.Instances = { tier(WOD_TIER, {
 					i(113931),	-- Beating Heart of the Mountain
 				})),
 				cr(76865, e(1122, {	-- Beastlord Darmac
-					ach(8981, {	-- Fain Would Lie Down
-						crit(1, {	-- Dreadwing Mounted First
-							["creatureID"] = 76874,	-- Dreadwing
-						}),
-						crit(2, {	-- Ironcrusher Mounted First
-							["creatureID"] = 76945,	-- Ironcrusher
-						}),
-						crit(3, {	-- Cruelfang Mounted First
-							["creatureID"] = 76884,	-- Cruelfang
-						}),
-					}),
-					crit(1, {	-- Beastlord Darmac
-						["achievementID"] = 8991,	-- Iron Assembly
-					}),
 					i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
 					i(113946),	-- Heart of the Clefthoof
 					i(113952),	-- Choker of Bestial Force
@@ -1012,10 +983,6 @@ _.Instances = { tier(WOD_TIER, {
 					i(119192),	-- Ironspike Chew Toy
 				})),
 				cr(76906, e(1147, {	-- Operator Thogar
-					ach(8982),	-- There's Always a Bigger Train
-					crit(2, {	-- Operator Thogar
-						["achievementID"] = 8991,	-- Iron Assembly
-					}),
 					i(115565),	-- Pauldrons of Guiding Light
 					i(115589),	-- Shadow Council's Mantle
 					i(115561),	-- Soul Priest's Shoulderguards
@@ -1047,10 +1014,6 @@ _.Instances = { tier(WOD_TIER, {
 						77477,	-- Marak the Blooded
 					},
 					["g"] = {
-						ach(8984),	-- Be Quick or Be Dead
-						crit(3, {	-- The Iron Maidens
-							["achievementID"] = 8991,	-- Iron Assembly
-						}),
 						i(115567),	-- Gauntlets of Guiding Light
 						i(115585),	-- Shadow Council's Gloves
 						i(115562),	-- Soul Priest's Gloves
@@ -1083,8 +1046,6 @@ _.Instances = { tier(WOD_TIER, {
 					ach(9444, {	-- Ahead of the Curve: Blackhand's Crucible
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					ach(8952),	-- Ashes, Ashes...
-					ach(8992),	-- Blackhand's Crucible
 					i(120280, {	-- Essence of the Iron Conqueror
 						["questID"] = 37557,
 						["races"] = ALLIANCE_ONLY,
@@ -1361,11 +1322,7 @@ _.Instances = { tier(WOD_TIER, {
 					})),
 				}),
 				cr(77182, e(1202, {	-- Oregorger
-					ach(8979),	-- He Shoots, He Ores
 					ach(8967),	-- Mythic: Oregorger
-					crit(2, {	-- Oregorger
-						["achievementID"] = 8989,	-- Slagworks
-					}),
 					i(119448),	-- Head-Lopper Skullscythe
 					i(113874),	-- Oregorger's Acid-Etched Gutripper
 					i(113879),	-- Caged Living Ooze
@@ -1381,11 +1338,7 @@ _.Instances = { tier(WOD_TIER, {
 					i(119194),	-- Goren Soul Repository
 				})),
 				cr(76877, e(1161, {	-- Gruul
-					ach(8978),	-- The Iron Price
 					ach(8966),	-- Mythic: Gruul
-					crit(1, {	-- Gruul
-						["achievementID"] = 8989,	-- Slagworks
-					}),
 					i(113869),	-- Inferno-Flame Staff
 					i(113862),	-- Taner's Terrible Spine
 					i(113868),	-- Flare-Eyed Hood
@@ -1402,11 +1355,7 @@ _.Instances = { tier(WOD_TIER, {
 					i(118114),	-- Meaty Dragonspine Trophy
 				})),
 				cr(76806, e(1154, {	-- The Blast Furnace
-					ach(8930),	-- Ya, We've Got Time...
 					ach(8970),	-- Mythic: Blast Furnace
-					crit(3, {	-- Blast Furnace
-						["achievementID"] = 8989,	-- Slagworks
-					}),
 					i(115569),	-- Legplates of Guiding Light
 					i(115587),	-- Shadow Council's Leggings
 					i(115564),	-- Soul Priest's Leggings
@@ -1433,11 +1382,7 @@ _.Instances = { tier(WOD_TIER, {
 					un(REMOVED_FROM_GAME, i(115479)),	-- Heart of the Fury
 				})),
 				cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
-					ach(8980),	-- Stamp Stamp Revolution
 					ach(8968),	-- Mythic: Hans'gar and Franzok
-					crit(1, {	-- Hans'gar and Franzok
-						["achievementID"] = 8990,	-- Black Forge
-					}),
 					i(113904),	-- Franzok's Headsmasher
 					i(113897),	-- Hans'gar's Forgehammer
 					i(113910),	-- Hardened Greathelm
@@ -1453,13 +1398,7 @@ _.Instances = { tier(WOD_TIER, {
 					i(113905),	-- Tablet of Turnbuckle Teamwork
 				})),
 				cr(76814, e(1123, {	-- Flamebender Ka'graz
-					ach(8929, {	-- The Steel Has Been Brought
-						follower(225),	-- Aknor Steelbringer
-					}),
 					ach(8932),	-- Mythic: Flamebender Ka'graz
-					crit(2, {	-- Flamebender Ka'graz
-						["achievementID"] = 8990,	-- Black Forge
-					}),
 					i(115566),	-- Battleplate of Guiding Light
 					i(115588),	-- Shadow Council's Robes
 					i(115560),	-- Soul Priest's Raiment
@@ -1489,11 +1428,7 @@ _.Instances = { tier(WOD_TIER, {
 					un(REMOVED_FROM_GAME, i(115493)),	-- Flamebender's Tome
 				})),
 				cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
-					ach(8983),	-- Would You Give Me a Hand?
 					ach(8971),	-- Mythic: Kromog
-					crit(3, {	-- Kromog
-						["achievementID"] = 8990,	-- Black Forge
-					}),
 					i(115568),	-- Helmet of Guiding Light
 					i(115586),	-- Shadow Council's Hood
 					i(115563),	-- Soul Priest's Hood
@@ -1520,21 +1455,7 @@ _.Instances = { tier(WOD_TIER, {
 					i(113931),	-- Beating Heart of the Mountain
 				})),
 				cr(76865, e(1122, {	-- Beastlord Darmac
-					ach(8981, {	-- Fain Would Lie Down
-						crit(1, {	-- Dreadwing Mounted First
-							["creatureID"] = 76874,	-- Dreadwing
-						}),
-						crit(2, {	-- Ironcrusher Mounted First
-							["creatureID"] = 76945,	-- Ironcrusher
-						}),
-						crit(3, {	-- Cruelfang Mounted First
-							["creatureID"] = 76884,	-- Cruelfang
-						}),
-					}),
 					ach(8956),	-- Mythic: Beastlord Darmac
-					crit(1, {	-- Beastlord Darmac
-						["achievementID"] = 8991,	-- Iron Assembly
-					}),
 					i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
 					i(113946),	-- Heart of the Clefthoof
 					i(113952),	-- Choker of Bestial Force
@@ -1552,11 +1473,7 @@ _.Instances = { tier(WOD_TIER, {
 					i(119192),	-- Ironspike Chew Toy
 				})),
 				cr(76906, e(1147, {	-- Operator Thogar
-					ach(8982),	-- There's Always a Bigger Train
 					ach(8969),	-- Mythic: Operator Thogar
-					crit(2, {	-- Operator Thogar
-						["achievementID"] = 8991,	-- Iron Assembly
-					}),
 					i(115565),	-- Pauldrons of Guiding Light
 					i(115589),	-- Shadow Council's Mantle
 					i(115561),	-- Soul Priest's Shoulderguards
@@ -1588,11 +1505,7 @@ _.Instances = { tier(WOD_TIER, {
 						77477,	-- Marak the Blooded
 					},
 					["g"] = {
-						ach(8984),	-- Be Quick or Be Dead
 						ach(8972),	-- Mythic: Iron Maidens
-						crit(3, {	-- The Iron Maidens
-							["achievementID"] = 8991,	-- Iron Assembly
-						}),
 						i(115567),	-- Gauntlets of Guiding Light
 						i(115585),	-- Shadow Council's Gloves
 						i(115562),	-- Soul Priest's Gloves
@@ -1631,8 +1544,6 @@ _.Instances = { tier(WOD_TIER, {
 					ach(9399, {	-- Realm First! Warlord Blackhand
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					ach(8952),	-- Ashes, Ashes...
-					ach(8992),	-- Blackhand's Crucible
 					ach(8973, {	-- Mythic: Blackhand's Crucible
 						title(301),	-- Ironbane
 					}),

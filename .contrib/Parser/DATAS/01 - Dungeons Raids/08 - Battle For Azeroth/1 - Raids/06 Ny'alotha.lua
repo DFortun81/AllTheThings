@@ -26,14 +26,58 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(14193, {	-- Vision of Destiny
+                    crit(1, {    -- Wrathion, the Black Emperor
+                        ["_encounter"] = { 2368, LFR_RAID },
+                    }),
+                    crit(2, {    -- Maut
+                        ["_encounter"] = { 2365, LFR_RAID },
+                    }),
+                    crit(3, {    -- The Prophet Skitra
+                        ["_encounter"] = { 2369, LFR_RAID },
+                    }),
+                }),
+
+				ach(14194, {	-- Halls of Devotion
+                    crit(1, {    -- Dark Inquisitor Xanesh
+                        ["_encounter"] = { 2377, LFR_RAID },
+                    }),
+                    crit(2, {    -- Vexiona
+                        ["_encounter"] = { 2370, LFR_RAID },
+                    }),
+                    crit(3, {    -- The Hivemind
+                        ["_encounter"] = { 2372, LFR_RAID },
+                    }),
+                    crit(4, {    -- Ra-den the Despoiled
+                        ["_encounter"] = { 2364, LFR_RAID },
+                    }),
+                }),
+
+				ach(14195, {	-- Gift of Flesh
+                    crit(1, {    -- Shad'har the Insatiable
+                        ["_encounter"] = { 2367, LFR_RAID },
+                    }),
+                    crit(2, {    -- Drest'agath
+                        ["_encounter"] = { 2373, LFR_RAID },
+                    }),
+                    crit(3, {    -- Il'gynoth, Corruption Reborn
+                        ["_encounter"] = { 2374, LFR_RAID },
+                    }),
+                }),
+
+				ach(14196, {	-- The Waking Dream
+                    crit(1, {    -- Carapace of N'Zoth
+                        ["_encounter"] = { 2366, LFR_RAID },
+                    }),
+                    crit(2, {    -- N'Zoth, the Corruptor
+                        ["_encounter"] = { 2375, LFR_RAID },
+                    }),
+                }),
+
 				ach(14146, {	-- Glory of the Ny'alotha Raider
 					i(174861),	-- Wriggling Parasite (MOUNT!)
 				}),
 				ach(14039),	-- Ny'alotha, the Waking City Guild Run
-				ach(14193),	-- Vision of Destiny
-				ach(14194),	-- Halls of Devotion
-				ach(14195),	-- Gift of Flesh
-				ach(14196),	-- The Waking Dream
 			}),
 			n(AZERITE_ESSENCES, {
 				i(173883, {	-- Replicating Void Droplets (Rank 1)

@@ -13,7 +13,14 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 		["lvl"] = { 50 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(13414),	-- Crucible of Storms
+				ach(13414, {	-- Crucible of Storms
+                    crit(1, {    -- The Restless Cabal
+                        ["_encounter"] = { 2328, LFR_RAID },
+                    }),
+                    crit(2, {    -- Uu'nat, Harbinger of the Void
+                        ["_encounter"] = { 2332, LFR_RAID },
+                    }),
+				}),
 				ach(13420),	-- Crucible of Storms Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
@@ -46,9 +53,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 							144755,	-- Zaxasj the Speaker
 						},
 						["g"] = {
-							crit(1, {	-- The Restless Cabal
-								["achievementID"] = 13414,	-- Crucible of Storms
-							}),
 							i(167863),	-- Pillar of the Drowned Cabal
 							i(167841),	-- Abyssal Speaker's Gauntlets
 							i(167833),	-- Fathom Dredgers
@@ -63,9 +67,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 					e(2332, {	-- Uu'nat, Harbinger of the Void
 						["crs"] = { 145371 },	-- Uu'nat, Harbinger of the Void
 						["g"] = {
-							crit(2, {	-- Uu'nat, Harbinger of the Void
-								["achievementID"] = 13414,	-- Crucible of Storms
-							}),
 							i(167864),	-- Trident of Deep Ocean
 							i(167839),	-- Grips of Forsaken Sanity
 							i(167217),	-- Legplates of Unbound Anguish

@@ -15,9 +15,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 			TAZAVESH_AGGRAMARS_VAULT,
 		},
 		["g"] = {
-			--	TODO: add fp to fpdb / verify FP's name
 			n(ACHIEVEMENTS, {
-				ach(15190, {	-- Mischief!	-- TODO: may need to be moved to specific bosses depending on where these criteria can be found
+				ach(15190, {	-- Mischief!
 					crit(1, {	-- Pickle
 						["cr"] = 180817,	-- Pickle
 						["coord"] = { 39.91, 38.78, TAZAVESH_THE_MENAGERIE },

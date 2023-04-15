@@ -19,6 +19,46 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["lvl"] = 110,
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(11787, {    -- The Gates of Hell
+                    crit(1, {    -- Goroth
+                        ["_encounter"] = { 1862, LFR_RAID },
+                    }),
+                    crit(2, {    -- Harjatan
+                        ["_encounter"] = { 1856, LFR_RAID },
+                    }),
+                    crit(3, {    -- Mistress Sassz'ine
+                        ["_encounter"] = { 1861, LFR_RAID },
+                    }),
+                }),
+				ach(11788, {    -- Wailing Halls
+                    crit(1, {    -- Demonic Inquisition
+                        ["_encounter"] = { 1867, LFR_RAID },
+                    }),
+                    crit(2, {    -- Sisters of the Moon
+                        ["_encounter"] = { 1903, LFR_RAID },
+                    }),
+                    crit(3, {    -- The Desolate Host
+                        ["_encounter"] = { 1896, LFR_RAID },
+                    }),
+                }),
+				ach(11789, {    -- Chamber of the Avatar
+                    crit(1, {    -- Maiden of Vigilance
+                        ["_encounter"] = { 1897, LFR_RAID },
+                    }),
+                    crit(2, {    -- Fallen Avatar
+                        ["_encounter"] = { 1873, LFR_RAID },
+                    }),
+                }),
+				ach(11790, {    -- Deceiver's Fall
+                    crit(1, {    -- Kil'jaeden
+                        ["_encounter"] = { 1898, LFR_RAID },
+                    }),
+                }),
+				-- TODO: meta-achievement symlink
+				ach(11763, {	-- Glory of the Tomb Raider
+					title(362),	-- <Name> the Tomb Raider
+					i(101426),	-- Micronax Controller
+				}),
 				ach(11782),	-- Tomb of Sargeras Guild Run
 			}),
 			n(WORLD_QUESTS, {
@@ -466,10 +506,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(147424),	-- Treads of Violent Intrusion
 					i(147038),	-- Wakening Horror Spaulders
 				}),
-				ach(11763, {	-- Glory of the Tomb Raider
-					title(362),	-- <Name> the Tomb Raider
-					i(101426),	-- Micronax Controller
-				}),
 				e(1862, {	-- Goroth
 					["creatureID"] = 115844,	-- Goroth
 					["g"] = {
@@ -799,14 +835,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(147424),	-- Treads of Violent Intrusion
 					i(147038),	-- Wakening Horror Spaulders
 				}),
-				ach(11763, {	-- Glory of the Tomb Raider
-					title(362),	-- <Name> the Tomb Raider
-					i(101426),	-- Micronax Controller
-				}),
 				e(1862, {	-- Goroth
 					["creatureID"] = 115844,
 					["g"] = {
-						ach(11724),	-- Fel Turkey
 						i(147069),	-- Shoulderplates of Crackling Flame
 						i(146984),	-- Cloak of Stifling Brimstone
 						i(147027),	-- Spirebreaker Harness
@@ -831,7 +862,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						116691,	-- Belac*
 					},
 					["g"] = {
-						ach(11696),	-- Grin and Bear It
 						i(147147),	-- Crown of the Arcane Tempest
 						i(147130),	-- Demonbane Faceguard
 						i(147183),	-- Diabolic Helm
@@ -863,7 +893,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1856, {	-- Harjatan
 					["creatureID"] = 116407,	-- Harjatan
 					["g"] = {
-						ach(11699),	-- Grand Fin-ale
 						i(147037),	-- Dripping Arcfin Shoulderpads
 						i(147043),	-- Hauberk of Frozen Mist
 						i(146994),	-- Robe of Aqueous Command
@@ -898,7 +927,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						118518,	-- Sisters of the Moon (Priestess Lunaspyre)
 					},
 					["g"] = {
-						ach(11773),	-- Wax On, Wax Off
 						i(147033),	-- Lunar-Wrath Headgear
 						i(147054),	-- Mantle of Waning Radiance
 						i(146997),	-- Shoulderpads of Whispering Twilight
@@ -921,7 +949,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1861, {	-- Mistress Sassz'ine
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
-						ach(11676),	-- Five Course Seafood Buffet
 						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
@@ -957,7 +984,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						118462,	-- The Desolate Host — Soul Queen Dejahna
 					},
 					["g"] = {
-						ach(11674),	-- Great Soul, Great Purpose
 						i(147063),	-- Armet of the Rotten Mind
 						i(147014),	-- Locket of Splintered Souls
 						i(147070),	-- Grave-Dredged Pauldrons
@@ -987,7 +1013,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1897, {	-- Maiden of Vigilance
 					["creatureID"] = 118289,	-- Maiden of Vigilance
 					["g"] = {
-						ach(11675),	-- Sky Walker
 						i(151524),	-- Hammer of Vigilance
 						i(147050),	-- Crown of Discarded Hope
 						i(147127),	-- Demonbane Harness
@@ -1022,7 +1047,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						117264,	-- Fallen Avatar — Maiden of Valor
 					},
 					["g"] = {
-						ach(11683),	-- Bingo!
 						i(146991),	-- Blackened Mask of Disgrace
 						i(147132),	-- Demonbane Shoulderpads
 						i(147186),	-- Diabolic Mantle
@@ -1051,7 +1075,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1898, {	-- Kil'jaeden
 					["creatureID"] = 117269,	-- Kil'jaeden
 					["g"] = {
-						ach(11770),	-- Dark Souls
+						ach(11874, {	-- Ahead of the Curve: Kil'jaeden
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
 							["timeline"] = { "added 7.2.5" },
 						}),
@@ -1132,15 +1158,10 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(147424),	-- Treads of Violent Intrusion
 					i(147038),	-- Wakening Horror Spaulders
 				}),
-				ach(11763, {	-- Glory of the Tomb Raider
-					title(362),	-- <Name> the Tomb Raider
-					i(101426),	-- Micronax Controller
-				}),
 				e(1862, {	-- Goroth
 					["creatureID"] = 115844,	-- Goroth
 					["g"] = {
 						ach(11767),	-- Mythic: Goroth
-						ach(11724),	-- Fel Turkey
 						i(147069),	-- Shoulderplates of Crackling Flame
 						i(146984),	-- Cloak of Stifling Brimstone
 						i(147027),	-- Spirebreaker Harness
@@ -1166,7 +1187,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(11774),	-- Mythic: Demonic Inquisition
-						ach(11696),	-- Grin and Bear It
 						i(147147),	-- Crown of the Arcane Tempest
 						i(147130),	-- Demonbane Faceguard
 						i(147183),	-- Diabolic Helm
@@ -1199,7 +1219,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["creatureID"] = 116407,	-- Harjatan
 					["g"] = {
 						ach(11775),	-- Mythic: Harjatan
-						ach(11699),	-- Grand Fin-ale
 						i(147037),	-- Dripping Arcfin Shoulderpads
 						i(147043),	-- Hauberk of Frozen Mist
 						i(146994),	-- Robe of Aqueous Command
@@ -1235,7 +1254,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(11777),	-- Mythic: Sisters of the Moon
-						ach(11773),	-- Wax On, Wax Off
 						i(147033),	-- Lunar-Wrath Headgear
 						i(147054),	-- Mantle of Waning Radiance
 						i(146997),	-- Shoulderpads of Whispering Twilight
@@ -1259,7 +1277,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
 						ach(11776),	-- Mythic: Mistress Sassz'ine
-						ach(11676),	-- Five Course Seafood Buffet
 						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
@@ -1296,7 +1313,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(11778),	-- Mythic: The Desolate Host
-						ach(11674),	-- Great Soul, Great Purpose
 						i(147063),	-- Armet of the Rotten Mind
 						i(147014),	-- Locket of Splintered Souls
 						i(147070),	-- Grave-Dredged Pauldrons
@@ -1327,7 +1343,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["creatureID"] = 118289,	-- Maiden of Vigilance
 					["g"] = {
 						ach(11779),	-- Mythic: Maiden of Vigilance
-						ach(11675),	-- Sky Walker
 						i(151524),	-- Hammer of Vigilance
 						i(147050),	-- Crown of Discarded Hope
 						i(147127),	-- Demonbane Harness
@@ -1363,7 +1378,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(11780),	-- Mythic: Fallen Avatar
-						ach(11683),	-- Bingo!
 						i(146991),	-- Blackened Mask of Disgrace
 						i(147132),	-- Demonbane Shoulderpads
 						i(147186),	-- Diabolic Mantle
@@ -1395,9 +1409,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						ach(11875, {	-- Cutting Edge: Kil'jaeden
 							["u"] = REMOVED_FROM_GAME,
 						}),
-						ach(11874, {	-- Ahead of the Curve: Kil'jaeden
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						ach(11783, {	-- Realm First! Kil'jaeden
 							["u"] = REMOVED_FROM_GAME,
 						}),
@@ -1405,7 +1416,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							title(357),	-- %s the Darkener
 						}),
 						ach(11784),	-- Mythic: Kil'jaeden Guild Run
-						ach(11770),	-- Dark Souls
 						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
 							["timeline"] = { "added 7.2.5" },
 						}),

@@ -22,9 +22,36 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 				ach(12806, {	-- Glory of the Uldir Raider
 					i(163216),	-- Bloodgorged Crawg (MOUNT!)
 				}),
-				ach(12521),	-- Halls of Containment
-				ach(12522),	-- Crimson Descent
-				ach(12523),	-- Heart of Corruption
+				ach(12521, {	-- Halls of Containment
+                    crit(1, {    -- Taloc
+                        ["_encounter"] = { 2168, LFR_RAID },
+                    }),
+                    crit(2, {    -- MOTHER
+                        ["_encounter"] = { 2167, LFR_RAID },
+                    }),
+                    crit(3, {    -- Zek'voz, Herald of N'zoth
+                        ["_encounter"] = { 2169, LFR_RAID },
+                    }),
+                }),
+				ach(12522, {	-- Crimson Descent
+                    crit(1, {    -- Fetid Devourer
+                        ["_encounter"] = { 2146, LFR_RAID },
+                    }),
+                    crit(2, {    -- Vectis
+                        ["_encounter"] = { 2166, LFR_RAID },
+                    }),
+                    crit(3, {    -- Zul, Reborn
+                        ["_encounter"] = { 2195, LFR_RAID },
+                    }),
+                }),
+				ach(12523, {	-- Heart of Corruption
+                    crit(1, {    -- Mythrax the Unraveler
+                        ["_encounter"] = { 2194, LFR_RAID },
+                    }),
+                    crit(2, {    -- G'huun
+                        ["_encounter"] = { 2147, LFR_RAID },
+                    }),
+                }),
 			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {

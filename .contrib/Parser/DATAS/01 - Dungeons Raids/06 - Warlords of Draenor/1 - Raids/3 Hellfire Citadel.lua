@@ -11,6 +11,56 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 		["coord"] = { 45.56, 53.61, TANAAN_JUNGLE },
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(10023, {	-- Hellbreach
+					crit(1, {	-- Hellfire Assault
+						["_encounter"] = { 1426, LFR_RAID },
+					}),
+					crit(2, {	-- Iron Reaver
+						["_encounter"] = { 1425, LFR_RAID },
+					}),
+					crit(3, {	-- Kormrok
+						["_encounter"] = { 1392, LFR_RAID },
+					}),
+				}),
+				ach(10024, {	-- Halls of Blood
+					crit(1, {	-- Hellfire High Council
+						["_encounter"] = { 1432, LFR_RAID },
+					}),
+					crit(2, {	-- Kilrogg Deadeye
+						["_encounter"] = { 1396, LFR_RAID },
+					}),
+					crit(3, {	-- Gorefiend
+						["_encounter"] = { 1372, LFR_RAID },
+					}),
+				}),
+				ach(10025, {	-- Bastion of Shadows
+					crit(1, {	-- Shadow-Lord Iskar
+						["_encounter"] = { 1433, LFR_RAID },
+					}),
+					crit(2, {	-- Socrethar the Eternal
+						["_encounter"] = { 1427, LFR_RAID },
+					}),
+					crit(3, {	-- Tyrant Velhari
+						["_encounter"] = { 1394, LFR_RAID },
+					}),
+				}),
+				ach(10020, {	-- Destructor's Rise
+					crit(1, {	-- Fel Lord Zakuun
+						["_encounter"] = { 1391, LFR_RAID },
+					}),
+					crit(2, {	-- Xhul'horac
+						["_encounter"] = { 1447, LFR_RAID },
+					}),
+					crit(3, {	-- Mannoroth
+						["_encounter"] = { 1395, LFR_RAID },
+					}),
+				}),
+				ach(10019, {	-- The Black Gate
+					crit(1, {	-- Archimonde
+						["_encounter"] = { 1438, LFR_RAID },
+					}),
+				}),
+				-- TODO: symlink meta achieve
 				ach(10149, {	-- Glory of the Hellfire Raider
 					i(127140),	-- Infernal Direwolf (MOUNT!)
 					ach(10026, {	-- Nearly Indestructible

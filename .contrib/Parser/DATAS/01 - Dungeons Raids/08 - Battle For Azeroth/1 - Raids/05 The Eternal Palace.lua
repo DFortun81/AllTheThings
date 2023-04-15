@@ -20,13 +20,40 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 		["lvl"] = { 50 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(13718, {	-- The Grand Reception
+                    crit(1, {    -- Abyssal Commander Sivara
+                        ["_encounter"] = { 2352, LFR_RAID },
+                    }),
+                    crit(2, {    -- Blackwater Behemoth
+                        ["_encounter"] = { 2347, LFR_RAID },
+                    }),
+                    crit(3, {    -- Radiance of Azshara
+                        ["_encounter"] = { 2353, LFR_RAID },
+                    }),
+                }),
+				ach(13719, {	-- Depths of the Devoted
+                    crit(1, {    -- Lady Ashvane
+                        ["_encounter"] = { 2354, LFR_RAID },
+                    }),
+                    crit(2, {    -- Orgozoa
+                        ["_encounter"] = { 2351, LFR_RAID },
+                    }),
+                    crit(3, {    -- The Queen's Court
+                        ["_encounter"] = { 2359, LFR_RAID },
+                    }),
+                }),
+				ach(13725, {	-- The Circle of Stars
+                    crit(1, {    -- Za'qul, Harbinger of Ny'alotha
+                        ["_encounter"] = { 2349, LFR_RAID },
+                    }),
+                    crit(2, {    -- Queen Azshara
+                        ["_encounter"] = { 2361, LFR_RAID },
+                    }),
+                }),
 				ach(13687, {	-- Glory of the Palace Raider
 					i(167171),	-- Azshari Bloatray (MOUNT!)
 				}),
 				ach(13734),	-- The Eternal Palace Guild Run
-				ach(13718),	-- The Grand Reception
-				ach(13719),	-- Depths of the Devoted
-				ach(13725),	-- The Circle of Stars
 			}),
 			n(AZERITE_ESSENCES, {
 				i(168328, {	-- Hardened Azerite Formation (Rank 1)

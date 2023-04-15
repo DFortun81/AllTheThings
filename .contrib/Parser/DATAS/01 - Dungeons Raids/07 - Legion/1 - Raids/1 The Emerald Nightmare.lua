@@ -25,6 +25,33 @@ _.Instances = { tier(LEGION_TIER, {
 		["lvl"] = 110,
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(10818, {    -- Darkbough
+                    crit(1, {    -- Nythendra
+                        ["_encounter"] = { 1703, LFR_RAID },
+                    }),
+                    crit(2, {    -- Elerethe Renferal
+                        ["_encounter"] = { 1744, LFR_RAID },
+                    }),
+                    crit(3, {    -- Il'gynoth, Heart of Corruption
+                        ["_encounter"] = { 1738, LFR_RAID },
+                    }),
+                }),
+				ach(10819, {    -- Tormented Guardians
+                    crit(1, {    -- Ursoc
+                        ["_encounter"] = { 1667, LFR_RAID },
+                    }),
+                    crit(2, {    -- Dragons of Nightmare
+                        ["_encounter"] = { 1704, LFR_RAID },
+                    }),
+                    crit(3, {    -- Cenarius
+                        ["_encounter"] = { 1750, LFR_RAID },
+                    }),
+                }),
+				ach(10820, {    -- Rift of Aln
+                    crit(1, {    -- Xavius
+                        ["_encounter"] = { 1726, LFR_RAID },
+                    }),
+                }),
 				ach(10866),	-- The Emerald Nightmare Guild Run
 			}),
 			petbattle(filter(BATTLE_PETS, {
@@ -311,7 +338,6 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10555, {	-- Buggy Fight
 						["crs"] = { 105097 },	-- Glow Bug
 					}),
-					ach(10818, crit(1)),	-- Darkbough / Nythendra
 					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
 					i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2] (RECIPE!)
 					i(139214),	-- Greyed Dragonscale Coif
@@ -332,7 +358,6 @@ _.Instances = { tier(LEGION_TIER, {
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
-					ach(10818, crit(3)),	-- Darkbough / Il'gynoth, Heart of Corruption
 					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
 					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
 					i(139569, {	-- Claw of N'Zoth
@@ -358,7 +383,6 @@ _.Instances = { tier(LEGION_TIER, {
 				})),
 				cr(106087, e(1744, {	-- Elerethe Renferal
 					ach(10771),	-- Webbing Crashers
-					ach(10818, crit(2)),	-- Darkbough / Elerethe Renferal
 					i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3] (RECIPE!)
 					i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1] (RECIPE!)
 					i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2] (RECIPE!)
@@ -380,7 +404,6 @@ _.Instances = { tier(LEGION_TIER, {
 				})),
 				cr(100497, e(1667, {	-- Ursoc
 					ach(10753),	-- Scare Bear
-					ach(10819, crit(1)),	-- Tormented Guardians / Ursoc
 					i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3] (RECIPE!)
 					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1] (RECIPE!)
 					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2] (RECIPE!)
@@ -416,7 +439,6 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(10663),	-- Imagined Dragons World Tour
-						ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
 						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1] (RECIPE!)
 						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2] (RECIPE!)
 						i(139562, {	-- Breath of the Undying Serpent
@@ -447,7 +469,6 @@ _.Instances = { tier(LEGION_TIER, {
 						crit(3),	-- Wisps Uncleansed
 						crit(4),	-- Drakes Uncleansed
 					}),
-					ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
 					i(127934),	-- Recipe: Spirit Cauldron [Rank 2] (RECIPE!)
 					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1] (RECIPE!)
 					i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2] (RECIPE!)
@@ -544,10 +565,6 @@ _.Instances = { tier(LEGION_TIER, {
 					i(141695),	-- Tarnished Dreamkeeper's Gauntlets
 				}),
 				cr(102672, e(1703, {	-- Nythendra
-					ach(10555, {	-- Buggy Fight
-						["crs"] = { 105097 },	-- Glow Bug
-					}),
-					ach(10818, crit(1)),	-- Darkbough / Nythendra
 					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
 					i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2] (RECIPE!)
 					i(139214),	-- Greyed Dragonscale Coif
@@ -567,8 +584,6 @@ _.Instances = { tier(LEGION_TIER, {
 					i(136820),	-- Nythendra's Heart
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
-					ach(10830),	-- Took the Red Eye Down
-					ach(10818, crit(3)),	-- Darkbough / Il'gynoth, Heart of Corruption
 					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
 					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
 					i(139569, {	-- Claw of N'Zoth
@@ -593,8 +608,6 @@ _.Instances = { tier(LEGION_TIER, {
 					i(139256),	-- Sloshing Core of Hatred
 				})),
 				cr(106087, e(1744, {	-- Elerethe Renferal
-					ach(10771),	-- Webbing Crashers
-					ach(10818, crit(2)),	-- Darkbough / Elerethe Renferal
 					i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3] (RECIPE!)
 					i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1] (RECIPE!)
 					i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2] (RECIPE!)
@@ -615,8 +628,6 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137008),	-- Stormfury Diamond
 				})),
 				cr(100497, e(1667, {	-- Ursoc
-					ach(10753),	-- Scare Bear
-					ach(10819, crit(1)),	-- Tormented Guardians / Ursoc
 					i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3] (RECIPE!)
 					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1] (RECIPE!)
 					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2] (RECIPE!)
@@ -651,8 +662,6 @@ _.Instances = { tier(LEGION_TIER, {
 						102683,	-- Emeriss
 					},
 					["g"] = {
-						ach(10663),	-- Imagined Dragons World Tour
-						ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
 						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1] (RECIPE!)
 						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2] (RECIPE!)
 						i(139562, {	-- Breath of the Undying Serpent
@@ -677,13 +686,6 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				cr(104636, e(1750, {	-- Cenarius
-					ach(10772, {	-- Use the Force(s)
-						crit(1),	-- Dryads Uncleansed
-						crit(2),	-- Treants Uncleansed
-						crit(3),	-- Wisps Uncleansed
-						crit(4),	-- Drakes Uncleansed
-					}),
-					ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
 					i(127934),	-- Recipe: Spirit Cauldron [Rank 2] (RECIPE!)
 					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1] (RECIPE!)
 					i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2] (RECIPE!)
@@ -706,8 +708,6 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(11194, {	-- Ahead of the Curve: Xavius
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					ach(10755),	-- I Attack the Darkness
-					ach(10820),	-- Rift of Aln
 					i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
 					i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
 					i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
@@ -783,11 +783,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(141695),	-- Tarnished Dreamkeeper's Gauntlets
 				}),
 				cr(102672, e(1703, {	-- Nythendra
-					ach(10555, {	-- Buggy Fight
-						["crs"] = { 105097 },	-- Glow Bug
-					}),
 					ach(10821),	-- Mythic: Nythendra
-					ach(10818, crit(1)),	-- Darkbough / Nythendra
 					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
 					i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2] (RECIPE!)
 					i(139214),	-- Greyed Dragonscale Coif
@@ -807,9 +803,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(136820),	-- Nythendra's Heart
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
-					ach(10830),	-- Took the Red Eye Down
 					ach(10823),	-- Mythic: Il'gynoth
-					ach(10818, crit(3)),	-- Darkbough / Il'gynoth, Heart of Corruption
 					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
 					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
 					i(139569, {	-- Claw of N'Zoth
@@ -834,9 +828,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(139256),	-- Sloshing Core of Hatred
 				})),
 				cr(106087, e(1744, {	-- Elerethe Renferal
-					ach(10771),	-- Webbing Crashers
 					ach(10822),	-- Mythic: Elerethe Renferal
-					ach(10818, crit(2)),	-- Darkbough / Elerethe Renferal
 					i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3] (RECIPE!)
 					i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1] (RECIPE!)
 					i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2] (RECIPE!)
@@ -857,9 +849,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137008),	-- Stormfury Diamond
 				})),
 				cr(100497, e(1667, {	-- Ursoc
-					ach(10753),	-- Scare Bear
 					ach(10824),	-- Mythic: Ursoc
-					ach(10819, crit(1)),	-- Tormented Guardians / Ursoc
 					i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3] (RECIPE!)
 					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1] (RECIPE!)
 					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2] (RECIPE!)
@@ -894,9 +884,7 @@ _.Instances = { tier(LEGION_TIER, {
 						102683,	-- Emeriss
 					},
 					["g"] = {
-						ach(10663),	-- Imagined Dragons World Tour
 						ach(10825),	-- Mythic: Dragons of Nightmare
-						ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
 						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1] (RECIPE!)
 						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2] (RECIPE!)
 						i(139562, {	-- Breath of the Undying Serpent
@@ -921,14 +909,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 				cr(104636, e(1750, {	-- Cenarius
-					ach(10772, {	-- Use the Force(s)
-						crit(1),	-- Dryads Uncleansed
-						crit(2),	-- Treants Uncleansed
-						crit(3),	-- Wisps Uncleansed
-						crit(4),	-- Drakes Uncleansed
-					}),
 					ach(10826),	-- Mythic: Cenarius
-					ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
 					i(127934),	-- Recipe: Spirit Cauldron [Rank 2] (RECIPE!)
 					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1] (RECIPE!)
 					i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2] (RECIPE!)
@@ -958,8 +939,6 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10854, {	-- Realm First! Xavius
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					ach(10755),	-- I Attack the Darkness
-					ach(10820),	-- Rift of Aln
 					ach(10827, {	-- Mythic: Xavius
 						title(341),	-- The Dreamer
 					}),

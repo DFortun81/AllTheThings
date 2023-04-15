@@ -11,6 +11,33 @@ _.Instances = { tier(WOD_TIER, {
 		["coord"] = { 32.9, 38.3, DRAENOR_NAGRAND },
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(8986, {	-- The Walled City
+					crit(1, {	-- Kargath Bladefist
+						["_encounter"] = { 1128, LFR_RAID },
+					}),
+					crit(2, {	-- The Butcher
+						["_encounter"] = { 971, LFR_RAID },
+					}),
+					crit(3, {	-- Brackenspore
+						["_encounter"] = { 1196, LFR_RAID },
+					}),
+				}),
+				ach(8987, {	-- Arcane Sanctum
+					crit(1, {	-- Tectus
+						["_encounter"] = { 1195, LFR_RAID },
+					}),
+					crit(2, {	-- Twin Ogron
+						["_encounter"] = { 1148, LFR_RAID },
+					}),
+					crit(3, {	-- Ko'ragh
+						["_encounter"] = { 1153, LFR_RAID },
+					}),
+				}),
+				ach(8988, {	-- Imperator's Fall
+					crit(1, {	-- Imperator Mar'gok
+						["_encounter"] = { 1197, LFR_RAID },
+					}),
+				}),
 				ach(9416),	-- Highmaul Guild Run
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
 					["collectible"] = false,
