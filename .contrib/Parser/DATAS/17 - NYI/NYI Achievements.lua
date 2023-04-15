@@ -248,14 +248,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				ach(1500),	-- Deaths in Strand of the Ancients
 				ach(1520),	-- Items pickpocketed
 				ach(1551),	-- World Honorable Kills
-				ach(1657),	-- Hallowed Be Thy Name
-				ach(1677),	-- Loremaster of Eastern Kingdoms
-				ach(1680),	-- Loremaster of Kalimdor
 				ach(1681),	-- The Loremaster
 				ach(1682),	-- The Loremaster
-				ach(1684),	-- Brewmaster
-				ach(1692),	-- Merrymaker
-				ach(1707),	-- Fool For Love
 				ach(1716),	-- Battleground with the most Killing Blows
 				ach(1719),	-- Battleground with the most Honorable Kills
 				ach(1731),	-- Industrial Warfare

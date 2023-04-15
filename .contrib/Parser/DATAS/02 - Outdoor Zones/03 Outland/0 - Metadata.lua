@@ -9,8 +9,15 @@ root(ROOTS.Zones, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(1262, {		-- Loremaster of Outland
-					-- Meta Achievement
+				classicAch(1262, {	-- Loremaster of Outland (A)
+					-- #if BEFORE WRATH
+					["description"] = "Complete the Outland quest achievements listed below.",
+					-- #endif
+					-- #if ANYCLASSIC
+					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1194, 1190, 1192, 1193, 1195, 1191, 1189); end]],
+					-- #elseif AFTER 4.0.3
 					["sym"] = {{"meta_achievement",
 						1189,	-- To Hellfire and Back (Alliance)
 						1271,	-- To Hellfire and Back (Horde)
@@ -23,6 +30,26 @@ root(ROOTS.Zones, {
 						1194,	-- Into the Nether
 						1195,	-- Shadow of the Betrayer
 					}},
+					-- #else
+					["sym"] = { {"select","achievementID", 1194, 1190, 1192, 1193, 1195, 1191, 1189 } },
+					-- #endif
+					-- #if BEFORE 4.0.3
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
+				}),
+				classicAch(1274, {	-- Loremaster of Outland (H)
+					-- #if BEFORE WRATH
+					["description"] = "Complete the Outland quest achievements listed below.",
+					-- #endif
+					["timeline"] = { "deleted 4.0.3" },
+					-- #if ANYCLASSIC
+					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1194, 1190, 1273, 1193, 1195, 1272, 1271); end]],
+					-- #else
+					["sym"] = { {"select","achievementID", 1194, 1190, 1273, 1193, 1195, 1272, 1271 } },
+					-- #endif
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 		},

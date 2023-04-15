@@ -2769,7 +2769,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["timeline"] = { "added 2.3.0.7561" },
 					}),
 				}),
-				-- #if AFTER WRATH
+				-- #if NOT ANYCLASSIC
 				prof(INSCRIPTION, {
 					n(30706, {	-- Jo'mah <Inscription Trainer>
 						["coord"] = { 35.6, 69.2, ORGRIMMAR },

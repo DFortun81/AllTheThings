@@ -2728,7 +2728,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 				}),
-				-- #if AFTER WRATH
+				-- #if NOT ANYCLASSIC
 				prof(INSCRIPTION, {
 					n(30713, {	-- Catarina Stanford <Inscription Trainer>
 						-- #if AFTER LEGION
