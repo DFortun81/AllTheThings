@@ -135,7 +135,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(147424),	-- Treads of Violent Intrusion
 					i(147038),	-- Wakening Horror Spaulders
 				}),
-				ach(11787, {	-- The Gates of Hell
+				header(HEADERS.Achievement, 11787, {	-- The Gates of Hell
 					e(1862, {	-- Goroth
 						["creatureID"] = 115844,	-- Goroth
 						["g"] = {
@@ -219,7 +219,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						},
 					}),
 				}),
-				ach(11788, {	-- Wailing Halls
+				header(HEADERS.Achievement, 11788, {	-- Wailing Halls
 					e(1867, {	-- Demonic Inquisition
 						["crs"] = {
 							116689,	-- Atrigan
@@ -314,7 +314,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						},
 					}),
 				}),
-				ach(11789, {	-- Chamber of the Avatar
+				header(HEADERS.Achievement, 11789, {	-- Chamber of the Avatar
 					e(1897, {	-- Maiden of Vigilance
 						["creatureID"] = 118289,	-- Maiden of Vigilance
 						["g"] = {
@@ -378,7 +378,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						},
 					}),
 				}),
-				ach(11790, {	-- Deceiver's Fall
+				header(HEADERS.Achievement, 11790, {	-- Deceiver's Fall
 					e(1898, {	-- Kil'jaeden
 						["creatureID"] = 117269,	-- Kil'jaeden
 						["g"] = {

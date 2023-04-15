@@ -55,7 +55,7 @@ _.Instances = { tier(WOD_TIER, {
 						},
 					})),
 				}),
-				ach(8986, {	-- The Walled City
+				header(HEADERS.Achievement, 8986, {	-- The Walled City
 					cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
 						i(138807),	-- Illusion: Mark of the Shattered Hand
 						i(116360),	-- Blade Dancer's Claws
@@ -87,7 +87,7 @@ _.Instances = { tier(WOD_TIER, {
 						i(116291),	-- Immaculate Living Mushroom
 					})),
 				}),
-				ach(8987, {	-- Arcane Sanctum
+				header(HEADERS.Achievement, 8987, {	-- Arcane Sanctum
 					cr(78948, e(1195, {	-- Tectus <The Living Mountain>
 						i(138835, {	-- Illusion: Rockbiter
 							["classes"] = { SHAMAN },
@@ -132,7 +132,7 @@ _.Instances = { tier(WOD_TIER, {
 						un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 					})),
 				}),
-				ach(8988, {	-- Imperator's Fall
+				header(HEADERS.Achievement, 8988, {	-- Imperator's Fall
 					cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
 						i(116372),	-- Imperator's Warstaff
 						i(116373),	-- Mirrorshield of Arcane Fortification

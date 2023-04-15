@@ -1203,7 +1203,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(55611),	-- triggered when completing "Message to Base" in Exile's Reach on alliance priest
 		q(59610),	-- Triggered after killing Torgok. Loot controller for "Torgok's Reagent Pouch"
 		q(59143),	-- Triggered after looting the Runetusk Necklace from ogres in Darkmaul Citadel
-		q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow
+		q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow / Dented Legplates
 		q(60167),	-- Triggered right after Warlord Grimaxe tells Shuja to heal during the Tunk encounter
 		q(62547),	-- Triggered after speaking to trainer for What's Your Specialty? quest [Horde]
 		q(62548),	-- Triggered after speaking to trainer for What's Your Specialty? quest [Alliance]

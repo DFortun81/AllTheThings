@@ -51,7 +51,7 @@ _.Instances = { tier(WOD_TIER, {
 						},
 					})),
 				}),
-				ach(8989, {	-- Slagworks
+				header(HEADERS.Achievement, 8989, {	-- Slagworks
 					cr(77182, e(1202, {	-- Oregorger
 						{
 							["achievementID"] = 8989,	-- Slagworks
@@ -107,7 +107,7 @@ _.Instances = { tier(WOD_TIER, {
 						un(REMOVED_FROM_GAME, i(115479)),	-- Heart of the Fury
 					})),
 				}),
-				ach(8990, {	-- Black Forge
+				header(HEADERS.Achievement, 8990, {	-- Black Forge
 					cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
 						{
 							["achievementID"] = 8990,	-- Black Forge
@@ -167,7 +167,7 @@ _.Instances = { tier(WOD_TIER, {
 						i(116318),	-- Stoneheart Idol
 					})),
 				}),
-				ach(8991, {	-- Iron Assembly
+				header(HEADERS.Achievement, 8991, {	-- Iron Assembly
 					cr(76865, e(1122, {	-- Beastlord Darmac
 						{
 							["achievementID"] = 8991,	-- Iron Assembly
@@ -234,7 +234,7 @@ _.Instances = { tier(WOD_TIER, {
 						},
 					}),
 				}),
-				ach(8992, {	-- Blackhand's Crucible
+				header(HEADERS.Achievement, 8992, {	-- Blackhand's Crucible
 					cr(77325, e(959, {	-- Blackhand
 						i(116391),	-- Blackhand Forgehammer
 						i(116393),	-- Dagger of the Shattered Crucible

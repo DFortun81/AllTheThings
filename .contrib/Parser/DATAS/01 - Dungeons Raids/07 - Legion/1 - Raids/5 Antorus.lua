@@ -135,7 +135,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(152091),	-- Wristguards of the Dark Keepers
 					i(153019),	-- Hulking Demolisher Legplates
 				}),
-				ach(11988, {	-- Light's Breach [Garothi / Hounds / High Command]
+				header(HEADERS.Achievement, 11988, {	-- Light's Breach [Garothi / Hounds / High Command]
 					e(1992, {	-- Garothi Worldbreaker
 						["crs"] = { 122450 },	-- Garothi Worldbreaker
 						["g"] = {
@@ -223,7 +223,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						},
 					}),
 				}),
-				ach(11989, {	-- Hope's End [Eonar / Hasabel / Imonar]
+				header(HEADERS.Achievement, 11989, {	-- Hope's End [Eonar / Hasabel / Imonar]
 					e(2025, {	-- Eonar the Life-Bender
 						["crs"] = {
 							122500,	-- Essence of Eonar
@@ -307,7 +307,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						},
 					}),
 				}),
-				ach(11990, {	-- Forbidden Descent [Kin'garoth / Varimathras / Coven]
+				header(HEADERS.Achievement, 11990, {	-- Forbidden Descent [Kin'garoth / Varimathras / Coven]
 					e(2004, {	-- Kin'garoth
 						["crs"] = { 122578 },	-- Kin'garoth
 						["g"] = {
@@ -392,7 +392,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						},
 					}),
 				}),
-				ach(11991, {	-- Seat of the Pantheon [Aggramar / Argus]
+				header(HEADERS.Achievement, 11991, {	-- Seat of the Pantheon [Aggramar / Argus]
 					e(1984, {	-- Aggramar
 						["crs"] = { 121975 },	-- Aggramar
 						["g"] = {

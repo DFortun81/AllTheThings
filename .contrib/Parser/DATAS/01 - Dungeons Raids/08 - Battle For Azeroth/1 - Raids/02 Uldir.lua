@@ -140,191 +140,182 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 					i(161074),	-- Crushproof Vambraces
 					i(161077),	-- Fluid-Resistant Specimen Handlers
 				}),
-				ach(12521, {	-- Halls of Containment
-					["collectible"] = false,
-					["g"] = {
-						e(2168, {	-- Taloc
-							["crs"] = {
-								137119,	-- Taloc
-								138959,	-- Coalesced Blood
-								138530,	-- Volatile Droplet
-							},
-							["g"] = {
-								crit(1, {	-- Taloc
-									["achievementID"] = 12521,	-- Halls of Containment
-								}),
-								i(163119),	-- Khor, Hammer of the Guardian (transmog item)
-								i(160679),	-- Khor, Hammer of the Corrupted
-								i(160680),	-- Titanspark Animator
-								i(160637),	-- Crimson Colossus Armguards
-								i(160629),	-- Rubywrought Sparkguards
-								i(160618),	-- Gloves of Descending Madness
-								i(160622),	-- Bloodstorm Buckle
-								i(160639),	-- Greaves of Unending Vigil
-								i(160631),	-- Legguards of Coalescing Plasma
-								i(160714),	-- Volatile Walkers
-								i(160652),	-- Construct Overcharger
-								i(160651),	-- Vigilant's Bloodshaper
-							},
-						}),
-						e(2167, {	-- MOTHER
-							["crs"] = {
-								135452,	-- MOTHER
-								136429,	-- Chamber 01 (MOTHER)
-								137022,	-- Chamber 02 (MOTHER)
-								137023,	-- Chamber 03 (MOTHER)
-							},
-							["g"] = {
-								crit(2, {	-- MOTHER
-									["achievementID"] = 12521,	-- Halls of Containment
-								}),
-								i(160681),	-- Glaive of the Keepers
-								i(160683),	-- Latticework Scalpel
-								i(160682),	-- Mother's Twin Gaze
-								i(160695),	-- Uldir Subject Manifest
-								i(160634),	-- Gridrunner Galea
-								i(160632),	-- Flame-Sterilized Spaulders
-								i(160626),	-- Gloves of Involuntary Amputation
-								i(160638),	-- Decontaminator's Greatbelt
-								i(160615),	-- Leggings of Lingering Infestation
-								i(160625),	-- Pathogenic Legwraps
-								i(160645),	-- Rot-Scour Ring
-							},
-						}),
-						e(2169, {	-- Zek'voz, Herald of N'zoth
-							["crs"] = {
-								134445,	-- Zek'voz <Herald of N'zoth>
-								135824,	-- Nerubian Voidweaver
-								134503,	-- Silithid Warrior
-							},
-							["g"] = {
-								crit(3, {	-- Zek'voz, Herald of N'zoth
-									["achievementID"] = 12521,	-- Halls of Containment
-								}),
-								i(160688),	-- Void-Binder
-								i(160687),	-- Containment Analysis Baton
-								i(160613),	-- Mantle of Contained Corruption
-								i(160627),	-- Chainvest of Assured Quality
-								i(160617),	-- Void-Lashed Wristband
-								i(160717),	-- Replicated Chitin Cord
-								i(160633),	-- Titanspark Energy Girdle
-								i(160718),	-- Greaves of Creeping Darkness
-								i(160624),	-- Quarantine Protocol Treads
-								i(160640),	-- Warboots of Absolute Eradication
-								i(160647),	-- Ring of the Infinite Void
-								i(160650),	-- Disc of Systematic Regression
-							},
-						}),
-					},
+				header(HEADERS.Achievement, 12521, {	-- Halls of Containment
+					e(2168, {	-- Taloc
+						["crs"] = {
+							137119,	-- Taloc
+							138959,	-- Coalesced Blood
+							138530,	-- Volatile Droplet
+						},
+						["g"] = {
+							crit(1, {	-- Taloc
+								["achievementID"] = 12521,	-- Halls of Containment
+							}),
+							i(163119),	-- Khor, Hammer of the Guardian (transmog item)
+							i(160679),	-- Khor, Hammer of the Corrupted
+							i(160680),	-- Titanspark Animator
+							i(160637),	-- Crimson Colossus Armguards
+							i(160629),	-- Rubywrought Sparkguards
+							i(160618),	-- Gloves of Descending Madness
+							i(160622),	-- Bloodstorm Buckle
+							i(160639),	-- Greaves of Unending Vigil
+							i(160631),	-- Legguards of Coalescing Plasma
+							i(160714),	-- Volatile Walkers
+							i(160652),	-- Construct Overcharger
+							i(160651),	-- Vigilant's Bloodshaper
+						},
+					}),
+					e(2167, {	-- MOTHER
+						["crs"] = {
+							135452,	-- MOTHER
+							136429,	-- Chamber 01 (MOTHER)
+							137022,	-- Chamber 02 (MOTHER)
+							137023,	-- Chamber 03 (MOTHER)
+						},
+						["g"] = {
+							crit(2, {	-- MOTHER
+								["achievementID"] = 12521,	-- Halls of Containment
+							}),
+							i(160681),	-- Glaive of the Keepers
+							i(160683),	-- Latticework Scalpel
+							i(160682),	-- Mother's Twin Gaze
+							i(160695),	-- Uldir Subject Manifest
+							i(160634),	-- Gridrunner Galea
+							i(160632),	-- Flame-Sterilized Spaulders
+							i(160626),	-- Gloves of Involuntary Amputation
+							i(160638),	-- Decontaminator's Greatbelt
+							i(160615),	-- Leggings of Lingering Infestation
+							i(160625),	-- Pathogenic Legwraps
+							i(160645),	-- Rot-Scour Ring
+						},
+					}),
+					e(2169, {	-- Zek'voz, Herald of N'zoth
+						["crs"] = {
+							134445,	-- Zek'voz <Herald of N'zoth>
+							135824,	-- Nerubian Voidweaver
+							134503,	-- Silithid Warrior
+						},
+						["g"] = {
+							crit(3, {	-- Zek'voz, Herald of N'zoth
+								["achievementID"] = 12521,	-- Halls of Containment
+							}),
+							i(160688),	-- Void-Binder
+							i(160687),	-- Containment Analysis Baton
+							i(160613),	-- Mantle of Contained Corruption
+							i(160627),	-- Chainvest of Assured Quality
+							i(160617),	-- Void-Lashed Wristband
+							i(160717),	-- Replicated Chitin Cord
+							i(160633),	-- Titanspark Energy Girdle
+							i(160718),	-- Greaves of Creeping Darkness
+							i(160624),	-- Quarantine Protocol Treads
+							i(160640),	-- Warboots of Absolute Eradication
+							i(160647),	-- Ring of the Infinite Void
+							i(160650),	-- Disc of Systematic Regression
+						},
+					}),
 				}),
-				ach(12522, {	-- Crimson Descent
-					["collectible"] = false,
-					["g"] = {
-						e(2146, {	-- Fetid Devourer
-							["crs"] = {
-								133298,	-- Fetid Devourer
-								133492,	-- Corruption Corpuscle
-							},
-							["g"] = {
-								crit(2, {	-- Fetid Devourer
-									["achievementID"] = 12522,	-- Crimson Descent
-								}),
-								i(160689),	-- Regurgitated Purifier's Flamestaff
-								i(160685),	-- Biomelding Cleaver
-								i(160616),	-- Horrific Amalgam's Hood
-								i(160643),	-- Fetid Horror's Tanglecloak
-								i(160619),	-- Jerkin of the Aberrant Chimera
-								i(160635),	-- Waste Disposal Crushers
-								i(160628),	-- Fused Monstrosity Stompers
-								i(160648),	-- Frenetic Corpuscle
-							},
-						}),
-						e(2166, {	-- Vectis
-							["crs"] = { 134442 },	-- Vectis
-							["g"] = {
-								crit(1, {	-- Vectis
-									["achievementID"] = 12522,	-- Crimson Descent
-								}),
-								i(160678),	-- Bow of Virulent Infection
-								i(160698),	-- Vector Deflector
-								i(160623),	-- Hood of Pestilent Ichor
-								i(160644),	-- Plasma-Spattered Greatcloak
-								i(160636),	-- Chestguard of Virulent Mutagens
-								i(160621),	-- Wristwraps of Coursing Miasma
-								i(160715),	-- Mutagenic Protofluid Handwraps
-								i(160734),	-- Cord of Animated Contagion
-								i(160716),	-- Blighted Anima Greaves
-								i(160649),	-- Inoculating Extract
-								i(160655),	-- Syringe of Bloodborne Infirmity
-							},
-						}),
-						e(2195, {	-- Zul, Reborn
-							["crs"] = { 138967 },	-- Zul
-							["g"] = {
-								crit(3, {	-- Zul, Reborn
-									["achievementID"] = 12522,	-- Crimson Descent
-								}),
-								i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
-								i(160684),	-- Pursax, the Backborer
-								i(160691),	-- Tusk of the Reborn Prophet
-								i(160630),	-- Crest of the Undying Visionary
-								i(160719),	-- Visage of the Ascended Prophet
-								i(160620),	-- Usurper's Bloodcaked Spaulders
-								i(160642),	-- Cloak of Rippling Whispers
-								i(160722),	-- Chestplate of Apocalyptic Machinations
-								i(160720),	-- Armbands of Sacrosanct Acts
-								i(160723),	-- Imperious Vambraces
-								i(160724),	-- Cincture of Profane Deeds
-							},
-						}),
-					},
+				header(HEADERS.Achievement, 12522, {	-- Crimson Descent
+					e(2146, {	-- Fetid Devourer
+						["crs"] = {
+							133298,	-- Fetid Devourer
+							133492,	-- Corruption Corpuscle
+						},
+						["g"] = {
+							crit(2, {	-- Fetid Devourer
+								["achievementID"] = 12522,	-- Crimson Descent
+							}),
+							i(160689),	-- Regurgitated Purifier's Flamestaff
+							i(160685),	-- Biomelding Cleaver
+							i(160616),	-- Horrific Amalgam's Hood
+							i(160643),	-- Fetid Horror's Tanglecloak
+							i(160619),	-- Jerkin of the Aberrant Chimera
+							i(160635),	-- Waste Disposal Crushers
+							i(160628),	-- Fused Monstrosity Stompers
+							i(160648),	-- Frenetic Corpuscle
+						},
+					}),
+					e(2166, {	-- Vectis
+						["crs"] = { 134442 },	-- Vectis
+						["g"] = {
+							crit(1, {	-- Vectis
+								["achievementID"] = 12522,	-- Crimson Descent
+							}),
+							i(160678),	-- Bow of Virulent Infection
+							i(160698),	-- Vector Deflector
+							i(160623),	-- Hood of Pestilent Ichor
+							i(160644),	-- Plasma-Spattered Greatcloak
+							i(160636),	-- Chestguard of Virulent Mutagens
+							i(160621),	-- Wristwraps of Coursing Miasma
+							i(160715),	-- Mutagenic Protofluid Handwraps
+							i(160734),	-- Cord of Animated Contagion
+							i(160716),	-- Blighted Anima Greaves
+							i(160649),	-- Inoculating Extract
+							i(160655),	-- Syringe of Bloodborne Infirmity
+						},
+					}),
+					e(2195, {	-- Zul, Reborn
+						["crs"] = { 138967 },	-- Zul
+						["g"] = {
+							crit(3, {	-- Zul, Reborn
+								["achievementID"] = 12522,	-- Crimson Descent
+							}),
+							i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
+							i(160684),	-- Pursax, the Backborer
+							i(160691),	-- Tusk of the Reborn Prophet
+							i(160630),	-- Crest of the Undying Visionary
+							i(160719),	-- Visage of the Ascended Prophet
+							i(160620),	-- Usurper's Bloodcaked Spaulders
+							i(160642),	-- Cloak of Rippling Whispers
+							i(160722),	-- Chestplate of Apocalyptic Machinations
+							i(160720),	-- Armbands of Sacrosanct Acts
+							i(160723),	-- Imperious Vambraces
+							i(160724),	-- Cincture of Profane Deeds
+						},
+					}),
 				}),
-				ach(12523, {	-- Heart of Corruption
-					["collectible"] = false,
-					["g"] = {
-						e(2194, {	-- Mythrax the Unraveler
-							["crs"] = { 134546 },	-- Mythrax the Unraveler
-							["g"] = {
-								crit(1, {	-- Mythrax the Unraveler
-									["achievementID"] = 12523,	-- Heart of Corruption
-								}),
-								i(160686),	-- Voror, Gleaming Blade of the Stalwart
-								i(160692),	-- Luminous Edge of Virtue
-								i(160696),	-- Codex of Imminent Ruin
-								i(163596),	-- Cowl of Dark Portents
-								i(160641),	-- Chitinspine Pauldrons
-								i(160725),	-- C'thraxxi General's Hauberk
-								i(160614),	-- Robes of the Unraveler
-								i(160721),	-- Oblivion Crushers
-								i(160646),	-- Band of Certain Annihilation
-								i(160656),	-- Twitching Tentacle of Xalzaix
-								i(160653),	-- Xalzaix's Veiled Eye
-							},
-						}),
-						e(2147, {	-- G'huun
-							["crs"] = {
-								132998,	-- G'huun
-								138529,	-- Dark Young
-							},
-							["g"] = {
-								crit(2, {	-- G'huun
-									["achievementID"] = 12523,	-- Heart of Corruption
-								}),
-								i(160690),	-- Heptavium, Staff of Torturous Knowledge
-								i(160693),	-- Lancet of the Deft Hand
-								i(160694),	-- Re-Origination Pulse Rifle
-								i(160699),	-- Bararicade of Purifying Resolve
-								i(160732),	-- Helm of the Defiled Laboratorium
-								i(160726),	-- Amice of Corrupting Horror
-								i(160731),	-- Spaulders of Coagulated Viscera
-								i(160728),	-- Tunic of the Sanguine Deity
-								i(160727),	-- Cord of Septic Envelopment
-								i(160733),	-- Hematocyst Stompers
-								i(160729),	-- Striders of the Putrescent Path
-								i(160654),	-- Vanquisheed Tendril of G'huun
-							},
-						}),
-					},
+				header(HEADERS.Achievement, 12523, {	-- Heart of Corruption
+					e(2194, {	-- Mythrax the Unraveler
+						["crs"] = { 134546 },	-- Mythrax the Unraveler
+						["g"] = {
+							crit(1, {	-- Mythrax the Unraveler
+								["achievementID"] = 12523,	-- Heart of Corruption
+							}),
+							i(160686),	-- Voror, Gleaming Blade of the Stalwart
+							i(160692),	-- Luminous Edge of Virtue
+							i(160696),	-- Codex of Imminent Ruin
+							i(163596),	-- Cowl of Dark Portents
+							i(160641),	-- Chitinspine Pauldrons
+							i(160725),	-- C'thraxxi General's Hauberk
+							i(160614),	-- Robes of the Unraveler
+							i(160721),	-- Oblivion Crushers
+							i(160646),	-- Band of Certain Annihilation
+							i(160656),	-- Twitching Tentacle of Xalzaix
+							i(160653),	-- Xalzaix's Veiled Eye
+						},
+					}),
+					e(2147, {	-- G'huun
+						["crs"] = {
+							132998,	-- G'huun
+							138529,	-- Dark Young
+						},
+						["g"] = {
+							crit(2, {	-- G'huun
+								["achievementID"] = 12523,	-- Heart of Corruption
+							}),
+							i(160690),	-- Heptavium, Staff of Torturous Knowledge
+							i(160693),	-- Lancet of the Deft Hand
+							i(160694),	-- Re-Origination Pulse Rifle
+							i(160699),	-- Bararicade of Purifying Resolve
+							i(160732),	-- Helm of the Defiled Laboratorium
+							i(160726),	-- Amice of Corrupting Horror
+							i(160731),	-- Spaulders of Coagulated Viscera
+							i(160728),	-- Tunic of the Sanguine Deity
+							i(160727),	-- Cord of Septic Envelopment
+							i(160733),	-- Hematocyst Stompers
+							i(160729),	-- Striders of the Putrescent Path
+							i(160654),	-- Vanquisheed Tendril of G'huun
+						},
+					}),
 				}),
 			}),
 			d(NORMAL_RAID, {

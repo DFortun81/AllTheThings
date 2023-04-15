@@ -77,7 +77,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(140996),	-- Grips of Silent Screams
 					i(141695),	-- Tarnished Dreamkeeper's Gauntlets
 				}),
-				ach(10818, {	-- Darkbough
+				header(HEADERS.Achievement, 10818, {	-- Darkbough
 					cr(102672, e(1703, {	-- Nythendra
 						ach(10818, crit(1)),	-- Darkbough / Nythendra
 						i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
@@ -145,7 +145,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(139256),	-- Sloshing Core of Hatred
 					})),
 				}),
-				ach(10819, {	-- Tormented Guardians
+				header(HEADERS.Achievement, 10819, {	-- Tormented Guardians
 					cr(100497, e(1667, {	-- Ursoc
 						ach(10819, crit(1)),	-- Tormented Guardians / Ursoc
 						i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3] (RECIPE!)
@@ -227,7 +227,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(139264),	-- Uplifting Emerald
 					})),
 				}),
-				ach(10820, {	-- Rift of Aln
+				header(HEADERS.Achievement, 10820, {	-- Rift of Aln
 					cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
 						i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
 						i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)

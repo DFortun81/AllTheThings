@@ -121,7 +121,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(144406),	-- Vintage Duskwatch Cinch
 					i(144405),	-- Waistclasp of Unethical Power
 				}),
-				ach(10829, {	-- Arcing Aqueducts
+				header(HEADERS.Achievement, 10829, {	-- Arcing Aqueducts
 					cr(102263, e(1706, {	-- Skorpyron
 						ach(10829, crit(1)),	-- Arcing Aqueducts / Skorpyron
 						i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1] (RECIPE!)
@@ -192,7 +192,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(140812),	-- Soggy Manascrubber Brush
 					})),
 				}),
-				ach(10837, {	-- Royal Athenaeum
+				header(HEADERS.Achievement, 10837, {	-- Royal Athenaeum
 					cr(104881, e(1751, {	-- Spellblade Aluriel
 						ach(10837, crit(1)),	-- Royal Athenaeum / Spellblade Aluriel
 						i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1] (RECIPE!)
@@ -268,7 +268,7 @@ _.Instances = { tier(LEGION_TIER, {
 						},
 					}),
 				}),
-				ach(10838, {	-- Nightspire
+				header(HEADERS.Achievement, 10838, {	-- Nightspire
 					cr(103685, e(1762, {	-- Tichondrius
 						ach(10838, crit(2)),	-- Nightspire / Tichondrius
 						i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1] (RECIPE!)
@@ -353,7 +353,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(140810),	-- Farsight Spiritjewel
 					})),
 				}),
-				ach(10839, {	-- Betrayer's Rise
+				header(HEADERS.Achievement, 10839, {	-- Betrayer's Rise
 					cr(104154, e(1737, {	-- Gul'dan
 						i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1] (RECIPE!)
 						i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2] (RECIPE!)
