@@ -2927,7 +2927,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5248, {	-- Tormented By the Past
 					["providers"] = {
 						{ "n", 10304 },	-- Aurora Skycaller
-						{ "i", 13347, 1 },	-- Crystal of Zin-Malor
+						{ "i", 13347 },	-- Crystal of Zin-Malor
 					},
 					["sourceQuest"] = 5247,	-- Fragments of the Past
 					["coord"] = { 53.4, 22, EASTERN_PLAGUELANDS },

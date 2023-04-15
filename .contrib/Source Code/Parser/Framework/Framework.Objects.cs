@@ -523,8 +523,10 @@ namespace ATT
                 if (!typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
                     typeObjects[keyValue] = mergeObjects = new List<Dictionary<string, object>>();
 
-                //LogDebug($"Post Process Merge Added: {key}:{keyValue} <= {MiniJSON.Json.Serialize(data)}");
-                mergeObjects.Add(data);
+                //LogDebug($"Post Process Merge Added: {key}:{keyValue}", data);
+                // Processing on group shappens IN REVERSE so if we are adding content to be post-merged during that pass
+                // we will order them backwards as well so that when they are merged into the respective groups they are ordered as originally Sourced
+                mergeObjects.Insert(0, data);
             }
 
             /// <summary>
@@ -553,6 +555,11 @@ namespace ATT
                             {
                                 // track the data which is actually being merged into another group
                                 TrackPostProcessMergeKey(key, keyValue);
+
+                                if (key == "achievementCategoryID" && keyValue == 15231)
+                                {
+
+                                }
 
                                 // merge the objects into the data object
                                 foreach (Dictionary<string, object> mergeObject in mergeObjects)

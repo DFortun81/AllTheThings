@@ -834,7 +834,7 @@ namespace ATT
                                         c[2].TryConvert(out long count) &&
                                         count == 1)
                                     {
-                                        Log($"WARN: 'cost' = {ToJSON(c)} should be 'provider'{Environment.NewLine}-- {ToJSON(data)}");
+                                        Log($"WARN: 'cost' = {ToJSON(c)} should be 'provider'", data);
                                     }
                                 }
                                 break;
@@ -845,15 +845,18 @@ namespace ATT
                                     data["pvp"] = true;
                                 }
                                 break;
-                            case "g": break;
+                            case "g":
+                                break;
 
                             default:
-                                Log($"WARN: Unknown 'cost' type: {c[0]}{Environment.NewLine}-- {ToJSON(data)}");
+                                Log($"WARN: Unknown 'cost' type: {c[0]}", data);
                                 break;
                         }
                     }
                 }
             }
+
+            Validate_Providers(data);
 
             // 'coord' is converted to 'coords' already
             List<object> coordsList = null;
@@ -972,6 +975,76 @@ namespace ATT
             Objects.Merge(data);
 
             return true;
+        }
+
+        private static void Validate_Providers(Dictionary<string, object> data)
+        {
+            if (data.TryGetValue("providers", out object providers))
+            {
+                if (!providers.TryConvert(out List<object> providersList))
+                {
+                    LogError("Invalid Data Format: provider(s)", data);
+                    return;
+                }
+
+                for (int i = providersList.Count - 1; i >= 0; i--)
+                {
+                    var provider = providersList[i];
+                    if (!provider.TryConvert(out List<object> providerList) || providerList.Count != 2)
+                    {
+                        LogError($"Invalid Data Format: provider {ToJSON(provider)}", data);
+                        continue;
+                    }
+
+                    if (!providerList[0].TryConvert(out string pType))
+                    {
+                        LogError($"Invalid Data Format: provider-type: {providerList[0]}", data);
+                        continue;
+                    }
+
+                    if (!providerList[1].TryConvert(out decimal pID))
+                    {
+                        LogError($"Invalid Data Format: provider-id {providerList[1]}", data);
+                        continue;
+                    }
+
+                    // validate that the referenced ID exists in this version of the addon
+                    switch (pType)
+                    {
+                        case "i":
+                            var item = Items.GetNull(pID);
+#if ANYCLASSIC
+                            // @Crieve: You may want to test/verify this logic in Classic
+                            //if (item == null || (item.TryGetValue("u", out long u) && u == 1))
+                            //{
+                            //    // The item doesn't exist in a Classic version, or was classified as never being implemented
+                            //    LogDebug($"Removed non-existent 'provider-item' {pID}", data);
+                            //    providersList.RemoveAt(i);
+                            //}
+#else
+                            if (item == null)
+                            {
+                                // The item isn't Sourced in Retail version
+                                Log($"WARN: Non-Sourced 'provider-item' {pID}", data);
+                            }
+                            else if (item.TryGetValue("u", out long u) && u == 1)
+                            {
+                                // The item was classified as never being implemented
+                                LogDebug($"INFO: Removed NYI 'provider-item' {pID}", data);
+                                providersList.RemoveAt(i);
+                            }
+#endif
+                            break;
+                        case "n":
+                        case "o":
+                            // maybe something for NPCs, Objects... ?
+                            break;
+                        default:
+                            LogError($"Invalid Data Value: provider-type {pType}", data);
+                            break;
+                    }
+                }
+            }
         }
 
         private static void Validate_Sym(Dictionary<string, object> data)

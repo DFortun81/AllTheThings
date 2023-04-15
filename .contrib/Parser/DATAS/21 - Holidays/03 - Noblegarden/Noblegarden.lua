@@ -257,7 +257,12 @@ root(ROOTS.Holidays, applyholiday(NOBLEGARDEN, {
 				},
 			}),
 			ach(249, {	-- Dressed for the Occasion
-				["provider"] = { "i", 19028 },	-- Elegant Dress
+				["providers"] = {
+					-- #if AFTER 7.2.5.24163
+					{ "i", 151806 },	-- Elegant Dress (new)
+					-- #endif
+					{ "i", 19028 },	-- Elegant Dress
+				},
 			}),
 			ach(2416, {	-- Hard Boiled
 				["description"] = "Use the Blossoming Branch on someone else and hopefully they return the favor.",
