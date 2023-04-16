@@ -289,7 +289,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				}),
 				applyclassicphase(PHASE_THREE, q(7649, {	-- Enchanted Thorium Platemail: Volume I
 					["providers"] = {
+						-- #IF BEFORE 4.0.3
 						{ "i", 18769 },	-- Enchanted Thorium Platemail (Volume I)
+						-- #ENDIF
 						{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
 					},
 					-- #if BEFORE TBC
@@ -320,7 +322,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				})),
 				applyclassicphase(PHASE_THREE, q(7650, {	-- Enchanted Thorium Platemail: Volume II
 					["providers"] = {
+						-- #IF BEFORE 4.0.3
 						{ "i", 18770 },	-- Enchanted Thorium Platemail (Volume II)
+						-- #ENDIF
 						{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
 					},
 					-- #if BEFORE TBC
@@ -346,7 +350,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				})),
 				applyclassicphase(PHASE_THREE, q(7651, {	-- Enchanted Thorium Platemail: Volume III
 					["providers"] = {
+						-- #IF BEFORE 4.0.3
 						{ "i", 18771 },	-- Enchanted Thorium Platemail (Volume III)
+						-- #ENDIF
 						{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
 					},
 					-- #if BEFORE TBC

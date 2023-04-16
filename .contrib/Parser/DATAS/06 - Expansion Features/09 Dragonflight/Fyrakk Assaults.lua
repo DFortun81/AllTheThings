@@ -56,7 +56,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 58.4, 34.4, THE_AZURE_SPAN },
 			}),
 		}),
-		n(RARE, {
+		n(RARES, {
 			n(201673, {	-- Shadeisethal
 				["coord"] = { 74.9, 69.6, THE_AZURE_SPAN },
 				["questID"] = 75467,

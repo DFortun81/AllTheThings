@@ -368,7 +368,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29037, {	-- 'Borrowing' From the Winterfall
 					["providers"] = {
 						{ "i", 68646 },	-- Winterspring Cub
-						{ "i", 51677 },	-- Winterspring Cub
+						{ "n", 51677 },	-- Winterspring Cub
 					},
 					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
 					["timeline"] = { "added 4.0.3.13277" },
@@ -404,7 +404,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29035, {	-- A Cub's Cravings
 					["providers"] = {
 						{ "i", 68646 },	-- Winterspring Cub
-						{ "i", 51677 },	-- Winterspring Cub
+						{ "n", 51677 },	-- Winterspring Cub
 					},
 					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
 					["timeline"] = { "added 4.0.3.13277" },
@@ -684,7 +684,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29040, {	-- Cub's First Toy
 					["providers"] = {
 						{ "i", 68646 },	-- Winterspring Cub
-						{ "i", 51677 },	-- Winterspring Cub
+						{ "n", 51677 },	-- Winterspring Cub
 					},
 					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
 					["timeline"] = { "added 4.0.3.13277" },
@@ -989,7 +989,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29038, {	-- Hunting Practice
 					["providers"] = {
 						{ "i", 68646 },	-- Winterspring Cub
-						{ "i", 51677 },	-- Winterspring Cub
+						{ "n", 51677 },	-- Winterspring Cub
 					},
 					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
 					["timeline"] = { "added 4.0.3.13277" },
@@ -2434,6 +2434,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						7448,	-- Chillwind Chimaera
 						7447,	-- Fledgling Chillwind
 					},
+				}),
+				i(12771, {	-- Empty Firewater Flask
+					["timeline"] = { "removed 4.0.3" },
 				}),
 				i(16223, {	-- Formula: Enchant Weapon - Icy Chill (RECIPE!)
 					["cr"] = 7524,	-- Anguished Highborne

@@ -2750,6 +2750,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				i(13140, {	-- Blood Red Key
+					["timeline"] = { "removed 4.0.3" },
+					["crs"] = {
+						7118,	-- Jaedendar Darkweaver
+						7114,	-- Jaedendar Enforcer
+						9862,	-- Jaedendar Legionnaire
+						7120,	-- Jaedendar Warlock
+					},
+				}),
 				-- #if BEFORE 4.0.3
 				i(11515, {	-- Corrupted Soul Shard
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon

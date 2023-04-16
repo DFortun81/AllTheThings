@@ -111,6 +111,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 				},
 			}),
+			i(178557, {	-- Supply Chain Memo
+				["cr"] = 158796,	-- Stonevigil Collector
+				["coord"] = { 57.2, 68.4, REVENDRETH },
+				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
+			}),
 			i(180595),	-- Nightforged Steel
 			i(177772),	-- Avowed Tormenter's Cord
 			i(177769),	-- Avowed Tormenter's Handwraps

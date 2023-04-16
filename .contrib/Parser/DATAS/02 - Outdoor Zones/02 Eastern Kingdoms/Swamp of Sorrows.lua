@@ -1530,6 +1530,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				i(6172, {	-- Lost Supplies
+					["timeline"] = { "removed 4.0.3" },
+				}),
 				i(6196, {	-- Noboru's Cudgel
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 5477,	-- Noboru the Cudgel
