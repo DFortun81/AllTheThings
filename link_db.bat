@@ -22,6 +22,9 @@ mklink /H ..\..\..\..\_ptr_\Interface\Addons\AllTheThings\AllTheThings.lua AllTh
 @del /Q "..\..\..\..\_ptr_\Interface\Addons\AllTheThings\AllTheThings.toc"
 mklink /H ..\..\..\..\_ptr_\Interface\Addons\AllTheThings\AllTheThings.toc AllTheThings.toc
 
+@del /Q "..\..\..\..\_ptr_\Interface\Addons\AllTheThings\Bindings.xml"
+mklink /H ..\..\..\..\_ptr_\Interface\Addons\AllTheThings\Bindings.xml Bindings.xml
+
 @del /Q "..\..\..\..\_ptr_\Interface\Addons\AllTheThings\Settings.lua"
 mklink /H ..\..\..\..\_ptr_\Interface\Addons\AllTheThings\Settings.lua Settings.lua
 
@@ -45,6 +48,9 @@ mklink /H ..\..\..\..\_ptr2_\Interface\Addons\AllTheThings\AllTheThings.lua AllT
 
 @del /Q "..\..\..\..\_ptr2_\Interface\Addons\AllTheThings\AllTheThings.toc"
 mklink /H ..\..\..\..\_ptr2_\Interface\Addons\AllTheThings\AllTheThings.toc AllTheThings.toc
+
+@del /Q "..\..\..\..\_ptr2_\Interface\Addons\AllTheThings\Bindings.xml"
+mklink /H ..\..\..\..\_ptr2_\Interface\Addons\AllTheThings\Bindings.xml Bindings.xml
 
 @del /Q "..\..\..\..\_ptr2_\Interface\Addons\AllTheThings\Settings.lua"
 mklink /H ..\..\..\..\_ptr2_\Interface\Addons\AllTheThings\Settings.lua Settings.lua
