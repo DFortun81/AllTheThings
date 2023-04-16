@@ -2266,6 +2266,7 @@ local keys = {
 		["53589"] = "Aalgen Point",
 		["53590"] = "Elemental Plateau",
 		["53591"] = "Fire Plume Ridge",
+		["53592"] = "Honor Hold",
 		["53593"] = "Neltharion's Vault",
 		["53594"] = "Nethergarde Keep",
 		["53595"] = "One Keg",

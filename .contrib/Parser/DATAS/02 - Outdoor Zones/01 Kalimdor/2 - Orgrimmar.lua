@@ -6305,9 +6305,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(52680, {	-- Neophyte's Pants
 							["timeline"] = { ADDED_10_0_5 }
 						}),
-						i(6098, {	-- Neophyte's Robe
-							["timeline"] = { ADDED_10_0_5 }
-						}),
 						i(6144, {	-- Neophyte's Robe
 							["timeline"] = { ADDED_10_0_5 }
 						}),

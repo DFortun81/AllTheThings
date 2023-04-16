@@ -54,15 +54,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				tier(TBC_TIER, {
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["groups"] = {
-						q(53599, {	-- The Hand of Gul'dan [Outlands]
-							["name"] = "The Hand of Gul'dan",
-							["coord"] = { 50.77, 35.28, SHADOWMOON_VALLEY },
+						q(53592, {	-- Honor Hold [Outlands]
+							["name"] = "Honor Hold",
+							["coord"] = { 53.15, 64.89, HELLFIRE_PENINSULA },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 						}),
 						q(53597, {	-- Skald [Outlands]
 							["name"] = "Skald",
 							["coord"] = { 72.41, 17.65, BLADES_EDGE_MOUNTAINS },
+							["races"] = { DARKIRON },
+							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
+						}),
+						q(53599, {	-- The Hand of Gul'dan [Outlands]
+							["name"] = "The Hand of Gul'dan",
+							["coord"] = { 50.77, 35.28, SHADOWMOON_VALLEY },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 						}),
