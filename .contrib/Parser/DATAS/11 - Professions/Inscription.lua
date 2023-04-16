@@ -197,9 +197,15 @@ GLYPH_OF_BLADE_FLURRY = r(57115, {	-- Glyph of Blade Flurry
 	["name"] = "Glyph of Blade Flurry",
 	["timeline"] = { "added 3.0.2", "deleted 7.0.3" },
 });
-GLYPH_OF_BLADESTORM = r(64295, {	-- Glyph of Bladestorm
+GLYPH_OF_BLADESTORM_AND_WHIRLWIND_AND_WIND_AND_THUNDER = r(64295, {	-- Glyph of Bladestorm / Glyph of Whirlwind [5.1.0+] / Glyph of Wind and Thunder [6.0.2+]
+	-- #if AFTER MOP
+	["name"] = "Glyph of Wind and Thunder",
+	-- #elseif AFTER 5.1.0
+	["name"] = "Glyph of Whirlwind",
+	-- #else
 	["name"] = "Glyph of Bladestorm",
-	["timeline"] = { "added 3.0.2", "deleted 5.0.4" },
+	-- #endif
+	["timeline"] = { "added 3.1.0", "deleted 5.0.4", "added 5.1.0", "deleted 7.0.3" },
 });
 GLYPH_OF_BLAST_WAVE = r(56990, {	-- Glyph of Blast Wave
 	["name"] = "Glyph of Blast Wave",
@@ -230,6 +236,10 @@ GLYPH_OF_BLESSING_OF_WISDOM_AND_INSIGHT_AND_WINGED_VENGEANCE = r(58312, {	-- Gly
 	["name"] = "Glyph of Blessing of Wisdom",
 	-- #endif
 	["timeline"] = { "added 3.0.2" },
+});
+GLYPH_OF_BLIND = r(92579, {	-- Glyph of Blind
+	["name"] = "Glyph of Blind",
+	["timeline"] = { "added 4.0.1", "deleted 7.0.3" },
 });
 GLYPH_OF_BLINK = r(56973, {	-- Glyph of Blink
 	["name"] = "Glyph of Blink",
@@ -851,6 +861,10 @@ GLYPH_OF_FLOATING_SHARDS = r(246984, {	-- Glyph of Floating Shards
 	["name"] = "Glyph of Floating Shards",
 	["timeline"] = { "added 7.2.5" },
 });
+GLYPH_OF_FLYING_SERPENT_KICK = r(112463, {	-- Glyph of Flying Serpent Kick
+	["name"] = "Glyph of Flying Serpent Kick",
+	["timeline"] = { "added 5.0.4", "deleted 7.0.3" },
+});
 GLYPH_OF_FOCUS_AND_THE_MASTER_SHAPESHIFTER = r(62162, {	-- Glyph of Focus / Glyph of the Master Shapeshifter [5.0.4+]
 	-- #if AFTER 5.0.4
 	["name"] = "Glyph of the Master Shapeshifter",
@@ -991,9 +1005,15 @@ GLYPH_OF_HAMMER_OF_WRATH_AND_TEMPLARS_VERDICT = r(57028, {	-- Glyph of Hammer of
 	-- #endif
 	["timeline"] = { "added 3.0.2", "deleted 6.0.2" },
 });
-GLYPH_OF_HAMSTRING = r(57157, {	-- Glyph of Hamstring
+GLYPH_OF_HAMSTRING_AND_PIERCING_HOWL_AND_RUDE_INTERRUPTION = r(57157, {	-- Glyph of Hamstring / Glyph of Piercing Howl [CATA+] / Glyph of Rude Interruption [5.0.4+]
+	-- #if AFTER 5.0.4
+	["name"] = "Glyph of Rude Interruption",
+	-- #elseif AFTER CATA
+	["name"] = "Glyph of Piercing Howl",
+	-- #else
 	["name"] = "Glyph of Hamstring",
-	["timeline"] = { "added 3.0.2", "deleted 4.0.3", "added 5.0.4", "deleted 6.0.2" },
+	-- #endif
+	["timeline"] = { "added 3.0.2", "deleted 4.0.3", "added 5.0.4", "deleted 7.0.3" },
 });
 GLYPH_OF_HAUNT_AND_DRAIN_LIFE = r(64291, {	-- Glyph of Haunt / Glyph of Drain Life [5.2.0+]
 	-- #if AFTER 5.2.0
@@ -1267,8 +1287,12 @@ GLYPH_OF_KILLING_SPREE = r(64285, {	-- Glyph of Killing Spree
 	["name"] = "Glyph of Killing Spree",
 	["timeline"] = { "added 3.1.0", "deleted 7.0.3" },
 });
-GLYPH_OF_KILROGG = r(58340, {	-- Glyph of Kilrogg
+GLYPH_OF_KILROGG = r(58340, {	-- Glyph of Kilrogg / Glyph of Eye of Kilrogg [CATA+]
+	-- #if AFTER CATA
+	["name"] = "Glyph of Eye of Kilrogg",
+	-- #else
 	["name"] = "Glyph of Kilrogg",
+	-- #endif
 	["timeline"] = { "added 3.0.2", "deleted 7.0.3" },
 });
 GLYPH_OF_LAST_STAND = r(57166, {	-- Glyph of Last Stand
@@ -1639,14 +1663,6 @@ GLYPH_OF_QUICK_DECAY_AND_LASH_OF_PAIN_AND_EVERLASTING_AFFLICTION_AND_ETERNAL_RES
 	-- #endif
 	["timeline"] = { "added 3.3.0", "deleted 7.0.3" },
 });
-GLYPH_OF_RAPID_CHARGE_AND_ENRAGED_SPEED = r(57162, {	-- Glyph of Rapid Charge / Glyph of Enraged Speed [MOP+]
-	-- #if AFTER MOP
-	["name"] = "Glyph of Enraged Speed",
-	-- #else
-	["name"] = "Glyph of Rapid Charge",
-	-- #endif
-	["timeline"] = { "added 3.0.2", "deleted 6.0.2" },
-});
 GLYPH_OF_RAISE_DEAD_AND_RAISE_ALLY_AND_DEATH_GATE = r(57228, {	-- Glyph of Raise Dead / Glyph of Raise Ally [CATA+] / Glyph of Death Gate [4.1.0+]
 	-- #if AFTER 4.1.0
 	["name"] = "Glyph of Death Gate",
@@ -1666,6 +1682,14 @@ GLYPH_OF_RAKE_AND_POUNCE_AND_RAKE = r(56952, {	-- Glyph of Rake / Glyph of Pounc
 	["name"] = "Glyph of Rake",
 	-- #endif
 	["timeline"] = { "added 3.0.2", "deleted 7.0.3" },
+});
+GLYPH_OF_RAPID_CHARGE_AND_ENRAGED_SPEED = r(57162, {	-- Glyph of Rapid Charge / Glyph of Enraged Speed [MOP+]
+	-- #if AFTER MOP
+	["name"] = "Glyph of Enraged Speed",
+	-- #else
+	["name"] = "Glyph of Rapid Charge",
+	-- #endif
+	["timeline"] = { "added 3.0.2", "deleted 6.0.2" },
 });
 GLYPH_OF_RAPID_FIRE_AND_PATHFINDING = r(57008, {	-- Glyph of Rapid Fire / Glyph of Pathfinding [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -1715,9 +1739,15 @@ GLYPH_OF_REMOVE_CURSE_AND_CONE_OF_COLD_AND_ICY_VEINS = r(56988, {	-- Glyph of Re
 	-- #endif
 	["timeline"] = { "added 3.0.2", "deleted 7.0.3" },
 });
-GLYPH_OF_RENDING = r(57163, {	-- Glyph of Rending
+GLYPH_OF_RENDING_AND_SLAM_AND_HAMSTRING = r(57163, {	-- Glyph of Rending / Glyph of Slam [CATA+] / Glyph of Hamstring [5.0.4+]
+	-- #if AFTER 5.0.4
+	["name"] = "Glyph of Hamstring",
+	-- #elseif AFTER CATA
+	["name"] = "Glyph of Slam",
+	-- #else
 	["name"] = "Glyph of Rending",
-	["timeline"] = { "added 3.0.2", "deleted 4.0.3" },
+	-- #endif
+	["timeline"] = { "added 3.0.2", "deleted 6.0.2" },
 });
 GLYPH_OF_RENEW = r(57197, {	-- Glyph of Renew
 	["name"] = "Glyph of Renew",
@@ -2296,6 +2326,10 @@ GLYPH_OF_THE_DOLPHIN = r(276059, {	-- Glyph of the Dolphin
 	["name"] = "Glyph of the Dolphin",
 	["timeline"] = { "added 8.0.1" },
 });
+GLYPH_OF_THE_EXORCIST = r(148273, {	-- Glyph of the Exorcist
+	["name"] = "Glyph of the Exorcist",
+	["timeline"] = { "added 5.4.0", "deleted 7.0.3" },
+});
 GLYPH_OF_THE_FERAL_CHAMELEON = r(225532, {	-- Glyph of the Feral Chameleon
 	["name"] = "Glyph of the Feral Chameleon",
 	["timeline"] = { "added 7.0.3" },
@@ -2490,6 +2524,10 @@ GLYPH_OF_TOTEM_OF_WRATH_AND_SHAMANISTIC_RAGE = r(64262, {	-- Glyph of Totem of W
 	-- #endif
 	["timeline"] = { "added 3.1.0", "deleted 7.0.3" },
 });
+GLYPH_OF_TOUCH_OF_DEATH = r(124456, {	-- Glyph of Touch of Death
+	["name"] = "Glyph of Touch of Death",
+	["timeline"] = { "added 5.0.4", "deleted 7.0.3" },
+});
 GLYPH_OF_TRICKS_OF_THE_TRADE = r(64310, {	-- Glyph of Tricks of the Trade
 	["name"] = "Glyph of Tricks of the Trade",
 	["timeline"] = { "added 3.1.0", "deleted 6.0.2" },
@@ -2502,7 +2540,7 @@ GLYPH_OF_TRUESHOT_AURA_AND_KILL_COMMAND_AND_MEND_PET = r(57012, {	-- Glyph of Tr
 	-- #else
 	["name"] = "Glyph of Trueshot Aura",
 	-- #endif
-	["timeline"] = { "added 3.0.2", "deleted 5.0.4" },
+	["timeline"] = { "added 3.0.2", "deleted 7.0.3" },
 });
 GLYPH_OF_TURN_EVIL_AND_BURDEN_OF_GUILT = r(57036, {	-- Glyph of Turn Evil / Glyph of Burden of Guilt [5.4.0+]
 	-- #if AFTER 5.4.0
@@ -2642,9 +2680,11 @@ GLYPH_OF_WATER_WALKING_AND_TOTEMIC_ENCIRCLEMENT = r(58333, {	-- Glyph of Water W
 	-- #endif
 	["timeline"] = { "added 3.0.2", "deleted 7.0.3" },
 });
-GLYPH_OF_WHIRLWIND_AND_WIND_AND_THUNDER = r(57172, {	-- Glyph of Whirlwind / Glyph of Wind and Thunder [6.0.2+]
+GLYPH_OF_WHIRLWIND_AND_RAGING_BLOW_AND_RAGING_WIND = r(57172, {	-- Glyph of Whirlwind / Glyph of Raging Blow [CATA+] / Glyph of Raging Wind [5.0.4+]
 	-- #if AFTER MOP
 	["name"] = "Glyph of Wind and Thunder",
+	-- #elseif AFTER MOP
+	["name"] = "Glyph of Raging Blow",
 	-- #else
 	["name"] = "Glyph of Whirlwind",
 	-- #endif
@@ -2943,8 +2983,10 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 			GLYPH_OF_CRACKLING_OX_LIGHTNING,
 			GLYPH_OF_CRACKLING_TIGER_LIGHTNING,
 			GLYPH_OF_FIGHTING_POSE,
+			GLYPH_OF_FLYING_SERPENT_KICK,
 			GLYPH_OF_HONOR,
 			GLYPH_OF_RISING_TIGER_KICK,
+			GLYPH_OF_TOUCH_OF_DEATH,
 			GLYPH_OF_YULONS_GRACE,
 		},
 	}),
@@ -2985,6 +3027,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_SENSE_UNDEAD_AND_TRUTH_AND_SEAL_OF_BLOOD,
 		GLYPH_OF_SHIELD_OF_RIGHTEOUSNESS_AND_ALABASTER_SHIELD,
 		GLYPH_OF_SPIRITUAL_ATTUNEMENT_AND_DIVINE_PROTECTION,
+		GLYPH_OF_THE_EXORCIST,
 		GLYPH_OF_THE_QUEEN,
 		GLYPH_OF_THE_TRUSTED_STEED,
 		GLYPH_OF_THE_WISE_AND_FIRE_FROM_THE_HEAVENS,
@@ -3043,6 +3086,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_BACKSTAB_AND_DECOY,
 		GLYPH_OF_BLACKOUT,
 		GLYPH_OF_BLADE_FLURRY,
+		GLYPH_OF_BLIND,
 		GLYPH_OF_BLURRED_SPEED,
 		GLYPH_OF_BURNOUT,
 		GLYPH_OF_CLOAK_OF_SHADOWS,
@@ -3167,7 +3211,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 	clWithoutLock(WARRIOR, {
 		GLYPH_OF_BARBARIC_INSULTS,
 		GLYPH_OF_BATTLE_AND_MYSTIC_SHOUT,
-		GLYPH_OF_BLADESTORM,
+		GLYPH_OF_BLADESTORM_AND_WHIRLWIND_AND_WIND_AND_THUNDER,
 		GLYPH_OF_BLOCKING_AND_SHIELD_SLAM,
 		GLYPH_OF_BLOODRAGE,
 		GLYPH_OF_BLOODTHIRST_AND_BLOODY_HEALING,
@@ -3182,7 +3226,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_ENRAGED_REGENERATION_AND_INTIMIDATING_SHOUT,
 		GLYPH_OF_EXECUTION,
 		GLYPH_OF_FALLING_THUNDER,
-		GLYPH_OF_HAMSTRING,
+		GLYPH_OF_HAMSTRING_AND_PIERCING_HOWL_AND_RUDE_INTERRUPTION,
 		GLYPH_OF_HEROIC_STRIKE,
 		GLYPH_OF_INTERVENE_AND_BLITZ,
 		GLYPH_OF_LAST_STAND,
@@ -3190,7 +3234,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_MORTAL_STRIKE,
 		GLYPH_OF_OVERPOWER_AND_DIE_BY_THE_SWORD,
 		GLYPH_OF_RAPID_CHARGE_AND_ENRAGED_SPEED,
-		GLYPH_OF_RENDING,
+		GLYPH_OF_RENDING_AND_SLAM_AND_HAMSTRING,
 		GLYPH_OF_RESONATING_POWER,
 		GLYPH_OF_REVENGE_AND_HOLD_THE_LINE,
 		GLYPH_OF_SHIELD_WALL,
@@ -3205,7 +3249,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_THUNDER_CLAP_AND_UNENDING_RAGE,
 		GLYPH_OF_VICTORY_RUSH,
 		GLYPH_OF_VIGILANCE_AND_FURIOUS_SUNDERING_AND_VICTORIOUS_THROW,
-		GLYPH_OF_WHIRLWIND_AND_WIND_AND_THUNDER,
+		GLYPH_OF_WHIRLWIND_AND_RAGING_BLOW_AND_RAGING_WIND,
 	}),
 });
 
@@ -3265,7 +3309,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_BARKSKIN,
 				GLYPH_OF_BEACON_OF_LIGHT,
 				GLYPH_OF_BERSERK_AND_SURVIVAL_INSTINCTS,
-				GLYPH_OF_BLADESTORM,
+				GLYPH_OF_BLADESTORM_AND_WHIRLWIND_AND_WIND_AND_THUNDER,
 				GLYPH_OF_CHAOS_BOLT,
 				GLYPH_OF_CHIMERA_SHOT,
 				GLYPH_OF_CLOAK_OF_SHADOWS,
@@ -3328,108 +3372,334 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		-- #endif
-		spell(61288, insertionSort({	-- Minor Inscription Research
-			-- Moonglow
-			GLYPH_OF_CORPSE_EXPLOSION_AND_PATH_OF_FROST,
-			GLYPH_OF_FIRE_WARD,
-			GLYPH_OF_SENSE_UNDEAD_AND_TRUTH_AND_SEAL_OF_BLOOD,
-			GLYPH_OF_WATER_MASTERY_AND_WATER_SHIELD,
-			-- #IF BEFORE MOP
-			-- This is still in the game in another Location
-			GLYPH_OF_WATER_SHIELD_AND_THE_ARCTIC_WOLF_AND_THE_SPECTRAL_WOLF,
-			-- #ENDIF
-			-- Midnight Ink
-			GLYPH_OF_ARCANE_INTELLECT_AND_THE_PORCUPINE,
-			GLYPH_OF_BATTLE_AND_MYSTIC_SHOUT,
-			GLYPH_OF_BLESSING_OF_MIGHT_AND_THE_MOUNTED_KING,
-			-- #IF BEFORE MOP
-			-- This is still in the game in another Location
-			GLYPH_OF_BLESSING_OF_WISDOM_AND_INSIGHT_AND_WINGED_VENGEANCE,
-			-- #ENDIF
-			GLYPH_OF_BLOODRAGE,
-			GLYPH_OF_BLURRED_SPEED,
-			GLYPH_OF_CHARGE,
-			GLYPH_OF_DRAIN_SOUL_AND_SOUL_CONSUMPTION,
-			GLYPH_OF_FROST_ARMOR_AND_CONJURING_AND_CONJURE_FAMILIAR,
-			GLYPH_OF_LAY_ON_HANDS_AND_FLASH_OF_LIGHT,
-			-- #IF BEFORE MOP
-			-- This is still in the game in another Location
-			GLYPH_OF_MEND_PET_AND_LESSER_PROPORTION,
-			GLYPH_OF_MOCKING_BLOW_AND_GUSHING_WOUND,
-			-- #ENDIF
-			GLYPH_OF_PICK_POCKET,
-			GLYPH_OF_POSSESSED_STRENGTH,
-			GLYPH_OF_REVIVE_PET,
-			GLYPH_OF_SCARE_BEAST_AND_STAMPEDE,
-			GLYPH_OF_SLOW_FALL_AND_ARCANE_LANGUAGE,
-			GLYPH_OF_THE_PENGUIN,
-			GLYPH_OF_THE_WILD_AND_CHARM_WOODLAND_CREATURE,
-			GLYPH_OF_THORNS,
-			GLYPH_OF_THUNDER_CLAP_AND_UNENDING_RAGE,
-			-- Lion
-			GLYPH_OF_AQUATIC_FORM,
-			GLYPH_OF_BLESSING_OF_KINGS_AND_COMTEMPLATION,
-			GLYPH_OF_DISTRACT,
-			GLYPH_OF_FROST_WARD_AND_THE_MONKEY,
-			GLYPH_OF_GHOST_WOLF,
-			GLYPH_OF_KILROGG,
-			GLYPH_OF_PICK_LOCK,
-			GLYPH_OF_UNBURDENED_REBIRTH_AND_BLOOMING,
-			GLYPH_OF_UNENDING_BREATH,
-			GLYPH_OF_VANISH_AND_POISONS,
-			GLYPH_OF_WATER_BREATHING_AND_HEALING_STORM,
-			-- Jadefire
-			GLYPH_OF_ASTRAL_RECALL,
-			-- #IF BEFORE MOP
-			-- This is still in the game in another Location
-			GLYPH_OF_CHALLENGING_ROAR_AND_THE_URSOL_CHAMELEON,
-			-- #ENDIF
-			GLYPH_OF_CURSE_OF_EXHAUSTION,
-			GLYPH_OF_DASH,
-			GLYPH_OF_SUBJUGATE_DEMON_AND_ENSLAVE_DEMON,
-			GLYPH_OF_FEIGN_DEATH_AND_FIREWORKS,
-			GLYPH_OF_RENEWED_LIFE_AND_FAR_SIGHT,
-			-- #IF BEFORE MOP
-			-- This is still in the game in another Location
-			GLYPH_OF_RIGHTEOUS_DEFENSE_AND_RIGHTEOUSNESS_AND_THE_LUMINOUS_CHARGER,
-			-- #ENDIF
-			GLYPH_OF_SPIRITUAL_ATTUNEMENT_AND_DIVINE_PROTECTION,
-			-- #IF BEFORE MOP
-			GLYPH_OF_THE_WISE_AND_FIRE_FROM_THE_HEAVENS,
-			-- #ENDIF
-			GLYPH_OF_WATER_WALKING_AND_TOTEMIC_ENCIRCLEMENT,
-			-- Celestial
-			GLYPH_OF_HEALING_STREAM_TOTEM,
-			GLYPH_OF_SAFE_FALL,
-			GLYPH_OF_THE_PACK_AND_ASPECT_OF_THE_PACK,
-		})),
+		spell(61288, {	-- Minor Inscription Research
+			["timeline"] = { "deleted 6.0.2" },
+			["groups"] = insertionSort({
+				-- #if ANYCLASSIC
+				-- This list was pulled from WoWHead for Wrath Classic. (65 listed, as of 4/15/2023)
+				GLYPH_OF_AQUATIC_FORM,
+				GLYPH_OF_ARCANE_INTELLECT_AND_THE_PORCUPINE,
+				GLYPH_OF_ASTRAL_RECALL,
+				GLYPH_OF_BATTLE_AND_MYSTIC_SHOUT,
+				GLYPH_OF_BLAST_WAVE,
+				GLYPH_OF_BLESSING_OF_KINGS_AND_COMTEMPLATION,
+				GLYPH_OF_BLESSING_OF_MIGHT_AND_THE_MOUNTED_KING,
+				GLYPH_OF_BLESSING_OF_WISDOM_AND_INSIGHT_AND_WINGED_VENGEANCE,
+				GLYPH_OF_BLOOD_TAP_AND_THE_GEIST,
+				GLYPH_OF_BLOODRAGE,
+				GLYPH_OF_BLURRED_SPEED,
+				GLYPH_OF_CHALLENGING_ROAR_AND_THE_URSOL_CHAMELEON,
+				GLYPH_OF_CHARGE,
+				GLYPH_OF_COMMAND_AND_THUNDER_STRIKE,
+				GLYPH_OF_CORPSE_EXPLOSION_AND_PATH_OF_FROST,
+				GLYPH_OF_CURSE_OF_EXHAUSTION,
+				GLYPH_OF_DASH,
+				GLYPH_OF_DEATHS_EMBRACE,
+				GLYPH_OF_DISTRACT,
+				GLYPH_OF_DRAIN_SOUL_AND_SOUL_CONSUMPTION,
+				GLYPH_OF_ENDURING_VICTORY_AND_MIGHTY_VICTORY,
+				GLYPH_OF_ENRAGED_REGENERATION_AND_INTIMIDATING_SHOUT,
+				GLYPH_OF_FADING_AND_SHADOW_RAVENS,
+				GLYPH_OF_FEIGN_DEATH_AND_FIREWORKS,
+				GLYPH_OF_FIRE_WARD,
+				GLYPH_OF_FORTITUDE_AND_BORROWED_TIME,
+				GLYPH_OF_FROST_ARMOR_AND_CONJURING_AND_CONJURE_FAMILIAR,
+				GLYPH_OF_FROST_WARD_AND_THE_MONKEY,
+				GLYPH_OF_GHOST_WOLF,
+				GLYPH_OF_HORN_OF_WINTER,
+				GLYPH_OF_KILROGG,
+				GLYPH_OF_LAY_ON_HANDS_AND_FLASH_OF_LIGHT,
+				GLYPH_OF_LEVITATE,
+				GLYPH_OF_MEND_PET_AND_LESSER_PROPORTION,
+				GLYPH_OF_MOCKING_BLOW_AND_GUSHING_WOUND,
+				GLYPH_OF_PESTILENCE_AND_RESILIENT_GRIP,
+				GLYPH_OF_PICK_LOCK,
+				GLYPH_OF_PICK_POCKET,
+				GLYPH_OF_POSSESSED_STRENGTH,
+				GLYPH_OF_RAISE_DEAD_AND_RAISE_ALLY_AND_DEATH_GATE,
+				GLYPH_OF_RENEWED_LIFE_AND_FAR_SIGHT,
+				GLYPH_OF_REVIVE_PET,
+				GLYPH_OF_SAFE_FALL,
+				GLYPH_OF_SCARE_BEAST_AND_STAMPEDE,
+				GLYPH_OF_SENSE_UNDEAD_AND_TRUTH_AND_SEAL_OF_BLOOD,
+				GLYPH_OF_SHACKLE_UNDEAD,
+				GLYPH_OF_SHADOW_PROTECTION_AND_REFLECTIVE_SHIELD,
+				GLYPH_OF_SHADOWFIEND_AND_DARK_ARCHANGEL,
+				GLYPH_OF_SLOW_FALL_AND_ARCANE_LANGUAGE,
+				GLYPH_OF_SOULS_AND_RITUAL_OF_SOULS_AND_SOULWELL,
+				GLYPH_OF_SUBJUGATE_DEMON_AND_ENSLAVE_DEMON,
+				GLYPH_OF_THE_PACK_AND_ASPECT_OF_THE_PACK,
+				GLYPH_OF_THE_PENGUIN,
+				GLYPH_OF_THE_WILD_AND_CHARM_WOODLAND_CREATURE,
+				GLYPH_OF_THE_WISE_AND_FIRE_FROM_THE_HEAVENS,
+				GLYPH_OF_THORNS,
+				GLYPH_OF_THUNDER_CLAP_AND_UNENDING_RAGE,
+				GLYPH_OF_THUNDERSTORM,
+				GLYPH_OF_TYPHOON_AND_STARS,
+				GLYPH_OF_UNBURDENED_REBIRTH_AND_BLOOMING,
+				GLYPH_OF_UNENDING_BREATH,
+				GLYPH_OF_VANISH_AND_POISONS,
+				GLYPH_OF_WATER_BREATHING_AND_HEALING_STORM,
+				GLYPH_OF_WATER_SHIELD_AND_THE_ARCTIC_WOLF_AND_THE_SPECTRAL_WOLF,
+				GLYPH_OF_WATER_WALKING_AND_TOTEMIC_ENCIRCLEMENT,
+				
+				-- Extras, not included in Wrath Classic yet.
+				-- #if AFTER CATA
+				-- This glyph becomes a Minor Glyph with Cataclysm.
+				GLYPH_OF_RIGHTEOUS_DEFENSE_AND_RIGHTEOUSNESS_AND_THE_LUMINOUS_CHARGER,
+				-- #endif
+				
+				-- #else
+				-- This was the list before I did my updates to the profession, should double check missing recipes and adjust availabilities over time.
+				-- I did a quick compare against the Wrath Classic data (above) and marked them accordingly below.
+				GLYPH_OF_AQUATIC_FORM,
+				GLYPH_OF_ARCANE_INTELLECT_AND_THE_PORCUPINE,
+				GLYPH_OF_ASTRAL_RECALL,
+				GLYPH_OF_BATTLE_AND_MYSTIC_SHOUT,
+				GLYPH_OF_BLAST_WAVE, -- (Missing? Deleted 5.0.4)
+				GLYPH_OF_BLESSING_OF_KINGS_AND_COMTEMPLATION,
+				GLYPH_OF_BLESSING_OF_MIGHT_AND_THE_MOUNTED_KING,
+				-- #if BEFORE MOP
+				GLYPH_OF_BLESSING_OF_WISDOM_AND_INSIGHT_AND_WINGED_VENGEANCE,	-- Check this one, notes say moved to Research: Midnight Ink?
+				-- #endif
+				-- GLYPH_OF_BLOOD_TAP_AND_THE_GEIST, (Missing?) Check this one, notes say moved to Research: Lion's Ink?
+				GLYPH_OF_BLOODRAGE,
+				GLYPH_OF_BLURRED_SPEED,
+				-- #if BEFORE MOP
+				GLYPH_OF_CHALLENGING_ROAR_AND_THE_URSOL_CHAMELEON,	-- Check this one, notes say moved to Research: Blackfallow Ink?
+				-- #endif
+				GLYPH_OF_CHARGE,
+				GLYPH_OF_COMMAND_AND_THUNDER_STRIKE,
+				GLYPH_OF_CORPSE_EXPLOSION_AND_PATH_OF_FROST,
+				GLYPH_OF_CURSE_OF_EXHAUSTION,
+				GLYPH_OF_DASH,
+				--GLYPH_OF_DEATHS_EMBRACE, (Missing?) Check this one, notes say moved to Research: Midnight Ink?
+				GLYPH_OF_DISTRACT,
+				GLYPH_OF_DRAIN_SOUL_AND_SOUL_CONSUMPTION,
+				--GLYPH_OF_ENDURING_VICTORY_AND_MIGHTY_VICTORY,	(Missing?) Moved to Research: Jadefire Ink?
+				--GLYPH_OF_ENRAGED_REGENERATION_AND_INTIMIDATING_SHOUT,	(Missing?) 
+				--GLYPH_OF_FADING_AND_SHADOW_RAVENS,	(Missing?)
+				GLYPH_OF_FEIGN_DEATH_AND_FIREWORKS,
+				GLYPH_OF_FIRE_WARD,
+				--GLYPH_OF_FORTITUDE_AND_BORROWED_TIME,	(Missing?)
+				GLYPH_OF_FROST_ARMOR_AND_CONJURING_AND_CONJURE_FAMILIAR,
+				GLYPH_OF_FROST_WARD_AND_THE_MONKEY,
+				GLYPH_OF_GHOST_WOLF,
+				--GLYPH_OF_HORN_OF_WINTER,	(Missing?)
+				GLYPH_OF_KILROGG,
+				GLYPH_OF_LAY_ON_HANDS_AND_FLASH_OF_LIGHT,
+				--GLYPH_OF_LEVITATE,	(Missing?)
+				-- #if BEFORE MOP
+				GLYPH_OF_MEND_PET_AND_LESSER_PROPORTION,	-- Not sure why this is marked like this?
+				GLYPH_OF_MOCKING_BLOW_AND_GUSHING_WOUND,	-- Not sure why this is marked like this?
+				-- #endif
+				--GLYPH_OF_PESTILENCE_AND_RESILIENT_GRIP,	(Missing?)
+				GLYPH_OF_PICK_LOCK,
+				GLYPH_OF_PICK_POCKET,
+				GLYPH_OF_POSSESSED_STRENGTH,
+				--GLYPH_OF_RAISE_DEAD_AND_RAISE_ALLY_AND_DEATH_GATE,	(Missing?)
+				GLYPH_OF_RENEWED_LIFE_AND_FAR_SIGHT,
+				GLYPH_OF_REVIVE_PET,
+				GLYPH_OF_SAFE_FALL,
+				GLYPH_OF_SCARE_BEAST_AND_STAMPEDE,
+				GLYPH_OF_SENSE_UNDEAD_AND_TRUTH_AND_SEAL_OF_BLOOD,
+				--GLYPH_OF_SHACKLE_UNDEAD,	(Missing?)
+				--GLYPH_OF_SHADOW_PROTECTION_AND_REFLECTIVE_SHIELD,	(Missing?)
+				--GLYPH_OF_SHADOWFIEND_AND_DARK_ARCHANGEL,	(Missing?)
+				GLYPH_OF_SLOW_FALL_AND_ARCANE_LANGUAGE,
+				--GLYPH_OF_SOULS_AND_RITUAL_OF_SOULS_AND_SOULWELL,	(Missing?)
+				GLYPH_OF_SUBJUGATE_DEMON_AND_ENSLAVE_DEMON,
+				GLYPH_OF_THE_PACK_AND_ASPECT_OF_THE_PACK,
+				GLYPH_OF_THE_PENGUIN,
+				GLYPH_OF_THE_WILD_AND_CHARM_WOODLAND_CREATURE,
+				-- #if BEFORE MOP
+				GLYPH_OF_THE_WISE_AND_FIRE_FROM_THE_HEAVENS,	-- Not sure why this is marked like this?
+				-- #endif
+				GLYPH_OF_THORNS,
+				GLYPH_OF_THUNDER_CLAP_AND_UNENDING_RAGE,
+				--GLYPH_OF_THUNDERSTORM,	(Missing?)
+				--GLYPH_OF_TYPHOON_AND_STARS,	(Missing?)
+				GLYPH_OF_UNBURDENED_REBIRTH_AND_BLOOMING,
+				GLYPH_OF_UNENDING_BREATH,
+				GLYPH_OF_VANISH_AND_POISONS,
+				GLYPH_OF_WATER_BREATHING_AND_HEALING_STORM,
+				-- #if BEFORE MOP
+				GLYPH_OF_WATER_SHIELD_AND_THE_ARCTIC_WOLF_AND_THE_SPECTRAL_WOLF,	-- Not sure why this is marked like this?
+				-- #endif
+				GLYPH_OF_WATER_WALKING_AND_TOTEMIC_ENCIRCLEMENT,
+				
+				-- Extras, that were missing from Wrath Classic, but listed here.
+				-- #if BEFORE MOP
+				-- I suspect this got added with Cataclysm since it becomes a Minor Glyph.
+				-- Not sure why the before MOP is listed here though as a specification.
+				GLYPH_OF_RIGHTEOUS_DEFENSE_AND_RIGHTEOUSNESS_AND_THE_LUMINOUS_CHARGER,
+				-- #endif
+				
+				
+				-- These were extras? Not included in Wrath Classic...
+				GLYPH_OF_WATER_MASTERY_AND_WATER_SHIELD,	-- I think someone got confused, these are Major Glyphs.
+				GLYPH_OF_SPIRITUAL_ATTUNEMENT_AND_DIVINE_PROTECTION,	-- Both of these are Major Glyphs, this isn't right...
+				GLYPH_OF_HEALING_STREAM_TOTEM,	-- This is also a Major Glyph. Incorrect.
+				
+				-- #endif
+			}),
+		}),
+		spell(61177, {	-- Northrend Inscription Research
+			["timeline"] = { "deleted 6.0.2" },
+			["groups"] = insertionSort({
+				-- #if ANYCLASSIC
+				-- This list was pulled from WoWHead for Wrath Classic. (83 listed, as of 4/15/2023)
+				GLYPH_OF_ADRENALINE_RUSH_AND_SHADOW_WALK,
+				GLYPH_OF_ANTIMAGIC_SHELL,
+				GLYPH_OF_ASPECT_OF_THE_VIPER_AND_CONCUSSIVE_SHOT,
+				GLYPH_OF_AVENGERS_SHIELD_AND_FOCUSED_SHIELD,
+				GLYPH_OF_AVENGING_WRATH_AND_ASCETIC_CRUSADER,
+				GLYPH_OF_BESTIAL_WRATH_AND_ENDLESS_WRATH,
+				GLYPH_OF_BLADE_FLURRY,
+				GLYPH_OF_BLOCKING_AND_SHIELD_SLAM,
+				GLYPH_OF_BLOODTHIRST_AND_BLOODY_HEALING,
+				GLYPH_OF_CHAIN_HEAL,
+				GLYPH_OF_CHAIN_LIGHTNING,
+				GLYPH_OF_CHAINS_OF_ICE,
+				GLYPH_OF_CIRCLE_OF_HEALING,
+				GLYPH_OF_CONFLAGRATE,
+				GLYPH_OF_CRIPPLING_POISON_AND_SHARP_KNIVES,
+				GLYPH_OF_CURSE_OF_AGONY_AND_VERDANT_SPHERES,
+				GLYPH_OF_DARK_COMMAND,
+				GLYPH_OF_DEADLY_THROW_AND_RECUPERATE,
+				GLYPH_OF_DEATH_AND_DECAY,
+				GLYPH_OF_DEATH_COIL_AND_NIGHTMARES,
+				GLYPH_OF_DEVASTATE_AND_HEAVY_REPERCUSSIONS,
+				GLYPH_OF_ELEMENTAL_MASTERY_AND_CHAINING,
+				GLYPH_OF_FELGUARD,
+				GLYPH_OF_FELHUNTER_AND_DEMON_TRAINING,
+				GLYPH_OF_FIRE_BLAST,
+				GLYPH_OF_FIRE_ELEMENTAL_TOTEM,
+				GLYPH_OF_FIREBALL_AND_COMBUSTION,
+				GLYPH_OF_FROSTBOLT,
+				GLYPH_OF_FROSTFIRE_BOLT,
+				GLYPH_OF_GHOSTLY_STRIKE_AND_DETECTION,
+				GLYPH_OF_GROWL_AND_SOLAR_BEAM_AND_OMENS,
+				GLYPH_OF_HAMMER_OF_WRATH_AND_TEMPLARS_VERDICT,
+				GLYPH_OF_HEALING_WAVE,
+				GLYPH_OF_HEART_STRIKE_AND_UNHOLY_FRENZY,
+				GLYPH_OF_HEMORRHAGE,
+				GLYPH_OF_HOLY_WRATH_AND_DENOUNCE,
+				GLYPH_OF_HOWL_OF_TERROR_AND_SUBTLETY,
+				GLYPH_OF_HURRICANE,
+				GLYPH_OF_ICEBOUND_FORTITUDE,
+				GLYPH_OF_IMMOLATE_AND_DARK_SOUL_AND_CURSE_OF_THE_ELEMENTS,
+				GLYPH_OF_INNERVATE,
+				GLYPH_OF_INTERVENE_AND_BLITZ,
+				GLYPH_OF_INVISIBILITY_AND_RAPID_DISPLACEMENT,
+				GLYPH_OF_LAST_STAND,
+				GLYPH_OF_LAVA_AND_LAVA_BURST_AND_SPIRIT_WALK,
+				GLYPH_OF_LIFEBLOOM_AND_EFFLORESCENCE,
+				GLYPH_OF_LIGHTWELL,
+				GLYPH_OF_MANA_TIDE_TOTEM_AND_GROUNDING_TOTEM,
+				GLYPH_OF_MANGLE_AND_THE_STAG,
+				GLYPH_OF_MASS_DISPEL,
+				GLYPH_OF_MIND_CONTROL_AND_PSYCHIC_HORROR.
+				GLYPH_OF_MOLTEN_ARMOR_AND_CRITTERMORPH,
+				GLYPH_OF_MORTAL_STRIKE,
+				GLYPH_OF_OBLITERATE_AND_ENDURING_INFECTION,
+				GLYPH_OF_PRAYER_OF_HEALING_AND_SPIRIT_OF_REDEMPTION,
+				GLYPH_OF_PREPARATION_AND_SMOKE_BOMB,
+				GLYPH_OF_REGROWTH,
+				GLYPH_OF_REMOVE_CURSE_AND_CONE_OF_COLD_AND_ICY_VEINS,
+				GLYPH_OF_RESONATING_POWER,
+				GLYPH_OF_RUNE_STRIKE_AND_ARMY_OF_THE_DEAD,
+				GLYPH_OF_RUPTURE_AND_CHEAP_SHOT,
+				GLYPH_OF_SEAL_OF_LIGHT_AND_SEAL_OF_INSIGHT_AND_BLESSED_LIFE,
+				GLYPH_OF_SEAL_OF_RIGHTEOUSNESS_AND_DAZING_SHIELD,
+				GLYPH_OF_SEAL_OF_VENGEANCE_AND_SEAL_OF_TRUTH_AND_IMMEDIATE_TRUTH,
+				GLYPH_OF_SEAL_OF_WISDOM_AND_LIGHT_OF_DAWN,
+				GLYPH_OF_SHADOW,
+				GLYPH_OF_SHADOW_WORD_DEATH_AND_MIND_BLAST,
+				GLYPH_OF_SHOCKING_AND_CAPACITOR_TOTEM,
+				GLYPH_OF_SIPHON_LIFE,
+				GLYPH_OF_SNAKE_TRAP,
+				GLYPH_OF_SPIRIT_OF_REDEMPTION_AND_PRAYER_OF_MENDING,
+				GLYPH_OF_STARFALL_AND_SKULL_BASH,
+				GLYPH_OF_STEADY_SHOT_AND_SCATTERING_AND_AIMED_SHOT,
+				GLYPH_OF_SWIFTMEND_AND_STAMPEDE,
+				GLYPH_OF_TAUNT,
+				GLYPH_OF_THE_BEAST_AND_TRAP_LAUNCHER_AND_MARKED_FOR_DEATH_AND_LIBERATION,
+				GLYPH_OF_TRUESHOT_AURA_AND_KILL_COMMAND_AND_MEND_PET,
+				GLYPH_OF_UNSTABLE_AFFLICTION,
+				GLYPH_OF_VICTORY_RUSH,
+				GLYPH_OF_VIGOR_AND_KICK,
+				GLYPH_OF_VOLLEY,
+				GLYPH_OF_WATER_ELEMENTAL_AND_DRAGONS_BREATH_AND_SPELLSTEAL,
+				GLYPH_OF_WYVERN_STING_AND_SOLACE,
+				-- #else
+				-- This research spell wasn't even listed in ATT before my adjustment.
+				-- Looking at the Minor Inscription Research, it might explain why some of these are in there instead.
+				-- Whoever added those at the bottom must have gotten confused. - Crieve
+				-- #endif
+			}),
+		}),
 		spell(165466, {	-- Research: Blackfallow Ink
 			["timeline"] = { "added 6.0.2" },
 			["groups"] = insertionSort({
-				GLYPH_OF_CHALLENGING_ROAR_AND_THE_URSOL_CHAMELEON,
-				GLYPH_OF_DRAIN_SOUL_AND_SOUL_CONSUMPTION,
-				GLYPH_OF_LAVA_LASH,
-				GLYPH_OF_THE_WILD_AND_CHARM_WOODLAND_CREATURE,
 				GLYPH_OF_BURNING_ANGER,
+				GLYPH_OF_CHALLENGING_ROAR_AND_THE_URSOL_CHAMELEON,
+				-- #if BEFORE 8.0.1
+				GLYPH_OF_COMMAND_AND_THUNDER_STRIKE,
+				-- #endif
 				GLYPH_OF_CRACKLING_TIGER_LIGHTNING,
-				GLYPH_OF_MOLTEN_ARMOR_AND_CRITTERMORPH,
 				GYLPH_OF_DISGUISE,
+				GLYPH_OF_DRAIN_SOUL_AND_SOUL_CONSUMPTION,	-- Deleted 7.0.3
+				GLYPH_OF_LAVA_LASH,	-- Deleted 7.0.3
+				GLYPH_OF_MOLTEN_ARMOR_AND_CRITTERMORPH,	-- Despite not being listed on WoWPedia, it's listed on WoWHead.
 				GLYPH_OF_SHADOWY_FRIENDS,
 				GLYPH_OF_THE_HEAVENS,
+				GLYPH_OF_THE_WILD_AND_CHARM_WOODLAND_CREATURE,	-- Deleted 7.0.3
 			}),
 		}),
 		spell(165461, {	-- Research: Celestial Ink
 			["timeline"] = { "added 6.0.2" },
+			-- Crieve NOTE: https://wowpedia.fandom.com/wiki/Research:_Celestial_Ink
+			-- That link shows a whole lot more than just the ones we originally had listed...
+			-- NOTE: This has been updated to reflect that list, double check this later.
 			["groups"] = insertionSort({
-				GLYPH_OF_AIMED_SHOT_AND_ASPECTS,
-				GLYPH_OF_BONE_SHIELD_AND_ICEBOUND_FORTITUDE,
-				GLYPH_OF_INFERNO_BLAST,
-				GLYPH_OF_SLOW_FALL_AND_ARCANE_LANGUAGE,
+				GLYPH_OF_AIMED_SHOT_AND_ASPECTS,	-- Deleted 7.0.3
+				GLYPH_OF_BACKSTAB_AND_DECOY,	-- Deleted 7.0.3
+				GLYPH_OF_BLIND,	-- Deleted 7.0.3
+				GLYPH_OF_BLOOD_STRIKE_AND_BLOOD_BOIL_AND_OUTBREAK,	-- Deleted 7.0.3
+				GLYPH_OF_BLOODTHIRST_AND_BLOODY_HEALING,	-- Deleted 7.0.3
+				GLYPH_OF_BONE_SHIELD_AND_ICEBOUND_FORTITUDE,	-- Deleted 7.0.3
+				GLYPH_OF_THE_EXORCIST,	-- Deleted 7.0.3
+				GLYPH_OF_EXPLOSIVE_SHOT_AND_TRANQUILIZING_SHOT,	-- Deleted 7.0.3
+				GLYPH_OF_FLYING_SERPENT_KICK,	-- Deleted 7.0.3
+				GLYPH_OF_HAMSTRING_AND_PIERCING_HOWL_AND_RUDE_INTERRUPTION,	-- Deleted 7.0.3
+				GLYPH_OF_HEMORRHAGE,	-- Deleted 7.0.3
+				GLYPH_OF_HYMN_OF_HOPE_AND_DIVINE_ACCURACY_AND_MIND_SPIKE,	-- Deleted 7.0.3
+				GLYPH_OF_ICY_TOUCH,	-- Deleted 7.0.3
+				GLYPH_OF_INFERNO_BLAST,	-- Deleted 7.0.3
+				GLYPH_OF_KILROGG,	-- Deleted 7.0.3 [NOTE: This one might be incorrect, double check this later.]
+				GLYPH_OF_LIGHTNING_SHIELD_AND_THE_LAKESTRIDER,	-- Deleted 7.0.3
+				GLYPH_OF_MANGLE_AND_THE_STAG,	-- Deleted 7.0.3
+				GLYPH_OF_OBLITERATE_AND_ENDURING_INFECTION,	-- Deleted 7.0.3
+				GLYPH_OF_PAIN_SUPPRESSION_AND_DESPERATION_AND_BINDING_HEAL,	-- Deleted 7.0.3
+				GLYPH_OF_SAVAGE_ROAR_AND_STAMPEDING_ROAR,	-- Deleted 7.0.3
+				GLYPH_OF_SEAL_OF_LIGHT_AND_SEAL_OF_INSIGHT_AND_BLESSED_LIFE,	-- Deleted 7.0.3
+				GLYPH_OF_SHADOW,
+				GLYPH_OF_SHOCKING_AND_CAPACITOR_TOTEM,	-- Deleted 7.0.3
+				GLYPH_OF_SLOW_FALL_AND_ARCANE_LANGUAGE,	-- Deleted 7.0.3
+				GLYPH_OF_THE_WEAPONMASTER,
 				GLYPH_OF_THE_WISE_AND_FIRE_FROM_THE_HEAVENS,
+				GLYPH_OF_THUNDERSTORM,	-- Deleted 7.0.3
+				GLYPH_OF_TOUCH_OF_DEATH,	-- Deleted 7.0.3
+				GLYPH_OF_TRUESHOT_AURA_AND_KILL_COMMAND_AND_MEND_PET,	-- Deleted 7.0.3
+				GLYPH_OF_UNSTABLE_AFFLICTION,	-- Deleted 7.0.3
+				GLYPH_OF_WHIRLWIND_AND_RAGING_BLOW_AND_RAGING_WIND,	-- Deleted 7.0.3
+				GLYPH_OF_WINDFURY_WEAPON_AND_CLEANSING_WATERS,	-- Deleted 7.0.3
 			}),
 		}),
 		spell(165464, {	-- Research: Ethereal Ink
 			["timeline"] = { "added 6.0.2" },
+			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_AQUATIC_FORM,
 				GLYPH_OF_HEALTH_FUNNEL,
@@ -3441,6 +3711,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		spell(165467, {	-- Research: Ink of Dreams
 			["timeline"] = { "added 6.0.2" },
+			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_FROST_ARMOR_AND_CONJURING_AND_CONJURE_FAMILIAR,
 				GLYPH_OF_GARROTE,
@@ -3452,6 +3723,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		spell(165465, {	-- Research: Ink of the Sea
 			["timeline"] = { "added 6.0.2" },
+			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_FIGHTING_POSE,
 				GLYPH_OF_HONOR,
@@ -3460,6 +3732,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		spell(165460, {	-- Research: Jadefire Ink
 			["timeline"] = { "added 6.0.2" },
+			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_ASTRAL_RECALL,
 				GLYPH_OF_DETERRENCE,
@@ -3472,6 +3745,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		spell(165456, {	-- Research: Lion's Ink
 			["timeline"] = { "added 6.0.2" },
+			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_BLESSING_OF_KINGS_AND_COMTEMPLATION,
 				GLYPH_OF_BLESSING_OF_MIGHT_AND_THE_MOUNTED_KING,
@@ -3489,6 +3763,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		spell(165304, {	-- Research: Midnight Ink
 			["timeline"] = { "added 6.0.2" },
+			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_BATTLE_AND_MYSTIC_SHOUT,
 				GLYPH_OF_BLESSING_OF_WISDOM_AND_INSIGHT_AND_WINGED_VENGEANCE,
@@ -3504,6 +3779,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		spell(165564, {	-- Research: Moonglow Ink
 			["timeline"] = { "added 6.0.2" },
+			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_VIGILANCE_AND_FURIOUS_SUNDERING_AND_VICTORIOUS_THROW,
 				GLYPH_OF_WATER_SHIELD_AND_THE_ARCTIC_WOLF_AND_THE_SPECTRAL_WOLF,
@@ -3511,6 +3787,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		}),
 		spell(165463, {	-- Research: Shimmering Ink
 			["timeline"] = { "added 6.0.2" },
+			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
 				GLYPH_OF_FREEZING_TRAP,
 				GLYPH_OF_RIGHTEOUS_DEFENSE_AND_RIGHTEOUSNESS_AND_THE_LUMINOUS_CHARGER,
