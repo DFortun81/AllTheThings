@@ -9,7 +9,7 @@ Earn the Big Battle Bear 🐻 through Prime Gaming until April 27, 2023. More de
 
 ### Logic changes
 
-- You no longer need to open professions to log reagents for recipes.
+- You no longer need to open professions to cache reagents for recipes.
 - Weekly Profession Knowledge quests and related world drop items will now show only if recipe tracking is on.
 - Collectible Sources which don't include themselves as a Shared Appearance of themselves now automatically show a message to force-refresh ATT to check if they have been collected on your account.
 
