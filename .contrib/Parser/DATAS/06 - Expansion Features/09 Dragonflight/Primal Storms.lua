@@ -210,14 +210,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					193680,	-- Zurgaz Corebreaker
 				},
 				["g"] = {
+					i(194641),	-- Design: Elemental Lariat (RECIPE!)
 					i(200199),	-- Elements' Burden
 					i(200294),	-- Primal Chain Hauberk
 					i(200198),	-- Primalist Prison (TOY!)
 					-- Enchanting knowledge drops (one-time)
-					i(201356),	-- Glimmer of Fire
-					i(201357),	-- Glimmer of Frost
-					i(201358),	-- Glimmer of Air
-					i(201359),	-- Glimmer of Earth
 					i(199839),	-- Dimmed Primeval Water
 					i(199836),	-- Dimmed Primeval Fire
 					i(199837),	-- Dimmed Primeval Earth
@@ -257,6 +254,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						bo(69951, true),
 						i(200231),	-- Flaming Stonescale Bulwark
+						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
 					},
 				}),
 				n(193645, {	-- Crystalus
@@ -264,6 +262,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 73989,
 					["g"] = {
 						bo(69952, true),
+						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 						i(200301),	-- Reclaimed Tuskarr Harpoon
 					},
 				}),
@@ -272,6 +271,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 73991,
 					["g"] = {
 						bo(69955, true),
+						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
 						i(200307),	-- Viciously Hooked Cleaver
 					},
 				}),
@@ -281,6 +281,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						bo(69961, true),
 						i(200311),	-- Bonespike Mallet
+						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 					},
 				}),
 				n(193653, {	-- Gaelzion <Progeny of Air>
@@ -308,6 +309,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 60.7, 56.3, THALDRASZUS },
 					["questID"] = 73998,
 					["g"] = {
+						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
+						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
 						bo(69960, true),
 					},
 				}),
@@ -316,6 +319,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 73999,
 					["g"] = {
 						bo(69956, true),
+						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
 						i(200145),	-- Hilted Monolith
 					},
 				}),
@@ -329,6 +333,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74009,
 					["g"] = {
 						bo(69971, true),
+						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 						i(200250),	-- Frost Tipped Glaive
 					},
 				}),
@@ -343,6 +348,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74005,
 					["g"] = {
 						bo(69954, true),
+						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
 						i(200150),	-- Infernum's Furnace
 					},
 				}),
@@ -351,6 +357,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74006,
 					["g"] = {
 						bo(69970, true),
+						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
 						i(200155),	-- Haphazardly Welded Protector
 					},
 				}),
@@ -360,6 +367,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						bo(69953, true),
 						i(199337),	-- Bag of Furious Winds (TOY!)
+						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
 						i(200170),	-- Stormbringer Bow
 					},
 				}),
@@ -369,6 +377,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						bo(69975, true),
 						i(200181),	-- Blade of Blazing Torment
+						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
 					},
 				}),
 				n(193684, {	-- Pipspark Thundersnap
@@ -377,6 +386,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						bo(69974, true),
 						i(199337),	-- Bag of Furious Winds (TOY!)
+						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
 						i(200741),	-- Pipspark's Prestigious Pendant of Protection
 					},
 				}),
@@ -385,6 +395,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74027,
 					["g"] = {
 						bo(69973, true),
+						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 					},
 				}),
 				n(201559,	-- Shiobhan Waterborn
@@ -402,6 +413,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						bo(69969, true),
 						i(199337),	-- Bag of Furious Winds (TOY!)
+						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
 						i(200136),	-- Monsoonic Armguards
 					},
 				}),
@@ -410,6 +422,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74039,
 					["g"] = {
 						bo(69972, true),
+						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
 					},
 				}),
 			})),
@@ -449,16 +462,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 			}),
 			n(REWARDS, {
-				i(194641),	-- Design: Elemental Lariat (RECIPE!)
 				i(200183),	-- Echo of the Cave (PET!)
 				i(200260),	-- Echo of the Depths (PET!)
 				i(200263),	-- Echo of the Heights (PET!)
 				i(200255),	-- Echo of the Inferno (PET!)
 				i(200675),	-- Elemental Overflow Cluster
-				i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
-				i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
-				i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
-				i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
+				
+				-- Enchanting knowledge drops (one-time)
+				i(201356),	-- Glimmer of Fire
+				i(201357),	-- Glimmer of Frost
+				i(201358),	-- Glimmer of Air
+				i(201359),	-- Glimmer of Earth
+				
 				i(199749),	-- Primal Air Core
 				i(199691),	-- Primal Earth Core
 				i(199750),	-- Primal Fire Core
