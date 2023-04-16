@@ -12,22 +12,22 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					["g"] = sharedData({ ["icon"] = "Interface\\Icons\\Sanctum_features_transportationnetwork_bastion" }, {
 						n(TIER_ONE, {
 							n(FLIGHT_PATHS, {
-								fp(2626, {	-- Hero's Rest, Bastion
+								fp(2626, {["name"]="Hero's Rest, Bastion",
 									["description"] = "Part of the Kyrian Rank 1 Transport Network.",
 									["creatureID"] = 171037,	-- Eternal Gateway
 									["coord"] = { 51.8, 46.8, BASTION },
 								}),
-								fp(2630, {	-- Aspirant's Rest, Bastion
+								fp(2630, {["name"]="Aspirant's Rest, Bastion",
 									["description"] = "Part of the Kyrian Rank 1 Transport Network.",
 									["creatureID"] = 171091,	-- Eternal Gateway
 									["coord"] = { 48.3, 72.8, BASTION },
 								}),
-								fp(2625, {	-- Elysian Hold, Bastion
+								fp(2625, {["name"]="Elysian Hold, Bastion",
 									["description"] = "Part of the Kyrian Rank 1 Transport Network.",
 									["creatureID"] = 171036,	-- Eternal Gateway
 									["coord"] = { 48.7, 61.8, ARCHONS_RISE },
 								}),
-								fp(2631, {	-- Xandaria's Vigil, Bastion
+								fp(2631, {["name"]="Xandaria's Vigil, Bastion",
 									["description"] = "Part of the Kyrian Rank 1 Transport Network.",
 									["creatureID"] = 171097,	-- Eternal Gateway
 									["coord"] = { 40.7, 55.2, BASTION },
@@ -47,17 +47,17 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 						}),
 						n(TIER_TWO, {
 							n(FLIGHT_PATHS, {
-								fp(2634, {	-- Seat of Eternal Hymns, Bastion
+								fp(2634, {["name"]="Seat of Eternal Hymns, Bastion",
 									["description"] = "Part of the Kyrian Rank 2 Transport Network.",
 									-- ["creatureID"] = ,	-- Eternal Gateway
 									-- ["coord"] = { , BASTION },
 								}),
-								fp(2633, {	-- Temple of Purity, Bastion
+								fp(2633, {["name"]="Temple of Purity, Bastion",
 									["description"] = "Part of the Kyrian Rank 2 Transport Network.",
 									-- ["creatureID"] = ,	-- Eternal Gateway
 									-- ["coord"] = { , BASTION },
 								}),
-								fp(2632, {	-- Sagehaven, Bastion
+								fp(2632, {["name"]="Sagehaven, Bastion",
 									["description"] = "Part of the Kyrian Rank 2 Transport Network.",
 									-- ["creatureID"] = ,	-- Eternal Gateway
 									-- ["coord"] = { , BASTION },
@@ -66,12 +66,12 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 						}),
 						n(TIER_THREE, {
 							n(FLIGHT_PATHS, {
-								fp(2636, {	-- Terrace of The Collectors, Bastion
+								fp(2636, {["name"]="Terrace of The Collectors, Bastion",
 									["description"] = "Part of the Kyrian Rank 3 Transport Network.",
 									-- ["creatureID"] = ,	-- Eternal Gateway
 									-- ["coord"] = { , BASTION },
 								}),
-								fp(2635, {	-- Temple of Humility, Bastion
+								fp(2635, {["name"]="Temple of Humility, Bastion",
 									["description"] = "Part of the Kyrian Rank 3 Transport Network.",
 									-- ["creatureID"] = ,	-- Eternal Gateway
 									-- ["coord"] = { , BASTION },

@@ -5,7 +5,7 @@
 root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(FLIGHT_PATHS, {
-			fp(2548, {	-- Sinfall, Revendreth
+			fp(2548, {["name"]="Sinfall, Revendreth",
 				["coord"] = { 67.1, 21.9, SINFALL_REACHES },
 			}),
 		}),

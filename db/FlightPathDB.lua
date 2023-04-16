@@ -6,10 +6,7 @@ select(2, ...).FlightPathDB = {
 	-- Uncomment the global comment and /rl to see which Flight Paths are not properly Sourced (shows up as *NEW*)
 	--[[]]
 	nil, -- [1]
-	{
-		["name"] = "Stormwind, Elwynn",
-		["faction"] = 2,
-	}, -- [2]
+	nil, -- [2]
 	nil, -- [3]
 	{
 		["name"] = "Sentinel Hill, Westfall",
@@ -199,23 +196,8 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Splintertree Post, Ashenvale",
 		["faction"] = 1,
 	}, -- [61]
-	-- Two druid-only 'flight paths' which come back as flight paths but do not have flight masters nor show up on Flight Master maps so cannot be 'collected'
-	{
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Nighthaven, Moonglade",
-		["faction"] = 2,
-		["coord"] = { 44.0, 45.4, 80 },
-		["c"] = { 11, }, -- Druid
-		["description"] = "This is registered as a flight path in the game data, but does not show on any flight maps, and cannot be collected.",
-	},	-- [62]
-	{
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Nighthaven, Moonglade",
-		["faction"] = 1,
-		["coord"] = { 44.2, 45.6, 80 },
-		["c"] = { 11, }, -- Druid
-		["description"] = "This is registered as a flight path in the game data, but does not show on any flight maps, and cannot be collected.",
-	},	-- [63]
+	nil,	-- [62]
+	nil,	-- [63]
 	nil, -- [64]
 	{
 		["name"] = "Talonbranch Glade, Felwood",
@@ -2778,61 +2760,4 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Cobalt Assembly, Azure Span",
 	},
 	--]]
-
-	-- Never Implemented Flight Paths (in-game data says they exist but also that's a lie)
-	[1567] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Temple of Karabor, Shadowmoon Valley",
-		["faction"] = 2,
-	},
-	[1849] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Dalaran",
-		["c"] = { 3, }, -- Hunter
-	},
-	[2059] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Southwind Village, Silithus",
-		["faction"] = 1,
-	},
-	[2066] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Atal'Gral, Zuldazar",
-		["faction"] = 0,
-	},
-	[2071] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Dreadpearl, Zuldazar",
-		["faction"] = 0,
-	},
-	[2162] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Devoted Sanctuary, Vol'dun",
-		["faction"] = 0,
-	},
-	[2401] = {
-		["name"] = "Alliance Outpost, Exile's Reach Outpost",
-		["faction"] = 2,
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		-- TODO: likely requires customCollect/sourceQuests/altQuests?
-	},
-	[2402] = {
-		["name"] = "Ogre Citadel, Exile's Reach Island",
-		["faction"] = 2,
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		-- TODO: likely requires customCollect/sourceQuests/altQuests?
-	},
-	[2530] = {
-		["name"] = "Dreamsong Fenn, Ardenweald",
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-	},
-	[2555] = {
-		["name"] = "The Maw",
-		["faction"] = 0,
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-	},
-	[2565] = {
-		["name"] = "Starlit Overlook, Ardenweald",
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-	},
 };
