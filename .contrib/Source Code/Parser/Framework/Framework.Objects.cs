@@ -548,6 +548,12 @@ namespace ATT
                         // does this data contain the key?
                         if (data.TryGetValue(key, out decimal keyValue))
                         {
+                            // for 'factionID' merge into, make sure it does not also have 'itemID' (commendations etc.)
+                            if (key == "factionID" && data.ContainsKey("itemID"))
+                            {
+                                continue;
+                            }
+
                             var typeObjects = mergeKvp.Value;
                             //LogDebug($"Post Process MergeInto Matched: {key}:{keyValue}");
                             // get the container for objects of this key
