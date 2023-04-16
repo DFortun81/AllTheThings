@@ -3687,7 +3687,7 @@ for key, value in pairs({
 	[381661] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381662] = "档案员的请求",	-- Archivists' Request
 	[381663] = "法力风暴初学指南",	-- Manastorming For Beginners
-	[381664] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
+	[381664] = "档案员的请求",	-- Archivists' Request
 	[381667] = "档案员的请求",	-- Archivists' Request
 	[381668] = "档案员的请求",	-- Archivists' Request
 	[381669] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
@@ -3708,7 +3708,7 @@ for key, value in pairs({
 	--TODO: [383732] = "Tuskarr Tacklebox",	-- Tuskarr Tacklebox
 	[383733] = "翻动过的泥土",	-- Disturbed Dirt
 	[383734] = "翻动过的泥土",	-- Disturbed Dirt
-	[383735] = "翻动过的泥土",	-- Disturbed Dirt	--TODO: this was manually translated
+	[383735] = "翻动过的泥土",	-- Disturbed Dirt
 	[384318] = "不起眼的书签",	-- Inconspicuous Bookmark
 	[384370] = "故意拖欠票据",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish

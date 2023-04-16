@@ -3809,7 +3809,7 @@ for key,value in pairs({
 	[387496] = "Kohlenpfanne des Wahnsinns",	-- Brazier of Madness
 	[387500] = "Frostiger Schneemann",	-- Chilly Snowman
 	[387501] = "Neltharions Geschenkmarke",	-- Neltharion Gift Token
-	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
+	[387503] = "Versiegelter Brief an Neltharion",	-- Sealed Letter To Neltharion
 	--TODO: [387507] = "Azerite Powder Barrel",	-- Azerite Powder Barrel
 	--TODO: [387508] = "Igniter Torch",	-- Igniter Torch
 	--TODO: [387520] = "TICKET: Glimmerogg Games",	-- TICKET: Glimmerogg Games

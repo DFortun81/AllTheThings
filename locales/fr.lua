@@ -3807,7 +3807,7 @@ for key,value in pairs({
 	[387496] = "Brasero de la Folie",	-- Brazier of Madness
 	[387500] = "Bonhomme de neige glacial",	-- Chilly Snowman
 	[387501] = "Jeton offert par Neltharion",	-- Neltharion Gift Token
-	--TODO: [387503] = "Sealed Letter to Neltharion",	-- Sealed Letter to Neltharion
+	[387503] = "Lettre scellée à l’attention de Neltharion",	-- Sealed Letter To Neltharion
 	--TODO: [387507] = "Azerite Powder Barrel",	-- Azerite Powder Barrel
 	--TODO: [387508] = "Igniter Torch",	-- Igniter Torch
 	--TODO: [387520] = "TICKET: Glimmerogg Games",	-- TICKET: Glimmerogg Games
@@ -3847,7 +3847,7 @@ for key,value in pairs({
 	[390008] = "Glace",	-- Ice
 	[390009] = "Boîte de pierres",	-- Box of Rocks
 	[390074] = "Cache primordiale des profondeurs de l’océan",	-- Primordial Deep Ocean Cache
-	--TODO: [390136] = "Spore-bound Essence",	-- Spore-bound Essence
+	[390136] = "Essence sporeliée",	-- Spore-bound Essence
 	[390257] = "Ours empaillé",	-- Stuffed Bear
 	[390258] = "Gelée inerte",	-- Inert Goo
 	[390559] = "Boîte de pierres",	-- Box of Rocks
