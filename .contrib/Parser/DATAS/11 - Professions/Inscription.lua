@@ -1952,8 +1952,22 @@ GLYPH_OF_SHACKLE_UNDEAD = r(58320, {	-- Glyph of Shackle Undead
 	["timeline"] = { "added 3.1.0" },
 });
 GLYPH_OF_SHADOW = r(107907, {	-- Glyph of Shadow
-	["name"] = "Glyph of Shadow",
+	["name"] = "Glyph of Shadow (2.0)",
 	["timeline"] = { "added 4.3.0" },
+});
+GLYPH_OF_SHADOW_AND_POWER_WORD_BARRIER_AND_INNER_FOCUS_AND_WEAKENED_SOUL = r(57193, {	-- Glyph of Mind Soothe / Glyph of Shadow [3.3.0+] / Glyph of Power Word: Barrier [CATA+] / Glyph of Inner Focus [5.0.4+] / Glyph of Weakened Soul [5.2.0+]
+	-- #if AFTER 5.2.0
+	["name"] = "Glyph of Weakened Soul",
+	-- #elseif AFTER 5.0.4
+	["name"] = "Glyph of Inner Focus",
+	-- #elseif AFTER CATA
+	["name"] = "Glyph of Power Word: Barrier",
+	-- #elseif AFTER 3.3.0
+	["name"] = "Glyph of Shadow",
+	-- #else
+	["name"] = "Glyph of Mind Soothe",
+	-- #endif
+	["timeline"] = { "added 3.0.2", "deleted 7.0.3" },
 });
 GLYPH_OF_SHADOW_BOLT = r(57271, {	-- Glyph of Shadow Bolt
 	["name"] = "Glyph of Shadow Bolt",
@@ -3066,6 +3080,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_SCOURGE_IMPRISONMENT,
 		GLYPH_OF_SHACKLE_UNDEAD,
 		GLYPH_OF_SHADOW,
+		GLYPH_OF_SHADOW_AND_POWER_WORD_BARRIER_AND_INNER_FOCUS_AND_WEAKENED_SOUL,
 		GLYPH_OF_SHADOW_PROTECTION_AND_REFLECTIVE_SHIELD,
 		GLYPH_OF_SHADOW_WORD_DEATH,
 		GLYPH_OF_SHADOW_WORD_DEATH_AND_MIND_BLAST,
@@ -3423,6 +3438,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_SCARE_BEAST_AND_STAMPEDE,
 				GLYPH_OF_SENSE_UNDEAD_AND_TRUTH_AND_SEAL_OF_BLOOD,
 				GLYPH_OF_SHACKLE_UNDEAD,
+				GLYPH_OF_SHADOW,	-- Added in 4.3.0
 				GLYPH_OF_SHADOW_PROTECTION_AND_REFLECTIVE_SHIELD,
 				GLYPH_OF_SHADOWFIEND_AND_DARK_ARCHANGEL,
 				GLYPH_OF_SLOW_FALL_AND_ARCANE_LANGUAGE,
@@ -3614,7 +3630,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_SEAL_OF_RIGHTEOUSNESS_AND_DAZING_SHIELD,
 				GLYPH_OF_SEAL_OF_VENGEANCE_AND_SEAL_OF_TRUTH_AND_IMMEDIATE_TRUTH,
 				GLYPH_OF_SEAL_OF_WISDOM_AND_LIGHT_OF_DAWN,
-				GLYPH_OF_SHADOW,
+				GLYPH_OF_SHADOW_AND_POWER_WORD_BARRIER_AND_INNER_FOCUS_AND_WEAKENED_SOUL,
 				GLYPH_OF_SHADOW_WORD_DEATH_AND_MIND_BLAST,
 				GLYPH_OF_SHOCKING_AND_CAPACITOR_TOTEM,
 				GLYPH_OF_SIPHON_LIFE,
