@@ -239,7 +239,7 @@ namespace ATT
         /// <summary>
         /// Represents the current parent group when processing the 'g' subgroup
         /// </summary>
-        private static KeyValuePair<string, decimal>? CurrentParentGroup { get; set; }
+        private static KeyValuePair<string, object>? CurrentParentGroup { get; set; }
 
         /// <summary>
         /// Represents the file currently being processed
@@ -555,8 +555,8 @@ namespace ATT
             if (data.TryGetValue("g", out List<object> groups))
             {
                 var previousParent = CurrentParentGroup;
-                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out decimal objKeyValue))
-                    CurrentParentGroup = new KeyValuePair<string, decimal>(objectData.ObjectType, objKeyValue);
+                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
+                    CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
                 var previousDifficultyRoot = DifficultyRoot;
                 var previousDifficulty = NestedDifficultyID;
 
@@ -1520,7 +1520,7 @@ namespace ATT
             if (data.TryGetValue("name", out string name))
             {
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out decimal objKeyValue))
+                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
                 {
                     long id = Convert.ToInt64(objKeyValue);
                     // Store the name of this object (or whatever it is) in our table.
@@ -2104,7 +2104,7 @@ namespace ATT
             if (!MergeItemData) return;
 
             var groupIDs = Objects.CompressToList(groups) ?? new List<object> { groups };
-            if (groupIDs != null && ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out decimal _))
+            if (groupIDs != null && ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object _))
             {
                 switch (objectData.ObjectType)
                 {

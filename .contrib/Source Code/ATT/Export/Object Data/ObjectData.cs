@@ -108,11 +108,11 @@ namespace ATT
             /// <param name="data">The data.</param>
             /// <param name="objectData">The object data container.</param>
             /// <returns>Whether or not the most signficant object type was found.</returns>
-            public static bool TryGetMostSignificantObjectType(IDictionary<string, object> data, out ObjectData objectData, out decimal objKeyValue)
+            public static bool TryGetMostSignificantObjectType(IDictionary<string, object> data, out ObjectData objectData, out object objKeyValue)
             {
                 foreach (var objectType in ALL_OBJECTS)
                 {
-                    if (data.TryGetValue(objectType.ObjectType, out objKeyValue) && objKeyValue.TryConvert(out objKeyValue))
+                    if (data.TryGetValue(objectType.ObjectType, out objKeyValue))
                     {
                         objectData = objectType;
                         return true;

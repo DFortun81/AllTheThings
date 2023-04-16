@@ -35,7 +35,7 @@ namespace ATT
         private static bool ExportShortcut(StringBuilder builder, IDictionary<string, object> data, List<string> fields, out ObjectData objectType)
         {
             // Write the shortcut with the highest priority
-            if (ObjectData.TryGetMostSignificantObjectType(data, out objectType, out decimal _))
+            if (ObjectData.TryGetMostSignificantObjectType(data, out objectType, out object _))
             {
                 // Write the shortcut for the object type.
                 objectType.Build(builder, data, fields);

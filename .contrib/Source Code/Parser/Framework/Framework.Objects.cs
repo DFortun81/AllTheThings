@@ -2512,7 +2512,7 @@ end
                 }
 
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out decimal id))
+                if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out object id))
                 {
                     // If there is no most significant ID field, then complain.
                     if (!data2.ContainsKey("aqd")) LogError($"No Most Significant ID!", data2);
