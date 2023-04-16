@@ -21525,6 +21525,7 @@ customWindowUpdates["list"] = function(self, force, got)
 		local g, overrides = {}, {
 			visible = true,
 			indent = 2,
+			collectibleAsCost = false,
 			back = function(o, key)
 				return o._missing and 1 or 0;
 			end,
