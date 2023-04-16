@@ -9956,19 +9956,13 @@ local function CacheInfo(t, field)
 	local specc_decimal = 1000 * (id - classID);
 	local specc = math_floor(specc_decimal + 0.00001);
 	if specc > 0 then
-		local _, text, _, icon = GetSpecializationInfoForSpecID(specc);
-		if text then
-			text = "|c" .. t.classColorCode .. text .. "|r";
-		end
-		_t.text = text;
+		local _, name, _, icon = GetSpecializationInfoForSpecID(specc);
+		_t.name = name;
 		_t.icon = icon;
 	else
-		local text = GetClassInfo(t.classID);
-		if text then
-			text = "|c" .. t.classColorCode .. text .. "|r";
-		end
-		_t.text = text;
-		_t.icon = classIcons[t.classID]
+		local name = GetClassInfo(t.classID);
+		_t.name = name;
+		_t.icon = classIcons[t.classID];
 	end
 	if field then return _t[field]; end
 end
@@ -9983,14 +9977,13 @@ local fields = {
 		elseif t.maps then
 			text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
 		end
-		return "|c" .. t.classColorCode .. text .. "|r";
+		return Colorize(text, t.classColorCode);
 	end,
 	["name"] = function(t)
-		return cache.GetCachedField(t, "text", CacheInfo);
+		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	["icon"] = function(t)
 		return cache.GetCachedField(t, "icon", CacheInfo);
-		-- return classIcons[t.classID];
 	end,
 	["c"] = function(t)
 		local c = { math_floor(t.classID) };
