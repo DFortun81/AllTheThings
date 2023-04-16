@@ -2630,12 +2630,10 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(193476),	-- Gnoll Tent (TOY!)
 			i(193478),	-- Tuskarr Bean Bag (TOY!)
 		}),
-		n(-386, {	-- Trinkets
-			i(193496),	-- Witherrot Tome
-		}),
 		n(WEAPONS, {
 			i(193449),	-- Bow of the Dragon Hunters
 			i(193383),	-- Bonewrought Crossbow
+			i(193496),	-- Witherrot Tome
 		}),
 	}),
 	prof(MINING, {
