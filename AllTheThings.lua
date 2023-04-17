@@ -21511,6 +21511,7 @@ customWindowUpdates["list"] = function(self, force, got)
 		end
 
 		-- info about the Window
+		local g = {};
 		self:SetData({
 			["text"] = "Full Data List - "..(dataType or "None"),
 			["icon"] = app.asset("Interface_Quest_header"),
@@ -21518,15 +21519,17 @@ customWindowUpdates["list"] = function(self, force, got)
 			["visible"] = true,
 			["expanded"] = true,
 			["indent"] = 0,
+			["g"] = g,
 		});
 
 		-- add a bunch of raw, delay-loaded quests in order into the window
 		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
-		local g, overrides = {}, {
+		local overrides = {
 			visible = true,
 			indent = 2,
 			collectibleAsCost = false,
 			costCollectibles = false,
+			g = false,
 			back = function(o, key)
 				return o._missing and 1 or 0;
 			end,
@@ -21536,9 +21539,9 @@ customWindowUpdates["list"] = function(self, force, got)
 					return "#"..(o[dataType] or o[key or 0] or "?")..": "..text;
 				end
 			end,
-			OnLoad = function(self)
-				-- app.PrintDebug("DGU-OnLoad:",self.hash)
-				DGU(self);
+			OnLoad = function(o)
+				app.PrintDebug("DGU-OnLoad:",o.hash)
+				DGU(o);
 			end,
 		};
 		if onlyMissing then
@@ -21570,6 +21573,7 @@ customWindowUpdates["list"] = function(self, force, got)
 			partition = {
 				["text"] = tostring(partitionStart + 1).."+",
 				["icon"] = app.asset("Interface_Quest_header"),
+				["visible"] = true,
 				["OnUpdate"] = app.AlwaysShowUpdate,
 				["g"] = partitionGroups,
 			};
@@ -21578,7 +21582,6 @@ customWindowUpdates["list"] = function(self, force, got)
 			end
 			tinsert(g, partition);
 		end
-		self.data.g = g;
 		self:BuildData();
 	end
 	if self:IsVisible() then
