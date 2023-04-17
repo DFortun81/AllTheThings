@@ -21526,6 +21526,7 @@ customWindowUpdates["list"] = function(self, force, got)
 			visible = true,
 			indent = 2,
 			collectibleAsCost = false,
+			costCollectibles = false,
 			back = function(o, key)
 				return o._missing and 1 or 0;
 			end,
@@ -21569,7 +21570,7 @@ customWindowUpdates["list"] = function(self, force, got)
 			partition = {
 				["text"] = tostring(partitionStart + 1).."+",
 				["icon"] = app.asset("Interface_Quest_header"),
-				["visible"] = true,
+				["OnUpdate"] = app.AlwaysShowUpdate,
 				["g"] = partitionGroups,
 			};
 			for i=1,self.PartitionSize,1 do
