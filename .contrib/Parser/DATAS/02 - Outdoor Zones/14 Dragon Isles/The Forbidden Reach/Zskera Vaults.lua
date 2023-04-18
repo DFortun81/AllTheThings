@@ -73,6 +73,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
 					["coord"] = { 25.8, 47.9, THE_FORBIDDEN_REACH },
 				}),
+				q(72956, {	-- More Doors to Open 
+					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
+					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
+				}),
 				q(74442, {	-- One Dragon's Junk
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 201517 },	-- Voxarian
@@ -104,6 +109,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 201180 },	-- Cataloger Wulferd
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
+					["isWeekly"] = true,
+					["g"] = {
+						i(204305),	-- Neltharion Signed Notes
+					},
 				}),
 				-- Inside of Az
 				q(74996, {	-- A Difficult Legacy
