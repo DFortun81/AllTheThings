@@ -2237,6 +2237,7 @@ app.DetermineItemLink = function(sourceID)
 	local link;
 	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 	local itemID = sourceInfo and sourceInfo.itemID;
+	-- No ItemID don't try to generate the link
 	if not itemID then
 		-- app.PrintDebug("Could not generate Item Link for",sourceID,"(No Source Info from Blizzard)");
 		return;
@@ -2244,7 +2245,8 @@ app.DetermineItemLink = function(sourceID)
 	local itemFormat = "item:"..itemID;
 	-- Check Raw Item
 	link = itemFormat;
-	if sourceInfo.itemModID == 0 then
+	-- if quality is Artifact / Unmodified Item / Category 'Paired'  just return the basic Item string
+	if sourceInfo.quality == 6 or sourceInfo.itemModID == 0 or sourceInfo.categoryID == 29 then
 		return link;
 	end
 	local checkID, found = GetSourceID(link);
