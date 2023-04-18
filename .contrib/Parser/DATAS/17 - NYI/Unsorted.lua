@@ -170,41 +170,8 @@ root(ROOTS.Unsorted, {
 			--[[
 			filter(RECIPES, {
 				-- Blizzard Changed name on all these objects... If anyone has time..
-				i(87829),	-- Technique: Incarnadine Ink
-				i(87830),	-- Technique: Tigersblood Tincture
 				i(114851),	-- Pattern: Hexweave Cloth
-				i(114871),	-- Pattern: Hexweave Essence
-				i(114872),	-- Pattern: Greater Hexweave Essence
-				i(116078),	-- Design: Taladite Recrystalizer
-				i(116079),	-- Design: Taladite Amplifier
-				i(116080),	-- Design: Greater Taladite Amplifier
-				i(116081),	-- Design: Glowing Iron Band
-				i(116082),	-- Design: Shifting Iron Band
-				i(116083),	-- Design: Whispering Iron Band
-				i(116084),	-- Design: Glowing Iron Choker
-				i(116085),	-- Design: Shifting Iron Choker
-				i(116086),	-- Design: Whispering Iron Choker
-				i(116087),	-- Design: Glowing Blackrock Band
-				i(116088),	-- Design: Shifting Blackrock Band
-				i(116089),	-- Design: Whispering Blackrock Band
-				i(116090),	-- Design: Glowing Taladite Ring
-				i(116091),	-- Design: Shifting Taladite Ring
-				i(116092),	-- Design: Whispering Taladite Ring
-				i(116093),	-- Design: Glowing Taladite Pendant
-				i(116094),	-- Design: Shifting Taladite Pendant
-				i(116095),	-- Design: Whispering Taladite Pendant
-				i(116096),	-- Design: Critical Strike Taladite
-				i(116097),	-- Design: Haste Taladite
-				i(116098),	-- Design: Mastery Taladite
-				i(116100),	-- Design: Versatility Taladite
-				i(116101),	-- Design: Stamina Taladite
-				i(116102),	-- Design: Greater Critical Strike Taladite
-				i(116103),	-- Design: Greater Haste Taladite
-				i(116104),	-- Design: Greater Mastery Taladite
-				i(116106),	-- Design: Greater Versatility Taladite
-				i(116107),	-- Design: Greater Stamina Taladite
-				i(116108),	-- Design: Reflecting Prism
-				i(116109),	-- Design: Prismatic Focusing Lens
+
 				i(116319),	-- Pattern: Journeying Helm
 				i(116320),	-- Pattern: Journeying Robes
 				i(116321),	-- Pattern: Journeying Slacks

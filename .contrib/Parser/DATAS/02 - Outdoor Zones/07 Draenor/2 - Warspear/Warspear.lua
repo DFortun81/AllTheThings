@@ -2943,79 +2943,79 @@ _.Zones =
 									["filterID"] = MISC,
 									["g"] = {
 										i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
-											i(116087),	-- Recipe: Glowing Blackrock Band
-											i(116081),	-- Recipe: Glowing Iron Band
-											i(116084),	-- Recipe: Glowing Iron Choker
-											i(116088),	-- Recipe: Shifting Blackrock Band
-											i(116082),	-- Recipe: Shifting Iron Band
-											i(116085),	-- Recipe: Shifting Iron Choker
-											i(116089),	-- Recipe: Whispering Blackrock Band
-											i(116083),	-- Recipe: Whispering Iron Band
-											i(116086),	-- Recipe: Whispering Iron Choker
+											i(116087),	-- Design: Glowing Blackrock Band
+											i(116081),	-- Design: Glowing Iron Band
+											i(116084),	-- Design: Glowing Iron Choker
+											i(116088),	-- Design: Shifting Blackrock Band
+											i(116082),	-- Design: Shifting Iron Band
+											i(116085),	-- Design: Shifting Iron Choker
+											i(116089),	-- Design: Whispering Blackrock Band
+											i(116083),	-- Design: Whispering Iron Band
+											i(116086),	-- Design: Whispering Iron Choker
 											recipe(170700),	-- Taladite Crystal
 										}),
 									},
 								}),
-								i(116096, {	-- Recipe: Critical Strike Taladite
+								i(116096, {	-- Design: Critical Strike Taladite
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116093, {	-- Recipe: Glowing Taladite Pendant
+								i(116093, {	-- Design: Glowing Taladite Pendant
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116090, {	-- Recipe: Glowing Taladite Ring
+								i(116090, {	-- Design: Glowing Taladite Ring
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116102, {	-- Recipe: Greater Critical Strike Taladite
+								i(116102, {	-- Design: Greater Critical Strike Taladite
 									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 								}),
-								i(116103, {	-- Recipe: Greater Haste Taladite
+								i(116103, {	-- Design: Greater Haste Taladite
 									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 								}),
-								i(116104, {	-- Recipe: Greater Mastery Taladite
+								i(116104, {	-- Design: Greater Mastery Taladite
 									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 								}),
-								i(116107, {	-- Recipe: Greater Stamina Taladite
+								i(116107, {	-- Design: Greater Stamina Taladite
 									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 								}),
-								i(116106, {	-- Recipe: Greater Versatility Taladite
+								i(116106, {	-- Design: Greater Versatility Taladite
 									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 								}),
-								i(116097, {	-- Recipe: Haste Taladite
+								i(116097, {	-- Design: Haste Taladite
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116098, {	-- Recipe: Mastery Taladite
+								i(116098, {	-- Design: Mastery Taladite
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116109, {	-- Recipe: Prismatic Focusing Lens
+								i(116109, {	-- Design: Prismatic Focusing Lens
 									["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
 								}),
-								i(116108, {	-- Recipe: Reflecting Prism
+								i(116108, {	-- Design: Reflecting Prism
 									["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
 								}),
-								i(116094, {	-- Recipe: Shifting Taladite Pendant
+								i(116094, {	-- Design: Shifting Taladite Pendant
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116091, {	-- Recipe: Shifting Taladite Ring
+								i(116091, {	-- Design: Shifting Taladite Ring
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116101, {	-- Recipe: Stamina Taladite
+								i(116101, {	-- Design: Stamina Taladite
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116079, {	-- Recipe: Taladite Amplifier
+								i(116079, {	-- Design: Taladite Amplifier
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 								}),
-								i(116078, {	-- Recipe: Taladite Recrystalizer
+								i(116078, {	-- Design: Taladite Recrystalizer
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116100, {	-- Recipe: Versatility Taladite
+								i(116100, {	-- Design: Versatility Taladite
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116095, {	-- Recipe: Whispering Taladite Pendant
+								i(116095, {	-- Design: Whispering Taladite Pendant
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116092, {	-- Recipe: Whispering Taladite Ring
+								i(116092, {	-- Design: Whispering Taladite Ring
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
 							},
@@ -3951,7 +3951,7 @@ _.Zones =
 									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
 									["timeline"] = { ADDED_10_0_5 },
 								}),
-								i(114871, {	-- Recipe: Hexweave Essence
+								i(114871, {	-- Pattern: Hexweave Essence
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring

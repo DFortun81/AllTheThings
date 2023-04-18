@@ -382,8 +382,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(MOP_TIER, {
 				-- 5.0.1
 				tier(MOP_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 5.0.1"} }, {
-					i(87829),	-- Recipe: Incarnadine Ink
-					i(87830),	-- Recipe: Tigersblood Tincture
+					i(87829),	-- Technique: Incarnadine Ink
+					i(87830),	-- Technique: Tigersblood Tincture
 				})),
 			}),
 			tier(WOD_TIER, {
@@ -493,7 +493,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(WOD_TIER, {
 				-- 6.0.1
 				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
-					i(116080),	-- Recipe: Greater Taladite Amplifier
+					i(116080),	-- Design: Greater Taladite Amplifier
 				})),
 			}),
 		}),
@@ -675,7 +675,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
 					i(114867),	-- Pattern: Miniature Flying Carpet - NYI
 					r(168851),	-- Miniature Flying Carpet
-					i(114872),	-- Recipe: Greater Hexweave Essence
+					i(114872),	-- Pattern: Greater Hexweave Essence
 					r(169669),	-- Hexweave Cloth
 					i(118098),	-- Pattern: Murloc Chew Toy
 					r(173415),	-- Murloc Chew Toy
