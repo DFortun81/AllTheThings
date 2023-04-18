@@ -12574,7 +12574,7 @@ app.CreateItemHarvester = function(id, t)
 end
 
 -- Imports the raw information from the rawlink into the specified group
-app.ImportRawLink = function(group, rawlink)
+app.ImportRawLink = function(group, rawlink, ignoreSource)
 	rawlink = rawlink and string.match(rawlink, "item[%-?%d:]+");
 	if rawlink and group then
 		group.rawlink = rawlink;
@@ -12593,11 +12593,13 @@ app.ImportRawLink = function(group, rawlink)
 				end
 			end
 			group.modItemID = nil;
-			-- does this link also have a sourceID?
-			local s = GetSourceID(rawlink);
-			-- print("s",s)
-			if s then group.s = s; end
-			-- if app.DEBUG_PRINT then app.PrintTable(group) end
+			if not ignoreSource then
+				-- does this link also have a sourceID?
+				local s = GetSourceID(rawlink);
+				-- print("s",s)
+				if s then group.s = s; end
+				-- if app.DEBUG_PRINT then app.PrintTable(group) end
+			end
 		end
 	end
 end
@@ -12609,7 +12611,7 @@ app.GenerateGroupLinkUsingSourceID = function(group)
 	local link = app.DetermineItemLink(s);
 	if not link then return; end
 
-	app.ImportRawLink(group, link);
+	app.ImportRawLink(group, link, true);
 end
 -- Adds necessary SourceID information for Item data into the Harvest variable
 app.SaveHarvestSource = function(data)
@@ -14969,24 +14971,7 @@ local function DirectGroupUpdate(group, got)
 		return;
 	end
 	local prevTotal, prevProg = group.total or 0, group.progress or 0;
-	group.total = 0;
-	group.progress = 0;
-	local ItemBindFilter = app.ItemBindFilter;
-	if ItemBindFilter ~= app.NoFilter and ItemBindFilter(group) then
-		app.ItemBindFilter = app.NoFilter;
-		UpdateGroups(group, group.g);
-		-- reapply the previous BoE filter
-		app.ItemBindFilter = ItemBindFilter;
-	else
-		UpdateGroups(group, group.g);
-	end
-	if group.collectible then
-		group.total = group.total + 1;
-		if group.collected then
-			group.progress = group.progress + 1;
-		end
-	end
-	if group.OnUpdate then group.OnUpdate(group); end
+	TopLevelUpdateGroup(group);
 	-- Set proper visibility for the updated group
 	local parent = rawget(group, "parent");
 	if group.g then
@@ -21524,7 +21509,7 @@ customWindowUpdates["list"] = function(self, force, got)
 			["g"] = g,
 		});
 
-		-- add a bunch of raw, delay-loaded quests in order into the window
+		-- add a bunch of raw, delay-loaded objects in order into the window
 		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
 		local overrides = {
 			visible = true,
@@ -21542,7 +21527,7 @@ customWindowUpdates["list"] = function(self, force, got)
 				end
 			end,
 			OnLoad = function(o)
-				app.PrintDebug("DGU-OnLoad:",o.hash)
+				-- app.PrintDebug("DGU-OnLoad:",o.hash)
 				DGU(o);
 			end,
 		};
