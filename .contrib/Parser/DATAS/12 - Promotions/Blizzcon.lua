@@ -122,11 +122,11 @@ root(ROOTS.Promotions, n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bl
 	i(171337, {	-- Wooly Wendigo Mittens
 		["timeline"] = { "added 8.2.5.32028" },
 	}),
-	p(2777, {	-- Gillvanas
+	pet(2777, {	-- Gillvanas (PET!)
 		["timeline"] = { "added 8.2.5.32028" },
 		["races"] = HORDE_ONLY,
 	}),
-	p(2778, {	-- Finduin
+	pet(2778, {	-- Finduin (PET!)
 		["timeline"] = { "added 8.2.5.32028" },
 		["races"] = ALLIANCE_ONLY,
 	}),

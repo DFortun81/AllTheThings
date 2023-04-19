@@ -27,6 +27,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			q(60565),	-- A Steward for Every Occasion
 			q(61564, {	-- Blacksmithing: Polished Kyrian Shield
 				["requireSkill"] = BLACKSMITHING,
+				["g"] = {
+					r(337619,{["u"]=15}),	-- Polished Kyrian Shield
+					r(337626,{["u"]=15}),	-- Reforged Kyrian Shield
+					r(337621,{["u"]=15}),	-- Tarnished Kyrian Shield
+					i(181791),	-- Polished Kyrian Shield
+					i(181790),	-- Reforged Kyrian Shield
+					i(181793),	-- Shattered Kyrian Shield Fragment
+					i(181792),	-- Tarnished Kyrian Shield
+				},
 			}),
 			q(62058),	-- Centurions, Assemble!
 			q(61784),	-- Cliffs of Bastion

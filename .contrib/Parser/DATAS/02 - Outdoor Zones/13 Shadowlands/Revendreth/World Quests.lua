@@ -36,6 +36,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(58144),	-- Battered and Bruised
 			q(61620, {	-- Blacksmithing: Prideful Manacles
 				["requireSkill"] = BLACKSMITHING,
+				["g"] = {
+					r(338097,{["u"]=15}),	-- Binding Cuffs
+					r(338094,{["u"]=15}),	-- Prideful Manacles
+					r(338096,{["u"]=15}),	-- Soft Manacle Chains
+					r(338095,{["u"]=15}),	-- Tempered Manacle Chains
+					i(182090),	-- Binding Cuffs
+					i(182091),	-- Borrowed Sinvyr Bar
+					i(182094),	-- Borrowed Sinvyr Rod
+					i(182089),	-- Enchanted Rivets
+					i(181378),	-- Prideful Manacles
+					i(182093),	-- Soft Manacle Chains
+					i(182092),	-- Tempered Manacle Chains
+				},
 			}),
 			q(61621, {	-- Cooking: Skewered Meats
 				["requireSkill"] = COOKING,

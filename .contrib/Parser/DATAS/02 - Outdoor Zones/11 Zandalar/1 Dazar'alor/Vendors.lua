@@ -805,8 +805,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 43.4, 38.3, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(168022, {	-- Recipe: Khaz'gorian Smithing Hammer
-						["sourceQuest"] = 50279,	-- Anvil's Away (H)
+					i(168022, {	-- Recipe: Khaz'gorian Smithing Hammer (RECIPE!)
+						["sourceQuests"] = { 50279 },	-- Anvil's Away (H)
+						["timeline"] = { ADDED_8_1_5 },
 					}),
 				},
 			}),

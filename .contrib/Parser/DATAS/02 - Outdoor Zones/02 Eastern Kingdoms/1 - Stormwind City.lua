@@ -2682,7 +2682,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5511, {	-- Therum Deepforge <Expert Blacksmith>
 						["coord"] = { 57.0, 16.6, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = CLASSIC_BLACKSMITHING,
+						["groups"] = appendGroups(CLASSIC_BLACKSMITHING,
+							-- #if AFTER CATA
+							CATA_BLACKSMITHING
+							-- #else
+							{}
+							-- #endif
+						),
 					}),
 				}),
 				prof(ENCHANTING, {

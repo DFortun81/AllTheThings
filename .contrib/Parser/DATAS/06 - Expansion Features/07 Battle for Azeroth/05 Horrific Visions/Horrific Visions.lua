@@ -27,7 +27,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					["maps"] = { 1470 },
 				}),
 				ach(14143, {	-- Reeking of Visions
-					i(174463),	-- Reek (pet)
+					i(174463),	-- Reek (PET!)
 					crit(1),	-- The Even more Horrific Vision of Orgrimmar
 					crit(2),	-- The Even More Horrific Vision of Stormwind
 				}),
@@ -205,7 +205,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							["description"] = "Help Zekhan save Orgrimmar's shamans in the Valley of Spirits.",
 							["g"] = {
 								i(174924),	-- Void-Touched Souvenir Totem (TOY!)
-								i(173726),	-- Box With Faintly Glowing "Air" Holes (PET!)
+								i(173726),	-- Void-Scarred Toad (PET!)
 							},
 						}),
 						i(174920, {	-- Coifcurl's Close Shave Kit (TOY!)
@@ -222,7 +222,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						n(155098, {	-- Rexxar
 							["description"] = "Defeat Rexxar and his creatures in the Valley of Honor.",
 							["g"] = {
-								i(174457),	-- C'Thuffer (PET!) - rexxar
+								i(174457),	-- C'Thuffer (PET!)
 								i(173289),	-- Pulsing Azerite Geode (Rank 2)
 								i(174855, {	-- Bow of Calamity
 									["description"] = "Has only been received on a Hunter character (so far).\nCan be traded to party members within the same Vision.",
@@ -234,8 +234,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						i(173308),	-- Mark of Boistrous Duty (Rank 1)
 						i(173288),	-- Overflowing Azerite Geode (Rank 1)
 						i(168936),	-- Ward of Unwavering Hope (Rank 1)
-						i(174461),	-- Swirling Black Bottle (PET!) -- Thrall
-						i(174646),	-- Void-Link Frostwolf Collar (PET!) - Thrall
+						i(174461),	-- Anomalus (PET!)
+						i(174646),	-- Void-Scarred Pup (PET!)
 						i(174287),	-- Sparks of Unwavering Strength
 						i(175054),	-- Melee Veterans Contract
 						i(175052),	-- Mounted Veterans Contract
@@ -281,7 +281,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						n(156577, {	-- Therum Deepforge
 							["description"] = "Aid Kelsey and play with explosives in the Dwarven District.",
 							["g"] = {
-								i(174460),	-- Box Labeled "Danger: Void Rat Inside" (PET!) - Kelsey
+								i(174460),	-- Void-Scarred Rat (PET!)
 							},
 						}),
 					}),
@@ -301,7 +301,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						n(158035, {	-- Magister Umbric
 							["description"] = "Stop Magister Umbric's assault in the Mage Quarter.",
 							["g"] = {
-								i(174458),	-- Void-scarred Hare (PET!) -- Umbric
+								i(174458),	-- Void-Scarred Hare (PET!)
 								i(173289),	-- Pulsing Azerite Geode (Rank 2)
 							},
 						}),
@@ -310,8 +310,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						i(173308),	-- Mark of Boistrous Duty (Rank 1)
 						i(173288),	-- Overflowing Azerite Geode (Rank 1)
 						i(168936),	-- Ward of Unwavering Hope (Rank 1)
-						i(174461),	-- Swirling Black Bottle (PET!)
-						i(174459),	-- Voidwoven Cat Collar (PET!)
+						i(174461),	-- Anomalus (PET!)
+						i(174459),	-- Void-Scarred Cat (PET!)
 						i(174287),	-- Sparks of Unwavering Strength
 						i(175054),	-- Melee Veterans Contract
 						i(175052),	-- Mounted Veterans Contract

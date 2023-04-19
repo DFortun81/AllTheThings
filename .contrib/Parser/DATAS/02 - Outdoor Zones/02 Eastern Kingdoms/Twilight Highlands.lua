@@ -223,10 +223,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					p(470, {	-- Twilight Spider
 						["crs"] = { 62117 },
 					}),
-					p(2677, {	-- Twilight Whelpling
-						i(169346, {	-- Young Twilight Scale
-							["questID"] = 56371,	-- Young Twilight Scale
-						}),
+					pet(2677, {	-- Twilight Whelpling (PET!)
+						["timeline"] = { "added 8.2.0" },
 					}),
 					p(548, {	-- Wildhammer Gryphon Hatchling
 						["crs"] = { 62900 },
@@ -2280,6 +2278,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 82.4, 49.8, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
+				q(56371, {	-- Young Twilight Scale
+					["provider"] = { "n", 169346 },	-- Young Twilight Scale
+					["timeline"] = { "added 8.2.0" },
+				}),
 			}),
 			n(RARES, {
 				n(50085, {	-- Overlord Sunderfury
@@ -2410,6 +2412,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
 					},
+				}),
+			}),
+			n(ZONE_DROPS, {
+				i(169346, {	-- Young Twilight Scale
+					["crs"] = { 154803 },	-- Twilight Whelpling
+					["timeline"] = { "added 8.2.0" },
 				}),
 			}),
 		},

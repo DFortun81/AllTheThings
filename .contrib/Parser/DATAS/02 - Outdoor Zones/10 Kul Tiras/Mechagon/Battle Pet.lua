@@ -47,43 +47,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					["coord"] = { 64.7, 64.6, MECHAGON },
 				}),
 			}),
-			p(2662, {	-- Duskytooth Snooter
-				["crs"] = { 154769 },	-- Duskytooth Snoother
+			pet(2662, {	-- Duskytooth Snooter (PET!)
 				["description"] = "Rare pet. Shares spawns with |cFFFFD700Rustyroot Snooter|r."
 			}),
-			p(2664, {	-- Experimental Roach
-				["crs"] = { 154773 },	-- Experimental Roach
+			pet(2664, {	-- Experimental Roach (PET!)
 				["description"] = "Rare pet. Shares spawns with |cFFFFD700Junkheap Roach|r."
 			}),
-			p(2665, {	-- Fleeting Frog
-				["crs"] = { 154775 },	-- Fleeting Frog
-			}),
-			p(2663, {	-- Junkheap Roach
-				["crs"] = { 154771 },	-- Junkheap Roach
-			}),
-			p(2676, {	-- Malfunctioning Microbot
-				["crs"] = { 154798 },	-- Malfunctioning Microbot
-			}),
-			p(2670, {	-- Mechagon Marmot
-				["crs"] = { 154785 },	-- Mechagon Marmot
-			}),
-			p(2667, {	-- Motorized Croaker
-				["crs"] = { 154779 },	-- Motorized Croaker
-			}),
-			p(2669, {	-- Rustbolt Clucker
-				["crs"] = { 154783 },	-- Rustbolt Clucker
-			}),
-			p(2661, {	-- Rustyroot Snooter
-				["crs"] = { 154767 },	-- Rustyroot Snooter
-			}),
-			p(2673, {	-- Scrapyard Tunneler
-				["crs"] = { 154791 },	-- Scrapyard Tunneler
-			}),
-			p(2671, {	-- Specimen 97
-				["crs"] = { 154787 },	-- Specimen 97
-			}),
-			p(2666, {	-- Yellow Junkhopper
-				["crs"] = { 154777 },	-- Yellow Junkhopper
+			pet(2665),	-- Fleeting Frog (PET!)
+			pet(2663),	-- Junkheap Roach (PET!)
+			pet(2676),	-- Malfunctioning Microbot (PET!)
+			pet(2670),	-- Mechagon Marmot (PET!)
+			pet(2667),	-- Motorized Croaker (PET!)
+			pet(2669),	-- Rustbolt Clucker (PET!)
+			pet(2661),	-- Rustyroot Snooter (PET!)
+			pet(2673),	-- Scrapyard Tunneler (PET!)
+			pet(2671),	-- Specimen 97 (PET!)
+			pet(2666, {	-- Yellow Junkhopper (PET!)
 				["description"] = "Rare pet. Shares spawns with |cFFFFD700Fleeting Frog|r."
 			}),
 		})),

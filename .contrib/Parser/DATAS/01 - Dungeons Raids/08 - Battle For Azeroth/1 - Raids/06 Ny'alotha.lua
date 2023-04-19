@@ -160,7 +160,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 							i(174141),	-- Boots of Manifest Shadow
 							i(173944),	-- Forbidden Obsidian Claw
 							i(173940),	-- Sigil of Warding
-							i(174446),	-- Fractured Obsidian Claw (PET!)
+							i(174446),	-- Muar (PET!)
 						},
 					}),
 					e(2369, {	-- The Prophet Skitra
@@ -404,7 +404,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					["crs"] = { 156523 },
 					["g"] = {
 						ach(14008),	-- Mana Sponge
-						i(174446),	-- Fractured Obsidian Claw (PET!)
+						i(174446),	-- Muar (PET!)
 						i(172191),	-- An'zig Vra
 						i(172200),	-- Sk'shuul Vaz
 						i(174132),	-- Stygian Guise
@@ -630,7 +630,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 				e(2365, {	-- Maut
 					["crs"] = { 156523 },
 					["g"] = {
-						i(174446),	-- Fractured Obsidian Claw (PET!)
+						i(174446),	-- Muar (PET!)
 						i(172191),	-- An'zig Vra
 						i(172200),	-- Sk'shuul Vaz
 						i(174132),	-- Stygian Guise
@@ -854,7 +854,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					["crs"] = { 156523 },
 					["g"] = {
 						ach(14043),	-- Mythic: Maut
-						i(174446),	-- Fractured Obsidian Claw (PET!)
+						i(174446),	-- Muar (PET!)
 						i(172191),	-- An'zig Vra
 						i(172200),	-- Sk'shuul Vaz
 						i(174132),	-- Stygian Guise

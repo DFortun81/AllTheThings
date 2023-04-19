@@ -2715,7 +2715,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3355, {	-- Saru Steelfury <Blacksmithing Trainer>
 						["coord"] = { 76.4, 34.4, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_BLACKSMITHING,
+						["groups"] = appendGroups(CLASSIC_BLACKSMITHING,
+							-- #if AFTER CATA
+							CATA_BLACKSMITHING
+							-- #else
+							{}
+							-- #endif
+						),
 					}),
 				}),
 				prof(ENCHANTING, {

@@ -1,3 +1,4 @@
+-- #if ANYCLASSIC
 profession(BLACKSMITHING, {
 	prof(9788, {	-- Armorsmith
 		["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",
@@ -82,7 +83,7 @@ profession(BLACKSMITHING, {
 						["timeline"] = { "removed 4.0.1" },
 						["recipeID"] = 55187,
 					}),
-					applyclassicphase(TBC_PHASE_ONE,{	
+					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Windforged Leggings",
 						["timeline"] = { "removed 4.0.1" },
 						["recipeID"] = 36124,
@@ -121,7 +122,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16724,
 						["requireSkill"] = 9788,
 					},
-					
+
 				},
 			},
 			{
@@ -149,7 +150,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 20874,
 						["requireSkill"] = 9788,
 					},
-					
+
 				},
 			},
 			{
@@ -183,7 +184,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 9954,
 						["requireSkill"] = 9788,
 					},
-					
+
 				},
 			},
 			{
@@ -273,3 +274,4 @@ profession(BLACKSMITHING, {
 		},
 	}),
 });
+-- #endif

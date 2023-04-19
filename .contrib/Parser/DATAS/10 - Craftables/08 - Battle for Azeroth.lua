@@ -2,6 +2,18 @@
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
+	i(152668),	-- Expulsom
+	i(162460),	-- Hydrocore
+	i(162461),	-- Sanguicell
+	i(171320, {["timeline"] = {ADDED_8_3_0}}),	-- Void Focus
+	filter(MOUNTS, {
+		i(153594, {	-- Xiwyllag ATV (MOUNT!)
+			["cost"] = {
+				{ "i", 158887, 1 },	-- Monelite Reinforced Chassis
+				{ "i", 158886, 1 },	-- Super-Charged Engine
+			},
+		}),
+	}),
 	prof(ALCHEMY, {
 		filter(BATTLE_PETS, {
 			i(160324, {	-- Grumbling Sac
@@ -58,231 +70,236 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(BLACKSMITHING, {
+		spell(285081, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Stormsteel Girdle
+			i(165642),	-- Fortified Stormsteel Girdle (RECIPE!)
+		})),
+		spell(285082, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Stormsteel Legguards
+			i(165640),	-- Fortified Stormsteel Legguards (RECIPE!)
+		})),
+		spell(285089, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Stormsteel Girdle
+			i(165643),	-- Tempered Stormsteel Girdle (RECIPE!)
+		})),
+		spell(285090, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Stormsteel Legguards
+			i(165641),	-- Tempered Stormsteel Legguards (RECIPE!)
+		})),
+		spell(253191, {	-- Imbued Stormsteel Girdle
+			i(162498),	-- Emblazoned Stormsteel Girdle (RECIPE!)
+		}),
+		spell(253187, {	-- Imbued Stormsteel Legguards
+			i(162496),	-- Emblazoned Stormsteel Legguards (RECIPE!)
+		}),
+		spell(305839, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Osmenite Girdle
+			i(171107),	-- Eldritch Osmenite Girdle
+		})),
+		spell(305842, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Osmenite Legguards
+			i(171109),	-- Eldritch Osmenite Legguards
+		})),
+		spell(299001, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Osmenite Girdle
+			i(168761),	-- Reinforced Osmenite Girdle
+		})),
+		spell(298998, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Osmenite Legguards
+			i(168759),	-- Reinforced Osmenite Legguards
+		})),
+		spell(299002, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Osmenite Girdle
+			i(168762),	-- Banded Osmenite Girdle
+		})),
+		spell(298999, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Osmenite Legguards
+			i(168760),	-- Banded Osmenite Legguards
+		})),
+		spell(253190, {	-- Stormsteel Girdle
+			i(162497),	-- Imbued Stormsteel Girdle (RECIPE!)
+		}),
+		spell(253186, {	-- Stormsteel Legguards
+			i(162495),	-- Imbued Stormsteel Legguards (RECIPE!)
+		}),
+		spell(305840, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Osmenite Girdle
+			i(171108),	-- Maddening Osmenite Girdle
+		})),
+		spell(305843, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Osmenite Legguards
+			i(171110),	-- Maddening Osmenite Legguards
+		})),
+		n(ARMOR, {
+			i(168682, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Osmenite Girdle [A]
+			i(168688, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Osmenite Girdle [H]
+			i(168679, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Osmenite Legguards [A]
+			i(168685, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Osmenite Legguards [H]
+			i(170391, {["timeline"] = {ADDED_8_3_0}}),	-- Eldritch Osmenite Girdle
+			i(170388, {["timeline"] = {ADDED_8_3_0}}),	-- Eldritch Osmenite Legguards
+			i(162484),	-- Emblazoned Stormsteel Girdle [A]
+			i(162466),	-- Emblazoned Stormsteel Girdle [H]
+			i(162483),	-- Emblazoned Stormsteel Legguards [A]
+			i(162464),	-- Emblazoned Stormsteel Legguards [H]
+			i(165406, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Stormsteel Girdle [A]
+			i(165407, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Stormsteel Girdle [H]
+			i(165379, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Stormsteel Legguards [A]
+			i(165380, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Stormsteel Legguards [H]
+			i(165414, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Stormsteel Girdle [A]
+			i(165415, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Stormsteel Girdle [H]
+			i(165389, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Stormsteel Legguards [A]
+			i(165390, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Stormsteel Legguards [H]
+			i(161897),	-- Honorable Combatant's Plate Armguards [A]
+			i(159866),	-- Honorable Combatant's Plate Armguards [H]
+			i(161893),	-- Honorable Combatant's Plate Boots [A]
+			i(159860),	-- Honorable Combatant's Plate Boots [H]
+			i(161894),	-- Honorable Combatant's Plate Gauntlets [A]
+			i(159861),	-- Honorable Combatant's Plate Gauntlets [H]
+			i(161895),	-- Honorable Combatant's Plate Greaves [A]
+			i(159863),	-- Honorable Combatant's Plate Greaves [H]
+			i(161896),	-- Honorable Combatant's Plate Waistguard [A]
+			i(159865),	-- Honorable Combatant's Plate Waistguard [H]
+			i(162492),	-- Imbued Stormsteel Girdle [A]
+			i(162465),	-- Imbued Stormsteel Girdle [H]
+			i(162491),	-- Imbued Stormsteel Legguards [A]
+			i(162463),	-- Imbued Stormsteel Legguards [H]
+			i(170390, {["timeline"] = {ADDED_8_3_0}}),	-- Maddening Osmenite Girdle
+			i(170387, {["timeline"] = {ADDED_8_3_0}}),	-- Maddening Osmenite Legguards
+			i(161887),	-- Monel-Hardened Armguards [A]
+			i(152809),	-- Monel-Hardened Armguards [H]
+			i(161881),	-- Monel-Hardened Boots [A]
+			i(152803),	-- Monel-Hardened Boots [H]
+			i(161880),	-- Monel-Hardened Breastplate [A]
+			i(152802),	-- Monel-Hardened Breastplate [H]
+			i(161882),	-- Monel-Hardened Gauntlets [A]
+			i(152804),	-- Monel-Hardened Gauntlets [H]
+			i(161884),	-- Monel-Hardened Greaves [A]
+			i(152806),	-- Monel-Hardened Greaves [H]
+			i(161883),	-- Monel-Hardened Helm [A]
+			i(152805),	-- Monel-Hardened Helm [H]
+			i(161885),	-- Monel-Hardened Pauldrons [A]
+			i(152807),	-- Monel-Hardened Pauldrons [H]
+			i(161886),	-- Monel-Hardened Waistguard [A]
+			i(152808),	-- Monel-Hardened Waistguard [H]
+			i(167965, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Plate Armguards [A]
+			i(167964, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Plate Armguards [H]
+			i(167967, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Plate Boots [A]
+			i(167966, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Plate Boots [H]
+			i(167969, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Plate Gauntlets [A]
+			i(167968, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Plate Gauntlets [H]
+			i(167971, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Plate Greaves [A]
+			i(167970, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Plate Greaves [H]
+			i(167973, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Plate Waistguard [A]
+			i(167972, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Plate Waistguard [H]
+			i(168680, {["timeline"] = {ADDED_8_2_0}}),	-- Osmenite Girdle [A]
+			i(168686, {["timeline"] = {ADDED_8_2_0}}),	-- Osmenite Girdle [H]
+			i(168677, {["timeline"] = {ADDED_8_2_0}}),	-- Osmenite Legguards [A]
+			i(168683, {["timeline"] = {ADDED_8_2_0}}),	-- Osmenite Legguards [H]
+			i(168681, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Osmenite Girdle [A]
+			i(168687, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Osmenite Girdle [H]
+			i(168678, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Osmenite Legguards [A]
+			i(168684, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Osmenite Legguards [H]
+			i(164689, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Armguards [A]
+			i(164657, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Armguards [H]
+			i(164685, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Boots [A]
+			i(164653, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Boots [H]
+			i(164686, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Gauntlets [A]
+			i(164654, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Gauntlets [H]
+			i(164687, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Greaves [A]
+			i(164655, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Greaves [H]
+			i(164688, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Waistguard [A]
+			i(164656, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Waistguard [H]
+			i(161889),	-- Stormsteel Girdle [A]
+			i(152811),	-- Stormsteel Girdle [H]
+			i(161888),	-- Stormsteel Legguards [A]
+			i(152810),	-- Stormsteel Legguards [H]
+			i(165422, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Stormsteel Girdle [A]
+			i(165423, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Stormsteel Girdle [H]
+			i(165397, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Stormsteel Legguards [A]
+			i(165398, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Stormsteel Legguards [H]
+			i(170289, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Armguards [A]
+			i(170301, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Armguards [H]
+			i(170285, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Boots [A]
+			i(170295, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Boots [H]
+			i(170297, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Gauntlets [A]
+			i(170286, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Gauntlets [H]
+			i(170287, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Greaves [A]
+			i(170299, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Greaves [H]
+			i(170288, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Waistguard [A]
+			i(170300, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Waistguard [H]
+			i(170389, {["timeline"] = {ADDED_8_3_0}}),	-- Unsettling Osmenite Girdle
+			i(170386, {["timeline"] = {ADDED_8_3_0}}),	-- Unsettling Osmenite Legguards
+		}),
+		filter(MISC, {
+			i(168417, {["timeline"] = {ADDED_8_2_0}}),	-- Inflatable Mount Shoes
+			i(152839, {["timeline"] = {ADDED_8_1_5}}),	-- Khaz'gorian Smithing Hammer
+			i(165746),	-- Magnetic Mining Pick
+			i(152812),	-- Monel-Hardened Hoofplates
+			i(152813),	-- Monel-Hardened Stirrups
+			i(159826),	-- Monelite Skeleton Key
+			i(165740),	-- Storm Silver Spurs
+			i(165748),	-- Platinum Whetstone
+		}),
 		filter(MOUNTS, {
-			i(158887, {	-- Monelite Reinforced Chassis
-				i(153594),	-- Xiwyllag ATV (MOUNT!)
-			}),
+			i(158887),	-- Monelite Reinforced Chassis
 		}),
-		filter(MOUNT_EQUIPMENT, {
-			i(168417),	-- Inflatable Mount Shoes
-		}),
-		filter(DAGGERS, {
-			i(161922),	-- Honorable Combatant's Shanker [Alliance]
-			i(159857),	-- Honorable Combatant's Shanker [Horde]
-			i(162652),	-- Honorable Combatant's Spellblade [Alliance]
-			i(162653),	-- Honorable Combatant's Spellblade [Horde]
-			i(161916),	-- Monel-Hardened Shanker [Alliance]
-			i(152832),	-- Monel-Hardened Shanker [Horde]
-			i(167989),	-- Notorious Combatant's Shanker [Alliance]
-			i(167988),	-- Notorious Combatant's Shanker [Horde]
-			i(167995),	-- Notorious Combatant's Spellblade [Alliance]
-			i(167994),	-- Notorious Combatant's Spellblade [Horde]
-			i(164692),	-- Sinister Combatant's Shanker [Alliance]
-			i(164651),	-- Sinister Combatant's Shanker [Horde]
-			i(164718),	-- Sinister Combatant's Spellblade [Alliance]
-			i(164719),	-- Sinister Combatant's Spellblade [Horde]
-			i(161919),	-- Stormsteel Dagger [Alliance]
-			i(152835),	-- Stormsteel Dagger [Horde]
-			i(170291),	-- Uncanny Combatant's Shanker [Alliance]
-			i(170310),	-- Uncanny Combatant's Shanker [Horde]
-			i(170292),	-- Uncanny Combatant's Spellblade [Alliance]
-			i(170309),	-- Uncanny Combatant's Spellblade [Horde]
-		}),
-		filter(TWO_HANDED_MACES, {
-			i(161921),	-- Honorable Combatant's Deckpounder [Alliance]
-			i(159855),	-- Honorable Combatant's Deckpounder [Horde]
-			i(161915),	-- Monel-Hardened Deckpounder [Alliance]
-			i(152831),	-- Monel-Hardened Deckpounder [Horde]
-			i(167939),	-- Notorious Combatant's Deckpounder [Alliance]
-			i(167938),	-- Notorious Combatant's Deckpounder [Horde]
-			i(164691),	-- Sinister Combatant's Deckpounder [Alliance]
-			i(164650),	-- Sinister Combatant's Deckpounder [Horde]
-			i(170293),	-- Uncanny Combatant's Deckpounder [Alliance]
-			i(170366),	-- Uncanny Combatant's Deckpounder [Horde]
-		}),
-		filter(ONE_HANDED_SWORDS, {
-			i(161920),	-- Honorable Combatant's Cutlass [Alliance]
-			i(159853),	-- Honorable Combatant's Cutlass [Horde]
-			i(161913),	-- Monel-Hardened Cutlass [Alliance]
-			i(152827),	-- Monel-Hardened Cutlass [Horde]
-			i(167937),	-- Notorious Combatant's Cutlass [Alliance]
-			i(167936),	-- Notorious Combatant's Cutlass [Horde]
-			i(164690),	-- Sinister Combatant's Cutlass [Alliance]
-			i(164649),	-- Sinister Combatant's Cutlass [Horde]
-			i(162655),	-- Stormsteel Saber [Alliance]
-			i(162665),	-- Stormsteel Saber [Horde]
-			i(170294),	-- Uncanny Combatant's Cutlass [Alliance]
-			i(170302),	-- Uncanny Combatant's Cutlass [Horde]
-		}),
-		filter(TWO_HANDED_SWORDS, {
-			i(161914),	-- Monel-Hardened Claymore [Alliance]
-			i(152828),	-- Monel-Hardened Claymore [Horde]
-		}),
-		filter(POLEARMS, {
-			i(161923),	-- Honorable Combatant's Polearm [Alliance]
-			i(159858),	-- Honorable Combatant's Polearm [Horde]
-			i(161917),	-- Monel-Hardened Polearm [Alliance]
-			i(152833),	-- Monel-Hardened Polearm [Horde]
-			i(167975),	-- Notorious Combatant's Polearm [Alliance]
-			i(167974),	-- Notorious Combatant's Polearm [Horde]
-			i(164693),	-- Sinister Combatant's Polearm [Alliance]
-			i(164652),	-- Sinister Combatant's Polearm [Horde]
-			i(161918),	-- Stormsteel Spear [Alliance]
-			i(152834),	-- Stormsteel Spear [Horde]
-			i(170290),	-- Uncanny Combatant's Polearm [Alliance]
-			i(170311),	-- Uncanny Combatant's Polearm [Horde]
-		}),
-		filter(SHIELDS, {
-			i(161892),	-- Honorable Combatant's Aegis [Alliance]
-			i(159851),	-- Honorable Combatant's Shield [Horde]
-			i(161890),	-- Monel-Hardened Shield [Alliance]
-			i(152818),	-- Monel-Hardened Shield [Horde]
-			i(167991),	-- Notorious Combatant's Shield [Alliance]
-			i(167990),	-- Notorious Combatant's Shield [Horde]
-			i(164684),	-- Sinister Combatant's Shield [Alliance]
-			i(164648),	-- Sinister Combatant's Shield [Horde]
-			i(161891),	-- Stormsteel Shield [Alliance]
-			i(152819),	-- Stormsteel Shield [Horde]
-			i(170364),	-- Uncanny Combatant's Shield [Alliance]
-			i(170365),	-- Uncanny Combatant's Shield [Horde]
-		}),
-		n(HEAD, {
-			i(161883),	-- Monel-Hardened Helm [Alliance]
-			i(152805),	-- Monel-Hardened Helm [Horde]
-		}),
-		n(SHOULDER, {
-			i(161885),	-- Monel-Hardened Pauldrons [Alliance]
-			i(152807),	-- Monel-Hardened Pauldrons [Horde]
-		}),
-		n(CHEST, {
-			i(161880),	-- Monel-Hardened Breastplate [Alliance]
-			i(152802),	-- Monel-Hardened Breastplate [Horde]
-		}),
-		n(HANDS, {
-			i(161894),	-- Honorable Combatant's Plate Gauntlets [Alliance]
-			i(159861),	-- Honorable Combatant's Plate Gauntlets [Horde]
-			i(161882),	-- Monel-Hardened Gauntlets [Alliance]
-			i(152804),	-- Monel-Hardened Gauntlets [Horde]
-			i(167969),	-- Notorious Combatant's Plate Gauntlets [Alliance]
-			i(167968),	-- Notorious Combatant's Plate Gauntlets [Horde]
-			i(164686),	-- Sinister Combatant's Plate Gauntlets [Alliance]
-			i(164654),	-- Sinister Combatant's Plate Gauntlets [Horde]
-			i(170297),	-- Uncanny Combatant's Plate Gauntlets [Alliance]
-			i(170286),	-- Uncanny Combatant's Plate Gauntlets [Horde]
-		}),
-		n(WRIST, {
-			i(161897),	-- Honorable Combatant's Plate Armguards [Alliance]
-			i(159866),	-- Honorable Combatant's Plate Armguards [Horde]
-			i(161887),	-- Monel-Hardened Armguards [Alliance]
-			i(152809),	-- Monel-Hardened Armguards [Horde]
-			i(167965),	-- Notorious Combatant's Plate Armguards [Alliance]
-			i(167964),	-- Notorious Combatant's Plate Armguards [Horde]
-			i(164689),	-- Sinister Combatant's Plate Armguards [Alliance]
-			i(164657),	-- Sinister Combatant's Plate Armguards [Horde]
-			i(170289),	-- Uncanny Combatant's Plate Armguards [Alliance]
-			i(170301),	-- Uncanny Combatant's Plate Armguards [Horde]
-		}),
-		n(WAIST, {
-			i(168682),	-- Banded Osmenite Girdle [Alliance]
-			i(168688),	-- Banded Osmenite Girdle [Horde]
-			i(170391),	-- Eldritch Osmenite Girdle
-			i(162484),	-- Emblazoned Stormsteel Girdle [Alliance]
-			i(162466),	-- Emblazoned Stormsteel Girdle [Horde]
-			i(165406),	-- Enhanced Stormsteel Girdle [Alliance]
-			i(165407),	-- Enhanced Stormsteel Girdle [Horde]
-			i(165414),	-- Fortified Stormsteel Girdle [Alliance]
-			i(165415),	-- Fortified Stormsteel Girdle [Horde]
-			i(161896),	-- Honorable Combatant's Plate Waistguard [Alliance]
-			i(159865),	-- Honorable Combatant's Plate Waistguard [Horde]
-			i(162492),	-- Imbued Stormsteel Girdle [Alliance]
-			i(162465),	-- Imbued Stormsteel Girdle [Horde]
-			i(170390, {	-- Maddening Osmenite Girdle
-				i(171107),	-- Plans: Eldritch Osmenite Girdle
-			}),
-			i(161886),	-- Monel-Hardened Waistguard [Alliance]
-			i(152808),	-- Monel-Hardened Waistguard [Horde]
-			i(167973),	-- Notorious Combatant's Plate Waistguard [Alliance]
-			i(167972),	-- Notorious Combatant's Plate Waistguard [Horde]
-			i(168680, {	-- Osmenite Girdle [Alliance]
-				i(168761),	-- Recipe: Reinforced Osmenite Girdle
-			}),
-			i(168686, {	-- Osmenite Girdle [Horde]
-				i(168761),	-- Recipe: Reinforced Osmenite Girdle
-			}),
-			i(168681, {	-- Reinforced Osmenite Girdle [Alliance]
-				i(168762),	-- Recipe: Banded Osmenite Girdle
-			}),
-			i(168687, {	-- Reinforced Osmenite Girdle [Horde]
-				i(168762),	-- Recipe: Banded Osmenite Girdle
-			}),
-			i(164688),	-- Sinister Combatant's Plate Waistguard [Alliance]
-			i(164656),	-- Sinister Combatant's Plate Waistguard [Horde]
-			i(161889),	-- Stormsteel Girdle [Alliance]
-			i(152811),	-- Stormsteel Girdle [Horde]
-			i(165422),	-- Tempered Stormsteel Girdle [Alliance]
-			i(165423),	-- Tempered Stormsteel Girdle [Horde]
-			i(170288),	-- Uncanny Combatant's Plate Waistguard [Alliance]
-			i(170300),	-- Uncanny Combatant's Plate Waistguard [Horde]
-			i(170389, {	-- Unsettling Osmenite Girdle
-				i(171108),	-- Plans: Maddening Osmenite Girdle
-			}),
-		}),
-		n(LEGS, {
-			i(168679),	-- Banded Osmenite Legguards [Alliance]
-			i(168685),	-- Banded Osmenite Legguards [Horde]
-			i(170388),	-- Eldritch Osmenite Legguards
-			i(162483),	-- Emblazoned Stormsteel Legguards [Alliance]
-			i(162464),	-- Emblazoned Stormsteel Legguards [Horde]
-			i(165379),	-- Enhanced Stormsteel Legguards [Alliance]
-			i(165380),	-- Enhanced Stormsteel Legguards [Horde]
-			i(165389),	-- Fortified Stormsteel Legguards [Alliance]
-			i(165390),	-- Fortified Stormsteel Legguards [Horde]
-			i(161895),	-- Honorable Combatant's Plate Greaves [Alliance]
-			i(159863),	-- Honorable Combatant's Plate Greaves [Horde]
-			i(162491),	-- Imbued Stormsteel Legguards [Alliance]
-			i(162463),	-- Imbued Stormsteel Legguards [Horde]
-			i(170387, {	-- Maddening Osmenite Legguards
-				i(171109),	-- Plans: Eldritch Osmenite Legguards
-			}),
-			i(161884),	-- Monel-Hardened Greaves [Alliance]
-			i(152806),	-- Monel-Hardened Greaves [Horde]
-			i(167971),	-- Notorious Combatant's Plate Greaves [Alliance]
-			i(167970),	-- Notorious Combatant's Plate Greaves [Horde]
-			i(168677, {	-- Osmenite Legguards [Alliance]
-				i(168759),	-- Recipe: Reinforced Osmenite Legguards
-			}),
-			i(168683, {	-- Osmenite Legguards [Horde]
-				i(168759),	-- Recipe: Reinforced Osmenite Legguards
-			}),
-			i(168678, {	-- Reinforced Osmenite Legguards [Alliance]
-				i(168760),	-- Recipe: Banded Osmenite Legguards
-			}),
-			i(168684, {	-- Reinforced Osmenite Legguards [Horde]
-				i(168760),	-- Recipe: Banded Osmenite Legguards
-			}),
-			i(164687),	-- Sinister Combatant's Plate Greaves [Alliance]
-			i(164655),	-- Sinister Combatant's Plate Greaves [Horde]
-			i(161888),	-- Stormsteel Legguards [Alliance]
-			i(152810),	-- Stormsteel Legguards [Horde]
-			i(165397),	-- Tempered Stormsteel Legguards [Alliance]
-			i(165398),	-- Tempered Stormsteel Legguards [Horde]
-			i(170287),	-- Uncanny Combatant's Plate Greaves [Alliance]
-			i(170299),	-- Uncanny Combatant's Plate Greaves [Horde]
-			i(170386, {	-- Unsettling Osmenite Legguards
-				i(171110),	-- Plans: Maddening Osmenite Legguards
-			}),
-		}),
-		n(FEET, {
-			i(161893),	-- Honorable Combatant's Plate Boots [Alliance]
-			i(159860),	-- Honorable Combatant's Plate Boots [Horde]
-			i(161881),	-- Monel-Hardened Boots [Alliance]
-			i(152803),	-- Monel-Hardened Boots [Horde]
-			i(167967),	-- Notorious Combatant's Plate Boots [Alliance]
-			i(167966),	-- Notorious Combatant's Plate Boots [Horde]
-			i(164685),	-- Sinister Combatant's Plate Boots [Alliance]
-			i(164653),	-- Sinister Combatant's Plate Boots [Horde]
-			i(170285),	-- Uncanny Combatant's Plate Boots [Alliance]
-			i(170295),	-- Uncanny Combatant's Plate Boots [Horde]
+		n(WEAPONS, {
+			i(161892),	-- Honorable Combatant's Aegis [A]
+			i(159851),	-- Honorable Combatant's Shield [H]
+			i(161920),	-- Honorable Combatant's Cutlass [A]
+			i(159853),	-- Honorable Combatant's Cutlass [H]
+			i(161921),	-- Honorable Combatant's Deckpounder [A]
+			i(159855),	-- Honorable Combatant's Deckpounder [H]
+			i(161923),	-- Honorable Combatant's Polearm [A]
+			i(159858),	-- Honorable Combatant's Polearm [H]
+			i(161922),	-- Honorable Combatant's Shanker [A]
+			i(159857),	-- Honorable Combatant's Shanker [H]
+			i(162652),	-- Honorable Combatant's Spellblade [A]
+			i(162653),	-- Honorable Combatant's Spellblade [H]
+			i(161914),	-- Monel-Hardened Claymore [A]
+			i(152828),	-- Monel-Hardened Claymore [H]
+			i(161913),	-- Monel-Hardened Cutlass [A]
+			i(152827),	-- Monel-Hardened Cutlass [H]
+			i(161915),	-- Monel-Hardened Deckpounder [A]
+			i(152831),	-- Monel-Hardened Deckpounder [H]
+			i(161917),	-- Monel-Hardened Polearm [A]
+			i(152833),	-- Monel-Hardened Polearm [H]
+			i(161916),	-- Monel-Hardened Shanker [A]
+			i(152832),	-- Monel-Hardened Shanker [H]
+			i(161890),	-- Monel-Hardened Shield [A]
+			i(152818),	-- Monel-Hardened Shield [H]
+			i(167937, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Cutlass [A]
+			i(167936, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Cutlass [H]
+			i(167939, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Deckpounder [A]
+			i(167938, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Deckpounder [H]
+			i(167975, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Polearm [A]
+			i(167974, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Polearm [H]
+			i(167989, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Shanker [A]
+			i(167988, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Shanker [H]
+			i(167991, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Shield [A]
+			i(167990, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Shield [H]
+			i(167995, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Spellblade [A]
+			i(167994, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Spellblade [H]
+			i(164690, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Cutlass [A]
+			i(164649, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Cutlass [H]
+			i(164691, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Deckpounder [A]
+			i(164650, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Deckpounder [H]
+			i(164693, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Polearm [A]
+			i(164652, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Polearm [H]
+			i(164692, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Shanker [A]
+			i(164651, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Shanker [H]
+			i(164684, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Shield [A]
+			i(164648, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Shield [H]
+			i(164718, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Spellblade [A]
+			i(164719, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Spellblade [H]
+			i(161919),	-- Stormsteel Dagger [A]
+			i(152835),	-- Stormsteel Dagger [H]
+			i(162655),	-- Stormsteel Saber [A]
+			i(162665),	-- Stormsteel Saber [H]
+			i(161891),	-- Stormsteel Shield [A]
+			i(152819),	-- Stormsteel Shield [H]
+			i(161918),	-- Stormsteel Spear [A]
+			i(152834),	-- Stormsteel Spear [H]
+			i(170294, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Cutlass [A]
+			i(170302, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Cutlass [H]
+			i(170293, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Deckpounder [A]
+			i(170366, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Deckpounder [H]
+			i(170290, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Polearm [A]
+			i(170311, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Polearm [H]
+			i(170291, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Shanker [A]
+			i(170310, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Shanker [H]
+			i(170364, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Shield [A]
+			i(170365, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Shield [H]
+			i(170292, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Spellblade [A]
+			i(170309, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Spellblade [H]
 		}),
 	}),
 	prof(ENCHANTING, {
@@ -290,11 +307,6 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(152875),	-- Gloom Dust
 			i(152876),	-- Umbra Shard
 			i(152877),	-- Veiled Crystal
-		}),
-		cat(1240, {	-- Conversions
-			i(152668, {["timeline"]={"added 8.1.0"}}),	-- Expulsom
-			i(162460, {["timeline"]={"added 8.1.0"}}),	-- Hydrocore
-			i(162461, {["timeline"]={"added 8.1.0"}}),	-- Sanguicell
 		}),
 		cat(1232, {	-- Follower Equipment
 			i(165741),	-- Disenchanting Rod
@@ -398,9 +410,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 	prof(ENGINEERING, {
 		filter(MOUNTS, {
 			i(161134),	-- Mecha-Mogul Mk2 (MOUNT!)
-			i(158886, {	-- Super-Charged Engine
-				i(153594),	-- Xiwyllag ATV (MOUNT!)
-			}),
+			i(158886),	-- Super-Charged Engine
 		}),
 		filter(BATTLE_PETS, {
 			i(165849),	-- Mechantula

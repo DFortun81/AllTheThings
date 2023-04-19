@@ -226,6 +226,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7914),	-- Barbaric Iron Breastplate
 			i(7917),	-- Barbaric Iron Gloves
 			i(7915),	-- Barbaric Iron Helm
+			i(163964, {["timeline"] = {"added 8.0.1"}}),	-- Barbaric Iron Hauberk
 			i(7913),	-- Barbaric Iron Shoulders
 			applyclassicphase(PHASE_FIVE, i(22194)),	-- Black Grasp of the Destroyer
 			applyclassicphase(PHASE_FOUR, i(19690, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Bloodsoul Breastplate
@@ -512,11 +513,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				["timeline"] = { "created 1.11.1.5462", "added 7.1.5.23360" },
 			}),
 			-- #endif
-		}),
-		category(220, {	-- Chest
-			i(163964, {	-- Barbaric Iron Hauberk
-				["timeline"] = { "added 8.0.1" },
-			}),
 		}),
 	}),
 	prof(COOKING, {

@@ -22,39 +22,17 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				i(167804),	-- Slimy Sea Slug
 			},
 		}),
-		p(2678, {	-- Abyssal Slitherling
-			["crs"] = { 154814 },	-- Abyssal Slitherling
-		}),
-		p(2652, {	-- Bloodseeker
-			["crs"] = { 154714 },	-- Bloodseeker
-		}),
-		p(2648, {	-- Chitterspine Skitterling
-			["crs"] = { 154706 },	-- Chitterspine Skitterling
-		}),
-		p(2651, {	-- Deeptide Fingerling
-			["crs"] = { 154712 },	-- Deeptide Fingerling
-		}),
-		p(2647, {	-- Glimmershell Scuttler
-			["crs"] = { 154704 },	-- Glimmershell Scuttler
-		}),
-		p(2650, {	-- Great Sea Albatross
-			["crs"] = { 154710 },	-- Great Sea Albatross
-		}),
-		p(2649, {	-- Hissing Chitterspine
-			["crs"] = { 154708 },	-- Hissing Chitterspine
-		}),
-		p(2660, {	-- Muck Slug
-			["crs"] = { 154724 },	-- Muck Slug
-		}),
-		p(2645, {	-- Sandclaw Pincher
-			["crs"] = { 154697 },	-- Sandclaw Pincher
-		}),
-		p(2646, {	-- Sandclaw Sunshell
-			["crs"] = { 154702 },	-- Sandclaw Sunshell
-		}),
-		p(2653, {	-- Spireshell Snail
-			["crs"] = { 154716 },	-- Spireshell Snail
-		}),
+		pet(2678),	-- Abyssal Slitherling (PET!)
+		pet(2652),	-- Bloodseeker (PET!)
+		pet(2648),	-- Chitterspine Skitterling (PET!)
+		pet(2651),	-- Deeptide Fingerling (PET!)
+		pet(2647),	-- Glimmershell Scuttler (PET!)
+		pet(2650),	-- Great Sea Albatross (PET!)
+		pet(2649),	-- Hissing Chitterspine (PET!)
+		pet(2660),	-- Muck Slug (PET!)
+		pet(2645),	-- Sandclaw Pincher (PET!)
+		pet(2646),	-- Sandclaw Sunshell (PET!)
+		pet(2653),	-- Spireshell Snail (PET!)
 		q(56454, {	-- Crackling Mandible (A)
 			["itemID"] = 169632,	-- Crackling Mandible
 			["crs"] = { 154919 },	-- Voltgorger

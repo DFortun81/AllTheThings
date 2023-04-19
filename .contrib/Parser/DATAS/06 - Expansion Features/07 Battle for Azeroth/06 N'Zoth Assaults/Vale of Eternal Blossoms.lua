@@ -216,7 +216,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							["questID"] = 57342,
 							["coord"] = { 52.0, 41.7, 1530 },
 							["g"] = {
-								i(174473),	-- K'uddly (pet)
+								i(174473),	-- K'uddly (PET!)
 							},
 						}),
 						n(154394, {	-- Veskan the Fallen
@@ -234,7 +234,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 								i(175141, {	-- All-Seeing Left Eye
 									i(175140),	-- All-Seeing Eyes (TOY!)
 								}),
-								i(174474),	-- Corrupted Tentacle (pet)
+								i(174474),	-- Corrupted Tentacle (PET!)
 							},
 						}),
 						n(154087, {	-- Zror'um the Infinite
@@ -878,15 +878,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				}),
 				]]--
 				petbattle(filter(BATTLE_PETS, {
-					p(2867, {	-- Golden Chirper
-						["crs"] = { 162525 },
-					}),
-					p(2866, {	-- Voidglower
-						["crs"] = { 162506 },
-					}),
-					p(2865, {	-- Voidskimmer
-						["crs"] = { 162518 },
-					}),
+					pet(2867),	-- Golden Chirper (PET!)
+					pet(2866),	-- Voidglower (PET!)
+					pet(2865),	-- Voidskimmer (PET!)
 				})),
 				n(QUESTS, {
 					q(56538, {	-- Clans of the Mogu
@@ -1007,7 +1001,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(172009, {	-- Recipe: Contract: Rajani (RECIPE!)
 								["cost"] = 14000000,	-- 1,400g
 							}),
-							i(174480, {	-- Windfeather Quill
+							i(174480, {	-- Windfeather Quill (PET!)
 								["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charms
 							}),
 							i(174906, {	-- Lightning-Forged Augment Rune

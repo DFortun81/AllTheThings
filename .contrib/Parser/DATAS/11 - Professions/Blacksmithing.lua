@@ -5,6 +5,7 @@ local applytraining = function(g)
 	-- #endif
 	return g;
 end
+-- #if ANYCLASSIC
 profession(BLACKSMITHING, {
 	-- #if AFTER 7.0.1.20740
 	applytraining({
@@ -6644,3 +6645,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		-- #endif
 	}),
 }));
+-- #endif

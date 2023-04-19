@@ -85,15 +85,9 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0"
 				}),
 			}),
 			petbattle(filter(BATTLE_PETS, {
-				p(2657, {	-- Blackchasm Crawler
-					["crs"] = { 154718 },
-				}),
-				p(2658, {	-- Chitterspine Deepstalker
-					["crs"] = { 154720 },
-				}),
-				p(2659, {	-- Trench Slug
-					["crs"] = { 154722 },
-				}),
+				pet(2657),	-- Blackchasm Crawler (PET!)
+				pet(2658),	-- Chitterspine Deepstalker (PET!)
+				pet(2659),	-- Trench Slug (PET!)
 			})),
 			n(COMMON_BOSS_DROPS, {
 				i(169329),	-- Eternal Ornament

@@ -562,7 +562,7 @@ root(ROOTS.WorldEvents,  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_F
 			i(172013),	-- Celebration Firework
 			i(172015),	-- Celebration Package
 			i(171177),	-- Invitation from the Timewalkers
-			i(172016),	-- Lil' Nefarian
+			i(172016),	-- Lil' Nefarian (PET!)
 		}),
 	}),
 	n(QUESTS, {

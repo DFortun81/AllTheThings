@@ -64,6 +64,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 					},
 				}),
 			})),
+			prof(BLACKSMITHING, {
+				n(156666, {	-- Smith Au'berk <Blacksmithing Trainer>
+					["coord"] = { 48.2, 29.0, ORIBOS },
+					["g"] = SL_BLACKSMITHING,
+				}),
+			}),
 			prof(ENCHANTING, {
 				n(156683, {	-- Imbuer Au'vresh <Enchanting Trainer>
 					["coord"] = { 48.2, 29.0, ORIBOS },
