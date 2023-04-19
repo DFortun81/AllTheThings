@@ -806,6 +806,8 @@ app.L = {
 		["Season "] = "S",
 		["Sanctum Upgrades %> "] = "",
 		[CLASS.." %> "] = "",
+		["The Primalist Future"] = "Primalist Future",
+		["The Storm's Fury"] = "Storm's Fury",
 	};
 
 	["CUSTOM_DIFFICULTIES"] = {
