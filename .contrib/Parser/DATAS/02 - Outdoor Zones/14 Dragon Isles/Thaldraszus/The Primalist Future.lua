@@ -66,8 +66,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					q(74378, {	-- The Storm's Fury
 						i(202371, {	-- Glowing Primalist Cache
 							i(ESSENCE_OF_THE_STORM),
-							currency(ELEMENTAL_OVERFLOW),
 							currency(2122),	-- Storm Sigil
+						--	currency(ELEMENTAL_OVERFLOW),
+						--	While it drops Overflow, I untagged for easier view/forbidden reach is 100 times better to farm. Update it for DF Classic
 						}),
 						i(203476),	-- Primalist Cache
 					}),

@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			["isDaily"] = true,
 		},{
 			n(COMMON_BOSS_DROPS, {
+				currency(2122),	-- Storm Sigil
 				i(192772, {	-- Ancient Salamanther (MOUNT!)
 					["crs"] = {
 						200740,	-- Agni Blazehoof
@@ -43,7 +44,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						200960,	-- Warden Entrix
 						201013,	-- Wyrmslayer Angvardi
 					},
-			--	["isDaily"] = IGNORED_VALUE, Do we need that?
 				}),
 			}),
 			n(200740, {	-- Agni Blazehoof
