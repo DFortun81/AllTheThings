@@ -871,7 +871,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				}),
 				--[[	-- NOTE: looks like blizzard messed this one up. Commenting it out incase they fix their bug, but this is currently obtainable
 				n(FLIGHT_PATHS, {
-					fp(2544, {["name"]="Mistfall Village",
+					fp(2544, {	-- Mistfall Village
 						["lvl"] = 120,
 						["coord"] = { 38.9, 72.8, 1530 },
 					}),

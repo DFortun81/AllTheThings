@@ -42,6 +42,7 @@ local DESCRIPTION_SEPARATOR = "`";
 local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, sformat, strsplit
 	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, string.format, strsplit;
 local ATTAccountWideData, IsRetrieving;
+-- Retrieving Data Locals
 do
 local RETRIEVING_DATA, RETRIEVING_ITEM_INFO = RETRIEVING_DATA, RETRIEVING_ITEM_INFO;
 local RETRIEVING = strsplit(" ", RETRIEVING_DATA);
@@ -53,7 +54,7 @@ IsRetrieving = function(s)
 		or s:find(RETRIEVING)
 		or s:find("%[%]");
 end
-end
+end	-- Retrieving Data Locals
 local ALLIANCE_ONLY = {
 	1,	-- Human
 	3,	-- Dwarf
@@ -10777,7 +10778,7 @@ end
 end)();
 
 -- Flight Path Lib
-(function()
+do
 local baseMapIDs = {
 	12,		-- Kalimdor
 	13,		-- Eastern Kingdoms
@@ -10798,69 +10799,32 @@ local baseMapIDs = {
 	1355,	-- Nazjatar
 	1550,	-- The Shadowlands
 	1409,	-- Exile's Reach
+	1970,	-- Zereth Mortis
 	1978,	-- Dragon Isles
+	2055,	-- Sepulcher of the First Ones (has FPs inside)
 };
 local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes
 	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes;
 local cached;
--- local function round(num, decimals)
--- 	local shift = math.pow(10, decimals);
--- 	return math.floor(num * shift + 0.5) / shift;
--- end
-local function PopulateNode(node, nodeData, mapID)
-	if nodeData.name then
-		node.name = nodeData.name;
-	end
-	node.faction = nil;
-	if nodeData.faction and nodeData.faction ~= 0 then
-		node.r = nodeData.faction;
-	elseif nodeData.atlasName then
-		if nodeData.atlasName == "TaxiNode_Alliance" then
-			node.r = 2;
-		elseif nodeData.atlasName == "TaxiNode_Horde" then
-			node.r = 1;
-		end
-	end
-	node.coord = nil;
-	-- ugh, position is based on the whole map used to pull FPs, so it's pointless to store
-	-- if nodeData.position and nodeData.position.GetXY then
-	-- 	local x, y = nodeData.position:GetXY();
-	-- 	x = round(x * 100, 2);
-	-- 	y = round(y * 100, 2);
-	-- 	node.coord = { x, y, mapID };
-	-- end
-end
-AllTheThingsAD.FlightPathData = nil;
--- Used to harvest missing Flight Path data from all maps
--- /run AllTheThings.HarvestFlightPaths()	-- save missing FPs
-app.HarvestFlightPaths = function()
-	if not cached then
-		local newNodes, node = {};
-		SetDataMember("FlightPathData", newNodes);
-		for _,mapID in ipairs(baseMapIDs) do
-			-- if mapID == 882 then app.DEBUG_PRINT = true; end
-			local allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
-			if allNodeData then
-				for j,nodeData in ipairs(allNodeData) do
-					-- if nodeData.nodeID == 63 then app.DEBUG_PRINT = true; end
-					-- if app.DEBUG_PRINT then app.PrintTable(nodeData) end
-					node = app.SearchForObject("flightPathID", nodeData.nodeID, "key");
-					if node then
-						PopulateNode(node, nodeData, mapID);
-						-- if app.DEBUG_PRINT then app.PrintTable(node) end
-					elseif nodeData.name then
-						print("*NEW* ",nodeData.name)
-						node = {};
-						PopulateNode(node, nodeData, mapID);
-						-- app.PrintTable(node)
-						newNodes[nodeData.nodeID] = node;
-					end
-				end
+local HarvestFlightPaths = function(requestID)
+	if cached then return; end
+	app.PrintDebug("HarvestFlightPaths");
+	local userLocale = AllTheThingsAD.UserLocale;
+	local names = userLocale.FLIGHTPATH_NAMES or {};
+	local allNodeData;
+	for _,mapID in ipairs(baseMapIDs) do
+		allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
+		if allNodeData then
+			for _,nodeData in ipairs(allNodeData) do
+				names[nodeData.nodeID] = nodeData.name;
 			end
 		end
-		cached = true;
-		app.print("Harvested FlightPath Data. Check Saved Variables: AllTheThingsAD.FlightPathData")
-		return true;
+	end
+	userLocale.FLIGHTPATH_NAMES = names;
+	app.PrintDebugPrior("done")
+	cached = true;
+	if requestID then
+		return names[requestID];
 	end
 end
 local fields = {
@@ -10879,7 +10843,12 @@ local fields = {
 		return app.EmptyTable;
 	end,
 	["name"] = function(t)
-		return L["FLIGHTPATH_NAMES"][t.flightPathID] or t.info.name or L["VISIT_FLIGHT_MASTER"];
+		local names, id = L["FLIGHTPATH_NAMES"], t.flightPathID;
+		local name = names and names[id];
+		if not names or not name then
+			return HarvestFlightPaths(id) or L["VISIT_FLIGHT_MASTER"];
+		end
+		return name;
 	end,
 	["icon"] = function(t)
 		local r = t.r;
@@ -10890,10 +10859,6 @@ local fields = {
 	end,
 	["altQuests"] = function(t)
 		return t.info.altQuests;
-	end,
-	["description"] = function(t)
-		local description = t.info.description;
-		return (description and (description .."\n\n") or "") .. L["FLIGHT_PATHS_DESC"];
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleFlightPaths;
@@ -10963,13 +10928,17 @@ app.events.TAXIMAP_OPENED = function()
 	local mapID = app.GetCurrentMapID();
 	if cachedMaps[mapID] then return; end
 	cachedMaps[mapID] = true;
+	local userLocale = AllTheThingsAD.UserLocale;
+	local names = userLocale.FLIGHTPATH_NAMES or {};
 	local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID);
 	if allNodeData then
-		local newFPs, nodeID, cache;
+		local newFPs, nodeID;
 		local currentCharFPs, acctFPs = app.CurrentCharacter.FlightPaths, ATTAccountWideData.FlightPaths;
-		for j,nodeData in ipairs(allNodeData) do
+		for _,nodeData in ipairs(allNodeData) do
+			nodeID = nodeData.nodeID;
+			names[nodeID] = nodeData.name;
+			-- app.PrintDebug("FP",nodeID,nodeData.name)
 			if nodeData.state and nodeData.state < 2 then
-				nodeID = nodeData.nodeID;
 				if not currentCharFPs[nodeID] then
 					acctFPs[nodeID] = 1;
 					currentCharFPs[nodeID] = 1;
@@ -10977,16 +10946,12 @@ app.events.TAXIMAP_OPENED = function()
 					else tinsert(newFPs, nodeID); end
 				end
 			end
-			cache = app.SearchForObject("flightPathID", nodeID, "key");
-			if cache and not cache.name then
-				app.PrintDebug("Cached FP name",nodeData.name)
-				rawset(cache, "name", nodeData.name);
-			end
 		end
+		userLocale.FLIGHTPATH_NAMES = names;
 		UpdateRawIDs("flightPathID", newFPs);
 	end
 end
-end)();
+end	-- Flight Path Lib
 
 -- Follower Lib
 (function()
@@ -12687,7 +12652,7 @@ app.GetCurrentMapID = function()
 	if uiMapID then
 		local map = C_Map_GetMapInfo(uiMapID);
 		if map then
-			local ZONE_TEXT_TO_MAP_ID = app.L["ZONE_TEXT_TO_MAP_ID"];
+			local ZONE_TEXT_TO_MAP_ID = L["ZONE_TEXT_TO_MAP_ID"];
 			local real = GetRealZoneText();
 			local otherMapID = real and ZONE_TEXT_TO_MAP_ID[real];
 			if otherMapID then
@@ -23748,6 +23713,12 @@ app.Startup = function()
 	AllTheThingsAD = LocalizeGlobal("AllTheThingsAD", true);	-- For account-wide data.
 	-- Cache the Localized Category Data
 	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
+	-- Add User Locale data as a fallback for Global Locale data
+	if not AllTheThingsAD.UserLocale then
+		AllTheThingsAD.UserLocale = {};
+	end
+	L = setmetatable(app.L, { __index = AllTheThingsAD.UserLocale });
+	app.L = L;
 	app.CategoryNames = nil;
 
 	-- Cache the Localized Flight Path Data
@@ -23998,20 +23969,23 @@ app.Startup = function()
 	data = GetDataMember("CollectedToys");
 	if data then accountWideData.Toys = data; end
 
-	-- Clean up settings
-	local oldsettings = {};
-	for i,key in ipairs({
+	-- Clean up non-allowed keys
+	local validKeys = {
 		"LinkedAccounts",
 		"LocalizedCategoryNames",
-		--"LocalizedFlightPathDB",
+		"UserLocale",
 		"Position",
 		"RandomSearchFilter",
-	}) do
-		rawset(oldsettings, key, rawget(AllTheThingsAD, key));
+	};
+	local removeKeys = {};
+	for key,_ in pairs(AllTheThingsAD) do
+		if not contains(validKeys, key) then
+			tinsert(removeKeys, key);
+		end
 	end
-	wipe(AllTheThingsAD);
-	for key,value in pairs(oldsettings) do
-		rawset(AllTheThingsAD, key, value);
+	for _,key in ipairs(removeKeys) do
+		app.PrintDebug("wiped invalid AD key",key)
+		AllTheThingsAD[key] = nil;
 	end
 	GetDataMember("LinkedAccounts", {});
 

@@ -25,10 +25,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					}),
 				}),
 				n(FLIGHT_PATHS, {
-					fp(1760, {["name"]="Trueshot Lodge, Highmountain",
+					fp(1760, {	-- Trueshot Lodge, Highmountain
 						["coord"] = { 36.0, 27.8, TRUESHOT_LODGE },
 					}),
-					fp(1848, {["name"]="Trueshot Lodge (Eagle)",
+					fp(1848, {	-- Trueshot Lodge (Eagle)
 						["coord"] = { 39.8, 29.6, TRUESHOT_LODGE },
 					}),
 				}),

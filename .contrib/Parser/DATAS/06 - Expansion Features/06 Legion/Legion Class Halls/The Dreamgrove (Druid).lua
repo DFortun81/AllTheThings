@@ -23,7 +23,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					p(479),	-- Elfin Rabbit
 				})),
 				n(FLIGHT_PATHS, {
-					fp(1815, {["name"]="The Dreamgrove, Val'sharah",
+					fp(1815, {	-- The Dreamgrove, Val'sharah
 						["creatureID"] = 107457,	-- Danise Stargazer
 						["coord"] = { 61.7, 33.9, 747 },
 					}),

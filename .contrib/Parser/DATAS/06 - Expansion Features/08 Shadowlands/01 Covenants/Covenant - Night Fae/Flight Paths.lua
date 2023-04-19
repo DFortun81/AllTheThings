@@ -5,7 +5,7 @@
 root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(FLIGHT_PATHS, {
-			fp(2587, {["name"]="Ardenweald, Heart of the Forest",
+			fp(2587, {	-- Ardenweald, Heart of the Forest
 				["coord"] = { 51.2, 7.8, THE_TRUNK },
 			}),
 		}),
