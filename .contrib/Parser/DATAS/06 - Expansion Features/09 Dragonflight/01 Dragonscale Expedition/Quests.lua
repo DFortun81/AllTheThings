@@ -186,6 +186,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)
 					i(197386),	-- Renewed Proto-Drake: Spiked Jaw (DM!)
 					i(197360),	-- Renewed Proto-Drake: Spined Brow (DM!)
+					i(197369, {	-- Renewed Proto-Drake: Brown Hair (DM!)
+						["description"] = "This item is only available to pick the first time you do this quest. If you didnt pick it, its unobtainable for you.\nPlease sent a bug report so Blizzard.",
+					}),
 				},
 			}),
 			q(72035, {	-- Dragon Isles Supplies

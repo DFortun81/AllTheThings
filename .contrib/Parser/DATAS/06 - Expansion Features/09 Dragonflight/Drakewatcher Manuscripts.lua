@@ -846,7 +846,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197357),	-- Renewed Proto-Drake: Armor
 			i(197348),	-- Renewed Proto-Drake: Black and Red Armor
 			i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor
-			i(197369),	-- Renewed Proto-Drake: Brown Hair
 			i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 			i(197371),	-- Renewed Proto-Drake: Green Hair
 			i(197356),	-- Renewed Proto-Drake: Hairy Back
