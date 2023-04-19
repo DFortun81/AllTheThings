@@ -335,7 +335,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
 				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 				["g"] = {
+					i(198775),	-- Ensemble: Renowned Expeditioner's Cloth Armor
+					i(198776),	-- Ensemble: Renowned Expeditioner's Leather Armor
 					i(198777),	-- Ensemble: Renowned Expeditioner's Mail Armor
+					i(198778),	-- Ensemble: Renowned Expeditioner's Plate Armor
 				},
 			}),
 			q(72294, {	-- Expedition Crafting Knowledge
