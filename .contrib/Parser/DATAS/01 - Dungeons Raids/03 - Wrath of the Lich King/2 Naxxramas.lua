@@ -60,6 +60,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
 							-- #endif
 							["lvl"] = lvlsquish(78, 78, 30),
+							["groups"] = {
+								i(44582, {	-- Key to the Focusing Iris
+									["timeline"] = { "deleted 4.2.0" },
+									-- #if ANYCLASSIC
+									["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
+									-- #endif
+								}),
+							},
 						}),
 					}),
 					n(ZONE_DROPS, {
@@ -713,6 +721,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						q(13375, {	-- The Heroic Key to the Focusing Iris (Quest)
 							["provider"] = { "i", 44577 },	-- Heroic Key to the Focusing Iris (Item)
 							["lvl"] = lvlsquish(78, 78, 30),
+							["groups"] = {
+								i(44577, {	-- Heroic Key to the Focusing Iris
+									["timeline"] = { "deleted 4.2.0" },
+								}),
+							},
 						}),
 					}),
 					n(ZONE_DROPS, {
