@@ -408,7 +408,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(2501, {	-- Badlands Reagent Run II
 					["qg"] = 1470,	-- Ghak Healtouch
-					["sourceQuest"] = 2500,	-- Badlands Reagent Run
+					["sourceQuest"] = 17,	-- Uldaman Reagent Run
 					["coord"] = { 37.07, 49.38, LOCH_MODAN },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = ALCHEMY,
