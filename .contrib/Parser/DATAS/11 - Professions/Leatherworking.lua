@@ -2297,14 +2297,29 @@ profession(LEATHERWORKING, {
 					["recipeID"] = 62448,
 				},
 				{
+					["name"] = "Fur Lining - Arcane Resist",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 57701
+				},
+				{
 					["name"] = "Fur Lining - Attack Power",
 					["timeline"] = { "removed 6.0.2" },
 					["recipeID"] = 57683
 				},
 				{
+					["name"] = "Fur Lining - Fire Resist",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 57692
+				},
+				{
 					["name"] = "Fur Lining - Frost Resist",
 					["timeline"] = { "removed 6.0.2" },
 					["recipeID"] = 57694
+				},
+				{
+					["name"] = "Fur Lining - Nature Resist",
+					["timeline"] = { "removed 6.0.2" },
+					["recipeID"] = 57699
 				},
 				{
 					["name"] = "Fur Lining - Spell Power / Fur Lining - Intellect [MOP+]",
@@ -8157,6 +8172,11 @@ itemrecipe("Pattern: Eviscerator's Treads", 44520, 60712, WRATH_PHASE_ONE);
 itemrecipe("Pattern: Eviscerator's Waistguard", 44518, 60706, WRATH_PHASE_ONE);
 itemrecipe("Pattern: Footpads of Impending Death", 49961, 70557, WRATH_PHASE_FOUR);
 itemrecipe("Pattern: Footpads of Silence", 45099, 63199, WRATH_PHASE_TWO);
+itemrecipe("Pattern: Fur Lining - Arcane Resist", 44563, 57701, WRATH_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Pattern: Fur Lining - Fire Resist", 44559, 57692, WRATH_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Pattern: Fur Lining - Frost Resist", 44560, 57694, WRATH_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Pattern: Fur Lining - Nature Resist", 44562, 57699, WRATH_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Pattern: Fur Lining - Shadow Resist", 44561, 57696, WRATH_PHASE_ONE, "removed 5.0.4");
 itemrecipe("Pattern: Giantmaim Bracers", 44547, 60755, WRATH_PHASE_ONE);
 itemrecipe("Pattern: Giantmaim Legguards", 44546, 60754, WRATH_PHASE_ONE);
 itemrecipe("Pattern: Icy Scale Belt", 44588, 61000, WRATH_PHASE_ONE);

@@ -2292,36 +2292,40 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 195344 },	-- Discarded Soul Crystal
 					})),
 					i(37330, {	-- Formula: Enchant Cloak - Superior Arcane Resistance (RECIPE!)
+						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 						["crs"] = {
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
-						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 					}),
 					i(37331, {	-- Formula: Enchant Cloak - Superior Fire Resistance (RECIPE!)
+						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 						["crs"] = {
 							31321,	-- Skeletal Runesmith
 							30921,	-- Skeletal Runesmith
 						},
-						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 					}),
 					i(37332, {	-- Formula: Enchant Cloak - Superior Frost Resistance (RECIPE!)
-						["crs"] = { 32289 },	-- Damned Apothecary
 						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
+						["cr"] = 32289,	-- Damned Apothecary
 					}),
 					i(37333, {	-- Formula: Enchant Cloak - Superior Nature Resistance (RECIPE!)
-						["crs"] = {
-							32290,	-- Cult Alchemist
-						},
 						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
+						["cr"] = 32290,	-- Cult Alchemist
 					}),
 					i(37334, {	-- Formula: Enchant Cloak - Superior Shadow Resistance (RECIPE!)
-						["crs"] = { 32349 },	-- Cultist Shard Watcher
 						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
+						["cr"] = 32349,	-- Cultist Shard Watcher
+					}),
+					i(44563, {	-- Pattern: Fur Lining - Arcane Resist
+						["timeline"] = { "removed 5.0.4" },
+						["crs"] = {
+							32297,	-- Cult Researcher
+							31702,	-- Frostbrood Spawn
+						},
 					}),
 					i(44559, {	-- Pattern: Fur Lining - Fire Resist
 						["timeline"] = { "removed 5.0.4" },
-						["spellID"] = 0,
 						["crs"] = {
 							31321,	-- Skeletal Runesmith
 							30921,	-- Skeletal Runesmith
@@ -2329,18 +2333,15 @@ root(ROOTS.Zones, {
 					}),
 					i(44560, {	-- Pattern: Fur Lining - Frost Resist
 						["timeline"] = { "removed 5.0.4" },
-						["crs"] = { 32289 },	-- Damned Apothecary
+						["cr"] = 32289,	-- Damned Apothecary
 					}),
-					i(44563, {	-- Pattern: Fur Lining - Nature Resist
+					i(44562, {	-- Pattern: Fur Lining - Nature Resist
 						["timeline"] = { "removed 5.0.4" },
-						["crs"] = {
-							32297,	-- Cult Researcher
-							31702,	-- Frostbrood Spawn
-						},
+						["cr"] = 32290,	-- Cult Alchemist <Cult of the Damned>
 					}),
 					i(44561, {	-- Pattern: Fur Lining - Shadow Resist
 						["timeline"] = { "removed 5.0.4" },
-						["crs"] = { 32349 },	-- Cultist Shard Watcher
+						["cr"] = 32349,	-- Cultist Shard Watcher
 					}),
 					i(44564, {	-- Recipe: Mighty Arcane Protection Potion
 						["coord"] = { 50.1, 31.8, ICECROWN },
@@ -2360,15 +2361,15 @@ root(ROOTS.Zones, {
 					}),
 					i(44566, {	-- Recipe: Mighty Frost Protection Potion
 						["coord"] = { 52.1, 32.0, ICECROWN },
-						["crs"] = { 32289 },	-- Damned Apothecary
+						["cr"] = 32289,	-- Damned Apothecary
 					}),
 					i(44567, {	-- Recipe: Mighty Nature Protection Potion
 						["coord"] = { 50.1, 31.8, ICECROWN },
-						["crs"] = { 32290 },	-- Cult Alchemist
+						["cr"] = 32290,	-- Cult Alchemist <Cult of the Damned>
 					}),
 					i(44568, {	-- Recipe: Mighty Shadow Protection Potion
 						["coord"] = { 48.0, 67.8, ICECROWN },
-						["crs"] = { 32349 },	-- Cultist Shard Watcher
+						["cr"] = 32349,	-- Cultist Shard Watcher
 					}),
 				}),
 			},
