@@ -1493,6 +1493,7 @@ namespace ATT
             CheckRequireSkill(data);
             CheckHeirloom(data);
             CheckTrackableFields(data);
+            CheckRequiredDataRelationships(data);
             Validate_SourceQuests(data);
             Validate_AltQuests(data);
             Items.DetermineSourceID(data);
@@ -1556,6 +1557,21 @@ namespace ATT
             }
 
             return true;
+        }
+
+        /// <summary>
+        /// Checks the data for any required data relationships based on existing fields
+        /// </summary>
+        private static void CheckRequiredDataRelationships(Dictionary<string, object> data)
+        {
+            // Criteria groups need to know their associated Achievement
+            if (data.TryGetValue("criteriaID", out decimal criteriaID))
+            {
+                if (!data.ContainsKey("achID") && CurrentParentGroup.Value.Key != "achID")
+                {
+                    LogError($"'criteriaID' {criteriaID} missing 'achID' under non-Achievement group [{CurrentParentGroup.Value.Key}:{CurrentParentGroup.Value.Value}]", data);
+                }
+            }
         }
 
         private static void CheckTrackableFields(Dictionary<string, object> data)

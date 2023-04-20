@@ -518,7 +518,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					-- TODO: ["_quests"] = {  },
 				}),
 				crit(9, {	-- Seething Cache
-					["_quests"] = { 49341 },
+					-- ["_quests"] = { 49341 }, -- this is wrong
 				}),
 				crit(10, {	-- Well-Chewed Chest
 					-- TODO: ["_quests"] = {  },
