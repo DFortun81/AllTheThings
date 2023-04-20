@@ -6785,6 +6785,7 @@ local function UpdateSearchResults(searchResults)
 		for _,o in ipairs(found) do
 			Update(o, true);
 		end
+		wipe(searchCache);
 	end
 	-- app.PrintDebug("UpdateSearchResults Done")
 end
