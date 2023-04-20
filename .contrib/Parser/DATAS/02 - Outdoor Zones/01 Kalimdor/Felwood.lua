@@ -1631,7 +1631,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = {{ "i", 11514, 4 }},	-- Fel Creep
 					["requireSkill"] = HERBALISM,
 					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
