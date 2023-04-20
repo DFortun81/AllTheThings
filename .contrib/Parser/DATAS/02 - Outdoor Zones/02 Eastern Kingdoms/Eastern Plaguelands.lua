@@ -902,6 +902,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 83.8, 50.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 3.0.1.8681" },
 					["classes"] = { DEATHKNIGHT },
+					["sourceQuests"] = {
+						39017,	-- HQT representing if the player has completed any of their artifacts (assumed)
+					},
 				}),
 				fp(87, {	-- Crown Guard Tower, Eastern Plaguelands
 					["cr"] = 44232,	-- Janice Myers <Flight Master>

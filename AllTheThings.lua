@@ -10840,17 +10840,6 @@ local fields = {
 	["key"] = function(t)
 		return "flightPathID";
 	end,
-	-- will probably deprecate this in favor of auto-locale from raw name in Location files since its only purpose would be to store the name...
-	["info"] = function(t)
-		local info = app.FlightPathDB[t.flightPathID];
-		if info then
-			rawset(t, "info", info);
-			if info.mapID then app.CacheField(t, "mapID", info.mapID); end
-			if info.qg then app.CacheField(t, "creatureID", info.qg); end
-			return info;
-		end
-		return app.EmptyTable;
-	end,
 	["name"] = function(t)
 		local names, id = L["FLIGHTPATH_NAMES"], t.flightPathID;
 		local name = names and names[id];
@@ -10865,9 +10854,6 @@ local fields = {
 			return r == Enum.FlightPathFaction.Horde and app.asset("fp_horde") or app.asset("fp_alliance");
 		end
 		return app.asset("fp_neutral");
-	end,
-	["altQuests"] = function(t)
-		return t.info.altQuests;
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleFlightPaths;
@@ -10887,30 +10873,6 @@ local fields = {
 	["saved"] = function(t)
 		return app.CurrentCharacter.FlightPaths[t.flightPathID];
 	end,
-	["coord"] = function(t)
-		return t.info.coord;
-	end,
-	["c"] = function(t)
-		return t.info.c;
-	end,
-	["r"] = function(t)
-		local faction = t.info.faction or t.info.r;
-		if faction and faction > 0 then
-			return faction;
-		end
-	end,
-	["u"] = function(t)
-		return t.info.u;
-	end,
-	["crs"] = function(t)
-		if t.info.qg then
-			rawset(t, "crs", { t.info.qg });
-		end
-		return rawget(t, "crs");
-	end,
-	["mapID"] = function(t)
-		return t.info.mapID;
-	end,
 	["nmc"] = function(t)
 		local c = t.c;
 		if c and not containsValue(c, app.ClassIndex) then
@@ -10923,9 +10885,6 @@ local fields = {
 	["nmr"] = function(t)
 		local r = t.r;
 		return r and r ~= app.FactionID;
-	end,
-	["sourceQuests"] = function(t)
-		return t.info.sourceQuests;
 	end,
 };
 app.BaseFlightPath = app.BaseObjectFields(fields, "BaseFlightPath");
@@ -23729,10 +23688,6 @@ app.Startup = function()
 	L = setmetatable(app.L, { __index = AllTheThingsAD.UserLocale });
 	app.L = L;
 	app.CategoryNames = nil;
-
-	-- Cache the Localized Flight Path Data
-	--AllTheThingsAD.LocalizedFlightPathDB = setmetatable(AllTheThingsAD.LocalizedFlightPathDB or {}, { __index = app.FlightPathDB });
-	--app.FlightPathDB = nil;	-- TODO: Deprecate this.
 
 	-- Cache information about the player.
 	local class, classID = UnitClassBase("player");

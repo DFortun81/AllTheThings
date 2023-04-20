@@ -77,6 +77,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(604, {	-- Dreadmaul Hold, Blasted Lands
+					["description"] = "Speak to Zidormi to visit the past to access this point.",
 					["cr"] = 43121,	-- Preda <Wind Rider Master>
 					["coord"] = { 43.6, 14.2, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -85,6 +86,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(45, {	-- Nethergarde Keep, Blasted Lands
 					["cr"] = 8609,	-- Alexandra Constantine <Gryphon Master>
 					-- #if AFTER CATA
+					["description"] = "Speak to Zidormi to visit the past to access this point.",
 					["coord"] = { 61.2, 21.6, BLASTED_LANDS },
 					-- #else
 					["coord"] = { 65.6, 24.4, BLASTED_LANDS },
@@ -92,24 +94,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1538, {	-- Shattered Beachhead
+					["description"] = "Must be in the current version of Blasted Lands to access this point.",
 					["cr"] = 85731,	-- Araazi <Flight Master>
 					["coord"] = { 67.6, 28.0, BLASTED_LANDS },
 					["timeline"] = { "added 6.0.1.18566" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1537, {	-- Shattered Landing
+					["description"] = "Must be in the current version of Blasted Lands to access this point.",
 					["cr"] = 85734,	-- Ameri Windblade <Flight Master>
 					["coord"] = { 72.8, 48.6, BLASTED_LANDS },
 					["timeline"] = { "added 6.0.1.18566" },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(603, {	-- Sunveil Excursion, Blasted Lands
+					["description"] = "Speak to Zidormi to visit the past to access this point.",
 					["cr"] = 43114,	-- Salena <Dragonhawk Master>
 					["coord"] = { 50.8, 72.8, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(602, {	-- Surwich, Blasted Lands
+					["description"] = "Speak to Zidormi to visit the past to access this point.",
 					["cr"] = 43107,	-- Graham McAllister <Hippogryph Master>
 					["coord"] = { 47.0, 89.2, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },

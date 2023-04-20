@@ -23,11 +23,13 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		fp(2403, {	-- Kelya's Grave
 			["coord"] = { 74.2, 24.9, NAZJATAR },
 			["description"] = "Must complete the |cFFFFD700On Ghostly Wings|r quest to unlock this path.",
+			["sourceQuest"] = 56422,	-- On Ghostly Wings
 		}),
 		fp(2408, {	-- Mezzamere
 			["description"] = "Must complete the |cFFFFD700Where the Road Leads|r quest to unlock this path.",
 			["coord"] = { 39.9, 54.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
+			["sourceQuest"] = 55175,	-- Where the Road Leads
 		}),
 		fp(2404, {	-- Newhome
 			["coord"] = { 47.5, 63.3, NAZJATAR },
@@ -37,11 +39,13 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 49.8, 23.6, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["description"] = "Must complete the zone storyline to unlock this path.",
+			-- TODO: sourceQuest?
 		}),
 		fp(2482, {	-- The Tidal Conflux (H)
 			["coord"] = { 51.1, 23.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["description"] = "Must complete the zone storyline to unlock this path.",
+			-- TODO: sourceQuest?
 		}),
 		fp(2407, {	-- Utama's Stand
 			["coord"] = { 61.7, 36.5, NAZJATAR },

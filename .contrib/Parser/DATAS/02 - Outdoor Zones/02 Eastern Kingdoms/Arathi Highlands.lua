@@ -106,6 +106,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 13.4, 34.8, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+					-- TODO: requires sourceQuests/altQuests as it is not collectible for my main
 				}),
 				fp(17, {	-- Hammerfall, Arathi
 					-- #if AFTER BFA

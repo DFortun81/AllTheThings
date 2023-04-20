@@ -7,7 +7,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(FLIGHT_PATHS, {
 				fp(646, {	-- Forsaken Forward Command, Gilneas
+					["description"] = "Becomes available during |cFFFFD700To Forsaken Forward Command|r and is no longer available after |cFFFFD700The Great Escape|r.",
 					["races"] = HORDE_ONLY,
+					["altQuests"] = { 27438 },	-- The Great Escape
+					["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
+					["coord"] = { 57.2, 17.8, RUINS_OF_GILNEAS },
 				}),
 			}),
 			n(QUESTS, {
