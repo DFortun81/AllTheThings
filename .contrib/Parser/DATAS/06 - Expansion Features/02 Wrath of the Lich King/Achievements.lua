@@ -236,7 +236,11 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 					-- #else
 					{ 64.3, 15.5, BLASTED_LANDS },
 					-- #endif
+					-- #if AFTER CATA
 					{ 54.2, 31.0, DARNASSUS },
+					-- #else
+					{ 54.4, 13.0, DARNASSUS },
+					-- #endif
 				},
 				["maps"] = { SCARLET_MONASTERY },
 			}),
