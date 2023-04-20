@@ -733,7 +733,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2920,	-- Lucien Tosselwrench
 					["sourceQuests"] = {
 						714,	-- Gyro... What?
+						-- #if BEFORE WRATH
 						712,	-- Study of the Elements: Rock (3/3)
+						-- #endif
 					},
 					["coord"] = { 25.8, 44.2, BADLANDS },
 					["timeline"] = { "removed 4.0.3" },
