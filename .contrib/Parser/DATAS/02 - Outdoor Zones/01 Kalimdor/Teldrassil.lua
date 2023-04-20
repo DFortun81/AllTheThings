@@ -713,8 +713,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1581, {	-- Elixirs for the Bladeleafs
 					["qg"] = 2083,	-- Syral Bladeleaf
-					["coord"] = { 55.8, 50.4, TELDRASSIL },
 					["description"] = "Available at Skill Level 20.",
+					-- #if AFTER CATA
+					["coord"] = { 55.8, 50.4, TELDRASSIL },
+					-- #else
+					["coord"] = { 56, 57.8, TELDRASSIL },
+					-- #endif
 					["requireSkill"] = ALCHEMY,
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
