@@ -664,7 +664,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						},
 						{
 							["itemID"] = 21302,		-- Handbook of Deadly Poison V
-							-- #if AFTER CATA
+							-- #if AFTER WRATH
 							["spellID"] = 0,
 							-- #else
 							["recipeID"] = 25347,	-- Deadly Poison V
