@@ -9,12 +9,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 		["groups"] = {
 			n(FLIGHT_PATHS, {
 				fp(2096, {	-- Tol Dagor, Tiragarde Sound [Alliance]
-					["description"] = "Tol Dagor, Tiragarde Sound",
 					["coord"] = { 37.8, 92.4, TOL_DAGOR },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(2276, {	-- Tol Dagor, Tiragarde Sound [Horde]
-					["description"] = "Tol Dagor, Tiragarde Sound",
 					["coord"] = { 23.4, 48.2, TOL_DAGOR },
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			n(QUESTS, {

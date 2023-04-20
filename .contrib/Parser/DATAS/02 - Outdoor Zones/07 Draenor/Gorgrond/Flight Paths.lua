@@ -9,6 +9,7 @@ _.Zones =
 			n(FLIGHT_PATHS, {
 				fp(1511, {	-- Bastion Rise, Gorgrond
 					["coord"] = { 46.4, 92.4, GORGROND },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1512, {	-- Bastion Rise, Gorgrond
 					["coord"] = { 47.4, 90.8, GORGROND },
@@ -21,6 +22,7 @@ _.Zones =
 				}),
 				fp(1523, {	-- Deeproot, Gorgrond
 					["coord"] = { 46.4, 76.6, GORGROND },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1580, {	-- Everbloom Overlook, Gorgrond
 					["coord"] = { 68.6, 28.8, GORGROND },
@@ -33,6 +35,7 @@ _.Zones =
 				}),
 				fp(1519, {	-- Highpass, Gorgrond
 					["coord"] = { 52.8, 59.4, GORGROND },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1524, {	-- Iron Docks, Gorgrond
 					["coord"] = { 43.0, 20.2, GORGROND },
@@ -42,6 +45,7 @@ _.Zones =
 				}),
 				fp(1518, {	-- Wildwood Wash, Gorgrond
 					["coord"] = { 64.0, 57.4, GORGROND },
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 		}),

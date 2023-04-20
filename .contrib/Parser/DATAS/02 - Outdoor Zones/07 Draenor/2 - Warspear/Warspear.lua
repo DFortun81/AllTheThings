@@ -19,6 +19,7 @@ _.Zones =
 				n(FLIGHT_PATHS, {
 					fp(1408, {	-- Warspear, Ashran
 						["coord"] = { 44.2, 33.9, WARSPEAR },
+						["races"] = HORDE_ONLY,
 					}),
 				}),
 				n(QUESTS, {

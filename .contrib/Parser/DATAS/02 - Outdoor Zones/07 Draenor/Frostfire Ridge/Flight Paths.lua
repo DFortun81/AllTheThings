@@ -18,6 +18,7 @@ _.Zones =
 				}),
 				fp(1528, {	-- Iron Siegeworks, Frostfire Ridge
 					["coord"] = { 87.4, 62.6, FROSTFIRE_RIDGE },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1390, {	-- Stonefang Outpost, Frostfire Ridge
 					["coord"] = { 40.0, 51.8, FROSTFIRE_RIDGE },

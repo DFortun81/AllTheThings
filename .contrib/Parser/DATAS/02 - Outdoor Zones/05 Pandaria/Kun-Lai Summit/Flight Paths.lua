@@ -30,6 +30,7 @@ _.Zones =
 				}),
 				fp(1020, {	-- Westwind Rest, Kun-Lai Summit
 					["coord"] = { 54.0, 84.2, KUN_LAI_SUMMIT },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1025, {	-- Winter's Blossom, Kun-Lai Summit
 					["coord"] = { 34.6, 59.0, KUN_LAI_SUMMIT },

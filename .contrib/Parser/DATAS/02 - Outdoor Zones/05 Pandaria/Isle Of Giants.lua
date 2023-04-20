@@ -12,9 +12,11 @@ _.Zones =
 				n(FLIGHT_PATHS, {
 					fp(1221, {	-- Beeble's Wreck, Isle Of Giants
 						["coord"] = { 41.8, 79.2, ISLE_OF_GIANTS },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(1222, {	-- Bozzle's Wreck, Isle Of Giants
 						["coord"] = { 51.8, 75.4, ISLE_OF_GIANTS },
+						["races"] = HORDE_ONLY,
 					}),
 				}),
 				n(RARES, {

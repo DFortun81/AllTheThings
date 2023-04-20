@@ -21,6 +21,7 @@ _.Zones =
 				}),
 				fp(1506, {	-- Telaari Station, Nagrand
 					["coord"] = { 63.6, 61.6, DRAENOR_NAGRAND },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1502, {	-- The Ring of Trials, Nagrand
 					["coord"] = { 79.8, 49.6, DRAENOR_NAGRAND },
@@ -33,6 +34,7 @@ _.Zones =
 				}),
 				fp(1507, {	-- Yrel's Watch, Nagrand
 					["coord"] = { 62.6, 40.6, DRAENOR_NAGRAND },
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 		}),

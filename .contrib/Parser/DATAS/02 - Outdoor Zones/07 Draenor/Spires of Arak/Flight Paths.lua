@@ -21,6 +21,7 @@ _.Zones =
 				}),
 				fp(1493, {	-- Southport, Spires of Arak
 					["coord"] = { 39.0, 61.8, SPIRES_OF_ARAK },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1509, {	-- Talon Watch, Spires of Arak
 					["coord"] = { 61.8, 42.6, SPIRES_OF_ARAK },

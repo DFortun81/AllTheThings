@@ -19,15 +19,18 @@ _.Zones =
 				}),
 				fp(1190, {	-- Lion's Landing, Krasarang Wilds
 					["coord"] = { 88.4, 34.6, KRASARANG_WILDS },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(993, {	-- Marista, Krasarang Wilds
 					["coord"] = { 52.4, 76.6, KRASARANG_WILDS },
 				}),
 				fp(991, {	-- Sentinel Basecamp, Krasarang Wilds
 					["coord"] = { 25.2, 33.4, KRASARANG_WILDS },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(988, {	-- The Incursion, Krasarang Wilds
 					["coord"] = { 67.6, 32.4, KRASARANG_WILDS },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(987, {	-- Thunder Cleft, Krasarang Wilds
 					["coord"] = { 59.2, 24.6, KRASARANG_WILDS },

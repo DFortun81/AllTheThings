@@ -116,6 +116,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 43088,	-- Yedrin <Flight Master>
 					["coord"] = { 30.6, 34.6, SWAMP_OF_SORROWS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			n(QUESTS, {

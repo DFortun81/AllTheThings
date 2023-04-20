@@ -19,6 +19,7 @@ _.Zones =
 				n(FLIGHT_PATHS, {
 					fp(1420, {	-- Stormshield (Alliance), Ashran
 						["coord"] = { 30.6, 48.4, STORMSHIELD },
+						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 				n(QUESTS, {

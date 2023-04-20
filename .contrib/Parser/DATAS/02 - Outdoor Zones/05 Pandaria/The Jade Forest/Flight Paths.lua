@@ -25,9 +25,11 @@ _.Zones =
 				}),
 				fp(966, {	-- Paw'Don Village, Jade Forest
 					["coord"] = { 46.0, 85.0, THE_JADE_FOREST },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(972, {	-- Pearlfin Village, Jade Forest
 					["coord"] = { 58.0, 82.4, THE_JADE_FOREST },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1080, {	-- Serpent's Overlook, Jade Forest
 					["coord"] = { 43.0, 68.4, THE_JADE_FOREST },
