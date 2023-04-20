@@ -3571,6 +3571,10 @@ local ResolveFunctions = {
 		-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
 		if GetAchievementNumCriteria then
 			local achievementID = o.achievementID;
+			if not achievementID then
+				app.PrintDebug("'achievement_criteria' used on a non-Achievement group")
+				return;
+			end
 			local cache;
 			local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject;
 			for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
@@ -9097,7 +9101,12 @@ end
 -- Achievement Criteria Lib
 local EJ_GetCreatureInfo = EJ_GetCreatureInfo;
 local function GetParentAchievementInfo(t, key)
-	local achievement = app.SearchForObject("achievementID", t.achievementID, "key");
+	local id = t.achievementID;
+	if not id then
+		app.PrintDebug("Missing achievementID for criteria reference",t.hash)
+		return;
+	end
+	local achievement = app.SearchForObject("achievementID", id, "key");
 	if achievement then
 		rawset(t, "c", achievement.c);
 		rawset(t, "classID", achievement.classID);
@@ -9105,7 +9114,7 @@ local function GetParentAchievementInfo(t, key)
 		rawset(t, "r", achievement.r);
 		return rawget(t, key);
 	end
-	DelayedCallback(app.report, 1, "Missing Referenced Achievement!",t.achievementID);
+	DelayedCallback(app.report, 1, "Missing Referenced Achievement!",id);
 end
 local criteriaFields = {
 	["key"] = function(t)
