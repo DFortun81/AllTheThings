@@ -354,10 +354,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
 						["repeatable"] = true,
 					}),
-					q(70212, {	-- Penumbrus
-						["provider"] = { "n", 189289 },	-- Penumbrus
-						["coord"] = { 24.5, 54.4, THE_WAKING_SHORES },
-					}),
 					q(70763, {	-- Worldcarver A'tir
 						["provider"] = { "n", 186859 },	-- Worldcarver A'tir
 						["coord"] = { 30.0, 55.4, THE_WAKING_SHORES },
@@ -434,15 +430,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						i(200207),	-- Petrified Fungal Spores
 					},
 				}),
-				n(189289, {	-- Penumbrus
-					["description"] = "Underground",
-					["coord"] = { 24.4, 54.5, THE_WAKING_SHORES },
-					["questID"] = 74019,
-					["isDaily"] = true,
-					["g"] = {
-						i(200144),	-- Band of the Unscalable
-					},
-				}),
+				--	n(189289),	-- Penumbrus // under DF/Timed Based Rare
 				n(193232, {	-- Rasnar the War Ender
 					["coord"] = { 30.2, 60.4, THE_WAKING_SHORES },
 					["questID"] = 74051,
