@@ -4,7 +4,7 @@
 
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 	n(PROFESSIONS, {
-		prof(ENCHANTING, {
+		prof(BLACKSMITHING, {
 			["crs"] = {
 				153817, -- Instructor Alikana <Profession Trainer> (A)
 				154321, -- Jada <Profession Trainer> (H)

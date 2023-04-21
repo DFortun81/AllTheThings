@@ -2098,6 +2098,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateDifficulty(t.difficultyID, t);
 		elseif t.spellID then
 			t = app.CreateSpell(t.spellID, t);
+		elseif t.f or t.filterID then
+			t = app.CreateFilter(t.f or t.filterID, t);
 		else
 			-- if app.DEBUG_PRINT then print("CreateObject by value, no specific object type"); app.PrintTable(t); end
 			if rootOnly then
@@ -3216,6 +3218,17 @@ local function ContainsAnyValue(arr, ...)
 		end
 	end
 end
+-- Checks if any of the provided arguments match the provided value
+local function ContainsValue(val, ...)
+	local value;
+	local vals = select("#", ...);
+	for i=1,vals do
+		value = select(i, ...);
+		if value == val then
+			return true;
+		end
+	end
+end
 local function Resolve_Extract(results, group, field)
 	if group[field] then
 		tinsert(results, group);
@@ -3280,7 +3293,7 @@ local ResolveFunctions = {
 		local search = app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", requireSkill);
 		ArrayAppend(searchResults, search);
 	end,
-	-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
+	-- Instruction to fill with identical content Sourced elsewhere for this group (no symlinks)
 	["fill"] = function(finalized, searchResults, o)
 		local okey = o.key;
 		if okey then
@@ -4011,6 +4024,54 @@ local SubroutineCache = {
 			relictype(finalized, searchResults, o, "relictype", ...);	-- only specific relic type(s)
 		end
 		modID(finalized, searchResults, o, "modID", 43);	-- apply the relinquished modID
+	end,
+	["common_island_expedition_salvage"] = function(finalized, searchResults, o, cmd, ...)
+		local select, push, finalize = ResolveFunctions.select, ResolveFunctions.push, ResolveFunctions.finalize;
+		-- Common Mount(s)
+		if ContainsValue(100, ...) then
+			select(finalized, searchResults, o, "select", "itemID",
+				166470	-- Stonehide Elderhorn
+			);
+			push(finalized, searchResults, o, "push", "f", 100);	-- Mounts Filter header
+			finalize(finalized, searchResults);
+		end
+		-- Common Pets
+		if ContainsValue(101, ...) then
+			select(finalized, searchResults, o, "select", "itemID",
+				166486,	-- Baby Stonehide
+				163818,	-- Bloodstone Tunneler
+				163805,	-- Craghoof Kid
+				163809,	-- Deathsting Scorpid
+				163806,	-- False Knucklebump
+				166493,	-- Firesting Buzzer
+				166487,	-- Leatherwing Screecher
+				163815,	-- Littlehoof
+				163820,	-- Muskflank Calfling
+				166489,	-- Needleback Pup
+				166498,	-- Scritches
+				166492,	-- Shadefeather Hatchling
+				163816,	-- Snapper
+				163819,	-- Snort
+				163803,	-- Sparkleshell Sandcrawler
+				163817,	-- Sunscale Hatchling
+				163810,	-- Thistlebrush Bud
+				166495	-- Tonguelasher
+			);
+			push(finalized, searchResults, o, "push", "f", 101);	-- Battle Pets Filter header
+			finalize(finalized, searchResults);
+		end
+		-- Common Rep Items
+		if ContainsValue(50, ...) then
+			select(finalized, searchResults, o, "select", "itemID",
+				163217,	-- Azeroth's Tear [Both]
+				163616,	-- Dented Coin (A)
+				163614,	-- Exotic Spices (A)
+				163615,	-- Lost Sea Scroll (A)
+				163617,	-- Rusted Alliance Insignia (A)
+				166501	-- Soggy Page
+			);
+			push(finalized, searchResults, o, "push", "f", 50);	-- Miscellaneous Filter header
+		end
 	end,
 };
 -- Instruction to perform a specific subroutine using provided input values
