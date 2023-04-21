@@ -13883,7 +13883,13 @@ local recipeFields = RawCloneData(fields, {
 		return 200;
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleRecipes;
+		return app.CollectibleRecipes and
+			(
+			-- If tracking Account-Wide, then all Recipes are inherently collectible
+			app.AccountWideRecipes or
+			-- Otherwise must be learnable by the Character specifically
+			app.CurrentCharacter.Professions[t.requireSkill]
+			);
 	end,
 	["collected"] = function(t)
 		if t.saved then return 1; end
