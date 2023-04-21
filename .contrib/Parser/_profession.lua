@@ -29,6 +29,11 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 		["rank"] = 3,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264434, {["timeline"]={"added 8.0.1"}})),	-- Blacksmithing
+	r(330134, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [CLASSIC]
+	r(330140, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [CLASSIC]
+	r(330141, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [CLASSIC]
+	r(330142, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [CLASSIC]
+	r(330143, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [CLASSIC]
 	n(ARMOR, {
 		r(280671, {["timeline"] = {"added 8.0.1"}}),	-- Barbaric Iron Hauberk
 		r(2661),	-- Copper Chain Belt
@@ -94,6 +99,8 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 		r(8880),	-- Copper Dagger
 		r(2737),	-- Copper Mace
 		r(2739),	-- Copper Shortsword
+		r(15972),	-- Glinting Steel Dagger
+		applyclassicphase(TBC_PHASE_ONE, r(34982, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),		-- Enchanted Thorium Blades
 		r(3296),	-- Heavy Bronze Mace
 		r(3292),	-- Heavy Copper Broadsword
 		r(7408),	-- Heavy Copper Maul
@@ -199,6 +206,11 @@ TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] =
 		["rank"] = 5,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264436, {["timeline"]={"added 8.0.1"}})),	-- Outland Blacksmithing
+	r(330144, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [The Burning Cruse]
+	r(330145, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [The Burning Cruse]
+	r(330146, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [The Burning Cruse]
+	r(330147, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [The Burning Cruse]
+	r(330148, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [The Burning Cruse]
 	n(ARMOR, {
 		r(29553),	-- Fel Iron Chain Bracers
 		r(29551),	-- Fel Iron Chain Coif
@@ -275,6 +287,11 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		["rank"] = 6,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264438, {["timeline"]={"added 8.0.1"}})),	-- Northrend Blacksmithing
+	r(330149, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Wrath of the Lich King]
+	r(330150, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Wrath of the Lich King]
+	r(330151, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Wrath of the Lich King]
+	r(330152, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Wrath of the Lich King]
+	r(330153, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Wrath of the Lich King]
 	n(ARMOR, {
 		r(59436),	-- Brilliant Saronite Belt
 		r(55057),	-- Brilliant Saronite Boots
@@ -355,7 +372,7 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(55201),	-- Cobalt Tenderizer
 		r(54550),	-- Cobalt Triangle Shield
 		r(56280),	-- Cudgel of Saronite Justice
-		r(55206),	-- Deadly Saronite Dirk
+		r(55206, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Deadly Saronite Dirk
 		r(55203),	-- Forged Cobalt Claymore
 		r(55182),	-- Furious Saronite Beatstick
 		r(55174),	-- Honed Cobalt Cleaver
@@ -400,6 +417,11 @@ CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"]
 		["rank"] = 7,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264440, {["timeline"]={"added 8.0.1"}})),	-- Cataclysm Blacksmithing
+	r(330154, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Cataclysm]
+	r(330155, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Cataclysm]
+	r(330156, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Cataclysm]
+	r(330157, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Cataclysm]
+	r(330158, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Cataclysm]
 	n(ARMOR, {
 		r(76181),	-- Hardened Obsidium Belt
 		r(76182),	-- Hardened Obsidium Boots
@@ -556,6 +578,11 @@ MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] =
 		["rank"] = 8,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264442, {["timeline"]={"added 8.0.1"}})),	-- Pandaria Blacksmithing
+	r(330159, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Mist of Pandaria]
+	r(330160, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Mist of Pandaria]
+	r(330161, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Mist of Pandaria]
+	r(330162, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Mist of Pandaria]
+	r(330163, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Mist of Pandaria]
 	n(ARMOR, {
 		r(122583),	-- Ghost-Forged Belt
 		r(122638),	-- Ghost-Forged Blade
@@ -644,6 +671,11 @@ DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSel
 			["rank"] = 9,
 		}),
 		applyclassicphase(BFA_PHASE_ONE, r(264444, {["timeline"]={"added 8.0.1"}})),	-- Draenor Enchanting
+		r(330164, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Warlords of Draenor]
+		r(330165, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Warlords of Draenor]
+		r(330166, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Warlords of Draenor]
+		r(330167, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Warlords of Draenor]
+		r(330168, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Warlords of Draenor]
 		r(171692),	-- Smoldering Breastplate
 		r(171693),	-- Smoldering Greaves
 		r(171691),	-- Smoldering Helm
