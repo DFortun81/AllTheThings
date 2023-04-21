@@ -10800,10 +10800,10 @@ local FlightPathMapIDs = {
 	994,	-- Argus
 	1011,	-- Zandalar
 	1014,	-- Kul Tiras
-	1355,	-- Nazjatar
+	1504,	-- Nazjatar
 	1647,	-- The Shadowlands
 	1409,	-- Exile's Reach
-	1970,	-- Zereth Mortis
+	2046,	-- Zereth Mortis
 	2057,	-- Dragon Isles
 	2055,	-- Sepulcher of the First Ones (has FPs inside)
 };
