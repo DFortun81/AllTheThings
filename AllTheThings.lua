@@ -10790,21 +10790,21 @@ end)();
 -- Flight Path Lib
 do
 local FlightPathMapIDs = {
-	12,		-- Kalimdor
+	1209,		-- Kalimdor
 	1208,	-- Eastern Kingdoms
 	1467,	-- Outland
-	113,	-- Northrend
-	424,	-- Pandaria
-	572,	-- Draenor
+	1384,	-- Northrend
+	1923,	-- Pandaria
+	1922,	-- Draenor
 	993,	-- Broken Isles
 	994,	-- Argus
 	1011,	-- Zandalar
 	1014,	-- Kul Tiras
 	1355,	-- Nazjatar
-	1550,	-- The Shadowlands
+	1647,	-- The Shadowlands
 	1409,	-- Exile's Reach
 	1970,	-- Zereth Mortis
-	1978,	-- Dragon Isles
+	2057,	-- Dragon Isles
 	2055,	-- Sepulcher of the First Ones (has FPs inside)
 };
 local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID

@@ -13,12 +13,15 @@ _.Zones =
 				}),
 				fp(1512, {	-- Bastion Rise, Gorgrond
 					["coord"] = { 47.4, 90.8, GORGROND },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1442, {	-- Beastwatch, Gorgrond
 					["coord"] = { 46.0, 69.2, GORGROND },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1520, {	-- Breaker's Crown, Gorgrond
 					["coord"] = { 45.8, 55.0, GORGROND },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1523, {	-- Deeproot, Gorgrond
 					["coord"] = { 46.4, 76.6, GORGROND },
@@ -32,6 +35,7 @@ _.Zones =
 				}),
 				fp(1514, {	-- Evermorn Springs, Gorgrond
 					["coord"] = { 41.2, 87.2, GORGROND },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1519, {	-- Highpass, Gorgrond
 					["coord"] = { 52.8, 59.4, GORGROND },

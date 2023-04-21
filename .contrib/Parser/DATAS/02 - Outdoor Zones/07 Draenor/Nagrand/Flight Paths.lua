@@ -18,6 +18,7 @@ _.Zones =
 				}),
 				fp(1505, {	-- Riverside Post, Nagrand
 					["coord"] = { 49.4, 48.0, DRAENOR_NAGRAND },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1506, {	-- Telaari Station, Nagrand
 					["coord"] = { 63.6, 61.6, DRAENOR_NAGRAND },
@@ -31,6 +32,7 @@ _.Zones =
 				}),
 				fp(1504, {	-- Wor'var, Nagrand
 					["coord"] = { 83.2, 44.6, DRAENOR_NAGRAND },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1507, {	-- Yrel's Watch, Nagrand
 					["coord"] = { 62.6, 40.6, DRAENOR_NAGRAND },

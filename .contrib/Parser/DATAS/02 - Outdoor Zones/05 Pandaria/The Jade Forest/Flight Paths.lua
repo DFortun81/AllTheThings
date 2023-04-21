@@ -16,9 +16,11 @@ _.Zones =
 				fp(894, {	-- Grookin Hill, Jade Forest
 					["coord"] = { 27.8, 47.8, THE_JADE_FOREST },
 					["sourceQuest"] = 29935,	-- Orders are Orders
+					["races"] = HORDE_ONLY,
 				}),
 				fp(973, {	-- Honeydew Village, Jade Forest
 					["coord"] = { 28.0, 15.6, THE_JADE_FOREST },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(968, {	-- Jade Temple Grounds, Jade Forest
 					["coord"] = { 54.6, 61.6, THE_JADE_FOREST },

@@ -12,6 +12,7 @@ _.Zones =
 				}),
 				fp(1019, {	-- Eastwind Rest, Kun-Lai Summit
 					["coord"] = { 62.4, 80.6, KUN_LAI_SUMMIT },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1023, {	-- Kota Basecamp, Kun-Lai Summit
 					["coord"] = { 42.8, 69.6, KUN_LAI_SUMMIT },
@@ -21,6 +22,7 @@ _.Zones =
 				}),
 				fp(1117, {	-- Serpent's Spine, Kun-Lai Summit
 					["coord"] = { 36.0, 83.6, KUN_LAI_SUMMIT },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1024, {	-- Shado-Pan Fallback, Kun-Lai Summit
 					["coord"] = { 43.8, 89.6, KUN_LAI_SUMMIT },

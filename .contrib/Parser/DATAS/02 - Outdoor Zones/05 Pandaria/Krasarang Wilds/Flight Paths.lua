@@ -13,9 +13,11 @@ _.Zones =
 				}),
 				fp(990, {	-- Dawnchaser Retreat, Krasarang Wilds
 					["coord"] = { 29.0, 50.4, KRASARANG_WILDS },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1195, {	-- Domination Point, Krasarang Wilds
 					["coord"] = { 9.60, 52.6, KRASARANG_WILDS },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1190, {	-- Lion's Landing, Krasarang Wilds
 					["coord"] = { 88.4, 34.6, KRASARANG_WILDS },
@@ -34,6 +36,7 @@ _.Zones =
 				}),
 				fp(987, {	-- Thunder Cleft, Krasarang Wilds
 					["coord"] = { 59.2, 24.6, KRASARANG_WILDS },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(986, {	-- Zhu's Watch, Krasarang Wilds
 					["coord"] = { 76.6, 8.40, KRASARANG_WILDS },
