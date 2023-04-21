@@ -49,7 +49,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			filter(RECIPES, {
 				tier(CLASSIC_TIER, {
-					-- 0.5.3.3368
 					r(7864),	-- Enchant Boots - Minor Stamina
 					r(7769),	-- CLASSIC: Imbue Bracers - Minor Wisdom OLD
 					r(7855),	-- CLASSIC: Imbue Chest - Absorb
@@ -169,24 +168,24 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					-- 7.0.3
 					tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
 						-- Without SpellID attached
-						i(128566),		-- Binding of Critical Strike [Rank 1]
-						i(128567),		-- Binding of Haste [Rank 1]
-						i(128568),		-- Binding of Mastery [Rank 1]
-						i(128569),		-- Binding of Versatility [Rank 1]
-						i(128623),		-- Enchanted Pen
-						i(141913),		-- Mark of the Ancient Priestess [Rank 1]
-						i(128576),		-- Mark of the Claw [Rank 1]
-						i(128577),		-- Mark of the Distant Army [Rank 1]
-						i(141911),		-- Mark of the Heavy Hide [Rank 1]
-						i(128578),		-- Mark of the Hidden Satyr [Rank 1]
-						i(141912),		-- Mark of the Trained Soldier [Rank 1]
-						i(128571),		-- Word of Agility [Rank 1]
-						i(128562),		-- Word of Critical Strike [Rank 1]
-						i(128563),		-- Word of Haste [Rank 1]
-						i(128572),		-- Word of Intellect [Rank 1]
-						i(128564),		-- Word of Mastery [Rank 1]
-						i(128570),		-- Word of Strength [Rank 1]
-						i(128565),		-- Word of Versatility [Rank 1]
+						i(128566),		-- Formula: Binding of Critical Strike [Rank 1]
+						i(128567),		-- Formula: Binding of Haste [Rank 1]
+						i(128568),		-- Formula: Binding of Mastery [Rank 1]
+						i(128569),		-- Formula: Binding of Versatility [Rank 1]
+						i(128623),		-- Formula: Enchanted Pen
+						i(141913),		-- Formula: Mark of the Ancient Priestess [Rank 1]
+						i(128576),		-- Formula: Mark of the Claw [Rank 1]
+						i(128577),		-- Formula: Mark of the Distant Army [Rank 1]
+						i(141911),		-- Formula: Mark of the Heavy Hide [Rank 1]
+						i(128578),		-- Formula: Mark of the Hidden Satyr [Rank 1]
+						i(141912),		-- Formula: Mark of the Trained Soldier [Rank 1]
+						i(128571),		-- Formula: Word of Agility [Rank 1]
+						i(128562),		-- Formula: Word of Critical Strike [Rank 1]
+						i(128563),		-- Formula: Word of Haste [Rank 1]
+						i(128572),		-- Formula: Word of Intellect [Rank 1]
+						i(128564),		-- Formula: Word of Mastery [Rank 1]
+						i(128570),		-- Formula: Word of Strength [Rank 1]
+						i(128565),		-- Formula: Word of Versatility [Rank 1]
 					})),
 				}),
 				tier(BFA_TIER, {
@@ -215,18 +214,18 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						i(168451),	-- Formula: Enchant Ring - Accord of Haste
 						i(168452),	-- Formula: Enchant Ring - Accord of Mastery
 						i(168453),	-- Formula: Enchant Ring - Accord of Versatility
-						i(168584),	-- REUSE ME [MTMM]
-						i(168585),	-- REUSE ME [MTMM]
-						i(168587),	-- REUSE ME [MTMM]
-						i(168588),	-- REUSE ME [MTMM]
-						i(168590),	-- REUSE ME [MTMM]
-						i(169537),	-- REUSE ME [MTMM] (DNT)
+						i(168584),	-- Formula: REUSE ME [MTMM]
+						i(168585),	-- Formula: REUSE ME [MTMM]
+						i(168587),	-- Formula: REUSE ME [MTMM]
+						i(168588),	-- Formula: REUSE ME [MTMM]
+						i(168590),	-- Formula: REUSE ME [MTMM]
+						i(169537),	-- Formula: REUSE ME [MTMM] (DNT)
 					})),
 
 					-- 8.3.0
 					tier(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 8.3.0" } }, {
 						-- Without SpellID attached
-						i(177964),	-- Enchant Weapon - Force Multiplier
+						i(177964),	-- Formula: Enchant Weapon - Force Multiplier
 					})),
 				}),
 				tier(SL_TIER, {

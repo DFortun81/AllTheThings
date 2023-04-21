@@ -482,6 +482,11 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["collectible"] = false,
 					}),
 					applyclassicphase(BFA_PHASE_ONE, r(264446, {["timeline"]={"added 8.0.1"}})),	-- Legion Blacksmithing
+					r(330169, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Legion]
+					r(330170, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Legion]
+					r(330171, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Legion]
+					r(330172, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Legion]
+					r(330173, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Legion]
 				},
 			}),
 			q(39681, {	-- The Properties of Leystone

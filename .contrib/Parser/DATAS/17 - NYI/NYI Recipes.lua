@@ -134,103 +134,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				})),
 			}),
 		}),
-		prof(BLACKSMITHING, {
-			-- Classic
-			tier(CLASSIC_TIER, {
-				-----------------
-				-- PATCH 0.5.3 --
-				-----------------
-				--0.5.3
-				i(5577),	-- Plans: Rough Bronze Bracers (RECIPE!)
-				r(6470),	-- Tiny Bronze Key (RECIPE!)
-				r(6471),	-- Tiny Iron Key (RECIPE!)
-				-- 0.5.5
-				i(6734),	-- Plans: Ironforge Chain (RECIPE!)
-				i(6736),	-- Plans: Ironforge Gauntlets (RECIPE!)
-				-- 0.7.0
-				i(7977),	-- Plans: Mithril Scale Gloves (RECIPE!)
-				-- 1.0.0
-				i(12831),	-- Plans: Blood Talon (RECIPE!)
-				i(12818),	-- Plans: Inlaid Thorium Hammer (RECIPE!)
-				i(12826),	-- Plans: Rune Edge (RECIPE!)
-				i(12816),	-- Plans: Thorium Greatsword (RECIPE!)
-				i(12817),	-- Plans: Bleakwood Hew (RECIPE!)
-				i(12832),	-- Plans: Darkspear (RECIPE!)
-				-- ??
-				i(22705),	-- Plans: Icebane Bracers (RECIPE!)
-				i(22703),	-- Plans: Icebane Breastplate (RECIPE!)
-				i(22704),	-- Plans: Icebane Gauntlets (RECIPE!)
-				-- #if BEFORE TBC
-				i(12698),	-- Dawnbringer Shoulders (Added in TBC)
-				-- #endif
-			}),
-			tier(TBC_TIER, {
-				-- 2.4.0
-				tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 2.4.0"} }, {
-					-- i(66102),	-- Plans: Elementium Shield Spike WIERD?! Commented /B
-					i(35529),	-- Plans: Dawnsteel Bracers (RECIPE!)
-					i(35530),	-- Plans: Dawnsteel Shoulders (RECIPE!)
-					i(35553),	-- Hard Khorium Battlefists (RECIPE!)
-					i(35554),	-- Hard Khorium Battleplate (RECIPE!)
-					i(35555),	-- Sunblessed Breastplate (RECIPE!)
-					i(35556),	-- Sunblessed Gauntlets (RECIPE!)
-					i(35532),	-- Plans: Swiftsteel Shoulders (RECIPE!)
-					i(35531),	-- Plans: Swiftsteel Bracers (RECIPE!)
-
-				})),
-			}),
-			tier(CATA_TIER, {
-				-- 4.0.1
-				tier(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 4.0.1"} }, {
-					i(66095),	-- Plans: Cold-Forged Shank
-					i(66094),	-- Plans: Decapitator's Razor
-					i(66134),	-- Plans: Elementium Rod
-					i(66096),	-- Plans: Fire-Etched Dagger
-					i(66064),	-- Plans: Hardened Obsidium Belt
-					i(66065),	-- Plans: Hardened Obsidium Boots
-					i(66062),	-- Plans: Hardened Obsidium Bracers
-					i(66071),	-- Plans: Hardened Obsidium Breastplate
-					i(66063),	-- Plans: Hardened Obsidium Gauntlets
-					i(66069),	-- Plans: Hardened Obsidium Helm
-					i(66068),	-- Plans: Hardened Obsidium Legguards
-					i(66092),	-- Plans: Hardened Obsidium Shield
-					i(66066),	-- Plans: Hardened Obsidium Shoulders
-					i(66097),	-- Plans: Lifeforce Hammer
-					i(66098),	-- Plans: Obsidium Executioner
-					i(66133),	-- Plans: Obsidium Bladespear
-					i(66099),	-- Plans: Obsidium Skeleton Key
-					i(66077),	-- Plans: Redsteel Belt
-					i(66078),	-- Plans: Redsteel Boots
-					i(66072),	-- Plans: Redsteel Bracers
-					i(66083),	-- Plans: Redsteel Breastplate
-					i(66074),	-- Plans: Redsteel Gauntlets
-					i(66082),	-- Plans: Redsteel Helm
-					i(66081),	-- Plans: Redsteel Legguards
-					i(66079),	-- Plans: Redsteel Shoulders
-					i(66086),	-- Plans: Stormforged Belt
-					i(66087),	-- Plans: Stormforged Boots
-					i(66084),	-- Plans: Stormforged Bracers
-					i(66091),	-- Plans: Stormforged Breastplate
-					i(66085),	-- Plans: Stormforged Gauntlets
-					i(66090),	-- Plans: Stormforged Helm
-					i(66089),	-- Plans: Stormforged Legguards
-					i(66093),	-- Plans: Stormforged Shield
-				})),
-			}),
-			tier(WOD_TIER, {
-				-- 6.0.1
-				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
-					i(116746),	-- Recipe: Greater Steelforged Essence
-				})),
-			}),
-			tier(SL_TIER, {
-				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
-					i(183864),	-- [DNT][REUSE ME] Plans: Crafter's Mark III
-					i(182670),	-- Plans: Reinforced Girdle
-				})),
-			}),
-		}),
 		prof(COOKING, {
 			tier(CLASSIC_TIER, {
 				i(16073),	-- Artisan Cookbook
@@ -354,9 +257,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(183867),	-- [DNT][REUSE ME] Schematic: Crafter's Mark III
 				})),
 			}),
-		}),
-		prof(ENCHANTING, {
-
 		}),
 		prof(FIRST_AID, {
 			tier(CLASSIC_TIER, {
