@@ -1653,7 +1653,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/12 Magenta Fungus Cap
-							["provider"] = { "i", 8047 },	-- Magenta Fungus Cap
+							["providers"] = {
+								{ "i",   8047 },	-- Magenta Fungus Cap
+								{ "o", 126049 },	-- Magenta Cap Clusters
+							},
 						}),
 					},
 				}),

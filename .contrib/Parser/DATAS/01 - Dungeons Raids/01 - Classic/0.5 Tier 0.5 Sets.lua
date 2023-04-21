@@ -1785,7 +1785,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["lvl"] = 58,
 					["groups"] = {
 						objective(4, {	-- 0/25 Volcanic Ash
-							["provider"] = { "i", 22338 },	-- Volcanic Ash
+							["providers"] = {
+								{ "i",  22338 },	-- Volcanic Ash
+								{ "o", 181098 },	-- Volcanic Ash
+							},
 							["cr"] = 10078,	-- Terrorspark
 						}),
 						i(22320),	-- Mux's Quality Goods
