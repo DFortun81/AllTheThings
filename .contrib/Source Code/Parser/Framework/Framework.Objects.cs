@@ -1224,17 +1224,13 @@ namespace ATT
                 locale.AppendLine("--   WARNING: This file is dynamically generated   --");
                 locale.AppendLine("local _, app = ...;");
                 locale.Append("local keys = ");
-                locale.AppendLine(ATT.Export.ExportRawLua(AllLocaleTypes).ToString());
+                ATT.Export.AddTableNewLines = true;
+                locale.AppendLine(ATT.Export.ExportCompressedLua(AllLocaleTypes).ToString());
                 locale.AppendLine(@"
-local L;
+local L = app.L;
 for k,t in pairs(keys) do
-    L = app.L[k] or {};
-    for id,name in pairs(t) do
-        L[tonumber(id)] = name;
-    end
-    app.L[k] = L;
-end
-");
+    L[k] = t;
+end");
 
                 string content = locale.ToString();
                 if (!File.Exists(filename) || File.ReadAllText(filename) != content) File.WriteAllText(filename, content);
@@ -1256,9 +1252,10 @@ end
 
                 StringBuilder data = new StringBuilder(10000);
                 data.AppendLine("--   WARNING: This file is dynamically generated   --");
-                data.AppendLine("root(\"Items.SOURCES\",");
+                data.Append("root(\"Items.SOURCES\",");
+                ATT.Export.AddTableNewLines = true;
                 data.AppendLine(ATT.Export.ExportCompressedLua(Items.AllItemSourceIDs).ToString());
-                data.AppendLine(");");
+                data.Append(");");
 
                 string content = data.ToString();
                 if (!File.Exists(filename) || File.ReadAllText(filename) != content) File.WriteAllText(filename, content);

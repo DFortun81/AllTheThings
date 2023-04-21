@@ -9,6 +9,12 @@ namespace ATT
     partial class Export
     {
         /// <summary>
+        /// Allows to define whether LUA tables exported will include newlines or not<para/>
+        /// Default: false
+        /// </summary>
+        public static bool AddTableNewLines { get; set; } = false;
+
+        /// <summary>
         /// Export the data to the builder in a compressed, minified format.
         /// </summary>
         /// <param name="builder">The builder.</param>
@@ -56,6 +62,9 @@ namespace ATT
                 {
                     // If this is NOT the first field, append a comma.
                     if (fieldCount++ > 0) builder.Append(',');
+
+                    if (AddTableNewLines)
+                        builder.Append(Environment.NewLine);
 
                     // Append the Sub-Indent and the Field Name
                     builder.Append("[");
@@ -277,6 +286,7 @@ namespace ATT
             ExportCompressedLua(builder, data);
             STRUCTURE_COUNTS.Clear();
             FUNCTION_SHORTCUTS.Clear();
+            AddTableNewLines = false;
             return builder;
         }
 
@@ -294,6 +304,7 @@ namespace ATT
             ExportCompressedLua(builder, data);
             STRUCTURE_COUNTS.Clear();
             FUNCTION_SHORTCUTS.Clear();
+            AddTableNewLines = false;
             return builder;
         }
 
@@ -309,6 +320,7 @@ namespace ATT
             ExportCompressedLua(builder, list);
             STRUCTURE_COUNTS.Clear();
             FUNCTION_SHORTCUTS.Clear();
+            AddTableNewLines = false;
             return builder;
         }
 
@@ -339,6 +351,7 @@ namespace ATT
             ExportCategoriesHeaderForLua(builder);
             STRUCTURE_COUNTS.Clear();
             FUNCTION_SHORTCUTS.Clear();
+            AddTableNewLines = false;
             return builder;
         }
     }

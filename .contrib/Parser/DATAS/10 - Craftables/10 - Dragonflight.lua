@@ -2986,11 +2986,11 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom
 		}),
 		prof(ENCHANTING, {
-			q(71936),	-- Glimmer of Air Drop
-			q(71940),	-- Glimmer of Earth Drop
-			q(71941),	-- Glimmer of Fire Drop
-			q(71942),	-- Glimmer of Frost Drop
-			q(71943),	-- Glimmer of Order Drop
+			q(71936),	-- Glimmer of Air Drop/Disenchant
+			q(71940),	-- Glimmer of Earth Drop/Disenchant
+			q(71941),	-- Glimmer of Fire Drop/Disenchant
+			q(71942),	-- Glimmer of Frost Drop/Disenchant
+			q(71943),	-- Glimmer of Order Drop/Disenchant
 		}),
 		prof(HERBALISM, {
 			q(71969),	-- First Lush Hochenblume Harvest
