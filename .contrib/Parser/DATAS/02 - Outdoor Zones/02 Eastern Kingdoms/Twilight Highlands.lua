@@ -284,6 +284,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(658, {	-- Vermillion Redoubt, Twilight Highlands
 					["cr"] = 47121,	-- Aquinastrasz <Vermillion Redoubt Flight Master>
 					["coord"] = { 28.4, 24.8, TWILIGHT_HIGHLANDS },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(663, {	-- Victor's Point, Twilight Highlands
 					["cr"] = 47118,	-- Desmond Chadsworth <Gryphon Master>

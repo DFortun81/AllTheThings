@@ -82,6 +82,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						fp(526, {	-- Tenebrous Cavern, Vashj'ir
 							["coord"] = { 53.8, 59.6, 204 },
+							["races"] = HORDE_ONLY,
 						}),
 					}),
 					n(QUESTS, {
@@ -1192,6 +1193,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(FLIGHT_PATHS, {
 						fp(525, {	-- Legion's Rest, Vashj'ir
 							["coord"] = { 50.8, 63.4, 205 },
+							["races"] = HORDE_ONLY,
 						}),
 						fp(606, {	-- Sandy Beach, Vashj'ir (Alliance - Flight Master)
 							["coord"] = { 57.0, 17.0, 205 },

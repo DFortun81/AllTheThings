@@ -10789,23 +10789,17 @@ end)();
 
 -- Flight Path Lib
 do
-local baseMapIDs = {
+local FlightPathMapIDs = {
 	12,		-- Kalimdor
-	13,		-- Eastern Kingdoms
-	101,	-- Outland
+	1208,	-- Eastern Kingdoms
+	1467,	-- Outland
 	113,	-- Northrend
 	424,	-- Pandaria
 	572,	-- Draenor
-	619,	-- Broken Isles
-	-- Argus only returns specific Flight Points per map
-		830,	-- Krokuun
-		882,	-- Eredath
-		885,	-- Antoran Wastes
-		831,	-- Upper Deck [The Vindicaar: Krokuun]
-		883,	-- Upper Deck [The Vindicaar: Eredath]
-		886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
-	875,	-- Zandalar
-	876,	-- Kul Tiras
+	993,	-- Broken Isles
+	994,	-- Argus
+	1011,	-- Zandalar
+	1014,	-- Kul Tiras
 	1355,	-- Nazjatar
 	1550,	-- The Shadowlands
 	1409,	-- Exile's Reach
@@ -10813,8 +10807,8 @@ local baseMapIDs = {
 	1978,	-- Dragon Isles
 	2055,	-- Sepulcher of the First Ones (has FPs inside)
 };
-local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes
-	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes;
+local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID
+	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes, GetTaxiMapID;
 local cached;
 local HarvestFlightPaths = function(requestID)
 	if cached then return; end
@@ -10822,7 +10816,7 @@ local HarvestFlightPaths = function(requestID)
 	local userLocale = AllTheThingsAD.UserLocale;
 	local names = userLocale.FLIGHTPATH_NAMES or {};
 	local allNodeData;
-	for _,mapID in ipairs(baseMapIDs) do
+	for _,mapID in ipairs(FlightPathMapIDs) do
 		allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
 		if allNodeData then
 			for _,nodeData in ipairs(allNodeData) do
@@ -10892,11 +10886,15 @@ app.BaseFlightPath = app.BaseObjectFields(fields, "BaseFlightPath");
 app.CreateFlightPath = function(id, t)
 	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 end
-local cachedMaps = {};
 app.events.TAXIMAP_OPENED = function()
-	local mapID = app.GetCurrentMapID();
-	if cachedMaps[mapID] then return; end
-	cachedMaps[mapID] = true;
+	local mapID = GetTaxiMapID();
+	if app.DEBUG_PRINT then
+		if not contains(FlightPathMapIDs, mapID) then
+			local info = C_Map_GetMapInfo(mapID);
+			local mapName = info and info.name or UNKNOWN;
+			app.print("Missing FlightPath Map:",mapName,mapID)
+		end
+	end
 	local userLocale = AllTheThingsAD.UserLocale;
 	local names = userLocale.FLIGHTPATH_NAMES or {};
 	local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID);

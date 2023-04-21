@@ -10,14 +10,17 @@ _.Zones =
 				fp(1738, {	-- Cullen's Post, Stormheim
 					-- ["creatureID"] = ,	--
 					["coord"] = { 44.8, 59.2, STORMHEIM },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1739, {	-- Dreadwake's Landing, Stormheim
 					-- ["creatureID"] = ,	--
 					["coord"] = { 54.4, 73.0, STORMHEIM },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1741, {	-- Forsaken Foothold, Stormheim
 					-- ["creatureID"] = ,	--
 					["coord"] = { 36.4, 30.6, STORMHEIM },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1744, {	-- Greywatch, Stormheim
 					["creatureID"] = 98108,	-- Gryphon-Master Clifford
