@@ -2273,19 +2273,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, m(EASTERN_KINGDOMS, {
-	m(TIRISFAL_GLADES, { m(DEATHKNELL, {
-		q(25033, {	-- The Red Messenger (when completing 24971)
-			["timeline"] = { "added 4.0.3.13277" },
-			["races"] = HORDE_ONLY,
-		}),
-		q(31148, {	-- Novice Elreth (when completing 28651)
-			["timeline"] = { "added 5.0.1.15640" },
-			["races"] = { UNDEAD },
-		}),
-	})}),
-}));
-
 -- #if AFTER CATA
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

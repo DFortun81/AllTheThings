@@ -1782,6 +1782,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(14448),	-- Takes One to Know One - completed with quest 13260
 		q(14474),	-- Goblin Escape Pods - completed with quest 14001
 		q(24521),	-- Report For Tryouts - completed with quest 24567
+		q(25033),	-- The Red Messenger - completed with quest 24971
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807
 		q(25305),	-- Never Look Back - completed with quest 25304
 		q(25573),	-- Your Underwater Mount (Temp) - completed with quest 25371
@@ -1826,6 +1827,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(31033),	-- Adventurers Wanted: Ragefire Chasm - completed with quest 31034 & 31036 & 31037
 		q(31035),	-- Enemies Below - completed with quest 26865 & 26866 & 26867
 		q(31129),	-- Fate of the Stormstouts - completed with quest 31076
+		q(31148),	-- Novice Elreth - completed with quest 28651
 		q(31174),	-- The Dread Vos - completed with quest 31019
 		q(31206),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
 		q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
