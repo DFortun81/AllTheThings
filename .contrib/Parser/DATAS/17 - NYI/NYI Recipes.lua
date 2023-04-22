@@ -127,11 +127,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					-- Recipe spells
 					r(354860),	--
 				})),
-
-				-- TEST GROUP - REMOVE LATER -Darkal
-				n(P9xx, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
-
-				})),
 			}),
 		}),
 		prof(COOKING, {
