@@ -114,6 +114,8 @@ app.PrintGroup = function(group,depth)
 	print("---")
 end
 app.PrintTable = function(t,depth)
+	-- only allowing table prints when Debug print is active
+	if not app.DEBUG_PRINT then return; end
 	if not t then print("nil"); return; end
 	if type(t) ~= "table" then print(type(t),t); return; end
 	depth = depth or 0;
@@ -2176,20 +2178,23 @@ GetSourceID = function(itemLink)
 		if slotName then
 			local slots = inventorySlotsMap[slotName];
 			if slots then
-				DressUpModel:SetUnit('player');
+				DressUpModel:SetUnit("player");
 				DressUpModel:Undress();
 				for _,slot in pairs(slots) do
 					DressUpModel:TryOn(itemLink, slot);
 					local tmogInfo = DressUpModel:GetItemTransmogInfo(slot);
-					-- print("SlotInfo",slot)
+					-- app.PrintDebug("SlotInfo",slot)
 					-- app.PrintTable(tmogInfo)
 					local sourceID = tmogInfo and tmogInfo.appearanceID;
 					if sourceID and sourceID ~= 0 then
 						-- Added 5/4/2018 - Account for DressUpModel lag... sigh
-						local sourceItemLink = select(6, C_TransmogCollection_GetAppearanceSourceInfo(sourceID));
-						-- app.PrintDebug("SourceID from DressUpModel",sourceID,sourceItemLink)
-						if sourceItemLink and tonumber(sourceItemLink:match("item:(%d+)")) == itemID then
-							return sourceID, true;
+						-- Adjusted to account for non-transmoggable SourceIDs which are collectible
+						local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+						if sourceInfo then
+							-- app.PrintDebug("SourceID from DressUpModel",sourceID,sourceInfo.itemID,sourceInfo.name)
+							if sourceInfo.itemID == itemID then
+								return sourceID, true;
+							end
 						end
 					end
 				end
@@ -4612,7 +4617,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end
 						end
 
-						if app.IsReady and sourceGroup.missing then
+						if app.IsReady and sourceInfo.categoryID > 0 and sourceGroup.missing then
 							tinsert(info, { left = Colorize("Item Source not found in the AllTheThings " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], app.Colors.ChatLinkError) });	-- Do not localize first part of the message, it is for contribs
 							tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), app.Colors.SourceIgnored) });
 							tinsert(info, { left = Colorize(itemString, app.Colors.SourceIgnored) });
@@ -7883,6 +7888,7 @@ local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestRepla
 local GetSpellInfo,math_floor =
 	  GetSpellInfo,math.floor;
 
+local Search = app.SearchForObject;
 -- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
 local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
@@ -8124,7 +8130,7 @@ local function LockedAsQuest(t)
 					return questID;
 				else
 					-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
-					nq = app.SearchForObject("questID", questID, "field");
+					nq = Search("questID", questID, "field");
 					if nq and (IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.locked) then
 						rawset(t, "locked", questID);
 						-- app.PrintDebug("Locked Quest", app:Linkify(t.hash, app.Colors.ChatLink, "search:"..t.key..":"..t[t.key]))
@@ -8140,7 +8146,6 @@ local function LockedAsQuest(t)
 end
 app.LockedAsQuest = LockedAsQuest;
 
-local Search = app.SearchForObject;
 local BackTraceChecks = {};
 -- Traces backwards in the sequence for 'questID' via parent relationships within 'parents' to see if 'checkQuestID' is reached and returns true if so
 local function BackTraceForSelf(parents, questID, checkQuestID)
@@ -8434,7 +8439,7 @@ local questFields = {
 		-- and the Quest is not locked from being completed
 		if app.CollectibleReputations and t.maxReputation and not t.locked then
 			local factionID = t.maxReputation[1];
-			local factionRef = app.SearchForObject("factionID", factionID, "key");
+			local factionRef = Search("factionID", factionID, "key");
 			if factionRef and not factionRef.collected then
 				-- compare the actual standing against the current standing rather than raw vaules (friendships are variable)
 				local maxStanding = app.GetReputationStanding(t.maxReputation);
@@ -8468,7 +8473,7 @@ local questFields = {
 						return true;
 					-- otherwise incomplete breadcrumbs will not prevent picking up a quest if they are ignored
 					else
-						sq = app.SearchForObject("questID", sourceQuestID, "field");
+						sq = Search("questID", sourceQuestID, "field");
 						if sq and not sq.isBreadcrumb and not (sq.locked or sq.altcollected) then
 							return true;
 						end
@@ -8488,7 +8493,7 @@ local questFields = {
 			wipe(prereqs);
 			for _,sourceQuestID in ipairs(sourceQuests) do
 				if not IsQuestFlaggedCompletedForce(sourceQuestID) then
-					sq = app.SearchForObject("questID", sourceQuestID, "field");
+					sq = Search("questID", sourceQuestID, "field");
 					if sq then
 						filter = app.CurrentCharacterFilters(sq);
 						onQuest = C_QuestLog_IsOnQuest(sourceQuestID);
@@ -14342,7 +14347,8 @@ local function CurrentCharacterFilters(item)
 	return FilterItemClass_RequiredSkill(item)
 		and FilterItemClass_RequireClasses(item)
 		and FilterItemClass_RequireRaces(item)
-		and FilterItemClass_CustomCollect(item);
+		and FilterItemClass_CustomCollect(item)
+		and ItemIsInGame(item);
 end
 local function FilterItemSource(sourceInfo)
 	return sourceInfo.isCollected;
