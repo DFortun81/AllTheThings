@@ -833,6 +833,7 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 				if o and type(override) == "function" then
 					return override(o, key);
 				else
+					-- app.PrintDebug("DLO:override",key,":",override)
 					return override;
 				end
 			-- existing object, then reference the respective key
@@ -2105,7 +2106,8 @@ local function CreateObject(t, rootOnly)
 		elseif t.f or t.filterID then
 			t = app.CreateFilter(t.f or t.filterID, t);
 		else
-			-- if app.DEBUG_PRINT then print("CreateObject by value, no specific object type"); app.PrintTable(t); end
+			-- app.PrintDebug("CreateObject by value, no specific object type");
+			-- app.PrintTable(t);
 			if rootOnly then
 				-- shallow copy the root table only, since using t as a metatable will allow .g to exist still on the table
 				-- app.PrintDebug("rootOnly copy of",t.text)
@@ -20206,7 +20208,7 @@ customWindowUpdates["Harvester"] = function(self, force)
 					end
 					app.print("Source Harvest Complete! ItemIDs:",min,"->",max);
 					-- revert the number of retries to retrieve item information
-					app.MaximumItemInfoRetries = oldRetries or 400;
+					app.MaximumItemInfoRetries = oldRetries or 40;
 					-- reset the window so it can be used to harvest again without reloading, only via the command, not another update
 					self.UpdateDone = nil;
 					self:SetData(nil);
@@ -21485,7 +21487,7 @@ customWindowUpdates["list"] = function(self, force, got)
 		local DGU, SearchObject = app.DirectGroupUpdate, app.SearchForObject;
 
 		-- custom params for initialization
-		local dataType = (app.GetCustomWindowParam("list", "type") or "quest").."ID";
+		local dataType = (app.GetCustomWindowParam("list", "type") or "quest");
 		local onlyMissing = app.GetCustomWindowParam("list", "missing");
 		local onlyCached = app.GetCustomWindowParam("list", "cached");
 		local harvesting = app.GetCustomWindowParam("list", "harvesting");
@@ -21493,13 +21495,45 @@ customWindowUpdates["list"] = function(self, force, got)
 		self.Limit = app.GetCustomWindowParam("list", "limit") or 1000;
 		-- print("Quests - onlyMissing",onlyMissing)
 
-		-- manual type adjustments to match internal use
-		if dataType == "sourceID" or dataType == "sID" then
+		-- manual type adjustments to match internal use (due to lowercase keys with non-lowercase cache keys >_<)
+		if dataType == "source" then
 			dataType = "s";
+		elseif dataType == "achievementcategory" then
+			dataType = "achievementCategory";
+		elseif dataType == "azeriteessence" then
+			dataType = "azeriteEssence";
+		elseif dataType == "flightpath" then
+			dataType = "flightPath";
+		elseif dataType == "runeforgepower" then
+			dataType = "runeforgePower";
 		end
+
+		-- add the ID
+		dataType = dataType.."ID";
 
 		local ObjectTypeFuncs = {
 			["questID"] = GetPopulatedQuestObject,
+		};
+
+		local ForceVisibleFields = {
+			visible = true,
+		};
+		local PartitionUpdateFields = {
+			total = true,
+			progress = true,
+			parent = true,
+			expanded = true,
+			window = true
+		};
+		local PartitionMeta = {
+			__index = ForceVisibleFields,
+			__newindex = function(t, key, val)
+				-- only allow changing existing table fields
+				if PartitionUpdateFields[key] then
+					rawset(t, key, val);
+					-- app.PrintDebug("__newindex:part",key,val)
+				end
+			end
 		};
 
 		local function CreateTypeObject(type, id)
@@ -21513,15 +21547,13 @@ customWindowUpdates["list"] = function(self, force, got)
 
 		-- info about the Window
 		local g = {};
-		self:SetData({
-			["text"] = "Full Data List - "..(dataType or "None"),
-			["icon"] = app.asset("Interface_Quest_header"),
-			["description"] = "1 - "..self.Limit,
-			["visible"] = true,
-			["expanded"] = true,
-			["indent"] = 0,
-			["g"] = g,
-		});
+		self:SetData(setmetatable({
+			text = "Full Data List - "..(dataType or "None"),
+			icon = app.asset("Interface_Quest_header"),
+			description = "1 - "..self.Limit,
+			expanded = true,
+			g = g,
+		}, PartitionMeta));
 
 		-- add a bunch of raw, delay-loaded objects in order into the window
 		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
@@ -21571,13 +21603,11 @@ customWindowUpdates["list"] = function(self, force, got)
 			partitionStart = j * self.PartitionSize;
 			partitionGroups = {};
 			-- define a sub-group for a range of things
-			partition = {
-				["text"] = tostring(partitionStart + 1).."+",
-				["icon"] = app.asset("Interface_Quest_header"),
-				["visible"] = true,
-				["OnUpdate"] = app.AlwaysShowUpdate,
-				["g"] = partitionGroups,
-			};
+			partition = setmetatable({
+				text = tostring(partitionStart + 1).."+",
+				icon = app.asset("Interface_Quest_header"),
+				g = partitionGroups,
+			}, PartitionMeta);
 			for i=1,self.PartitionSize,1 do
 				tinsert(partitionGroups, dlo(CreateTypeObject, "text", overrides, dataType, partitionStart + i));
 			end
