@@ -21509,7 +21509,9 @@ customWindowUpdates["list"] = function(self, force, got)
 		end
 
 		-- add the ID
-		dataType = dataType.."ID";
+		if dataType ~= "s" then
+			dataType = dataType.."ID";
+		end
 
 		local ObjectTypeFuncs = {
 			["questID"] = GetPopulatedQuestObject,
