@@ -1,9 +1,12 @@
 0.5.3.3368
 r(2259),	-- Alchemy
 r(3101),	-- Alchemy
+r(3172),	-- Minor Magic Resistance Potion
 r(3464),	-- Alchemy
 r(6619),	-- Cowardly Flight Potion
 0.7.0.3694
+r(11447),	-- Elixir of Waterwalking
+r(11453),	-- Magic Resistance Potion
 r(11611),	-- Alchemy
 1.13.0.28211
 r(22430),	-- Refined Scale of Onyxia

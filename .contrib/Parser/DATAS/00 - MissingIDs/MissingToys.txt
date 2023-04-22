@@ -20,6 +20,9 @@ i(206043),	-- Fyrakk's Frenzy
 10.1.0.49092
 i(206008),	-- Nightmare Banner
 i(206267),	-- Obsidian Legend's Pennant
+10.1.0.49190
+i(205936),	-- New Niffen No-Sniffin' Tonic
+i(206343),	-- Crimson Legend's Pennant
 
 
 
@@ -29,3 +32,6 @@ Missing in ToyDB.lua
 10.1.0.49092
 i(206008),	-- Nightmare Banner
 i(206267),	-- Obsidian Legend's Pennant
+10.1.0.49190
+i(205936),	-- New Niffen No-Sniffin' Tonic
+i(206343),	-- Crimson Legend's Pennant

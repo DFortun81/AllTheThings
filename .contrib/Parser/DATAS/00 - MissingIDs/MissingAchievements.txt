@@ -33,6 +33,21 @@ ach(15207),	-- Challenger: Season 3
 ach(15208),	-- Duelist: Season 2
 ach(15209),	-- Rival: Season 2
 ach(15210),	-- Challenger: Season 2
+3.0.1.8622
+ach(1168),	-- Master of Alterac Valley
+ach(1170),	-- Master of Arathi Basin
+ach(1173),	-- Master of Warsong Gulch
+3.1.0.9767
+ach(1657),	-- Hallowed Be Thy Name
+ach(1677),	-- Loremaster of Eastern Kingdoms
+ach(1680),	-- Loremaster of Kalimdor
+ach(1684),	-- Brewmaster
+ach(1692),	-- Merrymaker
+ach(1707),	-- Fool For Love
+ach(2195),	-- Master of Strand of the Ancients
+ach(2776),	-- Master of Wintergrasp
+3.3.5.12340
+ach(3814),	-- Resilience Will Fix It (25 player)
 3.4.0.46158
 ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
 ach(16313),	-- Rival: Season 5
@@ -43,7 +58,7 @@ ach(16332),	-- The Perfect Pebble
 ach(16397),	-- [DNT] Heirloom Tracking - Bloodied Arcanite Reaper (Hidden)
 ach(16433),	-- Soul of Iron (Season of Mastery)
 ach(16437),	-- [DNT] Soul of Iron Tracker (Season of Mastery) (hidden)
-3.4.1.48503
+3.4.1.47966
 ach(17213),	-- Defense Protocol Alpha: Utgarde Keep
 ach(17283),	-- Defense Protocol Alpha: The Nexus
 ach(17285),	-- Defense Protocol Alpha: Azjol-Nerub
@@ -61,6 +76,7 @@ ach(17328),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 ach(17340),	-- Ahead of the Curve: Yogg-Saron
 ach(17341),	-- Cutting Edge: Ulduar
 4.0.1.12911
+ach(4907),	-- Duskwood Quests
 ach(5020),	-- Observed - Guild Edition \\ He Feeds On Your Tears - Guild Edition
 10.0.0.45661
 ach(16639),	-- Keystone Hero: Uldaman: Legacy of Tyr
@@ -69,7 +85,7 @@ ach(16644),	-- Keystone Hero: Neltharus
 ach(16646),	-- Keystone Hero: Halls of Infusion
 10.0.2.45779
 ach(16729),	-- To All the Squirrels Hidden Til Now \\ To All the Squirrels Hidden Till Now
-10.0.5.48526
+10.0.5.48001
 ach(17495),	-- <Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
 10.0.7.47910
 ach(17306),	-- <DNT> Winterpelt Furbolg - 1 - Friendly
@@ -358,12 +374,12 @@ ach(18210),	-- Kazzara, the Hellforged kills (Heroic Aberrus, the Shadowed Cruci
 ach(18211),	-- The Amalgamation Chamber kills (Heroic Aberrus, the Shadowed Crucible)
 ach(18212),	-- The Forgotten Experiments kills (Heroic Aberrus, the Shadowed Crucible)
 ach(18213),	-- Assault of the Zaqali kills (Heroic Aberrus, the Shadowed Crucible)
-ach(18214),	-- Rashok the Elder kills (Heroic Aberrus, the Shadowed Crucible)
+ach(18214),	-- Rashok, the Elder kills (Heroic Aberrus, the Shadowed Crucible) \\ Rashok the Elder kills (Heroic Aberrus, the Shadowed Crucible)
 ach(18215),	-- The Vigilant Steward, Zskarn kills (Heroic Aberrus, the Shadowed Crucible)
 ach(18216),	-- Magmorax kills (Heroic Aberrus, the Shadowed Crucible)
 ach(18217),	-- Echo of Neltharion kills (Heroic Aberrus, the Shadowed Crucible)
 ach(18218),	-- Scalecommander Sarkareth kills (Heroic Aberrus, the Shadowed Crucible)
-ach(18219),	-- Kazzara, the Hellforge kills (Mythic Aberrus, the Shadowed Crucible)
+ach(18219),	-- Kazzara, the Hellforged kills (Mythic Aberrus, the Shadowed Crucible) \\ Kazzara, the Hellforge kills (Mythic Aberrus, the Shadowed Crucible)
 ach(18220),	-- The Amalgamation Chamber kills (Mythic Aberrus, the Shadowed Crucible)
 ach(18221),	-- The Forgotten Experiments kills (Mythic Aberrus, the Shadowed Crucible)
 ach(18222),	-- Assault of the Zaqali kills (Mythic Aberrus, the Shadowed Crucible)
@@ -401,7 +417,9 @@ ach(18255),	-- Proof of Myrrit
 ach(18257),	-- Can You Dig It?
 ach(18258),	-- Little Lord of Lies
 ach(18271),	-- He'sSss All Mine
-ach(18284),	-- A Mole's Best Friend
+ach(18284),	-- A Niffen's Best Buddy \\ A Mole's Best Friend
 10.1.0.49092
 ach(18359),	-- <Hidden> Account has completed 10.1 Upgrade System tutorial quests
 ach(18361),	-- To All the Squirrels Burrowed Beneath
+10.1.0.49255
+ach(18380),	-- Dragonflight Season 2 Hero

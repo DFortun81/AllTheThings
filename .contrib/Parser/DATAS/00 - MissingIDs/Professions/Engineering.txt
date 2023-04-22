@@ -1,5 +1,7 @@
 0.5.3.3368
 r(3920),	-- Crafted Light Shot
+r(3924),	-- Copper Tube
+r(3926),	-- Copper Modulator
 r(3930),	-- Crafted Heavy Shot
 r(3947),	-- Crafted Solid Shot
 r(4036),	-- Engineering
@@ -14,7 +16,10 @@ r(12719),	-- Explosive Arrow
 r(12720),	-- Goblin "Boom" Box
 r(12722),	-- Goblin Radio
 r(12904),	-- Gnomish Ham Radio
+0.9.0.3807
+r(13240),	-- The Mortar: Reloaded
 1.1.2.4125
+r(19567),	-- Salt Shaker
 r(19800),	-- Thorium Shells
 r(20219),	-- Gnomish Engineer
 r(20222),	-- Goblin Engineer
@@ -26,10 +31,13 @@ r(13258),	-- Summon Goblin Bomb
 r(19804),	-- Arcanite Dragonling
 2.0.0.6080
 r(30346),	-- Fel Iron Shells
+r(30347),	-- Adamantite Shell Machine
 r(30350),	-- Engineering
 r(30555),	-- Remote Mail Terminal
 r(30561),	-- Goblin Tonk Controller
 r(30573),	-- Gnomish Tonk Controller
+2.4.3.8606
+r(43676),	-- Adamantite Arrow Maker
 3.0.1.8303
 r(49383),	-- Engineering
 3.0.1.8622

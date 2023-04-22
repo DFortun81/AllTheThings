@@ -36157,25 +36157,13 @@ s(2202)/i(5822),	-- eseed Gauntlets \\ Hedgeseed Gauntlets
 s(2211)/i(5953),	-- TEST SWORD
 s(2212)/i(5954),	-- TEST SWORD 2
 s(2213)/i(5956),	-- ksmith Hammer \\ Blacksmith Hammer
-s(2276)/i(6174),	-- n Random Sword \\ Twain Random Sword
 s(2302)/i(6219),	-- ight Spanner \\ Arclight Spanner
 s(2326)/i(6256),	-- ing Pole \\ Fishing Pole
-s(2334)/i(6292),	-- ound Mud Snapper \\ 10 Pound Mud Snapper
-s(2335)/i(6294),	-- ound Mud Snapper \\ 12 Pound Mud Snapper
-s(2336)/i(6295),	-- ound Mud Snapper \\ 15 Pound Mud Snapper
-s(2337)/i(6309),	-- ound Catfish \\ 17 Pound Catfish
-s(2338)/i(6310),	-- ound Catfish \\ 19 Pound Catfish
-s(2339)/i(6311),	-- ound Catfish \\ 22 Pound Catfish
-s(2359)/i(6363),	-- ound Catfish \\ 26 Pound Catfish
-s(2360)/i(6364),	-- ound Catfish \\ 32 Pound Catfish
 s(2361)/i(6365),	-- ng Fishing Pole \\ Strong Fishing Pole
 s(2362)/i(6366),	-- wood Fishing Pole \\ Darkwood Fishing Pole
 s(2363)/i(6367),	-- Iron Fishing Pole \\ Big Iron Fishing Pole
 s(2431)/i(6478),	-- Stompers \\ Rat Stompers
-s(2552)/i(6653),	-- h of the Dormant Flame \\ Torch of the Dormant Flame
-s(2553)/i(6654),	-- h of the Eternal Flame \\ Torch of the Eternal Flame
 s(2680)/i(7005),	-- ning Knife \\ Skinning Knife
-s(2723)/i(7170),	-- n Random Sword FOO \\ Twain Random Sword FOO
 s(2724)/i(7171),	-- TWAIN TEST ITEM VISUAL SWORD
 s(2730)/i(7248),	-- Twain TEST Cloak
 s(2992)/i(7948),	-- Girdle of Thero-Shan \\ le of Thero-Shan \\ Girdle of Thero-shan
@@ -36286,22 +36274,6 @@ s(5019)/i(13846),	-- Spring/Summer Morning
 s(5020)/i(13847),	-- Spring/Summer Afternoon
 s(5021)/i(13848),	-- Spring/Summer Evening
 s(5022)/i(13849),	-- Spring/Summer Night
-s(5041)/i(13882),	-- ound Redgill \\ 42 Pound Redgill
-s(5042)/i(13883),	-- ound Redgill \\ 45 Pound Redgill
-s(5043)/i(13884),	-- ound Redgill \\ 49 Pound Redgill
-s(5044)/i(13885),	-- ound Redgill \\ 34 Pound Redgill
-s(5045)/i(13886),	-- ound Redgill \\ 37 Pound Redgill
-s(5046)/i(13887),	-- ound Redgill \\ 52 Pound Redgill
-s(5054)/i(13901),	-- ound Salmon \\ 15 Pound Salmon
-s(5055)/i(13902),	-- ound Salmon \\ 18 Pound Salmon
-s(5056)/i(13903),	-- ound Salmon \\ 22 Pound Salmon
-s(5057)/i(13904),	-- ound Salmon \\ 25 Pound Salmon
-s(5058)/i(13905),	-- ound Salmon \\ 29 Pound Salmon
-s(5059)/i(13906),	-- ound Salmon \\ 32 Pound Salmon
-s(5060)/i(13914),	-- ound Mightfish \\ 70 Pound Mightfish
-s(5061)/i(13915),	-- ound Mightfish \\ 85 Pound Mightfish
-s(5062)/i(13916),	-- ound Mightfish \\ 92 Pound Mightfish
-s(5063)/i(13917),	-- Pound Mightfish \\ 103 Pound Mightfish
 s(5723)/i(14883),	-- Test Glaive A
 s(5724)/i(14884),	-- Test Glaive B
 s(5725)/i(14885),	-- Test Glaive C
@@ -37740,12 +37712,8 @@ s(11876)/i(27405),	-- Monster - Sword, 1H Blood Elf A03 (Blood Knight)
 s(11878)/i(27407),	-- Monster - Mace, Draenei A02 Gold
 s(11929)/i(27486),	-- Alex Test BK Helm
 s(11947)/i(27515),	-- Spotted Feltail \\ Huge Spotted Feltail
-s(11948)/i(27516),	-- mous Barbed Gill Trout \\ Enormous Barbed Gill Trout
 s(11959)/i(27530),	-- Test Epic Belt
 s(11997)/i(27701),	-- Monster - Mace, Durn
-s(12014)/i(27718),	-- r Defender's Legplates \\ Aldor Defender's Legplates
-s(12015)/i(27719),	-- r Leggings of Puissance \\ Aldor Leggings of Puissance
-s(12016)/i(27720),	-- s of the Aldor \\ Robes of the Aldor
 s(12095)/i(27836),	-- Monster - Mace, Ornate Metal Hammer (Red Fire)
 s(12107)/i(27849),	-- Monster - Axe, 1H Large Double Bladed (Broken)
 s(12108)/i(27850),	-- Monster - Axe, 1H Hot Steel (Broken)
@@ -38213,7 +38181,6 @@ s(15251)/i(33075),	-- Test_NoseAndEars_Hidden(builtByBlue)
 s(15252)/i(33080),	-- Monster - Gun - Outland Raid D04
 s(15253)/i(33089),	-- Monster - Mutton
 s(15254)/i(33094),	-- Monster - Axe, Hatchet B01 Gold
-s(15255)/i(33105),	-- 's Guise of Zul'aman \\ Budd's Guise of Zul'aman
 s(15256)/i(33116),	-- Monster - Axe, 2H D04 Red w/Flames
 s(15257)/i(33118),	-- Socket Test Shoulders [PH] \\ Socket Testing Item
 s(15259)/i(33125),	-- Monster - Item, Tankard Metal (Red Glow)
@@ -38393,7 +38360,6 @@ s(16112)/i(34693),	-- Monster - Sword2H, Horde PvP (Red)
 s(16113)/i(34694),	-- Monster - Sword2H, Horde PvP (Green)
 s(16114)/i(34696),	-- Monster - Sword, 1H Mage Hunter Basic
 s(16128)/i(34771),	-- Monster - Staff, Wooden Handle Rounded Head High Red Flame
-s(16129)/i(34782),	-- ed Scourge Shroud \\ Imbued Scourge Shroud
 s(16131)/i(34784),	-- Monster - Item, Fishing Pole (Tuskarr)
 s(16147)/i(34816),	-- Monster - Vrykul - Axe, 1H
 s(16148)/i(34817),	-- Monster - Vrykul - Axe, 2H
@@ -38532,7 +38498,6 @@ s(17889)/i(37608),	-- Monster - Vrykul - Axe, 1H - Black Glow
 s(17890)/i(37609),	-- Monster - Sword2H, Claymore Silver (Black Glow)
 s(17891)/i(37610),	-- Monster - Sword2H, Claymore Silver (Red Flame)
 s(17892)/i(37611),	-- Epic Bland Dagger
-s(17961)/i(37708),	-- k \\ Stick
 s(18051)/i(37832),	-- Monster - Axe, Arcanite Reaper as 1H
 s(18090)/i(37914),	-- Monster - Mace 1H, 7th Legion Cleric
 s(18092)/i(37917),	-- Monster - Polearm, 7th Legion Wyrm Hunter
@@ -38845,7 +38810,6 @@ s(20079)/i(41583),	-- Monster - Axe 2H Deathknight C01 Red
 s(20088)/i(41613),	-- Monster - Gun, Ulduar
 s(20146)/i(41691),	-- Monster - Axe, 1H Northrend C03 (Using 2H Model)
 s(20147)/i(41695),	-- Monster - Polearm, Northrend D01
-s(20156)/i(41755),	-- Fire Extinguisher \\ The Fire Extinguisher
 s(20157)/i(41757),	-- of Unyielding Companionship \\ Vest of Unyielding Companionship
 s(20158)/i(41758),	-- d-Bond Helm \\ Blood-Bond Helm
 s(20159)/i(41759),	-- kles of Perpetual Friendship \\ Shackles of Perpetual Friendship
@@ -38951,16 +38915,7 @@ s(20925)/i(43227),	-- Monster - Staff, OutlandRaid Squid (Blue)
 s(20937)/i(43267),	-- Monster - Sword, Iblis (Back-Sheath)
 s(20952)/i(43296),	-- Monster - Axe, 1H Northrend (Iskalder's Axe - Polearm D01 Black)
 s(21000)/i(43460),	-- tmaim Girdle \\ Giantmaim Girdle
-s(21003)/i(43474),	-- Monster - Staff, Nexus D01
-s(21004)/i(43475),	-- s of the Chilling Revenant \\ Grips of the Chilling Revenant \\ Grips of the Chilling Revenant
 s(21005)/i(43476),	-- lwoven Breastplate \\ Trollwoven Breastplate
-s(21006)/i(43477),	-- Monster - Polearm, Nexus D01
-s(21011)/i(43487),	-- Monster - Sword, 1H Nexus D03
-s(21016)/i(43525),	-- Monster - Mace, Northrend C02
-s(21017)/i(43532),	-- Monster - Axe 2H Deathknight C01 Green
-s(21020)/i(43578),	-- Monster - Sword2H, Northrend D03 (Soulfrost)
-s(21021)/i(43579),	-- Monster - Sword, 2H Orbaz Bloodbane Test
-s(21022)/i(43580),	-- Monster - Vrykul, Sword 1h
 s(21023)/i(43581),	-- Monster - Vrykul - Mace, 1H Spiked
 s(21036)/i(43596),	-- Monster - Staff, Blood Elf A02 Blue - High Blue Flames
 s(21041)/i(43612),	-- eslicer \\ Spineslicer
@@ -39030,11 +38985,9 @@ s(21602)/i(44847),	-- Test Hammer of Bestial Fury
 s(21603)/i(44848),	-- Test The End of Dreams
 s(21628)/i(44952),	-- Monster - Sonic Spear
 s(21630)/i(45041),	-- Art Test
-s(21631)/i(45044),	-- Cloak of Cenarius \\ k of Cenarius
 s(21632)/i(45048),	-- Monster - Axe, 2H Zul'Aman Red
 s(21634)/i(45053),	-- Monster - Mace2H, Horde PvP
 s(21635)/i(45055),	-- Monster - Mace2H, Trainwrecker
-s(21636)/i(45061),	-- Sword \\ Foam Sword
 s(21644)/i(45081),	-- Monster - Spear, Cool Blue (Frost Enchant)
 s(21646)/i(45086),	-- ng Sun \\ Rising Sun
 s(21656)/i(45120),	-- c Fishing Pole \\ Basic Fishing Pole
@@ -39044,38 +38997,22 @@ s(21690)/i(45172),	-- QA Test Normalized Dagger
 s(21691)/i(45173),	-- QA Test Normalized One-Hander
 s(21692)/i(45174),	-- QA Test Normalized Two-Hander
 s(21693)/i(45175),	-- QA Test Normalized Ranged Weapon
-s(21694)/i(45176),	-- Sword \\ Foam Sword
-s(21695)/i(45177),	-- Sword \\ Foam Sword
-s(21696)/i(45178),	-- Sword \\ Foam Sword
-s(21697)/i(45179),	-- Sword \\ Foam Sword
 s(21760)/i(45280),	-- Shirt of Uber
 s(21771)/i(45296),	-- ling Blades \\ Twirling Blades
 s(21929)/i(45475),	-- 
 s(21946)/i(45499),	-- Test Wraps of the Item Purchase Refund
 s(21963)/i(45528),	-- Monster - Axe, 2H Deathknight C01, Purple
 s(21997)/i(45575),	-- Test Melee Rifle [PH]
-s(22024)/i(45629),	-- oweave Belt \\ Shadoweave Belt
 s(22046)/i(45692),	-- Monster - Sword, Vargul (Blue) (2H)
-s(22060)/i(45726),	-- Monster - Staff, Dalaran (Red) (1H)
-s(22061)/i(45727),	-- Monster - Sword - 1H Dalaran (Red)
 s(22062)/i(45765),	-- Ebon Cavalry Blade [PH]
-s(22105)/i(45884),	-- Monster - Polearm, Northrend D02 Gold
 s(22113)/i(45899),	-- Monster - 1H Sword - Varian's Blade
-s(22114)/i(45900),	-- Monster - Mace, Thorim (Ulduar Raid)
 s(22115)/i(45918),	-- Monster - Forsaken Lance [PH]
 s(22116)/i(45925),	-- Monster - Ebon Cavalry Blade [PH]
-s(22117)/i(45926),	-- Monster - Vrykul, Sword 2H (Ulduar)
-s(22181)/i(46020),	-- Monster - Ulduar Raid - Mace 04
-s(22213)/i(46069),	-- ance Lance \\ Alliance Lance
-s(22214)/i(46070),	-- e Lance \\ Horde Lance
 s(22225)/i(46089),	-- Monster - Horde Lance
 s(22226)/i(46090),	-- Monster - Alliance Lance
-s(22231)/i(46103),	-- Shirt of Titanic Scaling
 s(22232)/i(46104),	-- Shirt of the Yogg-Slayer
 s(22233)/i(46105),	-- Shirt of the Future Champion
-s(22234)/i(46106),	-- nt Lance \\ Argent Lance
 s(22235)/i(46107),	-- Monster - Argent Lance
-s(22237)/i(46112),	-- Monster - Gun, Blood Elf (D) Silver
 s(22431)/i(46326),	-- Conqueror's Darkruned Boots
 s(22432)/i(46327),	-- Conqueror's Siegebreaker Boots
 s(22433)/i(46328),	-- Conqueror's Aegis Boots
@@ -39086,42 +39023,15 @@ s(22437)/i(46332),	-- Conqueror's Kirin Tor Boots
 s(22438)/i(46333),	-- Conqueror's Deathbringer Boots
 s(22439)/i(46334),	-- Conqueror's Worldbreaker Boots
 s(22440)/i(46335),	-- Conqueror's Scourgestalker Boots
-s(22441)/i(46337),	-- Staats' Fishing Pole \\ ts' Fishing Pole
-s(22442)/i(46338),	-- 
 s(22454)/i(46371),	-- [PH[ Filled Green Brewfest Stein [test]
-s(22455)/i(46383),	-- 
-s(22459)/i(46733),	-- Monster - Item, Tankard Brewfest (Year 3 Green)
-s(22461)/i(46736),	-- Monster - Sword 2H, Tauren
-s(22462)/i(46737),	-- Monster - Sword2H, Claymore Gold
-s(22463)/i(46738),	-- Monster - Staff, Ornate Jeweled Staff - Yellow
-s(22468)/i(46837),	-- Monster - Polearm, Northrend C01 Black
-s(22474)/i(46957),	-- Monster - Sword, 1H Horde PvP Red
-s(22495)/i(46981),	-- Monster - Horde PvP, Main Hand, Red
-s(22496)/i(46982),	-- Monster - Horde PvP, Off Hand, Red
-s(22497)/i(46983),	-- Monster - Stave, 2H Horde PvP (Red)
-s(22498)/i(46984),	-- Monster - Stave, 2H Horde PvP (Green)
-s(22501)/i(46987),	-- Monster - Mace, 1H Alliance PvP
-s(22512)/i(46998),	-- Monster - Gun, Alliance PvP
-s(22520)/i(47013),	-- Monster - Polearm, Alliance PVP (Green/Silver)
-s(22521)/i(47014),	-- Monster - Bow, Alliance PvP
-s(22522)/i(47031),	-- Monster - Polearm, Horde PvP (Red)
-s(22523)/i(47032),	-- Monster - Axe, 1H Alliance PvP
-s(22524)/i(47034),	-- Monster - Axe, 2H Horde PvP (No Glow)
-s(22532)/i(47058),	-- 
-s(22558)/i(47091),	-- 
-s(22567)/i(47102),	-- Manaweave Robe
-s(22568)/i(47103),	-- Rotting Handwraps
 s(22599)/i(47163),	-- [UNUSED]Cool Shades \\ SED]Cool Shades
 s(22600)/i(47164),	-- [UNUSED]Cool Shades \\ SED]Cool Shades
 s(22601)/i(47165),	-- [UNUSED]Jacket and Pants \\ SED]Jacket and Pants
 s(22602)/i(47166),	-- [UNUSED]Dress \\ SED]Dress
 s(22603)/i(47169),	-- 
-s(22808)/i(47505),	-- Monster - Polearm, Northrend D01 Black (Ltng)
 s(22831)/i(47542),	-- Test Item 2v2 Rating
 s(22832)/i(47543),	-- Test Item 3v3 Rating
 s(22833)/i(47544),	-- Test Item 5v5 Rating
-s(22901)/i(47659),	-- son Star \\ Crimson Star
-s(22902)/i(47660),	-- es of the Sable Cross \\ Blades of the Sable Cross
 s(22950)/i(47723),	-- 
 s(23041)/i(47846),	-- Cruel Barb (Glow, Purple - Low)
 s(23746)/i(48677),	-- pion's Deathdealer Breastplate \\ Champion's Deathdealer Breastplate
@@ -39302,38 +39212,12 @@ s(24895)/i(50814),	-- Monster - Sword1H, Quel'Delar (Alternate Anims)
 s(24897)/i(50817),	-- Monster - Gun, Silver Musket (0.5s Delay)
 s(24918)/i(50840),	-- Monster - Frostmourne, Broken (Arthas Only Special)
 s(24979)/i(50999),	-- h's Fetching Knife \\ Gluth's Fetching Knife
-s(25001)/i(51028),	-- Icecrown Raid Blood Prince - 2h
-s(25193)/i(51322),	-- Monster - Icecrown Blood Prince 2H Axe
-s(25194)/i(51323),	-- Monster - Icecrown Raid Blood Prince 1h sword
 s(25383)/i(51535),	-- hful Gladiator's War Edge \\ Wrathful Gladiator's War Edge
 s(25600)/i(51880),	-- h's Fetching Knife \\ Gluth's Fetching Knife
 s(25662)/i(51949),	-- Monster - Polearm, Epic D 07 (Val'kyr)
 s(25691)/i(51986),	-- Stalwart Wrap
 s(25693)/i(51988),	-- Stalwart Handguards
-s(25700)/i(52007),	-- Monster - Hailstorm
-s(25702)/i(52009),	-- Monster - Staff of Balzaphon
-s(25703)/i(52010),	-- Monster - Bleak Scythe
-s(25704)/i(52011),	-- Monster - Dreadlord's Blade
-s(25705)/i(52012),	-- Monster - Stanchion of Primal Instinct
-s(25706)/i(52015),	-- Monster - Angry Dread
-s(25707)/i(52016),	-- Monster - Damnation
-s(25711)/i(52034),	-- Monster - Sword 1H, Icecrown Citadel (Sunfire Enchant)
 s(25712)/i(52037),	-- Monster - Mace, Bloodqueen - D01
-s(25713)/i(52042),	-- Monster - Mace 1H, Icecrown Citadel (Sunfire Enchant)
-s(25714)/i(52052),	-- 
-s(25715)/i(52053),	-- 
-s(25716)/i(52054),	-- 
-s(25717)/i(52057),	-- 
-s(25718)/i(52058),	-- Monster - Valanos' Longbow (0.5 Speed)
-s(25719)/i(52060),	-- 
-s(25720)/i(52062),	-- Monster - Sword 2H, Icecrown Citadel - Valanar
-s(25721)/i(52063),	-- 
-s(25724)/i(52278),	-- 
-s(25725)/i(52343),	-- 
-s(25726)/i(52355),	-- 
-s(25727)/i(52358),	-- Monster - Item, Potion Purple
-s(25736)/i(52508),	-- 
-s(25737)/i(52509),	-- 
 s(25740)/i(52519),	-- 
 s(25741)/i(52520),	-- 
 s(25742)/i(52521),	-- 
@@ -39341,16 +39225,9 @@ s(25743)/i(52523),	--
 s(25746)/i(52526),	-- 
 s(25747)/i(52527),	-- 
 s(25749)/i(52529),	-- 
-s(25757)/i(52542),	-- 
-s(25772)/i(52579),	-- 
 s(25810)/i(52626),	-- 
 s(25842)/i(52678),	-- Jonathan's Fishing Pole \\ than's Fishing Pole
 s(25846)/i(52686),	-- Monster - Gnomeregan Bonechopper (Dark)
-s(25847)/i(52688),	-- 
-s(25848)/i(52689),	-- 
-s(25849)/i(52690),	-- 
-s(25850)/i(52691),	-- 
-s(25851)/i(52692),	-- 
 s(25852)/i(52694),	-- 
 s(25853)/i(52695),	-- 
 s(25854)/i(52696),	-- 
@@ -39362,11 +39239,6 @@ s(25859)/i(52703),	--
 s(25860)/i(52704),	-- 
 s(25861)/i(52705),	-- 
 s(25862)/i(52711),	-- 
-s(25863)/i(52716),	-- Twilight Firelance \\ ight Firelance
-s(25865)/i(52837),	-- 
-s(25866)/i(52838),	-- 
-s(25867)/i(52840),	-- 
-s(25868)/i(52842),	-- 
 s(25959)/i(52990),	-- 
 s(25960)/i(52991),	-- 
 s(25961)/i(52992),	-- 
@@ -41279,7 +41151,6 @@ s(31836)/i(63477),	-- Wicked Dagger \\ ed Dagger
 s(32077)/i(63795),	-- Garona's Spare Star \\ na's Spare Star
 s(32078)/i(63798),	-- Winged Axe \\ ed Axe
 s(32198)/i(64309),	-- 
-s(32199)/i(64310),	-- No Tabard \\ abard
 s(32200)/i(64311),	-- No Robe \\ obe
 s(32201)/i(64351),	-- 
 s(32203)/i(64433),	-- 
@@ -41988,7 +41859,6 @@ s(34057)/i(66877),	--
 s(34058)/i(66878),	-- 
 s(34264)/i(67228),	-- Jadrag's Slicers \\ ag's Slicers
 s(34278)/i(67434),	-- 
-s(34279)/i(67436),	-- Alliance Guild Banner - Handheld \\ ance Guild Banner - Handheld
 s(34301)/i(67466),	-- Vicious Gladiator's Hatchet \\ ous Gladiator's Hatchet
 s(34302)/i(67467),	-- Vicious Gladiator's War Edge \\ ous Gladiator's War Edge
 s(34315)/i(67493),	-- 
@@ -42055,7 +41925,6 @@ s(34375)/i(67591),	--
 s(34376)/i(67592),	-- 
 s(34377)/i(67593),	-- 
 s(34378)/i(67598),	-- 
-s(34380)/i(67604),	-- [DND] Horde Guild Banner - Handheld \\ ] Horde Guild Banner - Handheld
 s(34382)/i(67607),	-- 
 s(34383)/i(67608),	-- 
 s(34384)/i(67609),	-- 
@@ -43402,7 +43271,6 @@ s(36855)/i(71768),	--
 s(36856)/i(71769),	-- 
 s(36857)/i(71770),	-- 
 s(36874)/i(71963),	-- 
-s(36875)/i(71969),	-- Darkmoon Mallet \\ moon Mallet
 s(36896)/i(72021),	-- Trainee's Boots \\ nee's Boots
 s(36908)/i(72069),	-- 
 s(36910)/i(72107),	-- 
@@ -44265,7 +44133,6 @@ s(38871)/i(77086),	-- Windslicer Boomerang \\ slicer Boomerang
 s(38872)/i(77087),	-- Darting Chakram \\ ing Chakram
 s(38933)/i(77213),	-- Razor Saronite Chip \\ r Saronite Chip
 s(38947)/i(77233),	-- 
-s(38970)/i(77256),	-- Darkmoon "Sword" \\ moon "Sword"
 s(38986)/i(77303),	-- 
 s(38987)/i(77304),	-- 
 s(38988)/i(77305),	-- 
@@ -46099,7 +45966,6 @@ s(44491)/i(86537),	--
 s(44492)/i(86538),	-- 
 s(44493)/i(86539),	-- 
 s(44494)/i(86540),	-- 
-s(44498)/i(86559),	-- Frying Pan \\ ng Pan
 s(44502)/i(86601),	-- 
 s(44503)/i(86602),	-- 
 s(44504)/i(86603),	-- 
@@ -46381,7 +46247,6 @@ s(45841)/i(88526),	--
 s(45842)/i(88527),	-- 
 s(45843)/i(88528),	-- 
 s(45844)/i(88533),	-- 
-s(45845)/i(88535),	-- Sharpened Tuskarr Spear \\ pened Tuskarr Spear
 s(45846)/i(88536),	-- 
 s(45847)/i(88537),	-- 
 s(45848)/i(88542),	-- 
@@ -50192,7 +50057,6 @@ s(58298)/i(107891),	--
 s(58299)/i(107892),	-- 
 s(58300)/i(107893),	-- 
 s(58301)/i(107896),	-- Shackles \\ kles
-s(58302)/i(107897),	-- Slave Tabard \\ e Tabard
 s(58303)/i(107898),	-- Slave Belt \\ e Belt
 s(58304)/i(107912),	-- 
 s(58305)/i(107913),	-- 
@@ -52358,8 +52222,6 @@ s(66406)/i(118057),	--
 s(66407)/i(118058),	-- 
 s(66408)/i(118059),	-- 
 s(66440)/i(111848),	-- 
-s(66441)/i(118102),	-- Darkmoon Ring \\ moon Ring
-s(66444)/i(118108),	-- Darkmoon Ring \\ moon Ring
 s(66446)/i(118112),	-- 
 s(66461)/i(118138),	-- 
 s(66499)/i(118214),	-- 
@@ -52911,7 +52773,6 @@ s(72755)/i(127683),	--
 s(72761)/i(127694),	-- 
 s(72762)/i(127826),	-- 
 s(72763)/i(127827),	-- 
-s(72764)/i(127828),	-- Dazzling Rod \\ ling Rod
 s(72767)/i(127832),	-- 
 s(72768)/i(127852),	-- 
 s(72769)/i(127852),	-- 
@@ -60860,12 +60721,7 @@ s(108781)/i(174832),	--
 s(108782)/i(174833),	-- 
 s(108783)/i(174834),	-- 
 9.0.1.33978
-s(103151)/i(166878),	-- Recruit's Sword
 s(103342)/i(167224),	-- 
-s(104100)/i(167740),	-- Cleaver
-s(104274)/i(168064),	-- Magical Staff
-s(104311)/i(168110),	-- Inscribed Mace
-s(104319)/i(168121),	-- Light Tome
 s(105229)/i(169776),	-- 
 s(105230)/i(169777),	-- 
 s(105236)/i(169799),	-- 
@@ -64993,9 +64849,6 @@ s(182324)/i(199898),	-- Iskaara Fishing Pole
 s(182327)/i(199932),	-- 10.0 Enchanting - Weapon - Wand 1
 s(182328)/i(199933),	-- 10.0 Enchanting - Weapon - Wand 2
 s(182329)/i(200062),	-- 
-10.0.0.45232
-s(182936)/i(200472),	-- Scepter of Spectacle: Fire \\ Scepter of Spectacle: Ember \\ Illusion Dowel: Ember
-s(182974)/i(200535),	-- Scepter of Spectacle: Frost \\ Illusion Dowel: Frost
 10.0.0.45335
 s(182988)/i(200629),	-- 
 s(182993)/i(200651),	-- 
@@ -65024,19 +64877,13 @@ s(183035)/i(200731),	--
 s(183036)/i(200732),	-- 
 10.0.0.45570
 s(183122)/i(201046),	-- Dreamwarding Dripbrew \\ [NYI] PH Food - Late Night Lab
-s(183226)/i(201158),	-- Scepter of Spectacle: Order
-s(183227)/i(201160),	-- Scepter of Spectacle: Earth
-s(183228)/i(201161),	-- Scepter of Spectacle: Air
 10.0.2.46091
-s(184043)/i(201972),	-- Crimson Gladiator's Splitter
 s(184046)/i(201992),	-- Emissary's Flamewrought Seal \\ [PH] BoE Ring
 10.0.2.46259
 s(184086)/i(202041),	-- 
 s(184133)/i(202148),	-- Emissary's Flamewrought Seal
 s(184158)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
 s(184159)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
-10.0.2.46479
-s(184332)/i(152839),	-- Khaz'gorian Smithing Hammer \\ Khaz'gorian Hammer
 10.0.5.47799
 s(169016)/i(190802),	-- 
 s(169018)/i(190804),	-- 
@@ -65098,17 +64945,6 @@ s(184337)/i(202285),	--
 s(185364)/i(203798),	-- Copy Jin'do's Bag of Whammies
 s(185489)/i(204272),	-- 
 s(185513)/i(204309),	-- 
-10.0.7.48076
-s(185705)/i(204677),	-- Ogre Mining Pick
-10.0.7.48439
-s(185909)/i(204882),	-- Waveborne Diplomat's Belt
-s(185910)/i(204881),	-- Waveborne Diplomat's Cape
-s(185911)/i(204880),	-- Waveborne Diplomat's Pantaloons
-s(185912)/i(204879),	-- Waveborne Diplomat's Waders
-s(185913)/i(204878),	-- Waveborne Diplomat's Frilled Gloves
-s(185914)/i(204876),	-- Waveborne Diplomat's Vestment
-s(185915)/i(204875),	-- Waveborne Diplomat's Puffed Pauldrons
-s(185916)/i(204874),	-- Waveborne Diplomat's Cavalier Hat
 10.0.7.48749
 s(185422)/i(204083),	-- 
 s(185609)/i(204482),	-- 
@@ -65180,11 +65016,11 @@ s(184421)/i(202447),	-- Heartfire Sentinel's Pelerine \\ 10.1 Raid - Black Drago
 s(184422)/i(202448),	-- Heartfire Sentinel's Blessed Bindings \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Wrist
 s(184423)/i(202449),	-- Heartfire Sentinel's Waistguard \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Waist
 s(184424)/i(202450),	-- Heartfire Sentinel's Steelwings \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Shoulder
-s(184425)/i(202451),	-- Heartfire Sentinel's Cuisses \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Legs
+s(184425)/i(202451),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Legs
 s(184426)/i(202452),	-- Heartfire Sentinel's Forgehelm \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Head
 s(184427)/i(202453),	-- Heartfire Sentinel's Protectors \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Hand
 s(184428)/i(202454),	-- Heartfire Sentinel's Greatboots \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Feet
-s(184429)/i(202455),	-- Heartfire Sentinel's Cassock \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Chest
+s(184429)/i(202455),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Chest
 s(184430)/i(202456),	-- Lingering Phantom's Drape \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Generic - Cloak
 s(184431)/i(202457),	-- Lingering Phantom's Vambraces \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Wrist
 s(184432)/i(202458),	-- Lingering Phantom's Deathlink \\ 10.1 Raid - Black Dragon Labs - Class Sets - Death Knight - Armor - Plate - Waist
@@ -65796,9 +65632,9 @@ s(185987)/i(202450),	-- Heartfire Sentinel's Steelwings \\ 10.1 Raid - Black Dra
 s(185988)/i(202450),	-- Heartfire Sentinel's Steelwings \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Shoulder
 s(185989)/i(202450),	-- Heartfire Sentinel's Steelwings \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Shoulder
 s(185990)/i(202450),	-- Heartfire Sentinel's Steelwings \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Shoulder
-s(185991)/i(202451),	-- Heartfire Sentinel's Cuisses \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Legs
-s(185992)/i(202451),	-- Heartfire Sentinel's Cuisses \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Legs
-s(185993)/i(202451),	-- Heartfire Sentinel's Cuisses \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Legs
+s(185991)/i(202451),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Legs
+s(185992)/i(202451),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Legs
+s(185993)/i(202451),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Legs
 s(185994)/i(202452),	-- Heartfire Sentinel's Forgehelm \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Head
 s(185995)/i(202452),	-- Heartfire Sentinel's Forgehelm \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Head
 s(185996)/i(202452),	-- Heartfire Sentinel's Forgehelm \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Head
@@ -65814,9 +65650,9 @@ s(186005)/i(202453),	-- Heartfire Sentinel's Protectors \\ 10.1 Raid - Black Dra
 s(186006)/i(202454),	-- Heartfire Sentinel's Greatboots \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Feet
 s(186007)/i(202454),	-- Heartfire Sentinel's Greatboots \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Feet
 s(186008)/i(202454),	-- Heartfire Sentinel's Greatboots \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Feet
-s(186009)/i(202455),	-- Heartfire Sentinel's Cassock \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Chest
-s(186010)/i(202455),	-- Heartfire Sentinel's Cassock \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Chest
-s(186011)/i(202455),	-- Heartfire Sentinel's Cassock \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Chest
+s(186009)/i(202455),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Chest
+s(186010)/i(202455),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Chest
+s(186011)/i(202455),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Plate - Chest
 s(186012)/i(202447),	-- Heartfire Sentinel's Pelerine \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Generic - Cloak
 s(186013)/i(202447),	-- Heartfire Sentinel's Pelerine \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Generic - Cloak
 s(186014)/i(202447),	-- Heartfire Sentinel's Pelerine \\ 10.1 Raid - Black Dragon Labs - Class Sets - Paladin - Armor - Generic - Cloak
@@ -66879,8 +66715,8 @@ s(187071)/i(205614),	-- Obsidian Gladiator's Chain Girdle
 s(187072)/i(205614),	-- Obsidian Gladiator's Chain Girdle
 s(187073)/i(205615),	-- Obsidian Gladiator's Chain Wristguards
 s(187074)/i(205615),	-- Obsidian Gladiator's Chain Wristguards
-s(187075)/i(205616),	-- Obsidian Gladiator's Plate Battlerobe \\ Obsidian Gladiator's Plate Chestguard
-s(187076)/i(205616),	-- Obsidian Gladiator's Plate Battlerobe \\ Obsidian Gladiator's Plate Chestguard
+s(187075)/i(205616),	-- Obsidian Gladiator's Plate Plastron \\ Obsidian Gladiator's Plate Battlerobe \\ Obsidian Gladiator's Plate Chestguard
+s(187076)/i(205616),	-- Obsidian Gladiator's Plate Plastron \\ Obsidian Gladiator's Plate Battlerobe \\ Obsidian Gladiator's Plate Chestguard
 s(187077)/i(205617),	-- Obsidian Gladiator's Plate Chestplate
 s(187078)/i(205617),	-- Obsidian Gladiator's Plate Chestplate
 s(187079)/i(205618),	-- Obsidian Gladiator's Plate Warboots
@@ -66897,8 +66733,8 @@ s(187089)/i(205623),	-- Obsidian Gladiator's Plate Helmet
 s(187090)/i(205623),	-- Obsidian Gladiator's Plate Helmet
 s(187091)/i(205624),	-- Obsidian Gladiator's Plate Legguards
 s(187092)/i(205624),	-- Obsidian Gladiator's Plate Legguards
-s(187093)/i(205625),	-- Obsidian Gladiator's Plate Wargreaves
-s(187094)/i(205625),	-- Obsidian Gladiator's Plate Wargreaves
+s(187093)/i(205625),	-- Obsidian Gladiator's Plate Tasses \\ Obsidian Gladiator's Plate Wargreaves
+s(187094)/i(205625),	-- Obsidian Gladiator's Plate Tasses \\ Obsidian Gladiator's Plate Wargreaves
 s(187095)/i(205626),	-- Obsidian Gladiator's Plate Shoulders
 s(187096)/i(205626),	-- Obsidian Gladiator's Plate Shoulders
 s(187097)/i(205627),	-- Obsidian Gladiator's Plate Pauldrons
@@ -67012,6 +66848,7 @@ s(187204)/i(205680),	-- Obsidian Gladiator's Drape
 s(187205)/i(205681),	-- Obsidian Gladiator's Shawl
 s(187206)/i(205681),	-- Obsidian Gladiator's Shawl
 10.1.0.48776
+s(184013)/i(201972),	-- Crimson Gladiator's Splitter
 s(187207)/i(205687),	-- 
 s(187208)/i(205714),	-- Obsidian Aspirant's Plate Helm
 s(187209)/i(205715),	-- Obsidian Aspirant's Silk Robe
@@ -67123,10 +66960,10 @@ s(187314)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class S
 s(187315)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
 s(187316)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
 s(187317)/i(205803),	-- Heartfire Sentinel's Steelwings \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Shoulder
-s(187318)/i(205804),	-- Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
-s(187319)/i(205804),	-- Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
-s(187320)/i(205804),	-- Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
-s(187321)/i(205804),	-- Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
+s(187318)/i(205804),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
+s(187319)/i(205804),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
+s(187320)/i(205804),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
+s(187321)/i(205804),	-- Heartfire Sentinel's Faulds \\ Heartfire Sentinel's Cuisses \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Legs
 s(187322)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
 s(187323)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
 s(187324)/i(205805),	-- Heartfire Sentinel's Forgehelm \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Head
@@ -67141,10 +66978,10 @@ s(187332)/i(205806),	-- Heartfire Sentinel's Protectors \\ PVP Upgrade - Class S
 s(187333)/i(205806),	-- Heartfire Sentinel's Protectors \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Hand
 s(187334)/i(205806),	-- Heartfire Sentinel's Protectors \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Hand
 s(187335)/i(205806),	-- Heartfire Sentinel's Protectors \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Hand
-s(187336)/i(205807),	-- Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
-s(187337)/i(205807),	-- Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
-s(187338)/i(205807),	-- Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
-s(187339)/i(205807),	-- Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
+s(187336)/i(205807),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
+s(187337)/i(205807),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
+s(187338)/i(205807),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
+s(187339)/i(205807),	-- Heartfire Sentinel's Brigandine \\ Heartfire Sentinel's Cassock \\ PVP Upgrade - Class Sets - Paladin - Armor - Plate - Chest
 s(187340)/i(205808),	-- Lingering Phantom's Shoulderplates \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Shoulder
 s(187341)/i(205808),	-- Lingering Phantom's Shoulderplates \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Shoulder
 s(187342)/i(205808),	-- Lingering Phantom's Shoulderplates \\ PVP Upgrade - Class Sets - Death Knight - Armor - Plate - Shoulder
@@ -67533,11 +67370,6 @@ s(187737)/i(205929),	-- Obsidian Gladiator's Bow
 s(187738)/i(205923),	-- Obsidian Gladiator's Shield
 s(187739)/i(205922),	-- Obsidian Gladiator's Rod
 10.1.0.48898
-s(168075)/i(189895),	-- Watchman's Flare
-s(168076)/i(189896),	-- Forsaken Cresset
-s(168298)/i(190153),	-- Libram of Righteous Light
-s(168299)/i(190154),	-- Tome of Sin'dorei Secrets
-s(169093)/i(190886),	-- Fine White Evening Gloves
 s(187740)/i(205955),	-- Azure Renewal Mantle
 s(187741)/i(205956),	-- Azure Renewal Cape
 s(187742)/i(205957),	-- Azure Renewal Tabard
@@ -67548,7 +67380,7 @@ s(187746)/i(205974),	-- Monstrous Gluttony
 s(187747)/i(205975),	-- Hate-Sculpted Magma
 s(187748)/i(205981),	-- Molten Primal Fang
 s(187749)/i(206004),	-- Enmity Cloak
-s(187750)/i(206005),	-- Wirt's Leg
+s(187750)/i(206005),	-- Wirt's Last Leg \\ Wirt's Leg
 s(187751)/i(206007),	-- Treasure Nabbin' Bag
 s(187752)/i(206020),	-- Enmity Hood
 s(187762)/i(206044),	-- Obsidian Gladiator's Axe
@@ -67629,3 +67461,6 @@ s(187923)/i(206261),	-- Scalewarden's Mace
 s(187924)/i(206262),	-- Scalewarden's Crusher
 s(187925)/i(206263),	-- Scalewarden's Scepter
 s(187926)/i(206265),	-- Scalewarden's Sabre
+10.1.0.49190
+s(187932)/i(206275),	-- Wirt's Fightin' Leg
+s(187933)/i(206276),	-- Wirt's Haunted Leg

@@ -1,11 +1,4 @@
 5.0.3.15882
-p(154),	-- Lucky
-p(230),	-- Macabre Marionette
-p(344),	-- Green Balloon
-p(345),	-- Yellow Balloon
-p(375),	-- The Gurkster
-p(394),	-- Sheep
-p(434),	-- Ram
 p(444),	-- PattyMack 2.0 - WildBattlePet Test
 p(462),	-- Jacob the Test Seagull
 p(476),	-- Gazelle
@@ -44,7 +37,6 @@ p(884),	-- Moonstalker
 p(885),	-- Nanners \\ Baby Ape
 p(886),	-- Young Beaky \\ Parrot
 p(887),	-- Eyegouger \\ Hyacinth Macaw
-p(888),	-- Burgle
 p(889),	-- Mumtar \\ Creepy Crawly
 p(890),	-- Spike \\ Spiny Lizard
 p(891),	-- Ripper \\ Cheetah Cub
@@ -59,8 +51,6 @@ p(901),	-- Ambershell \\ Topaz Shale Hatchling
 p(902),	-- Bounder \\ Horny Toad
 p(904),	-- Prancer \\ Deer
 p(905),	-- Rasp \\ Snake
-p(906),	-- Glimmer \\ Sprite Darter Hatchling
-p(907),	-- Whirls \\ Rabid Nut Varmint 5000
 p(908),	-- Cluckatron \\ Rocket Chicken
 p(909),	-- Gizmo \\ De-Weaponized Mechanical Companion
 p(911),	-- Firetooth \\ Spawn of Onyxia
@@ -69,19 +59,12 @@ p(913),	-- Blaze
 p(915),	-- Cho'guana \\ Twilight Iguana
 p(916),	-- Plague \\ Black Rat
 p(917),	-- Indigon \\ Twilight Beetle
-p(922),	-- Beamer \\ Willy
-p(923),	-- Hatewalker \\ Personal World Destroyer
-p(924),	-- Lacewing \\ Silky Moth
-p(925),	-- Beacon \\ Festival Lantern
-p(926),	-- Willow \\ Tiny Green Dragon
-p(927),	-- Blizzy \\ Snowy Owl
 p(928),	-- Frostmaw \\ Winterspring Cub
 p(929),	-- Tinygos \\ Azure Whelpling
 p(931),	-- Plop \\ Jade Oozeling
 p(932),	-- Corpsefeeder \\ Maggot
 p(933),	-- Subject 142 \\ Hare
 p(934),	-- Plaguebringer \\ Infected Fawn
-p(935),	-- Bleakspinner \\ Spider
 p(936),	-- Carrion \\ Mr. Grubbs
 p(937),	-- Obsidion \\ Dark Whelpling
 p(938),	-- Veridia \\ Emerald Whelpling
@@ -94,9 +77,6 @@ p(945),	-- Ignious \\ Lava Beetle
 p(946),	-- Comet \\ Tiny Flamefly
 p(947),	-- Nightstalker \\ Restless Shadeling
 p(948),	-- Bishibosh \\ Fetish Shaman
-p(949),	-- Jack \\ Sinister Squashling
-p(950),	-- Sploder \\ Personal World Destroyer
-p(951),	-- Goliath \\ Mini Thor
 p(952),	-- ED-005 \\ Warbot
 p(953),	-- Fungor \\ Sporeling Sprout
 p(954),	-- Tripod \\ Legs
@@ -108,7 +88,6 @@ p(959),	-- Cragmaw \\ Muckbreath
 p(960),	-- Gnasher \\ Snarly
 p(961),	-- Chomps \\ Chuck
 p(962),	-- Netherbite \\ Netherwhelp
-p(963),	-- Jadefire \\ Fel Flame
 p(964),	-- Arcanus \\ Shimmering Wyrmling
 p(965),	-- Warble \\ Pengu
 p(974),	-- Blight \\ Tainted Rat
@@ -125,7 +104,6 @@ p(994),	-- Skyshaper \\ Shrine Fly
 p(995),	-- Brood of Mothallus \\ Wild Silkworm
 p(996),	-- Toothbreaker \\ Terrible Turnip
 p(997),	-- Siren \\ Singing Sunflower
-p(998),	-- Woodcarver \\ Jungle Grub
 p(999),	-- Needleback \\ Spiny Terrapin
 p(1000),	-- Lightstalker \\ Luyu Moth
 p(1001),	-- Bleat \\ Summit Kid
@@ -136,7 +114,6 @@ p(1005),	-- Mollus
 p(1006),	-- Diamond
 p(1007),	-- Mutilator \\ Silent Hedgehog
 p(1008),	-- Pounder \\ Grinder
-p(1009),	-- Crusher \\ Emperor Crab
 p(1010),	-- Whiskers \\ Golden Civet Kitten
 p(1011),	-- Stormlash \\ Wild Golden Hatchling
 p(1012),	-- Chirrup \\ Singing Cricket
@@ -144,8 +121,6 @@ p(1065),	-- Judgment
 p(1066),	-- Fezwick
 p(1067),	-- Honky-Tonk
 p(1129),	-- Ka'wi the Gorger
-p(1130),	-- Crimson
-p(1131),	-- Glowy
 p(1132),	-- Marley
 p(1133),	-- Tiptoe
 p(1134),	-- Sludgy
@@ -177,15 +152,12 @@ p(1280),	-- Brewly
 p(1281),	-- Chirps
 p(1282),	-- Tonsa
 p(1283),	-- Knowledge
-p(1284),	-- Patience
 p(1285),	-- Wisdom
 p(1286),	-- Summer
 p(1287),	-- Stormoen
 p(1288),	-- Nairn
 p(1289),	-- Monte
 p(1290),	-- Rikki
-p(1291),	-- Socks
-p(1292),	-- Bolo
 p(1295),	-- Yen
 p(1296),	-- Carpe Diem
 p(1297),	-- River
@@ -212,7 +184,6 @@ p(1444),	-- Wishbright Lantern
 p(1472),	-- Gnawface
 p(1473),	-- Carrotus Maximus
 p(1474),	-- Gorefu
-p(1477),	-- Syd
 p(1479),	-- Brutus
 p(1480),	-- Quintessence of Light
 p(1482),	-- Rukus
@@ -220,40 +191,24 @@ p(1483),	-- Mr. Terrible
 p(1484),	-- Carroteye
 p(1485),	-- Sloppus
 p(1486),	-- The Beakinator
-p(1488),	-- Queen Floret
-p(1489),	-- Kromli
-p(1490),	-- Gromli
 p(1492),	-- Grubbles
-p(1494),	-- Scrags
-p(1496),	-- Jahan
-p(1497),	-- Samm
-p(1498),	-- Archimedes
 p(1499),	-- Fiero
 p(1500),	-- Tirs
 p(1501),	-- Rockbiter
 p(1532),	-- Ikky
-p(1547),	-- Pixiebell
 p(1548),	-- Doodle
-p(1549),	-- Tally
-p(1550),	-- Wolfus
 p(1552),	-- Fangra
-p(1553),	-- Wolfgar
-p(1554),	-- Gladiator Deathy
-p(1555),	-- Gladiator Murkalot
 p(1557),	-- Darkwing
 p(1558),	-- The Great Kaliri
 p(1560),	-- Serendipity
 p(1561),	-- Grace
-p(1562),	-- Atonement
 p(1604),	-- Nethaera's Light
 p(1607),	-- Gorefu
 p(1608),	-- Carrotus Maximus
 p(1609),	-- Gnawface
 p(1610),	-- Unborn Val'kyr
-p(1637),	-- Moon
 p(1640),	-- Spores
 p(1641),	-- Dusty
-p(1642),	-- Salad
 p(1649),	-- Runts
 p(1651),	-- Prince Charming
 p(1652),	-- Jenner
@@ -274,7 +229,6 @@ p(1684),	-- Netherfist
 p(1685),	-- Skrillix
 p(1686),	-- Defiled Earth
 p(1746),	-- Rocket
-p(1748),	-- Jinx
 p(1757),	-- Brown Piglet
 p(1770),	-- Thrugtusk
 p(1771),	-- Baeloth
@@ -282,7 +236,6 @@ p(1772),	-- Wumpas
 p(1780),	-- Kiazor the Destroyer
 p(1781),	-- Scuttles
 p(1782),	-- Clamps
-p(1787),	-- Roots
 p(1788),	-- Beaky
 p(1789),	-- Sunny
 p(1790),	-- Lil' Spirit Guide
@@ -295,50 +248,28 @@ p(1796),	-- Coach
 p(1797),	-- Greatest Foe
 p(1798),	-- Gulp
 p(1799),	-- Grommet
-p(1800),	-- Itchy
-p(1801),	-- Salty Bird
 p(1811),	-- Rocko
 p(1816),	-- Mini Magmatron
 p(1817),	-- Mini Arcanotron
-p(1818),	-- Mini Electron
-p(1842),	-- Rocklick
-p(1843),	-- Hungry Icefang
 p(1851),	-- Cackling Flame
 p(1852),	-- Devouring Blaze
 p(1853),	-- Living Coals
-p(1864),	-- Seed of Mana
-p(1865),	-- Essence of Mana
 p(1866),	-- Baby Bjorn
-p(1867),	-- Mini Musken
-p(1868),	-- Mist Wraith
-p(1869),	-- Crawdead
-p(1871),	-- Harbinger of Dark
 p(1872),	-- Herald of Light
 p(1873),	-- Gusteau
-p(1874),	-- Remy
-p(1875),	-- Dinner
-p(1877),	-- Eye of Inquisition
-p(1878),	-- Eye of Interrogation
 p(1881),	-- Lil'idan
 p(1882),	-- Chromadon
 p(1883),	-- Blottis
 p(1891),	-- Vinu
-p(1892),	-- Subjugated Tadpole
-p(1893),	-- Allured Tadpole
-p(1894),	-- Confused Tadpole
 p(1895),	-- Hungry Owl
 p(1896),	-- Hungry Rat
 p(1897),	-- Breezy Book
 p(1898),	-- Helpful Spirit
-p(1899),	-- Delicate Moth
 p(1904),	-- Stumpers
 p(1905),	-- Foof
-p(1906),	-- Lil' Sizzle
 p(1971),	-- Comet
 p(1972),	-- Cosmos
 p(1973),	-- Constellatius
-p(1983),	-- Cherry
-p(1987),	-- Deviate Flapper
 p(1989),	-- Deviate Smallclaw
 p(1990),	-- Son of Skum
 p(1995),	-- Growing Ectoplasm
@@ -348,7 +279,6 @@ p(2010),	-- Flickering Fel
 p(2011),	-- Imply
 p(2013),	-- Seduction
 p(2014),	-- Living Pool
-p(2015),	-- Tia Mia and Larry
 p(2016),	-- Rock Lobster
 p(2024),	-- Klutz's Battle Monkey
 p(2025),	-- Klutz's Battle Bird
@@ -360,12 +290,10 @@ p(2038),	-- Deadmines Rat
 p(2039),	-- Deadmines Parrot
 p(2040),	-- Ironclad Crab
 p(2048),	-- Golden Retriever
-p(2068),	-- Corporal Hammer
 7.3.0.24651
 p(2098),	-- Retch
 p(2099),	-- Deathscreech
 p(2100),	-- Gnasher
-p(2103),	-- Gloamwing
 8.0.1.26433
 p(2193),	-- Shelly
 p(2194),	-- Sheldon
@@ -440,7 +368,6 @@ p(2485),	-- Leper Rat
 p(2486),	-- Cockroach
 p(2487),	-- Automated Spider Tank
 p(2489),	-- Autonomous Omni Chopper
-p(2490),	-- Automated Drilling Machine
 p(2492),	-- Gnomeregan Guard Wolf
 p(2493),	-- Gnomeregan Guard Tiger
 p(2494),	-- Gnomeregan Guard Mechanostrider
@@ -461,17 +388,11 @@ p(2146),	-- Perculia's Peculiar Parrot
 8.2.0.30080
 p(2592),	-- Blackmane
 p(2593),	-- Plague Roach
-p(2594),	-- Plague Rat
-p(2595),	-- Diseased Rat
-p(2596),	-- Lost Soul
 p(2597),	-- Crypt Fiend
 p(2598),	-- Rotting Scavenger
 p(2599),	-- Wailing Haunt
 p(2600),	-- Wandering Phantasm
 p(2601),	-- Gargy
-p(2602),	-- Huncher
-p(2603),	-- Tommy the Cruel
-p(2605),	-- Risen Villager
 p(2606),	-- Plague Whelp
 p(2607),	-- Zasz the Tiny
 p(2608),	-- Sludge Belcher
@@ -483,56 +404,11 @@ p(2613),	-- Nefarious Terry
 p(2723),	-- Prince Wiggletail
 p(2726),	-- Shadowspike Lurker
 p(2727),	-- Pearlhusk Crawler
-p(2729),	-- Ravenous Scalespawn
-p(2730),	-- Mindshackle
-p(2732),	-- Voltgorger
 p(2735),	-- Gnomefeaster
-p(2738),	-- Creakclank
-p(2739),	-- CK-9 Micro-Oppression Unit
-p(2740),	-- Unit 35
-p(2741),	-- Unit 6
-p(2742),	-- Unit 17
-8.2.0.30262
-p(2751),	-- Risen Guard
-p(2752),	-- Risen Noble
 8.2.0.30495
 p(2768),	-- Smokey
 p(2769),	-- Pyro
-p(2770),	-- Infectus
-p(2771),	-- Plagued Mailemental
 p(2772),	-- Soul Collector
-p(2774),	-- Lefty
-8.3.0.32044
-p(2799),	-- Alpha
-p(2800),	-- Beta
-p(2801),	-- Bomber
-p(2802),	-- Logic
-p(2803),	-- Math
-p(2804),	-- Frill
-p(2808),	-- Fozling
-p(2809),	-- Tremors
-p(2810),	-- Presto
-p(2811),	-- Fury
-p(2812),	-- Glitzy
-8.3.0.32151
-p(2814),	-- Gigacharged Mayhem Maker
-p(2815),	-- Rampage
-p(2816),	-- Liz
-p(2818),	-- Splint
-p(2819),	-- Ninn Jah
-p(2820),	-- Shred
-p(2821),	-- Wilbur
-p(2822),	-- Char
-p(2823),	-- Tempton
-8.3.0.32414
-p(2854),	-- Retinus the Seeker
-p(2855),	-- Whispers
-p(2856),	-- Aqir Sandcrawler
-p(2857),	-- Blotto
-p(2858),	-- K'tiny the Mad
-p(2859),	-- Tormentius
-p(2860),	-- Baruk Stone Defender
-p(2861),	-- Vil'thik Hatchling
 8.3.0.32593
 p(2871),	-- Pet Training Dummy
 10.1.0.48480
@@ -1586,37 +1462,6 @@ p(2609),	-- Belchling
 p(2611),	-- Tormented Spirit
 p(2612),	-- Liz the Tormentor
 p(2613),	-- Nefarious Terry
-p(2645),	-- Sandclaw Pincher
-p(2646),	-- Sandclaw Sunshell
-p(2647),	-- Glimmershell Scuttler
-p(2648),	-- Chitterspine Skitterling
-p(2649),	-- Hissing Chitterspine
-p(2650),	-- Great Sea Albatross
-p(2651),	-- Deeptide Fingerling
-p(2652),	-- Bloodseeker
-p(2653),	-- Spireshell Snail
-p(2657),	-- Blackchasm Crawler
-p(2658),	-- Chitterspine Deepstalker
-p(2659),	-- Trench Slug
-p(2660),	-- Muck Slug
-p(2661),	-- Rustyroot Snooter
-p(2662),	-- Duskytooth Snooter
-p(2663),	-- Junkheap Roach
-p(2664),	-- Experimental Roach
-p(2665),	-- Fleeting Frog
-p(2666),	-- Yellow Junkhopper
-p(2667),	-- Motorized Croaker
-p(2668),	-- Copper Hopper
-p(2669),	-- Rustbolt Clucker
-p(2670),	-- Mechagon Marmot
-p(2671),	-- Specimen 97
-p(2672),	-- Alloyed Alleyrat
-p(2673),	-- Scrapyard Tunneler
-p(2674),	-- H4ND-EE
-p(2675),	-- Clanking Scrapsorter
-p(2676),	-- Malfunctioning Microbot
-p(2677),	-- Twilight Whelpling
-p(2678),	-- Abyssal Slitherling
 8.2.0.30168
 p(2723),	-- Prince Wiggletail
 p(2724),	-- Chomp
@@ -1648,54 +1493,3 @@ p(2770),	-- Infectus
 p(2771),	-- Plagued Mailemental
 p(2772),	-- Soul Collector
 p(2774),	-- Lefty
-8.2.5.31812
-p(2795),	-- Jenafur
-8.2.5.32494
-p(2777),	-- Gillvanas
-p(2778),	-- Finduin
-8.3.0.32044
-p(2780),	-- Daisy
-p(2799),	-- Alpha
-p(2800),	-- Beta
-p(2801),	-- Bomber
-p(2802),	-- Logic
-p(2803),	-- Math
-p(2804),	-- Frill
-p(2805),	-- Ruddy
-p(2806),	-- Wanderer
-p(2807),	-- Crushface
-p(2808),	-- Fozling
-p(2809),	-- Tremors
-p(2810),	-- Presto
-p(2811),	-- Fury
-p(2812),	-- Glitzy
-8.3.0.32151
-p(2814),	-- Gigacharged Mayhem Maker
-p(2815),	-- Rampage
-p(2816),	-- Liz
-p(2817),	-- Ralf
-p(2818),	-- Splint
-p(2819),	-- Ninn Jah
-p(2820),	-- Shred
-p(2821),	-- Wilbur
-p(2822),	-- Char
-p(2823),	-- Tempton
-8.3.0.32414
-p(2854),	-- Retinus the Seeker
-p(2855),	-- Whispers
-p(2856),	-- Aqir Sandcrawler
-p(2857),	-- Blotto
-p(2858),	-- K'tiny the Mad
-p(2859),	-- Tormentius
-p(2860),	-- Baruk Stone Defender
-p(2861),	-- Vil'thik Hatchling
-p(2863),	-- Oasis Void-Duster
-p(2864),	-- Void-Scarred Locust
-p(2865),	-- Voidskimmer
-p(2866),	-- Voidglower
-p(2867),	-- Golden Chirper
-8.3.0.32489
-p(2779),	-- Anima Wyrmling
-8.3.0.32593
-p(2623),	-- Dottie
-p(2871),	-- Pet Training Dummy

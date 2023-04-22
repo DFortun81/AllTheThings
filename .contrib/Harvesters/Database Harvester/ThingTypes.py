@@ -84,8 +84,6 @@ class Factions(Thing):
 
 
 class FlightPaths(Thing):
-    db_path = Path("..", "..", "..", "db", "FlightPathDB.lua")
-
     @staticmethod
     def table() -> str:
         return "taxinodes"

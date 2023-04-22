@@ -9,6 +9,7 @@ mount(39450),	-- Tallstrider
 mount(39910),	-- Riding Clefthoof
 mount(39949),	-- Mount (Test Anim)
 mount(40212),	-- Dragonmaw Nether Drake
+mount(42667),	-- Flying Broom
 mount(42668),	-- Swift Flying Broom
 mount(42680),	-- Magic Broom
 mount(42683),	-- Swift Magic Broom

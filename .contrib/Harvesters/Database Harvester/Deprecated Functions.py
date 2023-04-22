@@ -1,11 +1,5 @@
 
-def get_thing_table(thing: type[Thing], build: str) -> list[str]:
-    """Get the table of a thing from a build."""
-    url = f"https://wow.tools/dbc/api/export/?name={thing.table()}&build={build}"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Linux; Android 9; G3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
-    }
-    return requests.get(url, headers=headers).content.decode("utf-8").splitlines()
+# mypy: ignore-errors
 
 def create_raw_file(thing: type[Thing]) -> None:
     """Create a raw file for a thing."""
