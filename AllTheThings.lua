@@ -2052,6 +2052,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateSpecies(t.speciesID, t);
 		elseif t.objectID then
 			t = app.CreateObject(t.objectID, t);
+		elseif t.flightPathID then
+			t = app.CreateFlightPath(t.flightPathID, t);
 		elseif t.followerID then
 			t = app.CreateFollower(t.followerID, t);
 		elseif t.illusionID then
@@ -5578,7 +5580,7 @@ end
 -- Keys for groups which are in-game 'Things'
 app.ThingKeys = {
 	-- ["filterID"] = true,
-	-- ["flightPathID"] = true,
+	["flightPathID"] = true,
 	-- ["professionID"] = true,
 	-- ["categoryID"] = true,
 	-- ["mapID"] = true,
@@ -8043,7 +8045,7 @@ local criteriaFuncs = {
     ["questID"] = QuestConsideredSaved,
 	["label_questID"] = L["LOCK_CRITERIA_QUEST_LABEL"],
     ["text_questID"] = function(v)
-		local questObj = app.SearchForObject("questID", v, "field");
+		local questObj = Search("questID", v, "field");
         return sformat("[%d] %s", v, questObj and questObj.text or "???");
     end,
 
@@ -12610,6 +12612,11 @@ app.GenerateGroupLinkUsingSourceID = function(group)
 	if not link then return; end
 
 	app.ImportRawLink(group, link, true);
+
+	local sourceGroup = app.SearchForObject("s", s, "key");
+	if not sourceGroup then
+		app.SaveHarvestSource(group);
+	end
 end
 -- Adds necessary SourceID information for Item data into the Harvest variable
 app.SaveHarvestSource = function(data)
@@ -12618,7 +12625,7 @@ app.SaveHarvestSource = function(data)
 		local item = AllTheThingsHarvestItems[itemID];
 		if not item then
 			item = {};
-			-- print("NEW SOURCE ID!",data.text,s,itemID);
+			-- app.PrintDebug("NEW SOURCE ID!",data.text,s,itemID);
 			AllTheThingsHarvestItems[itemID] = item;
 		end
 		local bonusID = data.bonusID;
