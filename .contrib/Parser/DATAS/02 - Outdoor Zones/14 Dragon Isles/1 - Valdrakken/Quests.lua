@@ -347,7 +347,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 		}),
 		n(QUESTS, sharedData({
 				["isWeekly"] = true,
-				["sourceQuests"] = { 67007 },	-- Archival Assistance
 			}, {
 			q(76122, {	-- Fighting Is Its Own Reward
 				["provider"] = { "n", 189973 },	-- Kemora

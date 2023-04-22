@@ -358,28 +358,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(56107),	-- when nascent bee changed into Juvenile Harvester
 		q(56879),	-- when Juvenile Harvester changed into Honeyback Harvester (max bee friendship)
 
-		--	ISLAND EXPEDITIONS
-		q(51994),	-- Unlock the ability to go on Island Expeditions in search of Azerite
-		q(55687),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Alliance
-		q(57104),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Horde
-		q(55713),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Alliance
-		q(57106),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Horde
-		q(55686),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Alliance
-		q(57105),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Horde
-		q(55712),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Alliance
-		q(57107),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Horde
-		q(55619),	-- Upgrade Your Vehicle (Optional), Alliance
-		q(57103),	-- Upgrade Your Vehicle (Optional), Horde
-		q(55617),	-- Expedition Siege Engine — assembling siege engine in Island Expeditions
-		q(56998),	-- triggered when turning in "Azerite for the Alliance," (53436) which also triggered "Azerite for the Horde" (53435).  i also got Rank 1 Volatile Worldvein from the quest, so maybe this is for receiving that?
-		q(57063),	-- triggered when using Zem'lan's Lost Treasure Map (created from combining fragments from Island Expeditions)
-		q(56520),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
-		q(57060),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
-		q(57061),	-- popped when i manually refreshed after fully completing the mission / getting Fluctuating Worldvein in my inventory
-		q(57332),	-- using Map to the Last Worldvein to get mission The Last Worldvein (rank 4 Worldvein Resonance)
-		q(56910),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
-		q(57062),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
-
 		--	PVP / WAR MODE
 		q(53636),	-- Looting a bounty in Stormsong as Horde (all 3 trigger at the same time)
 		q(53638),	-- Looting a bounty in Stormsong as Horde

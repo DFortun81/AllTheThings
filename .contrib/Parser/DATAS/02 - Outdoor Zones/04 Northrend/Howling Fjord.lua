@@ -313,9 +313,6 @@ root(ROOTS.Zones, {
 				prof(FISHING, {
 					i(44703, {	-- Dark Herring
 						["provider"] = { "o", 192049 },	-- Fangtooth Herring School
-						-- #if AFTER TRANSMOG
-						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-						-- #endif
 					}),
 					ach(1517, {	-- Northrend Angler
 						["provider"] = { "o", 192053 },	-- Deep Sea Monsterbelly School

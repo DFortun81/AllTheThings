@@ -4625,6 +4625,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						{ 48.8, 71.3, ICECROWN },
 						{ 48.8, 71.3, ICECROWN },
 					},
+					["maps"] = { TRIAL_OF_THE_CHAMPION },
 				}),
 				i(46070, {	-- Horde Lance
 					["provider"] = { "o", 194622 },	-- Lance Rack

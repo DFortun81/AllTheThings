@@ -781,6 +781,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		n(RARES, {
 			n(QUESTS, {
 				q(56582),	-- killing King Gakula in Warmode
+				q(56601),	-- Banescale the Packfather in Warmode
 				q(56883, {["isDaily"]=true}),	-- using Brimstone Pickaxe to start Avarius
 				q(56885, {["isDaily"]=true}),	-- throwing Chum into the water to summon Vor'koth
 				q(56886, {["isDaily"]=true}),	-- after killing Vor'koth after throwing the Chum

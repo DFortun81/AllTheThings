@@ -1359,7 +1359,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 							66839,	-- It's Brew Time
 							66838,	-- It's Cold Up Here
 							66837,	-- Nothing for Breakfast
-							66844,	-- The Great Shokhari
 						},
 						["provider"] = { "n", 190679 },	-- Manny Read
 						["coord"] = { 18.5, 23.7, THE_AZURE_SPAN },

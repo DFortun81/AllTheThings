@@ -5508,7 +5508,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		}),
 		q(28775,  {	-- Broken Serpent Figurine
 			["provider"] = { "i", 65896 },	-- Figurine - Jeweled Serpent
-			["classes"] = { SHAMAN, DRUID, MONK, PRIEST, MAGE, WARLOCK },
+			["classes"] = { SHAMAN, DRUID, MONK, PALADIN, PRIEST, MAGE, WARLOCK },
 			["timeline"] = { "added 4.0.3.13277" },
 			["groups"] = {
 				i(52353),	-- Figurine - Jeweled Serpent

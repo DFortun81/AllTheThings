@@ -421,11 +421,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					},
 				}),
 				n(187306, {	-- Morchok <Harbinger of Twilight>
-					["description"] = "Restore 20 Obsidian Keys to Igys the Believer.",
+					["description"] = "Restore 10 Obsidian Keys to Igys the Believer.",
 					["coord"] = { 32.2, 51.9, THE_WAKING_SHORES },
 					["questID"] = 74067,
 					["isDaily"] = true,
-					["cost"] = { { "i", 191264, 20 }, },	-- 20x Restored Obsidian Key
+					["cost"] = { { "i", 191264, 10 }, },	-- 10x Restored Obsidian Key
 					["g"] = {
 						i(200207),	-- Petrified Fungal Spores
 					},
@@ -697,7 +697,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 								i(200961),	-- Sabellian's Cloak
 								i(200962),	-- Sabellian's Tunic
 							},
-							["questID"] = 72115,
 						}),
 						i(200640, {	-- Obsidian Egg Clutch (TOY!)
 							["cost"] = {
@@ -899,6 +898,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 			q(67168),	-- Triggered with completion of 67051 'Dragon Eyes' (alternate version???)
 			q(72378),	-- Triggered when refusing to activate the Wrathion and Sabellian skip for alts
 			q(72112),	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
+			q(72115),	-- Ensemble: Sabellian's Battlegear Cloth Armor
 		}),
 	}),
 })));

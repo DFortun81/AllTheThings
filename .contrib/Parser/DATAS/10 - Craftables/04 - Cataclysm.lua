@@ -370,15 +370,9 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(52493),	-- The Perforator
 		}),
 		n(HEAD, {
-			i(52487, {	-- Jeweler's Amber Monocle
-				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-			}),
-			i(52485, {	-- Jeweler's Ruby Monocle
-				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-			}),
-			i(52486, {	-- Jeweler's Sapphire Monocle
-				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-			}),
+			i(52487),	-- Jeweler's Amber Monocle
+			i(52485),	-- Jeweler's Ruby Monocle
+			i(52486),	-- Jeweler's Sapphire Monocle
 			i(52489),	-- Rhinestone Sunglasses
 		}),
 		filter(MISC, {

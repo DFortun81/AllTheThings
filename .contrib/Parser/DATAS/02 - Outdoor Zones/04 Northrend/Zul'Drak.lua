@@ -926,11 +926,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.0, 75.5, ZULDRAK },
 						["qg"] = 29733,	-- Elder Shaman Moky
 						["groups"] = {
-							i(41755, {	-- The Fire Extinguisher
-								-- #if AFTER TRANSMOG
-								["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-								-- #endif
-							}),
+							i(41755),	-- The Fire Extinguisher
 						},
 					}),
 					q(12598, {	-- Throwing Down

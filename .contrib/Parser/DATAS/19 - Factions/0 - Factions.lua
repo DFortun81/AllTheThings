@@ -39,7 +39,6 @@ _.Factions =
 			faction(1050),	-- Valiance Expedition
 		})),
 		tier(CATA_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
-			faction(1177),	-- Baradin's Wardens
 			faction(1174),	-- Wildhammer Clan
 		})),
 		tier(MOP_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
@@ -92,7 +91,6 @@ _.Factions =
 		})),
 		tier(CATA_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(1172),	-- Dragonmaw Clan
-			faction(1178),	-- Hellscream's Reach
 		})),
 		tier(MOP_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(1375),	-- Dominance Offensive
