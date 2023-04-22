@@ -252,7 +252,11 @@ namespace ATT
                             case 11:                // 11/12/13 (Bear / Cat Claw) - These do not exist?
                             case 12:                // Gonna just classify as Fist Weapon.
                             case 13: return Filters.FistWeapon;
+#if RETAIL
+                            case 14: return Filters.Cosmetic;           // Many equippable white items with no restriction post 10.0.5... are they all learnable?
+#else
                             case 14: return Filters.Miscellaneous;      // Miscellaneous (not seeing anything in this filter?)
+#endif
                             case 15: return Filters.Dagger;
                             case 16: return Filters.Thrown;            // Thrown
                             case 17: return Filters.Polearm;            // Spear (not seeing anything in this filter, so converting to Polearm instead?)
