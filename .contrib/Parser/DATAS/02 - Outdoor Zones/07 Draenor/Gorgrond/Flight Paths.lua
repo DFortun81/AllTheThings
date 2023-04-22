@@ -21,7 +21,6 @@ _.Zones =
 				}),
 				fp(1520, {	-- Breaker's Crown, Gorgrond
 					["coord"] = { 45.8, 55.0, GORGROND },
-					["races"] = HORDE_ONLY,
 				}),
 				fp(1523, {	-- Deeproot, Gorgrond
 					["coord"] = { 46.4, 76.6, GORGROND },

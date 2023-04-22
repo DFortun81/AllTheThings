@@ -13,7 +13,6 @@ _.Zones =
 				}),
 				fp(1389, {	-- Bloodmaul Slag Mines, Frostfire Ridge
 					["coord"] = { 51.4, 21.4, FROSTFIRE_RIDGE },
-					["races"] = HORDE_ONLY,
 				}),
 				fp(1396, {	-- Darkspear's Edge, Frostfire Ridge
 					["coord"] = { 51.8, 41.0, FROSTFIRE_RIDGE },

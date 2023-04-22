@@ -10,7 +10,52 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				}),
 			}),
 			n(FLIGHT_PATHS, {
-
+				fp(2836, {	-- Algeth'era, Thaldraszus
+					["coord"] = { 62.4, 40.5, THALDRASZUS },
+					["cr"] = 189830,	-- Ancient Waygate
+					["sourceQuests"] = { 71162 },	-- Waygate: Algeth'era
+				}),
+				fp(2838, {	-- Cobalt Assembly, The Azure Span
+					["coord"] = { 48.3, 30.1, THE_AZURE_SPAN },
+					["cr"] = 189709,	-- Ancient Waygate
+					["sourceQuests"] = { 70156 },	-- An Ancient Awakening
+				}),
+				fp(2834, {	-- Eon's Fringe, Thaldraszus
+					["coord"] = { 52.3, 78.5, THALDRASZUS },
+					["cr"] = 189711,	-- Ancient Waygate
+					["sourceQuests"] = { 71165 },	-- Waygate: Eon's Fringe
+				}),
+				fp(2862, {	-- Morqut Islet, Forbidden Reach
+					["coord"] = { 29.1, 62.5, THE_FORBIDDEN_REACH },
+					["cr"] = 203178,	-- Ancient Waygate
+					["sourceQuests"] = { 75154 },	-- Waygate: Morqut Islet
+					["timeline"] = { ADDED_10_0_7 },
+				}),
+				fp(2842, {	-- Rubyscale Outpost, The Waking Shores
+					["coord"] = { 47.3, 90.3, THE_WAKING_SHORES },
+					["cr"] = 195634,	-- Ancient Waygate
+					["sourceQuests"] = { 70156 },	-- An Ancient Awakening
+				}),
+				fp(2839, {	-- Rusza'thar Reach, Ohn'ahran Plains
+					["coord"] = { 81.3, 39.0, OHNAHRAN_PLAINS },
+					["cr"] = 189833,	-- Ancient Waygate
+					["sourceQuests"] = { 71138 },	-- Waygate: Rusza'thar Reach
+				}),
+				fp(2840, {	-- Shady Sanctuary, Ohn'ahran Plains
+					["coord"] = { 30.7, 55.5, OHNAHRAN_PLAINS },
+					["cr"] = 189579,	-- Ancient Waygate
+					["sourceQuests"] = { 71178 },	-- Waygate: Shady Sanctuary
+				}),
+				fp(2841, {	-- Skytop Observatory, The Waking Shores
+					["coord"] = { 75.3, 57.0, THE_WAKING_SHORES },
+					["cr"] = 189578,	-- Ancient Waygate
+					["sourceQuests"] = { 71157 },	-- Waygate: Skytop Observatory
+				}),
+				fp(2837, {	-- Vakthros, The Azure Span
+					["coord"] = { 77.6, 30.8, THE_AZURE_SPAN },
+					["cr"] = 189710,	-- Ancient Waygate
+					["sourceQuests"] = { 71161 },	-- Waygate: Vakthros
+				}),
 			}),
 			n(QUESTS, {
 					-- RENOWN 7 --
