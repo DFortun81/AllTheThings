@@ -7324,6 +7324,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(18243, {	-- Black Battlestrider (MOUNT!)
 							["timeline"] = { "removed 2.0.1.6180" },
+							-- #if BEFORE 2.0.1
+							["races"] = { DWARF, GNOME },
+							-- #endif
 						}),
 						i(35906, {	-- Black War Elekk (MOUNT!)
 							["timeline"] = { "added 2.4.0.7994" },
