@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
 					["coord"] = { 25.8, 47.9, THE_FORBIDDEN_REACH },
 				}),
-				q(72956, {	-- More Doors to Open 
+				q(72956, {	-- More Doors to Open
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
 					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
@@ -134,7 +134,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = {85.5, 35, OHNAHRAN_PLAINS },
 				}),
 				q(74282, {	-- Authentic Authorization
-					["provider"] = { "n", 203381 },	-- Sealed Letter to Neltharion
+					["provider"] = { "i", 203381 },	-- Sealed Letter to Neltharion
+					["isWeekly"] = true,
 				}),
 				q(74293, {	-- Not Forgotten
 					["sourceQuests"] = { 72953 },	-- Zskera Vault: Az
@@ -270,8 +271,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						{ "i", 204369, 1 },	-- 1x Scrap of Black Dragonscales
 					},
 				}),
-				i(204372),	-- Speck of Bronze Dust
-				i(204374),	-- Emerald Dragon Brooch
 			}),
 			n(TREASURES, {
 				n(TIER_ONE, sharedData({
@@ -358,6 +357,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(390560, {	-- Locked Research Chest
 							["questID"] = 75153,
+							["g"] = {
+								i(204372),	-- Speck of Bronze Dust
+							},
 						}),
 						o(389564, {	-- Mindless Slime
 							["questID"] = 75053,
@@ -377,6 +379,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 28.6, 57.8, THE_FORBIDDEN_REACH },
 							["questID"] = 75051,
 							["g"] = {
+								i(204374),	-- Emerald Dragon Brooch
 								i(204369),	-- Scrap of Black Dragonscales
 							},
 						}),
@@ -503,6 +506,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},{
 					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_wind",
 					["g"] = {
+						o(386687, {	-- Aged Journal
+							["questIDD"] = 74610,
+							["g"] = {
+								i(204814),	-- Aged Journal
+							},
+						}),
 						o(386690, {	-- Ambiguous Compendium
 							["coord"] = { 29.4, 58.1, THE_FORBIDDEN_REACH },
 							["questID"] = 74613,
@@ -517,6 +526,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 75218,
 							["g"] = {
 								i(169674),	-- Green Paint Filled Bladder
+							},
+						}),
+						o(386688, {	-- Blank Tome
+							["questIDD"] = 74612,
+							["g"] = {
+								i(204813),	-- Blank Tome
 							},
 						}),
 						o(385467, {	-- Bone Pile
@@ -1107,6 +1122,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 					},
 				})),
+				o(389471, {	-- Grand Obsidian Cache
+					["questID"] = 75047,
+					["sourceQuest"] = 74978,	-- Broken Waygate (repaired)
+					["coord"] = { 29.5, 55.7, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(202278),	-- Renewed Proto-Drake: Antlers (DM!)
+					},
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(204012),	-- Cold Frost Stone
@@ -1217,9 +1240,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 
 
 		-- TODO: See if these need to be associated with treasures
-		q(74612),	-- Research Volume Spawn (201953)
 		q(74611),	-- Research Volume Spawn (201953)
-		q(74610),	-- Research Volume Spawn (201953)
 		q(75014),	-- Touch big slime?
 		-- Chains
 		q(75173),	-- Pulled Chain First Floor
@@ -1240,7 +1261,5 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75001),	-- During 'A Difficult Legacy' (questID 74996)
 		q(75002),	-- During 'A Difficult Legacy' (questID 74996)
 		q(75003),	-- During 'A Difficult Legacy' (questID 74996)
-		--
-		q(74978),	-- Repairing the Broken Waygate with Neltharion's Toolkit in The Waking Shores
 	}),
 })));

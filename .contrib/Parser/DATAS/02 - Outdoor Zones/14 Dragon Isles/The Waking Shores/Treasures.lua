@@ -16,6 +16,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					i(198475),	-- Broken Banding
 				},
 			}),
+			o(381065, {	-- Broken Waygate
+				["description"] = "In a cave.",
+				["coord"] = { 34.7, 45.8, THE_WAKING_SHORES },
+				["provider"] = { "i", 204278 },	-- Neltharion's Toolkit
+				["questID"] = 74978,
+			}),
 			n(195939, {	-- Bubble Drifter
 				["coord"] = { 40.6, 41.2, THE_WAKING_SHORES },
 				["description"] = "Use nearby Fragrant Plant to attract Bubble Drifter.",
