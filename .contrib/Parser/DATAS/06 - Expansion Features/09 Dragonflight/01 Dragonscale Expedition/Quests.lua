@@ -187,7 +187,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					i(197386),	-- Renewed Proto-Drake: Spiked Jaw (DM!)
 					i(197360),	-- Renewed Proto-Drake: Spined Brow (DM!)
 					i(197369, {	-- Renewed Proto-Drake: Brown Hair (DM!)
-						["description"] = "This item is only available to pick the first time you do this quest. If you didn't pick it, it's unobtainable for you.\nPlease send a bug report to Blizzard.",
+						["description"] = "This item is only available to pick the very first time you do this quest on your account. If you didn't pick it, it's unobtainable for you. Using an alt does not work either.\nPlease send a bug report to Blizzard.",
 					}),
 				},
 			}),
