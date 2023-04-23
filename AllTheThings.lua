@@ -818,10 +818,10 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 			if not o and key == loadField then
 				o = objFunc(unpack(params));
 				-- parent of the underlying object should correspond to the hierarchical parent of t (dlo)
-				-- local dloParent = rawget(t, "parent");
-				-- app.PrintDebug("DLO:Loaded-parent:",dloParent,dloParent and dloParent.hash)
-				rawset(o, "parent", rawget(t, "parent"));
+				local dloParent = rawget(t, "parent");
+				rawset(o, "parent", dloParent);
 				rawset(t, "__o", o);
+				-- app.PrintDebug("DLO:Loaded",o.hash,"parent:",dloParent,dloParent and dloParent.hash)
 				-- DLOs can now have an OnLoad function which runs here when loaded for the first time
 				if overrides.OnLoad then overrides.OnLoad(o); end
 			end
@@ -839,6 +839,10 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 			-- existing object, then reference the respective key
 			elseif o then
 				return o[key];
+			-- otherwise ensure visible
+			elseif key == "visible" then
+				-- app.PrintDebug("dlo.visible",unpack(params))
+				return true;
 			end
 		end,
 		-- transfer field sets to the underlying object if the field does not have an override for the object
@@ -7627,7 +7631,8 @@ local ObjectDefaults = {
 	["progress"] = 0,
 	["total"] = 0,
 };
-local GetTimePreciseSec = GetTimePreciseSec;
+local GetTimePreciseSec, getmetatable, setmetatable =
+	  GetTimePreciseSec, getmetatable, setmetatable;
 local ObjectFunctions = {
 	-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 	["parent"] = function(t)
@@ -7717,6 +7722,18 @@ function(fields, type)
 		return result;
 	end;
 	return fields;
+end
+-- Sets a given base table/function to act as the meta-table __index for another table
+app.SetBaseObject = function(t, base)
+	if not t then return; end
+	local mt = getmetatable(t);
+	if mt then
+		-- app.PrintDebug("SetBase",base.hash)
+		mt.__index = base;
+	else
+		-- app.PrintDebug("NewBase",base.hash)
+		setmetatable(t, { __index = base } );
+	end
 end
 -- Create a local cache table which can be used by a Type class of a Thing to easily store information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField)
@@ -14968,14 +14985,14 @@ local function TopLevelUpdateGroup(group)
 	-- app.PrintDebugPrior("TLUG",group.hash)
 end
 app.TopLevelUpdateGroup = TopLevelUpdateGroup;
+local DGUDelay = 0.5;
+-- Allows changing the Delayed group update frequency between 0 - 2 seconds, mainly for testing
+app.SetDGUDelay = function(delay)
+	DGUDelay = math.min(2, math.max(0, tonumber(delay)));
+end
 -- For directly applying the full Update operation at the specified group, and propagating the difference upwards in the parent hierarchy,
 -- then triggering a delayed soft-update of the Window containing the group if any. 'got' indicates that this group was 'gotten'
 -- and was the cause for the update
-local DGUDelay = 0.5;
--- Allows changing the Delayed group update frequency between 0.1 - 2 seconds, mainly for testing
-app.SetDGUDelay = function(delay)
-	DGUDelay = math.min(2, math.max(0.1, tonumber(delay)));
-end
 local function DirectGroupUpdate(group, got)
 	-- DGU OnUpdate needs to run regardless of filtering
 	if group.DGUOnUpdate then
@@ -15008,6 +15025,15 @@ local function DirectGroupUpdate(group, got)
 	end
 end
 app.DirectGroupUpdate = DirectGroupUpdate;
+-- Trigger a Refresh of the window containing the specific group
+local function DirectGroupRefresh(group)
+	local window = app.RecursiveFirstDirectParentWithField(group, "window");
+	if window then
+		-- app.PrintDebug("DGR:Callback Update",group.hash,">",window.Suffix,window.Refresh)
+		DelayedCallback(window.Refresh, DGUDelay, window);
+	end
+end
+app.DirectGroupRefresh = DirectGroupRefresh;
 end -- Processing Functions
 
 -- Helper Methods
@@ -21484,7 +21510,8 @@ customWindowUpdates["list"] = function(self, force, got)
 		self.initialized = true;
 		force = true;
 		local HaveQuestData = HaveQuestData;
-		local DGU, SearchObject = app.DirectGroupUpdate, app.SearchForObject;
+		local DGU, DGR, SearchObject = app.DirectGroupUpdate, app.DirectGroupRefresh, app.SearchForObject;
+		local SkipUpdate, SetBase = app.AlwaysShowUpdate, app.SetBaseObject;
 
 		-- custom params for initialization
 		local dataType = (app.GetCustomWindowParam("list", "type") or "quest");
@@ -21513,10 +21540,6 @@ customWindowUpdates["list"] = function(self, force, got)
 			dataType = dataType.."ID";
 		end
 
-		local ObjectTypeFuncs = {
-			["questID"] = GetPopulatedQuestObject,
-		};
-
 		local ForceVisibleFields = {
 			visible = true,
 		};
@@ -21538,13 +21561,26 @@ customWindowUpdates["list"] = function(self, force, got)
 			end
 		};
 
+		local ObjectTypeFuncs = {
+			questID = GetPopulatedQuestObject,
+		};
 		local function CreateTypeObject(type, id)
+			-- app.PrintDebug("DLO-Obj:",type,id)
 			local func = ObjectTypeFuncs[type];
 			if func then
 				return func(id);
 			end
+			-- Simply a visible table whose Base will be the actual referenced object
+			local o = {
+				visible = true
+			};
+			SetBase(o, SearchObject(type, id, "field") or CreateObject({[type]=id}));
 			-- allow arbitrary type object constructors by searching for the field and cloning the found data
-			return CreateObject(SearchObject(type, id, "field") or {[type]=id});
+			-- local o = CreateObject(SearchObject(type, id, "field") or {[type]=id});
+			-- o.visible = true;
+			-- o.OnUpdate = SkipUpdate;
+			-- app.PrintDebug("DLO-Created:",o.hash)
+			return o;
 		end
 
 		-- info about the Window
@@ -21560,7 +21596,7 @@ customWindowUpdates["list"] = function(self, force, got)
 		-- add a bunch of raw, delay-loaded objects in order into the window
 		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
 		local overrides = {
-			visible = true,
+			visible = not harvesting and true or nil,
 			indent = 2,
 			collectibleAsCost = false,
 			costCollectibles = false,
@@ -21568,7 +21604,16 @@ customWindowUpdates["list"] = function(self, force, got)
 			back = function(o, key)
 				return o._missing and 1 or 0;
 			end,
-			text = function(o, key)
+			text = harvesting and function(o, key)
+				local text, key = o.text, o.key;
+				if not IsRetrieving(text) then
+					-- app.PrintDebug("hide",o.hash)
+					o.visible = false;
+					DGR(o);
+					return "#"..(o[dataType] or o[key or 0] or "?")..": "..text;
+				end
+			end
+			or function(o, key)
 				local text, key = o.text, o.key;
 				if not IsRetrieving(text) then
 					return "#"..(o[dataType] or o[key or 0] or "?")..": "..text;
@@ -21591,13 +21636,20 @@ customWindowUpdates["list"] = function(self, force, got)
 			end
 		end
 		if harvesting then
+			app.SetDGUDelay(0);
 			-- allows the group to be removed from the window if it has been properly loaded
-			overrides.visible = function(o)
-				-- __o is set in the DLO when the object is built
-				-- app.PrintDebug(o.hash,o.text)
-				if IsRetrieving(o.text) then return true; end
-				return;
-			end
+			-- overrides.visible = function(o)
+			-- 	if not o.__hidden then
+			-- 		DGR(o);
+			-- 		-- only remain visible while the data is loading
+			-- 		if IsRetrieving(o.text) then
+			-- 			app.PrintDebug("visible",o.hash,o.text)
+			-- 			return true;
+			-- 		end
+			-- 		-- once loaded, hide itself so it stops refreshing the window
+			-- 		o.__hidden = true;
+			-- 	end
+			-- end
 		end
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
