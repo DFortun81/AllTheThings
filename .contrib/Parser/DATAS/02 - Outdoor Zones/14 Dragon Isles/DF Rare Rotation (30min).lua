@@ -228,7 +228,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					},
 				}),
 				n(189289, {	-- Penumbrus
-					["description"] = "Spawns Underground",
+					["description"] = "Spawns underground.",
 					["coord"] = { 24.4, 54.5, THE_WAKING_SHORES },
 					["questID"] = 74019,
 					["g"] = {
