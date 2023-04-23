@@ -1108,6 +1108,7 @@ for key, value in pairs({
 	--TODO: [113791] = "Brazier of Everfount",	-- Brazier of Everfount
 	[123329] = "巴尔洛戈的箱子",	-- Baelog's Chest
 	[125477] = "显眼的石罐",	-- Conspicuous Urn
+	[126049] = "紫色蘑菇",	-- Magenta Cap Clusters
 	[126158] = "塔隆凯的衣柜",	-- Tallonkai's Dresser
 	[126260] = "古代储物箱",	-- Ancient Chest
 	--TODO: [129127] = "Gallywix's Lockbox",	-- Gallywix's Lockbox
@@ -1381,6 +1382,7 @@ for key, value in pairs({
 	[181073] = "薰炉",	-- Fragrant Cauldron	--TODO: This was taken from wotlk Wowhead
 	[181074] = "竞技场的泥土",	-- Arena Spoils	--TODO: This was taken from wotlk Wowhead
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
+	[181098] = "火山灰",	-- Volcanic Ash	--TODO: This was taken from wotlk Wowhead
 	[181147] = "通缉布告",	-- Wanted Poster
 	[181150] = "布满灰尘的日记",	-- Dusty Journal
 	[181153] = "通缉布告：邪恶的克尔加什",	-- Wanted Poster: Kel'gash the Wicked
@@ -3649,6 +3651,7 @@ for key, value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "宏伟宝库",	-- The Great Vault
 	[381045] = "金色巨龙高脚杯",	-- Golden Dragon Goblet
+	[381065] = "坏掉的界门",	-- Broken Waygate
 	[381069] = "完整的渔网",	-- Full Fishing Net
 	[381094] = "优雅的画笔",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
@@ -3816,6 +3819,8 @@ for key, value in pairs({
 	--TODO: [386669] = "Fragmented Hakkari Bijou",	-- Fragmented Hakkari Bijou
 	--TODO: [386680] = "Mysterious Almanac",	-- Mysterious Almanac
 	--TODO: [386683] = "Seared Book",	-- Seared Book
+	--TODO: [386687] = "Aged Journal",	-- Aged Journal
+	--TODO: [386688] = "Blank Tome",	-- Blank Tome
 	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
 	--TODO: [386762] = "Primordial Armor Cache",	-- Primordial Armor Cache
 	--TODO: [387493] = "Unique Fish",	-- Unique Fish

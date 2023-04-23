@@ -1085,6 +1085,7 @@ for key,value in pairs({
 	[113791] = "Жаровня Вечного источника",	-- Brazier of Everfount
 	[123329] = "Сундук Бейлога",	-- Baelog's Chest
 	[125477] = "Подозрительная урна",	-- Conspicuous Urn
+	[126049] = "Семейка грибов-малиновиков",	-- Magenta Cap Clusters
 	[126158] = "Посудный шкаф Таллонкая",	-- Tallonkai's Dresser
 	[126260] = "Древний сундук",	-- Ancient Chest
 	[129127] = "Сейф Галливикса",	-- Gallywix's Lockbox
@@ -1358,6 +1359,7 @@ for key,value in pairs({
 	[181073] = "Котел Ароматов",	-- Fragrant Cauldron
 	[181074] = "Трофеи арены",	-- Arena Spoils
 	[181083] = "Наследие Сотоса и Джариена",	-- Sothos and Jarien's Heirlooms
+	[181098] = "Вулканический пепел",	-- Volcanic Ash
 	[181147] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[181150] = "Пыльный дневник",	-- Dusty Journal
 	[181153] = "Плакат: \"Разыскивается\": Кел'гаш Коварный",	-- Wanted Poster: Kel'gash the Wicked
@@ -3626,6 +3628,7 @@ for key,value in pairs({
 	[380991] = "Куча земли",	-- Dirt Mound
 	[381035] = "Великое хранилище",	-- The Great Vault
 	[381045] = "Золотой драконий кубок",	-- Golden Dragon Goblet
+	[381065] = "Поврежденные путевые врата",	-- Broken Waygate
 	[381069] = "Полная сеть",	-- Full Fishing Net
 	[381094] = "Элегантная кисть",	-- Elegant Canvas Brush
 	[381107] = "Кучка песка",	-- Sand Pile
@@ -3793,6 +3796,8 @@ for key,value in pairs({
 	[386669] = "Разбитый брелок Хаккари",	-- Fragmented Hakkari Bijou
 	[386680] = "Таинственный альманах",	-- Mysterious Almanac
 	[386683] = "Опаленная книга",	-- Seared Book
+	[386687] = "Потертый журнал",	-- Aged Journal
+	[386688] = "Пустой фолиант",	-- Blank Tome
 	[386690] = "Сомнительный каталог",	-- Ambiguous Compendium
 	[386762] = "Изначальный тайник с доспехами",	-- Primordial Armor Cache
 	[387493] = "Необычная рыба",	-- Unique Fish

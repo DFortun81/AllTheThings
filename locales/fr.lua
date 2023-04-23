@@ -1093,6 +1093,7 @@ for key,value in pairs({
 	[113791] = "Brasero de la Fontaine éternelle",	-- Brazier of Everfount
 	[123329] = "Coffre de Baelog",	-- Baelog's Chest
 	[125477] = "Urne ostentatoire",	-- Conspicuous Urn
+	[126049] = "Champignons magenta",	-- Magenta Cap Clusters
 	[126158] = "Commode de Tallonkai",	-- Tallonkai's Dresser
 	[126260] = "Coffre ancien",	-- Ancient Chest
 	[129127] = "Coffret de Gallywix",	-- Gallywix's Lockbox
@@ -1366,6 +1367,7 @@ for key,value in pairs({
 	[181073] = "Chaudron parfumé",	-- Fragrant Cauldron
 	[181074] = "Butin de l'arène",	-- Arena Spoils
 	[181083] = "Possessions de Sothos et Jarien",	-- Sothos and Jarien's Heirlooms	--TODO: This was taken from wotlk Wowhead
+	[181098] = "Cendre volcanique",	-- Volcanic Ash
 	[181147] = "Avis de recherche",	-- Wanted Poster
 	[181150] = "Journal poussiéreux",	-- Dusty Journal
 	[181153] = "Avis de recherche : Kel'gash le Malfaisant",	-- Wanted Poster: Kel'gash the Wicked
@@ -3634,6 +3636,7 @@ for key,value in pairs({
 	[380991] = "Tas de terre",	-- Dirt Mound
 	[381035] = "Grande chambre forte",	-- The Great Vault
 	[381045] = "Gobelet draconique en or",	-- Golden Dragon Goblet
+	[381065] = "Portail d’accès endommagé",	-- Broken Waygate
 	[381069] = "Filet de pêche plein",	-- Full Fishing Net
 	[381094] = "Pinceau d’artiste élégant",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
@@ -3801,6 +3804,8 @@ for key,value in pairs({
 	[386669] = "Bijou hakkari fragmenté",	-- Fragmented Hakkari Bijou
 	[386680] = "Almanach mystérieux",	-- Mysterious Almanac
 	[386683] = "Livre calciné",	-- Seared Book
+	[386687] = "Journal patiné",	-- Aged Journal
+	[386688] = "Tome vierge",	-- Blank Tome
 	[386690] = "Compendium ambigu",	-- Ambiguous Compendium
 	[386762] = "Cache d’armure primordiale",	-- Primordial Armor Cache
 	[387493] = "Poisson unique",	-- Unique Fish

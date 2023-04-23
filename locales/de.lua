@@ -1095,6 +1095,7 @@ for key,value in pairs({
 	[113791] = "Kohlenpfanne von Everfount",	-- Brazier of Everfount	--TODO: This was taken from wotlk Wowhead
 	[123329] = "Baelogs Truhe",	-- Baelog's Chest
 	[125477] = "Verdächtige Urne",	-- Conspicuous Urn
+	[126049] = "Magenta Kappengruppen",	-- Magenta Cap Clusters
 	[126158] = "Tallonkais Kommode",	-- Tallonkai's Dresser
 	[126260] = "Uralte Truhe",	-- Ancient Chest
 	[129127] = "Gallywix' Schließkassette",	-- Gallywix's Lockbox
@@ -1368,6 +1369,7 @@ for key,value in pairs({
 	[181073] = "Duftender Kessel",	-- Fragrant Cauldron
 	[181074] = "Arenabeute",	-- Arena Spoils
 	[181083] = "Sothos' und Jariens Erbstücke",	-- Sothos and Jarien's Heirlooms
+	[181098] = "Vulkanasche",	-- Volcanic Ash
 	[181147] = "Steckbrief",	-- Wanted Poster
 	[181150] = "Staubiges Tagebuch",	-- Dusty Journal
 	[181153] = "Gesucht: Kel'gash der Boshafte",	-- Wanted Poster: Kel'gash the Wicked
@@ -3636,6 +3638,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "Die Große Schatzkammer",	-- The Great Vault
 	[381045] = "Goldener Drachenkelch",	-- Golden Dragon Goblet
+	[381065] = "Defektes Portal",	-- Broken Waygate
 	[381069] = "Gefülltes Fischernetz",	-- Full Fishing Net
 	[381094] = "Eleganter Leinwandpinsel",	-- Elegant Canvas Brush
 	[381107] = "Sandhaufen",	-- Sand Pile
@@ -3803,6 +3806,8 @@ for key,value in pairs({
 	[386669] = "Zerbrochenes Schmuckstück der Hakkari",	-- Fragmented Hakkari Bijou
 	[386680] = "Mysteriöser Almanach",	-- Mysterious Almanac
 	[386683] = "Versengtes Buch",	-- Seared Book
+	[386687] = "Gealtertes Tagebuch",	-- Aged Journal
+	[386688] = "Leerer Foliant",	-- Blank Tome
 	[386690] = "Unklares Kompendium",	-- Ambiguous Compendium
 	[386762] = "Urzeitliche Rüstungstruhe",	-- Primordial Armor Cache
 	[387493] = "Einzigartiger Fisch",	-- Unique Fish
