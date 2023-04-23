@@ -1953,7 +1953,7 @@ namespace ATT
         private static void TryFindRecipeID(Dictionary<string, object> data)
         {
             // don't apply a recipeID to data which is not an item or is a Toy or has a questID (Reaves Modules... argghhh)
-            if (data.ContainsKey("isToy") || !data.ContainsKey("itemID") || data.ContainsKey("questID"))
+            if (!data.ContainsKey("itemID") || data.ContainsKey("questID"))
                 return;
 
             // all recipes require a skill
@@ -2624,13 +2624,6 @@ namespace ATT
                 var item = Items.GetNull(pair.Key);
                 if (item != null) Items.MergeInto(pair.Key, new Dictionary<string, object> { { "mountID", pair.Value } }, item);
             }
-
-            // Go through and merge all of the toy data into the item containers.
-            foreach (var pair in Items.AllToys)
-            {
-                var item = Items.GetNull(pair.Key);
-                if (item != null) Items.MergeInto(pair.Key, new Dictionary<string, object> { { "isToy", pair.Value } }, item);
-            }
         }
 
         private class TierList
@@ -3173,7 +3166,6 @@ namespace ATT
                 case "isJumping":
                 case "isOffHand":
                 case "isRaid":
-                case "isToy":
                 case "isWorldQuest":
                 case "lore":
                 case "mapID":
@@ -3527,29 +3519,8 @@ namespace ATT
                         }
                     case "ItemToyDB":
                         {
-                            // The format of the Item Toy DB is a dictionary of item ID -> True.
-                            // This is slightly more annoying to parse, but it works okay.
-                            if (pair.Value is Dictionary<long, object> itemToyDB)
-                            {
-                                foreach (var itemValuePair in itemToyDB)
-                                {
-                                    if (itemValuePair.Value is object o)
-                                    {
-                                        Items.SetIsToy(itemValuePair.Key, Convert.ToBoolean(o));
-                                    }
-                                    else
-                                    {
-                                        LogError("ItemToyDB not in the correct format!");
-                                        Console.WriteLine(ToJSON(itemValuePair.Value));
-                                        Console.ReadLine();
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                LogError("ItemToyDB not in the correct format!");
-                                Console.ReadLine();
-                            }
+                            LogError("ItemToyDB not supported. Please use 'ItemDBConditional' and parser.config to assign Toy objects.");
+                            Console.ReadLine();
                             break;
                         }
                     case "Artifacts":

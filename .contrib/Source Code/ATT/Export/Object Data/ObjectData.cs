@@ -112,6 +112,14 @@ namespace ATT
             {
                 foreach (var objectType in ALL_OBJECTS)
                 {
+                    // prefer finding a 'decimal' typed key for the object
+                    if (data.TryGetValue(objectType.ObjectType, out decimal numericKey))
+                    {
+                        objectData = objectType;
+                        objKeyValue = numericKey;
+                        return true;
+                    }
+                    // otherwise allow any object type to suffice
                     if (data.TryGetValue(objectType.ObjectType, out objKeyValue))
                     {
                         objectData = objectType;
