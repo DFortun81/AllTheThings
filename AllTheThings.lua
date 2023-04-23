@@ -21509,9 +21509,8 @@ customWindowUpdates["list"] = function(self, force, got)
 		self.doesOwnUpdate = true;
 		self.initialized = true;
 		force = true;
-		local HaveQuestData = HaveQuestData;
 		local DGU, DGR, SearchObject = app.DirectGroupUpdate, app.DirectGroupRefresh, app.SearchForObject;
-		local SkipUpdate, SetBase = app.AlwaysShowUpdate, app.SetBaseObject;
+		local SetBase = app.SetBaseObject;
 
 		-- custom params for initialization
 		local dataType = (app.GetCustomWindowParam("list", "type") or "quest");
@@ -21575,11 +21574,6 @@ customWindowUpdates["list"] = function(self, force, got)
 				visible = true
 			};
 			SetBase(o, SearchObject(type, id, "field") or CreateObject({[type]=id}));
-			-- allow arbitrary type object constructors by searching for the field and cloning the found data
-			-- local o = CreateObject(SearchObject(type, id, "field") or {[type]=id});
-			-- o.visible = true;
-			-- o.OnUpdate = SkipUpdate;
-			-- app.PrintDebug("DLO-Created:",o.hash)
 			return o;
 		end
 
@@ -21625,9 +21619,15 @@ customWindowUpdates["list"] = function(self, force, got)
 			end,
 		};
 		if onlyMissing then
+			app.SetDGUDelay(0);
 			if onlyCached then
 				overrides.visible = function(o, key)
-					return o._missing and (o.questID and HaveQuestData(o.questID));
+					if o._missing then
+						local text = o.text;
+						-- app.PrintDebug("check",text)
+						return IsRetrieving(text) or
+							(not text:find("#") and text ~= UNKNOWN);
+					end
 				end
 			else
 				overrides.visible = function(o, key)
@@ -21637,19 +21637,6 @@ customWindowUpdates["list"] = function(self, force, got)
 		end
 		if harvesting then
 			app.SetDGUDelay(0);
-			-- allows the group to be removed from the window if it has been properly loaded
-			-- overrides.visible = function(o)
-			-- 	if not o.__hidden then
-			-- 		DGR(o);
-			-- 		-- only remain visible while the data is loading
-			-- 		if IsRetrieving(o.text) then
-			-- 			app.PrintDebug("visible",o.hash,o.text)
-			-- 			return true;
-			-- 		end
-			-- 		-- once loaded, hide itself so it stops refreshing the window
-			-- 		o.__hidden = true;
-			-- 	end
-			-- end
 		end
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
