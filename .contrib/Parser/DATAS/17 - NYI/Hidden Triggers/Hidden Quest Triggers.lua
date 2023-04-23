@@ -1794,6 +1794,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(26379),	-- In Aid of the Refugees - completed with quest 13601
 		q(26398),	-- Walk With The Earth Mother - completed with 26397
 		q(26522),	-- Faces of Evil - completed with 26357 & 26521
+		q(26756),	-- Nessa Shadowsong - completed with 6344
+		q(26757),	-- The Bounty of Teldrassil - completed with 6341
+		q(26758),	-- Flight to Auberdine - completed with 6342
+		q(26759),	-- Return to Nessa - completed with 6343
 		q(26893),	-- Blackfathom Deeps - completed with quest 26894
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
 		q(27861),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863

@@ -1061,6 +1061,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuests"] = {
 						24974,	-- Ever So Lonely
 						25038,	-- Gordo's Task
+						24977,	-- Johaan's Experiment
 						24980,	-- The Scarlet Palisade
 					},
 					["coord"] = { 60.1, 52.6, TIRISFAL_GLADES },

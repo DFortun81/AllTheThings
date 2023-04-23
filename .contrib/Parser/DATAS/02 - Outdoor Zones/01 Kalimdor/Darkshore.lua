@@ -2645,11 +2645,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
-
-root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-		q(26759, {	-- Return to Nessa
-			["timeline"] = { "created 4.0.3.13329" },
-		}),
-	}),
-});
