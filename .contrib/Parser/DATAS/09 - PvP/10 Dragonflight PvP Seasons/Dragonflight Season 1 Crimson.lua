@@ -43,7 +43,11 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["races"] = HORDE_ONLY,
 				}),
 				-- Solo
-				ach(17339),		-- Crimson Legend: Dragonflight Season 1
+				ach(17339, {	-- Crimson Legend: Dragonflight Season 1
+					i(206343, {		-- Crimson Legend's Pennant
+						["description"] = "This toy called 'Crimson Legend's Pennant' will be retroactively awarded to this Feat of Strength in Patch 10.1. Until then the Item will not load.\n\nIt is only shown to provide awareness & will be tagged correctly once Patch 10.1 is out.",
+					}),
+				}),
 				ach(16734, {	-- Crimson Soloist: Dragonflight Season 1
 					title(482),	-- Crimson Soloist <Name>
 				}),
