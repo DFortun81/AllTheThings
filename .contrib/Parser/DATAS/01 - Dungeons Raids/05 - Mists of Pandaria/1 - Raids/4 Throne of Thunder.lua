@@ -181,94 +181,54 @@ _.Instances = { tier(MOP_TIER, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				["crs"] = {
-					69909,	-- Amani'shi Flame Chanter
-					70448,	-- Ancient Python
-					68221,	-- Bore Worm
-					68222,	-- Bow Fly Swarm
-					70589,	-- Cavern Burrower
-					69702,	-- Dark Ritualist
-					69910,	-- Drakkari Frost Warden
-					70586,	-- Eternal Guardian
-					69899,	-- Farraki Sand Conjurer
-					70153,	-- Fungal Growth
-					68220,	-- Gastropod
-					69351,	-- Greater Cave Bat
-					69916,	-- Gurubashi Berserker
-					69905,	-- Gurubashi Berserker
-					69375,	-- Hidden Fog
-					69834,	-- Lightning Guardian
-					70202,	-- Manchu
-					70594,	-- Mist Lurker
-					70179,	-- Ritual Guard
-					68313,	-- Roaming Fog
-					69944,	-- Sand Elemental
-					70587,	-- Shale Stalker
-					70240,	-- Shan'ze Celestial Shaper
-					70227,	-- Skittering Spiderling
-					70445,	-- Stormbringer Draz'kil
-					69821,	-- Thunder Lord
-					70341,	-- Tormented Spirit
-					70230,	-- Zandalari Blade Initiate
-					69906,	-- Zandalari High Priest
-					69927,	-- Zandalari Prelate
-					70557,	-- Zandalari Prophet
-					69388,	-- Zandalari Spear-Shaper
-					69390,	-- Zandalari Storm-Caller
-					70236,	-- Zandalari Storm-Caller
-					69911,	-- Zandalari Warlord
-					69455,	-- Zandalari Water-Binder
-				},
-				["g"] = {
-					i(95202),	-- Necklace of the Terra-Cotta Archer
-					i(95203),	-- Necklace of the Terra-Cotta Invoker
-					i(95204),	-- Necklace of the Terra-Cotta Mender
-					i(95206),	-- Necklace of the Terra-Cotta Protector
-					i(95205),	-- Necklace of the Terra-Cotta Vanquisher
-					i(95211),	-- Abandoned Zandalari Arrowlinks
-					i(95215),	-- Abandoned Zandalari Bucklebreaker
-					i(95207),	-- Abandoned Zandalari Firecord
-					i(95214),	-- Abandoned Zandalari Goreplate
-					i(95213),	-- Abandoned Zandalari Greatbelt
-					i(95210),	-- Abandoned Zandalari Moonstrap
-					i(95208),	-- Abandoned Zandalari Shadowgirdle
-					i(95209),	-- Abandoned Zandalari Silentbelt
-					i(95212),	-- Abandoned Zandalari Waterchain
-					i(95218),	-- Columnbreaker Stompers
-					i(95221),	-- Deeproot Treads
-					i(95224),	-- Home-Warding Slippers
-					i(95217),	-- Locksmasher Greaves
-					i(95220),	-- Scalehide Spurs
-					i(95223),	-- Silentflame Sandals
-					i(95219),	-- Spiderweb Tabi
-					i(95222),	-- Spiritbound Boots
-					i(95216),	-- Vaultwalker Sabatons
-					n(TITANFORGED, {
-						i(96330),	-- Necklace of the Terra-Cotta Archer
-						i(96336),	-- Necklace of the Terra-Cotta Invoker
-						i(96341),	-- Necklace of the Terra-Cotta Mender
-						i(96352),	-- Necklace of the Terra-Cotta Protector
-						i(96349),	-- Necklace of the Terra-Cotta Vanquisher
-						i(96344),	-- Abandoned Zandalari Arrowlinks
-						i(96348),	-- Abandoned Zandalari Bucklebreaker
-						i(96333),	-- Abandoned Zandalari Firecord
-						i(96347),	-- Abandoned Zandalari Goreplate
-						i(96346),	-- Abandoned Zandalari Greatbelt
-						i(96343),	-- Abandoned Zandalari Moonstrap
-						i(96334),	-- Abandoned Zandalari Shadowgirdle
-						i(96342),	-- Abandoned Zandalari Silentbelt
-						i(96345),	-- Abandoned Zandalari Waterchain
-						i(96351),	-- Columnbreaker Stompers
-						i(96338),	-- Deeproot Treads
-						i(96337),	-- Home-Warding Slippers
-						i(96350),	-- Locksmasher Greaves
-						i(96332),	-- Scalehide Spurs
-						i(96335),	-- Silentflame Sandals
-						i(96331),	-- Spiderweb Tabi
-						i(96339),	-- Spiritbound Boots
-						i(96340),	-- Vaultwalker Sabatons
-					}),
-				},
+				i(95202),	-- Necklace of the Terra-Cotta Archer
+				i(95203),	-- Necklace of the Terra-Cotta Invoker
+				i(95204),	-- Necklace of the Terra-Cotta Mender
+				i(95206),	-- Necklace of the Terra-Cotta Protector
+				i(95205),	-- Necklace of the Terra-Cotta Vanquisher
+				i(95211),	-- Abandoned Zandalari Arrowlinks
+				i(95215),	-- Abandoned Zandalari Bucklebreaker
+				i(95207),	-- Abandoned Zandalari Firecord
+				i(95214),	-- Abandoned Zandalari Goreplate
+				i(95213),	-- Abandoned Zandalari Greatbelt
+				i(95210),	-- Abandoned Zandalari Moonstrap
+				i(95208),	-- Abandoned Zandalari Shadowgirdle
+				i(95209),	-- Abandoned Zandalari Silentbelt
+				i(95212),	-- Abandoned Zandalari Waterchain
+				i(95218),	-- Columnbreaker Stompers
+				i(95221),	-- Deeproot Treads
+				i(95224),	-- Home-Warding Slippers
+				i(95217),	-- Locksmasher Greaves
+				i(95220),	-- Scalehide Spurs
+				i(95223),	-- Silentflame Sandals
+				i(95219),	-- Spiderweb Tabi
+				i(95222),	-- Spiritbound Boots
+				i(95216),	-- Vaultwalker Sabatons
+				n(TITANFORGED, {
+					i(96330),	-- Necklace of the Terra-Cotta Archer
+					i(96336),	-- Necklace of the Terra-Cotta Invoker
+					i(96341),	-- Necklace of the Terra-Cotta Mender
+					i(96352),	-- Necklace of the Terra-Cotta Protector
+					i(96349),	-- Necklace of the Terra-Cotta Vanquisher
+					i(96344),	-- Abandoned Zandalari Arrowlinks
+					i(96348),	-- Abandoned Zandalari Bucklebreaker
+					i(96333),	-- Abandoned Zandalari Firecord
+					i(96347),	-- Abandoned Zandalari Goreplate
+					i(96346),	-- Abandoned Zandalari Greatbelt
+					i(96343),	-- Abandoned Zandalari Moonstrap
+					i(96334),	-- Abandoned Zandalari Shadowgirdle
+					i(96342),	-- Abandoned Zandalari Silentbelt
+					i(96345),	-- Abandoned Zandalari Waterchain
+					i(96351),	-- Columnbreaker Stompers
+					i(96338),	-- Deeproot Treads
+					i(96337),	-- Home-Warding Slippers
+					i(96350),	-- Locksmasher Greaves
+					i(96332),	-- Scalehide Spurs
+					i(96335),	-- Silentflame Sandals
+					i(96331),	-- Spiderweb Tabi
+					i(96339),	-- Spiritbound Boots
+					i(96340),	-- Vaultwalker Sabatons
+				}),
 			}),
 			d(7, {	-- LFR Queue NPC
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
