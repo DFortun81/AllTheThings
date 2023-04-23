@@ -507,7 +507,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_wind",
 					["g"] = {
 						o(386687, {	-- Aged Journal
-							["questIDD"] = 74610,
+							["questID"] = 74610,
 							["g"] = {
 								i(204814),	-- Aged Journal
 							},
@@ -529,7 +529,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 						o(386688, {	-- Blank Tome
-							["questIDD"] = 74612,
+							["questID"] = 74612,
 							["g"] = {
 								i(204813),	-- Blank Tome
 							},
