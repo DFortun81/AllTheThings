@@ -1094,6 +1094,7 @@ for key,value in pairs({
 	[113791] = "영원의 샘 제단",	-- Brazier of Everfount	--TODO: This was taken from wotlk Wowhead
 	[123329] = "밸로그의 궤짝",	-- Baelog's Chest
 	[125477] = "특이한 항아리",	-- Conspicuous Urn
+	[126049] = "자홍버섯",	-- Magenta Cap Clusters
 	[126158] = "탈론카이의 옷장",	-- Tallonkai's Dresser
 	[126260] = "고대 궤짝",	-- Ancient Chest
 	[129127] = "갤리윅스의 금고",	-- Gallywix's Lockbox
@@ -1367,6 +1368,7 @@ for key,value in pairs({
 	[181073] = "맛있는 향기의 가마솥",	-- Fragrant Cauldron
 	[181074] = "투기장 전리품",	-- Arena Spoils	--TODO: This was taken from wotlk Wowhead
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
+	[181098] = "화산재",	-- Volcanic Ash	--TODO: This was taken from wotlk Wowhead
 	[181147] = "현상 수배 전단",	-- Wanted Poster
 	[181150] = "먼지투성이 일지",	-- Dusty Journal
 	[181153] = "현상 수배 전단: 사악한 켈가쉬",	-- Wanted Poster: Kel'gash the Wicked
@@ -3635,6 +3637,7 @@ for key,value in pairs({
 	[380991] = "흙더미",	-- Dirt Mound
 	[381035] = "위대한 금고",	-- The Great Vault
 	[381045] = "황금 용 술잔",	-- Golden Dragon Goblet
+	[381065] = "부서진 차원문",	-- Broken Waygate
 	[381069] = "완전한 낚시 그물",	-- Full Fishing Net
 	[381094] = "세련된 캔버스 붓",	-- Elegant Canvas Brush
 	[381107] = "모래 더미",	-- Sand Pile
@@ -3802,6 +3805,8 @@ for key,value in pairs({
 	--TODO: [386669] = "Fragmented Hakkari Bijou",	-- Fragmented Hakkari Bijou
 	[386680] = "수수께끼의 연감",	-- Mysterious Almanac
 	[386683] = "그슬린 책",	-- Seared Book
+	[386687] = "오래된 일지",	-- Aged Journal
+	[386688] = "백지 고서",	-- Blank Tome
 	[386690] = "모호한 전서",	-- Ambiguous Compendium
 	[386762] = "태고의 방어구 보관함",	-- Primordial Armor Cache
 	--TODO: [387493] = "Unique Fish",	-- Unique Fish

@@ -1086,6 +1086,7 @@ for key,value in pairs({
 	[113791] = "Brazier of Everfount",	-- Brazier of Everfount	--TODO: This was taken from wotlk Wowhead
 	[123329] = "Cassa di Baelog",	-- Baelog's Chest
 	[125477] = "Urna Notevole",	-- Conspicuous Urn
+	[126049] = "Funghi Magenta",	-- Magenta Cap Clusters
 	[126158] = "Cassettone di Tallonkai",	-- Tallonkai's Dresser
 	[126260] = "Cassa Antica",	-- Ancient Chest
 	[129127] = "Cassetta di Sicurezza di Gallywix",	-- Gallywix's Lockbox
@@ -1359,6 +1360,7 @@ for key,value in pairs({
 	[181073] = "Calderone Profumato",	-- Fragrant Cauldron
 	[181074] = "Arena Spoils",	-- Arena Spoils	--TODO: This was taken from wotlk Wowhead
 	[181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms	--TODO: This was taken from wotlk Wowhead
+	[181098] = "Volcanic Ash",	-- Volcanic Ash	--TODO: This was taken from wotlk Wowhead
 	[181147] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[181150] = "Diario Impolverato",	-- Dusty Journal
 	[181153] = "Manifesto dei Ricercati: Kel'gash il Perfido",	-- Wanted Poster: Kel'gash the Wicked
@@ -3627,6 +3629,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "La Gran Banca",	-- The Great Vault
 	[381045] = "Calice del Drago Dorato",	-- Golden Dragon Goblet
+	[381065] = "Portale Rotto",	-- Broken Waygate
 	[381069] = "Rete da Pesca Piena",	-- Full Fishing Net
 	[381094] = "Spazzola Elegante",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
@@ -3794,6 +3797,8 @@ for key,value in pairs({
 	--TODO: [386669] = "Fragmented Hakkari Bijou",	-- Fragmented Hakkari Bijou
 	[386680] = "Almanacco Misterioso",	-- Mysterious Almanac
 	[386683] = "Libro Rovente",	-- Seared Book
+	--TODO: [386687] = "Aged Journal",	-- Aged Journal
+	--TODO: [386688] = "Blank Tome",	-- Blank Tome
 	--TODO: [386690] = "Ambiguous Compendium",	-- Ambiguous Compendium
 	[386762] = "Cassa dell'Armatura Primordiale",	-- Primordial Armor Cache
 	[387493] = "Pesce Unico",	-- Unique Fish
