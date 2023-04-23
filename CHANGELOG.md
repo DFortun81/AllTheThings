@@ -1,7 +1,7 @@
 # AllTheThings
 
-## [DF-3.3.4](https://github.com/DFortun81/AllTheThings/tree/DF-3.3.4) (2023-04-16)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.3.3...DF-3.3.4) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.3.6](https://github.com/DFortun81/AllTheThings/tree/DF-3.3.6) (2023-04-23)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.3.5...DF-3.3.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 ### Promotions
 
@@ -9,18 +9,17 @@ Earn the Big Battle Bear 🐻 through Prime Gaming until April 27, 2023. More de
 
 ### Logic changes
 
-- You no longer need to open professions to cache reagents for recipes.
-- Weekly Profession Knowledge quests and related world drop items will now show only if recipe tracking is on.
-- Collectible Sources which don't include themselves as a Shared Appearance of themselves now automatically show a message to force-refresh ATT to check if they have been collected on your account.
+- TLDR: Flight Path names should be localized now (not just English for all locales). Long explanation: Flight Paths are no longer statically localized and instead are localized by the Client when attempting to retrieve an unknown Flight Path name. Flight Paths which cannot be retrieved globally for the Client (due to incomplete quest restrictions on the character etc.) will be captured when the respective Flight Master is accessed for the first time.
 
 ### Logic fixes
 
-- Fixed some duplicated content.
+- Some fixes for attempting to determine Item links from SourceID.
+- Character Filters now include 'is Item in-game' (this is applied when checking Quest inaccuracy... removed Quests which were previously pre-requisites to available Quests shouldn't cause the Quest to be considered inaccurate).
 
 ### Data additions/fixes
 
-- Added new Noblegarden toy and quests.
-- Added all Winterpelt Furbolg quests.
-- Continued clean up of professions (Enchanting, Inscription).
-- Continued clean up of achievements (Raids).
+- Various 10.0.7 content updates: Zskera Vaults and Primal Storms.
+- Fixed various Achievements errors throughout addon thanks to new diagnostic tool.
+- Various Flight Paths fixes.
+- Huge consolidation of many Island Expedition Rewards.
 - Other fixes.
