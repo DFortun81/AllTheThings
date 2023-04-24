@@ -3818,22 +3818,22 @@ _.Zones =
 						n(87057, {	-- Leara Moonsilk <Leatherworking Patterns>
 							["coord"] = { 51.6, 41.6, STORMSHIELD },
 							["g"] = {
-								i(116328, {	-- Recipe: Brilliant Burnished Cloak
+								i(116328, {	-- Pattern: Brilliant Burnished Cloak
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116345, {	-- Recipe: Burnished Essence
+								i(116345, {	-- Pattern: Burnished Essence
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 									["timeline"] = { REMOVED_10_0_5 },
 								}),
-								i(116349, {	-- Recipe: Burnished Inscription Bag
+								i(116349, {	-- Pattern: Burnished Inscription Bag
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 								}),
-								i(116347, {	-- Recipe: Burnished Leather Bag
+								i(116347, {	-- Pattern: Burnished Leather Bag
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 								}),
-								i(116348, {	-- Recipe: Burnished Mining Bag
+								i(116348, {	-- Pattern: Burnished Mining Bag
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 								}),
 								i(120258, {	-- Recipe: Drums of Fury
@@ -3843,68 +3843,68 @@ _.Zones =
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 									["timeline"] = { ADDED_10_0_5 },
 								}),
-								i(116325, {	-- Recipe: Leather Refurbishing Kit
+								i(116325, {	-- Pattern: Leather Refurbishing Kit
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116327, {	-- Recipe: Nimble Burnished Cloak
+								i(116327, {	-- Pattern: Nimble Burnished Cloak
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116326, {	-- Recipe: Powerful Burnished Cloak
+								i(116326, {	-- Pattern: Powerful Burnished Cloak
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
 								i(202233, {	-- Recipe: Remarkable Burnished Essence
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 									["timeline"] = { ADDED_10_0_5 },
 								}),
-								i(116350, {	-- Recipe: Riding Harness
+								i(116350, {	-- Pattern: Riding Harness
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 								}),
-								i(116335, {	-- Recipe: Supple Boots
+								i(116335, {	-- Pattern: Supple Boots
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116334, {	-- Recipe: Supple Bracers
+								i(116334, {	-- Pattern: Supple Bracers
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116332, {	-- Recipe: Supple Gloves
+								i(116332, {	-- Pattern: Supple Gloves
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116330, {	-- Recipe: Supple Helm
+								i(116330, {	-- Pattern: Supple Helm
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116331, {	-- Recipe: Supple Leggings
+								i(116331, {	-- Pattern: Supple Leggings
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116329, {	-- Recipe: Supple Shoulderguards
+								i(116329, {	-- Pattern: Supple Shoulderguards
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116333, {	-- Recipe: Supple Vest
+								i(116333, {	-- Pattern: Supple Vest
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116336, {	-- Recipe: Supple Waistguard
+								i(116336, {	-- Pattern: Supple Waistguard
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116344, {	-- Recipe: Wayfaring Belt
+								i(116344, {	-- Pattern: Wayfaring Belt
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116343, {	-- Recipe: Wayfaring Boots
+								i(116343, {	-- Pattern: Wayfaring Boots
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116342, {	-- Recipe: Wayfaring Bracers
+								i(116342, {	-- Pattern: Wayfaring Bracers
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116340, {	-- Recipe: Wayfaring Gloves
+								i(116340, {	-- Pattern: Wayfaring Gloves
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116338, {	-- Recipe: Wayfaring Helm
+								i(116338, {	-- Pattern: Wayfaring Helm
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116339, {	-- Recipe: Wayfaring Leggings
+								i(116339, {	-- Pattern: Wayfaring Leggings
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116337, {	-- Recipe: Wayfaring Shoulderguards
+								i(116337, {	-- Pattern: Wayfaring Shoulderguards
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116341, {	-- Recipe: Wayfaring Tunic
+								i(116341, {	-- Pattern: Wayfaring Tunic
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
 								i(116376, {	-- Small Pouch of Coins

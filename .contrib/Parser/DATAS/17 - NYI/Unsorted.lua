@@ -171,37 +171,6 @@ root(ROOTS.Unsorted, {
 				-- Blizzard Changed name on all these objects... If anyone has time..
 				i(114851),	-- Pattern: Hexweave Cloth
 
-				i(116319),	-- Pattern: Journeying Helm
-				i(116320),	-- Pattern: Journeying Robes
-				i(116321),	-- Pattern: Journeying Slacks
-				i(116322),	-- Pattern: Traveling Helm
-				i(116323),	-- Pattern: Traveling Tunic
-				i(116324),	-- Pattern: Traveling Leggings
-				i(116325),	-- Pattern: Leather Refurbishing Kit
-				i(116326),	-- Pattern: Powerful Burnished Cloak
-				i(116327),	-- Pattern: Nimble Burnished Cloak
-				i(116328),	-- Pattern: Brilliant Burnished Cloak
-				i(116329),	-- Pattern: Supple Shoulderguards
-				i(116330),	-- Pattern: Supple Helm
-				i(116331),	-- Pattern: Supple Leggings
-				i(116332),	-- Pattern: Supple Gloves
-				i(116333),	-- Pattern: Supple Vest
-				i(116334),	-- Pattern: Supple Bracers
-				i(116335),	-- Pattern: Supple Boots
-				i(116336),	-- Pattern: Supple Waistguard
-				i(116337),	-- Pattern: Wayfaring Shoulderguards
-				i(116338),	-- Pattern: Wayfaring Helm
-				i(116339),	-- Pattern: Wayfaring Leggings
-				i(116340),	-- Pattern: Wayfaring Gloves
-				i(116341),	-- Pattern: Wayfaring Tunic
-				i(116342),	-- Pattern: Wayfaring Bracers
-				i(116343),	-- Pattern: Wayfaring Boots
-				i(116344),	-- Pattern: Wayfaring Belt
-				i(116345),	-- Pattern: Burnished Essence
-				i(116347),	-- Pattern: Burnished Leather Bag
-				i(116348),	-- Pattern: Burnished Mining Bag
-				i(116349),	-- Pattern: Burnished Inscription Bag
-				i(116350),	-- Pattern: Riding Harness
 				i(116726),	-- Plans: Smoldering Helm
 				i(116727),	-- Plans: Smoldering Breastplate
 				i(116728),	-- Plans: Smoldering Greaves
