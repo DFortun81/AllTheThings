@@ -33,15 +33,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(RARES, {
 				n(198916, {	-- Fael'lin
 					["questID"] = 75403,
+					["isDaily"] = true,
 				}),
 				n(198914, {	-- Han'thul
 					["questID"] = 75404,
+					["isDaily"] = true,
 				}),
 				n(198915, {	-- Khirna Cragheart
 					["questID"] = 75406,
+					["isDaily"] = true,
 				}),
 				n(198917, {	-- Shukoro Rapidstamer
 					["questID"] = 75405,
+					["isDaily"] = true,
 				}),
 			}),
 			n(SPECIAL, {
