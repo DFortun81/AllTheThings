@@ -1026,10 +1026,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				},
 			}),
 			q(70370, {	-- Occupation Examination
-				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
+				["description"] = "This quest requires that you have at least one open primary profession slot. Both versions complete at the same time.",
 				["provider"] = { "n", 192498 },	-- Hephaesta
 				["coord"] = { 71.8, 78.7, OHNAHRAN_PLAINS },
-				["classes"] = { EVOKER },
 			}),
 			n(BONUS_OBJECTIVES, {	-- All of these are One-Time
 				q(69968, {	-- Prozela Galeshot
