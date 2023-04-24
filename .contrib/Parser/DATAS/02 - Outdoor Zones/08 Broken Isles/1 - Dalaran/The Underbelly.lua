@@ -193,7 +193,7 @@ _.Zones =
 							i(137913, {	-- Recipe: Battlebound Girdle [Rank 3] (RECIPE!)
 								["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
 							}),
-							i(123949, {	-- Recipe: Demonsteel Waistguard [Rank 3] (RECIPE!)
+							i(123949, {	-- Plans: Demonsteel Waistguard [Rank 3] (RECIPE!)
 								["cost"] = {
 									{ "c", 1149, 500 },	-- 500x Sightless Eye
 									{ "g", 15000000 },	-- 1,500g
@@ -217,10 +217,10 @@ _.Zones =
 									{ "g", 15000000 },	-- 1,500g
 								},
 							}),
-							i(123929, {	-- Recipe: Leystone Waistguard [Rank 2] (RECIPE!)
+							i(123929, {	-- Plans: Leystone Waistguard [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(123937, {	-- Recipe: Leystone Waistguard [Rank 3] (RECIPE!)
+							i(123937, {	-- Plans: Leystone Waistguard [Rank 3] (RECIPE!)
 								["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
 							}),
 							i(137869, {	-- Recipe: Warhide Belt [Rank 2] (RECIPE!)

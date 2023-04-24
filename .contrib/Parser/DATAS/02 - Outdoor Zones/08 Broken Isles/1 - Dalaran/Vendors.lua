@@ -1606,7 +1606,7 @@ _.Zones =
 								["requireSkill"] = TAILORING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
-							i(123950, {	-- Recipe: Demonsteel Pauldrons [Rank 3] (RECIPE!)
+							i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -4651,7 +4651,7 @@ _.Zones =
 								["requireSkill"] = TAILORING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
-							i(123950, {	-- Recipe: Demonsteel Pauldrons [Rank 3] (RECIPE!)
+							i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),

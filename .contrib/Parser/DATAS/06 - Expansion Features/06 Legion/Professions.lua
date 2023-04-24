@@ -583,7 +583,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					r(184217, {["u"]=TRAINING}),	-- Scrapmetal Fingerplates
 					r(184219, {["u"]=TRAINING}),	-- Scrapmetal Handguard
 					r(184218, {["u"]=TRAINING}),	-- Scrapmetal Palmplate
-					i(123933),	-- Recipe: Leystone Gauntlets [Rank 2] (RECIPE!)
+					i(123933),	-- Plans: Leystone Gauntlets [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38519, {	-- Grayheft
@@ -633,7 +633,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				["provider"] = { "n", 96763 },	-- Saris Swifthammer
 				["coord"] = { 40.0, 54.8, VALSHARAH },
 				["groups"] = {
-					i(123929),	-- Recipe: Leystone Waistguard [Rank 2] (RECIPE!)
+					i(123929),	-- Plans: Leystone Waistguard [Rank 2] (RECIPE!)
 				},
 			}),
 			q(39726, {	-- ...And the Anvil
@@ -780,7 +780,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
 				["cost"] = { {"i", 123917, 1 } },	-- 1xDemonsteel Armguards
 				["g"] = {
-					i(123940),	-- Recipe: Demonsteel Armguards [Rank 2] (RECIPE!)
+					i(123940),	-- Plans: Demonsteel Armguards [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38538, {	-- Demonsteel Boots
@@ -790,7 +790,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
 				["cost"] = { {"i", 123911, 1 } },	-- 1xDemonsteel Boots
 				["g"] = {
-					i(123946),	-- Recipe: Demonsteel Boots [Rank 2] (RECIPE!)
+					i(123946),	-- Plans: Demonsteel Boots [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38542, {	-- Demonsteel Breastplate
@@ -800,7 +800,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
 				["cost"] = { {"i", 123910, 1 } },	-- 1xDemonsteel Breastplate
 				["g"] = {
-					i(123947),	-- Recipe: Demonsteel Breastplate [Rank 2] (RECIPE!)
+					i(123947),	-- Plans: Demonsteel Breastplate [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38539, {	-- Demonsteel Gauntlets
@@ -810,7 +810,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
 				["cost"] = { {"i", 123912, 1 } },	-- 1xDemonsteel Gauntlets
 				["g"] = {
-					i(123945),	-- Recipe: Demonsteel Gauntlets [Rank 2] (RECIPE!)
+					i(123945),	-- Plans: Demonsteel Gauntlets [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38541, {	-- Demonsteel Greaves
@@ -820,7 +820,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
 				["cost"] = { {"i", 123914, 1 } },	-- 1xDemonsteel Greaves
 				["g"] = {
-					i(123943),	-- Recipe: Demonsteel Greaves [Rank 2] (RECIPE!)
+					i(123943),	-- Plans: Demonsteel Greaves [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38540, {	-- Demonsteel Helm
@@ -830,7 +830,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
 				["cost"] = { {"i", 123913, 1 } },	-- 1xDemonsteel Helm
 				["g"] = {
-					i(123944),	-- Recipe: Demonsteel Helm [Rank 2] (RECIPE!)
+					i(123944),	-- Plans: Demonsteel Helm [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38537, {	-- Demonsteel Pauldrons
@@ -840,7 +840,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
 				["cost"] = { {"i", 123915, 1 } },	-- 1xDemonsteel Pauldrons
 				["g"] = {
-					i(123942),	-- Recipe: Demonsteel Pauldrons [Rank 2] (RECIPE!)
+					i(123942),	-- Plans: Demonsteel Pauldrons [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38536, {	-- Demonsteel Waistguard
@@ -850,7 +850,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
 				["cost"] = { {"i", 123916, 1 } },	-- 1xDemonsteel Waistguard
 				["g"] = {
-					i(123941),	-- Recipe: Demonsteel Waistguard [Rank 2] (RECIPE!)
+					i(123941),	-- Plans: Demonsteel Waistguard [Rank 2] (RECIPE!)
 				},
 			}),
 			-- Rethu's Incessant Courage Questline

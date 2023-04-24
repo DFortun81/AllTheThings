@@ -323,49 +323,49 @@ _.Zones =
 				n(92265,  {	-- Urael <Nal'ryssa's Minion>
 					["coord"] = { 30.0, 53.2, SURAMAR },
 					["g"] = {
-						i(123920, {	-- Recipe: Demonsteel Armguards [Rank 1] (RECIPE!)
+						i(123920, {	-- Plans: Demonsteel Armguards [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124115, 20 },	-- 20x Stormscale
 							},
 						}),
-						i(123926, {	-- Recipe: Demonsteel Boots [Rank 1] (RECIPE!)
+						i(123926, {	-- Plans: Demonsteel Boots [Rank 1] (RECIPE!)
 								["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124438, 20 },	-- 20x Unbroken Claw
 							},
 						}),
-						i(123927, {	-- Recipe: Demonsteel Breastplate [Rank 1] (RECIPE!)
+						i(123927, {	-- Plans: Demonsteel Breastplate [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 123918, 20 },	-- 20x Leystone Ore
 							},
 						}),
-						i(123925, {	-- Recipe: Demonsteel Gauntlets [Rank 1] (RECIPE!)
+						i(123925, {	-- Plans: Demonsteel Gauntlets [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 							},
 						}),
-						i(123923, {	-- Recipe: Demonsteel Greaves [Rank 1] (RECIPE!)
+						i(123923, {	-- Plans: Demonsteel Greaves [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124437, 20 },	-- 20x Shal'dorei Silk
 							},
 						}),
-						i(123924, {	-- Recipe: Demonsteel Helm [Rank 1] (RECIPE!)
+						i(123924, {	-- Plans: Demonsteel Helm [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 130179, 5 },		-- 5x Eye of Prophecy
 							},
 						}),
-						i(123922, {	-- Recipe: Demonsteel Pauldrons [Rank 1] (RECIPE!)
+						i(123922, {	-- Plans: Demonsteel Pauldrons [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124440, 20 },	-- 20x Arkhana
 							},
 						}),
-						i(123921, {	-- Recipe: Demonsteel Waistguard [Rank 1] (RECIPE!)
+						i(123921, {	-- Plans: Demonsteel Waistguard [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124439, 20 },	-- 20x Unbroken Tooth

@@ -12,7 +12,7 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 		i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
 			["requireSkill"] = TAILORING,
 		}),
-		i(123950, {	-- Recipe: Demonsteel Pauldrons [Rank 3] (RECIPE!)
+		i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 			["requireSkill"] = BLACKSMITHING,
 		}),
 		i(137894, {	-- Recipe: Dreadleather Shoulderguard [Rank 3] (RECIPE!)

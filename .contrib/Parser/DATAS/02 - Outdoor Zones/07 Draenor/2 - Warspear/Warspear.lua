@@ -2809,7 +2809,7 @@ _.Zones =
 								i(120258, {	-- Recipe: Drums of Fury
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(202232, {	-- Recipe: Impressive Burnished Essence
+								i(202232, {	-- Pattern: Impressive Burnished Essence
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 									["timeline"] = { ADDED_10_0_5 },
 								}),

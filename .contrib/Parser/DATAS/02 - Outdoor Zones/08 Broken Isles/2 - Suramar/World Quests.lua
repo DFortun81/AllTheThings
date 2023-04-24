@@ -288,7 +288,7 @@ _.Zones =
 				q(41637, {	-- Work Order: Leystone Pauldrons
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						i(123938),	-- Recipe: Leystone Pauldrons [Rank 3] (RECIPE!)
+						i(123938),	-- Plans: Leystone Pauldrons [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41655, {	-- Work Order: Queen's Opal Pendant

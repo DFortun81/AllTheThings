@@ -60,13 +60,13 @@ _.Zones =
 						i(139597, {	-- Mountainforged Chain Hauberk
 							["cost"] = 50000000,	-- 5,000g
 						}),
-						i(123948, {	-- Recipe: Demonsteel Armguards [Rank 3] (RECIPE!)
+						i(123948, {	-- Plans: Demonsteel Armguards [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(123955, {	-- Recipe: Demonsteel Breastplate [Rank 3] (RECIPE!)
+						i(123955, {	-- Plans: Demonsteel Breastplate [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(123953, {	-- Recipe: Demonsteel Gauntlets [Rank 3] (RECIPE!)
+						i(123953, {	-- Plans: Demonsteel Gauntlets [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
 						i(142408, {	-- Recipe: Drums of the Mountain [Rank 2] (RECIPE!)
