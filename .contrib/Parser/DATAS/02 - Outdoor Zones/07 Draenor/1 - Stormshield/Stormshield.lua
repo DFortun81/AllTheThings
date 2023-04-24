@@ -3836,7 +3836,7 @@ _.Zones =
 								i(116348, {	-- Pattern: Burnished Mining Bag
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 								}),
-								i(120258, {	-- Recipe: Drums of Fury
+								i(120258, {	-- Pattern: Drums of Fury
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
 								i(202232, {	-- Recipe: Impressive Burnished Essence

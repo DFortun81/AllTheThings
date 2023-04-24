@@ -265,7 +265,7 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 					["groups"] = {
-						i(123936),	-- Recipe: Leystone Armguards [Rank 3] (RECIPE!)
+						i(123936),	-- Plans: Leystone Armguards [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41272, {	-- Work Order: Mossgill Perch

@@ -19,43 +19,43 @@ _.ExpansionFeatures =
 								{ "i", 111557, 5 },	-- 5x Sumptuous Fur
 							},
 						}),
-						i(127725, {	-- Recipe: Mighty Steelforged Essence (RECIPE!)
+						i(127725, {	-- Plans: Mighty Steelforged Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
-						i(127726, {	-- Recipe: Mighty Taladite Amplifier
+						i(127726, {	-- Design: Mighty Taladite Amplifier
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
-						i(127727, {	-- Recipe: Mighty Truesteel Essence (RECIPE!)
+						i(127727, {	-- Plans: Mighty Truesteel Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
-						un(REMOVED_FROM_GAME, i(122551)),	-- Recipe: Powerful Taladite Amplifier
-						i(122714, {	-- Recipe: Primal Gemcutting
+						un(REMOVED_FROM_GAME, i(122551)),	-- Design: Powerful Taladite Amplifier
+						i(122714, {	-- Design: Primal Gemcutting
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
-						i(122705, {	-- Recipe: Riddle of Truesteel (RECIPE!)
+						i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
 							["timeline"] = { "added 6.1.0" },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
-						i(127743, {	-- Recipe: Savage Steelforged Essence (RECIPE!)
+						i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
-						i(127744, {	-- Recipe: Savage Taladite Amplifier
+						i(127744, {	-- Design: Savage Taladite Amplifier
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
-						i(127745, {	-- Recipe: Savage Truesteel Essence (RECIPE!)
+						i(127745, {	-- Plans: Savage Truesteel Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
@@ -118,13 +118,13 @@ _.ExpansionFeatures =
 								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
 							},
 						}),
-						i(127724, {	-- Recipe: Mighty Hexweave Essence
+						i(127724, {	-- Pattern: Mighty Hexweave Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
-						i(127742, {	-- Recipe: Savage Hexweave Essence
+						i(127742, {	-- Pattern: Savage Hexweave Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
@@ -222,13 +222,13 @@ _.ExpansionFeatures =
 								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
 							},
 						}),
-						i(127724, {	-- Recipe: Mighty Hexweave Essence
+						i(127724, {	-- Pattern: Mighty Hexweave Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
-						i(127742, {	-- Recipe: Savage Hexweave Essence
+						i(127742, {	-- Pattern: Savage Hexweave Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
@@ -274,20 +274,20 @@ _.ExpansionFeatures =
 								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
 							},
 						}),
-						i(127722, {	-- Recipe: Mighty Burnished Essence
+						i(127722, {	-- Pattern: Mighty Burnished Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
-						un(REMOVED_FROM_GAME, i(122547)),	-- Recipe: Powerful Burnished Essence
-						i(127740, {	-- Recipe: Savage Burnished Essence
+						un(REMOVED_FROM_GAME, i(122547)),	-- Pattern: Powerful Burnished Essence
+						i(127740, {	-- Pattern: Savage Burnished Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
-						i(122715, {	-- Recipe: Spiritual Leathercraft
+						i(122715, {	-- Pattern: Spiritual Leathercraft
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 						}),
 					},
@@ -1257,43 +1257,43 @@ _.ExpansionFeatures =
 								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
 							},
 						}),
-						i(127725, {	-- Recipe: Mighty Steelforged Essence (RECIPE!)
+						i(127725, {	-- Plans: Mighty Steelforged Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
-						i(127726, {	-- Recipe: Mighty Taladite Amplifier
+						i(127726, {	-- Design: Mighty Taladite Amplifier
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
-						i(127727, {	-- Recipe: Mighty Truesteel Essence (RECIPE!)
+						i(127727, {	-- Plans: Mighty Truesteel Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
-						un(REMOVED_FROM_GAME, i(122551)),	-- Recipe: Powerful Taladite Amplifier
-						i(122714, {	-- Recipe: Primal Gemcutting
+						un(REMOVED_FROM_GAME, i(122551)),	-- Design: Powerful Taladite Amplifier
+						i(122714, {	-- Design: Primal Gemcutting
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
-						i(122705, {	-- Recipe: Riddle of Truesteel (RECIPE!)
+						i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
 							["timeline"] = { "added 6.1.0" },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
-						i(127743, {	-- Recipe: Savage Steelforged Essence (RECIPE!)
+						i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
-						i(127744, {	-- Recipe: Savage Taladite Amplifier
+						i(127744, {	-- Design: Savage Taladite Amplifier
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
-						i(127745, {	-- Recipe: Savage Truesteel Essence (RECIPE!)
+						i(127745, {	-- Plans: Savage Truesteel Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["timeline"] = { "added 6.2.0", REMOVED_10_0_5 },
@@ -1336,20 +1336,20 @@ _.ExpansionFeatures =
 								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
 							},
 						}),
-						i(127722, {	-- Recipe: Mighty Burnished Essence
+						i(127722, {	-- Pattern: Mighty Burnished Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
-						un(REMOVED_FROM_GAME, i(122547)),	-- Recipe: Powerful Burnished Essence
-						i(127740, {	-- Recipe: Savage Burnished Essence
+						un(REMOVED_FROM_GAME, i(122547)),	-- Pattern: Powerful Burnished Essence
+						i(127740, {	-- Pattern: Savage Burnished Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
-						i(122715, {	-- Recipe: Spiritual Leathercraft
+						i(122715, {	-- Pattern: Spiritual Leathercraft
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 						}),
 					},

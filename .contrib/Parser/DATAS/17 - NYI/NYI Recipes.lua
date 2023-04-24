@@ -456,7 +456,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(WOD_TIER, {
 				-- 6.0.1
 				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
-					i(118097),	-- Recipe: Small Football
+					i(118097),	-- Plans: Small Football
 				})),
 			}),
 			tier(BFA_TIER, {

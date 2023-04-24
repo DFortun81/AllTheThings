@@ -684,67 +684,67 @@ DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSel
 	},
 })));
 COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { "added 6.0.2" } }, {
-	i(119329, {	-- Recipe: Soul of the Forge (RECIPE!)
+	i(119329, {	-- Plans: Soul of the Forge (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(120262, {	-- Recipe: Steelforged Aegis (RECIPE!)
+	i(120262, {	-- Plans: Steelforged Aegis (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(120260, {	-- Recipe: Steelforged Axe (RECIPE!)
+	i(120260, {	-- Plans: Steelforged Axe (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116731, {	-- Recipe: Steelforged Dagger (RECIPE!)
+	i(116731, {	-- Plans: Steelforged Dagger (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116729, {	-- Recipe: Steelforged Greataxe (RECIPE!)
+	i(116729, {	-- Plans: Steelforged Greataxe (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116732, {	-- Recipe: Steelforged Hammer (RECIPE!)
+	i(116732, {	-- Plans: Steelforged Hammer (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116730, {	-- Recipe: Steelforged Saber (RECIPE!)
+	i(116730, {	-- Plans: Steelforged Saber (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116733, {	-- Recipe: Steelforged Shield (RECIPE!)
+	i(116733, {	-- Plans: Steelforged Shield (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116740, {	-- Recipe: Truesteel Armguards (RECIPE!)
+	i(116740, {	-- Plans: Truesteel Armguards (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116741, {	-- Recipe: Truesteel Boots (RECIPE!)
+	i(116741, {	-- Plans: Truesteel Boots (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116739, {	-- Recipe: Truesteel Breastplate (RECIPE!)
+	i(116739, {	-- Plans: Truesteel Breastplate (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116738, {	-- Recipe: Truesteel Gauntlets (RECIPE!)
+	i(116738, {	-- Plans: Truesteel Gauntlets (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116737, {	-- Recipe: Truesteel Greaves (RECIPE!)
+	i(116737, {	-- Plans: Truesteel Greaves (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116734, {	-- Recipe: Truesteel Grinder (RECIPE!)
+	i(116734, {	-- Plans: Truesteel Grinder (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116736, {	-- Recipe: Truesteel Helm (RECIPE!)
+	i(116736, {	-- Plans: Truesteel Helm (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116735, {	-- Recipe: Truesteel Pauldrons (RECIPE!)
+	i(116735, {	-- Plans: Truesteel Pauldrons (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(118044, {	-- Recipe: Truesteel Reshaper (RECIPE!)
+	i(118044, {	-- Plans: Truesteel Reshaper (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116742, {	-- Recipe: Truesteel Waistguard (RECIPE!)
+	i(116742, {	-- Plans: Truesteel Waistguard (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
 	}),
-	i(116743, {	-- Recipe: Truesteel Essence (RECIPE!)
+	i(116743, {	-- Plans: Truesteel Essence (RECIPE!)
 		["collectible"] = false,
 		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }, },
 		["timeline"] = { REMOVED_10_0_5 },
 	}),
-	i(116745, {	-- Recipe: Steelforged Essence (RECIPE!)
+	i(116745, {	-- Plans: Steelforged Essence (RECIPE!)
 		["collectible"] = false,
 		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }, },

@@ -264,7 +264,7 @@ _.Zones =
 				q(41636, {	-- Work Order: Leystone Breastplate
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						i(123939),	-- Recipe: Leystone Breastplate [Rank 3] (RECIPE!)
+						i(123939),	-- Plans: Leystone Breastplate [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41654, {	-- Work Order: Queen's Opal Loop
