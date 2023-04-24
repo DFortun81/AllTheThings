@@ -1319,7 +1319,6 @@ root(ROOTS.Unsorted, {
 				i(114942),	-- Cracked Draenic Mortar
 				i(204343),	-- Trusty Dragonkin Rake
 				i(204442),	-- Clump of Tar
-				i(204561),	-- Primalist Cache Key
 				i(204632),	-- Tectonic Rock Fragment
 				i(202204),	-- Receiving Stone: Final Warning
 				i(202205),	-- Translated Journal of Adamanthia

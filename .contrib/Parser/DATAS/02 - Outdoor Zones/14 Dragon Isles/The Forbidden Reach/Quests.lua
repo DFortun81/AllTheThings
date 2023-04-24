@@ -172,6 +172,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "n", 200566 },	-- Cataloger Daela
 				["coord"] = { 34.3, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
+				["g"] = {
+					i(204561),	-- Primalist Cache Key
+				},
 			}),
 			-- Iskaara
 			q(74909, {	-- New Catches [Confirmed]
