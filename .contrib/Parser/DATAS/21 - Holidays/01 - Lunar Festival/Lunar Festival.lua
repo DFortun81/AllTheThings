@@ -5,11 +5,11 @@ root(ROOTS.Holidays, applyholiday(LUNAR_FESTIVAL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -47,
 	["description"] = "Start: 01/20 at 10:00 AM\nEnd: 02/03 at 10:00 AM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LUNAR_FESTIVAL .. [[, 1, 20, 2, 3); end]],
 	-- #else
 	["holidayID"] = 235471,
 	["description"] = "Start and end dates change every year to coincide with the Lunar New Year.",
 	-- #endif
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LUNAR_FESTIVAL .. [[, 1, 20, 2, 3); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(913, {	-- To Honor One's Elders

@@ -8,11 +8,11 @@ local BOUQUET_EBON = i(44731, {	-- Bouquet of Ebon Roses
 root(ROOTS.Holidays, applyholiday(LOVE_IS_IN_THE_AIR, {
 	-- #if ANYCLASSIC
 	["npcID"] = -50,
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LOVE_IS_IN_THE_AIR .. [[, 2, 6, 2, 20); end]],
 	-- #else
 	["holidayID"] = 235468,
 	-- #endif
 	["description"] = "Start: 02/06 at 10:00 AM\nEnd: 02/20 at 10:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. LOVE_IS_IN_THE_AIR .. [[, 2, 6, 2, 20); end]],
 	["groups"] = {
 		-- #if BEFORE WRATH
 		n(COMMON_BOSS_DROPS, {

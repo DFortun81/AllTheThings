@@ -17,7 +17,9 @@ root(ROOTS.Holidays, applyholiday(KALUAK_FISHING_DERBY, {
 		ICECROWN,
 	},
 	-- #endif
+	-- #if ANYCLASSIC
 	["OnUpdate"] = [[function() _.Settings:CheckWeekDay(]] .. KALUAK_FISHING_DERBY .. [[, 7); end]],
+	-- #endif
 	["groups"] = {
 		-- #if BEFORE 5.1.0
 		n(ACHIEVEMENTS, {

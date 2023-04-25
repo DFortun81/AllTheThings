@@ -14245,8 +14245,7 @@ end
 -- Represents filters which should be applied during Updates to groups
 local function FilterItemClass(item)
 	-- check Account trait filters
-	if app.UnobtainableItemFilter(item)
-		and app.SeasonalItemFilter(item)
+	if app.SeasonalOrUnobtainableFilter(item)
 		and app.PvPFilter(item)
 		and app.PetBattleFilter(item)
 		and app.RequireFactionFilter(item) then
@@ -14264,8 +14263,7 @@ end
 -- Represents filters which should be applied during Updates to groups, but skips the BoE filter
 local function FilterItemClass_IgnoreBoEFilter(item)
 	-- check Account trait filters
-	if app.UnobtainableItemFilter(item)
-		and app.SeasonalItemFilter(item)
+	if app.SeasonalOrUnobtainableFilter(item)
 		and app.PvPFilter(item)
 		and app.PetBattleFilter(item)
 		and app.RequireFactionFilter(item) then
@@ -14320,22 +14318,11 @@ local function FilterItemClass_RequireRacesCurrentFaction(item)
 		return true;
 	end
 end
-local function FilterItemClass_SeasonalItem(item)
-	-- specifically match on false for being disabled as a filter
-	if item.u and app.Settings:GetValue("Seasonal", item.u) == false then
-		return false;
-	end
-	return true;
+local function FilterItemClass_SeasonalOrUnobtainableItem(item)
+	return app.Settings:GetSeasonalOrUnobtainable(item.u);
 end
 local function ItemIsInGame(item)
 	return not item.u or item.u > 2;
-end
-local function FilterItemClass_UnobtainableItem(item)
-	-- specifically match on false for being disabled as a filter
-	if item.u and app.Settings:GetValue("Unobtainable", item.u) == false then
-		return false;
-	end
-	return true;
 end
 local function FilterItemClass_RequireBinding(item)
 	return not item.itemID or IsBoP(item);
@@ -14632,9 +14619,8 @@ app.FilterItemClass_RequiredSkill = FilterItemClass_RequiredSkill;
 app.FilterItemClass_PetBattles = FilterItemClass_PetBattles;
 app.FilterItemClass_PvP = FilterItemClass_PvP;
 app.FilterItemClass_RequireBinding = FilterItemClass_RequireBinding;
-app.FilterItemClass_UnobtainableItem = FilterItemClass_UnobtainableItem;
 app.ItemIsInGame = ItemIsInGame;
-app.FilterItemClass_SeasonalItem = FilterItemClass_SeasonalItem;
+app.FilterItemClass_SeasonalOrUnobtainableItem = FilterItemClass_SeasonalOrUnobtainableItem;
 app.FilterItemClass_RequireRacesCurrentFaction = FilterItemClass_RequireRacesCurrentFaction;
 app.FilterItemClass_RequireRaces = FilterItemClass_RequireRaces;
 app.FilterItemClass_RequireItemFilter = FilterItemClass_RequireItemFilter;
@@ -14663,10 +14649,9 @@ app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
 app.PvPFilter = app.NoFilter;
 app.PetBattleFilter = app.NoFilter;
-app.SeasonalItemFilter = app.NoFilter;
+app.SeasonalOrUnobtainableFilter = app.NoFilter;
 app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
-app.UnobtainableItemFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowTrackableThings = app.Filter;
 app.DefaultGroupFilter = app.Filter;
@@ -14745,7 +14730,7 @@ app.RecursiveClassAndRaceFilter = function(group)
 	return false;
 end
 app.RecursiveUnobtainableFilter = function(group)
-	if app.UnobtainableItemFilter(group) then
+	if app.SeasonalOrUnobtainableFilter(group) then
 		if group.parent then return app.RecursiveUnobtainableFilter(group.parent); end
 		return true;
 	end
@@ -24111,6 +24096,7 @@ app.Startup = function()
 		"UserLocale",
 		"Position",
 		"RandomSearchFilter",
+		"HOLIDAY_CACHE"
 	};
 	local removeKeys = {};
 	for key,_ in pairs(AllTheThingsAD) do
