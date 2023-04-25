@@ -3898,7 +3898,7 @@ for key,value in pairs({
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
-	--TODO: [9000000] = "Wind Sculpted Stone",	-- Wind Sculpted Stone
+	[9000000] = "Pierre de vent sculptée",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	[9999891] = "Objectic principal uniquement",	-- Main Objective Only
 	[9999892] = "Objectif princiapl + 2 bonus de zones", -- Main Objective + 2 Bonus Areas
@@ -3916,7 +3916,7 @@ for key,value in pairs({
 	[9999913] = "|cFFFFFFFFÉtape 6:|r Barrière de vigne", -- |cFFFFFFFFStep 6:|r Vine Barrier
 	[9999914] = "|cFFFFFFFFÉtape 7:|r Barrière d'eau", -- |cFFFFFFFFStep 7:|r Water Barrier
 	[9999915] = "|cFFFFFFFFÉtape 8:|r Guetteur de pierre", -- |cFFFFFFFFStep 8:|r Stone Watcher
-	[9999916] = "|cFFFFFFFFÉtape 9:|r Ethereal Barrier",	--TODO: |cFFFFFFFFStep 9:|r Ethereal Barrier
+	[9999916] = "|cFFFFFFFFÉtape 9:|r Barrière éthérienne", -- |cFFFFFFFFStep 9:|r Ethereal Barrier
 	[9999917] = "|cFFFFFFFFÉtape 10:|r Pierre étrange",	-- |cFFFFFFFFStep 10:|r Strange Stone
 	[9999918] = "|cFFFFFFFFÉtape 11:|r Porte en métal", -- |cFFFFFFFFStep 11:|r Metal Gate
 	[9999919] = "|cFFFFFFFFÉtape 12:|r Cube de sagesse",	-- |cFFFFFFFFStep 12:|r Wisdom Cube
@@ -3926,7 +3926,7 @@ for key,value in pairs({
 	[9999946] = "Invoquer Baa'l", -- Summon Baa'l
 	[13000000] = "|cFFFFFFFFÉtape 1:|r Acheter un Talisman Trouveur de Trésors Tangibles", -- |cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking
 	[13000001] = "|cFFFFFFFFÉtape 2:|r Équiper le Talisman Trouveur de Trésors Tangibles", -- |cFFFFFFFFStep 2:|r Equip Talisman
-    [13000002] = "|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Lotion scintillante murloc pour la peau",	-- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
+ [13000002] = "|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Lotion scintillante murloc pour la peau",	-- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
 	[13000003] = "Paillettes de branchies-irisées", -- Glittergill Glitter
 	[13000004] = "|cFFFFFFFFÉtape 1:|r Coquillage", -- |cFFFFFFFFStep 1:|r Seashell
 	[13000005] = "|cFFFFFFFFÉtape 2:|r Dent de grand requin non cariée", -- |cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth
