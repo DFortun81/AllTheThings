@@ -809,9 +809,9 @@ for key,value in pairs({
 		[-851] = "Cache de l’Empire noir",							-- Black Empire Cache
 	-- Heart of Azeroth
 		[-853] = "Tous les Rôles",									-- All Roles
-		--TODO: [-854] = "DPS",										-- DPS
+		[-854] = "Dégâts",											-- DPS
 		[-855] = "Soigneurs",										-- Healers
-		--TODO: [-856] = "Tanks",									-- Tanks
+		[-856] = "Tanks",											-- Tanks
 		[-858] = "Rang 1",											-- Rank 1
 		[-859] = "Rang 2",											-- Rank 2
 		[-860] = "Rang 3",											-- Rank 3
@@ -822,19 +822,19 @@ for key,value in pairs({
 		[-921] = "Améliorations du sanctum",						-- Sanctum Upgrades
 		[-924] = "Réseau de transport",								-- Transport Network
 		-- SL Ardenweald/Night Fae
-			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
+			[-936] = "Forme d'âme",									-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			--TODO: [-973] = "Loyalty",								-- Loyalty
-			--TODO: [-975] = "Humility",							-- Humility
+			[-973] = "Loyauté",										-- Loyalty
+			[-975] = "Humilité",									-- Humility
 		-- SL Revendreth/Venthyr
-			--TODO: [-954] = "Inquisitors",							-- Inquisitors
-			--TODO: [-955] = "High Inquisitors",					-- High Inquisitors
-			--TODO: [-956] = "Grand Inquisitors",					-- Grand Inquisitors
+			[-954] = "Inquisiteurs",								-- Inquisitors
+			[-955] = "Grands inquisiteurs",							-- High Inquisitors
+			[-956] = "Inquisiteurs suprêmes",						-- Grand Inquisitors
 			[-967] = "Restauration de miroir",						-- Mirror Restoration
-			--TODO: [-968] = "Set A",								-- Set A
-			--TODO: [-969] = "Set B",								-- Set B
-			--TODO: [-970] = "Set C",								-- Set C
-			--TODO: [-971] = "Set D",								-- Set D
+			[-968] = "Tier A",										-- Set A
+			[-969] = "Tier B",										-- Set B
+			[-970] = "Tier C",										-- Set C
+			[-971] = "Tier D",										-- Set D
 	-- Dragonflight
 		[-1100] = "Manuscrit guette-drake",							-- Drakewatcher Manuscripts	--TODO: plural
 		[-1101] = "Les Tempêtes Primordiales",						-- Primal Storms
@@ -850,8 +850,8 @@ for key,value in pairs({
 		[-1130] = "Rohart iskaarien",								-- Iskaara Tuskarr
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Concordat de Valdrakken",						-- Valdrakken Accord
-		--TODO: [-1143] = "DF Rare Rotation",						-- DF Rare Rotation
-		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
+		[-1143] = "Rotation Rare de DF",							-- DF Rare Rotation
+		[-1144] = "Connaissance hebdomadaire de profession",		-- Weekly Profession Header
 		--TODO: [-1150] = "Loamm Niffen",							-- Loamm Niffen
 		--TODO: [-1151] = "Bartering",								-- Bartering
 		[-1152] = PROFESSIONS_FIRST_CRAFT,							-- First Crafts	--TODO: pluralize
@@ -860,7 +860,7 @@ for key,value in pairs({
 		--TODO: [-1202] = "Fyrakk Assaults",						-- Fyrakk Assaults
 		--TODO: [-1203] = "Sniffenseeking",							-- Sniffenseeking
 	-- Warrior order hall lore items
-		--TODO: [-2200] = "Great Odyn and the Firelord",
+		[-2200] = "Le grand Odyn et le seigneur du feu",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
 		--TODO: [-2202] = "Halls of Gold and Glory",
 		--TODO: [-2203] = "The Keeper's Eye",
@@ -876,14 +876,13 @@ for key,value in pairs({
 		--TODO: [-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			--TODO: [-5200] = "Base Appearance",					-- Base Appearance
-			--TODO: [-5201] = "Class Hall Campaign",				-- Class Hall Campaign
+			[-5200] = "Apparence de base",							-- Base Appearance
+			[-5201] = "Campagne du Domaine de classe",				-- Class Hall Campaign
 			[-5202] = "L’équilibre de la puissance",				-- Balance of Power
-			--TODO: [-5203] = "Prestige Rewards",					-- Prestige Rewards
+			[-5203] = "Récompenses préstigieuses",					-- Prestige Rewards
 			[-5204] = "Apparence de Challenge",						-- Challenge Appearance
 			[-5205] = "Apparence Cachée",							-- Hidden Appearance
-
-		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
+			[-7776] = "Fêtard de l’Hiver",							-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Visions de N'Zoth",								-- Visions of N'Zoth
 		[-10072] = "Assaut de N'Zoth Assault",						-- N'Zoth Assault
@@ -892,11 +891,11 @@ for key,value in pairs({
 		[-10077] = "Assaut : La guerre des clans",					-- Assault: The Warring Clans
 		[-10078] = "Assaut : L’essaim infini",						-- Assault: The Endless Swarm
 		[-10079] = "Assaut : Aqir exhumés",							-- Assault: Aqir Unearthed
-		--TODO: [-10081] = "Corrupted Area",						-- Corrupted Area
-		--TODO: [-10082] = "Lost Area",								-- Lost Area
+		[-10081] = "Zone corrompue",								-- Corrupted Area
+		[-10082] = "Zone perdue",									-- Lost Area
 		-- Shadowlands Achievement Headers
 			-- 9.1
-				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
+				[-10083] = "Assauts de congrégation",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Miroir brisé A-1",					-- Broken Mirror
 				[-1433952] = "Miroir brisé A-2",					-- Broken Mirror
