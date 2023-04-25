@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 75.5, 12.6, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(168028, {	-- Recipe: Mallet of Thunderous Skins
+					i(168028, {	-- Pattern: Mallet of Thunderous Skins
 						["sourceQuests"] = { 55235 },	-- Instruments of Destruction
 					}),
 				},
@@ -230,7 +230,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 76.8, 11.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(168029, {	-- Recipe: Synchronous Thread
+					i(168029, {	-- Pattern: Synchronous Thread
 						["description"] = "This recipe is for relearning the Synchronous Thread after you have completed the Tools of the Trade questline.",
 						["sourceQuests"] = {
 							53881,	-- Cut from the Same Cloth (Alliance)
@@ -272,7 +272,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 74.1, 11.4, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(168024, {	-- Recipe: Iwen's Enchanting Rod (RECIPE!)
+					i(168024, {	-- Formula: Iwen's Enchanting Rod (RECIPE!)
 						["sourceQuest"] = 54002,	-- Putting it All Together
 						["timeline"] = { "added 8.1.5" },
 					}),
@@ -291,7 +291,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 73.5, 8.57, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(168022, {	-- Recipe: Khaz'gorian Smithing Hammer (RECIPE!)
+					i(168022, {	-- Plans: Khaz'gorian Smithing Hammer (RECIPE!)
 						["sourceQuests"] = { 50275 },	-- Anvil's Away (A)
 						["timeline"] = { ADDED_8_1_5 },
 					}),
@@ -1234,16 +1234,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(162254, {	-- Recipe: Coastal Mana Potion [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162359, {	-- Recipe: Contract: Proudmoore Admiralty [Rank 2] (RECIPE!)
+					i(162359, {	-- Technique: Contract: Proudmoore Admiralty [Rank 2] (RECIPE!)
 						["cost"] = 11000000,	-- 1,100g
 					}),
 					i(162134, {	-- Recipe: Flask of the Vast Horizon [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162414, {	-- Recipe: Hardened Tempest Knuckles [Rank 3] (RECIPE!)
+					i(162414, {	-- Pattern: Hardened Tempest Knuckles [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162413, {	-- Recipe: Mistscale Knuckles [Rank 3] (RECIPE!)
+					i(162413, {	-- Pattern: Mistscale Knuckles [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(162130, {	-- Recipe: Potion of Bursting Blood [Rank 3] (RECIPE!)
@@ -1324,7 +1324,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 75.0, 10.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(168027, {	-- Recipe: Jewelhammer's Focus
+					i(168027, {	-- Design: Jewelhammer's Focus
 						["sourceQuest"] = 49584,	-- The Missing Chapter
 					}),
 				},
@@ -1421,11 +1421,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(163320, {	-- Recipe: Battle Potion of Strength [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(166278, {	-- Recipe: Contract: 7th Legion [Rank 2] (RECIPE!)
+					i(166278, {	-- Technique: Contract: 7th Legion [Rank 2] (RECIPE!)
 						["cost"] = 19000000,	-- 1,900g
 						["timeline"] = { "added 8.1.0" },
 					}),
-					i(162306, {	-- Recipe: Enchanter's Sorcerous Scepter [Rank 3] (RECIPE!)
+					i(162306, {	-- Formula: Enchanter's Sorcerous Scepter [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(162138, {	-- Recipe: Endless Tincture of Fractional Power [Rank 3] (RECIPE!)
@@ -1437,16 +1437,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(162128, {	-- Recipe: Steelskin Potion [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162275, {	-- Recipe: Stormsteel Dagger [Rank 3] (RECIPE!)
+					i(162275, {	-- Plans: Stormsteel Dagger [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162670, {	-- Recipe: Stormsteel Saber [Rank 3] (RECIPE!)
+					i(162670, {	-- Plans: Stormsteel Saber [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162261, {	-- Recipe: Stormsteel Shield [Rank 3] (RECIPE!)
+					i(162261, {	-- Plans: Stormsteel Shield [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162276, {	-- Recipe: Stormsteel Spear [Rank 3] (RECIPE!)
+					i(162276, {	-- Plans: Stormsteel Spear [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(162139, {	-- Recipe: Surging Alchemist Stone [Rank 3] (RECIPE!)
@@ -1481,7 +1481,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			n(130399, {	-- Zooey Inksprocket <Inscription Trainer>
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["g"] = {
-					i(168026, {	-- Recipe Book: Sanguine Feather Quill of Lana'thel
+					i(168026, {	-- Book of Techniques: Sanguine Feather Quill of Lana'thel
 						["f"] = MISC,
 					}),
 				},

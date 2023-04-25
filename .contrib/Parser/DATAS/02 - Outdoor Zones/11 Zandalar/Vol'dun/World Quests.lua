@@ -341,7 +341,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					i(162370),	-- Contract: Voldunai [Rank 3] (RECIPE!)
+					i(162370),	-- Technique: Contract: Voldunai [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52362, {	-- Work Order: Enchant Weapon - Quick Navigation

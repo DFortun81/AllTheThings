@@ -1466,7 +1466,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 									{ "c", 1719, 100 },		-- 100x Corrupted Memento
 								},
 							}),
-							i(172011, {	-- Recipe: Contract: Uldum Accord (RECIPE!)
+							i(172011, {	-- Technique: Contract: Uldum Accord (RECIPE!)
 								["cost"] = 13300000,	-- 1,330 gold
 							}),
 							i(174904, {	-- Troop Requisition: Ramkahen Lancer

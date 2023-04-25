@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["g"] = {
 					i(166299, {	-- Honorbound Supplies
 						i(166879),	-- Rallying War Banner (TOY!)
-						i(166311, {	-- Recipe: Contract: The Honorbound [Rank 3] (RECIPE!)
+						i(166311, {	-- Technique: Contract: The Honorbound [Rank 3] (RECIPE!)
 							["timeline"] = { "added 8.1.0" },
 						}),
 					}),

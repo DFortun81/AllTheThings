@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isWorldQuest"] = true,
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					i(162366),	-- Recipe: Contract: Zandalari Empire [Rank 3] (RECIPE!)
+					i(162366),	-- Technique: Contract: Zandalari Empire [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52374, {	-- Work Order: Crow's Nest Scope

@@ -483,14 +483,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			q(52394, {	-- Work Order: Contract: Champions of Azeroth
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					i(162374),	-- Recipe: Contract: Champions of Azeroth [Rank 3] (RECIPE!)
+					i(162374),	-- Technique: Contract: Champions of Azeroth [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52391, {	-- Work Order: Contract: Storm's Wake
 				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					i(162364),	-- Recipe: Contract: Storm's Wake [Rank 3] (RECIPE!)
+					i(162364),	-- Technique: Contract: Storm's Wake [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52367, {	-- Work Order: Electroshock Mount Motivator

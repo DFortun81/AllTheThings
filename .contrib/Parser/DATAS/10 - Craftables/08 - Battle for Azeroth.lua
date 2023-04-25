@@ -71,22 +71,22 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 	}),
 	prof(BLACKSMITHING, {
 		spell(285081, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Stormsteel Girdle
-			i(165642),	-- Fortified Stormsteel Girdle (RECIPE!)
+			i(165642),	-- Plans: Fortified Stormsteel Girdle (RECIPE!)
 		})),
 		spell(285082, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Stormsteel Legguards
-			i(165640),	-- Fortified Stormsteel Legguards (RECIPE!)
+			i(165640),	-- Plans: Fortified Stormsteel Legguards (RECIPE!)
 		})),
 		spell(285089, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Stormsteel Girdle
-			i(165643),	-- Tempered Stormsteel Girdle (RECIPE!)
+			i(165643),	-- Plans: Tempered Stormsteel Girdle (RECIPE!)
 		})),
 		spell(285090, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Stormsteel Legguards
-			i(165641),	-- Tempered Stormsteel Legguards (RECIPE!)
+			i(165641),	-- Plans: Tempered Stormsteel Legguards (RECIPE!)
 		})),
 		spell(253191, {	-- Imbued Stormsteel Girdle
-			i(162498),	-- Emblazoned Stormsteel Girdle (RECIPE!)
+			i(162498),	-- Plans: Emblazoned Stormsteel Girdle (RECIPE!)
 		}),
 		spell(253187, {	-- Imbued Stormsteel Legguards
-			i(162496),	-- Emblazoned Stormsteel Legguards (RECIPE!)
+			i(162496),	-- Plans: Emblazoned Stormsteel Legguards (RECIPE!)
 		}),
 		spell(305839, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Osmenite Girdle
 			i(171107),	-- Eldritch Osmenite Girdle
@@ -95,22 +95,22 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(171109),	-- Eldritch Osmenite Legguards
 		})),
 		spell(299001, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Osmenite Girdle
-			i(168761),	-- Reinforced Osmenite Girdle
+			i(168761),	-- Plans: Reinforced Osmenite Girdle (RECIPE!)
 		})),
 		spell(298998, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Osmenite Legguards
-			i(168759),	-- Reinforced Osmenite Legguards
+			i(168759),	-- Plans: Reinforced Osmenite Legguards (RECIPE!)
 		})),
 		spell(299002, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Osmenite Girdle
-			i(168762),	-- Banded Osmenite Girdle
+			i(168762),	-- Plans: Banded Osmenite Girdle (RECIPE!)
 		})),
 		spell(298999, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Osmenite Legguards
-			i(168760),	-- Banded Osmenite Legguards
+			i(168760),	-- Plans: Banded Osmenite Legguards (RECIPE!)
 		})),
 		spell(253190, {	-- Stormsteel Girdle
-			i(162497),	-- Imbued Stormsteel Girdle (RECIPE!)
+			i(162497),	-- Plans: Imbued Stormsteel Girdle (RECIPE!)
 		}),
 		spell(253186, {	-- Stormsteel Legguards
-			i(162495),	-- Imbued Stormsteel Legguards (RECIPE!)
+			i(162495),	-- Plans: Imbued Stormsteel Legguards (RECIPE!)
 		}),
 		spell(305840, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Osmenite Girdle
 			i(171108),	-- Maddening Osmenite Girdle
@@ -632,7 +632,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 				i(171082),	-- Design: Peerless Leviathan's Eye Loop
 			}),
 			i(168702, {	-- Crushing Leviathan's Eye Loop
-				i(168772),	-- Recipe: Ascended Leviathan's Eye Loop
+				i(168772),	-- Design: Ascended Leviathan's Eye Loop
 			}),
 			i(166521),	-- Emblazoned Kraken's Eye Loop
 			i(166524),	-- Eternal Kraken's Eye Loop
@@ -642,7 +642,7 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(153688),	-- Kubiline Ring
 			i(153687),	-- Kyanite Ring
 			i(168701, {	-- Leviathan's Eye Loop
-				i(168771),	-- Recipe: Crushing Leviathan's Eye Loop
+				i(168771),	-- Design: Crushing Leviathan's Eye Loop
 			}),
 			i(153685),	-- Owlseye Loop
 			i(171075),	-- Peerless Leviathan's Eye Loop
@@ -819,10 +819,10 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 				i(171124),	-- Pattern: Eldritch Dredged Leather Leggings
 			}),
 			i(161962, {	-- Mistscale Leggings [Alliance]
-				i(162505),	-- Recipe: Imbued Mistscale Leggings
+				i(162505),	-- Pattern: Imbued Mistscale Leggings
 			}),
 			i(154157, {	-- Mistscale Greaves [Horde]
-				i(162505),	-- Recipe: Imbued Mistscale Leggings
+				i(162505),	-- Pattern: Imbued Mistscale Leggings
 			}),
 			i(167949),	-- Notorious Combatant's Leather Leggings [Alliance]
 			i(167948),	-- Notorious Combatant's Leather Leggings [Horde]
@@ -911,10 +911,10 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 				i(171126),	-- Pattern: Eldritch Dredged Leather Boots
 			}),
 			i(161961, {	-- Mistscale Boots [Alliance]
-				i(162503),	-- Recipe: Imbued Mistscale Boots
+				i(162503),	-- Pattern: Imbued Mistscale Boots
 			}),
 			i(154156, {	-- Mistscale Boots [Horde]
-				i(162503),	-- Recipe: Imbued Mistscale Boots
+				i(162503),	-- Pattern: Imbued Mistscale Boots
 			}),
 			i(167951),	-- Notorious Combatant's Leather Treads [Alliance]
 			i(167950),	-- Notorious Combatant's Leather Treads [Horde]

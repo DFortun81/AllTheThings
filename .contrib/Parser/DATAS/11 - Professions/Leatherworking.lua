@@ -5898,14 +5898,14 @@ profession(LEATHERWORKING, {
 			{	-- Hardened Tempest Boots
 				["spellID"] = 256765,	-- Hardened Tempest Boots
 				["groups"] = {
-					{	-- Recipe: Imbued Tempest Boots
-						["itemID"] = 162499,	-- Recipe: Imbued Tempest Boots
+					{	-- Pattern: Imbued Tempest Boots
+						["itemID"] = 162499,	-- Pattern: Imbued Tempest Boots
 					},
 					{	-- Imbued Tempest Boots
 						["spellID"] = 256766,	-- Imbued Tempest Boots
 						["groups"] = {
-							{	-- Recipe: Emblazoned Tempest Boots
-								["itemID"] = 162500,	-- Recipe: Emblazoned Tempest Boots
+							{	-- Pattern: Emblazoned Tempest Boots
+								["itemID"] = 162500,	-- Pattern: Emblazoned Tempest Boots
 							},
 						},
 					},
@@ -5915,13 +5915,13 @@ profession(LEATHERWORKING, {
 				["spellID"] = 256768,	-- Hardened Tempest Leggings
 				["groups"] = {
 					{	-- Recipe: Imbued Tempest Leggings
-						["itemID"] = 162501,	-- Recipe: Imbued Tempest Leggings
+						["itemID"] = 162501,	-- Pattern: Imbued Tempest Leggings
 					},
 					{	-- Imbued Tempest Leggings
 						["spellID"] = 256769,	-- Imbued Tempest Leggings
 						["groups"] = {
-							{	-- Recipe: Emblazoned Tempest Leggings
-								["itemID"] = 162502,	-- Recipe: Emblazoned Tempest Leggings
+							{	-- Pattern: Emblazoned Tempest Leggings
+								["itemID"] = 162502,	-- Pattern: Emblazoned Tempest Leggings
 							},
 						},
 					},
@@ -5930,14 +5930,14 @@ profession(LEATHERWORKING, {
 			{	-- Enhanced Tempest Boots
 				["spellID"] = 285083,	-- Enhanced Tempest Boots
 				["groups"] = {
-					{	-- Recipe: Fortified Tempest Boots
-						["itemID"] = 165644,	-- Recipe: Fortified Tempest Boots
+					{	-- Pattern: Fortified Tempest Boots
+						["itemID"] = 165644,	-- Pattern: Fortified Tempest Boots
 					},
 					{	-- Fortified Tempest Boots
 						["spellID"] = 285091,	-- Fortified Tempest Boots
 						["groups"] = {
-							{	-- Recipe: Tempered Tempest Boots
-								["itemID"] = 165645,	-- Recipe: Tempered Tempest Boots
+							{	-- Pattern: Tempered Tempest Boots
+								["itemID"] = 165645,	-- Pattern: Tempered Tempest Boots
 							},
 						},
 					},
@@ -5946,14 +5946,14 @@ profession(LEATHERWORKING, {
 			{	-- Enhanced Tempest Leggings
 				["spellID"] = 285084,	-- Enhanced Tempest Leggings
 				["groups"] = {
-					{	-- Recipe: Fortified Tempest Leggings
-						["itemID"] = 165646,	-- Recipe: Fortified Tempest Leggings
+					{	-- Pattern: Fortified Tempest Leggings
+						["itemID"] = 165646,	-- Pattern: Fortified Tempest Leggings
 					},
 					{	-- Fortified Tempest Leggings
 						["spellID"] = 285092,	-- Fortified Tempest Leggings
 						["groups"] = {
-							{	-- Recipe: Tempered Tempest Leggings
-								["itemID"] = 165647,	-- Recipe: Tempered Tempest Leggings
+							{	-- Pattern: Tempered Tempest Leggings
+								["itemID"] = 165647,	-- Pattern: Tempered Tempest Leggings
 							},
 						},
 					},
@@ -5962,14 +5962,14 @@ profession(LEATHERWORKING, {
 			{	-- Mistscale Boots
 				["spellID"] = 256771,	-- Mistscale Boots
 				["groups"] = {
-					{	-- Recipe: Imbued Mistscale Boots
-						["itemID"] = 162503,	-- Recipe: Imbued Mistscale Boots
+					{	-- Pattern: Imbued Mistscale Boots
+						["itemID"] = 162503,	-- Pattern: Imbued Mistscale Boots
 					},
 					{	-- Imbued Mistscale Boots
 						["spellID"] = 256772,	-- Imbued Mistscale Boots
 						["groups"] = {
-							{	-- Recipe: Tempered Tempest Leggings
-								["itemID"] = 162504,	-- Recipe: Emblazoned Mistscale Boots
+							{	-- Pattern: Tempered Tempest Leggings
+								["itemID"] = 162504,	-- Pattern: Emblazoned Mistscale Boots
 							},
 						},
 					},
@@ -5978,14 +5978,14 @@ profession(LEATHERWORKING, {
 			{	-- Mistscale Leggings
 				["spellID"] = 256774,	-- Mistscale Leggings
 				["groups"] = {
-					{	-- Recipe: Imbued Mistscale Leggings
-						["itemID"] = 162505,	-- Recipe: Imbued Mistscale Leggings
+					{	-- Pattern: Imbued Mistscale Leggings
+						["itemID"] = 162505,	-- Pattern: Imbued Mistscale Leggings
 					},
 					{	-- Imbued Mistscale Leggings
 						["spellID"] = 256775,	-- Imbued Mistscale Leggings
 						["groups"] = {
-							{	-- Recipe: Emblazoned Mistscale Leggings
-								["itemID"] = 162506,	-- Recipe: Emblazoned Mistscale Leggings
+							{	-- Pattern: Emblazoned Mistscale Leggings
+								["itemID"] = 162506,	-- Pattern: Emblazoned Mistscale Leggings
 							},
 						},
 					},
@@ -5994,14 +5994,14 @@ profession(LEATHERWORKING, {
 			{	-- Enhanced Mistscale Boots
 				["spellID"] = 285079,	-- Enhanced Mistscale Boots
 				["groups"] = {
-					{	-- Recipe: Fortified Mistscale Boots
-						["itemID"] = 165648,	-- Recipe: Fortified Mistscale Boots
+					{	-- Pattern: Fortified Mistscale Boots
+						["itemID"] = 165648,	-- Pattern: Fortified Mistscale Boots
 					},
 					{	-- Fortified Mistscale Boots
 						["spellID"] = 285087,	-- Fortified Mistscale Boots
 						["groups"] = {
-							{	-- Recipe: Tempered Mistscale Boots
-								["itemID"] = 165649,	-- Recipe: Tempered Mistscale Boots
+							{	-- Pattern: Tempered Mistscale Boots
+								["itemID"] = 165649,	-- Pattern: Tempered Mistscale Boots
 							},
 						},
 					},
@@ -6010,14 +6010,14 @@ profession(LEATHERWORKING, {
 			{	-- Enhanced Mistscale Greaves
 				["spellID"] = 285080,	-- Enhanced Mistscale Greaves
 				["groups"] = {
-					{	-- Recipe: Fortified Mistscale Greaves
-						["itemID"] = 165650,	-- Recipe: Fortified Mistscale Greaves
+					{	-- Pattern: Fortified Mistscale Greaves
+						["itemID"] = 165650,	-- Pattern: Fortified Mistscale Greaves
 					},
 					{	-- Fortified Mistscale Greaves
 						["spellID"] = 285088,	-- Fortified Mistscale Greaves
 						["groups"] = {
-							{	-- Recipe: Tempered Mistscale Greaves
-								["itemID"] = 165651,	-- Recipe: Tempered Mistscale Greaves
+							{	-- Pattern: Tempered Mistscale Greaves
+								["itemID"] = 165651,	-- Pattern: Tempered Mistscale Greaves
 							},
 						},
 					},

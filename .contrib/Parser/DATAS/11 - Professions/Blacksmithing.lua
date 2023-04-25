@@ -4747,13 +4747,13 @@ profession(BLACKSMITHING, {
 				["spellID"] = 253190,	-- Stormsteel Girdle
 				["groups"] = {
 					{	-- Recipe: Imbued Stormsteel Girdle
-						["itemID"] = 162497,	-- Recipe: Imbued Stormsteel Girdle
+						["itemID"] = 162497,	-- Plans: Imbued Stormsteel Girdle
 					},
 					{	-- Imbued Stormsteel Girdle
 						["spellID"] = 253191,	-- Imbued Stormsteel Girdle
 						["groups"] = {
 							{	-- Recipe: Emblazoned Stormsteel Girdle
-								["itemID"] = 162498,	-- Recipe: Emblazoned Stormsteel Girdle
+								["itemID"] = 162498,	-- Plans: Emblazoned Stormsteel Girdle
 							},
 						},
 					},
@@ -4763,13 +4763,13 @@ profession(BLACKSMITHING, {
 				["spellID"] = 253186,	-- Stormsteel Legguards
 				["groups"] = {
 					{	-- Recipe: Imbued Stormsteel Legguards
-						["itemID"] = 162495,	-- Recipe: Imbued Stormsteel Legguards
+						["itemID"] = 162495,	-- Plans: Imbued Stormsteel Legguards
 					},
 					{	-- Imbued Stormsteel Legguards
 						["spellID"] = 253187,	-- Imbued Stormsteel Legguards
 						["groups"] = {
 							{	-- Recipe: Emblazoned Stormsteel Legguards
-								["itemID"] = 162496,	-- Recipe: Emblazoned Stormsteel Legguards
+								["itemID"] = 162496,	-- Plans: Emblazoned Stormsteel Legguards
 							},
 						},
 					},
@@ -4778,14 +4778,14 @@ profession(BLACKSMITHING, {
 			{	-- Enhanced Stormsteel Girdle
 				["spellID"] = 285081,	-- Enhanced Stormsteel Girdle
 				["groups"] = {
-					{	-- Recipe: Fortified Stormsteel Girdle
-						["itemID"] = 165642,	-- Recipe: Fortified Stormsteel Girdle
+					{	-- Plans: Fortified Stormsteel Girdle
+						["itemID"] = 165642,	-- Plans: Fortified Stormsteel Girdle
 					},
 					{	-- Fortified Stormsteel Girdle
 						["spellID"] = 285089,	-- Fortified Stormsteel Girdle
 						["groups"] = {
-							{	-- Recipe: Tempered Stormsteel Girdle
-								["itemID"] = 165643,	-- Recipe: Tempered Stormsteel Girdle
+							{	-- Plans: Tempered Stormsteel Girdle
+								["itemID"] = 165643,	-- Plans: Tempered Stormsteel Girdle
 							},
 						},
 					},
@@ -4794,14 +4794,14 @@ profession(BLACKSMITHING, {
 			{	-- Enhanced Stormsteel Legguards
 				["spellID"] = 285082,	-- Enhanced Stormsteel Legguards
 				["groups"] = {
-					{	-- Recipe: Fortified Stormsteel Legguards
-						["itemID"] = 165640,	-- Recipe: Fortified Stormsteel Legguards
+					{	-- Plans: Fortified Stormsteel Legguards
+						["itemID"] = 165640,	-- Plans: Fortified Stormsteel Legguards
 					},
 					{	-- Fortified Stormsteel Legguards
 						["spellID"] = 285090,	-- Fortified Stormsteel Legguards
 						["groups"] = {
-							{	-- Recipe: Tempered Stormsteel Legguards
-								["itemID"] = 165641,	-- Recipe: Tempered Stormsteel Legguards
+							{	-- Plans: Tempered Stormsteel Legguards
+								["itemID"] = 165641,	-- Plans: Tempered Stormsteel Legguards
 							},
 						},
 					},

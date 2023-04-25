@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				i(169607, {	-- Formula: Accord of Versatility [Rank 3] (RECIPE!)
 					["cost"] = 14000000,	-- 1,400g
 				}),
-				i(169549, {	-- Recipe: Contract: Unshackled (RECIPE!)
+				i(169549, {	-- Technique: Contract: Unshackled (RECIPE!)
 					["cost"] = 14000000,	-- 1,400g
 				}),
 				i(169603, {	-- Recipe: Greater Mystical Cauldron [Rank 3] (RECIPE!)
@@ -468,7 +468,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				i(169364, {	-- Prismatic Softshell (PET!)
 					["cost"] = 5000000,	-- 500g
 				}),
-				i(169548, {	-- Recipe: Contract: Ankoan (RECIPE!)
+				i(169548, {	-- Technique: Contract: Ankoan (RECIPE!)
 					["cost"] = 14000000,	-- 1,400g
 				}),
 				i(169504, {	-- Recipe: Greater Mystical Cauldron [Rank 3] (RECIPE!)

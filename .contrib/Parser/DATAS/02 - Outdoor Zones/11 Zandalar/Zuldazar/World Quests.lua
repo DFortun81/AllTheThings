@@ -310,7 +310,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			q(52393, {	-- Work Order: Contract: Tortollan Seekers
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					i(162372),	-- Contract: Tortollan Seekers [Rank 3] (RECIPE!)
+					i(162372),	-- Technique: Contract: Tortollan Seekers [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52335, {	-- Work Order: Demitri's Draught of Deception

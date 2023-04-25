@@ -242,10 +242,10 @@ root(ROOTS.WorldDrops, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1
 	}),
 	filter(RECIPES, {
 		prof(BLACKSMITHING, {
-			i(166260),	-- Recipe: Monel-Hardened Hoofplates [Rank 3] (RECIPE!)
+			i(166260),	-- Plans: Monel-Hardened Hoofplates [Rank 3] (RECIPE!)
 		}),
 		prof(LEATHERWORKING, {
-			i(166313),	-- Recipe: Coarse Leather Barding (Rank 3)
+			i(166313),	-- Pattern: Coarse Leather Barding (Rank 3)
 		}),
 		prof(TAILORING, {
 			i(163027, {	-- Pattern: Embroidered Deep Sea Bag (Rank 1)
