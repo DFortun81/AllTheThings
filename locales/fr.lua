@@ -915,12 +915,12 @@ do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
-	--TODO: [-18] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
-	--TODO: [-22] = "Naughty secrets...",
-	--TODO: [-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
-	--TODO: [-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
-	--TODO: [-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
-	--TODO: [-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
+    [-18] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles."
+    [-22] = "Vilains secrets...",
+	[-34] = "Les quêtes mondiales sont des quêtes limitées dans le temps, disponibles dans des lieux spécifiques avec des récompenses variables.\n\nN’oublie pas de consulter souvent la fenêtre des quêtes mondiales ATT (/attwq) pour voir quelles sont les objets limités dans le temps que tu dois collecter !"{ 		
+	[-169] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon."
+	[-799] = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile."
+	[-903] = "Ces objets peuvent provenir de coffres au trésor répétitifs, Criquet à souhait, de quêtes mondiales ou des missions de la table de commandement."
 })
 do a[key] = value; end
 
@@ -3897,7 +3897,7 @@ for key,value in pairs({
 	--TODO: [401241] = "Snubbed Snail Shells",	-- Snubbed Snail Shells
 	--TODO: [401292] = "Gently Jostled Jewels",	-- Gently Jostled Jewels
 	--TODO: [401828] = "Nal Ks'kol Reliquary",	-- Nal Ks'kol Reliquary
-	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
+	[999111] = "Amas d’ambre", -- Amber Gem Cluster
 	[9000000] = "Pierre de vent sculptée",	-- Wind Sculpted Stone
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	[9999891] = "Objectic principal uniquement",	-- Main Objective Only
@@ -3926,7 +3926,7 @@ for key,value in pairs({
 	[9999946] = "Invoquer Baa'l", -- Summon Baa'l
 	[13000000] = "|cFFFFFFFFÉtape 1:|r Acheter un Talisman Trouveur de Trésors Tangibles", -- |cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking
 	[13000001] = "|cFFFFFFFFÉtape 2:|r Équiper le Talisman Trouveur de Trésors Tangibles", -- |cFFFFFFFFStep 2:|r Equip Talisman
- [13000002] = "|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Lotion scintillante murloc pour la peau",	-- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
+    [13000002] = "|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Lotion scintillante murloc pour la peau", -- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
 	[13000003] = "Paillettes de branchies-irisées", -- Glittergill Glitter
 	[13000004] = "|cFFFFFFFFÉtape 1:|r Coquillage", -- |cFFFFFFFFStep 1:|r Seashell
 	[13000005] = "|cFFFFFFFFÉtape 2:|r Dent de grand requin non cariée", -- |cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth
