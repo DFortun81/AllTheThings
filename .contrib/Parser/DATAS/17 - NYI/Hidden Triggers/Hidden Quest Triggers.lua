@@ -1799,6 +1799,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(26759),	-- Return to Nessa - completed with 6343
 		q(26893),	-- Blackfathom Deeps - completed with quest 26894
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
+		q(27419),	-- Army of the Black Dragon - completed with quest 1168
 		q(27861),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
 		q(27862),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
 		q(28236),	-- The Lost Brother - completed with quest 28233
@@ -1839,13 +1840,13 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(31469),	-- UNUSED - completed with quest 31311
 		q(31485),	-- UNUSED - completed with quest 31281
 		q(31530),	-- Mission: The Hozen Dozen - completed with quest 31529
-		q(31806, { ["_drop"] = { "g" }, }), -- Test Quest - completed with quest 31802
+		q(31806, { ["_drop"] = { "g" }, }),	-- Test Quest - completed with quest 31802
 		q(31877),	-- The Inkmasters of the Arboretum - completed with quest 31876
-		q(32105, { ["_drop"] = { "g" }, }), -- Pristine Monument Ledger - completed with quest 31805
+		q(32105, { ["_drop"] = { "g" }, }),	-- Pristine Monument Ledger - completed with quest 31805
 		q(32107),	-- Flying Tiger Gourami - completed with quest 31443
 		q(32125),	-- Don't Try So Hard - DEPRECATED - completed with quest 32235
 		q(32196),	-- A Kind of Magic - DEPRECATED - completed with quest 32143
-		q(32341, { ["_drop"] = { "g" }, }), -- Demonstrate Your Power - completed with quest 32340
+		q(32341, { ["_drop"] = { "g" }, }),	-- Demonstrate Your Power - completed with quest 32340
 		q(32516),	-- The Bloodletter - completed with quest 32495 & 32530
 		q(32534),	-- The Skumblade Threat - completed with quest 32204 & 32535
 		q(33071),	-- The Call of War - completed with quest 39691
@@ -1900,11 +1901,11 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(38008),	-- The Road of Glory - completed with quest 36125 & 36227
 		q(38305),	-- Cenarius, Keeper of the Grove - completed with quest 40122
 		q(38713),	-- The Crusade Calls - completed with quest 38710
-		q(39058, {["_drop"] = { "g" }}),	-- Critters of Draenor - completed with quest 38299 & 38300
+		q(39058, { ["_drop"] = { "g" }, }),	-- Critters of Draenor - completed with quest 38299 & 38300
 		q(39127),	-- Beyond the Wall - completed with quest 31386 & 31388
 		q(39189),	-- Warchief's Command: Nagrand! - completed with quest 9957 & 9960 & 9961 & 39182 & 39188
 		q(39396),	-- NOT USED - completed with quest 39394 & 38463
-		q(39692, { ["_drop"] = { "g" }, }), -- The Call of War - completed with quest 39691
+		q(39692, { ["_drop"] = { "g" }, }),	-- The Call of War - completed with quest 39691
 		q(39978),	-- Meet the Recruits - completed with quest 32715
 		q(41226),	-- Breaking Out - completed with quest 38672
 		q(41858),	-- No Monk Left Behind - completed with quest 41852
@@ -1915,7 +1916,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46176),	-- The Archmage Accosted - completed with quest 44924
 		q(49059),	-- The Bones of Xibala - completed with quest 47257
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
-		q(27419),	-- Army of the Black Dragon - completed with quest 1168
 	}),
 
 	-------------------
