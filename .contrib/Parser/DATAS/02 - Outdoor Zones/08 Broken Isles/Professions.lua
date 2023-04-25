@@ -766,7 +766,7 @@ _.Zones =
 						["provider"] = { "n", 93523 },	-- Namha Moonwater
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							i(137952),	-- Recipe: Stonehide Leather Barding
+							i(137952),	-- Pattern: Stonehide Leather Barding
 						},
 					}),
 					q(40241, {	-- Battle Bonds (H)
@@ -789,7 +789,7 @@ _.Zones =
 						["provider"] = { "n", 93523 },	-- Namha Moonwater
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							i(137933),	-- Recipe: Leather Pet Bed
+							i(137933),	-- Pattern: Leather Pet Bed
 						},
 					}),
 					q(40177,  {	-- Leather Lady
@@ -890,7 +890,7 @@ _.Zones =
 						["provider"] = { "n", 98964 },	-- Celea
 						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
-							i(137902),	-- Recipe: Battlebound Spaulders [Rank 2] (RECIPE!)
+							i(137902),	-- Pattern: Battlebound Spaulders [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40190,  {	-- Hardening the Hide
@@ -907,7 +907,7 @@ _.Zones =
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["coord"] = { 36.8, 78.2, 750 },
 						["g"] = {
-							i(137875),	-- Recipe: Warhide Jerkin [Rank 2] (RECIPE!)
+							i(137875),	-- Pattern: Warhide Jerkin [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40192, {	-- Claw of the Land
@@ -915,8 +915,8 @@ _.Zones =
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["coord"] = { 36.8, 78.2, 750 },
 						["g"] = {
-							i(137869),	-- Recipe: Warhide Belt [Rank 2] (RECIPE!)
-							i(137868),	-- Recipe: Warhide Bindings [Rank 2] (RECIPE!)
+							i(137869),	-- Pattern: Warhide Belt [Rank 2] (RECIPE!)
+							i(137868),	-- Pattern: Warhide Bindings [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40193,  {	-- Getting the Kinks Out
@@ -930,8 +930,8 @@ _.Zones =
 						["provider"] = { "n", 98964 },	-- Celea
 						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
-							i(137900),	-- Recipe: Battlebound Armbands [Rank 2] (RECIPE!)
-							i(137901),	-- Recipe: Battlebound Girdle [Rank 2] (RECIPE!)
+							i(137900),	-- Pattern: Battlebound Armbands [Rank 2] (RECIPE!)
+							i(137901),	-- Pattern: Battlebound Girdle [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40195, {	-- A Daring Rescue
@@ -944,7 +944,7 @@ _.Zones =
 						["provider"] = { "n", 99689 },	-- Taldranis
 						["coord"] = { 51.6, 58.0, AZSUNA },
 						["g"] = {
-							i(137907),	-- Recipe: Battlebound Hauberk [Rank 2] (RECIPE!)
+							i(137907),	-- Pattern: Battlebound Hauberk [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40198, {	-- Rats!
@@ -955,8 +955,8 @@ _.Zones =
 						["provider"] = { "n", 93522 },	-- Diane Cannings
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							i(137874),	-- Recipe: Warhide Footpads [Rank 2] (RECIPE!)
-							i(137870),	-- Recipe: Warhide Shoulderguard [Rank 2] (RECIPE!)
+							i(137874),	-- Pattern: Warhide Footpads [Rank 2] (RECIPE!)
+							i(137870),	-- Pattern: Warhide Shoulderguard [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40199,  {	-- Leather Legwork
@@ -964,8 +964,8 @@ _.Zones =
 						["provider"] = { "n", 98931 },	-- Thanid Glowergold
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							i(137902),	-- Recipe: Battlebound Spaulders [Rank 2] (RECIPE!)
-							i(137906),	-- Recipe: Battlebound Treads [Rank 2] (RECIPE!)
+							i(137902),	-- Pattern: Battlebound Spaulders [Rank 2] (RECIPE!)
+							i(137906),	-- Pattern: Battlebound Treads [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40202,  {	-- The Final Lessons
@@ -978,7 +978,7 @@ _.Zones =
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["coord"] = { 36.8, 78.2, 750 },
 						["g"] = {
-							i(137873),	-- Recipe: Warhide Gloves [Rank 2] (RECIPE!)
+							i(137873),	-- Pattern: Warhide Gloves [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40205, {	-- Respect for the Past
@@ -986,7 +986,7 @@ _.Zones =
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["coord"] = { 36.8, 78.2, 750 },
 						["g"] = {
-							i(137871),	-- Recipe: Warhide Pants [Rank 2] (RECIPE!)
+							i(137871),	-- Pattern: Warhide Pants [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40203, {	-- Strength of the Past
@@ -994,7 +994,7 @@ _.Zones =
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["coord"] = { 36.8, 78.2, 750 },
 						["g"] = {
-							i(137872),	-- Recipe: Warhide Mask [Rank 2] (RECIPE!)
+							i(137872),	-- Pattern: Warhide Mask [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40415, {	-- Well Spent Time
@@ -1017,7 +1017,7 @@ _.Zones =
 						["coord"] = { 47.4, 44.2, AZSUNA },
 						["maps"] = { 713 },	-- Eye of Azshara
 						["g"] = {
-							i(137904),	-- Recipe: Battlebound Warhelm [Rank 2] (RECIPE!)
+							i(137904),	-- Pattern: Battlebound Warhelm [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40207, {	-- Scales of the Arcane
@@ -1025,7 +1025,7 @@ _.Zones =
 						["provider"] = { "n", 98964 },	-- Celea
 						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
-							i(137905),	-- Recipe: Battlebound Grips [Rank 2] (RECIPE!)
+							i(137905),	-- Pattern: Battlebound Grips [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40209, {	-- Scales of the Earth
@@ -1033,7 +1033,7 @@ _.Zones =
 						["provider"] = { "n", 98964 },	-- Celea
 						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
-							i(137903),	-- Recipe: Battlebound Leggings [Rank 2] (RECIPE!)
+							i(137903),	-- Pattern: Battlebound Leggings [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40210, {	-- Time Well Spent
@@ -1070,7 +1070,7 @@ _.Zones =
 						["coord"] = { 26.6, 71.6, SURAMAR },
 						["g"] = {
 							i(140636),	-- Pattern: Dreadleather Bindings [Rank 1] (RECIPE!)
-							i(140644),	-- Recipe: Gravenscale Armbands [Rank 1] (RECIPE!)
+							i(140644),	-- Pattern: Gravenscale Armbands [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40215,  {	-- Mounting Made Easy
@@ -1078,7 +1078,7 @@ _.Zones =
 						["provider"] = { "n", 93523 },	-- Namha Moonwater
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							i(141850),	-- Recipe: Elderhorn Riding Harness
+							i(141850),	-- Pattern: Elderhorn Riding Harness
 						},
 					}),
 				}),

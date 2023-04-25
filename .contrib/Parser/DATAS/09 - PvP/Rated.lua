@@ -15,10 +15,10 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 		i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 			["requireSkill"] = BLACKSMITHING,
 		}),
-		i(137894, {	-- Recipe: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+		i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
 			["requireSkill"] = LEATHERWORKING,
 		}),
-		i(137926, {	-- Recipe: Gravenscale Spaulders [Rank 3] (RECIPE!)
+		i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
 			["requireSkill"] = LEATHERWORKING,
 		}),
 	})),

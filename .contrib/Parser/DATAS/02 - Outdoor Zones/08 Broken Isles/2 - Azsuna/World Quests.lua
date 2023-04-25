@@ -267,7 +267,7 @@ _.Zones =
 				q(41639, {	-- Work Order: Battlebound Spaulders
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(137914),	-- Recipe: Battlebound Spaulders [Rank 3] (RECIPE!)
+						i(137914),	-- Pattern: Battlebound Spaulders [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41675, {	-- Work Order: Blink-Trigger Headgun

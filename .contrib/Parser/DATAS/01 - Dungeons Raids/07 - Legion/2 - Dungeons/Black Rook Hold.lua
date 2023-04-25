@@ -275,7 +275,7 @@ _.Instances = { tier(LEGION_TIER, {
 							ach(10862),	-- Mythic: Black Rook Hold Guild Run
 							i(137858),	-- Design: Grim Furystone Gorget (Rank 3)
 							i(127930),	-- Recipe: Flask of the Whispered Pact (Rank 2)
-							i(137931),	-- Recipe: Gravenscale Hauberk (Rank 3)
+							i(137931),	-- Pattern: Gravenscale Hauberk (Rank 3)
 							i(137694),	-- Schematic: Reaves Module: Repair Mode
 							i(136716),	-- Caged Horror
 							i(136770),	-- Drape of the Raven Lord

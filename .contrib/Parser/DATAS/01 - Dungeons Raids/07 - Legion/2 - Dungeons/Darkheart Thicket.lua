@@ -76,7 +76,7 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(99192, e(1657, {	-- Shade of Xavius
 					ach(10783),	-- Darkheart Thicket
 					i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)
-					i(137876),	-- Recipe: Warhide Bindings [Rank 3] (RECIPE!)
+					i(137876),	-- Pattern: Warhide Bindings [Rank 3] (RECIPE!)
 					i(134448),	-- Ashen Satyr Leggings
 					i(137321),	-- Burning Sky Pauldrons
 					i(134405),	-- Cloak of Fading Echoes
@@ -145,7 +145,7 @@ _.Instances = { tier(LEGION_TIER, {
 						ach(10784),	-- Heroic: Darkheart Thicket
 						i(137853),	-- Design: Sylvan Maelstrom Amulet [Rank 3] (RECIPE!)
 						i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)
-						i(137876),	-- Recipe: Warhide Bindings [Rank 3] (RECIPE!)
+						i(137876),	-- Pattern: Warhide Bindings [Rank 3] (RECIPE!)
 						i(134448),	-- Ashen Satyr Leggings
 						i(137321),	-- Burning Sky Pauldrons
 						i(134405),	-- Cloak of Fading Echoes
@@ -218,7 +218,7 @@ _.Instances = { tier(LEGION_TIER, {
 						ach(10857),	-- Mythic: Darkheart Thicket Guild Run
 						i(137853),	-- Design: Sylvan Maelstrom Amulet [Rank 3] (RECIPE!)
 						i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)
-						i(137876),	-- Recipe: Warhide Bindings [Rank 3] (RECIPE!)
+						i(137876),	-- Pattern: Warhide Bindings [Rank 3] (RECIPE!)
 						i(134448),	-- Ashen Satyr Leggings
 						i(137321),	-- Burning Sky Pauldrons
 						i(134405),	-- Cloak of Fading Echoes

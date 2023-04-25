@@ -237,8 +237,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							122333,	-- General Erodus
 						},
 						["g"] = {
-							i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-							i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
+							i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
+							i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
 							i(151985),	-- General Erodus' Tricorne
 							i(152019),	-- Pauldrons of the Eternal Offensive
 							i(152125),	-- Bearmantle Cloak
@@ -304,7 +304,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					e(1985, {	-- Portal Keeper Hasabel
 						["crs"] = { 122104 },	-- Portal Keeper Hasabel
 						["g"] = {
-							i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
+							i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 							i(152001),	-- Nexus Conductor's Headgear
 							i(151965),	-- Vulcanarcore Pendant
 							i(152008),	-- Reality-Splitting Wristguards
@@ -581,7 +581,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
 					["g"] = {
 						ach(11930),	-- Worm-monger
-						i(151713),	-- Recipe: Empyrial Breastplate (Rank 3)
+						i(151713),	-- Plans: Empyrial Breastplate (Rank 3)
 						i(151943),	-- Crown of Relentless Annihilation
 						i(151988),	-- Shoulderpads of the Demonic Blitz
 						i(151937),	-- Cloak of  the Burning Vanguard
@@ -637,8 +637,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(12129),	-- This is the War Room!
-						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-						i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
+						i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
+						i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -704,7 +704,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
 						ach(11928),	-- Portal Combat
-						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
+						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
 						i(152008),	-- Reality-Splitting Wristguards
@@ -982,7 +982,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
 					["g"] = {
-						i(151713),	-- Recipe: Empyrial Breastplate (Rank 3)
+						i(151713),	-- Plans: Empyrial Breastplate (Rank 3)
 						i(151943),	-- Crown of Relentless Annihilation
 						i(151988),	-- Shoulderpads of the Demonic Blitz
 						i(151937),	-- Cloak of  the Burning Vanguard
@@ -1037,8 +1037,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						122333,	-- General Erodus
 					},
 					["g"] = {
-						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-						i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
+						i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
+						i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -1102,7 +1102,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1985, {	-- Portal Keeper Hasabel
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
-						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
+						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
 						i(152008),	-- Reality-Splitting Wristguards
@@ -1430,8 +1430,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(11994),	-- Mythic: Antoran High Command
-						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-						i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
+						i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
+						i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -1497,7 +1497,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
 						ach(11995),	-- Mythic: Portal Keeper Hasabel
-						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
+						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
 						i(152008),	-- Reality-Splitting Wristguards

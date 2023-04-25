@@ -113,7 +113,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137825),	-- Design: Dawnlight Band [Rank 2] (RECIPE!)
 					i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess [Rank 2] (RECIPE!)
 					i(127929),	-- Recipe: Leytorrent Potion [Rank 2] (RECIPE!)
-					i(137877),	-- Recipe: Warhide Pants [Rank 3] (RECIPE!)
+					i(137877),	-- Pattern: Warhide Pants [Rank 3] (RECIPE!)
 					i(136705),	-- Technique: Aqual Mark (RECIPE!)
 					i(134532),	-- Band of Fused Coral
 					i(134237),	-- Brinewashed Leather Boots
@@ -190,7 +190,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137825),	-- Design: Dawnlight Band [Rank 2] (RECIPE!)
 						i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess [Rank 2] (RECIPE!)
 						i(127929),	-- Recipe: Leytorrent Potion [Rank 2] (RECIPE!)
-						i(137877),	-- Recipe: Warhide Pants [Rank 3] (RECIPE!)
+						i(137877),	-- Pattern: Warhide Pants [Rank 3] (RECIPE!)
 						i(136705),	-- Technique: Aqual Mark (RECIPE!)
 						i(134532),	-- Band of Fused Coral
 						i(134237),	-- Brinewashed Leather Boots
@@ -272,7 +272,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137825),	-- Design: Dawnlight Band [Rank 2] (RECIPE!)
 						i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess [Rank 2] (RECIPE!)
 						i(127929),	-- Recipe: Leytorrent Potion [Rank 2] (RECIPE!)
-						i(137877),	-- Recipe: Warhide Pants [Rank 3] (RECIPE!)
+						i(137877),	-- Pattern: Warhide Pants [Rank 3] (RECIPE!)
 						i(136705),	-- Technique: Aqual Mark (RECIPE!)
 						i(134532),	-- Band of Fused Coral
 						i(134237),	-- Brinewashed Leather Boots

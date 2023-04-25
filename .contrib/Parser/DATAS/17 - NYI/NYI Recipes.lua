@@ -580,7 +580,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 7.0.3
 				tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
 					i(137981),	-- Pattern: Silkweave Cloak
-					i(151746),	-- Recipe: Lightweave Breeches
+					i(151746),	-- Pattern: Lightweave Breeches
 				})),
 			}),
 			tier(BFA_TIER, {

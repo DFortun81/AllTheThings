@@ -233,8 +233,8 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 125349 },	-- Enstraa
 						["coord"] = { 39.6, 73.6, 831 },
 						["g"] = {
-							i(151740),	-- Recipe: Fiendish Shoulderguards (Rank 1)
-							i(151743),	-- Recipe: Fiendish Spaulders (Rank 1)
+							i(151740),	-- Pattern: Fiendish Shoulderguards (Rank 1)
+							i(151743),	-- Pattern: Fiendish Spaulders (Rank 1)
 						},
 					}),
 					q(49143, {	-- Essence of the Light Mother
@@ -453,16 +453,16 @@ root(ROOTS.Zones, {
 						i(152788, {	-- Lightforged Warframe (MOUNT!)
 							["cost"] = 6250000000,	-- 625,000g
 						}),
-						i(151712, {	-- Recipe: Empyrial Breastplate (Rank 2)
+						i(151712, {	-- Plans: Empyrial Breastplate (Rank 2)
 							["cost"] = 20000000,	-- 2,000g
 						}),
-						i(151741, {	-- Recipe: Fiendish Shoulderguards (Rank 2)
+						i(151741, {	-- Pattern: Fiendish Shoulderguards (Rank 2)
 							["cost"] = 20000000,	-- 2,000g
 						}),
-						i(151744, {	-- Recipe: Fiendish Spaulders (Rank 2)
+						i(151744, {	-- Pattern: Fiendish Spaulders (Rank 2)
 							["cost"] = 20000000,	-- 2,000g
 						}),
-						i(151747, {	-- Recipe: Lightweave Breeches (Rank 2)
+						i(151747, {	-- Pattern: Lightweave Breeches (Rank 2)
 							["cost"] = 20000000,	-- 2,000g
 						}),
 						i(153032),	-- Technique: Glyph of the Lightspawn (RECIPE!)

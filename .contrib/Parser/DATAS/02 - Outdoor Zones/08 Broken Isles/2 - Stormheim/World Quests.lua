@@ -300,7 +300,7 @@ _.Zones =
 				q(41642, {	-- Work Order: Warhide Footpads
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(137880),	-- Recipe: Warhide Footpads [Rank 3] (RECIPE!)
+						i(137880),	-- Pattern: Warhide Footpads [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41672, {	-- Work Order: Word of Haste

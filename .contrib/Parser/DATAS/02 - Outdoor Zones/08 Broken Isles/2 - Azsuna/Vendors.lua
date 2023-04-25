@@ -70,7 +70,7 @@ _.Zones =
 						i(136898, {	-- Fledgling Warden Owl (PET!)
 							["cost"] = 5000000,		-- 500g
 						}),
-						i(142333, {	-- Recipe: Feathered Luffa
+						i(142333, {	-- Manual: Feathered Luffa
 							["cost"] = 6000000,		-- 600g
 						}),
 						i(142331, {	-- Recipe: Spiced Falcosaur Omelet
