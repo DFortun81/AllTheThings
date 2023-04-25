@@ -665,15 +665,15 @@ for key,value in pairs({
 		--TODO: [-1] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,	-- Common Boss Drop
 		--TODO: [-7] = WORLD.." "..RAID_BOSSES,						-- World Bosses
 		--TODO: [-11] = "Common Box Drops",							-- Common Box Drops
-		--TODO: [-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",-- Warpwood Quarter [East - Demon]
-		--TODO: [-13] = DUNGEON_FLOOR_DIREMAUL1.." [North - Ogres]",-- Gordok Commons [North - Ogres]
-		--TODO: [-14] = DUNGEON_FLOOR_DIREMAUL2.." [West - Elves]",	-- Capital Gardens [West - Elves]
+		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [Est - Démons]",			-- Warpwood Quarter [East - Demon]
+		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [Nord - Ogres]",			-- Gordok Commons [North - Ogres]
+		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [Ouest - Elfes]",		-- Capital Gardens [West - Elves]
 		[-15] = "Exploration",										-- Exploration
 		[-19] = "Dragons du Cauchemar",								-- Dragons of Nightmare
-		--TODO: [-20] = "Common Vendor Items",						-- Common Vendor Items
+		[-20] = "Objets communs des vendeurs",						-- Common Vendor Items
 		[-21] = "Capitaines",										-- Captains
 		[-22] = "Secrets",											-- Secrets
-		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
+		[-23] = "Objet commun de donjon",							-- WoD Common Dungeon Drop
 		--TODO: [-26] = "Drops",									-- Drops
 		[-27] = "Bas",												-- Lower (Blackrock Spire)
 		[-28] = "Haut",												-- Upper (Blackrock Spire)
@@ -691,10 +691,10 @@ for key,value in pairs({
 		[-81] = "Troisième coffre",
 		[-82] = "Coffre final",
 	-- SM
-		--TODO: [-85] = "Graveyard",
-		--TODO: [-86] = "Library",
-		--TODO: [-87] = "Armory",
-		--TODO: [-88] = "Cathedral",
+		[-85] = "Cimetière",
+		[-86] = "Librairie",
+		[-87] = "Armurerie",
+		[-88] = "Cathédrale",
 	-- Garrisons
 		--TODO: [-99] = "Buildings",
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
@@ -714,7 +714,7 @@ for key,value in pairs({
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing
 		[-217] = "Appâts",											-- Lures (for Fishing)
-		--TODO: [-218] = "Coastal",									-- Coastal (for Fishing)
+		[-218] = "Côtier",											-- Coastal (for Fishing)
 	--TODO: [-219] = "Sourceless",									-- Sourceless
 	-- PvP
 		--TODO: [-242] = "Unrated",									-- Unrated
@@ -742,25 +742,25 @@ for key,value in pairs({
 		[-422] = "Défenseurs Atal'ai",								-- Atal'ai Defenders
 		[-423] = "Les quatre cavaliers",							-- The Four Horsemen
 	-- BFA War Chest
-		--TODO: [-488] = "War Chest",								-- Daily War Chest
+		[-488] = "Coffre de Guerre",								-- Daily War Chest
 	-- Tarot Cards
-		--TODO: [-491] = "Tarot Cards",
+		[-491] = "Cartes du Jeu de tarot",
 	-- Misc
 		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
 		[-519] = "Événements mondiaux",								-- World Events
-		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
-		--TODO: [-522] = "Zalazane's Fall",												-- Zalazane's Fall
+        [-520] = "Pré-Lancement de l’Extension",                    -- Expansion Pre-Launch
+		[-522] = "La chute de Zalazane",							-- Zalazane's Fall
 		--TODO: [-523] = "Elemental Unrest",						-- Elemental Unrest
 		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",	-- Warlords of Draenor: Iron Horde Incursion
 		--TODO: [-526] = EXPANSION_NAME6..": Legion Invasion",		-- Legion: Legion Invasion
 		--TODO: [-527] = EXPANSION_NAME7..": War of the Thorns",	-- Battle for Azeroth: War of the Thorns
-		--TODO: [-532] = "Heroes of the Storm",						-- Heroes of the Storm
-		--TODO: [-533] = "Hearthstone",								-- Hearthstone
+		[-532] = "Heroes of the Storm",								-- Heroes of the Storm
+		[-533] = "Hearthstone",										-- Hearthstone
 		[-534] = "Edition Collector",								-- Collector's Edition
 		[-536] = "Hearthstone Mercenaires",							-- Hearthstone Mercenaries
-		--TODO: [-537] = "Diablo 20th Anniversary",					-- Diablo 20th Anniversary
-		--TODO: [-538] = "The Ahn'Qiraj War Effort",				-- The Ahn'Qiraj War Effort
+		[-537] = "20e anniversaire de Diablo",						-- Diablo 20th Anniversary
+		[-538] = "Effort de guerre d’Ahn'Qiraj",					-- The Ahn'Qiraj War Effort
 		[-539] = "Le Sceptre des Sables changeants",				-- The Scepter of the Shifting Sands
 		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
 		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
@@ -768,41 +768,41 @@ for key,value in pairs({
 		[-543] = "Invasions de Legion ",							-- Legion Invasions
 		[-579] = "Passe Porte des ténèbres",						-- Dark Portal Pass
 		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
-		--TODO: [-581] = "TBC Classic Deluxe Edition",				-- TBC Classic Deluxe Edition
+		[-581] = "Édition BC Classic Deluxe",						-- TBC Classic Deluxe Edition
 		--TODO: [-582] = "WotLK Classic Northrend Heroic Upgrade",	-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
 		--TODO: [-584] = "Dragonflight Seasonal Promotions",		-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- PvP Set Names
-			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)
-			--TODO: [-660] = "Combatant Gear",						-- Combatant PvP Gear (WoD, Legion)
-			--TODO: [-661] = "Gladiator Gear",						-- Gladiator PvP Gear
-			--TODO: [-662] = "Elite Gear",							-- Elite PvP Gear
+			[-659] = "Équipement Aspirant",							-- Aspirant PvP Gear (WoD, BfA)
+			[-660] = "Équipement Combattant",						-- Combatant PvP Gear (WoD, Legion)
+			[-661] = "Équipement Gladiateur",						-- Gladiator PvP Gear
+			[-662] = "Équipement Élite",							-- Elite PvP Gear
 		-- The Burning Crusade PvP Seasons
-			--TODO: [-664] = select(2, GetAchievementInfo(2091))..": Season 1",-- Gladiator: Season 1
-			--TODO: [-665] = select(2, GetAchievementInfo(418))..": Season 2",-- Merciless Gladiator: Season 2
-			--TODO: [-666] = select(2, GetAchievementInfo(419))..": Season 3",-- Vengeful Gladiator: Season 3
-			--TODO: [-667] = select(2, GetAchievementInfo(420))..": Season 4",-- Brutal Gladiator: Season 4
+			[-664] = select(2, GetAchievementInfo(2091)).." : Saison 1",	-- Gladiator: Season 1
+			[-665] = select(2, GetAchievementInfo(418)).." : Saison 2",		-- Merciless Gladiator: Season 2
+			[-666] = select(2, GetAchievementInfo(419)).." : Saison 3",		-- Vengeful Gladiator: Season 3
+			[-667] = select(2, GetAchievementInfo(420)).." : Saison 4",		-- Brutal Gladiator: Season 4
 		-- Wrath of the Lich-King PvP Seasons
-			--TODO: [-668] = select(2, GetAchievementInfo(3336))..": Season 5",-- Deadly Gladiator: Season 5
-			--TODO: [-657] = "Hateful Gladiator",					-- Hateful Gladiator: Season 5 ("medium pvp gear")
-			--TODO: [-669] = select(2, GetAchievementInfo(3436))..": Season 6",-- Furious Gladiator: Season 6
-			--TODO: [-670] = select(2, GetAchievementInfo(3758))..": Season 7",-- Relentless Gladiator: Season 7
-			--TODO: [-671] = select(2, GetAchievementInfo(4599))..": Season 8",-- Wrathful Gladiator: Season 8
+			[-668] = select(2, GetAchievementInfo(3336)).." : Saison 5",	-- Deadly Gladiator: Season 5
+			[-657] = "Gladiateur Haineux",									-- Hateful Gladiator: Season 5 ("medium pvp gear")
+			[-669] = select(2, GetAchievementInfo(3436)).." : Saison 6",	-- Furious Gladiator: Season 6
+			[-670] = select(2, GetAchievementInfo(3758)).." : Saison 7",	-- Relentless Gladiator: Season 7
+			[-671] = select(2, GetAchievementInfo(4599)).." : Saison 8",	-- Wrathful Gladiator: Season 8
 		-- Cataclysm PvP Seasons
-			--TODO: [-672] = select(2, GetAchievementInfo(6002))..": Season 9",-- Vicious Gladiator: Season 9
-			--TODO: [-656] = "Honor Gear Ruthless Season",			-- Honor Gear Ruthless Season
-			--TODO: [-673] = select(2, GetAchievementInfo(6124))..": Season 10",-- Ruthless Gladiator: Season 10
-			--TODO: [-654] = "Honor Gear Cataclysmic Season",		-- Honor Gear Cataclysmic Season
-			--TODO: [-674] = select(2, GetAchievementInfo(6938))..": Season 11",-- Cataclysmic Gladiator: Season 11
+			[-672] = select(2, GetAchievementInfo(6002)).." : Saison 9",	-- Vicious Gladiator: Season 9
+			[-656] = "Équipement Honneur Gladiateur sans pitié",			-- Honor Gear Ruthless Season
+			[-673] = select(2, GetAchievementInfo(6124)).." : Saison 10",	-- Ruthless Gladiator: Season 10
+			[-654] = "Équipement Honneur Saison Cataclysmique"				-- Honor Gear Cataclysmic Season
+			[-674] = select(2, GetAchievementInfo(6938)).." : Saison 11",	-- Cataclysmic Gladiator: Season 11
 		-- Mists of Pandaria PvP Seasons
-			--TODO: [-675] = select(2, GetAchievementInfo(8214))..": Season 12",-- Malevolent Gladiator: Season 12
-			--TODO: [-653] = "Honor Gear Tyrannical Season",		-- Honor Gear Tyrannical Season
-			--TODO: [-676] = select(2, GetAchievementInfo(8791))..": Season 13",-- Tyrannical Gladiator: Season 13
-			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
-			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
+			[-675] = select(2, GetAchievementInfo(8214))..": Season 12",	-- Malevolent Gladiator: Season 12
+			[-653] = "Équipement Honneur Saison Tyrannique",				-- Honor Gear Tyrannical Season
+			[-676] = select(2, GetAchievementInfo(8791))..": Season 13",	-- Tyrannical Gladiator: Season 13
+			[-652] = "Équipement Honneur Saison Dramatique",				-- Honor Gear Grievous Season
+			[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
 	-- Pets
-		--TODO: [-795] = "Pet Battle Dungeons",						-- Pet Battle Dungeons
+		[-795] = "Mascotte des combat des donjons",					-- Pet Battle Dungeons
 	-- Secret Header
 		[-806] = "Boucle temporelle",								-- Waist of Time
 	-- Chests
@@ -842,11 +842,11 @@ for key,value in pairs({
 		[-1110] = "Expédition du Dracaret",							-- Dragonscale Expedition
 		[-1120] = "Centaure maruuk",								-- Maruuk Centaur
 		[-1121] = "Clan des Aylaags",								-- Clan Aylaag
-		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
-		--TODO: [-1123] = "North",									-- North
-		--TODO: [-1124] = "East",									-- East
-		--TODO: [-1125] = "South",									-- South
-		--TODO: [-1126] = "West",									-- West
+		[-1122] = "Grandes Chasses",								-- Grand Hunts
+		[-1123] = "Nord",											-- North
+		[-1124] = "Est",											-- East
+		[-1125] = "Sud",											-- South
+		[-1126] = "Ouest",											-- West
 		[-1130] = "Rohart iskaarien",								-- Iskaara Tuskarr
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Concordat de Valdrakken",						-- Valdrakken Accord
