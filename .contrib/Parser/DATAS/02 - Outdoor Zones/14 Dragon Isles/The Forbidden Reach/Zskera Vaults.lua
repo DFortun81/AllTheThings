@@ -77,6 +77,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
 					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
+					["isWeekly"] = true,
 				}),
 				q(74442, {	-- One Dragon's Junk
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
