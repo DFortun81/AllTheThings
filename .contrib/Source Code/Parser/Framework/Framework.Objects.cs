@@ -1687,7 +1687,7 @@ end");
                             }
                             else
                             {
-                                Log($"Weird 'g' value?? {Environment.NewLine}{ToJSON(value)}");
+                                Log($"Weird 'g' value??", value);
                                 Console.ReadLine();
                             }
                             break;
