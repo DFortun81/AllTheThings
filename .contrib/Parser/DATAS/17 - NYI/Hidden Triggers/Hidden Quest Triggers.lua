@@ -639,7 +639,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(51930),	-- Stormsong Valley repeatable random chest
 		q(51935),	-- Stormsong Valley repeatable random chest
 		q(51938),	-- Stormsong Valley repeatable random chest
-		q(51939),	-- Stormsong Valley repeatable random chest
 		q(51940),	-- Stormsong Valley repeatable random chest
 		q(51941),	-- Stormsong Valley repeatable random chest
 		q(51942),	-- Stormsong Valley repeatable random chest

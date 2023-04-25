@@ -42,7 +42,35 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					}),
 				}),
 				ach(16541),	-- Longhunter
-				ach(16543),	-- Tetrachromancer
+				ach(16543, {	-- Tetrachromancer
+					crit(1, {	-- Bakar Brown
+						["provider"] = { "i", 194093 },	-- Bakar Companion Color: Brown
+					}),
+					crit(2, {	-- Bakar White
+						["provider"] = { "i", 194090 },	-- Bakar Companion Color: White
+					}),
+					crit(3, {	-- Bakar Orange
+						["provider"] = { "i", 194089 },	-- Bakar Companion Color: Orange
+					}),
+					crit(4, {	-- Bakar Golden Brown
+						["provider"] = { "i", 194091 },	-- Bakar Companion Color: Golden Brown
+					}),
+					crit(5, {	-- Bakar Black
+						["provider"] = { "i", 194094 },	-- Bakar Companion Color: Black
+					}),
+					crit(6, {	-- Ohuna Red
+						["provider"] = { "i", 194087 },	-- Ohuna Companion Color: Red
+					}),
+					crit(7, {	-- Ohuna Dark
+						["provider"] = { "i", 194088 },	-- Ohuna Companion Color: Dark
+					}),
+					crit(8, {	-- Ohuna Sepia
+						["provider"] = { "i", 194095 },	-- Ohuna Companion Color: Sepia
+					}),
+					crit(9, {	-- Ohuna Brown
+						["provider"] = { "i", 193205 },	-- Ohuna Companion Color: Brown
+					}),
+				}),
 				ach(16545),	-- The Best at What I Do
 				ach(16542, {	-- The Disgruntled Hunter
 					crit(1, {	-- Northern Ohn'ahran Plains Hunt

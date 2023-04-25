@@ -118,7 +118,6 @@ _.Zones =
 							["cost"] = { { "c", 777, 10000 } },	-- 10,000x Timeless Coin
 						}),
 						i(103977, {	-- Time-Worn Journal
-							["questID"] = 33332,	-- Hints From The Past
 							["cost"] = { { "c", 777, 500 } },		-- 500x Timeless Coin
 						}),
 						i(104013, {	-- Timeless Cloth Armor Cache

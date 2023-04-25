@@ -1905,6 +1905,7 @@ _.ObjectNames = {
 	[291233] = "Saurolisk Tail",
 	[291238] = "Bwonsamdi's Tears",
 	[291241] = "Gnarl Root",
+	[291257] = "Small Treasure Chest",
 	[291291] = "Wanted: Poacher",
 	[292523] = "Wanted Poster",
 	[292673] = "A Damp Scroll",
