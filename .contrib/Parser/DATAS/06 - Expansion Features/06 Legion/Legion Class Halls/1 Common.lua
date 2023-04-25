@@ -574,5 +574,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(48309),	-- Tracking Quest - triggered after obtaining "Discharged Shock Lance" (itemID 152320)
 		q(48310),	-- Tracking Quest - triggered after obtaining "Sargerei Manifesto"  (itemID 152324)
 		q(48311),	-- Tracking Quest - triggered after obtaining "Sanguine Argunite"  (itemID 152328)
+		q(44703),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 1 (44057 - A "Noble" Event)
+		q(44704),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 2 (44057 - A "Noble" Event)
+		q(44705),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 3 (44057 - A "Noble" Event)
+		q(44706),	-- Tracking Quest - 7.0 Special - iLevel 750 - 750 - Fox Mount 4 (44057 - A "Noble" Event)
 	}),
 });
