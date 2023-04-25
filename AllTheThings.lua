@@ -7908,22 +7908,31 @@ local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestRepla
 	  C_QuestLog.GetQuestObjectives,C_QuestLog.IsOnQuest,C_QuestLog.IsQuestReplayable,C_QuestLog.IsQuestReplayedRecently,C_QuestLog.ReadyForTurnIn,C_QuestLog.GetAllCompletedQuestIDs,C_QuestLog.RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData,C_QuestLog.GetQuestTagInfo;
 local GetSpellInfo,math_floor =
 	  GetSpellInfo,math.floor;
-
 local Search = app.SearchForObject;
 -- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
-local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
+local QuestNameFromServer = setmetatable({}, { __index = function(t, id)
 	if id then
-		local title = QuestUtils_GetQuestName(id);
-		if title and title ~= "" then
-			rawset(t, id, title);
-			return title
+		local name = QuestUtils_GetQuestName(id);
+		if name and name ~= "" then
+			rawset(t, id, name);
+			return name;
 		end
 
 		app.RequestLoadQuestByID(id);
-		return RETRIEVING_DATA;
 	end
 end});
+local QuestNameDefault = setmetatable({}, { __index = function(t, id)
+	if id then
+		local name = "Quest #"..id.."*";
+		rawset(t, id, name);
+		return name;
+	end
+end});
+-- Attempts to return the cached quest name for the given id, may return 'Retrieving Data' if not yet cached from Server
+app.QuestNameInstant = function(id)
+	return QuestNameFromServer[id];
+end
 local QuestsRequested = {};
 local QuestsToPopulate = {};
 -- This event seems to fire synchronously from C_QuestLog.RequestLoadQuestByID if we already have the data
@@ -7932,17 +7941,17 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 	QuestsRequested[questID] = nil;
 	-- Store the Quest title if successful, regardless of already being cached
 	if success then
-		local title = QuestUtils_GetQuestName(questID);
-		if title and title ~= "" then
+		local name = QuestUtils_GetQuestName(questID);
+		if name and name ~= "" then
 			-- app.PrintDebug("Available QuestData",questID,title)
-			rawset(QuestTitleFromID, questID, title);
+			rawset(QuestNameFromServer, questID, name);
 			-- trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
 			app:RefreshWindows();
 		end
 	else
-		-- this quest name cannot be populated by the server
+	-- 	this quest name cannot be populated by the server
 		-- app.PrintDebug("No Server QuestData",questID)
-		rawset(QuestTitleFromID, questID, L["QUEST_NAMES"][questID] or "Quest #"..questID.."*");
+		rawset(QuestNameFromServer, questID, false);
 	end
 	-- see if this Quest is awaiting Reward population & Updates
 	local data = QuestsToPopulate[questID];
@@ -8367,7 +8376,17 @@ local questFields = {
 			rawset(t, "icon", icon);
 			return name;
 		end
-		return QuestTitleFromID[t.questID];
+		local id = t.questID;
+		return L["QUEST_NAMES"][id] or QuestNameFromServer[id] or QuestNameDefault[id];
+	end,
+	["title"] = function(t)
+		local server = QuestNameFromServer[t.questID];
+		if server then
+			local name = t.name;
+			if name ~= server then
+				return server;
+			end
+		end
 	end,
 	["objectiveInfo"] = function(t)
 		local questID = t.questID;
