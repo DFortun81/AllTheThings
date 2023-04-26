@@ -28,6 +28,33 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 61.7, 33.9, 747 },
 					}),
 				}),
+				n(-101, bubbleDownSelf({	-- Followers
+					["u"] = 15,	-- Temporary troops
+				}, {
+					follower(749),	-- Ancient of War
+					follower(938),	-- Ancient of War
+					follower(939),	-- Ancient of War
+					follower(668),	-- Daughters of Cenarius
+					follower(829),	-- Daughters of Cenarius
+					follower(830),	-- Daughters of Cenarius
+					follower(831),	-- Daughters of Cenarius
+					follower(763),	-- Dreamgrove Treants
+					follower(826),	-- Dreamgrove Treants
+					follower(827),	-- Dreamgrove Treants
+					follower(828),	-- Dreamgrove Treants
+					follower(1016),	-- Dreamgrove Wardens
+					follower(1020),	-- Dreamgrove Wardens
+					follower(1021),	-- Dreamgrove Wardens
+					follower(1022),	-- Dreamgrove Wardens
+					follower(669),	-- Druids of the Claw
+					follower(832),	-- Druids of the Claw
+					follower(833),	-- Druids of the Claw
+					follower(834),	-- Druids of the Claw
+					follower(670),	-- Keepers of the Grove
+					follower(835),	-- Keepers of the Grove
+					follower(836),	-- Keepers of the Grove
+					follower(837),	-- Keepers of the Grove
+				})),
 				n(QUESTS, {
 					q(42044, {	-- A Dying Dream
 						["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
@@ -110,7 +137,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							44877,	-- Attack on the Roost
 							45532,	-- Mother's Orders
 						},
-				}),
+					}),
 					q(42588, {	-- Branching Out
 						["provider"] = { "n", 98002 },	-- Skylord Omnuron
 						["coord"] = { 52.6, 51.4, 747 },

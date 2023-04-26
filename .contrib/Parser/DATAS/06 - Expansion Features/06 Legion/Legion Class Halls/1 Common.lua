@@ -221,6 +221,14 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				un(REMOVED_FROM_GAME, ach(11609)),		-- Power Unbound
 			})),
 		}),
+		n(-101, bubbleDownSelf({	-- Followers
+			["u"] = 15,	-- Temporary troops
+		}, {
+			-- Dinner Guests (Moroes Mission reward)
+			follower(983),	-- Baroness Dorothea Millstipe
+			follower(984),	-- Baron Rafe Dreuger
+			follower(985),	-- Lord Crispin Ference
+		})),
 		n(QUESTS, {
 			q(46940, {	-- Using Lost Knowledge
 				["timeline"] = { "added 7.2.0.23530", "removed 7.3" },	-- estimated removal

@@ -11,15 +11,17 @@ _.Zones =
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 100,
 			["g"] = {
-				follower(467, {	-- Fen Tao
-					["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
-					["creatureID"] = 91483,	-- Fen Tao
-					["coord"] = { 45.3, 70.6, STORMSHIELD },
-				}),
 				n(FLIGHT_PATHS, {
 					fp(1420, {	-- Stormshield (Alliance), Ashran
 						["coord"] = { 30.6, 48.4, STORMSHIELD },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				n(-101, {	-- Followers
+					follower(467, {	-- Fen Tao
+						["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
+						["creatureID"] = 91483,	-- Fen Tao
+						["coord"] = { 45.3, 70.6, STORMSHIELD },
 					}),
 				}),
 				n(QUESTS, {

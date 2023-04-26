@@ -272,7 +272,16 @@ root(ROOTS.Zones, {
 						["qg"] = 126954,	-- High Exarch Turalyon
 						["cost"] = { { "c", 1220, 900 } },	-- 900x Order Resources
 						["g"] = {
-							i(152097),	-- Lightforged Bulwark
+							i(152097, {	-- Lightforged Bulwark
+								["groups"] = {
+									follower(1059, {	-- Lightforged Bulwark
+										["u"] = 15,	-- Temporary troop
+									}),
+									follower(1060, {	-- Lightforged Bulwark
+										["u"] = 15,	-- Temporary troop
+									}),
+								},
+							}),
 						},
 					}),
 					q(47431, {	-- Gathering Light
@@ -343,7 +352,16 @@ root(ROOTS.Zones, {
 						["qg"] = 126954,	-- High Exarch Turalyon
 						["cost"] = { { "c", 1220, 150 } },	-- 150x Order Resources
 						["g"] = {
-							i(152097),	-- Lightforged Bulwark
+							i(152097, {	-- Lightforged Bulwark
+								["groups"] = {
+									follower(1059, {	-- Lightforged Bulwark
+										["u"] = 15,	-- Temporary troop
+									}),
+									follower(1060, {	-- Lightforged Bulwark
+										["u"] = 15,	-- Temporary troop
+									}),
+								},
+							}),
 						},
 					}),
 					q(48199, {	-- The Burning Heart

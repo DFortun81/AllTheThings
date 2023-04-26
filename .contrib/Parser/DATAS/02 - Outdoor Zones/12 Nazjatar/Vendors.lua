@@ -162,6 +162,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				}),
 				i(168479, {	-- Troop Requisition
 					["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+					["questID"] = 55968,
+					["g"] = {
+						follower(1183, {	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries
+							["u"] = 15,	-- Temporary troop
+						}),
+					},
 				}),
 				i(174523, {	-- Waveswept Abyssal Conch
 					["races"] = HORDE_ONLY,
@@ -485,6 +491,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				}),
 				i(168480, {	-- Troop Requisition
 					["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+					["questID"] = 55969,
+					["g"] = {
+						follower(1183, {	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries
+							["u"] = 15,	-- Temporary troop
+						}),
+					},
 				}),
 				i(174522, {	-- Waveswept Abyssal Conch
 					["races"] = ALLIANCE_ONLY,

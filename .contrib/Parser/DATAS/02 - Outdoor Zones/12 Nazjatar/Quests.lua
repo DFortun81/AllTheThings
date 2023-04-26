@@ -2617,8 +2617,6 @@ root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, { m(NAZJATAR, bubbleDownSelf({ ["
 	q(57041),	-- recruiting Farseer Ori / Neri Sharpfin for the day
 	q(57042),	-- recruiting Bladesman Inowari / Poen Gillbrack for the day
 
-	q(55969),	-- Using Troop Requisition (168480)
-
 --	HORRIBLE NAZJATAR BODYGUARD DIALOGUE QUESTS (usually trigger in areas where you're doing the daily quests for the bodyguard, OR after 1-2 minutes of idling post-pickup)
 --	not sure if Alliance quests are once per account (horde appear to be daily) or if they just don't have HQTs - they have instant dialogue upon quest pickup/turn-in but haven't triggered any HQTs for me at all - the first time i did them on my account would have been looooooooong ago
 --	unknown/probable bodyguard dialogue quests

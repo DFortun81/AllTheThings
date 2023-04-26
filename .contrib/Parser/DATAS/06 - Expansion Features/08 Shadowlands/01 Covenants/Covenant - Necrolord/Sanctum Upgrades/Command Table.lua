@@ -11,6 +11,18 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					n(TIER_ONE, {
 						["icon"] = "Interface\\Icons\\Sanctum_features_missiontable",
 						["g"] = {
+							n(-101, bubbleDownSelf({	-- Followers
+								["u"] = 15,	-- Temporary troops
+							}, {
+								follower(1243),	-- Maldraxxus Plaguesinger
+								follower(1314),	-- Maldraxxus Plaguesinger
+								follower(1315),	-- Maldraxxus Plaguesinger
+								follower(1324),	-- Maldraxxus Plaguesinger
+								follower(1242),	-- Maldraxxus Shock Trooper
+								follower(1312),	-- Maldraxxus Shock Trooper
+								follower(1313),	-- Maldraxxus Shock Trooper
+								follower(1321),	-- Maldraxxus Shock Trooper
+							})),
 							n(QUESTS, {
 								q(64465, {	-- Adventurer: Enceladus
 									["description"] = "Requires Renown 62.",

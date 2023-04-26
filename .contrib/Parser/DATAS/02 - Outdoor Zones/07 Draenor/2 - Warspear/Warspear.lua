@@ -11,15 +11,17 @@ _.Zones =
 			["races"] = HORDE_ONLY,
 			["lvl"] = 100,
 			["g"] = {
-				follower(467, {	-- Fen Tao
-					["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
-					["creatureID"] = 91483,	-- Fen Tao
-					["coord"] = { 46.9, 45.2, WARSPEAR },
-				}),
 				n(FLIGHT_PATHS, {
 					fp(1408, {	-- Warspear, Ashran
 						["coord"] = { 44.2, 33.9, WARSPEAR },
 						["races"] = HORDE_ONLY,
+					}),
+				}),
+				n(-101, {	-- Followers
+					follower(467, {	-- Fen Tao
+						["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
+						["creatureID"] = 91483,	-- Fen Tao
+						["coord"] = { 46.9, 45.2, WARSPEAR },
 					}),
 				}),
 				n(QUESTS, {

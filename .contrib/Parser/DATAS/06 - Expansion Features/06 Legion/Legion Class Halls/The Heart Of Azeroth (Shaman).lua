@@ -27,6 +27,40 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						}),
 					}),
 				}),
+				n(-101, bubbleDownSelf({	-- Followers
+					["u"] = 15,	-- Temporary troops
+				}, {
+					follower(752),	-- Air Ascendants
+					follower(685),	-- Circle of Earthcallers
+					follower(782),	-- Circle of Earthcallers
+					follower(797),	-- Circle of Earthcallers
+					follower(798),	-- Circle of Earthcallers
+					follower(754),	-- Earthen Ring Geomancers
+					follower(794),	-- Earthen Ring Geomancers
+					follower(795),	-- Earthen Ring Geomancers
+					follower(796),	-- Earthen Ring Geomancers
+					follower(1031),	-- Earthen Ring Protectors
+					follower(1032),	-- Earthen Ring Protectors
+					follower(1033),	-- Earthen Ring Protectors
+					follower(1034),	-- Earthen Ring Protectors
+					follower(750),	-- Greater Elementals
+					follower(789),	-- Greater Elementals
+					follower(790),	-- Greater Elementals
+					follower(791),	-- Greater Elementals
+					follower(792),	-- Greater Elementals
+					follower(793),	-- Greater Elementals
+					follower(753),	-- Fire Ascendants
+					follower(683),	-- Lesser Elementals
+					follower(784),	-- Lesser Elementals
+					follower(785),	-- Lesser Elementals
+					follower(786),	-- Lesser Elementals
+					follower(787),	-- Lesser Elementals
+					follower(788),	-- Lesser Elementals
+					follower(684),	-- Water Ascendants
+
+					-- TODO itemID 143850
+					follower(993),	-- Grimtotem Warrior
+				})),
 				n(QUESTS, {
 					q(39746, {	-- A Ring Unbroken
 						["provider"] = { "n", 91731 },	-- Thrall

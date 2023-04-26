@@ -123,7 +123,7 @@ _.Zones =
 						i(128440, {	-- Contract: Dowser Bigspark
 							["cost"] = 6000000,	-- 600g
 							["g"] = {
-								follower(581.2),	-- Dowser Bigspark
+								follower(581),	-- Dowser Goodwell
 							},
 						}),
 						i(128526, {	-- Deathtusk Felboar (H) (MOUNT!)
@@ -184,7 +184,7 @@ _.Zones =
 						i(128445, {	-- Contract: Dowser Bigspark
 							["cost"] = 6000000,	-- 600g
 							["g"] = {
-								follower(581.1),	-- Dowser Bigspark
+								follower(581),	-- Dowser Bigspark
 							},
 						}),
 						i(128527, {	-- Deathtusk Felboar (A) (MOUNT!)

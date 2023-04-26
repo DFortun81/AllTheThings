@@ -1013,6 +1013,11 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(174905, {	-- Troop Requisition: Rajani Sparkcaller
 								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 								["questID"] = 58907,
+								["g"] = {
+									follower(1187, {	-- Rajani Sparkcallers
+										["u"] = 15,	-- Temporary troop
+									}),
+								},
 							}),
 						},
 					}),
