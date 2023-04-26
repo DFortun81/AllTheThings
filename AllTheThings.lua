@@ -7430,6 +7430,7 @@ local function RefreshSaves()
 	AfterCombatCallback(RefreshSavesCallback);
 end
 local function RefreshAppearanceSources()
+	-- app.PrintDebug("RefreshAppearanceSources")
 	app.DoRefreshAppearanceSources = nil;
 	local collectedSources, brokenUniqueSources = ATTAccountWideData.Sources, ATTAccountWideData.BrokenUniqueSources;
 	wipe(collectedSources);
@@ -18823,7 +18824,7 @@ function app:GetDataCache()
 end
 
 local function RefreshData()
-	-- app.PrintDebug("RefreshData",app.refreshDataForce and "FORCE", app.refreshDataGot and "COLLECTED")
+	-- app.PrintDebug("RefreshData",app.refreshDataForce and "FORCE" or "LAZY", app.refreshDataGot and "COLLECTED" or "PASSIVE")
 
 	-- Send an Update to the Windows to Rebuild their Row Data
 	if app.refreshDataForce then
@@ -18845,7 +18846,7 @@ end
 function app:RefreshData(lazy, got, manual)
 	if app.Processing_RefreshData then return; end
 	app.Processing_RefreshData = true;
-	-- app.PrintDebug("RefreshData:Async",lazy and "LAZY", got and "COLLECTED", manual and "MANUAL")
+	-- app.PrintDebug("RefreshData:Async",lazy and "LAZY" or "FORCE", got and "COLLECTED" or "PASSIVE", manual and "MANUAL" or "AUTO")
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	app.refreshDataGot = app.refreshDataGot or got;
 

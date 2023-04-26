@@ -74,7 +74,6 @@ _:SetSize(1, 1);
 _:Show();
 app._ = _;
 app.events = events;
-app.refreshDataForce = true;
 app.RegisterEvent = function(self, ...)
 	_:RegisterEvent(...);
 end

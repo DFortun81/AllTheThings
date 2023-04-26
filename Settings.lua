@@ -1063,8 +1063,8 @@ settings.SetAccountMode = function(self, accountMode)
 	self:UpdateMode(1);
 end
 settings.ToggleAccountMode = function(self)
-	self:SetAccountMode(not self:Get("AccountMode"));
 	self:ForceRefreshFromToggle();
+	self:SetAccountMode(not self:Get("AccountMode"));
 end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode);
@@ -1072,8 +1072,8 @@ settings.SetCompletionistMode = function(self, completionistMode)
 	self:UpdateMode(1);
 end
 settings.ToggleCompletionistMode = function(self)
-	self:SetCompletionistMode(not self:Get("Completionist"));
 	self:ForceRefreshFromToggle();
+	self:SetCompletionistMode(not self:Get("Completionist"));
 end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode);
@@ -1093,24 +1093,24 @@ settings.SetDebugMode = function(self, debugMode)
 	self:UpdateMode(1);
 end
 settings.ToggleDebugMode = function(self)
-	self:SetDebugMode(not self:Get("DebugMode"));
 	self:ForceRefreshFromToggle();
+	self:SetDebugMode(not self:Get("DebugMode"));
 end
 settings.SetFactionMode = function(self, factionMode)
 	self:Set("FactionMode", factionMode);
 	self:UpdateMode(1);
 end
 settings.ToggleFactionMode = function(self)
-	self:SetFactionMode(not self:Get("FactionMode"));
 	self:ForceRefreshFromToggle();
+	self:SetFactionMode(not self:Get("FactionMode"));
 end
 settings.SetMainOnlyMode = function(self, mainOnly)
 	self:Set("MainOnly", mainOnly);
 	self:SetCompletionistMode(self:Get("Completionist"));
 end
 settings.ToggleMainOnlyMode = function(self)
-	self:SetMainOnlyMode(not self:Get("MainOnly"));
 	self:ForceRefreshFromToggle();
+	self:SetMainOnlyMode(not self:Get("MainOnly"));
 end
 settings.SetCompletedThings = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
@@ -1120,41 +1120,39 @@ settings.SetCompletedThings = function(self, checked)
 	self:UpdateMode(1);
 end
 settings.ToggleCompletedThings = function(self)
-	self:SetCompletedThings(not self:Get("Show:CompletedGroups"));
 	self:ForceRefreshFromToggle();
+	self:SetCompletedThings(not self:Get("Show:CompletedGroups"));
 end
 settings.SetCompletedGroups = function(self, checked, skipRefresh)
 	self:Set("Show:CompletedGroups", checked);
 	self:UpdateMode(not skipRefresh);
 end
 settings.ToggleCompletedGroups = function(self)
+	self:ForceRefreshFromToggle();
 	self:SetCompletedGroups(not self:Get("Show:CompletedGroups"));
 	settings:Set("Cache:CompletedGroups", self:Get("Show:CompletedGroups"));
-	self:ForceRefreshFromToggle();
 end
 settings.SetCollectedThings = function(self, checked, skipRefresh)
 	self:Set("Show:CollectedThings", checked);
 	self:UpdateMode(not skipRefresh);
 end
 settings.ToggleCollectedThings = function(self)
+	self:ForceRefreshFromToggle();
 	settings:SetCollectedThings(not self:Get("Show:CollectedThings"));
 	settings:Set("Cache:CollectedThings", self:Get("Show:CollectedThings"));
-	self:ForceRefreshFromToggle();
 end
 settings.SetHideBOEItems = function(self, checked)
 	self:Set("Hide:BoEs", checked);
 	self:UpdateMode(1);
 end
 settings.ToggleBOEItems = function(self)
-	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
 	self:ForceRefreshFromToggle();
+	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
 end
 -- When we toggle a setting directly (keybind etc.) the refresh should always take place immediately,
--- so force it if it is being skipped
+-- so force it always
 settings.ForceRefreshFromToggle = function(self)
-	if self:Get("Skip:AutoRefresh") then
-		self:UpdateMode("FORCE");
-	end
+	self.ToggleRefresh = true;
 end
 -- Setup tracking for all Things based on the Settings value, or whether it is forcibly tracked or forced AccountWide
 settings.SetThingTracking = function(self, force)
@@ -1299,24 +1297,35 @@ settings.UpdateMode = function(self, doRefresh)
 		app:RegisterEvent("TAXIMAP_OPENED");
 	end
 
+	-- refresh forced from toggle
+	if self.ToggleRefresh then
+		doRefresh = "FORCE";
+		self.ToggleRefresh = nil;
+	end
 	-- if auto-refresh
 	if doRefresh then
 		self.NeedsRefresh = true;
-		if doRefresh == "FORCE" or not settings:Get("Skip:AutoRefresh") then
-			self.NeedsRefresh = nil;
-			if app.DoRefreshAppearanceSources then
-				app.RefreshAppearanceSources();
-			end
-			app:RefreshData(nil,nil,true);
+	end
+	-- app.PrintDebug("UpdateMode",doRefresh)
+	-- FORCE = Force Update
+	-- 1 = Force Update IF NOT Skip
+	-- not = Soft Update
+	doRefresh = doRefresh == "FORCE" or
+		(doRefresh and not settings:Get("Skip:AutoRefresh"));
+
+	if doRefresh then
+		self.NeedsRefresh = nil;
+		if app.DoRefreshAppearanceSources then
+			app.RefreshAppearanceSources();
 		end
+		app:RefreshData(nil,nil,true);
+	else
+		-- lazy refresh instead
+		app:RefreshData(true,nil,true);
 	end
 
 	-- ensure the settings pane itself is refreshed
 	self:Refresh();
-	-- and refresh any open ATT windows
-	if app.UpdateWindows then
-		app:UpdateWindows();
-	end
 end
 
 -- The ALL THE THINGS Epic Logo!
