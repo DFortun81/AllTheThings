@@ -2603,19 +2603,19 @@ local IconMonthFilterMappings = {
 	[235481] = 1011,	-- Pirate's Day
 	[235442] = 1000,	-- Brewfest
 	[235474] = 1008,	-- Midsummer
-	[235445] = 1001,	-- Children's Week
+	[235445] = 1001,	-- Children's Week (tested)
 	[307365] = 1002,	-- Day of the Dead
 	[235448] = 1012,	-- Darkmoon Faire
 	[235477] = 1010,	-- Noblegarden
 	[235485] = 1003,	-- Feast of Winter Veil
 
 	-- Timewalking
-	[1129674] = 1016,	-- Timewalking
+	[1129673] = 1016,	-- Timewalking BC (tested)
 	[1129683] = 1016,	-- Timewalking
 	[1129686] = 1016,	-- Timewalking
 	[1304688] = 1016,	-- Timewalking
 	[1530590] = 1016,	-- Timewalking
-	[1467046] = 1016,	-- Timewalking
+	[1467046] = 1016,	-- Timewalking (tested)
 
 	-- Micro Holidays
 	[1574965] = 1014,	-- Call of the Scarab
