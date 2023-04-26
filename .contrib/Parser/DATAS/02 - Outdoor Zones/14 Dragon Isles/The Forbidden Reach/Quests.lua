@@ -255,6 +255,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73139, {	-- Deep Sea Supplies
 				["provider"] = { "n", 200558 },	-- Tukkaraq
 				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(202361),	-- Farscale Supplies
+				},
 			}),
 			q(73715, {	-- Driftwood Derby
 				["provider"] = { "n", 200558 },	-- Tukkaraq

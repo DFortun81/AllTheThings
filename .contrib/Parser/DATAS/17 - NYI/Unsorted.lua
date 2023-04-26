@@ -806,7 +806,6 @@ root(ROOTS.Unsorted, {
 				i(202181),	-- Best-root Tuber
 				i(202185),	-- Chillwrought Worm Meat
 				i(202202),	-- Revealing Mask
-				i(202361),	-- Farscale Supplies
 				i(202364),	-- Everburning Ember
 				i(202394),	-- Fresh Plains Meat
 				i(202396),	-- Plains Timber
