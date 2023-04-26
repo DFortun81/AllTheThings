@@ -2084,7 +2084,7 @@ local function CreateObject(t, rootOnly)
 		elseif t.factionID then
 			t = app.CreateFaction(t.factionID, t);
 		elseif t.itemID then
-			if t.isToy then
+			if t.toyID then
 				t = app.CreateToy(t.itemID, t);
 			elseif t.runeforgePowerID then
 				t = app.CreateRuneforgeLegendary(t.runeforgePowerID, t);
@@ -5521,7 +5521,7 @@ end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
 	-- Check if this group is inside a Window or not
-	local isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
+	local groupWindow = app.RecursiveFirstDirectParentWithField(group, "window");
 	-- Setup the FillData for this fill operation
 	local FillData = {
 		Included = {},
@@ -5532,8 +5532,10 @@ app.FillGroups = function(group)
 	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
 
 	-- Fill the group with all nestable content
-	if isInWindow then
+	if groupWindow then
 		local Runner = app.FillRunner;
+		Runner.OnEnd(groupWindow.StopProcessing);
+		groupWindow.StartProcessing();
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
 		Runner.SetPerFrame(25);
 		Runner.Run(FillGroupsRecursiveAsync, group, FillData);
@@ -6331,7 +6333,6 @@ fieldConverters = {
 		CacheField(group, "instanceID", value);
 	end,
 	["itemID"] = function(group, value, raw)
-		if group.isToy then CacheField(group, "toyID", value); end
 		if not raw then
 			-- only cache the modItemID if it is not the same as the itemID
 			-- pulling .modItemID directly will cause a rawset on the group and break iteration while caching
@@ -6383,6 +6384,10 @@ fieldConverters = {
 	end,
 	["titleID"] = function(group, value)
 		CacheField(group, "titleID", value);
+	end,
+	["toyID"] = function(group, value)
+		CacheField(group, "toyID", value);
+		CacheField(group, "itemID", value);
 	end,
 
 	-- Complex Converters
@@ -12301,14 +12306,13 @@ fields.collected = function(t)
 fields.tsm = function(t)
 		return sformat("i:%d", t.itemID);
 	end
-fields.isToy = app.ReturnTrue;
-fields.toyID = function(t)
-		return t.itemID;
+fields.itemID = function(t)
+		return t.toyID;
 	end
 
 app.BaseToy = app.BaseObjectFields(fields, "BaseToy");
 app.CreateToy = function(id, t)
-	return setmetatable(constructor(id, t, "itemID"), app.BaseToy);
+	return setmetatable(constructor(id, t, "toyID"), app.BaseToy);
 end
 end)();
 
@@ -17786,6 +17790,21 @@ function app:GetWindow(suffix, parent, onUpdate)
 		container.rows = {};
 		scrollbar:SetValue(1);
 		container:Show();
+
+		-- Allows the window to toggle whether it shows it is currently processing changes/updates
+		-- Currently will do this by changing the texture of the CloseButton
+		-- local closeTexture = window.CloseButton:GetNormalTexture():GetTexture();
+		-- app.PrintDebug(closeTexture, window.CloseButton:GetHighlightTexture(), window.CloseButton:GetPushedTexture(), window.CloseButton:GetDisabledTexture())
+		-- Textures are a bit funky, maybe not good to try using that... maybe will come up with another idea sometime...
+		window.StartProcessing = function()
+			-- app.PrintDebug("StartProcessing",suffix)
+			-- window.CloseButton:SetNormalTexture(134376);	-- Inv_misc_pocketwatch_01
+		end
+		window.StopProcessing = function()
+			-- app.PrintDebug("StopProcessing",suffix)
+			-- window.CloseButton:SetNormalTexture(closeTexture);
+		end
+
 		-- Ensure the window updates itself when opened for the first time
 		window.HasPendingUpdate = true;
 		window:Update();
@@ -20970,7 +20989,7 @@ customWindowUpdates["Random"] = function(self)
 					local func = function(o)
 						return o.collectible;
 					end
-					SearchRecursively(app:GetWindow("Prime").data, "isToy", searchResults, func);
+					SearchRecursively(app:GetWindow("Prime").data, "toyID", searchResults, func);
 					if #searchResults > 0 then
 						searchCache["randomtoy"] = searchResults;
 						return searchResults;
