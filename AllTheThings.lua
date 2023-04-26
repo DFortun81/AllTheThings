@@ -17580,22 +17580,28 @@ local function ProcessGroup(data, object)
 	end
 end
 local function UpdateWindow(self, force, got)
-	if self.data and app.IsReady then
-		if app.Settings:GetTooltipSetting("Updates:AdHoc") then
-			if force then
-				self.HasPendingUpdate = true;
-			end
-			force = (force or self.HasPendingUpdate) and self:IsVisible();
+	local data = self.data;
+	if data and app.IsReady then
+		local visible = self:IsVisible();
+		-- either by Setting or by special windows apply ad-hoc logic
+		local adhoc = app.Settings:GetTooltipSetting("Updates:AdHoc") or self.AdHoc;
+		force = force or self.HasPendingUpdate;
+		-- hidden adhoc window is set for pending update instead of forced
+		if adhoc and force and not visible then
+			self.HasPendingUpdate = true;
+			force = nil;
 		end
-		-- app.PrintDebug("Update:",self.Suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
-		if force or self:IsVisible() then
+		-- app.PrintDebug("Update:",self.Suffix, force and "FORCE" or "SOFT", visible and "VISIBLE" or "HIDDEN");
+		if force or visible then
+			-- clear existing row data for the update
 			if self.rowData then wipe(self.rowData);
 			else self.rowData = {}; end
-			self.data.expanded = true;
+
+			data.expanded = true;
 			if not self.doesOwnUpdate and
-				(force or (self.shouldFullRefresh and self:IsVisible())) then
+				(force or (self.shouldFullRefresh and visible)) then
 				-- app.PrintDebug("TopLevelUpdateGroup",self.Suffix)
-				app.TopLevelUpdateGroup(self.data);
+				app.TopLevelUpdateGroup(data);
 				self.HasPendingUpdate = nil;
 				-- app.PrintDebugPrior("Done")
 			end
@@ -17603,26 +17609,26 @@ local function UpdateWindow(self, force, got)
 			-- Should the groups in this window be expanded prior to processing the rows for display
 			if self.ExpandInfo then
 				-- print("ExpandInfo",self.Suffix,self.ExpandInfo.Expand,self.ExpandInfo.Manual)
-				ExpandGroupsRecursively(self.data, self.ExpandInfo.Expand, self.ExpandInfo.Manual);
+				ExpandGroupsRecursively(data, self.ExpandInfo.Expand, self.ExpandInfo.Manual);
 				self.ExpandInfo = nil;
 			end
 
-			ProcessGroup(self.rowData, self.data);
+			ProcessGroup(self.rowData, data);
 
 			-- Does this user have everything?
-			if self.data.total then
-				if self.data.total <= self.data.progress then
+			if data.total then
+				if data.total <= data.progress then
 					if #self.rowData < 1 then
-						self.data.back = 1;
-						tinsert(self.rowData, self.data);
+						data.back = 1;
+						tinsert(self.rowData, data);
 					end
 					if self.missingData then
-						if got and self:IsVisible() then app:PlayCompleteSound(); end
+						if got and visible then app:PlayCompleteSound(); end
 						self.missingData = nil;
 					end
 					-- only add this info row if there is actually nothing visible in the list
 					-- always a header row
-					-- print("any data",#self.Container,#self.rowData,#self.data)
+					-- print("any data",#self.Container,#self.rowData,#data)
 					if #self.rowData < 2 then
 						tinsert(self.rowData, {
 							["text"] = L["NO_ENTRIES"],
@@ -17687,7 +17693,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	local window = app.Windows[suffix];
 	if not window then
 		-- Create the window instance.
-		-- print("Creating new Window Frame for",suffix)
+		-- app.PrintDebug("GetWindow",suffix)
 		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
 		app.Windows[suffix] = window;
 		window.Suffix = suffix;
@@ -17725,7 +17731,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 			['text'] = suffix,
 			['icon'] = "Interface\\Icons\\Ability_Spy.blp",
 			['visible'] = true,
-			['expanded'] = true,
 			['g'] = {
 				{
 					['text'] = "No data linked to listing.",
@@ -17781,9 +17786,9 @@ function app:GetWindow(suffix, parent, onUpdate)
 		container.rows = {};
 		scrollbar:SetValue(1);
 		container:Show();
-		window:Update();
 		-- Ensure the window updates itself when opened for the first time
 		window.HasPendingUpdate = true;
+		window:Update();
 	end
 	return window;
 end
@@ -18101,7 +18106,6 @@ function app:GetDataCache()
 			rawset(t, key, val);
 		end
 	});
-	allData.expanded = true;
 	allData.icon = app.asset("content");
 	allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 	allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
@@ -18116,7 +18120,6 @@ function app:GetDataCache()
 	-- Dungeons & Raids
 	db = {};
 	db.g = app.Categories.Instances;
-	db.expanded = false;
 	db.text = GROUP_FINDER;
 	db.name = db.text;
 	db.icon = app.asset("Category_D&R");
@@ -18126,7 +18129,6 @@ function app:GetDataCache()
 	if app.Categories.Zones then
 		db = {};
 		db.g = app.Categories.Zones;
-		db.expanded = false;
 		db.text = BUG_CATEGORY2;
 		db.name = db.text;
 		db.icon = app.asset("Category_Zones")
@@ -18138,7 +18140,6 @@ function app:GetDataCache()
 		db = {};
 		db.g = app.Categories.WorldDrops;
 		db.isWorldDropCategory = true;
-		db.expanded = false;
 		db.text = TRANSMOG_SOURCE_4;
 		db.name = db.text;
 		db.icon = app.asset("Category_WorldDrops");
@@ -18149,7 +18150,6 @@ function app:GetDataCache()
 	if app.Categories.GroupFinder then
 		db = {};
 		db.g = app.Categories.GroupFinder;
-		db.expanded = false;
 		db.text = DUNGEONS_BUTTON;
 		db.name = db.text;
 		db.icon = app.asset("Category_GroupFinder")
@@ -18160,7 +18160,6 @@ function app:GetDataCache()
 	if app.Categories.Achievements then
 		db = app.CreateNPC(-4);
 		db.g = app.Categories.Achievements;
-		db.expanded = false;
 		db.text = TRACKER_HEADER_ACHIEVEMENTS;
 		db.icon = app.asset("Category_Achievements")
 		tinsert(g, db);
@@ -18171,7 +18170,6 @@ function app:GetDataCache()
 		db = {};
 		db.g = app.Categories.ExpansionFeatures;
 		db.lvl = 10;
-		db.expanded = false;
 		db.text = GetCategoryInfo(15301);
 		db.name = db.text;
 		db.icon = app.asset("Category_ExpansionFeatures");
@@ -18184,7 +18182,6 @@ function app:GetDataCache()
 		db.g = app.Categories.Holidays;
 		db.icon = app.asset("Category_Holidays");
 		db.isHolidayCategory = true;
-		db.expanded = false;
 		db.text = GetItemSubClassInfo(15,3);
 		tinsert(g, db);
 	end
@@ -18197,7 +18194,6 @@ function app:GetDataCache()
 		db.description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.";
 		db.icon = app.asset("Category_Event");
 		db.g = app.Categories.WorldEvents;
-		db.expanded = false;
 		tinsert(g, db);
 	end
 
@@ -18210,7 +18206,6 @@ function app:GetDataCache()
 		db.icon = app.asset("Category_Promo");
 		db.g = app.Categories.Promotions;
 		db.isPromotionCategory = true;
-		db.expanded = false;
 		tinsert(g, db);
 	end
 
@@ -18219,7 +18214,6 @@ function app:GetDataCache()
 		db = app.CreateNPC(-796);
 		db.g = app.Categories.PetBattles;
 		db.lvl = 3; -- Must be 3 to train (used to be 5 pre-scale)
-		db.expanded = false;
 		db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
 		db.icon = app.asset("Category_PetBattles");
 		tinsert(g, db);
@@ -18230,7 +18224,6 @@ function app:GetDataCache()
 		db = {};
 		db.g = app.Categories.PVP;
 		db.isPVPCategory = true;
-		db.expanded = false;
 		db.text = STAT_CATEGORY_PVP;
 		db.name = db.text;
 		db.icon = app.asset("Category_PvP");
@@ -18242,7 +18235,6 @@ function app:GetDataCache()
 		db = {};
 		db.g = app.Categories.Craftables;
 		db.DontEnforceSkillRequirements = true;
-		db.expanded = false;
 		db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
 		db.name = db.text;
 		db.icon = app.asset("Category_Crafting");
@@ -18253,7 +18245,6 @@ function app:GetDataCache()
 	if app.Categories.Professions then
 		db = app.CreateNPC(-38);
 		db.g = app.Categories.Professions;
-		db.expanded = false;
 		db.text = TRADE_SKILLS;
 		db.icon = app.asset("Category_Professions");
 		db.description = "This section will only show your character's professions outside of Account and Debug Mode.";
@@ -18264,7 +18255,6 @@ function app:GetDataCache()
 	if app.Categories.Secrets then
 		db = app.CreateNPC(-22);
 		db.g = app.Categories.Secrets;
-		db.expanded = false;
 		tinsert(g, db);
 	end
 
@@ -18272,7 +18262,6 @@ function app:GetDataCache()
 	if app.Categories.Character then
 		db = {};
 		db.g = app.Categories.Character;
-		db.expanded = false;
 		db.text = CHARACTER;
 		db.name = db.text;
 		db.icon = app.asset("Category_ItemSets");
@@ -18283,7 +18272,6 @@ function app:GetDataCache()
 	if app.Categories.InGameShop then
 		db = {};
 		db.g = app.Categories.InGameShop;
-		db.expanded = false;
 		db.text = BATTLE_PET_SOURCE_10;
 		db.name = db.text;
 		db.icon = app.asset("Category_InGameShop");
@@ -18294,7 +18282,6 @@ function app:GetDataCache()
 	if app.Categories.TradingPost then
 		db = {};
 		db.g = app.Categories.TradingPost;
-		db.expanded = false;
 		db.text = L["TRADING_POST"];	-- Probably some global string Later
 		db.name = db.text;
 		db.icon = app.asset("Category_TradingPost");
@@ -18305,7 +18292,6 @@ function app:GetDataCache()
 	if app.Categories.BlackMarket then
 		db = app.CreateNPC(-94);
 		db.g = app.Categories.BlackMarket;
-		db.expanded = false;
 		db.text = BLACK_MARKET_AUCTION_HOUSE;
 		db.icon = app.asset("Category_Blackmarket");
 		tinsert(g, db);
@@ -18315,7 +18301,6 @@ function app:GetDataCache()
 	if app.Categories.Factions then
 		db = app.CreateNPC(-6013);
 		db.g = app.Categories.Factions;
-		db.expanded = false;
 		db.text = L["FACTIONS"];
 		db.icon = app.asset("Category_Factions");
 		tinsert(g, db);
@@ -18334,7 +18319,6 @@ function app:GetDataCache()
 		end
 		return cache;
 	end)());
-	db.expanded = false;
 	db.text = "Models (Dynamic)";
 	tinsert(g, db);
 	--]]
@@ -18356,7 +18340,6 @@ function app:GetDataCache()
 		local db = GetTempDataMember("GEAR_SET_CACHE", nil);
 		if not db then
 			db = {};
-			db.expanded = false;
 			db.text = "Item Sets";
 			SetTempDataMember("GEAR_SET_CACHE", db);
 		end
@@ -18497,7 +18480,6 @@ function app:GetDataCache()
 
 	-- Now build the hidden "Unsorted" Window's Data
 	allData = {};
-	allData.expanded = true;
 	allData.icon = app.asset("content");
 	allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 	allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
@@ -18515,14 +18497,12 @@ function app:GetDataCache()
 	local flightPathsCategory_NYI = {};
 	flightPathsCategory_NYI.g = {};
 	flightPathsCategory_NYI.fps = {};
-	flightPathsCategory_NYI.expanded = false;
 	flightPathsCategory_NYI.icon = app.asset("Category_FlightPaths");
 	flightPathsCategory_NYI.text = L["FLIGHT_PATHS"];
 
 	-- Never Implemented
 	if app.Categories.NeverImplemented then
 		db = {};
-		db.expanded = false;
 		db.g = app.Categories.NeverImplemented;
 		db.name = L["NEVER_IMPLEMENTED"];
 		db.text = db.name;
@@ -18534,7 +18514,6 @@ function app:GetDataCache()
 	-- Hidden Achievement Triggers
 	if app.Categories.HiddenAchievementTriggers then
 		db = {};
-		db.expanded = false;
 		db.g = app.Categories.HiddenAchievementTriggers;
 		db.name = "Hidden Achievement Triggers";
 		db.text = db.name;
@@ -18548,7 +18527,6 @@ function app:GetDataCache()
 	-- Hidden Quest Triggers
 	if app.Categories.HiddenQuestTriggers then
 		db = {};
-		db.expanded = false;
 		db.g = app.Categories.HiddenQuestTriggers;
 		db.name = L["HIDDEN_QUEST_TRIGGERS"];
 		db.text = db.name;
@@ -18564,7 +18542,6 @@ function app:GetDataCache()
 	if app.Categories.Unsorted then
 		db = {};
 		db.g = app.Categories.Unsorted;
-		db.expanded = false;
 		db.name = L["UNSORTED_1"];
 		db.text = db.name;
 		db.description = L["UNSORTED_DESC_2"];
@@ -18576,6 +18553,8 @@ function app:GetDataCache()
 		app.ToggleCacheMaps();
 	end
 	local unsorted = app:GetWindow("Unsorted");
+	-- force the unsorted window to be skipped for Updates unless it is actually visible
+	unsorted.AdHoc = true;
 	unsorted:SetData(allData);
 	unsorted:BuildData();
 
@@ -19156,7 +19135,6 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider";
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nExpand a group to harvest the 1,000 Achievements within that range.";
 			db.visible = true;
-			db.expanded = true;
 			db.back = 1;
 			self:SetData(db);
 		end
@@ -19344,7 +19322,6 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 			['icon'] = "Interface\\Icons\\INV_BountyHunting.blp",
 			["description"] = L["BOUNTY_DESC"],
 			['visible'] = true,
-			['expanded'] = true,
 			['indent'] = 0,
 			['g'] = {
 				{
@@ -19419,7 +19396,6 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 				['icon'] = "Interface\\Icons\\INV_Misc_Celestial Map.blp",
 				["description"] = "This window helps debug when we're missing map IDs in the addon.",
 				['visible'] = true,
-				['expanded'] = true,
 				['OnUpdate'] = app.AlwaysShowUpdate,
 				['g'] = {
 					{
@@ -19875,7 +19851,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					["icon"] = "Interface\\Icons\\INV_Misc_Map06.blp",
 					["description"] = L["MINI_LIST_DESC"],
 					["visible"] = true,
-					["expanded"] = true,
 					["g"] = {
 						{
 							["text"] = L["UPDATE_LOCATION_NOW"],
@@ -19994,7 +19969,6 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
 				["description"] = L["ITEM_FILTER_DESCRIPTION"],
 				['visible'] = true,
-				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
 					{
@@ -20143,7 +20117,6 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider";
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nExpand a group to harvest the 1,000 Items within that range.";
 			db.visible = true;
-			db.expanded = true;
 			db.back = 1;
 			self:SetData(db);
 		end
@@ -20169,7 +20142,6 @@ customWindowUpdates["Harvester"] = function(self, force)
 			db.icon = "Interface\\Icons\\Spell_Warlock_HarvestofLife";
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW a lot!";
 			db.visible = true;
-			db.expanded = true;
 			db.progress = 0;
 			db.total = 0;
 			db.back = 1;
@@ -20355,7 +20327,6 @@ customWindowUpdates["SourceFinder"] = function(self)
 			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp";
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
 			db.visible = true;
-			db.expanded = true;
 			db.back = 1;
 			self:SetData(db);
 		end
@@ -20461,7 +20432,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
 				["description"] = L["RAID_ASSISTANT_DESC"],
 				['visible'] = true,
-				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
 					{
@@ -20673,7 +20643,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 					end
 				end,
 				['visible'] = true,
-				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {},
 			};
@@ -20688,7 +20657,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				end,
 				['visible'] = true,
 				["trackable"] = false,
-				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
 					app.CreateDifficulty(1, {
@@ -20722,7 +20690,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				end,
 				['visible'] = true,
 				["trackable"] = false,
-				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
 					app.CreateDifficulty(14, {
@@ -20756,7 +20723,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				end,
 				['visible'] = true,
 				["trackable"] = false,
-				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
 					app.CreateDifficulty(3, {
@@ -21056,7 +21022,6 @@ customWindowUpdates["Random"] = function(self)
 				['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp",
 				["description"] = L["APPLY_SEARCH_FILTER_DESC"],
 				['visible'] = true,
-				['expanded'] = true,
 				['OnUpdate'] = app.AlwaysShowUpdate,
 				["indent"] = 0,
 				['back'] = 1,
@@ -21214,7 +21179,6 @@ customWindowUpdates["Random"] = function(self)
 				['icon'] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp",
 				["description"] = L["GO_GO_RANDOM_DESC"],
 				['visible'] = true,
-				['expanded'] = true,
 				['OnUpdate'] = app.AlwaysShowUpdate,
 				['back'] = 1,
 				["indent"] = 0,
@@ -21386,7 +21350,6 @@ customWindowUpdates["Sync"] = function(self)
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
 				["description"] = L["ACCOUNT_MANAGEMENT_TOOLTIP"],
 				['visible'] = true,
-				['expanded'] = true,
 				['back'] = 1,
 				['OnUpdate'] = app.AlwaysShowUpdate,
 				['g'] = {
@@ -21501,7 +21464,6 @@ customWindowUpdates["Sync"] = function(self)
 							return app.AlwaysShowUpdate(data);
 						end,
 						['visible'] = true,
-						['expanded'] = true,
 						['g'] = {},
 					},
 				},
@@ -21706,7 +21668,6 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			['icon'] = "Interface\\Icons\\INV_Scroll_04.blp",
 			["description"] = L["PROFESSION_LIST_DESC"],
 			['visible'] = true,
-			['expanded'] = true,
 			["indent"] = 0,
 			['back'] = 1,
 			['g'] = { },
@@ -22108,7 +22069,6 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp",
 				["description"] = L["WORLD_QUESTS_DESC"],
 				['visible'] = true,
-				['expanded'] = true,
 				["indent"] = 0,
 				['back'] = 1,
 				['g'] = {
@@ -22628,7 +22588,6 @@ app.LoadDebugger = function()
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
 				["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
 				["OnUpdate"] = app.AlwaysShowUpdate,
-				['expanded'] = true,
 				['back'] = 1,
 				['options'] = {
 					{
