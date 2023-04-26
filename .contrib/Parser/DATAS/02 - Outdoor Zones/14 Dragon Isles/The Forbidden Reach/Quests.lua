@@ -266,6 +266,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73141, {	-- Everburning Embers
 				["provider"] = { "n", 200558 },	-- Tukkaraq
 				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(202364),	-- Everburning Ember
+				},
 			}),
 			q(73178, {	-- Hands Off Our Booty!
 				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
