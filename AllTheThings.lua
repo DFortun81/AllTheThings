@@ -317,91 +317,99 @@ end
 
 -- Iterative Function Runner
 do
-local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
-local QueueIndex = 1;
-local function SetPerFrame(count)
-	Config.PerFrame = math.max(1, tonumber(count) or 1);
-	-- app.PrintDebug("FR:",Config.PerFrame)
-end
-local function Reset()
-	Config.PerFrame = 1;
-	-- when done with all functions in the queue, reset the queue index and clear the queues of data
-	QueueIndex = 1;
-	wipe(FunctionQueue);
-	wipe(ParameterBucketQueue);
-	wipe(ParameterSingleQueue);
-	-- app.PrintDebug("FR:Reset")
-end
+-- Creates a Function Runner which can execute a sequence of Functions on a set iteration per frame update
+local function CreateRunner(name)
+	local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
+	local QueueIndex = 1;
+	local function SetPerFrame(count)
+		Config.PerFrame = math.max(1, tonumber(count) or 1);
+		-- app.PrintDebug("FR.PerFrame."..name,Config.PerFrame)
+	end
+	local function Reset()
+		Config.PerFrame = 1;
+		-- when done with all functions in the queue, reset the queue index and clear the queues of data
+		QueueIndex = 1;
+		wipe(FunctionQueue);
+		wipe(ParameterBucketQueue);
+		wipe(ParameterSingleQueue);
+		-- app.PrintDebug("FR:Reset."..name)
+	end
 
--- maybe a coroutine directly which can be restarted without needing to be re-created?
-local FunctionRunnerCoroutine = function()
-	local i, perFrame = 1, Config.PerFrame;
-	local params;
-	local func = FunctionQueue[i];
-	-- app.PrintDebug("FRC.Running")
-	while func do
-		perFrame = perFrame - 1;
-		params = ParameterBucketQueue[i];
-		if params then
-			-- app.PrintDebug("FRC.Run.N",i,unpack(params))
-			func(unpack(params));
+	-- maybe a coroutine directly which can be restarted without needing to be re-created?
+	local RunnerCoroutine = function()
+		local i, perFrame = 1, Config.PerFrame;
+		local params;
+		local func = FunctionQueue[i];
+		-- app.PrintDebug("FRC.Running."..name)
+		while func do
+			perFrame = perFrame - 1;
+			params = ParameterBucketQueue[i];
+			if params then
+				-- app.PrintDebug("FRC.Run.N."..name,i,unpack(params))
+				func(unpack(params));
+			else
+				-- app.PrintDebug("FRC.Run.1."..name,i,ParameterSingleQueue[i])
+				func(ParameterSingleQueue[i]);
+			end
+			-- app.PrintDebug("FRC.Done."..name,i)
+			if perFrame <= 0 then
+				-- app.PrintDebug("FRC.Yield."..name)
+				coroutine.yield();
+				perFrame = Config.PerFrame;
+			end
+			i = i + 1;
+			func = FunctionQueue[i];
+		end
+		-- Run the OnEnd function if it exists
+		local OnEnd = FunctionQueue[0];
+		if OnEnd then
+			-- app.PrintDebug("FRC.End."..name,#FunctionQueue)
+			OnEnd();
+		end
+		Reset();
+	end
+
+	-- Provides a utility which will process a given number of functions each frame in a Queue
+	local Runner = {
+		-- Adds a function to be run with any necessary parameters
+		["Run"] = function(func, ...)
+			if type(func) ~= "function" then
+				error("Must be a 'function' type!")
+			end
+			FunctionQueue[QueueIndex] = func;
+			-- app.PrintDebug("FR.Add."..name,QueueIndex,...)
+			local arrs = select("#", ...);
+			if arrs == 1 then
+				ParameterSingleQueue[QueueIndex] = ...;
+			elseif arrs > 1 then
+				ParameterBucketQueue[QueueIndex] = { ... };
+			end
+			QueueIndex = QueueIndex + 1;
+			StartCoroutine("Runner:"..name, RunnerCoroutine);
+		end,
+		-- Set a function to be run once the queue is empty. This function takes no parameters.
+		["OnEnd"] = function(func)
+			FunctionQueue[0] = func;
+		end,
+	};
+
+	-- Defines how many functions will be executed per frame. Executes via the Runner when encountered in the Queue, unless specified as 'instant'
+	Runner.SetPerFrame = function(count, instant)
+		if instant then
+			SetPerFrame(count);
 		else
-			-- app.PrintDebug("FRC.Run.1",i,ParameterSingleQueue[i])
-			func(ParameterSingleQueue[i]);
+			Runner.Run(SetPerFrame, count);
 		end
-		-- app.PrintDebug("FRC.Done",i)
-		if perFrame <= 0 then
-			-- app.PrintDebug("FRC.Yield")
-			coroutine.yield();
-			perFrame = Config.PerFrame;
-		end
-		i = i + 1;
-		func = FunctionQueue[i];
 	end
-	-- Run the OnEnd function if it exists
-	local OnEnd = FunctionQueue[0];
-	if OnEnd then
-		-- app.PrintDebug("FRC.End",#FunctionQueue)
-		OnEnd();
-	end
-	Reset();
+	Runner.Reset = Reset; -- for testing
+
+	return Runner;
 end
 
--- Provides a utility which will process a given number of functions each frame in a Queue
-local FunctionRunner = {
-	-- Adds a function to be run with any necessary parameters
-	["Run"] = function(func, ...)
-		if type(func) ~= "function" then
-			error("Must be a 'function' type!")
-		end
-		FunctionQueue[QueueIndex] = func;
-		-- app.PrintDebug("FR.Add",QueueIndex,...)
-		local arrs = select("#", ...);
-		if arrs == 1 then
-			ParameterSingleQueue[QueueIndex] = ...;
-		elseif arrs > 1 then
-			ParameterBucketQueue[QueueIndex] = { ... };
-		end
-		QueueIndex = QueueIndex + 1;
-		StartCoroutine("FunctionRunnerCoroutine", FunctionRunnerCoroutine);
-	end,
-	-- Set a function to be run once the queue is empty. This function takes no parameters.
-	["OnEnd"] = function(func)
-		FunctionQueue[0] = func;
-	end,
-};
-
--- Defines how many functions will be executed per frame. Executes via the FunctionRunner when encountered in the Queue, unless specified as 'instant'
-FunctionRunner.SetPerFrame = function(count, instant)
-	if instant then
-		SetPerFrame(count);
-	else
-		FunctionRunner.Run(SetPerFrame, count);
-	end
-end
-FunctionRunner.Reset = Reset; -- for testing
-
-app.FunctionRunner = FunctionRunner;
+app.FunctionRunner = CreateRunner("default");
+app.DynamicRunner = CreateRunner("dynamic");
+app.UpdateRunner = CreateRunner("update");
+app.FillRunner = CreateRunner("fill");
 end
 
 -- Sorting Logic
@@ -4213,7 +4221,7 @@ local function ResolveSymlinkGroupAsync(group)
 end
 -- Fills the symlinks within a group by using an 'async' process to spread the filler function over multiple game frames to reduce stutter or apparent lag
 app.FillSymlinkAsync = function(o)
-	app.FunctionRunner.Run(ResolveSymlinkGroupAsync, o);
+	app.FillRunner.Run(ResolveSymlinkGroupAsync, o);
 end
 end)();
 
@@ -5473,7 +5481,7 @@ local function FillGroupsRecursive(group, FillData)
 		end
 	end
 end
--- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FunctionRunner to recursively follow the next layer of groups
+-- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FillRunner to recursively follow the next layer of groups
 -- over multiple frames to reduce stutter
 local function FillGroupsRecursiveAsync(group, FillData)
 	if SkipFillingGroup(group, FillData) then
@@ -5502,7 +5510,7 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	end
 
 	if group.g then
-		local Run = app.FunctionRunner.Run;
+		local Run = app.FillRunner.Run;
 		-- app.PrintDebug(".g",group.hash,#group.g)
 		-- Then nest anything further
 		for _,o in ipairs(group.g) do
@@ -5525,7 +5533,7 @@ app.FillGroups = function(group)
 
 	-- Fill the group with all nestable content
 	if isInWindow then
-		local Runner = app.FunctionRunner;
+		local Runner = app.FillRunner;
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
 		Runner.SetPerFrame(25);
 		Runner.Run(FillGroupsRecursiveAsync, group, FillData);
@@ -7587,9 +7595,9 @@ local function RefreshCollections()
 	end
 
 	-- Wait for refresh to actually finish
-	while app.refreshDataQueued do coroutine.yield(); end
+	while app.Processing_RefreshData do coroutine.yield(); end
 
-	-- Report success.
+	-- Report success once refresh is done
 	app.print(L["DONE_REFRESHING"]);
 end
 app.ToggleMainList = function()
@@ -15884,30 +15892,50 @@ local function Toggle(self, forceUpdate)
 end
 
 app.Windows = {};
-app._UpdateWindows = function(force, got)
-	-- app.PrintDebug("_UpdateWindows",force,got)
+local function UpdateWindowsOnEnd()
+	app.Processing_RefreshData = nil;
+	app.Processing_UpdateWindows = nil;
+	app.Processing_RefreshWindows = nil;
+	app.refreshDataGot = nil;
+	-- Send a message to your party members.
+	local data = app:GetWindow("Prime").data;
+	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0);
+	if app.lastMsg ~= msg then
+		SendSocialMessage(msg);
+		app.lastMsg = msg;
+	end
+	wipe(searchCache);
+end
+local function UpdateWindows(force, got)
+	-- app.PrintDebug("UpdateWindows",force,got)
 	app._LastUpdateTime = GetTimePreciseSec();
-	local Run = app.FunctionRunner.Run;
+	-- After handling all Updates, perform some logic
+	app.UpdateRunner.OnEnd(UpdateWindowsOnEnd);
+	local Run = app.UpdateRunner.Run;
 	for _,window in pairs(app.Windows) do
 		Run(window.Update, window, force, got);
 	end
 end
 function app:UpdateWindows(force, got)
-	-- no need to update windows when a refresh is pending
-	if app.refreshDataQueued then return; end
-	AfterCombatOrDelayedCallback(app._UpdateWindows, 0.1, force, got);
+	if app.Processing_UpdateWindows then return; end
+	app.Processing_UpdateWindows = true;
+	app.Processing_RefreshWindows = true;
+	-- app.PrintDebug("UpdateWindows:Async")
+	AfterCombatOrDelayedCallback(UpdateWindows, 0.1, force, got);
 end
-app._RefreshWindows = function()
-	-- app.PrintDebug("_RefreshWindows")
+local function RefreshWindows()
+	-- app.PrintDebug("RefreshWindows")
 	for _,window in pairs(app.Windows) do
 		window:Refresh();
 	end
-	-- app.PrintDebugPrior("_RefreshWindows")
+	app.Processing_RefreshWindows = nil;
+	-- app.PrintDebugPrior("RefreshWindows")
 end
 function app:RefreshWindows()
-	-- no need to update windows when a refresh is pending
-	if app.refreshDataQueued then return; end
-	AfterCombatOrDelayedCallback(app._RefreshWindows, 0.1);
+	if app.Processing_RefreshWindows then return; end
+	app.Processing_RefreshWindows = true;
+	-- app.PrintDebug("RefreshWindows:Async")
+	AfterCombatOrDelayedCallback(RefreshWindows, 0.1);
 end
 local function ClearRowData(self)
 	self.ref = nil;
@@ -17754,6 +17782,8 @@ function app:GetWindow(suffix, parent, onUpdate)
 		scrollbar:SetValue(1);
 		container:Show();
 		window:Update();
+		-- Ensure the window updates itself when opened for the first time
+		window.HasPendingUpdate = true;
 	end
 	return window;
 end
@@ -17856,7 +17886,7 @@ local DynamicCategory_Simple = function(self)
 		-- delay-sort the top level groups
 		app.SortGroupDelayed(self, "name");
 		-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
-		app.FunctionRunner.Run(DynamicDataCache.CacheFields, self);
+		app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
 		-- run a direct update on itself after being populated
 		app.DirectGroupUpdate(self);
 	else app.print("Failed to build Simple Dynamic Category: No cached data for key",self.dynamic) end
@@ -17879,7 +17909,7 @@ local DynamicCategory_Nested = function(self)
 	-- delay-sort the top level groups
 	app.SortGroupDelayed(self, "name");
 	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
-	app.FunctionRunner.Run(DynamicDataCache.CacheFields, self);
+	app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
 	-- run a direct update on itself after being populated
 	app.DirectGroupUpdate(self);
 end
@@ -17898,7 +17928,7 @@ function app:GetDataCache()
 		group.dynamic_value = value;
 		-- run a direct update on itself after being populated if the Filler exists
 		if Filler then
-			app.FunctionRunner.Run(Filler, group);
+			app.DynamicRunner.Run(Filler, group);
 		end
 		return group;
 	end
@@ -18042,14 +18072,14 @@ function app:GetDataCache()
 		db.parent = primeData;
 		tinsert(g, DynamicCategory(db, "toyID"));
 
-		-- add an OnEnd function for the FunctionRunner to print being done
-		app.FunctionRunner.OnEnd(function()
+		-- add an OnEnd function for the DynamicRunner to print being done
+		app.DynamicRunner.OnEnd(function()
 			app.ToggleCacheMaps();
 			app.print(sformat(L["READY_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]));
 		end);
 
 		-- the caching of Dynamic groups takes place after all are generated and it can run more per frame
-		app.FunctionRunner.SetPerFrame(5);
+		app.DynamicRunner.SetPerFrame(5);
 	end
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
@@ -18793,11 +18823,10 @@ function app:GetDataCache()
 	end
 	return allData;
 end
-end	-- Dynamic/Main Data
 
--- Collection Window Creation
-app._RefreshData = function()
-	-- app.PrintDebug("_RefreshData",app.refreshDataForce and "FORCE", app.refreshDataGot and "COLLECTED")
+local function RefreshData()
+	-- app.PrintDebug("RefreshData",app.refreshDataForce and "FORCE", app.refreshDataGot and "COLLECTED")
+
 	-- Send an Update to the Windows to Rebuild their Row Data
 	if app.refreshDataForce then
 		app.refreshDataForce = nil;
@@ -18810,41 +18839,31 @@ app._RefreshData = function()
 		app.RefreshCustomCollectibility();
 
 		-- Forcibly update the windows.
-		app._UpdateWindows(true, app.refreshDataGot);
+		app:UpdateWindows(true, app.refreshDataGot);
 	else
-		app._UpdateWindows(nil, app.refreshDataGot);
+		app:UpdateWindows(nil, app.refreshDataGot);
 	end
-	app.refreshDataQueued = nil;
-	app.refreshDataGot = nil;
-
-	-- Send a message to your party members.
-	local data = app:GetWindow("Prime").data;
-	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0);
-	if app.lastMsg ~= msg then
-		SendSocialMessage(msg);
-		app.lastMsg = msg;
-	end
-	wipe(searchCache);
 end
 function app:RefreshData(lazy, got, manual)
-	if app.refreshDataQueued then return; end
-	-- app.PrintDebug("RefreshData",lazy and "LAZY", got and "COLLECTED", manual and "MANUAL")
+	if app.Processing_RefreshData then return; end
+	app.Processing_RefreshData = true;
+	-- app.PrintDebug("RefreshData:Async",lazy and "LAZY", got and "COLLECTED", manual and "MANUAL")
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	app.refreshDataGot = app.refreshDataGot or got;
-	app.refreshDataQueued = true;
 
 	-- Don't refresh if not ready
 	if not app.IsReady then
-		-- print("Not ready, .1sec self callback")
+		-- app.PrintDebug("Not ready, .1sec self callback")
 		DelayedCallback(app.RefreshData, 0.1, self, lazy);
 	elseif manual then
-		-- print("manual refresh after combat")
-		AfterCombatCallback(app._RefreshData);
+		-- app.PrintDebug("manual refresh after combat")
+		AfterCombatCallback(RefreshData);
 	else
-		-- print(".5sec delay callback")
-		AfterCombatOrDelayedCallback(app._RefreshData, 0.5);
+		-- app.PrintDebug(".5sec delay callback")
+		AfterCombatOrDelayedCallback(RefreshData, 0.5);
 	end
 end
+end	-- Dynamic/Main Data
 
 do -- Search Response Logic
 local IncludeUnavailableRecipes, IgnoreBoEFilter;
