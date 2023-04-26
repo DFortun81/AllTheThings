@@ -6345,6 +6345,10 @@ fieldConverters = {
 		CacheField(group, "itemID", value);
 	end,
 	["mapID"] = cacheMapID,
+	["mountID"] = function(group, value)
+		CacheField(group, "mountID", value);
+		CacheField(group, "spellID", value);
+	end,
 	["npcID"] = cacheCreatureID,
 	["objectID"] = cacheObjectID,
 	["professionID"] = function(group, value)
@@ -6373,11 +6377,6 @@ fieldConverters = {
 	end,
 	["spellID"] = function(group, value)
 		CacheField(group, "spellID", value);
-		-- cache as a mount if it is
-		local mountID = group.mountID;
-		if mountID then
-			CacheField(group, "mountID", mountID);
-		end
 	end,
 	["tierID"] = function(group, value)
 		CacheField(group, "tierID", value);
@@ -12845,7 +12844,7 @@ app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 end)();
 
 -- Mount Lib
-(function()
+do
 local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByID;
 local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
@@ -12873,7 +12872,7 @@ local function CacheInfo(t, field)
 		_t.displayID = displayID;
 		_t.lore = lore;
 		_t.name = C_MountJournal_GetMountInfoByID(mountID);
-		_t.mountID = mountID;
+		_t.mountJournalID = mountID;
 	end
 	local name, _, icon = GetSpellInfo(id);
 	if name then
@@ -12904,7 +12903,7 @@ local function default_costCollectibles(t)
 end
 local mountFields = {
 	["key"] = function(t)
-		return "spellID";
+		return "mountID";
 	end,
 	["_cache"] = function(t)
 		return cache;
@@ -12938,8 +12937,8 @@ local mountFields = {
 	["b"] = function(t)
 		return (t.parent and t.parent.b) or 1;
 	end,
-	["mountID"] = function(t)
-		return cache.GetCachedField(t, "mountID", CacheInfo);
+	["spellID"] = function(t)
+		return t.mountID;
 	end,
 	["lore"] = function(t)
 		return cache.GetCachedField(t, "lore", CacheInfo);
@@ -12956,15 +12955,8 @@ local mountFields = {
 	end,
 };
 app.BaseMount = app.BaseObjectFields(mountFields, "BaseMount");
-
-local fields = RawCloneData(mountFields);
-app.BaseMountWithItemID = app.BaseObjectFields(fields, "BaseMountWithItemID");
 app.CreateMount = function(id, t)
-	-- if t and rawget(t, "itemID") then
-		-- return setmetatable(constructor(id, t, "spellID"), app.BaseMountWithItemID);
-	-- else
-		return setmetatable(constructor(id, t, "spellID"), app.BaseMount);
-	-- end
+	return setmetatable(constructor(id, t, "mountID"), app.BaseMount);
 end
 
 -- Refresh a specific Mount or all Mounts if not provided with a specific ID
@@ -12974,7 +12966,7 @@ local RefreshMounts = function(newMountID)
 	-- would fail to update all the mounts, so probably just best to check all mounts if this is triggered
 	-- plus it's not laggy now to do that so it should be fine
 
-	for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+	for _,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 		local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 		if spellID and isCollected then
 			if not collectedSpells[spellID] then
@@ -12995,7 +12987,7 @@ app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
 	AfterCombatCallback(RefreshMounts, newMountID);
 end
 app:RegisterEvent("NEW_MOUNT_ADDED");
-end)();
+end	-- Mount Lib
 
 -- Music Rolls & Selfie Filter Lib: Music Rolls
 (function()
