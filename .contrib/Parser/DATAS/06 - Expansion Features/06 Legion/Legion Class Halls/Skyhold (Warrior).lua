@@ -56,7 +56,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						},
 					}),
 				}),
-				n(-101, bubbleDownSelf({	-- Followers
+				n(FOLLOWERS, bubbleDownSelf({
 					["u"] = 15,	-- Temporary troops
 				}, {
 					follower(1012),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force

@@ -4,7 +4,7 @@
 -- Everything in this file hasn't been implemented yet.
 
 root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
-	n(-101, {	-- Followers
+	n(FOLLOWERS, {
 		tier(WOD_TIER, {
 			-- 6.0.1
 			tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {

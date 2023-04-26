@@ -36,7 +36,7 @@ _.ExpansionFeatures =
 								crit(11),	-- Blast Furnace
 							}),
 						}),
-						n(-101, bubbleDown({	-- Followers
+						n(FOLLOWERS, bubbleDown({	-- Followers
 							["u"] = 15,	-- (Ships aren't really permanently collectible because they get destroyed and have a cap)
 						},{
 							-- TODO: maybe put proper faction on each ship lol

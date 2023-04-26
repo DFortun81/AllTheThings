@@ -58,7 +58,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						},
 					}),
 				}),
-				n(-101, bubbleDownSelf({	-- Followers
+				n(FOLLOWERS, bubbleDownSelf({
 					["u"] = 15,	-- Temporary troops
 				}, {
 					follower(729),	-- Black Harvest Acolytes

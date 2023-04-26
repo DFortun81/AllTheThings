@@ -32,7 +32,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						["coord"] = { 39.8, 29.6, TRUESHOT_LODGE },
 					}),
 				}),
-				n(-101, bubbleDownSelf({	-- Followers
+				n(FOLLOWERS, bubbleDownSelf({
 					["u"] = 15,	-- Temporary troops
 				}, {
 					follower(671),	-- Squad of Archers

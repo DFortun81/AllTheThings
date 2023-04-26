@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	n(-10057, {	-- War Effort
-		n(-101, bubbleDownSelf({	-- Followers
+		n(FOLLOWERS, bubbleDownSelf({
 			["u"] = 15,	-- Temporary troops
 		}, {
 			follower(1063),	-- Alliance:Dwarven Riflemen \\ Horde:Tauren Earthshakers

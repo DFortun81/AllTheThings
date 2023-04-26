@@ -11,7 +11,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					n(TIER_ONE, {
 						["icon"] = "Interface\\Icons\\Sanctum_features_missiontable",
 						["g"] = {
-							n(-101, bubbleDownSelf({	-- Followers
+							n(FOLLOWERS, bubbleDownSelf({
 								["u"] = 15,	-- Temporary troops
 							}, {
 								follower(1241),	-- Kyrian Halberdier

@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 		cl(DEMONHUNTER, bubbleDownSelf({ ["classes"] = { DEMONHUNTER } }, {
 			["maps"] = { MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER, MARDUM_THE_SHATTERED_ABYSS_LOWER_COMMAND_CENTER },
 			["g"] = {
-				n(-101, bubbleDownSelf({	-- Followers
+				n(FOLLOWERS, bubbleDownSelf({
 					["u"] = 15,	-- Temporary troops
 				}, {
 					follower(665),	-- Ashtongue Warriors

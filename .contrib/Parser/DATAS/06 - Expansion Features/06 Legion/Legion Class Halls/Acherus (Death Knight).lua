@@ -35,7 +35,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				n(FLIGHT_PATHS, {
 					fp(1862),
 				}),
-				n(-101, bubbleDownSelf({	-- Followers
+				n(FOLLOWERS, bubbleDownSelf({
 					["u"] = 15,	-- Temporary troops
 				}, {
 					follower(663),	-- Ebon Knights

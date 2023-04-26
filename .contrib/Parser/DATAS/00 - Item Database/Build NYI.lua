@@ -17,7 +17,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(CLASS_TRIAL),
 	n(FACTIONS),
 	n(FLIGHT_PATHS),
-	n(-101),	-- Followers
+	n(FOLLOWERS),
 	filter(ILLUSIONS),
 	filter(MISC),
 	n(MAPS),

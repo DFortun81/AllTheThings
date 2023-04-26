@@ -28,7 +28,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 61.7, 33.9, 747 },
 					}),
 				}),
-				n(-101, bubbleDownSelf({	-- Followers
+				n(FOLLOWERS, bubbleDownSelf({
 					["u"] = 15,	-- Temporary troops
 				}, {
 					follower(749),	-- Ancient of War

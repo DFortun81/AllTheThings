@@ -221,7 +221,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				un(REMOVED_FROM_GAME, ach(11609)),		-- Power Unbound
 			})),
 		}),
-		n(-101, bubbleDownSelf({	-- Followers
+		n(FOLLOWERS, bubbleDownSelf({
 			["u"] = 15,	-- Temporary troops
 		}, {
 			-- Dinner Guests (Moroes Mission reward)
