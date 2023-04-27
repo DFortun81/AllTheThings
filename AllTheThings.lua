@@ -158,6 +158,7 @@ app.PrintMemoryUsage = function(...)
 	if ... then app.print(..., GetAddOnMemoryUsage("AllTheThings"));
 	else app.print("Memory",GetAddOnMemoryUsage("AllTheThings")); end
 end
+-- app.PrintMemoryUsage("ATT.lua")
 --]]
 
 -- Coroutine Helper Functions
@@ -166,7 +167,7 @@ app.EmptyTable = {};
 app.EmptyFunction = function() end;
 local function OnUpdate(self)
 	for i=#self.__stack,1,-1 do
-		-- print("Running Stack " .. i .. ":" .. self.__stack[i][2])
+		-- app.PrintDebug("Running Stack " .. i .. ":" .. self.__stack[i][2])
 		if not self.__stack[i][1](self) then
 			-- print("Removing Stack " .. i .. ":" .. self.__stack[i][2])
 			table.remove(self.__stack, i);
@@ -17695,10 +17696,12 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
 		app.Windows[suffix] = window;
 		window.Suffix = suffix;
-		window.Refresh = Refresh;
 		window.Toggle = Toggle;
-		window.BaseUpdate = UpdateWindow;
-		window.Update = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
+		local updateFunc = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
+		-- Update/Refresh functions can be called through callbacks, so they need to be distinct functions
+		window.BaseUpdate = function(...) UpdateWindow(...) end;
+		window.Update = function(...) updateFunc(...) end;
+		window.Refresh = function(...) Refresh(...) end;
 		window.SetVisible = SetVisible;
 		window.StorePosition = StoreWindowPosition;
 		window.SetData = SetData;
@@ -23805,6 +23808,7 @@ end
 
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
+	-- app.PrintMemoryUsage("Startup")
 	local toc = select(4, GetBuildInfo());
 	local v = "";
 	if toc < 100100 then
@@ -24109,7 +24113,6 @@ app.Startup = function()
 	app:RegisterEvent("BOSS_KILL");
 	app:RegisterEvent("CHAT_MSG_ADDON");
 	app:RegisterEvent("PLAYER_ENTERING_WORLD");
-	app:RegisterEvent("TOOLTIP_DATA_UPDATE");
 	app:RegisterEvent("NEW_PET_ADDED");
 	app:RegisterEvent("PET_JOURNAL_PET_DELETED");
 	app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
@@ -24121,6 +24124,7 @@ app.Startup = function()
 	app:RegisterEvent("VIGNETTES_UPDATED")
 
 	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
+	-- app.PrintMemoryUsage("Startup:Done")
 end
 
 -- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
@@ -24155,6 +24159,7 @@ end
 
 -- Function which is triggered after Startup
 app.InitDataCoroutine = function()
+	-- app.PrintMemoryUsage("InitDataCoroutine")
 	-- First, load the addon data
 	app:GetDataCache();
 
@@ -24477,6 +24482,7 @@ app.InitDataCoroutine = function()
 	app:RegisterEvent("LOOT_OPENED");
 	app:RegisterEvent("QUEST_DATA_LOAD_RESULT");
 	app:RegisterEvent("LEARNED_SPELL_IN_TAB");
+	app:RegisterEvent("TOOLTIP_DATA_UPDATE");
 
 	-- check if we are in a Party Sync session when loading in
 	app.IsInPartySync = C_QuestSession.Exists();
@@ -24511,6 +24517,7 @@ app.InitDataCoroutine = function()
 
 	-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
 	DelayedCallback(app.LocationTrigger, 3);
+	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
 end
 end -- Setup and Startup Functionality
 
@@ -25365,3 +25372,5 @@ app.events.VIGNETTES_UPDATED = function()
 	end
 end
 end	-- Vignette Functionality Scope
+
+-- app.PrintMemoryUsage("AllTheThings.EOF");
