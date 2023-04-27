@@ -9,6 +9,11 @@ root(ROOTS.Promotions, {
 			i(49282, {	-- Big Battle Bear
 				["description"] = "Amazon Prime Gaming reward from March 30th 2023 till April 27th 2023.",
 				["timeline"] = { "added 10.0.7" },
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			i(54847, {	-- Lil' XT
+				["description"] = "Amazon Prime Gaming reward from April 27th 2023 till May 25th 2023.",
+				["timeline"] = { "added 10.0.7" },
 			}),
 		},
 	}),
