@@ -217,62 +217,10 @@ local function StartCoroutine(name, method, delaySec)
 	-- else print("skipped coroutine",name);
 	end
 end
-local Callback = app.Callback;
--- Triggers a timer callback method to run after the provided number of seconds with the provided params; the method can only be set to run once per delay
-local function DelayedCallback(method, delaySec, ...)
-	if not app.__callbacks[method] then
-		app.__callbacks[method] = ... and {...} or true;
-		-- app.PrintDebug("DelayedCallback:",method, ...)
-		local newCallback = function()
-			local args = app.__callbacks[method];
-			app.__callbacks[method] = nil;
-			-- callback with args/void
-			if args ~= true then
-				-- app.PrintDebug("DelayedCallback/args Running",method, unpack(args))
-				method(unpack(args));
-			else
-				-- app.PrintDebug("DelayedCallback/void Running",method)
-				method();
-			end
-			-- app.PrintDebug("DelayedCallback Done",method)
-		end;
-		C_Timer.After(math.max(0, delaySec or 0), newCallback);
-	end
-end
--- Triggers a timer callback method to run on the next game frame or following combat if in combat currently with the provided params; the method can only be set to run once per frame
-local function AfterCombatCallback(method, ...)
-	if not InCombatLockdown() then Callback(method, ...); return; end
-	if not app.__callbacks[method] then
-		app.__callbacks[method] = ... and {...} or true;
-		-- If in combat, register to trigger on leave combat
-		-- print("AfterCombatCallback:",method, ...)
-		local newCallback = function()
-			local args = app.__callbacks[method];
-			app.__callbacks[method] = nil;
-			-- AfterCombatCallback with args/void
-			if args and args ~= true then
-				-- print("AfterCombatCallback/args Running",method, unpack(args))
-				method(unpack(args));
-			else
-				-- print("AfterCombatCallback/void Running",method)
-				method();
-			end
-			-- print("AfterCombatCallback:Done",method)
-		end;
-		tinsert(app.__combatcallbacks, 1, newCallback);
-		app:RegisterEvent("PLAYER_REGEN_ENABLED");
-	end
-end
--- Triggers a timer callback method to run either when current combat ends, or after the provided delay; the method can only be set to run once until it has been run
-local function AfterCombatOrDelayedCallback(method, delaySec, ...)
-	if InCombatLockdown() then
-		-- print("chose AfterCombatCallback")
-		AfterCombatCallback(method, ...);
-	else
-		-- print("chose DelayedCallback",delaySec)
-		DelayedCallback(method, delaySec, ...);
-	end
-end
+local Callback = app.CallbackHandlers.Callback;
+local DelayedCallback = app.CallbackHandlers.DelayedCallback;
+local AfterCombatCallback = app.CallbackHandlers.AfterCombatCallback;
+local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
 local function LocalizeGlobal(globalName, init)
 	local val = _G[globalName];
 	if init and not val then

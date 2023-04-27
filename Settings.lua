@@ -36,6 +36,7 @@ settings.name = app:GetName();
 settings.MostRecentTab = nil;
 settings.Tabs = {};
 settings.TabsByName = {};
+settings.Callback = app.CallbackHandlers.Callback;
 settings:SetBackdrop({
 	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg",
 	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -697,18 +698,24 @@ settings.SetPersonal = function(self, setting, value)
 	AllTheThingsSettingsPerCharacter[setting] = value;
 	self:Refresh();
 end
-settings.Refresh = function(self)
-	if not settings._Refreshing then
-		settings._Refreshing = true;
-		settings.SkipAutoRefreshCheckbox:OnRefresh();
-		for i,tab in ipairs(self.Tabs) do
-			if tab.OnRefresh then tab:OnRefresh(); end
-			for j,o in ipairs(tab.objects) do
-				if o.OnRefresh then o:OnRefresh(); end
-			end
+do
+local function Refresh(self)
+	app.PrintDebug("Settings.Refresh")
+	settings.SkipAutoRefreshCheckbox:OnRefresh();
+	for i,tab in ipairs(self.Tabs) do
+		if tab.OnRefresh then tab:OnRefresh(); end
+		for j,o in ipairs(tab.objects) do
+			if o.OnRefresh then o:OnRefresh(); end
 		end
-		settings._Refreshing = nil;
 	end
+	self.__Refreshing = nil;
+end
+settings.Refresh = function(self)
+	-- apparently child components have the audacity to tell the parent it should refresh itself... so insubordinate
+	if self.__Refreshing then return; end
+	self.__Refreshing = true;
+	settings.Callback(Refresh, self);
+end
 end
 -- Applies a basic backdrop color to a given frame
 -- r/g/b expected in 1-255 range
@@ -1173,6 +1180,7 @@ settings.SetThingTracking = function(self, force)
 		end
 	end
 end
+-- Updates various application settings and values based on toggled Settings, as well as the Mode name and Refreshes the Settings
 settings.UpdateMode = function(self, doRefresh)
 	if self:Get("Completionist") then
 		app.ItemSourceFilter = app.FilterItemSource;
@@ -1306,7 +1314,7 @@ settings.UpdateMode = function(self, doRefresh)
 	if doRefresh then
 		self.NeedsRefresh = true;
 	end
-	-- app.PrintDebug("UpdateMode",doRefresh)
+	app.PrintDebug("UpdateMode",doRefresh)
 	-- FORCE = Force Update
 	-- 1 = Force Update IF NOT Skip
 	-- not = Soft Update
@@ -2130,7 +2138,7 @@ function(self)
 	self:SetAlpha(1);
 	if settings:Get(settingName) == 0 then
 		self:SetChecked(true);
-		app.Callback(Off_Disable, self);
+		settings.Callback(Off_Disable, self);
 	else
 		self:SetChecked(false);
 		self:Enable();
@@ -2151,7 +2159,7 @@ function(self)
 	self:SetAlpha(1);
 	if settings:Get(settingName) == 1 then
 		self:SetChecked(true);
-		app.Callback(Simple_Disable, self);
+		settings.Callback(Simple_Disable, self);
 	else
 		self:SetChecked(false);
 		self:Enable();
@@ -2171,7 +2179,7 @@ function(self)
 	self:SetAlpha(1);
 	if settings:Get(settingName) == 2 then
 		self:SetChecked(true);
-		app.Callback(Nested_Disable, self);
+		settings.Callback(Nested_Disable, self);
 	else
 		self:SetChecked(false);
 		self:Enable();
@@ -2323,7 +2331,6 @@ f:SetScript("OnClick", function(self)
 	for key,value in pairs(AllTheThingsSettingsPerCharacter.Filters) do
 		AllTheThingsSettingsPerCharacter.Filters[key] = nil;
 	end
-	settings:Refresh();
 	settings:UpdateMode(1);
 end);
 f:SetATTTooltip(L["CLASS_DEFAULTS_BUTTON_TOOLTIP"]);
@@ -2347,7 +2354,6 @@ f:SetScript("OnClick", function(self)
 	for k,v in pairs(allEquipmentFilters) do
 		AllTheThingsSettingsPerCharacter.Filters[v] = true
 	end
-	settings:Refresh();
 	settings:UpdateMode(1);
 end);
 f:SetATTTooltip(L["ALL_BUTTON_TOOLTIP"]);
@@ -2371,7 +2377,6 @@ f:SetScript("OnClick", function(self)
 	for k,v in pairs(allEquipmentFilters) do
 		AllTheThingsSettingsPerCharacter.Filters[v] = false
 	end
-	settings:Refresh();
 	settings:UpdateMode(1);
 end);
 f:SetATTTooltip(L["UNCHECK_ALL_BUTTON_TOOLTIP"]);
@@ -4042,7 +4047,7 @@ local InitializeProfilesButton = settings:CreateButton(
 		function()
 			app.SetupProfiles();
 			OnClickForTab(tab);
-			app.Callback(InitProfilesButton_Disable, self);
+			settings.Callback(InitProfilesButton_Disable, self);
 		end);
 	end,
 });
@@ -4214,7 +4219,7 @@ refreshProfiles = function()
 					if activeProfile == myProfile then
 						self:SetAlpha(0.5);
 						self:SetChecked(true);
-						app.Callback(ProfileCheckbox_Disable, self);
+						settings.Callback(ProfileCheckbox_Disable, self);
 					elseif tab.SelectedProfile == myProfile then
 						self:SetAlpha(1);
 						self:Enable();
