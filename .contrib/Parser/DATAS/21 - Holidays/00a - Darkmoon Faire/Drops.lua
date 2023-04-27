@@ -30,13 +30,13 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 			},
 		}),
 		i(71716, {	-- Soothsayer's Runes
-			["description"] = "Rewards 10x Darkmoon Prize Ticket",
+			["description"] = "Rewards 15x Darkmoon Prize Ticket",
 			["g"] = {
 				currency(515),	-- Darkmoon Prize Ticket
 			},
 		}),
 		i(71715, {	-- A Treatise on Strategy
-			["description"] = "Rewards 15x Darkmoon Prize Ticket",
+			["description"] = "Rewards 10x Darkmoon Prize Ticket",
 			["g"] = {
 				currency(515),	-- Darkmoon Prize Ticket
 			},
