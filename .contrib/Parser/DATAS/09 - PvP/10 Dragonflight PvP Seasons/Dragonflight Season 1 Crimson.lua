@@ -398,15 +398,13 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 								{"pop"},								-- Discard the Season Header and acquire all of their children.
 								{"where", "filterID", RECIPES },		-- Recipes
 								{"pop"},								-- Discard the Recipes Header and acquire all of their children.
-								{"select","itemID",						-- Select ItemID
-									137642,    -- Mark of Honor			-- Display Mark of Honor as Sym, as the Vendor has a different box for less Costs (2k) with more Marks of Honor (x5)
-								},
 								-- #if AFTER 10.1.0
 								{"where", "npcID", 196661 },			-- Korganar Smolderforge
 								{"pop"}									-- Discard the NPC Header and acquire all of their children
 								-- #endif
 							},
 							["g"] = {
+								-- i(137642),    -- Mark of Honor		-- The Vendor has a different box for less Costs (2k) with more Marks of Honor (x5). Hidding this on purpose.
 								i(201254),	-- Medal of Honor [A]
 								i(201255),	-- Medal of Honor [H]
 							},
