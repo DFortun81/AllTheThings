@@ -15029,17 +15029,17 @@ local function DirectGroupUpdate(group, got)
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
 	local window = app.RecursiveFirstDirectParentWithField(group, "window");
 	if window then
-		-- app.PrintDebug("DGU:Callback Update",group.hash,">",window.Suffix,window.Update,window.isQuestChain)
+		-- app.PrintDebug("DGU:Update",group.hash,">",window.Suffix,window.Update,window.isQuestChain)
 		DelayedCallback(window.Update, DGUDelay, window, window.isQuestChain, got);
 	end
 end
 app.DirectGroupUpdate = DirectGroupUpdate;
--- Trigger a Refresh of the window containing the specific group
+-- Trigger a soft-Update of the window containing the specific group, regardless of Filtering/Visibility of the group
 local function DirectGroupRefresh(group)
 	local window = app.RecursiveFirstDirectParentWithField(group, "window");
 	if window then
-		-- app.PrintDebug("DGR:Callback Update",group.hash,">",window.Suffix,window.Refresh)
-		DelayedCallback(window.Refresh, DGUDelay, window);
+		-- app.PrintDebug("DGR:Refresh",group.hash,">",window.Suffix,window.Refresh)
+		DelayedCallback(window.Update, DGUDelay, window);
 	end
 end
 app.DirectGroupRefresh = DirectGroupRefresh;
@@ -17611,6 +17611,7 @@ local function UpdateWindow(self, force, got)
 			end
 
 			ProcessGroup(self.rowData, data);
+			-- app.PrintDebug("Update:RowData",#self.rowData)
 
 			-- Does this user have everything?
 			if data.total then
@@ -21580,7 +21581,6 @@ customWindowUpdates["list"] = function(self, force, got)
 			text = "Full Data List - "..(dataType or "None"),
 			icon = app.asset("Interface_Quest_header"),
 			description = "1 - "..self.Limit,
-			expanded = true,
 			g = g,
 		}, PartitionMeta));
 
@@ -21596,12 +21596,12 @@ customWindowUpdates["list"] = function(self, force, got)
 				return o._missing and 1 or 0;
 			end,
 			text = harvesting and function(o, key)
-				local text, key = o.text, o.key;
+				local text = o.text;
 				if not IsRetrieving(text) then
 					-- app.PrintDebug("hide",o.hash)
 					o.visible = false;
 					DGR(o);
-					return "#"..(o[dataType] or o[key or 0] or "?")..": "..text;
+					return "HARVESTED";
 				end
 			end
 			or function(o, key)
