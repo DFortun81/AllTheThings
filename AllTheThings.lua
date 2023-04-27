@@ -18837,7 +18837,6 @@ local function RefreshData()
 	end
 end
 function app:RefreshData(lazy, got, manual)
-	if app.Processing_RefreshData then return; end
 	app.Processing_RefreshData = true;
 	-- app.PrintDebug("RefreshData:Async",lazy and "LAZY" or "FORCE", got and "COLLECTED" or "PASSIVE", manual and "MANUAL" or "AUTO")
 	app.refreshDataForce = app.refreshDataForce or not lazy;
