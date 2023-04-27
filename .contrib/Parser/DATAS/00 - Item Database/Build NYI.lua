@@ -14,15 +14,16 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(ARMOR),
 	filter(BAGS),
 	filter(BATTLE_PETS),
-	n(CLASS_TRIAL),
+	n(CLASS_TRIAL),			-- completed up to 10.0.7
+	filter(CONSUMABLES),
 	n(FACTIONS),
-	n(FLIGHT_PATHS),
-	n(FOLLOWERS),
-	filter(ILLUSIONS),
+	n(FLIGHT_PATHS),		-- completed up to 10.0.7
+	n(FOLLOWERS),			-- completed up to 10.0.7
+	filter(ILLUSIONS),		-- completed up to 10.0.7
 	filter(MISC),
 	n(MAPS),
 	filter(MOUNTS),
-	n(PARTY_SYNC),
+	n(PARTY_SYNC),			-- completed up to 10.0.7
 	n(PROFESSIONS, {
 		prof(ALCHEMY),
 		prof(BLACKSMITHING),
@@ -41,7 +42,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	filter(RECIPES),
 	n(SETS),
 	filter(TITLES),
-	filter(TOYS),
+	filter(TOYS),			-- completed up to 10.0.7
 	n(WEAPONS),
 }));
 root(ROOTS.HiddenAchievementTriggers, {
