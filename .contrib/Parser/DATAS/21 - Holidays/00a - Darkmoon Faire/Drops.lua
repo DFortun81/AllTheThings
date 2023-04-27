@@ -11,33 +11,33 @@ root(ROOTS.Holidays, m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon
 	}, {
 		-- PvE
 		i(71715, {	-- A Treatise on Strategy
-			["description"] = "Rewards 10x Darkmoon Prize Ticket",
+			["description"] = "Can drop from instanced PvE content when the Darkmoon Adventurer's Guide is in your bags.\nRewards 10x Darkmoon Prize Ticket.",
 		}),
 		i(71635, {	-- Imbued Crystal
-			["description"] = "Rewards 10x Darkmoon Prize Ticket",
+			["description"] = "Can drop from instanced PvE content when the Darkmoon Adventurer's Guide is in your bags.\nRewards 10x Darkmoon Prize Ticket.",
 		}),
 		i(71636, {	-- Monstrous Egg
-			["description"] = "Rewards 10x Darkmoon Prize Ticket",
+			["description"] = "Can drop from instanced PvE content when the Darkmoon Adventurer's Guide is in your bags.\nRewards 10x Darkmoon Prize Ticket.",
 		}),
 		i(71637, {	-- Mysterious Grimoire
-			["description"] = "Rewards 10x Darkmoon Prize Ticket",
+			["description"] = "Can drop from instanced PvE content when the Darkmoon Adventurer's Guide is in your bags.\nRewards 10x Darkmoon Prize Ticket.",
 		}),
 		i(71638, {	-- Ornate Weapon
-			["description"] = "Rewards 10x Darkmoon Prize Ticket",
+			["description"] = "Can drop from instanced PvE content when the Darkmoon Adventurer's Guide is in your bags.\nRewards 10x Darkmoon Prize Ticket.",
 		}),
 		i(71716, {	-- Soothsayer's Runes
-			["description"] = "Rewards 15x Darkmoon Prize Ticket",
+			["description"] = "Can drop from instanced PvE content when the Darkmoon Adventurer's Guide is in your bags.\nRewards 15x Darkmoon Prize Ticket.",
 		}),
 
 		-- PvP
 		i(71951, {	-- Banner of the Fallen
-			["description"] = "Rewards 5x Darkmoon Prize Ticket",
+			["description"] = "Can drop from instanced PvP content when the Darkmoon Adventurer's Guide is in your bags.\nRewards 5x Darkmoon Prize Ticket",
 		}),
 		i(71952, {	-- Captured Insignia
-			["description"] = "Rewards 5x Darkmoon Prize Ticket",
+			["description"] = "Can drop from instanced PvP content when the Darkmoon Adventurer's Guide is in your bags.\nRewards 5x Darkmoon Prize Ticket",
 		}),
 		i(71953, {	-- Fallen Adventurer's Journal
-			["description"] = "Rewards 5x Darkmoon Prize Ticket",
+			["description"] = "Can drop from instanced PvP content when the Darkmoon Adventurer's Guide is in your bags.\nRewards 5x Darkmoon Prize Ticket",
 		}),
 	})),
 })));
