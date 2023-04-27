@@ -20,8 +20,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				ach(16569),	-- Cobalt Enthusiast
 				ach(16537),	-- Maximum Power!
 			}),
-			n(BONUS_OBJECTIVES, {
-			}),
 			n(QUESTS, {
 				q(71094, {	-- Help Is Our Way!
 					["sourceQuests"] = { 72435 },	-- Welcome to the Assembly
@@ -99,7 +97,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				})),
 			})),
 			n(VENDORS, {
-				n(194832, {	-- Steiz <Quartermaster>
+				n(194832, {	-- Meiz <Quartermaster>
 					["coord"] = { 49.4, 22.6, THE_AZURE_SPAN },
 					["g"] = {
 						n(ARMOR, {
@@ -279,6 +277,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				}),
 				n(196862, {	-- Steiz <Quartermaster>
 					["coord"] = { 49.4, 22.6, THE_AZURE_SPAN },
+					["sym"] = {{"select","itemID",
+						-- Armor --
+						191833,	-- Cobalt Guardian's Pauldron
+						191832,	-- Cobalt Guardian's Leggings
+						191831,	-- Cobalt Guardian's Helm
+						191829,	-- Cobalt Guardian's Hauberk
+						191830,	-- Cobalt Guardian's Grips
+						191836,	-- Cobalt Guardian's Cover
+						191835,	-- Cobalt Guardian's Bracers
+						191834,	-- Cobalt Guardian's Belt
+						-- Weapons --
+						199731,	-- Cobalt Bladewing Staff
+						199703,	-- Steadfast Cobalt Bulwark
+						199708,	-- Cobalt Wingguard's Polearm
+						199706,	-- Cobalt Stalker's Lancet
+						199735,	-- Cobalt Guardian's Cutlass
+						199729,	-- Cobalt Essence Weaver's Staff
+						199727,	-- Cobalt Essence Weaver's Scepter
+						200559,	-- Cobalt Duelist's Saber
+						199701,	-- Cobalt Dragonwing Decapitator
+						199737,	-- Cobalt Dragonflame Blade
+						199733,	-- Cobalt Defender's Wingglaive
+						201371,	-- Cobalt Defender's Shredder
+					}},
 					["g"] = {
 						i(202117),	-- Assembly Preserver's Band
 						i(202119),	-- Assembly Scholar's Loop
