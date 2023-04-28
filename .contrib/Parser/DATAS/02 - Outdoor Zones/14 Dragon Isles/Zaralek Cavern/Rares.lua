@@ -94,11 +94,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(203358),	-- Winding Slitherdrake: Small Finned Tail (DM!)
 				},
 			}),
-			n(203466, {	-- Kaprachu
+			n(203466, {	-- Kaprachu / Kapraku
 				["coord"] = { 59.3, 39.8, ZARALEK_CAVERN },
 				["questID"] = 75546,
 				["g"] = {
 					bo(75269, true),
+					i(205319),	-- Deepflayer Shoulderguards
 				},
 			}),
 			n(203618, {	-- Klakatak

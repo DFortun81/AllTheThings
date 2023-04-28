@@ -582,6 +582,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "n", 201752 },	-- Briggul
 				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 			}),
+			q(74515, {	-- Snail Mail
+				["sourceQuests"] = { 74787 },  -- Come Snail Away
+				["provider"] = { "n", 201752 },  -- Briggul
+				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
+			}),
 
 				-- 7 --
 			q(75233, {	-- Flesh to Bone
@@ -848,8 +853,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
 		q(75658),	-- WQ Unlock?
 		--
-		--q(75511),	-- Login? Weekly?
-		--q(75764),	-- Login?
+		q(75511),	-- Tracking Quest (that's the name)
+		q(75764),	-- Login
 		--q(75863),	-- Two Aiding Accord?
 		--q(73793),	-- Fly Through Azure Exit
 

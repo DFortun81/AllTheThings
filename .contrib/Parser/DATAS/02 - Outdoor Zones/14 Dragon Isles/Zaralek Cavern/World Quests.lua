@@ -36,10 +36,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(74292, {	-- Deephollow Mysteries
 						["coord"] = { 60.9, 53.8, ZARALEK_CAVERN },
+						["g"] = {
+							i(204811),	-- Drogbar Stones
+						},
 					}),
 					petbattle(q(75835, {  -- Do You Even Train?
 						["coord"] = { 45.7, 81.5, ZARALEK_CAVERN },
 					})),
+					q(75660, {	-- Ending Their Watch
+						["coord"] = { 40.4, 68.9, ZARALEK_CAVERN },
+					}),
 					q(74992, {	-- Fire Resistance Gear
 						["coord"] = { 34.0, 41.2, ZARALEK_CAVERN },
 						["g"] = {
@@ -106,6 +112,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75058, {  -- Spearheading Acquisition
 						["coord"] = { 38.3, 63.1, ZARALEK_CAVERN },
 					}),
+					petbattle(q(75680, {  -- To a Land Down Under
+						["coord"] = { 52.3, 65.2, ZARALEK_CAVERN },
+					})),
 					q(74991, {	-- We Have Returned
 						["coord"] = { 34.0, 41.2, ZARALEK_CAVERN },
 						["g"] = {

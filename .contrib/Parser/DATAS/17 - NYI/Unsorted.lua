@@ -195,9 +195,7 @@ root(ROOTS.Unsorted, {
 				i(204087),	-- 10.1 Cloak Test Item
 				i(204736),	-- Heatbound Medallion
 				i(204810),	-- Drogbar Rocks
-				i(204811),	-- Drogbar Stones
 				i(204901),	-- Firecaller's Focus
-				i(204714),	-- Satchel of Healing Spores
 				i(205191),	-- Underlight Globe
 				i(205193),	-- Sturdy Deepflayer Scute
 				i(205194),	-- Fractured Crystalspine Quill
@@ -351,16 +349,10 @@ root(ROOTS.Unsorted, {
 				i(205471),	-- Slimy Deepsea Fin
 				i(205472),	-- Wad of Sparkling Somethings
 				i(205689),	-- Champion's Crystal
-				i(205690),	-- Barter-B-Q
 				i(205691),	-- Hypnotic Murloc Lure
-				i(205692),	-- Stellaviatori Soup
-				i(205693),	-- Latticed Stinkhorn
 				i(205695),	-- Dense Salamanther Skull
-				i(205696),	-- Amethyst Deceiver Mushroom
 				i(205697),	-- Gelatinous Egg Mass
 				i(205699),	-- Rock Worm Frills
-				i(205793),	-- Skitter Souf-fly
-				i(205794),	-- Beetle Juice
 				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
 				i(205866),	-- Rough Coiled Horns
 				i(205867),	-- Steaming Drake Heart
@@ -683,7 +675,6 @@ root(ROOTS.Unsorted, {
 				-- New Stuff
 				i(190921),	-- Ensemble: Wanderer's Snowy Trappings
 				i(190922),	-- Ensemble: Vagabond's Snowy Threads
-				i(191838),	-- Subterranean Magmammoth
 				i(205204),	-- Flaming Shalewing Subject 01
 				i(205313),	-- Brullo's Wristbraces
 				i(205462),	-- Royal Nerubian Capsa

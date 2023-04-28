@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			petbattle(ach(17880, {	-- Battle in Zaralek Cavern
 				crit(1, {	-- To a Land Down Under
-					-- TODO: ["_quests"] = {  },	-- ???
+					["_quests"] = { 75680 },	-- To a Land Down Under
 				}),
 				crit(2, {	-- Are They Not Beautiful?
 					["_quests"] = { 75750 },	-- Are They Not Beautiful?
