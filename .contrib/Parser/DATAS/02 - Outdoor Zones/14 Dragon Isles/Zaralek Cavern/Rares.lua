@@ -90,6 +90,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75334, true),
 					i(205203),	-- Cobalt Shalewing (MOUNT!)
 					i(205292),	-- Karokta's Mane
+					i(205192),	-- Volatile Crystal Shard
 					i(203358),	-- Winding Slitherdrake: Small Finned Tail (DM!)
 				},
 			}),

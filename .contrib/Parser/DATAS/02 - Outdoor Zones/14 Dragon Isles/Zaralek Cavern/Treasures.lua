@@ -62,10 +62,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			--	["coord"] = { 36.7, 48.8, ZARALEK_CAVERN },
 			--	["questID"] = ,
 			--}),
-			--o(x, {	-- Well-Chewed Chest [Locked Need Scorching Key]
-			--	["coord"] = { 29.8, 40.6, ZARALEK_CAVERN },
-			--	["questID"] = ,
-			--}),
+
+			o(386080, {    -- Scorching Key -- Not a treasure on its own but is needed for Well-Chewed Chest. Requires the story up until Sabellian/Wrathion/Ebyssian enters the Zaqali Caldera.
+				-- TODO: ["questID"] = ,
+				["coord"] = { 30.1, 40.8, ZARALEK_CAVERN },
+				["g"] = {
+					i(202869),    -- Scorching Key
+				}
+			}),
+			o(386079, {    -- Well-Chewed Chest
+				["questID"] = 73395,
+				["coord"] = { 29.7, 40.6, ZARALEK_CAVERN },
+				["description"] = "Loot the key under the massive corehound's head, then use it to open the chest",
+			}),
 
 
 			o(388896, {	-- Crystal-encased Chest

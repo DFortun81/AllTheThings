@@ -23,6 +23,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204790),	-- Strong Sniffin' Soup Niffen
 				},
 			}),
+			n(204860, {  -- Lyssa
+				["coord"] = { 56.8, 56.4, ZARALEK_CAVERN },
+				["g"] = {
+					i(204728),  -- Friendship Censer
+					i(205936),  -- New Niffen No-Sniffin' Tonic
+				},
+			}),
 			n(203615, {	-- Saccratros
 				["coord"] = { 55.9, 55.4, ZARALEK_CAVERN },
 				["g"] = {

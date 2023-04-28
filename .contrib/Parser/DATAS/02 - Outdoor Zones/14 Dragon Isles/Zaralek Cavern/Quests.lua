@@ -548,6 +548,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(203708),	-- Conch Whistle
 				},
 			}),
+			q(74517, {  -- All Terrain Snail
+				["sourceQuests"] = { 74787 },  -- Come Snail Away
+				["provider"] = { "n", 201752 },  -- Briggul
+				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
+				-- TODO: ["isWeekly"] = true,	-- Not permanently collectible, figure out what the deal is
+			}),
+			q(74516, {  -- A Snail's Pace
+				["sourceQuests"] = { 74787 },  -- Come Snail Away
+				["provider"] = {"n", 201752 },	-- Briggul
+				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
+			}),
 			q(74520, {	-- Less Cargo
 				["sourceQuests"] = { 74787 },	-- Come Snail Away
 				["provider"] = { "n", 201752 },	-- Briggul

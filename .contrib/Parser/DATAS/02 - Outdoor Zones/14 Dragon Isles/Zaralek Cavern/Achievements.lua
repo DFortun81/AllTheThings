@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 				}),
 				crit(4, {	-- Do you Even Train?
-					-- TODO: ["_quests"] = {  },	-- ???
+					["_quests"] = { 75835 },	-- Do you Even Train?
 				}),
 			})),
 			ach(18100, {	-- Cavern Clawbbering
@@ -521,7 +521,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					-- ["_quests"] = { 49341 }, -- this is wrong
 				}),
 				crit(10, {	-- Well-Chewed Chest
-					-- TODO: ["_quests"] = {  },
+					["_quests"] = { 73395 },
 				}),
 			}),
 			pvp(ach(17851)),	-- Tour of Duty: Zaralek Cavern

@@ -199,7 +199,6 @@ root(ROOTS.Unsorted, {
 				i(204901),	-- Firecaller's Focus
 				i(204714),	-- Satchel of Healing Spores
 				i(205191),	-- Underlight Globe
-				i(205192),	-- Volatile Crystal Shard
 				i(205193),	-- Sturdy Deepflayer Scute
 				i(205194),	-- Fractured Crystalspine Quill
 				i(205195),	-- Drakeforged Magma Charm
