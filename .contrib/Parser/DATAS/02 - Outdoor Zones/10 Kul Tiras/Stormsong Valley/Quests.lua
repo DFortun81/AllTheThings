@@ -414,10 +414,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50622, {	-- Deal's Off
-				--	according to wowhead you can pick this up from two separate NPCs.  i had done the goldfield's war/golden fields forever quests already, before finishing the chain that ends with 'farming stimulator,' so you might be able to pick it up from either 'farmer' depending on which of these chains you finish second.  the quest text says 'there's only one farm left,' so it'd make sense writing-wise if you had to complete the other two farms first.
 				["sourceQuests"] = {
 					50136,	-- Farming Stimulator
-				--	50088,	-- Golden Fields Forever (possibly required)
+					50088,	-- Golden Fields Forever
 				},
 				["provider"] = { "n", 132118 },	-- Farmer Burton
 				["coord"] = { 51.6, 66.0, STORMSONG_VALLEY },
