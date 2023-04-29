@@ -97,6 +97,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 201517 },	-- Voxarian
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
 				}),
+				q(74282, {	-- Authentic Authorization
+					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["provider"] = { "n", 201180 },	-- Sealed Letter to Neltharion
+					["isWeekly"] = true,
+					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(203381),	-- Sealed Letter to Neltharion
+					},
+				}),
 				q(74983, {	-- Authentic Authorization
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 201180 },	-- Cataloger Wulferd
@@ -133,10 +142,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 74795 },	-- An Odd Round Object
 					["provider"] = { "n", 201564 },	-- Voraxian
 					["coord"] = {85.5, 35, OHNAHRAN_PLAINS },
-				}),
-				q(74282, {	-- Authentic Authorization
-					["provider"] = { "i", 203381 },	-- Sealed Letter to Neltharion
-					["isWeekly"] = true,
 				}),
 				q(74293, {	-- Not Forgotten
 					["sourceQuests"] = { 72953 },	-- Zskera Vault: Az
@@ -1254,6 +1259,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { 
 		q(75070),	-- On Primordial Earth Cache 389902
 
 		qNYI(75007),	-- ???
+		q(74970),	-- During 'Verbal Archaeology' (questID 74447)
 		q(74971),	-- During 'Second Time Is The Charm' (questID 74493)
 		q(74997),	-- During 'A Difficult Legacy' (questID 74996)
 		q(74998),	-- During 'A Difficult Legacy' (questID 74996)

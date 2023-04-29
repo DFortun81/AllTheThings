@@ -1230,7 +1230,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(50796, {	-- SKREEEEE! (#2)
-				["sourceQuests"] = { 50798 },	-- Out on a Limb
+				["sourceQuests"] = { 50402 },	-- SKREEEEE!
 				["provider"] = { "n", 135279 },	-- Kua'fon
 				["isDaily"] = true,
 				["coord"] = { 70.7, 50.8, ZULDAZAR },

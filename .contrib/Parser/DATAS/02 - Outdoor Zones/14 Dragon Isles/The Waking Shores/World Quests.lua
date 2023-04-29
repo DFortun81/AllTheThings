@@ -26,6 +26,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				q(67010, {	-- Boiling Over
 					["coord"] = { 48.9, 45.9, THE_WAKING_SHORES },
 				}),
+				q(70782, {	-- Canopy Banners
+					["coord"] = { 25.7, 78.9, THE_WAKING_SHORES },
+				}),
 				q(67062, {	-- Cascading Conflict
 					["coord"] = { 48.0, 52.2, THE_WAKING_SHORES },
 				}),

@@ -655,6 +655,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 				["sourceQuests"] = { 71152 },	-- Back to the Main Hall
 				["provider"] = { "n", 192820 },	-- Toddy Whiskers
 				["coord"] = { 55.1, 56.2, THALDRASZUS },
+				["g"] = {
+					i(192768),	-- Titan Disk
+				},
 			}),
 			q(66547, {	-- It Belongs in a Museum... Eventually
 				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24

@@ -905,7 +905,6 @@ root(ROOTS.Unsorted, {
 				q(74789),	--
 				q(74890),	--
 				q(74891),	--
-				q(74970),	--
 				q(74994),	--
 				-- 10.0.7.47983
 				q(75034),	--
@@ -1087,7 +1086,6 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				i(201990),	-- Primal Mote
 				i(202035),	-- Self-Heating Rations
-				i(202096),	-- Armaments of the Scale
 				i(202112),	-- Crystal Shattering Armaments
 				i(202310),	-- Defective Doomsday Device
 				i(202691),	-- Henry's Handbag
@@ -1164,7 +1162,6 @@ root(ROOTS.Unsorted, {
 				--
 				i(123868),	-- Relic of Shakama
 				i(192744),	-- Rymek's Gift
-				i(192768),	-- Titan Disc
 				--
 				i(199798),	-- Makko's Journal - Page Seven
 			}),
@@ -2142,7 +2139,6 @@ root(ROOTS.Unsorted, {
 				q(70733),	-- Djaradin War Party
 				q(70742),	-- Runs in the Family
 				-- 10.0.0.45141
-				q(70782),	--
 				q(70787),	-- Caught In a Dusk Storm
 				q(70811),	-- Expert Excavation Tools
 				q(70816),	-- Treasure Tracking Techniques

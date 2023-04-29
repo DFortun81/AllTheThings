@@ -2155,6 +2155,7 @@ _.ObjectNames = {
 	[327170] = "Weapon Rack",
 	[327230] = "Jelly Deposit",
 	[327407] = "Precious Ogre Stash",
+	[327516] = "Jelly Deposit",
 	[327548] = "Powerpack Blueprints",
 	[327585] = "Bounty Board",
 	[327591] = "Preserved Journal",
