@@ -13,7 +13,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(54847, {	-- Lil' XT
 				["description"] = "Amazon Prime Gaming reward from April 27th 2023 till May 25th 2023.",
-				["timeline"] = { "added 10.0.7" },
+				["timeline"] = { "added 10.0.7", "removed 10.1.0.99999" },
 			}),
 		},
 	}),
