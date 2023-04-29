@@ -760,7 +760,6 @@ root(ROOTS.Unsorted, {
 				i(206262),	-- Scalewarden's Crusher
 				i(206263),	-- Scalewarden's Scepter
 				i(206265),	-- Scalewarden's Sabre
-				i(206267),	-- Obsidian Legend's Pennant
 				i(206270),	-- Volcanic Equipment Chest
 				i(206271),	-- Malicia's Hoard
 			}),

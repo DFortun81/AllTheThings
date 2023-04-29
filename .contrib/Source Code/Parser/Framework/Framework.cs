@@ -108,7 +108,7 @@ namespace ATT
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
             { "SHADOWLANDS", new int[] { 9, 2, 7, 45745 } },
-            { "DF", new int[] { 10, 0, 7, 48676 } },
+            { "DF", new int[] { 10, 0, 7, 49343 } },
         };
 
         public static string CURRENT_RELEASE_PHASE_NAME =
@@ -1779,7 +1779,7 @@ namespace ATT
                     // Deleted
                     case 4:
                         data["u"] = 2;
-                        return false;
+                        break;
                     // Removed From Game
                     case 2:
                         data["u"] = 2;

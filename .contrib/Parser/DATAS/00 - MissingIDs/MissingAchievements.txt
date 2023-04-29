@@ -148,12 +148,8 @@ ach(17837),	-- Whelpling's Shadowflame Crest Fragments earned
 ach(17838),	-- Drake's Shadowflame Crest Fragments earned
 ach(17839),	-- Wyrm's Shadowflame Crest Fragments earned
 ach(17840),	-- Aspect's Shadowflame Crest Fragments earned
-ach(17852),	-- Elemental Conjuror
 10.1.0.48776
 ach(17878),	-- Me Want Bite \\ The Forbidden Flounder
-ach(17977),	-- Stones Can Try To Fly!
-ach(17978),	-- Stones Can Fly!
-ach(18027),	-- Dragonflight Season 2 Master
 ach(18129),	-- <DNT> Loamm Niffen Rank 01 (Character)
 ach(18130),	-- <DNT> Loamm Niffen Rank 02 (Character)
 ach(18131),	-- <DNT> Loamm Niffen Rank 03 (Character)
@@ -233,5 +229,3 @@ ach(18248),	-- <DNT> Niffen Cave Dive - Completed At Least Once - Tutorial Objec
 ach(18258),	-- Little Lord of Lies
 10.1.0.49092
 ach(18359),	-- <Hidden> Account has completed 10.1 Upgrade System tutorial quests
-10.1.0.49255
-ach(18380),	-- Dragonflight Season 2 Hero
