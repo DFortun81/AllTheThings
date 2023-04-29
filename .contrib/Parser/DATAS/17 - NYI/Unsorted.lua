@@ -914,7 +914,6 @@ root(ROOTS.Unsorted, {
 				q(75202),	--
 				q(75224),	--
 				q(75236),	--
-				q(75237),	-- Reach West	 PTR:Reach North
 				q(75246),	--
 				q(75247),	--
 				q(75248),	--

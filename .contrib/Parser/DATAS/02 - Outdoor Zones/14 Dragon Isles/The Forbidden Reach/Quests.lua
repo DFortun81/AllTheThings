@@ -233,6 +233,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
+			q(75237, {	-- Reach West
+				["sourceQuests"] = { 74911 },	-- New Horizons
+				["sourceQuestNumRequired"] = 0,
+				["provider"] = { "n", 200563 },	-- Kraxxus
+				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+				["isDaily"] = true,
+			}),
 			n(BONUS_OBJECTIVES, {
 				q(74377, {	-- Capsize a Crab
 					["coord"] = { 37.4, 81.7, THE_FORBIDDEN_REACH },
