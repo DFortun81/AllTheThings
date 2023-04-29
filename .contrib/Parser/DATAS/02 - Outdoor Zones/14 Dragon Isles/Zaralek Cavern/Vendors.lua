@@ -18,7 +18,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					i(204729),	-- Freshly Squeezed Mosswater
 					i(204730),	-- Grub Grub
-					i(205936),	-- New Niffen No-Sniffin' Tonic
 					i(204791),	-- Squishy Snack
 					i(204790),	-- Strong Sniffin' Soup Niffen
 				},
@@ -26,8 +25,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(204860, {  -- Lyssa
 				["coord"] = { 56.8, 56.4, ZARALEK_CAVERN },
 				["g"] = {
-					i(204728),  -- Friendship Censer
-					i(205936),  -- New Niffen No-Sniffin' Tonic
+					i(204728),	-- Friendship Censer
+					i(205936),	-- New Niffen No-Sniffin' Tonic (TOY!)
 				},
 			}),
 			n(203615, {	-- Saccratros

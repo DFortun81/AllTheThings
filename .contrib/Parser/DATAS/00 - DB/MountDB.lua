@@ -1551,7 +1551,6 @@ i(192774, 374097);	-- [PH] Water Salamander Pink	/	[PH] Water Salamander Pink
 i(0, 387948);		-- [PH] Wind Proto-Drake
 i(192748, 373913);	-- PH Moose Bull Brown			/	[PH] Moose Bull Brown
 i(192751, 373967);	-- PH Moose Bull Dark			/	[PH] Moose Bull Dark
-i(191838, 371176);	-- PH Lava Mammoth Blue			/	[PH] Blue Lava Mammoth
 i(192807, 374278);	-- PH Lava Mammoth Yellow		/	PH Lava Mammoth Yellow
 i(192781, 374140);	-- PH Lava Slug Blue			/	[PH] Lava Slug Blue
 i(192778, 350220);	-- PH Lava Slug Orange			/	[PH] Lava Slug Orange
@@ -1608,22 +1607,22 @@ i(204091, 400733);	-- Rocket Shredder 9001
 ------------------
 -- PATCH 10.1.0 --
 ------------------
+i(205155, 408313);	-- Big Slick in the City
 i(205209, 408653);	-- Boulder Hauler
+i(205204, 408651);	-- Cataloged Shalewing
 i(205203, 408647);	-- Cobalt Shalewing
+i(206027, 411565);	-- Felcrystal Scorpion
 i(205197, 408627);	-- Igneous Shalewing
 i(204798, 406637);	-- Inferno Armoredon
 i(205207, 408655);	-- Morsel Sniffer
 i(205233, 408977);	-- Obsidian Gladiator's Slitherdrake
+i(192779, 374138);	-- Seething Slug
 i(205205, 408649);	-- Shadowflame Shalewing
+i(191838, 371176);	-- Subterranean Magmammoth
 i(205246, 409034);	-- Vicious War Snail [A]
 i(205245, 409032);	-- Vicious War Snail [H]
 i(204361, 368893);	-- Winding Slitherdrake
--- Unsorted --
-i(205155, 408313);	-- Big Slick in the City
-i(206027, 411565);	-- Felcrystal Scorpion
-i(192779, 374138);	-- Seething Slug
 -- Not Attached
-i(0, 205204);	-- Flaming Shalewing - Subject  01
 i(0, 205206);	-- Sporebat, Fire (Yellow) [PH]
 i(0, 205208);	-- Sporebat, Stone (Orange) [PH]
 

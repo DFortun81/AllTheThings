@@ -2,7 +2,8 @@
 ## Interface: 100007
 ## X-Curse-Project-ID: 267285
 ## X-Wago-ID: yQKyY5K7
-## Title: AllTheThings |TInterface\Addons\AllTheThings\assets\logo_32x32:0|t
+## Title: AllTheThings
+## IconTexture: Interface/Addons/AllTheThings/assets/logo_32x32
 ## Name: AllTheThings
 ## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsArtifactsItems, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter

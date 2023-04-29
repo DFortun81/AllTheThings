@@ -346,6 +346,8 @@ r(65245),	-- Glyph of Survival Instincts
 r(67600),	-- Glyph of Claw
 r(71015),	-- Glyph of Rapid Rejuvenation
 r(71102),	-- Glyph of Quick Decay
+3.4.2.49311
+r(405005),	-- Glyph of Reckoning
 4.0.1.12911
 r(89815),	-- 
 4.3.4.15595
@@ -506,10 +508,11 @@ r(382989),	-- Cataclysm Milling
 r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
-10.1.0.48480
-r(408218),	-- Deciphering \\ Winding Slitherdrake: Blue and Silver Armor
-r(408220),	-- Deciphering \\ Winding Slitherdrake: Yellow and Silver Armor
-r(408222),	-- Deciphering \\ Winding Slitherdrake: Curved Chin Horn
 
 
-Nothing is Missing in InscriptionItemDB.lua! Good Work!
+
+
+Missing in InscriptionItemDB.lua
+
+3.4.2.49311
+r(405005),	-- Glyph of Reckoning

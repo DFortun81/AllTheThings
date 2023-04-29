@@ -1,22 +1,5 @@
-10.1.0.48480
-i(204389),	-- Stone Breaker
-i(204818),	-- Mallard Mortar \\ Quackomancy Cannon
-i(205045),	-- B.B.F. Fist
-10.1.0.48537
-i(205255),	-- Niffen Diggin' Mitts \\ Niffen Diggin' Mits
 10.1.0.48661
-i(205027),	-- Explorer's Banner \\ Explorer's Banner of Comradery
-i(205418),	-- Blazing Shadowflame Cinder
 i(205419),	-- Jrumm's Drum
-i(205463),	-- Skornak's Lava Ball \\ Skornace's Lava Ball \\ Skornace's Molten Pocket
-10.1.0.48776
-i(205688),	-- Glutinous Glitterscale Glob
-i(205796),	-- Molten Lava Pack
-i(205904),	-- Vibrant Clacking Claw
-10.1.0.48898
-i(205963),	-- Sniffin' Salts
-i(206038),	-- Flamin' Ring of Flashiness
-i(206043),	-- Fyrakk's Frenzy
 10.1.0.49092
 i(206008),	-- Nightmare Banner
 i(206267),	-- Obsidian Legend's Pennant

@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			},
 			["g"] = {
 				n(ACHIEVEMENTS, {
-					ach(18284, {	-- A Mole's Best Friend
+					ach(18284, {	-- A Niffen's Best Buddy
 						["sym"] = {{"meta_achievement",
 							18257,	-- Can You Dig It?
 							18271,	-- He'sSss All Mine
@@ -19,6 +19,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17832,	-- Sniffen Around
 							17833,	-- Sniffen Sage
 						}},
+						["g"] = {
+							title(507),	-- <Name>, Sniffenseeker
+						},
 					}),
 					ach(18257),	-- Can You Dig It?
 					ach(18271),	-- He'sSss All Mine

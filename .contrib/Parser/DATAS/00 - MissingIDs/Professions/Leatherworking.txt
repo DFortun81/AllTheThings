@@ -182,9 +182,6 @@ r(309292),	-- Bonerivetted Waistguard \\ Necrolord Scale Waistguard
 r(309293),	-- Bonerivetted Armguards \\ Necrolord Scale Armguards
 9.0.1.35167
 r(338261),	-- Almost Thing
-10.1.0.48661
-r(409555),	-- Lustrous Scaled Drums
-r(409557),	-- Hide-Bound Drums
 
 
 

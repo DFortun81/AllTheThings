@@ -3053,6 +3053,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71966),	-- First Overload Primal Node
 			q(72346),	-- First Serevite Seam
 			q(72347),	-- First Draconium Seam
+			q(75139 , {["timeline"] = {ADDED_10_1_0}}),	-- First Metamorphic Serevite Deposit
+
 			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
 		}),

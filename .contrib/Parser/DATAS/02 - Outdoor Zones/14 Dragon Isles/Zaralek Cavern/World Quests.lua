@@ -7,6 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			["sourceQuests"] = {
 				71232,	-- Renown of the Dragon Isles
 				DF_ACCOUNT_CAMPAIGN_QUEST,
+				75145,	-- In the Wake of the Ashes
 			},
 			["g"] = {
 				n(QUESTS, sharedData({ ["isWorldQuest"] = true, }, {
@@ -33,6 +34,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75062, {  -- Crystalline Conundrum
 						["coord"] = { 56.9, 63.7, ZARALEK_CAVERN },
+					}),
+					q(75346, {	-- Data Gathering
+						["coord"] = { 60.5, 69.4, ZARALEK_CAVERN },
+					}),
+					q(75200, {	-- Deepflayer Slayer
+						["coord"] = { 60.8, 39.6, ZARALEK_CAVERN },
 					}),
 					q(74292, {	-- Deephollow Mysteries
 						["coord"] = { 60.9, 53.8, ZARALEK_CAVERN },

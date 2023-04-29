@@ -1265,9 +1265,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				e(2520, {	-- Scalecommander Sarkareth
 					["crs"] = { 203284 },	-- Scalecommander Sarkareth
 					["g"] = {
-						ach(18159),	-- Mythic: Scalecommander Sarkareth
+						ach(18159, {	-- Mythic: Scalecommander Sarkareth
+							title(505),	-- <Name>, Heir to the Void
+						}),
 						ach(18176, bubbleDownSelf({["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {	-- Hall of Fame: Scalecommander Sarkareth
-							--title(),	--
+							title(506),	-- <Name>, Famed Slayer of Sarkareth
 						})),
 						ach(18254, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Cutting Edge: Scalecommander Sarkareth
 						i(203963),	-- Beacon to the Beyond

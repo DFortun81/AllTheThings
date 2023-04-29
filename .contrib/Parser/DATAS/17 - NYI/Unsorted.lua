@@ -377,10 +377,6 @@ root(ROOTS.Unsorted, {
 				i(206037),	-- Ruby Flightstone
 			}),
 			filter(MOUNTS, {
-				i(205155),	-- Big Slick in the City (MOUNT!)
-				i(192779),	-- Seething Slug (MOUNT!)
-				-- Not Attached --
-				i(205204),	-- Flaming Shalewing - Subject  01 (MOUNT!)
 				i(205206),	-- Sporebat, Fire (Yellow) [PH] (MOUNT!)
 				i(205208),	-- Sporebat, Stone (Orange) [PH] (MOUNT!)
 			}),
@@ -537,7 +533,6 @@ root(ROOTS.Unsorted, {
 				i(204327),	-- Titan Machine Part
 				i(204329),	-- Petrified Spider Leg
 				i(204331),	-- Djaradin Pillar Shard
-				i(204345),	-- Note to Disposal Site
 				i(204347),	-- Pool Contaminant
 				i(204349),	-- Bigger Wrench
 				i(204351),	-- Animated Crystal Shard
@@ -650,9 +645,6 @@ root(ROOTS.Unsorted, {
 				i(205373),	-- Researcher's Scrounged Goods
 				i(205374),	-- Thankful Researcher's Scrounged Goods
 				i(205454),	-- Researchers Wheel Barrow
-				-- WQ
-				i(205423),	-- Shadowflame Residue Sack
-				i(205682),	-- Large Shadowflame Residue Sack
 				-- Achievement
 				i(205684),	-- Forbidden Flounder
 				i(205686),	-- Clacking Claw
@@ -667,7 +659,7 @@ root(ROOTS.Unsorted, {
 				i(206004),	-- Enmity Cloak
 				i(206005),	-- Wirt's Leg
 				i(206007),	-- Treasure Nabbin' Bag
-				i(206008),	-- Nightmare Banner
+				i(206008),	-- Nightmare Banner (TOY!)
 				i(206020),	-- Enmity Hood
 				i(206026),	-- Ensemble: Enmity Hood and Cloak
 				i(206028),	-- Chest of Gold
@@ -675,7 +667,6 @@ root(ROOTS.Unsorted, {
 				-- New Stuff
 				i(190921),	-- Ensemble: Wanderer's Snowy Trappings
 				i(190922),	-- Ensemble: Vagabond's Snowy Threads
-				i(205204),	-- Flaming Shalewing Subject 01
 				i(205313),	-- Brullo's Wristbraces
 				i(205462),	-- Royal Nerubian Capsa
 				i(206044),	-- Obsidian Gladiator's Axe

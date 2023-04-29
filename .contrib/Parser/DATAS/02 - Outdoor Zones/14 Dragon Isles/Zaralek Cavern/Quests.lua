@@ -489,142 +489,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 56.9, 55.6, ZARALEK_CAVERN },
 				}),
 			}),
-				-- 3 --
-			q(75641, {	-- The Power of the Whole
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				["provider"] = { "n", 204509 },	-- Examiner Tae'shara Bloodwatcher
-				["coord"] = { 56.8, 54.8, ZARALEK_CAVERN },
-				["g"] = {
-					i(204717),	-- Splintered Spark of Shadowflame
-				},
-			}),
-				-- 4 --
-			q(75232, {	-- Fallen Effects
-				--["sourceQuests"] = {  },
-				["provider"] = { "i", 204642 },	-- Sheridon Hastle's Effects
-				["coord"] = { 42.9, 60.3, ZARALEK_CAVERN },
-			}),
-
-				-- Glimrogg Stuff ------
-			q(73707, {	-- TICKET: Glimmerogg Games
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
-				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-				["isBreadcrumb"] = true,
-			}),
-			q(73709, {	-- Favor on the Side
-				["sourceQuests"] = { 73707 },	-- TICKET: Glimmerogg Games
-				["provider"] = { "n", 201098 },	-- Brogg the Beast
-				["coord"] = { 43.7, 82.9, ZARALEK_CAVERN },
-			}),
-			q(73708, {	-- Pay to Play
-				["sourceQuests"] = { 73707 },	-- TICKET: Glimmerogg Games
-				["provider"] = { "n", 201098 },	-- Brogg the Beast
-				["coord"] = { 43.7, 82.9, ZARALEK_CAVERN },
-			}),
-			q(73710, {	-- Rock By Rock
-				["sourceQuests"] = {
-					73709,	-- Favor on the Side
-					73708,	-- Pay to Play
-				},
-				["provider"] = { "n", 201100 },	-- Storul Heavystone
-				["coord"] = { 44.9, 83.2, ZARALEK_CAVERN },
-			}),
-			q(73711, {	-- Marked Champion
-				["sourceQuests"] = { 73710 },	-- Rock By Rock
-				["provider"] = { "n", 201100 },	-- Storul Heavystone
-				["coord"] = { 44.9, 83.2, ZARALEK_CAVERN },
-				["g"] = {
-					i(205251),	-- Champion's Rock Bar
-				},
-			}),
-
-				-- 6 --
-			q(74787, {	-- Come Snail Away
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				["provider"] = { "n", 201752 },	-- Briggul
-				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-				["g"] = {
-					i(203708),	-- Conch Whistle
-				},
-			}),
-			q(74517, {  -- All Terrain Snail
-				["sourceQuests"] = { 74787 },  -- Come Snail Away
-				["provider"] = { "n", 201752 },  -- Briggul
-				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
-				-- TODO: ["isWeekly"] = true,	-- Not permanently collectible, figure out what the deal is
-			}),
-			q(74516, {  -- A Snail's Pace
-				["sourceQuests"] = { 74787 },  -- Come Snail Away
-				["provider"] = {"n", 201752 },	-- Briggul
-				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
-			}),
-			q(74520, {	-- Less Cargo
-				["sourceQuests"] = { 74787 },	-- Come Snail Away
-				["provider"] = { "n", 201752 },	-- Briggul
-				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-			}),
-			q(74786, {	-- Shimmershell Snail [Need Level 25 Shimmershell Snail Battle Pet]
-				["sourceQuests"] = { 74787 },	-- Come Snail Away
-				["provider"] = { "n", 201752 },	-- Briggul
-				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-			}),
-			q(74519, {	-- Good for Goo
-				["sourceQuests"] = {
-					74520,	-- Less Cargo
-					74786,	-- Shimmershell Snail
-				},
-				["provider"] = { "n", 201752 },	-- Briggul
-				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-			}),
-			q(74518, {	-- Resistance Training
-				["sourceQuests"] = { 74519 },	-- Good for Goo
-				["provider"] = { "n", 201752 },	-- Briggul
-				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-			}),
-			q(74515, {	-- Snail Mail
-				["sourceQuests"] = { 74787 },  -- Come Snail Away
-				["provider"] = { "n", 201752 },  -- Briggul
-				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
-			}),
-
-				-- 7 --
-			q(75233, {	-- Flesh to Bone
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				["provider"] = { "n", 203378 },	-- Gorgul
-				["coord"] = { 43.2, 84.1, ZARALEK_CAVERN },
-			}),
-
-			-- Snail Race Questline (One New Quest Per Week?) --
-			q(75662, {	-- A Race To The Finish
-				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				["provider"] = { "n", 201099 },	-- Gorgul
-				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
-				["g"] = {
-					i(205119),	-- Bashful (PET!)
-				},
-			}),
-			q(75707, {	-- A Race To The Finish [Unflagged later??]
-				["sourceQuests"] = { 75662 },	-- A Race To The Finish
-				["provider"] = { "n", 201099 },	-- Gorgul
-				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
-				["g"] = {
-					i(205123),	-- Brulee (PET!)
-				},
-			}),
-			-- TODO: q(, {	-- A Race To The Finish
-			-- 	["sourceQuests"] = {  },	--
-			-- 	["provider"] = { "n", 201099 },	-- Gorgul
-			-- 	["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
-			-- 	["g"] = {
-			-- 		i(205121),	-- Tricky (PET!)
-			-- 	},
-			-- }),
-
-
-				-- Complete Stuff Below --
-
-
 				-- Teaches New System --
 			q(72658, {	-- Flightstones
 				["sourceQuests"] = { 76101 },	-- Tougher Down Under
@@ -650,6 +514,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					i(202171),	-- Obsidian Flightstone
 					i(204075),	-- Whelpling's Shadowflame Crest Fragment
+				},
+			}),
+			q(75641, {	-- The Power of the Whole
+				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["provider"] = { "n", 204509 },	-- Examiner Tae'shara Bloodwatcher
+				["coord"] = { 56.8, 54.8, ZARALEK_CAVERN },
+				["g"] = {
+					i(204717),	-- Splintered Spark of Shadowflame
 				},
 			}),
 
@@ -753,6 +625,40 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 
+				-- Glimmerogg Questline --
+			q(73707, {	-- TICKET: Glimmerogg Games
+				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
+				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
+				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
+				["isBreadcrumb"] = true,
+			}),
+			q(73709, {	-- Favor on the Side
+				["sourceQuests"] = { 73707 },	-- TICKET: Glimmerogg Games
+				["provider"] = { "n", 201098 },	-- Brogg the Beast
+				["coord"] = { 43.7, 82.9, ZARALEK_CAVERN },
+			}),
+			q(73708, {	-- Pay to Play
+				["sourceQuests"] = { 73707 },	-- TICKET: Glimmerogg Games
+				["provider"] = { "n", 201098 },	-- Brogg the Beast
+				["coord"] = { 43.7, 82.9, ZARALEK_CAVERN },
+			}),
+			q(73710, {	-- Rock By Rock
+				["sourceQuests"] = {
+					73709,	-- Favor on the Side
+					73708,	-- Pay to Play
+				},
+				["provider"] = { "n", 201100 },	-- Storul Heavystone
+				["coord"] = { 44.9, 83.2, ZARALEK_CAVERN },
+			}),
+			q(73711, {	-- Marked Champion
+				["sourceQuests"] = { 73710 },	-- Rock By Rock
+				["provider"] = { "n", 201100 },	-- Storul Heavystone
+				["coord"] = { 44.9, 83.2, ZARALEK_CAVERN },
+				["g"] = {
+					i(205251),	-- Champion's Rock Bar
+				},
+			}),
+
 				-- Dragonscale Expedition Side Questline --
 			q(73037, {	-- Healing Crystals
 				["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
@@ -813,6 +719,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 40.1, 68.3, ZARALEK_CAVERN },
 				["g"] = {
 					i(204334),	-- Waste Disposal Notes
+					i(204345),	-- Note to Disposal Site
 				},
 			}),
 			q(73043, {	-- A Ghastly Legacy
@@ -845,12 +752,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205254),	-- Honoary Explorer's Compass
 				},
 			}),
+
+				-- Misc --
+			q(75232, {	-- Fallen Effects
+				--["sourceQuests"] = {  },
+				["provider"] = { "i", 204642 },	-- Sheridon Hastle's Effects
+				["coord"] = { 42.9, 60.3, ZARALEK_CAVERN },
+			}),
 		}),
 	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(ZARALEK_CAVERN, {
+		--q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during quest 72873 "It Was Not Enough"?
+
+
 		q(75658),	-- WQ Unlock?
 		--
 		q(75511),	-- Tracking Quest (that's the name)
@@ -861,7 +778,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(76013),	-- after turn in [72930]
 		--q(75706),	-- Some Tracker vid Glimrogg
 		--q(75708),	-- Some Tracker vid Glimrogg / Snail Treats for Corry?
-		--q(75710),	-- Some Tracker vid Glimrogg
+
+
+		--q(75710),	-- Some Tracker vid Glimrogg / First Time?
 		--
 		-- Talk to npc during Respite (73041)
 		q(75425),    -- Tellywin Sharpfizzle

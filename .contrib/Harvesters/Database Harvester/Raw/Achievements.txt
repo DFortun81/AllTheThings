@@ -2739,6 +2739,13 @@
 3.4.1.48120
 3.4.1.48340
 3.4.1.48503
+3.4.2.49311
+17415@@@Rival: Season 6
+17416@@@Gladiator: Season 6
+17417@@@Duelist: Season 6
+17418@@@Challenger: Season 6
+18375@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
+18376@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 4.0.1.12911
 736@@@Explore Mulgore NYI
 750@@@Explore Northern Barrens

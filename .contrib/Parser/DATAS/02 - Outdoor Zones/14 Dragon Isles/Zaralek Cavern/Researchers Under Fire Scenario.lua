@@ -3,11 +3,13 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
-		n(RESEARCHERS, {
+		header(HEADERS.Quest, 74906, {	-- Researchers Under Fire
 			n(ACHIEVEMENTS, {
 				ach(18174),	-- Contaminant Cleaner
 				ach(18199),	-- Zaqali Ritual Buster
-				ach(18200),	-- Cooling the Research Field
+				ach(18200, {	-- Cooling the Research Field
+					title(508),	-- Field Researcher <Name>
+				}),
 				ach(18201),	-- Lockdown Mystery
 				ach(18202),	-- Rockin Research
 				ach(18203),	-- A Research Sampler
@@ -28,6 +30,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			n(ZONE_DROPS, {
 				i(205026),	-- Devourer Lobstrok (PET!)
+			}),
+			n(REWARDS, {
+				i(205204),	-- Cataloged Shalewing (MOUNT!)
 			}),
 		}),
 	}),

@@ -556,9 +556,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(192751, {	-- PH Moose Bull Dark / [PH] Moose Bull Dark (MOUNT!)
 					--["modelID"] = ,
 				}),
-				i(191838, {	-- PH Blue Lava Mammoth / [PH] Blue Lava Mammoth (MOUNT!)
-					--["modelID"] = ,
-				}),
 				i(192807, {	-- PH Lava Mammoth Yellow / PH Lava Mammoth Yellow (MOUNT!)
 					--["modelID"] = ,
 				}),
