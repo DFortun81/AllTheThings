@@ -1231,7 +1231,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					50354,	-- Look Out!
 				},
 				["provider"] = { "o", 282478 },	-- Empty Crate
-				["coord"] = { 46.7, 73.8, STORMSONG_VALLEY },
+				["coord"] = { 46.3, 77.0, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50162, {	-- Sticky Situation
