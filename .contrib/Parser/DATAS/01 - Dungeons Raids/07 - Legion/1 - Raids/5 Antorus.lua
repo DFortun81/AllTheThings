@@ -25,6 +25,51 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["lvl"] = { 45 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(11988, {    -- Light's Breach
+                    crit(1, {    -- Garothi Worldbreaker
+                        ["_encounter"] = { 1992, LFR_RAID },
+                    }),
+                    crit(2, {    -- Felhounds of Sargeras
+                        ["_encounter"] = { 1987, LFR_RAID },
+                    }),
+                    crit(3, {    -- Antoran High Command
+                        ["_encounter"] = { 1997, LFR_RAID },
+                    }),
+                }),
+				ach(11989, {    -- Hope's End
+                    crit(1, {    -- Eonar the Life-Bender
+                        ["_encounter"] = { 2025, LFR_RAID },
+                    }),
+                    crit(2, {    -- Portal Keeper Hasabel
+                        ["_encounter"] = { 1985, LFR_RAID },
+                    }),
+                    crit(3, {    -- Imonar the Soulhunter
+                        ["_encounter"] = { 2009, LFR_RAID },
+                    }),
+                }),
+				ach(11990, {    -- Forbidden Descent
+                    crit(1, {    -- Kin'garoth
+                        ["_encounter"] = { 2004, LFR_RAID },
+                    }),
+                    crit(2, {    -- Varimathras
+                        ["_encounter"] = { 1983, LFR_RAID },
+                    }),
+                    crit(3, {    -- The Coven of Shivarra
+                        ["_encounter"] = { 1986, LFR_RAID },
+                    }),
+                }),
+				ach(11991, {    -- Seat of the Pantheon
+                    crit(1, {    -- Aggramar
+                        ["_encounter"] = { 1984, LFR_RAID },
+                    }),
+                    crit(2, {    -- Argus the Unmaker
+                        ["_encounter"] = { 2031, LFR_RAID },
+                    }),
+                }),
+				-- TODO: meta-achieve symlink
+				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
+					i(152815),	-- Antoran Glooomhound (MOUNT!)
+				}),
 				ach(12112),	-- Antorus, the Burning Throne Guild Run
 			}),
 			n(QUESTS, {
@@ -135,7 +180,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(152091),	-- Wristguards of the Dark Keepers
 					i(153019),	-- Hulking Demolisher Legplates
 				}),
-				ach(11988, {	-- Light's Breach [Garothi / Hounds / High Command]
+				header(HEADERS.Achievement, 11988, {	-- Light's Breach [Garothi / Hounds / High Command]
 					e(1992, {	-- Garothi Worldbreaker
 						["crs"] = { 122450 },	-- Garothi Worldbreaker
 						["g"] = {
@@ -192,8 +237,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							122333,	-- General Erodus
 						},
 						["g"] = {
-							i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-							i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
+							i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
+							i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
 							i(151985),	-- General Erodus' Tricorne
 							i(152019),	-- Pauldrons of the Eternal Offensive
 							i(152125),	-- Bearmantle Cloak
@@ -223,7 +268,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						},
 					}),
 				}),
-				ach(11989, {	-- Hope's End [Eonar / Hasabel / Imonar]
+				header(HEADERS.Achievement, 11989, {	-- Hope's End [Eonar / Hasabel / Imonar]
 					e(2025, {	-- Eonar the Life-Bender
 						["crs"] = {
 							122500,	-- Essence of Eonar
@@ -259,7 +304,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					e(1985, {	-- Portal Keeper Hasabel
 						["crs"] = { 122104 },	-- Portal Keeper Hasabel
 						["g"] = {
-							i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
+							i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 							i(152001),	-- Nexus Conductor's Headgear
 							i(151965),	-- Vulcanarcore Pendant
 							i(152008),	-- Reality-Splitting Wristguards
@@ -307,7 +352,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						},
 					}),
 				}),
-				ach(11990, {	-- Forbidden Descent [Kin'garoth / Varimathras / Coven]
+				header(HEADERS.Achievement, 11990, {	-- Forbidden Descent [Kin'garoth / Varimathras / Coven]
 					e(2004, {	-- Kin'garoth
 						["crs"] = { 122578 },	-- Kin'garoth
 						["g"] = {
@@ -392,7 +437,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						},
 					}),
 				}),
-				ach(11991, {	-- Seat of the Pantheon [Aggramar / Argus]
+				header(HEADERS.Achievement, 11991, {	-- Seat of the Pantheon [Aggramar / Argus]
 					e(1984, {	-- Aggramar
 						["crs"] = { 121975 },	-- Aggramar
 						["g"] = {
@@ -532,14 +577,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(152091),	-- Wristguards of the Dark Keepers
 					i(153019),	-- Hulking Demolisher Legplates
 				}),
-				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
-					i(152815),	-- Antoran Glooomhound (MOUNT!)
-				}),
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
 					["g"] = {
 						ach(11930),	-- Worm-monger
-						i(151713),	-- Recipe: Empyrial Breastplate (Rank 3)
+						i(151713),	-- Plans: Empyrial Breastplate (Rank 3)
 						i(151943),	-- Crown of Relentless Annihilation
 						i(151988),	-- Shoulderpads of the Demonic Blitz
 						i(151937),	-- Cloak of  the Burning Vanguard
@@ -595,8 +637,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(12129),	-- This is the War Room!
-						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-						i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
+						i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
+						i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -662,7 +704,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
 						ach(11928),	-- Portal Combat
-						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
+						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
 						i(152008),	-- Reality-Splitting Wristguards
@@ -937,14 +979,10 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(152091),	-- Wristguards of the Dark Keepers
 					i(153019),	-- Hulking Demolisher Legplates
 				}),
-				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
-					i(152815),	-- Antoran Glooomhound (MOUNT!)
-				}),
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
 					["g"] = {
-						ach(11930),	-- Worm-monger
-						i(151713),	-- Recipe: Empyrial Breastplate (Rank 3)
+						i(151713),	-- Plans: Empyrial Breastplate (Rank 3)
 						i(151943),	-- Crown of Relentless Annihilation
 						i(151988),	-- Shoulderpads of the Demonic Blitz
 						i(151937),	-- Cloak of  the Burning Vanguard
@@ -968,7 +1006,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						122135,	-- Shatug
 					},
 					["g"] = {
-						ach(12065),	-- Hounds Good To Me
 						i(152816),	-- Antoran Charhound (MOUNT!)
 						i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
 						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
@@ -1000,9 +1037,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						122333,	-- General Erodus
 					},
 					["g"] = {
-						ach(12129),	-- This is the War Room!
-						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-						i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
+						i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
+						i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -1037,7 +1073,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						124445,	-- The Paraxis
 					},
 					["g"] = {
-						ach(12067),	-- Spheres of Influence
 						i(152681),	-- Headdress of Living Brambles
 						i(152013),	-- Helmet of the Hidden Sanctuary
 						i(152124),	-- Bearmantle Harness
@@ -1067,8 +1102,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1985, {	-- Portal Keeper Hasabel
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
-						ach(11928),	-- Portal Combat
-						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
+						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
 						i(152008),	-- Reality-Splitting Wristguards
@@ -1089,7 +1123,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(2009, {	-- Imonar the Soulhunter
 					["crs"] = { 124158 },	-- Imonar the Soulhunter
 					["g"] = {
-						ach(11949),	-- Hard to Kill
 						i(151944),	-- Soulhunter's Cowl
 						i(152416),	-- Shoulderguards of Indomitable Purpose
 						i(151989),	-- Spaulders of the Relentless Tracker
@@ -1119,7 +1152,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(2004, {	-- Kin'garoth
 					["crs"] = { 122578 },	-- Kin'garoth
 					["g"] = {
-						ach(12030),	-- The World Revolves Around Me
 						i(152014),	-- Titan-Subjugator's Visage
 						i(151948),	-- Magma-Spattered Smock
 						i(152280),	-- Scalding Shatterguards
@@ -1149,7 +1181,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1983, {	-- Varimathras
 					["crs"] = { 122366 },	-- Varimathras
 					["g"] = {
-						ach(11948),	-- Together We Stand
 						i(151966),	-- Riveted Choker of Delirium
 						i(151995),	-- Robes of the Forsaken Dreadlord
 						i(151979),	-- Vest of Unfathomable Anguish
@@ -1174,7 +1205,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						122468,	-- Noura, Mother of Flames
 					},
 					["g"] = {
-						ach(12046),	-- Remember the Titans
 						i(152129),	-- Bearmantle Shoulders
 						i(152117),	-- Dreadwake Pauldrons
 						i(152123),	-- Felreaper Spaulders
@@ -1205,7 +1235,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1984, {	-- Aggramar
 					["crs"] = { 121975 },	-- Aggramar
 					["g"] = {
-						ach(11915),	-- Don't Sweat the Technique
 						i(152094),	-- Taeshalach
 						i(152127),	-- Bearmantle Headdress
 						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
@@ -1238,7 +1267,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				cr(124828, e(2031, {	-- Argus the Unmaker
 					un(REMOVED_FROM_GAME, i(152900)),	-- Blood of the Unmaker
 					un(REMOVED_FROM_GAME, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
-					ach(12257),	-- Stardust Crusaders
 					i(153115),	-- Scythe of the Unmaker [BLUE]
 					i(152423),	-- Helm of the Awakened Soul
 					i(152283),	-- Chain of the Unmaker
@@ -1343,14 +1371,10 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(152091),	-- Wristguards of the Dark Keepers
 					i(153019),	-- Hulking Demolisher Legplates
 				}),
-				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
-					i(152815),	-- Antoran Glooomhound (MOUNT!)
-				}),
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
 					["g"] = {
 						ach(11992),	-- Mythic: Garothi Worldbreaker
-						ach(11930),	-- Worm-monger
 						i(151943),	-- Crown of Relentless Annihilation
 						i(151988),	-- Shoulderpads of the Demonic Blitz
 						i(151937),	-- Cloak of  the Burning Vanguard
@@ -1375,7 +1399,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(11993),	-- Mythic: Hounds of Sargeras
-						ach(12065),	-- Hounds Good To Me
 						i(152816),	-- Antoran Charhound (MOUNT!)
 						i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
 						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
@@ -1407,9 +1430,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(11994),	-- Mythic: Antoran High Command
-						ach(12129),	-- This is the War Room!
-						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-						i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
+						i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
+						i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -1445,7 +1467,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(11996),	-- Mythic: Eonar
-						ach(12067),	-- Spheres of Influence
 						i(152681),	-- Headdress of Living Brambles
 						i(152013),	-- Helmet of the Hidden Sanctuary
 						i(152124),	-- Bearmantle Harness
@@ -1476,8 +1497,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
 						ach(11995),	-- Mythic: Portal Keeper Hasabel
-						ach(11928),	-- Portal Combat
-						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
+						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
 						i(152008),	-- Reality-Splitting Wristguards
@@ -1499,7 +1519,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["crs"] = { 124158 },	-- Imonar the Soulhunter
 					["g"] = {
 						ach(11997),	-- Mythic: Imonar the Soulhunter
-						ach(11949),	-- Hard to Kill
 						i(151944),	-- Soulhunter's Cowl
 						i(152416),	-- Shoulderguards of Indomitable Purpose
 						i(151989),	-- Spaulders of the Relentless Tracker
@@ -1530,7 +1549,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["crs"] = { 122578 },	-- Kin'garoth
 					["g"] = {
 						ach(11998),	-- Mythic: Kin'garoth
-						ach(12030),	-- The World Revolves Around Me
 						i(152014),	-- Titan-Subjugator's Visage
 						i(151948),	-- Magma-Spattered Smock
 						i(152280),	-- Scalding Shatterguards
@@ -1561,7 +1579,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["crs"] = { 122366 },	-- Varimathras
 					["g"] = {
 						ach(11999),	-- Mythic: Varimathras
-						ach(11948),	-- Together We Stand
 						i(151966),	-- Riveted Choker of Delirium
 						i(151995),	-- Robes of the Forsaken Dreadlord
 						i(151979),	-- Vest of Unfathomable Anguish
@@ -1587,7 +1604,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(12000),	-- Mythic: The Coven of Shivarra
-						ach(12046),	-- Remember the Titans
 						i(152129),	-- Bearmantle Shoulders
 						i(152117),	-- Dreadwake Pauldrons
 						i(152123),	-- Felreaper Spaulders
@@ -1619,7 +1635,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["crs"] = { 121975 },	-- Aggramar
 					["g"] = {
 						ach(12001),	-- Mythic: Aggramar
-						ach(11915),	-- Don't Sweat the Technique
 						i(152094),	-- Taeshalach
 						i(152127),	-- Bearmantle Headdress
 						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
@@ -1650,15 +1665,12 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
-					un(REMOVED_FROM_GAME, i(152900)),	-- Blood of the Unmaker
-					un(REMOVED_FROM_GAME, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
 					un(REMOVED_FROM_GAME, ach(12111)),	-- Cutting Edge: Argus the Unmaker
 					un(REMOVED_FROM_GAME, ach(12258)),	-- Realm First! Argus the Unmaker
 					ach(12002, {	-- Mythic: Argus the Unmaker
 						title(364),		-- Titanslayer
 					}),
 					ach(12113),	-- Mythic: Argus the Unmaker Guild Run
-					ach(12257),	-- Stardust Crusaders
 					i(152789),	-- Shackled Ur'zul (MOUNT!)
 					i(155880),	-- Scythe of the Unmaker [RED]
 					i(153115),	-- Scythe of the Unmaker [BLUE]

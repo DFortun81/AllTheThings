@@ -127,108 +127,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					-- Recipe spells
 					r(354860),	--
 				})),
-
-				-- TEST GROUP - REMOVE LATER -Darkal
-				n(P9xx, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
-
-				})),
-			}),
-		}),
-		prof(BLACKSMITHING, {
-			-- Classic
-			tier(CLASSIC_TIER, {
-				-----------------
-				-- PATCH 0.5.3 --
-				-----------------
-				--0.5.3
-				i(5577),	-- Plans: Rough Bronze Bracers (RECIPE!)
-				r(6470),	-- Tiny Bronze Key (RECIPE!)
-				r(6471),	-- Tiny Iron Key (RECIPE!)
-				-- 0.5.5
-				i(6734),	-- Plans: Ironforge Chain (RECIPE!)
-				i(6736),	-- Plans: Ironforge Gauntlets (RECIPE!)
-				-- 0.7.0
-				i(7977),	-- Plans: Mithril Scale Gloves (RECIPE!)
-				-- 1.0.0
-				i(12831),	-- Plans: Blood Talon (RECIPE!)
-				i(12818),	-- Plans: Inlaid Thorium Hammer (RECIPE!)
-				i(12826),	-- Plans: Rune Edge (RECIPE!)
-				i(12816),	-- Plans: Thorium Greatsword (RECIPE!)
-				i(12817),	-- Plans: Bleakwood Hew (RECIPE!)
-				i(12832),	-- Plans: Darkspear (RECIPE!)
-				-- ??
-				i(22705),	-- Plans: Icebane Bracers (RECIPE!)
-				i(22703),	-- Plans: Icebane Breastplate (RECIPE!)
-				i(22704),	-- Plans: Icebane Gauntlets (RECIPE!)
-				-- #if BEFORE TBC
-				i(12698),	-- Dawnbringer Shoulders (Added in TBC)
-				-- #endif
-			}),
-			tier(TBC_TIER, {
-				-- 2.4.0
-				tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 2.4.0"} }, {
-					-- i(66102),	-- Plans: Elementium Shield Spike WIERD?! Commented /B
-					i(35529),	-- Plans: Dawnsteel Bracers (RECIPE!)
-					i(35530),	-- Plans: Dawnsteel Shoulders (RECIPE!)
-					i(35553),	-- Hard Khorium Battlefists (RECIPE!)
-					i(35554),	-- Hard Khorium Battleplate (RECIPE!)
-					i(35555),	-- Sunblessed Breastplate (RECIPE!)
-					i(35556),	-- Sunblessed Gauntlets (RECIPE!)
-					i(35532),	-- Plans: Swiftsteel Shoulders (RECIPE!)
-					i(35531),	-- Plans: Swiftsteel Bracers (RECIPE!)
-
-				})),
-			}),
-			tier(CATA_TIER, {
-				-- 4.0.1
-				tier(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 4.0.1"} }, {
-					i(66095),	-- Plans: Cold-Forged Shank
-					i(66094),	-- Plans: Decapitator's Razor
-					i(66134),	-- Plans: Elementium Rod
-					i(66096),	-- Plans: Fire-Etched Dagger
-					i(66064),	-- Plans: Hardened Obsidium Belt
-					i(66065),	-- Plans: Hardened Obsidium Boots
-					i(66062),	-- Plans: Hardened Obsidium Bracers
-					i(66071),	-- Plans: Hardened Obsidium Breastplate
-					i(66063),	-- Plans: Hardened Obsidium Gauntlets
-					i(66069),	-- Plans: Hardened Obsidium Helm
-					i(66068),	-- Plans: Hardened Obsidium Legguards
-					i(66092),	-- Plans: Hardened Obsidium Shield
-					i(66066),	-- Plans: Hardened Obsidium Shoulders
-					i(66097),	-- Plans: Lifeforce Hammer
-					i(66098),	-- Plans: Obsidium Executioner
-					i(66133),	-- Plans: Obsidium Bladespear
-					i(66099),	-- Plans: Obsidium Skeleton Key
-					i(66077),	-- Plans: Redsteel Belt
-					i(66078),	-- Plans: Redsteel Boots
-					i(66072),	-- Plans: Redsteel Bracers
-					i(66083),	-- Plans: Redsteel Breastplate
-					i(66074),	-- Plans: Redsteel Gauntlets
-					i(66082),	-- Plans: Redsteel Helm
-					i(66081),	-- Plans: Redsteel Legguards
-					i(66079),	-- Plans: Redsteel Shoulders
-					i(66086),	-- Plans: Stormforged Belt
-					i(66087),	-- Plans: Stormforged Boots
-					i(66084),	-- Plans: Stormforged Bracers
-					i(66091),	-- Plans: Stormforged Breastplate
-					i(66085),	-- Plans: Stormforged Gauntlets
-					i(66090),	-- Plans: Stormforged Helm
-					i(66089),	-- Plans: Stormforged Legguards
-					i(66093),	-- Plans: Stormforged Shield
-				})),
-			}),
-			tier(WOD_TIER, {
-				-- 6.0.1
-				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
-					i(116746),	-- Recipe: Greater Steelforged Essence
-				})),
-			}),
-			tier(SL_TIER, {
-				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
-					i(183864),	-- [DNT][REUSE ME] Plans: Crafter's Mark III
-					i(182670),	-- Plans: Reinforced Girdle
-				})),
 			}),
 		}),
 		prof(COOKING, {
@@ -355,9 +253,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				})),
 			}),
 		}),
-		prof(ENCHANTING, {
-
-		}),
 		prof(FIRST_AID, {
 			tier(CLASSIC_TIER, {
 				i(16085),	-- Artisan First Aid - Heal Thyself
@@ -382,8 +277,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(MOP_TIER, {
 				-- 5.0.1
 				tier(MOP_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 5.0.1"} }, {
-					i(87829),	-- Recipe: Incarnadine Ink
-					i(87830),	-- Recipe: Tigersblood Tincture
+					i(87829),	-- Technique: Incarnadine Ink
+					i(87830),	-- Technique: Tigersblood Tincture
 				})),
 			}),
 			tier(WOD_TIER, {
@@ -493,7 +388,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(WOD_TIER, {
 				-- 6.0.1
 				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
-					i(116080),	-- Recipe: Greater Taladite Amplifier
+					i(116080),	-- Design: Greater Taladite Amplifier
 				})),
 			}),
 		}),
@@ -561,21 +456,21 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(WOD_TIER, {
 				-- 6.0.1
 				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
-					i(118097),	-- Recipe: Small Football
+					i(118097),	-- Plans: Small Football
 				})),
 			}),
 			tier(BFA_TIER, {
 				-- 8.0.1
 				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
-					i(162388),	-- Recipe: Hardened Tempest Boots [Rank 3]
-					i(162389),	-- Recipe: Hardened Tempest Leggings [Rank 3]
-					i(162400),	-- Recipe: Mistscale Boots [Rank 3]
-					i(162401),	-- Recipe: Mistscale Greaves [Rank 3]
+					i(162388),	-- Pattern: Hardened Tempest Boots [Rank 3]
+					i(162389),	-- Pattern: Hardened Tempest Leggings [Rank 3]
+					i(162400),	-- Pattern: Mistscale Boots [Rank 3]
+					i(162401),	-- Pattern: Mistscale Greaves [Rank 3]
 				})),
 
 				-- 8.1.0
 				tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 8.1.0"} }, {
-					i(166312),	-- Recipe: Coarse Leather Barding [Rank 2]
+					i(166312),	-- Pattern: Coarse Leather Barding [Rank 2]
 				})),
 			}),
 			tier(SL_TIER, {
@@ -675,8 +570,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
 					i(114867),	-- Pattern: Miniature Flying Carpet - NYI
 					r(168851),	-- Miniature Flying Carpet
-					i(114872),	-- Recipe: Greater Hexweave Essence
-					r(169669),	-- Hexweave Cloth
+					i(114872),	-- Pattern: Greater Hexweave Essence
+					r(169669),	-- Pattern: Hexweave Cloth
 					i(118098),	-- Pattern: Murloc Chew Toy
 					r(173415),	-- Murloc Chew Toy
 				})),
@@ -685,7 +580,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 7.0.3
 				tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
 					i(137981),	-- Pattern: Silkweave Cloak
-					i(151746),	-- Recipe: Lightweave Breeches
+					i(151746),	-- Pattern: Lightweave Breeches
 				})),
 			}),
 			tier(BFA_TIER, {

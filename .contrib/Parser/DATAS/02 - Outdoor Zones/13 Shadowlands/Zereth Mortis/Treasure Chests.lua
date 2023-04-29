@@ -79,34 +79,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},{
 					-- Sands
 					o(375397, {	-- Glinting Sand Pile
-						["coord"] = { 45.1, 36, 2029 },
+						["coord"] = { 45.1, 36, 2029 },	-- Gravid Repose
 						["questID"] = 65495,
 					}),
 					o(375399, {	-- Humming Sand Pile
-						["coord"] = { 44.3, 36.7, 2029 },
+						["coord"] = { 44.3, 36.7, 2029 },	-- Gravid Repose
 						["questID"] = 65497,
 					}),
 					o(375396, {	-- Lumpy Sand Pile
-						["coord"] = { 44.8, 36.9, 2029 },
+						["coord"] = { 44.8, 36.9, 2029 },	-- Gravid Repose
 						["questID"] = 65494,
 					}),
 					o(375400, {	-- Misshapen Sand Pile
-						["coord"] = { 44.6, 35.7, 2029 },
+						["coord"] = { 44.6, 35.7, 2029 },	-- Gravid Repose
 						["questID"] = 65498,
 					}),
 					o(375398, {	-- Shifting Sand Pile
-						["coord"] = { 43.7, 37.1, 2029 },
+						["coord"] = { 43.7, 37.1, 2029 },	-- Gravid Repose
 						["questID"] = 65496,
 					}),
 					o(375401, {	-- Sparkling Sand Pile
-						["coord"] = { 43.9, 36.5, 2029 },
+						["coord"] = { 43.9, 36.5, 2029 },	-- Gravid Repose
 						["questID"] = 65499,
 						["g"] = {
 							i(190374),	-- Gemstone of Prismatic Brilliance
 						},
 					}),
 					o(375402, {	-- Ticking Sand Pile
-						["coord"] = { 43.8, 37.6, 2029 },
+						["coord"] = { 43.8, 37.6, 2029 },	-- Gravid Repose
 						["questID"] = 65500,
 					}),
 				}),
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["g"] = {
 					o(375902, {	-- Torn Ethereal Drape
 						["description"] = "Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus. Take out Pocopoc, activate & ride an orb until it reaches the treasure.",
-						["coord"] = { 46.7, 39.3, 2029 },
+						["coord"] = { 46.7, 39.3, 2029 },	-- Gravid Repose
 						["questID"] = 65643,
 						["sourceQuest"] = 65347,	-- Fulgore Alcove Arrangement
 						["crs"] = {
@@ -247,12 +247,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["g"] = {
 					n(185261, {	-- Requisites Originator
 						["description"] = "Gather 60 Cosmic energy and go to Interior Locus then use Repertory Locus.",
-						["sourceQuests"] = { 65344 },
+						["sourceQuests"] = { 65344 },	-- Repertory Alcove Arrangement
 						["crs"] = {
 							184329,	-- Locus Shift (Gravid Repose)
 							184485,	-- Locus Shift (Interior)
 						},
-						["coord"] = { 31.3, 65, 2029 },
+						["coord"] = { 31.3, 65, 2029 },	-- Gravid Repose
 						["questID"] = 65532,	-- Fourth Option?
 						["isWeekly"] = true,
 						["g"] = {
@@ -280,7 +280,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sym"] = {{"select","objectID",375270}},	-- Protoform Schematic
 				["g"] = {
 					o(375494, {	-- Rondure Cache
-						["coord"] = { 43, 40, 2029 },
+						["coord"] = { 43, 40, 2029 },	-- Gravid Repose
+						["sourceQuest"] = 65345,	-- Rondure Alcove Arrangement
 						["questID"] = 65567,
 						["isDaily"] = true,
 						["sym"] = {{"select","itemID",190096}},	-- Pocobold

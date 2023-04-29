@@ -1,22 +1,6 @@
-3.4.1.48503
+3.4.1.47966
 title(210),	-- Battlemaster %s
 9.2.0.41726
 title(453),	-- %s the [PH] TBD Title
 10.0.2.45779
 title(480),	-- %s, Knight of Feathersworth
-10.1.0.48480
-title(498),	-- %s the Reconciler
-10.1.0.48661
-title(499),	-- Obsidian Gladiator %s
-title(500),	-- Obsidian Legend %s
-title(501),	-- Smelly %s
-title(502),	-- %s, Barter Boss
-title(503),	-- %s the Smoldering \\ %s the <PH Season 2 Title>
-title(504),	-- %s the Smoldering Hero \\ %s the <PH Season 2 Hero Title>
-10.1.0.48898
-title(505),	-- %s, Heir to the Void
-title(506),	-- %s, Famed Slayer of Sarkareth
-title(507),	-- %s, Sniffenseeker
-10.1.0.49092
-title(508),	-- Field Researcher %s
-title(509),	-- Zaralek Cavern Racer %s

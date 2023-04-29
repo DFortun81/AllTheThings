@@ -43,7 +43,11 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["races"] = HORDE_ONLY,
 				}),
 				-- Solo
-				ach(17339),		-- Crimson Legend: Dragonflight Season 1
+				ach(17339, {	-- Crimson Legend: Dragonflight Season 1
+					i(206343, {		-- Crimson Legend's Pennant (TOY!)
+						["description"] = "This toy called 'Crimson Legend's Pennant' will be retroactively awarded to this Feat of Strength in Patch 10.1. Until then the Item will not load.\n\nIt is only shown to provide awareness & will be tagged correctly once Patch 10.1 is out.",
+					}),
+				}),
 				ach(16734, {	-- Crimson Soloist: Dragonflight Season 1
 					title(482),	-- Crimson Soloist <Name>
 				}),
@@ -400,7 +404,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 								-- #endif
 							},
 							["g"] = {
-								i(137642),	-- Mark of Honor
+								-- i(137642),    -- Mark of Honor		-- The Vendor has a different box for less Costs (2k) with more Marks of Honor (x5). Hidding this on purpose.
 								i(201254),	-- Medal of Honor [A]
 								i(201255),	-- Medal of Honor [H]
 							},

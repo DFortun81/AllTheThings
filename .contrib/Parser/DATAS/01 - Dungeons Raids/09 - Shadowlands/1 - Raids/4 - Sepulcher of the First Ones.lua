@@ -518,31 +518,24 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 				["collectible"] = false,	-- they reset per difficulty / each week based on progress
 			},{
 				fp(2715, {	-- Ephemeral Plains Alpha
-					["name"] = "Ephemeral Plains Alpha",
 					["cr"] = 182522,	-- Ancient Translocator
 				}),
 				fp(2716, {	-- Ephemeral Plains Omega
-					["name"] = "Ephemeral Plains Omega",
 					["cr"] = 182544,	-- Ancient Translocator
 				}),
 				fp(2731, {	-- Domination's Grasp
-					["name"] = "Domination's Grasp",
 					["cr"] = 184354,	-- Ancient Translocator
 				}),
 				fp(2713, {	-- Genesis Cradle Alpha
-					["name"] = "Genesis Cradle Alpha",
 					["cr"] = 182472,	-- Ancient Translocator
 				}),
 				fp(2714, {	-- Genesis Cradle Beta
-					["name"] = "Genesis Cradle Beta",
 					["cr"] = 185200,	-- Ancient Translocator
 				}),
 				fp(2757, {	-- Genesis Cradle Omega
-					["name"] = "Genesis Cradle Omega",
 					["cr"] = 182489,	-- Ancient Translocator
 				}),
 				fp(2712, {	-- Immortal Hearth
-					["name"] = "Immortal Hearth",
 					["cr"] = 182431,	-- Ancient Translocator
 				}),
 			})),

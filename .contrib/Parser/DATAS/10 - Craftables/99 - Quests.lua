@@ -41,6 +41,7 @@ root(ROOTS.Craftables, {
 						["g"] = {
 							i(115483),	-- Sky-Bo Pet
                         	i(123851),	-- Photo B.O.M.B. (TOY!)
+							i(114002),	-- Encoded Message
 						},
                     }),
                 },

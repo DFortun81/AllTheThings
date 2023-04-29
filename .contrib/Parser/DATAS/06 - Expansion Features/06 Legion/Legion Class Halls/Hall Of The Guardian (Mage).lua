@@ -125,6 +125,30 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						}),
 					}),
 				}),
+				n(FOLLOWERS, bubbleDownSelf({
+					["u"] = 15,	-- Temporary troops
+				}, {
+					follower(769),	-- Arcane Golems
+					follower(817),	-- Arcane Golems
+					follower(818),	-- Arcane Golems
+					follower(819),	-- Arcane Golems
+					follower(1004),	-- Kirin Tor Guardians
+					follower(1005),	-- Kirin Tor Guardians
+					follower(1006),	-- Kirin Tor Guardians
+					follower(1007),	-- Kirin Tor Guardians
+					follower(768),	-- Kirin Tor Invokers
+					follower(823),	-- Kirin Tor Invokers
+					follower(824),	-- Kirin Tor Invokers
+					follower(825),	-- Kirin Tor Invokers
+					follower(659),	-- Tirisgarde Apprentices
+					follower(820),	-- Tirisgarde Apprentices
+					follower(821),	-- Tirisgarde Apprentices
+					follower(822),	-- Tirisgarde Apprentices
+					follower(660),	-- Water Elemental
+					follower(814),	-- Water Elemental
+					follower(815),	-- Water Elemental
+					follower(816),	-- Water Elemental
+				})),
 				n(QUESTS, {
 					-- Intro
 					q(41035, {	-- Felstorm's Plea

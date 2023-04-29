@@ -380,7 +380,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			}),
 			n(PROFESSIONS,  {
 				prof(FISHING, {
-					i(174456, {	-- Bottle of Gloop (pet)
+					i(174456, {	-- Gloop (PET!)
 						["description"] = "Can be caught from schools of fish in a zone currently affected by a N'Zoth Assault.",
 					}),
 				}),
@@ -480,8 +480,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				i(174367),	-- Pattern: Unsettling Dredged Leather Leggings
 				i(174371),	-- Pattern: Unsettling Seaweave Breeches
 				i(174370),	-- Pattern: Unsettling Seaweave Gloves
-				i(171317),	-- Plans: Unsettling Osmenite Girdle
-				i(171316),	-- Plans: Unsettling Osmenite Legguards
+				i(171317),	-- Plans: Unsettling Osmenite Girdle (RECIPE!)
+				i(171316),	-- Plans: Unsettling Osmenite Legguards (RECIPE!)
 				i(171318),	-- Recipe: Unbound Alchemist Stone
 				i(174362),	-- Schematic: A-N0M-A-L0U5 Bionic Bifocals
 				i(171313),	-- Schematic: A-N0M-A-L0U5 Gearspun Goggles

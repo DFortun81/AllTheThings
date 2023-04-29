@@ -52,18 +52,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 32.2, 66.6, MOONGLADE },
 					["races"] = HORDE_ONLY,
 				}),
-				fp(63, {	-- Nighthaven, Moonglade
-					["cr"] = 11800,	-- Silva Fil'naveth <Darnassus Flight Master>
-					["coord"] = { 44.2, 45.2, MOONGLADE },
-					["classes"] = { DRUID },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				fp(62, {	-- Nighthaven, Moonglade
-					["cr"] = 11798,	-- Bunthen Plainswind <Thunder Bluff Flight Master>
-					["coord"] = { 44.4, 45.6, MOONGLADE },
-					["classes"] = { DRUID },
-					["races"] = HORDE_ONLY,
-				}),
 			}),
 			n(QUESTS, {
 				q(26, {	-- A Lesson to Learn [A]
@@ -159,6 +147,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["recipeID"] = 5487,	-- Bear Form // Dire Bear Form
 							["OnUpdate"] = [[function(t)
 								if _.IsSpellKnown(9634) then
+									if not _.CurrentCharacter.Spells[5487] then
+										_.CurrentCharacter.Spells[5487] = 2;
+										ATTAccountWideData.Spells[5487] = 1;
+									end
 									t.collected = 2;
 								end
 							end]],
@@ -191,6 +183,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["recipeID"] = 5487,	-- Bear Form // Dire Bear Form
 							["OnUpdate"] = [[function(t)
 								if _.IsSpellKnown(9634) then
+									if not _.CurrentCharacter.Spells[5487] then
+										_.CurrentCharacter.Spells[5487] = 2;
+										ATTAccountWideData.Spells[5487] = 1;
+									end
 									t.collected = 2;
 								end
 							end]],

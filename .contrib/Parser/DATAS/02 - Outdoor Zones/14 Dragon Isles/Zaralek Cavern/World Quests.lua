@@ -7,6 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			["sourceQuests"] = {
 				71232,	-- Renown of the Dragon Isles
 				DF_ACCOUNT_CAMPAIGN_QUEST,
+				75145,	-- In the Wake of the Ashes
 			},
 			["g"] = {
 				n(QUESTS, sharedData({ ["isWorldQuest"] = true, }, {
@@ -15,6 +16,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["g"] = {
 							i(202714),	-- M.U.S.T
 						},
+					}),
+					q(75060, {    -- A Veritable Dumping Ground
+						["coord"] = { 51.3, 24.4, ZARALEK_CAVERN },
 					}),
 					petbattle(q(75750, {	-- Are They Not Beautiful?
 						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
@@ -28,8 +32,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75344, {	-- Crystal Cracker
 						["coord"] = { 58.3, 62.3, ZARALEK_CAVERN },
 					}),
+					q(75062, {  -- Crystalline Conundrum
+						["coord"] = { 56.9, 63.7, ZARALEK_CAVERN },
+					}),
+					q(75346, {	-- Data Gathering
+						["coord"] = { 60.5, 69.4, ZARALEK_CAVERN },
+					}),
+					q(75200, {	-- Deepflayer Slayer
+						["coord"] = { 60.8, 39.6, ZARALEK_CAVERN },
+					}),
 					q(74292, {	-- Deephollow Mysteries
 						["coord"] = { 60.9, 53.8, ZARALEK_CAVERN },
+						["g"] = {
+							i(204811),	-- Drogbar Stones
+						},
+					}),
+					petbattle(q(75835, {  -- Do You Even Train?
+						["coord"] = { 45.7, 81.5, ZARALEK_CAVERN },
+					})),
+					q(75660, {	-- Ending Their Watch
+						["coord"] = { 40.4, 68.9, ZARALEK_CAVERN },
 					}),
 					q(74992, {	-- Fire Resistance Gear
 						["coord"] = { 34.0, 41.2, ZARALEK_CAVERN },
@@ -48,6 +70,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(74985, {	-- Like Moths to a Flame
 						["coord"] = { 49.1, 50.1, ZARALEK_CAVERN },
+					}),
+					q(75350, {  -- Niffen Nabber
+						["coord"] = { 59.2, 73.4, ZARALEK_CAVERN },
 					}),
 					q(75061, {	-- No Mushroom For Ever
 						["coord"] = { 54.1, 66.4, ZARALEK_CAVERN },
@@ -91,6 +116,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75071, {	-- Sniffing Mice are Nice
 						["coord"] = { 51.3, 73.9, ZARALEK_CAVERN },
 					}),
+					q(75058, {  -- Spearheading Acquisition
+						["coord"] = { 38.3, 63.1, ZARALEK_CAVERN },
+					}),
+					petbattle(q(75680, {  -- To a Land Down Under
+						["coord"] = { 52.3, 65.2, ZARALEK_CAVERN },
+					})),
 					q(74991, {	-- We Have Returned
 						["coord"] = { 34.0, 41.2, ZARALEK_CAVERN },
 						["g"] = {
@@ -102,6 +133,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 				})),
 				n(REWARDS, {
+					i(204460),	-- Zaralek Glowspores
 					n(BACK, {
 						i(204915),	-- Deeprock Cape
 						i(204914),	-- Deeprock Cloak

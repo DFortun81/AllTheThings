@@ -1505,7 +1505,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 36.1, 45.2, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 26652,	-- Greatmother Icemist
-						["sourceQuest"] = 12056,	-- Marked for Death: High Cultist Zangus
+						["sourceQuests"] = {
+							12036,	-- From the Depths of Azjol-Nerub
+							12056,	-- Marked for Death: High Cultist Zangus
+						},
 					}),
 					q(12092, {	-- Strengthen the Ancients (A)
 						["coord"] = { 28.7, 57.0, DRAGONBLIGHT },

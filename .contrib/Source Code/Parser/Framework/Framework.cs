@@ -239,7 +239,7 @@ namespace ATT
         /// <summary>
         /// Represents the current parent group when processing the 'g' subgroup
         /// </summary>
-        private static KeyValuePair<string, decimal>? CurrentParentGroup { get; set; }
+        private static KeyValuePair<string, object>? CurrentParentGroup { get; set; }
 
         /// <summary>
         /// Represents the file currently being processed
@@ -269,7 +269,12 @@ namespace ATT
         {
             if (_autoLocalizeTypes == null)
             {
-                _autoLocalizeTypes = new HashSet<string>((string[])Config["AutoLocalizeTypes"]);
+                var types = Config["AutoLocalizeTypes"];
+                if (types != null)
+                {
+                    _autoLocalizeTypes = new HashSet<string>((string[])Config["AutoLocalizeTypes"]);
+                }
+                else _autoLocalizeTypes = new HashSet<string>();
             }
             return _autoLocalizeTypes.Contains(type);
         }
@@ -550,8 +555,8 @@ namespace ATT
             if (data.TryGetValue("g", out List<object> groups))
             {
                 var previousParent = CurrentParentGroup;
-                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out decimal objKeyValue))
-                    CurrentParentGroup = new KeyValuePair<string, decimal>(objectData.ObjectType, objKeyValue);
+                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
+                    CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
                 var previousDifficultyRoot = DifficultyRoot;
                 var previousDifficulty = NestedDifficultyID;
 
@@ -737,12 +742,11 @@ namespace ATT
             Validate_Criteria(data);
             Validate_Quest(data);
             bool cloned = Validate_DataCloning(data);
-
-            Validate_Sym(data);
-
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
             if (cloned && data.ContainsKey("criteriaID"))
                 return false;
+
+            Validate_Sym(data);
 
             // Track the hierarchy of difficultyID
             if (data.TryGetValue("difficultyID", out long d))
@@ -754,7 +758,10 @@ namespace ATT
             // Throw away automatic Spell ID assignments for certain filter types.
             if (data.TryGetValue("spellID", out f))
             {
-                if (f < 1) data.Remove("spellID");
+                if (f < 1)
+                {
+                    data.Remove("spellID");
+                }
                 else
                 {
                     switch (filter)
@@ -768,6 +775,7 @@ namespace ATT
                     }
                 }
             }
+
             if (data.TryGetValue("recipeID", out f))
             {
                 if (f < 1)
@@ -786,114 +794,20 @@ namespace ATT
                     }
                 }
             }
+
             if (data.TryGetValue("s", out f))
             {
-                if (f < 1 || CURRENT_RELEASE_VERSION < ADDED_TRANSMOG_VERSION) data.Remove("s");
+                if (f < 1 || CURRENT_RELEASE_VERSION < ADDED_TRANSMOG_VERSION)
+                {
+                    data.Remove("s");
+                }
             }
 
             minLevel = LevelConsolidation(data, minLevel);
 
-            if (data.TryGetValue("cost", out object costRef) && costRef is List<List<object>> cost)
-            {
-                for (int i = cost.Count - 1; i >= 0; --i)
-                {
-                    var c = cost[i];
-                    if (c != null && c.Any())
-                    {
-                        decimal costID = Convert.ToDecimal(c[1]);
-                        switch (c[0].ToString())
-                        {
-                            case "i":
-                                var item = Items.GetNull(costID);
-                                if (item != null)
-                                {
-                                    // The item was classified as never being implemented or being completely removed from the game.
-                                    if (item.TryGetValue("u", out long u) && u == 1)
-                                    {
-                                        cost.RemoveAt(i);
-                                    }
-                                    // anything that costs Mark of Honor should have pvp tag
-                                    else if (costID == 137642)
-                                    {
-                                        data["pvp"] = true;
-                                    }
-                                }
-
-                                // Single Cost Item on a Achieve/Criteria group should be represented as a Provider instead
-                                if (data.TryGetValue("achID", out long _) ||
-                                    data.TryGetValue("criteriaID", out long _))
-                                {
-                                    if (!data.TryGetValue("providers", out object _) &&
-                                        cost.Count == 1 &&
-                                        c.Count > 2 &&
-                                        c[2].TryConvert(out long count) &&
-                                        count == 1)
-                                    {
-                                        Log($"WARN: 'cost' = {ToJSON(c)} should be 'provider'{Environment.NewLine}-- {ToJSON(data)}");
-                                    }
-                                }
-                                break;
-                            case "c":
-                                if (costID == 1602 ||   // Conquest
-                                    costID == 1792)     // Honor
-                                {
-                                    data["pvp"] = true;
-                                }
-                                break;
-                            case "g": break;
-
-                            default:
-                                Log($"WARN: Unknown 'cost' type: {c[0]}{Environment.NewLine}-- {ToJSON(data)}");
-                                break;
-                        }
-                    }
-                }
-            }
-
-            // 'coord' is converted to 'coords' already
-            List<object> coordsList = null;
-            if (data.TryGetValue("coords", out coordsList))
-            {
-                // check if any coord is not 3 parameters: [ X, Y, MapID ]
-                foreach (object coord in coordsList)
-                {
-                    if (coord is List<object> coordList && coordList.Count != 3)
-                    {
-                        Log($"WARN: 'coord/s' value is not fully qualified: {ToJSON(coord)}{Environment.NewLine}-- {ToJSON(data)}");
-                    }
-                }
-            }
-
-            // maps & coords
-            if (data.TryGetValue("maps", out object maps) && maps is List<object> mapsList)
-            {
-                if (coordsList != null)
-                {
-                    bool redundant = false;
-                    // check if any coord has a mapID which matches a maps mapID
-                    foreach (object coord in coordsList)
-                    {
-                        if (coord is List<object> coordList && coordList.Count > 2)
-                        {
-                            var coordMapID = coordList[2];
-                            if (mapsList.TrySmartContains(coordMapID, out object mapsValue))
-                                redundant = mapsList.Remove(mapsValue);
-                        }
-                    }
-
-                    // remove the key itself if no mapID values remain
-                    if (mapsList.Count == 0)
-                        data.Remove("maps");
-
-                    if (redundant)
-                        Log($"Redundant 'maps' removed from: {ToJSON(data)}{Environment.NewLine}-- {ToJSON(data)}");
-                }
-
-                // single 'maps' for Achievements Sourced under 'Achievements', should be sourced in that specific map directly instead
-                if (ProcessingAchievementCategory && mapsList.Count == 1 && data.TryGetValue("achID", out long achID))
-                    Log($"Single 'maps' value used within Achievement: {achID}. It can be Sourced directly in the Location.");
-            }
-
+            Validate_cost(data);
+            Validate_Providers(data);
+            Validate_LocationData(data);
 
             // TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua, it should only be necessary in DataConsolidation after that point
             if (data.TryGetValue("requireSkill", out long requiredSkill))
@@ -936,32 +850,6 @@ namespace ATT
                 }
             }
 
-            // Certain automatic header types may be converted from raw Lua data
-            //if (data.TryGetValue("headerID", out decimal headerID) && data.TryGetValue("type", out string type))
-            //{
-            //    switch (type)
-            //    {
-            //        // Criteria can be parsed as AchievementID.CrtieriaID to make it easier for contributor to reference
-            //        // Parser can lookup the CriteriaUID from AchievementDB in that case for actual addon data
-            //        case "crit":
-            //            if (decimal.Truncate(headerID) != headerID)
-            //            {
-            //                Tuple<long, long> achCrit = GetAchCritIDs(headerID);
-            //                // WoW Criteria API requires AchievementID always even with CriteriaUID... so this is pointless to get the UID
-            //                //long critUID = GetAchievementCrtieriaUID(achCrit);
-            //                //if (critUID == 0)
-            //                //{
-            //                //    throw new InvalidDataException($"Could not resolve CriteriaUID from Achievement/Criteria combination {achCrit.Item1}.{achCrit.Item2}");
-            //                //}
-            //                //data["headerID"] = critUID;
-
-            //                // just save the shifted criteriaID for in-game to shift back for info
-            //                data["headerID"] = achCrit.Item1 + (decimal)achCrit.Item2 / 100;
-            //            }
-            //            break;
-            //    }
-            //}
-
             // Merge all relevant Item Data into the global dictionaries after being validated
             Items.Merge(data);
             Objects.Merge(data);
@@ -969,51 +857,242 @@ namespace ATT
             return true;
         }
 
-        private static void Validate_Sym(Dictionary<string, object> data)
+        private static void Validate_cost(Dictionary<string, object> data)
         {
-            if (data.TryGetValue("sym", out List<object> symObject))
+            if (data.TryGetValue("cost", out object costRef) && costRef is List<List<object>> cost)
             {
-                string previousType = null;
-                // some logic to check for duplicate 'select' commands of the same type
-                foreach (object cmdObj in symObject)
+                for (int i = cost.Count - 1; i >= 0; --i)
                 {
-                    if (!cmdObj.TryConvert(out List<object> command))
+                    var c = cost[i];
+                    if (c != null && c.Any())
                     {
-                        LogError("Incorrect 'sym' command structure encountered", data);
-                        break;
-                    }
-
-                    // check various commands
-                    if (command.Count > 0 && command[0].TryConvert(out string commandName))
-                    {
-                        if (commandName == "select")
+                        decimal costID = Convert.ToDecimal(c[1]);
+                        switch (c[0].ToString())
                         {
-                            if (command.Count > 1 && command[1].TryConvert(out string commandType))
-                            {
-                                if (previousType == commandType)
+                            case "i":
+                                var item = Items.GetNull(costID);
+                                if (item != null)
                                 {
-                                    LogDebug($"WARN: 'sym-select' can be cleaned up", data);
-                                    break;
-                                }
-                                else
-                                {
-                                    List<object> selections = command.Skip(2).ToList();
-                                    List<decimal> selectionValues = selections.AsDataList<decimal>().ToList();
-
-                                    // verify all select values are decimals
-                                    if (selections.Count != selectionValues.Count)
+                                    // The item was classified as never being implemented or being completely removed from the game.
+                                    if (item.TryGetValue("u", out long u) && u == 1)
                                     {
-                                        LogError($"'sym-select' contains non-numeric selection values", data);
+                                        cost.RemoveAt(i);
+                                    }
+                                    // anything that costs Mark of Honor should have pvp tag
+                                    else if (costID == 137642)
+                                    {
+                                        data["pvp"] = true;
                                     }
                                 }
 
-                                previousType = commandType;
+                                // Single Cost Item on a Achieve/Criteria group should be represented as a Provider instead
+                                if (data.TryGetValue("achID", out long _) ||
+                                    data.TryGetValue("criteriaID", out long _))
+                                {
+                                    if (!data.TryGetValue("providers", out object _) &&
+                                        cost.Count == 1 &&
+                                        c.Count > 2 &&
+                                        c[2].TryConvert(out long count) &&
+                                        count == 1)
+                                    {
+                                        Log($"WARN: 'cost' = {ToJSON(c)} should be 'provider'", data);
+                                    }
+                                }
+                                break;
+                            case "c":
+                                if (costID == 1602 ||   // Conquest
+                                    costID == 1792)     // Honor
+                                {
+                                    data["pvp"] = true;
+                                }
+                                break;
+                            case "g":
+                                break;
+
+                            default:
+                                Log($"WARN: Unknown 'cost' type: {c[0]}", data);
+                                break;
+                        }
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Validates that 'coord(s)' and 'maps' data is valid
+        /// </summary>
+        private static void Validate_LocationData(Dictionary<string, object> data)
+        {
+            // 'coord' is converted to 'coords' already
+            if (data.TryGetValue("coords", out List<object> coordsList))
+            {
+                // check if any coord is not 3 parameters: [ X, Y, MapID ]
+                foreach (object coord in coordsList)
+                {
+                    if (coord is List<object> coordList && coordList.Count != 3)
+                    {
+                        LogError($"'coord/s' value is not fully qualified: {ToJSON(coord)}", data);
+                    }
+                }
+            }
+
+            // maps & coords
+            if (data.TryGetValue("maps", out List<object> maps))
+            {
+                if (coordsList != null)
+                {
+                    List<object> redundant = new List<object>();
+                    // check if any coord has a mapID which matches a maps mapID
+                    foreach (object coord in coordsList)
+                    {
+                        if (coord is List<object> coordList && coordList.Count > 2)
+                        {
+                            var coordMapID = coordList[2];
+                            if (maps.TrySmartContains(coordMapID, out object mapsValue))
+                            {
+                                if (maps.Remove(mapsValue))
+                                {
+                                    redundant.Add(mapsValue);
+                                }
                             }
                         }
-                        else
+                    }
+
+                    // remove the key itself if no mapID values remain
+                    if (maps.Count == 0)
+                    {
+                        data.Remove("maps");
+                    }
+
+                    if (redundant.Count > 0)
+                    {
+                        Log($"WARN: Redundant 'maps' values removed: {ToJSON(redundant)}", data);
+                    }
+                }
+
+                // single 'maps' for Achievements Sourced under 'Achievements', should be sourced in that specific map directly instead
+                if (ProcessingAchievementCategory && maps.Count == 1 && data.TryGetValue("achID", out long achID))
+                {
+                    Log($"WARN: Single 'maps' value used within Achievement {achID}. It should be Sourced directly in the Location.", data);
+                }
+            }
+        }
+
+        private static void Validate_Providers(Dictionary<string, object> data)
+        {
+            if (!data.TryGetValue("providers", out object providers))
+                return;
+
+            if (!providers.TryConvert(out List<object> providersList))
+            {
+                LogError("Invalid Data Format: provider(s)", data);
+                return;
+            }
+
+            for (int i = providersList.Count - 1; i >= 0; i--)
+            {
+                var provider = providersList[i];
+                if (!provider.TryConvert(out List<object> providerList) || providerList.Count != 2)
+                {
+                    LogError($"Invalid Data Format: provider {ToJSON(provider)}", data);
+                    continue;
+                }
+
+                if (!providerList[0].TryConvert(out string pType))
+                {
+                    LogError($"Invalid Data Format: provider-type: {providerList[0]}", data);
+                    continue;
+                }
+
+                if (!providerList[1].TryConvert(out decimal pID))
+                {
+                    LogError($"Invalid Data Format: provider-id {providerList[1]}", data);
+                    continue;
+                }
+
+                // validate that the referenced ID exists in this version of the addon
+                switch (pType)
+                {
+                    case "i":
+                        var item = Items.GetNull(pID);
+#if ANYCLASSIC
+                        // @Crieve: You may want to test/verify this logic in Classic
+                        //if (item == null || (item.TryGetValue("u", out long u) && u == 1))
+                        //{
+                        //    // The item doesn't exist in a Classic version, or was classified as never being implemented
+                        //    LogDebug($"Removed non-existent 'provider-item' {pID}", data);
+                        //    providersList.RemoveAt(i);
+                        //}
+#else
+                        if (item == null)
                         {
-                            previousType = null;
+                            // The item isn't Sourced in Retail version
+                            Log($"WARN: Non-Sourced 'provider-item' {pID}", data);
                         }
+                        else if (item.TryGetValue("u", out long u) && u == 1)
+                        {
+                            // The item was classified as never being implemented
+                            LogDebug($"INFO: Removed NYI 'provider-item' {pID}", data);
+                            providersList.RemoveAt(i);
+                        }
+#endif
+                        break;
+                    case "n":
+                    case "o":
+                        // maybe something for NPCs, Objects... ?
+                        break;
+                    default:
+                        LogError($"Invalid Data Value: provider-type {pType}", data);
+                        break;
+                }
+            }
+        }
+
+        private static void Validate_Sym(Dictionary<string, object> data)
+        {
+            if (!data.TryGetValue("sym", out List<object> symObject))
+                return;
+
+            string previousType = null;
+            // some logic to check for duplicate 'select' commands of the same type
+            foreach (object cmdObj in symObject)
+            {
+                if (!cmdObj.TryConvert(out List<object> command))
+                {
+                    LogError("Incorrect 'sym' command structure encountered", data);
+                    break;
+                }
+
+                // check various commands
+                if (command.Count > 0 && command[0].TryConvert(out string commandName))
+                {
+                    if (commandName == "select")
+                    {
+                        if (command.Count > 1 && command[1].TryConvert(out string commandType))
+                        {
+                            if (previousType == commandType)
+                            {
+                                LogDebug($"WARN: 'sym-select' can be cleaned up", data);
+                                break;
+                            }
+                            else
+                            {
+                                List<object> selections = command.Skip(2).ToList();
+                                List<decimal> selectionValues = selections.AsDataList<decimal>().ToList();
+
+                                // verify all select values are decimals
+                                if (selections.Count != selectionValues.Count)
+                                {
+                                    LogError($"'sym-select' contains non-numeric selection values", data);
+                                }
+                            }
+
+                            previousType = commandType;
+                        }
+                    }
+                    else
+                    {
+                        previousType = null;
                     }
                 }
             }
@@ -1021,36 +1100,36 @@ namespace ATT
 
         private static void Validate_SourceQuests(Dictionary<string, object> data)
         {
-            if (data.TryGetValue("sourceQuests", out List<object> sourceQuests))
+            if (!data.TryGetValue("sourceQuests", out List<object> sourceQuests))
+                return;
+
+            foreach (var sourceQuestRef in sourceQuests)
             {
-                foreach (var sourceQuestRef in sourceQuests)
+                if (!sourceQuestRef.TryConvert(out long sourceQuestID))
                 {
-                    if (!sourceQuestRef.TryConvert(out long sourceQuestID))
+                    LogError($"Non-number 'sourceQuests' value used: {sourceQuestRef}");
+                    continue;
+                }
+
+                if (!Objects.AllQuests.TryGetValue(sourceQuestID, out Dictionary<string, object> sourceQuest))
+                {
+                    // Source Quest not in database
+                    LogError($"Referenced Source Quest {sourceQuestID} has not been Sourced");
+                    continue;
+                }
+
+                // source quest of this data is considered a breadcrumb, so note in the source quest it has a specific follow up
+                if (sourceQuest.TryGetValue("isBreadcrumb", out bool isBreadcrumb) && isBreadcrumb)
+                {
+                    // Source Quest is a breadcrumb, add current quest into breadcrumb's next quests list
+                    if (!sourceQuest.TryGetValue("nextQuests", out List<object> nextQuests))
                     {
-                        LogError($"Non-number 'sourceQuests' value used: {sourceQuestRef}");
-                        continue;
+                        sourceQuest.Add("nextQuests", nextQuests = new List<object>());
                     }
 
-                    if (!Objects.AllQuests.TryGetValue(sourceQuestID, out Dictionary<string, object> sourceQuest))
+                    if (data.TryGetValue("questID", out long questID) && !nextQuests.Contains(questID))
                     {
-                        // Source Quest not in database
-                        LogError($"Referenced Source Quest {sourceQuestID} has not been Sourced");
-                        continue;
-                    }
-
-                    // source quest of this data is considered a breadcrumb, so note in the source quest it has a specific follow up
-                    if (sourceQuest.TryGetValue("isBreadcrumb", out bool isBreadcrumb) && isBreadcrumb)
-                    {
-                        // Source Quest is a breadcrumb, add current quest into breadcrumb's next quests list
-                        if (!sourceQuest.TryGetValue("nextQuests", out List<object> nextQuests))
-                        {
-                            sourceQuest.Add("nextQuests", nextQuests = new List<object>());
-                        }
-
-                        if (data.TryGetValue("questID", out long questID) && !nextQuests.Contains(questID))
-                        {
-                            nextQuests.Add(questID);
-                        }
+                        nextQuests.Add(questID);
                     }
                 }
             }
@@ -1058,53 +1137,53 @@ namespace ATT
 
         private static void Validate_AltQuests(Dictionary<string, object> data)
         {
-            if (data.TryGetValue("altQuests", out List<object> altQuests))
-            {
-                foreach (var altQuestRef in altQuests)
-                {
-                    if (!altQuestRef.TryConvert(out long altQuestID))
-                    {
-                        LogError($"Non-number 'altQuests' value used: {altQuestRef}");
-                        continue;
-                    }
+            if (!data.TryGetValue("altQuests", out List<object> altQuests))
+                return;
 
-                    if (!Objects.AllQuests.TryGetValue(altQuestID, out Dictionary<string, object> altQuest))
-                    {
-                        // Source Quest not in database
-                        LogDebug($"WARN: Referenced Alternate Quest {altQuestID} has not been Sourced");
-                    }
+            foreach (var altQuestRef in altQuests)
+            {
+                if (!altQuestRef.TryConvert(out long altQuestID))
+                {
+                    LogError($"Non-number 'altQuests' value used: {altQuestRef}");
+                    continue;
+                }
+
+                if (!Objects.AllQuests.TryGetValue(altQuestID, out Dictionary<string, object> altQuest))
+                {
+                    // Source Quest not in database
+                    LogDebug($"WARN: Referenced Alternate Quest {altQuestID} has not been Sourced");
                 }
             }
         }
 
         private static void Validate_Encounter(Dictionary<string, object> data)
         {
-            if (data.TryGetValue("encounterID", out long encounterID))
+            if (!data.TryGetValue("encounterID", out long encounterID))
+                return;
+
+            // Hash the Encounter for MergeIntos if needed
+            data["_encounterHash"] = encounterID + NestedDifficultyID / 100M;
+
+            // Clean up Encounters which only have a single creatureID assigned via 'crs'
+            if (!data.ContainsKey("creatureID") && data.TryGetValue("crs", out List<object> crs) && crs.Count == 1 && crs[0].TryConvert(out long creatureID))
             {
-                // Hash the Encounter for MergeIntos if needed
-                data["_encounterHash"] = encounterID + NestedDifficultyID / 100M;
+                data["creatureID"] = creatureID;
+                data.Remove("crs");
+            }
 
-                // Clean up Encounters which only have a single creatureID assigned via 'crs'
-                if (!data.ContainsKey("creatureID") && data.TryGetValue("crs", out List<object> crs) && crs.Count == 1 && crs[0].TryConvert(out long creatureID))
+            // Warn about Encounters with no NPCID assignment
+            if (!data.ContainsKey("creatureID") && !data.ContainsKey("crs"))
+            {
+                switch (encounterID)
                 {
-                    data["creatureID"] = creatureID;
-                    data.Remove("crs");
-                }
-
-                // Warn about Encounters with no NPCID assignment
-                if (!data.ContainsKey("creatureID") && !data.ContainsKey("crs"))
-                {
-                    switch (encounterID)
-                    {
-                        // weird encounters that are one encounter but drops are organized by NPCs in the encounter
-                        case 1547:  // Silithid Royalty (AQ40)
-                        case 1549:  // Twin Emperors (AQ40)
-                        case 1552:  // Servant's Quarters (Kara)
-                            break;
-                        default:
-                            LogError($"Encounter {encounterID} is missing an NPC assignment! (Could lead to unassigned Achievement data)");
-                            break;
-                    }
+                    // weird encounters that are one encounter but drops are organized by NPCs in the encounter
+                    case 1547:  // Silithid Royalty (AQ40)
+                    case 1549:  // Twin Emperors (AQ40)
+                    case 1552:  // Servant's Quarters (Kara)
+                        break;
+                    default:
+                        LogError($"Encounter {encounterID} is missing an NPC assignment! (Could lead to unassigned Achievement data)");
+                        break;
                 }
             }
         }
@@ -1302,31 +1381,30 @@ namespace ATT
         private static void Validate_Achievement(Dictionary<string, object> data)
         {
             // Mark the achievement as referenced
-            if (data.TryGetValue("achID", out long achID))
+            if (!data.TryGetValue("achID", out long achID)) return;
+
+            // Grab AchievementDB info
+            ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
+
+            // Remove itself from the list of altAchievements
+            if (data.TryGetValue("altAchievements", out List<object> altAchievements) && altAchievements != null && altAchievements.Count > 0)
             {
-                // Grab AchievementDB info
-                ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
+                altAchievements.Remove(achID);
+            }
 
-                // Remove itself from the list of altAchievements
-                if (data.TryGetValue("altAchievements", out List<object> altAchievements) && altAchievements != null && altAchievements.Count > 0)
-                {
-                    altAchievements.Remove(achID);
-                }
+            // Guild Achievements are not collectible
+            if (achInfo.TryGetValue("isGuild", out bool isGuild) && isGuild)
+            {
+                data["collectible"] = false;
+            }
 
-                // Guild Achievements are not collectible
-                if (achInfo.TryGetValue("isGuild", out bool isGuild) && isGuild)
+            // If not processing the Main Achievement Category, then any encountered Achievements (which are not Criteria) should be duplicated into the Main Achievement Category
+            if (!ProcessingAchievementCategory && !data.ContainsKey("criteriaID"))
+            {
+                if (achInfo.TryGetValue("parentCategoryID", out long achCatID))
                 {
-                    data["collectible"] = false;
-                }
-
-                // If not processing the Main Achievement Category, then any encountered Achievements (which are not Criteria) should be duplicated into the Main Achievement Category
-                if (!ProcessingAchievementCategory && !data.ContainsKey("criteriaID"))
-                {
-                    if (achInfo.TryGetValue("parentCategoryID", out long achCatID))
-                    {
-                        DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
-                        //LogDebug($"Duplicated Achievement {achID} into Achievement Category");
-                    }
+                    DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
+                    //LogDebug($"Duplicated Achievement {achID} into Achievement Category");
                 }
             }
         }
@@ -1415,6 +1493,7 @@ namespace ATT
             CheckRequireSkill(data);
             CheckHeirloom(data);
             CheckTrackableFields(data);
+            CheckRequiredDataRelationships(data);
             Validate_SourceQuests(data);
             Validate_AltQuests(data);
             Items.DetermineSourceID(data);
@@ -1442,7 +1521,7 @@ namespace ATT
             if (data.TryGetValue("name", out string name))
             {
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out decimal objKeyValue))
+                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
                 {
                     long id = Convert.ToInt64(objKeyValue);
                     // Store the name of this object (or whatever it is) in our table.
@@ -1478,6 +1557,21 @@ namespace ATT
             }
 
             return true;
+        }
+
+        /// <summary>
+        /// Checks the data for any required data relationships based on existing fields
+        /// </summary>
+        private static void CheckRequiredDataRelationships(Dictionary<string, object> data)
+        {
+            // Criteria groups need to know their associated Achievement
+            if (data.TryGetValue("criteriaID", out decimal criteriaID))
+            {
+                if (!data.ContainsKey("achID") && CurrentParentGroup.Value.Key != "achID")
+                {
+                    LogError($"'criteriaID' {criteriaID} missing 'achID' under non-Achievement group [{CurrentParentGroup.Value.Key}:{CurrentParentGroup.Value.Value}]", data);
+                }
+            }
         }
 
         private static void CheckTrackableFields(Dictionary<string, object> data)
@@ -1684,6 +1778,8 @@ namespace ATT
                         break;
                     // Deleted
                     case 4:
+                        data["u"] = 2;
+                        break;
                     // Removed From Game
                     case 2:
                         data["u"] = 2;
@@ -1857,7 +1953,7 @@ namespace ATT
         private static void TryFindRecipeID(Dictionary<string, object> data)
         {
             // don't apply a recipeID to data which is not an item or is a Toy or has a questID (Reaves Modules... argghhh)
-            if (data.ContainsKey("isToy") || !data.ContainsKey("itemID") || data.ContainsKey("questID"))
+            if (!data.ContainsKey("itemID") || data.ContainsKey("questID"))
                 return;
 
             // all recipes require a skill
@@ -2024,7 +2120,7 @@ namespace ATT
             if (!MergeItemData) return;
 
             var groupIDs = Objects.CompressToList(groups) ?? new List<object> { groups };
-            if (groupIDs != null && ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out decimal _))
+            if (groupIDs != null && ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object _))
             {
                 switch (objectData.ObjectType)
                 {
@@ -2527,13 +2623,6 @@ namespace ATT
             {
                 var item = Items.GetNull(pair.Key);
                 if (item != null) Items.MergeInto(pair.Key, new Dictionary<string, object> { { "mountID", pair.Value } }, item);
-            }
-
-            // Go through and merge all of the toy data into the item containers.
-            foreach (var pair in Items.AllToys)
-            {
-                var item = Items.GetNull(pair.Key);
-                if (item != null) Items.MergeInto(pair.Key, new Dictionary<string, object> { { "isToy", pair.Value } }, item);
             }
         }
 
@@ -3077,7 +3166,6 @@ namespace ATT
                 case "isJumping":
                 case "isOffHand":
                 case "isRaid":
-                case "isToy":
                 case "isWorldQuest":
                 case "lore":
                 case "mapID":
@@ -3431,29 +3519,8 @@ namespace ATT
                         }
                     case "ItemToyDB":
                         {
-                            // The format of the Item Toy DB is a dictionary of item ID -> True.
-                            // This is slightly more annoying to parse, but it works okay.
-                            if (pair.Value is Dictionary<long, object> itemToyDB)
-                            {
-                                foreach (var itemValuePair in itemToyDB)
-                                {
-                                    if (itemValuePair.Value is object o)
-                                    {
-                                        Items.SetIsToy(itemValuePair.Key, Convert.ToBoolean(o));
-                                    }
-                                    else
-                                    {
-                                        LogError("ItemToyDB not in the correct format!");
-                                        Console.WriteLine(ToJSON(itemValuePair.Value));
-                                        Console.ReadLine();
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                LogError("ItemToyDB not in the correct format!");
-                                Console.ReadLine();
-                            }
+                            LogError("ItemToyDB not supported. Please use 'ItemDBConditional' and parser.config to assign Toy objects.");
+                            Console.ReadLine();
                             break;
                         }
                     case "Artifacts":

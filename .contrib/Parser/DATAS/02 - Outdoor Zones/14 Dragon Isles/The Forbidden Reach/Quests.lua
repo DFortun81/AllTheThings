@@ -172,6 +172,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "n", 200566 },	-- Cataloger Daela
 				["coord"] = { 34.3, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
+				["g"] = {
+					i(204561),	-- Primalist Cache Key
+				},
 			}),
 			-- Iskaara
 			q(74909, {	-- New Catches [Confirmed]
@@ -230,6 +233,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
+			q(75237, {	-- Reach West
+				["sourceQuests"] = { 74911 },	-- New Horizons
+				["sourceQuestNumRequired"] = 0,
+				["provider"] = { "n", 200563 },	-- Kraxxus
+				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
+				["isDaily"] = true,
+			}),
 			n(BONUS_OBJECTIVES, {
 				q(74377, {	-- Capsize a Crab
 					["coord"] = { 37.4, 81.7, THE_FORBIDDEN_REACH },
@@ -252,6 +262,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73139, {	-- Deep Sea Supplies
 				["provider"] = { "n", 200558 },	-- Tukkaraq
 				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(202361),	-- Farscale Supplies
+				},
 			}),
 			q(73715, {	-- Driftwood Derby
 				["provider"] = { "n", 200558 },	-- Tukkaraq
@@ -260,6 +273,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73141, {	-- Everburning Embers
 				["provider"] = { "n", 200558 },	-- Tukkaraq
 				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(202364),	-- Everburning Ember
+				},
 			}),
 			q(73178, {	-- Hands Off Our Booty!
 				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel

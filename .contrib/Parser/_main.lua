@@ -41,6 +41,7 @@ ROOTS = {
 -- Automatic Header Constants (verify if supported against AllTheThings.lua::HeaderTypeAbbreviations)
 HEADERS = {
 	Achievement = "a",
+	Class = "c",
 	Item = "i",
 	Map = "m",
 	NPC = "n",
@@ -1051,6 +1052,7 @@ LEGENDARY_QUESTLINE = -10066;
 	-- WoD
 	GARRISONS = -9966;
 	BUILDINGS = -99;
+	FOLLOWERS = -101;
 	-- Legion
 	ARTIFACTS = -10067;
 	CLASS_HALL = -9965;
@@ -1093,6 +1095,7 @@ LEGENDARY_QUESTLINE = -10066;
 		CLIMBING = -1111;
 		CATALOGING = -1112;
 		ANCIENT_WAYGATES = -1113;
+		CARTOGRAPHERS_FLAG = -1114;
 	MARUUK_CENTAUR = -1120;
 		AYLAAG = -1121;
 		GRAND_HUNTS = -1122;
@@ -2292,6 +2295,11 @@ cl = function(id, specc, t)								-- Create a CHARACTER CLASS Object
 		t = togroups(t)
 	end;
 	return struct("classID", id, t);
+end
+clWithoutLock = function(id, t)							-- Create a CHARACTER CLASS Object without a Classi Lock
+	t = struct("headerID", id, t);
+	t.type = HEADERS.Class;
+	return t;
 end
 creature = function(id, t)								-- Create a CREATURE Object
 	return struct("creatureID", id, t);

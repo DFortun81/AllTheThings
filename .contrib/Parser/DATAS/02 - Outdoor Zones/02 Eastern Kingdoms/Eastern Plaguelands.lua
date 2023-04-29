@@ -902,6 +902,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 83.8, 50.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 3.0.1.8681" },
 					["classes"] = { DEATHKNIGHT },
+					["sourceQuests"] = {
+						39017,	-- HQT representing if the player has completed any of their artifacts (assumed)
+					},
 				}),
 				fp(87, {	-- Crown Guard Tower, Eastern Plaguelands
 					["cr"] = 44232,	-- Janice Myers <Flight Master>
@@ -2927,7 +2930,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(5248, {	-- Tormented By the Past
 					["providers"] = {
 						{ "n", 10304 },	-- Aurora Skycaller
-						{ "i", 13347, 1 },	-- Crystal of Zin-Malor
+						{ "i", 13347 },	-- Crystal of Zin-Malor
 					},
 					["sourceQuest"] = 5247,	-- Fragments of the Past
 					["coord"] = { 53.4, 22, EASTERN_PLAGUELANDS },

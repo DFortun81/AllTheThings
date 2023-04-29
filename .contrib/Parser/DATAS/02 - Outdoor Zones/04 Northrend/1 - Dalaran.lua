@@ -7533,7 +7533,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					n(29496, {	-- Walther Whiteford <Mace Merchant>
+					n(29497, {	-- Walther Whiteford <Mace Merchant>
 						["coord"] = { 55.8, 62.8, NORTHREND_DALARAN },
 						["groups"] = {
 							i(44636),	-- Dalaran Cudgel

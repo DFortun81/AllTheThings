@@ -11,6 +11,20 @@ _.Instances = { tier(MOP_TIER, {
 		["coord"] = { 48.4, 61.4, THE_VEILED_STAIR },	-- Terrace of Endless Spring
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(6689, {	-- Terrace of Endless Spring
+					crit(1, {	-- Protectors of the Endless
+						["_encounter"] = { 683, 7 },
+					}),
+					crit(2, {	-- Tsulong
+						["_encounter"] = { 742, 7 },
+					}),
+					crit(3, {	-- Lei Shi
+						["_encounter"] = { 729, 7 },
+					}),
+					crit(4, {	-- Sha of Fear
+						["_encounter"] = { 709, 7 },
+					}),
+				}),
 				ach(6670),	-- Terrace of Endless Spring Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
@@ -96,7 +110,7 @@ _.Instances = { tier(MOP_TIER, {
 							})),
 						},
 					}),
-					ach(6689, {	-- Terrace of Endless Spring
+					header(HEADERS.Achievement, 6689, {	-- Terrace of Endless Spring
 						cr(60583, e(683, {	-- Protectors of the Endless
 							i(86909),	-- Regail's Crackling Dagger
 							i(86876),	-- Casque of Expelled Corruption
@@ -226,7 +240,17 @@ _.Instances = { tier(MOP_TIER, {
 							60585,	-- Elder Regail
 						},
 						["g"] = {
-							ach(6717),	-- Power Overwhelming
+							ach(6717, {	-- Power Overwhelming
+								crit(1, {	-- Protector Kaolan defeated last
+									["cr"] = 60583,	-- Protector Kaolan
+								}),
+								crit(2, {	-- Elder Regail defeated last
+									["cr"] = 60585,	-- Elder Regail
+								}),
+								crit(3, {	-- Elder Asani defeated last
+									["cr"] = 60586,	-- Elder Asani
+								}),
+							}),
 							n(-90, {	-- Elite
 								["description"] = "You must kill Protector Kaolan last!",
 								["g"] = {
@@ -378,7 +402,6 @@ _.Instances = { tier(MOP_TIER, {
 						},
 						["g"] = {
 							ach(6731),	-- Heroic: Protectors of the Endless
-							ach(6717),	-- Power Overwhelming
 							n(-90, {	-- Elite
 								["description"] = "You must kill Protector Kaolan last!",
 								["g"] = {
@@ -416,7 +439,6 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(62442, e(742, {	-- Tsulong
 						ach(6732),	-- Heroic: Tsulong
-						ach(6933),	-- Who's Got Two Green Thumbs
 						i(167051),	-- Azure Cloud Serpent Egg (PET!)
 						i(87156),	-- Gao-Rei, Staff of the Legendary Protector
 						i(87164),	-- Loshan, Terror Incarnate
@@ -444,7 +466,6 @@ _.Instances = { tier(MOP_TIER, {
 						i(87160),	-- Stuff of Nightmares
 					})),
 					cr(62983, e(729, {	-- Lei Shi
-						ach(6824),	-- Face Clutchers
 						ach(6733),	-- Heroic: Lei Shi
 						i(167052),	-- Spirit of the Spring (PET!)
 						i(89262, {	-- Shoulders of the Shadowy Conqueror
@@ -476,7 +497,6 @@ _.Instances = { tier(MOP_TIER, {
 						}),
 						ach(6676),	-- Heroic: Sha of Fear Guild Run
 						un(REMOVED_FROM_GAME, ach(6678)),	-- Realm First! Sha of Fear
-						ach(6825),	-- The Mind-Killer
 						i(89259, {	-- Helm of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 						}),

@@ -957,6 +957,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				},
 			}),
 			n(ZONE_DROPS, {
+				-- #IF ANYCLASSIC
 				["crs"] = {
 					17898,	-- Abomination
 					17905,	-- Banshee
@@ -968,6 +969,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					17908,	-- Giant Infernal
 					17899,	-- Shadowy Necromancer
 				},
+				-- #ENDIF
 				["groups"] = {
 					i(32748, {	-- Pattern: Bindings of Lightning Reflexes
 						["spellID"] = 41161,	-- Bindings of Lightning Reflexes

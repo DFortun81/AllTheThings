@@ -12,9 +12,16 @@ root(ROOTS.Zones, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(1678, {		-- Loremaster of Kalimdor
-					-- #IF AFTER 4.3
-					-- Meta Achievement
+				classicAch(1678, {	-- Loremaster of Kalimdor (A)
+					-- #if BEFORE WRATH
+					["description"] = "Complete 700 quests in Kalimdor.",
+					-- #endif
+					-- #if ANYCLASSIC
+					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_KALIMDOR_OnUpdate]],
+					["rank"] = 700,
+					-- #else
 					["sym"] = {{"meta_achievement",
 						4925,	-- Ashenvale Quests (Alliance)
 						4976,	-- Ashenvale Quests (Horde)
@@ -38,7 +45,23 @@ root(ROOTS.Zones, {
 						4939,	-- Un'Goro Crater Quests
 						4940,	-- Winterspring Quests
 					}},
-					-- #ENDIF
+					-- #endif
+					-- #if BEFORE 4.0.3
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
+				}),
+				classicAch(1680, {	-- Loremaster of Kalimdor (H)
+					-- #if BEFORE WRATH
+					["description"] = "Complete 685 quests in Kalimdor.",
+					-- #endif
+					["timeline"] = { "deleted 4.0.3" },
+					-- #if ANYCLASSIC
+					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_KALIMDOR_OnUpdate]],
+					["rank"] = 685,
+					-- #endif
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 		},

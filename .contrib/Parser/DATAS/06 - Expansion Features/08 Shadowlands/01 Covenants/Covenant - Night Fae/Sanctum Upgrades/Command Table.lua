@@ -11,6 +11,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					n(TIER_ONE, {
 						["icon"] = "Interface\\Icons\\Sanctum_features_missiontable",
 						["g"] = {
+							n(FOLLOWERS, bubbleDownSelf({
+								["u"] = 15,	-- Temporary troops
+							}, {
+								follower(1244),	-- Ardenweald Grovetender
+								follower(1293),	-- Ardenweald Grovetender
+								follower(1294),	-- Ardenweald Grovetender
+								follower(1316),	-- Ardenweald Grovetender
+								follower(1245),	-- Ardenweald Trapper
+								follower(1295),	-- Ardenweald Trapper
+								follower(1296),	-- Ardenweald Trapper
+								follower(1317),	-- Ardenweald Trapper
+								follower(1318),	-- Ardenweald Trapper
+							})),
 							n(QUESTS, {
 									q(64459, {	-- Adventurer: Elwyn
 									["description"] = "Requires Renown 62.",

@@ -15,9 +15,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 			TAZAVESH_AGGRAMARS_VAULT,
 		},
 		["g"] = {
-			--	TODO: add fp to fpdb / verify FP's name
 			n(ACHIEVEMENTS, {
-				ach(15190, {	-- Mischief!	-- TODO: may need to be moved to specific bosses depending on where these criteria can be found
+				ach(15190, {	-- Mischief!
 					crit(1, {	-- Pickle
 						["cr"] = 180817,	-- Pickle
 						["coord"] = { 39.91, 38.78, TAZAVESH_THE_MENAGERIE },
@@ -51,7 +50,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				pet(3109),	-- Silver Purrkin (PET!)
 			})),
 			n(FLIGHT_PATHS, {
-				fp(2703, {	-- 9.1, Tazavesh (Broker Dungeon)
+				fp(2703, {	-- Tazavesh, the Veiled Market
 					["coord"] = { 91.9, 41.9, TAZAVESH_THE_VEILED_MARKET_WORLD },
 					["cr"] = 178796,	-- Ta'rellano
 				}),

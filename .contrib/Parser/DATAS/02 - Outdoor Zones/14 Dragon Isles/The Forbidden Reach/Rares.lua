@@ -10,40 +10,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			["isDaily"] = true,
 		},{
 			n(COMMON_BOSS_DROPS, {
+				currency(2122),	-- Storm Sigil
 				i(192772, {	-- Ancient Salamanther (MOUNT!)
 					["crs"] = {
-						200740,	-- Agni Blazehoof
-						200743,	-- Amephyst
-						200737,	-- Arcantrix
 						200681,	-- Bonesifter Marwak
 						200610,	-- Duzalgor <Guardian of the Noxious Brood>
-						200725,	-- Faunos <Lord of Fleece>
-						200739,	-- Fimbol
 						200537,	-- Gahz'raxes
 						200717,	-- Galakhad
-						200722,	-- Gareed
 						200721,	-- Grugoth the Hullcrusher <Scource of the Coast>
 						200579,	-- Ishyra
-						200738,	-- Kangalo
 						200885,	-- Lady Shaz'ra
 						203353,	-- Loot Specialist <Venture Co. Acquisitions>
-						200742,	-- Luttrok
 						201181,	-- Mad-Eye Carrey
-						200621,	-- Manathema
 						200956,	-- Ookbeard <Irontide "Captain">
 						200978,	-- Pyrachniss
 						200600,	-- Reisa the Drowned
-						200620,	-- Sir Pinchalot
-						200622,	-- Snarfang
-						200619,	-- Tectonus
-						200730,	-- Tidesmith Zarviss
 						200904,	-- Veltrax
 						200584,	-- Vraken The Hunter
 						200911,	-- Volcanakk
 						200960,	-- Warden Entrix
 						201013,	-- Wyrmslayer Angvardi
 					},
-			--	["isDaily"] = IGNORED_VALUE, Do we need that?
 				}),
 			}),
 			n(200740, {	-- Agni Blazehoof

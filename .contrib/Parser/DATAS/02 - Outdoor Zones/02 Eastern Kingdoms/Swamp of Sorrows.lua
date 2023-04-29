@@ -116,6 +116,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 43088,	-- Yedrin <Flight Master>
 					["coord"] = { 30.6, 34.6, SWAMP_OF_SORROWS },
 					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			n(QUESTS, {
@@ -1530,6 +1531,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				i(6172, {	-- Lost Supplies
+					["timeline"] = { "removed 4.0.3" },
+				}),
 				i(6196, {	-- Noboru's Cudgel
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 5477,	-- Noboru the Cudgel

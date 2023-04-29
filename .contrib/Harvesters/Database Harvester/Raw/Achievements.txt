@@ -2718,7 +2718,7 @@
 16397@@@[DNT] Heirloom Tracking - Bloodied Arcanite Reaper (Hidden)
 16433@@@Soul of Iron (Season of Mastery)
 16437@@@[DNT] Soul of Iron Tracker (Season of Mastery) (hidden)
-3.4.1.48503
+3.4.1.47966
 17213@@@Defense Protocol Alpha: Utgarde Keep
 17283@@@Defense Protocol Alpha: The Nexus
 17285@@@Defense Protocol Alpha: Azjol-Nerub
@@ -2735,6 +2735,17 @@
 17328@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 17340@@@Ahead of the Curve: Yogg-Saron
 17341@@@Cutting Edge: Ulduar
+3.4.1.48019
+3.4.1.48120
+3.4.1.48340
+3.4.1.48503
+3.4.2.49311
+17415@@@Rival: Season 6
+17416@@@Gladiator: Season 6
+17417@@@Duelist: Season 6
+17418@@@Challenger: Season 6
+18375@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
+18376@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 4.0.1.12911
 736@@@Explore Mulgore NYI
 750@@@Explore Northern Barrens
@@ -11372,8 +11383,12 @@
 17343@@@Drop It Like It's Hot
 17345@@@Airborne Tumbler
 17420@@@Trial of Tyr Ineligible For Spark Skip [DNT]
-10.0.5.48526
+10.0.5.48001
 17495@@@<Hidden> 10.0 Professions Onboarding Skip Unlock [DNT] (copy)
+10.0.5.48069
+10.0.5.48317
+10.0.5.48397
+10.0.5.48526
 10.0.7.47910
 16532@@@True Friends with Sabellian
 17214@@@Stormsunder Crater Circuit: Bronze
@@ -11881,3 +11896,10 @@
 18168@@@I'll Make My Own Shadowflame
 18359@@@<Hidden> Account has completed 10.1 Upgrade System tutorial quests
 18361@@@To All the Squirrels Burrowed Beneath
+10.1.0.49190
+18214@@@Rashok, the Elder kills (Heroic Aberrus, the Shadowed Crucible)
+18219@@@Kazzara, the Hellforged kills (Mythic Aberrus, the Shadowed Crucible)
+18284@@@A Niffen's Best Buddy
+10.1.0.49222
+10.1.0.49255
+18380@@@Dragonflight Season 2 Hero

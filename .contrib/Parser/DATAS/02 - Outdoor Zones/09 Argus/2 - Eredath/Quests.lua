@@ -117,6 +117,18 @@ _.Zones =
 					["isWeekly"] = true,
 					["provider"] = { "n", 127037 },	-- Nabiru
 					["sourceQuest"] = 48911,	-- Void Inoculation
+					["groups"] = {
+						i(152096, {	-- Void-Purged Krokul
+							["groups"] = {
+								follower(1057, {	-- Void-Purged Krokul
+									["u"] = 15,	-- Temporary troop
+								}),
+								follower(1058, {	-- Void-Purged Krokul
+									["u"] = 15,	-- Temporary troop
+								}),
+							},
+						}),
+					},
 				}),
 				q(47686, {	-- Not-So-Humble Beginnings
 					["sourceQuests"] = { 46941 },	-- The Path Forward
@@ -214,6 +226,18 @@ _.Zones =
 					["sourceQuests"] = {
 						48446,	-- Relics of the Ancient Eredar
 						48654,	-- Beneath Oronaar
+					},
+					["groups"] = {
+						i(152096, {	-- Void-Purged Krokul
+							["groups"] = {
+								follower(1057, {	-- Void-Purged Krokul
+									["u"] = 15,	-- Temporary troop
+								}),
+								follower(1058, {	-- Void-Purged Krokul
+									["u"] = 15,	-- Temporary troop
+								}),
+							},
+						}),
 					},
 				}),
 				q(47855, {	-- What Might Have Been

@@ -1606,15 +1606,15 @@ _.Zones =
 								["requireSkill"] = TAILORING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
-							i(123950, {	-- Recipe: Demonsteel Pauldrons [Rank 3] (RECIPE!)
+							i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
-							i(137894, {	-- Recipe: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+							i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
 								["requireSkill"] = LEATHERWORKING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
-							i(137926, {	-- Recipe: Gravenscale Spaulders [Rank 3] (RECIPE!)
+							i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
 								["requireSkill"] = LEATHERWORKING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2979,14 +2979,14 @@ _.Zones =
 				n(92184, {	-- Imindril Spearsong <Blacksmithing Vendor>
 					["coord"] = { 46.2, 27.2, LEGION_DALARAN },
 					["g"] = {
-						i(123928),	-- Leystone Armguards [Rank 2] (RECIPE!)
-						i(123934),	-- Leystone Boots [Rank 2] (RECIPE!)
-						i(123935),	-- Leystone Breastplate [Rank 2] (RECIPE!)
-						i(123933),	-- Leystone Gauntlets [Rank 2] (RECIPE!)
-						i(137680),	-- Leystone Greaves [Rank 2] (RECIPE!)
-						i(123932),	-- Leystone Helm [Rank 2] (RECIPE!)
-						i(123930),	-- Leystone Pauldrons [Rank 2] (RECIPE!)
-						i(123929),	-- Leystone Waistguard [Rank 2] (RECIPE!)
+						i(123928),	-- Plans: Leystone Armguards [Rank 2] (RECIPE!)
+						i(123934),	-- Plans: Leystone Boots [Rank 2] (RECIPE!)
+						i(123935),	-- Plans: Leystone Breastplate [Rank 2] (RECIPE!)
+						i(123933),	-- Plans: Leystone Gauntlets [Rank 2] (RECIPE!)
+						i(137680),	-- Plans: Leystone Greaves [Rank 2] (RECIPE!)
+						i(123932),	-- Plans: Leystone Helm [Rank 2] (RECIPE!)
+						i(123930),	-- Plans: Leystone Pauldrons [Rank 2] (RECIPE!)
+						i(123929),	-- Plans: Leystone Waistguard [Rank 2] (RECIPE!)
 					},
 				}),
 				n(100500, {	-- Jabrul <Jewelcrafting Master>
@@ -4651,15 +4651,15 @@ _.Zones =
 								["requireSkill"] = TAILORING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
-							i(123950, {	-- Recipe: Demonsteel Pauldrons [Rank 3] (RECIPE!)
+							i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
-							i(137894, {	-- Recipe: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+							i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
 								["requireSkill"] = LEATHERWORKING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
-							i(137926, {	-- Recipe: Gravenscale Spaulders [Rank 3] (RECIPE!)
+							i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
 								["requireSkill"] = LEATHERWORKING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -5239,27 +5239,27 @@ _.Zones =
 				n(93521,  {	-- Ranid Glowergold <Leatherworking & Skinning Supplies>
 					["coord"] = { 34.6, 28.6, LEGION_DALARAN },
 					["g"] = {
-						i(137884),	-- Recipe: Dreadleather Bindings [Rank 2] (RECIPE!)
-						i(137890),	-- Recipe: Dreadleather Footpads [Rank 2] (RECIPE!)
-						i(137889),	-- Recipe: Dreadleather Gloves [Rank 2] (RECIPE!)
-						i(137891),	-- Recipe: Dreadleather Jerkin [Rank 2] (RECIPE!)
-						i(137888),	-- Recipe: Dreadleather Mask [Rank 2] (RECIPE!)
-						i(137887),	-- Recipe: Dreadleather Pants [Rank 2] (RECIPE!)
-						i(137886),	-- Recipe: Dreadleather Shoulderguard [Rank 2] (RECIPE!)
-						i(142407),	-- Recipe: Drums of the Mountain [Rank 1] (RECIPE!)
-						i(141850, {	-- Recipe: Elderhorn Riding Harness
+						i(137884),	-- Pattern: Dreadleather Bindings [Rank 2] (RECIPE!)
+						i(137890),	-- Pattern: Dreadleather Footpads [Rank 2] (RECIPE!)
+						i(137889),	-- Pattern: Dreadleather Gloves [Rank 2] (RECIPE!)
+						i(137891),	-- Pattern: Dreadleather Jerkin [Rank 2] (RECIPE!)
+						i(137888),	-- Pattern: Dreadleather Mask [Rank 2] (RECIPE!)
+						i(137887),	-- Pattern: Dreadleather Pants [Rank 2] (RECIPE!)
+						i(137886),	-- Pattern: Dreadleather Shoulderguard [Rank 2] (RECIPE!)
+						i(142407),	-- Pattern: Drums of the Mountain [Rank 1] (RECIPE!)
+						i(141850, {	-- Pattern: Elderhorn Riding Harness
 							["description"] = "The vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
 							["g"] = {
 								i(129962),	-- Great Northern Elderhorn (MOUNT!)
 							},
 						}),
-						i(137916),	-- Recipe: Gravenscale Armbands [Rank 2] (RECIPE!)
-						i(137921),	-- Recipe: Gravenscale Grips [Rank 2] (RECIPE!)
-						i(137923),	-- Recipe: Gravenscale Hauberk [Rank 2] (RECIPE!)
-						i(137919),	-- Recipe: Gravenscale Leggings [Rank 2] (RECIPE!)
-						i(137918),	-- Recipe: Gravenscale Spaulders [Rank 2] (RECIPE!)
-						i(137922),	-- Recipe: Gravenscale Treads [Rank 2] (RECIPE!)
-						i(137920),	-- Recipe: Gravenscale Warhelm [Rank 2] (RECIPE!)
+						i(137916),	-- Pattern: Gravenscale Armbands [Rank 2] (RECIPE!)
+						i(137921),	-- Pattern: Gravenscale Grips [Rank 2] (RECIPE!)
+						i(137923),	-- Pattern: Gravenscale Hauberk [Rank 2] (RECIPE!)
+						i(137919),	-- Pattern: Gravenscale Leggings [Rank 2] (RECIPE!)
+						i(137918),	-- Pattern: Gravenscale Spaulders [Rank 2] (RECIPE!)
+						i(137922),	-- Pattern: Gravenscale Treads [Rank 2] (RECIPE!)
+						i(137920),	-- Pattern: Gravenscale Warhelm [Rank 2] (RECIPE!)
 					},
 				}),
 				n(97332,  {	-- Richard Hatstock <Haberdasher>
@@ -6682,10 +6682,10 @@ _.Zones =
 						i(141862, {	-- Mote of Light (TOY!)
 							["cost"] = { { "c", 1275, 50 }, },	-- 50x Curious Coin
 						}),
-						i(136699, {	-- Recipe: Flamespike (RECIPE!)
+						i(136699, {	-- Plans: Flamespike (RECIPE!)
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
-						i(137935, {	-- Recipe: Leather Love Seat
+						i(137935, {	-- Pattern: Leather Love Seat
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 						i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix

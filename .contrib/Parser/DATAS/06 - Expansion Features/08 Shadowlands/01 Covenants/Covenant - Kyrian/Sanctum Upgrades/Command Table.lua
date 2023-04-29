@@ -11,6 +11,18 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					n(TIER_ONE, {
 						["icon"] = "Interface\\Icons\\Sanctum_features_missiontable",
 						["g"] = {
+							n(FOLLOWERS, bubbleDownSelf({
+								["u"] = 15,	-- Temporary troops
+							}, {
+								follower(1241),	-- Kyrian Halberdier
+								follower(1291),	-- Kyrian Halberdier
+								follower(1292),	-- Kyrian Halberdier
+								follower(1319),	-- Kyrian Halberdier
+								follower(1240),	-- Kyrian Phalanx
+								follower(1289),	-- Kyrian Phalanx
+								follower(1290),	-- Kyrian Phalanx
+								follower(1320),	-- Kyrian Phalanx
+							})),
 							n(QUESTS, {
 								q(57900, {	-- Across the Shadowlands
 									["sourceQuests"] = { 57899 },	-- More Work?

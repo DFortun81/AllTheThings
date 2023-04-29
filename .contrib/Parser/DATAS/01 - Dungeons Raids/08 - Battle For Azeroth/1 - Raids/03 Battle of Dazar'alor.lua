@@ -27,6 +27,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 				}),
 				ach(13319),	-- Battle of Dazar'alor Guild Run (H)
 				ach(13320),	-- Battle of Dazar'alor Guild Run (A)
+				-- TODO: this requires further revision....
 				ach(13286),	-- Siege of Dazar'alor (A)
 				ach(13289),	-- Defense of Dazar'alor (H)
 				ach(13287),	-- Empire's Fall (A)

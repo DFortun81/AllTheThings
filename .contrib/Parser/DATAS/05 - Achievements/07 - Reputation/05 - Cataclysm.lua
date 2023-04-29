@@ -7,9 +7,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		ach(4886, {	-- Dragonmaw Clan
 			["races"] = HORDE_ONLY,
 		}),
-		ach(5376, {	-- Hellscream's Reach
-			["races"] = HORDE_ONLY,
-		}),
 		ach(4884),	-- Ramkahen
 		ach(4881),	-- The Earthen Ring
 		ach(4882),	-- The Guardians of Hyjal

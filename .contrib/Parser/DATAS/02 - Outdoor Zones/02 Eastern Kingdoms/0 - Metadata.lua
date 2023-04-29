@@ -20,9 +20,16 @@ root(ROOTS.Zones, {
 						12429,	-- Wetlands Quests
 					}},
 				})),
-				ach(1676, {		-- Loremaster of Eastern Kingdoms
-					-- #IF AFTER 4.3
-					-- Meta Achievement
+				classicAch(1676, {	-- Loremaster of Eastern Kingdoms
+					-- #if BEFORE WRATH
+					["description"] = "Complete 700 quests in Eastern Kingdoms.",
+					-- #endif
+					-- #if ANYCLASSIC
+					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_EASTERNKINGDOMS_OnUpdate]],
+					["rank"] = 700,
+					-- #else
 					["sym"] = {{"meta_achievement",
 						4896,	-- Arathi Highlands Quests
 						4900,	-- Badlands Quests
@@ -44,7 +51,23 @@ root(ROOTS.Zones, {
 						12456,	-- Loch Modan & Wetlands Quests
 						-- #ENDIF
 					}},
-					-- #ENDIF
+					-- #endif
+					-- #if BEFORE 4.0.3
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
+				}),
+				classicAch(1677, {	-- Loremaster of Eastern Kingdoms
+					-- #if BEFORE WRATH
+					["description"] = "Complete 550 quests in Eastern Kingdoms.",
+					-- #endif
+					["timeline"] = { "deleted 4.0.3" },
+					-- #if ANYCLASSIC
+					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_EASTERNKINGDOMS_OnUpdate]],
+					["rank"] = 550,
+					-- #endif
+					["races"] = HORDE_ONLY,
 				}),
 				a(ach(12455, {	-- Westfall & Duskwood Quests
 					["timeline"] = { ADDED_7_3_5 },

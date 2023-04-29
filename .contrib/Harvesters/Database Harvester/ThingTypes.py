@@ -84,8 +84,6 @@ class Factions(Thing):
 
 
 class FlightPaths(Thing):
-    db_path = Path("..", "..", "..", "db", "FlightPathDB.lua")
-
     @staticmethod
     def table() -> str:
         return "taxinodes"
@@ -121,7 +119,7 @@ class Followers(Thing):
 
     @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
-        return ("follower(",)
+        return "follower(", "followerID"
 
     @staticmethod
     def new_prefix() -> str:
@@ -205,7 +203,7 @@ class Pets(Thing):
 
     @staticmethod
     def new_prefix() -> str:
-        return Pets.existing_prefixes()[0]
+        return "pet("
 
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
@@ -237,7 +235,6 @@ class Quests(Thing):
 
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
-        # TODO: I think we need wowhead here.
         return row["ID"]
 
 

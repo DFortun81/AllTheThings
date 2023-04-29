@@ -127,7 +127,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							["questID"] = 57429,
 							["coord"] = { 59.8, 72.4, 1527 },
 							["g"] = {
-								i(174478),	-- Wicked Lurker (pet)
+								i(174478),	-- Wicked Lurker (PET!)
 							},
 						}),
 						n(158594, {	-- Doomsayer Vathiris
@@ -889,7 +889,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							["questID"] = 56340,
 							["coord"] = { 34.67, 18.90, 1527 },
 							["g"] = {
-								i(174475),	-- Stinky Sack (pet)
+								i(174475),	-- Rotbreath (PET!)
 							},
 						}),
 						n(156078, {	-- Magus Rehleth
@@ -917,7 +917,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 								{ 25.2, 59.6, 1527 },
 							},
 							["g"] = {
-								i(174476),	-- Black Chitinous Plate (pet)
+								i(174476),	-- Aqir Tunneler (pet)
 							},
 						}),
 						n(162170, {	-- Warcaster Xeshro
@@ -1029,7 +1029,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(173283, {	-- Token of a Brilliant Death (Rank 4)
 								["u"] = REMOVED_FROM_GAME,
 							}),
-							i(174481),	-- Cursed Dune Watcher
+							i(174481),	-- Cursed Dune Watcher (PET!)
 						}),
 					},
 				}),
@@ -1049,12 +1049,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					}),
 				}),
 				petbattle(filter(BATTLE_PETS, {
-					pet(2863, {	-- Oasis Void-Duster
-						["crs"] = { 162499 },
-					}),
-					pet(2864, {	-- Void-Scarred Locust
-						["crs"] = { 162502 },
-					}),
+					pet(2863),	-- Oasis Void-Duster (PET!)
+					pet(2864),	-- Void-Scarred Locust (PET!)
 				})),
 				n(QUESTS, {
 					q(58802, {	-- The Incredible Egg
@@ -1201,7 +1197,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["sourceQuest"] = 58813,	-- Fetid Filets
 						["description"] = "Must reach 5000/5000 with the larva's progress bar.",
 						["g"] = {
-							i(175049),	-- Shadowbarb Hatchling
+							i(175049),	-- Shadowbarb Hatchling (PET!)
 						},
 					}),
 					q(58830, {	-- Aqir Instincts
@@ -1470,14 +1466,19 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 									{ "c", 1719, 100 },		-- 100x Corrupted Memento
 								},
 							}),
-							i(172011, {	-- Recipe: Contract: Uldum Accord (RECIPE!)
+							i(172011, {	-- Technique: Contract: Uldum Accord (RECIPE!)
 								["cost"] = 13300000,	-- 1,330 gold
 							}),
 							i(174904, {	-- Troop Requisition: Ramkahen Lancer
 								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 								["questID"] = 58906,
+								["g"] = {
+									follower(1186, {	-- Ramkahen Lancer
+										["u"] = 15,	-- Temporary troop
+									}),
+								},
 							}),
-							i(174477, {	-- Pygmy Camel
+							i(174477, {	-- Pygmy Camel (PET!)
 								["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
 							}),
 							i(174648, {	-- Uldum Accord Tabard
@@ -1494,13 +1495,13 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					["g"] = {
 						n(ZONE_DROPS, {
 							i(174837),	-- Decaying Fusion Core (14 day timer on this. use it at 78/65 during Amathet assault to get fast percentage)
-							i(171312, {	-- Recipe: Void Focus
-								["spellID"] = 0,
+							i(171312, {	-- Recipe: Void Focus (RECIPE!)
+								recipe(307221),	-- Void Focus [Blacksmithing]
 							}),
 							i(174491, {	-- Tome of Unspeakable Delicacies
 								["spellID"] = 0,
 							}),
-							i(174462),	-- Void Cocoon
+							i(174462),	-- Void-Scarred Beetle (PET!)
 						}),
 					},
 				}),

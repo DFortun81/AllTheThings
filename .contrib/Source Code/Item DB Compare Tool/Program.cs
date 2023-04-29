@@ -24,6 +24,7 @@ namespace ATT
         static HashSet<string> ObsoleteTags { get; } = new HashSet<string>()
         {
             "_bad_races",
+            "ignoreSource"
         };
 
         /// <summary>

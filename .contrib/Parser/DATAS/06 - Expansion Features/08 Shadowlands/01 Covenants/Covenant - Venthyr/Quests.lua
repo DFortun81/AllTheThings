@@ -278,7 +278,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
 				["provider"] = { "i", 178557 },	-- Supply Chain Memo
 				["coord"] = { 57.4, 69.2, REVENDRETH },	-- rough area
-				["crs"] = { 158796 },	-- Stonevigil Collector
 			}),
 			q(58384, {	-- Dredgers Left Behind
 				["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures

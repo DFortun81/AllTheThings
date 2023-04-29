@@ -95,18 +95,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				petbattle(q(71145, {	-- The Grand Master
 					["coord"] = { 13.5, 50.0, THE_AZURE_SPAN },
 				})),
+				q(70037, {	-- Unpowered Tools [Cobalt]
+					["coord"] = { 47.4, 24.6, THE_AZURE_SPAN },
+				}),
 				pvp(q(72019, {	-- Seeing through the Enemy: Nezascar
 					["coord"] = { 29.7, 29.8, THE_AZURE_SPAN },
 				})),
 				pvp(q(70439, {	-- Wild Arcana [Cobalt]
 					["coord"] = { 51.3, 24.6, THE_AZURE_SPAN },
 				})),
-				--[[
-				-- probably NYI
-				q(70037, {	-- Unpowered Tools [Cobalt]
-					["coord"] = { 47.4, 24.6, THE_AZURE_SPAN },
-				}),
-				--]]
 			}),
 		}),
 	}),

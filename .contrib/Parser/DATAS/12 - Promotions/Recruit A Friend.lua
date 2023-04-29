@@ -98,7 +98,7 @@ root(ROOTS.Promotions, {
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
 		}),
-		i(173296, {	-- Rikki's Pith Helmet (PET!)
+		i(173296, {	-- Rikki (PET!)
 			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
 		}),
 	})),

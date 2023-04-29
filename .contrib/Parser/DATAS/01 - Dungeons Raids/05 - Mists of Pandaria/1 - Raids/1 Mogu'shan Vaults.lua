@@ -12,6 +12,28 @@ _.Instances = { tier(MOP_TIER, {
 		["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },	-- Mogu'shan Terrace
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(6458, {	-- Guardians of Mogu'shan
+					crit(1, {	-- The Stone Guard
+						["_encounter"] = { 679, 7 },
+					}),
+					crit(2, {	-- Feng the Accursed
+						["_encounter"] = { 689, 7 },
+					}),
+					crit(3, {	-- Gara'jal the Spiritbinder
+						["_encounter"] = { 682, 7 },
+					}),
+				}),
+				ach(6844, {	-- The Vault of Mysteries
+					crit(1, {	-- The Spirit Kings
+						["_encounter"] = { 687, 7 },
+					}),
+					crit(2, {	-- Elegon
+						["_encounter"] = { 726, 7 },
+					}),
+					crit(3, {	-- Will of the Emperor
+						["_encounter"] = { 677, 7 },
+					}),
+				}),
 				ach(6668),	-- Mogu'shan Vaults Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
@@ -96,7 +118,7 @@ _.Instances = { tier(MOP_TIER, {
 							})),
 						},
 					}),
-					ach(6458, {	-- Guardians of Mogu'shan
+					header(HEADERS.Achievement, 6458, {	-- Guardians of Mogu'shan
 						e(679, {	-- The Stone Guard
 							["crs"] = {
 								60047,	-- Amethyst Guardian
@@ -161,7 +183,7 @@ _.Instances = { tier(MOP_TIER, {
 							},
 						}),
 					}),
-					ach(6844, {	-- The Vault of Mysteries
+					header(HEADERS.Achievement, 6844, {	-- The Vault of Mysteries
 						e(687, {	-- The Spirit Kings
 							["crs"] = {
 								60708,	-- Meng the Demented
@@ -231,6 +253,9 @@ _.Instances = { tier(MOP_TIER, {
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
+					n(ACHIEVEMENTS, {
+						ach(7933),    -- And... It's Good!
+					}),
 					n(ZONE_DROPS, {
 						["groups"] = {
 							i(86238),	-- Pattern: Chestguard of Nemeses
@@ -287,31 +312,13 @@ _.Instances = { tier(MOP_TIER, {
 					e(689, {	-- Feng the Accursed
 						["crs"] = { 60009 },	-- Feng the Accursed
 						["groups"] = {
-							{	-- Anything You Can Do, I Can Do Better...
-								["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-								["groups"] = {
-									{	-- Arcane Resonance
-										["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-										["criteriaID"] = 5,	-- Arcane Resonance
-									},
-									{	-- Arcane Velocity
-										["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-										["criteriaID"] = 4,	-- Arcane Velocity
-									},
-									{	-- Epicenter
-										["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-										["criteriaID"] = 1,	-- Epicenter
-									},
-									{	-- Lightning Fists
-										["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-										["criteriaID"] = 2,	-- Lightning Fists
-									},
-									{	-- Wildfire Spark
-										["achievementID"] = 6674,	-- Anything You Can Do, I Can Do Better...
-										["criteriaID"] = 3,	-- Wildfire Spark
-									},
-								},
-							},
+							ach(6674, {	-- Anything You Can Do, I Can Do Better...
+								crit(1),	-- Epicenter
+								crit(2),	-- Lightning Fists
+								crit(3),	-- Wildfire Spark
+								crit(4),	-- Arcane Velocity
+								crit(5),	-- Arcane Resonance
+							}),
 							i(89424),	-- Fan of Fiery Winds
 							i(85989),	-- Hood of Cursed Dreams
 							i(85984),	-- Nullification Greathelm
@@ -373,7 +380,6 @@ _.Instances = { tier(MOP_TIER, {
 							i(86084),	-- Meng's Treads of Insanity
 						},
 					}),
-					ach(7933),    -- And... It's Good!
 					e(726, {	-- Elegon
 						["crs"] = { 60410 },	-- Elegon
 						["g"] = {
@@ -540,7 +546,6 @@ _.Instances = { tier(MOP_TIER, {
 							i(87055),	-- Meng's Treads of Insanity
 						},
 					}),
-					ach(7933),    -- And... It's Good!
 					e(726, {	-- Elegon
 						["crs"] = { 60410 },	-- Elegon
 						["g"] = {

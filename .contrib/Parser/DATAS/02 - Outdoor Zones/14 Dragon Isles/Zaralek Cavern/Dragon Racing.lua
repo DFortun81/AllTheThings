@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17491,	-- Zaralek Cavern Reverse: Gold
 						}},
 						["g"] = {
-							-- Title
+							title(509),	-- Zaralek Cavern Racer <Name>
 						},
 					}),
 				}),

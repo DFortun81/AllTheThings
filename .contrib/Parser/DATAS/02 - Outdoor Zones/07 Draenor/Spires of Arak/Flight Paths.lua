@@ -12,6 +12,7 @@ _.Zones =
 				}),
 				fp(1487, {	-- Axefall, Spires of Arak
 					["coord"] = { 39.4, 43.2, SPIRES_OF_ARAK },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1515, {	-- Crow's Crook, Spires of Arak
 					["coord"] = { 51.8, 31.0, SPIRES_OF_ARAK },
@@ -21,6 +22,7 @@ _.Zones =
 				}),
 				fp(1493, {	-- Southport, Spires of Arak
 					["coord"] = { 39.0, 61.8, SPIRES_OF_ARAK },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1509, {	-- Talon Watch, Spires of Arak
 					["coord"] = { 61.8, 42.6, SPIRES_OF_ARAK },

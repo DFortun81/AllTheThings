@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 						["cost"] = 5000000,	-- 500g
 					}),
 					i(167693),	-- Neural Autonomy
-					i(169547, {	-- Recipe: Contract: Rustbolt Resistance (RECIPE!)
+					i(169547, {	-- Technique: Contract: Rustbolt Resistance (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(168369, {	-- Recipe: Famine Evaluator And Snack Table (Rank 2)

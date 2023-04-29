@@ -81,6 +81,7 @@ _.Zones =
 				q(30884, {	-- Behind the Battlefront
 					["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
 					["provider"] = { "n", 61066 },	-- Taran Zhu
+					["sourceQuest"] = 30785,	-- Gao-Ran Battlefront
 				}),
 				q(31895, {	-- Better Off Dread
 					["coord"] = { 39.4, 61.9, TOWNLONG_STEPPES },

@@ -29,6 +29,56 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(8458, {	-- Vale of Eternal Sorrows
+					crit(1, {	-- Immerseus
+						["_encounter"] = { 852, LFR_RAID },
+					}),
+					crit(2, {	-- The Fallen Protectors
+						["_encounter"] = { 849, LFR_RAID },
+					}),
+					crit(3, {	-- Norushen
+						["_encounter"] = { 866, LFR_RAID },
+					}),
+					crit(4, {	-- Sha of Pride
+						["_encounter"] = { 867, LFR_RAID },
+					}),
+				}),
+				ach(8459, {	-- Gates of Retribution
+					crit(1, {	-- Galakras
+						["_encounter"] = { 881, LFR_RAID },
+					}),
+					crit(2, {	-- Iron Juggernaut
+						["_encounter"] = { 864, LFR_RAID },
+					}),
+					crit(3, {	-- Kor'kron Dark Shaman
+						["_encounter"] = { 856, LFR_RAID },
+					}),
+					crit(4, {	-- General Nazgrim
+						["_encounter"] = { 850, LFR_RAID },
+					}),
+				}),
+				ach(8461, {	-- The Underhold
+					crit(1, {	-- Malkorok
+						["_encounter"] = { 846, LFR_RAID },
+					}),
+					crit(2, {	-- Spoils of Pandaria
+						["_encounter"] = { 870, LFR_RAID },
+					}),
+					crit(3, {	-- Thok the Bloodthirsty
+						["_encounter"] = { 851, LFR_RAID },
+					}),
+				}),
+				ach(8462, {	-- Downfall
+					crit(1, {	-- Siegecrafter Blackfuse
+						["_encounter"] = { 865, LFR_RAID },
+					}),
+					crit(2, {	-- Paragons of the Klaxxi
+						["_encounter"] = { 853, LFR_RAID },
+					}),
+					crit(3, {	-- Garrosh Hellscream
+						["_encounter"] = { 869, LFR_RAID },
+					}),
+				}),
 				ach(8510),	-- Siege of Orgrimmar Guild Run
 			}),
 			n(QUESTS, {
@@ -1888,7 +1938,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						-- i(113219),	-- Romy's Reliable Grips
 						-- i(113229),	-- Zoid's Molten Gauntlets
 					}),
-					ach(8458, {	-- Vale of Eternal Sorrows
+					header(HEADERS.Achievement, 8458, {	-- Vale of Eternal Sorrows
 						cr(71543, e(852, {	-- Immerseus
 							crit(1, {	-- Immerseus
 								["achievementID"] = 8458,	-- Vale of Eternal Sorrows
@@ -2003,11 +2053,8 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 							i(112948),	-- Prismatic Prison of Pride
 						})),
 					}),
-					ach(8459, {	-- Gates of Retribution
+					header(HEADERS.Achievement, 8459, {	-- Gates of Retribution
 						cr(72249, e(881, {	-- Galakras
-							crit(1, {	-- Galakras
-								["achievementID"] = 8459,	-- Gates of Retribution
-							}),
 							i(112723),	-- Drakebinder Greatstaff
 							i(112710),	-- Dagryn's Discarded Longbow
 							i(112717),	-- Flameslinger's Fiery Cowl
@@ -2032,9 +2079,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 							i(112703),	-- Evil Eye of Galakras
 						})),
 						cr(71466, e(864, {	-- Iron Juggernaut
-							crit(2, {	-- Iron Juggernaut
-								["achievementID"] = 8459,	-- Gates of Retribution
-							}),
 							i(112736),	-- Seismic Bore
 							i(112748),	-- Juggernaut's Power Core
 							i(112742),	-- Juggernaut's Ignition Keys
@@ -2062,9 +2106,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 							}),
 						})),
 						cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-							crit(3, {	-- Kor'kron Dark Shaman
-								["achievementID"] = 8459,	-- Gates of Retribution
-							}),
 							i(112759),	-- Haromm's Frozen Crescent
 							i(112769),	-- Kardris' Scepter
 							i(112770),	-- Darkfang Mask
@@ -2088,9 +2129,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 							i(112768),	-- Kardris' Toxic Totem
 						})),
 						cr(71515, e(850, {	-- General Nazgrim
-							crit(4, {	-- General Nazgrim
-								["achievementID"] = 8459,	-- Gates of Retribution
-							}),
 							i(99681),	-- Gauntlets of the Cursed Conqueror
 							i(99667),	-- Gauntlets of the Cursed Protector
 							i(99680),	-- Gauntlets of the Cursed Vanquisher
@@ -2107,11 +2145,8 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 							i(112778),	-- Nazgrim's Burnished Insignia
 						})),
 					}),
-					ach(8461, {	-- The Underhold
+					header(HEADERS.Achievement, 8461, {	-- The Underhold
 						cr(71454, e(846, {	-- Malkorok
-							crit(1, {	-- Malkorok
-								["achievementID"] = 8461,	-- The Underhold
-							}),
 							i(112805),	-- Halberd of Inner Shadows
 							i(112804),	-- Malkorok's Skullcleaver
 							i(112806),	-- Kor'kron Hand Cannon
@@ -2136,9 +2171,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 							i(112792),	-- Vial of Living Corruption
 						})),
 						cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-							crit(2, {	-- Spoils of Pandaria
-								["achievementID"] = 8461,	-- The Underhold
-							}),
 							i(112835),	-- Enchanted Shao-Tien Saber
 							i(112841),	-- Immaculately Preserved Wand
 							i(112829),	-- Ancient Mogu Tower Shield
@@ -2162,9 +2194,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 							i(112825),	-- Sigil of Rampage
 						})),
 						cr(71529, e(851, {	-- Thok the Bloodthirsty
-							crit(3, {	-- Thok the Bloodthirsty
-								["achievementID"] = 8461,	-- The Underhold
-							}),
 							i(99672),	-- Helm of the Cursed Conqueror
 							i(99673),	-- Helm of the Cursed Protector
 							i(99671),	-- Helm of the Cursed Vanquisher
@@ -2181,11 +2210,8 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 							i(112850),	-- Thok's Tail Tip
 						})),
 					}),
-					ach(8462, {	-- Downfall
+					header(HEADERS.Achievement, 8462, {	-- Downfall
 						cr(71504, e(865, {	-- Siegecrafter Blackfuse
-							crit(1, {	-- Siegecrafter Blackfuse
-								["achievementID"] = 8462,	-- Downfall
-							}),
 							i(104158),	-- Blackfuse Bombling (PET!)
 							i(99669),	-- Shoulders of the Cursed Conqueror
 							i(99670),	-- Shoulders of the Cursed Protector
@@ -2203,9 +2229,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 							i(112879),	-- Ticking Ebon Detonator
 						})),
 						cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-							crit(2, {	-- Paragons of the Klaxxi
-								["achievementID"] = 8462,	-- Downfall
-							}),
 							title(231, {	-- <Name> the Poisoned Mind
 								["collectible"] = false,
 							}),
@@ -2250,9 +2273,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 							i(112913),	-- Skeer's Bloodsoaked Talisman
 						})),
 						cr(71865, e(869, {	-- Garrosh Hellscream
-							crit(3, {	-- Garrosh Hellscream
-								["achievementID"] = 8462,	-- Downfall
-							}),
 							i(105861, {	-- Essence of the Cursed Conqueror
 								["classes"] = {
 									PALADIN,
@@ -2435,9 +2455,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112948),	-- Prismatic Prison of Pride
 				})),
 				cr(72249, e(881, {	-- Galakras
-					crit(1, {	-- Galakras
-						["achievementID"] = 8459,	-- Gates of Retribution
-					}),
 					ach(8530),	-- The Immortal Vanguard
 					i(112723),	-- Drakebinder Greatstaff
 					i(112710),	-- Dagryn's Discarded Longbow
@@ -2463,9 +2480,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112703),	-- Evil Eye of Galakras
 				})),
 				cr(71466, e(864, {	-- Iron Juggernaut
-					crit(2, {	-- Iron Juggernaut
-						["achievementID"] = 8459,	-- Gates of Retribution
-					}),
 					ach(8520),	-- Fire in the Hole!
 					i(112736),	-- Seismic Bore
 					i(112748),	-- Juggernaut's Power Core
@@ -2499,9 +2513,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						71858,	-- Wavebinder Kardris
 					},
 					["g"] = {
-						crit(3, {	-- Kor'kron Dark Shaman
-							["achievementID"] = 8459,	-- Gates of Retribution
-						}),
 						ach(8453),	-- Rescue Raiders
 						i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
 							i(105745),	-- Kor'kron Dark Shaman Cowl
@@ -2537,9 +2548,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					},
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
-					crit(4, {	-- General Nazgrim
-						["achievementID"] = 8459,	-- Gates of Retribution
-					}),
 					ach(8448),	-- Gamon Will Save Us!
 					i(99746),	-- Gauntlets of the Cursed Conqueror
 					i(99747),	-- Gauntlets of the Cursed Protector
@@ -2557,9 +2565,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112778),	-- Nazgrim's Burnished Insignia
 				})),
 				cr(71454, e(846, {	-- Malkorok
-					crit(1, {	-- Malkorok
-						["achievementID"] = 8461,	-- The Underhold
-					}),
 					ach(8538),	-- Unlimited Potential
 					i(112805),	-- Halberd of Inner Shadows
 					i(112804),	-- Malkorok's Skullcleaver
@@ -2585,9 +2590,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112792),	-- Vial of Living Corruption
 				})),
 				cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-					crit(2, {	-- Spoils of Pandaria
-						["achievementID"] = 8461,	-- The Underhold
-					}),
 					ach(8529),	-- Criss Cross
 					i(112835),	-- Enchanted Shao-Tien Saber
 					i(112841),	-- Immaculately Preserved Wand
@@ -2612,9 +2614,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112825),	-- Sigil of Rampage
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
-					crit(3, {	-- Thok the Bloodthirsty
-						["achievementID"] = 8461,	-- The Underhold
-					}),
 					ach(8527),	-- Giant Dinosaur vs. Mega Snail
 					i(99749),	-- Helm of the Cursed Conqueror
 					i(99750),	-- Helm of the Cursed Protector
@@ -2632,12 +2631,9 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112850),	-- Thok's Tail Tip
 				})),
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
-					crit(1, {	-- Siegecrafter Blackfuse
-						["achievementID"] = 8462,	-- Downfall
-					}),
 					ach(8543, {	-- Lasers and Magnets and Drills! Oh My!
-						crit(2),	-- Deactivated Electromagnet
 						crit(1),	-- Deactivated Laser Turret
+						crit(2),	-- Deactivated Electromagnet
 						crit(3),	-- Deactivated Missile Turret
 						crit(4),	-- Disassembled Crawler Mines
 					}),
@@ -2658,9 +2654,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112879),	-- Ticking Ebon Detonator
 				})),
 				cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-					crit(2, {	-- Paragons of the Klaxxi
-						["achievementID"] = 8462,	-- Downfall
-					}),
 					ach(8531),	-- Now We are the Paragon
 					title(231, {	-- <Name> the Poisoned Mind
 						["collectible"] = false,
@@ -2706,9 +2699,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112913),	-- Skeer's Bloodsoaked Talisman
 				})),
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					crit(3, {	-- Garrosh Hellscream
-						["achievementID"] = 8462,	-- Downfall
-					}),
 					ach(8537),	-- Strike!
 					i(105864, {	-- Essence of the Cursed Conqueror
 						["classes"] = {
@@ -2774,10 +2764,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(113229),	-- Zoid's Molten Gauntlets
 				}),
 				cr(71543, e(852, {	-- Immerseus
-					crit(1, {	-- Immerseus
-						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-					}),
-					ach(8536),	-- No More Tears
 					i(110784),	-- Trident of Corrupted Waters
 					i(110785),	-- Encapsulated Essence of Immerseus
 					i(112382),	-- Hood of Blackened Tears
@@ -2808,10 +2794,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
 					["g"] = {
-						crit(2, {	-- Fallen Protectors
-							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						}),
-						ach(8528),	-- Go Long
 						i(112477),	-- Softfoot's Last Resort
 						i(112478),	-- Death Lotus Crossbow
 						i(112491),	-- Purehearted Cricket Cage
@@ -2840,10 +2822,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						71965,	-- Norushen
 					},
 					["g"] = {
-						crit(3, {	-- Norushen
-							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						}),
-						ach(8532),	-- None Shall Pass
 						i(112547),	-- Norushen's Shortblade
 						i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 						i(112560),	-- Norushen's Enigmatic Barrier
@@ -2869,10 +2847,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					},
 				})),
 				cr(71734, e(867, {	-- Sha of Pride
-					crit(4, {	-- Sha of Pride
-						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-					}),
-					ach(8521),	-- Swallow Your Pride
 					i(99686),	-- Chest of the Cursed Conqueror
 					i(99691),	-- Chest of the Cursed Protector
 					i(99696),	-- Chest of the Cursed Vanquisher
@@ -2890,10 +2864,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112948),	-- Prismatic Prison of Pride
 				})),
 				cr(72249, e(881, {	-- Galakras
-					crit(1, {	-- Galakras
-						["achievementID"] = 8459,	-- Gates of Retribution
-					}),
-					ach(8530),	-- The Immortal Vanguard
 					i(112723),	-- Drakebinder Greatstaff
 					i(112710),	-- Dagryn's Discarded Longbow
 					i(112717),	-- Flameslinger's Fiery Cowl
@@ -2918,10 +2888,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112703),	-- Evil Eye of Galakras
 				})),
 				cr(71466, e(864, {	-- Iron Juggernaut
-					crit(2, {	-- Iron Juggernaut
-						["achievementID"] = 8459,	-- Gates of Retribution
-					}),
-					ach(8520),	-- Fire in the Hole!
 					i(112736),	-- Seismic Bore
 					i(112748),	-- Juggernaut's Power Core
 					i(112742),	-- Juggernaut's Ignition Keys
@@ -2954,10 +2920,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						71858,	-- Wavebinder Kardris
 					},
 					["g"] = {
-						crit(3, {	-- Kor'kron Dark Shaman
-							["achievementID"] = 8459,	-- Gates of Retribution
-						}),
-						ach(8453),	-- Rescue Raiders
 						i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
 							i(105745),	-- Kor'kron Dark Shaman Cowl
 							i(105747),	-- Kor'kron Dark Shaman Shoulder
@@ -2992,10 +2954,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					},
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
-					crit(4, {	-- General Nazgrim
-						["achievementID"] = 8459,	-- Gates of Retribution
-					}),
-					ach(8448),	-- Gamon Will Save Us!
 					i(99687),	-- Gauntlets of the Cursed Conqueror
 					i(99692),	-- Gauntlets of the Cursed Protector
 					i(99682),	-- Gauntlets of the Cursed Vanquisher
@@ -3012,10 +2970,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112778),	-- Nazgrim's Burnished Insignia
 				})),
 				cr(71454, e(846, {	-- Malkorok
-					crit(1, {	-- Malkorok
-						["achievementID"] = 8461,	-- The Underhold
-					}),
-					ach(8538),	-- Unlimited Potential
 					i(112805),	-- Halberd of Inner Shadows
 					i(112804),	-- Malkorok's Skullcleaver
 					i(112806),	-- Kor'kron Hand Cannon
@@ -3040,10 +2994,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112792),	-- Vial of Living Corruption
 				})),
 				cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-					crit(2, {	-- Spoils of Pandaria
-						["achievementID"] = 8461,	-- The Underhold
-					}),
-					ach(8529),	-- Criss Cross
 					i(112835),	-- Enchanted Shao-Tien Saber
 					i(112841),	-- Immaculately Preserved Wand
 					i(112829),	-- Ancient Mogu Tower Shield
@@ -3067,10 +3017,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112825),	-- Sigil of Rampage
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
-					crit(3, {	-- Thok the Bloodthirsty
-						["achievementID"] = 8461,	-- The Underhold
-					}),
-					ach(8527),	-- Giant Dinosaur vs. Mega Snail
 					i(99689),	-- Helm of the Cursed Conqueror
 					i(99694),	-- Helm of the Cursed Protector
 					i(99683),	-- Helm of the Cursed Vanquisher
@@ -3087,15 +3033,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112850),	-- Thok's Tail Tip
 				})),
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
-					crit(1, {	-- Siegecrafter Blackfuse
-						["achievementID"] = 8462,	-- Downfall
-					}),
-					ach(8543, {	-- Lasers and Magnets and Drills! Oh My!
-						crit(2),	-- Deactivated Electromagnet
-						crit(1),	-- Deactivated Laser Turret
-						crit(3),	-- Deactivated Missile Turret
-						crit(4),	-- Disassembled Crawler Mines
-					}),
 					i(104158),	-- Blackfuse Bombling (PET!)
 					i(99690),	-- Shoulders of the Cursed Conqueror
 					i(99695),	-- Shoulders of the Cursed Protector
@@ -3113,10 +3050,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112879),	-- Ticking Ebon Detonator
 				})),
 				cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-					crit(2, {	-- Paragons of the Klaxxi
-						["achievementID"] = 8462,	-- Downfall
-					}),
-					ach(8531),	-- Now We are the Paragon
 					title(231, {	-- <Name> the Poisoned Mind
 						["collectible"] = false,
 					}),
@@ -3161,9 +3094,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112913),	-- Skeer's Bloodsoaked Talisman
 				})),
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					crit(3, {	-- Garrosh Hellscream
-						["achievementID"] = 8462,	-- Downfall
-					}),
 					ach(8511),	-- Heroic: Garrosh Hellscream Guild Run
 					ach(8679,	-- Conqueror of Orgrimmar
 					bubbleDownSelf({["races"] = ALLIANCE_ONLY,},{
@@ -3173,7 +3103,6 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					bubbleDownSelf({["races"] = HORDE_ONLY,},{
 						title(212),	-- Liberator of Orgrimmar
 					})),
-					ach(8537),	-- Strike!
 					i(105858, {	-- Essence of the Cursed Conqueror
 						["classes"] = {
 							PALADIN,
@@ -3239,11 +3168,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(113229),	-- Zoid's Molten Gauntlets
 				}),
 				cr(71543, e(852, {	-- Immerseus
-					crit(1, {	-- Immerseus
-						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-					}),
 					ach(8463),	-- Mythic: Immerseus
-					ach(8536),	-- No More Tears
 					i(110784),	-- Trident of Corrupted Waters
 					i(110785),	-- Encapsulated Essence of Immerseus
 					i(112382),	-- Hood of Blackened Tears
@@ -3274,11 +3199,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
 					["g"] = {
-						crit(2, {	-- Fallen Protectors
-							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						}),
 						ach(8465),	-- Mythic: Fallen Protectors
-						ach(8528),	-- Go Long
 						i(112477),	-- Softfoot's Last Resort
 						i(112478),	-- Death Lotus Crossbow
 						i(112491),	-- Purehearted Cricket Cage
@@ -3307,11 +3228,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						71965,	-- Norushen
 					},
 					["g"] = {
-						crit(3, {	-- Norushen
-							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						}),
 						ach(8466),	-- Mythic: Norushen
-						ach(8532),	-- None Shall Pass
 						i(112547),	-- Norushen's Shortblade
 						i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 						i(112560),	-- Norushen's Enigmatic Barrier
@@ -3337,11 +3254,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					},
 				})),
 				cr(71734, e(867, {	-- Sha of Pride
-					crit(4, {	-- Sha of Pride
-						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-					}),
 					ach(8467),	-- Mythic: Sha of Pride
-					ach(8521),	-- Swallow Your Pride
 					i(99715),	-- Chest of the Cursed Conqueror
 					i(99716),	-- Chest of the Cursed Protector
 					i(99714),	-- Chest of the Cursed Vanquisher
@@ -3359,11 +3272,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112948),	-- Prismatic Prison of Pride
 				})),
 				cr(72249, e(881, {	-- Galakras
-					crit(1, {	-- Galakras
-						["achievementID"] = 8459,	-- Gates of Retribution
-					}),
 					ach(8468),	-- Mythic: Galakras
-					ach(8530),	-- The Immortal Vanguard
 					i(112723),	-- Drakebinder Greatstaff
 					i(112710),	-- Dagryn's Discarded Longbow
 					i(112717),	-- Flameslinger's Fiery Cowl
@@ -3388,11 +3297,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112703),	-- Evil Eye of Galakras
 				})),
 				cr(71466, e(864, {	-- Iron Juggernaut
-					crit(2, {	-- Iron Juggernaut
-						["achievementID"] = 8459,	-- Gates of Retribution
-					}),
 					ach(8469),	-- Mythic: Iron Juggernaut
-					ach(8520),	-- Fire in the Hole!
 					i(112736),	-- Seismic Bore
 					i(112748),	-- Juggernaut's Power Core
 					i(112742),	-- Juggernaut's Ignition Keys
@@ -3425,11 +3330,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						71858,	-- Wavebinder Kardris
 					},
 					["g"] = {
-						crit(3, {	-- Kor'kron Dark Shaman
-							["achievementID"] = 8459,	-- Gates of Retribution
-						}),
 						ach(8470),	-- Mythic: Kor'kron Dark Shaman
-						ach(8453),	-- Rescue Raiders
 						i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
 							i(105745),	-- Kor'kron Dark Shaman Cowl
 							i(105747),	-- Kor'kron Dark Shaman Shoulder
@@ -3464,11 +3365,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					},
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
-					crit(4, {	-- General Nazgrim
-						["achievementID"] = 8459,	-- Gates of Retribution
-					}),
 					ach(8471),	-- Mythic: General Nazgrim
-					ach(8448),	-- Gamon Will Save Us!
 					i(99721),	-- Gauntlets of the Cursed Conqueror
 					i(99722),	-- Gauntlets of the Cursed Protector
 					i(99720),	-- Gauntlets of the Cursed Vanquisher
@@ -3485,11 +3382,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112778),	-- Nazgrim's Burnished Insignia
 				})),
 				cr(71454, e(846, {	-- Malkorok
-					crit(1, {	-- Malkorok
-						["achievementID"] = 8461,	-- The Underhold
-					}),
 					ach(8472),	-- Mythic: Malkorok
-					ach(8538),	-- Unlimited Potential
 					i(112805),	-- Halberd of Inner Shadows
 					i(112804),	-- Malkorok's Skullcleaver
 					i(112806),	-- Kor'kron Hand Cannon
@@ -3514,11 +3407,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112792),	-- Vial of Living Corruption
 				})),
 				cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-					crit(2, {	-- Spoils of Pandaria
-						["achievementID"] = 8461,	-- The Underhold
-					}),
 					ach(8478),	-- Mythic: Spoils of Pandaria
-					ach(8529),	-- Criss Cross
 					i(112835),	-- Enchanted Shao-Tien Saber
 					i(112841),	-- Immaculately Preserved Wand
 					i(112829),	-- Ancient Mogu Tower Shield
@@ -3542,11 +3431,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112825),	-- Sigil of Rampage
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
-					crit(3, {	-- Thok the Bloodthirsty
-						["achievementID"] = 8461,	-- The Underhold
-					}),
 					ach(8479),	-- Mythic: Thok the Bloodthirsty
-					ach(8527),	-- Giant Dinosaur vs. Mega Snail
 					i(99724),	-- Helm of the Cursed Conqueror
 					i(99725),	-- Helm of the Cursed Protector
 					i(99723),	-- Helm of the Cursed Vanquisher
@@ -3563,16 +3448,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112850),	-- Thok's Tail Tip
 				})),
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
-					crit(1, {	-- Siegecrafter Blackfuse
-						["achievementID"] = 8462,	-- Downfall
-					}),
 					ach(8480),	-- Mythic: Siegecrafter Blackfuse
-					ach(8543, {	-- Lasers and Magnets and Drills! Oh My!
-						crit(2),	-- Deactivated Electromagnet
-						crit(1),	-- Deactivated Laser Turret
-						crit(3),	-- Deactivated Missile Turret
-						crit(4),	-- Disassembled Crawler Mines
-					}),
 					i(104158),	-- Blackfuse Bombling (PET!)
 					i(99718),	-- Shoulders of the Cursed Conqueror
 					i(99719),	-- Shoulders of the Cursed Protector
@@ -3590,11 +3466,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112879),	-- Ticking Ebon Detonator
 				})),
 				cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-					crit(2, {	-- Paragons of the Klaxxi
-						["achievementID"] = 8462,	-- Downfall
-					}),
 					ach(8481),	-- Mythic: Paragons of the Klaxxi
-					ach(8531),	-- Now We are the Paragon
 					title(231, {	-- <Name> the Poisoned Mind
 						["collectible"] = false,
 					}),
@@ -3639,30 +3511,10 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112913),	-- Skeer's Bloodsoaked Talisman
 				})),
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					crit(3, {	-- Garrosh Hellscream
-						["achievementID"] = 8462,	-- Downfall
-					}),
 					ach(8511),	-- Heroic: Garrosh Hellscream Guild Run
 					ach(8482, {	-- Mythic: Garrosh Hellscream
 						title(214),	-- , Hellscream's Downfall
 					}),
-					ach(8679, {	-- Conqueror of Orgrimmar
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							title(211, {	-- Conqueror of Orgrimmar
-								["races"] = ALLIANCE_ONLY,
-							}),
-						},
-					}),
-					ach(8680, {	-- Liberator of Orgrimmar
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							title(212, {	-- Liberator of Orgrimmar
-								["races"] = HORDE_ONLY,
-							}),
-						},
-					}),
-					ach(8537),	-- Strike!
 					i(105867, {	-- Essence of the Cursed Conqueror
 						["classes"] = {
 							PALADIN,

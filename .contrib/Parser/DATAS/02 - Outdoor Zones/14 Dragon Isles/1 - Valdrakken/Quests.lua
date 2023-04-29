@@ -6,19 +6,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 		n(REWARDS, {
 			i(200452, {	-- Dragonscale Expedition Insignia
 				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renonwn 25
+				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				-- #endif
 			}),
 			i(200453, {	-- Iskaara Tuskarr Insignia
 				["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				-- #endif
 			}),
 			i(200454, {	-- Maruuk Centaur Insignia
 				["minReputation"] = { 2503, 25 },	-- Maruuk Centaur renown 25
+				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				-- #endif
 			}),
 			i(200455, {	-- Valdrakken Accord Insignia
 				["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
+				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				-- #endif
 			}),
 		}),
 		n(QUESTS, {
@@ -339,7 +347,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 		}),
 		n(QUESTS, sharedData({
 				["isWeekly"] = true,
-				["sourceQuests"] = { 67007 },	-- Archival Assistance
 			}, {
 			q(76122, {	-- Fighting Is Its Own Reward
 				["provider"] = { "n", 189973 },	-- Kemora

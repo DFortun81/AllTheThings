@@ -32,6 +32,30 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						["coord"] = { 39.8, 29.6, TRUESHOT_LODGE },
 					}),
 				}),
+				n(FOLLOWERS, bubbleDownSelf({
+					["u"] = 15,	-- Temporary troops
+				}, {
+					follower(671),	-- Squad of Archers
+					follower(801),	-- Squad of Archers
+					follower(802),	-- Squad of Archers
+					follower(803),	-- Squad of Archers
+					follower(799),	-- Unseen Marksmen
+					follower(804),	-- Unseen Marksmen
+					follower(805),	-- Unseen Marksmen
+					follower(806),	-- Unseen Marksmen
+					follower(672),	-- Band of Trackers
+					follower(808),	-- Band of Trackers
+					follower(809),	-- Band of Trackers
+					follower(810),	-- Band of Trackers
+					follower(800),	-- Pathfinders
+					follower(811),	-- Pathfinders
+					follower(812),	-- Pathfinders
+					follower(813),	-- Pathfinders
+					follower(1023),	-- Nightborne Hunters
+					follower(1024),	-- Nightborne Hunters
+					follower(1025),	-- Nightborne Hunters
+					follower(1026),	-- Nightborne Hunters
+				})),
 				n(QUESTS, {
 					q(40384, {	-- Needs of the Hunters
 						["provider"] = { "n", 100786 },	-- Snowfeather

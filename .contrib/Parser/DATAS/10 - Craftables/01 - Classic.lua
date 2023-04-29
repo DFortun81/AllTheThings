@@ -226,6 +226,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7914),	-- Barbaric Iron Breastplate
 			i(7917),	-- Barbaric Iron Gloves
 			i(7915),	-- Barbaric Iron Helm
+			i(163964, {["timeline"] = {"added 8.0.1"}}),	-- Barbaric Iron Hauberk
 			i(7913),	-- Barbaric Iron Shoulders
 			applyclassicphase(PHASE_FIVE, i(22194)),	-- Black Grasp of the Destroyer
 			applyclassicphase(PHASE_FOUR, i(19690, {["timeline"] = {"removed 4.0.3", ADDED_10_0_7 }})),	-- Bloodsoul Breastplate
@@ -512,11 +513,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				["timeline"] = { "created 1.11.1.5462", "added 7.1.5.23360" },
 			}),
 			-- #endif
-		}),
-		category(220, {	-- Chest
-			i(163964, {	-- Barbaric Iron Hauberk
-				["timeline"] = { "added 8.0.1" },
-			}),
 		}),
 	}),
 	prof(COOKING, {
@@ -1311,30 +1307,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
-		-- #if BEFORE WOD
-		spell(61288, {	-- Minor Inscription Research
-			-- Midnight
-			r(58317, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
-			r(58318, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fortitude / Glyph of Borrowed Time[MOP+]
-			-- Lion
-			r(58320, {["timeline"]={"added 3.1.0"}}),	-- Glyph of Shackle Undead
-			-- Jadefire
-			r(58319, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Levitate
-			-- Celestial
-		}),
-		-- #else
-		spell(165461, {	-- Research: Celestial Ink
-			r(64259, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Pain Suppression / Glyph of Desperation[4.0.6-5.2.0] / Glyph of Binding Heal[5.2.0+]
-			r(57219, {["timeline"]={"added 3.0.8","removed 7.0.3"}}),	-- Glyph of Icy Touch
-		}),
-		spell(165304, {	-- Research: Midnight Ink
-			r(58317, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
-			r(58318, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fortitude / Glyph of Borrowed Time[MOP+]
-		}),
-		spell(165463, {	-- Research: Shimmering Ink
-			r(58320, {["timeline"]={"added 3.1.0"}}),	-- Glyph of Shackle Undead
-		}),
-		-- #endif
 		filter(GLYPHS, {
 
 

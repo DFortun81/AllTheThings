@@ -713,8 +713,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1581, {	-- Elixirs for the Bladeleafs
 					["qg"] = 2083,	-- Syral Bladeleaf
-					["coord"] = { 55.8, 50.4, TELDRASSIL },
 					["description"] = "Available at Skill Level 20.",
+					-- #if AFTER CATA
+					["coord"] = { 55.8, 50.4, TELDRASSIL },
+					-- #else
+					["coord"] = { 56, 57.8, TELDRASSIL },
+					-- #endif
 					["requireSkill"] = ALCHEMY,
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -1825,32 +1829,3 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-		q(26758, {	-- Flight to Auberdine
-			["qg"] = 3838,	-- Vesprystus
-			--["coord"] = { 58.4, 94.0, TELDRASSIL },
-			["sourceQuest"] = 26757,	-- The Bounty of Teldrassil
-			["timeline"] = { "created 4.0.3.13277" },
-			["races"] = { NIGHTELF },
-			["lvl"] = 10,
-		}),
-		q(26756, {	-- Nessa Shadowsong
-			["qg"] = 4241,	-- Mydrannul
-			--["coord"] = { 70.6, 45.3, DARNASSUS },
-			["timeline"] = { "created 4.0.3.13277" },
-			["races"] = { NIGHTELF },
-			["isBreadcrumb"] = true,
-			["lvl"] = 10,
-		}),
-		q(26757, {	-- The Bounty of Teldrassil
-			["qg"] = 10118,	-- Nessa Shadowsong
-			--["coord"] = { 56.2, 92.4, TELDRASSIL },
-			["sourceQuest"] = 26756,	-- Nessa Shadowsong
-			["timeline"] = { "created 4.0.3.13277" },
-			["races"] = { NIGHTELF },
-			["lvl"] = 10,
-		}),
-	}),
-});

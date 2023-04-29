@@ -697,7 +697,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 			ach(13489, {	-- Secret Fish of Mechagon
 				["requireSkill"] = FISHING,
 				["g"] = {
-					i(167698),	-- Secret Fish Goggles
+					i(167698, {	-- Secret Fish Goggles
+						["g"] = {
+							i(158932),	-- Secretest Fish
+						},
+					}),
 					crit(1, {	-- Bottom Feeding Stinkfish
 						["_quests"] = { 55299 },
 					}),

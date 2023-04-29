@@ -23,6 +23,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			q(61949),	-- Ardenweald's Tricksters
 			q(61435, {	-- Blacksmithing: Stalker Arrowheads
 				["requireSkill"] = BLACKSMITHING,
+				["g"] = {
+					r(337427,{["u"]=15}),	-- Bundle of Stalker Arrowheads
+					r(337374,{["u"]=15}),	-- Molten Phaedrum
+					r(337426,{["u"]=15}),	-- Unrefined Arrowheads
+					i(181783),	-- Borrowed Phaedrum Ore
+					i(181860),	-- Borrowed Twilight Bark
+					i(181784),	-- Bundle of Stalker Arrowheads
+					i(181787),	-- Molten Phaedrum
+					i(181788),	-- Unrefined Arrowheads
+					i(181789),	-- Wooden Arrowhead Mold
+				},
 			}),
 			q(61631),	-- Drust Between You and Me
 			q(61596, {	-- Cooking: Arden Apple Pie
@@ -31,7 +42,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			q(61440, {	-- Enchanting: Boundless Basket
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
-					r(346026, {["u"] = 15}),	-- Boundless Basket
+					r(346026,{["u"]=15}),	-- Boundless Basket
 					i(181991),	-- Antique Stalker's Bow
 					i(181384),	-- Boundless Basket
 					i(181990),	-- Twilight Dust

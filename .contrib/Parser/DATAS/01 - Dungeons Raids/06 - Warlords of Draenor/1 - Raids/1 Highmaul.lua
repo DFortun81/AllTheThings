@@ -11,6 +11,33 @@ _.Instances = { tier(WOD_TIER, {
 		["coord"] = { 32.9, 38.3, DRAENOR_NAGRAND },
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(8986, {	-- The Walled City
+					crit(1, {	-- Kargath Bladefist
+						["_encounter"] = { 1128, LFR_RAID },
+					}),
+					crit(2, {	-- The Butcher
+						["_encounter"] = { 971, LFR_RAID },
+					}),
+					crit(3, {	-- Brackenspore
+						["_encounter"] = { 1196, LFR_RAID },
+					}),
+				}),
+				ach(8987, {	-- Arcane Sanctum
+					crit(1, {	-- Tectus
+						["_encounter"] = { 1195, LFR_RAID },
+					}),
+					crit(2, {	-- Twin Ogron
+						["_encounter"] = { 1148, LFR_RAID },
+					}),
+					crit(3, {	-- Ko'ragh
+						["_encounter"] = { 1153, LFR_RAID },
+					}),
+				}),
+				ach(8988, {	-- Imperator's Fall
+					crit(1, {	-- Imperator Mar'gok
+						["_encounter"] = { 1197, LFR_RAID },
+					}),
+				}),
 				ach(9416),	-- Highmaul Guild Run
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
 					["collectible"] = false,
@@ -55,7 +82,7 @@ _.Instances = { tier(WOD_TIER, {
 						},
 					})),
 				}),
-				ach(8986, {	-- The Walled City
+				header(HEADERS.Achievement, 8986, {	-- The Walled City
 					cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
 						i(138807),	-- Illusion: Mark of the Shattered Hand
 						i(116360),	-- Blade Dancer's Claws
@@ -87,7 +114,7 @@ _.Instances = { tier(WOD_TIER, {
 						i(116291),	-- Immaculate Living Mushroom
 					})),
 				}),
-				ach(8987, {	-- Arcane Sanctum
+				header(HEADERS.Achievement, 8987, {	-- Arcane Sanctum
 					cr(78948, e(1195, {	-- Tectus <The Living Mountain>
 						i(138835, {	-- Illusion: Rockbiter
 							["classes"] = { SHAMAN },
@@ -132,7 +159,7 @@ _.Instances = { tier(WOD_TIER, {
 						un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 					})),
 				}),
-				ach(8988, {	-- Imperator's Fall
+				header(HEADERS.Achievement, 8988, {	-- Imperator's Fall
 					cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
 						i(116372),	-- Imperator's Warstaff
 						i(116373),	-- Mirrorshield of Arcane Fortification

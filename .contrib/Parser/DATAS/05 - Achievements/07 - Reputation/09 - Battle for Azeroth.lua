@@ -19,20 +19,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 			["races"] = HORDE_ONLY,
 		}),
 		ach(12955),		-- Champions of Azeroth
-		ach(12946, {	-- Kul Tiras Diplomat
-			["u"] = NEVER_IMPLEMENTED,	-- Removed in 8.01 launch, was present in beta
-			["g"] = {
-				crit(1, {	-- Proudmoore Admiralty
-					["u"] = NEVER_IMPLEMENTED,	-- Removed in 8.01 launch, was present in beta
-				}),
-				crit(2, {	-- Storm's Wake
-					["u"] = NEVER_IMPLEMENTED,	-- Removed in 8.01 launch, was present in beta
-				}),
-				crit(3, {	-- Order of Embers
-					["u"] = NEVER_IMPLEMENTED,	-- Removed in 8.01 launch, was present in beta
-				}),
-			},
-		}),
 		ach(12952, {	-- Order of Embers
 			["races"] = ALLIANCE_ONLY,
 		}),

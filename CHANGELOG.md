@@ -1,32 +1,25 @@
 # AllTheThings
 
-## [DF-3.3.3](https://github.com/DFortun81/AllTheThings/tree/DF-3.3.3) (2023-04-09)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.3.2...DF-3.3.3) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.3.6](https://github.com/DFortun81/AllTheThings/tree/DF-3.3.6) (2023-04-23)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.3.5...DF-3.3.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 ### Promotions
 
-Earn the Big Battle Bear 🐻 through Prime Gaming until April 27, 2023. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23922954).
+Earn Lil' XT 🤖 through Prime Gaming until May 25, 2023. More details [here](https://worldofwarcraft.blizzard.com/en-us/news/23938292).
 
 ### Logic changes
 
-- Added an event to track when tooltips need to be refreshed to hopefully make ATT tooltips more responsive when server data is retrieved while the tooltip is already displayed (please report if you notice any abnormal/detrimental behavior with tooltips).
+- TLDR: Flight Path names should be localized now (not just English for all locales). Long explanation: Flight Paths are no longer statically localized and instead are localized by the Client when attempting to retrieve an unknown Flight Path name. Flight Paths which cannot be retrieved globally for the Client (due to incomplete quest restrictions on the character etc.) will be captured when the respective Flight Master is accessed for the first time.
 
 ### Logic fixes
 
-- Internal rewrite of Settings which fixed Account-Wide toggles when not in Debug/Account Modes. This will also make it easier for us to add new settings (Drakewatcher Manuscripts are _almost_ ready, Hidden Quest Triggers are less ready).
-- Fixed some internals to fix an issue where under Catalyst it would only fill LFR with class requirement and then skip the same class in other difficulties.
-- Fixed a tooltip Lua bug for Items that Blizzard has assigned the 'Adventurer' class (whatever that is).
+- Some fixes for attempting to determine Item links from SourceID.
+- Character Filters now include 'is Item in-game' (this is applied when checking Quest inaccuracy... removed Quests which were previously pre-requisites to available Quests shouldn't cause the Quest to be considered inaccurate).
 
 ### Data additions/fixes
 
-- Added Human and Orc heritage quest lines, fixed some other heritage quest lines.
-- Vaults and other 10.0.7 fixes and additions.
-- New Zul'Gurub adjustments
-- Various Rare fixes.
-- Added Waveborne Diplomat’s Regalia.
-- Trading Post will be organized as follows from now on: Available rewards for this month and Unavailable rewards from previous months that should return in future months.
-- Added Dragonflight Flight Points.
-- Various quest fixes here and there.
-- Cleaned up lots of Achievements to adhere to current standard. Mainly Quest and Pet Battle categories.
-- Reorganized Secrets category.
+- Various 10.0.7 content updates: Zskera Vaults and Primal Storms.
+- Fixed various Achievements errors throughout addon thanks to new diagnostic tool.
+- Various Flight Paths fixes.
+- Huge consolidation of many Island Expedition Rewards.
 - Other fixes.

@@ -393,7 +393,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(171372),	-- Alterac Valley Mark of Honor
 				i(169295),	-- Dormant Vision Stone
 				i(170197),	-- Shirakess Warning Sign
-				i(169106),	-- Thin Jelly
 			}),
 			tier(BFA_TIER, 3.0, {
 				i(174455),	-- Add Keystone Affix: Awakened

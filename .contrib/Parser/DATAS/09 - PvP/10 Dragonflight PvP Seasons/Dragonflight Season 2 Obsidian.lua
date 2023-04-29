@@ -43,7 +43,10 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				-- Solo
 				ach(17801),		-- Legend: Dragonflight Season 2
-				ach(17767),		-- Obsidian Legend: Dragonflight Season 2
+				ach(17767, {	-- Obsidian Legend: Dragonflight Season 2
+					title(500),	-- Obsidian Legend <Name>
+					i(206267),	-- Obsidian Legend's Pennant (TOY!)
+				}),
 				--ach(00000, {	-- Obsidian Soloist: Dragonflight Season 2
 				--	title(),	-- Obsidian Soloist <Name>
 				--}),

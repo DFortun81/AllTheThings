@@ -29,18 +29,10 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				}),
 			}),
 			petbattle(filter(BATTLE_PETS, {
-				p(2672, {	-- Alloyed Alleyrat
-					["crs"] = { 154789 },
-				}),
-				p(2675, {	-- Clanking Scrapsorter
-					["crs"] = { 154796 },
-				}),
-				p(2668, {	-- Copper Hopper
-					["crs"] = { 154781 },
-				}),
-				p(2674, {	-- H4ND-EE
-					["crs"] = { 154794 },
-				}),
+				pet(2672),	-- Alloyed Alleyrat (PET!)
+				pet(2675),	-- Clanking Scrapsorter (PET!)
+				pet(2668),	-- Copper Hopper (PET!)
+				pet(2674),	-- H4ND-EE (PET!)
 			})),
 			d(HEROIC_DUNGEON, {
 				["lvl"] = 120,
@@ -156,7 +148,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 								i(168971),	-- Swift Pneumatic Grips
 								i(168968),	-- Flame-Seared Leggings
 								i(168972),	-- Pyroclastic Greatboots
-								i(169529),	-- Recipe: Monelite Reinforced Chassis (Rank 3)
+								i(169529),	-- Plans: Monelite Reinforced Chassis (RECIPE!)
 								i(169609),	-- Schematic: Super-Charged Engine (Rank 3)
 							},
 						}),
@@ -338,7 +330,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 								i(168971),	-- Swift Pneumatic Grips
 								i(168968),	-- Flame-Seared Leggings
 								i(168972),	-- Pyroclastic Greatboots
-								i(169529),	-- Recipe: Monelite Reinforced Chassis (Rank 3)
+								i(169529),	-- Plans: Monelite Reinforced Chassis (RECIPE!)
 								i(169609),	-- Schematic: Super-Charged Engine (Rank 3)
 								n(MYTHIC_PLUS, {
 									-- This one I thoguht was confirmed, but all screenshots were removed once it was fixed...

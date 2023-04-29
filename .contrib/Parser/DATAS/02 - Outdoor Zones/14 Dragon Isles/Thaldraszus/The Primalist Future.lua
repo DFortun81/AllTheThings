@@ -65,11 +65,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 				},{
 					q(74378, {	-- The Storm's Fury
 						i(202371, {	-- Glowing Primalist Cache
-							i(ESSENCE_OF_THE_STORM),
-							currency(ELEMENTAL_OVERFLOW),
-							currency(2122),	-- Storm Sigil
+							["sym"] = {{"select","currencyID",
+								2122,	-- Elemental Overflow
+							}},
+							["groups"] = {
+								i(ESSENCE_OF_THE_STORM),
+								i(203476),	-- Primalist Cache
+								currency(2122),	-- Storm Sigil
+							},
 						}),
-						i(203476),	-- Primalist Cache
 					}),
 				})),
 			}),
@@ -179,6 +183,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 								{ "c", ELEMENTAL_OVERFLOW, 3000 },
 							},
 						}),
+					},
+				}),
+				n(199541, {	-- Tarndormu <Temporal Squadron Commander>
+					["description"] = "This Vendor is only visible during the Storm's Fury event.",
+					["coord"] = { 60.8, 46.6, THE_PRIMALIST_FUTURE },
+					["g"] = {
+						i(202096),	-- Armaments of the Scale
 					},
 				}),
 			}),

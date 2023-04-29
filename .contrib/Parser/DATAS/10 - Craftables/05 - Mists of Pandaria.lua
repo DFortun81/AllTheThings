@@ -172,202 +172,183 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 		spell(138884, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Deep Thunder, Reborn
 			r(138887),	-- Stormherald, Reborn
 		})),
-		filter(DAGGERS, {
-			i(82967),	-- Ghost Shard
-			i(82974),	-- Masterwork Ghost Shard
-		}),
-		filter(ONE_HANDED_AXES, {
-			i(94577),	-- Black Planar Edge, Reborn
-			i(82963),	-- Forgewire Axe
-			i(82970),	-- Masterwork Forgewire Axe
-			i(94575),	-- The Planar Edge, Reborn
-			i(94579),	-- Wicked Edge of the Planes, Reborn
-		}),
-		filter(TWO_HANDED_AXES, {
-			i(94580),	-- Bloodmoon, Reborn
-			i(94576),	-- Lunar Crescent, Reborn
-			i(82973),	-- Masterwork Spiritblade Decimator
-			i(94578),	-- Mooncleaver, Reborn
-			i(82966),	-- Spiritblade Decimator
-		}),
-		filter(ONE_HANDED_MACES, {
-			i(94584),	-- Dragonmaw, Reborn
-			i(94585),	-- Dragonstrike, Reborn
-			i(94581),	-- Drakefist Hammer, Reborn
-			i(82972),	-- Masterwork Phantasmal Hammer
-			i(82965),	-- Phantasmal Hammer
-		}),
-		filter(TWO_HANDED_MACES, {
-			i(94583),	-- Deep Thunder, Reborn
-			i(94586),	-- Stormherald, Reborn
-			i(94582),	-- Thunder, Reborn
-		}),
-		filter(ONE_HANDED_SWORDS, {
-			i(94591),	-- Blazefury, Reborn
-			i(94589),	-- Blazeguard, Reborn
-			i(94587),	-- Fireguard, Reborn
-			i(82964),	-- Ghost-Forged Blade
-			i(82971),	-- Masterwork Ghost-Forged Blade
-		}),
-		filter(TWO_HANDED_SWORDS, {
-			i(94588),	-- Lionheart Blade, Reborn
-			i(94590),	-- Lionheart Champion, Reborn
-			i(94592),	-- Lionheart Executioner, Reborn
-		}),
-		filter(SHIELDS, {
-			i(98776),	-- Crafted Malevolent Gladiator's Barrier
-			i(98810),	-- Crafted Malevolent Gladiator's Redoubt
-			i(98920),	-- Crafted Malevolent Gladiator's Shield Wall
-			i(82961),	-- Lightsteel Shield
-			i(82968),	-- Masterwork Lightsteel Shield
-			i(82969),	-- Masterwork Spiritguard Shield
-			i(82962),	-- Spiritguard Shield
-		}),
-		n(HEAD, {
-			i(82943),	-- Contender's Revenant Helm
-			i(82951),	-- Contender's Spirit Helm
-			i(93455),	-- Crafted Dreadful Gladiator's Dreadplate Helm
-			i(93540),	-- Crafted Dreadful Gladiator's Ornamented Headcover
-			i(93622),	-- Crafted Dreadful Gladiator's Plate Helm
-			i(93529),	-- Crafted Dreadful Gladiator's Scaled Helm
-			i(98786),	-- Crafted Malevolent Gladiator's Dreadplate Helm
-			i(98856),	-- Crafted Malevolent Gladiator's Ornamented Headcover
-			i(98928),	-- Crafted Malevolent Gladiator's Plate Helm
-			i(98845),	-- Crafted Malevolent Gladiator's Scaled Helm
-			i(82903),	-- Ghost-Forged Helm
-			i(82927),	-- Ghost-Forged Helm
-			i(94266),	-- Haunted Steel Greathelm
-			i(94264),	-- Haunted Steel Headcover
-			i(94268),	-- Haunted Steel Headguard
-			i(82919),	-- Masterwork Spiritguard Helm
-		}),
-		n(SHOULDER, {
-			i(82944),	-- Contender's Revenant Shoulders
-			i(82952),	-- Contender's Spirit Shoulders
-			i(93457),	-- Crafted Dreadful Gladiator's Dreadplate Shoulders
-			i(93542),	-- Crafted Dreadful Gladiator's Ornamented Spaulders
-			i(93624),	-- Crafted Dreadful Gladiator's Plate Shoulders
-			i(93531),	-- Crafted Dreadful Gladiator's Scaled Shoulders
-			i(98788),	-- Crafted Malevolent Gladiator's Dreadplate Shoulders
-			i(98858),	-- Crafted Malevolent Gladiator's Ornamented Spaulders
-			i(98930),	-- Crafted Malevolent Gladiator's Plate Shoulders
-			i(98847),	-- Crafted Malevolent Gladiator's Scaled Shoulders
-			i(82904),	-- Ghost-Forged Shoulders
-			i(82928),	-- Ghost-Forged Shoulders
-			i(82920),	-- Masterwork Spiritguard Shoulders
-		}),
-		n(CHEST, {
+		n(ARMOR, {
+			i(98607, {["timeline"]={"added 5.4.0"}}),	-- Avenger's Trillium Legplates
+			i(98616, {["timeline"]={"added 5.4.0"}}),	-- Avenger's Trillium Waistplate
+			i(98611, {["timeline"]={"added 5.4.0"}}),	-- Blessed Trillium Belt
+			i(98602, {["timeline"]={"added 5.4.0"}}),	-- Blessed Trillium Greaves
+			i(87407),	-- Bloodforged Warfists
 			i(82979),	-- Breastplate of Ancient Steel
 			i(87403),	-- Chestplate of Limitless Faith
+			i(82950),	-- Contender's Revenant Belt
+			i(82949),	-- Contender's Revenant Boots
+			i(82948),	-- Contender's Revenant Bracers
 			i(82945),	-- Contender's Revenant Breastplate
-			i(82953),	-- Contender's Spirit Breastplate
-			i(93453),	-- Crafted Dreadful Gladiator's Dreadplate Chestpiece
-			i(93538),	-- Crafted Dreadful Gladiator's Ornamented Chestguard
-			i(93620),	-- Crafted Dreadful Gladiator's Plate Chestpiece
-			i(93527),	-- Crafted Dreadful Gladiator's Scaled Chestpiece
-			i(98784),	-- Crafted Malevolent Gladiator's Dreadplate Chestpiece
-			i(98854),	-- Crafted Malevolent Gladiator's Ornamented Chestguard
-			i(98926),	-- Crafted Malevolent Gladiator's Plate Chestpiece
-			i(98843),	-- Crafted Malevolent Gladiator's Scaled Chestpiece
-			i(82975),	-- Ghost Reaver's Breastplate
-			i(82905),	-- Ghost-Forged Breastplate
-			i(82929),	-- Ghost-Forged Breastplate
-			i(82977),	-- Living Steel Breastplate
-			i(82921),	-- Masterwork Spiritguard Breastplate
-			i(87402),	-- Ornate Battleplate of the Master
-			i(87405),	-- Unyielding Bloodplate
-		}),
-		n(HANDS, {
-			i(87407),	-- Bloodforged Warfists
 			i(82946),	-- Contender's Revenant Gauntlets
+			i(82943),	-- Contender's Revenant Helm
+			i(82947),	-- Contender's Revenant Legplates
+			i(82944),	-- Contender's Revenant Shoulders
+			i(82958),	-- Contender's Spirit Belt
+			i(82957),	-- Contender's Spirit Boots
+			i(82956),	-- Contender's Spirit Bracers
+			i(82953),	-- Contender's Spirit Breastplate
 			i(82954),	-- Contender's Spirit Gauntlets
-			i(93454),	-- Crafted Dreadful Gladiator's Dreadplate Gauntlets
-			i(93539),	-- Crafted Dreadful Gladiator's Ornamented Gloves
-			i(93621),	-- Crafted Dreadful Gladiator's Plate Gauntlets
-			i(93528),	-- Crafted Dreadful Gladiator's Scaled Gauntlets
-			i(98785),	-- Crafted Malevolent Gladiator's Dreadplate Gauntlets
-			i(98855),	-- Crafted Malevolent Gladiator's Ornamented Gloves
-			i(98927),	-- Crafted Malevolent Gladiator's Plate Gauntlets
-			i(98844),	-- Crafted Malevolent Gladiator's Scaled Gauntlets
+			i(82951),	-- Contender's Spirit Helm
+			i(82955),	-- Contender's Spirit Legplates
+			i(82952),	-- Contender's Spirit Shoulders
+			i(93548, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Armplates of Alacrity
+			i(93547, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Armplates of Proficiency
+			i(93537, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Bracers of Meditation
+			i(93536, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Bracers of Prowess
+			i(93532, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Clasp of Cruelty
+			i(93533, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Clasp of Meditation
+			i(93453, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Dreadplate Chestpiece
+			i(93454, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Dreadplate Gauntlets
+			i(93455, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Dreadplate Helm
+			i(93456, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Dreadplate Legguards
+			i(93457, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Dreadplate Shoulders
+			i(93543, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Girdle of Accuracy
+			i(93544, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Girdle of Prowess
+			i(93534, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Greaves of Alacrity
+			i(93535, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Greaves of Meditation
+			i(93538, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Ornamented Chestguard
+			i(93539, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Ornamented Gloves
+			i(93540, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Ornamented Headcover
+			i(93541, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Ornamented Legplates
+			i(93542, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Ornamented Spaulders
+			i(93620, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Plate Chestpiece
+			i(93621, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Plate Gauntlets
+			i(93622, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Plate Helm
+			i(93623, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Plate Legguards
+			i(93624, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Plate Shoulders
+			i(93527, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Scaled Chestpiece
+			i(93528, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Scaled Gauntlets
+			i(93529, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Scaled Helm
+			i(93530, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Scaled Legguards
+			i(93531, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Scaled Shoulders
+			i(93546, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Warboots of Alacrity
+			i(93545, {["timeline"]={"added 5.2.0"}}),	-- Crafted Dreadful Gladiator's Warboots of Cruelty
+			i(98864, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Armplates of Alacrity
+			i(98863, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Armplates of Proficiency
+			i(98853, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Bracers of Meditation
+			i(98852, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Bracers of Prowess
+			i(98848, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Clasp of Cruelty
+			i(98849, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Clasp of Meditation
+			i(98784, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Dreadplate Chestpiece
+			i(98785, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Dreadplate Gauntlets
+			i(98786, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Dreadplate Helm
+			i(98787, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Dreadplate Legguards
+			i(98788, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Dreadplate Shoulders
+			i(98859, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Girdle of Accuracy
+			i(98860, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Girdle of Prowess
+			i(98850, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Greaves of Alacrity
+			i(98851, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Greaves of Meditation
+			i(98854, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Ornamented Chestguard
+			i(98856, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Ornamented Headcover
+			i(98855, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Ornamented Gloves
+			i(98857, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Ornamented Legplates
+			i(98858, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Ornamented Spaulders
+			i(98926, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Plate Chestpiece
+			i(98927, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Plate Gauntlets
+			i(98928, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Plate Helm
+			i(98929, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Plate Legguards
+			i(98930, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Plate Shoulders
+			i(98843, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Scaled Chestpiece
+			i(98844, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Scaled Gauntlets
+			i(98845, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Scaled Helm
+			i(98846, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Scaled Legguards
+			i(98847, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Scaled Shoulders
+			i(98862, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Warboots of Alacrity
+			i(98861, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Warboots of Cruelty
 			i(82980),	-- Gauntlets of Ancient Steel
 			i(87406),	-- Gauntlets of Battle Command
 			i(87404),	-- Gauntlets of Unbound Devotion
+			i(82975),	-- Ghost Reaver's Breastplate
 			i(82976),	-- Ghost Reaver's Gauntlets
-			i(82906),	-- Ghost-Forged Gauntlets
-			i(82930),	-- Ghost-Forged Gauntlets
-			i(82978),	-- Living Steel Gauntlets
-			i(82922),	-- Masterwork Spiritguard Gauntlets
-		}),
-		n(WRIST, {
-			i(82948),	-- Contender's Revenant Bracers
-			i(82956),	-- Contender's Spirit Bracers
-			i(93548),	-- Crafted Dreadful Gladiator's Armplates of Alacrity
-			i(93547),	-- Crafted Dreadful Gladiator's Armplates of Proficiency
-			i(93537),	-- Crafted Dreadful Gladiator's Bracers of Meditation
-			i(93536),	-- Crafted Dreadful Gladiator's Bracers of Prowess
-			i(98864),	-- Crafted Malevolent Gladiator's Armplates of Alacrity
-			i(98863),	-- Crafted Malevolent Gladiator's Armplates of Proficiency
-			i(98853),	-- Crafted Malevolent Gladiator's Bracers of Meditation
-			i(98852),	-- Crafted Malevolent Gladiator's Bracers of Prowess
-			i(82908),	-- Ghost-Forged Bracers
-			i(82932),	-- Ghost-Forged Bracers
-			i(82916),	-- Lightsteel Bracers
-			i(82924),	-- Masterwork Spiritguard Bracers
-			i(82900),	-- Spiritguard Bracers
-		}),
-		n(WAIST, {
-			i(98616),	-- Avenger's Trillium Waistplate
-			i(98611),	-- Blessed Trillium Belt
-			i(82950),	-- Contender's Revenant Belt
-			i(82958),	-- Contender's Spirit Belt
-			i(93532),	-- Crafted Dreadful Gladiator's Clasp of Cruelty
-			i(93533),	-- Crafted Dreadful Gladiator's Clasp of Meditation
-			i(93543),	-- Crafted Dreadful Gladiator's Girdle of Accuracy
-			i(93544),	-- Crafted Dreadful Gladiator's Girdle of Prowess
-			i(98848),	-- Crafted Malevolent Gladiator's Clasp of Cruelty
-			i(98849),	-- Crafted Malevolent Gladiator's Clasp of Meditation
-			i(98859),	-- Crafted Malevolent Gladiator's Girdle of Accuracy
-			i(98860),	-- Crafted Malevolent Gladiator's Girdle of Prowess
 			i(82910),	-- Ghost-Forged Belt
 			i(82934),	-- Ghost-Forged Belt
-			i(82926),	-- Masterwork Spiritguard Belt
-			i(98615),	-- Protector's Trillium Waistguard
-		}),
-		n(LEGS, {
-			i(98607),	-- Avenger's Trillium Legplates
-			i(98602),	-- Blessed Trillium Greaves
-			i(82947),	-- Contender's Revenant Legplates
-			i(82955),	-- Contender's Spirit Legplates
-			i(93456),	-- Crafted Dreadful Gladiator's Dreadplate Legguards
-			i(93541),	-- Crafted Dreadful Gladiator's Ornamented Legplates
-			i(93623),	-- Crafted Dreadful Gladiator's Plate Legguards
-			i(93530),	-- Crafted Dreadful Gladiator's Scaled Legguards
-			i(98787),	-- Crafted Malevolent Gladiator's Dreadplate Legguards
-			i(98857),	-- Crafted Malevolent Gladiator's Ornamented Legplates
-			i(98929),	-- Crafted Malevolent Gladiator's Plate Legguards
-			i(98846),	-- Crafted Malevolent Gladiator's Scaled Legguards
-			i(82907),	-- Ghost-Forged Legplates
-			i(82931),	-- Ghost-Forged Legplates
-			i(82923),	-- Masterwork Spiritguard Legplates
-			i(98606),	-- Protector's Trillium Legguards
-		}),
-		n(FEET, {
-			i(82949),	-- Contender's Revenant Boots
-			i(82957),	-- Contender's Spirit Boots
-			i(93534),	-- Crafted Dreadful Gladiator's Greaves of Alacrity
-			i(93535),	-- Crafted Dreadful Gladiator's Greaves of Meditation
-			i(93546),	-- Crafted Dreadful Gladiator's Warboots of Alacrity
-			i(93545),	-- Crafted Dreadful Gladiator's Warboots of Cruelty
-			i(98850),	-- Crafted Malevolent Gladiator's Greaves of Alacrity
-			i(98851),	-- Crafted Malevolent Gladiator's Greaves of Meditation
-			i(98862),	-- Crafted Malevolent Gladiator's Warboots of Alacrity
-			i(98861),	-- Crafted Malevolent Gladiator's Warboots of Cruelty
 			i(82909),	-- Ghost-Forged Boots
 			i(82933),	-- Ghost-Forged Boots
-			i(94263),	-- Haunted Steel Greaves
-			i(94265),	-- Haunted Steel Treads
-			i(94267),	-- Haunted Steel Warboots
+			i(82908),	-- Ghost-Forged Bracers
+			i(82932),	-- Ghost-Forged Bracers
+			i(82905),	-- Ghost-Forged Breastplate
+			i(82929),	-- Ghost-Forged Breastplate
+			i(82906),	-- Ghost-Forged Gauntlets
+			i(82930),	-- Ghost-Forged Gauntlets
+			i(82903),	-- Ghost-Forged Helm
+			i(82927),	-- Ghost-Forged Helm
+			i(82907),	-- Ghost-Forged Legplates
+			i(82931),	-- Ghost-Forged Legplates
+			i(82904),	-- Ghost-Forged Shoulders
+			i(82928),	-- Ghost-Forged Shoulders
+			i(94263, {["timeline"]={"added 5.2.0"}}),	-- Haunted Steel Greaves
+			i(94266, {["timeline"]={"added 5.2.0"}}),	-- Haunted Steel Greathelm
+			i(94264, {["timeline"]={"added 5.2.0"}}),	-- Haunted Steel Headcover
+			i(94268, {["timeline"]={"added 5.2.0"}}),	-- Haunted Steel Headguard
+			i(94265, {["timeline"]={"added 5.2.0"}}),	-- Haunted Steel Treads
+			i(94267, {["timeline"]={"added 5.2.0"}}),	-- Haunted Steel Warboots
+			i(82916),	-- Lightsteel Bracers
+			i(82977),	-- Living Steel Breastplate
+			i(82978),	-- Living Steel Gauntlets
+			i(87402),	-- Ornate Battleplate of the Master
+			i(82926),	-- Masterwork Spiritguard Belt
 			i(82925),	-- Masterwork Spiritguard Boots
+			i(82924),	-- Masterwork Spiritguard Bracers
+			i(82921),	-- Masterwork Spiritguard Breastplate
+			i(82922),	-- Masterwork Spiritguard Gauntlets
+			i(82919),	-- Masterwork Spiritguard Helm
+			i(82923),	-- Masterwork Spiritguard Legplates
+			i(82920),	-- Masterwork Spiritguard Shoulders
+			i(98606, {["timeline"]={"added 5.4.0"}}),	-- Protector's Trillium Legguards
+			i(98615, {["timeline"]={"added 5.4.0"}}),	-- Protector's Trillium Waistguard
+			i(82900),	-- Spiritguard Bracers
+			i(87405),	-- Unyielding Bloodplate
+		}),
+		filter(MISC, {
+			i(98717, {["timeline"]={"added 5.4.0"}}),	-- Balanced Trillium Ingot
+			i(80431),	-- Folded Ghost Iron
+			i(86599),	-- Ghost Iron Shield Spike
+			i(82960),	-- Ghostly Skeleton Key
+			i(94111, {["timeline"]={"added 5.2.0"}}),	-- Lightning Steel Ingot
+			i(90046),	-- Living Steel Belt Buckle
+			i(86597),	-- Living Steel Weapon Chain
+		}),
+		n(WEAPONS, {
+			i(94577, {["timeline"]={"added 5.2.0"}}),	-- Black Planar Edge, Reborn
+			i(94591, {["timeline"]={"added 5.2.0"}}),	-- Blazefury, Reborn
+			i(94589, {["timeline"]={"added 5.2.0"}}),	-- Blazeguard, Reborn
+			i(94580, {["timeline"]={"added 5.2.0"}}),	-- Bloodmoon, Reborn
+			i(98776, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Barrier
+			i(98810, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Redoubt
+			i(98920, {["timeline"]={"added 5.4.0"}}),	-- Crafted Malevolent Gladiator's Shield Wall
+			i(94583, {["timeline"]={"added 5.2.0"}}),	-- Deep Thunder, Reborn
+			i(94584, {["timeline"]={"added 5.2.0"}}),	-- Dragonmaw, Reborn
+			i(94585, {["timeline"]={"added 5.2.0"}}),	-- Dragonstrike, Reborn
+			i(94581, {["timeline"]={"added 5.2.0"}}),	-- Drakefist Hammer, Reborn
+			i(94587, {["timeline"]={"added 5.2.0"}}),	-- Fireguard, Reborn
+			i(82963),	-- Forgewire Axe
+			i(82967),	-- Ghost Shard
+			i(82964),	-- Ghost-Forged Blade
+			i(82961),	-- Lightsteel Shield
+			i(94588, {["timeline"]={"added 5.2.0"}}),	-- Lionheart Blade, Reborn
+			i(94590, {["timeline"]={"added 5.2.0"}}),	-- Lionheart Champion, Reborn
+			i(94592, {["timeline"]={"added 5.2.0"}}),	-- Lionheart Executioner, Reborn
+			i(94576, {["timeline"]={"added 5.2.0"}}),	-- Lunar Crescent, Reborn
+			i(82970),	-- Masterwork Forgewire Axe
+			i(82974),	-- Masterwork Ghost Shard
+			i(82971),	-- Masterwork Ghost-Forged Blade
+			i(82968),	-- Masterwork Lightsteel Shield
+			i(82972),	-- Masterwork Phantasmal Hammer
+			i(82969),	-- Masterwork Spiritguard Shield
+			i(82973),	-- Masterwork Spiritblade Decimator
+			i(94578, {["timeline"]={"added 5.2.0"}}),	-- Mooncleaver, Reborn
+			i(82965),	-- Phantasmal Hammer
+			i(82966),	-- Spiritblade Decimator
+			i(82962),	-- Spiritguard Shield
+			i(94586, {["timeline"]={"added 5.2.0"}}),	-- Stormherald, Reborn
+			i(94575, {["timeline"]={"added 5.2.0"}}),	-- The Planar Edge, Reborn
+			i(94582, {["timeline"]={"added 5.2.0"}}),	-- Thunder, Reborn
+			i(94579, {["timeline"]={"added 5.2.0"}}),	-- Wicked Edge of the Planes, Reborn
 		}),
 	}),
 	prof(ENCHANTING, {
@@ -1008,35 +989,6 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 }))));
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(PROFESSIONS, {
-		prof(BLACKSMITHING, {
-			tier(MOP_TIER, {
-				i(93441),	-- Crafted Dreadful Gladiator's Barrier - UNUSED
-				i(93483),	-- Crafted Dreadful Gladiator's Redoubt
-				i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
-				i(82911),	-- Lightsteel Helm
-				i(82912),	-- Lightsteel Shoulders
-				i(82913),	-- Lightsteel Breastplate
-				i(82914),	-- Lightsteel Gauntlets
-				i(82918),	-- Lightsteel Belt
-				i(82915),	-- Lightsteel Legplates
-				i(82917),	-- Lightsteel Boots
-				i(82935),	-- Masterwork Lightsteel Helm
-				i(82936),	-- Masterwork Lightsteel Shoulders
-				i(82937),	-- Masterwork Lightsteel Breastplate
-				i(82940),	-- Masterwork Lightsteel Bracers
-				i(82938),	-- Masterwork Lightsteel Gauntlets
-				i(82942),	-- Masterwork Lightsteel Belt
-				i(82939),	-- Masterwork Lightsteel Legplates
-				i(82941),	-- Masterwork Lightsteel Boots
-				i(80811),	-- Spiritguard Helm
-				i(82896),	-- Spiritguard Shoulders
-				i(82897),	-- Spiritguard Breastplate
-				i(82898),	-- Spiritguard Gauntlets
-				i(82902),	-- Spiritguard Belt
-				i(82899),	-- Spiritguard Legplates
-				i(82901),	-- Spiritguard Boots
-			}),
-		}),
 		prof(ENGINEERING, {
 			tier(MOP_TIER, {
 				i(81143),	-- Avanced Deepdive Helmet (Mop Beta Only)

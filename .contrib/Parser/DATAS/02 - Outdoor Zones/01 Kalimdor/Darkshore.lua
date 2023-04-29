@@ -1544,7 +1544,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(741, {	-- The Absent Minded Prospector (3/5)
 					["providers"] = {
 						{ "n", 2913 },	-- Archaeologist Hollee
-						{ "i", 4654, 1 },	-- Mysterious Fossil
+						{ "i", 4654 },	-- Mysterious Fossil
 					},
 					["sourceQuest"] = 731,	-- The Absent Minded Prospector (2/5)
 					["coord"] = { 37.4, 41.8, DARKSHORE },
@@ -2645,11 +2645,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
-
-root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-		q(26759, {	-- Return to Nessa
-			["timeline"] = { "created 4.0.3.13329" },
-		}),
-	}),
-});

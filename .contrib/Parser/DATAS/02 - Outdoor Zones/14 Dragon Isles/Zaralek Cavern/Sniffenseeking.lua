@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			},
 			["g"] = {
 				n(ACHIEVEMENTS, {
-					ach(18284, {	-- A Mole's Best Friend
+					ach(18284, {	-- A Niffen's Best Buddy
 						["sym"] = {{"meta_achievement",
 							18257,	-- Can You Dig It?
 							18271,	-- He'sSss All Mine
@@ -19,6 +19,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17832,	-- Sniffen Around
 							17833,	-- Sniffen Sage
 						}},
+						["g"] = {
+							title(507),	-- <Name>, Sniffenseeker
+						},
 					}),
 					ach(18257),	-- Can You Dig It?
 					ach(18271),	-- He'sSss All Mine
@@ -51,7 +54,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							-- TODO: ["_quests"] = { 75517 },
 						}),
 						crit(10, {	-- The Living Drill
-							-- TODO: ["_quests"] = { 76016 },
+							["_quests"] = { 76016 },
 						}),
 						crit(11, {	-- Thieving Critters
 							["_quests"] = { 75619 },
@@ -60,7 +63,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							-- TODO: ["_quests"] = { 75393 },
 						}),
 						crit(13, {	-- Living Statue
-							-- TODO: ["_quests"] = { 76014 },
+							["_quests"] = { 76014 },
 						}),
 						crit(14, {	-- Heart of Iron
 							-- TODO: ["_quests"] = { 76015 },
@@ -161,10 +164,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 201426 },	-- Myrrit
 						["coord"] = { 55.6, 57.4, ZARALEK_CAVERN },
 					}),
+					q(76014, {  -- Living Statue
+						["g"] = {
+							i(205938),  -- Heated Titan Key
+						},
+					}),
 					q(74878, {	-- Old Friends, Dear Friends
 						["sourceQuests"] = { 74953 },	-- The Heavy Crown
 						["provider"] = { "n", 202766 },	-- Myrrit
 						["coord"] = { 54.6, 54.4, ZARALEK_CAVERN },
+					}),
+					q(76016, {  -- The Living Drill
+						["g"] = {
+							i(205941),  -- Spit-covered Key
+						},
 					}),
 				}),
 				n(REWARDS, {
@@ -189,28 +202,35 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(SNIFFENSEEKING, {
 		q(75241),	-- Sniffenseeking unlocked?
+		q(75747),	-- Completing a Sniffenseeking quest
+		q(75748),	-- Completing a Sniffenseeking quest
+		q(75749),	-- Completing a Sniffenseeking quest
+
 		q(75904),	-- Unknown [When going to Those Rascally Wroms (75397)] /Unflagged after complete
-		q(75749),	-- Completed Those Rascally Wroms (75397),			This Might Be Achievement Tracker/Daily/weekly etc..
 		q(75880),	-- Completed Those Rascally Wroms (75397),			This Might Be Achievement Tracker/Daily/weekly etc..
 		q(75928),	-- Completed Those Rascally Wroms (75397),			This Might Be Achievement Tracker/Daily/weekly etc..
 
 		-- AlexSoft
 		q(75916),	-- Unknown [When Going to Frostfire Finesse (76084)] /Unflagged After Complete
-		q(75747),	-- Completed Frostfire Finesse (76084),			This Might Be Achievement Tracker/Daily/weekly etc..
 		q(75880),	-- Completed Frostfire Finesse (76084),			This Might Be Achievement Tracker/Daily/weekly etc..
 		q(75993),	-- Completed Frostfire Finesse (76084),			This Might Be Achievement Tracker/Daily/weekly etc..
 
 		-- AlexSoft
 		q(75910),	-- Unknown [When Going to Thieving Critters (75619)] /Unflagged After Complete
-		q(75748),	-- Completed Thieving Critters (75619),			This Might Be Achievement Tracker/Daily/weekly etc..
 		q(75930),	-- Completed Thieving Critters (75619),			This Might Be Achievement Tracker/Daily/weekly etc..
 		q(75882),	-- Completed Thieving Critters (75619),			 /unflagged?
 
-
 		-- AlexSoft
 		q(75892),	-- Unknown [When Going to Vertical Anomaly (75390)] /Unflagged After Complete
-		q(75749),	-- Completed Vertical Anomaly (75390),			This Might Be Achievement Tracker/Daily/weekly etc..
 		q(75924),	-- Completed Vertical Anomaly (75390),			This Might Be Achievement Tracker/Daily/weekly etc..
 		q(75882),	-- Completed Vertical Anomaly (75390),			 /unflagged?
+
+		-- Pr3vention
+		q(75908),	-- Starting The Living Drill (76016)
+		q(76000),	-- Completed The Living Drill (76016)
+
+		-- Pr3vention
+		q(75913),	-- Accepting Living Statue (76014)
+		q(75994),	-- Completed Living Statue (76014)
 	}),
 }));

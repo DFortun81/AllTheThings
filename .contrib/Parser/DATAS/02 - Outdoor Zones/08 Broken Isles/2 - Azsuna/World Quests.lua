@@ -267,7 +267,7 @@ _.Zones =
 				q(41639, {	-- Work Order: Battlebound Spaulders
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(137914),	-- Recipe: Battlebound Spaulders [Rank 3] (RECIPE!)
+						i(137914),	-- Pattern: Battlebound Spaulders [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41675, {	-- Work Order: Blink-Trigger Headgun
@@ -291,7 +291,7 @@ _.Zones =
 				q(41633, {	-- Work Order: Leystone Greaves (WQ)
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						i(123931),	-- Recipe: Leystone Greaves [Rank 3] (RECIPE!)
+						i(123931),	-- Plans: Leystone Greaves [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41645, {	-- Work Order: Silkweave Epaulets

@@ -51,40 +51,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				}),
 			}),
 			prof(BLACKSMITHING, {
-				q(54465, {	-- Blacksmithing Plans
-					["requireSkill"] = BLACKSMITHING,
-					["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
+				n(133536, {	-- Grix "Ironfists" Barlow <Blacksmithing Trainer>
 					["coord"] = { 73.6, 8.6, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(50123, {	-- A Recipe For the Ages (A)
-					["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-					["coord"] = { 73.6, 8.6, BORALUS },
-					["description"] = "Requires 150 Kul Tiran Blacksmithing.",
-					["requireSkill"] = BLACKSMITHING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						recipe(253145),	-- Khaz'gorian Smithing Hammer
-					},
-				}),
-				q(50114, {	-- Hammering Out Information (A)
-					["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-					["coord"] = { 73.6, 8.6, BORALUS },
-					["sourceQuest"] = 50114,	-- A Recipe For the Ages (A)
-					["requireSkill"] = BLACKSMITHING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50270, {	-- Deep In the Core (A)
-					["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-					["coord"] = { 73.6, 8.6, BORALUS },
-					["sourceQuest"] = 50114,	-- Hammering Out Information (A)
-					["requireSkill"] = BLACKSMITHING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
+					["g"] = appendGroups(BFA_BLACKSMITHING, {
+						r(264448),	-- Kul Tiran Blacksmithing
+					}),
 				}),
 			}),
 			prof(COOKING, {

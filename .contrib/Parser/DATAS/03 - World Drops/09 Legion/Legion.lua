@@ -143,7 +143,7 @@ root(ROOTS.WorldDrops, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.
 			i(127925),	-- Recipe: Infernal Alchemist Stone [Rank 2] (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
-			i(136709, {	-- Recipe: Demonsteel Stirrups (RECIPE!)
+			i(136709, {	-- Plans: Demonsteel Stirrups (RECIPE!)
 				["crs"] = {
 					104815,	-- Jojo the Palestrider
 					109819,	-- Wild Dreamrunner

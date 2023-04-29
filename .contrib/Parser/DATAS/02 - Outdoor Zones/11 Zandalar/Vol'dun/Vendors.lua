@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(162705, {	-- Recipe: Coastal Rejuvenation Potion [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162755, {	-- Recipe: Contract: Voldunai [Rank 2] (RECIPE!)
+					i(162755, {	-- Technique: Contract: Voldunai [Rank 2] (RECIPE!)
 						["cost"] = 11000000,	-- 1,100g
 					}),
 					i(162698, {	-- Recipe: Flask of the Undertow [Rank 3] (RECIPE!)
@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(162694, {	-- Recipe: Potion of Rising Death [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162766, {	-- Recipe: Recurve Bow of the Strands [Rank 3] (RECIPE!)
+					i(162766, {	-- Pattern: Recurve Bow of the Strands [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(161773, {	-- Alabaster Hyena (MOUNT!)

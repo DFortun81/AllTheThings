@@ -537,14 +537,17 @@ _.Instances = { tier(CATA_TIER, {
 					})),
 					cr(56173, e(333, {	-- Madness of Deathwing
 						ach(6180, {	-- Chromatic Champion
-							-- TODO: [cr] maybe
 							crit(1, {	-- Alexstrasza Assaulted First
+								["cr"] = 56099,
 							}),
 							crit(2, {	-- Kalecgos Assaulted First
+								["cr"] = 56101,
 							}),
 							crit(3, {	-- Nozdormu Assaulted First
+								["cr"] = 56102,
 							}),
 							crit(4, {	-- Ysera Assaulted First
+								["cr"] = 56100,
 							}),
 						}),
 						ach(6177, {	-- Destroyer's End

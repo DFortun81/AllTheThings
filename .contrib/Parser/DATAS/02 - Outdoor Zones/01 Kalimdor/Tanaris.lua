@@ -3028,7 +3028,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2771, {	-- A Good Head On Your Shoulders
 					["qg"] = 7804,	-- Trenton Lighthammer
-					["sourceQuest"] = 2760,	-- The Mithril Order
+					["sourceQuest"] = 2764,	-- Galvan's Finest Pupil
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
@@ -4459,7 +4459,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2773, {	-- The Mithril Kid
 					["qg"] = 7804,	-- Trenton Lighthammer
-					["sourceQuest"] = 2760,	-- The Mithril Order
+					["sourceQuest"] = 2764,	-- Galvan's Finest Pupil
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,
@@ -4629,7 +4629,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2772, {	-- The World At Your Feet
 					["qg"] = 7804,	-- Trenton Lighthammer
-					["sourceQuest"] = 2760,	-- The Mithril Order
+					["sourceQuest"] = 2764,	-- Galvan's Finest Pupil
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = BLACKSMITHING,

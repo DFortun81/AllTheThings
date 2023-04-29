@@ -58,6 +58,30 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						},
 					}),
 				}),
+				n(FOLLOWERS, bubbleDownSelf({
+					["u"] = 15,	-- Temporary troops
+				}, {
+					follower(729),	-- Black Harvest Acolytes
+					follower(730),	-- Black Harvest Acolytes
+					follower(740),	-- Black Harvest Acolytes
+					follower(741),	-- Black Harvest Acolytes
+					follower(764),	-- Black Harvest Invokers
+					follower(765),	-- Black Harvest Invokers
+					follower(766),	-- Black Harvest Invokers
+					follower(767),	-- Black Harvest Invokers
+					follower(1035),	-- Felguard Brutes
+					follower(1036),	-- Felguard Brutes
+					follower(1037),	-- Felguard Brutes
+					follower(1038),	-- Felguard Brutes
+					follower(649),	-- Pack of Imps
+					follower(727),	-- Pack of Imps
+					follower(728),	-- Pack of Imps
+					follower(734),	-- Pack of Imps
+					follower(735),	-- Swarm of Wild Imps
+					follower(736),	-- Swarm of Wild Imps
+					follower(737),	-- Swarm of Wild Imps
+					follower(738),	-- Swarm of Wild Imps
+				})),
 				n(QUESTS, {
 					q(40716, {	-- The Sixth
 						["provider"] = { "n", 103506 },	-- Ritssyn Flamescowl

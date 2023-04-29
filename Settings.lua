@@ -36,6 +36,7 @@ settings.name = app:GetName();
 settings.MostRecentTab = nil;
 settings.Tabs = {};
 settings.TabsByName = {};
+settings.Callback = app.CallbackHandlers.Callback;
 settings:SetBackdrop({
 	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg",
 	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -182,23 +183,6 @@ local FilterSettingsBase = {};
 local SeasonalSettingsBase = {
 	__index = {
 		["DoFiltering"] = false,
-		[1012] = true,
-		[1015] = true,
-		[1016] = true,
-		[1014] = true,
-		[1007] = true,
-		[1006] = true,
-		[1010] = true,
-		[1001] = true,
-		[1008] = true,
-		[1005] = true,
-		[1011] = true,
-		[1000] = true,
-		[1004] = true,
-		[1002] = true,
-		[1017] = true,
-		[1013] = true,
-		[1003] = true,
 	},
 };
 local TooltipSettingsBase = {
@@ -486,20 +470,7 @@ settings.SetWindowFromProfile = function(suffix)
 	end
 end
 settings.CheckSeasonalDate = function(self, u, startMonth, startDay, endMonth, endDay)
-	local today = date("*t");
-	local now, start, ends = time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0});
-	if startMonth <= endMonth then
-		start = time({day=startDay,month=startMonth,year=today.year,hour=0,min=0,sec=0});
-		ends = time({day=endDay,month=endMonth,year=today.year,hour=0,min=0,sec=0});
-	else
-		local year = today.year;
-		if today.month < startMonth then year = year - 1; end
-		start = time({day=startDay,month=startMonth,year=year,hour=0,min=0,sec=0});
-		ends = time({day=endDay,month=endMonth,year=year + 1,hour=0,min=0,sec=0});
-	end
-
-	local active = (now >= start and now <= ends);
-	SeasonalSettingsBase.__index[u] = active;
+	app.PrintDebug("CheckSeasonalDate: This should no longer be called")
 end
 settings.CheckWeekDay = function(self, u, weekDay)
 	SeasonalSettingsBase.__index[u] = date("*t").wday == weekDay;
@@ -509,6 +480,10 @@ settings.Get = function(self, setting, container)
 end
 settings.GetValue = function(self, container, setting)
 	return RawSettings[container][setting];
+end
+-- Allows verifying both Seasonal and Unobtainable at the same time since they use the same value
+settings.GetSeasonalOrUnobtainable = function(self, u)
+	return not u or RawSettings.Seasonal[u] or RawSettings.Unobtainable[u];
 end
 settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID];
@@ -723,18 +698,24 @@ settings.SetPersonal = function(self, setting, value)
 	AllTheThingsSettingsPerCharacter[setting] = value;
 	self:Refresh();
 end
-settings.Refresh = function(self)
-	if not settings._Refreshing then
-		settings._Refreshing = true;
-		settings.SkipAutoRefreshCheckbox:OnRefresh();
-		for i,tab in ipairs(self.Tabs) do
-			if tab.OnRefresh then tab:OnRefresh(); end
-			for j,o in ipairs(tab.objects) do
-				if o.OnRefresh then o:OnRefresh(); end
-			end
+do
+local function Refresh(self)
+	app.PrintDebug("Settings.Refresh")
+	settings.SkipAutoRefreshCheckbox:OnRefresh();
+	for i,tab in ipairs(self.Tabs) do
+		if tab.OnRefresh then tab:OnRefresh(); end
+		for j,o in ipairs(tab.objects) do
+			if o.OnRefresh then o:OnRefresh(); end
 		end
-		settings._Refreshing = nil;
 	end
+	self.__Refreshing = nil;
+end
+settings.Refresh = function(self)
+	-- apparently child components have the audacity to tell the parent it should refresh itself... so insubordinate
+	if self.__Refreshing then return; end
+	self.__Refreshing = true;
+	settings.Callback(Refresh, self);
+end
 end
 -- Applies a basic backdrop color to a given frame
 -- r/g/b expected in 1-255 range
@@ -1089,8 +1070,8 @@ settings.SetAccountMode = function(self, accountMode)
 	self:UpdateMode(1);
 end
 settings.ToggleAccountMode = function(self)
-	self:SetAccountMode(not self:Get("AccountMode"));
 	self:ForceRefreshFromToggle();
+	self:SetAccountMode(not self:Get("AccountMode"));
 end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode);
@@ -1098,8 +1079,8 @@ settings.SetCompletionistMode = function(self, completionistMode)
 	self:UpdateMode(1);
 end
 settings.ToggleCompletionistMode = function(self)
-	self:SetCompletionistMode(not self:Get("Completionist"));
 	self:ForceRefreshFromToggle();
+	self:SetCompletionistMode(not self:Get("Completionist"));
 end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode);
@@ -1119,24 +1100,24 @@ settings.SetDebugMode = function(self, debugMode)
 	self:UpdateMode(1);
 end
 settings.ToggleDebugMode = function(self)
-	self:SetDebugMode(not self:Get("DebugMode"));
 	self:ForceRefreshFromToggle();
+	self:SetDebugMode(not self:Get("DebugMode"));
 end
 settings.SetFactionMode = function(self, factionMode)
 	self:Set("FactionMode", factionMode);
 	self:UpdateMode(1);
 end
 settings.ToggleFactionMode = function(self)
-	self:SetFactionMode(not self:Get("FactionMode"));
 	self:ForceRefreshFromToggle();
+	self:SetFactionMode(not self:Get("FactionMode"));
 end
 settings.SetMainOnlyMode = function(self, mainOnly)
 	self:Set("MainOnly", mainOnly);
 	self:SetCompletionistMode(self:Get("Completionist"));
 end
 settings.ToggleMainOnlyMode = function(self)
-	self:SetMainOnlyMode(not self:Get("MainOnly"));
 	self:ForceRefreshFromToggle();
+	self:SetMainOnlyMode(not self:Get("MainOnly"));
 end
 settings.SetCompletedThings = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
@@ -1146,41 +1127,39 @@ settings.SetCompletedThings = function(self, checked)
 	self:UpdateMode(1);
 end
 settings.ToggleCompletedThings = function(self)
-	self:SetCompletedThings(not self:Get("Show:CompletedGroups"));
 	self:ForceRefreshFromToggle();
+	self:SetCompletedThings(not self:Get("Show:CompletedGroups"));
 end
 settings.SetCompletedGroups = function(self, checked, skipRefresh)
 	self:Set("Show:CompletedGroups", checked);
 	self:UpdateMode(not skipRefresh);
 end
 settings.ToggleCompletedGroups = function(self)
+	self:ForceRefreshFromToggle();
 	self:SetCompletedGroups(not self:Get("Show:CompletedGroups"));
 	settings:Set("Cache:CompletedGroups", self:Get("Show:CompletedGroups"));
-	self:ForceRefreshFromToggle();
 end
 settings.SetCollectedThings = function(self, checked, skipRefresh)
 	self:Set("Show:CollectedThings", checked);
 	self:UpdateMode(not skipRefresh);
 end
 settings.ToggleCollectedThings = function(self)
+	self:ForceRefreshFromToggle();
 	settings:SetCollectedThings(not self:Get("Show:CollectedThings"));
 	settings:Set("Cache:CollectedThings", self:Get("Show:CollectedThings"));
-	self:ForceRefreshFromToggle();
 end
 settings.SetHideBOEItems = function(self, checked)
 	self:Set("Hide:BoEs", checked);
 	self:UpdateMode(1);
 end
 settings.ToggleBOEItems = function(self)
-	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
 	self:ForceRefreshFromToggle();
+	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
 end
 -- When we toggle a setting directly (keybind etc.) the refresh should always take place immediately,
--- so force it if it is being skipped
+-- so force it always
 settings.ForceRefreshFromToggle = function(self)
-	if self:Get("Skip:AutoRefresh") then
-		self:UpdateMode("FORCE");
-	end
+	self.ToggleRefresh = true;
 end
 -- Setup tracking for all Things based on the Settings value, or whether it is forcibly tracked or forced AccountWide
 settings.SetThingTracking = function(self, force)
@@ -1201,6 +1180,7 @@ settings.SetThingTracking = function(self, force)
 		end
 	end
 end
+-- Updates various application settings and values based on toggled Settings, as well as the Mode name and Refreshes the Settings
 settings.UpdateMode = function(self, doRefresh)
 	if self:Get("Completionist") then
 		app.ItemSourceFilter = app.FilterItemSource;
@@ -1216,8 +1196,7 @@ settings.UpdateMode = function(self, doRefresh)
 	end
 	if self:Get("DebugMode") then
 		app.GroupFilter = app.NoFilter;
-		app.SeasonalItemFilter = app.NoFilter;
-		app.UnobtainableItemFilter = app.NoFilter;
+		app.SeasonalOrUnobtainableFilter = app.NoFilter;
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.ItemTypeFilter = app.NoFilter;
 		app.ClassRequirementFilter = app.NoFilter;
@@ -1238,16 +1217,10 @@ settings.UpdateMode = function(self, doRefresh)
 		app.DefaultGroupFilter = app.Filter;
 		app.DefaultThingFilter = app.Filter;
 		-- specifically hiding something
-		if settings:GetValue("Seasonal", "DoFiltering") then
-			app.SeasonalItemFilter = app.FilterItemClass_SeasonalItem;
+		if settings:GetValue("Seasonal", "DoFiltering") or settings:GetValue("Unobtainable", "DoFiltering") then
+			app.SeasonalOrUnobtainableFilter = app.FilterItemClass_SeasonalOrUnobtainableItem;
 		else
-			app.SeasonalItemFilter = app.NoFilter;
-		end
-		-- specifically hiding something
-		if settings:GetValue("Unobtainable", "DoFiltering") then
-			app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
-		else
-			app.UnobtainableItemFilter = app.NoFilter;
+			app.SeasonalOrUnobtainableFilter = app.NoFilter;
 		end
 		if self:Get("Show:TrackableThings") then
 			app.ShowTrackableThings = app.FilterItemTrackable;
@@ -1332,24 +1305,35 @@ settings.UpdateMode = function(self, doRefresh)
 		app:RegisterEvent("TAXIMAP_OPENED");
 	end
 
+	-- refresh forced from toggle
+	if self.ToggleRefresh then
+		doRefresh = "FORCE";
+		self.ToggleRefresh = nil;
+	end
 	-- if auto-refresh
 	if doRefresh then
 		self.NeedsRefresh = true;
-		if doRefresh == "FORCE" or not settings:Get("Skip:AutoRefresh") then
-			self.NeedsRefresh = nil;
-			if app.DoRefreshAppearanceSources then
-				app.RefreshAppearanceSources();
-			end
-			app:RefreshData(nil,nil,true);
+	end
+	app.PrintDebug("UpdateMode",doRefresh)
+	-- FORCE = Force Update
+	-- 1 = Force Update IF NOT Skip
+	-- not = Soft Update
+	doRefresh = doRefresh == "FORCE" or
+		(doRefresh and not settings:Get("Skip:AutoRefresh"));
+
+	if doRefresh then
+		self.NeedsRefresh = nil;
+		if app.DoRefreshAppearanceSources then
+			app.RefreshAppearanceSources();
 		end
+		app:RefreshData(nil,nil,true);
+	else
+		-- lazy refresh instead
+		app:RefreshData(true,nil,true);
 	end
 
 	-- ensure the settings pane itself is refreshed
 	self:Refresh();
-	-- and refresh any open ATT windows
-	if app.UpdateWindows then
-		app:UpdateWindows();
-	end
 end
 
 -- The ALL THE THINGS Epic Logo!
@@ -2154,7 +2138,7 @@ function(self)
 	self:SetAlpha(1);
 	if settings:Get(settingName) == 0 then
 		self:SetChecked(true);
-		app.Callback(Off_Disable, self);
+		settings.Callback(Off_Disable, self);
 	else
 		self:SetChecked(false);
 		self:Enable();
@@ -2175,7 +2159,7 @@ function(self)
 	self:SetAlpha(1);
 	if settings:Get(settingName) == 1 then
 		self:SetChecked(true);
-		app.Callback(Simple_Disable, self);
+		settings.Callback(Simple_Disable, self);
 	else
 		self:SetChecked(false);
 		self:Enable();
@@ -2195,7 +2179,7 @@ function(self)
 	self:SetAlpha(1);
 	if settings:Get(settingName) == 2 then
 		self:SetChecked(true);
-		app.Callback(Nested_Disable, self);
+		settings.Callback(Nested_Disable, self);
 	else
 		self:SetChecked(false);
 		self:Enable();
@@ -2347,7 +2331,6 @@ f:SetScript("OnClick", function(self)
 	for key,value in pairs(AllTheThingsSettingsPerCharacter.Filters) do
 		AllTheThingsSettingsPerCharacter.Filters[key] = nil;
 	end
-	settings:Refresh();
 	settings:UpdateMode(1);
 end);
 f:SetATTTooltip(L["CLASS_DEFAULTS_BUTTON_TOOLTIP"]);
@@ -2371,7 +2354,6 @@ f:SetScript("OnClick", function(self)
 	for k,v in pairs(allEquipmentFilters) do
 		AllTheThingsSettingsPerCharacter.Filters[v] = true
 	end
-	settings:Refresh();
 	settings:UpdateMode(1);
 end);
 f:SetATTTooltip(L["ALL_BUTTON_TOOLTIP"]);
@@ -2395,7 +2377,6 @@ f:SetScript("OnClick", function(self)
 	for k,v in pairs(allEquipmentFilters) do
 		AllTheThingsSettingsPerCharacter.Filters[v] = false
 	end
-	settings:Refresh();
 	settings:UpdateMode(1);
 end);
 f:SetATTTooltip(L["UNCHECK_ALL_BUTTON_TOOLTIP"]);
@@ -2532,28 +2513,29 @@ for i,cc in ipairs({"SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
 	local reason = customCollects[cc];
 	local text = reason["icon"].." "..insane_color..reason["text"].."|r"
 	ccCheckbox = child:CreateCheckBox(text,
-	function(self)
-		local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
-			or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]));
-		self:SetChecked(automatic or settings:Get(filterID));
-		if automatic then
-			self:SetAlpha(0.2);
-		else
-			self:Enable();
-			self:SetAlpha(1);
+		function(self)
+			local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
+				or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]));
+			self:SetChecked(automatic or settings:Get(filterID));
+			if automatic then
+				self:SetAlpha(0.5);
+			else
+				self:Enable();
+				self:SetAlpha(1);
+			end
+		end,
+		function(self)
+			local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
+				or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]));
+			-- prevent toggling automatic filter without requiring it to be disabled (TODO add this logic as part of the checkbox itself somehow instead of manually?)
+			if automatic then
+				self:SetChecked(true);
+				return;
+			end
+			settings:Set(filterID, self:GetChecked());
+			settings:UpdateMode(1);
 		end
-	end,
-	function(self)
-		local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
-			or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]));
-		-- prevent toggling automatic filter without requiring it to be disabled (TODO add this logic as part of the checkbox itself somehow instead of manually?)
-		if automatic then
-			self:SetChecked(true);
-			return;
-		end
-		settings:Set(filterID, self:GetChecked());
-		settings:UpdateMode(1);
-	end);
+	);
 	ccCheckbox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
 	if inital then
 		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", xInitalOffset, 0);
@@ -2612,33 +2594,110 @@ SeasonalFiltersLabel:SetPoint("TOP", settings.equipfilterdefault, "BOTTOM", 0, -
 local unobtainables = L["UNOBTAINABLE_ITEM_REASONS"];
 local holidayOrder = { 1012, 1015, 1016, 1014, 1007, 1006, 1010, 1001, 1008, 1005, 1011, 1000, 1004, 1002, 1017, 1013, 1003 };
 
+-- Automatic Holiday Calendar Syncs
+do
+-- Acts as a wrapper for the base-Seasonal settings, which will be set based on currently-active calendar events
+settings.AutoSeasonalFilters = setmetatable({}, {
+	__newindex = function(t, key, val)
+		-- app.PrintDebug("ASF-Set",key,val)
+		rawset(SeasonalSettingsBase.__index, key, val);
+	end,
+	__index = function(t, key)
+		-- app.PrintDebug("ASF-Get",key)
+		return rawget(SeasonalSettingsBase.__index, key);
+	end
+});
+-- Icon = Holiday Filter
+local IconMonthFilterMappings = {
+	[235471] = 1007,	-- Lunar Festival
+	[235462] = 1004,	-- Hallow's End
+	[235465.09] = 1005,	-- Harvest Festival (September)
+	[235465.11] = 1013,	-- Pilgrim's Bounty (November)
+	[235468] = 1006,	-- Love is in the Air
+	[235481] = 1011,	-- Pirate's Day
+	[235442] = 1000,	-- Brewfest
+	[235474] = 1008,	-- Midsummer
+	[235445] = 1001,	-- Children's Week (tested)
+	[307365] = 1002,	-- Day of the Dead
+	[235448] = 1012,	-- Darkmoon Faire
+	[235477] = 1010,	-- Noblegarden
+	[235485] = 1003,	-- Feast of Winter Veil
+
+	-- Timewalking
+	[1129673] = 1016,	-- Timewalking BC (tested)
+	[1129683] = 1016,	-- Timewalking
+	[1129686] = 1016,	-- Timewalking
+	[1304688] = 1016,	-- Timewalking
+	[1530590] = 1016,	-- Timewalking
+	[1467046] = 1016,	-- Timewalking (tested)
+
+	-- Micro Holidays
+	[1574965] = 1014,	-- Call of the Scarab
+	[1574966] = 1014,	-- Hatching of the Hippogryphs
+	[1671627] = 1014,	-- Great Gnomergan Run
+	[1671628] = 1014,	-- Moonkin Festival
+	[1671631] = 1014,	-- Trial of Style
+	[2827082] = 1014,	-- Free T-Shirt Day
+};
+
+local function CheckActiveHolidayFilters(self, event)
+	-- unregister whichever event caused this check
+	-- app.PrintDebug("CheckActiveHolidayFilters",event)
+	settings:UnregisterEvent(event);
+	local currentDate = C_DateAndTime.GetCurrentCalendarTime();
+	local month = currentDate.month;
+	local monthDay = currentDate.monthDay;
+	local events = C_Calendar.GetNumDayEvents(0, monthDay) or 0;
+	for i=1,events do
+		local event = C_Calendar.GetDayEvent(0, monthDay, i);
+		-- app.PrintDebug(event.title,event.calendarType,event.iconTexture)
+		if event and event.calendarType == "HOLIDAY" then
+			local icon = event.iconTexture or 0;
+			local filterKey = icon + (month / 100);
+			settings.AutoSeasonalFilters[IconMonthFilterMappings[filterKey] or IconMonthFilterMappings[icon] or -1] = true;
+		end
+	end
+	-- app.PrintDebug("CheckActiveHolidayFilters:Done",event)
+	settings:UpdateMode(1);
+end
+
+-- Calendar Data Event
+settings:RegisterEvent("CALENDAR_UPDATE_EVENT_LIST")
+settings:SetScript("OnEvent", CheckActiveHolidayFilters);
+
+-- Testing
+-- settings.AutoSeasonalFilters[1016] = true;
+-- settings.AutoSeasonalFilters[1014] = true;
+-- settings.AutoSeasonalFilters[1004] = true;
+
+end -- Automatic Holiday Calendar Syncs
+
 local SeasonalAllCheckBox = child:CreateCheckBox(L["SEASONAL_ALL"],
-function(self)
-	local anyFiltered = false;
-	for _,v in ipairs(holidayOrder) do
-		if unobtainables[v][1] == 4 then
-			if not settings:GetValue("Seasonal", v) then
-				anyFiltered = true;
-				-- ensure the filter is specifically marked as 'false' if it's not enabled
-				settings:SetValue("Seasonal", v, false);
+	function(self)
+		local anyFiltered = false;
+		for _,v in ipairs(holidayOrder) do
+			if unobtainables[v][1] == 4 then
+				if not settings:GetValue("Seasonal", v) then
+					anyFiltered = true;
+					settings:SetValue("Seasonal", v, nil);
+				end
 			end
 		end
-	end
-	self:SetChecked(not anyFiltered);
-	settings:SetValue("Seasonal", "DoFiltering", anyFiltered);
-	self:Enable();
-	self:SetAlpha(1);
-end,
-function(self)
-	local checked = self:GetChecked();
-	for _,v in ipairs(holidayOrder) do
-		if unobtainables[v][1] == 4 then
-			settings:SetValue("Seasonal", v, checked);
+		self:SetChecked(not anyFiltered);
+		settings:SetValue("Seasonal", "DoFiltering", anyFiltered);
+		self:Enable();
+		self:SetAlpha(1);
+	end,
+	function(self)
+		local checked = self:GetChecked() or nil;
+		for _,v in ipairs(holidayOrder) do
+			if unobtainables[v][1] == 4 then
+				settings:SetValue("Seasonal", v, checked);
+			end
 		end
+		settings:UpdateMode(1);
 	end
-	settings:Refresh();
-	settings:UpdateMode(1);
-end);
+);
 SeasonalAllCheckBox:SetPoint("TOPLEFT", SeasonalFiltersLabel, "BOTTOMLEFT", -2, 0);
 
 local last = SeasonalAllCheckBox;
@@ -2647,17 +2706,22 @@ for _,v in ipairs(holidayOrder) do
 	if unobtainables[v][1] == 4 then
 		local seasonalFilter = child:CreateCheckBox(unobtainables[v][3],
 			function(self)
-				self:SetChecked(settings:GetValue("Seasonal", v));
-				if SeasonalSettingsBase.__index[v] then
-					self.Text:SetTextColor(0.678, 0.847, 0.902); --Reinstated Insane color logic
+				local auto = settings.AutoSeasonalFilters[v];
+				self:SetChecked(auto or settings:GetValue("Seasonal", v));
+				if auto then
+					self:SetAlpha(0.5);
 				else
-					self.Text:SetTextColor(0.678, 0.847, 0.902); --Reinstated Insane color logic
+					self:SetAlpha(1);
 				end
+				self:Enable();
+				self.Text:SetTextColor(0.678, 0.847, 0.902); --Reinstated Insane color logic
 			end,
 			function(self)
-				settings:SetValue("Seasonal", v, self:GetChecked());
-				settings:Refresh();
-				settings:UpdateMode(1);
+				settings:SetValue("Seasonal", v, self:GetChecked() or nil);
+				-- only do an update if this isn't auto enabled filter
+				if not settings.AutoSeasonalFilters[v] then
+					settings:UpdateMode(1);
+				end
 			end
 		);
 		seasonalFilter:SetATTTooltip(unobtainables[v][2]);
@@ -2677,32 +2741,32 @@ UnobtainableFiltersLabel:SetPoint("TOP", SeasonalFiltersLabel, "TOP", 0, 0);
 UnobtainableFiltersLabel:SetPoint("LEFT", GeneralFiltersLabel, "LEFT", 0, 0);
 
 local UnobtainableAllCheckBox = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
-function(self)
-	local anyFiltered = false;
-	for k,v in pairs(unobtainables) do
-		if v[1] < 4 then
-			if not settings:GetValue("Unobtainable", k) then
-				anyFiltered = true;
-				-- ensure the filter is specifically marked as 'false' if it's not enabled
-				settings:SetValue("Unobtainable", k, false);
+	function(self)
+		local anyFiltered = false;
+		for k,v in pairs(unobtainables) do
+			if v[1] < 4 then
+				if not settings:GetValue("Unobtainable", k) then
+					anyFiltered = true;
+					-- ensure the filter is specifically marked as 'false' if it's not enabled
+					settings:SetValue("Unobtainable", k, false);
+				end
 			end
 		end
-	end
-	self:SetChecked(not anyFiltered);
-	settings:SetValue("Unobtainable", "DoFiltering", anyFiltered);
-	self:Enable();
-	self:SetAlpha(1);
-end,
-function(self)
-	local checked = self:GetChecked();
-	for k,v in pairs(unobtainables) do
-		if v[1] < 4 then
-			settings:SetValue("Unobtainable", k, checked);
+		self:SetChecked(not anyFiltered);
+		settings:SetValue("Unobtainable", "DoFiltering", anyFiltered);
+		self:Enable();
+		self:SetAlpha(1);
+	end,
+	function(self)
+		local checked = self:GetChecked();
+		for k,v in pairs(unobtainables) do
+			if v[1] < 4 then
+				settings:SetValue("Unobtainable", k, checked);
+			end
 		end
+		settings:UpdateMode(1);
 	end
-	settings:Refresh();
-	settings:UpdateMode(1);
-end);
+);
 UnobtainableAllCheckBox:SetPoint("TOPLEFT", UnobtainableFiltersLabel, "BOTTOMLEFT", -2, 0);
 
 local NoChanceAllCheckBox = child:CreateCheckBox(L["NO_CHANCE_ALL"],
@@ -2726,7 +2790,6 @@ function(self)
 			settings:SetValue("Unobtainable", k, checked);
 		end
 	end
-	settings:Refresh();
 	settings:UpdateMode(1);
 end);
 NoChanceAllCheckBox:AlignBelow(UnobtainableAllCheckBox, 1);
@@ -2743,7 +2806,6 @@ for k,v in pairs(unobtainables) do
 		end,
 		function(self)
 			settings:SetValue("Unobtainable", k, self:GetChecked());
-			settings:Refresh();
 			settings:UpdateMode(1);
 		end);
 		filter:SetATTTooltip(v[2]);
@@ -2778,7 +2840,6 @@ function(self)
 			settings:SetValue("Unobtainable", k, checked);
 		end
 	end
-	settings:Refresh();
 	settings:UpdateMode(1);
 end);
 HighChanceAllCheckBox:AlignBelow(last, -1);
@@ -2795,7 +2856,6 @@ for k,v in pairs(unobtainables) do
 		end,
 		function(self)
 			settings:SetValue("Unobtainable", k, self:GetChecked());
-			settings:Refresh();
 			settings:UpdateMode(1);
 		end);
 		filter:SetATTTooltip(v[2]);
@@ -3987,7 +4047,7 @@ local InitializeProfilesButton = settings:CreateButton(
 		function()
 			app.SetupProfiles();
 			OnClickForTab(tab);
-			app.Callback(InitProfilesButton_Disable, self);
+			settings.Callback(InitProfilesButton_Disable, self);
 		end);
 	end,
 });
@@ -4159,7 +4219,7 @@ refreshProfiles = function()
 					if activeProfile == myProfile then
 						self:SetAlpha(0.5);
 						self:SetChecked(true);
-						app.Callback(ProfileCheckbox_Disable, self);
+						settings.Callback(ProfileCheckbox_Disable, self);
 					elseif tab.SelectedProfile == myProfile then
 						self:SetAlpha(1);
 						self:Enable();

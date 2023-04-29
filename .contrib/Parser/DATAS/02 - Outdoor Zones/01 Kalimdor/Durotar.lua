@@ -1613,11 +1613,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 41140,	-- Burok <Flight Master>
 					["coord"] = { 53.0, 43.6, DUROTAR },
 					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(536, {	-- Sen'jin Village
 					["cr"] = 41142,	-- Handler Marnlek <Bat Handler>
 					["coord"] = { 55.4, 73.4, DUROTAR },
 					["timeline"] = { "added 4.0.1.12984" },
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			-- #endif

@@ -18,6 +18,7 @@ _.Zones =
 				}),
 				fp(1115, {	-- The Lion's Redoubt, Dread Wastes
 					["coord"] = { 12.0, 32.8, DREAD_WASTES },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1072, {	-- The Sunset Brewgarden, Dread Wastes
 					["coord"] = { 50.2, 12.2, DREAD_WASTES },

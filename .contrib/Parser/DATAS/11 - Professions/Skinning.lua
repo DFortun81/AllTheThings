@@ -219,9 +219,7 @@ profession(SKINNING, {
 				["sourceQuest"] = 40133,	-- Scrap of Pants
 				["provider"] = { "n", 94409 },	-- Hemet Nesingwary <Hemet's Hunting Party>
 				["groups"] = {
-					i(130064, {	-- Deadeye Monocle
-						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-					}),
+					i(130064),	-- Deadeye Monocle
 				},
 			}),
 			q(40135, {	-- The Freedom to Roam

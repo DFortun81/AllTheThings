@@ -11,6 +11,56 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 		["coord"] = { 45.56, 53.61, TANAAN_JUNGLE },
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(10023, {	-- Hellbreach
+					crit(1, {	-- Hellfire Assault
+						["_encounter"] = { 1426, LFR_RAID },
+					}),
+					crit(2, {	-- Iron Reaver
+						["_encounter"] = { 1425, LFR_RAID },
+					}),
+					crit(3, {	-- Kormrok
+						["_encounter"] = { 1392, LFR_RAID },
+					}),
+				}),
+				ach(10024, {	-- Halls of Blood
+					crit(1, {	-- Hellfire High Council
+						["_encounter"] = { 1432, LFR_RAID },
+					}),
+					crit(2, {	-- Kilrogg Deadeye
+						["_encounter"] = { 1396, LFR_RAID },
+					}),
+					crit(3, {	-- Gorefiend
+						["_encounter"] = { 1372, LFR_RAID },
+					}),
+				}),
+				ach(10025, {	-- Bastion of Shadows
+					crit(1, {	-- Shadow-Lord Iskar
+						["_encounter"] = { 1433, LFR_RAID },
+					}),
+					crit(2, {	-- Socrethar the Eternal
+						["_encounter"] = { 1427, LFR_RAID },
+					}),
+					crit(3, {	-- Tyrant Velhari
+						["_encounter"] = { 1394, LFR_RAID },
+					}),
+				}),
+				ach(10020, {	-- Destructor's Rise
+					crit(1, {	-- Fel Lord Zakuun
+						["_encounter"] = { 1391, LFR_RAID },
+					}),
+					crit(2, {	-- Xhul'horac
+						["_encounter"] = { 1447, LFR_RAID },
+					}),
+					crit(3, {	-- Mannoroth
+						["_encounter"] = { 1395, LFR_RAID },
+					}),
+				}),
+				ach(10019, {	-- The Black Gate
+					crit(1, {	-- Archimonde
+						["_encounter"] = { 1438, LFR_RAID },
+					}),
+				}),
+				-- TODO: symlink meta achieve
 				ach(10149, {	-- Glory of the Hellfire Raider
 					i(127140),	-- Infernal Direwolf (MOUNT!)
 					ach(10026, {	-- Nearly Indestructible
@@ -90,7 +140,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 						},
 					})),
 				}),
-				ach(10023, {	-- Hellbreach
+				header(HEADERS.Achievement, 10023, {	-- Hellbreach
 					cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 						i(128092),	-- Wicked Bonecarver's Knife
 						i(128098),	-- Snub-Nosed Iron Rifle
@@ -141,7 +191,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 						i(128143),	-- Fragmented Runestone Etching
 					})),
 				}),
-				ach(10024, {	-- Halls of Blood
+				header(HEADERS.Achievement, 10024, {	-- Halls of Blood
 					e(1432, {	-- Hellfire High Council
 						["crs"] = {
 							92142,	-- Blademaster Jubei'thos
@@ -199,7 +249,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 						i(128148),	-- Fetid Salivation
 					})),
 				}),
-				ach(10025, {	-- Bastion of Shadows
+				header(HEADERS.Achievement, 10025, {	-- Bastion of Shadows
 					cr(90316, e(1433, {	-- Shadow-Lord Iskar
 						i(127771, {	-- Gemcutter Module: Critical Strike
 							["requireSkill"] = JEWELCRAFTING,
@@ -249,7 +299,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 						i(128149),	-- Accusation of Inferiority
 					})),
 				}),
-				ach(10020, {	-- Destructor's Rise
+				header(HEADERS.Achievement, 10020, {	-- Destructor's Rise
 					cr(89890, e(1391, {	-- Fel Lord Zakuun
 						i(128202),	-- Ironblade Knuckles
 						i(128043),	-- Gaze of Superiority
@@ -291,7 +341,7 @@ root(ROOTS.Instances, tier(WOD_TIER, {
 						i(128297),	-- Mark of the Destructor
 					})),
 				}),
-				ach(10019, {	-- The Black Gate
+				header(HEADERS.Achievement, 10019, {	-- The Black Gate
 					cr(91331, e(1438, {	-- Archimonde
 						i(128199),	-- Fractured Soulgem Staff
 						i(128201),	-- Greatsword of Chaos

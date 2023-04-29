@@ -54,7 +54,6 @@ i(197020, 69220);	-- Cliffside Wylderdrake: Spear Tail
 i(196970, 69170);	-- Cliffside Wylderdrake: Spiked Back
 i(196971, 69171);	-- Cliffside Wylderdrake: Spiked Brow
 i(197003, 69203);	-- Cliffside Wylderdrake: Spiked Cheek
-i(197021, 69221);	-- Cliffside Wylderdrake: Spiked Club Tail
 i(196977, 69177);	-- Cliffside Wylderdrake: Split Head Horns
 i(196997, 69197);	-- Cliffside Wylderdrake: Split Horns
 i(196968, 69168);	-- Cliffside Wylderdrake: Steel and Yellow Armor
@@ -285,6 +284,7 @@ i(202280, 73060);	-- Renewed Proto-Drake: Pronged Tail
 -- PATCH 10.1.0 --
 ------------------
 i(196978, 69178);	-- Cliffside Wylderdrake: Small Head Spikes
+i(197021, 69221);	-- Cliffside Wylderdrake: Spiked Club Tail
 i(197156, 69357);	-- Highland Drake: Bronze and Green Armor
 i(197120, 69321);	-- Highland Drake: Ornate Helm
 i(197109, 69310);	-- Highland Drake: Spiked Head

@@ -4,6 +4,16 @@
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
 		n(VENDORS, {
+			n(203301 , {	-- Bottles <Food and Drink>
+				["coord"] = {  58.1, 55.1, ZARALEK_CAVERN },
+				["g"] = {
+					i(205417),	-- Fungishine
+				},
+			}),
+			n(204373, {	-- Cenka <Resourceful Chef>
+				i(205794),	-- Beetle Juice
+				i(205793),	-- Skitter Souf-fly
+			}),
 			n(202468, {	-- Harlowe Marl
 				["coord"] = { 56.5, 55.6, ZARALEK_CAVERN },
 				["g"] = {
@@ -210,6 +220,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 				},
 			}),
+			n(203609, {	-- Phiary <Cooking>
+				-- TODO: ["coord"] = { 0, 0, ZARALEK_CAVERN },
+				["g"] = {
+					i(205690, {	-- Barter-B-Q
+						["cost"] = {
+							{ "i", 204985, 5 },	-- Barter Brick
+						},
+					}),
+				}
+			}),
+			n(204371, {	-- Sniktak <Enterprising Mycologist>
+				["g"] = {
+					i(205696),	-- Amethyst Deceiver Mushroom
+					i(205417),	-- Fungishine
+					i(205693),	-- Latticed Stinkhorn
+					i(205692),	-- Stellaviatori Soup
+				},
+			})
 		}),
 	}),
 })));

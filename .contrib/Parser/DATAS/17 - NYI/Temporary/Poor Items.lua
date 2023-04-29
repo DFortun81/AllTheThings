@@ -789,8 +789,180 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			}),
 			n(WEAPONS, {
+				filter(ONE_HANDED_AXES, {
+					i(29417),	-- Monster - Axe - Ethereal, Consortium (Purple Glow)
+					i(29422),	-- Monster - Axe - Ethereal, Ethereum (Red Glow)
+					i(29436),	-- Monster - Axe - Ethereal, Protectorate (White Glow)
+					i(25859),	-- Monster - Axe (No Visual)
+					i(34508),	-- Monster - Axe, 1H Blood Elf A01
+					i(34509),	-- Monster - Axe, 1H Blood Elf A01 Blue
+					i(34510),	-- Monster - Axe, 1H Blood Elf A01 Green
+					i(34511),	-- Monster - Axe, 1H Blood Elf A01 Yellow
+					i(34506),	-- Monster - Axe, 1H Blood Elf A02 Blue
+					i(24320),	-- Monster - Axe, 1H Blood Elf A02 Gold
+					i(34507),	-- Monster - Axe, 1H Blood Elf A02 Green
+					i(24327),	-- Monster - Axe, 1H Blood Elf A02 Purple
+					i(34512),	-- Monster - Axe, 1H Blood Elf A03
+					i(34513),	-- Monster - Axe, 1H Blood Elf A03 Blue
+					i(34514),	-- Monster - Axe, 1H Blood Elf A03 Purple
+					i(34515),	-- Monster - Axe, 1H Blood Elf A03 Yellow
+					i(34080),	-- Monster - Axe, 1H Broad, Spiked Blade
+					i(23428),	-- Monster - Axe, 1h Grom's
+					i(30661),	-- Monster - Axe, 1H Grom'tor
+					i(27850),	-- Monster - Axe, 1H Hot Steel (Broken)
+					i(30180),	-- Monster - Axe, 1H Kor'kron Defender (D02 Wolf)
+					i(27849),	-- Monster - Axe, 1H Large Double Bladed (Broken)
+					i(30715),	-- Monster - Axe, 1H Mounted Death Knight
+					i(34883),	-- Monster - Axe, 1H Outland Raid D02
+					i(35463),	-- Monster - Axe, 1H Outland Raid D04
+					i(24409),	-- Monster - Axe, 2H Grom's
+					i(30699),	-- Monster - Axe, Akama's Scythe
+					i(21129),	-- Monster - Axe, Doctor Weavil
+					i(34520),	-- Monster - Axe, Draenei A01 Amethyst
+					i(34521),	-- Monster - Axe, Draenei A01 Blue
+					i(34522),	-- Monster - Axe, Draenei A01 Gold
+					i(34523),	-- Monster - Axe, Draenei A01 Ice
+					i(29705),	-- Monster - Axe, Draenei B01 Amethyst
+					i(29706),	-- Monster - Axe, Draenei B01 Blue
+					i(29707),	-- Monster - Axe, Draenei B01 Gold
+					i(29708),	-- Monster - Axe, Draenei B01 Ice
+					i(29709),	-- Monster - Axe, Draenei C01 Amethyst
+					i(29710),	-- Monster - Axe, Draenei C01 Blue
+					i(29711),	-- Monster - Axe, Draenei C01 Gold
+					i(29712),	-- Monster - Axe, Draenei C01 Ice
+					i(34524),	-- Monster - Axe, Draenei D01 Blue
+					i(34525),	-- Monster - Axe, Draenei D01 Gold
+					i(34526),	-- Monster - Axe, Draenei D01 Ice
+					i(31205),	-- Monster - Axe, Eclipsion Soldier C04 Fire
+					i(33318),	-- Monster - Axe, Hatchet A01/A02 Silver
+					i(33094),	-- Monster - Axe, Hatchet B01 Gold
+					i(33790),	-- Monster - Axe, Horde B03 Copper (Thrown)
+					i(31353),	-- Monster - Axe, Horde C03 Obsidian
+					i(29900),	-- Monster - Axe, Horde C04 Fire
+					i(33320),	-- Monster - Axe, Horde C04 Metal
+					i(29541),	-- Monster - Axe, Horde Double Blade A02 (Red Glow)
+					i(29809),	-- Monster - Axe, Horde Massive Spiked (2H as 1H)
+					i(21465),	-- Monster - Axe, Insano
+					i(38216),	-- Monster - Axe, Insano (High Red Flame)
+					i(31206),	-- Monster - Axe, Insano Eclipsion Soldier
+					i(23996),	-- Monster - Axe, Malchezzar
+					i(33049),	-- Monster - Axe, Outland D04 Green
+					i(32887),	-- Monster - Black Temple - Axe, 1H - Bonechewer Blade Fury
+					i(32886),	-- Monster - Black Temple - Axe, 1H - Bonechewer Shield Disciple
+					i(32604),	-- Monster - Black Temple - Axe, 1H - Shadowmoon Reaver
+					i(31600),	-- Monster - Dragonmaw, Shadowmoon - 1H Axe
+					i(30702),	-- Monster - EQUIPS RANDOM WEAPON VIA ACTION TRIGGER
+					i(29433),	-- Monster - Glaive - 2 Blade B03 Red - High Red Glow
+					i(29413),	-- Monster - Glaive - 2 Blade Purple - Ethereal, Consortium (Purple Glow)
+					i(29418),	-- Monster - Glaive - 2 Blade Purple - Ethereal, Ethereum (Red Glow)
+					i(29444),	-- Monster - Glaive - 2 Blade Purple - Ethereal, Ethereum Darkstalker (Black Glow)
+					i(29437),	-- Monster - Glaive - 2 Blade Purple - Ethereal, Protectorate (White Glow)
+					i(29430),	-- Monster - Glaive - 2 Blade Purple - Protectorate (White Glow)
+					i(35779),	-- Monster - Glaive - 3 Blade Black (Medium Blue Glow)
+					i(29419),	-- Monster - Glaive - 3 Blade Purple - Ethereal, Ethereum (Red Glow)
+					i(29414),	-- Monster - Glaive - 4 Blade Purple - Ethereal, Consortium (Purple Glow)
+					i(29438),	-- Monster - Glaive - 4 Blade Purple - Ethereal, Protectorate (White Glow)
+					i(32065),	-- Monster - Glaive - Demonhunter Black (Black Glow - Illidan)
+					i(30208),	-- Monster - Glaive - Demonhunter Black (Red Flame)
+					i(32066),	-- Monster - Glaive - Demonhunter Black Offhand (Black Glow - Illidan)
+					i(30209),	-- Monster - Glaive - Demonhunter Black Offhand (Red Flame)
+					i(23582),	-- Monster - Lady Blameux
+				}),
+				filter(TWO_HANDED_AXES, {
+					i(22199),	-- Monster - Axe, 2H Arcanite Reaper
+					i(30625),	-- Monster - Axe, 2H Arcanite Reaper (Green Glow)
+					i(30388),	-- Monster - Axe, 2H Devastation
+					i(29651),	-- Monster - Axe, 2H Draenei A01 Blue
+					i(29652),	-- Monster - Axe, 2H Draenei A01 Green
+					i(29653),	-- Monster - Axe, 2H Draenei A01 Purple
+					i(29654),	-- Monster - Axe, 2H Draenei A01 Red
+					i(29620),	-- Monster - Axe, 2H Draenei B01 Blue
+					i(29621),	-- Monster - Axe, 2H Draenei B01 Green
+					i(32699),	-- Monster - Axe, 2H Draenei B01 Green (Green Glow)
+					i(29622),	-- Monster - Axe, 2H Draenei B01 Purple
+					i(28354),	-- Monster - Axe, 2H Draenei B01 Red
+					i(29623),	-- Monster - Axe, 2H Draenei B01 Yellow
+					i(29655),	-- Monster - Axe, 2H Draenei C01 Blue
+					i(29656),	-- Monster - Axe, 2H Draenei C01 Green
+					i(29657),	-- Monster - Axe, 2H Draenei C01 Orange
+					i(29658),	-- Monster - Axe, 2H Draenei C01 Purple
+					i(29659),	-- Monster - Axe, 2H Draenei C01 Yellow
+					i(29660),	-- Monster - Axe, 2H Draenei D01 Blue
+					i(29661),	-- Monster - Axe, 2H Draenei D01 Green
+					i(29662),	-- Monster - Axe, 2H Draenei D01 Pink
+					i(29663),	-- Monster - Axe, 2H Draenei D01 Purple
+					i(29665),	-- Monster - Axe, 2H Draenei D01 Red
+					i(30414),	-- Monster - Axe, 2H Gorehowl (GROM HELLSCREAM ONLY)
+					i(30848),	-- Monster - Axe, 2H Herod (Black Glow)
+					i(21580),	-- Monster - Axe, 2H Horde PvP
+					i(30178),	-- Monster - Axe, 2H Kor'kron Defender (A01 Purple)
+					i(32565),	-- Monster - Axe, 2H Large Double Bladed (Black Glow)
+					i(21286),	-- Monster - Axe, 2H Large Double Bladed, Gold
+					i(21192),	-- Monster - Axe, 2H UBER Blackwing
+					i(24512),	-- Monster - Axe, 2H Zul'Gurub Red
+					i(30577),	-- Monster - Axe, 2H Zul'Gurub Red (Blue Glow)
+					i(32875),	-- Monster - Black Temple - Axe, 2H - Dragonmaw Wyrmcaller
+					i(32612),	-- Monster - Black Temple - Axe, 2H - Shadowmoon Houndmaster
+					i(31601),	-- Monster - Dragonmaw, Shadowmoon - 2H Axe
+					i(31604),	-- Monster - Dragonmaw, Shadowmoon - 2H Sword
+				}),
 				filter(BOWS, {
-					i(37249),	-- Monster - Bow, 7th Legion Sentinel
+					i(32613),	-- Monster - Black Temple - Bow, 2H - Shadowmoon Houndmaster
+					i(34263),	-- Monster - Bow, Blood Elf A01 Black
+					i(34264),	-- Monster - Bow, Blood Elf A01 Blue
+					i(34265),	-- Monster - Bow, Blood Elf A01 Orange
+					i(34266),	-- Monster - Bow, Blood Elf A01 Red
+					i(34267),	-- Monster - Bow, Blood Elf A01 Yellow
+					i(34269),	-- Monster - Bow, Blood Elf B01 Black
+					i(24319),	-- Monster - Bow, Blood Elf B01 Blue
+					i(34268),	-- Monster - Bow, Blood Elf B01 Orange
+					i(34270),	-- Monster - Bow, Blood Elf B01 Red
+					i(24326),	-- Monster - Bow, Blood Elf B01 Yellow
+					i(34272),	-- Monster - Bow, Blood Elf C01 Black
+					i(34271),	-- Monster - Bow, Blood Elf C01 Default
+					i(34273),	-- Monster - Bow, Blood Elf C01 Orange
+					i(34274),	-- Monster - Bow, Blood Elf C01 Red
+					i(34275),	-- Monster - Bow, Blood Elf C01 Silver
+					i(34277),	-- Monster - Bow, Blood Elf D01 Black
+					i(34276),	-- Monster - Bow, Blood Elf D01 Default
+					i(34278),	-- Monster - Bow, Blood Elf D01 Gold
+					i(34279),	-- Monster - Bow, Blood Elf D01 Orange
+					i(34280),	-- Monster - Bow, Blood Elf D01 Red
+					i(34281),	-- Monster - Bow, Blood Elf D01 Silver
+					i(23889),	-- Monster - Bow, Horde PVP
+					i(30456),	-- Monster - Bow, Hunter Epic
+					i(31325),	-- Monster - Bow, Lady Vashj
+					i(31348),	-- Monster - Bow, Mordenai
+					i(30390),	-- Monster - Bow, Netherstrand Longbow
+					i(30557),	-- Monster - Bow, Netherstrand Longbow (Held)
+					i(32730),	-- Monster - Bow, Outland Raid D04
+					i(32827),	-- Monster - Bow, Scryer (Hobb)
+					i(32826),	-- Monster - Bow, Scryer (Uber)
+					i(30452),	-- Monster - Bow, Spirit Hunter
+					i(31083),	-- Monster - Bow, Val'zareq's
+					i(34873),	-- Monster - Sunwell Raid - Bow, D01 Green
+				}),
+				filter(CROSSBOWS, {
+					i(32876),	-- Monster - Black Temple - Crossbow - Dragonmaw Sky Stalker
+					i(34312),	-- Monster - Crossbow, Draenei A01
+					i(34313),	-- Monster - Crossbow, Draenei A01 Brown
+					i(34314),	-- Monster - Crossbow, Draenei A01 Gold
+					i(34315),	-- Monster - Crossbow, Draenei A01 Orange
+					i(30580),	-- Monster - Crossbow, Draenei A01 Silver
+					i(34316),	-- Monster - Crossbow, Draenei A02 Blue
+					i(34317),	-- Monster - Crossbow, Draenei A02 Blue Trim
+					i(34318),	-- Monster - Crossbow, Draenei A02 Brown
+					i(34320),	-- Monster - Crossbow, Draenei A02 Green Trim
+					i(34321),	-- Monster - Crossbow, Draenei A02 Grey Trim
+					i(34322),	-- Monster - Crossbow, Draenei A02 Purple
+					i(34323),	-- Monster - Crossbow, Draenei A02 Red Trim
+					i(31352),	-- Monster - Crossbow, Green Snake
+					i(21550),	-- Monster - Crossbow, Hakkari
+					i(23052),	-- Monster - Crossbow, Ornate
+					i(34325),	-- Monster - Crossbow, Outland Raid D01
+					i(34326),	-- Monster - Crossbow, Outland Raid D04
+					i(34327),	-- Monster - Crossbow, Outland Raid D05
+					i(34328),	-- Monster - Crossbow, Outland Raid D06
 				}),
 				filter(DAGGERS, {
 					i(32407),	-- Creature - Maiev's Glaive
@@ -846,12 +1018,150 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(30578),	-- Monster - Dagger, Vulture Black (White Glow)
 					i(34875),	-- Monster - Sunwell Raid - Dagger, D01 Yellow
 				}),
+				filter(FIST_WEAPONS, {
+					i(32877),	-- Monster - Black Temple - Fist, 1H - Bonechewer Brawler (Left)
+					i(32878),	-- Monster - Black Temple - Fist, 1H - Bonechewer Brawler (Right)
+					i(35719),	-- Monster - Claw Insect Offhand
+					i(28905),	-- Monster - Claw, Badass
+					i(38602),	-- Monster - Claw, Badass (Frost)
+					i(28906),	-- Monster - Claw, Badass offhand
+					i(38603),	-- Monster - Claw, Badass offhand (Frost)
+					i(40967),	-- Monster - Claw, Wolvar MH
+					i(40968),	-- Monster - Claw, Wolvar OH
+					i(31802),	-- Monster - Claw, ZulGurub 02
+					i(31803),	-- Monster - Claw, ZulGurub 02 Offhand
+					i(33525),	-- Monster - Horde PvP, Main Hand, Green
+					i(33526),	-- Monster - Horde PvP, Off Hand, Green
+					i(35312),	-- Monster - Item, Seal Horde
+					i(22210),	-- Monster - Knuckle, B01 Red
+					i(22211),	-- Monster - Knuckle, B01 Red Offhand
+					i(32477),	-- Monster - Silithid Claw
+					i(32504),	-- Monster - Silithid Claw (Offhand)
+				}),
+				filter(GUNS, {
+					i(34098),	-- Monster - Gun, Blood Elf Red
+					i(29626),	-- Monster - Gun, Draenei A01
+					i(29627),	-- Monster - Gun, Draenei A01 Gold
+					i(29628),	-- Monster - Gun, Draenei A01 Olive
+					i(24244),	-- Monster - Gun, Draenei A01 Orange
+					i(29629),	-- Monster - Gun, Draenei A01 Purple
+					i(21564),	-- Monster - Gun, Kaldorei PVP Alliance
+					i(34034),	-- Monster - Gun, Plaguebringer
+					i(21554),	-- Monster - Gun, PvP Horde
+					i(30128),	-- Monster - Gun, Techno					
+				}),
 				filter(ONE_HANDED_MACES, {
-					i(37579),	-- Monster - Mace1H, Prince Arthas
+					i(32892),	-- Monster - Black Temple - Hammer, 1H - Illidari Blood Lord
+					i(32611),	-- Monster - Black Temple - Hammer, 1H - Shadowmoon Grunt
+					i(31654),	-- Monster - Dragonmaw, Shadowmoon - 1H Mace
+					i(31551),	-- Monster - Dragonmaw, Shadowmoon - 2H Hammer
+					i(25646),	-- Monster - Item, Rolling Pin (Mace)
+					i(29424),	-- Monster - Mace - 1H Crystal - Ethereal, Ethereum (Red Glow)
+					i(29423),	-- Monster - Mace - 2H Crystal - Ethereal, Ethereum (Red Glow)
+					i(33595),	-- Monster - Mace 1H, Dragonflayer Gladiator (Firjus)
+					i(30078),	-- Monster - Mace, Basic Metal Hammer (Fiery)
+					i(34516),	-- Monster - Mace, Blood Elf A01 Gold
+					i(34517),	-- Monster - Mace, Blood Elf A02 Gold
+					i(30387),	-- Monster - Mace, Cosmic Infuser
+					i(29619),	-- Monster - Mace, Draenei A01 Blue
+					i(29630),	-- Monster - Mace, Draenei A01 Gold
+					i(24333),	-- Monster - Mace, Draenei A01 Magenta
+					i(29631),	-- Monster - Mace, Draenei A01 Orange
+					i(29632),	-- Monster - Mace, Draenei A01 Purple
+					i(24332),	-- Monster - Mace, Draenei A02 Blue
+					i(27407),	-- Monster - Mace, Draenei A02 Gold
+					i(29633),	-- Monster - Mace, Draenei A02 Magenta
+					i(23906),	-- Monster - Mace, Draenei A02 Orange
+					i(29634),	-- Monster - Mace, Draenei A02 Purple
+					i(31743),	-- Monster - Mace, Draenei A02 Purple (Low Purple Flame)
+					i(27701),	-- Monster - Mace, Durn
+					i(28201),	-- Monster - Mace, Ethereal (Orange)
+					i(29543),	-- Monster - Mace, Ethereal (Red Glow)
+					i(25663),	-- Monster - Mace, Good Wooden Hammer, On Fire
+					i(33168),	-- Monster - Mace, Hammer Blue Mighty (Lightning)
+					i(30671),	-- Monster - Mace, Hammer Gold Orange (Low Yellow Glow)
+					i(30670),	-- Monster - Mace, Hammer Gold Orange (Yellow Glow)
+					i(22213),	-- Monster - Mace, Hand of Edward the Odd
+					i(22341),	-- Monster - Mace, Horde A04 Pale - Bone Wrench
+					i(30376),	-- Monster - Mace, Jeweled Club (Purple Flame)
+					i(27836),	-- Monster - Mace, Ornate Metal Hammer (Red Fire)
+					i(34885),	-- Monster - Mace, Outland Raid D03
+					i(20738),	-- Monster - Mace, Scepter of the Shifting Sands
+					i(32246),	-- Monster - Mace, Spiked Skull
+					i(33793),	-- Monster - Mace, Zul'Gurub A01
+					i(22724),	-- Monster - Mace1H, Korth'azz
+					i(24011),	-- Monster - Mace2H, Draenei A01 Magenta
+					i(24012),	-- Monster - Mace2H, Draenei A01 Gold
+					i(24013),	-- Monster - Mace2H, Draenei A01 Olive
+					i(30261),	-- Monster - Mace2H, Draenei A01 Olive (Red Flame)
+					i(24014),	-- Monster - Mace2H, Draenei A01 Purple
+					i(24015),	-- Monster - Mace2H, Draenei A01 Silver
+					i(24016),	-- Monster - Mace2H, Draenei A02 Gold
+					i(24017),	-- Monster - Mace2H, Draenei A02 Magenta
+					i(34536),	-- Monster - Mace2H, Draenei A02 Magenta (High Purple Glow)
+					i(24018),	-- Monster - Mace2H, Draenei A02 Olive
+					i(24019),	-- Monster - Mace2H, Draenei A02 Silver
+					i(23708),	-- Monster - Mace2H, WarA01/B02Silver (1H, Special)
+					i(23583),	-- Monster - Sir Zeliek
+					i(32644),	-- Monster - Staff, 1H - Chief Overseer Mudlump
+					i(32463),	-- Monster - Sword, Crystal Mace (Blue)
+					i(31824),	-- Monster - Work Wrench
+					i(28487),	-- Monster - Work Wrench, Ethereal (Purple Glow)
+					i(28489),	-- Monster - Work Wrench, Ethereal (Red Glow)
+				}),
+				filter(TWO_HANDED_MACES, {
+					i(31082),	-- Monster - Mace, 2H Fathom-Lord Karathress
+					i(30179),	-- Monster - Mace, 2H Kor'kron Defender (PvP Red)
+					i(27852),	-- Monster - Mace2H (Broken)
+					i(21555),	-- Monster - Mace2H, Alliance PvP
+					i(30802),	-- Monster - Mace2H, Draenei Paladin (Karsius)
+					i(31208),	-- Monster - Mace2H, Eclipsion Soldier
+					i(29455),	-- Monster - Mace2H, Gear (Red, Green Glow)
+					i(23856),	-- Monster - Mace2H, Horde Black Spiked Badass Fire
+					i(33521),	-- Monster - Mace2H, Maul B02 SilverPurple
+					i(32499),	-- Monster - Mace2H, Ogri'la Hammer
+					i(27862),	-- Monster - Mace2H, Olhorn Totem
+					i(25588),	-- Monster - Mace2H, Totem (Zorbo)
+					i(22346),	-- Monster - Mace2H, Unstoppable Force
+					i(29408),	-- Monster - Mace2H, Warhammer Ebony - Black Flame
+					i(29409),	-- Monster - Mace2H, Warhammer Ebony - Blue Flame
+					i(29407),	-- Monster - Mace2H, Warhammer Ebony - Red Flame
+					i(29410),	-- Monster - Mace2H, Warhammer Ebony - White Flame
 				}),
 				filter(MISC, {
 					i(32322),	-- Monster - Crystal Offhand, Blood Elf - Green
-					i(49935)	-- Monster - Dagger, Blood Elf A01 Blue (Frost Enchantment)
+					i(49935),	-- Monster - Dagger, Blood Elf A01 Blue (Frost Enchantment)
+					i(21796),	-- Monster - Item, Ahn'Qiraj Held Scepter
+					i(28648),	-- Monster - Item, Book - Book of the Dead (Skull)
+					i(25587),	-- Monster - Item, Broom (On Fire)
+					i(21121),	-- Monster - Item, Flower - Purple
+					i(21123),	-- Monster - Item, Flower - White
+					i(34881),	-- Monster - Item, Offhand Outland Raid D01
+					i(33963),	-- Monster - Item, Tankard Brewfest (Year 1 Yellow)
+					i(37059),	-- Monster - Item, Tankard Brewfest (Year 2 Blue)
+					i(33161),	-- Monster - Item, Tankard Gold (Yellow Glow)
+					i(33125),	-- Monster - Item, Tankard Metal (Red Glow)
+				}),
+				filter(POLEARMS, {
+					i(30418),	-- Darkspear (Purple Glow)
+					i(32924),	-- Monster - Axe, Afrasiabi Particle Glaive Polearm Magtheridon
+					i(28365),	-- Monster - Glaive - Magtheridon
+					i(30182),	-- Monster - Polearm, 2H Kor'kron Defender (PvP Horde 2H)
+					i(30439),	-- Monster - Polearm, 2H Ruul
+					i(28650),	-- Monster - Polearm, Battle Scythe
+					i(30698),	-- Monster - Polearm, Battle Scythe (White - 1h)
+					i(30697),	-- Monster - Polearm, Battle Scythe (White)
+					i(31327),	-- Monster - Polearm, Black (Purple Glow)
+					i(25758),	-- Monster - Polearm, Blood Elf D01
+					i(32530),	-- Monster - Polearm, Blood Elf D01 (Purple Glow)
+					i(31274),	-- Monster - Polearm, Hellfire D Green
+					i(25520),	-- Monster - Polearm, Lantresor
+					i(32507),	-- Monster - Polearm, Teron Gorefiend (Black Temple)
+					i(30795),	-- Monster - Spear, Flaming Thunderspike
+					i(30440),	-- Monster - Spear, The Thunderspike
+					i(30790),	-- Monster - Staff Green Sphere (Old School Death Knight)
+					i(32448),	-- Monster - Trident, Ornate (Electrified)
+					i(28965),	-- Monster - Trident, Ornate (Red Glow)
 				}),
 				filter(SHIELDS, {
 					i(32885),	-- Monster - Black Temple - Shield - Bonechewer Shield Disciple
@@ -891,11 +1201,347 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(33789),	-- Monster - Shield, Zul'gurub
 					i(25407),	-- The Movable Object
 				}),
+				filter(STAVES, {
+					i(32884),	-- Monster - Black Temple - Staff, 2H - Bonechewer Blood Prophet
+					i(32893),	-- Monster - Black Temple - Staff, 2H - Illidari Archon
+					i(32605),	-- Monster - Black Temple - Staff, 2H - Shadowmoon Blood Mage
+					i(32607),	-- Monster - Black Temple - Staff, 2H - Shadowmoon Deathshaper
+					i(31605),	-- Monster - Dragonmaw, Shadowmoon - Staff
+					i(29416),	-- Monster - Glaive - Staff - Ethereal, Consortium
+					i(29441),	-- Monster - Staff - 2H Crystal - Ethereal, Consortium (Purple Glow)
+					i(29421),	-- Monster - Staff - 2H Crystal - Ethereal, Ethereum (Red Glow)
+					i(29440),	-- Monster - Staff - 2H Crystal - Ethereal, Protectorate (White Glow)
+					i(23335),	-- Monster - Staff, (Thiah Redmane)
+					i(21795),	-- Monster - Staff, Ahn'Qiraj
+					i(28456),	-- Monster - Staff, Archmage Vargoth's
+					i(23998),	-- Monster - Staff, Atiesh
+					i(28067),	-- Monster - Staff, Atiesh (Medivh's)
+					i(25839),	-- Monster - Staff, Basic Blue
+					i(24321),	-- Monster - Staff, Blood Elf A02 Red
+					i(29537),	-- Monster - Staff, Blood Elf A02 Red - High Purple Glow
+					i(31608),	-- Monster - Staff, Blood Elf A02 Red - High Red Flames
+					i(29114),	-- Monster - Staff, Blood Elf A02 Red - High Red Glow
+					i(27923),	-- Monster - Staff, Coryth's
+					i(29676),	-- Monster - Staff, Draenei A01 Blue
+					i(29678),	-- Monster - Staff, Draenei A01 Brown
+					i(29679),	-- Monster - Staff, Draenei A01 Green
+					i(29680),	-- Monster - Staff, Draenei A01 Grey
+					i(29681),	-- Monster - Staff, Draenei A01 Purple
+					i(29683),	-- Monster - Staff, Draenei A02 Blue
+					i(29685),	-- Monster - Staff, Draenei A02 Copper
+					i(29686),	-- Monster - Staff, Draenei A02 Green
+					i(29687),	-- Monster - Staff, Draenei A02 Grey
+					i(29688),	-- Monster - Staff, Draenei A02 Purple
+					i(29690),	-- Monster - Staff, Draenei A03
+					i(29692),	-- Monster - Staff, Draenei A03 Blue
+					i(29694),	-- Monster - Staff, Draenei A03 Dirt
+					i(29695),	-- Monster - Staff, Draenei A03 Grey
+					i(29696),	-- Monster - Staff, Draenei A03 Pink
+					i(29697),	-- Monster - Staff, Draenei A03 Purple
+					i(33608),	-- Monster - Staff, Dragonflayer Soulreaver
+					i(31296),	-- Monster - Staff, Epic A
+					i(28195),	-- Monster - Staff, Ethereal (Black)
+					i(29431),	-- Monster - Staff, Ethereal (Black) (Red Glow)
+					i(28200),	-- Monster - Staff, Ethereal (Black) (White Glow)
+					i(28196),	-- Monster - Staff, Ethereal (Gold)
+					i(29432),	-- Monster - Staff, Ethereal (Gold) (Red Glow)
+					i(28197),	-- Monster - Staff, Ethereal (Gray)
+					i(28198),	-- Monster - Staff, Ethereal (Purple)
+					i(29442),	-- Monster - Staff, Ethereal (Purple) (Purple Glow)
+					i(28199),	-- Monster - Staff, Ethereal (White)
+					i(28208),	-- Monster - Staff, Ethereal (White) (Black Glow)
+					i(29544),	-- Monster - Staff, Ethereal (White) (Red Glow)
+					i(33002),	-- Monster - Staff, Feathered Gold (Red Flame)
+					i(31309),	-- Monster - Staff, Feral D02 Green
+					i(25698),	-- Monster - Staff, Green Feathered - Green Glow
+					i(23416),	-- Monster - Staff, Gul'dan
+					i(32360),	-- Monster - Staff, Hellfire D01
+					i(29107),	-- Monster - Staff, Jeweled Blue Staff, Blue Glow
+					i(36750),	-- Monster - Staff, Jeweled D01 Green (Low Blue Flame)
+					i(20719),	-- Monster - Staff, Jeweled D01/B02 Yellow w/Low Red Flame
+					i(20718),	-- Monster - Staff, Jeweled Yellow Staff w/Low Purple Glow
+					i(32610),	-- Monster - Staff, Ornate Jeweled Staff - Blue Low Blue Glow
+					i(30310),	-- Monster - Staff, Ornate Jeweled Staff - Purple High Purple Glow
+					i(30669),	-- Monster - Staff, Oronok
+					i(31301),	-- Monster - Staff, Other C 02
+					i(34884),	-- Monster - Staff, Outland Raid D03
+					i(38298),	-- Monster - Staff, Outland Raid D03 Blue
+					i(34882),	-- Monster - Staff, Outland Raid D06, Blue
+					i(33795),	-- Monster - Staff, Outland Raid D06, Red
+					i(29310),	-- Monster - Staff, Red Feathered - Red Glow
+					i(30392),	-- Monster - Staff, Staff of Disintegration
+					i(35220),	-- Monster - Staff, Sunwell D02
+					i(35781),	-- Monster - Staff, Sunwell D02 Purple (High Purple Glow)
+					i(35714),	-- Monster - Staff, Velen
+					i(34771),	-- Monster - Staff, Wooden Handle Rounded Head High Red Flame
+					i(33798),	-- Monster - Staff, Zul'Aman D02 Black
+					i(31801),	-- Monster - Staff, Zul'Gurub 03
+					i(34877),	-- Monster - Sunwell Raid - Staff, D02 Silver
+					i(34878),	-- Monster - Sunwell Raid - Staff, D03 Purple
+				}),
+				filter(ONE_HANDED_SWORDS, {
+					i(32874),	-- Monster - Black Temple - Mace, 1H - Bonechewer Taskmaster
+					i(32889),	-- Monster - Black Temple - Sword, 1H - Council Advisor
+					i(32890),	-- Monster - Black Temple - Sword, 1H - Council Advisor (Test)
+					i(32615),	-- Monster - Black Temple - Sword, 1H - Shadowmoon Soldier
+					i(23241),	-- Monster - Dagger, Blood Elf A01 Red
+					i(31603),	-- Monster - Dragonmaw, Shadowmoon - 1H Sword
+					i(29415),	-- Monster - Glaive - Crystal Scimitar - Ethereal, Consortium (Yellow)
+					i(32633),	-- Monster - Glavie, Illidan - Black Temple (Left Hand)
+					i(32632),	-- Monster - Glavie, Illidan - Black Temple (Right Hand)
+					i(34879),	-- Monster - Sunwell Raid - Sword, 1H D02 Dark
+					i(29820),	-- Monster - Sword - 2H (1H) Crystal C03 - Ethereal, Protectorate (White Glow)
+					i(29420),	-- Monster - Sword - 2H Crystal - Ethereal, Ethereum (Red Glow)
+					i(29462),	-- Monster - Sword - Crystal - Ethereal, Protectorate (White Glow)
+					i(29439),	-- Monster - Sword - Crystal Scimitar - Ethereal, Protectorate (White Glow, Pink Crystal)
+					i(25860),	-- Monster - Sword (No Visual)
+					i(23743),	-- Monster - Sword 1H - Widow's Remorse
+					i(33609),	-- Monster - Sword 1H, Dragonflayer Fleshripper
+					i(21573),	-- Monster - Sword, 1H Alliance PvP
+					i(23382),	-- Monster - Sword, 1H Blood Elf A01 Gold
+					i(29406),	-- Monster - Sword, 1H Blood Elf A01 Gold - Black Glow
+					i(29405),	-- Monster - Sword, 1H Blood Elf A01 Gold - Blue Glow
+					i(29403),	-- Monster - Sword, 1H Blood Elf A01 Gold - Red Glow
+					i(29404),	-- Monster - Sword, 1H Blood Elf A01 Gold - White Glow
+					i(34282),	-- Monster - Sword, 1H Blood Elf A01 Silver
+					i(34283),	-- Monster - Sword, 1H Blood Elf A02 Black
+					i(23225),	-- Monster - Sword, 1H Blood Elf A02 Red
+					i(34596),	-- Monster - Sword, 1H Blood Elf A02 Red (High Red Flame)
+					i(27405),	-- Monster - Sword, 1H Blood Elf A03 (Blood Knight)
+					i(34284),	-- Monster - Sword, 1H Blood Elf A03 Black
+					i(34285),	-- Monster - Sword, 1H Blood Elf A03 Gold
+					i(34286),	-- Monster - Sword, 1H Blood Elf A03 Orange
+					i(24034),	-- Monster - Sword, 1H Blood Elf A03 Red
+					i(34505),	-- Monster - Sword, 1H Blood Elf A03 Red - High Red Glow
+					i(30147),	-- Monster - Sword, 1H Blood Elf A03 Red - Red Flame
+					i(34288),	-- Monster - Sword, 1H Blood Elf A03 Silver
+					i(35117),	-- Monster - Sword, 1H Blood Elf D01 Gold
+					i(35510),	-- Monster - Sword, 1H Kil'jaeden
+					i(30181),	-- Monster - Sword, 1H Kor'kron Defender (PvP Horde 2H)
+					i(34696),	-- Monster - Sword, 1H Mage Hunter Basic
+					i(32425),	-- Monster - Sword, 1H Maiev's Blade
+					i(31611),	-- Monster - Sword, 1H Outland Blacksmithing 01
+					i(34880),	-- Monster - Sword, 1H Outland Raid D02
+					i(34886),	-- Monster - Sword, 1H Outland Raid D05
+					i(34552),	-- Monster - Sword, 1H Shattered Sun Archmage
+					i(34531),	-- Monster - Sword, 1H Shattered Sun Trainee
+					i(22738),	-- Monster - Sword, 1H Uber Demon Blade
+					i(34640),	-- Monster - Sword, 1H Warsong Guard
+					i(30484),	-- Monster - Sword, Caverns of Time Raid
+					i(29816),	-- Monster - Sword, Consortium Phase Blade
+					i(32484),	-- Monster - Sword, Crystal (Blue)
+					i(30485),	-- Monster - Sword, Crystal C02, Purple, Black Glow
+					i(29666),	-- Monster - Sword, Draenei A01 Blue
+					i(29667),	-- Monster - Sword, Draenei A01 Green
+					i(29668),	-- Monster - Sword, Draenei A01 Grey
+					i(29670),	-- Monster - Sword, Draenei A01 Orange
+					i(29671),	-- Monster - Sword, Draenei A01 Purple
+					i(33295),	-- Monster - Sword, Draenei A01 Purple 1hander
+					i(30405),	-- Monster - Sword, Draenei A02 Blue
+					i(30406),	-- Monster - Sword, Draenei A02 Green
+					i(30407),	-- Monster - Sword, Draenei A02 Grey
+					i(30408),	-- Monster - Sword, Draenei A02 Purple
+					i(30409),	-- Monster - Sword, Draenei A02 Yellow
+					i(30411),	-- Monster - Sword, Draenei B01 Blue
+					i(30412),	-- Monster - Sword, Draenei B01 Blue (Low White Glow)
+					i(34324),	-- Monster - Sword, Draenei B01 Purple
+					i(30410),	-- Monster - Sword, Draenei C01 Blue
+					i(30624),	-- Monster - Sword, Falchion (Black Glow)
+					i(31612),	-- Monster - Sword, Flaming
+					i(29446),	-- Monster - Sword, Frost Battlemage Longsword
+					i(29542),	-- Monster - Sword, Horde Sword B04 Black (Red Glow)
+					i(30648),	-- Monster - Sword, Katana (Sharpened effect)
+					i(25816),	-- Monster - Sword, Legion (2H as 1H)
+					i(30403),	-- Monster - Sword, Scimitar Badass (Red Glow, High)
+					i(28037),	-- Monster - Sword, Shivan
+					i(28133),	-- Monster - Sword, Shivan D01
+					i(31302),	-- Monster - Sword, Stratholme D3
+					i(30393),	-- Monster - Sword, Warp Slicer
+					i(31806),	-- Monster - Sword, Zul'gurub 02
+					i(31311),	-- Monster - Sword1H Fire Illidari Highlord
+					i(21553),	-- Monster - Sword2H, Alliance PvP
+					i(26003),	-- Monster - Sword2H, Blood Elf B02
+					i(30482),	-- Monster - Sword2H, Blood Elf B02 (Blue Glow)
+					i(30367),	-- Monster - Sword2H, Blood Elf B02 (Red Glow)
+					i(24325),	-- Monster - Sword2H, Blood Elf B02 Green
+					i(25879),	-- Monster - Sword2H, Doom Walker
+					i(29646),	-- Monster - Sword2H, Draenei A01 Blue
+					i(29647),	-- Monster - Sword2H, Draenei A01 Green
+					i(29648),	-- Monster - Sword2H, Draenei A01 Grey
+					i(29649),	-- Monster - Sword2H, Draenei A01 Orange
+					i(29650),	-- Monster - Sword2H, Draenei A01 Purple
+					i(29643),	-- Monster - Sword2H, Draenei A02 Grey
+					i(25688),	-- Monster - Sword2H, Draenei A02 Orange
+					i(28488),	-- Monster - Sword2H, Draenei A02 Purple
+					i(29644),	-- Monster - Sword2H, Draenei A02 Red
+					i(29645),	-- Monster - Sword2H, Draenei A02 Rusty
+				}),
+				filter(TWO_HANDED_SWORDS, {
+					i(35236),	-- Monster - Axe, 2H Black Temple Black
+					i(32922),	-- Monster - Axe, Afrasiabi Particle Test 2H Sword (Energy)
+					i(32932),	-- Monster - Axe, Afrasiabi Particle Test 2H Sword (Fear Blade)
+					i(32930),	-- Monster - Axe, Afrasiabi Particle Test 2H Sword (Holy)
+					i(32925),	-- Monster - Axe, Afrasiabi Particle Test 2H Sword (Light)
+					i(32938),	-- Monster - Axe, Afrasiabi Particle Test 2H Sword (Purple Globes)
+					i(32934),	-- Monster - Axe, Afrasiabi Particle Test 2H Sword (Rage)
+					i(32940),	-- Monster - Axe, Afrasiabi Particle Test 2H Sword (Slowing Strike)
+					i(32928),	-- Monster - Axe, Afrasiabi Particle Test 2H Sword (Small Energy)
+					i(32935),	-- Monster - Axe, Afrasiabi Particle Test 2H Sword (Vengeance)
+					i(32879),	-- Monster - Black Temple - Axe, 2H - Bonechewer Combatant
+					i(32603),	-- Monster - Black Temple - Sword, 2H - Shadowmoon Champion
+					i(32614),	-- Monster - Black Temple - Sword, 2H - Shadowmoon Weapon Master
+					i(34876),	-- Monster - Sunwell Raid - Sword, 2H DarkRed
+					i(29538),	-- Monster - Sword - 2H Crystal C03 - Ethereal, Ethereum (Black Glow)
+					i(29819),	-- Monster - Sword - 2H Crystal C03 - Ethereal, Ethereum (White Glow)
+					i(34287),	-- Monster - Sword, 2H Blood Elf A01
+					i(34289),	-- Monster - Sword, 2H Blood Elf A01 Blue
+					i(34290),	-- Monster - Sword, 2H Blood Elf A01 Red
+					i(30636),	-- Monster - Sword, 2H Blood Elf A01 Yellow
+					i(34291),	-- Monster - Sword, 2H Blood Elf A02
+					i(34292),	-- Monster - Sword, 2H Blood Elf A02 Blue
+					i(34293),	-- Monster - Sword, 2H Blood Elf A02 Green
+					i(34294),	-- Monster - Sword, 2H Blood Elf A02 Yellow
+					i(34295),	-- Monster - Sword, 2H Blood Elf B01 Gold
+					i(34296),	-- Monster - Sword, 2H Blood Elf B01 Red
+					i(34297),	-- Monster - Sword, 2H Blood Elf B01 Silver
+					i(34298),	-- Monster - Sword, 2H Blood Elf B02
+					i(34299),	-- Monster - Sword, 2H Blood Elf B02 Blue
+					i(34300),	-- Monster - Sword, 2H Blood Elf B02 Green
+					i(34301),	-- Monster - Sword, 2H Blood Elf B02 Red
+					i(34302),	-- Monster - Sword, 2H Blood Elf C01 Black
+					i(34303),	-- Monster - Sword, 2H Blood Elf C01 Orange
+					i(34304),	-- Monster - Sword, 2H Blood Elf C01 Purple
+					i(34305),	-- Monster - Sword, 2H Blood Elf C01 Red
+					i(34306),	-- Monster - Sword, 2H Blood Elf C02 Purple
+					i(34307),	-- Monster - Sword, 2H Blood Elf C02 Red
+					i(34308),	-- Monster - Sword, 2H Blood Elf C02 Yellow
+					i(34309),	-- Monster - Sword, 2H Blood Elf C03 Blue
+					i(35712),	-- Monster - Sword, 2H Blood Elf C03 Blue (Med Blue Glow)
+					i(34310),	-- Monster - Sword, 2H Blood Elf C03 Green
+					i(34311),	-- Monster - Sword, 2H Blood Elf C03 Red
+					i(32460),	-- Monster - Sword, 2H Crystal Blue (Blue Flame)
+					i(30714),	-- Monster - Sword, 2H Crystal Purple (Purple Glow)
+					i(31081),	-- Monster - Sword, 2H Fathom-Lord Karathress
+					i(32272),	-- Monster - Sword, Chromatically Tempered
+					i(21794),	-- Monster - Sword2H, Ahn'Qiraj
+					i(30204),	-- Monster - Sword2H, Claymore Blue - Medium Blue Glow
+					i(22709),	-- Monster - Sword2H, Corrupted Ashbringer
+					i(31207),	-- Monster - Sword2H, Eclipsion Soldier
+					i(24495),	-- Monster - Sword2H, Felguard Legionnaire
+					i(30801),	-- Monster - Sword2H, Horde Curved Black Red Flame
+					i(34694),	-- Monster - Sword2H, Horde PvP (Green)
+					i(34693),	-- Monster - Sword2H, Horde PvP (Red)
+					i(23328),	-- Monster - Sword2H, Instructor Razuvious
+					i(28125),	-- Monster - Sword2H, Vazruden
+				}),
+				filter(THROWN, {
+					i(29210),	-- Assassin's Throwing Axe
+					i(32740),	-- Monster - Dagger (Maiev)
+					i(28023),	-- Monster - Throwing Axe (Poison)
+					i(33338),	-- Monster - Throwing Knife (Fire Trail)
+					i(31497),	-- Monster - Throwing Trident, Wicked
+					i(31499),	-- Monster - Throwing Trident, Wicked Blue Glow					
+				}),
 			}),
 		}),
 		tier(WOTLK_TIER, {
 			-- NYI Wrath of the Lich King Poor Items
 			n(WEAPONS, {
+				filter(ONE_HANDED_AXES, {
+					i(45630),	-- Invisible Axe
+					i(49781),	-- Monster - Axe 1H Hatchet A03 Red
+					i(49671),	-- Monster - Axe 1H Horde C 02 Black
+					i(33544),	-- Monster - Axe 1H, Dragonflayer Berserker (Vrykul)
+					i(33594),	-- Monster - Axe 1H, Dragonflayer Gladiator (Firjus)
+					i(49691),	-- Monster - Axe 1H, Horde D03 Gold
+					i(33169),	-- Monster - Axe 1H, Vrykul Thane
+					i(34637),	-- Monster - Axe 1H, Warsong Guards
+					i(38099),	-- Monster - Axe 2H (EPL Deathknight Trainer)
+					i(41261),	-- Monster - Axe 2H Deathknight C01 Blue
+					i(43532),	-- Monster - Axe 2H Deathknight C01 Green
+					i(41583),	-- Monster - Axe 2H Deathknight C01 Red
+					i(47032),	-- Monster - Axe, 1H Alliance PvP
+					i(43175),	-- Monster - Axe, 1H Horde PvP Red
+					i(44056),	-- Monster - Axe, 1H Nexus D01
+					i(39290),	-- Monster - Axe, 1H Nexus D01 Orange w/Black Glow
+					i(49689),	-- Monster - Axe, 1H Northrend B03 Black
+					i(43625),	-- Monster - Axe, 1H Northrend C01 Stone (Executioner)
+					i(39382),	-- Monster - Axe, 1H Northrend C01 Stone (Vrykul)
+					i(40534),	-- Monster - Axe, 1H Northrend C02 Blue
+					i(40542),	-- Monster - Axe, 1H Northrend C02 Blue, High Blue Glow
+					i(41691),	-- Monster - Axe, 1H Northrend C03 (Using 2H Model)
+					i(48947),	-- Monster - Axe, 1H Northrend D01
+					i(43111),	-- Monster - Axe, 2H Blackwing A02
+					i(39359),	-- Monster - Axe, 2H Hardened Skirmisher (1H as 2H)
+					i(39741),	-- Monster - Axe, 2H Hardened Skirmisher (1H as 2H - Lightning)
+					i(40487),	-- Monster - Axe, 2H Northrend B02 Blue (High Blue Glow)
+					i(39447),	-- Monster - Axe, 2H Northrend B02 Brown
+					i(33276),	-- Monster - Axe, 2H Northrend C01 Black
+					i(44172),	-- Monster - Axe, 2H Northrend C01 Purple (Med Blue Glow)
+					i(40537),	-- Monster - Axe, 2H Northrend C03
+					i(50434),	-- Monster - Axe, 2H Northrend C03 (No Particle)
+					i(49198),	-- Monster - Axe, 2H Northrend C03 (No Particles)
+					i(49681),	-- Monster - Axe, 2H Northrend D01
+					i(48949),	-- Monster - Axe, 2H Northrend D01 Purple
+					i(38509),	-- Monster - Axe, 2H Outland Raid D01
+					i(41764),	-- Monster - Axe, Vladof
+					i(49609),	-- Monster - Fist, Claw A04 Light
+					i(49774),	-- Monster - Icecrown Raid - Axe, 1H - Muradin Bronzebeard
+					i(50433),	-- Monster - Item, Pick (Kobold Laborer)
+					i(39325),	-- Monster - Polearm, Crypt Guardian
+					i(33171),	-- Monster - Polearm, Dragonflayer Scythe
+					i(38721),	-- Monster - Scarlet Crusade, Axe 1H
+					i(46020),	-- Monster - Ulduar Raid - Mace 04
+				}),
+				filter(TWO_HANDED_AXES, {
+					i(50221),	-- Monster - 2H Axe, Deathspeaker Zealots [Missing Textures]
+					i(49886),	-- Monster - Axe 2H, Deathbringer Saurfang
+					i(33597),	-- Monster - Axe 2H, Dragonflayer Gladiator (Yorus)
+					i(33301),	-- Monster - Axe 2H, Dragonflayer Invader (Vrykul)
+					i(43008),	-- Monster - Axe, 2H Alliance PvP
+					i(33116),	-- Monster - Axe, 2H D04 Red w/Flames
+					i(45528),	-- Monster - Axe, 2H Deathknight C01, Purple
+					i(41175),	-- Monster - Axe, 2H Deathknight C01, Purple Executioner
+					i(49148),	-- Monster - Axe, 2H Draenei D02
+					i(44252),	-- Monster - Axe, 2H Horde Purple War Axe
+					i(47034),	-- Monster - Axe, 2H Horde PvP (No Glow)
+					i(49645),	-- Monster - Axe, 2H Icecrown Raid (Shadow)
+					i(33177),	-- Monster - Axe, 2H Ingvar the Plunderer - Phase 1
+					i(33178),	-- Monster - Axe, 2H Ingvar the Plunderer - Phase 2
+					i(44227),	-- Monster - Axe, 2H Nexus
+					i(43623),	-- Monster - Axe, 2H Northrend C01 Brown (Executioner)
+					i(39381),	-- Monster - Axe, 2H Northrend C01 Brown (Vrykul)
+					i(49770),	-- Monster - Axe, 2H War A03 Gold
+					i(34668),	-- Monster - Axe, 2H War B01 Red
+					i(33319),	-- Monster - Axe, 2H War B01/B02 Silver
+					i(34638),	-- Monster - Axe, 2H Warsong Guards
+					i(49156),	-- Monster - Axe, 2H Zul'Aman Black
+					i(45048),	-- Monster - Axe, 2H Zul'Aman Red
+					i(50043),	-- Monster - Axe2H, Ebon Blade (Purple)
+					i(51322),	-- Monster - Icecrown Blood Prince 2H Axe
+					i(49773),	-- Monster - Icecrown Raid - Axe, 2H - High Overlord Saurfang
+					i(49291),	-- Monster - Polearm, Icecrown Raid (Vengeance Enchant)
+					i(38304),	-- Monster - Scythe, Antiok's
+					i(40435),	-- Monster - Vrykul - Axe, 2H C_01 - Blue Glow, High					
+				}),
+				filter(BOWS, {
+					i(49761),	-- Monster - Argent Alliance - Bow
+					i(37249),	-- Monster - Bow, 7th Legion Sentinel
+					i(47014),	-- Monster - Bow, Alliance PvP
+					i(35804),	-- Monster - Bow, Northrend - Soar Hawkfury
+					i(41360),	-- Monster - Bow, Northrend B03 (Green)
+					i(42921),	-- Monster - Bow, Northrend B03 Red
+					i(36755),	-- Monster - Bow, Northrend C01 (Olive)
+					i(40759),	-- Monster - Bow, Northrend C02 Silver
+					i(42775),	-- Monster - Bow, Sylvanas
+					i(42140),	-- Monster - Bow, Vereesa
+					i(39032),	-- Monster - Scourge Sky Darkener, Bow
+					i(39101),	-- Monster - Scourge Sky Darkener, Bow v2
+					i(43224),	-- Monster - Shandaral - Bow
+				}),
+				filter(CROSSBOWS, {
+					i(36762),	-- Monster - Utgarde, Crossbow
+				}),
 				filter(DAGGERS, {
 					i(49764),	-- Monster - Argent Horde - Caster Dagger
 					i(45985),	-- Monster - Dagger (Algalon)
@@ -915,6 +1561,146 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(49152),	-- Monster - Dagger, Zul'aman D03 (Black)
 					i(51029),	-- Monster - Icecrown Raid Blood Prince Trash - 1H Dagger
 					i(46841),	-- Monster - Spear, Rusty (1H)
+				}),
+				filter(FIST_WEAPONS, {
+					i(49070),	-- Monster - Fist (Main), Alliance PvP
+					i(49072),	-- Monster - Fist (Offhand), Alliance PvP
+					i(46981),	-- Monster - Horde PvP, Main Hand, Red
+					i(46982),	-- Monster - Horde PvP, Off Hand, Red
+				}),
+				filter(GUNS, {
+					i(49762),	-- Monster - Argent Horde - Gun
+					i(35805),	-- Monster - Dragonblight - Forsaken Blight Gun
+					i(46998),	-- Monster - Gun, Alliance PvP
+					i(46112),	-- Monster - Gun, Blood Elf (D) Silver
+					i(44715),	-- Monster - Gun, Dalaran
+					i(49711),	-- Monster - Gun, Plague Rifle Purple
+					i(46383),	-- Monster - Gun, Plaguebringer (Fire)
+					i(42776),	-- Monster - Gun, PvP Alliance
+					i(50817),	-- Monster - Gun, Silver Musket (0.5s Delay)
+					i(49462),	-- Monster - Gun, Tauren Crude
+					i(41613),	-- Monster - Gun, Ulduar					
+				}),
+				filter(ONE_HANDED_MACES, {
+					i(52015),	-- Monster - Angry Dread
+					i(49598),	-- Monster - Gun, Club, Silver
+					i(49775),	-- Monster - Icecrown Raid - Hammer, 1H - Muradin Bronzebeard
+					i(37914),	-- Monster - Mace 1H, 7th Legion Cleric
+					i(40501),	-- Monster - Mace 1H, Frost Giant Club
+					i(49725),	-- Monster - Mace 1h, Icecrown Citadel
+					i(49717),	-- Monster - Mace 1H, Icecrown Citadel
+					i(49731),	-- Monster - Mace 1H, Icecrown Citadel
+					i(49737),	-- Monster - Mace 1H, Icecrown Citadel
+					i(52042),	-- Monster - Mace 1H, Icecrown Citadel (Sunfire Enchant)
+					i(46987),	-- Monster - Mace, 1H Alliance PvP
+					i(52278),	-- Monster - Mace, 1H Gnomish
+					i(49020),	-- Monster - Mace, 1H Horde PvP
+					i(49018),	-- Monster - Mace, 1H Horde PvP Red
+					i(59140),	-- Monster - Mace, Basic Metal Hammer (Frost)
+					i(42506),	-- Monster - Mace, Basic Metal Hammer (Glow, Blue - High)
+					i(50431),	-- Monster - Mace, Basic Stone Hammer (Kobold Worker)
+					i(43112),	-- Monster - Mace, Blackwing A01
+					i(43113),	-- Monster - Mace, Blackwing A02
+					i(43199),	-- Monster - Mace, Blackwing A02 (Purple Glow)
+					i(39663),	-- Monster - Mace, Draenei A01 Blue (Low Blue Glow)
+					i(44733),	-- Monster - Mace, Draenei A01 Orange (Low Yellow Glow)
+					i(40770),	-- Monster - Mace, Frost Giant (Northrend)
+					i(50752),	-- Monster - Mace, Frost Giant (Northrend) (Enchant)
+					i(38511),	-- Monster - Mace, Hand of Edward the Odd (Deathfrost)
+					i(42168),	-- Monster - Mace, Naxxramas D02
+					i(44232),	-- Monster - Mace, Nexus D01
+					i(39753),	-- Monster - Mace, Nexus (Ice)(2H)
+					i(49712),	-- Monster - Mace, Northrend B01 Bronze
+					i(43525),	-- Monster - Mace, Northrend C02
+					i(39749),	-- Monster - Mace, Northrend D01
+					i(37310),	-- Monster - Mace, Stormhammer (Vengeful)
+					i(49358),	-- Monster - Mace, Tauren Spiked (Lightning)
+					i(40452),	-- Monster - Mace, Thaurissan Hammer (High Red Flame)
+					i(39752),	-- Monster - Mace, Thaurissan Hammer (Lightning)
+					i(45900),	-- Monster - Mace, Thorim (Ulduar Raid)
+					i(42939),	-- Monster - Mace, Zul'aman 1H - D01 Blue
+					i(42940),	-- Monster - Mace, Zul'aman 1H - D02 Blue
+					i(40595),	-- Monster - Mace1H, Argent Crusade
+					i(40598),	-- Monster - Mace1H, Argent Shieldman
+					i(42544),	-- Monster - Mace1H, Argent Vanguard 01
+					i(44726),	-- Monster - Mace1H, Hyjal D 01 Blue
+					i(37579),	-- Monster - Mace1H, Prince Arthas
+					i(46338),	-- Monster - Mace2H, Draenei A02 Gold (Frost, Shaman)
+					i(42169),	-- Monster - Mace2H, Naxxramas D02
+					i(33275),	-- Monster - Mace2H, Northrend C03 Red (DUPE)
+					i(39661),	-- Monster - Mace2H, WarA01/B02Silver (1H, Special - High Blue Glow)
+					i(38722),	-- Monster - Scarlet Crusade, Mace 1H
+					i(45726),	-- Monster - Staff, Dalaran (Red) (1H)
+					i(42755),	-- Monster - Staff, Xarantaur's Staff
+					i(42759),	-- Monster - Work Wrench (Lightning)
+					i(50753),	-- Morgan Test
+				}),
+				filter(TWO_HANDED_MACES, {
+					i(34784),	-- Monster - Item, Fishing Pole (Tuskarr)
+					i(39155),	-- Monster - Mace, Volkhan Encounter
+					i(49206),	-- Monster - Mace1H, Warhammer Ebony - White Flame
+					i(43205),	-- Monster - Mace2H, Horde Black Spiked Badass (Savagery)
+					i(45053),	-- Monster - Mace2H, Horde PvP
+					i(39658),	-- Monster - Mace2H, Maul B02 SilverPurple (Low Blue Glow)
+					i(40535),	-- Monster - Mace2H, Northrend C01 Blue
+					i(41977),	-- Monster - Mace2H, Northrend C01 Brown
+					i(41978),	-- Monster - Mace2H, Northrend C01 Green
+					i(41979),	-- Monster - Mace2H, Northrend C01 Red
+					i(41980),	-- Monster - Mace2H, Northrend C03 Blue
+					i(41981),	-- Monster - Mace2H, Northrend C03 Green
+					i(41982),	-- Monster - Mace2H, Northrend C03 Red
+					i(41983),	-- Monster - Mace2H, Northrend C03 Yellow
+					i(44169),	-- Monster - Mace2H, Northrend D01
+					i(50129),	-- Monster - Mace2H, Scourgelord Tyrannus
+					i(38235),	-- Monster - Mace2H, Spikey
+					i(50758),	-- Monster - Mace2H, Toravon (Enchanted)
+					i(50757),	-- Monster - Mace2H, Toravon (No Enchant)
+					i(45055),	-- Monster - Mace2H, Trainwrecker
+					i(34639),	-- Monster - Mace2H, Warsong Guard
+					i(39456),	-- Monster - Scarlet Crusade, Mace 2H
+				}),
+				filter(MISC, {
+					i(54612),	-- Monster - Item, Orb - A01 Ice
+					i(52358),	-- Monster - Item, Potion Purple
+					i(46733),	-- Monster - Item, Tankard Brewfest (Year 3 Green)					
+				}),
+				filter(POLEARMS, {
+					i(35235),	-- Monster - Halberd, Kaw's
+					i(42507),	-- Monster - Harpoon, D01
+					i(44236),	-- Monster - Item, Harpoon (2H)
+					i(37130),	-- Monster - Item, Harpoon (Thrown)
+					i(37917),	-- Monster - Polearm, 7th Legion Wyrm Hunter
+					i(47013),	-- Monster - Polearm, Alliance PVP (Green/Silver)
+					i(38609),	-- Monster - Polearm, Aspects (Orange)
+					i(43114),	-- Monster - Polearm, Blackwing A01
+					i(36790),	-- Monster - Polearm, Dragon Hunter 001 (Troll)
+					i(36791),	-- Monster - Polearm, Dragon Hunter 002 (Troll)
+					i(41022),	-- Monster - Polearm, Dragon Hunter 003 (Disintegrate)
+					i(36792),	-- Monster - Polearm, Dragon Hunter 003 (Troll)
+					i(33598),	-- Monster - Polearm, Dragonflayer Gladiator (Oluf)
+					i(34058),	-- Monster - Polearm, Harpoon (Vrykul)
+					i(40436),	-- Monster - Polearm, Harpoon (Vrykul) - Blue Glow, High
+					i(47031),	-- Monster - Polearm, Horde PvP (Red)
+					i(43477),	-- Monster - Polearm, Nexus D01
+					i(46837),	-- Monster - Polearm, Northrend C01 Black
+					i(41358),	-- Monster - Polearm, Northrend C01 Blue
+					i(41695),	-- Monster - Polearm, Northrend D01
+					i(43110),	-- Monster - Polearm, Northrend D01 Black
+					i(44603),	-- Monster - Polearm, Northrend D01 Black (Fear)
+					i(47505),	-- Monster - Polearm, Northrend D01 Black (Ltng)
+					i(45884),	-- Monster - Polearm, Northrend D02 Gold
+					i(38604),	-- Monster - Polearm, PVPAlliance_A01 (No Sheathe Point)
+					i(49363),	-- Monster - Scythe, Soulfrost
+					i(45475),	-- Monster - Spear, Badass (High Green Flame)
+					i(40729),	-- Monster - Spear, Badass Blue (Poisoned)
+					i(45081),	-- Monster - Spear, Cool Blue (Frost Enchant)
+					i(36778),	-- Monster - Spear, Cool Blue (Medium Blue Glow)
+					i(42509),	-- Monster - Spear, Frost Giant (Northrend)
+					i(41256),	-- Monster - Spear, Sharp Thin (No Sheathe Point)
+					i(42873),	-- Monster - Spear, Stormhoof's Spear
+					i(34874),	-- Monster - Sunwell Raid - Polearm, Blue
+					i(49654),	-- Monster - War Scythe - Soulguard Reaper
+					i(34681),	-- Monster - Warsong Hold - Warsong Honor Guard - Honor Blade
 				}),
 				filter(SHIELDS, {
 					i(49726),	-- Monster - Alliance Shield, Icecrown Citadel
@@ -966,11 +1752,160 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(42936),	-- Monster - Shield, Zul'gurub D02 Blue
 					i(33212),	-- Monster - Vrykul, Shield (Test)
 				}),
+				filter(STAVES, {
+					i(49709),	-- Monster - Forge of Souls - Soulguard Adept Staff
+					i(49724),	-- Monster - Healer Staff, Icecrown Citadel
+					i(33170),	-- Monster - Howling Fjord - Staff, 2H - Dragonflayer Oracle
+					i(42426),	-- Monster - Staff - 2H - Forgotten Depths High Priest
+					i(49653),	-- Monster - Staff - Deathspeaker Servant
+					i(39750),	-- Monster - Staff (Northrend Polearm - Lightning)
+					i(39746),	-- Monster - Staff (Northrend Polearm)
+					i(43226),	-- Monster - Staff, Ahn'Qiraj 03
+					i(43014),	-- Monster - Staff, Alliance PVP
+					i(43596),	-- Monster - Staff, Blood Elf A02 Blue - High Blue Flames
+					i(34899),	-- Monster - Staff, Dragon
+					i(38315),	-- Monster - Staff, Epic A (Blue Fire)
+					i(35741),	-- Monster - Staff, Feral D02
+					i(35742),	-- Monster - Staff, Feral D02 Black
+					i(35743),	-- Monster - Staff, Feral D02 Purple
+					i(35740),	-- Monster - Staff, Feral D02 White
+					i(49716),	-- Monster - Staff, Icecrown Citadel
+					i(49736),	-- Monster - Staff, Icecrown Citadel
+					i(50224),	-- Monster - Staff, Icecrown Citadel (Warlock) (Blue)
+					i(50225),	-- Monster - Staff, Icecrown Citadel (Warlock) (Purple)
+					i(49311),	-- Monster - Staff, Jeweled D01 Blue (Med Blue Glow)
+					i(43196),	-- Monster - Staff, Jeweled D01 Green (Purple Glow)
+					i(41176),	-- Monster - Staff, Naxxramas D01
+					i(43474),	-- Monster - Staff, Nexus D01
+					i(39289),	-- Monster - Staff, Nexus D01 Purple w/Black Glow
+					i(44706),	-- Monster - Staff, Nexus D02 Spellsurge
+					i(39744),	-- Monster - Staff, Northrend (ID Mage)
+					i(43152),	-- Monster - Staff, Northrend B02
+					i(39892),	-- Monster - Staff, Northrend B03 Gold (Fiery)
+					i(43216),	-- Monster - Staff, Northrend B03 Silver
+					i(39699),	-- Monster - Staff, Northrend C01 Black
+					i(42773),	-- Monster - Staff, Northrend C01 Red
+					i(42165),	-- Monster - Staff, Northrend C03 Green
+					i(39745),	-- Monster - Staff, Northrend D01 Blue
+					i(42923),	-- Monster - Staff, Northrend D01 Green
+					i(42924),	-- Monster - Staff, Northrend D01 Purple
+					i(41180),	-- Monster - Staff, Northrend D01 Purple, Disintegration
+					i(42925),	-- Monster - Staff, Northrend D01 Red
+					i(41364),	-- Monster - Staff, Northrend D01 Red (Sunfire)
+					i(34079),	-- Monster - Staff, Northrend Runed
+					i(39743),	-- Monster - Staff, Northrend Runed (Iron)
+					i(46738),	-- Monster - Staff, Ornate Jeweled Staff - Yellow
+					i(43227),	-- Monster - Staff, OutlandRaid Squid (Blue)
+					i(39742),	-- Monster - Staff, Red Jeweled with Low Purple Glow
+					i(42941),	-- Monster - Staff, Special NPC (Northrend)
+					i(38652),	-- Monster - Staff, Utgarde D01
+					i(40606),	-- Monster - Staff, Vargul Deathwaker
+					i(40605),	-- Monster - Staff, Vargul Runelord
+					i(38507),	-- Monster - Staff, Yellow Jeweled with High Yellow Glow
+					i(41365),	-- Monster - Staff, Zul'Aman D02 Purple
+					i(43219),	-- Monster - Staff, Zul'Aman D03 Red
+					i(46984),	-- Monster - Stave, 2H Horde PvP (Green)
+					i(46983),	-- Monster - Stave, 2H Horde PvP (Red)
+				}),
+				filter(ONE_HANDED_SWORDS, {
+					i(49763),	-- Monster - Gunship - Sword
+					i(52007),	-- Monster - Hailstorm
+					i(51323),	-- Monster - Icecrown Raid Blood Prince 1h sword
+					i(39751),	-- Monster - Mace, Northrend C01
+					i(49727),	-- Monster - Orgrim's Sword, Icecrown Citadel
+					i(38723),	-- Monster - Scarlet Crusade, Sword 1H
+					i(45727),	-- Monster - Sword - 1H Dalaran (Red)
+					i(40276),	-- Monster - Sword - 1H, Highlord Darion Mograine (Non-Instanced)
+					i(44705),	-- Monster - Sword - 1H, King Varian Wrynn
+					i(49687),	-- Monster - Sword 1H - Northrend B01
+					i(49637),	-- Monster - Sword 1H - Northrend D
+					i(49719),	-- Monster - Sword 1H, Icecrown Citadel
+					i(49721),	-- Monster - Sword 1H, Icecrown Citadel
+					i(49729),	-- Monster - Sword 1H, Icecrown Citadel
+					i(52034),	-- Monster - Sword 1H, Icecrown Citadel (Sunfire Enchant)
+					i(46736),	-- Monster - Sword 2H, Tauren
+					i(42427),	-- Monster - Sword, 1H - Forgotten Depths Slayer
+					i(39659),	-- Monster - Sword, 1H Alliance PvP (Low Blue Glow)
+					i(55192),	-- Monster - Sword, 1H Blood Elf A01 Silver (w/ Lightning Enchant)
+					i(43091),	-- Monster - Sword, 1H Blood Elf D01 Purple
+					i(50217),	-- Monster - Sword, 1H CoTStratholme D01
+					i(46957),	-- Monster - Sword, 1H Horde PvP Red
+					i(44727),	-- Monster - Sword, 1H Hyjal 02 Blue
+					i(50248),	-- Monster - Sword, 1H IcecrownRaid D02
+					i(50249),	-- Monster - Sword, 1H IcecrownRaid D04 Black
+					i(41263),	-- Monster - Sword, 1H Naxxramas D01
+					i(41343),	-- Monster - Sword, 1H Naxxramas D02 (Shoulder)
+					i(44238),	-- Monster - Sword, 1H Nexus D01
+					i(39287),	-- Monster - Sword, 1H Nexus D02 Dark, Black Glow
+					i(43487),	-- Monster - Sword, 1H Nexus D03
+					i(44439),	-- Monster - Sword, 1H Nexus D03 Dark, Black Glow
+					i(42920),	-- Monster - Sword, 1H Northrend B03 Black
+					i(43967),	-- Monster - Sword, 1H Northrend C01
+					i(42161),	-- Monster - Sword, 1H Northrend C01 Red, Red Glow
+					i(41177),	-- Monster - Sword, 1H Northrend D02 Grey, Deathfrost
+					i(36749),	-- Monster - Sword, Falchion (Sheath: Back)
+					i(44237),	-- Monster - Sword, Horde Jagged Bloody (Back)
+					i(39662),	-- Monster - Sword, Long Silver - Green Pommel (Low Blue Glow)
+					i(39754),	-- Monster - Sword, Northrend Iron Dwarf
+					i(38215),	-- Monster - Sword, Rapier (High Red Glow)
+					i(42757),	-- Monster - Sword, Rapier (High Yellow Glow)
+					i(36990),	-- Monster - Sword, Scimitar Golden (Blue Glow)
+					i(49684),	-- Monster - Sword2H, Alliance PvP D01
+					i(33180),	-- Monster - Sword2H, Claymore C01
+					i(33172),	-- Monster - Sword2H, Claymore C01 (High Red Flame)
+					i(45124),	-- Monster - Sword2H, Northrend C02 Blue
+					i(39024),	-- Monster - Sword2H, Northrend C02 Red
+					i(35757),	-- Monster - Sword2H, Northrend C02 Red (Red Flame)
+					i(39312),	-- Monster - Sword2H, Ragglesnout X'Caliboar (High Red Flame)
+					i(43580),	-- Monster - Vrykul, Sword 1h
+					i(33213),	-- Monster - Vrykul, Sword 2H (Test)
+					i(45926),	-- Monster - Vrykul, Sword 2H (Ulduar)
+					i(34682),	-- Monster - Warsong Hold - Warsong Honor Guard - Honor Blade 1H
+					i(50815),	-- Shadowmourne Monster Offhand
+				}),
 				filter(TWO_HANDED_SWORDS, {
+					i(50442),	-- Ashbringer (Extra Effects)
+					i(33475),	-- Frostmourne
+					i(39370),	-- Keleseth's Persuader
+					i(52011),	-- Monster - Dreadlord's Blade
+					i(49708),	-- Monster - Icecrown Citadel - Skybreaker Dreadblade
+					i(51028),	-- Monster - Icecrown Raid Blood Prince - 2h
+					i(35939),	-- Monster - Sword - 2H - Koltira Deathweaver
+					i(49930),	-- Monster - Sword 2H, Blademaster
+					i(49733),	-- Monster - Sword 2H, Icecrown Citadel
+					i(52062),	-- Monster - Sword 2H, Icecrown Citadel - Valanar
+					i(33773),	-- Monster - Sword 2H, King Ymiron (Vrykul)
+					i(40464),	-- Monster - Sword, 2H Blood Elf B02 (High Red Glow)
+					i(42547),	-- Monster - Sword, 2H Blood Elf B02 Blue (High Blue Glow)
+					i(42477),	-- Monster - Sword, 2H Deathknight B01 Blue
+					i(42478),	-- Monster - Sword, 2H Deathknight B01 Green
+					i(41259),	-- Monster - Sword, 2H Deathknight B01 Purple
+					i(41370),	-- Monster - Sword, 2H Deathknight B01 Red
+					i(41371),	-- Monster - Sword, 2H Deathknight B01 Red (Blue Flame)
+					i(43692),	-- Monster - Sword, 2H Deathknight B01 Red (Red Glow)
+					i(43579),	-- Monster - Sword, 2H Orbaz Bloodbane Test
+					i(49931),	-- Monster - Sword1H, Quel'Delar
+					i(46737),	-- Monster - Sword2H, Claymore Gold
+					i(37609),	-- Monster - Sword2H, Claymore Silver (Black Glow)
+					i(37610),	-- Monster - Sword2H, Claymore Silver (Red Flame)
+					i(49984),	-- Monster - Sword2H, Ebon Blade (Green)
+					i(37123),	-- Monster - Sword2H, Horde Massive Black
+					i(37308),	-- Monster - Sword2H, Northrend D03
+					i(37146),	-- Monster - Sword2H, Northrend D03 (Fear)
+					i(43578),	-- Monster - Sword2H, Northrend D03 (Soulfrost)
+					i(49767),	-- Monster - Sword2H, Quel'Delar
 					i(36942),	-- Frostmourne
 				}),
 				filter(THROWN, {
-					i(42444),	-- Savage Gladiator's War Edge
+					i(37534),	-- BT56 Thrown2
+					i(49873),	-- Monster - Axe 1H, Horde D03 Gold (Thrown)
+					i(33089),	-- Monster - Mutton
+					i(44454),	-- Monster - Throwing Axe, Horde B01 Green
+					i(38249),	-- Monster - Throwing Spear (Poisoned)
+					i(36715),	-- Runed Shuriken
+				}),
+				filter(WANDS, {
+					i(37266),	-- Monster - Wand, Stratholme D02
 				}),
 			}),
 		}),
@@ -1404,6 +2339,108 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			}),
 			n(WEAPONS, {
+				filter(ONE_HANDED_AXES, {
+					i(56191),	-- Monster - Axe, 1H Cataclysm B01
+					i(57016),	-- Monster - Axe, 1H Cataclysm B01 Blue
+					i(57017),	-- Monster - Axe, 1H Cataclysm B01 Green
+					i(57018),	-- Monster - Axe, 1H Cataclysm B01 Red
+					i(56910),	-- Monster - Axe, 1H Cataclysm B02 Blue
+					i(56911),	-- Monster - Axe, 1H Cataclysm B02 Green
+					i(56912),	-- Monster - Axe, 1H Cataclysm B02 Red
+					i(56913),	-- Monster - Axe, 1H Cataclysm B02 Yellow
+					i(55124),	-- Monster - Axe, 1H Nexus D01 Orange w/Red Glow
+					i(60492),	-- Monster - Axe, 1H Outland Raid D06
+					i(55150),	-- Monster - Axe, 1H Twilight's Hammer C01 (Purple Glow)
+					i(56071),	-- Monster - Axe, 1H Twilight's Hammer Green
+					i(52688),	-- Monster - Axe, 1H Twilight's Hammer Orange
+					i(56070),	-- Monster - Axe, 1H Twilight's Hammer Purple
+					i(52520),	-- Monster - Axe, 1H Twilight's Hammer Red
+					i(60887),	-- Monster - Axe, 1H Twilight's Hammer Yellow (2H as 1H)
+					i(52689),	-- Monster - Axe, 1H Worgen B01
+					i(53963),	-- Monster - Axe, 2H Troll ZG (Tooth)
+					i(56233),	-- Monster - Axe, Gorehowl (1H Ver.)
+					i(56103),	-- Monster - Axe, Metal Basic Savagery
+					i(60957),	-- Monster - Axe, Pygmy
+					i(56793),	-- Monster - Glaive - 2 Blade Silver (Shoulder)
+					i(62052),	-- Monster - Item, Pick (offhand)
+					i(68838),	-- Monster - Orsis Polearm (1H)
+					i(60836),	-- Monster - Polearm, Dragon Hunter 003 (1H, no particle)
+					i(43296),	-- Monster - Axe, 1H Northrend (Iskalder's Axe - Polearm D01 Black)
+				}),
+				filter(TWO_HANDED_AXES, {
+					i(52690),	-- Monster - Axe, 2H Alliance C02
+					i(56566),	-- Monster - Axe, 2H Cataclysm B01
+					i(57009),	-- Monster - Axe, 2H Cataclysm B01 Black
+					i(57014),	-- Monster - Axe, 2H Cataclysm B01 Blue
+					i(57015),	-- Monster - Axe, 2H Cataclysm B01 Green
+					i(57010),	-- Monster - Axe, 2H Cataclysm B02
+					i(57011),	-- Monster - Axe, 2H Cataclysm B02 Blue
+					i(57012),	-- Monster - Axe, 2H Cataclysm B02 Brown
+					i(57013),	-- Monster - Axe, 2H Cataclysm B02 Red
+					i(72259),	-- Monster - Axe, 2H DeathwingRaid D 01 - Blue
+					i(72258),	-- Monster - Axe, 2H DeathwingRaid D 01 - Default
+					i(72260),	-- Monster - Axe, 2H DeathwingRaid D 01 - Green
+					i(72261),	-- Monster - Axe, 2H DeathwingRaid D 01 - Magenta
+					i(52691),	-- Monster - Axe, 2H DrakTharon D01
+					i(60972),	-- Monster - Axe, 2H Grim Batol Raid D01
+					i(56117),	-- Monster - Axe, 2H Large Double Bladed Savagery
+					i(52060),	-- Monster - Axe, 2H Twilight's Hammer C01
+					i(52840),	-- Monster - Axe, 2H Twilight's Hammer C01 (Purple Glow)
+					i(56072),	-- Monster - Axe, 2H Twilight's Hammer Green
+					i(60209),	-- Monster - Axe, 2H Twilight's Hammer Green (gold glow)
+					i(56074),	-- Monster - Axe, 2H Twilight's Hammer Rust
+					i(56073),	-- Monster - Axe, 2H Twilight's Hammer Yellow
+					i(55990),	-- Monster - Axe, 2H Zul'Gurub Tooth
+					i(75223),	-- Monster - Axe_2h_PVPCataclysmS3_C_01 - Blue
+					i(75222),	-- Monster - Axe_2h_PVPCataclysmS3_C_01 - Default
+					i(75224),	-- Monster - Axe_2h_PVPCataclysmS3_C_01 - Red
+					i(75225),	-- Monster - Axe_2h_PVPCataclysmS3_C_01 - Yellow
+					i(69644),	-- Monster - Felsteel Reaper (alt color)
+					i(56475),	-- Monster - Polearm, Icecrown Raid (Purple Flame)					
+				}),
+				filter(BOWS, {
+					i(58793),	-- Monster - Bow, Cataclysm B01
+					i(58794),	-- Monster - Bow, Cataclysm B01 Blue
+					i(58795),	-- Monster - Bow, Cataclysm B01 Brown
+					i(58796),	-- Monster - Bow, Cataclysm B01 Yellow
+					i(58797),	-- Monster - Bow, Cataclysm B02 Blue
+					i(58799),	-- Monster - Bow, Cataclysm B02 Purple
+					i(58800),	-- Monster - Bow, Cataclysm B02 Red
+					i(60790),	-- Monster - Bow, Cataclysm B02 Red (High Speed)
+					i(58801),	-- Monster - Bow, Cataclysm B02 Yellow
+					i(60789),	-- Monster - Bow, Cataclysm B02 Yellow (high speed)
+					i(62930),	-- Monster - Bow, Cataclysm C 01 Green
+					i(54858),	-- Monster - Bow, Dark Brown (No Cast)
+					i(60293),	-- Monster - Bow, Drak'tharon D01
+					i(60294),	-- Monster - Bow, Drak'tharon D01
+					i(50156),	-- Monster - Bow, Goblin B01 Blue
+					i(50157),	-- Monster - Bow, Goblin B01 Brown
+					i(50158),	-- Monster - Bow, Goblin B01 Green
+					i(50159),	-- Monster - Bow, Goblin B01 Orange
+					i(56567),	-- Monster - Bow, Horde B01 (Bone)
+					i(58943),	-- Monster - Bow, John J. Keeshan
+					i(55048),	-- Monster - Bow, Shandris
+					i(58947),	-- Monster - Bow, Shandris
+					i(57176),	-- Monster - Bow, TwilightHammer C01
+					i(60292),	-- Monster - Bow, Utgarde D01
+					i(52692),	-- Monster - Bow, Worgen
+					i(52508),	-- Monster - Sunwell Raid - Bow, D01 Purple
+					i(52509),	-- Monster - Sunwell Raid - Bow, D03 Black
+					i(52058),	-- Monster - Valanos' Longbow (0.5 Speed)
+					i(60884),	-- Overwrite Test - Additional Item
+					i(57413),	-- Test Item - Extended Cost (No Refund)
+					i(57414),	-- Test Item - Extended Cost (Refundable)					
+				}),
+				filter(CROSSBOWS, {
+					i(62285),	-- Monster - Crossbow B01 Silver
+					i(58790),	-- Monster - Crossbow, Cataclysm B02 Black
+					i(58791),	-- Monster - Crossbow, Cataclysm B02 Blue
+					i(58792),	-- Monster - Crossbow, Cataclysm B02 Brown
+					i(58789),	-- Monster - Crossbow, Cataclysm B02 Green
+					i(62400),	-- Monster - Crossbow, COT Strat (Alliance)
+					i(56086),	-- Monster - Crossbow, Grim Batol Raid
+					i(52579),	-- Monster - Crossbow, PVE Alliance (Anduin)					
+				}),
 				filter(DAGGERS, {
 					i(50142),	-- Monster - Axe1H, Goblin B01 Black
 					i(50143),	-- Monster - Axe1H, Goblin B01 Brown
@@ -1453,6 +2490,56 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(77365),	-- Monster - Tyrande's Dagger
 					i(58270),	-- Monster - Wand, Horde A 02 Black (Lightning Enchant)
 				}),
+				filter(FIST_WEAPONS, {
+					i(60952),	-- Creature - Black Bruise Offhand
+					i(60962),	-- Monster - Fist, BWDRaid D01 (Left)
+					i(60963),	-- Monster - Fist, BWDRaid D01 (Right)
+					i(60639),	-- Monster - Fist, Cataclysm B02
+					i(60640),	-- Monster - Fist, Cataclysm B02 Gold
+					i(60641),	-- Monster - Fist, Cataclysm B02 Green
+					i(60642),	-- Monster - Fist, Cataclysm B02 Red
+					i(58837),	-- Monster - Fist, Grim Batol Raid_D_01 (Left)
+					i(58838),	-- Monster - Fist, Grim Batol Raid_D_01 (Right)
+					i(54877),	-- Monster - Fist, PVP 320 Copper Claw
+					i(54878),	-- Monster - Fist, PVP 320 Copper Claw (Offhand)
+					i(55194),	-- Monster - Fist, PVP 320 Copper Claw (Offhand) (Flame Enchant)
+					i(55193),	-- Monster - Fist, PVP 320 Copper Claw (Red Flame)
+					i(55169),	-- Monster - Fist, PVP Northrend Black (Main)
+					i(55170),	-- Monster - Fist, PVP Northrend Black (Off)
+					i(63253),	-- Monster - Hand_1H_Cataclysm C 01
+				}),
+				filter(GUNS, {
+					i(72098),	-- Darkmoon Rifle
+					i(61320),	-- Monster - Blowdart
+					i(62928),	-- Monster - Gun, Cataclysm - C 01 Red
+					i(56170),	-- Monster - Gun, Cataclysm B01
+					i(57022),	-- Monster - Gun, Cataclysm B01 Blue
+					i(57023),	-- Monster - Gun, Cataclysm B01 Green
+					i(57024),	-- Monster - Gun, Cataclysm B01 Silver
+					i(58172),	-- Monster - Gun, Cataclysm B02 Blue
+					i(58173),	-- Monster - Gun, Cataclysm B02 Brown
+					i(58174),	-- Monster - Gun, Cataclysm B02 Green
+					i(58175),	-- Monster - Gun, Cataclysm B02 Yellow
+					i(50147),	-- Monster - Gun, Goblin B01 Black
+					i(50148),	-- Monster - Gun, Goblin B01 Blue
+					i(50149),	-- Monster - Gun, Goblin B01 Green
+					i(50150),	-- Monster - Gun, Goblin B01 Orange
+					i(60764),	-- Monster - Gun, Pygmy Gun
+					i(52052),	-- Monster - Gun, Rifle, Worgen
+					i(67434),	-- Monster - Gun, Schnottz's Gun
+					i(52355),	-- Monster - Gun, Techno 02
+					i(56075),	-- Monster - Gun, Twilight's Hammer Brown
+					i(56076),	-- Monster - Gun, Twilight's Hammer Green
+					i(56077),	-- Monster - Gun, Twilight's Hammer Purple
+					i(56078),	-- Monster - Gun, Twilight's Hammer Yellow
+					i(62504),	-- Monster - Polearm (Rifle, Outland Raid D03 - No CD)
+					i(62249),	-- Monster - Pvealliance Gun
+					i(61963),	-- Monster - Rifle, Blood Elf A01 Gold
+					i(61964),	-- Monster - Rifle, Blood Elf B01 Gold
+					i(61965),	-- Monster - Rifle, Blood Elf C01 Gold
+					i(61966),	-- Monster - Rifle, Blood Elf D01 Gold
+					i(61967),	-- Monster - Rifle, Outland Raid D03					
+				}),
 				filter(TWO_HANDED_AXES, {
 					i(63252),	-- Monster - Axe, 2H Horde D 02
 				}),
@@ -1467,8 +2554,121 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(34717),	-- Monster - Item, Vial Green Offhand
 					i(49016),	-- Monster - Rod, Horde Purple Orb
 				}),
+				filter(ONE_HANDED_MACES, {
+					i(68012),	-- Gug's Mug
+					i(69643),	-- Monster - Amani Punisher (Zandalari Archon)
+					i(55168),	-- Monster - Hand_1H_Giant_Weaponclub
+					i(56044),	-- Monster - Item, Skull (Purple Flame)
+					i(58842),	-- Monster - Mace 1H, GrimBatolRaid D 01
+					i(58843),	-- Monster - Mace 1H, GrimBatolRaid D 02
+					i(56192),	-- Monster - Mace, 1H Cataclysm B01
+					i(56193),	-- Monster - Mace, 1H Cataclysm B01 Blue
+					i(57025),	-- Monster - Mace, 1H Cataclysm B01 Green
+					i(57026),	-- Monster - Mace, 1H Cataclysm B01 Purple
+					i(57111),	-- Monster - Mace, 1H Cataclysm B02 Green
+					i(57112),	-- Monster - Mace, 1H Cataclysm B02 Red
+					i(57113),	-- Monster - Mace, 1H Cataclysm B02 White
+					i(57114),	-- Monster - Mace, 1H Cataclysm B02 Yellow
+					i(58273),	-- Monster - Mace, 1H Silver Horde Wand A02
+					i(58135),	-- Monster - Mace, 1H Zul'Aman D02 Green
+					i(58136),	-- Monster - Mace, 1H Zul'Aman D02 Yellow
+					i(56228),	-- Monster - Mace, Doomhammer
+					i(62371),	-- Monster - Mace, Hammer Blue Mighty (Blue Glow 3.9)
+					i(58137),	-- Monster - Mace, Hammer Blue Mighty (Blue Glow)
+					i(62929),	-- Monster - Mace, Hammer of Twilight
+					i(53109),	-- Monster - Mace, Jeweled Club (Bronze)
+					i(57097),	-- Monster - Mace, Jeweled Club (Tan, Shaman Green)
+					i(53108),	-- Monster - Mace, Jeweled Club (Tan)
+					i(61298),	-- Monster - Mace, Northrend C01 (1H)
+					i(62482),	-- Monster - Mace, Northrend C03 Brown
+					i(61934),	-- Monster - Mace, Rivendare Mace
+					i(60985),	-- Monster - Mace, Tauren Spiked (Low Red Glow)
+					i(52063),	-- Monster - Mace, Twilight's Hammer
+					i(55225),	-- Monster - Mace, Twilight's Hammer (Ice Enchant)
+					i(52842),	-- Monster - Mace, Twilight's Hammer Purple
+					i(55131),	-- Monster - Mace, Twilight's Hammer Purple (Enchanted)
+					i(62907),	-- Monster - Mace, Wooden Tree Trunk (Darkshore)
+					i(60769),	-- Monster - Mace2H, Basic Stone Hammer (1H version)
+					i(60812),	-- Monster - Mace2H, Grim Batol Raid (As 1H, Shadow Strikes)
+					i(60813),	-- Monster - Mace2H, Grim Batol Raid (As 1H)
+					i(58272),	-- Monster - Wand, Horde A 02 Black (Lightning Enchant)
+					i(62229),	-- Monster - Work Wrench, Bloody
+					i(68834),	-- Monster - Zanzil's Voodoo Stick
+					i(76286),	-- Warmaster Blackhorn's Weapon
+				}),
 				filter(TWO_HANDED_MACES, {
+					i(52054),	-- Monster - 2H, Paddle Worgen
+					i(58844),	-- Monster - Mace 2H, GrimBatolRaid D 02
+					i(52057),	-- Monster - Mace 2H, Twilight's Hammer
+					i(54780),	-- Monster - Mace 2H, Twilight's Hammer (As 1H)
+					i(57129),	-- Monster - Mace 2H, Twilight's Hammer (Fire - Purple, Low)
+					i(58367),	-- Monster - Mace, 2H Baine's
+					i(57125),	-- Monster - Mace, 2H Cataclysm B01 Black
+					i(57126),	-- Monster - Mace, 2H Cataclysm B01 Blue
+					i(57127),	-- Monster - Mace, 2H Cataclysm B01 Brown
+					i(59141),	-- Monster - Mace, 2H Cataclysm B01 Brown (Rock, Shaman)
+					i(57128),	-- Monster - Mace, 2H Cataclysm B01 Green
+					i(57186),	-- Monster - Mace, 2H Cataclysm B02 Blue
+					i(57187),	-- Monster - Mace, 2H Cataclysm B02 Gold
+					i(61296),	-- Monster - Mace, 2H Cataclysm B02 Gold (Low Yellow Glow)
+					i(57188),	-- Monster - Mace, 2H Cataclysm B02 Green
+					i(57189),	-- Monster - Mace, 2H Cataclysm B02 Red
+					i(50126),	-- Monster - Mace1H, Goblin B01
+					i(50135),	-- Monster - Mace1H, Goblin B01 Blue
+					i(50136),	-- Monster - Mace1H, Goblin B01 Green
+					i(50137),	-- Monster - Mace1H, Goblin B01 Red
+					i(61308),	-- Monster - Mace2H, Alliance PvP (Sharpened)
+					i(56179),	-- Monster - Mace2H, Anvilmar
+					i(49048),	-- Monster - Mace2H, Basic Wooden Hammer (Flametongue)
 					i(63255),	-- Monster - Mace2H, Deathwing D 01
+					i(49656),	-- Monster - Mace2H, Hammer Horde A01 Obsidian
+					i(49657),	-- Monster - Mace2H, Hammer Horde A02 Obsidian
+					i(61337),	-- Monster - Mace2H, Maul B02 Silver
+					i(62481),	-- Monster - Mace2H, Northrend B03
+					i(61969),	-- Monster - Polearm (Rifle, Outland Raid D03)
+				}),
+				filter(MISC, {
+					i(62903),	-- Monster - Book, Guardian of Ancient Kings (paladin spell)
+					i(54879),	-- Monster - Item, Bottle - Black (Broken)
+					i(54880),	-- Monster - Item, Bottle - Green (Broken)
+					i(62484),	-- Monster - Item, Shovel (1h)					
+				}),
+				filter(POLEARMS, {
+					i(52010),	-- Monster - Bleak Scythe
+					i(58968),	-- Monster - Glaive - 1 Blade Basic (Fire Enchant)
+					i(58176),	-- Monster - Glaive - 2 Blade - Purple Twilight's Hammer
+					i(65663),	-- Monster - Oathbinder, Charge of the Ranger-General
+					i(57252),	-- Monster - Polearm, 7th Legion Wyrm Hunter (1H)
+					i(52542),	-- Monster - Polearm, Aspects Green
+					i(56578),	-- Monster - Polearm, Battle Scythe (Dark, Proper) - RVM
+					i(53098),	-- Monster - Polearm, Blood Elf D01 Black
+					i(60964),	-- Monster - Polearm, BWDRaid D01
+					i(56142),	-- Monster - Polearm, Cataclysm B01
+					i(57027),	-- Monster - Polearm, Cataclysm B01 Gold
+					i(62532),	-- Monster - Polearm, Cataclysm B01 Gold (Glow)
+					i(57028),	-- Monster - Polearm, Cataclysm B01 Purple
+					i(57029),	-- Monster - Polearm, Cataclysm B01 Red
+					i(56143),	-- Monster - Polearm, Cataclysm B02
+					i(57030),	-- Monster - Polearm, Cataclysm B02 Green
+					i(57031),	-- Monster - Polearm, Cataclysm B02 Purple
+					i(57032),	-- Monster - Polearm, Cataclysm B02 Red
+					i(62797),	-- Monster - Polearm, Cataclysm C01
+					i(62798),	-- Monster - Polearm, Cataclysm C01 - Bronze
+					i(60765),	-- Monster - Spear Pygmy
+					i(61386),	-- Monster - Spear, Badass Blue (Purple Glow)
+					i(55146),	-- Monster - Spear, Sharp Thin (Poisoned)
+					i(50814),	-- Monster - Sword1H, Quel'Delar (Alternate Anims)
+					i(54538),	-- Monster - Trident, Cataclysm Naga Blue
+					i(54539),	-- Monster - Trident, Cataclysm Naga Green
+					i(54820),	-- Monster - Trident, Cataclysm Naga Green (Broken Prong)
+					i(54540),	-- Monster - Trident, Cataclysm Naga Orange
+					i(62139),	-- Monster - Trident, Cataclysm Naga Orange (Glow)
+					i(57785),	-- Monster - Trident, Cataclysm Naga Orange (red glow)
+					i(54541),	-- Monster - Trident, Cataclysm Naga Yellow
+					i(50436),	-- Monster - Trident, Ornate (Shaman Frost)
+					i(57830),	-- Monster - Trident, Wood Handle (Yellow Glow)
+					i(61305),	-- Monster - Troll - Polearm - Drak Tharon - D1
+					i(56004),	-- Talons of the Storm Crow
 				}),
 				filter(SHIELDS, {
 					i(68730),	-- Broken Barn Door
@@ -1503,6 +2703,143 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(55051),	-- Monster - Shield, Twilight's Hammer (Enchanted)
 					i(52524),	-- Monster - Shield, Worgen
 					i(52525),	-- Monster - Shield, Worgen Dark
+				}),
+				filter(STAVES, {
+					i(71145),	-- Monster - Caster Legendary Stage 0
+					i(69858),	-- Monster - Caster Legendary Stage 1
+					i(69859),	-- Monster - Caster Legendary Stage 2
+					i(69857),	-- Monster - Caster Legendary Stage 3
+					i(52016),	-- Monster - Damnation
+					i(53100),	-- Monster - Staff Argent PVE Alliance 01 Silver
+					i(52009),	-- Monster - Staff of Balzaphon
+					i(60965),	-- Monster - Staff, BWDRaid 01
+					i(60966),	-- Monster - Staff, BWDRaid 02
+					i(57034),	-- Monster - Staff, Cataclysm B01
+					i(68005),	-- Monster - Staff, Cataclysm B01 (Holy Glow)
+					i(56565),	-- Monster - Staff, Cataclysm B01 Blue
+					i(57035),	-- Monster - Staff, Cataclysm B01 Green
+					i(57036),	-- Monster - Staff, Cataclysm B01 Purple
+					i(57120),	-- Monster - Staff, Cataclysm B01 Purple (Flame, Purple - Low)
+					i(58802),	-- Monster - Staff, Cataclysm B02 Black
+					i(60978),	-- Monster - Staff, Cataclysm B02 Black (Shaman Fire)
+					i(58803),	-- Monster - Staff, Cataclysm B02 Blue
+					i(58804),	-- Monster - Staff, Cataclysm B02 Green
+					i(58805),	-- Monster - Staff, Cataclysm B02 Red
+					i(62931),	-- Monster - Staff, Cataclysm C 03 Red
+					i(56265),	-- Monster - Staff, Crooked Green Rockbiter
+					i(58871),	-- Monster - Staff, Ethereal (Gold, Holy Particles)
+					i(60888),	-- Monster - Staff, Grim Batol Raid 01
+					i(56079),	-- Monster - Staff, Grim Batol Raid 02
+					i(58846),	-- Monster - Staff, GrimBatolRaid D 01 (Red)
+					i(58470),	-- Monster - Staff, GrimBatolRaid_D_01
+					i(58479),	-- Monster - Staff, GrimBatolRaid_D_02
+					i(56038),	-- Monster - Staff, Horde (Stonetalon 4.x)
+					i(52837),	-- Monster - Staff, Icecrown Citadel (Blue, Glow)
+					i(52838),	-- Monster - Staff, Icecrown Citadel (Purple, Glow)
+					i(62283),	-- Monster - Staff, Malfurion Stormrage
+					i(60894),	-- Monster - Staff, Orc 02
+					i(58873),	-- Monster - Staff, Ornate Jeweled Staff - Blue, Lightning Particles
+					i(56155),	-- Monster - Staff, Ornate Warlock Staff Flametongue
+					i(52343),	-- Monster - Staff, Other B01 White
+					i(49423),	-- Monster - Staff, Pygmy A03
+					i(56157),	-- Monster - Staff, Wooden Handle Rounded Head Purple Flame
+					i(56092),	-- Monster - Staff, Wooden Handle Rounded Head Wind Enchant
+					i(52529),	-- Monster - Staff, Worgen Pink
+					i(52523),	-- Monster - Staff, Worgen Red
+					i(52012),	-- Monster - Stanchion of Primal Instinct					
+				}),
+				filter(ONE_HANDED_SWORDS, {
+					i(49694),	-- Monster - Sword 2H, Tauren (TEST)
+					i(68058),	-- Monster - Sword, 1H Al'Akir
+					i(56141),	-- Monster - Sword, 1H Cataclysm B01
+					i(57037),	-- Monster - Sword, 1H Cataclysm B01 Black
+					i(56144),	-- Monster - Sword, 1H Cataclysm B01 Green
+					i(56145),	-- Monster - Sword, 1H Cataclysm B01 Yellow
+					i(57005),	-- Monster - Sword, 1H Cataclysm B02 Blue
+					i(57006),	-- Monster - Sword, 1H Cataclysm B02 Brown
+					i(57007),	-- Monster - Sword, 1H Cataclysm B02 Purple
+					i(57008),	-- Monster - Sword, 1H Cataclysm B02 Red
+					i(60970),	-- Monster - Sword, 1H Grim Batol Raid D02
+					i(53008),	-- Monster - Sword, 1H Twilight's Hammer (2H Version)
+					i(52521),	-- Monster - Sword, 1H Twilight's Hammer Red
+					i(60759),	-- Monster - Sword, 1H Twilight's Hammer Red (Flame Red)
+					i(59063),	-- Monster - Sword, 2H Orhan Ogreblade
+					i(56838),	-- Monster - Sword, Falchion (poisoned)
+					i(56166),	-- Monster - Sword, Green Gold Scimitar (Offhand)
+					i(61368),	-- Monster - Sword, Katana 2H (Sharpened)
+					i(72697),	-- Monster - Sword, Mage (High Yellow Glow)
+					i(58196),	-- Monster - Sword, Militia Long Sword (low yellow glow)
+					i(54823),	-- Monster - Sword, Rapier Rusty
+					i(54824),	-- Monster - Sword, Rapier Silver
+					i(54825),	-- Monster - Sword, Sabre Gold
+					i(49814),	-- Monster - Sword, Scimitar Badass (Purple Glow, High)
+					i(56839),	-- Monster - Sword, Scimitar Basic (poisoned)
+					i(52053),	-- Monster - Sword, Worgen
+					i(52526),	-- Monster - Sword, Worgen Bronze
+					i(52527),	-- Monster - Sword, Worgen Silver
+					i(57762),	-- Monster - Sword2H, Scottish Claymore
+					i(68814),	-- Monster - Zulian Slicer
+				}),
+				filter(TWO_HANDED_SWORDS, {
+					i(58948),	-- Monster - Bow, Shandris (Melee)
+					i(60968),	-- Monster - Sword, 2H BWDRaid D01
+					i(56172),	-- Monster - Sword, 2H Cataclysm B01 Black
+					i(57038),	-- Monster - Sword, 2H Cataclysm B01 Blue
+					i(62531),	-- Monster - Sword, 2H Cataclysm B01 Blue (Red Flame)
+					i(57039),	-- Monster - Sword, 2H Cataclysm B01 Brown
+					i(56171),	-- Monster - Sword, 2H Cataclysm B01 Red
+					i(56257),	-- Monster - Sword, 2H Cataclysm B02
+					i(56258),	-- Monster - Sword, 2H Cataclysm B02 Green
+					i(56259),	-- Monster - Sword, 2H Cataclysm B02 Purple
+					i(56260),	-- Monster - Sword, 2H Cataclysm B02 Red
+					i(60969),	-- Monster - Sword, 2H Grim Batol Raid D01
+					i(62902),	-- Monster - Sword, 2H Guardian of Ancient Kings (paladin spell)
+					i(52519),	-- Monster - Sword, 2H Twilight's Hammer
+					i(54815),	-- Monster - Sword, 2H Twilight's Hammer (Fire)
+					i(56050),	-- Monster - Sword, 2H Twilight's Hammer Blue
+					i(57130),	-- Monster - Sword, 2H Twilight's Hammer Purple (Fire - Purple, Low)
+					i(61370),	-- Monster - Sword, 2H Twilight's Hammer Purple (Special - Purple, High)
+					i(60890),	-- Monster - Sword, 2H Twilight's Hammer Red (Executioner)
+					i(56154),	-- Monster - Sword2H, Broadsword Fiery
+					i(68818),	-- Monster - Zin'rokh					
+				}),
+				filter(THROWN, {
+					i(66347),	-- Archaic Throwing Daggers
+					i(66346),	-- Archaic Throwing Stars
+					i(78558),	-- Darting Chakram
+					i(78638),	-- Darting Chakram
+					i(73794),	-- Monster - Thrown, 1H PVPCataclysmS3 C 01 - Blue
+					i(73793),	-- Monster - Thrown, 1H PVPCataclysmS3 C 01 - Default
+					i(73795),	-- Monster - Thrown, 1H PVPCataclysmS3 C 01 - Green
+					i(73796),	-- Monster - Thrown, 1H PVPCataclysmS3 C 01 - Red
+					i(76414),	-- Monster - Thrown_1h_430NightElf_C_01 - Blue
+					i(76415),	-- Monster - Thrown_1h_430NightElf_C_01 - Orange
+					i(76416),	-- Monster - Thrown_1h_430NightElf_C_01 - Purple
+					i(76417),	-- Monster - Thrown_1h_430NightElf_C_01 - Red
+					i(78168),	-- Monster - Thrown_1h_DeathwingRaid_D_01 - Blue
+					i(77968),	-- Monster - Thrown_1h_DeathwingRaid_D_01 - Default
+					i(78169),	-- Monster - Thrown_1h_DeathwingRaid_D_01 - Green
+					i(78167),	-- Monster - Thrown_1h_DeathwingRaid_D_01 - Purple
+					i(58672),	-- ObsoleteQA Combat Test Rogue Thrown Weapon
+					i(61661),	-- QA PVP Test Agility Thrown Weapon
+					i(61909),	-- QA PVP Test Strength Thrown Weapon
+					i(66493),	-- Somber Throwing Daggers
+					i(66492),	-- Somber Throwing Stars
+					i(66201),	-- Timeworn Throwing Daggers
+					i(66200),	-- Timeworn Throwing Stars
+					i(66639),	-- Translucent Throwing Daggers
+					i(66638),	-- Translucent Throwing Stars
+					i(78557),	-- Unexpected Backup
+					i(78636),	-- Unexpected Backup
+					i(58987),	-- UNUSED - Sneaky Devil's Throwing Knives
+					i(66786),	-- Well Repaired Throwing Daggers
+					i(66785),	-- Well Repaired Throwing Stars
+					i(78559),	-- Windslicer Boomerang
+					i(78637),	-- Windslicer Boomerang					
+				}),
+				filter(WANDS, {
+					i(60967),	-- Monster - BWDRaid D01
+					i(60971),	-- Monster - Wand, Grim Batol Raid D01
 				}),
 			}),
 		}),

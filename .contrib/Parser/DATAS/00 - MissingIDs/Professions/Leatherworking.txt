@@ -2,15 +2,32 @@
 r(2108),	-- Leatherworking
 r(3104),	-- Leatherworking
 r(3811),	-- Leatherworking
+0.6.0.3592
+r(9060),	-- Light Leather Quiver
+r(9062),	-- Small Leather Ammo Pouch
+r(9193),	-- Heavy Quiver
+r(9194),	-- Heavy Leather Ammo Pouch
 0.7.0.3694
 r(10656),	-- Dragonscale Leatherworking
 r(10658),	-- Elemental Leatherworking
 r(10660),	-- Tribal Leatherworking
 r(10662),	-- Leatherworking
+0.9.0.3807
+r(14930),	-- Quickdraw Quiver
+r(14932),	-- Thick Leather Ammo Pouch
 2.0.0.6080
 r(32549),	-- Leatherworking
 2.4.3.8606
+r(35520),	-- Shadow Armor Kit
+r(35521),	-- Flame Armor Kit
+r(35522),	-- Frost Armor Kit
+r(35523),	-- Nature Armor Kit
+r(35524),	-- Arcane Armor Kit
 r(40000),	-- Bracers of Shackled Souls
+r(44343),	-- Knothide Ammo Pouch
+r(44344),	-- Knothide Quiver
+r(44359),	-- Quiver of a Thousand Feathers
+r(44768),	-- Netherscale Ammo Pouch
 2.5.1.38043
 r(351766),	-- Greater Drums of War
 r(351768),	-- Greater Drums of Speed
@@ -32,9 +49,8 @@ r(53690),	-- Verdant Tundra Shoulderpads
 3.0.1.8874
 r(55243),	-- Bracers of Deflection
 3.1.0.9767
-r(57692),	-- Fur Lining - Fire Resist
-r(57699),	-- Fur Lining - Nature Resist
-r(57701),	-- Fur Lining - Arcane Resist
+r(60645),	-- Dragonscale Ammo Pouch
+r(60647),	-- Nerubian Reinforced Quiver
 4.0.1.12911
 r(74493),	-- Savage Leather
 r(78400),	-- Windbound Bracers
@@ -166,9 +182,6 @@ r(309292),	-- Bonerivetted Waistguard \\ Necrolord Scale Waistguard
 r(309293),	-- Bonerivetted Armguards \\ Necrolord Scale Armguards
 9.0.1.35167
 r(338261),	-- Almost Thing
-10.1.0.48661
-r(409555),	-- Lustrous Scaled Drums
-r(409557),	-- Hide-Bound Drums
 
 
 

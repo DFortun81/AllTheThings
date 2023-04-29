@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				},
 			}),
 			n(158025, {	-- Darklord Taraxis
-				["coord"] = { 59.3, 51.9, THE_MAW },
+				["coord"] = { 48.6, 82.6, THE_MAW },
 				["questID"] = 62282,
 				["g"] = {
 					i(183901, {	-- Bonestorm Top (TOY!)

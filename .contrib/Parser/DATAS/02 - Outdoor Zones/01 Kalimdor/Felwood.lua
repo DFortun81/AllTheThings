@@ -307,7 +307,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4261, {	-- Ancient Spirit
 					["providers"] = {
 						{ "n", 9598 },	-- Arei
-						{ "i", 11445, 1 },	-- Flute of the Ancients
+						{ "i", 11445 },	-- Flute of the Ancients
 					},
 					["sourceQuest"] = 4442,	-- Purified!
 					["coord"] = { 49.4, 14.4, FELWOOD },
@@ -1631,7 +1631,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = {{ "i", 11514, 4 }},	-- Fel Creep
 					["requireSkill"] = HERBALISM,
 					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
 						i(11516, {	-- Cenarion Plant Salve
@@ -2750,6 +2749,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				i(13140, {	-- Blood Red Key
+					["timeline"] = { "removed 4.0.3" },
+					["crs"] = {
+						7118,	-- Jaedendar Darkweaver
+						7114,	-- Jaedendar Enforcer
+						9862,	-- Jaedendar Legionnaire
+						7120,	-- Jaedendar Warlock
+					},
+				}),
 				-- #if BEFORE 4.0.3
 				i(11515, {	-- Corrupted Soul Shard
 					["provider"] = { "i", 11511 },	-- Cenarion Beacon

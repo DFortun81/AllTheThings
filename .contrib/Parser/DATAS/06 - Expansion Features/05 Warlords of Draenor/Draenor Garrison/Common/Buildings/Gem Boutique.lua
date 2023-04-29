@@ -54,15 +54,15 @@ _.ExpansionFeatures =
 									["filterID"] = MISC,
 									["g"] = {
 										i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
-											i(116087),	-- Recipe: Glowing Blackrock Band
-											i(116081),	-- Recipe: Glowing Iron Band
-											i(116084),	-- Recipe: Glowing Iron Choker
-											i(116088),	-- Recipe: Shifting Blackrock Band
-											i(116082),	-- Recipe: Shifting Iron Band
-											i(116085),	-- Recipe: Shifting Iron Choker
-											i(116089),	-- Recipe: Whispering Blackrock Band
-											i(116083),	-- Recipe: Whispering Iron Band
-											i(116086),	-- Recipe: Whispering Iron Choker
+											i(116087),	-- Design: Glowing Blackrock Band
+											i(116081),	-- Design: Glowing Iron Band
+											i(116084),	-- Design: Glowing Iron Choker
+											i(116088),	-- Design: Shifting Blackrock Band
+											i(116082),	-- Design: Shifting Iron Band
+											i(116085),	-- Design: Shifting Iron Choker
+											i(116089),	-- Design: Whispering Blackrock Band
+											i(116083),	-- Design: Whispering Iron Band
+											i(116086),	-- Design: Whispering Iron Choker
 											recipe(170700),	-- Taladite Crystal
 										}),
 									},
@@ -80,15 +80,15 @@ _.ExpansionFeatures =
 									["filterID"] = MISC,
 									["g"] = {
 										i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
-											i(116087),	-- Recipe: Glowing Blackrock Band
-											i(116081),	-- Recipe: Glowing Iron Band
-											i(116084),	-- Recipe: Glowing Iron Choker
-											i(116088),	-- Recipe: Shifting Blackrock Band
-											i(116082),	-- Recipe: Shifting Iron Band
-											i(116085),	-- Recipe: Shifting Iron Choker
-											i(116089),	-- Recipe: Whispering Blackrock Band
-											i(116083),	-- Recipe: Whispering Iron Band
-											i(116086),	-- Recipe: Whispering Iron Choker
+											i(116087),	-- Design: Glowing Blackrock Band
+											i(116081),	-- Design: Glowing Iron Band
+											i(116084),	-- Design: Glowing Iron Choker
+											i(116088),	-- Design: Shifting Blackrock Band
+											i(116082),	-- Design: Shifting Iron Band
+											i(116085),	-- Design: Shifting Iron Choker
+											i(116089),	-- Design: Whispering Blackrock Band
+											i(116083),	-- Design: Whispering Iron Band
+											i(116086),	-- Design: Whispering Iron Choker
 											recipe(170700),	-- Taladite Crystal
 										}),
 									},

@@ -54,16 +54,16 @@ _.Zones =
 						i(139605, {	-- Pendant of the Moon Temple
 							["cost"] = 10000000,	-- 1,000g
 						}),
-						i(137898, {	-- Recipe: Dreadleather Footpads [Rank 3] (RECIPE!)
+						i(137898, {	-- Pattern: Dreadleather Footpads [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137896, {	-- Recipe: Dreadleather Mask [Rank 3] (RECIPE!)
+						i(137896, {	-- Pattern: Dreadleather Mask [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137895, {	-- Recipe: Dreadleather Pants [Rank 3] (RECIPE!)
+						i(137895, {	-- Pattern: Dreadleather Pants [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137883, {	-- Recipe: Warhide Jerkin [Rank 3] (RECIPE!)
+						i(137883, {	-- Pattern: Warhide Jerkin [Rank 3] (RECIPE!)
 							["cost"] = 5500000,	-- 550g
 						}),
 						i(140652, {	-- Seed of Solar Fire - Druid Artifact Skin

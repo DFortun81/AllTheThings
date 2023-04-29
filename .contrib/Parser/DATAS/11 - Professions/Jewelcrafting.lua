@@ -5113,13 +5113,13 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			{	-- Spirited Kraken's Eye Loop
 				["spellID"] = 289180,	-- Spirited Kraken's Eye Loop
 				["groups"] = {
-					i(166543),	-- Recipe: Eternal Kraken's Eye Loop
+					i(166543),	-- Design: Eternal Kraken's Eye Loop
 				},
 			},
 			{	-- Tidal Kraken's Eye Loop
 				["spellID"] = 289179,	-- Tidal Kraken's Eye Loop
 				["groups"] = {
-					i(166542),	-- Recipe: Spirited Kraken's Eye Loop
+					i(166542),	-- Design: Spirited Kraken's Eye Loop
 				},
 			},
 		}),
@@ -5508,7 +5508,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		}),
 		q(28775,  {	-- Broken Serpent Figurine
 			["provider"] = { "i", 65896 },	-- Figurine - Jeweled Serpent
-			["classes"] = { SHAMAN, DRUID, MONK, PRIEST, MAGE, WARLOCK },
+			["classes"] = { SHAMAN, DRUID, MONK, PALADIN, PRIEST, MAGE, WARLOCK },
 			["timeline"] = { "added 4.0.3.13277" },
 			["groups"] = {
 				i(52353),	-- Figurine - Jeweled Serpent

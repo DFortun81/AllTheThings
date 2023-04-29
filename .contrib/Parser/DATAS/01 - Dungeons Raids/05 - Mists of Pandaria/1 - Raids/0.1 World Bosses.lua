@@ -364,6 +364,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(95980),	-- Necklace of the Terra-Cotta Protector
 						i(95958),	-- Necklace of the Terra-Cotta Archer
 						i(95969),	-- Necklace of the Terra-Cotta Mender
+						i(95960),	-- Scalehide Spurs
 						i(95963),	-- Silentflame Sandals
 						i(95959),	-- Spiderweb Tabi
 					}),

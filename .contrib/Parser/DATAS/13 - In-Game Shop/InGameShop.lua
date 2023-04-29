@@ -15,7 +15,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		ach(12230, {	-- Collector's Edition: Gilded Ravasaur
 			["provider"] = { "i", 153540 },	-- Gilded Ravasaur
-			["timeline"] = { "added 7.3.5.25937" },
+			["timeline"] = {
+					"added 7.3.5.25937",
+				-- "removed 10.0.7.48999,"
+			},
+			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
 			["races"] = HORDE_ONLY,
 		}),
 		ach(10320, {	-- Collector's Edition: Illidari Felstalker
@@ -36,7 +40,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		ach(12229, {	-- Collector's Edition: Seabraid Stallion
 			["provider"] = { "i", 153539 },	-- Seabraid Stallion
-			["timeline"] = { "added 7.3.5.25937" },
+			["timeline"] = {
+					"added 7.3.5.25937",
+				-- "removed 10.0.7.48999,"
+			},
+			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(12232, {	-- Collector's Edition: Tottle
@@ -47,11 +55,19 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	-- #endif
 	filter(MOUNTS, {
 		mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
-			["timeline"] = { "added 8.2.5.31958" },
+			["timeline"] = {
+					"added 8.2.5.31958",
+				-- "removed 10.0.7.48999,"
+			},
+			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
 			["races"] = ALLIANCE_ONLY,
 		}),
 		mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
-			["timeline"] = { "added 8.2.5.31958" },
+			["timeline"] = {
+					"added 8.2.5.31958",
+				-- "removed 10.0.7.48999,"
+			},
+			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
 			["races"] = HORDE_ONLY,
 		}),
 		i(95341, {	-- Armored Bloodwing (MOUNT!)
@@ -72,7 +88,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 10.0.0.46366" },
 		}),--]]
 		i(153540, {	-- Gilded Ravasaur (MOUNT!)
-			["timeline"] = { "added 7.3.5.25937" },
+			["timeline"] = {
+					"added 7.3.5.25937",
+				-- "removed 10.0.7.48999,"
+			},
+			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
 			["races"] = HORDE_ONLY,
 		}),
 		i(112327, {	-- Grinning Reaver (MOUNT!)
@@ -112,7 +132,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 9.0.5.37862" },
 		}),
 		i(153539, {	-- Seabraid Stallion (MOUNT!)
-			["timeline"] = { "added 7.3.5.25937" },
+			["timeline"] = {
+					"added 7.3.5.25937",
+				-- "removed 10.0.7.48999,"
+			},
+			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
 			["races"] = ALLIANCE_ONLY,
 		}),
 		i(156564, {	-- Shu-zen, the Divine Sentinel (MOUNT!)
@@ -193,10 +217,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(92707, {	-- Cinder Kitten
 			["timeline"] = { "added 5.1.0.16309" },
 		}),
-		battlepet(2780, {	-- Daisy
+		pet(2780, {	-- Daisy (PET!)
 			["timeline"] = { ADDED_9_0_5 },
 		}),
-		battlepet(2623, {	-- Dottie
+		pet(2623, {	-- Dottie (PET!)
 			["timeline"] = { "added 8.3.0.33062" },
 		}),
 		i(109014, {	-- Dread Hatchling
@@ -411,10 +435,17 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	-- #if AFTER 8.1.5.29737
 	filter(TOYS, {
 		i(166778, {	-- Horde's Might Firework (TOY!)
-			["timeline"] = { "added 8.1.5.29737" },
+			["timeline"] = {
+					"added 8.1.5.29737",
+				-- "removed 10.0.7.48999,"
+			},
+			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
 		}),
 		i(166777, {	-- Lion's Pride Firework (TOY!)
-			["timeline"] = { "added 8.1.5.29737" },
+			["timeline"] = {
+					"added 8.1.5.29737",
+				-- "removed 10.0.7.48999,"
+			},
 		}),
 		i(166779, {	-- Transmorpher Beacon (TOY!)
 			["timeline"] = { "added 8.1.5.29737" },

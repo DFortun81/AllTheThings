@@ -27,45 +27,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					},
 				}),
 			})),
-			prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
+			prof(BLACKSMITHING, {
 				n(185546, {	-- Metalshaper Kuroko <Blacksmithing Trainer>
 					["coord"] = { 37.2, 47.8, VALDRAKKEN },
-					["g"] = {
-						r(365677),	-- Dragon Isles Blacksmithing
-						r(367600),	-- Draconium Axe
-						r(371344),	-- Draconium Blacksmith's Hammer
-						r(371364),	-- Draconium Blacksmith's Toolbox
-						r(393404),	-- Draconium Defender
-						r(367596),	-- Draconium Dirk
-						r(393416),	-- Draconium Great Axe
-						r(367598),	-- Draconium Great Mace
-						r(367595),	-- Draconium Knuckles
-						r(371338),	-- Draconium Leatherworker's Knife
-						r(371360),	-- Draconium Leatherworker's Toolset
-						r(371302),	-- Draconium Needle Set
-						r(371309),	-- Draconium Pickaxe
-						r(371343),	-- Draconium Sickle
-						r(371304),	-- Draconium Skinning Knife
-						r(367597),	-- Draconium Stiletto
-						r(367599),	-- Draconium Sword
-						r(367611),	-- Explorer's Expert Clasp
-						r(395879),	-- Explorer's Expert Gauntlets
-						r(395881),	-- Explorer's Expert Greaves
-						r(395883),	-- Explorer's Expert Helm
-						r(395880),	-- Explorer's Expert Spaulders
-						r(367610),	-- Explorer's Plate Boots
-						r(367609),	-- Explorer's Plate Bracers
-						r(395886),	-- Explorer's Plate Chestguard
-						r(367712),	-- Frostfire Alloy
-						r(365735),	-- Primal Molten Alloy
-						r(371674),	-- Primal Weightstone
-						r(371650),	-- Primal Whetstone
-						r(385304),	-- Recraft Equipment
-						r(371395),	-- Serevite Repair Hammer
-						r(371394),	-- Serevite Skeleton Key
-					},
+					["g"] = DF_BLACKSMITHING,
 				}),
-			})),
+			}),
 			prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKING }, {
 				n(185556, {	-- Erugosa <Cooking Trainer>
 					["coord"] = { 46.6, 46.6, VALDRAKKEN },

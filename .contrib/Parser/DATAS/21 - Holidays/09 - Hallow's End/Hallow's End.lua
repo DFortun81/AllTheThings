@@ -379,11 +379,11 @@ local SPECTRAL_GROG = i(104316, {	-- Spectral Grog
 root(ROOTS.Holidays, applyholiday(HALLOWS_END, {
 	-- #if ANYCLASSIC
 	["npcID"] = -58,
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HALLOWS_END .. [[, 10, 18, 11, 1); end]],
 	-- #else
 	["holidayID"] = 235462,
 	-- #endif
 	["description"] = "Start: 10/18 at 10:00 AM\nEnd: 11/01 at 11:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HALLOWS_END .. [[, 10, 18, 11, 1); end]],
 	["groups"] = {
 		-- #if AFTER 2.0.1
 		n(ACHIEVEMENTS, {

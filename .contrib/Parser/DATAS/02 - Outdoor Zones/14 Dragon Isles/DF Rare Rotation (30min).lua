@@ -7,7 +7,7 @@ end
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
 	n(RARES, {
 		n(-1143, {	-- DF Rare Rotation
-			["description"] = "Every 30 minutes 1 rare will spawn, based on a fixed 14h rotation, and they will be marked with a skull on the map if you are in the respective zone.\n\nRotation: |cFFFFFFFF1. |rPhleep |cFFFFFFFF2. |rMagmaton |cFFFFFFFF3. |rGruffy |cFFFFFFFF4. |rRonsak |cFFFFFFFF5. |rRiverwalker Tamopo |cFFFFFFFF6. |rAmethyzar |cFFFFFFFF7. |rEldoren the Reborn\n\n|cFFFFFFFF8. |rPhenran |cFFFFFFFF9. |rSkag the Thrower |cFFFFFFFF10. |rMikrin |cFFFFFFFF11. |rRokmur |cFFFFFFFF12. |rSmogswog |cFFFFFFFF13. |rMatriarch Remalla |cFFFFFFFF14. |rO'nank Shorescour\n\n|cFFFFFFFF15. |rResearcher Sneakwing |cFFFFFFFF16. |rTreasure-Mad Trambladd |cFFFFFFFF17. |rHarkyn Grymstone |cFFFFFFFF18. |rFulgurb |cFFFFFFFF19. |rSandana the Tempest |cFFFFFFFF20. |rGorjo the Crab Shackler |cFFFFFFFF21. |rSteamgill\n\n|cFFFFFFFF22. |rTempestrian |cFFFFFFFF23. |rMassive Magmashell |cFFFFFFFF24. |rGrumbletrunk |cFFFFFFFF25. |rOshigol |cFFFFFFFF26. |rBroodweaver Araznae |cFFFFFFFF27. |rAzra's Prized Peony |cFFFFFFFF28. |rMalsegan\n\nExample: Phleep spawned at 8am. Rokmur would spawn at 1pm. Phleep's next spawn would be at 10pm.",
+			["description"] = "Every 30 minutes 1 rare will spawn, based on a fixed 14h rotation, and they will be marked with a skull on the map if you are in the respective zone.\n\nRotation: |cFFFFFFFF1. |rPhleep |cFFFFFFFF2. |rMagmaton |cFFFFFFFF3. |rGruffy |cFFFFFFFF4. |rRonsak |cFFFFFFFF5. |rRiverwalker Tamopo |cFFFFFFFF6. |rAmethyzar |cFFFFFFFF7. |rEldoren the Reborn\n\n|cFFFFFFFF8. |rPenumbrus |cFFFFFFFF9. |rSkag the Thrower |cFFFFFFFF10. |rMikrin |cFFFFFFFF11. |rRokmur |cFFFFFFFF12. |rSmogswog |cFFFFFFFF13. |rMatriarch Remalla |cFFFFFFFF14. |rO'nank Shorescour\n\n|cFFFFFFFF15. |rResearcher Sneakwing |cFFFFFFFF16. |rTreasure-Mad Trambladd |cFFFFFFFF17. |rHarkyn Grymstone |cFFFFFFFF18. |rFulgurb |cFFFFFFFF19. |rSandana the Tempest |cFFFFFFFF20. |rGorjo the Crab Shackler |cFFFFFFFF21. |rSteamgill\n\n|cFFFFFFFF22. |rTempestrian |cFFFFFFFF23. |rMassive Magmashell |cFFFFFFFF24. |rGrumbletrunk |cFFFFFFFF25. |rOshigol |cFFFFFFFF26. |rBroodweaver Araznae |cFFFFFFFF27. |rAzra's Prized Peony |cFFFFFFFF28. |rMalsegan\n\nExample: Phleep spawned at 8am. Rokmur would spawn at 1pm. Phleep's next spawn would be at 10pm.",
 			["g"] = sharedData({
 				["isDaily"] = true,
 			},{
@@ -225,6 +225,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["questID"] = 74017,
 					["g"] = {
 						bo(70983, true),
+					},
+				}),
+				n(189289, {	-- Penumbrus
+					["description"] = "Spawns underground.",
+					["coord"] = { 24.4, 54.5, THE_WAKING_SHORES },
+					["questID"] = 74019,
+					["g"] = {
+						bo(70212, true),
+						i(200144),	-- Band of the Unscalable
 					},
 				}),
 				n(193120, {	-- Smogswog the Firebreather

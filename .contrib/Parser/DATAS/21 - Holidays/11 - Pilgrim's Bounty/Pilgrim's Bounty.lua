@@ -25,12 +25,12 @@ local ALL_PILGIM_MAPS = appendGroups(ALLIANCE_PILGRIM_MAPS, appendGroups(HORDE_P
 root(ROOTS.Holidays, applyholiday(PILGRIMS_BOUNTY, {
 	-- #if ANYCLASSIC
 	["npcID"] = -60,
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. PILGRIMS_BOUNTY .. [[, 11, 22, 11, 29); end]],
 	-- #else
 	["holidayID"] = 235466,
 	-- #endif
 	["timeline"] = { "added 3.1.0.9658" },
 	["description"] = "Start: 11/22 at 10:00 AM\nEnd: 11/29 at 9:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. PILGRIMS_BOUNTY .. [[, 11, 22, 11, 29); end]],
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {

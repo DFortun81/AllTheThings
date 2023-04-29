@@ -4,6 +4,7 @@
 root(ROOTS.Holidays, applyholiday(PIRATES_DAY, {
 	-- #if ANYCLASSIC
 	["npcID"] = -55,
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. PIRATES_DAY .. [[, 9, 19, 9, 20); end]],
 	-- #else
 	["holidayID"] = 235481,
 	-- #endif
@@ -13,7 +14,6 @@ root(ROOTS.Holidays, applyholiday(PIRATES_DAY, {
 	-- #else
 	["description"] = "Start: 09/19 at 12:00 AM\nEnd: 09/20 at 12:00 AM",
 	-- #endif
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. PIRATES_DAY .. [[, 9, 19, 9, 20); end]],
 	["groups"] = {
 		-- #if BEFORE 6.0.2.18816
 		n(28048, {	-- Dread Captain DeMeza <Scourge of the South Seas>

@@ -56,6 +56,30 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						},
 					}),
 				}),
+				n(FOLLOWERS, bubbleDownSelf({
+					["u"] = 15,	-- Temporary troops
+				}, {
+					follower(1012),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force
+					follower(1013),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force
+					follower(1014),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force
+					follower(1015),	-- Alliance:7th Legion Shock Force \\ Horde:Kor'kron Shock Force
+					follower(687),	-- Shieldmaiden Warband
+					follower(864),	-- Shieldmaiden Warband
+					follower(865),	-- Shieldmaiden Warband
+					follower(866),	-- Shieldmaiden Warband
+					follower(688),	-- Stormforged Valarjar
+					follower(861),	-- Stormforged Valarjar
+					follower(862),	-- Stormforged Valarjar
+					follower(863),	-- Stormforged Valarjar
+					follower(686),	-- Valarjar Aspirants
+					follower(858),	-- Valarjar Aspirants
+					follower(859),	-- Valarjar Aspirants
+					follower(860),	-- Valarjar Aspirants
+					follower(852),	-- Valkyra Shieldmaidens
+					follower(867),	-- Valkyra Shieldmaidens
+					follower(868),	-- Valkyra Shieldmaidens
+					follower(869),	-- Valkyra Shieldmaidens
+				})),
 				n(QUESTS, {
 					-- Introduction
 					q(42814, {	-- An Important Mission

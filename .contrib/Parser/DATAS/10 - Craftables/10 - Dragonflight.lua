@@ -698,11 +698,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 					{ "i", 201360, 1 },	-- 1x Glimmer of Order
 				},
 				["g"] = {
-					q(71939, { ["name"] = "Disenchanted Air" }),
-					q(71940, { ["name"] = "Disenchanted Earth" }),
-					q(71941, { ["name"] = "Disenchanted Fire" }),
-					q(71942, { ["name"] = "Disenchanted Frost" }),
-					q(71943, { ["name"] = "Disenchanted Order" }),
+				--	q(71941, { ["name"] = "Disenchanted Glimmer of Fire" }),	-- Requires correct ID
+				--	q(71942, { ["name"] = "Disenchanted Glimmer of Frost" }),	-- Requires correct ID
+					q(71939, { ["name"] = "Disenchanted Glimmer of Air" }),
+					q(71937, { ["name"] = "Disenchanted Glimmer of Earth" }),
+					q(71938, { ["name"] = "Disenchanted Glimmer of Order" }),
 				},
 			}),
 		}),
@@ -2630,12 +2630,10 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_10
 			i(193476),	-- Gnoll Tent (TOY!)
 			i(193478),	-- Tuskarr Bean Bag (TOY!)
 		}),
-		n(-386, {	-- Trinkets
-			i(193496),	-- Witherrot Tome
-		}),
 		n(WEAPONS, {
 			i(193449),	-- Bow of the Dragon Hunters
 			i(193383),	-- Bonewrought Crossbow
+			i(193496),	-- Witherrot Tome
 		}),
 	}),
 	prof(MINING, {
@@ -2984,6 +2982,16 @@ root(ROOTS.HiddenQuestTriggers, {
 		prof(ALCHEMY, {
 			q(71948),	-- Maxxed Out Transmutation
 		}),
+		prof(BLACKSMITHING, {
+			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom
+		}),
+		prof(ENCHANTING, {
+			q(71936),	-- Glimmer of Air Drop/Disenchant
+			q(71940),	-- Glimmer of Earth Drop/Disenchant
+			q(71941),	-- Glimmer of Fire Drop/Disenchant
+			q(71942),	-- Glimmer of Frost Drop/Disenchant
+			q(71943),	-- Glimmer of Order Drop/Disenchant
+		}),
 		prof(HERBALISM, {
 			q(71969),	-- First Lush Hochenblume Harvest
 			q(71970),	-- First Writhebark Harvest
@@ -3045,11 +3053,10 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71966),	-- First Overload Primal Node
 			q(72346),	-- First Serevite Seam
 			q(72347),	-- First Draconium Seam
+			q(75139 , {["timeline"] = {ADDED_10_1_0}}),	-- First Metamorphic Serevite Deposit
+
 			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
-		}),
-		prof(BLACKSMITHING, {
-			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom
 		}),
 		prof(SKINNING, {
 			q(74122),	-- Skinning Blisterhide

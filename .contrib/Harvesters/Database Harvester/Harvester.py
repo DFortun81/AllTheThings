@@ -1,6 +1,8 @@
 # Tool Harvesters and Generating Missing with name
+# mypy: ignore-errors
 import csv
 import re
+import requests
 from pathlib import Path
 from packaging import version
 from QuestNames import get_quest_names
@@ -27,17 +29,20 @@ from ThingTypes import (
     Creatures,
     remove_non_digits,
 )
-
 VERSION_THING_DICT: dict[str, list[type[Thing]]] = {
-    "Beta": Thing.__subclasses__(),
     "Classic": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items, SpellNames],
-    "Classic Beta": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items, SpellNames],
     "Classic Era": [Achievements, Factions, FlightPaths, Quests, Recipes, Transmog, SpellItems, SkillLines, Items, SpellNames, Creatures],
-    "Classic PTR": [Achievements, Factions, FlightPaths, Quests, Recipes, Titles, Transmog, SpellItems, SkillLines, Items, SpellNames],
-    "PTR1": Thing.__subclasses__(),
-    "PTR2": Thing.__subclasses__(),
     "Retail": Thing.__subclasses__(),
 }
+
+
+def get_thing_table(thing: type[Thing], build: str) -> list[str]:
+    """Get the table of a thing from a build."""
+    url = f"https://wago.tools/db2/{thing.table()}/csv?build={build}"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Linux; Android 9; G3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
+    }
+    return requests.get(url, headers=headers).content.decode("utf-8").splitlines()
 
 
 def add_latest_build(build: str, thing: type[Thing]) -> list[str]:
@@ -58,17 +63,16 @@ def add_latest_build(build: str, thing: type[Thing]) -> list[str]:
     return next_builds
 
 
-def get_thing_data(thing: type[Thing], build: str, version: str) -> list[str]:
+def get_thing_data(thing: type[Thing], build: str) -> list[str]:
     """Get the IDs (and some thing specific data) of a thing from a build."""
     thing_list: list[str] = list[str]()
-    with open(Path("Latest", f"{version}", "dbfilesclient", f"{thing.table()}.csv")) as csv_file:
-        reader = csv.DictReader(csv_file)
-        for row in reader:
-            try:
-                thing_list.append(thing.extract_table_info(row, build) + "\n")
-            except KeyError as error:
-                print(f"Cursed build: {build}\nKeyError: {error}")
-        return thing_list
+    reader = csv.DictReader(get_thing_table(thing, build))
+    for row in reader:
+        try:
+            thing_list.append(thing.extract_table_info(row, build) + "\n")
+        except KeyError as error:
+            print(f"Cursed build: {build}\nKeyError: {error}")
+    return thing_list
 
 
 def get_existing_ids(thing: type[Thing]) -> list[str]:
@@ -82,6 +86,8 @@ def get_existing_ids(thing: type[Thing]) -> list[str]:
             words = line.split(",")
             for word in words:
                 if any(prefix in word for prefix in thing.existing_prefixes()):
+                    if thing == Pets and "fp(" in word:
+                        continue
                     thing_id = re.sub("[^\\d^.]", "", word)
                     existing_ids.append(thing_id + "\n")
     return existing_ids
@@ -474,7 +480,7 @@ def add_latest_data(build: str, version: str) -> None:
         after_list: list[str] = []
         next_builds: list[str] = add_latest_build(build, thing)
         raw_path = Path("Raw", f"{thing.__name__}.txt")
-        thing_list = get_thing_data(thing, build.strip(), version)
+        thing_list = get_thing_data(thing, build.strip())
         with open(raw_path, "r") as raw_file:
             old_lines = raw_file.readlines()
             for next_build in next_builds:
@@ -530,9 +536,9 @@ def give_name_item() -> None:
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-# add_latest_data("10.1.0.49092", "PTR1")
+# add_latest_data("10.1.0.49318", "Retail")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
 """Step 5: Run create_missing_files() and (you have to uncomment it)"""
-# create_missing_files()
+create_missing_files()

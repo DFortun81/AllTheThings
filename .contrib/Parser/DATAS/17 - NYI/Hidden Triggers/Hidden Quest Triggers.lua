@@ -358,28 +358,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(56107),	-- when nascent bee changed into Juvenile Harvester
 		q(56879),	-- when Juvenile Harvester changed into Honeyback Harvester (max bee friendship)
 
-		--	ISLAND EXPEDITIONS
-		q(51994),	-- Unlock the ability to go on Island Expeditions in search of Azerite
-		q(55687),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Alliance
-		q(57104),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Horde
-		q(55713),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Alliance
-		q(57106),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Horde
-		q(55686),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Alliance
-		q(57105),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Horde
-		q(55712),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Alliance
-		q(57107),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Horde
-		q(55619),	-- Upgrade Your Vehicle (Optional), Alliance
-		q(57103),	-- Upgrade Your Vehicle (Optional), Horde
-		q(55617),	-- Expedition Siege Engine — assembling siege engine in Island Expeditions
-		q(56998),	-- triggered when turning in "Azerite for the Alliance," (53436) which also triggered "Azerite for the Horde" (53435).  i also got Rank 1 Volatile Worldvein from the quest, so maybe this is for receiving that?
-		q(57063),	-- triggered when using Zem'lan's Lost Treasure Map (created from combining fragments from Island Expeditions)
-		q(56520),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
-		q(57060),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
-		q(57061),	-- popped when i manually refreshed after fully completing the mission / getting Fluctuating Worldvein in my inventory
-		q(57332),	-- using Map to the Last Worldvein to get mission The Last Worldvein (rank 4 Worldvein Resonance)
-		q(56910),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
-		q(57062),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
-
 		--	PVP / WAR MODE
 		q(53636),	-- Looting a bounty in Stormsong as Horde (all 3 trigger at the same time)
 		q(53638),	-- Looting a bounty in Stormsong as Horde
@@ -661,7 +639,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(51930),	-- Stormsong Valley repeatable random chest
 		q(51935),	-- Stormsong Valley repeatable random chest
 		q(51938),	-- Stormsong Valley repeatable random chest
-		q(51939),	-- Stormsong Valley repeatable random chest
 		q(51940),	-- Stormsong Valley repeatable random chest
 		q(51941),	-- Stormsong Valley repeatable random chest
 		q(51942),	-- Stormsong Valley repeatable random chest
@@ -1203,7 +1180,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(55611),	-- triggered when completing "Message to Base" in Exile's Reach on alliance priest
 		q(59610),	-- Triggered after killing Torgok. Loot controller for "Torgok's Reagent Pouch"
 		q(59143),	-- Triggered after looting the Runetusk Necklace from ogres in Darkmaul Citadel
-		q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow
+		q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow / Dented Legplates
 		q(60167),	-- Triggered right after Warlord Grimaxe tells Shuja to heal during the Tunk encounter
 		q(62547),	-- Triggered after speaking to trainer for What's Your Specialty? quest [Horde]
 		q(62548),	-- Triggered after speaking to trainer for What's Your Specialty? quest [Alliance]
@@ -1804,6 +1781,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(14448),	-- Takes One to Know One - completed with quest 13260
 		q(14474),	-- Goblin Escape Pods - completed with quest 14001
 		q(24521),	-- Report For Tryouts - completed with quest 24567
+		q(25033),	-- The Red Messenger - completed with quest 24971
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807
 		q(25305),	-- Never Look Back - completed with quest 25304
 		q(25573),	-- Your Underwater Mount (Temp) - completed with quest 25371
@@ -1815,8 +1793,13 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(26379),	-- In Aid of the Refugees - completed with quest 13601
 		q(26398),	-- Walk With The Earth Mother - completed with 26397
 		q(26522),	-- Faces of Evil - completed with 26357 & 26521
+		q(26756),	-- Nessa Shadowsong - completed with 6344
+		q(26757),	-- The Bounty of Teldrassil - completed with 6341
+		q(26758),	-- Flight to Auberdine - completed with 6342
+		q(26759),	-- Return to Nessa - completed with 6343
 		q(26893),	-- Blackfathom Deeps - completed with quest 26894
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
+		q(27419),	-- Army of the Black Dragon - completed with quest 1168
 		q(27861),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
 		q(27862),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
 		q(28236),	-- The Lost Brother - completed with quest 28233
@@ -1848,6 +1831,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(31033),	-- Adventurers Wanted: Ragefire Chasm - completed with quest 31034 & 31036 & 31037
 		q(31035),	-- Enemies Below - completed with quest 26865 & 26866 & 26867
 		q(31129),	-- Fate of the Stormstouts - completed with quest 31076
+		q(31148),	-- Novice Elreth - completed with quest 28651
 		q(31174),	-- The Dread Vos - completed with quest 31019
 		q(31206),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
 		q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
@@ -1856,13 +1840,13 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(31469),	-- UNUSED - completed with quest 31311
 		q(31485),	-- UNUSED - completed with quest 31281
 		q(31530),	-- Mission: The Hozen Dozen - completed with quest 31529
-		q(31806, { ["_drop"] = { "g" }, }), -- Test Quest - completed with quest 31802
+		q(31806, { ["_drop"] = { "g" }, }),	-- Test Quest - completed with quest 31802
 		q(31877),	-- The Inkmasters of the Arboretum - completed with quest 31876
-		q(32105, { ["_drop"] = { "g" }, }), -- Pristine Monument Ledger - completed with quest 31805
+		q(32105, { ["_drop"] = { "g" }, }),	-- Pristine Monument Ledger - completed with quest 31805
 		q(32107),	-- Flying Tiger Gourami - completed with quest 31443
 		q(32125),	-- Don't Try So Hard - DEPRECATED - completed with quest 32235
 		q(32196),	-- A Kind of Magic - DEPRECATED - completed with quest 32143
-		q(32341, { ["_drop"] = { "g" }, }), -- Demonstrate Your Power - completed with quest 32340
+		q(32341, { ["_drop"] = { "g" }, }),	-- Demonstrate Your Power - completed with quest 32340
 		q(32516),	-- The Bloodletter - completed with quest 32495 & 32530
 		q(32534),	-- The Skumblade Threat - completed with quest 32204 & 32535
 		q(33071),	-- The Call of War - completed with quest 39691
@@ -1917,11 +1901,11 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(38008),	-- The Road of Glory - completed with quest 36125 & 36227
 		q(38305),	-- Cenarius, Keeper of the Grove - completed with quest 40122
 		q(38713),	-- The Crusade Calls - completed with quest 38710
-		q(39058, {["_drop"] = { "g" }}),	-- Critters of Draenor - completed with quest 38299 & 38300
+		q(39058, { ["_drop"] = { "g" }, }),	-- Critters of Draenor - completed with quest 38299 & 38300
 		q(39127),	-- Beyond the Wall - completed with quest 31386 & 31388
 		q(39189),	-- Warchief's Command: Nagrand! - completed with quest 9957 & 9960 & 9961 & 39182 & 39188
 		q(39396),	-- NOT USED - completed with quest 39394 & 38463
-		q(39692, { ["_drop"] = { "g" }, }), -- The Call of War - completed with quest 39691
+		q(39692, { ["_drop"] = { "g" }, }),	-- The Call of War - completed with quest 39691
 		q(39978),	-- Meet the Recruits - completed with quest 32715
 		q(41226),	-- Breaking Out - completed with quest 38672
 		q(41858),	-- No Monk Left Behind - completed with quest 41852
@@ -1932,7 +1916,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46176),	-- The Archmage Accosted - completed with quest 44924
 		q(49059),	-- The Bones of Xibala - completed with quest 47257
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
-		q(27419),	-- Army of the Black Dragon - completed with quest 1168
 	}),
 
 	-------------------

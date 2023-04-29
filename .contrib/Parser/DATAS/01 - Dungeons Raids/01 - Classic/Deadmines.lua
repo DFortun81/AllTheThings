@@ -439,9 +439,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					-- #endif
 				}),
 				i(1958, {	-- Petrified Shinbone
-					-- #if AFTER LEGION
-					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-					-- #endif
 					["cr"] = 625,	-- Undead Dynamiter
 				}),
 				i(7997, {	-- Red Defias Mask

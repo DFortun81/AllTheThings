@@ -182,7 +182,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 							i(168822),	-- Thin Jelly
 						},
 					}),
-					i(172493),	-- Snarling Butterfly Crate (PET!)
+					i(172493),	-- Crimson Skipper (PET!)
 					i(172405, {	-- Tome of Hex: Living Honey
 						["f"] = RECIPES,
 					}),

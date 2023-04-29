@@ -4007,6 +4007,10 @@
 3643@@@Chance to Increase Melee/Ranged Attack Speed 
 3700@@@+7 Defense Rating and +11 Stamina 
 3.4.1.48503
+3.4.2.49311
+2888@@@+12 Block Value
+2975@@@+10 Block Value
+3363@@@+27 Block Value
 4.0.1.12911
 2@@@Frostbrand
 5@@@Flametongue

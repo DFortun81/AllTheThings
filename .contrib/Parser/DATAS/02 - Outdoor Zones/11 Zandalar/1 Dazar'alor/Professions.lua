@@ -40,40 +40,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				}),
 			}),
 			prof(BLACKSMITHING, {
-				q(54466, {	-- Blacksmithing Plans
-					["requireSkill"] = BLACKSMITHING,
-					["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
+				n(127112, {	-- Forgemaster Zak'aal <Blacksmithing Trainer>
 					["coord"] = { 43.6, 38.3, DAZARALOR },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(50276, {	-- A Recipe For the Ages (H)
-					["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
-					["coord"] = { 43.6, 38.3, DAZARALOR },
-					["description"] = "Requires 150 Zandalari Blacksmithing.",
-					["requireSkill"] = BLACKSMITHING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						recipe(253145),	-- Khaz'gorian Smithing Hammer
-					},
-				}),
-				q(50277, {	-- Hammering Out Information (H)
-					["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
-					["coord"] = { 43.6, 38.3, DAZARALOR },
-					["sourceQuest"] = 50276,	-- A Recipe For the Ages (H)
-					["requireSkill"] = BLACKSMITHING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50278, {	-- Deep In the Core (H)
-					["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
-					["coord"] = { 43.6, 38.3, DAZARALOR },
-					["sourceQuest"] = 50277,	-- Hammering Out Information (H)
-					["requireSkill"] = BLACKSMITHING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
+					["g"] = appendGroups(BFA_BLACKSMITHING, {
+						r(265803),	-- Zandalari Blacksmithing
+					}),
 				}),
 			}),
 			prof(COOKING, {

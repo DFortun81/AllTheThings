@@ -77,16 +77,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(162703, {	-- Recipe: Coastal Mana Potion [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162754, {	-- Recipe: Contract: Talanji's Expedition [Rank 2] (RECIPE!)
+					i(162754, {	-- Technique: Contract: Talanji's Expedition [Rank 2] (RECIPE!)
 						["cost"] = 11000000,	-- 1,100g
 					}),
 					i(162697, {	-- Recipe: Flask of the Vast Horizon [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162768, {	-- Recipe: Hardened Tempest Knuckles [Rank 3] (RECIPE!)
+					i(162768, {	-- Pattern: Hardened Tempest Knuckles [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162767, {	-- Recipe: Mistscale Knuckles [Rank 3] (RECIPE!)
+					i(162767, {	-- Pattern: Mistscale Knuckles [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(162693, {	-- Recipe: Potion of Bursting Blood [Rank 3] (RECIPE!)

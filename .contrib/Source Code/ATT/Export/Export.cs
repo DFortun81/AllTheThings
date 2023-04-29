@@ -25,8 +25,6 @@ namespace ATT
             ObjectData.Create<FactionQuestData>("aqd", "aqd",       "_.CreateQuestWithFactionData");
 #endif
             ObjectData.Create("buildingID",         "gb",           "_.CreateGarrisonBuilding", "f", "spellID");
-            ObjectData.Create<ToyData>("isToy",     "toy",          "_.CreateToy", "f", "spellID", "modID");
-            ObjectData.Create<ToyData>("toyID",     "toy",          "_.CreateToy", "f", "spellID", "modID");
             ObjectData.Create<MountData>("mountID", "mnt",          "_.CreateMount", "f", "spellID", "modID");
             ObjectData.Create("headerID",           "h",            "_.CreateHeader", "f");
 #if ANYCLASSIC

@@ -12,47 +12,36 @@ _.Instances = { tier(LEGION_TIER, {
 				ach(10996, {	-- Got to Ketchum All
 					["description"] = "As soon as you jump into the hole at the start of the dungeon, follow the cliff's path near |cFFFFD700Spiritwalker Ebonhorn|r to a hidden grotto and buy a |cFFFFD700Ketchum Tablet|r from the |cFFFFD700Mushroom Merchant|r.",
 					["crs"] = { 111746	},	-- Mushroom Merchant
+					["provider"] = { "i", 140212 },	-- Ketchum Tablet
 					["g"] = {
-						{
-							["itemID"] = 140212,	-- Ketchum Tablet
-							["g"] = {
-								{
-									["criteriaID"] = 7,	-- Scaly's Imprint Collected
-									["provider"] = { "n", 113204 },	-- Scaly
-									["description"] = "After first boss Rokmora, before entering a barrel, use the macro: /tar Scaly and then apply a target icon to him. It sits on a Mushroom on the left river bank and while riding in the barrel, you need to throw the fish at it while riding the barrel to make it fall into the water and come along with you.",
-								},
-								{
-									["criteriaID"] = 1,	-- Sparky's imprint collected
-									["provider"] = { "n", 111882 },	-- Sparky
-									["description"] = "Dive right where the barrel ride ends and find a pathway to a somewhat hidden cave where the snail is located at.",
-								},
-								{
-									["criteriaID"] = 5,	-- Slinky's imprint collected
-									["provider"] = { "n", 111861 },	-- Slinky
-									["description"] = "Follow the long westward path before Ularogg Cragshaper to a cave. He is usually along the cave's back wall.",
-								},
-								{
-									["criteriaID"] = 2,	-- Turbax's imprint collected
-									["provider"] = { "n", 105742 },	-- Turbax
-									["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
-								},
-								{
-									["criteriaID"] = 3,	-- Whipsnap's imprint collected
-									["provider"] = { "n", 105743 },	-- Whipsnap
-									["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
-								},
-								{
-									["criteriaID"] = 4,	-- Blaze's imprint collected
-									["provider"] = { "n", 105744 },	-- Blaze
-									["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
-								},
-								{
-									["criteriaID"] = 6,	-- Sticky's imprint collected
-									["provider"] = { "n", 111864 },	-- Sticky
-									["description"] = "Directly after the previous 3 snails. Go into the water with the basalisks and go along the river to the back where there is a cave and more basalisks. Kill all of them and have some one use an ability on Sticky. He is up on top of the cave just chilling out. Once someone attacks him he falls down and you can smack him and claim your achievement.",
-								},
-							},
-						},
+						crit(1, {	-- Sparky's imprint collected
+							["provider"] = { "n", 111882 },	-- Sparky
+							["description"] = "Dive right where the barrel ride ends and find a pathway to a somewhat hidden cave where the snail is located at.",
+						}),
+						crit(2, {	-- Turbax's imprint collected
+							["provider"] = { "n", 105742 },	-- Turbax
+							["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
+						}),
+						crit(3, {	-- Whipsnap's imprint collected
+							["provider"] = { "n", 105743 },	-- Whipsnap
+							["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
+						}),
+						crit(4, {	-- Blaze's imprint collected
+							["provider"] = { "n", 105744 },	-- Blaze
+							["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
+						}),
+						crit(5, {	-- Slinky's imprint collected
+							["provider"] = { "n", 111861 },	-- Slinky
+							["description"] = "Follow the long westward path before Ularogg Cragshaper to a cave. He is usually along the cave's back wall.",
+						}),
+						crit(6, {	-- Sticky's imprint collected
+							["provider"] = { "n", 111864 },	-- Sticky
+							["description"] = "Directly after the previous 3 snails. Go into the water with the basalisks and go along the river to the back where there is a cave and more basalisks. Kill all of them and have some one use an ability on Sticky. He is up on top of the cave just chilling out. Once someone attacks him he falls down and you can smack him and claim your achievement.",
+						}),
+						crit(7, {	-- Scaly's Imprint Collected
+							["provider"] = { "n", 113204 },	-- Scaly
+							["description"] = "After first boss Rokmora, before entering a barrel, use the macro: /tar Scaly and then apply a target icon to him. It sits on a Mushroom on the left river bank and while riding in the barrel, you need to throw the fish at it while riding the barrel to make it fall into the water and come along with you.",
+						}),
 					},
 				}),
 			}),
@@ -66,6 +55,11 @@ _.Instances = { tier(LEGION_TIER, {
 						i(141009),	-- Earthguard Gloves
 						i(141010),	-- Earthguard Gauntlets
 					},
+				}),
+			}),
+			n(VENDORS, {
+				n(111746, {	-- Mushroom Merchant
+					i(140212),	-- Ketchum Tablet
 				}),
 			}),
 			n(WORLD_QUESTS, {
@@ -125,7 +119,7 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(91007, e(1687, {	-- Dargrul
 					ach(10795),	-- Neltharion's Lair
 					i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
-					i(137912),	-- Recipe: Battlebound Treads (Rank 3)
+					i(137912),	-- Pattern: Battlebound Treads (Rank 3)
 					i(134166),	-- Bitestone Boots
 					i(134495),	-- Chain of the Underking
 					i(137353),	-- Charskin Legguards
@@ -189,7 +183,7 @@ _.Instances = { tier(LEGION_TIER, {
 					cr(91007, e(1687, {	-- Dargrul
 						ach(10796),	-- Heroic: Neltharion's Lair
 						i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
-						i(137912),	-- Recipe: Battlebound Treads (Rank 3)
+						i(137912),	-- Pattern: Battlebound Treads (Rank 3)
 						i(137854),	-- Design: Intrepid Necklace of Prophecy (Rank 3)
 						i(137864),	-- Design: Shadowruby Band (Rank 2)
 						i(127928),	-- Recipe: Unbending Potion (Rank 2)
@@ -259,7 +253,7 @@ _.Instances = { tier(LEGION_TIER, {
 						ach(10797),	-- Mythic: Neltharion's Lair
 						ach(10859),	-- Mythic: Neltharion's Lair Guild Run
 						i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
-						i(137912),	-- Recipe: Battlebound Treads (Rank 3)
+						i(137912),	-- Pattern: Battlebound Treads (Rank 3)
 						i(137854),	-- Design: Intrepid Necklace of Prophecy (Rank 3)
 						i(137864),	-- Design: Shadowruby Band (Rank 2)
 						i(127928),	-- Recipe: Unbending Potion (Rank 2)

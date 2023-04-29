@@ -321,9 +321,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							ach(10858),	-- Mythic: Halls of Valor Guild Run
 							ach(10543),	-- Surge Protector
 							i(137857),	-- Design: Raging Furystone Gorget [Rank 3] (RECIPE!)
-							i(137911),	-- Recipe: Battlebound Grips [Rank 3] (RECIPE!)
+							i(137911),	-- Pattern: Battlebound Grips [Rank 3] (RECIPE!)
 							i(127933),	-- Recipe: Flask of Ten Thousand Scars [Rank 2] (RECIPE!)
-							i(137607),	-- Recipe: Leystone Helm [Rank 3] (RECIPE!)
+							i(137607),	-- Plans: Leystone Helm [Rank 3] (RECIPE!)
 							i(134192),	-- Biornskin Bracer
 							i(136776),	-- Bjorn's Hunting Strap
 							i(134217),	-- Bonespeaker Gloves

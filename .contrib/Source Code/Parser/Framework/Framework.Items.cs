@@ -40,11 +40,6 @@ namespace ATT
             private static IDictionary<long, long> MOUNTS = new ConcurrentDictionary<long, long>();
 
             /// <summary>
-            /// All of the items with species data that have been parsed sorted by Item ID.
-            /// </summary>
-            private static IDictionary<long, bool> TOYS = new ConcurrentDictionary<long, bool>();
-
-            /// <summary>
             /// All of the specific ItemIDs and each corresponding SourceID value
             /// </summary>
             private static IDictionary<decimal, long> SOURCES = new ConcurrentDictionary<decimal, long>();
@@ -130,17 +125,6 @@ namespace ATT
             }
 
             /// <summary>
-            /// All of the toys that are in the database.
-            /// </summary>
-            public static IDictionary<long, bool> AllToys
-            {
-                get
-                {
-                    return TOYS;
-                }
-            }
-
-            /// <summary>
             /// All Item SourceIDs that are in the database.
             /// </summary>
             public static IDictionary<decimal, long> AllItemSourceIDs => SOURCES;
@@ -218,17 +202,6 @@ namespace ATT
 
                 // Create a new item dictionary.
                 return ITEMS_WITH_SPECIES[itemID] = new Dictionary<string, object>();
-            }
-
-            /// <summary>
-            /// Set whether or not the item is a Toy.
-            /// </summary>
-            /// <param name="itemID">The Item ID.</param>
-            /// <param name="isToy">Whether the item is a toy or not.</param>
-            public static void SetIsToy(long itemID, bool isToy)
-            {
-                if (isToy) TOYS[itemID] = true;
-                else TOYS.Remove(itemID);
             }
 
             /// <summary>
@@ -463,14 +436,6 @@ namespace ATT
                             return;
                         }
 
-                    // Toy ID -> isToy Boolean Data Field
-                    // Toy IDs are just Item IDs.
-                    case "toyID":
-                        {
-                            item["isToy"] = true;
-                            break;
-                        }
-
                     // Boolean Data Type Fields
                     case "collectible":
                     case "equippable":
@@ -481,7 +446,6 @@ namespace ATT
                     case "isMonthly":
                     case "isYearly":
                     case "isWorldQuest":
-                    case "isToy":
                     case "ignoreBonus":
                     case "ignoreSource":
                     case "pvp":
@@ -801,7 +765,6 @@ namespace ATT
                     case "factionID":
                     case "achID":
                     case "requireSkill":
-                    case "isToy":
                     case "objectiveID":
                     case "f":
                     case "b":

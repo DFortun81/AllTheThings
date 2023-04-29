@@ -184,6 +184,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, 
 							i(168822),	-- Thin Jelly
 						},
 					}),
+					o(327516, {	-- Jelly Deposit
+						["description"] = "This is the initial Jelly Deposit you encounter when unlocking the reputation.",
+						["coord"] = { 63.2, 28.5, STORMSONG_VALLEY },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(169106),	-- Thin Jelly
+						},
+					}),
 					n(VENDORS, {
 						n(153393, {	-- Barry
 							["coord"] = { 69.2, 64.2, STORMSONG_VALLEY },

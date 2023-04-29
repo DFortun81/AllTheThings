@@ -10,50 +10,6 @@ _.ExpansionFeatures =
 			["icon"] = 656543,
 			["isRaid"] = true,
 			["lvl"] = 90,
-			["maps"] = {
-				391,	-- Shrine of Two Moons
-				392,	-- Shrine of Two Moons
-				393,	-- Shrine of Seven Stars
-				394,	-- Shrine of Seven Stars
-				THE_VEILED_STAIR,
-				471,	-- Mogu'shan Vaults
-				472,	-- Mogu'shan Vaults
-				473,	-- Mogu'shan Vaults
-				474,	-- Heart of Fear
-				475,	-- Heart of Fear
-				456,	-- Terrace of Endless Spring
-				-- Throne of Thunder
-				508,	-- Overgrown Statuary
-				509,	-- Royal Amphitheater
-				510,	-- Forgotten Depths
-				511,	-- Roost of Ji-Kun
-				512,	-- Halls of Flesh-Shaping
-				513,	-- Hall of Kings
-				514,	-- Pinnacle of Storms
-				515,	-- Hidden Cell
-				-- Siege of Orgrimmar
-				557,
-				558,
-				559,
-				560,
-				561,
-				562,
-				563,
-				564,
-				565,
-				566,
-				567,
-				568,
-				569,
-				570,
-				ISLE_OF_THUNDER,
-				KRASARANG_WILDS,
-				THE_JADE_FOREST,
-				TOWNLONG_STEPPES,
-				KUN_LAI_SUMMIT,
-				TIMELESS_ISLE,
-				VALE_OF_ETERNAL_BLOSSOMS,
-			},
 			["g"] = {
 				-- Part 1
 				q(31488, {	-- Stranger in a Strange Land
@@ -91,7 +47,7 @@ _.ExpansionFeatures =
 				q(31454, {	-- A Legend in the Making
 					["provider"] = { "n", 64616 },	-- Wrathion <The Black Prince>
 					["coord"] = { 54.6, 72.6, THE_VEILED_STAIR },
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						31488,	-- Stranger in a Strange Land
 						31489,	-- Stranger in a Strange Land
 					},

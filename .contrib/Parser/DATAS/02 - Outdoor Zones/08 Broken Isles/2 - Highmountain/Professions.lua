@@ -57,7 +57,7 @@ _.Zones =
 					}),
 				}),
 				prof(TAILORING, {
-					i(137681, {	-- Recipe: Bloodtotem Saddle Blanket
+					i(137681, {	-- Pattern: Bloodtotem Saddle Blanket
 						["description"] = "Can drop from any Feltotem.",
 					}),
 				}),

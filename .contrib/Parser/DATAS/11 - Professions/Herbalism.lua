@@ -1,11 +1,68 @@
 -- Herbalism - Skill ID 182 / Spell ID 2366
 profession(HERBALISM, {
 	-- #if BEFORE WOD
-	tier(CLASSIC_TIER, {
-		recipe(2383),	-- Find Herbs
+	recipe(2383),	-- Find Herbs
+	recipe(81708, {	-- Lifeblood (Rank 1) [CATA]
+		["timeline"] = { "added 4.0.1", "removed 6.0.2" },
+		["rank"] = 1,
 	}),
-	-- #endif
-	-- #if AFTER WOD
+	recipe(55428, {	-- Lifeblood (Rank 1) / Rank 2 [CATA]
+		["timeline"] = { "added 3.0.2", "removed 6.0.2" },
+		-- #if AFTER CATA
+		["rank"] = 2,
+		-- #else
+		["rank"] = 1,
+		-- #endif
+	}),
+	recipe(55480, {	-- Lifeblood (Rank 2) / Rank 3 [CATA]
+		["timeline"] = { "added 3.0.2", "removed 6.0.2" },
+		-- #if AFTER CATA
+		["rank"] = 3,
+		-- #else
+		["rank"] = 2,
+		-- #endif
+	}),
+	recipe(55500, {	-- Lifeblood (Rank 3) / Rank 4 [CATA]
+		["timeline"] = { "added 3.0.2", "removed 6.0.2" },
+		-- #if AFTER CATA
+		["rank"] = 4,
+		-- #else
+		["rank"] = 3,
+		-- #endif
+	}),
+	recipe(55501, {	-- Lifeblood (Rank 4) / Rank 5 [CATA]
+		["timeline"] = { "added 3.0.2", "removed 6.0.2" },
+		-- #if AFTER CATA
+		["rank"] = 5,
+		-- #else
+		["rank"] = 4,
+		-- #endif
+	}),
+	recipe(55502, {	-- Lifeblood (Rank 5) / Rank 6 [CATA]
+		["timeline"] = { "added 3.0.2", "removed 6.0.2" },
+		-- #if AFTER CATA
+		["rank"] = 6,
+		-- #else
+		["rank"] = 5,
+		-- #endif
+	}),
+	recipe(55503, {	-- Lifeblood (Rank 6) / Rank 7 [CATA]
+		["timeline"] = { "added 3.0.2", "removed 6.0.2" },
+		-- #if AFTER CATA
+		["rank"] = 7,
+		-- #else
+		["rank"] = 6,
+		-- #endif
+	}),
+	recipe(74497, {	-- Lifeblood (Rank 8) [CATA]
+		["timeline"] = { "added 4.0.1", "removed 6.0.2" },
+		["rank"] = 8,
+	}),
+	recipe(121279, {	-- Lifeblood (Rank 9) [MOP]
+		["timeline"] = { "added 5.0.4", "removed 6.0.2" },
+		["rank"] = 9,
+	}),
+	-- #else
 	tier(WOD_TIER, {
 		filter(BATTLE_PETS, {
 			i(118595),	-- Nightshade Sproutling

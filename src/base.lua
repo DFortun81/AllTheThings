@@ -66,7 +66,7 @@ local events = {};
 local _ = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 _:SetScript("OnEvent", function(self, e, ...)
 -- app.PrintDebug(e,...);
-(rawget(events, e) or print)(...);
+(events[e] or print)(...);
 -- app.PrintDebugPrior(e);
 end);
 _:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
@@ -74,7 +74,6 @@ _:SetSize(1, 1);
 _:Show();
 app._ = _;
 app.events = events;
-app.refreshDataForce = true;
 app.RegisterEvent = function(self, ...)
 	_:RegisterEvent(...);
 end
@@ -91,31 +90,6 @@ app.SetScript = function(self, ...)
 		_:SetScript(scriptName, nil);
 	end
 end
--- Setup the callback tables since they are heavily used
-app.__callbacks = {};
-app.__combatcallbacks = {};
--- Triggers a timer callback method to run on the next game frame with the provided params; the method can only be set to run once per frame
-local function Callback(method, ...)
-	if not app.__callbacks[method] then
-		app.__callbacks[method] = ... and {...} or true;
-		-- print("Callback:",method, ...)
-		local newCallback = function()
-			local args = app.__callbacks[method];
-			app.__callbacks[method] = nil;
-			-- callback with args/void
-			if args ~= true then
-				-- print("Callback/args Running",method, unpack(args))
-				method(unpack(args));
-			else
-				-- print("Callback/void Running",method)
-				method();
-			end
-			-- print("Callback Done",method)
-		end;
-		C_Timer.After(0, newCallback);
-	end
-end
-app.Callback = Callback;
 
 (function()
 local SetATTTooltip = function(self, text)

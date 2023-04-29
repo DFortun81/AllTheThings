@@ -14,6 +14,28 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_
 				i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
 				i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
 			})),
+			n(FLIGHT_PATHS, {
+				fp(2847, {	-- Maruukai, The Nokhud Offensive
+					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
+					["crs"] = { 199615 },	-- Salukan
+				}),
+				fp(2851, {	-- Ohn'iri Springs, The Nokhud Offensive
+					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
+					["crs"] = { 199617 },	-- Huraq
+				}),
+				fp(2850, {	-- Teerakai, The Nokhud Offensive
+					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
+					["crs"] = { 199618 },	-- Carseng
+				}),
+				fp(2849, {	-- The Battle of Spears, The Nokhud Offensive
+					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
+					["crs"] = { 199619 },	-- Baqir
+				}),
+				fp(2848, {	-- The Nokhud Approach, The Nokhud Offensive
+					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
+					["crs"] = { 199616 },	-- Washengtu
+				}),
+			}),
 			n(MYTHIC_PLUS, {
 				i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
 			}),

@@ -15,6 +15,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 		}),
 		i(191784),	-- Dragon Shard of Knowledge
 		i(198058),	-- Titan Training Matrix III
+
+		i(205423, {	-- Shadowflame Residue Sack
+			["timeline"] = { ADDED_10_1_0 },
+		}),
+		i(205682, {	-- Large Shadowflame Residue Sack
+			["timeline"] = { ADDED_10_1_0 },
+		}),
 		filter(CLOTH, {
 			i(191989),	-- Cobalt Watcher's Cord
 			i(191987),	-- Cobalt Watcher's Cowl

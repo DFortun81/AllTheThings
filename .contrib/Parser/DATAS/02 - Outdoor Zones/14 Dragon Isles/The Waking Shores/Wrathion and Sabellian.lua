@@ -354,10 +354,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
 						["repeatable"] = true,
 					}),
-					q(70212, {	-- Penumbrus
-						["provider"] = { "n", 189289 },	-- Penumbrus
-						["coord"] = { 24.5, 54.4, THE_WAKING_SHORES },
-					}),
 					q(70763, {	-- Worldcarver A'tir
 						["provider"] = { "n", 186859 },	-- Worldcarver A'tir
 						["coord"] = { 30.0, 55.4, THE_WAKING_SHORES },
@@ -425,24 +421,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					},
 				}),
 				n(187306, {	-- Morchok <Harbinger of Twilight>
-					["description"] = "Restore 20 Obsidian Keys to Igys the Believer.",
+					["description"] = "Restore 10 Obsidian Keys to Igys the Believer.",
 					["coord"] = { 32.2, 51.9, THE_WAKING_SHORES },
 					["questID"] = 74067,
 					["isDaily"] = true,
-					["cost"] = { { "i", 191264, 20 }, },	-- 20x Restored Obsidian Key
+					["cost"] = { { "i", 191264, 10 }, },	-- 10x Restored Obsidian Key
 					["g"] = {
 						i(200207),	-- Petrified Fungal Spores
 					},
 				}),
-				n(189289, {	-- Penumbrus
-					["description"] = "Underground",
-					["coord"] = { 24.4, 54.5, THE_WAKING_SHORES },
-					["questID"] = 74019,
-					["isDaily"] = true,
-					["g"] = {
-						i(200144),	-- Band of the Unscalable
-					},
-				}),
+				--	n(189289),	-- Penumbrus // under DF/Timed Based Rare
 				n(193232, {	-- Rasnar the War Ender
 					["coord"] = { 30.2, 60.4, THE_WAKING_SHORES },
 					["questID"] = 74051,
@@ -484,14 +472,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 					["coord"] = { 24.8, 60.5, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
-				o(389471, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Grand Obsidian Cache
-					["questID"] = 75047,
-					["coord"] = { 35.8, 48.0, THE_WAKING_SHORES },
-					["cost"] = { { "i", 204278, 1} },	-- 1x Neltharion's Toolkit
-					["g"] = {
-						i(202278),	-- Renewed Proto-Drake: Antlers (DM!)
-					},
-				})),
 			}),
 			n(VENDORS, {
 				n(193310, {	-- Dealer Vexil <Food and Drink>
@@ -709,7 +689,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LA
 								i(200961),	-- Sabellian's Cloak
 								i(200962),	-- Sabellian's Tunic
 							},
-							["questID"] = 72115,
 						}),
 						i(200640, {	-- Obsidian Egg Clutch (TOY!)
 							["cost"] = {
@@ -911,6 +890,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 			q(67168),	-- Triggered with completion of 67051 'Dragon Eyes' (alternate version???)
 			q(72378),	-- Triggered when refusing to activate the Wrathion and Sabellian skip for alts
 			q(72112),	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
+			q(72115),	-- Ensemble: Sabellian's Battlegear Cloth Armor
 		}),
 	}),
 })));

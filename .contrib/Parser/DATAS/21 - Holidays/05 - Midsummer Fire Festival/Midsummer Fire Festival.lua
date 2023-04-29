@@ -233,11 +233,11 @@ local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
 root(ROOTS.Holidays, applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -53,
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. MIDSUMMER_FIRE_FESTIVAL .. [[, 6, 21, 7, 5); end]],
 	-- #else
 	["holidayID"] = 235474,
 	-- #endif
 	["description"] = "Start: 06/21 at 10:00 AM\nEnd: 07/05 at 10:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. MIDSUMMER_FIRE_FESTIVAL .. [[, 6, 21, 7, 5); end]],
 	["groups"] = {
 		n(25740, {	-- Ahune
 			-- #if AFTER WRATH

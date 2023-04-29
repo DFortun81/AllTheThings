@@ -2715,7 +2715,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(3355, {	-- Saru Steelfury <Blacksmithing Trainer>
 						["coord"] = { 76.4, 34.4, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
-						["groups"] = CLASSIC_BLACKSMITHING,
+						["groups"] = appendGroups(CLASSIC_BLACKSMITHING,
+							-- #if AFTER CATA
+							CATA_BLACKSMITHING
+							-- #else
+							{}
+							-- #endif
+						),
 					}),
 				}),
 				prof(ENCHANTING, {
@@ -2769,7 +2775,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["timeline"] = { "added 2.3.0.7561" },
 					}),
 				}),
-				-- #if AFTER WRATH
+				-- #if NOT ANYCLASSIC
 				prof(INSCRIPTION, {
 					n(30706, {	-- Jo'mah <Inscription Trainer>
 						["coord"] = { 35.6, 69.2, ORGRIMMAR },
@@ -6303,9 +6309,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(52680, {	-- Neophyte's Pants
-							["timeline"] = { ADDED_10_0_5 }
-						}),
-						i(6098, {	-- Neophyte's Robe
 							["timeline"] = { ADDED_10_0_5 }
 						}),
 						i(6144, {	-- Neophyte's Robe

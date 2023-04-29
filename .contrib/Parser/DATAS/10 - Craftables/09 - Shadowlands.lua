@@ -28,91 +28,103 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 		}),
 	}),
 	prof(BLACKSMITHING, {
-		filter(DAGGERS, {
-			i(171390),	-- Ceremonious Blade
-			i(171385),	-- Ceremonious Shanker
+		spell(307705, {	-- Shadowghast Armguards [Rank 1]
+			r(332006),	-- Shadowghast Armguards [Rank 2]
+			r(332041),	-- Shadowghast Armguards [Rank 3]
+			r(338976),	-- Shadowghast Armguards [Rank 4]
 		}),
-		filter(ONE_HANDED_AXES, {
-			i(171388),	-- Ceremonious Axe
+		spell(307712, {	-- Shadowghast Breastplate [Rank 1]
+			r(332013),	-- Shadowghast Breastplate [Rank 2]
+			r(332048),	-- Shadowghast Breastplate [Rank 3]
+			r(338968),	-- Shadowghast Breastplate [Rank 4]
 		}),
-		filter(TWO_HANDED_AXES, {
-			i(171389),	-- Ceremonious Reaper
+		spell(307710, {	-- Shadowghast Gauntlets [Rank 1]
+			r(332011),	-- Shadowghast Gauntlets [Rank 2]
+			r(332046),	-- Shadowghast Gauntlets [Rank 3]
+			r(338970),	-- Shadowghast Gauntlets [Rank 4]
 		}),
-		filter(ONE_HANDED_MACES, {
-			i(171387),	-- Ceremonious Mace
+		spell(307708, {	-- Shadowghast Greaves [Rank 1]
+			r(332009),	-- Shadowghast Greaves [Rank 2]
+			r(332044),	-- Shadowghast Greaves [Rank 3]
+			r(338972),	-- Shadowghast Greaves [Rank 4]
 		}),
-		filter(TWO_HANDED_MACES, {
-			i(171384),	-- Ceremonious Smasher
+		spell(307709, {	-- Shadowghast Helm [Rank 1]
+			r(332010),	-- Shadowghast Helm [Rank 2]
+			r(332045),	-- Shadowghast Helm [Rank 3]
+			r(338971),	-- Shadowghast Helm [Rank 4]
 		}),
-		filter(ONE_HANDED_SWORDS, {
-			i(171382),	-- Ceremonious Rapier
+		spell(307707, {	-- Shadowghast Pauldrons [Rank 1]
+			r(332008),	-- Shadowghast Pauldrons [Rank 2]
+			r(332043),	-- Shadowghast Pauldrons [Rank 3]
+			r(338974),	-- Shadowghast Pauldrons [Rank 4]
 		}),
-		filter(TWO_HANDED_SWORDS, {
-			i(171383),	-- Ceremonious Claymore
+		spell(307711, {	-- Shadowghast Sabatons [Rank 1]
+			r(332012),	-- Shadowghast Sabatons [Rank 2]
+			r(332047),	-- Shadowghast Sabatons [Rank 3]
+			r(338969),	-- Shadowghast Sabatons [Rank 4]
 		}),
-		filter(POLEARMS, {
-			i(171386),	-- Ceremonious Spear
+		spell(307706, {	-- Shadowghast Waistguard [Rank 1]
+			r(332007),	-- Shadowghast Waistguard [Rank 2]
+			r(332042),	-- Shadowghast Waistguard [Rank 3]
+			r(338975),	-- Shadowghast Waistguard [Rank 4]
 		}),
-		filter(WARGLAIVES, {
-			i(171392),	-- Ceremonious Warglaive
-		}),
-		filter(SHIELDS, {
-			i(171391),	-- Ceremonious Shield
-		}),
-		n(HEAD, {
-			i(171415),	-- Shadowghast Helm
-			i(171445),	-- Shadowsteel Helm
-			i(171377),	-- Ceremonious Helm
-		}),
-		n(SHOULDER, {
-			i(171417),	-- Shadowghast Pauldrons
-			i(171447),	-- Shadowsteel Pauldrons
-			i(171379),	-- Ceremonious Pauldrons
-		}),
-		n(CHEST, {
-			i(171412),	-- Shadowghast Breastplate
-			i(171442),	-- Shadowsteel Breastplate
-			i(171374),	-- Ceremonious Breastplate
-		}),
-		n(HANDS, {
-			i(171414),	-- Shadowghast Gauntlets
-			i(171444),	-- Shadowsteel Gauntlets
-			i(171376),	-- Ceremonious Gauntlets
-		}),
-		n(WRIST, {
-			i(171419),	-- Shadowghast Armguards
-			i(171449),	-- Shadowsteel Armguards
+		n(ARMOR, {
 			i(171381),	-- Ceremonious Armguards
-		}),
-		n(WAIST, {
-			i(171418),	-- Shadowghast Waistguard
-			i(171448),	-- Shadowsteel Waistguard
-			i(171380),	-- Ceremonious Waistguard
-		}),
-		n(LEGS, {
-			i(171416),	-- Shadowghast Greaves
-			i(171446),	-- Shadowsteel Greaves
+			i(171374),	-- Ceremonious Breastplate
+			i(171376),	-- Ceremonious Gauntlets
 			i(171378),	-- Ceremonious Greaves
-		}),
-		n(FEET, {
-			i(171413),	-- Shadowghast Sabatons
-			i(171443),	-- Shadowsteel Sabatons
+			i(171377),	-- Ceremonious Helm
+			i(171379),	-- Ceremonious Pauldrons
 			i(171375),	-- Ceremonious Sabatons
+			i(171380),	-- Ceremonious Waistguard
+			i(171419),	-- Shadowghast Armguards
+			i(171412),	-- Shadowghast Breastplate
+			i(171414),	-- Shadowghast Gauntlets
+			i(171416),	-- Shadowghast Greaves
+			i(171415),	-- Shadowghast Helm
+			i(171417),	-- Shadowghast Pauldrons
+			i(171413),	-- Shadowghast Sabatons
+			i(171418),	-- Shadowghast Waistguard
+			i(171449),	-- Shadowsteel Armguards
+			i(171442),	-- Shadowsteel Breastplate
+			i(171444),	-- Shadowsteel Gauntlets
+			i(171446),	-- Shadowsteel Greaves
+			i(171445),	-- Shadowsteel Helm
+			i(171447),	-- Shadowsteel Pauldrons
+			i(171443),	-- Shadowsteel Sabatons
+			i(171448),	-- Shadowsteel Waistguard
 		}),
-		i(171441, {		-- Laestrite Skeleton Key
-			["collectible"] = false,	-- it's absorbing the spellID from the recipe and showing up as collected/uncollected based on that
-		}),
-		i(171436),		-- Porous Sharpening Stone
-		i(171437),		-- Shaded Sharpening Stone
-		i(171439),		-- Shaded Weightstone
-		i(185960),		-- Vestige of Origins
 		filter(MISC, {
+			i(173381),	-- Crafter's Mark I
 			i(173382),	-- Crafter's Mark II
 			i(173383),	-- Crafter's Mark III
-			i(187741),	-- Crafter's Mark IV
-			i(173384),	-- Crafter's Mark of the Chained Isle
-			i(187742),	-- Crafter's Mark of the First Ones
-			i(187784),	-- Vestige of the Eternal
+			i(187741, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark IV
+			i(173384, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark of the Chained Isle
+			i(187742, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
+			i(171441, {	-- Laestrite Skeleton Key
+				["spellID"] = 0,	-- it's absorbing the spellID from the recipe and showing up as collected/uncollected based on that
+			}),
+			i(183942),	-- Novice Crafter's Mark
+			i(171436),	-- Porous Sharpening Stone
+			i(171438),	-- Porous Weightstone
+			i(171437),	-- Shaded Sharpening Stone
+			i(171439),	-- Shaded Weightstone
+			i(171428),	-- Shadowghast Ingot
+			i(185960, {["timeline"] = {ADDED_9_1_0}}),	-- Vestige of Origins
+			i(187784, {["timeline"] = {ADDED_9_2_0}}),	-- Vestige of the Eternal
+		}),
+		n(WEAPONS, {
+			i(171388),	-- Ceremonious Axe
+			i(171390),	-- Ceremonious Blade
+			i(171383),	-- Ceremonious Claymore
+			i(171387),	-- Ceremonious Mace
+			i(171382),	-- Ceremonious Rapier
+			i(171389),	-- Ceremonious Reaper
+			i(171385),	-- Ceremonious Shanker
+			i(171391),	-- Ceremonious Shield
+			i(171384),	-- Ceremonious Smasher
+			i(171386),	-- Ceremonious Spear
+			i(171392),	-- Ceremonious Warglaive
 		}),
 	}),
 	prof(ENCHANTING, {

@@ -210,14 +210,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					193680,	-- Zurgaz Corebreaker
 				},
 				["g"] = {
+					i(194641),	-- Design: Elemental Lariat (RECIPE!)
 					i(200199),	-- Elements' Burden
 					i(200294),	-- Primal Chain Hauberk
 					i(200198),	-- Primalist Prison (TOY!)
 					-- Enchanting knowledge drops (one-time)
-					i(201356),	-- Glimmer of Fire
-					i(201357),	-- Glimmer of Frost
-					i(201358),	-- Glimmer of Air
-					i(201359),	-- Glimmer of Earth
 					i(199839),	-- Dimmed Primeval Water
 					i(199836),	-- Dimmed Primeval Fire
 					i(199837),	-- Dimmed Primeval Earth
@@ -257,6 +254,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						bo(69951, true),
 						i(200231),	-- Flaming Stonescale Bulwark
+						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
 					},
 				}),
 				n(193645, {	-- Crystalus
@@ -264,6 +262,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 73989,
 					["g"] = {
 						bo(69952, true),
+						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 						i(200301),	-- Reclaimed Tuskarr Harpoon
 					},
 				}),
@@ -272,6 +271,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 73991,
 					["g"] = {
 						bo(69955, true),
+						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
 						i(200307),	-- Viciously Hooked Cleaver
 					},
 				}),
@@ -281,6 +281,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						bo(69961, true),
 						i(200311),	-- Bonespike Mallet
+						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 					},
 				}),
 				n(193653, {	-- Gaelzion <Progeny of Air>
@@ -308,6 +309,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["coord"] = { 60.7, 56.3, THALDRASZUS },
 					["questID"] = 73998,
 					["g"] = {
+						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
+						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
 						bo(69960, true),
 					},
 				}),
@@ -316,6 +319,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 73999,
 					["g"] = {
 						bo(69956, true),
+						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
 						i(200145),	-- Hilted Monolith
 					},
 				}),
@@ -329,6 +333,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74009,
 					["g"] = {
 						bo(69971, true),
+						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 						i(200250),	-- Frost Tipped Glaive
 					},
 				}),
@@ -343,6 +348,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74005,
 					["g"] = {
 						bo(69954, true),
+						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
 						i(200150),	-- Infernum's Furnace
 					},
 				}),
@@ -351,6 +357,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74006,
 					["g"] = {
 						bo(69970, true),
+						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
 						i(200155),	-- Haphazardly Welded Protector
 					},
 				}),
@@ -360,6 +367,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						bo(69953, true),
 						i(199337),	-- Bag of Furious Winds (TOY!)
+						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
 						i(200170),	-- Stormbringer Bow
 					},
 				}),
@@ -369,6 +377,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						bo(69975, true),
 						i(200181),	-- Blade of Blazing Torment
+						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
 					},
 				}),
 				n(193684, {	-- Pipspark Thundersnap
@@ -377,6 +386,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						bo(69974, true),
 						i(199337),	-- Bag of Furious Winds (TOY!)
+						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
 						i(200741),	-- Pipspark's Prestigious Pendant of Protection
 					},
 				}),
@@ -385,6 +395,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74027,
 					["g"] = {
 						bo(69973, true),
+						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 					},
 				}),
 				n(201559,	-- Shiobhan Waterborn
@@ -402,6 +413,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["g"] = {
 						bo(69969, true),
 						i(199337),	-- Bag of Furious Winds (TOY!)
+						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
 						i(200136),	-- Monsoonic Armguards
 					},
 				}),
@@ -410,6 +422,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["questID"] = 74039,
 					["g"] = {
 						bo(69972, true),
+						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
 					},
 				}),
 			})),
@@ -418,6 +431,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = { "n", 196598 },	-- Rethelshi
 					["coord"] = { 38.2, 37, VALDRAKKEN },
 					["isWeekly"] = true,
+					["groups"] = {
+						currency(2122),	-- Storm Sigil
+					},
 				}),
 				q(71242, {	-- Supporting the Storm Researchers
 					["provider"] = {"i",200675},	-- Elemental Overflow Cluster
@@ -428,43 +444,218 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 					["provider"] = {"i",199749},	-- Primal Air Core
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["isWeekly"] = true,
+					["groups"] = {
+						currency(2122),	-- Storm Sigil
+					},
 				}),
 				q(70754, {	-- Extinguishing the Fire Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
 					["provider"] = {"i",199750},	-- Primal Fire Core
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["isWeekly"] = true,
+					["groups"] = {
+						currency(2122),	-- Storm Sigil
+					},
 				}),
 				q(70723, {	-- Shattering the Earth Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
 					["provider"] = {"i",199691},	-- Primal Earth Core
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["isWeekly"] = true,
+					["groups"] = {
+						currency(2122),	-- Storm Sigil
+					},
 				}),
 				q(70752, {	-- Vaporizing the Water Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
 					["provider"] = {"i",199748},	-- Primal Water Core
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["isWeekly"] = true,
+					["groups"] = {
+						currency(2122),	-- Storm Sigil
+					},
 				}),
 			}),
 			n(REWARDS, {
-				i(194641),	-- Design: Elemental Lariat (RECIPE!)
 				i(200183),	-- Echo of the Cave (PET!)
 				i(200260),	-- Echo of the Depths (PET!)
 				i(200263),	-- Echo of the Heights (PET!)
 				i(200255),	-- Echo of the Inferno (PET!)
 				i(200675),	-- Elemental Overflow Cluster
-				i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
-				i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
-				i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
-				i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
+				
+				-- Enchanting knowledge drops (one-time)
+				i(201356),	-- Glimmer of Fire
+				i(201357),	-- Glimmer of Frost
+				i(201358),	-- Glimmer of Air
+				i(201359),	-- Glimmer of Earth
+				
 				i(199749),	-- Primal Air Core
 				i(199691),	-- Primal Earth Core
 				i(199750),	-- Primal Fire Core
 				i(199748),	-- Primal Water Core
 				currency(2118),	-- Elemental Overflow
-				currency(2122),	-- Storm Sigil
+				-- #if after 10.0.7
+				i(204276),	-- Untapped Forbidden Knowledge
+				n(BACK, {
+					i(203646, {	-- Primalist Cloak
+						i(199450),	-- Cape of Raging Tempests
+						i(199451),	-- Cloak of Raging Tempests
+						i(199452),	-- Shroud of Raging Tempests
+						i(199449),	-- Wrap of Raging Tempests
+					}),
+				}),
+				filter(CLOTH, {
+					i(203635, {	-- Primalist Cloth Belt
+						i(199422),	-- Cord of Raging Tempests
+					}),
+					i(203641, {	-- Primalist Cloth Boots
+						i(199418),	-- Boots of Raging Tempests
+					}),
+					i(203632, {	-- Primalist Cloth Bracers
+						i(199423),	-- Cuffs of Raging Tempests
+					}),
+					i(203616, {	-- Primalist Cloth Chestpiece
+						i(199417),	-- Vestment of Raging Tempests
+					}),
+					i(203642, {	-- Primalist Cloth Gloves
+						i(199419),	-- Gloves of Raging Tempests
+					}),
+					i(203612, {	-- Primalist Cloth Helm
+						i(199420),	-- Hood of Raging Tempests
+					}),
+					i(203622, {	-- Primalist Cloth Leggings
+						i(199421),	-- Leggings of Raging Tempests
+					}),
+					i(203627, {	-- Primalist Cloth Spaulders
+						i(199424),	-- Shoulderpads of Raging Tempests
+					}),
+				}),
+				filter(LEATHER, {
+					i(203637, {	-- Primalist Leather Belt
+						i(199429),	-- Sash of Raging Tempests
+					}),
+					i(203638, {	-- Primalist Leather Boots
+						i(199425),	-- Waders of Raging Tempests
+					}),
+					i(203630, {	-- Primalist Leather Bracers
+						i(199430),	-- Bindings of Raging Tempests
+					}),
+					i(203618, {	-- Primalist Leather Chestpiece
+						i(199431),	-- Vest of Raging Tempests
+					}),
+					i(203645, {	-- Primalist Leather Gloves
+						i(199426),	-- Handguards of Raging Tempests
+					}),
+					i(203614, {	-- Primalist Leather Helm
+						i(199427),	-- Cowl of Raging Tempests
+					}),
+					i(203619, {	-- Primalist Leather Leggings
+						i(199428),	-- Breeches of Raging Tempests
+					}),
+					i(203629, {	-- Primalist Leather Spaulders
+						i(199432),	-- Epaulets of Raging Tempests
+					}),
+				}),
+				filter(MAIL, {
+					i(203636, {	-- Primalist Mail Belt
+						i(199447),	-- Cinch of Raging Tempests
+					}),
+					i(203639, {	-- Primalist Mail Boots
+						i(199442),	-- Striders of Raging Tempests
+					}),
+					i(203631, {	-- Primalist Mail Bracers
+						i(199448),	-- Bracers of Raging Tempests
+					}),
+					i(203617, {	-- Primalist Mail Chestpiece
+						i(199441),	-- Chestguard of Raging Tempests
+					}),
+					i(203644, {	-- Primalist Mail Gloves
+						i(199443),	-- Grips of Raging Tempests
+					}),
+					i(203613, {	-- Primalist Mail Helm
+						i(199444),	-- Coif of Raging Tempests
+					}),
+					i(203620, {	-- Primalist Mail Leggings
+						i(199445),	-- Greaves of Raging Tempests
+					}),
+					i(203628, {	-- Primalist Mail Spaulders
+						i(199446),	-- Shoulderguards of Raging Tempests
+					}),
+				}),
+				filter(PLATE, {
+					i(203634, {	-- Primalist Plate Belt
+						i(199439),	-- Girdle of Raging Tempests
+					}),
+					i(203640, {	-- Primalist Plate Boots
+						i(199435),	-- Sabatons of Raging Tempests
+					}),
+					i(203633, {	-- Primalist Plate Bracers
+						i(199440),	-- Armplates of Raging Tempests
+					}),
+					i(203615, {	-- Primalist Plate Chestpiece
+						i(199434),	-- Breastplate of Raging Tempests
+					}),
+					i(203643, {	-- Primalist Plate Gloves
+						i(199436),	-- Gauntlets of Raging Tempests
+					}),
+					i(203611, {	-- Primalist Plate Helm
+						i(199433),	-- Helm of Raging Tempests
+					}),
+					i(203623, {	-- Primalist Plate Leggings
+						i(199437),	-- Legguards of Raging Tempests
+					}),
+					i(203626, {	-- Primalist Plate Spaulders
+						i(199438),	-- Mantle of Raging Tempests
+					}),
+				}),
+				n(WEAPONS, {
+					i(203650, {	-- Primalist Weapon
+						i(199314),	-- Broadsword of Raging Tempests
+						i(199319),	-- Bulwark of Raging Tempests
+						i(199304),	-- Cleaver of Raging Tempests
+						i(199324),	-- Crusher of Raging Tempests
+						i(199318),	-- Cudgel of Raging Tempests
+						i(199309),	-- Dagger of Raging Tempests
+						i(199308),	-- Glaive of Raging Tempests
+						i(199315),	-- Greatsword of Raging Tempests
+						i(199306),	-- Hacker of Raging Tempests
+						i(199305),	-- Hatchet of Raging Tempests
+						i(199307),	-- Heartseeker of Raging Tempests
+						i(199311),	-- Horn of Raging Tempests
+						i(199320),	-- Impaler of Raging Tempests
+						i(199321),	-- Javelin of Raging Tempests
+						i(199325),	-- Mace of Raging Tempests
+						i(199323),	-- Mallet of Raging Tempests
+						i(199317),	-- Maul of Raging Tempests
+						i(199313),	-- Pole of Raging Tempests
+						i(199322),	-- Rod of Raging Tempests
+						i(199316),	-- Scepter of Raging Tempests
+						i(199310),	-- Shiv of Raging Tempests
+						i(199312),	-- Staff of Raging Tempests
+					}),
+				}),
+				filter(NECK_F, {
+					i(203648, {	-- Primalist Necklace
+						["sym"] = {{"select","itemID",
+							201962,	-- Heat of Primal Winter
+						}},
+					}),
+				}),
+				filter(FINGER_F, {
+					i(203647, {	-- Primalist Ring
+						["sym"] = {{"select","itemID",
+							201960,	-- Chronologically Unstable Loop
+						}},
+					}),
+				}),
+				filter(TRINKET_F, {
+					i(203649, {	-- Primalist Trinket
+						["sym"] = {{"select","itemID",
+							202015,	-- Sands of Temporal Perfection
+						}},
+					})
+				}),
+				-- #endif
 			}),
 			n(VENDORS, {
 				n(196516, {	-- Mythressa

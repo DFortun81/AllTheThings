@@ -717,7 +717,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
 			i(196990),	-- Cliffside Wylderdrake: Helm
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
-			i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail
 			i(196997),	-- Cliffside Wylderdrake: Split Horns
 			i(197014),	-- Cliffside Wylderdrake: White Scales
 		})),
@@ -846,7 +845,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(197357),	-- Renewed Proto-Drake: Armor
 			i(197348),	-- Renewed Proto-Drake: Black and Red Armor
 			i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor
-			i(197369),	-- Renewed Proto-Drake: Brown Hair
 			i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 			i(197371),	-- Renewed Proto-Drake: Green Hair
 			i(197356),	-- Renewed Proto-Drake: Hairy Back
@@ -924,6 +922,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		}),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
 			i(202278),	-- Renewed Proto-Drake: Antlers (DM!)
+			i(197369),	-- Renewed Proto-Drake: Brown Hair (DM!)
 			i(197358),	-- Renewed Proto-Drake: Curved Spiked Brow (DM!)
 			i(202279),	-- Renewed Proto-Drake: Malevolent Horns (DM!)
 			i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
@@ -956,6 +955,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 		pvp(i(205865)),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
+			i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail (DM!)
 		}),
 		header(HEADERS.Item, 194705, {	-- Highland Drake
 			i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
@@ -1005,7 +1005,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE
 			i(203363),	-- Winding Slitherdrake: Large Finned Throat
 			i(203347),	-- Winding Slitherdrake: Large Spiked Nose (DM!)
 			i(203301),	-- Winding Slitherdrake: Light Blue and Copper Armor
-			i(203309),	-- Winding Slitherdrake: Long Chin Horn
+			i(203309),	-- Winding Slitherdrake: Long Chin Horn (DM!)
 			i(203341),	-- Winding Slitherdrake: Long Jaw Horns (DM!)
 			i(203336),	-- Winding Slitherdrake: Paired Horns
 			i(203307),	-- Winding Slitherdrake: Plated Brow (DM!)

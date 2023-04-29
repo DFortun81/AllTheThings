@@ -497,7 +497,7 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "adde
 		})),
 		prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
 			n(QUESTS, {
-				q(32621, {	-- Lightning Steel
+				q(32621, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Lightning Steel
 					["provider"] = { "i", 94721 },	-- Strange Metal Ingot
 					["coord"] = { 57.6, 33.8, ISLE_OF_THUNDER },
 					["g"] = {
@@ -511,7 +511,7 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "adde
 							i(94567),	-- Plans: Thunder, Reborn (RECIPE!)
 						}),
 					},
-				}),
+				})),
 			}),
 		})),
 		prof(FIRST_AID, {

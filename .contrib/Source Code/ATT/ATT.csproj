@@ -57,7 +57,6 @@
     <Compile Include="Export\Object Data\SpellData.cs" />
     <Compile Include="Export\Object Data\QuestData.cs" />
     <Compile Include="Export\Object Data\MountData.cs" />
-    <Compile Include="Export\Object Data\ToyData.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="MiniJSON.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

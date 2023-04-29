@@ -51,11 +51,11 @@ local HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK = {	-- Smokywood Pastures Gift Pack
 root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -61,
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. FEAST_OF_WINTER_VEIL .. [[, 12, 16, 1, 2); end]],
 	-- #else
 	["holidayID"] = 235485,
 	-- #endif
 	["description"] = "Start: 12/16 at 10:00 AM\nEnd: 01/02 at 6:00 AM",
-	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. FEAST_OF_WINTER_VEIL .. [[, 12, 16, 1, 2); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			-- #if BEFORE MOP
@@ -608,7 +608,6 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 		n(COMMON_BOSS_DROPS, {
 			-- #if AFTER LEGION
 			i(139300, {	-- Finely-Tailored Green Holiday Hat
-				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 				["maps"] = {
 					909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920,	-- Antorus
 					751, 752, 753, 754, 755, 756,	-- Black Rook Hold
@@ -637,7 +636,6 @@ root(ROOTS.Holidays, applyholiday(FEAST_OF_WINTER_VEIL, {
 				},
 			}),
 			i(139299, {	-- Finely-Tailored Red Holiday Hat
-				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 				["maps"] = {
 					764, 765, 766, 767, 768, 769, 770, 771, 772,	-- Nighthold
 					761, 763,	-- Court of Stars

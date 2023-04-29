@@ -1,3 +1,4 @@
+-- #if ANYCLASSIC
 profession(BLACKSMITHING, {
 	prof(9787, {	-- Weaponsmith
 		["description"] = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",
@@ -421,20 +422,20 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 55184,
 					}),
 					-- #if BEFORE 7.1.5
-					applyclassicphase(TBC_PHASE_ONE, {					
-						["name"] = "Light Earthforged Blade", 
+					applyclassicphase(TBC_PHASE_ONE, {
+						["name"] = "Light Earthforged Blade",
 						["timeline"] = { "created 2.0.1.6180", "added 7.1.5" },
 						["recipeID"] = 36125,
 						["requireSkill"] = 9787,
 					}),
 					-- #endif
-					applyclassicphase(TBC_PHASE_ONE, {					
+					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Light Emberforged Hammer",
 						["timeline"] = { "removed 4.0.1.13287" },
 						["recipeID"] = 36128,
 						["requireSkill"] = 9787,
 					}),
-					applyclassicphase(TBC_PHASE_ONE, {					
+					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Light Skyforged Axe",
 						["timeline"] = { "removed 4.0.1.13287" },
 						["recipeID"] = 36126,
@@ -473,3 +474,4 @@ profession(BLACKSMITHING, {
 		},
 	}),
 });
+-- #endif

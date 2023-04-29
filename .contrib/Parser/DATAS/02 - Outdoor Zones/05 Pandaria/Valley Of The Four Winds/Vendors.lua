@@ -3362,7 +3362,6 @@ _.Zones =
 							["cost"] = { { "c", 402, 40 }, },	-- 40x Ironpaw Token
 						}),
 						i(86559, {	-- Frying Pan
-							["description"] = "In order to mark this item as collected you will need to shift+click the ATT header.",
 							["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
 						}),
 						i(92748, {	-- Portable Refrigerator
@@ -3375,7 +3374,6 @@ _.Zones =
 							["cost"] = { { "c", 402, MONK }, },	-- 10x Ironpaw Token
 						}),
 						i(86558, {	-- Rolling Pin
-							["description"] = "In order to mark this item as collected you will need to shift+click the ATT header.",
 							["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
 						}),
 					},

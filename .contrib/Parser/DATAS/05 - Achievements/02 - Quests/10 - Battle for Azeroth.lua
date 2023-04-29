@@ -239,9 +239,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		})),
 		h(ach(13263)),	-- The Shadow Hunter
 		ach(13046),		-- These Hills Sing
-		h(ach(13037, {	-- Torcanata
-			["u"] = NEVER_IMPLEMENTED,
-		})),
 		ach(13517, {	-- Two Sides To Every Tale
 			h(i(168055)),	-- Bloodflank Charger (MOUNT!)
 			a(i(168056)),	-- Ironclad Frostclaw (MOUNT!)

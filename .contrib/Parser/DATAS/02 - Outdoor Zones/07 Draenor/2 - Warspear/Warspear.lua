@@ -11,14 +11,17 @@ _.Zones =
 			["races"] = HORDE_ONLY,
 			["lvl"] = 100,
 			["g"] = {
-				follower(467, {	-- Fen Tao
-					["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
-					["creatureID"] = 91483,	-- Fen Tao
-					["coord"] = { 46.9, 45.2, WARSPEAR },
-				}),
 				n(FLIGHT_PATHS, {
 					fp(1408, {	-- Warspear, Ashran
 						["coord"] = { 44.2, 33.9, WARSPEAR },
+						["races"] = HORDE_ONLY,
+					}),
+				}),
+				n(FOLLOWERS, {
+					follower(467, {	-- Fen Tao
+						["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
+						["creatureID"] = 91483,	-- Fen Tao
+						["coord"] = { 46.9, 45.2, WARSPEAR },
 					}),
 				}),
 				n(QUESTS, {
@@ -2787,93 +2790,93 @@ _.Zones =
 						n(87542, {	-- Garm Gladestride <Leatherworking Patterns>
 							["coord"] = { 50.4, 27.4, WARSPEAR },
 							["g"] = {
-								i(116328, {	-- Recipe: Brilliant Burnished Cloak
+								i(116328, {	-- Pattern: Brilliant Burnished Cloak
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116345, {	-- Recipe: Burnished Essence
+								i(116345, {	-- Pattern: Burnished Essence
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 									["timeline"] = { REMOVED_10_0_5 },
 								}),
-								i(116349, {	-- Recipe: Burnished Inscription Bag
+								i(116349, {	-- Pattern: Burnished Inscription Bag
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 								}),
-								i(116347, {	-- Recipe: Burnished Leather Bag
+								i(116347, {	-- Pattern: Burnished Leather Bag
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 								}),
-								i(116348, {	-- Recipe: Burnished Mining Bag
+								i(116348, {	-- Pattern: Burnished Mining Bag
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 								}),
 								i(120258, {	-- Recipe: Drums of Fury
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(202232, {	-- Recipe: Impressive Burnished Essence
+								i(202232, {	-- Pattern: Impressive Burnished Essence
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 									["timeline"] = { ADDED_10_0_5 },
 								}),
-								i(116325, {	-- Recipe: Leather Refurbishing Kit
+								i(116325, {	-- Pattern: Leather Refurbishing Kit
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116327, {	-- Recipe: Nimble Burnished Cloak
+								i(116327, {	-- Pattern: Nimble Burnished Cloak
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116326, {	-- Recipe: Powerful Burnished Cloak
+								i(116326, {	-- Pattern: Powerful Burnished Cloak
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
 								i(202233, {	-- Recipe: Remarkable Burnished Essence
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 									["timeline"] = { ADDED_10_0_5 },
 								}),
-								i(116350, {	-- Recipe: Riding Harness
+								i(116350, {	-- Pattern: Riding Harness
 									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 								}),
-								i(116335, {	-- Recipe: Supple Boots
+								i(116335, {	-- Pattern: Supple Boots
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116334, {	-- Recipe: Supple Bracers
+								i(116334, {	-- Pattern: Supple Bracers
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116332, {	-- Recipe: Supple Gloves
+								i(116332, {	-- Pattern: Supple Gloves
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116330, {	-- Recipe: Supple Helm
+								i(116330, {	-- Pattern: Supple Helm
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116331, {	-- Recipe: Supple Leggings
+								i(116331, {	-- Pattern: Supple Leggings
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116329, {	-- Recipe: Supple Shoulderguards
+								i(116329, {	-- Pattern: Supple Shoulderguards
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116333, {	-- Recipe: Supple Vest
+								i(116333, {	-- Pattern: Supple Vest
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116336, {	-- Recipe: Supple Waistguard
+								i(116336, {	-- Pattern: Supple Waistguard
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116344, {	-- Recipe: Wayfaring Belt
+								i(116344, {	-- Pattern: Wayfaring Belt
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116343, {	-- Recipe: Wayfaring Boots
+								i(116343, {	-- Pattern: Wayfaring Boots
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116342, {	-- Recipe: Wayfaring Bracers
+								i(116342, {	-- Pattern: Wayfaring Bracers
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116340, {	-- Recipe: Wayfaring Gloves
+								i(116340, {	-- Pattern: Wayfaring Gloves
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116338, {	-- Recipe: Wayfaring Helm
+								i(116338, {	-- Pattern: Wayfaring Helm
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116339, {	-- Recipe: Wayfaring Leggings
+								i(116339, {	-- Pattern: Wayfaring Leggings
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116337, {	-- Recipe: Wayfaring Shoulderguards
+								i(116337, {	-- Pattern: Wayfaring Shoulderguards
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
-								i(116341, {	-- Recipe: Wayfaring Tunic
+								i(116341, {	-- Pattern: Wayfaring Tunic
 									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 								}),
 								i(116376, {	-- Small Pouch of Coins
@@ -2943,79 +2946,79 @@ _.Zones =
 									["filterID"] = MISC,
 									["g"] = {
 										i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
-											i(116087),	-- Recipe: Glowing Blackrock Band
-											i(116081),	-- Recipe: Glowing Iron Band
-											i(116084),	-- Recipe: Glowing Iron Choker
-											i(116088),	-- Recipe: Shifting Blackrock Band
-											i(116082),	-- Recipe: Shifting Iron Band
-											i(116085),	-- Recipe: Shifting Iron Choker
-											i(116089),	-- Recipe: Whispering Blackrock Band
-											i(116083),	-- Recipe: Whispering Iron Band
-											i(116086),	-- Recipe: Whispering Iron Choker
+											i(116087),	-- Design: Glowing Blackrock Band
+											i(116081),	-- Design: Glowing Iron Band
+											i(116084),	-- Design: Glowing Iron Choker
+											i(116088),	-- Design: Shifting Blackrock Band
+											i(116082),	-- Design: Shifting Iron Band
+											i(116085),	-- Design: Shifting Iron Choker
+											i(116089),	-- Design: Whispering Blackrock Band
+											i(116083),	-- Design: Whispering Iron Band
+											i(116086),	-- Design: Whispering Iron Choker
 											recipe(170700),	-- Taladite Crystal
 										}),
 									},
 								}),
-								i(116096, {	-- Recipe: Critical Strike Taladite
+								i(116096, {	-- Design: Critical Strike Taladite
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116093, {	-- Recipe: Glowing Taladite Pendant
+								i(116093, {	-- Design: Glowing Taladite Pendant
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116090, {	-- Recipe: Glowing Taladite Ring
+								i(116090, {	-- Design: Glowing Taladite Ring
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116102, {	-- Recipe: Greater Critical Strike Taladite
+								i(116102, {	-- Design: Greater Critical Strike Taladite
 									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 								}),
-								i(116103, {	-- Recipe: Greater Haste Taladite
+								i(116103, {	-- Design: Greater Haste Taladite
 									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 								}),
-								i(116104, {	-- Recipe: Greater Mastery Taladite
+								i(116104, {	-- Design: Greater Mastery Taladite
 									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 								}),
-								i(116107, {	-- Recipe: Greater Stamina Taladite
+								i(116107, {	-- Design: Greater Stamina Taladite
 									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 								}),
-								i(116106, {	-- Recipe: Greater Versatility Taladite
+								i(116106, {	-- Design: Greater Versatility Taladite
 									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 								}),
-								i(116097, {	-- Recipe: Haste Taladite
+								i(116097, {	-- Design: Haste Taladite
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116098, {	-- Recipe: Mastery Taladite
+								i(116098, {	-- Design: Mastery Taladite
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116109, {	-- Recipe: Prismatic Focusing Lens
+								i(116109, {	-- Design: Prismatic Focusing Lens
 									["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
 								}),
-								i(116108, {	-- Recipe: Reflecting Prism
+								i(116108, {	-- Design: Reflecting Prism
 									["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
 								}),
-								i(116094, {	-- Recipe: Shifting Taladite Pendant
+								i(116094, {	-- Design: Shifting Taladite Pendant
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116091, {	-- Recipe: Shifting Taladite Ring
+								i(116091, {	-- Design: Shifting Taladite Ring
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116101, {	-- Recipe: Stamina Taladite
+								i(116101, {	-- Design: Stamina Taladite
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116079, {	-- Recipe: Taladite Amplifier
+								i(116079, {	-- Design: Taladite Amplifier
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 								}),
-								i(116078, {	-- Recipe: Taladite Recrystalizer
+								i(116078, {	-- Design: Taladite Recrystalizer
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116100, {	-- Recipe: Versatility Taladite
+								i(116100, {	-- Design: Versatility Taladite
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116095, {	-- Recipe: Whispering Taladite Pendant
+								i(116095, {	-- Design: Whispering Taladite Pendant
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
-								i(116092, {	-- Recipe: Whispering Taladite Ring
+								i(116092, {	-- Design: Whispering Taladite Ring
 									["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 								}),
 							},
@@ -3951,7 +3954,7 @@ _.Zones =
 									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
 									["timeline"] = { ADDED_10_0_5 },
 								}),
-								i(114871, {	-- Recipe: Hexweave Essence
+								i(114871, {	-- Pattern: Hexweave Essence
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring

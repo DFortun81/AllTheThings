@@ -31,6 +31,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 			q(57650),	-- Better Off Dead
 			q(61606, {	-- Blacksmithing: Soul Razor
 				["requireSkill"] = BLACKSMITHING,
+				["g"] = {
+					r(338090,{["u"]=15}),	-- Hardened Heavy Razor
+					r(338091,{["u"]=15}),	-- Soft Heavy Razor
+					r(338088,{["u"]=15}),	-- Soul Razor
+					i(182088),	-- Borrowed Oxxein Ore
+					i(182086),	-- Hardened Heavy Razor
+					i(182087),	-- Soft Heavy Razor
+					i(181862),	-- Soul Razor
+
+				},
 			}),
 			q(58207),	-- Buggin' Out
 			q(61477),	-- Calling the Champions

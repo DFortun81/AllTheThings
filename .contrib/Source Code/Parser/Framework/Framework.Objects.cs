@@ -192,7 +192,7 @@ namespace ATT
                     case 18: return Filters.Bag;
                     case 19: return Filters.Tabard;
                     case 22: return Filters.HeldInOffHand;
-                    case 23: return Filters.HeldInOffHand;
+                    //case 23: return Filters.HeldInOffHand;    // causes un-bindable Fish to include a SourceID
                     case 29: return Filters.ProfessionEquipment;
                     case 30: return Filters.ProfessionEquipment;
                     default: break;
@@ -252,7 +252,11 @@ namespace ATT
                             case 11:                // 11/12/13 (Bear / Cat Claw) - These do not exist?
                             case 12:                // Gonna just classify as Fist Weapon.
                             case 13: return Filters.FistWeapon;
+#if RETAIL
+                            case 14: return Filters.Cosmetic;           // Many equippable white items with no restriction post 10.0.5... are they all learnable?
+#else
                             case 14: return Filters.Miscellaneous;      // Miscellaneous (not seeing anything in this filter?)
+#endif
                             case 15: return Filters.Dagger;
                             case 16: return Filters.Thrown;            // Thrown
                             case 17: return Filters.Polearm;            // Spear (not seeing anything in this filter, so converting to Polearm instead?)
@@ -287,7 +291,7 @@ namespace ATT
                                     case 09: return Filters.Cosmetic;           // Wrist (no armor type specified - Cosmetic?)
                                     case 10: return Filters.Cosmetic;           // Gloves (no armor type specified - Cosmetic?)
                                     case 20: return Filters.Cosmetic;           // Chest (no armor type specified - Cosmetic?)
-                                                                                //case 23: return Filters.HeldInOffHand;      // Held in Offhand
+                                    case 23: return Filters.HeldInOffHand;      // Held in Offhand
                                     default: return Filters.Invalid;
                                 }
                             case 01: return Filters.Cloth;
@@ -523,8 +527,10 @@ namespace ATT
                 if (!typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
                     typeObjects[keyValue] = mergeObjects = new List<Dictionary<string, object>>();
 
-                //LogDebug($"Post Process Merge Added: {key}:{keyValue} <= {MiniJSON.Json.Serialize(data)}");
-                mergeObjects.Add(data);
+                //LogDebug($"Post Process Merge Added: {key}:{keyValue}", data);
+                // Processing on group shappens IN REVERSE so if we are adding content to be post-merged during that pass
+                // we will order them backwards as well so that when they are merged into the respective groups they are ordered as originally Sourced
+                mergeObjects.Insert(0, data);
             }
 
             /// <summary>
@@ -546,6 +552,12 @@ namespace ATT
                         // does this data contain the key?
                         if (data.TryGetValue(key, out decimal keyValue))
                         {
+                            // for 'factionID' merge into, make sure it does not also have 'itemID' (commendations etc.)
+                            if (key == "factionID" && data.ContainsKey("itemID"))
+                            {
+                                continue;
+                            }
+
                             var typeObjects = mergeKvp.Value;
                             //LogDebug($"Post Process MergeInto Matched: {key}:{keyValue}");
                             // get the container for objects of this key
@@ -611,7 +623,6 @@ namespace ATT
                 // The presence of certain fields make calculating the Filter ID very easy.
                 if (data.ContainsKey("mountID")) return Filters.Mount;
                 if (data.ContainsKey("speciesID")) return Filters.BattlePet;
-                if (data.ContainsKey("isToy")) return Filters.Toy;
                 if (data.ContainsKey("illusionID")) return Filters.Illusion;
                 if (data.ContainsKey("professionID")) return Filters.Recipe;
                 if (data.ContainsKey("questID")) return Filters.Quest;
@@ -1216,17 +1227,13 @@ namespace ATT
                 locale.AppendLine("--   WARNING: This file is dynamically generated   --");
                 locale.AppendLine("local _, app = ...;");
                 locale.Append("local keys = ");
-                locale.AppendLine(ATT.Export.ExportRawLua(AllLocaleTypes).ToString());
+                ATT.Export.AddTableNewLines = true;
+                locale.AppendLine(ATT.Export.ExportCompressedLua(AllLocaleTypes).ToString());
                 locale.AppendLine(@"
-local L;
+local L = app.L;
 for k,t in pairs(keys) do
-    L = app.L[k] or {};
-    for id,name in pairs(t) do
-        L[tonumber(id)] = name;
-    end
-    app.L[k] = L;
-end
-");
+    L[k] = t;
+end");
 
                 string content = locale.ToString();
                 if (!File.Exists(filename) || File.ReadAllText(filename) != content) File.WriteAllText(filename, content);
@@ -1248,9 +1255,10 @@ end
 
                 StringBuilder data = new StringBuilder(10000);
                 data.AppendLine("--   WARNING: This file is dynamically generated   --");
-                data.AppendLine("root(\"Items.SOURCES\",");
+                data.Append("root(\"Items.SOURCES\",");
+                ATT.Export.AddTableNewLines = true;
                 data.AppendLine(ATT.Export.ExportCompressedLua(Items.AllItemSourceIDs).ToString());
-                data.AppendLine(");");
+                data.Append(");");
 
                 string content = data.ToString();
                 if (!File.Exists(filename) || File.ReadAllText(filename) != content) File.WriteAllText(filename, content);
@@ -1679,7 +1687,7 @@ end
                             }
                             else
                             {
-                                Log($"Weird 'g' value?? {Environment.NewLine}{ToJSON(value)}");
+                                Log($"Weird 'g' value??", value);
                                 Console.ReadLine();
                             }
                             break;
@@ -1702,7 +1710,6 @@ end
                     case "isWQ":
                     case "isRaid":
                     case "isLockoutShared":
-                    case "isToy":
                     case "ignoreBonus":
                     case "ignoreSource":
                     case "hideText":
@@ -1745,13 +1752,33 @@ end
                             break;
                         }
 
+                    // Decimal Data Type Fields (requires higher precision than float)
+                    case "headerID":
+                        {
+                            if (value.TryConvert(out decimal vDecimal))
+                            {
+                                item[field] = vDecimal;
+                            }
+                            else
+                            {
+                                LogError($"Invalid Numeric Format for Merge - {field}:{value}");
+                            }
+                            break;
+                        }
+
                     // Float Data Type Fields (field conversions)
                     //case "dr":
                     case "modelRotation":
                     case "modelScale":
-                    case "headerID":
                         {
-                            item[field] = Convert.ToSingle(value);
+                            if (value.TryConvert(out float vFloat))
+                            {
+                                item[field] = vFloat;
+                            }
+                            else
+                            {
+                                LogError($"Invalid Numeric Format for Merge - {field}:{value}");
+                            }
                             break;
                         }
 
@@ -1974,7 +2001,17 @@ end
                             var newcoord = new List<object>();
                             try
                             {
-                                foreach (var entry in newList) newcoord.Add(Convert.ToSingle(entry));
+                                foreach (var entry in newList)
+                                {
+                                    if (entry.TryConvert(out float eFloat))
+                                    {
+                                        newcoord.Add(eFloat);
+                                    }
+                                    else
+                                    {
+                                        LogError($"Invalid Numeric Format for Merge - {field}:{entry}");
+                                    }
+                                }
                             }
                             catch
                             {
@@ -2473,85 +2510,7 @@ end
                     MergeInto(data2);
                 }
 
-                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out decimal id))
-                {
-                    // If there is no most significant ID field, then complain.
-                    LogError($"No Most Significant ID!", data2);
-                }
-                else
-                {
-                    // Cache the ID of the data we're merging into the container.
-                    string mostSignificantID = objectData.ObjectType;
-                    // special case for now... toys don't merge correctly via the mostSignificantID because it's a boolean
-                    if (objectData.ConstructorShortcut == "toy")
-                        mostSignificantID = "itemID";
-
-                    // Iterate through the list and search for an entry that matches the data
-                    if (mostSignificantID == "itemID")
-                    {
-                        // For Items, also keep track of the Bonus IDs to allow more than one per list.
-                        if (data2.TryGetValue("rank", out object fieldRef) && fieldRef.TryConvert(out decimal rank))
-                        {
-                            // The data we're merging has a Rank. (we only want to merge them if they're the same!)
-                            entry = container.FindObject(mostSignificantID, id, "rank", rank);
-                        }
-                        else if (data2.TryGetValue("bonusID", out fieldRef) && fieldRef.TryConvert(out decimal bonusID))
-                        {
-                            // The data we're merging has a Bonus ID. (we only want to merge them if they're the same!)
-                            entry = container.FindObject(mostSignificantID, id, "bonusID", bonusID);
-                        }
-                        else if (data2.TryGetValue("modID", out fieldRef) && fieldRef.TryConvert(out decimal modID))
-                        {
-                            // The data we're merging has a Mod ID. (we only want to merge them if they're the same!)
-                            entry = container.FindObject(mostSignificantID, id, "modID", modID);
-                        }
-                        else
-                        {
-                            // The item does not have a Bonus ID or a Mod ID, so we can simply merge by id
-                            entry = container.FindObject(mostSignificantID, id);
-                        }
-                    }
-                    else if (mostSignificantID == "criteriaID")
-                    {
-                        // For criteria, also keep track of the Item IDs to allow more than one per list.
-                        if (data2.TryGetValue("itemID", out object fieldRef) && fieldRef.TryConvert(out decimal itemID))
-                        {
-                            // The data we're merging has a Item ID. (we only want to merge them if they're the same!)
-                            entry = container.FindObject(mostSignificantID, id, "itemID", itemID);
-                        }
-                        else if (data2.TryGetValue("achID", out fieldRef) && fieldRef.TryConvert(out decimal achID))
-                        {
-                            // The data we're merging has a Achievement ID. (we only want to merge them if they're the same!)
-                            entry = container.FindObject(mostSignificantID, id, "achID", achID);
-                        }
-                    }
-                    else if (mostSignificantID == "objectiveID")
-                    {
-                        if (data2.TryGetValue("questID", out object fieldRef) && fieldRef.TryConvert(out decimal objQuestID))
-                        {
-                            // The data we're merging has a Quest ID. (we only want to merge them if they're the same!)
-                            entry = container.FindObject(mostSignificantID, id, "questID", objQuestID);
-                        }
-                    }
-                    else if (mostSignificantID == "azeriteEssenceID" || mostSignificantID == "spellID")
-                    {
-                        // For Essences, also keep track of the ranks to allow more than one per list.
-                        if (data2.TryGetValue("rank", out object fieldRef) && fieldRef.TryConvert(out decimal rank))
-                        {
-                            // The data we're merging has a Rank. (we only want to merge them if they're the same!)
-                            entry = container.FindObject(mostSignificantID, id, "rank", rank);
-                        }
-                        else
-                        {
-                            entry = container.FindObject(mostSignificantID, id);
-                        }
-                    }
-                    else
-                    {
-                        entry = container.FindObject(mostSignificantID, id);
-                    }
-                }
+                entry = FindMatchingData(container, data2);
 
                 // If no object matched the data, then we need to create a new entry.
                 if (entry == null)
@@ -2626,6 +2585,84 @@ end
                 //    PreMerge(entry, npc);
                 //    Merge(entry, npc);
                 //}
+            }
+
+            /// <summary>
+            /// Attempts to find a matching 'data' object in the container based on the data that needs to merge
+            /// </summary>
+            private static Dictionary<string, object> FindMatchingData(List<object> container, Dictionary<string, object> data2)
+            {
+                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
+                if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out object keyObject))
+                {
+                    // If there is no most significant ID field, then complain.
+                    if (!data2.ContainsKey("aqd")) LogError($"No Most Significant ID!", data2);
+
+                    return null;
+                }
+
+                // Cache the ID of the data we're merging into the container.
+                string mostSignificantID = objectData.ObjectType;
+
+                if (!keyObject.TryConvert(out decimal id))
+                {
+                    // try our best to find a matching 'object' to merge with this 'object' since it isn't an actual ID value
+                    return container.FindObject(mostSignificantID, keyObject);
+                }
+
+                // Iterate through the list and search for an entry that matches the data
+                if (mostSignificantID == "itemID")
+                {
+                    // For Items, also keep track of the Bonus IDs to allow more than one per list.
+                    if (data2.TryGetValue("rank", out object fieldRef) && fieldRef.TryConvert(out decimal rank))
+                    {
+                        // The data we're merging has a Rank. (we only want to merge them if they're the same!)
+                        return container.FindObject(mostSignificantID, id, "rank", rank);
+                    }
+                    else if (data2.TryGetValue("bonusID", out fieldRef) && fieldRef.TryConvert(out decimal bonusID))
+                    {
+                        // The data we're merging has a Bonus ID. (we only want to merge them if they're the same!)
+                        return container.FindObject(mostSignificantID, id, "bonusID", bonusID);
+                    }
+                    else if (data2.TryGetValue("modID", out fieldRef) && fieldRef.TryConvert(out decimal modID))
+                    {
+                        // The data we're merging has a Mod ID. (we only want to merge them if they're the same!)
+                        return container.FindObject(mostSignificantID, id, "modID", modID);
+                    }
+                }
+                else if (mostSignificantID == "criteriaID")
+                {
+                    // For criteria, also keep track of the Item IDs to allow more than one per list.
+                    if (data2.TryGetValue("itemID", out object fieldRef) && fieldRef.TryConvert(out decimal itemID))
+                    {
+                        // The data we're merging has a Item ID. (we only want to merge them if they're the same!)
+                        return container.FindObject(mostSignificantID, id, "itemID", itemID);
+                    }
+                    else if (data2.TryGetValue("achID", out fieldRef) && fieldRef.TryConvert(out decimal achID))
+                    {
+                        // The data we're merging has a Achievement ID. (we only want to merge them if they're the same!)
+                        return container.FindObject(mostSignificantID, id, "achID", achID);
+                    }
+                }
+                else if (mostSignificantID == "objectiveID")
+                {
+                    if (data2.TryGetValue("questID", out object fieldRef) && fieldRef.TryConvert(out decimal objQuestID))
+                    {
+                        // The data we're merging has a Quest ID. (we only want to merge them if they're the same!)
+                        return container.FindObject(mostSignificantID, id, "questID", objQuestID);
+                    }
+                }
+                else if (mostSignificantID == "azeriteEssenceID" || mostSignificantID == "spellID")
+                {
+                    // For Essences, also keep track of the ranks to allow more than one per list.
+                    if (data2.TryGetValue("rank", out object fieldRef) && fieldRef.TryConvert(out decimal rank))
+                    {
+                        // The data we're merging has a Rank. (we only want to merge them if they're the same!)
+                        return container.FindObject(mostSignificantID, id, "rank", rank);
+                    }
+                }
+
+                return container.FindObject(mostSignificantID, id);
             }
 
             /// <summary>

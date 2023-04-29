@@ -836,7 +836,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(3908, {	-- It's a Secret to Everybody (3/3)
 					["providers"] = {
-						{ "i", 8737 },	-- Linken
+						{ "n", 8737 },	-- Linken
 						{ "i", 11133 },	-- Linken's Training Sword
 					},
 					["sourceQuest"] = 3845,	-- It's a Secret to Everybody (2/3)

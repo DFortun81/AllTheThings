@@ -1270,7 +1270,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14360, {	-- Nothing a Couple of Melons Won't Fix (H)
-					["provider"] = { "0", 195433 },	-- Ancient Tablets
+					["provider"] = { "o", 195433 },	-- Ancient Tablets
 					["sourceQuest"] = 14191,	-- Furien's Footsteps
 					["coord"] = { 69.2, 29.2, DESOLACE },
 					["timeline"] = { "added 4.0.3.13277" },

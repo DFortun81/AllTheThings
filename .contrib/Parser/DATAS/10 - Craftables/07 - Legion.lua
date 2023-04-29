@@ -144,48 +144,40 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 		}),
 	}),
 	prof(BLACKSMITHING, {
+		n(ARMOR, {
+			i(123917),	-- Demonsteel Armguards
+			i(123911),	-- Demonsteel Boots
+			i(123910),	-- Demonsteel Breastplate
+			i(123912),	-- Demonsteel Gauntlets
+			i(123914),	-- Demonsteel Greaves
+			i(123913),	-- Demonsteel Helm
+			i(123915),	-- Demonsteel Pauldrons
+			i(123916),	-- Demonsteel Waistguard
+			i(151576, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrial Breastplate
+			i(123898),	-- Leystone Armguards
+			i(123892),	-- Leystone Boots
+			i(123891),	-- Leystone Breastplate
+			i(123893),	-- Leystone Gauntlets
+			i(123895),	-- Leystone Greaves
+			i(123894),	-- Leystone Helm
+			i(123896),	-- Leystone Pauldrons
+			i(123897),	-- Leystone Waistguard
+			i(146667, {["timeline"] = {ADDED_7_2_0}}),	-- Rethu's Incessant Courage
+		}),
+		filter(MISC, {
+			i(124461),	-- Demonsteel Bar
+			i(136708),	-- Demonsteel Stirrups
+			i(151239, {["timeline"] = {ADDED_7_3_0}}),	-- Felslate Anchor
+			i(123956),	-- Leystone Hoofplates
+		}),
 		filter(MOUNTS, {
-			i(137686),	-- Steelbound Devourer (MOUNT!)
+			i(137686, {["timeline"] = {ADDED_7_1_0}}),	-- Steelbound Devourer (MOUNT!)
 		}),
 		filter(RELICS, {
 			i(136685),	-- Consecrated Spike
 			i(136686),	-- Flamespike
 			i(136684),	-- Gleaming Iron Spike
 			i(136683),	-- Terrorspike
-		}),
-		n(HEAD, {
-			i(123913),	-- Demonsteel Helm
-			i(123894),	-- Leystone Helm
-		}),
-		n(SHOULDER, {
-			i(123915),	-- Demonsteel Pauldrons
-			i(123896),	-- Leystone Pauldrons
-		}),
-		n(CHEST, {
-			i(123910),	-- Demonsteel Breastplate
-			i(151576),	-- Empyrial Breastplate
-			i(123891),	-- Leystone Breastplate
-		}),
-		n(HANDS, {
-			i(123912),	-- Demonsteel Gauntlets
-			i(123893),	-- Leystone Gauntlets
-		}),
-		n(WRIST, {
-			i(123917),	-- Demonsteel Armguards
-			i(123898),	-- Leystone Armguards
-		}),
-		n(WAIST, {
-			i(123916),	-- Demonsteel Waistguard
-			i(123897),	-- Leystone Waistguard
-			i(146667),	-- Rethu's Incessant Courage
-		}),
-		n(LEGS, {
-			i(123914),	-- Demonsteel Greaves
-			i(123895),	-- Leystone Greaves
-		}),
-		n(FEET, {
-			i(123911),	-- Demonsteel Boots
-			i(123892),	-- Leystone Boots
 		}),
 	}),
 	prof(ENCHANTING, {

@@ -157,6 +157,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(73, {	-- Cenarion Hold, Silithus (A)
 					["cr"] = 15177,	-- Cloud Skydancer <Hippogryph Master>
 					-- #if AFTER CATA
+					["description"] = "Speak to Zidormi to visit the past to access this point.",
 					["coord"] = { 54.4, 32.8, SILITHUS },
 					-- #else
 					["coord"] = { 50.6, 34.4, SILITHUS },
@@ -166,6 +167,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(72, {	-- Cenarion Hold, Silithus (H)
 					["cr"] = 15178,	-- Runk Windtamer <Wind Rider Master>
 					-- #if AFTER CATA
+					["description"] = "Speak to Zidormi to visit the past to access this point.",
 					["coord"] = { 52.8, 34.6, SILITHUS },
 					-- #else
 					["coord"] = { 48.8, 36.6, SILITHUS },
@@ -278,7 +280,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 								i(20720, {	-- Dark Whisper Blade
 									["timeline"] = { "removed 4.0.3" },
-								}), 
+								}),
 							},
 						}),
 					},
@@ -1260,7 +1262,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 								i(20720, {	-- Dark Whisper Blade
 									["timeline"] = { "removed 4.0.3" },
-								}), 
+								}),
 							},
 						}),
 					},

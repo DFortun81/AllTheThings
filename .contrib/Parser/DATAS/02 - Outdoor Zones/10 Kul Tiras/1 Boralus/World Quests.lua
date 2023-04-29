@@ -257,7 +257,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["isWorldQuest"] = true,
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					i(162360),	-- Recipe: Contract: Proudmoore Admiralty [Rank 3]
+					i(162360),	-- Technique: Contract: Proudmoore Admiralty [Rank 3]
 				},
 			}),
 			q(52368, {	-- Work Order: Crow's Nest Scope

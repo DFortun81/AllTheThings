@@ -93,13 +93,13 @@ root(ROOTS.PetBattles, petbattle({
 				n(161782, {	-- Burt Macklyn
 					["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
 					["g"] = {
-						i(174829, {	-- Tinyclaw
+						i(174829, {	-- Tinyclaw (PET!)
 							["cost"] = { { "i", 174360, 2 }, },	-- 2x Shadowy Gem
 						}),
-						i(174828, {	-- Experiment 13
+						i(174828, {	-- Experiment 13 (PET!)
 							["cost"] = { { "i", 174360, 3 }, },	-- 3x Shadowy Gem
 						}),
-						i(174827, {	-- Wailing Lasher
+						i(174827, {	-- Wailing Lasher (PET!)
 							["cost"] = { { "i", 174360, 1 }, },	-- 1x Shadowy Gem
 						}),
 					},

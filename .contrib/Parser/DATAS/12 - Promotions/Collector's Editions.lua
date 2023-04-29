@@ -280,7 +280,7 @@ root(ROOTS.Promotions, n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Co
 			n(REWARDS, {
 				["description"] = "The following additional rewards were only available if you purchased Shadowlands Epic Edition.",
 				["groups"] = {
-					p(2779),	-- Anima Wyrmling
+					pet(2779),	-- Anima Wyrmling (PET!)
 					i(172179),	-- Eternal Traveler's Hearthstone (TOY!)
 					i(172177),	-- Illusion: Wraithchill
 				},

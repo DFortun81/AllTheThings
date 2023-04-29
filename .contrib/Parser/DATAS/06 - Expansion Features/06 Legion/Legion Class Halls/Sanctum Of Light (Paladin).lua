@@ -81,6 +81,30 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						}),
 					}),
 				}),
+				n(FOLLOWERS, bubbleDownSelf({
+					["u"] = 15,	-- Temporary troops
+				}, {
+					follower(770),	-- Shieldbearer Phalanx
+					follower(843),	-- Shieldbearer Phalanx
+					follower(844),	-- Shieldbearer Phalanx
+					follower(845),	-- Shieldbearer Phalanx
+					follower(1043),	-- Silver Hand Crusaders
+					follower(1044),	-- Silver Hand Crusaders
+					follower(1045),	-- Silver Hand Crusaders
+					follower(1046),	-- Silver Hand Crusaders
+					follower(675),	-- Silver Hand Knights
+					follower(846),	-- Silver Hand Knights
+					follower(847),	-- Silver Hand Knights
+					follower(848),	-- Silver Hand Knights
+					follower(771),	-- Silver Hand Templar
+					follower(849),	-- Silver Hand Templar
+					follower(850),	-- Silver Hand Templar
+					follower(851),	-- Silver Hand Templar
+					follower(674),	-- Squad of Squires
+					follower(840),	-- Squad of Squires
+					follower(841),	-- Squad of Squires
+					follower(842),	-- Squad of Squires
+				})),
 				n(QUESTS, {
 					q(38710, {	-- An Urgent Gathering
 						["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus

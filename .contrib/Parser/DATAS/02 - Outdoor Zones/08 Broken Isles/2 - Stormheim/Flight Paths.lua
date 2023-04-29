@@ -10,18 +10,22 @@ _.Zones =
 				fp(1738, {	-- Cullen's Post, Stormheim
 					-- ["creatureID"] = ,	--
 					["coord"] = { 44.8, 59.2, STORMHEIM },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1739, {	-- Dreadwake's Landing, Stormheim
 					-- ["creatureID"] = ,	--
 					["coord"] = { 54.4, 73.0, STORMHEIM },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1741, {	-- Forsaken Foothold, Stormheim
 					-- ["creatureID"] = ,	--
 					["coord"] = { 36.4, 30.6, STORMHEIM },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1744, {	-- Greywatch, Stormheim
 					["creatureID"] = 98108,	-- Gryphon-Master Clifford
 					["coord"] = { 72.0, 59.8, STORMHEIM },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1863, {	-- Hafr Fjall, Stormheim
 					-- ["creatureID"] = ,	--
@@ -30,6 +34,7 @@ _.Zones =
 				fp(1745, {	-- Lorna's Watch, Stormheim
 					-- ["creatureID"] = ,	--
 					["coord"] = { 37.4, 64.0, STORMHEIM },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1839, {	-- Nastrondir (Eagle)
 					-- ["creatureID"] = ,	--
@@ -43,6 +48,7 @@ _.Zones =
 				fp(1747, {	-- Skyfire Triage Camp, Stormheim
 					["creatureID"] = 98114,	-- Donovan
 					["coord"] = { 33.6, 50.6, STORMHEIM },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(1857, {	-- Stormtorn Foothills, Stormheim
 					-- ["creatureID"] = ,	--

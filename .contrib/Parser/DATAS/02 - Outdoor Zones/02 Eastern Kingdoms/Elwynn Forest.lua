@@ -1459,11 +1459,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.8, 66.4, ELWYNN_FOREST },
 					["timeline"] = { "added 4.0.1.12984" },
 					["cr"] = 43000,	-- Goss the Swift <Gryphon Master>
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(582, {	-- Goldshire, Elwynn
 					["coord"] = { 41.8, 64.6, ELWYNN_FOREST },
 					["timeline"] = { "added 4.0.1.12984" },
 					["cr"] = 42983,	-- Bartlett the Brave <Gryphon Master>
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			-- #endif

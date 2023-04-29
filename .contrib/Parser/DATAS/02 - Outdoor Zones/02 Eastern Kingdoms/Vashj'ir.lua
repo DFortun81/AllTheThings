@@ -78,9 +78,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(FLIGHT_PATHS, {
 						fp(524, {	-- Daybreak Cove, Vashj'ir
 							["coord"] = { 56.8, 75.4, 204 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						fp(526, {	-- Tenebrous Cavern, Vashj'ir
 							["coord"] = { 53.8, 59.6, 204 },
+							["races"] = HORDE_ONLY,
 						}),
 					}),
 					n(QUESTS, {
@@ -678,10 +680,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						fp(607, {	-- Sandy Beach, Vashj'ir
 							["description"] = "Underwater.",
 							["coord"] = { 42.4, 66.2, 201 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						fp(609, {	-- Sandy Beach, Vashj'ir
 							["description"] = "Underwater.",
 							["coord"] = { 49.2, 87.8, 201 },
+							["races"] = HORDE_ONLY,
 						}),
 						fp(521, {	-- Smuggler's Scar, Vashj'ir
 							["coord"] = { 56.2, 31.0, 201 },
@@ -1189,12 +1193,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(FLIGHT_PATHS, {
 						fp(525, {	-- Legion's Rest, Vashj'ir
 							["coord"] = { 50.8, 63.4, 205 },
+							["races"] = HORDE_ONLY,
 						}),
 						fp(606, {	-- Sandy Beach, Vashj'ir (Alliance - Flight Master)
 							["coord"] = { 57.0, 17.0, 205 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						fp(608, {	-- Sandy Beach, Vashj'ir (Horde - Flight Master)
 							["coord"] = { 61.0, 28.2, 205 },
+							["races"] = HORDE_ONLY,
 						}),
 						fp(522, {	-- Silver Tide Hollow, Vashj'ir
 							["coord"] = { 49.4, 41.2, 205 },
@@ -1202,21 +1209,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						fp(610, {	-- Stygian Bounty, Vashj'ir (Horde - Flight Master)
 							["coord"] = { 64.8, 68.0, 205 },
 							["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
+							["races"] = HORDE_ONLY,
 						}),
 						fp(612, {	-- Stygian Bounty, Vashj'ir (Horde - Seahorse)
 							["coord"] = { 49.4, 65.6, 205 },
 							["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
+							["races"] = HORDE_ONLY,
 						}),
 						fp(523, {	-- Tranquil Wash Hollow, Vashj'ir
 							["coord"] = { 48.6, 57.4, 205 },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						fp(605, {	-- Voldrin's Hold, Vashj'ir (Alliance - Flight Master)
 							["coord"] = { 69.4, 75.2, 205 },
 							["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
+							["races"] = ALLIANCE_ONLY,
 						}),
 						fp(611, {	-- Voldrin's Hold, Vashj'ir (Alliance - Seahorse)
 							["coord"] = { 57.0, 75.2, 205 },
 							["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
+							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
 					n(QUESTS, {

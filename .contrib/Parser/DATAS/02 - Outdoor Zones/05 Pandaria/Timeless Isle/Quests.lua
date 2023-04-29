@@ -51,9 +51,6 @@ _.Zones =
 				q(33332, {	-- Hints From The Past
 					["sourceQuests"] = { 33228 },	-- Time In Your Hands
 					["provider"] = { "n", 72870 },	-- Kairoz
-					["g"] = {
-						i(103977),	-- Time-Worn Journal
-					},
 				}),
 				q(33222, {	-- Little Tommy Newcomer
 					["provider"] = { "n", 73626 },			-- Little Tommy Newcomer

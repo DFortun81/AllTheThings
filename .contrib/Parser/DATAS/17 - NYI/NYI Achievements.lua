@@ -248,14 +248,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				ach(1500),	-- Deaths in Strand of the Ancients
 				ach(1520),	-- Items pickpocketed
 				ach(1551),	-- World Honorable Kills
-				ach(1657),	-- Hallowed Be Thy Name
-				ach(1677),	-- Loremaster of Eastern Kingdoms
-				ach(1680),	-- Loremaster of Kalimdor
 				ach(1681),	-- The Loremaster
 				ach(1682),	-- The Loremaster
-				ach(1684),	-- Brewmaster
-				ach(1692),	-- Merrymaker
-				ach(1707),	-- Fool For Love
 				ach(1716),	-- Battleground with the most Killing Blows
 				ach(1719),	-- Battleground with the most Honorable Kills
 				ach(1731),	-- Industrial Warfare
@@ -449,11 +443,13 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				ach(12924),	-- Heart On Your Sleeve
 				ach(12919),	-- It Grew Ten Sizes That Day
 				ach(12925),	-- In Tune With Your Heart
+				ach(12946),	-- Kul Tiras Diplomat
 				ach(12922),	-- Listen To Your Heart
 				ach(12580),	-- Mission Accomplished: Kul Tiras
 				ach(12603),	-- Mission Accomplished: Zandalar
 				ach(12871),	-- Prepared for War
 				ach(13044),	-- The Dark Essence of Achieving
+				ach(13037),	-- Torcanata
 			})),
 
 			-- 8.1.0
@@ -578,12 +574,15 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 9.2.0
 			tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
+				ach(15219),	-- Automa
 				ach(15557),	-- Murkastrasza
 			})),
 		}),
 		tier(DF_TIER, {
 			-- 10.0.0
 			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { "created 10.0.0" } }, {
+				ach(15517),	-- Solo Shuffle rounds participated in
+				ach(15516),	-- Solo Shuffle rounds won
 				ach(15798),	-- Winding Slitherdrake
 			})),
 

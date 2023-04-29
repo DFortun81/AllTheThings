@@ -2682,7 +2682,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(5511, {	-- Therum Deepforge <Expert Blacksmith>
 						["coord"] = { 57.0, 16.6, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = CLASSIC_BLACKSMITHING,
+						["groups"] = appendGroups(CLASSIC_BLACKSMITHING,
+							-- #if AFTER CATA
+							CATA_BLACKSMITHING
+							-- #else
+							{}
+							-- #endif
+						),
 					}),
 				}),
 				prof(ENCHANTING, {
@@ -2728,6 +2734,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 				}),
+				-- #if NOT ANYCLASSIC
+				prof(INSCRIPTION, {
+					n(30713, {	-- Catarina Stanford <Inscription Trainer>
+						-- #if AFTER LEGION
+						["coord"] = { 49.8, 74.0, STORMWIND_CITY },
+						-- #else
+						["coord"] = { 49.8, 74.6, STORMWIND_CITY },
+						-- #endif
+						["timeline"] = { "added 3.0.2.8905" },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = CLASSIC_INSCRIPTION,
+					}),
+				}),
+				-- #endif
 				prof(JEWELCRAFTING, {
 					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
 						["coord"] = { 63.6, 61.6, STORMWIND_CITY },
@@ -7304,6 +7324,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(18243, {	-- Black Battlestrider (MOUNT!)
 							["timeline"] = { "removed 2.0.1.6180" },
+							-- #if BEFORE 2.0.1
+							["races"] = { DWARF, GNOME },
+							-- #endif
 						}),
 						i(35906, {	-- Black War Elekk (MOUNT!)
 							["timeline"] = { "added 2.4.0.7994" },
